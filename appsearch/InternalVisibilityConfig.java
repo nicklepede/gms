@@ -1,0 +1,52 @@
+package com.google.android.gms.appsearch;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import defpackage.arxc;
+import defpackage.udp;
+import j$.util.Objects;
+import java.util.List;
+
+/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* loaded from: classes2.dex */
+public final class InternalVisibilityConfig extends AbstractSafeParcelable {
+    public static final Parcelable.Creator CREATOR = new udp();
+    public final String a;
+    public final boolean b;
+    public final SchemaVisibilityConfig c;
+    public final List d;
+
+    public InternalVisibilityConfig(String str, boolean z, SchemaVisibilityConfig schemaVisibilityConfig, List list) {
+        this.b = z;
+        this.a = (String) Objects.requireNonNull(str);
+        this.c = (SchemaVisibilityConfig) Objects.requireNonNull(schemaVisibilityConfig);
+        this.d = (List) Objects.requireNonNull(list);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || !(obj instanceof InternalVisibilityConfig)) {
+            return false;
+        }
+        InternalVisibilityConfig internalVisibilityConfig = (InternalVisibilityConfig) obj;
+        return this.b == internalVisibilityConfig.b && Objects.equals(this.a, internalVisibilityConfig.a) && Objects.equals(this.c, internalVisibilityConfig.c) && Objects.equals(this.d, internalVisibilityConfig.d);
+    }
+
+    public final int hashCode() {
+        return Objects.hash(Boolean.valueOf(this.b), this.a, this.c, this.d);
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        String str = this.a;
+        int a = arxc.a(parcel);
+        arxc.v(parcel, 1, str, false);
+        arxc.e(parcel, 2, this.b);
+        arxc.t(parcel, 3, this.c, i, false);
+        arxc.y(parcel, 4, this.d, false);
+        arxc.c(parcel, a);
+    }
+}

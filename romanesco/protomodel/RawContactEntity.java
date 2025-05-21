@@ -1,0 +1,90 @@
+package com.google.android.gms.romanesco.protomodel;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import defpackage.arwb;
+import defpackage.arxc;
+import defpackage.cxpx;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
+/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* loaded from: classes6.dex */
+public class RawContactEntity extends AbstractSafeParcelable implements RawContact {
+    public static final Parcelable.Creator CREATOR = new cxpx();
+    public final String a;
+    private final List b;
+    private final List c;
+    private List d;
+    private List e;
+
+    public RawContactEntity(String str, List list, List list2) {
+        this.a = str;
+        this.b = list;
+        this.c = list2;
+    }
+
+    @Override // com.google.android.gms.romanesco.protomodel.RawContact
+    public final String a() {
+        return this.a;
+    }
+
+    @Override // com.google.android.gms.romanesco.protomodel.RawContact
+    public final List b() {
+        List list;
+        if (this.d == null && (list = this.b) != null) {
+            this.d = new ArrayList(list.size());
+            Iterator it = list.iterator();
+            while (it.hasNext()) {
+                this.d.add((EmailAddress) it.next());
+            }
+        }
+        return this.d;
+    }
+
+    @Override // com.google.android.gms.romanesco.protomodel.RawContact
+    public final List c() {
+        List list;
+        if (this.e == null && (list = this.c) != null) {
+            this.e = new ArrayList(list.size());
+            Iterator it = list.iterator();
+            while (it.hasNext()) {
+                this.e.add((PhoneNumber) it.next());
+            }
+        }
+        return this.e;
+    }
+
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof RawContact)) {
+            return false;
+        }
+        if (this == obj) {
+            return true;
+        }
+        RawContact rawContact = (RawContact) obj;
+        return arwb.b(a(), rawContact.a()) && arwb.b(b(), rawContact.b()) && arwb.b(c(), rawContact.c());
+    }
+
+    public final int hashCode() {
+        return Arrays.hashCode(new Object[]{a(), b(), c()});
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        String str = this.a;
+        int a = arxc.a(parcel);
+        arxc.v(parcel, 2, str, false);
+        arxc.y(parcel, 4, b(), false);
+        arxc.y(parcel, 5, c(), false);
+        arxc.c(parcel, a);
+    }
+
+    @Override // defpackage.arod
+    public final /* bridge */ /* synthetic */ Object l() {
+        return this;
+    }
+}

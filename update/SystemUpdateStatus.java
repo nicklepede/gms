@@ -1,0 +1,144 @@
+package com.google.android.gms.update;
+
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import defpackage.arxc;
+import defpackage.dheb;
+
+/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* loaded from: classes7.dex */
+public class SystemUpdateStatus extends AbstractSafeParcelable {
+    public static final Parcelable.Creator CREATOR = new dheb();
+    public final boolean A;
+    public final boolean B;
+    public final boolean C;
+    public final ExpeditedUpdateStatus D;
+    public final long E;
+    public final long F;
+    public final int G;
+    public final long H;
+    public final boolean I;
+    public final boolean J;
+    public final boolean K;
+    public final Bundle L;
+    public final UpdateInfo M;
+    public final boolean N;
+    public final String a;
+    public final boolean b;
+    public final int c;
+    public final int d;
+    public final int e;
+    public final double f;
+    public final DownloadOptions g;
+    public final InstallationOptions h;
+    public final boolean i;
+    public final boolean j;
+    public final boolean k;
+    public final boolean l;
+    public final boolean m;
+    public final long n;
+    public final long o;
+    public final long p;
+    public final long q;
+    public final ActivityStatus r;
+    public final long s;
+    public final String t;
+    public final boolean u;
+    public final long v;
+    public final String w;
+    public final UpdateDescription x;
+    public final boolean y;
+    public final boolean z;
+
+    public SystemUpdateStatus(String str, boolean z, int i, int i2, int i3, double d, DownloadOptions downloadOptions, InstallationOptions installationOptions, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, long j, long j2, long j3, long j4, ActivityStatus activityStatus, long j5, String str2, boolean z7, long j6, String str3, UpdateDescription updateDescription, boolean z8, boolean z9, boolean z10, boolean z11, boolean z12, ExpeditedUpdateStatus expeditedUpdateStatus, long j7, long j8, int i4, long j9, boolean z13, boolean z14, boolean z15, Bundle bundle, UpdateInfo updateInfo, boolean z16) {
+        this.a = str;
+        this.b = z;
+        this.c = i;
+        this.d = i2;
+        this.e = i3;
+        this.f = d;
+        this.g = downloadOptions;
+        this.h = installationOptions;
+        this.i = z2;
+        this.j = z3;
+        this.k = z4;
+        this.l = z5;
+        this.m = z6;
+        this.n = j;
+        this.o = j2;
+        this.p = j3;
+        this.q = j4;
+        this.r = activityStatus;
+        this.s = j5;
+        this.t = str2;
+        this.u = z7;
+        this.v = j6;
+        this.w = str3;
+        this.x = updateDescription;
+        this.y = z8;
+        this.z = z9;
+        this.A = z10;
+        this.B = z11;
+        this.C = z12;
+        this.D = expeditedUpdateStatus;
+        this.E = j7;
+        this.F = j8;
+        this.G = i4;
+        this.H = j9;
+        this.I = z13;
+        this.J = z14;
+        this.K = z15;
+        this.L = bundle;
+        this.M = updateInfo;
+        this.N = z16;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        String str = this.a;
+        int a = arxc.a(parcel);
+        arxc.v(parcel, 1, str, false);
+        arxc.e(parcel, 2, this.b);
+        arxc.o(parcel, 3, this.c);
+        arxc.o(parcel, 4, this.d);
+        arxc.o(parcel, 5, this.e);
+        arxc.j(parcel, 6, this.f);
+        arxc.t(parcel, 7, this.g, i, false);
+        arxc.t(parcel, 8, this.h, i, false);
+        arxc.e(parcel, 9, this.i);
+        arxc.e(parcel, 10, this.j);
+        arxc.e(parcel, 11, this.k);
+        arxc.e(parcel, 12, this.l);
+        arxc.e(parcel, 13, this.m);
+        arxc.q(parcel, 14, this.n);
+        arxc.q(parcel, 15, this.o);
+        arxc.q(parcel, 16, this.p);
+        arxc.q(parcel, 17, this.q);
+        arxc.t(parcel, 18, this.r, i, false);
+        arxc.q(parcel, 19, this.s);
+        arxc.v(parcel, 20, this.t, false);
+        arxc.e(parcel, 21, this.u);
+        arxc.q(parcel, 22, this.v);
+        arxc.v(parcel, 23, this.w, false);
+        arxc.t(parcel, 24, this.x, i, false);
+        arxc.e(parcel, 25, this.y);
+        arxc.e(parcel, 26, this.z);
+        arxc.e(parcel, 27, this.A);
+        arxc.e(parcel, 28, this.B);
+        arxc.e(parcel, 30, this.C);
+        arxc.t(parcel, 31, this.D, i, false);
+        arxc.q(parcel, 32, this.E);
+        arxc.q(parcel, 33, this.F);
+        arxc.o(parcel, 34, this.G);
+        arxc.q(parcel, 35, this.H);
+        arxc.e(parcel, 36, this.I);
+        arxc.e(parcel, 37, this.J);
+        arxc.e(parcel, 38, this.K);
+        arxc.g(parcel, 39, this.L, false);
+        arxc.t(parcel, 40, this.M, i, false);
+        arxc.e(parcel, 41, this.N);
+        arxc.c(parcel, a);
+    }
+}

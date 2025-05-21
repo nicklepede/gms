@@ -1,0 +1,36 @@
+package com.google.android.gms.auth.account.be;
+
+import android.accounts.Account;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.util.Log;
+import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
+import defpackage.eiig;
+import defpackage.ura;
+import defpackage.vfz;
+import java.util.Locale;
+
+/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* loaded from: classes2.dex */
+public class RemoveAccountChimeraIntentService extends TracingIntentService {
+    public RemoveAccountChimeraIntentService() {
+        super("RemoveAccountIntentService");
+    }
+
+    public static Intent b(Context context, Account account) {
+        Intent intent = new Intent();
+        eiig.x(context);
+        return intent.setClassName(context, "com.google.android.gms.auth.account.be.RemoveAccountIntentService").putExtra("account", account).setData(Uri.parse("intent://com.google.android.gms.auth.account.be.RemoveAccountChimeraIntentService?accountName=".concat(String.valueOf(account.name))));
+    }
+
+    @Override // com.google.android.gms.framework.tracing.wrapper.TracingIntentService
+    protected final void a(Intent intent) {
+        Account account = (Account) intent.getParcelableExtra("account");
+        if (account == null) {
+            Log.wtf("Auth", String.format(Locale.US, "[RemoveAccountChimeraIntentService] account was not provided.", new Object[0]));
+        } else {
+            ura.a(((vfz) vfz.a.b()).b, account);
+        }
+    }
+}

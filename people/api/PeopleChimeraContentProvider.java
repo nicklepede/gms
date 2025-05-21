@@ -1,0 +1,49 @@
+package com.google.android.gms.people.api;
+
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.net.Uri;
+import com.google.android.chimera.ContentProvider;
+import com.google.android.gms.chimera.modules.people.AppContextProvider;
+import defpackage.ctzq;
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
+
+/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* loaded from: classes6.dex */
+public final class PeopleChimeraContentProvider extends ContentProvider {
+    @Override // com.google.android.chimera.ContentProvider
+    public final int delete(Uri uri, String str, String[] strArr) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // com.google.android.chimera.ContentProvider
+    public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
+        ctzq.a(AppContextProvider.a(), printWriter, strArr);
+    }
+
+    @Override // com.google.android.chimera.ContentProvider
+    public final String getType(Uri uri) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // com.google.android.chimera.ContentProvider
+    public final Uri insert(Uri uri, ContentValues contentValues) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // com.google.android.chimera.ContentProvider
+    public final boolean onCreate() {
+        return true;
+    }
+
+    @Override // com.google.android.chimera.ContentProvider
+    public final Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // com.google.android.chimera.ContentProvider
+    public final int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
+        throw new UnsupportedOperationException();
+    }
+}

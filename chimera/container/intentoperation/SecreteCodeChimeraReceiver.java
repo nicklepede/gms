@@ -1,0 +1,14 @@
+package com.google.android.gms.chimera.container.intentoperation;
+
+import defpackage.aodr;
+import defpackage.aodw;
+import defpackage.bhgx;
+import defpackage.eivh;
+
+/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* loaded from: classes3.dex */
+public class SecreteCodeChimeraReceiver extends aodr implements bhgx {
+    public SecreteCodeChimeraReceiver() {
+        super(false, eivh.U("android.provider.Telephony.SECRET_CODE"), aodw.d());
+    }
+}

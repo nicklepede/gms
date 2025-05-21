@@ -1,0 +1,23 @@
+package com.google.android.gms.wallet.service.orchestration;
+
+import android.accounts.Account;
+import android.os.Parcelable;
+import com.google.android.gms.wallet.service.GenericLiteProtoParcelable;
+import defpackage.dizx;
+import defpackage.eief;
+import defpackage.feen;
+import java.util.List;
+
+/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* loaded from: classes7.dex */
+public class InstrumentManagerSubmitRequest extends GenericLiteProtoParcelable {
+    public static final Parcelable.Creator CREATOR = new dizx();
+
+    public InstrumentManagerSubmitRequest(Account account, eief eiefVar, List list) {
+        super(account, (feen) eief.a.iB(7, null), eiefVar, list);
+    }
+
+    public InstrumentManagerSubmitRequest(Account account, byte[] bArr, List list) {
+        super(account, (feen) eief.a.iB(7, null), bArr, list);
+    }
+}

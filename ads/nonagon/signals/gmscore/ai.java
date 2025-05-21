@@ -1,0 +1,23 @@
+package com.google.android.gms.ads.nonagon.signals.gmscore;
+
+import com.google.android.gms.ads.internal.request.NonagonRequestParcel;
+
+/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* loaded from: classes2.dex */
+public final class ai {
+    public final NonagonRequestParcel a;
+    public final int b;
+
+    public ai(NonagonRequestParcel nonagonRequestParcel, int i) {
+        this.a = nonagonRequestParcel;
+        this.b = i;
+    }
+
+    public final boolean a() {
+        return this.a.l;
+    }
+
+    public final boolean b() {
+        return this.a.k;
+    }
+}
