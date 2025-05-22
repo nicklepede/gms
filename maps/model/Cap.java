@@ -5,21 +5,21 @@ import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.ccdr;
-import defpackage.ccdu;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.ceml;
+import defpackage.cemo;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class Cap extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ccdu();
+    public static final Parcelable.Creator CREATOR = new cemo();
     private static final String c = "Cap";
     public final int a;
     public final Float b;
-    private final ccdr d;
+    private final ceml d;
 
     protected Cap(int i) {
         this(i, null, null);
@@ -40,11 +40,11 @@ public class Cap extends AbstractSafeParcelable {
             Log.w(c, a.j(i, "Unknown Cap type: "));
             return this;
         }
-        ccdr ccdrVar = this.d;
-        arwm.m(ccdrVar != null, "bitmapDescriptor must not be null");
+        ceml cemlVar = this.d;
+        atzb.m(cemlVar != null, "bitmapDescriptor must not be null");
         Float f = this.b;
-        arwm.m(f != null, "bitmapRefWidth must not be null");
-        return new CustomCap(ccdrVar, f.floatValue());
+        atzb.m(f != null, "bitmapRefWidth must not be null");
+        return new CustomCap(cemlVar, f.floatValue());
     }
 
     public final boolean equals(Object obj) {
@@ -55,7 +55,7 @@ public class Cap extends AbstractSafeParcelable {
             return false;
         }
         Cap cap = (Cap) obj;
-        return this.a == cap.a && arwb.b(this.d, cap.d) && arwb.b(this.b, cap.b);
+        return this.a == cap.a && atyq.b(this.d, cap.d) && atyq.b(this.b, cap.b);
     }
 
     public final int hashCode() {
@@ -69,26 +69,26 @@ public class Cap extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, i2);
-        ccdr ccdrVar = this.d;
-        arxc.D(parcel, 3, ccdrVar == null ? null : ccdrVar.a.asBinder());
-        arxc.C(parcel, 4, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, i2);
+        ceml cemlVar = this.d;
+        atzr.D(parcel, 3, cemlVar == null ? null : cemlVar.a.asBinder());
+        atzr.C(parcel, 4, this.b);
+        atzr.c(parcel, a);
     }
 
-    public Cap(int i, ccdr ccdrVar, Float f) {
+    public Cap(int i, ceml cemlVar, Float f) {
         boolean z;
         boolean z2 = f != null && f.floatValue() > 0.0f;
         if (i == 3) {
-            z = ccdrVar != null && z2;
+            z = cemlVar != null && z2;
             i = 3;
         } else {
             z = true;
         }
-        arwm.c(z, String.format("Invalid Cap: type=%s bitmapDescriptor=%s bitmapRefWidth=%s", Integer.valueOf(i), ccdrVar, f));
+        atzb.c(z, String.format("Invalid Cap: type=%s bitmapDescriptor=%s bitmapRefWidth=%s", Integer.valueOf(i), cemlVar, f));
         this.a = i;
-        this.d = ccdrVar;
+        this.d = cemlVar;
         this.b = f;
     }
 }

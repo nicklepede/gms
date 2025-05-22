@@ -4,22 +4,22 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqto;
-import defpackage.arxc;
-import defpackage.axrg;
+import defpackage.aswd;
+import defpackage.atzr;
+import defpackage.azvg;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DroidGuardResultsRequest extends AbstractSafeParcelable {
     public final Bundle a;
     private static final int b = (int) TimeUnit.SECONDS.toMillis(60);
-    public static final Parcelable.Creator CREATOR = new axrg();
+    public static final Parcelable.Creator CREATOR = new azvg();
 
     public DroidGuardResultsRequest() {
         String str;
         this.a = new Bundle();
-        b(aqto.b);
+        b(aswd.b);
         try {
             str = System.getProperty("os.arch");
         } catch (Exception unused) {
@@ -43,9 +43,9 @@ public class DroidGuardResultsRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Bundle bundle = this.a;
-        int a = arxc.a(parcel);
-        arxc.g(parcel, 2, bundle, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.g(parcel, 2, bundle, false);
+        atzr.c(parcel, a);
     }
 
     public DroidGuardResultsRequest(Bundle bundle) {

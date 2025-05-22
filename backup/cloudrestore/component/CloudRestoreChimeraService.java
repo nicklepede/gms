@@ -7,42 +7,42 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import com.google.android.chimera.Service;
 import com.google.android.gms.backup.cloudrestore.migrate.service.ContactsBackupInfo;
-import defpackage.ahmt;
-import defpackage.ahnm;
-import defpackage.ahnq;
-import defpackage.ahnt;
-import defpackage.ahpo;
-import defpackage.ahwd;
-import defpackage.ahxc;
-import defpackage.aicw;
-import defpackage.asmb;
-import defpackage.cxip;
-import defpackage.enre;
-import defpackage.ensj;
+import defpackage.ajnj;
+import defpackage.ajoc;
+import defpackage.ajog;
+import defpackage.ajoj;
+import defpackage.ajqe;
+import defpackage.ajwt;
+import defpackage.ajxs;
+import defpackage.akdm;
+import defpackage.aupv;
+import defpackage.czsl;
+import defpackage.eqex;
+import defpackage.eqgc;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CloudRestoreChimeraService extends Service {
-    public static final ahwd a = new ahwd("CloudRestoreChimeraService");
-    public cxip b;
+    public static final ajwt a = new ajwt("CloudRestoreChimeraService");
+    public czsl b;
     public Set c;
-    public ahpo d;
-    private aicw e;
-    private ahnm f;
+    public ajqe d;
+    private akdm e;
+    private ajoc f;
 
-    public static void a(ahnt ahntVar, ContactsBackupInfo contactsBackupInfo) {
+    public static void a(ajoj ajojVar, ContactsBackupInfo contactsBackupInfo) {
         try {
-            ahntVar.a(contactsBackupInfo);
+            ajojVar.a(contactsBackupInfo);
         } catch (RemoteException e) {
             a.g("Exception happened when returning contacts backup information to bound Activity.", e, new Object[0]);
         }
     }
 
-    public static void b(ahnq ahnqVar, boolean z) {
+    public static void b(ajog ajogVar, boolean z) {
         c();
         try {
-            ahnqVar.a(z);
+            ajogVar.a(z);
         } catch (RemoteException e) {
             a.g("Exception happened when returning contacts restore result to bound Activity.", e, new Object[0]);
         }
@@ -72,20 +72,20 @@ public class CloudRestoreChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        ahwd ahwdVar = a;
-        ahwdVar.j("onCreate", new Object[0]);
+        ajwt ajwtVar = a;
+        ajwtVar.j("onCreate", new Object[0]);
         super.onCreate();
         if (this.f == null) {
-            this.f = new ahnm(this);
+            this.f = new ajoc(this);
         }
-        this.b = new cxip(this);
+        this.b = new czsl(this);
         if (this.c == null) {
-            int i = ahxc.a;
-            this.c = ahxc.a(this);
+            int i = ajxs.a;
+            this.c = ajxs.a(this);
         }
-        this.d = new ahpo();
-        this.e = new aicw(new asmb(1, 10));
-        ahwdVar.h("User selected cloud restore - switching to GMS transport.", new Object[0]);
-        ensj.t(this.e.d(this, 1, null), new ahmt(this.d), enre.a);
+        this.d = new ajqe();
+        this.e = new akdm(new aupv(1, 10));
+        ajwtVar.h("User selected cloud restore - switching to GMS transport.", new Object[0]);
+        eqgc.t(this.e.d(this, 1, null), new ajnj(this.d), eqex.a);
     }
 }

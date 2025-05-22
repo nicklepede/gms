@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.ResultReceiver;
 import android.util.Log;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.arxd;
-import defpackage.asnj;
-import defpackage.bbrx;
-import defpackage.bbtp;
-import defpackage.bbtq;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.fnzw;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.atzs;
+import defpackage.aurd;
+import defpackage.bdvo;
+import defpackage.bdxg;
+import defpackage.bdxh;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.fqrs;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,10 +22,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PublicKeyCredentialCreationOptions extends RequestOptions {
-    public static final Parcelable.Creator CREATOR = new bbtq();
+    public static final Parcelable.Creator CREATOR = new bdxh();
     public final PublicKeyCredentialRpEntity a;
     public final PublicKeyCredentialUserEntity b;
     public final byte[] c;
@@ -64,13 +64,13 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
                 throw new IllegalArgumentException(e);
             }
         }
-        arwm.s(publicKeyCredentialRpEntity);
+        atzb.s(publicKeyCredentialRpEntity);
         this.a = publicKeyCredentialRpEntity;
-        arwm.s(publicKeyCredentialUserEntity);
+        atzb.s(publicKeyCredentialUserEntity);
         this.b = publicKeyCredentialUserEntity;
-        arwm.s(bArr);
+        atzb.s(bArr);
         this.c = bArr;
-        arwm.s(list);
+        atzb.s(list);
         this.d = list;
         this.e = d;
         this.f = list2;
@@ -80,7 +80,7 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
         if (str != null) {
             try {
                 this.j = AttestationConveyancePreference.a(str);
-            } catch (bbrx e2) {
+            } catch (bdvo e2) {
                 throw new IllegalArgumentException(e2);
             }
         } else {
@@ -92,21 +92,21 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
     }
 
     public static PublicKeyCredentialCreationOptions k(JSONObject jSONObject) {
-        bbtp bbtpVar = new bbtp();
-        bbtpVar.a = PublicKeyCredentialRpEntity.a(jSONObject.getJSONObject("rp"));
-        bbtpVar.b = PublicKeyCredentialUserEntity.a(jSONObject.getJSONObject("user"));
-        bbtpVar.b(asnj.f(jSONObject.getString("challenge")));
+        bdxg bdxgVar = new bdxg();
+        bdxgVar.a = PublicKeyCredentialRpEntity.a(jSONObject.getJSONObject("rp"));
+        bdxgVar.b = PublicKeyCredentialUserEntity.a(jSONObject.getJSONObject("user"));
+        bdxgVar.b(aurd.f(jSONObject.getString("challenge")));
         JSONArray jSONArray = jSONObject.getJSONArray("pubKeyCredParams");
         ArrayList arrayList = new ArrayList();
         for (int i = 0; i < jSONArray.length(); i++) {
-            eiid b = PublicKeyCredentialParameters.b(jSONArray.getJSONObject(i));
+            ekvi b = PublicKeyCredentialParameters.b(jSONArray.getJSONObject(i));
             if (b.h()) {
                 arrayList.add(b.c());
             }
         }
-        bbtpVar.c(arrayList);
+        bdxgVar.c(arrayList);
         if (jSONObject.has("timeout")) {
-            bbtpVar.c = Double.valueOf(jSONObject.getDouble("timeout") / 1000.0d);
+            bdxgVar.c = Double.valueOf(jSONObject.getDouble("timeout") / 1000.0d);
         }
         if (jSONObject.has("excludeCredentials")) {
             JSONArray jSONArray2 = jSONObject.getJSONArray("excludeCredentials");
@@ -114,20 +114,20 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
             for (int i2 = 0; i2 < jSONArray2.length(); i2++) {
                 arrayList2.add(PublicKeyCredentialDescriptor.b(jSONArray2.getJSONObject(i2)));
             }
-            bbtpVar.d = arrayList2;
+            bdxgVar.d = arrayList2;
         }
         if (jSONObject.has("authenticatorSelection")) {
-            bbtpVar.e = AuthenticatorSelectionCriteria.a(jSONObject.getJSONObject("authenticatorSelection"));
+            bdxgVar.e = AuthenticatorSelectionCriteria.a(jSONObject.getJSONObject("authenticatorSelection"));
         }
         if (jSONObject.has("extensions")) {
-            bbtpVar.i = AuthenticationExtensions.a(jSONObject.getJSONObject("extensions"));
+            bdxgVar.i = AuthenticationExtensions.a(jSONObject.getJSONObject("extensions"));
         }
         if (jSONObject.has("attestation")) {
             try {
-                bbtpVar.h = AttestationConveyancePreference.a(jSONObject.getString("attestation"));
-            } catch (bbrx e) {
+                bdxgVar.h = AttestationConveyancePreference.a(jSONObject.getString("attestation"));
+            } catch (bdvo e) {
                 Log.w("PKCCreationOptions", "Invalid AttestationConveyancePreference", e);
-                bbtpVar.h = AttestationConveyancePreference.NONE;
+                bdxgVar.h = AttestationConveyancePreference.NONE;
             }
         }
         if (jSONObject.has("attestationFormats")) {
@@ -136,26 +136,26 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
             for (int i3 = 0; i3 < jSONArray3.length(); i3++) {
                 arrayList3.add(jSONArray3.getString(i3));
             }
-            bbtpVar.j = arrayList3;
+            bdxgVar.j = arrayList3;
         }
-        return bbtpVar.a();
+        return bdxgVar.a();
     }
 
-    public final bbtp a() {
-        bbtp bbtpVar = new bbtp();
-        bbtpVar.a = this.a;
-        bbtpVar.b = this.b;
-        bbtpVar.b(this.c);
-        bbtpVar.c(this.d);
-        bbtpVar.c = this.e;
-        bbtpVar.d = this.f;
-        bbtpVar.e = this.g;
-        bbtpVar.f = this.h;
-        bbtpVar.g = this.i;
-        bbtpVar.h = this.j;
-        bbtpVar.i = this.k;
-        bbtpVar.j = this.n;
-        return bbtpVar;
+    public final bdxg a() {
+        bdxg bdxgVar = new bdxg();
+        bdxgVar.a = this.a;
+        bdxgVar.b = this.b;
+        bdxgVar.b(this.c);
+        bdxgVar.c(this.d);
+        bdxgVar.c = this.e;
+        bdxgVar.d = this.f;
+        bdxgVar.e = this.g;
+        bdxgVar.f = this.h;
+        bdxgVar.g = this.i;
+        bdxgVar.h = this.j;
+        bdxgVar.i = this.k;
+        bdxgVar.j = this.n;
+        return bdxgVar;
     }
 
     @Override // com.google.android.gms.fido.fido2.api.common.RequestOptions
@@ -174,8 +174,8 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
     }
 
     @Override // com.google.android.gms.fido.fido2.api.common.RequestOptions
-    public final eiid e() {
-        return eigb.a;
+    public final ekvi e() {
+        return ektg.a;
     }
 
     public final boolean equals(Object obj) {
@@ -186,10 +186,10 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
             return false;
         }
         PublicKeyCredentialCreationOptions publicKeyCredentialCreationOptions = (PublicKeyCredentialCreationOptions) obj;
-        if (arwb.b(this.a, publicKeyCredentialCreationOptions.a) && arwb.b(this.b, publicKeyCredentialCreationOptions.b) && Arrays.equals(this.c, publicKeyCredentialCreationOptions.c) && arwb.b(this.e, publicKeyCredentialCreationOptions.e)) {
+        if (atyq.b(this.a, publicKeyCredentialCreationOptions.a) && atyq.b(this.b, publicKeyCredentialCreationOptions.b) && Arrays.equals(this.c, publicKeyCredentialCreationOptions.c) && atyq.b(this.e, publicKeyCredentialCreationOptions.e)) {
             List list4 = this.d;
             List list5 = publicKeyCredentialCreationOptions.d;
-            if (list4.containsAll(list5) && list5.containsAll(list4) && ((((list = this.f) == null && publicKeyCredentialCreationOptions.f == null) || (list != null && (list2 = publicKeyCredentialCreationOptions.f) != null && list.containsAll(list2) && list2.containsAll(list))) && arwb.b(this.g, publicKeyCredentialCreationOptions.g) && arwb.b(this.h, publicKeyCredentialCreationOptions.h) && arwb.b(this.i, publicKeyCredentialCreationOptions.i) && arwb.b(this.j, publicKeyCredentialCreationOptions.j) && arwb.b(this.k, publicKeyCredentialCreationOptions.k) && arwb.b(this.l, publicKeyCredentialCreationOptions.l))) {
+            if (list4.containsAll(list5) && list5.containsAll(list4) && ((((list = this.f) == null && publicKeyCredentialCreationOptions.f == null) || (list != null && (list2 = publicKeyCredentialCreationOptions.f) != null && list.containsAll(list2) && list2.containsAll(list))) && atyq.b(this.g, publicKeyCredentialCreationOptions.g) && atyq.b(this.h, publicKeyCredentialCreationOptions.h) && atyq.b(this.i, publicKeyCredentialCreationOptions.i) && atyq.b(this.j, publicKeyCredentialCreationOptions.j) && atyq.b(this.k, publicKeyCredentialCreationOptions.k) && atyq.b(this.l, publicKeyCredentialCreationOptions.l))) {
                 List list6 = this.n;
                 if (list6 == null && publicKeyCredentialCreationOptions.n == null) {
                     return true;
@@ -226,7 +226,7 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
 
     @Override // com.google.android.gms.fido.fido2.api.common.RequestOptions
     public final byte[] j() {
-        return fnzw.p() ? arxd.n(a().a()) : arxd.n(this);
+        return fqrs.o() ? atzs.n(a().a()) : atzs.n(this);
     }
 
     public final String l() {
@@ -247,27 +247,27 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
         List list3 = this.d;
         byte[] bArr = this.c;
         PublicKeyCredentialUserEntity publicKeyCredentialUserEntity = this.b;
-        return "PublicKeyCredentialCreationOptions{\n rp=" + this.a.toString() + ", \n user=" + publicKeyCredentialUserEntity.toString() + ", \n challenge=" + asnj.c(bArr) + ", \n parameters=" + list3.toString() + ", \n timeoutSeconds=" + this.e + ", \n excludeList=" + String.valueOf(list2) + ", \n authenticatorSelection=" + String.valueOf(authenticatorSelectionCriteria) + ", \n requestId=" + this.h + ", \n tokenBinding=" + String.valueOf(tokenBinding) + ", \n attestationConveyancePreference=" + String.valueOf(attestationConveyancePreference) + ", \n authenticationExtensions=" + String.valueOf(authenticationExtensions) + ", \n attestationFormats=" + String.valueOf(list) + "}";
+        return "PublicKeyCredentialCreationOptions{\n rp=" + this.a.toString() + ", \n user=" + publicKeyCredentialUserEntity.toString() + ", \n challenge=" + aurd.c(bArr) + ", \n parameters=" + list3.toString() + ", \n timeoutSeconds=" + this.e + ", \n excludeList=" + String.valueOf(list2) + ", \n authenticatorSelection=" + String.valueOf(authenticatorSelectionCriteria) + ", \n requestId=" + this.h + ", \n tokenBinding=" + String.valueOf(tokenBinding) + ", \n attestationConveyancePreference=" + String.valueOf(attestationConveyancePreference) + ", \n authenticationExtensions=" + String.valueOf(authenticationExtensions) + ", \n attestationFormats=" + String.valueOf(list) + "}";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         PublicKeyCredentialRpEntity publicKeyCredentialRpEntity = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, publicKeyCredentialRpEntity, i, false);
-        arxc.t(parcel, 3, this.b, i, false);
-        arxc.i(parcel, 4, this.c, false);
-        arxc.y(parcel, 5, this.d, false);
-        arxc.B(parcel, 6, this.e);
-        arxc.y(parcel, 7, this.f, false);
-        arxc.t(parcel, 8, this.g, i, false);
-        arxc.F(parcel, 9, this.h);
-        arxc.t(parcel, 10, this.i, i, false);
-        arxc.v(parcel, 11, l(), false);
-        arxc.t(parcel, 12, this.k, i, false);
-        arxc.v(parcel, 13, this.l, false);
-        arxc.t(parcel, 14, this.m, i, false);
-        arxc.x(parcel, 15, this.n, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, publicKeyCredentialRpEntity, i, false);
+        atzr.t(parcel, 3, this.b, i, false);
+        atzr.i(parcel, 4, this.c, false);
+        atzr.y(parcel, 5, this.d, false);
+        atzr.B(parcel, 6, this.e);
+        atzr.y(parcel, 7, this.f, false);
+        atzr.t(parcel, 8, this.g, i, false);
+        atzr.F(parcel, 9, this.h);
+        atzr.t(parcel, 10, this.i, i, false);
+        atzr.v(parcel, 11, l(), false);
+        atzr.t(parcel, 12, this.k, i, false);
+        atzr.v(parcel, 13, this.l, false);
+        atzr.t(parcel, 14, this.m, i, false);
+        atzr.x(parcel, 15, this.n, false);
+        atzr.c(parcel, a);
     }
 }

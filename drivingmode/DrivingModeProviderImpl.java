@@ -7,10 +7,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import com.google.android.chimera.ContentProvider;
 import com.google.android.gms.R;
-import defpackage.axqg;
-import defpackage.axql;
+import defpackage.azug;
+import defpackage.azul;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public class DrivingModeProviderImpl extends ContentProvider {
@@ -22,8 +22,8 @@ public class DrivingModeProviderImpl extends ContentProvider {
             return null;
         }
         Bundle bundle2 = new Bundle();
-        axqg.b();
-        if (new axql(this.a).x()) {
+        azug.b();
+        if (new azul(this.a).x()) {
             bundle2.putString("com.android.settings.summary", this.a.getString(R.string.common_on));
             return bundle2;
         }

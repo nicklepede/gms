@@ -3,19 +3,19 @@ package com.google.android.gms.fido.fido2.api;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bbro;
-import defpackage.bbrp;
-import defpackage.bbrq;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bdvf;
+import defpackage.bdvg;
+import defpackage.bdvh;
 import java.util.Arrays;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class StateUpdate extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bbrq();
+    public static final Parcelable.Creator CREATOR = new bdvh();
 
     @Deprecated
     public static final StateUpdate a = new StateUpdate(Type.CANCEL);
@@ -25,7 +25,7 @@ public class StateUpdate extends AbstractSafeParcelable {
     public final String e;
     private final Type f;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public enum Type implements Parcelable {
         CANCEL("cancel"),
         PAUSE("pause"),
@@ -36,7 +36,7 @@ public class StateUpdate extends AbstractSafeParcelable {
         SELECT_TRANSPORT_VIEW("user_selected_view_for_transport"),
         UPDATE_CURRENT_VIEW("update_current_view");
 
-        public static final Parcelable.Creator CREATOR = new bbro();
+        public static final Parcelable.Creator CREATOR = new bdvf();
         public final String i;
 
         Type(String str) {
@@ -49,7 +49,7 @@ public class StateUpdate extends AbstractSafeParcelable {
                     return type;
                 }
             }
-            throw new bbrp(str);
+            throw new bdvg(str);
         }
 
         @Override // android.os.Parcelable
@@ -82,7 +82,7 @@ public class StateUpdate extends AbstractSafeParcelable {
             return false;
         }
         StateUpdate stateUpdate = (StateUpdate) obj;
-        return arwb.b(this.f, stateUpdate.f) && arwb.b(this.e, stateUpdate.e);
+        return atyq.b(this.f, stateUpdate.f) && atyq.b(this.e, stateUpdate.e);
     }
 
     public final int hashCode() {
@@ -92,14 +92,14 @@ public class StateUpdate extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.v(parcel, 2, a(), false);
-        arxc.v(parcel, 3, this.e, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.v(parcel, 2, a(), false);
+        atzr.v(parcel, 3, this.e, false);
+        atzr.c(parcel, a2);
     }
 
     public StateUpdate(Type type, JSONObject jSONObject) {
-        arwm.s(type);
+        atzb.s(type);
         this.f = type;
         if (jSONObject != null) {
             this.e = jSONObject.toString();
@@ -109,16 +109,16 @@ public class StateUpdate extends AbstractSafeParcelable {
         if (!type.equals(Type.CANCEL) && !type.equals(Type.PAUSE) && !type.equals(Type.RESUME) && !type.equals(Type.STOP)) {
             z = false;
         }
-        arwm.b(z);
+        atzb.b(z);
         this.e = null;
     }
 
     public StateUpdate(String str, String str2) {
-        arwm.s(str);
+        atzb.s(str);
         try {
             this.f = Type.a(str);
             this.e = str2;
-        } catch (bbrp e) {
+        } catch (bdvg e) {
             throw new IllegalArgumentException(e);
         }
     }

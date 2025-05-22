@@ -1,10 +1,10 @@
 package com.google.android.gms.kids.database;
 
-import defpackage.bpcn;
-import defpackage.bpco;
-import defpackage.bpcr;
-import defpackage.kol;
-import defpackage.kpp;
+import defpackage.brkd;
+import defpackage.brke;
+import defpackage.brkh;
+import defpackage.mgw;
+import defpackage.mie;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -13,38 +13,38 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public final class DirectBootSupervisionDatabase_Impl extends DirectBootSupervisionDatabase {
-    @Override // defpackage.kpm
-    protected final kol a() {
-        return new kol(this, new HashMap(0), new HashMap(0), "DirectBootTrustedPhoneNumber", "KeyValue");
+    @Override // defpackage.mhx
+    protected final mgw a() {
+        return new mgw(this, new HashMap(0), new HashMap(0), "DirectBootTrustedPhoneNumber", "KeyValue");
     }
 
-    @Override // defpackage.kpm
-    protected final /* synthetic */ kpp c() {
-        return new bpcn(this);
+    @Override // defpackage.mhx
+    protected final /* synthetic */ mie c() {
+        return new brkd(this);
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     protected final Map e() {
         HashMap hashMap = new HashMap();
-        hashMap.put(bpco.class, Collections.EMPTY_LIST);
-        hashMap.put(bpcr.class, Collections.EMPTY_LIST);
+        hashMap.put(brke.class, Collections.EMPTY_LIST);
+        hashMap.put(brkh.class, Collections.EMPTY_LIST);
         return hashMap;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final Set f() {
         return new HashSet();
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final void k() {
         throw null;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final List s() {
         return new ArrayList();
     }

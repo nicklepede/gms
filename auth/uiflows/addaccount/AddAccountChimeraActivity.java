@@ -9,201 +9,202 @@ import android.os.UserManager;
 import android.util.Log;
 import android.widget.Toast;
 import com.google.android.gms.R;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.adee;
-import defpackage.adef;
-import defpackage.adit;
-import defpackage.adiu;
-import defpackage.adiv;
-import defpackage.adiw;
-import defpackage.adix;
-import defpackage.adiy;
-import defpackage.adiz;
-import defpackage.adja;
-import defpackage.adko;
-import defpackage.arka;
-import defpackage.arke;
-import defpackage.arwm;
-import defpackage.ejxr;
-import defpackage.ejxz;
-import defpackage.ejya;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fkdo;
-import defpackage.fkie;
-import defpackage.vcw;
+import com.google.autofill.detection.ml.AndroidInputTypeSignal;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.afeg;
+import defpackage.afeh;
+import defpackage.afiz;
+import defpackage.afja;
+import defpackage.afjb;
+import defpackage.afjc;
+import defpackage.afjd;
+import defpackage.afje;
+import defpackage.afjf;
+import defpackage.afjg;
+import defpackage.afkv;
+import defpackage.atmp;
+import defpackage.atmt;
+import defpackage.atzb;
+import defpackage.emlc;
+import defpackage.emlk;
+import defpackage.emll;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fmua;
+import defpackage.fmyt;
+import defpackage.wyw;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AddAccountChimeraActivity extends adko implements adee {
-    public static final aano h = new aano("account");
-    public static final aano i = new aano("offers_intent");
-    public static final aano j = new aano("dm_status");
-    public static final aano k = new aano("is_eligible_for_unmanaged_work_profile");
-    public static final aano l = new aano("is_unicorn_account");
-    private static final aano m = new aano("token_handle");
-    private adit n;
+public class AddAccountChimeraActivity extends afkv implements afeg {
+    public static final acno h = new acno("account");
+    public static final acno i = new acno("offers_intent");
+    public static final acno j = new acno("dm_status");
+    public static final acno k = new acno("is_eligible_for_unmanaged_work_profile");
+    public static final acno l = new acno("is_unicorn_account");
+    private static final acno m = new acno("token_handle");
+    private afiz n;
 
-    public static Intent b(Context context, String str, boolean z, String str2, String str3, String str4, boolean z2, boolean z3, boolean z4, boolean z5, arke arkeVar, boolean z6) {
-        int i2 = true != fkie.c() ? -1 : R.drawable.ic_logo_google;
-        adja adjaVar = adja.c;
-        if (!fkdo.j()) {
-            arwm.s(str3);
+    public static Intent b(Context context, String str, boolean z, String str2, String str3, String str4, boolean z2, boolean z3, boolean z4, boolean z5, atmt atmtVar, boolean z6) {
+        int i2 = true != fmyt.c() ? -1 : R.drawable.ic_logo_google;
+        afjg afjgVar = afjg.c;
+        if (!fmua.j()) {
+            atzb.s(str3);
         }
-        return adjaVar.a(context, new adit(z4, arkeVar, R.string.auth_signing_in_title, i2, str, z, str2, str3, str4, z2, z3, z5, z6));
+        return afjgVar.a(context, new afiz(z4, atmtVar, R.string.auth_signing_in_title, i2, str, z, str2, str3, str4, z2, z3, z5, z6));
     }
 
-    public static void o(Context context, fecj fecjVar, boolean z, String str, boolean z2, boolean z3) {
-        ejxr ejxrVar = ((ejya) fecjVar.b).v;
-        if (ejxrVar == null) {
-            ejxrVar = ejxr.a;
+    public static void o(Context context, fgrc fgrcVar, boolean z, String str, boolean z2, boolean z3) {
+        emlc emlcVar = ((emll) fgrcVar.b).v;
+        if (emlcVar == null) {
+            emlcVar = emlc.a;
         }
-        fecj fecjVar2 = (fecj) ejxrVar.iB(5, null);
-        fecjVar2.X(ejxrVar);
-        if (!fecjVar2.b.L()) {
-            fecjVar2.U();
+        fgrc fgrcVar2 = (fgrc) emlcVar.iQ(5, null);
+        fgrcVar2.X(emlcVar);
+        if (!fgrcVar2.b.L()) {
+            fgrcVar2.U();
         }
         int i2 = true == z2 ? 4 : 5;
-        fecp fecpVar = fecjVar2.b;
-        ejxr ejxrVar2 = (ejxr) fecpVar;
-        ejxrVar2.c = i2 - 1;
-        ejxrVar2.b |= 1;
+        fgri fgriVar = fgrcVar2.b;
+        emlc emlcVar2 = (emlc) fgriVar;
+        emlcVar2.c = i2 - 1;
+        emlcVar2.b |= 1;
         if (z) {
-            if (!fecpVar.L()) {
-                fecjVar2.U();
+            if (!fgriVar.L()) {
+                fgrcVar2.U();
             }
-            ejxr ejxrVar3 = (ejxr) fecjVar2.b;
-            ejxrVar3.d = 1;
-            ejxrVar3.b |= 2;
+            emlc emlcVar3 = (emlc) fgrcVar2.b;
+            emlcVar3.d = 1;
+            emlcVar3.b |= 2;
         }
-        if (arka.f(str)) {
+        if (atmp.f(str)) {
             int i3 = ((UserManager) context.getSystemService("user")).getSerialNumberForUser(Process.myUserHandle()) == 0 ? 2 : 3;
-            if (!fecjVar2.b.L()) {
-                fecjVar2.U();
+            if (!fgrcVar2.b.L()) {
+                fgrcVar2.U();
             }
-            fecp fecpVar2 = fecjVar2.b;
-            ejxr ejxrVar4 = (ejxr) fecpVar2;
-            ejxrVar4.e = i3 - 1;
-            ejxrVar4.b |= 4;
+            fgri fgriVar2 = fgrcVar2.b;
+            emlc emlcVar4 = (emlc) fgriVar2;
+            emlcVar4.e = i3 - 1;
+            emlcVar4.b |= 4;
             int i4 = true == z3 ? 3 : 2;
-            if (!fecpVar2.L()) {
-                fecjVar2.U();
+            if (!fgriVar2.L()) {
+                fgrcVar2.U();
             }
-            ejxr ejxrVar5 = (ejxr) fecjVar2.b;
-            ejxrVar5.f = i4 - 1;
-            ejxrVar5.b |= 8;
+            emlc emlcVar5 = (emlc) fgrcVar2.b;
+            emlcVar5.f = i4 - 1;
+            emlcVar5.b |= 8;
         }
-        ejxr ejxrVar6 = (ejxr) fecjVar2.Q();
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        emlc emlcVar6 = (emlc) fgrcVar2.Q();
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        ejya ejyaVar = (ejya) fecjVar.b;
-        ejxrVar6.getClass();
-        ejyaVar.v = ejxrVar6;
-        ejyaVar.b |= 2097152;
+        emll emllVar = (emll) fgrcVar.b;
+        emlcVar6.getClass();
+        emllVar.v = emlcVar6;
+        emllVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
     }
 
-    private final void p(adiz adizVar) {
-        gD(adizVar.b, adizVar.c);
+    private final void p(afjf afjfVar) {
+        gT(afjfVar.b, afjfVar.c);
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "AddAccountActivity";
     }
 
-    @Override // defpackage.adkg
-    protected final void gH() {
-        if (vcw.a.a(this)) {
-            vcw.c(this, null);
+    @Override // defpackage.afkn
+    protected final void gX() {
+        if (wyw.a.a(this)) {
+            wyw.c(this, null);
         } else {
-            super.gH();
+            super.gX();
         }
     }
 
-    @Override // defpackage.adee
+    @Override // defpackage.afeg
     public final void j(Account account, String str, boolean z, Intent intent, boolean z2, String str2, boolean z3) {
         o(this, w(), this.n.f, str, z2, z);
         boolean z4 = this.n.m;
-        aanp aanpVar = new aanp();
-        aanpVar.d(h, account);
-        aanpVar.d(j, str);
-        aanpVar.d(l, Boolean.valueOf(z));
-        aanpVar.d(i, intent);
-        aanpVar.d(m, str2);
-        aanpVar.d(k, Boolean.valueOf(z3));
-        Intent putExtras = new Intent().putExtras(aanpVar.a);
+        acnp acnpVar = new acnp();
+        acnpVar.d(h, account);
+        acnpVar.d(j, str);
+        acnpVar.d(l, Boolean.valueOf(z));
+        acnpVar.d(i, intent);
+        acnpVar.d(m, str2);
+        acnpVar.d(k, Boolean.valueOf(z3));
+        Intent putExtras = new Intent().putExtras(acnpVar.a);
         if (z2 && z4) {
-            p(new adix(putExtras));
+            p(new afjd(putExtras));
         } else {
-            p(new adiy(putExtras));
+            p(new afje(putExtras));
         }
     }
 
-    @Override // defpackage.adee
+    @Override // defpackage.afeg
     public final void k() {
         Log.w("Auth", String.format(Locale.US, "[AddAccount, AddAccountActivity] Failed to add account.", new Object[0]));
         boolean z = this.n.f;
-        ejxr ejxrVar = ((ejya) w().b).v;
-        if (ejxrVar == null) {
-            ejxrVar = ejxr.a;
+        emlc emlcVar = ((emll) w().b).v;
+        if (emlcVar == null) {
+            emlcVar = emlc.a;
         }
-        fecj fecjVar = (fecj) ejxrVar.iB(5, null);
-        fecjVar.X(ejxrVar);
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        fgrc fgrcVar = (fgrc) emlcVar.iQ(5, null);
+        fgrcVar.X(emlcVar);
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        fecp fecpVar = fecjVar.b;
-        ejxr ejxrVar2 = (ejxr) fecpVar;
-        ejxrVar2.c = 5;
-        ejxrVar2.b |= 1;
+        fgri fgriVar = fgrcVar.b;
+        emlc emlcVar2 = (emlc) fgriVar;
+        emlcVar2.c = 5;
+        emlcVar2.b |= 1;
         if (z) {
-            if (!fecpVar.L()) {
-                fecjVar.U();
+            if (!fgriVar.L()) {
+                fgrcVar.U();
             }
-            ejxr ejxrVar3 = (ejxr) fecjVar.b;
-            ejxrVar3.d = 1;
-            ejxrVar3.b |= 2;
+            emlc emlcVar3 = (emlc) fgrcVar.b;
+            emlcVar3.d = 1;
+            emlcVar3.b |= 2;
         }
-        fecj w = w();
-        ejxr ejxrVar4 = (ejxr) fecjVar.Q();
+        fgrc w = w();
+        emlc emlcVar4 = (emlc) fgrcVar.Q();
         if (!w.b.L()) {
             w.U();
         }
-        ejya ejyaVar = (ejya) w.b;
-        ejxrVar4.getClass();
-        ejyaVar.v = ejxrVar4;
-        ejyaVar.b |= 2097152;
-        p(adiu.a);
+        emll emllVar = (emll) w.b;
+        emlcVar4.getClass();
+        emllVar.v = emlcVar4;
+        emllVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
+        p(afja.a);
     }
 
-    @Override // defpackage.adee
+    @Override // defpackage.afeg
     public final void l(int i2) {
         int i3;
         Log.i("Auth", String.format(Locale.US, "[AddAccount, AddAccountActivity] FRP still locked, error = %d", Integer.valueOf(i2)));
-        ejxr ejxrVar = ((ejya) w().b).v;
-        if (ejxrVar == null) {
-            ejxrVar = ejxr.a;
+        emlc emlcVar = ((emll) w().b).v;
+        if (emlcVar == null) {
+            emlcVar = emlc.a;
         }
-        fecj fecjVar = (fecj) ejxrVar.iB(5, null);
-        fecjVar.X(ejxrVar);
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        fgrc fgrcVar = (fgrc) emlcVar.iQ(5, null);
+        fgrcVar.X(emlcVar);
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        ejxr ejxrVar2 = (ejxr) fecjVar.b;
-        ejxrVar2.c = 1;
-        ejxrVar2.b |= 1;
-        ejxr ejxrVar3 = (ejxr) fecjVar.Q();
-        fecj w = w();
+        emlc emlcVar2 = (emlc) fgrcVar.b;
+        emlcVar2.c = 1;
+        emlcVar2.b |= 1;
+        emlc emlcVar3 = (emlc) fgrcVar.Q();
+        fgrc w = w();
         if (!w.b.L()) {
             w.U();
         }
-        ejya ejyaVar = (ejya) w.b;
-        ejxrVar3.getClass();
-        ejyaVar.v = ejxrVar3;
-        ejyaVar.b |= 2097152;
+        emll emllVar = (emll) w.b;
+        emlcVar3.getClass();
+        emllVar.v = emlcVar3;
+        emllVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
         if (i2 == 3) {
             Log.i("Auth", String.format(Locale.US, "[AddAccount, AddAccountActivity] Password recently changed", new Object[0]));
             i3 = R.string.auth_factory_reset_protection_recent_password_change_toast;
@@ -215,69 +216,69 @@ public class AddAccountChimeraActivity extends adko implements adee {
             i3 = R.string.auth_factory_reset_protection_unknown_error_toast;
         }
         Toast.makeText(this, i3, 1).show();
-        p(adiv.a);
+        p(afjb.a);
     }
 
-    @Override // defpackage.adee
+    @Override // defpackage.afeg
     public final void n() {
         Log.i("Auth", String.format(Locale.US, "[AddAccount, AddAccountActivity] FRP unlocked.", new Object[0]));
-        ejxr ejxrVar = ((ejya) w().b).v;
-        if (ejxrVar == null) {
-            ejxrVar = ejxr.a;
+        emlc emlcVar = ((emll) w().b).v;
+        if (emlcVar == null) {
+            emlcVar = emlc.a;
         }
-        fecj fecjVar = (fecj) ejxrVar.iB(5, null);
-        fecjVar.X(ejxrVar);
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        fgrc fgrcVar = (fgrc) emlcVar.iQ(5, null);
+        fgrcVar.X(emlcVar);
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        ejxr ejxrVar2 = (ejxr) fecjVar.b;
-        ejxrVar2.c = 2;
-        ejxrVar2.b |= 1;
-        ejxr ejxrVar3 = (ejxr) fecjVar.Q();
-        fecj w = w();
+        emlc emlcVar2 = (emlc) fgrcVar.b;
+        emlcVar2.c = 2;
+        emlcVar2.b |= 1;
+        emlc emlcVar3 = (emlc) fgrcVar.Q();
+        fgrc w = w();
         if (!w.b.L()) {
             w.U();
         }
-        ejya ejyaVar = (ejya) w.b;
-        ejxrVar3.getClass();
-        ejyaVar.v = ejxrVar3;
-        ejyaVar.b |= 2097152;
-        p(adiw.a);
+        emll emllVar = (emll) w.b;
+        emlcVar3.getClass();
+        emllVar.v = emlcVar3;
+        emllVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
+        p(afjc.a);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         Log.i("Auth", String.format(Locale.US, "[AddAccount, AddAccountActivity] onBackPressed. Ignore.", new Object[0]));
     }
 
-    @Override // defpackage.adko, defpackage.adlg, defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkv, defpackage.afln, defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.n = (adit) adja.c.j(getIntent());
-        if (vcw.a.a(this)) {
-            vcw.b(this);
+        this.n = (afiz) afjg.c.j(getIntent());
+        if (wyw.a.a(this)) {
+            wyw.b(this);
         }
-        adit aditVar = this.n;
-        boolean z = aditVar.f;
-        adef.x(this, true, aditVar.l, aditVar.e, aditVar.g, aditVar.h, aditVar.i, aditVar.j, aditVar.k, aditVar.b.c);
-        if ((((ejya) w().b).b & 2097152) != 0) {
+        afiz afizVar = this.n;
+        boolean z = afizVar.f;
+        afeh.x(this, true, afizVar.l, afizVar.e, afizVar.g, afizVar.h, afizVar.i, afizVar.j, afizVar.k, afizVar.b.c);
+        if ((((emll) w().b).b & AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS) != 0) {
             return;
         }
-        fecj w = w();
-        ejxz ejxzVar = ejxz.ADD_ACCOUNT_EVENT;
+        fgrc w = w();
+        emlk emlkVar = emlk.ADD_ACCOUNT_EVENT;
         if (!w.b.L()) {
             w.U();
         }
-        ejya ejyaVar = (ejya) w.b;
-        ejyaVar.e = ejxzVar.aw;
-        ejyaVar.b |= 1;
-        ejxr ejxrVar = ejxr.a;
+        emll emllVar = (emll) w.b;
+        emllVar.e = emlkVar.ar;
+        emllVar.b |= 1;
+        emlc emlcVar = emlc.a;
         if (!w.b.L()) {
             w.U();
         }
-        ejya ejyaVar2 = (ejya) w.b;
-        ejxrVar.getClass();
-        ejyaVar2.v = ejxrVar;
-        ejyaVar2.b = 2097152 | ejyaVar2.b;
+        emll emllVar2 = (emll) w.b;
+        emlcVar.getClass();
+        emllVar2.v = emlcVar;
+        emllVar2.b = 524288 | emllVar2.b;
     }
 }

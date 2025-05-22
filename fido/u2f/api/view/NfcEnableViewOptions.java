@@ -3,15 +3,15 @@ package com.google.android.gms.fido.u2f.api.view;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.fido.common.Transport;
-import defpackage.arxc;
-import defpackage.bcsd;
-import defpackage.bcsm;
+import defpackage.atzr;
+import defpackage.betq;
+import defpackage.betz;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class NfcEnableViewOptions extends ViewOptions {
-    public static final Parcelable.Creator CREATOR = new bcsd();
+    public static final Parcelable.Creator CREATOR = new betq();
 
     @Override // com.google.android.gms.fido.u2f.api.view.ViewOptions
     public final Transport c() {
@@ -19,8 +19,8 @@ public class NfcEnableViewOptions extends ViewOptions {
     }
 
     @Override // com.google.android.gms.fido.u2f.api.view.ViewOptions
-    public final bcsm d() {
-        return bcsm.NFC_ENABLE;
+    public final betz d() {
+        return betz.NFC_ENABLE;
     }
 
     @Override // com.google.android.gms.fido.u2f.api.view.ViewOptions
@@ -34,6 +34,6 @@ public class NfcEnableViewOptions extends ViewOptions {
 
     @Override // com.google.android.gms.fido.u2f.api.view.ViewOptions, android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        arxc.c(parcel, arxc.a(parcel));
+        atzr.c(parcel, atzr.a(parcel));
     }
 }

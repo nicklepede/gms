@@ -2,24 +2,24 @@ package com.google.android.gms.crisisalerts.state;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.axdg;
-import defpackage.eiif;
+import defpackage.azhg;
+import defpackage.ekvk;
 import j$.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class CrisisAlertsSettingsChangeIntentOperation extends IntentOperation {
     public static final AtomicReference a;
 
     static {
-        axdg.a("SetChng");
+        azhg.a("SetChng");
         a = new AtomicReference(Optional.empty());
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (intent == null || !eiif.b(intent.getAction()).equals("com.google.android.gms.crisisalerts.state.CRISIS_ALERTS_SETTINGS_CHANGED")) {
+        if (intent == null || !ekvk.b(intent.getAction()).equals("com.google.android.gms.crisisalerts.state.CRISIS_ALERTS_SETTINGS_CHANGED")) {
             return;
         }
         AtomicReference atomicReference = a;

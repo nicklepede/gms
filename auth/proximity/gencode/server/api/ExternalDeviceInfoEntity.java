@@ -5,9 +5,9 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse;
 import defpackage.a;
-import defpackage.acos;
-import defpackage.acot;
-import defpackage.arxc;
+import defpackage.aeos;
+import defpackage.aeot;
+import defpackage.atzr;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -15,10 +15,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonResponse implements acos {
-    public static final Parcelable.Creator CREATOR = new acot();
+public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonResponse implements aeos {
+    public static final Parcelable.Creator CREATOR = new aeot();
     private static final HashMap p;
     final Set a;
     boolean b;
@@ -73,7 +73,7 @@ public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonRespon
         this.o = z5;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         switch (i) {
@@ -110,17 +110,17 @@ public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonRespon
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return p;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final long d() {
         return this.h;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
@@ -146,7 +146,7 @@ public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonRespon
         return true;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i = fastJsonResponse$Field.g;
         if (i == 4) {
@@ -166,13 +166,37 @@ public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonRespon
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final String g() {
         return this.d;
     }
 
-    @Override // defpackage.ashs
-    protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+    @Override // defpackage.aulm
+    public final void gK(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+        int i = fastJsonResponse$Field.g;
+        if (i != 3) {
+            throw new IllegalArgumentException(a.I(arrayList != null ? arrayList.getClass().getCanonicalName() : "null", i, "Field with id=", " is not a known array of custom type.  Found ", "."));
+        }
+        this.c = arrayList;
+        this.a.add(Integer.valueOf(i));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gN(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+        int i = fastJsonResponse$Field.g;
+        if (i == 6) {
+            this.f = arrayList;
+        } else {
+            if (i != 13) {
+                throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be an array of String."));
+            }
+            this.m = arrayList;
+        }
+        this.a.add(Integer.valueOf(i));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
             this.b = z;
@@ -191,30 +215,6 @@ public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonRespon
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    public final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
-        int i = fastJsonResponse$Field.g;
-        if (i != 3) {
-            throw new IllegalArgumentException(a.F(arrayList != null ? arrayList.getClass().getCanonicalName() : "null", i, "Field with id=", " is not a known array of custom type.  Found ", "."));
-        }
-        this.c = arrayList;
-        this.a.add(Integer.valueOf(i));
-    }
-
-    @Override // defpackage.ashs
-    protected final void gy(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
-        int i = fastJsonResponse$Field.g;
-        if (i == 6) {
-            this.f = arrayList;
-        } else {
-            if (i != 13) {
-                throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be an array of String."));
-            }
-            this.m = arrayList;
-        }
-        this.a.add(Integer.valueOf(i));
-    }
-
     @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse
     public final int hashCode() {
         int i = 0;
@@ -226,12 +226,12 @@ public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonRespon
         return i;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final String i() {
         return this.e;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void k(FastJsonResponse$Field fastJsonResponse$Field, String str, long j) {
         int i = fastJsonResponse$Field.g;
         if (i != 8) {
@@ -241,57 +241,57 @@ public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonRespon
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final String m() {
         return this.g;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final String n() {
         return this.l;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final List o() {
         return this.c;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final List p() {
         return this.f;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final List q() {
         return this.m;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final boolean r() {
         return this.a.contains(6);
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final boolean s() {
         return this.a.contains(12);
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final boolean t() {
         return this.a.contains(13);
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final boolean u() {
         return this.b;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final boolean v() {
         return this.i;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final boolean w() {
         return this.k;
     }
@@ -299,58 +299,58 @@ public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonRespon
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.e(parcel, 2, this.b);
+            atzr.e(parcel, 2, this.b);
         }
         if (set.contains(3)) {
-            arxc.y(parcel, 3, this.c, true);
+            atzr.y(parcel, 3, this.c, true);
         }
         if (set.contains(4)) {
-            arxc.v(parcel, 4, this.d, true);
+            atzr.v(parcel, 4, this.d, true);
         }
         if (set.contains(5)) {
-            arxc.v(parcel, 5, this.e, true);
+            atzr.v(parcel, 5, this.e, true);
         }
         if (set.contains(6)) {
-            arxc.x(parcel, 6, this.f, true);
+            atzr.x(parcel, 6, this.f, true);
         }
         if (set.contains(7)) {
-            arxc.v(parcel, 7, this.g, true);
+            atzr.v(parcel, 7, this.g, true);
         }
         if (set.contains(8)) {
-            arxc.q(parcel, 8, this.h);
+            atzr.q(parcel, 8, this.h);
         }
         if (set.contains(9)) {
-            arxc.e(parcel, 9, this.i);
+            atzr.e(parcel, 9, this.i);
         }
         if (set.contains(10)) {
-            arxc.v(parcel, 10, this.j, true);
+            atzr.v(parcel, 10, this.j, true);
         }
         if (set.contains(11)) {
-            arxc.e(parcel, 11, this.k);
+            atzr.e(parcel, 11, this.k);
         }
         if (set.contains(12)) {
-            arxc.v(parcel, 12, this.l, true);
+            atzr.v(parcel, 12, this.l, true);
         }
         if (set.contains(13)) {
-            arxc.x(parcel, 13, this.m, true);
+            atzr.x(parcel, 13, this.m, true);
         }
         if (set.contains(14)) {
-            arxc.e(parcel, 14, this.n);
+            atzr.e(parcel, 14, this.n);
         }
         if (set.contains(15)) {
-            arxc.e(parcel, 15, this.o);
+            atzr.e(parcel, 15, this.o);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final boolean x() {
         return this.n;
     }
 
-    @Override // defpackage.acos
+    @Override // defpackage.aeos
     public final boolean y() {
         return this.o;
     }
@@ -359,7 +359,7 @@ public final class ExternalDeviceInfoEntity extends FastSafeParcelableJsonRespon
         this.a = new HashSet();
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

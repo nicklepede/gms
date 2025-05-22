@@ -4,23 +4,23 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
 import defpackage.a;
-import defpackage.bhjl;
-import defpackage.bhjv;
-import defpackage.bhjw;
-import defpackage.bhpv;
-import defpackage.bxhl;
-import defpackage.eiuu;
-import defpackage.ejck;
+import defpackage.bjoa;
+import defpackage.bjok;
+import defpackage.bjol;
+import defpackage.bjuk;
+import defpackage.bzqb;
+import defpackage.elhz;
+import defpackage.elpp;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class GamesAndroidServiceStub extends Service {
     private static final ArrayList a = new ArrayList();
-    private static final eiuu b = eiuu.L("com.google.android.gms.games.service.START", "com.google.android.gms.games.service.START_ASYNC", "com.google.android.play.games.service.START_1P");
+    private static final elhz b = elhz.L("com.google.android.gms.games.service.START", "com.google.android.gms.games.service.START_ASYNC", "com.google.android.play.games.service.START_1P");
 
     static final void a(Intent intent) {
-        bhpv.b("GamesService", "Binding to games service: ".concat(String.valueOf(String.valueOf(intent))));
+        bjuk.b("GamesService", "Binding to games service: ".concat(String.valueOf(String.valueOf(intent))));
         ArrayList arrayList = a;
         synchronized (arrayList) {
             int size = arrayList.size();
@@ -29,7 +29,7 @@ public final class GamesAndroidServiceStub extends Service {
                     return;
                 }
             }
-            bhpv.b("GamesService", a.L(intent, "Adding intent: "));
+            bjuk.b("GamesService", a.N(intent, "Adding intent: "));
             arrayList.add(intent);
         }
     }
@@ -38,17 +38,17 @@ public final class GamesAndroidServiceStub extends Service {
     public final IBinder onBind(Intent intent) {
         if ("com.google.android.gms.games.internal.connect.service.START".equals(intent.getAction())) {
             a(intent);
-            return new bxhl(this, 1, ejck.a, 3, new bhjv(this));
+            return new bzqb(this, 1, elpp.a, 3, new bjok(this));
         }
         if ("com.google.android.gms.games.internal.recall.service.START".equals(intent.getAction())) {
             a(intent);
-            return new bxhl(this, 1, ejck.a, 3, new bhjw(this));
+            return new bzqb(this, 1, elpp.a, 3, new bjol(this));
         }
         if (!b.contains(intent.getAction())) {
             return null;
         }
         a(intent);
-        return new bhjl(this);
+        return new bjoa(this);
     }
 
     @Override // com.google.android.chimera.Service
@@ -61,7 +61,7 @@ public final class GamesAndroidServiceStub extends Service {
     @Override // com.google.android.chimera.Service
     public final boolean onUnbind(Intent intent) {
         boolean isEmpty;
-        bhpv.b("GamesService", "Unbinding from games service: ".concat(String.valueOf(String.valueOf(intent))));
+        bjuk.b("GamesService", "Unbinding from games service: ".concat(String.valueOf(String.valueOf(intent))));
         ArrayList arrayList = a;
         synchronized (arrayList) {
             int size = arrayList.size();
@@ -72,7 +72,7 @@ public final class GamesAndroidServiceStub extends Service {
                 }
                 Intent intent2 = (Intent) arrayList.get(i);
                 if (intent2.filterEquals(intent)) {
-                    bhpv.b("GamesService", a.L(intent2, "Removing intent: "));
+                    bjuk.b("GamesService", a.N(intent2, "Removing intent: "));
                     arrayList.remove(i);
                     break;
                 }
@@ -83,7 +83,7 @@ public final class GamesAndroidServiceStub extends Service {
         if (!isEmpty) {
             return true;
         }
-        bhpv.b("GamesService", "Unbound from all clients. Cleaning up.");
+        bjuk.b("GamesService", "Unbound from all clients. Cleaning up.");
         return true;
     }
 }

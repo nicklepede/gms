@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmww;
-import defpackage.cmwy;
-import defpackage.cnby;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpfe;
+import defpackage.cpfg;
+import defpackage.cpkg;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class StartQrCodeSessionParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cnby();
-    public cmwy a;
+    public static final Parcelable.Creator CREATOR = new cpkg();
+    public cpfg a;
     public byte[] b;
 
     public StartQrCodeSessionParams() {
@@ -28,7 +28,7 @@ public final class StartQrCodeSessionParams extends AbstractSafeParcelable {
         }
         if (obj instanceof StartQrCodeSessionParams) {
             StartQrCodeSessionParams startQrCodeSessionParams = (StartQrCodeSessionParams) obj;
-            if (arwb.b(this.a, startQrCodeSessionParams.a) && this.b == startQrCodeSessionParams.b) {
+            if (atyq.b(this.a, startQrCodeSessionParams.a) && this.b == startQrCodeSessionParams.b) {
                 return true;
             }
         }
@@ -41,21 +41,21 @@ public final class StartQrCodeSessionParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.i(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.i(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 
     public StartQrCodeSessionParams(IBinder iBinder, byte[] bArr) {
-        cmwy cmwwVar;
+        cpfg cpfeVar;
         if (iBinder == null) {
-            cmwwVar = null;
+            cpfeVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IQrCodeMetadataResultListener");
-            cmwwVar = queryLocalInterface instanceof cmwy ? (cmwy) queryLocalInterface : new cmww(iBinder);
+            cpfeVar = queryLocalInterface instanceof cpfg ? (cpfg) queryLocalInterface : new cpfe(iBinder);
         }
-        this.a = cmwwVar;
+        this.a = cpfeVar;
         this.b = bArr;
     }
 }

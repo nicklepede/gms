@@ -3,16 +3,16 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxen;
+import defpackage.atyq;
+import defpackage.czoj;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class MonthlyPatternEntity extends AbstractSafeParcelable implements MonthlyPattern {
-    public static final Parcelable.Creator CREATOR = new cxen();
+    public static final Parcelable.Creator CREATOR = new czoj();
     public final List a;
     public final Integer b;
     public final Integer c;
@@ -28,7 +28,7 @@ public class MonthlyPatternEntity extends AbstractSafeParcelable implements Mont
     }
 
     public static boolean e(MonthlyPattern monthlyPattern, MonthlyPattern monthlyPattern2) {
-        return arwb.b(monthlyPattern.d(), monthlyPattern2.d()) && arwb.b(monthlyPattern.a(), monthlyPattern2.a()) && arwb.b(monthlyPattern.c(), monthlyPattern2.c());
+        return atyq.b(monthlyPattern.d(), monthlyPattern2.d()) && atyq.b(monthlyPattern.a(), monthlyPattern2.a()) && atyq.b(monthlyPattern.c(), monthlyPattern2.c());
     }
 
     @Override // com.google.android.gms.reminders.model.MonthlyPattern
@@ -62,7 +62,7 @@ public class MonthlyPatternEntity extends AbstractSafeParcelable implements Mont
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxen.a(this, parcel);
+        czoj.a(this, parcel);
     }
 
     public MonthlyPatternEntity(MonthlyPattern monthlyPattern) {
@@ -74,7 +74,7 @@ public class MonthlyPatternEntity extends AbstractSafeParcelable implements Mont
         this.a = d == null ? null : new ArrayList(d);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

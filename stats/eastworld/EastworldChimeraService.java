@@ -17,15 +17,15 @@ import com.google.android.chimera.Service;
 import com.google.android.gms.appusage.AppUsageResult;
 import com.google.android.gms.chimera.modules.stats.AppContextProvider;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.arxd;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.desc;
-import defpackage.detm;
-import defpackage.detx;
-import defpackage.ejhf;
-import defpackage.fshx;
-import defpackage.iln;
+import defpackage.atzs;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.dhdf;
+import defpackage.dhep;
+import defpackage.dhfa;
+import defpackage.eluo;
+import defpackage.fvcv;
+import defpackage.ind;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -33,31 +33,31 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class EastworldChimeraService extends Service {
-    public static final asot a = asot.b("EastworldChimeraService", asej.STATS);
-    desc b;
+    public static final ausn a = ausn.b("EastworldChimeraService", auid.STATS);
+    dhdf b;
     private BroadcastReceiver c;
     private PackageUpdateBroadcastReceiver d;
     private AppUsageOrderedBroadcastReceiver e;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class AppUsageOrderedBroadcastReceiver extends TracingBroadcastReceiver {
         public AppUsageOrderedBroadcastReceiver() {
             super("stats");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             ArrayList arrayList;
             long longExtra = intent.getLongExtra("appUsage_startTime", -1L);
             long longExtra2 = intent.getLongExtra("appUsage_endTime", -1L);
             if (longExtra < 0 || longExtra2 < 0) {
-                ((ejhf) ((ejhf) EastworldChimeraService.a.i()).ah(10947)).J("Didn't get correct time range parameters from app usage broadcast, startTime:%d endTime:%d", longExtra, longExtra2);
+                ((eluo) ((eluo) EastworldChimeraService.a.i()).ai(10950)).J("Didn't get correct time range parameters from app usage broadcast, startTime:%d endTime:%d", longExtra, longExtra2);
                 return;
             }
-            List b = detm.b(longExtra, longExtra2, intent.getStringArrayListExtra("appUsage_packageNames"));
+            List b = dhep.b(longExtra, longExtra2, intent.getStringArrayListExtra("appUsage_packageNames"));
             Bundle resultExtras = getResultExtras(true);
             Parcelable.Creator creator = AppUsageResult.CREATOR;
             ArrayList arrayList2 = (ArrayList) resultExtras.getSerializable("appUageResult");
@@ -67,12 +67,12 @@ public class EastworldChimeraService extends Service {
                 ArrayList arrayList3 = new ArrayList(arrayList2.size());
                 int size = arrayList2.size();
                 for (int i = 0; i < size; i++) {
-                    arrayList3.add(arxd.a((byte[]) arrayList2.get(i), creator));
+                    arrayList3.add(atzs.a((byte[]) arrayList2.get(i), creator));
                 }
                 arrayList = arrayList3;
             }
             if (arrayList == null) {
-                arxd.o(new ArrayList(b), resultExtras);
+                atzs.o(new ArrayList(b), resultExtras);
             } else {
                 arrayList.addAll(b);
                 HashMap hashMap = new HashMap();
@@ -86,32 +86,32 @@ public class EastworldChimeraService extends Service {
                 for (Pair pair : hashMap.keySet()) {
                     arrayList4.add(new AppUsageResult((String) pair.first, ((Integer) pair.second).intValue(), ((Long) hashMap.get(pair)).longValue()));
                 }
-                arxd.o(arrayList4, resultExtras);
+                atzs.o(arrayList4, resultExtras);
             }
             setResultExtras(resultExtras);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class EastworldBroadcastReceiver extends TracingBroadcastReceiver {
         public EastworldBroadcastReceiver() {
             super("stats");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             EastworldChimeraService.this.b.b(intent);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class PackageUpdateBroadcastReceiver extends TracingBroadcastReceiver {
         public PackageUpdateBroadcastReceiver() {
             super("stats");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             Intent intent2;
             String action = intent.getAction();
             if (TextUtils.isEmpty(action)) {
@@ -127,17 +127,17 @@ public class EastworldChimeraService extends Service {
             }
             Uri data = intent2.getData();
             if (data == null) {
-                asot asotVar = EastworldChimeraService.a;
+                ausn ausnVar = EastworldChimeraService.a;
                 return;
             }
             String schemeSpecificPart = data.getSchemeSpecificPart();
             long currentTimeMillis = System.currentTimeMillis();
-            synchronized (detm.a()) {
-                if (currentTimeMillis - detm.b > TimeUnit.DAYS.toMillis(1L)) {
-                    Map<String, ?> all = detm.a().getAll();
-                    SharedPreferences.Editor edit = detm.a().edit();
+            synchronized (dhep.a()) {
+                if (currentTimeMillis - dhep.b > TimeUnit.DAYS.toMillis(1L)) {
+                    Map<String, ?> all = dhep.a().getAll();
+                    SharedPreferences.Editor edit = dhep.a().edit();
                     for (String str : all.keySet()) {
-                        List c = detm.c(str);
+                        List c = dhep.c(str);
                         StringBuilder sb = new StringBuilder();
                         Iterator it = c.iterator();
                         while (true) {
@@ -157,22 +157,22 @@ public class EastworldChimeraService extends Service {
                         }
                     }
                     edit.apply();
-                    detm.b = currentTimeMillis;
+                    dhep.b = currentTimeMillis;
                 }
                 try {
                     int i = AppContextProvider.a().getPackageManager().getPackageInfo(schemeSpecificPart, 0).versionCode;
-                    StringBuilder sb2 = new StringBuilder(detm.a().getString(schemeSpecificPart, ""));
+                    StringBuilder sb2 = new StringBuilder(dhep.a().getString(schemeSpecificPart, ""));
                     StringBuilder sb3 = new StringBuilder();
                     sb3.append(i);
                     sb3.append(",");
                     sb3.append(currentTimeMillis);
                     sb3.append("|");
                     sb2.insert(0, (CharSequence) sb3);
-                    SharedPreferences.Editor edit2 = detm.a().edit();
+                    SharedPreferences.Editor edit2 = dhep.a().edit();
                     edit2.putString(schemeSpecificPart, sb2.toString());
                     edit2.apply();
                 } catch (PackageManager.NameNotFoundException e) {
-                    ((ejhf) ((ejhf) ((ejhf) detm.a.i()).s(e)).ah(10983)).B("Cannot get updated packageInfo of %s", schemeSpecificPart);
+                    ((eluo) ((eluo) ((eluo) dhep.a.i()).s(e)).ai(10986)).B("Cannot get updated packageInfo of %s", schemeSpecificPart);
                 }
             }
         }
@@ -186,7 +186,7 @@ public class EastworldChimeraService extends Service {
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        if (detx.a()) {
+        if (dhfa.a()) {
             this.c = new EastworldBroadcastReceiver();
             IntentFilter intentFilter = new IntentFilter();
             if (Build.VERSION.SDK_INT < 30) {
@@ -195,31 +195,31 @@ public class EastworldChimeraService extends Service {
                 intentFilter.addAction("android.intent.action.ACTION_POWER_CONNECTED");
                 intentFilter.addAction("android.intent.action.ACTION_POWER_DISCONNECTED");
             }
-            iln.b(this, this.c, intentFilter, 2);
+            ind.b(this, this.c, intentFilter, 2);
         }
-        if (fshx.c()) {
+        if (fvcv.c()) {
             IntentFilter intentFilter2 = new IntentFilter();
             intentFilter2.addAction("android.intent.action.PACKAGE_REPLACED");
             intentFilter2.addAction("android.intent.action.PACKAGE_ADDED");
             intentFilter2.addDataScheme("package");
             PackageUpdateBroadcastReceiver packageUpdateBroadcastReceiver = new PackageUpdateBroadcastReceiver();
             this.d = packageUpdateBroadcastReceiver;
-            iln.b(this, packageUpdateBroadcastReceiver, intentFilter2, 2);
+            ind.b(this, packageUpdateBroadcastReceiver, intentFilter2, 2);
             IntentFilter intentFilter3 = new IntentFilter();
             intentFilter3.addAction("com.google.android.gms.appusage.report_app_usage.ACTION");
             AppUsageOrderedBroadcastReceiver appUsageOrderedBroadcastReceiver = new AppUsageOrderedBroadcastReceiver();
             this.e = appUsageOrderedBroadcastReceiver;
-            iln.b(this, appUsageOrderedBroadcastReceiver, intentFilter3, 2);
+            ind.b(this, appUsageOrderedBroadcastReceiver, intentFilter3, 2);
         }
-        this.b = desc.a();
+        this.b = dhdf.a();
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        if (detx.a()) {
+        if (dhfa.a()) {
             unregisterReceiver(this.c);
         }
-        if (fshx.c()) {
+        if (fvcv.c()) {
             unregisterReceiver(this.d);
             unregisterReceiver(this.e);
         }

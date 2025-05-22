@@ -5,82 +5,82 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.activity.result.ActivityResult;
 import com.google.android.gms.kids.auth.flow.KidsAuthSetupChimeraActivity;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.asot;
-import defpackage.bota;
-import defpackage.botb;
-import defpackage.botc;
-import defpackage.botw;
-import defpackage.botx;
-import defpackage.boty;
-import defpackage.botz;
-import defpackage.bous;
-import defpackage.bowb;
-import defpackage.bowc;
-import defpackage.bpeu;
-import defpackage.bpew;
-import defpackage.bpex;
-import defpackage.bpez;
-import defpackage.bpfl;
-import defpackage.bqpn;
-import defpackage.ejhf;
-import defpackage.euqo;
-import defpackage.fphp;
-import defpackage.fuuw;
-import defpackage.fuyx;
-import defpackage.fvaf;
-import defpackage.fvbi;
-import defpackage.fvbo;
-import defpackage.fvcc;
-import defpackage.fvgt;
-import defpackage.joo;
-import defpackage.jqx;
-import defpackage.qet;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.ausn;
+import defpackage.braq;
+import defpackage.brar;
+import defpackage.bras;
+import defpackage.brbm;
+import defpackage.brbn;
+import defpackage.brbo;
+import defpackage.brbp;
+import defpackage.brci;
+import defpackage.brdr;
+import defpackage.brds;
+import defpackage.brmk;
+import defpackage.brmm;
+import defpackage.brmn;
+import defpackage.brmp;
+import defpackage.brnb;
+import defpackage.bsxe;
+import defpackage.eluo;
+import defpackage.exgh;
+import defpackage.fsbd;
+import defpackage.fxqu;
+import defpackage.fxuv;
+import defpackage.fxwd;
+import defpackage.fxxg;
+import defpackage.fxxm;
+import defpackage.fxya;
+import defpackage.fycr;
+import defpackage.jvd;
+import defpackage.jxm;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
-public final class KidsAuthSetupChimeraActivity extends qet implements bpez {
-    private static final asot m = bota.a("KidsAuthSetupChimeraActivity");
-    public bous j;
-    public bowc k;
-    public bpeu l;
-    private final fuuw n;
-    private final abv o;
-    private botc p;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
+public final class KidsAuthSetupChimeraActivity extends rxx implements brmp {
+    private static final ausn m = braq.a("KidsAuthSetupChimeraActivity");
+    public brci j;
+    public brds k;
+    public brmk l;
+    private final fxqu n;
+    private final aca o;
+    private bras p;
 
     public KidsAuthSetupChimeraActivity() {
-        fvaf fvafVar = new fvaf() { // from class: bots
-            @Override // defpackage.fvaf
+        fxwd fxwdVar = new fxwd() { // from class: brbi
+            @Override // defpackage.fxwd
             public final Object a() {
-                bowc bowcVar = KidsAuthSetupChimeraActivity.this.k;
-                if (bowcVar != null) {
-                    return bowcVar;
+                brds brdsVar = KidsAuthSetupChimeraActivity.this.k;
+                if (brdsVar != null) {
+                    return brdsVar;
                 }
-                fvbo.j("viewModelFactory");
+                fxxm.j("viewModelFactory");
                 return null;
             }
         };
-        int i = fvcc.a;
-        this.n = new jqx(new fvbi(bowb.class), new boty(this), fvafVar, new botz(this));
-        this.o = registerForActivityResult(new acl(), new abt() { // from class: bott
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        int i = fxya.a;
+        this.n = new jxm(new fxxg(brdr.class), new brbo(this), fxwdVar, new brbp(this));
+        this.o = registerForActivityResult(new acq(), new aby() { // from class: brbj
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 ActivityResult activityResult = (ActivityResult) obj;
-                fvbo.f(activityResult, "it");
+                fxxm.f(activityResult, "it");
                 int i2 = activityResult.a;
-                euqo euqoVar = i2 == -1 ? euqo.KIDS_AUTH_PROXY_SETUP_RESULT_SUCCESS : euqo.KIDS_AUTH_PROXY_SETUP_RESULT_FAILURE;
+                exgh exghVar = i2 == -1 ? exgh.KIDS_AUTH_PROXY_SETUP_RESULT_SUCCESS : exgh.KIDS_AUTH_PROXY_SETUP_RESULT_FAILURE;
                 KidsAuthSetupChimeraActivity kidsAuthSetupChimeraActivity = KidsAuthSetupChimeraActivity.this;
-                bpfl.a(euqoVar);
+                brnb.a(exghVar);
                 kidsAuthSetupChimeraActivity.setResult(i2, activityResult.b);
                 kidsAuthSetupChimeraActivity.finish();
             }
         });
     }
 
-    private final bowb m() {
-        return (bowb) this.n.a();
+    private final brdr m() {
+        return (brdr) this.n.a();
     }
 
     private final void n() {
@@ -96,13 +96,13 @@ public final class KidsAuthSetupChimeraActivity extends qet implements bpez {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final java.lang.Object a(android.os.Bundle r5, defpackage.fuyp r6) {
+    public final java.lang.Object a(android.os.Bundle r5, defpackage.fxun r6) {
         /*
             r4 = this;
-            boolean r0 = r6 instanceof defpackage.botu
+            boolean r0 = r6 instanceof defpackage.brbk
             if (r0 == 0) goto L13
             r0 = r6
-            botu r0 = (defpackage.botu) r0
+            brbk r0 = (defpackage.brbk) r0
             int r1 = r0.c
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
@@ -111,16 +111,16 @@ public final class KidsAuthSetupChimeraActivity extends qet implements bpez {
             r0.c = r1
             goto L18
         L13:
-            botu r0 = new botu
+            brbk r0 = new brbk
             r0.<init>(r4, r6)
         L18:
             java.lang.Object r6 = r0.a
-            fuzb r1 = defpackage.fuzb.a
+            fxuz r1 = defpackage.fxuz.a
             int r2 = r0.c
             r3 = 1
             if (r2 == 0) goto L2f
             if (r2 != r3) goto L27
-            defpackage.fuve.b(r6)
+            defpackage.fxrc.b(r6)
             goto L5b
         L27:
             java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
@@ -128,53 +128,53 @@ public final class KidsAuthSetupChimeraActivity extends qet implements bpez {
             r5.<init>(r6)
             throw r5
         L2f:
-            defpackage.fuve.b(r6)
+            defpackage.fxrc.b(r6)
             android.content.Intent r6 = r4.getIntent()
             r6.getAction()
-            euqo r6 = defpackage.euqo.KIDS_AUTH_PROXY_SETUP_STARTED
-            defpackage.bpfl.a(r6)
+            exgh r6 = defpackage.exgh.KIDS_AUTH_PROXY_SETUP_STARTED
+            defpackage.brnb.a(r6)
             if (r5 != 0) goto L83
-            bous r5 = r4.j
+            brci r5 = r4.j
             if (r5 != 0) goto L4a
             java.lang.String r5 = "supervisionBinaryIntentBuilder"
-            defpackage.fvbo.j(r5)
+            defpackage.fxxm.j(r5)
             r5 = 0
         L4a:
             android.content.Intent r6 = r4.getIntent()
             java.lang.String r2 = "getIntent(...)"
-            defpackage.fvbo.e(r6, r2)
+            defpackage.fxxm.e(r6, r2)
             r0.c = r3
             java.lang.Object r6 = r5.b(r6, r0)
             if (r6 == r1) goto L82
         L5b:
             android.content.Intent r6 = (android.content.Intent) r6
             if (r6 != 0) goto L75
-            asot r5 = com.google.android.gms.kids.auth.flow.KidsAuthSetupChimeraActivity.m
-            ejgq r5 = r5.j()
-            ejhf r5 = (defpackage.ejhf) r5
+            ausn r5 = com.google.android.gms.kids.auth.flow.KidsAuthSetupChimeraActivity.m
+            eltz r5 = r5.j()
+            eluo r5 = (defpackage.eluo) r5
             java.lang.String r6 = "No suitable activity for account setup was found."
             r5.x(r6)
-            euqo r5 = defpackage.euqo.KIDS_AUTH_PROXY_SETUP_ERROR_NO_SETUP_ACTIVITY
-            defpackage.bpfl.a(r5)
+            exgh r5 = defpackage.exgh.KIDS_AUTH_PROXY_SETUP_ERROR_NO_SETUP_ACTIVITY
+            defpackage.brnb.a(r5)
             r4.n()
             goto L7f
         L75:
-            abv r5 = r4.o
+            aca r5 = r4.o
             r5.b(r6)
-            euqo r5 = defpackage.euqo.KIDS_AUTH_PROXY_SETUP_LAUNCHED
-            defpackage.bpfl.a(r5)
+            exgh r5 = defpackage.exgh.KIDS_AUTH_PROXY_SETUP_LAUNCHED
+            defpackage.brnb.a(r5)
         L7f:
-            fuvs r5 = defpackage.fuvs.a
+            fxrq r5 = defpackage.fxrq.a
             return r5
         L82:
             return r1
         L83:
-            euqo r5 = defpackage.euqo.KIDS_AUTH_PROXY_SETUP_ERROR_SAVED_INSTANCE
-            defpackage.bpfl.a(r5)
-            fuvs r5 = defpackage.fuvs.a
+            exgh r5 = defpackage.exgh.KIDS_AUTH_PROXY_SETUP_ERROR_SAVED_INSTANCE
+            defpackage.brnb.a(r5)
+            fxrq r5 = defpackage.fxrq.a
             return r5
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.kids.auth.flow.KidsAuthSetupChimeraActivity.a(android.os.Bundle, fuyp):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.kids.auth.flow.KidsAuthSetupChimeraActivity.a(android.os.Bundle, fxun):java.lang.Object");
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:32:0x00a0, code lost:
@@ -201,59 +201,59 @@ public final class KidsAuthSetupChimeraActivity extends qet implements bpez {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final java.lang.Object k(android.os.Bundle r11, defpackage.fuyp r12) {
+    public final java.lang.Object k(android.os.Bundle r11, defpackage.fxun r12) {
         /*
             Method dump skipped, instructions count: 300
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.kids.auth.flow.KidsAuthSetupChimeraActivity.k(android.os.Bundle, fuyp):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.kids.auth.flow.KidsAuthSetupChimeraActivity.k(android.os.Bundle, fxun):java.lang.Object");
     }
 
-    @Override // defpackage.bpez
+    @Override // defpackage.brmp
     public final void l(int i, int i2) {
         overridePendingTransition(i, i2);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
-        bpfl.a(i2 != -1 ? i2 != 0 ? euqo.KIDS_AUTH_SETUP_ACTIVITY_RESULT_UNKNOWN : euqo.KIDS_AUTH_SETUP_ACTIVITY_RESULT_CANCELED : euqo.KIDS_AUTH_SETUP_ACTIVITY_RESULT_SUCCESS);
+        brnb.a(i2 != -1 ? i2 != 0 ? exgh.KIDS_AUTH_SETUP_ACTIVITY_RESULT_UNKNOWN : exgh.KIDS_AUTH_SETUP_ACTIVITY_RESULT_CANCELED : exgh.KIDS_AUTH_SETUP_ACTIVITY_RESULT_SUCCESS);
         if (intent == null || !intent.getBooleanExtra("intentionally_canceled", false)) {
             return;
         }
-        bpfl.a(euqo.KIDS_AUTH_SETUP_ACTIVITY_RESULT_INTENTIONAL_CANCEL);
+        brnb.a(exgh.KIDS_AUTH_SETUP_ACTIVITY_RESULT_INTENTIONAL_CANCEL);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        bpfl.a(euqo.KIDS_AUTH_SETUP_ACTIVITY_STARTED);
-        if (!fvbo.n(getCallingPackage(), "com.google.android.gms")) {
-            ((ejhf) m.j()).B("Expecting to receive intent from GMS Core, received from: %s", getCallingPackage());
+        brnb.a(exgh.KIDS_AUTH_SETUP_ACTIVITY_STARTED);
+        if (!fxxm.n(getCallingPackage(), "com.google.android.gms")) {
+            ((eluo) m.j()).B("Expecting to receive intent from GMS Core, received from: %s", getCallingPackage());
             n();
             return;
         }
         if (this.p == null) {
-            botb botbVar = new botb();
+            brar brarVar = new brar();
             Context applicationContext = getApplication().getApplicationContext();
-            fvbo.e(applicationContext, "getApplicationContext(...)");
-            botbVar.b(applicationContext);
-            fuyx fuyxVar = bqpn.a;
-            botbVar.c(bqpn.d);
-            botbVar.a = joo.a(this);
-            this.p = botbVar.a();
+            fxxm.e(applicationContext, "getApplicationContext(...)");
+            brarVar.b(applicationContext);
+            fxuv fxuvVar = bsxe.a;
+            brarVar.c(bsxe.d);
+            brarVar.a = jvd.a(this);
+            this.p = brarVar.a();
         }
-        botc botcVar = this.p;
-        if (botcVar != null) {
-            Context context = botcVar.a;
-            this.l = new bpeu(context, botcVar.b, bpex.c(context), bpew.c(context));
-            this.j = botcVar.a();
-            this.k = new bowc(botcVar.r);
+        bras brasVar = this.p;
+        if (brasVar != null) {
+            Context context = brasVar.a;
+            this.l = new brmk(context, brasVar.b, brmn.c(context), brmm.c(context));
+            this.j = brasVar.a();
+            this.k = new brds(brasVar.r);
         }
-        if (fphp.c()) {
-            fvgt.b(joo.a(this), null, null, new botw(this, bundle, null), 3);
+        if (fsbd.c()) {
+            fycr.b(jvd.a(this), null, null, new brbm(this, bundle, null), 3);
         } else {
-            fvgt.b(joo.a(this), null, null, new botx(this, bundle, null), 3);
+            fycr.b(jvd.a(this), null, null, new brbn(this, bundle, null), 3);
         }
     }
 }

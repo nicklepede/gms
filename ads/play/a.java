@@ -2,28 +2,28 @@ package com.google.android.gms.ads.play;
 
 import android.os.Bundle;
 import com.google.android.gms.ads.internal.util.client.h;
-import defpackage.enss;
+import defpackage.eqgl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class a implements Runnable {
-    final /* synthetic */ enss a;
+    final /* synthetic */ eqgl a;
     final /* synthetic */ GmsCachingPlayStoreParentalControlProvider b;
 
-    public a(GmsCachingPlayStoreParentalControlProvider gmsCachingPlayStoreParentalControlProvider, enss enssVar) {
-        this.a = enssVar;
+    public a(GmsCachingPlayStoreParentalControlProvider gmsCachingPlayStoreParentalControlProvider, eqgl eqglVar) {
+        this.a = eqglVar;
         this.b = gmsCachingPlayStoreParentalControlProvider;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         try {
-            enss enssVar = this.a;
-            if (((Bundle) enssVar.get()).getBoolean("is_cacheable")) {
+            eqgl eqglVar = this.a;
+            if (((Bundle) eqglVar.get()).getBoolean("is_cacheable")) {
                 GmsCachingPlayStoreParentalControlProvider gmsCachingPlayStoreParentalControlProvider = this.b;
                 synchronized (gmsCachingPlayStoreParentalControlProvider.a) {
                     gmsCachingPlayStoreParentalControlProvider.c = false;
-                    gmsCachingPlayStoreParentalControlProvider.b = enssVar;
+                    gmsCachingPlayStoreParentalControlProvider.b = eqglVar;
                 }
             }
         } catch (Exception unused) {

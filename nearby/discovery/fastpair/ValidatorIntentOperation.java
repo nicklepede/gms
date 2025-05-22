@@ -3,16 +3,18 @@ package com.google.android.gms.nearby.discovery.fastpair;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.nearby.discovery.service.DiscoveryChimeraService;
-import defpackage.cgiv;
-import defpackage.fqld;
+import defpackage.chkb;
+import defpackage.ciqy;
+import defpackage.ftey;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ValidatorIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         char c;
-        cgiv.a.f().B("FastPair: received validator intent %s", intent.getAction());
+        chkb chkbVar = ciqy.a;
+        chkbVar.f().B("FastPair: received validator intent %s", intent.getAction());
         String action = intent.getAction();
         if (action == null) {
             return;
@@ -41,8 +43,8 @@ public class ValidatorIntentOperation extends IntentOperation {
         if (c == 1) {
             startService(DiscoveryChimeraService.a(this).setAction("com.google.android.gms.nearby.discovery.ACTION_VALIDATOR_SEND_EVENT_MESSAGE").putExtras(intent));
         } else if (c != 2) {
-            cgiv.a.g().B("FastPair: Invalid external intent, action=%s", action);
-        } else if (fqld.am()) {
+            chkbVar.g().B("FastPair: Invalid external intent, action=%s", action);
+        } else if (ftey.an()) {
             startService(DiscoveryChimeraService.a(this).setAction("com.google.android.gms.nearby.discovery.ACTION_VALIDATOR_REQUEST_TEST_SERVICE_CONNECTION").putExtras(intent));
         }
     }

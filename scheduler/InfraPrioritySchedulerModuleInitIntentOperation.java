@@ -1,14 +1,14 @@
 package com.google.android.gms.scheduler;
 
 import android.content.Intent;
-import defpackage.fmtu;
+import defpackage.fpls;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class InfraPrioritySchedulerModuleInitIntentOperation extends SchedulerModuleInitIntentOperation {
-    @Override // defpackage.anya, com.google.android.chimera.IntentOperation
+    @Override // defpackage.apzs, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (fmtu.g() == 800) {
+        if (fpls.g() == 800) {
             super.onHandleIntent(intent);
         }
     }

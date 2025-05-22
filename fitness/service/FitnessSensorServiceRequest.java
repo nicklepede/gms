@@ -6,28 +6,28 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fitness.data.DataSource;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgdu;
-import defpackage.bgdw;
-import defpackage.bgrp;
-import defpackage.bgrq;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.biik;
+import defpackage.biim;
+import defpackage.biwf;
+import defpackage.biwg;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class FitnessSensorServiceRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgrq();
+    public static final Parcelable.Creator CREATOR = new biwg();
     public final DataSource a;
     public final long b;
     public final long c;
-    private final bgdw d;
+    private final biim d;
 
-    public FitnessSensorServiceRequest(bgrp bgrpVar) {
-        this.a = bgrpVar.a;
-        this.d = bgrpVar.b;
-        this.b = bgrpVar.c;
-        this.c = bgrpVar.d;
+    public FitnessSensorServiceRequest(biwf biwfVar) {
+        this.a = biwfVar.a;
+        this.d = biwfVar.b;
+        this.b = biwfVar.c;
+        this.c = biwfVar.d;
     }
 
     public final boolean equals(Object obj) {
@@ -38,7 +38,7 @@ public class FitnessSensorServiceRequest extends AbstractSafeParcelable {
             return false;
         }
         FitnessSensorServiceRequest fitnessSensorServiceRequest = (FitnessSensorServiceRequest) obj;
-        return arwb.b(this.a, fitnessSensorServiceRequest.a) && this.b == fitnessSensorServiceRequest.b && this.c == fitnessSensorServiceRequest.c;
+        return atyq.b(this.a, fitnessSensorServiceRequest.a) && this.b == fitnessSensorServiceRequest.b && this.c == fitnessSensorServiceRequest.c;
     }
 
     public final int hashCode() {
@@ -52,24 +52,24 @@ public class FitnessSensorServiceRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         DataSource dataSource = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, dataSource, i, false);
-        arxc.D(parcel, 2, this.d.asBinder());
-        arxc.q(parcel, 3, this.b);
-        arxc.q(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, dataSource, i, false);
+        atzr.D(parcel, 2, this.d.asBinder());
+        atzr.q(parcel, 3, this.b);
+        atzr.q(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 
     public FitnessSensorServiceRequest(DataSource dataSource, IBinder iBinder, long j, long j2) {
-        bgdw bgduVar;
+        biim biikVar;
         this.a = dataSource;
         if (iBinder == null) {
-            bgduVar = null;
+            biikVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.data.IDataSourceListener");
-            bgduVar = queryLocalInterface instanceof bgdw ? (bgdw) queryLocalInterface : new bgdu(iBinder);
+            biikVar = queryLocalInterface instanceof biim ? (biim) queryLocalInterface : new biik(iBinder);
         }
-        this.d = bgduVar;
+        this.d = biikVar;
         this.b = j;
         this.c = j2;
     }

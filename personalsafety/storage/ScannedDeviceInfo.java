@@ -6,16 +6,16 @@ import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.personalsafety.detection.FinderTagInfo;
-import defpackage.arxc;
-import defpackage.cvxc;
-import defpackage.eihn;
+import defpackage.atzr;
+import defpackage.cygz;
+import defpackage.ekus;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ScannedDeviceInfo extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new cvxc();
+    public static final Parcelable.Creator CREATOR = new cygz();
     public final long a;
     public final LatLng b;
     public final TagDeviceData c;
@@ -39,7 +39,7 @@ public class ScannedDeviceInfo extends AbstractSafeParcelable implements Reflect
     public final boolean equals(Object obj) {
         if (obj instanceof ScannedDeviceInfo) {
             ScannedDeviceInfo scannedDeviceInfo = (ScannedDeviceInfo) obj;
-            if (this.a == scannedDeviceInfo.a && eihn.a(this.b, scannedDeviceInfo.b) && this.c.equals(scannedDeviceInfo.c) && eihn.a(this.d, scannedDeviceInfo.d) && eihn.a(this.e, scannedDeviceInfo.e) && eihn.a(this.f, scannedDeviceInfo.f)) {
+            if (this.a == scannedDeviceInfo.a && ekus.a(this.b, scannedDeviceInfo.b) && this.c.equals(scannedDeviceInfo.c) && ekus.a(this.d, scannedDeviceInfo.d) && ekus.a(this.e, scannedDeviceInfo.e) && ekus.a(this.f, scannedDeviceInfo.f)) {
                 return true;
             }
         }
@@ -66,13 +66,13 @@ public class ScannedDeviceInfo extends AbstractSafeParcelable implements Reflect
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.a;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, j);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.y(parcel, 5, this.e, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, j);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.y(parcel, 5, this.e, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.c(parcel, a);
     }
 }

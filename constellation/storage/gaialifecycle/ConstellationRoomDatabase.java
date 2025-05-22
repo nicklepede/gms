@@ -1,11 +1,11 @@
 package com.google.android.gms.constellation.storage.gaialifecycle;
 
-import defpackage.aszj;
-import defpackage.kpm;
+import defpackage.avdm;
+import defpackage.mhx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public abstract class ConstellationRoomDatabase extends kpm {
-    public static final aszj l = new aszj();
-    public static volatile ConstellationRoomDatabase m;
+public abstract class ConstellationRoomDatabase extends mhx {
+    public static final avdm m = new avdm();
+    public static volatile ConstellationRoomDatabase n;
 }

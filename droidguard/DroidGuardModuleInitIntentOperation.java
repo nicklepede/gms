@@ -2,28 +2,28 @@ package com.google.android.gms.droidguard;
 
 import android.content.Intent;
 import com.google.android.gms.chimera.modules.droidguard.AppContextProvider;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.axuk;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.azyk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class DroidGuardModuleInitIntentOperation extends anya {
-    private axuk a;
+public class DroidGuardModuleInitIntentOperation extends apzs {
+    private azyk a;
 
     static {
-        asot.b("DGMI", asej.DROID_GUARD);
+        ausn.b("DGMI", auid.DROID_GUARD);
     }
 
     public DroidGuardModuleInitIntentOperation() {
         this.a = null;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
         if (this.a == null) {
-            this.a = axuk.a(AppContextProvider.a());
+            this.a = azyk.a(AppContextProvider.a());
         }
         int i2 = i & 2;
         int i3 = i & 8;
@@ -41,7 +41,7 @@ public class DroidGuardModuleInitIntentOperation extends anya {
         }
     }
 
-    DroidGuardModuleInitIntentOperation(axuk axukVar) {
-        this.a = axukVar;
+    DroidGuardModuleInitIntentOperation(azyk azykVar) {
+        this.a = azykVar;
     }
 }

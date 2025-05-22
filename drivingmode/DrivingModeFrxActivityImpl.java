@@ -4,26 +4,26 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import com.google.android.gms.R;
-import defpackage.axqh;
-import defpackage.axqi;
-import defpackage.edjt;
-import defpackage.qfp;
+import defpackage.azuh;
+import defpackage.azui;
+import defpackage.efwo;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class DrivingModeFrxActivityImpl extends qfp implements axqh {
-    private static final edjt k;
-    axqi j;
+public class DrivingModeFrxActivityImpl extends ryt implements azuh {
+    private static final efwo k;
+    azui j;
 
     static {
-        edjt d = edjt.d();
+        efwo d = efwo.d();
         int i = d.a;
         String str = d.b;
         boolean z = d.c;
-        k = new edjt(R.style.SudThemeGlifV3_DayNight, true);
+        k = new efwo(R.style.SudThemeGlifV3_DayNight, true);
     }
 
-    @Override // defpackage.axqh
+    @Override // defpackage.azuh
     public final Bundle a() {
         Bundle bundle = new Bundle();
         boolean booleanExtra = getIntent().getBooleanExtra("frx_immediate_start", false);
@@ -34,8 +34,8 @@ public class DrivingModeFrxActivityImpl extends qfp implements axqh {
         return bundle;
     }
 
-    @Override // defpackage.axqh
-    public final axqi b() {
+    @Override // defpackage.azuh
+    public final azui b() {
         return this.j;
     }
 
@@ -45,7 +45,7 @@ public class DrivingModeFrxActivityImpl extends qfp implements axqh {
      */
     /* JADX WARN: Removed duplicated region for block: B:14:0x006f  */
     /* JADX WARN: Removed duplicated region for block: B:26:0x007d  */
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -53,25 +53,25 @@ public class DrivingModeFrxActivityImpl extends qfp implements axqh {
     public final void onCreate(android.os.Bundle r5) {
         /*
             r4 = this;
-            boolean r0 = defpackage.fpsg.t()
+            boolean r0 = defpackage.fsly.t()
             r1 = 0
             if (r0 == 0) goto L15
-            edjt r0 = com.google.android.gms.drivingmode.DrivingModeFrxActivityImpl.k
+            efwo r0 = com.google.android.gms.drivingmode.DrivingModeFrxActivityImpl.k
             android.content.Intent r2 = r4.getIntent()
             int r0 = r0.b(r2, r1)
             r4.setTheme(r0)
             goto L2a
         L15:
-            boolean r0 = defpackage.asqh.c()
+            boolean r0 = defpackage.auub.c()
             if (r0 == 0) goto L2a
             java.lang.String r0 = "setupwizard.theme"
             java.lang.String r2 = ""
             java.lang.String r0 = android.os.SystemProperties.get(r0, r2)
-            int r0 = defpackage.nie.a(r0)
+            int r0 = defpackage.pbh.a(r0)
             r4.setTheme(r0)
         L2a:
             super.onCreate(r5)
-            axqi r5 = new axqi
+            azui r5 = new azui
             r0 = 0
             r5.<init>(r4, r0)
             r4.j = r5
@@ -104,39 +104,39 @@ public class DrivingModeFrxActivityImpl extends qfp implements axqh {
         L6d:
             if (r1 == 0) goto L7d
             if (r1 == r2) goto L77
-            axpi r5 = new axpi
+            azti r5 = new azti
             r5.<init>()
             goto L88
         L77:
-            axpc r5 = new axpc
+            aztc r5 = new aztc
             r5.<init>()
             goto L88
         L7d:
-            axoz r5 = new axoz
+            azsz r5 = new azsz
             r5.<init>()
             goto L88
         L83:
-            axpi r5 = new axpi
+            azti r5 = new azti
             r5.<init>()
         L88:
-            axqi r0 = r4.j
+            azui r0 = r4.j
             r0.c(r5)
             android.content.Intent r5 = r4.getIntent()
             java.lang.String r0 = "com.google.android.location.activity.DRIVING_MODE_NOTIFICATION"
             boolean r5 = r5.getBooleanExtra(r0, r2)
             if (r5 == 0) goto La8
-            defpackage.axqg.b()
-            axmz r5 = new axmz
+            defpackage.azug.b()
+            azqz r5 = new azqz
             r5.<init>(r4)
-            elxw r0 = defpackage.elxw.DRIVING_MODE_FRX_INTRO
-            elxv r1 = defpackage.elxv.is
+            eolk r0 = defpackage.eolk.DRIVING_MODE_FRX_INTRO
+            eolj r1 = defpackage.eolj.is
             r5.b(r0, r1)
         La8:
-            boolean r5 = defpackage.fpsg.t()
+            boolean r5 = defpackage.fsly.t()
             if (r5 != 0) goto Lb1
             r4.setRequestedOrientation(r2)
         Lb1:
-            axqe r5 = new axqe
+            azue r5 = new azue
             android.content.Context r0 = r4.getApplicationContext()
             r5.<init>(r0)
             r5.k()
@@ -145,7 +145,7 @@ public class DrivingModeFrxActivityImpl extends qfp implements axqh {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.drivingmode.DrivingModeFrxActivityImpl.onCreate(android.os.Bundle):void");
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != 16908332) {
             return super.onOptionsItemSelected(menuItem);

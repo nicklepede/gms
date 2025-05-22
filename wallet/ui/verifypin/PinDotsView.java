@@ -8,11 +8,11 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.R;
-import defpackage.djik;
-import defpackage.mcu;
-import defpackage.mdd;
+import defpackage.dlud;
+import defpackage.nvc;
+import defpackage.nvl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PinDotsView extends LinearLayout {
     public static final /* synthetic */ int a = 0;
@@ -59,7 +59,7 @@ public class PinDotsView extends LinearLayout {
             LottieAnimationView lottieAnimationView = lottieAnimationViewArr[i2];
             Context context = getContext();
             String d = d(i, i2);
-            mdd.g(context, d).e(new mcu(new djik(lottieAnimationView, i)));
+            nvl.g(context, d).e(new nvc(new dlud(lottieAnimationView, i)));
             i2++;
         }
     }
@@ -81,13 +81,13 @@ public class PinDotsView extends LinearLayout {
                     boolean booleanValue = ((Boolean) lottieAnimationView.getTag()).booleanValue();
                     if (i2 < this.c && !booleanValue) {
                         lottieAnimationView.p(0.0f);
-                        lottieAnimationView.hv();
+                        lottieAnimationView.hL();
                         lottieAnimationView.setTag(true);
                         lottieAnimationView.setContentDescription(getResources().getString(R.string.wallet_dot_active));
                     }
                     if (i2 >= this.c && booleanValue) {
                         lottieAnimationView.s(-1.0f);
-                        lottieAnimationView.hv();
+                        lottieAnimationView.hL();
                         lottieAnimationView.setContentDescription(getResources().getString(R.string.wallet_dot_inactive));
                         lottieAnimationView.setTag(false);
                     }

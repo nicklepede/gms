@@ -5,41 +5,41 @@ import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.aabe;
-import defpackage.aabn;
-import defpackage.aacb;
-import defpackage.aacc;
-import defpackage.aaez;
-import defpackage.aafe;
-import defpackage.aafh;
-import defpackage.aahf;
-import defpackage.aajh;
-import defpackage.aakp;
-import defpackage.aaks;
-import defpackage.arwm;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.ejhf;
-import defpackage.fkwh;
-import defpackage.zyn;
-import defpackage.zzb;
-import defpackage.zzl;
+import defpackage.abyn;
+import defpackage.abzb;
+import defpackage.abzl;
+import defpackage.acbe;
+import defpackage.acbn;
+import defpackage.accb;
+import defpackage.accc;
+import defpackage.acez;
+import defpackage.acfe;
+import defpackage.acfh;
+import defpackage.achf;
+import defpackage.acjh;
+import defpackage.ackp;
+import defpackage.acks;
+import defpackage.atzb;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.eluo;
+import defpackage.fnnl;
 import java.util.Collections;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class BlockstoreApiChimeraService extends bxgd {
-    private static final asot a = aacc.b("BlockstoreApiChimeraService");
-    private aaez b;
-    private aafh c;
-    private aacb d;
-    private aajh m;
-    private aabe n;
-    private aahf o;
+public class BlockstoreApiChimeraService extends bzot {
+    private static final ausn a = accc.b("BlockstoreApiChimeraService");
+    private acez b;
+    private acfh c;
+    private accb d;
+    private acjh m;
+    private acbe n;
+    private achf o;
 
     public BlockstoreApiChimeraService() {
         super(258, "com.google.android.gms.auth.blockstore.service.START", Collections.EMPTY_SET, 3, 10);
@@ -55,80 +55,80 @@ public class BlockstoreApiChimeraService extends bxgd {
         return context.getPackageManager().getPackageInfo(str, 64).signatures;
     }
 
-    private final synchronized aabe c() {
+    private final synchronized acbe c() {
         if (this.n == null) {
-            this.n = new aabn();
+            this.n = new acbn();
         }
         return this.n;
     }
 
-    private final synchronized aacb d() {
+    private final synchronized accb d() {
         if (this.d == null) {
-            this.d = aacc.a(this, aacc.c(this));
+            this.d = accc.a(this, accc.c(this));
         }
         return this.d;
     }
 
-    private final synchronized aaez e() {
-        aaez aaezVar;
+    private final synchronized acez e() {
+        acez acezVar;
         if (this.c == null) {
             d();
-            this.c = new aafh(this);
+            this.c = new acfh(this);
         }
         if (this.b == null) {
             d();
-            aajh g = g();
-            asmf asmfVar = new asmf(Integer.MAX_VALUE, 9);
-            aafh aafhVar = this.c;
-            arwm.s(aafhVar);
-            this.b = new aafe(this, g, asmfVar, aafhVar);
+            acjh g = g();
+            aupz aupzVar = new aupz(Integer.MAX_VALUE, 9);
+            acfh acfhVar = this.c;
+            atzb.s(acfhVar);
+            this.b = new acfe(this, g, aupzVar, acfhVar);
         }
-        aaezVar = this.b;
-        arwm.s(aaezVar);
-        return aaezVar;
+        acezVar = this.b;
+        atzb.s(acezVar);
+        return acezVar;
     }
 
-    private final synchronized aahf f() {
+    private final synchronized achf f() {
         if (this.o == null) {
-            this.o = aahf.a(this);
+            this.o = achf.a(this);
         }
         return this.o;
     }
 
-    private final synchronized aajh g() {
+    private final synchronized acjh g() {
         if (this.m == null) {
-            this.m = aakp.n();
+            this.m = ackp.n();
         }
         return this.m;
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         String str = getServiceRequest.f;
-        eiid eiidVar = eigb.a;
+        ekvi ekviVar = ektg.a;
         try {
             Signature[] b = b(this, str);
-            if (fkwh.d()) {
+            if (fnnl.d()) {
                 try {
-                    eiidVar = aaks.d("com.google.android.gms", b(this, "com.google.android.gms"), a);
+                    ekviVar = acks.d("com.google.android.gms", b(this, "com.google.android.gms"), a);
                 } catch (PackageManager.NameNotFoundException e) {
-                    ((ejhf) ((ejhf) a.h()).s(e)).x("Calling package not found by PackageManager. Failed to find gms package.");
+                    ((eluo) ((eluo) a.h()).s(e)).x("Calling package not found by PackageManager. Failed to find gms package.");
                 }
             }
-            bxgjVar.c(new zzl(l(), new zyn(d(), f(), e(), g(), c(), str, b, this), new zzb(e(), g(), c(), str, b, this, eiidVar)));
+            bzozVar.c(new abzl(l(), new abyn(d(), f(), e(), g(), c(), str, b, this), new abzb(e(), g(), c(), str, b, this, ekviVar)));
         } catch (PackageManager.NameNotFoundException unused) {
-            bxgjVar.a(Status.d.i, null);
+            bzozVar.a(Status.d.i, null);
         }
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
         this.c = null;
         this.b = null;
         super.onDestroy();
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
     }
 }

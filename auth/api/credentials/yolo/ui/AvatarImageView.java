@@ -8,11 +8,11 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.util.AttributeSet;
-import defpackage.assc;
+import defpackage.auvw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AvatarImageView extends assc {
+public class AvatarImageView extends auvw {
     private Paint g;
 
     public AvatarImageView(Context context) {

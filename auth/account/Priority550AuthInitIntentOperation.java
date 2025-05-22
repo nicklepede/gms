@@ -1,14 +1,14 @@
 package com.google.android.gms.auth.account;
 
 import android.content.Intent;
-import defpackage.fmtu;
+import defpackage.fpls;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class Priority550AuthInitIntentOperation extends AuthInitIntentOperation {
-    @Override // com.google.android.gms.auth.account.AuthInitIntentOperation, defpackage.anya, com.google.android.chimera.IntentOperation
+    @Override // com.google.android.gms.auth.account.AuthInitIntentOperation, defpackage.apzs, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (fmtu.i()) {
+        if (fpls.i()) {
             super.onHandleIntent(intent);
         }
     }

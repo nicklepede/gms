@@ -3,14 +3,14 @@ package com.google.android.gms.libs.featurestatus.internal.binder;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bqts;
-import defpackage.fvbo;
+import defpackage.atzr;
+import defpackage.btbj;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ContextualCard extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bqts();
+    public static final Parcelable.Creator CREATOR = new btbj();
     public final String a;
     public final String b;
     public final Action c;
@@ -19,8 +19,8 @@ public final class ContextualCard extends AbstractSafeParcelable {
     public final int f;
 
     public ContextualCard(String str, String str2, Action action, Button button, ProgressBar progressBar, int i) {
-        fvbo.f(str, "title");
-        fvbo.f(str2, "description");
+        fxxm.f(str, "title");
+        fxxm.f(str2, "description");
         this.a = str;
         this.b = str2;
         this.c = action;
@@ -37,7 +37,7 @@ public final class ContextualCard extends AbstractSafeParcelable {
             return false;
         }
         ContextualCard contextualCard = (ContextualCard) obj;
-        return fvbo.n(this.a, contextualCard.a) && fvbo.n(this.b, contextualCard.b) && fvbo.n(this.c, contextualCard.c) && fvbo.n(this.d, contextualCard.d) && fvbo.n(this.e, contextualCard.e) && this.f == contextualCard.f;
+        return fxxm.n(this.a, contextualCard.a) && fxxm.n(this.b, contextualCard.b) && fxxm.n(this.c, contextualCard.c) && fxxm.n(this.d, contextualCard.d) && fxxm.n(this.e, contextualCard.e) && this.f == contextualCard.f;
     }
 
     public final int hashCode() {
@@ -56,15 +56,15 @@ public final class ContextualCard extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "dest");
+        fxxm.f(parcel, "dest");
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 }

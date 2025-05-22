@@ -2,24 +2,24 @@ package com.google.android.gms.ads.nonagon.signals.gmscore;
 
 import android.os.Binder;
 import android.text.TextUtils;
-import defpackage.enss;
-import defpackage.ensv;
+import defpackage.eqgl;
+import defpackage.eqgo;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class ac implements com.google.android.gms.ads.nonagon.signals.e {
-    final ensv a;
+    final eqgo a;
     final List b;
     final com.google.android.gms.ads.config.e c;
 
-    public ac(com.google.android.gms.ads.config.e eVar, ensv ensvVar, List list) {
+    public ac(com.google.android.gms.ads.config.e eVar, eqgo eqgoVar, List list) {
         this.c = eVar;
-        this.a = ensvVar;
+        this.a = eqgoVar;
         this.b = list;
     }
 
@@ -29,7 +29,7 @@ public final class ac implements com.google.android.gms.ads.nonagon.signals.e {
     }
 
     @Override // com.google.android.gms.ads.nonagon.signals.e
-    public final enss b() {
+    public final eqgl b() {
         return this.a.submit(new Callable() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.ab
             @Override // java.util.concurrent.Callable
             public final Object call() {

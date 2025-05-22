@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.MaskedWalletRequest;
-import defpackage.dixv;
+import defpackage.dljo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class LoadMaskedWalletServiceRequest implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new dixv();
+    public static final Parcelable.Creator CREATOR = new dljo();
     public final Bundle a;
     public final MaskedWalletRequest b;
 

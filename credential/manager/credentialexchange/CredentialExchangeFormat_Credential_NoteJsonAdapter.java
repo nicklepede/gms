@@ -1,57 +1,57 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.fipo;
-import defpackage.fipt;
-import defpackage.fipu;
-import defpackage.fipw;
-import defpackage.fiqb;
-import defpackage.fiqq;
-import defpackage.firp;
-import defpackage.fuwy;
-import defpackage.fvbo;
+import defpackage.flfl;
+import defpackage.flfq;
+import defpackage.flfr;
+import defpackage.flft;
+import defpackage.flfy;
+import defpackage.flgn;
+import defpackage.flhm;
+import defpackage.fxsw;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public final class CredentialExchangeFormat_Credential_NoteJsonAdapter extends fipo {
-    private final fipu a;
-    private final fipo b;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public final class CredentialExchangeFormat_Credential_NoteJsonAdapter extends flfl {
+    private final flfr a;
+    private final flfl b;
 
-    public CredentialExchangeFormat_Credential_NoteJsonAdapter(fiqq fiqqVar) {
-        fvbo.f(fiqqVar, "moshi");
-        this.a = fipt.a("content");
-        this.b = fiqqVar.d(CredentialExchangeFormat$EditableField.class, fuwy.a, "content");
+    public CredentialExchangeFormat_Credential_NoteJsonAdapter(flgn flgnVar) {
+        fxxm.f(flgnVar, "moshi");
+        this.a = flfq.a("content");
+        this.b = flgnVar.d(CredentialExchangeFormat$EditableField.class, fxsw.a, "content");
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ Object a(fipw fipwVar) {
-        fipwVar.i();
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ Object a(flft flftVar) {
+        flftVar.i();
         CredentialExchangeFormat$EditableField credentialExchangeFormat$EditableField = null;
-        while (fipwVar.o()) {
-            int c = fipwVar.c(this.a);
+        while (flftVar.o()) {
+            int c = flftVar.c(this.a);
             if (c == -1) {
-                fipwVar.m();
-                fipwVar.n();
-            } else if (c == 0 && (credentialExchangeFormat$EditableField = (CredentialExchangeFormat$EditableField) this.b.a(fipwVar)) == null) {
-                throw firp.c("content", "content", fipwVar);
+                flftVar.m();
+                flftVar.n();
+            } else if (c == 0 && (credentialExchangeFormat$EditableField = (CredentialExchangeFormat$EditableField) this.b.a(flftVar)) == null) {
+                throw flhm.c("content", "content", flftVar);
             }
         }
-        fipwVar.k();
+        flftVar.k();
         if (credentialExchangeFormat$EditableField != null) {
             return new CredentialExchangeFormat$Credential$Note(credentialExchangeFormat$EditableField);
         }
-        throw firp.b("content", "content", fipwVar);
+        throw flhm.b("content", "content", flftVar);
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ void b(fiqb fiqbVar, Object obj) {
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ void b(flfy flfyVar, Object obj) {
         CredentialExchangeFormat$Credential$Note credentialExchangeFormat$Credential$Note = (CredentialExchangeFormat$Credential$Note) obj;
         if (credentialExchangeFormat$Credential$Note == null) {
             throw new NullPointerException("value was null! Wrap in .nullSafe() to write nullable values.");
         }
-        fiqbVar.d();
-        fiqbVar.j("content");
-        this.b.b(fiqbVar, credentialExchangeFormat$Credential$Note.a);
-        fiqbVar.f();
+        flfyVar.d();
+        flfyVar.j("content");
+        this.b.b(flfyVar, credentialExchangeFormat$Credential$Note.a);
+        flfyVar.f();
     }
 
     public final String toString() {

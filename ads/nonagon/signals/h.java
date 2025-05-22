@@ -8,8 +8,8 @@ import com.google.android.gms.ads.internal.flag.o;
 import com.google.android.gms.ads.nonagon.util.logging.cui.j;
 import com.google.android.gms.ads.nonagon.util.logging.cui.k;
 import com.google.android.gms.ads.nonagon.util.logging.cui.n;
-import defpackage.ensj;
-import defpackage.enss;
+import defpackage.eqgc;
+import defpackage.eqgl;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -18,7 +18,7 @@ import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class h {
     public final Set a;
@@ -37,35 +37,36 @@ public final class h {
         this.b = dVar;
     }
 
-    public final enss a(final Object obj, final Bundle bundle) {
+    public final eqgl a(final Object obj, final Bundle bundle) {
         com.google.android.gms.ads.nonagon.util.logging.cui.b a = com.google.android.gms.ads.nonagon.util.logging.cui.a.a(this.e, 8);
         a.k();
         Set<e> set = this.a;
         final ArrayList arrayList = new ArrayList(set.size());
         List arrayList2 = new ArrayList();
-        if (!((String) p.bP.g()).isEmpty()) {
-            arrayList2 = Arrays.asList(((String) p.bP.g()).split(","));
+        com.google.android.gms.ads.internal.config.g gVar = p.bQ;
+        if (!((String) gVar.g()).isEmpty()) {
+            arrayList2 = Arrays.asList(((String) gVar.g()).split(","));
         }
         com.google.android.gms.ads.internal.c.j();
         this.c = SystemClock.elapsedRealtime();
         final Bundle bundle2 = new Bundle();
         if (((Boolean) p.P.g()).booleanValue() && bundle != null) {
             com.google.android.gms.ads.internal.c.j();
-            bundle.putLong(com.google.android.gms.ads.nonagon.csi.a.GMS_SIGNALS_START.N, System.currentTimeMillis());
+            bundle.putLong(com.google.android.gms.ads.nonagon.csi.a.GMS_SIGNALS_START.an, System.currentTimeMillis());
         }
         for (final e eVar : set) {
             if (!arrayList2.contains(String.valueOf(eVar.a()))) {
                 com.google.android.gms.ads.internal.c.j();
                 final long elapsedRealtime = SystemClock.elapsedRealtime();
-                enss b = eVar.b();
-                b.hn(new Runnable() { // from class: com.google.android.gms.ads.nonagon.signals.f
+                eqgl b = eVar.b();
+                b.hD(new Runnable() { // from class: com.google.android.gms.ads.nonagon.signals.f
                     @Override // java.lang.Runnable
                     public final void run() {
                         com.google.android.gms.ads.internal.c.j();
                         long elapsedRealtime2 = SystemClock.elapsedRealtime() - elapsedRealtime;
                         boolean booleanValue = ((Boolean) o.a.d()).booleanValue();
-                        Bundle bundle3 = bundle2;
                         e eVar2 = eVar;
+                        Bundle bundle3 = bundle2;
                         if (booleanValue) {
                             eVar2.getClass().getCanonicalName();
                         }
@@ -111,7 +112,7 @@ public final class h {
                 arrayList.add(b);
             }
         }
-        enss a2 = ensj.c(arrayList).a(new Callable() { // from class: com.google.android.gms.ads.nonagon.signals.g
+        eqgl a2 = eqgc.c(arrayList).a(new Callable() { // from class: com.google.android.gms.ads.nonagon.signals.g
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 Object obj2;
@@ -122,7 +123,7 @@ public final class h {
                     if (!it.hasNext()) {
                         break;
                     }
-                    c cVar = (c) ((enss) it.next()).get();
+                    c cVar = (c) ((eqgl) it.next()).get();
                     if (cVar != null) {
                         cVar.a(obj2);
                     }
@@ -130,7 +131,7 @@ public final class h {
                 if (((Boolean) p.P.g()).booleanValue() && (bundle3 = bundle) != null) {
                     Bundle bundle4 = bundle2;
                     com.google.android.gms.ads.internal.c.j();
-                    bundle3.putLong(com.google.android.gms.ads.nonagon.csi.a.GMS_SIGNALS_END.N, System.currentTimeMillis());
+                    bundle3.putLong(com.google.android.gms.ads.nonagon.csi.a.GMS_SIGNALS_END.an, System.currentTimeMillis());
                     bundle3.putBundle("gms_sig_latency_key", bundle4);
                 }
                 return obj2;

@@ -5,95 +5,96 @@ import android.content.Context;
 import android.os.Process;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.arts;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bxyi;
-import defpackage.byln;
-import defpackage.bzgc;
-import defpackage.czix;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.czuo;
-import defpackage.czuq;
-import defpackage.dade;
-import defpackage.dadh;
-import defpackage.daga;
-import defpackage.dben;
-import defpackage.dbeo;
-import defpackage.ejhf;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.erdc;
-import defpackage.erdd;
-import defpackage.eyut;
-import defpackage.eyuu;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.frxn;
-import defpackage.frxq;
-import defpackage.fryy;
-import defpackage.ftxd;
-import defpackage.ftxe;
-import defpackage.ftye;
-import defpackage.furn;
-import defpackage.furo;
-import defpackage.unx;
+import defpackage.atwh;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.caha;
+import defpackage.cauf;
+import defpackage.cbot;
+import defpackage.dbsv;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dcep;
+import defpackage.dcer;
+import defpackage.dcnm;
+import defpackage.dcnp;
+import defpackage.dcqi;
+import defpackage.ddov;
+import defpackage.ddow;
+import defpackage.eluo;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.etry;
+import defpackage.etrz;
+import defpackage.fbjh;
+import defpackage.fbji;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fush;
+import defpackage.fusk;
+import defpackage.futs;
+import defpackage.fwtb;
+import defpackage.fwtc;
+import defpackage.fwuc;
+import defpackage.fxnl;
+import defpackage.fxnm;
+import defpackage.wjw;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OdlhUserEditSyncJob extends GmsTaskBoundService {
-    private dade c;
-    private daga d;
-    private dben e;
-    private czlk f;
-    private czje g;
-    private static final asot b = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "OdlhUserEditSync");
+    private dcnm c;
+    private dcqi d;
+    private ddov e;
+    private dbvg f;
+    private dbtc g;
+    private static final ausn b = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "OdlhUserEditSync");
     public static final String a = OdlhUserEditSyncJob.class.getName();
 
     public static boolean d() {
-        return frxn.Q() && fryy.a.a().a();
+        return fush.Q() && futs.a.lK().a();
     }
 
-    private final czlk e() {
+    private final dbvg e() {
         if (this.f == null) {
             if (this.g == null) {
-                this.g = new czje();
+                this.g = new dbtc();
             }
-            this.f = new czlk(this.g);
+            this.f = new dbvg(this.g);
         }
         return this.f;
     }
 
-    private final dben f(Context context) {
+    private final ddov f(Context context) {
         if (this.e == null) {
-            this.e = new dben(context, context.getApplicationInfo().uid, 38404);
+            this.e = new ddov(context, context.getApplicationInfo().uid, 38404);
         }
         return this.e;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        czuo c;
+    public final eqgl iB(cauf caufVar) {
+        dcep c;
         if (!d()) {
-            return ensj.i(0);
+            return eqgc.i(0);
         }
         Context a2 = AppContextProvider.a();
-        for (Account account : czix.d(a2)) {
+        for (Account account : dbsv.d(a2)) {
             try {
-                czuq czuqVar = czuq.a;
-                if (frxq.h()) {
-                    czuqVar = e().d(account);
-                    if (czuqVar.equals(czuq.a)) {
+                dcer dcerVar = dcer.a;
+                if (fusk.g()) {
+                    dcer d = e().d(account);
+                    if (d.equals(dcerVar)) {
                         throw new IOException("LocationHistorySetting is empty.");
                     }
+                    dcerVar = d;
                 }
-                if (frxq.h()) {
-                    c = czuqVar.q;
+                if (fusk.g()) {
+                    c = dcerVar.q;
                     if (c == null) {
-                        c = czuo.a;
+                        c = dcep.a;
                     }
                 } else {
                     c = e().c(account);
@@ -101,48 +102,48 @@ public final class OdlhUserEditSyncJob extends GmsTaskBoundService {
                 if (c.e) {
                     String str = account.name;
                 } else {
-                    dben f = f(a2);
-                    eyut eyutVar = eyut.a;
-                    fecj v = eyutVar.v();
+                    ddov f = f(a2);
+                    fbjh fbjhVar = fbjh.a;
+                    fgrc v = fbjhVar.v();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    eyut eyutVar2 = (eyut) v.b;
-                    eyutVar2.b |= 1;
-                    eyutVar2.c = "SEMANTIC_LOCATION_DEVICE";
-                    eyut eyutVar3 = (eyut) v.Q();
+                    fbjh fbjhVar2 = (fbjh) v.b;
+                    fbjhVar2.b |= 1;
+                    fbjhVar2.c = "SEMANTIC_LOCATION_DEVICE";
+                    fbjh fbjhVar3 = (fbjh) v.Q();
                     Context a3 = AppContextProvider.a();
-                    arts artsVar = new arts();
-                    artsVar.a = Process.myUid();
-                    artsVar.d = a3.getPackageName();
-                    artsVar.e = a3.getPackageName();
-                    artsVar.c = account;
-                    artsVar.b = account;
-                    artsVar.m("https://www.googleapis.com/auth/semanticlocation.readonly");
-                    dbeo dbeoVar = new dbeo(f.a, bzgc.a, bxyi.b);
-                    long j = dbeo.a;
-                    if (dbeo.b == null) {
-                        ftxd ftxdVar = ftxd.UNARY;
-                        febw febwVar = furo.a;
-                        dbeo.b = new ftxe(ftxdVar, "userlocation.SemanticLocationService/GetUserEditInfo", new furn(eyutVar), new furn(eyuu.a), false);
+                    atwh atwhVar = new atwh();
+                    atwhVar.a = Process.myUid();
+                    atwhVar.d = a3.getPackageName();
+                    atwhVar.e = a3.getPackageName();
+                    atwhVar.c = account;
+                    atwhVar.b = account;
+                    atwhVar.m("https://www.googleapis.com/auth/semanticlocation.readonly");
+                    ddow ddowVar = new ddow(f.a, cbot.a, caha.b);
+                    long j = ddow.a;
+                    if (ddow.b == null) {
+                        fwtb fwtbVar = fwtb.UNARY;
+                        fgqp fgqpVar = fxnm.a;
+                        ddow.b = new fwtc(fwtbVar, "userlocation.SemanticLocationService/GetUserEditInfo", new fxnl(fbjhVar), new fxnl(fbji.a), false);
                     }
-                    long j2 = ((eyuu) dbeoVar.d.f(dbeo.b, artsVar, eyutVar3, j, TimeUnit.MILLISECONDS, dbeoVar.e)).b;
+                    long j2 = ((fbji) ddowVar.d.f(ddow.b, atwhVar, fbjhVar3, j, TimeUnit.MILLISECONDS, ddowVar.e)).b;
                     if (this.c == null) {
-                        this.c = dadh.w(a2);
+                        this.c = dcnp.w(a2);
                     }
                     this.c.b(account, 0L, TimeUnit.MICROSECONDS.toSeconds(j2));
                     if (this.d == null) {
-                        this.d = new daga();
+                        this.d = new dcqi();
                     }
                     this.d.a(0L, TimeUnit.MICROSECONDS.toMillis(j2));
                 }
-            } catch (ftye | IOException | unx e) {
+            } catch (fwuc | IOException | wjw e) {
                 f(a2).a();
-                ((ejhf) ((ejhf) ((ejhf) b.j()).s(e)).ah((char) 10149)).B("Fails to get user edit info with error %s", new erdd(erdc.NO_USER_DATA, e.getMessage()));
-                return ensj.i(2);
+                ((eluo) ((eluo) ((eluo) b.j()).s(e)).ai((char) 10155)).B("Fails to get user edit info with error %s", new etrz(etry.NO_USER_DATA, e.getMessage()));
+                return eqgc.i(2);
             }
         }
         f(a2).a();
-        return ensj.i(0);
+        return eqgc.i(0);
     }
 }

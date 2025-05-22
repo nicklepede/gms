@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxex;
+import defpackage.atyq;
+import defpackage.czot;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class TimeEntity extends AbstractSafeParcelable implements Time {
-    public static final Parcelable.Creator CREATOR = new cxex();
+    public static final Parcelable.Creator CREATOR = new czot();
     public final Integer a;
     public final Integer b;
     public final Integer c;
@@ -26,7 +26,7 @@ public class TimeEntity extends AbstractSafeParcelable implements Time {
     }
 
     public static boolean e(Time time, Time time2) {
-        return arwb.b(time.a(), time2.a()) && arwb.b(time.c(), time2.c()) && arwb.b(time.d(), time2.d());
+        return atyq.b(time.a(), time2.a()) && atyq.b(time.c(), time2.c()) && atyq.b(time.d(), time2.d());
     }
 
     @Override // com.google.android.gms.reminders.model.Time
@@ -60,14 +60,14 @@ public class TimeEntity extends AbstractSafeParcelable implements Time {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxex.a(this, parcel);
+        czot.a(this, parcel);
     }
 
     public TimeEntity(Time time) {
         this(time.a(), time.c(), time.d());
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

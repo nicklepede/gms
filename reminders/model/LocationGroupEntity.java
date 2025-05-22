@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxem;
+import defpackage.atyq;
+import defpackage.czoi;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class LocationGroupEntity extends AbstractSafeParcelable implements LocationGroup {
-    public static final Parcelable.Creator CREATOR = new cxem();
+    public static final Parcelable.Creator CREATOR = new czoi();
     public final String a;
     public final Integer b;
     public final ChainInfoEntity c;
@@ -28,7 +28,7 @@ public class LocationGroupEntity extends AbstractSafeParcelable implements Locat
     }
 
     public static boolean f(LocationGroup locationGroup, LocationGroup locationGroup2) {
-        return arwb.b(locationGroup.e(), locationGroup2.e()) && arwb.b(locationGroup.d(), locationGroup2.d()) && arwb.b(locationGroup.c(), locationGroup2.c()) && arwb.b(locationGroup.a(), locationGroup2.a());
+        return atyq.b(locationGroup.e(), locationGroup2.e()) && atyq.b(locationGroup.d(), locationGroup2.d()) && atyq.b(locationGroup.c(), locationGroup2.c()) && atyq.b(locationGroup.a(), locationGroup2.a());
     }
 
     @Override // com.google.android.gms.reminders.model.LocationGroup
@@ -67,7 +67,7 @@ public class LocationGroupEntity extends AbstractSafeParcelable implements Locat
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxem.a(this, parcel, i);
+        czoi.a(this, parcel, i);
     }
 
     public LocationGroupEntity(LocationGroup locationGroup) {
@@ -81,7 +81,7 @@ public class LocationGroupEntity extends AbstractSafeParcelable implements Locat
         this.d = a != null ? new CategoryInfoEntity(a) : null;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

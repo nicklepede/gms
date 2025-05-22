@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxes;
+import defpackage.atyq;
+import defpackage.czoo;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RecurrenceStartEntity extends AbstractSafeParcelable implements RecurrenceStart {
-    public static final Parcelable.Creator CREATOR = new cxes();
+    public static final Parcelable.Creator CREATOR = new czoo();
     public final DateTimeEntity a;
 
     public RecurrenceStartEntity(DateTimeEntity dateTimeEntity) {
@@ -22,7 +22,7 @@ public class RecurrenceStartEntity extends AbstractSafeParcelable implements Rec
     }
 
     public static boolean c(RecurrenceStart recurrenceStart, RecurrenceStart recurrenceStart2) {
-        return arwb.b(recurrenceStart.a(), recurrenceStart2.a());
+        return atyq.b(recurrenceStart.a(), recurrenceStart2.a());
     }
 
     @Override // com.google.android.gms.reminders.model.RecurrenceStart
@@ -46,7 +46,7 @@ public class RecurrenceStartEntity extends AbstractSafeParcelable implements Rec
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxes.a(this, parcel, i);
+        czoo.a(this, parcel, i);
     }
 
     public RecurrenceStartEntity(RecurrenceStart recurrenceStart) {
@@ -54,7 +54,7 @@ public class RecurrenceStartEntity extends AbstractSafeParcelable implements Rec
         this.a = a == null ? null : new DateTimeEntity(a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

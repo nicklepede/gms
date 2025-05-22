@@ -3,18 +3,18 @@ package com.google.android.gms.wearable.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.djjm;
-import defpackage.dkhf;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.dlvf;
+import defpackage.dmsy;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class CapabilityInfoParcelable extends AbstractSafeParcelable implements djjm {
-    public static final Parcelable.Creator CREATOR = new dkhf();
+public class CapabilityInfoParcelable extends AbstractSafeParcelable implements dlvf {
+    public static final Parcelable.Creator CREATOR = new dmsy();
     public final String a;
     public final List b;
     private final Object c = new Object();
@@ -23,16 +23,16 @@ public class CapabilityInfoParcelable extends AbstractSafeParcelable implements 
     public CapabilityInfoParcelable(String str, List list) {
         this.a = str;
         this.b = list;
-        arwm.s(str);
-        arwm.s(list);
+        atzb.s(str);
+        atzb.s(list);
     }
 
-    @Override // defpackage.djjm
+    @Override // defpackage.dlvf
     public final String a() {
         return this.a;
     }
 
-    @Override // defpackage.djjm
+    @Override // defpackage.dlvf
     public final Set b() {
         Set set;
         synchronized (this.c) {
@@ -74,9 +74,9 @@ public class CapabilityInfoParcelable extends AbstractSafeParcelable implements 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.y(parcel, 3, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.y(parcel, 3, this.b, false);
+        atzr.c(parcel, a);
     }
 }

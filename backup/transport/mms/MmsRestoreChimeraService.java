@@ -5,61 +5,61 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.R;
-import defpackage.ahpv;
-import defpackage.ahtk;
-import defpackage.ahtw;
-import defpackage.ahuf;
-import defpackage.ahuq;
-import defpackage.ahus;
-import defpackage.ahuz;
-import defpackage.ahwd;
-import defpackage.aibm;
-import defpackage.aieb;
-import defpackage.aiee;
-import defpackage.aiei;
-import defpackage.aiyt;
-import defpackage.akic;
-import defpackage.akid;
-import defpackage.anxo;
-import defpackage.aslt;
-import defpackage.asmf;
-import defpackage.flmm;
-import defpackage.flmr;
+import defpackage.ajql;
+import defpackage.ajua;
+import defpackage.ajum;
+import defpackage.ajuv;
+import defpackage.ajvg;
+import defpackage.ajvi;
+import defpackage.ajvp;
+import defpackage.ajwt;
+import defpackage.akcc;
+import defpackage.aker;
+import defpackage.akeu;
+import defpackage.akey;
+import defpackage.akzj;
+import defpackage.amjd;
+import defpackage.amje;
+import defpackage.apzg;
+import defpackage.aupn;
+import defpackage.aupz;
+import defpackage.fodw;
+import defpackage.foeb;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class MmsRestoreChimeraService extends aslt {
-    public static final ahwd a = new ahwd("MmsRestoreService");
-    public aiee b;
-    public final Executor c = new asmf(1, 9);
+public class MmsRestoreChimeraService extends aupn {
+    public static final ajwt a = new ajwt("MmsRestoreService");
+    public akeu b;
+    public final Executor c = new aupz(1, 9);
 
-    public final ahus a() {
-        return flmr.c() ? new ahtw(this) : flmm.E() ? new ahuf(this) : new ahuq(this);
+    public final ajvi a() {
+        return foeb.c() ? new ajum(this) : fodw.E() ? new ajuv(this) : new ajvg(this);
     }
 
-    @Override // defpackage.aslt
+    @Override // defpackage.aupn
     protected final void b(Intent intent) {
         if (this.b == null) {
-            this.b = new aiee(this);
+            this.b = new akeu(this);
         }
-        aibm aibmVar = new aibm(this, getPackageManager());
-        aiei aieiVar = new aiei(this);
-        akid akidVar = new akid(this, this.b, new ahpv(this), a(), new ahuz(this), flmm.F() ? new ahtk(this) : null, ModuleManager.get(this), aibmVar, aieiVar);
-        Notification.Builder progress = aieb.a(this).setContentTitle(getResources().getString(R.string.mms_restore_foreground_notification_title)).setProgress(0, 0, true);
-        progress.setSmallIcon(anxo.a(this, R.drawable.g1_notification_logo_24));
+        akcc akccVar = new akcc(this, getPackageManager());
+        akey akeyVar = new akey(this);
+        amje amjeVar = new amje(this, this.b, new ajql(this), a(), new ajvp(this), fodw.F() ? new ajua(this) : null, ModuleManager.get(this), akccVar, akeyVar);
+        Notification.Builder progress = aker.a(this).setContentTitle(getResources().getString(R.string.mms_restore_foreground_notification_title)).setProgress(0, 0, true);
+        progress.setSmallIcon(apzg.a(this, R.drawable.g1_notification_logo_24));
         startForeground(9901, progress.build());
         try {
-            akidVar.c();
-        } catch (akic e) {
+            amjeVar.c();
+        } catch (amjd e) {
             a.n("Error restoring MMS", e, new Object[0]);
         }
     }
 
-    @Override // defpackage.aslt, com.google.android.chimera.Service
+    @Override // defpackage.aupn, com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
-        if (flmm.Q()) {
-            return new aiyt(this);
+        if (fodw.Q()) {
+            return new akzj(this);
         }
         return null;
     }

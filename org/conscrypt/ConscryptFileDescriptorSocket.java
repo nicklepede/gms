@@ -30,7 +30,7 @@ import javax.net.ssl.X509KeyManager;
 import javax.net.ssl.X509TrustManager;
 import javax.security.auth.x500.X500Principal;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 class ConscryptFileDescriptorSocket extends OpenSSLSocketImpl implements NativeCrypto.SSLHandshakeCallbacks, SSLParametersImpl.PSKCallbacks, SSLParametersImpl.AliasChooser {
     private static final boolean DBG_STATE = false;
@@ -48,7 +48,7 @@ class ConscryptFileDescriptorSocket extends OpenSSLSocketImpl implements NativeC
     private int state;
     private int writeTimeoutMilliseconds;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class SSLInputStream extends InputStream implements InputStreamRetargetInterface {
         private final Object readLock = new Object();
 
@@ -108,7 +108,7 @@ class ConscryptFileDescriptorSocket extends OpenSSLSocketImpl implements NativeC
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class SSLOutputStream extends OutputStream {
         private final Object writeLock = new Object();
 

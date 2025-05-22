@@ -3,7 +3,7 @@ package com.google.android.gms.nearby.connection.v3.dct;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class SessionId extends DctDeviceDataElement {
     private static final Charset d = Charset.forName("UTF-8");

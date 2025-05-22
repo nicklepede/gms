@@ -2,22 +2,22 @@ package com.google.android.gms.autofill.metrics;
 
 import android.os.Parcelable;
 import android.view.autofill.AutofillId;
-import defpackage.afmu;
-import defpackage.afrk;
-import defpackage.eiid;
-import defpackage.eitj;
+import defpackage.ahng;
+import defpackage.ahrw;
+import defpackage.ekvi;
+import defpackage.elgo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public interface MetricsContext extends Parcelable {
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public interface FillContext extends Parcelable {
-        eiid a();
+        ekvi a();
 
-        eiid b();
+        ekvi b();
 
-        eitj c();
+        elgo c();
 
         boolean d();
 
@@ -32,11 +32,11 @@ public interface MetricsContext extends Parcelable {
 
     int c();
 
-    afmu d();
+    ahng d();
 
-    afrk e();
+    ahrw e();
 
-    eitj f();
+    elgo f();
 
     void g(FillContext fillContext);
 }

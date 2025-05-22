@@ -3,13 +3,13 @@ package com.google.android.gms.semanticlocation;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.czhc;
+import defpackage.atzr;
+import defpackage.dbra;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SemanticSegment extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new czhc();
+    public static final Parcelable.Creator CREATOR = new dbra();
     public final long a;
     public final long b;
     public final int c;
@@ -37,18 +37,18 @@ public class SemanticSegment extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.a;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, j);
-        arxc.q(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.e(parcel, 6, false);
-        arxc.v(parcel, 7, this.e, false);
-        arxc.o(parcel, 8, this.f);
-        arxc.t(parcel, 9, this.g, i, false);
-        arxc.t(parcel, 10, this.h, i, false);
-        arxc.o(parcel, 11, this.i);
-        arxc.o(parcel, 12, this.j);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, j);
+        atzr.q(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.e(parcel, 6, false);
+        atzr.v(parcel, 7, this.e, false);
+        atzr.o(parcel, 8, this.f);
+        atzr.t(parcel, 9, this.g, i, false);
+        atzr.t(parcel, 10, this.h, i, false);
+        atzr.o(parcel, 11, this.i);
+        atzr.o(parcel, 12, this.j);
+        atzr.c(parcel, a);
     }
 }

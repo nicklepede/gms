@@ -6,18 +6,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.presence.DiscoveryFilter;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ckrj;
-import defpackage.ckrx;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cmzo;
+import defpackage.cnac;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public final class GetDevicesParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckrj();
+    public static final Parcelable.Creator CREATOR = new cmzo();
     public DiscoveryFilter a;
-    public ckrx b;
+    public cnac b;
 
     private GetDevicesParams() {
     }
@@ -28,7 +28,7 @@ public final class GetDevicesParams extends AbstractSafeParcelable {
         }
         if (obj instanceof GetDevicesParams) {
             GetDevicesParams getDevicesParams = (GetDevicesParams) obj;
-            if (arwb.b(this.b, getDevicesParams.b) && arwb.b(this.a, getDevicesParams.a)) {
+            if (atyq.b(this.b, getDevicesParams.b) && atyq.b(this.a, getDevicesParams.a)) {
                 return true;
             }
         }
@@ -41,21 +41,21 @@ public final class GetDevicesParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.b.a);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.b.a);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.c(parcel, a);
     }
 
     public GetDevicesParams(IBinder iBinder, DiscoveryFilter discoveryFilter) {
-        ckrx ckrxVar;
+        cnac cnacVar;
         if (iBinder == null) {
-            ckrxVar = null;
+            cnacVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.presence.internal.IGetDevicesCallback");
-            ckrxVar = queryLocalInterface instanceof ckrx ? (ckrx) queryLocalInterface : new ckrx(iBinder);
+            cnacVar = queryLocalInterface instanceof cnac ? (cnac) queryLocalInterface : new cnac(iBinder);
         }
-        this.b = ckrxVar;
+        this.b = cnacVar;
         this.a = discoveryFilter;
     }
 }

@@ -5,59 +5,59 @@ import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.firstparty.dataservice.TokenRequest;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.adjb;
-import defpackage.adkp;
-import defpackage.adlg;
-import defpackage.adlj;
-import defpackage.arke;
-import defpackage.jth;
-import defpackage.jti;
-import defpackage.jtu;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.afji;
+import defpackage.afkw;
+import defpackage.afln;
+import defpackage.aflq;
+import defpackage.atmt;
+import defpackage.jzw;
+import defpackage.jzx;
+import defpackage.kaj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class GetTokenChimeraActivity extends adlg implements jth {
-    public static final aano h = new aano("response");
-    public static final aano i;
-    public static final aano j;
-    private static final aano k;
+public class GetTokenChimeraActivity extends afln implements jzw {
+    public static final acno h = new acno("response");
+    public static final acno i;
+    public static final acno j;
+    private static final acno k;
 
     static {
-        new aano("consent_intent");
-        i = new aano("isSupervisedMemberAccount");
-        j = new aano("request");
-        k = new aano("suppress_ui");
+        new acno("consent_intent");
+        i = new acno("isSupervisedMemberAccount");
+        j = new acno("request");
+        k = new acno("suppress_ui");
     }
 
-    public static Intent j(Context context, TokenRequest tokenRequest, boolean z, boolean z2, arke arkeVar) {
+    public static Intent j(Context context, TokenRequest tokenRequest, boolean z, boolean z2, atmt atmtVar) {
         Intent className = new Intent().setClassName(context, "com.google.android.gms.auth.uiflows.gettoken.GetTokenActivity");
-        aanp aanpVar = new aanp();
-        aanpVar.d(j, tokenRequest);
-        aanpVar.d(k, Boolean.valueOf(z));
-        aanpVar.d(adjb.b, Boolean.valueOf(z2));
-        aanpVar.d(adjb.a, arkeVar.a());
-        return className.putExtras(aanpVar.a);
+        acnp acnpVar = new acnp();
+        acnpVar.d(j, tokenRequest);
+        acnpVar.d(k, Boolean.valueOf(z));
+        acnpVar.d(afji.b, Boolean.valueOf(z2));
+        acnpVar.d(afji.a, atmtVar.a());
+        return className.putExtras(acnpVar.a);
     }
 
-    @Override // defpackage.jth
-    public final jtu a(int i2, Bundle bundle) {
-        return new adlj(this, this);
+    @Override // defpackage.jzw
+    public final kaj a(int i2, Bundle bundle) {
+        return new aflq(this, this);
     }
 
-    @Override // defpackage.jth
-    public final /* bridge */ /* synthetic */ void b(jtu jtuVar, Object obj) {
-        gD(-1, new Intent().putExtras((Bundle) obj));
+    @Override // defpackage.jzw
+    public final /* bridge */ /* synthetic */ void b(kaj kajVar, Object obj) {
+        gT(-1, new Intent().putExtras((Bundle) obj));
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "GetTokenActivity";
     }
 
-    @Override // defpackage.adkg
-    protected final void gH() {
+    @Override // defpackage.afkn
+    protected final void gX() {
         if (((Boolean) s().b(k, false)).booleanValue()) {
             setTheme(R.style.InvisibleCustomTitle);
         } else {
@@ -65,20 +65,20 @@ public class GetTokenChimeraActivity extends adlg implements jth {
         }
     }
 
-    @Override // defpackage.adlg, defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afln, defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (!((Boolean) s().b(k, false)).booleanValue() && bundle == null) {
-            adkp adkpVar = new adkp();
-            aanp aanpVar = new aanp();
-            aanpVar.d(adkp.ah, Integer.valueOf(R.string.auth_gls_name_checking_info_title));
-            adkpVar.setArguments(aanpVar.a);
-            adkpVar.show(gI(), "dialog");
+            afkw afkwVar = new afkw();
+            acnp acnpVar = new acnp();
+            acnpVar.d(afkw.ah, Integer.valueOf(R.string.auth_gls_name_checking_info_title));
+            afkwVar.setArguments(acnpVar.a);
+            afkwVar.show(gY(), "dialog");
         }
-        jti.a(this).c(0, null, this);
+        jzx.a(this).c(0, null, this);
     }
 
-    @Override // defpackage.jth
-    public final void c(jtu jtuVar) {
+    @Override // defpackage.jzw
+    public final void c(kaj kajVar) {
     }
 }

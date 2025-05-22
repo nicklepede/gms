@@ -6,25 +6,25 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import com.google.android.gms.R;
 import com.google.android.gms.significantplaces.settings.DeletePlaceChimeraActivity;
-import defpackage.capr;
-import defpackage.dciw;
-import defpackage.fvbo;
+import defpackage.ccyh;
+import defpackage.detc;
+import defpackage.fxxm;
 import defpackage.ip;
 import defpackage.iq;
-import defpackage.iro;
+import defpackage.ite;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class DeletePlaceChimeraActivity extends dciw {
+public final class DeletePlaceChimeraActivity extends detc {
     private final int j = R.style.DeleteMaterialDialogTheme;
     private final boolean k = true;
 
-    @Override // defpackage.dciw
+    @Override // defpackage.detc
     public final int a() {
         return this.j;
     }
 
-    @Override // defpackage.dciw
+    @Override // defpackage.detc
     public final iq b(ip ipVar) {
         Bundle extras = getIntent().getExtras();
         final String string = extras != null ? extras.getString("place") : null;
@@ -33,32 +33,32 @@ public final class DeletePlaceChimeraActivity extends dciw {
         if (string == null || string2 == null) {
             return null;
         }
-        Spanned a = iro.a(getResources().getString(R.string.delete_dialog_body, string2, getString(R.string.trusted_places_settings_intent_uri)), 63);
-        fvbo.e(a, "fromHtml(...)");
-        SpannableString a2 = capr.a(this, a);
-        ipVar.j(R.string.delete_dialog_title);
-        ipVar.n(a2);
-        ipVar.setNegativeButton(R.string.common_cancel, new DialogInterface.OnClickListener() { // from class: dcji
+        Spanned a = ite.a(getResources().getString(R.string.delete_dialog_body, string2, getString(R.string.trusted_places_settings_intent_uri)), 63);
+        fxxm.e(a, "fromHtml(...)");
+        SpannableString a2 = ccyh.a(this, a);
+        ipVar.l(R.string.delete_dialog_title);
+        ipVar.p(a2);
+        ipVar.setNegativeButton(R.string.common_cancel, new DialogInterface.OnClickListener() { // from class: deto
             @Override // android.content.DialogInterface.OnClickListener
             public final void onClick(DialogInterface dialogInterface, int i) {
-                fvbo.f(dialogInterface, "dialog");
-                int i2 = dciy.a;
-                dciy.b(DeletePlaceChimeraActivity.this);
+                fxxm.f(dialogInterface, "dialog");
+                int i2 = dete.a;
+                dete.b(DeletePlaceChimeraActivity.this);
             }
         });
-        ip positiveButton = ipVar.setPositiveButton(R.string.delete_dialog_positive_button, new DialogInterface.OnClickListener() { // from class: dcjj
+        ipVar.setPositiveButton(R.string.delete_dialog_positive_button, new DialogInterface.OnClickListener() { // from class: detp
             @Override // android.content.DialogInterface.OnClickListener
             public final void onClick(DialogInterface dialogInterface, int i) {
-                fvbo.f(dialogInterface, "<unused var>");
+                fxxm.f(dialogInterface, "<unused var>");
                 DeletePlaceChimeraActivity deletePlaceChimeraActivity = DeletePlaceChimeraActivity.this;
-                fvgt.b(joo.a(deletePlaceChimeraActivity), null, null, new dcjl(string, deletePlaceChimeraActivity, null), 3);
+                fycr.b(jvd.a(deletePlaceChimeraActivity), null, null, new detr(string, deletePlaceChimeraActivity, null), 3);
             }
         });
-        positiveButton.l(R.drawable.gs_android_security_privacy_vd_theme_24);
-        return positiveButton.create();
+        ipVar.n(R.drawable.gs_android_security_privacy_vd_theme_24);
+        return ipVar.create();
     }
 
-    @Override // defpackage.dciw
+    @Override // defpackage.detc
     public final boolean c() {
         return this.k;
     }

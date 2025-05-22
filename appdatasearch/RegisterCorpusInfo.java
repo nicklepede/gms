@@ -5,17 +5,17 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.C0197try;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.trz;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.vny;
+import defpackage.vnz;
 import java.util.Arrays;
 import java.util.Collections;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class RegisterCorpusInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new trz();
+    public static final Parcelable.Creator CREATOR = new vnz();
     public final String a;
     public final String b;
     public final Uri c;
@@ -48,18 +48,18 @@ public class RegisterCorpusInfo extends AbstractSafeParcelable {
         String str = Uri.encode(account.type) + "/" + Uri.encode(account.name);
         String str2 = this.a + "/" + str;
         Uri build = this.c.buildUpon().appendEncodedPath(str).build();
-        C0197try c0197try = new C0197try(str2);
-        c0197try.a = this.b;
-        c0197try.b = build;
-        Collections.addAll(c0197try.c, this.d);
-        c0197try.d = this.e;
-        c0197try.e = this.f;
-        c0197try.f = account;
-        c0197try.g = this.h;
-        c0197try.h = this.i;
-        c0197try.i = this.j;
-        c0197try.j = this.k;
-        return c0197try.a();
+        vny vnyVar = new vny(str2);
+        vnyVar.a = this.b;
+        vnyVar.b = build;
+        Collections.addAll(vnyVar.c, this.d);
+        vnyVar.d = this.e;
+        vnyVar.e = this.f;
+        vnyVar.f = account;
+        vnyVar.g = this.h;
+        vnyVar.h = this.i;
+        vnyVar.i = this.j;
+        vnyVar.j = this.k;
+        return vnyVar.a();
     }
 
     public final boolean equals(Object obj) {
@@ -70,7 +70,7 @@ public class RegisterCorpusInfo extends AbstractSafeParcelable {
             return false;
         }
         RegisterCorpusInfo registerCorpusInfo = (RegisterCorpusInfo) obj;
-        return this.j == registerCorpusInfo.j && this.k == registerCorpusInfo.k && this.f == registerCorpusInfo.f && arwb.b(this.a, registerCorpusInfo.a) && arwb.b(this.b, registerCorpusInfo.b) && arwb.b(this.c, registerCorpusInfo.c) && arwb.b(this.e, registerCorpusInfo.e) && arwb.b(this.h, registerCorpusInfo.h) && arwb.b(this.g, registerCorpusInfo.g) && arwb.b(this.i, registerCorpusInfo.i) && Arrays.equals(this.d, registerCorpusInfo.d);
+        return this.j == registerCorpusInfo.j && this.k == registerCorpusInfo.k && this.f == registerCorpusInfo.f && atyq.b(this.a, registerCorpusInfo.a) && atyq.b(this.b, registerCorpusInfo.b) && atyq.b(this.c, registerCorpusInfo.c) && atyq.b(this.e, registerCorpusInfo.e) && atyq.b(this.h, registerCorpusInfo.h) && atyq.b(this.g, registerCorpusInfo.g) && atyq.b(this.i, registerCorpusInfo.i) && Arrays.equals(this.d, registerCorpusInfo.d);
     }
 
     public final int hashCode() {
@@ -80,18 +80,18 @@ public class RegisterCorpusInfo extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.J(parcel, 4, this.d, i);
-        arxc.t(parcel, 7, this.e, i, false);
-        arxc.e(parcel, 8, this.f);
-        arxc.t(parcel, 9, this.g, i, false);
-        arxc.t(parcel, 10, this.h, i, false);
-        arxc.v(parcel, 11, this.i, false);
-        arxc.e(parcel, 12, this.j);
-        arxc.o(parcel, 13, this.k);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.J(parcel, 4, this.d, i);
+        atzr.t(parcel, 7, this.e, i, false);
+        atzr.e(parcel, 8, this.f);
+        atzr.t(parcel, 9, this.g, i, false);
+        atzr.t(parcel, 10, this.h, i, false);
+        atzr.v(parcel, 11, this.i, false);
+        atzr.e(parcel, 12, this.j);
+        atzr.o(parcel, 13, this.k);
+        atzr.c(parcel, a);
     }
 }

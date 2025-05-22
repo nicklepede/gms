@@ -1,18 +1,18 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.audf;
-import defpackage.audg;
-import defpackage.fipp;
-import defpackage.fvbo;
+import defpackage.awhk;
+import defpackage.awhl;
+import defpackage.flfm;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
-public final class CredentialExchangeFormat$Credential$Note extends audf {
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
+public final class CredentialExchangeFormat$Credential$Note extends awhk {
     public final CredentialExchangeFormat$EditableField a;
 
     public CredentialExchangeFormat$Credential$Note(CredentialExchangeFormat$EditableField credentialExchangeFormat$EditableField) {
-        audg audgVar = audg.a;
+        awhl awhlVar = awhl.a;
         this.a = credentialExchangeFormat$EditableField;
     }
 
@@ -20,7 +20,7 @@ public final class CredentialExchangeFormat$Credential$Note extends audf {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof CredentialExchangeFormat$Credential$Note) && fvbo.n(this.a, ((CredentialExchangeFormat$Credential$Note) obj).a);
+        return (obj instanceof CredentialExchangeFormat$Credential$Note) && fxxm.n(this.a, ((CredentialExchangeFormat$Credential$Note) obj).a);
     }
 
     public final int hashCode() {

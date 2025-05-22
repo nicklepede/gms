@@ -1,8 +1,8 @@
 package com.google.android.gms.chimera.container.router;
 
-import defpackage.aofe;
+import defpackage.aqgx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class PersistentComponentRouterChimeraProvider extends aofe {
+public class PersistentComponentRouterChimeraProvider extends aqgx {
 }

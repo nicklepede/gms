@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cked;
-import defpackage.ckef;
-import defpackage.ckfp;
+import defpackage.atzr;
+import defpackage.cmmi;
+import defpackage.cmmk;
+import defpackage.cmnu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class UnpublishRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckfp();
+    public static final Parcelable.Creator CREATOR = new cmnu();
     final int a;
     public final MessageWrapper b;
-    public final ckef c;
+    public final cmmk c;
 
     @Deprecated
     public final String d;
@@ -31,16 +31,16 @@ public final class UnpublishRequest extends AbstractSafeParcelable {
     public final ClientAppContext g;
 
     public UnpublishRequest(int i, MessageWrapper messageWrapper, IBinder iBinder, String str, String str2, boolean z, ClientAppContext clientAppContext) {
-        ckef ckedVar;
+        cmmk cmmiVar;
         this.a = i;
         this.b = messageWrapper;
         if (iBinder == null) {
-            ckedVar = null;
+            cmmiVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.messages.internal.INearbyMessagesCallback");
-            ckedVar = queryLocalInterface instanceof ckef ? (ckef) queryLocalInterface : new cked(iBinder);
+            cmmiVar = queryLocalInterface instanceof cmmk ? (cmmk) queryLocalInterface : new cmmi(iBinder);
         }
-        this.c = ckedVar;
+        this.c = cmmiVar;
         this.d = str;
         this.e = str2;
         this.f = z;
@@ -49,14 +49,14 @@ public final class UnpublishRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.D(parcel, 3, this.c.asBinder());
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.e(parcel, 6, this.f);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.D(parcel, 3, this.c.asBinder());
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.e(parcel, 6, this.f);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.c(parcel, a);
     }
 }

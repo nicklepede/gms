@@ -1,20 +1,20 @@
 package com.google.android.gms.ads.nonagon.util.concurrent;
 
-import defpackage.enss;
+import defpackage.eqgl;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class g implements enss {
+public final class g implements eqgl {
     public final Object a;
     public final String b;
-    private final enss c;
+    private final eqgl c;
 
-    public g(Object obj, String str, enss enssVar) {
+    public g(Object obj, String str, eqgl eqglVar) {
         this.a = obj;
         this.b = str;
-        this.c = enssVar;
+        this.c = eqglVar;
     }
 
     @Override // java.util.concurrent.Future
@@ -27,9 +27,9 @@ public final class g implements enss {
         return this.c.get();
     }
 
-    @Override // defpackage.enss
-    public final void hn(Runnable runnable, Executor executor) {
-        this.c.hn(runnable, executor);
+    @Override // defpackage.eqgl
+    public final void hD(Runnable runnable, Executor executor) {
+        this.c.hD(runnable, executor);
     }
 
     @Override // java.util.concurrent.Future

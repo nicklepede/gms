@@ -12,71 +12,71 @@ import android.webkit.WebView;
 import com.google.android.gms.R;
 import com.google.android.gms.growth.ui.webview.GrowthWebViewChimeraActivity;
 import com.google.android.libraries.material.progress.MaterialProgressBar;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bkgt;
-import defpackage.bklb;
-import defpackage.bklc;
-import defpackage.bklm;
-import defpackage.bkmu;
-import defpackage.bknp;
-import defpackage.bknq;
-import defpackage.bknr;
-import defpackage.bkns;
-import defpackage.bknz;
-import defpackage.bkoa;
-import defpackage.bkov;
-import defpackage.bkoy;
-import defpackage.bkxr;
-import defpackage.bkxv;
-import defpackage.bkyk;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.ejhf;
-import defpackage.ensv;
-import defpackage.esmu;
-import defpackage.fecj;
-import defpackage.fixl;
-import defpackage.qet;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bmnj;
+import defpackage.bmrr;
+import defpackage.bmrs;
+import defpackage.bmsc;
+import defpackage.bmtl;
+import defpackage.bmug;
+import defpackage.bmuh;
+import defpackage.bmui;
+import defpackage.bmuj;
+import defpackage.bmuq;
+import defpackage.bmur;
+import defpackage.bmvm;
+import defpackage.bmvp;
+import defpackage.bnei;
+import defpackage.bnem;
+import defpackage.bnfb;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.eluo;
+import defpackage.eqgo;
+import defpackage.evch;
+import defpackage.fgrc;
+import defpackage.flni;
+import defpackage.rxx;
 import java.util.Iterator;
 import java.util.Objects;
 import java.util.Random;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class GrowthWebViewChimeraActivity extends qet {
-    public static final String j = bkxr.b(GrowthWebViewChimeraActivity.class);
-    public static final asot k = asot.e(asej.GROWTH);
+public class GrowthWebViewChimeraActivity extends rxx {
+    public static final String j = bnei.b(GrowthWebViewChimeraActivity.class);
+    public static final ausn k = ausn.e(auid.GROWTH);
     private Account A;
-    private bkov B;
-    public final bkmu l;
-    public final bkoy m;
-    public final bkyk n;
+    private bmvm B;
+    public final bmtl l;
+    public final bmvp m;
+    public final bnfb n;
     public WebView o;
     public View p;
     public MaterialProgressBar q;
-    bknz r;
+    bmuq r;
     public String s;
     public String t;
     public int u;
-    public final bklm v;
-    private final bkgt w;
+    public final bmsc v;
+    private final bmnj w;
     private final Random x;
-    private final ensv y;
-    private final bkoa z;
+    private final eqgo y;
+    private final bmur z;
 
-    public GrowthWebViewChimeraActivity(bklm bklmVar, bkgt bkgtVar, Random random, ensv ensvVar, bkoa bkoaVar, bkmu bkmuVar, bkoy bkoyVar, bkyk bkykVar) {
-        this.v = bklmVar;
-        this.w = bkgtVar;
+    public GrowthWebViewChimeraActivity(bmsc bmscVar, bmnj bmnjVar, Random random, eqgo eqgoVar, bmur bmurVar, bmtl bmtlVar, bmvp bmvpVar, bnfb bnfbVar) {
+        this.v = bmscVar;
+        this.w = bmnjVar;
         this.x = random;
-        this.y = ensvVar;
-        this.z = bkoaVar;
-        this.l = bkmuVar;
-        this.m = bkoyVar;
-        this.n = bkykVar;
+        this.y = eqgoVar;
+        this.z = bmurVar;
+        this.l = bmtlVar;
+        this.m = bmvpVar;
+        this.n = bnfbVar;
     }
 
     private static final void n(Uri.Builder builder, String str, String str2) {
@@ -88,36 +88,36 @@ public class GrowthWebViewChimeraActivity extends qet {
     private final void o(int i) {
         String str = this.t;
         int i2 = this.u;
-        fecj v = esmu.a.v();
+        fgrc v = evch.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        esmu esmuVar = (esmu) v.b;
-        bklm bklmVar = this.v;
-        esmuVar.d = i - 1;
-        esmuVar.b |= 2;
-        bklmVar.b(str, i2, v);
+        evch evchVar = (evch) v.b;
+        bmsc bmscVar = this.v;
+        evchVar.d = i - 1;
+        evchVar.b |= 2;
+        bmscVar.b(str, i2, v);
     }
 
     public static GrowthWebViewChimeraActivity provideInstance() {
-        bklc a = bklb.a();
-        fixl.b(a);
-        bknq bknqVar = new bknq(a);
-        bknp bknpVar = new bknp(a);
-        bkns bknsVar = new bkns(a);
-        bknr bknrVar = new bknr(a);
-        bklm c = a.c();
-        fixl.d(c);
-        bkgt b = a.b();
+        bmrs a = bmrr.a();
+        flni.b(a);
+        bmuh bmuhVar = new bmuh(a);
+        bmug bmugVar = new bmug(a);
+        bmuj bmujVar = new bmuj(a);
+        bmui bmuiVar = new bmui(a);
+        bmsc c = a.c();
+        flni.d(c);
+        bmnj b = a.b();
         Random random = new Random(System.currentTimeMillis());
-        ensv ensvVar = (ensv) ((bklb) a).d.a();
-        fixl.d(ensvVar);
-        bkoa bkoaVar = new bkoa(bknqVar, bknpVar, bknsVar, bknrVar);
-        bkmu d = a.d();
-        bkoy bkoyVar = new bkoy(a.d());
-        bkyk f = a.f();
-        fixl.d(f);
-        return new GrowthWebViewChimeraActivity(c, b, random, ensvVar, bkoaVar, d, bkoyVar, f);
+        eqgo eqgoVar = (eqgo) ((bmrr) a).d.a();
+        flni.d(eqgoVar);
+        bmur bmurVar = new bmur(bmuhVar, bmugVar, bmujVar, bmuiVar);
+        bmtl d = a.d();
+        bmvp bmvpVar = new bmvp(a.d());
+        bnfb f = a.f();
+        flni.d(f);
+        return new GrowthWebViewChimeraActivity(c, b, random, eqgoVar, bmurVar, d, bmvpVar, f);
     }
 
     public final void a() {
@@ -131,24 +131,24 @@ public class GrowthWebViewChimeraActivity extends qet {
         }
         findViewById(R.id.webview_loading).setVisibility(0);
         this.p.setVisibility(8);
-        dfaq b = this.B.b(this.A, this.s);
-        b.y(new dfah() { // from class: bkoc
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
-                ((ejhf) ((ejhf) ((ejhf) GrowthWebViewChimeraActivity.k.i()).s(exc)).ah((char) 5103)).x("Failed to set user auth cookies.");
+        dhlw b = this.B.b(this.A, this.s);
+        b.y(new dhln() { // from class: bmut
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                ((eluo) ((eluo) ((eluo) GrowthWebViewChimeraActivity.k.i()).s(exc)).ai((char) 5116)).x("Failed to set user auth cookies.");
             }
         });
-        b.u(getContainerActivity(), new dfak() { // from class: bkob
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        b.u(getContainerActivity(), new dhlq() { // from class: bmus
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 GrowthWebViewChimeraActivity growthWebViewChimeraActivity = GrowthWebViewChimeraActivity.this;
                 growthWebViewChimeraActivity.o.loadUrl(growthWebViewChimeraActivity.s);
             }
         });
-        b.r(getContainerActivity(), new dfah() { // from class: bkoj
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
-                ((ejhf) ((ejhf) ((ejhf) GrowthWebViewChimeraActivity.k.i()).s(exc)).ah((char) 5101)).x("Webview initialization failed.");
+        b.r(getContainerActivity(), new dhln() { // from class: bmva
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                ((eluo) ((eluo) ((eluo) GrowthWebViewChimeraActivity.k.i()).s(exc)).ai((char) 5114)).x("Webview initialization failed.");
                 GrowthWebViewChimeraActivity.this.k();
             }
         });
@@ -167,8 +167,8 @@ public class GrowthWebViewChimeraActivity extends qet {
 
     /* JADX WARN: Removed duplicated region for block: B:17:0x0114  */
     /* JADX WARN: Removed duplicated region for block: B:20:0x0125  */
-    /* JADX WARN: Type inference failed for: r1v1, types: [bklm, java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r2v3, types: [bkyk, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r1v1, types: [bmsc, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r2v3, types: [bnfb, java.lang.Object] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -181,7 +181,7 @@ public class GrowthWebViewChimeraActivity extends qet {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.growth.ui.webview.GrowthWebViewChimeraActivity.m(android.content.Intent, android.webkit.WebSettings, boolean):void");
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onActivityResult(final int i, final int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (intent != null) {
@@ -208,21 +208,21 @@ public class GrowthWebViewChimeraActivity extends qet {
         JSONObject jSONObject = null;
         if (intent != null && intent.getExtras() != null) {
             try {
-                jSONObject = bkxv.a(intent.getExtras());
+                jSONObject = bnem.a(intent.getExtras());
             } catch (JSONException e) {
-                ((ejhf) ((ejhf) ((ejhf) k.j()).s(e)).ah((char) 5105)).x("Failed to encode intent extras to json.");
+                ((eluo) ((eluo) ((eluo) k.j()).s(e)).ai((char) 5118)).x("Failed to encode intent extras to json.");
             }
         }
         final String obj = jSONObject == null ? JSONObject.NULL.toString() : jSONObject.toString();
-        this.o.post(new Runnable() { // from class: bkoe
+        this.o.post(new Runnable() { // from class: bmuv
             @Override // java.lang.Runnable
             public final void run() {
-                GrowthWebViewChimeraActivity.this.o.evaluateJavascript(foxi.a.a().c() + "(" + TextUtils.join(",", new Object[]{Integer.valueOf(i), Integer.valueOf(i2), obj}) + ");", null);
+                GrowthWebViewChimeraActivity.this.o.evaluateJavascript(frql.a.lK().c() + "(" + TextUtils.join(",", new Object[]{Integer.valueOf(i), Integer.valueOf(i2), obj}) + ");", null);
             }
         });
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         if (this.o.canGoBack()) {
             this.o.goBack();
@@ -236,60 +236,60 @@ public class GrowthWebViewChimeraActivity extends qet {
         l();
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:37:0x0197  */
-    /* JADX WARN: Removed duplicated region for block: B:40:0x01aa  */
-    /* JADX WARN: Removed duplicated region for block: B:45:0x01c7  */
-    /* JADX WARN: Removed duplicated region for block: B:47:0x01d8  */
-    /* JADX WARN: Removed duplicated region for block: B:70:0x019c  */
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    /* JADX WARN: Removed duplicated region for block: B:37:0x0195  */
+    /* JADX WARN: Removed duplicated region for block: B:40:0x01a8  */
+    /* JADX WARN: Removed duplicated region for block: B:45:0x01c5  */
+    /* JADX WARN: Removed duplicated region for block: B:47:0x01d6  */
+    /* JADX WARN: Removed duplicated region for block: B:70:0x019a  */
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     protected final void onCreate(android.os.Bundle r10) {
         /*
-            Method dump skipped, instructions count: 720
+            Method dump skipped, instructions count: 718
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.growth.ui.webview.GrowthWebViewChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         String str = this.t;
         int i = this.u;
-        fecj v = esmu.a.v();
+        fgrc v = evch.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        bklm bklmVar = this.v;
-        esmu esmuVar = (esmu) v.b;
-        esmuVar.d = 15;
-        esmuVar.b |= 2;
-        bklmVar.b(str, i, v);
+        bmsc bmscVar = this.v;
+        evch evchVar = (evch) v.b;
+        evchVar.d = 15;
+        evchVar.b |= 2;
+        bmscVar.b(str, i, v);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         String str = this.t;
         int i = this.u;
-        fecj v = esmu.a.v();
+        fgrc v = evch.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        bklm bklmVar = this.v;
-        esmu esmuVar = (esmu) v.b;
-        esmuVar.d = 16;
-        esmuVar.b |= 2;
-        bklmVar.b(str, i, v);
+        bmsc bmscVar = this.v;
+        evch evchVar = (evch) v.b;
+        evchVar.d = 16;
+        evchVar.b |= 2;
+        bmscVar.b(str, i, v);
     }
 
     public void onRetry(View view) {
         o(10);
         this.q.b();
-        this.y.execute(new Runnable() { // from class: bkoq
+        this.y.execute(new Runnable() { // from class: bmvh
             @Override // java.lang.Runnable
             public final void run() {
                 try {
@@ -297,7 +297,7 @@ public class GrowthWebViewChimeraActivity extends qet {
                 } catch (InterruptedException unused) {
                 }
                 final GrowthWebViewChimeraActivity growthWebViewChimeraActivity = GrowthWebViewChimeraActivity.this;
-                growthWebViewChimeraActivity.runOnUiThread(new Runnable() { // from class: bkof
+                growthWebViewChimeraActivity.runOnUiThread(new Runnable() { // from class: bmuw
                     @Override // java.lang.Runnable
                     public final void run() {
                         GrowthWebViewChimeraActivity growthWebViewChimeraActivity2 = GrowthWebViewChimeraActivity.this;

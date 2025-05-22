@@ -5,11 +5,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
-import defpackage.abzu;
-import defpackage.abzx;
+import defpackage.adzu;
+import defpackage.adzx;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class RevokePasswordRequirementsIntentOperation extends IntentOperation {
     public static PendingIntent a(Context context) {
@@ -27,7 +27,7 @@ public class RevokePasswordRequirementsIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        abzu.a(this).k(7);
-        abzx.f().g(this);
+        adzu.a(this).k(7);
+        adzx.f().g(this);
     }
 }

@@ -10,27 +10,27 @@ import android.webkit.WebSettings;
 import android.widget.LinearLayout;
 import com.google.android.chimera.WebView;
 import com.google.android.gms.R;
-import defpackage.asej;
-import defpackage.asmb;
-import defpackage.asmd;
-import defpackage.asne;
-import defpackage.asoe;
-import defpackage.asot;
-import defpackage.cwzv;
-import defpackage.cxaa;
-import defpackage.cxac;
-import defpackage.cxae;
-import defpackage.cxai;
-import defpackage.cxaj;
-import defpackage.cxak;
-import defpackage.cxay;
-import defpackage.qfp;
+import defpackage.auid;
+import defpackage.aupv;
+import defpackage.aupx;
+import defpackage.auqy;
+import defpackage.aury;
+import defpackage.ausn;
+import defpackage.czjt;
+import defpackage.czjy;
+import defpackage.czka;
+import defpackage.czkc;
+import defpackage.czkg;
+import defpackage.czkh;
+import defpackage.czki;
+import defpackage.czkw;
+import defpackage.ryt;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class RecaptchaChimeraActivity extends qfp {
+public class RecaptchaChimeraActivity extends ryt {
     public static final String j;
     public static final long k;
     public String l;
@@ -42,18 +42,18 @@ public class RecaptchaChimeraActivity extends qfp {
     public ResultReceiver r;
     public long s;
     public boolean t;
-    private cxay u = null;
+    private czkw u = null;
     private ScheduledExecutorService v;
 
     static {
-        asot.b("Recaptcha", asej.RECAPTCHA);
+        ausn.b("Recaptcha", auid.RECAPTCHA);
         j = "https://www.google.com/recaptcha/api2/mframe";
         k = TimeUnit.MINUTES.toMillis(2L);
     }
 
-    public final cxay a() {
+    public final czkw a() {
         if (this.u == null) {
-            this.u = new cxay();
+            this.u = new czkw();
         }
         return this.u;
     }
@@ -62,7 +62,7 @@ public class RecaptchaChimeraActivity extends qfp {
         synchronized (this) {
             ScheduledExecutorService scheduledExecutorService = this.v;
             if (scheduledExecutorService != null) {
-                ((asmb) scheduledExecutorService).schedule(runnable, j2, timeUnit);
+                ((aupv) scheduledExecutorService).schedule(runnable, j2, timeUnit);
             }
         }
     }
@@ -75,11 +75,11 @@ public class RecaptchaChimeraActivity extends qfp {
     }
 
     public final void f(StringBuilder sb, String str, boolean z) {
-        cwzv.a(sb, "mt", String.valueOf(System.currentTimeMillis()));
-        new asmd(9, new cxae(this, str, sb.toString(), z)).start();
+        czjt.a(sb, "mt", String.valueOf(System.currentTimeMillis()));
+        new aupx(9, new czkc(this, str, sb.toString(), z)).start();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void finish() {
         if (this.q != null) {
             g(0, 0, false);
@@ -95,11 +95,11 @@ public class RecaptchaChimeraActivity extends qfp {
     }
 
     public final void g(int i, int i2, boolean z) {
-        runOnUiThread(new cxac(this, i, i2, z));
+        runOnUiThread(new czka(this, i, i2, z));
     }
 
     public final void h(int i, int i2, boolean z) {
-        runOnUiThread(new cxaa(this, Math.min((int) (i * this.o), this.m), Math.min((int) (i2 * this.o), this.n), z));
+        runOnUiThread(new czjy(this, Math.min((int) (i * this.o), this.m), Math.min((int) (i2 * this.o), this.n), z));
     }
 
     public final void k() {
@@ -111,7 +111,7 @@ public class RecaptchaChimeraActivity extends qfp {
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Intent intent = getIntent();
@@ -131,25 +131,25 @@ public class RecaptchaChimeraActivity extends qfp {
         this.p = (LinearLayout) findViewById(R.id.recaptcha_loading_layout);
         WebView webView = (WebView) findViewById(R.id.recaptcha_webview);
         this.q = webView;
-        webView.setWebViewClient(new cxaj(this));
+        webView.setWebViewClient(new czkh(this));
         WebSettings settings = this.q.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setUseWideViewPort(true);
         settings.setSupportZoom(false);
         settings.setDisplayZoomControls(false);
         settings.setCacheMode(2);
-        this.q.addJavascriptInterface(new cxai(this), "RecaptchaEmbedder");
+        this.q.addJavascriptInterface(new czkg(this), "RecaptchaEmbedder");
         this.q.setVisibility(8);
-        if (!asoe.n(getResources()) && Build.VERSION.SDK_INT != 26) {
+        if (!aury.n(getResources()) && Build.VERSION.SDK_INT != 26) {
             setRequestedOrientation(1);
         }
-        this.v = new asmb(1, 9);
+        this.v = new aupv(1, 9);
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
         this.o = displayMetrics.density;
         this.m = displayMetrics.widthPixels;
-        this.n = (displayMetrics.heightPixels - asne.a(getContainerActivity())) - ((int) (this.o * 20.0f));
+        this.n = (displayMetrics.heightPixels - auqy.a(getContainerActivity())) - ((int) (this.o * 20.0f));
         k();
-        b(new cxak(this), k, TimeUnit.MILLISECONDS);
+        b(new czki(this), k, TimeUnit.MILLISECONDS);
         f(new StringBuilder(this.l), "frame", true);
     }
 }

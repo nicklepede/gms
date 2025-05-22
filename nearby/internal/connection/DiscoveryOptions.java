@@ -6,18 +6,18 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.Strategy;
 import com.google.android.gms.nearby.connection.v3.SafeParcelableDataElements;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cizs;
-import defpackage.cizt;
-import defpackage.ckdt;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.clhx;
+import defpackage.clhy;
+import defpackage.cmly;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class DiscoveryOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cizt();
+    public static final Parcelable.Creator CREATOR = new clhy();
     public Strategy a;
     public boolean b;
     public boolean c;
@@ -86,7 +86,7 @@ public final class DiscoveryOptions extends AbstractSafeParcelable {
         if (iArr != null) {
             discoveryOptions2.o = iArr;
         }
-        cizs.a(discoveryOptions2);
+        clhx.a(discoveryOptions2);
         return discoveryOptions2;
     }
 
@@ -96,7 +96,7 @@ public final class DiscoveryOptions extends AbstractSafeParcelable {
         }
         if (obj instanceof DiscoveryOptions) {
             DiscoveryOptions discoveryOptions = (DiscoveryOptions) obj;
-            if (arwb.b(this.a, discoveryOptions.a) && arwb.b(Boolean.valueOf(this.b), Boolean.valueOf(discoveryOptions.b)) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(discoveryOptions.c)) && arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(discoveryOptions.d)) && arwb.b(Boolean.valueOf(this.e), Boolean.valueOf(discoveryOptions.e)) && arwb.b(this.f, discoveryOptions.f) && arwb.b(Boolean.valueOf(this.g), Boolean.valueOf(discoveryOptions.g)) && arwb.b(Boolean.valueOf(this.h), Boolean.valueOf(discoveryOptions.h)) && arwb.b(Boolean.valueOf(this.i), Boolean.valueOf(discoveryOptions.i)) && arwb.b(Boolean.valueOf(this.j), Boolean.valueOf(discoveryOptions.j)) && arwb.b(Integer.valueOf(this.k), Integer.valueOf(discoveryOptions.k)) && arwb.b(Integer.valueOf(this.l), Integer.valueOf(discoveryOptions.l)) && Arrays.equals(this.m, discoveryOptions.m) && arwb.b(Long.valueOf(this.n), Long.valueOf(discoveryOptions.n)) && Arrays.equals(this.o, discoveryOptions.o) && arwb.b(Boolean.valueOf(this.p), Boolean.valueOf(discoveryOptions.p)) && arwb.b(Boolean.valueOf(this.q), Boolean.valueOf(discoveryOptions.q)) && arwb.b(Boolean.valueOf(this.r), Boolean.valueOf(discoveryOptions.r)) && arwb.b(Boolean.valueOf(this.s), Boolean.valueOf(discoveryOptions.s)) && arwb.b(Integer.valueOf(this.t), Integer.valueOf(discoveryOptions.t)) && arwb.b(this.u, discoveryOptions.u)) {
+            if (atyq.b(this.a, discoveryOptions.a) && atyq.b(Boolean.valueOf(this.b), Boolean.valueOf(discoveryOptions.b)) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(discoveryOptions.c)) && atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(discoveryOptions.d)) && atyq.b(Boolean.valueOf(this.e), Boolean.valueOf(discoveryOptions.e)) && atyq.b(this.f, discoveryOptions.f) && atyq.b(Boolean.valueOf(this.g), Boolean.valueOf(discoveryOptions.g)) && atyq.b(Boolean.valueOf(this.h), Boolean.valueOf(discoveryOptions.h)) && atyq.b(Boolean.valueOf(this.i), Boolean.valueOf(discoveryOptions.i)) && atyq.b(Boolean.valueOf(this.j), Boolean.valueOf(discoveryOptions.j)) && atyq.b(Integer.valueOf(this.k), Integer.valueOf(discoveryOptions.k)) && atyq.b(Integer.valueOf(this.l), Integer.valueOf(discoveryOptions.l)) && Arrays.equals(this.m, discoveryOptions.m) && atyq.b(Long.valueOf(this.n), Long.valueOf(discoveryOptions.n)) && Arrays.equals(this.o, discoveryOptions.o) && atyq.b(Boolean.valueOf(this.p), Boolean.valueOf(discoveryOptions.p)) && atyq.b(Boolean.valueOf(this.q), Boolean.valueOf(discoveryOptions.q)) && atyq.b(Boolean.valueOf(this.r), Boolean.valueOf(discoveryOptions.r)) && atyq.b(Boolean.valueOf(this.s), Boolean.valueOf(discoveryOptions.s)) && atyq.b(Integer.valueOf(this.t), Integer.valueOf(discoveryOptions.t)) && atyq.b(this.u, discoveryOptions.u)) {
                 return true;
             }
         }
@@ -122,34 +122,34 @@ public final class DiscoveryOptions extends AbstractSafeParcelable {
         Integer valueOf9 = Integer.valueOf(this.k);
         Integer valueOf10 = Integer.valueOf(this.l);
         byte[] bArr = this.m;
-        return String.format(locale, "DiscoveryOptions{strategy: %s, forwardUnrecognizedBluetoothDevices: %s, enableBluetooth: %s, enableBle: %s, lowPower: %s, fastAdvertisementServiceUuid: %s, enableWifiLan: %s, enableNfc: %s, enableWifiAware: %s, enableUwbRanging: %s, uwbChannel: %d, uwbPreambleIndex: %d, uwbAddress: %s, flowId: %d, discoveryMediums: %s, allowGattConnections: %s, enableV3Options: %s, allowBluetoothRadioToggling: %s, allowWifiRadioToggling: %s, powerLevel : %d, dataElementsFilters: %s}", strategy, valueOf, valueOf2, valueOf3, valueOf4, parcelUuid, valueOf5, valueOf6, valueOf7, valueOf8, valueOf9, valueOf10, bArr == null ? "null" : ckdt.b(bArr), Long.valueOf(this.n), Arrays.toString(this.o), Boolean.valueOf(this.p), Boolean.valueOf(this.q), Boolean.valueOf(this.r), Boolean.valueOf(this.s), Integer.valueOf(this.t), String.valueOf(this.u));
+        return String.format(locale, "DiscoveryOptions{strategy: %s, forwardUnrecognizedBluetoothDevices: %s, enableBluetooth: %s, enableBle: %s, lowPower: %s, fastAdvertisementServiceUuid: %s, enableWifiLan: %s, enableNfc: %s, enableWifiAware: %s, enableUwbRanging: %s, uwbChannel: %d, uwbPreambleIndex: %d, uwbAddress: %s, flowId: %d, discoveryMediums: %s, allowGattConnections: %s, enableV3Options: %s, allowBluetoothRadioToggling: %s, allowWifiRadioToggling: %s, powerLevel : %d, dataElementsFilters: %s}", strategy, valueOf, valueOf2, valueOf3, valueOf4, parcelUuid, valueOf5, valueOf6, valueOf7, valueOf8, valueOf9, valueOf10, bArr == null ? "null" : cmly.b(bArr), Long.valueOf(this.n), Arrays.toString(this.o), Boolean.valueOf(this.p), Boolean.valueOf(this.q), Boolean.valueOf(this.r), Boolean.valueOf(this.s), Integer.valueOf(this.t), String.valueOf(this.u));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.e(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.e(parcel, 8, this.g);
-        arxc.e(parcel, 9, this.h);
-        arxc.e(parcel, 10, this.i);
-        arxc.e(parcel, 11, this.j);
-        arxc.o(parcel, 12, this.k);
-        arxc.o(parcel, 13, this.l);
-        arxc.i(parcel, 14, this.m, false);
-        arxc.q(parcel, 15, this.n);
-        arxc.p(parcel, 16, this.o, false);
-        arxc.e(parcel, 17, this.p);
-        arxc.e(parcel, 18, this.q);
-        arxc.e(parcel, 19, this.r);
-        arxc.e(parcel, 20, this.s);
-        arxc.o(parcel, 21, this.t);
-        arxc.t(parcel, 22, this.u, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.e(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.e(parcel, 8, this.g);
+        atzr.e(parcel, 9, this.h);
+        atzr.e(parcel, 10, this.i);
+        atzr.e(parcel, 11, this.j);
+        atzr.o(parcel, 12, this.k);
+        atzr.o(parcel, 13, this.l);
+        atzr.i(parcel, 14, this.m, false);
+        atzr.q(parcel, 15, this.n);
+        atzr.p(parcel, 16, this.o, false);
+        atzr.e(parcel, 17, this.p);
+        atzr.e(parcel, 18, this.q);
+        atzr.e(parcel, 19, this.r);
+        atzr.e(parcel, 20, this.s);
+        atzr.o(parcel, 21, this.t);
+        atzr.t(parcel, 22, this.u, i, false);
+        atzr.c(parcel, a);
     }
 
     public DiscoveryOptions(Strategy strategy, boolean z, boolean z2, boolean z3, boolean z4, ParcelUuid parcelUuid, boolean z5, boolean z6, boolean z7, boolean z8, int i, int i2, byte[] bArr, long j, int[] iArr, boolean z9, boolean z10, boolean z11, boolean z12, int i3, SafeParcelableDataElements safeParcelableDataElements) {

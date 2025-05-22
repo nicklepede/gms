@@ -5,15 +5,15 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.people.data.AudienceMember;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cars;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cdai;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class LocationShare extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new cars();
+    public static final Parcelable.Creator CREATOR = new cdai();
     public final ShareTarget a;
     public final SharingCondition b;
     public int c;
@@ -47,7 +47,7 @@ public class LocationShare extends AbstractSafeParcelable implements ReflectedPa
         }
         if (obj instanceof LocationShare) {
             LocationShare locationShare = (LocationShare) obj;
-            if (arwb.b(b(), locationShare.b()) && c() == locationShare.c()) {
+            if (atyq.b(b(), locationShare.b()) && c() == locationShare.c()) {
                 return true;
             }
         }
@@ -61,11 +61,11 @@ public class LocationShare extends AbstractSafeParcelable implements ReflectedPa
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         ShareTarget shareTarget = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, shareTarget, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.o(parcel, 4, this.c);
-        arxc.e(parcel, 5, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, shareTarget, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.o(parcel, 4, this.c);
+        atzr.e(parcel, 5, this.d);
+        atzr.c(parcel, a);
     }
 }

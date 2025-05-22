@@ -8,31 +8,31 @@ import android.view.View;
 import com.google.android.gms.R;
 import com.google.android.gms.fido.authenticator.ui.LockscreenChimeraActivity;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.apsr;
-import defpackage.apta;
-import defpackage.asot;
-import defpackage.barq;
-import defpackage.basc;
-import defpackage.basd;
-import defpackage.bbgc;
-import defpackage.bcni;
-import defpackage.bstr;
-import defpackage.dnmt;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fnxn;
-import defpackage.fnyx;
-import defpackage.fnzb;
-import defpackage.fwcn;
-import defpackage.ild;
-import defpackage.qex;
+import defpackage.arvi;
+import defpackage.arvr;
+import defpackage.ausn;
+import defpackage.bcvm;
+import defpackage.bcvy;
+import defpackage.bcvz;
+import defpackage.bdjz;
+import defpackage.beov;
+import defpackage.bvbp;
+import defpackage.dpxc;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fqpp;
+import defpackage.fqqz;
+import defpackage.fqrd;
+import defpackage.fyyo;
+import defpackage.imt;
+import defpackage.ryb;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class LockscreenChimeraActivity extends qex {
-    public static final asot h = bcni.a("LockscreenChimeraActivity");
+public class LockscreenChimeraActivity extends ryb {
+    public static final ausn h = beov.a("LockscreenChimeraActivity");
     private static final long i = TimeUnit.MINUTES.toMillis(2);
     private CountDownTimer j;
 
@@ -44,75 +44,75 @@ public class LockscreenChimeraActivity extends qex {
         finish();
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         getContainerActivity().setShowWhenLocked(true);
         getContainerActivity().setTurnScreenOn(true);
         setTheme(R.style.FidoThemeLockScreen);
         super.onCreate(bundle);
         setContentView(R.layout.fido_lockscreen_activity);
-        findViewById(R.id.cancel).setOnClickListener(new View.OnClickListener() { // from class: bbga
+        findViewById(R.id.cancel).setOnClickListener(new View.OnClickListener() { // from class: bdjx
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 LockscreenChimeraActivity.this.j();
             }
         });
-        findViewById(R.id.continue_btn).setOnClickListener(new View.OnClickListener() { // from class: bbgb
+        findViewById(R.id.continue_btn).setOnClickListener(new View.OnClickListener() { // from class: bdjy
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 LockscreenChimeraActivity lockscreenChimeraActivity = LockscreenChimeraActivity.this;
-                ((KeyguardManager) lockscreenChimeraActivity.getSystemService("keyguard")).requestDismissKeyguard(lockscreenChimeraActivity.getContainerActivity(), new bbgd(lockscreenChimeraActivity));
+                ((KeyguardManager) lockscreenChimeraActivity.getSystemService("keyguard")).requestDismissKeyguard(lockscreenChimeraActivity.getContainerActivity(), new bdka(lockscreenChimeraActivity));
             }
         });
         setFinishOnTouchOutside(false);
         int intExtra = getIntent().getIntExtra("session_id", 0);
         if (intExtra != 0) {
             Context applicationContext = getApplicationContext();
-            List list = apta.n;
-            apta a = new apsr(applicationContext, "FIDO").a();
+            List list = arvr.n;
+            arvr a = new arvi(applicationContext, "FIDO").a();
             Context applicationContext2 = getApplicationContext();
-            basc bascVar = basc.TYPE_CABLE_V2_USER_SHOWN_FULL_SCREEN_NOTIFICATION;
-            if (fnxn.c()) {
-                fecj v = barq.a.v();
+            bcvy bcvyVar = bcvy.TYPE_CABLE_V2_USER_SHOWN_FULL_SCREEN_NOTIFICATION;
+            if (fqpp.c()) {
+                fgrc v = bcvm.a.v();
                 if (!v.b.L()) {
                     v.U();
                 }
-                fecp fecpVar = v.b;
-                barq barqVar = (barq) fecpVar;
-                barqVar.b |= 1;
-                barqVar.c = intExtra;
-                if (!fecpVar.L()) {
+                fgri fgriVar = v.b;
+                bcvm bcvmVar = (bcvm) fgriVar;
+                bcvmVar.b |= 1;
+                bcvmVar.c = intExtra;
+                if (!fgriVar.L()) {
                     v.U();
                 }
-                barq barqVar2 = (barq) v.b;
-                barqVar2.d = 300;
-                barqVar2.b |= 2;
-                fecj v2 = basd.a.v();
+                bcvm bcvmVar2 = (bcvm) v.b;
+                bcvmVar2.d = 300;
+                bcvmVar2.b |= 2;
+                fgrc v2 = bcvz.a.v();
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                basd basdVar = (basd) v2.b;
-                basdVar.c = bascVar.aH;
-                basdVar.b = 1 | basdVar.b;
-                basd basdVar2 = (basd) v2.Q();
+                bcvz bcvzVar = (bcvz) v2.b;
+                bcvzVar.c = bcvyVar.aH;
+                bcvzVar.b = 1 | bcvzVar.b;
+                bcvz bcvzVar2 = (bcvz) v2.Q();
                 if (!v.b.L()) {
                     v.U();
                 }
-                barq barqVar3 = (barq) v.b;
-                basdVar2.getClass();
-                barqVar3.u = basdVar2;
-                barqVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_IME_MULTI_LINE;
-                if (fnyx.d()) {
-                    bstr.v().f((barq) v.Q());
+                bcvm bcvmVar3 = (bcvm) v.b;
+                bcvzVar2.getClass();
+                bcvmVar3.u = bcvzVar2;
+                bcvmVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_IME_MULTI_LINE;
+                if (fqqz.d()) {
+                    bvbp.v().f((bcvm) v.Q());
                 } else {
-                    a.j(v.Q(), dnmt.b(applicationContext2, new fwcn())).d();
+                    a.j(v.Q(), dpxc.b(applicationContext2, new fyyo())).d();
                 }
             }
         }
-        this.j = new bbgc(this, i);
+        this.j = new bdjz(this, i);
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         CountDownTimer countDownTimer = this.j;
         if (countDownTimer != null) {
@@ -121,12 +121,12 @@ public class LockscreenChimeraActivity extends qex {
         super.onDestroy();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         KeyguardManager keyguardManager;
-        new ild(this).b();
+        new imt(this).b();
         super.onResume();
-        if (fnzb.a.a().w() && ((keyguardManager = (KeyguardManager) getSystemService("keyguard")) == null || !keyguardManager.isKeyguardLocked())) {
+        if (fqrd.a.lK().w() && ((keyguardManager = (KeyguardManager) getSystemService("keyguard")) == null || !keyguardManager.isKeyguardLocked())) {
             j();
         }
         this.j.start();

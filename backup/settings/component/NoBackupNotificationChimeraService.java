@@ -8,51 +8,51 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.ahhp;
-import defpackage.ahpv;
-import defpackage.ahpw;
-import defpackage.ahwd;
-import defpackage.aieb;
-import defpackage.aieq;
-import defpackage.aifm;
-import defpackage.ajlf;
-import defpackage.anxo;
-import defpackage.arxo;
-import defpackage.asbo;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.byln;
-import defpackage.dfee;
-import defpackage.dwae;
-import defpackage.ekiw;
-import defpackage.ekmw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fllq;
-import defpackage.flly;
-import defpackage.flom;
-import defpackage.flqi;
+import defpackage.ajif;
+import defpackage.ajql;
+import defpackage.ajqm;
+import defpackage.ajwt;
+import defpackage.aker;
+import defpackage.akfg;
+import defpackage.akgc;
+import defpackage.allx;
+import defpackage.apzg;
+import defpackage.auad;
+import defpackage.aued;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.cauf;
+import defpackage.dhpk;
+import defpackage.dymf;
+import defpackage.emwi;
+import defpackage.enai;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.foda;
+import defpackage.fodi;
+import defpackage.fofw;
+import defpackage.fohs;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class NoBackupNotificationChimeraService extends GmsTaskChimeraService {
-    public static final arxo a = ahwd.a("NoBackupNotification");
+    public static final auad a = ajwt.a("NoBackupNotification");
 
     public static void d(Context context, int i, boolean z) {
         long h = h(i);
-        long seconds = TimeUnit.MINUTES.toSeconds((int) fllq.a.a().k());
+        long seconds = TimeUnit.MINUTES.toSeconds((int) foda.a.lK().k());
         long seconds2 = TimeUnit.MINUTES.toSeconds(h);
         long seconds3 = TimeUnit.MINUTES.toSeconds(h) + seconds;
-        byjl a2 = byjl.a(context);
-        bykj bykjVar = new bykj();
-        bykjVar.t("no_backup_notification_service");
-        bykjVar.p = true;
-        bykjVar.u(z);
-        bykjVar.j = "com.google.android.gms.backup.component.NoBackupNotificationService";
-        bykjVar.e(seconds2, seconds3);
-        a2.f(bykjVar.b());
+        casd a2 = casd.a(context);
+        catb catbVar = new catb();
+        catbVar.t("no_backup_notification_service");
+        catbVar.p = true;
+        catbVar.u(z);
+        catbVar.j = "com.google.android.gms.backup.component.NoBackupNotificationService";
+        catbVar.e(seconds2, seconds3);
+        a2.f(catbVar.b());
         a.j("Scheduled task to run in %d seconds, overriding: %b", Long.valueOf(seconds2), Boolean.valueOf(z));
     }
 
@@ -73,12 +73,12 @@ public class NoBackupNotificationChimeraService extends GmsTaskChimeraService {
     }
 
     public static boolean f(Context context) {
-        aifm.a();
-        flqi.d();
-        if (flly.a.a().e() && Build.VERSION.SDK_INT >= fllq.f()) {
+        akgc.a();
+        fohs.d();
+        if (fodi.a.lK().e() && Build.VERSION.SDK_INT >= foda.f()) {
             Intent intent = new Intent();
             intent.setClassName(context, "com.google.android.gms.backup.component.NoBackupNotificationService");
-            if (context.getPackageManager().resolveService(intent, 0) != null && new ahhp(context).a() != null) {
+            if (context.getPackageManager().resolveService(intent, 0) != null && new ajif(context).a() != null) {
                 return true;
             }
         }
@@ -99,102 +99,102 @@ public class NoBackupNotificationChimeraService extends GmsTaskChimeraService {
     }
 
     private static long h(int i) {
-        String[] split = fllq.a.a().o().split(";");
+        String[] split = foda.a.lK().o().split(";");
         a.j("Current back off values: %s", Arrays.toString(split));
         return Long.valueOf(split[Math.min(i, split.length - 1)]).longValue();
     }
 
     private static void j(Context context) {
-        arxo arxoVar = a;
-        arxoVar.j("About to reset notification count", new Object[0]);
-        asbo f = asbo.f(context);
-        if (flom.c() && f == null) {
-            arxoVar.f("Unable to get NotificationManager.", new Object[0]);
+        auad auadVar = a;
+        auadVar.j("About to reset notification count", new Object[0]);
+        aued f = aued.f(context);
+        if (fofw.c() && f == null) {
+            auadVar.f("Unable to get NotificationManager.", new Object[0]);
             return;
         }
-        f.o("com.google.android.backup.notification.no_backup.tag", 3, dfee.BACKUP_INCOMPLETE);
+        f.o("com.google.android.backup.notification.no_backup.tag", 3, dhpk.BACKUP_INCOMPLETE);
         k(context);
         d(context, 0, true);
     }
 
     private static synchronized void k(Context context) {
         synchronized (NoBackupNotificationChimeraService.class) {
-            arxo arxoVar = a;
-            arxoVar.j("Resetting the number of times shown.", new Object[0]);
+            auad auadVar = a;
+            auadVar.j("Resetting the number of times shown.", new Object[0]);
             SharedPreferences sharedPreferences = context.getSharedPreferences("com.google.android.gms.backup.component.NoBackupNotificationService", 0);
             if (sharedPreferences.getInt("times_shown", 0) == 0 || sharedPreferences.edit().putInt("times_shown", 0).commit()) {
                 return;
             }
-            arxoVar.m("Failed to erase notification preferences", new Object[0]);
+            auadVar.m("Failed to erase notification preferences", new Object[0]);
         }
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         if (!f(this)) {
             a.j("Disabled, not running and not rescheduling", new Object[0]);
             return 2;
         }
-        if (!new ahpv(this).k()) {
+        if (!new ajql(this).j()) {
             a.j("Backup is disabled, rescheduling.", new Object[0]);
             e(this);
             return 0;
         }
-        asbo f = asbo.f(this);
-        if (flom.c() && f == null) {
+        aued f = aued.f(this);
+        if (fofw.c() && f == null) {
             a.f("Unable to send notifications.", new Object[0]);
             return 2;
         }
-        dfee dfeeVar = dfee.BACKUP_INCOMPLETE;
-        Intent f2 = aieq.f();
-        dwae.c(f2, ekiw.NO_BACKUP_NOTIFICATION);
+        dhpk dhpkVar = dhpk.BACKUP_INCOMPLETE;
+        Intent f2 = akfg.f();
+        dymf.c(f2, emwi.NO_BACKUP_NOTIFICATION);
         PendingIntent activity = PendingIntent.getActivity(this, 0, f2, 134217728);
-        flqi.a.a().b();
-        ahpw ahpwVar = ahpw.a;
-        Notification.Builder contentText = aieb.b(this).setContentIntent(activity).setAutoCancel(true).setContentTitle(getString(R.string.no_backup_notification_title)).setContentText(!ahpwVar.l(this) ? getString(R.string.no_backup_notification_text_missing_consent_bits) : getString(R.string.no_backup_notification_text));
-        if (flly.a.a().h()) {
+        fohs.a.lK().b();
+        ajqm ajqmVar = ajqm.a;
+        Notification.Builder contentText = aker.b(this).setContentIntent(activity).setAutoCancel(true).setContentTitle(getString(R.string.no_backup_notification_title)).setContentText(!ajqmVar.l(this) ? getString(R.string.no_backup_notification_text_missing_consent_bits) : getString(R.string.no_backup_notification_text));
+        if (fodi.a.lK().h()) {
             contentText.setStyle(new Notification.BigTextStyle());
         }
-        if (flly.e()) {
-            aieb.d(this, contentText);
+        if (fodi.e()) {
+            aker.d(this, contentText);
         } else {
-            contentText.setSmallIcon(anxo.a(this, 2131232932)).setColor(getColor(R.color.quantum_googblue600));
+            contentText.setSmallIcon(apzg.a(this, 2131232996)).setColor(getColor(R.color.quantum_googblue600));
         }
-        f.w("com.google.android.backup.notification.no_backup.tag", 3, dfeeVar, contentText.build());
+        f.w("com.google.android.backup.notification.no_backup.tag", 3, dhpkVar, contentText.build());
         int g = g(this);
         a.h("Showing notification, times: %d", Integer.valueOf(g));
         d(this, g, true);
-        boolean l = ahpwVar.l(this);
+        boolean l = ajqmVar.l(this);
         long h = h(g);
-        fecj v = ekmw.a.v();
+        fgrc v = enai.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ekmw ekmwVar = (ekmw) fecpVar;
-        ekmwVar.b |= 1;
-        ekmwVar.c = g;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        enai enaiVar = (enai) fgriVar;
+        enaiVar.b |= 1;
+        enaiVar.c = g;
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        ekmw ekmwVar2 = (ekmw) fecpVar2;
-        ekmwVar2.b = 2 | ekmwVar2.b;
-        ekmwVar2.d = h;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v.b;
+        enai enaiVar2 = (enai) fgriVar2;
+        enaiVar2.b = 2 | enaiVar2.b;
+        enaiVar2.d = h;
+        if (!fgriVar2.L()) {
             v.U();
         }
-        fecp fecpVar3 = v.b;
-        ekmw ekmwVar3 = (ekmw) fecpVar3;
-        ekmwVar3.b |= 4;
-        ekmwVar3.e = l;
-        if (!fecpVar3.L()) {
+        fgri fgriVar3 = v.b;
+        enai enaiVar3 = (enai) fgriVar3;
+        enaiVar3.b |= 4;
+        enaiVar3.e = l;
+        if (!fgriVar3.L()) {
             v.U();
         }
-        ekmw ekmwVar4 = (ekmw) v.b;
-        ekmwVar4.h = 1;
-        ekmwVar4.b |= 32;
-        ajlf.a((ekmw) v.Q());
+        enai enaiVar4 = (enai) v.b;
+        enaiVar4.h = 1;
+        enaiVar4.b |= 32;
+        allx.a((enai) v.Q());
         return 0;
     }
 }

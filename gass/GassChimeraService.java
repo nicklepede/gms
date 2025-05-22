@@ -6,28 +6,28 @@ import android.os.IBinder;
 import com.google.android.chimera.Service;
 import com.google.android.gms.common.internal.GetServiceRequest;
 import com.google.android.gms.gass.GassChimeraService;
-import defpackage.apta;
-import defpackage.bhsj;
-import defpackage.bhso;
-import defpackage.bxhk;
-import defpackage.bxhl;
-import defpackage.ejck;
-import defpackage.fogy;
+import defpackage.arvr;
+import defpackage.bjwy;
+import defpackage.bjxd;
+import defpackage.bzqa;
+import defpackage.bzqb;
+import defpackage.elpp;
+import defpackage.fqzo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class GassChimeraService extends Service {
-    public bhso a;
-    public bhsj b;
+    public bjxd a;
+    public bjwy b;
 
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
         if (intent.getAction().equals("com.google.android.gms.gass.START")) {
-            return new bxhl(this, 116, ejck.a, 3, new bxhk() { // from class: bhsk
-                @Override // defpackage.bxhk
-                public final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+            return new bzqb(this, 116, elpp.a, 3, new bzqa() { // from class: bjwz
+                @Override // defpackage.bzqa
+                public final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
                     GassChimeraService gassChimeraService = GassChimeraService.this;
-                    bxgjVar.c(new bhtv(gassChimeraService.a, gassChimeraService.b));
+                    bzozVar.c(new bjyk(gassChimeraService.a, gassChimeraService.b));
                 }
             });
         }
@@ -37,10 +37,10 @@ public class GassChimeraService extends Service {
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        if (fogy.e()) {
+        if (fqzo.e()) {
             Context applicationContext = getApplicationContext();
-            this.a = new bhso(applicationContext, apta.k(applicationContext, "GLINE"));
+            this.a = new bjxd(applicationContext, arvr.k(applicationContext, "GLINE"));
         }
-        this.b = bhsj.a(getApplicationContext());
+        this.b = bjwy.a(getApplicationContext());
     }
 }

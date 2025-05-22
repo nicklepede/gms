@@ -4,12 +4,12 @@ import android.os.Parcel;
 import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.Time;
 import com.google.android.gms.reminders.model.TimeEntity;
-import defpackage.cxeb;
-import defpackage.cxex;
+import defpackage.cznx;
+import defpackage.czot;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class TimeRef extends cxeb implements Time {
+public class TimeRef extends cznx implements Time {
     public TimeRef(DataHolder dataHolder, int i, String str) {
         super(dataHolder, i, str);
     }
@@ -38,7 +38,7 @@ public class TimeRef extends cxeb implements Time {
         return 0;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof Time)) {
             return false;
@@ -49,18 +49,18 @@ public class TimeRef extends cxeb implements Time {
         return TimeEntity.e(this, (Time) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return TimeEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new TimeEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxex.a(new TimeEntity(this), parcel);
+        czot.a(new TimeEntity(this), parcel);
     }
 }

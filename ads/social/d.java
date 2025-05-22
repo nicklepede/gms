@@ -4,26 +4,26 @@ import android.accounts.Account;
 import android.content.Context;
 import android.net.Uri;
 import android.text.TextUtils;
-import defpackage.asgt;
-import defpackage.blcf;
-import defpackage.bxjs;
-import defpackage.bxoi;
-import defpackage.bybl;
-import defpackage.bybm;
-import defpackage.bybu;
-import defpackage.bybx;
-import defpackage.bycb;
-import defpackage.byci;
-import defpackage.bycl;
-import defpackage.bycn;
-import defpackage.bycp;
-import defpackage.byct;
-import defpackage.bycw;
-import defpackage.bycx;
-import defpackage.byjl;
-import defpackage.eits;
-import defpackage.fjva;
-import defpackage.fjwt;
+import defpackage.aukn;
+import defpackage.bnix;
+import defpackage.bzsi;
+import defpackage.bzwy;
+import defpackage.cakd;
+import defpackage.cake;
+import defpackage.cakm;
+import defpackage.cakp;
+import defpackage.cakt;
+import defpackage.cala;
+import defpackage.cald;
+import defpackage.calf;
+import defpackage.calh;
+import defpackage.call;
+import defpackage.calo;
+import defpackage.calp;
+import defpackage.casd;
+import defpackage.elgx;
+import defpackage.fmle;
+import defpackage.fmmx;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -37,7 +37,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class d {
     private final Context a;
@@ -80,19 +80,19 @@ public final class d {
         return null;
     }
 
-    private final byct f(URL url, String str) {
-        bybu a = bybx.a(this.a);
+    private final call f(URL url, String str) {
+        cakm a = cakp.a(this.a);
         String url2 = url.toString();
-        bxoi bxoiVar = bxjs.b;
-        bybm bybmVar = bybm.a;
-        bybl byblVar = bybl.a;
-        bycl e = a.e(byci.e(url2, bxoiVar, bybmVar, byblVar), bycn.a, com.google.android.gms.ads.internal.util.future.e.a, -1, 266);
-        bycw a2 = bycb.a(bybmVar, byblVar);
+        bzwy bzwyVar = bzsi.b;
+        cake cakeVar = cake.a;
+        cakd cakdVar = cakd.a;
+        cald e = a.e(cala.e(url2, bzwyVar, cakeVar, cakdVar), calf.a, com.google.android.gms.ads.internal.util.future.e.a, -1, 266);
+        calo a2 = cakt.a(cakeVar, cakdVar);
         a2.a("Authorization", "Bearer ".concat(str));
-        e.m(new bycx(a2));
-        bycp e2 = e.e();
+        e.m(new calp(a2));
+        calh e2 = e.e();
         try {
-            return (byct) e2.a().get(fjva.b(), TimeUnit.MILLISECONDS);
+            return (call) e2.a().get(fmle.b(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e3) {
             if (e3 instanceof InterruptedException) {
                 Thread.currentThread().interrupt();
@@ -126,7 +126,7 @@ public final class d {
         com.google.android.gms.ads.internal.util.client.h.d("Running DSID refresh task.");
         if (!TextUtils.isEmpty(str) && Character.isDigit(str.charAt(str.length() - 1))) {
             com.google.android.gms.ads.internal.util.client.h.d("Cancelling old DRT task.");
-            byjl.a(this.a).d(str, "com.google.android.gms.ads.social.GcmSchedulerWakeupService");
+            casd.a(this.a).d(str, "com.google.android.gms.ads.social.GcmSchedulerWakeupService");
             return 2;
         }
         this.d.d();
@@ -147,29 +147,29 @@ public final class d {
     final boolean d(String str, c cVar) {
         try {
             String str2 = "1";
-            if (!fjwt.j()) {
-                if (!fjwt.a.a().i()) {
-                    return e(str, cVar, new URL(fjwt.i()), a.DORITOS_WITH_GAIA);
+            if (!fmmx.j()) {
+                if (!fmmx.a.lK().i()) {
+                    return e(str, cVar, new URL(fmmx.i()), a.DORITOS_WITH_GAIA);
                 }
                 if (!com.google.android.gms.ads.identifier.settings.b.c(this.a).m()) {
                     str2 = "0";
                 }
-                Uri.Builder buildUpon = Uri.parse(fjwt.i()).buildUpon();
-                buildUpon.appendQueryParameter(fjwt.g(), str2);
+                Uri.Builder buildUpon = Uri.parse(fmmx.i()).buildUpon();
+                buildUpon.appendQueryParameter(fmmx.g(), str2);
                 return e(str, cVar, new URL(buildUpon.build().toString()), a.DORITOS_WITH_GAIA);
             }
             boolean m = com.google.android.gms.ads.identifier.settings.b.c(this.a).m();
             String str3 = m ? "1" : "0";
             if (m) {
-                Uri.Builder buildUpon2 = Uri.parse(fjwt.i()).buildUpon();
-                buildUpon2.appendQueryParameter(fjwt.g(), str3);
+                Uri.Builder buildUpon2 = Uri.parse(fmmx.i()).buildUpon();
+                buildUpon2.appendQueryParameter(fmmx.g(), str3);
                 return e(str, cVar, new URL(buildUpon2.build().toString()), a.GAIALESS_DORITOS);
             }
-            Uri.Builder buildUpon3 = Uri.parse(fjwt.i()).buildUpon();
-            buildUpon3.appendQueryParameter(fjwt.g(), str3).appendQueryParameter(fjwt.f(), "1");
+            Uri.Builder buildUpon3 = Uri.parse(fmmx.i()).buildUpon();
+            buildUpon3.appendQueryParameter(fmmx.g(), str3).appendQueryParameter(fmmx.f(), "1");
             boolean e = e(str, cVar, new URL(buildUpon3.build().toString()), a.DORITOS_WITH_GAIA);
-            Uri.Builder buildUpon4 = Uri.parse(fjwt.i()).buildUpon();
-            buildUpon4.appendQueryParameter(fjwt.g(), str3).appendQueryParameter(fjwt.f(), "0");
+            Uri.Builder buildUpon4 = Uri.parse(fmmx.i()).buildUpon();
+            buildUpon4.appendQueryParameter(fmmx.g(), str3).appendQueryParameter(fmmx.f(), "0");
             return e(str, cVar, new URL(buildUpon4.build().toString()), a.GAIALESS_DORITOS) & e;
         } catch (MalformedURLException unused) {
             return false;
@@ -179,13 +179,13 @@ public final class d {
     final boolean e(String str, c cVar, URL url, a aVar) {
         boolean z;
         Map<String, List<String>> headerFields;
-        byct f;
-        eits d;
-        if (fjva.d()) {
+        call f;
+        elgx d;
+        if (fmle.d()) {
             int i = 0;
             while (true) {
                 try {
-                    String a = cVar.a(str, fjwt.h());
+                    String a = cVar.a(str, fmmx.h());
                     if (a == null || (f = f(url, a)) == null) {
                         break;
                     }
@@ -217,18 +217,18 @@ public final class d {
                 }
             }
         } else {
-            blcf blcfVar = new blcf(this.a);
+            bnix bnixVar = new bnix(this.a);
             int i5 = 0;
             while (true) {
                 try {
-                    String a3 = cVar.a(str, fjwt.h());
+                    String a3 = cVar.a(str, fmmx.h());
                     if (a3 == null) {
                         break;
                     }
                     try {
                         try {
-                            asgt.c(266, -1);
-                            HttpURLConnection b = blcfVar.b(url);
+                            aukn.c(266, -1);
+                            HttpURLConnection b = bnixVar.b(url);
                             if (b == null) {
                                 break;
                             }
@@ -236,7 +236,7 @@ public final class d {
                             try {
                                 b.setRequestProperty("Authorization", defpackage.a.x(a3, "Bearer "));
                                 int responseCode = b.getResponseCode();
-                                blcfVar.a(b, responseCode);
+                                bnixVar.a(b, responseCode);
                                 if (responseCode == 401) {
                                     try {
                                         cVar.b(a3);
@@ -267,7 +267,7 @@ public final class d {
                                 return z;
                             }
                         } finally {
-                            asgt.a();
+                            aukn.a();
                         }
                     } catch (IOException unused2) {
                         z = false;

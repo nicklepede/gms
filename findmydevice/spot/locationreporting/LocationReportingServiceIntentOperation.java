@@ -3,54 +3,54 @@ package com.google.android.gms.findmydevice.spot.locationreporting;
 import android.accounts.Account;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bebo;
-import defpackage.belh;
-import defpackage.belz;
-import defpackage.beup;
-import defpackage.dwvv;
-import defpackage.egjy;
-import defpackage.egmm;
-import defpackage.eufn;
-import defpackage.fecj;
-import defpackage.fobb;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bgda;
+import defpackage.bgmt;
+import defpackage.bgnl;
+import defpackage.bgwc;
+import defpackage.dzhv;
+import defpackage.eixb;
+import defpackage.eizp;
+import defpackage.ewvg;
+import defpackage.fgrc;
+import defpackage.fqsv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class LocationReportingServiceIntentOperation extends IntentOperation {
     public static final /* synthetic */ int a = 0;
-    private static final asot b = asot.b("LocReportingSvcIntOp", asej.FIND_MY_DEVICE_SPOT);
-    private final dwvv c;
-    private final belz d;
-    private final beup e;
+    private static final ausn b = ausn.b("LocReportingSvcIntOp", auid.FIND_MY_DEVICE_SPOT);
+    private final dzhv c;
+    private final bgnl d;
+    private final bgwc e;
 
     public LocationReportingServiceIntentOperation() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
     private static Account a(Intent intent) {
         return (Account) intent.getParcelableExtra("account");
     }
 
-    private static egjy b(String str) {
-        if (fobb.a.a().i()) {
-            return egmm.e("com/google/android/gms/findmydevice/spot/locationreporting/LocationReportingServiceIntentOperation", "beginSpan", 146, str);
+    private static eixb b(String str) {
+        if (fqsv.a.lK().i()) {
+            return eizp.e("com/google/android/gms/findmydevice/spot/locationreporting/LocationReportingServiceIntentOperation", "beginSpan", 146, str);
         }
         return null;
     }
 
-    private static eufn c(Intent intent) {
+    private static ewvg c(Intent intent) {
         String stringExtra = intent.getStringExtra("device_id");
         if (stringExtra == null) {
             return null;
         }
-        fecj v = eufn.a.v();
+        fgrc v = ewvg.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        ((eufn) v.b).b = stringExtra;
-        return (eufn) v.Q();
+        ((ewvg) v.b).b = stringExtra;
+        return (ewvg) v.Q();
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -71,9 +71,9 @@ public final class LocationReportingServiceIntentOperation extends IntentOperati
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.findmydevice.spot.locationreporting.LocationReportingServiceIntentOperation.onHandleIntent(android.content.Intent):void");
     }
 
-    public LocationReportingServiceIntentOperation(belh belhVar) {
-        this.c = belhVar.E();
-        this.d = belhVar.q();
-        this.e = belhVar.v();
+    public LocationReportingServiceIntentOperation(bgmt bgmtVar) {
+        this.c = bgmtVar.E();
+        this.d = bgmtVar.q();
+        this.e = bgmtVar.v();
     }
 }

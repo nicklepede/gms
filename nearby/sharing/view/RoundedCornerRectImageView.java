@@ -7,9 +7,9 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import defpackage.crno;
+import defpackage.ctwt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RoundedCornerRectImageView extends AppCompatImageView {
     private final float a;
@@ -27,14 +27,14 @@ public class RoundedCornerRectImageView extends AppCompatImageView {
         Paint paint3 = new Paint(0);
         this.e = paint3;
         this.b = new Path();
-        this.a = crno.f(context, 16.0f);
+        this.a = ctwt.f(context, 16.0f);
         paint.setColor(-1728053248);
         paint.setStyle(Paint.Style.FILL);
-        paint3.setColor(crno.d(context));
+        paint3.setColor(ctwt.d(context));
         paint3.setStyle(Paint.Style.STROKE);
-        paint3.setStrokeWidth(crno.f(context, 1.0f));
+        paint3.setStrokeWidth(ctwt.f(context, 1.0f));
         paint2.setColor(-1);
-        paint2.setTextSize(crno.f(context, 20.0f));
+        paint2.setTextSize(ctwt.f(context, 20.0f));
         paint2.setTextAlign(Paint.Align.CENTER);
     }
 
@@ -68,14 +68,14 @@ public class RoundedCornerRectImageView extends AppCompatImageView {
         Paint paint3 = new Paint(0);
         this.e = paint3;
         this.b = new Path();
-        this.a = crno.f(context, 16.0f);
+        this.a = ctwt.f(context, 16.0f);
         paint.setColor(-1728053248);
         paint.setStyle(Paint.Style.FILL);
-        paint3.setColor(crno.d(context));
+        paint3.setColor(ctwt.d(context));
         paint3.setStyle(Paint.Style.STROKE);
-        paint3.setStrokeWidth(crno.f(context, 1.0f));
+        paint3.setStrokeWidth(ctwt.f(context, 1.0f));
         paint2.setColor(-1);
-        paint2.setTextSize(crno.f(context, 20.0f));
+        paint2.setTextSize(ctwt.f(context, 20.0f));
         paint2.setTextAlign(Paint.Align.CENTER);
     }
 
@@ -88,14 +88,14 @@ public class RoundedCornerRectImageView extends AppCompatImageView {
         Paint paint3 = new Paint(0);
         this.e = paint3;
         this.b = new Path();
-        this.a = crno.f(context, 16.0f);
+        this.a = ctwt.f(context, 16.0f);
         paint.setColor(-1728053248);
         paint.setStyle(Paint.Style.FILL);
-        paint3.setColor(crno.d(context));
+        paint3.setColor(ctwt.d(context));
         paint3.setStyle(Paint.Style.STROKE);
-        paint3.setStrokeWidth(crno.f(context, 1.0f));
+        paint3.setStrokeWidth(ctwt.f(context, 1.0f));
         paint2.setColor(-1);
-        paint2.setTextSize(crno.f(context, 20.0f));
+        paint2.setTextSize(ctwt.f(context, 20.0f));
         paint2.setTextAlign(Paint.Align.CENTER);
     }
 }

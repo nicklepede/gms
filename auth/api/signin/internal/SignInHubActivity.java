@@ -8,12 +8,12 @@ import android.view.accessibility.AccessibilityEvent;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.SignInAccount;
 import com.google.android.gms.common.api.Status;
+import defpackage.abpm;
+import defpackage.abpw;
 import defpackage.dm;
-import defpackage.jti;
-import defpackage.zpm;
-import defpackage.zpw;
+import defpackage.jzx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SignInHubActivity extends dm {
     private static boolean m = false;
@@ -24,7 +24,7 @@ public class SignInHubActivity extends dm {
     private boolean p;
 
     private final void c() {
-        jti.a(this).c(0, null, new zpw(this));
+        jzx.a(this).c(0, null, new abpw(this));
         m = false;
     }
 
@@ -59,7 +59,7 @@ public class SignInHubActivity extends dm {
         return true;
     }
 
-    @Override // defpackage.dm, defpackage.aab, android.app.Activity
+    @Override // defpackage.dm, defpackage.aag, android.app.Activity
     protected final void onActivityResult(int i, int i2, Intent intent) {
         GoogleSignInAccount googleSignInAccount;
         if (this.n) {
@@ -72,7 +72,7 @@ public class SignInHubActivity extends dm {
         if (intent != null) {
             SignInAccount signInAccount = (SignInAccount) intent.getParcelableExtra("signInAccount");
             if (signInAccount != null && (googleSignInAccount = signInAccount.b) != null) {
-                zpm.a(this).c(this.o.b, googleSignInAccount);
+                abpm.a(this).c(this.o.b, googleSignInAccount);
                 intent.removeExtra("signInAccount");
                 intent.putExtra("googleSignInAccount", googleSignInAccount);
                 this.p = true;
@@ -93,7 +93,7 @@ public class SignInHubActivity extends dm {
         d(8);
     }
 
-    @Override // defpackage.dm, defpackage.aab, defpackage.go, android.app.Activity
+    @Override // defpackage.dm, defpackage.aag, defpackage.go, android.app.Activity
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Intent intent = getIntent();
@@ -161,7 +161,7 @@ public class SignInHubActivity extends dm {
         m = false;
     }
 
-    @Override // defpackage.aab, defpackage.go, android.app.Activity
+    @Override // defpackage.aag, defpackage.go, android.app.Activity
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBoolean("signingInGoogleApiClients", this.p);

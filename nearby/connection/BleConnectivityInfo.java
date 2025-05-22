@@ -4,20 +4,20 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cfec;
-import defpackage.cfey;
-import defpackage.cffb;
-import defpackage.eigd;
-import defpackage.eiig;
+import defpackage.atzr;
+import defpackage.chlo;
+import defpackage.chmk;
+import defpackage.chmn;
+import defpackage.ekti;
+import defpackage.ekvl;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class BleConnectivityInfo extends AbstractSafeParcelable implements cfey {
-    public static final Parcelable.Creator CREATOR = new cfec();
+public class BleConnectivityInfo extends AbstractSafeParcelable implements chmk {
+    public static final Parcelable.Creator CREATOR = new chlo();
     public final byte[] a;
     public final byte[] b;
     public final byte[] c;
@@ -32,7 +32,7 @@ public class BleConnectivityInfo extends AbstractSafeParcelable implements cfey 
         this.e = bArr5;
     }
 
-    @Override // defpackage.cfey
+    @Override // defpackage.chmk
     public final int a() {
         return 4;
     }
@@ -87,7 +87,7 @@ public class BleConnectivityInfo extends AbstractSafeParcelable implements cfey 
         return (byte[]) bArr.clone();
     }
 
-    @Override // defpackage.cffa
+    @Override // defpackage.chmm
     public final byte[] g() {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try {
@@ -104,20 +104,20 @@ public class BleConnectivityInfo extends AbstractSafeParcelable implements cfey 
             int i2 = true != z2 ? 0 : 32;
             byteArrayOutputStream.write((true != z4 ? 0 : 8) | i | i2 | (true != z3 ? 0 : 16));
             if (z) {
-                eiig.x(bArr);
+                ekvl.y(bArr);
                 byteArrayOutputStream.write(bArr);
             }
             if (z2) {
-                eiig.x(bArr2);
+                ekvl.y(bArr2);
                 byteArrayOutputStream.write((byte) bArr2.length);
                 byteArrayOutputStream.write(bArr2);
             }
             if (z3) {
-                eiig.x(bArr3);
+                ekvl.y(bArr3);
                 byteArrayOutputStream.write(bArr3);
             }
             if (z4) {
-                eiig.x(bArr4);
+                ekvl.y(bArr4);
                 byteArrayOutputStream.write(bArr4);
             }
             byte[] bArr5 = this.c;
@@ -126,7 +126,7 @@ public class BleConnectivityInfo extends AbstractSafeParcelable implements cfey 
             }
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             byteArrayOutputStream.reset();
-            byteArrayOutputStream.write(cffb.g(20, byteArray.length));
+            byteArrayOutputStream.write(chmn.g(20, byteArray.length));
             byteArrayOutputStream.write(byteArray);
             return byteArrayOutputStream.toByteArray();
         } catch (IOException unused) {
@@ -151,7 +151,7 @@ public class BleConnectivityInfo extends AbstractSafeParcelable implements cfey 
                 }
                 sb.append(String.format("%02x", Byte.valueOf(b)));
             }
-            d = eigd.d(sb.toString());
+            d = ekti.d(sb.toString());
         } else {
             d = null;
         }
@@ -167,12 +167,12 @@ public class BleConnectivityInfo extends AbstractSafeParcelable implements cfey 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, d(), false);
-        arxc.i(parcel, 2, c(), false);
-        arxc.i(parcel, 3, b(), false);
-        arxc.i(parcel, 4, f(), false);
-        arxc.i(parcel, 5, e(), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, d(), false);
+        atzr.i(parcel, 2, c(), false);
+        atzr.i(parcel, 3, b(), false);
+        atzr.i(parcel, 4, f(), false);
+        atzr.i(parcel, 5, e(), false);
+        atzr.c(parcel, a);
     }
 }

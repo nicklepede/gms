@@ -7,16 +7,16 @@ import com.google.android.gms.car.CarActivityLayoutParams;
 import com.google.android.gms.car.display.CarRegionGroup;
 import com.google.android.gms.car.display.CarRegionId;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.alag;
-import defpackage.arxc;
-import defpackage.eitj;
+import defpackage.anbr;
+import defpackage.atzr;
+import defpackage.elgo;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CarActivityRegionLayoutConfig extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new alag();
+    public static final Parcelable.Creator CREATOR = new anbr();
     public final Intent a;
     public final Intent b;
     public final CarRegionId c;
@@ -59,13 +59,13 @@ public class CarActivityRegionLayoutConfig extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.y(parcel, 6, eitj.i(this.f), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.y(parcel, 6, elgo.i(this.f), false);
+        atzr.c(parcel, a);
     }
 }

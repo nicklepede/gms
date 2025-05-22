@@ -3,40 +3,40 @@ package com.google.android.gms.location.geofencer.manager;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bzwa;
-import defpackage.bzxp;
-import defpackage.fvbo;
+import defpackage.atzr;
+import defpackage.ccer;
+import defpackage.ccgg;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class GeofenceInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bzxp();
+    public static final Parcelable.Creator CREATOR = new ccgg();
     public final GeofenceRequest a;
-    public final bzwa b;
+    public final ccer b;
     public final boolean c;
 
-    public GeofenceInfo(GeofenceRequest geofenceRequest, bzwa bzwaVar, boolean z) {
-        fvbo.f(geofenceRequest, "request");
-        fvbo.f(bzwaVar, "state");
+    public GeofenceInfo(GeofenceRequest geofenceRequest, ccer ccerVar, boolean z) {
+        fxxm.f(geofenceRequest, "request");
+        fxxm.f(ccerVar, "state");
         this.a = geofenceRequest;
-        this.b = bzwaVar;
+        this.b = ccerVar;
         this.c = z;
     }
 
-    public static /* synthetic */ GeofenceInfo a(GeofenceInfo geofenceInfo, GeofenceRequest geofenceRequest, bzwa bzwaVar, boolean z, int i) {
+    public static /* synthetic */ GeofenceInfo a(GeofenceInfo geofenceInfo, GeofenceRequest geofenceRequest, ccer ccerVar, boolean z, int i) {
         if ((i & 1) != 0) {
             geofenceRequest = geofenceInfo.a;
         }
         if ((i & 2) != 0) {
-            bzwaVar = geofenceInfo.b;
+            ccerVar = geofenceInfo.b;
         }
         if ((i & 4) != 0) {
             z = geofenceInfo.c;
         }
-        fvbo.f(geofenceRequest, "request");
-        fvbo.f(bzwaVar, "state");
-        return new GeofenceInfo(geofenceRequest, bzwaVar, z);
+        fxxm.f(geofenceRequest, "request");
+        fxxm.f(ccerVar, "state");
+        return new GeofenceInfo(geofenceRequest, ccerVar, z);
     }
 
     public final boolean equals(Object obj) {
@@ -47,7 +47,7 @@ public final class GeofenceInfo extends AbstractSafeParcelable {
             return false;
         }
         GeofenceInfo geofenceInfo = (GeofenceInfo) obj;
-        return fvbo.n(this.a, geofenceInfo.a) && this.b == geofenceInfo.b && this.c == geofenceInfo.c;
+        return fxxm.n(this.a, geofenceInfo.a) && this.b == geofenceInfo.b && this.c == geofenceInfo.c;
     }
 
     public final int hashCode() {
@@ -60,12 +60,12 @@ public final class GeofenceInfo extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "parcel");
+        fxxm.f(parcel, "parcel");
         GeofenceRequest geofenceRequest = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, geofenceRequest, i, false);
-        arxc.o(parcel, 2, this.b.a());
-        arxc.e(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, geofenceRequest, i, false);
+        atzr.o(parcel, 2, this.b.a());
+        atzr.e(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 }

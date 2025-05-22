@@ -5,36 +5,36 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asoe;
-import defpackage.asot;
-import defpackage.cyru;
-import defpackage.cyxy;
-import defpackage.cyxz;
-import defpackage.cyya;
-import defpackage.czbu;
-import defpackage.czdh;
-import defpackage.czdx;
-import defpackage.czeb;
-import defpackage.czed;
-import defpackage.deqr;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.feep;
-import defpackage.frto;
-import defpackage.frtq;
+import defpackage.auid;
+import defpackage.aury;
+import defpackage.ausn;
+import defpackage.dbbs;
+import defpackage.dbhw;
+import defpackage.dbhx;
+import defpackage.dbhy;
+import defpackage.dbls;
+import defpackage.dbnf;
+import defpackage.dbnv;
+import defpackage.dbnz;
+import defpackage.dbob;
+import defpackage.dhbu;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgti;
+import defpackage.fuoh;
+import defpackage.fuoj;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SnetLaunchChimeraIntentService extends IntentOperation {
     public static final /* synthetic */ int a = 0;
     private static final String b = "SnetLaunchChimeraIntentService";
     private String c;
     private String d;
-    private czbu e;
+    private dbls e;
     private ArrayList f;
     private String g;
     private Bundle h;
@@ -42,12 +42,12 @@ public class SnetLaunchChimeraIntentService extends IntentOperation {
     private ArrayList j;
 
     static {
-        asot.b(b, asej.SECURITY);
+        ausn.b(b, auid.SECURITY);
     }
 
     final void a(Context context, Intent intent) {
         char c = 65535;
-        this.e = new czbu(context, intent.getIntExtra("snet.intent.extra.GMS_CORE_VERSION", -1));
+        this.e = new dbls(context, intent.getIntExtra("snet.intent.extra.GMS_CORE_VERSION", -1));
         this.c = intent.getStringExtra("snet.intent.extra.UUID");
         this.d = intent.getStringExtra("snet.intent.extra.SHARED_UUID");
         this.f = intent.getStringArrayListExtra("snet.intent.extra.SNET_API_PACKAGES");
@@ -62,14 +62,14 @@ public class SnetLaunchChimeraIntentService extends IntentOperation {
         this.j = intent.getParcelableArrayListExtra("snet.intent.extra.DEX_INFO_BUNDLES");
         try {
             if (this.g != null) {
-                Bundle a2 = cyru.a(context);
+                Bundle a2 = dbbs.a(context);
                 if (!TextUtils.isEmpty(this.c)) {
                     a2.putString("snet_uuid", this.c);
                 }
                 if (!TextUtils.isEmpty(this.d)) {
                     a2.putString("snet_shared_uuid", this.d);
                 }
-                a2.putBoolean("snet_is_sidewinder_device", asoe.c(context));
+                a2.putBoolean("snet_is_sidewinder_device", aury.c(context));
                 if ("com.google.android.gms.security.snet.ACTION_IDLE_MODE".equals(this.g)) {
                     a2.putCharSequenceArray("snet_upload_requested_apks", this.i);
                 }
@@ -86,64 +86,64 @@ public class SnetLaunchChimeraIntentService extends IntentOperation {
                     c = 1;
                 }
                 if (c == 0) {
-                    asot asotVar = czdx.a;
-                    czdh czdhVar = new czdh(a2);
-                    if (czdx.d(czdhVar)) {
+                    ausn ausnVar = dbnv.a;
+                    dbnf dbnfVar = new dbnf(a2);
+                    if (dbnv.d(dbnfVar)) {
                         try {
-                            byte[] f = czdhVar.f();
+                            byte[] f = dbnfVar.f();
                             if (f != null) {
-                                cyya cyyaVar = cyya.a;
+                                dbhy dbhyVar = dbhy.a;
                                 int length = f.length;
-                                febw febwVar = febw.a;
-                                feep feepVar = feep.a;
-                                fecp y = fecp.y(cyyaVar, f, 0, length, febw.a);
-                                fecp.M(y);
-                                Iterator it = ((cyya) y).b.iterator();
+                                fgqp fgqpVar = fgqp.a;
+                                fgti fgtiVar = fgti.a;
+                                fgri y = fgri.y(dbhyVar, f, 0, length, fgqp.a);
+                                fgri.M(y);
+                                Iterator it = ((dbhy) y).b.iterator();
                                 while (true) {
                                     if (!it.hasNext()) {
                                         break;
                                     }
-                                    cyxz cyxzVar = ((cyxy) it.next()).c;
-                                    if (cyxzVar == null) {
-                                        cyxzVar = cyxz.a;
+                                    dbhx dbhxVar = ((dbhw) it.next()).c;
+                                    if (dbhxVar == null) {
+                                        dbhxVar = dbhx.a;
                                     }
-                                    if ("network_watchlist_report".equals(cyxzVar.b)) {
-                                        byte[] f2 = czdhVar.f();
+                                    if ("network_watchlist_report".equals(dbhxVar.b)) {
+                                        byte[] f2 = dbnfVar.f();
                                         if (f2 != null) {
-                                            czed.e(context, f2);
+                                            dbob.e(context, f2);
                                         }
                                     }
                                 }
                             }
                         } catch (Throwable th) {
-                            ((ejhf) ((ejhf) ((ejhf) czdx.a.i()).s(th)).ah((char) 9589)).x("Error while getting watchlist report");
+                            ((eluo) ((eluo) ((eluo) dbnv.a.i()).s(th)).ai((char) 9591)).x("Error while getting watchlist report");
                         }
                     }
-                    long a3 = new czeb(context).a();
+                    long a3 = new dbnz(context).a();
                     if (a3 != -1 && a3 + a2.getLong("snet_idle_mode_wake_interval_ms") >= System.currentTimeMillis()) {
-                        frto.c();
+                        fuoh.c();
                     }
-                    deqr deqrVar = new deqr(context, 1, String.valueOf(czdx.class.getCanonicalName()).concat(":SnetIdle"));
-                    czdx czdxVar = new czdx(context, czdhVar);
+                    dhbu dhbuVar = new dhbu(context, 1, String.valueOf(dbnv.class.getCanonicalName()).concat(":SnetIdle"));
+                    dbnv dbnvVar = new dbnv(context, dbnfVar);
                     try {
-                        deqrVar.c(czdxVar.c.b.a("watchdog_idle_mode_timeout_ms", 600000L));
-                        czdxVar.b();
+                        dhbuVar.c(dbnvVar.c.b.a("watchdog_idle_mode_timeout_ms", 600000L));
+                        dbnvVar.b();
                         try {
-                            deqrVar.g();
+                            dhbuVar.g();
                         } catch (RuntimeException e) {
-                            czdxVar.d.d(e);
+                            dbnvVar.d.d(e);
                         }
                     } finally {
                     }
-                } else if (c == 1 && frtq.i()) {
-                    czdx.a(context, a2);
+                } else if (c == 1 && fuoj.i()) {
+                    dbnv.a(context, a2);
                 }
             }
         } finally {
             try {
             } finally {
                 try {
-                    if (frtq.s()) {
+                    if (fuoj.s()) {
                         SnetWatchdogTaskService.d(context);
                     } else {
                         SnetWatchdogChimeraIntentService.a(context, this.g);
@@ -165,14 +165,14 @@ public class SnetLaunchChimeraIntentService extends IntentOperation {
             a(this, intent);
             return;
         }
-        deqr deqrVar = new deqr(this, 1, b, null, "com.google.android.gms");
-        deqrVar.j(false);
+        dhbu dhbuVar = new dhbu(this, 1, b, null, "com.google.android.gms");
+        dhbuVar.j(false);
         try {
-            deqrVar.c(SnetWatchdogTaskService.a);
+            dhbuVar.c(SnetWatchdogTaskService.a);
             a(this, intent);
         } catch (Throwable unused) {
         }
-        deqrVar.g();
+        dhbuVar.g();
     }
 
     @Override // com.google.android.chimera.IntentOperation

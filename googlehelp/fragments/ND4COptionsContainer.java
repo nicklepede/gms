@@ -16,26 +16,26 @@ import com.google.android.gms.R;
 import com.google.android.gms.googlehelp.common.HelpConfig;
 import com.google.android.gms.googlehelp.fragments.ND4COptionsContainer;
 import com.google.android.gms.googlehelp.helpactivities.HelpChimeraActivity;
-import defpackage.asnz;
-import defpackage.asot;
-import defpackage.bivk;
-import defpackage.bivr;
-import defpackage.bivs;
-import defpackage.bjaw;
-import defpackage.bjbk;
-import defpackage.bjda;
-import defpackage.bjdb;
-import defpackage.bjdc;
-import defpackage.fecj;
-import defpackage.fhfd;
-import defpackage.fhfx;
-import defpackage.fhgb;
-import defpackage.fhgc;
-import defpackage.fhgd;
-import defpackage.fhge;
-import defpackage.foof;
+import defpackage.aurt;
+import defpackage.ausn;
+import defpackage.bkzz;
+import defpackage.blag;
+import defpackage.blah;
+import defpackage.blfl;
+import defpackage.blfz;
+import defpackage.blhp;
+import defpackage.blhq;
+import defpackage.blhr;
+import defpackage.fgrc;
+import defpackage.fjva;
+import defpackage.fjvu;
+import defpackage.fjvy;
+import defpackage.fjvz;
+import defpackage.fjwa;
+import defpackage.fjwb;
+import defpackage.frgy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ND4COptionsContainer extends LinearLayout {
     public ND4COptionsContainer(Context context) {
@@ -54,117 +54,117 @@ public final class ND4COptionsContainer extends LinearLayout {
         char c2;
         boolean z;
         String str4;
-        asot asotVar = bjaw.a;
-        if (bivk.b(foof.d())) {
-            fecj v = bjda.a.v();
+        ausn ausnVar = blfl.a;
+        if (bkzz.b(frgy.d())) {
+            fgrc v = blhp.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            bjda bjdaVar = (bjda) v.b;
-            bjdaVar.c = 25;
-            bjdaVar.b |= 1;
-            bjda bjdaVar2 = (bjda) v.Q();
-            HelpConfig hM = helpChimeraActivity.hM();
-            fecj v2 = bjdb.a.v();
+            blhp blhpVar = (blhp) v.b;
+            blhpVar.c = 25;
+            blhpVar.b |= 1;
+            blhp blhpVar2 = (blhp) v.Q();
+            HelpConfig ic = helpChimeraActivity.ic();
+            fgrc v2 = blhq.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            bjdb bjdbVar = (bjdb) v2.b;
-            bjdaVar2.getClass();
-            bjdbVar.d = bjdaVar2;
-            bjdbVar.c = 3;
-            bjaw.J(helpChimeraActivity, hM, v2);
+            blhq blhqVar = (blhq) v2.b;
+            blhpVar2.getClass();
+            blhqVar.d = blhpVar2;
+            blhqVar.c = 3;
+            blfl.J(helpChimeraActivity, ic, v2);
         }
-        asot asotVar2 = bjbk.a;
-        fecj v3 = bjdc.a.v();
+        ausn ausnVar2 = blfz.a;
+        fgrc v3 = blhr.a.v();
         if (!v3.b.L()) {
             v3.U();
         }
-        bjdc bjdcVar = (bjdc) v3.b;
-        bjdcVar.i = 201;
-        bjdcVar.b |= 256;
-        bjbk.E(helpChimeraActivity, v3, asnz.a);
+        blhr blhrVar = (blhr) v3.b;
+        blhrVar.i = 201;
+        blhrVar.b |= 256;
+        blfz.E(helpChimeraActivity, v3, aurt.a);
         HelpConfig helpConfig = helpChimeraActivity.W;
-        fhfx fhfxVar = helpConfig.j;
+        fjvu fjvuVar = helpConfig.j;
         String str5 = "";
-        if (fhfxVar == null) {
+        if (fjvuVar == null) {
             str = "";
         } else {
-            fhgd fhgdVar = fhfxVar.f;
-            if (fhgdVar == null) {
-                fhgdVar = fhgd.a;
+            fjwa fjwaVar = fjvuVar.f;
+            if (fjwaVar == null) {
+                fjwaVar = fjwa.a;
             }
-            fhgc fhgcVar = fhgdVar.c;
-            if (fhgcVar == null) {
-                fhgcVar = fhgc.a;
+            fjvz fjvzVar = fjwaVar.c;
+            if (fjvzVar == null) {
+                fjvzVar = fjvz.a;
             }
-            str = fhgcVar.b;
+            str = fjvzVar.b;
         }
-        fhfx fhfxVar2 = helpConfig.j;
-        if (fhfxVar2 == null) {
+        fjvu fjvuVar2 = helpConfig.j;
+        if (fjvuVar2 == null) {
             str2 = "";
         } else {
-            fhgd fhgdVar2 = fhfxVar2.f;
-            if (fhgdVar2 == null) {
-                fhgdVar2 = fhgd.a;
+            fjwa fjwaVar2 = fjvuVar2.f;
+            if (fjwaVar2 == null) {
+                fjwaVar2 = fjwa.a;
             }
-            fhge fhgeVar = fhgdVar2.d;
-            if (fhgeVar == null) {
-                fhgeVar = fhge.a;
+            fjwb fjwbVar = fjwaVar2.d;
+            if (fjwbVar == null) {
+                fjwbVar = fjwb.a;
             }
-            str2 = fhgeVar.b;
+            str2 = fjwbVar.b;
         }
         if (!helpConfig.D() && TextUtils.isEmpty(str2) && TextUtils.isEmpty(str)) {
             ((TextView) findViewById(R.id.gh_retry_message)).setVisibility(0);
             return;
         }
         if (helpConfig.D()) {
-            fhfx fhfxVar3 = helpConfig.j;
-            if (fhfxVar3 == null) {
+            fjvu fjvuVar3 = helpConfig.j;
+            if (fjvuVar3 == null) {
                 z = false;
             } else {
-                fhgd fhgdVar3 = fhfxVar3.f;
-                if (fhgdVar3 == null) {
-                    fhgdVar3 = fhgd.a;
+                fjwa fjwaVar3 = fjvuVar3.f;
+                if (fjwaVar3 == null) {
+                    fjwaVar3 = fjwa.a;
                 }
-                fhgb fhgbVar = fhgdVar3.e;
-                if (fhgbVar == null) {
-                    fhgbVar = fhgb.a;
+                fjvy fjvyVar = fjwaVar3.e;
+                if (fjvyVar == null) {
+                    fjvyVar = fjvy.a;
                 }
-                z = fhgbVar.b;
+                z = fjvyVar.b;
             }
-            fhfx fhfxVar4 = helpConfig.j;
-            if (fhfxVar4 == null) {
+            fjvu fjvuVar4 = helpConfig.j;
+            if (fjvuVar4 == null) {
                 str4 = "";
             } else {
-                fhgd fhgdVar4 = fhfxVar4.f;
-                if (fhgdVar4 == null) {
-                    fhgdVar4 = fhgd.a;
+                fjwa fjwaVar4 = fjvuVar4.f;
+                if (fjwaVar4 == null) {
+                    fjwaVar4 = fjwa.a;
                 }
-                fhgb fhgbVar2 = fhgdVar4.e;
-                if (fhgbVar2 == null) {
-                    fhgbVar2 = fhgb.a;
+                fjvy fjvyVar2 = fjwaVar4.e;
+                if (fjvyVar2 == null) {
+                    fjvyVar2 = fjvy.a;
                 }
-                str4 = fhgbVar2.c;
+                str4 = fjvyVar2.c;
             }
-            fhfd f = helpConfig.f();
-            fhfd fhfdVar = fhfd.ND4C_CHAT;
-            boolean z2 = f == fhfdVar;
-            bjaw.G(helpChimeraActivity, 27, 9);
-            bjbk.q(helpChimeraActivity, 46, fhfdVar, -1);
+            fjva f = helpConfig.f();
+            fjva fjvaVar = fjva.ND4C_CHAT;
+            boolean z2 = f == fjvaVar;
+            blfl.G(helpChimeraActivity, 27, 9);
+            blfz.q(helpChimeraActivity, 46, fjvaVar, -1);
             View findViewById = findViewById(R.id.gh_chat_card);
             findViewById.setVisibility(0);
             if (z) {
-                findViewById.setOnClickListener(new View.OnClickListener() { // from class: biwv
+                findViewById.setOnClickListener(new View.OnClickListener() { // from class: blbk
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
                         HelpChimeraActivity helpChimeraActivity2 = HelpChimeraActivity.this;
-                        bjaw.G(helpChimeraActivity2, 28, 9);
-                        bjbk.q(helpChimeraActivity2, 47, fhfd.ND4C_CHAT, -1);
+                        blfl.G(helpChimeraActivity2, 28, 9);
+                        blfz.q(helpChimeraActivity2, 47, fjva.ND4C_CHAT, -1);
                         HelpConfig helpConfig2 = helpChimeraActivity2.W;
-                        helpConfig2.al = fone.c();
+                        helpConfig2.al = frfx.c();
                         helpConfig2.am = 1;
-                        birf.a(helpChimeraActivity2);
+                        bkvu.a(helpChimeraActivity2);
                     }
                 });
             } else {
@@ -177,48 +177,48 @@ public final class ND4COptionsContainer extends LinearLayout {
             }
             ((TextView) findViewById(R.id.gh_chat_subtext_snippet)).setText(str4);
             ImageView imageView = (ImageView) findViewById(R.id.gh_chat_icon);
-            Drawable drawable = helpChimeraActivity.getDrawable(2131232942);
+            Drawable drawable = helpChimeraActivity.getDrawable(2131233006);
             if (drawable != null) {
-                imageView.setImageDrawable(bivr.b(drawable, helpChimeraActivity, bivs.a(helpChimeraActivity, !z ? R.attr.ghf_greyIconColor : z2 ? R.attr.gh_recommendedContactOptionColor : R.attr.gh_primaryBlueColor)));
+                imageView.setImageDrawable(blag.b(drawable, helpChimeraActivity, blah.a(helpChimeraActivity, !z ? R.attr.ghf_greyIconColor : z2 ? R.attr.gh_recommendedContactOptionColor : R.attr.gh_primaryBlueColor)));
             }
         }
         if (!TextUtils.isEmpty(str2)) {
-            fhfx fhfxVar5 = helpConfig.j;
-            if (fhfxVar5 == null) {
+            fjvu fjvuVar5 = helpConfig.j;
+            if (fjvuVar5 == null) {
                 str3 = "";
             } else {
-                fhgd fhgdVar5 = fhfxVar5.f;
-                if (fhgdVar5 == null) {
-                    fhgdVar5 = fhgd.a;
+                fjwa fjwaVar5 = fjvuVar5.f;
+                if (fjwaVar5 == null) {
+                    fjwaVar5 = fjwa.a;
                 }
-                fhge fhgeVar2 = fhgdVar5.d;
-                if (fhgeVar2 == null) {
-                    fhgeVar2 = fhge.a;
+                fjwb fjwbVar2 = fjwaVar5.d;
+                if (fjwbVar2 == null) {
+                    fjwbVar2 = fjwb.a;
                 }
-                str3 = fhgeVar2.c;
+                str3 = fjwbVar2.c;
             }
-            fhfd f2 = helpConfig.f();
-            fhfd fhfdVar2 = fhfd.ND4C_PHONE;
-            if (f2 == fhfdVar2) {
+            fjva f2 = helpConfig.f();
+            fjva fjvaVar2 = fjva.ND4C_PHONE;
+            if (f2 == fjvaVar2) {
                 c2 = 1;
                 c = 1;
             } else {
                 c = 1;
                 c2 = 0;
             }
-            bjaw.G(helpChimeraActivity, 27, 7);
-            bjbk.q(helpChimeraActivity, 46, fhfdVar2, -1);
+            blfl.G(helpChimeraActivity, 27, 7);
+            blfz.q(helpChimeraActivity, 46, fjvaVar2, -1);
             View findViewById2 = findViewById(R.id.gh_phone_card);
             findViewById2.setVisibility(0);
-            findViewById2.setOnClickListener(new View.OnClickListener() { // from class: biwu
+            findViewById2.setOnClickListener(new View.OnClickListener() { // from class: blbj
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     Intent intent = new Intent("android.intent.action.DIAL");
                     intent.setData(Uri.parse("tel:".concat(String.valueOf(str2))));
                     HelpChimeraActivity helpChimeraActivity2 = HelpChimeraActivity.this;
                     if (ND4COptionsContainer.b(helpChimeraActivity2, intent)) {
-                        bjaw.G(helpChimeraActivity2, 28, 7);
-                        bjbk.q(helpChimeraActivity2, 47, fhfd.ND4C_PHONE, -1);
+                        blfl.G(helpChimeraActivity2, 28, 7);
+                        blfz.q(helpChimeraActivity2, 47, fjva.ND4C_PHONE, -1);
                         helpChimeraActivity2.startActivity(intent);
                     }
                 }
@@ -236,34 +236,34 @@ public final class ND4COptionsContainer extends LinearLayout {
             }
             textView4.setText(str3);
             ImageView imageView2 = (ImageView) findViewById(R.id.gh_phone_icon);
-            Drawable drawable2 = helpChimeraActivity.getDrawable(2131233092);
+            Drawable drawable2 = helpChimeraActivity.getDrawable(2131233157);
             if (drawable2 != null) {
-                imageView2.setImageDrawable(bivr.b(drawable2, helpChimeraActivity, bivs.a(helpChimeraActivity, c != c2 ? R.attr.gh_primaryBlueColor : R.attr.gh_recommendedContactOptionColor)));
+                imageView2.setImageDrawable(blag.b(drawable2, helpChimeraActivity, blah.a(helpChimeraActivity, c != c2 ? R.attr.gh_primaryBlueColor : R.attr.gh_recommendedContactOptionColor)));
             }
         }
         if (TextUtils.isEmpty(str)) {
             return;
         }
-        fhfx fhfxVar6 = helpConfig.j;
-        if (fhfxVar6 != null) {
-            fhgd fhgdVar6 = fhfxVar6.f;
-            if (fhgdVar6 == null) {
-                fhgdVar6 = fhgd.a;
+        fjvu fjvuVar6 = helpConfig.j;
+        if (fjvuVar6 != null) {
+            fjwa fjwaVar6 = fjvuVar6.f;
+            if (fjwaVar6 == null) {
+                fjwaVar6 = fjwa.a;
             }
-            fhgc fhgcVar2 = fhgdVar6.c;
-            if (fhgcVar2 == null) {
-                fhgcVar2 = fhgc.a;
+            fjvz fjvzVar2 = fjwaVar6.c;
+            if (fjvzVar2 == null) {
+                fjvzVar2 = fjvz.a;
             }
-            str5 = fhgcVar2.c;
+            str5 = fjvzVar2.c;
         }
-        fhfd f3 = helpConfig.f();
-        fhfd fhfdVar3 = fhfd.ND4C_EMAIL;
-        boolean z3 = f3 == fhfdVar3;
-        bjaw.G(helpChimeraActivity, 27, 8);
-        bjbk.q(helpChimeraActivity, 46, fhfdVar3, -1);
+        fjva f3 = helpConfig.f();
+        fjva fjvaVar3 = fjva.ND4C_EMAIL;
+        boolean z3 = f3 == fjvaVar3;
+        blfl.G(helpChimeraActivity, 27, 8);
+        blfz.q(helpChimeraActivity, 46, fjvaVar3, -1);
         View findViewById3 = findViewById(R.id.gh_email_card);
         findViewById3.setVisibility(0);
-        findViewById3.setOnClickListener(new View.OnClickListener() { // from class: biwt
+        findViewById3.setOnClickListener(new View.OnClickListener() { // from class: blbi
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 Intent intent = new Intent("android.intent.action.SENDTO");
@@ -271,8 +271,8 @@ public final class ND4COptionsContainer extends LinearLayout {
                 intent.putExtra("android.intent.extra.EMAIL", new String[]{str});
                 HelpChimeraActivity helpChimeraActivity2 = HelpChimeraActivity.this;
                 if (ND4COptionsContainer.b(helpChimeraActivity2, intent)) {
-                    bjaw.G(helpChimeraActivity2, 28, 8);
-                    bjbk.q(helpChimeraActivity2, 47, fhfd.ND4C_EMAIL, -1);
+                    blfl.G(helpChimeraActivity2, 28, 8);
+                    blfz.q(helpChimeraActivity2, 47, fjva.ND4C_EMAIL, -1);
                     helpChimeraActivity2.startActivity(intent);
                 }
             }
@@ -287,9 +287,9 @@ public final class ND4COptionsContainer extends LinearLayout {
         }
         textView7.setText(str5);
         ImageView imageView3 = (ImageView) findViewById(R.id.gh_email_icon);
-        Drawable drawable3 = helpChimeraActivity.getDrawable(2131233056);
+        Drawable drawable3 = helpChimeraActivity.getDrawable(2131233121);
         if (drawable3 != null) {
-            imageView3.setImageDrawable(bivr.b(drawable3, helpChimeraActivity, bivs.a(helpChimeraActivity, true != z3 ? R.attr.gh_primaryBlueColor : R.attr.gh_recommendedContactOptionColor)));
+            imageView3.setImageDrawable(blag.b(drawable3, helpChimeraActivity, blah.a(helpChimeraActivity, true != z3 ? R.attr.gh_primaryBlueColor : R.attr.gh_recommendedContactOptionColor)));
         }
     }
 

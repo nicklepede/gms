@@ -6,18 +6,18 @@ import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.messages.Message;
 import com.google.android.gms.nearby.messages.devices.NearbyDevice;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bsa;
-import defpackage.ckbw;
-import defpackage.ckfs;
-import defpackage.ckft;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bsl;
+import defpackage.cmkb;
+import defpackage.cmnx;
+import defpackage.cmny;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class Update extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new ckft();
+    public static final Parcelable.Creator CREATOR = new cmny();
     final int a;
     public final int b;
     public final Message c;
@@ -60,7 +60,7 @@ public class Update extends AbstractSafeParcelable implements ReflectedParcelabl
             return false;
         }
         Update update = (Update) obj;
-        return this.b == update.b && arwb.b(this.c, update.c) && arwb.b(this.d, update.d) && arwb.b(this.e, update.e) && arwb.b(this.f, update.f) && Arrays.equals(this.g, update.g);
+        return this.b == update.b && atyq.b(this.c, update.c) && atyq.b(this.d, update.d) && atyq.b(this.e, update.e) && atyq.b(this.f, update.f) && Arrays.equals(this.g, update.g);
     }
 
     public final int hashCode() {
@@ -68,48 +68,48 @@ public class Update extends AbstractSafeParcelable implements ReflectedParcelabl
     }
 
     public final String toString() {
-        bsa bsaVar = new bsa();
+        bsl bslVar = new bsl();
         if (b(1)) {
-            bsaVar.add("FOUND");
+            bslVar.add("FOUND");
         }
         if (b(2)) {
-            bsaVar.add("LOST");
+            bslVar.add("LOST");
         }
         if (b(4)) {
-            bsaVar.add("DISTANCE");
+            bslVar.add("DISTANCE");
         }
         if (b(8)) {
-            bsaVar.add("BLE_SIGNAL");
+            bslVar.add("BLE_SIGNAL");
         }
         if (b(16)) {
-            bsaVar.add("DEVICE");
+            bslVar.add("DEVICE");
         }
         if (b(32)) {
-            bsaVar.add("BLE_RECORD");
+            bslVar.add("BLE_RECORD");
         }
-        String obj = bsaVar.toString();
+        String obj = bslVar.toString();
         Message message = this.c;
         DistanceImpl distanceImpl = this.d;
         BleSignalImpl bleSignalImpl = this.e;
         NearbyDevice nearbyDevice = this.f;
         byte[] bArr = this.g;
-        return "Update{types=" + obj + ", message=" + String.valueOf(message) + ", distance=" + String.valueOf(distanceImpl) + ", bleSignal=" + String.valueOf(bleSignalImpl) + ", device=" + String.valueOf(nearbyDevice) + ", bleRecord=" + String.valueOf(ckbw.a(bArr)) + "}";
+        return "Update{types=" + obj + ", message=" + String.valueOf(message) + ", distance=" + String.valueOf(distanceImpl) + ", bleSignal=" + String.valueOf(bleSignalImpl) + ", device=" + String.valueOf(nearbyDevice) + ", bleRecord=" + String.valueOf(cmkb.a(bArr)) + "}";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.o(parcel, 2, this.b);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.i(parcel, 7, this.g, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.o(parcel, 2, this.b);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.i(parcel, 7, this.g, false);
+        atzr.c(parcel, a);
     }
 
-    public Update(ckfs ckfsVar) {
-        this(1, ckfsVar.a, ckfsVar.b, ckfsVar.c, ckfsVar.d, ckfsVar.e, ckfsVar.f);
+    public Update(cmnx cmnxVar) {
+        this(1, cmnxVar.a, cmnxVar.b, cmnxVar.c, cmnxVar.d, cmnxVar.e, cmnxVar.f);
     }
 }

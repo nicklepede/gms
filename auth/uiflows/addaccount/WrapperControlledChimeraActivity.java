@@ -8,115 +8,115 @@ import android.os.Bundle;
 import android.util.Log;
 import com.google.android.chimera.config.FeatureRequestExtras;
 import defpackage.a;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.adko;
-import defpackage.adlg;
-import defpackage.anxj;
-import defpackage.arka;
-import defpackage.arke;
-import defpackage.edgl;
-import defpackage.ejya;
-import defpackage.ejyu;
-import defpackage.ejzh;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fkdo;
-import defpackage.vcw;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.afkv;
+import defpackage.afln;
+import defpackage.apzb;
+import defpackage.atmp;
+import defpackage.atmt;
+import defpackage.eftg;
+import defpackage.emll;
+import defpackage.emmf;
+import defpackage.emms;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fmua;
+import defpackage.wyw;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class WrapperControlledChimeraActivity extends adko {
-    static final aano h = new aano("intent");
+public class WrapperControlledChimeraActivity extends afkv {
+    static final acno h = new acno("intent");
     private boolean i = false;
 
-    public static Intent b(Context context, boolean z, arke arkeVar, Intent intent) {
+    public static Intent b(Context context, boolean z, atmt atmtVar, Intent intent) {
         Intent className = new Intent().setClassName(context, "com.google.android.gms.auth.uiflows.addaccount.WrapperControlledActivity");
-        aanp x = adko.x(arkeVar, z);
+        acnp x = afkv.x(atmtVar, z);
         x.d(h, intent);
         return className.putExtras(x.a);
     }
 
     private final void j(Intent intent, boolean z) {
-        if (fkdo.a.a().h()) {
-            ejzh ejzhVar = ejzh.a;
-            fecj v = ejzhVar.v();
-            if ((((ejya) w().b).b & 32768) != 0) {
-                ejzh ejzhVar2 = ((ejya) w().b).p;
-                if (ejzhVar2 != null) {
-                    ejzhVar = ejzhVar2;
+        if (fmua.a.lK().i()) {
+            emms emmsVar = emms.a;
+            fgrc v = emmsVar.v();
+            if ((((emll) w().b).b & 8192) != 0) {
+                emms emmsVar2 = ((emll) w().b).p;
+                if (emmsVar2 != null) {
+                    emmsVar = emmsVar2;
                 }
-                v = (fecj) ejzhVar.iB(5, null);
-                v.X(ejzhVar);
+                v = (fgrc) emmsVar.iQ(5, null);
+                v.X(emmsVar);
             }
             ComponentName callingActivity = getCallingActivity();
             String flattenToShortString = callingActivity != null ? callingActivity.flattenToShortString() : "";
             String intent2 = intent.toString();
-            fecj v2 = ejyu.a.v();
+            fgrc v2 = emmf.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            fecp fecpVar = v2.b;
-            ejyu ejyuVar = (ejyu) fecpVar;
+            fgri fgriVar = v2.b;
+            emmf emmfVar = (emmf) fgriVar;
             intent2.getClass();
-            ejyuVar.b |= 1;
-            ejyuVar.c = intent2;
-            if (!fecpVar.L()) {
+            emmfVar.b |= 1;
+            emmfVar.c = intent2;
+            if (!fgriVar.L()) {
                 v2.U();
             }
-            fecp fecpVar2 = v2.b;
-            ejyu ejyuVar2 = (ejyu) fecpVar2;
-            ejyuVar2.b |= 2;
-            ejyuVar2.d = z;
-            if (!fecpVar2.L()) {
+            fgri fgriVar2 = v2.b;
+            emmf emmfVar2 = (emmf) fgriVar2;
+            emmfVar2.b |= 2;
+            emmfVar2.d = z;
+            if (!fgriVar2.L()) {
                 v2.U();
             }
-            ejyu ejyuVar3 = (ejyu) v2.b;
+            emmf emmfVar3 = (emmf) v2.b;
             flattenToShortString.getClass();
-            ejyuVar3.b |= 4;
-            ejyuVar3.e = flattenToShortString;
-            ejyu ejyuVar4 = (ejyu) v2.Q();
+            emmfVar3.b |= 4;
+            emmfVar3.e = flattenToShortString;
+            emmf emmfVar4 = (emmf) v2.Q();
             if (!v.b.L()) {
                 v.U();
             }
-            ejzh ejzhVar3 = (ejzh) v.b;
-            ejyuVar4.getClass();
-            ejzhVar3.l = ejyuVar4;
-            ejzhVar3.b |= 512;
-            fecj w = w();
-            ejzh ejzhVar4 = (ejzh) v.Q();
+            emms emmsVar3 = (emms) v.b;
+            emmfVar4.getClass();
+            emmsVar3.l = emmfVar4;
+            emmsVar3.b |= 512;
+            fgrc w = w();
+            emms emmsVar4 = (emms) v.Q();
             if (!w.b.L()) {
                 w.U();
             }
-            ejya ejyaVar = (ejya) w.b;
-            ejzhVar4.getClass();
-            ejyaVar.p = ejzhVar4;
-            ejyaVar.b |= 32768;
+            emll emllVar = (emll) w.b;
+            emmsVar4.getClass();
+            emllVar.p = emmsVar4;
+            emllVar.b |= 8192;
         }
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "WrapperControlledActivity";
     }
 
-    @Override // defpackage.adkg
-    protected final void gH() {
-        if (vcw.a.a(this)) {
-            vcw.c(this, (Intent) s().a(h));
+    @Override // defpackage.afkn
+    protected final void gX() {
+        if (wyw.a.a(this)) {
+            wyw.c(this, (Intent) s().a(h));
         } else {
-            super.gH();
+            super.gX();
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
-        gD(i2, intent);
+        gT(i2, intent);
     }
 
-    @Override // defpackage.adko, defpackage.adlg, defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkv, defpackage.afln, defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (bundle != null) {
@@ -127,38 +127,38 @@ public class WrapperControlledChimeraActivity extends adko {
             }
         }
         Intent intent = (Intent) s().a(h);
-        edgl.a(getIntent(), intent);
-        aano aanoVar = arka.a;
+        eftg.a(getIntent(), intent);
+        acno acnoVar = atmp.a;
         if (intent != null && intent.getBooleanExtra("is_unicorn_account", false)) {
-            aanp aanpVar = new aanp();
-            aano aanoVar2 = adlg.u;
-            aanpVar.d(aanoVar2, (Integer) s().b(aanoVar2, 0));
-            aano aanoVar3 = adlg.t;
-            aanpVar.d(aanoVar3, (String) s().a(aanoVar3));
-            Bundle bundle2 = aanpVar.a;
-            if (anxj.a() >= 107) {
+            acnp acnpVar = new acnp();
+            acno acnoVar2 = afln.u;
+            acnpVar.d(acnoVar2, (Integer) s().b(acnoVar2, 0));
+            acno acnoVar3 = afln.t;
+            acnpVar.d(acnoVar3, (String) s().a(acnoVar3));
+            Bundle bundle2 = acnpVar.a;
+            if (apzb.a() >= 107) {
                 FeatureRequestExtras.RequestBuilder requestBuilder = new FeatureRequestExtras.RequestBuilder();
-                requestBuilder.setSessionId((String) s().a(aanoVar3));
+                requestBuilder.setSessionId((String) s().a(acnoVar3));
                 requestBuilder.addToBundle(bundle2);
             }
             intent.putExtras(bundle2);
         }
-        if (vcw.a.a(this)) {
-            vcw.b(this);
+        if (wyw.a.a(this)) {
+            wyw.b(this);
         }
         if (getPackageManager().resolveActivity(intent, 0) == null) {
             Log.e("Auth", String.format(Locale.US, "[AddAccount, WrapperControlledChimeraActivity] Could not resolve intent: ".concat(String.valueOf(String.valueOf(intent))), new Object[0]));
             j(intent, false);
-            gD(0, null);
+            gT(0, null);
             return;
         }
-        if (fkdo.a.a().c()) {
+        if (fmua.a.lK().c()) {
             try {
                 startActivityForResult(intent, 0);
             } catch (ActivityNotFoundException e) {
-                Log.e("Auth", String.format(Locale.US, a.P(intent, e, "[AddAccount, WrapperControlledChimeraActivity] Could not start intent: ", "\n"), new Object[0]));
+                Log.e("Auth", String.format(Locale.US, a.R(intent, e, "[AddAccount, WrapperControlledChimeraActivity] Could not start intent: ", "\n"), new Object[0]));
                 j(intent, true);
-                gD(0, null);
+                gT(0, null);
                 return;
             }
         } else {
@@ -167,7 +167,7 @@ public class WrapperControlledChimeraActivity extends adko {
         this.i = true;
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBoolean("activity_started", this.i);

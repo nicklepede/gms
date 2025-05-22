@@ -7,58 +7,58 @@ import android.os.Build;
 import android.os.IBinder;
 import com.google.android.gms.R;
 import com.google.android.setupcompat.portal.ProgressServiceComponent;
-import defpackage.ahwd;
-import defpackage.aieq;
-import defpackage.aixm;
-import defpackage.aixp;
-import defpackage.aixt;
-import defpackage.aixu;
-import defpackage.aixx;
-import defpackage.aiym;
-import defpackage.aiyn;
-import defpackage.aiyy;
-import defpackage.aiza;
-import defpackage.aizb;
-import defpackage.ajae;
-import defpackage.arwm;
-import defpackage.aslt;
-import defpackage.asmf;
-import defpackage.dfee;
-import defpackage.edet;
-import defpackage.edfc;
-import defpackage.edfe;
-import defpackage.eiig;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ekhk;
-import defpackage.ekhl;
-import defpackage.ensv;
-import defpackage.fllt;
+import defpackage.ajwt;
+import defpackage.akfg;
+import defpackage.akyc;
+import defpackage.akyf;
+import defpackage.akyj;
+import defpackage.akyk;
+import defpackage.akyn;
+import defpackage.akzc;
+import defpackage.akzd;
+import defpackage.akzo;
+import defpackage.akzq;
+import defpackage.akzr;
+import defpackage.alau;
+import defpackage.atzb;
+import defpackage.aupn;
+import defpackage.aupz;
+import defpackage.dhpk;
+import defpackage.efro;
+import defpackage.efrx;
+import defpackage.efrz;
+import defpackage.ekvl;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.emuw;
+import defpackage.emux;
+import defpackage.eqgo;
+import defpackage.fodd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class CustomBackupDownloadManagerChimeraService extends aslt {
-    public static final ahwd a = new ahwd("CustomBackupDownloadService");
+public class CustomBackupDownloadManagerChimeraService extends aupn {
+    public static final ajwt a = new ajwt("CustomBackupDownloadService");
     public static boolean b = false;
     public String e;
-    public aixx f;
-    public aixu g;
-    public aixp h;
-    public edet j;
-    private aizb k;
-    private aiyn l;
+    public akyn f;
+    public akyk g;
+    public akyf h;
+    public efro j;
+    private akzr k;
+    private akzd l;
     public final Object c = new Object();
-    public final ensv d = new asmf(1, 9);
-    public final eijr i = eijy.a(new eijr() { // from class: aixq
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(fllt.t());
+    public final eqgo d = new aupz(1, 9);
+    public final ekww i = ekxd.a(new ekww() { // from class: akyg
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(fodd.t());
         }
     });
-    private final eijr m = eijy.a(new eijr() { // from class: aixr
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(flly.f());
+    private final ekww m = ekxd.a(new ekww() { // from class: akyh
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(fodi.f());
         }
     });
 
@@ -88,41 +88,41 @@ public class CustomBackupDownloadManagerChimeraService extends aslt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.backup.extension.download.CustomBackupDownloadManagerChimeraService.a():void");
     }
 
-    @Override // defpackage.aslt
+    @Override // defpackage.aupn
     protected final void b(Intent intent) {
-        aixm aixmVar = new aixm(this);
-        aixp aixpVar = this.h;
-        eiig.x(aixpVar);
-        aizb aizbVar = new aizb(aixpVar);
-        this.k = aizbVar;
-        ahwd ahwdVar = aizb.a;
-        ahwdVar.d("Should integrate called", new Object[0]);
-        if (!((Boolean) aizbVar.b.a()).booleanValue()) {
-            ahwdVar.d("Portal integration flag is disabled", new Object[0]);
+        akyc akycVar = new akyc(this);
+        akyf akyfVar = this.h;
+        ekvl.y(akyfVar);
+        akzr akzrVar = new akzr(akyfVar);
+        this.k = akzrVar;
+        ajwt ajwtVar = akzr.a;
+        ajwtVar.d("Should integrate called", new Object[0]);
+        if (!((Boolean) akzrVar.b.lK()).booleanValue()) {
+            ajwtVar.d("Portal integration flag is disabled", new Object[0]);
         } else if (checkSelfPermission("com.google.android.setupwizard.SETUP_PROGRESS_SERVICE") != 0) {
-            ahwdVar.d("Portal integration permission (%s) is not granted", "com.google.android.setupwizard.SETUP_PROGRESS_SERVICE");
-        } else if (aizbVar.a(this)) {
-            ahwdVar.d("Integration with portal allowed. Flag: true, Permission: granted", new Object[0]);
-            if (aixmVar.j()) {
+            ajwtVar.d("Portal integration permission (%s) is not granted", "com.google.android.setupwizard.SETUP_PROGRESS_SERVICE");
+        } else if (akzrVar.a(this)) {
+            ajwtVar.d("Integration with portal allowed. Flag: true, Permission: granted", new Object[0]);
+            if (akycVar.j()) {
                 this.h.e(2);
-                long d = fllt.a.a().d();
-                Intent c = aieq.c();
-                aizb aizbVar2 = this.k;
+                long d = fodd.a.lK().d();
+                Intent c = akfg.c();
+                akzr akzrVar2 = this.k;
                 try {
-                    ProgressServiceComponent a2 = edfe.a(getPackageName(), "BbG1Portal", false, false, d, R.string.backup_extension_download_ongoing_screen_title, 2131232825, new Intent().setClassName(getPackageName(), "com.google.android.gms.backup.extension.download.CustomBackupDataDownloadManagerService"), c);
-                    ahwdVar.d("Registering %s to Portal", getClass().getName());
-                    aiyy aiyyVar = aizbVar2.d;
-                    edfc.a(this, a2, new aiza(aizbVar2, this));
+                    ProgressServiceComponent a2 = efrz.a(getPackageName(), "BbG1Portal", false, false, d, R.string.backup_extension_download_ongoing_screen_title, 2131232889, new Intent().setClassName(getPackageName(), "com.google.android.gms.backup.extension.download.CustomBackupDataDownloadManagerService"), c);
+                    ajwtVar.d("Registering %s to Portal", getClass().getName());
+                    akzo akzoVar = akzrVar2.d;
+                    efrx.a(this, a2, new akzq(akzrVar2, this));
                     return;
                 } catch (RuntimeException e) {
-                    aizb.a.i("Exception raised in portal registration: starting download with notification %s", e, new Object[0]);
-                    aizbVar2.c(4);
+                    akzr.a.i("Exception raised in portal registration: starting download with notification %s", e, new Object[0]);
+                    akzrVar2.c(4);
                     c();
                     return;
                 }
             }
         } else {
-            ahwdVar.d("Consent notification displayed or Portal failed already. Cannot use Portal", new Object[0]);
+            ajwtVar.d("Consent notification displayed or Portal failed already. Cannot use Portal", new Object[0]);
         }
         a.d("Not eligible for portal.", new Object[0]);
         this.h.e(3);
@@ -130,37 +130,37 @@ public class CustomBackupDownloadManagerChimeraService extends aslt {
     }
 
     protected final void c() {
-        aixm aixmVar = new aixm(this);
-        int a2 = ((Boolean) this.m.a()).booleanValue() ? dfee.BACKUP_CUSTOM_RESTORE_NOTIFICATIONS.a() : 5;
-        ahwd ahwdVar = a;
-        ahwdVar.d("Foregrounding service with notification and downloading. Notification id %s", Integer.valueOf(a2));
-        aiyn aiynVar = this.l;
-        eiig.x(aiynVar);
-        Integer num = (Integer) aiynVar.c.get(aiym.IN_PROGRESS);
-        arwm.s(num);
+        akyc akycVar = new akyc(this);
+        int a2 = ((Boolean) this.m.lK()).booleanValue() ? dhpk.BACKUP_CUSTOM_RESTORE_NOTIFICATIONS.a() : 5;
+        ajwt ajwtVar = a;
+        ajwtVar.d("Foregrounding service with notification and downloading. Notification id %s", Integer.valueOf(a2));
+        akzd akzdVar = this.l;
+        ekvl.y(akzdVar);
+        Integer num = (Integer) akzdVar.c.get(akzc.IN_PROGRESS);
+        atzb.s(num);
         int intValue = num.intValue();
-        Context context = aiynVar.a;
+        Context context = akzdVar.a;
         String string = context.getString(intValue);
-        Notification.Builder builder = aiynVar.b;
+        Notification.Builder builder = akzdVar.b;
         builder.setContentTitle(string);
         builder.setContentText(context.getString(R.string.backup_extension_restore_default_notification_text));
         builder.setOngoing(true);
         startForeground(a2, builder.build());
-        aixp aixpVar = this.h;
-        if (aixpVar != null) {
-            aixpVar.c(3);
+        akyf akyfVar = this.h;
+        if (akyfVar != null) {
+            akyfVar.c(3);
         }
         a();
-        if (aixmVar.j()) {
-            aiyn aiynVar2 = this.l;
-            eiig.x(aiynVar2);
-            aiynVar2.a(aiym.FAILURE);
-            ahwdVar.d("Posting failure notification", new Object[0]);
+        if (akycVar.j()) {
+            akzd akzdVar2 = this.l;
+            ekvl.y(akzdVar2);
+            akzdVar2.a(akzc.FAILURE);
+            ajwtVar.d("Posting failure notification", new Object[0]);
         } else {
-            aiyn aiynVar3 = this.l;
-            eiig.x(aiynVar3);
-            aiynVar3.a(aiym.DONE);
-            ahwdVar.d("Posting done notification", new Object[0]);
+            akzd akzdVar3 = this.l;
+            ekvl.y(akzdVar3);
+            akzdVar3.a(akzc.DONE);
+            ajwtVar.d("Posting done notification", new Object[0]);
         }
         if (Build.VERSION.SDK_INT >= 24) {
             stopForeground(2);
@@ -169,32 +169,32 @@ public class CustomBackupDownloadManagerChimeraService extends aslt {
         }
     }
 
-    @Override // defpackage.aslt, com.google.android.chimera.Service
+    @Override // defpackage.aupn, com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
-        if (((Boolean) this.i.a()).booleanValue() && edfc.c(intent)) {
+        if (((Boolean) this.i.lK()).booleanValue() && efrx.c(intent)) {
             a.d("#onBind: Returning SetupWizardPortalBinder", new Object[0]);
-            return new aixt(this);
+            return new akyj(this);
         }
         a.d("#onBind: Returning CustomBackupDownloadManagerServiceBinder", new Object[0]);
-        return new ajae(this);
+        return new alau(this);
     }
 
-    @Override // defpackage.aslt, com.google.android.chimera.Service
+    @Override // defpackage.aupn, com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        this.l = new aiyn(this);
-        this.h = new aixp();
-        this.g = new aixu(this, this.h);
+        this.l = new akzd(this);
+        this.h = new akyf();
+        this.g = new akyk(this, this.h);
     }
 
-    @Override // defpackage.aslt, com.google.android.chimera.Service
+    @Override // defpackage.aupn, com.google.android.chimera.Service
     public final void onDestroy() {
-        aixm aixmVar = new aixm(this);
-        if (aixmVar.j()) {
-            a.d("Reschedule the CustomBackupDownloadStarterTask task as there is more data for download: %s", aixmVar.c());
+        akyc akycVar = new akyc(this);
+        if (akycVar.j()) {
+            a.d("Reschedule the CustomBackupDownloadStarterTask task as there is more data for download: %s", akycVar.c());
             CustomBackupDownloadStarterTask.d(this);
         }
-        this.h.a(ekhl.a, ekhk.CUSTOM_BACKUP_DOWNLOAD_SERVICE_DESTROYED_EVENT);
+        this.h.a(emux.a, emuw.CUSTOM_BACKUP_DOWNLOAD_SERVICE_DESTROYED_EVENT);
         super.onDestroy();
     }
 }

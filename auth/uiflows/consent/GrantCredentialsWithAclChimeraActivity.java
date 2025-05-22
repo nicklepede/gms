@@ -10,21 +10,21 @@ import com.google.android.gms.auth.firstparty.shared.FACLConfig;
 import com.google.android.gms.auth.firstparty.shared.ScopeData;
 import com.google.android.gms.common.widget.phone.ScrollViewWithEvents;
 import defpackage.a;
-import defpackage.aanu;
-import defpackage.aazm;
-import defpackage.abau;
-import defpackage.adlg;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.rqd;
+import defpackage.acnu;
+import defpackage.aczm;
+import defpackage.adau;
+import defpackage.afln;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.tjm;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class GrantCredentialsWithAclChimeraActivity extends adlg implements View.OnClickListener {
+public class GrantCredentialsWithAclChimeraActivity extends afln implements View.OnClickListener {
     public static final /* synthetic */ int i = 0;
-    private static final asot j = asot.b("GLSActivity", asej.AUTH_ACCOUNT_DATA);
-    private rqd A;
+    private static final ausn j = ausn.b("GLSActivity", auid.AUTH_ACCOUNT_DATA);
+    private tjm A;
     private Button B;
     private Button C;
     private ScrollViewWithEvents D;
@@ -40,7 +40,7 @@ public class GrantCredentialsWithAclChimeraActivity extends adlg implements View
     private ArrayList o = new ArrayList();
     long h = 0;
 
-    private final Intent b(abau abauVar, aazm aazmVar) {
+    private final Intent b(adau adauVar, aczm aczmVar) {
         Intent intent = new Intent();
         ArrayList arrayList = this.o;
         int size = arrayList.size();
@@ -55,7 +55,7 @@ public class GrantCredentialsWithAclChimeraActivity extends adlg implements View
                 str = scopeData.f;
             }
         }
-        intent.putExtra(ConsentResult.a, new ConsentResult(abauVar, str, fACLConfig, aazmVar, getIntent().getStringExtra("GrantCredentialsWithAclChimeraActivityconsentCookieWrapper")));
+        intent.putExtra(ConsentResult.a, new ConsentResult(adauVar, str, fACLConfig, aczmVar, getIntent().getStringExtra("GrantCredentialsWithAclChimeraActivityconsentCookieWrapper")));
         return intent;
     }
 
@@ -72,9 +72,9 @@ public class GrantCredentialsWithAclChimeraActivity extends adlg implements View
             this.o.addAll(parcelableArrayList);
         }
         this.x = bundle.getBoolean("GrantCredentialsWithAclChimeraActivityisRemoteApp");
-        aanu aanuVar = new aanu(this);
-        this.y = aanuVar.a(this.k);
-        CharSequence b = aanuVar.b(this.k);
+        acnu acnuVar = new acnu(this);
+        this.y = acnuVar.a(this.k);
+        CharSequence b = acnuVar.b(this.k);
         if (b != null) {
             this.z = b.toString();
         } else if (this.x) {
@@ -95,7 +95,7 @@ public class GrantCredentialsWithAclChimeraActivity extends adlg implements View
             scopeData.n = false;
             scopeData.o = false;
         }
-        gD(0, b(abau.PERMISSION_DENIED, aazm.REJECTED));
+        gT(0, b(adau.PERMISSION_DENIED, aczm.REJECTED));
         this.C.setEnabled(false);
         this.B.setEnabled(false);
     }
@@ -104,12 +104,12 @@ public class GrantCredentialsWithAclChimeraActivity extends adlg implements View
         return a.j(i2, "scopeFragment");
     }
 
-    @Override // defpackage.adkg
-    public final String gG() {
+    @Override // defpackage.afkn
+    public final String gW() {
         return "GrantCredentialsWithAclActivity";
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         l();
         super.onBackPressed();
@@ -125,7 +125,7 @@ public class GrantCredentialsWithAclChimeraActivity extends adlg implements View
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x00a7, code lost:
     
-        ((defpackage.ascf) r12.b).b = defpackage.feeq.a;
+        ((defpackage.aueu) r12.b).b = defpackage.fgtj.a;
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x00af, code lost:
     
@@ -157,7 +157,7 @@ public class GrantCredentialsWithAclChimeraActivity extends adlg implements View
     
         r3 = null;
      */
-    @Override // defpackage.adlg, defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afln, defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -170,7 +170,7 @@ public class GrantCredentialsWithAclChimeraActivity extends adlg implements View
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.uiflows.consent.GrantCredentialsWithAclChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putString("callingPkg", this.k);
@@ -184,12 +184,12 @@ public class GrantCredentialsWithAclChimeraActivity extends adlg implements View
         bundle.putString("GrantCredentialsWithAclChimeraActivityremoteAppLabel", this.z);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStart() {
         super.onStart();
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStop() {
         super.onStop();
     }

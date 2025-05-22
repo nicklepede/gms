@@ -2,12 +2,12 @@ package com.google.android.gms.wallet.analytics.events;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.digk;
+import defpackage.dkrv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class OwUserFoundToHavePreAuthEvent extends WalletAnalyticsEvent {
-    public static final Parcelable.Creator CREATOR = new digk();
+    public static final Parcelable.Creator CREATOR = new dkrv();
 
     public OwUserFoundToHavePreAuthEvent(String str) {
         this.m = str;

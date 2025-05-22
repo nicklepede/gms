@@ -6,22 +6,22 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.arxd;
-import defpackage.bzip;
-import defpackage.bziw;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.atzs;
+import defpackage.cbrg;
+import defpackage.cbrn;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class LocationResult extends AbstractSafeParcelable implements ReflectedParcelable {
     public final List b;
     public static final List a = Collections.EMPTY_LIST;
-    public static final Parcelable.Creator CREATOR = new bzip();
+    public static final Parcelable.Creator CREATOR = new cbrg();
 
     public LocationResult(List list) {
         this.b = list;
@@ -38,7 +38,7 @@ public final class LocationResult extends AbstractSafeParcelable implements Refl
         if (!d(intent)) {
             return null;
         }
-        LocationResult locationResult = (LocationResult) arxd.b(intent, "com.google.android.gms.location.EXTRA_LOCATION_RESULT_BYTES", CREATOR);
+        LocationResult locationResult = (LocationResult) atzs.b(intent, "com.google.android.gms.location.EXTRA_LOCATION_RESULT_BYTES", CREATOR);
         return locationResult == null ? (LocationResult) intent.getParcelableExtra("com.google.android.gms.location.EXTRA_LOCATION_RESULT") : locationResult;
     }
 
@@ -71,7 +71,7 @@ public final class LocationResult extends AbstractSafeParcelable implements Refl
         Iterator it = list2.iterator();
         for (Location location : list) {
             Location location2 = (Location) it.next();
-            if (Double.compare(location.getLatitude(), location2.getLatitude()) != 0 || Double.compare(location.getLongitude(), location2.getLongitude()) != 0 || location.getTime() != location2.getTime() || location.getElapsedRealtimeNanos() != location2.getElapsedRealtimeNanos() || !arwb.b(location.getProvider(), location2.getProvider())) {
+            if (Double.compare(location.getLatitude(), location2.getLatitude()) != 0 || Double.compare(location.getLongitude(), location2.getLongitude()) != 0 || location.getTime() != location2.getTime() || location.getElapsedRealtimeNanos() != location2.getElapsedRealtimeNanos() || !atyq.b(location.getProvider(), location2.getProvider())) {
                 return false;
             }
         }
@@ -84,15 +84,15 @@ public final class LocationResult extends AbstractSafeParcelable implements Refl
 
     public final String toString() {
         StringBuilder sb = new StringBuilder("LocationResult");
-        bziw.u(this.b, sb);
+        cbrn.u(this.b, sb);
         return sb.toString();
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.b;
-        int a2 = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.c(parcel, a2);
     }
 }

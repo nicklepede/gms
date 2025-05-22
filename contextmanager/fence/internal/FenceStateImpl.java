@@ -3,14 +3,14 @@ package com.google.android.gms.contextmanager.fence.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.awareness.fence.FenceState;
-import defpackage.arxc;
-import defpackage.atpj;
+import defpackage.atzr;
+import defpackage.avtm;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class FenceStateImpl extends FenceState {
-    public static final Parcelable.Creator CREATOR = new atpj();
+    public static final Parcelable.Creator CREATOR = new avtm();
     public final int a;
     public final long b;
     public final String c;
@@ -37,13 +37,13 @@ public class FenceStateImpl extends FenceState {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, this.a);
-        arxc.q(parcel, 3, this.b);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.o(parcel, 5, this.d);
-        arxc.y(parcel, 6, this.e, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, this.a);
+        atzr.q(parcel, 3, this.b);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.o(parcel, 5, this.d);
+        atzr.y(parcel, 6, this.e, false);
+        atzr.c(parcel, a);
     }
 
     public FenceStateImpl(int i, long j, String str, int i2) {

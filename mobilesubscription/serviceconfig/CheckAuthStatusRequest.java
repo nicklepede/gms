@@ -4,15 +4,15 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cesa;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.chbi;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class CheckAuthStatusRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cesa();
+    public static final Parcelable.Creator CREATOR = new chbi();
     public String a;
     public ServiceType b;
     public Long c;
@@ -29,7 +29,7 @@ public final class CheckAuthStatusRequest extends AbstractSafeParcelable {
         }
         if (obj instanceof CheckAuthStatusRequest) {
             CheckAuthStatusRequest checkAuthStatusRequest = (CheckAuthStatusRequest) obj;
-            if (arwb.b(this.a, checkAuthStatusRequest.a) && arwb.b(this.b, checkAuthStatusRequest.b) && arwb.b(this.c, checkAuthStatusRequest.c) && arwb.b(this.d, checkAuthStatusRequest.d) && arwb.b(this.e, checkAuthStatusRequest.e) && arwb.b(this.f, checkAuthStatusRequest.f)) {
+            if (atyq.b(this.a, checkAuthStatusRequest.a) && atyq.b(this.b, checkAuthStatusRequest.b) && atyq.b(this.c, checkAuthStatusRequest.c) && atyq.b(this.d, checkAuthStatusRequest.d) && atyq.b(this.e, checkAuthStatusRequest.e) && atyq.b(this.f, checkAuthStatusRequest.f)) {
                 return true;
             }
         }
@@ -42,14 +42,14 @@ public final class CheckAuthStatusRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.I(parcel, 3, this.c);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.g(parcel, 63, this.f, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.I(parcel, 3, this.c);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.g(parcel, 63, this.f, false);
+        atzr.c(parcel, a);
     }
 
     public CheckAuthStatusRequest(String str, ServiceType serviceType, Long l, AuthType authType, String str2, Bundle bundle) {

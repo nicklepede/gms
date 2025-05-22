@@ -15,45 +15,45 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.chimera.BroadcastReceiver;
 import com.google.android.gms.gcm.PendingCallback;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.bhyu;
-import defpackage.bhyw;
-import defpackage.biki;
-import defpackage.bry;
-import defpackage.byhr;
-import defpackage.byiv;
-import defpackage.byix;
-import defpackage.cxzz;
-import defpackage.cyaq;
-import defpackage.cyas;
-import defpackage.cybn;
-import defpackage.cycd;
-import defpackage.cyci;
-import defpackage.cycj;
-import defpackage.cycp;
-import defpackage.cyde;
-import defpackage.cygm;
-import defpackage.egjy;
-import defpackage.eglu;
-import defpackage.egmm;
-import defpackage.ejhf;
-import defpackage.ensv;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.bkdj;
+import defpackage.bkdl;
+import defpackage.bkox;
+import defpackage.bsj;
+import defpackage.caqj;
+import defpackage.carn;
+import defpackage.carp;
+import defpackage.dajw;
+import defpackage.dakn;
+import defpackage.dakp;
+import defpackage.dall;
+import defpackage.damb;
+import defpackage.damg;
+import defpackage.damh;
+import defpackage.damn;
+import defpackage.danc;
+import defpackage.daqk;
+import defpackage.eixb;
+import defpackage.eiyx;
+import defpackage.eizp;
+import defpackage.eluo;
+import defpackage.eqgo;
 import java.util.Iterator;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
-    private static final bry b = new bry();
-    private static final asot c = asot.b("NetworkScheduler.SIR", asej.SCHEDULER);
+    private static final bsj b = new bsj();
+    private static final ausn c = ausn.b("NetworkScheduler.SIR", auid.SCHEDULER);
     private static final Binder d = new Binder();
-    private static final ensv e = new asmf(1, 10);
-    private final Handler f = new byhr(Looper.getMainLooper());
+    private static final eqgo e = new aupz(1, 10);
+    private final Handler f = new caqj(Looper.getMainLooper());
 
     private static Set a(Intent intent) {
-        return byix.a(intent.getIntArrayExtra("content_uri_flags_array"), intent.getParcelableArrayExtra("content_uri_array"));
+        return carp.a(intent.getIntArrayExtra("content_uri_flags_array"), intent.getParcelableArrayExtra("content_uri_array"));
     }
 
     private static final boolean b(Context context, Intent intent) {
@@ -61,35 +61,35 @@ public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
         if (intExtra == -1) {
             return true;
         }
-        cxzz.e(context);
-        int b2 = cxzz.b();
+        dajw.e(context);
+        int b2 = dajw.b();
         if (intExtra == b2) {
             return true;
         }
-        ((ejhf) ((ejhf) c.i()).ah(9337)).E("Received broadcast destined for user %d at user %d", intExtra, b2);
+        ((eluo) ((eluo) c.i()).ai(9339)).E("Received broadcast destined for user %d at user %d", intExtra, b2);
         return false;
     }
 
     @Override // com.google.android.chimera.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        egjy e2;
+        eixb e2;
         IBinder binder;
         Intent intent2;
         if ("com.google.android.gms.gcm.ACTION_CHECK_QUEUE".equals(intent.getAction())) {
-            cyas cyasVar = cybn.b().d;
-            if (cyasVar == null) {
-                ((ejhf) ((ejhf) c.i()).ah((char) 9336)).x("GmsTaskScheduler unavailable.");
+            dakp dakpVar = dall.b().d;
+            if (dakpVar == null) {
+                ((eluo) ((eluo) c.i()).ai((char) 9338)).x("GmsTaskScheduler unavailable.");
                 return;
             }
-            e2 = egmm.e("com/google/android/gms/scheduler/NetworkScheduler", "alarmUp", 339, "NetworkScheduler_alarmUp");
+            e2 = eizp.e("com/google/android/gms/scheduler/NetworkScheduler", "alarmUp", 339, "NetworkScheduler_alarmUp");
             try {
-                cyasVar.d.execute(new cyaq(5, cyasVar.b, biki.ALARM_MANAGER, null, null, null, null, -1));
+                dakpVar.d.execute(new dakn(5, dakpVar.b, bkox.ALARM_MANAGER, null, null, null, null, -1));
                 e2.close();
             } finally {
             }
         } else {
             if ("com.google.android.gms.gcm.ACTION_HTTP_OK".equals(intent.getAction())) {
-                cyas.c();
+                dakp.c();
                 return;
             }
             if ("com.google.android.gms.gcm.ACTION_EXECUTE_TASK".equals(intent.getAction())) {
@@ -99,12 +99,12 @@ public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
                 ComponentName componentName = (ComponentName) intent.getParcelableExtra("component");
                 long longExtra = intent.getLongExtra("max_exec_duration", 180L);
                 if (componentName == null || TextUtils.isEmpty(componentName.getPackageName())) {
-                    ((ejhf) ((ejhf) c.i()).ah((char) 9330)).x("No package provided.");
+                    ((eluo) ((eluo) c.i()).ai((char) 9332)).x("No package provided.");
                     setResultCode(16);
                     return;
                 }
                 if (!(parcelableExtra instanceof PendingCallback) && !(parcelableExtra instanceof com.google.android.gms.libs.scheduler.PendingCallback)) {
-                    ((ejhf) ((ejhf) c.i()).ah((char) 9333)).x("Invalid callback provided.");
+                    ((eluo) ((eluo) c.i()).ai((char) 9335)).x("Invalid callback provided.");
                     setResultCode(16);
                     return;
                 }
@@ -112,7 +112,7 @@ public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
                     setResultCode(16);
                     return;
                 }
-                Intent g = cyci.g(context.getPackageManager(), componentName, stringExtra, parcelableExtra, bundle, longExtra, intent.getBundleExtra("engine_flags"));
+                Intent g = damg.g(context.getPackageManager(), componentName, stringExtra, parcelableExtra, bundle, longExtra, intent.getBundleExtra("engine_flags"));
                 if (g == null) {
                     setResultCode(32);
                     return;
@@ -126,11 +126,11 @@ public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
                         return;
                     }
                 } catch (IllegalStateException e3) {
-                    ((ejhf) ((ejhf) c.i()).ah((char) 9332)).B("IllegalStateException starting service: %s", e3.getMessage());
+                    ((eluo) ((eluo) c.i()).ai((char) 9334)).B("IllegalStateException starting service: %s", e3.getMessage());
                     setResultCode(64);
                     return;
                 } catch (SecurityException e4) {
-                    ((ejhf) ((ejhf) c.i()).ah((char) 9331)).B("SecurityException starting service: %s", e4.getMessage());
+                    ((eluo) ((eluo) c.i()).ai((char) 9333)).B("SecurityException starting service: %s", e4.getMessage());
                     setResultCode(8);
                     return;
                 }
@@ -138,16 +138,16 @@ public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
             if ("com.google.android.gms.gcm.SERVICE_ACTION_INITIALIZE".equals(intent.getAction())) {
                 String stringExtra2 = intent.getStringExtra("package");
                 if (stringExtra2 == null) {
-                    ((ejhf) ((ejhf) c.i()).ah((char) 9329)).x("Trying to send multi-user initialization message but got no package to send to.");
+                    ((eluo) ((eluo) c.i()).ai((char) 9331)).x("Trying to send multi-user initialization message but got no package to send to.");
                     return;
                 }
                 int intExtra = intent.getIntExtra("user_serial", -1);
                 if (intExtra == -1) {
-                    ((ejhf) ((ejhf) c.i()).ah((char) 9328)).x("Trying to send multi-user initialization message but got an invalid user serial.");
+                    ((eluo) ((eluo) c.i()).ai((char) 9330)).x("Trying to send multi-user initialization message but got an invalid user serial.");
                     return;
                 } else {
                     if (b(context, intent)) {
-                        cyde.a(context, new cycd(stringExtra2, intExtra));
+                        danc.a(context, new damb(stringExtra2, intExtra));
                         return;
                     }
                     return;
@@ -155,17 +155,17 @@ public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
             }
             int intExtra2 = intent.getIntExtra("OP_CODE", -1);
             if (intExtra2 == 1) {
-                cxzz.e(context);
-                for (byiv byivVar : a(intent)) {
-                    bry bryVar = b;
-                    if (!bryVar.containsKey(byivVar)) {
-                        cygm cygmVar = new cygm(context, this.f, byivVar, e);
-                        if (bryVar.put(byivVar, cygmVar) == null) {
+                dajw.e(context);
+                for (carn carnVar : a(intent)) {
+                    bsj bsjVar = b;
+                    if (!bsjVar.containsKey(carnVar)) {
+                        daqk daqkVar = new daqk(context, this.f, carnVar, e);
+                        if (bsjVar.put(carnVar, daqkVar) == null) {
                             try {
-                                context.getContentResolver().registerContentObserver(byivVar.a, byivVar.a(), cygmVar);
+                                context.getContentResolver().registerContentObserver(carnVar.a, carnVar.a(), daqkVar);
                             } catch (IllegalArgumentException | SecurityException e5) {
-                                ((ejhf) ((ejhf) ((ejhf) c.j()).s(e5)).ah(9334)).P("Failed to register content observer for %s: %s", byivVar.a, e5);
-                                b.remove(byivVar);
+                                ((eluo) ((eluo) ((eluo) c.j()).s(e5)).ai(9336)).P("Failed to register content observer for %s: %s", carnVar.a, e5);
+                                b.remove(carnVar);
                             }
                         }
                     }
@@ -177,9 +177,9 @@ public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
                 ContentResolver contentResolver = context.getContentResolver();
                 Iterator it = a.iterator();
                 while (it.hasNext()) {
-                    cygm cygmVar2 = (cygm) b.remove((byiv) it.next());
-                    if (cygmVar2 != null) {
-                        contentResolver.unregisterContentObserver(cygmVar2);
+                    daqk daqkVar2 = (daqk) b.remove((carn) it.next());
+                    if (daqkVar2 != null) {
+                        contentResolver.unregisterContentObserver(daqkVar2);
                     }
                 }
                 return;
@@ -187,34 +187,34 @@ public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
             if (intExtra2 != 3) {
                 if (intExtra2 == 4) {
                     int intExtra3 = intent.getIntExtra("user_serial", -1);
-                    cyas cyasVar2 = cybn.b().d;
-                    if (cyasVar2 != null) {
-                        cyasVar2.d.execute(new cyaq(8, cyasVar2.b, biki.CAUSE_UNKNOWN, null, null, null, null, intExtra3));
+                    dakp dakpVar2 = dall.b().d;
+                    if (dakpVar2 != null) {
+                        dakpVar2.d.execute(new dakn(8, dakpVar2.b, bkox.CAUSE_UNKNOWN, null, null, null, null, intExtra3));
                         return;
                     }
                     return;
                 }
                 if (intExtra2 != 5) {
-                    ((ejhf) ((ejhf) c.j()).ah((char) 9335)).x("Unrecognised action received by internal scheduler receiver.");
+                    ((eluo) ((eluo) c.j()).ai((char) 9337)).x("Unrecognised action received by internal scheduler receiver.");
                     return;
                 }
                 Bundle bundle2 = new Bundle();
                 bundle2.putBinder("binder", d);
                 Context applicationContext = context.getApplicationContext();
                 Bundle extras = intent.getExtras();
-                asot asotVar = cycp.a;
-                asmf asmfVar = new asmf(1, 10);
-                cycp cycpVar = null;
-                if (extras != null && (binder = extras.getBinder("callback")) != null && cycj.a("com.google.android.gms.gcm.IMessengerProxyCallback", binder)) {
+                ausn ausnVar = damn.a;
+                aupz aupzVar = new aupz(1, 10);
+                damn damnVar = null;
+                if (extras != null && (binder = extras.getBinder("callback")) != null && damh.a("com.google.android.gms.gcm.IMessengerProxyCallback", binder)) {
                     IInterface queryLocalInterface = binder.queryLocalInterface("com.google.android.gms.gcm.IMessengerProxyCallback");
-                    bhyw bhyuVar = queryLocalInterface instanceof bhyw ? (bhyw) queryLocalInterface : new bhyu(binder);
-                    if (bhyuVar != null && (intent2 = (Intent) extras.getParcelable("intent")) != null) {
-                        cycpVar = new cycp(applicationContext, bhyuVar, intent2, asmfVar);
+                    bkdl bkdjVar = queryLocalInterface instanceof bkdl ? (bkdl) queryLocalInterface : new bkdj(binder);
+                    if (bkdjVar != null && (intent2 = (Intent) extras.getParcelable("intent")) != null) {
+                        damnVar = new damn(applicationContext, bkdjVar, intent2, aupzVar);
                     }
                 }
-                if (cycpVar != null) {
+                if (damnVar != null) {
                     setResultExtras(bundle2);
-                    e.execute(cycpVar);
+                    e.execute(damnVar);
                     return;
                 }
                 return;
@@ -225,15 +225,15 @@ public class SchedulerInternalChimeraReceiver extends BroadcastReceiver {
                 return;
             }
             int intExtra4 = intent.getIntExtra("user_serial", -1);
-            cyas cyasVar3 = cybn.b().d;
-            if (cyasVar3 == null) {
+            dakp dakpVar3 = dall.b().d;
+            if (dakpVar3 == null) {
                 return;
             }
-            byiv byivVar2 = (byiv) a2.iterator().next();
+            carn carnVar2 = (carn) a2.iterator().next();
             Uri uri = (Uri) parcelableArrayExtra[0];
-            e2 = egmm.e("com/google/android/gms/scheduler/NetworkScheduler", "onContentUpdate", 361, "NetworkScheduler_onContentUpdate");
+            e2 = eizp.e("com/google/android/gms/scheduler/NetworkScheduler", "onContentUpdate", 361, "NetworkScheduler_onContentUpdate");
             try {
-                cyasVar3.d.execute(eglu.g(new cyaq(7, cyasVar3.b, biki.CONTENT_URI_UPDATED, null, null, byivVar2, uri, intExtra4)));
+                dakpVar3.d.execute(eiyx.g(new dakn(7, dakpVar3.b, bkox.CONTENT_URI_UPDATED, null, null, carnVar2, uri, intExtra4)));
                 e2.close();
             } finally {
             }

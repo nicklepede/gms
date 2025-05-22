@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cked;
-import defpackage.ckef;
-import defpackage.ckek;
-import defpackage.ckfl;
+import defpackage.atzr;
+import defpackage.cmmi;
+import defpackage.cmmk;
+import defpackage.cmmp;
+import defpackage.cmnq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class RegisterStatusCallbackRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckfl();
+    public static final Parcelable.Creator CREATOR = new cmnq();
     final int a;
-    public final ckef b;
+    public final cmmk b;
     public final boolean c;
 
     @Deprecated
@@ -24,26 +24,26 @@ public final class RegisterStatusCallbackRequest extends AbstractSafeParcelable 
 
     @Deprecated
     public final ClientAppContext e;
-    public final ckek f;
+    public final cmmp f;
 
     public RegisterStatusCallbackRequest(int i, IBinder iBinder, IBinder iBinder2, boolean z, String str, ClientAppContext clientAppContext) {
-        ckef ckedVar;
-        ckek ckekVar;
+        cmmk cmmiVar;
+        cmmp cmmpVar;
         this.a = i;
         if (iBinder == null) {
-            ckedVar = null;
+            cmmiVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.messages.internal.INearbyMessagesCallback");
-            ckedVar = queryLocalInterface instanceof ckef ? (ckef) queryLocalInterface : new cked(iBinder);
+            cmmiVar = queryLocalInterface instanceof cmmk ? (cmmk) queryLocalInterface : new cmmi(iBinder);
         }
-        this.b = ckedVar;
+        this.b = cmmiVar;
         if (iBinder2 == null) {
-            ckekVar = null;
+            cmmpVar = null;
         } else {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.nearby.messages.internal.IStatusCallback");
-            ckekVar = queryLocalInterface2 instanceof ckek ? (ckek) queryLocalInterface2 : new ckek(iBinder2);
+            cmmpVar = queryLocalInterface2 instanceof cmmp ? (cmmp) queryLocalInterface2 : new cmmp(iBinder2);
         }
-        this.f = ckekVar;
+        this.f = cmmpVar;
         this.c = z;
         this.d = str;
         this.e = ClientAppContext.b(clientAppContext, null, str, false);
@@ -52,13 +52,13 @@ public final class RegisterStatusCallbackRequest extends AbstractSafeParcelable 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.D(parcel, 3, this.f.a);
-        arxc.e(parcel, 4, this.c);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.D(parcel, 3, this.f.a);
+        atzr.e(parcel, 4, this.c);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.c(parcel, a);
     }
 }

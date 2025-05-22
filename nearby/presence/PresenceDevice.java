@@ -3,23 +3,23 @@ package com.google.android.gms.nearby.presence;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cfey;
-import defpackage.cffc;
-import defpackage.cffe;
-import defpackage.cizq;
-import defpackage.ckjz;
-import defpackage.ckka;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.atyq;
+import defpackage.chmk;
+import defpackage.chmo;
+import defpackage.chmq;
+import defpackage.clhv;
+import defpackage.cmse;
+import defpackage.cmsf;
+import defpackage.elgo;
+import defpackage.elpg;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
-public class PresenceDevice extends AbstractSafeParcelable implements cffe {
-    public static final Parcelable.Creator CREATOR = new ckka();
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
+public class PresenceDevice extends AbstractSafeParcelable implements chmq {
+    public static final Parcelable.Creator CREATOR = new cmsf();
     private static final String[] p = {"UNKNOWN", "PHONE", "TABLET", "DISPLAY", "LAPTOP", "TV", "WATCH", "CHROMEOS", "FOLDABLE", "AUTOMOTIVE", "SPEAKER"};
     public final long a;
     public final String b;
@@ -100,58 +100,58 @@ public class PresenceDevice extends AbstractSafeParcelable implements cffe {
         return strArr[c];
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final int a() {
         return 2;
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final int b() {
         return this.l;
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     /* renamed from: c, reason: merged with bridge method [inline-methods] */
-    public final ckjz d() {
-        ckjz ckjzVar = new ckjz();
-        ckjzVar.b = this.b;
-        ckjzVar.c = this.c;
-        ckjzVar.a = this.a;
-        ckjzVar.d = this.d;
-        ckjzVar.j = this.l;
-        ckjzVar.e(this.f);
-        ckjzVar.k = this.m;
-        ckjzVar.f(this.o);
-        ckjzVar.g(this.n);
+    public final cmse d() {
+        cmse cmseVar = new cmse();
+        cmseVar.b = this.b;
+        cmseVar.c = this.c;
+        cmseVar.a = this.a;
+        cmseVar.d = this.d;
+        cmseVar.j = this.l;
+        cmseVar.e(this.f);
+        cmseVar.k = this.m;
+        cmseVar.f(this.o);
+        cmseVar.g(this.n);
         byte[] bArr = this.g;
         if (bArr != null) {
-            ckjzVar.f = bArr;
+            cmseVar.f = bArr;
         }
         byte[] bArr2 = this.q;
         if (bArr2 != null) {
-            ckjzVar.e = bArr2;
+            cmseVar.e = bArr2;
         }
         List list = this.r;
         if (list != null) {
-            ckjzVar.d(list);
+            cmseVar.d(list);
         }
-        ckjzVar.i = this.h;
+        cmseVar.i = this.h;
         byte[] bArr3 = this.i;
         if (bArr3 != null) {
-            Iterator it = cizq.f(bArr3).iterator();
+            Iterator it = clhv.f(bArr3).iterator();
             while (it.hasNext()) {
-                ckjzVar.c((cfey) it.next());
+                cmseVar.c((chmk) it.next());
             }
         }
         DataElementCollection dataElementCollection = this.j;
         if (dataElementCollection != null) {
-            ckjzVar.g = dataElementCollection;
+            cmseVar.g = dataElementCollection;
         }
-        ckjzVar.h = this.k;
-        return ckjzVar;
+        cmseVar.h = this.k;
+        return cmseVar;
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final String e() {
         return this.f;
     }
@@ -159,19 +159,19 @@ public class PresenceDevice extends AbstractSafeParcelable implements cffe {
     public final boolean equals(Object obj) {
         if (obj instanceof PresenceDevice) {
             PresenceDevice presenceDevice = (PresenceDevice) obj;
-            if (arwb.b(Long.valueOf(this.a), Long.valueOf(presenceDevice.a)) && arwb.b(this.b, presenceDevice.b) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(presenceDevice.c)) && arwb.b(this.d, presenceDevice.d) && arwb.b(this.f, presenceDevice.f) && Arrays.equals(this.q, presenceDevice.q) && Arrays.equals(this.g, presenceDevice.g) && arwb.b(this.r, presenceDevice.r) && arwb.b(this.h, presenceDevice.h) && Arrays.equals(this.i, presenceDevice.i) && arwb.b(this.j, presenceDevice.j) && arwb.b(Integer.valueOf(this.k), Integer.valueOf(presenceDevice.k)) && arwb.b(Integer.valueOf(this.l), Integer.valueOf(presenceDevice.l)) && arwb.b(this.m, presenceDevice.m) && arwb.b(this.n, presenceDevice.n) && arwb.b(this.o, presenceDevice.o)) {
+            if (atyq.b(Long.valueOf(this.a), Long.valueOf(presenceDevice.a)) && atyq.b(this.b, presenceDevice.b) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(presenceDevice.c)) && atyq.b(this.d, presenceDevice.d) && atyq.b(this.f, presenceDevice.f) && Arrays.equals(this.q, presenceDevice.q) && Arrays.equals(this.g, presenceDevice.g) && atyq.b(this.r, presenceDevice.r) && atyq.b(this.h, presenceDevice.h) && Arrays.equals(this.i, presenceDevice.i) && atyq.b(this.j, presenceDevice.j) && atyq.b(Integer.valueOf(this.k), Integer.valueOf(presenceDevice.k)) && atyq.b(Integer.valueOf(this.l), Integer.valueOf(presenceDevice.l)) && atyq.b(this.m, presenceDevice.m) && atyq.b(this.n, presenceDevice.n) && atyq.b(this.o, presenceDevice.o)) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final List f() {
-        return cizq.f(this.i);
+        return clhv.f(this.i);
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final byte[] g() {
         byte[] bArr = this.q;
         if (bArr == null) {
@@ -187,10 +187,10 @@ public class PresenceDevice extends AbstractSafeParcelable implements cffe {
     public final List i() {
         List list = this.r;
         if (list != null) {
-            return eitj.i(list);
+            return elgo.i(list);
         }
-        int i = eitj.d;
-        return ejcb.a;
+        int i = elgo.d;
+        return elpg.a;
     }
 
     public final String toString() {
@@ -207,11 +207,11 @@ public class PresenceDevice extends AbstractSafeParcelable implements cffe {
         List list = this.r;
         PresenceIdentity presenceIdentity = this.h;
         byte[] bArr3 = this.i;
-        return String.format("PresenceDevice:<deviceId: %s, deviceName: %s, deviceType: %s, deviceImageUrl: %s, discoveryTimestampMillis: %s, endpointId: %s, endpointInfo: %s, bluetoothMacAddress hash: %s, actions: %s, identityType: %s, connectivityBytes hash: %s, dataElements: %s, discoveryMedium: %s, instance type %s, Dusi: %s, modelName: %s, manufacturer: %s>", valueOf, str, h, str2, valueOf2, str3, arrays, valueOf3, list, presenceIdentity, bArr3 != null ? Arrays.toString(bArr3) : null, this.j, Integer.valueOf(this.k), cffc.a(this.l), this.m, this.n, this.o);
+        return String.format("PresenceDevice:<deviceId: %s, deviceName: %s, deviceType: %s, deviceImageUrl: %s, discoveryTimestampMillis: %s, endpointId: %s, endpointInfo: %s, bluetoothMacAddress hash: %s, actions: %s, identityType: %s, connectivityBytes hash: %s, dataElements: %s, discoveryMedium: %s, instance type %s, Dusi: %s, modelName: %s, manufacturer: %s>", valueOf, str, h, str2, valueOf2, str3, arrays, valueOf3, list, presenceIdentity, bArr3 != null ? Arrays.toString(bArr3) : null, this.j, Integer.valueOf(this.k), chmo.a(this.l), this.m, this.n, this.o);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        ckka.a(this, parcel, i);
+        cmsf.a(this, parcel, i);
     }
 }

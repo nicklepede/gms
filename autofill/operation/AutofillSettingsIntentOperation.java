@@ -2,19 +2,19 @@ package com.google.android.gms.autofill.operation;
 
 import com.google.android.gms.R;
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
-import defpackage.anxy;
-import defpackage.aojj;
-import defpackage.asew;
-import defpackage.asqh;
-import defpackage.fldt;
+import defpackage.apzq;
+import defpackage.aqlc;
+import defpackage.auiq;
+import defpackage.auub;
+import defpackage.fnvd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class AutofillSettingsIntentOperation extends anxy {
-    @Override // defpackage.anxy
+public final class AutofillSettingsIntentOperation extends apzq {
+    @Override // defpackage.apzq
     public final GoogleSettingsItem b() {
-        if (asqh.c() && fldt.a.a().D()) {
-            return new GoogleSettingsItem(f("com.google.android.gms.autofill.ACTION_SETTINGS"), 8, R.string.autofill_label, aojj.AUTOFILL_WITH_GOOGLE_ITEM, asew.DEFAULT_AUTOFILL);
+        if (auub.c() && fnvd.a.lK().D()) {
+            return new GoogleSettingsItem(f("com.google.android.gms.autofill.ACTION_SETTINGS"), 8, R.string.autofill_label, aqlc.AUTOFILL_WITH_GOOGLE_ITEM, auiq.DEFAULT_AUTOFILL);
         }
         return null;
     }

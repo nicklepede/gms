@@ -4,12 +4,12 @@ import android.os.Parcel;
 import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.ExternalApplicationLink;
 import com.google.android.gms.reminders.model.ExternalApplicationLinkEntity;
-import defpackage.cxeb;
-import defpackage.cxej;
+import defpackage.cznx;
+import defpackage.czof;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class ExternalApplicationLinkRef extends cxeb implements ExternalApplicationLink {
+public class ExternalApplicationLinkRef extends cznx implements ExternalApplicationLink {
     public ExternalApplicationLinkRef(DataHolder dataHolder, int i, String str) {
         super(dataHolder, i, str);
     }
@@ -29,7 +29,7 @@ public class ExternalApplicationLinkRef extends cxeb implements ExternalApplicat
         return 0;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof ExternalApplicationLink)) {
             return false;
@@ -40,18 +40,18 @@ public class ExternalApplicationLinkRef extends cxeb implements ExternalApplicat
         return ExternalApplicationLinkEntity.d(this, (ExternalApplicationLink) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return ExternalApplicationLinkEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new ExternalApplicationLinkEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxej.a(new ExternalApplicationLinkEntity(this), parcel);
+        czof.a(new ExternalApplicationLinkEntity(this), parcel);
     }
 }

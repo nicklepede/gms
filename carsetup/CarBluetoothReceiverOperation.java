@@ -10,96 +10,93 @@ import android.location.LocationManager;
 import android.os.Build;
 import android.os.PowerManager;
 import com.google.android.chimera.IntentOperation;
-import defpackage.albn;
-import defpackage.alsn;
-import defpackage.also;
-import defpackage.alst;
-import defpackage.alsu;
-import defpackage.alsv;
-import defpackage.alvs;
-import defpackage.alwx;
-import defpackage.asqh;
-import defpackage.eiif;
-import defpackage.eijj;
-import defpackage.eiuu;
-import defpackage.ejfg;
-import defpackage.ejhh;
-import defpackage.flwu;
-import defpackage.flwx;
-import defpackage.flxe;
+import defpackage.ancy;
+import defpackage.anty;
+import defpackage.antz;
+import defpackage.anue;
+import defpackage.anuf;
+import defpackage.anug;
+import defpackage.anxc;
+import defpackage.anxd;
+import defpackage.anyi;
+import defpackage.auub;
+import defpackage.ekvk;
+import defpackage.ekwo;
+import defpackage.elhz;
+import defpackage.elsn;
+import defpackage.eluq;
+import defpackage.food;
+import defpackage.foog;
+import defpackage.foon;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CarBluetoothReceiverOperation extends IntentOperation {
-    private static final ejhh a = albn.a("CAR.BTOP");
+    private static final eluq a = ancy.a("CAR.BTOP");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        alst alstVar;
+        anue anueVar;
         PackageInfo packageInfo;
-        if (asqh.g()) {
-            a.h().ah(2605).x("Escape Pod is enabled, so ignoring intent.");
+        if (auub.g()) {
+            a.h().ai(2609).x("Escape Pod is enabled, so ignoring intent.");
             return;
         }
-        if (alst.a != null) {
-            alstVar = alst.a;
+        if (anue.a != null) {
+            anueVar = anue.a;
         } else {
-            synchronized (alst.class) {
-                if (alst.a == null) {
-                    alst.a = new alst(getApplicationContext());
+            synchronized (anue.class) {
+                if (anue.a == null) {
+                    anue.a = new anue(getApplicationContext());
                 }
             }
-            alstVar = alst.a;
+            anueVar = anue.a;
         }
-        alstVar.e = flwu.d();
+        anueVar.e = food.d();
         BluetoothDevice bluetoothDevice = (BluetoothDevice) intent.getParcelableExtra("android.bluetooth.device.extra.DEVICE");
         intent.getAction();
         if (bluetoothDevice == null) {
-            alstVar.b.h().ah(2790).x("Received bluetooth connected event but device details missing");
+            anueVar.b.h().ai(2794).x("Received bluetooth connected event but device details missing");
         } else if (!"android.bluetooth.device.action.UUID".equals(intent.getAction())) {
-            int a2 = alsu.a(intent);
+            int a2 = anuf.a(intent);
             if (a2 == 2) {
-                boolean b = flxe.a.a().b() ? flxe.c() && alsu.b(bluetoothDevice.getUuids()) : alsu.b(bluetoothDevice.getUuids());
-                boolean c = alsu.c(intent);
+                boolean b = foon.a.lK().b() ? foon.c() && anuf.b(bluetoothDevice.getUuids()) : anuf.b(bluetoothDevice.getUuids());
+                boolean c = anuf.c(intent);
                 if (b) {
-                    alstVar.b("android.bluetooth.device.action.ACL_CONNECTED", bluetoothDevice, true, false);
-                } else if (alstVar.e && c && alstVar.c(bluetoothDevice, false)) {
-                    alstVar.b("android.bluetooth.device.action.ACL_CONNECTED", bluetoothDevice, false, true);
+                    anueVar.c(bluetoothDevice, true, false);
+                } else if (anueVar.e && c && anueVar.b(bluetoothDevice, false)) {
+                    anueVar.c(bluetoothDevice, false, true);
                 }
             } else if (a2 == 0) {
-                alstVar.d.set(false);
-                boolean c2 = alsu.c(intent);
-                if (alstVar.e && c2 && alstVar.c(bluetoothDevice, true)) {
-                    if (flwu.a.a().e()) {
-                        alstVar.b.h().ah(2785).x("Stop CarStartupService");
-                        alstVar.c.stopService(alst.a("android.bluetooth.device.action.ACL_DISCONNECTED"));
-                    } else {
-                        alstVar.b("android.bluetooth.device.action.ACL_DISCONNECTED", bluetoothDevice, false, true);
-                    }
+                anueVar.d.set(false);
+                boolean c2 = anuf.c(intent);
+                if (anueVar.e && c2 && anueVar.b(bluetoothDevice, true)) {
+                    anueVar.b.h().ai(2789).x("Stop CarStartupService");
+                    anueVar.c.stopService(anue.a("android.bluetooth.device.action.ACL_DISCONNECTED"));
                 }
             }
-        } else if (Build.VERSION.SDK_INT < 30 && alsu.b(intent.getParcelableArrayExtra("android.bluetooth.device.extra.UUID"))) {
-            alstVar.b("android.bluetooth.device.action.ACL_CONNECTED", bluetoothDevice, true, false);
+        } else if (Build.VERSION.SDK_INT < 30 && anuf.b(intent.getParcelableArrayExtra("android.bluetooth.device.extra.UUID"))) {
+            anueVar.c(bluetoothDevice, true, false);
         }
-        if (flwx.c()) {
-            ejhh ejhhVar = alsv.a;
+        if (foog.c()) {
+            eluq eluqVar = anug.a;
             BluetoothDevice bluetoothDevice2 = (BluetoothDevice) intent.getParcelableExtra("android.bluetooth.device.extra.DEVICE");
             if (bluetoothDevice2 == null) {
-                alsv.a.j().ah(2800).x("PreSetupLaunchHelper: Bluetooth device is null");
+                anug.a.j().ai(2804).x("PreSetupLaunchHelper: Bluetooth device is null");
                 return;
             }
             UsbAccessory[] accessoryList = ((UsbManager) getSystemService(UsbManager.class)).getAccessoryList();
             if (accessoryList != null && accessoryList.length > 0) {
-                alsv.a.j().ah(2799).x("Suppressing WiFi triggered flow due to likely USB Head Unit connection");
+                anug.a.j().ai(2803).x("Suppressing WiFi triggered flow due to likely USB Head Unit connection");
                 return;
             }
-            if (alsu.a(intent) == 2) {
-                if (!alsu.c(intent)) {
-                    flwx flwxVar = flwx.a;
-                    if (flwxVar.a().d()) {
-                        eiuu F = eiuu.F(eijj.e(',').d().l(flwxVar.a().c()));
-                        String b2 = eiif.b(bluetoothDevice2.getName());
-                        ejfg listIterator = F.listIterator();
+            if (anuf.a(intent) == 2) {
+                if (!anuf.c(intent)) {
+                    foog foogVar = foog.a;
+                    if (foogVar.lK().d()) {
+                        elhz F = elhz.F(ekwo.e(',').d().l(foogVar.lK().c()));
+                        String b2 = ekvk.b(bluetoothDevice2.getName());
+                        elsn listIterator = F.listIterator();
                         while (listIterator.hasNext()) {
                             if (b2.contains((String) listIterator.next())) {
                             }
@@ -108,12 +105,16 @@ public class CarBluetoothReceiverOperation extends IntentOperation {
                     }
                     return;
                 }
-                if (alsu.b(bluetoothDevice2.getUuids())) {
-                    ejhh ejhhVar2 = also.a;
+                if (anuf.b(bluetoothDevice2.getUuids())) {
+                    eluq eluqVar2 = antz.a;
                     PackageManager packageManager = getPackageManager();
-                    if (flwx.c() && flxe.c() && !alvs.a.b(this) && !alvs.a.c(this)) {
-                        if (Build.VERSION.SDK_INT < flwx.a.a().a()) {
-                            also.a.j().ah(2778).x("SDK version below wifi enabled version");
+                    if (foog.c() && foon.c()) {
+                        anxc anxcVar = anxd.a;
+                        if (anxcVar.b(this) || anxcVar.c(this)) {
+                            return;
+                        }
+                        if (Build.VERSION.SDK_INT < foog.a.lK().a()) {
+                            antz.a.j().ai(2782).x("SDK version below wifi enabled version");
                             return;
                         }
                         try {
@@ -121,25 +122,25 @@ public class CarBluetoothReceiverOperation extends IntentOperation {
                         } catch (PackageManager.NameNotFoundException unused) {
                             packageInfo = null;
                         }
-                        if (packageInfo == null && flwx.a.a().h()) {
-                            also.a.j().ah(2777).x("Gearhead not installed; update flow only enabled");
+                        if (packageInfo == null && foog.a.lK().h()) {
+                            antz.a.j().ai(2781).x("Gearhead not installed; update flow only enabled");
                             return;
                         }
-                        if (packageInfo != null && packageManager.checkPermission("android.permission.ACCESS_COARSE_LOCATION", "com.google.android.projection.gearhead") != 0 && !flwx.a.a().g()) {
-                            also.a.j().ah(2776).x("Location permission denied on Android Auto");
+                        if (packageInfo != null && packageManager.checkPermission("android.permission.ACCESS_COARSE_LOCATION", "com.google.android.projection.gearhead") != 0 && !foog.a.lK().g()) {
+                            antz.a.j().ai(2780).x("Location permission denied on Android Auto");
                             return;
                         }
-                        if (!((LocationManager) getSystemService("location")).isProviderEnabled("gps") && !flwx.a.a().f()) {
-                            also.a.j().ah(2775).x("Location Services disabled");
+                        if (!((LocationManager) getSystemService("location")).isProviderEnabled("gps") && !foog.a.lK().f()) {
+                            antz.a.j().ai(2779).x("Location Services disabled");
                             return;
                         }
-                        if (((PowerManager) getSystemService("power")).isPowerSaveMode() && !flwx.a.a().e()) {
-                            also.a.j().ah(2774).x("Device in battery saver mode");
+                        if (((PowerManager) getSystemService("power")).isPowerSaveMode() && !foog.a.lK().e()) {
+                            antz.a.j().ai(2778).x("Device in battery saver mode");
                             return;
                         }
-                        int a3 = new alsn(this).a();
-                        int i = alwx.a;
-                        alwx.a(this, 2, a3, new Intent().setClassName("com.google.android.projection.gearhead", flwx.a.a().b()));
+                        int a3 = new anty(this).a();
+                        int i = anyi.a;
+                        anyi.a(this, 2, a3, new Intent().setClassName("com.google.android.projection.gearhead", foog.a.lK().b()));
                     }
                 }
             }

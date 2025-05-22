@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ayvz;
-import defpackage.aywm;
-import defpackage.aywn;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bazt;
+import defpackage.bbag;
+import defpackage.bbah;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class GetApiAvailabilityParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayvz();
-    public aywn a;
+    public static final Parcelable.Creator CREATOR = new bazt();
+    public bbah a;
 
     private GetApiAvailabilityParams() {
     }
@@ -26,7 +26,7 @@ public final class GetApiAvailabilityParams extends AbstractSafeParcelable {
             return true;
         }
         if (obj instanceof GetApiAvailabilityParams) {
-            return arwb.b(this.a, ((GetApiAvailabilityParams) obj).a);
+            return atyq.b(this.a, ((GetApiAvailabilityParams) obj).a);
         }
         return false;
     }
@@ -37,19 +37,19 @@ public final class GetApiAvailabilityParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.c(parcel, a);
     }
 
     public GetApiAvailabilityParams(IBinder iBinder) {
-        aywn aywmVar;
+        bbah bbagVar;
         if (iBinder == null) {
-            aywmVar = null;
+            bbagVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.dtdi.core.internal.IGetApiAvailabilityCallback");
-            aywmVar = queryLocalInterface instanceof aywn ? (aywn) queryLocalInterface : new aywm(iBinder);
+            bbagVar = queryLocalInterface instanceof bbah ? (bbah) queryLocalInterface : new bbag(iBinder);
         }
-        this.a = aywmVar;
+        this.a = bbagVar;
     }
 }

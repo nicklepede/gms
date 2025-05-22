@@ -2,9 +2,9 @@ package com.google.android.gms.libs.punchclock.tracing;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener2;
-import defpackage.egkp;
+import defpackage.eixs;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public abstract class TracingSensorEventListener2 extends TracingSensorEventListener implements SensorEventListener2 {
     protected TracingSensorEventListener2() {
@@ -15,7 +15,7 @@ public abstract class TracingSensorEventListener2 extends TracingSensorEventList
 
     @Override // android.hardware.SensorEventListener2
     public final void onFlushCompleted(Sensor sensor) {
-        egkp a = this.f.a();
+        eixs a = this.f.a();
         try {
             c();
             if (a != null) {

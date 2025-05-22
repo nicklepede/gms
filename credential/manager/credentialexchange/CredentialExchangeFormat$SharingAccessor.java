@@ -1,21 +1,21 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.audl;
-import defpackage.fipp;
-import defpackage.fvbo;
+import defpackage.awhq;
+import defpackage.flfm;
+import defpackage.fxxm;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
 public final class CredentialExchangeFormat$SharingAccessor {
-    public final audl a;
+    public final awhq a;
     public final String b;
     public final String c;
     public final Set d;
 
-    public CredentialExchangeFormat$SharingAccessor(audl audlVar, String str, String str2, Set set) {
-        this.a = audlVar;
+    public CredentialExchangeFormat$SharingAccessor(awhq awhqVar, String str, String str2, Set set) {
+        this.a = awhqVar;
         this.b = str;
         this.c = str2;
         this.d = set;
@@ -29,7 +29,7 @@ public final class CredentialExchangeFormat$SharingAccessor {
             return false;
         }
         CredentialExchangeFormat$SharingAccessor credentialExchangeFormat$SharingAccessor = (CredentialExchangeFormat$SharingAccessor) obj;
-        return this.a == credentialExchangeFormat$SharingAccessor.a && fvbo.n(this.b, credentialExchangeFormat$SharingAccessor.b) && fvbo.n(this.c, credentialExchangeFormat$SharingAccessor.c) && fvbo.n(this.d, credentialExchangeFormat$SharingAccessor.d);
+        return this.a == credentialExchangeFormat$SharingAccessor.a && fxxm.n(this.b, credentialExchangeFormat$SharingAccessor.b) && fxxm.n(this.c, credentialExchangeFormat$SharingAccessor.c) && fxxm.n(this.d, credentialExchangeFormat$SharingAccessor.d);
     }
 
     public final int hashCode() {

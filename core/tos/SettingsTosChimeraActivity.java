@@ -5,23 +5,23 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.webkit.WebView;
 import com.google.android.chimera.android.Activity;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.top;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.vkp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SettingsTosChimeraActivity extends Activity {
     public WebView a;
     private Dialog b;
-    private final top c = new top(this);
+    private final vkp c = new vkp(this);
 
     static {
-        asot.b("SettingsTosActivity", asej.CORE);
+        ausn.b("SettingsTosActivity", auid.CORE);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:34:0x00e1  */
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -34,7 +34,7 @@ public class SettingsTosChimeraActivity extends Activity {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.core.tos.SettingsTosChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         Dialog dialog = this.b;
         if (dialog != null && dialog.isShowing()) {
@@ -43,13 +43,13 @@ public class SettingsTosChimeraActivity extends Activity {
         super.onDestroy();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onNavigateUp() {
         onBackPressed();
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         String url = this.a.getUrl();
         if (!TextUtils.isEmpty(url)) {

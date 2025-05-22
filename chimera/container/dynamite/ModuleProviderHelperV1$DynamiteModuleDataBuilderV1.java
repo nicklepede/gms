@@ -2,10 +2,10 @@ package com.google.android.gms.chimera.container.dynamite;
 
 import com.google.android.gms.dynamite.DynamiteModuleData;
 import com.google.android.gms.dynamiteloader.DynamiteFlags;
-import defpackage.arxd;
-import defpackage.pov;
+import defpackage.atzs;
+import defpackage.rhz;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ModuleProviderHelperV1$DynamiteModuleDataBuilderV1 extends DynamiteModuleData {
     public static final byte[] a = new byte[0];
@@ -52,6 +52,6 @@ public class ModuleProviderHelperV1$DynamiteModuleDataBuilderV1 extends Dynamite
 
     @Override // com.google.android.gms.dynamite.DynamiteModuleData
     public final byte[] h() {
-        return arxd.n(DynamiteFlags.r(pov.b()));
+        return atzs.n(DynamiteFlags.r(rhz.b()));
     }
 }

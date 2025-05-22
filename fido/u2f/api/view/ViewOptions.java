@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fido.common.Transport;
-import defpackage.arxc;
-import defpackage.bbji;
-import defpackage.bcsm;
-import defpackage.bcsn;
+import defpackage.atzr;
+import defpackage.bdnf;
+import defpackage.betz;
+import defpackage.beua;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class ViewOptions extends AbstractSafeParcelable implements bbji {
-    public static final Parcelable.Creator CREATOR = new bcsn();
+public class ViewOptions extends AbstractSafeParcelable implements bdnf {
+    public static final Parcelable.Creator CREATOR = new beua();
     private final int a;
     public Boolean c;
 
@@ -30,16 +30,16 @@ public class ViewOptions extends AbstractSafeParcelable implements bbji {
     public static com.google.android.gms.fido.u2f.api.view.ViewOptions f(org.json.JSONObject r8) {
         /*
             java.lang.String r0 = "viewName"
-            java.lang.String r0 = r8.getString(r0)     // Catch: defpackage.bcsl -> Lac
-            bcsm[] r1 = defpackage.bcsm.values()     // Catch: defpackage.bcsl -> Lac
-            int r2 = r1.length     // Catch: defpackage.bcsl -> Lac
+            java.lang.String r0 = r8.getString(r0)     // Catch: defpackage.bety -> Lac
+            betz[] r1 = defpackage.betz.values()     // Catch: defpackage.bety -> Lac
+            int r2 = r1.length     // Catch: defpackage.bety -> Lac
             r3 = 0
             r4 = r3
         Ld:
             if (r4 >= r2) goto La6
-            r5 = r1[r4]     // Catch: defpackage.bcsl -> Lac
-            java.lang.String r6 = r5.j     // Catch: defpackage.bcsl -> Lac
-            boolean r7 = r0.equals(r6)     // Catch: defpackage.bcsl -> Lac
+            r5 = r1[r4]     // Catch: defpackage.bety -> Lac
+            java.lang.String r6 = r5.j     // Catch: defpackage.bety -> Lac
+            boolean r7 = r0.equals(r6)     // Catch: defpackage.bety -> Lac
             if (r7 == 0) goto La2
             int r0 = r5.ordinal()
             switch(r0) {
@@ -131,14 +131,14 @@ public class ViewOptions extends AbstractSafeParcelable implements bbji {
             int r4 = r4 + 1
             goto Ld
         La6:
-            bcsl r8 = new bcsl     // Catch: defpackage.bcsl -> Lac
-            r8.<init>(r0)     // Catch: defpackage.bcsl -> Lac
-            throw r8     // Catch: defpackage.bcsl -> Lac
+            bety r8 = new bety     // Catch: defpackage.bety -> Lac
+            r8.<init>(r0)     // Catch: defpackage.bety -> Lac
+            throw r8     // Catch: defpackage.bety -> Lac
         Lac:
             r8 = move-exception
             org.json.JSONException r0 = new org.json.JSONException
             java.lang.String r8 = r8.getMessage()
-            java.lang.String r8 = defpackage.eiif.b(r8)
+            java.lang.String r8 = defpackage.ekvk.b(r8)
             r0.<init>(r8)
             throw r0
         */
@@ -167,7 +167,7 @@ public class ViewOptions extends AbstractSafeParcelable implements bbji {
         throw new UnsupportedOperationException("getTransport() unimplemented");
     }
 
-    public bcsm d() {
+    public betz d() {
         throw new UnsupportedOperationException("This method must be overwritten by subclasses");
     }
 
@@ -181,9 +181,9 @@ public class ViewOptions extends AbstractSafeParcelable implements bbji {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, b());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, b());
+        atzr.c(parcel, a);
     }
 
     public ViewOptions() {

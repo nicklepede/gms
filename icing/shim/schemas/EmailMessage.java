@@ -1,14 +1,14 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eiif;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.ekvk;
+import defpackage.elgo;
+import defpackage.elpg;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class EmailMessage extends Thing {
     public final String a;
@@ -33,27 +33,27 @@ public final class EmailMessage extends Thing {
         List list14;
         List list15;
         List list16;
-        this.a = eiif.b(str4);
+        this.a = ekvk.b(str4);
         this.b = person;
         if (list3 != null) {
             list10 = DesugarCollections.unmodifiableList(list3);
         } else {
-            int i = eitj.d;
-            list10 = ejcb.a;
+            int i = elgo.d;
+            list10 = elpg.a;
         }
         this.c = list10;
         if (list4 != null) {
             list11 = DesugarCollections.unmodifiableList(list4);
         } else {
-            int i2 = eitj.d;
-            list11 = ejcb.a;
+            int i2 = elgo.d;
+            list11 = elpg.a;
         }
         this.d = list11;
         if (list5 != null) {
             list12 = DesugarCollections.unmodifiableList(list5);
         } else {
-            int i3 = eitj.d;
-            list12 = ejcb.a;
+            int i3 = elgo.d;
+            list12 = elpg.a;
         }
         this.e = list12;
         this.f = conversation;
@@ -61,32 +61,32 @@ public final class EmailMessage extends Thing {
         if (list6 != null) {
             list13 = DesugarCollections.unmodifiableList(list6);
         } else {
-            int i4 = eitj.d;
-            list13 = ejcb.a;
+            int i4 = elgo.d;
+            list13 = elpg.a;
         }
         this.h = list13;
         if (list7 != null) {
             list14 = DesugarCollections.unmodifiableList(list7);
         } else {
-            int i5 = eitj.d;
-            list14 = ejcb.a;
+            int i5 = elgo.d;
+            list14 = elpg.a;
         }
         this.i = list14;
         if (list8 != null) {
             list15 = DesugarCollections.unmodifiableList(list8);
         } else {
-            int i6 = eitj.d;
-            list15 = ejcb.a;
+            int i6 = elgo.d;
+            list15 = elpg.a;
         }
         this.j = list15;
         if (list9 != null) {
             list16 = DesugarCollections.unmodifiableList(list9);
         } else {
-            int i7 = eitj.d;
-            list16 = ejcb.a;
+            int i7 = elgo.d;
+            list16 = elpg.a;
         }
         this.k = list16;
-        this.l = eiif.b(str5);
+        this.l = ekvk.b(str5);
     }
 
     @Override // com.google.android.gms.icing.shim.schemas.Thing

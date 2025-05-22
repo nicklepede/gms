@@ -6,16 +6,16 @@ import android.os.Parcelable;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bzij;
+import defpackage.atzr;
+import defpackage.cbra;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class LocationAvailability extends AbstractSafeParcelable implements ReflectedParcelable {
     final int c;
     public static final LocationAvailability a = new LocationAvailability(0);
     public static final LocationAvailability b = new LocationAvailability(ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
-    public static final Parcelable.Creator CREATOR = new bzij();
+    public static final Parcelable.Creator CREATOR = new cbra();
 
     @Deprecated
     public LocationAvailability(int i) {
@@ -55,9 +55,9 @@ public final class LocationAvailability extends AbstractSafeParcelable implement
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.o(parcel, 4, this.c);
-        arxc.e(parcel, 6, c());
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.o(parcel, 4, this.c);
+        atzr.e(parcel, 6, c());
+        atzr.c(parcel, a2);
     }
 }

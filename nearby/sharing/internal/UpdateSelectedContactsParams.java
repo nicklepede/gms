@@ -6,20 +6,20 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.sharing.Contact;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cncm;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpku;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class UpdateSelectedContactsParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cncm();
+    public static final Parcelable.Creator CREATOR = new cpku();
     public Contact[] a;
     public Contact[] b;
-    public arbp c;
+    public atee c;
 
     private UpdateSelectedContactsParams() {
     }
@@ -30,7 +30,7 @@ public final class UpdateSelectedContactsParams extends AbstractSafeParcelable {
         }
         if (obj instanceof UpdateSelectedContactsParams) {
             UpdateSelectedContactsParams updateSelectedContactsParams = (UpdateSelectedContactsParams) obj;
-            if (Arrays.equals(this.a, updateSelectedContactsParams.a) && Arrays.equals(this.b, updateSelectedContactsParams.b) && arwb.b(this.c, updateSelectedContactsParams.c)) {
+            if (Arrays.equals(this.a, updateSelectedContactsParams.a) && Arrays.equals(this.b, updateSelectedContactsParams.b) && atyq.b(this.c, updateSelectedContactsParams.c)) {
                 return true;
             }
         }
@@ -43,23 +43,23 @@ public final class UpdateSelectedContactsParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.J(parcel, 1, this.a, i);
-        arxc.J(parcel, 2, this.b, i);
-        arxc.D(parcel, 3, this.c.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.J(parcel, 1, this.a, i);
+        atzr.J(parcel, 2, this.b, i);
+        atzr.D(parcel, 3, this.c.asBinder());
+        atzr.c(parcel, a);
     }
 
     public UpdateSelectedContactsParams(Contact[] contactArr, Contact[] contactArr2, IBinder iBinder) {
-        arbp arbnVar;
+        atee atecVar;
         if (iBinder == null) {
-            arbnVar = null;
+            atecVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbnVar = queryLocalInterface instanceof arbp ? (arbp) queryLocalInterface : new arbn(iBinder);
+            atecVar = queryLocalInterface instanceof atee ? (atee) queryLocalInterface : new atec(iBinder);
         }
         this.a = contactArr;
         this.b = contactArr2;
-        this.c = arbnVar;
+        this.c = atecVar;
     }
 }

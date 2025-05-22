@@ -2,47 +2,47 @@ package com.google.android.gms.findmydevice.spot.locationreporting;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bebo;
-import defpackage.belh;
-import defpackage.benu;
-import defpackage.beyh;
-import defpackage.bfdp;
-import defpackage.bfdr;
-import defpackage.bfiy;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bgda;
+import defpackage.bgmt;
+import defpackage.bgpg;
+import defpackage.bgzu;
+import defpackage.bhff;
+import defpackage.bhfh;
+import defpackage.bhko;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class LocationManagerModeChangeListenerIntentOperation extends IntentOperation {
-    private final benu a;
-    private final beyh b;
+    private final bgpg a;
+    private final bgzu b;
 
     static {
-        asot.b("LocationModeChangeIntOp", asej.FIND_MY_DEVICE_SPOT);
+        ausn.b("LocationModeChangeIntOp", auid.FIND_MY_DEVICE_SPOT);
     }
 
     public LocationManagerModeChangeListenerIntentOperation() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (bfdr.b() && bfdp.b(intent, "android.location.MODE_CHANGED")) {
+        if (bhfh.b() && bhff.b(intent, "android.location.MODE_CHANGED")) {
             this.b.a();
-            if (bfiy.a(this)) {
+            if (bhko.a(this)) {
                 return;
             }
-            benu benuVar = this.a;
-            synchronized (benuVar.b) {
-                benuVar.c.clear();
-                benuVar.d = 0;
+            bgpg bgpgVar = this.a;
+            synchronized (bgpgVar.b) {
+                bgpgVar.c.clear();
+                bgpgVar.d = 0;
             }
         }
     }
 
-    public LocationManagerModeChangeListenerIntentOperation(belh belhVar) {
-        this.a = belhVar.s();
-        this.b = belhVar.x();
+    public LocationManagerModeChangeListenerIntentOperation(bgmt bgmtVar) {
+        this.a = bgmtVar.s();
+        this.b = bgmtVar.x();
     }
 }

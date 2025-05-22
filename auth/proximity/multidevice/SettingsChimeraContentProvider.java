@@ -9,17 +9,17 @@ import android.os.Bundle;
 import com.google.android.chimera.ContentProvider;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.proximity.firstparty.SyncedCryptauthDevice;
-import defpackage.acmn;
-import defpackage.acnd;
-import defpackage.arwm;
+import defpackage.aemn;
+import defpackage.aend;
+import defpackage.atzb;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SettingsChimeraContentProvider extends ContentProvider {
     public static String a(Context context, String str) {
-        arwm.j();
-        SyncedCryptauthDevice b = acnd.b(context, str);
+        atzb.j();
+        SyncedCryptauthDevice b = aend.b(context, str);
         return b == null ? Build.MODEL : b.c;
     }
 
@@ -34,7 +34,7 @@ public class SettingsChimeraContentProvider extends ContentProvider {
         if ("getText".equals(str)) {
             Bundle bundle2 = new Bundle();
             if ("summary".equals(str3)) {
-                bundle2.putString("com.android.settings.summary", acmn.a(getContext()) ? getContext().getString(R.string.settings_summary_enabled) : getContext().getString(R.string.settings_summary_disabled, getContext().getString(R.string.common_phone_lowercase)));
+                bundle2.putString("com.android.settings.summary", aemn.a(getContext()) ? getContext().getString(R.string.settings_summary_enabled) : getContext().getString(R.string.settings_summary_disabled, getContext().getString(R.string.common_phone_lowercase)));
             }
             if (!bundle2.isEmpty()) {
                 return bundle2;

@@ -5,9 +5,9 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.SystemClock;
 import android.text.TextUtils;
-import defpackage.eijj;
+import defpackage.ekwo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class d implements b {
     public final int m;
@@ -62,7 +62,7 @@ public final class d implements b {
     @Override // com.google.android.gms.ads.nonagon.util.logging.cui.b
     /* renamed from: m, reason: merged with bridge method [inline-methods] */
     public final synchronized void h() {
-        if (((Boolean) com.google.android.gms.ads.internal.config.p.bn.g()).booleanValue()) {
+        if (((Boolean) com.google.android.gms.ads.internal.config.p.bo.g()).booleanValue()) {
             this.l = "Failed loading new engine";
         }
     }
@@ -94,9 +94,9 @@ public final class d implements b {
     @Override // com.google.android.gms.ads.nonagon.util.logging.cui.b
     /* renamed from: r, reason: merged with bridge method [inline-methods] */
     public final synchronized void j(Throwable th) {
-        if (((Boolean) com.google.android.gms.ads.internal.config.p.bn.g()).booleanValue()) {
+        if (((Boolean) com.google.android.gms.ads.internal.config.p.bo.g()).booleanValue()) {
             this.k = com.google.android.gms.ads.internal.report.d.d(th);
-            this.j = (String) eijj.e('\n').l(com.google.android.gms.ads.internal.report.d.c(th)).iterator().next();
+            this.j = (String) ekwo.e('\n').l(com.google.android.gms.ads.internal.report.d.c(th)).iterator().next();
         }
     }
 

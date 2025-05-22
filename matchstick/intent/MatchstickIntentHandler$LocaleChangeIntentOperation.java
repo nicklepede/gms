@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.LocaleList;
 import com.google.android.chimera.IntentOperation;
-import defpackage.doso;
+import defpackage.drcx;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MatchstickIntentHandler$LocaleChangeIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
@@ -21,6 +21,6 @@ public class MatchstickIntentHandler$LocaleChangeIntentOperation extends IntentO
         } else {
             Locale locale = baseContext.getResources().getConfiguration().locale;
         }
-        doso.b(getBaseContext()).h(169);
+        drcx.b(getBaseContext()).h(169);
     }
 }

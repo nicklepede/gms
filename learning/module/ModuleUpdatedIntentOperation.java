@@ -2,33 +2,33 @@ package com.google.android.gms.learning.module;
 
 import android.content.Intent;
 import com.google.android.chimera.config.ModuleManager;
-import defpackage.anya;
-import defpackage.bqem;
-import defpackage.bqex;
-import defpackage.bqkp;
-import defpackage.bqld;
-import defpackage.bqle;
-import defpackage.dtgd;
-import defpackage.dtgh;
-import defpackage.enre;
-import defpackage.ensj;
+import defpackage.apzs;
+import defpackage.bsmc;
+import defpackage.bsmn;
+import defpackage.bsse;
+import defpackage.bsss;
+import defpackage.bsst;
+import defpackage.dvql;
+import defpackage.dvqp;
+import defpackage.eqex;
+import defpackage.eqgc;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
-public class ModuleUpdatedIntentOperation extends anya {
-    @Override // defpackage.anya
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
+public class ModuleUpdatedIntentOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
-        bqld.a();
-        dtgd b = dtgd.b(this);
+        bsss.a();
+        dvql b = dvql.b(this);
         try {
-            bqem bqemVar = (bqem) b.c(bqem.class);
-            bqex bqexVar = (bqex) b.c(bqex.class);
-            long a = ((dtgh) b.c(dtgh.class)).a() - TimeUnit.DAYS.toMillis(bqemVar.z());
-            bqkp bqkpVar = (bqkp) b.c(bqkp.class);
+            bsmc bsmcVar = (bsmc) b.c(bsmc.class);
+            bsmn bsmnVar = (bsmn) b.c(bsmn.class);
+            long a = ((dvqp) b.c(dvqp.class)).a() - TimeUnit.DAYS.toMillis(bsmcVar.z());
+            bsse bsseVar = (bsse) b.c(bsse.class);
             ModuleManager moduleManager = ModuleManager.get(this);
             b.d();
-            ensj.t(bqkpVar.a(), new bqle(moduleManager, a, bqemVar, bqexVar, b), enre.a);
+            eqgc.t(bsseVar.a(), new bsst(moduleManager, a, bsmcVar, bsmnVar, b), eqex.a);
             if (b != null) {
                 b.close();
             }

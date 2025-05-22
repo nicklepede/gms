@@ -6,16 +6,16 @@ import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.djjj;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.dlvc;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class Asset extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new djjj();
+    public static final Parcelable.Creator CREATOR = new dlvc();
     public final byte[] a;
     public final String b;
     public final ParcelFileDescriptor c;
@@ -29,7 +29,7 @@ public class Asset extends AbstractSafeParcelable implements ReflectedParcelable
     }
 
     public static Asset a(ParcelFileDescriptor parcelFileDescriptor) {
-        arwm.s(parcelFileDescriptor);
+        atzb.s(parcelFileDescriptor);
         return new Asset(null, null, parcelFileDescriptor, null);
     }
 
@@ -41,7 +41,7 @@ public class Asset extends AbstractSafeParcelable implements ReflectedParcelable
             return false;
         }
         Asset asset = (Asset) obj;
-        return Arrays.equals(this.a, asset.a) && arwb.b(this.b, asset.b) && arwb.b(this.c, asset.c) && arwb.b(this.d, asset.d);
+        return Arrays.equals(this.a, asset.a) && atyq.b(this.b, asset.b) && atyq.b(this.c, asset.c) && atyq.b(this.d, asset.d);
     }
 
     public final int hashCode() {
@@ -79,14 +79,14 @@ public class Asset extends AbstractSafeParcelable implements ReflectedParcelable
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        arwm.s(parcel);
+        atzb.s(parcel);
         byte[] bArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 2, bArr, false);
-        arxc.v(parcel, 3, this.b, false);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 2, bArr, false);
+        atzr.v(parcel, 3, this.b, false);
         int i2 = i | 1;
-        arxc.t(parcel, 4, this.c, i2, false);
-        arxc.t(parcel, 5, this.d, i2, false);
-        arxc.c(parcel, a);
+        atzr.t(parcel, 4, this.c, i2, false);
+        atzr.t(parcel, 5, this.d, i2, false);
+        atzr.c(parcel, a);
     }
 }

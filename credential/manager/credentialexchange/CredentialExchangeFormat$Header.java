@@ -1,13 +1,13 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.fipp;
-import defpackage.fuvp;
-import defpackage.fvbo;
+import defpackage.flfm;
+import defpackage.fxrn;
+import defpackage.fxxm;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
 public final class CredentialExchangeFormat$Header {
     public final short a;
     public final String b;
@@ -16,7 +16,6 @@ public final class CredentialExchangeFormat$Header {
     public final List e;
 
     public CredentialExchangeFormat$Header(short s, String str, String str2, long j, List list) {
-        fvbo.f(list, "accounts");
         this.a = s;
         this.b = str;
         this.c = str2;
@@ -32,7 +31,7 @@ public final class CredentialExchangeFormat$Header {
             return false;
         }
         CredentialExchangeFormat$Header credentialExchangeFormat$Header = (CredentialExchangeFormat$Header) obj;
-        return this.a == credentialExchangeFormat$Header.a && fvbo.n(this.b, credentialExchangeFormat$Header.b) && fvbo.n(this.c, credentialExchangeFormat$Header.c) && this.d == credentialExchangeFormat$Header.d && fvbo.n(this.e, credentialExchangeFormat$Header.e);
+        return this.a == credentialExchangeFormat$Header.a && fxxm.n(this.b, credentialExchangeFormat$Header.b) && fxxm.n(this.c, credentialExchangeFormat$Header.c) && this.d == credentialExchangeFormat$Header.d && fxxm.n(this.e, credentialExchangeFormat$Header.e);
     }
 
     public final int hashCode() {
@@ -42,6 +41,6 @@ public final class CredentialExchangeFormat$Header {
     }
 
     public final String toString() {
-        return "Header(version=" + fuvp.a(this.a) + ", exporterRpId=" + this.b + ", exporterDisplayName=" + this.c + ", timestamp=" + this.d + ", accounts=" + this.e + ")";
+        return "Header(version=" + fxrn.a(this.a) + ", exporterRpId=" + this.b + ", exporterDisplayName=" + this.c + ", timestamp=" + this.d + ", accounts=" + this.e + ")";
     }
 }

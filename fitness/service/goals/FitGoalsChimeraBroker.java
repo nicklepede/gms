@@ -2,26 +2,26 @@ package com.google.android.gms.fitness.service.goals;
 
 import android.content.Context;
 import android.content.Intent;
-import defpackage.bgrt;
-import defpackage.bgrv;
-import defpackage.bgrz;
-import defpackage.bgsp;
-import defpackage.bxhl;
+import defpackage.biwj;
+import defpackage.biwl;
+import defpackage.biwp;
+import defpackage.bixf;
+import defpackage.bzqb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FitGoalsChimeraBroker extends bgrv {
-    @Override // defpackage.bgrv
-    public final /* bridge */ /* synthetic */ bgrt b(String str) {
-        return new bgsp(this, str, this.f);
+public class FitGoalsChimeraBroker extends biwl {
+    @Override // defpackage.biwl
+    public final /* bridge */ /* synthetic */ biwj b(String str) {
+        return new bixf(this, str, this.f);
     }
 
-    @Override // defpackage.bgrv
-    protected final bxhl c(Context context, bgrz bgrzVar) {
-        return new bxhl(context, 125, d(), 3, bgrzVar);
+    @Override // defpackage.biwl
+    protected final bzqb c(Context context, biwp biwpVar) {
+        return new bzqb(context, 125, d(), 3, biwpVar);
     }
 
-    @Override // defpackage.bgrv
+    @Override // defpackage.biwl
     protected final boolean h(Intent intent) {
         return "com.google.android.gms.fitness.GoalsApi".equals(intent.getAction());
     }

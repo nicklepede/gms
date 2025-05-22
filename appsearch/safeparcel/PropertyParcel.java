@@ -3,15 +3,15 @@ package com.google.android.gms.appsearch.safeparcel;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ugg;
+import defpackage.atzr;
+import defpackage.wcf;
 import j$.util.Objects;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class PropertyParcel extends AbstractSafeParcelable implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new ugg();
+    public static final Parcelable.Creator CREATOR = new wcf();
     public final String a;
     public final String[] b;
     public final long[] c;
@@ -89,14 +89,14 @@ public final class PropertyParcel extends AbstractSafeParcelable implements Parc
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.w(parcel, 2, this.b, false);
-        arxc.r(parcel, 3, this.c, false);
-        arxc.k(parcel, 4, this.d, false);
-        arxc.f(parcel, 5, this.e, false);
-        arxc.A(parcel, 6, this.f);
-        arxc.J(parcel, 7, this.g, i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.w(parcel, 2, this.b, false);
+        atzr.r(parcel, 3, this.c, false);
+        atzr.k(parcel, 4, this.d, false);
+        atzr.f(parcel, 5, this.e, false);
+        atzr.A(parcel, 6, this.f);
+        atzr.J(parcel, 7, this.g, i);
+        atzr.c(parcel, a);
     }
 }

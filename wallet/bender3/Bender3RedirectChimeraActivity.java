@@ -6,24 +6,24 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.webkit.URLUtil;
 import com.google.android.gms.R;
-import defpackage.ajt;
-import defpackage.eduu;
-import defpackage.eduw;
-import defpackage.edwf;
-import defpackage.efof;
-import defpackage.eiig;
-import defpackage.fsxm;
-import defpackage.fsxs;
-import defpackage.fvbo;
-import defpackage.fyuu;
-import defpackage.fyuv;
-import defpackage.qet;
+import defpackage.akc;
+import defpackage.eghv;
+import defpackage.eghx;
+import defpackage.egjg;
+import defpackage.eibi;
+import defpackage.ekvl;
+import defpackage.fvtg;
+import defpackage.fvtm;
+import defpackage.fxxm;
+import defpackage.gbro;
+import defpackage.gbrp;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class Bender3RedirectChimeraActivity extends qet {
+public class Bender3RedirectChimeraActivity extends rxx {
     boolean j = false;
-    eduw k;
+    eghx k;
 
     public static Intent a(Context context, Intent intent) {
         Intent intent2 = new Intent(context, (Class<?>) Bender3RedirectChimeraActivity.class);
@@ -35,12 +35,12 @@ public class Bender3RedirectChimeraActivity extends qet {
     }
 
     private final void k(String str, boolean z) {
-        eduw eduwVar = new eduw(this, str, z);
-        this.k = eduwVar;
-        Context context = eduwVar.a;
-        eduwVar.b = fyuu.a(context);
-        eduwVar.f = new fyuv(eduwVar);
-        if (ajt.b(context, eduwVar.b, eduwVar.f)) {
+        eghx eghxVar = new eghx(this, str, z);
+        this.k = eghxVar;
+        Context context = eghxVar.a;
+        eghxVar.b = gbro.a(context);
+        eghxVar.f = new gbrp(eghxVar);
+        if (akc.b(context, eghxVar.b, eghxVar.f)) {
             return;
         }
         setResult(0);
@@ -53,27 +53,27 @@ public class Bender3RedirectChimeraActivity extends qet {
             return;
         }
         try {
-            fvbo.f(str, "url");
+            fxxm.f(str, "url");
             if (!URLUtil.isNetworkUrl(str)) {
-                throw new eduu(4);
+                throw new eghv(4);
             }
-            if (TextUtils.isEmpty(fyuu.a(this))) {
-                throw new eduu(10);
+            if (TextUtils.isEmpty(gbro.a(this))) {
+                throw new eghv(10);
             }
             k(str, z);
-        } catch (eduu e) {
+        } catch (eghv e) {
             setResult(0, new Intent().putExtra("errorCode", e.a));
             finish();
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        if (fsxs.g()) {
+        if (fvtm.g()) {
             setTheme(R.style.Theme_Wallet_Blank);
         }
         super.onCreate(bundle);
-        if (fsxs.g()) {
+        if (fvtm.g()) {
             setTitle("");
         }
         if (bundle == null) {
@@ -93,51 +93,51 @@ public class Bender3RedirectChimeraActivity extends qet {
             return;
         }
         String stringExtra = getIntent().getStringExtra("initialUrl");
-        boolean d = fsxm.d();
-        if (!fsxm.a.a().c()) {
+        boolean d = fvtg.d();
+        if (!fvtg.a.lK().c()) {
             l(stringExtra, true, d);
             return;
         }
-        eiig.x(stringExtra);
-        if (efof.a(this, stringExtra)) {
+        ekvl.y(stringExtra);
+        if (eibi.a(this, stringExtra)) {
             return;
         }
         l(stringExtra, false, d);
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
-        eduw eduwVar = this.k;
-        if (eduwVar != null) {
-            edwf.a();
-            if (fsxm.c()) {
-                eduwVar.c = false;
+        eghx eghxVar = this.k;
+        if (eghxVar != null) {
+            egjg.a();
+            if (fvtg.c()) {
+                eghxVar.c = false;
             }
-            eduwVar.d = null;
-            eduwVar.e = null;
-            fyuv fyuvVar = eduwVar.f;
-            if (fyuvVar != null) {
-                eduwVar.a.unbindService(fyuvVar);
-                eduwVar.f = null;
+            eghxVar.d = null;
+            eghxVar.e = null;
+            gbrp gbrpVar = eghxVar.f;
+            if (gbrpVar != null) {
+                eghxVar.a.unbindService(gbrpVar);
+                eghxVar.f = null;
             }
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setResult(-1, (Intent) intent.getParcelableExtra("finishIntent"));
         finish();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         this.j = false;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         if (this.j) {
@@ -147,7 +147,7 @@ public class Bender3RedirectChimeraActivity extends qet {
         finish();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBoolean("redirectStarted", this.j);

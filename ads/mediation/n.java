@@ -1,10 +1,10 @@
 package com.google.android.gms.ads.mediation;
 
 import android.os.Bundle;
-import defpackage.tdk;
+import defpackage.uzk;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class n {
     public String a;
@@ -16,7 +16,7 @@ public final class n {
     public Double g;
     public String h;
     public String i;
-    public tdk j;
+    public uzk j;
     public Object k;
     public final Bundle l = new Bundle();
     public boolean m;

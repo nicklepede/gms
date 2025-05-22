@@ -5,49 +5,49 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import defpackage.a;
-import defpackage.ahwd;
-import defpackage.aixm;
-import defpackage.anya;
-import defpackage.asqg;
-import defpackage.asri;
-import defpackage.eike;
-import defpackage.fllt;
+import defpackage.ajwt;
+import defpackage.akyc;
+import defpackage.apzs;
+import defpackage.auua;
+import defpackage.auvc;
+import defpackage.ekxj;
+import defpackage.fodd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class CustomBackupDownloadSchedulingIntentOperation extends anya {
-    private static final ahwd a = new ahwd("CustomDownloadSchedulingIO");
-    private static final String b = asqg.f("com.google.android.gms.backup");
+public class CustomBackupDownloadSchedulingIntentOperation extends apzs {
+    private static final ajwt a = new ajwt("CustomDownloadSchedulingIO");
+    private static final String b = auua.f("com.google.android.gms.backup");
 
     private final boolean e() {
         PackageInfo packageInfo;
         if (Build.VERSION.SDK_INT < 26) {
-            return fllt.n();
+            return fodd.n();
         }
-        int b2 = asri.b();
+        int b2 = auvc.b();
         try {
             packageInfo = getApplicationContext().getPackageManager().getPackageInfo("com.google.android.gms", 2097152);
-            ahwd ahwdVar = a;
-            ahwdVar.j("bundled version: " + packageInfo.versionCode, new Object[0]);
-            ahwdVar.j(a.j(b2, "prev version: "), new Object[0]);
+            ajwt ajwtVar = a;
+            ajwtVar.j("bundled version: " + packageInfo.versionCode, new Object[0]);
+            ajwtVar.j(a.j(b2, "prev version: "), new Object[0]);
         } catch (PackageManager.NameNotFoundException e) {
             a.g("Package manager could not find GMSCore package", e, new Object[0]);
         }
         return b2 == packageInfo.versionCode;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        if (z || !fllt.o()) {
+        if (z || !fodd.o()) {
             return;
         }
         a.d("#onModuleUpdated. Scheduling CustomBackupDownloadStarterTask to run", new Object[0]);
         CustomBackupDownloadStarterTask.d(this);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
-        if (!e() && !fllt.o()) {
+        if (!e() && !fodd.o()) {
             a.d("#onContainerUpdated. CustomBackupDownloadStarterTask not scheduled since this was not the first GmsCore update after SuW", new Object[0]);
         } else {
             a.d("#onContainerUpdated. Scheduling CustomBackupDownloadStarterTask to run", new Object[0]);
@@ -55,36 +55,36 @@ public class CustomBackupDownloadSchedulingIntentOperation extends anya {
         }
     }
 
-    @Override // defpackage.anya, com.google.android.chimera.IntentOperation
+    @Override // defpackage.apzs, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         String action = intent.getAction();
-        eike.e(action);
+        ekxj.e(action);
         String valueOf = String.valueOf(action);
-        ahwd ahwdVar = a;
-        ahwdVar.j("Received Action: ".concat(valueOf), new Object[0]);
-        if (!fllt.m()) {
-            if (!fllt.a.a().aj() || !b.equals(intent.getAction()) || (!e() && !fllt.o())) {
+        ajwt ajwtVar = a;
+        ajwtVar.j("Received Action: ".concat(valueOf), new Object[0]);
+        if (!fodd.m()) {
+            if (!fodd.a.lK().aj() || !b.equals(intent.getAction()) || (!e() && !fodd.o())) {
                 super.onHandleIntent(intent);
                 return;
             } else {
-                ahwdVar.d("#FlagsCommitted. Scheduling CustomBackupDownloadStarterTask to run", new Object[0]);
+                ajwtVar.d("#FlagsCommitted. Scheduling CustomBackupDownloadStarterTask to run", new Object[0]);
                 CustomBackupDownloadStarterTask.d(this);
                 return;
             }
         }
-        ahwdVar.j("customBackupDownloadEnableSuwTriggerWithGmsUpdateCheck flag on", new Object[0]);
-        aixm aixmVar = new aixm(this);
-        if (!aixm.k()) {
-            ahwdVar.j("Flag to run custom backup downloads is off.", new Object[0]);
+        ajwtVar.j("customBackupDownloadEnableSuwTriggerWithGmsUpdateCheck flag on", new Object[0]);
+        akyc akycVar = new akyc(this);
+        if (!akyc.k()) {
+            ajwtVar.j("Flag to run custom backup downloads is off.", new Object[0]);
             return;
         }
-        if (aixmVar.i()) {
-            if (!aixmVar.f()) {
-                ahwdVar.j("No backups available to download.", new Object[0]);
+        if (akycVar.i()) {
+            if (!akycVar.f()) {
+                ajwtVar.j("No backups available to download.", new Object[0]);
                 return;
             }
-            ahwdVar.j("Restore token is available", new Object[0]);
-            if (e() || fllt.o()) {
+            ajwtVar.j("Restore token is available", new Object[0]);
+            if (e() || fodd.o()) {
                 CustomBackupDownloadStarterTask.d(this);
             }
         }

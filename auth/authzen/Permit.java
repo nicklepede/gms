@@ -4,10 +4,10 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zsn;
-import defpackage.zsq;
+import defpackage.absn;
+import defpackage.absq;
+import defpackage.atzb;
+import defpackage.atzr;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -16,10 +16,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class Permit extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zsq();
+    public static final Parcelable.Creator CREATOR = new absq();
     final int a;
     public final String b;
     public final String c;
@@ -32,13 +32,13 @@ public class Permit extends AbstractSafeParcelable {
 
     public Permit(int i, String str, String str2, String str3, PermitAccess permitAccess, Map map, Set set) {
         this.a = i;
-        arwm.q(str);
+        atzb.q(str);
         this.b = str;
-        arwm.q(str2);
+        atzb.q(str2);
         this.c = str2;
-        arwm.q(str3);
+        atzb.q(str3);
         this.d = str3;
-        arwm.s(permitAccess);
+        atzb.s(permitAccess);
         this.e = permitAccess;
         this.g = new LinkedHashMap(map);
         this.i = new HashSet(set);
@@ -74,18 +74,18 @@ public class Permit extends AbstractSafeParcelable {
     public final void writeToParcel(Parcel parcel, int i) {
         this.f = new ArrayList(this.g.values());
         this.h = new ArrayList(this.i);
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.y(parcel, 7, this.f, false);
-        arxc.x(parcel, 8, this.h, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.y(parcel, 7, this.f, false);
+        atzr.x(parcel, 8, this.h, false);
+        atzr.c(parcel, a);
     }
 
-    public Permit(zsn zsnVar) {
-        this(2, zsnVar.a, zsnVar.b, zsnVar.c, zsnVar.d, zsnVar.e, zsnVar.f);
+    public Permit(absn absnVar) {
+        this(2, absnVar.a, absnVar.b, absnVar.c, absnVar.d, absnVar.e, absnVar.f);
     }
 }

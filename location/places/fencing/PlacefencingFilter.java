@@ -3,16 +3,16 @@ package com.google.android.gms.location.places.fencing;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cafr;
+import defpackage.atzr;
+import defpackage.ccoi;
 import j$.util.DesugarCollections;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class PlacefencingFilter extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cafr();
+    public static final Parcelable.Creator CREATOR = new ccoi();
     final List a;
     final List b;
     final List c;
@@ -32,10 +32,10 @@ public class PlacefencingFilter extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.E(parcel, 2, this.b);
-        arxc.x(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.E(parcel, 2, this.b);
+        atzr.x(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 }

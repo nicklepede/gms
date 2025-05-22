@@ -3,110 +3,111 @@ package com.google.android.gms.platformconfigurator;
 import android.content.Intent;
 import android.net.Uri;
 import com.google.android.gms.platformconfigurator.PackageUpdateIntentOperation;
-import defpackage.anyc;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.cwhx;
-import defpackage.cwia;
-import defpackage.cwig;
-import defpackage.cwih;
-import defpackage.cwij;
-import defpackage.eiho;
-import defpackage.eiif;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.eiuu;
-import defpackage.ejcb;
-import defpackage.ejfg;
-import defpackage.ejhf;
-import defpackage.froa;
+import defpackage.apzu;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cyru;
+import defpackage.cyrx;
+import defpackage.cysd;
+import defpackage.cyse;
+import defpackage.cysg;
+import defpackage.ekut;
+import defpackage.ekvk;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elhz;
+import defpackage.elpg;
+import defpackage.elsn;
+import defpackage.eluo;
+import defpackage.fuib;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class PackageUpdateIntentOperation extends anyc {
+public class PackageUpdateIntentOperation extends apzu {
     public static final /* synthetic */ int a = 0;
-    private static final asot b = asot.b("PlatformConfigurator", asej.PLATFORM_CONFIGURATOR);
-    private final cwij c;
+    private static final ausn b = ausn.b("PlatformConfigurator", auid.PLATFORM_CONFIGURATOR);
+    private final cysg c;
 
     public PackageUpdateIntentOperation() {
         super(false);
-        this.c = cwij.b();
+        this.c = cysg.b();
     }
 
-    private static eitj g() {
-        eite eiteVar = new eite();
-        eiteVar.k(froa.a.a().f().b);
-        eiteVar.k(froa.a.a().e().b);
-        return eiteVar.g();
+    private static elgo g() {
+        elgj elgjVar = new elgj();
+        fuib fuibVar = fuib.a;
+        elgjVar.k(fuibVar.lK().f().b);
+        elgjVar.k(fuibVar.lK().e().b);
+        return elgjVar.g();
     }
 
-    @Override // defpackage.anyc
+    @Override // defpackage.apzu
     protected final void a(String str, Intent intent) {
-        final eiuu f = this.c.f(str);
+        final elhz f = this.c.f(str);
         try {
-            new cwig().a(new eiho() { // from class: cwib
-                @Override // defpackage.eiho
+            new cysd().a(new ekut() { // from class: cyry
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
                     int i = PackageUpdateIntentOperation.a;
-                    HashMap hashMap = new HashMap((eits) obj);
-                    ejfg listIterator = eiuu.this.listIterator();
+                    HashMap hashMap = new HashMap((elgx) obj);
+                    elsn listIterator = elhz.this.listIterator();
                     while (listIterator.hasNext()) {
-                        hashMap.remove(((cwih) listIterator.next()).a);
+                        hashMap.remove(((cyse) listIterator.next()).a);
                     }
-                    return eits.k(hashMap);
+                    return elgx.k(hashMap);
                 }
             });
         } catch (InterruptedException | ExecutionException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 8798)).x("failed to invalidate namespace registration data, check PersistedNamespaceListProtoDataStore configuration.");
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 8796)).x("failed to invalidate namespace registration data, check PersistedNamespaceListProtoDataStore configuration.");
         }
     }
 
-    @Override // defpackage.anyc
+    @Override // defpackage.apzu
     protected final void b(String str) {
-        eitj f = f(str);
-        int i = ((ejcb) f).c;
+        elgo f = f(str);
+        int i = ((elpg) f).c;
         for (int i2 = 0; i2 < i; i2++) {
-            cwhx.f((String) f.get(i2), str, this);
+            cyru.f((String) f.get(i2), str, this);
         }
     }
 
-    @Override // defpackage.anyc
+    @Override // defpackage.apzu
     protected final void d(String str, Intent intent) {
-        eitj f = f(str);
-        int i = ((ejcb) f).c;
+        elgo f = f(str);
+        int i = ((elpg) f).c;
         for (int i2 = 0; i2 < i; i2++) {
-            cwhx.f((String) f.get(i2), str, this);
+            cyru.f((String) f.get(i2), str, this);
         }
     }
 
-    final eitj f(String str) {
+    final elgo f(String str) {
         if (str.isEmpty()) {
-            int i = eitj.d;
-            return ejcb.a;
+            int i = elgo.d;
+            return elpg.a;
         }
-        eite eiteVar = new eite();
-        if (froa.j()) {
-            ejfg listIterator = this.c.f(str).listIterator();
+        elgj elgjVar = new elgj();
+        if (fuib.j()) {
+            elsn listIterator = this.c.f(str).listIterator();
             while (listIterator.hasNext()) {
-                eiteVar.i(((cwih) listIterator.next()).b);
+                elgjVar.i(((cyse) listIterator.next()).b);
             }
         } else {
-            eitj g = g();
-            int i2 = ((ejcb) g).c;
+            elgo g = g();
+            int i2 = ((elpg) g).c;
             for (int i3 = 0; i3 < i2; i3++) {
                 String str2 = (String) g.get(i3);
-                if (str.equals(cwhx.c(str2))) {
-                    eiteVar.i(cwia.a(str2.split(":", -1)[0]));
+                if (str.equals(cyru.c(str2))) {
+                    elgjVar.i(cyrx.a(str2.split(":", -1)[0]));
                 }
             }
         }
-        return eiteVar.g();
+        return elgjVar.g();
     }
 
-    @Override // defpackage.anyc, com.google.android.chimera.IntentOperation
+    @Override // defpackage.apzu, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Map map;
         Uri data = intent.getData();
@@ -114,23 +115,23 @@ public class PackageUpdateIntentOperation extends anyc {
             return;
         }
         String schemeSpecificPart = data.getSchemeSpecificPart();
-        if (!cwia.b() || eiif.c(schemeSpecificPart)) {
+        if (!cyrx.b() || ekvk.c(schemeSpecificPart)) {
             return;
         }
-        if (!froa.j()) {
-            eitj g = g();
-            int i = ((ejcb) g).c;
+        if (!fuib.j()) {
+            elgo g = g();
+            int i = ((elpg) g).c;
             int i2 = 0;
             while (i2 < i) {
-                boolean equals = schemeSpecificPart.equals(cwhx.c((String) g.get(i2)));
+                boolean equals = schemeSpecificPart.equals(cyru.c((String) g.get(i2)));
                 i2++;
                 if (equals) {
                 }
             }
             return;
         }
-        cwij cwijVar = this.c;
-        if (eiif.c(schemeSpecificPart) || (map = cwijVar.a) == null || !map.containsKey(schemeSpecificPart)) {
+        cysg cysgVar = this.c;
+        if (ekvk.c(schemeSpecificPart) || (map = cysgVar.a) == null || !map.containsKey(schemeSpecificPart)) {
             return;
         }
         super.onHandleIntent(intent);

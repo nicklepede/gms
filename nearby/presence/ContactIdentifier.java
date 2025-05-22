@@ -3,16 +3,16 @@ package com.google.android.gms.nearby.presence;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ckjb;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cmrg;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class ContactIdentifier extends AbstractSafeParcelable implements Cloneable {
-    public static final Parcelable.Creator CREATOR = new ckjb();
+    public static final Parcelable.Creator CREATOR = new cmrg();
     public final int a;
     public final String b;
 
@@ -33,7 +33,7 @@ public class ContactIdentifier extends AbstractSafeParcelable implements Cloneab
     public final boolean equals(Object obj) {
         if (obj instanceof ContactIdentifier) {
             ContactIdentifier contactIdentifier = (ContactIdentifier) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(contactIdentifier.a)) && arwb.b(this.b, contactIdentifier.b)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(contactIdentifier.a)) && atyq.b(this.b, contactIdentifier.b)) {
                 return true;
             }
         }
@@ -51,9 +51,9 @@ public class ContactIdentifier extends AbstractSafeParcelable implements Cloneab
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

@@ -7,17 +7,17 @@ import com.google.android.gms.clearcut.internal.LogVerifierResultParcelable;
 import com.google.android.gms.clearcut.internal.PlayLoggerContext;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.phenotype.ExperimentTokens;
-import defpackage.apuj;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.fidq;
+import defpackage.arxa;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.fktn;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class LogEventParcelable extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new apuj();
+    public static final Parcelable.Creator CREATOR = new arxa();
     private static final String[] m = new String[0];
     public PlayLoggerContext a;
     public final byte[] b;
@@ -30,12 +30,12 @@ public class LogEventParcelable extends AbstractSafeParcelable {
     public LogVerifierResultParcelable i;
     public final int j;
     public final DataCollectionIdentifierParcelable k;
-    public final fidq l;
+    public final fktn l;
     private final String[] n;
 
-    public LogEventParcelable(PlayLoggerContext playLoggerContext, fidq fidqVar, byte[] bArr, int[] iArr, String[] strArr, int[] iArr2, ExperimentTokens[] experimentTokensArr, boolean z, String[] strArr2, int i, DataCollectionIdentifierParcelable dataCollectionIdentifierParcelable) {
+    public LogEventParcelable(PlayLoggerContext playLoggerContext, fktn fktnVar, byte[] bArr, int[] iArr, String[] strArr, int[] iArr2, ExperimentTokens[] experimentTokensArr, boolean z, String[] strArr2, int i, DataCollectionIdentifierParcelable dataCollectionIdentifierParcelable) {
         this.a = playLoggerContext;
-        this.l = fidqVar;
+        this.l = fktnVar;
         this.b = bArr;
         this.c = iArr;
         this.d = strArr;
@@ -59,7 +59,7 @@ public class LogEventParcelable extends AbstractSafeParcelable {
         }
         if (obj instanceof LogEventParcelable) {
             LogEventParcelable logEventParcelable = (LogEventParcelable) obj;
-            if (arwb.b(this.a, logEventParcelable.a) && Arrays.equals(this.b, logEventParcelable.b) && Arrays.equals(this.c, logEventParcelable.c) && Arrays.equals(this.d, logEventParcelable.d) && arwb.b(this.l, logEventParcelable.l) && Arrays.equals(this.e, logEventParcelable.e) && Arrays.deepEquals(this.f, logEventParcelable.f) && Arrays.equals(this.g, logEventParcelable.g) && Arrays.equals(this.n, logEventParcelable.n) && this.h == logEventParcelable.h && arwb.b(this.i, logEventParcelable.i) && this.j == logEventParcelable.j && arwb.b(this.k, logEventParcelable.k)) {
+            if (atyq.b(this.a, logEventParcelable.a) && Arrays.equals(this.b, logEventParcelable.b) && Arrays.equals(this.c, logEventParcelable.c) && Arrays.equals(this.d, logEventParcelable.d) && atyq.b(this.l, logEventParcelable.l) && Arrays.equals(this.e, logEventParcelable.e) && Arrays.deepEquals(this.f, logEventParcelable.f) && Arrays.equals(this.g, logEventParcelable.g) && Arrays.equals(this.n, logEventParcelable.n) && this.h == logEventParcelable.h && atyq.b(this.i, logEventParcelable.i) && this.j == logEventParcelable.j && atyq.b(this.k, logEventParcelable.k)) {
                 return true;
             }
         }
@@ -105,20 +105,20 @@ public class LogEventParcelable extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.i(parcel, 3, this.b, false);
-        arxc.p(parcel, 4, this.c, false);
-        arxc.w(parcel, 5, this.d, false);
-        arxc.p(parcel, 6, this.e, false);
-        arxc.A(parcel, 7, this.f);
-        arxc.e(parcel, 8, this.h);
-        arxc.J(parcel, 9, this.g, i);
-        arxc.t(parcel, 11, this.i, i, false);
-        arxc.w(parcel, 12, a(), false);
-        arxc.o(parcel, 13, this.j);
-        arxc.t(parcel, 14, this.k, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.i(parcel, 3, this.b, false);
+        atzr.p(parcel, 4, this.c, false);
+        atzr.w(parcel, 5, this.d, false);
+        atzr.p(parcel, 6, this.e, false);
+        atzr.A(parcel, 7, this.f);
+        atzr.e(parcel, 8, this.h);
+        atzr.J(parcel, 9, this.g, i);
+        atzr.t(parcel, 11, this.i, i, false);
+        atzr.w(parcel, 12, a(), false);
+        atzr.o(parcel, 13, this.j);
+        atzr.t(parcel, 14, this.k, i, false);
+        atzr.c(parcel, a);
     }
 
     public LogEventParcelable(PlayLoggerContext playLoggerContext, byte[] bArr, int[] iArr, String[] strArr, int[] iArr2, byte[][] bArr2, boolean z, ExperimentTokens[] experimentTokensArr, LogVerifierResultParcelable logVerifierResultParcelable, String[] strArr2, int i, DataCollectionIdentifierParcelable dataCollectionIdentifierParcelable) {

@@ -1,44 +1,44 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.audh;
-import defpackage.fipo;
-import defpackage.fipt;
-import defpackage.fipu;
-import defpackage.fipw;
-import defpackage.fiqb;
-import defpackage.fiqq;
-import defpackage.firg;
-import defpackage.firp;
-import defpackage.fuwy;
-import defpackage.fvbo;
+import defpackage.awhm;
+import defpackage.flfl;
+import defpackage.flfq;
+import defpackage.flfr;
+import defpackage.flft;
+import defpackage.flfy;
+import defpackage.flgn;
+import defpackage.flhd;
+import defpackage.flhm;
+import defpackage.fxsw;
+import defpackage.fxxm;
 import java.lang.reflect.Constructor;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public final class CredentialExchangeFormat_AccountJsonAdapter extends fipo {
-    private final fipu a;
-    private final fipo b;
-    private final fipo c;
-    private final fipo d;
-    private final fipo e;
-    private final fipo f;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public final class CredentialExchangeFormat_AccountJsonAdapter extends flfl {
+    private final flfr a;
+    private final flfl b;
+    private final flfl c;
+    private final flfl d;
+    private final flfl e;
+    private final flfl f;
     private volatile Constructor g;
 
-    public CredentialExchangeFormat_AccountJsonAdapter(fiqq fiqqVar) {
-        fvbo.f(fiqqVar, "moshi");
-        this.a = fipt.a("id", "username", "email", "fullName", "collections", "items", "extensions");
-        fuwy fuwyVar = fuwy.a;
-        this.b = fiqqVar.d(String.class, fuwyVar, "id");
-        this.c = fiqqVar.d(String.class, fuwyVar, "fullName");
-        this.d = fiqqVar.d(firg.b(List.class, CredentialExchangeFormat$Collection.class), fuwyVar, "collections");
-        this.e = fiqqVar.d(firg.b(List.class, CredentialExchangeFormat$Item.class), fuwyVar, "items");
-        this.f = fiqqVar.d(firg.b(List.class, audh.class), fuwyVar, "extensions");
+    public CredentialExchangeFormat_AccountJsonAdapter(flgn flgnVar) {
+        fxxm.f(flgnVar, "moshi");
+        this.a = flfq.a("id", "username", "email", "fullName", "collections", "items", "extensions");
+        fxsw fxswVar = fxsw.a;
+        this.b = flgnVar.d(String.class, fxswVar, "id");
+        this.c = flgnVar.d(String.class, fxswVar, "fullName");
+        this.d = flgnVar.d(flhd.b(List.class, CredentialExchangeFormat$Collection.class), fxswVar, "collections");
+        this.e = flgnVar.d(flhd.b(List.class, CredentialExchangeFormat$Item.class), fxswVar, "items");
+        this.f = flgnVar.d(flhd.b(List.class, awhm.class), fxswVar, "extensions");
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ Object a(fipw fipwVar) {
-        fipwVar.i();
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ Object a(flft flftVar) {
+        flftVar.i();
         int i = -1;
         String str = null;
         String str2 = null;
@@ -47,129 +47,129 @@ public final class CredentialExchangeFormat_AccountJsonAdapter extends fipo {
         List list = null;
         List list2 = null;
         List list3 = null;
-        while (fipwVar.o()) {
-            switch (fipwVar.c(this.a)) {
+        while (flftVar.o()) {
+            switch (flftVar.c(this.a)) {
                 case -1:
-                    fipwVar.m();
-                    fipwVar.n();
+                    flftVar.m();
+                    flftVar.n();
                     break;
                 case 0:
-                    str = (String) this.b.a(fipwVar);
+                    str = (String) this.b.a(flftVar);
                     if (str == null) {
-                        throw firp.c("id", "id", fipwVar);
+                        throw flhm.c("id", "id", flftVar);
                     }
                     break;
                 case 1:
-                    str2 = (String) this.b.a(fipwVar);
+                    str2 = (String) this.b.a(flftVar);
                     if (str2 == null) {
-                        throw firp.c("username", "username", fipwVar);
+                        throw flhm.c("username", "username", flftVar);
                     }
                     break;
                 case 2:
-                    str3 = (String) this.b.a(fipwVar);
+                    str3 = (String) this.b.a(flftVar);
                     if (str3 == null) {
-                        throw firp.c("email", "email", fipwVar);
+                        throw flhm.c("email", "email", flftVar);
                     }
                     break;
                 case 3:
-                    str4 = (String) this.c.a(fipwVar);
+                    str4 = (String) this.c.a(flftVar);
                     i &= -9;
                     break;
                 case 4:
-                    list = (List) this.d.a(fipwVar);
+                    list = (List) this.d.a(flftVar);
                     if (list == null) {
-                        throw firp.c("collections", "collections", fipwVar);
+                        throw flhm.c("collections", "collections", flftVar);
                     }
                     break;
                 case 5:
-                    list2 = (List) this.e.a(fipwVar);
+                    list2 = (List) this.e.a(flftVar);
                     if (list2 == null) {
-                        throw firp.c("items", "items", fipwVar);
+                        throw flhm.c("items", "items", flftVar);
                     }
                     break;
                 case 6:
-                    list3 = (List) this.f.a(fipwVar);
+                    list3 = (List) this.f.a(flftVar);
                     if (list3 == null) {
-                        throw firp.c("extensions", "extensions", fipwVar);
+                        throw flhm.c("extensions", "extensions", flftVar);
                     }
                     i &= -65;
                     break;
             }
         }
-        fipwVar.k();
+        flftVar.k();
         if (i == -73) {
             if (str == null) {
-                throw firp.b("id", "id", fipwVar);
+                throw flhm.b("id", "id", flftVar);
             }
             if (str2 == null) {
-                throw firp.b("username", "username", fipwVar);
+                throw flhm.b("username", "username", flftVar);
             }
             if (str3 == null) {
-                throw firp.b("email", "email", fipwVar);
+                throw flhm.b("email", "email", flftVar);
             }
             if (list == null) {
-                throw firp.b("collections", "collections", fipwVar);
+                throw flhm.b("collections", "collections", flftVar);
             }
             if (list2 == null) {
-                throw firp.b("items", "items", fipwVar);
+                throw flhm.b("items", "items", flftVar);
             }
-            fvbo.d(list3, "null cannot be cast to non-null type kotlin.collections.List<com.google.android.gms.credential.manager.credentialexchange.CredentialExchangeFormat.Extension>");
+            fxxm.d(list3, "null cannot be cast to non-null type kotlin.collections.List<com.google.android.gms.credential.manager.credentialexchange.CredentialExchangeFormat.Extension>");
             return new CredentialExchangeFormat$Account(str, str2, str3, str4, list, list2, list3);
         }
         Constructor constructor = this.g;
         int i2 = i;
         if (constructor == null) {
             Class cls = Integer.TYPE;
-            fvbo.c(cls);
-            Class cls2 = firp.d;
-            fvbo.c(cls2);
+            fxxm.c(cls);
+            Class cls2 = flhm.d;
+            fxxm.c(cls2);
             constructor = CredentialExchangeFormat$Account.class.getDeclaredConstructor(String.class, String.class, String.class, String.class, List.class, List.class, List.class, cls, cls2);
-            fvbo.e(constructor, "getDeclaredConstructor(...)");
+            fxxm.e(constructor, "getDeclaredConstructor(...)");
             this.g = constructor;
         }
         if (str == null) {
-            throw firp.b("id", "id", fipwVar);
+            throw flhm.b("id", "id", flftVar);
         }
         if (str2 == null) {
-            throw firp.b("username", "username", fipwVar);
+            throw flhm.b("username", "username", flftVar);
         }
         if (str3 == null) {
-            throw firp.b("email", "email", fipwVar);
+            throw flhm.b("email", "email", flftVar);
         }
         if (list == null) {
-            throw firp.b("collections", "collections", fipwVar);
+            throw flhm.b("collections", "collections", flftVar);
         }
         if (list2 == null) {
-            throw firp.b("items", "items", fipwVar);
+            throw flhm.b("items", "items", flftVar);
         }
         Object newInstance = constructor.newInstance(str, str2, str3, str4, list, list2, list3, Integer.valueOf(i2), null);
-        fvbo.e(newInstance, "newInstance(...)");
+        fxxm.e(newInstance, "newInstance(...)");
         return (CredentialExchangeFormat$Account) newInstance;
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ void b(fiqb fiqbVar, Object obj) {
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ void b(flfy flfyVar, Object obj) {
         CredentialExchangeFormat$Account credentialExchangeFormat$Account = (CredentialExchangeFormat$Account) obj;
         if (credentialExchangeFormat$Account == null) {
             throw new NullPointerException("value was null! Wrap in .nullSafe() to write nullable values.");
         }
-        fiqbVar.d();
-        fiqbVar.j("id");
-        fipo fipoVar = this.b;
-        fipoVar.b(fiqbVar, credentialExchangeFormat$Account.a);
-        fiqbVar.j("username");
-        fipoVar.b(fiqbVar, credentialExchangeFormat$Account.b);
-        fiqbVar.j("email");
-        fipoVar.b(fiqbVar, credentialExchangeFormat$Account.c);
-        fiqbVar.j("fullName");
-        this.c.b(fiqbVar, credentialExchangeFormat$Account.d);
-        fiqbVar.j("collections");
-        this.d.b(fiqbVar, credentialExchangeFormat$Account.e);
-        fiqbVar.j("items");
-        this.e.b(fiqbVar, credentialExchangeFormat$Account.f);
-        fiqbVar.j("extensions");
-        this.f.b(fiqbVar, credentialExchangeFormat$Account.g);
-        fiqbVar.f();
+        flfyVar.d();
+        flfyVar.j("id");
+        flfl flflVar = this.b;
+        flflVar.b(flfyVar, credentialExchangeFormat$Account.a);
+        flfyVar.j("username");
+        flflVar.b(flfyVar, credentialExchangeFormat$Account.b);
+        flfyVar.j("email");
+        flflVar.b(flfyVar, credentialExchangeFormat$Account.c);
+        flfyVar.j("fullName");
+        this.c.b(flfyVar, credentialExchangeFormat$Account.d);
+        flfyVar.j("collections");
+        this.d.b(flfyVar, credentialExchangeFormat$Account.e);
+        flfyVar.j("items");
+        this.e.b(flfyVar, credentialExchangeFormat$Account.f);
+        flfyVar.j("extensions");
+        this.f.b(flfyVar, credentialExchangeFormat$Account.g);
+        flfyVar.f();
     }
 
     public final String toString() {

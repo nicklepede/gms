@@ -4,16 +4,16 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.dijg;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.dkuq;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class ButtonOptions extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new dijg();
+    public static final Parcelable.Creator CREATOR = new dkuq();
     public int a;
     public int b;
     public int c;
@@ -25,7 +25,7 @@ public final class ButtonOptions extends AbstractSafeParcelable implements Refle
     public final boolean equals(Object obj) {
         if (obj instanceof ButtonOptions) {
             ButtonOptions buttonOptions = (ButtonOptions) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(buttonOptions.a)) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(buttonOptions.b)) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(buttonOptions.c)) && arwb.b(this.d, buttonOptions.d)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(buttonOptions.a)) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(buttonOptions.b)) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(buttonOptions.c)) && atyq.b(this.d, buttonOptions.d)) {
                 return true;
             }
         }
@@ -38,12 +38,12 @@ public final class ButtonOptions extends AbstractSafeParcelable implements Refle
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.c(parcel, a);
     }
 
     public ButtonOptions(int i, int i2, int i3, String str) {
@@ -53,7 +53,7 @@ public final class ButtonOptions extends AbstractSafeParcelable implements Refle
         this.b = i2;
         Integer.valueOf(i3).getClass();
         this.c = i3;
-        arwm.s(str);
+        atzb.s(str);
         this.d = str;
     }
 }

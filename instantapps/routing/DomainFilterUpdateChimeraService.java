@@ -4,152 +4,154 @@ import android.content.Intent;
 import com.google.android.gms.chimera.modules.instantapps.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
 import defpackage.a;
-import defpackage.asej;
-import defpackage.asnf;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.boem;
-import defpackage.boeo;
-import defpackage.boff;
-import defpackage.bojn;
-import defpackage.bojq;
-import defpackage.bokj;
-import defpackage.bokn;
-import defpackage.boku;
-import defpackage.bokx;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.byln;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.ejhf;
-import defpackage.fiks;
-import defpackage.fnde;
-import defpackage.fpfh;
-import defpackage.fpfu;
-import defpackage.fpfx;
-import defpackage.fpgs;
+import defpackage.auid;
+import defpackage.auqz;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.bqmc;
+import defpackage.bqme;
+import defpackage.bqmv;
+import defpackage.bqrd;
+import defpackage.bqrg;
+import defpackage.bqrz;
+import defpackage.bqsd;
+import defpackage.bqsk;
+import defpackage.bqsn;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.cauf;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.eluo;
+import defpackage.flap;
+import defpackage.fpvd;
+import defpackage.frys;
+import defpackage.frzf;
+import defpackage.frzi;
+import defpackage.fsad;
 import j$.util.Objects;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DomainFilterUpdateChimeraService extends GmsTaskChimeraService {
     public static final /* synthetic */ int f = 0;
-    private static final asot h = asot.b("DomainFilterUpdateChimeraService", asej.INSTANT_APPS);
-    bojn a;
-    bokx b;
-    boku c;
-    bokn d;
-    boeo e;
+    private static final ausn h = ausn.b("DomainFilterUpdateChimeraService", auid.INSTANT_APPS);
+    bqrd a;
+    bqsn b;
+    bqsk c;
+    bqsd d;
+    bqme e;
     private Executor i;
 
     public static String d(int i) {
-        return fpfu.c() ? "instantapps.DomainFilterUpdateService.oneOff" : a.j(i, "instantapps.DomainFilterUpdateService.oneOff");
+        return frzf.c() ? "instantapps.DomainFilterUpdateService.oneOff" : a.j(i, "instantapps.DomainFilterUpdateService.oneOff");
     }
 
     public static void e() {
-        if (asqh.c()) {
-            bykm bykmVar = new bykm();
-            bykmVar.j = "com.google.android.gms.instantapps.routing.DomainFilterUpdateService";
-            bykmVar.t("instantapps.DomainFilterUpdateService");
-            bykmVar.a = fpfx.b() / 1000;
-            bykmVar.x(0, 0);
-            bykmVar.y(0, 1);
-            bykmVar.p = true;
-            long b = fpfx.b() / 1000;
-            if (fnde.e()) {
-                bykmVar.j(byki.a(b));
+        if (auub.c()) {
+            cate cateVar = new cate();
+            cateVar.j = "com.google.android.gms.instantapps.routing.DomainFilterUpdateService";
+            cateVar.t("instantapps.DomainFilterUpdateService");
+            cateVar.a = frzi.b() / 1000;
+            cateVar.x(0, 0);
+            cateVar.y(0, 1);
+            cateVar.p = true;
+            long b = frzi.b() / 1000;
+            if (fpvd.e()) {
+                cateVar.j(cata.a(b));
             } else {
-                bykmVar.a = b;
+                cateVar.a = b;
             }
-            byjl.a(AppContextProvider.a()).f(bykmVar.b());
+            casd.a(AppContextProvider.a()).f(cateVar.b());
         }
-        if (asqh.c()) {
-            bykm bykmVar2 = new bykm();
-            bykmVar2.j = "com.google.android.gms.instantapps.routing.DomainFilterUpdateService";
-            bykmVar2.t("instantapps.DomainFilterUpdateService.frequentChargingUnmetered");
-            bykmVar2.y(1, 1);
-            bykmVar2.x(1, 1);
-            bykmVar2.p = true;
-            long f2 = fpfx.a.a().f() / 1000;
-            if (fnde.e()) {
-                bykmVar2.j(byki.a(f2));
+        if (auub.c()) {
+            cate cateVar2 = new cate();
+            cateVar2.j = "com.google.android.gms.instantapps.routing.DomainFilterUpdateService";
+            cateVar2.t("instantapps.DomainFilterUpdateService.frequentChargingUnmetered");
+            cateVar2.y(1, 1);
+            cateVar2.x(1, 1);
+            cateVar2.p = true;
+            long f2 = frzi.a.lK().f() / 1000;
+            if (fpvd.e()) {
+                cateVar2.j(cata.a(f2));
             } else {
-                bykmVar2.a = f2;
+                cateVar2.a = f2;
             }
-            byjl.a(AppContextProvider.a()).f(bykmVar2.b());
+            casd.a(AppContextProvider.a()).f(cateVar2.b());
         }
-        if (fpfx.a.a().C()) {
-            byjl a = byjl.a(AppContextProvider.a());
-            bykm bykmVar3 = new bykm();
-            bykmVar3.j = "com.google.android.gms.instantapps.routing.DomainFilterUpdateService";
-            bykmVar3.t("instantapps.DomainFilterUpdateService.fullSync");
-            bykmVar3.a = fpfx.a.a().h();
-            bykmVar3.x(0, 0);
-            bykmVar3.y(0, 1);
-            bykmVar3.p = true;
-            a.f(bykmVar3.b());
+        frzi frziVar = frzi.a;
+        if (frziVar.lK().C()) {
+            casd a = casd.a(AppContextProvider.a());
+            cate cateVar3 = new cate();
+            cateVar3.j = "com.google.android.gms.instantapps.routing.DomainFilterUpdateService";
+            cateVar3.t("instantapps.DomainFilterUpdateService.fullSync");
+            cateVar3.a = frziVar.lK().h();
+            cateVar3.x(0, 0);
+            cateVar3.y(0, 1);
+            cateVar3.p = true;
+            a.f(cateVar3.b());
         }
     }
 
-    private final int f(fiks fiksVar) {
-        return fpfx.a.a().x() ? this.a.d(fiksVar) : this.a.c(fiksVar);
+    private final int f(flap flapVar) {
+        return frzi.a.lK().x() ? this.a.d(flapVar) : this.a.c(flapVar);
     }
 
-    private static final int g(int i, String str, boem boemVar, String str2) {
+    private static final int g(int i, String str, bqmc bqmcVar, String str2) {
         if (i == 1) {
-            boemVar.b("DomainFilterUpdateService.OK".concat(str2));
+            bqmcVar.b("DomainFilterUpdateService.OK".concat(str2));
             return 0;
         }
         if (i != 2) {
             if (i == 3) {
-                boemVar.b("DomainFilterUpdateService.NonRetriable".concat(str2));
+                bqmcVar.b("DomainFilterUpdateService.NonRetriable".concat(str2));
                 return 0;
             }
             if (i == 4) {
-                boemVar.b("DomainFilterUpdateService.Throttled".concat(str2));
+                bqmcVar.b("DomainFilterUpdateService.Throttled".concat(str2));
                 return 0;
             }
-            ((ejhf) ((ejhf) h.i()).ah((char) 5257)).z("Unexpected DomainFilterUpdateStatus: %d", i);
-            boemVar.b("DomainFilterUpdateService.Failure".concat(str2));
+            ((eluo) ((eluo) h.i()).ai((char) 5270)).z("Unexpected DomainFilterUpdateStatus: %d", i);
+            bqmcVar.b("DomainFilterUpdateService.Failure".concat(str2));
             return 2;
         }
-        if (fpfh.a.a().c() || (fpfh.a.a().d() && Objects.equals(str, "instantapps.DomainFilterUpdateService.frequentChargingUnmetered"))) {
-            ((ejhf) ((ejhf) h.j()).ah((char) 5259)).x("Will not retry");
-            boemVar.b("DomainFilterUpdateService.WillNotReschedule".concat(str2));
+        frys frysVar = frys.a;
+        if (frysVar.lK().c() || (frysVar.lK().d() && Objects.equals(str, "instantapps.DomainFilterUpdateService.frequentChargingUnmetered"))) {
+            ((eluo) ((eluo) h.j()).ai((char) 5272)).x("Will not retry");
+            bqmcVar.b("DomainFilterUpdateService.WillNotReschedule".concat(str2));
             return 2;
         }
-        ((ejhf) ((ejhf) h.j()).ah((char) 5258)).x("Retry later");
-        boemVar.b("DomainFilterUpdateService.Reschedule".concat(str2));
+        ((eluo) ((eluo) h.j()).ai((char) 5271)).x("Retry later");
+        bqmcVar.b("DomainFilterUpdateService.Reschedule".concat(str2));
         return 1;
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         char c;
-        fiks fiksVar;
-        eiid j;
-        boem b = this.e.b();
+        flap flapVar;
+        ekvi j;
+        bqmc b = this.e.b();
         int i = 0;
         if (!this.c.a()) {
             b.b("DomainFilterUpdateService.SwitchKilled");
             return 0;
         }
-        String str = bylnVar.a;
+        String str = caufVar.a;
         if (str.startsWith("instantapps.ScheduleGetIntentFilters")) {
             if (this.b.a() != 0) {
-                return g(fpgs.c() ? this.a.b() : 1, "instantapps.ScheduleGetIntentFilters", b, ".IntentFilter");
+                return g(fsad.c() ? this.a.b() : 1, "instantapps.ScheduleGetIntentFilters", b, ".IntentFilter");
             }
             b.b("DomainFilterUpdateService.OptedOut.IntentFilter");
             return 0;
         }
-        bokn boknVar = this.d;
-        boknVar.b(boknVar.d.b(), boknVar.c.a(), false);
-        if (this.b.a() == 0 && !fpfu.e()) {
+        bqsd bqsdVar = this.d;
+        bqsdVar.b(bqsdVar.d.b(), bqsdVar.c.a(), false);
+        if (this.b.a() == 0 && !frzf.e()) {
             b.b("DomainFilterUpdateService.OptedOut");
             return 0;
         }
@@ -188,99 +190,99 @@ public class DomainFilterUpdateChimeraService extends GmsTaskChimeraService {
                 break;
         }
         if (c == 0) {
-            if (fpfu.c()) {
-                j = eigb.a;
+            if (frzf.c()) {
+                j = ektg.a;
             } else {
                 String substring = str.substring(44);
                 if (substring.isEmpty()) {
-                    j = eigb.a;
+                    j = ektg.a;
                 } else {
                     try {
                         switch (Integer.parseInt(substring)) {
                             case 0:
-                                fiksVar = fiks.UNKNOWN_REQUEST_TYPE;
+                                flapVar = flap.UNKNOWN_REQUEST_TYPE;
                                 break;
                             case 1:
-                                fiksVar = fiks.ONE_OFF_SYNC;
+                                flapVar = flap.ONE_OFF_SYNC;
                                 break;
                             case 2:
-                                fiksVar = fiks.DAILY_SYNC;
+                                flapVar = flap.DAILY_SYNC;
                                 break;
                             case 3:
-                                fiksVar = fiks.FREQUENT_SYNC;
+                                flapVar = flap.FREQUENT_SYNC;
                                 break;
                             case 4:
-                                fiksVar = fiks.ONE_OFF_FULL_DOMAIN_FILTER_SYNC;
+                                flapVar = flap.ONE_OFF_FULL_DOMAIN_FILTER_SYNC;
                                 break;
                             case 5:
-                                fiksVar = fiks.PERIODIC_FULL_DOMAIN_FILTER_SYNC;
+                                flapVar = flap.PERIODIC_FULL_DOMAIN_FILTER_SYNC;
                                 break;
                             case 6:
-                                fiksVar = fiks.ONE_OFF_SYNC_CHARGING_UNMETERED;
+                                flapVar = flap.ONE_OFF_SYNC_CHARGING_UNMETERED;
                                 break;
                             case 7:
-                                fiksVar = fiks.ONE_OFF_SYNC_AT_INSTANT_APPS_SERVICE_UPDATE_DOMAIN_FILTER;
+                                flapVar = flap.ONE_OFF_SYNC_AT_INSTANT_APPS_SERVICE_UPDATE_DOMAIN_FILTER;
                                 break;
                             case 8:
-                                fiksVar = fiks.ONE_OFF_SYNC_AT_INSTANT_APPS_SERVICE_OPT_IN;
+                                flapVar = flap.ONE_OFF_SYNC_AT_INSTANT_APPS_SERVICE_OPT_IN;
                                 break;
                             case 9:
-                                fiksVar = fiks.ONE_OFF_SYNC_AT_INSTANT_APPS_SERVICE_DELETE_ALL_DATA;
+                                flapVar = flap.ONE_OFF_SYNC_AT_INSTANT_APPS_SERVICE_DELETE_ALL_DATA;
                                 break;
                             case 10:
-                                fiksVar = fiks.ONE_OFF_SYNC_AT_ACCOUNT_CHANGE;
+                                flapVar = flap.ONE_OFF_SYNC_AT_ACCOUNT_CHANGE;
                                 break;
                             case 11:
-                                fiksVar = fiks.ONE_OFF_SYNC_AT_BOOT_COMPLETE;
+                                flapVar = flap.ONE_OFF_SYNC_AT_BOOT_COMPLETE;
                                 break;
                             case 12:
-                                fiksVar = fiks.ONE_OFF_FULL_DOMAIN_FILTER_SYNC_AT_CONTENT_FILTER_CHANGE;
+                                flapVar = flap.ONE_OFF_FULL_DOMAIN_FILTER_SYNC_AT_CONTENT_FILTER_CHANGE;
                                 break;
                             default:
-                                fiksVar = null;
+                                flapVar = null;
                                 break;
                         }
-                        if (fiksVar == null) {
-                            ((ejhf) ((ejhf) h.i()).ah(5256)).B("ONE_OFF task tag with invalid request type number is used. tag: %s", str);
+                        if (flapVar == null) {
+                            ((eluo) ((eluo) h.i()).ai(5269)).B("ONE_OFF task tag with invalid request type number is used. tag: %s", str);
                             throw new IllegalStateException(String.format("ONE_OFF task tag with invalid request type number is used. tag: %s", str));
                         }
-                        j = eiid.j(fiksVar);
+                        j = ekvi.j(flapVar);
                     } catch (NumberFormatException e) {
-                        ((ejhf) ((ejhf) ((ejhf) h.i()).s(e)).ah((char) 5255)).B("Invalid number format is used to tag ONE_OFF task. tag: %s", str);
+                        ((eluo) ((eluo) ((eluo) h.i()).s(e)).ai((char) 5268)).B("Invalid number format is used to tag ONE_OFF task. tag: %s", str);
                         throw new IllegalStateException(String.format("Invalid number format is used to tag ONE_OFF task. tag: %s", str));
                     }
                 }
             }
-            i = !j.h() ? f(fiks.ONE_OFF_SYNC) : f((fiks) j.c());
+            i = !j.h() ? f(flap.ONE_OFF_SYNC) : f((flap) j.c());
         } else if (c == 1) {
-            i = f(fiks.FREQUENT_SYNC);
+            i = f(flap.FREQUENT_SYNC);
         } else if (c == 2) {
-            i = f(fiks.PERIODIC_FULL_DOMAIN_FILTER_SYNC);
+            i = f(flap.PERIODIC_FULL_DOMAIN_FILTER_SYNC);
         } else if (c != 3) {
-            asnf asnfVar = asng.a;
-            ((ejhf) ((ejhf) h.i()).ah((char) 5254)).B("Unexpected DomainFilterUpdateStatus task tag: %s", str);
+            auqz auqzVar = aura.a;
+            ((eluo) ((eluo) h.i()).ai((char) 5267)).B("Unexpected DomainFilterUpdateStatus task tag: %s", str);
         } else {
-            i = this.a.d(fiks.DAILY_SYNC);
+            i = this.a.d(flap.DAILY_SYNC);
         }
         return g(i, str, b, "");
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final void fR() {
+    public final void gf() {
         e();
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        boff a = boff.a(getApplicationContext());
+        bqmv a = bqmv.a(getApplicationContext());
         this.a = a.g;
         this.b = a.d;
         this.c = a.r;
         this.d = a.s;
         this.i = a.a;
         this.e = a.k;
-        int i = bokj.a;
+        int i = bqrz.a;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.chimera.Service
@@ -289,7 +291,7 @@ public class DomainFilterUpdateChimeraService extends GmsTaskChimeraService {
             super.onStartCommand(intent, i, i2);
             return 2;
         }
-        this.i.execute(new bojq(this, intent));
+        this.i.execute(new bqrg(this, intent));
         return 2;
     }
 }

@@ -6,19 +6,19 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorManager;
 import android.os.SystemClock;
 import com.google.android.gms.libs.punchclock.tracing.TracingSensorEventListener;
-import defpackage.axmz;
-import defpackage.axnb;
-import defpackage.axnf;
-import defpackage.axqg;
-import defpackage.elxf;
-import defpackage.elxg;
+import defpackage.azqz;
+import defpackage.azrb;
+import defpackage.azrf;
+import defpackage.azug;
+import defpackage.eokt;
+import defpackage.eoku;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DrivingModePocketDetection extends TracingSensorEventListener {
     public final Sensor a;
     public final SensorManager b;
-    public axnb c;
+    public azrb c;
     private final float d;
 
     public DrivingModePocketDetection(Context context) {
@@ -32,19 +32,19 @@ public class DrivingModePocketDetection extends TracingSensorEventListener {
             return;
         }
         this.d = 5.0f;
-        axqg.b();
-        new axmz(context).a(elxg.DRIVING_MODE, elxf.DRIVING_MODE_NULL_PROXIMITY_SENSOR);
+        azug.b();
+        new azqz(context).a(eoku.DRIVING_MODE, eokt.DRIVING_MODE_NULL_PROXIMITY_SENSOR);
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingSensorEventListener
     public final void a(SensorEvent sensorEvent) {
-        axnb axnbVar;
-        if (sensorEvent.values[0] < this.d || (axnbVar = this.c) == null) {
+        azrb azrbVar;
+        if (sensorEvent.values[0] < this.d || (azrbVar = this.c) == null) {
             return;
         }
-        axnf axnfVar = axnbVar.a;
-        if (SystemClock.elapsedRealtime() <= axnfVar.f) {
-            axnfVar.c();
+        azrf azrfVar = azrbVar.a;
+        if (SystemClock.elapsedRealtime() <= azrfVar.f) {
+            azrfVar.c();
         }
         c();
     }

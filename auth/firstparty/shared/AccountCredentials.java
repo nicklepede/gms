@@ -5,14 +5,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.abah;
-import defpackage.arwm;
-import defpackage.arxc;
+import defpackage.adah;
+import defpackage.atzb;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AccountCredentials extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new abah();
+    public static final Parcelable.Creator CREATOR = new adah();
     final int a;
     public boolean b;
     public String c;
@@ -44,17 +44,17 @@ public class AccountCredentials extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.e(parcel, 2, this.b);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.e(parcel, 2, this.b);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.c(parcel, a);
     }
 
     @Deprecated
@@ -69,7 +69,7 @@ public class AccountCredentials extends AbstractSafeParcelable {
 
     public AccountCredentials(String str) {
         this.a = 2;
-        arwm.r(str, "Account type can't be empty.");
+        atzb.r(str, "Account type can't be empty.");
         this.i = str;
     }
 }

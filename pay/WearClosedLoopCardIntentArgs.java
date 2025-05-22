@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctfg;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvom;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class WearClosedLoopCardIntentArgs extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctfg();
+    public static final Parcelable.Creator CREATOR = new cvom();
     public String a;
     public ProtoSafeParcelable b;
     public GooglePaymentMethodId c;
@@ -27,7 +27,7 @@ public final class WearClosedLoopCardIntentArgs extends AbstractSafeParcelable {
         }
         if (obj instanceof WearClosedLoopCardIntentArgs) {
             WearClosedLoopCardIntentArgs wearClosedLoopCardIntentArgs = (WearClosedLoopCardIntentArgs) obj;
-            if (arwb.b(this.a, wearClosedLoopCardIntentArgs.a) && arwb.b(this.b, wearClosedLoopCardIntentArgs.b) && arwb.b(this.c, wearClosedLoopCardIntentArgs.c) && arwb.b(this.d, wearClosedLoopCardIntentArgs.d) && arwb.b(this.e, wearClosedLoopCardIntentArgs.e)) {
+            if (atyq.b(this.a, wearClosedLoopCardIntentArgs.a) && atyq.b(this.b, wearClosedLoopCardIntentArgs.b) && atyq.b(this.c, wearClosedLoopCardIntentArgs.c) && atyq.b(this.d, wearClosedLoopCardIntentArgs.d) && atyq.b(this.e, wearClosedLoopCardIntentArgs.e)) {
                 return true;
             }
         }
@@ -40,13 +40,13 @@ public final class WearClosedLoopCardIntentArgs extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.e, false);
-        arxc.t(parcel, 3, this.b, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.t(parcel, 5, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.e, false);
+        atzr.t(parcel, 3, this.b, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.t(parcel, 5, this.c, i, false);
+        atzr.c(parcel, a);
     }
 
     public WearClosedLoopCardIntentArgs(String str, ProtoSafeParcelable protoSafeParcelable, GooglePaymentMethodId googlePaymentMethodId, ProtoSafeParcelable protoSafeParcelable2, String str2) {

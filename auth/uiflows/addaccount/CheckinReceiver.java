@@ -3,16 +3,16 @@ package com.google.android.gms.auth.uiflows.addaccount;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.adel;
-import defpackage.asng;
+import defpackage.afen;
+import defpackage.aura;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CheckinReceiver extends TracingBroadcastReceiver {
     public final Context a;
     public final Object b;
     public boolean c;
-    public adel d;
+    public afen d;
 
     public CheckinReceiver(Context context) {
         super("auth_account");
@@ -31,9 +31,9 @@ public class CheckinReceiver extends TracingBroadcastReceiver {
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         if ("com.google.android.checkin.CHECKIN_COMPLETE".equals(intent.getAction())) {
-            if (asng.e(context) != 0) {
+            if (aura.e(context) != 0) {
                 this.d.a(true);
             } else {
                 this.d.a(false);

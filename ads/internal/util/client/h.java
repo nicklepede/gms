@@ -1,12 +1,12 @@
 package com.google.android.gms.ads.internal.util.client;
 
 import android.util.Log;
-import defpackage.eijj;
+import defpackage.ekwo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class h {
-    protected static final eijj b = eijj.b(4000);
+    protected static final ekwo b = ekwo.b(4000);
 
     static String c(String str) {
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();

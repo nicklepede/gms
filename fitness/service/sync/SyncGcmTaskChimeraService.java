@@ -4,63 +4,63 @@ import android.content.Context;
 import android.os.Bundle;
 import com.google.android.gms.fitness.service.sync.SyncGcmTaskChimeraService;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.asot;
-import defpackage.bgbg;
-import defpackage.bgbh;
-import defpackage.bgbi;
-import defpackage.bgbj;
-import defpackage.bguu;
-import defpackage.bgzc;
-import defpackage.bhae;
-import defpackage.bhaf;
-import defpackage.bry;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.eijr;
-import defpackage.eits;
+import defpackage.ausn;
+import defpackage.bifw;
+import defpackage.bifx;
+import defpackage.bify;
+import defpackage.bifz;
+import defpackage.bizk;
+import defpackage.bjds;
+import defpackage.bjeu;
+import defpackage.bjev;
+import defpackage.bsj;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.ekww;
+import defpackage.elgx;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SyncGcmTaskChimeraService extends GmsTaskChimeraService {
-    static final eits a;
+    static final elgx a;
     public static final /* synthetic */ int b = 0;
-    private static final asot c = bhaf.a();
-    private static final bgbj d;
+    private static final ausn c = bjev.a();
+    private static final bifz d;
     private static final Map e;
 
     static {
-        eijr eijrVar = new eijr() { // from class: bgur
-            @Override // defpackage.eijr
-            public final Object a() {
-                return foei.a.a().y();
+        ekww ekwwVar = new ekww() { // from class: bizh
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return fqwr.a.lK().y();
             }
         };
-        bgbh bgbhVar = new bgbh() { // from class: bgus
-            @Override // defpackage.bgbh
+        bifx bifxVar = new bifx() { // from class: bizi
+            @Override // defpackage.bifx
             public final Object a(Object obj, Object obj2) {
                 String str = (String) obj;
                 int i = SyncGcmTaskChimeraService.b;
-                eito eitoVar = new eito();
+                elgt elgtVar = new elgt();
                 try {
-                    for (Map.Entry entry : bhad.b(str).entrySet()) {
-                        eitoVar.i(Integer.valueOf((String) entry.getKey()), Long.valueOf((String) entry.getValue()));
+                    for (Map.Entry entry : bjet.b(str).entrySet()) {
+                        elgtVar.i(Integer.valueOf((String) entry.getKey()), Long.valueOf((String) entry.getValue()));
                     }
-                    return eitoVar.b();
+                    return elgtVar.b();
                 } catch (IllegalArgumentException unused) {
-                    return ejcg.a;
+                    return elpl.a;
                 }
             }
         };
-        int i = bgbg.a;
-        d = new bgbi(eijrVar, bgbhVar);
-        a = eits.n(bguu.SKIPPED, "com.google.android.gms.fitness.sync.SKIPPED", bguu.SUCCESS, "com.google.android.gms.fitness.sync.SUCCESS", bguu.FAILURE, "com.google.android.gms.fitness.sync.FAILED");
-        e = new bry();
+        int i = bifw.a;
+        d = new bify(ekwwVar, bifxVar);
+        a = elgx.n(bizk.SKIPPED, "com.google.android.gms.fitness.sync.SKIPPED", bizk.SUCCESS, "com.google.android.gms.fitness.sync.SUCCESS", bizk.FAILURE, "com.google.android.gms.fitness.sync.FAILED");
+        e = new bsj();
     }
 
     static int d(String str) {
-        return ((Integer) bhae.a(e, str, -1)).intValue();
+        return ((Integer) bjeu.a(e, str, -1)).intValue();
     }
 
     static void e(String str, int i) {
@@ -93,8 +93,8 @@ public class SyncGcmTaskChimeraService extends GmsTaskChimeraService {
      */
     /* JADX WARN: Code restructure failed: missing block: B:475:0x069c, code lost:
     
-        r47 = r4;
-        r46 = r5;
+        r46 = r4;
+        r45 = r5;
      */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:111:0x0721  */
@@ -121,52 +121,52 @@ public class SyncGcmTaskChimeraService extends GmsTaskChimeraService {
     /* JADX WARN: Removed duplicated region for block: B:463:0x0681 A[Catch: IOException -> 0x0693, all -> 0x0d28, TRY_LEAVE, TryCatch #5 {IOException -> 0x0693, blocks: (B:325:0x028e, B:328:0x02f6, B:330:0x0334, B:331:0x033f, B:333:0x0343, B:337:0x03ec, B:338:0x035d, B:340:0x037c, B:341:0x037f, B:342:0x039c, B:344:0x03a2, B:346:0x03c1, B:348:0x03c4, B:351:0x03e3, B:356:0x03fb, B:357:0x0401, B:359:0x0407, B:361:0x041d, B:363:0x0420, B:366:0x043b, B:368:0x044a, B:370:0x0456, B:371:0x0458, B:373:0x045c, B:374:0x045e, B:376:0x0466, B:381:0x04cf, B:383:0x04d3, B:384:0x04d5, B:386:0x04d9, B:387:0x04db, B:389:0x04e5, B:392:0x04ef, B:393:0x04fa, B:395:0x04fe, B:396:0x0500, B:398:0x050b, B:400:0x050d, B:402:0x0474, B:404:0x0486, B:405:0x0489, B:407:0x04aa, B:408:0x04b1, B:410:0x04ba, B:412:0x04c6, B:417:0x0524, B:419:0x054a, B:420:0x054d, B:422:0x056d, B:423:0x0570, B:425:0x0586, B:426:0x0589, B:427:0x0599, B:429:0x059f, B:431:0x05b5, B:432:0x05b7, B:434:0x05c1, B:435:0x05c4, B:437:0x05dc, B:438:0x05df, B:440:0x05ed, B:442:0x0606, B:443:0x060b, B:445:0x061b, B:446:0x061e, B:448:0x063a, B:449:0x063d, B:450:0x0609, B:451:0x0649, B:453:0x0651, B:454:0x0654, B:456:0x0669, B:458:0x066f, B:461:0x0676, B:463:0x0681, B:467:0x02c4, B:469:0x02d6, B:470:0x02d8), top: B:324:0x028e }] */
     /* JADX WARN: Removed duplicated region for block: B:467:0x02c4 A[Catch: IOException -> 0x0693, all -> 0x0d28, TryCatch #5 {IOException -> 0x0693, blocks: (B:325:0x028e, B:328:0x02f6, B:330:0x0334, B:331:0x033f, B:333:0x0343, B:337:0x03ec, B:338:0x035d, B:340:0x037c, B:341:0x037f, B:342:0x039c, B:344:0x03a2, B:346:0x03c1, B:348:0x03c4, B:351:0x03e3, B:356:0x03fb, B:357:0x0401, B:359:0x0407, B:361:0x041d, B:363:0x0420, B:366:0x043b, B:368:0x044a, B:370:0x0456, B:371:0x0458, B:373:0x045c, B:374:0x045e, B:376:0x0466, B:381:0x04cf, B:383:0x04d3, B:384:0x04d5, B:386:0x04d9, B:387:0x04db, B:389:0x04e5, B:392:0x04ef, B:393:0x04fa, B:395:0x04fe, B:396:0x0500, B:398:0x050b, B:400:0x050d, B:402:0x0474, B:404:0x0486, B:405:0x0489, B:407:0x04aa, B:408:0x04b1, B:410:0x04ba, B:412:0x04c6, B:417:0x0524, B:419:0x054a, B:420:0x054d, B:422:0x056d, B:423:0x0570, B:425:0x0586, B:426:0x0589, B:427:0x0599, B:429:0x059f, B:431:0x05b5, B:432:0x05b7, B:434:0x05c1, B:435:0x05c4, B:437:0x05dc, B:438:0x05df, B:440:0x05ed, B:442:0x0606, B:443:0x060b, B:445:0x061b, B:446:0x061e, B:448:0x063a, B:449:0x063d, B:450:0x0609, B:451:0x0649, B:453:0x0651, B:454:0x0654, B:456:0x0669, B:458:0x066f, B:461:0x0676, B:463:0x0681, B:467:0x02c4, B:469:0x02d6, B:470:0x02d8), top: B:324:0x028e }] */
     /* JADX WARN: Removed duplicated region for block: B:90:0x0235 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Type inference failed for: r0v29, types: [bgaf] */
-    /* JADX WARN: Type inference failed for: r0v32, types: [bggi] */
-    /* JADX WARN: Type inference failed for: r0v48, types: [bgaf] */
-    /* JADX WARN: Type inference failed for: r0v53, types: [bgaf] */
+    /* JADX WARN: Type inference failed for: r0v29, types: [biev] */
+    /* JADX WARN: Type inference failed for: r0v32, types: [biky] */
+    /* JADX WARN: Type inference failed for: r0v48, types: [biev] */
+    /* JADX WARN: Type inference failed for: r0v53, types: [biev] */
     /* JADX WARN: Type inference failed for: r1v0, types: [java.lang.String] */
     /* JADX WARN: Type inference failed for: r1v1 */
     /* JADX WARN: Type inference failed for: r1v2, types: [android.content.Context] */
-    /* JADX WARN: Type inference failed for: r1v29, types: [bgaf] */
+    /* JADX WARN: Type inference failed for: r1v29, types: [biev] */
     /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v30, types: [bgaf] */
-    /* JADX WARN: Type inference failed for: r1v37, types: [bgaf] */
+    /* JADX WARN: Type inference failed for: r1v30, types: [biev] */
+    /* JADX WARN: Type inference failed for: r1v37, types: [biev] */
     /* JADX WARN: Type inference failed for: r1v4 */
     /* JADX WARN: Type inference failed for: r1v6 */
-    /* JADX WARN: Type inference failed for: r1v7, types: [bgaf] */
+    /* JADX WARN: Type inference failed for: r1v7, types: [biev] */
     /* JADX WARN: Type inference failed for: r1v8 */
     /* JADX WARN: Type inference failed for: r2v12 */
     /* JADX WARN: Type inference failed for: r2v14, types: [java.lang.String] */
     /* JADX WARN: Type inference failed for: r2v4 */
     /* JADX WARN: Type inference failed for: r2v5, types: [java.lang.String] */
     /* JADX WARN: Type inference failed for: r2v8, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r4v11, types: [bggi] */
-    /* JADX WARN: Type inference failed for: r6v21, types: [bgaf] */
+    /* JADX WARN: Type inference failed for: r4v11, types: [biky] */
+    /* JADX WARN: Type inference failed for: r6v21, types: [biev] */
     /* JADX WARN: Unreachable blocks removed: 1, instructions: 1 */
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final int a(defpackage.byln r52) {
+    public final int a(defpackage.cauf r52) {
         /*
             Method dump skipped, instructions count: 3422
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.fitness.service.sync.SyncGcmTaskChimeraService.a(byln):int");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.fitness.service.sync.SyncGcmTaskChimeraService.a(cauf):int");
     }
 
     protected final synchronized void f(Context context, Bundle bundle, String str, long j) {
-        byjl a2 = byjl.a(context);
-        bykj bykjVar = new bykj();
-        bykjVar.j = "com.google.android.gms.fitness.sync.SyncGcmTaskService";
-        Set set = bgzc.a;
-        bykjVar.t("FitGcmTask_AfterAppCallback_".concat(str));
-        bykjVar.v(1);
-        bykjVar.y(0, 0);
-        bykjVar.u = bundle;
-        bykjVar.e(j, 5 + j);
-        a2.f(bykjVar.b());
+        casd a2 = casd.a(context);
+        catb catbVar = new catb();
+        catbVar.j = "com.google.android.gms.fitness.sync.SyncGcmTaskService";
+        Set set = bjds.a;
+        catbVar.t("FitGcmTask_AfterAppCallback_".concat(str));
+        catbVar.v(1);
+        catbVar.y(0, 0);
+        catbVar.u = bundle;
+        catbVar.e(j, 5 + j);
+        a2.f(catbVar.b());
     }
 }

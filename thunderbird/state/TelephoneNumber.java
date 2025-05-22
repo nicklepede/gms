@@ -3,16 +3,16 @@ package com.google.android.gms.thunderbird.state;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dfyn;
-import defpackage.dfyo;
-import defpackage.eihn;
+import defpackage.atzr;
+import defpackage.dijs;
+import defpackage.dijt;
+import defpackage.ekus;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class TelephoneNumber extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dfyo();
+    public static final Parcelable.Creator CREATOR = new dijt();
     public final String a;
     public final int b;
 
@@ -26,15 +26,15 @@ public final class TelephoneNumber extends AbstractSafeParcelable {
     }
 
     public static TelephoneNumber b(String str) {
-        return new TelephoneNumber(str, dfyn.CONSTELLATION.ordinal());
+        return new TelephoneNumber(str, dijs.CONSTELLATION.ordinal());
     }
 
     public static TelephoneNumber c(String str) {
-        return new TelephoneNumber(str, dfyn.GETLINE1NUMBER.ordinal());
+        return new TelephoneNumber(str, dijs.GETLINE1NUMBER.ordinal());
     }
 
-    public final dfyn a() {
-        return dfyn.values()[this.b];
+    public final dijs a() {
+        return dijs.values()[this.b];
     }
 
     public final boolean equals(Object obj) {
@@ -43,7 +43,7 @@ public final class TelephoneNumber extends AbstractSafeParcelable {
         }
         if (obj != null && getClass() == obj.getClass()) {
             TelephoneNumber telephoneNumber = (TelephoneNumber) obj;
-            if (eihn.a(this.a, telephoneNumber.a) && this.b == telephoneNumber.b) {
+            if (ekus.a(this.a, telephoneNumber.a) && this.b == telephoneNumber.b) {
                 return true;
             }
         }
@@ -61,9 +61,9 @@ public final class TelephoneNumber extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 }

@@ -4,9 +4,9 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
-import defpackage.zpo;
+import defpackage.abpo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public final class RevocationBoundService extends Service {
@@ -19,6 +19,6 @@ public final class RevocationBoundService extends Service {
         if (Log.isLoggable("RevocationService", 2)) {
             Log.v("RevocationService", "RevocationBoundService handling ".concat(String.valueOf(intent.getAction())));
         }
-        return new zpo(this);
+        return new abpo(this);
     }
 }

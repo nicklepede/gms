@@ -6,41 +6,41 @@ import android.os.Bundle;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.aqto;
-import defpackage.aquo;
-import defpackage.asoe;
-import defpackage.asot;
-import defpackage.brby;
-import defpackage.buzh;
-import defpackage.ccad;
-import defpackage.ccae;
-import defpackage.ccaf;
-import defpackage.ccdq;
-import defpackage.elhu;
-import defpackage.enop;
-import defpackage.enoq;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fqad;
+import defpackage.aswd;
+import defpackage.asxd;
+import defpackage.aury;
+import defpackage.ausn;
+import defpackage.btjp;
+import defpackage.bxhj;
+import defpackage.ceix;
+import defpackage.ceiy;
+import defpackage.ceiz;
+import defpackage.cemk;
+import defpackage.envh;
+import defpackage.eqci;
+import defpackage.eqcj;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fsub;
 import j$.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ApiTokenChimeraService extends Service {
     public static final Duration a = Duration.ofDays(5);
-    public buzh b;
-    public ccaf c;
-    public enoq d;
-    public final ccad e;
-    private final ccae f;
+    public bxhj b;
+    public ceiz c;
+    public eqcj d;
+    public final ceix e;
+    private final ceiy f;
 
     static {
         TimeUnit.SECONDS.toMillis(30L);
     }
 
     public ApiTokenChimeraService() {
-        this(ccad.a, null, enop.a);
+        this(ceix.a, null, eqci.a);
     }
 
     public static Bundle a(short s) {
@@ -50,75 +50,75 @@ public class ApiTokenChimeraService extends Service {
     }
 
     public final void b(int i) {
-        elhu elhuVar;
-        if (fqad.e()) {
+        envh envhVar;
+        if (fsub.e()) {
             Context applicationContext = getApplicationContext();
-            fecj v = elhu.a.v();
+            fgrc v = envh.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            elhu elhuVar2 = (elhu) fecpVar;
-            elhuVar2.f = 4001;
-            elhuVar2.b |= 8192;
+            fgri fgriVar = v.b;
+            envh envhVar2 = (envh) fgriVar;
+            envhVar2.f = 4001;
+            envhVar2.b |= 8192;
             int i2 = i - 1;
-            if (!fecpVar.L()) {
+            if (!fgriVar.L()) {
                 v.U();
             }
-            fecp fecpVar2 = v.b;
-            elhu elhuVar3 = (elhu) fecpVar2;
-            elhuVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-            elhuVar3.g = i2;
-            if (!fecpVar2.L()) {
+            fgri fgriVar2 = v.b;
+            envh envhVar3 = (envh) fgriVar2;
+            envhVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+            envhVar3.g = i2;
+            if (!fgriVar2.L()) {
                 v.U();
             }
-            elhu.b((elhu) v.b);
-            aqto aqtoVar = aqto.a;
-            int a2 = aquo.a(applicationContext);
+            envh.b((envh) v.b);
+            aswd aswdVar = aswd.a;
+            int a2 = asxd.a(applicationContext);
             if (!v.b.L()) {
                 v.U();
             }
-            elhu elhuVar4 = (elhu) v.b;
-            elhuVar4.b |= 64;
-            elhuVar4.d = a2;
-            if (asoe.k(applicationContext)) {
+            envh envhVar4 = (envh) v.b;
+            envhVar4.b |= 64;
+            envhVar4.d = a2;
+            if (aury.k(applicationContext)) {
                 if (!v.b.L()) {
                     v.U();
                 }
-                elhu elhuVar5 = (elhu) v.b;
-                elhuVar5.e = 8;
-                elhuVar5.b |= 512;
-            } else if (asoe.j(applicationContext)) {
+                envh envhVar5 = (envh) v.b;
+                envhVar5.e = 8;
+                envhVar5.b |= 512;
+            } else if (aury.j(applicationContext)) {
                 if (!v.b.L()) {
                     v.U();
                 }
-                elhu elhuVar6 = (elhu) v.b;
-                elhuVar6.e = 1;
-                elhuVar6.b |= 512;
-            } else if (asoe.m(applicationContext)) {
+                envh envhVar6 = (envh) v.b;
+                envhVar6.e = 1;
+                envhVar6.b |= 512;
+            } else if (aury.m(applicationContext)) {
                 if (!v.b.L()) {
                     v.U();
                 }
-                elhu elhuVar7 = (elhu) v.b;
-                elhuVar7.e = 2;
-                elhuVar7.b |= 512;
+                envh envhVar7 = (envh) v.b;
+                envhVar7.e = 2;
+                envhVar7.b |= 512;
             } else {
                 if (!v.b.L()) {
                     v.U();
                 }
-                elhu elhuVar8 = (elhu) v.b;
-                elhuVar8.e = 0;
-                elhuVar8.b |= 512;
+                envh envhVar8 = (envh) v.b;
+                envhVar8.e = 0;
+                envhVar8.b |= 512;
             }
-            elhuVar = (elhu) v.Q();
+            envhVar = (envh) v.Q();
         } else {
-            elhuVar = null;
+            envhVar = null;
         }
-        if (!brby.b(this.b) || elhuVar == null) {
+        if (!btjp.b(this.b) || envhVar == null) {
             return;
         }
-        this.b.f(elhuVar);
-        asot asotVar = ccdq.a;
+        this.b.f(envhVar);
+        ausn ausnVar = cemk.a;
     }
 
     @Override // com.google.android.chimera.Service
@@ -131,11 +131,11 @@ public class ApiTokenChimeraService extends Service {
         return false;
     }
 
-    public ApiTokenChimeraService(ccad ccadVar, ccaf ccafVar, enoq enoqVar) {
-        this.d = enop.a;
-        this.f = new ccae(this);
-        this.e = ccadVar;
-        this.c = ccafVar;
-        this.d = enoqVar;
+    public ApiTokenChimeraService(ceix ceixVar, ceiz ceizVar, eqcj eqcjVar) {
+        this.d = eqci.a;
+        this.f = new ceiy(this);
+        this.e = ceixVar;
+        this.c = ceizVar;
+        this.d = eqcjVar;
     }
 }

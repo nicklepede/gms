@@ -6,13 +6,13 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.webkit.WebView;
 import com.google.android.gms.R;
-import defpackage.arwm;
-import defpackage.bact;
+import defpackage.atzb;
+import defpackage.bcgp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ScrollToBottomWebView extends WebView {
-    public bact a;
+    public bcgp a;
 
     public ScrollToBottomWebView(Context context) {
         super(context);
@@ -23,18 +23,18 @@ public final class ScrollToBottomWebView extends WebView {
             return;
         }
         float contentHeight = getContentHeight();
-        bact bactVar = this.a;
-        arwm.s(bactVar);
-        arwm.s(bactVar.getContext());
+        bcgp bcgpVar = this.a;
+        atzb.s(bcgpVar);
+        atzb.s(bcgpVar.getContext());
         if (((int) Math.floor(contentHeight * r1.getResources().getDisplayMetrics().density)) - (getHeight() + getScrollY()) < 10) {
-            bact bactVar2 = this.a;
-            arwm.s(bactVar2);
-            View view = bactVar2.d;
+            bcgp bcgpVar2 = this.a;
+            atzb.s(bcgpVar2);
+            View view = bcgpVar2.d;
             if (view == null) {
                 return;
             }
             view.findViewById(R.id.fm_tos_layout_more_button).setVisibility(8);
-            bactVar2.d.findViewById(R.id.fm_tos_layout_continue_button).setVisibility(0);
+            bcgpVar2.d.findViewById(R.id.fm_tos_layout_continue_button).setVisibility(0);
         }
     }
 

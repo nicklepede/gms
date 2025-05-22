@@ -3,14 +3,14 @@ package com.google.android.gms.audiomodem;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ulk;
+import defpackage.atzr;
+import defpackage.whj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class DsssEncoding extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ulk();
+    public static final Parcelable.Creator CREATOR = new whj();
     public final int a;
     public final boolean b;
     public final boolean c;
@@ -57,19 +57,19 @@ public class DsssEncoding extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, i2);
-        arxc.e(parcel, 3, this.b);
-        arxc.e(parcel, 4, this.c);
-        arxc.o(parcel, 5, this.d);
-        arxc.o(parcel, 6, this.e);
-        arxc.l(parcel, 7, this.f);
-        arxc.o(parcel, 8, this.g);
-        arxc.l(parcel, 9, this.h);
-        arxc.o(parcel, 10, this.i);
-        arxc.o(parcel, 11, this.j);
-        arxc.o(parcel, 12, this.k);
-        arxc.o(parcel, 13, this.l);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, i2);
+        atzr.e(parcel, 3, this.b);
+        atzr.e(parcel, 4, this.c);
+        atzr.o(parcel, 5, this.d);
+        atzr.o(parcel, 6, this.e);
+        atzr.l(parcel, 7, this.f);
+        atzr.o(parcel, 8, this.g);
+        atzr.l(parcel, 9, this.h);
+        atzr.o(parcel, 10, this.i);
+        atzr.o(parcel, 11, this.j);
+        atzr.o(parcel, 12, this.k);
+        atzr.o(parcel, 13, this.l);
+        atzr.c(parcel, a);
     }
 }

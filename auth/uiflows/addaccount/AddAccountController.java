@@ -19,55 +19,63 @@ import com.google.android.gms.auth.firstparty.shared.ManagedAuthOptions;
 import com.google.android.gms.auth.keyattestation.KeyAttestationWarningChimeraActivity;
 import com.google.android.gms.auth.setup.d2d.SmartDeviceChimeraActivity;
 import com.google.android.gms.auth.uiflows.controller.Controller;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.addx;
-import defpackage.addy;
-import defpackage.adea;
-import defpackage.adeb;
-import defpackage.adej;
-import defpackage.adek;
-import defpackage.adev;
-import defpackage.adex;
-import defpackage.adfw;
-import defpackage.adjb;
-import defpackage.adjd;
-import defpackage.adjh;
-import defpackage.adjj;
-import defpackage.adjt;
-import defpackage.adjx;
-import defpackage.adle;
-import defpackage.arka;
-import defpackage.arke;
-import defpackage.arlb;
-import defpackage.arxd;
-import defpackage.arxo;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.denr;
-import defpackage.dvni;
-import defpackage.edeq;
-import defpackage.edjs;
-import defpackage.fkdk;
-import defpackage.fkdo;
-import defpackage.fkdz;
-import defpackage.fkib;
-import defpackage.fkkq;
-import defpackage.fkkz;
-import defpackage.fkmu;
-import defpackage.fuvs;
-import defpackage.vfv;
+import defpackage.a;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.afdz;
+import defpackage.afea;
+import defpackage.afec;
+import defpackage.afed;
+import defpackage.afel;
+import defpackage.afem;
+import defpackage.afex;
+import defpackage.afez;
+import defpackage.affy;
+import defpackage.afji;
+import defpackage.afjk;
+import defpackage.afjo;
+import defpackage.afjq;
+import defpackage.afka;
+import defpackage.afke;
+import defpackage.afll;
+import defpackage.atmp;
+import defpackage.atmt;
+import defpackage.atnq;
+import defpackage.atzb;
+import defpackage.atzs;
+import defpackage.auad;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.dgyu;
+import defpackage.dvsy;
+import defpackage.dvsz;
+import defpackage.dvtb;
+import defpackage.dvtd;
+import defpackage.dvte;
+import defpackage.dxyi;
+import defpackage.efrl;
+import defpackage.efwn;
+import defpackage.eluo;
+import defpackage.fmtw;
+import defpackage.fmua;
+import defpackage.fmul;
+import defpackage.fmyq;
+import defpackage.fnbf;
+import defpackage.fnbo;
+import defpackage.fndj;
+import defpackage.fxrq;
+import defpackage.xbw;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AddAccountController implements Controller {
-    final adeb b;
+    final afed b;
     boolean c;
     boolean d;
     Intent e;
@@ -78,19 +86,19 @@ public class AddAccountController implements Controller {
     boolean j;
     boolean k;
     boolean l;
-    adex m;
+    afez m;
     boolean n;
     boolean o;
     String p;
     private Intent t;
-    private static final asot q = asot.c("Auth", asej.AUTH_ACCOUNT_DATA, "AddAccountController");
+    private static final ausn q = ausn.c("Auth", auid.AUTH_ACCOUNT_DATA, "AddAccountController");
     private static final List r = Arrays.asList("com.android.settings", "com.android.vending");
-    private static final aano s = new aano("token_handle");
-    public static final aano a = new aano("intentionally_canceled");
-    public static final Parcelable.Creator CREATOR = new addy();
+    private static final acno s = new acno("token_handle");
+    public static final acno a = new acno("intentionally_canceled");
+    public static final Parcelable.Creator CREATOR = new afea();
 
-    public AddAccountController(adeb adebVar, boolean z, Intent intent, Account account, boolean z2, Intent intent2, String str, boolean z3, boolean z4, boolean z5, boolean z6, String str2, boolean z7, adex adexVar) {
-        this.b = adebVar;
+    public AddAccountController(afed afedVar, boolean z, Intent intent, Account account, boolean z2, Intent intent2, String str, boolean z3, boolean z4, boolean z5, boolean z6, String str2, boolean z7, afez afezVar) {
+        this.b = afedVar;
         this.d = z;
         this.e = intent;
         this.f = account;
@@ -103,27 +111,23 @@ public class AddAccountController implements Controller {
         this.l = z6;
         this.p = str2;
         this.c = z7;
-        this.m = adexVar;
-    }
-
-    private static adle A(int i) {
-        return new adle(0, null, i, null, addx.a, addx.b);
+        this.m = afezVar;
     }
 
     public static boolean c(boolean z) {
         if (!z) {
             return false;
         }
-        dvni dvniVar = vfv.a;
-        return fkib.a.a().g();
+        dxyi dxyiVar = xbw.a;
+        return fmyq.a.lK().g();
     }
 
     public static boolean d(boolean z) {
         if (!z) {
             return false;
         }
-        dvni dvniVar = vfv.a;
-        return fkib.a.a().f();
+        dxyi dxyiVar = xbw.a;
+        return fmyq.a.lK().f();
     }
 
     public static void e(Context context, Account account) {
@@ -136,25 +140,25 @@ public class AddAccountController implements Controller {
     }
 
     private final Intent f(String str) {
-        adjh adjhVar = adjh.c;
-        adeb adebVar = this.b;
-        Context context = adebVar.a;
-        boolean z = adebVar.j;
-        boolean z2 = adebVar.g;
-        return adjhVar.a(context, new adjd(z, z2, ErrorChimeraActivity.j(z2), context.getString(R.string.common_something_went_wrong), str, adebVar.k));
+        afjo afjoVar = afjo.c;
+        afed afedVar = this.b;
+        Context context = afedVar.a;
+        boolean z = afedVar.j;
+        boolean z2 = afedVar.g;
+        return afjoVar.a(context, new afjk(z, z2, ErrorChimeraActivity.j(z2), context.getString(R.string.common_something_went_wrong), str, afedVar.k));
     }
 
     private final Intent g() {
         boolean z = this.d;
-        int i = addx.a;
-        adeb adebVar = this.b;
-        D2dOptions d2dOptions = adebVar.x;
+        int i = afdz.a;
+        afed afedVar = this.b;
+        D2dOptions d2dOptions = afedVar.x;
         String.valueOf(d2dOptions);
-        if (!asqh.a() || adebVar.l) {
+        if (!auub.a() || afedVar.l) {
             return null;
         }
         boolean z2 = d2dOptions != null && d2dOptions.b;
-        boolean z3 = adebVar.g;
+        boolean z3 = afedVar.g;
         if (!z3) {
             if (!z2) {
                 return null;
@@ -170,62 +174,55 @@ public class AddAccountController implements Controller {
         if (z && !z5 && !z6) {
             return null;
         }
-        Context context = adebVar.a;
-        arke arkeVar = adebVar.k;
-        boolean z7 = adebVar.j;
-        String str = arkeVar.a;
-        arxo arxoVar = SmartDeviceChimeraActivity.l;
-        if (arlb.a(context) == null) {
+        Context context = afedVar.a;
+        atmt atmtVar = afedVar.k;
+        boolean z7 = afedVar.j;
+        String str = atmtVar.a;
+        auad auadVar = SmartDeviceChimeraActivity.l;
+        if (atnq.a(context) == null) {
             SmartDeviceChimeraActivity.l.m("Skipping TargetActivity. Reason: Bluetooth not available.", new Object[0]);
             return null;
         }
-        if (!asnd.t(context)) {
+        if (!auqx.t(context)) {
             SmartDeviceChimeraActivity.l.m("Skipping TargetActivity. Reason: Not main user.", new Object[0]);
             return null;
         }
-        if (denr.a(context)) {
+        if (dgyu.a(context)) {
             SmartDeviceChimeraActivity.l.m("Skipping TargetActivity. Reason: Cannot copy restricted profile", new Object[0]);
             return null;
         }
         Intent className = new Intent().setClassName(context, "com.google.android.gms.auth.setup.d2d.SmartDeviceActivity");
-        aanp aanpVar = new aanp();
-        aanpVar.d(SmartDeviceChimeraActivity.h, str);
-        aanpVar.d(SmartDeviceChimeraActivity.i, Boolean.valueOf(z7));
-        aanpVar.d(SmartDeviceChimeraActivity.m, true != z3 ? "auth" : "suw");
-        aanpVar.d(SmartDeviceChimeraActivity.n, arxd.n(d2dOptions));
-        return className.putExtras(aanpVar.a);
+        acnp acnpVar = new acnp();
+        acnpVar.d(SmartDeviceChimeraActivity.h, str);
+        acnpVar.d(SmartDeviceChimeraActivity.i, Boolean.valueOf(z7));
+        acnpVar.d(SmartDeviceChimeraActivity.m, true != z3 ? "auth" : "suw");
+        acnpVar.d(SmartDeviceChimeraActivity.n, atzs.n(d2dOptions));
+        return className.putExtras(acnpVar.a);
     }
 
-    private final aanp h() {
-        aanp aanpVar = new aanp();
-        this.c = true;
-        aanpVar.d(a, true);
-        return aanpVar;
-    }
-
-    private final adle i() {
-        adeb adebVar = this.b;
-        boolean z = adebVar.v;
-        if (fkdz.h() && !z && arka.f(this.h)) {
+    private final afll h() {
+        afed afedVar = this.b;
+        boolean z = afedVar.v;
+        if (fmul.g() && !z && atmp.f(this.h)) {
             z = true;
         }
-        adea adeaVar = new adea(adebVar);
-        adeaVar.k(z);
-        Intent b = addx.b(adeaVar.a(), this.f, this.g, this.j);
-        return b != null ? new adle(41, b, 0, null, android.R.anim.fade_in, android.R.anim.fade_out) : l();
+        afec afecVar = new afec(afedVar);
+        afecVar.k(z);
+        Intent b = afdz.b(afecVar.a(), this.f, this.g, this.j);
+        return b != null ? new afll(41, b, 0, null, android.R.anim.fade_in, android.R.anim.fade_out) : k();
     }
 
-    private final adle j() {
-        if (arka.f(this.h)) {
-            return q(0);
+    private final afll i() {
+        if (atmp.f(this.h)) {
+            return o(0);
         }
-        adeb adebVar = this.b;
-        if (fkmu.c() && asqh.e() && !arka.f(this.h) && this.i) {
-            Context context = adebVar.a;
+        afed afedVar = this.b;
+        if (fndj.c() && auub.e() && !atmp.f(this.h) && this.i) {
+            Context context = afedVar.a;
             DevicePolicyManager devicePolicyManager = (DevicePolicyManager) context.getSystemService("device_policy");
             if (devicePolicyManager == null || devicePolicyManager.getDeviceOwner() == null) {
                 UserManager userManager = (UserManager) context.getSystemService("user");
-                if (userManager != null && asqh.a()) {
+                if (userManager != null && auub.a()) {
                     Iterator<UserHandle> it = userManager.getUserProfiles().iterator();
                     while (it.hasNext()) {
                         if (userManager.isManagedProfile(it.next().getIdentifier())) {
@@ -233,109 +230,96 @@ public class AddAccountController implements Controller {
                         }
                     }
                 }
-                if (asnd.t(context)) {
-                    Intent b = WrapperControlledChimeraActivity.b(context, adebVar.j, adebVar.k, new Intent("com.google.android.gms.auth.managed.UNMANAGED_WORK_PROFILE_OPT_IN").setClassName(context, "com.google.android.gms.auth.manged.ui.GenericActivity"));
-                    int i = addx.a;
-                    return new adle(120, b, 0, null, 0, 0);
+                if (auqx.t(context)) {
+                    Intent b = WrapperControlledChimeraActivity.b(context, afedVar.j, afedVar.k, new Intent("com.google.android.gms.auth.managed.UNMANAGED_WORK_PROFILE_OPT_IN").setClassName(context, "com.google.android.gms.auth.manged.ui.GenericActivity"));
+                    int i = afdz.a;
+                    return new afll(120, b, 0, null, 0, 0);
                 }
             }
         }
-        return x(4);
+        return v(4);
     }
 
-    private final adle k() {
-        if (this.t == null || !y()) {
-            return r();
+    private final afll j() {
+        if (this.t == null || !w()) {
+            return p();
         }
-        adeb adebVar = this.b;
-        return new adle(50, WrapperControlledChimeraActivity.b(adebVar.a, adebVar.j, adebVar.k, this.t), 0, null, addx.a, addx.b);
+        afed afedVar = this.b;
+        return new afll(50, WrapperControlledChimeraActivity.b(afedVar.a, afedVar.j, afedVar.k, this.t), 0, null, afdz.a, afdz.b);
     }
 
-    private final adle l() {
+    private final afll k() {
         Intent intent;
         String str = this.h;
         boolean z = this.l;
         Account account = this.f;
         boolean z2 = this.g;
-        dvni dvniVar = vfv.a;
-        boolean B = fkkz.a.a().B();
-        adeb adebVar = this.b;
-        boolean z3 = adebVar.g;
-        boolean z4 = (!B || z3 || z || arka.f(str)) ? false : true;
+        dxyi dxyiVar = xbw.a;
+        boolean B = fnbo.a.lK().B();
+        afed afedVar = this.b;
+        boolean z3 = afedVar.g;
+        boolean z4 = (!B || z3 || z || atmp.f(str)) ? false : true;
         Log.i("Auth", String.format(Locale.US, "[AddAccount, AppPickerHelper] Showing app picker = %b", Boolean.valueOf(z4)));
         if (z4) {
-            Context context = adebVar.a;
-            boolean z5 = adebVar.j;
-            arke arkeVar = adebVar.k;
+            Context context = afedVar.a;
+            boolean z5 = afedVar.j;
+            atmt atmtVar = afedVar.k;
             Intent intent2 = new Intent();
             intent2.setAction("com.google.android.apps.restore.APP_PICKER_ADD_ACCOUNT");
-            intent = adev.a(context, intent2);
+            intent = afex.a(context, intent2);
             if (intent != null) {
                 Intent putExtra = intent.putExtra("account", account);
-                aanp aanpVar = new aanp();
-                aanpVar.d(adej.a, account);
-                aanpVar.d(adej.b, Boolean.valueOf(z2));
-                aanpVar.d(adej.c, Boolean.valueOf(z3));
-                aanpVar.d(adjb.b, Boolean.valueOf(z5));
-                aanpVar.d(adjb.a, arkeVar == null ? null : arkeVar.a());
-                putExtra.putExtras(aanpVar.a);
+                acnp acnpVar = new acnp();
+                acnpVar.d(afel.a, account);
+                acnpVar.d(afel.b, Boolean.valueOf(z2));
+                acnpVar.d(afel.c, Boolean.valueOf(z3));
+                acnpVar.d(afji.b, Boolean.valueOf(z5));
+                acnpVar.d(afji.a, atmtVar == null ? null : atmtVar.a());
+                putExtra.putExtras(acnpVar.a);
             } else {
                 Log.i("Auth", String.format(Locale.US, "[AddAccount, AppPickerHelper] App picker activity couldn't be resolved.", new Object[0]));
             }
         } else {
             intent = null;
         }
-        Intent b = intent != null ? WrapperControlledChimeraActivity.b(adebVar.a, adebVar.j, adebVar.k, intent) : null;
-        return b != null ? new adle(42, b, 0, null, android.R.anim.fade_in, android.R.anim.fade_out) : j();
+        Intent b = intent != null ? WrapperControlledChimeraActivity.b(afedVar.a, afedVar.j, afedVar.k, intent) : null;
+        return b != null ? new afll(42, b, 0, null, android.R.anim.fade_in, android.R.anim.fade_out) : i();
     }
 
-    private final adle m() {
-        return n(null);
-    }
-
-    private final adle n(Bundle bundle) {
-        Intent putExtras = new Intent().putExtras(h().a);
-        if (bundle != null) {
-            putExtras.putExtras(bundle);
+    private final afll l(dvte dvteVar) {
+        atzb.c(dvteVar instanceof dvsz, a.H(dvteVar, "unhandled argument type=", " to finishCancel"));
+        Bundle bundle = dvteVar.d;
+        boolean z = bundle.getBoolean("intentionally_canceled", false);
+        this.c = z;
+        if (!z) {
+            ((eluo) q.j()).x("Unintentional cancel from AddAccountController");
         }
-        adeb adebVar = this.b;
-        int i = addx.a;
-        AccountAuthenticatorResponse accountAuthenticatorResponse = adebVar.d;
+        Intent putExtras = new Intent().putExtras(bundle);
+        afed afedVar = this.b;
+        int i = afdz.a;
+        AccountAuthenticatorResponse accountAuthenticatorResponse = afedVar.d;
         if (accountAuthenticatorResponse != null) {
             accountAuthenticatorResponse.onError(4, "Canceled");
         }
-        return new adle(0, null, 0, putExtras, addx.c, addx.d);
+        return new afll(0, null, 0, putExtras, afdz.c, afdz.d);
     }
 
-    private final adle o() {
-        Intent intent;
-        int i;
+    private final afll m() {
         if (this.d) {
-            intent = new Intent().putExtras(h().a);
-            i = 0;
-        } else {
-            Intent intent2 = this.e;
-            if (intent2 != null) {
-                i = intent2.getIntExtra("tap_and_go_result_code", -1);
-                this.e.removeExtra("tap_and_go_result_code");
-                intent = this.e;
-            } else {
-                intent = null;
-                i = 1;
-            }
+            afed afedVar = this.b;
+            dvsy dvsyVar = dvsy.a;
+            return afdz.d(afedVar, dvsyVar.c, new Intent().putExtras(dvsyVar.d));
         }
-        Intent intent3 = intent;
-        int i2 = i;
-        adeb adebVar = this.b;
-        int i3 = addx.a;
-        AccountAuthenticatorResponse accountAuthenticatorResponse = adebVar.d;
-        if (accountAuthenticatorResponse != null) {
-            accountAuthenticatorResponse.onError(4, "Skipped or error");
+        Intent intent = this.e;
+        if (intent == null) {
+            return afdz.d(this.b, dvtb.a.c, null);
         }
-        return new adle(0, null, i2, intent3, addx.a, addx.b);
+        int intExtra = intent.getIntExtra("tap_and_go_result_code", -1);
+        this.e.removeExtra("tap_and_go_result_code");
+        return afdz.d(this.b, intExtra, this.e);
     }
 
-    private final adle p() {
+    private final afll n() {
         Intent intent;
         Intent intent2 = this.e;
         int i = -1;
@@ -347,11 +331,8 @@ public class AddAccountController implements Controller {
             intent = null;
         }
         int i2 = i;
-        if (!z()) {
-            Bundle bundle = new Bundle();
-            bundle.putString("authAccount", this.f.name);
-            bundle.putString("accountType", this.f.type);
-            bundle.putBoolean(adjb.e.a, this.g);
+        if (!x()) {
+            Bundle bundle = new dvtd(this.f.name, this.f.type, this.g, null, null).d;
             String str = this.p;
             if (str != null) {
                 bundle.putString("accountStatusToken", str);
@@ -359,51 +340,51 @@ public class AddAccountController implements Controller {
             intent = new Intent().putExtras(bundle);
         }
         Intent intent3 = intent;
-        adeb adebVar = this.b;
-        int i3 = addx.a;
-        AccountAuthenticatorResponse accountAuthenticatorResponse = adebVar.d;
+        afed afedVar = this.b;
+        int i3 = afdz.a;
+        AccountAuthenticatorResponse accountAuthenticatorResponse = afedVar.d;
         if (accountAuthenticatorResponse != null) {
             accountAuthenticatorResponse.onResult(intent3 != null ? intent3.getExtras() : null);
         }
-        return new adle(0, null, i2, intent3, addx.a, addx.b);
+        return new afll(0, null, i2, intent3, afdz.a, afdz.b);
     }
 
-    private final adle q(int i) {
+    private final afll o(int i) {
         ManagedAuthOptions managedAuthOptions;
         Account account = this.f;
-        adeb adebVar = this.b;
-        arke arkeVar = adebVar.k;
-        Bundle a2 = arkeVar == null ? Bundle.EMPTY : arkeVar.a();
-        boolean z = adebVar.u;
-        String str = adebVar.f;
-        boolean z2 = adebVar.r;
+        afed afedVar = this.b;
+        atmt atmtVar = afedVar.k;
+        Bundle a2 = atmtVar == null ? Bundle.EMPTY : atmtVar.a();
+        boolean z = afedVar.u;
+        String str = afedVar.f;
+        boolean z2 = afedVar.r;
         String str2 = this.h;
         boolean z3 = this.l;
-        Bundle a3 = (!fkkq.c() || (managedAuthOptions = adebVar.w) == null) ? Bundle.EMPTY : managedAuthOptions.a();
-        boolean z4 = adebVar.j;
-        boolean z5 = adebVar.g;
-        Context context = adebVar.a;
-        Intent d = arka.d(context, account, z5, z4, a2, z, str, z2, str2, z3, 0, a3, false, i);
+        Bundle a3 = (!fnbf.c() || (managedAuthOptions = afedVar.w) == null) ? Bundle.EMPTY : managedAuthOptions.a();
+        boolean z4 = afedVar.j;
+        boolean z5 = afedVar.g;
+        Context context = afedVar.a;
+        Intent d = atmp.d(context, account, z5, z4, a2, z, str, z2, str2, z3, 0, a3, false, i);
         if (d == null) {
-            return x(4);
+            return v(4);
         }
-        if (fkdo.a.a().H()) {
-            return new adle(60, WrapperControlledChimeraActivity.b(context, z4, arkeVar, d), 0, null, addx.a, addx.b);
+        if (fmua.a.lK().H()) {
+            return new afll(60, WrapperControlledChimeraActivity.b(context, z4, atmtVar, d), 0, null, afdz.a, afdz.b);
         }
-        Intent b = WrapperControlledChimeraActivity.b(context, z4, arkeVar, d);
-        int i2 = addx.a;
-        return new adle(60, b, 0, null, 0, 0);
+        Intent b = WrapperControlledChimeraActivity.b(context, z4, atmtVar, d);
+        int i2 = afdz.a;
+        return new afll(60, b, 0, null, 0, 0);
     }
 
-    private final adle r() {
-        adeb adebVar = this.b;
-        if (!adebVar.g) {
-            return p();
+    private final afll p() {
+        afed afedVar = this.b;
+        if (!afedVar.g) {
+            return n();
         }
-        adek adekVar = adebVar.c;
-        Intent intent = new Intent(true != asqh.c() ? "android.intent.action.ACTION_CARRIER_SETUP" : "android.intent.action.CARRIER_SETUP");
+        afem afemVar = afedVar.c;
+        Intent intent = new Intent(true != auub.c() ? "android.intent.action.ACTION_CARRIER_SETUP" : "android.intent.action.CARRIER_SETUP");
         intent.putExtra("device_setup", true);
-        List carrierPackageNamesForIntent = adekVar.a.getCarrierPackageNamesForIntent(intent);
+        List carrierPackageNamesForIntent = afemVar.a.getCarrierPackageNamesForIntent(intent);
         if (carrierPackageNamesForIntent == null || carrierPackageNamesForIntent.isEmpty()) {
             intent = null;
         } else {
@@ -412,14 +393,14 @@ public class AddAccountController implements Controller {
             }
             intent.setPackage((String) carrierPackageNamesForIntent.get(0));
             intent.putExtra("disable_back", true);
-            intent.putExtra("has_account", adekVar.b.p("com.google").length > 0);
+            intent.putExtra("has_account", afemVar.b.p("com.google").length > 0);
             intent.putExtra("from_add_account_controller", true);
         }
-        Intent b = intent != null ? WrapperControlledChimeraActivity.b(adebVar.a, adebVar.j, adebVar.k, intent) : null;
-        return b != null ? new adle(90, b, 0, null, -1, -1) : p();
+        Intent b = intent != null ? WrapperControlledChimeraActivity.b(afedVar.a, afedVar.j, afedVar.k, intent) : null;
+        return b != null ? new afll(90, b, 0, null, -1, -1) : n();
     }
 
-    private final adle s(AccountDetail accountDetail) {
+    private final afll q(AccountDetail accountDetail) {
         this.f = new Account(accountDetail.a, accountDetail.b);
         this.g = accountDetail.c;
         boolean z = accountDetail.e;
@@ -428,94 +409,94 @@ public class AddAccountController implements Controller {
         Intent intent = accountDetail.f;
         this.t = intent;
         if (intent != null) {
-            adeb adebVar = this.b;
-            intent.putExtra("theme", adebVar.k.a);
-            this.t.putExtra("useImmersiveMode", adebVar.j);
+            afed afedVar = this.b;
+            intent.putExtra("theme", afedVar.k.a);
+            this.t.putExtra("useImmersiveMode", afedVar.j);
         }
         this.h = accountDetail.d;
-        if (fkmu.c()) {
+        if (fndj.c()) {
             this.i = accountDetail.i;
         }
         this.l = z;
-        if (arka.f(this.h)) {
+        if (atmp.f(this.h)) {
             this.k = d(this.l);
             this.j = c(this.l);
-            adeb adebVar2 = this.b;
-            e(adebVar2.a, this.f);
+            afed afedVar2 = this.b;
+            e(afedVar2.a, this.f);
         }
-        return i();
+        return h();
     }
 
-    private final adle t() {
-        return new adle(30, addx.a(this.b, this.m, this.d, y()), 0, null, android.R.anim.fade_in, android.R.anim.fade_out);
+    private final afll r() {
+        return new afll(30, afdz.a(this.b, this.m, this.d, w()), 0, null, android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
-    private final adle u() {
-        int i = addx.a;
-        int i2 = adfw.b;
-        adeb adebVar = this.b;
-        Context context = adebVar.a;
+    private final afll s() {
+        int i = afdz.a;
+        int i2 = affy.b;
+        afed afedVar = this.b;
+        Context context = afedVar.a;
         Intent intent = new Intent();
         intent.setAction("com.google.android.gms.auth.addaccount.PRE_ADD_ACCOUNT");
-        Intent a2 = adev.a(context, intent);
-        boolean z = adebVar.j;
-        arke arkeVar = adebVar.k;
-        boolean z2 = adebVar.g;
+        Intent a2 = afex.a(context, intent);
+        boolean z = afedVar.j;
+        atmt atmtVar = afedVar.k;
+        boolean z2 = afedVar.g;
         if (a2 != null) {
-            Intent putExtra = a2.putExtra("is_setup_wizard", z2).putExtra("use_immersive_mode", z).putExtra("is_resolve_frp_only", adebVar.t);
-            Bundle a3 = arkeVar == null ? null : arkeVar.a();
-            D2dOptions d2dOptions = adebVar.x;
+            Intent putExtra = a2.putExtra("is_setup_wizard", z2).putExtra("use_immersive_mode", z).putExtra("is_resolve_frp_only", afedVar.t);
+            Bundle a3 = atmtVar == null ? null : atmtVar.a();
+            D2dOptions d2dOptions = afedVar.x;
             putExtra.putExtra("ui_parameters", a3);
             if (d2dOptions != null) {
-                a2.putExtra("d2d_options", arxd.n(d2dOptions));
+                a2.putExtra("d2d_options", atzs.n(d2dOptions));
             }
         }
-        Intent b = a2 != null ? WrapperControlledChimeraActivity.b(context, z, arkeVar, a2) : null;
-        return b != null ? new adle(10, b, 0, null, -1, -1) : new adle(39, adjh.c.a(context, new adjd(z, z2, ErrorChimeraActivity.j(z2), context.getString(R.string.common_something_went_wrong), context.getString(R.string.auth_error_generic_server_error), arkeVar)), 0, null, -1, -1);
+        Intent b = a2 != null ? WrapperControlledChimeraActivity.b(context, z, atmtVar, a2) : null;
+        return b != null ? new afll(10, b, 0, null, -1, -1) : new afll(39, afjo.c.a(context, new afjk(z, z2, ErrorChimeraActivity.j(z2), context.getString(R.string.common_something_went_wrong), context.getString(R.string.auth_error_generic_server_error), atmtVar)), 0, null, -1, -1);
     }
 
-    private final adle v() {
+    private final afll t() {
         Intent g = g();
         if (this.o) {
-            adeb adebVar = this.b;
+            afed afedVar = this.b;
             int i = KeyAttestationWarningChimeraActivity.h;
-            return new adle(15, adjj.c.a(adebVar.a, fuvs.a), 0, null, addx.a, addx.b);
+            return new afll(15, afjq.c.a(afedVar.a, fxrq.a), 0, null, afdz.a, afdz.b);
         }
         if (this.n) {
-            adeb adebVar2 = this.b;
-            return new adle(14, adjx.c.a(adebVar2.a, new adjt(adebVar2.i)), 0, null, addx.a, addx.b);
+            afed afedVar2 = this.b;
+            return new afll(14, afke.c.a(afedVar2.a, new afka(afedVar2.i)), 0, null, afdz.a, afdz.b);
         }
         if (g == null) {
-            return t();
+            return r();
         }
-        if (fkdk.d()) {
-            adeb adebVar3 = this.b;
-            int i2 = edjs.a;
-            if (edeq.z(adebVar3.a)) {
-                return new adle(20, g, 0, null, addx.a, addx.b);
+        if (fmtw.d()) {
+            afed afedVar3 = this.b;
+            int i2 = efwn.a;
+            if (efrl.z(afedVar3.a)) {
+                return new afll(20, g, 0, null, afdz.a, afdz.b);
             }
         }
-        int i3 = addx.a;
-        return new adle(20, g, 0, null, android.R.anim.fade_in, android.R.anim.fade_out);
+        int i3 = afdz.a;
+        return new afll(20, g, 0, null, android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
-    private final adle w(int i) {
-        return new adle(70, addx.c(this.b, this.f, this.l, i), 0, null, addx.a, addx.b);
+    private final afll u(int i) {
+        return new afll(70, afdz.c(this.b, this.f, this.l, i), 0, null, afdz.a, afdz.b);
     }
 
-    private final adle x(int i) {
-        return this.k ? w(i) : k();
+    private final afll v(int i) {
+        return this.k ? u(i) : j();
     }
 
-    private final boolean y() {
-        adeb adebVar = this.b;
-        if (adebVar.g) {
+    private final boolean w() {
+        afed afedVar = this.b;
+        if (afedVar.g) {
             return true;
         }
-        return r.contains(adebVar.f);
+        return r.contains(afedVar.f);
     }
 
-    private final boolean z() {
+    private final boolean x() {
         Intent intent = this.e;
         if (intent == null) {
             return false;
@@ -523,33 +504,37 @@ public class AddAccountController implements Controller {
         return (intent.getStringExtra("authAccount") == null || this.e.getStringExtra("accountType") == null) ? false : true;
     }
 
+    private static afll y(int i) {
+        return new afll(0, null, i, null, afdz.a, afdz.b);
+    }
+
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Removed duplicated region for block: B:101:0x020e  */
-    /* JADX WARN: Removed duplicated region for block: B:103:0x0213  */
-    /* JADX WARN: Removed duplicated region for block: B:105:0x0218  */
-    /* JADX WARN: Removed duplicated region for block: B:109:0x0231  */
-    /* JADX WARN: Removed duplicated region for block: B:291:0x0790  */
-    /* JADX WARN: Removed duplicated region for block: B:294:0x079b  */
-    /* JADX WARN: Removed duplicated region for block: B:296:0x07a7  */
-    /* JADX WARN: Removed duplicated region for block: B:357:0x07ed  */
-    /* JADX WARN: Removed duplicated region for block: B:84:0x01c6  */
-    /* JADX WARN: Removed duplicated region for block: B:87:0x027d  */
-    /* JADX WARN: Removed duplicated region for block: B:91:0x01ce  */
-    /* JADX WARN: Removed duplicated region for block: B:93:0x01d3  */
-    /* JADX WARN: Removed duplicated region for block: B:95:0x01ec  */
-    /* JADX WARN: Removed duplicated region for block: B:97:0x01f1  */
-    /* JADX WARN: Removed duplicated region for block: B:99:0x01f6  */
+    /* JADX WARN: Removed duplicated region for block: B:101:0x0203  */
+    /* JADX WARN: Removed duplicated region for block: B:103:0x0208  */
+    /* JADX WARN: Removed duplicated region for block: B:105:0x020d  */
+    /* JADX WARN: Removed duplicated region for block: B:109:0x0228  */
+    /* JADX WARN: Removed duplicated region for block: B:292:0x07a2  */
+    /* JADX WARN: Removed duplicated region for block: B:295:0x07ad  */
+    /* JADX WARN: Removed duplicated region for block: B:297:0x07b9  */
+    /* JADX WARN: Removed duplicated region for block: B:358:0x0801  */
+    /* JADX WARN: Removed duplicated region for block: B:84:0x01bb  */
+    /* JADX WARN: Removed duplicated region for block: B:87:0x0274  */
+    /* JADX WARN: Removed duplicated region for block: B:91:0x01c3  */
+    /* JADX WARN: Removed duplicated region for block: B:93:0x01c8  */
+    /* JADX WARN: Removed duplicated region for block: B:95:0x01e1  */
+    /* JADX WARN: Removed duplicated region for block: B:97:0x01e6  */
+    /* JADX WARN: Removed duplicated region for block: B:99:0x01eb  */
     @Override // com.google.android.gms.auth.uiflows.controller.Controller
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final defpackage.adle a(defpackage.adli r27) {
+    public final defpackage.afll a(defpackage.aflp r27) {
         /*
-            Method dump skipped, instructions count: 2186
+            Method dump skipped, instructions count: 2206
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.uiflows.addaccount.AddAccountController.a(adli):adle");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.uiflows.addaccount.AddAccountController.a(aflp):afll");
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller
@@ -564,30 +549,30 @@ public class AddAccountController implements Controller {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        adeb adebVar = this.b;
-        parcel.writeParcelable(adebVar.d, 0);
-        parcel.writeString(adebVar.e);
-        parcel.writeByte(adebVar.g ? (byte) 1 : (byte) 0);
-        parcel.writeByte(adebVar.h ? (byte) 1 : (byte) 0);
-        parcel.writeByte(adebVar.i ? (byte) 1 : (byte) 0);
-        parcel.writeByte(adebVar.j ? (byte) 1 : (byte) 0);
-        arke arkeVar = adebVar.k;
+        afed afedVar = this.b;
+        parcel.writeParcelable(afedVar.d, 0);
+        parcel.writeString(afedVar.e);
+        parcel.writeByte(afedVar.g ? (byte) 1 : (byte) 0);
+        parcel.writeByte(afedVar.h ? (byte) 1 : (byte) 0);
+        parcel.writeByte(afedVar.i ? (byte) 1 : (byte) 0);
+        parcel.writeByte(afedVar.j ? (byte) 1 : (byte) 0);
+        atmt atmtVar = afedVar.k;
         Bundle bundle = null;
-        parcel.writeParcelable(arkeVar == null ? null : arkeVar.a(), 0);
-        parcel.writeByte(adebVar.l ? (byte) 1 : (byte) 0);
-        parcel.writeString(adebVar.n);
-        parcel.writeString(adebVar.o);
-        parcel.writeString(adebVar.p);
-        parcel.writeStringArray((String[]) adebVar.q.toArray(new String[0]));
-        parcel.writeString(adebVar.f);
-        parcel.writeString(adebVar.s);
+        parcel.writeParcelable(atmtVar == null ? null : atmtVar.a(), 0);
+        parcel.writeByte(afedVar.l ? (byte) 1 : (byte) 0);
+        parcel.writeString(afedVar.n);
+        parcel.writeString(afedVar.o);
+        parcel.writeString(afedVar.p);
+        parcel.writeStringArray((String[]) afedVar.q.toArray(new String[0]));
+        parcel.writeString(afedVar.f);
+        parcel.writeString(afedVar.s);
         parcel.writeByte(this.d ? (byte) 1 : (byte) 0);
         parcel.writeParcelable(this.e, 0);
         parcel.writeParcelable(this.f, 0);
         parcel.writeByte(this.g ? (byte) 1 : (byte) 0);
         parcel.writeParcelable(this.t, 0);
         parcel.writeString(this.h);
-        if (fkmu.c()) {
+        if (fndj.c()) {
             parcel.writeByte(this.i ? (byte) 1 : (byte) 0);
         }
         parcel.writeByte(this.j ? (byte) 1 : (byte) 0);
@@ -595,23 +580,23 @@ public class AddAccountController implements Controller {
         parcel.writeByte(this.l ? (byte) 1 : (byte) 0);
         parcel.writeString(this.p);
         parcel.writeByte(this.c ? (byte) 1 : (byte) 0);
-        parcel.writeByte(adebVar.t ? (byte) 1 : (byte) 0);
-        parcel.writeByte(adebVar.m ? (byte) 1 : (byte) 0);
-        parcel.writeByte(adebVar.u ? (byte) 1 : (byte) 0);
-        parcel.writeByte(adebVar.v ? (byte) 1 : (byte) 0);
-        ManagedAuthOptions managedAuthOptions = adebVar.w;
-        parcel.writeByteArray(managedAuthOptions == null ? null : arxd.n(managedAuthOptions));
-        D2dOptions d2dOptions = adebVar.x;
-        parcel.writeByteArray(d2dOptions == null ? null : arxd.n(d2dOptions));
-        adex adexVar = this.m;
-        if (adexVar != null) {
+        parcel.writeByte(afedVar.t ? (byte) 1 : (byte) 0);
+        parcel.writeByte(afedVar.m ? (byte) 1 : (byte) 0);
+        parcel.writeByte(afedVar.u ? (byte) 1 : (byte) 0);
+        parcel.writeByte(afedVar.v ? (byte) 1 : (byte) 0);
+        ManagedAuthOptions managedAuthOptions = afedVar.w;
+        parcel.writeByteArray(managedAuthOptions == null ? null : atzs.n(managedAuthOptions));
+        D2dOptions d2dOptions = afedVar.x;
+        parcel.writeByteArray(d2dOptions == null ? null : atzs.n(d2dOptions));
+        afez afezVar = this.m;
+        if (afezVar != null) {
             bundle = new Bundle();
-            bundle.putInt("desired_flow", adexVar.a);
+            bundle.putInt("desired_flow", afezVar.a);
         }
         parcel.writeParcelable(bundle, 0);
-        parcel.writeString(adebVar.y);
-        parcel.writeInt(adebVar.z);
-        parcel.writeByte(adebVar.A ? (byte) 1 : (byte) 0);
-        parcel.writeByte(adebVar.B ? (byte) 1 : (byte) 0);
+        parcel.writeString(afedVar.y);
+        parcel.writeInt(afedVar.z);
+        parcel.writeByte(afedVar.A ? (byte) 1 : (byte) 0);
+        parcel.writeByte(afedVar.B ? (byte) 1 : (byte) 0);
     }
 }

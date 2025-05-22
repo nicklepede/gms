@@ -2,23 +2,23 @@ package com.google.android.gms.ads.measurement.service;
 
 import android.os.Bundle;
 import android.os.Parcel;
-import defpackage.otn;
-import defpackage.oto;
+import defpackage.qmq;
+import defpackage.qmr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public abstract class c extends otn implements d {
+public abstract class c extends qmq implements d {
     public c() {
         super("com.google.android.gms.ads.measurement.service.IGmpConversionTrackingService");
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         if (i != 1) {
             return false;
         }
-        Bundle bundle = (Bundle) oto.a(parcel, Bundle.CREATOR);
-        fq(parcel);
+        Bundle bundle = (Bundle) qmr.a(parcel, Bundle.CREATOR);
+        fD(parcel);
         a(bundle);
         parcel2.writeNoException();
         return true;

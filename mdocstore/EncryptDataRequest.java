@@ -6,15 +6,15 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.mdocstore.types.CryptoSchemeId;
 import com.google.android.gms.mdocstore.types.UnencryptedData;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cdev;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cfnu;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class EncryptDataRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cdev();
+    public static final Parcelable.Creator CREATOR = new cfnu();
     public Account a;
     public CryptoSchemeId b;
     public UnencryptedData[] c;
@@ -29,7 +29,7 @@ public final class EncryptDataRequest extends AbstractSafeParcelable {
         }
         if (obj instanceof EncryptDataRequest) {
             EncryptDataRequest encryptDataRequest = (EncryptDataRequest) obj;
-            if (arwb.b(this.a, encryptDataRequest.a) && arwb.b(this.b, encryptDataRequest.b) && Arrays.equals(this.c, encryptDataRequest.c) && arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(encryptDataRequest.d))) {
+            if (atyq.b(this.a, encryptDataRequest.a) && atyq.b(this.b, encryptDataRequest.b) && Arrays.equals(this.c, encryptDataRequest.c) && atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(encryptDataRequest.d))) {
                 return true;
             }
         }
@@ -42,12 +42,12 @@ public final class EncryptDataRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.J(parcel, 3, this.c, i);
-        arxc.e(parcel, 4, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.J(parcel, 3, this.c, i);
+        atzr.e(parcel, 4, this.d);
+        atzr.c(parcel, a);
     }
 
     public EncryptDataRequest(Account account, CryptoSchemeId cryptoSchemeId, UnencryptedData[] unencryptedDataArr, boolean z) {

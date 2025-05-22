@@ -6,66 +6,66 @@ import android.os.Bundle;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.api.credentials.credman.remote.RemoteProxyChimeraActivity;
 import com.google.android.gms.fido.fido2.api.common.PublicKeyCredential;
-import defpackage.abv;
-import defpackage.acm;
-import defpackage.iru;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.wxq;
-import defpackage.wxr;
-import defpackage.wyb;
+import defpackage.aca;
+import defpackage.acr;
+import defpackage.itk;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.yuj;
+import defpackage.yuk;
+import defpackage.yuv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class RemoteProxyChimeraActivity extends qet {
-    public wxr j;
-    public abv k;
+public class RemoteProxyChimeraActivity extends rxx {
+    public yuk j;
+    public aca k;
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setTheme(R.style.Theme_GisHidden);
-        wxr wxrVar = (wxr) new jrh(this, new wxq(getIntent())).a(wxr.class);
-        this.j = wxrVar;
-        wxrVar.e.g(this, new jpd() { // from class: wxc
-            @Override // defpackage.jpd
+        yuk yukVar = (yuk) new jxw(this, new yuj(getIntent())).a(yuk.class);
+        this.j = yukVar;
+        yukVar.e.g(this, new jvs() { // from class: ytv
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                RemoteProxyChimeraActivity.this.k.b(new ace((PendingIntent) obj).a());
+                RemoteProxyChimeraActivity.this.k.b(new acj((PendingIntent) obj).a());
             }
         });
-        this.j.d.g(this, new jpd() { // from class: wxd
-            @Override // defpackage.jpd
+        this.j.d.g(this, new jvs() { // from class: ytw
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                wpu wpuVar = (wpu) obj;
-                int a = wpuVar.a();
-                Intent b = wpuVar.b();
+                yme ymeVar = (yme) obj;
+                int a = ymeVar.a();
+                Intent b = ymeVar.b();
                 RemoteProxyChimeraActivity remoteProxyChimeraActivity = RemoteProxyChimeraActivity.this;
                 remoteProxyChimeraActivity.setResult(a, b);
                 remoteProxyChimeraActivity.finish();
             }
         });
-        this.k = registerForActivityResult(new acm(), new wyb(new iru() { // from class: wxe
-            @Override // defpackage.iru
+        this.k = registerForActivityResult(new acr(), new yuv(new itk() { // from class: ytx
+            @Override // defpackage.itk
             public final void a(Object obj) {
-                wxr wxrVar2 = RemoteProxyChimeraActivity.this.j;
-                wxrVar2.n = (PublicKeyCredential) obj;
-                wxrVar2.c.g();
+                yuk yukVar2 = RemoteProxyChimeraActivity.this.j;
+                yukVar2.n = (PublicKeyCredential) obj;
+                yukVar2.c.g();
             }
-        }, new iru() { // from class: wxf
-            @Override // defpackage.iru
+        }, new itk() { // from class: yty
+            @Override // defpackage.itk
             public final void a(Object obj) {
-                RemoteProxyChimeraActivity.this.j.c.j(((wya) obj).a);
+                RemoteProxyChimeraActivity.this.j.c.j(((yuu) obj).a);
             }
         }, 28451));
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStart() {
         super.onStart();
-        wxr wxrVar = this.j;
-        if (wxrVar != null) {
-            wxrVar.c.i();
+        yuk yukVar = this.j;
+        if (yukVar != null) {
+            yukVar.c.i();
         }
     }
 }

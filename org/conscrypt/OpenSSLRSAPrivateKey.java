@@ -13,7 +13,7 @@ import java.security.interfaces.RSAPrivateKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.RSAPrivateKeySpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 class OpenSSLRSAPrivateKey implements RSAPrivateKey, OpenSSLKeyHolder {
     private static final long serialVersionUID = 4872170254439578735L;
@@ -58,7 +58,7 @@ class OpenSSLRSAPrivateKey implements RSAPrivateKey, OpenSSLKeyHolder {
         if (modulus != null) {
             return new OpenSSLKey(NativeCrypto.getRSAPrivateKeyWrapper(privateKey, modulus.toByteArray()), true);
         }
-        throw new InvalidKeyException(a.G(publicKey, privateKey, "RSA modulus not available. Private: ", ", public: "));
+        throw new InvalidKeyException(a.J(publicKey, privateKey, "RSA modulus not available. Private: ", ", public: "));
     }
 
     static OpenSSLKey wrapPlatformKey(RSAPrivateKey rSAPrivateKey) {

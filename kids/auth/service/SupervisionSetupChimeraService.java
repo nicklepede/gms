@@ -5,81 +5,81 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.ModuleContext;
 import com.google.android.chimera.Service;
-import defpackage.asnz;
-import defpackage.asot;
-import defpackage.bota;
-import defpackage.boxd;
-import defpackage.boxe;
-import defpackage.boxh;
-import defpackage.boxx;
-import defpackage.boxz;
-import defpackage.boyb;
-import defpackage.boyq;
-import defpackage.boyz;
-import defpackage.bozn;
-import defpackage.bozy;
-import defpackage.bozz;
-import defpackage.bpae;
-import defpackage.bpah;
-import defpackage.bpan;
-import defpackage.bpbk;
-import defpackage.bpbl;
-import defpackage.bpbp;
-import defpackage.bpbq;
-import defpackage.bpbs;
-import defpackage.eito;
-import defpackage.eits;
-import defpackage.ejhf;
-import defpackage.fixl;
-import defpackage.fixm;
-import defpackage.fphp;
-import defpackage.fuyx;
-import defpackage.fvbo;
-import defpackage.fvgt;
-import defpackage.fvic;
-import defpackage.fvid;
-import defpackage.fvjv;
-import defpackage.fvku;
-import defpackage.fvmi;
-import defpackage.fvmk;
-import defpackage.fvmm;
+import defpackage.aurt;
+import defpackage.ausn;
+import defpackage.braq;
+import defpackage.bret;
+import defpackage.breu;
+import defpackage.brex;
+import defpackage.brfn;
+import defpackage.brfp;
+import defpackage.brfr;
+import defpackage.brgg;
+import defpackage.brgp;
+import defpackage.brhd;
+import defpackage.brho;
+import defpackage.brhp;
+import defpackage.brhu;
+import defpackage.brhx;
+import defpackage.brid;
+import defpackage.brja;
+import defpackage.brjb;
+import defpackage.brjf;
+import defpackage.brjg;
+import defpackage.brji;
+import defpackage.elgt;
+import defpackage.elgx;
+import defpackage.eluo;
+import defpackage.flni;
+import defpackage.flnj;
+import defpackage.fsbd;
+import defpackage.fxuv;
+import defpackage.fxxm;
+import defpackage.fycr;
+import defpackage.fyea;
+import defpackage.fyeb;
+import defpackage.fyft;
+import defpackage.fygs;
+import defpackage.fyig;
+import defpackage.fyii;
+import defpackage.fyik;
 import kotlinx.coroutines.CoroutineExceptionHandler;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public final class SupervisionSetupChimeraService extends Service {
-    public static final asot a = bota.a("SupervisionSetupChimeraService");
+    public static final ausn a = braq.a("SupervisionSetupChimeraService");
     public static final Intent b = new Intent("com.google.android.gms.kids.auth.service.RECOVER_SETUP");
-    public bpbq c;
-    public final fvmi d;
-    public bpbk e;
-    public boxx f;
-    private final fuyx g;
+    public brjg c;
+    public final fyig d;
+    public brja e;
+    public brfn f;
+    private final fxuv g;
     private final boolean h;
     private final CoroutineExceptionHandler i;
-    private final fvic j;
-    private boxd k;
-    private final fvjv l;
+    private final fyea j;
+    private bret k;
+    private final fyft l;
 
     public SupervisionSetupChimeraService() {
         this(null, 1, 0 == true ? 1 : 0);
     }
 
-    public final bpbk a() {
-        bpbk bpbkVar = this.e;
-        if (bpbkVar != null) {
-            return bpbkVar;
+    public final brja a() {
+        brja brjaVar = this.e;
+        if (brjaVar != null) {
+            return brjaVar;
         }
-        fvbo.j("currentState");
+        fxxm.j("currentState");
         return null;
     }
 
-    public final bpbq b() {
-        bpbq bpbqVar = this.c;
-        if (bpbqVar != null) {
-            return bpbqVar;
+    public final brjg b() {
+        brjg brjgVar = this.c;
+        if (brjgVar != null) {
+            return brjgVar;
         }
-        fvbo.j("statesRepository");
+        fxxm.j("statesRepository");
         return null;
     }
 
@@ -111,12 +111,12 @@ public final class SupervisionSetupChimeraService extends Service {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final java.lang.Object c(defpackage.fuyp r20) {
+    public final java.lang.Object c(defpackage.fxun r20) {
         /*
             Method dump skipped, instructions count: 408
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.kids.auth.service.SupervisionSetupChimeraService.c(fuyp):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.kids.auth.service.SupervisionSetupChimeraService.c(fxun):java.lang.Object");
     }
 
     @Override // com.google.android.chimera.Service
@@ -136,131 +136,131 @@ public final class SupervisionSetupChimeraService extends Service {
         }
         if (this.k == null) {
             Context applicationContext = getApplication().getApplicationContext();
-            fvbo.e(applicationContext, "getApplicationContext(...)");
-            fixl.b(applicationContext);
+            fxxm.e(applicationContext, "getApplicationContext(...)");
+            flni.b(applicationContext);
             ModuleContext moduleContext = ModuleContext.getModuleContext(this);
             if (moduleContext == null) {
                 throw new IllegalStateException("Required value was null.");
             }
-            fuyx fuyxVar = this.g;
-            fixl.b(fuyxVar);
-            fvic fvicVar = this.j;
-            fixl.b(fvicVar);
-            fixl.a(applicationContext, Context.class);
-            fixl.a(moduleContext, ModuleContext.class);
-            fixl.a(fuyxVar, fuyx.class);
-            fixl.a(fvicVar, fvic.class);
-            this.k = new boxd(applicationContext, moduleContext, fuyxVar, fvicVar);
+            fxuv fxuvVar = this.g;
+            flni.b(fxuvVar);
+            fyea fyeaVar = this.j;
+            flni.b(fyeaVar);
+            flni.a(applicationContext, Context.class);
+            flni.a(moduleContext, ModuleContext.class);
+            flni.a(fxuvVar, fxuv.class);
+            flni.a(fyeaVar, fyea.class);
+            this.k = new bret(applicationContext, moduleContext, fxuvVar, fyeaVar);
         }
-        boxd boxdVar = this.k;
-        if (boxdVar == null) {
+        bret bretVar = this.k;
+        if (bretVar == null) {
             throw new IllegalStateException("Required value was null.");
         }
-        eito i = eits.i(7);
-        bpbl bpblVar = bpbl.a;
-        bozz bozzVar = new bozz();
-        Context context = boxdVar.a;
-        bozzVar.f = context;
-        bozzVar.k = boxdVar.c();
-        fixm fixmVar = boxdVar.m;
-        bozzVar.l = (boxx) fixmVar.a();
-        asnz asnzVar = asnz.a;
-        bozzVar.g = asnzVar;
-        fixm fixmVar2 = boxdVar.p;
-        bozzVar.m = (bpbs) fixmVar2.a();
-        fixm fixmVar3 = boxdVar.j;
-        bozzVar.n = (boyq) fixmVar3.a();
-        bozzVar.h = boxdVar.d();
-        fixm fixmVar4 = boxdVar.r;
-        bozzVar.i = (boyb) fixmVar4.a();
-        fixm fixmVar5 = boxdVar.u;
-        bozzVar.j = (boyz) fixmVar5.a();
-        i.i(bpblVar, bozzVar);
-        bpbl bpblVar2 = bpbl.b;
-        bpae bpaeVar = new bpae();
-        bpaeVar.f = context;
-        bpaeVar.k = boxdVar.c();
-        bpaeVar.l = (boxx) fixmVar.a();
-        bpaeVar.g = asnzVar;
-        bpaeVar.m = (bpbs) fixmVar2.a();
-        bpaeVar.n = (boyq) fixmVar3.a();
-        bpaeVar.h = boxdVar.d();
-        bpaeVar.i = (boyb) fixmVar4.a();
-        bpaeVar.j = (boyz) fixmVar5.a();
-        i.i(bpblVar2, bpaeVar);
-        bpbl bpblVar3 = bpbl.c;
-        bozn boznVar = new bozn();
-        boznVar.f = context;
-        boznVar.k = boxdVar.c();
-        boznVar.l = (boxx) fixmVar.a();
-        boznVar.g = asnzVar;
-        boznVar.m = (bpbs) fixmVar2.a();
-        boznVar.n = (boyq) fixmVar3.a();
-        boznVar.h = boxdVar.d();
-        boznVar.i = (boyb) fixmVar4.a();
-        boznVar.j = (boyz) fixmVar5.a();
-        i.i(bpblVar3, boznVar);
-        bpbl bpblVar4 = bpbl.d;
-        bpan bpanVar = new bpan(boxdVar.b());
-        bpanVar.f = context;
-        bpanVar.k = boxdVar.c();
-        bpanVar.l = (boxx) fixmVar.a();
-        bpanVar.g = asnzVar;
-        bpanVar.m = (bpbs) fixmVar2.a();
-        bpanVar.n = (boyq) fixmVar3.a();
-        bpanVar.h = boxdVar.d();
-        bpanVar.i = (boyb) fixmVar4.a();
-        bpanVar.j = (boyz) fixmVar5.a();
-        i.i(bpblVar4, bpanVar);
-        bpbl bpblVar5 = bpbl.e;
-        boxdVar.a();
-        bpbp bpbpVar = new bpbp(context, boxdVar.b());
-        bpbpVar.f = context;
-        bpbpVar.k = boxdVar.c();
-        bpbpVar.l = (boxx) fixmVar.a();
-        bpbpVar.g = asnzVar;
-        bpbpVar.m = (bpbs) fixmVar2.a();
-        bpbpVar.n = (boyq) fixmVar3.a();
-        bpbpVar.h = boxdVar.d();
-        bpbpVar.i = (boyb) fixmVar4.a();
-        bpbpVar.j = (boyz) fixmVar5.a();
-        i.i(bpblVar5, bpbpVar);
-        bpbl bpblVar6 = bpbl.f;
-        bpah bpahVar = new bpah(boxdVar.b());
-        bpahVar.f = context;
-        bpahVar.k = boxdVar.c();
-        bpahVar.l = (boxx) fixmVar.a();
-        bpahVar.g = asnzVar;
-        bpahVar.m = (bpbs) fixmVar2.a();
-        bpahVar.n = (boyq) fixmVar3.a();
-        bpahVar.h = boxdVar.d();
-        bpahVar.i = (boyb) fixmVar4.a();
-        bpahVar.j = (boyz) fixmVar5.a();
-        i.i(bpblVar6, bpahVar);
-        bpbl bpblVar7 = bpbl.g;
-        bozy bozyVar = new bozy(boxdVar.a(), boxdVar.b());
-        bozyVar.f = context;
-        bozyVar.k = boxdVar.c();
-        bozyVar.l = (boxx) fixmVar.a();
-        bozyVar.g = asnzVar;
-        bozyVar.m = (bpbs) fixmVar2.a();
-        bozyVar.n = (boyq) fixmVar3.a();
-        bozyVar.h = boxdVar.d();
-        bozyVar.i = (boyb) fixmVar4.a();
-        bozyVar.j = (boyz) fixmVar5.a();
-        i.i(bpblVar7, bozyVar);
-        this.c = new bpbq(i.b());
-        this.f = (boxx) fixmVar.a();
-        boxdVar.c();
-        boxdVar.d();
-        this.e = b().a(bpblVar);
-        fvgt.b(this.j, null, null, new boxe(this, null), 3);
+        elgt i = elgx.i(7);
+        brjb brjbVar = brjb.a;
+        brhp brhpVar = new brhp();
+        Context context = bretVar.a;
+        brhpVar.f = context;
+        brhpVar.k = bretVar.c();
+        flnj flnjVar = bretVar.m;
+        brhpVar.l = (brfn) flnjVar.a();
+        aurt aurtVar = aurt.a;
+        brhpVar.g = aurtVar;
+        flnj flnjVar2 = bretVar.p;
+        brhpVar.m = (brji) flnjVar2.a();
+        flnj flnjVar3 = bretVar.j;
+        brhpVar.n = (brgg) flnjVar3.a();
+        brhpVar.h = bretVar.d();
+        flnj flnjVar4 = bretVar.r;
+        brhpVar.i = (brfr) flnjVar4.a();
+        flnj flnjVar5 = bretVar.u;
+        brhpVar.j = (brgp) flnjVar5.a();
+        i.i(brjbVar, brhpVar);
+        brjb brjbVar2 = brjb.b;
+        brhu brhuVar = new brhu();
+        brhuVar.f = context;
+        brhuVar.k = bretVar.c();
+        brhuVar.l = (brfn) flnjVar.a();
+        brhuVar.g = aurtVar;
+        brhuVar.m = (brji) flnjVar2.a();
+        brhuVar.n = (brgg) flnjVar3.a();
+        brhuVar.h = bretVar.d();
+        brhuVar.i = (brfr) flnjVar4.a();
+        brhuVar.j = (brgp) flnjVar5.a();
+        i.i(brjbVar2, brhuVar);
+        brjb brjbVar3 = brjb.c;
+        brhd brhdVar = new brhd();
+        brhdVar.f = context;
+        brhdVar.k = bretVar.c();
+        brhdVar.l = (brfn) flnjVar.a();
+        brhdVar.g = aurtVar;
+        brhdVar.m = (brji) flnjVar2.a();
+        brhdVar.n = (brgg) flnjVar3.a();
+        brhdVar.h = bretVar.d();
+        brhdVar.i = (brfr) flnjVar4.a();
+        brhdVar.j = (brgp) flnjVar5.a();
+        i.i(brjbVar3, brhdVar);
+        brjb brjbVar4 = brjb.d;
+        brid bridVar = new brid(bretVar.b());
+        bridVar.f = context;
+        bridVar.k = bretVar.c();
+        bridVar.l = (brfn) flnjVar.a();
+        bridVar.g = aurtVar;
+        bridVar.m = (brji) flnjVar2.a();
+        bridVar.n = (brgg) flnjVar3.a();
+        bridVar.h = bretVar.d();
+        bridVar.i = (brfr) flnjVar4.a();
+        bridVar.j = (brgp) flnjVar5.a();
+        i.i(brjbVar4, bridVar);
+        brjb brjbVar5 = brjb.e;
+        bretVar.a();
+        brjf brjfVar = new brjf(context, bretVar.b());
+        brjfVar.f = context;
+        brjfVar.k = bretVar.c();
+        brjfVar.l = (brfn) flnjVar.a();
+        brjfVar.g = aurtVar;
+        brjfVar.m = (brji) flnjVar2.a();
+        brjfVar.n = (brgg) flnjVar3.a();
+        brjfVar.h = bretVar.d();
+        brjfVar.i = (brfr) flnjVar4.a();
+        brjfVar.j = (brgp) flnjVar5.a();
+        i.i(brjbVar5, brjfVar);
+        brjb brjbVar6 = brjb.f;
+        brhx brhxVar = new brhx(bretVar.b());
+        brhxVar.f = context;
+        brhxVar.k = bretVar.c();
+        brhxVar.l = (brfn) flnjVar.a();
+        brhxVar.g = aurtVar;
+        brhxVar.m = (brji) flnjVar2.a();
+        brhxVar.n = (brgg) flnjVar3.a();
+        brhxVar.h = bretVar.d();
+        brhxVar.i = (brfr) flnjVar4.a();
+        brhxVar.j = (brgp) flnjVar5.a();
+        i.i(brjbVar6, brhxVar);
+        brjb brjbVar7 = brjb.g;
+        brho brhoVar = new brho(bretVar.a(), bretVar.b());
+        brhoVar.f = context;
+        brhoVar.k = bretVar.c();
+        brhoVar.l = (brfn) flnjVar.a();
+        brhoVar.g = aurtVar;
+        brhoVar.m = (brji) flnjVar2.a();
+        brhoVar.n = (brgg) flnjVar3.a();
+        brhoVar.h = bretVar.d();
+        brhoVar.i = (brfr) flnjVar4.a();
+        brhoVar.j = (brgp) flnjVar5.a();
+        i.i(brjbVar7, brhoVar);
+        this.c = new brjg(i.b());
+        this.f = (brfn) flnjVar.a();
+        bretVar.c();
+        bretVar.d();
+        this.e = b().a(brjbVar);
+        fycr.b(this.j, null, null, new breu(this, null), 3);
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
         this.l.s(null);
-        ((ejhf) a.h()).x("Service stopped");
+        ((eluo) a.h()).x("Service stopped");
         super.onDestroy();
     }
 
@@ -273,34 +273,34 @@ public final class SupervisionSetupChimeraService extends Service {
         if (intent == null) {
             intent = b;
         }
-        boxz boxzVar = new boxz(intent, i, i2);
-        boxz boxzVar2 = null;
+        brfp brfpVar = new brfp(intent, i, i2);
+        brfp brfpVar2 = null;
         if (i2 == 1) {
-            Intent intent2 = boxzVar.a;
-            if (!fvbo.n(intent2.getAction(), "com.google.android.gms.kids.auth.service.RECOVER_SETUP") && !fvbo.n(intent2.getAction(), "com.google.android.gms.kids.auth.service.SETUP_STARTED")) {
-                ((ejhf) a.j()).B("Unexpected startId 1 for intent: `%s`, recovering first.", intent2.getAction());
-                boxzVar2 = new boxz(b, i, 1);
+            Intent intent2 = brfpVar.a;
+            if (!fxxm.n(intent2.getAction(), "com.google.android.gms.kids.auth.service.RECOVER_SETUP") && !fxxm.n(intent2.getAction(), "com.google.android.gms.kids.auth.service.SETUP_STARTED")) {
+                ((eluo) a.j()).B("Unexpected startId 1 for intent: `%s`, recovering first.", intent2.getAction());
+                brfpVar2 = new brfp(b, i, 1);
             }
         }
-        if (boxzVar2 != null && (this.d.j(boxzVar2) instanceof fvmm)) {
-            ((ejhf) a.j()).x("Failed to recovery send command");
+        if (brfpVar2 != null && (this.d.j(brfpVar2) instanceof fyik)) {
+            ((eluo) a.j()).x("Failed to recovery send command");
         }
-        if (this.d.j(boxzVar) instanceof fvmm) {
-            ((ejhf) a.j()).x("Failed to send command");
+        if (this.d.j(brfpVar) instanceof fyik) {
+            ((eluo) a.j()).x("Failed to send command");
         }
         return 1;
     }
 
-    public SupervisionSetupChimeraService(fuyx fuyxVar) {
-        fvbo.f(fuyxVar, "blockingContext");
-        this.g = fuyxVar;
-        this.h = fphp.a.a().g();
-        boxh boxhVar = new boxh(CoroutineExceptionHandler.c, this);
-        this.i = boxhVar;
-        fvku fvkuVar = new fvku(null);
-        this.l = fvkuVar;
-        this.j = fvid.b(fuyxVar.plus(fvkuVar).plus(boxhVar));
-        this.d = fvmk.a(-2, 0, null, 6);
+    public SupervisionSetupChimeraService(fxuv fxuvVar) {
+        fxxm.f(fxuvVar, "blockingContext");
+        this.g = fxuvVar;
+        this.h = fsbd.a.lK().g();
+        brex brexVar = new brex(CoroutineExceptionHandler.c, this);
+        this.i = brexVar;
+        fygs fygsVar = new fygs(null);
+        this.l = fygsVar;
+        this.j = fyeb.b(fxuvVar.plus(fygsVar).plus(brexVar));
+        this.d = fyii.a(-2, 0, null, 6);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -308,17 +308,17 @@ public final class SupervisionSetupChimeraService extends Service {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public /* synthetic */ SupervisionSetupChimeraService(defpackage.fuyx r1, int r2, kotlin.jvm.internal.DefaultConstructorMarker r3) {
+    public /* synthetic */ SupervisionSetupChimeraService(defpackage.fxuv r1, int r2, kotlin.jvm.internal.DefaultConstructorMarker r3) {
         /*
             r0 = this;
             r2 = r2 & 1
             if (r2 == 0) goto L8
-            fuyx r1 = defpackage.bqpn.a
-            fuyx r1 = defpackage.bqpn.c
+            fxuv r1 = defpackage.bsxe.a
+            fxuv r1 = defpackage.bsxe.c
         L8:
             r0.<init>(r1)
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.kids.auth.service.SupervisionSetupChimeraService.<init>(fuyx, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.kids.auth.service.SupervisionSetupChimeraService.<init>(fxuv, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
     }
 }

@@ -4,20 +4,20 @@ import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.auth.uncertifieddevice.UncertifiedNotificationIntentOperation;
 import com.google.android.gms.gmscompliance.GmsDeviceComplianceResponse;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.biny;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.fnfa;
-import defpackage.foku;
-import defpackage.vba;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.bksn;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.fpwz;
+import defpackage.frdk;
+import defpackage.wxa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class UncertifiedNotificationIntentOperation extends IntentOperation {
-    public static final asot a = vba.a("Auth");
+    public static final ausn a = wxa.a("Auth");
 
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0030, code lost:
     
@@ -30,27 +30,27 @@ public class UncertifiedNotificationIntentOperation extends IntentOperation {
     public final void a(com.google.android.gms.gmscompliance.GmsDeviceComplianceResponse r8) {
         /*
             r7 = this;
-            byjl r0 = defpackage.byjl.a(r7)
-            asbo r1 = defpackage.asbo.f(r7)
-            boolean r2 = defpackage.fnfa.d()
+            casd r0 = defpackage.casd.a(r7)
+            aued r1 = defpackage.aued.f(r7)
+            boolean r2 = defpackage.fpwz.d()
             r3 = 2
             r4 = 1
             if (r2 == 0) goto L32
-            boolean r2 = defpackage.foku.c()
+            boolean r2 = defpackage.frdk.c()
             if (r2 == 0) goto L1f
             boolean r2 = r8.d
             long r5 = r8.e
             boolean r2 = com.google.android.gms.auth.uncertifieddevice.UncertifiedNotificationChimeraService.g(r2, r5)
             goto L30
         L1f:
-            int r2 = defpackage.vfv.a()
+            int r2 = defpackage.xbw.a()
             if (r2 != r3) goto L27
             r2 = r4
             goto L28
         L27:
             r2 = 0
         L28:
-            long r5 = defpackage.fkib.b()
+            long r5 = defpackage.fmyq.b()
             boolean r2 = com.google.android.gms.auth.uncertifieddevice.UncertifiedNotificationChimeraService.g(r2, r5)
         L30:
             if (r2 == 0) goto L40
@@ -58,30 +58,30 @@ public class UncertifiedNotificationIntentOperation extends IntentOperation {
             java.lang.String r2 = "UncertifiedNotificationTask"
             java.lang.String r5 = "com.google.android.gms.auth.uncertifieddevice.UncertifiedNotificationService"
             r0.d(r2, r5)
-            dfee r0 = defpackage.dfee.AUTH_ACCOUNT_UNCERTIFIED_PROVISIONAL
+            dhpk r0 = defpackage.dhpk.AUTH_ACCOUNT_UNCERTIFIED_PROVISIONAL
             java.lang.String r2 = "UncertifiedNotificationChimeraService"
             r1.o(r2, r4, r0)
         L40:
-            boolean r0 = defpackage.fnfa.d()
+            boolean r0 = defpackage.fpwz.d()
             if (r0 == 0) goto L95
-            boolean r0 = defpackage.foku.c()
+            boolean r0 = defpackage.frdk.c()
             if (r0 == 0) goto L51
             boolean r0 = r8.d
             if (r0 == 0) goto L95
             goto L58
         L51:
-            int r0 = defpackage.vfv.a()
+            int r0 = defpackage.xbw.a()
             if (r0 == r3) goto L58
             goto L95
         L58:
-            byjl r0 = defpackage.byjl.a(r7)
-            boolean r1 = defpackage.foku.c()
+            casd r0 = defpackage.casd.a(r7)
+            boolean r1 = defpackage.frdk.c()
             if (r1 == 0) goto L65
             long r1 = r8.e
             goto L6b
         L65:
-            dvni r1 = defpackage.vfv.a
-            long r1 = defpackage.fkib.b()
+            dxyi r1 = defpackage.xbw.a
+            long r1 = defpackage.fmyq.b()
         L6b:
             long r3 = java.lang.System.currentTimeMillis()
             long r1 = r1 - r3
@@ -96,12 +96,12 @@ public class UncertifiedNotificationIntentOperation extends IntentOperation {
             r3 = r1
         L80:
             android.os.Bundle r8 = com.google.android.gms.auth.uncertifieddevice.UncertifiedNotificationChimeraService.d(r8)
-            dvni r1 = defpackage.vfv.a
+            dxyi r1 = defpackage.xbw.a
             r1 = 1000(0x3e8, double:4.94E-321)
             long r3 = r3 / r1
-            long r1 = defpackage.fkkz.h()
+            long r1 = defpackage.fnbo.h()
             long r1 = r1 + r3
-            bykk r8 = com.google.android.gms.auth.uncertifieddevice.UncertifiedNotificationChimeraService.e(r3, r1, r8)
+            catc r8 = com.google.android.gms.auth.uncertifieddevice.UncertifiedNotificationChimeraService.e(r3, r1, r8)
             r0.f(r8)
         L95:
             return
@@ -111,32 +111,32 @@ public class UncertifiedNotificationIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (fnfa.c()) {
+        if (fpwz.c()) {
             return;
         }
         String action = intent.getAction();
         if ("com.google.gservices.intent.action.GSERVICES_CHANGED".equals(action) || "android.intent.action.BOOT_COMPLETED".equals(action) || "com.google.android.gms.gmscompliance.COMPLIANCE_UPDATED".equals(action)) {
-            if (!"com.google.android.gms.gmscompliance.COMPLIANCE_UPDATED".equals(action) || foku.c()) {
-                if (!foku.c()) {
+            if (!"com.google.android.gms.gmscompliance.COMPLIANCE_UPDATED".equals(action) || frdk.c()) {
+                if (!frdk.c()) {
                     a(new GmsDeviceComplianceResponse());
                     return;
                 }
-                asmf asmfVar = new asmf(1, 10);
-                dfaq a2 = new biny(this).a();
-                a2.t(asmfVar, new dfah() { // from class: adpe
-                    @Override // defpackage.dfah
-                    public final void gm(Exception exc) {
-                        ((ejhf) ((ejhf) UncertifiedNotificationIntentOperation.a.j()).s(exc)).x("Error fetching compliance status.");
+                aupz aupzVar = new aupz(1, 10);
+                dhlw a2 = new bksn(this).a();
+                a2.t(aupzVar, new dhln() { // from class: afpl
+                    @Override // defpackage.dhln
+                    public final void gB(Exception exc) {
+                        ((eluo) ((eluo) UncertifiedNotificationIntentOperation.a.j()).s(exc)).x("Error fetching compliance status.");
                     }
                 });
-                a2.w(asmfVar, new dfak() { // from class: adpf
-                    @Override // defpackage.dfak
-                    public final void gn(Object obj) {
+                a2.w(aupzVar, new dhlq() { // from class: afpm
+                    @Override // defpackage.dhlq
+                    public final void gC(Object obj) {
                         GmsDeviceComplianceResponse gmsDeviceComplianceResponse = (GmsDeviceComplianceResponse) obj;
                         if (gmsDeviceComplianceResponse != null) {
                             UncertifiedNotificationIntentOperation.this.a(gmsDeviceComplianceResponse);
                         } else {
-                            ((ejhf) UncertifiedNotificationIntentOperation.a.j()).x("Error fetching compliance status, null response returned.");
+                            ((eluo) UncertifiedNotificationIntentOperation.a.j()).x("Error fetching compliance status, null response returned.");
                         }
                     }
                 });

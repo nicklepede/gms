@@ -6,17 +6,17 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.uop;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.wko;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class TokenData extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new uop();
+    public static final Parcelable.Creator CREATOR = new wko();
     final int a;
     public final String b;
     public final Long c;
@@ -27,7 +27,7 @@ public class TokenData extends AbstractSafeParcelable implements ReflectedParcel
 
     public TokenData(int i, String str, Long l, boolean z, boolean z2, List list, String str2) {
         this.a = i;
-        arwm.q(str);
+        atzb.q(str);
         this.b = str;
         this.c = l;
         this.d = z;
@@ -62,7 +62,7 @@ public class TokenData extends AbstractSafeParcelable implements ReflectedParcel
             return false;
         }
         TokenData tokenData = (TokenData) obj;
-        return TextUtils.equals(this.b, tokenData.b) && arwb.b(this.c, tokenData.c) && this.d == tokenData.d && this.e == tokenData.e && arwb.b(this.f, tokenData.f) && arwb.b(this.g, tokenData.g);
+        return TextUtils.equals(this.b, tokenData.b) && atyq.b(this.c, tokenData.c) && this.d == tokenData.d && this.e == tokenData.e && atyq.b(this.f, tokenData.f) && atyq.b(this.g, tokenData.g);
     }
 
     public final int hashCode() {
@@ -71,14 +71,14 @@ public class TokenData extends AbstractSafeParcelable implements ReflectedParcel
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.I(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.x(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.I(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.x(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.c(parcel, a);
     }
 }

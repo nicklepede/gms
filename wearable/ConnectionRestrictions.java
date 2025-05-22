@@ -3,16 +3,16 @@ package com.google.android.gms.wearable;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.djjv;
-import defpackage.eiib;
-import defpackage.eiic;
+import defpackage.atzr;
+import defpackage.dlvo;
+import defpackage.ekvg;
+import defpackage.ekvh;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ConnectionRestrictions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new djjv();
+    public static final Parcelable.Creator CREATOR = new dlvo();
     public final List a;
     public final List b;
     public final List c;
@@ -24,7 +24,7 @@ public class ConnectionRestrictions extends AbstractSafeParcelable {
     }
 
     public final String toString() {
-        eiib b = eiic.b(this);
+        ekvg b = ekvh.b(this);
         b.b("allowedDataItemFilters", this.a);
         b.b("allowedCapabilities", this.b);
         b.b("allowedPackages", this.c);
@@ -34,10 +34,10 @@ public class ConnectionRestrictions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.x(parcel, 2, this.b, false);
-        arxc.x(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.x(parcel, 2, this.b, false);
+        atzr.x(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 }

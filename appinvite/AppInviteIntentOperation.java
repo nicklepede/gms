@@ -2,19 +2,19 @@ package com.google.android.gms.appinvite;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.twq;
-import defpackage.tws;
+import defpackage.vsq;
+import defpackage.vss;
 import j$.util.concurrent.ConcurrentLinkedQueue;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Queue;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public final class AppInviteIntentOperation extends IntentOperation {
     public static final Queue a = new ConcurrentLinkedQueue();
-    public static final twq b = new twq();
+    public static final vsq b = new vsq();
     private static long c = 0;
 
     public static synchronized long a() {
@@ -27,12 +27,12 @@ public final class AppInviteIntentOperation extends IntentOperation {
     }
 
     public static void b(long j, Intent intent) {
-        twq twqVar = b;
+        vsq vsqVar = b;
         Long valueOf = Long.valueOf(j);
-        HashMap hashMap = twqVar.a;
+        HashMap hashMap = vsqVar.a;
         if (!hashMap.containsKey(valueOf)) {
             while (true) {
-                ArrayList arrayList = twqVar.b;
+                ArrayList arrayList = vsqVar.b;
                 if (arrayList.size() < 2000) {
                     break;
                 }
@@ -40,17 +40,17 @@ public final class AppInviteIntentOperation extends IntentOperation {
                 arrayList.remove(0);
             }
         } else {
-            twqVar.b.remove(valueOf);
+            vsqVar.b.remove(valueOf);
         }
-        twqVar.b.add(valueOf);
+        vsqVar.b.add(valueOf);
         hashMap.put(valueOf, intent);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Queue queue = a;
-        for (tws twsVar = (tws) queue.poll(); twsVar != null; twsVar = (tws) queue.poll()) {
-            twsVar.f(getApplicationContext());
+        for (vss vssVar = (vss) queue.poll(); vssVar != null; vssVar = (vss) queue.poll()) {
+            vssVar.f(getApplicationContext());
         }
     }
 }

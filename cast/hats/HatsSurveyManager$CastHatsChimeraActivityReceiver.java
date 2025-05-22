@@ -5,40 +5,42 @@ import android.content.Intent;
 import com.google.android.gms.cast.CastDevice;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.libraries.surveys.SurveyMetadata;
-import defpackage.amwy;
-import defpackage.amwz;
-import defpackage.arwm;
-import defpackage.dxpl;
+import defpackage.aoyj;
+import defpackage.aoyk;
+import defpackage.appp;
+import defpackage.atzb;
+import defpackage.eabm;
 import j$.util.function.Consumer$CC;
 import java.util.function.Consumer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class HatsSurveyManager$CastHatsChimeraActivityReceiver extends TracingBroadcastReceiver {
     public boolean a;
-    public final /* synthetic */ amwz b;
+    public final /* synthetic */ aoyk b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public HatsSurveyManager$CastHatsChimeraActivityReceiver(amwz amwzVar) {
+    public HatsSurveyManager$CastHatsChimeraActivityReceiver(aoyk aoykVar) {
         super("cast");
-        this.b = amwzVar;
+        this.b = aoykVar;
         this.a = false;
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         int intExtra = intent.getIntExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_RESULT", -1);
-        amwz.a.n("Received HaTS survey event: %d", Integer.valueOf(intExtra));
+        appp apppVar = aoyk.a;
+        apppVar.n("Received HaTS survey event: %d", Integer.valueOf(intExtra));
         if (intExtra == 0) {
-            final amwz amwzVar = this.b;
+            final aoyk aoykVar = this.b;
             final SurveyMetadata surveyMetadata = (SurveyMetadata) intent.getParcelableExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_SURVEY_METADATA");
-            amwz.a.m("onSurveyPrompted");
-            amwzVar.n = amwy.PRESENTED;
-            amwzVar.k = surveyMetadata != null ? surveyMetadata : amwzVar.k;
-            amwzVar.m.ifPresent(new Consumer() { // from class: amwt
+            apppVar.m("onSurveyPrompted");
+            aoykVar.n = aoyj.PRESENTED;
+            aoykVar.k = surveyMetadata != null ? surveyMetadata : aoykVar.k;
+            aoykVar.m.ifPresent(new Consumer() { // from class: aoye
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    amwz.this.k(surveyMetadata, (amgd) obj, 0, true);
+                    aoyk.this.k(surveyMetadata, (aoho) obj, 0, true);
                 }
 
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -48,50 +50,50 @@ public class HatsSurveyManager$CastHatsChimeraActivityReceiver extends TracingBr
             return;
         }
         if (intExtra == 1) {
-            final amwz amwzVar2 = this.b;
+            final aoyk aoykVar2 = this.b;
             final SurveyMetadata surveyMetadata2 = (SurveyMetadata) intent.getParcelableExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_SURVEY_METADATA");
-            amwz.a.m("onSurveyClosed");
-            amwzVar2.n = amwy.NOT_PRESENTED;
-            amwzVar2.k = surveyMetadata2 != null ? surveyMetadata2 : amwzVar2.k;
-            amwzVar2.m.ifPresent(new Consumer() { // from class: amwk
+            apppVar.m("onSurveyClosed");
+            aoykVar2.n = aoyj.NOT_PRESENTED;
+            aoykVar2.k = surveyMetadata2 != null ? surveyMetadata2 : aoykVar2.k;
+            aoykVar2.m.ifPresent(new Consumer() { // from class: aoxv
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     String str;
-                    amgd amgdVar = (amgd) obj;
-                    fecj v = emtb.a.v();
-                    amwz amwzVar3 = amwz.this;
-                    amgj amgjVar = amwzVar3.l;
-                    arwm.s(amgjVar);
-                    String b = amgjVar.b();
+                    aoho aohoVar = (aoho) obj;
+                    fgrc v = epgr.a.v();
+                    aoyk aoykVar3 = aoyk.this;
+                    aohu aohuVar = aoykVar3.l;
+                    atzb.s(aohuVar);
+                    String b = aohuVar.b();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    fecp fecpVar = v.b;
-                    emtb emtbVar = (emtb) fecpVar;
+                    fgri fgriVar = v.b;
+                    epgr epgrVar = (epgr) fgriVar;
                     b.getClass();
-                    emtbVar.b |= 2;
-                    emtbVar.d = b;
-                    if (!fecpVar.L()) {
+                    epgrVar.b |= 2;
+                    epgrVar.d = b;
+                    if (!fgriVar.L()) {
                         v.U();
                     }
                     SurveyMetadata surveyMetadata3 = surveyMetadata2;
-                    fecp fecpVar2 = v.b;
-                    emtb emtbVar2 = (emtb) fecpVar2;
-                    emtbVar2.g = 2;
-                    emtbVar2.b |= 16;
+                    fgri fgriVar2 = v.b;
+                    epgr epgrVar2 = (epgr) fgriVar2;
+                    epgrVar2.g = 2;
+                    epgrVar2.b |= 16;
                     if (surveyMetadata3 != null && (str = surveyMetadata3.c) != null) {
-                        if (!fecpVar2.L()) {
+                        if (!fgriVar2.L()) {
                             v.U();
                         }
-                        emtb emtbVar3 = (emtb) v.b;
-                        emtbVar3.b |= 1;
-                        emtbVar3.c = str;
+                        epgr epgrVar3 = (epgr) v.b;
+                        epgrVar3.b |= 1;
+                        epgrVar3.c = str;
                     }
-                    emtb emtbVar4 = (emtb) v.Q();
-                    CastDevice castDevice = amwzVar3.e;
-                    amgj amgjVar2 = amwzVar3.l;
-                    arwm.s(amgjVar2);
-                    amgdVar.q(emtbVar4, castDevice, amgjVar2.a());
+                    epgr epgrVar4 = (epgr) v.Q();
+                    CastDevice castDevice = aoykVar3.e;
+                    aohu aohuVar2 = aoykVar3.l;
+                    atzb.s(aohuVar2);
+                    aohoVar.q(epgrVar4, castDevice, aohuVar2.a());
                 }
 
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -103,41 +105,41 @@ public class HatsSurveyManager$CastHatsChimeraActivityReceiver extends TracingBr
         if (intExtra == 2) {
             if (intent.hasExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_PRESENT_SURVEY_ERROR_TYPE")) {
                 String stringExtra = intent.getStringExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_PRESENT_SURVEY_ERROR_TYPE");
-                arwm.s(stringExtra);
-                final dxpl dxplVar = (dxpl) Enum.valueOf(dxpl.class, stringExtra);
-                final amwz amwzVar3 = this.b;
+                atzb.s(stringExtra);
+                final eabm eabmVar = (eabm) Enum.valueOf(eabm.class, stringExtra);
+                final aoyk aoykVar3 = this.b;
                 final SurveyMetadata surveyMetadata3 = (SurveyMetadata) intent.getParcelableExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_SURVEY_METADATA");
-                amwz.a.m("onPresentSurveyFailed");
-                amwzVar3.n = amwy.NOT_PRESENTED;
-                amwzVar3.k = surveyMetadata3 != null ? surveyMetadata3 : amwzVar3.k;
-                amwzVar3.m.ifPresent(new Consumer() { // from class: amwr
+                apppVar.m("onPresentSurveyFailed");
+                aoykVar3.n = aoyj.NOT_PRESENTED;
+                aoykVar3.k = surveyMetadata3 != null ? surveyMetadata3 : aoykVar3.k;
+                aoykVar3.m.ifPresent(new Consumer() { // from class: aoyc
                     @Override // java.util.function.Consumer
                     public final void accept(Object obj) {
                         String str;
-                        amgd amgdVar = (amgd) obj;
-                        fecj v = emtb.a.v();
-                        amwz amwzVar4 = amwz.this;
-                        amgj amgjVar = amwzVar4.l;
-                        arwm.s(amgjVar);
-                        String b = amgjVar.b();
+                        aoho aohoVar = (aoho) obj;
+                        fgrc v = epgr.a.v();
+                        aoyk aoykVar4 = aoyk.this;
+                        aohu aohuVar = aoykVar4.l;
+                        atzb.s(aohuVar);
+                        String b = aohuVar.b();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fecp fecpVar = v.b;
-                        emtb emtbVar = (emtb) fecpVar;
+                        fgri fgriVar = v.b;
+                        epgr epgrVar = (epgr) fgriVar;
                         b.getClass();
                         int i = 2;
-                        emtbVar.b |= 2;
-                        emtbVar.d = b;
-                        if (!fecpVar.L()) {
+                        epgrVar.b |= 2;
+                        epgrVar.d = b;
+                        if (!fgriVar.L()) {
                             v.U();
                         }
-                        dxpl dxplVar2 = dxplVar;
-                        emtb emtbVar2 = (emtb) v.b;
-                        emtbVar2.g = 4;
-                        emtbVar2.b |= 16;
-                        annu.b();
-                        switch (dxplVar2) {
+                        eabm eabmVar2 = eabmVar;
+                        epgr epgrVar2 = (epgr) v.b;
+                        epgrVar2.g = 4;
+                        epgrVar2.b |= 16;
+                        appn.b();
+                        switch (eabmVar2) {
                             case CLIENT_ACTIVITY_WAS_DESTROYED:
                                 break;
                             case CLIENT_ACTIVITY_WAS_FINISHING:
@@ -175,23 +177,23 @@ public class HatsSurveyManager$CastHatsChimeraActivityReceiver extends TracingBr
                             v.U();
                         }
                         SurveyMetadata surveyMetadata4 = surveyMetadata3;
-                        fecp fecpVar2 = v.b;
-                        emtb emtbVar3 = (emtb) fecpVar2;
-                        emtbVar3.h = i - 1;
-                        emtbVar3.b |= 32;
+                        fgri fgriVar2 = v.b;
+                        epgr epgrVar3 = (epgr) fgriVar2;
+                        epgrVar3.h = i - 1;
+                        epgrVar3.b |= 32;
                         if (surveyMetadata4 != null && (str = surveyMetadata4.c) != null) {
-                            if (!fecpVar2.L()) {
+                            if (!fgriVar2.L()) {
                                 v.U();
                             }
-                            emtb emtbVar4 = (emtb) v.b;
-                            emtbVar4.b = 1 | emtbVar4.b;
-                            emtbVar4.c = str;
+                            epgr epgrVar4 = (epgr) v.b;
+                            epgrVar4.b = 1 | epgrVar4.b;
+                            epgrVar4.c = str;
                         }
-                        emtb emtbVar5 = (emtb) v.Q();
-                        CastDevice castDevice = amwzVar4.e;
-                        amgj amgjVar2 = amwzVar4.l;
-                        arwm.s(amgjVar2);
-                        amgdVar.n(emtbVar5, castDevice, amgjVar2.a());
+                        epgr epgrVar5 = (epgr) v.Q();
+                        CastDevice castDevice = aoykVar4.e;
+                        aohu aohuVar2 = aoykVar4.l;
+                        atzb.s(aohuVar2);
+                        aohoVar.n(epgrVar5, castDevice, aohuVar2.a());
                     }
 
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -203,15 +205,15 @@ public class HatsSurveyManager$CastHatsChimeraActivityReceiver extends TracingBr
             return;
         }
         if (intExtra == 3) {
-            final amwz amwzVar4 = this.b;
+            final aoyk aoykVar4 = this.b;
             final SurveyMetadata surveyMetadata4 = (SurveyMetadata) intent.getParcelableExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_SURVEY_METADATA");
-            amwz.a.m("didAnswerSingleSelectQuestion");
-            amwzVar4.n = amwy.PRESENTED;
-            amwzVar4.k = surveyMetadata4 != null ? surveyMetadata4 : amwzVar4.k;
-            amwzVar4.m.ifPresent(new Consumer() { // from class: amwl
+            apppVar.m("didAnswerSingleSelectQuestion");
+            aoykVar4.n = aoyj.PRESENTED;
+            aoykVar4.k = surveyMetadata4 != null ? surveyMetadata4 : aoykVar4.k;
+            aoykVar4.m.ifPresent(new Consumer() { // from class: aoxw
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    amwz.this.k(surveyMetadata4, (amgd) obj, 2, false);
+                    aoyk.this.k(surveyMetadata4, (aoho) obj, 2, false);
                 }
 
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -221,15 +223,15 @@ public class HatsSurveyManager$CastHatsChimeraActivityReceiver extends TracingBr
             return;
         }
         if (intExtra == 4) {
-            final amwz amwzVar5 = this.b;
+            final aoyk aoykVar5 = this.b;
             final SurveyMetadata surveyMetadata5 = (SurveyMetadata) intent.getParcelableExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_SURVEY_METADATA");
-            amwz.a.m("didAnswerOpenTextQuestion");
-            amwzVar5.n = amwy.PRESENTED;
-            amwzVar5.k = surveyMetadata5 != null ? surveyMetadata5 : amwzVar5.k;
-            amwzVar5.m.ifPresent(new Consumer() { // from class: amwn
+            apppVar.m("didAnswerOpenTextQuestion");
+            aoykVar5.n = aoyj.PRESENTED;
+            aoykVar5.k = surveyMetadata5 != null ? surveyMetadata5 : aoykVar5.k;
+            aoykVar5.m.ifPresent(new Consumer() { // from class: aoxy
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
-                    amwz.this.k(surveyMetadata5, (amgd) obj, 3, false);
+                    aoyk.this.k(surveyMetadata5, (aoho) obj, 3, false);
                 }
 
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -239,55 +241,55 @@ public class HatsSurveyManager$CastHatsChimeraActivityReceiver extends TracingBr
             return;
         }
         if (intExtra != 5) {
-            amwz.a.m("Received unknown HaTS survey event!");
+            apppVar.m("Received unknown HaTS survey event!");
             return;
         }
-        final amwz amwzVar6 = this.b;
+        final aoyk aoykVar6 = this.b;
         int intExtra2 = intent.getIntExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_REQUEST_CODE", -999);
         final int intExtra3 = intent.getIntExtra("com.google.android.gms.cast.activity.HATS_SURVEY_EVENT_ACTION_KEY_RESULT_CODE", -999);
-        amwz.a.p("onActivityResult(): requestCode=%d, resultCode=%d", Integer.valueOf(intExtra2), Integer.valueOf(intExtra3));
-        amwzVar6.n = amwy.NOT_PRESENTED;
-        amwzVar6.m.ifPresent(new Consumer() { // from class: amwu
+        apppVar.p("onActivityResult(): requestCode=%d, resultCode=%d", Integer.valueOf(intExtra2), Integer.valueOf(intExtra3));
+        aoykVar6.n = aoyj.NOT_PRESENTED;
+        aoykVar6.m.ifPresent(new Consumer() { // from class: aoyf
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 String str;
-                amgd amgdVar = (amgd) obj;
-                fecj v = emtb.a.v();
-                amwz amwzVar7 = amwz.this;
-                amgj amgjVar = amwzVar7.l;
-                arwm.s(amgjVar);
-                String b = amgjVar.b();
+                aoho aohoVar = (aoho) obj;
+                fgrc v = epgr.a.v();
+                aoyk aoykVar7 = aoyk.this;
+                aohu aohuVar = aoykVar7.l;
+                atzb.s(aohuVar);
+                String b = aohuVar.b();
                 if (!v.b.L()) {
                     v.U();
                 }
                 int i = intExtra3;
-                fecp fecpVar = v.b;
-                emtb emtbVar = (emtb) fecpVar;
+                fgri fgriVar = v.b;
+                epgr epgrVar = (epgr) fgriVar;
                 b.getClass();
-                emtbVar.b |= 2;
-                emtbVar.d = b;
+                epgrVar.b |= 2;
+                epgrVar.d = b;
                 int i2 = i != -1 ? 4 : 2;
-                if (!fecpVar.L()) {
+                if (!fgriVar.L()) {
                     v.U();
                 }
-                fecp fecpVar2 = v.b;
-                emtb emtbVar2 = (emtb) fecpVar2;
-                emtbVar2.g = i2 - 1;
-                emtbVar2.b |= 16;
-                SurveyMetadata surveyMetadata6 = amwzVar7.k;
+                fgri fgriVar2 = v.b;
+                epgr epgrVar2 = (epgr) fgriVar2;
+                epgrVar2.g = i2 - 1;
+                epgrVar2.b |= 16;
+                SurveyMetadata surveyMetadata6 = aoykVar7.k;
                 if (surveyMetadata6 != null && (str = surveyMetadata6.c) != null) {
-                    if (!fecpVar2.L()) {
+                    if (!fgriVar2.L()) {
                         v.U();
                     }
-                    emtb emtbVar3 = (emtb) v.b;
-                    emtbVar3.b |= 1;
-                    emtbVar3.c = str;
+                    epgr epgrVar3 = (epgr) v.b;
+                    epgrVar3.b |= 1;
+                    epgrVar3.c = str;
                 }
-                emtb emtbVar4 = (emtb) v.Q();
-                CastDevice castDevice = amwzVar7.e;
-                amgj amgjVar2 = amwzVar7.l;
-                arwm.s(amgjVar2);
-                amgdVar.q(emtbVar4, castDevice, amgjVar2.a());
+                epgr epgrVar4 = (epgr) v.Q();
+                CastDevice castDevice = aoykVar7.e;
+                aohu aohuVar2 = aoykVar7.l;
+                atzb.s(aohuVar2);
+                aohoVar.q(epgrVar4, castDevice, aohuVar2.a());
             }
 
             public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -295,7 +297,7 @@ public class HatsSurveyManager$CastHatsChimeraActivityReceiver extends TracingBr
             }
         });
         if (this.a) {
-            amwzVar6.b.unregisterReceiver(this);
+            aoykVar6.b.unregisterReceiver(this);
             this.a = false;
         }
     }

@@ -4,19 +4,19 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.arxo;
-import defpackage.dhfp;
-import defpackage.dhgn;
-import defpackage.dhjt;
+import defpackage.auad;
+import defpackage.djqv;
+import defpackage.djrt;
+import defpackage.djuz;
 import j$.util.Objects;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class ChimeraSystemUpdatePersistentListenerService extends Service {
-    public static final arxo a = dhjt.d("ChimeraSystemUpdatePersistentListenerService");
+    public static final auad a = djuz.d("ChimeraSystemUpdatePersistentListenerService");
     private final HashMap b = new HashMap();
 
     @Override // com.google.android.chimera.Service
@@ -30,20 +30,20 @@ public final class ChimeraSystemUpdatePersistentListenerService extends Service 
             String stringExtra = intent.getStringExtra("command");
             String stringExtra2 = intent.getStringExtra("target_action");
             String stringExtra3 = intent.getStringExtra("request_id");
-            if (dhgn.c()) {
+            if (djrt.c()) {
                 a.h("Start (command: %s, action: %s, request ID: %s", stringExtra, stringExtra2, stringExtra3);
             }
             if (Objects.equals(stringExtra, "stop_all_listeners")) {
-                if (dhgn.c()) {
+                if (djrt.c()) {
                     a.h("Got request to unregister all broadcast receivers", new Object[0]);
                 }
                 HashMap hashMap = this.b;
-                for (dhfp dhfpVar : hashMap.values()) {
-                    dhfpVar.c.clear();
-                    if (dhgn.c()) {
-                        a.h("Unregistering %s receiver", dhfpVar.a);
+                for (djqv djqvVar : hashMap.values()) {
+                    djqvVar.c.clear();
+                    if (djrt.c()) {
+                        a.h("Unregistering %s receiver", djqvVar.a);
                     }
-                    dhfpVar.b.d(this);
+                    djqvVar.b.d(this);
                 }
                 hashMap.clear();
             } else {
@@ -56,42 +56,42 @@ public final class ChimeraSystemUpdatePersistentListenerService extends Service 
                     return 2;
                 }
                 if (Objects.equals(stringExtra, "start_listener")) {
-                    if (dhgn.c()) {
+                    if (djrt.c()) {
                         a.h("Got request (%s) to register for action: %s", stringExtra3, stringExtra2);
                     }
                     HashMap hashMap2 = this.b;
-                    dhfp dhfpVar2 = (dhfp) hashMap2.get(stringExtra2);
-                    if (dhfpVar2 == null) {
-                        dhfpVar2 = new dhfp(stringExtra2);
-                        hashMap2.put(stringExtra2, dhfpVar2);
+                    djqv djqvVar2 = (djqv) hashMap2.get(stringExtra2);
+                    if (djqvVar2 == null) {
+                        djqvVar2 = new djqv(stringExtra2);
+                        hashMap2.put(stringExtra2, djqvVar2);
                     }
-                    boolean a2 = dhfpVar2.a();
-                    if (dhfpVar2.c.add(stringExtra3) && a2) {
-                        if (dhgn.c()) {
-                            a.h("Registering %s receiver (request ID: %s).", dhfpVar2.a, stringExtra3);
+                    boolean a2 = djqvVar2.a();
+                    if (djqvVar2.c.add(stringExtra3) && a2) {
+                        if (djrt.c()) {
+                            a.h("Registering %s receiver (request ID: %s).", djqvVar2.a, stringExtra3);
                         }
                         IntentFilter intentFilter = new IntentFilter();
-                        intentFilter.addAction(dhfpVar2.a);
-                        dhfpVar2.b.c(this, intentFilter);
+                        intentFilter.addAction(djqvVar2.a);
+                        djqvVar2.b.c(this, intentFilter);
                     }
                 } else if (Objects.equals(stringExtra, "stop_listener")) {
-                    if (dhgn.c()) {
+                    if (djrt.c()) {
                         a.h("Got request (%s) to unregister for action: %s", stringExtra3, stringExtra2);
                     }
                     HashMap hashMap3 = this.b;
-                    dhfp dhfpVar3 = (dhfp) hashMap3.get(stringExtra2);
-                    if (dhfpVar3 != null) {
-                        Set set = dhfpVar3.c;
+                    djqv djqvVar3 = (djqv) hashMap3.get(stringExtra2);
+                    if (djqvVar3 != null) {
+                        Set set = djqvVar3.c;
                         if (!set.isEmpty()) {
                             set.remove(stringExtra3);
-                            if (dhfpVar3.a()) {
-                                if (dhgn.c()) {
-                                    a.h("Unregistering %s receiver (request ID: %s).", dhfpVar3.a, stringExtra3);
+                            if (djqvVar3.a()) {
+                                if (djrt.c()) {
+                                    a.h("Unregistering %s receiver (request ID: %s).", djqvVar3.a, stringExtra3);
                                 }
-                                dhfpVar3.b.d(this);
+                                djqvVar3.b.d(this);
                             }
                         }
-                        if (dhfpVar3.a()) {
+                        if (djqvVar3.a()) {
                             hashMap3.remove(stringExtra2);
                         }
                     }
@@ -101,10 +101,10 @@ public final class ChimeraSystemUpdatePersistentListenerService extends Service 
             }
             Iterator it = this.b.values().iterator();
             while (it.hasNext()) {
-                if (!((dhfp) it.next()).a()) {
+                if (!((djqv) it.next()).a()) {
                 }
             }
-            if (dhgn.c()) {
+            if (djrt.c()) {
                 a.h("Stopping ChimeraSystemUpdatePersistentListenerService", new Object[0]);
             }
             stopSelf();

@@ -3,32 +3,32 @@ package com.google.android.gms.libs.punchclock.tracing;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import defpackage.byhw;
-import defpackage.byhz;
-import defpackage.byik;
-import defpackage.egkp;
+import defpackage.caqo;
+import defpackage.caqr;
+import defpackage.carc;
+import defpackage.eixs;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public abstract class TracingBroadcastReceiver extends BroadcastReceiver implements byik {
-    private final byhw a;
+public abstract class TracingBroadcastReceiver extends BroadcastReceiver implements carc {
+    private final caqo a;
 
     public TracingBroadcastReceiver(Context context) {
-        this.a = byhz.c.c(getClass(), 4, context);
+        this.a = caqr.c.c(getClass(), 4, context);
     }
 
-    public abstract void jz(Context context, Intent intent);
+    public abstract void jP(Context context, Intent intent);
 
     @Override // android.content.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        byhw byhwVar = this.a;
-        if (byhwVar == byhz.a) {
-            jz(context, intent);
+        caqo caqoVar = this.a;
+        if (caqoVar == caqr.a) {
+            jP(context, intent);
             return;
         }
-        egkp m = byhwVar.m("onReceive", intent);
+        eixs m = caqoVar.m("onReceive", intent);
         try {
-            jz(context, intent);
+            jP(context, intent);
             if (m != null) {
                 m.close();
             }
@@ -45,10 +45,10 @@ public abstract class TracingBroadcastReceiver extends BroadcastReceiver impleme
     }
 
     public TracingBroadcastReceiver(String str) {
-        this.a = byhz.c.e(getClass(), str);
+        this.a = caqr.c.e(getClass(), str);
     }
 
     protected TracingBroadcastReceiver(String str, String str2) {
-        this.a = byhz.c.d(getClass(), 4, str, str2);
+        this.a = caqr.c.d(getClass(), 4, str, str2);
     }
 }

@@ -4,56 +4,56 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.chimera.modules.icing.AppContextProvider;
 import com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateChimeraService;
-import defpackage.anya;
-import defpackage.blfw;
-import defpackage.blrh;
-import defpackage.blrv;
-import defpackage.byjl;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.fpad;
-import defpackage.fpbg;
+import defpackage.apzs;
+import defpackage.bnmo;
+import defpackage.bnxz;
+import defpackage.bnyn;
+import defpackage.casd;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.frtk;
+import defpackage.frun;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class IcingModuleInitIntentOperation extends anya {
-    @Override // defpackage.anya
+public class IcingModuleInitIntentOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        blfw.r("IcingModuleInitIntentOperation.onModuleUpdated got intent: %s (containerUpdated=%b)", intent, Boolean.valueOf(z));
+        bnmo.r("IcingModuleInitIntentOperation.onModuleUpdated got intent: %s (containerUpdated=%b)", intent, Boolean.valueOf(z));
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        blfw.r("IcingModuleInitIntentOperation.onInitRuntimeState: got intent: %s with flag %d", intent, Integer.valueOf(i));
+        bnmo.r("IcingModuleInitIntentOperation.onInitRuntimeState: got intent: %s with flag %d", intent, Integer.valueOf(i));
         int i2 = i & 12;
         Context baseContext = getBaseContext();
         if (i2 > 0) {
-            blfw.o("IcingModuleInitIntentOperation.onInitRuntimeState: module or container updated.");
-            blrh.c(baseContext);
+            bnmo.o("IcingModuleInitIntentOperation.onInitRuntimeState: module or container updated.");
+            bnxz.c(baseContext);
         } else {
             if ((i & 2) <= 0) {
-                blfw.o("IcingModuleInitIntentOperation.onInitRuntimeState: Nothing happened returning.");
+                bnmo.o("IcingModuleInitIntentOperation.onInitRuntimeState: Nothing happened returning.");
                 return;
             }
-            blfw.o("IcingModuleInitIntentOperation.onInitRuntimeState: boot completed.");
+            bnmo.o("IcingModuleInitIntentOperation.onInitRuntimeState: boot completed.");
         }
-        blrh.b(baseContext);
+        bnxz.b(baseContext);
         SystemEventIntentOperation.a(baseContext, intent);
         IcingInternalCorporaUpdateChimeraService.d();
-        if (fpad.j()) {
-            byjl a = byjl.a(AppContextProvider.a());
-            byko bykoVar = new byko();
-            bykoVar.j = "com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService";
-            bykoVar.t("InternalCorporaMaintenance");
-            bykoVar.a = bykv.j;
-            bykoVar.l(false);
-            bykoVar.v(1);
-            bykoVar.e();
-            if (!fpbg.l()) {
-                bykoVar.j();
+        if (frtk.j()) {
+            casd a = casd.a(AppContextProvider.a());
+            catg catgVar = new catg();
+            catgVar.j = "com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService";
+            catgVar.t("InternalCorporaMaintenance");
+            catgVar.a = catn.j;
+            catgVar.l(false);
+            catgVar.v(1);
+            catgVar.e();
+            if (!frun.l()) {
+                catgVar.j();
             }
-            a.f(bykoVar.b());
-            blrv.c("Internal Corpora Maintenance is scheduled");
+            a.f(catgVar.b());
+            bnyn.c("Internal Corpora Maintenance is scheduled");
         }
     }
 }

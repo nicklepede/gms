@@ -14,56 +14,56 @@ import com.google.android.chimera.Service;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.backup.d2d.component.D2dSourceChimeraService;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.ahhp;
-import defpackage.ahwd;
-import defpackage.ahwz;
-import defpackage.aias;
-import defpackage.aicw;
-import defpackage.aies;
-import defpackage.aiiq;
-import defpackage.aiir;
-import defpackage.aijs;
-import defpackage.aiju;
-import defpackage.aijx;
-import defpackage.aikd;
-import defpackage.aikv;
-import defpackage.ailf;
-import defpackage.ailq;
-import defpackage.ailz;
-import defpackage.aimg;
-import defpackage.aimn;
-import defpackage.aimo;
-import defpackage.airn;
-import defpackage.arwm;
-import defpackage.asmb;
-import defpackage.asmf;
-import defpackage.deqr;
-import defpackage.ejhf;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.ensv;
-import defpackage.fllb;
-import defpackage.flpq;
-import defpackage.iln;
+import defpackage.ajif;
+import defpackage.ajwt;
+import defpackage.ajxp;
+import defpackage.akbi;
+import defpackage.akdm;
+import defpackage.akfi;
+import defpackage.akjg;
+import defpackage.akjh;
+import defpackage.akki;
+import defpackage.akkk;
+import defpackage.akkn;
+import defpackage.akkt;
+import defpackage.akll;
+import defpackage.aklv;
+import defpackage.akmg;
+import defpackage.akmp;
+import defpackage.akmw;
+import defpackage.aknd;
+import defpackage.akne;
+import defpackage.aksd;
+import defpackage.atzb;
+import defpackage.aupv;
+import defpackage.aupz;
+import defpackage.dhbu;
+import defpackage.eluo;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgo;
+import defpackage.focl;
+import defpackage.foha;
+import defpackage.ind;
 import j$.util.Objects;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class D2dSourceChimeraService extends Service {
-    public static final ahwd a = new ahwd("D2dSourceChimeraService");
-    public ensv b;
-    public ailz c;
-    public ailq d;
-    public aikd e;
-    private aimo f;
-    private aimn g;
+    public static final ajwt a = new ajwt("D2dSourceChimeraService");
+    public eqgo b;
+    public akmp c;
+    public akmg d;
+    public akkt e;
+    private akne f;
+    private aknd g;
     private BroadcastReceiver h;
-    private aimg i;
-    private aias j;
+    private akmw i;
+    private akbi j;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     /* renamed from: com.google.android.gms.backup.d2d.component.D2dSourceChimeraService$1, reason: invalid class name */
     public class AnonymousClass1 extends TracingBroadcastReceiver {
         public AnonymousClass1() {
@@ -71,30 +71,30 @@ public class D2dSourceChimeraService extends Service {
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             final int intExtra = intent.getIntExtra("e2e_tcp_source_port", -1);
             final boolean booleanExtra = intent.getBooleanExtra("e2e_is_duplex_transfer", false);
-            D2dSourceChimeraService.this.b.execute(new Runnable() { // from class: aiip
+            D2dSourceChimeraService.this.b.execute(new Runnable() { // from class: akjf
                 @Override // java.lang.Runnable
                 public final void run() {
-                    if (!aies.h()) {
+                    if (!akfi.h()) {
                         throw new RuntimeException();
                     }
                     final int i = intExtra;
                     boolean z = booleanExtra;
                     D2dSourceChimeraService.AnonymousClass1 anonymousClass1 = D2dSourceChimeraService.AnonymousClass1.this;
                     if (z) {
-                        D2dSourceChimeraService.this.c.c(new aire() { // from class: aiin
-                            @Override // defpackage.aire
-                            public final airg a() {
-                                return new airo(i);
+                        D2dSourceChimeraService.this.c.c(new akru() { // from class: akjd
+                            @Override // defpackage.akru
+                            public final akrw a() {
+                                return new akse(i);
                             }
                         });
                     } else {
-                        D2dSourceChimeraService.this.c.g(new aire() { // from class: aiio
-                            @Override // defpackage.aire
-                            public final airg a() {
-                                return new airo(i);
+                        D2dSourceChimeraService.this.c.g(new akru() { // from class: akje
+                            @Override // defpackage.akru
+                            public final akrw a() {
+                                return new akse(i);
                             }
                         });
                     }
@@ -117,136 +117,136 @@ public class D2dSourceChimeraService extends Service {
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
         a.j("onBind", new Object[0]);
-        return new ailf(this);
+        return new aklv(this);
     }
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         a.j("onCreate", new Object[0]);
         super.onCreate();
-        this.b = new asmf(1, 9);
-        this.e = new aikd();
-        final aijx aijxVar = new aijx(this);
-        asmf asmfVar = new asmf(1, 10);
-        Objects.requireNonNull(aijxVar);
-        asmfVar.execute(new Runnable() { // from class: aiil
+        this.b = new aupz(1, 9);
+        this.e = new akkt();
+        final akkn akknVar = new akkn(this);
+        aupz aupzVar = new aupz(1, 10);
+        Objects.requireNonNull(akknVar);
+        aupzVar.execute(new Runnable() { // from class: akjb
             @Override // java.lang.Runnable
             public final void run() {
                 PowerManager powerManager;
-                aijx aijxVar2 = aijx.this;
-                aijxVar2.d = SystemClock.elapsedRealtime();
-                fecj fecjVar = aijxVar2.e;
-                fecp fecpVar = fecjVar.b;
-                if (((fhmj) fecpVar).c == -10) {
-                    if (!fecpVar.L()) {
-                        fecjVar.U();
+                akkn akknVar2 = akkn.this;
+                akknVar2.d = SystemClock.elapsedRealtime();
+                fgrc fgrcVar = akknVar2.e;
+                fgri fgriVar = fgrcVar.b;
+                if (((fkcg) fgriVar).c == -10) {
+                    if (!fgriVar.L()) {
+                        fgrcVar.U();
                     }
-                    fhmj fhmjVar = (fhmj) fecjVar.b;
-                    fhmjVar.b |= 1;
-                    fhmjVar.c = -1;
+                    fkcg fkcgVar = (fkcg) fgrcVar.b;
+                    fkcgVar.b |= 1;
+                    fkcgVar.c = -1;
                 }
-                Context context = aijxVar2.b;
+                Context context = akknVar2.b;
                 int i = ModuleManager.get(context).getCurrentModuleApk().apkVersionCode;
-                aijx.a.d("Apk version: %d", Integer.valueOf(i));
-                fecj fecjVar2 = aijxVar2.l;
-                if (!fecjVar2.b.L()) {
-                    fecjVar2.U();
+                akkn.a.d("Apk version: %d", Integer.valueOf(i));
+                fgrc fgrcVar2 = akknVar2.l;
+                if (!fgrcVar2.b.L()) {
+                    fgrcVar2.U();
                 }
-                fhmk fhmkVar = (fhmk) fecjVar2.b;
-                fhmk fhmkVar2 = fhmk.a;
-                fhmkVar.b |= 2;
-                fhmkVar.e = i;
+                fkch fkchVar = (fkch) fgrcVar2.b;
+                fkch fkchVar2 = fkch.a;
+                fkchVar.b |= 2;
+                fkchVar.e = i;
                 try {
-                    if (fllb.r()) {
+                    if (focl.r()) {
                         try {
-                            eijr a2 = eijy.a(new vbf());
-                            dvni.f(context);
-                            int length = vbh.a(context, new vay(context), a2).length;
-                            fecj fecjVar3 = aijxVar2.l;
-                            if (!fecjVar3.b.L()) {
-                                fecjVar3.U();
+                            ekww a2 = ekxd.a(new wxf());
+                            dxyi.f(context);
+                            int length = wxh.a(context, new wwy(context), a2).length;
+                            fgrc fgrcVar3 = akknVar2.l;
+                            if (!fgrcVar3.b.L()) {
+                                fgrcVar3.U();
                             }
-                            fhmk fhmkVar3 = (fhmk) fecjVar3.b;
-                            fhmkVar3.b |= 8;
-                            fhmkVar3.j = length;
-                        } catch (RemoteException | aqum | aqun e) {
-                            aijx.a.g("Unable to get number of accounts", e, new Object[0]);
-                            fecj fecjVar4 = aijxVar2.l;
-                            if (!fecjVar4.b.L()) {
-                                fecjVar4.U();
+                            fkch fkchVar3 = (fkch) fgrcVar3.b;
+                            fkchVar3.b |= 8;
+                            fkchVar3.j = length;
+                        } catch (RemoteException | asxb | asxc e) {
+                            akkn.a.g("Unable to get number of accounts", e, new Object[0]);
+                            fgrc fgrcVar4 = akknVar2.l;
+                            if (!fgrcVar4.b.L()) {
+                                fgrcVar4.U();
                             }
-                            fhmk fhmkVar4 = (fhmk) fecjVar4.b;
-                            fhmkVar4.b |= 8;
-                            fhmkVar4.j = -1;
+                            fkch fkchVar4 = (fkch) fgrcVar4.b;
+                            fkchVar4.b |= 8;
+                            fkchVar4.j = -1;
                         }
                     }
-                    if (fllb.r()) {
-                        NetworkInfo activeNetworkInfo = ((ConnectivityManager) aijxVar2.b.getSystemService("connectivity")).getActiveNetworkInfo();
-                        fecj fecjVar5 = aijxVar2.l;
+                    if (focl.r()) {
+                        NetworkInfo activeNetworkInfo = ((ConnectivityManager) akknVar2.b.getSystemService("connectivity")).getActiveNetworkInfo();
+                        fgrc fgrcVar5 = akknVar2.l;
                         boolean z = activeNetworkInfo != null && activeNetworkInfo.isConnected();
-                        if (!fecjVar5.b.L()) {
-                            fecjVar5.U();
+                        if (!fgrcVar5.b.L()) {
+                            fgrcVar5.U();
                         }
-                        fhmk fhmkVar5 = (fhmk) fecjVar5.b;
-                        fhmkVar5.b |= 16;
-                        fhmkVar5.k = z;
+                        fkch fkchVar5 = (fkch) fgrcVar5.b;
+                        fkchVar5.b |= 16;
+                        fkchVar5.k = z;
                     }
-                    if (!flpn.a.a().d() || (powerManager = (PowerManager) aijxVar2.b.getSystemService("power")) == null) {
+                    if (!fogx.a.lK().d() || (powerManager = (PowerManager) akknVar2.b.getSystemService("power")) == null) {
                         return;
                     }
-                    fecj fecjVar6 = aijxVar2.l;
+                    fgrc fgrcVar6 = akknVar2.l;
                     boolean isPowerSaveMode = powerManager.isPowerSaveMode();
-                    if (!fecjVar6.b.L()) {
-                        fecjVar6.U();
+                    if (!fgrcVar6.b.L()) {
+                        fgrcVar6.U();
                     }
-                    fhmk fhmkVar6 = (fhmk) fecjVar6.b;
-                    fhmkVar6.b |= 128;
-                    fhmkVar6.o = isPowerSaveMode;
+                    fkch fkchVar6 = (fkch) fgrcVar6.b;
+                    fkchVar6.b |= 128;
+                    fkchVar6.o = isPowerSaveMode;
                 } catch (Throwable th) {
-                    fecj fecjVar7 = aijxVar2.l;
-                    if (!fecjVar7.b.L()) {
-                        fecjVar7.U();
+                    fgrc fgrcVar7 = akknVar2.l;
+                    if (!fgrcVar7.b.L()) {
+                        fgrcVar7.U();
                     }
-                    fhmk fhmkVar7 = (fhmk) fecjVar7.b;
-                    fhmkVar7.b |= 8;
-                    fhmkVar7.j = -1;
+                    fkch fkchVar7 = (fkch) fgrcVar7.b;
+                    fkchVar7.b |= 8;
+                    fkchVar7.j = -1;
                     throw th;
                 }
             }
         });
-        ahwd ahwdVar = aimo.a;
-        this.f = new aimo(new deqr(this, 1, "com.google.android.gms.backup.component.D2dSourceService.wakelock_tag"));
-        this.i = new aimg(this);
-        this.d = ailq.a(this);
-        aikv a2 = aikv.a(this, aijxVar);
-        asmb asmbVar = new asmb(1, 10);
-        this.j = new aias(this, asmbVar, "com.google.android.gms.backup.component.D2dSourceService");
-        this.g = new aimn(this, a2, aijxVar, this.e, this.i, this.j, new aicw(new asmb(1, 10)), asmbVar);
-        this.c = new ailz(this, this.b, asmbVar, this.e, aijxVar, this.g, this.f, this.i, a2, new ahwz(this), new ahhp(this), this.d, new asmf(1, 10), new aijs(this));
+        ajwt ajwtVar = akne.a;
+        this.f = new akne(new dhbu(this, 1, "com.google.android.gms.backup.component.D2dSourceService.wakelock_tag"));
+        this.i = new akmw(this);
+        this.d = akmg.a(this);
+        akll a2 = akll.a(this, akknVar);
+        aupv aupvVar = new aupv(1, 10);
+        this.j = new akbi(this, aupvVar, "com.google.android.gms.backup.component.D2dSourceService");
+        this.g = new aknd(this, a2, akknVar, this.e, this.i, this.j, new akdm(new aupv(1, 10)), aupvVar);
+        this.c = new akmp(this, this.b, aupvVar, this.e, akknVar, this.g, this.f, this.i, a2, new ajxp(this), new ajif(this), this.d, new aupz(1, 10), new akki(this));
         this.h = new AnonymousClass1();
-        if (aies.h()) {
-            iln.b(this, this.h, new IntentFilter("com.google.android.gms.backup.ACTION_LAUNCH_SOURCE_E2E_TEST"), 2);
-            ((ejhf) airn.a.h()).x("source receiver registered");
+        if (akfi.h()) {
+            ind.b(this, this.h, new IntentFilter("com.google.android.gms.backup.ACTION_LAUNCH_SOURCE_E2E_TEST"), 2);
+            ((eluo) aksd.a.h()).x("source receiver registered");
         }
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        ahwd ahwdVar = a;
-        ahwdVar.j("onDestroy", new Object[0]);
+        ajwt ajwtVar = a;
+        ajwtVar.j("onDestroy", new Object[0]);
         if (this.f.a()) {
-            ahwdVar.m("Wake lock should have been released before source service onDestroy.", new Object[0]);
+            ajwtVar.m("Wake lock should have been released before source service onDestroy.", new Object[0]);
         }
-        this.b.execute(new Runnable() { // from class: aiim
+        this.b.execute(new Runnable() { // from class: akjc
             @Override // java.lang.Runnable
             public final void run() {
                 D2dSourceChimeraService d2dSourceChimeraService = D2dSourceChimeraService.this;
-                ailz ailzVar = d2dSourceChimeraService.c;
-                aiqp aiqpVar = ailzVar.p;
-                if (aiqpVar != null) {
-                    aiqpVar.d();
+                akmp akmpVar = d2dSourceChimeraService.c;
+                akrf akrfVar = akmpVar.p;
+                if (akrfVar != null) {
+                    akrfVar.d();
                 }
-                ailzVar.i();
+                akmpVar.i();
                 d2dSourceChimeraService.c = null;
             }
         });
@@ -255,10 +255,10 @@ public class D2dSourceChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        ahwd ahwdVar = a;
-        ahwdVar.j("#onStartCommand", new Object[0]);
-        if (fllb.a.a().af() && intent == null) {
-            ahwdVar.m("OnStartCommand called with null intent, not doing any work as there are no pending starts to this service.", new Object[0]);
+        ajwt ajwtVar = a;
+        ajwtVar.j("#onStartCommand", new Object[0]);
+        if (focl.a.lK().af() && intent == null) {
+            ajwtVar.m("OnStartCommand called with null intent, not doing any work as there are no pending starts to this service.", new Object[0]);
             return 2;
         }
         if (intent.getBooleanExtra("stop_service", false)) {
@@ -267,22 +267,22 @@ public class D2dSourceChimeraService extends Service {
             this.g.g();
             return 2;
         }
-        if (!flpq.e()) {
-            new aiir(this).start();
+        if (!foha.e()) {
+            new akjh(this).start();
         }
-        aimo aimoVar = this.f;
-        arwm.h("Wake lock must be acquired from the main thread.");
-        deqr deqrVar = aimoVar.b;
-        if (deqrVar.l()) {
-            aimo.a.j("acquireWakeLockIfNotHeld(): wake lock already held so not acquiring", new Object[0]);
+        akne akneVar = this.f;
+        atzb.h("Wake lock must be acquired from the main thread.");
+        dhbu dhbuVar = akneVar.b;
+        if (dhbuVar.l()) {
+            akne.a.j("acquireWakeLockIfNotHeld(): wake lock already held so not acquiring", new Object[0]);
         } else {
-            aimo.a.j("acquireWakeLockIfNotHeld(): wake lock not held so acquiring", new Object[0]);
-            deqrVar.d("migrate_transfer");
+            akne.a.j("acquireWakeLockIfNotHeld(): wake lock not held so acquiring", new Object[0]);
+            dhbuVar.d("migrate_transfer");
         }
         this.i.c.b = intent.getBooleanExtra("is_wifi_d2d", false);
         this.i.a();
-        ensj.t(this.j.a(), new aiiq(), enre.a);
-        new aiju().a(this);
+        eqgc.t(this.j.a(), new akjg(), eqex.a);
+        new akkk().a(this);
         return 2;
     }
 }

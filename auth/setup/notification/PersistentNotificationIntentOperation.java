@@ -4,27 +4,27 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
-import defpackage.adds;
-import defpackage.addt;
-import defpackage.asbo;
-import defpackage.asej;
-import defpackage.asit;
-import defpackage.asot;
-import defpackage.ejhf;
+import defpackage.afdu;
+import defpackage.afdv;
+import defpackage.aued;
+import defpackage.auid;
+import defpackage.aumn;
+import defpackage.ausn;
+import defpackage.eluo;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public class PersistentNotificationIntentOperation extends IntentOperation {
     public static final /* synthetic */ int a = 0;
     private static final String b = "PersistentNotificationIntentOperation";
-    private static final asot c = asot.b(b, asej.AUTH_ACCOUNT_DATA);
+    private static final ausn c = ausn.b(b, auid.AUTH_ACCOUNT_DATA);
 
-    private static adds a(Context context) {
-        return new adds(asbo.f(context), new asit(context));
+    private static afdu a(Context context) {
+        return new afdu(aued.f(context), new aumn(context));
     }
 
     @Override // com.google.android.chimera.IntentOperation
@@ -51,12 +51,12 @@ public class PersistentNotificationIntentOperation extends IntentOperation {
                 a(this).b(intent.getStringExtra("tag"), intent.getIntExtra("id", 0));
                 return;
             } else {
-                ((ejhf) c.j()).x("ACTION_CANCEL_NOTIFICATION intent found without tag or id.");
+                ((eluo) c.j()).x("ACTION_CANCEL_NOTIFICATION intent found without tag or id.");
                 return;
             }
         }
-        adds a2 = a(this);
-        Map<String, ?> all = adds.a().getAll();
+        afdu a2 = a(this);
+        Map<String, ?> all = afdu.a().getAll();
         if (all.isEmpty()) {
             return;
         }
@@ -65,11 +65,11 @@ public class PersistentNotificationIntentOperation extends IntentOperation {
             String[] split = entry.getKey().split(":", 2);
             int intValue = Integer.valueOf(split[0]).intValue();
             String str = split[1];
-            addt c3 = addt.c(AppContextProvider.a(), (String) entry.getValue());
+            afdv c3 = afdv.c(AppContextProvider.a(), (String) entry.getValue());
             long currentTimeMillis = System.currentTimeMillis();
             long b2 = currentTimeMillis - c3.b();
             if (b2 > c3.a()) {
-                ((ejhf) adds.a.h()).B("Not showing expired notification with tag: %s", str);
+                ((eluo) afdu.a.h()).B("Not showing expired notification with tag: %s", str);
                 linkedList.add(entry.getKey());
             } else {
                 c3.l(currentTimeMillis);

@@ -8,19 +8,19 @@ import android.os.IBinder;
 import android.text.TextUtils;
 import android.util.JsonReader;
 import com.google.android.chimera.Service;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.bqux;
-import defpackage.cxzr;
-import defpackage.cyye;
-import defpackage.cyyf;
-import defpackage.cyyl;
-import defpackage.czbp;
-import defpackage.czbq;
-import defpackage.czbu;
-import defpackage.ejhf;
-import defpackage.fmut;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.btco;
+import defpackage.dajo;
+import defpackage.dbic;
+import defpackage.dbid;
+import defpackage.dbij;
+import defpackage.dbln;
+import defpackage.dblo;
+import defpackage.dbls;
+import defpackage.eluo;
+import defpackage.fpmr;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -28,33 +28,33 @@ import java.io.InputStreamReader;
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SnetChimeraService extends Service {
     private static final String j = "SnetChimeraService";
-    private static final asot k = asot.b(j, asej.SECURITY);
+    private static final ausn k = ausn.b(j, auid.SECURITY);
     boolean a = false;
-    public cyyf b;
-    public cxzr c;
+    public dbid b;
+    public dajo c;
     public int d;
-    public czbu e;
+    public dbls e;
     public String f;
     ExecutorService g;
     public String h;
     public Bundle i;
 
     public final void a() {
-        this.b = new cyyf(this, this.d);
-        this.e = new czbu(this, this.d, this.b);
+        this.b = new dbid(this, this.d);
+        this.e = new dbls(this, this.d, this.b);
         String uuid = UUID.randomUUID().toString();
         this.f = uuid;
         this.e.f = uuid;
         this.h = "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa";
-        if (!cyyl.d(this)) {
-            this.h = cyyl.c(this);
+        if (!dbij.d(this)) {
+            this.h = dbij.c(this);
         }
         if (TextUtils.isEmpty(this.h) || "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa".equals(this.h)) {
-            this.h = cyyl.b(this);
+            this.h = dbij.b(this);
         }
         this.e.g = this.h;
     }
@@ -63,8 +63,8 @@ public class SnetChimeraService extends Service {
         if (z) {
             try {
                 if (this.e != null) {
-                    czbu.d = cxzr.d(this);
-                    czbu.c = this.c.f();
+                    dbls.d = dajo.d(this);
+                    dbls.c = this.c.f();
                     this.e.c(2);
                 }
             } finally {
@@ -76,19 +76,19 @@ public class SnetChimeraService extends Service {
 
     public final void c() {
         if (this.i == null) {
-            File file = fmut.i() ? new File(bqux.a.d(this.b.b, "installed/snet_flags")) : new File(this.b.b, "installed/snet_flags");
-            cyyf cyyfVar = this.b;
+            File file = fpmr.i() ? new File(btco.a.d(this.b.b, "installed/snet_flags")) : new File(this.b.b, "installed/snet_flags");
+            dbid dbidVar = this.b;
             try {
-                cyye cyyeVar = new cyye(fmut.i() ? new File(bqux.a.d(this.b.b, "installed/metadata_flags")) : new File(this.b.b, "installed/metadata_flags"));
-                if (cyyeVar.b > cyyfVar.a()) {
-                    if (!cyyf.b(file, cyyeVar, 2)) {
-                        if (!cyyfVar.d || !cyyf.b(file, cyyeVar, 1)) {
+                dbic dbicVar = new dbic(fpmr.i() ? new File(btco.a.d(this.b.b, "installed/metadata_flags")) : new File(this.b.b, "installed/metadata_flags"));
+                if (dbicVar.b > dbidVar.a()) {
+                    if (!dbid.b(file, dbicVar, 2)) {
+                        if (!dbidVar.d || !dbid.b(file, dbicVar, 1)) {
                             return;
                         }
-                        boolean z = czbu.a;
-                        Context context = cyyfVar.a;
-                        int i = cyyfVar.c;
-                        czbu.b = true;
+                        boolean z = dbls.a;
+                        Context context = dbidVar.a;
+                        int i = dbidVar.c;
+                        dbls.b = true;
                     }
                     JsonReader jsonReader = new JsonReader(new BufferedReader(new InputStreamReader(new FileInputStream(file), "US-ASCII")));
                     Bundle bundle = new Bundle();
@@ -130,36 +130,36 @@ public class SnetChimeraService extends Service {
     public final void onCreate() {
         int i;
         super.onCreate();
-        this.g = new asmf(1, 10);
+        this.g = new aupz(1, 10);
         try {
             i = getPackageManager().getPackageInfo(getPackageName(), 0).versionCode;
         } catch (PackageManager.NameNotFoundException unused) {
             i = -1;
         }
         this.d = i;
-        this.c = new cxzr(this);
+        this.c = new dajo(this);
     }
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
         if (this.a) {
-            ((ejhf) ((ejhf) k.i()).ah((char) 9576)).x("snet re-entered.");
+            ((eluo) ((eluo) k.i()).ai((char) 9578)).x("snet re-entered.");
             return 2;
         }
         try {
             this.a = true;
             String action = intent.getAction();
             if ("com.google.android.gms.security.snet.ACTION_EVENT_LOG_COLLECTOR".equals(action)) {
-                this.g.execute(new czbp(this));
+                this.g.execute(new dbln(this));
             } else if ("com.google.android.gms.security.snet.ACTION_IDLE_MODE".equals(action)) {
-                this.g.execute(new czbq(this));
+                this.g.execute(new dblo(this));
             } else {
-                ((ejhf) ((ejhf) k.i()).ah(9575)).x("snet unknown action.");
+                ((eluo) ((eluo) k.i()).ai(9577)).x("snet unknown action.");
                 b(false);
             }
         } catch (Throwable th) {
             if (this.e != null) {
-                czbu.a(th);
+                dbls.a(th);
             }
             b(false);
         }

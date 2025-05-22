@@ -7,24 +7,24 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dgqi;
-import defpackage.dgsx;
-import defpackage.eiig;
-import defpackage.eixf;
+import defpackage.atzr;
+import defpackage.djbn;
+import defpackage.djec;
+import defpackage.ekvl;
+import defpackage.elkk;
 import j$.util.Optional;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class TrustableDevice extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new dgqi();
+    public static final Parcelable.Creator CREATOR = new djbn();
     private static final ClassLoader c = TrustableDevice.class.getClassLoader();
     public final List a;
     public final boolean b;
 
     public TrustableDevice(BluetoothDevice bluetoothDevice, boolean z) {
-        this(eixf.d(bluetoothDevice), z);
+        this(elkk.d(bluetoothDevice), z);
     }
 
     public static Optional b(Bundle bundle, String str) {
@@ -51,21 +51,21 @@ public class TrustableDevice extends AbstractSafeParcelable implements Reflected
     }
 
     public final String d() {
-        return dgsx.b(a());
+        return djec.b(a());
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.e(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.e(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 
     public TrustableDevice(List list, boolean z) {
-        eiig.b(!list.isEmpty(), "Cannot create empty TrustableDevice");
-        eiig.b(list.get(0) != null, "Cannot create with null device");
+        ekvl.b(!list.isEmpty(), "Cannot create empty TrustableDevice");
+        ekvl.b(list.get(0) != null, "Cannot create with null device");
         this.a = list;
         this.b = z;
     }

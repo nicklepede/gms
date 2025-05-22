@@ -8,7 +8,7 @@ import android.util.Log;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class SmsSentReceiver extends TracingBroadcastReceiver {
     private final ResultReceiver a;
@@ -19,7 +19,7 @@ public final class SmsSentReceiver extends TracingBroadcastReceiver {
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         if (!"com.google.android.gms.family.invites".equals(intent.getAction())) {
             Log.e("Family", String.format(Locale.US, "[SmsSentReceiver] Intent action didn't match, ignoring", new Object[0]));
             return;

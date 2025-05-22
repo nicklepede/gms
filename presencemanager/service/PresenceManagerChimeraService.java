@@ -3,16 +3,16 @@ package com.google.android.gms.presencemanager.service;
 import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.asej;
-import defpackage.asot;
+import defpackage.auid;
+import defpackage.ausn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class PresenceManagerChimeraService extends Service {
     public static final /* synthetic */ int a = 0;
 
     static {
-        asot.b("PresenceManagerModule", asej.PRESENCE_MANAGER);
+        ausn.b("PresenceManagerModule", auid.PRESENCE_MANAGER);
     }
 
     @Override // com.google.android.chimera.Service

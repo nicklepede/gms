@@ -3,13 +3,13 @@ package com.google.android.gms.libs.gmscorelogger;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.brft;
+import defpackage.atzr;
+import defpackage.btnk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class LogEvent extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new brft();
+    public static final Parcelable.Creator CREATOR = new btnk();
     public final byte[] a;
     public final long b;
     public final byte[] c;
@@ -25,11 +25,11 @@ public class LogEvent extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         byte[] bArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, bArr, false);
-        arxc.q(parcel, 2, this.b);
-        arxc.i(parcel, 3, this.c, false);
-        arxc.i(parcel, 4, this.d, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, bArr, false);
+        atzr.q(parcel, 2, this.b);
+        atzr.i(parcel, 3, this.c, false);
+        atzr.i(parcel, 4, this.d, false);
+        atzr.c(parcel, a);
     }
 }

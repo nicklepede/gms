@@ -7,22 +7,22 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.DeviceFilter;
 import com.google.android.gms.dtdi.core.InvitationHandle;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.aywr;
-import defpackage.ayxk;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bbal;
+import defpackage.bbbe;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class StartBroadcastInvitationParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayxk();
+    public static final Parcelable.Creator CREATOR = new bbbe();
     public InvitationHandle a;
     public DeviceFilter[] b;
-    private arbp c;
-    private aywr d;
+    private atee c;
+    private bbal d;
 
     private StartBroadcastInvitationParams() {
     }
@@ -33,7 +33,7 @@ public final class StartBroadcastInvitationParams extends AbstractSafeParcelable
         }
         if (obj instanceof StartBroadcastInvitationParams) {
             StartBroadcastInvitationParams startBroadcastInvitationParams = (StartBroadcastInvitationParams) obj;
-            if (arwb.b(this.a, startBroadcastInvitationParams.a) && arwb.b(this.d, startBroadcastInvitationParams.d) && arwb.b(this.c, startBroadcastInvitationParams.c) && Arrays.equals(this.b, startBroadcastInvitationParams.b)) {
+            if (atyq.b(this.a, startBroadcastInvitationParams.a) && atyq.b(this.d, startBroadcastInvitationParams.d) && atyq.b(this.c, startBroadcastInvitationParams.c) && Arrays.equals(this.b, startBroadcastInvitationParams.b)) {
                 return true;
             }
         }
@@ -46,30 +46,30 @@ public final class StartBroadcastInvitationParams extends AbstractSafeParcelable
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.D(parcel, 2, this.d.a);
-        arxc.D(parcel, 3, this.c.asBinder());
-        arxc.J(parcel, 4, this.b, i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.D(parcel, 2, this.d.a);
+        atzr.D(parcel, 3, this.c.asBinder());
+        atzr.J(parcel, 4, this.b, i);
+        atzr.c(parcel, a);
     }
 
     public StartBroadcastInvitationParams(InvitationHandle invitationHandle, IBinder iBinder, IBinder iBinder2, DeviceFilter[] deviceFilterArr) {
-        aywr aywrVar;
-        arbp arbpVar = null;
+        bbal bbalVar;
+        atee ateeVar = null;
         if (iBinder == null) {
-            aywrVar = null;
+            bbalVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.dtdi.core.internal.IInvitationAcceptedCallback");
-            aywrVar = queryLocalInterface instanceof aywr ? (aywr) queryLocalInterface : new aywr(iBinder);
+            bbalVar = queryLocalInterface instanceof bbal ? (bbal) queryLocalInterface : new bbal(iBinder);
         }
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbpVar = queryLocalInterface2 instanceof arbp ? (arbp) queryLocalInterface2 : new arbn(iBinder2);
+            ateeVar = queryLocalInterface2 instanceof atee ? (atee) queryLocalInterface2 : new atec(iBinder2);
         }
         this.a = invitationHandle;
-        this.d = aywrVar;
-        this.c = arbpVar;
+        this.d = bbalVar;
+        this.c = ateeVar;
         this.b = deviceFilterArr;
     }
 }

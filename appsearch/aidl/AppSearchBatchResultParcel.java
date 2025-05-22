@@ -4,35 +4,35 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.ubl;
-import defpackage.ubm;
-import defpackage.udy;
-import defpackage.uey;
-import defpackage.ufb;
-import defpackage.ugk;
+import defpackage.vxk;
+import defpackage.vxl;
+import defpackage.vzx;
+import defpackage.wax;
+import defpackage.wba;
+import defpackage.wcj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AppSearchBatchResultParcel extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new uey();
+    public static final Parcelable.Creator CREATOR = new wax();
     final Bundle a;
-    private ubm b;
+    private vxl b;
 
     public AppSearchBatchResultParcel(Bundle bundle) {
         this.a = bundle;
     }
 
-    public final ubm a() {
+    public final vxl a() {
         if (this.b == null) {
-            ubl ublVar = new ubl();
+            vxk vxkVar = new vxk();
             Bundle bundle = this.a;
             for (String str : bundle.keySet()) {
-                AppSearchResultParcel appSearchResultParcel = (AppSearchResultParcel) ugk.b(bundle, str, AppSearchResultParcel.CREATOR);
+                AppSearchResultParcel appSearchResultParcel = (AppSearchResultParcel) wcj.b(bundle, str, AppSearchResultParcel.CREATOR);
                 if (appSearchResultParcel != null) {
-                    ublVar.c(str, appSearchResultParcel.l);
+                    vxkVar.c(str, appSearchResultParcel.l);
                 }
             }
-            this.b = ublVar.a();
+            this.b = vxkVar.a();
         }
         return this.b;
     }
@@ -43,15 +43,15 @@ public final class AppSearchBatchResultParcel extends AbstractSafeParcelable {
         try {
             Bundle bundle = this.a;
             for (String str : bundle.keySet()) {
-                AppSearchResultParcel appSearchResultParcel = (AppSearchResultParcel) ugk.b(bundle, str, AppSearchResultParcel.CREATOR);
+                AppSearchResultParcel appSearchResultParcel = (AppSearchResultParcel) wcj.b(bundle, str, AppSearchResultParcel.CREATOR);
                 if (appSearchResultParcel != null) {
                     obtain.writeString(str);
-                    ufb.b(appSearchResultParcel, obtain, i);
+                    wba.b(appSearchResultParcel, obtain, i);
                 }
             }
             byte[] marshall = obtain.marshall();
             obtain.recycle();
-            udy.a(parcel, marshall);
+            vzx.a(parcel, marshall);
         } catch (Throwable th) {
             obtain.recycle();
             throw th;

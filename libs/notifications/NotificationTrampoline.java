@@ -5,14 +5,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bxad;
+import defpackage.atzr;
+import defpackage.bzit;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class NotificationTrampoline extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bxad();
+    public static final Parcelable.Creator CREATOR = new bzit();
     public final PendingIntent a;
     public final int b;
     public final String c;
@@ -51,15 +51,15 @@ public class NotificationTrampoline extends AbstractSafeParcelable implements Re
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         PendingIntent pendingIntent = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, pendingIntent, i, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.o(parcel, 8, this.h);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, pendingIntent, i, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.o(parcel, 8, this.h);
+        atzr.c(parcel, a);
     }
 }

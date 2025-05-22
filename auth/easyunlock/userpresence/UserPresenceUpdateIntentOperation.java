@@ -3,22 +3,22 @@ package com.google.android.gms.auth.easyunlock.userpresence;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aavw;
-import defpackage.aaws;
-import defpackage.aaww;
-import defpackage.aaxf;
-import defpackage.arwm;
-import defpackage.asot;
-import defpackage.deqh;
-import defpackage.ejhf;
-import defpackage.fkxx;
-import defpackage.fmse;
+import defpackage.acvw;
+import defpackage.acws;
+import defpackage.acww;
+import defpackage.acxf;
+import defpackage.atzb;
+import defpackage.ausn;
+import defpackage.dhbk;
+import defpackage.eluo;
+import defpackage.fnpd;
+import defpackage.fpkc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class UserPresenceUpdateIntentOperation extends IntentOperation {
-    private static final asot a = aaws.a("UserPresenceUpdateIntentOperation");
-    private aaxf b;
+    private static final ausn a = acws.a("UserPresenceUpdateIntentOperation");
+    private acxf b;
 
     public UserPresenceUpdateIntentOperation() {
     }
@@ -31,54 +31,54 @@ public class UserPresenceUpdateIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        this.b = aaxf.a(this);
+        this.b = acxf.a(this);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         int intExtra = intent.getIntExtra("detection_type", 0);
         try {
-            if (fkxx.d()) {
-                aaxf aaxfVar = this.b;
-                synchronized (aaxfVar.d) {
-                    aaxfVar.b(intExtra == 3);
+            if (fnpd.d()) {
+                acxf acxfVar = this.b;
+                synchronized (acxfVar.d) {
+                    acxfVar.b(intExtra == 3);
                     if (intExtra != 1) {
                         if (intExtra != 2) {
                             if (intExtra == 3) {
-                                aaxfVar.c.b();
+                                acxfVar.c.b();
                             } else if (intExtra != 4) {
-                                ((ejhf) aaxf.a.i()).z("Unexpected detection type: %d", intExtra);
-                            } else if (aaxfVar.g != 2) {
-                                aaxfVar.c.c();
+                                ((eluo) acxf.a.i()).z("Unexpected detection type: %d", intExtra);
+                            } else if (acxfVar.g != 2) {
+                                acxfVar.c.c();
                             }
-                        } else if (aaxfVar.g == 2) {
-                            aaxfVar.c.b();
+                        } else if (acxfVar.g == 2) {
+                            acxfVar.c.b();
                         }
-                    } else if (aaxfVar.g == 2) {
-                        aaxfVar.c.b();
+                    } else if (acxfVar.g == 2) {
+                        acxfVar.c.b();
                     }
                 }
             } else {
-                ((ejhf) a.j()).x("Proximity feature is not available on current device.");
+                ((eluo) a.j()).x("Proximity feature is not available on current device.");
             }
-            if (!fmse.h()) {
-                deqh.c(intent);
+            if (!fpkc.i()) {
+                dhbk.c(intent);
                 return;
             }
             if (intExtra == 1 || intExtra == 2 || intExtra == 3) {
-                aaww.c(intent);
+                acww.c(intent);
             } else if (intExtra != 4) {
-                deqh.c(intent);
+                dhbk.c(intent);
             } else {
                 PeriodicCheckChimeraReceiver.b(intent);
             }
         } catch (Throwable th) {
-            if (!fmse.h()) {
-                deqh.c(intent);
+            if (!fpkc.i()) {
+                dhbk.c(intent);
             } else if (intExtra == 1 || intExtra == 2 || intExtra == 3) {
-                aaww.c(intent);
+                acww.c(intent);
             } else if (intExtra != 4) {
-                deqh.c(intent);
+                dhbk.c(intent);
             } else {
                 PeriodicCheckChimeraReceiver.b(intent);
             }
@@ -86,9 +86,9 @@ public class UserPresenceUpdateIntentOperation extends IntentOperation {
         }
     }
 
-    UserPresenceUpdateIntentOperation(aaxf aaxfVar, aavw aavwVar) {
-        arwm.s(aaxfVar);
-        this.b = aaxfVar;
-        arwm.s(aavwVar);
+    UserPresenceUpdateIntentOperation(acxf acxfVar, acvw acvwVar) {
+        atzb.s(acxfVar);
+        this.b = acxfVar;
+        atzb.s(acvwVar);
     }
 }

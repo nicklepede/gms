@@ -36,51 +36,51 @@ import com.google.android.gms.common.api.Status;
 import com.google.android.gms.mobiledataplan.MdpCarrierPlanIdResponse;
 import com.google.android.gms.mobiledataplan.PurchasePlanActivation;
 import com.google.android.gms.mobiledataplan.ui.MobileDataPlanSettingsChimeraActivity;
-import defpackage.aqxd;
-import defpackage.aqxe;
-import defpackage.aqxo;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.bahh;
-import defpackage.bajh;
+import defpackage.Cenum;
+import defpackage.aszs;
+import defpackage.aszt;
+import defpackage.atad;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.bcld;
+import defpackage.bcnd;
 import defpackage.bp;
-import defpackage.bxek;
-import defpackage.bzfh;
-import defpackage.ceau;
-import defpackage.ceay;
-import defpackage.cecl;
-import defpackage.cecs;
-import defpackage.ceea;
-import defpackage.cefr;
-import defpackage.cegz;
-import defpackage.ceig;
-import defpackage.ceih;
-import defpackage.ceje;
-import defpackage.cejh;
-import defpackage.cejj;
-import defpackage.cekc;
-import defpackage.cekd;
-import defpackage.cekf;
-import defpackage.celj;
-import defpackage.ceqf;
-import defpackage.ceqi;
-import defpackage.ejhf;
-import defpackage.elgy;
-import defpackage.elgz;
-import defpackage.etuw;
-import defpackage.fecj;
-import defpackage.ffgu;
-import defpackage.fqfy;
-import defpackage.fqgn;
-import defpackage.fqgy;
-import defpackage.fqhb;
-import defpackage.fqhf;
-import defpackage.fqhv;
-import defpackage.fqih;
-import defpackage.fqip;
+import defpackage.bzna;
+import defpackage.cbny;
+import defpackage.cgkb;
+import defpackage.cgkf;
+import defpackage.cgls;
+import defpackage.cglz;
+import defpackage.cgnh;
+import defpackage.cgoy;
+import defpackage.cgqg;
+import defpackage.cgrn;
+import defpackage.cgro;
+import defpackage.cgsl;
+import defpackage.cgso;
+import defpackage.cgsq;
+import defpackage.cgtj;
+import defpackage.cgtk;
+import defpackage.cgtm;
+import defpackage.cguq;
+import defpackage.cgzm;
+import defpackage.cgzp;
+import defpackage.eluo;
+import defpackage.enul;
+import defpackage.ewko;
+import defpackage.fgrc;
+import defpackage.fhvs;
+import defpackage.fszq;
+import defpackage.ftaf;
+import defpackage.ftaq;
+import defpackage.ftat;
+import defpackage.ftax;
+import defpackage.ftbn;
+import defpackage.ftbz;
+import defpackage.ftch;
 import defpackage.ig;
-import defpackage.qet;
+import defpackage.rxx;
 import j$.time.Duration;
 import j$.util.Collection;
 import j$.util.Objects;
@@ -92,45 +92,45 @@ import java.util.UUID;
 import java.util.function.IntFunction;
 import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class MobileDataPlanSettingsChimeraActivity extends qet {
-    public static final asot j = asot.b("MobileDataPlan", asej.MOBILE_DATA_PLAN);
+public class MobileDataPlanSettingsChimeraActivity extends rxx {
+    public static final ausn j = ausn.b("MobileDataPlan", auid.MOBILE_DATA_PLAN);
     private static boolean n = false;
     public float k;
-    public ceih l;
+    public cgro l;
     public boolean m;
     private boolean o = false;
     private final int p = R.layout.settings_activity;
-    private cekd q = null;
+    private cgtk q = null;
     private boolean r = false;
 
-    public static etuw a(Context context) {
-        fecj v = etuw.a.v();
-        String e = ceqi.e(context.getApplicationContext());
+    public static ewko a(Context context) {
+        fgrc v = ewko.a.v();
+        String e = cgzp.e(context.getApplicationContext());
         if (!v.b.L()) {
             v.U();
         }
-        etuw etuwVar = (etuw) v.b;
+        ewko ewkoVar = (ewko) v.b;
         e.getClass();
-        etuwVar.c = e;
+        ewkoVar.c = e;
         String string = context.getString(R.string.support_page_error_message);
         if (!v.b.L()) {
             v.U();
         }
-        etuw etuwVar2 = (etuw) v.b;
+        ewko ewkoVar2 = (ewko) v.b;
         string.getClass();
-        etuwVar2.b = string;
-        return (etuw) v.Q();
+        ewkoVar2.b = string;
+        return (ewko) v.Q();
     }
 
     private final void t(Intent intent) {
         Optional empty;
-        if (fqih.j()) {
+        if (ftbz.j()) {
             if (intent == null) {
                 empty = Optional.empty();
             } else if (intent.getExtras() == null) {
-                ((ejhf) j.i()).x("Expected intent extras field is null.");
+                ((eluo) j.i()).x("Expected intent extras field is null.");
                 empty = Optional.empty();
             } else if (intent.getExtras().containsKey("NOTIFICATION_LOGGING_CAMPAIGN_ID")) {
                 String string = intent.getExtras().getString("NOTIFICATION_LOGGING_CAMPAIGN_ID");
@@ -139,26 +139,26 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
                 empty = Optional.empty();
             }
             if (empty.isPresent()) {
-                j.f(ceqi.h()).B("ChimeraActivity sets campaignId: %s", empty.get());
+                j.f(cgzp.h()).B("ChimeraActivity sets campaignId: %s", empty.get());
                 this.l.r((String) empty.get());
             }
         }
     }
 
-    private static final boolean u(etuw etuwVar) {
-        if (etuwVar != null) {
-            return (etuwVar.b.isEmpty() && etuwVar.d.size() == 0) ? false : true;
+    private static final boolean u(ewko ewkoVar) {
+        if (ewkoVar != null) {
+            return (ewkoVar.b.isEmpty() && ewkoVar.d.size() == 0) ? false : true;
         }
         return false;
     }
 
-    public final void k(ffgu ffguVar, Bundle bundle, String str) {
-        cegz.z(this, bundle, R.id.carrier_support_page_placeholder, ffguVar, str);
+    public final void k(fhvs fhvsVar, Bundle bundle, String str) {
+        cgqg.z(this, bundle, R.id.carrier_support_page_placeholder, fhvsVar, str);
         findViewById(R.id.content_layout).setVisibility(8);
     }
 
     public final void l() {
-        cecl.c().Q(26, this.q.toString(), "R.id.error_layout", ffgu.ERROR_PAGE_HIDDEN, System.currentTimeMillis(), cekf.a());
+        cgls.c().Q(26, this.q.toString(), "R.id.error_layout", fhvs.ERROR_PAGE_HIDDEN, System.currentTimeMillis(), cgtm.a());
         findViewById(R.id.error_screen_flipper).setVisibility(8);
         findViewById(R.id.content_layout).setVisibility(0);
     }
@@ -168,20 +168,20 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
     }
 
     final void n(boolean z, boolean z2) {
-        ffgu ffguVar;
-        cecl c = cecl.c();
+        fhvs fhvsVar;
+        cgls c = cgls.c();
         Intent intent = getIntent();
         String action = intent == null ? null : intent.getAction();
         if (!z && !z2) {
-            if (fqhb.e() && this.m) {
+            if (ftat.e() && this.m) {
                 return;
             }
-            c.Q(40, null, null, ffgu.REENTER_MDP_UI_VIA_APP_PICKER, System.currentTimeMillis(), cekf.a());
+            c.Q(40, null, null, fhvs.REENTER_MDP_UI_VIA_APP_PICKER, System.currentTimeMillis(), cgtm.a());
             return;
         }
         if (action != null) {
             if (action.equals("com.google.android.gms.mobiledataplan.NOTIFICATION_TO_ACTIVITY")) {
-                int b = elgz.b(intent.getIntExtra("NOTIFICATION_LOGGING_NOTIFICATION_TYPE", 0));
+                int b = Cenum.b(intent.getIntExtra("NOTIFICATION_LOGGING_NOTIFICATION_TYPE", 0));
                 if (b == 0) {
                     throw null;
                 }
@@ -189,69 +189,69 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
                 if (i != 100) {
                     switch (i) {
                         case 1:
-                            ffguVar = ffgu.PLAN_STATUS_JUMP_TO_UI;
+                            fhvsVar = fhvs.PLAN_STATUS_JUMP_TO_UI;
                             break;
                         case 2:
-                            ffguVar = ffgu.UPSELL_OFFER_JUMP_TO_UI;
+                            fhvsVar = fhvs.UPSELL_OFFER_JUMP_TO_UI;
                             break;
                         case 3:
-                            if (!fqhv.f()) {
-                                ffguVar = ffgu.WELCOME_JUMP_TO_UI;
+                            if (!ftbn.f()) {
+                                fhvsVar = fhvs.WELCOME_JUMP_TO_UI;
                                 break;
                             } else {
-                                ffguVar = ffgu.ACCOUNT_ALERT_JUMP_TO_UI;
+                                fhvsVar = fhvs.ACCOUNT_ALERT_JUMP_TO_UI;
                                 break;
                             }
                         case 4:
-                            ffguVar = ffgu.OUT_OF_DATA_JUMP_TO_UI;
+                            fhvsVar = fhvs.OUT_OF_DATA_JUMP_TO_UI;
                             break;
                         case 5:
-                            ffguVar = ffgu.EXPIRATION_REMINDER_JUMP_TO_UI;
+                            fhvsVar = fhvs.EXPIRATION_REMINDER_JUMP_TO_UI;
                             break;
                         case 6:
-                            ffguVar = ffgu.ACCOUNT_BALANCE_JUMP_TO_UI;
+                            fhvsVar = fhvs.ACCOUNT_BALANCE_JUMP_TO_UI;
                             break;
                         case 7:
-                            ffguVar = ffgu.PURCHASE_JUMP_TO_UI;
+                            fhvsVar = fhvs.PURCHASE_JUMP_TO_UI;
                             break;
                         case 8:
-                            ffguVar = ffgu.WELCOME_JUMP_TO_UI;
+                            fhvsVar = fhvs.WELCOME_JUMP_TO_UI;
                             break;
                         case 9:
-                            ffguVar = ffgu.DAILY_UPDATE_JUMP_TO_UI;
+                            fhvsVar = fhvs.DAILY_UPDATE_JUMP_TO_UI;
                             break;
                         case 10:
-                            ffguVar = ffgu.PAYGO_JUMP_TO_UI;
+                            fhvsVar = fhvs.PAYGO_JUMP_TO_UI;
                             break;
                         default:
-                            ffguVar = ffgu.UNSPECIFIED_EVENT_CODE;
+                            fhvsVar = fhvs.UNSPECIFIED_EVENT_CODE;
                             break;
                     }
                 } else {
-                    ffguVar = ffgu.OTHER_JUMP_TO_UI;
+                    fhvsVar = fhvs.OTHER_JUMP_TO_UI;
                 }
                 if (z) {
                     if (intent.getIntExtra("NOTIFICATION_ACTION_INDEX", -1) != -1) {
-                        c.z(intent, elgy.NOTIFICATION_ACTION_TAKEN, "MDP_UiAction", ffgu.NOTIFICATION_ACTION_TAKEN);
+                        c.z(intent, enul.NOTIFICATION_ACTION_TAKEN, "MDP_UiAction", fhvs.NOTIFICATION_ACTION_TAKEN);
                     }
-                    c.z(intent, elgy.JUMP_TO_UI, "MDP_UiAction", ffguVar);
+                    c.z(intent, enul.JUMP_TO_UI, "MDP_UiAction", fhvsVar);
                 }
                 long longExtra = intent.getLongExtra("NOTIFICATION_LOGGING_NOTIFICATION_ID", 0L);
-                c.P(true != z ? 41 : 17, Long.toString(longExtra), Long.toString(longExtra), Long.valueOf(longExtra), z ? ffgu.ENTER_MDP_UI_VIA_NOTIFICATION : ffgu.REENTER_MDP_UI_VIA_NOTIFICATION, System.currentTimeMillis(), cekf.a());
+                c.P(true != z ? 41 : 17, Long.toString(longExtra), Long.toString(longExtra), Long.valueOf(longExtra), z ? fhvs.ENTER_MDP_UI_VIA_NOTIFICATION : fhvs.REENTER_MDP_UI_VIA_NOTIFICATION, System.currentTimeMillis(), cgtm.a());
                 return;
             }
             if (action.equals("com.google.android.gms.mobiledataplan.ui.SETTING_TO_ACTIVITY")) {
-                c.Q(16, null, null, ffgu.ENTER_MDP_UI_VIA_MENU, System.currentTimeMillis(), cekf.a());
+                c.Q(16, null, null, fhvs.ENTER_MDP_UI_VIA_MENU, System.currentTimeMillis(), cgtm.a());
                 return;
             } else if (action.equals("com.google.android.gms.mobiledataplan.ui.DETAIL_SETTINGS_TO_MAIN")) {
-                c.Q(73, null, null, ffgu.ENTER_MDP_UI_VIA_SETTINGS, System.currentTimeMillis(), cekf.a());
+                c.Q(73, null, null, fhvs.ENTER_MDP_UI_VIA_SETTINGS, System.currentTimeMillis(), cgtm.a());
             }
         }
         Uri referrer = getReferrer();
-        c.Q(true != z ? 42 : 18, referrer != null ? referrer.toString() : "Unknown Calling Package", null, z ? ffgu.ENTER_MDP_UI_VIA_DEEP_LINK : ffgu.REENTER_MDP_UI_VIA_DEEP_LINK, System.currentTimeMillis(), cekf.a());
+        c.Q(true != z ? 42 : 18, referrer != null ? referrer.toString() : "Unknown Calling Package", null, z ? fhvs.ENTER_MDP_UI_VIA_DEEP_LINK : fhvs.REENTER_MDP_UI_VIA_DEEP_LINK, System.currentTimeMillis(), cgtm.a());
     }
 
-    public final void o(cekd cekdVar) {
+    public final void o(cgtk cgtkVar) {
         Button button;
         TextView textView;
         TextView textView2;
@@ -269,10 +269,10 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
             onBackPressed();
         }
         findViewById(R.id.content_layout).setVisibility(8);
-        this.q = cekdVar;
+        this.q = cgtkVar;
         viewFlipper.setVisibility(0);
         this.l.t(false);
-        celj.a();
+        cguq.a();
         if (getResources().getConfiguration().orientation == 2) {
             button = (Button) findViewById(R.id.refresh_button_landscape);
             textView = (TextView) findViewById(R.id.error_title_landscape);
@@ -292,20 +292,20 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
         TextView textView4 = textView;
         Button button2 = button;
         final String g = this.l.g();
-        textView4.setText(getString(cekdVar.g, new Object[]{g}));
-        if (fqih.m() && cekdVar == cekd.UNSUPPORTED && g != null && Build.VERSION.SDK_INT >= 29) {
+        textView4.setText(getString(cgtkVar.g, new Object[]{g}));
+        if (ftbz.m() && cgtkVar == cgtk.UNSUPPORTED && g != null && Build.VERSION.SDK_INT >= 29) {
             try {
-                if (Duration.ofMillis(System.currentTimeMillis()).toSeconds() >= bxek.a(AppContextProvider.a(), "mobiledataplan", "ESIM_SHARED_PREFS", 0).b("ESIM_LAST_SUCCESS_TIMESTAMP", 0L) + 86400) {
-                    ((ejhf) j.h()).B("Pending valid data plan response for eSIM subscriber of carrier: %s", g);
+                if (Duration.ofMillis(System.currentTimeMillis()).toSeconds() >= bzna.a(AppContextProvider.a(), "mobiledataplan", "ESIM_SHARED_PREFS", 0).b("ESIM_LAST_SUCCESS_TIMESTAMP", 0L) + 86400) {
+                    ((eluo) j.h()).B("Pending valid data plan response for eSIM subscriber of carrier: %s", g);
                 } else {
-                    boolean anyMatch = Collection.EL.stream(SubscriptionManager.from(this).getActiveSubscriptionInfoList()).anyMatch(new Predicate() { // from class: cejd
+                    boolean anyMatch = Collection.EL.stream(SubscriptionManager.from(this).getActiveSubscriptionInfoList()).anyMatch(new Predicate() { // from class: cgsk
                         public final /* synthetic */ Predicate and(Predicate predicate) {
                             return Predicate$CC.$default$and(this, predicate);
                         }
 
                         @Override // java.util.function.Predicate
                         /* renamed from: negate */
-                        public final /* synthetic */ Predicate mo463negate() {
+                        public final /* synthetic */ Predicate mo478negate() {
                             return Predicate$CC.$default$negate(this);
                         }
 
@@ -318,7 +318,7 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
                         public final boolean test(Object obj) {
                             boolean isEmbedded;
                             SubscriptionInfo subscriptionInfo = (SubscriptionInfo) obj;
-                            asot asotVar = MobileDataPlanSettingsChimeraActivity.j;
+                            ausn ausnVar = MobileDataPlanSettingsChimeraActivity.j;
                             isEmbedded = subscriptionInfo.isEmbedded();
                             if (isEmbedded) {
                                 return Objects.equals(subscriptionInfo.getCarrierName().toString(), g);
@@ -326,66 +326,66 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
                             return false;
                         }
                     });
-                    asot asotVar = j;
-                    ((ejhf) asotVar.h()).Q("eSIM subscriber of valid carrier %s: %s", g, anyMatch);
+                    ausn ausnVar = j;
+                    ((eluo) ausnVar.h()).Q("eSIM subscriber of valid carrier %s: %s", g, anyMatch);
                     if (anyMatch) {
-                        ((ejhf) asotVar.j()).B("Unsupported plan error with eSIM carrier: %s", g);
+                        ((eluo) ausnVar.j()).B("Unsupported plan error with eSIM carrier: %s", g);
                         textView4.setText(getString(R.string.esim_post_activation_message, new Object[]{g}));
                         imageView4.setImageResource(R.drawable.check_circle);
                     }
                 }
             } catch (IOException e) {
-                ((ejhf) ((ejhf) j.j()).s(e)).x("KeyValuePreferences failed to fetch eSIM status.");
+                ((eluo) ((eluo) j.j()).s(e)).x("KeyValuePreferences failed to fetch eSIM status.");
             }
         }
-        if (cekdVar != cekd.OPTED_OUT) {
-            int i = cekdVar.h;
+        if (cgtkVar != cgtk.OPTED_OUT) {
+            int i = cgtkVar.h;
             if (i == 0) {
                 textView3.setVisibility(8);
             } else {
                 textView3.setVisibility(0);
-                if (TextUtils.isEmpty(g) && fqip.a.a().d()) {
-                    textView3.setText(cekdVar.k);
+                if (TextUtils.isEmpty(g) && ftch.a.lK().d()) {
+                    textView3.setText(cgtkVar.k);
                 } else {
                     textView3.setText(getString(i, new Object[]{g}));
                 }
             }
-            imageView4.setVisibility(true != cekdVar.l ? 8 : 0);
+            imageView4.setVisibility(true != cgtkVar.l ? 8 : 0);
             imageView3.setVisibility(8);
-            int i2 = cekdVar.i;
+            int i2 = cgtkVar.i;
             if (i2 == 0) {
                 button2.setVisibility(8);
             } else {
                 button2.setVisibility(0);
                 button2.setText(i2);
-                button2.setOnClickListener(new ceig(this.l));
+                button2.setOnClickListener(new cgrn(this.l));
             }
             m();
-            cecl.c().Q(43, "handledError", null, ffgu.FINISH_UI_AFTER_USER_TRIGGER, System.currentTimeMillis(), cekf.a());
+            cgls.c().Q(43, "handledError", null, fhvs.FINISH_UI_AFTER_USER_TRIGGER, System.currentTimeMillis(), cgtm.a());
             return;
         }
-        if (fqih.v()) {
+        if (ftbz.v()) {
             textView4.setText(getString(R.string.t_mobile_opted_out_title));
-            Object g2 = fqgn.g();
-            Object h = fqgn.h();
-            Object f = fqgn.f();
-            fqgn fqgnVar = fqgn.a;
-            textView3.setText(Html.fromHtml(getString(R.string.t_mobile_opted_out_text, new Object[]{g, g2, h, f, fqgnVar.a().h(), fqgnVar.a().g()})));
+            Object g2 = ftaf.g();
+            Object h = ftaf.h();
+            Object f = ftaf.f();
+            ftaf ftafVar = ftaf.a;
+            textView3.setText(Html.fromHtml(getString(R.string.t_mobile_opted_out_text, new Object[]{g, g2, h, f, ftafVar.lK().h(), ftafVar.lK().g()})));
         } else {
-            textView3.setText(Html.fromHtml(getString(cekdVar.h, new Object[]{g, fqgn.g(), fqgn.h(), fqgn.f()})));
+            textView3.setText(Html.fromHtml(getString(cgtkVar.h, new Object[]{g, ftaf.g(), ftaf.h(), ftaf.f()})));
         }
         textView3.setMovementMethod(LinkMovementMethod.getInstance());
         button2.setVisibility(0);
-        button2.setText(cekdVar.i);
-        button2.setOnClickListener(new cejj(this.l));
-        ceau c = ceau.c();
+        button2.setText(cgtkVar.i);
+        button2.setOnClickListener(new cgsq(this.l));
+        cgkb c = cgkb.c();
         MdpCarrierPlanIdResponse mdpCarrierPlanIdResponse = this.l.q;
         Bitmap bitmap = null;
         Long valueOf = mdpCarrierPlanIdResponse != null ? Long.valueOf(mdpCarrierPlanIdResponse.e) : null;
         if (valueOf == null) {
-            valueOf = ceau.c().p(ceqf.g(AppContextProvider.a()));
+            valueOf = cgkb.c().p(cgzm.g(AppContextProvider.a()));
         }
-        ceay a = c.d.a(valueOf);
+        cgkf a = c.d.a(valueOf);
         if (a != null && (asByteArray = a.a.getAsByteArray("carrier_logo")) != null) {
             bitmap = BitmapFactory.decodeByteArray(asByteArray, 0, asByteArray.length);
         }
@@ -396,11 +396,11 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
             imageView3.setVisibility(8);
         }
         imageView4.setVisibility(8);
-        cecl.c().Q(69, null, "R.id.error_layout", ffgu.OPT_OUT_PAGE_SHOWN, System.currentTimeMillis(), cekf.a());
-        cecl.c().Q(43, "handledError", null, ffgu.FINISH_UI_AFTER_USER_TRIGGER, System.currentTimeMillis(), cekf.a());
+        cgls.c().Q(69, null, "R.id.error_layout", fhvs.OPT_OUT_PAGE_SHOWN, System.currentTimeMillis(), cgtm.a());
+        cgls.c().Q(43, "handledError", null, fhvs.FINISH_UI_AFTER_USER_TRIGGER, System.currentTimeMillis(), cgtm.a());
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i != 2333) {
@@ -411,21 +411,21 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
             return;
         }
         if (i2 == -1) {
-            cekc.c(this.l, true);
+            cgtj.c(this.l, true);
         } else {
-            cekc.c(this.l, false);
-            p(new aqxe(new Status(27023)));
+            cgtj.c(this.l, false);
+            p(new aszt(new Status(27023)));
         }
     }
 
-    @Override // defpackage.qet, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onConfigurationChanged(Configuration configuration) {
         boolean isInMultiWindowMode;
         super.onConfigurationChanged(configuration);
         if (Build.VERSION.SDK_INT > 24 && !r()) {
             isInMultiWindowMode = getContainerActivity().isInMultiWindowMode();
             if (isInMultiWindowMode) {
-                if (fqip.a.a().h()) {
+                if (ftch.a.lK().h()) {
                     recreate();
                     return;
                 } else {
@@ -438,33 +438,33 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
         if (r()) {
             o(this.q);
         }
-        ceih ceihVar = this.l;
-        if (ceihVar.f == null) {
+        cgro cgroVar = this.l;
+        if (cgroVar.f == null) {
             return;
         }
-        ceihVar.m.o();
+        cgroVar.m.o();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        ceih ceihVar;
+        cgro cgroVar;
         Activity containerActivity;
         super.onCreate(bundle);
         setTitle(R.string.mobile_data_plan);
         setContentView(this.p);
-        ig hy = hy();
-        hy.q(4, 4);
-        hy.o(true);
+        ig hO = hO();
+        hO.q(4, 4);
+        hO.o(true);
         if (Build.VERSION.SDK_INT > 25) {
-            if (fqip.j()) {
-                hy.j(new ColorDrawable(getResources().getColor(R.color.carrier_header_background)));
+            if (ftch.j()) {
+                hO.j(new ColorDrawable(getResources().getColor(R.color.carrier_header_background)));
             } else {
-                hy.j(new ColorDrawable(getResources().getColor(R.color.top_entry_grey)));
+                hO.j(new ColorDrawable(getResources().getColor(R.color.top_entry_grey)));
             }
         }
-        this.k = hy.a();
-        hy.t(0.0f);
-        if (fqih.m() && !this.r) {
+        this.k = hO.a();
+        hO.t(0.0f);
+        if (ftbz.m() && !this.r) {
             setTheme(R.style.Theme_MobileDataPlan_DefaultGoogleMaterial);
             boolean q = q(getIntent());
             this.r = !q;
@@ -472,52 +472,51 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
                 return;
             }
         }
-        if (!fqhf.S()) {
-            ((ejhf) j.j()).x("Mobiledataplan's Settings is not enabled in this device yet.");
+        if (!ftax.Q()) {
+            ((eluo) j.j()).x("Mobiledataplan's Settings is not enabled in this device yet.");
             finish();
             return;
         }
-        if (ceqi.i(this)) {
+        if (cgzp.i(this)) {
             finish();
             return;
         }
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.dataplan_recyclerview);
         recyclerView.aj(new LinearLayoutManager());
-        recyclerView.z(new cejh(this, hy));
+        recyclerView.z(new cgso(this, hO));
         this.m = false;
         n = false;
-        if (fqip.g()) {
+        if (ftch.g()) {
             try {
-                ceih.d();
-                ((ejhf) j.h()).x("GlobalStateHelper was NOT null, calling destroyInstance() first to create new GlobalStateHelper.");
-                ceih.l();
+                cgro.d();
+                ((eluo) j.h()).x("GlobalStateHelper was NOT null, calling destroyInstance() first to create new GlobalStateHelper.");
+                cgro.l();
             } catch (IllegalStateException unused) {
             }
         }
-        cekf.b();
-        synchronized (ceih.c) {
-            ceih ceihVar2 = ceih.d;
-            if (ceihVar2 != null) {
-                throw new IllegalStateException("createInstance called when instance != null! Instance: " + ceihVar2.toString());
+        cgtm.b();
+        synchronized (cgro.c) {
+            cgro cgroVar2 = cgro.d;
+            if (cgroVar2 != null) {
+                throw new IllegalStateException("createInstance called when instance != null! Instance: " + cgroVar2.toString());
             }
-            ceih.d = new ceih(this);
-            ceihVar = ceih.d;
+            cgro.d = new cgro(this);
+            cgroVar = cgro.d;
         }
-        this.l = ceihVar;
+        this.l = cgroVar;
         t(getIntent());
         n(true, this.o);
-        if (fqih.w()) {
+        if (ftbz.w()) {
             s(getIntent());
         }
-        if (!fqgy.a.a().b() || (containerActivity = getContainerActivity()) == null) {
+        ftaq ftaqVar = ftaq.a;
+        if (!ftaqVar.lK().b() || (containerActivity = getContainerActivity()) == null) {
             return;
         }
-        asej asejVar = asej.MOBILE_DATA_PLAN;
-        fqgy fqgyVar = fqgy.a;
-        bzfh.a(containerActivity, asejVar, fqgyVar.a().a(), fqgyVar.a().c());
+        cbny.a(containerActivity, auid.MOBILE_DATA_PLAN, ftaqVar.lK().a(), ftaqVar.lK().c());
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
         if (findViewById(R.id.support_channel_page_layout) != null) {
             return false;
@@ -526,36 +525,36 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
         return true;
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
-        if (this.l != null && (!fqip.g() || this.l == ceih.d())) {
-            cecl.c().Q(37, null, null, ffgu.TERMINATE_MDP_UI, System.currentTimeMillis(), cekf.a());
-            ceih.l();
-            cekf.a = null;
+        if (this.l != null && (!ftch.g() || this.l == cgro.d())) {
+            cgls.c().Q(37, null, null, fhvs.TERMINATE_MDP_UI, System.currentTimeMillis(), cgtm.a());
+            cgro.l();
+            cgtm.a = null;
         }
-        fqfy.a.a().k();
+        fszq.a.lK().k();
         super.onDestroy();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         this.o = true;
         setIntent(intent);
-        if (fqih.m()) {
+        if (ftbz.m()) {
             boolean q = q(intent);
             this.r = !q;
             if (!q) {
                 return;
             }
         }
-        if (fqih.w()) {
+        if (ftbz.w()) {
             s(intent);
         }
         t(intent);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         int itemId = menuItem.getItemId();
         if (itemId == 16908332) {
@@ -564,47 +563,47 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
         }
         Bitmap bitmap = null;
         if (itemId == R.id.feedback) {
-            aqxd aqxdVar = bahh.a;
-            aqxo aqxoVar = new aqxo((Context) this, (int[][]) null);
+            aszs aszsVar = bcld.a;
+            atad atadVar = new atad((Context) this, (int[][]) null);
             try {
                 View rootView = getWindow().getDecorView().getRootView();
                 Bitmap createBitmap = Bitmap.createBitmap(rootView.getWidth(), rootView.getHeight(), Bitmap.Config.RGB_565);
                 rootView.draw(new Canvas(createBitmap));
                 bitmap = createBitmap;
             } catch (IllegalArgumentException e) {
-                ((ejhf) ((ejhf) j.j()).s(e)).x("MobileDataPlan feedback got screenshot failed!");
+                ((eluo) ((eluo) j.j()).s(e)).x("MobileDataPlan feedback got screenshot failed!");
             }
-            bajh bajhVar = new bajh(this);
-            bajhVar.a = bitmap;
-            bajhVar.e = "com.google.android.gms.mobiledataplan.USER_INITIATED_FEEDBACK_REPORT";
+            bcnd bcndVar = new bcnd(this);
+            bcndVar.a = bitmap;
+            bcndVar.e = "com.google.android.gms.mobiledataplan.USER_INITIATED_FEEDBACK_REPORT";
             MdpCarrierPlanIdResponse mdpCarrierPlanIdResponse = this.l.q;
             if (mdpCarrierPlanIdResponse == null) {
-                aqxoVar.aa(bajhVar.a());
+                atadVar.aa(bcndVar.a());
             } else {
-                bajhVar.c("carrier ID", Long.toString(mdpCarrierPlanIdResponse.e));
+                bcndVar.c("carrier ID", Long.toString(mdpCarrierPlanIdResponse.e));
                 String str = mdpCarrierPlanIdResponse.a;
                 if (!TextUtils.isEmpty(str)) {
-                    bajhVar.c("CPID", str);
+                    bcndVar.c("CPID", str);
                 }
-                aqxoVar.aa(bajhVar.a());
+                atadVar.aa(bcndVar.a());
             }
             return true;
         }
         if (itemId == R.id.refresh) {
-            cecl.c().Q(13, "refresh_button", "R.id.refresh", ffgu.REFRESH_DATA_PLAN, System.currentTimeMillis(), cekf.a());
+            cgls.c().Q(13, "refresh_button", "R.id.refresh", fhvs.REFRESH_DATA_PLAN, System.currentTimeMillis(), cgtm.a());
             this.l.q(false);
             return true;
         }
         if (itemId == R.id.stop_syncing) {
-            new AlertDialog.Builder(this).setTitle(R.string.stop_syncing_confirm_dialog_title).setMessage(getString(R.string.stop_syncing_confirm_dialog_message, new Object[]{this.l.g()})).setPositiveButton(R.string.stop_syncing_confirm_dialog_positive_button, new DialogInterface.OnClickListener() { // from class: cejc
+            new AlertDialog.Builder(this).setTitle(R.string.stop_syncing_confirm_dialog_title).setMessage(getString(R.string.stop_syncing_confirm_dialog_message, new Object[]{this.l.g()})).setPositiveButton(R.string.stop_syncing_confirm_dialog_positive_button, new DialogInterface.OnClickListener() { // from class: cgsj
                 @Override // android.content.DialogInterface.OnClickListener
                 public final void onClick(DialogInterface dialogInterface, int i) {
-                    cecl.c().Q(31, null, null, ffgu.CLICK_STOP_SYNCING_PLAN, System.currentTimeMillis(), cekf.a());
+                    cgls.c().Q(31, null, null, fhvs.CLICK_STOP_SYNCING_PLAN, System.currentTimeMillis(), cgtm.a());
                     MobileDataPlanSettingsChimeraActivity mobileDataPlanSettingsChimeraActivity = MobileDataPlanSettingsChimeraActivity.this;
-                    if (fqhf.C()) {
-                        cekc.c(mobileDataPlanSettingsChimeraActivity.l, false);
+                    if (ftax.C()) {
+                        cgtj.c(mobileDataPlanSettingsChimeraActivity.l, false);
                     }
-                    mobileDataPlanSettingsChimeraActivity.p(new aqxe(new Status(27023)));
+                    mobileDataPlanSettingsChimeraActivity.p(new aszt(new Status(27023)));
                 }
             }).setNegativeButton(R.string.common_cancel, (DialogInterface.OnClickListener) null).create().show();
             return true;
@@ -614,23 +613,23 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
                 return super.onOptionsItemSelected(menuItem);
             }
             Intent className = new Intent("com.google.android.gms.mobiledataplan.ui.SETTINGS").setClassName(this, "com.google.android.gms.mobiledataplan.ui.MobileDataPlanDetailActivity");
-            if (fqhb.e() && cekf.a() != null) {
-                className.putExtra("EventFlowId", cekf.a());
+            if (ftat.e() && cgtm.a() != null) {
+                className.putExtra("EventFlowId", cgtm.a());
             }
             className.putExtra("ComeFrom", "com.google.android.gms/com.google.android.gms.mobiledataplan.ui.MobileDataPlanSettingsActivity");
             startActivityForResult(className, 2334);
             return true;
         }
-        cecl.c().Q(33, menuItem.getTitle().toString(), "R.id.support", ffgu.CLICK_CARRIER_SUPPORT, System.currentTimeMillis(), cekf.a());
-        etuw e2 = ceau.c().e(ceqf.g(getApplicationContext()));
+        cgls.c().Q(33, menuItem.getTitle().toString(), "R.id.support", fhvs.CLICK_CARRIER_SUPPORT, System.currentTimeMillis(), cgtm.a());
+        ewko e2 = cgkb.c().e(cgzm.g(getApplicationContext()));
         if (!u(e2)) {
-            ((ejhf) j.j()).x("Trying to launch support page when there is no support object!");
+            ((eluo) j.j()).x("Trying to launch support page when there is no support object!");
             e2 = a(this);
         }
         bp bpVar = new bp(getSupportFragmentManager());
-        cefr cefrVar = new cefr();
-        cefrVar.a = e2;
-        bpVar.F(R.id.carrier_support_page_placeholder, cefrVar);
+        cgoy cgoyVar = new cgoy();
+        cgoyVar.a = e2;
+        bpVar.F(R.id.carrier_support_page_placeholder, cgoyVar);
         bpVar.j = FragmentTransaction.TRANSIT_FRAGMENT_FADE;
         bpVar.w(null);
         bpVar.a();
@@ -641,15 +640,15 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         if (this.r) {
-            j.f(ceqi.h()).x("Skipping onPause after eSIM started.");
+            j.f(cgzp.h()).x("Skipping onPause after eSIM started.");
             return;
         }
-        if (!fqhb.e() || !this.m) {
-            cecl.c().Q(15, null, null, ffgu.EXIT_MDP_UI, System.currentTimeMillis(), cekf.a());
+        if (!ftat.e() || !this.m) {
+            cgls.c().Q(15, null, null, fhvs.EXIT_MDP_UI, System.currentTimeMillis(), cgtm.a());
         }
         this.l.B = false;
         if (this.m) {
@@ -660,9 +659,9 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
 
     /* JADX WARN: Code restructure failed: missing block: B:37:0x00af, code lost:
     
-        if (r5 == defpackage.ffgs.OPT_IN) goto L37;
+        if (r5 == defpackage.fhvq.OPT_IN) goto L37;
      */
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -673,22 +672,22 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
             boolean r0 = r8.r
             r1 = 0
             if (r0 == 0) goto L15
-            asot r9 = com.google.android.gms.mobiledataplan.ui.MobileDataPlanSettingsChimeraActivity.j
-            java.util.logging.Level r0 = defpackage.ceqi.h()
-            ejhf r9 = r9.f(r0)
+            ausn r9 = com.google.android.gms.mobiledataplan.ui.MobileDataPlanSettingsChimeraActivity.j
+            java.util.logging.Level r0 = defpackage.cgzp.h()
+            eluo r9 = r9.f(r0)
             java.lang.String r0 = "Skipping onPrepareOptionsMenu after eSIM started."
             r9.x(r0)
             return r1
         L15:
             android.content.Context r0 = r8.getApplicationContext()
-            java.lang.String r0 = defpackage.ceqf.g(r0)
+            java.lang.String r0 = defpackage.cgzm.g(r0)
             r8.r()
-            ceau r2 = defpackage.ceau.c()
+            cgkb r2 = defpackage.cgkb.c()
             r2.F(r0)
-            defpackage.fqgb.g()
-            ceau r2 = defpackage.ceau.c()
+            defpackage.fszt.g()
+            cgkb r2 = defpackage.cgkb.c()
             r2.e(r0)
-            ceih r2 = r8.l
+            cgro r2 = r8.l
             r2.g()
             r2 = r1
         L37:
@@ -697,17 +696,17 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
             if (r2 >= r3) goto Lf1
             android.view.MenuItem r3 = r9.getItem(r2)
             java.lang.CharSequence r5 = r3.getTitle()
-            r6 = 2132091512(0x7f152278, float:1.9823394E38)
+            r6 = 2132091651(0x7f152303, float:1.9823676E38)
             java.lang.String r6 = r8.getString(r6)
             if (r5 != r6) goto L72
             boolean r5 = r8.r()
             if (r5 != 0) goto L6c
-            ceau r5 = defpackage.ceau.c()
+            cgkb r5 = defpackage.cgkb.c()
             boolean r5 = r5.F(r0)
             if (r5 == 0) goto L6c
-            boolean r5 = defpackage.fqhf.C()
+            boolean r5 = defpackage.ftax.C()
             if (r5 == 0) goto L6c
-            boolean r5 = defpackage.ceau.u()
+            boolean r5 = defpackage.cgkb.u()
             if (r5 != 0) goto L6c
             goto L6d
         L6c:
@@ -717,41 +716,41 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
             goto Led
         L72:
             java.lang.CharSequence r5 = r3.getTitle()
-            r6 = 2132091581(0x7f1522bd, float:1.9823534E38)
+            r6 = 2132091755(0x7f15236b, float:1.9823887E38)
             java.lang.String r7 = r8.getString(r6)
             if (r5 != r7) goto Led
             boolean r5 = r8.r()
             if (r5 != 0) goto Lea
-            ceau r5 = defpackage.ceau.c()
+            cgkb r5 = defpackage.cgkb.c()
             boolean r5 = r5.F(r0)
             if (r5 != 0) goto Lb1
-            ceau r5 = defpackage.ceau.c()
-            boolean r7 = defpackage.ceau.u()
+            cgkb r5 = defpackage.cgkb.c()
+            boolean r7 = defpackage.cgkb.u()
             if (r7 == 0) goto Lea
-            fehc r7 = r5.l()
+            fgvv r7 = r5.l()
             if (r7 == 0) goto Lea
-            fehc r5 = r5.l()
+            fgvv r5 = r5.l()
             int r5 = r5.g
-            ffgs r5 = defpackage.ffgs.b(r5)
+            fhvq r5 = defpackage.fhvq.b(r5)
             if (r5 != 0) goto Lad
-            ffgs r5 = defpackage.ffgs.UNRECOGNIZED
+            fhvq r5 = defpackage.fhvq.UNRECOGNIZED
         Lad:
-            ffgs r7 = defpackage.ffgs.OPT_IN
+            fhvq r7 = defpackage.fhvq.OPT_IN
             if (r5 != r7) goto Lea
         Lb1:
-            boolean r5 = defpackage.fqgb.g()
+            boolean r5 = defpackage.fszt.g()
             if (r5 == 0) goto Lea
-            ceau r5 = defpackage.ceau.c()
-            etuw r5 = r5.e(r0)
+            cgkb r5 = defpackage.cgkb.c()
+            ewko r5 = r5.e(r0)
             boolean r5 = u(r5)
             if (r5 == 0) goto Lea
-            ceih r5 = r8.l
+            cgro r5 = r8.l
             java.lang.String r5 = r5.g()
             boolean r5 = r5.isEmpty()
             if (r5 != 0) goto Lea
             r3.setVisible(r4)
             java.lang.String r5 = r8.getString(r6)
-            ceih r6 = r8.l
+            cgro r6 = r8.l
             java.lang.String r6 = r6.g()
             java.lang.Object[] r4 = new java.lang.Object[r4]
             r4[r1] = r6
@@ -769,35 +768,35 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.mobiledataplan.ui.MobileDataPlanSettingsChimeraActivity.onPrepareOptionsMenu(android.view.Menu):boolean");
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onRestart() {
         super.onRestart();
         if (this.r) {
-            j.f(ceqi.h()).x("Recreating activity in onRestart after eSIM started.");
+            j.f(cgzp.h()).x("Recreating activity in onRestart after eSIM started.");
             recreate();
             return;
         }
-        if (n && fqhb.m()) {
-            cekf.b();
+        if (n && ftat.l()) {
+            cgtm.b();
             n = false;
         }
         n(false, this.o);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         if (this.r) {
-            j.f(ceqi.h()).x("Skipping onResume after eSIM started.");
+            j.f(cgzp.h()).x("Skipping onResume after eSIM started.");
             return;
         }
-        if (n && fqhb.m()) {
-            cekf.b();
+        if (n && ftat.l()) {
+            cgtm.b();
             n = false;
         }
         this.l.B = true;
         this.o = false;
-        new cecs().m();
+        new cglz().m();
         if (!this.m && !r()) {
             this.l.q(findViewById(R.id.progress_loader).getVisibility() == 0);
         }
@@ -805,10 +804,10 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
     }
 
     public final void p(Exception exc) {
-        cecl.c().Q(14, null, null, ffgu.REFRESH_FAILED, System.currentTimeMillis(), cekf.a());
-        cekd a = cekd.a(exc);
-        ((ejhf) j.f(ceqi.h()).s(exc)).B("Showing error page for error message %s", a);
-        cecl.c().Q(25, a.toString(), "R.id.error_layout", ffgu.ERROR_PAGE_SHOWN, System.currentTimeMillis(), cekf.a());
+        cgls.c().Q(14, null, null, fhvs.REFRESH_FAILED, System.currentTimeMillis(), cgtm.a());
+        cgtk a = cgtk.a(exc);
+        ((eluo) j.f(cgzp.h()).s(exc)).B("Showing error page for error message %s", a);
+        cgls.c().Q(25, a.toString(), "R.id.error_layout", fhvs.ERROR_PAGE_SHOWN, System.currentTimeMillis(), cgtm.a());
         o(a);
     }
 
@@ -821,30 +820,30 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
             return true;
         }
         Uri data = intent.getData();
-        asot asotVar = j;
-        ((ejhf) asotVar.h()).B("uri %s", action);
+        ausn ausnVar = j;
+        ((eluo) ausnVar.h()).B("uri %s", action);
         if (data == null) {
-            ((ejhf) asotVar.j()).x("No URI passed in through deeplink intent");
+            ((eluo) ausnVar.j()).x("No URI passed in through deeplink intent");
             return true;
         }
         List<String> pathSegments = data.getPathSegments();
         if (pathSegments.size() != 2) {
-            ((ejhf) asotVar.h()).B("eSIM single path segment: %s", pathSegments.get(0));
+            ((eluo) ausnVar.h()).B("eSIM single path segment: %s", pathSegments.get(0));
             return true;
         }
         String str = pathSegments.get(0);
-        ((ejhf) asotVar.h()).B("eSIM subpath segment : %s", str);
+        ((eluo) ausnVar.h()).B("eSIM subpath segment : %s", str);
         if (!str.equals("esim")) {
             return true;
         }
         try {
             long parseLong = Long.parseLong(pathSegments.get(1));
             Long valueOf = Long.valueOf(parseLong);
-            fqih fqihVar = fqih.a;
-            if (!fqihVar.a().b().b.contains(valueOf)) {
+            ftbz ftbzVar = ftbz.a;
+            if (!ftbzVar.lK().b().b.contains(valueOf)) {
                 throw new IllegalArgumentException("Invalid carrier id passed into eSIM flow");
             }
-            ((ejhf) asotVar.h()).B("eSIM flow launched with carrier: %d", valueOf);
+            ((eluo) ausnVar.h()).B("eSIM flow launched with carrier: %d", valueOf);
             valueOf.getClass();
             Optional ofNullable = Optional.ofNullable(data.getQuery());
             String uuid = UUID.randomUUID().toString();
@@ -856,10 +855,10 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
             if (ofNullable.isPresent()) {
                 String str2 = (String) ofNullable.get();
                 UrlQuerySanitizer urlQuerySanitizer = new UrlQuerySanitizer();
-                urlQuerySanitizer.registerParameters((String[]) Collection.EL.stream(fqihVar.a().c().b).toArray(new IntFunction() { // from class: cejg
+                urlQuerySanitizer.registerParameters((String[]) Collection.EL.stream(ftbzVar.lK().c().b).toArray(new IntFunction() { // from class: cgsn
                     @Override // java.util.function.IntFunction
                     public final Object apply(int i) {
-                        asot asotVar2 = MobileDataPlanSettingsChimeraActivity.j;
+                        ausn ausnVar2 = MobileDataPlanSettingsChimeraActivity.j;
                         return new String[i];
                     }
                 }), UrlQuerySanitizer.getUrlLegal());
@@ -872,116 +871,116 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
                     }
                 }
                 addFlags.putExtra("esim_entry_tags", bundle);
-                if (fqih.r()) {
+                if (ftbz.r()) {
                     empty = Optional.ofNullable(bundle.getString("plan_segment_id"));
                     empty2 = Optional.ofNullable(bundle.getString("plan_subsegment_id"));
                 }
             }
             Optional optional = empty;
             Optional optional2 = empty2;
-            cecl.c().r(ffgu.ESIM_FLOW_STARTED, uuid, optional, optional2, parseLong);
-            if (Build.VERSION.SDK_INT >= 29 && fqih.m()) {
+            cgls.c().r(fhvs.ESIM_FLOW_STARTED, uuid, optional, optional2, parseLong);
+            if (Build.VERSION.SDK_INT >= 29 && ftbz.m()) {
                 Long valueOf2 = Long.valueOf(parseLong);
                 if (uuid == null) {
                     throw new IllegalArgumentException("Gcore eSIM Registration arguments are not set properly");
                 }
                 valueOf2.getClass();
-                final ceea ceeaVar = new ceea(this, parseLong, uuid);
-                cecl.c().q(ffgu.ESIM_CPID_REGISTER_REQUEST, uuid, optional, optional2, parseLong, 0L);
-                final ceje cejeVar = new ceje(this, uuid, optional, optional2, parseLong, addFlags);
-                new asmf(1, 9).execute(new Runnable() { // from class: cedz
+                final cgnh cgnhVar = new cgnh(this, parseLong, uuid);
+                cgls.c().q(fhvs.ESIM_CPID_REGISTER_REQUEST, uuid, optional, optional2, parseLong, 0L);
+                final cgsl cgslVar = new cgsl(this, uuid, optional, optional2, parseLong, addFlags);
+                new aupz(1, 9).execute(new Runnable() { // from class: cgng
                     @Override // java.lang.Runnable
                     public final void run() {
-                        final cefn ceflVar;
-                        asot asotVar2 = ceea.a;
-                        ejhf f = asotVar2.f(ceqi.h());
-                        ceea ceeaVar2 = ceea.this;
-                        long j2 = ceeaVar2.d;
+                        final cgou cgosVar;
+                        ausn ausnVar2 = cgnh.a;
+                        eluo f = ausnVar2.f(cgzp.h());
+                        cgnh cgnhVar2 = cgnh.this;
+                        long j2 = cgnhVar2.d;
                         Long valueOf3 = Long.valueOf(j2);
-                        Boolean valueOf4 = Boolean.valueOf(fqhf.G());
-                        String str3 = ceeaVar2.e;
+                        Boolean valueOf4 = Boolean.valueOf(ftax.G());
+                        String str3 = cgnhVar2.e;
                         f.T("Exec GcoreEsimRegister. req: <%s, %s> gcm:%b", valueOf3, str3, valueOf4);
-                        if (fqih.m()) {
-                            Context context = ceeaVar2.b;
-                            String c = cecb.a().c(context);
-                            ((ejhf) asotVar2.h()).B("eSIM started with GCM token: %s", c);
+                        if (ftbz.m()) {
+                            Context context = cgnhVar2.b;
+                            String c = cgli.a().c(context);
+                            ((eluo) ausnVar2.h()).B("eSIM started with GCM token: %s", c);
                             if (TextUtils.isEmpty(c)) {
-                                ((ejhf) asotVar2.j()).x("Unable to get a GCM token for eSIM.");
+                                ((eluo) ausnVar2.j()).x("Unable to get a GCM token for eSIM.");
                                 new IllegalStateException("Unable to get a GCM token.");
-                                ceflVar = new cefl();
+                                cgosVar = new cgos();
                             } else {
-                                cedb cedbVar = new cedb(context, fqhf.u(), ceeaVar2.c, (int) fqhf.f());
+                                cgmi cgmiVar = new cgmi(context, ftax.u(), cgnhVar2.c, (int) ftax.f());
                                 try {
-                                    etvp e = fqhs.f() ? cedbVar.e(c, j2, str3, bxut.b) : cedbVar.e(c, j2, str3, null);
+                                    ewlh e = ftbk.f() ? cgmiVar.e(c, j2, str3, cadl.b) : cgmiVar.e(c, j2, str3, null);
                                     if (e == null) {
-                                        ((ejhf) asotVar2.j()).x("Got null response when attempting GcoreEsimRegister");
+                                        ((eluo) ausnVar2.j()).x("Got null response when attempting GcoreEsimRegister");
                                         new IllegalStateException("Got null response.");
-                                        ceflVar = new cefl();
+                                        cgosVar = new cgos();
                                     } else {
-                                        ceflVar = new cefm(e);
+                                        cgosVar = new cgot(e);
                                     }
-                                } catch (ftye e2) {
-                                    ((ejhf) ceea.a.f(ceqi.h()).s(e2)).B("GCoreEsimRegister attempt got StatusException: %s", new erdd(erdc.NO_USER_DATA, cecu.a(e2).j));
-                                    ceflVar = new cefl(cecu.a(e2).i);
+                                } catch (fwuc e2) {
+                                    ((eluo) cgnh.a.f(cgzp.h()).s(e2)).B("GCoreEsimRegister attempt got StatusException: %s", new etrz(etry.NO_USER_DATA, cgmb.a(e2).j));
+                                    cgosVar = new cgos(cgmb.a(e2).i);
                                 } catch (IllegalArgumentException e3) {
-                                    ((ejhf) ceea.a.f(ceqi.h()).s(e3)).B("GCoreEsimRegister attempt with invalid parameter(s): %s", new erdd(erdc.NO_USER_DATA, e3.getMessage()));
-                                    ceflVar = new cefl(27000L);
+                                    ((eluo) cgnh.a.f(cgzp.h()).s(e3)).B("GCoreEsimRegister attempt with invalid parameter(s): %s", new etrz(etry.NO_USER_DATA, e3.getMessage()));
+                                    cgosVar = new cgos(27000L);
                                 } catch (IllegalStateException e4) {
-                                    ((ejhf) ceea.a.f(ceqi.h()).s(e4)).B("GCoreEsimRegister attempt got IllegalStateException: %s", new erdd(erdc.NO_USER_DATA, e4.getMessage()));
-                                    ceflVar = new cefl(27013L);
-                                } catch (unx e5) {
-                                    ((ejhf) ceea.a.f(ceqi.h()).s(e5)).B("GCoreEsimRegister attempt got auth exception %s.", new erdd(erdc.NO_USER_DATA, e5.getMessage()));
-                                    ceflVar = new cefl(27009L);
+                                    ((eluo) cgnh.a.f(cgzp.h()).s(e4)).B("GCoreEsimRegister attempt got IllegalStateException: %s", new etrz(etry.NO_USER_DATA, e4.getMessage()));
+                                    cgosVar = new cgos(27013L);
+                                } catch (wjw e5) {
+                                    ((eluo) cgnh.a.f(cgzp.h()).s(e5)).B("GCoreEsimRegister attempt got auth exception %s.", new etrz(etry.NO_USER_DATA, e5.getMessage()));
+                                    cgosVar = new cgos(27009L);
                                 }
-                                ceea.a.f(ceqi.h()).B("Register new eCPID on gcm token:{%s}", c);
+                                cgnh.a.f(cgzp.h()).B("Register new eCPID on gcm token:{%s}", c);
                             }
                         } else {
-                            ((ejhf) asotVar2.j()).x("eSIM is not enabled on device.");
+                            ((eluo) ausnVar2.j()).x("eSIM is not enabled on device.");
                             new IllegalStateException("eSIM is not enabled on device.");
-                            ceflVar = new cefl();
+                            cgosVar = new cgos();
                         }
-                        final ceje cejeVar2 = cejeVar;
-                        new byhr(Looper.getMainLooper()).post(new Runnable() { // from class: cedy
+                        final cgsl cgslVar2 = cgslVar;
+                        new caqj(Looper.getMainLooper()).post(new Runnable() { // from class: cgnf
                             @Override // java.lang.Runnable
                             public final void run() {
-                                asot asotVar3 = ceea.a;
-                                ceje cejeVar3 = ceje.this;
-                                cefn cefnVar = ceflVar;
-                                long a = cefn.a(cefnVar);
-                                cecl c2 = cecl.c();
-                                ffgu ffguVar = ffgu.ESIM_CPID_REGISTER_RESPONSE;
-                                final String str4 = cejeVar3.b;
-                                c2.q(ffguVar, str4, cejeVar3.c, cejeVar3.d, cejeVar3.e, a);
-                                final MobileDataPlanSettingsChimeraActivity mobileDataPlanSettingsChimeraActivity = cejeVar3.a;
-                                final Intent intent2 = cejeVar3.f;
-                                if (!(cefnVar instanceof cefm)) {
-                                    ((ejhf) MobileDataPlanSettingsChimeraActivity.j.j()).B("eSIM GcoreRegister failed with session ID %s", str4);
+                                ausn ausnVar3 = cgnh.a;
+                                cgsl cgslVar3 = cgsl.this;
+                                cgou cgouVar = cgosVar;
+                                long a = cgou.a(cgouVar);
+                                cgls c2 = cgls.c();
+                                fhvs fhvsVar = fhvs.ESIM_CPID_REGISTER_RESPONSE;
+                                final String str4 = cgslVar3.b;
+                                c2.q(fhvsVar, str4, cgslVar3.c, cgslVar3.d, cgslVar3.e, a);
+                                final MobileDataPlanSettingsChimeraActivity mobileDataPlanSettingsChimeraActivity = cgslVar3.a;
+                                final Intent intent2 = cgslVar3.f;
+                                if (!(cgouVar instanceof cgot)) {
+                                    ((eluo) MobileDataPlanSettingsChimeraActivity.j.j()).B("eSIM GcoreRegister failed with session ID %s", str4);
                                     Bundle extras = intent2.getExtras();
                                     extras.putLong("ESIM_RPC_STATUS_KEY", a);
-                                    mobileDataPlanSettingsChimeraActivity.k(ffgu.ESIM_CPID_REGISTER_ERROR, extras, str4);
+                                    mobileDataPlanSettingsChimeraActivity.k(fhvs.ESIM_CPID_REGISTER_ERROR, extras, str4);
                                     return;
                                 }
-                                etvp etvpVar = (etvp) cefn.b(cefnVar, etvp.class);
-                                String str5 = etvpVar.b;
-                                if (eiif.c(str5)) {
-                                    new byhr(Looper.getMainLooper()).post(new Runnable() { // from class: cejf
+                                ewlh ewlhVar = (ewlh) cgou.b(cgouVar, ewlh.class);
+                                String str5 = ewlhVar.b;
+                                if (ekvk.c(str5)) {
+                                    new caqj(Looper.getMainLooper()).post(new Runnable() { // from class: cgsm
                                         @Override // java.lang.Runnable
                                         public final void run() {
-                                            MobileDataPlanSettingsChimeraActivity.this.k(ffgu.ESIM_INIT_ERROR, intent2.getExtras(), str4);
+                                            MobileDataPlanSettingsChimeraActivity.this.k(fhvs.ESIM_INIT_ERROR, intent2.getExtras(), str4);
                                         }
                                     });
                                     return;
                                 }
                                 String host = Uri.parse(str5).getHost();
-                                ((ejhf) MobileDataPlanSettingsChimeraActivity.j.h()).P("eSIM GcoreRegister success with session ID %s and URL %s", str4, host);
+                                ((eluo) MobileDataPlanSettingsChimeraActivity.j.h()).P("eSIM GcoreRegister success with session ID %s and URL %s", str4, host);
                                 intent2.putExtra("ESIM_SESSION_ID", str4);
                                 intent2.putExtra("ESIM_SERVICE_HOST", host);
-                                if (fqih.q()) {
-                                    etvh etvhVar = etvpVar.c;
-                                    if (etvhVar == null) {
-                                        etvhVar = etvh.a;
+                                if (ftbz.q()) {
+                                    ewkz ewkzVar = ewlhVar.c;
+                                    if (ewkzVar == null) {
+                                        ewkzVar = ewkz.a;
                                     }
-                                    fegf.m(intent2, "esim_precheck_config", etvhVar);
+                                    fguy.m(intent2, "esim_precheck_config", ewkzVar);
                                 }
                                 mobileDataPlanSettingsChimeraActivity.startActivityForResult(intent2, 2335);
                             }
@@ -990,12 +989,12 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
                 });
                 return false;
             }
-            k(ffgu.ESIM_NOT_SUPPORTED_ERROR, addFlags.getExtras(), uuid);
-            ((ejhf) asotVar.j()).x("Device does not have eSIM features enabled");
+            k(fhvs.ESIM_NOT_SUPPORTED_ERROR, addFlags.getExtras(), uuid);
+            ((eluo) ausnVar.j()).x("Device does not have eSIM features enabled");
             return false;
         } catch (IllegalArgumentException e) {
-            k(ffgu.ESIM_INIT_ERROR, new Bundle(), "uninitialized");
-            ((ejhf) ((ejhf) j.j()).s(e)).B("Invalid url for eSIM: %s", data);
+            k(fhvs.ESIM_INIT_ERROR, new Bundle(), "uninitialized");
+            ((eluo) ((eluo) j.j()).s(e)).B("Invalid url for eSIM: %s", data);
             return false;
         }
     }
@@ -1005,30 +1004,30 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
     }
 
     final void s(Intent intent) {
-        ffgu ffguVar;
+        fhvs fhvsVar;
         int i;
         if (intent == null) {
             return;
         }
         if (intent.getExtras() == null) {
-            ((ejhf) j.i()).x("Expected intent extras field is null.");
+            ((eluo) j.i()).x("Expected intent extras field is null.");
             return;
         }
         String action = intent.getAction();
         if (action == null) {
-            j.f(ceqi.h()).x("handlePurchasePlanActivation did not find required action.");
+            j.f(cgzp.h()).x("handlePurchasePlanActivation did not find required action.");
             return;
         }
         if (!action.equals("com.google.android.gms.mobiledataplan.ui.PURCHASE_PLAN_ACTIVATION")) {
-            j.f(ceqi.h()).B("handlePurchasePlanActivation did not find the expected action. Received: %s", action);
+            j.f(cgzp.h()).B("handlePurchasePlanActivation did not find the expected action. Received: %s", action);
             return;
         }
         PurchasePlanActivation purchasePlanActivation = (PurchasePlanActivation) intent.getExtras().getParcelable("PURCHASE_PLAN_ACTIVATION");
         if (purchasePlanActivation == null) {
-            j.f(ceqi.h()).x("Optional PurchasePlanAction status is not present.");
+            j.f(cgzp.h()).x("Optional PurchasePlanAction status is not present.");
             return;
         }
-        List list = ceih.a;
+        List list = cgro.a;
         boolean z = false;
         for (int size = list.size() - 1; size >= 0; size--) {
             if (((PurchasePlanActivation) list.get(size)).b.equals(purchasePlanActivation.b)) {
@@ -1037,21 +1036,21 @@ public class MobileDataPlanSettingsChimeraActivity extends qet {
             }
         }
         if (!z) {
-            j.f(ceqi.h()).P("purchasePlanActivation is unknown. TransactionID: %s, PlanId: %s", purchasePlanActivation.a, purchasePlanActivation.b);
+            j.f(cgzp.h()).P("purchasePlanActivation is unknown. TransactionID: %s, PlanId: %s", purchasePlanActivation.a, purchasePlanActivation.b);
             return;
         }
         this.l.q(true);
         int i2 = purchasePlanActivation.c;
         if (i2 == 2) {
-            ffguVar = ffgu.PLAN_ACTIVATION_MESSAGE_RECEIVED_SUCCESS;
+            fhvsVar = fhvs.PLAN_ACTIVATION_MESSAGE_RECEIVED_SUCCESS;
             i = 84;
         } else if (i2 != 3) {
-            j.f(ceqi.h()).T("purchasePlanActivation updated, but has an unexpected state. TransactionID: %s, PlanId: %s, state: %s", purchasePlanActivation.a, purchasePlanActivation.b, Integer.valueOf(purchasePlanActivation.c));
+            j.f(cgzp.h()).T("purchasePlanActivation updated, but has an unexpected state. TransactionID: %s, PlanId: %s, state: %s", purchasePlanActivation.a, purchasePlanActivation.b, Integer.valueOf(purchasePlanActivation.c));
             return;
         } else {
-            ffguVar = ffgu.PLAN_ACTIVATION_MESSAGE_RECEIVED_FAILURE;
+            fhvsVar = fhvs.PLAN_ACTIVATION_MESSAGE_RECEIVED_FAILURE;
             i = 85;
         }
-        cecl.c().Q(i, "refresh_button", "R.id.refresh", ffguVar, System.currentTimeMillis(), cekf.a());
+        cgls.c().Q(i, "refresh_button", "R.id.refresh", fhvsVar, System.currentTimeMillis(), cgtm.a());
     }
 }

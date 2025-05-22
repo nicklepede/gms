@@ -1,31 +1,31 @@
 package com.google.android.gms.auth.api.credentials.authorization;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.arwm;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.ejck;
-import defpackage.zdv;
+import defpackage.abdq;
+import defpackage.atzb;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.elpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AuthorizationChimeraService extends bxgd {
+public class AuthorizationChimeraService extends bzot {
     public AuthorizationChimeraService() {
-        super(219, "com.google.android.gms.auth.api.identity.service.authorization.START", ejck.a, 3, 9);
+        super(219, "com.google.android.gms.auth.api.identity.service.authorization.START", elpp.a, 3, 9);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgo l = l();
-        bmgq a = bmgp.a(this, null);
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzpe l = l();
+        boni a = bonh.a(this, null);
         String str = getServiceRequest.f;
         String string = getServiceRequest.i.getString("session_id");
         if (string != null) {
-            arwm.q(string);
+            atzb.q(string);
         }
-        bxgjVar.c(new zdv(l, a, str, getServiceRequest.p));
+        bzozVar.c(new abdq(l, a, str, getServiceRequest.p));
     }
 }

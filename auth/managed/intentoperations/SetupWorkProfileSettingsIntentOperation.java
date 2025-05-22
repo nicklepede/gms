@@ -8,28 +8,28 @@ import com.google.android.gms.R;
 import com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallChimeraActivity;
 import com.google.android.gms.auth.managed.ui.SetupWorkProfileChimeraActivity;
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
-import defpackage.anxy;
-import defpackage.aojj;
-import defpackage.asew;
-import defpackage.fkzn;
-import defpackage.fkzs;
+import defpackage.apzq;
+import defpackage.aqlc;
+import defpackage.auiq;
+import defpackage.fnqv;
+import defpackage.fnra;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class SetupWorkProfileSettingsIntentOperation extends anxy {
+public class SetupWorkProfileSettingsIntentOperation extends apzq {
     public static boolean e(Context context) {
         DevicePolicyManager devicePolicyManager = (DevicePolicyManager) context.getSystemService("device_policy");
-        return fkzn.c() && PhoneskyDpcInstallChimeraActivity.q(context) && devicePolicyManager != null && devicePolicyManager.getDeviceOwner() == null && devicePolicyManager.getProfileOwner() == null;
+        return fnqv.c() && PhoneskyDpcInstallChimeraActivity.q(context) && devicePolicyManager != null && devicePolicyManager.getDeviceOwner() == null && devicePolicyManager.getProfileOwner() == null;
     }
 
-    @Override // defpackage.anxy
+    @Override // defpackage.apzq
     public final GoogleSettingsItem b() {
         Bundle bundle = new Bundle();
         int i = SetupWorkProfileChimeraActivity.j;
         Intent putExtras = new Intent().setClassName(this, "com.google.android.gms.auth.managed.ui.SetupWorkProfileActivity").putExtras(bundle);
         putExtras.addFlags(268435456);
-        GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(putExtras, 7, R.string.auth_device_management_setup_work_profile_settings_entry, aojj.WORK_PROFILE_ITEM, asew.DEFAULT_AUTH_MANAGED);
-        googleSettingsItem.j = fkzs.a.a().d();
+        GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(putExtras, 7, R.string.auth_device_management_setup_work_profile_settings_entry, aqlc.WORK_PROFILE_ITEM, auiq.DEFAULT_AUTH_MANAGED);
+        googleSettingsItem.j = fnra.a.lK().d();
         if (e(this)) {
             return googleSettingsItem;
         }

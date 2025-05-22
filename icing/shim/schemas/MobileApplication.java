@@ -1,11 +1,11 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eiif;
+import defpackage.ekvk;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class MobileApplication extends Thing {
     public final String a;
@@ -14,9 +14,9 @@ public final class MobileApplication extends Thing {
 
     public MobileApplication(String str, String str2, String str3, List list, List list2, String str4, long j, String str5, G3AttributionInfo g3AttributionInfo) {
         super(str, str2, str3, list, list2, g3AttributionInfo);
-        this.a = eiif.b(str4);
+        this.a = ekvk.b(str4);
         this.b = j;
-        this.c = eiif.b(str5);
+        this.c = ekvk.b(str5);
     }
 
     @Override // com.google.android.gms.icing.shim.schemas.Thing

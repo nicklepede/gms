@@ -4,29 +4,29 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TableRow;
-import defpackage.efec;
-import defpackage.efed;
-import defpackage.efej;
-import defpackage.efem;
+import defpackage.ehrf;
+import defpackage.ehrg;
+import defpackage.ehrm;
+import defpackage.ehrp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TableRowView extends TableRow implements View.OnClickListener, efed {
-    final efec a;
+public class TableRowView extends TableRow implements View.OnClickListener, ehrg {
+    final ehrf a;
 
     public TableRowView(Context context) {
         super(context);
-        this.a = new efec();
+        this.a = new ehrf();
         setOnClickListener(this);
     }
 
-    @Override // defpackage.efel
-    public final efej a() {
+    @Override // defpackage.ehro
+    public final ehrm a() {
         return null;
     }
 
-    @Override // defpackage.efed
-    public final efem b() {
+    @Override // defpackage.ehrg
+    public final ehrp b() {
         return this.a;
     }
 
@@ -37,7 +37,7 @@ public class TableRowView extends TableRow implements View.OnClickListener, efed
 
     public TableRowView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.a = new efec();
+        this.a = new ehrf();
         setOnClickListener(this);
     }
 }

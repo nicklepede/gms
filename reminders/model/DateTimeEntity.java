@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxei;
+import defpackage.atyq;
+import defpackage.czoe;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class DateTimeEntity extends AbstractSafeParcelable implements DateTime {
-    public static final Parcelable.Creator CREATOR = new cxei();
+    public static final Parcelable.Creator CREATOR = new czoe();
     public final Integer a;
     public final Integer b;
     public final Integer c;
@@ -38,7 +38,7 @@ public class DateTimeEntity extends AbstractSafeParcelable implements DateTime {
     }
 
     public static boolean k(DateTime dateTime, DateTime dateTime2) {
-        return arwb.b(dateTime.i(), dateTime2.i()) && arwb.b(dateTime.g(), dateTime2.g()) && arwb.b(dateTime.f(), dateTime2.f()) && arwb.b(dateTime.a(), dateTime2.a()) && arwb.b(dateTime.h(), dateTime2.h()) && arwb.b(dateTime.e(), dateTime2.e()) && arwb.b(dateTime.j(), dateTime2.j()) && arwb.b(dateTime.d(), dateTime2.d()) && arwb.b(dateTime.c(), dateTime2.c());
+        return atyq.b(dateTime.i(), dateTime2.i()) && atyq.b(dateTime.g(), dateTime2.g()) && atyq.b(dateTime.f(), dateTime2.f()) && atyq.b(dateTime.a(), dateTime2.a()) && atyq.b(dateTime.h(), dateTime2.h()) && atyq.b(dateTime.e(), dateTime2.e()) && atyq.b(dateTime.j(), dateTime2.j()) && atyq.b(dateTime.d(), dateTime2.d()) && atyq.b(dateTime.c(), dateTime2.c());
     }
 
     @Override // com.google.android.gms.reminders.model.DateTime
@@ -102,7 +102,7 @@ public class DateTimeEntity extends AbstractSafeParcelable implements DateTime {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxei.a(this, parcel, i);
+        czoe.a(this, parcel, i);
     }
 
     public DateTimeEntity(DateTime dateTime) {
@@ -125,7 +125,7 @@ public class DateTimeEntity extends AbstractSafeParcelable implements DateTime {
         }
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

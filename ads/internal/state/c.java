@@ -9,9 +9,9 @@ import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.flag.i;
 import com.google.android.gms.ads.internal.flag.j;
 import com.google.android.gms.ads.internal.util.m;
-import defpackage.bqux;
-import defpackage.eiif;
-import defpackage.enss;
+import defpackage.btco;
+import defpackage.ekvk;
+import defpackage.eqgl;
 import java.io.File;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class c extends com.google.android.gms.ads.internal.util.b {
     final /* synthetic */ e a;
@@ -42,24 +42,24 @@ final class c extends com.google.android.gms.ads.internal.util.b {
         linkedHashMap.put("os", Build.VERSION.RELEASE);
         linkedHashMap.put("api_v", Build.VERSION.SDK);
         com.google.android.gms.ads.internal.c.e();
-        linkedHashMap.put("device", m.n());
+        linkedHashMap.put("device", m.o());
         linkedHashMap.put("app", context.getApplicationContext() != null ? context.getApplicationContext().getPackageName() : context.getPackageName());
         com.google.android.gms.ads.internal.c.e();
-        linkedHashMap.put("is_lite_sdk", true != m.q(context) ? "0" : "1");
-        enss submit = com.google.android.gms.ads.internal.util.future.e.a.submit(new com.google.android.gms.ads.internal.request.service.d(com.google.android.gms.ads.internal.c.a.g, context));
+        linkedHashMap.put("is_lite_sdk", true != m.r(context) ? "0" : "1");
+        eqgl submit = com.google.android.gms.ads.internal.util.future.e.a.submit(new com.google.android.gms.ads.internal.request.service.d(com.google.android.gms.ads.internal.c.a.g, context));
         try {
             linkedHashMap.put("network_coarse", Integer.toString(((com.google.android.gms.ads.internal.request.service.c) submit.get()).j));
             linkedHashMap.put("network_fine", Integer.toString(((com.google.android.gms.ads.internal.request.service.c) submit.get()).k));
         } catch (Exception e) {
             com.google.android.gms.ads.internal.c.d().d(e, "CsiConfiguration.CsiConfiguration");
         }
-        if (((Boolean) p.bH.g()).booleanValue()) {
+        if (((Boolean) p.bI.g()).booleanValue()) {
             com.google.android.gms.ads.internal.c.e();
             linkedHashMap.put("is_bstar", "0");
         }
-        if (((Boolean) p.bq.g()).booleanValue() && ((Boolean) p.V.g()).booleanValue()) {
+        if (((Boolean) p.br.g()).booleanValue() && ((Boolean) p.V.g()).booleanValue()) {
             com.google.android.gms.ads.internal.c.d();
-            if (!eiif.c(null)) {
+            if (!ekvk.c(null)) {
                 com.google.android.gms.ads.internal.c.d();
                 linkedHashMap.put("plugin", null);
             }
@@ -84,7 +84,7 @@ final class c extends com.google.android.gms.ads.internal.util.b {
             bVar.h = new AtomicBoolean(false);
             bVar.h.set(((Boolean) j.c.d()).booleanValue());
             if (bVar.h.get() && (externalStorageDirectory = Environment.getExternalStorageDirectory()) != null) {
-                bVar.i = new File(bqux.a.b(externalStorageDirectory, "sdk_csi_data.txt"));
+                bVar.i = new File(btco.a.b(externalStorageDirectory, "sdk_csi_data.txt"));
             }
             for (Map.Entry entry : linkedHashMap.entrySet()) {
                 bVar.b.put((String) entry.getKey(), (String) entry.getValue());
@@ -152,8 +152,9 @@ final class c extends com.google.android.gms.ads.internal.util.b {
                 }
             });
             Map map = bVar.c;
-            map.put("action", com.google.android.gms.ads.internal.csi.g.b);
-            map.put("ad_format", com.google.android.gms.ads.internal.csi.g.b);
+            com.google.android.gms.ads.internal.csi.g gVar = com.google.android.gms.ads.internal.csi.g.b;
+            map.put("action", gVar);
+            map.put("ad_format", gVar);
             map.put("e", com.google.android.gms.ads.internal.csi.g.c);
         }
     }

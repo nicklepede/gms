@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.djkb;
-import defpackage.dkit;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.dlvu;
+import defpackage.dmum;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class DataItemAssetParcelable extends AbstractSafeParcelable implements ReflectedParcelable, djkb {
-    public static final Parcelable.Creator CREATOR = new dkit();
+public class DataItemAssetParcelable extends AbstractSafeParcelable implements ReflectedParcelable, dlvu {
+    public static final Parcelable.Creator CREATOR = new dmum();
     public final String a;
     public final String b;
 
@@ -21,12 +21,12 @@ public class DataItemAssetParcelable extends AbstractSafeParcelable implements R
         this.b = str2;
     }
 
-    @Override // defpackage.djkb
+    @Override // defpackage.dlvu
     public final String a() {
         return this.b;
     }
 
-    @Override // defpackage.djkb
+    @Override // defpackage.dlvu
     public final String b() {
         return this.a;
     }
@@ -50,22 +50,22 @@ public class DataItemAssetParcelable extends AbstractSafeParcelable implements R
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.c(parcel, a);
     }
 
-    public DataItemAssetParcelable(djkb djkbVar) {
-        String b = djkbVar.b();
-        arwm.s(b);
+    public DataItemAssetParcelable(dlvu dlvuVar) {
+        String b = dlvuVar.b();
+        atzb.s(b);
         this.a = b;
-        String a = djkbVar.a();
-        arwm.s(a);
+        String a = dlvuVar.a();
+        atzb.s(a);
         this.b = a;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

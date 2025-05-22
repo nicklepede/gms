@@ -6,15 +6,15 @@ import android.content.IntentFilter;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.stats.AppContextProvider;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.dera;
-import defpackage.derb;
-import defpackage.derc;
-import defpackage.derd;
-import defpackage.eiig;
-import defpackage.fsif;
-import defpackage.iln;
+import defpackage.dhcd;
+import defpackage.dhce;
+import defpackage.dhcf;
+import defpackage.dhcg;
+import defpackage.ekvl;
+import defpackage.fvdd;
+import defpackage.ind;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ControlledEventsOperation extends IntentOperation {
     private TracingBroadcastReceiver a = null;
@@ -23,10 +23,10 @@ public class ControlledEventsOperation extends IntentOperation {
         try {
             Context a = AppContextProvider.a();
             TracingBroadcastReceiver tracingBroadcastReceiver = this.a;
-            eiig.x(tracingBroadcastReceiver);
+            ekvl.y(tracingBroadcastReceiver);
             a.unregisterReceiver(tracingBroadcastReceiver);
         } catch (IllegalArgumentException | NullPointerException unused) {
-            derc.a("ControlledEventsReceiverFailureIllegalUnregister");
+            dhcf.a("ControlledEventsReceiverFailureIllegalUnregister");
         }
         this.a = null;
     }
@@ -35,7 +35,7 @@ public class ControlledEventsOperation extends IntentOperation {
     public final void onHandleIntent(Intent intent) {
         String action;
         char c;
-        if (fsif.d() && (action = intent.getAction()) != null) {
+        if (fvdd.d() && (action = intent.getAction()) != null) {
             int hashCode = action.hashCode();
             if (hashCode == -579664806) {
                 if (action.equals("com.google.android.gms.stats.controlledevents.action.CONTROLLED_EVENTS_PROCESS_CRASH")) {
@@ -59,22 +59,22 @@ public class ControlledEventsOperation extends IntentOperation {
                 IntentFilter intentFilter = new IntentFilter();
                 intentFilter.addAction("android.intent.action.SCREEN_ON");
                 this.a = new ControlledEventsBroadcastReceiver(this);
-                iln.b(AppContextProvider.a(), this.a, intentFilter, 2);
-                boolean b = booleanExtra ? derb.b(new dera(), longExtra) : derb.c(longExtra);
+                ind.b(AppContextProvider.a(), this.a, intentFilter, 2);
+                boolean b = booleanExtra ? dhce.b(new dhcd(), longExtra) : dhce.c(longExtra);
                 if (this.a != null) {
                     a();
                 }
-                derc.a(true != b ? "ControlledEventsWakelockFailure" : "ControlledEventsWakelockSuccess");
-                derd.a(intent.getIntExtra("alarm_id_extra", -1));
+                dhcf.a(true != b ? "ControlledEventsWakelockFailure" : "ControlledEventsWakelockSuccess");
+                dhcg.a(intent.getIntExtra("alarm_id_extra", -1));
                 return;
             }
             if (c != 1) {
                 if (c != 2) {
-                    derc.a("ControlledEventsOperationUnknownAction");
+                    dhcf.a("ControlledEventsOperationUnknownAction");
                     return;
                 } else {
-                    derc.a("ControlledEventsProcessCrashSuccess");
-                    derd.a(intent.getIntExtra("alarm_id_extra", -1));
+                    dhcf.a("ControlledEventsProcessCrashSuccess");
+                    dhcg.a(intent.getIntExtra("alarm_id_extra", -1));
                     return;
                 }
             }
@@ -82,33 +82,33 @@ public class ControlledEventsOperation extends IntentOperation {
             int intExtra = intent.getIntExtra("wakeup_remaining_alarms", -1);
             int intExtra2 = intent.getIntExtra("wakeup_number_of_attempts", 0);
             long j = intExtra2;
-            if (intExtra < 0 || j > fsif.b()) {
-                derd.a(intent.getIntExtra("alarm_id_extra", -1));
+            if (intExtra < 0 || j > fvdd.b()) {
+                dhcg.a(intent.getIntExtra("alarm_id_extra", -1));
                 if (intExtra < 0) {
-                    derc.a("ControlledEventsWakeupFailureOverscheduled");
+                    dhcf.a("ControlledEventsWakeupFailureOverscheduled");
                 }
-                if (j <= fsif.b() || intExtra <= 0) {
+                if (j <= fvdd.b() || intExtra <= 0) {
                     return;
                 }
-                derc.b("ControlledEventsWakeupFailureTotal", intExtra);
+                dhcf.b("ControlledEventsWakeupFailureTotal", intExtra);
                 return;
             }
-            boolean c2 = derb.c(longExtra2);
-            derd.a(intent.getIntExtra("alarm_id_extra", -1));
+            boolean c2 = dhce.c(longExtra2);
+            dhcg.a(intent.getIntExtra("alarm_id_extra", -1));
             if (c2) {
-                derc.a("ControlledEventsWakeupSuccess");
+                dhcf.a("ControlledEventsWakeupSuccess");
                 if (intExtra > 0) {
-                    derd.b(intExtra - 1, intExtra2);
+                    dhcg.b(intExtra - 1, intExtra2);
                     return;
                 }
                 return;
             }
-            if (j < fsif.b()) {
-                derc.a("ControlledEventsWakeupTotalNumRetries");
-                derd.b(intExtra, intExtra2 + 1);
+            if (j < fvdd.b()) {
+                dhcf.a("ControlledEventsWakeupTotalNumRetries");
+                dhcg.b(intExtra, intExtra2 + 1);
             } else {
-                derc.a("ControlledEventsWakeupFailureRetries");
-                derc.b("ControlledEventsWakeupFailureTotal", intExtra);
+                dhcf.a("ControlledEventsWakeupFailureRetries");
+                dhcf.b("ControlledEventsWakeupFailureTotal", intExtra);
             }
         }
     }

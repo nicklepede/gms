@@ -4,25 +4,26 @@ import android.content.pm.PackageInfo;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.util.client.h;
 import com.google.android.gms.chimera.modules.admob.AppContextProvider;
-import defpackage.bhsp;
-import defpackage.eiho;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.osp;
-import defpackage.osr;
+import defpackage.bjxe;
+import defpackage.ekut;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.eqgo;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.qls;
+import defpackage.qlu;
 import java.nio.charset.Charset;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class i implements com.google.android.gms.ads.nonagon.signals.e {
     public final String a;
@@ -45,49 +46,50 @@ public final class i implements com.google.android.gms.ads.nonagon.signals.e {
     }
 
     @Override // com.google.android.gms.ads.nonagon.signals.e
-    public final enss b() {
-        enss i = ensj.i(null);
+    public final eqgl b() {
+        eqgl i = eqgc.i(null);
         final com.google.android.gms.ads.adinfo.g gVar = this.e;
         final String str = this.a;
         final int i2 = this.d;
         final PackageInfo packageInfo = this.c;
-        enss g = enps.g(i, new enqc() { // from class: com.google.android.gms.ads.adinfo.d
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                enss g2;
+        eqgl g = eqdl.g(i, new eqdv() { // from class: com.google.android.gms.ads.adinfo.d
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                eqgl g2;
                 final g gVar2 = g.this;
                 final String str2 = str;
-                enss i3 = ensj.i(str2);
+                eqgl i3 = eqgc.i(str2);
                 if (gVar2.b == null) {
                     return i3;
                 }
-                enss[] enssVarArr = new enss[2];
+                eqgl[] eqglVarArr = new eqgl[2];
                 if (((Boolean) p.K.g()).booleanValue()) {
-                    g2 = ensj.i(null);
+                    g2 = eqgc.i(null);
                 } else {
-                    g2 = enox.g(enps.f(g.a(AppContextProvider.a(), i2), new eiho() { // from class: com.google.android.gms.ads.adinfo.a
-                        @Override // defpackage.eiho
+                    eqgl a = g.a(AppContextProvider.a(), i2);
+                    ekut ekutVar = new ekut() { // from class: com.google.android.gms.ads.adinfo.a
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj2) {
                             com.google.android.gms.ads.identifier.c cVar = (com.google.android.gms.ads.identifier.c) obj2;
-                            fecj v = com.google.ads.afma.proto2api.b.a.v();
+                            fgrc v = com.google.ads.afma.proto2api.b.a.v();
                             String str3 = cVar.a;
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            fecp fecpVar = v.b;
-                            com.google.ads.afma.proto2api.b bVar = (com.google.ads.afma.proto2api.b) fecpVar;
+                            fgri fgriVar = v.b;
+                            com.google.ads.afma.proto2api.b bVar = (com.google.ads.afma.proto2api.b) fgriVar;
                             str3.getClass();
                             bVar.d |= 33554432;
                             bVar.n = str3;
                             boolean z = cVar.b;
-                            if (!fecpVar.L()) {
+                            if (!fgriVar.L()) {
                                 v.U();
                             }
-                            fecp fecpVar2 = v.b;
-                            com.google.ads.afma.proto2api.b bVar2 = (com.google.ads.afma.proto2api.b) fecpVar2;
+                            fgri fgriVar2 = v.b;
+                            com.google.ads.afma.proto2api.b bVar2 = (com.google.ads.afma.proto2api.b) fgriVar2;
                             bVar2.d |= 134217728;
                             bVar2.p = z;
-                            if (!fecpVar2.L()) {
+                            if (!fgriVar2.L()) {
                                 v.U();
                             }
                             com.google.ads.afma.proto2api.b bVar3 = (com.google.ads.afma.proto2api.b) v.b;
@@ -95,16 +97,18 @@ public final class i implements com.google.android.gms.ads.nonagon.signals.e {
                             bVar3.d |= 67108864;
                             return (com.google.ads.afma.proto2api.b) v.Q();
                         }
-                    }, com.google.android.gms.ads.internal.util.future.e.d), Throwable.class, new enqc() { // from class: com.google.android.gms.ads.adinfo.b
-                        @Override // defpackage.enqc
-                        public final enss a(Object obj2) {
-                            return ensj.i(null);
+                    };
+                    eqgo eqgoVar = com.google.android.gms.ads.internal.util.future.e.d;
+                    g2 = eqcq.g(eqdl.f(a, ekutVar, eqgoVar), Throwable.class, new eqdv() { // from class: com.google.android.gms.ads.adinfo.b
+                        @Override // defpackage.eqdv
+                        public final eqgl a(Object obj2) {
+                            return eqgc.i(null);
                         }
-                    }, com.google.android.gms.ads.internal.util.future.e.d);
+                    }, eqgoVar);
                 }
                 final PackageInfo packageInfo2 = packageInfo;
-                enssVarArr[0] = g2;
-                enssVarArr[1] = com.google.android.gms.ads.internal.util.future.e.a.submit(new Callable() { // from class: com.google.android.gms.ads.adinfo.f
+                eqglVarArr[0] = g2;
+                eqglVarArr[1] = com.google.android.gms.ads.internal.util.future.e.a.submit(new Callable() { // from class: com.google.android.gms.ads.adinfo.f
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
                         g gVar3 = g.this;
@@ -113,11 +117,11 @@ public final class i implements com.google.android.gms.ads.nonagon.signals.e {
                             if (packageInfo3 == null) {
                                 throw new IllegalArgumentException("Package Info cannot be null");
                             }
-                            com.google.ads.afma.proto2api.b a = bhsp.a(gVar3.a, packageInfo3.packageName, Long.toString(packageInfo3.versionCode));
-                            if (a.f.isEmpty()) {
+                            com.google.ads.afma.proto2api.b a2 = bjxe.a(gVar3.a, packageInfo3.packageName, Long.toString(packageInfo3.versionCode));
+                            if (a2.f.isEmpty()) {
                                 return null;
                             }
-                            return a;
+                            return a2;
                         } catch (Throwable th) {
                             int i4 = com.google.android.gms.ads.internal.util.c.a;
                             h.d("Failed to get gmscore side info.");
@@ -126,20 +130,20 @@ public final class i implements com.google.android.gms.ads.nonagon.signals.e {
                         }
                     }
                 });
-                return enps.f(ensj.f(enssVarArr), new eiho() { // from class: com.google.android.gms.ads.adinfo.e
-                    @Override // defpackage.eiho
+                return eqdl.f(eqgc.f(eqglVarArr), new ekut() { // from class: com.google.android.gms.ads.adinfo.e
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
-                        fecj v = com.google.ads.afma.proto2api.b.a.v();
+                        fgrc v = com.google.ads.afma.proto2api.b.a.v();
                         for (com.google.ads.afma.proto2api.b bVar : (List) obj2) {
                             if (bVar != null) {
                                 try {
-                                    v.D(bVar.r(), febw.a());
-                                } catch (fedk unused) {
+                                    v.D(bVar.r(), fgqp.a());
+                                } catch (fgsd unused) {
                                 }
                             }
                         }
-                        byte[] c = osr.c(str2, new String(((com.google.ads.afma.proto2api.b) v.Q()).r(), Charset.forName("ISO-8859-1")));
-                        String b = c != null ? osp.b(c) : Integer.toString(7);
+                        byte[] c = qlu.c(str2, new String(((com.google.ads.afma.proto2api.b) v.Q()).r(), Charset.forName("ISO-8859-1")));
+                        String b = c != null ? qls.b(c) : Integer.toString(7);
                         int i4 = com.google.android.gms.ads.internal.util.c.a;
                         h.d("Merged client and gmscore signals");
                         return b;
@@ -147,17 +151,17 @@ public final class i implements com.google.android.gms.ads.nonagon.signals.e {
                 }, com.google.android.gms.ads.internal.util.future.e.d);
             }
         }, com.google.android.gms.ads.internal.util.future.e.a);
-        eiho eihoVar = new eiho() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.g
-            @Override // defpackage.eiho
+        ekut ekutVar = new ekut() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.g
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 return new j((String) obj);
             }
         };
         Executor executor = this.b;
-        return enox.g(enps.f(g, eihoVar, executor), Throwable.class, new enqc() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.h
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                return ensj.i(new j(i.this.a));
+        return eqcq.g(eqdl.f(g, ekutVar, executor), Throwable.class, new eqdv() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.h
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                return eqgc.i(new j(i.this.a));
             }
         }, executor);
     }

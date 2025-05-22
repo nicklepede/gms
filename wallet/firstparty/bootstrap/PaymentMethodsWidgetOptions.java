@@ -2,12 +2,12 @@ package com.google.android.gms.wallet.firstparty.bootstrap;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.dipq;
+import defpackage.dlbb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PaymentMethodsWidgetOptions extends BaseWidgetOptions {
-    public static final Parcelable.Creator CREATOR = new dipq();
+    public static final Parcelable.Creator CREATOR = new dlbb();
     public boolean a;
 
     public PaymentMethodsWidgetOptions() {

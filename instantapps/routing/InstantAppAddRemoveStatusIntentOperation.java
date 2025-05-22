@@ -2,21 +2,21 @@ package com.google.android.gms.instantapps.routing;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.ejhf;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class InstantAppAddRemoveStatusIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("AppAddRemoveStatusOp", asej.INSTANT_APPS);
+    private static final ausn a = ausn.b("AppAddRemoveStatusOp", auid.INSTANT_APPS);
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         char c;
         String action = intent.getAction();
         if (action == null) {
-            ((ejhf) ((ejhf) a.i()).ah((char) 5262)).x("Unexpected null intent action.");
+            ((eluo) ((eluo) a.i()).ai((char) 5275)).x("Unexpected null intent action.");
             return;
         }
         int hashCode = action.hashCode();
@@ -34,6 +34,6 @@ public class InstantAppAddRemoveStatusIntentOperation extends IntentOperation {
         if (c == 0 || c == 1) {
             return;
         }
-        ((ejhf) ((ejhf) a.i()).ah((char) 5261)).B("Unexpected intent action=%s", intent.getAction());
+        ((eluo) ((eluo) a.i()).ai((char) 5274)).B("Unexpected intent action=%s", intent.getAction());
     }
 }

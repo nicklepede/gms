@@ -2,7 +2,7 @@ package com.google.android.gms.org.conscrypt;
 
 import java.security.Provider;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OpenSSLProvider extends Provider {
     private static final String PREFIX = String.valueOf(OpenSSLProvider.class.getPackage().getName()).concat(".");
@@ -216,6 +216,7 @@ public final class OpenSSLProvider extends Provider {
         put("Alg.Alias.KeyPairGenerator.Ed25519", "EdDSA");
         put("KeyPairGenerator.ML-DSA", String.valueOf(str4).concat("OpenSslMlDsaKeyPairGenerator"));
         put("Alg.Alias.KeyPairGenerator.ML-DSA-65", "ML-DSA");
+        put("KeyPairGenerator.SLH-DSA-SHA2-128S", String.valueOf(str4).concat("OpenSslSlhDsaKeyPairGenerator"));
         put("KeyFactory.RSA", String.valueOf(str4).concat("OpenSSLRSAKeyFactory"));
         put("Alg.Alias.KeyFactory.1.2.840.113549.1.1.1", "RSA");
         put("Alg.Alias.KeyFactory.1.2.840.113549.1.1.7", "RSA");
@@ -231,6 +232,7 @@ public final class OpenSSLProvider extends Provider {
         put("Alg.Alias.KeyFactory.Ed25519", "EdDSA");
         put("KeyFactory.ML-DSA", String.valueOf(str4).concat("OpenSslMlDsaKeyFactory"));
         put("Alg.Alias.KeyFactory.ML-DSA-65", "ML-DSA");
+        put("KeyFactory.SLH-DSA-SHA2-128S", String.valueOf(str4).concat("OpenSslSlhDsaKeyFactory"));
         put("SecretKeyFactory.DESEDE", String.valueOf(str4).concat("DESEDESecretKeyFactory"));
         put("Alg.Alias.SecretKeyFactory.TDEA", "DESEDE");
         put("SecretKeyFactory.SCRYPT", String.valueOf(str4).concat("ScryptSecretKeyFactory"));
@@ -322,6 +324,7 @@ public final class OpenSSLProvider extends Provider {
         put("Alg.Alias.Signature.Ed25519", "EdDSA");
         putSignatureImplClass("ML-DSA", "OpenSslSignatureMlDsa");
         put("Alg.Alias.Signature.ML-DSA-65", "ML-DSA");
+        putSignatureImplClass("SLH-DSA-SHA2-128S", "OpenSslSignatureSlhDsa");
         put("SecureRandom.SHA1PRNG", String.valueOf(str4).concat("OpenSSLRandom"));
         put("SecureRandom.SHA1PRNG ImplementedIn", "Software");
         putRSACipherImplClass("RSA/ECB/NoPadding", "OpenSSLCipherRSA$Raw");

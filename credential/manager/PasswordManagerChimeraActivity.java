@@ -14,347 +14,347 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.google.android.gms.R;
 import com.google.android.gms.credential.manager.PasswordManagerChimeraActivity;
 import com.google.android.gms.credential.manager.screens.HomeScreenNavigationBundle$StartScreen;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acm;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.attt;
-import defpackage.attw;
-import defpackage.atuc;
-import defpackage.avea;
-import defpackage.avef;
-import defpackage.aveg;
-import defpackage.avhl;
-import defpackage.avki;
-import defpackage.avkw;
-import defpackage.avlv;
-import defpackage.avmj;
-import defpackage.avnc;
-import defpackage.avnd;
-import defpackage.awgy;
-import defpackage.awha;
-import defpackage.awyb;
-import defpackage.awyc;
-import defpackage.awyv;
-import defpackage.eiuu;
-import defpackage.ejhf;
-import defpackage.fnha;
-import defpackage.fuvb;
-import defpackage.fvbo;
-import defpackage.fvgt;
-import defpackage.ipt;
-import defpackage.itj;
-import defpackage.iuf;
-import defpackage.iuo;
-import defpackage.jox;
-import defpackage.jpc;
-import defpackage.jpd;
-import defpackage.jqw;
-import defpackage.jrh;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acr;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.avxw;
+import defpackage.avxz;
+import defpackage.avyf;
+import defpackage.axhz;
+import defpackage.axie;
+import defpackage.axif;
+import defpackage.axlk;
+import defpackage.axoh;
+import defpackage.axov;
+import defpackage.axpu;
+import defpackage.axqj;
+import defpackage.axrc;
+import defpackage.axrd;
+import defpackage.ayky;
+import defpackage.ayla;
+import defpackage.azcb;
+import defpackage.azcc;
+import defpackage.azcv;
+import defpackage.elhz;
+import defpackage.eluo;
+import defpackage.fpza;
+import defpackage.fxqz;
+import defpackage.fxxm;
+import defpackage.fycr;
+import defpackage.irj;
+import defpackage.iuz;
+import defpackage.ivv;
+import defpackage.iwe;
+import defpackage.jvm;
+import defpackage.jvr;
+import defpackage.jvs;
+import defpackage.jxl;
+import defpackage.jxw;
 import j$.util.Objects;
 import java.io.Serializable;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public class PasswordManagerChimeraActivity extends attw {
-    public static final asot j = asot.b("PasswordManagerActivity", asej.CREDENTIAL_MANAGER);
-    public avlv k;
-    public abv l;
-    public avnd m;
-    public atuc n;
-    private avki p;
-    private awha q;
-    private aveg r;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public class PasswordManagerChimeraActivity extends avxz {
+    public static final ausn j = ausn.b("PasswordManagerActivity", auid.CREDENTIAL_MANAGER);
+    public axpu k;
+    public aca l;
+    public axrd m;
+    public avyf n;
+    private axoh p;
+    private ayla q;
+    private axif r;
 
     static {
-        eiuu.K("PWMHomeScreenFragment", "PWMPickerScreenFragment");
+        elhz.K("PWMHomeScreenFragment", "PWMPickerScreenFragment");
     }
 
     public final void a(String str, Bundle bundle) {
-        awyb awybVar;
-        atuc atucVar = this.n;
-        fvbo.f(str, "<set-?>");
-        atucVar.a = str;
-        final jrh jrhVar = new jrh(this);
+        azcb azcbVar;
+        avyf avyfVar = this.n;
+        fxxm.f(str, "<set-?>");
+        avyfVar.a = str;
+        final jxw jxwVar = new jxw(this);
         Intent intent = getIntent();
-        fvbo.f(intent, "intent");
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
+        fxxm.f(intent, "intent");
         if (intent.hasExtra("pwm.DataFieldNames.startForTwoFields")) {
-            awybVar = awyb.b;
+            azcbVar = azcb.b;
         } else {
-            fvbo.f(intent, "intent");
+            fxxm.f(intent, "intent");
             if (intent.hasExtra("pwm.DataFieldNames.detailsScreenAsStartScreen") && intent.hasExtra("pwm.DataFieldNames.deepLinkToSignonRealm") && intent.getBooleanExtra("pwm.DataFieldNames.detailsScreenAsStartScreen", false)) {
-                awybVar = awyb.c;
+                azcbVar = azcb.c;
             } else {
-                fvbo.f(intent, "intent");
+                fxxm.f(intent, "intent");
                 if (intent.hasExtra("pwm.DataFieldNames.deepLinkToPasswordCheckup")) {
-                    awybVar = awyb.d;
+                    azcbVar = azcb.d;
                 } else {
-                    fvbo.f(intent, "intent");
+                    fxxm.f(intent, "intent");
                     if (intent.hasExtra("pwm.DataFieldNames.deepLinkToPasskeyWizard")) {
-                        awybVar = awyb.f;
+                        azcbVar = azcb.f;
                     } else {
-                        fvbo.f(intent, "intent");
-                        awybVar = intent.hasExtra("pwm.DataFieldNames.startAutomotiveActivity") ? awyb.e : awyb.a;
+                        fxxm.f(intent, "intent");
+                        azcbVar = intent.hasExtra("pwm.DataFieldNames.startAutomotiveActivity") ? azcb.e : azcb.a;
                     }
                 }
             }
         }
-        final avmj avmjVar = (avmj) jrhVar.a(avmj.class);
+        final axqj axqjVar = (axqj) jxwVar.a(axqj.class);
         Intent intent2 = getIntent();
-        fvbo.f(intent2, "intent");
+        fxxm.f(intent2, "intent");
         String stringExtra = intent2.getStringExtra("utm_source");
         String stringExtra2 = intent2.getStringExtra("utm_medium");
         String stringExtra3 = intent2.getStringExtra("utm_campaign");
-        awyc awycVar = (stringExtra == null && stringExtra2 == null && stringExtra3 == null) ? null : new awyc(stringExtra, stringExtra2, stringExtra3);
-        if (awycVar != null) {
-            fvbo.f(awybVar, "startUpType");
-            avea aveaVar = avmjVar.a;
-            fvbo.f(awybVar, "startUpType");
-            aveaVar.a(awybVar);
-            aveaVar.f = awycVar.a;
-            aveaVar.g = awycVar.b;
-            aveaVar.h = awycVar.c;
+        azcc azccVar = (stringExtra == null && stringExtra2 == null && stringExtra3 == null) ? null : new azcc(stringExtra, stringExtra2, stringExtra3);
+        if (azccVar != null) {
+            fxxm.f(azcbVar, "startUpType");
+            axhz axhzVar = axqjVar.a;
+            fxxm.f(azcbVar, "startUpType");
+            axhzVar.a(azcbVar);
+            axhzVar.f = azccVar.a;
+            axhzVar.g = azccVar.b;
+            axhzVar.h = azccVar.c;
         } else {
-            fvbo.f(awybVar, "startUpType");
-            avmjVar.a.a(awybVar);
+            fxxm.f(azcbVar, "startUpType");
+            axqjVar.a.a(azcbVar);
         }
-        avki avkiVar = (avki) jrhVar.a(avki.class);
-        this.p = avkiVar;
-        jpc jpcVar = avkiVar.b;
-        Objects.requireNonNull(avmjVar);
-        jpcVar.g(this, new jpd() { // from class: attj
-            @Override // defpackage.jpd
+        axoh axohVar = (axoh) jxwVar.a(axoh.class);
+        this.p = axohVar;
+        jvr jvrVar = axohVar.b;
+        Objects.requireNonNull(axqjVar);
+        jvrVar.g(this, new jvs() { // from class: avxm
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                avea aveaVar2 = avmj.this.a;
+                axhz axhzVar2 = axqj.this.a;
                 String str2 = (String) obj;
-                if (aveaVar2.d || eiif.c(str2)) {
+                if (axhzVar2.d || ekvk.c(str2)) {
                     return;
                 }
-                aveaVar2.c(eshk.PWM_SEARCH);
-                aveaVar2.d = true;
+                axhzVar2.c(euwz.PWM_SEARCH);
+                axhzVar2.d = true;
             }
         });
-        avlv avlvVar = (avlv) jrhVar.a(avlv.class);
-        this.k = avlvVar;
-        avlvVar.b.g(this, new jpd() { // from class: attm
-            @Override // defpackage.jpd
+        axpu axpuVar = (axpu) jxwVar.a(axpu.class);
+        this.k = axpuVar;
+        axpuVar.b.g(this, new jvs() { // from class: avxp
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                PasswordManagerChimeraActivity.this.l.b(new ace((PendingIntent) obj).a());
+                PasswordManagerChimeraActivity.this.l.b(new acj((PendingIntent) obj).a());
             }
         });
-        if (fnha.d()) {
-            ((avhl) jrhVar.a(avhl.class)).b.g(this, new jpd() { // from class: attn
-                @Override // defpackage.jpd
+        if (fpza.d()) {
+            ((axlk) jxwVar.a(axlk.class)).b.g(this, new jvs() { // from class: avxq
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
-                    PasswordManagerChimeraActivity.this.m.b(avnc.ERROR_SCREEN);
+                    PasswordManagerChimeraActivity.this.m.b(axrc.ERROR_SCREEN);
                 }
             });
         } else {
-            ((avhl) jrhVar.a(avhl.class)).a.g(this, new jpd() { // from class: atto
-                @Override // defpackage.jpd
+            ((axlk) jxwVar.a(axlk.class)).a.g(this, new jvs() { // from class: avxr
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
                     if (((Boolean) obj).booleanValue()) {
-                        PasswordManagerChimeraActivity.this.m.b(avnc.ERROR_SCREEN);
+                        PasswordManagerChimeraActivity.this.m.b(axrc.ERROR_SCREEN);
                     }
                 }
             });
         }
-        if (fnha.d()) {
-            avkw avkwVar = (avkw) jrhVar.a(avkw.class);
-            avkwVar.b(awybVar);
-            avkwVar.r.g(this, new jpd() { // from class: attl
-                @Override // defpackage.jpd
+        if (fpza.d()) {
+            axov axovVar = (axov) jxwVar.a(axov.class);
+            axovVar.b(azcbVar);
+            axovVar.r.g(this, new jvs() { // from class: avxo
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
-                    ((ejhf) ((ejhf) PasswordManagerChimeraActivity.j.h()).ah((char) 3323)).x("The passwords manager could not load the required data on startup and therefore exciting.");
+                    ((eluo) ((eluo) PasswordManagerChimeraActivity.j.h()).ai((char) 3327)).x("The passwords manager could not load the required data on startup and therefore exciting.");
                     PasswordManagerChimeraActivity.this.finish();
                 }
             });
             if (bundle == null) {
-                this.m.d(avnc.LOADING_SCREEN, true, ipt.a(new fuvb("deep_link_to_details_screen_sign_on_realm_tag", getIntent().getStringExtra("pwm.DataFieldNames.deepLinkToSignonRealm"))));
+                this.m.d(axrc.LOADING_SCREEN, true, irj.a(new fxqz("deep_link_to_details_screen_sign_on_realm_tag", getIntent().getStringExtra("pwm.DataFieldNames.deepLinkToSignonRealm"))));
             }
         } else {
-            avkw avkwVar2 = (avkw) jrhVar.a(avkw.class);
-            avkwVar2.b(awybVar);
+            axov axovVar2 = (axov) jxwVar.a(axov.class);
+            axovVar2.b(azcbVar);
             final SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.main_swipe_refresh_layout);
-            jox joxVar = avkwVar2.l;
+            jvm jvmVar = axovVar2.l;
             Objects.requireNonNull(swipeRefreshLayout);
-            joxVar.g(this, new jpd() { // from class: attp
-                @Override // defpackage.jpd
+            jvmVar.g(this, new jvs() { // from class: avxs
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
                     SwipeRefreshLayout.this.k(((Boolean) obj).booleanValue());
                 }
             });
-            avkwVar2.m.g(this, new jpd() { // from class: attq
-                @Override // defpackage.jpd
+            axovVar2.m.g(this, new jvs() { // from class: avxt
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
-                    PasswordManagerChimeraActivity.this.l(avnc.HOME_SCREEN, awlo.a(HomeScreenNavigationBundle$StartScreen.a));
+                    PasswordManagerChimeraActivity.this.l(axrc.HOME_SCREEN, aypo.a(HomeScreenNavigationBundle$StartScreen.a));
                 }
             });
-            avkwVar2.n.g(this, new jpd() { // from class: attr
-                @Override // defpackage.jpd
+            axovVar2.n.g(this, new jvs() { // from class: avxu
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
-                    PasswordManagerChimeraActivity.this.k(avnc.PICKER_SCREEN);
+                    PasswordManagerChimeraActivity.this.k(axrc.PICKER_SCREEN);
                 }
             });
-            avkwVar2.o.g(this, new jpd() { // from class: atts
-                @Override // defpackage.jpd
+            axovVar2.o.g(this, new jvs() { // from class: avxv
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
                     PasswordManagerChimeraActivity passwordManagerChimeraActivity = PasswordManagerChimeraActivity.this;
-                    if (((avga) jrhVar.a(avga.class)).c(passwordManagerChimeraActivity.getIntent().getStringExtra("pwm.DataFieldNames.deepLinkToSignonRealm"))) {
-                        passwordManagerChimeraActivity.l(avnc.REAUTH_SCREEN, awga.a(avnc.DETAIL_SCREEN, awjd.a(false)));
+                    if (((axjz) jxwVar.a(axjz.class)).c(passwordManagerChimeraActivity.getIntent().getStringExtra("pwm.DataFieldNames.deepLinkToSignonRealm"))) {
+                        passwordManagerChimeraActivity.l(axrc.REAUTH_SCREEN, ayka.a(axrc.DETAIL_SCREEN, aynd.a(false)));
                         return;
                     }
-                    ((ejhf) ((ejhf) PasswordManagerChimeraActivity.j.h()).ah((char) 3325)).x("Unable to navigate to details screen, finish current activity.");
+                    ((eluo) ((eluo) PasswordManagerChimeraActivity.j.h()).ai((char) 3329)).x("Unable to navigate to details screen, finish current activity.");
                     passwordManagerChimeraActivity.setResult(0);
                     passwordManagerChimeraActivity.finish();
                 }
             });
-            avkwVar2.p.g(this, new jpd() { // from class: attf
-                @Override // defpackage.jpd
+            axovVar2.p.g(this, new jvs() { // from class: avxi
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
-                    PasswordManagerChimeraActivity.this.l(avnc.HOME_SCREEN, awlo.a(HomeScreenNavigationBundle$StartScreen.b));
+                    PasswordManagerChimeraActivity.this.l(axrc.HOME_SCREEN, aypo.a(HomeScreenNavigationBundle$StartScreen.b));
                 }
             });
-            avkwVar2.r.g(this, new jpd() { // from class: attg
-                @Override // defpackage.jpd
+            axovVar2.r.g(this, new jvs() { // from class: avxj
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
-                    ((ejhf) ((ejhf) PasswordManagerChimeraActivity.j.h()).ah((char) 3324)).x("StartupViewModel requires to finish current activity.");
+                    ((eluo) ((eluo) PasswordManagerChimeraActivity.j.h()).ai((char) 3328)).x("StartupViewModel requires to finish current activity.");
                     PasswordManagerChimeraActivity.this.finish();
                 }
             });
-            avkwVar2.q.g(this, new jpd() { // from class: atth
-                @Override // defpackage.jpd
+            axovVar2.q.g(this, new jvs() { // from class: avxk
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
-                    PasswordManagerChimeraActivity.this.k(avnc.PASSKEY_WIZARD_SCREEN);
+                    PasswordManagerChimeraActivity.this.k(axrc.PASSKEY_WIZARD_SCREEN);
                 }
             });
         }
-        this.q = (awha) jrhVar.a(awha.class);
+        this.q = (ayla) jxwVar.a(ayla.class);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj, android.view.Window.Callback
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn, android.view.Window.Callback
     public final boolean dispatchTouchEvent(MotionEvent motionEvent) {
-        awgy awgyVar = this.q.a;
-        if (awgyVar.b()) {
-            awgyVar.a();
+        ayky aykyVar = this.q.a;
+        if (aykyVar.b()) {
+            aykyVar.a();
         }
         return super.dispatchTouchEvent(motionEvent);
     }
 
-    public final void k(avnc avncVar) {
-        this.m.c(avncVar, true);
+    public final void k(axrc axrcVar) {
+        this.m.c(axrcVar, true);
     }
 
-    public final void l(avnc avncVar, Bundle bundle) {
-        this.m.d(avncVar, true, bundle);
+    public final void l(axrc axrcVar, Bundle bundle) {
+        this.m.d(axrcVar, true, bundle);
     }
 
-    @Override // defpackage.attw, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.avxz, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(final Bundle bundle) {
         LinearLayout linearLayout;
         super.onCreate(bundle);
         setTheme(R.style.PwmAppTheme);
-        if (fnha.d()) {
+        if (fpza.d()) {
             setContentView(R.layout.pwm_activity);
         } else {
             setContentView(R.layout.pwm_activity_old);
             SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.main_swipe_refresh_layout);
             swipeRefreshLayout.setEnabled(false);
-            awyv.b(swipeRefreshLayout);
+            azcv.b(swipeRefreshLayout);
         }
         if (new Intent("android.app.action.SET_NEW_PASSWORD").resolveActivity(getPackageManager()) == null) {
-            ((ejhf) ((ejhf) j.h()).ah((char) 3327)).x("Need to start password manager in browser, finish current activity, launch password manager in browser.");
+            ((eluo) ((eluo) j.h()).ai((char) 3331)).x("Need to start password manager in browser, finish current activity, launch password manager in browser.");
             startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://passwords.google.com")));
             finish();
             return;
         }
-        this.l = registerForActivityResult(new acm(), new abt() { // from class: attk
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
-                eiid eiidVar;
+        this.l = registerForActivityResult(new acr(), new aby() { // from class: avxn
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
+                ekvi ekviVar;
                 ActivityResult activityResult = (ActivityResult) obj;
                 int i = activityResult.a;
-                avlv avlvVar = PasswordManagerChimeraActivity.this.k;
+                axpu axpuVar = PasswordManagerChimeraActivity.this.k;
                 if (i != 0) {
-                    eiidVar = eigb.a;
+                    ekviVar = ektg.a;
                 } else {
                     Intent intent = activityResult.b;
                     if (intent == null || !"androidx.activity.result.contract.action.INTENT_SENDER_REQUEST".equals(intent.getAction())) {
-                        eiidVar = eigb.a;
+                        ekviVar = ektg.a;
                     } else {
                         Serializable serializableExtra = intent.getSerializableExtra("androidx.activity.result.contract.extra.SEND_INTENT_EXCEPTION");
-                        eiidVar = !(serializableExtra instanceof IntentSender.SendIntentException) ? eigb.a : eiid.j((IntentSender.SendIntentException) serializableExtra);
+                        ekviVar = !(serializableExtra instanceof IntentSender.SendIntentException) ? ektg.a : ekvi.j((IntentSender.SendIntentException) serializableExtra);
                     }
                 }
-                avde avdeVar = avlvVar.a;
-                dfau dfauVar = avdeVar.b;
-                if (dfauVar == null) {
-                    ((ejhf) avde.a.j()).x("Could not report back result of successful resolution.");
+                axhd axhdVar = axpuVar.a;
+                dhma dhmaVar = axhdVar.b;
+                if (dhmaVar == null) {
+                    ((eluo) axhd.a.j()).x("Could not report back result of successful resolution.");
                     return;
                 }
                 if (i == -1) {
-                    dfauVar.b(null);
-                } else if (eiidVar.h()) {
-                    dfauVar.a(new avdd((Throwable) eiidVar.c()));
+                    dhmaVar.b(null);
+                } else if (ekviVar.h()) {
+                    dhmaVar.a(new axhc((Throwable) ekviVar.c()));
                 } else {
-                    dfauVar.a(new avdd());
+                    dhmaVar.a(new axhc());
                 }
-                avdeVar.b = null;
+                axhdVar.b = null;
             }
         });
-        getSupportFragmentManager().q(new attt(this));
-        if (fnha.a.a().e() && fnha.d() && (linearLayout = (LinearLayout) findViewById(R.id.main_container)) != null) {
-            itj itjVar = new itj() { // from class: atti
-                @Override // defpackage.itj
-                public final iwd eB(View view, iwd iwdVar) {
-                    asot asotVar = PasswordManagerChimeraActivity.j;
-                    imx f = iwdVar.f(647);
+        getSupportFragmentManager().q(new avxw(this));
+        if (fpza.a.lK().e() && fpza.d() && (linearLayout = (LinearLayout) findViewById(R.id.main_container)) != null) {
+            iuz iuzVar = new iuz() { // from class: avxl
+                @Override // defpackage.iuz
+                public final ixt eB(View view, ixt ixtVar) {
+                    ausn ausnVar = PasswordManagerChimeraActivity.j;
+                    ioo f = ixtVar.f(647);
                     ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
                     marginLayoutParams.leftMargin = f.b;
                     marginLayoutParams.topMargin = f.c;
                     marginLayoutParams.rightMargin = f.d;
                     marginLayoutParams.bottomMargin = f.e;
                     view.setLayoutParams(marginLayoutParams);
-                    return iwd.a;
+                    return ixt.a;
                 }
             };
-            int[] iArr = iuo.a;
-            iuf.k(linearLayout, itjVar);
+            int[] iArr = iwe.a;
+            ivv.k(linearLayout, iuzVar);
         }
-        aveg avegVar = (aveg) new jrh(this).a(aveg.class);
-        this.r = avegVar;
-        String str = (String) avegVar.a.d("account_name_key");
+        axif axifVar = (axif) new jxw(this).a(axif.class);
+        this.r = axifVar;
+        String str = (String) axifVar.a.d("account_name_key");
         if (str != null) {
             a(str, bundle);
             return;
         }
-        aveg avegVar2 = this.r;
+        axif axifVar2 = this.r;
         String stringExtra = getIntent().getStringExtra("pwm.DataFieldNames.accountName");
-        List h = asnd.h(this, getPackageName());
-        if (!avegVar2.b.getAndSet(true)) {
-            fvgt.b(jqw.a(avegVar2), null, null, new avef(avegVar2, stringExtra, h, null), 3);
+        List h = auqx.h(this, getPackageName());
+        if (!axifVar2.b.getAndSet(true)) {
+            fycr.b(jxl.a(axifVar2), null, null, new axie(axifVar2, stringExtra, h, null), 3);
         }
-        this.r.d.g(this, new jpd() { // from class: atte
-            @Override // defpackage.jpd
+        this.r.d.g(this, new jvs() { // from class: avxh
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 PasswordManagerChimeraActivity.this.a((String) obj, bundle);
             }
         });
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        ((ejhf) ((ejhf) j.h()).ah((char) 3326)).x("New intent received, finish current activity, launch activity for the new intent.");
+        ((eluo) ((eluo) j.h()).ai((char) 3330)).x("New intent received, finish current activity, launch activity for the new intent.");
         startActivity(intent);
         finish();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         requestVisibleBehind(true);

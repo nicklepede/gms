@@ -3,17 +3,17 @@ package com.google.android.gms.wallet.analytics.events;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.digq;
-import defpackage.divs;
-import defpackage.divt;
-import defpackage.emcy;
-import defpackage.emcz;
-import defpackage.fecj;
+import defpackage.dksb;
+import defpackage.dlhd;
+import defpackage.dlhe;
+import defpackage.eoqm;
+import defpackage.eoqn;
+import defpackage.fgrc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class SubmitButtonPositionEvent extends WalletAnalyticsEvent implements divs {
-    public static final Parcelable.Creator CREATOR = new digq();
+public class SubmitButtonPositionEvent extends WalletAnalyticsEvent implements dlhd {
+    public static final Parcelable.Creator CREATOR = new dksb();
     public final boolean a;
     public final int b;
 
@@ -23,23 +23,23 @@ public class SubmitButtonPositionEvent extends WalletAnalyticsEvent implements d
         this.m = str;
     }
 
-    @Override // defpackage.divs
-    public final void b(Context context, divt divtVar, fecj fecjVar) {
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+    @Override // defpackage.dlhd
+    public final void b(Context context, dlhe dlheVar, fgrc fgrcVar) {
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
         int i = this.b;
-        emcz emczVar = (emcz) fecjVar.b;
-        emcz emczVar2 = emcz.a;
-        emczVar.i = i - 1;
-        emczVar.b |= 16;
+        eoqn eoqnVar = (eoqn) fgrcVar.b;
+        eoqn eoqnVar2 = eoqn.a;
+        eoqnVar.i = i - 1;
+        eoqnVar.b |= 16;
         boolean z = this.a;
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        emcz emczVar3 = (emcz) fecjVar.b;
-        emczVar3.b |= 32;
-        emczVar3.j = z;
+        eoqn eoqnVar3 = (eoqn) fgrcVar.b;
+        eoqnVar3.b |= 32;
+        eoqnVar3.j = z;
     }
 
     @Override // android.os.Parcelable
@@ -56,7 +56,7 @@ public class SubmitButtonPositionEvent extends WalletAnalyticsEvent implements d
 
     public SubmitButtonPositionEvent(Parcel parcel) {
         super(parcel);
-        int a = emcy.a(parcel.readInt());
+        int a = eoqm.a(parcel.readInt());
         this.b = a == 0 ? 1 : a;
         this.a = parcel.readInt() == 1;
     }

@@ -7,53 +7,53 @@ import android.os.SystemClock;
 import android.util.Log;
 import com.google.android.gms.gcm.DataMessageManager$BroadcastDoneReceiver;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.bhwo;
-import defpackage.biac;
-import defpackage.deqq;
-import defpackage.deqr;
-import defpackage.dfau;
-import defpackage.eguu;
+import defpackage.bkbd;
+import defpackage.bker;
+import defpackage.dhbt;
+import defpackage.dhbu;
+import defpackage.dhma;
+import defpackage.ejhz;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DataMessageManager$BroadcastDoneReceiver extends TracingBroadcastReceiver {
-    public final dfau a;
+    public final dhma a;
     boolean b;
-    private final bhwo c;
+    private final bkbd c;
     private final Intent d;
-    private final eguu e;
+    private final ejhz e;
     private final long f;
-    private final deqr g;
+    private final dhbu g;
     private final boolean h;
-    private final deqq i;
+    private final dhbt i;
 
-    public DataMessageManager$BroadcastDoneReceiver(bhwo bhwoVar, Intent intent, eguu eguuVar, long j, deqq deqqVar) {
+    public DataMessageManager$BroadcastDoneReceiver(bkbd bkbdVar, Intent intent, ejhz ejhzVar, long j, dhbt dhbtVar) {
         super("gcm");
-        this.a = new dfau();
+        this.a = new dhma();
         this.b = true;
-        this.c = bhwoVar;
+        this.c = bkbdVar;
         this.d = intent;
-        this.e = eguuVar;
+        this.e = ejhzVar;
         this.f = j;
         this.g = null;
-        this.i = deqqVar;
+        this.i = dhbtVar;
         this.h = true;
     }
 
     public final boolean b() {
         boolean z = true;
         if (this.h) {
-            deqq deqqVar = this.i;
-            if (deqqVar != null) {
-                deqqVar.a();
+            dhbt dhbtVar = this.i;
+            if (dhbtVar != null) {
+                dhbtVar.a();
             }
             return true;
         }
         synchronized (this) {
             if (this.b) {
-                deqr deqrVar = this.g;
-                if (deqrVar != null) {
-                    deqrVar.g();
+                dhbu dhbuVar = this.g;
+                if (dhbuVar != null) {
+                    dhbuVar.g();
                 } else {
                     this.c.m();
                 }
@@ -66,44 +66,44 @@ public class DataMessageManager$BroadcastDoneReceiver extends TracingBroadcastRe
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         int resultCode = getResultCode();
         long elapsedRealtime = SystemClock.elapsedRealtime() - this.f;
-        bhwo bhwoVar = this.c;
-        eguu eguuVar = this.e;
+        bkbd bkbdVar = this.c;
+        ejhz ejhzVar = this.e;
         if (resultCode == -1) {
-            GcmChimeraService.b("Successful broadcast to %s (id=%s time=%dms priority=%s)", eguuVar.f, eguuVar.i, Long.valueOf(elapsedRealtime), bhwoVar.e(eguuVar.r));
+            GcmChimeraService.b("Successful broadcast to %s (id=%s time=%dms priority=%s)", ejhzVar.f, ejhzVar.i, Long.valueOf(elapsedRealtime), bkbdVar.e(ejhzVar.r));
         } else if (resultCode == 0) {
             Intent intent2 = this.d;
             Log.w("GCM", "broadcast intent callback: result=CANCELLED for".concat(String.valueOf(String.valueOf(intent2))));
             String str = intent2.getPackage();
             if (str == null) {
-                GcmChimeraService.b("Broadcast sent to %s missing Intent package (id=%s time=%dms priority=%s)", eguuVar.f, eguuVar.i, Long.valueOf(elapsedRealtime), bhwoVar.e(eguuVar.r));
+                GcmChimeraService.b("Broadcast sent to %s missing Intent package (id=%s time=%dms priority=%s)", ejhzVar.f, ejhzVar.i, Long.valueOf(elapsedRealtime), bkbdVar.e(ejhzVar.r));
             } else {
-                biac biacVar = new biac(intent2.getPackage(), (int) eguuVar.l);
-                if (bhwoVar.g.c(biacVar)) {
+                bker bkerVar = new bker(intent2.getPackage(), (int) ejhzVar.l);
+                if (bkbdVar.g.c(bkerVar)) {
                     try {
-                        if ((biacVar.a(bhwoVar.q, 8192).flags & 2097152) != 0) {
-                            GcmChimeraService.b("Failed to broadcast to stopped app %s (id=%s time=%dms priority=%s)", eguuVar.f, eguuVar.i, Long.valueOf(elapsedRealtime), bhwoVar.e(eguuVar.r));
-                            bhwoVar.o.c(new biac(eguuVar.f, (int) eguuVar.l), eguuVar.i, eguuVar.r, (eguuVar.b & 268435456) != 0 ? Integer.valueOf(eguuVar.s) : null, 7);
+                        if ((bkerVar.a(bkbdVar.q, 8192).flags & 2097152) != 0) {
+                            GcmChimeraService.b("Failed to broadcast to stopped app %s (id=%s time=%dms priority=%s)", ejhzVar.f, ejhzVar.i, Long.valueOf(elapsedRealtime), bkbdVar.e(ejhzVar.r));
+                            bkbdVar.o.c(new bker(ejhzVar.f, (int) ejhzVar.l), ejhzVar.i, ejhzVar.r, (ejhzVar.b & 268435456) != 0 ? Integer.valueOf(ejhzVar.s) : null, 7);
                         }
                     } catch (PackageManager.NameNotFoundException unused) {
                     }
-                    GcmChimeraService.b("No response to broadcast from %s (id=%s time=%dms priority=%s)", eguuVar.f, eguuVar.i, Long.valueOf(elapsedRealtime), bhwoVar.e(eguuVar.r));
-                } else if (bhwoVar.g.b.p(biacVar) == 2) {
-                    GcmChimeraService.b("Failed to broadcast to %s, it may be updating (id=%s time=%dms priority=%s)", str, eguuVar.i, Long.valueOf(elapsedRealtime), bhwoVar.e(eguuVar.r));
-                    bhwoVar.u.c(eguuVar);
+                    GcmChimeraService.b("No response to broadcast from %s (id=%s time=%dms priority=%s)", ejhzVar.f, ejhzVar.i, Long.valueOf(elapsedRealtime), bkbdVar.e(ejhzVar.r));
+                } else if (bkbdVar.g.b.p(bkerVar) == 2) {
+                    GcmChimeraService.b("Failed to broadcast to %s, it may be updating (id=%s time=%dms priority=%s)", str, ejhzVar.i, Long.valueOf(elapsedRealtime), bkbdVar.e(ejhzVar.r));
+                    bkbdVar.u.c(ejhzVar);
                 } else {
-                    GcmChimeraService.b("Failed to broadcast to uninstalled app %s (id=%s time=%dms priority=%s)", str, eguuVar.i, Long.valueOf(elapsedRealtime), bhwoVar.e(eguuVar.r));
-                    bhwoVar.o.c(biacVar, eguuVar.i, eguuVar.r, (eguuVar.b & 268435456) != 0 ? Integer.valueOf(eguuVar.s) : null, 5);
-                    bhwoVar.o(biacVar);
+                    GcmChimeraService.b("Failed to broadcast to uninstalled app %s (id=%s time=%dms priority=%s)", str, ejhzVar.i, Long.valueOf(elapsedRealtime), bkbdVar.e(ejhzVar.r));
+                    bkbdVar.o.c(bkerVar, ejhzVar.i, ejhzVar.r, (ejhzVar.b & 268435456) != 0 ? Integer.valueOf(ejhzVar.s) : null, 5);
+                    bkbdVar.o(bkerVar);
                 }
             }
         } else {
-            GcmChimeraService.b("%s returned error code=%d to broadcast (id=%s time=%dms priority=%s)", eguuVar.f, Integer.valueOf(resultCode), eguuVar.i, Long.valueOf(elapsedRealtime), bhwoVar.e(eguuVar.r));
+            GcmChimeraService.b("%s returned error code=%d to broadcast (id=%s time=%dms priority=%s)", ejhzVar.f, Integer.valueOf(resultCode), ejhzVar.i, Long.valueOf(elapsedRealtime), bkbdVar.e(ejhzVar.r));
         }
         this.a.c(null);
-        this.c.c.execute(new Runnable() { // from class: bhwn
+        this.c.c.execute(new Runnable() { // from class: bkbc
             @Override // java.lang.Runnable
             public final void run() {
                 DataMessageManager$BroadcastDoneReceiver.this.b();
@@ -111,15 +111,15 @@ public class DataMessageManager$BroadcastDoneReceiver extends TracingBroadcastRe
         });
     }
 
-    public DataMessageManager$BroadcastDoneReceiver(bhwo bhwoVar, Intent intent, eguu eguuVar, long j, deqr deqrVar) {
+    public DataMessageManager$BroadcastDoneReceiver(bkbd bkbdVar, Intent intent, ejhz ejhzVar, long j, dhbu dhbuVar) {
         super("gcm");
-        this.a = new dfau();
+        this.a = new dhma();
         this.b = true;
-        this.c = bhwoVar;
+        this.c = bkbdVar;
         this.d = intent;
-        this.e = eguuVar;
+        this.e = ejhzVar;
         this.f = j;
-        this.g = deqrVar;
+        this.g = dhbuVar;
         this.i = null;
         this.h = false;
     }

@@ -2,10 +2,10 @@ package com.google.android.gms.wallet.im;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.diro;
-import defpackage.dirp;
+import defpackage.dlcz;
+import defpackage.dlda;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class InstrumentManagerResult implements Parcelable {
     public String b;
@@ -13,13 +13,13 @@ public class InstrumentManagerResult implements Parcelable {
     public byte[] d;
     public byte[] e;
     public static final InstrumentManagerResult a = a().a;
-    public static final Parcelable.Creator CREATOR = new diro();
+    public static final Parcelable.Creator CREATOR = new dlcz();
 
     private InstrumentManagerResult() {
     }
 
-    public static dirp a() {
-        return new dirp(new InstrumentManagerResult());
+    public static dlda a() {
+        return new dlda(new InstrumentManagerResult());
     }
 
     @Override // android.os.Parcelable

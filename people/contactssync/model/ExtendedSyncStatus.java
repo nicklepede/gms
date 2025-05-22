@@ -3,14 +3,14 @@ package com.google.android.gms.people.contactssync.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ctwl;
+import defpackage.atzr;
+import defpackage.cwfr;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ExtendedSyncStatus extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctwl();
+    public static final Parcelable.Creator CREATOR = new cwfr();
     public final int a;
     public final String b;
     public final long c;
@@ -40,16 +40,16 @@ public class ExtendedSyncStatus extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, i2);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.q(parcel, 4, this.c);
-        arxc.o(parcel, 5, this.d);
-        arxc.o(parcel, 6, this.e);
-        arxc.o(parcel, 7, this.f);
-        arxc.o(parcel, 8, this.g);
-        arxc.o(parcel, 9, this.h);
-        arxc.o(parcel, 10, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, i2);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.q(parcel, 4, this.c);
+        atzr.o(parcel, 5, this.d);
+        atzr.o(parcel, 6, this.e);
+        atzr.o(parcel, 7, this.f);
+        atzr.o(parcel, 8, this.g);
+        atzr.o(parcel, 9, this.h);
+        atzr.o(parcel, 10, this.i);
+        atzr.c(parcel, a);
     }
 }

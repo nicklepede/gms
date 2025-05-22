@@ -3,20 +3,20 @@ package com.google.android.gms.fitness.data;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgea;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.biiq;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class RawBucket extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgea();
+    public static final Parcelable.Creator CREATOR = new biiq();
     public final long a;
     public final long b;
     public final Session c;
@@ -41,7 +41,7 @@ public final class RawBucket extends AbstractSafeParcelable {
             return false;
         }
         RawBucket rawBucket = (RawBucket) obj;
-        return this.a == rawBucket.a && this.b == rawBucket.b && this.d == rawBucket.d && arwb.b(this.e, rawBucket.e) && this.f == rawBucket.f;
+        return this.a == rawBucket.a && this.b == rawBucket.b && this.d == rawBucket.d && atyq.b(this.e, rawBucket.e) && this.f == rawBucket.f;
     }
 
     public final int hashCode() {
@@ -50,24 +50,24 @@ public final class RawBucket extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("startTime", Long.valueOf(this.a), arrayList);
-        arwa.b("endTime", Long.valueOf(this.b), arrayList);
-        arwa.b("activity", Integer.valueOf(this.d), arrayList);
-        arwa.b("dataSets", this.e, arrayList);
-        arwa.b("bucketType", Integer.valueOf(this.f), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("startTime", Long.valueOf(this.a), arrayList);
+        atyp.b("endTime", Long.valueOf(this.b), arrayList);
+        atyp.b("activity", Integer.valueOf(this.d), arrayList);
+        atyp.b("dataSets", this.e, arrayList);
+        atyp.b("bucketType", Integer.valueOf(this.f), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, this.a);
-        arxc.q(parcel, 2, this.b);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.o(parcel, 4, this.d);
-        arxc.y(parcel, 5, this.e, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, this.a);
+        atzr.q(parcel, 2, this.b);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.o(parcel, 4, this.d);
+        atzr.y(parcel, 5, this.e, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 
     public RawBucket(Bucket bucket, List list) {

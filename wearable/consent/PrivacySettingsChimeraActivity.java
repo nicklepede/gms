@@ -2,44 +2,44 @@ package com.google.android.gms.wearable.consent;
 
 import android.util.Log;
 import defpackage.dg;
-import defpackage.dkbt;
-import defpackage.dkbu;
-import defpackage.dkbz;
-import defpackage.dkcc;
-import defpackage.dkek;
+import defpackage.dmnm;
+import defpackage.dmnn;
+import defpackage.dmns;
+import defpackage.dmnv;
+import defpackage.dmqd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class PrivacySettingsChimeraActivity extends dkbz implements dkbu {
-    public dkbu j;
+public class PrivacySettingsChimeraActivity extends dmns implements dmnn {
+    public dmnn j;
 
-    @Override // defpackage.dkbu
+    @Override // defpackage.dmnn
     public final void a(int i) {
-        dkbu dkbuVar = this.j;
-        if (dkbuVar != null) {
-            dkbuVar.a(i);
+        dmnn dmnnVar = this.j;
+        if (dmnnVar != null) {
+            dmnnVar.a(i);
             return;
         }
-        Log.e("wearable.Privacy", "onCloudSyncDisableConfirmed  " + dkbt.a(i) + " dropped: no listener set.");
+        Log.e("wearable.Privacy", "onCloudSyncDisableConfirmed  " + dmnm.a(i) + " dropped: no listener set.");
     }
 
-    @Override // defpackage.qet
-    public final boolean hu() {
+    @Override // defpackage.rxx
+    public final boolean hK() {
         finish();
         return true;
     }
 
-    @Override // defpackage.dkbz
-    protected final dg k(dkcc dkccVar) {
+    @Override // defpackage.dmns
+    protected final dg k(dmnv dmnvVar) {
         if (Log.isLoggable("wearable.Consents", 3)) {
-            Log.d("wearable.Consents", String.format("[PrivacySettingsFragment] newInstance(%b)", Boolean.valueOf(dkccVar.b)));
+            Log.d("wearable.Consents", String.format("[PrivacySettingsFragment] newInstance(%b)", Boolean.valueOf(dmnvVar.b)));
         }
-        dkek dkekVar = new dkek();
-        dkek.y(dkekVar, dkccVar);
-        return dkekVar;
+        dmqd dmqdVar = new dmqd();
+        dmqd.y(dmqdVar, dmnvVar);
+        return dmqdVar;
     }
 
-    @Override // defpackage.dkbz
+    @Override // defpackage.dmns
     protected final String l() {
         return "privacyFragment";
     }

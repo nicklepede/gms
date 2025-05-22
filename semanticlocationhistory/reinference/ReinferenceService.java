@@ -4,61 +4,61 @@ import android.content.Context;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.reinference.ReinferenceService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.czlp;
-import defpackage.dbbl;
-import defpackage.eipl;
-import defpackage.eiuu;
-import defpackage.ejck;
-import defpackage.fecj;
-import defpackage.fefi;
-import defpackage.fegu;
-import defpackage.fhio;
-import defpackage.frxj;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dbvl;
+import defpackage.ddlt;
+import defpackage.elcq;
+import defpackage.elhz;
+import defpackage.elpp;
+import defpackage.fgrc;
+import defpackage.fgub;
+import defpackage.fgvn;
+import defpackage.fjyl;
+import defpackage.fusd;
 import j$.time.Instant;
 import j$.util.Collection;
 import j$.util.function.Predicate$CC;
 import java.util.Random;
 import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ReinferenceService extends GmsTaskBoundService {
     public static final String a = "com.google.android.gms.semanticlocationhistory.reinference.ReinferenceService";
-    private czlk b;
+    private dbvg b;
 
     static {
-        asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "ReinferenceService");
+        ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "ReinferenceService");
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (!frxj.c()) {
+    public final int a(cauf caufVar) {
+        if (!fusd.c()) {
             return 0;
         }
-        frxj frxjVar = frxj.a;
-        dbbl d = frxjVar.a().d();
-        dbbl dbblVar = dbbl.a;
-        if (!(dbblVar.equals(d) ? ejck.a : ejck.a).isEmpty()) {
+        fusd fusdVar = fusd.a;
+        ddlt d = fusdVar.lK().d();
+        ddlt ddltVar = ddlt.a;
+        if (!(ddltVar.equals(d) ? elpp.a : elpp.a).isEmpty()) {
             return 0;
         }
         Context a2 = AppContextProvider.a();
         final Random random = new Random();
         if (this.b == null) {
-            this.b = new czlk(new czje());
+            this.b = new dbvg(new dbtc());
         }
-        if (((eiuu) Collection.EL.stream(czlp.b(a2, this.b)).filter(new Predicate() { // from class: dbek
+        if (((elhz) Collection.EL.stream(dbvl.b(a2, this.b)).filter(new Predicate() { // from class: ddos
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return Predicate$CC.$default$and(this, predicate);
             }
 
             @Override // java.util.function.Predicate
             /* renamed from: negate */
-            public final /* synthetic */ Predicate mo463negate() {
+            public final /* synthetic */ Predicate mo478negate() {
                 return Predicate$CC.$default$negate(this);
             }
 
@@ -70,38 +70,38 @@ public class ReinferenceService extends GmsTaskBoundService {
             @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
                 String str = ReinferenceService.a;
-                return random.nextFloat() < ((float) frxj.a.a().a());
+                return random.nextFloat() < ((float) fusd.a.lK().a());
             }
-        }).collect(eipl.b)).isEmpty()) {
+        }).collect(elcq.b)).isEmpty()) {
             return 0;
         }
         Instant now = Instant.now();
-        fecj v = dbblVar.v();
-        fecj v2 = fhio.a.v();
-        fefi b = fegu.b(now.minusSeconds(frxjVar.a().c()));
+        fgrc v = ddltVar.v();
+        fgrc v2 = fjyl.a.v();
+        fgub b = fgvn.b(now.minusSeconds(fusdVar.lK().c()));
         if (!v2.b.L()) {
             v2.U();
         }
-        fhio fhioVar = (fhio) v2.b;
+        fjyl fjylVar = (fjyl) v2.b;
         b.getClass();
-        fhioVar.c = b;
-        fhioVar.b |= 1;
-        fefi b2 = fegu.b(now.minusSeconds(frxj.a.a().b()));
+        fjylVar.c = b;
+        fjylVar.b |= 1;
+        fgub b2 = fgvn.b(now.minusSeconds(fusdVar.lK().b()));
         if (!v2.b.L()) {
             v2.U();
         }
-        fhio fhioVar2 = (fhio) v2.b;
+        fjyl fjylVar2 = (fjyl) v2.b;
         b2.getClass();
-        fhioVar2.d = b2;
-        fhioVar2.b |= 2;
+        fjylVar2.d = b2;
+        fjylVar2.b |= 2;
         if (!v.b.L()) {
             v.U();
         }
-        dbbl dbblVar2 = (dbbl) v.b;
-        fhio fhioVar3 = (fhio) v2.Q();
-        fhioVar3.getClass();
-        dbblVar2.c = fhioVar3;
-        dbblVar2.b |= 1;
+        ddlt ddltVar2 = (ddlt) v.b;
+        fjyl fjylVar3 = (fjyl) v2.Q();
+        fjylVar3.getClass();
+        ddltVar2.c = fjylVar3;
+        ddltVar2.b |= 1;
         return 0;
     }
 }

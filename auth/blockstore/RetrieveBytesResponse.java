@@ -4,9 +4,9 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.zxn;
-import defpackage.zze;
+import defpackage.abxn;
+import defpackage.abze;
+import defpackage.atzr;
 import j$.util.DesugarCollections;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -14,19 +14,19 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class RetrieveBytesResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zze();
+    public static final Parcelable.Creator CREATOR = new abze();
 
     @Deprecated
     public final Bundle a;
     public final List b;
     private final Map c;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class BlockstoreData extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new zxn();
+        public static final Parcelable.Creator CREATOR = new abxn();
         public final byte[] a;
         public final String b;
 
@@ -52,10 +52,10 @@ public class RetrieveBytesResponse extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             byte[] bArr = this.a;
-            int a = arxc.a(parcel);
-            arxc.i(parcel, 1, bArr, false);
-            arxc.v(parcel, 2, this.b, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.i(parcel, 1, bArr, false);
+            atzr.v(parcel, 2, this.b, false);
+            atzr.c(parcel, a);
         }
     }
 
@@ -78,9 +78,9 @@ public class RetrieveBytesResponse extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Bundle bundle = this.a;
-        int a = arxc.a(parcel);
-        arxc.g(parcel, 1, bundle, false);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.g(parcel, 1, bundle, false);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

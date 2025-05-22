@@ -4,20 +4,20 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
-import defpackage.akue;
-import defpackage.albn;
-import defpackage.alsn;
-import defpackage.anxy;
-import defpackage.aojj;
-import defpackage.asew;
-import defpackage.asqh;
-import defpackage.flve;
+import defpackage.amvp;
+import defpackage.ancy;
+import defpackage.anty;
+import defpackage.apzq;
+import defpackage.aqlc;
+import defpackage.auiq;
+import defpackage.auub;
+import defpackage.fomn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class CarSetupGoogleSettingsIntentOperation extends anxy {
+public class CarSetupGoogleSettingsIntentOperation extends apzq {
     static {
-        albn.a("CAR.SETUP");
+        ancy.a("CAR.SETUP");
     }
 
     @Override // android.content.ContextWrapper
@@ -25,29 +25,29 @@ public class CarSetupGoogleSettingsIntentOperation extends anxy {
         super.attachBaseContext(context);
     }
 
-    @Override // defpackage.anxy
+    @Override // defpackage.apzq
     public final GoogleSettingsItem b() {
         String c;
-        if (!flve.a.a().j() || asqh.g()) {
+        fomn fomnVar = fomn.a;
+        if (!fomnVar.lK().j() || auub.g()) {
             return null;
         }
-        flve flveVar = flve.a;
-        if (flveVar.a().l()) {
-            if (new alsn(getApplicationContext()).a() != 0) {
+        if (fomnVar.lK().l()) {
+            if (new anty(getApplicationContext()).a() != 0) {
                 return null;
             }
-        } else if (!flveVar.a().k() || alsn.b(this)) {
+        } else if (!fomnVar.lK().k() || anty.b(this)) {
             return null;
         }
         Intent component = new Intent().setComponent(AaSettingsActivityImpl.j);
         try {
-            c = akue.c(this);
+            c = amvp.c(this);
         } catch (IllegalStateException | SecurityException unused) {
         }
         if (!AaSettingsActivityImpl.k(getPackageManager(), c)) {
             return null;
         }
         component.putExtra("gearhead_package", c);
-        return new GoogleSettingsItem(component, 6, getString(R.string.car_app_name), aojj.DEVICE_CONNECTIONS_ITEM, asew.DEFAULT_CAR_SETUP);
+        return new GoogleSettingsItem(component, 6, getString(R.string.car_app_name), aqlc.DEVICE_CONNECTIONS_ITEM, auiq.DEFAULT_CAR_SETUP);
     }
 }

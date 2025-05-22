@@ -4,17 +4,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cloi;
-import defpackage.cloj;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cnwq;
+import defpackage.cnwr;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class FileAttachment extends Attachment {
-    public static final Parcelable.Creator CREATOR = new cloj();
+    public static final Parcelable.Creator CREATOR = new cnwr();
     public final String a;
     public final int b;
     public final long c;
@@ -63,24 +63,24 @@ public final class FileAttachment extends Attachment {
 
     @Override // com.google.android.gms.nearby.sharing.Attachment
     /* renamed from: e, reason: merged with bridge method [inline-methods] */
-    public final cloi f() {
-        cloi cloiVar = new cloi(this.a);
-        cloiVar.a = this.g;
-        cloiVar.b = this.d;
-        cloiVar.c = this.c;
-        cloiVar.d = this.b;
-        cloiVar.e = this.f;
-        cloiVar.f = this.h;
-        cloiVar.g = this.i;
-        cloiVar.h = this.j;
-        cloiVar.i = this.k;
-        return cloiVar;
+    public final cnwq f() {
+        cnwq cnwqVar = new cnwq(this.a);
+        cnwqVar.a = this.g;
+        cnwqVar.b = this.d;
+        cnwqVar.c = this.c;
+        cnwqVar.d = this.b;
+        cnwqVar.e = this.f;
+        cnwqVar.f = this.h;
+        cnwqVar.g = this.i;
+        cnwqVar.h = this.j;
+        cnwqVar.i = this.k;
+        return cnwqVar;
     }
 
     public final boolean equals(Object obj) {
         if (obj instanceof FileAttachment) {
             FileAttachment fileAttachment = (FileAttachment) obj;
-            if (arwb.b(this.a, fileAttachment.a) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(fileAttachment.b)) && arwb.b(Long.valueOf(this.c), Long.valueOf(fileAttachment.c)) && arwb.b(this.d, fileAttachment.d) && arwb.b(this.f, fileAttachment.f) && arwb.b(Long.valueOf(this.g), Long.valueOf(fileAttachment.g)) && arwb.b(this.h, fileAttachment.h) && arwb.b(Long.valueOf(this.i), Long.valueOf(fileAttachment.i)) && arwb.b(Long.valueOf(this.j), Long.valueOf(fileAttachment.j)) && arwb.b(Boolean.valueOf(this.k), Boolean.valueOf(fileAttachment.k))) {
+            if (atyq.b(this.a, fileAttachment.a) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(fileAttachment.b)) && atyq.b(Long.valueOf(this.c), Long.valueOf(fileAttachment.c)) && atyq.b(this.d, fileAttachment.d) && atyq.b(this.f, fileAttachment.f) && atyq.b(Long.valueOf(this.g), Long.valueOf(fileAttachment.g)) && atyq.b(this.h, fileAttachment.h) && atyq.b(Long.valueOf(this.i), Long.valueOf(fileAttachment.i)) && atyq.b(Long.valueOf(this.j), Long.valueOf(fileAttachment.j)) && atyq.b(Boolean.valueOf(this.k), Boolean.valueOf(fileAttachment.k))) {
                 return true;
             }
         }
@@ -134,18 +134,18 @@ public final class FileAttachment extends Attachment {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.q(parcel, 3, this.c);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.g(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.q(parcel, 7, this.g);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.q(parcel, 9, this.i);
-        arxc.q(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.q(parcel, 3, this.c);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.g(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.q(parcel, 7, this.g);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.q(parcel, 9, this.i);
+        atzr.q(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.c(parcel, a);
     }
 }

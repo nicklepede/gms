@@ -4,18 +4,18 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.amae;
-import defpackage.amxr;
-import defpackage.arxc;
+import defpackage.aobp;
+import defpackage.aozc;
+import defpackage.atzr;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ApplicationMetadata extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new amae();
+    public static final Parcelable.Creator CREATOR = new aobp();
     public String a;
     public String b;
     public List c;
@@ -53,7 +53,7 @@ public class ApplicationMetadata extends AbstractSafeParcelable {
             return false;
         }
         ApplicationMetadata applicationMetadata = (ApplicationMetadata) obj;
-        return amxr.u(this.a, applicationMetadata.a) && amxr.u(this.b, applicationMetadata.b) && amxr.u(this.c, applicationMetadata.c) && amxr.u(this.d, applicationMetadata.d) && amxr.u(this.e, applicationMetadata.e) && amxr.u(this.f, applicationMetadata.f) && amxr.u(this.g, applicationMetadata.g) && this.j == applicationMetadata.j;
+        return aozc.u(this.a, applicationMetadata.a) && aozc.u(this.b, applicationMetadata.b) && aozc.u(this.c, applicationMetadata.c) && aozc.u(this.d, applicationMetadata.d) && aozc.u(this.e, applicationMetadata.e) && aozc.u(this.f, applicationMetadata.f) && aozc.u(this.g, applicationMetadata.g) && this.j == applicationMetadata.j;
     }
 
     public final int hashCode() {
@@ -69,19 +69,19 @@ public class ApplicationMetadata extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, this.a, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.y(parcel, 4, null, false);
-        arxc.x(parcel, 5, DesugarCollections.unmodifiableList(this.c), false);
-        arxc.v(parcel, 6, this.d, false);
-        arxc.t(parcel, 7, this.e, i, false);
-        arxc.v(parcel, 8, this.f, false);
-        arxc.v(parcel, 9, this.g, false);
-        arxc.z(parcel, 10, this.h);
-        arxc.z(parcel, 11, this.i);
-        arxc.o(parcel, 12, this.j);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, this.a, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.y(parcel, 4, null, false);
+        atzr.x(parcel, 5, DesugarCollections.unmodifiableList(this.c), false);
+        atzr.v(parcel, 6, this.d, false);
+        atzr.t(parcel, 7, this.e, i, false);
+        atzr.v(parcel, 8, this.f, false);
+        atzr.v(parcel, 9, this.g, false);
+        atzr.z(parcel, 10, this.h);
+        atzr.z(parcel, 11, this.i);
+        atzr.o(parcel, 12, this.j);
+        atzr.c(parcel, a);
     }
 
     public ApplicationMetadata() {

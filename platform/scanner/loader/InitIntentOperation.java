@@ -5,12 +5,12 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.util.Log;
 import com.google.android.chimera.config.ModuleManager;
-import defpackage.anya;
-import defpackage.fssy;
+import defpackage.apzs;
+import defpackage.fvor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class InitIntentOperation extends anya {
+public class InitIntentOperation extends apzs {
     private final void e() {
         ModuleManager moduleManager = ModuleManager.get(getApplicationContext());
         ModuleManager.FeatureCheck featureCheck = new ModuleManager.FeatureCheck();
@@ -33,9 +33,9 @@ public class InitIntentOperation extends anya {
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        if (fssy.a.a().a()) {
+        if (fvor.a.lK().a()) {
             e();
         }
     }

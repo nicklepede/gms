@@ -8,38 +8,38 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.wallet.ui.common.ClickableImageView;
-import defpackage.djgf;
-import defpackage.efee;
-import defpackage.efeh;
-import defpackage.efei;
-import defpackage.efwo;
-import defpackage.faso;
+import defpackage.dlry;
+import defpackage.ehrh;
+import defpackage.ehrk;
+import defpackage.ehrl;
+import defpackage.eijr;
+import defpackage.fdhd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class FilterCategoryChipButton extends LinearLayout implements View.OnClickListener, efee {
+public class FilterCategoryChipButton extends LinearLayout implements View.OnClickListener, ehrh {
     public TextView a;
     public ClickableImageView b;
-    public faso c;
-    public efeh d;
-    public djgf e;
+    public fdhd c;
+    public ehrk d;
+    public dlry e;
 
     public FilterCategoryChipButton(Context context) {
         super(context);
     }
 
-    @Override // defpackage.efee
-    public final void ks() {
-        efei.c(this.b, this.c.b, this.d);
+    @Override // defpackage.ehrh
+    public final void kH() {
+        ehrl.c(this.b, this.c.b, this.d);
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        djgf djgfVar = this.e;
-        if (djgfVar == null) {
+        dlry dlryVar = this.e;
+        if (dlryVar == null) {
             throw new IllegalStateException("FilterCategoryClickedListener is not set in FilterCategoryChipButton");
         }
-        djgfVar.b(this.c);
+        dlryVar.b(this.c);
     }
 
     @Override // android.view.View
@@ -49,13 +49,13 @@ public class FilterCategoryChipButton extends LinearLayout implements View.OnCli
         this.a = (TextView) findViewById(R.id.chip_button_text);
         ClickableImageView clickableImageView = (ClickableImageView) findViewById(R.id.remove_icon);
         this.b = clickableImageView;
-        efwo.M(clickableImageView, ColorStateList.valueOf(efwo.b(getContext(), android.R.attr.colorBackground)));
+        eijr.M(clickableImageView, ColorStateList.valueOf(eijr.b(getContext(), android.R.attr.colorBackground)));
     }
 
     @Override // android.view.View
     public final void setEnabled(boolean z) {
         super.setEnabled(z);
-        efwo.N(this, z);
+        eijr.N(this, z);
     }
 
     public FilterCategoryChipButton(Context context, AttributeSet attributeSet) {

@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.txm;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.vtl;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SourcedContactPerson extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new txm();
+    public static final Parcelable.Creator CREATOR = new vtl();
     public final ContactPerson a;
     public final int b;
 
@@ -27,8 +27,8 @@ public class SourcedContactPerson extends AbstractSafeParcelable implements Refl
         }
         if (obj != null && getClass() == obj.getClass()) {
             SourcedContactPerson sourcedContactPerson = (SourcedContactPerson) obj;
-            if (arwb.b(this.a, sourcedContactPerson.a)) {
-                if (arwb.b(Integer.valueOf(this.b), Integer.valueOf(sourcedContactPerson.b))) {
+            if (atyq.b(this.a, sourcedContactPerson.a)) {
+                if (atyq.b(Integer.valueOf(this.b), Integer.valueOf(sourcedContactPerson.b))) {
                     return true;
                 }
             }
@@ -55,9 +55,9 @@ public class SourcedContactPerson extends AbstractSafeParcelable implements Refl
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.o(parcel, 3, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.o(parcel, 3, this.b);
+        atzr.c(parcel, a);
     }
 }

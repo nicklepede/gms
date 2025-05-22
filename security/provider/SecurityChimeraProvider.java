@@ -16,18 +16,18 @@ import android.text.format.DateFormat;
 import com.google.android.chimera.ContentProvider;
 import com.google.android.gms.R;
 import defpackage.a;
-import defpackage.ccuc;
-import defpackage.ccxq;
-import defpackage.cvpj;
-import defpackage.cxzr;
-import defpackage.cyry;
-import defpackage.cysb;
-import defpackage.cyse;
-import defpackage.eitj;
-import defpackage.fegu;
-import defpackage.fmzv;
-import defpackage.frtv;
-import defpackage.fruc;
+import defpackage.cfcw;
+import defpackage.cfgo;
+import defpackage.cxyz;
+import defpackage.dajo;
+import defpackage.dbbw;
+import defpackage.dbbz;
+import defpackage.dbcc;
+import defpackage.elgo;
+import defpackage.fgvn;
+import defpackage.fpru;
+import defpackage.fuoo;
+import defpackage.fuow;
 import j$.time.Instant;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
@@ -38,12 +38,12 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SecurityChimeraProvider extends ContentProvider {
     private Context a;
-    private ccxq b;
-    private cxzr c;
+    private cfgo b;
+    private dajo c;
 
     public static Date c(String str) {
         try {
@@ -55,8 +55,8 @@ public class SecurityChimeraProvider extends ContentProvider {
         }
     }
 
-    private final cysb d() {
-        return new cyse(this.a).b(false, 10L, TimeUnit.SECONDS);
+    private final dbbz d() {
+        return new dbcc(this.a).b(false, 10L, TimeUnit.SECONDS);
     }
 
     final int a() {
@@ -93,7 +93,7 @@ public class SecurityChimeraProvider extends ContentProvider {
                     if (a() != 1) {
                         a = this.a.getString(R.string.security_status_verify_apps_disabled);
                     } else {
-                        cysb d = d();
+                        dbbz d = d();
                         a = d == null ? null : d.a(this.a);
                     }
                     bundle2.putString("com.android.settings.summary", a);
@@ -108,7 +108,7 @@ public class SecurityChimeraProvider extends ContentProvider {
                         Date c2 = c(str4);
                         if (c2 != null) {
                             String bestDateTimePattern = DateFormat.getBestDateTimePattern(Locale.getDefault(), "dMMMMyyyy");
-                            str4 = !frtv.a.a().c() ? new SimpleDateFormat(bestDateTimePattern, Locale.getDefault()).format(c2) : DateFormat.format(bestDateTimePattern, c2).toString();
+                            str4 = !fuoo.a.lK().c() ? new SimpleDateFormat(bestDateTimePattern, Locale.getDefault()).format(c2) : DateFormat.format(bestDateTimePattern, c2).toString();
                         }
                     }
                     bundle2.putString("com.android.settings.summary", str4);
@@ -125,14 +125,14 @@ public class SecurityChimeraProvider extends ContentProvider {
                     String str5 = activityInfo != null ? activityInfo.packageName : null;
                     if (!TextUtils.isEmpty(str5)) {
                         if ("PackageVerifierIcon".equals(str3)) {
-                            cysb d2 = d();
+                            dbbz d2 = d();
                             r8 = (a() == 1 && (d2 != null ? d2.b : 0) == 0) ? b(str5, "ic_package_verifier_enabled") : b(str5, "ic_package_verifier_disabled");
                         } else if ("FindDeviceIcon".equals(str3)) {
                             r8 = this.b.a() == 1 ? b(str5, "ic_find_device_enabled") : b(str5, "ic_find_device_disabled");
                         } else if ("SecurityPatchLevelIcon".equals(str3)) {
                             String str6 = Build.VERSION.SECURITY_PATCH;
                             if (!TextUtils.isEmpty(str6) && (c = c(str6)) != null) {
-                                long j = cyry.a;
+                                long j = dbbw.a;
                                 long time = new Date().getTime() - c.getTime();
                                 r8 = time <= 0 ? b(str5, "ic_ota_update_current") : TimeUnit.DAYS.convert(time, TimeUnit.MILLISECONDS) > 90 ? b(str5, "ic_ota_update_none") : b(str5, "ic_ota_update_current");
                             }
@@ -166,34 +166,34 @@ public class SecurityChimeraProvider extends ContentProvider {
     @Override // com.google.android.chimera.ContentProvider
     public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         printWriter.println("FMD state: " + this.b.a());
-        printWriter.println("QRL supported: " + ccxq.f(getContext()));
-        printWriter.println("QRL enabled: " + ccxq.e(getContext()));
-        printWriter.println(a.Z(fruc.j(), "FLAG enableQuickLockAction: "));
-        printWriter.println("FLAG quickLockSettingsToggleDefault: " + fruc.s());
-        printWriter.println("FLAG quickLockRateLimitDuration: ".concat(String.valueOf(String.valueOf(fegu.c(fruc.c())))));
-        printWriter.println("FLAG quickLockRateLimitCount: " + fruc.b());
+        printWriter.println("QRL supported: " + cfgo.f(getContext()));
+        printWriter.println("QRL enabled: " + cfgo.e(getContext()));
+        printWriter.println(a.aa(fuow.i(), "FLAG enableQuickLockAction: "));
+        printWriter.println("FLAG quickLockSettingsToggleDefault: " + fuow.q());
+        printWriter.println("FLAG quickLockRateLimitDuration: ".concat(String.valueOf(String.valueOf(fgvn.c(fuow.c())))));
+        printWriter.println("FLAG quickLockRateLimitCount: " + fuow.b());
         printWriter.println("Recent QRL events (within rate limit): ");
-        eitj b = ccuc.b();
+        elgo b = cfcw.b();
         int size = b.size();
         for (int i = 0; i < size; i++) {
             printWriter.println(" - ".concat(String.valueOf(((Instant) b.get(i)).toString())));
         }
-        printWriter.println("FLAG enableSecurityQuestion: " + fruc.k());
-        printWriter.println("FLAG quickLockAllowsBiometrics: " + fruc.n());
-        printWriter.println("FLAG quickLockDisablesNfc: " + fruc.o());
-        printWriter.println("FLAG quickLockHidesPrivateNotifications: " + fruc.p());
-        printWriter.println("FLAG quickLockNotifiesUser: " + fruc.q());
-        printWriter.println("FLAG quickLockRequiresAccount: " + fruc.r());
-        printWriter.println("FLAG quickLockAddSearchEntry: " + fruc.m());
-        printWriter.println("FLAG enableMandatoryBiometricsQrlToggle: " + fruc.i());
-        printWriter.println("FLAG enableSettingsIconForQrlToggleBiometric: " + fruc.a.a().k());
-        printWriter.println("FLAG enableFeedback: " + fruc.h());
-        printWriter.println("FLAG feedbackCategoryTag: ".concat(String.valueOf(fruc.e())));
-        printWriter.println("FLAG enableSettingsSecure: " + fruc.l());
-        printWriter.println("FLAG restrictSettingsSecureToReadOnlyForOems: " + fruc.u());
-        printWriter.println("FLAG requireTelephonySubscriptionFeature: " + fruc.t());
-        printWriter.println(a.Z(fmzv.f(), "FLAG checkTheftProtectionSupportInCode: "));
-        printWriter.println("Theft protection supported: " + cvpj.a(getContext()));
+        printWriter.println("FLAG enableSecurityQuestion: " + fuow.j());
+        printWriter.println("FLAG quickLockAllowsBiometrics: " + fuow.m());
+        printWriter.println("FLAG quickLockDisablesNfc: " + fuow.n());
+        printWriter.println("FLAG quickLockHidesPrivateNotifications: " + fuow.o());
+        printWriter.println("FLAG quickLockNotifiesUser: " + fuow.p());
+        printWriter.println("FLAG showMissingAccountWarning: " + fuow.t());
+        printWriter.println("FLAG quickLockAddSearchEntry: " + fuow.l());
+        printWriter.println("FLAG enableMandatoryBiometricsQrlToggle: " + fuow.h());
+        printWriter.println("FLAG enableSettingsIconForQrlToggleBiometric: " + fuow.a.lK().j());
+        printWriter.println("FLAG enableFeedback: " + fuow.g());
+        printWriter.println("FLAG feedbackCategoryTag: ".concat(fuow.e()));
+        printWriter.println("FLAG enableSettingsSecure: " + fuow.k());
+        printWriter.println("FLAG restrictSettingsSecureToReadOnlyForOems: " + fuow.s());
+        printWriter.println("FLAG requireTelephonySubscriptionFeature: " + fuow.r());
+        printWriter.println(a.aa(fpru.f(), "FLAG checkTheftProtectionSupportInCode: "));
+        printWriter.println("Theft protection supported: " + cxyz.a(getContext()));
     }
 
     @Override // com.google.android.chimera.ContentProvider
@@ -210,8 +210,8 @@ public class SecurityChimeraProvider extends ContentProvider {
     public final boolean onCreate() {
         Context context = getContext();
         this.a = context;
-        this.b = new ccxq(context);
-        this.c = new cxzr(this.a);
+        this.b = new cfgo(context);
+        this.c = new dajo(this.a);
         return true;
     }
 

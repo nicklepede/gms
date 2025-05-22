@@ -1,88 +1,88 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.anec;
-import defpackage.aneh;
-import defpackage.anei;
-import defpackage.erpr;
-import defpackage.fuvb;
-import defpackage.fuxd;
-import defpackage.fvbo;
+import defpackage.apfp;
+import defpackage.apfu;
+import defpackage.apfv;
+import defpackage.eufe;
+import defpackage.fxqz;
+import defpackage.fxtb;
+import defpackage.fxxm;
 import java.util.List;
 import java.util.Map;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class SendFormat {
     public static final Companion Companion = new Companion(null);
-    private static final Map codecName = fuxd.f(new fuvb(anec.a, "aac_ld_adts"), new fuvb(anec.b, "opus"), new fuvb(anec.c, "h264"), new fuvb(anec.d, "h265"), new fuvb(anec.e, "vp8"), new fuvb(anec.f, "vp9"), new fuvb(anec.g, "av1"));
+    private static final Map codecName = fxtb.f(new fxqz(apfp.a, "aac_ld_adts"), new fxqz(apfp.b, "opus"), new fxqz(apfp.c, "h264"), new fxqz(apfp.d, "h265"), new fxqz(apfp.e, "vp8"), new fxqz(apfp.f, "vp9"), new fxqz(apfp.g, "av1"));
 
-    @erpr(a = "aes-iv-mask")
+    @eufe(a = "aes-iv-mask")
     private final String aesIvMask;
 
-    @erpr(a = "aes-key")
+    @eufe(a = "aes-key")
     private final String aesKey;
 
-    @erpr(a = "bit_rate")
+    @eufe(a = "bit_rate")
     private final Long bitRate;
 
-    @erpr(a = "channels")
+    @eufe(a = "channels")
     private final Long channels;
 
-    @erpr(a = "codec_name")
+    @eufe(a = "codec_name")
     private final String codecName$1;
 
-    @erpr(a = "error_recovery_mode")
+    @eufe(a = "error_recovery_mode")
     private final String errorRecoveryMode;
     private final long index;
 
-    @erpr(a = "key_frame_refresh_interval")
+    @eufe(a = "key_frame_refresh_interval")
     private final Long keyFrameRefreshInterval;
 
-    @erpr(a = "max_bit_rate")
+    @eufe(a = "max_bit_rate")
     private final Long maxBitRate;
 
-    @erpr(a = "max_frame_rate")
+    @eufe(a = "max_frame_rate")
     private final String maxFrameRate;
 
-    @erpr(a = "receiver_events")
+    @eufe(a = "receiver_events")
     private final Boolean receiverEvents;
 
-    @erpr(a = "remote_rtp_port")
+    @eufe(a = "remote_rtp_port")
     private final long remoteRtpPort;
 
-    @erpr(a = "remote_ssrc")
+    @eufe(a = "remote_ssrc")
     private final Long remoteSsrc;
     private final List resolutions;
 
-    @erpr(a = "rtp_extensions")
+    @eufe(a = "rtp_extensions")
     private final List rtpExtensions;
 
-    @erpr(a = "rtp_payload_type")
+    @eufe(a = "rtp_payload_type")
     private final long rtpPayloadType;
 
-    @erpr(a = "rtp_port")
+    @eufe(a = "rtp_port")
     private final long rtpPort;
 
-    @erpr(a = "rtp_profile")
+    @eufe(a = "rtp_profile")
     private final String rtpProfile;
 
-    @erpr(a = "sample_rate")
+    @eufe(a = "sample_rate")
     private final Long sampleRate;
     private final long ssrc;
 
-    @erpr(a = "store_time")
+    @eufe(a = "store_time")
     private final long storeTime;
 
-    @erpr(a = "time_base")
+    @eufe(a = "time_base")
     private final long timeBase;
-    private final anei type;
+    private final apfv type;
 
-    @erpr(a = "use_intra_macroblock_cyclic_mode")
+    @eufe(a = "use_intra_macroblock_cyclic_mode")
     private final Boolean useIntraMacroblockCyclicMode;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class Companion {
         private Companion() {
         }
@@ -96,11 +96,11 @@ public final class SendFormat {
         }
     }
 
-    public SendFormat(anei aneiVar, long j, long j2, long j3, long j4, long j5, Long l, List list, Boolean bool, String str, String str2, long j6, long j7, String str3, String str4, Long l2, Long l3, Long l4, Long l5, String str5, List list2, String str6, Boolean bool2, Long l6) {
-        fvbo.f(aneiVar, "type");
-        fvbo.f(str, "codecName");
-        fvbo.f(str2, "rtpProfile");
-        this.type = aneiVar;
+    public SendFormat(apfv apfvVar, long j, long j2, long j3, long j4, long j5, Long l, List list, Boolean bool, String str, String str2, long j6, long j7, String str3, String str4, Long l2, Long l3, Long l4, Long l5, String str5, List list2, String str6, Boolean bool2, Long l6) {
+        fxxm.f(apfvVar, "type");
+        fxxm.f(str, "codecName");
+        fxxm.f(str2, "rtpProfile");
+        this.type = apfvVar;
         this.index = j;
         this.ssrc = j2;
         this.rtpPayloadType = j3;
@@ -126,10 +126,10 @@ public final class SendFormat {
         this.keyFrameRefreshInterval = l6;
     }
 
-    public static /* synthetic */ SendFormat copy$default(SendFormat sendFormat, anei aneiVar, long j, long j2, long j3, long j4, long j5, Long l, List list, Boolean bool, String str, String str2, long j6, long j7, String str3, String str4, Long l2, Long l3, Long l4, Long l5, String str5, List list2, String str6, Boolean bool2, Long l6, int i, Object obj) {
+    public static /* synthetic */ SendFormat copy$default(SendFormat sendFormat, apfv apfvVar, long j, long j2, long j3, long j4, long j5, Long l, List list, Boolean bool, String str, String str2, long j6, long j7, String str3, String str4, Long l2, Long l3, Long l4, Long l5, String str5, List list2, String str6, Boolean bool2, Long l6, int i, Object obj) {
         Long l7;
         Boolean bool3;
-        anei aneiVar2 = (i & 1) != 0 ? sendFormat.type : aneiVar;
+        apfv apfvVar2 = (i & 1) != 0 ? sendFormat.type : apfvVar;
         long j8 = (i & 2) != 0 ? sendFormat.index : j;
         long j9 = (i & 4) != 0 ? sendFormat.ssrc : j2;
         long j10 = (i & 8) != 0 ? sendFormat.rtpPayloadType : j3;
@@ -138,7 +138,7 @@ public final class SendFormat {
         Long l8 = (i & 64) != 0 ? sendFormat.remoteSsrc : l;
         List list3 = (i & 128) != 0 ? sendFormat.rtpExtensions : list;
         Boolean bool4 = (i & 256) != 0 ? sendFormat.receiverEvents : bool;
-        anei aneiVar3 = aneiVar2;
+        apfv apfvVar3 = apfvVar2;
         String str7 = (i & 512) != 0 ? sendFormat.codecName$1 : str;
         String str8 = (i & 1024) != 0 ? sendFormat.rtpProfile : str2;
         long j13 = j8;
@@ -162,10 +162,10 @@ public final class SendFormat {
             l7 = l6;
             bool3 = bool5;
         }
-        return sendFormat.copy(aneiVar3, j13, j9, j10, j11, j12, l8, list3, bool4, str7, str8, j14, j16, str9, str10, l9, l10, l11, l12, str11, list4, str12, bool3, l7);
+        return sendFormat.copy(apfvVar3, j13, j9, j10, j11, j12, l8, list3, bool4, str7, str8, j14, j16, str9, str10, l9, l10, l11, l12, str11, list4, str12, bool3, l7);
     }
 
-    public final anei component1() {
+    public final apfv component1() {
         return this.type;
     }
 
@@ -261,11 +261,11 @@ public final class SendFormat {
         return this.receiverEvents;
     }
 
-    public final SendFormat copy(anei aneiVar, long j, long j2, long j3, long j4, long j5, Long l, List list, Boolean bool, String str, String str2, long j6, long j7, String str3, String str4, Long l2, Long l3, Long l4, Long l5, String str5, List list2, String str6, Boolean bool2, Long l6) {
-        fvbo.f(aneiVar, "type");
-        fvbo.f(str, "codecName");
-        fvbo.f(str2, "rtpProfile");
-        return new SendFormat(aneiVar, j, j2, j3, j4, j5, l, list, bool, str, str2, j6, j7, str3, str4, l2, l3, l4, l5, str5, list2, str6, bool2, l6);
+    public final SendFormat copy(apfv apfvVar, long j, long j2, long j3, long j4, long j5, Long l, List list, Boolean bool, String str, String str2, long j6, long j7, String str3, String str4, Long l2, Long l3, Long l4, Long l5, String str5, List list2, String str6, Boolean bool2, Long l6) {
+        fxxm.f(apfvVar, "type");
+        fxxm.f(str, "codecName");
+        fxxm.f(str2, "rtpProfile");
+        return new SendFormat(apfvVar, j, j2, j3, j4, j5, l, list, bool, str, str2, j6, j7, str3, str4, l2, l3, l4, l5, str5, list2, str6, bool2, l6);
     }
 
     public boolean equals(Object obj) {
@@ -276,7 +276,7 @@ public final class SendFormat {
             return false;
         }
         SendFormat sendFormat = (SendFormat) obj;
-        return this.type == sendFormat.type && this.index == sendFormat.index && this.ssrc == sendFormat.ssrc && this.rtpPayloadType == sendFormat.rtpPayloadType && this.rtpPort == sendFormat.rtpPort && this.remoteRtpPort == sendFormat.remoteRtpPort && fvbo.n(this.remoteSsrc, sendFormat.remoteSsrc) && fvbo.n(this.rtpExtensions, sendFormat.rtpExtensions) && fvbo.n(this.receiverEvents, sendFormat.receiverEvents) && fvbo.n(this.codecName$1, sendFormat.codecName$1) && fvbo.n(this.rtpProfile, sendFormat.rtpProfile) && this.timeBase == sendFormat.timeBase && this.storeTime == sendFormat.storeTime && fvbo.n(this.aesKey, sendFormat.aesKey) && fvbo.n(this.aesIvMask, sendFormat.aesIvMask) && fvbo.n(this.channels, sendFormat.channels) && fvbo.n(this.sampleRate, sendFormat.sampleRate) && fvbo.n(this.bitRate, sendFormat.bitRate) && fvbo.n(this.maxBitRate, sendFormat.maxBitRate) && fvbo.n(this.maxFrameRate, sendFormat.maxFrameRate) && fvbo.n(this.resolutions, sendFormat.resolutions) && fvbo.n(this.errorRecoveryMode, sendFormat.errorRecoveryMode) && fvbo.n(this.useIntraMacroblockCyclicMode, sendFormat.useIntraMacroblockCyclicMode) && fvbo.n(this.keyFrameRefreshInterval, sendFormat.keyFrameRefreshInterval);
+        return this.type == sendFormat.type && this.index == sendFormat.index && this.ssrc == sendFormat.ssrc && this.rtpPayloadType == sendFormat.rtpPayloadType && this.rtpPort == sendFormat.rtpPort && this.remoteRtpPort == sendFormat.remoteRtpPort && fxxm.n(this.remoteSsrc, sendFormat.remoteSsrc) && fxxm.n(this.rtpExtensions, sendFormat.rtpExtensions) && fxxm.n(this.receiverEvents, sendFormat.receiverEvents) && fxxm.n(this.codecName$1, sendFormat.codecName$1) && fxxm.n(this.rtpProfile, sendFormat.rtpProfile) && this.timeBase == sendFormat.timeBase && this.storeTime == sendFormat.storeTime && fxxm.n(this.aesKey, sendFormat.aesKey) && fxxm.n(this.aesIvMask, sendFormat.aesIvMask) && fxxm.n(this.channels, sendFormat.channels) && fxxm.n(this.sampleRate, sendFormat.sampleRate) && fxxm.n(this.bitRate, sendFormat.bitRate) && fxxm.n(this.maxBitRate, sendFormat.maxBitRate) && fxxm.n(this.maxFrameRate, sendFormat.maxFrameRate) && fxxm.n(this.resolutions, sendFormat.resolutions) && fxxm.n(this.errorRecoveryMode, sendFormat.errorRecoveryMode) && fxxm.n(this.useIntraMacroblockCyclicMode, sendFormat.useIntraMacroblockCyclicMode) && fxxm.n(this.keyFrameRefreshInterval, sendFormat.keyFrameRefreshInterval);
     }
 
     public final String getAesIvMask() {
@@ -367,7 +367,7 @@ public final class SendFormat {
         return this.timeBase;
     }
 
-    public final anei getType() {
+    public final apfv getType() {
         return this.type;
     }
 
@@ -381,13 +381,13 @@ public final class SendFormat {
         int hashCode2 = l == null ? 0 : l.hashCode();
         long j = this.index;
         long j2 = this.ssrc;
-        int a = (hashCode + aneh.a(j)) * 31;
+        int a = (hashCode + apfu.a(j)) * 31;
         long j3 = this.rtpPayloadType;
-        int a2 = (((((((((a + aneh.a(j2)) * 31) + aneh.a(j3)) * 31) + aneh.a(this.rtpPort)) * 31) + aneh.a(this.remoteRtpPort)) * 31) + hashCode2) * 31;
+        int a2 = (((((((((a + apfu.a(j2)) * 31) + apfu.a(j3)) * 31) + apfu.a(this.rtpPort)) * 31) + apfu.a(this.remoteRtpPort)) * 31) + hashCode2) * 31;
         List list = this.rtpExtensions;
         int hashCode3 = (a2 + (list == null ? 0 : list.hashCode())) * 31;
         Boolean bool = this.receiverEvents;
-        int hashCode4 = (((((((((hashCode3 + (bool == null ? 0 : bool.hashCode())) * 31) + this.codecName$1.hashCode()) * 31) + this.rtpProfile.hashCode()) * 31) + aneh.a(this.timeBase)) * 31) + aneh.a(this.storeTime)) * 31;
+        int hashCode4 = (((((((((hashCode3 + (bool == null ? 0 : bool.hashCode())) * 31) + this.codecName$1.hashCode()) * 31) + this.rtpProfile.hashCode()) * 31) + apfu.a(this.timeBase)) * 31) + apfu.a(this.storeTime)) * 31;
         String str = this.aesKey;
         int hashCode5 = (hashCode4 + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.aesIvMask;
@@ -416,7 +416,7 @@ public final class SendFormat {
         return "SendFormat(type=" + this.type + ", index=" + this.index + ", ssrc=" + this.ssrc + ", rtpPayloadType=" + this.rtpPayloadType + ", rtpPort=" + this.rtpPort + ", remoteRtpPort=" + this.remoteRtpPort + ", remoteSsrc=" + this.remoteSsrc + ", rtpExtensions=" + this.rtpExtensions + ", receiverEvents=" + this.receiverEvents + ", codecName=" + this.codecName$1 + ", rtpProfile=" + this.rtpProfile + ", timeBase=" + this.timeBase + ", storeTime=" + this.storeTime + ", aesKey=" + this.aesKey + ", aesIvMask=" + this.aesIvMask + ", channels=" + this.channels + ", sampleRate=" + this.sampleRate + ", bitRate=" + this.bitRate + ", maxBitRate=" + this.maxBitRate + ", maxFrameRate=" + this.maxFrameRate + ", resolutions=" + this.resolutions + ", errorRecoveryMode=" + this.errorRecoveryMode + ", useIntraMacroblockCyclicMode=" + this.useIntraMacroblockCyclicMode + ", keyFrameRefreshInterval=" + this.keyFrameRefreshInterval + ")";
     }
 
-    public /* synthetic */ SendFormat(anei aneiVar, long j, long j2, long j3, long j4, long j5, Long l, List list, Boolean bool, String str, String str2, long j6, long j7, String str3, String str4, Long l2, Long l3, Long l4, Long l5, String str5, List list2, String str6, Boolean bool2, Long l6, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(aneiVar, j, j2, j3, j4, j5, (i & 64) != 0 ? null : l, (i & 128) != 0 ? null : list, (i & 256) != 0 ? null : bool, str, str2, j6, j7, (i & 8192) != 0 ? null : str3, (i & AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES) != 0 ? null : str4, (32768 & i) != 0 ? null : l2, (65536 & i) != 0 ? null : l3, (131072 & i) != 0 ? null : l4, (262144 & i) != 0 ? null : l5, (524288 & i) != 0 ? null : str5, (1048576 & i) != 0 ? null : list2, (2097152 & i) != 0 ? null : str6, (4194304 & i) != 0 ? null : bool2, (i & 8388608) != 0 ? null : l6);
+    public /* synthetic */ SendFormat(apfv apfvVar, long j, long j2, long j3, long j4, long j5, Long l, List list, Boolean bool, String str, String str2, long j6, long j7, String str3, String str4, Long l2, Long l3, Long l4, Long l5, String str5, List list2, String str6, Boolean bool2, Long l6, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this(apfvVar, j, j2, j3, j4, j5, (i & 64) != 0 ? null : l, (i & 128) != 0 ? null : list, (i & 256) != 0 ? null : bool, str, str2, j6, j7, (i & 8192) != 0 ? null : str3, (i & AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES) != 0 ? null : str4, (32768 & i) != 0 ? null : l2, (65536 & i) != 0 ? null : l3, (131072 & i) != 0 ? null : l4, (262144 & i) != 0 ? null : l5, (524288 & i) != 0 ? null : str5, (1048576 & i) != 0 ? null : list2, (2097152 & i) != 0 ? null : str6, (4194304 & i) != 0 ? null : bool2, (i & 8388608) != 0 ? null : l6);
     }
 }

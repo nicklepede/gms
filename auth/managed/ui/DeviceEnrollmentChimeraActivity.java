@@ -9,25 +9,25 @@ import android.os.Bundle;
 import android.util.Log;
 import com.google.android.gms.auth.managed.ui.DeviceEnrollmentChimeraActivity;
 import defpackage.a;
-import defpackage.abuv;
-import defpackage.abxv;
-import defpackage.aslv;
-import defpackage.aslw;
-import defpackage.asng;
-import defpackage.bqna;
-import defpackage.dtjk;
-import defpackage.fiwo;
-import defpackage.fkzn;
-import defpackage.flas;
-import defpackage.jpd;
-import defpackage.jrh;
+import defpackage.aduv;
+import defpackage.adxv;
+import defpackage.aupp;
+import defpackage.aupq;
+import defpackage.aura;
+import defpackage.bsup;
+import defpackage.dvtw;
+import defpackage.flml;
+import defpackage.fnqv;
+import defpackage.fnsa;
+import defpackage.jvs;
+import defpackage.jxw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class DeviceEnrollmentChimeraActivity extends abxv {
-    bqna h;
-    public abuv i;
-    public fiwo j;
+public final class DeviceEnrollmentChimeraActivity extends adxv {
+    bsup h;
+    public aduv i;
+    public flml j;
 
     public final void a(int i, String str, String str2) {
         Log.i("EnterpriseAuth", a.j(i, "[AuthManaged, DeviceEnrollmentChimeraActivity] Finish with resultCode: "));
@@ -41,40 +41,40 @@ public final class DeviceEnrollmentChimeraActivity extends abxv {
         finish();
     }
 
-    @Override // defpackage.abxv, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.adxv, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (fkzn.e()) {
-            ((dtjk) this.j.a()).a();
+        if (fnqv.e()) {
+            ((dvtw) this.j.a()).a();
         }
-        flas flasVar = flas.a;
-        if (!flasVar.a().d()) {
+        fnsa fnsaVar = fnsa.a;
+        if (!fnsaVar.lK().d()) {
             Log.w("EnterpriseAuth", "[AuthManaged, DeviceEnrollmentChimeraActivity] Flag is disabled.");
             a(3, null, null);
-        } else if (flasVar.a().a().b.contains(asng.p(this))) {
-            this.h = bqna.b(this);
-            this.i = (abuv) new jrh(this).a(abuv.class);
+        } else if (fnsaVar.lK().a().b.contains(aura.p(this))) {
+            this.h = bsup.b(this);
+            this.i = (aduv) new jxw(this).a(aduv.class);
         } else {
             Log.w("EnterpriseAuth", "[AuthManaged, DeviceEnrollmentChimeraActivity] The caller is not a DPC.");
             a(3, null, null);
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStart() {
         super.onStart();
         if (isFinishing()) {
             return;
         }
-        this.i.b.g(this, new jpd() { // from class: abur
-            @Override // defpackage.jpd
+        this.i.b.g(this, new jvs() { // from class: adur
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                abux abuxVar = (abux) obj;
-                if (abuxVar == null) {
+                adux aduxVar = (adux) obj;
+                if (aduxVar == null) {
                     return;
                 }
                 final DeviceEnrollmentChimeraActivity deviceEnrollmentChimeraActivity = DeviceEnrollmentChimeraActivity.this;
-                Exception exc = abuxVar.b;
+                Exception exc = aduxVar.b;
                 if (exc != null) {
                     if (exc instanceof OperationCanceledException) {
                         Log.i("EnterpriseAuth", "[AuthManaged, DeviceEnrollmentChimeraActivity] MinuteMaid cancelled, exception: ".concat(exc.toString()));
@@ -86,33 +86,33 @@ public final class DeviceEnrollmentChimeraActivity extends abxv {
                         return;
                     }
                 }
-                Bundle bundle = abuxVar.a;
-                eiig.x(bundle);
+                Bundle bundle = aduxVar.a;
+                ekvl.y(bundle);
                 final String string = bundle.getString("authAccount");
-                eiig.x(string);
-                if (!flas.c()) {
+                ekvl.y(string);
+                if (!fnsa.c()) {
                     deviceEnrollmentChimeraActivity.a(-1, string, null);
                     return;
                 }
-                abuv abuvVar = deviceEnrollmentChimeraActivity.i;
-                eiig.q(flas.c(), "The feature flag is turned off, this should not be called.");
-                abuvVar.c.g(deviceEnrollmentChimeraActivity, new jpd() { // from class: abus
-                    @Override // defpackage.jpd
+                aduv aduvVar = deviceEnrollmentChimeraActivity.i;
+                ekvl.r(fnsa.c(), "The feature flag is turned off, this should not be called.");
+                aduvVar.c.g(deviceEnrollmentChimeraActivity, new jvs() { // from class: adus
+                    @Override // defpackage.jvs
                     public final void a(Object obj2) {
-                        abuw abuwVar = (abuw) obj2;
-                        String str = abuwVar.a;
+                        aduw aduwVar = (aduw) obj2;
+                        String str = aduwVar.a;
                         DeviceEnrollmentChimeraActivity deviceEnrollmentChimeraActivity2 = DeviceEnrollmentChimeraActivity.this;
                         if (str != null) {
                             deviceEnrollmentChimeraActivity2.a(-1, string, str);
                             return;
                         }
-                        ftye ftyeVar = abuwVar.b;
-                        if (ftyeVar != null) {
-                            Log.e("EnterpriseAuth", "[AuthManaged, DeviceEnrollmentChimeraActivity] Failed to get user ID.", ftyeVar);
+                        fwuc fwucVar = aduwVar.b;
+                        if (fwucVar != null) {
+                            Log.e("EnterpriseAuth", "[AuthManaged, DeviceEnrollmentChimeraActivity] Failed to get user ID.", fwucVar);
                         } else {
-                            unx unxVar = abuwVar.c;
-                            if (unxVar != null) {
-                                Log.e("EnterpriseAuth", "[AuthManaged, DeviceEnrollmentChimeraActivity] Failed to get user ID.", unxVar);
+                            wjw wjwVar = aduwVar.c;
+                            if (wjwVar != null) {
+                                Log.e("EnterpriseAuth", "[AuthManaged, DeviceEnrollmentChimeraActivity] Failed to get user ID.", wjwVar);
                             }
                         }
                         deviceEnrollmentChimeraActivity2.a(1, null, null);
@@ -120,28 +120,29 @@ public final class DeviceEnrollmentChimeraActivity extends abxv {
                 });
             }
         });
-        final abuv abuvVar = this.i;
+        final aduv aduvVar = this.i;
         final Activity containerActivity = getContainerActivity();
-        bqna bqnaVar = this.h;
-        if (abuvVar.a.getAndSet(true)) {
+        bsup bsupVar = this.h;
+        if (aduvVar.a.getAndSet(true)) {
             return;
         }
         Bundle bundle = new Bundle();
-        if (flas.a.a().f()) {
+        fnsa fnsaVar = fnsa.a;
+        if (fnsaVar.lK().f()) {
             bundle.putBoolean("suppress_device_to_device_setup", true);
             bundle.putBoolean("suppress_account_provisioning", true);
-            bundle.putString("flow_params", flas.a.a().c());
+            bundle.putString("flow_params", fnsaVar.lK().c());
         }
         Log.i("EnterpriseAuth", "[AuthManaged, DeviceEnrollmentChimeraActivity] Going to launch MinuteMaid");
-        bqnaVar.s("com.google", bundle, containerActivity, new AccountManagerCallback() { // from class: abuu
+        bsupVar.s("com.google", bundle, containerActivity, new AccountManagerCallback() { // from class: aduu
             @Override // android.accounts.AccountManagerCallback
             public final void run(AccountManagerFuture accountManagerFuture) {
-                abuv abuvVar2 = abuv.this;
-                abuvVar2.b.hS(abux.a(accountManagerFuture));
-                if (flas.c()) {
-                    abuv.a(containerActivity, abuvVar2.c, accountManagerFuture);
+                aduv aduvVar2 = aduv.this;
+                aduvVar2.b.ih(adux.a(accountManagerFuture));
+                if (fnsa.c()) {
+                    aduv.a(containerActivity, aduvVar2.c, accountManagerFuture);
                 }
             }
-        }, new aslv(new aslw(9)));
+        }, new aupp(new aupq(9)));
     }
 }

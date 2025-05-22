@@ -1,38 +1,38 @@
 package com.google.android.gms.networktransparency.init;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.byjl;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.crsl;
-import defpackage.fvbi;
-import defpackage.fvbo;
-import defpackage.fvcc;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.casd;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.cubq;
+import defpackage.fxxg;
+import defpackage.fxxm;
+import defpackage.fxya;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class ModuleInitializer extends anya {
-    @Override // defpackage.anya
+public final class ModuleInitializer extends apzs {
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        fvbo.f(intent, "intent");
-        if (asqh.a()) {
-            boolean b = crsl.b();
-            asng.K("com.google.android.gms.networktransparency.ui.NetworkTransparencyActivity", b);
+        fxxm.f(intent, "intent");
+        if (auub.a()) {
+            boolean b = cubq.b();
+            aura.K("com.google.android.gms.networktransparency.ui.NetworkTransparencyActivity", b);
             if (b) {
-                asot asotVar = NetworkDataUpdateTaskBoundService.a;
-                byjl a = byjl.a(this);
-                byko bykoVar = new byko();
-                int i2 = fvcc.a;
-                bykoVar.w(new fvbi(NetworkDataUpdateTaskBoundService.class).b());
-                bykoVar.l(false);
-                bykoVar.a = bykv.l;
-                bykoVar.v(2);
-                bykoVar.t("NetworkDataUpdateTaskBoundService");
-                a.f(bykoVar.b());
+                ausn ausnVar = NetworkDataUpdateTaskBoundService.a;
+                casd a = casd.a(this);
+                catg catgVar = new catg();
+                int i2 = fxya.a;
+                catgVar.w(new fxxg(NetworkDataUpdateTaskBoundService.class).b());
+                catgVar.l(false);
+                catgVar.a = catn.l;
+                catgVar.v(2);
+                catgVar.t("NetworkDataUpdateTaskBoundService");
+                a.f(catgVar.b());
             }
         }
     }

@@ -3,21 +3,21 @@ package com.google.android.gms.autofill.operation;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.chimera.IntentOperation;
-import defpackage.advz;
-import defpackage.aeba;
-import defpackage.aery;
-import defpackage.aerz;
-import defpackage.asej;
-import defpackage.asmb;
-import defpackage.asot;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.eitj;
-import defpackage.ejcb;
-import defpackage.ejhf;
-import defpackage.enqb;
-import defpackage.ensj;
-import defpackage.enss;
+import defpackage.afwg;
+import defpackage.agar;
+import defpackage.agsl;
+import defpackage.agsm;
+import defpackage.auid;
+import defpackage.aupv;
+import defpackage.ausn;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.elgo;
+import defpackage.elpg;
+import defpackage.eluo;
+import defpackage.eqdu;
+import defpackage.eqgc;
+import defpackage.eqgl;
 import j$.util.Collection;
 import j$.util.function.Function$CC;
 import j$.util.function.Predicate$CC;
@@ -27,88 +27,88 @@ import java.util.concurrent.ExecutionException;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class WalletSyncOperation extends IntentOperation {
-    private static final asot a = asot.b(WalletSyncOperation.class.getName(), asej.AUTOFILL);
+    private static final ausn a = ausn.b(WalletSyncOperation.class.getName(), auid.AUTOFILL);
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        enss b;
-        asot asotVar = a;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 1036)).x("Invoked ChromeSyncWalletMetadataSyncOperation");
+        eqgl b;
+        ausn ausnVar = a;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 1030)).x("Invoked ChromeSyncWalletMetadataSyncOperation");
         if (intent.getStringExtra("account_name") == null) {
-            ((ejhf) ((ejhf) asotVar.j()).ah((char) 1040)).x("Account is missing from the intent.");
+            ((eluo) ((eluo) ausnVar.j()).ai((char) 1034)).x("Account is missing from the intent.");
             return;
         }
-        aerz a2 = aery.a(this);
-        eiid h = a2.z(this, eigb.a, eiid.j(a2.i().z())).h();
+        agsm a2 = agsl.a(this);
+        ekvi h = a2.z(this, ektg.a, ekvi.j(a2.i().z())).h();
         if (!h.h()) {
-            ((ejhf) ((ejhf) asotVar.j()).ah((char) 1039)).x("WalletDataSource is missing.");
+            ((eluo) ((eluo) ausnVar.j()).ai((char) 1033)).x("WalletDataSource is missing.");
             return;
         }
-        asmb asmbVar = new asmb(1, 10);
+        aupv aupvVar = new aupv(1, 10);
         try {
-            aeba aebaVar = (aeba) h.c();
-            eiid eiidVar = aebaVar.h;
-            if (eiidVar.h()) {
-                final advz advzVar = (advz) eiidVar.c();
-                final enss b2 = aebaVar.e.b(null);
-                final enss b3 = advzVar.b(null);
-                b = ensj.b(b2, b3).b(new enqb() { // from class: aeax
-                    @Override // defpackage.enqb
-                    public final enss a() {
-                        asot asotVar2 = aeba.a;
-                        eitj eitjVar = (eitj) ensj.r(enss.this);
-                        Stream map = Collection.EL.stream(eitjVar).map(new Function() { // from class: aeaq
+            agar agarVar = (agar) h.c();
+            ekvi ekviVar = agarVar.h;
+            if (ekviVar.h()) {
+                final afwg afwgVar = (afwg) ekviVar.c();
+                final eqgl b2 = agarVar.e.b(null);
+                final eqgl b3 = afwgVar.b(null);
+                b = eqgc.b(b2, b3).b(new eqdu() { // from class: agaf
+                    @Override // defpackage.eqdu
+                    public final eqgl a() {
+                        ausn ausnVar2 = agar.a;
+                        elgo elgoVar = (elgo) eqgc.r(eqgl.this);
+                        Stream map = Collection.EL.stream(elgoVar).map(new Function() { // from class: agai
                             @Override // java.util.function.Function
                             /* renamed from: andThen */
-                            public final /* synthetic */ Function mo464andThen(Function function) {
+                            public final /* synthetic */ Function mo479andThen(Function function) {
                                 return Function$CC.$default$andThen(this, function);
                             }
 
                             @Override // java.util.function.Function
                             public final Object apply(Object obj) {
-                                asot asotVar3 = aeba.a;
-                                return new String(aeba.c.p(((fdby) obj).d));
+                                ausn ausnVar3 = agar.a;
+                                return new String(agar.c.p(((ffqp) obj).d));
                             }
 
                             public final /* synthetic */ Function compose(Function function) {
                                 return Function$CC.$default$compose(this, function);
                             }
                         });
-                        Collector collector = eipl.b;
-                        final eiuu eiuuVar = (eiuu) map.collect(collector);
-                        eitj eitjVar2 = (eitj) ensj.r(b2);
-                        final eiuu eiuuVar2 = (eiuu) Collection.EL.stream(eitjVar2).map(new Function() { // from class: aear
+                        Collector collector = elcq.b;
+                        final elhz elhzVar = (elhz) map.collect(collector);
+                        elgo elgoVar2 = (elgo) eqgc.r(b2);
+                        final elhz elhzVar2 = (elhz) Collection.EL.stream(elgoVar2).map(new Function() { // from class: agaj
                             @Override // java.util.function.Function
                             /* renamed from: andThen */
-                            public final /* synthetic */ Function mo464andThen(Function function) {
+                            public final /* synthetic */ Function mo479andThen(Function function) {
                                 return Function$CC.$default$andThen(this, function);
                             }
 
                             @Override // java.util.function.Function
                             public final Object apply(Object obj) {
-                                asot asotVar3 = aeba.a;
-                                fdbv fdbvVar = ((fcyx) obj).d;
-                                if (fdbvVar == null) {
-                                    fdbvVar = fdbv.a;
+                                ausn ausnVar3 = agar.a;
+                                ffqm ffqmVar = ((ffnn) obj).d;
+                                if (ffqmVar == null) {
+                                    ffqmVar = ffqm.a;
                                 }
-                                return fdbvVar.c;
+                                return ffqmVar.c;
                             }
 
                             public final /* synthetic */ Function compose(Function function) {
                                 return Function$CC.$default$compose(this, function);
                             }
                         }).collect(collector);
-                        Stream filter = Collection.EL.stream(eitjVar2).filter(new Predicate() { // from class: aeas
+                        Stream filter = Collection.EL.stream(elgoVar2).filter(new Predicate() { // from class: agak
                             public final /* synthetic */ Predicate and(Predicate predicate) {
                                 return Predicate$CC.$default$and(this, predicate);
                             }
 
                             @Override // java.util.function.Predicate
                             /* renamed from: negate */
-                            public final /* synthetic */ Predicate mo463negate() {
+                            public final /* synthetic */ Predicate mo478negate() {
                                 return Predicate$CC.$default$negate(this);
                             }
 
@@ -119,52 +119,52 @@ public final class WalletSyncOperation extends IntentOperation {
 
                             @Override // java.util.function.Predicate
                             public final boolean test(Object obj) {
-                                fcyx fcyxVar = (fcyx) obj;
-                                asot asotVar3 = aeba.a;
-                                int a3 = fcyw.a(fcyxVar.c);
+                                ffnn ffnnVar = (ffnn) obj;
+                                ausn ausnVar3 = agar.a;
+                                int a3 = ffnm.a(ffnnVar.c);
                                 if (a3 == 0 || a3 != 2) {
                                     return false;
                                 }
-                                fdbv fdbvVar = fcyxVar.d;
-                                if (fdbvVar == null) {
-                                    fdbvVar = fdbv.a;
+                                ffqm ffqmVar = ffnnVar.d;
+                                if (ffqmVar == null) {
+                                    ffqmVar = ffqm.a;
                                 }
-                                return !eiuu.this.contains(fdbvVar.c);
+                                return !elhz.this.contains(ffqmVar.c);
                             }
                         });
-                        final advz advzVar2 = advzVar;
-                        Stream map2 = filter.map(new Function() { // from class: aeat
+                        final afwg afwgVar2 = afwgVar;
+                        Stream map2 = filter.map(new Function() { // from class: agal
                             @Override // java.util.function.Function
                             /* renamed from: andThen */
-                            public final /* synthetic */ Function mo464andThen(Function function) {
+                            public final /* synthetic */ Function mo479andThen(Function function) {
                                 return Function$CC.$default$andThen(this, function);
                             }
 
                             @Override // java.util.function.Function
                             public final Object apply(Object obj) {
-                                asot asotVar3 = aeba.a;
-                                fdbv fdbvVar = ((fcyx) obj).d;
-                                if (fdbvVar == null) {
-                                    fdbvVar = fdbv.a;
+                                ausn ausnVar3 = agar.a;
+                                ffqm ffqmVar = ((ffnn) obj).d;
+                                if (ffqmVar == null) {
+                                    ffqmVar = ffqm.a;
                                 }
-                                return advz.this.e(aeba.d(fdbvVar.c), Bundle.EMPTY);
+                                return afwg.this.e(agar.d(ffqmVar.c), Bundle.EMPTY);
                             }
 
                             public final /* synthetic */ Function compose(Function function) {
                                 return Function$CC.$default$compose(this, function);
                             }
                         });
-                        int i = eitj.d;
-                        Collector collector2 = eipl.a;
-                        eitj eitjVar3 = (eitj) map2.collect(collector2);
-                        eitj eitjVar4 = (eitj) Collection.EL.stream(eitjVar).filter(new Predicate() { // from class: aeau
+                        int i = elgo.d;
+                        Collector collector2 = elcq.a;
+                        elgo elgoVar3 = (elgo) map2.collect(collector2);
+                        elgo elgoVar4 = (elgo) Collection.EL.stream(elgoVar).filter(new Predicate() { // from class: agam
                             public final /* synthetic */ Predicate and(Predicate predicate) {
                                 return Predicate$CC.$default$and(this, predicate);
                             }
 
                             @Override // java.util.function.Predicate
                             /* renamed from: negate */
-                            public final /* synthetic */ Predicate mo463negate() {
+                            public final /* synthetic */ Predicate mo478negate() {
                                 return Predicate$CC.$default$negate(this);
                             }
 
@@ -175,45 +175,45 @@ public final class WalletSyncOperation extends IntentOperation {
 
                             @Override // java.util.function.Predicate
                             public final boolean test(Object obj) {
-                                fdby fdbyVar = (fdby) obj;
-                                asot asotVar3 = aeba.a;
-                                int a3 = fdbx.a(fdbyVar.c);
-                                return (a3 == 0 || a3 != 2 || eiuu.this.contains(new String(aeba.c.p(fdbyVar.d)))) ? false : true;
+                                ffqp ffqpVar = (ffqp) obj;
+                                ausn ausnVar3 = agar.a;
+                                int a3 = ffqo.a(ffqpVar.c);
+                                return (a3 == 0 || a3 != 2 || elhz.this.contains(new String(agar.c.p(ffqpVar.d)))) ? false : true;
                             }
-                        }).map(new Function() { // from class: aeav
+                        }).map(new Function() { // from class: agan
                             @Override // java.util.function.Function
                             /* renamed from: andThen */
-                            public final /* synthetic */ Function mo464andThen(Function function) {
+                            public final /* synthetic */ Function mo479andThen(Function function) {
                                 return Function$CC.$default$andThen(this, function);
                             }
 
                             @Override // java.util.function.Function
                             public final Object apply(Object obj) {
-                                asot asotVar3 = aeba.a;
-                                return advz.this.a((fdby) obj, Bundle.EMPTY);
+                                ausn ausnVar3 = agar.a;
+                                return afwg.this.a((ffqp) obj, Bundle.EMPTY);
                             }
 
                             public final /* synthetic */ Function compose(Function function) {
                                 return Function$CC.$default$compose(this, function);
                             }
                         }).collect(collector2);
-                        eite eiteVar = new eite();
-                        eiteVar.k(eitjVar3);
-                        eiteVar.k(eitjVar4);
-                        return ensj.e(eiteVar.g());
+                        elgj elgjVar = new elgj();
+                        elgjVar.k(elgoVar3);
+                        elgjVar.k(elgoVar4);
+                        return eqgc.e(elgjVar.g());
                     }
-                }, asmbVar);
+                }, aupvVar);
             } else {
-                ((ejhf) ((ejhf) aeba.a.j()).ah((char) 936)).x("WalletMetadataApi not present.");
-                int i = eitj.d;
-                b = ensj.i(ejcb.a);
+                ((eluo) agar.a.j()).x("WalletMetadataApi not present.");
+                int i = elgo.d;
+                b = eqgc.i(elpg.a);
             }
             b.get();
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 1037)).x("Failed to create missing metadata.");
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 1031)).x("Failed to create missing metadata.");
         } catch (ExecutionException e2) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e2)).ah((char) 1038)).x("Failed to create missing metadata.");
+            ((eluo) ((eluo) ((eluo) a.i()).s(e2)).ai((char) 1032)).x("Failed to create missing metadata.");
         }
     }
 }

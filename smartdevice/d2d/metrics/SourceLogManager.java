@@ -4,74 +4,74 @@ import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 import defpackage.a;
-import defpackage.apsr;
-import defpackage.apsz;
-import defpackage.apta;
-import defpackage.apul;
-import defpackage.arxo;
-import defpackage.ddla;
-import defpackage.ddng;
-import defpackage.ddre;
-import defpackage.ddtf;
-import defpackage.dekc;
-import defpackage.denp;
-import defpackage.denq;
-import defpackage.dnmt;
-import defpackage.elru;
-import defpackage.elsh;
-import defpackage.elsl;
-import defpackage.elsq;
-import defpackage.elsr;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.fsdg;
-import defpackage.fsdp;
-import defpackage.fsfh;
-import defpackage.rpv;
+import defpackage.arvi;
+import defpackage.arvq;
+import defpackage.arvr;
+import defpackage.arxc;
+import defpackage.auad;
+import defpackage.dfwf;
+import defpackage.dfyl;
+import defpackage.dgcj;
+import defpackage.dgek;
+import defpackage.dgvf;
+import defpackage.dgys;
+import defpackage.dgyt;
+import defpackage.dpxc;
+import defpackage.eofi;
+import defpackage.eofv;
+import defpackage.eofz;
+import defpackage.eoge;
+import defpackage.eogf;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fuyd;
+import defpackage.fuym;
+import defpackage.fvae;
+import defpackage.tjd;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class SourceLogManager implements Parcelable {
     public long b;
     public boolean c;
     public final Deque d;
     public Context e;
-    public apta f;
+    public arvr f;
     private int g;
-    private ddtf h;
-    public static final arxo a = new denq(new String[]{"Setup", "UI", "SourceLogManager"});
-    public static final Parcelable.Creator CREATOR = new ddla();
+    private dgek h;
+    public static final auad a = new dgyt(new String[]{"Setup", "UI", "SourceLogManager"});
+    public static final Parcelable.Creator CREATOR = new dfwf();
 
     public SourceLogManager() {
         this.g = 1;
         this.d = new ArrayDeque();
     }
 
-    private final void k(elsr elsrVar) {
-        fecj v = elru.a.v();
+    private final void k(eogf eogfVar) {
+        fgrc v = eofi.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elru elruVar = (elru) fecpVar;
-        elsrVar.getClass();
-        elruVar.d = elsrVar;
-        elruVar.b |= 2;
+        fgri fgriVar = v.b;
+        eofi eofiVar = (eofi) fgriVar;
+        eogfVar.getClass();
+        eofiVar.d = eogfVar;
+        eofiVar.b |= 2;
         long j = this.b;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v.U();
         }
-        elru elruVar2 = (elru) v.b;
-        elruVar2.b |= 1;
-        elruVar2.c = j;
-        if (!fsfh.a.a().D()) {
+        eofi eofiVar2 = (eofi) v.b;
+        eofiVar2.b |= 1;
+        eofiVar2.c = j;
+        if (!fvae.a.lK().D()) {
             a.d("Clearcut logging is disabled", new Object[0]);
             return;
         }
@@ -81,68 +81,68 @@ public class SourceLogManager implements Parcelable {
             return;
         }
         if (this.f == null) {
-            List list = apta.n;
-            this.f = new apsr(context, "SMART_SETUP").a();
+            List list = arvr.n;
+            this.f = new arvi(context, "SMART_SETUP").a();
         }
-        if (fsdg.c()) {
+        if (fuyd.c()) {
             if (this.h == null) {
-                this.h = new ddtf(context, this.f);
+                this.h = new dgek(context, this.f);
             }
-            this.h.c((elru) v.Q());
-        } else if (fsdp.c()) {
-            apul b = dnmt.b(context, new rpv());
-            apsz i = this.f.i(v.Q());
+            this.h.c((eofi) v.Q());
+        } else if (fuym.c()) {
+            arxc b = dpxc.b(context, new tjd());
+            arvq i = this.f.i(v.Q());
             i.p = b;
             i.d();
         } else {
             this.f.i(v.Q()).d();
         }
-        a.j("UI event %s", elsrVar);
+        a.j("UI event %s", eogfVar);
     }
 
     public final void a() {
         Deque deque = this.d;
         synchronized (deque) {
             if (!this.c) {
-                this.b = denp.a();
+                this.b = dgys.a();
                 this.c = true;
             }
             while (!deque.isEmpty()) {
-                k((elsr) deque.pop());
+                k((eogf) deque.pop());
             }
         }
     }
 
     public final void b() {
-        fecj v = elsr.a.v();
+        fgrc v = eogf.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        elsr elsrVar = (elsr) v.b;
-        elsrVar.d = 6;
-        elsrVar.b |= 2;
+        eogf eogfVar = (eogf) v.b;
+        eogfVar.d = 6;
+        eogfVar.b |= 2;
         j(v);
     }
 
     public final void c() {
-        fecj v = elsr.a.v();
+        fgrc v = eogf.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        elsr elsrVar = (elsr) v.b;
-        elsrVar.d = 16;
-        elsrVar.b |= 2;
+        eogf eogfVar = (eogf) v.b;
+        eogfVar.d = 16;
+        eogfVar.b |= 2;
         j(v);
     }
 
     public final void d() {
-        fecj v = elsr.a.v();
+        fgrc v = eogf.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        elsr elsrVar = (elsr) v.b;
-        elsrVar.d = 2;
-        elsrVar.b = 2 | elsrVar.b;
+        eogf eogfVar = (eogf) v.b;
+        eogfVar.d = 2;
+        eogfVar.b = 2 | eogfVar.b;
         j(v);
     }
 
@@ -152,151 +152,151 @@ public class SourceLogManager implements Parcelable {
     }
 
     public final void e() {
-        fecj v = elsr.a.v();
+        fgrc v = eogf.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        elsr elsrVar = (elsr) v.b;
-        elsrVar.d = 18;
-        elsrVar.b |= 2;
+        eogf eogfVar = (eogf) v.b;
+        eogfVar.d = 18;
+        eogfVar.b |= 2;
         j(v);
     }
 
-    public final void f(dekc dekcVar) {
-        fecj v = elsr.a.v();
-        fecj v2 = elsl.a.v();
+    public final void f(dgvf dgvfVar) {
+        fgrc v = eogf.a.v();
+        fgrc v2 = eofz.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        int i = dekcVar.b;
-        fecp fecpVar = v2.b;
-        elsl elslVar = (elsl) fecpVar;
-        elslVar.b |= 1;
-        elslVar.c = i;
-        int i2 = dekcVar.c;
-        if (!fecpVar.L()) {
+        int i = dgvfVar.b;
+        fgri fgriVar = v2.b;
+        eofz eofzVar = (eofz) fgriVar;
+        eofzVar.b |= 1;
+        eofzVar.c = i;
+        int i2 = dgvfVar.c;
+        if (!fgriVar.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        elsl elslVar2 = (elsl) fecpVar2;
-        elslVar2.b |= 4;
-        elslVar2.e = i2;
-        int i3 = dekcVar.d;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v2.b;
+        eofz eofzVar2 = (eofz) fgriVar2;
+        eofzVar2.b |= 4;
+        eofzVar2.e = i2;
+        int i3 = dgvfVar.d;
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        fecp fecpVar3 = v2.b;
-        elsl elslVar3 = (elsl) fecpVar3;
-        elslVar3.b |= 8;
-        elslVar3.f = i3;
-        boolean z = dekcVar.a != null;
-        if (!fecpVar3.L()) {
+        fgri fgriVar3 = v2.b;
+        eofz eofzVar3 = (eofz) fgriVar3;
+        eofzVar3.b |= 8;
+        eofzVar3.f = i3;
+        boolean z = dgvfVar.a != null;
+        if (!fgriVar3.L()) {
             v2.U();
         }
-        fecp fecpVar4 = v2.b;
-        elsl elslVar4 = (elsl) fecpVar4;
-        elslVar4.b |= 2;
-        elslVar4.d = z;
-        boolean z2 = dekcVar.e;
-        if (!fecpVar4.L()) {
+        fgri fgriVar4 = v2.b;
+        eofz eofzVar4 = (eofz) fgriVar4;
+        eofzVar4.b |= 2;
+        eofzVar4.d = z;
+        boolean z2 = dgvfVar.e;
+        if (!fgriVar4.L()) {
             v2.U();
         }
-        fecp fecpVar5 = v2.b;
-        elsl elslVar5 = (elsl) fecpVar5;
-        elslVar5.b |= 16;
-        elslVar5.g = z2;
-        boolean z3 = dekcVar.f;
-        if (!fecpVar5.L()) {
+        fgri fgriVar5 = v2.b;
+        eofz eofzVar5 = (eofz) fgriVar5;
+        eofzVar5.b |= 16;
+        eofzVar5.g = z2;
+        boolean z3 = dgvfVar.f;
+        if (!fgriVar5.L()) {
             v2.U();
         }
-        elsl elslVar6 = (elsl) v2.b;
-        elslVar6.b |= 32;
-        elslVar6.h = z3;
-        elsl elslVar7 = (elsl) v2.Q();
+        eofz eofzVar6 = (eofz) v2.b;
+        eofzVar6.b |= 32;
+        eofzVar6.h = z3;
+        eofz eofzVar7 = (eofz) v2.Q();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar6 = v.b;
-        elsr elsrVar = (elsr) fecpVar6;
-        elsrVar.d = 5;
-        elsrVar.b |= 2;
-        if (!fecpVar6.L()) {
+        fgri fgriVar6 = v.b;
+        eogf eogfVar = (eogf) fgriVar6;
+        eogfVar.d = 5;
+        eogfVar.b |= 2;
+        if (!fgriVar6.L()) {
             v.U();
         }
-        elsr elsrVar2 = (elsr) v.b;
-        elslVar7.getClass();
-        elsrVar2.i = elslVar7;
-        elsrVar2.b |= 256;
+        eogf eogfVar2 = (eogf) v.b;
+        eofzVar7.getClass();
+        eogfVar2.i = eofzVar7;
+        eogfVar2.b |= 256;
         j(v);
     }
 
     public final void g(int i) {
-        fecj v = elsr.a.v();
+        fgrc v = eogf.a.v();
         if (i == -1) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsr elsrVar = (elsr) v.b;
-            elsrVar.d = 9;
-            elsrVar.b |= 2;
+            eogf eogfVar = (eogf) v.b;
+            eogfVar.d = 9;
+            eogfVar.b |= 2;
         } else if (i == 0) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsr elsrVar2 = (elsr) v.b;
-            elsrVar2.d = 11;
-            elsrVar2.b |= 2;
+            eogf eogfVar2 = (eogf) v.b;
+            eogfVar2.d = 11;
+            eogfVar2.b |= 2;
         } else if (i == 2) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsr elsrVar3 = (elsr) v.b;
-            elsrVar3.d = 12;
-            elsrVar3.b |= 2;
+            eogf eogfVar3 = (eogf) v.b;
+            eogfVar3.d = 12;
+            eogfVar3.b |= 2;
         } else if (i == 3) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsr elsrVar4 = (elsr) v.b;
-            elsrVar4.d = 13;
-            elsrVar4.b |= 2;
+            eogf eogfVar4 = (eogf) v.b;
+            eogfVar4.d = 13;
+            eogfVar4.b |= 2;
         } else if (i == 4) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsr elsrVar5 = (elsr) v.b;
-            elsrVar5.d = 15;
-            elsrVar5.b |= 2;
+            eogf eogfVar5 = (eogf) v.b;
+            eogfVar5.d = 15;
+            eogfVar5.b |= 2;
         } else if (i != 5) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsr elsrVar6 = (elsr) v.b;
-            elsrVar6.d = 0;
-            elsrVar6.b = 2 | elsrVar6.b;
+            eogf eogfVar6 = (eogf) v.b;
+            eogfVar6.d = 0;
+            eogfVar6.b = 2 | eogfVar6.b;
             a.f(a.j(i, "Unknown setup result: "), new Object[0]);
         } else {
             if (!v.b.L()) {
                 v.U();
             }
-            elsr elsrVar7 = (elsr) v.b;
-            elsrVar7.d = 19;
-            elsrVar7.b |= 2;
+            eogf eogfVar7 = (eogf) v.b;
+            eogfVar7.d = 19;
+            eogfVar7.b |= 2;
         }
         j(v);
         a();
     }
 
     public final void h(int i, int i2) {
-        fecj v = elsr.a.v();
-        fecj v2 = elsq.a.v();
+        fgrc v = eogf.a.v();
+        fgrc v2 = eoge.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        int v3 = ddre.v(i);
-        elsq elsqVar = (elsq) v2.b;
-        elsqVar.c = v3 - 1;
-        elsqVar.b |= 1;
+        int v3 = dgcj.v(i);
+        eoge eogeVar = (eoge) v2.b;
+        eogeVar.c = v3 - 1;
+        eogeVar.b |= 1;
         if (v3 == 1) {
             a.f(a.j(i, "Unknown trigger type: "), new Object[0]);
         }
@@ -304,154 +304,154 @@ public class SourceLogManager implements Parcelable {
             if (!v2.b.L()) {
                 v2.U();
             }
-            elsq elsqVar2 = (elsq) v2.b;
-            elsqVar2.d = 3;
-            elsqVar2.b |= 2;
+            eoge eogeVar2 = (eoge) v2.b;
+            eogeVar2.d = 3;
+            eogeVar2.b |= 2;
         } else if (i2 == 0) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            elsq elsqVar3 = (elsq) v2.b;
-            elsqVar3.d = 1;
-            elsqVar3.b |= 2;
+            eoge eogeVar3 = (eoge) v2.b;
+            eogeVar3.d = 1;
+            eogeVar3.b |= 2;
         } else if (i2 == 1) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            elsq elsqVar4 = (elsq) v2.b;
-            elsqVar4.d = 2;
-            elsqVar4.b |= 2;
+            eoge eogeVar4 = (eoge) v2.b;
+            eogeVar4.d = 2;
+            eogeVar4.b |= 2;
         } else if (i2 == 6) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            elsq elsqVar5 = (elsq) v2.b;
-            elsqVar5.d = 4;
-            elsqVar5.b |= 2;
+            eoge eogeVar5 = (eoge) v2.b;
+            eogeVar5.d = 4;
+            eogeVar5.b |= 2;
         } else if (i2 == 7) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            elsq elsqVar6 = (elsq) v2.b;
-            elsqVar6.d = 5;
-            elsqVar6.b |= 2;
+            eoge eogeVar6 = (eoge) v2.b;
+            eogeVar6.d = 5;
+            eogeVar6.b |= 2;
         } else if (i2 == 9) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            elsq elsqVar7 = (elsq) v2.b;
-            elsqVar7.d = 6;
-            elsqVar7.b |= 2;
+            eoge eogeVar7 = (eoge) v2.b;
+            eogeVar7.d = 6;
+            eogeVar7.b |= 2;
         } else if (i2 != 17) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            elsq elsqVar8 = (elsq) v2.b;
-            elsqVar8.d = 8;
-            elsqVar8.b |= 2;
+            eoge eogeVar8 = (eoge) v2.b;
+            eogeVar8.d = 8;
+            eogeVar8.b |= 2;
             a.m(a.j(i2, "Unknown connection type: "), new Object[0]);
         } else {
             if (!v2.b.L()) {
                 v2.U();
             }
-            elsq elsqVar9 = (elsq) v2.b;
-            elsqVar9.d = 7;
-            elsqVar9.b |= 2;
+            eoge eogeVar9 = (eoge) v2.b;
+            eogeVar9.d = 7;
+            eogeVar9.b |= 2;
         }
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elsr elsrVar = (elsr) fecpVar;
-        elsrVar.d = 1;
-        elsrVar.b = 2 | elsrVar.b;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        eogf eogfVar = (eogf) fgriVar;
+        eogfVar.d = 1;
+        eogfVar.b = 2 | eogfVar.b;
+        if (!fgriVar.L()) {
             v.U();
         }
-        elsr elsrVar2 = (elsr) v.b;
-        elsq elsqVar10 = (elsq) v2.Q();
-        elsqVar10.getClass();
-        elsrVar2.f = elsqVar10;
-        elsrVar2.b |= 32;
+        eogf eogfVar2 = (eogf) v.b;
+        eoge eogeVar10 = (eoge) v2.Q();
+        eogeVar10.getClass();
+        eogfVar2.f = eogeVar10;
+        eogfVar2.b |= 32;
         j(v);
     }
 
     public final void i(int i, byte b, boolean z, int i2) {
-        fecj v = elsr.a.v();
-        fecj v2 = elsh.a.v();
+        fgrc v = eogf.a.v();
+        fgrc v2 = eofv.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar = v2.b;
-        elsh elshVar = (elsh) fecpVar;
-        elshVar.b |= 1;
-        elshVar.c = i;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v2.b;
+        eofv eofvVar = (eofv) fgriVar;
+        eofvVar.b |= 1;
+        eofvVar.c = i;
+        if (!fgriVar.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        elsh elshVar2 = (elsh) fecpVar2;
-        elshVar2.b |= 4;
-        elshVar2.e = z;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v2.b;
+        eofv eofvVar2 = (eofv) fgriVar2;
+        eofvVar2.b |= 4;
+        eofvVar2.e = z;
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        fecp fecpVar3 = v2.b;
-        elsh elshVar3 = (elsh) fecpVar3;
+        fgri fgriVar3 = v2.b;
+        eofv eofvVar3 = (eofv) fgriVar3;
         int i3 = i2 - 1;
         if (i2 == 0) {
             throw null;
         }
-        elshVar3.f = i3;
-        elshVar3.b |= 8;
-        ddng g = ddre.g(b);
-        if (!fecpVar3.L()) {
+        eofvVar3.f = i3;
+        eofvVar3.b |= 8;
+        dfyl g = dgcj.g(b);
+        if (!fgriVar3.L()) {
             v2.U();
         }
-        elsh elshVar4 = (elsh) v2.b;
-        elshVar4.d = g.k;
-        elshVar4.b |= 2;
-        elsh elshVar5 = (elsh) v2.Q();
+        eofv eofvVar4 = (eofv) v2.b;
+        eofvVar4.d = g.k;
+        eofvVar4.b |= 2;
+        eofv eofvVar5 = (eofv) v2.Q();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar4 = v.b;
-        elsr elsrVar = (elsr) fecpVar4;
-        elsrVar.d = 3;
-        elsrVar.b |= 2;
-        if (!fecpVar4.L()) {
+        fgri fgriVar4 = v.b;
+        eogf eogfVar = (eogf) fgriVar4;
+        eogfVar.d = 3;
+        eogfVar.b |= 2;
+        if (!fgriVar4.L()) {
             v.U();
         }
-        elsr elsrVar2 = (elsr) v.b;
-        elshVar5.getClass();
-        elsrVar2.g = elshVar5;
-        elsrVar2.b |= 64;
+        eogf eogfVar2 = (eogf) v.b;
+        eofvVar5.getClass();
+        eogfVar2.g = eofvVar5;
+        eogfVar2.b |= 64;
         j(v);
     }
 
-    public final void j(fecj fecjVar) {
+    public final void j(fgrc fgrcVar) {
         long currentTimeMillis = System.currentTimeMillis();
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        elsr elsrVar = (elsr) fecjVar.b;
-        elsr elsrVar2 = elsr.a;
-        elsrVar.b |= 8;
-        elsrVar.e = currentTimeMillis;
+        eogf eogfVar = (eogf) fgrcVar.b;
+        eogf eogfVar2 = eogf.a;
+        eogfVar.b |= 8;
+        eogfVar.e = currentTimeMillis;
         Deque deque = this.d;
         synchronized (deque) {
             int i = this.g;
-            if (!fecjVar.b.L()) {
-                fecjVar.U();
+            if (!fgrcVar.b.L()) {
+                fgrcVar.U();
             }
-            elsr elsrVar3 = (elsr) fecjVar.b;
-            elsrVar3.b |= 1;
-            elsrVar3.c = i;
+            eogf eogfVar3 = (eogf) fgrcVar.b;
+            eogfVar3.b |= 1;
+            eogfVar3.c = i;
             this.g++;
             if (this.c) {
-                k((elsr) fecjVar.Q());
+                k((eogf) fgrcVar.Q());
             } else {
-                deque.add((elsr) fecjVar.Q());
+                deque.add((eogf) fgrcVar.Q());
             }
         }
     }
@@ -467,7 +467,7 @@ public class SourceLogManager implements Parcelable {
             arrayList = new ArrayList(deque.size());
             Iterator it = deque.iterator();
             while (it.hasNext()) {
-                arrayList.add(((elsr) it.next()).r());
+                arrayList.add(((eogf) it.next()).r());
             }
         }
         parcel.writeList(arrayList);
@@ -490,10 +490,10 @@ public class SourceLogManager implements Parcelable {
             byte[] bArr = (byte[]) arrayList.get(i);
             try {
                 Deque deque = this.d;
-                fecp y = fecp.y(elsr.a, bArr, 0, bArr.length, febw.a());
-                fecp.M(y);
-                deque.add((elsr) y);
-            } catch (fedk e) {
+                fgri y = fgri.y(eogf.a, bArr, 0, bArr.length, fgqp.a());
+                fgri.M(y);
+                deque.add((eogf) y);
+            } catch (fgsd e) {
                 a.g("Failed to unparcel mEventQueue with %s", e, new Object[0]);
             }
         }

@@ -2,20 +2,20 @@ package com.google.android.gms.smartdevice.utils;
 
 import android.util.Log;
 import com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse;
-import defpackage.asic;
-import defpackage.asie;
-import defpackage.demt;
+import defpackage.aulw;
+import defpackage.auly;
+import defpackage.dgxw;
 import java.io.ByteArrayInputStream;
 import java.io.UnsupportedEncodingException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public abstract class BinarySerializableFastSafeParcelableJson extends FastSafeParcelableJsonResponse {
     public final void ax(byte[] bArr) {
         try {
-            new asie().h(new ByteArrayInputStream(bArr), this);
-        } catch (asic e) {
-            throw new demt(e);
+            new auly().h(new ByteArrayInputStream(bArr), this);
+        } catch (aulw e) {
+            throw new dgxw(e);
         }
     }
 

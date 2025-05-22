@@ -3,21 +3,21 @@ package com.google.android.gms.nearby.connection;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cfer;
-import defpackage.cfes;
-import defpackage.cfey;
-import defpackage.cffc;
-import defpackage.cffe;
-import defpackage.cizq;
+import defpackage.atyq;
+import defpackage.chmd;
+import defpackage.chme;
+import defpackage.chmk;
+import defpackage.chmo;
+import defpackage.chmq;
+import defpackage.clhv;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class ConnectionsDevice extends AbstractSafeParcelable implements cffe {
-    public static final Parcelable.Creator CREATOR = new cfes();
+public class ConnectionsDevice extends AbstractSafeParcelable implements chmq {
+    public static final Parcelable.Creator CREATOR = new chme();
     public final String a;
     public final byte[] b;
     public final byte[] c;
@@ -32,41 +32,41 @@ public class ConnectionsDevice extends AbstractSafeParcelable implements cffe {
         this.d = i;
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final int a() {
         return 1;
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final int b() {
         return this.d;
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     /* renamed from: c, reason: merged with bridge method [inline-methods] */
-    public final cfer d() {
-        cfer cferVar = new cfer();
-        cferVar.e(this.a);
+    public final chmd d() {
+        chmd chmdVar = new chmd();
+        chmdVar.e(this.a);
         byte[] bArr = this.b;
         if (bArr != null) {
-            cferVar.b = bArr;
+            chmdVar.b = bArr;
         }
         byte[] bArr2 = this.e;
         if (bArr2 != null) {
-            cferVar.a = bArr2;
+            chmdVar.a = bArr2;
         }
         byte[] bArr3 = this.c;
         if (bArr3 != null) {
-            Iterator it = cizq.f(bArr3).iterator();
+            Iterator it = clhv.f(bArr3).iterator();
             while (it.hasNext()) {
-                cferVar.c((cfey) it.next());
+                chmdVar.c((chmk) it.next());
             }
         }
-        cferVar.c = this.d;
-        return cferVar;
+        chmdVar.c = this.d;
+        return chmdVar;
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final String e() {
         return this.a;
     }
@@ -74,19 +74,19 @@ public class ConnectionsDevice extends AbstractSafeParcelable implements cffe {
     public final boolean equals(Object obj) {
         if (obj instanceof ConnectionsDevice) {
             ConnectionsDevice connectionsDevice = (ConnectionsDevice) obj;
-            if (arwb.b(this.a, connectionsDevice.a) && Arrays.equals(this.e, connectionsDevice.e) && Arrays.equals(this.b, connectionsDevice.b) && Arrays.equals(this.c, connectionsDevice.c) && this.d == connectionsDevice.d) {
+            if (atyq.b(this.a, connectionsDevice.a) && Arrays.equals(this.e, connectionsDevice.e) && Arrays.equals(this.b, connectionsDevice.b) && Arrays.equals(this.c, connectionsDevice.c) && this.d == connectionsDevice.d) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final List f() {
-        return cizq.f(this.c);
+        return clhv.f(this.c);
     }
 
-    @Override // defpackage.cffe
+    @Override // defpackage.chmq
     public final byte[] g() {
         byte[] bArr = this.e;
         if (bArr == null) {
@@ -104,11 +104,11 @@ public class ConnectionsDevice extends AbstractSafeParcelable implements cffe {
         byte[] bArr = this.e;
         String arrays = bArr == null ? null : Arrays.toString(bArr);
         byte[] bArr2 = this.c;
-        return String.format("ConnectionsDevice:<endpointId: %s, endpointInfo: %s, connectivityBytes: %s, instanceType : %s>", str, arrays, bArr2 != null ? Arrays.toString(bArr2) : null, cffc.a(this.d));
+        return String.format("ConnectionsDevice:<endpointId: %s, endpointInfo: %s, connectivityBytes: %s, instanceType : %s>", str, arrays, bArr2 != null ? Arrays.toString(bArr2) : null, chmo.a(this.d));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cfes.a(this, parcel);
+        chme.a(this, parcel);
     }
 }

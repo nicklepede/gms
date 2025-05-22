@@ -4,21 +4,21 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cfef;
-import defpackage.cgcm;
+import defpackage.atzr;
+import defpackage.chlr;
+import defpackage.cikp;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.charset.Charset;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class DctDeviceDataElement extends AbstractSafeParcelable {
     public final int a;
     public final int b;
     public final byte[] c;
     private static final Charset d = Charset.forName("UTF-8");
-    public static final Parcelable.Creator CREATOR = new cgcm();
+    public static final Parcelable.Creator CREATOR = new cikp();
 
     public DctDeviceDataElement(int i, int i2, byte[] bArr) {
         this.a = i;
@@ -55,7 +55,7 @@ public class DctDeviceDataElement extends AbstractSafeParcelable {
             case 5:
             case 6:
             case 7:
-                str = cfef.b(this.c);
+                str = chlr.b(this.c);
                 break;
             default:
                 str = "UNKNOWN";
@@ -90,10 +90,10 @@ public class DctDeviceDataElement extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.b);
-        arxc.i(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.b);
+        atzr.i(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 }

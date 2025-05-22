@@ -18,64 +18,64 @@ import com.google.android.gms.ads.internal.c;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.flag.k;
 import com.google.android.gms.googlehelp.GoogleHelp;
-import defpackage.anxn;
-import defpackage.aqto;
-import defpackage.aqun;
-import defpackage.aquo;
-import defpackage.aqvg;
-import defpackage.aqwr;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.asrw;
-import defpackage.assk;
-import defpackage.assn;
-import defpackage.assp;
-import defpackage.assr;
-import defpackage.bipc;
-import defpackage.ejhf;
-import defpackage.fjzz;
-import defpackage.fkae;
-import defpackage.fkas;
+import defpackage.apzf;
+import defpackage.aswd;
+import defpackage.asxc;
+import defpackage.asxd;
+import defpackage.asxv;
+import defpackage.aszg;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.auvq;
+import defpackage.auwe;
+import defpackage.auwh;
+import defpackage.auwj;
+import defpackage.auwl;
+import defpackage.bktr;
+import defpackage.eluo;
+import defpackage.fmqe;
+import defpackage.fmqj;
+import defpackage.fmqy;
 import defpackage.ig;
-import defpackage.tbc;
-import defpackage.tbd;
-import defpackage.tbe;
-import defpackage.tbf;
-import defpackage.tbl;
-import defpackage.tbm;
-import defpackage.tbo;
-import defpackage.tbp;
-import defpackage.tbr;
-import defpackage.tbs;
-import defpackage.tjc;
+import defpackage.uxc;
+import defpackage.uxd;
+import defpackage.uxe;
+import defpackage.uxf;
+import defpackage.uxl;
+import defpackage.uxm;
+import defpackage.uxo;
+import defpackage.uxp;
+import defpackage.uxr;
+import defpackage.uxs;
+import defpackage.vfc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AdsSettingsChimeraActivity extends anxn implements DialogInterface.OnCancelListener, asrw, tbl, tbr, tbo {
-    public static final asot j = asot.b("AdsSettingsActivity", asej.AD_MEASUREMENT);
-    public assr k;
-    assr l;
+public class AdsSettingsChimeraActivity extends apzf implements DialogInterface.OnCancelListener, auvq, uxl, uxr, uxo {
+    public static final ausn j = ausn.b("AdsSettingsActivity", auid.AD_MEASUREMENT);
+    public auwl k;
+    auwl l;
     public SharedPreferences m;
-    assp n;
+    auwj n;
     private boolean o = false;
 
     private final void t(boolean z) {
         if (v()) {
-            new tbe(this).execute(Boolean.valueOf(z));
+            new uxe(this).execute(Boolean.valueOf(z));
         }
     }
 
     private final void u() {
         this.k.toggle();
         boolean z = this.k.h;
-        new tbf(this).execute(Boolean.valueOf(z));
-        if (fjzz.f()) {
+        new uxf(this).execute(Boolean.valueOf(z));
+        if (fmqe.f()) {
             Bundle bundle = new Bundle();
             bundle.putString("action", "ads_settings_lat_change");
             bundle.putString("lat", Boolean.toString(z));
-            c.e().l(this, null, "gmob-apps", bundle);
+            c.e().m(this, null, "gmob-apps", bundle);
         }
     }
 
@@ -86,50 +86,50 @@ public class AdsSettingsChimeraActivity extends anxn implements DialogInterface.
         try {
             return Settings.Global.getInt(getContentResolver(), "development_settings_enabled", 0) != 0;
         } catch (Exception e) {
-            ((ejhf) ((ejhf) ((ejhf) j.j()).s(e)).ah((char) 437)).x("Fail to determine debug setting.");
+            ((eluo) ((eluo) ((eluo) j.j()).s(e)).ai((char) 437)).x("Fail to determine debug setting.");
             return false;
         }
     }
 
-    private final void w(assp asspVar, int i, int i2) {
-        asspVar.l(i2);
-        asspVar.r(i2);
-        asspVar.o(i);
-        asspVar.n(this);
+    private final void w(auwj auwjVar, int i, int i2) {
+        auwjVar.l(i2);
+        auwjVar.r(i2);
+        auwjVar.o(i);
+        auwjVar.n(this);
     }
 
-    public final void a(aqun aqunVar) {
+    public final void a(asxc asxcVar) {
         Activity containerActivity = getContainerActivity();
-        int i = aqunVar.a;
-        if (true == aquo.f(containerActivity, i)) {
+        int i = asxcVar.a;
+        if (true == asxd.f(containerActivity, i)) {
             i = 18;
         }
-        Dialog a = aqto.a.a(containerActivity, i, 1, null);
+        Dialog a = aswd.a.a(containerActivity, i, 1, null);
         a.setCanceledOnTouchOutside(false);
         try {
-            aqvg.x(a, this).show(getSupportFragmentManager(), "error_dialog");
+            asxv.x(a, this).show(getSupportFragmentManager(), "error_dialog");
         } catch (IllegalStateException e) {
-            ((ejhf) ((ejhf) ((ejhf) j.j()).s(e)).ah((char) 436)).x("Cannot show Chimera Error Dialog.");
+            ((eluo) ((eluo) ((eluo) j.j()).s(e)).ai((char) 436)).x("Cannot show Chimera Error Dialog.");
         }
     }
 
-    @Override // defpackage.tbl
+    @Override // defpackage.uxl
     public final void k() {
-        new tbc(this).execute(new Void[0]);
-        if (fjzz.f()) {
+        new uxc(this).execute(new Void[0]);
+        if (fmqe.f()) {
             Bundle bundle = new Bundle();
             bundle.putString("action", "ads_settings_reset_adid");
-            c.e().l(this, null, "gmob-apps", bundle);
+            c.e().m(this, null, "gmob-apps", bundle);
         }
     }
 
-    @Override // defpackage.tbo
+    @Override // defpackage.uxo
     public final void l() {
         this.l.toggle();
         t(this.l.h);
     }
 
-    @Override // defpackage.tbr
+    @Override // defpackage.uxr
     public final void m() {
         u();
     }
@@ -147,50 +147,50 @@ public class AdsSettingsChimeraActivity extends anxn implements DialogInterface.
         finish();
     }
 
-    @Override // defpackage.anxn, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.apzf, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         this.m = getSharedPreferences("ad_settings_cache", 0);
         p.c(getApplicationContext());
         super.onCreate(bundle);
-        if (fkas.s() && ((UiModeManager) getSystemService("uimode")).getCurrentModeType() == 4) {
+        if (fmqy.s() && ((UiModeManager) getSystemService("uimode")).getCurrentModeType() == 4) {
             Intent intent = new Intent("com.google.android.gms.adsidentity.ACTION_ADS_IDENTITY_SETTINGS");
             intent.setPackage(getPackageName());
             startActivity(intent);
             finish();
             return;
         }
-        if (fkae.d()) {
+        if (fmqj.d()) {
             setTheme(R.style.Theme_GoogleMaterial_DayNight);
             if (bundle != null) {
                 this.o = bundle.getBoolean("SURVEY_REQUESTED", false);
             }
             if (!this.o) {
                 this.o = true;
-                new tjc(getApplicationContext(), getContainerActivity(), R.id.hats_frame_layout, null).a();
+                new vfc(getApplicationContext(), getContainerActivity(), R.id.hats_frame_layout, null).a();
             }
         }
-        ig hy = hy();
-        int i = asnd.a;
-        if (aquo.g(this)) {
-            hy.o(false);
-            hy.O();
+        ig hO = hO();
+        int i = auqx.a;
+        if (asxd.g(this)) {
+            hO.o(false);
+            hO.O();
         } else {
-            hy.o(true);
+            hO.o(true);
         }
-        if (fjzz.f()) {
+        if (fmqe.f()) {
             Bundle bundle2 = new Bundle();
             bundle2.putString("action", "ads_settings_page_view");
-            c.e().l(this, null, "gmob-apps", bundle2);
+            c.e().m(this, null, "gmob-apps", bundle2);
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.ads_settings_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         int itemId = menuItem.getItemId();
         if (itemId != R.id.help_and_feedback) {
@@ -200,122 +200,122 @@ public class AdsSettingsChimeraActivity extends anxn implements DialogInterface.
             finish();
             return true;
         }
-        Uri parse = Uri.parse(fjzz.a.a().q());
+        Uri parse = Uri.parse(fmqe.a.lK().q());
         GoogleHelp googleHelp = new GoogleHelp("android_ads");
         googleHelp.q = parse;
-        new bipc(this).a(googleHelp.a());
+        new bktr(this).a(googleHelp.a());
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onRestoreInstanceState(Bundle bundle) {
         super.onRestoreInstanceState(bundle);
-        if (fkae.d()) {
+        if (fmqj.d()) {
             this.o = bundle.getBoolean("SURVEY_REQUESTED", false);
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        new tbd(this).execute(new Void[0]);
+        new uxd(this).execute(new Void[0]);
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        if (fkae.d()) {
+        if (fmqj.d()) {
             bundle.putBoolean("SURVEY_REQUESTED", this.o);
         }
     }
 
-    @Override // defpackage.asrw
-    public final void p(View view, assp asspVar) {
-        int i = asspVar.b;
+    @Override // defpackage.auvq
+    public final void p(View view, auwj auwjVar) {
+        int i = auwjVar.b;
         if (i == R.string.ads_prefs_ads_personalization) {
             if (this.k.h) {
                 u();
                 return;
             }
             try {
-                new tbs().show(getSupportFragmentManager(), "toggle_lat_dialog");
+                new uxs().show(getSupportFragmentManager(), "toggle_lat_dialog");
                 return;
             } catch (IllegalStateException e) {
-                ((ejhf) ((ejhf) ((ejhf) j.j()).s(e)).ah((char) 439)).x("Cannot show Toggle Limit Ad Tracking Dialog.");
+                ((eluo) ((eluo) ((eluo) j.j()).s(e)).ai((char) 439)).x("Cannot show Toggle Limit Ad Tracking Dialog.");
                 return;
             }
         }
         if (i == R.string.ads_prefs_reset_adid) {
             try {
-                new tbm().show(getSupportFragmentManager(), "reset_dialog");
+                new uxm().show(getSupportFragmentManager(), "reset_dialog");
                 return;
             } catch (IllegalStateException e2) {
-                ((ejhf) ((ejhf) ((ejhf) j.j()).s(e2)).ah((char) 440)).x("Cannot show Reset Advertising Id Dialog.");
+                ((eluo) ((eluo) ((eluo) j.j()).s(e2)).ai((char) 440)).x("Cannot show Reset Advertising Id Dialog.");
                 return;
             }
         }
         if (i == R.string.ads_prefs_ads_by_google) {
-            Intent intent = new Intent("android.intent.action.VIEW", Uri.parse(fjzz.a.a().r()));
-            if (asng.ad(this, intent)) {
+            Intent intent = new Intent("android.intent.action.VIEW", Uri.parse(fmqe.a.lK().r()));
+            if (aura.ad(this, intent)) {
                 startActivity(intent);
             } else {
-                aqwr.a(this, intent);
+                aszg.a(this, intent);
             }
             Bundle bundle = new Bundle();
             bundle.putString("action", "ads_settings_ads_by_google_click");
-            c.e().l(this, null, "gmob-apps", bundle);
+            c.e().m(this, null, "gmob-apps", bundle);
             return;
         }
         if (i == R.string.debug_logging_enable) {
-            assr assrVar = this.l;
-            if (assrVar.h) {
-                assrVar.toggle();
+            auwl auwlVar = this.l;
+            if (auwlVar.h) {
+                auwlVar.toggle();
                 t(this.l.h);
                 return;
             }
             try {
-                new tbp().show(getSupportFragmentManager(), "toggle_debug_logging_dialog");
+                new uxp().show(getSupportFragmentManager(), "toggle_debug_logging_dialog");
             } catch (IllegalStateException e3) {
-                ((ejhf) ((ejhf) ((ejhf) j.j()).s(e3)).ah((char) 438)).x("Cannot show Toggle Debug Logging Dialog.");
+                ((eluo) ((eluo) ((eluo) j.j()).s(e3)).ai((char) 438)).x("Cannot show Toggle Debug Logging Dialog.");
             }
         }
     }
 
-    @Override // defpackage.anxn
-    protected final void q(assn assnVar) {
-        assp asspVar = new assp(this);
-        w(asspVar, 0, R.string.ads_prefs_reset_adid);
-        assk asskVar = assnVar.a;
-        asskVar.k(asspVar);
-        assr assrVar = new assr(this, false);
-        w(assrVar, 1, R.string.ads_prefs_ads_personalization);
-        this.k = assrVar;
-        assrVar.p(R.string.ads_prefs_ads_personalization_summary);
+    @Override // defpackage.apzf
+    protected final void q(auwh auwhVar) {
+        auwj auwjVar = new auwj(this);
+        w(auwjVar, 0, R.string.ads_prefs_reset_adid);
+        auwe auweVar = auwhVar.a;
+        auweVar.k(auwjVar);
+        auwl auwlVar = new auwl(this, false);
+        w(auwlVar, 1, R.string.ads_prefs_ads_personalization);
+        this.k = auwlVar;
+        auwlVar.p(R.string.ads_prefs_ads_personalization_summary);
         this.k.setChecked(this.m.getBoolean("ad_settings_cache_lat", false));
-        asskVar.k(this.k);
-        assp asspVar2 = new assp(this);
-        w(asspVar2, 2, R.string.ads_prefs_ads_by_google);
-        asskVar.k(asspVar2);
+        auweVar.k(this.k);
+        auwj auwjVar2 = new auwj(this);
+        w(auwjVar2, 2, R.string.ads_prefs_ads_by_google);
+        auweVar.k(auwjVar2);
         int i = 3;
         if (v()) {
-            assr assrVar2 = new assr(this, false);
-            w(assrVar2, 3, R.string.debug_logging_enable);
-            this.l = assrVar2;
-            assrVar2.p(R.string.debug_logging_enable_summary);
+            auwl auwlVar2 = new auwl(this, false);
+            w(auwlVar2, 3, R.string.debug_logging_enable);
+            this.l = auwlVar2;
+            auwlVar2.p(R.string.debug_logging_enable_summary);
             this.l.setChecked(this.m.getBoolean("ad_settings_cache_enable_debug_logging", false));
-            asskVar.k(this.l);
+            auweVar.k(this.l);
             i = 4;
         }
-        assp asspVar3 = new assp(this);
-        this.n = asspVar3;
-        asspVar3.o(i);
+        auwj auwjVar3 = new auwj(this);
+        this.n = auwjVar3;
+        auwjVar3.o(i);
         this.n.p(R.string.ads_prefs_your_adid);
-        asskVar.k(this.n);
+        auweVar.k(this.n);
     }
 
-    @Override // defpackage.qet, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void setContentView(int i) {
-        if (!fkae.d()) {
+        if (!fmqj.d()) {
             super.setContentView(i);
             return;
         }
@@ -323,7 +323,7 @@ public class AdsSettingsChimeraActivity extends anxn implements DialogInterface.
         getLayoutInflater().inflate(i, (FrameLayout) findViewById(R.id.hats_frame_layout));
     }
 
-    @Override // defpackage.anxn
+    @Override // defpackage.apzf
     public final void r() {
     }
 }

@@ -1,21 +1,21 @@
 package com.google.android.gms.credential.manager.service.firstparty;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.auxj;
-import defpackage.awrf;
-import defpackage.awrg;
-import defpackage.awri;
-import defpackage.awrq;
-import defpackage.bxgj;
-import defpackage.bxgk;
-import defpackage.bxhh;
-import defpackage.cwod;
-import defpackage.fvbo;
+import defpackage.axbi;
+import defpackage.ayvf;
+import defpackage.ayvg;
+import defpackage.ayvi;
+import defpackage.ayvq;
+import defpackage.bzoz;
+import defpackage.bzpa;
+import defpackage.bzpx;
+import defpackage.cyya;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public final class CredentialManagerApiChimeraService extends awri {
-    public awrg a;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public final class CredentialManagerApiChimeraService extends ayvi {
+    public ayvg a;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -25,14 +25,14 @@ public final class CredentialManagerApiChimeraService extends awri {
     public CredentialManagerApiChimeraService() {
         /*
             r7 = this;
-            ejck r3 = defpackage.ejck.a
-            fngm r0 = defpackage.fngm.a
-            fngn r0 = r0.a()
-            femw r0 = r0.d()
-            fedh r0 = r0.b
+            elpp r3 = defpackage.elpp.a
+            fpym r0 = defpackage.fpym.a
+            fpyn r0 = r0.lK()
+            fhbp r0 = r0.d()
+            fgsa r0 = r0.b
             java.lang.String r1 = "getElementList(...)"
-            defpackage.fvbo.e(r0, r1)
-            eiuu r6 = defpackage.eitd.c(r0)
+            defpackage.fxxm.e(r0, r1)
+            elhz r6 = defpackage.elgi.c(r0)
             r4 = 0
             r5 = 10
             r1 = 196(0xc4, float:2.75E-43)
@@ -44,19 +44,19 @@ public final class CredentialManagerApiChimeraService extends awri {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.credential.manager.service.firstparty.CredentialManagerApiChimeraService.<init>():void");
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        fvbo.f(getServiceRequest, "request");
-        awrg awrgVar = this.a;
-        if (awrgVar == null) {
-            fvbo.j("apiStubFactory");
-            awrgVar = null;
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        fxxm.f(getServiceRequest, "request");
+        ayvg ayvgVar = this.a;
+        if (ayvgVar == null) {
+            fxxm.j("apiStubFactory");
+            ayvgVar = null;
         }
-        bxgk a = bxhh.a(this);
+        bzpa a = bzpx.a(this);
         String str = getServiceRequest.f;
-        fvbo.e(str, "getCallingPackage(...)");
+        fxxm.e(str, "getCallingPackage(...)");
         String str2 = getServiceRequest.p;
-        awrf awrfVar = awrgVar.a;
-        bxgjVar.c(new auxj(str, str2, ((awrq) awrfVar.a).a(), ((cwod) awrfVar.b).a(), a));
+        ayvf ayvfVar = ayvgVar.a;
+        bzozVar.c(new axbi(str, str2, ((ayvq) ayvfVar.a).a(), ((cyya) ayvfVar.b).a(), a));
     }
 }

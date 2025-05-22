@@ -3,15 +3,15 @@ package com.google.android.gms.usonia.auth.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dhvk;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dkgs;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class TrustedId extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dhvk();
+    public static final Parcelable.Creator CREATOR = new dkgs();
     public String a;
     public byte[] b;
 
@@ -24,7 +24,7 @@ public final class TrustedId extends AbstractSafeParcelable {
         }
         if (obj instanceof TrustedId) {
             TrustedId trustedId = (TrustedId) obj;
-            if (arwb.b(this.a, trustedId.a) && Arrays.equals(this.b, trustedId.b)) {
+            if (atyq.b(this.a, trustedId.a) && Arrays.equals(this.b, trustedId.b)) {
                 return true;
             }
         }
@@ -37,10 +37,10 @@ public final class TrustedId extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.i(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.i(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 
     public TrustedId(String str, byte[] bArr) {

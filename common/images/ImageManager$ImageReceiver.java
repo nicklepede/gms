@@ -8,24 +8,24 @@ import android.os.Bundle;
 import android.os.Looper;
 import android.os.ParcelFileDescriptor;
 import android.os.ResultReceiver;
-import defpackage.arsu;
-import defpackage.arsv;
-import defpackage.artd;
-import defpackage.byhr;
+import defpackage.atvj;
+import defpackage.atvk;
+import defpackage.atvs;
+import defpackage.caqj;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 final class ImageManager$ImageReceiver extends ResultReceiver {
     private final ArrayList imageRequestList;
-    final /* synthetic */ arsu this$0;
+    final /* synthetic */ atvj this$0;
     private final Uri uri;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    ImageManager$ImageReceiver(arsu arsuVar, Uri uri) {
-        super(new byhr(Looper.getMainLooper()));
-        this.this$0 = arsuVar;
+    ImageManager$ImageReceiver(atvj atvjVar, Uri uri) {
+        super(new caqj(Looper.getMainLooper()));
+        this.this$0 = atvjVar;
         this.uri = uri;
         this.imageRequestList = new ArrayList();
     }
@@ -34,9 +34,9 @@ final class ImageManager$ImageReceiver extends ResultReceiver {
         context.sendBroadcast(intent);
     }
 
-    public void addImageRequest(arsv arsvVar) {
-        artd.a("ImageReceiver.addImageRequest() must be called in the main thread");
-        this.imageRequestList.add(arsvVar);
+    public void addImageRequest(atvk atvkVar) {
+        atvs.a("ImageReceiver.addImageRequest() must be called in the main thread");
+        this.imageRequestList.add(atvkVar);
     }
 
     @Override // android.os.ResultReceiver
@@ -45,15 +45,15 @@ final class ImageManager$ImageReceiver extends ResultReceiver {
         if (parcelFileDescriptor != null) {
             new AssetFileDescriptor(parcelFileDescriptor, bundle.getLong("assetFdStartOffset", 0L), bundle.getLong("assetFdLength", -1L));
         }
-        arsu arsuVar = this.this$0;
-        int i2 = arsu.c;
-        ExecutorService executorService = arsuVar.b;
+        atvj atvjVar = this.this$0;
+        int i2 = atvj.c;
+        ExecutorService executorService = atvjVar.b;
         throw null;
     }
 
-    public void removeImageRequest(arsv arsvVar) {
-        artd.a("ImageReceiver.removeImageRequest() must be called in the main thread");
-        this.imageRequestList.remove(arsvVar);
+    public void removeImageRequest(atvk atvkVar) {
+        atvs.a("ImageReceiver.removeImageRequest() must be called in the main thread");
+        this.imageRequestList.remove(atvkVar);
     }
 
     public void sendBroadcast() {
@@ -62,7 +62,7 @@ final class ImageManager$ImageReceiver extends ResultReceiver {
         intent.putExtra("com.google.android.gms.extras.uri", this.uri);
         intent.putExtra("com.google.android.gms.extras.resultReceiver", this);
         intent.putExtra("com.google.android.gms.extras.priority", 3);
-        int i = arsu.c;
+        int i = atvj.c;
         Context context = this.this$0.a;
         sendBroadcastWithShareIdentity(null, intent);
     }

@@ -3,13 +3,13 @@ package com.google.android.gms.reminders.sync;
 import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.cxgs;
+import defpackage.czqo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RemindersSyncChimeraService extends Service {
     private static final Object a = new Object();
-    private static cxgs b;
+    private static czqo b;
 
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
@@ -20,7 +20,7 @@ public class RemindersSyncChimeraService extends Service {
     public final void onCreate() {
         synchronized (a) {
             if (b == null) {
-                b = new cxgs(getApplicationContext());
+                b = new czqo(getApplicationContext());
             }
         }
     }

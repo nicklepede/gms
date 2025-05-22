@@ -4,29 +4,29 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.autofill.metrics.MetricsContext;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.affx;
-import defpackage.afqt;
-import defpackage.afqu;
-import defpackage.afra;
-import defpackage.arxc;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
+import defpackage.ahgj;
+import defpackage.ahrf;
+import defpackage.ahrg;
+import defpackage.ahrm;
+import defpackage.atzr;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SafeFillContext extends AbstractSafeParcelable implements MetricsContext.FillContext {
     public static final Parcelable.Creator CREATOR;
-    private static final asot g = asot.b("SafeFillContext", asej.AUTOFILL);
+    private static final ausn g = ausn.b("SafeFillContext", auid.AUTOFILL);
     public final byte[] a;
     public final byte[][] b;
     public final int c;
@@ -36,7 +36,7 @@ public class SafeFillContext extends AbstractSafeParcelable implements MetricsCo
 
     static {
         Charset charset = StandardCharsets.UTF_8;
-        CREATOR = new affx();
+        CREATOR = new ahgj();
     }
 
     public SafeFillContext(byte[] bArr, byte[][] bArr2, int i, boolean z, boolean z2, boolean z3) {
@@ -49,41 +49,41 @@ public class SafeFillContext extends AbstractSafeParcelable implements MetricsCo
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext.FillContext
-    public final eiid a() {
+    public final ekvi a() {
         byte[] bArr = this.a;
         if (bArr == null) {
-            return eigb.a;
+            return ektg.a;
         }
         try {
-            fecp y = fecp.y(afra.a, bArr, 0, bArr.length, febw.a());
-            fecp.M(y);
-            return eiid.j((afra) y);
-        } catch (fedk e) {
-            ((ejhf) ((ejhf) g.j()).s(e)).x("Failed to parse form");
-            return eigb.a;
+            fgri y = fgri.y(ahrm.a, bArr, 0, bArr.length, fgqp.a());
+            fgri.M(y);
+            return ekvi.j((ahrm) y);
+        } catch (fgsd e) {
+            ((eluo) ((eluo) g.j()).s(e)).x("Failed to parse form");
+            return ektg.a;
         }
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext.FillContext
-    public final eiid b() {
+    public final ekvi b() {
         int i = this.c;
-        return i == Integer.MIN_VALUE ? eigb.a : eiid.i(afqt.b(i));
+        return i == Integer.MIN_VALUE ? ektg.a : ekvi.i(ahrf.b(i));
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext.FillContext
-    public final eitj c() {
-        int i = eitj.d;
-        eite eiteVar = new eite();
+    public final elgo c() {
+        int i = elgo.d;
+        elgj elgjVar = new elgj();
         for (byte[] bArr : this.b) {
             try {
-                fecp y = fecp.y(afqu.a, bArr, 0, bArr.length, febw.a());
-                fecp.M(y);
-                eiteVar.i((afqu) y);
-            } catch (fedk e) {
-                ((ejhf) ((ejhf) g.j()).s(e)).x("Failed to parse dataset");
+                fgri y = fgri.y(ahrg.a, bArr, 0, bArr.length, fgqp.a());
+                fgri.M(y);
+                elgjVar.i((ahrg) y);
+            } catch (fgsd e) {
+                ((eluo) ((eluo) g.j()).s(e)).x("Failed to parse dataset");
             }
         }
-        return eiteVar.g();
+        return elgjVar.g();
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext.FillContext
@@ -104,13 +104,13 @@ public class SafeFillContext extends AbstractSafeParcelable implements MetricsCo
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         byte[] bArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, bArr, false);
-        arxc.A(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.e(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, bArr, false);
+        atzr.A(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.e(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 }

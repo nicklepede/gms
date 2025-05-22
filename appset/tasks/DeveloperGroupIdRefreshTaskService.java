@@ -6,132 +6,132 @@ import com.google.android.gms.ads.internal.c;
 import com.google.android.gms.appset.tasks.DeveloperGroupIdRefreshTaskService;
 import com.google.android.gms.chimera.modules.appset.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.byln;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fkan;
-import defpackage.uhk;
-import defpackage.ujf;
+import defpackage.cauf;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fmqs;
+import defpackage.wdj;
+import defpackage.wfe;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class DeveloperGroupIdRefreshTaskService extends GmsTaskBoundService {
     public static final /* synthetic */ int b = 0;
-    public enss a;
-    private uhk c;
+    public eqgl a;
+    private wdj c;
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        if (!fkan.e()) {
-            return ensj.i(0);
+    public final eqgl iB(cauf caufVar) {
+        if (!fmqs.e()) {
+            return eqgc.i(0);
         }
-        this.a = ujf.a().submit(new Callable() { // from class: uja
+        this.a = wfe.a().submit(new Callable() { // from class: wez
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 DeveloperGroupIdRefreshTaskService developerGroupIdRefreshTaskService = DeveloperGroupIdRefreshTaskService.this;
-                return new uhr(new uhv(developerGroupIdRefreshTaskService, developerGroupIdRefreshTaskService.getClass().getName()));
+                return new wdq(new wdu(developerGroupIdRefreshTaskService, developerGroupIdRefreshTaskService.getClass().getName()));
             }
         });
         final Context a = AppContextProvider.a();
-        final uhk uhkVar = this.c;
-        final enss enssVar = this.a;
-        return enox.g(enps.g(ensi.h(uhkVar.c.c(new enqc() { // from class: ugy
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                uio uioVar = (uio) obj;
-                final fecj fecjVar = (fecj) uioVar.iB(5, null);
-                fecjVar.X(uioVar);
-                final ArrayList arrayList = new ArrayList(DesugarCollections.unmodifiableMap(DesugarCollections.unmodifiableMap(((uio) fecjVar.b).c)).keySet());
-                ensi h = ensi.h(enssVar);
-                final uhk uhkVar2 = uhk.this;
-                return enps.g(h, new enqc() { // from class: uhj
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj2) {
-                        uhx uhxVar = (uhx) obj2;
+        final wdj wdjVar = this.c;
+        final eqgl eqglVar = this.a;
+        return eqcq.g(eqdl.g(eqgb.h(wdjVar.c.c(new eqdv() { // from class: wcx
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                wen wenVar = (wen) obj;
+                final fgrc fgrcVar = (fgrc) wenVar.iQ(5, null);
+                fgrcVar.X(wenVar);
+                final ArrayList arrayList = new ArrayList(DesugarCollections.unmodifiableMap(DesugarCollections.unmodifiableMap(((wen) fgrcVar.b).c)).keySet());
+                eqgb h = eqgb.h(eqglVar);
+                final wdj wdjVar2 = wdj.this;
+                return eqdl.g(h, new eqdv() { // from class: wdi
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj2) {
+                        wdw wdwVar = (wdw) obj2;
                         final ArrayList arrayList2 = new ArrayList();
                         final List list = arrayList;
                         Iterator it = list.iterator();
                         while (it.hasNext()) {
-                            arrayList2.add(uhxVar.a((String) it.next()));
+                            arrayList2.add(wdwVar.a((String) it.next()));
                         }
-                        final fecj fecjVar2 = fecjVar;
-                        return ensj.c(arrayList2).a(new Callable() { // from class: uhi
+                        final fgrc fgrcVar2 = fgrcVar;
+                        return eqgc.c(arrayList2).a(new Callable() { // from class: wdh
                             @Override // java.util.concurrent.Callable
                             public final Object call() {
-                                int i = uhk.d;
+                                int i = wdj.d;
                                 ArrayList arrayList3 = arrayList2;
                                 int size = arrayList3.size();
                                 int i2 = 0;
                                 int i3 = 0;
                                 while (true) {
-                                    fecj fecjVar3 = fecjVar2;
+                                    fgrc fgrcVar3 = fgrcVar2;
                                     if (i2 >= size) {
-                                        return (uio) fecjVar3.Q();
+                                        return (wen) fgrcVar3.Q();
                                     }
-                                    String str = ((uhs) ensj.r((enss) arrayList3.get(i2))).a;
-                                    fecj v = uij.a.v();
+                                    String str = ((wdr) eqgc.r((eqgl) arrayList3.get(i2))).a;
+                                    fgrc v = wei.a.v();
                                     c.j();
-                                    fefi h2 = fegx.h(System.currentTimeMillis());
+                                    fgub h2 = fgvq.h(System.currentTimeMillis());
                                     if (!v.b.L()) {
                                         v.U();
                                     }
-                                    fecp fecpVar = v.b;
-                                    uij uijVar = (uij) fecpVar;
+                                    fgri fgriVar = v.b;
+                                    wei weiVar = (wei) fgriVar;
                                     str.getClass();
-                                    uijVar.b |= 1;
-                                    uijVar.c = str;
-                                    if (!fecpVar.L()) {
+                                    weiVar.b |= 1;
+                                    weiVar.c = str;
+                                    if (!fgriVar.L()) {
                                         v.U();
                                     }
                                     List list2 = list;
-                                    uij uijVar2 = (uij) v.b;
+                                    wei weiVar2 = (wei) v.b;
                                     h2.getClass();
-                                    uijVar2.d = h2;
-                                    uijVar2.b |= 2;
-                                    fecjVar3.bg((String) list2.get(i3), (uij) v.Q());
+                                    weiVar2.d = h2;
+                                    weiVar2.b |= 2;
+                                    fgrcVar3.bg((String) list2.get(i3), (wei) v.Q());
                                     i2++;
                                     i3++;
                                 }
                             }
-                        }, uhk.this.b);
+                        }, wdj.this.b);
                     }
-                }, uhkVar2.b);
+                }, wdjVar2.b);
             }
-        }, uhkVar.b)), new enqc() { // from class: ujb
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                ((uhr) ensj.r(DeveloperGroupIdRefreshTaskService.this.a)).c();
-                return ensj.i(0);
+        }, wdjVar.b)), new eqdv() { // from class: wfa
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                ((wdq) eqgc.r(DeveloperGroupIdRefreshTaskService.this.a)).c();
+                return eqgc.i(0);
             }
-        }, ujf.a()), Throwable.class, new enqc() { // from class: ujc
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                enps.f(DeveloperGroupIdRefreshTaskService.this.a, new eiho() { // from class: ujd
-                    @Override // defpackage.eiho
+        }, wfe.a()), Throwable.class, new eqdv() { // from class: wfb
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                eqdl.f(DeveloperGroupIdRefreshTaskService.this.a, new ekut() { // from class: wfc
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
                         int i = DeveloperGroupIdRefreshTaskService.b;
-                        ((uhr) ((uhx) obj2)).c();
+                        ((wdq) ((wdw) obj2)).c();
                         return null;
                     }
-                }, ujf.a());
+                }, wfe.a());
                 d.d(a, "DeveloperIdRefreshTaskFailure", "Developer ID refresh task failed.");
-                return ensj.i(2);
+                return eqgc.i(2);
             }
-        }, ujf.a());
+        }, wfe.a());
     }
 
-    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         super.onCreate();
-        this.c = uhk.b(AppContextProvider.a());
+        this.c = wdj.b(AppContextProvider.a());
     }
 }

@@ -15,11 +15,11 @@ import android.view.ScaleGestureDetector;
 import android.view.View;
 import com.google.android.cast.JGCastService;
 import com.google.android.gms.R;
-import defpackage.cugb;
-import defpackage.cugc;
-import defpackage.cugd;
+import defpackage.cwpi;
+import defpackage.cwpj;
+import defpackage.cwpk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class AvatarView extends View implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener, ScaleGestureDetector.OnScaleGestureListener {
     private static boolean r;
@@ -45,12 +45,12 @@ public class AvatarView extends View implements GestureDetector.OnGestureListene
     boolean i;
     boolean j;
     boolean k;
-    cugb l;
+    cwpi l;
     public float m;
     boolean n;
     float o;
-    cugd p;
-    cugc q;
+    cwpk p;
+    cwpj q;
     private final Matrix x;
     private final int y;
     private boolean z;
@@ -97,9 +97,9 @@ public class AvatarView extends View implements GestureDetector.OnGestureListene
         }
         this.f = new GestureDetector(context, this, null, true ^ t);
         this.g = new ScaleGestureDetector(context, this);
-        this.l = new cugb(this);
-        this.p = new cugd(this);
-        this.q = new cugc(this);
+        this.l = new cwpi(this);
+        this.p = new cwpk(this);
+        this.q = new cwpj(this);
         setContentDescription(getResources().getString(R.string.people_avatar_cropper));
     }
 
@@ -201,16 +201,16 @@ public class AvatarView extends View implements GestureDetector.OnGestureListene
             invalidate();
             return;
         }
-        cugc cugcVar = this.q;
-        if (cugcVar.e) {
+        cwpj cwpjVar = this.q;
+        if (cwpjVar.e) {
             return;
         }
-        cugcVar.d = -1L;
-        cugcVar.b = f7;
-        cugcVar.c = f6;
-        cugcVar.f = false;
-        cugcVar.e = true;
-        cugcVar.a.postDelayed(cugcVar, 250L);
+        cwpjVar.d = -1L;
+        cwpjVar.b = f7;
+        cwpjVar.c = f6;
+        cwpjVar.f = false;
+        cwpjVar.e = true;
+        cwpjVar.a.postDelayed(cwpjVar, 250L);
     }
 
     public final boolean e(float f, float f2) {
@@ -276,21 +276,21 @@ public class AvatarView extends View implements GestureDetector.OnGestureListene
             if (!this.j) {
                 float f = f();
                 float min = Math.min(this.A, Math.max(this.m, 1.5f * f));
-                cugb cugbVar = this.l;
+                cwpi cwpiVar = this.l;
                 float x = motionEvent.getX();
                 float y = motionEvent.getY();
-                if (!cugbVar.i) {
-                    cugbVar.b = x;
-                    cugbVar.c = y;
-                    cugbVar.e = min;
-                    cugbVar.h = System.currentTimeMillis();
-                    cugbVar.f = f;
-                    float f2 = cugbVar.e;
-                    cugbVar.d = f2 > f;
-                    cugbVar.g = (f2 - f) / 300.0f;
-                    cugbVar.i = true;
-                    cugbVar.j = false;
-                    cugbVar.a.post(cugbVar);
+                if (!cwpiVar.i) {
+                    cwpiVar.b = x;
+                    cwpiVar.c = y;
+                    cwpiVar.e = min;
+                    cwpiVar.h = System.currentTimeMillis();
+                    cwpiVar.f = f;
+                    float f2 = cwpiVar.e;
+                    cwpiVar.d = f2 > f;
+                    cwpiVar.g = (f2 - f) / 300.0f;
+                    cwpiVar.i = true;
+                    cwpiVar.j = false;
+                    cwpiVar.a.post(cwpiVar);
                 }
             }
             this.j = false;
@@ -352,14 +352,14 @@ public class AvatarView extends View implements GestureDetector.OnGestureListene
     public final boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.i) {
             if (!this.n) {
-                cugd cugdVar = this.p;
-                if (!cugdVar.e) {
-                    cugdVar.d = -1L;
-                    cugdVar.b = f;
-                    cugdVar.c = f2;
-                    cugdVar.f = false;
-                    cugdVar.e = true;
-                    cugdVar.a.post(cugdVar);
+                cwpk cwpkVar = this.p;
+                if (!cwpkVar.e) {
+                    cwpkVar.d = -1L;
+                    cwpkVar.b = f;
+                    cwpkVar.c = f2;
+                    cwpkVar.f = false;
+                    cwpkVar.e = true;
+                    cwpkVar.a.post(cwpkVar);
                 }
             }
             this.n = false;

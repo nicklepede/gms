@@ -6,46 +6,46 @@ import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.bqem;
-import defpackage.bqex;
-import defpackage.bqhj;
-import defpackage.bqkp;
-import defpackage.bqld;
-import defpackage.bqlf;
-import defpackage.dtgd;
-import defpackage.elvp;
-import defpackage.elvq;
-import defpackage.elvs;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.fecj;
-import defpackage.fecp;
+import defpackage.bsmc;
+import defpackage.bsmn;
+import defpackage.bsoy;
+import defpackage.bsse;
+import defpackage.bsss;
+import defpackage.bssu;
+import defpackage.dvql;
+import defpackage.eojd;
+import defpackage.eoje;
+import defpackage.eojg;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.fgrc;
+import defpackage.fgri;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public class RequestBrellaDynamiteFeatureIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        dtgd dtgdVar;
+        dvql dvqlVar;
         long j;
         long j2;
         if (!"com.google.android.gms.learning.REQUEST_FULL_FEATURE".equals(intent.getAction())) {
             return;
         }
-        bqld.a();
-        dtgd b = dtgd.b(this);
+        bsss.a();
+        dvql b = dvql.b(this);
         try {
-            bqem bqemVar = (bqem) b.c(bqem.class);
-            bqex bqexVar = (bqex) b.c(bqex.class);
+            bsmc bsmcVar = (bsmc) b.c(bsmc.class);
+            bsmn bsmnVar = (bsmn) b.c(bsmn.class);
             ModuleManager moduleManager = ModuleManager.get(this);
             String stringExtra = intent.getStringExtra("requester_package");
-            bqkp bqkpVar = (bqkp) b.c(bqkp.class);
+            bsse bsseVar = (bsse) b.c(bsse.class);
             b.d();
-            ensj.t(bqkpVar.b(stringExtra), new bqlf(b, bqexVar), enre.a);
-            bqhj bqhjVar = (bqhj) b.c(bqhj.class);
-            if (bqemVar.N()) {
-                long a = bqhjVar.a() / 1000000;
-                Context context = bqhjVar.a;
+            eqgc.t(bsseVar.b(stringExtra), new bssu(b, bsmnVar), eqex.a);
+            bsoy bsoyVar = (bsoy) b.c(bsoy.class);
+            if (bsmcVar.N()) {
+                long a = bsoyVar.a() / 1000000;
+                Context context = bsoyVar.a;
                 long totalSpace = context.getFilesDir().getTotalSpace() / 1000000;
                 j = 0;
                 ActivityManager activityManager = (ActivityManager) context.getSystemService("activity");
@@ -57,64 +57,64 @@ public class RequestBrellaDynamiteFeatureIntentOperation extends IntentOperation
                     j2 = memoryInfo.totalMem;
                 }
                 long j3 = j2 / 1000000;
-                fecj v = elvs.a.v();
+                fgrc v = eojg.a.v();
                 if (!v.b.L()) {
                     v.U();
                 }
-                fecp fecpVar = v.b;
-                elvs elvsVar = (elvs) fecpVar;
-                dtgdVar = b;
+                fgri fgriVar = v.b;
+                eojg eojgVar = (eojg) fgriVar;
+                dvqlVar = b;
                 try {
-                    elvsVar.b |= 1;
-                    elvsVar.c = a;
-                    if (!fecpVar.L()) {
+                    eojgVar.b |= 1;
+                    eojgVar.c = a;
+                    if (!fgriVar.L()) {
                         v.U();
                     }
-                    fecp fecpVar2 = v.b;
-                    elvs elvsVar2 = (elvs) fecpVar2;
-                    elvsVar2.b |= 4;
-                    elvsVar2.e = totalSpace;
-                    if (!fecpVar2.L()) {
+                    fgri fgriVar2 = v.b;
+                    eojg eojgVar2 = (eojg) fgriVar2;
+                    eojgVar2.b |= 4;
+                    eojgVar2.e = totalSpace;
+                    if (!fgriVar2.L()) {
                         v.U();
                     }
-                    elvs elvsVar3 = (elvs) v.b;
-                    elvsVar3.b |= 2;
-                    elvsVar3.d = j3;
-                    elvs elvsVar4 = (elvs) v.Q();
-                    fecj v2 = elvp.a.v();
+                    eojg eojgVar3 = (eojg) v.b;
+                    eojgVar3.b |= 2;
+                    eojgVar3.d = j3;
+                    eojg eojgVar4 = (eojg) v.Q();
+                    fgrc v2 = eojd.a.v();
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    elvp elvpVar = (elvp) v2.b;
-                    elvsVar4.getClass();
-                    elvpVar.g = elvsVar4;
-                    elvpVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES;
+                    eojd eojdVar = (eojd) v2.b;
+                    eojgVar4.getClass();
+                    eojdVar.g = eojgVar4;
+                    eojdVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES;
                     if (stringExtra != null) {
-                        fecj v3 = elvq.a.v();
+                        fgrc v3 = eoje.a.v();
                         if (!v3.b.L()) {
                             v3.U();
                         }
-                        elvq elvqVar = (elvq) v3.b;
-                        elvqVar.b |= 1;
-                        elvqVar.c = stringExtra;
-                        elvq elvqVar2 = (elvq) v3.Q();
+                        eoje eojeVar = (eoje) v3.b;
+                        eojeVar.b |= 1;
+                        eojeVar.c = stringExtra;
+                        eoje eojeVar2 = (eoje) v3.Q();
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        elvp elvpVar2 = (elvp) v2.b;
-                        elvqVar2.getClass();
-                        elvpVar2.c = elvqVar2;
-                        elvpVar2.b |= 1;
+                        eojd eojdVar2 = (eojd) v2.b;
+                        eojeVar2.getClass();
+                        eojdVar2.c = eojeVar2;
+                        eojdVar2.b |= 1;
                     }
-                    bqexVar.a((elvp) v2.Q());
+                    bsmnVar.a((eojd) v2.Q());
                 } catch (Throwable th) {
                     th = th;
                     Throwable th2 = th;
-                    if (dtgdVar == null) {
+                    if (dvqlVar == null) {
                         throw th2;
                     }
                     try {
-                        dtgdVar.close();
+                        dvqlVar.close();
                         throw th2;
                     } catch (Throwable th3) {
                         th2.addSuppressed(th3);
@@ -122,35 +122,35 @@ public class RequestBrellaDynamiteFeatureIntentOperation extends IntentOperation
                     }
                 }
             } else {
-                dtgdVar = b;
+                dvqlVar = b;
                 j = 0;
             }
             if (!intent.getBooleanExtra("module_loaded_successfully", false)) {
-                if (bqemVar.P() || (stringExtra != null && bqemVar.R(stringExtra))) {
-                    long f = bqemVar.f() * 1000;
-                    if (f != j && stringExtra != null && bqemVar.F(stringExtra) && bqhjVar.a() < f) {
-                        bqexVar.e(694, stringExtra);
+                if (bsmcVar.P() || (stringExtra != null && bsmcVar.R(stringExtra))) {
+                    long f = bsmcVar.f() * 1000;
+                    if (f != j && stringExtra != null && bsmcVar.F(stringExtra) && bsoyVar.a() < f) {
+                        bsmnVar.e(694, stringExtra);
                     }
                     ModuleManager.FeatureRequest featureRequest = new ModuleManager.FeatureRequest();
                     featureRequest.requestFeatureAtLatestVersion("brella_dynamite");
-                    if (bqemVar.Q()) {
+                    if (bsmcVar.Q()) {
                         featureRequest.setUrgent();
                     }
                     if (moduleManager.requestFeatures(featureRequest)) {
-                        bqexVar.e(700, stringExtra);
+                        bsmnVar.e(700, stringExtra);
                     } else {
-                        bqexVar.e(699, stringExtra);
+                        bsmnVar.e(699, stringExtra);
                     }
                 } else {
-                    bqexVar.d(602, stringExtra);
+                    bsmnVar.d(602, stringExtra);
                 }
             }
-            if (dtgdVar != null) {
-                dtgdVar.close();
+            if (dvqlVar != null) {
+                dvqlVar.close();
             }
         } catch (Throwable th4) {
             th = th4;
-            dtgdVar = b;
+            dvqlVar = b;
         }
     }
 }

@@ -3,17 +3,17 @@ package com.google.android.gms.mdns;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqwx;
-import defpackage.arxc;
-import defpackage.cdbs;
-import defpackage.cdbt;
+import defpackage.aszm;
+import defpackage.atzr;
+import defpackage.cfks;
+import defpackage.cfkt;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class MdnsSearchOptions extends AbstractSafeParcelable implements aqwx {
-    public static final Parcelable.Creator CREATOR = new cdbt();
+public class MdnsSearchOptions extends AbstractSafeParcelable implements aszm {
+    public static final Parcelable.Creator CREATOR = new cfkt();
     private static MdnsSearchOptions j;
     public final List a;
     public final boolean b;
@@ -45,7 +45,7 @@ public class MdnsSearchOptions extends AbstractSafeParcelable implements aqwx {
         MdnsSearchOptions mdnsSearchOptions;
         synchronized (MdnsSearchOptions.class) {
             if (j == null) {
-                j = new cdbs().a();
+                j = new cfks().a();
             }
             mdnsSearchOptions = j;
         }
@@ -55,16 +55,16 @@ public class MdnsSearchOptions extends AbstractSafeParcelable implements aqwx {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.x(parcel, 2, list, false);
-        arxc.e(parcel, 3, this.b);
-        arxc.e(parcel, 4, this.c);
-        arxc.e(parcel, 5, this.d);
-        arxc.o(parcel, 6, this.e);
-        arxc.o(parcel, 7, this.f);
-        arxc.v(parcel, 8, this.g, false);
-        arxc.e(parcel, 9, this.h);
-        arxc.q(parcel, 10, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.x(parcel, 2, list, false);
+        atzr.e(parcel, 3, this.b);
+        atzr.e(parcel, 4, this.c);
+        atzr.e(parcel, 5, this.d);
+        atzr.o(parcel, 6, this.e);
+        atzr.o(parcel, 7, this.f);
+        atzr.v(parcel, 8, this.g, false);
+        atzr.e(parcel, 9, this.h);
+        atzr.q(parcel, 10, this.i);
+        atzr.c(parcel, a);
     }
 }

@@ -3,36 +3,36 @@ package com.google.android.gms.identity.credentialprovider;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bmin;
-import defpackage.izs;
-import defpackage.izt;
-import defpackage.jbg;
-import defpackage.jbh;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bopf;
+import defpackage.jbi;
+import defpackage.jbj;
+import defpackage.jcw;
+import defpackage.jcx;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class AuxiliaryGetCredentialResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bmin();
+    public static final Parcelable.Creator CREATOR = new bopf();
     public final String a;
-    public final jbh b;
-    public final izt c;
+    public final jcx b;
+    public final jbj c;
 
-    public AuxiliaryGetCredentialResponse(String str, jbh jbhVar, izt iztVar) {
-        arwm.c((jbhVar == null) ^ (iztVar == null), "Exactly one of response or exception can be set");
-        arwm.c((str == null && iztVar == null) ? false : true, "fullyQualifiedServiceName can only be null when exception is not null");
+    public AuxiliaryGetCredentialResponse(String str, jcx jcxVar, jbj jbjVar) {
+        atzb.c((jcxVar == null) ^ (jbjVar == null), "Exactly one of response or exception can be set");
+        atzb.c((str == null && jbjVar == null) ? false : true, "fullyQualifiedServiceName can only be null when exception is not null");
         this.a = str;
-        this.b = jbhVar;
-        this.c = iztVar;
+        this.b = jcxVar;
+        this.c = jbjVar;
     }
 
     public final boolean equals(Object obj) {
         if (obj instanceof AuxiliaryGetCredentialResponse) {
             AuxiliaryGetCredentialResponse auxiliaryGetCredentialResponse = (AuxiliaryGetCredentialResponse) obj;
-            if (arwb.b(this.a, auxiliaryGetCredentialResponse.a) && arwb.b(this.c, auxiliaryGetCredentialResponse.c) && arwb.b(this.b, auxiliaryGetCredentialResponse.b)) {
+            if (atyq.b(this.a, auxiliaryGetCredentialResponse.a) && atyq.b(this.c, auxiliaryGetCredentialResponse.c) && atyq.b(this.b, auxiliaryGetCredentialResponse.b)) {
                 return true;
             }
         }
@@ -46,12 +46,12 @@ public class AuxiliaryGetCredentialResponse extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        jbh jbhVar = this.b;
-        arxc.g(parcel, 3, jbhVar == null ? null : jbg.a(jbhVar), false);
-        izt iztVar = this.c;
-        arxc.g(parcel, 4, iztVar != null ? izs.a(iztVar) : null, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        jcx jcxVar = this.b;
+        atzr.g(parcel, 3, jcxVar == null ? null : jcw.a(jcxVar), false);
+        jbj jbjVar = this.c;
+        atzr.g(parcel, 4, jbjVar != null ? jbi.a(jbjVar) : null, false);
+        atzr.c(parcel, a);
     }
 }

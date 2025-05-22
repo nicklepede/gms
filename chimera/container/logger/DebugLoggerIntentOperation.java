@@ -5,28 +5,28 @@ import android.os.IBinder;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.chimera.Service;
-import defpackage.azji;
-import defpackage.brbv;
-import defpackage.btbz;
-import defpackage.btcc;
-import defpackage.eike;
-import defpackage.emyb;
-import defpackage.emyd;
-import defpackage.emye;
-import defpackage.emzw;
-import defpackage.emzx;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.fmro;
-import defpackage.fwac;
+import defpackage.bbne;
+import defpackage.btjm;
+import defpackage.bvjx;
+import defpackage.bvka;
+import defpackage.ekxj;
+import defpackage.epls;
+import defpackage.eplu;
+import defpackage.eplv;
+import defpackage.epnn;
+import defpackage.epno;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fpjm;
+import defpackage.fywe;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class DebugLoggerIntentOperation extends IntentOperation {
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class ExternalChimeraService extends Service {
         @Override // com.google.android.chimera.Service
         public final IBinder onBind(Intent intent) {
@@ -46,14 +46,14 @@ public class DebugLoggerIntentOperation extends IntentOperation {
         }
     }
 
-    static final void a(emzx emzxVar) {
-        fmro fmroVar = fmro.a;
-        if (fmroVar.a().f()) {
-            emye emyeVar = emzxVar.j;
-            if (emyeVar == null) {
-                emyeVar = emye.a;
+    static final void a(epno epnoVar) {
+        fpjm fpjmVar = fpjm.a;
+        if (fpjmVar.lK().f()) {
+            eplv eplvVar = epnoVar.j;
+            if (eplvVar == null) {
+                eplvVar = eplv.a;
             }
-            int a = emyd.a(emyeVar.c);
+            int a = eplu.a(eplvVar.c);
             if (a == 0) {
                 a = 1;
             }
@@ -66,10 +66,10 @@ public class DebugLoggerIntentOperation extends IntentOperation {
                     case 14:
                     case 15:
                     case 16:
-                    case fwac.q /* 17 */:
+                    case fywe.q /* 17 */:
                     case 18:
-                        if (a == 50 || fmroVar.a().e()) {
-                            brbv l = btbz.v().l(emzxVar);
+                        if (a == 50 || fpjmVar.lK().e()) {
+                            btjm l = bvjx.v().l(epnoVar);
                             l.f = "chimera";
                             l.a();
                             break;
@@ -80,12 +80,12 @@ public class DebugLoggerIntentOperation extends IntentOperation {
             }
             if (a == 50) {
             }
-            brbv l2 = btbz.v().l(emzxVar);
+            btjm l2 = bvjx.v().l(epnoVar);
             l2.f = "chimera";
             l2.a();
             return;
         }
-        brbv l3 = btcc.v().l(emzxVar);
+        btjm l3 = bvka.v().l(epnoVar);
         l3.f = "chimera";
         l3.a();
     }
@@ -93,9 +93,9 @@ public class DebugLoggerIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         boolean z;
-        emye emyeVar;
+        eplv eplvVar;
         String action = intent.getAction();
-        eike.e(action);
+        ekxj.e(action);
         int hashCode = action.hashCode();
         if (hashCode != -1492206664) {
             if (hashCode == 2044451954 && action.equals("com.google.android.gms.chimera.container.DYNAMITE_LOG")) {
@@ -115,54 +115,54 @@ public class DebugLoggerIntentOperation extends IntentOperation {
                 return;
             }
             try {
-                fecp y = fecp.y(emzx.a, byteArrayExtra, 0, byteArrayExtra.length, febw.a());
-                fecp.M(y);
-                a((emzx) y);
+                fgri y = fgri.y(epno.a, byteArrayExtra, 0, byteArrayExtra.length, fgqp.a());
+                fgri.M(y);
+                a((epno) y);
                 return;
-            } catch (fedk e) {
+            } catch (fgsd e) {
                 throw new IllegalStateException(e);
             }
         }
         if (!z) {
             throw new IllegalStateException("Unknown action: ".concat(action));
         }
-        Executor executor = azji.a;
-        int a = emyd.a(intent.getIntExtra("STATUS", 0));
-        if (a == 0 || !azji.d(a)) {
+        Executor executor = bbne.a;
+        int a = eplu.a(intent.getIntExtra("STATUS", 0));
+        if (a == 0 || !bbne.d(a)) {
             Log.w("DynamiteDebugLogger", "Invalid dynamite logging status.");
-            emyeVar = null;
+            eplvVar = null;
         } else {
-            emyb emybVar = (emyb) emye.a.v();
-            if (!emybVar.b.L()) {
-                emybVar.U();
+            epls eplsVar = (epls) eplv.a.v();
+            if (!eplsVar.b.L()) {
+                eplsVar.U();
             }
-            emye emyeVar2 = (emye) emybVar.b;
-            emyeVar2.c = a - 1;
-            emyeVar2.b |= 1;
+            eplv eplvVar2 = (eplv) eplsVar.b;
+            eplvVar2.c = a - 1;
+            eplvVar2.b |= 1;
             String stringExtra = intent.getStringExtra("REASON");
             if (stringExtra != null) {
                 if (stringExtra.length() > 128) {
                     stringExtra = stringExtra.substring(0, 128);
                 }
-                if (!emybVar.b.L()) {
-                    emybVar.U();
+                if (!eplsVar.b.L()) {
+                    eplsVar.U();
                 }
-                emye emyeVar3 = (emye) emybVar.b;
+                eplv eplvVar3 = (eplv) eplsVar.b;
                 stringExtra.getClass();
-                emyeVar3.b |= 2;
-                emyeVar3.d = stringExtra;
+                eplvVar3.b |= 2;
+                eplvVar3.d = stringExtra;
             }
-            emyeVar = (emye) emybVar.Q();
+            eplvVar = (eplv) eplsVar.Q();
         }
-        if (emyeVar != null) {
-            emzw emzwVar = (emzw) emzx.a.v();
-            if (!emzwVar.b.L()) {
-                emzwVar.U();
+        if (eplvVar != null) {
+            epnn epnnVar = (epnn) epno.a.v();
+            if (!epnnVar.b.L()) {
+                epnnVar.U();
             }
-            emzx emzxVar = (emzx) emzwVar.b;
-            emzxVar.j = emyeVar;
-            emzxVar.b |= 16;
-            a((emzx) emzwVar.Q());
+            epno epnoVar = (epno) epnnVar.b;
+            epnoVar.j = eplvVar;
+            epnoVar.b |= 16;
+            a((epno) epnnVar.Q());
         }
     }
 }

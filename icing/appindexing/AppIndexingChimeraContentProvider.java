@@ -2,39 +2,39 @@ package com.google.android.gms.icing.appindexing;
 
 import android.content.Context;
 import android.net.Uri;
-import defpackage.blfp;
-import defpackage.blks;
-import defpackage.blln;
-import defpackage.blpf;
-import defpackage.bltn;
-import defpackage.blyx;
-import defpackage.fpaz;
+import defpackage.bnmh;
+import defpackage.bnrk;
+import defpackage.bnsf;
+import defpackage.bnvx;
+import defpackage.boaf;
+import defpackage.bofp;
+import defpackage.frug;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class AppIndexingChimeraContentProvider extends blpf {
-    private bltn a;
+public class AppIndexingChimeraContentProvider extends bnvx {
+    private boaf a;
 
-    final blfp a() {
-        bltn bltnVar = this.a;
-        if (bltnVar == null) {
+    final bnmh a() {
+        boaf boafVar = this.a;
+        if (boafVar == null) {
             Context applicationContext = getContext().getApplicationContext();
-            if (applicationContext != null && fpaz.j()) {
-                this.a = bltn.c(applicationContext);
+            if (applicationContext != null && frug.j()) {
+                this.a = boaf.c(applicationContext);
             }
-            bltnVar = this.a;
-            if (bltnVar == null) {
+            boafVar = this.a;
+            if (boafVar == null) {
                 return null;
             }
         }
-        return bltnVar.a();
+        return boafVar.a();
     }
 
-    @Override // defpackage.blpf
+    @Override // defpackage.bnvx
     public final String b(Uri uri) {
-        blks a = blln.a(getContext(), uri);
+        bnrk a = bnsf.a(getContext(), uri);
         if (a == null) {
             return null;
         }
@@ -55,11 +55,11 @@ public class AppIndexingChimeraContentProvider extends blpf {
      */
     /* JADX WARN: Code restructure failed: missing block: B:36:0x00fd, code lost:
     
-        r0 = defpackage.tsz.a(r0, r2);
+        r0 = defpackage.voz.a(r0, r2);
      */
     /* JADX WARN: Code restructure failed: missing block: B:37:0x0101, code lost:
     
-        defpackage.blfw.r("Returning document cursor with %d rows. Incarnation %s.", java.lang.Integer.valueOf(r0.getCount()), defpackage.tsz.b(r0));
+        defpackage.bnmo.r("Returning document cursor with %d rows. Incarnation %s.", java.lang.Integer.valueOf(r0.getCount()), defpackage.voz.b(r0));
      */
     /* JADX WARN: Code restructure failed: missing block: B:38:0x0112, code lost:
     
@@ -69,7 +69,7 @@ public class AppIndexingChimeraContentProvider extends blpf {
     
         if (r1 != null) goto L35;
      */
-    @Override // defpackage.blpf
+    @Override // defpackage.bnvx
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -87,6 +87,6 @@ public class AppIndexingChimeraContentProvider extends blpf {
         if (getContext() == null || a() == null) {
             return;
         }
-        blyx.a(getContext(), printWriter, strArr, a());
+        bofp.a(getContext(), printWriter, strArr, a());
     }
 }

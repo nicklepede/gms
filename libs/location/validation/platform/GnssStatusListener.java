@@ -1,11 +1,11 @@
 package com.google.android.gms.libs.location.validation.platform;
 
-import defpackage.bwwc;
-import defpackage.bwwd;
-import defpackage.byik;
+import defpackage.bzes;
+import defpackage.bzet;
+import defpackage.carc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public interface GnssStatusListener extends byik {
-    void a(bwwd bwwdVar, bwwc bwwcVar);
+public interface GnssStatusListener extends carc {
+    void a(bzet bzetVar, bzes bzesVar);
 }

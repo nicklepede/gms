@@ -5,23 +5,23 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.widget.ScrollView;
 import com.google.android.gms.R;
-import defpackage.badk;
+import defpackage.bchg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ScrollToBottomView extends ScrollView {
-    public badk a;
+    public bchg a;
 
     public ScrollToBottomView(Context context) {
         this(context, null, 0);
     }
 
     private final void a() {
-        badk badkVar;
-        if (getChildAt(getChildCount() - 1).getBottom() - (getHeight() + getScrollY()) >= getResources().getDimension(R.dimen.fm_create_bottom_margin) || (badkVar = this.a) == null) {
+        bchg bchgVar;
+        if (getChildAt(getChildCount() - 1).getBottom() - (getHeight() + getScrollY()) >= getResources().getDimension(R.dimen.fm_create_bottom_margin) || (bchgVar = this.a) == null) {
             return;
         }
-        badkVar.y();
+        bchgVar.y();
     }
 
     @Override // android.view.View

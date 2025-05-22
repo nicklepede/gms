@@ -5,28 +5,28 @@ import android.util.AttributeSet;
 import android.view.View;
 import androidx.core.widget.NestedScrollView;
 import com.google.android.gms.constellation.ui.widget.ConsentScrollView;
-import defpackage.arxo;
-import defpackage.atkt;
-import defpackage.atmg;
-import defpackage.eigb;
-import defpackage.eiid;
+import defpackage.auad;
+import defpackage.avow;
+import defpackage.avqj;
+import defpackage.ektg;
+import defpackage.ekvi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class ConsentScrollView extends NestedScrollView {
-    public static final arxo h = atmg.a("consent_scroll_view");
-    public atkt i;
-    public eiid j;
-    public eiid k;
+    public static final auad h = avqj.a("consent_scroll_view");
+    public avow i;
+    public ekvi j;
+    public ekvi k;
     private boolean l;
     private View m;
 
     public ConsentScrollView(Context context) {
         super(context);
         this.l = false;
-        eigb eigbVar = eigb.a;
-        this.j = eigbVar;
-        this.k = eigbVar;
+        ektg ektgVar = ektg.a;
+        this.j = ektgVar;
+        this.k = ektgVar;
     }
 
     public final int A() {
@@ -40,20 +40,20 @@ public final class ConsentScrollView extends NestedScrollView {
     public final void B() {
         if (this.m != null) {
             int A = A();
-            arxo arxoVar = h;
-            arxoVar.d("Diff: %d, Bottom: %d, Height: %d, Scroll: %d", Integer.valueOf(A), Integer.valueOf(this.m.getBottom()), Integer.valueOf(getHeight()), Integer.valueOf(getScrollY()));
-            arxoVar.d("IsConsentScrollOnBottom: %b", Boolean.valueOf(this.l));
+            auad auadVar = h;
+            auadVar.d("Diff: %d, Bottom: %d, Height: %d, Scroll: %d", Integer.valueOf(A), Integer.valueOf(this.m.getBottom()), Integer.valueOf(getHeight()), Integer.valueOf(getScrollY()));
+            auadVar.d("IsConsentScrollOnBottom: %b", Boolean.valueOf(this.l));
             boolean z = A() <= 0;
             boolean z2 = this.l;
             if (z != z2) {
                 boolean z3 = true ^ z2;
                 this.l = z3;
-                atkt atktVar = this.i;
-                if (atktVar != null) {
-                    atktVar.n(z3);
+                avow avowVar = this.i;
+                if (avowVar != null) {
+                    avowVar.n(z3);
                 } else {
-                    arxoVar.d("Listener is null, caching toggle event", new Object[0]);
-                    this.j = eiid.j(Boolean.valueOf(z3));
+                    auadVar.d("Listener is null, caching toggle event", new Object[0]);
+                    this.j = ekvi.j(Boolean.valueOf(z3));
                 }
             }
         }
@@ -64,7 +64,7 @@ public final class ConsentScrollView extends NestedScrollView {
         super.onFinishInflate();
         View childAt = getChildAt(getChildCount() - 1);
         this.m = childAt;
-        childAt.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: atks
+        childAt.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: avov
             @Override // android.view.View.OnLayoutChangeListener
             public final void onLayoutChange(View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
                 int i9 = i4 - i2;
@@ -73,12 +73,12 @@ public final class ConsentScrollView extends NestedScrollView {
                 }
                 ConsentScrollView consentScrollView = ConsentScrollView.this;
                 boolean z = consentScrollView.A() <= 0;
-                atkt atktVar = consentScrollView.i;
-                if (atktVar != null) {
-                    atktVar.o(z);
+                avow avowVar = consentScrollView.i;
+                if (avowVar != null) {
+                    avowVar.o(z);
                 } else {
                     ConsentScrollView.h.d("Listener is null, caching toggle event", new Object[0]);
-                    consentScrollView.k = eiid.j(Boolean.valueOf(z));
+                    consentScrollView.k = ekvi.j(Boolean.valueOf(z));
                 }
             }
         });
@@ -93,16 +93,16 @@ public final class ConsentScrollView extends NestedScrollView {
     public ConsentScrollView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         this.l = false;
-        eigb eigbVar = eigb.a;
-        this.j = eigbVar;
-        this.k = eigbVar;
+        ektg ektgVar = ektg.a;
+        this.j = ektgVar;
+        this.k = ektgVar;
     }
 
     public ConsentScrollView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         this.l = false;
-        eigb eigbVar = eigb.a;
-        this.j = eigbVar;
-        this.k = eigbVar;
+        ektg ektgVar = ektg.a;
+        this.j = ektgVar;
+        this.k = ektgVar;
     }
 }

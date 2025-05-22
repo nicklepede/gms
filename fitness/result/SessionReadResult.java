@@ -4,20 +4,20 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqyf;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgml;
+import defpackage.atau;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.birb;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class SessionReadResult extends AbstractSafeParcelable implements aqyf {
-    public static final Parcelable.Creator CREATOR = new bgml();
+public class SessionReadResult extends AbstractSafeParcelable implements atau {
+    public static final Parcelable.Creator CREATOR = new birb();
     public final List a;
     public final List b;
     public final Status c;
@@ -32,7 +32,7 @@ public class SessionReadResult extends AbstractSafeParcelable implements aqyf {
         return new SessionReadResult(new ArrayList(), new ArrayList(), status);
     }
 
-    @Override // defpackage.aqyf
+    @Override // defpackage.atau
     public final Status a() {
         return this.c;
     }
@@ -45,7 +45,7 @@ public class SessionReadResult extends AbstractSafeParcelable implements aqyf {
             return false;
         }
         SessionReadResult sessionReadResult = (SessionReadResult) obj;
-        return this.c.equals(sessionReadResult.c) && arwb.b(this.a, sessionReadResult.a) && arwb.b(this.b, sessionReadResult.b);
+        return this.c.equals(sessionReadResult.c) && atyq.b(this.a, sessionReadResult.a) && atyq.b(this.b, sessionReadResult.b);
     }
 
     public final int hashCode() {
@@ -54,19 +54,19 @@ public class SessionReadResult extends AbstractSafeParcelable implements aqyf {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("status", this.c, arrayList);
-        arwa.b("sessions", this.a, arrayList);
-        arwa.b("sessionDataSets", this.b, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("status", this.c, arrayList);
+        atyp.b("sessions", this.a, arrayList);
+        atyp.b("sessionDataSets", this.b, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.c(parcel, a);
     }
 }

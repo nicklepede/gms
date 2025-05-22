@@ -8,22 +8,22 @@ import android.os.IInterface;
 import android.os.RemoteException;
 import android.os.SystemClock;
 import android.util.Log;
-import defpackage.aqsz;
-import defpackage.aqtp;
-import defpackage.aqum;
-import defpackage.aqun;
-import defpackage.arwm;
-import defpackage.asiu;
+import defpackage.asvp;
+import defpackage.aswe;
+import defpackage.asxb;
+import defpackage.asxc;
+import defpackage.atzb;
+import defpackage.aumo;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class d {
     private static final Object g = new Object();
     private static volatile d h;
-    aqsz a;
+    asvp a;
     com.google.android.gms.ads.identifier.internal.d b;
     boolean c;
     final Object d = new Object();
@@ -32,7 +32,7 @@ public final class d {
     private final Context i;
 
     public d(Context context) {
-        arwm.s(context);
+        atzb.s(context);
         this.i = context.getApplicationContext();
         this.c = false;
         this.f = 30000L;
@@ -68,11 +68,11 @@ public final class d {
         int i3 = i == -1 ? 35401 : 35402;
         long elapsedRealtime = SystemClock.elapsedRealtime();
         try {
-            arwm.k("Calling this from your main thread can lead to deadlock");
+            atzb.k("Calling this from your main thread can lead to deadlock");
             synchronized (dVar) {
                 dVar.d();
-                arwm.s(dVar.a);
-                arwm.s(dVar.b);
+                atzb.s(dVar.a);
+                atzb.s(dVar.b);
                 try {
                     cVar = new c(i == -1 ? dVar.b.c() : dVar.b.d(i), dVar.b.n());
                 } catch (RemoteException e) {
@@ -103,9 +103,9 @@ public final class d {
             e(null, -1L, th);
             if (th instanceof IOException) {
                 i2 = 1;
-            } else if (th instanceof aqum) {
+            } else if (th instanceof asxb) {
                 i2 = 9;
-            } else if (th instanceof aqun) {
+            } else if (th instanceof asxc) {
                 i2 = 16;
             } else if (th instanceof IllegalStateException) {
                 i2 = 8;
@@ -136,7 +136,7 @@ public final class d {
     }
 
     public final void c() {
-        arwm.k("Calling this from your main thread can lead to deadlock");
+        atzb.k("Calling this from your main thread can lead to deadlock");
         synchronized (this) {
             Context context = this.i;
             if (context == null || this.a == null) {
@@ -144,7 +144,7 @@ public final class d {
             }
             try {
                 if (this.c) {
-                    asiu.a().b(context, this.a);
+                    aumo.a().b(context, this.a);
                 }
             } catch (Throwable th) {
                 Log.i("AdvertisingIdClient", "AdvertisingIdClient unbindService failed.", th);
@@ -159,26 +159,26 @@ public final class d {
         if (!this.c) {
             try {
                 Log.d("AdvertisingIdClient", "AdvertisingIdClient is not bounded. Starting to bind it...");
-                arwm.k("Calling this from your main thread can lead to deadlock");
+                atzb.k("Calling this from your main thread can lead to deadlock");
                 synchronized (this) {
                     if (!this.c) {
                         Context context = this.i;
                         try {
                             context.getPackageManager().getPackageInfo("com.android.vending", 0);
-                            int m = aqtp.d.m(context);
+                            int m = aswe.d.m(context);
                             if (m != 0 && m != 2) {
                                 throw new IOException("Google Play services not available");
                             }
-                            aqsz aqszVar = new aqsz();
+                            asvp asvpVar = new asvp();
                             Intent intent = new Intent("com.google.android.gms.ads.identifier.service.START");
                             intent.setPackage("com.google.android.gms");
                             try {
-                                if (!asiu.a().d(context, intent, aqszVar, 1)) {
+                                if (!aumo.a().d(context, intent, asvpVar, 1)) {
                                     throw new IOException("Connection failure");
                                 }
-                                this.a = aqszVar;
+                                this.a = asvpVar;
                                 try {
-                                    IBinder b = aqszVar.b(10000L, TimeUnit.MILLISECONDS);
+                                    IBinder b = asvpVar.b(10000L, TimeUnit.MILLISECONDS);
                                     IInterface queryLocalInterface = b.queryLocalInterface("com.google.android.gms.ads.identifier.internal.IAdvertisingIdService");
                                     this.b = queryLocalInterface instanceof com.google.android.gms.ads.identifier.internal.d ? (com.google.android.gms.ads.identifier.internal.d) queryLocalInterface : new com.google.android.gms.ads.identifier.internal.b(b);
                                     this.c = true;
@@ -191,7 +191,7 @@ public final class d {
                                 IOException iOException = new IOException(th);
                             }
                         } catch (PackageManager.NameNotFoundException unused2) {
-                            throw new aqum(9);
+                            throw new asxb(9);
                         }
                     }
                     Log.d("AdvertisingIdClient", "AdvertisingIdClient is bounded");

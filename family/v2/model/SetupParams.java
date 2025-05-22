@@ -3,19 +3,19 @@ package com.google.android.gms.family.v2.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import defpackage.bacl;
-import defpackage.eptz;
+import defpackage.bcgh;
+import defpackage.eshy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class SetupParams implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bacl();
+    public static final Parcelable.Creator CREATOR = new bcgh();
     public final BillingSignupData a;
     public final String b;
 
-    public SetupParams(eptz eptzVar) {
-        this.a = new BillingSignupData(eptzVar.c, eptzVar.d);
-        this.b = eptzVar.e;
+    public SetupParams(eshy eshyVar) {
+        this.a = new BillingSignupData(eshyVar.c, eshyVar.d);
+        this.b = eshyVar.e;
     }
 
     @Override // android.os.Parcelable

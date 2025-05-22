@@ -1,17 +1,17 @@
 package com.google.android.gms.ads.cache.policy;
 
 import com.google.android.gms.ads.cache.s;
-import defpackage.bry;
+import defpackage.bsj;
 import java.util.ArrayList;
 import java.util.Iterator;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class a implements com.google.android.gms.ads.internal.js.function.e {
     public static final b c(JSONObject jSONObject) {
-        bry bryVar = new bry();
+        bsj bsjVar = new bsj();
         Iterator<String> keys = jSONObject.keys();
         while (keys.hasNext()) {
             String next = keys.next();
@@ -21,9 +21,9 @@ final class a implements com.google.android.gms.ads.internal.js.function.e {
             for (int i = 0; i < jSONArray.length(); i++) {
                 arrayList.add(gVar.a(jSONArray.getJSONObject(i)));
             }
-            bryVar.put(next, arrayList);
+            bsjVar.put(next, arrayList);
         }
-        return new b(bryVar);
+        return new b(bsjVar);
     }
 
     @Override // com.google.android.gms.ads.internal.js.function.c

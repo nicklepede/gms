@@ -5,16 +5,16 @@ import android.os.Parcelable;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.ckal;
-import defpackage.ckam;
+import defpackage.atzr;
+import defpackage.cmiq;
+import defpackage.cmir;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class Strategy extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckam();
-    public static final Strategy a = new ckal().a();
+    public static final Parcelable.Creator CREATOR = new cmir();
+    public static final Strategy a = new cmiq().a();
 
     @Deprecated
     public static final Strategy b;
@@ -32,10 +32,10 @@ public class Strategy extends AbstractSafeParcelable {
     public final int j;
 
     static {
-        ckal ckalVar = new ckal();
-        ckalVar.c = 2;
-        ckalVar.b(Integer.MAX_VALUE);
-        b = ckalVar.a();
+        cmiq cmiqVar = new cmiq();
+        cmiqVar.c = 2;
+        cmiqVar.b(Integer.MAX_VALUE);
+        b = cmiqVar.a();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0027  */
@@ -167,15 +167,15 @@ public class Strategy extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.o(parcel, 1, this.d);
-        arxc.o(parcel, 2, this.e);
-        arxc.o(parcel, 3, this.f);
-        arxc.e(parcel, 4, this.g);
-        arxc.o(parcel, 5, this.h);
-        arxc.o(parcel, 6, this.i);
-        arxc.o(parcel, 7, this.j);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.c);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.o(parcel, 1, this.d);
+        atzr.o(parcel, 2, this.e);
+        atzr.o(parcel, 3, this.f);
+        atzr.e(parcel, 4, this.g);
+        atzr.o(parcel, 5, this.h);
+        atzr.o(parcel, 6, this.i);
+        atzr.o(parcel, 7, this.j);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.c);
+        atzr.c(parcel, a2);
     }
 }

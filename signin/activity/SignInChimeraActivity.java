@@ -18,80 +18,80 @@ import com.google.android.gms.common.internal.AuthAccountRequest;
 import com.google.android.gms.signin.activity.SignInChimeraActivity;
 import com.google.android.gms.signin.internal.AuthAccountResult;
 import com.google.android.gms.signin.internal.RecordConsentRequest;
-import defpackage.aqsv;
-import defpackage.aqsw;
-import defpackage.aqsy;
-import defpackage.aqxe;
-import defpackage.aqxp;
-import defpackage.aqxr;
-import defpackage.aqxs;
-import defpackage.arxo;
-import defpackage.asmf;
-import defpackage.asng;
-import defpackage.asri;
-import defpackage.bmas;
-import defpackage.bmcz;
-import defpackage.bmda;
-import defpackage.bmdc;
-import defpackage.bmgh;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgu;
-import defpackage.bmgx;
-import defpackage.bmlv;
-import defpackage.byhr;
-import defpackage.dcou;
-import defpackage.dcov;
-import defpackage.dcow;
-import defpackage.dcox;
-import defpackage.dcrz;
-import defpackage.dcsv;
-import defpackage.dctl;
-import defpackage.eigb;
-import defpackage.eiho;
-import defpackage.eiic;
-import defpackage.eiid;
-import defpackage.eiig;
-import defpackage.eiih;
-import defpackage.eiir;
-import defpackage.eiiw;
-import defpackage.eijj;
-import defpackage.eijr;
-import defpackage.eirn;
-import defpackage.eito;
-import defpackage.eits;
-import defpackage.eiuu;
-import defpackage.elct;
-import defpackage.elfd;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.ensv;
-import defpackage.entc;
-import defpackage.entj;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fsbr;
-import defpackage.fsbu;
-import defpackage.fsca;
-import defpackage.fsck;
-import defpackage.qet;
+import defpackage.asvl;
+import defpackage.asvm;
+import defpackage.asvo;
+import defpackage.aszt;
+import defpackage.atae;
+import defpackage.atag;
+import defpackage.atah;
+import defpackage.auad;
+import defpackage.aupz;
+import defpackage.aura;
+import defpackage.auvc;
+import defpackage.bohk;
+import defpackage.bojr;
+import defpackage.bojs;
+import defpackage.boju;
+import defpackage.bomz;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonm;
+import defpackage.bonp;
+import defpackage.boso;
+import defpackage.caqj;
+import defpackage.dezz;
+import defpackage.dfaa;
+import defpackage.dfab;
+import defpackage.dfac;
+import defpackage.dfde;
+import defpackage.dfea;
+import defpackage.dfeq;
+import defpackage.ektg;
+import defpackage.ekut;
+import defpackage.ekvh;
+import defpackage.ekvi;
+import defpackage.ekvl;
+import defpackage.ekvm;
+import defpackage.ekvw;
+import defpackage.ekwb;
+import defpackage.ekwo;
+import defpackage.ekww;
+import defpackage.eles;
+import defpackage.elgt;
+import defpackage.elgx;
+import defpackage.elhz;
+import defpackage.enqg;
+import defpackage.ensq;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.eqgo;
+import defpackage.eqgv;
+import defpackage.eqhc;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fuwn;
+import defpackage.fuwq;
+import defpackage.fuww;
+import defpackage.fuxg;
+import defpackage.rxx;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class SignInChimeraActivity extends qet {
-    public static final arxo j = dctl.a("SignInChimeraActivity");
-    private static final eits x;
-    private static final eiuu y;
-    private bmda A;
-    private bmcz B;
-    public final ensv k = entc.a(new asmf(1, 9));
+public final class SignInChimeraActivity extends rxx {
+    public static final auad j = dfeq.a("SignInChimeraActivity");
+    private static final elgx x;
+    private static final elhz y;
+    private bojs A;
+    private bojr B;
+    public final eqgo k = eqgv.a(new aupz(1, 9));
     public int l;
     public String m;
     public boolean n;
@@ -100,22 +100,22 @@ public final class SignInChimeraActivity extends qet {
     public String q;
     public String r;
     public Intent s;
-    public aqxs t;
-    public bmgq u;
-    public dcox v;
-    public dcsv w;
-    private bmdc z;
+    public atah t;
+    public boni u;
+    public dfac v;
+    public dfea w;
+    private boju z;
 
     static {
-        eito eitoVar = new eito();
-        eitoVar.i(1, bmgh.FETCH_TOS_AND_PP);
-        eitoVar.i(2, bmgh.CHOOSE_ACCOUNT);
-        eitoVar.i(3, bmgh.RECORD_ACCOUNT_CHIP_CONSENT);
-        eitoVar.i(4, bmgh.PRE_CONSENT);
-        eitoVar.i(5, bmgh.CONSENT);
-        eitoVar.i(6, bmgh.SAVE_SELECTED_ACCOUNT);
-        x = eitoVar.b();
-        y = eiuu.O(dcov.a, dcov.b, new Scope("https://www.googleapis.com/auth/plus.me"), new Scope("https://www.googleapis.com/auth/userinfo.profile"), new Scope("https://www.googleapis.com/auth/userinfo.email"), new Scope("openid"), new Scope[0]);
+        elgt elgtVar = new elgt();
+        elgtVar.i(1, bomz.FETCH_TOS_AND_PP);
+        elgtVar.i(2, bomz.CHOOSE_ACCOUNT);
+        elgtVar.i(3, bomz.RECORD_ACCOUNT_CHIP_CONSENT);
+        elgtVar.i(4, bomz.PRE_CONSENT);
+        elgtVar.i(5, bomz.CONSENT);
+        elgtVar.i(6, bomz.SAVE_SELECTED_ACCOUNT);
+        x = elgtVar.b();
+        y = elhz.O(dfaa.a, dfaa.b, new Scope("https://www.googleapis.com/auth/plus.me"), new Scope("https://www.googleapis.com/auth/userinfo.profile"), new Scope("https://www.googleapis.com/auth/userinfo.email"), new Scope("openid"), new Scope[0]);
     }
 
     private final void m(Bundle bundle) {
@@ -123,10 +123,10 @@ public final class SignInChimeraActivity extends qet {
         this.o = (Account) bundle.getParcelable("picked_account");
         Parcelable[] parcelableArray = bundle.getParcelableArray("SIGN_IN_SCOPE_ARRAY");
         if (parcelableArray != null) {
-            this.p = eirn.k(parcelableArray).l(new eiho() { // from class: dcru
-                @Override // defpackage.eiho
+            this.p = eles.k(parcelableArray).l(new ekut() { // from class: dfcz
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    arxo arxoVar = SignInChimeraActivity.j;
+                    auad auadVar = SignInChimeraActivity.j;
                     return (Scope) ((Parcelable) obj);
                 }
             }).p();
@@ -135,7 +135,7 @@ public final class SignInChimeraActivity extends qet {
         this.r = bundle.getString("privacy_policy_url");
         this.s = (Intent) bundle.getParcelable("consent_intent");
         Bundle bundle2 = bundle.getBundle("sign_in_options");
-        this.v = (bundle2 != null ? dcow.a(bundle2) : new dcow()).b();
+        this.v = (bundle2 != null ? dfab.a(bundle2) : new dfab()).b();
     }
 
     public final void a(int i, Intent intent) {
@@ -144,292 +144,293 @@ public final class SignInChimeraActivity extends qet {
     }
 
     public final void k(long j2, int i, boolean z) {
-        fecj v = elct.a.v();
-        bmgh bmghVar = (bmgh) x.get(Integer.valueOf(i));
-        eiig.x(bmghVar);
+        fgrc v = enqg.a.v();
+        bomz bomzVar = (bomz) x.get(Integer.valueOf(i));
+        ekvl.y(bomzVar);
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elct elctVar = (elct) fecpVar;
-        elctVar.c = bmghVar.i;
-        elctVar.b |= 1;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        enqg enqgVar = (enqg) fgriVar;
+        enqgVar.c = bomzVar.i;
+        enqgVar.b |= 1;
+        if (!fgriVar.L()) {
             v.U();
         }
-        elct elctVar2 = (elct) v.b;
-        elctVar2.b |= 4096;
-        elctVar2.o = z;
+        enqg enqgVar2 = (enqg) v.b;
+        enqgVar2.b |= 4096;
+        enqgVar2.o = z;
         long currentTimeMillis = System.currentTimeMillis() - j2;
         if (!v.b.L()) {
             v.U();
         }
-        elct elctVar3 = (elct) v.b;
-        elctVar3.b |= 2048;
-        elctVar3.n = currentTimeMillis;
-        elct elctVar4 = (elct) v.Q();
-        fecj v2 = elfd.a.v();
+        enqg enqgVar3 = (enqg) v.b;
+        enqgVar3.b |= 2048;
+        enqgVar3.n = currentTimeMillis;
+        enqg enqgVar4 = (enqg) v.Q();
+        fgrc v2 = ensq.a.v();
         String str = this.v.g;
         if (str != null) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            elfd elfdVar = (elfd) v2.b;
-            elfdVar.b |= 2;
-            elfdVar.e = str;
+            ensq ensqVar = (ensq) v2.b;
+            ensqVar.b |= 2;
+            ensqVar.e = str;
         }
-        bmgq bmgqVar = this.u;
+        boni boniVar = this.u;
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        elfd elfdVar2 = (elfd) fecpVar2;
-        elfdVar2.d = 5;
-        elfdVar2.b |= 1;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v2.b;
+        ensq ensqVar2 = (ensq) fgriVar2;
+        ensqVar2.d = 5;
+        ensqVar2.b |= 1;
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        elfd elfdVar3 = (elfd) v2.b;
-        elctVar4.getClass();
-        elfdVar3.i = elctVar4;
-        elfdVar3.b |= 32;
-        bmgqVar.a((elfd) v2.Q());
+        ensq ensqVar3 = (ensq) v2.b;
+        enqgVar4.getClass();
+        ensqVar3.i = enqgVar4;
+        ensqVar3.b |= 32;
+        boniVar.a((ensq) v2.Q());
     }
 
     public final void l() {
         Intent c;
-        enss enssVar;
+        eqgl eqglVar;
         j.j("startNextStep() is called, signInStep=%d.", Integer.valueOf(this.l));
         int i = this.l;
         switch (i) {
             case 1:
-                final String l = asri.l();
-                if (!eirn.j(eijj.e(',').d().i().l(fsca.a.a().b())).s(new eiih() { // from class: dcrj
-                    @Override // defpackage.eiih
+                final String l = auvc.l();
+                if (!eles.j(ekwo.e(',').d().i().l(fuww.a.lK().b())).s(new ekvm() { // from class: dfco
+                    @Override // defpackage.ekvm
                     public final boolean a(Object obj) {
-                        arxo arxoVar = SignInChimeraActivity.j;
+                        auad auadVar = SignInChimeraActivity.j;
                         return l.equalsIgnoreCase((String) obj);
                     }
                 })) {
-                    enssVar = enox.f(this.A.b(1, new eijr() { // from class: dcrh
-                        @Override // defpackage.eijr
-                        public final Object a() {
+                    eqglVar = eqcq.f(this.A.b(1, new ekww() { // from class: dfcm
+                        @Override // defpackage.ekww
+                        public final Object lK() {
                             final SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
-                            return signInChimeraActivity.k.submit(new Callable() { // from class: dcrp
+                            return signInChimeraActivity.k.submit(new Callable() { // from class: dfcu
                                 @Override // java.util.concurrent.Callable
                                 public final Object call() {
                                     SignInChimeraActivity signInChimeraActivity2 = SignInChimeraActivity.this;
                                     try {
                                         Context baseContext = signInChimeraActivity2.getBaseContext();
-                                        asgo asgoVar = new asgo(baseContext, fsca.a.a().c(), (int) fsca.a.a().a(), -1, 25857);
-                                        asgoVar.h("X-Goog-Api-Key", "AIzaSyAP-gfH3qvi6vgHZbSYwQ_XHqV_mXHhzIk");
-                                        asgoVar.h("X-Android-Package", baseContext.getPackageName());
-                                        asgoVar.h("X-Android-Cert", asng.m(baseContext, baseContext.getPackageName()));
-                                        dcsw dcswVar = new dcsw(asgoVar);
+                                        fuww fuwwVar = fuww.a;
+                                        auki aukiVar = new auki(baseContext, fuwwVar.lK().c(), (int) fuwwVar.lK().a(), -1, 25857);
+                                        aukiVar.h("X-Goog-Api-Key", "AIzaSyAP-gfH3qvi6vgHZbSYwQ_XHqV_mXHhzIk");
+                                        aukiVar.h("X-Android-Package", baseContext.getPackageName());
+                                        aukiVar.h("X-Android-Cert", aura.m(baseContext, baseContext.getPackageName()));
+                                        dfeb dfebVar = new dfeb(aukiVar);
                                         String str = signInChimeraActivity2.m;
-                                        eiig.x(str);
-                                        byte[] ab = asng.ab(signInChimeraActivity2.getBaseContext(), str);
-                                        eiig.x(ab);
-                                        fecj v = feqe.a.v();
+                                        ekvl.y(str);
+                                        byte[] ab = aura.ab(signInChimeraActivity2.getBaseContext(), str);
+                                        ekvl.y(ab);
+                                        fgrc v = fhex.a.v();
                                         if (!v.b.L()) {
                                             v.U();
                                         }
-                                        ((feqe) v.b).c = str;
+                                        ((fhex) v.b).c = str;
                                         String encodeToString = Base64.encodeToString(ab, 2);
                                         if (!v.b.L()) {
                                             v.U();
                                         }
-                                        feqe feqeVar = (feqe) v.b;
+                                        fhex fhexVar = (fhex) v.b;
                                         encodeToString.getClass();
-                                        feqeVar.b = encodeToString;
-                                        feqe feqeVar2 = (feqe) v.Q();
-                                        feqk feqkVar = feqk.a;
-                                        fecj v2 = feqkVar.v();
-                                        fecj v3 = feqg.a.v();
+                                        fhexVar.b = encodeToString;
+                                        fhex fhexVar2 = (fhex) v.Q();
+                                        fhfd fhfdVar = fhfd.a;
+                                        fgrc v2 = fhfdVar.v();
+                                        fgrc v3 = fhez.a.v();
                                         if (!v3.b.L()) {
                                             v3.U();
                                         }
-                                        feqg feqgVar = (feqg) v3.b;
-                                        feqeVar2.getClass();
-                                        feqgVar.c = feqeVar2;
-                                        feqgVar.b = 3;
+                                        fhez fhezVar = (fhez) v3.b;
+                                        fhexVar2.getClass();
+                                        fhezVar.c = fhexVar2;
+                                        fhezVar.b = 3;
                                         if (!v2.b.L()) {
                                             v2.U();
                                         }
-                                        feqk feqkVar2 = (feqk) v2.b;
-                                        feqg feqgVar2 = (feqg) v3.Q();
-                                        feqgVar2.getClass();
-                                        feqkVar2.c = feqgVar2;
-                                        feqkVar2.b |= 1;
-                                        feqk feqkVar3 = (feqk) v2.Q();
-                                        dcsw dcswVar2 = new dcsw(dcswVar, bzgc.a, bxyy.b);
-                                        if (dcsw.a == null) {
-                                            ftxd ftxdVar = ftxd.UNARY;
-                                            febw febwVar = furo.a;
-                                            dcsw.a = new ftxe(ftxdVar, "google.identity.clientauthconfig.v1.ClientAuthConfig/GetDisplayBrand", new furn(feqkVar), new furn(feql.a), false);
+                                        fhfd fhfdVar2 = (fhfd) v2.b;
+                                        fhez fhezVar2 = (fhez) v3.Q();
+                                        fhezVar2.getClass();
+                                        fhfdVar2.c = fhezVar2;
+                                        fhfdVar2.b |= 1;
+                                        fhfd fhfdVar3 = (fhfd) v2.Q();
+                                        dfeb dfebVar2 = new dfeb(dfebVar, cbot.a, cahq.b);
+                                        if (dfeb.a == null) {
+                                            fwtb fwtbVar = fwtb.UNARY;
+                                            fgqp fgqpVar = fxnm.a;
+                                            dfeb.a = new fwtc(fwtbVar, "google.identity.clientauthconfig.v1.ClientAuthConfig/GetDisplayBrand", new fxnl(fhfdVar), new fxnl(fhfe.a), false);
                                         }
-                                        feql feqlVar = (feql) dcswVar2.b.e(dcsw.a, feqkVar3, 10000L, TimeUnit.MILLISECONDS, dcswVar2.c);
-                                        if (feqlVar == null) {
+                                        fhfe fhfeVar = (fhfe) dfebVar2.b.e(dfeb.a, fhfdVar3, 10000L, TimeUnit.MILLISECONDS, dfebVar2.c);
+                                        if (fhfeVar == null) {
                                             throw new IOException("No Brand found for the calling package.");
                                         }
-                                        if ((feqlVar.b & 1) != 0) {
-                                            feqi feqiVar = feqlVar.c;
-                                            if (feqiVar == null) {
-                                                feqiVar = feqi.a;
+                                        if ((fhfeVar.b & 1) != 0) {
+                                            fhfb fhfbVar = fhfeVar.c;
+                                            if (fhfbVar == null) {
+                                                fhfbVar = fhfb.a;
                                             }
-                                            signInChimeraActivity2.q = eiif.a(feqiVar.c);
-                                            signInChimeraActivity2.r = eiif.a(feqiVar.b);
+                                            signInChimeraActivity2.q = ekvk.a(fhfbVar.c);
+                                            signInChimeraActivity2.r = ekvk.a(fhfbVar.b);
                                         }
-                                        return eiid.j(2);
-                                    } catch (ftye e) {
+                                        return ekvi.j(2);
+                                    } catch (fwuc e) {
                                         throw new IOException(e);
                                     }
                                 }
                             });
                         }
-                    }), IOException.class, new eiho() { // from class: dcri
-                        @Override // defpackage.eiho
+                    }), IOException.class, new ekut() { // from class: dfcn
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
                             IOException iOException = (IOException) obj;
-                            if (fsca.a.a().e()) {
+                            if (fuww.a.lK().e()) {
                                 SignInChimeraActivity.j.h("Couldn't fetch app's branding information, but continuing without it.", new Object[0]);
-                                return eiid.j(2);
+                                return ekvi.j(2);
                             }
                             SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
                             SignInChimeraActivity.j.g("Errors encountered when trying to fetch app's branding information", iOException, new Object[0]);
                             signInChimeraActivity.a(0, null);
-                            return eigb.a;
+                            return ektg.a;
                         }
                     }, this.z);
                     break;
                 } else {
-                    final entj entjVar = new entj();
-                    new AlertDialog.Builder(this).setCancelable(true).setTitle(R.string.signin_not_supported_dialog_title).setMessage(R.string.signin_not_supported_dialog_message).setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() { // from class: dcrl
+                    final eqhc eqhcVar = new eqhc();
+                    new AlertDialog.Builder(this).setCancelable(true).setTitle(R.string.signin_not_supported_dialog_title).setMessage(R.string.signin_not_supported_dialog_message).setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() { // from class: dfcq
                         @Override // android.content.DialogInterface.OnClickListener
                         public final void onClick(DialogInterface dialogInterface, int i2) {
-                            arxo arxoVar = SignInChimeraActivity.j;
+                            auad auadVar = SignInChimeraActivity.j;
                             dialogInterface.cancel();
                         }
-                    }).setOnCancelListener(new DialogInterface.OnCancelListener() { // from class: dcrn
+                    }).setOnCancelListener(new DialogInterface.OnCancelListener() { // from class: dfcs
                         @Override // android.content.DialogInterface.OnCancelListener
                         public final void onCancel(DialogInterface dialogInterface) {
                             Intent intent = new Intent();
                             intent.putExtra("<<ResolutionFailureErrorDetail>>", 17);
                             SignInChimeraActivity.this.a(0, intent);
-                            entjVar.q(eigb.a);
+                            eqhcVar.q(ektg.a);
                         }
                     }).create().show();
-                    enssVar = entjVar;
+                    eqglVar = eqhcVar;
                     break;
                 }
             case 2:
                 boolean booleanExtra = getIntent().getBooleanExtra("SIGN_IN_SAVE_DEFAULT_ACCOUNT", false);
-                boolean a = fsck.a.a().a();
+                boolean a = fuxg.a.lK().a();
                 int i2 = ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS;
                 if (a) {
-                    aqsv aqsvVar = new aqsv();
-                    aqsvVar.c(Arrays.asList("com.google"));
-                    aqsvVar.d();
-                    aqsvVar.d = booleanExtra;
-                    aqsvVar.e();
-                    aqsvVar.g = getIntent().getStringExtra("hosted_domain");
-                    aqsvVar.e = this.m;
-                    if (true == fsbr.f()) {
+                    asvl asvlVar = new asvl();
+                    asvlVar.c(Arrays.asList("com.google"));
+                    asvlVar.d();
+                    asvlVar.d = booleanExtra;
+                    asvlVar.e();
+                    asvlVar.g = getIntent().getStringExtra("hosted_domain");
+                    asvlVar.e = this.m;
+                    if (true == fuwn.f()) {
                         i2 = 1001;
                     }
-                    aqsvVar.f = i2;
+                    asvlVar.f = i2;
                     String str = this.r;
                     String str2 = this.q;
-                    aqsw aqswVar = new aqsw();
-                    aqswVar.b = str;
-                    aqswVar.a = str2;
-                    aqsvVar.h = aqswVar;
-                    c = aqsy.a(aqsvVar.a());
+                    asvm asvmVar = new asvm();
+                    asvmVar.b = str;
+                    asvmVar.a = str2;
+                    asvlVar.h = asvmVar;
+                    c = asvo.a(asvlVar.a());
                 } else {
-                    c = aqsy.c(null, null, new String[]{"com.google"}, true, booleanExtra, 0, 2, getIntent().getStringExtra("hosted_domain"), true);
+                    c = asvo.c(null, null, new String[]{"com.google"}, true, booleanExtra, 0, 2, getIntent().getStringExtra("hosted_domain"), true);
                     c.putExtra("realClientPackage", this.m);
                     Bundle bundle = new Bundle(Bundle.EMPTY);
-                    ((Integer) ((eiir) eiid.j(Integer.valueOf(ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS))).a).intValue();
+                    ((Integer) ((ekvw) ekvi.j(Integer.valueOf(ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS))).a).intValue();
                     bundle.putInt("theme", ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
-                    eiid i3 = eiid.i(this.r);
-                    eiid i4 = eiid.i(this.q);
+                    ekvi i3 = ekvi.i(this.r);
+                    ekvi i4 = ekvi.i(this.q);
                     bundle.putBoolean("should_show_consent", true);
                     bundle.putString("privacy_policy_url", (String) i3.f());
                     bundle.putString("terms_of_service_url", (String) i4.f());
-                    c.putExtra("first_party_options_bundle", new bmas(bundle).a);
+                    c.putExtra("first_party_options_bundle", new bohk(bundle).a);
                 }
-                enssVar = enps.f(this.B.b(2, c), new eiho() { // from class: dcry
-                    @Override // defpackage.eiho
+                eqglVar = eqdl.f(this.B.b(2, c), new ekut() { // from class: dfdd
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
                         Intent intent;
                         SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
-                        bmcw bmcwVar = (bmcw) obj;
-                        if (!signInChimeraActivity.getIntent().getBooleanExtra("complete_sign_in_process", false) || bmcwVar.a != -1 || (intent = bmcwVar.b) == null) {
-                            signInChimeraActivity.a(bmcwVar.a, signInChimeraActivity.n ? bmcwVar.b : null);
-                            return eigb.a;
+                        bojo bojoVar = (bojo) obj;
+                        if (!signInChimeraActivity.getIntent().getBooleanExtra("complete_sign_in_process", false) || bojoVar.a != -1 || (intent = bojoVar.b) == null) {
+                            signInChimeraActivity.a(bojoVar.a, signInChimeraActivity.n ? bojoVar.b : null);
+                            return ektg.a;
                         }
                         String stringExtra = intent.getStringExtra("authAccount");
-                        eiig.x(stringExtra);
+                        ekvl.y(stringExtra);
                         String stringExtra2 = intent.getStringExtra("accountType");
-                        eiig.x(stringExtra2);
+                        ekvl.y(stringExtra2);
                         signInChimeraActivity.o = new Account(stringExtra, stringExtra2);
-                        return eiid.j(3);
+                        return ekvi.j(3);
                     }
                 }, this.z);
                 break;
             case 3:
                 if (!y.containsAll(this.p)) {
-                    enssVar = ensj.i(eiid.j(4));
+                    eqglVar = eqgc.i(ekvi.j(4));
                     break;
                 } else {
                     Account account = this.o;
-                    eiig.x(account);
+                    ekvl.y(account);
                     final RecordConsentRequest recordConsentRequest = new RecordConsentRequest(1, account, (Scope[]) this.p.toArray(new Scope[0]), getIntent().getStringExtra("service_client_id"));
-                    if (!fsbu.c()) {
-                        enssVar = enps.f(this.A.b(3, new eijr() { // from class: dcrs
-                            @Override // defpackage.eijr
-                            public final Object a() {
-                                aqxs aqxsVar = SignInChimeraActivity.this.t;
-                                return bmdm.b(aqxsVar.d(new dcsi(aqxsVar, recordConsentRequest)));
+                    if (!fuwq.c()) {
+                        eqglVar = eqdl.f(this.A.b(3, new ekww() { // from class: dfcx
+                            @Override // defpackage.ekww
+                            public final Object lK() {
+                                atah atahVar = SignInChimeraActivity.this.t;
+                                return boke.b(atahVar.d(new dfdn(atahVar, recordConsentRequest)));
                             }
-                        }), new eiho() { // from class: dcrt
-                            @Override // defpackage.eiho
+                        }), new ekut() { // from class: dfcy
+                            @Override // defpackage.ekut
                             public final Object apply(Object obj) {
-                                arxo arxoVar = SignInChimeraActivity.j;
+                                auad auadVar = SignInChimeraActivity.j;
                                 if (!((Status) obj).e()) {
                                     SignInChimeraActivity.j.m("Failed to record the consent.", new Object[0]);
                                 }
-                                return eiid.j(4);
+                                return ekvi.j(4);
                             }
                         }, this.z);
                         break;
                     } else {
-                        enssVar = enps.f(enox.f(this.A.b(3, new eijr() { // from class: dcrb
-                            @Override // defpackage.eijr
-                            public final Object a() {
-                                dcsv dcsvVar = SignInChimeraActivity.this.w;
-                                arcy arcyVar = new arcy();
+                        eqglVar = eqdl.f(eqcq.f(this.A.b(3, new ekww() { // from class: dfcg
+                            @Override // defpackage.ekww
+                            public final Object lK() {
+                                dfea dfeaVar = SignInChimeraActivity.this.w;
+                                atfn atfnVar = new atfn();
                                 final RecordConsentRequest recordConsentRequest2 = recordConsentRequest;
-                                arcyVar.a = new arco() { // from class: dcsn
-                                    @Override // defpackage.arco
+                                atfnVar.a = new atfd() { // from class: dfds
+                                    @Override // defpackage.atfd
                                     public final void d(Object obj, Object obj2) {
-                                        ((dcte) ((dcti) obj).H()).d(RecordConsentRequest.this, new dcss((dfau) obj2));
+                                        ((dfej) ((dfen) obj).H()).d(RecordConsentRequest.this, new dfdx((dhma) obj2));
                                     }
                                 };
-                                arcyVar.d = 6305;
-                                return doci.b(dcsvVar.iT(arcyVar.a()));
+                                atfnVar.d = 6305;
+                                return dqmr.b(dfeaVar.ji(atfnVar.a()));
                             }
-                        }), aqxe.class, new eiho() { // from class: dcrm
-                            @Override // defpackage.eiho
+                        }), aszt.class, new ekut() { // from class: dfcr
+                            @Override // defpackage.ekut
                             public final Object apply(Object obj) {
                                 SignInChimeraActivity.j.m("Failed to record the consent.", new Object[0]);
                                 return null;
                             }
-                        }, this.z), new eiho() { // from class: dcrr
-                            @Override // defpackage.eiho
+                        }, this.z), new ekut() { // from class: dfcw
+                            @Override // defpackage.ekut
                             public final Object apply(Object obj) {
-                                arxo arxoVar = SignInChimeraActivity.j;
-                                return eiid.j(4);
+                                auad auadVar = SignInChimeraActivity.j;
+                                return ekvi.j(4);
                             }
                         }, this.z);
                         break;
@@ -437,55 +438,55 @@ public final class SignInChimeraActivity extends qet {
                 }
             case 4:
                 if (this.s == null) {
-                    enssVar = enps.f(fsbu.c() ? this.A.b(4, new eijr() { // from class: dcrv
-                        @Override // defpackage.eijr
-                        public final Object a() {
+                    eqglVar = eqdl.f(fuwq.c() ? this.A.b(4, new ekww() { // from class: dfda
+                        @Override // defpackage.ekww
+                        public final Object lK() {
                             SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
-                            dcsv dcsvVar = signInChimeraActivity.w;
+                            dfea dfeaVar = signInChimeraActivity.w;
                             Account account2 = signInChimeraActivity.o;
-                            eiig.x(account2);
+                            ekvl.y(account2);
                             final AuthAccountRequest authAccountRequest = new AuthAccountRequest(account2, signInChimeraActivity.p);
-                            arcy arcyVar = new arcy();
-                            arcyVar.a = new arco() { // from class: dcso
-                                @Override // defpackage.arco
+                            atfn atfnVar = new atfn();
+                            atfnVar.a = new atfd() { // from class: dfdt
+                                @Override // defpackage.atfd
                                 public final void d(Object obj, Object obj2) {
-                                    ((dcte) ((dcti) obj).H()).a(AuthAccountRequest.this, new dcsu((dfau) obj2));
+                                    ((dfej) ((dfen) obj).H()).a(AuthAccountRequest.this, new dfdz((dhma) obj2));
                                 }
                             };
-                            arcyVar.d = 6307;
-                            return doci.b(dcsvVar.iO(arcyVar.a()));
+                            atfnVar.d = 6307;
+                            return dqmr.b(dfeaVar.jd(atfnVar.a()));
                         }
-                    }) : this.A.b(4, new eijr() { // from class: dcrw
-                        @Override // defpackage.eijr
-                        public final Object a() {
+                    }) : this.A.b(4, new ekww() { // from class: dfdb
+                        @Override // defpackage.ekww
+                        public final Object lK() {
                             SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
-                            aqxs aqxsVar = signInChimeraActivity.t;
+                            atah atahVar = signInChimeraActivity.t;
                             Account account2 = signInChimeraActivity.o;
-                            eiig.x(account2);
-                            return bmdm.b(aqxsVar.d(new dcsk(aqxsVar, new AuthAccountRequest(account2, signInChimeraActivity.p))));
+                            ekvl.y(account2);
+                            return boke.b(atahVar.d(new dfdp(atahVar, new AuthAccountRequest(account2, signInChimeraActivity.p))));
                         }
-                    }), new eiho() { // from class: dcrx
-                        @Override // defpackage.eiho
+                    }), new ekut() { // from class: dfdc
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
                             AuthAccountResult authAccountResult = (AuthAccountResult) obj;
                             if (authAccountResult.a().e()) {
-                                return eiid.j(6);
+                                return ekvi.j(6);
                             }
                             SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
                             Intent intent = authAccountResult.c;
                             if (intent != null) {
                                 signInChimeraActivity.s = intent;
-                                return eiid.j(5);
+                                return ekvi.j(5);
                             }
                             Intent intent2 = new Intent();
                             intent2.putExtra("<<ResolutionFailureErrorDetail>>", authAccountResult.b);
                             signInChimeraActivity.a(0, intent2);
-                            return eigb.a;
+                            return ektg.a;
                         }
                     }, this.z);
                     break;
                 } else {
-                    enssVar = ensj.i(eiid.j(5));
+                    eqglVar = eqgc.i(ekvi.j(5));
                     break;
                 }
             case 5:
@@ -493,164 +494,164 @@ public final class SignInChimeraActivity extends qet {
                 if (intent != null) {
                     intent.setExtrasClassLoader(Scope.class.getClassLoader());
                 }
-                bmcz bmczVar = this.B;
+                bojr bojrVar = this.B;
                 Intent intent2 = this.s;
-                eiig.x(intent2);
-                enssVar = enps.f(bmczVar.b(5, intent2), new eiho() { // from class: dcrk
-                    @Override // defpackage.eiho
+                ekvl.y(intent2);
+                eqglVar = eqdl.f(bojrVar.b(5, intent2), new ekut() { // from class: dfcp
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        bmcw bmcwVar = (bmcw) obj;
-                        int i5 = bmcwVar.a;
+                        bojo bojoVar = (bojo) obj;
+                        int i5 = bojoVar.a;
                         if (i5 == -1) {
-                            return eiid.j(6);
+                            return ekvi.j(6);
                         }
-                        SignInChimeraActivity.this.a(i5, bmcwVar.b);
-                        return eigb.a;
+                        SignInChimeraActivity.this.a(i5, bojoVar.b);
+                        return ektg.a;
                     }
                 }, this.z);
                 break;
             case 6:
                 final int intExtra = getIntent().getIntExtra("com.google.android.gms.signin.extraSessionId", -1);
                 if (intExtra != -1) {
-                    if (!fsbu.c()) {
-                        enssVar = enps.f(this.A.b(6, new eijr() { // from class: dcrf
-                            @Override // defpackage.eijr
-                            public final Object a() {
+                    if (!fuwq.c()) {
+                        eqglVar = eqdl.f(this.A.b(6, new ekww() { // from class: dfck
+                            @Override // defpackage.ekww
+                            public final Object lK() {
                                 SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
-                                aqxs aqxsVar = signInChimeraActivity.t;
+                                atah atahVar = signInChimeraActivity.t;
                                 Account account2 = signInChimeraActivity.o;
-                                eiig.x(account2);
-                                return bmdm.b(aqxsVar.d(new dcsg(aqxsVar, intExtra, account2)));
+                                ekvl.y(account2);
+                                return boke.b(atahVar.d(new dfdl(atahVar, intExtra, account2)));
                             }
-                        }), new eiho() { // from class: dcrg
-                            @Override // defpackage.eiho
+                        }), new ekut() { // from class: dfcl
+                            @Override // defpackage.ekut
                             public final Object apply(Object obj) {
                                 if (!((Status) obj).e()) {
                                     SignInChimeraActivity.j.m("Saving selected account failed. User probably need to re-select.", new Object[0]);
                                 }
                                 SignInChimeraActivity.this.a(-1, null);
-                                return eigb.a;
+                                return ektg.a;
                             }
                         }, this.z);
                         break;
                     } else {
-                        enssVar = enps.f(enox.f(this.A.b(6, new eijr() { // from class: dcrc
-                            @Override // defpackage.eijr
-                            public final Object a() {
+                        eqglVar = eqdl.f(eqcq.f(this.A.b(6, new ekww() { // from class: dfch
+                            @Override // defpackage.ekww
+                            public final Object lK() {
                                 SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
-                                dcsv dcsvVar = signInChimeraActivity.w;
+                                dfea dfeaVar = signInChimeraActivity.w;
                                 final Account account2 = signInChimeraActivity.o;
-                                eiig.x(account2);
-                                arcy arcyVar = new arcy();
+                                ekvl.y(account2);
+                                atfn atfnVar = new atfn();
                                 final int i5 = intExtra;
-                                arcyVar.a = new arco() { // from class: dcsp
-                                    @Override // defpackage.arco
+                                atfnVar.a = new atfd() { // from class: dfdu
+                                    @Override // defpackage.atfd
                                     public final void d(Object obj, Object obj2) {
-                                        ((dcte) ((dcti) obj).H()).g(i5, account2, new dcsr((dfau) obj2));
+                                        ((dfej) ((dfen) obj).H()).g(i5, account2, new dfdw((dhma) obj2));
                                     }
                                 };
-                                arcyVar.d = 6303;
-                                return doci.b(dcsvVar.iT(arcyVar.a()));
+                                atfnVar.d = 6303;
+                                return dqmr.b(dfeaVar.ji(atfnVar.a()));
                             }
-                        }), aqxe.class, new eiho() { // from class: dcrd
-                            @Override // defpackage.eiho
+                        }), aszt.class, new ekut() { // from class: dfci
+                            @Override // defpackage.ekut
                             public final Object apply(Object obj) {
                                 SignInChimeraActivity.j.m("Saving selected account failed. User probably needs to re-select.", new Object[0]);
                                 return null;
                             }
-                        }, this.z), new eiho() { // from class: dcre
-                            @Override // defpackage.eiho
+                        }, this.z), new ekut() { // from class: dfcj
+                            @Override // defpackage.ekut
                             public final Object apply(Object obj) {
                                 SignInChimeraActivity.this.a(-1, null);
-                                return eigb.a;
+                                return ektg.a;
                             }
                         }, this.z);
                         break;
                     }
                 } else {
                     a(-1, null);
-                    enssVar = ensj.i(eigb.a);
+                    eqglVar = eqgc.i(ektg.a);
                     break;
                 }
             default:
                 throw new IllegalStateException(String.format("Unknown sign-in step: %d", Integer.valueOf(i)));
         }
-        ensj.t(enssVar, new dcrz(this, System.currentTimeMillis()), this.z);
+        eqgc.t(eqglVar, new dfde(this, System.currentTimeMillis()), this.z);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         requestWindowFeature(1);
         setTheme(R.style.Identity_Theme_NoUIActivity);
-        this.u = bmgp.b(this, null);
+        this.u = bonh.b(this, null);
         if (bundle != null) {
             this.m = bundle.getString("SIGN_IN_PACKAGE_NAME");
             this.n = bundle.getBoolean("launched_by_gmscore");
             m(bundle);
         } else {
-            String q = asng.q(this);
+            String q = aura.q(this);
             this.m = q;
             boolean equalsIgnoreCase = "com.google.android.gms".equalsIgnoreCase(q);
             this.n = equalsIgnoreCase;
             if (equalsIgnoreCase) {
-                this.m = (String) eiic.c(getIntent().getStringExtra("SIGN_IN_PACKAGE_NAME"), this.m);
+                this.m = (String) ekvh.c(getIntent().getStringExtra("SIGN_IN_PACKAGE_NAME"), this.m);
             }
             Bundle extras = getIntent().getExtras();
-            eiig.x(extras);
+            ekvl.y(extras);
             m(extras);
-            dcox dcoxVar = this.v;
-            if (dcoxVar.g == null) {
-                dcow dcowVar = new dcow();
-                dcowVar.a = dcoxVar.b;
-                dcowVar.b = dcoxVar.c;
-                dcowVar.c = dcoxVar.d;
-                dcowVar.d = dcoxVar.e;
-                dcowVar.e = dcoxVar.f;
-                dcowVar.f = null;
-                dcowVar.g = dcoxVar.h;
-                dcowVar.h = dcoxVar.i;
-                dcowVar.i = dcoxVar.j;
-                dcowVar.f = bmgx.a();
-                dcox b = dcowVar.b();
+            dfac dfacVar = this.v;
+            if (dfacVar.g == null) {
+                dfab dfabVar = new dfab();
+                dfabVar.a = dfacVar.b;
+                dfabVar.b = dfacVar.c;
+                dfabVar.c = dfacVar.d;
+                dfabVar.d = dfacVar.e;
+                dfabVar.e = dfacVar.f;
+                dfabVar.f = null;
+                dfabVar.g = dfacVar.h;
+                dfabVar.h = dfacVar.i;
+                dfabVar.i = dfacVar.j;
+                dfabVar.f = bonp.a();
+                dfac b = dfabVar.b();
                 this.v = b;
-                this.u.a(bmlv.a(this.m, (Scope[]) this.p.toArray(new Scope[0]), b));
+                this.u.a(boso.a(this.m, (Scope[]) this.p.toArray(new Scope[0]), b));
             }
         }
-        bmgu.a(this, new eiiw() { // from class: dcro
-            @Override // defpackage.eiiw
-            public final void lB(Object obj) {
+        bonm.a(this, new ekwb() { // from class: dfct
+            @Override // defpackage.ekwb
+            public final void lY(Object obj) {
                 SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
-                signInChimeraActivity.u.a(bmgw.b(2, (bmgv) obj, signInChimeraActivity.v.g));
+                signInChimeraActivity.u.a(bono.b(2, (bonn) obj, signInChimeraActivity.v.g));
             }
         });
         j.d("Log Session ID: ".concat(String.valueOf(this.v.g)), new Object[0]);
-        this.z = new bmdc(new byhr(Looper.getMainLooper()));
-        if (fsbu.c() && this.w == null) {
+        this.z = new boju(new caqj(Looper.getMainLooper()));
+        if (fuwq.c() && this.w == null) {
             String str = this.m;
             Bundle a = this.v.a();
             a.putString("com.google.android.gms.signin.internal.realClientPackageName", str);
-            this.w = new dcsv(this, new dcou(a));
+            this.w = new dfea(this, new dezz(a));
         } else {
             String str2 = this.m;
-            dcox dcoxVar2 = this.v;
-            aqxp aqxpVar = new aqxp(this);
-            aqxpVar.h(this, 0, new aqxr() { // from class: dcrq
-                @Override // defpackage.arcf
+            dfac dfacVar2 = this.v;
+            atae ataeVar = new atae(this);
+            ataeVar.h(this, 0, new atag() { // from class: dfcv
+                @Override // defpackage.ateu
                 public final void onConnectionFailed(ConnectionResult connectionResult) {
                     SignInChimeraActivity.this.a(0, null);
                 }
             });
-            aqxpVar.d(dcov.d, new dcou(dcoxVar2.a()));
-            aqxpVar.c = str2;
-            this.t = aqxpVar.a();
+            ataeVar.d(dfaa.d, new dezz(dfacVar2.a()));
+            ataeVar.c = str2;
+            this.t = ataeVar.a();
         }
-        this.A = bmda.a(this);
-        this.B = bmcz.a(this);
+        this.A = bojs.a(this);
+        this.B = bojr.a(this);
         l();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putInt("start_step", this.l);

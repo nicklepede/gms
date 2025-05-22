@@ -13,54 +13,54 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.setupdesign.GlifLayout;
-import defpackage.aboi;
-import defpackage.aboj;
-import defpackage.adkg;
-import defpackage.arxo;
-import defpackage.aslv;
-import defpackage.aslw;
-import defpackage.bqna;
-import defpackage.dvni;
-import defpackage.edjt;
-import defpackage.fkdk;
-import defpackage.fklc;
-import defpackage.vfv;
+import defpackage.adoi;
+import defpackage.adoj;
+import defpackage.afkn;
+import defpackage.auad;
+import defpackage.aupp;
+import defpackage.aupq;
+import defpackage.bsup;
+import defpackage.dxyi;
+import defpackage.efwo;
+import defpackage.fmtw;
+import defpackage.fnbr;
+import defpackage.xbw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class PreFactoryResetChimeraActivity extends adkg implements AccountManagerCallback {
-    private static final arxo l = new arxo("Auth", "PreFactoryResetChimeraActivity");
+public class PreFactoryResetChimeraActivity extends afkn implements AccountManagerCallback {
+    private static final auad l = new auad("Auth", "PreFactoryResetChimeraActivity");
     Account h = null;
     boolean i = true;
-    aslw j;
-    bqna k;
+    aupq j;
+    bsup k;
 
     final void b() {
         setResult(-1, new Intent());
         finish();
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "PreFactoryResetChimeraActivity";
     }
 
-    @Override // defpackage.adkg
-    protected final void gH() {
+    @Override // defpackage.afkn
+    protected final void gX() {
         String str = SystemProperties.get("setupwizard.theme", "glif_v3_light");
-        edjt d = edjt.d();
+        efwo d = efwo.d();
         int i = d.a;
         String str2 = d.b;
         boolean z = d.c;
-        int c = new edjt(R.style.SudThemeGlifV3_Light, false).c(str, false);
-        edjt d2 = edjt.d();
+        int c = new efwo(R.style.SudThemeGlifV3_Light, false).c(str, false);
+        efwo d2 = efwo.d();
         int i2 = d2.a;
         String str3 = d2.b;
         boolean z2 = d2.c;
-        setTheme(new edjt(c, false).a(getIntent()));
+        setTheme(new efwo(c, false).a(getIntent()));
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i2 == -1) {
@@ -74,22 +74,22 @@ public class PreFactoryResetChimeraActivity extends adkg implements AccountManag
 
     public void onContinue(View view) {
         if (this.i) {
-            this.k.v(this.h, new Bundle(), null, this, new aslv(this.j));
+            this.k.v(this.h, new Bundle(), null, this, new aupp(this.j));
         } else {
             b();
         }
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         TextView textView;
         super.onCreate(bundle);
-        dvni dvniVar = vfv.a;
-        if (!fklc.a.a().a()) {
+        dxyi dxyiVar = xbw.a;
+        if (!fnbr.a.lK().a()) {
             b();
             return;
         }
-        bqna b = bqna.b(this);
+        bsup b = bsup.b(this);
         this.k = b;
         Account[] p = b.p("com.google");
         if (p == null || p.length == 0) {
@@ -97,8 +97,8 @@ public class PreFactoryResetChimeraActivity extends adkg implements AccountManag
             return;
         }
         this.h = p[0];
-        this.j = new aslw("PreFactoryResetChimerActivityHandler", 9);
-        if (fkdk.d()) {
+        this.j = new aupq("PreFactoryResetChimerActivityHandler", 9);
+        if (fmtw.d()) {
             setContentView(R.layout.pre_factory_reset_activity_v2);
             textView = ((GlifLayout) findViewById(R.id.pre_frp_glif)).y();
         } else {
@@ -109,9 +109,9 @@ public class PreFactoryResetChimeraActivity extends adkg implements AccountManag
         String string = getString(R.string.auth_pre_wipe_credential_desc_text_filler);
         String string2 = getString(R.string.auth_pre_wipe_credential_desc_text, new Object[]{str, string});
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(string2);
-        aboi aboiVar = new aboi(this);
-        spannableStringBuilder.setSpan(new aboj(), string2.indexOf(str), string2.indexOf(str) + str.length(), 33);
-        spannableStringBuilder.setSpan(aboiVar, string2.indexOf(string), string2.indexOf(string) + string.length(), 33);
+        adoi adoiVar = new adoi(this);
+        spannableStringBuilder.setSpan(new adoj(), string2.indexOf(str), string2.indexOf(str) + str.length(), 33);
+        spannableStringBuilder.setSpan(adoiVar, string2.indexOf(string), string2.indexOf(string) + string.length(), 33);
         textView.setText(spannableStringBuilder);
         textView.setMovementMethod(LinkMovementMethod.getInstance());
         CheckBox checkBox = (CheckBox) findViewById(R.id.check_cred);
@@ -119,12 +119,12 @@ public class PreFactoryResetChimeraActivity extends adkg implements AccountManag
         checkBox.setText(getString(R.string.auth_pre_wipe_credential_check_text, new Object[]{this.h.name}));
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
         super.onDestroy();
-        aslw aslwVar = this.j;
-        if (aslwVar != null) {
-            aslwVar.quitSafely();
+        aupq aupqVar = this.j;
+        if (aupqVar != null) {
+            aupqVar.quitSafely();
         }
     }
 

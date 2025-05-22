@@ -5,18 +5,18 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.cufg;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cwon;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class AvatarReference extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new cufg();
+    public static final Parcelable.Creator CREATOR = new cwon();
     public final int a;
 
     @Deprecated
@@ -30,7 +30,7 @@ public final class AvatarReference extends AbstractSafeParcelable implements Ref
 
     @Deprecated
     public AvatarReference(String str) {
-        arwm.l(true);
+        atzb.l(true);
         this.a = 1;
         this.b = str;
         this.c = null;
@@ -47,7 +47,7 @@ public final class AvatarReference extends AbstractSafeParcelable implements Ref
         }
         if (obj != null && getClass() == obj.getClass()) {
             AvatarReference avatarReference = (AvatarReference) obj;
-            if (this.a == avatarReference.a && arwb.b(this.b, avatarReference.b) && arwb.b(this.c, avatarReference.c) && arwb.b(this.d, avatarReference.d) && arwb.b(this.e, avatarReference.e) && arwb.b(this.f, avatarReference.f) && arwb.b(this.g, avatarReference.g) && arwb.b(this.h, avatarReference.h)) {
+            if (this.a == avatarReference.a && atyq.b(this.b, avatarReference.b) && atyq.b(this.c, avatarReference.c) && atyq.b(this.d, avatarReference.d) && atyq.b(this.e, avatarReference.e) && atyq.b(this.f, avatarReference.f) && atyq.b(this.g, avatarReference.g) && atyq.b(this.h, avatarReference.h)) {
                 return true;
             }
         }
@@ -60,34 +60,34 @@ public final class AvatarReference extends AbstractSafeParcelable implements Ref
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("source", Integer.valueOf(this.a), arrayList);
-        arwa.b("location", this.b, arrayList);
-        arwa.b("url", this.c, arrayList);
-        arwa.b("email", this.d, arrayList);
-        arwa.b("account", this.e, arrayList);
-        arwa.b("focusId", this.f, arrayList);
-        arwa.b("contactId", this.g, arrayList);
-        arwa.b("rawContactId", this.h, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("source", Integer.valueOf(this.a), arrayList);
+        atyp.b("location", this.b, arrayList);
+        atyp.b("url", this.c, arrayList);
+        atyp.b("email", this.d, arrayList);
+        atyp.b("account", this.e, arrayList);
+        atyp.b("focusId", this.f, arrayList);
+        atyp.b("contactId", this.g, arrayList);
+        atyp.b("rawContactId", this.h, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.I(parcel, 7, this.g);
-        arxc.I(parcel, 8, this.h);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.I(parcel, 7, this.g);
+        atzr.I(parcel, 8, this.h);
+        atzr.c(parcel, a);
     }
 
     public AvatarReference(int i, String str, String str2, String str3, String str4, String str5, Long l, Long l2) {
-        arwm.l(i != 0);
+        atzb.l(i != 0);
         this.a = i;
         this.b = true == TextUtils.isEmpty(str) ? null : str;
         this.c = true == TextUtils.isEmpty(str2) ? null : str2;

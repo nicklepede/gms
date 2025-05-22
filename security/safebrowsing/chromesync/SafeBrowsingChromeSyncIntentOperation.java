@@ -6,15 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aozb;
-import defpackage.aozu;
-import defpackage.apru;
-import defpackage.asnd;
-import defpackage.eijr;
-import defpackage.enpf;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
+import defpackage.arbs;
+import defpackage.arcl;
+import defpackage.arul;
+import defpackage.auqx;
+import defpackage.ekww;
+import defpackage.eqcy;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
 import j$.util.Collection;
 import j$.util.Objects;
 import j$.util.Optional;
@@ -27,7 +27,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
     public static Intent a(Context context) {
@@ -41,34 +41,34 @@ public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Account b;
-        if (intent == null || !Objects.equals(intent.getAction(), "com.google.android.gms.security.safebrowsing.ACTION_CHROME_SYNC_UPDATE") || (b = asnd.b(this)) == null) {
+        if (intent == null || !Objects.equals(intent.getAction(), "com.google.android.gms.security.safebrowsing.ACTION_CHROME_SYNC_UPDATE") || (b = auqx.b(this)) == null) {
             return;
         }
         try {
-            final apru apruVar = (apru) ((aozu) aozu.a.b()).b.a(b);
-            ((enpf) enps.g(aozb.a(apruVar, a(this), new eijr() { // from class: cyvp
-                @Override // defpackage.eijr
-                public final Object a() {
-                    return doci.b(apru.this.b(Bundle.EMPTY));
+            final arul arulVar = (arul) ((arcl) arcl.a.b()).b.a(b);
+            ((eqcy) eqdl.g(arbs.a(arulVar, a(this), new ekww() { // from class: dbfn
+                @Override // defpackage.ekww
+                public final Object lK() {
+                    return dqmr.b(arul.this.b(Bundle.EMPTY));
                 }
-            }), new enqc() { // from class: cyvq
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    final eitj eitjVar = (eitj) obj;
-                    return cyvo.a(this).b(new eiho() { // from class: cyve
-                        @Override // defpackage.eiho
+            }), new eqdv() { // from class: dbfo
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    final elgo elgoVar = (elgo) obj;
+                    return dbfm.a(this).b(new ekut() { // from class: dbfc
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj2) {
-                            eitj eitjVar2 = cyvo.a;
-                            fecj v = cytb.a.v();
-                            List list = eitjVar;
-                            Stream map = Collection.EL.stream(list).filter(new Predicate() { // from class: cyvi
+                            elgo elgoVar2 = dbfm.a;
+                            fgrc v = dbcz.a.v();
+                            List list = elgoVar;
+                            Stream map = Collection.EL.stream(list).filter(new Predicate() { // from class: dbfg
                                 public final /* synthetic */ Predicate and(Predicate predicate) {
                                     return Predicate$CC.$default$and(this, predicate);
                                 }
 
                                 @Override // java.util.function.Predicate
                                 /* renamed from: negate */
-                                public final /* synthetic */ Predicate mo463negate() {
+                                public final /* synthetic */ Predicate mo478negate() {
                                     return Predicate$CC.$default$negate(this);
                                 }
 
@@ -79,17 +79,17 @@ public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
 
                                 @Override // java.util.function.Predicate
                                 public final boolean test(Object obj3) {
-                                    eitj eitjVar3 = cyvo.a;
-                                    return ((fczu) obj3).b.startsWith("ContentPackManualBehaviorHosts");
+                                    elgo elgoVar3 = dbfm.a;
+                                    return ((ffok) obj3).b.startsWith("ContentPackManualBehaviorHosts");
                                 }
-                            }).filter(new Predicate() { // from class: cyvj
+                            }).filter(new Predicate() { // from class: dbfh
                                 public final /* synthetic */ Predicate and(Predicate predicate) {
                                     return Predicate$CC.$default$and(this, predicate);
                                 }
 
                                 @Override // java.util.function.Predicate
                                 /* renamed from: negate */
-                                public final /* synthetic */ Predicate mo463negate() {
+                                public final /* synthetic */ Predicate mo478negate() {
                                     return Predicate$CC.$default$negate(this);
                                 }
 
@@ -100,46 +100,46 @@ public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
 
                                 @Override // java.util.function.Predicate
                                 public final boolean test(Object obj3) {
-                                    eitj eitjVar3 = cyvo.a;
-                                    return Boolean.parseBoolean(((fczu) obj3).c);
+                                    elgo elgoVar3 = dbfm.a;
+                                    return Boolean.parseBoolean(((ffok) obj3).c);
                                 }
-                            }).map(new Function() { // from class: cyvk
+                            }).map(new Function() { // from class: dbfi
                                 @Override // java.util.function.Function
                                 /* renamed from: andThen */
-                                public final /* synthetic */ Function mo464andThen(Function function) {
+                                public final /* synthetic */ Function mo479andThen(Function function) {
                                     return Function$CC.$default$andThen(this, function);
                                 }
 
                                 @Override // java.util.function.Function
                                 public final Object apply(Object obj3) {
-                                    eitj eitjVar3 = cyvo.a;
-                                    return ((fczu) obj3).b.substring(31);
+                                    elgo elgoVar3 = dbfm.a;
+                                    return ((ffok) obj3).b.substring(31);
                                 }
 
                                 public final /* synthetic */ Function compose(Function function) {
                                     return Function$CC.$default$compose(this, function);
                                 }
                             });
-                            int i = eitj.d;
-                            Collector collector = eipl.a;
-                            eitj eitjVar3 = (eitj) map.collect(collector);
+                            int i = elgo.d;
+                            Collector collector = elcq.a;
+                            elgo elgoVar3 = (elgo) map.collect(collector);
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            cytb cytbVar = (cytb) v.b;
-                            fedh fedhVar = cytbVar.e;
-                            if (!fedhVar.c()) {
-                                cytbVar.e = fecp.E(fedhVar);
+                            dbcz dbczVar = (dbcz) v.b;
+                            fgsa fgsaVar = dbczVar.e;
+                            if (!fgsaVar.c()) {
+                                dbczVar.e = fgri.E(fgsaVar);
                             }
-                            feab.E(eitjVar3, cytbVar.e);
-                            eitj eitjVar4 = (eitj) Collection.EL.stream(list).filter(new Predicate() { // from class: cyvl
+                            fgou.E(elgoVar3, dbczVar.e);
+                            elgo elgoVar4 = (elgo) Collection.EL.stream(list).filter(new Predicate() { // from class: dbfj
                                 public final /* synthetic */ Predicate and(Predicate predicate) {
                                     return Predicate$CC.$default$and(this, predicate);
                                 }
 
                                 @Override // java.util.function.Predicate
                                 /* renamed from: negate */
-                                public final /* synthetic */ Predicate mo463negate() {
+                                public final /* synthetic */ Predicate mo478negate() {
                                     return Predicate$CC.$default$negate(this);
                                 }
 
@@ -150,17 +150,17 @@ public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
 
                                 @Override // java.util.function.Predicate
                                 public final boolean test(Object obj3) {
-                                    eitj eitjVar5 = cyvo.a;
-                                    return ((fczu) obj3).b.startsWith("ContentPackManualBehaviorHosts");
+                                    elgo elgoVar5 = dbfm.a;
+                                    return ((ffok) obj3).b.startsWith("ContentPackManualBehaviorHosts");
                                 }
-                            }).filter(new Predicate() { // from class: cyvm
+                            }).filter(new Predicate() { // from class: dbfk
                                 public final /* synthetic */ Predicate and(Predicate predicate) {
                                     return Predicate$CC.$default$and(this, predicate);
                                 }
 
                                 @Override // java.util.function.Predicate
                                 /* renamed from: negate */
-                                public final /* synthetic */ Predicate mo463negate() {
+                                public final /* synthetic */ Predicate mo478negate() {
                                     return Predicate$CC.$default$negate(this);
                                 }
 
@@ -171,20 +171,20 @@ public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
 
                                 @Override // java.util.function.Predicate
                                 public final boolean test(Object obj3) {
-                                    eitj eitjVar5 = cyvo.a;
-                                    return !Boolean.parseBoolean(((fczu) obj3).c);
+                                    elgo elgoVar5 = dbfm.a;
+                                    return !Boolean.parseBoolean(((ffok) obj3).c);
                                 }
-                            }).map(new Function() { // from class: cyvn
+                            }).map(new Function() { // from class: dbfl
                                 @Override // java.util.function.Function
                                 /* renamed from: andThen */
-                                public final /* synthetic */ Function mo464andThen(Function function) {
+                                public final /* synthetic */ Function mo479andThen(Function function) {
                                     return Function$CC.$default$andThen(this, function);
                                 }
 
                                 @Override // java.util.function.Function
                                 public final Object apply(Object obj3) {
-                                    eitj eitjVar5 = cyvo.a;
-                                    return ((fczu) obj3).b.substring(31);
+                                    elgo elgoVar5 = dbfm.a;
+                                    return ((ffok) obj3).b.substring(31);
                                 }
 
                                 public final /* synthetic */ Function compose(Function function) {
@@ -194,20 +194,20 @@ public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            cytb cytbVar2 = (cytb) v.b;
-                            fedh fedhVar2 = cytbVar2.d;
-                            if (!fedhVar2.c()) {
-                                cytbVar2.d = fecp.E(fedhVar2);
+                            dbcz dbczVar2 = (dbcz) v.b;
+                            fgsa fgsaVar2 = dbczVar2.d;
+                            if (!fgsaVar2.c()) {
+                                dbczVar2.d = fgri.E(fgsaVar2);
                             }
-                            feab.E(eitjVar4, cytbVar2.d);
-                            Optional map2 = Collection.EL.stream(list).filter(new Predicate() { // from class: cyvd
+                            fgou.E(elgoVar4, dbczVar2.d);
+                            Optional map2 = Collection.EL.stream(list).filter(new Predicate() { // from class: dbfb
                                 public final /* synthetic */ Predicate and(Predicate predicate) {
                                     return Predicate$CC.$default$and(this, predicate);
                                 }
 
                                 @Override // java.util.function.Predicate
                                 /* renamed from: negate */
-                                public final /* synthetic */ Predicate mo463negate() {
+                                public final /* synthetic */ Predicate mo478negate() {
                                     return Predicate$CC.$default$negate(this);
                                 }
 
@@ -218,34 +218,34 @@ public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
 
                                 @Override // java.util.function.Predicate
                                 public final boolean test(Object obj3) {
-                                    eitj eitjVar5 = cyvo.a;
-                                    return ((fczu) obj3).b.equals("ContentPackDefaultFilteringBehavior");
+                                    elgo elgoVar5 = dbfm.a;
+                                    return ((ffok) obj3).b.equals("ContentPackDefaultFilteringBehavior");
                                 }
-                            }).findFirst().map(new Function() { // from class: cyvf
+                            }).findFirst().map(new Function() { // from class: dbfd
                                 @Override // java.util.function.Function
                                 /* renamed from: andThen */
-                                public final /* synthetic */ Function mo464andThen(Function function) {
+                                public final /* synthetic */ Function mo479andThen(Function function) {
                                     return Function$CC.$default$andThen(this, function);
                                 }
 
                                 @Override // java.util.function.Function
                                 public final Object apply(Object obj3) {
-                                    eitj eitjVar5 = cyvo.a;
-                                    return ((fczu) obj3).c;
+                                    elgo elgoVar5 = dbfm.a;
+                                    return ((ffok) obj3).c;
                                 }
 
                                 public final /* synthetic */ Function compose(Function function) {
                                     return Function$CC.$default$compose(this, function);
                                 }
                             });
-                            Optional map3 = Collection.EL.stream(list).filter(new Predicate() { // from class: cyvg
+                            Optional map3 = Collection.EL.stream(list).filter(new Predicate() { // from class: dbfe
                                 public final /* synthetic */ Predicate and(Predicate predicate) {
                                     return Predicate$CC.$default$and(this, predicate);
                                 }
 
                                 @Override // java.util.function.Predicate
                                 /* renamed from: negate */
-                                public final /* synthetic */ Predicate mo463negate() {
+                                public final /* synthetic */ Predicate mo478negate() {
                                     return Predicate$CC.$default$negate(this);
                                 }
 
@@ -256,20 +256,20 @@ public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
 
                                 @Override // java.util.function.Predicate
                                 public final boolean test(Object obj3) {
-                                    eitj eitjVar5 = cyvo.a;
-                                    return ((fczu) obj3).b.equals("SafeSites");
+                                    elgo elgoVar5 = dbfm.a;
+                                    return ((ffok) obj3).b.equals("SafeSites");
                                 }
-                            }).findFirst().map(new Function() { // from class: cyvh
+                            }).findFirst().map(new Function() { // from class: dbff
                                 @Override // java.util.function.Function
                                 /* renamed from: andThen */
-                                public final /* synthetic */ Function mo464andThen(Function function) {
+                                public final /* synthetic */ Function mo479andThen(Function function) {
                                     return Function$CC.$default$andThen(this, function);
                                 }
 
                                 @Override // java.util.function.Function
                                 public final Object apply(Object obj3) {
-                                    eitj eitjVar5 = cyvo.a;
-                                    return Boolean.valueOf(Boolean.parseBoolean(((fczu) obj3).c));
+                                    elgo elgoVar5 = dbfm.a;
+                                    return Boolean.valueOf(Boolean.parseBoolean(((ffok) obj3).c));
                                 }
 
                                 public final /* synthetic */ Function compose(Function function) {
@@ -280,14 +280,14 @@ public class SafeBrowsingChromeSyncIntentOperation extends IntentOperation {
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            cytb cytbVar3 = (cytb) v.b;
-                            cytbVar3.c = i2 - 2;
-                            cytbVar3.b |= 1;
-                            return (cytb) v.Q();
+                            dbcz dbczVar3 = (dbcz) v.b;
+                            dbczVar3.c = i2 - 2;
+                            dbczVar3.b |= 1;
+                            return (dbcz) v.Q();
                         }
-                    }, enre.a);
+                    }, eqex.a);
                 }
-            }, enre.a)).u();
+            }, eqex.a)).u();
         } catch (InterruptedException | ExecutionException e) {
             Log.e("SafeBrowsingChromeSync", "Failed to update managed user settings.", e);
         }

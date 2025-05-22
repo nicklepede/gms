@@ -6,13 +6,13 @@ import android.os.IBinder;
 import android.util.Log;
 import com.google.android.chimera.BoundService;
 import defpackage.a;
-import defpackage.bqog;
-import defpackage.eike;
+import defpackage.bsvw;
+import defpackage.ekxj;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class IsolatedBoundService extends BoundService {
     private final Map a = new HashMap();
@@ -30,10 +30,10 @@ public class IsolatedBoundService extends BoundService {
         }
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final IBinder onBind(Intent intent) {
         String action = intent.getAction();
-        eike.e(action);
+        ekxj.e(action);
         if (!action.equals("com.google.android.gms.semanticlocationhistory.BIND_NATIVE_LIB") && !action.equals("com.google.android.gms.semanticlocationhistory.BIND_NATIVE_LIB_ISOLATED")) {
             Log.e("SLH_ISOLATED_SVC", a.a(action, "onBind: unexpected intent action ", ", discarding"));
             throw new IllegalStateException("unexpected action ".concat(action));
@@ -46,21 +46,21 @@ public class IsolatedBoundService extends BoundService {
         Binder a = a(stringExtra);
         if (a != null) {
             this.a.put(stringExtra, (RemoteOdlhNativeLibImpl) a);
-            return new bqog(a);
+            return new bsvw(a);
         }
         Log.e("SLH_ISOLATED_SVC", "cannot create binder stub for ".concat(stringExtra));
         throw new IllegalStateException("cant create binder for ".concat(action));
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
         this.a.clear();
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final boolean onUnbind(Intent intent) {
         String action = intent.getAction();
-        eike.e(action);
+        ekxj.e(action);
         if (!action.equals("com.google.android.gms.semanticlocationhistory.BIND_NATIVE_LIB") && !action.equals("com.google.android.gms.semanticlocationhistory.BIND_NATIVE_LIB_ISOLATED")) {
             Log.e("SLH_ISOLATED_SVC", a.a(action, "onUnbind: unexpected intent action ", ", discarding"));
             return false;

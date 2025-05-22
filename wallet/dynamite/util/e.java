@@ -10,89 +10,89 @@ import com.android.volley.toolbox.ImageLoader;
 import com.google.android.gms.R;
 import com.google.android.gms.wallet.button.GetInstrumentAvailabilityResponse;
 import com.google.android.gms.wallet.dynamite.common.ui.RoundedImageViewWithBorder;
-import defpackage.dinl;
-import defpackage.dinm;
-import defpackage.dino;
-import defpackage.dinr;
-import defpackage.dins;
-import defpackage.dinv;
-import defpackage.dinw;
-import defpackage.eitj;
-import defpackage.ftey;
+import defpackage.dkyw;
+import defpackage.dkyx;
+import defpackage.dkyz;
+import defpackage.dkzc;
+import defpackage.dkzd;
+import defpackage.dkzg;
+import defpackage.dkzh;
+import defpackage.elgo;
+import defpackage.fwam;
 import j$.time.Duration;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class e implements ImageLoader.ImageListener {
     final /* synthetic */ Set a;
-    final /* synthetic */ dinv b;
+    final /* synthetic */ dkzg b;
     final /* synthetic */ Map c;
     final /* synthetic */ f d;
-    final /* synthetic */ dinm e;
+    final /* synthetic */ dkyx e;
 
-    public e(f fVar, Set set, dinv dinvVar, Map map, dinm dinmVar) {
+    public e(f fVar, Set set, dkzg dkzgVar, Map map, dkyx dkyxVar) {
         this.a = set;
-        this.b = dinvVar;
+        this.b = dkzgVar;
         this.c = map;
-        this.e = dinmVar;
+        this.e = dkyxVar;
         this.d = fVar;
     }
 
-    private final void a(dinv dinvVar, int i, int i2, Bitmap bitmap) {
+    private final void a(dkzg dkzgVar, int i, int i2, Bitmap bitmap) {
         com.google.android.gms.wallet.dynamite.logging.a aVar = this.d.b;
-        String str = dinvVar.a;
-        com.google.android.gms.wallet.dynamite.logging.c.a(aVar, dinvVar.b, i2, str);
+        String str = dkzgVar.a;
+        com.google.android.gms.wallet.dynamite.logging.c.a(aVar, dkzgVar.b, i2, str);
         if (bitmap == null) {
             bitmap = null;
         }
         Map map = this.c;
-        map.put(str, new dinw(i, bitmap));
-        dino dinoVar = this.e.a.e;
-        if (dinoVar != null) {
-            if (ftey.d() || ftey.c()) {
-                if (!ftey.g()) {
+        map.put(str, new dkzh(i, bitmap));
+        dkyz dkyzVar = this.e.a.e;
+        if (dkyzVar != null) {
+            if (fwam.d() || fwam.c()) {
+                if (!fwam.h()) {
                     if (map.isEmpty()) {
-                        dins dinsVar = (dins) dinoVar;
-                        dinsVar.d();
-                        dinsVar.b().f(dinsVar.g(), 6, "Image Responses unavailable after requesting network images");
+                        dkzd dkzdVar = (dkzd) dkyzVar;
+                        dkzdVar.d();
+                        dkzdVar.b().f(dkzdVar.g(), 6, "Image Responses unavailable after requesting network images");
                         return;
                     }
-                    dins dinsVar2 = (dins) dinoVar;
-                    int i3 = dinsVar2.b().f;
-                    GetInstrumentAvailabilityResponse getInstrumentAvailabilityResponse = dinsVar2.b().g;
+                    dkzd dkzdVar2 = (dkzd) dkyzVar;
+                    int i3 = dkzdVar2.b().f;
+                    GetInstrumentAvailabilityResponse getInstrumentAvailabilityResponse = dkzdVar2.b().g;
                     if (getInstrumentAvailabilityResponse == null) {
-                        dinsVar2.d();
-                        dinsVar2.b().f(dinsVar2.g(), 6, "Cached getCachedGetInstrumentAvailabilityResponse was lost after requesting network images");
+                        dkzdVar2.d();
+                        dkzdVar2.b().f(dkzdVar2.g(), 6, "Cached getCachedGetInstrumentAvailabilityResponse was lost after requesting network images");
                         return;
                     }
-                    eitj j = dins.j(i3, getInstrumentAvailabilityResponse);
+                    elgo j = dkzd.j(i3, getInstrumentAvailabilityResponse);
                     if (j.isEmpty()) {
-                        dinsVar2.d();
-                        dinsVar2.b().f(dinsVar2.g(), 7, "ValueProps changed after requesting network images");
+                        dkzdVar2.d();
+                        dkzdVar2.b().f(dkzdVar2.g(), 7, "ValueProps changed after requesting network images");
                         return;
                     }
-                    dinl a = dinsVar2.a();
+                    dkyw a = dkzdVar2.a();
                     if (a == null) {
-                        dinsVar2.b().f(6, 1, "PayButtonDynamicView unavailable after requesting network images");
+                        dkzdVar2.b().f(6, 1, "PayButtonDynamicView unavailable after requesting network images");
                         return;
                     } else {
-                        a.f(getInstrumentAvailabilityResponse, dins.i((dinw) map.get(getInstrumentAvailabilityResponse.d)), dins.i((dinw) map.get(getInstrumentAvailabilityResponse.f)), dins.i((dinw) map.get(getInstrumentAvailabilityResponse.h)), j);
-                        dinsVar2.b().e(dinsVar2.g(), 4);
+                        a.f(getInstrumentAvailabilityResponse, dkzd.i((dkzh) map.get(getInstrumentAvailabilityResponse.d)), dkzd.i((dkzh) map.get(getInstrumentAvailabilityResponse.f)), dkzd.i((dkzh) map.get(getInstrumentAvailabilityResponse.h)), j);
+                        dkzdVar2.b().e(dkzdVar2.g(), 4);
                         return;
                     }
                 }
-                dins dinsVar3 = (dins) dinoVar;
-                GetInstrumentAvailabilityResponse getInstrumentAvailabilityResponse2 = dinsVar3.b().g;
-                dinr c = dinsVar3.c();
+                dkzd dkzdVar3 = (dkzd) dkyzVar;
+                GetInstrumentAvailabilityResponse getInstrumentAvailabilityResponse2 = dkzdVar3.b().g;
+                dkzc c = dkzdVar3.c();
                 if (getInstrumentAvailabilityResponse2 == null) {
-                    dinsVar3.d();
-                    dinsVar3.b().f(dinsVar3.g(), 6, "Cached getCachedGetInstrumentAvailabilityResponse was lost after requesting network images");
+                    dkzdVar3.d();
+                    dkzdVar3.b().f(dkzdVar3.g(), 6, "Cached getCachedGetInstrumentAvailabilityResponse was lost after requesting network images");
                     return;
                 }
                 if (c != null) {
-                    Bitmap i4 = dins.i((dinw) map.get(getInstrumentAvailabilityResponse2.d));
+                    Bitmap i4 = dkzd.i((dkzh) map.get(getInstrumentAvailabilityResponse2.d));
                     View view = c.b;
                     if (view == null) {
                         return;
@@ -104,9 +104,9 @@ public final class e implements ImageLoader.ImageListener {
                     View view2 = c.b;
                     if (view2 != null) {
                         LinearLayout linearLayout3 = (LinearLayout) view2.findViewById(R.id.pay_button_vp_card_info);
-                        String string = c.getContext().getResources().getString(R.string.dynamic_content_description, c.getContext().getString(dinr.a(i5)), dinr.b(str2));
+                        String string = c.getContext().getResources().getString(R.string.dynamic_content_description, c.getContext().getString(dkzc.a(i5)), dkzc.b(str2));
                         c.g(str2);
-                        if (!ftey.d() || i4 == null) {
+                        if (!fwam.d() || i4 == null) {
                             c.e(i5);
                         } else {
                             View view3 = c.b;
@@ -117,9 +117,13 @@ public final class e implements ImageLoader.ImageListener {
                                 roundedImageViewWithBorder.setVisibility(0);
                             }
                         }
-                        linearLayout3.setContentDescription(string);
+                        if (fwam.g()) {
+                            c.setContentDescription(string);
+                        } else {
+                            linearLayout3.setContentDescription(string);
+                        }
                     }
-                    if (!ftey.e()) {
+                    if (!fwam.e()) {
                         c.i();
                         m.a(linearLayout, linearLayout2, 0).start();
                     } else {
@@ -136,12 +140,12 @@ public final class e implements ImageLoader.ImageListener {
     public final void onErrorResponse(VolleyError volleyError) {
         String message = volleyError.getMessage();
         StringBuilder sb = new StringBuilder("onErrorResponse + request ");
-        dinv dinvVar = this.b;
-        sb.append(dinvVar.a);
+        dkzg dkzgVar = this.b;
+        sb.append(dkzgVar.a);
         sb.append(" ");
         sb.append(message);
         Log.e("NetworkImageLoader", sb.toString());
-        a(dinvVar, 13, 3, null);
+        a(dkzgVar, 13, 3, null);
     }
 
     @Override // com.android.volley.toolbox.ImageLoader.ImageListener
@@ -150,11 +154,11 @@ public final class e implements ImageLoader.ImageListener {
             return;
         }
         Set set = this.a;
-        dinv dinvVar = this.b;
-        String str = dinvVar.a;
+        dkzg dkzgVar = this.b;
+        String str = dkzgVar.a;
         if (set.contains(str)) {
             set.remove(str);
-            a(dinvVar, 0, 2, imageContainer.getBitmap());
+            a(dkzgVar, 0, 2, imageContainer.getBitmap());
         }
     }
 }

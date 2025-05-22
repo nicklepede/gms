@@ -4,87 +4,87 @@ import android.content.Intent;
 import android.net.Uri;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.backup.settings.component.PhotosPackageReplacedIntentOperation;
-import defpackage.ahwd;
-import defpackage.ahxo;
-import defpackage.ahxq;
-import defpackage.ahzs;
-import defpackage.aiaa;
-import defpackage.aiab;
-import defpackage.aiag;
-import defpackage.aiah;
-import defpackage.arxo;
-import defpackage.asmb;
-import defpackage.dvyz;
-import defpackage.dvza;
-import defpackage.dwaj;
-import defpackage.dwak;
-import defpackage.dwas;
-import defpackage.dwat;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fttm;
-import defpackage.ftxb;
-import defpackage.ftxd;
-import defpackage.ftxe;
-import defpackage.ftyg;
-import defpackage.furn;
-import defpackage.furo;
-import defpackage.fusb;
+import defpackage.ajwt;
+import defpackage.ajye;
+import defpackage.ajyg;
+import defpackage.akai;
+import defpackage.akaq;
+import defpackage.akar;
+import defpackage.akaw;
+import defpackage.akax;
+import defpackage.auad;
+import defpackage.aupv;
+import defpackage.dyla;
+import defpackage.dylb;
+import defpackage.dymk;
+import defpackage.dyml;
+import defpackage.dymt;
+import defpackage.dymu;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fwpk;
+import defpackage.fwsz;
+import defpackage.fwtb;
+import defpackage.fwtc;
+import defpackage.fwue;
+import defpackage.fxnl;
+import defpackage.fxnm;
+import defpackage.fxnz;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class PhotosPackageReplacedIntentOperation extends IntentOperation {
-    private final arxo a = ahwd.a("PhotosPackageReplacedIO");
-    private final eijr b = eijy.a(new eijr() { // from class: ajme
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(flog.a.a().u());
+    private final auad a = ajwt.a("PhotosPackageReplacedIO");
+    private final ekww b = ekxd.a(new ekww() { // from class: almw
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(fofq.a.lK().u());
         }
     });
-    private final eijr c = eijy.a(new eijr() { // from class: ajmf
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(flog.a.a().q());
+    private final ekww c = ekxd.a(new ekww() { // from class: almx
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(fofq.a.lK().q());
         }
     });
-    private final eijr d = eijy.a(new eijr() { // from class: ajmg
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Long.valueOf(flog.a.a().d());
+    private final ekww d = ekxd.a(new ekww() { // from class: almy
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Long.valueOf(fofq.a.lK().d());
         }
     });
-    private eijr e;
-    private eijr f;
-    private eijr g;
+    private ekww e;
+    private ekww f;
+    private ekww g;
 
-    public final aiah a(aiab aiabVar) {
-        aiah b = ((ahxq) this.e.a()).b(aiabVar);
+    public final akax a(akar akarVar) {
+        akax b = ((ajyg) this.e.lK()).b(akarVar);
         this.a.h("Call get backup status from Photos to trigger bit migration if migration condition is met, backupStatus=%s.", b);
         return b;
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        this.e = new eijr() { // from class: ajmh
-            @Override // defpackage.eijr
-            public final Object a() {
-                return ahxq.a(PhotosPackageReplacedIntentOperation.this);
+        this.e = new ekww() { // from class: almz
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return ajyg.a(PhotosPackageReplacedIntentOperation.this);
             }
         };
-        this.f = new eijr() { // from class: ajmi
-            @Override // defpackage.eijr
-            public final Object a() {
-                return ahxo.b(PhotosPackageReplacedIntentOperation.this);
+        this.f = new ekww() { // from class: alna
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return ajye.b(PhotosPackageReplacedIntentOperation.this);
             }
         };
-        this.g = new eijr() { // from class: ajmj
-            @Override // defpackage.eijr
-            public final Object a() {
-                return ahxn.a(PhotosPackageReplacedIntentOperation.this.getPackageManager());
+        this.g = new ekww() { // from class: alnb
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return ajyd.a(PhotosPackageReplacedIntentOperation.this.getPackageManager());
             }
         };
     }
@@ -92,8 +92,8 @@ public class PhotosPackageReplacedIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         boolean z;
-        ftxe ftxeVar;
-        if (!((Boolean) this.b.a()).booleanValue()) {
+        fwtc fwtcVar;
+        if (!((Boolean) this.b.lK()).booleanValue()) {
             this.a.j("Flag is disabled.", new Object[0]);
             return;
         }
@@ -102,67 +102,67 @@ public class PhotosPackageReplacedIntentOperation extends IntentOperation {
         if (data == null || action == null || !data.getSchemeSpecificPart().equals("com.google.android.apps.photos") || !action.equals("android.intent.action.PACKAGE_REPLACED")) {
             return;
         }
-        aiaa a = aiab.a();
+        akaq a = akar.a();
         a.c(5);
-        final aiab a2 = a.a();
-        if (((dvza) this.g.a()).c() != dvyz.STUB_APK) {
-            if (a(a2).a.equals(aiag.ERROR)) {
-                asmb asmbVar = new asmb(1, 10);
-                Callable callable = new Callable() { // from class: ajmd
+        final akar a2 = a.a();
+        if (((dylb) this.g.lK()).c() != dyla.STUB_APK) {
+            if (a(a2).a.equals(akaw.ERROR)) {
+                aupv aupvVar = new aupv(1, 10);
+                Callable callable = new Callable() { // from class: almv
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
                         return PhotosPackageReplacedIntentOperation.this.a(a2);
                     }
                 };
-                eijr eijrVar = this.d;
-                this.a.h("Scheduled get backup status task since last attempt is failed, task will run in milliseconds=%s, future=%s", eijrVar.a(), asmbVar.schedule(callable, ((Long) eijrVar.a()).longValue(), TimeUnit.MILLISECONDS));
+                ekww ekwwVar = this.d;
+                this.a.h("Scheduled get backup status task since last attempt is failed, task will run in milliseconds=%s, future=%s", ekwwVar.lK(), aupvVar.schedule(callable, ((Long) ekwwVar.lK()).longValue(), TimeUnit.MILLISECONDS));
                 return;
             }
             return;
         }
-        if (!((Boolean) this.c.a()).booleanValue()) {
+        if (!((Boolean) this.c.lK()).booleanValue()) {
             this.a.h("Clear backup settings in Restore flag is disabled.", new Object[0]);
             return;
         }
-        ahzs ahzsVar = (ahzs) ((ahxo) this.f.a()).a.j.a();
-        Long a3 = ahzsVar.b.a();
+        akai akaiVar = (akai) ((ajye) this.f.lK()).a.j.lK();
+        Long a3 = akaiVar.b.a();
         try {
-            dwas dwasVar = (dwas) ahzsVar.a.a();
-            dwaj dwajVar = dwaj.a;
-            fecj v = dwajVar.v();
+            dymt dymtVar = (dymt) akaiVar.a.lK();
+            dymk dymkVar = dymk.a;
+            fgrc v = dymkVar.v();
             if (!v.b.L()) {
                 v.U();
             }
-            dwaj dwajVar2 = (dwaj) v.b;
-            dwajVar2.c = 1;
-            dwajVar2.b |= 1;
-            dwaj dwajVar3 = (dwaj) v.Q();
-            fttm fttmVar = dwasVar.a;
-            ftxe ftxeVar2 = dwat.d;
-            if (ftxeVar2 == null) {
-                synchronized (dwat.class) {
-                    ftxe ftxeVar3 = dwat.d;
-                    if (ftxeVar3 == null) {
-                        ftxb a4 = ftxe.a();
-                        a4.c = ftxd.UNARY;
-                        a4.d = ftxe.c("com.google.android.libraries.restore.backup.photos.apiservice.PhotosBackupApiService", "ClearOptInBackupSettings");
+            dymk dymkVar2 = (dymk) v.b;
+            dymkVar2.c = 1;
+            dymkVar2.b |= 1;
+            dymk dymkVar3 = (dymk) v.Q();
+            fwpk fwpkVar = dymtVar.a;
+            fwtc fwtcVar2 = dymu.d;
+            if (fwtcVar2 == null) {
+                synchronized (dymu.class) {
+                    fwtc fwtcVar3 = dymu.d;
+                    if (fwtcVar3 == null) {
+                        fwsz a4 = fwtc.a();
+                        a4.c = fwtb.UNARY;
+                        a4.d = fwtc.c("com.google.android.libraries.restore.backup.photos.apiservice.PhotosBackupApiService", "ClearOptInBackupSettings");
                         a4.b();
-                        febw febwVar = furo.a;
-                        a4.a = new furn(dwajVar);
-                        a4.b = new furn(dwak.a);
-                        ftxeVar = a4.a();
-                        dwat.d = ftxeVar;
+                        fgqp fgqpVar = fxnm.a;
+                        a4.a = new fxnl(dymkVar);
+                        a4.b = new fxnl(dyml.a);
+                        fwtcVar = a4.a();
+                        dymu.d = fwtcVar;
                     } else {
-                        ftxeVar = ftxeVar3;
+                        fwtcVar = fwtcVar3;
                     }
                 }
-                ftxeVar2 = ftxeVar;
+                fwtcVar2 = fwtcVar;
             }
-            fusb.a(fttmVar.a(ftxeVar2, dwasVar.b), dwajVar3);
-            ahzsVar.b.g(16, a2, true, a3);
+            fxnz.a(fwpkVar.a(fwtcVar2, dymtVar.b), dymkVar3);
+            akaiVar.b.g(16, a2, true, a3);
             z = true;
-        } catch (ftyg unused) {
-            ahzsVar.b.f(16, a2, 5, a3);
+        } catch (fwue unused) {
+            akaiVar.b.f(16, a2, 5, a3);
             z = false;
         }
         this.a.h("Call clearTempBackupSettingsInRestore result, %s.", Boolean.valueOf(z));

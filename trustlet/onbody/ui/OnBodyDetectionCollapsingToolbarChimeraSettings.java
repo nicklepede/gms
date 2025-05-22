@@ -1,19 +1,19 @@
 package com.google.android.gms.trustlet.onbody.ui;
 
-import defpackage.dgms;
-import defpackage.dgug;
-import defpackage.ngn;
+import defpackage.dixx;
+import defpackage.djfm;
+import defpackage.ozo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class OnBodyDetectionCollapsingToolbarChimeraSettings extends dgms {
-    @Override // defpackage.dgmp
-    protected final ngn a() {
-        return new dgug();
+public class OnBodyDetectionCollapsingToolbarChimeraSettings extends dixx {
+    @Override // defpackage.dixu
+    protected final ozo a() {
+        return new djfm();
     }
 
-    @Override // defpackage.dgmp
-    protected final String c() {
+    @Override // defpackage.dixu
+    protected final String f() {
         return "OnbodyDetectionFragment";
     }
 }

@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
 import com.google.android.gms.chimera.modules.adsidentity.AppContextProvider;
-import defpackage.tdp;
-import defpackage.tec;
+import defpackage.uzp;
+import defpackage.vac;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AdServicesExtDataChimeraStorageService extends Service {
-    tec a;
+    vac a;
 
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
@@ -19,13 +19,13 @@ public final class AdServicesExtDataChimeraStorageService extends Service {
             return this.a.onBind(intent);
         } catch (RuntimeException e) {
             AppContextProvider.a();
-            tdp.b(tdp.a(currentTimeMillis, System.currentTimeMillis(), 3, 4));
+            uzp.b(uzp.a(currentTimeMillis, System.currentTimeMillis(), 3, 4));
             throw e;
         }
     }
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        this.a = new tec();
+        this.a = new vac();
     }
 }

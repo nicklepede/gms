@@ -3,22 +3,22 @@ package com.google.android.gms.wallet.analytics.events;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.difw;
-import defpackage.divi;
-import defpackage.divs;
-import defpackage.divt;
-import defpackage.ehmk;
-import defpackage.ehmp;
-import defpackage.emdb;
-import defpackage.emdc;
-import defpackage.feay;
-import defpackage.fecj;
-import defpackage.fecp;
+import defpackage.dkrh;
+import defpackage.dlgt;
+import defpackage.dlhd;
+import defpackage.dlhe;
+import defpackage.ejzq;
+import defpackage.ejzv;
+import defpackage.eoqp;
+import defpackage.eoqq;
+import defpackage.fgpr;
+import defpackage.fgrc;
+import defpackage.fgri;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class OrchestrationApiEvent extends WalletAnalyticsEvent implements divs {
-    public static final Parcelable.Creator CREATOR = new difw();
+public class OrchestrationApiEvent extends WalletAnalyticsEvent implements dlhd {
+    public static final Parcelable.Creator CREATOR = new dkrh();
     public int a;
     private String b;
     private long c;
@@ -29,62 +29,62 @@ public class OrchestrationApiEvent extends WalletAnalyticsEvent implements divs 
         this.m = str;
     }
 
-    public static void a(Context context, int i, ehmk ehmkVar, ehmp ehmpVar, String str) {
+    public static void a(Context context, int i, ejzq ejzqVar, ejzv ejzvVar, String str) {
         OrchestrationApiEvent orchestrationApiEvent = new OrchestrationApiEvent(str);
         orchestrationApiEvent.a = i;
-        if (ehmkVar != null) {
-            orchestrationApiEvent.c = ehmkVar.e;
-            orchestrationApiEvent.d = ehmkVar.g.M();
+        if (ejzqVar != null) {
+            orchestrationApiEvent.c = ejzqVar.e;
+            orchestrationApiEvent.d = ejzqVar.g.M();
         }
-        if (ehmpVar != null) {
-            orchestrationApiEvent.b = ehmpVar.h;
+        if (ejzvVar != null) {
+            orchestrationApiEvent.b = ejzvVar.h;
         }
-        divi.a(context, orchestrationApiEvent);
+        dlgt.a(context, orchestrationApiEvent);
     }
 
-    @Override // defpackage.divs
-    public final void b(Context context, divt divtVar, fecj fecjVar) {
-        fecj v = emdc.a.v();
+    @Override // defpackage.dlhd
+    public final void b(Context context, dlhe dlheVar, fgrc fgrcVar) {
+        fgrc v = eoqq.a.v();
         int i = this.a;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        emdc emdcVar = (emdc) fecpVar;
+        fgri fgriVar = v.b;
+        eoqq eoqqVar = (eoqq) fgriVar;
         int i2 = i - 1;
         if (i == 0) {
             throw null;
         }
-        emdcVar.c = i2;
-        emdcVar.b |= 1;
+        eoqqVar.c = i2;
+        eoqqVar.b |= 1;
         long j = this.c;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        emdc emdcVar2 = (emdc) fecpVar2;
-        emdcVar2.b |= 4;
-        emdcVar2.e = j;
+        fgri fgriVar2 = v.b;
+        eoqq eoqqVar2 = (eoqq) fgriVar2;
+        eoqqVar2.b |= 4;
+        eoqqVar2.e = j;
         String str = this.b;
         if (str != null) {
-            if (!fecpVar2.L()) {
+            if (!fgriVar2.L()) {
                 v.U();
             }
-            emdc emdcVar3 = (emdc) v.b;
-            emdcVar3.b |= 2;
-            emdcVar3.d = str;
+            eoqq eoqqVar3 = (eoqq) v.b;
+            eoqqVar3.b |= 2;
+            eoqqVar3.d = str;
         }
         byte[] bArr = this.d;
         if (bArr != null) {
-            feay w = feay.w(bArr);
+            fgpr w = fgpr.w(bArr);
             if (!v.b.L()) {
                 v.U();
             }
-            emdc emdcVar4 = (emdc) v.b;
-            emdcVar4.b |= 8;
-            emdcVar4.f = w;
+            eoqq eoqqVar4 = (eoqq) v.b;
+            eoqqVar4.b |= 8;
+            eoqqVar4.f = w;
         }
-        divtVar.a.add((emdc) v.Q());
+        dlheVar.a.add((eoqq) v.Q());
     }
 
     @Override // android.os.Parcelable
@@ -117,7 +117,7 @@ public class OrchestrationApiEvent extends WalletAnalyticsEvent implements divs 
     public OrchestrationApiEvent(Parcel parcel) {
         super(parcel);
         this.a = 1;
-        this.a = emdb.a(parcel.readInt());
+        this.a = eoqp.a(parcel.readInt());
         this.b = parcel.readString();
         this.c = parcel.readLong();
         this.d = parcel.createByteArray();

@@ -6,20 +6,20 @@ import android.text.TextUtils;
 import com.google.android.gms.auth.proximity.AttestationVerifier;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.acof;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.asnj;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.aeof;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.aurd;
+import defpackage.elgo;
+import defpackage.elpg;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SyncedCryptauthDevice extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new acof();
+    public static final Parcelable.Creator CREATOR = new aeof();
     public final byte[] a;
     public final String b;
     public final String c;
@@ -37,10 +37,10 @@ public class SyncedCryptauthDevice extends AbstractSafeParcelable {
     public final AttestationVerifier o;
 
     public SyncedCryptauthDevice(byte[] bArr, String str, String str2, String str3, boolean z, boolean z2, long j, boolean z3, String str4, boolean z4, boolean z5, List list, List list2, List list3, AttestationVerifier attestationVerifier) {
-        eitj i;
-        arwm.s(bArr);
+        elgo i;
+        atzb.s(bArr);
         this.a = bArr;
-        arwm.q(str);
+        atzb.q(str);
         this.b = str;
         this.c = str2 == null ? "" : str2;
         this.d = str3;
@@ -54,10 +54,10 @@ public class SyncedCryptauthDevice extends AbstractSafeParcelable {
         this.l = list;
         this.m = list2;
         if (list3 == null) {
-            int i2 = eitj.d;
-            i = ejcb.a;
+            int i2 = elgo.d;
+            i = elpg.a;
         } else {
-            i = eitj.i(list3);
+            i = elgo.i(list3);
         }
         this.n = i;
         this.o = attestationVerifier;
@@ -67,8 +67,8 @@ public class SyncedCryptauthDevice extends AbstractSafeParcelable {
         return a.al(list, "[ ", ", ", " ]");
     }
 
-    public final eitj a() {
-        return eitj.i(this.n);
+    public final elgo a() {
+        return elgo.i(this.n);
     }
 
     public final boolean equals(Object obj) {
@@ -88,7 +88,7 @@ public class SyncedCryptauthDevice extends AbstractSafeParcelable {
             if (list.size() == list2.size() && list.containsAll(list2)) {
                 List list3 = this.l;
                 List list4 = syncedCryptauthDevice.l;
-                if (list3.size() == list4.size() && this.n.equals(syncedCryptauthDevice.n) && list3.containsAll(list4) && arwb.b(this.o, syncedCryptauthDevice.o)) {
+                if (list3.size() == list4.size() && this.n.equals(syncedCryptauthDevice.n) && list3.containsAll(list4) && atyq.b(this.o, syncedCryptauthDevice.o)) {
                     return true;
                 }
             }
@@ -101,28 +101,28 @@ public class SyncedCryptauthDevice extends AbstractSafeParcelable {
     }
 
     public final String toString() {
-        return String.format("SyncedCryptauthDevice { mPublicKey='%s', mAccountId=%s, mName='%s', mIsUnlockable=%b, mIsUnlockKey=%b, mIsMobileHotspotSupported=%b, mBtMacAddress='%s', mDeviceType=%s, mIsPixelPhone=%s, isArcPlusPlus=%s, supportedFeatures=%s, enabledFeatures=%s}", asnj.b(this.a), this.b, this.c, Boolean.valueOf(this.f), Boolean.valueOf(this.e), Boolean.valueOf(this.h), this.d, this.i, Boolean.valueOf(this.j), Boolean.valueOf(this.k), b(this.l), b(this.m));
+        return String.format("SyncedCryptauthDevice { mPublicKey='%s', mAccountId=%s, mName='%s', mIsUnlockable=%b, mIsUnlockKey=%b, mIsMobileHotspotSupported=%b, mBtMacAddress='%s', mDeviceType=%s, mIsPixelPhone=%s, isArcPlusPlus=%s, supportedFeatures=%s, enabledFeatures=%s}", aurd.b(this.a), this.b, this.c, Boolean.valueOf(this.f), Boolean.valueOf(this.e), Boolean.valueOf(this.h), this.d, this.i, Boolean.valueOf(this.j), Boolean.valueOf(this.k), b(this.l), b(this.m));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         byte[] bArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, bArr, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.e(parcel, 5, this.e);
-        arxc.e(parcel, 6, this.f);
-        arxc.q(parcel, 7, this.g);
-        arxc.e(parcel, 8, this.h);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.e(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.x(parcel, 12, this.l, false);
-        arxc.x(parcel, 13, this.m, false);
-        arxc.y(parcel, 14, this.n, false);
-        arxc.t(parcel, 15, this.o, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, bArr, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.e(parcel, 5, this.e);
+        atzr.e(parcel, 6, this.f);
+        atzr.q(parcel, 7, this.g);
+        atzr.e(parcel, 8, this.h);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.e(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.x(parcel, 12, this.l, false);
+        atzr.x(parcel, 13, this.m, false);
+        atzr.y(parcel, 14, this.n, false);
+        atzr.t(parcel, 15, this.o, i, false);
+        atzr.c(parcel, a);
     }
 }

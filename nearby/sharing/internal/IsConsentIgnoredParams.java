@@ -6,20 +6,20 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmvx;
-import defpackage.cmvz;
-import defpackage.cnaf;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpef;
+import defpackage.cpeh;
+import defpackage.cpin;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class IsConsentIgnoredParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cnaf();
+    public static final Parcelable.Creator CREATOR = new cpin();
     public Account a;
     public int b;
-    public cmvz c;
+    public cpeh c;
 
     private IsConsentIgnoredParams() {
     }
@@ -30,7 +30,7 @@ public final class IsConsentIgnoredParams extends AbstractSafeParcelable {
         }
         if (obj instanceof IsConsentIgnoredParams) {
             IsConsentIgnoredParams isConsentIgnoredParams = (IsConsentIgnoredParams) obj;
-            if (arwb.b(this.a, isConsentIgnoredParams.a) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(isConsentIgnoredParams.b)) && arwb.b(this.c, isConsentIgnoredParams.c)) {
+            if (atyq.b(this.a, isConsentIgnoredParams.a) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(isConsentIgnoredParams.b)) && atyq.b(this.c, isConsentIgnoredParams.c)) {
                 return true;
             }
         }
@@ -43,23 +43,23 @@ public final class IsConsentIgnoredParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.D(parcel, 3, this.c.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.D(parcel, 3, this.c.asBinder());
+        atzr.c(parcel, a);
     }
 
     public IsConsentIgnoredParams(Account account, int i, IBinder iBinder) {
-        cmvz cmvxVar;
+        cpeh cpefVar;
         if (iBinder == null) {
-            cmvxVar = null;
+            cpefVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IBooleanResultListener");
-            cmvxVar = queryLocalInterface instanceof cmvz ? (cmvz) queryLocalInterface : new cmvx(iBinder);
+            cpefVar = queryLocalInterface instanceof cpeh ? (cpeh) queryLocalInterface : new cpef(iBinder);
         }
         this.a = account;
         this.b = i;
-        this.c = cmvxVar;
+        this.c = cpefVar;
     }
 }

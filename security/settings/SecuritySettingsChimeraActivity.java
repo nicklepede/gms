@@ -4,30 +4,30 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import com.google.android.gms.R;
 import com.google.android.gms.mdm.settings.AdmSettingsChimeraActivity;
-import defpackage.asin;
-import defpackage.assk;
-import defpackage.assn;
-import defpackage.assp;
-import defpackage.ccxq;
-import defpackage.cyry;
-import defpackage.cywk;
-import defpackage.cywm;
-import defpackage.cywy;
-import defpackage.eits;
+import defpackage.aumh;
+import defpackage.auwe;
+import defpackage.auwh;
+import defpackage.auwj;
+import defpackage.cfgo;
+import defpackage.dbbw;
+import defpackage.dbgi;
+import defpackage.dbgk;
+import defpackage.dbgw;
+import defpackage.elgx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class SecuritySettingsChimeraActivity extends cywk {
-    public assp j;
+public class SecuritySettingsChimeraActivity extends dbgi {
+    public auwj j;
     private boolean k;
 
-    @Override // defpackage.anxn, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.apzf, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
-        hy().o(true);
+        hO().o(true);
         super.onCreate(bundle);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() == 16908332) {
             onBackPressed();
@@ -36,38 +36,38 @@ public class SecuritySettingsChimeraActivity extends cywk {
         if (menuItem.getItemId() != R.id.security_apps_help) {
             return super.onOptionsItemSelected(menuItem);
         }
-        l(eits.m("isMdmVisible", String.valueOf(this.k), "isVerifyAppsVisible", "true"), asin.a());
+        l(elgx.m("isMdmVisible", String.valueOf(this.k), "isVerifyAppsVisible", "true"), aumh.a());
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
         if (this.j == null) {
             return;
         }
-        new cywm(this).start();
+        new dbgk(this).start();
     }
 
-    @Override // defpackage.anxn
-    protected final void q(assn assnVar) {
-        assk H = assnVar.H(R.string.common_mdm_feature_name);
-        boolean d = new ccxq(this).d();
+    @Override // defpackage.apzf
+    protected final void q(auwh auwhVar) {
+        auwe H = auwhVar.H(R.string.common_mdm_feature_name);
+        boolean d = new cfgo(this).d();
         this.k = d;
         if (d) {
-            assp asspVar = new assp(this);
-            asspVar.r(R.string.common_mdm_feature_name);
-            asspVar.p(R.string.mdm_settings_locate_title);
-            asspVar.m(AdmSettingsChimeraActivity.k(this));
-            H.k(asspVar);
+            auwj auwjVar = new auwj(this);
+            auwjVar.r(R.string.common_mdm_feature_name);
+            auwjVar.p(R.string.mdm_settings_locate_title);
+            auwjVar.m(AdmSettingsChimeraActivity.k(this));
+            H.k(auwjVar);
         }
-        assk H2 = assnVar.H(R.string.security_status_section_title);
+        auwe H2 = auwhVar.H(R.string.security_status_section_title);
         int i = VerifyAppsSettingsChimeraActivity.x;
-        new cywy(this).start();
-        assp asspVar2 = new assp(this);
-        this.j = asspVar2;
-        asspVar2.r(R.string.google_play_protect_title);
-        this.j.m(cyry.n(this, 2));
+        new dbgw(this).start();
+        auwj auwjVar2 = new auwj(this);
+        this.j = auwjVar2;
+        auwjVar2.r(R.string.google_play_protect_title);
+        this.j.m(dbbw.n(this, 2));
         H2.k(this.j);
     }
 }

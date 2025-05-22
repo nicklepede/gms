@@ -5,15 +5,15 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.trk;
+import defpackage.atzr;
+import defpackage.vnk;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public class GlobalSearchApplicationInfo extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new trk();
+    public static final Parcelable.Creator CREATOR = new vnk();
     public final String a;
     public final String b;
     public final int c;
@@ -58,15 +58,15 @@ public class GlobalSearchApplicationInfo extends AbstractSafeParcelable implemen
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.c);
-        arxc.o(parcel, 3, this.d);
-        arxc.o(parcel, 4, this.e);
-        arxc.v(parcel, 5, this.f, false);
-        arxc.v(parcel, 6, this.g, false);
-        arxc.v(parcel, 7, this.h, false);
-        arxc.v(parcel, 8, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.c);
+        atzr.o(parcel, 3, this.d);
+        atzr.o(parcel, 4, this.e);
+        atzr.v(parcel, 5, this.f, false);
+        atzr.v(parcel, 6, this.g, false);
+        atzr.v(parcel, 7, this.h, false);
+        atzr.v(parcel, 8, this.b, false);
+        atzr.c(parcel, a);
     }
 }

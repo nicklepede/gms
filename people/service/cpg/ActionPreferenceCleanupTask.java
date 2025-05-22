@@ -1,62 +1,63 @@
 package com.google.android.gms.people.service.cpg;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byjl;
-import defpackage.byko;
-import defpackage.ctkm;
-import defpackage.eijm;
-import defpackage.ejhf;
-import defpackage.ekwp;
-import defpackage.ekwt;
-import defpackage.febp;
-import defpackage.fegu;
-import defpackage.fqzi;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.casd;
+import defpackage.catg;
+import defpackage.cvts;
+import defpackage.ekwr;
+import defpackage.eluo;
+import defpackage.enkb;
+import defpackage.enkf;
+import defpackage.fgqi;
+import defpackage.fgvn;
+import defpackage.fttd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ActionPreferenceCleanupTask extends GmsTaskBoundService {
-    private static final asot a = asot.b("ActionPreferenceCleanup", asej.PEOPLE);
+    private static final ausn a = ausn.b("ActionPreferenceCleanup", auid.PEOPLE);
 
-    public static void d(byjl byjlVar) {
-        asot asotVar = a;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 8366)).x("Initializing the service.");
-        if (!fqzi.a.a().A() || !fqzi.h()) {
-            ((ejhf) ((ejhf) asotVar.h()).ah((char) 8365)).x("Canceling the service.");
-            byjlVar.d("ActionPreferenceCleanupTask.Periodic", ActionPreferenceCleanupTask.class.getName());
+    public static void d(casd casdVar) {
+        ausn ausnVar = a;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 8319)).x("Initializing the service.");
+        fttd fttdVar = fttd.a;
+        if (!fttdVar.lK().A() || !fttd.h()) {
+            ((eluo) ((eluo) ausnVar.h()).ai((char) 8318)).x("Canceling the service.");
+            casdVar.d("ActionPreferenceCleanupTask.Periodic", ActionPreferenceCleanupTask.class.getName());
             return;
         }
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 8367)).x("Scheduling the service.");
-        byko bykoVar = new byko();
-        bykoVar.w(ActionPreferenceCleanupTask.class.getName());
-        bykoVar.t("ActionPreferenceCleanupTask.Periodic");
-        bykoVar.v(2);
-        bykoVar.l(false);
-        bykoVar.m((int) fqzi.a.a().f());
-        byjlVar.f(bykoVar.b());
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 8320)).x("Scheduling the service.");
+        catg catgVar = new catg();
+        catgVar.w(ActionPreferenceCleanupTask.class.getName());
+        catgVar.t("ActionPreferenceCleanupTask.Periodic");
+        catgVar.v(2);
+        catgVar.l(false);
+        catgVar.m((int) fttdVar.lK().f());
+        casdVar.f(catgVar.b());
     }
 
-    static void e(ekwp ekwpVar, int i, eijm eijmVar) {
-        if (!ekwpVar.b.L()) {
-            ekwpVar.U();
+    static void e(enkb enkbVar, int i, ekwr ekwrVar) {
+        if (!enkbVar.b.L()) {
+            enkbVar.U();
         }
-        ekwt ekwtVar = (ekwt) ekwpVar.b;
-        ekwt ekwtVar2 = ekwt.a;
-        ekwtVar.d = i - 1;
-        ekwtVar.b |= 2;
-        if (eijmVar.a) {
-            eijmVar.g();
-            febp a2 = fegu.a(eijmVar.d());
-            if (!ekwpVar.b.L()) {
-                ekwpVar.U();
+        enkf enkfVar = (enkf) enkbVar.b;
+        enkf enkfVar2 = enkf.a;
+        enkfVar.d = i - 1;
+        enkfVar.b |= 2;
+        if (ekwrVar.a) {
+            ekwrVar.g();
+            fgqi a2 = fgvn.a(ekwrVar.d());
+            if (!enkbVar.b.L()) {
+                enkbVar.U();
             }
-            ekwt ekwtVar3 = (ekwt) ekwpVar.b;
+            enkf enkfVar3 = (enkf) enkbVar.b;
             a2.getClass();
-            ekwtVar3.k = a2;
-            ekwtVar3.b |= 64;
+            enkfVar3.k = a2;
+            enkfVar3.b |= 64;
         }
-        ctkm.a().c((ekwt) ekwpVar.Q());
+        cvts.a().c((enkf) enkbVar.Q());
     }
 
     /* JADX WARN: Removed duplicated region for block: B:29:0x02cf A[Catch: ExecutionException -> 0x02e0, InterruptedException -> 0x0306, TRY_ENTER, TRY_LEAVE, TryCatch #8 {InterruptedException -> 0x0306, ExecutionException -> 0x02e0, blocks: (B:11:0x007f, B:29:0x02cf, B:124:0x02df, B:123:0x02dc), top: B:10:0x007f }] */
@@ -70,11 +71,11 @@ public final class ActionPreferenceCleanupTask extends GmsTaskBoundService {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final int a(defpackage.byln r20) {
+    public final int a(defpackage.cauf r20) {
         /*
             Method dump skipped, instructions count: 876
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.people.service.cpg.ActionPreferenceCleanupTask.a(byln):int");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.people.service.cpg.ActionPreferenceCleanupTask.a(cauf):int");
     }
 }

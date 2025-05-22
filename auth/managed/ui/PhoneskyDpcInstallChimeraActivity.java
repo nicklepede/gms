@@ -12,90 +12,87 @@ import com.google.android.gms.R;
 import com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallChimeraActivity;
 import com.google.android.setupdesign.GlifLayout;
 import defpackage.a;
-import defpackage.abql;
-import defpackage.abqn;
-import defpackage.abqu;
-import defpackage.abqv;
-import defpackage.abqy;
-import defpackage.abvw;
-import defpackage.abvx;
-import defpackage.abvy;
-import defpackage.abvz;
-import defpackage.abwj;
-import defpackage.abwk;
-import defpackage.abwm;
-import defpackage.abwq;
-import defpackage.abxc;
-import defpackage.abxl;
-import defpackage.abxo;
-import defpackage.abxp;
-import defpackage.abxq;
-import defpackage.abxr;
-import defpackage.abyb;
-import defpackage.abzu;
-import defpackage.abzz;
-import defpackage.acab;
-import defpackage.acac;
-import defpackage.acad;
-import defpackage.acag;
-import defpackage.acai;
-import defpackage.acak;
-import defpackage.acam;
-import defpackage.acao;
-import defpackage.acas;
-import defpackage.acau;
-import defpackage.acav;
-import defpackage.acbb;
-import defpackage.acbd;
-import defpackage.arkc;
-import defpackage.arkf;
-import defpackage.arsm;
-import defpackage.asng;
-import defpackage.assw;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.byhr;
-import defpackage.dtjk;
-import defpackage.edeq;
-import defpackage.edgk;
-import defpackage.edgl;
-import defpackage.edjc;
-import defpackage.edjs;
-import defpackage.eijj;
-import defpackage.eijr;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.eits;
-import defpackage.ejcb;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fegu;
-import defpackage.fiwo;
-import defpackage.fkzn;
-import defpackage.fkzo;
-import defpackage.fkzs;
-import defpackage.flad;
-import defpackage.flag;
-import defpackage.flba;
-import defpackage.flbg;
-import defpackage.flbn;
-import defpackage.fuvs;
-import defpackage.fuyy;
-import defpackage.fvau;
-import defpackage.fvbo;
-import defpackage.fvie;
-import defpackage.fvug;
-import defpackage.jpd;
-import defpackage.jra;
-import defpackage.jrd;
-import defpackage.jrh;
-import defpackage.jth;
-import defpackage.jti;
-import defpackage.jtu;
-import defpackage.myu;
-import defpackage.myx;
-import defpackage.ndh;
+import defpackage.adql;
+import defpackage.adqn;
+import defpackage.adqu;
+import defpackage.adqv;
+import defpackage.adqy;
+import defpackage.advw;
+import defpackage.advx;
+import defpackage.advy;
+import defpackage.advz;
+import defpackage.adwj;
+import defpackage.adwk;
+import defpackage.adwm;
+import defpackage.adwq;
+import defpackage.adxc;
+import defpackage.adxl;
+import defpackage.adxo;
+import defpackage.adxp;
+import defpackage.adxq;
+import defpackage.adxr;
+import defpackage.adyb;
+import defpackage.adzu;
+import defpackage.adzz;
+import defpackage.aeab;
+import defpackage.aeac;
+import defpackage.aead;
+import defpackage.aeag;
+import defpackage.aeai;
+import defpackage.aeak;
+import defpackage.aeam;
+import defpackage.aeao;
+import defpackage.aeas;
+import defpackage.aeau;
+import defpackage.aeav;
+import defpackage.aebb;
+import defpackage.aebd;
+import defpackage.atmr;
+import defpackage.atmu;
+import defpackage.atvb;
+import defpackage.aura;
+import defpackage.auwq;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.caqj;
+import defpackage.dvtw;
+import defpackage.efrl;
+import defpackage.eftf;
+import defpackage.eftg;
+import defpackage.efvx;
+import defpackage.efwn;
+import defpackage.ekwo;
+import defpackage.ekww;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elgx;
+import defpackage.elpg;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.fgvn;
+import defpackage.flml;
+import defpackage.fnqv;
+import defpackage.fnqw;
+import defpackage.fnra;
+import defpackage.fnrl;
+import defpackage.fnro;
+import defpackage.fnsi;
+import defpackage.fnso;
+import defpackage.fnsv;
+import defpackage.fxrq;
+import defpackage.fxws;
+import defpackage.fxxm;
+import defpackage.fyqe;
+import defpackage.jvs;
+import defpackage.jxp;
+import defpackage.jxs;
+import defpackage.jxw;
+import defpackage.jzw;
+import defpackage.jzx;
+import defpackage.kaj;
+import defpackage.orf;
+import defpackage.ori;
+import defpackage.ovv;
 import j$.time.Duration;
 import j$.time.Instant;
 import j$.util.function.Consumer$CC;
@@ -107,63 +104,63 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
+public class PhoneskyDpcInstallChimeraActivity extends adyb implements jzw {
     public static final /* synthetic */ int p = 0;
-    private static final Map r = eits.q(3, new abwj(1, 5), 6, new abwj(1, 9), 7, new abwj(2, 9), 2, new abwj(2, 6), 4, new abwj(3, 7), 5, new abwj(4, 8));
-    public abxl h;
-    public abxr i;
-    public acbd j;
+    private static final Map r = elgx.q(3, new adwj(1, 5), 6, new adwj(1, 9), 7, new adwj(2, 9), 2, new adwj(2, 6), 4, new adwj(3, 7), 5, new adwj(4, 8));
+    public adxl h;
+    public adxr i;
+    public aebd j;
     public String k;
-    public arkf l;
-    public fiwo m;
-    public myx n;
-    public bqqa o;
+    public atmu l;
+    public flml m;
+    public ori n;
+    public bsxr o;
 
     public static Intent k(Context context, String str, boolean z, Bundle bundle) {
         return new Intent().setClassName(context, "com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallActivity").putExtra("dpc_package_name", str).putExtra("hide_back_button", z).putExtras(bundle);
     }
 
     public static boolean q(Context context) {
-        return new assw(context).f("com.android.vending", 0).versionCode >= 80770000;
+        return new auwq(context).f("com.android.vending", 0).versionCode >= 80770000;
     }
 
-    public static final acad v(Bundle bundle) {
+    public static final aead v(Bundle bundle) {
         if (bundle != null) {
-            return acab.a;
+            return aeab.a;
         }
         Log.i("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] Device policy management role holder updater aborting, because this device is below T.");
-        return new acac(0, new Intent().putExtra("intentionally_canceled", true));
+        return new aeac(0, new Intent().putExtra("intentionally_canceled", true));
     }
 
     private final void z() {
-        arkf f = arkf.f(this, arkc.i(y()) ? flad.e() ? R.layout.phonesky_dpc_install_activity_glif_v2 : R.layout.phonesky_dpc_install_activity_glif : R.layout.phonesky_dpc_install_activity);
+        atmu f = atmu.f(this, atmr.i(y()) ? fnrl.d() ? R.layout.phonesky_dpc_install_activity_glif_v2 : R.layout.phonesky_dpc_install_activity_glif : R.layout.phonesky_dpc_install_activity);
         this.l = f;
-        arkc.e(f.a());
+        atmr.e(f.a());
         this.l.g();
         this.l.d(false);
         if (getIntent().getBooleanExtra("hide_back_button", false)) {
             this.l.b(false);
-            edgk.f(getWindow(), false);
+            eftf.f(getWindow(), false);
         }
         setContentView(this.l.a());
         this.l.c(getText(R.string.auth_device_management_download_progress));
         this.l.j();
-        if (flad.d() && (this.l.a() instanceof GlifLayout)) {
+        if (fnrl.c() && (this.l.a() instanceof GlifLayout)) {
             GlifLayout glifLayout = (GlifLayout) this.l.a();
-            abzz.a(glifLayout);
+            adzz.a(glifLayout);
             glifLayout.F(R.string.loading_description_text);
         }
     }
 
-    @Override // defpackage.jth
-    public final jtu a(int i, Bundle bundle) {
-        return new abwq(this, this.k);
+    @Override // defpackage.jzw
+    public final kaj a(int i, Bundle bundle) {
+        return new adwq(this, this.k);
     }
 
-    @Override // defpackage.jth
-    public final /* bridge */ /* synthetic */ void b(jtu jtuVar, Object obj) {
+    @Override // defpackage.jzw
+    public final /* bridge */ /* synthetic */ void b(kaj kajVar, Object obj) {
         Integer num = (Integer) obj;
         if (num.intValue() < 0) {
             switch (num.intValue()) {
@@ -189,28 +186,24 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
         }
     }
 
-    @Override // defpackage.qfn, defpackage.jnu
-    public final jrd getDefaultViewModelProviderFactory() {
-        return new jra(getApplication());
-    }
-
-    @Override // defpackage.arjn
-    protected final void gu(String str, boolean z) {
-        if (flad.c()) {
-            arkc.g(this);
-        } else {
-            arkc.f(this, str);
-        }
-        if (flad.e()) {
-            int i = edjs.a;
-            if (edeq.w(this)) {
-                setTheme(edjs.a(this));
+    @Override // defpackage.atmc
+    protected final void gJ(String str, boolean z) {
+        atmr.g(this);
+        if (fnrl.d()) {
+            int i = efwn.a;
+            if (efrl.w(this)) {
+                setTheme(efwn.a(this));
             }
         }
     }
 
+    @Override // defpackage.ryr, defpackage.juj
+    public final jxs getDefaultViewModelProviderFactory() {
+        return new jxp(getApplication());
+    }
+
     public final Intent j() {
-        if (!arsm.e(this, "auth_managed_dpmrh_fallback_to_aosp_on_role_holder_update_failed", false)) {
+        if (!atvb.e(this, "auth_managed_dpmrh_fallback_to_aosp_on_role_holder_update_failed", false)) {
             return null;
         }
         Log.i("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] Setting UPDATE_FAILURE_STRATEGY as AOSP provisioning.");
@@ -223,7 +216,7 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
 
     /* JADX WARN: Code restructure failed: missing block: B:44:0x0098, code lost:
     
-        if (defpackage.asng.d(r17, "com.google.android.apps.work.clouddpc") > r17.h.k) goto L33;
+        if (defpackage.aura.d(r17, "com.google.android.apps.work.clouddpc") > r17.h.k) goto L33;
      */
     /* JADX WARN: Removed duplicated region for block: B:12:0x00b0  */
     /* JADX WARN: Removed duplicated region for block: B:15:0x00e5  */
@@ -242,124 +235,125 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
     }
 
     public final void n(Consumer consumer) {
-        abvz abvwVar;
-        abvw abvwVar2;
+        advz advwVar;
+        advw advwVar2;
         if (!q(this) || TextUtils.isEmpty(this.k)) {
-            consumer.q(acag.g);
+            consumer.u(aeag.g);
             l(2);
             return;
         }
         z();
-        if (!fkzs.e() || !this.k.equals("com.google.android.apps.work.clouddpc")) {
+        if (!fnra.e() || !this.k.equals("com.google.android.apps.work.clouddpc")) {
             if (!s(this.k)) {
-                jti.a(this).c(0, null, fkzs.h() ? new abwk(this, consumer) : this);
+                jzx.a(this).c(0, null, fnra.h() ? new adwk(this, consumer) : this);
                 return;
             } else {
-                consumer.q(acag.d);
+                consumer.u(aeag.d);
                 l(-1);
                 return;
             }
         }
         try {
             PackageInfo packageInfo = getPackageManager().getPackageInfo("com.google.android.apps.work.clouddpc", 0);
-            ArrayList arrayList = new ArrayList(asng.ac(this, "com.google.android.apps.work.clouddpc"));
-            arrayList.retainAll(flag.a.a().b().b);
+            ArrayList arrayList = new ArrayList(aura.ac(this, "com.google.android.apps.work.clouddpc"));
+            fnro fnroVar = fnro.a;
+            arrayList.retainAll(fnroVar.lK().b().b);
             if (arrayList.isEmpty()) {
-                abvwVar = abvx.a;
+                advwVar = advx.a;
             } else {
-                if (flag.a.a().e()) {
+                if (fnroVar.lK().e()) {
                     if (packageInfo.versionCode == getPackageManager().getPackageInfo("com.google.android.apps.work.clouddpc", 2097152).versionCode) {
-                        abvwVar2 = new abvw(packageInfo.versionCode);
-                        abvwVar = abvwVar2;
+                        advwVar2 = new advw(packageInfo.versionCode);
+                        advwVar = advwVar2;
                     }
                 }
-                Duration c = fegu.c(flag.a.a().a());
+                Duration c = fgvn.c(fnro.a.lK().a());
                 if (Build.VERSION.SDK_INT < 26 || !Instant.now().minus(c).isBefore(Instant.ofEpochMilli(packageInfo.lastUpdateTime))) {
-                    abvwVar2 = new abvw(packageInfo.versionCode);
-                    abvwVar = abvwVar2;
+                    advwVar2 = new advw(packageInfo.versionCode);
+                    advwVar = advwVar2;
                 } else {
-                    abvwVar = abvy.a;
+                    advwVar = advy.a;
                 }
             }
         } catch (PackageManager.NameNotFoundException unused) {
-            abvwVar = new abvw(0);
+            advwVar = new advw(0);
         }
-        if (abvwVar instanceof abvw) {
-            abxl abxlVar = this.h;
-            abxlVar.k = ((abvw) abvwVar).a;
-            acbb.b(abxlVar.j);
-            jti.a(this).c(0, null, fkzs.h() ? new abwk(this, consumer) : this);
+        if (advwVar instanceof advw) {
+            adxl adxlVar = this.h;
+            adxlVar.k = ((advw) advwVar).a;
+            aebb.b(adxlVar.j);
+            jzx.a(this).c(0, null, fnra.h() ? new adwk(this, consumer) : this);
             return;
         }
-        abzu.a(this).e(new acau(acav.a, abvwVar.b, null, false));
+        adzu.a(this).e(new aeau(aeav.a, advwVar.b, null, false));
         setResult(-1, null);
         finish();
-        if (fkzo.f()) {
-            edjc.e(getContainerActivity(), 6);
+        if (fnqw.f()) {
+            efvx.e(getContainerActivity(), 6);
         }
-        consumer.q(acag.b);
+        consumer.u(aeag.b);
     }
 
     public final void o() {
-        eitj g;
-        String d = arsm.d(this, "auth_managed_dpmrh_phonesky_update_conditions", "0,0");
+        elgo g;
+        String d = atvb.d(this, "auth_managed_dpmrh_phonesky_update_conditions", "0,0");
         if (d == null) {
-            g = eitj.m(0, 0);
+            g = elgo.m(0, 0);
         } else {
-            int i = eitj.d;
-            eite eiteVar = new eite();
-            Iterator it = eijj.g(",").i().n(d).iterator();
+            int i = elgo.d;
+            elgj elgjVar = new elgj();
+            Iterator it = ekwo.g(",").i().n(d).iterator();
             while (it.hasNext()) {
                 try {
-                    eiteVar.i(Integer.valueOf(Integer.parseInt((String) it.next())));
+                    elgjVar.i(Integer.valueOf(Integer.parseInt((String) it.next())));
                 } catch (NumberFormatException unused) {
-                    g = eitj.m(0, 0);
+                    g = elgo.m(0, 0);
                 }
             }
-            g = eiteVar.g();
+            g = elgjVar.g();
         }
-        int i2 = ((ejcb) g).c;
+        int i2 = ((elpg) g).c;
         if (i2 < 3) {
             Log.i("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] Does not update Phonesky because conditions would not match");
         } else {
             int intValue = ((Integer) g.get(0)).intValue();
             int intValue2 = ((Integer) g.get(1)).intValue();
-            int a = abwm.a(this);
+            int a = adwm.a(this);
             if (intValue >= 0 && a < intValue) {
                 Log.i("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] Does not update Phonesky because Phonesky version is smaller than lower bound.");
             } else if (intValue2 >= 0 && a >= intValue2) {
                 Log.i("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] Does not update Phonesky because Phonesky version is larger than upper bound.");
-            } else if (eitj.i(g.subList(2, i2)).contains(Integer.valueOf(getIntent().getIntExtra("android.app.extra.PROVISIONING_TRIGGER", 0)))) {
+            } else if (elgo.i(g.subList(2, i2)).contains(Integer.valueOf(getIntent().getIntExtra("android.app.extra.PROVISIONING_TRIGGER", 0)))) {
                 Log.i("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] Update Phonesky");
-                acbb.b(this.h.h);
-                abzu.a(this).c(acas.a(acao.a, this.j));
-                final abxl abxlVar = this.h;
-                if (flbn.g()) {
-                    ndh.a(abqv.d, fuvs.a, new fvau() { // from class: abwt
-                        @Override // defpackage.fvau
+                aebb.b(this.h.h);
+                adzu.a(this).c(aeas.a(aeao.a, this.j));
+                final adxl adxlVar = this.h;
+                if (fnsv.g()) {
+                    ovv.a(adqv.d, fxrq.a, new fxws() { // from class: adwt
+                        @Override // defpackage.fxws
                         public final Object a(Object obj, Object obj2) {
-                            final ndg ndgVar = (ndg) obj2;
-                            abxl.this.e(new Consumer() { // from class: abwr
+                            final ovu ovuVar = (ovu) obj2;
+                            adxl.this.e(new Consumer() { // from class: adwr
                                 @Override // java.util.function.Consumer
                                 /* renamed from: accept */
-                                public final void q(Object obj3) {
-                                    acag acagVar = (acag) obj3;
-                                    ndg.this.a(new abqt("com.android.vending", acagVar), new ndk(acagVar));
+                                public final void u(Object obj3) {
+                                    aeag aeagVar = (aeag) obj3;
+                                    ovu.this.a(new adqt("com.android.vending", aeagVar), new owk(aeagVar));
                                 }
 
                                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
                                     return Consumer$CC.$default$andThen(this, consumer);
                                 }
                             });
-                            return acag.a;
+                            return aeag.a;
                         }
                     });
                     return;
                 } else {
-                    abxlVar.e(new Consumer() { // from class: abwu
+                    adxlVar.e(new Consumer() { // from class: adwu
                         @Override // java.util.function.Consumer
                         /* renamed from: accept */
-                        public final void q(Object obj) {
+                        public final void u(Object obj) {
                         }
 
                         public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -371,54 +365,53 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
             }
         }
         Log.i("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] Update DPMRH");
-        acbb.b(this.h.i);
-        abzu.a(this).c(acas.a(acak.a, this.j));
+        aebb.b(this.h.i);
+        adzu.a(this).c(aeas.a(aeak.a, this.j));
         this.h.b(this.k);
     }
 
-    @Override // defpackage.abyb, defpackage.arjn, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.adyb, defpackage.atmc, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(final Bundle bundle) {
-        enss b;
         super.onCreate(bundle);
-        if (fkzn.e()) {
-            ((dtjk) this.m.a()).a();
+        if (fnqv.e()) {
+            ((dvtw) this.m.a()).a();
         }
-        if (flba.c()) {
-            new abqu().n(getContainerActivity(), this.f, getIntent());
+        if (fnsi.c()) {
+            new adqu().n(getContainerActivity(), this.f, getIntent());
         }
-        this.h = (abxl) new jrh(this, new abxc(getApplication())).a(abxl.class);
-        this.i = (abxr) new jrh(this, new abxp(getApplication())).a(abxr.class);
-        eijr eijrVar = bqqe.a;
-        this.o = new bqqa();
-        if (flbn.d()) {
-            this.j = acbd.a(this, getIntent());
+        this.h = (adxl) new jxw(this, new adxc(getApplication())).a(adxl.class);
+        this.i = (adxr) new jxw(this, new adxp(getApplication())).a(adxr.class);
+        ekww ekwwVar = bsxv.a;
+        this.o = new bsxr();
+        if (fnsv.d()) {
+            this.j = aebd.a(this, getIntent());
         }
-        fkzo fkzoVar = fkzo.a;
-        if (fkzoVar.a().k()) {
-            final abxl abxlVar = this.h;
-            abxlVar.d.hS(false);
-            byhr byhrVar = abxlVar.c;
-            byhrVar.removeCallbacksAndMessages(null);
-            byhrVar.postDelayed(new Runnable() { // from class: abww
+        fnqw fnqwVar = fnqw.a;
+        if (fnqwVar.lK().k()) {
+            final adxl adxlVar = this.h;
+            adxlVar.d.ih(false);
+            caqj caqjVar = adxlVar.c;
+            caqjVar.removeCallbacksAndMessages(null);
+            caqjVar.postDelayed(new Runnable() { // from class: adww
                 @Override // java.lang.Runnable
                 public final void run() {
-                    abxl.this.d.hS(true);
+                    adxl.this.d.ih(true);
                 }
-            }, TimeUnit.SECONDS.toMillis(fkzoVar.a().a()));
-            this.h.d.g(this, new jpd() { // from class: abwi
-                @Override // defpackage.jpd
+            }, TimeUnit.SECONDS.toMillis(fnqwVar.lK().a()));
+            this.h.d.g(this, new jvs() { // from class: adwi
+                @Override // defpackage.jvs
                 public final void a(Object obj) {
                     if (((Boolean) obj).booleanValue()) {
                         PhoneskyDpcInstallChimeraActivity phoneskyDpcInstallChimeraActivity = PhoneskyDpcInstallChimeraActivity.this;
                         Log.w("Auth", "Global timeout reached, finishing activity");
                         if (phoneskyDpcInstallChimeraActivity.u()) {
-                            phoneskyDpcInstallChimeraActivity.n.c(abqm.d);
+                            phoneskyDpcInstallChimeraActivity.n.c(adqm.d);
                         } else if (phoneskyDpcInstallChimeraActivity.t()) {
-                            acbb.b(phoneskyDpcInstallChimeraActivity.h.g);
-                            abzu.a(phoneskyDpcInstallChimeraActivity).c(acas.a(acaq.a, phoneskyDpcInstallChimeraActivity.j));
+                            aebb.b(phoneskyDpcInstallChimeraActivity.h.g);
+                            adzu.a(phoneskyDpcInstallChimeraActivity).c(aeas.a(aeaq.a, phoneskyDpcInstallChimeraActivity.j));
                             phoneskyDpcInstallChimeraActivity.i.e();
                         }
-                        phoneskyDpcInstallChimeraActivity.m(true != fkzo.a.a().i() ? 6 : 7, phoneskyDpcInstallChimeraActivity.j());
+                        phoneskyDpcInstallChimeraActivity.m(true != fnqw.a.lK().i() ? 6 : 7, phoneskyDpcInstallChimeraActivity.j());
                     }
                 }
             });
@@ -426,33 +419,33 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
         setResult(0, new Intent().putExtra("intentionally_canceled", true));
         if (!p()) {
             this.k = getIntent().getStringExtra("dpc_package_name");
-            if (flbn.g()) {
-                ndh.a(abqn.d, fuvs.a, new fvau() { // from class: abwa
-                    @Override // defpackage.fvau
+            if (fnsv.g()) {
+                ovv.a(adqn.d, fxrq.a, new fxws() { // from class: adwa
+                    @Override // defpackage.fxws
                     public final Object a(Object obj, Object obj2) {
-                        final ndg ndgVar = (ndg) obj2;
+                        final ovu ovuVar = (ovu) obj2;
                         final PhoneskyDpcInstallChimeraActivity phoneskyDpcInstallChimeraActivity = PhoneskyDpcInstallChimeraActivity.this;
-                        phoneskyDpcInstallChimeraActivity.n(new Consumer() { // from class: abwc
+                        phoneskyDpcInstallChimeraActivity.n(new Consumer() { // from class: adwc
                             @Override // java.util.function.Consumer
                             /* renamed from: accept */
-                            public final void q(Object obj3) {
-                                acag acagVar = (acag) obj3;
-                                ndgVar.a(new abqt(PhoneskyDpcInstallChimeraActivity.this.k, acagVar), new ndk(acagVar));
+                            public final void u(Object obj3) {
+                                aeag aeagVar = (aeag) obj3;
+                                ovuVar.a(new adqt(PhoneskyDpcInstallChimeraActivity.this.k, aeagVar), new owk(aeagVar));
                             }
 
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                                 return Consumer$CC.$default$andThen(this, consumer);
                             }
                         });
-                        return acag.a;
+                        return aeag.a;
                     }
                 });
                 return;
             } else {
-                n(new Consumer() { // from class: abwb
+                n(new Consumer() { // from class: adwb
                     @Override // java.util.function.Consumer
                     /* renamed from: accept */
-                    public final void q(Object obj) {
+                    public final void u(Object obj) {
                         int i = PhoneskyDpcInstallChimeraActivity.p;
                     }
 
@@ -463,41 +456,41 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
                 return;
             }
         }
-        acbb.b(this.h.e);
-        abzu.a(this).c(acas.a(acai.a, this.j));
+        aebb.b(this.h.e);
+        adzu.a(this).c(aeas.a(aeai.a, this.j));
         this.k = null;
-        acad v = flbn.g() ? (acad) ndh.a(abqy.d, fuvs.a, new fvau() { // from class: abwh
-            @Override // defpackage.fvau
+        aead v = fnsv.g() ? (aead) ovv.a(adqy.d, fxrq.a, new fxws() { // from class: adwh
+            @Override // defpackage.fxws
             public final Object a(Object obj, Object obj2) {
-                abqz abqzVar;
-                ndg ndgVar = (ndg) obj2;
-                acad v2 = PhoneskyDpcInstallChimeraActivity.v(bundle);
-                if (v2 instanceof acab) {
-                    abqzVar = new abqz(true, 0);
+                adqz adqzVar;
+                ovu ovuVar = (ovu) obj2;
+                aead v2 = PhoneskyDpcInstallChimeraActivity.v(bundle);
+                if (v2 instanceof aeab) {
+                    adqzVar = new adqz(true, 0);
                 } else {
-                    if (!(v2 instanceof acac)) {
-                        throw new fuuz();
+                    if (!(v2 instanceof aeac)) {
+                        throw new fxqx();
                     }
-                    abqzVar = new abqz(false, ((acac) v2).a);
+                    adqzVar = new adqz(false, ((aeac) v2).a);
                 }
-                ndgVar.a(abqzVar, new ndk(v2));
+                ovuVar.a(adqzVar, new owk(v2));
                 return v2;
             }
         }) : v(bundle);
-        if (v instanceof acac) {
-            acac acacVar = (acac) v;
-            Intent intent = acacVar.b;
+        if (v instanceof aeac) {
+            aeac aeacVar = (aeac) v;
+            Intent intent = aeacVar.b;
             if (intent == null) {
-                l(acacVar.a);
+                l(aeacVar.a);
                 return;
             } else {
-                m(acacVar.a, intent);
+                m(aeacVar.a, intent);
                 return;
             }
         }
         z();
-        this.h.a.d.a.g(this, new jpd() { // from class: abwd
-            @Override // defpackage.jpd
+        this.h.a.d.a.g(this, new jvs() { // from class: adwd
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 Integer num = (Integer) obj;
                 int intValue = num.intValue();
@@ -510,9 +503,9 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
                     case -3:
                     case -2:
                     case -1:
-                        abzu.a(phoneskyDpcInstallChimeraActivity).c(new acas(acan.a, num.intValue() == -7 ? 11 : num.intValue() == -1 ? 10 : num.intValue() == -2 ? 12 : num.intValue() == -3 ? 13 : 1, null, acbb.a(phoneskyDpcInstallChimeraActivity.h.h), phoneskyDpcInstallChimeraActivity.j));
-                        acbb.b(phoneskyDpcInstallChimeraActivity.h.i);
-                        abzu.a(phoneskyDpcInstallChimeraActivity).c(acas.a(acak.a, phoneskyDpcInstallChimeraActivity.j));
+                        adzu.a(phoneskyDpcInstallChimeraActivity).c(new aeas(aean.a, num.intValue() == -7 ? 11 : num.intValue() == -1 ? 10 : num.intValue() == -2 ? 12 : num.intValue() == -3 ? 13 : 1, null, aebb.a(phoneskyDpcInstallChimeraActivity.h.h), phoneskyDpcInstallChimeraActivity.j));
+                        aebb.b(phoneskyDpcInstallChimeraActivity.h.i);
+                        adzu.a(phoneskyDpcInstallChimeraActivity).c(aeas.a(aeak.a, phoneskyDpcInstallChimeraActivity.j));
                         phoneskyDpcInstallChimeraActivity.h.b(phoneskyDpcInstallChimeraActivity.k);
                         break;
                     case -6:
@@ -527,8 +520,8 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
                 }
             }
         });
-        this.h.b.e.a.g(this, new jpd() { // from class: abwe
-            @Override // defpackage.jpd
+        this.h.b.e.a.g(this, new jvs() { // from class: adwe
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 Integer num = (Integer) obj;
                 int intValue = num.intValue();
@@ -541,7 +534,7 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
                 switch (num.intValue()) {
                     case -7:
                     case -2:
-                        abzu.a(phoneskyDpcInstallChimeraActivity).c(new acas(acaj.a, num.intValue() == -7 ? 15 : 16, null, acbb.a(phoneskyDpcInstallChimeraActivity.h.i), phoneskyDpcInstallChimeraActivity.j));
+                        adzu.a(phoneskyDpcInstallChimeraActivity).c(new aeas(aeaj.a, num.intValue() == -7 ? 15 : 16, null, aebb.a(phoneskyDpcInstallChimeraActivity.h.i), phoneskyDpcInstallChimeraActivity.j));
                         phoneskyDpcInstallChimeraActivity.m(3, phoneskyDpcInstallChimeraActivity.j());
                         break;
                     case -6:
@@ -551,7 +544,7 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
                         phoneskyDpcInstallChimeraActivity.l.i();
                         break;
                     case -3:
-                        abzu.a(phoneskyDpcInstallChimeraActivity).c(new acas(acaj.a, 17, null, acbb.a(phoneskyDpcInstallChimeraActivity.h.i), phoneskyDpcInstallChimeraActivity.j));
+                        adzu.a(phoneskyDpcInstallChimeraActivity).c(new aeas(aeaj.a, 17, null, aebb.a(phoneskyDpcInstallChimeraActivity.h.i), phoneskyDpcInstallChimeraActivity.j));
                         phoneskyDpcInstallChimeraActivity.m(2, phoneskyDpcInstallChimeraActivity.j());
                         break;
                     case -1:
@@ -559,16 +552,16 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
                             phoneskyDpcInstallChimeraActivity.l(-1);
                             break;
                         } else {
-                            Duration a = acbb.a(phoneskyDpcInstallChimeraActivity.h.i);
+                            Duration a = aebb.a(phoneskyDpcInstallChimeraActivity.h.i);
                             if (!phoneskyDpcInstallChimeraActivity.s(phoneskyDpcInstallChimeraActivity.k) || !phoneskyDpcInstallChimeraActivity.r("android.app.action.ROLE_HOLDER_PROVISION_MANAGED_PROFILE") || !phoneskyDpcInstallChimeraActivity.r("android.app.action.ROLE_HOLDER_PROVISION_MANAGED_DEVICE_FROM_TRUSTED_SOURCE") || !phoneskyDpcInstallChimeraActivity.r("android.app.action.ROLE_HOLDER_PROVISION_FINALIZATION")) {
                                 Log.e("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] Device policy management role holder installed but is not valid.");
-                                abzu.a(phoneskyDpcInstallChimeraActivity).c(new acas(acaj.a, 22, null, a, phoneskyDpcInstallChimeraActivity.j));
+                                adzu.a(phoneskyDpcInstallChimeraActivity).c(new aeas(aeaj.a, 22, null, a, phoneskyDpcInstallChimeraActivity.j));
                                 phoneskyDpcInstallChimeraActivity.m(2, phoneskyDpcInstallChimeraActivity.j());
                                 break;
                             } else {
-                                abzu.a(phoneskyDpcInstallChimeraActivity).c(new acas(acaj.a, 14, null, a, phoneskyDpcInstallChimeraActivity.j));
+                                adzu.a(phoneskyDpcInstallChimeraActivity).c(new aeas(aeaj.a, 14, null, a, phoneskyDpcInstallChimeraActivity.j));
                                 if (phoneskyDpcInstallChimeraActivity.o != null) {
-                                    bqqa.a(aseu.AUTH_MANAGED_DEVICE_POLICY_MANAGEMENT_ROLE_HOLDER_UPDATED);
+                                    bsxr.a(auio.AUTH_MANAGED_DEVICE_POLICY_MANAGEMENT_ROLE_HOLDER_UPDATED);
                                 }
                                 phoneskyDpcInstallChimeraActivity.l(-1);
                                 break;
@@ -581,62 +574,61 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
             }
         });
         if (u()) {
-            myx myxVar = this.n;
-            abql abqlVar = abql.d;
-            fvbo.f(abqlVar, "contract");
-            b = fvug.b(myxVar.a, fuyy.a, fvie.a, new myu(myxVar, abqlVar, null));
-            b.hn(new Runnable() { // from class: abwf
+            ori oriVar = this.n;
+            adql adqlVar = adql.d;
+            fxxm.f(adqlVar, "contract");
+            fyqe.d(oriVar.a, new orf(oriVar, adqlVar, null)).hD(new Runnable() { // from class: adwf
                 @Override // java.lang.Runnable
                 public final void run() {
                     PhoneskyDpcInstallChimeraActivity.this.o();
                 }
-            }, enre.a);
+            }, eqex.a);
             return;
         }
         if (!t()) {
             o();
             return;
         }
-        this.i.d.g(this, new jpd() { // from class: abwg
-            @Override // defpackage.jpd
+        this.i.d.g(this, new jvs() { // from class: adwg
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                abxq abxqVar = (abxq) obj;
-                Log.i("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] observed pauseState ".concat(String.valueOf(String.valueOf(abxqVar))));
-                int ordinal = abxqVar.ordinal();
+                adxq adxqVar = (adxq) obj;
+                Log.i("Auth", "[AuthManaged, PhoneskyDpcInstallChimeraActivity] observed pauseState ".concat(String.valueOf(String.valueOf(adxqVar))));
+                int ordinal = adxqVar.ordinal();
                 PhoneskyDpcInstallChimeraActivity phoneskyDpcInstallChimeraActivity = PhoneskyDpcInstallChimeraActivity.this;
                 if (ordinal == 1 || ordinal == 2) {
-                    abzu.a(phoneskyDpcInstallChimeraActivity).c(new acas(acal.a, abxqVar == abxq.PAUSED ? 18 : 19, null, acbb.a(phoneskyDpcInstallChimeraActivity.h.f), phoneskyDpcInstallChimeraActivity.j));
+                    adzu.a(phoneskyDpcInstallChimeraActivity).c(new aeas(aeal.a, adxqVar == adxq.PAUSED ? 18 : 19, null, aebb.a(phoneskyDpcInstallChimeraActivity.h.f), phoneskyDpcInstallChimeraActivity.j));
                     phoneskyDpcInstallChimeraActivity.o();
                 } else if (ordinal == 3 || ordinal == 4) {
-                    abzu.a(phoneskyDpcInstallChimeraActivity).c(new acas(acap.a, abxqVar == abxq.RESUMED ? 20 : 21, null, acbb.a(phoneskyDpcInstallChimeraActivity.h.g), phoneskyDpcInstallChimeraActivity.j));
+                    adzu.a(phoneskyDpcInstallChimeraActivity).c(new aeas(aeap.a, adxqVar == adxq.RESUMED ? 20 : 21, null, aebb.a(phoneskyDpcInstallChimeraActivity.h.g), phoneskyDpcInstallChimeraActivity.j));
                 }
             }
         });
-        acbb.b(this.h.f);
-        abzu.a(this).c(acas.a(acam.a, this.j));
-        final abxr abxrVar = this.i;
-        if (flbg.g()) {
-            ensj.t(abxrVar.c.a(), new abxo(abxrVar), enre.a);
-        } else if (abxrVar.d.hT() == abxq.PAUSED) {
+        aebb.b(this.h.f);
+        adzu.a(this).c(aeas.a(aeam.a, this.j));
+        final adxr adxrVar = this.i;
+        if (fnso.g()) {
+            eqgc.t(adxrVar.c.a(), new adxo(adxrVar), eqex.a);
+        } else if (adxrVar.d.ii() == adxq.PAUSED) {
             Log.i("Auth", "[AuthManaged, PauseAppUpdatesViewModel] Already in paused state");
         } else {
-            abxrVar.a.post(new Runnable() { // from class: abxn
+            adxrVar.a.post(new Runnable() { // from class: adxn
                 @Override // java.lang.Runnable
                 public final void run() {
-                    abxr.this.b();
+                    adxr.this.b();
                 }
             });
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        if (flad.e()) {
+        if (fnrl.d()) {
             Context baseContext = getBaseContext();
-            int i = edjs.a;
-            if (edeq.z(baseContext)) {
-                edjc.e(getContainerActivity(), 3);
+            int i = efwn.a;
+            if (efrl.z(baseContext)) {
+                efvx.e(getContainerActivity(), 3);
             }
         }
     }
@@ -666,17 +658,17 @@ public class PhoneskyDpcInstallChimeraActivity extends abyb implements jth {
     }
 
     public final boolean t() {
-        if (flbg.e() && p()) {
-            return !flbg.f() || edgl.d(this);
+        if (fnso.e() && p()) {
+            return !fnso.f() || eftg.d(this);
         }
         return false;
     }
 
     public final boolean u() {
-        return fkzs.a.a().e() && p();
+        return fnra.a.lK().e() && p();
     }
 
-    @Override // defpackage.jth
-    public final void c(jtu jtuVar) {
+    @Override // defpackage.jzw
+    public final void c(kaj kajVar) {
     }
 }

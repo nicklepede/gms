@@ -3,15 +3,15 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cxef;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.czob;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class CustomizedSnoozePresetEntity extends AbstractSafeParcelable implements CustomizedSnoozePreset {
-    public static final Parcelable.Creator CREATOR = new cxef();
+    public static final Parcelable.Creator CREATOR = new czob();
     public final TimeEntity a;
     public final TimeEntity b;
     public final TimeEntity c;
@@ -45,7 +45,7 @@ public class CustomizedSnoozePresetEntity extends AbstractSafeParcelable impleme
             return true;
         }
         CustomizedSnoozePreset customizedSnoozePreset = (CustomizedSnoozePreset) obj;
-        return arwb.b(c(), customizedSnoozePreset.c()) && arwb.b(a(), customizedSnoozePreset.a()) && arwb.b(b(), customizedSnoozePreset.b());
+        return atyq.b(c(), customizedSnoozePreset.c()) && atyq.b(a(), customizedSnoozePreset.a()) && atyq.b(b(), customizedSnoozePreset.b());
     }
 
     public final int hashCode() {
@@ -55,11 +55,11 @@ public class CustomizedSnoozePresetEntity extends AbstractSafeParcelable impleme
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         TimeEntity timeEntity = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, timeEntity, i, false);
-        arxc.t(parcel, 3, this.b, i, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, timeEntity, i, false);
+        atzr.t(parcel, 3, this.b, i, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.c(parcel, a);
     }
 
     public CustomizedSnoozePresetEntity(TimeEntity timeEntity, TimeEntity timeEntity2, TimeEntity timeEntity3) {
@@ -68,7 +68,7 @@ public class CustomizedSnoozePresetEntity extends AbstractSafeParcelable impleme
         this.c = timeEntity3;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

@@ -6,13 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import com.google.android.cast.JGCastService;
-import defpackage.ckhz;
+import defpackage.cmqe;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ButtonLayout extends ViewGroup {
-    private final ckhz a;
-    private final ckhz b;
+    private final cmqe a;
+    private final cmqe b;
     private Button c;
     private Button d;
     private boolean e;
@@ -56,30 +56,30 @@ public class ButtonLayout extends ViewGroup {
 
     @Override // android.view.View
     protected final void onMeasure(int i, int i2) {
-        ckhz ckhzVar = this.b;
-        setPadding(ckhzVar.c(), ckhzVar.e(), ckhzVar.d(), ckhzVar.b());
+        cmqe cmqeVar = this.b;
+        setPadding(cmqeVar.c(), cmqeVar.e(), cmqeVar.d(), cmqeVar.b());
         int size = View.MeasureSpec.getSize(i);
         int paddingLeft = (size - getPaddingLeft()) - getPaddingRight();
-        this.c.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft, JGCastService.FLAG_USE_TDLS), View.MeasureSpec.makeMeasureSpec(ckhzVar.a(), JGCastService.FLAG_PRIVATE_DISPLAY));
-        this.d.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft, JGCastService.FLAG_USE_TDLS), View.MeasureSpec.makeMeasureSpec(ckhzVar.a(), JGCastService.FLAG_PRIVATE_DISPLAY));
+        this.c.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft, JGCastService.FLAG_USE_TDLS), View.MeasureSpec.makeMeasureSpec(cmqeVar.a(), JGCastService.FLAG_PRIVATE_DISPLAY));
+        this.d.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft, JGCastService.FLAG_USE_TDLS), View.MeasureSpec.makeMeasureSpec(cmqeVar.a(), JGCastService.FLAG_PRIVATE_DISPLAY));
         boolean z = this.c.getMeasuredWidth() + this.d.getMeasuredWidth() > paddingLeft;
         this.e = z;
         if (z) {
-            ckhzVar = this.a;
+            cmqeVar = this.a;
         }
-        setPadding(ckhzVar.c(), ckhzVar.e(), ckhzVar.d(), ckhzVar.b());
+        setPadding(cmqeVar.c(), cmqeVar.e(), cmqeVar.d(), cmqeVar.b());
         int paddingLeft2 = (size - getPaddingLeft()) - getPaddingRight();
         Button button = this.c;
-        int i3 = ckhzVar.a;
+        int i3 = cmqeVar.a;
         button.setGravity(i3);
         this.d.setGravity(i3);
         Button button2 = this.c;
-        int i4 = ckhzVar.b;
+        int i4 = cmqeVar.b;
         button2.setTextAlignment(i4);
         this.d.setTextAlignment(i4);
         if (this.e) {
-            this.c.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft2, JGCastService.FLAG_PRIVATE_DISPLAY), View.MeasureSpec.makeMeasureSpec(ckhzVar.a(), JGCastService.FLAG_PRIVATE_DISPLAY));
-            this.d.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft2, JGCastService.FLAG_PRIVATE_DISPLAY), View.MeasureSpec.makeMeasureSpec(ckhzVar.a(), JGCastService.FLAG_PRIVATE_DISPLAY));
+            this.c.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft2, JGCastService.FLAG_PRIVATE_DISPLAY), View.MeasureSpec.makeMeasureSpec(cmqeVar.a(), JGCastService.FLAG_PRIVATE_DISPLAY));
+            this.d.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft2, JGCastService.FLAG_PRIVATE_DISPLAY), View.MeasureSpec.makeMeasureSpec(cmqeVar.a(), JGCastService.FLAG_PRIVATE_DISPLAY));
         }
         if (this.e) {
             setMeasuredDimension(size, this.c.getMeasuredHeight() + this.d.getMeasuredHeight() + getPaddingTop() + getPaddingBottom());
@@ -95,7 +95,7 @@ public class ButtonLayout extends ViewGroup {
     public ButtonLayout(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         this.e = false;
-        this.a = new ckhz(context, 48, 21, 6, 24, 8, 0, 0);
-        this.b = new ckhz(context, 52, 17, 0, 0, 0, 16, 16);
+        this.a = new cmqe(context, 48, 21, 6, 24, 8, 0, 0);
+        this.b = new cmqe(context, 52, 17, 0, 0, 0, 16, 16);
     }
 }

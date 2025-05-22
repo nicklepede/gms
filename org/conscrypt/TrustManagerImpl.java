@@ -1,7 +1,7 @@
 package com.google.android.gms.org.conscrypt;
 
 import com.google.android.gms.org.conscrypt.ct.CertificateTransparency;
-import defpackage.bzju$$ExternalSyntheticApiModelOutline2;
+import defpackage.cbsl$$ExternalSyntheticApiModelOutline2;
 import j$.util.DesugarCollections;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -40,7 +40,7 @@ import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.X509ExtendedTrustManager;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class TrustManagerImpl extends X509ExtendedTrustManager {
     private static ConscryptHostnameVerifier defaultHostnameVerifier;
@@ -60,7 +60,7 @@ public final class TrustManagerImpl extends X509ExtendedTrustManager {
     private static final TrustAnchorComparator TRUST_ANCHOR_COMPARATOR = new TrustAnchorComparator();
     private static final Set REVOCATION_CHECK_OPTIONS = revocationOptions();
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class ExtendedKeyUsagePKIXCertPathChecker extends PKIXCertPathChecker {
         private static final String EKU_anyExtendedKeyUsage = "2.5.29.37.0";
         private static final String EKU_clientAuth = "1.3.6.1.5.5.7.3.2";
@@ -119,7 +119,7 @@ public final class TrustManagerImpl extends X509ExtendedTrustManager {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     enum GlobalHostnameVerifierAdapter implements ConscryptHostnameVerifier {
         INSTANCE;
 
@@ -129,7 +129,7 @@ public final class TrustManagerImpl extends X509ExtendedTrustManager {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class TrustAnchorComparator implements Comparator {
         private static final CertificatePriorityComparator CERT_COMPARATOR = new CertificatePriorityComparator();
 
@@ -397,15 +397,15 @@ public final class TrustManagerImpl extends X509ExtendedTrustManager {
             }
             PKIXCertPathChecker pKIXCertPathChecker = arrayList.get(i);
             i++;
-            if (bzju$$ExternalSyntheticApiModelOutline2.m$1(pKIXCertPathChecker)) {
-                pKIXRevocationChecker = bzju$$ExternalSyntheticApiModelOutline2.m193m((Object) pKIXCertPathChecker);
+            if (cbsl$$ExternalSyntheticApiModelOutline2.m$1(pKIXCertPathChecker)) {
+                pKIXRevocationChecker = cbsl$$ExternalSyntheticApiModelOutline2.m189m((Object) pKIXCertPathChecker);
                 break;
             }
         }
         if (pKIXRevocationChecker == null) {
             try {
                 revocationChecker = this.validator.getRevocationChecker();
-                pKIXRevocationChecker = bzju$$ExternalSyntheticApiModelOutline2.m193m((Object) revocationChecker);
+                pKIXRevocationChecker = cbsl$$ExternalSyntheticApiModelOutline2.m189m((Object) revocationChecker);
                 arrayList.add(pKIXRevocationChecker);
                 pKIXRevocationChecker.setOptions(REVOCATION_CHECK_OPTIONS);
             } catch (UnsupportedOperationException unused) {

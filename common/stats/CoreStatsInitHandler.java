@@ -3,159 +3,156 @@ package com.google.android.gms.common.stats;
 import android.content.Intent;
 import android.os.Build;
 import com.google.android.gms.common.stats.permissions.PermissionStateLoggingTask;
-import defpackage.asje;
-import defpackage.asjf;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bxiq;
-import defpackage.bxis;
-import defpackage.byjl;
-import defpackage.byjw;
-import defpackage.bykd;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.fiwo;
-import defpackage.fmsy;
-import defpackage.fmuo;
-import defpackage.fmys;
-import defpackage.fmzm;
-import defpackage.fnaw;
-import defpackage.fnbi;
-import defpackage.fncn;
-import defpackage.fuyy;
-import defpackage.fvbo;
-import defpackage.fvgu;
+import defpackage.aumy;
+import defpackage.aumz;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bzrg;
+import defpackage.bzri;
+import defpackage.casd;
+import defpackage.caso;
+import defpackage.casv;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.flml;
+import defpackage.fpkw;
+import defpackage.fpmm;
+import defpackage.fpqr;
+import defpackage.fprl;
+import defpackage.fpsv;
+import defpackage.fpth;
+import defpackage.fpum;
+import defpackage.fxuw;
+import defpackage.fxxm;
+import defpackage.fycs;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class CoreStatsInitHandler extends asjf {
-    public fiwo a;
+public class CoreStatsInitHandler extends aumz {
+    public flml a;
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
         if ((i & 2) == 0 && (i & 4) == 0 && (i & 8) == 0) {
             return;
         }
-        asot asotVar = GmsCoreStatsChimeraService.a;
-        Intent component = new Intent().setComponent(asje.a);
+        ausn ausnVar = GmsCoreStatsChimeraService.a;
+        Intent component = new Intent().setComponent(aumy.a);
         component.setAction("com.google.android.gms.common.stats.START");
         startService(component);
-        if (fmsy.a.a().h()) {
-            if (fmsy.a.a().e()) {
-                asng.M("com.google.android.gms.common.stats.net.contentprovider.NetworkUsageContentProvider", 2);
-            } else {
-                asng.M("com.google.android.gms.common.stats.net.contentprovider.NetworkUsageContentProvider", 0);
-            }
+        if (fpkw.a.lK().g()) {
+            aura.M("com.google.android.gms.common.stats.net.contentprovider.NetworkUsageContentProvider", 2);
         }
         int i2 = StatsUploadChimeraService.a;
-        if (fmsy.c()) {
+        if (fpkw.c()) {
             StatsUploadChimeraService.e();
         }
-        if (fnaw.f()) {
+        if (fpsv.A()) {
             int i3 = DiskStatsCollectionTaskService.a;
-            bykm bykmVar = new bykm();
-            bykmVar.g(2);
-            bykmVar.x(1, 1);
-            bykmVar.f(fnaw.a.a().K() ? 1 : 0, 1);
-            bykmVar.j(byki.a(TimeUnit.HOURS.toSeconds(fnaw.a.a().h())));
-            bykmVar.w(DiskStatsCollectionTaskService.class.getName());
-            bykmVar.q("diskstats");
-            bykmVar.p = true;
-            bykmVar.v(2);
-            byjl.a(this).f(bykmVar.b());
+            cate cateVar = new cate();
+            cateVar.g(2);
+            cateVar.x(1, 1);
+            fpsv fpsvVar = fpsv.a;
+            cateVar.f(fpsvVar.lK().K() ? 1 : 0, 1);
+            cateVar.j(cata.a(TimeUnit.HOURS.toSeconds(fpsvVar.lK().h())));
+            cateVar.w(DiskStatsCollectionTaskService.class.getName());
+            cateVar.q("diskstats");
+            cateVar.p = true;
+            cateVar.v(2);
+            casd.a(this).f(cateVar.b());
         }
         if (NotificationLoggingTask.d()) {
-            byjl a = byjl.a(this);
-            fmys fmysVar = fmys.a;
-            if (!fmysVar.a().k()) {
+            casd a = casd.a(this);
+            fpqr fpqrVar = fpqr.a;
+            if (!fpqrVar.lK().k()) {
                 a.c(NotificationLoggingTask.a);
-            } else if (fncn.j()) {
-                byko bykoVar = new byko();
-                bykoVar.w(NotificationLoggingTask.a);
-                bykoVar.q("NOTIFICATIONS");
-                bykoVar.p = true;
-                bykoVar.v(2);
-                bykoVar.l(false);
-                bykoVar.a = bykv.j;
-                a.f(bykoVar.b());
+            } else if (fpum.j()) {
+                catg catgVar = new catg();
+                catgVar.w(NotificationLoggingTask.a);
+                catgVar.q("NOTIFICATIONS");
+                catgVar.p = true;
+                catgVar.v(2);
+                catgVar.l(false);
+                catgVar.a = catn.j;
+                a.f(catgVar.b());
             } else {
-                long a2 = fmysVar.a().a();
+                long a2 = fpqrVar.lK().a();
                 if (a2 > 0) {
-                    bykm bykmVar2 = new bykm();
-                    bykmVar2.j(byki.a(a2));
-                    bykmVar2.w(NotificationLoggingTask.a);
-                    bykmVar2.t("NOTIFICATIONS");
-                    bykmVar2.p = true;
-                    bykmVar2.v(2);
-                    bykmVar2.y(2, 2);
-                    bykmVar2.x(0, !fmys.e() ? 1 : 0);
-                    bykmVar2.f(0, !fmys.e() ? 1 : 0);
-                    a.f(bykmVar2.b());
+                    cate cateVar2 = new cate();
+                    cateVar2.j(cata.a(a2));
+                    cateVar2.w(NotificationLoggingTask.a);
+                    cateVar2.t("NOTIFICATIONS");
+                    cateVar2.p = true;
+                    cateVar2.v(2);
+                    cateVar2.y(2, 2);
+                    cateVar2.x(0, !fpqr.e() ? 1 : 0);
+                    cateVar2.f(0, !fpqr.e() ? 1 : 0);
+                    a.f(cateVar2.b());
                 }
             }
         }
         int i4 = FeatureLoggingTask.b;
-        byjl a3 = byjl.a(this);
-        if (fncn.j()) {
-            byko bykoVar2 = new byko();
-            bykoVar2.w(FeatureLoggingTask.a);
-            bykoVar2.p = true;
-            bykoVar2.q("FEATURE_STATUS");
-            bykoVar2.v(2);
-            bykoVar2.a = bykv.j;
-            bykoVar2.l(false);
-            a3.f(bykoVar2.b());
+        casd a3 = casd.a(this);
+        if (fpum.j()) {
+            catg catgVar2 = new catg();
+            catgVar2.w(FeatureLoggingTask.a);
+            catgVar2.p = true;
+            catgVar2.q("FEATURE_STATUS");
+            catgVar2.v(2);
+            catgVar2.a = catn.j;
+            catgVar2.l(false);
+            a3.f(catgVar2.b());
         } else {
-            long b = fmuo.a.a().b();
+            long b = fpmm.a.lK().b();
             if (b > 0) {
-                bykm bykmVar3 = new bykm();
-                bykmVar3.j(byki.a(b));
-                bykmVar3.w(FeatureLoggingTask.a);
-                bykmVar3.p = true;
-                bykmVar3.t("FEATURE_STATUS");
-                bykmVar3.v(2);
-                a3.f(bykmVar3.b());
+                cate cateVar3 = new cate();
+                cateVar3.j(cata.a(b));
+                cateVar3.w(FeatureLoggingTask.a);
+                cateVar3.p = true;
+                cateVar3.t("FEATURE_STATUS");
+                cateVar3.v(2);
+                a3.f(cateVar3.b());
             }
         }
         int i5 = PermissionStateLoggingTask.a;
-        if (fncn.m()) {
-            byko bykoVar3 = new byko();
-            bykoVar3.w(PermissionStateLoggingTask.class.getName());
-            bykoVar3.q("PERMISSION_STATE");
-            bykoVar3.v(2);
-            bykoVar3.p = true;
-            bykoVar3.l(false);
-            bykoVar3.a = bykv.j;
-            byjl.a(this).f(bykoVar3.b());
+        if (fpum.m()) {
+            catg catgVar3 = new catg();
+            catgVar3.w(PermissionStateLoggingTask.class.getName());
+            catgVar3.q("PERMISSION_STATE");
+            catgVar3.v(2);
+            catgVar3.p = true;
+            catgVar3.l(false);
+            catgVar3.a = catn.j;
+            casd.a(this).f(catgVar3.b());
         } else {
-            bykm bykmVar4 = new bykm();
-            bykmVar4.j(byki.a(fmzm.a.a().a()));
-            bykmVar4.w(PermissionStateLoggingTask.class.getName());
-            bykmVar4.t("PERMISSION_STATE");
-            bykmVar4.p = true;
-            bykmVar4.v(2);
-            bykmVar4.g(2);
-            byjl.a(this).f(bykmVar4.b());
+            cate cateVar4 = new cate();
+            cateVar4.j(cata.a(fprl.a.lK().a()));
+            cateVar4.w(PermissionStateLoggingTask.class.getName());
+            cateVar4.t("PERMISSION_STATE");
+            cateVar4.p = true;
+            cateVar4.v(2);
+            cateVar4.g(2);
+            casd.a(this).f(cateVar4.b());
         }
         int i6 = StatsForTraceEmitterTask.b;
-        if (fmsy.d() && Build.VERSION.SDK_INT >= 29) {
-            byjl a4 = byjl.a(this);
-            byjw byjwVar = new byjw();
-            byjwVar.w(StatsForTraceEmitterTask.a);
-            byjwVar.p = true;
-            byjwVar.q("STATS_EMITTER_TASK");
-            byjwVar.v(2);
-            byjwVar.a = bykd.a;
-            byjwVar.e(false);
-            a4.f(byjwVar.b());
+        if (fpkw.d() && Build.VERSION.SDK_INT >= 29) {
+            casd a4 = casd.a(this);
+            caso casoVar = new caso();
+            casoVar.w(StatsForTraceEmitterTask.a);
+            casoVar.p = true;
+            casoVar.q("STATS_EMITTER_TASK");
+            casoVar.v(2);
+            casoVar.a = casv.a;
+            casoVar.e(false);
+            a4.f(casoVar.b());
         }
-        if (fnbi.a.a().a()) {
-            bxiq bxiqVar = (bxiq) this.a.a();
-            fvbo.f(bxiqVar, "provisioner");
-            fvgu.a(fuyy.a, new bxis(bxiqVar, null));
+        if (fpth.a.lK().a()) {
+            bzrg bzrgVar = (bzrg) this.a.a();
+            fxxm.f(bzrgVar, "provisioner");
+            fycs.a(fxuw.a, new bzri(bzrgVar, null));
         }
     }
 }

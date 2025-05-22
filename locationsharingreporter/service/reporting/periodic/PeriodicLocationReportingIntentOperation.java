@@ -5,6 +5,7 @@ import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.location.Location;
+import android.net.Uri;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.locationsharingreporter.AppContextProvider;
 import com.google.android.gms.location.LocationResult;
@@ -13,30 +14,30 @@ import com.google.android.gms.locationsharingreporter.NoticeAckedUpdateRequest;
 import com.google.android.gms.locationsharingreporter.PeriodicLocationUploadRequest;
 import com.google.android.gms.locationsharingreporter.StartLocationReportingRequest;
 import com.google.android.gms.locationsharingreporter.StopLocationReportingRequest;
-import defpackage.arxd;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.caxj;
-import defpackage.caym;
-import defpackage.cayn;
-import defpackage.cbbj;
-import defpackage.cbbk;
-import defpackage.cbbn;
-import defpackage.cbew;
-import defpackage.eigb;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.eiig;
-import defpackage.eitj;
-import defpackage.eits;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensi;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.fpxh;
+import defpackage.atzs;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cdgc;
+import defpackage.cdhh;
+import defpackage.cdhi;
+import defpackage.cdkb;
+import defpackage.cdkc;
+import defpackage.cdkf;
+import defpackage.cdno;
+import defpackage.ektg;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.ekvl;
+import defpackage.elgo;
+import defpackage.elgx;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgb;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.fsrb;
 import j$.util.DesugarCollections;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
@@ -44,99 +45,114 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class PeriodicLocationReportingIntentOperation extends IntentOperation {
     public static final /* synthetic */ int a = 0;
-    private static final asot b = asot.b("LSR", asej.LOCATION_SHARING_REPORTER);
+    private static final ausn b = ausn.b("LSR", auid.LOCATION_SHARING_REPORTER);
 
-    public static PendingIntent a() {
-        Intent intent = new Intent("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACTION_PERIODIC_LOCATION_UPDATE");
-        intent.setComponent(new ComponentName(AppContextProvider.a(), "com.google.android.gms.locationsharingreporter.service.reporting.periodic.PeriodicLocationReportingIntentOperation"));
-        PendingIntent pendingIntent = IntentOperation.getPendingIntent(AppContextProvider.a(), PeriodicLocationReportingIntentOperation.class, intent, 0, 134217728);
-        eiig.x(pendingIntent);
+    public static PendingIntent a(String str) {
+        Intent intent = new Intent("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACTION_GEOFENCE_TRIGGERED");
+        intent.setComponent(d());
+        intent.putExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME", str);
+        intent.setData(Uri.fromParts("mailto", str, "com.google"));
+        PendingIntent pendingIntent = IntentOperation.getPendingIntent(AppContextProvider.a(), PeriodicLocationReportingIntentOperation.class, intent, 0, 134217728, true);
+        ekvl.y(pendingIntent);
         return pendingIntent;
     }
 
-    public static Intent b(Account account) {
+    public static PendingIntent b() {
+        Intent intent = new Intent("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACTION_PERIODIC_LOCATION_UPDATE");
+        intent.setComponent(d());
+        PendingIntent pendingIntent = IntentOperation.getPendingIntent(AppContextProvider.a(), PeriodicLocationReportingIntentOperation.class, intent, 0, 134217728);
+        ekvl.y(pendingIntent);
+        return pendingIntent;
+    }
+
+    public static Intent c(Account account) {
         Intent startIntent = IntentOperation.getStartIntent(AppContextProvider.a(), PeriodicLocationReportingIntentOperation.class, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACTION_REFRESH_REPORTING_STATE_FOR_ACCOUNT");
-        eiig.x(startIntent);
+        ekvl.y(startIntent);
         startIntent.putExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME", account.name);
         return startIntent;
     }
 
-    private static void c(Intent intent) {
-        enss p;
-        eiid i = eiid.i((PeriodicLocationUploadRequest) arxd.b(intent, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.UPLOAD_REQUEST", PeriodicLocationUploadRequest.CREATOR));
-        eiid i2 = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
-        eiid i3 = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.CALLING_PACKAGE"));
-        final eiid i4 = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ATTRIBUTION_TAG"));
+    private static ComponentName d() {
+        return new ComponentName(AppContextProvider.a(), "com.google.android.gms.locationsharingreporter.service.reporting.periodic.PeriodicLocationReportingIntentOperation");
+    }
+
+    private static void e(Intent intent) {
+        eqgl p;
+        ekvi i = ekvi.i((PeriodicLocationUploadRequest) atzs.b(intent, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.UPLOAD_REQUEST", PeriodicLocationUploadRequest.CREATOR));
+        ekvi i2 = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
+        ekvi i3 = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.CALLING_PACKAGE"));
+        final ekvi i4 = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ATTRIBUTION_TAG"));
         if (!i.h() || !i2.h() || !i3.h()) {
-            ((ejhf) ((ejhf) b.j()).ah((char) 5858)).x("Received upload request with incomplete information, ignoring it");
+            ((eluo) ((eluo) b.j()).ai((char) 5877)).x("Received upload request with incomplete information, ignoring it");
             return;
         }
         try {
-            final caym a2 = caym.a();
+            final cdhh a2 = cdhh.a();
             final String str = (String) i2.c();
             final String str2 = (String) i3.c();
             final PeriodicLocationUploadRequest periodicLocationUploadRequest = (PeriodicLocationUploadRequest) i.c();
-            if (!fpxh.a.a().as() || periodicLocationUploadRequest.d >= fpxh.a.a().r()) {
-                ((ejhf) ((ejhf) caym.a.h()).ah((char) 5827)).x("Adding new client request");
-                cbbk cbbkVar = a2.c;
+            fsrb fsrbVar = fsrb.a;
+            if (!fsrbVar.lK().ar() || periodicLocationUploadRequest.d >= fsrbVar.lK().t()) {
+                ((eluo) ((eluo) cdhh.a.h()).ai((char) 5846)).x("Adding new client request");
+                cdkc cdkcVar = a2.c;
                 final Account account = new Account(str, "com.google");
-                p = cbbkVar.p(new eiho() { // from class: cbbf
-                    @Override // defpackage.eiho
+                p = cdkcVar.p(new ekut() { // from class: cdjx
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        cauz cauzVar = (cauz) obj;
-                        Map unmodifiableMap = DesugarCollections.unmodifiableMap(cauzVar.c);
+                        cddp cddpVar = (cddp) obj;
+                        Map unmodifiableMap = DesugarCollections.unmodifiableMap(cddpVar.c);
                         Account account2 = account;
-                        cavc cavcVar = (cavc) unmodifiableMap.get(account2.name);
-                        if (cavcVar == null) {
-                            cavcVar = cavc.a;
+                        cdds cddsVar = (cdds) unmodifiableMap.get(account2.name);
+                        if (cddsVar == null) {
+                            cddsVar = cdds.a;
                         }
                         PeriodicLocationUploadRequest periodicLocationUploadRequest2 = periodicLocationUploadRequest;
-                        fecj fecjVar = (fecj) cauzVar.iB(5, null);
-                        fecjVar.X(cauzVar);
-                        cauu cauuVar = (cauu) fecjVar;
+                        fgrc fgrcVar = (fgrc) cddpVar.iQ(5, null);
+                        fgrcVar.X(cddpVar);
+                        cddk cddkVar = (cddk) fgrcVar;
                         String str3 = account2.name;
-                        fecj fecjVar2 = (fecj) cavcVar.iB(5, null);
-                        fecjVar2.X(cavcVar);
-                        cava cavaVar = (cava) fecjVar2;
+                        fgrc fgrcVar2 = (fgrc) cddsVar.iQ(5, null);
+                        fgrcVar2.X(cddsVar);
+                        cddq cddqVar = (cddq) fgrcVar2;
                         String str4 = account2.name;
-                        fecj v = cavf.a.v();
-                        caun c = cbbm.c(periodicLocationUploadRequest2);
+                        fgrc v = cddv.a.v();
+                        cddd c = cdke.c(periodicLocationUploadRequest2);
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fecp fecpVar = v.b;
-                        cavf cavfVar = (cavf) fecpVar;
+                        fgri fgriVar = v.b;
+                        cddv cddvVar = (cddv) fgriVar;
                         c.getClass();
-                        cavfVar.e = c;
-                        cavfVar.b |= 4;
-                        if (!fecpVar.L()) {
+                        cddvVar.e = c;
+                        cddvVar.b |= 4;
+                        if (!fgriVar.L()) {
                             v.U();
                         }
-                        fecp fecpVar2 = v.b;
-                        cavf cavfVar2 = (cavf) fecpVar2;
+                        fgri fgriVar2 = v.b;
+                        cddv cddvVar2 = (cddv) fgriVar2;
                         str4.getClass();
-                        cavfVar2.b |= 8;
-                        cavfVar2.f = str4;
-                        if (!fecpVar2.L()) {
+                        cddvVar2.b |= 8;
+                        cddvVar2.f = str4;
+                        if (!fgriVar2.L()) {
                             v.U();
                         }
-                        eiid eiidVar = i4;
+                        ekvi ekviVar = i4;
                         String str5 = str2;
-                        cavf cavfVar3 = (cavf) v.b;
-                        cavfVar3.b |= 16;
-                        cavfVar3.g = str5;
-                        if (eiidVar.h()) {
-                            String str6 = (String) eiidVar.c();
+                        cddv cddvVar3 = (cddv) v.b;
+                        cddvVar3.b |= 16;
+                        cddvVar3.g = str5;
+                        if (ekviVar.h()) {
+                            String str6 = (String) ekviVar.c();
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            cavf cavfVar4 = (cavf) v.b;
-                            cavfVar4.b |= 64;
-                            cavfVar4.i = str6;
+                            cddv cddvVar4 = (cddv) v.b;
+                            cddvVar4.b |= 64;
+                            cddvVar4.i = str6;
                         }
                         long j = periodicLocationUploadRequest2.d;
                         if (j != 0) {
@@ -144,194 +160,194 @@ public class PeriodicLocationReportingIntentOperation extends IntentOperation {
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            cavf cavfVar5 = (cavf) v.b;
-                            cavfVar5.b |= 1;
-                            cavfVar5.c = currentTimeMillis;
+                            cddv cddvVar5 = (cddv) v.b;
+                            cddvVar5.b |= 1;
+                            cddvVar5.c = currentTimeMillis;
                         }
                         long currentTimeMillis2 = System.currentTimeMillis();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        cavf cavfVar6 = (cavf) v.b;
-                        cavfVar6.b |= 2;
-                        cavfVar6.d = currentTimeMillis2;
-                        cavaVar.a(str5, (cavf) v.Q());
-                        cauuVar.l(str3, (cavc) cavaVar.Q());
-                        return (cauz) cauuVar.Q();
+                        cddv cddvVar6 = (cddv) v.b;
+                        cddvVar6.b |= 2;
+                        cddvVar6.d = currentTimeMillis2;
+                        cddqVar.a(str5, (cddv) v.Q());
+                        cddkVar.l(str3, (cdds) cddqVar.Q());
+                        return (cddp) cddkVar.Q();
                     }
-                }, fpxh.H() ? eiid.j(new cbbj(7, eiid.j(account), eiid.j(eitj.l(str2)))) : eigb.a);
+                }, fsrb.F() ? ekvi.j(new cdkb(7, ekvi.j(account), ekvi.j(elgo.l(str2)))) : ektg.a);
             } else {
-                ((ejhf) ((ejhf) caym.a.h()).ah((char) 5828)).x("Removing newly received client request");
-                p = a2.c.j(new Account(str, "com.google"), eitj.l(str2), 3);
+                ((eluo) ((eluo) cdhh.a.h()).ai((char) 5847)).x("Removing newly received client request");
+                p = a2.c.j(new Account(str, "com.google"), elgo.l(str2), 3);
             }
-            ((enpf) enps.f(enps.g(ensi.h(p), new enqc() { // from class: caxr
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    return caym.this.d(cayl.FORCE);
+            ((eqcy) eqdl.f(eqdl.g(eqgb.h(p), new eqdv() { // from class: cdgs
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    return cdhh.this.d(cdhg.FORCE);
                 }
-            }, cbew.b()), new eiho() { // from class: caxs
-                @Override // defpackage.eiho
+            }, cdno.b()), new ekut() { // from class: cdgt
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    asot asotVar = caym.a;
-                    String str3 = true != fpxh.L() ? null : str;
+                    ausn ausnVar = cdhh.a;
+                    String str3 = true != fsrb.J() ? null : str;
                     String str4 = str2;
-                    int i5 = cbbn.a;
-                    int e = cbbp.e(str4);
-                    fecj v = ebfg.a.v();
-                    fecj v2 = ebgd.a.v();
-                    ebfm f = cbbp.f(e);
+                    int i5 = cdkf.a;
+                    int e = cdkh.e(str4);
+                    fgrc v = edrt.a.v();
+                    fgrc v2 = edsq.a.v();
+                    edrz f = cdkh.f(e);
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    ebgd ebgdVar = (ebgd) v2.b;
+                    edsq edsqVar = (edsq) v2.b;
                     f.getClass();
-                    fedh fedhVar = ebgdVar.d;
-                    if (!fedhVar.c()) {
-                        ebgdVar.d = fecp.E(fedhVar);
+                    fgsa fgsaVar = edsqVar.d;
+                    if (!fgsaVar.c()) {
+                        edsqVar.d = fgri.E(fgsaVar);
                     }
-                    ebgdVar.d.add(f);
+                    edsqVar.d.add(f);
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ebfg ebfgVar = (ebfg) v.b;
-                    ebgd ebgdVar2 = (ebgd) v2.Q();
-                    ebgdVar2.getClass();
-                    ebfgVar.c = ebgdVar2;
-                    ebfgVar.b = 1;
-                    ebfg ebfgVar2 = (ebfg) v.Q();
+                    edrt edrtVar = (edrt) v.b;
+                    edsq edsqVar2 = (edsq) v2.Q();
+                    edsqVar2.getClass();
+                    edrtVar.c = edsqVar2;
+                    edrtVar.b = 1;
+                    edrt edrtVar2 = (edrt) v.Q();
                     if (str3 == null) {
-                        buyi.v().f(ebfgVar2);
+                        bxgk.v().f(edrtVar2);
                     } else {
-                        buye.v().i(ebfgVar2, str3);
+                        bxgg.v().i(edrtVar2, str3);
                     }
                     return null;
                 }
-            }, cbew.b())).v(fpxh.b(), TimeUnit.MILLISECONDS);
+            }, cdno.b())).v(fsrb.b(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 5860)).x("Failed to add new client request");
-        }
-    }
-
-    private static void d(Intent intent) {
-        eiid i = eiid.i((NoticeAckedUpdateRequest) arxd.b(intent, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.NOTICE_UPDATE_REQUEST", NoticeAckedUpdateRequest.CREATOR));
-        eiid i2 = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
-        eiid i3 = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.CALLING_PACKAGE"));
-        if (!i.h() || !i2.h() || !i3.h()) {
-            ((ejhf) ((ejhf) b.j()).ah((char) 5861)).x("Received notice update request with incomplete information, ignoring it");
-            return;
-        }
-        try {
-            caym.a().b((String) i2.c(), (NoticeAckedUpdateRequest) i.c()).get(fpxh.a.a().h(), TimeUnit.MILLISECONDS);
-        } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 5863)).x("Failed to handle notice update request");
-        }
-    }
-
-    private static void e(Intent intent) {
-        eiid i = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
-        if (!i.h()) {
-            ((ejhf) ((ejhf) b.j()).ah((char) 5866)).x("Received refresh reporting state request with incomplete information, ignoring it");
-            return;
-        }
-        try {
-            ((enpf) caym.a().c((String) i.c())).v(fpxh.k(), TimeUnit.MILLISECONDS);
-        } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 5865)).x("Failed to refresh reporting state for account");
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 5879)).x("Failed to add new client request");
         }
     }
 
     private static void f(Intent intent) {
-        eiid i = eiid.i((StartLocationReportingRequest) arxd.b(intent, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.START_REPORTING_REQUEST", StartLocationReportingRequest.CREATOR));
-        eiid i2 = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
-        eiid i3 = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.CALLING_PACKAGE"));
+        ekvi i = ekvi.i((NoticeAckedUpdateRequest) atzs.b(intent, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.NOTICE_UPDATE_REQUEST", NoticeAckedUpdateRequest.CREATOR));
+        ekvi i2 = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
+        ekvi i3 = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.CALLING_PACKAGE"));
         if (!i.h() || !i2.h() || !i3.h()) {
-            ((ejhf) ((ejhf) b.j()).ah((char) 5867)).x("Received start reporting request with incomplete information, ignoring it");
+            ((eluo) ((eluo) b.j()).ai((char) 5880)).x("Received notice update request with incomplete information, ignoring it");
             return;
         }
         try {
-            final caym a2 = caym.a();
-            final String str = (String) i2.c();
-            final StartLocationReportingRequest startLocationReportingRequest = (StartLocationReportingRequest) i.c();
-            ((ejhf) ((ejhf) caym.a.h()).ah((char) 5829)).x("Adding new start reporting request");
-            ((enpf) enps.g(ensi.h(enps.g(ensi.h(a2.b(str, startLocationReportingRequest.e)), new enqc() { // from class: caxl
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    return caym.this.c.o(new Account(str, "com.google"), startLocationReportingRequest);
-                }
-            }, cbew.a())), new enqc() { // from class: caxq
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    return caym.this.d(cayl.FORCE);
-                }
-            }, cbew.b())).v(fpxh.b(), TimeUnit.MILLISECONDS);
+            cdhh.a().b((String) i2.c(), (NoticeAckedUpdateRequest) i.c()).get(fsrb.a.lK().i(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 5869)).x("Failed to add new start reporting request");
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 5882)).x("Failed to handle notice update request");
         }
     }
 
     private static void g(Intent intent) {
-        enss p;
-        eiid i = eiid.i((StopLocationReportingRequest) arxd.b(intent, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.STOP_REPORTING_REQUEST", StopLocationReportingRequest.CREATOR));
-        eiid i2 = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
-        eiid i3 = eiid.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.CALLING_PACKAGE"));
-        if (!i.h() || !i2.h() || !i3.h()) {
-            ((ejhf) ((ejhf) b.j()).ah((char) 5870)).x("Received stop reporting request with incomplete information, ignoring it");
+        ekvi i = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
+        if (!i.h()) {
+            ((eluo) ((eluo) b.j()).ai((char) 5885)).x("Received refresh reporting state request with incomplete information, ignoring it");
             return;
         }
         try {
-            final caym a2 = caym.a();
-            final String str = (String) i2.c();
-            eiid i4 = eiid.i(((StopLocationReportingRequest) i.c()).a);
-            if (i4.h()) {
-                cbbk cbbkVar = a2.c;
-                final Account account = new Account(str, "com.google");
-                final LocationShare locationShare = (LocationShare) i4.c();
-                p = cbbkVar.p(new eiho() { // from class: cbai
-                    @Override // defpackage.eiho
-                    public final Object apply(Object obj) {
-                        int a3;
-                        cauz cauzVar = (cauz) obj;
-                        asot asotVar = cbbk.a;
-                        Map unmodifiableMap = DesugarCollections.unmodifiableMap(cauzVar.d);
-                        Account account2 = account;
-                        cauq cauqVar = (cauq) unmodifiableMap.get(account2.name);
-                        if (cauqVar == null || (a3 = caup.a(cauqVar.d)) == 0 || a3 != 3) {
-                            return cauzVar;
-                        }
-                        caug a4 = cbbm.a(locationShare);
-                        caug caugVar = cauqVar.e;
-                        if (caugVar == null) {
-                            caugVar = caug.a;
-                        }
-                        if (!caugVar.equals(a4)) {
-                            return cauzVar;
-                        }
-                        fecj fecjVar = (fecj) cauzVar.iB(5, null);
-                        fecjVar.X(cauzVar);
-                        cauu cauuVar = (cauu) fecjVar;
-                        cauuVar.m(account2.name);
-                        return (cauz) cauuVar.Q();
-                    }
-                }, eigb.a);
-            } else {
-                p = ensm.a;
-            }
-            ((enpf) enps.g(ensi.h(p), new enqc() { // from class: cayd
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    return caym.this.c(str);
-                }
-            }, cbew.b())).v(fpxh.a.a().i(), TimeUnit.MILLISECONDS);
+            ((eqcy) cdhh.a().c((String) i.c())).v(fsrb.l(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 5872)).x("Failed to handle stop reporting request");
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 5884)).x("Failed to refresh reporting state for account");
         }
     }
 
-    private static void h() {
+    private static void h(Intent intent) {
+        ekvi i = ekvi.i((StartLocationReportingRequest) atzs.b(intent, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.START_REPORTING_REQUEST", StartLocationReportingRequest.CREATOR));
+        ekvi i2 = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
+        ekvi i3 = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.CALLING_PACKAGE"));
+        if (!i.h() || !i2.h() || !i3.h()) {
+            ((eluo) ((eluo) b.j()).ai((char) 5886)).x("Received start reporting request with incomplete information, ignoring it");
+            return;
+        }
         try {
-            ((enpf) caym.a().h()).v(fpxh.l(), TimeUnit.MILLISECONDS);
+            final cdhh a2 = cdhh.a();
+            final String str = (String) i2.c();
+            final StartLocationReportingRequest startLocationReportingRequest = (StartLocationReportingRequest) i.c();
+            ((eluo) ((eluo) cdhh.a.h()).ai((char) 5848)).x("Adding new start reporting request");
+            ((eqcy) eqdl.g(eqgb.h(eqdl.g(eqgb.h(a2.b(str, startLocationReportingRequest.e)), new eqdv() { // from class: cdgl
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    return cdhh.this.c.o(new Account(str, "com.google"), startLocationReportingRequest);
+                }
+            }, cdno.a())), new eqdv() { // from class: cdgr
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    return cdhh.this.d(cdhg.FORCE);
+                }
+            }, cdno.b())).v(fsrb.b(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 5876)).x("Failed to stop periodic location reporting");
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 5888)).x("Failed to add new start reporting request");
+        }
+    }
+
+    private static void i(Intent intent) {
+        eqgl p;
+        ekvi i = ekvi.i((StopLocationReportingRequest) atzs.b(intent, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.STOP_REPORTING_REQUEST", StopLocationReportingRequest.CREATOR));
+        ekvi i2 = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME"));
+        ekvi i3 = ekvi.i(intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.CALLING_PACKAGE"));
+        if (!i.h() || !i2.h() || !i3.h()) {
+            ((eluo) ((eluo) b.j()).ai((char) 5889)).x("Received stop reporting request with incomplete information, ignoring it");
+            return;
+        }
+        try {
+            final cdhh a2 = cdhh.a();
+            final String str = (String) i2.c();
+            ekvi i4 = ekvi.i(((StopLocationReportingRequest) i.c()).a);
+            if (i4.h()) {
+                cdkc cdkcVar = a2.c;
+                final Account account = new Account(str, "com.google");
+                final LocationShare locationShare = (LocationShare) i4.c();
+                p = cdkcVar.p(new ekut() { // from class: cdjc
+                    @Override // defpackage.ekut
+                    public final Object apply(Object obj) {
+                        int a3;
+                        cddp cddpVar = (cddp) obj;
+                        ausn ausnVar = cdkc.a;
+                        Map unmodifiableMap = DesugarCollections.unmodifiableMap(cddpVar.d);
+                        Account account2 = account;
+                        cddg cddgVar = (cddg) unmodifiableMap.get(account2.name);
+                        if (cddgVar == null || (a3 = cddf.a(cddgVar.d)) == 0 || a3 != 3) {
+                            return cddpVar;
+                        }
+                        cdcw a4 = cdke.a(locationShare);
+                        cdcw cdcwVar = cddgVar.e;
+                        if (cdcwVar == null) {
+                            cdcwVar = cdcw.a;
+                        }
+                        if (!cdcwVar.equals(a4)) {
+                            return cddpVar;
+                        }
+                        fgrc fgrcVar = (fgrc) cddpVar.iQ(5, null);
+                        fgrcVar.X(cddpVar);
+                        cddk cddkVar = (cddk) fgrcVar;
+                        cddkVar.m(account2.name);
+                        return (cddp) cddkVar.Q();
+                    }
+                }, ektg.a);
+            } else {
+                p = eqgf.a;
+            }
+            ((eqcy) eqdl.g(eqgb.h(p), new eqdv() { // from class: cdgz
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    return cdhh.this.c(str);
+                }
+            }, cdno.b())).v(fsrb.a.lK().j(), TimeUnit.MILLISECONDS);
+        } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 5891)).x("Failed to handle stop reporting request");
+        }
+    }
+
+    private static void j() {
+        try {
+            ((eqcy) cdhh.a().h()).v(fsrb.m(), TimeUnit.MILLISECONDS);
+        } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 5895)).x("Failed to stop periodic location reporting");
         }
     }
 
@@ -339,18 +355,16 @@ public class PeriodicLocationReportingIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         char c;
-        caxj caxjVar;
-        if (!fpxh.E()) {
-            h();
-            return;
+        if (!fsrb.D()) {
+            j();
         }
         if (intent == null) {
-            ((ejhf) ((ejhf) b.j()).ah((char) 5875)).x("Received null intent, ignoring it");
+            ((eluo) ((eluo) b.j()).ai((char) 5894)).x("Received null intent, ignoring it");
             return;
         }
         String action = intent.getAction();
         if (action == null) {
-            ((ejhf) ((ejhf) b.j()).ah((char) 5874)).x("Received intent with null action");
+            ((eluo) ((eluo) b.j()).ai((char) 5893)).x("Received intent with null action");
             return;
         }
         switch (action.hashCode()) {
@@ -409,75 +423,73 @@ public class PeriodicLocationReportingIntentOperation extends IntentOperation {
         }
         switch (c) {
             case 0:
-                c(intent);
-                return;
-            case 1:
-                f(intent);
-                return;
-            case 2:
-                g(intent);
-                return;
-            case 3:
-                cayn a2 = cayn.a();
-                if (LocationResult.d(intent)) {
-                    eiid i = eiid.i(LocationResult.c(intent));
-                    eiid i2 = i.h() ? eiid.i(((LocationResult) i.c()).a()) : eigb.a;
-                    if (!i2.h()) {
-                        ((ejhf) ((ejhf) cayn.a.j()).ah((char) 5851)).x("Skipping upload, location result has no locations");
-                        return;
-                    }
-                    cayn.e();
-                    if (!fpxh.u()) {
-                        a2.b.a((Location) i2.c(), eits.k(a2.c));
-                        return;
-                    }
-                    Location location = (Location) i2.c();
-                    eiid c2 = a2.c();
-                    if (a2.f(location)) {
-                        ((ejhf) ((ejhf) cayn.a.h()).ah((char) 5850)).x("Received in the callback location is accurate enough, uploading it");
-                        cbbn.l(3);
-                        a2.b.a(location, eits.k(a2.c));
-                        return;
-                    }
-                    asot asotVar = cayn.a;
-                    ((ejhf) ((ejhf) asotVar.h()).ah((char) 5847)).x("Received in the callback location isn't accurate enough");
-                    cbbn.l(2);
-                    eiid b2 = a2.b(c2);
-                    if (!b2.h()) {
-                        cbbn.l(8);
-                        ((ejhf) ((ejhf) asotVar.h()).ah((char) 5848)).x("Failed to get accurate enough location, not uploading anything");
-                        return;
-                    } else {
-                        ((ejhf) ((ejhf) asotVar.h()).ah((char) 5849)).x("Obtained more accurate location, uploading it");
-                        Location location2 = (Location) b2.c();
-                        cbbn.l(true != a2.f(location2) ? 4 : 5);
-                        a2.b.a(location2, eits.k(a2.c));
-                        return;
-                    }
-                }
-                return;
-            case 4:
-                if (fpxh.y()) {
-                    synchronized (caxj.a) {
-                        if (caxj.b == null) {
-                            caxj.b = new caxj();
-                        }
-                        caxjVar = caxj.b;
-                    }
-                    intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME");
-                    caxjVar.a();
-                    return;
-                }
-                return;
-            case 5:
                 e(intent);
-                return;
+                break;
+            case 1:
+                h(intent);
+                break;
+            case 2:
+                i(intent);
+                break;
+            case 3:
+                cdhi a2 = cdhi.a();
+                if (LocationResult.d(intent)) {
+                    ekvi i = ekvi.i(LocationResult.c(intent));
+                    ekvi i2 = i.h() ? ekvi.i(((LocationResult) i.c()).a()) : ektg.a;
+                    if (!i2.h()) {
+                        ((eluo) ((eluo) cdhi.a.j()).ai((char) 5870)).x("Skipping upload, location result has no locations");
+                        break;
+                    } else {
+                        cdhi.e();
+                        if (!fsrb.u()) {
+                            a2.b.a((Location) i2.c(), elgx.k(a2.c));
+                            break;
+                        } else {
+                            Location location = (Location) i2.c();
+                            ekvi c2 = a2.c();
+                            if (!a2.f(location)) {
+                                ausn ausnVar = cdhi.a;
+                                ((eluo) ((eluo) ausnVar.h()).ai((char) 5866)).x("Received in the callback location isn't accurate enough");
+                                cdkf.l(2);
+                                ekvi b2 = a2.b(c2);
+                                if (!b2.h()) {
+                                    cdkf.l(8);
+                                    ((eluo) ((eluo) ausnVar.h()).ai((char) 5867)).x("Failed to get accurate enough location, not uploading anything");
+                                    break;
+                                } else {
+                                    ((eluo) ((eluo) ausnVar.h()).ai((char) 5868)).x("Obtained more accurate location, uploading it");
+                                    Location location2 = (Location) b2.c();
+                                    cdkf.l(true != a2.f(location2) ? 4 : 5);
+                                    a2.b.a(location2, elgx.k(a2.c));
+                                    break;
+                                }
+                            } else {
+                                ((eluo) ((eluo) cdhi.a.h()).ai((char) 5869)).x("Received in the callback location is accurate enough, uploading it");
+                                cdkf.l(3);
+                                a2.b.a(location, elgx.k(a2.c));
+                                break;
+                            }
+                        }
+                    }
+                }
+                break;
+            case 4:
+                if (fsrb.y()) {
+                    cdgc b3 = cdgc.b();
+                    intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACCOUNT_NAME");
+                    b3.e();
+                    break;
+                }
+                break;
+            case 5:
+                g(intent);
+                break;
             case 6:
-                d(intent);
-                return;
+                f(intent);
+                break;
             default:
-                ((ejhf) ((ejhf) b.j()).ah((char) 5873)).B("Received intent with unknown action: %s", action);
-                return;
+                ((eluo) ((eluo) b.j()).ai((char) 5892)).B("Received intent with unknown action: %s", action);
+                break;
         }
     }
 }

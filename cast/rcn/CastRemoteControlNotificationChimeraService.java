@@ -10,66 +10,66 @@ import android.os.PowerManager;
 import com.google.android.chimera.Service;
 import com.google.android.gms.cast.rcn.CastRemoteControlNotificationChimeraService;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.amap;
-import defpackage.amgd;
-import defpackage.amys;
-import defpackage.amyt;
-import defpackage.anav;
-import defpackage.anfz;
-import defpackage.angs;
-import defpackage.angy;
-import defpackage.anhb;
-import defpackage.anhk;
-import defpackage.annw;
-import defpackage.asnz;
-import defpackage.asoe;
-import defpackage.byhr;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.elzf;
-import defpackage.iln;
-import defpackage.kao;
-import defpackage.kap;
-import defpackage.kaq;
-import defpackage.kaz;
+import defpackage.aoca;
+import defpackage.aoho;
+import defpackage.apad;
+import defpackage.apae;
+import defpackage.apch;
+import defpackage.aphm;
+import defpackage.apif;
+import defpackage.apil;
+import defpackage.apio;
+import defpackage.apix;
+import defpackage.appp;
+import defpackage.aurt;
+import defpackage.aury;
+import defpackage.caqj;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.eomt;
+import defpackage.ind;
+import defpackage.lsy;
+import defpackage.lsz;
+import defpackage.lta;
+import defpackage.ltj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CastRemoteControlNotificationChimeraService extends Service {
-    public static final annw a = new annw("RCNService");
-    public static final kap b;
-    public static angs c;
-    public amgd e;
-    public kaz f;
-    public anhb g;
+    public static final appp a = new appp("RCNService");
+    public static final lsz b;
+    public static apif c;
+    public aoho e;
+    public ltj f;
+    public apio g;
     public boolean h;
     public boolean i;
     public boolean j;
     public int l;
-    private anhk p;
-    private amap q;
-    private anav r;
+    private apix p;
+    private aoca q;
+    private apch r;
     private RemoteControlNotificationMediaIntentReceiver s;
     private Runnable t;
-    private amyt u;
-    private amys v;
-    private final eijr m = eijy.a(new eijr() { // from class: anfv
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(fmcb.d());
+    private apae u;
+    private apad v;
+    private final ekww m = ekxd.a(new ekww() { // from class: aphi
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(fotj.d());
         }
     });
-    private final eijr n = eijy.a(new eijr() { // from class: anfw
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Long.valueOf(fmcb.a.a().a());
+    private final ekww n = ekxd.a(new ekww() { // from class: aphj
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Long.valueOf(fotj.a.lK().a());
         }
     });
-    public final kaq d = new anfz(this);
+    public final lta d = new aphm(this);
     private final IntentReceiver o = new IntentReceiver();
-    public final Handler k = new byhr(Looper.getMainLooper());
+    public final Handler k = new caqj(Looper.getMainLooper());
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class IntentReceiver extends TracingBroadcastReceiver {
         public IntentReceiver() {
             super("cast");
@@ -77,12 +77,13 @@ public class CastRemoteControlNotificationChimeraService extends Service {
 
         /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             char c;
-            CastRemoteControlNotificationChimeraService.a.n("IntentReceiver received %s", intent);
+            appp apppVar = CastRemoteControlNotificationChimeraService.a;
+            apppVar.n("IntentReceiver received %s", intent);
             String action = intent.getAction();
             if (action == null) {
-                CastRemoteControlNotificationChimeraService.a.g("IntentReceiver received null action", new Object[0]);
+                apppVar.g("IntentReceiver received null action", new Object[0]);
                 return;
             }
             switch (action.hashCode()) {
@@ -134,7 +135,7 @@ public class CastRemoteControlNotificationChimeraService extends Service {
                 castRemoteControlNotificationChimeraService3.c(castRemoteControlNotificationChimeraService3.h, true, castRemoteControlNotificationChimeraService3.j);
             } else {
                 if (c != 3) {
-                    CastRemoteControlNotificationChimeraService.a.g("IntentReceiver received unsupported action: %s", action);
+                    apppVar.g("IntentReceiver received unsupported action: %s", action);
                     return;
                 }
                 CastRemoteControlNotificationChimeraService castRemoteControlNotificationChimeraService4 = CastRemoteControlNotificationChimeraService.this;
@@ -145,13 +146,13 @@ public class CastRemoteControlNotificationChimeraService extends Service {
     }
 
     static {
-        kao kaoVar = new kao();
-        kaoVar.c("android.media.intent.category.REMOTE_PLAYBACK");
-        b = kaoVar.a();
+        lsy lsyVar = new lsy();
+        lsyVar.c("android.media.intent.category.REMOTE_PLAYBACK");
+        b = lsyVar.a();
     }
 
     private final int e() {
-        return asoe.i(getBaseContext()) ? 12 : 4;
+        return aury.i(getBaseContext()) ? 12 : 4;
     }
 
     public final void a() {
@@ -169,15 +170,15 @@ public class CastRemoteControlNotificationChimeraService extends Service {
     }
 
     public final void c(boolean z, boolean z2, boolean z3) {
-        elzf elzfVar;
-        annw annwVar = a;
+        eomt eomtVar;
+        appp apppVar = a;
         boolean z4 = false;
-        annwVar.f("updateRcnState to isNetworkAvailable: %b, isRcnSettingsEnabled: %b, isScreenOn: %b", Boolean.valueOf(z), Boolean.valueOf(z2), Boolean.valueOf(z3));
+        apppVar.f("updateRcnState to isNetworkAvailable: %b, isRcnSettingsEnabled: %b, isScreenOn: %b", Boolean.valueOf(z), Boolean.valueOf(z2), Boolean.valueOf(z3));
         boolean z5 = this.i;
         this.i = z2;
-        eijr eijrVar = this.m;
-        boolean z6 = ((Boolean) eijrVar.a()).booleanValue() && this.h != z;
-        boolean z7 = !((Boolean) eijrVar.a()).booleanValue() || z;
+        ekww ekwwVar = this.m;
+        boolean z6 = ((Boolean) ekwwVar.lK()).booleanValue() && this.h != z;
+        boolean z7 = !((Boolean) ekwwVar.lK()).booleanValue() || z;
         this.h = z7;
         boolean z8 = this.j;
         this.j = z3;
@@ -185,7 +186,7 @@ public class CastRemoteControlNotificationChimeraService extends Service {
         if (z7 && z2 && this.p.i && z3) {
             z4 = true;
         }
-        annwVar.n("shouldDiscover = %b", Boolean.valueOf(z4));
+        apppVar.n("shouldDiscover = %b", Boolean.valueOf(z4));
         if (z4) {
             int i = this.l;
             int i2 = i - 1;
@@ -194,25 +195,25 @@ public class CastRemoteControlNotificationChimeraService extends Service {
             }
             if (i2 != 0) {
                 if (i2 == 2) {
-                    annwVar.m("Screen On and RCN is enabled");
+                    apppVar.m("Screen On and RCN is enabled");
                     this.g.d();
                     return;
                 } else {
                     if (i2 != 3) {
                         return;
                     }
-                    annwVar.m("Screen On and RCN is disabled");
+                    apppVar.m("Screen On and RCN is disabled");
                     return;
                 }
             }
-            annwVar.m("start generic discovery");
+            apppVar.m("start generic discovery");
             Runnable runnable = this.t;
             if (runnable != null) {
                 this.k.removeCallbacks(runnable);
             }
             d(2);
             this.f.c(b, this.d, e());
-            Runnable runnable2 = new Runnable() { // from class: anfy
+            Runnable runnable2 = new Runnable() { // from class: aphl
                 @Override // java.lang.Runnable
                 public final void run() {
                     CastRemoteControlNotificationChimeraService.a.m("generic discovery is timed out");
@@ -222,7 +223,7 @@ public class CastRemoteControlNotificationChimeraService extends Service {
                 }
             };
             this.t = runnable2;
-            this.k.postDelayed(runnable2, ((Long) this.n.a()).longValue());
+            this.k.postDelayed(runnable2, ((Long) this.n.lK()).longValue());
             return;
         }
         int i3 = this.l;
@@ -242,25 +243,25 @@ public class CastRemoteControlNotificationChimeraService extends Service {
             }
             return;
         }
-        elzf elzfVar2 = elzf.REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_UNKNOWN;
+        eomt eomtVar2 = eomt.REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_UNKNOWN;
         if (z5 != z2 && !z2) {
-            annwVar.m("RCN settings is disabled");
-            elzfVar = elzf.REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_USER_DISABLE_FROM_SETTINGS;
+            apppVar.m("RCN settings is disabled");
+            eomtVar = eomt.REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_USER_DISABLE_FROM_SETTINGS;
         } else if (z6 && !this.h) {
-            annwVar.m("Network is unavailable");
-            elzfVar = elzf.REMOTE_CONTROL_NOTIFICATION_CANCEL_NETWORK_CHANGED;
+            apppVar.m("Network is unavailable");
+            eomtVar = eomt.REMOTE_CONTROL_NOTIFICATION_CANCEL_NETWORK_CHANGED;
             d(1);
         } else if (z8 == z3 || z3) {
-            elzfVar = elzfVar2;
+            eomtVar = eomtVar2;
         } else {
-            annwVar.m("Screen Off");
-            elzfVar = elzf.REMOTE_CONTROL_NOTIFICATION_CANCEL_SCEEN_OFF;
+            apppVar.m("Screen Off");
+            eomtVar = eomt.REMOTE_CONTROL_NOTIFICATION_CANCEL_SCEEN_OFF;
         }
-        if (elzfVar != elzfVar2) {
-            anhb anhbVar = this.g;
-            anhbVar.c();
-            anhb.a.m("Remove all RCN notifications");
-            anhbVar.g.d(elzfVar);
+        if (eomtVar != eomtVar2) {
+            apio apioVar = this.g;
+            apioVar.c();
+            apio.a.m("Remove all RCN notifications");
+            apioVar.g.d(eomtVar);
         }
     }
 
@@ -277,30 +278,30 @@ public class CastRemoteControlNotificationChimeraService extends Service {
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        annw annwVar = a;
-        annwVar.m("onCreate");
-        amap a2 = amap.a(getApplicationContext(), "RCNService");
+        appp apppVar = a;
+        apppVar.m("onCreate");
+        aoca a2 = aoca.a(getApplicationContext(), "RCNService");
         this.q = a2;
         this.e = a2.e;
         this.v = a2.r;
         this.r = a2.j;
         if (this.f == null) {
-            this.f = kaz.b(this);
+            this.f = ltj.b(this);
         }
         if (this.p == null) {
-            this.p = new anhk(this, asnz.a);
+            this.p = new apix(this, aurt.a);
         }
         if (c == null) {
-            c = new angs(getApplicationContext(), this.e, this.p);
+            c = new apif(getApplicationContext(), this.e, this.p);
         }
         if (this.g == null) {
-            this.g = new anhb(this.f, this.r, c, e());
+            this.g = new apio(this.f, this.r, c, e());
         }
-        anhb anhbVar = this.g;
-        anav anavVar = anhbVar.f;
-        angy angyVar = anhbVar.i;
-        anavVar.a.e.add(angyVar);
-        anavVar.b.e.add(angyVar);
+        apio apioVar = this.g;
+        apch apchVar = apioVar.f;
+        apil apilVar = apioVar.i;
+        apchVar.a.e.add(apilVar);
+        apchVar.b.e.add(apilVar);
         RemoteControlNotificationMediaIntentReceiver remoteControlNotificationMediaIntentReceiver = new RemoteControlNotificationMediaIntentReceiver(getApplicationContext(), c);
         this.s = remoteControlNotificationMediaIntentReceiver;
         if (!remoteControlNotificationMediaIntentReceiver.c) {
@@ -313,7 +314,7 @@ public class CastRemoteControlNotificationChimeraService extends Service {
             intentFilter.addAction("com.google.android.gms.cast.rcn.VIRTUAL_REMOTE");
             intentFilter.addAction("com.google.android.gms.cast.rcn.STOP_CASTING");
             intentFilter.addAction("com.google.android.gms.cast.rcn.DISMISS");
-            iln.c(remoteControlNotificationMediaIntentReceiver.b, remoteControlNotificationMediaIntentReceiver, intentFilter, "com.google.android.gms.permission.INTERNAL_BROADCAST", null, 4);
+            ind.c(remoteControlNotificationMediaIntentReceiver.b, remoteControlNotificationMediaIntentReceiver, intentFilter, "com.google.android.gms.permission.INTERNAL_BROADCAST", null, 4);
             remoteControlNotificationMediaIntentReceiver.c = true;
         }
         IntentFilter intentFilter2 = new IntentFilter();
@@ -321,22 +322,22 @@ public class CastRemoteControlNotificationChimeraService extends Service {
         intentFilter2.addAction("android.intent.action.SCREEN_OFF");
         intentFilter2.addAction("com.google.android.gms.cast.rcn.ENABLED");
         intentFilter2.addAction("com.google.android.gms.cast.rcn.DISABLED");
-        iln.b(getApplicationContext(), this.o, intentFilter2, 4);
+        ind.b(getApplicationContext(), this.o, intentFilter2, 4);
         this.i = true;
-        if (!((Boolean) this.m.a()).booleanValue()) {
-            annwVar.m("Trigger RCN discovery with network info");
+        if (!((Boolean) this.m.lK()).booleanValue()) {
+            apppVar.m("Trigger RCN discovery with network info");
             d(3);
             return;
         }
-        annwVar.m("Trigger RCN discovery without network info");
-        amyt amytVar = new amyt() { // from class: anfx
-            @Override // defpackage.amyt
+        apppVar.m("Trigger RCN discovery without network info");
+        apae apaeVar = new apae() { // from class: aphk
+            @Override // defpackage.apae
             public final void a(final boolean z) {
                 CastRemoteControlNotificationChimeraService.a.n("network connectivity is changed to %b", Boolean.valueOf(z));
                 final CastRemoteControlNotificationChimeraService castRemoteControlNotificationChimeraService = CastRemoteControlNotificationChimeraService.this;
                 if (z) {
                     if (castRemoteControlNotificationChimeraService.h) {
-                        castRemoteControlNotificationChimeraService.k.post(new Runnable() { // from class: anft
+                        castRemoteControlNotificationChimeraService.k.post(new Runnable() { // from class: aphg
                             @Override // java.lang.Runnable
                             public final void run() {
                                 CastRemoteControlNotificationChimeraService castRemoteControlNotificationChimeraService2 = CastRemoteControlNotificationChimeraService.this;
@@ -348,7 +349,7 @@ public class CastRemoteControlNotificationChimeraService extends Service {
                     }
                     z = true;
                 }
-                castRemoteControlNotificationChimeraService.k.post(new Runnable() { // from class: anfu
+                castRemoteControlNotificationChimeraService.k.post(new Runnable() { // from class: aphh
                     @Override // java.lang.Runnable
                     public final void run() {
                         CastRemoteControlNotificationChimeraService.this.b(z);
@@ -356,28 +357,28 @@ public class CastRemoteControlNotificationChimeraService extends Service {
                 });
             }
         };
-        this.u = amytVar;
-        this.v.c(amytVar);
+        this.u = apaeVar;
+        this.v.c(apaeVar);
         d(1);
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        amys amysVar;
-        angy angyVar;
+        apad apadVar;
+        apil apilVar;
         a.m("onDestroy");
-        anhb anhbVar = this.g;
-        if (anhbVar != null) {
-            anhbVar.c();
-            anav anavVar = anhbVar.f;
-            if (anavVar != null && (angyVar = anhbVar.i) != null) {
-                anavVar.a.e.remove(angyVar);
-                anavVar.b.e.remove(angyVar);
+        apio apioVar = this.g;
+        if (apioVar != null) {
+            apioVar.c();
+            apch apchVar = apioVar.f;
+            if (apchVar != null && (apilVar = apioVar.i) != null) {
+                apchVar.a.e.remove(apilVar);
+                apchVar.b.e.remove(apilVar);
             }
         }
-        kaz kazVar = this.f;
-        if (kazVar != null) {
-            kazVar.e(this.d);
+        ltj ltjVar = this.f;
+        if (ltjVar != null) {
+            ltjVar.e(this.d);
         }
         getApplicationContext().unregisterReceiver(this.o);
         RemoteControlNotificationMediaIntentReceiver remoteControlNotificationMediaIntentReceiver = this.s;
@@ -392,16 +393,16 @@ public class CastRemoteControlNotificationChimeraService extends Service {
             }
             this.s = null;
         }
-        angs angsVar = c;
-        angsVar.d(elzf.REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_SERVICE_STOPPED);
-        angsVar.f.clear();
-        angsVar.g.clear();
-        amyt amytVar = this.u;
-        if (amytVar != null && (amysVar = this.v) != null) {
-            amysVar.d(amytVar);
+        apif apifVar = c;
+        apifVar.d(eomt.REMOTE_CONTROL_NOTIFICATION_CANCEL_REASON_SERVICE_STOPPED);
+        apifVar.f.clear();
+        apifVar.g.clear();
+        apae apaeVar = this.u;
+        if (apaeVar != null && (apadVar = this.v) != null) {
+            apadVar.d(apaeVar);
         }
         if (this.q != null) {
-            amap.b("RCNService");
+            aoca.b("RCNService");
             this.q = null;
         }
     }

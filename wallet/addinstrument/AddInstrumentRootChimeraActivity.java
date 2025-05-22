@@ -8,15 +8,15 @@ import com.google.android.gms.R;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
 import com.google.android.gms.wallet.ui.common.ProgressSpinnerView;
 import com.google.android.wallet.clientlog.LogContext;
-import defpackage.arwm;
-import defpackage.diez;
-import defpackage.dife;
-import defpackage.ding;
-import defpackage.emen;
+import defpackage.atzb;
+import defpackage.dkqk;
+import defpackage.dkqp;
+import defpackage.dkyr;
+import defpackage.eosb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class AddInstrumentRootChimeraActivity extends diez {
+public class AddInstrumentRootChimeraActivity extends dkqk {
     private Toolbar h;
     private byte[] i;
     private byte[] j;
@@ -30,11 +30,11 @@ public class AddInstrumentRootChimeraActivity extends diez {
         return intent2;
     }
 
-    @Override // defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         Intent intent = getIntent();
-        ding.C(this, l(), ding.e, true);
-        q(bundle, true, 7, emen.FLOW_TYPE_ADD_INSTRUMENT);
+        dkyr.C(this, l(), dkyr.e, true);
+        q(bundle, true, 7, eosb.FLOW_TYPE_ADD_INSTRUMENT);
         super.onCreate(bundle);
         setContentView(R.layout.wallet_activity_add_instrument_widget);
         if (intent.getExtras().containsKey("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS")) {
@@ -49,24 +49,24 @@ public class AddInstrumentRootChimeraActivity extends diez {
         Toolbar toolbar = (Toolbar) findViewById(R.id.add_instrument_toolbar);
         this.h = toolbar;
         d(toolbar);
-        kJ().o(true);
-        ((diez) this).d = (ProgressSpinnerView) findViewById(R.id.progress_spinner_container);
-        if (((dife) m()) == null) {
+        kY().o(true);
+        ((dkqk) this).d = (ProgressSpinnerView) findViewById(R.id.progress_spinner_container);
+        if (((dkqp) m()) == null) {
             BuyFlowConfig l = l();
             String str = this.a;
             byte[] bArr = this.i;
             byte[] bArr2 = this.j;
             LogContext logContext = this.b;
-            arwm.c(bArr != null && bArr.length > 0, "Parameters is required to lauch AddInstrument.");
-            dife difeVar = new dife();
-            Bundle bZ = dife.bZ(l, str, logContext);
-            bZ.putByteArray("parameters", bArr);
+            atzb.c(bArr != null && bArr.length > 0, "Parameters is required to lauch AddInstrument.");
+            dkqp dkqpVar = new dkqp();
+            Bundle bY = dkqp.bY(l, str, logContext);
+            bY.putByteArray("parameters", bArr);
             if (bArr2 != null) {
-                bZ.putByteArray("productAuthToken", bArr2);
+                bY.putByteArray("productAuthToken", bArr2);
             }
-            difeVar.setArguments(bZ);
-            B(difeVar, R.id.add_instrument_container);
+            dkqpVar.setArguments(bY);
+            B(dkqpVar, R.id.add_instrument_container);
         }
-        ding.A(findViewById(R.id.wallet_root));
+        dkyr.A(findViewById(R.id.wallet_root));
     }
 }

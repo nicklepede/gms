@@ -3,78 +3,78 @@ package com.google.android.gms.auth.proximity.phonehub;
 import android.content.Context;
 import android.provider.MediaStore;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.acwa;
-import defpackage.acwb;
-import defpackage.acxf;
-import defpackage.acxg;
-import defpackage.acxh;
-import defpackage.adbx;
-import defpackage.arxo;
-import defpackage.byiv;
-import defpackage.byiw;
-import defpackage.byjl;
-import defpackage.byln;
-import defpackage.fecj;
+import defpackage.aewa;
+import defpackage.aewb;
+import defpackage.aexf;
+import defpackage.aexg;
+import defpackage.aexh;
+import defpackage.afbx;
+import defpackage.auad;
+import defpackage.carn;
+import defpackage.caro;
+import defpackage.casd;
+import defpackage.cauf;
+import defpackage.fgrc;
 import java.lang.ref.WeakReference;
 import java.util.Timer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class PhoneGalleryGmsTaskBoundService extends GmsTaskBoundService implements acxg {
-    private static final arxo a = new arxo("ProximityAuth", "PhoneGalleryGmsTaskBoundService");
-    private final acxh b = new acxh();
+public class PhoneGalleryGmsTaskBoundService extends GmsTaskBoundService implements aexg {
+    private static final auad a = new auad("ProximityAuth", "PhoneGalleryGmsTaskBoundService");
+    private final aexh b = new aexh();
 
     public static void e(Context context) {
-        byjl.a(context).d("PhotoGalleryUpdate", PhoneGalleryGmsTaskBoundService.class.getName());
+        casd.a(context).d("PhotoGalleryUpdate", PhoneGalleryGmsTaskBoundService.class.getName());
     }
 
     static void f(Context context) {
         a.d("Scheduling task for media update", new Object[0]);
-        byjl a2 = byjl.a(context);
-        byiw byiwVar = new byiw();
-        byiwVar.t("PhotoGalleryUpdate");
-        byiwVar.w(PhoneGalleryGmsTaskBoundService.class.getName());
-        byiwVar.c(new byiv(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, 1));
-        byiwVar.c(new byiv(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, 1));
-        byiwVar.v(0);
-        byiwVar.g(2);
-        a2.f(byiwVar.b());
+        casd a2 = casd.a(context);
+        caro caroVar = new caro();
+        caroVar.t("PhotoGalleryUpdate");
+        caroVar.w(PhoneGalleryGmsTaskBoundService.class.getName());
+        caroVar.c(new carn(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, 1));
+        caroVar.c(new carn(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, 1));
+        caroVar.v(0);
+        caroVar.g(2);
+        a2.f(caroVar.b());
     }
 
     private final void g() {
         a.h("Media content changed, notifying connected devices", new Object[0]);
-        for (acwa acwaVar : acwb.b().d()) {
-            if (acwaVar.e) {
-                fecj v = adbx.a.v();
+        for (aewa aewaVar : aewb.b().d()) {
+            if (aewaVar.e) {
+                fgrc v = afbx.a.v();
                 if (!v.b.L()) {
                     v.U();
                 }
-                ((adbx) v.b).f = true;
-                acwaVar.o((adbx) v.Q());
+                ((afbx) v.b).f = true;
+                aewaVar.o((afbx) v.Q());
             } else {
-                acwa.a.h("Camera Roll setting is disabled on connected device.", new Object[0]);
+                aewa.a.h("Camera Roll setting is disabled on connected device.", new Object[0]);
             }
         }
         f(getApplicationContext());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        acxh acxhVar = this.b;
-        if (acxhVar.c) {
-            if (acxhVar.d.get() == null) {
-                acxhVar.d = new WeakReference(this);
+    public final int a(cauf caufVar) {
+        aexh aexhVar = this.b;
+        if (aexhVar.c) {
+            if (aexhVar.d.get() == null) {
+                aexhVar.d = new WeakReference(this);
             }
             a.h("Too frequent! Update will be postponed.", new Object[0]);
             return 1;
         }
-        acxhVar.c = true;
-        new Timer().schedule(new acxf(acxhVar), acxhVar.b);
+        aexhVar.c = true;
+        new Timer().schedule(new aexf(aexhVar), aexhVar.b);
         g();
         return 0;
     }
 
-    @Override // defpackage.acxg
+    @Override // defpackage.aexg
     public final void d() {
         g();
     }

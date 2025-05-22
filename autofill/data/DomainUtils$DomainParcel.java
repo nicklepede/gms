@@ -2,20 +2,20 @@ package com.google.android.gms.autofill.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.adsv;
-import defpackage.adsx;
-import defpackage.adsy;
-import defpackage.eiig;
+import defpackage.aftc;
+import defpackage.afte;
+import defpackage.aftf;
+import defpackage.ekvl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class DomainUtils$DomainParcel implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new adsx();
-    public final adsv a;
+    public static final Parcelable.Creator CREATOR = new afte();
+    public final aftc a;
 
-    public DomainUtils$DomainParcel(adsv adsvVar) {
-        eiig.x(adsvVar);
-        this.a = adsvVar;
+    public DomainUtils$DomainParcel(aftc aftcVar) {
+        ekvl.y(aftcVar);
+        this.a = aftcVar;
     }
 
     @Override // android.os.Parcelable
@@ -25,6 +25,6 @@ public final class DomainUtils$DomainParcel implements Parcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        adsy.c(this.a, parcel);
+        aftf.c(this.a, parcel);
     }
 }

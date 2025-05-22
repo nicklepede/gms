@@ -24,30 +24,30 @@ import com.google.android.gms.R;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.nearby.sharing.ConsentsChimeraActivity;
 import com.google.android.gms.nearby.sharing.view.NavigationLayout;
-import defpackage.cfcs;
-import defpackage.clmm;
-import defpackage.cmck;
-import defpackage.cmdh;
-import defpackage.cmfe;
-import defpackage.cmfy;
-import defpackage.cmsq;
-import defpackage.crll;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.exxv;
-import defpackage.exzg;
-import defpackage.eygi;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fqmf;
-import defpackage.fqmk;
-import defpackage.iln;
+import defpackage.chke;
+import defpackage.cnuu;
+import defpackage.coks;
+import defpackage.colp;
+import defpackage.conm;
+import defpackage.coog;
+import defpackage.cpay;
+import defpackage.ctuq;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.famh;
+import defpackage.fans;
+import defpackage.fauu;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.ftga;
+import defpackage.ftgf;
+import defpackage.ind;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class ConsentsChimeraActivity extends clmm {
+public class ConsentsChimeraActivity extends cnuu {
     public TextView A;
     public TextView B;
     public Button C;
@@ -62,13 +62,13 @@ public class ConsentsChimeraActivity extends clmm {
     public int F = 3;
     private final BroadcastReceiver I = new TracingBroadcastReceiver() { // from class: com.google.android.gms.nearby.sharing.ConsentsChimeraActivity.1
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             String action = intent.getAction();
             if (action != null && action.equals("android.net.conn.CONNECTIVITY_CHANGE")) {
                 ConnectivityManager connectivityManager = (ConnectivityManager) context.getApplicationContext().getSystemService("connectivity");
                 boolean z = false;
                 if (connectivityManager == null) {
-                    cmfe.a.e().p("Failed to get connectivity manager.", new Object[0]);
+                    conm.a.e().p("Failed to get connectivity manager.", new Object[0]);
                     return;
                 }
                 NetworkInfo networkInfo = connectivityManager.getNetworkInfo(1);
@@ -84,24 +84,24 @@ public class ConsentsChimeraActivity extends clmm {
         }
     };
 
-    @Override // defpackage.clmm
-    protected final eygi l() {
-        return eygi.USE_CASE_NEARBY_SHARE;
+    @Override // defpackage.cnuu
+    protected final fauu l() {
+        return fauu.USE_CASE_NEARBY_SHARE;
     }
 
-    @Override // defpackage.clmm
+    @Override // defpackage.cnuu
     protected final String m() {
         return "com.google.android.gms.nearby.sharing.ConsentsActivity";
     }
 
-    @Override // defpackage.clmm, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.cnuu, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (!fqmf.bd()) {
+        if (!ftga.be()) {
             finish();
             return;
         }
-        if (fqmk.d().isEmpty() && cmfy.a(this) == null) {
+        if (ftgf.d().isEmpty() && coog.a(this) == null) {
             setTitle(getString(R.string.sharing_product_name_v3));
         } else {
             setTitle(getString(R.string.sharing_product_name));
@@ -122,51 +122,51 @@ public class ConsentsChimeraActivity extends clmm {
         this.C = (Button) navigationLayout.findViewById(R.id.skip_button);
         this.D = (Button) navigationLayout.findViewById(R.id.negative_button);
         this.E = (Button) navigationLayout.findViewById(R.id.positive_button);
-        this.C.setOnClickListener(new View.OnClickListener() { // from class: clnc
+        this.C.setOnClickListener(new View.OnClickListener() { // from class: cnvk
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ConsentsChimeraActivity.this.t();
             }
         });
-        this.D.setOnClickListener(new View.OnClickListener() { // from class: clnf
+        this.D.setOnClickListener(new View.OnClickListener() { // from class: cnvn
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ConsentsChimeraActivity.this.t();
             }
         });
-        this.E.setOnClickListener(new View.OnClickListener() { // from class: clng
+        this.E.setOnClickListener(new View.OnClickListener() { // from class: cnvo
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 final ConsentsChimeraActivity consentsChimeraActivity = ConsentsChimeraActivity.this;
                 Account a = consentsChimeraActivity.a();
                 if (a == null) {
-                    cmfe.a.b().p("Unable to enable device contacts: account is null.", new Object[0]);
+                    conm.a.b().p("Unable to enable device contacts: account is null.", new Object[0]);
                     consentsChimeraActivity.v();
                 }
-                dfaq b = cmsq.a(consentsChimeraActivity).b(a);
-                b.z(new dfak() { // from class: clnk
-                    @Override // defpackage.dfak
-                    public final void gn(Object obj) {
+                dhlw b = cpay.a(consentsChimeraActivity).b(a);
+                b.z(new dhlq() { // from class: cnvs
+                    @Override // defpackage.dhlq
+                    public final void gC(Object obj) {
                         boolean booleanValue = ((Boolean) obj).booleanValue();
                         ConsentsChimeraActivity consentsChimeraActivity2 = ConsentsChimeraActivity.this;
                         if (!booleanValue) {
                             consentsChimeraActivity2.F = 4;
-                            cmfe.a.e().p("Unable to enable device contacts.", new Object[0]);
+                            conm.a.e().p("Unable to enable device contacts.", new Object[0]);
                             consentsChimeraActivity2.w();
                         } else {
-                            cmfe.a.b().p("Successfully enabled device contacts.", new Object[0]);
+                            conm.a.b().p("Successfully enabled device contacts.", new Object[0]);
                             consentsChimeraActivity2.setResult(-1);
                             consentsChimeraActivity2.F = 2;
                             consentsChimeraActivity2.finishAfterTransition();
                         }
                     }
                 });
-                b.y(new dfah() { // from class: clnl
-                    @Override // defpackage.dfah
-                    public final void gm(Exception exc) {
+                b.y(new dhln() { // from class: cnvt
+                    @Override // defpackage.dhln
+                    public final void gB(Exception exc) {
                         ConsentsChimeraActivity consentsChimeraActivity2 = ConsentsChimeraActivity.this;
                         consentsChimeraActivity2.F = 4;
-                        cmfe.a.e().f(exc).p("Unable to enable device contacts.", new Object[0]);
+                        conm.a.e().f(exc).p("Unable to enable device contacts.", new Object[0]);
                         consentsChimeraActivity2.w();
                     }
                 });
@@ -174,42 +174,42 @@ public class ConsentsChimeraActivity extends clmm {
         });
     }
 
-    @Override // defpackage.clmm, defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.cnuu, defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
         super.onDestroy();
         int i = this.F;
-        fecj L = cmdh.L(43);
-        fecj v = exxv.a.v();
+        fgrc L = colp.L(43);
+        fgrc v = famh.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        exxv exxvVar = (exxv) fecpVar;
-        exxvVar.c = 2;
-        exxvVar.b |= 1;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        famh famhVar = (famh) fgriVar;
+        famhVar.c = 2;
+        famhVar.b |= 1;
+        if (!fgriVar.L()) {
             v.U();
         }
-        exxv exxvVar2 = (exxv) v.b;
+        famh famhVar2 = (famh) v.b;
         int i2 = i - 1;
         if (i == 0) {
             throw null;
         }
-        exxvVar2.d = i2;
-        exxvVar2.b |= 2;
-        exxv exxvVar3 = (exxv) v.Q();
+        famhVar2.d = i2;
+        famhVar2.b |= 2;
+        famh famhVar3 = (famh) v.Q();
         if (!L.b.L()) {
             L.U();
         }
-        exzg exzgVar = (exzg) L.b;
-        exzg exzgVar2 = exzg.a;
-        exxvVar3.getClass();
-        exzgVar.P = exxvVar3;
-        exzgVar.c |= 8192;
-        p(new cmck((exzg) L.Q()));
+        fans fansVar = (fans) L.b;
+        fans fansVar2 = fans.a;
+        famhVar3.getClass();
+        fansVar.P = famhVar3;
+        fansVar.c |= 8192;
+        p(new coks((fans) L.Q()));
     }
 
-    @Override // defpackage.clmm, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.cnuu, com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != 16908332) {
             return super.onOptionsItemSelected(menuItem);
@@ -218,19 +218,19 @@ public class ConsentsChimeraActivity extends clmm {
         return true;
     }
 
-    @Override // defpackage.clmm, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.cnuu, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onPause() {
         super.onPause();
-        cfcs.f(this, this.I);
+        chke.f(this, this.I);
     }
 
-    @Override // defpackage.clmm, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.cnuu, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
-        iln.b(this, this.I, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"), 2);
+        ind.b(this, this.I, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"), 2);
     }
 
-    @Override // defpackage.clmm
+    @Override // defpackage.cnuu
     protected final void r() {
         u();
     }
@@ -247,59 +247,59 @@ public class ConsentsChimeraActivity extends clmm {
     public final void u() {
         Account a = a();
         if (a == null) {
-            cmfe.a.e().p("Unable to enable device contacts: account is null.", new Object[0]);
+            conm.a.e().p("Unable to enable device contacts: account is null.", new Object[0]);
             v();
             return;
         }
         this.H.setText(a.name);
-        dfaq c = crll.c(this, a);
+        dhlw c = ctuq.c(this, a);
         final ImageView imageView = this.G;
         Objects.requireNonNull(imageView);
-        c.z(new dfak() { // from class: clnm
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        c.z(new dhlq() { // from class: cnvu
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 imageView.setImageBitmap((Bitmap) obj);
             }
         });
-        c.y(new dfah() { // from class: clnn
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
-                cmfe.a.b().f(exc).p("Failed to get account icon.", new Object[0]);
+        c.y(new dhln() { // from class: cnvv
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                conm.a.b().f(exc).p("Failed to get account icon.", new Object[0]);
             }
         });
-        dfaq d = crll.d(a);
-        d.z(new dfak() { // from class: clnd
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
-                ConsentsChimeraActivity.this.y.setText(((crlk) obj).a);
+        dhlw d = ctuq.d(a);
+        d.z(new dhlq() { // from class: cnvl
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
+                ConsentsChimeraActivity.this.y.setText(((ctup) obj).a);
             }
         });
-        d.y(new dfah() { // from class: clne
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
-                cmfe.a.b().f(exc).p("Failed to get the account name.", new Object[0]);
+        d.y(new dhln() { // from class: cnvm
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                conm.a.b().f(exc).p("Failed to get the account name.", new Object[0]);
             }
         });
-        dfaq c2 = cmsq.a(this).c(a);
-        c2.z(new dfak() { // from class: clnh
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        dhlw c2 = cpay.a(this).c(a);
+        c2.z(new dhlq() { // from class: cnvp
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 ConsentsChimeraActivity consentsChimeraActivity = ConsentsChimeraActivity.this;
-                cmsj cmsjVar = (cmsj) obj;
-                if (!((clmm) consentsChimeraActivity).s) {
+                cpar cparVar = (cpar) obj;
+                if (!((cnuu) consentsChimeraActivity).s) {
                     TransitionManager.beginDelayedTransition((ViewGroup) consentsChimeraActivity.findViewById(android.R.id.content));
                 }
                 consentsChimeraActivity.w.setVisibility(8);
-                consentsChimeraActivity.z.setText(cmsjVar.a);
-                clno clnoVar = new clno(consentsChimeraActivity, cmsjVar);
-                String str = cmsjVar.b;
+                consentsChimeraActivity.z.setText(cparVar.a);
+                cnvw cnvwVar = new cnvw(consentsChimeraActivity, cparVar);
+                String str = cparVar.b;
                 SpannableString spannableString = new SpannableString(str + " " + consentsChimeraActivity.getString(R.string.sharing_consents_link_learn_more));
-                spannableString.setSpan(clnoVar, str.length() + 1, spannableString.length(), 33);
+                spannableString.setSpan(cnvwVar, str.length() + 1, spannableString.length(), 33);
                 consentsChimeraActivity.A.setText(spannableString);
                 consentsChimeraActivity.A.setMovementMethod(LinkMovementMethod.getInstance());
-                consentsChimeraActivity.B.setText(cmsjVar.c);
-                consentsChimeraActivity.D.setText(cmsjVar.f);
-                consentsChimeraActivity.E.setText(cmsjVar.e);
+                consentsChimeraActivity.B.setText(cparVar.c);
+                consentsChimeraActivity.D.setText(cparVar.f);
+                consentsChimeraActivity.E.setText(cparVar.e);
                 consentsChimeraActivity.C.setVisibility(8);
                 consentsChimeraActivity.x.setVisibility(0);
                 consentsChimeraActivity.z.setVisibility(0);
@@ -309,9 +309,9 @@ public class ConsentsChimeraActivity extends clmm {
                 consentsChimeraActivity.E.setVisibility(0);
             }
         });
-        c2.y(new dfah() { // from class: clni
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        c2.y(new dhln() { // from class: cnvq
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 ConsentsChimeraActivity.this.w();
             }
         });

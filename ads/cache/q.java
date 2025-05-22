@@ -1,19 +1,19 @@
 package com.google.android.gms.ads.cache;
 
-import defpackage.fecj;
-import defpackage.feck;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.feeh;
-import defpackage.feen;
-import defpackage.feeq;
-import defpackage.feer;
+import defpackage.fgrc;
+import defpackage.fgrd;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fgta;
+import defpackage.fgtg;
+import defpackage.fgtj;
+import defpackage.fgtk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class q extends fecp implements feeh {
+public final class q extends fgri implements fgta {
     public static final q a;
-    private static volatile feen k;
+    private static volatile fgtg k;
     public int b;
     public long d;
     public long e;
@@ -21,21 +21,21 @@ public final class q extends fecp implements feeh {
     public boolean g;
     public int h;
     public int j;
-    public fedh c = feeq.a;
+    public fgsa c = fgtj.a;
     public long i = -1;
 
     static {
         q qVar = new q();
         a = qVar;
-        fecp.J(q.class, qVar);
+        fgri.J(q.class, qVar);
     }
 
     private q() {
     }
 
-    @Override // defpackage.fecp
-    public final Object iB(int i, Object obj) {
-        feen feenVar;
+    @Override // defpackage.fgri
+    public final Object iQ(int i, Object obj) {
+        fgtg fgtgVar;
         if (i == 0) {
             throw null;
         }
@@ -44,13 +44,13 @@ public final class q extends fecp implements feeh {
             return (byte) 1;
         }
         if (i2 == 2) {
-            return new feer(a, "\u0004\b\u0000\u0001\u0001\b\b\u0000\u0001\u0000\u0001\u001b\u0002ဂ\u0000\u0003ဂ\u0001\u0004ဂ\u0002\u0005ဇ\u0003\u0006င\u0004\u0007ဂ\u0005\b᠌\u0006", new Object[]{"b", com.google.android.gms.wallet.dynamite.util.c.a, p.class, "d", "e", "f", "g", "h", "i", "j", n.a});
+            return new fgtk(a, "\u0004\b\u0000\u0001\u0001\b\b\u0000\u0001\u0000\u0001\u001b\u0002ဂ\u0000\u0003ဂ\u0001\u0004ဂ\u0002\u0005ဇ\u0003\u0006င\u0004\u0007ဂ\u0005\b᠌\u0006", new Object[]{"b", com.google.android.gms.wallet.dynamite.util.c.a, p.class, "d", "e", "f", "g", "h", "i", "j", n.a});
         }
         if (i2 == 3) {
             return new q();
         }
         if (i2 == 4) {
-            return new fecj(a);
+            return new fgrc(a);
         }
         if (i2 == 5) {
             return a;
@@ -58,17 +58,17 @@ public final class q extends fecp implements feeh {
         if (i2 != 6) {
             throw null;
         }
-        feen feenVar2 = k;
-        if (feenVar2 != null) {
-            return feenVar2;
+        fgtg fgtgVar2 = k;
+        if (fgtgVar2 != null) {
+            return fgtgVar2;
         }
         synchronized (q.class) {
-            feenVar = k;
-            if (feenVar == null) {
-                feenVar = new feck(a);
-                k = feenVar;
+            fgtgVar = k;
+            if (fgtgVar == null) {
+                fgtgVar = new fgrd(a);
+                k = fgtgVar;
             }
         }
-        return feenVar;
+        return fgtgVar;
     }
 }

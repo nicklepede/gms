@@ -10,36 +10,36 @@ import com.google.android.gms.R;
 import com.google.android.gms.wearable.backup.wear.WearBackupLearnMoreChimeraActivity;
 import com.google.android.gms.wearable.backup.wear.WearBackupOptInChimeraActivity;
 import com.google.android.gms.wearable.backup.wear.WearBackupSettingsChimeraActivity;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.arxo;
-import defpackage.djlh;
-import defpackage.djlj;
-import defpackage.djrc;
-import defpackage.djtb;
-import defpackage.djus;
-import defpackage.djvx;
-import defpackage.djwe;
-import defpackage.djwf;
-import defpackage.djwh;
-import defpackage.dlul;
-import defpackage.ensj;
-import defpackage.qfp;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.auad;
+import defpackage.dlxa;
+import defpackage.dlxc;
+import defpackage.dmcv;
+import defpackage.dmeu;
+import defpackage.dmgl;
+import defpackage.dmhq;
+import defpackage.dmhx;
+import defpackage.dmhy;
+import defpackage.dmia;
+import defpackage.dogc;
+import defpackage.eqgc;
+import defpackage.ryt;
 import j$.util.Optional;
 import java.util.function.Supplier;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class WearBackupOptInChimeraActivity extends qfp {
-    public static final arxo j = new djlj("WearBackupOptIn");
+public final class WearBackupOptInChimeraActivity extends ryt {
+    public static final auad j = new dlxc("WearBackupOptIn");
     static final Optional k = Optional.empty();
-    public djrc l;
-    public djus m;
-    public abv n;
-    public abv o;
-    public abv p;
-    public dlul q;
+    public dmcv l;
+    public dmgl m;
+    public aca n;
+    public aca o;
+    public aca p;
+    public dogc q;
     public boolean r = false;
     public boolean s = false;
 
@@ -48,7 +48,7 @@ public final class WearBackupOptInChimeraActivity extends qfp {
     }
 
     public final void b(String str) {
-        ensj.t(this.l.e(), new djwf(this, str), new djvx(this));
+        eqgc.t(this.l.e(), new dmhy(this, str), new dmhq(this));
     }
 
     public final void c(final long j2) {
@@ -56,9 +56,9 @@ public final class WearBackupOptInChimeraActivity extends qfp {
         if (j2 == 0) {
             textView.setText(getString(R.string.wear_backup_opt_in_default_summary));
         } else {
-            textView.setText(getString(R.string.wear_backup_opt_in_summary, new Object[]{djlh.b(this, j2)}));
+            textView.setText(getString(R.string.wear_backup_opt_in_summary, new Object[]{dlxa.b(this, j2)}));
         }
-        ((Button) findViewById(R.id.learn_more_btn)).setOnClickListener(new View.OnClickListener() { // from class: djvy
+        ((Button) findViewById(R.id.learn_more_btn)).setOnClickListener(new View.OnClickListener() { // from class: dmhr
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 int i = WearBackupLearnMoreChimeraActivity.j;
@@ -74,128 +74,127 @@ public final class WearBackupOptInChimeraActivity extends qfp {
         }
     }
 
-    public final void g(final String str, final dlul dlulVar) {
-        arxo arxoVar = j;
-        arxoVar.j("Showing backup opt-in UI for account %s", arxo.q(str));
+    public final void g(final String str, final dogc dogcVar) {
+        auad auadVar = j;
+        auadVar.j("Showing backup opt-in UI for account %s", auad.q(str));
         ((TextView) findViewById(R.id.backup_account)).setText(str);
         c(0L);
-        ensj.t(this.l.d(str), new djwh(this), new djvx(this));
-        ((Button) findViewById(R.id.turn_on_btn)).setOnClickListener(new View.OnClickListener() { // from class: djvv
+        eqgc.t(this.l.d(str), new dmia(this), new dmhq(this));
+        ((Button) findViewById(R.id.turn_on_btn)).setOnClickListener(new View.OnClickListener() { // from class: dmho
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 view.setClickable(false);
                 WearBackupOptInChimeraActivity wearBackupOptInChimeraActivity = WearBackupOptInChimeraActivity.this;
-                djrc djrcVar = wearBackupOptInChimeraActivity.l;
-                esiu esiuVar = esiu.amT;
-                fecj v = esyt.a.v();
-                eswu eswuVar = eswu.a;
-                eswt eswtVar = (eswt) eswuVar.v();
-                eswtVar.k(R.string.backup_opt_in_title);
+                dmcv dmcvVar = wearBackupOptInChimeraActivity.l;
+                euyj euyjVar = euyj.anj;
+                fgrc v = evoj.a.v();
+                evmk evmkVar = evmk.a;
+                evmj evmjVar = (evmj) evmkVar.v();
+                evmjVar.k(R.string.backup_opt_in_title);
                 if (!v.b.L()) {
                     v.U();
                 }
-                esyt esytVar = (esyt) v.b;
-                eswu eswuVar2 = (eswu) eswtVar.Q();
-                eswuVar2.getClass();
-                esytVar.c = eswuVar2;
-                esytVar.b |= 1;
-                eswu eswuVar3 = eswu.a;
-                eswt eswtVar2 = (eswt) eswuVar3.v();
-                eswtVar2.k(R.string.wear_backup_opt_in_summary);
+                evoj evojVar = (evoj) v.b;
+                evmk evmkVar2 = (evmk) evmjVar.Q();
+                evmkVar2.getClass();
+                evojVar.c = evmkVar2;
+                evojVar.b |= 1;
+                evmj evmjVar2 = (evmj) evmkVar.v();
+                evmjVar2.k(R.string.wear_backup_opt_in_summary);
                 if (!v.b.L()) {
                     v.U();
                 }
-                esyt esytVar2 = (esyt) v.b;
-                eswu eswuVar4 = (eswu) eswtVar2.Q();
-                eswuVar4.getClass();
-                esytVar2.d = eswuVar4;
-                esytVar2.b |= 2;
-                eswt eswtVar3 = (eswt) eswuVar3.v();
-                eswtVar3.k(R.string.common_turn_on);
+                evoj evojVar2 = (evoj) v.b;
+                evmk evmkVar3 = (evmk) evmjVar2.Q();
+                evmkVar3.getClass();
+                evojVar2.d = evmkVar3;
+                evojVar2.b |= 2;
+                evmj evmjVar3 = (evmj) evmkVar.v();
+                evmjVar3.k(R.string.common_turn_on);
                 if (!v.b.L()) {
                     v.U();
                 }
-                esyt esytVar3 = (esyt) v.b;
-                eswu eswuVar5 = (eswu) eswtVar3.Q();
-                eswuVar5.getClass();
-                esytVar3.e = eswuVar5;
-                esytVar3.b |= 4;
+                evoj evojVar3 = (evoj) v.b;
+                evmk evmkVar4 = (evmk) evmjVar3.Q();
+                evmkVar4.getClass();
+                evojVar3.e = evmkVar4;
+                evojVar3.b |= 4;
                 if (!v.b.L()) {
                     v.U();
                 }
-                esyt esytVar4 = (esyt) v.b;
-                eswuVar3.getClass();
-                esytVar4.f = eswuVar3;
-                esytVar4.b |= 8;
+                evoj evojVar4 = (evoj) v.b;
+                evmkVar.getClass();
+                evojVar4.f = evmkVar;
+                evojVar4.b |= 8;
                 int i = WearBackupLearnMoreChimeraActivity.j;
-                eitj s = eitj.s(Integer.valueOf(R.string.backup_opt_in_storage_header), Integer.valueOf(R.string.backup_opt_in_storage_body), Integer.valueOf(R.string.backup_opt_in_scheduling_header), Integer.valueOf(R.string.backup_opt_in_scheduling_body), Integer.valueOf(R.string.backup_opt_in_encryption_header), Integer.valueOf(R.string.backup_opt_in_encryption_body), Integer.valueOf(R.string.backup_opt_in_settings_header_short), Integer.valueOf(R.string.backup_opt_in_settings_body));
-                eswt eswtVar4 = (eswt) eswuVar.v();
-                eswtVar4.a(s);
-                eswu eswuVar6 = (eswu) eswtVar4.Q();
+                elgo s = elgo.s(Integer.valueOf(R.string.backup_opt_in_storage_header), Integer.valueOf(R.string.backup_opt_in_storage_body), Integer.valueOf(R.string.backup_opt_in_scheduling_header), Integer.valueOf(R.string.backup_opt_in_scheduling_body), Integer.valueOf(R.string.backup_opt_in_encryption_header), Integer.valueOf(R.string.backup_opt_in_encryption_body), Integer.valueOf(R.string.backup_opt_in_settings_header_short), Integer.valueOf(R.string.backup_opt_in_settings_body));
+                evmj evmjVar4 = (evmj) evmkVar.v();
+                evmjVar4.a(s);
+                evmk evmkVar5 = (evmk) evmjVar4.Q();
                 if (!v.b.L()) {
                     v.U();
                 }
                 String str2 = str;
-                esyt esytVar5 = (esyt) v.b;
-                eswuVar6.getClass();
-                esytVar5.g = eswuVar6;
-                esytVar5.b |= 16;
-                ensj.t(djrcVar.b(str2, false, esiuVar, (esyt) v.Q(), null), new djwg(wearBackupOptInChimeraActivity, str2, view), new djvx(wearBackupOptInChimeraActivity));
+                evoj evojVar5 = (evoj) v.b;
+                evmkVar5.getClass();
+                evojVar5.g = evmkVar5;
+                evojVar5.b |= 16;
+                eqgc.t(dmcvVar.b(str2, false, euyjVar, (evoj) v.Q(), null), new dmhz(wearBackupOptInChimeraActivity, str2, view), new dmhq(wearBackupOptInChimeraActivity));
             }
         });
         Button button = (Button) findViewById(R.id.change_account_btn);
-        if (dlulVar.d.size() == 1) {
-            arxoVar.j("Only one eligible backup account, not showing change account button", new Object[0]);
+        if (dogcVar.d.size() == 1) {
+            auadVar.j("Only one eligible backup account, not showing change account button", new Object[0]);
             button.setVisibility(8);
         } else {
-            arxoVar.j("Multiple eligible backup accounts, showing change account button", new Object[0]);
+            auadVar.j("Multiple eligible backup accounts, showing change account button", new Object[0]);
             button.setVisibility(0);
-            button.setOnClickListener(new View.OnClickListener() { // from class: djvw
+            button.setOnClickListener(new View.OnClickListener() { // from class: dmhp
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    abv abvVar = WearBackupOptInChimeraActivity.this.p;
-                    eiig.x(abvVar);
-                    abvVar.b(dlulVar);
+                    aca acaVar = WearBackupOptInChimeraActivity.this.p;
+                    ekvl.y(acaVar);
+                    acaVar.b(dogcVar);
                 }
             });
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.l = (djrc) k.orElseGet(new Supplier() { // from class: djwa
+        this.l = (dmcv) k.orElseGet(new Supplier() { // from class: dmht
             @Override // java.util.function.Supplier
             public final Object get() {
-                return djsc.f(WearBackupOptInChimeraActivity.this);
+                return dmdv.f(WearBackupOptInChimeraActivity.this);
             }
         });
         j.j("onCreate", new Object[0]);
         setContentView(R.layout.wear_backup_opt_in_activity);
-        djtb.a(this, findViewById(R.id.container));
+        dmeu.a(this, findViewById(R.id.container));
         if (this.m == null) {
-            this.m = new djus();
+            this.m = new dmgl();
         }
-        getOnBackPressedDispatcher().b(this, new djwe(this));
-        this.p = WearBackupAccountPickerChimeraActivity.a(this, new abt() { // from class: djwb
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        getOnBackPressedDispatcher().b(this, new dmhx(this));
+        this.p = WearBackupAccountPickerChimeraActivity.a(this, new aby() { // from class: dmhu
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 String str = (String) obj;
                 if (TextUtils.isEmpty(str)) {
                     return;
                 }
                 WearBackupOptInChimeraActivity wearBackupOptInChimeraActivity = WearBackupOptInChimeraActivity.this;
-                eiig.y(wearBackupOptInChimeraActivity.q, "BackupStatus cache is null.");
-                dlul dlulVar = wearBackupOptInChimeraActivity.q;
-                if (dlulVar.c) {
-                    dluj dlujVar = dlulVar.e;
-                    if (dlujVar == null) {
-                        dlujVar = dluj.a;
+                ekvl.z(wearBackupOptInChimeraActivity.q, "BackupStatus cache is null.");
+                dogc dogcVar = wearBackupOptInChimeraActivity.q;
+                if (dogcVar.c) {
+                    doga dogaVar = dogcVar.e;
+                    if (dogaVar == null) {
+                        dogaVar = doga.a;
                     }
-                    String str2 = dlujVar.c;
-                    eiig.x(str);
-                    if (eigd.e(str2, str)) {
-                        WearBackupOptInChimeraActivity.j.j("Backup already enabled for %s, opening backup settings", arxo.q(str));
+                    String str2 = dogaVar.c;
+                    ekvl.y(str);
+                    if (ekti.e(str2, str)) {
+                        WearBackupOptInChimeraActivity.j.j("Backup already enabled for %s, opening backup settings", auad.q(str));
                         wearBackupOptInChimeraActivity.startActivity(WearBackupSettingsChimeraActivity.b());
                         wearBackupOptInChimeraActivity.finish();
                         return;
@@ -204,18 +203,18 @@ public final class WearBackupOptInChimeraActivity extends qfp {
                 wearBackupOptInChimeraActivity.g(str, wearBackupOptInChimeraActivity.q);
             }
         });
-        this.o = registerForActivityResult(new acl(), new abt() { // from class: djwc
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        this.o = registerForActivityResult(new acq(), new aby() { // from class: dmhv
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 WearBackupOptInChimeraActivity.j.j("User finished add account activity", new Object[0]);
                 WearBackupOptInChimeraActivity wearBackupOptInChimeraActivity = WearBackupOptInChimeraActivity.this;
                 wearBackupOptInChimeraActivity.s = true;
                 wearBackupOptInChimeraActivity.b(null);
             }
         });
-        this.n = WearBackupConfirmationChimeraActivity.a(this, new abt() { // from class: djwd
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        this.n = WearBackupConfirmationChimeraActivity.a(this, new aby() { // from class: dmhw
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 boolean booleanValue = ((Boolean) obj).booleanValue();
                 WearBackupOptInChimeraActivity wearBackupOptInChimeraActivity = WearBackupOptInChimeraActivity.this;
                 if (!booleanValue) {
@@ -223,9 +222,9 @@ public final class WearBackupOptInChimeraActivity extends qfp {
                     wearBackupOptInChimeraActivity.finish();
                 } else {
                     WearBackupOptInChimeraActivity.j.j("User chose to add account, launching add account activity", new Object[0]);
-                    abv abvVar = wearBackupOptInChimeraActivity.o;
-                    eiig.x(abvVar);
-                    abvVar.b(new Intent("com.google.android.clockwork.home.accounts.ADD_ACCOUNTS").setClassName("com.google.android.wearable.app", "com.google.android.clockwork.home.accounts.AddAccountActivity"));
+                    aca acaVar = wearBackupOptInChimeraActivity.o;
+                    ekvl.y(acaVar);
+                    acaVar.b(new Intent("com.google.android.clockwork.home.accounts.ADD_ACCOUNTS").setClassName("com.google.android.wearable.app", "com.google.android.clockwork.home.accounts.AddAccountActivity"));
                 }
             }
         });

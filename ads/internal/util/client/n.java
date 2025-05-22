@@ -2,14 +2,14 @@ package com.google.android.gms.ads.internal.util.client;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arxb;
+import defpackage.atzq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class n implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int h = arxb.h(parcel);
+        int h = atzq.h(parcel);
         int i = 0;
         int i2 = 0;
         boolean z = false;
@@ -17,22 +17,22 @@ public final class n implements Parcelable.Creator {
         String str = null;
         while (parcel.dataPosition() < h) {
             int readInt = parcel.readInt();
-            int d = arxb.d(readInt);
+            int d = atzq.d(readInt);
             if (d == 2) {
-                str = arxb.s(parcel, readInt);
+                str = atzq.s(parcel, readInt);
             } else if (d == 3) {
-                i = arxb.f(parcel, readInt);
+                i = atzq.f(parcel, readInt);
             } else if (d == 4) {
-                i2 = arxb.f(parcel, readInt);
+                i2 = atzq.f(parcel, readInt);
             } else if (d == 5) {
-                z = arxb.D(parcel, readInt);
+                z = atzq.D(parcel, readInt);
             } else if (d != 6) {
-                arxb.C(parcel, readInt);
+                atzq.C(parcel, readInt);
             } else {
-                z2 = arxb.D(parcel, readInt);
+                z2 = atzq.D(parcel, readInt);
             }
         }
-        arxb.A(parcel, h);
+        atzq.A(parcel, h);
         return new VersionInfoParcel(str, i, i2, z, z2);
     }
 

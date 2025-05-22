@@ -3,13 +3,13 @@ package com.google.android.gms.auth.proximity.phonehub;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.service.notification.NotificationListenerService;
-import defpackage.acxe;
-import defpackage.arwm;
+import defpackage.aexe;
+import defpackage.atzb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ParcelableRanking implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new acxe();
+    public static final Parcelable.Creator CREATOR = new aexe();
     final NotificationListenerService.RankingMap a;
     final String b;
 
@@ -38,7 +38,7 @@ public class ParcelableRanking implements Parcelable {
     public ParcelableRanking(Parcel parcel) {
         this.a = (NotificationListenerService.RankingMap) NotificationListenerService.RankingMap.CREATOR.createFromParcel(parcel);
         String readString = parcel.readString();
-        arwm.s(readString);
+        atzb.s(readString);
         this.b = readString;
     }
 }

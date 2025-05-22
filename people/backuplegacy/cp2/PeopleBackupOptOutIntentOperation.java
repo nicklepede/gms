@@ -4,68 +4,68 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.ctkm;
-import defpackage.ctnp;
-import defpackage.ctnz;
-import defpackage.ctoc;
-import defpackage.ctod;
-import defpackage.ctof;
-import defpackage.cuey;
-import defpackage.cufp;
-import defpackage.eiif;
-import defpackage.ekwj;
-import defpackage.ekwk;
-import defpackage.fecj;
-import defpackage.frhu;
+import defpackage.cvts;
+import defpackage.cvwv;
+import defpackage.cvxf;
+import defpackage.cvxi;
+import defpackage.cvxj;
+import defpackage.cvxl;
+import defpackage.cwof;
+import defpackage.cwow;
+import defpackage.ekvk;
+import defpackage.enjv;
+import defpackage.enjw;
+import defpackage.fgrc;
+import defpackage.fubp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class PeopleBackupOptOutIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Boolean valueOf;
         Boolean valueOf2;
-        cufp.O();
-        valueOf = Boolean.valueOf(frhu.a.a().aq());
+        cwow.N();
+        valueOf = Boolean.valueOf(fubp.a.lK().aq());
         if (valueOf.booleanValue()) {
             Context applicationContext = getApplicationContext();
             intent.getAction();
             String action = intent.getAction();
             if (!"com.google.android.gms.backup.action.OPT_OUT".equals(action)) {
-                cuey.n("BackupOptOutIntentOperation", "Received unexcepted message: %s", action);
+                cwof.n("CBR_BackupOptOutIntentOperation", "Received unexcepted message: %s", action);
                 return;
             }
             String string = intent.getExtras().getString("com.google.android.gms.backup.extra.optOut.accountName");
-            valueOf2 = Boolean.valueOf(frhu.a.a().ak());
-            if (valueOf2.booleanValue() || cufp.a().booleanValue()) {
+            valueOf2 = Boolean.valueOf(fubp.a.lK().ak());
+            if (valueOf2.booleanValue() || cwow.a().booleanValue()) {
                 try {
-                    if (eiif.c(string)) {
-                        cuey.l("BackupOptOutIntentOperation", "Backup account null or empty");
+                    if (ekvk.c(string)) {
+                        cwof.l("CBR_BackupOptOutIntentOperation", "Backup account null or empty");
                         return;
                     }
-                    ctnz ctnzVar = new ctnz();
-                    ctnzVar.c = System.currentTimeMillis();
-                    ctnzVar.a = string;
-                    ctof.a().b(new ctod(ctnp.a(applicationContext), ctnzVar, new ctoc(applicationContext)));
+                    cvxf cvxfVar = new cvxf();
+                    cvxfVar.b = System.currentTimeMillis();
+                    cvxfVar.a = string;
+                    cvxl.a().b(new cvxj(cvwv.a(applicationContext), cvxfVar, new cvxi(applicationContext)));
                 } catch (Exception unused) {
-                    ctkm a = ctkm.a();
-                    fecj v = ekwj.a.v();
+                    cvts a = cvts.a();
+                    fgrc v = enjv.a.v();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ekwj ekwjVar = (ekwj) v.b;
-                    ekwjVar.b |= 512;
-                    ekwjVar.l = true;
-                    ekwj ekwjVar2 = (ekwj) v.Q();
-                    fecj v2 = ekwk.a.v();
+                    enjv enjvVar = (enjv) v.b;
+                    enjvVar.b |= 512;
+                    enjvVar.i = true;
+                    enjv enjvVar2 = (enjv) v.Q();
+                    fgrc v2 = enjw.a.v();
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    ekwk ekwkVar = (ekwk) v2.b;
-                    ekwjVar2.getClass();
-                    ekwkVar.m = ekwjVar2;
-                    ekwkVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_MULTI_LINE;
-                    a.b((ekwk) v2.Q());
+                    enjw enjwVar = (enjw) v2.b;
+                    enjvVar2.getClass();
+                    enjwVar.m = enjvVar2;
+                    enjwVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_MULTI_LINE;
+                    a.b((enjw) v2.Q());
                 }
             }
         }

@@ -5,14 +5,14 @@ import android.os.Parcelable;
 import android.os.WorkSource;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.presence.log.NearbyPresenceDiscoveryRequestAttribution;
-import defpackage.arxc;
-import defpackage.ckjr;
+import defpackage.atzr;
+import defpackage.cmrw;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class DiscoveryRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckjr();
+    public static final Parcelable.Creator CREATOR = new cmrw();
     public final boolean a;
     public final long b;
     public final boolean c;
@@ -69,15 +69,15 @@ public class DiscoveryRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.a;
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, z);
-        arxc.q(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.p(parcel, 4, a(), false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.q(parcel, 7, this.f);
-        arxc.t(parcel, 8, this.g, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, z);
+        atzr.q(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.p(parcel, 4, a(), false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.q(parcel, 7, this.f);
+        atzr.t(parcel, 8, this.g, i, false);
+        atzr.c(parcel, a);
     }
 }

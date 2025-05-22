@@ -14,58 +14,58 @@ import com.google.android.gms.R;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.nearby.sharing.DeviceVisibility;
 import com.google.android.gms.nearby.sharing.SharingChimeraTileService;
-import defpackage.asmf;
-import defpackage.asqh;
-import defpackage.cewl;
-import defpackage.cfcs;
-import defpackage.cmaz;
-import defpackage.cmck;
-import defpackage.cmdb;
-import defpackage.cmdh;
-import defpackage.cmfe;
-import defpackage.cmfy;
-import defpackage.crlp;
-import defpackage.crlw;
-import defpackage.dezt;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.dfau;
-import defpackage.dwdg;
-import defpackage.eiig;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.exft;
-import defpackage.exwv;
-import defpackage.exyf;
-import defpackage.exzg;
-import defpackage.fecj;
-import defpackage.fqjv;
-import defpackage.fqmk;
-import defpackage.fqmn;
+import defpackage.aupz;
+import defpackage.auub;
+import defpackage.chdw;
+import defpackage.chke;
+import defpackage.cojh;
+import defpackage.coks;
+import defpackage.colj;
+import defpackage.colp;
+import defpackage.conm;
+import defpackage.coog;
+import defpackage.ctuu;
+import defpackage.ctvb;
+import defpackage.dhkz;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.dhma;
+import defpackage.dyph;
+import defpackage.ekvl;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.ezuc;
+import defpackage.falh;
+import defpackage.famr;
+import defpackage.fans;
+import defpackage.fgrc;
+import defpackage.ftdn;
+import defpackage.ftgf;
+import defpackage.ftgi;
 import java.security.SecureRandom;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SharingChimeraTileService extends TileService {
     public static final /* synthetic */ int d = 0;
     private static final AtomicInteger e = new AtomicInteger(new SecureRandom().nextInt());
-    public cmdb a;
-    public eijr c;
-    private cmaz f;
+    public colj a;
+    public ekww c;
+    private cojh f;
     private boolean g;
     private boolean h;
     private int i = -1;
-    final ExecutorService b = new asmf(1, 9);
+    final ExecutorService b = new aupz(1, 9);
     private BroadcastReceiver j = null;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     /* renamed from: com.google.android.gms.nearby.sharing.SharingChimeraTileService$1, reason: invalid class name */
     public class AnonymousClass1 extends TracingBroadcastReceiver {
         public AnonymousClass1(Context context) {
@@ -73,11 +73,11 @@ public class SharingChimeraTileService extends TileService {
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
-            cmfe.a.b().p("Invalidate tile state due to state change.", new Object[0]);
-            SharingChimeraTileService.this.a().i().z(new dfak() { // from class: cmax
-                @Override // defpackage.dfak
-                public final void gn(Object obj) {
+        public final void jP(Context context, Intent intent) {
+            conm.a.b().p("Invalidate tile state due to state change.", new Object[0]);
+            SharingChimeraTileService.this.a().i().z(new dhlq() { // from class: cojf
+                @Override // defpackage.dhlq
+                public final void gC(Object obj) {
                     int i = ((DeviceVisibility) obj).f;
                     boolean z = i != 0;
                     SharingChimeraTileService sharingChimeraTileService = SharingChimeraTileService.this;
@@ -88,9 +88,9 @@ public class SharingChimeraTileService extends TileService {
         }
     }
 
-    public final cmaz a() {
+    public final cojh a() {
         if (this.f == null) {
-            this.f = cewl.e(this);
+            this.f = chdw.e(this);
         }
         return this.f;
     }
@@ -106,17 +106,17 @@ public class SharingChimeraTileService extends TileService {
         String str;
         Tile qsTile = getQsTile();
         if (qsTile == null) {
-            cmfe.a.b().p("Failed to invalidate tile state.", new Object[0]);
+            conm.a.b().p("Failed to invalidate tile state.", new Object[0]);
             return;
         }
-        this.h = exft.b(this);
+        this.h = ezuc.b(this);
         if (z) {
             qsTile.setLabel(getResources().getString(R.string.sharing_product_name_v3));
         } else {
             qsTile.setLabel(getResources().getString(R.string.sharing_product_name));
         }
-        boolean g = crlw.g(this);
-        if (asqh.f()) {
+        boolean g = ctvb.g(this);
+        if (auub.f()) {
             if (g) {
                 if (this.h) {
                     int i = this.i;
@@ -142,17 +142,17 @@ public class SharingChimeraTileService extends TileService {
         } else {
             qsTile.setState(1);
         }
-        if (!asqh.c()) {
+        if (!auub.c()) {
             if (z) {
-                f = crlp.f(getResources().getDrawable(R.drawable.sharing_ic_v3_foreground));
-            } else if (this.g && this.h && crlw.g(this)) {
-                f = crlp.f(getResources().getDrawable(R.drawable.sharing_ic_tile));
-                cmfe.a.d().p("Quick tile is displaying an enabled state.", new Object[0]);
+                f = ctuu.f(getResources().getDrawable(R.drawable.sharing_ic_v3_foreground));
+            } else if (this.g && this.h && ctvb.g(this)) {
+                f = ctuu.f(getResources().getDrawable(R.drawable.sharing_ic_tile));
+                conm.a.d().p("Quick tile is displaying an enabled state.", new Object[0]);
             } else {
-                f = crlp.f(getResources().getDrawable(R.drawable.sharing_ic_tile_disabled));
-                cmfe.a.d().p("Quick tile is displaying a disabled state.", new Object[0]);
+                f = ctuu.f(getResources().getDrawable(R.drawable.sharing_ic_tile_disabled));
+                conm.a.d().p("Quick tile is displaying a disabled state.", new Object[0]);
             }
-            if (!asqh.c()) {
+            if (!auub.c()) {
                 state = qsTile.getState();
                 if (state != 2) {
                     f.setTint(-16777216);
@@ -167,26 +167,26 @@ public class SharingChimeraTileService extends TileService {
 
     public final void c(String str) {
         Intent className = new Intent().addFlags(268435456).addFlags(32768).setClassName(this, str);
-        if (fqmk.a.a().y()) {
+        if (ftgf.a.lK().y()) {
             className.setClassName(this, "com.google.android.gms.nearby.sharing.receive.ReceiveActivity");
             className.putExtra("enable_send_button_on_receive_ui", true);
         }
-        if (fqjv.c()) {
+        if (ftdn.c()) {
             className.setClassName(this, "com.google.android.gms.nearby.sharing.main.MainActivity");
         }
-        if (isLocked() || asqh.f()) {
+        if (isLocked() || auub.f()) {
             startActivityAndCollapse(className);
             return;
         }
         try {
             int andIncrement = e.getAndIncrement();
-            ClipData clipData = dwdg.a;
-            PendingIntent a = dwdg.a(this, andIncrement, className, 201326592);
-            eiig.x(a);
+            ClipData clipData = dyph.a;
+            PendingIntent a = dyph.a(this, andIncrement, className, 201326592);
+            ekvl.y(a);
             a.send();
             sendBroadcast(new Intent("android.intent.action.CLOSE_SYSTEM_DIALOGS"));
         } catch (PendingIntent.CanceledException e2) {
-            cmfe.a.e().f(e2).h("SharingTileService failed to launch %s", str);
+            conm.a.e().f(e2).h("SharingTileService failed to launch %s", str);
         }
     }
 
@@ -201,75 +201,75 @@ public class SharingChimeraTileService extends TileService {
     }
 
     public final boolean f() {
-        return fqmk.d().isEmpty() && cmfy.a(this) == null;
+        return ftgf.d().isEmpty() && coog.a(this) == null;
     }
 
     @Override // com.google.android.chimera.TileService
     public final void onClick() {
-        fqmn.m();
-        final dfaq d2 = a().d();
-        final dfau dfauVar = new dfau();
-        Callable callable = new Callable() { // from class: cmaq
+        ftgi.m();
+        final dhlw d2 = a().d();
+        final dhma dhmaVar = new dhma();
+        Callable callable = new Callable() { // from class: coiy
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                return Boolean.valueOf(((abny) SharingChimeraTileService.this.c.a()).c());
+                return Boolean.valueOf(((adny) SharingChimeraTileService.this.c.lK()).c());
             }
         };
         ExecutorService executorService = this.b;
-        final enss m = ensj.m(callable, executorService);
-        m.hn(new Runnable() { // from class: cmar
+        final eqgl m = eqgc.m(callable, executorService);
+        m.hD(new Runnable() { // from class: coiz
             @Override // java.lang.Runnable
             public final void run() {
                 int i = SharingChimeraTileService.d;
-                dfau dfauVar2 = dfau.this;
+                dhma dhmaVar2 = dhma.this;
                 try {
-                    dfauVar2.b((Boolean) ((enpf) m).u());
+                    dhmaVar2.b((Boolean) ((eqcy) m).u());
                 } catch (InterruptedException | ExecutionException e2) {
-                    dfauVar2.a(e2);
+                    dhmaVar2.a(e2);
                 }
             }
         }, executorService);
-        dfaq d3 = dfauVar.a.d(new dezt() { // from class: cmau
-            @Override // defpackage.dezt
-            public final Object a(dfaq dfaqVar) {
+        dhlw d3 = dhmaVar.a.d(new dhkz() { // from class: cojc
+            @Override // defpackage.dhkz
+            public final Object a(dhlw dhlwVar) {
                 int i = SharingChimeraTileService.d;
-                if (!dfaqVar.m()) {
-                    cmfe.a.c().p("Error retrieve FPR status, cannot open Nearby Share from quick settings", new Object[0]);
-                    return dfbl.b();
+                if (!dhlwVar.m()) {
+                    conm.a.c().p("Error retrieve FPR status, cannot open Nearby Share from quick settings", new Object[0]);
+                    return dhmr.b();
                 }
-                dfaq dfaqVar2 = dfaq.this;
-                if (!((Boolean) dfaqVar.i()).booleanValue()) {
-                    return dfaqVar2;
+                dhlw dhlwVar2 = dhlw.this;
+                if (!((Boolean) dhlwVar.i()).booleanValue()) {
+                    return dhlwVar2;
                 }
-                cmfe.a.b().p("FRP on, ignoring quick settings click", new Object[0]);
-                return dfbl.b();
+                conm.a.b().p("FRP on, ignoring quick settings click", new Object[0]);
+                return dhmr.b();
             }
         });
-        d3.z(new dfak() { // from class: cmav
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        d3.z(new dhlq() { // from class: cojd
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 SharingChimeraTileService sharingChimeraTileService = SharingChimeraTileService.this;
                 sharingChimeraTileService.c("com.google.android.gms.nearby.sharing.quicksettings.QuickSettingsActivity");
                 sharingChimeraTileService.a.h(sharingChimeraTileService.getApplicationContext(), (Account) obj);
-                cmdb cmdbVar = sharingChimeraTileService.a;
-                fecj L = cmdh.L(40);
-                exzb exzbVar = exzb.a;
+                colj coljVar = sharingChimeraTileService.a;
+                fgrc L = colp.L(40);
+                fann fannVar = fann.a;
                 if (!L.b.L()) {
                     L.U();
                 }
-                exzg exzgVar = (exzg) L.b;
-                exzg exzgVar2 = exzg.a;
-                exzbVar.getClass();
-                exzgVar.M = exzbVar;
-                exzgVar.c |= 1024;
-                cmdbVar.i(new cmck((exzg) L.Q()));
+                fans fansVar = (fans) L.b;
+                fans fansVar2 = fans.a;
+                fannVar.getClass();
+                fansVar.M = fannVar;
+                fansVar.c |= 1024;
+                coljVar.i(new coks((fans) L.Q()));
             }
         });
-        d3.y(new dfah() { // from class: cmaw
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        d3.y(new dhln() { // from class: coje
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 SharingChimeraTileService sharingChimeraTileService = SharingChimeraTileService.this;
-                if (crmo.a(sharingChimeraTileService)) {
+                if (ctvt.a(sharingChimeraTileService)) {
                     sharingChimeraTileService.c("com.google.android.gms.nearby.sharing.quicksettings.QuickSettingsActivity");
                 } else {
                     sharingChimeraTileService.c("com.google.android.gms.nearby.sharing.receive.ReceiveActivity");
@@ -282,38 +282,38 @@ public class SharingChimeraTileService extends TileService {
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        this.c = eijy.a(new eijr() { // from class: cmas
-            @Override // defpackage.eijr
-            public final Object a() {
-                return new abny(SharingChimeraTileService.this.getApplicationContext());
+        this.c = ekxd.a(new ekww() { // from class: coja
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return new adny(SharingChimeraTileService.this.getApplicationContext());
             }
         });
-        this.a = cmdb.f(this);
-        if (fqmn.m()) {
+        this.a = colj.f(this);
+        if (ftgi.m()) {
             AnonymousClass1 anonymousClass1 = new AnonymousClass1(this);
             this.j = anonymousClass1;
-            cfcs.b(this, anonymousClass1, new IntentFilter("com.google.android.gms.nearby.sharing.STATE_CHANGED"));
+            chke.b(this, anonymousClass1, new IntentFilter("com.google.android.gms.nearby.sharing.STATE_CHANGED"));
         }
-        cmfe.a.b().p("SharingTileService created.", new Object[0]);
+        conm.a.b().p("SharingTileService created.", new Object[0]);
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
         BroadcastReceiver broadcastReceiver;
         super.onDestroy();
-        if (fqmn.m() && (broadcastReceiver = this.j) != null) {
-            cfcs.f(this, broadcastReceiver);
+        if (ftgi.m() && (broadcastReceiver = this.j) != null) {
+            chke.f(this, broadcastReceiver);
             this.j = null;
         }
-        cmfe.a.b().p("SharingTileService destroyed", new Object[0]);
+        conm.a.b().p("SharingTileService destroyed", new Object[0]);
     }
 
     @Override // com.google.android.chimera.TileService
     public final void onStartListening() {
         b(f());
-        a().i().z(new dfak() { // from class: cmat
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        a().i().z(new dhlq() { // from class: cojb
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 int i = ((DeviceVisibility) obj).f;
                 boolean z = i != 0;
                 SharingChimeraTileService sharingChimeraTileService = SharingChimeraTileService.this;
@@ -321,59 +321,59 @@ public class SharingChimeraTileService extends TileService {
                 sharingChimeraTileService.e(i);
             }
         });
-        if (fqmn.m()) {
+        if (ftgi.m()) {
             return;
         }
         TracingBroadcastReceiver tracingBroadcastReceiver = new TracingBroadcastReceiver(this) { // from class: com.google.android.gms.nearby.sharing.SharingChimeraTileService.2
             @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-            public final void jz(Context context, Intent intent) {
+            public final void jP(Context context, Intent intent) {
                 SharingChimeraTileService sharingChimeraTileService = SharingChimeraTileService.this;
                 sharingChimeraTileService.b(sharingChimeraTileService.f());
             }
         };
         this.j = tracingBroadcastReceiver;
-        cfcs.b(this, tracingBroadcastReceiver, new IntentFilter("com.google.android.gms.nearby.sharing.STATE_CHANGED"));
+        chke.b(this, tracingBroadcastReceiver, new IntentFilter("com.google.android.gms.nearby.sharing.STATE_CHANGED"));
     }
 
     @Override // com.google.android.chimera.TileService
     public final void onStopListening() {
         BroadcastReceiver broadcastReceiver;
-        if (fqmn.m() || (broadcastReceiver = this.j) == null) {
+        if (ftgi.m() || (broadcastReceiver = this.j) == null) {
             return;
         }
-        cfcs.f(this, broadcastReceiver);
+        chke.f(this, broadcastReceiver);
         this.j = null;
     }
 
     @Override // com.google.android.chimera.TileService
     public final void onTileAdded() {
-        cmdb cmdbVar = this.a;
-        fecj L = cmdh.L(37);
-        exwv exwvVar = exwv.a;
+        colj coljVar = this.a;
+        fgrc L = colp.L(37);
+        falh falhVar = falh.a;
         if (!L.b.L()) {
             L.U();
         }
-        exzg exzgVar = (exzg) L.b;
-        exzg exzgVar2 = exzg.a;
-        exwvVar.getClass();
-        exzgVar.K = exwvVar;
-        exzgVar.c |= 128;
-        cmdbVar.i(new cmck((exzg) L.Q()));
+        fans fansVar = (fans) L.b;
+        fans fansVar2 = fans.a;
+        falhVar.getClass();
+        fansVar.K = falhVar;
+        fansVar.c |= 128;
+        coljVar.i(new coks((fans) L.Q()));
     }
 
     @Override // com.google.android.chimera.TileService
     public final void onTileRemoved() {
-        cmdb cmdbVar = this.a;
-        fecj L = cmdh.L(38);
-        exyf exyfVar = exyf.a;
+        colj coljVar = this.a;
+        fgrc L = colp.L(38);
+        famr famrVar = famr.a;
         if (!L.b.L()) {
             L.U();
         }
-        exzg exzgVar = (exzg) L.b;
-        exzg exzgVar2 = exzg.a;
-        exyfVar.getClass();
-        exzgVar.L = exyfVar;
-        exzgVar.c |= 256;
-        cmdbVar.i(new cmck((exzg) L.Q()));
+        fans fansVar = (fans) L.b;
+        fans fansVar2 = fans.a;
+        famrVar.getClass();
+        fansVar.L = famrVar;
+        fansVar.c |= 256;
+        coljVar.i(new coks((fans) L.Q()));
     }
 }

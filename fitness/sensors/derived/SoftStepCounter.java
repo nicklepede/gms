@@ -8,40 +8,41 @@ import android.os.Handler;
 import android.os.RemoteException;
 import com.google.android.gms.fitness.sensors.derived.SoftStepCounter;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.asot;
-import defpackage.bgen;
-import defpackage.bgep;
-import defpackage.bgeq;
-import defpackage.bgey;
-import defpackage.bgfe;
-import defpackage.bgmo;
-import defpackage.bgmp;
-import defpackage.bgmq;
-import defpackage.bgmr;
-import defpackage.bgmu;
-import defpackage.bgox;
-import defpackage.bgpb;
-import defpackage.bgpc;
-import defpackage.bgzy;
-import defpackage.bhaf;
-import defpackage.bwsc;
-import defpackage.dyxz;
-import defpackage.eitj;
-import defpackage.ejcb;
-import defpackage.ejhf;
-import defpackage.ensj;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.fecj;
-import defpackage.fhrk;
-import defpackage.fhrt;
-import defpackage.fhrv;
-import defpackage.fhrw;
-import defpackage.fhrz;
-import defpackage.fhxi;
-import defpackage.fhxj;
-import defpackage.fodw;
-import defpackage.juc;
+import defpackage.ausn;
+import defpackage.bijd;
+import defpackage.bijf;
+import defpackage.bijg;
+import defpackage.bijo;
+import defpackage.biju;
+import defpackage.bire;
+import defpackage.birf;
+import defpackage.birg;
+import defpackage.birh;
+import defpackage.birk;
+import defpackage.bitn;
+import defpackage.bitr;
+import defpackage.bits;
+import defpackage.bjeo;
+import defpackage.bjev;
+import defpackage.bzas;
+import defpackage.ebkk;
+import defpackage.elgo;
+import defpackage.elpg;
+import defpackage.eluo;
+import defpackage.eqgc;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.fgrc;
+import defpackage.fkhh;
+import defpackage.fkho;
+import defpackage.fkhq;
+import defpackage.fkhs;
+import defpackage.fkht;
+import defpackage.fkhw;
+import defpackage.fknf;
+import defpackage.fkng;
+import defpackage.fqwf;
+import defpackage.kar;
 import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -51,18 +52,18 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class SoftStepCounter extends TracingBroadcastReceiver implements bgmo {
-    private static final asot e = bhaf.a();
-    private static final fhrz f = fhrk.aR;
-    public final bgpb a;
+public final class SoftStepCounter extends TracingBroadcastReceiver implements bire {
+    private static final ausn e = bjev.a();
+    private static final fkhw f = fkhh.aR;
+    public final bitr a;
     public final AtomicLong b;
     public final AtomicInteger c;
-    public final bwsc d;
+    public final bzas d;
     private final Handler g;
     private final Context h;
-    private final fhrw i;
+    private final fkht i;
     private final long j;
     private final AtomicReference k;
     private final PendingIntent l;
@@ -70,136 +71,136 @@ public final class SoftStepCounter extends TracingBroadcastReceiver implements b
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public SoftStepCounter(Context context, Handler handler) {
         super("fitness");
-        long q = fodw.a.a().q();
-        fodw fodwVar = fodw.a;
-        bwsc bwscVar = new bwsc(q, fodwVar.a().o(), (int) fodwVar.a().p(), (float) fodwVar.a().a(), 0.8f);
+        fqwf fqwfVar = fqwf.a;
+        bzas bzasVar = new bzas(fqwfVar.lK().q(), fqwfVar.lK().o(), (int) fqwfVar.lK().p(), (float) fqwfVar.lK().a(), 0.8f);
         this.k = new AtomicReference();
-        this.a = new bgpb();
+        this.a = new bitr();
         this.b = new AtomicLong(0L);
         this.c = new AtomicInteger(0);
-        this.d = bwscVar;
+        this.d = bzasVar;
         this.h = context;
         Intent intent = new Intent("com.google.fitness.soft_step_count.ACTION");
-        intent.setPackage(bgen.a.c);
+        fkho fkhoVar = bijd.a;
+        intent.setPackage(fkhoVar.c);
         this.l = PendingIntent.getBroadcast(context, 0, intent, 0);
-        int i = bgeq.b;
-        fhrt fhrtVar = (fhrt) fhrw.a.v();
-        if (!fhrtVar.b.L()) {
-            fhrtVar.U();
+        int i = bijg.b;
+        fkhq fkhqVar = (fkhq) fkht.a.v();
+        if (!fkhqVar.b.L()) {
+            fkhqVar.U();
         }
-        fhrw fhrwVar = (fhrw) fhrtVar.b;
-        fhrwVar.b |= 4;
-        fhrwVar.e = "";
-        bgep.g(fhrv.DERIVED, fhrtVar);
-        bgep.d(f, fhrtVar);
-        bgep.b(bgen.a, fhrtVar);
-        bgep.e(bgzy.a(context), fhrtVar);
-        bgep.c("soft_step_counter", fhrtVar);
-        this.i = bgep.a(fhrtVar);
+        fkht fkhtVar = (fkht) fkhqVar.b;
+        fkhtVar.b |= 4;
+        fkhtVar.e = "";
+        bijf.g(fkhs.DERIVED, fkhqVar);
+        bijf.d(f, fkhqVar);
+        bijf.b(fkhoVar, fkhqVar);
+        bijf.e(bjeo.a(context), fkhqVar);
+        bijf.c("soft_step_counter", fkhqVar);
+        this.i = bijf.a(fkhqVar);
         this.j = j();
         this.g = handler;
-        juc.a(context).c(this, new IntentFilter("com.google.android.location.internal.SAMPLED_SENSOR"));
+        kar.a(context).c(this, new IntentFilter("com.google.android.location.internal.SAMPLED_SENSOR"));
     }
 
     public static long j() {
         return TimeUnit.MILLISECONDS.toNanos(System.currentTimeMillis());
     }
 
-    public final void b(bgmp bgmpVar, long j, long j2, long j3) {
+    public final void b(birf birfVar, long j, long j2, long j3) {
         long j4 = this.j;
         if (j < j4) {
-            ((ejhf) ((ejhf) e.i()).ah(4717)).T("Invalid step count emitted. Start time: %d, End time: %d, Now: %d", Long.valueOf(j4), Long.valueOf(j), Long.valueOf(j2));
+            ((eluo) ((eluo) e.i()).ai(4727)).T("Invalid step count emitted. Start time: %d, End time: %d, Now: %d", Long.valueOf(j4), Long.valueOf(j), Long.valueOf(j2));
             return;
         }
-        fhxj h = bgey.h(this.i, j4, j, TimeUnit.NANOSECONDS, bgfe.b(this.c.get()));
-        fecj fecjVar = (fecj) h.iB(5, null);
-        fecjVar.X(h);
-        fhxi fhxiVar = (fhxi) fecjVar;
-        if (!fhxiVar.b.L()) {
-            fhxiVar.U();
+        fkng h = bijo.h(this.i, j4, j, TimeUnit.NANOSECONDS, biju.b(this.c.get()));
+        fgrc fgrcVar = (fgrc) h.iQ(5, null);
+        fgrcVar.X(h);
+        fknf fknfVar = (fknf) fgrcVar;
+        if (!fknfVar.b.L()) {
+            fknfVar.U();
         }
-        fhxj fhxjVar = (fhxj) fhxiVar.b;
-        fhxj fhxjVar2 = fhxj.a;
-        fhxjVar.b |= 16;
-        fhxjVar.h = j3;
-        if (!fhxiVar.b.L()) {
-            fhxiVar.U();
+        fkng fkngVar = (fkng) fknfVar.b;
+        fkng fkngVar2 = fkng.a;
+        fkngVar.b |= 16;
+        fkngVar.h = j3;
+        if (!fknfVar.b.L()) {
+            fknfVar.U();
         }
-        fhxj fhxjVar3 = (fhxj) fhxiVar.b;
-        fhxjVar3.b |= 32;
-        fhxjVar3.i = j2;
+        fkng fkngVar3 = (fkng) fknfVar.b;
+        fkngVar3.b |= 32;
+        fkngVar3.i = j2;
         try {
-            bgmpVar.c(eitj.l((fhxj) fhxiVar.Q()));
+            birfVar.c(elgo.l((fkng) fknfVar.Q()));
         } catch (RemoteException e2) {
-            ((ejhf) ((ejhf) ((ejhf) e.j()).s(e2)).ah((char) 4716)).x("Couldn't push event back to listener");
+            ((eluo) ((eluo) ((eluo) e.j()).s(e2)).ai((char) 4726)).x("Couldn't push event back to listener");
         }
     }
 
-    @Override // defpackage.bgmo
-    public final eitj c(fhrz fhrzVar) {
-        if (h(fhrzVar)) {
-            return eitj.l(this.i);
+    @Override // defpackage.bire
+    public final elgo c(fkhw fkhwVar) {
+        if (h(fkhwVar)) {
+            return elgo.l(this.i);
         }
-        int i = eitj.d;
-        return ejcb.a;
+        int i = elgo.d;
+        return elpg.a;
     }
 
-    @Override // defpackage.bgmo
-    public final /* synthetic */ enss d() {
-        return ensm.a;
+    @Override // defpackage.bire
+    public final /* synthetic */ eqgl d() {
+        return eqgf.a;
     }
 
-    @Override // defpackage.bgmo
-    public final enss e(bgmq bgmqVar) {
-        if (g(bgmqVar.a)) {
-            final bgmp bgmpVar = bgmqVar.b;
+    @Override // defpackage.bire
+    public final eqgl e(birg birgVar) {
+        if (g(birgVar.a)) {
+            final birf birfVar = birgVar.b;
             AtomicReference atomicReference = this.k;
-            if (!bgox.a(atomicReference, null, bgmpVar)) {
-                ((ejhf) ((ejhf) e.j()).ah((char) 4718)).B("already registered to: %s", atomicReference.get());
+            if (!bitn.a(atomicReference, null, birfVar)) {
+                ((eluo) ((eluo) e.j()).ai((char) 4728)).B("already registered to: %s", atomicReference.get());
             }
-            long j = bgmqVar.c;
-            if (bgmu.c(this.h, null, "fitness...SoftStepCounter", TimeUnit.MICROSECONDS.toMillis(j), TimeUnit.MICROSECONDS.toMillis(bgmqVar.d), bgmr.a(bgmqVar), this.l)) {
-                this.g.post(new Runnable() { // from class: bgoz
+            long j = birgVar.c;
+            if (birk.c(this.h, null, "fitness...SoftStepCounter", TimeUnit.MICROSECONDS.toMillis(j), TimeUnit.MICROSECONDS.toMillis(birgVar.d), birh.a(birgVar), this.l)) {
+                this.g.post(new Runnable() { // from class: bitp
                     @Override // java.lang.Runnable
                     public final void run() {
                         long currentTimeMillis = System.currentTimeMillis();
-                        SoftStepCounter.this.b(bgmpVar, TimeUnit.MILLISECONDS.toNanos(currentTimeMillis), currentTimeMillis, 0L);
+                        SoftStepCounter.this.b(birfVar, TimeUnit.MILLISECONDS.toNanos(currentTimeMillis), currentTimeMillis, 0L);
                     }
                 });
                 this.b.set(TimeUnit.MICROSECONDS.toNanos(j));
-                return ensj.i(true);
+                return eqgc.i(true);
             }
-            ((ejhf) ((ejhf) e.j()).ah((char) 4720)).x("Unable to register to AR for soft step counter.");
+            ((eluo) ((eluo) e.j()).ai((char) 4730)).x("Unable to register to AR for soft step counter.");
         }
-        return ensj.i(false);
+        return eqgc.i(false);
     }
 
-    @Override // defpackage.bgmo
+    @Override // defpackage.bire
     public final void f(PrintWriter printWriter, String str) {
         printWriter.append((CharSequence) str).append("SoftStepCounter.Queue").append(":").append((CharSequence) Integer.toString(this.c.get())).append("\n");
         Iterator it = this.a.iterator();
         while (it.hasNext()) {
-            printWriter.append((CharSequence) str).append((CharSequence) ((bgpc) it.next()).toString()).append("\n");
+            printWriter.append((CharSequence) str).append((CharSequence) ((bits) it.next()).toString()).append("\n");
         }
     }
 
-    @Override // defpackage.bgmo
-    public final boolean g(fhrw fhrwVar) {
-        return this.i.c.equals(fhrwVar.c);
+    @Override // defpackage.bire
+    public final boolean g(fkht fkhtVar) {
+        return this.i.c.equals(fkhtVar.c);
     }
 
-    @Override // defpackage.bgmo
-    public final boolean h(fhrz fhrzVar) {
-        return fhrzVar.c.equals(f.c);
+    @Override // defpackage.bire
+    public final boolean h(fkhw fkhwVar) {
+        return fkhwVar.c.equals(f.c);
     }
 
-    @Override // defpackage.bgmo
-    public final boolean i(bgmp bgmpVar) {
-        if (!bgmu.b(this.h, this.l)) {
-            ((ejhf) ((ejhf) e.j()).ah((char) 4722)).x("Unable to unregister from AR for soft step counter");
+    @Override // defpackage.bire
+    public final boolean i(birf birfVar) {
+        if (!birk.b(this.h, this.l)) {
+            ((eluo) ((eluo) e.j()).ai((char) 4732)).x("Unable to unregister from AR for soft step counter");
             return false;
         }
-        if (!bgox.a(this.k, bgmpVar, null)) {
+        if (!bitn.a(this.k, birfVar, null)) {
             return false;
         }
         this.b.set(0L);
@@ -207,79 +208,79 @@ public final class SoftStepCounter extends TracingBroadcastReceiver implements b
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
-        final bgmp bgmpVar = (bgmp) this.k.get();
-        if (bgmpVar == null) {
+    public final void jP(Context context, Intent intent) {
+        final birf birfVar = (birf) this.k.get();
+        if (birfVar == null) {
             return;
         }
         Serializable serializableExtra = intent.getSerializableExtra("accelEvents");
-        final dyxz dyxzVar = null;
+        final ebkk ebkkVar = null;
         if (serializableExtra instanceof ArrayList) {
             ArrayList arrayList = (ArrayList) serializableExtra;
-            if (!arrayList.isEmpty() && (arrayList.get(0) instanceof dyxz)) {
-                dyxzVar = (dyxz) arrayList.get(0);
+            if (!arrayList.isEmpty() && (arrayList.get(0) instanceof ebkk)) {
+                ebkkVar = (ebkk) arrayList.get(0);
             }
         }
-        if (dyxzVar == null || dyxzVar.c == 0) {
+        if (ebkkVar == null || ebkkVar.c == 0) {
             return;
         }
-        bgpb bgpbVar = this.a;
+        bitr bitrVar = this.a;
         Handler handler = this.g;
-        final bgpc bgpcVar = (bgpc) bgpbVar.a;
-        handler.post(new Runnable() { // from class: bgoy
+        final bits bitsVar = (bits) bitrVar.a;
+        handler.post(new Runnable() { // from class: bito
             @Override // java.lang.Runnable
             public final void run() {
-                dyxz dyxzVar2 = dyxzVar;
-                int i = dyxzVar2.c;
-                long d = dyxzVar2.d(i - 1);
-                bgpa bgpaVar = new bgpa();
+                ebkk ebkkVar2 = ebkkVar;
+                int i = ebkkVar2.c;
+                long d = ebkkVar2.d(i - 1);
+                bitq bitqVar = new bitq();
                 SoftStepCounter softStepCounter = SoftStepCounter.this;
-                bwsc bwscVar = softStepCounter.d;
-                bwscVar.a = bgpaVar;
+                bzas bzasVar = softStepCounter.d;
+                bzasVar.a = bitqVar;
                 int i2 = 0;
-                long d2 = dyxzVar2.d(0);
+                long d2 = ebkkVar2.d(0);
                 int i3 = 0;
                 long j = d2;
                 while (i3 < i) {
-                    float a = dyxzVar2.a(i3, i2);
-                    float a2 = dyxzVar2.a(i3, 1);
-                    float a3 = dyxzVar2.a(i3, 2);
-                    long d3 = dyxzVar2.d(i3);
+                    float a = ebkkVar2.a(i3, i2);
+                    float a2 = ebkkVar2.a(i3, 1);
+                    float a3 = ebkkVar2.a(i3, 2);
+                    long d3 = ebkkVar2.d(i3);
                     long max = Math.max(j, d3);
-                    bwscVar.a(d3, a, a2, a3);
+                    bzasVar.a(d3, a, a2, a3);
                     i3++;
                     d2 = d2;
                     j = max;
                     i2 = 0;
                 }
-                bgmp bgmpVar2 = bgmpVar;
-                bgpc bgpcVar2 = bgpcVar;
-                bgpc bgpcVar3 = new bgpc(SoftStepCounter.j(), j - d2, bgpaVar.a);
-                bgpb bgpbVar2 = softStepCounter.a;
-                bgpbVar2.a = bgpcVar3;
-                bgpbVar2.b.add(bgpcVar3);
+                birf birfVar2 = birfVar;
+                bits bitsVar2 = bitsVar;
+                bits bitsVar3 = new bits(SoftStepCounter.j(), j - d2, bitqVar.a);
+                bitr bitrVar2 = softStepCounter.a;
+                bitrVar2.a = bitsVar3;
+                bitrVar2.b.add(bitsVar3);
                 long currentTimeMillis = System.currentTimeMillis();
-                if (bgpcVar2 != null) {
+                if (bitsVar2 != null) {
                     long j2 = softStepCounter.b.get();
                     long j3 = j2 + j2;
-                    double a4 = bgpcVar2.a() + bgpcVar3.a();
-                    long j4 = bgpcVar3.a - bgpcVar3.b;
-                    long j5 = j4 - bgpcVar2.a;
+                    double a4 = bitsVar2.a() + bitsVar3.a();
+                    long j4 = bitsVar3.a - bitsVar3.b;
+                    long j5 = j4 - bitsVar2.a;
                     long j6 = j5 > j3 ? j3 : j5;
-                    bgpc bgpcVar4 = new bgpc(j4, j6, (int) ((a4 / 2.0d) * j6));
-                    int i4 = bgpcVar4.c;
+                    bits bitsVar4 = new bits(j4, j6, (int) ((a4 / 2.0d) * j6));
+                    int i4 = bitsVar4.c;
                     if (i4 > 0) {
                         softStepCounter.c.addAndGet(i4);
-                        bgmpVar2 = bgmpVar2;
-                        softStepCounter.b(bgmpVar2, bgpcVar4.a, currentTimeMillis, d);
+                        birfVar2 = birfVar2;
+                        softStepCounter.b(birfVar2, bitsVar4.a, currentTimeMillis, d);
                     } else {
-                        bgmpVar2 = bgmpVar2;
+                        birfVar2 = birfVar2;
                     }
                 }
-                int i5 = bgpcVar3.c;
+                int i5 = bitsVar3.c;
                 if (i5 > 0) {
                     softStepCounter.c.addAndGet(i5);
-                    softStepCounter.b(bgmpVar2, bgpcVar3.a, currentTimeMillis, d);
+                    softStepCounter.b(birfVar2, bitsVar3.a, currentTimeMillis, d);
                 }
             }
         });

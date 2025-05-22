@@ -3,33 +3,33 @@ package com.google.android.gms.icing.nativeindex;
 import android.util.SparseIntArray;
 import com.android.volley.toolbox.ImageRequest;
 import defpackage.a;
-import defpackage.bldw;
-import defpackage.blfw;
-import defpackage.blgi;
-import defpackage.blgy;
-import defpackage.blhb;
-import defpackage.blhe;
-import defpackage.blhh;
-import defpackage.blia;
-import defpackage.blie;
-import defpackage.blir;
-import defpackage.blpc;
-import defpackage.eiic;
-import defpackage.elcq;
-import defpackage.elcs;
-import defpackage.enfk;
-import defpackage.enkf;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feeg;
-import defpackage.feen;
+import defpackage.bnko;
+import defpackage.bnmo;
+import defpackage.bnna;
+import defpackage.bnnq;
+import defpackage.bnnt;
+import defpackage.bnnw;
+import defpackage.bnnz;
+import defpackage.bnos;
+import defpackage.bnow;
+import defpackage.bnpj;
+import defpackage.bnvu;
+import defpackage.ekvh;
+import defpackage.enqd;
+import defpackage.enqf;
+import defpackage.eptb;
+import defpackage.epxw;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgsz;
+import defpackage.fgtg;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class NativeIndex {
     public static final boolean a;
@@ -42,20 +42,20 @@ public class NativeIndex {
             System.loadLibrary("AppDataSearch");
             nativeGetVersionCode = nativeGetVersionCode() / ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS;
         } catch (LinkageError e) {
-            blfw.j(e, "Native load error: %s", e.getMessage());
+            bnmo.j(e, "Native load error: %s", e.getMessage());
             z = false;
         }
-        if (nativeGetVersionCode != 251661) {
-            throw new UnsatisfiedLinkError(a.t(251661, nativeGetVersionCode, "Version mismatch: lib: ", " vs apk: "));
+        if (nativeGetVersionCode != 251864) {
+            throw new UnsatisfiedLinkError(a.t(251864, nativeGetVersionCode, "Version mismatch: lib: ", " vs apk: "));
         }
         a = z;
     }
 
-    public NativeIndex(File file, blhh blhhVar) {
+    public NativeIndex(File file, bnnz bnnzVar) {
         if (!file.exists()) {
             file.mkdir();
         }
-        this.b = nativeCreate(B(file.getCanonicalPath()), blhhVar.r());
+        this.b = nativeCreate(B(file.getCanonicalPath()), bnnzVar.r());
     }
 
     public static byte[] B(String str) {
@@ -75,10 +75,10 @@ public class NativeIndex {
             return -1L;
         }
         try {
-            blfw.b("getDiskUsage: %s", file.getCanonicalPath());
+            bnmo.b("getDiskUsage: %s", file.getCanonicalPath());
             return nativeGetDiskUsage(B(file.getCanonicalPath()));
         } catch (IOException e) {
-            blfw.j(e, "Bad path: %s", file);
+            bnmo.j(e, "Bad path: %s", file);
             return -1L;
         }
     }
@@ -169,22 +169,22 @@ public class NativeIndex {
 
     public static native boolean nativeUpgrade(long j, int i, int i2);
 
-    public static enkf r(int i) {
-        return (enkf) eiic.c(enkf.b(i), enkf.UNRECOGNIZED);
+    public static epxw r(int i) {
+        return (epxw) ekvh.c(epxw.b(i), epxw.UNRECOGNIZED);
     }
 
-    /* JADX WARN: Type inference failed for: r1v3, types: [feeg, java.lang.Object] */
-    public static feeg s(byte[] bArr, feen feenVar) {
+    /* JADX WARN: Type inference failed for: r1v3, types: [fgsz, java.lang.Object] */
+    public static fgsz s(byte[] bArr, fgtg fgtgVar) {
         try {
-            return feenVar.j(bArr);
-        } catch (fedk e) {
-            blfw.j(e, "Failed to parse protobuf", new Object[0]);
+            return fgtgVar.j(bArr);
+        } catch (fgsd e) {
+            bnmo.j(e, "Failed to parse protobuf", new Object[0]);
             return null;
         }
     }
 
-    public static String t(enkf enkfVar) {
-        int ordinal = enkfVar.ordinal();
+    public static String t(epxw epxwVar) {
+        int ordinal = epxwVar.ordinal();
         if (ordinal == 0) {
             return "ok";
         }
@@ -203,11 +203,11 @@ public class NativeIndex {
         if (ordinal == 7) {
             return "error i/o";
         }
-        return "error internal " + enkfVar.a();
+        return "error internal " + epxwVar.a();
     }
 
-    public final boolean A(blhh blhhVar) {
-        return nativeUpdateNativeConfig(this.b, blhhVar.r());
+    public final boolean A(bnnz bnnzVar) {
+        return nativeUpdateNativeConfig(this.b, bnnzVar.r());
     }
 
     public final double a() {
@@ -231,26 +231,26 @@ public class NativeIndex {
         super.finalize();
     }
 
-    public final blhe g() {
+    public final bnnw g() {
         byte[] nativeInit = nativeInit(this.b);
         if (nativeInit == null) {
             return null;
         }
         try {
-            fecp y = fecp.y(blhe.a, nativeInit, 0, nativeInit.length, febw.a());
-            fecp.M(y);
-            return (blhe) y;
-        } catch (fedk e) {
-            blfw.j(e, "Failed parsing init status", new Object[0]);
+            fgri y = fgri.y(bnnw.a, nativeInit, 0, nativeInit.length, fgqp.a());
+            fgri.M(y);
+            return (bnnw) y;
+        } catch (fgsd e) {
+            bnmo.j(e, "Failed parsing init status", new Object[0]);
             return null;
         }
     }
 
-    public final blie h(String str, blia bliaVar, int i, int i2) {
-        return (blie) s(nativeExecuteQuery(this.b, B(str), bliaVar.r(), 100000, i, i2), (feen) blie.a.iB(7, null));
+    public final bnow h(String str, bnos bnosVar, int i, int i2) {
+        return (bnow) s(nativeExecuteQuery(this.b, B(str), bnosVar.r(), 100000, i, i2), (fgtg) bnow.a.iQ(7, null));
     }
 
-    public final blie i(String[] strArr, blia bliaVar) {
+    public final bnow i(String[] strArr, bnos bnosVar) {
         int length = strArr.length;
         byte[][] bArr = new byte[length][];
         int i = 0;
@@ -260,100 +260,100 @@ public class NativeIndex {
             i++;
             i2++;
         }
-        return (blie) s(nativeGetDocuments(this.b, bArr, bliaVar.r()), (feen) blie.a.iB(7, null));
+        return (bnow) s(nativeGetDocuments(this.b, bArr, bnosVar.r()), (fgtg) bnow.a.iQ(7, null));
     }
 
-    public final blir j() {
+    public final bnpj j() {
         byte[] nativeGetUsageStats = nativeGetUsageStats(this.b);
         if (nativeGetUsageStats == null) {
             return null;
         }
         try {
-            fecp y = fecp.y(blir.a, nativeGetUsageStats, 0, nativeGetUsageStats.length, febw.a());
-            fecp.M(y);
-            return (blir) y;
-        } catch (fedk e) {
-            blfw.j(e, "Failed parsing usage stats", new Object[0]);
+            fgri y = fgri.y(bnpj.a, nativeGetUsageStats, 0, nativeGetUsageStats.length, fgqp.a());
+            fgri.M(y);
+            return (bnpj) y;
+        } catch (fgsd e) {
+            bnmo.j(e, "Failed parsing usage stats", new Object[0]);
             return null;
         }
     }
 
-    public final elcq k() {
+    public final enqd k() {
         byte[] nativeGetCompactStatus = nativeGetCompactStatus(this.b);
         try {
-            fecp y = fecp.y(elcq.a, nativeGetCompactStatus, 0, nativeGetCompactStatus.length, febw.a());
-            fecp.M(y);
-            return (elcq) y;
-        } catch (fedk e) {
-            blfw.j(e, "Failed parsing compact status", new Object[0]);
+            fgri y = fgri.y(enqd.a, nativeGetCompactStatus, 0, nativeGetCompactStatus.length, fgqp.a());
+            fgri.M(y);
+            return (enqd) y;
+        } catch (fgsd e) {
+            bnmo.j(e, "Failed parsing compact status", new Object[0]);
             return null;
         }
     }
 
-    public final elcs l(double d, int i, blhb blhbVar, long[] jArr, int[] iArr, SparseIntArray sparseIntArray) {
+    public final enqf l(double d, int i, bnnt bnntVar, long[] jArr, int[] iArr, SparseIntArray sparseIntArray) {
         int[] iArr2 = new int[sparseIntArray.size()];
         int[] iArr3 = new int[sparseIntArray.size()];
         for (int i2 = 0; i2 < sparseIntArray.size(); i2++) {
             iArr2[i2] = sparseIntArray.keyAt(i2);
             iArr3[i2] = sparseIntArray.valueAt(i2);
         }
-        byte[] nativeCompact = nativeCompact(this.b, d, i, blhbVar.r(), jArr, iArr, iArr2, iArr3);
+        byte[] nativeCompact = nativeCompact(this.b, d, i, bnntVar.r(), jArr, iArr, iArr2, iArr3);
         try {
-            fecp y = fecp.y(elcs.a, nativeCompact, 0, nativeCompact.length, febw.a());
-            fecp.M(y);
-            return (elcs) y;
-        } catch (fedk e) {
-            blfw.j(e, "Failed parsing compaction stats", new Object[0]);
-            fecj v = elcs.a.v();
+            fgri y = fgri.y(enqf.a, nativeCompact, 0, nativeCompact.length, fgqp.a());
+            fgri.M(y);
+            return (enqf) y;
+        } catch (fgsd e) {
+            bnmo.j(e, "Failed parsing compaction stats", new Object[0]);
+            fgrc v = enqf.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            ((elcs) v.b).c = 18;
-            return (elcs) v.Q();
+            ((enqf) v.b).c = 18;
+            return (enqf) v.Q();
         }
     }
 
-    public final enfk m(long j, bldw bldwVar, blhb blhbVar) {
-        byte[] nativeIndexDocument = nativeIndexDocument(this.b, j, bldwVar.r(), blhbVar.r());
+    public final eptb m(long j, bnko bnkoVar, bnnt bnntVar) {
+        byte[] nativeIndexDocument = nativeIndexDocument(this.b, j, bnkoVar.r(), bnntVar.r());
         try {
-            fecp y = fecp.y(enfk.a, nativeIndexDocument, 0, nativeIndexDocument.length, febw.a());
-            fecp.M(y);
-            return (enfk) y;
-        } catch (fedk e) {
-            blfw.j(e, "Failed to parse native index document stats.", new Object[0]);
+            fgri y = fgri.y(eptb.a, nativeIndexDocument, 0, nativeIndexDocument.length, fgqp.a());
+            fgri.M(y);
+            return (eptb) y;
+        } catch (fgsd e) {
+            bnmo.j(e, "Failed to parse native index document stats.", new Object[0]);
             return null;
         }
     }
 
-    public final enfk n(long j, byte[] bArr, blpc blpcVar, blgi blgiVar, blhb blhbVar) {
-        byte[] nativeIndexThing = nativeIndexThing(this.b, j, bArr, blpcVar.r(), blgiVar.r(), blhbVar.r());
+    public final eptb n(long j, byte[] bArr, bnvu bnvuVar, bnna bnnaVar, bnnt bnntVar) {
+        byte[] nativeIndexThing = nativeIndexThing(this.b, j, bArr, bnvuVar.r(), bnnaVar.r(), bnntVar.r());
         try {
-            fecp y = fecp.y(enfk.a, nativeIndexThing, 0, nativeIndexThing.length, febw.a());
-            fecp.M(y);
-            return (enfk) y;
-        } catch (fedk e) {
-            blfw.j(e, "Failed to parse native index document stats.", new Object[0]);
+            fgri y = fgri.y(eptb.a, nativeIndexThing, 0, nativeIndexThing.length, fgqp.a());
+            fgri.M(y);
+            return (eptb) y;
+        } catch (fgsd e) {
+            bnmo.j(e, "Failed to parse native index document stats.", new Object[0]);
             return null;
         }
     }
 
-    public final enfk o(long j, byte[] bArr, blpc blpcVar, blgi blgiVar, blhb blhbVar) {
-        byte[] nativePatch = nativePatch(this.b, j, bArr, blpcVar.r(), blgiVar.r(), blhbVar.r());
+    public final eptb o(long j, byte[] bArr, bnvu bnvuVar, bnna bnnaVar, bnnt bnntVar) {
+        byte[] nativePatch = nativePatch(this.b, j, bArr, bnvuVar.r(), bnnaVar.r(), bnntVar.r());
         try {
-            fecp y = fecp.y(enfk.a, nativePatch, 0, nativePatch.length, febw.a());
-            fecp.M(y);
-            return (enfk) y;
-        } catch (fedk e) {
-            blfw.j(e, "Failed to parse native index document stats.", new Object[0]);
+            fgri y = fgri.y(eptb.a, nativePatch, 0, nativePatch.length, fgqp.a());
+            fgri.M(y);
+            return (eptb) y;
+        } catch (fgsd e) {
+            bnmo.j(e, "Failed to parse native index document stats.", new Object[0]);
             return null;
         }
     }
 
-    public final enkf p(int i, long j) {
+    public final epxw p(int i, long j) {
         return r(nativeAdvanceLastSeqno(this.b, i, j));
     }
 
-    public final enkf q(long j, int i, String str) {
+    public final epxw q(long j, int i, String str) {
         return r(nativeDeleteDocument(this.b, j, i, B(str)));
     }
 
@@ -373,15 +373,15 @@ public class NativeIndex {
         this.b = 0L;
     }
 
-    public final boolean x(long j, int i, blgy blgyVar) {
-        return nativeAddCorpus(this.b, j, i, blgyVar.r());
+    public final boolean x(long j, int i, bnnq bnnqVar) {
+        return nativeAddCorpus(this.b, j, i, bnnqVar.r());
     }
 
     public final boolean y() {
         return nativeApplyPendingDeleteUsageReports(this.b);
     }
 
-    public final boolean z(blhb blhbVar) {
-        return nativeRebuildIndex(this.b, blhbVar.r());
+    public final boolean z(bnnt bnntVar) {
+        return nativeRebuildIndex(this.b, bnntVar.r());
     }
 }

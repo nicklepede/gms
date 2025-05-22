@@ -1,16 +1,16 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
-import defpackage.fvbo;
+import defpackage.fxxm;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class Display {
     private final Dimension dimensions;
     private final String scaling;
 
     public Display(Dimension dimension, String str) {
-        fvbo.f(dimension, "dimensions");
+        fxxm.f(dimension, "dimensions");
         this.dimensions = dimension;
         this.scaling = str;
     }
@@ -34,7 +34,7 @@ public final class Display {
     }
 
     public final Display copy(Dimension dimension, String str) {
-        fvbo.f(dimension, "dimensions");
+        fxxm.f(dimension, "dimensions");
         return new Display(dimension, str);
     }
 
@@ -46,7 +46,7 @@ public final class Display {
             return false;
         }
         Display display = (Display) obj;
-        return fvbo.n(this.dimensions, display.dimensions) && fvbo.n(this.scaling, display.scaling);
+        return fxxm.n(this.dimensions, display.dimensions) && fxxm.n(this.scaling, display.scaling);
     }
 
     public final Dimension getDimensions() {

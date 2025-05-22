@@ -6,18 +6,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.IntermediateAccountInfo;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.aywz;
-import defpackage.ayxh;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bbat;
+import defpackage.bbbb;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class SetAccountInfosParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayxh();
+    public static final Parcelable.Creator CREATOR = new bbbb();
     public IntermediateAccountInfo[] a;
-    public aywz b;
+    public bbat b;
 
     private SetAccountInfosParams() {
     }
@@ -28,7 +28,7 @@ public final class SetAccountInfosParams extends AbstractSafeParcelable {
         }
         if (obj instanceof SetAccountInfosParams) {
             SetAccountInfosParams setAccountInfosParams = (SetAccountInfosParams) obj;
-            if (Arrays.equals(this.a, setAccountInfosParams.a) && arwb.b(this.b, setAccountInfosParams.b)) {
+            if (Arrays.equals(this.a, setAccountInfosParams.a) && atyq.b(this.b, setAccountInfosParams.b)) {
                 return true;
             }
         }
@@ -41,21 +41,21 @@ public final class SetAccountInfosParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.J(parcel, 1, this.a, i);
-        arxc.D(parcel, 2, this.b.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.J(parcel, 1, this.a, i);
+        atzr.D(parcel, 2, this.b.a);
+        atzr.c(parcel, a);
     }
 
     public SetAccountInfosParams(IntermediateAccountInfo[] intermediateAccountInfoArr, IBinder iBinder) {
-        aywz aywzVar;
+        bbat bbatVar;
         if (iBinder == null) {
-            aywzVar = null;
+            bbatVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.dtdi.core.internal.ISetAccountInfosStatusCallback");
-            aywzVar = queryLocalInterface instanceof aywz ? (aywz) queryLocalInterface : new aywz(iBinder);
+            bbatVar = queryLocalInterface instanceof bbat ? (bbat) queryLocalInterface : new bbat(iBinder);
         }
         this.a = intermediateAccountInfoArr;
-        this.b = aywzVar;
+        this.b = bbatVar;
     }
 }

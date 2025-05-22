@@ -5,34 +5,34 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.udc.intentoperation.BootOrGmsUpdatedPersistentIntentOperation;
-import defpackage.dgvj;
-import defpackage.dgvt;
-import defpackage.dgxk;
-import defpackage.drbj;
-import defpackage.drgx;
-import defpackage.eijr;
-import defpackage.enpf;
-import defpackage.fspw;
+import defpackage.djgp;
+import defpackage.djgz;
+import defpackage.djiq;
+import defpackage.dtlr;
+import defpackage.dtrf;
+import defpackage.ekww;
+import defpackage.eqcy;
+import defpackage.fvll;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class BootOrGmsUpdatedPersistentIntentOperation extends IntentOperation {
-    private final eijr a;
-    private final eijr b;
+    private final ekww a;
+    private final ekww b;
 
     public BootOrGmsUpdatedPersistentIntentOperation() {
-        this.a = new eijr() { // from class: dgxz
-            @Override // defpackage.eijr
-            public final Object a() {
-                return dhal.d(BootOrGmsUpdatedPersistentIntentOperation.this);
+        this.a = new ekww() { // from class: djjf
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return djlr.d(BootOrGmsUpdatedPersistentIntentOperation.this);
             }
         };
-        this.b = new eijr() { // from class: dgya
-            @Override // defpackage.eijr
-            public final Object a() {
-                return dhal.g(BootOrGmsUpdatedPersistentIntentOperation.this);
+        this.b = new ekww() { // from class: djjg
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return djlr.g(BootOrGmsUpdatedPersistentIntentOperation.this);
             }
         };
     }
@@ -42,14 +42,14 @@ public class BootOrGmsUpdatedPersistentIntentOperation extends IntentOperation {
         if (intent == null || !"com.google.android.gms.udc.intentoperation.BOOT_OR_GMS_UPDATED".equals(intent.getAction())) {
             return;
         }
-        if (fspw.w()) {
-            ((drgx) this.a.a()).b().b(dgvj.DEVICE_BOOT);
+        if (fvll.w()) {
+            ((dtrf) this.a.lK()).b().b(djgp.DEVICE_BOOT);
         }
         try {
-            eijr eijrVar = this.b;
-            ((enpf) ((drbj) eijrVar.a()).f()).u();
-            ((enpf) ((drbj) eijrVar.a()).e(dgvt.SYNC_ID_CUSTOM_CACHE)).u();
-            dgxk a = dgxk.a(this);
+            ekww ekwwVar = this.b;
+            ((eqcy) ((dtlr) ekwwVar.lK()).f()).u();
+            ((eqcy) ((dtlr) ekwwVar.lK()).e(djgz.SYNC_ID_CUSTOM_CACHE)).u();
+            djiq a = djiq.a(this);
             SharedPreferences sharedPreferences = a.b;
             synchronized (sharedPreferences) {
                 if (a.g()) {
@@ -63,7 +63,7 @@ public class BootOrGmsUpdatedPersistentIntentOperation extends IntentOperation {
                 for (String str : e) {
                     int[] iArr = {10, 9};
                     for (int i = 0; i < 2; i++) {
-                        String c = dgxk.c(str, iArr[i]);
+                        String c = djiq.c(str, iArr[i]);
                         edit.putBoolean(c, sharedPreferences.getBoolean(c, false));
                     }
                 }
@@ -75,17 +75,17 @@ public class BootOrGmsUpdatedPersistentIntentOperation extends IntentOperation {
         }
     }
 
-    BootOrGmsUpdatedPersistentIntentOperation(final drgx drgxVar, final drbj drbjVar) {
-        this.a = new eijr() { // from class: dgxx
-            @Override // defpackage.eijr
-            public final Object a() {
-                return drgx.this;
+    BootOrGmsUpdatedPersistentIntentOperation(final dtrf dtrfVar, final dtlr dtlrVar) {
+        this.a = new ekww() { // from class: djjd
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return dtrf.this;
             }
         };
-        this.b = new eijr() { // from class: dgxy
-            @Override // defpackage.eijr
-            public final Object a() {
-                return drbj.this;
+        this.b = new ekww() { // from class: djje
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return dtlr.this;
             }
         };
     }

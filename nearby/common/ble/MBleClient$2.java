@@ -2,29 +2,29 @@ package com.google.android.gms.nearby.common.ble;
 
 import android.bluetooth.le.ScanResult;
 import com.google.android.gms.nearby.common.ble.MBleClient$2;
-import defpackage.bhiy;
-import defpackage.ceyl;
-import defpackage.ensv;
+import defpackage.bjnn;
+import defpackage.chfw;
+import defpackage.eqgo;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class MBleClient$2 extends bhiy {
-    public final /* synthetic */ ceyl a;
+public class MBleClient$2 extends bjnn {
+    public final /* synthetic */ chfw a;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public MBleClient$2(ceyl ceylVar) {
+    public MBleClient$2(chfw chfwVar) {
         super("nearby", "MBleClient");
-        this.a = ceylVar;
+        this.a = chfwVar;
     }
 
-    @Override // defpackage.bhiy
+    @Override // defpackage.bjnn
     public final void b(final int i) {
-        ensv ensvVar = this.a.e;
-        if (ensvVar == null) {
+        eqgo eqgoVar = this.a.e;
+        if (eqgoVar == null) {
             return;
         }
-        ensvVar.execute(new Runnable() { // from class: ceyj
+        eqgoVar.execute(new Runnable() { // from class: chfu
             @Override // java.lang.Runnable
             public final void run() {
                 MBleClient$2.this.a.f(i);
@@ -32,13 +32,13 @@ public class MBleClient$2 extends bhiy {
         });
     }
 
-    @Override // defpackage.bhiy
+    @Override // defpackage.bjnn
     public final void c(int i, final ScanResult scanResult) {
-        ensv ensvVar = this.a.e;
-        if (ensvVar == null) {
+        eqgo eqgoVar = this.a.e;
+        if (eqgoVar == null) {
             return;
         }
-        ensvVar.execute(new Runnable() { // from class: ceyk
+        eqgoVar.execute(new Runnable() { // from class: chfv
             @Override // java.lang.Runnable
             public final void run() {
                 MBleClient$2.this.a.i(scanResult);
@@ -46,7 +46,7 @@ public class MBleClient$2 extends bhiy {
         });
     }
 
-    @Override // defpackage.bhiy
+    @Override // defpackage.bjnn
     public final void a(List list) {
     }
 }

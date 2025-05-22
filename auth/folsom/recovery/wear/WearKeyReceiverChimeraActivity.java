@@ -6,22 +6,22 @@ import android.text.TextUtils;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.folsom.recovery.wear.WearKeyReceiverChimeraActivity;
 import com.google.android.gms.wearable.internal.NodeParcelable;
-import defpackage.abht;
-import defpackage.abhx;
-import defpackage.abij;
-import defpackage.abng;
-import defpackage.abno;
-import defpackage.abnq;
-import defpackage.asot;
+import defpackage.adht;
+import defpackage.adhx;
+import defpackage.adij;
+import defpackage.adng;
+import defpackage.adno;
+import defpackage.adnq;
+import defpackage.ausn;
 import defpackage.bp;
-import defpackage.dezt;
-import defpackage.dfak;
-import defpackage.djks;
-import defpackage.ejhf;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qex;
-import defpackage.qfn;
+import defpackage.dhkz;
+import defpackage.dhlq;
+import defpackage.dlwl;
+import defpackage.eluo;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.ryb;
+import defpackage.ryr;
 import j$.time.Duration;
 import j$.util.Collection;
 import j$.util.Objects;
@@ -35,17 +35,17 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class WearKeyReceiverChimeraActivity extends qex {
-    public static final asot h = abng.b("WearKeyReceiver");
+public class WearKeyReceiverChimeraActivity extends ryb {
+    public static final ausn h = adng.b("WearKeyReceiver");
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Intent intent = getIntent();
         if (intent == null) {
-            ((ejhf) h.j()).x("Intent is null");
+            ((eluo) h.j()).x("Intent is null");
             setResult(0);
             finish();
             return;
@@ -53,40 +53,40 @@ public class WearKeyReceiverChimeraActivity extends qex {
         String stringExtra = intent.getStringExtra("com.google.android.gms.auth.folsom.EXTRA_ACCOUNT_NAME");
         String stringExtra2 = intent.getStringExtra("SECURITY_DOMAIN");
         if (TextUtils.isEmpty(stringExtra) || TextUtils.isEmpty(stringExtra2)) {
-            ((ejhf) h.j()).P("Invalid param - domain: %s, account %s", stringExtra2, stringExtra);
+            ((eluo) h.j()).P("Invalid param - domain: %s, account %s", stringExtra2, stringExtra);
             setResult(0);
             finish();
             return;
         }
-        final abij abijVar = (abij) new jrh(this).a(abij.class);
-        if (abijVar.f) {
-            ((ejhf) abij.a.h()).x("view model already initialized");
+        final adij adijVar = (adij) new jxw(this).a(adij.class);
+        if (adijVar.f) {
+            ((eluo) adij.a.h()).x("view model already initialized");
         } else {
-            abijVar.f = true;
-            abijVar.d = stringExtra2;
-            abijVar.e = stringExtra;
-            abno abnoVar = abnq.b;
-            if (abnoVar.a == null) {
-                abnoVar.a = djks.a(abnq.a);
+            adijVar.f = true;
+            adijVar.d = stringExtra2;
+            adijVar.e = stringExtra;
+            adno adnoVar = adnq.b;
+            if (adnoVar.a == null) {
+                adnoVar.a = dlwl.a(adnq.a);
             }
-            abnoVar.a.aV("/auth_folsom/key_retrieval_capability", 0).d(new dezt() { // from class: abig
-                @Override // defpackage.dezt
-                public final Object a(dfaq dfaqVar) {
-                    Set b = ((djjm) dfaqVar.i()).b();
+            adnoVar.a.aU("/auth_folsom/key_retrieval_capability", 0).d(new dhkz() { // from class: adig
+                @Override // defpackage.dhkz
+                public final Object a(dhlw dhlwVar) {
+                    Set b = ((dlvf) dhlwVar.i()).b();
                     boolean isEmpty = b.isEmpty();
-                    abij abijVar2 = abij.this;
+                    adij adijVar2 = adij.this;
                     if (isEmpty) {
-                        ((ejhf) abij.a.j()).x("found 0 nodes with capability");
-                        abijVar2.b.l(abhw.GENERIC_ERROR);
+                        ((eluo) adij.a.j()).x("found 0 nodes with capability");
+                        adijVar2.b.l(adhw.GENERIC_ERROR);
                     }
-                    Optional findFirst = Collection.EL.stream(((djjm) dfaqVar.i()).b()).filter(new Predicate() { // from class: abih
+                    Optional findFirst = Collection.EL.stream(((dlvf) dhlwVar.i()).b()).filter(new Predicate() { // from class: adih
                         public final /* synthetic */ Predicate and(Predicate predicate) {
                             return Predicate$CC.$default$and(this, predicate);
                         }
 
                         @Override // java.util.function.Predicate
                         /* renamed from: negate */
-                        public final /* synthetic */ Predicate mo463negate() {
+                        public final /* synthetic */ Predicate mo478negate() {
                             return Predicate$CC.$default$negate(this);
                         }
 
@@ -101,118 +101,118 @@ public class WearKeyReceiverChimeraActivity extends qex {
                         }
                     }).findFirst();
                     if (!b.isEmpty() && findFirst.isEmpty()) {
-                        ((ejhf) abij.a.j()).x("not connected");
-                        abijVar2.b.l(abhw.NO_CONNECTION_ERROR);
+                        ((eluo) adij.a.j()).x("not connected");
+                        adijVar2.b.l(adhw.NO_CONNECTION_ERROR);
                     }
-                    return (dfaq) findFirst.map(new Function() { // from class: abii
+                    return (dhlw) findFirst.map(new Function() { // from class: adii
                         @Override // java.util.function.Function
                         /* renamed from: andThen */
-                        public final /* synthetic */ Function mo464andThen(Function function) {
+                        public final /* synthetic */ Function mo479andThen(Function function) {
                             return Function$CC.$default$andThen(this, function);
                         }
 
                         @Override // java.util.function.Function
                         public final Object apply(Object obj) {
                             String str = ((NodeParcelable) obj).a;
-                            asot asotVar = abij.a;
-                            return dfbl.d(str);
+                            ausn ausnVar = adij.a;
+                            return dhmr.d(str);
                         }
 
                         public final /* synthetic */ Function compose(Function function) {
                             return Function$CC.$default$compose(this, function);
                         }
-                    }).orElseGet(new Supplier() { // from class: abhz
+                    }).orElseGet(new Supplier() { // from class: adhz
                         @Override // java.util.function.Supplier
                         public final Object get() {
-                            asot asotVar = abij.a;
-                            return dfbl.c(new IllegalStateException("No nearby nodes with capability"));
+                            ausn ausnVar = adij.a;
+                            return dhmr.c(new IllegalStateException("No nearby nodes with capability"));
                         }
                     });
                 }
-            }).z(new dfak() { // from class: abif
-                @Override // defpackage.dfak
-                public final void gn(Object obj) {
+            }).z(new dhlq() { // from class: adif
+                @Override // defpackage.dhlq
+                public final void gC(Object obj) {
                     String str = (String) obj;
-                    ejhf ejhfVar = (ejhf) abij.a.h();
-                    final abij abijVar2 = abij.this;
-                    ejhfVar.P("Sending retrieval request to %s for %s", str, abijVar2.e);
-                    fecj v = abha.a.v();
-                    String str2 = abijVar2.e;
+                    eluo eluoVar = (eluo) adij.a.h();
+                    final adij adijVar2 = adij.this;
+                    eluoVar.P("Sending retrieval request to %s for %s", str, adijVar2.e);
+                    fgrc v = adha.a.v();
+                    String str2 = adijVar2.e;
                     if (!v.b.L()) {
                         v.U();
                     }
-                    fecp fecpVar = v.b;
+                    fgri fgriVar = v.b;
                     str2.getClass();
-                    ((abha) fecpVar).b = str2;
-                    String str3 = abijVar2.d;
-                    if (!fecpVar.L()) {
+                    ((adha) fgriVar).b = str2;
+                    String str3 = adijVar2.d;
+                    if (!fgriVar.L()) {
                         v.U();
                     }
-                    abha abhaVar = (abha) v.b;
+                    adha adhaVar = (adha) v.b;
                     str3.getClass();
-                    abhaVar.c = str3;
-                    dfaq bf = abnq.c.a().bf(str, "/auth_folsom/key_retrieval_request", ((abha) v.Q()).r());
-                    bf.z(new dfak() { // from class: abib
-                        @Override // defpackage.dfak
-                        public final void gn(Object obj2) {
-                            ((ejhf) abij.a.h()).x("Setting timeout after successfully sending msg");
+                    adhaVar.c = str3;
+                    dhlw be = adnq.c.a().be(str, "/auth_folsom/key_retrieval_request", ((adha) v.Q()).r());
+                    be.z(new dhlq() { // from class: adib
+                        @Override // defpackage.dhlq
+                        public final void gC(Object obj2) {
+                            ((eluo) adij.a.h()).x("Setting timeout after successfully sending msg");
                             Duration ofSeconds = Duration.ofSeconds(30L);
-                            asot asotVar = abhl.a;
-                            final dfau dfauVar = new dfau();
-                            dfae dfaeVar = new dfae() { // from class: abhj
-                                @Override // defpackage.dfae
-                                public final void hr(dfaq dfaqVar) {
-                                    asot asotVar2 = abhl.a;
-                                    dfau dfauVar2 = dfau.this;
-                                    if (dfaqVar.m()) {
-                                        dfauVar2.c(dfaqVar.i());
+                            ausn ausnVar = adhl.a;
+                            final dhma dhmaVar = new dhma();
+                            dhlk dhlkVar = new dhlk() { // from class: adhj
+                                @Override // defpackage.dhlk
+                                public final void hH(dhlw dhlwVar) {
+                                    ausn ausnVar2 = adhl.a;
+                                    dhma dhmaVar2 = dhma.this;
+                                    if (dhlwVar.m()) {
+                                        dhmaVar2.c(dhlwVar.i());
                                     } else {
-                                        dfauVar2.d((Exception) Objects.requireNonNull(dfaqVar.h()));
+                                        dhmaVar2.d((Exception) Objects.requireNonNull(dhlwVar.h()));
                                     }
                                 }
                             };
-                            final abij abijVar3 = abij.this;
-                            abijVar3.g.a.x(dfaeVar);
-                            final dfau dfauVar2 = new dfau();
-                            abhl.b.schedule(new Runnable() { // from class: abhi
+                            final adij adijVar3 = adij.this;
+                            adijVar3.g.a.x(dhlkVar);
+                            final dhma dhmaVar2 = new dhma();
+                            adhl.b.schedule(new Runnable() { // from class: adhi
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    ((ejhf) abhl.a.h()).x("Setting timeout exception");
-                                    dfau.this.b(null);
+                                    ((eluo) adhl.a.h()).x("Setting timeout exception");
+                                    dhma.this.b(null);
                                 }
                             }, ofSeconds.toSeconds(), TimeUnit.SECONDS);
-                            dfauVar2.a.x(new dfae() { // from class: abhk
-                                @Override // defpackage.dfae
-                                public final void hr(dfaq dfaqVar) {
-                                    asot asotVar2 = abhl.a;
-                                    dfau.this.d(new TimeoutException("Timed out."));
+                            dhmaVar2.a.x(new dhlk() { // from class: adhk
+                                @Override // defpackage.dhlk
+                                public final void hH(dhlw dhlwVar) {
+                                    ausn ausnVar2 = adhl.a;
+                                    dhma.this.d(new TimeoutException("Timed out."));
                                 }
                             });
-                            dfauVar.a.y(new dfah() { // from class: abid
-                                @Override // defpackage.dfah
-                                public final void gm(Exception exc) {
-                                    ((ejhf) ((ejhf) abij.a.j()).s(exc)).x("Timed out");
-                                    abij.this.b.l(abhw.GENERIC_ERROR);
+                            dhmaVar.a.y(new dhln() { // from class: adid
+                                @Override // defpackage.dhln
+                                public final void gB(Exception exc) {
+                                    ((eluo) ((eluo) adij.a.j()).s(exc)).x("Timed out");
+                                    adij.this.b.l(adhw.GENERIC_ERROR);
                                 }
                             });
                         }
                     });
-                    bf.y(new dfah() { // from class: abic
-                        @Override // defpackage.dfah
-                        public final void gm(Exception exc) {
-                            ((ejhf) ((ejhf) abij.a.j()).s(exc)).x("Failed to send key retrieval request.");
-                            abij.this.b.l(abhw.NO_CONNECTION_ERROR);
+                    be.y(new dhln() { // from class: adic
+                        @Override // defpackage.dhln
+                        public final void gB(Exception exc) {
+                            ((eluo) ((eluo) adij.a.j()).s(exc)).x("Failed to send key retrieval request.");
+                            adij.this.b.l(adhw.NO_CONNECTION_ERROR);
                         }
                     });
                 }
             });
-            abijVar.b().bh(abijVar);
+            adijVar.b().bg(adijVar);
         }
-        abijVar.c.g(this, new jpd() { // from class: abhs
-            @Override // defpackage.jpd
+        adijVar.c.g(this, new jvs() { // from class: adhs
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 Boolean bool = (Boolean) obj;
-                ((ejhf) WearKeyReceiverChimeraActivity.h.h()).B("setting result, isSuccess: %s", bool);
+                ((eluo) WearKeyReceiverChimeraActivity.h.h()).B("setting result, isSuccess: %s", bool);
                 int i = true != bool.booleanValue() ? 0 : -1;
                 WearKeyReceiverChimeraActivity wearKeyReceiverChimeraActivity = WearKeyReceiverChimeraActivity.this;
                 wearKeyReceiverChimeraActivity.setResult(i);
@@ -220,15 +220,15 @@ public class WearKeyReceiverChimeraActivity extends qex {
             }
         });
         setTheme(R.style.Theme_GoogleMaterial_Dark_NoActionBar);
-        ((qfn) this).c.b(this, new abht(this));
-        bp bpVar = new bp(gI());
-        bpVar.F(android.R.id.content, new abhx());
+        ((ryr) this).c.b(this, new adht(this));
+        bp bpVar = new bp(gY());
+        bpVar.F(android.R.id.content, new adhx());
         bpVar.d();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
-        ((ejhf) h.j()).x("Previous retrieval session is ongoing, ignoring request");
+        ((eluo) h.j()).x("Previous retrieval session is ongoing, ignoring request");
         super.onNewIntent(intent);
     }
 }

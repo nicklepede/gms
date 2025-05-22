@@ -4,13 +4,13 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
 import com.google.android.gms.ads.internal.mediation.client.e;
-import defpackage.azhr;
-import defpackage.azht;
-import defpackage.otn;
+import defpackage.bbln;
+import defpackage.bblp;
+import defpackage.qmq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public abstract class b extends otn implements c {
+public abstract class b extends qmq implements c {
     public b() {
         super("com.google.android.gms.ads.internal.reward.client.IRewardedVideoAdCreator");
     }
@@ -23,19 +23,19 @@ public abstract class b extends otn implements c {
         return queryLocalInterface instanceof c ? (c) queryLocalInterface : new a(iBinder);
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
-        azht azhrVar;
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
+        bblp bblnVar;
         if (i != 1) {
             return false;
         }
         IBinder readStrongBinder = parcel.readStrongBinder();
         e eVar = null;
         if (readStrongBinder == null) {
-            azhrVar = null;
+            bblnVar = null;
         } else {
             IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.dynamic.IObjectWrapper");
-            azhrVar = queryLocalInterface instanceof azht ? (azht) queryLocalInterface : new azhr(readStrongBinder);
+            bblnVar = queryLocalInterface instanceof bblp ? (bblp) queryLocalInterface : new bbln(readStrongBinder);
         }
         IBinder readStrongBinder2 = parcel.readStrongBinder();
         if (readStrongBinder2 != null) {
@@ -43,8 +43,8 @@ public abstract class b extends otn implements c {
             eVar = queryLocalInterface2 instanceof e ? (e) queryLocalInterface2 : new com.google.android.gms.ads.internal.mediation.client.c(readStrongBinder2);
         }
         int readInt = parcel.readInt();
-        fq(parcel);
-        IBinder newRewardedVideoAd = newRewardedVideoAd(azhrVar, eVar, readInt);
+        fD(parcel);
+        IBinder newRewardedVideoAd = newRewardedVideoAd(bblnVar, eVar, readInt);
         parcel2.writeNoException();
         parcel2.writeStrongBinder(newRewardedVideoAd);
         return true;

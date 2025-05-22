@@ -6,14 +6,14 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import com.google.android.gms.R;
 import com.google.android.setupdesign.GlifLoadingLayout;
-import defpackage.djcw;
-import defpackage.djde;
-import defpackage.edfq;
+import defpackage.dlop;
+import defpackage.dlox;
+import defpackage.efsl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class WalletGlifLayout extends GlifLoadingLayout {
-    private djde f;
+    private dlox f;
 
     public WalletGlifLayout(Context context) {
         super(context, 0, 0);
@@ -21,9 +21,9 @@ public class WalletGlifLayout extends GlifLoadingLayout {
     }
 
     private final void g(AttributeSet attributeSet, int i) {
-        djde djdeVar = new djde(this, attributeSet, i);
-        this.f = djdeVar;
-        s(edfq.class, djdeVar);
+        dlox dloxVar = new dlox(this, attributeSet, i);
+        this.f = dloxVar;
+        s(efsl.class, dloxVar);
     }
 
     public final void c() {
@@ -32,7 +32,7 @@ public class WalletGlifLayout extends GlifLoadingLayout {
 
     @Override // android.view.View
     public final void onRestoreInstanceState(Parcelable parcelable) {
-        djcw djcwVar;
+        dlop dlopVar;
         if (!(parcelable instanceof Bundle)) {
             super.onRestoreInstanceState(parcelable);
             return;
@@ -40,18 +40,18 @@ public class WalletGlifLayout extends GlifLoadingLayout {
         Bundle bundle = (Bundle) parcelable;
         bundle.setClassLoader(getClass().getClassLoader());
         super.onRestoreInstanceState(bundle.getParcelable("superSavedInstanceState"));
-        djde djdeVar = this.f;
-        if (djdeVar == null || (djcwVar = djdeVar.c) == null) {
+        dlox dloxVar = this.f;
+        if (dloxVar == null || (dlopVar = dloxVar.c) == null) {
             return;
         }
-        djcwVar.onRestoreInstanceState(parcelable);
+        dlopVar.onRestoreInstanceState(parcelable);
     }
 
     @Override // android.view.View
     public final Parcelable onSaveInstanceState() {
-        djcw djcwVar;
-        djde djdeVar = this.f;
-        Parcelable bundle = (djdeVar == null || (djcwVar = djdeVar.c) == null) ? new Bundle() : djcwVar.onSaveInstanceState();
+        dlop dlopVar;
+        dlox dloxVar = this.f;
+        Parcelable bundle = (dloxVar == null || (dlopVar = dloxVar.c) == null) ? new Bundle() : dlopVar.onSaveInstanceState();
         ((Bundle) bundle).putParcelable("superSavedInstanceState", super.onSaveInstanceState());
         return bundle;
     }

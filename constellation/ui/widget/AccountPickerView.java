@@ -10,22 +10,22 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.constellation.ui.widget.AccountPickerView;
 import com.google.android.libraries.onegoogle.account.disc.AccountParticleDisc;
-import defpackage.arxo;
-import defpackage.asmf;
-import defpackage.atle;
-import defpackage.atmg;
-import defpackage.dtmk;
-import defpackage.dtyj;
-import defpackage.dtyk;
-import defpackage.dtyl;
-import defpackage.dtyz;
-import defpackage.dujf;
+import defpackage.auad;
+import defpackage.aupz;
+import defpackage.avph;
+import defpackage.avqj;
+import defpackage.dvww;
+import defpackage.dwiv;
+import defpackage.dwiw;
+import defpackage.dwix;
+import defpackage.dwjl;
+import defpackage.dwtr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class AccountPickerView extends FrameLayout {
     public static final /* synthetic */ int a = 0;
-    private static final arxo b = atmg.a("account_picker");
+    private static final auad b = avqj.a("account_picker");
     private TextView c;
     private AccountParticleDisc d;
 
@@ -38,11 +38,11 @@ public class AccountPickerView extends FrameLayout {
         if (accountParticleDisc == null) {
             return;
         }
-        dtyk dtykVar = (dtyk) accountParticleDisc.k;
-        if (dtykVar == null || !TextUtils.equals(account.name, dtykVar.c)) {
+        dwiw dwiwVar = (dwiw) accountParticleDisc.k;
+        if (dwiwVar == null || !TextUtils.equals(account.name, dwiwVar.c)) {
             b.d("Setting account: %s", account.name);
             AccountParticleDisc accountParticleDisc2 = this.d;
-            dtyj a2 = dtyk.a();
+            dwiv a2 = dwiw.a();
             a2.b(account.name);
             accountParticleDisc2.m(a2.a());
             TextView textView = this.c;
@@ -53,7 +53,7 @@ public class AccountPickerView extends FrameLayout {
     }
 
     public final void b(final Runnable runnable) {
-        super.setOnClickListener(new View.OnClickListener() { // from class: atkr
+        super.setOnClickListener(new View.OnClickListener() { // from class: avou
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 int i = AccountPickerView.a;
@@ -67,16 +67,16 @@ public class AccountPickerView extends FrameLayout {
         super.onFinishInflate();
         this.c = (TextView) findViewById(R.id.account_name);
         this.d = (AccountParticleDisc) findViewById(R.id.account_particle_disc);
-        dtyl dtylVar = new dtyl();
-        asmf asmfVar = new asmf(1, 9);
+        dwix dwixVar = new dwix();
+        aupz aupzVar = new aupz(1, 9);
         Context context = getContext();
         Context context2 = getContext();
-        atle.d();
+        avph.d();
         Context context3 = getContext();
-        dujf dujfVar = new dujf();
-        dujfVar.b(context3);
-        dujfVar.b = asmfVar;
-        this.d.i(new dtmk(context, asmfVar, dtylVar, new dtyz(context2, dujfVar.a())), dtylVar);
+        dwtr dwtrVar = new dwtr();
+        dwtrVar.b(context3);
+        dwtrVar.b = aupzVar;
+        this.d.i(new dvww(context, aupzVar, dwixVar, new dwjl(context2, dwtrVar.a())), dwixVar);
     }
 
     public AccountPickerView(Context context, AttributeSet attributeSet) {

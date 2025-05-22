@@ -1,7 +1,7 @@
 package com.google.android.gms.org.conscrypt;
 
 import defpackage.a;
-import defpackage.fwac;
+import defpackage.fywe;
 import java.io.ByteArrayInputStream;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
@@ -17,7 +17,7 @@ import javax.net.ssl.SSLException;
 import javax.net.ssl.SSLHandshakeException;
 import javax.net.ssl.SSLPeerUnverifiedException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 final class SSLUtils {
     private static final String KEY_TYPE_EC = "EC";
@@ -27,7 +27,7 @@ final class SSLUtils {
     private static final int MAX_PROTOCOL_LENGTH = 255;
     static final boolean USE_ENGINE_SOCKET_BY_DEFAULT = Boolean.parseBoolean(System.getProperty("com.google.android.gms.org.conscrypt.useEngineSocketByDefault", "true"));
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class EngineStates {
         static final int STATE_CLOSED = 8;
         static final int STATE_CLOSED_INBOUND = 6;
@@ -43,7 +43,7 @@ final class SSLUtils {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     enum SessionType {
         OPEN_SSL(1),
         OPEN_SSL_WITH_OCSP(2),
@@ -112,7 +112,7 @@ final class SSLUtils {
             i3++;
             i2 += b + 1;
         }
-        throw new IllegalArgumentException("Protocol has invalid length (" + ((int) b) + " at position " + i2 + "): " + (length < 50 ? Arrays.toString(bArr) : a.W(length, " byte array")));
+        throw new IllegalArgumentException("Protocol has invalid length (" + ((int) b) + " at position " + i2 + "): " + (length < 50 ? Arrays.toString(bArr) : a.B(length, " byte array")));
     }
 
     private static X509Certificate decodeX509Certificate(CertificateFactory certificateFactory, byte[] bArr) {
@@ -209,10 +209,10 @@ final class SSLUtils {
         int unsignedShort;
         int position = byteBuffer.position();
         switch (unsignedByte(byteBuffer.get(position))) {
-            case fwac.t /* 20 */:
-            case fwac.u /* 21 */:
-            case fwac.v /* 22 */:
-            case fwac.w /* 23 */:
+            case fywe.t /* 20 */:
+            case fywe.u /* 21 */:
+            case fywe.v /* 22 */:
+            case fywe.w /* 23 */:
                 if (unsignedByte(byteBuffer.get(position + 1)) != 3 || (unsignedShort = unsignedShort(byteBuffer.getShort(position + 3)) + 5) <= 5) {
                     return -1;
                 }

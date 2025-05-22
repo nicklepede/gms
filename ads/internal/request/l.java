@@ -7,7 +7,7 @@ import com.google.android.gms.dynamite.descriptors.com.google.android.gms.ads.dy
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class l {
     public final Object a;
@@ -28,13 +28,13 @@ public final class l {
             }
             jSONObject.put("js", versionInfoParcel.a);
             jSONObject.put("mf", com.google.android.gms.ads.internal.flag.n.c.d());
-            jSONObject.put("cl", "752466036");
+            jSONObject.put("cl", "758020094");
             jSONObject.put("rapid_rc", "dev");
             jSONObject.put("rapid_rollup", "HEAD");
             jSONObject.put("admob_module_version", ModuleDescriptor.MODULE_VERSION);
             jSONObject.put("dynamite_local_version", ModuleDescriptor.MODULE_VERSION);
             jSONObject.put("dynamite_version", com.google.android.gms.ads.internal.util.client.l.a(context));
-            jSONObject.put("container_version", 251661004);
+            jSONObject.put("container_version", 251864004);
         } catch (JSONException unused) {
         }
         return jSONObject;

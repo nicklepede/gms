@@ -2,14 +2,14 @@ package com.google.android.gms.icing.proxy;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.blpq;
-import defpackage.blrv;
-import defpackage.blry;
-import defpackage.blrz;
-import defpackage.eihn;
-import defpackage.fmwx;
+import defpackage.bnwi;
+import defpackage.bnyn;
+import defpackage.bnyq;
+import defpackage.bnyr;
+import defpackage.ekus;
+import defpackage.fpow;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class AppsMonitorIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
@@ -17,16 +17,16 @@ public class AppsMonitorIntentOperation extends IntentOperation {
         if (intent == null) {
             return;
         }
-        if (eihn.a(intent.getAction(), "android.intent.action.PACKAGE_CHANGED") && fmwx.c()) {
+        if (ekus.a(intent.getAction(), "android.intent.action.PACKAGE_CHANGED") && fpow.c()) {
             return;
         }
-        if (eihn.a(intent.getAction(), "com.google.android.gms.ENTIRE_PACKAGE_CHANGED")) {
+        if (ekus.a(intent.getAction(), "com.google.android.gms.ENTIRE_PACKAGE_CHANGED")) {
             intent.setAction("android.intent.action.PACKAGE_CHANGED");
         }
         try {
-            final blpq c = blpq.c(this);
+            final bnwi c = bnwi.c(this);
             if (c != null && intent.getAction() != null) {
-                blrz.a().b(new blry(new Runnable() { // from class: blpn
+                bnyr.a().b(new bnyq(new Runnable() { // from class: bnwf
                     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
                     /* JADX WARN: Removed duplicated region for block: B:90:0x0195 A[EXC_TOP_SPLITTER, SYNTHETIC] */
                     @Override // java.lang.Runnable
@@ -39,12 +39,12 @@ public class AppsMonitorIntentOperation extends IntentOperation {
                             Method dump skipped, instructions count: 464
                             To view this dump change 'Code comments level' option to 'DEBUG'
                         */
-                        throw new UnsupportedOperationException("Method not decompiled: defpackage.blpn.run():void");
+                        throw new UnsupportedOperationException("Method not decompiled: defpackage.bnwf.run():void");
                     }
                 }, "AppsCorpusProcessChangeRunnable"));
             }
         } catch (Exception e) {
-            blrv.i(e, "Failed to handle package changes", new Object[0]);
+            bnyn.i(e, "Failed to handle package changes", new Object[0]);
         }
         Intent b = UpdateIcingCorporaIntentOperation.b(this);
         if (b != null) {

@@ -3,16 +3,16 @@ package com.google.android.gms.tapandpay.firstparty;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dexy;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dhjc;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class TransactionData extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dexy();
+    public static final Parcelable.Creator CREATOR = new dhjc();
     final long a;
     final long b;
     final String c;
@@ -43,7 +43,7 @@ public class TransactionData extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof TransactionData) {
             TransactionData transactionData = (TransactionData) obj;
-            if (arwb.b(Long.valueOf(this.a), Long.valueOf(transactionData.a)) && arwb.b(Long.valueOf(this.b), Long.valueOf(transactionData.b)) && arwb.b(this.c, transactionData.c) && arwb.b(Integer.valueOf(this.d), Integer.valueOf(transactionData.d)) && arwb.b(this.e, transactionData.e) && arwb.b(Integer.valueOf(this.f), Integer.valueOf(transactionData.f)) && arwb.b(Boolean.valueOf(this.g), Boolean.valueOf(transactionData.g)) && arwb.b(this.h, transactionData.h) && arwb.b(this.i, transactionData.i) && arwb.b(this.j, transactionData.j)) {
+            if (atyq.b(Long.valueOf(this.a), Long.valueOf(transactionData.a)) && atyq.b(Long.valueOf(this.b), Long.valueOf(transactionData.b)) && atyq.b(this.c, transactionData.c) && atyq.b(Integer.valueOf(this.d), Integer.valueOf(transactionData.d)) && atyq.b(this.e, transactionData.e) && atyq.b(Integer.valueOf(this.f), Integer.valueOf(transactionData.f)) && atyq.b(Boolean.valueOf(this.g), Boolean.valueOf(transactionData.g)) && atyq.b(this.h, transactionData.h) && atyq.b(this.i, transactionData.i) && atyq.b(this.j, transactionData.j)) {
                 return true;
             }
         }
@@ -56,17 +56,17 @@ public class TransactionData extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 2, this.a);
-        arxc.q(parcel, 4, this.b);
-        arxc.v(parcel, 5, this.c, false);
-        arxc.o(parcel, 6, this.d);
-        arxc.E(parcel, 7, this.e);
-        arxc.o(parcel, 8, this.f);
-        arxc.e(parcel, 9, this.g);
-        arxc.v(parcel, 10, this.h, false);
-        arxc.v(parcel, 11, this.i, false);
-        arxc.v(parcel, 12, this.j, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 2, this.a);
+        atzr.q(parcel, 4, this.b);
+        atzr.v(parcel, 5, this.c, false);
+        atzr.o(parcel, 6, this.d);
+        atzr.E(parcel, 7, this.e);
+        atzr.o(parcel, 8, this.f);
+        atzr.e(parcel, 9, this.g);
+        atzr.v(parcel, 10, this.h, false);
+        atzr.v(parcel, 11, this.i, false);
+        atzr.v(parcel, 12, this.j, false);
+        atzr.c(parcel, a);
     }
 }

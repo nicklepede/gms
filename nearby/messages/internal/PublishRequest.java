@@ -6,20 +6,20 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.messages.Strategy;
-import defpackage.arxc;
-import defpackage.cked;
-import defpackage.ckef;
-import defpackage.ckej;
-import defpackage.ckfk;
+import defpackage.atzr;
+import defpackage.cmmi;
+import defpackage.cmmk;
+import defpackage.cmmo;
+import defpackage.cmnp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class PublishRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckfk();
+    public static final Parcelable.Creator CREATOR = new cmnp();
     final int a;
     public final MessageWrapper b;
     public final Strategy c;
-    public final ckef d;
+    public final cmmk d;
 
     @Deprecated
     public final String e;
@@ -36,29 +36,29 @@ public final class PublishRequest extends AbstractSafeParcelable {
     @Deprecated
     public final ClientAppContext i;
     public final int j;
-    public final ckej k;
+    public final cmmo k;
 
     public PublishRequest(int i, MessageWrapper messageWrapper, Strategy strategy, IBinder iBinder, String str, String str2, boolean z, IBinder iBinder2, boolean z2, ClientAppContext clientAppContext, int i2) {
-        ckef ckedVar;
+        cmmk cmmiVar;
         this.a = i;
         this.b = messageWrapper;
         this.c = strategy;
-        ckej ckejVar = null;
+        cmmo cmmoVar = null;
         if (iBinder == null) {
-            ckedVar = null;
+            cmmiVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.messages.internal.INearbyMessagesCallback");
-            ckedVar = queryLocalInterface instanceof ckef ? (ckef) queryLocalInterface : new cked(iBinder);
+            cmmiVar = queryLocalInterface instanceof cmmk ? (cmmk) queryLocalInterface : new cmmi(iBinder);
         }
-        this.d = ckedVar;
+        this.d = cmmiVar;
         this.e = str;
         this.f = str2;
         this.g = z;
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.nearby.messages.internal.IPublishCallback");
-            ckejVar = queryLocalInterface2 instanceof ckej ? (ckej) queryLocalInterface2 : new ckej(iBinder2);
+            cmmoVar = queryLocalInterface2 instanceof cmmo ? (cmmo) queryLocalInterface2 : new cmmo(iBinder2);
         }
-        this.k = ckejVar;
+        this.k = cmmoVar;
         this.h = z2;
         this.i = ClientAppContext.b(clientAppContext, str2, str, z2);
         this.j = i2;
@@ -67,19 +67,19 @@ public final class PublishRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.D(parcel, 4, this.d.asBinder());
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.e(parcel, 7, this.g);
-        ckej ckejVar = this.k;
-        arxc.D(parcel, 8, ckejVar == null ? null : ckejVar.a);
-        arxc.e(parcel, 9, this.h);
-        arxc.t(parcel, 10, this.i, i, false);
-        arxc.o(parcel, 11, this.j);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.D(parcel, 4, this.d.asBinder());
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.e(parcel, 7, this.g);
+        cmmo cmmoVar = this.k;
+        atzr.D(parcel, 8, cmmoVar == null ? null : cmmoVar.a);
+        atzr.e(parcel, 9, this.h);
+        atzr.t(parcel, 10, this.i, i, false);
+        atzr.o(parcel, 11, this.j);
+        atzr.c(parcel, a);
     }
 }

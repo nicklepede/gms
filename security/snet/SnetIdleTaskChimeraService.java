@@ -4,20 +4,20 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.byln;
-import defpackage.czbt;
-import defpackage.frtq;
+import defpackage.cauf;
+import defpackage.dblr;
+import defpackage.fuoj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SnetIdleTaskChimeraService extends GmsTaskChimeraService {
-    private final IBinder a = new czbt();
+    private final IBinder a = new dblr();
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         int i = SnetGcmSchedulerChimeraIntentService.a;
         startService(IntentOperation.getStartIntent(this, SnetGcmSchedulerChimeraIntentService.class, "com.google.android.gms.security.snet.ACTION_IDLE_RUN"));
-        if (!frtq.t()) {
+        if (!fuoj.t()) {
             return 0;
         }
         int i2 = SnetDailyHygieneChimeraIntentService.a;
@@ -26,7 +26,7 @@ public class SnetIdleTaskChimeraService extends GmsTaskChimeraService {
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final void fR() {
+    public final void gf() {
         SnetGcmSchedulerChimeraIntentService.b(this);
     }
 

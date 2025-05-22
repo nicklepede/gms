@@ -3,27 +3,27 @@ package com.google.android.gms.auth.aang.impl.accountstate;
 import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.ekgh;
-import defpackage.fecj;
-import defpackage.uuw;
-import defpackage.vba;
+import defpackage.emtt;
+import defpackage.fgrc;
+import defpackage.wqv;
+import defpackage.wxa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CredentialStateSyncChimeraService extends Service {
     private static final Object a = new Object();
-    private static uuw b;
+    private static wqv b;
 
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
-        fecj v = ekgh.a.v();
+        fgrc v = emtt.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        ekgh ekghVar = (ekgh) v.b;
-        ekghVar.c = 8;
-        ekghVar.b |= 1;
-        vba.p((ekgh) v.Q());
+        emtt emttVar = (emtt) v.b;
+        emttVar.c = 8;
+        emttVar.b |= 1;
+        wxa.p((emtt) v.Q());
         return b.getSyncAdapterBinder();
     }
 
@@ -31,7 +31,7 @@ public class CredentialStateSyncChimeraService extends Service {
     public final void onCreate() {
         synchronized (a) {
             if (b == null) {
-                b = new uuw(getApplicationContext());
+                b = new wqv(getApplicationContext());
             }
         }
     }

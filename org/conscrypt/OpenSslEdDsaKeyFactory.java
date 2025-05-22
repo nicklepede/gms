@@ -1,7 +1,6 @@
 package com.google.android.gms.org.conscrypt;
 
-import defpackage.ctbc;
-import java.lang.reflect.InvocationTargetException;
+import defpackage.cvkg;
 import java.security.InvalidKeyException;
 import java.security.Key;
 import java.security.KeyFactorySpi;
@@ -13,21 +12,9 @@ import java.security.spec.KeySpec;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OpenSslEdDsaKeyFactory extends KeyFactorySpi {
-    private KeySpec makeRawKeySpec(byte[] bArr, Class cls) {
-        try {
-            KeySpec keySpec = (KeySpec) cls.getConstructor(byte[].class).newInstance(bArr);
-            if (((EncodedKeySpec) keySpec).getFormat().equalsIgnoreCase("raw")) {
-                return keySpec;
-            }
-            throw new InvalidKeySpecException("EncodedKeySpec class must be raw format");
-        } catch (IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e) {
-            throw new InvalidKeySpecException("Can't process KeySpec class ".concat(String.valueOf(cls.getName())), e);
-        }
-    }
-
     @Override // java.security.KeyFactorySpi
     protected PrivateKey engineGeneratePrivate(KeySpec keySpec) {
         if (keySpec == null) {
@@ -72,7 +59,7 @@ public final class OpenSslEdDsaKeyFactory extends KeyFactorySpi {
                     return new X509EncodedKeySpec(engineTranslateKey.getEncoded());
                 }
                 if (EncodedKeySpec.class.isAssignableFrom(cls)) {
-                    return makeRawKeySpec(openSslEdDsaPublicKey.getRaw(), cls);
+                    return KeySpecUtil.makeRawKeySpec(openSslEdDsaPublicKey.getRaw(), cls);
                 }
             } else if (engineTranslateKey instanceof OpenSslEdDsaPrivateKey) {
                 OpenSslEdDsaPrivateKey openSslEdDsaPrivateKey = (OpenSslEdDsaPrivateKey) engineTranslateKey;
@@ -80,10 +67,10 @@ public final class OpenSslEdDsaKeyFactory extends KeyFactorySpi {
                     return new PKCS8EncodedKeySpec(engineTranslateKey.getEncoded());
                 }
                 if (EncodedKeySpec.class.isAssignableFrom(cls)) {
-                    return makeRawKeySpec(openSslEdDsaPrivateKey.getRaw(), cls);
+                    return KeySpecUtil.makeRawKeySpec(openSslEdDsaPrivateKey.getRaw(), cls);
                 }
             }
-            throw new InvalidKeySpecException(ctbc.a(cls, engineTranslateKey));
+            throw new InvalidKeySpecException(cvkg.a(cls, engineTranslateKey));
         } catch (InvalidKeyException e) {
             throw new InvalidKeySpecException("Unsupported key class: ".concat(String.valueOf(String.valueOf(key.getClass()))), e);
         }

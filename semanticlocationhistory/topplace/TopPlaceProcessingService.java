@@ -5,473 +5,521 @@ import android.os.RemoteException;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.isolation.OdlhJniLoader;
 import com.google.android.gms.semanticlocationhistory.topplace.TopPlaceProcessingService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.czio;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.czoq;
-import defpackage.cztm;
-import defpackage.cztu;
-import defpackage.czua;
-import defpackage.czux;
-import defpackage.czuy;
-import defpackage.czuz;
-import defpackage.czvb;
-import defpackage.daga;
-import defpackage.dahq;
-import defpackage.dazc;
-import defpackage.dazs;
-import defpackage.dazz;
-import defpackage.dbbm;
-import defpackage.dbbn;
-import defpackage.dbel;
-import defpackage.dbem;
-import defpackage.egjy;
-import defpackage.egmm;
-import defpackage.eiho;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.eius;
-import defpackage.ejcb;
-import defpackage.ejhf;
-import defpackage.ejls;
-import defpackage.ejmh;
-import defpackage.ennt;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.erfr;
-import defpackage.eylo;
-import defpackage.eyua;
-import defpackage.eyub;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.fegx;
-import defpackage.frwe;
-import defpackage.frwt;
-import defpackage.frxn;
-import defpackage.frxq;
-import defpackage.frym;
-import defpackage.ftye;
-import defpackage.ftyg;
-import defpackage.fvyt;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.dbsm;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dbyr;
+import defpackage.dcdn;
+import defpackage.dcdv;
+import defpackage.dceb;
+import defpackage.dcey;
+import defpackage.dcez;
+import defpackage.dcfa;
+import defpackage.dcfc;
+import defpackage.dcqi;
+import defpackage.dcry;
+import defpackage.ddjk;
+import defpackage.ddka;
+import defpackage.ddkh;
+import defpackage.ddlu;
+import defpackage.ddlv;
+import defpackage.ddot;
+import defpackage.ddou;
+import defpackage.eixb;
+import defpackage.eizp;
+import defpackage.ekut;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elhx;
+import defpackage.elpg;
+import defpackage.eluo;
+import defpackage.elzb;
+import defpackage.elzp;
+import defpackage.eqbm;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.etun;
+import defpackage.fbaa;
+import defpackage.fbio;
+import defpackage.fbip;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.fgvq;
+import defpackage.fuqy;
+import defpackage.furn;
+import defpackage.fush;
+import defpackage.fusk;
+import defpackage.futg;
+import defpackage.fwuc;
+import defpackage.fwue;
+import defpackage.fyut;
 import j$.util.DesugarCollections;
 import java.util.BitSet;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class TopPlaceProcessingService extends GmsTaskBoundService {
-    public static final asot a = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "TopPlace");
+    public static final ausn a = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "TopPlace");
     public static final String b = TopPlaceProcessingService.class.getName();
-    private czoq c;
-    private daga d;
-    private czje e;
-    private czlk f;
-    private dbel g;
-    private dahq h;
+    private dbyr c;
+    private dcqi d;
+    private dbtc e;
+    private dbvg f;
+    private ddot g;
+    private dcry h;
 
     public static native byte[] aggregate(byte[] bArr, byte[] bArr2, byte[] bArr3, int i);
 
     public static native byte[] getClusterSnappedTimeline(byte[][] bArr);
 
     public static boolean j() {
-        return frxn.Q() && frym.a.a().d();
+        return fush.Q() && futg.a.lK().d();
     }
 
-    private final dahq k() {
+    private final dcry k() {
         if (this.h == null) {
-            this.h = new dahq();
+            this.h = new dcry();
         }
         return this.h;
     }
 
-    private final enss l() {
-        return enps.f(k().g("TopPlaceProcessing", fegx.h(System.currentTimeMillis())), new eiho() { // from class: dbmo
-            @Override // defpackage.eiho
+    private final eqgl l() {
+        return eqdl.f(k().g("TopPlaceProcessing", fgvq.h(System.currentTimeMillis())), new ekut() { // from class: ddwu
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                asot asotVar = TopPlaceProcessingService.a;
+                ausn ausnVar = TopPlaceProcessingService.a;
                 return 2;
             }
-        }, enre.a);
+        }, eqex.a);
     }
 
     public static native byte[] populateGeoJournalSummaryUpgrades(byte[] bArr, byte[] bArr2, String str);
 
-    public final czje d() {
+    public final dbtc d() {
         if (this.e == null) {
-            this.e = new czje();
+            this.e = new dbtc();
         }
         return this.e;
     }
 
-    public final czlk e() {
+    public final dbvg e() {
         if (this.f == null) {
-            this.f = new czlk(d());
+            this.f = new dbvg(d());
         }
         return this.f;
     }
 
-    public final cztu f(Context context, final eitj eitjVar, long j, long j2) {
+    public final dcdv f(Context context, final elgo elgoVar, long j, long j2) {
+        String str;
+        String str2;
         long j3;
-        final cztu cztuVar;
+        final dcdv dcdvVar;
+        String str3;
         int i;
-        int i2;
         List list;
         BitSet bitSet;
         long j4;
-        BitSet bitSet2;
-        czua czuaVar;
-        czux czuxVar;
-        int i3;
-        eylo eyloVar;
-        int i4 = eitj.d;
-        eite eiteVar = new eite();
+        String str4;
+        String str5;
+        dcdn dcdnVar;
+        dceb dcebVar;
+        dcdn dcdnVar2;
+        fbaa fbaaVar;
+        String str6 = "TopPlaceJniInvocationFail";
+        String str7 = "JNI isolated api invocation failed";
+        String str8 = "TopPlaceParseJniFail";
+        int i2 = elgo.d;
+        elgj elgjVar = new elgj();
         try {
-            d().f("TopPlaceRawSignalNum", ((ejcb) eitjVar).c);
-            egjy e = egmm.e("com/google/android/gms/semanticlocationhistory/topplace/TopPlaceProcessingService", "clusterSignals", 899, "semanticlocationhistory-TopPlaceProcessingService_getClusterSnappedTimeline");
+            d().f("TopPlaceRawSignalNum", ((elpg) elgoVar).c);
+            eixb e = eizp.e("com/google/android/gms/semanticlocationhistory/topplace/TopPlaceProcessingService", "clusterSignals", 899, "semanticlocationhistory-TopPlaceProcessingService_getClusterSnappedTimeline");
             try {
-                Object a2 = OdlhJniLoader.a.a(new dazc() { // from class: dbls
-                    @Override // defpackage.dazc
+                Object a2 = OdlhJniLoader.a.a(new ddjk() { // from class: ddvy
+                    @Override // defpackage.ddjk
                     public final Object a() {
-                        eitj eitjVar2 = eitj.this;
-                        int i5 = ((ejcb) eitjVar2).c;
-                        asot asotVar = TopPlaceProcessingService.a;
-                        return TopPlaceProcessingService.getClusterSnappedTimeline((byte[][]) eitjVar2.toArray(new byte[i5][]));
+                        elgo elgoVar2 = elgo.this;
+                        int i3 = ((elpg) elgoVar2).c;
+                        ausn ausnVar = TopPlaceProcessingService.a;
+                        return TopPlaceProcessingService.getClusterSnappedTimeline((byte[][]) elgoVar2.toArray(new byte[i3][]));
                     }
                 });
                 e.close();
-                febw febwVar = febw.a;
-                feep feepVar = feep.a;
-                int i5 = 0;
-                fecp y = fecp.y(dbbn.a, (byte[]) a2, 0, ((byte[]) a2).length, febw.a);
-                fecp.M(y);
-                dbbn dbbnVar = (dbbn) y;
-                czje d = d();
-                fvyt fvytVar = dbbnVar.c;
-                if (fvytVar == null) {
-                    fvytVar = fvyt.b;
+                fgqp fgqpVar = fgqp.a;
+                fgti fgtiVar = fgti.a;
+                int i3 = 0;
+                fgri y = fgri.y(ddlv.a, (byte[]) a2, 0, ((byte[]) a2).length, fgqp.a);
+                fgri.M(y);
+                ddlv ddlvVar = (ddlv) y;
+                dbtc d = d();
+                fyut fyutVar = ddlvVar.c;
+                if (fyutVar == null) {
+                    fyutVar = fyut.b;
                 }
-                d.o(fvytVar, czje.d);
-                eiteVar.k(eitj.i(dbbnVar.b));
-                eitj g = eiteVar.g();
-                czuz czuzVar = czuz.a;
+                d.o(fyutVar, dbtc.d);
+                elgjVar.k(elgo.i(ddlvVar.b));
+                elgo g = elgjVar.g();
+                dcfa dcfaVar = dcfa.a;
                 try {
-                    eius eiusVar = new eius();
-                    int i6 = ((ejcb) g).c;
-                    int i7 = 0;
+                    elhx elhxVar = new elhx();
+                    int i4 = ((elpg) g).c;
+                    int i5 = 0;
                     while (true) {
                         j3 = 100;
-                        if (i7 >= i6) {
+                        if (i5 >= i4) {
                             break;
                         }
-                        czua czuaVar2 = ((cztm) g.get(i7)).e;
-                        if (czuaVar2 == null) {
-                            czuaVar2 = czua.a;
+                        dceb dcebVar2 = ((dcdn) g.get(i5)).e;
+                        if (dcebVar2 == null) {
+                            dcebVar2 = dceb.a;
                         }
-                        eiusVar.k(czio.a(czuaVar2, 100L));
-                        i7++;
+                        elhxVar.k(dbsm.a(dcebVar2, 100L));
+                        i5++;
                     }
-                    dbel g2 = g(context);
-                    eyua eyuaVar = (eyua) eyub.a.v();
-                    eyuaVar.a(eiusVar.g());
-                    if (!eyuaVar.b.L()) {
-                        eyuaVar.U();
+                    ddot g2 = g(context);
+                    fbio fbioVar = (fbio) fbip.a.v();
+                    fbioVar.a(elhxVar.g());
+                    if (!fbioVar.b.L()) {
+                        fbioVar.U();
                     }
-                    eyub.b((eyub) eyuaVar.b);
-                    eitj i8 = eitj.i(g2.b((eyub) eyuaVar.Q()).b);
-                    fecj v = czuz.a.v();
-                    int i9 = 0;
-                    while (i9 < i6) {
-                        cztm cztmVar = (cztm) g.get(i9);
-                        czua czuaVar3 = cztmVar.e;
-                        if (czuaVar3 == null) {
-                            czuaVar3 = czua.a;
+                    fbip.b((fbip) fbioVar.b);
+                    elgo i6 = elgo.i(g2.b((fbip) fbioVar.Q()).b);
+                    fgrc v = dcfa.a.v();
+                    int i7 = 0;
+                    while (i7 < i4) {
+                        dcdn dcdnVar3 = (dcdn) g.get(i7);
+                        dceb dcebVar3 = dcdnVar3.e;
+                        if (dcebVar3 == null) {
+                            dcebVar3 = dceb.a;
                         }
-                        czua czuaVar4 = cztmVar.e;
-                        if (czuaVar4 == null) {
-                            czuaVar4 = czua.a;
+                        dceb dcebVar4 = dcdnVar3.e;
+                        if (dcebVar4 == null) {
+                            dcebVar4 = dceb.a;
                         }
-                        List a3 = czio.a(czuaVar4, j3);
-                        czux czuxVar2 = czux.a;
-                        int size = i8.size();
-                        czux czuxVar3 = czuxVar2;
-                        while (i5 < size) {
-                            eylo eyloVar2 = (eylo) i8.get(i5);
-                            eitj eitjVar2 = i8;
-                            int i10 = i6;
-                            long j5 = eyloVar2.c;
-                            int i11 = i9;
+                        List a3 = dbsm.a(dcebVar4, j3);
+                        dcey dceyVar = dcey.a;
+                        int size = i6.size();
+                        dcey dceyVar2 = dceyVar;
+                        while (i3 < size) {
+                            elgo elgoVar2 = i6;
+                            fbaa fbaaVar2 = (fbaa) i6.get(i3);
+                            int i8 = i7;
+                            int i9 = i3;
+                            long j5 = fbaaVar2.c;
+                            int i10 = i4;
                             if (a3.contains(Long.valueOf(j5))) {
-                                BitSet valueOf = BitSet.valueOf(eyloVar2.f.M());
-                                i = i5;
-                                BitSet valueOf2 = BitSet.valueOf(eyloVar2.g.M());
-                                i2 = size;
+                                BitSet valueOf = BitSet.valueOf(fbaaVar2.f.M());
+                                i = size;
+                                BitSet valueOf2 = BitSet.valueOf(fbaaVar2.g.M());
+                                str3 = str8;
                                 list = a3;
-                                int i12 = 0;
-                                while (i12 < eyloVar2.e.size()) {
-                                    if (!valueOf.get(i12) && !valueOf2.get(i12)) {
-                                        j4 = j5;
+                                int i11 = 0;
+                                while (i11 < fbaaVar2.e.size()) {
+                                    if (!valueOf.get(i11) && !valueOf2.get(i11)) {
+                                        str4 = str6;
+                                        str5 = str7;
                                         bitSet = valueOf;
-                                        bitSet2 = valueOf2;
-                                        czuaVar = czuaVar3;
-                                        i3 = i12;
-                                        eyloVar = eyloVar2;
-                                        i12 = i3 + 1;
+                                        j4 = j5;
+                                        dcdnVar = dcdnVar3;
+                                        dcebVar = dcebVar3;
+                                        dcdnVar2 = dcdnVar;
+                                        fbaaVar = fbaaVar2;
+                                        i11++;
+                                        dcebVar3 = dcebVar;
                                         valueOf = bitSet;
-                                        valueOf2 = bitSet2;
+                                        str6 = str4;
                                         j5 = j4;
-                                        czuaVar3 = czuaVar;
-                                        eyloVar2 = eyloVar;
+                                        str7 = str5;
+                                        dcdnVar3 = dcdnVar2;
+                                        fbaaVar2 = fbaaVar;
                                     }
                                     bitSet = valueOf;
-                                    ejmh j6 = ejmh.j(czuaVar3.c, czuaVar3.d);
-                                    ejmh B = new ejls(j5).B();
+                                    elzp j6 = elzp.j(dcebVar3.c, dcebVar3.d);
+                                    elzp B = new elzb(j5).B();
+                                    int c = B.e().c() + fbaaVar2.h.d(i11);
                                     j4 = j5;
-                                    int c = B.e().c() + eyloVar2.h.d(i12);
-                                    int c2 = B.g().c() + eyloVar2.i.d(i12);
-                                    bitSet2 = valueOf2;
-                                    double a4 = erfr.a(j6, ejmh.j(c, c2));
-                                    czux czuxVar4 = czux.a;
-                                    if (czuxVar3.equals(czuxVar4)) {
-                                        czuaVar = czuaVar3;
-                                        czuxVar = czuxVar4;
+                                    int c2 = B.g().c() + fbaaVar2.i.d(i11);
+                                    str4 = str6;
+                                    str5 = str7;
+                                    double a4 = etun.a(j6, elzp.j(c, c2));
+                                    if (dceyVar2.equals(dceyVar)) {
+                                        dcdnVar = dcdnVar3;
+                                        dcebVar = dcebVar3;
                                     } else {
-                                        czuaVar = czuaVar3;
-                                        czuxVar = czuxVar4;
-                                        if (a4 < czuxVar3.f) {
+                                        dcdnVar = dcdnVar3;
+                                        dcebVar = dcebVar3;
+                                        if (a4 < dceyVar2.f) {
                                         }
-                                        i3 = i12;
-                                        eyloVar = eyloVar2;
-                                        i12 = i3 + 1;
+                                        dcdnVar2 = dcdnVar;
+                                        fbaaVar = fbaaVar2;
+                                        i11++;
+                                        dcebVar3 = dcebVar;
                                         valueOf = bitSet;
-                                        valueOf2 = bitSet2;
+                                        str6 = str4;
                                         j5 = j4;
-                                        czuaVar3 = czuaVar;
-                                        eyloVar2 = eyloVar;
+                                        str7 = str5;
+                                        dcdnVar3 = dcdnVar2;
+                                        fbaaVar2 = fbaaVar;
                                     }
-                                    fecj v2 = czuxVar.v();
-                                    long a5 = eyloVar2.e.a(i12);
-                                    i3 = i12;
+                                    fgrc v2 = dceyVar.v();
+                                    long a5 = fbaaVar2.e.a(i11);
+                                    dcdnVar2 = dcdnVar;
                                     if (!v2.b.L()) {
                                         v2.U();
                                     }
-                                    fecp fecpVar = v2.b;
-                                    czux czuxVar5 = (czux) fecpVar;
-                                    eyloVar = eyloVar2;
-                                    czuxVar5.b |= 1;
-                                    czuxVar5.c = a5;
-                                    if (!fecpVar.L()) {
+                                    fgri fgriVar = v2.b;
+                                    dcey dceyVar3 = (dcey) fgriVar;
+                                    fbaaVar = fbaaVar2;
+                                    dceyVar3.b |= 1;
+                                    dceyVar3.c = a5;
+                                    if (!fgriVar.L()) {
                                         v2.U();
                                     }
-                                    fecp fecpVar2 = v2.b;
-                                    czux czuxVar6 = (czux) fecpVar2;
-                                    czuxVar6.b |= 2;
-                                    czuxVar6.d = c;
-                                    if (!fecpVar2.L()) {
+                                    fgri fgriVar2 = v2.b;
+                                    dcey dceyVar4 = (dcey) fgriVar2;
+                                    dceyVar4.b |= 2;
+                                    dceyVar4.d = c;
+                                    if (!fgriVar2.L()) {
                                         v2.U();
                                     }
-                                    fecp fecpVar3 = v2.b;
-                                    czux czuxVar7 = (czux) fecpVar3;
-                                    czuxVar7.b |= 4;
-                                    czuxVar7.e = c2;
-                                    if (!fecpVar3.L()) {
+                                    fgri fgriVar3 = v2.b;
+                                    dcey dceyVar5 = (dcey) fgriVar3;
+                                    dceyVar5.b |= 4;
+                                    dceyVar5.e = c2;
+                                    if (!fgriVar3.L()) {
                                         v2.U();
                                     }
-                                    czux czuxVar8 = (czux) v2.b;
-                                    czuxVar8.b |= 8;
-                                    czuxVar8.f = a4;
-                                    czuxVar3 = (czux) v2.Q();
-                                    i12 = i3 + 1;
+                                    dcey dceyVar6 = (dcey) v2.b;
+                                    dceyVar6.b |= 8;
+                                    dceyVar6.f = a4;
+                                    dceyVar2 = (dcey) v2.Q();
+                                    i11++;
+                                    dcebVar3 = dcebVar;
                                     valueOf = bitSet;
-                                    valueOf2 = bitSet2;
+                                    str6 = str4;
                                     j5 = j4;
-                                    czuaVar3 = czuaVar;
-                                    eyloVar2 = eyloVar;
+                                    str7 = str5;
+                                    dcdnVar3 = dcdnVar2;
+                                    fbaaVar2 = fbaaVar;
                                 }
                             } else {
-                                i = i5;
-                                i2 = size;
+                                str3 = str8;
+                                i = size;
                                 list = a3;
                             }
-                            i5 = i + 1;
-                            i6 = i10;
-                            i8 = eitjVar2;
-                            i9 = i11;
-                            size = i2;
+                            dcebVar3 = dcebVar3;
+                            i7 = i8;
+                            i6 = elgoVar2;
+                            i4 = i10;
+                            size = i;
                             a3 = list;
-                            czuaVar3 = czuaVar3;
+                            str8 = str3;
+                            str7 = str7;
+                            dcdnVar3 = dcdnVar3;
+                            i3 = i9 + 1;
+                            str6 = str6;
                         }
-                        eitj eitjVar3 = i8;
-                        int i13 = i6;
-                        int i14 = i9;
-                        if (!czuxVar3.equals(czux.a)) {
-                            fecj v3 = czuy.a.v();
+                        String str9 = str6;
+                        String str10 = str7;
+                        String str11 = str8;
+                        elgo elgoVar3 = i6;
+                        int i12 = i4;
+                        int i13 = i7;
+                        dcdn dcdnVar4 = dcdnVar3;
+                        if (!dceyVar2.equals(dceyVar)) {
+                            fgrc v3 = dcez.a.v();
                             if (!v3.b.L()) {
                                 v3.U();
                             }
-                            fecp fecpVar4 = v3.b;
-                            czuy czuyVar = (czuy) fecpVar4;
-                            czuxVar3.getClass();
-                            czuyVar.d = czuxVar3;
-                            czuyVar.b |= 2;
-                            if (!fecpVar4.L()) {
+                            fgri fgriVar4 = v3.b;
+                            dcez dcezVar = (dcez) fgriVar4;
+                            dceyVar2.getClass();
+                            dcezVar.d = dceyVar2;
+                            dcezVar.b |= 2;
+                            if (!fgriVar4.L()) {
                                 v3.U();
                             }
-                            czuy czuyVar2 = (czuy) v3.b;
-                            cztmVar.getClass();
-                            czuyVar2.c = cztmVar;
-                            czuyVar2.b |= 1;
+                            dcez dcezVar2 = (dcez) v3.b;
+                            dcdnVar4.getClass();
+                            dcezVar2.c = dcdnVar4;
+                            dcezVar2.b |= 1;
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            czuz czuzVar2 = (czuz) v.b;
-                            czuy czuyVar3 = (czuy) v3.Q();
-                            czuyVar3.getClass();
-                            fedh fedhVar = czuzVar2.b;
-                            if (!fedhVar.c()) {
-                                czuzVar2.b = fecp.E(fedhVar);
+                            dcfa dcfaVar2 = (dcfa) v.b;
+                            dcez dcezVar3 = (dcez) v3.Q();
+                            dcezVar3.getClass();
+                            fgsa fgsaVar = dcfaVar2.b;
+                            if (!fgsaVar.c()) {
+                                dcfaVar2.b = fgri.E(fgsaVar);
                             }
-                            czuzVar2.b.add(czuyVar3);
+                            dcfaVar2.b.add(dcezVar3);
                         }
-                        i9 = i14 + 1;
-                        i6 = i13;
-                        i8 = eitjVar3;
-                        i5 = 0;
+                        i7 = i13 + 1;
+                        i6 = elgoVar3;
+                        i4 = i12;
+                        str8 = str11;
+                        str6 = str9;
+                        str7 = str10;
+                        i3 = 0;
                         j3 = 100;
                     }
-                    final czuz czuzVar3 = (czuz) v.Q();
-                    cztu cztuVar2 = cztu.a;
+                    String str12 = str6;
+                    String str13 = str7;
+                    String str14 = str8;
+                    final dcfa dcfaVar3 = (dcfa) v.Q();
+                    dcdv dcdvVar2 = dcdv.a;
                     try {
-                        Map unmodifiableMap = frxq.h() ? DesugarCollections.unmodifiableMap(e().g().g) : e().A();
+                        Map unmodifiableMap = fusk.g() ? DesugarCollections.unmodifiableMap(e().g().g) : e().A();
                         if (unmodifiableMap == null) {
-                            cztuVar = cztu.a;
+                            dcdvVar = dcdv.a;
                         } else {
-                            fecj v4 = cztu.a.v();
+                            fgrc v4 = dcdv.a.v();
                             if (!v4.b.L()) {
                                 v4.U();
                             }
-                            ((cztu) v4.b).b().putAll(unmodifiableMap);
-                            cztuVar = (cztu) v4.Q();
+                            ((dcdv) v4.b).b().putAll(unmodifiableMap);
+                            dcdvVar = (dcdv) v4.Q();
                         }
-                        fecj v5 = czvb.a.v();
-                        int h = ennt.h(TimeUnit.MILLISECONDS.toSeconds(j2));
+                        fgrc v5 = dcfc.a.v();
+                        int h = eqbm.h(TimeUnit.MILLISECONDS.toSeconds(j2));
                         if (!v5.b.L()) {
                             v5.U();
                         }
-                        czvb czvbVar = (czvb) v5.b;
-                        czvbVar.b |= 2;
-                        czvbVar.d = h;
-                        int h2 = ennt.h(TimeUnit.MILLISECONDS.toSeconds(j));
+                        dcfc dcfcVar = (dcfc) v5.b;
+                        dcfcVar.b |= 2;
+                        dcfcVar.d = h;
+                        int h2 = eqbm.h(TimeUnit.MILLISECONDS.toSeconds(j));
                         if (!v5.b.L()) {
                             v5.U();
                         }
-                        fecp fecpVar5 = v5.b;
-                        czvb czvbVar2 = (czvb) fecpVar5;
-                        czvbVar2.b |= 4;
-                        czvbVar2.e = h2;
-                        if (!fecpVar5.L()) {
+                        fgri fgriVar5 = v5.b;
+                        dcfc dcfcVar2 = (dcfc) fgriVar5;
+                        dcfcVar2.b |= 4;
+                        dcfcVar2.e = h2;
+                        if (!fgriVar5.L()) {
                             v5.U();
                         }
-                        fecp fecpVar6 = v5.b;
-                        czvb czvbVar3 = (czvb) fecpVar6;
-                        czvbVar3.b |= 1;
-                        czvbVar3.c = 90;
-                        if (!fecpVar6.L()) {
+                        fgri fgriVar6 = v5.b;
+                        dcfc dcfcVar3 = (dcfc) fgriVar6;
+                        dcfcVar3.b |= 1;
+                        dcfcVar3.c = 90;
+                        if (!fgriVar6.L()) {
                             v5.U();
                         }
-                        czvb czvbVar4 = (czvb) v5.b;
-                        czvbVar4.b |= 16;
-                        czvbVar4.f = 1;
-                        final czvb czvbVar5 = (czvb) v5.Q();
-                        e = egmm.e("com/google/android/gms/semanticlocationhistory/topplace/TopPlaceProcessingService", "getPlaceAggregatesTimeline", 942, "semanticlocationhistory-TopPlaceProcessingService_aggregate");
+                        dcfc dcfcVar4 = (dcfc) v5.b;
+                        dcfcVar4.b |= 16;
+                        dcfcVar4.f = 1;
+                        final dcfc dcfcVar5 = (dcfc) v5.Q();
+                        eixb e2 = eizp.e("com/google/android/gms/semanticlocationhistory/topplace/TopPlaceProcessingService", "getPlaceAggregatesTimeline", 942, "semanticlocationhistory-TopPlaceProcessingService_aggregate");
                         try {
-                            Object a6 = OdlhJniLoader.a.a(new dazc() { // from class: dbmd
-                                @Override // defpackage.dazc
+                            Object a6 = OdlhJniLoader.a.a(new ddjk() { // from class: ddwj
+                                @Override // defpackage.ddjk
                                 public final Object a() {
-                                    asot asotVar = TopPlaceProcessingService.a;
-                                    czvb czvbVar6 = czvbVar5;
-                                    return TopPlaceProcessingService.aggregate(czuz.this.r(), cztuVar.r(), czvbVar6.r(), 0);
+                                    ausn ausnVar = TopPlaceProcessingService.a;
+                                    dcfc dcfcVar6 = dcfcVar5;
+                                    return TopPlaceProcessingService.aggregate(dcfa.this.r(), dcdvVar.r(), dcfcVar6.r(), 0);
                                 }
                             });
-                            e.close();
-                            fecp y2 = fecp.y(dbbm.a, (byte[]) a6, 0, ((byte[]) a6).length, febw.a());
-                            fecp.M(y2);
-                            dbbm dbbmVar = (dbbm) y2;
-                            czje d2 = d();
-                            fvyt fvytVar2 = dbbmVar.c;
-                            if (fvytVar2 == null) {
-                                fvytVar2 = fvyt.b;
+                            e2.close();
+                            fgri y2 = fgri.y(ddlu.a, (byte[]) a6, 0, ((byte[]) a6).length, fgqp.a());
+                            fgri.M(y2);
+                            ddlu ddluVar = (ddlu) y2;
+                            dbtc d2 = d();
+                            fyut fyutVar2 = ddluVar.c;
+                            if (fyutVar2 == null) {
+                                fyutVar2 = fyut.b;
                             }
-                            d2.o(fvytVar2, czje.d);
-                            cztu cztuVar3 = dbbmVar.b;
-                            return cztuVar3 == null ? cztu.a : cztuVar3;
+                            d2.o(fyutVar2, dbtc.d);
+                            dcdv dcdvVar3 = ddluVar.b;
+                            return dcdvVar3 == null ? dcdv.a : dcdvVar3;
                         } finally {
                         }
-                    } catch (RemoteException e2) {
-                        ((ejhf) ((ejhf) ((ejhf) a.j()).s(e2)).ah((char) 10833)).x("JNI isolated api invocation failed");
-                        d().e("TopPlaceJniInvocationFail");
-                        return cztu.a;
-                    } catch (fedk e3) {
-                        ((ejhf) ((ejhf) ((ejhf) a.j()).s(e3)).ah((char) 10832)).x("Parsing aggregate output from JNI result failed.");
-                        d().e("TopPlaceParseJniFail");
-                        return cztu.a;
+                    } catch (RemoteException e3) {
+                        ((eluo) ((eluo) ((eluo) a.j()).s(e3)).ai((char) 10836)).x(str13);
+                        d().e(str12);
+                        return dcdv.a;
+                    } catch (fgsd e4) {
+                        ((eluo) ((eluo) ((eluo) a.j()).s(e4)).ai((char) 10835)).x("Parsing aggregate output from JNI result failed.");
+                        d().e(str14);
+                        return dcdv.a;
                     }
-                } catch (ftye | ftyg e4) {
-                    ((ejhf) ((ejhf) ((ejhf) a.j()).s(e4)).ah((char) 10834)).x("Fails to get Place info from the server.");
+                } catch (fwuc | fwue e5) {
+                    ((eluo) ((eluo) ((eluo) a.j()).s(e5)).ai((char) 10837)).x("Fails to get Place info from the server.");
                     d().e("TopPlaceCallSlsFail");
-                    return cztu.a;
+                    return dcdv.a;
                 }
-            } finally {
+            } catch (Throwable th) {
+                str2 = "TopPlaceJniInvocationFail";
+                str = "TopPlaceParseJniFail";
+                try {
+                    e.close();
+                    throw th;
+                } catch (Throwable th2) {
+                    try {
+                        th.addSuppressed(th2);
+                        throw th;
+                    } catch (RemoteException e6) {
+                        e = e6;
+                        ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 10839)).x("JNI isolated api invocation failed");
+                        d().e(str2);
+                        return dcdv.a;
+                    } catch (fgsd e7) {
+                        e = e7;
+                        ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 10838)).x("Parsing cluster output from JNI result failed.");
+                        d().e(str);
+                        return dcdv.a;
+                    }
+                }
             }
-        } catch (RemoteException e5) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e5)).ah((char) 10836)).x("JNI isolated api invocation failed");
-            d().e("TopPlaceJniInvocationFail");
-            return cztu.a;
-        } catch (fedk e6) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e6)).ah((char) 10835)).x("Parsing cluster output from JNI result failed.");
-            d().e("TopPlaceParseJniFail");
-            return cztu.a;
+        } catch (RemoteException e8) {
+            e = e8;
+            str2 = "TopPlaceJniInvocationFail";
+        } catch (fgsd e9) {
+            e = e9;
+            str = "TopPlaceParseJniFail";
         }
     }
 
-    public final dbel g(Context context) {
+    public final ddot g(Context context) {
         if (this.g == null) {
-            if (frwt.a.a().r()) {
-                this.g = dazz.c(context, context.getApplicationInfo().uid, new dazs(e(), d()));
+            if (furn.a.lK().r()) {
+                this.g = ddkh.c(context, context.getApplicationInfo().uid, new ddka(e(), d()));
             } else {
-                this.g = dbem.e(context, context.getApplicationInfo().uid);
+                this.g = ddou.e(context, context.getApplicationInfo().uid);
             }
         }
         return this.g;
     }
 
-    public final enss h(cztu cztuVar) {
+    public final eqgl h(dcdv dcdvVar) {
         OdlhJniLoader.a.b();
-        if (cztuVar.equals(cztu.a)) {
-            return frwe.d() ? l() : ensj.i(2);
+        if (dcdvVar.equals(dcdv.a)) {
+            return fuqy.d() ? l() : eqgc.i(2);
         }
-        if (e().T(DesugarCollections.unmodifiableMap(cztuVar.b))) {
+        if (e().T(DesugarCollections.unmodifiableMap(dcdvVar.b))) {
             d().e("TopPlaceProcessingServiceSuccess");
-            return frwe.d() ? enps.f(k().e("TopPlaceProcessing", false), new eiho() { // from class: dbmj
-                @Override // defpackage.eiho
+            return fuqy.d() ? eqdl.f(k().e("TopPlaceProcessing", false), new ekut() { // from class: ddwp
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    asot asotVar = TopPlaceProcessingService.a;
+                    ausn ausnVar = TopPlaceProcessingService.a;
                     return 0;
                 }
-            }, enre.a) : ensj.i(0);
+            }, eqex.a) : eqgc.i(0);
         }
-        ((ejhf) ((ejhf) a.j()).ah((char) 10830)).x("Fails to store the TopPlace result into settings.");
+        ((eluo) ((eluo) a.j()).ai((char) 10833)).x("Fails to store the TopPlace result into settings.");
         d().e("TopPlaceStoreResultFail");
-        return frwe.d() ? l() : ensj.i(2);
+        return fuqy.d() ? l() : eqgc.i(2);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -487,11 +535,11 @@ public class TopPlaceProcessingService extends GmsTaskBoundService {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final defpackage.enss im(defpackage.byln r22) {
+    public final defpackage.eqgl iB(defpackage.cauf r22) {
         /*
             Method dump skipped, instructions count: 587
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.semanticlocationhistory.topplace.TopPlaceProcessingService.im(byln):enss");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.semanticlocationhistory.topplace.TopPlaceProcessingService.iB(cauf):eqgl");
     }
 }

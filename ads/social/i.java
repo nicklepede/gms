@@ -4,76 +4,74 @@ import android.accounts.Account;
 import android.content.Context;
 import android.text.TextUtils;
 import com.google.android.gms.common.Feature;
-import com.google.android.gms.common.api.ApiMetadata;
-import com.google.android.gms.common.api.ComplianceOptions;
 import com.google.android.gms.presencemanager.ActiveUser;
-import defpackage.aqxo;
-import defpackage.arco;
-import defpackage.arcy;
-import defpackage.asnd;
-import defpackage.bqna;
-import defpackage.cwsd;
-import defpackage.cwsg;
-import defpackage.cwsh;
-import defpackage.cwuh;
-import defpackage.cwun;
-import defpackage.dfap;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.doci;
-import defpackage.eiho;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.ensi;
-import defpackage.enss;
-import defpackage.unx;
-import defpackage.uny;
-import defpackage.uoh;
+import defpackage.atad;
+import defpackage.atfd;
+import defpackage.atfn;
+import defpackage.auqx;
+import defpackage.bsup;
+import defpackage.czca;
+import defpackage.czcd;
+import defpackage.czce;
+import defpackage.czee;
+import defpackage.czek;
+import defpackage.dhlv;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.dqmr;
+import defpackage.ekut;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqgb;
+import defpackage.eqgl;
+import defpackage.eqgo;
+import defpackage.wjw;
+import defpackage.wjx;
+import defpackage.wkg;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class i {
     public final Context a;
-    public final bqna b;
-    public final cwsh c;
-    private final cwsg d;
+    public final bsup b;
+    public final czce c;
+    private final czcd d;
 
-    public i(Context context, bqna bqnaVar) {
-        cwuh cwuhVar = new cwuh(context);
-        cwun cwunVar = new cwun(context);
+    public i(Context context, bsup bsupVar) {
+        czee czeeVar = new czee(context);
+        czek czekVar = new czek(context);
         this.a = context;
-        this.b = bqnaVar;
-        this.d = cwuhVar;
-        this.c = cwunVar;
+        this.b = bsupVar;
+        this.d = czeeVar;
+        this.c = czekVar;
     }
 
     static i a(Context context) {
-        return new i(context, bqna.b(context));
+        return new i(context, bsup.b(context));
     }
 
-    final enss b() {
-        arcy arcyVar = new arcy();
-        arcyVar.c = new Feature[]{cwsd.c};
-        arcyVar.a = new arco() { // from class: cwue
-            @Override // defpackage.arco
+    final eqgl b() {
+        atfn atfnVar = new atfn();
+        atfnVar.c = new Feature[]{czca.c};
+        atfnVar.a = new atfd() { // from class: czeb
+            @Override // defpackage.atfd
             public final void d(Object obj, Object obj2) {
-                cwuo cwuoVar = (cwuo) obj;
-                int i = cwuh.a;
-                cwug cwugVar = new cwug((dfau) obj2);
-                Context context = cwuoVar.r;
-                ((cwts) cwuoVar.H()).a(cwugVar, new ApiMetadata(new ComplianceOptions(-1, -1, 0, true)));
+                czel czelVar = (czel) obj;
+                int i = czee.a;
+                ((czdp) czelVar.H()).a(new czed((dhma) obj2), bsxa.a(czelVar.r));
             }
         };
-        arcyVar.d = 25803;
-        return enox.f(enps.f(ensi.h(doci.b(((aqxo) this.d).iT(arcyVar.a()).f(new dfap() { // from class: com.google.android.gms.ads.social.f
-            @Override // defpackage.dfap
-            public final dfaq a(Object obj) {
+        atfnVar.d = 25803;
+        eqgb h = eqgb.h(dqmr.b(((atad) this.d).ji(atfnVar.a()).f(new dhlv() { // from class: com.google.android.gms.ads.social.f
+            @Override // defpackage.dhlv
+            public final dhlw a(Object obj) {
                 ActiveUser activeUser = (ActiveUser) obj;
-                return activeUser == null ? dfbl.d("") : i.this.c.a(activeUser);
+                return activeUser == null ? dhmr.d("") : i.this.c.a(activeUser);
             }
-        }))), new eiho() { // from class: com.google.android.gms.ads.social.g
-            @Override // defpackage.eiho
+        })));
+        ekut ekutVar = new ekut() { // from class: com.google.android.gms.ads.social.g
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 Context context;
                 String str;
@@ -87,10 +85,10 @@ final class i {
                     try {
                         context = iVar.a;
                         str = account.name;
-                        String str4 = uny.a;
-                    } catch (IOException | unx unused) {
+                        String str4 = wjx.a;
+                    } catch (IOException | wjw unused) {
                     }
-                    if (str2.equals(uoh.e(context, str))) {
+                    if (str2.equals(wkg.e(context, str))) {
                         str3 = account.name;
                         break;
                     }
@@ -98,17 +96,19 @@ final class i {
                 }
                 return str3;
             }
-        }, com.google.android.gms.ads.internal.util.future.e.a), Throwable.class, new eiho() { // from class: com.google.android.gms.ads.social.h
-            @Override // defpackage.eiho
+        };
+        eqgo eqgoVar = com.google.android.gms.ads.internal.util.future.e.a;
+        return eqcq.f(eqdl.f(h, ekutVar, eqgoVar), Throwable.class, new ekut() { // from class: com.google.android.gms.ads.social.h
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 ((Throwable) obj).getMessage();
                 return "";
             }
-        }, com.google.android.gms.ads.internal.util.future.e.a);
+        }, eqgoVar);
     }
 
     final String c(String str) {
-        Account c = asnd.c(this.a, str);
+        Account c = auqx.c(this.a, str);
         if (c == null) {
             return null;
         }

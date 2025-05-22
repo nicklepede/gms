@@ -2,10 +2,10 @@ package com.google.android.gms.ads.internal.util;
 
 import android.os.HandlerThread;
 import android.os.Looper;
-import defpackage.arwm;
-import defpackage.byhr;
+import defpackage.atzb;
+import defpackage.caqj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class ac {
     private HandlerThread a = null;
@@ -17,12 +17,12 @@ public final class ac {
         Object obj = this.c;
         synchronized (obj) {
             if (this.b != 0) {
-                arwm.t(this.a, "Invalid state: handlerThread should already been initialized.");
+                atzb.t(this.a, "Invalid state: handlerThread should already been initialized.");
             } else if (this.a == null) {
                 HandlerThread handlerThread = new HandlerThread("LooperProvider");
                 this.a = handlerThread;
                 handlerThread.start();
-                new byhr(this.a.getLooper());
+                new caqj(this.a.getLooper());
             } else {
                 obj.notifyAll();
             }

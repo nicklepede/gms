@@ -11,7 +11,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class a {
     public String a;
@@ -34,7 +34,7 @@ public final class a {
         }
         try {
             this.g = new JSONObject(str);
-            if (((Boolean) p.bL.g()).booleanValue() && a()) {
+            if (((Boolean) p.bM.g()).booleanValue() && a()) {
                 return;
             }
             if (this.g.optInt("status", -1) != 1) {
@@ -64,12 +64,12 @@ public final class a {
                     this.d.add(optJSONArray3.optString(i3));
                 }
             }
-            if (((Boolean) p.aR.g()).booleanValue() && (optJSONObject2 = this.g.optJSONObject("common_settings")) != null && (optJSONArray = optJSONObject2.optJSONArray("loeid")) != null) {
+            if (((Boolean) p.aS.g()).booleanValue() && (optJSONObject2 = this.g.optJSONObject("common_settings")) != null && (optJSONArray = optJSONObject2.optJSONArray("loeid")) != null) {
                 for (int i4 = 0; i4 < optJSONArray.length(); i4++) {
                     this.c.add(optJSONArray.get(i4).toString());
                 }
             }
-            if (!((Boolean) p.aP.g()).booleanValue() || (optJSONObject = this.g.optJSONObject("common_settings")) == null) {
+            if (!((Boolean) p.aQ.g()).booleanValue() || (optJSONObject = this.g.optJSONObject("common_settings")) == null) {
                 return;
             }
             optJSONObject.optBoolean("is_prefetching_enabled", false);
@@ -84,9 +84,10 @@ public final class a {
         if (TextUtils.isEmpty(this.a) || this.g == null) {
             return false;
         }
-        long longValue = ((Long) p.bO.g()).longValue();
-        if (((Boolean) p.bN.g()).booleanValue() && !TextUtils.isEmpty(this.a)) {
-            longValue = this.g.optLong("cache_ttl_sec", ((Long) p.bO.g()).longValue());
+        com.google.android.gms.ads.internal.config.g gVar = p.bP;
+        long longValue = ((Long) gVar.g()).longValue();
+        if (((Boolean) p.bO.g()).booleanValue() && !TextUtils.isEmpty(this.a)) {
+            longValue = this.g.optLong("cache_ttl_sec", ((Long) gVar.g()).longValue());
         }
         com.google.android.gms.ads.internal.c.j();
         long currentTimeMillis = System.currentTimeMillis();

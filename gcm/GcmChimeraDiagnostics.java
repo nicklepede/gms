@@ -16,40 +16,40 @@ import android.widget.TextView;
 import com.google.android.chimera.ContextThemeWrapper;
 import com.google.android.gms.R;
 import com.google.android.gms.gcm.GcmChimeraDiagnostics;
-import defpackage.asmf;
-import defpackage.bhvo;
-import defpackage.bhxj;
-import defpackage.bhxk;
-import defpackage.bhyi;
-import defpackage.bhyp;
-import defpackage.byhr;
-import defpackage.eigd;
-import defpackage.eiig;
-import defpackage.ensv;
-import defpackage.fojc;
+import defpackage.aupz;
+import defpackage.bkad;
+import defpackage.bkby;
+import defpackage.bkbz;
+import defpackage.bkcx;
+import defpackage.bkde;
+import defpackage.caqj;
+import defpackage.ekti;
+import defpackage.ekvl;
+import defpackage.eqgo;
+import defpackage.frbt;
 import defpackage.ig;
-import defpackage.itj;
-import defpackage.iuf;
-import defpackage.iuo;
-import defpackage.qet;
+import defpackage.iuz;
+import defpackage.ivv;
+import defpackage.iwe;
+import defpackage.rxx;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
-    public static final Handler j = new byhr();
+public class GcmChimeraDiagnostics extends rxx implements View.OnClickListener {
+    public static final Handler j = new caqj();
     boolean l;
     private TextView m;
     private Button n;
     private MenuItem o;
     private TextView p;
     private SearchView q;
-    private bhyi r;
+    private bkcx r;
     private String s;
     private List t;
     private Runnable v;
     boolean k = false;
-    private final ensv u = new asmf(1, 10);
+    private final eqgo u = new aupz(1, 10);
 
     private final void o() {
         this.n.setText(true != this.k ? "Events" : "Status");
@@ -60,7 +60,7 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
 
     public final synchronized void a() {
         this.t = this.r.c();
-        runOnUiThread(new Runnable() { // from class: bhxi
+        runOnUiThread(new Runnable() { // from class: bkbx
             @Override // java.lang.Runnable
             public final void run() {
                 GcmChimeraDiagnostics.this.m();
@@ -70,7 +70,7 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
 
     public final synchronized void k() {
         this.s = this.l ? this.r.a() : this.r.b();
-        runOnUiThread(new Runnable() { // from class: bhxe
+        runOnUiThread(new Runnable() { // from class: bkbt
             @Override // java.lang.Runnable
             public final void run() {
                 GcmChimeraDiagnostics.this.n();
@@ -82,7 +82,7 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
         if (this.k) {
             return;
         }
-        this.u.execute(new Runnable() { // from class: bhxf
+        this.u.execute(new Runnable() { // from class: bkbu
             @Override // java.lang.Runnable
             public final void run() {
                 GcmChimeraDiagnostics.this.k();
@@ -93,11 +93,11 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
     public final synchronized void m() {
         StringBuilder sb = new StringBuilder();
         if (this.t != null) {
-            String c = TextUtils.isEmpty(this.q.c()) ? null : eigd.c(this.q.c().toString());
+            String c = TextUtils.isEmpty(this.q.c()) ? null : ekti.c(this.q.c().toString());
             List<String> list = this.t;
-            eiig.x(list);
+            ekvl.y(list);
             for (String str : list) {
-                if (c == null || eigd.c(str).contains(c)) {
+                if (c == null || ekti.c(str).contains(c)) {
                     sb.append(str);
                     sb.append("\n");
                 }
@@ -113,7 +113,7 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         if (!this.k) {
-            this.u.execute(new Runnable() { // from class: bhxh
+            this.u.execute(new Runnable() { // from class: bkbw
                 @Override // java.lang.Runnable
                 public final void run() {
                     GcmChimeraDiagnostics.this.a();
@@ -125,37 +125,37 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
         l();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        bhvo.i(getApplicationContext());
-        if (bhvo.d() != 0) {
+        bkad.i(getApplicationContext());
+        if (bkad.d() != 0) {
             finish();
             return;
         }
         if (this.r == null) {
-            bhyi bhyiVar = new bhyi(this);
-            this.r = bhyiVar;
+            bkcx bkcxVar = new bkcx(this);
+            this.r = bkcxVar;
             Intent intent = new Intent("com.google.android.gms.gcm.GCM_SERVICE_DIAGNOSTICS");
             intent.setPackage("com.google.android.gms");
             Bundle bundle2 = new Bundle();
-            bundle2.putBinder("callback", new bhyp(bhyiVar));
+            bundle2.putBinder("callback", new bkde(bkcxVar));
             intent.putExtras(bundle2);
-            bhyiVar.a.sendBroadcast(intent);
+            bkcxVar.a.sendBroadcast(intent);
         }
         setTheme(R.style.Theme_AppCompat_DayNight_DarkActionBar);
-        ig hy = hy();
-        if (hy != null) {
-            hy.r(false);
+        ig hO = hO();
+        if (hO != null) {
+            hO.r(false);
         }
         LinearLayout linearLayout = new LinearLayout(this);
         linearLayout.setOrientation(1);
-        if (fojc.a.a().al()) {
-            itj itjVar = new itj() { // from class: bhxg
-                @Override // defpackage.itj
-                public final iwd eB(View view, iwd iwdVar) {
+        if (frbt.a.lK().al()) {
+            iuz iuzVar = new iuz() { // from class: bkbv
+                @Override // defpackage.iuz
+                public final ixt eB(View view, ixt ixtVar) {
                     Handler handler = GcmChimeraDiagnostics.j;
-                    imx f = iwdVar.f(519);
+                    ioo f = ixtVar.f(519);
                     ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
                     if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
                         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
@@ -165,14 +165,14 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
                         marginLayoutParams.rightMargin = f.d;
                         view.setLayoutParams(marginLayoutParams);
                     }
-                    return iwd.a;
+                    return ixt.a;
                 }
             };
-            int[] iArr = iuo.a;
-            iuf.k(linearLayout, itjVar);
+            int[] iArr = iwe.a;
+            ivv.k(linearLayout, iuzVar);
         }
-        if (hy != null) {
-            hy.A("FCM Diagnostics");
+        if (hO != null) {
+            hO.A("FCM Diagnostics");
         }
         LinearLayout linearLayout2 = new LinearLayout(this);
         Button button = new Button(this);
@@ -188,7 +188,7 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
         linearLayout.addView(this.m);
         SearchView searchView = new SearchView(new ContextThemeWrapper(this, R.style.ThemeOverlay_AppCompat_Dark_ActionBar));
         this.q = searchView;
-        searchView.p = new bhxj(this);
+        searchView.p = new bkby(this);
         TextView textView2 = new TextView(this);
         this.p = textView2;
         textView2.setMinLines(20);
@@ -199,7 +199,7 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
         setContentView(linearLayout);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
         MenuItem add = menu.add("Advanced view");
         this.o = add;
@@ -213,7 +213,7 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem == this.o) {
             this.l = !this.l;
@@ -222,7 +222,7 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem menuItem = this.o;
         if (menuItem != null) {
@@ -231,20 +231,20 @@ public class GcmChimeraDiagnostics extends qet implements View.OnClickListener {
         return super.onPrepareOptionsMenu(menu);
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStart() {
         super.onStart();
-        bhxk bhxkVar = new bhxk(this);
-        this.v = bhxkVar;
-        bhxkVar.run();
+        bkbz bkbzVar = new bkbz(this);
+        this.v = bkbzVar;
+        bkbzVar.run();
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStop() {
         super.onStop();
         Handler handler = j;
         Runnable runnable = this.v;
-        eiig.x(runnable);
+        ekvl.y(runnable);
         handler.removeCallbacks(runnable);
     }
 }

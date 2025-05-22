@@ -7,13 +7,13 @@ import com.google.android.gms.auth.api.signin.internal.GoogleSignInOptionsExtens
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqwx;
-import defpackage.aqwz;
-import defpackage.arxc;
-import defpackage.zow;
-import defpackage.zox;
-import defpackage.zoy;
-import defpackage.zpn;
+import defpackage.abow;
+import defpackage.abox;
+import defpackage.aboy;
+import defpackage.abpn;
+import defpackage.aszm;
+import defpackage.aszo;
+import defpackage.atzr;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -22,10 +22,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
-public class GoogleSignInOptions extends AbstractSafeParcelable implements ReflectedParcelable, aqwx, aqwz {
+public class GoogleSignInOptions extends AbstractSafeParcelable implements ReflectedParcelable, aszm, aszo {
     public static final Parcelable.Creator CREATOR;
     public static final Scope a;
     public static final Scope b;
@@ -54,15 +54,15 @@ public class GoogleSignInOptions extends AbstractSafeParcelable implements Refle
         Scope scope2 = new Scope("https://www.googleapis.com/auth/games_lite");
         d = scope2;
         e = new Scope("https://www.googleapis.com/auth/games");
-        zox zoxVar = new zox();
-        zoxVar.b();
-        zoxVar.a.add(scope);
-        f = zoxVar.a();
-        zox zoxVar2 = new zox();
-        zoxVar2.c(scope2, new Scope[0]);
-        zoxVar2.a();
-        CREATOR = new zoy();
-        g = new zow();
+        abox aboxVar = new abox();
+        aboxVar.b();
+        aboxVar.a.add(scope);
+        f = aboxVar.a();
+        abox aboxVar2 = new abox();
+        aboxVar2.c(scope2, new Scope[0]);
+        aboxVar2.a();
+        CREATOR = new aboy();
+        g = new abow();
     }
 
     public GoogleSignInOptions(int i, ArrayList arrayList, Account account, boolean z, boolean z2, boolean z3, String str, String str2, Map map, String str3) {
@@ -186,30 +186,30 @@ public class GoogleSignInOptions extends AbstractSafeParcelable implements Refle
             arrayList.add(((Scope) arrayList2.get(i)).b);
         }
         Collections.sort(arrayList);
-        zpn zpnVar = new zpn();
-        zpnVar.b(arrayList);
-        zpnVar.b(this.j);
-        zpnVar.b(this.n);
-        zpnVar.a(this.m);
-        zpnVar.a(this.k);
-        zpnVar.a(this.l);
-        zpnVar.b(this.q);
-        return zpnVar.a;
+        abpn abpnVar = new abpn();
+        abpnVar.b(arrayList);
+        abpnVar.b(this.j);
+        abpnVar.b(this.n);
+        abpnVar.a(this.m);
+        abpnVar.a(this.k);
+        abpnVar.a(this.l);
+        abpnVar.b(this.q);
+        return abpnVar.a;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.o(parcel, 1, this.h);
-        arxc.y(parcel, 2, a(), false);
-        arxc.t(parcel, 3, this.j, i, false);
-        arxc.e(parcel, 4, this.k);
-        arxc.e(parcel, 5, this.l);
-        arxc.e(parcel, 6, this.m);
-        arxc.v(parcel, 7, this.n, false);
-        arxc.v(parcel, 8, this.o, false);
-        arxc.y(parcel, 9, this.p, false);
-        arxc.v(parcel, 10, this.q, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.o(parcel, 1, this.h);
+        atzr.y(parcel, 2, a(), false);
+        atzr.t(parcel, 3, this.j, i, false);
+        atzr.e(parcel, 4, this.k);
+        atzr.e(parcel, 5, this.l);
+        atzr.e(parcel, 6, this.m);
+        atzr.v(parcel, 7, this.n, false);
+        atzr.v(parcel, 8, this.o, false);
+        atzr.y(parcel, 9, this.p, false);
+        atzr.v(parcel, 10, this.q, false);
+        atzr.c(parcel, a2);
     }
 }

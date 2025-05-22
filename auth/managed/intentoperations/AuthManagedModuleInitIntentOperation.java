@@ -2,24 +2,24 @@ package com.google.android.gms.auth.managed.intentoperations;
 
 import android.content.Intent;
 import com.google.android.gms.auth.managed.ui.SetupWorkProfileChimeraActivity;
-import defpackage.abqh;
-import defpackage.abrx;
-import defpackage.abzx;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.dtjk;
-import defpackage.fiwo;
-import defpackage.fkzn;
-import defpackage.fkzo;
+import defpackage.adqh;
+import defpackage.adrx;
+import defpackage.adzx;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.dvtw;
+import defpackage.flml;
+import defpackage.fnqv;
+import defpackage.fnqw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AuthManagedModuleInitIntentOperation extends abrx {
+public class AuthManagedModuleInitIntentOperation extends adrx {
     protected static final String[] a;
-    public fiwo b;
+    public flml b;
 
     static {
-        asot.b("Auth", asej.AUTH_MANAGED_WORK_PROFILE);
+        ausn.b("Auth", auid.AUTH_MANAGED_WORK_PROFILE);
         a = new String[]{"com.google.android.gms.auth.managed.ui.EmmActivity", "com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallActivity"};
     }
 
@@ -49,10 +49,10 @@ public class AuthManagedModuleInitIntentOperation extends abrx {
     private final void l() {
         /*
             r10 = this;
-            eihy r0 = new eihy
+            ekvd r0 = new ekvd
             java.lang.String r1 = "; "
             r0.<init>(r1)
-            eihv r1 = new eihv
+            ekva r1 = new ekva
             r1.<init>(r0, r0)
             java.lang.String[] r0 = com.google.android.gms.auth.managed.intentoperations.AuthManagedModuleInitIntentOperation.a
             int r2 = r0.length
@@ -73,16 +73,16 @@ public class AuthManagedModuleInitIntentOperation extends abrx {
             java.lang.String r6 = java.lang.String.format(r7, r6, r8)
             android.util.Log.i(r5, r6)
             android.content.Context r5 = r10.getBaseContext()
-            defpackage.asng.H(r5, r3, r4)
+            defpackage.aura.H(r5, r3, r4)
             int r2 = r2 + 1
             goto L14
         L3b:
-            flbk r0 = defpackage.flbk.a
-            flbl r0 = r0.a()
+            fnss r0 = defpackage.fnss.a
+            fnst r0 = r0.lK()
             boolean r0 = r0.a()
             if (r0 == 0) goto L95
             android.content.Context r0 = r10.getBaseContext()
-            boolean r2 = defpackage.asqh.c()
+            boolean r2 = defpackage.auub.c()
             if (r2 != 0) goto L52
             goto L95
         L52:
@@ -136,7 +136,7 @@ public class AuthManagedModuleInitIntentOperation extends abrx {
             java.lang.String r2 = java.lang.String.format(r2, r3, r6)
             android.util.Log.i(r5, r2)
             android.content.Context r2 = r10.getBaseContext()     // Catch: java.lang.IllegalArgumentException -> Lc3
-            defpackage.asng.H(r2, r4, r0)     // Catch: java.lang.IllegalArgumentException -> Lc3
+            defpackage.aura.H(r2, r4, r0)     // Catch: java.lang.IllegalArgumentException -> Lc3
             goto Ld3
         Lc3:
             r2 = move-exception
@@ -148,33 +148,33 @@ public class AuthManagedModuleInitIntentOperation extends abrx {
             android.util.Log.w(r5, r0, r2)
         Ld3:
             r10.i()
-            abzx r0 = defpackage.abzx.f()
+            adzx r0 = defpackage.adzx.f()
             r0.h(r10)
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.managed.intentoperations.AuthManagedModuleInitIntentOperation.l():void");
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
         l();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        if (fkzn.e()) {
-            ((dtjk) this.b.a()).a();
+        if (fnqv.e()) {
+            ((dvtw) this.b.a()).a();
         }
         l();
-        fkzo.e();
+        fnqw.e();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void d(Intent intent) {
         i();
-        abzx.f().h(this);
-        if (abzx.f().i()) {
-            abqh.b().d(this);
+        adzx.f().h(this);
+        if (adzx.f().i()) {
+            adqh.b().d(this);
         }
     }
 }

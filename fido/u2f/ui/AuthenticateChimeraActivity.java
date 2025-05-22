@@ -17,78 +17,78 @@ import com.google.android.gms.fido.u2f.api.common.RequestParams;
 import com.google.android.gms.fido.u2f.api.common.ResponseData;
 import com.google.android.gms.fido.u2f.api.common.SignRequestParams;
 import com.google.android.gms.fido.u2f.api.view.ViewOptions;
-import defpackage.arwm;
-import defpackage.bayu;
-import defpackage.bayv;
-import defpackage.bbkb;
-import defpackage.bcnj;
-import defpackage.bcnk;
-import defpackage.bcnl;
-import defpackage.bcnt;
-import defpackage.bcnu;
-import defpackage.bcpm;
-import defpackage.bcps;
-import defpackage.bcpx;
-import defpackage.bcqc;
-import defpackage.bcqe;
-import defpackage.bcqx;
-import defpackage.bctg;
-import defpackage.bcth;
-import defpackage.bctl;
-import defpackage.eble;
+import defpackage.atzb;
+import defpackage.bdcs;
+import defpackage.bdct;
+import defpackage.bdny;
+import defpackage.beow;
+import defpackage.beox;
+import defpackage.beoy;
+import defpackage.bepg;
+import defpackage.beph;
+import defpackage.beqz;
+import defpackage.berf;
+import defpackage.berk;
+import defpackage.berp;
+import defpackage.berr;
+import defpackage.besk;
+import defpackage.beut;
+import defpackage.beuu;
+import defpackage.beuy;
+import defpackage.edxt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class AuthenticateChimeraActivity extends bbkb {
-    private static final bcnj l = new bcnj("U2fAuthChimeraActivity");
-    private bcpm m;
-    private bcqc n;
+public class AuthenticateChimeraActivity extends bdny {
+    private static final beow l = new beow("U2fAuthChimeraActivity");
+    private beqz m;
+    private berp n;
     private String o;
     private RequestParams p;
-    private bcnu q;
-    private bcnl r;
+    private beph q;
+    private beoy r;
 
-    public static Intent s(Context context, bcnk bcnkVar, RequestParams requestParams) {
-        arwm.s(context);
-        arwm.s(requestParams);
+    public static Intent s(Context context, beox beoxVar, RequestParams requestParams) {
+        atzb.s(context);
+        atzb.s(requestParams);
         Intent intent = new Intent();
         intent.setClassName(context, "com.google.android.gms.fido.u2f.ui.AuthenticateActivity");
         intent.putExtra("RequestExtra", requestParams);
-        intent.putExtra("SessionContextSourceExtra", bcnkVar);
+        intent.putExtra("SessionContextSourceExtra", beoxVar);
         return intent;
     }
 
-    @Override // defpackage.bbkb
+    @Override // defpackage.bdny
     public final void j() {
         throw new RuntimeException("Embedded Security Key option is not available for U2F request!");
     }
 
-    @Override // defpackage.bbkb
+    @Override // defpackage.bdny
     protected final void n(ViewOptions viewOptions) {
-        bcpm bcpmVar = this.m;
-        if (bcpmVar != null) {
-            bcpmVar.b(new StateUpdate(StateUpdate.Type.UPDATE_CURRENT_VIEW, viewOptions.a()));
+        beqz beqzVar = this.m;
+        if (beqzVar != null) {
+            beqzVar.b(new StateUpdate(StateUpdate.Type.UPDATE_CURRENT_VIEW, viewOptions.a()));
             return;
         }
-        bcqc bcqcVar = this.n;
-        if (bcqcVar != null) {
-            bcqcVar.b(new StateUpdate(StateUpdate.Type.UPDATE_CURRENT_VIEW, viewOptions.a()));
+        berp berpVar = this.n;
+        if (berpVar != null) {
+            berpVar.b(new StateUpdate(StateUpdate.Type.UPDATE_CURRENT_VIEW, viewOptions.a()));
         } else {
             l.f("No FIDO API helper to update the current view", new Object[0]);
         }
     }
 
-    @Override // defpackage.bbkb
+    @Override // defpackage.bdny
     protected final void o(StateUpdate stateUpdate) {
         try {
-            bcpm bcpmVar = this.m;
-            if (bcpmVar != null) {
-                bcpmVar.b(stateUpdate);
+            beqz beqzVar = this.m;
+            if (beqzVar != null) {
+                beqzVar.b(stateUpdate);
                 return;
             }
-            bcqc bcqcVar = this.n;
-            if (bcqcVar != null) {
-                bcqcVar.b(stateUpdate);
+            berp berpVar = this.n;
+            if (berpVar != null) {
+                berpVar.b(stateUpdate);
             } else {
                 l.f("No FIDO API to update", new Object[0]);
             }
@@ -101,13 +101,13 @@ public class AuthenticateChimeraActivity extends bbkb {
         }
     }
 
-    @Override // defpackage.bbkb, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.bdny, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        bcnk bcnkVar = (bcnk) getIntent().getSerializableExtra("SessionContextSourceExtra");
+        beox beoxVar = (beox) getIntent().getSerializableExtra("SessionContextSourceExtra");
         RequestParams requestParams = this.p;
-        this.r = bcnl.b(bcnkVar, requestParams == null ? null : requestParams.d());
-        this.q = bcnt.a(getApplicationContext());
+        this.r = beoy.b(beoxVar, requestParams == null ? null : requestParams.d());
+        this.q = bepg.a(getApplicationContext());
         if (getCallingActivity() == null) {
             l.f("Calling activity is null. No FIDO2 operation is processed", new Object[0]);
             finish();
@@ -118,27 +118,27 @@ public class AuthenticateChimeraActivity extends bbkb {
         l.h("U2f operation is requested from ".concat(String.valueOf(packageName)), new Object[0]);
         setTheme(R.style.Theme_Fido_Transparent_DayNight);
         getContainerActivity();
-        int i = eble.a;
+        int i = edxt.a;
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         ApplicationInfo applicationInfo;
-        bcnj bcnjVar = l;
-        bcnjVar.d("onResume", new Object[0]);
+        beow beowVar = l;
+        beowVar.d("onResume", new Object[0]);
         super.onResume();
         try {
-            bcpm bcpmVar = this.m;
-            if (bcpmVar != null) {
-                bcpmVar.b(StateUpdate.c);
+            beqz beqzVar = this.m;
+            if (beqzVar != null) {
+                beqzVar.b(StateUpdate.c);
                 return;
             }
-            bcqc bcqcVar = this.n;
-            if (bcqcVar != null) {
-                bcqcVar.b(StateUpdate.c);
+            berp berpVar = this.n;
+            if (berpVar != null) {
+                berpVar.b(StateUpdate.c);
                 return;
             }
-            bcnjVar.f("No FIDO API call to resume, and a new request is being processed.", new Object[0]);
+            beowVar.f("No FIDO API call to resume, and a new request is being processed.", new Object[0]);
             RequestParams requestParams = (RequestParams) getIntent().getParcelableExtra("RequestExtra");
             this.p = requestParams;
             String str = this.o;
@@ -158,74 +158,74 @@ public class AuthenticateChimeraActivity extends bbkb {
                     str = packageManager.getApplicationLabel(applicationInfo).toString();
                 }
             }
-            arwm.m(!str.trim().isEmpty(), "App name or authority from request params cannot be empty after trimming.");
-            this.j = new bctl(this, str, false, this.r.a);
-            bctg bctgVar = new bctg(this);
-            bcth bcthVar = new bcth(this);
+            atzb.m(!str.trim().isEmpty(), "App name or authority from request params cannot be empty after trimming.");
+            this.j = new beuy(this, str, false, this.r.a);
+            beut beutVar = new beut(this);
+            beuu beuuVar = new beuu(this);
             Context applicationContext = getApplicationContext();
             try {
                 if (this.p instanceof BrowserRequestParams) {
-                    bcpm bcpmVar2 = new bcpm(this.q);
-                    this.m = bcpmVar2;
+                    beqz beqzVar2 = new beqz(this.q);
+                    this.m = beqzVar2;
                     RequestParams requestParams2 = this.p;
                     if (requestParams2 instanceof BrowserRegisterRequestParams) {
-                        bcnl bcnlVar = this.r;
+                        beoy beoyVar = this.r;
                         BrowserRegisterRequestParams browserRegisterRequestParams = (BrowserRegisterRequestParams) requestParams2;
-                        int i = bayv.a;
+                        int i = bdct.a;
                         String str2 = this.o;
-                        bcpm.a.h("headfulRegister is called by ".concat(String.valueOf(str2)), new Object[0]);
-                        bcpmVar2.c = true;
-                        if (bayv.b(browserRegisterRequestParams.b.toString(), str2, applicationContext) == null) {
+                        beqz.a.h("headfulRegister is called by ".concat(String.valueOf(str2)), new Object[0]);
+                        beqzVar2.c = true;
+                        if (bdct.b(browserRegisterRequestParams.b.toString(), str2, applicationContext) == null) {
                             throw new SecurityException("Calling app is not a legitimate browser!");
                         }
-                        bcpmVar2.b.d(applicationContext, bcnlVar, browserRegisterRequestParams, bcthVar, bcpmVar2.a(applicationContext), str2);
+                        beqzVar2.b.d(applicationContext, beoyVar, browserRegisterRequestParams, beuuVar, beqzVar2.a(applicationContext), str2);
                         return;
                     }
                     if (!(requestParams2 instanceof BrowserSignRequestParams)) {
                         l.f("Unsupported BrowserRequestParams type!", new Object[0]);
                         return;
                     }
-                    bcnl bcnlVar2 = this.r;
+                    beoy beoyVar2 = this.r;
                     BrowserSignRequestParams browserSignRequestParams = (BrowserSignRequestParams) requestParams2;
-                    int i2 = bayv.a;
+                    int i2 = bdct.a;
                     String str3 = this.o;
-                    bcpm.a.h("headfulSign is called by ".concat(String.valueOf(str3)), new Object[0]);
-                    bcpmVar2.c = true;
-                    if (bayv.b(browserSignRequestParams.b.toString(), str3, applicationContext) == null) {
+                    beqz.a.h("headfulSign is called by ".concat(String.valueOf(str3)), new Object[0]);
+                    beqzVar2.c = true;
+                    if (bdct.b(browserSignRequestParams.b.toString(), str3, applicationContext) == null) {
                         throw new SecurityException("Calling app is not a legitimate browser!");
                     }
-                    bcpmVar2.b.e(applicationContext, bcnlVar2, browserSignRequestParams, bctgVar, bcpmVar2.a(applicationContext), str3);
+                    beqzVar2.b.e(applicationContext, beoyVar2, browserSignRequestParams, beutVar, beqzVar2.a(applicationContext), str3);
                     return;
                 }
-                bcqc bcqcVar2 = new bcqc(this.q);
-                this.n = bcqcVar2;
+                berp berpVar2 = new berp(this.q);
+                this.n = berpVar2;
                 RequestParams requestParams3 = this.p;
                 if (requestParams3 instanceof RegisterRequestParams) {
-                    bcnl bcnlVar3 = this.r;
+                    beoy beoyVar3 = this.r;
                     RegisterRequestParams registerRequestParams = (RegisterRequestParams) requestParams3;
-                    int i3 = bayv.a;
+                    int i3 = bdct.a;
                     String str4 = this.o;
-                    bcqc.a.h("headfulRegister is called by ".concat(String.valueOf(str4)), new Object[0]);
-                    bayu a = bayv.a(str4);
+                    berp.a.h("headfulRegister is called by ".concat(String.valueOf(str4)), new Object[0]);
+                    bdcs a = bdct.a(str4);
                     if (a == null) {
                         throw new SecurityException("Calling app is unknown; facetId should not be null!");
                     }
-                    bcqcVar2.c = true;
-                    bcqe bcqeVar = bcqcVar2.b;
-                    bcqx a2 = bcqcVar2.a(applicationContext);
-                    bcnj bcnjVar2 = bcqe.b;
-                    bcnjVar2.h("doRegister for apps is called", new Object[0]);
-                    bcqeVar.c = applicationContext;
-                    bcqeVar.d = bcthVar;
-                    bcqeVar.e = a2;
-                    bcqeVar.f = new bcps(registerRequestParams);
-                    bcqeVar.g.k(bcnlVar3, str4, registerRequestParams, a2.a());
+                    berpVar2.c = true;
+                    berr berrVar = berpVar2.b;
+                    besk a2 = berpVar2.a(applicationContext);
+                    beow beowVar2 = berr.b;
+                    beowVar2.h("doRegister for apps is called", new Object[0]);
+                    berrVar.c = applicationContext;
+                    berrVar.d = beuuVar;
+                    berrVar.e = a2;
+                    berrVar.f = new berf(registerRequestParams);
+                    berrVar.g.k(beoyVar3, str4, registerRequestParams, a2.a());
                     if (!a2.a().isEmpty()) {
-                        bcqeVar.h(bcnlVar3, a);
+                        berrVar.h(beoyVar3, a);
                         return;
                     } else {
-                        bcnjVar2.f("No enabled transport found on the platform", new Object[0]);
-                        bcqeVar.g(bcnlVar3, ErrorCode.CONFIGURATION_UNSUPPORTED);
+                        beowVar2.f("No enabled transport found on the platform", new Object[0]);
+                        berrVar.g(beoyVar3, ErrorCode.CONFIGURATION_UNSUPPORTED);
                         return;
                     }
                 }
@@ -233,30 +233,30 @@ public class AuthenticateChimeraActivity extends bbkb {
                     l.f("Unsupported RequestParams type!", new Object[0]);
                     return;
                 }
-                bcnl bcnlVar4 = this.r;
+                beoy beoyVar4 = this.r;
                 SignRequestParams signRequestParams = (SignRequestParams) requestParams3;
-                int i4 = bayv.a;
+                int i4 = bdct.a;
                 String str5 = this.o;
-                bcqc.a.h("headfulSign is called by ".concat(String.valueOf(str5)), new Object[0]);
-                bayu a3 = bayv.a(str5);
+                berp.a.h("headfulSign is called by ".concat(String.valueOf(str5)), new Object[0]);
+                bdcs a3 = bdct.a(str5);
                 if (a3 == null) {
                     throw new SecurityException("Calling app is unknown; facetId should not be null!");
                 }
-                bcqcVar2.c = true;
-                bcqe bcqeVar2 = bcqcVar2.b;
-                bcqx a4 = bcqcVar2.a(applicationContext);
-                bcnj bcnjVar3 = bcqe.b;
-                bcnjVar3.h("doSign for apps is called", new Object[0]);
-                bcqeVar2.c = applicationContext;
-                bcqeVar2.d = bctgVar;
-                bcqeVar2.e = a4;
-                bcqeVar2.f = new bcpx(signRequestParams);
-                bcqeVar2.g.n(bcnlVar4, str5, signRequestParams, bcqeVar2.e.a());
+                berpVar2.c = true;
+                berr berrVar2 = berpVar2.b;
+                besk a4 = berpVar2.a(applicationContext);
+                beow beowVar3 = berr.b;
+                beowVar3.h("doSign for apps is called", new Object[0]);
+                berrVar2.c = applicationContext;
+                berrVar2.d = beutVar;
+                berrVar2.e = a4;
+                berrVar2.f = new berk(signRequestParams);
+                berrVar2.g.n(beoyVar4, str5, signRequestParams, berrVar2.e.a());
                 if (!a4.a().isEmpty()) {
-                    bcqeVar2.h(bcnlVar4, a3);
+                    berrVar2.h(beoyVar4, a3);
                 } else {
-                    bcnjVar3.f("No enabled transport found on the platform", new Object[0]);
-                    bcqeVar2.g(bcnlVar4, ErrorCode.CONFIGURATION_UNSUPPORTED);
+                    beowVar3.f("No enabled transport found on the platform", new Object[0]);
+                    berrVar2.g(beoyVar4, ErrorCode.CONFIGURATION_UNSUPPORTED);
                 }
             } catch (SecurityException e) {
                 this.q.a(this.r, e);

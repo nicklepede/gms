@@ -3,16 +3,16 @@ package com.google.android.gms.nearby.sharing;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.clny;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cnwg;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ContactInfo extends AbstractSafeParcelable implements Cloneable {
-    public static final Parcelable.Creator CREATOR = new clny();
+    public static final Parcelable.Creator CREATOR = new cnwg();
     public final int a;
     public final String b;
 
@@ -37,7 +37,7 @@ public class ContactInfo extends AbstractSafeParcelable implements Cloneable {
     public final boolean equals(Object obj) {
         if (obj instanceof ContactInfo) {
             ContactInfo contactInfo = (ContactInfo) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(contactInfo.a)) && arwb.b(this.b, contactInfo.b)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(contactInfo.a)) && atyq.b(this.b, contactInfo.b)) {
                 return true;
             }
         }
@@ -55,9 +55,9 @@ public class ContactInfo extends AbstractSafeParcelable implements Cloneable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

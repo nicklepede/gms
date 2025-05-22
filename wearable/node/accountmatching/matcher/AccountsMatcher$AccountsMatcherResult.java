@@ -2,111 +2,113 @@ package com.google.android.gms.wearable.node.accountmatching.matcher;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.dlca;
-import defpackage.dltr;
-import defpackage.eitj;
-import defpackage.eius;
-import defpackage.eiuu;
-import defpackage.ejcb;
-import defpackage.ejfg;
-import defpackage.feaa;
-import defpackage.febe;
-import defpackage.febf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.feex;
-import defpackage.fefm;
+import defpackage.dnnu;
+import defpackage.dofi;
+import defpackage.elgo;
+import defpackage.elhx;
+import defpackage.elhz;
+import defpackage.elpg;
+import defpackage.elsn;
+import defpackage.fgot;
+import defpackage.fgpx;
+import defpackage.fgpy;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.fgtq;
+import defpackage.fguf;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class AccountsMatcher$AccountsMatcherResult implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new dlca();
-    public final eiuu a;
-    public final eiuu b;
-    private final eiuu c;
+    public static final Parcelable.Creator CREATOR = new dnnu();
+    public final elhz a;
+    public final elhz b;
+    private final elhz c;
 
-    public AccountsMatcher$AccountsMatcherResult(eiuu eiuuVar, eiuu eiuuVar2, eiuu eiuuVar3) {
-        this.c = eiuuVar;
-        this.a = eiuuVar2;
-        this.b = eiuuVar3;
+    public AccountsMatcher$AccountsMatcherResult(elhz elhzVar, elhz elhzVar2, elhz elhzVar3) {
+        this.c = elhzVar;
+        this.a = elhzVar2;
+        this.b = elhzVar3;
     }
 
-    public static eiuu a(Parcel parcel) {
-        fecp fecpVar;
-        dltr dltrVar;
+    public static elhz a(Parcel parcel) {
+        fgri fgriVar;
+        dofi dofiVar;
         byte[] createByteArray = parcel.createByteArray();
         if (createByteArray == null) {
             return null;
         }
-        eius eiusVar = new eius();
+        elhx elhxVar = new elhx();
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(createByteArray);
         while (true) {
             try {
-                dltr dltrVar2 = dltr.a;
-                febw febwVar = febw.a;
-                feep feepVar = feep.a;
-                febw febwVar2 = febw.a;
+                dofi dofiVar2 = dofi.a;
+                fgqp fgqpVar = fgqp.a;
+                fgti fgtiVar = fgti.a;
+                fgqp fgqpVar2 = fgqp.a;
                 try {
                     int read = byteArrayInputStream.read();
                     if (read == -1) {
-                        fecpVar = null;
+                        fgriVar = null;
                     } else {
-                        febe M = febe.M(new feaa(byteArrayInputStream, febe.K(read, byteArrayInputStream)));
-                        fecpVar = dltrVar2.x();
+                        fgpx M = fgpx.M(new fgot(byteArrayInputStream, fgpx.K(read, byteArrayInputStream)));
+                        fgriVar = dofiVar2.x();
                         try {
                             try {
                                 try {
-                                    feex b = feep.a.b(fecpVar);
-                                    b.l(fecpVar, febf.p(M), febwVar2);
-                                    b.g(fecpVar);
                                     try {
-                                        M.z(0);
-                                    } catch (fedk e) {
-                                        throw e;
+                                        fgtq b = fgti.a.b(fgriVar);
+                                        b.l(fgriVar, fgpy.p(M), fgqpVar2);
+                                        b.g(fgriVar);
+                                        try {
+                                            M.z(0);
+                                        } catch (fgsd e) {
+                                            throw e;
+                                        }
+                                    } catch (IOException e2) {
+                                        if (e2.getCause() instanceof fgsd) {
+                                            throw ((fgsd) e2.getCause());
+                                        }
+                                        throw new fgsd(e2);
                                     }
-                                } catch (fefm e2) {
-                                    throw e2.a();
                                 } catch (RuntimeException e3) {
-                                    if (e3.getCause() instanceof fedk) {
-                                        throw ((fedk) e3.getCause());
+                                    if (e3.getCause() instanceof fgsd) {
+                                        throw ((fgsd) e3.getCause());
                                     }
                                     throw e3;
                                 }
-                            } catch (fedk e4) {
-                                if (e4.a) {
-                                    throw new fedk(e4);
-                                }
-                                throw e4;
+                            } catch (fguf e4) {
+                                throw e4.a();
                             }
-                        } catch (IOException e5) {
-                            if (e5.getCause() instanceof fedk) {
-                                throw ((fedk) e5.getCause());
+                        } catch (fgsd e5) {
+                            if (e5.a) {
+                                throw new fgsd(e5);
                             }
-                            throw new fedk(e5);
+                            throw e5;
                         }
                     }
-                    fecp.M(fecpVar);
-                    dltrVar = (dltr) fecpVar;
-                } catch (fedk e6) {
+                    fgri.M(fgriVar);
+                    dofiVar = (dofi) fgriVar;
+                } catch (fgsd e6) {
                     if (e6.a) {
-                        throw new fedk(e6);
+                        throw new fgsd(e6);
                     }
                     throw e6;
                 } catch (IOException e7) {
-                    throw new fedk(e7);
+                    throw new fgsd(e7);
                 }
             } catch (IOException unused) {
                 continue;
             }
-            if (dltrVar == null) {
-                return eiusVar.g();
+            if (dofiVar == null) {
+                return elhxVar.g();
             }
-            eiusVar.c(dltrVar);
+            elhxVar.c(dofiVar);
         }
     }
 
@@ -122,13 +124,13 @@ public final class AccountsMatcher$AccountsMatcherResult implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        eitj n = eitj.n(this.c, this.a, this.b);
-        int i2 = ((ejcb) n).c;
+        elgo n = elgo.n(this.c, this.a, this.b);
+        int i2 = ((elpg) n).c;
         for (int i3 = 0; i3 < i2; i3++) {
-            ejfg listIterator = ((eiuu) n.get(i3)).listIterator();
+            elsn listIterator = ((elhz) n.get(i3)).listIterator();
             while (listIterator.hasNext()) {
                 try {
-                    ((dltr) listIterator.next()).nh(byteArrayOutputStream);
+                    ((dofi) listIterator.next()).nE(byteArrayOutputStream);
                 } catch (IOException unused) {
                 }
             }

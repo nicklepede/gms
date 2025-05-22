@@ -3,13 +3,13 @@ package com.google.android.gms.semanticlocationhistory;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.daco;
+import defpackage.atzr;
+import defpackage.dcmw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class LookupParameters extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new daco();
+    public static final Parcelable.Creator CREATOR = new dcmw();
     public final int a;
     public final String b;
     public final TimeRangeFilter c;
@@ -31,14 +31,14 @@ public class LookupParameters extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.e(parcel, 4, this.d);
-        arxc.F(parcel, 5, this.e);
-        arxc.F(parcel, 6, this.f);
-        arxc.I(parcel, 7, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.e(parcel, 4, this.d);
+        atzr.F(parcel, 5, this.e);
+        atzr.F(parcel, 6, this.f);
+        atzr.I(parcel, 7, this.g);
+        atzr.c(parcel, a);
     }
 }

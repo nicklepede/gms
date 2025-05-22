@@ -7,11 +7,11 @@ import android.text.TextUtils;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
-import defpackage.ahgi;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.caef;
+import defpackage.ajgy;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ccmw;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,10 +19,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class AwarenessPlaceEntity extends AbstractSafeParcelable implements caef {
-    public static final Parcelable.Creator CREATOR = new ahgi();
+public class AwarenessPlaceEntity extends AbstractSafeParcelable implements ccmw {
+    public static final Parcelable.Creator CREATOR = new ajgy();
     public final String a;
     public final LatLng b;
     public final float c;
@@ -59,27 +59,27 @@ public class AwarenessPlaceEntity extends AbstractSafeParcelable implements caef
         this.o = str6;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final float a() {
         return this.c;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final float b() {
         return this.h;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final int c() {
         return this.i;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final Uri d() {
         return this.f;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final LatLng e() {
         return this.b;
     }
@@ -94,24 +94,24 @@ public class AwarenessPlaceEntity extends AbstractSafeParcelable implements caef
         AwarenessPlaceEntity awarenessPlaceEntity = (AwarenessPlaceEntity) obj;
         if (this.a.equals(awarenessPlaceEntity.a)) {
             Locale locale = awarenessPlaceEntity.p;
-            if (arwb.b(null, null)) {
+            if (atyq.b(null, null)) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final LatLngBounds f() {
         return this.d;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final /* synthetic */ CharSequence g() {
         return this.k;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final CharSequence h() {
         List list = this.m;
         if (list == null || list.isEmpty()) {
@@ -124,80 +124,80 @@ public class AwarenessPlaceEntity extends AbstractSafeParcelable implements caef
         return Arrays.hashCode(new Object[]{this.a, null});
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final /* synthetic */ CharSequence i() {
         return this.j;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final /* synthetic */ CharSequence j() {
         return this.l;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final String k() {
         return this.o;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final String m() {
         return this.a;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final List n() {
         return this.n;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final Locale o() {
         return Locale.ROOT;
     }
 
-    @Override // defpackage.caef
+    @Override // defpackage.ccmw
     public final boolean p() {
         return this.g;
     }
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("id", this.a, arrayList);
-        arwa.b("placeTypes", this.n, arrayList);
-        arwa.b("locale", null, arrayList);
-        arwa.b("name", this.j, arrayList);
-        arwa.b("address", this.k, arrayList);
-        arwa.b("phoneNumber", this.l, arrayList);
-        arwa.b("latlng", this.b, arrayList);
-        arwa.b("viewport", this.d, arrayList);
-        arwa.b("websiteUri", this.f, arrayList);
-        arwa.b("isPermanentlyClosed", Boolean.valueOf(this.g), arrayList);
-        arwa.b("priceLevel", Integer.valueOf(this.i), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("id", this.a, arrayList);
+        atyp.b("placeTypes", this.n, arrayList);
+        atyp.b("locale", null, arrayList);
+        atyp.b("name", this.j, arrayList);
+        atyp.b("address", this.k, arrayList);
+        atyp.b("phoneNumber", this.l, arrayList);
+        atyp.b("latlng", this.b, arrayList);
+        atyp.b("viewport", this.d, arrayList);
+        atyp.b("websiteUri", this.f, arrayList);
+        atyp.b("isPermanentlyClosed", Boolean.valueOf(this.g), arrayList);
+        atyp.b("priceLevel", Integer.valueOf(this.i), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.t(parcel, 4, this.b, i, false);
-        arxc.l(parcel, 5, this.c);
-        arxc.t(parcel, 6, this.d, i, false);
-        arxc.v(parcel, 7, this.e, false);
-        arxc.t(parcel, 8, this.f, i, false);
-        arxc.e(parcel, 9, this.g);
-        arxc.l(parcel, 10, this.h);
-        arxc.o(parcel, 11, this.i);
-        arxc.v(parcel, 14, this.k, false);
-        arxc.v(parcel, 15, this.l, false);
-        arxc.x(parcel, 17, this.m, false);
-        arxc.v(parcel, 19, this.j, false);
-        arxc.E(parcel, 20, this.n);
-        arxc.v(parcel, 23, this.o, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.t(parcel, 4, this.b, i, false);
+        atzr.l(parcel, 5, this.c);
+        atzr.t(parcel, 6, this.d, i, false);
+        atzr.v(parcel, 7, this.e, false);
+        atzr.t(parcel, 8, this.f, i, false);
+        atzr.e(parcel, 9, this.g);
+        atzr.l(parcel, 10, this.h);
+        atzr.o(parcel, 11, this.i);
+        atzr.v(parcel, 14, this.k, false);
+        atzr.v(parcel, 15, this.l, false);
+        atzr.x(parcel, 17, this.m, false);
+        atzr.v(parcel, 19, this.j, false);
+        atzr.E(parcel, 20, this.n);
+        atzr.v(parcel, 23, this.o, false);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

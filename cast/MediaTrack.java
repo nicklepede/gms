@@ -4,18 +4,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.amck;
-import defpackage.amxr;
-import defpackage.arxc;
-import defpackage.aspq;
+import defpackage.aodv;
+import defpackage.aozc;
+import defpackage.atzr;
+import defpackage.autk;
 import java.util.Arrays;
 import java.util.List;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class MediaTrack extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new amck();
+    public static final Parcelable.Creator CREATOR = new aodv();
     public final long a;
     public final int b;
     public final String c;
@@ -53,7 +53,7 @@ public final class MediaTrack extends AbstractSafeParcelable implements Reflecte
         if (z != (jSONObject2 == null)) {
             return false;
         }
-        return (jSONObject == null || jSONObject2 == null || aspq.b(jSONObject, jSONObject2)) && this.a == mediaTrack.a && this.b == mediaTrack.b && amxr.u(this.c, mediaTrack.c) && amxr.u(this.d, mediaTrack.d) && amxr.u(this.e, mediaTrack.e) && amxr.u(this.f, mediaTrack.f) && this.g == mediaTrack.g && amxr.u(this.h, mediaTrack.h);
+        return (jSONObject == null || jSONObject2 == null || autk.b(jSONObject, jSONObject2)) && this.a == mediaTrack.a && this.b == mediaTrack.b && aozc.u(this.c, mediaTrack.c) && aozc.u(this.d, mediaTrack.d) && aozc.u(this.e, mediaTrack.e) && aozc.u(this.f, mediaTrack.f) && this.g == mediaTrack.g && aozc.u(this.h, mediaTrack.h);
     }
 
     public final int hashCode() {
@@ -64,16 +64,16 @@ public final class MediaTrack extends AbstractSafeParcelable implements Reflecte
     public final void writeToParcel(Parcel parcel, int i) {
         JSONObject jSONObject = this.j;
         this.i = jSONObject == null ? null : jSONObject.toString();
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 2, this.a);
-        arxc.o(parcel, 3, this.b);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.o(parcel, 8, this.g);
-        arxc.x(parcel, 9, this.h, false);
-        arxc.v(parcel, 10, this.i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 2, this.a);
+        atzr.o(parcel, 3, this.b);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.o(parcel, 8, this.g);
+        atzr.x(parcel, 9, this.h, false);
+        atzr.v(parcel, 10, this.i, false);
+        atzr.c(parcel, a);
     }
 }

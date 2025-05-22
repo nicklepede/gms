@@ -3,13 +3,13 @@ package com.google.android.gms.measurement.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.cdio;
+import defpackage.atzb;
+import defpackage.cfrn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class EventParcel extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cdio();
+    public static final Parcelable.Creator CREATOR = new cfrn();
     public final String a;
     public final EventParams b;
     public final String c;
@@ -28,11 +28,11 @@ public final class EventParcel extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cdio.a(this, parcel, i);
+        cfrn.a(this, parcel, i);
     }
 
     public EventParcel(EventParcel eventParcel, long j) {
-        arwm.s(eventParcel);
+        atzb.s(eventParcel);
         this.a = eventParcel.a;
         this.b = eventParcel.b;
         this.c = eventParcel.c;

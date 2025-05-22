@@ -11,19 +11,19 @@ import android.os.RemoteException;
 import android.util.Log;
 import com.google.android.gms.dynamic.ObjectWrapper;
 import com.google.android.gms.learning.internal.training.InAppJobService;
-import defpackage.bqjf;
-import defpackage.bqjg;
-import defpackage.bqjh;
-import defpackage.bqjs;
-import defpackage.bqjy;
-import defpackage.bqkj;
+import defpackage.bsqu;
+import defpackage.bsqv;
+import defpackage.bsqw;
+import defpackage.bsrh;
+import defpackage.bsrn;
+import defpackage.bsry;
 import java.util.concurrent.ExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public class InAppJobService extends JobService {
     static final String TAG = "brella.InAppJobSvc";
-    bqjy dynamiteImpl;
+    bsrn dynamiteImpl;
 
     private boolean isIdleConstraintMet(JobParameters jobParameters) {
         return !((PowerManager) getSystemService("power")).isInteractive() || jobParameters.getExtras().getInt("waive_idle_requirement", 0) == 1;
@@ -31,10 +31,10 @@ public class InAppJobService extends JobService {
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void lambda$onDestroy$0() {
-        bqjy bqjyVar = this.dynamiteImpl;
-        if (bqjyVar != null) {
+        bsrn bsrnVar = this.dynamiteImpl;
+        if (bsrnVar != null) {
             try {
-                bqjyVar.b();
+                bsrnVar.b();
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onDestroy", e);
@@ -47,7 +47,7 @@ public class InAppJobService extends JobService {
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void lambda$onStartJob$0(Context context, JobParameters jobParameters) {
         if (!tryLoadDynamiteImpl()) {
-            bqjs.a(context, jobParameters);
+            bsrh.a(context, jobParameters);
             jobFinished(jobParameters, false);
             return;
         }
@@ -60,17 +60,17 @@ public class InAppJobService extends JobService {
             if (Log.isLoggable(TAG, 5)) {
                 Log.w(TAG, "RemoteException in IInAppJobService.onStartJob", e);
             }
-            bqjs.a(context, jobParameters);
+            bsrh.a(context, jobParameters);
             jobFinished(jobParameters, false);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void lambda$onStopJob$0(JobParameters jobParameters) {
-        bqjy bqjyVar = this.dynamiteImpl;
-        if (bqjyVar != null) {
+        bsrn bsrnVar = this.dynamiteImpl;
+        if (bsrnVar != null) {
             try {
-                bqjyVar.h(jobParameters);
+                bsrnVar.h(jobParameters);
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onStopJob", e);
@@ -81,10 +81,10 @@ public class InAppJobService extends JobService {
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void lambda$onTrimMemory$0(int i) {
-        bqjy bqjyVar = this.dynamiteImpl;
-        if (bqjyVar != null) {
+        bsrn bsrnVar = this.dynamiteImpl;
+        if (bsrnVar != null) {
             try {
-                bqjyVar.d(i);
+                bsrnVar.d(i);
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onTrimMemory", e);
@@ -98,16 +98,16 @@ public class InAppJobService extends JobService {
             return true;
         }
         try {
-            bqjy bqjyVar = (bqjy) bqjh.a(this, "com.google.android.gms.learning.dynamite.training.InAppJobServiceImpl", new bqjg() { // from class: bqkg
-                @Override // defpackage.bqjg
+            bsrn bsrnVar = (bsrn) bsqw.a(this, "com.google.android.gms.learning.dynamite.training.InAppJobServiceImpl", new bsqv() { // from class: bsrv
+                @Override // defpackage.bsqv
                 public final IInterface a(IBinder iBinder) {
                     IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.learning.internal.training.IInAppJobService");
-                    return queryLocalInterface instanceof bqjy ? (bqjy) queryLocalInterface : new bqjx(iBinder);
+                    return queryLocalInterface instanceof bsrn ? (bsrn) queryLocalInterface : new bsrm(iBinder);
                 }
             });
             try {
-                if (bqjyVar.e(new ObjectWrapper(this), new ObjectWrapper(getDynamiteBgExecutor()))) {
-                    this.dynamiteImpl = bqjyVar;
+                if (bsrnVar.e(new ObjectWrapper(this), new ObjectWrapper(getDynamiteBgExecutor()))) {
+                    this.dynamiteImpl = bsrnVar;
                     return true;
                 }
                 if (Log.isLoggable(TAG, 5)) {
@@ -120,7 +120,7 @@ public class InAppJobService extends JobService {
                 }
                 return false;
             }
-        } catch (bqjf e2) {
+        } catch (bsqu e2) {
             if (Log.isLoggable(TAG, 5)) {
                 Log.w(TAG, "LoadingException during tryLoadDynamiteImpl", e2);
             }
@@ -129,16 +129,16 @@ public class InAppJobService extends JobService {
     }
 
     public ExecutorService getDynamiteBgExecutor() {
-        return bqkj.a;
+        return bsry.a;
     }
 
     public ExecutorService getLifecycleCallbacksBgExecutor() {
-        return bqkj.b;
+        return bsry.b;
     }
 
     @Override // android.app.Service
     public void onDestroy() {
-        getLifecycleCallbacksBgExecutor().execute(new Runnable() { // from class: bqke
+        getLifecycleCallbacksBgExecutor().execute(new Runnable() { // from class: bsrt
             @Override // java.lang.Runnable
             public final void run() {
                 InAppJobService.this.lambda$onDestroy$0();
@@ -148,10 +148,10 @@ public class InAppJobService extends JobService {
 
     @Override // android.app.Service
     public void onRebind(Intent intent) {
-        bqjy bqjyVar = this.dynamiteImpl;
-        if (bqjyVar != null) {
+        bsrn bsrnVar = this.dynamiteImpl;
+        if (bsrnVar != null) {
             try {
-                bqjyVar.c(intent);
+                bsrnVar.c(intent);
                 return;
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
@@ -164,10 +164,10 @@ public class InAppJobService extends JobService {
 
     @Override // android.app.Service
     public int onStartCommand(Intent intent, int i, int i2) {
-        bqjy bqjyVar = this.dynamiteImpl;
-        if (bqjyVar != null) {
+        bsrn bsrnVar = this.dynamiteImpl;
+        if (bsrnVar != null) {
             try {
-                return bqjyVar.a(intent, i, i2);
+                return bsrnVar.a(intent, i, i2);
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onStartCommand", e);
@@ -180,11 +180,11 @@ public class InAppJobService extends JobService {
     @Override // android.app.job.JobService
     public synchronized boolean onStartJob(final JobParameters jobParameters) {
         if (!isIdleConstraintMet(jobParameters)) {
-            bqjs.a(this, jobParameters);
+            bsrh.a(this, jobParameters);
             return false;
         }
         final Context applicationContext = getApplicationContext();
-        getLifecycleCallbacksBgExecutor().execute(new Runnable() { // from class: bqkh
+        getLifecycleCallbacksBgExecutor().execute(new Runnable() { // from class: bsrw
             @Override // java.lang.Runnable
             public final void run() {
                 InAppJobService.this.lambda$onStartJob$0(applicationContext, jobParameters);
@@ -195,7 +195,7 @@ public class InAppJobService extends JobService {
 
     @Override // android.app.job.JobService
     public boolean onStopJob(final JobParameters jobParameters) {
-        getLifecycleCallbacksBgExecutor().execute(new Runnable() { // from class: bqki
+        getLifecycleCallbacksBgExecutor().execute(new Runnable() { // from class: bsrx
             @Override // java.lang.Runnable
             public final void run() {
                 InAppJobService.this.lambda$onStopJob$0(jobParameters);
@@ -206,7 +206,7 @@ public class InAppJobService extends JobService {
 
     @Override // android.app.Service, android.content.ComponentCallbacks2
     public void onTrimMemory(final int i) {
-        getLifecycleCallbacksBgExecutor().execute(new Runnable() { // from class: bqkf
+        getLifecycleCallbacksBgExecutor().execute(new Runnable() { // from class: bsru
             @Override // java.lang.Runnable
             public final void run() {
                 InAppJobService.this.lambda$onTrimMemory$0(i);
@@ -216,10 +216,10 @@ public class InAppJobService extends JobService {
 
     @Override // android.app.Service
     public boolean onUnbind(Intent intent) {
-        bqjy bqjyVar = this.dynamiteImpl;
-        if (bqjyVar != null) {
+        bsrn bsrnVar = this.dynamiteImpl;
+        if (bsrnVar != null) {
             try {
-                return bqjyVar.g(intent);
+                return bsrnVar.g(intent);
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppJobService.onUnbind", e);

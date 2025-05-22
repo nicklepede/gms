@@ -4,187 +4,188 @@ import android.os.Bundle;
 import com.google.android.gms.auth.api.credentials.assistedsignin.ui.PhoneNumberHintChimeraActivity;
 import com.google.android.gms.auth.api.identity.GetPhoneNumberHintIntentRequest;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.arxd;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgu;
-import defpackage.bmgx;
+import defpackage.atzs;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonm;
+import defpackage.bonp;
 import defpackage.bp;
-import defpackage.eiic;
-import defpackage.eiiw;
-import defpackage.eitj;
-import defpackage.elej;
-import defpackage.elfb;
-import defpackage.elfd;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.jpc;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.vuh;
-import defpackage.vwu;
-import defpackage.vwv;
-import defpackage.vww;
-import defpackage.wig;
-import defpackage.wim;
-import defpackage.wkg;
-import defpackage.xul;
+import defpackage.ekvh;
+import defpackage.ekwb;
+import defpackage.elgo;
+import defpackage.enrw;
+import defpackage.enso;
+import defpackage.ensq;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.jvr;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.xqj;
+import defpackage.xsy;
+import defpackage.xsz;
+import defpackage.xta;
+import defpackage.yem;
+import defpackage.yes;
+import defpackage.ygq;
+import defpackage.zsi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class PhoneNumberHintChimeraActivity extends qet {
-    private static final asot l = xul.b("PhoneNumberHintChimeraActivity");
+public class PhoneNumberHintChimeraActivity extends rxx {
+    private static final ausn l = zsi.b("PhoneNumberHintChimeraActivity");
     public String j;
-    public bmgq k;
+    public boni k;
     private String m;
-    private vww n;
+    private xta n;
 
-    public final void a(vwu vwuVar) {
-        eitj eitjVar;
-        vwuVar.f(l);
-        fecj v = elej.a.v();
-        vww vwwVar = this.n;
+    public final void a(xsy xsyVar) {
+        elgo elgoVar;
+        xsyVar.f(l);
+        fgrc v = enrw.a.v();
+        xta xtaVar = this.n;
         int i = 0;
-        if (vwwVar != null && (eitjVar = (eitj) vwwVar.c.hT()) != null) {
-            i = eitjVar.size();
+        if (xtaVar != null && (elgoVar = (elgo) xtaVar.c.ii()) != null) {
+            i = elgoVar.size();
         }
         if (!v.b.L()) {
             v.U();
         }
-        elej elejVar = (elej) v.b;
-        elejVar.b |= 1;
-        elejVar.c = i;
-        boolean g = vwuVar.g();
+        enrw enrwVar = (enrw) v.b;
+        enrwVar.b |= 1;
+        enrwVar.c = i;
+        boolean g = xsyVar.g();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elej elejVar2 = (elej) fecpVar;
-        elejVar2.b |= 2;
-        elejVar2.d = g;
+        fgri fgriVar = v.b;
+        enrw enrwVar2 = (enrw) fgriVar;
+        enrwVar2.b |= 2;
+        enrwVar2.d = g;
         String str = this.m;
         if (str != null) {
-            if (!fecpVar.L()) {
+            if (!fgriVar.L()) {
                 v.U();
             }
-            elej elejVar3 = (elej) v.b;
-            elejVar3.b |= 4;
-            elejVar3.e = str;
+            enrw enrwVar3 = (enrw) v.b;
+            enrwVar3.b |= 4;
+            enrwVar3.e = str;
         }
-        bmgq bmgqVar = this.k;
-        fecj v2 = elfd.a.v();
+        boni boniVar = this.k;
+        ensq ensqVar = ensq.a;
+        fgrc v2 = ensqVar.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        elfd elfdVar = (elfd) fecpVar2;
-        elfdVar.d = 24;
-        elfdVar.b |= 1;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v2.b;
+        ensq ensqVar2 = (ensq) fgriVar2;
+        ensqVar2.d = 24;
+        ensqVar2.b |= 1;
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        elfd elfdVar2 = (elfd) v2.b;
-        elej elejVar4 = (elej) v.Q();
-        elejVar4.getClass();
-        elfdVar2.z = elejVar4;
-        elfdVar2.b |= 8388608;
+        ensq ensqVar3 = (ensq) v2.b;
+        enrw enrwVar4 = (enrw) v.Q();
+        enrwVar4.getClass();
+        ensqVar3.z = enrwVar4;
+        ensqVar3.b |= 8388608;
         String str2 = this.j;
         if (!v2.b.L()) {
             v2.U();
         }
-        elfd elfdVar3 = (elfd) v2.b;
+        ensq ensqVar4 = (ensq) v2.b;
         str2.getClass();
-        elfdVar3.b |= 2;
-        elfdVar3.e = str2;
-        bmgqVar.a((elfd) v2.Q());
-        bmgq bmgqVar2 = this.k;
-        fecj v3 = elfd.a.v();
+        ensqVar4.b |= 2;
+        ensqVar4.e = str2;
+        boniVar.a((ensq) v2.Q());
+        boni boniVar2 = this.k;
+        fgrc v3 = ensqVar.v();
         String str3 = this.j;
         if (!v3.b.L()) {
             v3.U();
         }
-        fecp fecpVar3 = v3.b;
-        elfd elfdVar4 = (elfd) fecpVar3;
+        fgri fgriVar3 = v3.b;
+        ensq ensqVar5 = (ensq) fgriVar3;
         str3.getClass();
-        elfdVar4.b |= 2;
-        elfdVar4.e = str3;
-        if (!fecpVar3.L()) {
+        ensqVar5.b |= 2;
+        ensqVar5.e = str3;
+        if (!fgriVar3.L()) {
             v3.U();
         }
-        elfd elfdVar5 = (elfd) v3.b;
-        elfdVar5.d = 17;
-        elfdVar5.b |= 1;
-        fecj k = vwuVar.k();
-        if (!k.b.L()) {
-            k.U();
+        ensq ensqVar6 = (ensq) v3.b;
+        ensqVar6.d = 17;
+        ensqVar6.b |= 1;
+        fgrc l2 = xsyVar.l();
+        if (!l2.b.L()) {
+            l2.U();
         }
-        elfb elfbVar = (elfb) k.b;
-        elfb elfbVar2 = elfb.a;
-        elfbVar.f = AndroidInputTypeSignal.TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS;
-        elfbVar.b |= 8;
+        enso ensoVar = (enso) l2.b;
+        enso ensoVar2 = enso.a;
+        ensoVar.f = AndroidInputTypeSignal.TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS;
+        ensoVar.b |= 8;
         if (!v3.b.L()) {
             v3.U();
         }
-        elfd elfdVar6 = (elfd) v3.b;
-        elfb elfbVar3 = (elfb) k.Q();
-        elfbVar3.getClass();
-        elfdVar6.s = elfbVar3;
-        elfdVar6.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-        bmgqVar2.a((elfd) v3.Q());
-        setResult(vwuVar.a(), vwuVar.b());
+        ensq ensqVar7 = (ensq) v3.b;
+        enso ensoVar3 = (enso) l2.Q();
+        ensoVar3.getClass();
+        ensqVar7.s = ensoVar3;
+        ensqVar7.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        boniVar2.a((ensq) v3.Q());
+        setResult(xsyVar.a(), xsyVar.b());
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        this.j = (String) eiic.c(getIntent().getStringExtra("session_id"), bmgx.a());
-        this.k = bmgp.a(getApplicationContext(), null);
-        GetPhoneNumberHintIntentRequest getPhoneNumberHintIntentRequest = (GetPhoneNumberHintIntentRequest) arxd.b(getIntent(), "get_phone_number_hint_intent_request", GetPhoneNumberHintIntentRequest.CREATOR);
+        this.j = (String) ekvh.c(getIntent().getStringExtra("session_id"), bonp.a());
+        this.k = bonh.a(getApplicationContext(), null);
+        GetPhoneNumberHintIntentRequest getPhoneNumberHintIntentRequest = (GetPhoneNumberHintIntentRequest) atzs.b(getIntent(), "get_phone_number_hint_intent_request", GetPhoneNumberHintIntentRequest.CREATOR);
         if (getPhoneNumberHintIntentRequest == null) {
-            this.j = bmgx.a();
-            a((vwu) vwu.c().c(28453, wkg.a("getPhoneNumberHintIntentRequest")));
+            this.j = bonp.a();
+            a((xsy) xsy.c().c(28453, ygq.a("getPhoneNumberHintIntentRequest")));
             return;
         }
-        wim.a(this, getPhoneNumberHintIntentRequest.a);
+        yes.a(this, getPhoneNumberHintIntentRequest.a);
         super.onCreate(bundle);
-        bmgu.a(this, new eiiw() { // from class: vtz
-            @Override // defpackage.eiiw
-            public final void lB(Object obj) {
+        bonm.a(this, new ekwb() { // from class: xqb
+            @Override // defpackage.ekwb
+            public final void lY(Object obj) {
                 PhoneNumberHintChimeraActivity phoneNumberHintChimeraActivity = PhoneNumberHintChimeraActivity.this;
-                phoneNumberHintChimeraActivity.k.a(bmgw.b(209, (bmgv) obj, phoneNumberHintChimeraActivity.j));
+                phoneNumberHintChimeraActivity.k.a(bono.b(209, (bonn) obj, phoneNumberHintChimeraActivity.j));
             }
         });
-        String q = asng.q(this);
+        String q = aura.q(this);
         if (q == null) {
-            a((vwu) vwu.c().c(28442, "Cannot get calling package name."));
+            a((xsy) xsy.c().c(28442, "Cannot get calling package name."));
             return;
         }
         this.m = q;
-        vww vwwVar = (vww) new jrh(this, new vwv(getApplication(), this.j, this.k)).a(vww.class);
-        this.n = vwwVar;
-        vwwVar.d.g(this, new jpd() { // from class: vua
-            @Override // defpackage.jpd
+        xta xtaVar = (xta) new jxw(this, new xsz(getApplication(), this.j, this.k)).a(xta.class);
+        this.n = xtaVar;
+        xtaVar.d.g(this, new jvs() { // from class: xqc
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                PhoneNumberHintChimeraActivity.this.a((vwu) obj);
+                PhoneNumberHintChimeraActivity.this.a((xsy) obj);
             }
         });
-        vww vwwVar2 = this.n;
-        jpc jpcVar = vwwVar2.c;
-        if (jpcVar.hT() == null) {
-            eitj a = ((wig) wig.a.b()).a(vwwVar2.a());
+        xta xtaVar2 = this.n;
+        jvr jvrVar = xtaVar2.c;
+        if (jvrVar.ii() == null) {
+            elgo a = ((yem) yem.a.b()).a(xtaVar2.a());
             if (a.isEmpty()) {
-                vwwVar2.d.hS((vwu) vwu.c().c(28438, null));
+                xtaVar2.d.ih((xsy) xsy.c().c(28438, null));
             }
-            jpcVar.hS(a);
+            jvrVar.ih(a);
         }
         if (getSupportFragmentManager().h("PhoneNumberHintDialogFragment") != null) {
             return;
         }
         bp bpVar = new bp(getSupportFragmentManager());
-        bpVar.v(new vuh(), "PhoneNumberHintDialogFragment");
+        bpVar.v(new xqj(), "PhoneNumberHintDialogFragment");
         bpVar.d();
     }
 }

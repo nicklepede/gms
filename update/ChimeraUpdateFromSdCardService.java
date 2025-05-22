@@ -5,22 +5,22 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.ctbd;
-import defpackage.dhcn;
-import defpackage.dhdc;
-import defpackage.ejhf;
-import defpackage.iln;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cvkh;
+import defpackage.djnt;
+import defpackage.djoi;
+import defpackage.eluo;
+import defpackage.ind;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ChimeraUpdateFromSdCardService extends Service {
-    public static final asot a = asot.b("CmaUpdateFromSdCardS", asej.OTA);
-    private static final ctbd d = ctbd.b();
+    public static final ausn a = ausn.b("CmaUpdateFromSdCardS", auid.OTA);
+    private static final cvkh d = cvkh.b();
     public StateWatcher b;
     public volatile int c;
-    private dhdc e;
+    private djoi e;
 
     public final void a() {
         sendBroadcast(new Intent("com.google.android.gms.update.UpdateFromSdCard.STATUS_CHANGED"));
@@ -29,18 +29,18 @@ public class ChimeraUpdateFromSdCardService extends Service {
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
         if (!intent.getAction().equals("com.google.android.gms.update.BIND_SDCARD_SERVICE")) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 11974)).x("onBind for sdcard is called with an unexpected intent, returning null.");
+            ((eluo) ((eluo) a.j()).ai((char) 11977)).x("onBind for sdcard is called with an unexpected intent, returning null.");
             return null;
         }
-        dhdc dhdcVar = this.e;
-        dhdcVar.asBinder();
-        return dhdcVar;
+        djoi djoiVar = this.e;
+        djoiVar.asBinder();
+        return djoiVar;
     }
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        StateWatcher stateWatcher = new StateWatcher(this, new dhcn(this));
+        StateWatcher stateWatcher = new StateWatcher(this, new djnt(this));
         this.c = 1;
         this.b = stateWatcher;
         IntentFilter intentFilter = new IntentFilter();
@@ -49,9 +49,9 @@ public class ChimeraUpdateFromSdCardService extends Service {
         intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         intentFilter.addAction("com.google.android.checkin.CHECKIN_COMPLETE");
         Context context = stateWatcher.a;
-        iln.b(context, stateWatcher, intentFilter, 2);
+        ind.b(context, stateWatcher, intentFilter, 2);
         context.getSharedPreferences("update", 0).edit().putInt("battery_state", stateWatcher.b).apply();
-        this.e = new dhdc(this);
+        this.e = new djoi(this);
     }
 
     @Override // com.google.android.chimera.Service
@@ -78,7 +78,7 @@ public class ChimeraUpdateFromSdCardService extends Service {
                 } else if (i4 == 1 || i4 == 2) {
                     i3 = 1040;
                 } else {
-                    ((ejhf) ((ejhf) a.i()).ah((char) 11978)).x("Unknown battery state, cannot handle!");
+                    ((eluo) ((eluo) a.i()).ai((char) 11981)).x("Unknown battery state, cannot handle!");
                 }
             } else {
                 i3 = 263;

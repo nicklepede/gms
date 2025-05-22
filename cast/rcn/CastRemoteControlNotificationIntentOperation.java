@@ -4,26 +4,24 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.cast.rcn.CastRemoteControlNotificationIntentOperation;
-import com.google.android.gms.common.api.ApiMetadata;
-import com.google.android.gms.common.api.ComplianceOptions;
-import defpackage.amtz;
-import defpackage.annw;
-import defpackage.aqxd;
-import defpackage.aqxo;
-import defpackage.arco;
-import defpackage.arcy;
-import defpackage.dfae;
-import defpackage.flxs;
+import defpackage.aovk;
+import defpackage.appp;
+import defpackage.aszs;
+import defpackage.atad;
+import defpackage.atfd;
+import defpackage.atfn;
+import defpackage.dhlk;
+import defpackage.fopc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CastRemoteControlNotificationIntentOperation extends IntentOperation {
-    public static final annw a = new annw("RCNIntentOperation");
+    public static final appp a = new appp("RCNIntentOperation");
     public Intent b;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        if (flxs.c()) {
+        if (fopc.c()) {
             Intent intent = new Intent("com.google.android.gms.cast.rcn.CastPersistentAction");
             this.b = intent;
             intent.setPackage("com.google.android.gms");
@@ -36,31 +34,29 @@ public class CastRemoteControlNotificationIntentOperation extends IntentOperatio
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        annw annwVar = a;
-        annwVar.n("onHandleIntent %s", intent);
+        appp apppVar = a;
+        apppVar.n("onHandleIntent %s", intent);
         if (intent == null) {
-            annwVar.g("onHandleIntent received a null intent", new Object[0]);
+            apppVar.g("onHandleIntent received a null intent", new Object[0]);
             return;
         }
         if ("android.intent.action.USER_PRESENT".equals(intent.getAction())) {
-            aqxd aqxdVar = amtz.a;
-            aqxo aqxoVar = new aqxo((Context) this, (char[][]) null);
-            arcy arcyVar = new arcy();
-            arcyVar.d = 8419;
-            arcyVar.a = new arco() { // from class: amuc
-                @Override // defpackage.arco
+            aszs aszsVar = aovk.a;
+            atad atadVar = new atad((Context) this, (char[][]) null);
+            atfn atfnVar = new atfn();
+            atfnVar.d = 8419;
+            atfnVar.a = new atfd() { // from class: aovn
+                @Override // defpackage.atfd
                 public final void d(Object obj, Object obj2) {
-                    amul amulVar = (amul) obj;
-                    amus amusVar = new amus((dfau) obj2);
-                    Context context = amulVar.r;
-                    ((amuq) amulVar.H()).a(amusVar, new ApiMetadata(new ComplianceOptions(-1, -1, 0, true)));
+                    aovw aovwVar = (aovw) obj;
+                    ((aowb) aovwVar.H()).a(new aowd((dhma) obj2), bsxa.a(aovwVar.r));
                 }
             };
-            aqxoVar.iO(arcyVar.a()).x(new dfae() { // from class: anga
-                @Override // defpackage.dfae
-                public final void hr(dfaq dfaqVar) {
+            atadVar.jd(atfnVar.a()).x(new dhlk() { // from class: aphn
+                @Override // defpackage.dhlk
+                public final void hH(dhlw dhlwVar) {
                     CastRemoteControlNotificationIntentOperation castRemoteControlNotificationIntentOperation = CastRemoteControlNotificationIntentOperation.this;
-                    if (dfaqVar.m() && ((Boolean) dfaqVar.i()).booleanValue()) {
+                    if (dhlwVar.m() && ((Boolean) dhlwVar.i()).booleanValue()) {
                         CastRemoteControlNotificationIntentOperation.a.m("RCN is enabled on this network.");
                         castRemoteControlNotificationIntentOperation.startService(castRemoteControlNotificationIntentOperation.b);
                     } else {

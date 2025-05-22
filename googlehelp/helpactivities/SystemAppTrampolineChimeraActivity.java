@@ -9,50 +9,50 @@ import android.os.Bundle;
 import com.google.android.gms.feedback.ThemeSettings;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.gms.googlehelp.common.HelpConfig;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bajh;
-import defpackage.bivr;
-import defpackage.bjaw;
-import defpackage.bjay;
-import defpackage.bjbk;
-import defpackage.bjij;
-import defpackage.bry;
-import defpackage.ejhf;
-import defpackage.folg;
-import defpackage.qfp;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bcnd;
+import defpackage.blag;
+import defpackage.blfl;
+import defpackage.blfn;
+import defpackage.blfz;
+import defpackage.blmy;
+import defpackage.bsj;
+import defpackage.eluo;
+import defpackage.frdz;
+import defpackage.ryt;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class SystemAppTrampolineChimeraActivity extends qfp {
-    private static final asot j = asot.b("gH_SystemAppTrampoline", asej.GOOGLE_HELP);
+public class SystemAppTrampolineChimeraActivity extends ryt {
+    private static final ausn j = ausn.b("gH_SystemAppTrampoline", auid.GOOGLE_HELP);
     private static final Set k = new HashSet();
     private static int l;
-    private bjay m;
+    private blfn m;
     private HelpConfig n;
 
     private final void a(int i, int i2) {
-        bjbk.A(68, i, this, this.n, this.m);
-        bjaw.z(this, this.n, 76, i2);
-        bjij.l(this, Uri.parse(folg.z()), this.n, this.m);
+        blfz.A(68, i, this, this.n, this.m);
+        blfl.z(this, this.n, 76, i2);
+        blmy.l(this, Uri.parse(frdz.z()), this.n, this.m);
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        String q = asng.q(this);
+        String q = aura.q(this);
         PackageManager packageManager = getPackageManager();
-        this.m = new bjay(this);
+        this.m = new blfn(this);
         HelpConfig d = HelpConfig.d(new GoogleHelp("systemAppTrampolineActivity"), this);
         this.n = d;
         d.b = q;
-        bjbk.A(66, 1, this, d, this.m);
-        bjaw.z(this, this.n, 74, 1);
+        blfz.A(66, 1, this, d, this.m);
+        blfl.z(this, this.n, 74, 1);
         if (!packageManager.hasSystemFeature("com.google.android.feature.GOOGLE_EXPERIENCE")) {
             a(33, 79);
             return;
@@ -63,11 +63,11 @@ public class SystemAppTrampolineChimeraActivity extends qfp {
                 a(35, 81);
                 return;
             }
-            String ae = folg.a.a().ae();
+            String ae = frdz.a.lK().ae();
             if (ae.hashCode() != l) {
                 Set set = k;
                 set.clear();
-                Collections.addAll(set, bivr.y(ae));
+                Collections.addAll(set, blag.y(ae));
                 l = ae.hashCode();
             }
             if (!k.contains(q)) {
@@ -93,11 +93,11 @@ public class SystemAppTrampolineChimeraActivity extends qfp {
                 int length = stringArrayExtra2.length;
                 int length2 = stringArrayExtra.length;
                 if (length2 == length) {
-                    bry bryVar = new bry(length2);
+                    bsj bsjVar = new bsj(length2);
                     for (int i = 0; i < length2; i++) {
-                        bryVar.put(stringArrayExtra[i], stringArrayExtra2[i]);
+                        bsjVar.put(stringArrayExtra[i], stringArrayExtra2[i]);
                     }
-                    googleHelp.e(bryVar);
+                    googleHelp.e(bsjVar);
                 }
             }
             String[] stringArrayExtra3 = intent.getStringArrayExtra("EXTRA_FEEDBACK_PSD_KEYS");
@@ -106,33 +106,33 @@ public class SystemAppTrampolineChimeraActivity extends qfp {
                 int length3 = stringArrayExtra4.length;
                 int length4 = stringArrayExtra3.length;
                 if (length4 == length3) {
-                    bajh bajhVar = new bajh();
+                    bcnd bcndVar = new bcnd();
                     for (int i2 = 0; i2 < length4; i2++) {
-                        bajhVar.c(stringArrayExtra3[i2], stringArrayExtra4[i2]);
+                        bcndVar.c(stringArrayExtra3[i2], stringArrayExtra4[i2]);
                     }
-                    googleHelp.d(bajhVar.a(), getCacheDir());
+                    googleHelp.d(bcndVar.a(), getCacheDir());
                 }
             }
             Account account = (Account) intent.getParcelableExtra("EXTRA_ACCOUNT");
             if (account != null) {
                 googleHelp.c = account;
             }
-            googleHelp.e = asng.q(this);
-            bjbk.A(67, 1, this, this.n, this.m);
-            bjaw.z(this, this.n, 75, 1);
+            googleHelp.e = aura.q(this);
+            blfz.A(67, 1, this, this.n, this.m);
+            blfl.z(this, this.n, 75, 1);
             startActivityForResult(googleHelp.a(), 0);
             finish();
         } catch (PackageManager.NameNotFoundException unused) {
-            ((ejhf) j.i()).B("Error trying to get the application info for %s", q);
+            ((eluo) j.i()).B("Error trying to get the application info for %s", q);
             a(34, 80);
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
-        bjay bjayVar = this.m;
-        if (bjayVar != null) {
-            bjayVar.close();
+        blfn blfnVar = this.m;
+        if (blfnVar != null) {
+            blfnVar.close();
         }
         super.onDestroy();
     }

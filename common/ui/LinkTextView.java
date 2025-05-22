@@ -4,13 +4,13 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.TextView;
-import defpackage.asmo;
-import defpackage.iuo;
+import defpackage.auqi;
+import defpackage.iwe;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class LinkTextView extends TextView {
-    private asmo a;
+    private auqi a;
 
     public LinkTextView(Context context) {
         this(context, null);
@@ -26,8 +26,8 @@ public class LinkTextView extends TextView {
 
     public LinkTextView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        asmo asmoVar = new asmo(this);
-        this.a = asmoVar;
-        iuo.q(this, asmoVar);
+        auqi auqiVar = new auqi(this);
+        this.a = auqiVar;
+        iwe.q(this, auqiVar);
     }
 }

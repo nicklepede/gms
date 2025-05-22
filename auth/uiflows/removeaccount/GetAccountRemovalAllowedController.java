@@ -11,19 +11,19 @@ import android.util.Log;
 import com.google.android.gms.auth.uiflows.addaccount.WrapperControlledChimeraActivity;
 import com.google.android.gms.auth.uiflows.controller.Controller;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
-import defpackage.adle;
-import defpackage.adli;
-import defpackage.adpb;
-import defpackage.arka;
-import defpackage.arxo;
-import defpackage.asnd;
-import defpackage.fkio;
+import defpackage.afll;
+import defpackage.aflp;
+import defpackage.afpi;
+import defpackage.atmp;
+import defpackage.auad;
+import defpackage.auqx;
+import defpackage.fmzd;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GetAccountRemovalAllowedController implements Controller {
-    public static final Parcelable.Creator CREATOR = new adpb();
+    public static final Parcelable.Creator CREATOR = new afpi();
     private final Context a = AppContextProvider.a();
     private final AccountAuthenticatorResponse b;
     private final Account c;
@@ -37,7 +37,7 @@ public class GetAccountRemovalAllowedController implements Controller {
         this.e = str;
     }
 
-    private final adle c(boolean z) {
+    private final afll c(boolean z) {
         Bundle bundle = new Bundle();
         bundle.putBoolean("booleanResult", z);
         if (!z) {
@@ -47,36 +47,36 @@ public class GetAccountRemovalAllowedController implements Controller {
         if (accountAuthenticatorResponse != null) {
             accountAuthenticatorResponse.onResult(bundle);
         }
-        return new adle(0, null, -1, new Intent().putExtras(bundle), -1, -1);
+        return new afll(0, null, -1, new Intent().putExtras(bundle), -1, -1);
     }
 
-    private final adle d() {
+    private final afll d() {
         boolean z = true;
         if (!this.d) {
             return c(true);
         }
-        if (fkio.c()) {
+        if (fmzd.c()) {
             Context context = this.a;
-            if (asnd.h(context, context.getPackageName()).size() != 1) {
+            if (auqx.h(context, context.getPackageName()).size() != 1) {
                 z = false;
             }
         }
         Context context2 = this.a;
         String str = this.e;
-        arxo arxoVar = ConfirmAccountDeletionChimeraActivity.h;
-        return new adle(20, new Intent().setClassName(context2, "com.google.android.gms.auth.login.ConfirmAccountDeletionActivity").putExtra("caller", str).putExtra("isLastAccount", z), 0, null, -1, -1);
+        auad auadVar = ConfirmAccountDeletionChimeraActivity.h;
+        return new afll(20, new Intent().setClassName(context2, "com.google.android.gms.auth.login.ConfirmAccountDeletionActivity").putExtra("caller", str).putExtra("isLastAccount", z), 0, null, -1, -1);
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller
-    public final adle a(adli adliVar) {
-        if (adliVar == null) {
+    public final afll a(aflp aflpVar) {
+        if (aflpVar == null) {
             Context context = this.a;
-            Intent a = arka.a(context, this.c);
-            return a != null ? new adle(10, WrapperControlledChimeraActivity.b(context, false, null, a), 0, null, -1, -1) : d();
+            Intent a = atmp.a(context, this.c);
+            return a != null ? new afll(10, WrapperControlledChimeraActivity.b(context, false, null, a), 0, null, -1, -1) : d();
         }
-        int i = adliVar.a;
+        int i = aflpVar.a;
         if (i == 10) {
-            int i2 = adliVar.b;
+            int i2 = aflpVar.b;
             if (i2 == -1) {
                 return d();
             }
@@ -84,7 +84,7 @@ public class GetAccountRemovalAllowedController implements Controller {
                 return c(false);
             }
         } else if (i == 20) {
-            int i3 = adliVar.b;
+            int i3 = aflpVar.b;
             if (i3 == -1) {
                 return c(true);
             }
@@ -92,7 +92,7 @@ public class GetAccountRemovalAllowedController implements Controller {
                 return c(false);
             }
         }
-        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(adliVar.b)));
+        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(aflpVar.b)));
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller

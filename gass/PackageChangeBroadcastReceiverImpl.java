@@ -1,15 +1,15 @@
 package com.google.android.gms.gass;
 
-import defpackage.bhsi;
+import defpackage.bjwx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class PackageChangeBroadcastReceiverImpl extends bhsi {
+public class PackageChangeBroadcastReceiverImpl extends bjwx {
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0011, code lost:
     
         if (r0.isEmpty() == false) goto L10;
      */
-    @Override // defpackage.bhsi
+    @Override // defpackage.bjwx
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -36,33 +36,33 @@ public class PackageChangeBroadcastReceiverImpl extends bhsi {
             int r5 = r5.getIntExtra(r2, r3)
             r2 = 2
             if (r5 != r2) goto L3b
-            fohu r5 = defpackage.fohu.a
-            fohv r5 = r5.a()
+            frak r5 = defpackage.frak.a
+            fral r5 = r5.lK()
             boolean r5 = r5.a()
             if (r5 == 0) goto L3a
-            bhsj r5 = defpackage.bhsj.a(r6)
+            bjwy r5 = defpackage.bjwy.a(r6)
             r6 = 5013(0x1395, float:7.025E-42)
             r5.b(r6)
         L3a:
             return r1
         L3b:
-            bhus r5 = defpackage.bhus.a
-            fecj r5 = r5.v()
+            bjzh r5 = defpackage.bjzh.a
+            fgrc r5 = r5.v()
             if (r0 == 0) goto L5a
-            fecp r6 = r5.b
+            fgri r6 = r5.b
             boolean r6 = r6.L()
             if (r6 != 0) goto L4e
             r5.U()
         L4e:
-            fecp r6 = r5.b
-            bhus r6 = (defpackage.bhus) r6
+            fgri r6 = r5.b
+            bjzh r6 = (defpackage.bjzh) r6
             int r1 = r6.b
             r1 = r1 | 1
             r6.b = r1
             r6.c = r0
         L5a:
-            fecp r5 = r5.Q()
-            bhus r5 = (defpackage.bhus) r5
+            fgri r5 = r5.Q()
+            bjzh r5 = (defpackage.bjzh) r5
             byte[] r5 = r5.r()
             return r5
         */

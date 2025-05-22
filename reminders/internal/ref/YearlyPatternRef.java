@@ -5,13 +5,13 @@ import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.MonthlyPattern;
 import com.google.android.gms.reminders.model.YearlyPattern;
 import com.google.android.gms.reminders.model.YearlyPatternEntity;
-import defpackage.cxeb;
-import defpackage.cxez;
+import defpackage.cznx;
+import defpackage.czov;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class YearlyPatternRef extends cxeb implements YearlyPattern {
+public class YearlyPatternRef extends cznx implements YearlyPattern {
     private boolean f;
     private MonthlyPatternRef g;
 
@@ -51,7 +51,7 @@ public class YearlyPatternRef extends cxeb implements YearlyPattern {
         return 0;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof YearlyPattern)) {
             return false;
@@ -62,18 +62,18 @@ public class YearlyPatternRef extends cxeb implements YearlyPattern {
         return YearlyPatternEntity.d(this, (YearlyPattern) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return YearlyPatternEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new YearlyPatternEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxez.a(new YearlyPatternEntity(this), parcel, i);
+        czov.a(new YearlyPatternEntity(this), parcel, i);
     }
 }

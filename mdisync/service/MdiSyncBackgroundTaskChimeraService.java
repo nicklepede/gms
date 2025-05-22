@@ -3,52 +3,52 @@ package com.google.android.gms.mdisync.service;
 import android.accounts.Account;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
 import com.google.android.gms.mdisync.service.MdiSyncBackgroundTaskChimeraService;
-import defpackage.ccqb;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ejhh;
+import defpackage.ceyv;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.eluq;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MdiSyncBackgroundTaskChimeraService extends GmsTaskChimeraService {
     public static final /* synthetic */ int a = 0;
-    private static final ejhh b = ccqb.b();
-    private final eijr c;
+    private static final eluq b = ceyv.b();
+    private final ekww c;
 
     public MdiSyncBackgroundTaskChimeraService() {
-        this(new eijr() { // from class: ccrb
-            @Override // defpackage.eijr
-            public final Object a() {
+        this(new ekww() { // from class: cezv
+            @Override // defpackage.ekww
+            public final Object lK() {
                 int i = MdiSyncBackgroundTaskChimeraService.a;
-                ccog a2 = ccog.a();
-                fixm fixmVar = a2.M;
-                fixm fixmVar2 = a2.B;
-                fixm fixmVar3 = a2.C;
-                fixm fixmVar4 = a2.Q;
-                fixmVar.getClass();
-                fixmVar2.getClass();
-                fixmVar3.getClass();
-                fixmVar4.getClass();
-                eiho eihoVar = new eiho() { // from class: ccra
-                    @Override // defpackage.eiho
+                cexa a2 = cexa.a();
+                flnj flnjVar = a2.M;
+                flnj flnjVar2 = a2.B;
+                flnj flnjVar3 = a2.C;
+                flnj flnjVar4 = a2.Q;
+                flnjVar.getClass();
+                flnjVar2.getClass();
+                flnjVar3.getClass();
+                flnjVar4.getClass();
+                ekut ekutVar = new ekut() { // from class: cezu
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
                         int i2 = MdiSyncBackgroundTaskChimeraService.a;
-                        ccob b2 = ccog.a().b((Account) obj);
-                        fixm fixmVar5 = b2.d;
-                        return eits.m(ccsm.WIPEOUT, new ccsq(new ejdg(new ccno(b2.a, (dqyz) fixmVar5.a(), new drdr((dplo) b2.p.A.a())))), ccsm.PROFILE_SYNC, (ccsi) b2.n.a());
+                        cewv b2 = cexa.a().b((Account) obj);
+                        flnj flnjVar5 = b2.d;
+                        return elgx.m(cfbg.WIPEOUT, new cfbk(new elqn(new cewi(b2.a, (dtjh) flnjVar5.a(), new dtnz((drvx) b2.p.A.a())))), cfbg.PROFILE_SYNC, (cfbc) b2.n.a());
                     }
                 };
-                Map a3 = ((fixi) fixmVar).a();
+                Map a3 = ((flnf) flnjVar).a();
                 a3.getClass();
-                byxs byxsVar = (byxs) fixmVar2.a();
-                byxsVar.getClass();
-                asmf asmfVar = new asmf(2, 10);
-                eijr eijrVar = (eijr) fixmVar3.a();
-                eijrVar.getClass();
-                ccqc ccqcVar = (ccqc) fixmVar4.a();
-                ccqcVar.getClass();
-                return new ccrd(a3, eihoVar, byxsVar, asmfVar, eijrVar, ccqcVar);
+                cbgj cbgjVar = (cbgj) flnjVar2.a();
+                cbgjVar.getClass();
+                aupz aupzVar = new aupz(2, 10);
+                ekww ekwwVar = (ekww) flnjVar3.a();
+                ekwwVar.getClass();
+                ceyw ceywVar = (ceyw) flnjVar4.a();
+                ceywVar.getClass();
+                return new cezx(a3, ekutVar, cbgjVar, aupzVar, ekwwVar, ceywVar);
             }
         });
     }
@@ -66,15 +66,15 @@ public class MdiSyncBackgroundTaskChimeraService extends GmsTaskChimeraService {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final int a(defpackage.byln r11) {
+    public final int a(defpackage.cauf r11) {
         /*
             Method dump skipped, instructions count: 325
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.mdisync.service.MdiSyncBackgroundTaskChimeraService.a(byln):int");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.mdisync.service.MdiSyncBackgroundTaskChimeraService.a(cauf):int");
     }
 
-    public MdiSyncBackgroundTaskChimeraService(eijr eijrVar) {
-        this.c = eijy.a(eijrVar);
+    public MdiSyncBackgroundTaskChimeraService(ekww ekwwVar) {
+        this.c = ekxd.a(ekwwVar);
     }
 }

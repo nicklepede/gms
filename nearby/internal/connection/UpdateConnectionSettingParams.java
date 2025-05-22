@@ -6,19 +6,19 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.SettingOptions;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.cjbn;
-import defpackage.cjbp;
-import defpackage.cjej;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cljs;
+import defpackage.clju;
+import defpackage.clmo;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class UpdateConnectionSettingParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjej();
-    public cjbp a;
+    public static final Parcelable.Creator CREATOR = new clmo();
+    public clju a;
     public SettingOptions b;
 
     public UpdateConnectionSettingParams() {
@@ -30,7 +30,7 @@ public final class UpdateConnectionSettingParams extends AbstractSafeParcelable 
         }
         if (obj instanceof UpdateConnectionSettingParams) {
             UpdateConnectionSettingParams updateConnectionSettingParams = (UpdateConnectionSettingParams) obj;
-            if (arwb.b(this.a, updateConnectionSettingParams.a) && arwb.b(this.b, updateConnectionSettingParams.b)) {
+            if (atyq.b(this.a, updateConnectionSettingParams.a) && atyq.b(this.b, updateConnectionSettingParams.b)) {
                 return true;
             }
         }
@@ -43,17 +43,17 @@ public final class UpdateConnectionSettingParams extends AbstractSafeParcelable 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        cjbp cjbpVar = this.a;
-        arxc.D(parcel, 1, cjbpVar == null ? null : cjbpVar.asBinder());
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        clju cljuVar = this.a;
+        atzr.D(parcel, 1, cljuVar == null ? null : cljuVar.asBinder());
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 
     public UpdateConnectionSettingParams(IBinder iBinder, SettingOptions settingOptions) {
-        arwm.s(iBinder);
+        atzb.s(iBinder);
         IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IResultListener");
-        this.a = queryLocalInterface instanceof cjbp ? (cjbp) queryLocalInterface : new cjbn(iBinder);
+        this.a = queryLocalInterface instanceof clju ? (clju) queryLocalInterface : new cljs(iBinder);
         this.b = settingOptions;
     }
 }

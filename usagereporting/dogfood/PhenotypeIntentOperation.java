@@ -4,45 +4,45 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.usagereporting.AppContextProvider;
-import defpackage.aqxo;
-import defpackage.aqye;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqg;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.dhqf;
-import defpackage.dhqj;
-import defpackage.dhql;
-import defpackage.eiig;
-import defpackage.fsrp;
-import defpackage.fssf;
+import defpackage.atad;
+import defpackage.atat;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auua;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.dkbl;
+import defpackage.dkbp;
+import defpackage.dkbr;
+import defpackage.ekvl;
+import defpackage.fvnf;
+import defpackage.fvnv;
 import j$.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PhenotypeIntentOperation extends IntentOperation {
     static final String a;
     private final Context b = AppContextProvider.a();
-    private dhqj c;
-    private aqxo d;
+    private dkbp c;
+    private atad d;
 
     static {
-        asot.b("PhenotypeIntentOperation", asej.USAGE_REPORTING);
-        a = asqg.f("com.google.android.gms.usagereporting");
+        ausn.b("PhenotypeIntentOperation", auid.USAGE_REPORTING);
+        a = auua.f("com.google.android.gms.usagereporting");
     }
 
     private final boolean a(Context context) {
         if (this.d == null) {
-            this.d = dhqf.a(context);
+            this.d = dkbl.a(context);
         }
-        dfaq aL = this.d.aL();
+        dhlw aK = this.d.aK();
         try {
-            dfbl.o(aL, fsrp.b(), TimeUnit.SECONDS);
-            return aL.m() && aL.i() != null && ((aqye) aL.i()).r();
+            dhmr.o(aK, fvnf.b(), TimeUnit.SECONDS);
+            return aK.m() && aK.i() != null && ((atat) aK.i()).q();
         } catch (InterruptedException unused) {
             Thread.currentThread().interrupt();
             return false;
@@ -53,22 +53,22 @@ public class PhenotypeIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (Objects.equals(intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME"), "com.google.android.gms.usagereporting") && Objects.equals(intent.getAction(), a) && fssf.i()) {
+        if (Objects.equals(intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME"), "com.google.android.gms.usagereporting") && Objects.equals(intent.getAction(), a) && fvnv.i()) {
             if (this.c == null) {
                 Context context = this.b;
-                this.c = new dhqj(context, new dhql(context));
+                this.c = new dkbp(context, new dkbr(context));
             }
-            if (!fssf.h()) {
-                dhqj dhqjVar = this.c;
-                eiig.x(dhqjVar);
-                dhqjVar.a();
+            if (!fvnv.h()) {
+                dkbp dkbpVar = this.c;
+                ekvl.y(dkbpVar);
+                dkbpVar.a();
             } else {
                 if (a(this.b)) {
                     return;
                 }
-                dhqj dhqjVar2 = this.c;
-                eiig.x(dhqjVar2);
-                dhqjVar2.b();
+                dkbp dkbpVar2 = this.c;
+                ekvl.y(dkbpVar2);
+                dkbpVar2.b();
             }
         }
     }

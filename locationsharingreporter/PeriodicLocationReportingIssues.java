@@ -4,17 +4,17 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.catw;
-import defpackage.eius;
-import defpackage.eiuu;
-import defpackage.ejck;
+import defpackage.atzr;
+import defpackage.cdcm;
+import defpackage.elhx;
+import defpackage.elhz;
+import defpackage.elpp;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class PeriodicLocationReportingIssues extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new catw();
+    public static final Parcelable.Creator CREATOR = new cdcm();
     public final int[] a;
     public final Bundle b;
     public final boolean c;
@@ -25,15 +25,15 @@ public class PeriodicLocationReportingIssues extends AbstractSafeParcelable {
         this.c = z;
     }
 
-    public static eiuu a(int[] iArr) {
+    public static elhz a(int[] iArr) {
         if (iArr == null || (iArr.length) == 0) {
-            return ejck.a;
+            return elpp.a;
         }
-        eius eiusVar = new eius();
+        elhx elhxVar = new elhx();
         for (int i : iArr) {
-            eiusVar.c(Integer.valueOf(i));
+            elhxVar.c(Integer.valueOf(i));
         }
-        return eiusVar.g();
+        return elhxVar.g();
     }
 
     public final String toString() {
@@ -43,10 +43,10 @@ public class PeriodicLocationReportingIssues extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int[] iArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.p(parcel, 1, iArr, false);
-        arxc.g(parcel, 2, this.b, false);
-        arxc.e(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.p(parcel, 1, iArr, false);
+        atzr.g(parcel, 2, this.b, false);
+        atzr.e(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 }

@@ -4,20 +4,20 @@ import android.content.Intent;
 import android.view.MotionEvent;
 import android.view.View;
 import com.google.android.chimera.IntentOperation;
-import defpackage.cctl;
-import defpackage.cctu;
-import defpackage.ccus;
-import defpackage.cdaa;
-import defpackage.cdab;
-import defpackage.cdao;
-import defpackage.fihs;
-import defpackage.rnx;
+import defpackage.cfcf;
+import defpackage.cfco;
+import defpackage.cfdm;
+import defpackage.cfja;
+import defpackage.cfjb;
+import defpackage.cfjo;
+import defpackage.fkxp;
+import defpackage.thb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class RingChimeraService extends ccus {
+public class RingChimeraService extends cfdm {
     public RingChimeraService() {
-        super(cctl.a());
+        super(cfcf.a());
     }
 
     private final void i(boolean z) {
@@ -36,34 +36,34 @@ public class RingChimeraService extends ccus {
         }
     }
 
-    @Override // defpackage.ccus
-    protected final cdaa a() {
-        return new cdaa(this, this, this.i);
+    @Override // defpackage.cfdm
+    protected final cfja a() {
+        return new cfja(this, this, this.i);
     }
 
-    @Override // defpackage.ccus
-    protected final fihs b(Intent intent) {
+    @Override // defpackage.cfdm
+    protected final fkxp b(Intent intent) {
         if (intent.getBooleanExtra("includeConnectivityStatus", false)) {
-            return cdab.b(this);
+            return cfjb.b(this);
         }
         return null;
     }
 
-    @Override // defpackage.ccus
+    @Override // defpackage.cfdm
     protected final void d() {
         this.b = true;
         i(true);
     }
 
-    @Override // defpackage.ccus
+    @Override // defpackage.cfdm
     protected final void e(Intent intent) {
         this.d = intent.getStringExtra("requestorNodeId");
-        cdao.b(this, this.d, "com.google.android.gms.mdm.RING_STARTED");
+        cfjo.b(this, this.d, "com.google.android.gms.mdm.RING_STARTED");
     }
 
-    @Override // defpackage.ccus
-    protected final cctu h() {
-        return new cctu();
+    @Override // defpackage.cfdm
+    protected final cfco h() {
+        return new cfco();
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:16:0x003f, code lost:
@@ -98,7 +98,7 @@ public class RingChimeraService extends ccus {
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x0057, code lost:
     
-        defpackage.cdaj.e(r0, "Could not set stream volume", new java.lang.Object[0]);
+        defpackage.cfjj.e(r0, "Could not set stream volume", new java.lang.Object[0]);
      */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x003c, code lost:
     
@@ -121,11 +121,11 @@ public class RingChimeraService extends ccus {
 
     @Override // android.view.View.OnTouchListener
     public final boolean onTouch(View view, MotionEvent motionEvent) {
-        int i = rnx.a;
+        int i = thb.a;
         if (motionEvent.getAction() == 1) {
             view.performClick();
         }
-        new cctu().b();
+        new cfco().b();
         stopSelf();
         return true;
     }

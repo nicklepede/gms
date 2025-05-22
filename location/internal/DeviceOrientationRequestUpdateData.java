@@ -5,50 +5,50 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bzhy;
-import defpackage.bzia;
-import defpackage.bzyy;
-import defpackage.bzzd;
-import defpackage.bzzf;
+import defpackage.atzr;
+import defpackage.cbqp;
+import defpackage.cbqr;
+import defpackage.cchp;
+import defpackage.cchu;
+import defpackage.cchw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class DeviceOrientationRequestUpdateData extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bzyy();
+    public static final Parcelable.Creator CREATOR = new cchp();
     public final int a;
     public final DeviceOrientationRequestInternal b;
-    public final bzia c;
-    public final bzzf d;
+    public final cbqr c;
+    public final cchw d;
 
     public DeviceOrientationRequestUpdateData(int i, DeviceOrientationRequestInternal deviceOrientationRequestInternal, IBinder iBinder, IBinder iBinder2) {
-        bzia bzhyVar;
+        cbqr cbqpVar;
         this.a = i;
         this.b = deviceOrientationRequestInternal;
-        bzzf bzzfVar = null;
+        cchw cchwVar = null;
         if (iBinder == null) {
-            bzhyVar = null;
+            cbqpVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.location.IDeviceOrientationListener");
-            bzhyVar = queryLocalInterface instanceof bzia ? (bzia) queryLocalInterface : new bzhy(iBinder);
+            cbqpVar = queryLocalInterface instanceof cbqr ? (cbqr) queryLocalInterface : new cbqp(iBinder);
         }
-        this.c = bzhyVar;
+        this.c = cbqpVar;
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.location.internal.IFusedLocationProviderCallback");
-            bzzfVar = queryLocalInterface2 instanceof bzzf ? (bzzf) queryLocalInterface2 : new bzzd(iBinder2);
+            cchwVar = queryLocalInterface2 instanceof cchw ? (cchw) queryLocalInterface2 : new cchu(iBinder2);
         }
-        this.d = bzzfVar;
+        this.d = cchwVar;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.t(parcel, 2, this.b, i, false);
-        bzia bziaVar = this.c;
-        arxc.D(parcel, 3, bziaVar == null ? null : bziaVar.asBinder());
-        bzzf bzzfVar = this.d;
-        arxc.D(parcel, 4, bzzfVar != null ? bzzfVar.asBinder() : null);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.t(parcel, 2, this.b, i, false);
+        cbqr cbqrVar = this.c;
+        atzr.D(parcel, 3, cbqrVar == null ? null : cbqrVar.asBinder());
+        cchw cchwVar = this.d;
+        atzr.D(parcel, 4, cchwVar != null ? cchwVar.asBinder() : null);
+        atzr.c(parcel, a);
     }
 }

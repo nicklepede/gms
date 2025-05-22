@@ -9,14 +9,14 @@ import javax.crypto.KeyGeneratorSpi;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class KeyGeneratorImpl extends KeyGeneratorSpi {
     private final String algorithm;
     private int keySizeBits;
     protected SecureRandom secureRandom;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class AES extends KeyGeneratorImpl {
         public AES() {
             super("AES", 128);
@@ -30,7 +30,7 @@ public abstract class KeyGeneratorImpl extends KeyGeneratorSpi {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class ARC4 extends KeyGeneratorImpl {
         public ARC4() {
             super("ARC4", 128);
@@ -44,7 +44,7 @@ public abstract class KeyGeneratorImpl extends KeyGeneratorSpi {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class ChaCha20 extends KeyGeneratorImpl {
         public ChaCha20() {
             super("ChaCha20", 256);
@@ -58,7 +58,7 @@ public abstract class KeyGeneratorImpl extends KeyGeneratorSpi {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class DESEDE extends KeyGeneratorImpl {
         public DESEDE() {
             super("DESEDE", AndroidInputTypeSignal.TYPE_TEXT_VARIATION_PHONETIC);
@@ -87,42 +87,42 @@ public abstract class KeyGeneratorImpl extends KeyGeneratorSpi {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class HmacMD5 extends KeyGeneratorImpl {
         public HmacMD5() {
             super("HmacMD5", 128);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class HmacSHA1 extends KeyGeneratorImpl {
         public HmacSHA1() {
             super("HmacSHA1", AndroidInputTypeSignal.TYPE_TEXT_VARIATION_WEB_EDIT_TEXT);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class HmacSHA224 extends KeyGeneratorImpl {
         public HmacSHA224() {
             super("HmacSHA224", AndroidInputTypeSignal.TYPE_TEXT_VARIATION_WEB_PASSWORD);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class HmacSHA256 extends KeyGeneratorImpl {
         public HmacSHA256() {
             super("HmacSHA256", 256);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class HmacSHA384 extends KeyGeneratorImpl {
         public HmacSHA384() {
             super("HmacSHA384", 384);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class HmacSHA512 extends KeyGeneratorImpl {
         public HmacSHA512() {
             super("HmacSHA512", 512);

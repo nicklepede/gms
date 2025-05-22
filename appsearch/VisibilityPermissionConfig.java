@@ -3,28 +3,28 @@ package com.google.android.gms.appsearch;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ucw;
-import defpackage.uda;
-import defpackage.uev;
+import defpackage.atzr;
+import defpackage.vyv;
+import defpackage.vyz;
+import defpackage.wau;
 import j$.util.Objects;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class VisibilityPermissionConfig extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new uev();
+    public static final Parcelable.Creator CREATOR = new wau();
     final int[] a;
     private Integer b;
 
     static {
-        ucw ucwVar = new ucw("VisibilityPermissionType");
-        uda udaVar = new uda("allRequiredPermissions");
-        udaVar.b(1);
-        ucwVar.c(udaVar.a());
-        ucwVar.a();
+        vyv vyvVar = new vyv("VisibilityPermissionType");
+        vyz vyzVar = new vyz("allRequiredPermissions");
+        vyzVar.b(1);
+        vyvVar.c(vyzVar.a());
+        vyvVar.a();
     }
 
     public VisibilityPermissionConfig(int[] iArr) {
@@ -51,9 +51,9 @@ public final class VisibilityPermissionConfig extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int[] iArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.p(parcel, 1, iArr, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.p(parcel, 1, iArr, false);
+        atzr.c(parcel, a);
     }
 
     public VisibilityPermissionConfig(Set set) {

@@ -1,17 +1,17 @@
 package com.google.android.gms.ads.cache;
 
-import defpackage.fecj;
-import defpackage.feck;
-import defpackage.fecp;
-import defpackage.feeh;
-import defpackage.feen;
-import defpackage.feer;
+import defpackage.fgrc;
+import defpackage.fgrd;
+import defpackage.fgri;
+import defpackage.fgta;
+import defpackage.fgtg;
+import defpackage.fgtk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class m extends fecp implements feeh {
+public final class m extends fgri implements fgta {
     public static final m a;
-    private static volatile feen f;
+    private static volatile fgtg f;
     public int b;
     public String c = "";
     public String d = "";
@@ -20,15 +20,15 @@ public final class m extends fecp implements feeh {
     static {
         m mVar = new m();
         a = mVar;
-        fecp.J(m.class, mVar);
+        fgri.J(m.class, mVar);
     }
 
     private m() {
     }
 
-    @Override // defpackage.fecp
-    public final Object iB(int i, Object obj) {
-        feen feenVar;
+    @Override // defpackage.fgri
+    public final Object iQ(int i, Object obj) {
+        fgtg fgtgVar;
         if (i == 0) {
             throw null;
         }
@@ -37,13 +37,13 @@ public final class m extends fecp implements feeh {
             return (byte) 1;
         }
         if (i2 == 2) {
-            return new feer(a, "\u0004\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001ဈ\u0000\u0002ဈ\u0001\u0003ဈ\u0002", new Object[]{"b", com.google.android.gms.wallet.dynamite.util.c.a, "d", "e"});
+            return new fgtk(a, "\u0004\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001ဈ\u0000\u0002ဈ\u0001\u0003ဈ\u0002", new Object[]{"b", com.google.android.gms.wallet.dynamite.util.c.a, "d", "e"});
         }
         if (i2 == 3) {
             return new m();
         }
         if (i2 == 4) {
-            return new fecj(a);
+            return new fgrc(a);
         }
         if (i2 == 5) {
             return a;
@@ -51,17 +51,17 @@ public final class m extends fecp implements feeh {
         if (i2 != 6) {
             throw null;
         }
-        feen feenVar2 = f;
-        if (feenVar2 != null) {
-            return feenVar2;
+        fgtg fgtgVar2 = f;
+        if (fgtgVar2 != null) {
+            return fgtgVar2;
         }
         synchronized (m.class) {
-            feenVar = f;
-            if (feenVar == null) {
-                feenVar = new feck(a);
-                f = feenVar;
+            fgtgVar = f;
+            if (fgtgVar == null) {
+                fgtgVar = new fgrd(a);
+                f = fgtgVar;
             }
         }
-        return feenVar;
+        return fgtgVar;
     }
 }

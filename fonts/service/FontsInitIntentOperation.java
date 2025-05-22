@@ -4,21 +4,21 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.fonts.update.UpdateSchedulerBase;
-import defpackage.bhbq;
-import defpackage.bhcm;
-import defpackage.bhdp;
+import defpackage.bjgg;
+import defpackage.bjhc;
+import defpackage.bjif;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class FontsInitIntentOperation extends IntentOperation {
     protected static void a(Context context) {
-        bhdp bhdpVar = bhdp.a;
-        bhdpVar.g(context);
-        if (bhdpVar.k) {
-            UpdateSchedulerBase.e(bhdpVar, context);
+        bjif bjifVar = bjif.a;
+        bjifVar.g(context);
+        if (bjifVar.k) {
+            UpdateSchedulerBase.e(bjifVar, context);
         }
-        boolean z = bhdpVar.n;
-        bhbq.a();
+        boolean z = bjifVar.n;
+        bjgg.a();
     }
 
     @Override // com.google.android.chimera.IntentOperation
@@ -26,7 +26,7 @@ public class FontsInitIntentOperation extends IntentOperation {
         if ("com.google.android.gms.fonts.init.INIT_ACTION".equals(intent.getAction())) {
             a(getApplicationContext());
         } else {
-            bhcm.f("FontsInitOp", "Invalid action: %s", intent.getAction());
+            bjhc.f("FontsInitOp", "Invalid action: %s", intent.getAction());
         }
     }
 }

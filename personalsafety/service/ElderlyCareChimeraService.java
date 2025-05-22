@@ -4,26 +4,26 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.Looper;
 import com.google.android.chimera.Service;
-import defpackage.asqt;
-import defpackage.asqu;
-import defpackage.byhr;
-import defpackage.cvpo;
-import defpackage.eiif;
-import defpackage.ejhf;
+import defpackage.auun;
+import defpackage.auuo;
+import defpackage.caqj;
+import defpackage.cxze;
+import defpackage.ekvk;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class ElderlyCareChimeraService extends Service implements asqt {
-    private asqu a;
+public class ElderlyCareChimeraService extends Service implements auun {
+    private auuo a;
 
-    @Override // defpackage.asqt
+    @Override // defpackage.auun
     public final void a() {
-        ((ejhf) ((ejhf) cvpo.a.h()).ah((char) 8640)).x("Screen off detected");
+        ((eluo) ((eluo) cxze.a.h()).ai((char) 8638)).x("Screen off detected");
     }
 
-    @Override // defpackage.asqt
+    @Override // defpackage.auun
     public final void b() {
-        ((ejhf) ((ejhf) cvpo.a.h()).ah((char) 8641)).x("Screen on detected");
+        ((eluo) ((eluo) cxze.a.h()).ai((char) 8639)).x("Screen on detected");
     }
 
     @Override // com.google.android.chimera.Service
@@ -34,9 +34,9 @@ public class ElderlyCareChimeraService extends Service implements asqt {
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        asqu asquVar = new asqu(this, new byhr(Looper.getMainLooper()));
-        this.a = asquVar;
-        asquVar.b(this);
+        auuo auuoVar = new auuo(this, new caqj(Looper.getMainLooper()));
+        this.a = auuoVar;
+        auuoVar.b(this);
     }
 
     @Override // com.google.android.chimera.Service
@@ -47,10 +47,10 @@ public class ElderlyCareChimeraService extends Service implements asqt {
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        if (intent != null && !eiif.c(intent.getAction())) {
+        if (intent != null && !ekvk.c(intent.getAction())) {
             return 1;
         }
-        ((ejhf) ((ejhf) cvpo.a.j()).ah((char) 8639)).x("Module received null intent");
+        ((eluo) ((eluo) cxze.a.j()).ai((char) 8637)).x("Module received null intent");
         return 1;
     }
 }

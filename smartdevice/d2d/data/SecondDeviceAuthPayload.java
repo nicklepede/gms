@@ -7,8 +7,8 @@ import com.google.android.gms.smartdevice.d2d.BootstrapAccount;
 import com.google.android.gms.smartdevice.setup.auth.StartSessionResponse;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.ddgc;
+import defpackage.atzr;
+import defpackage.dfrh;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -16,10 +16,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class SecondDeviceAuthPayload extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new ddgc();
+    public static final Parcelable.Creator CREATOR = new dfrh();
     private static final HashMap i;
     public List a;
 
@@ -55,7 +55,7 @@ public class SecondDeviceAuthPayload extends BinarySerializableFastSafeParcelabl
         this.g = list2;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i2 = fastJsonResponse$Field.g;
         switch (i2) {
@@ -78,17 +78,17 @@ public class SecondDeviceAuthPayload extends BinarySerializableFastSafeParcelabl
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final Map b() {
         return i;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.h.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i2 = fastJsonResponse$Field.g;
         if (i2 == 5) {
@@ -102,28 +102,8 @@ public class SecondDeviceAuthPayload extends BinarySerializableFastSafeParcelabl
         this.h.add(Integer.valueOf(i2));
     }
 
-    @Override // defpackage.ashs
-    protected final void gf(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
-        int i2 = fastJsonResponse$Field.g;
-        if (i2 != 4) {
-            throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be a byte array"));
-        }
-        this.c = bArr;
-        this.h.add(Integer.valueOf(i2));
-    }
-
-    @Override // defpackage.ashs
-    protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
-        int i2 = fastJsonResponse$Field.g;
-        if (i2 != 7) {
-            throw new IllegalArgumentException(String.format("Invalid id %s", Integer.valueOf(i2)));
-        }
-        this.f = z;
-        this.h.add(Integer.valueOf(i2));
-    }
-
-    @Override // defpackage.ashs
-    public final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+    @Override // defpackage.aulm
+    public final void gK(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         int i2 = fastJsonResponse$Field.g;
         if (i2 == 2) {
             this.a = arrayList;
@@ -136,8 +116,8 @@ public class SecondDeviceAuthPayload extends BinarySerializableFastSafeParcelabl
         this.h.add(Integer.valueOf(i2));
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i2) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i2) {
         int i3 = fastJsonResponse$Field.g;
         if (i3 != 3) {
             throw new IllegalArgumentException(a.l(i3, "Field with id=", " is not known to be an int."));
@@ -146,32 +126,52 @@ public class SecondDeviceAuthPayload extends BinarySerializableFastSafeParcelabl
         this.h.add(Integer.valueOf(i3));
     }
 
+    @Override // defpackage.aulm
+    protected final void gu(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
+        int i2 = fastJsonResponse$Field.g;
+        if (i2 != 4) {
+            throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be a byte array"));
+        }
+        this.c = bArr;
+        this.h.add(Integer.valueOf(i2));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+        int i2 = fastJsonResponse$Field.g;
+        if (i2 != 7) {
+            throw new IllegalArgumentException(String.format("Invalid id %s", Integer.valueOf(i2)));
+        }
+        this.f = z;
+        this.h.add(Integer.valueOf(i2));
+    }
+
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i2) {
         Set set = this.h;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.y(parcel, 2, this.a, true);
+            atzr.y(parcel, 2, this.a, true);
         }
         if (set.contains(3)) {
-            arxc.o(parcel, 3, this.b);
+            atzr.o(parcel, 3, this.b);
         }
         if (set.contains(4)) {
-            arxc.i(parcel, 4, this.c, true);
+            atzr.i(parcel, 4, this.c, true);
         }
         if (set.contains(5)) {
-            arxc.v(parcel, 5, this.d, true);
+            atzr.v(parcel, 5, this.d, true);
         }
         if (set.contains(6)) {
-            arxc.v(parcel, 6, this.e, true);
+            atzr.v(parcel, 6, this.e, true);
         }
         if (set.contains(7)) {
-            arxc.e(parcel, 7, this.f);
+            atzr.e(parcel, 7, this.f);
         }
         if (set.contains(8)) {
-            arxc.y(parcel, 8, this.g, true);
+            atzr.y(parcel, 8, this.g, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public SecondDeviceAuthPayload() {

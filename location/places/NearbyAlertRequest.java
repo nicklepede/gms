@@ -3,18 +3,18 @@ package com.google.android.gms.location.places;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.caec;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ccmt;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class NearbyAlertRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new caec();
+    public static final Parcelable.Creator CREATOR = new ccmt();
     public final int a;
     public final int b;
     public final NearbyAlertFilter c;
@@ -56,7 +56,7 @@ public final class NearbyAlertRequest extends AbstractSafeParcelable {
             return false;
         }
         NearbyAlertRequest nearbyAlertRequest = (NearbyAlertRequest) obj;
-        return this.a == nearbyAlertRequest.a && this.b == nearbyAlertRequest.b && arwb.b(this.c, nearbyAlertRequest.c) && this.f == nearbyAlertRequest.f && this.e == nearbyAlertRequest.e;
+        return this.a == nearbyAlertRequest.a && this.b == nearbyAlertRequest.b && atyq.b(this.c, nearbyAlertRequest.c) && this.f == nearbyAlertRequest.f && this.e == nearbyAlertRequest.e;
     }
 
     public final int hashCode() {
@@ -65,25 +65,25 @@ public final class NearbyAlertRequest extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("transitionTypes", Integer.valueOf(this.a), arrayList);
-        arwa.b("loiteringTimeMillis", Integer.valueOf(this.b), arrayList);
-        arwa.b("nearbyAlertFilter", this.c, arrayList);
-        arwa.b("priority", Integer.valueOf(this.f), arrayList);
-        arwa.b("radiusType", Integer.valueOf(this.e), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("transitionTypes", Integer.valueOf(this.a), arrayList);
+        atyp.b("loiteringTimeMillis", Integer.valueOf(this.b), arrayList);
+        atyp.b("nearbyAlertFilter", this.c, arrayList);
+        atyp.b("priority", Integer.valueOf(this.f), arrayList);
+        atyp.b("radiusType", Integer.valueOf(this.e), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.b);
-        arxc.t(parcel, 3, null, i, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.e(parcel, 5, this.d);
-        arxc.o(parcel, 6, this.e);
-        arxc.o(parcel, 7, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.b);
+        atzr.t(parcel, 3, null, i, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.e(parcel, 5, this.d);
+        atzr.o(parcel, 6, this.e);
+        atzr.o(parcel, 7, this.f);
+        atzr.c(parcel, a);
     }
 }

@@ -12,13 +12,13 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import com.google.android.gms.R;
 import com.google.android.wallet.ui.common.InfoMessageView;
-import defpackage.eflq;
-import defpackage.efud;
-import defpackage.efwo;
-import defpackage.fasm;
+import defpackage.ehyt;
+import defpackage.eihg;
+import defpackage.eijr;
+import defpackage.fdhb;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class BalanceCardView extends CardView {
     public ViewGroup g;
@@ -32,9 +32,9 @@ public class BalanceCardView extends CardView {
     public Button o;
     public final ArrayList p;
     public final ArrayList q;
-    public fasm r;
-    public eflq s;
-    public efud t;
+    public fdhb r;
+    public ehyt s;
+    public eihg t;
     public int u;
 
     public BalanceCardView(Context context) {
@@ -74,7 +74,7 @@ public class BalanceCardView extends CardView {
                 if (i == 1) {
                     Drawable mutate = drawableArr[1].mutate();
                     drawableArr[1] = mutate;
-                    mutate.setTintList(efwo.i(getContext(), R.attr.uicColorMaterialAccent));
+                    mutate.setTintList(eijr.i(getContext(), R.attr.uicColorMaterialAccent));
                     Drawable drawable = drawableArr[1];
                     i = 1;
                 }
@@ -87,7 +87,7 @@ public class BalanceCardView extends CardView {
     @Override // android.view.View
     public final void setEnabled(boolean z) {
         super.setEnabled(z);
-        efwo.N(this, z);
+        eijr.N(this, z);
     }
 
     public BalanceCardView(Context context, AttributeSet attributeSet) {

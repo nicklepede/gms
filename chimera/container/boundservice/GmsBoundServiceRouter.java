@@ -5,17 +5,17 @@ import android.os.Bundle;
 import com.google.android.chimera.container.router.BoundServiceRouter;
 import com.google.android.gms.common.apiservice.ILifecycleSynchronizerRequired;
 import com.google.android.gms.common.apiservice.LifecycleSynchronizer;
-import defpackage.aocv;
+import defpackage.aqen;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class GmsBoundServiceRouter extends BoundServiceRouter implements ILifecycleSynchronizerRequired {
     public static final /* synthetic */ int a = 0;
-    private final aocv b;
+    private final aqen b;
 
-    public GmsBoundServiceRouter(Context context, String str, String str2, Bundle bundle, aocv aocvVar) {
+    public GmsBoundServiceRouter(Context context, String str, String str2, Bundle bundle, aqen aqenVar) {
         super(context, str, str2, bundle);
-        this.b = aocvVar;
+        this.b = aqenVar;
     }
 
     @Override // com.google.android.gms.common.apiservice.ILifecycleSynchronizerRequired

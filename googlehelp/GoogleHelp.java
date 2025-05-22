@@ -19,19 +19,19 @@ import com.google.android.gms.feedback.ErrorReport;
 import com.google.android.gms.feedback.FeedbackOptions;
 import com.google.android.gms.feedback.ThemeSettings;
 import com.google.android.gms.googlehelp.internal.common.TogglingData;
-import defpackage.arxc;
-import defpackage.bafq;
-import defpackage.biou;
-import defpackage.bioy;
+import defpackage.atzr;
+import defpackage.bcjm;
+import defpackage.bktj;
+import defpackage.bktn;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class GoogleHelp extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bioy();
+    public static final Parcelable.Creator CREATOR = new bktn();
     public boolean A;
     public boolean B;
     public int C;
@@ -51,8 +51,8 @@ public class GoogleHelp extends AbstractSafeParcelable implements ReflectedParce
     public String O;
     public Intent P;
     public List Q;
-    public biou R;
-    public bafq S;
+    public bktj R;
+    public bcjm S;
     final int a;
     public String b;
     public Account c;
@@ -155,7 +155,7 @@ public class GoogleHelp extends AbstractSafeParcelable implements ReflectedParce
 
     public final void b(Context context) {
         this.f = context.getString(R.string.common_google_settings);
-        this.g = BitmapFactory.decodeResource(context.getResources(), 2131231464);
+        this.g = BitmapFactory.decodeResource(context.getResources(), 2131231470);
     }
 
     public final void c() {
@@ -179,52 +179,52 @@ public class GoogleHelp extends AbstractSafeParcelable implements ReflectedParce
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.g(parcel, 4, this.d, false);
-        arxc.e(parcel, 5, this.h);
-        arxc.e(parcel, 6, this.i);
-        arxc.x(parcel, 7, this.j, false);
-        arxc.g(parcel, 10, this.k, false);
-        arxc.t(parcel, 11, this.l, i, false);
-        arxc.v(parcel, 14, this.p, false);
-        arxc.t(parcel, 15, this.q, i, false);
-        arxc.y(parcel, 16, this.r, false);
-        arxc.o(parcel, 17, 0);
-        arxc.y(parcel, 18, this.t, false);
-        arxc.i(parcel, 19, this.m, false);
-        arxc.o(parcel, 20, this.n);
-        arxc.o(parcel, 21, this.o);
-        arxc.e(parcel, 22, this.u);
-        arxc.t(parcel, 23, this.v, i, false);
-        arxc.t(parcel, 25, this.s, i, false);
-        arxc.v(parcel, 28, this.e, false);
-        arxc.t(parcel, 31, this.w, i, false);
-        arxc.o(parcel, 32, this.x);
-        arxc.t(parcel, 33, this.y, i, false);
-        arxc.v(parcel, 34, this.f, false);
-        arxc.t(parcel, 35, this.g, i, false);
-        arxc.o(parcel, 36, this.z);
-        arxc.e(parcel, 37, this.A);
-        arxc.e(parcel, 38, this.B);
-        arxc.o(parcel, 39, this.C);
-        arxc.v(parcel, 40, this.D, false);
-        arxc.e(parcel, 41, this.E);
-        arxc.v(parcel, 42, this.F, false);
-        arxc.e(parcel, 43, this.G);
-        arxc.t(parcel, 44, this.H, i, false);
-        arxc.e(parcel, 45, this.I);
-        arxc.y(parcel, 46, this.J, false);
-        arxc.v(parcel, 47, this.K, false);
-        arxc.o(parcel, 48, this.L);
-        arxc.o(parcel, 49, this.M);
-        arxc.y(parcel, 50, this.N, false);
-        arxc.v(parcel, 51, this.O, false);
-        arxc.t(parcel, 52, this.P, i, false);
-        arxc.x(parcel, 53, this.Q, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.g(parcel, 4, this.d, false);
+        atzr.e(parcel, 5, this.h);
+        atzr.e(parcel, 6, this.i);
+        atzr.x(parcel, 7, this.j, false);
+        atzr.g(parcel, 10, this.k, false);
+        atzr.t(parcel, 11, this.l, i, false);
+        atzr.v(parcel, 14, this.p, false);
+        atzr.t(parcel, 15, this.q, i, false);
+        atzr.y(parcel, 16, this.r, false);
+        atzr.o(parcel, 17, 0);
+        atzr.y(parcel, 18, this.t, false);
+        atzr.i(parcel, 19, this.m, false);
+        atzr.o(parcel, 20, this.n);
+        atzr.o(parcel, 21, this.o);
+        atzr.e(parcel, 22, this.u);
+        atzr.t(parcel, 23, this.v, i, false);
+        atzr.t(parcel, 25, this.s, i, false);
+        atzr.v(parcel, 28, this.e, false);
+        atzr.t(parcel, 31, this.w, i, false);
+        atzr.o(parcel, 32, this.x);
+        atzr.t(parcel, 33, this.y, i, false);
+        atzr.v(parcel, 34, this.f, false);
+        atzr.t(parcel, 35, this.g, i, false);
+        atzr.o(parcel, 36, this.z);
+        atzr.e(parcel, 37, this.A);
+        atzr.e(parcel, 38, this.B);
+        atzr.o(parcel, 39, this.C);
+        atzr.v(parcel, 40, this.D, false);
+        atzr.e(parcel, 41, this.E);
+        atzr.v(parcel, 42, this.F, false);
+        atzr.e(parcel, 43, this.G);
+        atzr.t(parcel, 44, this.H, i, false);
+        atzr.e(parcel, 45, this.I);
+        atzr.y(parcel, 46, this.J, false);
+        atzr.v(parcel, 47, this.K, false);
+        atzr.o(parcel, 48, this.L);
+        atzr.o(parcel, 49, this.M);
+        atzr.y(parcel, 50, this.N, false);
+        atzr.v(parcel, 51, this.O, false);
+        atzr.t(parcel, 52, this.P, i, false);
+        atzr.x(parcel, 53, this.Q, false);
+        atzr.c(parcel, a);
     }
 
     @Deprecated

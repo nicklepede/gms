@@ -9,46 +9,46 @@ import com.google.android.chimera.Service;
 import com.google.android.gms.backup.ApplicationBackupStats;
 import com.google.android.gms.backup.BackupStatsRequestConfig;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.ahih;
-import defpackage.ahip;
-import defpackage.ahir;
-import defpackage.ahiy;
-import defpackage.ahiz;
-import defpackage.ahka;
-import defpackage.ahwd;
-import defpackage.aibb;
-import defpackage.aidd;
-import defpackage.aidg;
-import defpackage.aidh;
-import defpackage.aidk;
-import defpackage.aidn;
-import defpackage.aidt;
-import defpackage.aqup;
-import defpackage.asng;
-import defpackage.bqna;
-import defpackage.eiho;
-import defpackage.fecj;
-import defpackage.flks;
-import defpackage.fllt;
-import defpackage.unx;
+import defpackage.ajix;
+import defpackage.ajjf;
+import defpackage.ajjh;
+import defpackage.ajjo;
+import defpackage.ajjp;
+import defpackage.ajkq;
+import defpackage.ajwt;
+import defpackage.akbr;
+import defpackage.akdt;
+import defpackage.akdw;
+import defpackage.akdx;
+import defpackage.akea;
+import defpackage.aked;
+import defpackage.akej;
+import defpackage.asxe;
+import defpackage.aura;
+import defpackage.bsup;
+import defpackage.ekut;
+import defpackage.fgrc;
+import defpackage.focc;
+import defpackage.fodd;
+import defpackage.wjw;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class BackupStatsChimeraService extends Service {
-    public static final ahwd a = new ahwd("BackupStatsService");
-    public final eiho b = new eiho() { // from class: aklj
-        @Override // defpackage.eiho
+    public static final ajwt a = new ajwt("BackupStatsService");
+    public final ekut b = new ekut() { // from class: ammm
+        @Override // defpackage.ekut
         public final Object apply(Object obj) {
-            return new ahhp((Context) obj);
+            return new ajif((Context) obj);
         }
     };
-    public final aidd c = aidd.a();
+    public final akdt c = akdt.a();
 
     public final boolean a(BackupStatsRequestConfig backupStatsRequestConfig) {
-        if (!aqup.d(this).i(Binder.getCallingUid())) {
+        if (!asxe.d(this).i(Binder.getCallingUid())) {
             a.m("API call is not from Google signed package.", new Object[0]);
             return false;
         }
@@ -59,77 +59,77 @@ public class BackupStatsChimeraService extends Service {
         return false;
     }
 
-    /* JADX WARN: Type inference failed for: r0v3, types: [ahhq, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r0v3, types: [ajig, java.lang.Object] */
     public final ApplicationBackupStats[] b(long j, BackupStatsRequestConfig backupStatsRequestConfig) {
         try {
             Account a2 = this.b.apply(this).a();
-            return c(a2, j, aidd.e(this, a2, "android"), backupStatsRequestConfig);
-        } catch (aidg e) {
+            return c(a2, j, akdt.e(this, a2, "android"), backupStatsRequestConfig);
+        } catch (akdw e) {
             a.g("Failed to get auth token for backup account.", e, new Object[0]);
             return null;
-        } catch (aidn unused) {
+        } catch (aked unused) {
             a.m("There is no backup account.", new Object[0]);
             return null;
         }
     }
 
     public final ApplicationBackupStats[] c(Account account, long j, String str, BackupStatsRequestConfig backupStatsRequestConfig) {
-        fecj v = ahip.a.v();
+        fgrc v = ajjf.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        ahip ahipVar = (ahip) v.b;
-        ahipVar.b |= 1;
-        ahipVar.c = j;
+        ajjf ajjfVar = (ajjf) v.b;
+        ajjfVar.b |= 1;
+        ajjfVar.c = j;
         if (!v.b.L()) {
             v.U();
         }
-        ahip ahipVar2 = (ahip) v.b;
-        ahipVar2.b |= 16;
-        ahipVar2.f = str;
-        fecj v2 = ahih.a.v();
+        ajjf ajjfVar2 = (ajjf) v.b;
+        ajjfVar2.b |= 16;
+        ajjfVar2.f = str;
+        fgrc v2 = ajix.a.v();
         boolean z = backupStatsRequestConfig.a;
         if (!v2.b.L()) {
             v2.U();
         }
-        ahih ahihVar = (ahih) v2.b;
-        ahihVar.b |= 1;
-        ahihVar.d = z;
+        ajix ajixVar = (ajix) v2.b;
+        ajixVar.b |= 1;
+        ajixVar.d = z;
         boolean z2 = backupStatsRequestConfig.b;
         if (!v2.b.L()) {
             v2.U();
         }
-        ahih ahihVar2 = (ahih) v2.b;
-        ahihVar2.b |= 2;
-        ahihVar2.e = z2;
-        boolean z3 = fllt.s() && z;
+        ajix ajixVar2 = (ajix) v2.b;
+        ajixVar2.b |= 2;
+        ajixVar2.e = z2;
+        boolean z3 = fodd.s() && z;
         if (!v2.b.L()) {
             v2.U();
         }
-        ahih ahihVar3 = (ahih) v2.b;
-        ahihVar3.b |= 4;
-        ahihVar3.f = z3;
+        ajix ajixVar3 = (ajix) v2.b;
+        ajixVar3.b |= 4;
+        ajixVar3.f = z3;
         if (!v.b.L()) {
             v.U();
         }
-        ahip ahipVar3 = (ahip) v.b;
-        ahih ahihVar4 = (ahih) v2.Q();
-        ahihVar4.getClass();
-        ahipVar3.o = ahihVar4;
-        ahipVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES;
-        if (flks.c()) {
-            long e = asng.e(this);
+        ajjf ajjfVar3 = (ajjf) v.b;
+        ajix ajixVar4 = (ajix) v2.Q();
+        ajixVar4.getClass();
+        ajjfVar3.o = ajixVar4;
+        ajjfVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES;
+        if (focc.c()) {
+            long e = aura.e(this);
             if (!v.b.L()) {
                 v.U();
             }
-            ahip ahipVar4 = (ahip) v.b;
-            ahipVar4.b |= 2;
-            ahipVar4.d = e;
+            ajjf ajjfVar4 = (ajjf) v.b;
+            ajjfVar4.b |= 2;
+            ajjfVar4.d = e;
         }
         try {
             return (ApplicationBackupStats[]) d(account, v).toArray(new ApplicationBackupStats[0]);
-        } catch (aidh e2) {
-            ahwd ahwdVar = a;
+        } catch (akdx e2) {
+            ajwt ajwtVar = a;
             String message = e2.getMessage();
             StringBuilder sb = new StringBuilder();
             sb.append(message);
@@ -139,44 +139,44 @@ public class BackupStatsChimeraService extends Service {
                 throw null;
             }
             sb.append(i - 1);
-            ahwdVar.f(sb.toString(), new Object[0]);
+            ajwtVar.f(sb.toString(), new Object[0]);
             return null;
-        } catch (aidt e3) {
+        } catch (akej e3) {
             a.f("Transfer exception while getting backup stats ".concat(e3.toString()), new Object[0]);
             return null;
-        } catch (unx e4) {
+        } catch (wjw e4) {
             a.f("Auth exception while getting backup stats ".concat(e4.toString()), new Object[0]);
             return null;
         }
     }
 
-    public final List d(Account account, fecj fecjVar) {
+    public final List d(Account account, fgrc fgrcVar) {
         ArrayList arrayList = new ArrayList();
         try {
-            ahiz c = aibb.a(this).c(account, fecjVar);
-            int b = ahiy.b(c.c);
+            ajjp c = akbr.a(this).c(account, fgrcVar);
+            int b = ajjo.b(c.c);
             if (b != 0) {
                 if (b != 1) {
-                    bqna.b(this).h("com.google", ((ahip) fecjVar.b).f);
-                    int b2 = ahiy.b(c.c);
-                    throw new aidh("Authentication failure on server.", b2 != 0 ? b2 : 1);
+                    bsup.b(this).h("com.google", ((ajjf) fgrcVar.b).f);
+                    int b2 = ajjo.b(c.c);
+                    throw new akdx("Authentication failure on server.", b2 != 0 ? b2 : 1);
                 }
             }
-            for (ahir ahirVar : c.h) {
-                arrayList.add(new ApplicationBackupStats(ahirVar.b, ahirVar.c, ahirVar.d, ahirVar.e, ahirVar.f));
+            for (ajjh ajjhVar : c.h) {
+                arrayList.add(new ApplicationBackupStats(ajjhVar.b, ajjhVar.c, ajjhVar.d, ajjhVar.e, ajjhVar.f));
             }
             return arrayList;
-        } catch (aidk e) {
+        } catch (akea e) {
             a.f("Got backup stats response status : " + e.a, new Object[0]);
-            throw new aidt();
+            throw new akej();
         } catch (IOException e2) {
             a.g("Network exception sending backup stats request.", e2, new Object[0]);
-            throw new aidt();
+            throw new akej();
         }
     }
 
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
-        return new ahka(this);
+        return new ajkq(this);
     }
 }

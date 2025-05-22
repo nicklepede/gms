@@ -7,31 +7,31 @@ import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
 import com.google.android.chimera.BroadcastReceiver;
-import defpackage.asng;
-import defpackage.aspr;
-import defpackage.bhyk;
-import defpackage.calo;
-import defpackage.eavm;
-import defpackage.eavq;
-import defpackage.eawm;
-import defpackage.eawn;
-import defpackage.eaxr;
-import defpackage.eaya;
-import defpackage.eayf;
-import defpackage.eazq;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
+import defpackage.aura;
+import defpackage.autl;
+import defpackage.bkcz;
+import defpackage.ccue;
+import defpackage.edhz;
+import defpackage.edid;
+import defpackage.ediz;
+import defpackage.edja;
+import defpackage.edke;
+import defpackage.edkn;
+import defpackage.edks;
+import defpackage.edmd;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class GcmChimeraBroadcastReceiver extends BroadcastReceiver {
     @Override // com.google.android.chimera.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        eazq.g(context);
-        if (aspr.c(context)) {
-            eavm.c("GCoreUlr", "GCM message received ".concat(String.valueOf(String.valueOf(intent))));
+        edmd.g(context);
+        if (autl.c(context)) {
+            edhz.c("GCoreUlr", "GCM message received ".concat(String.valueOf(String.valueOf(intent))));
             Bundle extras = intent.getExtras();
             if (extras != null) {
                 Iterator<String> it = extras.keySet().iterator();
@@ -39,19 +39,19 @@ public class GcmChimeraBroadcastReceiver extends BroadcastReceiver {
                     String.valueOf(intent.getExtras().get(it.next()));
                 }
             }
-            eavq.g("UlrGcmNotificationReceived");
-            bhyk.a(context);
-            String e = bhyk.e(intent);
+            edid.g("UlrGcmNotificationReceived");
+            bkcz.a(context);
+            String e = bkcz.e(intent);
             if ("send_error".equals(e)) {
-                eavm.f("GCM send error: ".concat(String.valueOf(String.valueOf(intent.getExtras()))));
+                edhz.f("GCM send error: ".concat(String.valueOf(String.valueOf(intent.getExtras()))));
                 return;
             }
             if ("deleted_messages".equals(e)) {
-                eavm.c("GCoreUlr", "GCM server deleted pending messages because they were collapsible.".concat(String.valueOf(String.valueOf(intent.getExtras()))));
+                edhz.c("GCoreUlr", "GCM server deleted pending messages because they were collapsible.".concat(String.valueOf(String.valueOf(intent.getExtras()))));
                 return;
             }
             if ("gcm".equals(e)) {
-                eawn eawnVar = null;
+                edja edjaVar = null;
                 if (intent.hasExtra("ulr_notification")) {
                     String stringExtra = intent.getStringExtra("ulr_notification");
                     if (stringExtra == null || stringExtra.isEmpty()) {
@@ -60,51 +60,51 @@ public class GcmChimeraBroadcastReceiver extends BroadcastReceiver {
                         try {
                             byte[] decode = Base64.decode(stringExtra, 0);
                             try {
-                                fecp y = fecp.y(eawn.a, decode, 0, decode.length, febw.a());
-                                fecp.M(y);
-                                eawn eawnVar2 = (eawn) y;
-                                if ((eawnVar2.b & 1) == 0 || eawnVar2.c.isEmpty()) {
-                                    eavm.f("Received notification missing account name");
+                                fgri y = fgri.y(edja.a, decode, 0, decode.length, fgqp.a());
+                                fgri.M(y);
+                                edja edjaVar2 = (edja) y;
+                                if ((edjaVar2.b & 1) == 0 || edjaVar2.c.isEmpty()) {
+                                    edhz.f("Received notification missing account name");
                                 } else {
-                                    eawnVar = eawnVar2;
+                                    edjaVar = edjaVar2;
                                 }
-                            } catch (fedk e2) {
-                                eavm.g("Error parsing notification", e2);
+                            } catch (fgsd e2) {
+                                edhz.g("Error parsing notification", e2);
                             }
                         } catch (IllegalArgumentException e3) {
-                            eavm.g("Error decoding notification", e3);
+                            edhz.g("Error decoding notification", e3);
                         }
                     }
                 } else {
-                    eavm.f("Dropping non-ULR GCM message");
+                    edhz.f("Dropping non-ULR GCM message");
                 }
-                if (eawnVar != null) {
-                    Account account = new Account(eawnVar.c, "com.google");
-                    eavm.c("GCoreUlr", "Received GCM notification for " + calo.a(account) + " timestamp:" + eawnVar.d);
-                    if ((eawnVar.b & 4) == 0) {
-                        eaxr.g(context, "GcmBroadcastReceiver", account);
-                        eayf eayfVar = new eayf(context);
+                if (edjaVar != null) {
+                    Account account = new Account(edjaVar.c, "com.google");
+                    edhz.c("GCoreUlr", "Received GCM notification for " + ccue.a(account) + " timestamp:" + edjaVar.d);
+                    if ((edjaVar.b & 4) == 0) {
+                        edke.g(context, "GcmBroadcastReceiver", account);
+                        edks edksVar = new edks(context);
                         Intent intent2 = new Intent("com.google.android.location.settings.REMOTE_CHANGED");
                         intent2.putExtra("account", account);
-                        eayfVar.b.sendBroadcast(asng.k(intent2));
-                        eavq.g("UlrGcmSettingsNotification");
+                        edksVar.b.sendBroadcast(aura.k(intent2));
+                        edid.g("UlrGcmSettingsNotification");
                         return;
                     }
-                    eawm eawmVar = eawnVar.e;
-                    if (eawmVar == null) {
-                        eawmVar = eawm.a;
+                    ediz edizVar = edjaVar.e;
+                    if (edizVar == null) {
+                        edizVar = ediz.a;
                     }
-                    if ((eawmVar.b & 1) != 0) {
-                        eavm.c("GCoreUlr", "Changing primary device state for " + calo.a(account) + " to " + eawmVar.c);
-                        boolean z = eawmVar.c;
-                        Intent a = eaya.a(context, "com.google.android.location.reporting.CHANGE_PRIMARY_DEVICE");
+                    if ((edizVar.b & 1) != 0) {
+                        edhz.c("GCoreUlr", "Changing primary device state for " + ccue.a(account) + " to " + edizVar.c);
+                        boolean z = edizVar.c;
+                        Intent a = edkn.a(context, "com.google.android.location.reporting.CHANGE_PRIMARY_DEVICE");
                         a.putExtra("account", account);
                         a.putExtra("isPrimaryDevice", z);
-                        eazq.p(context, a);
+                        edmd.p(context, a);
                     } else {
-                        eavm.f("Received null value for primary device state");
+                        edhz.f("Received null value for primary device state");
                     }
-                    eavq.g("UlrGcmPrimaryDeviceNotification");
+                    edid.g("UlrGcmPrimaryDeviceNotification");
                 }
             }
         }

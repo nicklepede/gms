@@ -4,74 +4,74 @@ import android.app.PendingIntent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import defpackage.a;
-import defpackage.ddoa;
-import defpackage.ddod;
-import defpackage.degq;
-import defpackage.deji;
-import defpackage.denq;
+import defpackage.dfzf;
+import defpackage.dfzi;
 import defpackage.dg;
-import defpackage.fsdd;
-import defpackage.fsds;
+import defpackage.dgrt;
+import defpackage.dgul;
+import defpackage.dgyt;
+import defpackage.fuya;
+import defpackage.fuyp;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class SourceDirectTransferChimeraActivityV2 extends ddoa {
+public class SourceDirectTransferChimeraActivityV2 extends dfzf {
     public static final /* synthetic */ int y = 0;
-    private static final denq z = new denq(new String[]{"SourceDirectTransferActivityV2"});
+    private static final dgyt z = new dgyt(new String[]{"SourceDirectTransferActivityV2"});
 
-    @Override // defpackage.ddoa
+    @Override // defpackage.dfzf
     public final void G(Bundle bundle) {
         int i = 3;
-        if (!this.w && (!fsds.e() || !this.o)) {
+        if (!this.w && (!fuyp.e() || !this.o)) {
             i = this.u ? 8 : j();
         }
-        denq denqVar = z;
-        denqVar.d("startFragment firstState: %d", Integer.valueOf(i));
+        dgyt dgytVar = z;
+        dgytVar.d("startFragment firstState: %d", Integer.valueOf(i));
         if (bundle == null) {
             this.s = i;
             this.n.a(i, 1);
         } else {
             int i2 = bundle.getInt("state", i);
             this.s = i2;
-            denqVar.d("savedInstanceState not null, startFragment state: %d", Integer.valueOf(i2));
+            dgytVar.d("savedInstanceState not null, startFragment state: %d", Integer.valueOf(i2));
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onConfigurationChanged(Configuration configuration) {
-        ddod ddodVar;
-        denq denqVar = z;
-        denqVar.d("onConfigurationChanged()", new Object[0]);
+        dfzi dfziVar;
+        dgyt dgytVar = z;
+        dgytVar.d("onConfigurationChanged()", new Object[0]);
         super.onConfigurationChanged(configuration);
-        if (!fsdd.a.a().j() || (ddodVar = this.n) == null) {
+        if (!fuya.a.lK().j() || (dfziVar = this.n) == null) {
             return;
         }
-        dg dgVar = ddodVar.a;
-        if (dgVar instanceof degq) {
-            denqVar.d("AccountChallengeFragment is visible - reloading", new Object[0]);
-            ((degq) dgVar).y();
-        } else if (dgVar instanceof deji) {
-            denqVar.d("LockScreenFragment is visible - do nothing", new Object[0]);
+        dg dgVar = dfziVar.a;
+        if (dgVar instanceof dgrt) {
+            dgytVar.d("AccountChallengeFragment is visible - reloading", new Object[0]);
+            ((dgrt) dgVar).y();
+        } else if (dgVar instanceof dgul) {
+            dgytVar.d("LockScreenFragment is visible - do nothing", new Object[0]);
         } else {
-            ddodVar.a(this.s, 4);
+            dfziVar.a(this.s, 4);
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         z.d("onSaveInstanceState state: %d", Integer.valueOf(this.s));
         super.onSaveInstanceState(bundle);
         bundle.putInt("state", this.s);
     }
 
-    @Override // defpackage.ddqr
+    @Override // defpackage.dgbw
     public final void y(int i, Bundle bundle) {
-        denq denqVar = z;
-        denqVar.d(a.j(i, "receive result: "), new Object[0]);
+        dgyt dgytVar = z;
+        dgytVar.d(a.j(i, "receive result: "), new Object[0]);
         if (i == 1021) {
             this.i = (PendingIntent) bundle.getParcelable("pendingIntent");
-            denqVar.d("Received own PendingIntent", new Object[0]);
+            dgytVar.d("Received own PendingIntent", new Object[0]);
             return;
         }
         switch (i) {
@@ -80,7 +80,7 @@ public class SourceDirectTransferChimeraActivityV2 extends ddoa {
                 if (arrayList == null) {
                     throw new IllegalArgumentException("Accounts shouldn't be null in EVENT_CHALLENGE_SOURCE. ");
                 }
-                ((degq) this.n.a).z(arrayList, bundle.getString("extraRestoreAccount"));
+                ((dgrt) this.n.a).z(arrayList, bundle.getString("extraRestoreAccount"));
                 return;
             case 1011:
             case 1012:

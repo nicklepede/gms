@@ -2,25 +2,25 @@ package com.google.android.gms.smartdevice.logging;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.arxo;
-import defpackage.dcve;
-import defpackage.dcyf;
-import defpackage.ddta;
-import defpackage.denq;
-import defpackage.edkl;
-import defpackage.fsdg;
+import defpackage.auad;
+import defpackage.dfgj;
+import defpackage.dfjk;
+import defpackage.dgef;
+import defpackage.dgyt;
+import defpackage.efxh;
+import defpackage.fuyd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class SetupWizardFinishedIntentOperation extends IntentOperation {
-    private static final arxo a = new denq(new String[]{"SetupWizardFinishedIntentOperation"});
-    private edkl b;
-    private dcve c;
+    private static final auad a = new dgyt(new String[]{"SetupWizardFinishedIntentOperation"});
+    private efxh b;
+    private dfgj c;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        edkl a2 = edkl.a(getApplicationContext());
-        dcve a3 = dcyf.a(getApplicationContext());
+        efxh a2 = efxh.a(getApplicationContext());
+        dfgj a3 = dfjk.a(getApplicationContext());
         this.b = a2;
         this.c = a3;
     }
@@ -35,13 +35,13 @@ public class SetupWizardFinishedIntentOperation extends IntentOperation {
         if (action == null || !action.equals("com.google.android.gms.smartdevice.logging.SETUP_WIZARD_FINISHED")) {
             a.f("Received unexpected intent action: %s", String.valueOf(action));
         } else {
-            if (fsdg.a.a().e()) {
+            if (fuyd.a.lK().e()) {
                 CleanBufferedLogsService.d(getApplicationContext());
                 return;
             }
-            ddta ddtaVar = new ddta(getApplicationContext(), this.c);
-            ddtaVar.a(this.b, "SMART_SETUP");
-            ddtaVar.a(this.b, "ANDROID_AUTH");
+            dgef dgefVar = new dgef(getApplicationContext(), this.c);
+            dgefVar.a(this.b, "SMART_SETUP");
+            dgefVar.a(this.b, "ANDROID_AUTH");
         }
     }
 }

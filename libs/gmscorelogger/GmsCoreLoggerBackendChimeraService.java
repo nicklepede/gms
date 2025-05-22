@@ -2,49 +2,49 @@ package com.google.android.gms.libs.gmscorelogger;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
 import com.google.android.gms.libs.gmscorelogger.GmsCoreLoggerBackendChimeraService;
-import defpackage.brep;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.eits;
-import defpackage.ejck;
-import defpackage.fmvs;
+import defpackage.btmg;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.elgx;
+import defpackage.elpp;
+import defpackage.fpnq;
 import java.security.SecureRandom;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class GmsCoreLoggerBackendChimeraService extends bxgd {
-    private final eijr a;
-    private final eijr b;
+public class GmsCoreLoggerBackendChimeraService extends bzot {
+    private final ekww a;
+    private final ekww b;
 
     public GmsCoreLoggerBackendChimeraService() {
-        super(new int[]{299}, new String[]{"com.google.android.gms.libs.gmscorelogger.service.START"}, ejck.a, 1, 10, (int) fmvs.a.a().n(), (eits) null);
-        this.a = eijy.a(new eijr() { // from class: brca
-            @Override // defpackage.eijr
-            public final Object a() {
+        super(new int[]{299}, new String[]{"com.google.android.gms.libs.gmscorelogger.service.START"}, elpp.a, 1, 10, (int) fpnq.a.lK().n(), (elgx) null);
+        this.a = ekxd.a(new ekww() { // from class: btjr
+            @Override // defpackage.ekww
+            public final Object lK() {
                 return GmsCoreLoggerBackendChimeraService.this.l();
             }
         });
-        this.b = eijy.a(new eijr() { // from class: brcb
-            @Override // defpackage.eijr
-            public final Object a() {
-                asot asotVar = brhz.a;
-                brhz brhzVar = new brhz(new SecureRandom(), new brhw(GmsCoreLoggerBackendChimeraService.this));
+        this.b = ekxd.a(new ekww() { // from class: btjs
+            @Override // defpackage.ekww
+            public final Object lK() {
+                ausn ausnVar = btpq.a;
+                btpq btpqVar = new btpq(new SecureRandom(), new btpn(GmsCoreLoggerBackendChimeraService.this));
                 try {
-                    brhzVar.b.c();
-                    return brhzVar;
-                } catch (brab e) {
-                    ((ejhf) ((ejhf) ((ejhf) brhz.a.j()).s(e)).ah((char) 5409)).x("Failed to clear expired identifiers");
-                    return brhzVar;
+                    btpqVar.b.c();
+                    return btpqVar;
+                } catch (bths e) {
+                    ((eluo) ((eluo) ((eluo) btpq.a.j()).s(e)).ai((char) 5423)).x("Failed to clear expired identifiers");
+                    return btpqVar;
                 }
             }
         });
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new brep((bxgo) this.a.a(), this.b));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new btmg((bzpe) this.a.lK(), this.b));
     }
 }

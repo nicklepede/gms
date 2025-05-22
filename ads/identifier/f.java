@@ -6,26 +6,26 @@ import android.util.Log;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.internal.MethodInvocation;
 import com.google.android.gms.common.internal.TelemetryData;
-import defpackage.aqxe;
-import defpackage.arwx;
-import defpackage.arwy;
-import defpackage.arxm;
-import defpackage.dfah;
+import defpackage.aszt;
+import defpackage.atzm;
+import defpackage.atzn;
+import defpackage.auab;
+import defpackage.dhln;
 import j$.time.Duration;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicLong;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class f {
     public static volatile f a;
     public static final Object b = new Object();
     private static final Duration d = Duration.ofMinutes(30);
     public final AtomicLong c = new AtomicLong(-1);
-    private final arwx e;
+    private final atzm e;
 
     public f(Context context) {
-        this.e = new arxm(context, new arwy("ads_identifier:api"));
+        this.e = new auab(context, new atzn("ads_identifier:api"));
     }
 
     public final synchronized void a(int i, int i2, long j, long j2, int i3) {
@@ -35,12 +35,12 @@ public final class f {
         if (atomicLong.get() != -1 && elapsedRealtime - atomicLong.get() <= d.toMillis()) {
             return;
         }
-        this.e.a(new TelemetryData(0, Arrays.asList(new MethodInvocation(i, i2, 0, j, j2, null, null, 0, i3)))).y(new dfah() { // from class: com.google.android.gms.ads.identifier.e
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        this.e.a(new TelemetryData(0, Arrays.asList(new MethodInvocation(i, i2, 0, j, j2, null, null, 0, i3)))).y(new dhln() { // from class: com.google.android.gms.ads.identifier.e
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 ConnectionResult connectionResult;
                 Log.i("AdvertisingIdClient", "getting error as ".concat(String.valueOf(exc.getMessage())));
-                if ((exc instanceof aqxe) && (connectionResult = ((aqxe) exc).a.l) != null && connectionResult.c == 24) {
+                if ((exc instanceof aszt) && (connectionResult = ((aszt) exc).a.l) != null && connectionResult.c == 24) {
                     f.this.c.set(elapsedRealtime);
                 }
             }

@@ -5,31 +5,31 @@ import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.auth.magictether.AppContextProvider;
 import com.google.android.gms.magictether.logging.MetricTaskDurationTimerIntentOperation;
 import defpackage.a;
-import defpackage.asot;
-import defpackage.cblj;
-import defpackage.cblw;
-import defpackage.cbmc;
-import defpackage.cbmg;
-import defpackage.cbnz;
-import defpackage.cboa;
-import defpackage.cboj;
-import defpackage.cbok;
-import defpackage.cbon;
-import defpackage.cbou;
-import defpackage.cbpv;
-import defpackage.cbpw;
-import defpackage.cbta;
-import defpackage.cbtb;
-import defpackage.cbuk;
-import defpackage.cbum;
-import defpackage.dfae;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.eiie;
-import defpackage.ejhf;
-import defpackage.feda;
-import defpackage.fpzg;
-import defpackage.fpzk;
+import defpackage.ausn;
+import defpackage.cdub;
+import defpackage.cduo;
+import defpackage.cduu;
+import defpackage.cduy;
+import defpackage.cdwr;
+import defpackage.cdws;
+import defpackage.cdxb;
+import defpackage.cdxc;
+import defpackage.cdxf;
+import defpackage.cdxm;
+import defpackage.cdyn;
+import defpackage.cdyo;
+import defpackage.cebs;
+import defpackage.cebt;
+import defpackage.cedc;
+import defpackage.cede;
+import defpackage.dhlk;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.ekvj;
+import defpackage.eluo;
+import defpackage.fgrt;
+import defpackage.fstc;
+import defpackage.fstg;
 import j$.util.Objects;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -37,199 +37,199 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class InstantHotspotIntentOperation extends IntentOperation {
-    private static final asot a = cbta.a("InstantHotspotIntentOperation");
+    private static final ausn a = cebs.a("InstantHotspotIntentOperation");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        dfaq dfaqVar;
-        if (!cbpv.c(fpzk.i())) {
-            ((ejhf) a.h()).x("NearbyTether client flag is off");
+        dhlw dhlwVar;
+        if (!cdyn.c(fstg.i())) {
+            ((eluo) a.h()).x("NearbyTether client flag is off");
             return;
         }
         if (!intent.hasExtra("EXTRA_DEVICE_ID")) {
-            ((ejhf) a.h()).B("Missing extras in: %s", intent);
+            ((eluo) a.h()).B("Missing extras in: %s", intent);
         }
-        final cblw a2 = cblw.a();
+        final cduo a2 = cduo.a();
         if (a2 == null) {
-            ((ejhf) a.i()).x("ClientOrchestrator was null, dropping intent");
+            ((eluo) a.i()).x("ClientOrchestrator was null, dropping intent");
             return;
         }
         ArrayList arrayList = null;
         if (Objects.equals(intent.getAction(), "com.google.android.gms.magictether.CONNECT_TO_HOTSPOT_NETWORK")) {
-            final long a3 = cbnz.a(intent);
-            if (fpzg.f()) {
-                new cbpw(AppContextProvider.a(), (short[]) null).g("KEY_CLIENT_LAST_ACTIVE_TIMESTAMP", System.currentTimeMillis());
+            final long a3 = cdwr.a(intent);
+            if (fstc.e()) {
+                new cdyo(AppContextProvider.a(), (short[]) null).g("KEY_CLIENT_LAST_ACTIVE_TIMESTAMP", System.currentTimeMillis());
             }
-            cbtb.w();
+            cebt.w();
             synchronized (a2.f) {
-                asot asotVar = cblw.a;
-                ((ejhf) asotVar.h()).A("Trying to handleConnectToHotspot with device %s ", a3);
-                cboj b = a2.b(a3, 2, 3, 6);
+                ausn ausnVar = cduo.a;
+                ((eluo) ausnVar.h()).A("Trying to handleConnectToHotspot with device %s ", a3);
+                cdxb b = a2.b(a3, 2, 3, 6);
                 if (b == null) {
-                    ((ejhf) asotVar.j()).A("Failed to handleConnectToHotspot with device %s ", a3);
+                    ((eluo) ausnVar.j()).A("Failed to handleConnectToHotspot with device %s ", a3);
                     return;
                 }
                 b.c(4);
                 MetricTaskDurationTimerIntentOperation.c(AppContextProvider.a(), "magictether_performance_nearby_connect_to_hotspot_duration");
-                final cblj cbljVar = a2.e;
-                ((ejhf) cblj.a.h()).A("requestConnectToHotspot(%s)", a3);
-                cbmg cbmgVar = cbljVar.b;
-                synchronized (cbmgVar) {
-                    cbmc a4 = cbmgVar.a(a3);
+                final cdub cdubVar = a2.e;
+                ((eluo) cdub.a.h()).A("requestConnectToHotspot(%s)", a3);
+                cduy cduyVar = cdubVar.b;
+                synchronized (cduyVar) {
+                    cduu a4 = cduyVar.a(a3);
                     if (a4 == null) {
-                        dfaqVar = dfbl.c(new IllegalStateException(a.D(a3, "ERROR: No PresenceDevice found for id: ")));
+                        dhlwVar = dhmr.c(new IllegalStateException(a.C(a3, "ERROR: No PresenceDevice found for id: ")));
                     } else {
-                        final cbou cbouVar = new cbou(cbljVar.d, a4.b, cbljVar.c);
-                        a4.a(cbouVar);
-                        dfaq h = cbouVar.h();
-                        h.x(new dfae() { // from class: cblc
-                            @Override // defpackage.dfae
-                            public final void hr(dfaq dfaqVar2) {
-                                cbmg cbmgVar2 = cblj.this.b;
+                        final cdxm cdxmVar = new cdxm(cdubVar.d, a4.b, cdubVar.c);
+                        a4.a(cdxmVar);
+                        dhlw h = cdxmVar.h();
+                        h.x(new dhlk() { // from class: cdtu
+                            @Override // defpackage.dhlk
+                            public final void hH(dhlw dhlwVar2) {
+                                cduy cduyVar2 = cdub.this.b;
                                 long j = a3;
-                                cbou cbouVar2 = cbouVar;
-                                synchronized (cbmgVar2) {
-                                    cbmc a5 = cbmgVar2.a(j);
+                                cdxm cdxmVar2 = cdxmVar;
+                                synchronized (cduyVar2) {
+                                    cduu a5 = cduyVar2.a(j);
                                     if (a5 == null) {
-                                        ((ejhf) cblj.a.j()).A("Got ConnectTethering result for device that is not discovered: deviceId=%s", j);
+                                        ((eluo) cdub.a.j()).A("Got ConnectTethering result for device that is not discovered: deviceId=%s", j);
                                     } else {
-                                        a5.b(cbouVar2);
+                                        a5.b(cdxmVar2);
                                     }
                                 }
                             }
                         });
-                        dfaqVar = h;
+                        dhlwVar = h;
                     }
                 }
-                dfaqVar.x(new dfae() { // from class: cbll
+                dhlwVar.x(new dhlk() { // from class: cdud
                     /* JADX WARN: Multi-variable type inference failed */
-                    @Override // defpackage.dfae
-                    public final void hr(dfaq dfaqVar2) {
-                        asot asotVar2 = cblw.a;
-                        ((ejhf) asotVar2.h()).x("Request to connect to hotspot completed");
-                        cblw cblwVar = cblw.this;
+                    @Override // defpackage.dhlk
+                    public final void hH(dhlw dhlwVar2) {
+                        ausn ausnVar2 = cduo.a;
+                        ((eluo) ausnVar2.h()).x("Request to connect to hotspot completed");
+                        cduo cduoVar = cduo.this;
                         long j = a3;
-                        if (!dfaqVar2.m()) {
-                            if (dfaqVar2.h() instanceof cbpl) {
-                                ((ejhf) asotVar2.h()).x("Cancelled connecting to hotspot due to duplicate worker added.");
+                        if (!dhlwVar2.m()) {
+                            if (dhlwVar2.h() instanceof cdyd) {
+                                ((eluo) ausnVar2.h()).x("Cancelled connecting to hotspot due to duplicate worker added.");
                                 return;
                             }
-                            ((ejhf) asotVar2.j()).A("Failed to request connection to hotspot for %s", j);
+                            ((eluo) ausnVar2.j()).A("Failed to request connection to hotspot for %s", j);
                             MetricTaskDurationTimerIntentOperation.a(AppContextProvider.a(), "magictether_performance_nearby_connect_to_hotspot_duration");
-                            synchronized (cblwVar.f) {
-                                cboj b2 = cblwVar.b(j, 4);
+                            synchronized (cduoVar.f) {
+                                cdxb b2 = cduoVar.b(j, 4);
                                 if (b2 != null) {
-                                    ((ejhf) asotVar2.h()).A("Updating device %s to error state", j);
+                                    ((eluo) ausnVar2.h()).A("Updating device %s to error state", j);
                                     b2.e();
                                 } else {
-                                    ((ejhf) asotVar2.j()).A("Cannot find device %s  to update to error state", j);
+                                    ((eluo) ausnVar2.j()).A("Cannot find device %s  to update to error state", j);
                                 }
                             }
-                            cblwVar.o();
+                            cduoVar.o();
                             return;
                         }
-                        cbtx cbtxVar = (cbtx) dfaqVar2.i();
-                        if ((cbtxVar.b & 16) != 0) {
-                            cbue cbueVar = cbtxVar.g;
-                            if (cbueVar == null) {
-                                cbueVar = cbue.a;
+                        cecp cecpVar = (cecp) dhlwVar2.i();
+                        if ((cecpVar.b & 16) != 0) {
+                            cecw cecwVar = cecpVar.g;
+                            if (cecwVar == null) {
+                                cecwVar = cecw.a;
                             }
-                            int i = cbueVar.b;
+                            int i = cecwVar.b;
                             if ((i & 1) != 0) {
-                                int i2 = cbueVar.c;
-                                cbud b3 = cbud.b(i2);
+                                int i2 = cecwVar.c;
+                                cecv b3 = cecv.b(i2);
                                 if (b3 == null) {
-                                    b3 = cbud.STATUS_CODE_UNKNOWN;
+                                    b3 = cecv.STATUS_CODE_UNKNOWN;
                                 }
-                                if (b3 != cbud.HOTSPOT_ACTIVE) {
-                                    ejhf ejhfVar = (ejhf) cblw.a.j();
-                                    cbud b4 = cbud.b(i2);
+                                if (b3 != cecv.HOTSPOT_ACTIVE) {
+                                    eluo eluoVar = (eluo) cduo.a.j();
+                                    cecv b4 = cecv.b(i2);
                                     if (b4 == null) {
-                                        b4 = cbud.STATUS_CODE_UNKNOWN;
+                                        b4 = cecv.STATUS_CODE_UNKNOWN;
                                     }
-                                    ejhfVar.z("Received connectTetheringResponse with invalid status code %s", b4.f);
+                                    eluoVar.z("Received connectTetheringResponse with invalid status code %s", b4.f);
                                 } else if ((i & 8) == 0) {
-                                    ((ejhf) cblw.a.j()).x("Received connectTetheringResponse with no hotspot ssid");
-                                } else if ((i & 32) == 0 && !fpzk.q()) {
-                                    ((ejhf) cblw.a.j()).x("Received connectTetheringResponse with no hotspot password");
-                                } else if (cbueVar.h.size() == 0) {
-                                    ((ejhf) cblw.a.j()).x("Received connectTetheringResponse with no hotspot security type");
+                                    ((eluo) cduo.a.j()).x("Received connectTetheringResponse with no hotspot ssid");
+                                } else if ((i & 32) == 0 && !fstg.q()) {
+                                    ((eluo) cduo.a.j()).x("Received connectTetheringResponse with no hotspot password");
+                                } else if (cecwVar.h.size() == 0) {
+                                    ((eluo) cduo.a.j()).x("Received connectTetheringResponse with no hotspot security type");
                                 } else {
-                                    cbum b5 = cbum.b(cbueVar.h.d(0));
+                                    cede b5 = cede.b(cecwVar.h.d(0));
                                     if (b5 == null) {
-                                        b5 = cbum.SECURITY_TYPE_UNKNOWN;
+                                        b5 = cede.SECURITY_TYPE_UNKNOWN;
                                     }
-                                    Map map = cblwVar.f;
-                                    int a5 = cboa.a(b5);
+                                    Map map = cduoVar.f;
+                                    int a5 = cdws.a(b5);
                                     synchronized (map) {
-                                        cboj b6 = cblwVar.b(j, 4);
+                                        cdxb b6 = cduoVar.b(j, 4);
                                         if (b6 == null) {
-                                            ((ejhf) cblw.a.j()).x("Received connectTetheringResponse in invalid network state");
+                                            ((eluo) cduo.a.j()).x("Received connectTetheringResponse in invalid network state");
                                         } else {
-                                            b6.g = cbueVar;
-                                            cblwVar.p.put(Long.valueOf(j), Long.valueOf(System.currentTimeMillis()));
-                                            boolean m = fpzk.x() ? cblwVar.d.m(cbueVar.f, cbueVar.i, cbueVar.j, a5, j) : cblwVar.d.l(cbueVar.f, cbueVar.i, cbueVar.j, a5);
-                                            ((ejhf) cblw.a.h()).B("Result of trying to connect to hotspot: %s", Boolean.valueOf(m));
-                                            cblwVar.g.d("magictether_nearby_connect_to_hotspot_success", !m);
+                                            b6.g = cecwVar;
+                                            cduoVar.p.put(Long.valueOf(j), Long.valueOf(System.currentTimeMillis()));
+                                            boolean m = fstg.x() ? cduoVar.d.m(cecwVar.f, cecwVar.i, cecwVar.j, a5, j) : cduoVar.d.l(cecwVar.f, cecwVar.i, cecwVar.j, a5);
+                                            ((eluo) cduo.a.h()).B("Result of trying to connect to hotspot: %s", Boolean.valueOf(m));
+                                            cduoVar.g.d("magictether_nearby_connect_to_hotspot_success", !m);
                                             if (m != 0) {
-                                                Timer timer = cblwVar.i;
+                                                Timer timer = cduoVar.i;
                                                 synchronized (timer) {
-                                                    TimerTask timerTask = cblwVar.m;
+                                                    TimerTask timerTask = cduoVar.m;
                                                     if (timerTask != null) {
                                                         timerTask.cancel();
                                                     }
-                                                    cblwVar.m = new cblp(cblwVar, j);
-                                                    timer.schedule(cblwVar.m, fpzk.a.a().c());
+                                                    cduoVar.m = new cduh(cduoVar, j);
+                                                    timer.schedule(cduoVar.m, fstg.a.lK().c());
                                                 }
                                                 MetricTaskDurationTimerIntentOperation.e(AppContextProvider.a(), "magictether_performance_nearby_connect_to_hotspot_duration");
-                                                cblwVar.o();
+                                                cduoVar.o();
                                             }
                                         }
                                     }
                                 }
                             } else {
-                                ((ejhf) cblw.a.j()).x("Received connectTetheringResponse with no status code");
+                                ((eluo) cduo.a.j()).x("Received connectTetheringResponse with no status code");
                             }
                         } else {
-                            ((ejhf) cblw.a.j()).x("Received connectTetheringResponse with no hotspot status");
+                            ((eluo) cduo.a.j()).x("Received connectTetheringResponse with no hotspot status");
                         }
                         MetricTaskDurationTimerIntentOperation.a(AppContextProvider.a(), "magictether_performance_nearby_connect_to_hotspot_duration");
-                        synchronized (cblwVar.f) {
-                            cboj b7 = cblwVar.b(j, 4);
+                        synchronized (cduoVar.f) {
+                            cdxb b7 = cduoVar.b(j, 4);
                             if (b7 == null) {
-                                ((ejhf) cblw.a.j()).A("Failed to find valid connecting device with id %s ", j);
-                            } else if ((cbtxVar.b & 16) != 0) {
-                                cbue cbueVar2 = cbtxVar.g;
-                                if (cbueVar2 == null) {
-                                    cbueVar2 = cbue.a;
+                                ((eluo) cduo.a.j()).A("Failed to find valid connecting device with id %s ", j);
+                            } else if ((cecpVar.b & 16) != 0) {
+                                cecw cecwVar2 = cecpVar.g;
+                                if (cecwVar2 == null) {
+                                    cecwVar2 = cecw.a;
                                 }
-                                if ((cbueVar2.b & 1) != 0) {
-                                    eiuu eiuuVar = cblw.b;
-                                    cbud b8 = cbud.b(cbueVar2.c);
+                                if ((cecwVar2.b & 1) != 0) {
+                                    elhz elhzVar = cduo.b;
+                                    cecv b8 = cecv.b(cecwVar2.c);
                                     if (b8 == null) {
-                                        b8 = cbud.STATUS_CODE_UNKNOWN;
+                                        b8 = cecv.STATUS_CODE_UNKNOWN;
                                     }
-                                    if (eiuuVar.contains(b8)) {
+                                    if (elhzVar.contains(b8)) {
                                         b7.f();
                                     } else {
-                                        eiuu eiuuVar2 = cblw.c;
-                                        cbud b9 = cbud.b(cbueVar2.c);
+                                        elhz elhzVar2 = cduo.c;
+                                        cecv b9 = cecv.b(cecwVar2.c);
                                         if (b9 == null) {
-                                            b9 = cbud.STATUS_CODE_UNKNOWN;
+                                            b9 = cecv.STATUS_CODE_UNKNOWN;
                                         }
-                                        if (eiuuVar2.contains(b9)) {
+                                        if (elhzVar2.contains(b9)) {
                                             b7.h = 2;
                                             b7.c = 3;
                                         } else {
-                                            ejhf ejhfVar2 = (ejhf) cblw.a.j();
-                                            cbud b10 = cbud.b(cbueVar2.c);
+                                            eluo eluoVar2 = (eluo) cduo.a.j();
+                                            cecv b10 = cecv.b(cecwVar2.c);
                                             if (b10 == null) {
-                                                b10 = cbud.STATUS_CODE_UNKNOWN;
+                                                b10 = cecv.STATUS_CODE_UNKNOWN;
                                             }
-                                            ejhfVar2.z("Failed to handle InstantHotspotStatusCode %s", b10.f);
+                                            eluoVar2.z("Failed to handle InstantHotspotStatusCode %s", b10.f);
                                             b7.f();
                                         }
                                     }
@@ -237,13 +237,13 @@ public class InstantHotspotIntentOperation extends IntentOperation {
                                     b7.e();
                                 }
                             } else {
-                                ((ejhf) cblw.a.j()).A("ConnectTetheringResponse for %s has no instant hotspot status", j);
+                                ((eluo) cduo.a.j()).A("ConnectTetheringResponse for %s has no instant hotspot status", j);
                                 b7.e();
                             }
                         }
-                        cblwVar.p.remove(Long.valueOf(j));
+                        cduoVar.p.remove(Long.valueOf(j));
                         MetricTaskDurationTimerIntentOperation.e(AppContextProvider.a(), "magictether_performance_nearby_connect_to_hotspot_duration");
-                        cblwVar.o();
+                        cduoVar.o();
                     }
                 });
                 a2.o();
@@ -251,11 +251,11 @@ public class InstantHotspotIntentOperation extends IntentOperation {
             }
         }
         if (Objects.equals(intent.getAction(), "com.google.android.gms.magictether.DISCONNECT_FROM_HOTSPOT_NETWORK")) {
-            a2.e(cbnz.a(intent));
+            a2.e(cdwr.a(intent));
             return;
         }
         if (Objects.equals(intent.getAction(), "com.google.android.gms.magictether.CANCEL_CONNECT_TO_HOTSPOT_NETWORK")) {
-            long a5 = cbnz.a(intent);
+            long a5 = cdwr.a(intent);
             synchronized (a2.i) {
                 TimerTask timerTask = a2.m;
                 if (timerTask != null) {
@@ -264,24 +264,24 @@ public class InstantHotspotIntentOperation extends IntentOperation {
                 }
             }
             synchronized (a2.f) {
-                asot asotVar2 = cblw.a;
-                ((ejhf) asotVar2.h()).A("Trying to handleCancelConnectToHotspot with device %s ", a5);
-                cboj b2 = a2.b(a5, 5, 4);
+                ausn ausnVar2 = cduo.a;
+                ((eluo) ausnVar2.h()).A("Trying to handleCancelConnectToHotspot with device %s ", a5);
+                cdxb b2 = a2.b(a5, 5, 4);
                 if (b2 == null) {
-                    ((ejhf) asotVar2.j()).A("Failed to handleCancelConnectToHotspot with device %s ", a5);
+                    ((eluo) ausnVar2.j()).A("Failed to handleCancelConnectToHotspot with device %s ", a5);
                     return;
                 }
                 int i = b2.c;
                 if (i != 4) {
                     if (i != 5) {
-                        ((ejhf) asotVar2.i()).z("Got invalid connectionState when trying to cancel: %s", i);
+                        ((eluo) ausnVar2.i()).z("Got invalid connectionState when trying to cancel: %s", i);
                         return;
                     } else {
                         a2.e(a5);
                         return;
                     }
                 }
-                if (fpzk.x()) {
+                if (fstg.x()) {
                     a2.d.i(a5);
                 } else {
                     a2.d.j();
@@ -293,38 +293,38 @@ public class InstantHotspotIntentOperation extends IntentOperation {
             }
         }
         if (Objects.equals(intent.getAction(), "com.google.android.gms.magictether.ACTION_CLIENT_DISMISS_HOTSPOT_AVAILABLE_NOTIFICATION")) {
-            ((ejhf) cblw.a.h()).x("User dismiss the hotspot available notification!");
-            if (fpzk.l()) {
-                a2.k.c(cblw.p());
+            ((eluo) cduo.a.h()).x("User dismiss the hotspot available notification!");
+            if (fstg.l()) {
+                a2.k.c(cduo.p());
                 return;
             } else {
                 a2.j.c(System.currentTimeMillis());
                 return;
             }
         }
-        if (cbpv.b() && Objects.equals(intent.getAction(), "com.google.android.gms.magictether.CONNECT_TO_KNOWN_NETWORK")) {
-            long a6 = cbnz.a(intent);
-            if (!cbpv.b()) {
-                ((ejhf) cblw.a.i()).x("Wifi sharing is not enabled in connectToKnownNetwork");
+        if (cdyn.b() && Objects.equals(intent.getAction(), "com.google.android.gms.magictether.CONNECT_TO_KNOWN_NETWORK")) {
+            long a6 = cdwr.a(intent);
+            if (!cdyn.b()) {
+                ((eluo) cduo.a.i()).x("Wifi sharing is not enabled in connectToKnownNetwork");
                 return;
             }
             a2.g.l(1);
             synchronized (a2.f) {
-                asot asotVar3 = cblw.a;
-                ((ejhf) asotVar3.h()).A("Trying to connectToKnownNetwork with deviceId %s ", a6);
-                cbok c = a2.c(a6, 2, 3, 6);
+                ausn ausnVar3 = cduo.a;
+                ((eluo) ausnVar3.h()).A("Trying to connectToKnownNetwork with deviceId %s ", a6);
+                cdxc c = a2.c(a6, 2, 3, 6);
                 if (c == null) {
-                    ((ejhf) asotVar3.j()).A("Failed to find network with deviceId %s ", a6);
+                    ((eluo) ausnVar3.j()).A("Failed to find network with deviceId %s ", a6);
                     return;
                 }
                 String e = c.e();
-                cbuk cbukVar = c.g;
-                String str = (cbukVar == null || (cbukVar.c & 4) == 0) ? null : cbukVar.f;
-                if (cbukVar != null) {
+                cedc cedcVar = c.g;
+                String str = (cedcVar == null || (cedcVar.c & 4) == 0) ? null : cedcVar.f;
+                if (cedcVar != null) {
                     arrayList = new ArrayList();
-                    Iterator<E> it = new feda(c.g.g, cbuk.a).iterator();
+                    Iterator<E> it = new fgrt(c.g.g, cedc.a).iterator();
                     while (it.hasNext()) {
-                        arrayList.add(Integer.valueOf(cboa.a((cbum) it.next())));
+                        arrayList.add(Integer.valueOf(cdws.a((cede) it.next())));
                     }
                 }
                 ArrayList arrayList2 = arrayList;
@@ -339,47 +339,47 @@ public class InstantHotspotIntentOperation extends IntentOperation {
                 return;
             }
         }
-        if (!cbpv.b() || !Objects.equals(intent.getAction(), "com.google.android.gms.magictether.CANCEL_CONNECT_TO_KNOWN_NETWORK")) {
-            if (!cbpv.b() || !Objects.equals(intent.getAction(), "com.google.android.gms.magictether.DISMISS_WIFI_AVAILABLE_NOTIFICATION")) {
-                ((ejhf) a.j()).B("Unknown intent action in: %s", intent);
+        if (!cdyn.b() || !Objects.equals(intent.getAction(), "com.google.android.gms.magictether.CANCEL_CONNECT_TO_KNOWN_NETWORK")) {
+            if (!cdyn.b() || !Objects.equals(intent.getAction(), "com.google.android.gms.magictether.DISMISS_WIFI_AVAILABLE_NOTIFICATION")) {
+                ((eluo) a.j()).B("Unknown intent action in: %s", intent);
                 return;
             }
-            if (!cbpv.b()) {
-                ((ejhf) cblw.a.i()).x("Wifi sharing is not enabled in handleDismissWifiAvailableNotification");
+            if (!cdyn.b()) {
+                ((eluo) cduo.a.i()).x("Wifi sharing is not enabled in handleDismissWifiAvailableNotification");
                 return;
             }
-            ((ejhf) cblw.a.h()).x("User dismiss the wifi available notification!");
-            if (fpzk.l()) {
-                a2.l.c(cblw.p());
+            ((eluo) cduo.a.h()).x("User dismiss the wifi available notification!");
+            if (fstg.l()) {
+                a2.l.c(cduo.p());
                 return;
             } else {
                 a2.j.c(System.currentTimeMillis());
                 return;
             }
         }
-        long a7 = cbnz.a(intent);
-        if (!cbpv.b()) {
-            ((ejhf) cblw.a.i()).x("Wifi sharing is not enabled in handleCancelConnectToKnownNetwork");
+        long a7 = cdwr.a(intent);
+        if (!cdyn.b()) {
+            ((eluo) cduo.a.i()).x("Wifi sharing is not enabled in handleCancelConnectToKnownNetwork");
             return;
         }
         synchronized (a2.f) {
-            asot asotVar4 = cblw.a;
-            ((ejhf) asotVar4.h()).A("Trying to handleCancelConnectToKnownNetwork with deviceId %s ", a7);
-            cbok c2 = a2.c(a7, 4, 5);
+            ausn ausnVar4 = cduo.a;
+            ((eluo) ausnVar4.h()).A("Trying to handleCancelConnectToKnownNetwork with deviceId %s ", a7);
+            cdxc c2 = a2.c(a7, 4, 5);
             if (c2 == null) {
-                ((ejhf) asotVar4.j()).A("Failed to find network with deviceId %s ", a7);
+                ((eluo) ausnVar4.j()).A("Failed to find network with deviceId %s ", a7);
                 return;
             }
-            cbon cbonVar = a2.d;
-            eiie eiieVar = cbonVar.f;
-            eiie eiieVar2 = cbon.a;
-            if (eiieVar.equals(eiieVar2)) {
-                ((ejhf) ((ejhf) cbon.b.j()).ah((char) 6056)).x("No connected wifi network when trying to cancel");
-            } else if (((Long) eiieVar.b).longValue() != a7) {
-                ((ejhf) ((ejhf) cbon.b.j()).ah((char) 6055)).x("Tried to cancel connection with invalid deviceId");
+            cdxf cdxfVar = a2.d;
+            ekvj ekvjVar = cdxfVar.f;
+            ekvj ekvjVar2 = cdxf.a;
+            if (ekvjVar.equals(ekvjVar2)) {
+                ((eluo) ((eluo) cdxf.b.j()).ai((char) 6075)).x("No connected wifi network when trying to cancel");
+            } else if (((Long) ekvjVar.b).longValue() != a7) {
+                ((eluo) ((eluo) cdxf.b.j()).ai((char) 6074)).x("Tried to cancel connection with invalid deviceId");
             } else {
-                cbonVar.f = eiieVar2;
-                if (cbonVar.t(((Integer) eiieVar.a).intValue())) {
+                cdxfVar.f = ekvjVar2;
+                if (cdxfVar.t(((Integer) ekvjVar.a).intValue())) {
                     c2.c = 6;
                     MetricTaskDurationTimerIntentOperation.a(AppContextProvider.a(), "magictether_performance_nearby_connect_to_wifi_duration");
                 }

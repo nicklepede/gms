@@ -4,16 +4,16 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.car.display.CarDisplayId;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.alah;
-import defpackage.arxc;
-import defpackage.eitj;
+import defpackage.anbs;
+import defpackage.atzr;
+import defpackage.elgo;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CarDisplayLayoutConfig extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new alah();
+    public static final Parcelable.Creator CREATOR = new anbs();
     public final CarDisplayId a;
     public final String b;
     private final List c;
@@ -46,10 +46,10 @@ public class CarDisplayLayoutConfig extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.y(parcel, 2, eitj.i(this.c), false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.y(parcel, 2, elgo.i(this.c), false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.c(parcel, a);
     }
 }

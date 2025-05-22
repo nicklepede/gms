@@ -10,32 +10,32 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.google.android.gms.R;
-import defpackage.dmij;
-import defpackage.dmik;
-import defpackage.dmil;
-import defpackage.ijv;
-import defpackage.qfp;
+import defpackage.dotv;
+import defpackage.dotw;
+import defpackage.dotx;
+import defpackage.ill;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class WearableManageSpaceChimeraActivity extends qfp implements AdapterView.OnItemClickListener, View.OnClickListener {
+public class WearableManageSpaceChimeraActivity extends ryt implements AdapterView.OnItemClickListener, View.OnClickListener {
     public View j;
     public TextView k;
     public Button l;
     public ListView m;
-    private dmil n;
-    private dmik o;
+    private dotx n;
+    private dotw o;
 
     public final void a() {
         this.j.setVisibility(0);
         this.l.setEnabled(false);
-        dmil dmilVar = this.n;
-        if (dmilVar != null) {
-            dmilVar.cancel(true);
+        dotx dotxVar = this.n;
+        if (dotxVar != null) {
+            dotxVar.cancel(true);
         }
-        dmil dmilVar2 = new dmil(this);
-        this.n = dmilVar2;
-        dmilVar2.execute(new Void[0]);
+        dotx dotxVar2 = new dotx(this);
+        this.n = dotxVar2;
+        dotxVar2.execute(new Void[0]);
     }
 
     @Override // android.view.View.OnClickListener
@@ -45,17 +45,17 @@ public class WearableManageSpaceChimeraActivity extends qfp implements AdapterVi
             button.setEnabled(false);
             this.j.setVisibility(0);
             this.l.setEnabled(false);
-            dmik dmikVar = this.o;
-            if (dmikVar != null) {
-                dmikVar.cancel(true);
+            dotw dotwVar = this.o;
+            if (dotwVar != null) {
+                dotwVar.cancel(true);
             }
-            dmik dmikVar2 = new dmik(this);
-            this.o = dmikVar2;
-            dmikVar2.execute(new Void[0]);
+            dotw dotwVar2 = new dotw(this);
+            this.o = dotwVar2;
+            dotwVar2.execute(new Void[0]);
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         getWindow();
@@ -71,9 +71,9 @@ public class WearableManageSpaceChimeraActivity extends qfp implements AdapterVi
 
     @Override // android.widget.AdapterView.OnItemClickListener
     public final void onItemClick(AdapterView adapterView, View view, int i, long j) {
-        dmij dmijVar = (dmij) this.m.getAdapter();
-        if (dmijVar != null && i >= 0 && i < dmijVar.getCount()) {
-            String str = dmijVar.getItem(i).a;
+        dotv dotvVar = (dotv) this.m.getAdapter();
+        if (dotvVar != null && i >= 0 && i < dotvVar.getCount()) {
+            String str = dotvVar.getItem(i).a;
             Intent intent = new Intent();
             intent.setAction("android.settings.APPLICATION_DETAILS_SETTINGS");
             intent.setData(Uri.fromParts("package", str, null));
@@ -81,31 +81,31 @@ public class WearableManageSpaceChimeraActivity extends qfp implements AdapterVi
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != 16908332) {
             return super.onOptionsItemSelected(menuItem);
         }
-        ijv.e(getContainerActivity());
+        ill.e(getContainerActivity());
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
-        dmil dmilVar = this.n;
-        if (dmilVar != null) {
-            dmilVar.cancel(true);
+        dotx dotxVar = this.n;
+        if (dotxVar != null) {
+            dotxVar.cancel(true);
             this.n = null;
         }
-        dmik dmikVar = this.o;
-        if (dmikVar != null) {
-            dmikVar.cancel(true);
+        dotw dotwVar = this.o;
+        if (dotwVar != null) {
+            dotwVar.cancel(true);
             this.o = null;
         }
         super.onPause();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         a();

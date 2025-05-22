@@ -20,49 +20,49 @@ import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.gms.googlehelp.InProductHelp;
 import com.google.android.gms.googlehelp.ND4CSettings;
 import com.google.android.gms.googlehelp.OfflineSuggestion;
-import defpackage.arxc;
-import defpackage.arxd;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asnj;
-import defpackage.asnw;
-import defpackage.asot;
-import defpackage.aspy;
-import defpackage.bipv;
-import defpackage.biqe;
-import defpackage.biqt;
-import defpackage.biqu;
-import defpackage.bivk;
-import defpackage.bivr;
-import defpackage.bjaw;
-import defpackage.bjdp;
-import defpackage.bjeg;
-import defpackage.eiif;
-import defpackage.ejhf;
-import defpackage.eplm;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.fems;
-import defpackage.fhfd;
-import defpackage.fhfu;
-import defpackage.fhfv;
-import defpackage.fhfw;
-import defpackage.fhfx;
-import defpackage.fhfy;
-import defpackage.fhfz;
-import defpackage.fhga;
-import defpackage.fhgd;
-import defpackage.fhgg;
-import defpackage.folg;
-import defpackage.folt;
-import defpackage.fomf;
-import defpackage.fomm;
-import defpackage.fomy;
-import defpackage.fopd;
-import defpackage.foqq;
-import defpackage.fotn;
+import defpackage.atzr;
+import defpackage.atzs;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.aurd;
+import defpackage.aurq;
+import defpackage.ausn;
+import defpackage.auts;
+import defpackage.bkuk;
+import defpackage.bkut;
+import defpackage.bkvi;
+import defpackage.bkvj;
+import defpackage.bkzz;
+import defpackage.blag;
+import defpackage.blfl;
+import defpackage.blie;
+import defpackage.bliv;
+import defpackage.ekvk;
+import defpackage.eluo;
+import defpackage.erzl;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fhbl;
+import defpackage.fjva;
+import defpackage.fjvr;
+import defpackage.fjvs;
+import defpackage.fjvt;
+import defpackage.fjvu;
+import defpackage.fjvv;
+import defpackage.fjvw;
+import defpackage.fjvx;
+import defpackage.fjwa;
+import defpackage.fjwd;
+import defpackage.frdz;
+import defpackage.frem;
+import defpackage.frey;
+import defpackage.frff;
+import defpackage.frfr;
+import defpackage.frhw;
+import defpackage.frjj;
+import defpackage.frmg;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
@@ -70,7 +70,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class HelpConfig extends AbstractSafeParcelable implements ReflectedParcelable {
     public static final Set a;
@@ -97,8 +97,8 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     public List T;
     public boolean U;
     public String V;
-    public eplm W;
-    public fems X;
+    public erzl W;
+    public fhbl X;
     public Intent Y;
     public List Z;
     public Map aa;
@@ -124,8 +124,8 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     boolean g;
     public boolean h;
     public List i;
-    public fhfx j;
-    fhgg k;
+    public fjvu j;
+    fjwd k;
     public int l;
 
     @Deprecated
@@ -151,19 +151,19 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     public String x;
     public ErrorReport y;
     public ThemeSettings z;
-    private static final asot ap = asot.b("gH_HelpConfig", asej.GOOGLE_HELP);
-    public static final Parcelable.Creator CREATOR = new biqe();
+    private static final ausn ap = ausn.b("gH_HelpConfig", auid.GOOGLE_HELP);
+    public static final Parcelable.Creator CREATOR = new bkut();
 
     static {
-        fhfd fhfdVar = fhfd.HANGOUTS;
-        fhfd fhfdVar2 = fhfd.CHAT;
-        fhfd fhfdVar3 = fhfd.PHONE;
-        fhfd fhfdVar4 = fhfd.EMAIL;
-        Set e = asnw.e(4, false);
-        e.add(fhfdVar);
-        e.add(fhfdVar2);
-        e.add(fhfdVar3);
-        e.add(fhfdVar4);
+        fjva fjvaVar = fjva.HANGOUTS;
+        fjva fjvaVar2 = fjva.CHAT;
+        fjva fjvaVar3 = fjva.PHONE;
+        fjva fjvaVar4 = fjva.EMAIL;
+        Set e = aurq.e(4, false);
+        e.add(fjvaVar);
+        e.add(fjvaVar2);
+        e.add(fjvaVar3);
+        e.add(fjvaVar4);
         a = DesugarCollections.unmodifiableSet(e);
         aq = new Object();
     }
@@ -183,7 +183,7 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
                 return;
             }
         }
-        if (System.nanoTime() - this.ag > folg.a.a().n() * 1000000) {
+        if (System.nanoTime() - this.ag > frdz.a.lK().n() * 1000000) {
             if (this.f == null) {
                 this.f = new Bundle(1);
             }
@@ -196,35 +196,35 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
         Bundle bundle;
         if ((googleHelp.A || googleHelp.B) && (bundle = googleHelp.d) != null) {
             if (bundle.containsKey("gms:googlehelp:sync_help_psd_collection_time_ms")) {
-                bivr.E(138, Long.valueOf(bundle.getString("gms:googlehelp:sync_help_psd_collection_time_ms")).longValue(), googleHelp, context);
-                bjaw.v(context, googleHelp, 53, Long.parseLong(bundle.getString("gms:googlehelp:sync_help_psd_collection_time_ms")));
+                blag.E(138, Long.valueOf(bundle.getString("gms:googlehelp:sync_help_psd_collection_time_ms")).longValue(), googleHelp, context);
+                blfl.v(context, googleHelp, 53, Long.parseLong(bundle.getString("gms:googlehelp:sync_help_psd_collection_time_ms")));
                 return;
             }
             if (bundle.containsKey("gms:googlehelp:sync_help_psd_failure")) {
-                bivr.D(106, 62, bundle.getString("gms:googlehelp:sync_help_psd_failure"), googleHelp, context);
+                blag.D(106, 62, bundle.getString("gms:googlehelp:sync_help_psd_failure"), googleHelp, context);
                 return;
             }
             if (bundle.containsKey("gms:googlehelp:async_help_psd_failure") && TextUtils.equals("null_api_client", bundle.getString("gms:googlehelp:async_help_psd_failure"))) {
-                bivr.C(105, 143, googleHelp, context);
-                bjaw.y(context, googleHelp, 63, 60);
+                blag.C(105, 143, googleHelp, context);
+                blfl.y(context, googleHelp, 63, 60);
             }
             if (bundle.containsKey("gms:feedback:async_feedback_psd_failure") && TextUtils.equals("null_api_client", bundle.getString("gms:feedback:async_feedback_psd_failure"))) {
-                bivr.C(104, 143, googleHelp, context);
-                bjaw.y(context, googleHelp, 64, 60);
+                blag.C(104, 143, googleHelp, context);
+                blfl.y(context, googleHelp, 64, 60);
             }
             if (bundle.containsKey("gms:feedback:async_feedback_psbd_failure") && TextUtils.equals("null_api_client", bundle.getString("gms:feedback:async_feedback_psbd_failure"))) {
-                bivr.C(103, 143, googleHelp, context);
-                bjaw.y(context, googleHelp, 65, 60);
+                blag.C(103, 143, googleHelp, context);
+                blfl.y(context, googleHelp, 65, 60);
             }
         }
     }
 
-    static Bundle b(fems femsVar) {
-        if (femsVar == null || femsVar.equals(fems.a)) {
+    static Bundle b(fhbl fhblVar) {
+        if (fhblVar == null || fhblVar.equals(fhbl.a)) {
             return null;
         }
         Bundle bundle = new Bundle();
-        bundle.putByteArray("EXTRA_GSE_SESSION_OPTIONS", femsVar.r());
+        bundle.putByteArray("EXTRA_GSE_SESSION_OPTIONS", fhblVar.r());
         return bundle;
     }
 
@@ -248,7 +248,7 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
 
     public static HelpConfig e(Activity activity, Bundle bundle, Intent intent) {
         HelpConfig helpConfig;
-        eplm eplmVar;
+        erzl erzlVar;
         if (bundle != null) {
             HelpConfig helpConfig2 = (HelpConfig) bundle.getParcelable("EXTRA_HELP_CONFIG");
             if (helpConfig2 != null) {
@@ -257,11 +257,11 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
             return helpConfig2;
         }
         if (intent == null) {
-            ((ejhf) ap.i()).x("Can't construct HelpConfig; calling intent is null.");
+            ((eluo) ap.i()).x("Can't construct HelpConfig; calling intent is null.");
             return null;
         }
         if (intent.hasExtra("EXTRA_IN_PRODUCT_HELP")) {
-            InProductHelp inProductHelp = (InProductHelp) arxd.b(intent, "EXTRA_IN_PRODUCT_HELP", InProductHelp.CREATOR);
+            InProductHelp inProductHelp = (InProductHelp) atzs.b(intent, "EXTRA_IN_PRODUCT_HELP", InProductHelp.CREATOR);
             S(inProductHelp.a, activity);
             helpConfig = d(inProductHelp.a, activity);
             helpConfig.aj = inProductHelp.b;
@@ -269,21 +269,21 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
             helpConfig.R = inProductHelp.d;
             helpConfig.am = inProductHelp.f;
             helpConfig.al = inProductHelp.e;
-            if (bivk.b(fomy.c())) {
+            if (bkzz.b(frfr.c())) {
                 String str = inProductHelp.g;
                 if (str == null) {
-                    eplmVar = eplm.a;
+                    erzlVar = erzl.a;
                 } else {
                     try {
-                        byte[] d = asnj.d(str);
-                        fecp y = fecp.y(eplm.a, d, 0, d.length, febw.a());
-                        fecp.M(y);
-                        eplmVar = (eplm) y;
-                    } catch (fedk unused) {
-                        eplmVar = eplm.a;
+                        byte[] d = aurd.d(str);
+                        fgri y = fgri.y(erzl.a, d, 0, d.length, fgqp.a());
+                        fgri.M(y);
+                        erzlVar = (erzl) y;
+                    } catch (fgsd unused) {
+                        erzlVar = erzl.a;
                     }
                 }
-                helpConfig.W = eplmVar;
+                helpConfig.W = erzlVar;
             }
         } else if (intent.hasExtra("EXTRA_GOOGLE_HELP")) {
             GoogleHelp googleHelp = (GoogleHelp) intent.getParcelableExtra("EXTRA_GOOGLE_HELP");
@@ -291,7 +291,7 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
             helpConfig = d(googleHelp, activity);
         } else {
             if (!intent.hasExtra("EXTRA_HELP_CONFIG")) {
-                ((ejhf) ap.i()).B("HelpConfig could not be created from intent: %s", intent);
+                ((eluo) ap.i()).B("HelpConfig could not be created from intent: %s", intent);
                 return null;
             }
             helpConfig = (HelpConfig) intent.getParcelableExtra("EXTRA_HELP_CONFIG");
@@ -299,11 +299,11 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
         boolean hasExtra = intent.hasExtra("EXTRA_START_TICK");
         helpConfig.P(hasExtra, hasExtra ? intent.getLongExtra("EXTRA_START_TICK", -1L) : System.nanoTime());
         if (TextUtils.isEmpty(helpConfig.b)) {
-            String q = asng.q(activity);
+            String q = aura.q(activity);
             if (TextUtils.isEmpty(q)) {
-                ((ejhf) ap.i()).x("Received empty package name, and can't continue. Please fix help integration");
-                Intent data = new Intent("android.intent.action.VIEW").setData(Uri.parse(folg.z()));
-                if (asng.ad(activity, data)) {
+                ((eluo) ap.i()).x("Received empty package name, and can't continue. Please fix help integration");
+                Intent data = new Intent("android.intent.action.VIEW").setData(Uri.parse(frdz.z()));
+                if (aura.ad(activity, data)) {
                     activity.startActivity(data);
                 }
                 activity.finish();
@@ -311,58 +311,58 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
             }
             helpConfig.b = q;
         }
-        if (bivk.a(fotn.a.a().a()) && intent.hasExtra("EXTRA_CUSTOM_FEEDBACK")) {
+        if (bkzz.a(frmg.a.lK().a()) && intent.hasExtra("EXTRA_CUSTOM_FEEDBACK")) {
             helpConfig.A = (PendingIntent) intent.getParcelableExtra("EXTRA_CUSTOM_FEEDBACK");
         }
         try {
             PackageManager packageManager = activity.getPackageManager();
             helpConfig.ai = (String) packageManager.getApplicationLabel(packageManager.getApplicationInfo(helpConfig.b, 0));
         } catch (PackageManager.NameNotFoundException e) {
-            ((ejhf) ((ejhf) ap.j()).s(e)).B("Fetching ApplicationInfo of %s failed.", helpConfig.b);
+            ((eluo) ((eluo) ap.j()).s(e)).B("Fetching ApplicationInfo of %s failed.", helpConfig.b);
         }
         return helpConfig;
     }
 
-    public final boolean A(fhfd fhfdVar) {
-        if (fhfdVar == fhfd.PHONE && !this.i.isEmpty()) {
+    public final boolean A(fjva fjvaVar) {
+        if (fjvaVar == fjva.PHONE && !this.i.isEmpty()) {
             return true;
         }
-        if (this.j == null || !B(fhfdVar)) {
+        if (this.j == null || !B(fjvaVar)) {
             return false;
         }
-        int ordinal = fhfdVar.ordinal();
+        int ordinal = fjvaVar.ordinal();
         if (ordinal == 1) {
-            fhfu fhfuVar = this.j.d;
-            if (fhfuVar == null) {
-                fhfuVar = fhfu.a;
+            fjvr fjvrVar = this.j.d;
+            if (fjvrVar == null) {
+                fjvrVar = fjvr.a;
             }
-            return fhfuVar.c;
+            return fjvrVar.c;
         }
         if (ordinal == 2) {
             return true;
         }
         if (ordinal == 3) {
-            fhfw fhfwVar = this.j.c;
-            if (fhfwVar == null) {
-                fhfwVar = fhfw.a;
+            fjvt fjvtVar = this.j.c;
+            if (fjvtVar == null) {
+                fjvtVar = fjvt.a;
             }
-            return fhfwVar.c;
+            return fjvtVar.c;
         }
         if (ordinal != 6) {
             return false;
         }
-        fhfv fhfvVar = this.j.e;
-        if (fhfvVar == null) {
-            fhfvVar = fhfv.a;
+        fjvs fjvsVar = this.j.e;
+        if (fjvsVar == null) {
+            fjvsVar = fjvs.a;
         }
-        return fhfvVar.b;
+        return fjvsVar.b;
     }
 
-    public final boolean B(fhfd fhfdVar) {
+    public final boolean B(fjva fjvaVar) {
         if (this.j == null) {
             return false;
         }
-        int ordinal = fhfdVar.ordinal();
+        int ordinal = fjvaVar.ordinal();
         return ordinal != 1 ? ordinal != 2 ? ordinal != 3 ? ordinal == 6 && (this.j.b & 8) != 0 : (this.j.b & 1) != 0 : (this.j.b & 2) != 0 : (this.j.b & 4) != 0;
     }
 
@@ -372,15 +372,15 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     }
 
     public final boolean D() {
-        fhfx fhfxVar = this.j;
-        if (fhfxVar == null) {
+        fjvu fjvuVar = this.j;
+        if (fjvuVar == null) {
             return false;
         }
-        fhgd fhgdVar = fhfxVar.f;
-        if (fhgdVar == null) {
-            fhgdVar = fhgd.a;
+        fjwa fjwaVar = fjvuVar.f;
+        if (fjwaVar == null) {
+            fjwaVar = fjwa.a;
         }
-        return (fhgdVar.b & 4) != 0;
+        return (fjwaVar.b & 4) != 0;
     }
 
     public final boolean E() {
@@ -408,7 +408,7 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
         List list = this.i;
         if (context != null && !list.isEmpty()) {
             String str = (String) list.get(0);
-            int i = aspy.a;
+            int i = auts.a;
             Intent intent = new Intent("android.intent.action.DIAL");
             intent.setData(Uri.parse("tel:".concat(String.valueOf(str))));
             if (!context.getPackageManager().queryIntentActivities(intent, 0).isEmpty()) {
@@ -419,11 +419,11 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     }
 
     public final boolean K() {
-        return bivk.b(fomf.a.a().a()) && this.L;
+        return bkzz.b(frey.a.lK().a()) && this.L;
     }
 
     public final boolean L() {
-        return bivk.b(fomm.i()) && Boolean.parseBoolean(j(bipv.v)) && v();
+        return bkzz.b(frff.i()) && Boolean.parseBoolean(j(bkuk.v)) && v();
     }
 
     public final boolean M() {
@@ -434,14 +434,14 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
         if (this.w) {
             return true;
         }
-        String j = j(bipv.e);
+        String j = j(bkuk.e);
         return !TextUtils.isEmpty(j) ? j.equalsIgnoreCase("top") : this.v;
     }
 
-    public final void O(fhfx fhfxVar) {
-        this.j = fhfxVar;
+    public final void O(fjvu fjvuVar) {
+        this.j = fjvuVar;
         int i = 0;
-        if (folt.a.a().d() && t()) {
+        if (frem.a.lK().d() && t()) {
             i = 3;
         }
         this.l = i;
@@ -453,14 +453,14 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     }
 
     public final void Q(boolean z) {
-        if (bjeg.c(this)) {
+        if (bliv.c(this)) {
             this.U = z;
         }
     }
 
     public final int a() {
         try {
-            return Integer.parseInt(j(bipv.b));
+            return Integer.parseInt(j(bkuk.b));
         } catch (NumberFormatException unused) {
             return -1;
         }
@@ -473,17 +473,17 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
         return this.f;
     }
 
-    public final fhfd f() {
-        fhfx fhfxVar = this.j;
-        if (fhfxVar == null) {
-            return fhfd.UNKNOWN_CONTACT_MODE;
+    public final fjva f() {
+        fjvu fjvuVar = this.j;
+        if (fjvuVar == null) {
+            return fjva.UNKNOWN_CONTACT_MODE;
         }
-        fhgd fhgdVar = fhfxVar.f;
-        if (fhgdVar == null) {
-            fhgdVar = fhgd.a;
+        fjwa fjwaVar = fjvuVar.f;
+        if (fjwaVar == null) {
+            fjwaVar = fjwa.a;
         }
-        fhfd b = fhfd.b(fhgdVar.f);
-        return b == null ? fhfd.UNKNOWN_CONTACT_MODE : b;
+        fjva b = fjva.b(fjwaVar.f);
+        return b == null ? fjva.UNKNOWN_CONTACT_MODE : b;
     }
 
     public final String g() {
@@ -497,36 +497,34 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
         if (!s()) {
             return null;
         }
-        fhfu fhfuVar = this.j.d;
-        if (fhfuVar == null) {
-            fhfuVar = fhfu.a;
+        fjvr fjvrVar = this.j.d;
+        if (fjvrVar == null) {
+            fjvrVar = fjvr.a;
         }
-        return fhfuVar.d;
+        return fjvrVar.d;
     }
 
     public final String i() {
-        if (TextUtils.isEmpty(j(bipv.s))) {
-            return "";
-        }
-        return String.valueOf(folg.z()).concat(String.valueOf(j(bipv.s)));
+        bkuk bkukVar = bkuk.s;
+        return TextUtils.isEmpty(j(bkukVar)) ? "" : frdz.z().concat(String.valueOf(j(bkukVar)));
     }
 
-    public final String j(bipv bipvVar) {
-        String str = (String) this.aa.get(bipvVar);
-        return str != null ? str : bipvVar.y;
+    public final String j(bkuk bkukVar) {
+        String str = (String) this.aa.get(bkukVar);
+        return str != null ? str : bkukVar.y;
     }
 
     public final String k() {
-        fhfx fhfxVar;
-        String j = j(bipv.c);
-        if (TextUtils.isEmpty(j) && (fhfxVar = this.j) != null && (fhfxVar.b & 4096) != 0) {
-            fhga fhgaVar = fhfxVar.i;
-            if (fhgaVar == null) {
-                fhgaVar = fhga.a;
+        fjvu fjvuVar;
+        String j = j(bkuk.c);
+        if (TextUtils.isEmpty(j) && (fjvuVar = this.j) != null && (fjvuVar.b & 4096) != 0) {
+            fjvx fjvxVar = fjvuVar.i;
+            if (fjvxVar == null) {
+                fjvxVar = fjvx.a;
             }
-            j = fhgaVar.c;
+            j = fjvxVar.c;
         }
-        return (bivk.a(fopd.c()) && TextUtils.isEmpty(j)) ? TextUtils.isEmpty(this.J) ? "" : this.J : j;
+        return (bkzz.a(frhw.c()) && TextUtils.isEmpty(j)) ? TextUtils.isEmpty(this.J) ? "" : this.J : j;
     }
 
     public final String l() {
@@ -535,14 +533,12 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     }
 
     public final String m() {
-        if (TextUtils.isEmpty(j(bipv.r))) {
-            return "";
-        }
-        return String.valueOf(folg.z()).concat(String.valueOf(j(bipv.r)));
+        bkuk bkukVar = bkuk.r;
+        return TextUtils.isEmpty(j(bkukVar)) ? "" : frdz.z().concat(String.valueOf(j(bkukVar)));
     }
 
     public final String n() {
-        return eiif.b(this.V);
+        return ekvk.b(this.V);
     }
 
     public final List o() {
@@ -551,14 +547,14 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
         }
         ArrayList arrayList = new ArrayList();
         for (OfflineSuggestion offlineSuggestion : this.u) {
-            biqu biquVar = biqu.a;
-            biqt biqtVar = new biqt();
-            biqtVar.a = offlineSuggestion.a;
-            biqtVar.d = 4;
-            biqtVar.e = offlineSuggestion.b;
-            biqtVar.f = offlineSuggestion.c;
-            biqtVar.g = offlineSuggestion.d;
-            arrayList.add(biqtVar.a());
+            bkvj bkvjVar = bkvj.a;
+            bkvi bkviVar = new bkvi();
+            bkviVar.a = offlineSuggestion.a;
+            bkviVar.d = 4;
+            bkviVar.e = offlineSuggestion.b;
+            bkviVar.f = offlineSuggestion.c;
+            bkviVar.g = offlineSuggestion.d;
+            arrayList.add(bkviVar.a());
         }
         return arrayList;
     }
@@ -575,50 +571,50 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
         ArrayList arrayList = new ArrayList(keySet.size());
         for (String str : keySet) {
             String string = c.getString(str);
-            fecj v = bjdp.a.v();
+            fgrc v = blie.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            bjdp bjdpVar = (bjdp) fecpVar;
+            fgri fgriVar = v.b;
+            blie blieVar = (blie) fgriVar;
             str.getClass();
-            bjdpVar.b |= 1;
-            bjdpVar.c = str;
-            if (!fecpVar.L()) {
+            blieVar.b |= 1;
+            blieVar.c = str;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            bjdp bjdpVar2 = (bjdp) v.b;
+            blie blieVar2 = (blie) v.b;
             string.getClass();
-            bjdpVar2.b |= 2;
-            bjdpVar2.d = string;
-            arrayList.add((bjdp) v.Q());
+            blieVar2.b |= 2;
+            blieVar2.d = string;
+            arrayList.add((blie) v.Q());
         }
         return arrayList;
     }
 
     public final Set q() {
-        fhfx fhfxVar = this.j;
-        if (fhfxVar != null) {
-            fhfy fhfyVar = fhfxVar.g;
-            if (fhfyVar == null) {
-                fhfyVar = fhfy.a;
+        fjvu fjvuVar = this.j;
+        if (fjvuVar != null) {
+            fjvv fjvvVar = fjvuVar.g;
+            if (fjvvVar == null) {
+                fjvvVar = fjvv.a;
             }
-            if (fhfyVar.b.size() > 0) {
+            if (fjvvVar.b.size() > 0) {
                 Set set = a;
                 LinkedHashSet linkedHashSet = new LinkedHashSet(set.size());
-                fhfy fhfyVar2 = this.j.g;
-                if (fhfyVar2 == null) {
-                    fhfyVar2 = fhfy.a;
+                fjvv fjvvVar2 = this.j.g;
+                if (fjvvVar2 == null) {
+                    fjvvVar2 = fjvv.a;
                 }
-                int size = fhfyVar2.b.size();
+                int size = fjvvVar2.b.size();
                 for (int i = 0; i < size; i++) {
-                    fhfy fhfyVar3 = this.j.g;
-                    if (fhfyVar3 == null) {
-                        fhfyVar3 = fhfy.a;
+                    fjvv fjvvVar3 = this.j.g;
+                    if (fjvvVar3 == null) {
+                        fjvvVar3 = fjvv.a;
                     }
-                    fhfd b = fhfd.b(fhfyVar3.b.d(i));
+                    fjva b = fjva.b(fjvvVar3.b.d(i));
                     if (b == null) {
-                        b = fhfd.UNKNOWN_CONTACT_MODE;
+                        b = fjva.UNKNOWN_CONTACT_MODE;
                     }
                     linkedHashSet.add(b);
                 }
@@ -630,7 +626,7 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     }
 
     public final void r(Context context) {
-        String l = bivr.l(this.ag);
+        String l = blag.l(this.ag);
         GoogleHelp googleHelp = new GoogleHelp(this.c);
         Account account = this.d;
         if (account != null && !TextUtils.isEmpty(account.name)) {
@@ -638,11 +634,11 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
         }
         googleHelp.e = this.b;
         googleHelp.D = this.e;
-        Bundle d = bivr.d(context, l, googleHelp);
+        Bundle d = blag.d(context, l, googleHelp);
         if (d != null) {
             this.F = true;
         }
-        if (!bivk.a(foqq.a.a().b())) {
+        if (!bkzz.a(frjj.a.lK().b())) {
             R(d);
             return;
         }
@@ -652,7 +648,7 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     }
 
     public final boolean s() {
-        return B(fhfd.CHAT);
+        return B(fjva.CHAT);
     }
 
     public final boolean t() {
@@ -660,15 +656,15 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     }
 
     public final boolean u() {
-        fhfx fhfxVar = this.j;
-        if (fhfxVar == null || (fhfxVar.b & 8192) == 0) {
+        fjvu fjvuVar = this.j;
+        if (fjvuVar == null || (fjvuVar.b & 8192) == 0) {
             return false;
         }
-        fhfz fhfzVar = fhfxVar.j;
-        if (fhfzVar == null) {
-            fhfzVar = fhfz.a;
+        fjvw fjvwVar = fjvuVar.j;
+        if (fjvwVar == null) {
+            fjvwVar = fjvw.a;
         }
-        return !fhfzVar.c.isEmpty();
+        return !fjvwVar.c.isEmpty();
     }
 
     public final boolean v() {
@@ -683,79 +679,79 @@ public class HelpConfig extends AbstractSafeParcelable implements ReflectedParce
     public final void writeToParcel(Parcel parcel, int i) {
         Bundle bundle;
         Bundle bundle2;
-        int a2 = arxc.a(parcel);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.g(parcel, 6, this.f, false);
-        arxc.e(parcel, 8, this.g);
-        arxc.e(parcel, 9, this.h);
-        arxc.x(parcel, 11, this.i, false);
-        arxc.g(parcel, 15, this.m, false);
-        arxc.t(parcel, 16, this.n, i, false);
-        arxc.v(parcel, 19, this.r, false);
-        arxc.t(parcel, 22, this.s, i, false);
-        arxc.y(parcel, 23, this.t, false);
-        arxc.y(parcel, 25, this.u, false);
-        arxc.v(parcel, 31, this.x, false);
-        arxc.i(parcel, 32, this.o, false);
-        arxc.o(parcel, 33, this.p);
-        arxc.o(parcel, 34, this.q);
-        fhfx fhfxVar = this.j;
+        int a2 = atzr.a(parcel);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.g(parcel, 6, this.f, false);
+        atzr.e(parcel, 8, this.g);
+        atzr.e(parcel, 9, this.h);
+        atzr.x(parcel, 11, this.i, false);
+        atzr.g(parcel, 15, this.m, false);
+        atzr.t(parcel, 16, this.n, i, false);
+        atzr.v(parcel, 19, this.r, false);
+        atzr.t(parcel, 22, this.s, i, false);
+        atzr.y(parcel, 23, this.t, false);
+        atzr.y(parcel, 25, this.u, false);
+        atzr.v(parcel, 31, this.x, false);
+        atzr.i(parcel, 32, this.o, false);
+        atzr.o(parcel, 33, this.p);
+        atzr.o(parcel, 34, this.q);
+        fjvu fjvuVar = this.j;
         Bundle bundle3 = null;
-        if (fhfxVar == null) {
+        if (fjvuVar == null) {
             bundle = null;
         } else {
             bundle = new Bundle();
-            bundle.putByteArray("EXTRA_ESCALATION_OPTIONS", fhfxVar.r());
+            bundle.putByteArray("EXTRA_ESCALATION_OPTIONS", fjvuVar.r());
         }
-        arxc.g(parcel, 35, bundle, false);
-        arxc.o(parcel, 36, this.l);
-        arxc.e(parcel, 38, this.v);
-        arxc.t(parcel, 39, this.y, i, false);
-        arxc.t(parcel, 41, this.z, i, false);
-        arxc.e(parcel, 42, this.w);
-        fhgg fhggVar = this.k;
-        if (fhggVar == null) {
+        atzr.g(parcel, 35, bundle, false);
+        atzr.o(parcel, 36, this.l);
+        atzr.e(parcel, 38, this.v);
+        atzr.t(parcel, 39, this.y, i, false);
+        atzr.t(parcel, 41, this.z, i, false);
+        atzr.e(parcel, 42, this.w);
+        fjwd fjwdVar = this.k;
+        if (fjwdVar == null) {
             bundle2 = null;
         } else {
             bundle2 = new Bundle();
-            bundle2.putByteArray("EXTRA_REALTIME_SUPPORT_STATUS", fhggVar.r());
+            bundle2.putByteArray("EXTRA_REALTIME_SUPPORT_STATUS", fjwdVar.r());
         }
-        arxc.g(parcel, 50, bundle2, false);
-        arxc.t(parcel, 52, this.A, i, false);
-        arxc.z(parcel, 53, this.B);
-        arxc.o(parcel, 56, this.C);
-        arxc.e(parcel, 57, this.D);
-        arxc.e(parcel, 58, this.E);
-        arxc.e(parcel, 59, this.F);
-        arxc.e(parcel, 60, this.G);
-        arxc.v(parcel, 61, this.H, false);
-        arxc.v(parcel, 62, this.I, false);
-        arxc.v(parcel, 63, this.J, false);
-        arxc.v(parcel, 64, this.K, false);
-        arxc.e(parcel, 65, this.L);
-        arxc.t(parcel, 66, this.M, i, false);
-        arxc.v(parcel, 67, this.N, false);
-        arxc.y(parcel, 68, this.O, false);
-        arxc.e(parcel, 69, this.P);
-        arxc.v(parcel, 70, this.Q, false);
-        arxc.o(parcel, 71, this.R);
-        arxc.o(parcel, 72, this.S);
-        arxc.y(parcel, 73, this.T, false);
-        arxc.e(parcel, 74, this.U);
-        arxc.v(parcel, 75, this.V, false);
-        eplm eplmVar = this.W;
-        if (eplmVar != null) {
+        atzr.g(parcel, 50, bundle2, false);
+        atzr.t(parcel, 52, this.A, i, false);
+        atzr.z(parcel, 53, this.B);
+        atzr.o(parcel, 56, this.C);
+        atzr.e(parcel, 57, this.D);
+        atzr.e(parcel, 58, this.E);
+        atzr.e(parcel, 59, this.F);
+        atzr.e(parcel, 60, this.G);
+        atzr.v(parcel, 61, this.H, false);
+        atzr.v(parcel, 62, this.I, false);
+        atzr.v(parcel, 63, this.J, false);
+        atzr.v(parcel, 64, this.K, false);
+        atzr.e(parcel, 65, this.L);
+        atzr.t(parcel, 66, this.M, i, false);
+        atzr.v(parcel, 67, this.N, false);
+        atzr.y(parcel, 68, this.O, false);
+        atzr.e(parcel, 69, this.P);
+        atzr.v(parcel, 70, this.Q, false);
+        atzr.o(parcel, 71, this.R);
+        atzr.o(parcel, 72, this.S);
+        atzr.y(parcel, 73, this.T, false);
+        atzr.e(parcel, 74, this.U);
+        atzr.v(parcel, 75, this.V, false);
+        erzl erzlVar = this.W;
+        if (erzlVar != null) {
             bundle3 = new Bundle();
-            bundle3.putByteArray("EXTRA_STARTING_FLOW", eplmVar.r());
+            bundle3.putByteArray("EXTRA_STARTING_FLOW", erzlVar.r());
         }
-        arxc.g(parcel, 76, bundle3, false);
-        arxc.g(parcel, 77, b(this.X), false);
-        arxc.t(parcel, 78, this.Y, i, false);
-        arxc.x(parcel, 79, this.Z, false);
-        arxc.c(parcel, a2);
+        atzr.g(parcel, 76, bundle3, false);
+        atzr.g(parcel, 77, b(this.X), false);
+        atzr.t(parcel, 78, this.Y, i, false);
+        atzr.x(parcel, 79, this.Z, false);
+        atzr.c(parcel, a2);
     }
 
     public final boolean x() {

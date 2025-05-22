@@ -1,24 +1,24 @@
 package com.google.android.gms.ads.consent;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.ejdg;
-import defpackage.tdg;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.elqn;
+import defpackage.uzg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ConsentChimeraService extends bxgd {
+public class ConsentChimeraService extends bzot {
     public ConsentChimeraService() {
-        super(195, "com.google.android.gms.ads.service.CONSENT_LOOKUP", new ejdg("android.permission.INTERNET"), 3, 10);
+        super(195, "com.google.android.gms.ads.service.CONSENT_LOOKUP", new elqn("android.permission.INTERNET"), 3, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.d(tdg.a(this).e(), null);
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.d(uzg.a(this).e(), null);
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
     }
 }

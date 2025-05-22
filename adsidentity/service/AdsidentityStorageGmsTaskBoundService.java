@@ -3,68 +3,68 @@ package com.google.android.gms.adsidentity.service;
 import android.content.Context;
 import com.google.android.gms.chimera.modules.adsidentity.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.byjl;
-import defpackage.byln;
-import defpackage.eiho;
-import defpackage.enpf;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.enss;
-import defpackage.fkas;
-import defpackage.tdq;
-import defpackage.tdx;
-import defpackage.tft;
+import defpackage.casd;
+import defpackage.cauf;
+import defpackage.ekut;
+import defpackage.eqcy;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.eqgl;
+import defpackage.fmqy;
+import defpackage.uzq;
+import defpackage.uzx;
+import defpackage.vbt;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AdsidentityStorageGmsTaskBoundService extends GmsTaskBoundService {
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         Context a = AppContextProvider.a();
-        tdq a2 = tdq.a(a);
+        uzq a2 = uzq.a(a);
         try {
-            tft.b();
-            enss a3 = tft.a().a();
-            eiho eihoVar = new eiho() { // from class: tfs
-                @Override // defpackage.eiho
+            vbt.b();
+            eqgl a3 = vbt.a().a();
+            ekut ekutVar = new ekut() { // from class: vbs
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    return ((tdw) obj).b;
+                    return ((uzw) obj).b;
                 }
             };
-            enre enreVar = enre.a;
-            List<tdx> list = (List) ((enpf) enps.f(a3, eihoVar, enreVar)).u();
+            eqex eqexVar = eqex.a;
+            List<uzx> list = (List) ((eqcy) eqdl.f(a3, ekutVar, eqexVar)).u();
             if (list.isEmpty()) {
-                byjl.a(a).d("AdsidentityStorageTask", AdsidentityStorageGmsTaskBoundService.class.getName());
+                casd.a(a).d("AdsidentityStorageTask", AdsidentityStorageGmsTaskBoundService.class.getName());
             } else {
-                for (tdx tdxVar : list) {
-                    if (System.currentTimeMillis() - tdxVar.c > fkas.a.a().d()) {
-                        tft.b();
-                        final String str = tdxVar.b;
-                        ((enpf) tft.a().b(new eiho() { // from class: tfr
-                            @Override // defpackage.eiho
+                for (uzx uzxVar : list) {
+                    if (System.currentTimeMillis() - uzxVar.c > fmqy.a.lK().d()) {
+                        vbt.b();
+                        final String str = uzxVar.b;
+                        ((eqcy) vbt.a().b(new ekut() { // from class: vbr
+                            @Override // defpackage.ekut
                             public final Object apply(Object obj) {
-                                tdw tdwVar = (tdw) obj;
-                                fecj fecjVar = (fecj) tdwVar.iB(5, null);
-                                fecjVar.X(tdwVar);
-                                for (int i = 0; i < ((tdw) fecjVar.b).b.size(); i++) {
-                                    if (((tdx) ((tdw) fecjVar.b).b.get(i)).b.equals(str)) {
-                                        if (!fecjVar.b.L()) {
-                                            fecjVar.U();
+                                uzw uzwVar = (uzw) obj;
+                                fgrc fgrcVar = (fgrc) uzwVar.iQ(5, null);
+                                fgrcVar.X(uzwVar);
+                                for (int i = 0; i < ((uzw) fgrcVar.b).b.size(); i++) {
+                                    if (((uzx) ((uzw) fgrcVar.b).b.get(i)).b.equals(str)) {
+                                        if (!fgrcVar.b.L()) {
+                                            fgrcVar.U();
                                         }
-                                        tdw tdwVar2 = (tdw) fecjVar.b;
-                                        fedh fedhVar = tdwVar2.b;
-                                        if (!fedhVar.c()) {
-                                            tdwVar2.b = fecp.E(fedhVar);
+                                        uzw uzwVar2 = (uzw) fgrcVar.b;
+                                        fgsa fgsaVar = uzwVar2.b;
+                                        if (!fgsaVar.c()) {
+                                            uzwVar2.b = fgri.E(fgsaVar);
                                         }
-                                        tdwVar2.b.remove(i);
+                                        uzwVar2.b.remove(i);
                                     }
                                 }
-                                return (tdw) fecjVar.Q();
+                                return (uzw) fgrcVar.Q();
                             }
-                        }, enreVar)).u();
-                        a2.d("Request exceeds TTL and is cleaned up from ProtoDataStore. Request creation timestamp: %s", Long.valueOf(tdxVar.c));
+                        }, eqexVar)).u();
+                        a2.d("Request exceeds TTL and is cleaned up from ProtoDataStore. Request creation timestamp: %s", Long.valueOf(uzxVar.c));
                     }
                 }
             }

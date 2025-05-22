@@ -1,9 +1,9 @@
 package com.google.android.gms.ads.cache.policy;
 
 import com.google.android.gms.ads.cache.s;
-import defpackage.arwb;
+import defpackage.atyq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class d implements e {
     private final s a;
@@ -19,7 +19,7 @@ public final class d implements e {
 
     public final boolean equals(Object obj) {
         if (obj instanceof d) {
-            return arwb.b(this.a, ((d) obj).a);
+            return atyq.b(this.a, ((d) obj).a);
         }
         return false;
     }
@@ -29,12 +29,12 @@ public final class d implements e {
         if (sVar.L()) {
             return sVar.s();
         }
-        int i = sVar.bH;
+        int i = sVar.bJ;
         if (i != 0) {
             return i;
         }
         int s = sVar.s();
-        sVar.bH = s;
+        sVar.bJ = s;
         return s;
     }
 }

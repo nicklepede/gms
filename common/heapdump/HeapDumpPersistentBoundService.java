@@ -1,10 +1,10 @@
 package com.google.android.gms.common.heapdump;
 
-import defpackage.arso;
-import defpackage.fmwu;
+import defpackage.atvd;
+import defpackage.fpot;
 import java.util.concurrent.ScheduledExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class HeapDumpPersistentBoundService extends HeapDumpBoundService {
     public HeapDumpPersistentBoundService() {
@@ -13,10 +13,10 @@ public final class HeapDumpPersistentBoundService extends HeapDumpBoundService {
 
     @Override // com.google.android.gms.common.heapdump.HeapDumpBoundService
     public final boolean e() {
-        return fmwu.d();
+        return fpot.d();
     }
 
-    HeapDumpPersistentBoundService(ScheduledExecutorService scheduledExecutorService, arso arsoVar) {
-        super("HeapDumpPersistentBoundService", scheduledExecutorService, arsoVar);
+    HeapDumpPersistentBoundService(ScheduledExecutorService scheduledExecutorService, atvd atvdVar) {
+        super("HeapDumpPersistentBoundService", scheduledExecutorService, atvdVar);
     }
 }

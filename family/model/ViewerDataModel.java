@@ -3,24 +3,24 @@ package com.google.android.gms.family.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.SparseBooleanArray;
-import defpackage.azrx;
-import defpackage.brz;
-import defpackage.bsa;
-import defpackage.eiig;
+import defpackage.bbvt;
+import defpackage.bsk;
+import defpackage.bsl;
+import defpackage.ekvl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ViewerDataModel implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new azrx();
-    public bsa a;
-    public bsa b;
-    public bsa c;
+    public static final Parcelable.Creator CREATOR = new bbvt();
+    public bsl a;
+    public bsl b;
+    public bsl c;
     private final SparseBooleanArray d;
 
     public ViewerDataModel() {
-        this.a = new bsa();
-        this.b = new bsa();
-        this.c = new bsa();
+        this.a = new bsl();
+        this.b = new bsl();
+        this.c = new bsl();
         this.d = new SparseBooleanArray();
     }
 
@@ -51,29 +51,29 @@ public final class ViewerDataModel implements Parcelable {
     public final void writeToParcel(Parcel parcel, int i) {
         parcel.writeSparseBooleanArray(this.d);
         parcel.writeInt(this.a.c);
-        brz brzVar = new brz(this.a);
-        while (brzVar.hasNext()) {
-            parcel.writeString((String) brzVar.next());
+        bsk bskVar = new bsk(this.a);
+        while (bskVar.hasNext()) {
+            parcel.writeString((String) bskVar.next());
         }
         parcel.writeInt(this.b.c);
-        brz brzVar2 = new brz(this.b);
-        while (brzVar2.hasNext()) {
-            parcel.writeString((String) brzVar2.next());
+        bsk bskVar2 = new bsk(this.b);
+        while (bskVar2.hasNext()) {
+            parcel.writeString((String) bskVar2.next());
         }
         parcel.writeInt(this.c.c);
-        brz brzVar3 = new brz(this.c);
-        while (brzVar3.hasNext()) {
-            parcel.writeString((String) brzVar3.next());
+        bsk bskVar3 = new bsk(this.c);
+        while (bskVar3.hasNext()) {
+            parcel.writeString((String) bskVar3.next());
         }
     }
 
     public ViewerDataModel(Parcel parcel) {
         SparseBooleanArray readSparseBooleanArray = parcel.readSparseBooleanArray();
-        eiig.x(readSparseBooleanArray);
+        ekvl.y(readSparseBooleanArray);
         this.d = readSparseBooleanArray;
-        this.a = new bsa();
-        this.b = new bsa();
-        this.c = new bsa();
+        this.a = new bsl();
+        this.b = new bsl();
+        this.c = new bsl();
         int readInt = parcel.readInt();
         for (int i = 0; i < readInt; i++) {
             String readString = parcel.readString();

@@ -5,15 +5,15 @@ import android.content.Intent;
 import com.google.android.gms.ads.identifier.settings.q;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.settings.internal.a;
-import defpackage.anya;
-import defpackage.asri;
+import defpackage.apzs;
+import defpackage.auvc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ModuleInitializer extends anya {
-    @Override // defpackage.anya
+public class ModuleInitializer extends apzs {
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
-        asri.b();
+        auvc.b();
         Context applicationContext = getApplicationContext();
         int i = a.a;
         p.c(applicationContext);

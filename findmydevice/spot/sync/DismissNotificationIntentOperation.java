@@ -1,33 +1,33 @@
 package com.google.android.gms.findmydevice.spot.sync;
 
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bdmb;
-import defpackage.bebl;
-import defpackage.bebo;
-import defpackage.betk;
-import defpackage.bfcc;
-import defpackage.dwwv;
-import defpackage.ensv;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bfnn;
+import defpackage.bgcx;
+import defpackage.bgda;
+import defpackage.bgux;
+import defpackage.bhds;
+import defpackage.dziv;
+import defpackage.eqgo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class DismissNotificationIntentOperation extends IntentOperation {
-    public static final asot a = asot.b("StopKeychainNotifIntent", asej.FIND_MY_DEVICE_SPOT);
-    public final dwwv b;
-    public final betk c;
-    private final bebl d;
-    private final bfcc e;
-    private final ensv f;
+    public static final ausn a = ausn.b("StopKeychainNotifIntent", auid.FIND_MY_DEVICE_SPOT);
+    public final dziv b;
+    public final bgux c;
+    private final bgcx d;
+    private final bhds e;
+    private final eqgo f;
 
-    /* JADX WARN: Type inference failed for: r5v0, types: [bfcc, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r5v0, types: [bhds, java.lang.Object] */
     public DismissNotificationIntentOperation() {
-        this(((bebo) bebo.a()).j(), bebo.a().i(), ((bebo) bebo.a()).u(), ((bebo) bebo.a()).I(), bebo.a().G());
+        this(((bgda) bgda.a()).j(), bgda.a().i(), ((bgda) bgda.a()).u(), ((bgda) bgda.a()).I(), bgda.a().G());
     }
 
     private static int a(int i) {
-        bdmb bdmbVar = bdmb.SELF_PROVISIONING;
+        bfnn bfnnVar = bfnn.SELF_PROVISIONING;
         return i + (-1) != 1 ? 3 : 4;
     }
 
@@ -46,11 +46,11 @@ public final class DismissNotificationIntentOperation extends IntentOperation {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.findmydevice.spot.sync.DismissNotificationIntentOperation.onHandleIntent(android.content.Intent):void");
     }
 
-    public DismissNotificationIntentOperation(dwwv dwwvVar, bebl beblVar, betk betkVar, bfcc bfccVar, ensv ensvVar) {
-        this.b = dwwvVar;
-        this.d = beblVar;
-        this.c = betkVar;
-        this.e = bfccVar;
-        this.f = ensvVar;
+    public DismissNotificationIntentOperation(dziv dzivVar, bgcx bgcxVar, bgux bguxVar, bhds bhdsVar, eqgo eqgoVar) {
+        this.b = dzivVar;
+        this.d = bgcxVar;
+        this.c = bguxVar;
+        this.e = bhdsVar;
+        this.f = eqgoVar;
     }
 }

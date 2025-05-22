@@ -11,13 +11,13 @@ import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import com.google.android.gms.R;
-import defpackage.asne;
-import defpackage.asoe;
-import defpackage.qfn;
+import defpackage.auqy;
+import defpackage.aury;
+import defpackage.ryr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AuthScopeDetailsChimeraActivity extends qfn implements View.OnClickListener, View.OnTouchListener {
+public class AuthScopeDetailsChimeraActivity extends ryr implements View.OnClickListener, View.OnTouchListener {
     public static final /* synthetic */ int h = 0;
     private String i;
     private Intent j;
@@ -37,7 +37,7 @@ public class AuthScopeDetailsChimeraActivity extends qfn implements View.OnClick
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         requestWindowFeature(1);
         super.onCreate(bundle);
@@ -60,7 +60,7 @@ public class AuthScopeDetailsChimeraActivity extends qfn implements View.OnClick
             ((TextView) findViewById(R.id.scope_details_text)).setText((CharSequence) null);
         }
         ((Button) findViewById(R.id.ok)).setOnClickListener(this);
-        asne.b(getContainerActivity(), asoe.n(getResources()) ? r5.getDimension(R.dimen.plus_auth_dialog_tablet_resize_factor) : r5.getDimension(R.dimen.plus_auth_dialog_resize_factor));
+        auqy.b(getContainerActivity(), aury.n(getResources()) ? r5.getDimension(R.dimen.plus_auth_dialog_tablet_resize_factor) : r5.getDimension(R.dimen.plus_auth_dialog_resize_factor));
     }
 
     @Override // android.view.View.OnTouchListener

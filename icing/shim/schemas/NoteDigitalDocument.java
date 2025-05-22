@@ -1,13 +1,13 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.elgo;
+import defpackage.elpg;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class NoteDigitalDocument extends DigitalDocument {
     public final long g;
@@ -22,8 +22,8 @@ public final class NoteDigitalDocument extends DigitalDocument {
         if (list3 != null) {
             list4 = DesugarCollections.unmodifiableList(list3);
         } else {
-            int i = eitj.d;
-            list4 = ejcb.a;
+            int i = elgo.d;
+            list4 = elpg.a;
         }
         this.i = list4;
     }

@@ -1,14 +1,14 @@
 package com.google.android.gms.common.nativememory;
 
 import android.content.Context;
-import defpackage.asot;
-import defpackage.asow;
-import defpackage.ejhf;
+import defpackage.ausn;
+import defpackage.ausq;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class MemoryMapper {
-    private static final asot a = asot.a("MemoryMapper");
+    private static final ausn a = ausn.a("MemoryMapper");
     private static boolean b = false;
 
     private MemoryMapper() {
@@ -19,10 +19,10 @@ public final class MemoryMapper {
             if (b) {
                 return true;
             }
-            boolean g = asow.g(context, "gmscore");
+            boolean g = ausq.g(context, "gmscore");
             b = g;
             if (!g) {
-                ((ejhf) ((ejhf) a.j()).ah(3204)).x("Failed to load native library");
+                ((eluo) ((eluo) a.j()).ai(3208)).x("Failed to load native library");
             }
             return b;
         }

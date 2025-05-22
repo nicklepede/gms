@@ -3,7 +3,7 @@ package com.google.android.gms.ads.internal.formats.client;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class e extends com.google.android.gms.ads.formats.c {
     public final Drawable a;
@@ -59,7 +59,7 @@ public final class e extends com.google.android.gms.ads.formats.c {
             r2.<init>()
             r2.f = r3
             r0 = 0
-            azht r3 = r3.e()     // Catch: android.os.RemoteException -> L13
+            bblp r3 = r3.e()     // Catch: android.os.RemoteException -> L13
             if (r3 == 0) goto L17
             java.lang.Object r3 = com.google.android.gms.dynamic.ObjectWrapper.a(r3)     // Catch: android.os.RemoteException -> L13
             android.graphics.drawable.Drawable r3 = (android.graphics.drawable.Drawable) r3     // Catch: android.os.RemoteException -> L13

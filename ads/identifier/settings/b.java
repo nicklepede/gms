@@ -9,20 +9,20 @@ import android.os.Build;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
-import defpackage.arwm;
-import defpackage.bxao;
-import defpackage.cyqr;
-import defpackage.fjux;
-import defpackage.fjwq;
-import defpackage.fjzz;
-import defpackage.fkae;
+import defpackage.atzb;
+import defpackage.bzje;
+import defpackage.dbap;
+import defpackage.fmla;
+import defpackage.fmmu;
+import defpackage.fmqe;
+import defpackage.fmqj;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.UUID;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicLong;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class b {
     protected static final String a = new UUID(0, 0).toString();
@@ -59,7 +59,7 @@ public final class b {
     }
 
     private final boolean q(String str, String str2) {
-        return bxao.c(this.e, str2, -1, Binder.getCallingUid(), str, null) == 0;
+        return bzje.c(this.e, str2, -1, Binder.getCallingUid(), str, null) == 0;
     }
 
     public final SharedPreferences a() {
@@ -77,9 +77,9 @@ public final class b {
             String d2 = n ? d() : "";
             j();
             String str = "";
-            if (fjzz.j() && fjzz.a.a().O()) {
+            if (fmqe.j() && fmqe.a.lK().O()) {
                 try {
-                    str = cyqr.b(this.f.e()).toString();
+                    str = dbap.b(this.f.e()).toString();
                     if (TextUtils.isEmpty(str)) {
                         throw new IOException("Generated Id is null");
                     }
@@ -93,7 +93,7 @@ public final class b {
             if (isEmpty) {
                 str = UUID.randomUUID().toString();
             }
-            if (fjzz.a.a().z()) {
+            if (fmqe.a.lK().z()) {
                 Context context = this.e;
                 q.a(context).b();
                 q.a(context).c();
@@ -114,11 +114,11 @@ public final class b {
      */
     /* JADX WARN: Code restructure failed: missing block: B:45:0x00f2, code lost:
     
-        if (r13.a().t() != false) goto L50;
+        if (r13.lK().t() != false) goto L50;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0024, code lost:
     
-        if (defpackage.fjzz.a.a().I() == false) goto L11;
+        if (defpackage.fmqe.a.lK().I() == false) goto L11;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -142,9 +142,9 @@ public final class b {
 
     public final String i(boolean z, boolean z2, String str, String str2) {
         if (z) {
-            arwm.b(!str2.isEmpty());
+            atzb.b(!str2.isEmpty());
         } else {
-            arwm.b(str2.isEmpty());
+            atzb.b(str2.isEmpty());
         }
         b().edit().putBoolean("enable_debug_logging", z).putBoolean("using_cert", z2).putString("adid_key", str).putString("fake_adid_key", str2).apply();
         k();
@@ -159,7 +159,7 @@ public final class b {
     }
 
     public final void k() {
-        if (!fjux.c()) {
+        if (!fmla.c()) {
             Log.v("AdvertisingIdSettings", "The feature flag is not enabled. Not updating Adservices Ad ID.");
         }
         Intent intent = new Intent();
@@ -173,7 +173,7 @@ public final class b {
 
     public final void l(boolean z) {
         synchronized (this.b) {
-            if (Build.VERSION.SDK_INT >= fjzz.c() && fjzz.g() && z) {
+            if (Build.VERSION.SDK_INT >= fmqe.c() && fmqe.g() && z) {
                 j();
             }
             b().edit().putBoolean("enable_limit_ad_tracking", z).apply();
@@ -193,7 +193,7 @@ public final class b {
     }
 
     public final boolean n() {
-        if (fjwq.c()) {
+        if (fmmu.c()) {
             try {
                 if (Settings.Global.getInt(this.e.getContentResolver(), "development_settings_enabled", 0) != 0) {
                     return b().getBoolean("enable_debug_logging", false);
@@ -212,7 +212,7 @@ public final class b {
             if (m()) {
                 return true;
             }
-            if (!fkae.c()) {
+            if (!fmqj.c()) {
                 return false;
             }
             synchronized (obj) {

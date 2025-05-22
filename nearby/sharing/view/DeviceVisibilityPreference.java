@@ -12,12 +12,12 @@ import android.widget.TextView;
 import androidx.preference.Preference;
 import com.google.android.gms.R;
 import com.google.android.gms.nearby.sharing.view.DeviceVisibilityPreference;
-import defpackage.cfcs;
-import defpackage.crnv;
-import defpackage.eitj;
-import defpackage.kmp;
+import defpackage.chke;
+import defpackage.ctxa;
+import defpackage.elgo;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class DeviceVisibilityPreference extends Preference {
     public Switch a;
@@ -32,16 +32,16 @@ public class DeviceVisibilityPreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        LinearLayout linearLayout = (LinearLayout) kmpVar.D(R.id.visibility_text_view);
-        this.c = (ImageView) kmpVar.D(R.id.visibility_icon);
-        this.d = (TextView) kmpVar.D(R.id.visibility_summary);
-        Switch r1 = (Switch) kmpVar.D(R.id.visibility_switch);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        LinearLayout linearLayout = (LinearLayout) mfaVar.D(R.id.visibility_text_view);
+        this.c = (ImageView) mfaVar.D(R.id.visibility_icon);
+        this.d = (TextView) mfaVar.D(R.id.visibility_summary);
+        Switch r1 = (Switch) mfaVar.D(R.id.visibility_switch);
         this.a = r1;
         r1.setVisibility(0);
-        kmpVar.D(R.id.divider).setVisibility(0);
-        this.a.setOnClickListener(new View.OnClickListener() { // from class: crod
+        mfaVar.D(R.id.divider).setVisibility(0);
+        this.a.setOnClickListener(new View.OnClickListener() { // from class: ctxi
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 DeviceVisibilityPreference deviceVisibilityPreference = DeviceVisibilityPreference.this;
@@ -50,7 +50,7 @@ public class DeviceVisibilityPreference extends Preference {
         });
         this.c.setImageDrawable(this.j.getDrawable(R.drawable.sharing_placeholder));
         this.c.setVisibility(0);
-        linearLayout.setOnClickListener(new View.OnClickListener() { // from class: croe
+        linearLayout.setOnClickListener(new View.OnClickListener() { // from class: ctxj
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 DeviceVisibilityPreference deviceVisibilityPreference = DeviceVisibilityPreference.this;
@@ -58,9 +58,9 @@ public class DeviceVisibilityPreference extends Preference {
             }
         });
         CharSequence text = this.d.getText();
-        eitj eitjVar = crnv.a;
+        elgo elgoVar = ctxa.a;
         if (TextUtils.isEmpty(text)) {
-            cfcs.d(this.b, new Intent("com.google.android.gms.nearby.sharing.STATE_CHANGED"));
+            chke.d(this.b, new Intent("com.google.android.gms.nearby.sharing.STATE_CHANGED"));
         }
     }
 

@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.zsl;
+import defpackage.absl;
+import defpackage.atzr;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class DeviceData extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new zsl();
+    public static final Parcelable.Creator CREATOR = new absl();
     final int a;
     public final List b;
 
@@ -23,9 +23,9 @@ public class DeviceData extends AbstractSafeParcelable implements ReflectedParce
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.b;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.o(parcel, 10000, this.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.o(parcel, 10000, this.a);
+        atzr.c(parcel, a);
     }
 }

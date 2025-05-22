@@ -11,21 +11,21 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.feedback.ShowTextChimeraActivity;
 import com.google.android.material.appbar.MaterialToolbar;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.bals;
-import defpackage.baol;
-import defpackage.bivs;
-import defpackage.dozi;
-import defpackage.dxry;
-import defpackage.dxsa;
-import defpackage.eble;
-import defpackage.ejhf;
-import defpackage.ensv;
-import defpackage.fnvm;
-import defpackage.fnvv;
-import defpackage.qet;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.bcpo;
+import defpackage.bcsh;
+import defpackage.blah;
+import defpackage.drjr;
+import defpackage.eadz;
+import defpackage.eaeb;
+import defpackage.edxt;
+import defpackage.eluo;
+import defpackage.eqgo;
+import defpackage.fqnv;
+import defpackage.fqoe;
+import defpackage.rxx;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -33,11 +33,11 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class ShowTextChimeraActivity extends qet {
-    public static final asot j = asot.b("gf_ShowTextActivity", asej.FEEDBACK);
-    private final ensv k = new asmf(Integer.MAX_VALUE, 9);
+public class ShowTextChimeraActivity extends rxx {
+    public static final ausn j = ausn.b("gf_ShowTextActivity", auid.FEEDBACK);
+    private final eqgo k = new aupz(Integer.MAX_VALUE, 9);
 
     private final void l(String str) {
         findViewById(R.id.text_in_list_view).setVisibility(8);
@@ -73,11 +73,11 @@ public class ShowTextChimeraActivity extends qet {
         listView.setDividerHeight(0);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         ServiceDump[] serviceDumpArr;
         super.onCreate(bundle);
-        ErrorReport b = baol.b();
+        ErrorReport b = bcsh.b();
         Intent intent = getIntent();
         int intExtra = intent.getIntExtra("feedback.FIELD_NAME", 0);
         if (b == null || intExtra == 0) {
@@ -85,17 +85,17 @@ public class ShowTextChimeraActivity extends qet {
             return;
         }
         if (intent.getBooleanExtra("extra_theme_dialog", false)) {
-            bivs.b(this, b, R.style.Feedback_Activity_Dialog_Theme, R.style.Feedback_Activity_Dialog_Theme_Dark, R.style.Feedback_Activity_Dialog_Theme_DayNight);
+            blah.b(this, b, R.style.Feedback_Activity_Dialog_Theme, R.style.Feedback_Activity_Dialog_Theme_Dark, R.style.Feedback_Activity_Dialog_Theme_DayNight);
         } else {
-            bivs.b(this, b, R.style.Feedback_Activity_Theme_Light, R.style.Feedback_Activity_Theme_Dark, R.style.Feedback_Activity_Theme_DayNight);
+            blah.b(this, b, R.style.Feedback_Activity_Theme_Light, R.style.Feedback_Activity_Theme_Dark, R.style.Feedback_Activity_Theme_DayNight);
         }
         setContentView(R.layout.show_text_activity);
-        if (fnvm.c()) {
-            int i = eble.a;
-            findViewById(R.id.ll_parent_show_text_activity).setBackgroundColor(dozi.b(R.dimen.gm3_sys_elevation_level2, this));
+        if (fqnv.c()) {
+            int i = edxt.a;
+            findViewById(R.id.ll_parent_show_text_activity).setBackgroundColor(drjr.b(R.dimen.gm3_sys_elevation_level2, this));
         }
-        if (fnvv.a.a().a()) {
-            dxsa.a(findViewById(R.id.ll_parent_show_text_activity), dxry.c);
+        if (fqoe.a.lK().a()) {
+            eaeb.a(findViewById(R.id.ll_parent_show_text_activity), eadz.c);
         }
         String a = a(intExtra, new Object[0]);
         String stringExtra = intent.getStringExtra("feedback.FIELD_VALUE");
@@ -151,7 +151,7 @@ public class ShowTextChimeraActivity extends qet {
                             }
                             strArr = (String[]) arrayList.toArray(new String[0]);
                         } catch (IOException e) {
-                            ((ejhf) ((ejhf) ((ejhf) j.i()).s(e)).ah((char) 3633)).x("Unable to convert bytes to Strings");
+                            ((eluo) ((eluo) ((eluo) j.i()).s(e)).ai((char) 3639)).x("Unable to convert bytes to Strings");
                             strArr = new String[]{"Unable to convert bytes to Strings"};
                         }
                     } else {
@@ -163,11 +163,11 @@ public class ShowTextChimeraActivity extends qet {
         } else if (TextUtils.equals(stringExtra, "product specific binary file path")) {
             String stringExtra3 = intent.getStringExtra("feedback.OBJECT_VALUE");
             a = a(R.string.gf_product_specific_data_file_title, stringExtra3);
-            new bals(stringExtra3, this).executeOnExecutor(this.k, new Void[0]);
+            new bcpo(stringExtra3, this).executeOnExecutor(this.k, new Void[0]);
         }
         MaterialToolbar materialToolbar = (MaterialToolbar) findViewById(R.id.toolbar_show_text_activity);
         materialToolbar.B(a);
-        materialToolbar.w(new View.OnClickListener() { // from class: balr
+        materialToolbar.w(new View.OnClickListener() { // from class: bcpn
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ShowTextChimeraActivity.this.finish();

@@ -7,20 +7,20 @@ import android.os.Parcelable;
 import android.view.View;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.arxc;
-import defpackage.azhr;
-import defpackage.azht;
-import defpackage.ccdr;
-import defpackage.cceg;
+import defpackage.atzr;
+import defpackage.bbln;
+import defpackage.bblp;
+import defpackage.ceml;
+import defpackage.cena;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MarkerOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cceg();
+    public static final Parcelable.Creator CREATOR = new cena();
     public LatLng a;
     public String b;
     public String c;
-    public ccdr d;
+    public ceml d;
     public float e;
     public float f;
     public boolean g;
@@ -57,31 +57,31 @@ public class MarkerOptions extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.c, false);
-        ccdr ccdrVar = this.d;
-        arxc.D(parcel, 5, ccdrVar == null ? null : ccdrVar.a.asBinder());
-        arxc.l(parcel, 6, this.e);
-        arxc.l(parcel, 7, this.f);
-        arxc.e(parcel, 8, this.g);
-        arxc.e(parcel, 9, this.h);
-        arxc.e(parcel, 10, this.i);
-        arxc.l(parcel, 11, this.j);
-        arxc.l(parcel, 12, this.k);
-        arxc.l(parcel, 13, this.l);
-        arxc.l(parcel, 14, this.m);
-        arxc.l(parcel, 15, this.n);
-        arxc.o(parcel, 17, this.o);
-        arxc.D(parcel, 18, new ObjectWrapper(this.r));
-        arxc.o(parcel, 19, this.p);
-        arxc.v(parcel, 20, this.q, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.c, false);
+        ceml cemlVar = this.d;
+        atzr.D(parcel, 5, cemlVar == null ? null : cemlVar.a.asBinder());
+        atzr.l(parcel, 6, this.e);
+        atzr.l(parcel, 7, this.f);
+        atzr.e(parcel, 8, this.g);
+        atzr.e(parcel, 9, this.h);
+        atzr.e(parcel, 10, this.i);
+        atzr.l(parcel, 11, this.j);
+        atzr.l(parcel, 12, this.k);
+        atzr.l(parcel, 13, this.l);
+        atzr.l(parcel, 14, this.m);
+        atzr.l(parcel, 15, this.n);
+        atzr.o(parcel, 17, this.o);
+        atzr.D(parcel, 18, new ObjectWrapper(this.r));
+        atzr.o(parcel, 19, this.p);
+        atzr.v(parcel, 20, this.q, false);
+        atzr.c(parcel, a);
     }
 
     public MarkerOptions(LatLng latLng, String str, String str2, IBinder iBinder, float f, float f2, boolean z, boolean z2, boolean z3, float f3, float f4, float f5, float f6, float f7, int i, IBinder iBinder2, int i2, String str3) {
-        azht azhrVar;
+        bblp bblnVar;
         this.e = 0.5f;
         this.f = 1.0f;
         this.h = true;
@@ -98,7 +98,7 @@ public class MarkerOptions extends AbstractSafeParcelable {
             this.d = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.dynamic.IObjectWrapper");
-            this.d = new ccdr(queryLocalInterface instanceof azht ? (azht) queryLocalInterface : new azhr(iBinder));
+            this.d = new ceml(queryLocalInterface instanceof bblp ? (bblp) queryLocalInterface : new bbln(iBinder));
         }
         this.e = f;
         this.f = f2;
@@ -113,12 +113,12 @@ public class MarkerOptions extends AbstractSafeParcelable {
         this.p = i2;
         this.o = i;
         if (iBinder2 == null) {
-            azhrVar = null;
+            bblnVar = null;
         } else {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.dynamic.IObjectWrapper");
-            azhrVar = queryLocalInterface2 instanceof azht ? (azht) queryLocalInterface2 : new azhr(iBinder2);
+            bblnVar = queryLocalInterface2 instanceof bblp ? (bblp) queryLocalInterface2 : new bbln(iBinder2);
         }
-        this.r = azhrVar != null ? (View) ObjectWrapper.a(azhrVar) : null;
+        this.r = bblnVar != null ? (View) ObjectWrapper.a(bblnVar) : null;
         this.q = str3;
     }
 }

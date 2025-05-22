@@ -9,15 +9,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import com.google.android.cast.JGCastService;
 import com.google.android.gms.R;
-import defpackage.bkpi;
-import defpackage.bkpj;
+import defpackage.bmvz;
+import defpackage.bmwa;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PageIndicator extends ViewGroup {
     public final ArrayList a;
-    public bkpj b;
+    public bmwa b;
     public boolean c;
     private final int d;
     private final int e;
@@ -31,7 +31,7 @@ public class PageIndicator extends ViewGroup {
         this.a = new ArrayList();
         this.g = -1;
         this.h = -1;
-        this.i = new bkpi(this);
+        this.i = new bmvz(this);
         int dimension = (int) context.getResources().getDimension(R.dimen.qs_page_indicator_width);
         this.d = dimension;
         this.e = (int) context.getResources().getDimension(R.dimen.qs_page_indicator_height);

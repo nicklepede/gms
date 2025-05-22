@@ -3,61 +3,61 @@ package com.google.android.gms.ads.internal.mediation.client;
 import android.os.IBinder;
 import android.os.Parcel;
 import com.google.android.gms.ads.internal.client.AdErrorParcel;
-import defpackage.otm;
-import defpackage.oto;
+import defpackage.qmp;
+import defpackage.qmr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class g extends otm implements i {
+public final class g extends qmp implements i {
     public g(IBinder iBinder) {
         super(iBinder, "com.google.android.gms.ads.internal.mediation.client.IMediationAdapterListener");
     }
 
     @Override // com.google.android.gms.ads.internal.mediation.client.i
     public final void a() {
-        ft(1, fr());
+        fG(1, fE());
     }
 
     @Override // com.google.android.gms.ads.internal.mediation.client.i
     public final void b() {
-        ft(2, fr());
+        fG(2, fE());
     }
 
     @Override // com.google.android.gms.ads.internal.mediation.client.i
     public final void c(AdErrorParcel adErrorParcel) {
-        Parcel fr = fr();
-        oto.e(fr, adErrorParcel);
-        ft(23, fr);
+        Parcel fE = fE();
+        qmr.e(fE, adErrorParcel);
+        fG(23, fE);
     }
 
     @Override // com.google.android.gms.ads.internal.mediation.client.i
     public final void d() {
-        ft(8, fr());
+        fG(8, fE());
     }
 
     @Override // com.google.android.gms.ads.internal.mediation.client.i
     public final void e() {
-        ft(6, fr());
+        fG(6, fE());
     }
 
     @Override // com.google.android.gms.ads.internal.mediation.client.i
     public final void f() {
-        ft(5, fr());
+        fG(5, fE());
     }
 
     @Override // com.google.android.gms.ads.internal.mediation.client.i
     public final void g(String str, String str2) {
-        Parcel fr = fr();
-        fr.writeString(str);
-        fr.writeString(str2);
-        ft(9, fr);
+        Parcel fE = fE();
+        fE.writeString(str);
+        fE.writeString(str2);
+        fG(9, fE);
     }
 
     @Override // com.google.android.gms.ads.internal.mediation.client.i
     public final void h(com.google.android.gms.ads.internal.formats.client.l lVar, String str) {
-        Parcel fr = fr();
-        oto.g(fr, lVar);
-        fr.writeString(str);
-        ft(10, fr);
+        Parcel fE = fE();
+        qmr.g(fE, lVar);
+        fE.writeString(str);
+        fG(10, fE);
     }
 }

@@ -3,44 +3,45 @@ package com.google.android.gms.significantplaces.init;
 import android.content.Intent;
 import com.google.android.gms.significantplaces.service.SettingsLoggingService;
 import com.google.android.gms.significantplaces.service.StalePlacesCleaningService;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.aspu;
-import defpackage.byjl;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.fspg;
-import defpackage.fvbo;
-import defpackage.ips;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.auto;
+import defpackage.casd;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.fvku;
+import defpackage.fxxm;
+import defpackage.iri;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class SignificantPlacesModuleInitIntentOperation extends anya {
-    @Override // defpackage.anya
+public final class SignificantPlacesModuleInitIntentOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        fvbo.f(intent, "intent");
-        int i2 = ips.a;
+        fxxm.f(intent, "intent");
+        int i2 = iri.a;
         boolean z = false;
-        if (!aspu.a(this).k() && fspg.c()) {
+        if (!auto.a(this).k() && fvku.c()) {
             z = true;
         }
-        asng.K("com.google.android.gms.significantplaces.settings.TrustedPlacesInjectorService", z);
+        aura.K("com.google.android.gms.significantplaces.settings.TrustedPlacesInjectorService", z);
         if (z) {
-            byjl a = byjl.a(this);
-            byko bykoVar = new byko();
-            bykoVar.w(StalePlacesCleaningService.class.getName());
-            bykoVar.t("StalePlacesCleaningTask");
-            bykoVar.a = bykv.j;
-            bykoVar.l(true);
-            bykoVar.v(2);
-            a.f(bykoVar.b());
-            byko bykoVar2 = new byko();
-            bykoVar2.w(SettingsLoggingService.class.getName());
-            bykoVar2.t("SettingsLoggingTask");
-            bykoVar2.a = bykv.j;
-            bykoVar2.l(true);
-            bykoVar2.v(2);
-            a.f(bykoVar2.b());
+            casd a = casd.a(this);
+            catg catgVar = new catg();
+            catgVar.w(StalePlacesCleaningService.class.getName());
+            catgVar.t("StalePlacesCleaningTask");
+            catn catnVar = catn.j;
+            catgVar.a = catnVar;
+            catgVar.l(true);
+            catgVar.v(2);
+            a.f(catgVar.b());
+            catg catgVar2 = new catg();
+            catgVar2.w(SettingsLoggingService.class.getName());
+            catgVar2.t("SettingsLoggingTask");
+            catgVar2.a = catnVar;
+            catgVar2.l(true);
+            catgVar2.v(2);
+            a.f(catgVar2.b());
         }
     }
 }

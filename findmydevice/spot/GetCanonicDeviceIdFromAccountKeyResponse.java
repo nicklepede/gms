@@ -3,15 +3,15 @@ package com.google.android.gms.findmydevice.spot;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bcvi;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bewu;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class GetCanonicDeviceIdFromAccountKeyResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bcvi();
+    public static final Parcelable.Creator CREATOR = new bewu();
     public String a;
     public String b;
 
@@ -24,7 +24,7 @@ public final class GetCanonicDeviceIdFromAccountKeyResponse extends AbstractSafe
         }
         if (obj instanceof GetCanonicDeviceIdFromAccountKeyResponse) {
             GetCanonicDeviceIdFromAccountKeyResponse getCanonicDeviceIdFromAccountKeyResponse = (GetCanonicDeviceIdFromAccountKeyResponse) obj;
-            if (arwb.b(this.a, getCanonicDeviceIdFromAccountKeyResponse.a) && arwb.b(this.b, getCanonicDeviceIdFromAccountKeyResponse.b)) {
+            if (atyq.b(this.a, getCanonicDeviceIdFromAccountKeyResponse.a) && atyq.b(this.b, getCanonicDeviceIdFromAccountKeyResponse.b)) {
                 return true;
             }
         }
@@ -37,10 +37,10 @@ public final class GetCanonicDeviceIdFromAccountKeyResponse extends AbstractSafe
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 
     public GetCanonicDeviceIdFromAccountKeyResponse(String str, String str2) {

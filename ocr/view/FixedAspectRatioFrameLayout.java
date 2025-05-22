@@ -6,9 +6,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
 import com.google.android.cast.JGCastService;
-import defpackage.rpq;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class FixedAspectRatioFrameLayout extends FrameLayout {
     public float a;
@@ -47,7 +47,7 @@ public class FixedAspectRatioFrameLayout extends FrameLayout {
         super(context, attributeSet);
         this.a = 0.0f;
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.l);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.l);
             try {
                 this.a = obtainStyledAttributes.getFloat(0, this.a);
             } finally {

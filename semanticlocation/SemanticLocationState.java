@@ -5,15 +5,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.czhb;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dbqz;
+import defpackage.elgo;
+import defpackage.elpg;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SemanticLocationState extends AbstractSafeParcelable implements ReflectedParcelable {
     public static final Parcelable.Creator CREATOR;
@@ -23,9 +23,9 @@ public class SemanticLocationState extends AbstractSafeParcelable implements Ref
     public final DebugData d;
 
     static {
-        int i = eitj.d;
-        a = ejcb.a;
-        CREATOR = new czhb();
+        int i = elgo.d;
+        a = elpg.a;
+        CREATOR = new dbqz();
     }
 
     public SemanticLocationState(List list, long j, DebugData debugData) {
@@ -49,7 +49,7 @@ public class SemanticLocationState extends AbstractSafeParcelable implements Ref
             return false;
         }
         SemanticLocationState semanticLocationState = (SemanticLocationState) obj;
-        return arwb.b(this.b, semanticLocationState.b) && arwb.b(Long.valueOf(this.c), Long.valueOf(semanticLocationState.c)) && arwb.b(this.d, semanticLocationState.d);
+        return atyq.b(this.b, semanticLocationState.b) && atyq.b(Long.valueOf(this.c), Long.valueOf(semanticLocationState.c)) && atyq.b(this.d, semanticLocationState.d);
     }
 
     public final int hashCode() {
@@ -59,10 +59,10 @@ public class SemanticLocationState extends AbstractSafeParcelable implements Ref
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.b;
-        int a2 = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.q(parcel, 2, this.c);
-        arxc.t(parcel, 3, this.d, i, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.q(parcel, 2, this.c);
+        atzr.t(parcel, 3, this.d, i, false);
+        atzr.c(parcel, a2);
     }
 }

@@ -1,14 +1,14 @@
 package com.google.android.gms.people.database;
 
 import com.google.android.chimera.IntentOperation;
-import defpackage.ctkk;
-import defpackage.eijm;
+import defpackage.cvtq;
+import defpackage.ekwr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class DatabaseUpdateOperation extends IntentOperation {
-    private final ctkk a = new ctkk();
-    private eijm b;
+    private final cvtq a = new cvtq();
+    private ekwr b;
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Code restructure failed: missing block: B:29:0x00f5, code lost:

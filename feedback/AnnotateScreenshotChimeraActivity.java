@@ -14,30 +14,30 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import com.google.android.gms.R;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bafg;
-import defpackage.bafh;
-import defpackage.bafi;
-import defpackage.bafj;
-import defpackage.bafk;
-import defpackage.bafl;
-import defpackage.bafm;
-import defpackage.bajp;
-import defpackage.baol;
-import defpackage.bivr;
-import defpackage.bivs;
-import defpackage.byhr;
-import defpackage.fnnl;
-import defpackage.fnpd;
-import defpackage.fnpv;
-import defpackage.fnrr;
-import defpackage.fnte;
-import defpackage.qfp;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bcjc;
+import defpackage.bcjd;
+import defpackage.bcje;
+import defpackage.bcjf;
+import defpackage.bcjg;
+import defpackage.bcjh;
+import defpackage.bcji;
+import defpackage.bcnl;
+import defpackage.bcsh;
+import defpackage.blag;
+import defpackage.blah;
+import defpackage.caqj;
+import defpackage.fqfu;
+import defpackage.fqhm;
+import defpackage.fqie;
+import defpackage.fqka;
+import defpackage.fqln;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class AnnotateScreenshotChimeraActivity extends qfp {
+public class AnnotateScreenshotChimeraActivity extends ryt {
     public DrawableView j;
     boolean k;
     private View l;
@@ -56,15 +56,15 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
     private int y;
 
     static {
-        asot.b("gf_AnnotateScreenshot", asej.FEEDBACK);
+        ausn.b("gf_AnnotateScreenshot", auid.FEEDBACK);
     }
 
     private final void h(ImageView imageView) {
-        bivr.q(imageView, this, bivs.a(this, R.attr.ghf_greyIconColor));
+        blag.q(imageView, this, blah.a(this, R.attr.ghf_greyIconColor));
     }
 
     public final void a() {
-        baol.e(this.j.e);
+        bcsh.e(this.j.e);
         finish();
     }
 
@@ -80,7 +80,7 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
         this.v.setLeft(this.x);
         this.v.setRight(displayMetrics.widthPixels - this.x);
         DrawableView drawableView = this.j;
-        if (fnpv.a.a().a()) {
+        if (fqie.a.lK().a()) {
             drawableView.b = bitmap.isMutable() ? bitmap : bitmap.copy(bitmap.getConfig(), true);
         } else {
             drawableView.b = bitmap;
@@ -88,7 +88,7 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
         drawableView.e = bitmap.copy(bitmap.getConfig(), true);
         drawableView.c = new Canvas(drawableView.b);
         drawableView.c.drawBitmap(drawableView.b, 0.0f, 0.0f, drawableView.a);
-        if (fnte.a.a().a()) {
+        if (fqln.a.lK().a()) {
             this.j.invalidate();
         }
         this.k = true;
@@ -99,10 +99,10 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
     }
 
     public final void f() {
-        if (!fnrr.c() && bivs.d(this, R.attr.gf_isInDarkMode)) {
+        if (!fqka.c() && blah.d(this, R.attr.gf_isInDarkMode)) {
             findViewById(R.id.gf_select_blackout_view).setBackground(getDrawable(R.drawable.gf_circle_drawable_blackout_without_stroke));
         }
-        this.j.a((int) fnnl.d(), (int) fnnl.c());
+        this.j.a((int) fqfu.d(), (int) fqfu.c());
         View view = this.n;
         int i = this.y;
         view.setPadding(i, i, i, i);
@@ -110,24 +110,24 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
     }
 
     public final void g() {
-        if (!fnrr.c() && bivs.d(this, R.attr.gf_isInDarkMode)) {
+        if (!fqka.c() && blah.d(this, R.attr.gf_isInDarkMode)) {
             findViewById(R.id.gf_select_blackout_view).setBackground(getDrawable(R.drawable.gf_circle_drawable_blackout_with_stroke));
         }
-        this.j.a((int) fnnl.g(), (int) fnnl.f());
+        this.j.a((int) fqfu.g(), (int) fqfu.f());
         View view = this.o;
         int i = this.y;
         view.setPadding(i, i, i, i);
         this.n.setPadding(0, 0, 0, 0);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (!(baol.f() ? baol.d().c() : FeedbackChimeraActivity.W())) {
+        if (!(bcsh.f() ? bcsh.d().c() : FeedbackChimeraActivity.W())) {
             finish();
             return;
         }
-        bajp c = baol.c();
+        bcnl c = bcsh.c();
         if (c == null) {
             setTheme(R.style.gf_DayNightActivityStyle);
         } else {
@@ -135,10 +135,10 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
             if (b == null) {
                 setTheme(R.style.gf_DayNightActivityStyle);
             } else {
-                bivs.b(this, b, R.style.gf_LightActivityStyle, R.style.gf_DarkActivityStyle, R.style.gf_DayNightActivityStyle);
+                blah.b(this, b, R.style.gf_LightActivityStyle, R.style.gf_DarkActivityStyle, R.style.gf_DayNightActivityStyle);
             }
         }
-        if (fnpd.c() && getPackageManager().hasSystemFeature("android.software.communal_mode")) {
+        if (fqhm.c() && getPackageManager().hasSystemFeature("android.software.communal_mode")) {
             getWindow().addFlags(524416);
         }
         setContentView(R.layout.annotate_screenshot_ui);
@@ -158,27 +158,27 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
         h((ImageView) this.r);
         h((ImageView) this.s);
         h((ImageView) this.t);
-        if (fnrr.c()) {
+        if (fqka.c()) {
             View findViewById = findViewById(R.id.gf_select_highlight_view);
-            findViewById.setBackground(bivr.b(findViewById.getBackground(), this, (int) fnnl.g()));
+            findViewById.setBackground(blag.b(findViewById.getBackground(), this, (int) fqfu.g()));
             View findViewById2 = findViewById(R.id.gf_select_blackout_view);
-            findViewById2.setBackground(bivr.b(findViewById2.getBackground(), this, (int) fnnl.d()));
+            findViewById2.setBackground(blag.b(findViewById2.getBackground(), this, (int) fqfu.d()));
         }
-        this.l.setOnClickListener(new bafg(this));
-        this.r.setOnClickListener(new bafh(this));
-        this.m.setOnClickListener(new bafi(this));
-        this.s.setOnClickListener(new bafj(this));
-        this.t.setOnClickListener(new bafk(this));
-        this.u.setOnClickListener(new bafl(this));
-        new byhr(Looper.getMainLooper()).postDelayed(new bafm(this), fnnl.a.a().i());
-        if (baol.h()) {
+        this.l.setOnClickListener(new bcjc(this));
+        this.r.setOnClickListener(new bcjd(this));
+        this.m.setOnClickListener(new bcje(this));
+        this.s.setOnClickListener(new bcjf(this));
+        this.t.setOnClickListener(new bcjg(this));
+        this.u.setOnClickListener(new bcjh(this));
+        new caqj(Looper.getMainLooper()).postDelayed(new bcji(this), fqfu.a.lK().i());
+        if (bcsh.h()) {
             setRequestedOrientation(1);
         } else {
             setRequestedOrientation(0);
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onKeyDown(int i, KeyEvent keyEvent) {
         if (i != 4) {
             return super.onKeyDown(i, keyEvent);
@@ -187,7 +187,7 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onTouchEvent(MotionEvent motionEvent) {
         motionEvent.setLocation(motionEvent.getX() - this.x, motionEvent.getY() - this.w);
         this.j.onTouchEvent(motionEvent);
@@ -204,7 +204,7 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
      */
     /* JADX WARN: Removed duplicated region for block: B:17:0x0066  */
     /* JADX WARN: Removed duplicated region for block: B:21:0x006b  */
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj, android.view.Window.Callback
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn, android.view.Window.Callback
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -214,14 +214,14 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
             r5 = this;
             boolean r6 = r5.k
             if (r6 != 0) goto Laf
-            boolean r6 = defpackage.fomv.c()
-            boolean r6 = defpackage.bivk.b(r6)
+            boolean r6 = defpackage.frfo.c()
+            boolean r6 = defpackage.bkzz.b(r6)
             if (r6 != 0) goto Lf
             goto L4a
         Lf:
             android.content.res.Resources r6 = r5.getResources()
             android.util.DisplayMetrics r6 = r6.getDisplayMetrics()
-            boolean r0 = defpackage.baol.h()
+            boolean r0 = defpackage.bcsh.h()
             if (r0 == 0) goto L24
             int r0 = r6.heightPixels
             int r6 = r6.widthPixels
@@ -233,9 +233,9 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
             if (r0 <= r6) goto L2b
             goto L4a
         L2b:
-            boolean r6 = defpackage.baol.f()
+            boolean r6 = defpackage.bcsh.f()
             if (r6 == 0) goto L40
-            bamz r6 = defpackage.baol.d()
+            bcqv r6 = defpackage.bcsh.d()
             boolean r0 = r6.c()
             if (r0 == 0) goto L54
             boolean r6 = r6.g
@@ -247,14 +247,14 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
             boolean r6 = com.google.android.gms.feedback.FeedbackChimeraActivity.q
             if (r6 == 0) goto L54
         L4a:
-            android.graphics.Bitmap r6 = defpackage.baol.a()
+            android.graphics.Bitmap r6 = defpackage.bcsh.a()
             if (r6 == 0) goto Laf
             r5.b(r6)
             return
         L54:
-            bajp r6 = defpackage.baol.c()
+            bcnl r6 = defpackage.bcsh.c()
             com.google.android.gms.googlehelp.feedback.Screenshot r6 = r6.g
-            bajp r0 = defpackage.baol.c()
+            bcnl r0 = defpackage.bcsh.c()
             com.google.android.gms.feedback.ErrorReport r0 = r0.b()
             byte[] r1 = r0.v
             if (r1 != 0) goto L6b
@@ -275,8 +275,8 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
             r2.getWindowVisibleDisplayFrame(r1)
             android.content.res.Resources r2 = r5.getResources()
             r3 = 0
-            android.util.Pair r6 = defpackage.bajx.a(r2, r1, r0, r6, r3)
-            bafn r0 = new bafn
+            android.util.Pair r6 = defpackage.bcnt.a(r2, r1, r0, r6, r3)
+            bcjj r0 = new bcjj
             java.lang.Object r1 = r6.first
             java.lang.Integer r1 = (java.lang.Integer) r1
             int r1 = r1.intValue()
@@ -284,7 +284,7 @@ public class AnnotateScreenshotChimeraActivity extends qfp {
             java.lang.Integer r6 = (java.lang.Integer) r6
             int r6 = r6.intValue()
             r0.<init>(r5, r1, r6)
-            asmf r6 = new asmf
+            aupz r6 = new aupz
             r1 = 2147483647(0x7fffffff, float:NaN)
             r2 = 9
             r6.<init>(r1, r2)

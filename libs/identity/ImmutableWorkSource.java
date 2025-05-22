@@ -6,22 +6,22 @@ import android.os.Process;
 import android.os.WorkSource;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.libs.identity.ImmutableWorkSource;
-import defpackage.arxc;
-import defpackage.asrj;
-import defpackage.bwpx;
-import defpackage.bwpy;
-import defpackage.bwqa;
-import defpackage.fuur;
-import defpackage.fuuw;
-import defpackage.fuux;
-import defpackage.fuuy;
-import defpackage.fuvz;
-import defpackage.fuwa;
-import defpackage.fuwb;
-import defpackage.fvaf;
-import defpackage.fvbj;
-import defpackage.fvbo;
-import defpackage.fvcf;
+import defpackage.atzr;
+import defpackage.auvd;
+import defpackage.byyk;
+import defpackage.byyl;
+import defpackage.byyn;
+import defpackage.fxqp;
+import defpackage.fxqu;
+import defpackage.fxqv;
+import defpackage.fxqw;
+import defpackage.fxrx;
+import defpackage.fxry;
+import defpackage.fxrz;
+import defpackage.fxwd;
+import defpackage.fxxh;
+import defpackage.fxxm;
+import defpackage.fxyd;
 import j$.lang.Iterable$CC;
 import j$.util.Collection;
 import j$.util.List;
@@ -37,29 +37,29 @@ import java.util.function.IntFunction;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public final class ImmutableWorkSource extends AbstractSafeParcelable implements List, j$.util.List, fvcf {
-    public static final Parcelable.Creator CREATOR = new bwpy();
+public final class ImmutableWorkSource extends AbstractSafeParcelable implements List, j$.util.List, fxyd {
+    public static final Parcelable.Creator CREATOR = new byyl();
     public static final ImmutableWorkSource a = new ImmutableWorkSource(new WorkSource());
-    public static final fuuw b = fuux.a(fuuy.c, new fvaf() { // from class: bwpv
-        @Override // defpackage.fvaf
+    public static final fxqu b = fxqv.a(fxqw.c, new fxwd() { // from class: byyi
+        @Override // defpackage.fxwd
         public final Object a() {
-            return new ImmutableWorkSource(asrj.c(Process.myUid(), "com.google.android.gms"));
+            return new ImmutableWorkSource(auvd.c(Process.myUid(), "com.google.android.gms"));
         }
     });
     public final WorkSource c;
-    private final /* synthetic */ bwqa d;
+    private final /* synthetic */ byyn d;
 
-    @fuur
+    @fxqp
     public ImmutableWorkSource(WorkSource workSource) {
-        fvbo.f(workSource, "workSource");
-        this.d = new bwqa(workSource);
+        fxxm.f(workSource, "workSource");
+        this.d = new byyn(workSource);
         this.c = workSource;
     }
 
     public static final ImmutableWorkSource c(WorkSource workSource) {
-        return (workSource == null || asrj.g(workSource)) ? a : new ImmutableWorkSource(new WorkSource(workSource));
+        return (workSource == null || auvd.g(workSource)) ? a : new ImmutableWorkSource(new WorkSource(workSource));
     }
 
     public final int a() {
@@ -87,17 +87,17 @@ public final class ImmutableWorkSource extends AbstractSafeParcelable implements
 
     @Override // java.util.List, java.util.Collection
     public final /* bridge */ boolean contains(Object obj) {
-        if (!(obj instanceof bwpx)) {
+        if (!(obj instanceof byyk)) {
             return false;
         }
-        bwpx bwpxVar = (bwpx) obj;
-        fvbo.f(bwpxVar, "element");
-        return this.d.contains(bwpxVar);
+        byyk byykVar = (byyk) obj;
+        fxxm.f(byykVar, "element");
+        return this.d.contains(byykVar);
     }
 
     @Override // java.util.List, java.util.Collection
     public final boolean containsAll(Collection collection) {
-        fvbo.f(collection, "elements");
+        fxxm.f(collection, "elements");
         return this.d.containsAll(collection);
     }
 
@@ -106,7 +106,7 @@ public final class ImmutableWorkSource extends AbstractSafeParcelable implements
         if (this == obj) {
             return true;
         }
-        return (obj instanceof ImmutableWorkSource) && fvbo.n(this.c, ((ImmutableWorkSource) obj).c);
+        return (obj instanceof ImmutableWorkSource) && fxxm.n(this.c, ((ImmutableWorkSource) obj).c);
     }
 
     @Override // java.lang.Iterable, j$.util.Collection, j$.lang.a
@@ -126,12 +126,12 @@ public final class ImmutableWorkSource extends AbstractSafeParcelable implements
 
     @Override // java.util.List
     public final /* bridge */ int indexOf(Object obj) {
-        if (!(obj instanceof bwpx)) {
+        if (!(obj instanceof byyk)) {
             return -1;
         }
-        bwpx bwpxVar = (bwpx) obj;
-        fvbo.f(bwpxVar, "element");
-        return this.d.indexOf(bwpxVar);
+        byyk byykVar = (byyk) obj;
+        fxxm.f(byykVar, "element");
+        return this.d.indexOf(byykVar);
     }
 
     @Override // java.util.List, java.util.Collection
@@ -141,22 +141,22 @@ public final class ImmutableWorkSource extends AbstractSafeParcelable implements
 
     @Override // java.util.List, java.util.Collection, java.lang.Iterable
     public final Iterator iterator() {
-        return new fuvz(this.d);
+        return new fxrx(this.d);
     }
 
     @Override // java.util.List
     public final /* bridge */ int lastIndexOf(Object obj) {
-        if (!(obj instanceof bwpx)) {
+        if (!(obj instanceof byyk)) {
             return -1;
         }
-        bwpx bwpxVar = (bwpx) obj;
-        fvbo.f(bwpxVar, "element");
-        return this.d.lastIndexOf(bwpxVar);
+        byyk byykVar = (byyk) obj;
+        fxxm.f(byykVar, "element");
+        return this.d.lastIndexOf(byykVar);
     }
 
     @Override // java.util.List
     public final ListIterator listIterator() {
-        return new fuwa(this.d, 0);
+        return new fxry(this.d, 0);
     }
 
     @Override // java.util.Collection, j$.util.Collection
@@ -216,27 +216,27 @@ public final class ImmutableWorkSource extends AbstractSafeParcelable implements
 
     @Override // java.util.List
     public final java.util.List subList(int i, int i2) {
-        return new fuwb(this.d, i, i2);
+        return new fxrz(this.d, i, i2);
     }
 
     @Override // java.util.List, java.util.Collection
     public final Object[] toArray() {
-        return fvbj.a(this);
+        return fxxh.a(this);
     }
 
     public final String toString() {
         String workSource = this.c.toString();
-        fvbo.e(workSource, "toString(...)");
+        fxxm.e(workSource, "toString(...)");
         return workSource;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "dest");
+        fxxm.f(parcel, "dest");
         WorkSource workSource = this.c;
-        int a2 = arxc.a(parcel);
-        arxc.t(parcel, 1, workSource, i, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.t(parcel, 1, workSource, i, false);
+        atzr.c(parcel, a2);
     }
 
     @Override // java.util.List, java.util.Collection
@@ -251,7 +251,7 @@ public final class ImmutableWorkSource extends AbstractSafeParcelable implements
 
     @Override // java.util.List
     public final ListIterator listIterator(int i) {
-        return new fuwa(this.d, i);
+        return new fxry(this.d, i);
     }
 
     @Override // java.util.List, java.util.Collection
@@ -266,7 +266,7 @@ public final class ImmutableWorkSource extends AbstractSafeParcelable implements
 
     @Override // java.util.List, java.util.Collection
     public final Object[] toArray(Object[] objArr) {
-        fvbo.f(objArr, "array");
-        return fvbj.b(this, objArr);
+        fxxm.f(objArr, "array");
+        return fxxh.b(this, objArr);
     }
 }

@@ -7,96 +7,96 @@ import android.os.IBinder;
 import android.util.Log;
 import com.google.android.chimera.Service;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.arwm;
-import defpackage.asej;
-import defpackage.blfp;
-import defpackage.blfw;
-import defpackage.blmk;
-import defpackage.blms;
-import defpackage.blog;
-import defpackage.blrh;
-import defpackage.blsf;
-import defpackage.blte;
-import defpackage.bltn;
-import defpackage.bxgj;
-import defpackage.bxhc;
-import defpackage.bxhk;
-import defpackage.bxhl;
-import defpackage.eiic;
-import defpackage.eiuu;
-import defpackage.ejck;
-import defpackage.enkr;
-import defpackage.fpaz;
+import defpackage.atzb;
+import defpackage.auid;
+import defpackage.bnmh;
+import defpackage.bnmo;
+import defpackage.bntc;
+import defpackage.bntk;
+import defpackage.bnuy;
+import defpackage.bnxz;
+import defpackage.bnyx;
+import defpackage.bnzw;
+import defpackage.boaf;
+import defpackage.bzoz;
+import defpackage.bzps;
+import defpackage.bzqa;
+import defpackage.bzqb;
+import defpackage.ekvh;
+import defpackage.elhz;
+import defpackage.elpp;
+import defpackage.epyi;
+import defpackage.frug;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class IndexChimeraService extends Service implements bxhk {
+public class IndexChimeraService extends Service implements bzqa {
     public static final /* synthetic */ int a = 0;
-    private static final eiuu b = eiuu.O(21, 30, 33, 32, 36, 66, 78);
-    private bltn c;
+    private static final elhz b = elhz.O(21, 30, 33, 32, 36, 66, 78);
+    private boaf c;
 
-    @Override // defpackage.bxhk
-    public final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzqa
+    public final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         if (this.c == null) {
-            blfw.a("IndexService is unavailable on this device");
-            bxgjVar.a(16, new Bundle());
+            bnmo.a("IndexService is unavailable on this device");
+            bzozVar.a(16, new Bundle());
             return;
         }
         String str = getServiceRequest.f;
         String str2 = getServiceRequest.p;
-        asej asejVar = (asej) eiic.c(asej.b(getServiceRequest.d), asej.UNKNOWN);
+        auid auidVar = (auid) ekvh.c(auid.b(getServiceRequest.d), auid.UNKNOWN);
         int callingUid = Binder.getCallingUid();
         int i = getServiceRequest.e;
         Bundle bundle = getServiceRequest.i;
-        c().h(new blte(this, enkr.GET_CLIENT_SERVICE_INTERFACE, str, bxgjVar, str, asejVar, i, callingUid, bundle == null ? null : bundle.getString("ComponentName"), str2));
+        c().h(new bnzw(this, epyi.GET_CLIENT_SERVICE_INTERFACE, str, bzozVar, str, auidVar, i, callingUid, bundle == null ? null : bundle.getString("ComponentName"), str2));
     }
 
-    public final blfp b() {
-        arwm.s(this.c);
+    public final bnmh b() {
+        atzb.s(this.c);
         return this.c.a();
     }
 
-    public final blsf c() {
-        arwm.s(this.c);
+    public final bnyx c() {
+        atzb.s(this.c);
         return this.c.c;
     }
 
-    public final void d(blms blmsVar, bxgj bxgjVar, bxhc bxhcVar) {
+    public final void d(bntk bntkVar, bzoz bzozVar, bzps bzpsVar) {
         boolean z;
         try {
-            blmk blmkVar = b().r;
-            synchronized (blmsVar.e) {
-                boolean equals = blmsVar.b.equals("com.google.android.gms");
-                String str = blmsVar.g;
+            bntc bntcVar = b().r;
+            synchronized (bntkVar.e) {
+                boolean equals = bntkVar.b.equals("com.google.android.gms");
+                String str = bntkVar.g;
                 z = true;
                 boolean z2 = equals && (str != null ? str.contains(" getStringResource threw a NPE") : false);
-                String str2 = blmsVar.g;
+                String str2 = bntkVar.g;
                 if (str2 == null) {
                     z = z2;
                 } else if (!z2) {
-                    throw new blog(str2);
+                    throw new bnuy(str2);
                 }
             }
-            if (z && blmkVar != null) {
-                blmkVar.d("b28339005");
+            if (z && bntcVar != null) {
+                bntcVar.d("b28339005");
             }
-            e(bxgjVar, 0, bxhcVar);
-        } catch (blog e) {
-            blfw.i("Failed to check resources for package %s, %s", blmsVar.b, e);
-            e(bxgjVar, 10, bxhcVar);
+            e(bzozVar, 0, bzpsVar);
+        } catch (bnuy e) {
+            bnmo.i("Failed to check resources for package %s, %s", bntkVar.b, e);
+            e(bzozVar, 10, bzpsVar);
         }
     }
 
-    public final void e(bxgj bxgjVar, int i, bxhc bxhcVar) {
+    public final void e(bzoz bzozVar, int i, bzps bzpsVar) {
         try {
             if (i != 0) {
-                bxgjVar.a(i, new Bundle());
+                bzozVar.a(i, new Bundle());
             } else {
-                arwm.s(bxhcVar);
-                bxgjVar.c(bxhcVar);
+                atzb.s(bzpsVar);
+                bzozVar.c(bzpsVar);
             }
         } catch (Throwable th) {
-            blfw.j(th, "Service broker callback failed", new Object[0]);
+            bnmo.j(th, "Service broker callback failed", new Object[0]);
             b().r.d("postinit_failed");
         }
     }
@@ -107,35 +107,35 @@ public class IndexChimeraService extends Service implements bxhk {
             Log.w("IndexChimeraService", "incompatible service action: ".concat(String.valueOf(intent.getAction())));
             return null;
         }
-        eiuu eiuuVar = b;
-        ejck ejckVar = ejck.a;
-        return new bxhl(this, eiuuVar, ejckVar, null, 1, ejckVar, this, null, false);
+        elhz elhzVar = b;
+        elpp elppVar = elpp.a;
+        return new bzqb(this, elhzVar, elppVar, null, 1, elppVar, this, null, false);
     }
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        blfw.b("%s: IndexService onCreate", "main");
-        if (fpaz.j()) {
-            this.c = bltn.c(getApplicationContext());
+        bnmo.b("%s: IndexService onCreate", "main");
+        if (frug.j()) {
+            this.c = boaf.c(getApplicationContext());
             b();
-            blrh.b(this);
+            bnxz.b(this);
         }
         super.onCreate();
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        blfw.b("%s: IndexService onDestroy", "main");
-        bltn bltnVar = this.c;
-        if (bltnVar != null) {
-            bltnVar.b();
+        bnmo.b("%s: IndexService onDestroy", "main");
+        boaf boafVar = this.c;
+        if (boafVar != null) {
+            boafVar.b();
         }
         super.onDestroy();
     }
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        blfw.d("%s: IndexService: onStartCommand with %s", "main", intent);
+        bnmo.d("%s: IndexService: onStartCommand with %s", "main", intent);
         if (intent == null || !"com.google.android.gms.icing.INDEX_SERVICE".equals(intent.getAction())) {
             return 2;
         }
@@ -146,7 +146,7 @@ public class IndexChimeraService extends Service implements bxhk {
 
     @Override // com.google.android.chimera.Service
     public final boolean onUnbind(Intent intent) {
-        blfw.b("%s: Unbind", "main");
+        bnmo.b("%s: Unbind", "main");
         return false;
     }
 }

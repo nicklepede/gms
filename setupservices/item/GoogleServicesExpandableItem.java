@@ -8,32 +8,32 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.setupdesign.items.ExpandableSwitchItem;
-import defpackage.dcdy;
-import defpackage.dcem;
-import defpackage.dcfd;
-import defpackage.dcfm;
-import defpackage.edeo;
-import defpackage.edeq;
-import defpackage.edhd;
-import defpackage.edjl;
-import defpackage.edjp;
-import defpackage.edjs;
-import defpackage.esxx;
-import defpackage.esyb;
-import defpackage.esye;
-import defpackage.esyq;
-import defpackage.esyr;
-import defpackage.fecj;
+import defpackage.deoe;
+import defpackage.deos;
+import defpackage.depj;
+import defpackage.deps;
+import defpackage.efrj;
+import defpackage.efrl;
+import defpackage.efty;
+import defpackage.efwg;
+import defpackage.efwk;
+import defpackage.efwn;
+import defpackage.evnn;
+import defpackage.evnr;
+import defpackage.evnu;
+import defpackage.evog;
+import defpackage.evoh;
+import defpackage.fgrc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class GoogleServicesExpandableItem extends ExpandableSwitchItem implements dcdy, edhd {
+public class GoogleServicesExpandableItem extends ExpandableSwitchItem implements deoe, efty {
     public static final /* synthetic */ int d = 0;
-    public dcem a;
-    public dcem b;
-    public dcem c;
-    private dcem q;
-    private dcem r;
+    public deos a;
+    public deos b;
+    public deos c;
+    private deos q;
+    private deos r;
     private final Context s;
     private final int t;
     private final boolean u;
@@ -45,8 +45,8 @@ public class GoogleServicesExpandableItem extends ExpandableSwitchItem implement
         this.u = z2;
         this.v = z3;
         this.s = context;
-        int i2 = edjs.a;
-        if (edeq.s(context)) {
+        int i2 = efwn.a;
+        if (efrl.s(context)) {
             return;
         }
         if (z3) {
@@ -66,35 +66,37 @@ public class GoogleServicesExpandableItem extends ExpandableSwitchItem implement
         D(true != z ? R.layout.setupservices_items_expandable_switch_tinted : R.layout.setupservices_items_expandable_switch_tinted_with_blue_chip);
     }
 
-    @Override // com.google.android.setupdesign.items.ExpandableSwitchItem, com.google.android.setupdesign.items.SwitchItem, com.google.android.setupdesign.items.Item, defpackage.edhg
+    @Override // com.google.android.setupdesign.items.ExpandableSwitchItem, com.google.android.setupdesign.items.SwitchItem, com.google.android.setupdesign.items.Item, defpackage.efub
     public final void b(View view) {
         CharSequence k;
         View findViewById;
         super.b(view);
         view.setClickable(false);
         Context context = view.getContext();
-        dcfm dcfmVar = dcfm.a;
-        if (dcfmVar == null) {
-            synchronized (dcfm.class) {
-                dcfmVar = dcfm.a;
-                if (dcfmVar == null) {
-                    dcfmVar = new dcfm(context);
-                    dcfm.a = dcfmVar;
+        deps depsVar = deps.a;
+        if (depsVar == null) {
+            synchronized (deps.class) {
+                depsVar = deps.a;
+                if (depsVar == null) {
+                    depsVar = new deps(context);
+                    deps.a = depsVar;
                 }
             }
         }
-        if (dcfmVar.b && (findViewById = view.findViewById(R.id.sud_items_icon_container)) != null) {
+        if (depsVar.b && (findViewById = view.findViewById(R.id.sud_items_icon_container)) != null) {
             findViewById.setVisibility(8);
         }
         Context context2 = this.s;
-        int i = edjs.a;
-        if (edeq.s(context2)) {
+        int i = efwn.a;
+        if (efrl.s(context2)) {
             return;
         }
-        if (edeq.z(view.getContext())) {
+        if (efrl.z(view.getContext())) {
             LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.sud_items_expandable_switch_content).getParent();
             int paddingBottom = linearLayout.getPaddingBottom();
-            if (edeq.h(view.getContext()).u(edeo.CONFIG_ITEMS_DIVIDER_SHOWN) && !edeq.h(view.getContext()).n(view.getContext(), edeo.CONFIG_ITEMS_DIVIDER_SHOWN, true)) {
+            efrl h = efrl.h(view.getContext());
+            efrj efrjVar = efrj.CONFIG_ITEMS_DIVIDER_SHOWN;
+            if (h.u(efrjVar) && !efrl.h(view.getContext()).n(view.getContext(), efrjVar, true)) {
                 paddingBottom = view.getResources().getDimensionPixelSize(R.dimen.item_padding_bottom);
             }
             linearLayout.setPadding(linearLayout.getPaddingLeft(), 0, linearLayout.getPaddingRight(), paddingBottom);
@@ -102,8 +104,8 @@ public class GoogleServicesExpandableItem extends ExpandableSwitchItem implement
             textView.setTextSize(0, view.getResources().getDimensionPixelSize(R.dimen.bc_expandable_switch_item_summary_text_size));
             textView.setLineSpacing(view.getResources().getDimensionPixelSize(R.dimen.bc_expandable_switch_item_summary_line_spacing_extra), textView.getLineSpacingMultiplier());
             if (this.f) {
-                dcem dcemVar = this.c;
-                k = dcemVar == null ? k() : TextUtils.concat(this.b.a, dcemVar.a);
+                deos deosVar = this.c;
+                k = deosVar == null ? k() : TextUtils.concat(this.b.a, deosVar.a);
             } else {
                 k = k();
             }
@@ -115,9 +117,11 @@ public class GoogleServicesExpandableItem extends ExpandableSwitchItem implement
             findViewById2.setPaddingRelative(findViewById2.getPaddingStart(), findViewById2.getPaddingTop(), view.getResources().getDimensionPixelSize(R.dimen.item_padding_end), findViewById2.getPaddingBottom());
             if (view != null) {
                 Context context3 = view.getContext();
-                boolean u = edeq.h(context3).u(edeo.CONFIG_LAYOUT_MARGIN_END);
-                if (edjp.e(view)) {
-                    int a = u ? (int) edeq.h(context3).a(context3, edeo.CONFIG_LAYOUT_MARGIN_END) : view.getPaddingEnd();
+                efrl h2 = efrl.h(context3);
+                efrj efrjVar2 = efrj.CONFIG_LAYOUT_MARGIN_END;
+                boolean u = h2.u(efrjVar2);
+                if (efwk.e(view)) {
+                    int a = u ? (int) efrl.h(context3).a(context3, efrjVar2) : view.getPaddingEnd();
                     if (a != view.getPaddingEnd()) {
                         TypedArray obtainStyledAttributes = view.getContext().obtainStyledAttributes(new int[]{R.attr.listPreferredItemPaddingRight});
                         int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(0, 0);
@@ -148,123 +152,123 @@ public class GoogleServicesExpandableItem extends ExpandableSwitchItem implement
                         textView2.setText(R.string.setupservices_google_services_item_button_show_more);
                     }
                 }
-                edjl.b(view.findViewById(R.id.sud_items_expandable_switch_title_container));
+                efwg.b(view.findViewById(R.id.sud_items_expandable_switch_title_container));
             }
         }
     }
 
-    @Override // defpackage.dcdy
+    @Override // defpackage.deoe
     public final int c() {
         return this.t;
     }
 
-    @Override // defpackage.dcdy
-    public final dcfd i() {
-        fecj v = esxx.a.v();
-        fecj v2 = esyr.a.v();
-        esyq esyqVar = this.o ? esyq.ENABLED : esyq.DISABLED;
+    @Override // defpackage.deoe
+    public final depj i() {
+        fgrc v = evnn.a.v();
+        fgrc v2 = evoh.a.v();
+        evog evogVar = this.o ? evog.ENABLED : evog.DISABLED;
         if (!v2.b.L()) {
             v2.U();
         }
-        esyr esyrVar = (esyr) v2.b;
-        esyrVar.c = esyqVar.d;
-        esyrVar.b |= 1;
-        esyr esyrVar2 = (esyr) v2.Q();
+        evoh evohVar = (evoh) v2.b;
+        evohVar.c = evogVar.d;
+        evohVar.b |= 1;
+        evoh evohVar2 = (evoh) v2.Q();
         if (!v.b.L()) {
             v.U();
         }
-        esxx esxxVar = (esxx) v.b;
-        esyrVar2.getClass();
-        esxxVar.d = esyrVar2;
-        esxxVar.b |= 2;
-        fecj v3 = esye.a.v();
-        dcem dcemVar = this.a;
-        if (dcemVar != null) {
-            esyb d2 = dcemVar.d();
+        evnn evnnVar = (evnn) v.b;
+        evohVar2.getClass();
+        evnnVar.d = evohVar2;
+        evnnVar.b |= 2;
+        fgrc v3 = evnu.a.v();
+        deos deosVar = this.a;
+        if (deosVar != null) {
+            evnr d2 = deosVar.d();
             if (!v3.b.L()) {
                 v3.U();
             }
-            esye esyeVar = (esye) v3.b;
+            evnu evnuVar = (evnu) v3.b;
             d2.getClass();
-            esyeVar.d = d2;
-            esyeVar.b |= 2;
+            evnuVar.d = d2;
+            evnuVar.b |= 2;
         }
-        dcem dcemVar2 = this.q;
-        if (dcemVar2 != null) {
-            esyb d3 = dcemVar2.d();
+        deos deosVar2 = this.q;
+        if (deosVar2 != null) {
+            evnr d3 = deosVar2.d();
             if (!v3.b.L()) {
                 v3.U();
             }
-            esye esyeVar2 = (esye) v3.b;
+            evnu evnuVar2 = (evnu) v3.b;
             d3.getClass();
-            esyeVar2.e = d3;
-            esyeVar2.b |= 4;
+            evnuVar2.e = d3;
+            evnuVar2.b |= 4;
         }
-        dcem dcemVar3 = this.r;
-        if (dcemVar3 != null) {
-            esyb d4 = dcemVar3.d();
+        deos deosVar3 = this.r;
+        if (deosVar3 != null) {
+            evnr d4 = deosVar3.d();
             if (!v3.b.L()) {
                 v3.U();
             }
-            esye esyeVar3 = (esye) v3.b;
+            evnu evnuVar3 = (evnu) v3.b;
             d4.getClass();
-            esyeVar3.f = d4;
-            esyeVar3.b |= 8;
+            evnuVar3.f = d4;
+            evnuVar3.b |= 8;
         }
-        return new dcfd((esxx) v.Q(), (esye) v3.Q());
+        return new depj((evnn) v.Q(), (evnu) v3.Q());
     }
 
     @Override // com.google.android.setupdesign.items.ExpandableSwitchItem
     public final CharSequence j() {
-        dcem dcemVar = this.q;
-        if (dcemVar == null) {
+        deos deosVar = this.q;
+        if (deosVar == null) {
             return null;
         }
-        return dcemVar.a;
+        return deosVar.a;
     }
 
     public final CharSequence k() {
-        dcem dcemVar = this.b;
-        if (dcemVar == null) {
+        deos deosVar = this.b;
+        if (deosVar == null) {
             return null;
         }
-        return dcemVar.a;
+        return deosVar.a;
     }
 
     @Override // com.google.android.setupdesign.items.Item
     public final CharSequence l() {
-        dcem dcemVar = this.a;
-        if (dcemVar == null) {
+        deos deosVar = this.a;
+        if (deosVar == null) {
             return null;
         }
-        return dcemVar.a;
+        return deosVar.a;
     }
 
-    public final void m(dcem dcemVar) {
-        this.q = dcemVar;
+    public final void m(deos deosVar) {
+        this.q = deosVar;
         o();
     }
 
-    public final void n(dcem dcemVar) {
-        this.r = dcemVar;
+    public final void n(deos deosVar) {
+        this.r = deosVar;
         o();
     }
 
     public final void o() {
-        dcem dcemVar = this.r;
-        if (dcemVar != null) {
-            B(TextUtils.concat(j(), "\n\n", dcemVar.a));
+        deos deosVar = this.r;
+        if (deosVar != null) {
+            B(TextUtils.concat(j(), "\n\n", deosVar.a));
         } else {
             B(j());
         }
     }
 
-    @Override // defpackage.edhd
+    @Override // defpackage.efty
     public final boolean p() {
         return true;
     }
 
-    @Override // defpackage.edhd
+    @Override // defpackage.efty
     public final boolean q() {
         return true;
     }

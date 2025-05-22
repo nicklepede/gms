@@ -4,36 +4,36 @@ import android.accounts.Account;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.arts;
-import defpackage.asot;
-import defpackage.bfyv;
-import defpackage.bfyw;
-import defpackage.bfzc;
-import defpackage.bgar;
-import defpackage.bggg;
-import defpackage.bggi;
-import defpackage.bgzc;
-import defpackage.bgzi;
-import defpackage.bhaf;
-import defpackage.byjl;
-import defpackage.eiig;
-import defpackage.ejhf;
-import defpackage.vks;
+import defpackage.atwh;
+import defpackage.ausn;
+import defpackage.bidl;
+import defpackage.bidm;
+import defpackage.bids;
+import defpackage.bifh;
+import defpackage.bikw;
+import defpackage.biky;
+import defpackage.bjds;
+import defpackage.bjdy;
+import defpackage.bjev;
+import defpackage.casd;
+import defpackage.ekvl;
+import defpackage.eluo;
+import defpackage.xgt;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class FitCleanupIntentOperation extends IntentOperation {
-    private static final asot a = bhaf.a();
-    private bggi b;
-    private bfyw c;
+    private static final ausn a = bjev.a();
+    private biky b;
+    private bidm c;
 
     public static void a(Context context, Intent intent) {
         Intent startIntent = IntentOperation.getStartIntent(context, FitCleanupIntentOperation.class, "com.google.android.gms.fitness.disconnect.CLEANUP");
         if (startIntent == null) {
-            ((ejhf) ((ejhf) a.i()).ah((char) 4672)).x("Couldn't create intent for FitCleanupIntentOperation.");
+            ((eluo) ((eluo) a.i()).ai((char) 4682)).x("Couldn't create intent for FitCleanupIntentOperation.");
         } else {
             startIntent.putExtra("BROADCAST_INTENT", intent);
             context.startService(startIntent);
@@ -48,30 +48,30 @@ public class FitCleanupIntentOperation extends IntentOperation {
     }
 
     private final void c(String str, int i, String str2) {
-        eiig.a(!str.isEmpty());
-        eiig.a(!str2.isEmpty());
-        asot asotVar = a;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 4668)).B("Clearing all cached OAuth tokens for: %s", str);
-        bfyv bfyvVar = ((bfzc) this.c.k(str2)).j;
+        ekvl.a(!str.isEmpty());
+        ekvl.a(!str2.isEmpty());
+        ausn ausnVar = a;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 4678)).B("Clearing all cached OAuth tokens for: %s", str);
+        bidl bidlVar = ((bids) this.c.k(str2)).j;
         if (i == 0) {
-            i = bfyvVar.a(str);
+            i = bidlVar.a(str);
         }
-        arts b = arts.b(bfyvVar.a, i, bfyvVar.b, str);
+        atwh b = atwh.b(bidlVar.a, i, bidlVar.b, str);
         if (b != null) {
-            bfyvVar.b(b);
+            bidlVar.b(b);
         }
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 4669)).B("Removing all subscriptions for: %s", str);
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 4679)).B("Removing all subscriptions for: %s", str);
         try {
             this.b.q(str2).c(str);
         } catch (IOException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 4670)).x("Cannot remove subscriptions");
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 4680)).x("Cannot remove subscriptions");
         }
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        bggi a2 = bggg.a(this);
-        bfyw e = a2.e();
+        biky a2 = bikw.a(this);
+        bidm e = a2.e();
         this.b = a2;
         this.c = e;
     }
@@ -83,7 +83,7 @@ public class FitCleanupIntentOperation extends IntentOperation {
         if (intent.getAction().equals("com.google.android.gms.fitness.disconnect.CLEANUP")) {
             intent = (Intent) intent.getParcelableExtra("BROADCAST_INTENT");
         }
-        ((ejhf) ((ejhf) a.h()).ah((char) 4671)).B("FitCleanupIntentOperation received Intent %s", intent.getAction());
+        ((eluo) ((eluo) a.h()).ai((char) 4681)).B("FitCleanupIntentOperation received Intent %s", intent.getAction());
         String action = intent.getAction();
         switch (action.hashCode()) {
             case -757193177:
@@ -130,28 +130,28 @@ public class FitCleanupIntentOperation extends IntentOperation {
             return;
         }
         if (c == 1) {
-            if (bgar.d(intent)) {
+            if (bifh.d(intent)) {
                 return;
             }
-            b(bgar.b(intent), bgar.a(intent));
+            b(bifh.b(intent), bifh.a(intent));
             return;
         }
         if (c != 2) {
             if (c == 3) {
-                b(bgar.b(intent), bgar.a(intent));
+                b(bifh.b(intent), bifh.a(intent));
                 return;
             }
             if (c != 4) {
                 throw new IllegalArgumentException("Unexpected intent ".concat(String.valueOf(String.valueOf(intent))));
             }
-            for (Account account : vks.c(intent)) {
+            for (Account account : xgt.c(intent)) {
                 this.b.p(account.name).K();
-                bgzi.d(getApplicationContext(), account.name);
+                bjdy.d(getApplicationContext(), account.name);
                 Context applicationContext = getApplicationContext();
                 String str = account.name;
-                Set set = bgzc.a;
-                byjl.a(applicationContext).d(bgzc.c(str), "com.google.android.gms.fitness.sync.SyncGcmTaskService");
-                Set set2 = bgzc.a;
+                Set set = bjds.a;
+                casd.a(applicationContext).d(bjds.c(str), "com.google.android.gms.fitness.sync.SyncGcmTaskService");
+                Set set2 = bjds.a;
                 synchronized (set2) {
                     set2.remove(str);
                 }

@@ -5,11 +5,11 @@ import android.os.Parcelable;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bgda;
-import defpackage.bgdb;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bihq;
+import defpackage.bihr;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,10 +18,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class DataSet extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bgdb();
+    public static final Parcelable.Creator CREATOR = new bihr();
     public final int a;
     public final DataSource b;
     public final List c;
@@ -38,9 +38,9 @@ public final class DataSet extends AbstractSafeParcelable implements ReflectedPa
         }
     }
 
-    public static bgda a(DataSource dataSource) {
-        arwm.t(dataSource, "DataSource should be specified");
-        return new bgda(dataSource);
+    public static bihq a(DataSource dataSource) {
+        atzb.t(dataSource, "DataSource should be specified");
+        return new bihq(dataSource);
     }
 
     public final DataType b() {
@@ -73,7 +73,7 @@ public final class DataSet extends AbstractSafeParcelable implements ReflectedPa
             return false;
         }
         DataSet dataSet = (DataSet) obj;
-        return arwb.b(this.b, dataSet.b) && arwb.b(this.c, dataSet.c);
+        return atyq.b(this.b, dataSet.b) && atyq.b(this.c, dataSet.c);
     }
 
     @Deprecated
@@ -108,17 +108,17 @@ public final class DataSet extends AbstractSafeParcelable implements ReflectedPa
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         DataSource dataSource = this.b;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, dataSource, i, false);
-        arxc.G(parcel, 3, d());
-        arxc.y(parcel, 4, this.d, false);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, dataSource, i, false);
+        atzr.G(parcel, 3, d());
+        atzr.y(parcel, 4, this.d, false);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
+        atzr.c(parcel, a);
     }
 
     public DataSet(DataSource dataSource) {
         this.a = 3;
-        arwm.s(dataSource);
+        atzb.s(dataSource);
         this.b = dataSource;
         this.c = new ArrayList();
         ArrayList arrayList = new ArrayList();

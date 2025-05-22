@@ -3,13 +3,13 @@ package com.google.android.gms.locationsharingreporter;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.catb;
+import defpackage.atzr;
+import defpackage.cdbr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class IneligibilityRationale extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new catb();
+    public static final Parcelable.Creator CREATOR = new cdbr();
     public final String a;
     public final boolean b;
     public final String c;
@@ -29,13 +29,13 @@ public class IneligibilityRationale extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.e(parcel, 2, this.b);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.e(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.e(parcel, 2, this.b);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.e(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 }

@@ -13,32 +13,32 @@ import android.widget.TextView;
 import com.google.android.cast.JGCastService;
 import com.google.android.gms.R;
 import com.google.android.gms.fido.fido2.ui.hybrid.LinkedDevicesSettingsChimeraActivity;
-import defpackage.arwm;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.bccp;
-import defpackage.bcki;
-import defpackage.bcni;
-import defpackage.eble;
-import defpackage.eiho;
-import defpackage.eirn;
-import defpackage.ensj;
-import defpackage.ensv;
-import defpackage.fnze;
+import defpackage.atzb;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.beej;
+import defpackage.belt;
+import defpackage.beov;
+import defpackage.edxt;
+import defpackage.ekut;
+import defpackage.eles;
+import defpackage.eqgc;
+import defpackage.eqgo;
+import defpackage.fqrg;
 import defpackage.ig;
-import defpackage.itj;
-import defpackage.iuf;
-import defpackage.iuo;
-import defpackage.qex;
+import defpackage.iuz;
+import defpackage.ivv;
+import defpackage.iwe;
+import defpackage.ryb;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class LinkedDevicesSettingsChimeraActivity extends qex {
-    public static final asot h = bcni.d("LinkedDevicesSettingsFragment");
-    public final ensv i = new asmf(2, 9);
+public class LinkedDevicesSettingsChimeraActivity extends ryb {
+    public static final ausn h = beov.d("LinkedDevicesSettingsFragment");
+    public final eqgo i = new aupz(2, 9);
     public boolean j = false;
     private RecyclerView k;
     private TextView l;
@@ -47,15 +47,15 @@ public class LinkedDevicesSettingsChimeraActivity extends qex {
     private TextView o;
     private TextView p;
     private LinearLayout q;
-    private bccp r;
+    private beej r;
 
     public final void j(List list) {
-        arwm.g();
-        this.r.C(eirn.j(list).l(new eiho() { // from class: bckf
-            @Override // defpackage.eiho
+        atzb.g();
+        this.r.C(eles.j(list).l(new ekut() { // from class: belq
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                asot asotVar = LinkedDevicesSettingsChimeraActivity.h;
-                return bccl.a(((bbww) obj).e, null, JGCastService.FLAG_USE_TDLS, null, "0", 3);
+                ausn ausnVar = LinkedDevicesSettingsChimeraActivity.h;
+                return beef.a(((beao) obj).e, null, JGCastService.FLAG_USE_TDLS, null, "0", 3);
             }
         }).n());
         if (list.isEmpty()) {
@@ -83,18 +83,18 @@ public class LinkedDevicesSettingsChimeraActivity extends qex {
         this.q.setVisibility(0);
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        boolean c = fnze.c();
+        boolean c = fqrg.c();
         this.j = c;
         if (c) {
             setTheme(R.style.Theme_Fido_Settings);
             getContainerActivity();
-            int i = eble.a;
+            int i = edxt.a;
         } else {
             setTheme(R.style.Theme_Fido_Settings_Legacy);
-            if (!asqh.c()) {
+            if (!auub.c()) {
                 setTheme(R.style.Theme_Fido_Settings_Legacy);
             }
         }
@@ -104,27 +104,27 @@ public class LinkedDevicesSettingsChimeraActivity extends qex {
         } else {
             setTitle(R.string.fido_linked_devices_settings_title);
         }
-        if (fnze.a.a().d()) {
+        if (fqrg.a.lK().d()) {
             View decorView = getWindow().getDecorView();
-            itj itjVar = new itj() { // from class: bckd
-                @Override // defpackage.itj
-                public final iwd eB(View view, iwd iwdVar) {
-                    asot asotVar = LinkedDevicesSettingsChimeraActivity.h;
-                    view.setPadding(0, iwdVar.f(1).c, 0, iwdVar.f(64).e);
-                    return iwd.a;
+            iuz iuzVar = new iuz() { // from class: belo
+                @Override // defpackage.iuz
+                public final ixt eB(View view, ixt ixtVar) {
+                    ausn ausnVar = LinkedDevicesSettingsChimeraActivity.h;
+                    view.setPadding(0, ixtVar.f(1).c, 0, ixtVar.f(64).e);
+                    return ixt.a;
                 }
             };
-            int[] iArr = iuo.a;
-            iuf.k(decorView, itjVar);
+            int[] iArr = iwe.a;
+            ivv.k(decorView, iuzVar);
         }
-        ig jB = jB();
-        if (jB != null) {
+        ig jR = jR();
+        if (jR != null) {
             if (this.j) {
-                jB.z(R.string.fido_hybrid_linked_devices_google_settings_title);
+                jR.z(R.string.fido_hybrid_linked_devices_google_settings_title);
             } else {
-                jB.z(R.string.fido_linked_devices_settings_title);
+                jR.z(R.string.fido_linked_devices_settings_title);
             }
-            jB.o(true);
+            jR.o(true);
         }
         TextView textView = (TextView) findViewById(R.id.clear_description);
         textView.setText(String.format(getString(R.string.fido_clear_links_description), getString(R.string.fido_clear)));
@@ -150,66 +150,66 @@ public class LinkedDevicesSettingsChimeraActivity extends qex {
         this.k = recyclerView;
         recyclerView.aj(new LinearLayoutManager());
         if (this.j) {
-            this.r = new bccp(R.layout.fido_hybrid_linked_devices_row_layout, null);
+            this.r = new beej(R.layout.fido_hybrid_linked_devices_row_layout, null);
         } else {
-            this.r = new bccp(R.layout.fido_linked_devices_row_layout, null);
+            this.r = new beej(R.layout.fido_linked_devices_row_layout, null);
         }
         this.k.ah(this.r);
-        button.setOnClickListener(new View.OnClickListener() { // from class: bcke
+        button.setOnClickListener(new View.OnClickListener() { // from class: belp
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 final LinkedDevicesSettingsChimeraActivity linkedDevicesSettingsChimeraActivity = LinkedDevicesSettingsChimeraActivity.this;
                 if (linkedDevicesSettingsChimeraActivity.j) {
-                    ebna ebnaVar = new ebna(linkedDevicesSettingsChimeraActivity);
-                    ebnaVar.N(linkedDevicesSettingsChimeraActivity.getString(R.string.fido_hybrid_clear_devices_title));
-                    ebnaVar.C(linkedDevicesSettingsChimeraActivity.getString(R.string.fido_hybrid_clear_devices_body));
-                    ebnaVar.K(R.string.fido_delete_connections, new DialogInterface.OnClickListener() { // from class: bcjy
+                    edzp edzpVar = new edzp(linkedDevicesSettingsChimeraActivity);
+                    edzpVar.N(linkedDevicesSettingsChimeraActivity.getString(R.string.fido_hybrid_clear_devices_title));
+                    edzpVar.C(linkedDevicesSettingsChimeraActivity.getString(R.string.fido_hybrid_clear_devices_body));
+                    edzpVar.K(R.string.fido_delete_connections, new DialogInterface.OnClickListener() { // from class: belj
                         @Override // android.content.DialogInterface.OnClickListener
                         public final void onClick(DialogInterface dialogInterface, int i2) {
                             LinkedDevicesSettingsChimeraActivity linkedDevicesSettingsChimeraActivity2 = LinkedDevicesSettingsChimeraActivity.this;
-                            linkedDevicesSettingsChimeraActivity2.i.execute(new bcjx(linkedDevicesSettingsChimeraActivity2));
+                            linkedDevicesSettingsChimeraActivity2.i.execute(new beli(linkedDevicesSettingsChimeraActivity2));
                         }
                     });
-                    ebnaVar.E(R.string.common_cancel, new DialogInterface.OnClickListener() { // from class: bcjz
+                    edzpVar.E(R.string.common_cancel, new DialogInterface.OnClickListener() { // from class: belk
                         @Override // android.content.DialogInterface.OnClickListener
                         public final void onClick(DialogInterface dialogInterface, int i2) {
-                            asot asotVar = LinkedDevicesSettingsChimeraActivity.h;
+                            ausn ausnVar = LinkedDevicesSettingsChimeraActivity.h;
                             dialogInterface.dismiss();
                         }
                     });
-                    ebnaVar.a();
+                    edzpVar.a();
                     return;
                 }
                 ip ipVar = new ip(linkedDevicesSettingsChimeraActivity);
                 ipVar.setTitle(linkedDevicesSettingsChimeraActivity.getString(R.string.fido_clear_devices_confirm_title));
-                ipVar.n(linkedDevicesSettingsChimeraActivity.getString(R.string.fido_clear_devices_confirm_body));
-                ipVar.setPositiveButton(R.string.common_yes, new DialogInterface.OnClickListener() { // from class: bcka
+                ipVar.p(linkedDevicesSettingsChimeraActivity.getString(R.string.fido_clear_devices_confirm_body));
+                ipVar.setPositiveButton(R.string.common_yes, new DialogInterface.OnClickListener() { // from class: bell
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i2) {
                         LinkedDevicesSettingsChimeraActivity linkedDevicesSettingsChimeraActivity2 = LinkedDevicesSettingsChimeraActivity.this;
-                        linkedDevicesSettingsChimeraActivity2.i.execute(new bcjx(linkedDevicesSettingsChimeraActivity2));
+                        linkedDevicesSettingsChimeraActivity2.i.execute(new beli(linkedDevicesSettingsChimeraActivity2));
                     }
                 });
-                ipVar.setNegativeButton(R.string.common_no, new DialogInterface.OnClickListener() { // from class: bckb
+                ipVar.setNegativeButton(R.string.common_no, new DialogInterface.OnClickListener() { // from class: belm
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i2) {
-                        asot asotVar = LinkedDevicesSettingsChimeraActivity.h;
+                        ausn ausnVar = LinkedDevicesSettingsChimeraActivity.h;
                         dialogInterface.dismiss();
                     }
                 });
                 ipVar.a();
             }
         });
-        ensv ensvVar = this.i;
-        ensj.t(ensvVar.submit(new Callable() { // from class: bckg
+        eqgo eqgoVar = this.i;
+        eqgc.t(eqgoVar.submit(new Callable() { // from class: belr
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                return bbwu.d();
+                return beam.d();
             }
-        }), new bcki(this), ensvVar);
+        }), new belt(this), eqgoVar);
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != 16908332) {
             return super.onOptionsItemSelected(menuItem);

@@ -10,14 +10,14 @@ import com.google.android.enterprise.connectedapps.internal.BundlerType;
 import com.google.android.enterprise.connectedapps.parcelablewrappers.ParcelableGuavaOptional;
 import com.google.android.enterprise.connectedapps.parcelablewrappers.generated.AppWrapper;
 import defpackage.a;
-import defpackage.acte;
-import defpackage.aczy;
-import defpackage.eiid;
+import defpackage.aete;
+import defpackage.aezy;
+import defpackage.ekvi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AppInfoManager_Bundler implements Bundler {
-    public static final Parcelable.Creator CREATOR = new acte();
+    public static final Parcelable.Creator CREATOR = new aete();
 
     @Override // com.google.android.enterprise.connectedapps.internal.Bundler
     public final Object a(Bundle bundle, String str, BundlerType bundlerType) {
@@ -75,7 +75,7 @@ public final class AppInfoManager_Bundler implements Bundler {
             return;
         }
         if ("com.google.android.gms.auth.proximity.phonehub.proto.App".equals(str2)) {
-            bundle.putParcelable(str, new AppWrapper((aczy) obj));
+            bundle.putParcelable(str, new AppWrapper((aezy) obj));
             return;
         }
         if ("java.lang.String".equals(str2)) {
@@ -90,7 +90,7 @@ public final class AppInfoManager_Bundler implements Bundler {
             if (!"com.google.common.base.Optional".equals(str2)) {
                 throw new IllegalArgumentException(a.a(str2, "Type ", " cannot be written to Bundle"));
             }
-            bundle.putParcelable(str, new ParcelableGuavaOptional(this, bundlerType, (eiid) obj));
+            bundle.putParcelable(str, new ParcelableGuavaOptional(this, bundlerType, (ekvi) obj));
         }
     }
 
@@ -101,7 +101,7 @@ public final class AppInfoManager_Bundler implements Bundler {
             return;
         }
         if ("com.google.android.gms.auth.proximity.phonehub.proto.App".equals(str)) {
-            parcel.writeParcelable(new AppWrapper((aczy) obj), i);
+            parcel.writeParcelable(new AppWrapper((aezy) obj), i);
             return;
         }
         if ("java.lang.String".equals(str)) {
@@ -116,7 +116,7 @@ public final class AppInfoManager_Bundler implements Bundler {
             if (!"com.google.common.base.Optional".equals(str)) {
                 throw new IllegalArgumentException(a.a(str, "Type ", " cannot be written to Parcel"));
             }
-            parcel.writeParcelable(new ParcelableGuavaOptional(this, bundlerType, (eiid) obj), i);
+            parcel.writeParcelable(new ParcelableGuavaOptional(this, bundlerType, (ekvi) obj), i);
         }
     }
 
@@ -132,7 +132,7 @@ public final class AppInfoManager_Bundler implements Bundler {
             return new Void[i];
         }
         if ("com.google.android.gms.auth.proximity.phonehub.proto.App".equals(str)) {
-            return new aczy[i];
+            return new aezy[i];
         }
         if ("java.lang.String".equals(str)) {
             return new String[i];

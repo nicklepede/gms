@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.crpw;
-import defpackage.crpy;
-import defpackage.crqv;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ctzb;
+import defpackage.ctzd;
+import defpackage.cuaa;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class StopRangingParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new crqv();
-    public crpy a;
+    public static final Parcelable.Creator CREATOR = new cuaa();
+    public ctzd a;
 
     public StopRangingParams() {
     }
@@ -26,7 +26,7 @@ public final class StopRangingParams extends AbstractSafeParcelable {
             return true;
         }
         if (obj instanceof StopRangingParams) {
-            return arwb.b(this.a, ((StopRangingParams) obj).a);
+            return atyq.b(this.a, ((StopRangingParams) obj).a);
         }
         return false;
     }
@@ -37,20 +37,20 @@ public final class StopRangingParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        crpy crpyVar = this.a;
-        arxc.D(parcel, 1, crpyVar == null ? null : crpyVar.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        ctzd ctzdVar = this.a;
+        atzr.D(parcel, 1, ctzdVar == null ? null : ctzdVar.asBinder());
+        atzr.c(parcel, a);
     }
 
     public StopRangingParams(IBinder iBinder) {
-        crpy crpwVar;
+        ctzd ctzbVar;
         if (iBinder == null) {
-            crpwVar = null;
+            ctzbVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.uwb.internal.IResultListener");
-            crpwVar = queryLocalInterface instanceof crpy ? (crpy) queryLocalInterface : new crpw(iBinder);
+            ctzbVar = queryLocalInterface instanceof ctzd ? (ctzd) queryLocalInterface : new ctzb(iBinder);
         }
-        this.a = crpwVar;
+        this.a = ctzbVar;
     }
 }

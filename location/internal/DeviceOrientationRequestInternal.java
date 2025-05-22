@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.location.DeviceOrientationRequest;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bzhp;
-import defpackage.bzyx;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cbqg;
+import defpackage.ccho;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes5.dex */
 public class DeviceOrientationRequestInternal extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bzyx();
-    public static final DeviceOrientationRequest a = new bzhp().a();
+    public static final Parcelable.Creator CREATOR = new ccho();
+    public static final DeviceOrientationRequest a = new cbqg().a();
     public final DeviceOrientationRequest b;
 
     public DeviceOrientationRequestInternal(DeviceOrientationRequest deviceOrientationRequest) {
@@ -23,7 +23,7 @@ public class DeviceOrientationRequestInternal extends AbstractSafeParcelable {
 
     public final boolean equals(Object obj) {
         if (obj instanceof DeviceOrientationRequestInternal) {
-            return arwb.b(this.b, ((DeviceOrientationRequestInternal) obj).b);
+            return atyq.b(this.b, ((DeviceOrientationRequestInternal) obj).b);
         }
         return false;
     }
@@ -38,8 +38,8 @@ public class DeviceOrientationRequestInternal extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.t(parcel, 1, this.b, i, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.t(parcel, 1, this.b, i, false);
+        atzr.c(parcel, a2);
     }
 }

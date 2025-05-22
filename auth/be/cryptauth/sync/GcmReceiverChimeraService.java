@@ -1,13 +1,13 @@
 package com.google.android.gms.auth.be.cryptauth.sync;
 
 import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
-import defpackage.asej;
-import defpackage.asot;
+import defpackage.auid;
+import defpackage.ausn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GcmReceiverChimeraService extends TracingIntentService {
-    private static final asot a = asot.b("GcmReceiverService", asej.AUTH_AUTHZEN_KEY);
+    private static final ausn a = ausn.b("GcmReceiverService", auid.AUTH_AUTHZEN_KEY);
 
     public GcmReceiverChimeraService() {
         super("GcmReceiverService");

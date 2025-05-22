@@ -2,20 +2,20 @@ package com.google.android.gms.accountsettings.ui;
 
 import android.net.Uri;
 import android.os.Bundle;
-import defpackage.etic;
-import defpackage.etie;
-import defpackage.fecj;
-import defpackage.sxm;
+import defpackage.evxu;
+import defpackage.evxw;
+import defpackage.fgrc;
+import defpackage.utk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class SearchEntryPointChimeraActivity extends sxm {
-    @Override // defpackage.sxm
+public class SearchEntryPointChimeraActivity extends utk {
+    @Override // defpackage.utk
     protected final int C() {
         return 3;
     }
 
-    @Override // defpackage.sxm
+    @Override // defpackage.utk
     protected final Bundle k() {
         Bundle bundle = new Bundle();
         bundle.putString("extra.utmSource", "android-settings");
@@ -23,13 +23,13 @@ public class SearchEntryPointChimeraActivity extends sxm {
         return bundle;
     }
 
-    @Override // defpackage.sxm
-    public final etie l() {
-        etie l = super.l();
+    @Override // defpackage.utk
+    public final evxw l() {
+        evxw l = super.l();
         Integer num = null;
-        fecj fecjVar = (fecj) l.iB(5, null);
-        fecjVar.X(l);
-        etic eticVar = (etic) fecjVar;
+        fgrc fgrcVar = (fgrc) l.iQ(5, null);
+        fgrcVar.X(l);
+        evxu evxuVar = (evxu) fgrcVar;
         String stringExtra = getIntent().getStringExtra(":settings:fragment_args_key");
         if (stringExtra != null) {
             try {
@@ -39,33 +39,33 @@ public class SearchEntryPointChimeraActivity extends sxm {
         }
         if (num != null) {
             int intValue = num.intValue();
-            if (!eticVar.b.L()) {
-                eticVar.U();
+            if (!evxuVar.b.L()) {
+                evxuVar.U();
             }
-            etie etieVar = (etie) eticVar.b;
-            etie etieVar2 = etie.a;
-            etieVar.b |= 1;
-            etieVar.c = intValue;
+            evxw evxwVar = (evxw) evxuVar.b;
+            evxw evxwVar2 = evxw.a;
+            evxwVar.b |= 1;
+            evxwVar.c = intValue;
         }
-        return (etie) eticVar.Q();
+        return (evxw) evxuVar.Q();
     }
 
-    @Override // defpackage.sxm
+    @Override // defpackage.utk
     public final String m() {
         return "com.google.android.gms";
     }
 
-    @Override // defpackage.sxm
+    @Override // defpackage.utk
     protected final boolean x() {
         return true;
     }
 
-    @Override // defpackage.sxm
+    @Override // defpackage.utk
     protected final boolean y() {
         return true;
     }
 
-    @Override // defpackage.sxm
+    @Override // defpackage.utk
     protected final void r() {
     }
 }

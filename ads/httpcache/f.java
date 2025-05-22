@@ -15,33 +15,33 @@ import com.google.android.gms.ads.internal.request.LargeParcelTeleporter;
 import com.google.android.gms.ads.internal.util.future.i;
 import com.google.android.gms.ads.internal.util.r;
 import com.google.android.gms.ads.internal.util.z;
-import defpackage.asmb;
-import defpackage.asmf;
-import defpackage.eiho;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensj;
-import defpackage.enss;
+import defpackage.aupv;
+import defpackage.aupz;
+import defpackage.ekut;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgc;
+import defpackage.eqgl;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class f {
     public static f a;
-    public static final Executor b = new asmf(Integer.MAX_VALUE, 9);
-    private static final ScheduledExecutorService c = new asmb(5, 9);
+    public static final Executor b = new aupz(Integer.MAX_VALUE, 9);
+    private static final ScheduledExecutorService c = new aupv(5, 9);
     private final RequestQueue d;
 
     public f(Context context) {
         this.d = r.a(context, new BasicNetwork((BaseHttpStack) new HurlStack()));
     }
 
-    public final enss a(HttpRequestParcel httpRequestParcel) {
+    public final eqgl a(HttpRequestParcel httpRequestParcel) {
         z zVar;
         i iVar = new i();
         String[] strArr = httpRequestParcel.b;
@@ -57,8 +57,8 @@ public final class f {
             zVar = new z(httpRequestParcel.a, hashMap, iVar);
         }
         this.d.add(zVar);
-        eiho eihoVar = new eiho() { // from class: com.google.android.gms.ads.httpcache.a
-            @Override // defpackage.eiho
+        ekut ekutVar = new ekut() { // from class: com.google.android.gms.ads.httpcache.a
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 NetworkResponse networkResponse = (NetworkResponse) obj;
                 int size = networkResponse.headers.size();
@@ -74,23 +74,23 @@ public final class f {
             }
         };
         Executor executor = b;
-        return enox.g(ensj.q(enps.f(enox.g(enps.f(iVar, eihoVar, executor), VolleyError.class, new enqc() { // from class: com.google.android.gms.ads.httpcache.b
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+        return eqcq.g(eqgc.q(eqdl.f(eqcq.g(eqdl.f(iVar, ekutVar, executor), VolleyError.class, new eqdv() { // from class: com.google.android.gms.ads.httpcache.b
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 f fVar = f.a;
-                return ensj.i(new HttpResponseParcel(true, ((VolleyError) obj).getMessage(), 0, null, null, null, false, 0L));
+                return eqgc.i(new HttpResponseParcel(true, ((VolleyError) obj).getMessage(), 0, null, null, null, false, 0L));
             }
-        }, executor), new eiho() { // from class: com.google.android.gms.ads.httpcache.c
-            @Override // defpackage.eiho
+        }, executor), new ekut() { // from class: com.google.android.gms.ads.httpcache.c
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 f fVar = f.a;
                 return new LargeParcelTeleporter((HttpResponseParcel) obj).a();
             }
-        }, executor), ((Integer) p.au.g()).intValue(), TimeUnit.MILLISECONDS, c), Throwable.class, new enqc() { // from class: com.google.android.gms.ads.httpcache.d
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+        }, executor), ((Integer) p.au.g()).intValue(), TimeUnit.MILLISECONDS, c), Throwable.class, new eqdv() { // from class: com.google.android.gms.ads.httpcache.d
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 f fVar = f.a;
-                return ensj.i(null);
+                return eqgc.i(null);
             }
         }, executor);
     }

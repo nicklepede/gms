@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.axlp;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.azpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public class DriveId extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new axlp();
+    public static final Parcelable.Creator CREATOR = new azpp();
     final String a;
     final long b;
     final long c;
@@ -22,12 +22,12 @@ public class DriveId extends AbstractSafeParcelable implements ReflectedParcelab
     public DriveId(String str, long j, long j2, int i) {
         this.a = str;
         boolean z = true;
-        arwm.b(!"".equals(str));
+        atzb.b(!"".equals(str));
         if (str == null && j == -1) {
             z = false;
             j = -1;
         }
-        arwm.b(z);
+        atzb.b(z);
         this.b = j;
         this.c = j2;
         this.d = i;
@@ -44,7 +44,7 @@ public class DriveId extends AbstractSafeParcelable implements ReflectedParcelab
             if (j == -1) {
                 if (this.b == -1) {
                     String str2 = driveId.a;
-                    arwm.s(str2);
+                    atzb.s(str2);
                     return str2.equals(this.a);
                 }
                 j = -1;
@@ -64,7 +64,7 @@ public class DriveId extends AbstractSafeParcelable implements ReflectedParcelab
         long j = this.b;
         if (j == -1) {
             String str = this.a;
-            arwm.s(str);
+            atzb.s(str);
             return str.hashCode();
         }
         return (this.c + String.valueOf(j)).hashCode();
@@ -77,11 +77,11 @@ public class DriveId extends AbstractSafeParcelable implements ReflectedParcelab
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.q(parcel, 3, this.b);
-        arxc.q(parcel, 4, this.c);
-        arxc.o(parcel, 5, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.q(parcel, 3, this.b);
+        atzr.q(parcel, 4, this.c);
+        atzr.o(parcel, 5, this.d);
+        atzr.c(parcel, a);
     }
 }

@@ -1,29 +1,29 @@
 package com.google.android.gms.identity.accounts.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.blzz;
-import defpackage.bmaa;
-import defpackage.bxgd;
-import defpackage.bxgj;
+import defpackage.bogr;
+import defpackage.bogs;
+import defpackage.bzot;
+import defpackage.bzoz;
 import java.util.Collections;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class AccountDataApiService extends bxgd {
-    private static final bmaa a = new blzz();
-    private final bmaa b;
+public final class AccountDataApiService extends bzot {
+    private static final bogs a = new bogr();
+    private final bogs b;
 
     public AccountDataApiService() {
         this(a);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(this.b.a(this));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(this.b.a(this));
     }
 
-    public AccountDataApiService(bmaa bmaaVar) {
+    public AccountDataApiService(bogs bogsVar) {
         super(9, "com.google.android.gms.accounts.ACCOUNT_SERVICE", Collections.EMPTY_SET, 1, 10);
-        this.b = bmaaVar;
+        this.b = bogsVar;
     }
 }

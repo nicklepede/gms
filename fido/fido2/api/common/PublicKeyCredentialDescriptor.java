@@ -5,102 +5,102 @@ import android.os.Parcelable;
 import android.util.Base64;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fido.common.Transport;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.asnj;
-import defpackage.bbjf;
-import defpackage.bbts;
-import defpackage.bbtt;
-import defpackage.bbtz;
-import defpackage.bbut;
-import defpackage.eitj;
-import defpackage.eiuu;
-import defpackage.eive;
-import defpackage.feay;
-import defpackage.ffuh;
-import defpackage.ffuj;
-import defpackage.ffun;
-import defpackage.ffuo;
-import defpackage.ffup;
-import defpackage.ffur;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.aurd;
+import defpackage.bdnc;
+import defpackage.bdxj;
+import defpackage.bdxk;
+import defpackage.bdxq;
+import defpackage.bdyk;
+import defpackage.elgo;
+import defpackage.elhz;
+import defpackage.elij;
+import defpackage.fgpr;
+import defpackage.fijf;
+import defpackage.fijh;
+import defpackage.fijl;
+import defpackage.fijm;
+import defpackage.fijn;
+import defpackage.fijp;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PublicKeyCredentialDescriptor extends AbstractSafeParcelable {
     public final PublicKeyCredentialType a;
-    public final feay b;
+    public final fgpr b;
     public final List c;
-    private static final eiuu d = eiuu.K(bbut.a, bbut.b);
-    public static final Parcelable.Creator CREATOR = new bbtt();
+    private static final elhz d = elhz.K(bdyk.a, bdyk.b);
+    public static final Parcelable.Creator CREATOR = new bdxk();
 
     public PublicKeyCredentialDescriptor(String str, byte[] bArr, List list) {
-        feay w = feay.w(bArr);
-        arwm.s(str);
+        fgpr w = fgpr.w(bArr);
+        atzb.s(str);
         try {
             this.a = PublicKeyCredentialType.a(str);
             this.b = w;
             this.c = list;
-        } catch (bbtz e) {
+        } catch (bdxq e) {
             throw new IllegalArgumentException(e);
         }
     }
 
-    public static PublicKeyCredentialDescriptor a(ffur ffurVar) {
+    public static PublicKeyCredentialDescriptor a(fijp fijpVar) {
         ArrayList arrayList;
         try {
-            arwm.s(ffurVar);
-            if (!(ffurVar instanceof ffuo)) {
-                throw new bbts("Cannot parse credential descriptor from non-map CBOR input");
+            atzb.s(fijpVar);
+            if (!(fijpVar instanceof fijm)) {
+                throw new bdxj("Cannot parse credential descriptor from non-map CBOR input");
             }
-            eive eiveVar = ((ffuo) ffurVar).a;
-            if (!eiveVar.d.containsAll(d)) {
-                throw new bbts("Cannot parse credential descriptor from input that does not have both id and type as labels");
+            elij elijVar = ((fijm) fijpVar).a;
+            if (!elijVar.d.containsAll(d)) {
+                throw new bdxj("Cannot parse credential descriptor from input that does not have both id and type as labels");
             }
-            ffur ffurVar2 = (ffur) eiveVar.get(bbut.a);
-            ffur ffurVar3 = (ffur) eiveVar.get(bbut.b);
-            if (ffurVar2 == null || ffurVar3 == null) {
-                throw new bbts("Cannot parse credential descriptor from input that does not have both id and type as labels");
+            fijp fijpVar2 = (fijp) elijVar.get(bdyk.a);
+            fijp fijpVar3 = (fijp) elijVar.get(bdyk.b);
+            if (fijpVar2 == null || fijpVar3 == null) {
+                throw new bdxj("Cannot parse credential descriptor from input that does not have both id and type as labels");
             }
-            if (!(ffurVar2 instanceof ffuj)) {
-                throw new bbts("Cannot parse credential descriptor that has a non-bytestring CBOR value for id label");
+            if (!(fijpVar2 instanceof fijh)) {
+                throw new bdxj("Cannot parse credential descriptor that has a non-bytestring CBOR value for id label");
             }
-            byte[] M = ((ffuj) ffurVar2).a.M();
+            byte[] M = ((fijh) fijpVar2).a.M();
             PublicKeyCredentialType publicKeyCredentialType = PublicKeyCredentialType.a;
-            if (!(ffurVar3 instanceof ffup)) {
-                throw new bbtz("Cannot parse a credential type from non-textstring CBOR input");
+            if (!(fijpVar3 instanceof fijn)) {
+                throw new bdxq("Cannot parse a credential type from non-textstring CBOR input");
             }
-            PublicKeyCredentialType a = PublicKeyCredentialType.a(((ffup) ffurVar3).a);
-            ffup ffupVar = bbut.c;
-            if (eiveVar.containsKey(ffupVar)) {
-                ffur ffurVar4 = (ffur) eiveVar.get(ffupVar);
+            PublicKeyCredentialType a = PublicKeyCredentialType.a(((fijn) fijpVar3).a);
+            fijn fijnVar = bdyk.c;
+            if (elijVar.containsKey(fijnVar)) {
+                fijp fijpVar4 = (fijp) elijVar.get(fijnVar);
                 Transport transport = Transport.BLUETOOTH_CLASSIC;
-                arwm.s(ffurVar4);
-                if (!(ffurVar4 instanceof ffuh)) {
-                    throw new bbjf("Cannot parse a list of transports from non-array CBOR input");
+                atzb.s(fijpVar4);
+                if (!(fijpVar4 instanceof fijf)) {
+                    throw new bdnc("Cannot parse a list of transports from non-array CBOR input");
                 }
                 arrayList = new ArrayList();
-                eitj eitjVar = ((ffuh) ffurVar4).a;
-                int size = eitjVar.size();
+                elgo elgoVar = ((fijf) fijpVar4).a;
+                int size = elgoVar.size();
                 for (int i = 0; i < size; i++) {
-                    ffur ffurVar5 = (ffur) eitjVar.get(i);
-                    arwm.s(ffurVar5);
-                    if (!(ffurVar5 instanceof ffup)) {
-                        throw new bbjf("Cannot parse a transport from non-textstring CBOR input");
+                    fijp fijpVar5 = (fijp) elgoVar.get(i);
+                    atzb.s(fijpVar5);
+                    if (!(fijpVar5 instanceof fijn)) {
+                        throw new bdnc("Cannot parse a transport from non-textstring CBOR input");
                     }
-                    arrayList.add(Transport.a(((ffup) ffurVar5).a));
+                    arrayList.add(Transport.a(((fijn) fijpVar5).a));
                 }
             } else {
                 arrayList = null;
             }
             return new PublicKeyCredentialDescriptor(a.b, M, arrayList);
-        } catch (bbjf | bbtz e) {
-            throw new bbts(e);
+        } catch (bdnc | bdxq e) {
+            throw new bdxj(e);
         }
     }
 
@@ -108,21 +108,21 @@ public class PublicKeyCredentialDescriptor extends AbstractSafeParcelable {
         return new PublicKeyCredentialDescriptor(jSONObject.getString("type"), Base64.decode(jSONObject.getString("id"), 11), jSONObject.has("transports") ? Transport.b(jSONObject.getJSONArray("transports")) : null);
     }
 
-    public final ffuo c() {
+    public final fijm c() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(new ffun(bbut.b, new ffup(this.a.b)));
-        arrayList.add(new ffun(bbut.a, ffur.k(this.b.M())));
+        arrayList.add(new fijl(bdyk.b, new fijn(this.a.b)));
+        arrayList.add(new fijl(bdyk.a, fijp.k(this.b.M())));
         List list = this.c;
         if (list != null && !list.isEmpty()) {
-            ffup ffupVar = bbut.c;
+            fijn fijnVar = bdyk.c;
             ArrayList arrayList2 = new ArrayList();
             Iterator it = list.iterator();
             while (it.hasNext()) {
-                arrayList2.add(new ffup(((Transport) it.next()).h));
+                arrayList2.add(new fijn(((Transport) it.next()).h));
             }
-            arrayList.add(new ffun(ffupVar, ffur.g(arrayList2)));
+            arrayList.add(new fijl(fijnVar, fijp.g(arrayList2)));
         }
-        return ffur.n(arrayList);
+        return fijp.n(arrayList);
     }
 
     public final byte[] d() {
@@ -135,7 +135,7 @@ public class PublicKeyCredentialDescriptor extends AbstractSafeParcelable {
             return false;
         }
         PublicKeyCredentialDescriptor publicKeyCredentialDescriptor = (PublicKeyCredentialDescriptor) obj;
-        if (!this.a.equals(publicKeyCredentialDescriptor.a) || !arwb.b(this.b, publicKeyCredentialDescriptor.b)) {
+        if (!this.a.equals(publicKeyCredentialDescriptor.a) || !atyq.b(this.b, publicKeyCredentialDescriptor.b)) {
             return false;
         }
         List list2 = this.c;
@@ -150,16 +150,16 @@ public class PublicKeyCredentialDescriptor extends AbstractSafeParcelable {
     }
 
     public final String toString() {
-        return "PublicKeyCredentialDescriptor{\n type=" + String.valueOf(this.a) + ", \n id=" + asnj.c(d()) + ", \n transports=" + String.valueOf(this.c) + "}";
+        return "PublicKeyCredentialDescriptor{\n type=" + String.valueOf(this.a) + ", \n id=" + aurd.c(d()) + ", \n transports=" + String.valueOf(this.c) + "}";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a.b;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.i(parcel, 3, d(), false);
-        arxc.y(parcel, 4, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.i(parcel, 3, d(), false);
+        atzr.y(parcel, 4, this.c, false);
+        atzr.c(parcel, a);
     }
 }

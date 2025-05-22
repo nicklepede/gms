@@ -1,6 +1,6 @@
 package com.google.android.gms.ads.internal.util.client;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class m implements e {
     private final String a;
@@ -22,7 +22,7 @@ public final class m implements e {
             java.lang.String r0 = ". "
             java.lang.String r1 = "Error while pinging URL: "
             java.lang.String r2 = "Error while parsing ping URL: "
-            boolean r3 = defpackage.asnp.d()     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
+            boolean r3 = defpackage.aurj.d()     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
             if (r3 == 0) goto L11
             r3 = 263(0x107, float:3.69E-43)
             android.net.TrafficStats.setThreadStatsTag(r3)     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
@@ -33,7 +33,7 @@ public final class m implements e {
             java.net.URI r3 = new java.net.URI     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
             r3.<init>(r8)     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
             java.net.URL r3 = r3.toURL()     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
-            bxjb r4 = defpackage.bxjb.b()     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
+            bzrr r4 = defpackage.bzrr.b()     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
             java.lang.String r5 = "client-admob"
             java.net.URLConnection r3 = r4.a(r3, r5)     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
             java.net.HttpURLConnection r3 = (java.net.HttpURLConnection) r3     // Catch: java.lang.Throwable -> L8c java.lang.RuntimeException -> L8e java.io.IOException -> L90 java.net.URISyntaxException -> Lab java.lang.IndexOutOfBoundsException -> Lad
@@ -61,7 +61,7 @@ public final class m implements e {
             if (r4 < r5) goto L64
             goto L78
         L64:
-            com.google.android.gms.ads.internal.config.g r4 = com.google.android.gms.ads.internal.config.p.bf     // Catch: java.lang.Throwable -> L87
+            com.google.android.gms.ads.internal.config.g r4 = com.google.android.gms.ads.internal.config.p.bg     // Catch: java.lang.Throwable -> L87
             java.lang.Object r4 = r4.g()     // Catch: java.lang.Throwable -> L87
             java.lang.Boolean r4 = (java.lang.Boolean) r4     // Catch: java.lang.Throwable -> L87
             boolean r4 = r4.booleanValue()     // Catch: java.lang.Throwable -> L87
@@ -114,13 +114,13 @@ public final class m implements e {
             java.lang.String r8 = r3.toString()     // Catch: java.lang.Throwable -> L8c
             com.google.android.gms.ads.internal.util.client.h.k(r8)     // Catch: java.lang.Throwable -> L8c
         Lc7:
-            boolean r8 = defpackage.asnp.d()
+            boolean r8 = defpackage.aurj.d()
             if (r8 == 0) goto Ld0
             android.net.TrafficStats.clearThreadStatsTag()
         Ld0:
             return
         Ld1:
-            boolean r0 = defpackage.asnp.d()
+            boolean r0 = defpackage.aurj.d()
             if (r0 == 0) goto Lda
             android.net.TrafficStats.clearThreadStatsTag()
         Lda:

@@ -8,18 +8,18 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.presence.PresenceAction;
 import com.google.android.gms.nearby.presence.PresenceIdentity;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ckre;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cmzj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public final class BroadcastWithIntentParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckre();
-    public arbp a;
+    public static final Parcelable.Creator CREATOR = new cmzj();
+    public atee a;
     public PendingIntent b;
     public PresenceIdentity c;
     public PresenceAction[] d;
@@ -33,7 +33,7 @@ public final class BroadcastWithIntentParams extends AbstractSafeParcelable {
         }
         if (obj instanceof BroadcastWithIntentParams) {
             BroadcastWithIntentParams broadcastWithIntentParams = (BroadcastWithIntentParams) obj;
-            if (arwb.b(this.a, broadcastWithIntentParams.a) && arwb.b(this.b, broadcastWithIntentParams.b) && arwb.b(this.c, broadcastWithIntentParams.c) && Arrays.equals(this.d, broadcastWithIntentParams.d)) {
+            if (atyq.b(this.a, broadcastWithIntentParams.a) && atyq.b(this.b, broadcastWithIntentParams.b) && atyq.b(this.c, broadcastWithIntentParams.c) && Arrays.equals(this.d, broadcastWithIntentParams.d)) {
                 return true;
             }
         }
@@ -46,23 +46,23 @@ public final class BroadcastWithIntentParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.J(parcel, 4, this.d, i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.J(parcel, 4, this.d, i);
+        atzr.c(parcel, a);
     }
 
     public BroadcastWithIntentParams(IBinder iBinder, PendingIntent pendingIntent, PresenceIdentity presenceIdentity, PresenceAction[] presenceActionArr) {
-        arbp arbnVar;
+        atee atecVar;
         if (iBinder == null) {
-            arbnVar = null;
+            atecVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbnVar = queryLocalInterface instanceof arbp ? (arbp) queryLocalInterface : new arbn(iBinder);
+            atecVar = queryLocalInterface instanceof atee ? (atee) queryLocalInterface : new atec(iBinder);
         }
-        this.a = arbnVar;
+        this.a = atecVar;
         this.b = pendingIntent;
         this.c = presenceIdentity;
         this.d = presenceActionArr;

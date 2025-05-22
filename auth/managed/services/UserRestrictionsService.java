@@ -8,18 +8,18 @@ import android.os.UserHandle;
 import com.google.android.gms.auth.managed.services.UserRestrictionsService;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import defpackage.a;
-import defpackage.acaa;
-import defpackage.aju$$ExternalSyntheticApiModelOutline0;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.aspo;
-import defpackage.byln;
-import defpackage.eihn;
-import defpackage.eiig;
-import defpackage.eito;
-import defpackage.eits;
-import defpackage.ejhf;
-import defpackage.fkzo;
+import defpackage.aeaa;
+import defpackage.akd$$ExternalSyntheticApiModelOutline0;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auti;
+import defpackage.cauf;
+import defpackage.ekus;
+import defpackage.ekvl;
+import defpackage.elgt;
+import defpackage.elgx;
+import defpackage.eluo;
+import defpackage.fnqw;
 import j$.util.function.Function$CC;
 import java.io.FileDescriptor;
 import java.io.FileInputStream;
@@ -29,27 +29,27 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.function.Function;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class UserRestrictionsService extends GmsTaskBoundService {
-    public static final asot a = asot.b("Auth", asej.AUTH_MANAGED_WORK_PROFILE);
-    public static final eits b;
+    public static final ausn a = ausn.b("Auth", auid.AUTH_MANAGED_WORK_PROFILE);
+    public static final elgx b;
     public boolean c;
 
     static {
-        eito eitoVar = new eito();
-        eitoVar.i("dump", new Function() { // from class: abue
+        elgt elgtVar = new elgt();
+        elgtVar.i("dump", new Function() { // from class: adue
             @Override // java.util.function.Function
             /* renamed from: andThen */
-            public final /* synthetic */ Function mo464andThen(Function function) {
+            public final /* synthetic */ Function mo479andThen(Function function) {
                 return Function$CC.$default$andThen(this, function);
             }
 
             @Override // java.util.function.Function
             public final Object apply(Object obj) {
                 StringWriter stringWriter = new StringWriter();
-                ((UserRestrictionsService) obj).dump(FileDescriptor.out, new aspo(stringWriter, " "), new String[0]);
-                ((ejhf) UserRestrictionsService.a.h()).B("%s", stringWriter);
+                ((UserRestrictionsService) obj).dump(FileDescriptor.out, new auti(stringWriter, " "), new String[0]);
+                ((eluo) UserRestrictionsService.a.h()).B("%s", stringWriter);
                 return 0;
             }
 
@@ -57,10 +57,10 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                 return Function$CC.$default$compose(this, function);
             }
         });
-        eitoVar.i("fix", new Function() { // from class: abuf
+        elgtVar.i("fix", new Function() { // from class: aduf
             @Override // java.util.function.Function
             /* renamed from: andThen */
-            public final /* synthetic */ Function mo464andThen(Function function) {
+            public final /* synthetic */ Function mo479andThen(Function function) {
                 return Function$CC.$default$andThen(this, function);
             }
 
@@ -73,16 +73,16 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                 return Function$CC.$default$compose(this, function);
             }
         });
-        eitoVar.i("log", new Function() { // from class: abug
+        elgtVar.i("log", new Function() { // from class: adug
             @Override // java.util.function.Function
             /* renamed from: andThen */
-            public final /* synthetic */ Function mo464andThen(Function function) {
+            public final /* synthetic */ Function mo479andThen(Function function) {
                 return Function$CC.$default$andThen(this, function);
             }
 
             @Override // java.util.function.Function
             public final Object apply(Object obj) {
-                acaa c = acaa.c((UserRestrictionsService) obj);
+                aeaa c = aeaa.c((UserRestrictionsService) obj);
                 UserHandle myUserHandle = Process.myUserHandle();
                 String d = c.d();
                 if (d == null) {
@@ -90,7 +90,7 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                 }
                 UserHandle profileParent = c.c.getProfileParent(myUserHandle);
                 String num = profileParent != null ? Integer.toString(profileParent.getIdentifier()) : null;
-                ((ejhf) acaa.a.h()).T("Logging system restrictions. user=%s parent=%s packageName=%s", myUserHandle, profileParent, d);
+                ((eluo) aeaa.a.h()).T("Logging system restrictions. user=%s parent=%s packageName=%s", myUserHandle, profileParent, d);
                 PersistableBundle b2 = c.b(myUserHandle);
                 for (String str : b2.keySet()) {
                     boolean equals = str.equals(num);
@@ -100,62 +100,62 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                     }
                     for (String str2 : persistableBundle.keySet()) {
                         int i = persistableBundle.getInt(str2);
-                        abzu abzuVar = c.d;
-                        fecj v = fwbz.a.v();
+                        adzu adzuVar = c.d;
+                        fgrc v = fyyb.a.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fecp fecpVar = v.b;
-                        fwbz fwbzVar = (fwbz) fecpVar;
+                        fgri fgriVar = v.b;
+                        fyyb fyybVar = (fyyb) fgriVar;
                         str2.getClass();
-                        fwbzVar.b |= 1;
-                        fwbzVar.c = str2;
-                        if (!fecpVar.L()) {
+                        fyybVar.b |= 1;
+                        fyybVar.c = str2;
+                        if (!fgriVar.L()) {
                             v.U();
                         }
-                        fecp fecpVar2 = v.b;
-                        fwbz fwbzVar2 = (fwbz) fecpVar2;
-                        fwbzVar2.b |= 2;
-                        fwbzVar2.d = i;
-                        if (!fecpVar2.L()) {
+                        fgri fgriVar2 = v.b;
+                        fyyb fyybVar2 = (fyyb) fgriVar2;
+                        fyybVar2.b |= 2;
+                        fyybVar2.d = i;
+                        if (!fgriVar2.L()) {
                             v.U();
                         }
-                        fwbz fwbzVar3 = (fwbz) v.b;
-                        fwbzVar3.b |= 4;
-                        fwbzVar3.e = equals;
-                        fwbz fwbzVar4 = (fwbz) v.Q();
-                        fecj v2 = fwca.a.v();
-                        fwbs b3 = abzu.b();
+                        fyyb fyybVar3 = (fyyb) v.b;
+                        fyybVar3.b |= 4;
+                        fyybVar3.e = equals;
+                        fyyb fyybVar4 = (fyyb) v.Q();
+                        fgrc v2 = fyyc.a.v();
+                        fyxu b3 = adzu.b();
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        fecp fecpVar3 = v2.b;
-                        fwca fwcaVar = (fwca) fecpVar3;
+                        fgri fgriVar3 = v2.b;
+                        fyyc fyycVar = (fyyc) fgriVar3;
                         b3.getClass();
-                        fwcaVar.c = b3;
-                        fwcaVar.b |= 1;
-                        if (!fecpVar3.L()) {
+                        fyycVar.c = b3;
+                        fyycVar.b |= 1;
+                        if (!fgriVar3.L()) {
                             v2.U();
                         }
-                        fecp fecpVar4 = v2.b;
-                        fwca fwcaVar2 = (fwca) fecpVar4;
-                        fwcaVar2.d = 29;
-                        fwcaVar2.b |= 2;
-                        if (!fecpVar4.L()) {
+                        fgri fgriVar4 = v2.b;
+                        fyyc fyycVar2 = (fyyc) fgriVar4;
+                        fyycVar2.d = 29;
+                        fyycVar2.b |= 2;
+                        if (!fgriVar4.L()) {
                             v2.U();
                         }
-                        fecp fecpVar5 = v2.b;
-                        fwca fwcaVar3 = (fwca) fecpVar5;
-                        fwcaVar3.b |= 16;
-                        fwcaVar3.g = d;
-                        if (!fecpVar5.L()) {
+                        fgri fgriVar5 = v2.b;
+                        fyyc fyycVar3 = (fyyc) fgriVar5;
+                        fyycVar3.b |= 16;
+                        fyycVar3.g = d;
+                        if (!fgriVar5.L()) {
                             v2.U();
                         }
-                        fwca fwcaVar4 = (fwca) v2.b;
-                        fwbzVar4.getClass();
-                        fwcaVar4.l = fwbzVar4;
-                        fwcaVar4.b |= 1024;
-                        abzuVar.n((fwca) v2.Q(), abzuVar.a, 30);
+                        fyyc fyycVar4 = (fyyc) v2.b;
+                        fyybVar4.getClass();
+                        fyycVar4.l = fyybVar4;
+                        fyycVar4.b |= 1024;
+                        adzuVar.n((fyyc) v2.Q(), adzuVar.a, 30);
                     }
                 }
                 return 0;
@@ -165,10 +165,10 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                 return Function$CC.$default$compose(this, function);
             }
         });
-        eitoVar.i("record", new Function() { // from class: abuh
+        elgtVar.i("record", new Function() { // from class: aduh
             @Override // java.util.function.Function
             /* renamed from: andThen */
-            public final /* synthetic */ Function mo464andThen(Function function) {
+            public final /* synthetic */ Function mo479andThen(Function function) {
                 return Function$CC.$default$andThen(this, function);
             }
 
@@ -179,7 +179,7 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                     return 2;
                 }
                 try {
-                    acaa c = acaa.c(userRestrictionsService);
+                    aeaa c = aeaa.c(userRestrictionsService);
                     PersistableBundle b2 = c.b(Process.myUserHandle());
                     FileOutputStream openFileOutput = c.b.openFileOutput("user_restrictions_recorded", 0);
                     try {
@@ -191,7 +191,7 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                     } finally {
                     }
                 } catch (IOException | RuntimeException e) {
-                    ((ejhf) ((ejhf) UserRestrictionsService.a.i()).s(e)).x("Failed to record restriction task.");
+                    ((eluo) ((eluo) UserRestrictionsService.a.i()).s(e)).x("Failed to record restriction task.");
                     return 2;
                 }
             }
@@ -200,16 +200,16 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                 return Function$CC.$default$compose(this, function);
             }
         });
-        eitoVar.i("debug", new Function() { // from class: abui
+        elgtVar.i("debug", new Function() { // from class: adui
             @Override // java.util.function.Function
             /* renamed from: andThen */
-            public final /* synthetic */ Function mo464andThen(Function function) {
+            public final /* synthetic */ Function mo479andThen(Function function) {
                 return Function$CC.$default$andThen(this, function);
             }
 
             @Override // java.util.function.Function
             public final Object apply(Object obj) {
-                ((ejhf) UserRestrictionsService.a.h()).x("Running no op task...");
+                ((eluo) UserRestrictionsService.a.h()).x("Running no op task...");
                 return 0;
             }
 
@@ -217,39 +217,39 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                 return Function$CC.$default$compose(this, function);
             }
         });
-        b = eitoVar.b();
+        b = elgtVar.b();
     }
 
-    private final void d(PersistableBundle persistableBundle, aspo aspoVar) {
-        aspoVar.b();
-        aspoVar.println("[PersistableBundle] size=" + persistableBundle.size());
-        aspoVar.b();
+    private final void d(PersistableBundle persistableBundle, auti autiVar) {
+        autiVar.b();
+        autiVar.println("[PersistableBundle] size=" + persistableBundle.size());
+        autiVar.b();
         for (String str : persistableBundle.keySet()) {
             Object obj = persistableBundle.get(str);
             if (obj instanceof PersistableBundle) {
-                aspoVar.print(String.valueOf(str).concat(": "));
-                d((PersistableBundle) obj, aspoVar);
+                autiVar.print(String.valueOf(str).concat(": "));
+                d((PersistableBundle) obj, autiVar);
             } else {
-                aspoVar.println(a.ak(obj, str, ": "));
+                autiVar.println(a.D(obj, str, ": "));
             }
         }
-        aspoVar.a();
-        aspoVar.a();
+        autiVar.a();
+        autiVar.a();
     }
 
-    private final void e(String str, aspo aspoVar) {
+    private final void e(String str, auti autiVar) {
         PersistableBundle readFromStream;
-        aspoVar.b();
+        autiVar.b();
         try {
             try {
-                asot asotVar = acaa.a;
+                ausn ausnVar = aeaa.a;
                 FileInputStream openFileInput = openFileInput(str);
                 try {
                     readFromStream = PersistableBundle.readFromStream(openFileInput);
                     if (openFileInput != null) {
                         openFileInput.close();
                     }
-                    d(readFromStream, aspoVar);
+                    d(readFromStream, autiVar);
                 } catch (Throwable th) {
                     if (openFileInput != null) {
                         try {
@@ -261,64 +261,64 @@ public class UserRestrictionsService extends GmsTaskBoundService {
                     throw th;
                 }
             } catch (IOException | RuntimeException unused) {
-                aspoVar.println("null");
+                autiVar.println("null");
             }
         } finally {
-            aspoVar.a();
+            autiVar.a();
         }
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         Object apply;
-        asot asotVar = a;
-        ((ejhf) asotVar.h()).x("onRunTask");
-        if (!fkzo.e() || acaa.c(this).d() == null) {
-            ((ejhf) asotVar.h()).x("User restriction task was disabled after scheduling. Canceling.");
+        ausn ausnVar = a;
+        ((eluo) ausnVar.h()).x("onRunTask");
+        if (!fnqw.e() || aeaa.c(this).d() == null) {
+            ((eluo) ausnVar.h()).x("User restriction task was disabled after scheduling. Canceling.");
             return 2;
         }
-        String str = bylnVar.a;
-        eits eitsVar = b;
-        if (!eitsVar.containsKey(str)) {
-            ((ejhf) asotVar.i()).B("Unexpected tag: %s.", bylnVar.a);
+        String str = caufVar.a;
+        elgx elgxVar = b;
+        if (!elgxVar.containsKey(str)) {
+            ((eluo) ausnVar.i()).B("Unexpected tag: %s.", caufVar.a);
             return 2;
         }
-        if (eihn.a(str, "debug")) {
-            Bundle bundle = bylnVar.b;
-            ((ejhf) asotVar.h()).B("Extras = %s", bundle);
+        if (ekus.a(str, "debug")) {
+            Bundle bundle = caufVar.b;
+            ((eluo) ausnVar.h()).B("Extras = %s", bundle);
             boolean z = false;
             if (bundle != null && bundle.getBoolean("enable_debug", false)) {
                 z = true;
             }
             this.c = z;
         }
-        ((ejhf) asotVar.h()).Q("Running user restriction %s task, isDebugEnabled = %b", str, this.c);
+        ((eluo) ausnVar.h()).Q("Running user restriction %s task, isDebugEnabled = %b", str, this.c);
         try {
-            Function m98m = aju$$ExternalSyntheticApiModelOutline0.m98m(eitsVar.get(str));
-            eiig.x(m98m);
-            apply = m98m.apply(this);
+            Function m113m = akd$$ExternalSyntheticApiModelOutline0.m113m(elgxVar.get(str));
+            ekvl.y(m113m);
+            apply = m113m.apply(this);
             return ((Integer) apply).intValue();
         } catch (RuntimeException e) {
-            ((ejhf) ((ejhf) a.i()).s(e)).B("Failed to run user restriction %s task.", bylnVar.a);
+            ((eluo) ((eluo) a.i()).s(e)).B("Failed to run user restriction %s task.", caufVar.a);
             return 2;
         }
     }
 
     @Override // com.google.android.chimera.BoundService
     public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        aspo aspoVar = new aspo(printWriter, " ");
-        aspoVar.println("UserRestrictionsService user=".concat(String.valueOf(String.valueOf(Process.myUserHandle()))));
-        aspoVar.b();
+        auti autiVar = new auti(printWriter, " ");
+        autiVar.println("UserRestrictionsService user=".concat(String.valueOf(String.valueOf(Process.myUserHandle()))));
+        autiVar.b();
         StrictMode.ThreadPolicy allowThreadDiskReads = StrictMode.allowThreadDiskReads();
         try {
-            aspoVar.println("Current Restrictions");
-            d(acaa.c(this).b(Process.myUserHandle()), aspoVar);
-            aspoVar.println("Recorded Restrictions");
-            e("user_restrictions_recorded", aspoVar);
-            aspoVar.println("Fixed Restrictions");
-            e("user_restrictions_fixed", aspoVar);
+            autiVar.println("Current Restrictions");
+            d(aeaa.c(this).b(Process.myUserHandle()), autiVar);
+            autiVar.println("Recorded Restrictions");
+            e("user_restrictions_recorded", autiVar);
+            autiVar.println("Fixed Restrictions");
+            e("user_restrictions_fixed", autiVar);
             StrictMode.setThreadPolicy(allowThreadDiskReads);
-            aspoVar.flush();
+            autiVar.flush();
         } catch (Throwable th) {
             StrictMode.setThreadPolicy(allowThreadDiskReads);
             throw th;

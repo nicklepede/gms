@@ -2,36 +2,38 @@ package com.google.android.gms.mdm.services;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.ccuc;
-import defpackage.cczv;
-import defpackage.ejhf;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.cfcw;
+import defpackage.cfiv;
+import defpackage.eluo;
+import defpackage.thh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class OneTimeInitializerIntentOperation extends IntentOperation {
     private static final String a = "OneTimeInitializerIntentOperation";
-    private static final asot b = asot.b(a, asej.SECURITY);
+    private static final ausn b = ausn.b(a, auid.SECURITY);
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         if ("com.google.android.gms.onetimeinitializer.ONE_TIME_INITIALIZED".equals(intent.getAction())) {
-            if (asng.a(this, "com.google.android.gms.mdm.receivers.OneTimeInitializerReceiver") == 2) {
-                return;
-            }
             try {
+                if (aura.a(this, "com.google.android.gms.mdm.receivers.OneTimeInitializerReceiver") == 2) {
+                    return;
+                }
                 try {
-                    if (((Integer) ccuc.l.c()).intValue() == 0 && intent.getIntExtra("run_count", 0) == 0) {
-                        ccuc.l.d(1);
-                        cczv.c(this, true);
+                    thh thhVar = cfcw.l;
+                    if (((Integer) thhVar.c()).intValue() == 0 && intent.getIntExtra("run_count", 0) == 0) {
+                        thhVar.d(1);
+                        cfiv.c(this, true);
                     }
                 } catch (RuntimeException e) {
-                    ((ejhf) ((ejhf) b.i()).s(e)).x("One time init failed.");
+                    ((eluo) ((eluo) b.i()).s(e)).x("One time init failed.");
                 }
             } finally {
-                asng.M("com.google.android.gms.mdm.receivers.OneTimeInitializerReceiver", 2);
+                aura.M("com.google.android.gms.mdm.receivers.OneTimeInitializerReceiver", 2);
             }
         }
     }

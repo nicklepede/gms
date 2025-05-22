@@ -3,15 +3,15 @@ package com.google.android.gms.languageprofile;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bqbt;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bsjj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public final class LanguageFluencyParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bqbt();
+    public static final Parcelable.Creator CREATOR = new bsjj();
     public final float a;
     public final int b;
     public final int c;
@@ -28,7 +28,7 @@ public final class LanguageFluencyParams extends AbstractSafeParcelable {
         }
         if (obj instanceof LanguageFluencyParams) {
             LanguageFluencyParams languageFluencyParams = (LanguageFluencyParams) obj;
-            if (arwb.b(Float.valueOf(this.a), Float.valueOf(languageFluencyParams.a)) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(languageFluencyParams.b))) {
+            if (atyq.b(Float.valueOf(this.a), Float.valueOf(languageFluencyParams.a)) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(languageFluencyParams.b))) {
                 return true;
             }
         }
@@ -42,10 +42,10 @@ public final class LanguageFluencyParams extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         float f = this.a;
-        int a = arxc.a(parcel);
-        arxc.l(parcel, 1, f);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.l(parcel, 1, f);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 }

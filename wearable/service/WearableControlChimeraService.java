@@ -5,23 +5,23 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.util.Log;
 import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
-import defpackage.dkqm;
-import defpackage.dkrj;
-import defpackage.dkrl;
-import defpackage.dkvu;
-import defpackage.dkvv;
-import defpackage.dkwp;
-import defpackage.dkxs;
-import defpackage.dler;
-import defpackage.dmbe;
-import defpackage.dmbs;
-import defpackage.dmdg;
-import defpackage.dmdj;
-import defpackage.dmiw;
-import defpackage.dmja;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.fthl;
+import defpackage.dncf;
+import defpackage.dndc;
+import defpackage.dnde;
+import defpackage.dnhn;
+import defpackage.dnho;
+import defpackage.dnii;
+import defpackage.dnjl;
+import defpackage.dnql;
+import defpackage.domq;
+import defpackage.done;
+import defpackage.doos;
+import defpackage.doov;
+import defpackage.douk;
+import defpackage.douo;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.fwda;
 import j$.util.Objects;
 import j$.util.Optional;
 import j$.util.concurrent.ConcurrentHashMap;
@@ -33,7 +33,7 @@ import java.util.Set;
 import java.util.concurrent.locks.Lock;
 import java.util.function.Consumer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class WearableControlChimeraService extends TracingIntentService {
     public WearableControlChimeraService() {
@@ -46,130 +46,130 @@ public class WearableControlChimeraService extends TracingIntentService {
     }
 
     private static final void c(final String str) {
-        final dler e;
-        if (dmbe.b() != null) {
-            dmbe.b().f(str);
+        final dnql e;
+        if (domq.b() != null) {
+            domq.b().f(str);
         }
-        if (dmbs.c() != null) {
-            dmbs.c().h(str);
+        if (done.c() != null) {
+            done.c().h(str);
         }
-        if (dkrl.m() != null) {
-            dkrl m = dkrl.m();
-            dmiw.e("CapabilityService", "handlePackageAdded(%s)", dmja.a(str));
-            dkqm k = m.k(str);
+        if (dnde.m() != null) {
+            dnde m = dnde.m();
+            douk.e("CapabilityService", "handlePackageAdded(%s)", douo.a(str));
+            dncf k = m.k(str);
             if (k != null) {
                 m.w(k);
             }
         }
-        fthl.d();
-        if (!fthl.c() || (e = dmdj.e()) == null) {
+        fwda.d();
+        if (!fwda.c() || (e = doov.e()) == null) {
             return;
         }
-        ensj.l(new Runnable() { // from class: dlee
+        eqgc.l(new Runnable() { // from class: dnpy
             @Override // java.lang.Runnable
             public final void run() {
                 Lock lock;
-                dler dlerVar = dler.this;
-                Lock lock2 = dlerVar.m;
+                dnql dnqlVar = dnql.this;
+                Lock lock2 = dnqlVar.m;
                 lock2.lock();
                 String str2 = str;
                 try {
                     try {
                     } catch (PackageManager.NameNotFoundException e2) {
-                        dmiw.c("AppCatalogService", e2, "handlePackageAdded - Could not construct AppKey. No name found.", new Object[0]);
-                        lock = dlerVar.m;
+                        douk.c("AppCatalogService", e2, "handlePackageAdded - Could not construct AppKey. No name found.", new Object[0]);
+                        lock = dnqlVar.m;
                     } catch (IllegalArgumentException e3) {
-                        dmiw.c("AppCatalogService", e3, "handlePackageAdded - Could not construct AppKey. Illegal arguments.", new Object[0]);
-                        lock = dlerVar.m;
+                        douk.c("AppCatalogService", e3, "handlePackageAdded - Could not construct AppKey. Illegal arguments.", new Object[0]);
+                        lock = dnqlVar.m;
                     }
-                    if (dlerVar.l.get() && dlerVar.f) {
-                        dkqm a = dkqo.a(dlerVar.b, str2);
-                        dldy dldyVar = dlerVar.j;
-                        String str3 = dlerVar.g;
-                        dldyVar.e.lock();
+                    if (dnqlVar.l.get() && dnqlVar.f) {
+                        dncf a = dnch.a(dnqlVar.b, str2);
+                        dnps dnpsVar = dnqlVar.j;
+                        String str3 = dnqlVar.g;
+                        dnpsVar.e.lock();
                         try {
-                            Set d = dldyVar.d(str3);
+                            Set d = dnpsVar.d(str3);
                             if (d.add(a)) {
-                                dldyVar.f(str3, d);
+                                dnpsVar.f(str3, d);
                             }
-                            dldyVar.e.unlock();
-                            dlerVar.a(a.x(str2, "Local package added: "), "handlePackageAdded");
-                            dlerVar.d();
-                            lock = dlerVar.m;
+                            dnpsVar.e.unlock();
+                            dnqlVar.a(a.x(str2, "Local package added: "), "handlePackageAdded");
+                            dnqlVar.d();
+                            lock = dnqlVar.m;
                             lock.unlock();
                             return;
                         } catch (Throwable th) {
-                            dldyVar.e.unlock();
+                            dnpsVar.e.unlock();
                             throw th;
                         }
                     }
                     lock2.unlock();
                 } catch (Throwable th2) {
-                    dlerVar.m.unlock();
+                    dnqlVar.m.unlock();
                     throw th2;
                 }
             }
-        }, e.k).hn(new Runnable() { // from class: dlef
+        }, e.k).hD(new Runnable() { // from class: dnpz
             @Override // java.lang.Runnable
             public final void run() {
-                int i = dler.n;
-                dmiw.e("AppCatalogService", "handlePackageAdded - packageName: %s", str);
+                int i = dnql.n;
+                douk.e("AppCatalogService", "handlePackageAdded - packageName: %s", str);
             }
-        }, enre.a);
+        }, eqex.a);
     }
 
     private static final void d(final String str) {
-        final dler e;
-        if (dkrl.m() != null) {
-            dkrl.m().x(str);
+        final dnql e;
+        if (dnde.m() != null) {
+            dnde.m().x(str);
         }
-        if (dkwp.m() != null) {
-            dkwp.m().H(str);
+        if (dnii.m() != null) {
+            dnii.m().H(str);
         }
-        if (dmbs.c() != null) {
-            dmbs c = dmbs.c();
+        if (done.c() != null) {
+            done c = done.c();
             ConcurrentHashMap concurrentHashMap = c.i;
             Iterator it = concurrentHashMap.keySet().iterator();
             while (true) {
                 if (!it.hasNext()) {
                     break;
                 }
-                dkqm dkqmVar = (dkqm) it.next();
-                if (str.equals(dkqmVar.c)) {
+                dncf dncfVar = (dncf) it.next();
+                if (str.equals(dncfVar.c)) {
                     Iterator it2 = c.k.values().iterator();
                     while (it2.hasNext()) {
-                        ((Map) it2.next()).remove(dkqmVar);
+                        ((Map) it2.next()).remove(dncfVar);
                     }
-                    concurrentHashMap.remove(dkqmVar);
+                    concurrentHashMap.remove(dncfVar);
                     c.i();
                     c.k();
                 }
             }
         }
-        if (dmbe.b() != null) {
-            dmbe b = dmbe.b();
+        if (domq.b() != null) {
+            domq b = domq.b();
             if (b.d.contains(str)) {
                 b.g(str, b.f);
             }
         }
-        fthl.d();
-        if (!fthl.c() || (e = dmdj.e()) == null) {
+        fwda.d();
+        if (!fwda.c() || (e = doov.e()) == null) {
             return;
         }
-        ensj.l(new Runnable() { // from class: dlen
+        eqgc.l(new Runnable() { // from class: dnqh
             @Override // java.lang.Runnable
             public final void run() {
                 final String str2;
-                final dler dlerVar = dler.this;
-                Lock lock = dlerVar.m;
+                final dnql dnqlVar = dnql.this;
+                Lock lock = dnqlVar.m;
                 lock.lock();
                 try {
-                    if (dlerVar.l.get() && dlerVar.f) {
-                        final dldy dldyVar = dlerVar.j;
-                        final String str3 = dlerVar.g;
-                        dldyVar.e.lock();
+                    if (dnqlVar.l.get() && dnqlVar.f) {
+                        final dnps dnpsVar = dnqlVar.j;
+                        final String str3 = dnqlVar.g;
+                        dnpsVar.e.lock();
                         try {
-                            Set d = dldyVar.d(str3);
+                            Set d = dnpsVar.d(str3);
                             Optional empty = Optional.empty();
                             Iterator it3 = d.iterator();
                             while (true) {
@@ -178,27 +178,27 @@ public class WearableControlChimeraService extends TracingIntentService {
                                 if (!hasNext) {
                                     break;
                                 }
-                                dkqm dkqmVar2 = (dkqm) it3.next();
-                                if (dkqmVar2.b.equals(str2)) {
-                                    empty = Optional.of(dkqmVar2);
+                                dncf dncfVar2 = (dncf) it3.next();
+                                if (dncfVar2.b.equals(str2)) {
+                                    empty = Optional.of(dncfVar2);
                                     break;
                                 }
                             }
-                            empty.ifPresent(new Consumer() { // from class: dldx
+                            empty.ifPresent(new Consumer() { // from class: dnpr
                                 @Override // java.util.function.Consumer
                                 /* renamed from: accept */
-                                public final void q(Object obj) {
-                                    dldy dldyVar2 = dldy.this;
-                                    dkqm dkqmVar3 = (dkqm) obj;
-                                    dldyVar2.e.lock();
+                                public final void u(Object obj) {
+                                    dnps dnpsVar2 = dnps.this;
+                                    dncf dncfVar3 = (dncf) obj;
+                                    dnpsVar2.e.lock();
                                     String str4 = str3;
                                     try {
-                                        Set d2 = dldyVar2.d(str4);
-                                        if (d2.remove(dkqmVar3)) {
-                                            dldyVar2.f(str4, d2);
+                                        Set d2 = dnpsVar2.d(str4);
+                                        if (d2.remove(dncfVar3)) {
+                                            dnpsVar2.f(str4, d2);
                                         }
                                     } finally {
-                                        dldyVar2.e.unlock();
+                                        dnpsVar2.e.unlock();
                                     }
                                 }
 
@@ -206,14 +206,14 @@ public class WearableControlChimeraService extends TracingIntentService {
                                     return Consumer$CC.$default$andThen(this, consumer);
                                 }
                             });
-                            dldyVar.e.unlock();
-                            empty.ifPresent(new Consumer() { // from class: dleh
+                            dnpsVar.e.unlock();
+                            empty.ifPresent(new Consumer() { // from class: dnqb
                                 @Override // java.util.function.Consumer
                                 /* renamed from: accept */
-                                public final void q(Object obj) {
-                                    dler dlerVar2 = dler.this;
-                                    dlerVar2.a("Local package removed: ".concat(String.valueOf(str2)), "handlePackageRemoved");
-                                    dlerVar2.d();
+                                public final void u(Object obj) {
+                                    dnql dnqlVar2 = dnql.this;
+                                    dnqlVar2.a("Local package removed: ".concat(String.valueOf(str2)), "handlePackageRemoved");
+                                    dnqlVar2.d();
                                 }
 
                                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -222,22 +222,22 @@ public class WearableControlChimeraService extends TracingIntentService {
                             });
                             return;
                         } catch (Throwable th) {
-                            dldyVar.e.unlock();
+                            dnpsVar.e.unlock();
                             throw th;
                         }
                     }
                     lock.unlock();
                 } finally {
-                    dlerVar.m.unlock();
+                    dnqlVar.m.unlock();
                 }
             }
-        }, e.k).hn(new Runnable() { // from class: dleo
+        }, e.k).hD(new Runnable() { // from class: dnqi
             @Override // java.lang.Runnable
             public final void run() {
-                int i = dler.n;
-                dmiw.e("AppCatalogService", "handlePackageRemoved - packageName: %s", str);
+                int i = dnql.n;
+                douk.e("AppCatalogService", "handlePackageRemoved - packageName: %s", str);
             }
-        }, enre.a);
+        }, eqex.a);
     }
 
     @Override // com.google.android.gms.framework.tracing.wrapper.TracingIntentService
@@ -255,7 +255,7 @@ public class WearableControlChimeraService extends TracingIntentService {
         }
         if (Objects.equals(action, "com.google.android.gms.wearable.ACTION_WEARABLE_APP_PACKAGE_REMOVED")) {
             d(schemeSpecificPart);
-            dmdg.a(getApplicationContext(), false);
+            doos.a(getApplicationContext(), false);
             Log.d("Wear_ControlService", "stopWearableServices");
             stopService(new Intent().setClassName(this, "com.google.android.gms.wearable.service.WearableService"));
             return;
@@ -265,16 +265,16 @@ public class WearableControlChimeraService extends TracingIntentService {
             return;
         }
         if (Objects.equals(action, "com.google.android.gms.wearable.ACTION_PACKAGE_CHANGED")) {
-            if (dmbe.b() != null) {
-                dmbe.b().f(schemeSpecificPart);
+            if (domq.b() != null) {
+                domq.b().f(schemeSpecificPart);
             }
-            if (dmbs.c() != null) {
-                dmbs.c().h(schemeSpecificPart);
+            if (done.c() != null) {
+                done.c().h(schemeSpecificPart);
             }
-            if (dkrl.m() != null) {
-                dkrl m = dkrl.m();
-                dmiw.e("CapabilityService", "handlePackageChanged(%s)", dmja.a(schemeSpecificPart));
-                dkqm k = m.k(schemeSpecificPart);
+            if (dnde.m() != null) {
+                dnde m = dnde.m();
+                douk.e("CapabilityService", "handlePackageChanged(%s)", douo.a(schemeSpecificPart));
+                dncf k = m.k(schemeSpecificPart);
                 if (k != null) {
                     m.w(k);
                     return;
@@ -292,26 +292,26 @@ public class WearableControlChimeraService extends TracingIntentService {
                 return;
             }
         }
-        if (dkrl.m() != null) {
-            dkrl m2 = dkrl.m();
+        if (dnde.m() != null) {
+            dnde m2 = dnde.m();
             if (m2.e.h(schemeSpecificPart)) {
-                dmiw.e("CapabilityService", "handlePackageDataCleared(%s) with home app package name, skipping...", dmja.a(schemeSpecificPart));
+                douk.e("CapabilityService", "handlePackageDataCleared(%s) with home app package name, skipping...", douo.a(schemeSpecificPart));
             } else {
-                dmiw.e("CapabilityService", "handleAppDataCleared(%s)", dmja.a(schemeSpecificPart));
-                dkqm k2 = m2.k(schemeSpecificPart);
+                douk.e("CapabilityService", "handleAppDataCleared(%s)", douo.a(schemeSpecificPart));
+                dncf k2 = m2.k(schemeSpecificPart);
                 if (k2 != null) {
-                    dmiw.e("CapabilityService", "handleAppDataCleared(%s)", k2);
-                    dkxs a = m2.h.a(k2.b);
+                    douk.e("CapabilityService", "handleAppDataCleared(%s)", k2);
+                    dnjl a = m2.h.a(k2.b);
                     try {
                         HashSet hashSet = new HashSet();
                         Cursor d = m2.d(k2, m2.j.a().a);
                         try {
                             d.moveToFirst();
                             while (!d.isAfterLast()) {
-                                dkvu f = dkvv.f(d);
-                                String q = dkrl.q(f);
-                                if (dkrl.l(f.b) == dkrj.DYNAMIC) {
-                                    hashSet.add(q);
+                                dnhn f = dnho.f(d);
+                                String s = dnde.s(f);
+                                if (dnde.l(f.b) == dndc.DYNAMIC) {
+                                    hashSet.add(s);
                                 }
                             }
                             if (d != null) {
@@ -336,8 +336,8 @@ public class WearableControlChimeraService extends TracingIntentService {
                 }
             }
         }
-        if (dkwp.m() != null) {
-            dkwp.m().H(schemeSpecificPart);
+        if (dnii.m() != null) {
+            dnii.m().H(schemeSpecificPart);
         }
     }
 }

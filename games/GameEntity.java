@@ -4,17 +4,17 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.games.internal.GamesDowngradeableSafeParcel;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bhjc;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bjnr;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class GameEntity extends GamesDowngradeableSafeParcel implements Game {
-    public static final Parcelable.Creator CREATOR = new bhjc();
+    public static final Parcelable.Creator CREATOR = new bjnr();
     public final String a;
     public final String b;
     public final String c;
@@ -105,7 +105,7 @@ public final class GameEntity extends GamesDowngradeableSafeParcel implements Ga
             return true;
         }
         Game game = (Game) obj;
-        return arwb.b(game.f(), this.a) && arwb.b(game.i(), this.b) && arwb.b(game.k(), this.c) && arwb.b(game.m(), this.d) && arwb.b(game.g(), this.e) && arwb.b(game.h(), this.f) && arwb.b(game.e(), this.g) && arwb.b(game.d(), this.h) && arwb.b(game.c(), this.i) && arwb.b(Boolean.valueOf(game.t()), Boolean.valueOf(this.j)) && arwb.b(Boolean.valueOf(game.r()), Boolean.valueOf(this.k)) && arwb.b(game.j(), this.l) && arwb.b(Integer.valueOf(game.a()), Integer.valueOf(this.n)) && arwb.b(Integer.valueOf(game.b()), Integer.valueOf(this.o)) && arwb.b(Boolean.valueOf(game.v()), Boolean.valueOf(this.p)) && arwb.b(Boolean.valueOf(game.w()), Boolean.valueOf(this.q)) && arwb.b(Boolean.valueOf(game.s()), Boolean.valueOf(this.u)) && arwb.b(Boolean.valueOf(game.q()), Boolean.valueOf(this.v)) && arwb.b(Boolean.valueOf(game.o()), Boolean.valueOf(this.w)) && arwb.b(game.n(), this.x) && arwb.b(Boolean.valueOf(game.p()), Boolean.valueOf(this.y)) && arwb.b(Boolean.valueOf(game.u()), Boolean.valueOf(this.z));
+        return atyq.b(game.f(), this.a) && atyq.b(game.i(), this.b) && atyq.b(game.k(), this.c) && atyq.b(game.m(), this.d) && atyq.b(game.g(), this.e) && atyq.b(game.h(), this.f) && atyq.b(game.e(), this.g) && atyq.b(game.d(), this.h) && atyq.b(game.c(), this.i) && atyq.b(Boolean.valueOf(game.t()), Boolean.valueOf(this.j)) && atyq.b(Boolean.valueOf(game.r()), Boolean.valueOf(this.k)) && atyq.b(game.j(), this.l) && atyq.b(Integer.valueOf(game.a()), Integer.valueOf(this.n)) && atyq.b(Integer.valueOf(game.b()), Integer.valueOf(this.o)) && atyq.b(Boolean.valueOf(game.v()), Boolean.valueOf(this.p)) && atyq.b(Boolean.valueOf(game.w()), Boolean.valueOf(this.q)) && atyq.b(Boolean.valueOf(game.s()), Boolean.valueOf(this.u)) && atyq.b(Boolean.valueOf(game.q()), Boolean.valueOf(this.v)) && atyq.b(Boolean.valueOf(game.o()), Boolean.valueOf(this.w)) && atyq.b(game.n(), this.x) && atyq.b(Boolean.valueOf(game.p()), Boolean.valueOf(this.y)) && atyq.b(Boolean.valueOf(game.u()), Boolean.valueOf(this.z));
     }
 
     @Override // com.google.android.gms.games.Game
@@ -184,27 +184,27 @@ public final class GameEntity extends GamesDowngradeableSafeParcel implements Ga
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("ApplicationId", this.a, arrayList);
-        arwa.b("DisplayName", this.b, arrayList);
-        arwa.b("PrimaryCategory", this.c, arrayList);
-        arwa.b("SecondaryCategory", this.d, arrayList);
-        arwa.b("Description", this.e, arrayList);
-        arwa.b("DeveloperName", this.f, arrayList);
-        arwa.b("IconImageUri", this.g, arrayList);
-        arwa.b("IconImageUrl", this.r, arrayList);
-        arwa.b("HiResImageUri", this.h, arrayList);
-        arwa.b("HiResImageUrl", this.s, arrayList);
-        arwa.b("FeaturedImageUri", this.i, arrayList);
-        arwa.b("FeaturedImageUrl", this.t, arrayList);
-        arwa.b("PlayEnabledGame", Boolean.valueOf(this.j), arrayList);
-        arwa.b("InstanceInstalled", Boolean.valueOf(this.k), arrayList);
-        arwa.b("InstancePackageName", this.l, arrayList);
-        arwa.b("AchievementTotalCount", Integer.valueOf(this.n), arrayList);
-        arwa.b("LeaderboardCount", Integer.valueOf(this.o), arrayList);
-        arwa.b("AreSnapshotsEnabled", Boolean.valueOf(this.w), arrayList);
-        arwa.b("ThemeColor", this.x, arrayList);
-        arwa.b("HasGamepadSupport", Boolean.valueOf(this.y), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("ApplicationId", this.a, arrayList);
+        atyp.b("DisplayName", this.b, arrayList);
+        atyp.b("PrimaryCategory", this.c, arrayList);
+        atyp.b("SecondaryCategory", this.d, arrayList);
+        atyp.b("Description", this.e, arrayList);
+        atyp.b("DeveloperName", this.f, arrayList);
+        atyp.b("IconImageUri", this.g, arrayList);
+        atyp.b("IconImageUrl", this.r, arrayList);
+        atyp.b("HiResImageUri", this.h, arrayList);
+        atyp.b("HiResImageUrl", this.s, arrayList);
+        atyp.b("FeaturedImageUri", this.i, arrayList);
+        atyp.b("FeaturedImageUrl", this.t, arrayList);
+        atyp.b("PlayEnabledGame", Boolean.valueOf(this.j), arrayList);
+        atyp.b("InstanceInstalled", Boolean.valueOf(this.k), arrayList);
+        atyp.b("InstancePackageName", this.l, arrayList);
+        atyp.b("AchievementTotalCount", Integer.valueOf(this.n), arrayList);
+        atyp.b("LeaderboardCount", Integer.valueOf(this.o), arrayList);
+        atyp.b("AreSnapshotsEnabled", Boolean.valueOf(this.w), arrayList);
+        atyp.b("ThemeColor", this.x, arrayList);
+        atyp.b("HasGamepadSupport", Boolean.valueOf(this.y), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // com.google.android.gms.games.Game
@@ -225,34 +225,34 @@ public final class GameEntity extends GamesDowngradeableSafeParcel implements Ga
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.t(parcel, 8, this.h, i, false);
-        arxc.t(parcel, 9, this.i, i, false);
-        arxc.e(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.v(parcel, 12, this.l, false);
-        arxc.o(parcel, 13, this.m);
-        arxc.o(parcel, 14, this.n);
-        arxc.o(parcel, 15, this.o);
-        arxc.e(parcel, 16, this.p);
-        arxc.e(parcel, 17, this.q);
-        arxc.v(parcel, 18, this.r, false);
-        arxc.v(parcel, 19, this.s, false);
-        arxc.v(parcel, 20, this.t, false);
-        arxc.e(parcel, 21, this.u);
-        arxc.e(parcel, 22, this.v);
-        arxc.e(parcel, 23, this.w);
-        arxc.v(parcel, 24, this.x, false);
-        arxc.e(parcel, 25, this.y);
-        arxc.e(parcel, 28, this.z);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.t(parcel, 8, this.h, i, false);
+        atzr.t(parcel, 9, this.i, i, false);
+        atzr.e(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.v(parcel, 12, this.l, false);
+        atzr.o(parcel, 13, this.m);
+        atzr.o(parcel, 14, this.n);
+        atzr.o(parcel, 15, this.o);
+        atzr.e(parcel, 16, this.p);
+        atzr.e(parcel, 17, this.q);
+        atzr.v(parcel, 18, this.r, false);
+        atzr.v(parcel, 19, this.s, false);
+        atzr.v(parcel, 20, this.t, false);
+        atzr.e(parcel, 21, this.u);
+        atzr.e(parcel, 22, this.v);
+        atzr.e(parcel, 23, this.w);
+        atzr.v(parcel, 24, this.x, false);
+        atzr.e(parcel, 25, this.y);
+        atzr.e(parcel, 28, this.z);
+        atzr.c(parcel, a);
     }
 
     public GameEntity(String str, String str2, String str3, String str4, String str5, String str6, Uri uri, Uri uri2, Uri uri3, boolean z, boolean z2, String str7, int i, int i2, int i3, boolean z3, boolean z4, String str8, String str9, String str10, boolean z5, boolean z6, boolean z7, String str11, boolean z8, boolean z9) {
@@ -284,7 +284,7 @@ public final class GameEntity extends GamesDowngradeableSafeParcel implements Ga
         this.z = z9;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

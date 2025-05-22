@@ -8,47 +8,47 @@ import com.google.android.gms.appinvite.ui.context.section.LoaderSectionInfo;
 import com.google.android.gms.appinvite.ui.context.section.SectionInfo;
 import com.google.android.gms.appinvite.ui.context.section.SelectionSectionInfo;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.azht;
-import defpackage.txs;
-import defpackage.txy;
-import defpackage.tyj;
-import defpackage.tyk;
-import defpackage.tyl;
-import defpackage.tym;
-import defpackage.tys;
-import defpackage.tyt;
-import defpackage.tyv;
-import defpackage.tyy;
-import defpackage.uam;
-import defpackage.ube;
+import defpackage.bblp;
+import defpackage.vtr;
+import defpackage.vtx;
+import defpackage.vui;
+import defpackage.vuj;
+import defpackage.vuk;
+import defpackage.vul;
+import defpackage.vur;
+import defpackage.vus;
+import defpackage.vuu;
+import defpackage.vux;
+import defpackage.vwl;
+import defpackage.vxd;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class SelectionFragmentHolderImpl extends tym {
-    private tyj a;
+public class SelectionFragmentHolderImpl extends vul {
+    private vui a;
 
     private static final void m(Bundle bundle, SectionInfo sectionInfo) {
         sectionInfo.p = bundle.getBoolean("docked");
     }
 
-    @Override // defpackage.tyn
-    public final azht a() {
+    @Override // defpackage.vum
+    public final bblp a() {
         return new ObjectWrapper(this.a);
     }
 
-    @Override // defpackage.tyn
+    @Override // defpackage.vum
     public final List c() {
         return this.a.A();
     }
 
-    @Override // defpackage.tyn
-    public final void d(azht azhtVar) {
-        this.a = (tyj) ObjectWrapper.a(azhtVar);
+    @Override // defpackage.vum
+    public final void d(bblp bblpVar) {
+        this.a = (vui) ObjectWrapper.a(bblpVar);
     }
 
-    @Override // defpackage.tyn
+    @Override // defpackage.vum
     public final void e(SelectionFragmentOptions selectionFragmentOptions) {
         char c;
         ArrayList arrayList = selectionFragmentOptions.k;
@@ -101,19 +101,19 @@ public class SelectionFragmentHolderImpl extends tym {
         int i3 = selectionFragmentOptions.f;
         String[] strArr = selectionFragmentOptions.e;
         boolean z3 = selectionFragmentOptions.l;
-        this.a = tyj.z(selectionFragmentOptions.a, selectionFragmentOptions.b, arrayList4, selectionFragmentOptions.d, selectionFragmentOptions.n, z3, strArr, false, i3, i2, arrayList2, str, z2, null, null, null, null, z);
+        this.a = vui.z(selectionFragmentOptions.a, selectionFragmentOptions.b, arrayList4, selectionFragmentOptions.d, selectionFragmentOptions.n, z3, strArr, false, i3, i2, arrayList2, str, z2, null, null, null, null, z);
     }
 
-    @Override // defpackage.tyn
+    @Override // defpackage.vum
     public final void f(ContactPerson contactPerson) {
         for (ContactPerson contactPerson2 : this.a.A()) {
-            if (contactPerson.equals(contactPerson2) || ube.g(contactPerson, contactPerson2)) {
-                ube.e(contactPerson2, contactPerson);
-                tyj tyjVar = this.a;
-                tyjVar.av.G(contactPerson2);
-                tyv tyvVar = tyjVar.aw;
-                if (tyvVar != null) {
-                    tyvVar.G(contactPerson2);
+            if (contactPerson.equals(contactPerson2) || vxd.g(contactPerson, contactPerson2)) {
+                vxd.e(contactPerson2, contactPerson);
+                vui vuiVar = this.a;
+                vuiVar.av.G(contactPerson2);
+                vuu vuuVar = vuiVar.aw;
+                if (vuuVar != null) {
+                    vuuVar.G(contactPerson2);
                     return;
                 }
                 return;
@@ -121,74 +121,74 @@ public class SelectionFragmentHolderImpl extends tym {
         }
     }
 
-    @Override // defpackage.tyn
+    @Override // defpackage.vum
     public final void g(ContactPerson contactPerson) {
         for (ContactPerson contactPerson2 : this.a.A()) {
             if (contactPerson.equals(contactPerson2)) {
-                tyj tyjVar = this.a;
-                tyjVar.E(contactPerson2, 0, tyjVar.y(contactPerson2));
+                vui vuiVar = this.a;
+                vuiVar.E(contactPerson2, 0, vuiVar.y(contactPerson2));
                 return;
             }
         }
     }
 
-    @Override // defpackage.tyn
+    @Override // defpackage.vum
     public final void h(int i) {
-        tyj tyjVar = this.a;
-        tyjVar.aC = i;
-        txs txsVar = tyjVar.aF;
-        if (txsVar != null) {
-            txsVar.c = i;
+        vui vuiVar = this.a;
+        vuiVar.aC = i;
+        vtr vtrVar = vuiVar.aF;
+        if (vtrVar != null) {
+            vtrVar.c = i;
         }
-        tyy tyyVar = tyjVar.av;
-        if (tyyVar != null) {
-            tyyVar.O(tyjVar.aC);
+        vux vuxVar = vuiVar.av;
+        if (vuxVar != null) {
+            vuxVar.O(vuiVar.aC);
         }
-        tyv tyvVar = tyjVar.aw;
-        if (tyvVar != null) {
-            tyvVar.O(tyjVar.aC);
+        vuu vuuVar = vuiVar.aw;
+        if (vuuVar != null) {
+            vuuVar.O(vuiVar.aC);
         }
     }
 
-    @Override // defpackage.tyn
+    @Override // defpackage.vum
     public final void i(int i) {
-        tyj tyjVar = this.a;
-        tyjVar.aD = i;
-        uam uamVar = tyjVar.au;
-        if (uamVar != null) {
-            uamVar.a(i);
+        vui vuiVar = this.a;
+        vuiVar.aD = i;
+        vwl vwlVar = vuiVar.au;
+        if (vwlVar != null) {
+            vwlVar.a(i);
         }
     }
 
-    @Override // defpackage.tyn
+    @Override // defpackage.vum
     public final void j(boolean z) {
-        tyj tyjVar = this.a;
-        tyjVar.aB = z;
-        tyy tyyVar = tyjVar.av;
-        if (tyyVar != null) {
-            tyyVar.T(z);
+        vui vuiVar = this.a;
+        vuiVar.aB = z;
+        vux vuxVar = vuiVar.av;
+        if (vuxVar != null) {
+            vuxVar.T(z);
         }
-        tyv tyvVar = tyjVar.aw;
-        if (tyvVar != null) {
-            tyvVar.T(z);
+        vuu vuuVar = vuiVar.aw;
+        if (vuuVar != null) {
+            vuuVar.T(z);
         }
-        txy txyVar = tyjVar.aG;
-        if (txyVar != null) {
-            txyVar.m = z;
+        vtx vtxVar = vuiVar.aG;
+        if (vtxVar != null) {
+            vtxVar.m = z;
         }
-        txs txsVar = tyjVar.aF;
-        if (txsVar != null) {
-            txsVar.notifyDataSetChanged();
+        vtr vtrVar = vuiVar.aF;
+        if (vtrVar != null) {
+            vtrVar.notifyDataSetChanged();
         }
     }
 
-    @Override // defpackage.tyn
-    public final void k(tyk tykVar) {
-        this.a.ag = new tys(tykVar);
+    @Override // defpackage.vum
+    public final void k(vuj vujVar) {
+        this.a.ag = new vur(vujVar);
     }
 
-    @Override // defpackage.tyn
-    public final void l(tyl tylVar) {
-        this.a.ah = new tyt(tylVar);
+    @Override // defpackage.vum
+    public final void l(vuk vukVar) {
+        this.a.ah = new vus(vukVar);
     }
 }

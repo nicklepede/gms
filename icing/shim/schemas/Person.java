@@ -1,14 +1,14 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eiif;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.ekvk;
+import defpackage.elgo;
+import defpackage.elpg;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class Person extends Thing {
     public final String a;
@@ -31,33 +31,33 @@ public final class Person extends Thing {
         super(str, str2, str3, list, list2, g3AttributionInfo);
         List list5;
         List list6;
-        this.a = eiif.b(str4);
+        this.a = ekvk.b(str4);
         if (list3 != null) {
             list5 = DesugarCollections.unmodifiableList(list3);
         } else {
-            int i = eitj.d;
-            list5 = ejcb.a;
+            int i = elgo.d;
+            list5 = elpg.a;
         }
         this.b = list5;
         if (list4 != null) {
             list6 = DesugarCollections.unmodifiableList(list4);
         } else {
-            int i2 = eitj.d;
-            list6 = ejcb.a;
+            int i2 = elgo.d;
+            list6 = elpg.a;
         }
         this.c = list6;
-        this.d = eiif.b(str5);
-        this.e = eiif.b(str6);
-        this.f = eiif.b(str7);
-        this.g = eiif.b(str8);
-        this.h = eiif.b(str9);
-        this.i = eiif.b(str10);
-        this.j = eiif.b(str11);
+        this.d = ekvk.b(str5);
+        this.e = ekvk.b(str6);
+        this.f = ekvk.b(str7);
+        this.g = ekvk.b(str8);
+        this.h = ekvk.b(str9);
+        this.i = ekvk.b(str10);
+        this.j = ekvk.b(str11);
         this.k = z;
-        this.l = eiif.b(str12);
-        this.m = eiif.b(str13);
-        this.n = eiif.b(str14);
-        this.o = eiif.b(str15);
+        this.l = ekvk.b(str12);
+        this.m = ekvk.b(str13);
+        this.n = ekvk.b(str14);
+        this.o = ekvk.b(str15);
     }
 
     @Override // com.google.android.gms.icing.shim.schemas.Thing

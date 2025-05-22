@@ -7,61 +7,61 @@ import android.net.Uri;
 import android.provider.Settings;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.auth.blockstore.DeleteBytesRequest;
-import defpackage.aacb;
-import defpackage.aacc;
-import defpackage.aajh;
-import defpackage.aaku;
-import defpackage.asot;
-import defpackage.ejhf;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.plg;
+import defpackage.accb;
+import defpackage.accc;
+import defpackage.acjh;
+import defpackage.acku;
+import defpackage.ausn;
+import defpackage.eluo;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.rek;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class PackageIntentOperation extends IntentOperation {
-    private static final asot a = aacc.b("PackageIntentOperation");
-    private aacb b = null;
+    private static final ausn a = accc.b("PackageIntentOperation");
+    private accb b = null;
 
-    private final aacb a() {
+    private final accb a() {
         if (this.b == null) {
-            this.b = aacc.a(this, aacc.c(this));
+            this.b = accc.a(this, accc.c(this));
         }
         return this.b;
     }
 
-    private final void b(aajh aajhVar, String str, Signature[] signatureArr, DeleteBytesRequest deleteBytesRequest) {
+    private final void b(acjh acjhVar, String str, Signature[] signatureArr, DeleteBytesRequest deleteBytesRequest) {
         try {
-            if (((aaku) aajhVar.a(str, signatureArr, deleteBytesRequest).get()).a) {
-                ((ejhf) a.h()).B("Removed Blockstore data for %s upon clearing data.", str);
-                aacb a2 = a();
-                fecj v = plg.a.v();
+            if (((acku) acjhVar.a(str, signatureArr, deleteBytesRequest).get()).a) {
+                ((eluo) a.h()).B("Removed Blockstore data for %s upon clearing data.", str);
+                accb a2 = a();
+                fgrc v = rek.a.v();
                 if (!v.b.L()) {
                     v.U();
                 }
-                fecp fecpVar = v.b;
-                plg plgVar = (plg) fecpVar;
-                plgVar.c = 1;
-                plgVar.b |= 1;
-                if (!fecpVar.L()) {
+                fgri fgriVar = v.b;
+                rek rekVar = (rek) fgriVar;
+                rekVar.c = 1;
+                rekVar.b |= 1;
+                if (!fgriVar.L()) {
                     v.U();
                 }
-                fecp fecpVar2 = v.b;
-                plg plgVar2 = (plg) fecpVar2;
+                fgri fgriVar2 = v.b;
+                rek rekVar2 = (rek) fgriVar2;
                 str.getClass();
-                plgVar2.b |= 2;
-                plgVar2.d = str;
-                if (!fecpVar2.L()) {
+                rekVar2.b |= 2;
+                rekVar2.d = str;
+                if (!fgriVar2.L()) {
                     v.U();
                 }
-                plg plgVar3 = (plg) v.b;
-                plgVar3.e = 1;
-                plgVar3.b |= 4;
-                a2.b((plg) v.Q());
+                rek rekVar3 = (rek) v.b;
+                rekVar3.e = 1;
+                rekVar3.b |= 4;
+                a2.b((rek) v.Q());
             }
         } catch (InterruptedException | ExecutionException e) {
-            ((ejhf) ((ejhf) a.i()).s(e)).x("data store operation failed.");
+            ((eluo) ((eluo) a.i()).s(e)).x("data store operation failed.");
         }
     }
 
@@ -69,7 +69,7 @@ public class PackageIntentOperation extends IntentOperation {
         try {
             return Settings.Secure.getInt(context.getContentResolver(), "user_setup_complete") == 0;
         } catch (Settings.SettingNotFoundException e) {
-            ((ejhf) ((ejhf) a.j()).s(e)).x("USER_SETUP_COMPLETE setting not found.");
+            ((eluo) ((eluo) a.j()).s(e)).x("USER_SETUP_COMPLETE setting not found.");
             return true;
         }
     }
@@ -79,37 +79,37 @@ public class PackageIntentOperation extends IntentOperation {
         return data == null ? "" : data.getSchemeSpecificPart();
     }
 
-    /* JADX WARN: Can't wrap try/catch for region: R(11:150|151|152|(7:154|155|156|157|(3:159|160|(1:162))|164|(3:(0)|125|126))|170|155|156|157|(0)|164|(0)) */
-    /* JADX WARN: Code restructure failed: missing block: B:124:0x03af, code lost:
+    /* JADX WARN: Can't wrap try/catch for region: R(9:(3:139|140|141)|(7:143|144|145|146|(3:148|149|(1:151))|153|(3:(0)|114|115))|159|144|145|146|(0)|153|(0)) */
+    /* JADX WARN: Code restructure failed: missing block: B:113:0x0385, code lost:
     
-        if (r10 != false) goto L165;
+        if (r9 != false) goto L155;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:141:0x03ac, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:130:0x0382, code lost:
     
-        if ((r6 - r2) <= defpackage.fkvs.a.a().c()) goto L134;
+        if ((r6 - r2) <= defpackage.fnmw.a.lK().c()) goto L124;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:167:0x0438, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:156:0x040e, code lost:
     
-        if (r10 != false) goto L165;
+        if (r9 != false) goto L155;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:168:0x040a, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:157:0x03e0, code lost:
     
         r0 = move-exception;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:169:0x040b, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:158:0x03e1, code lost:
     
-        ((defpackage.ejhf) ((defpackage.ejhf) com.google.android.gms.auth.blockstore.service.PackageIntentOperation.a.j()).s(r0)).x("Could not check if package is preinstalled.");
+        ((defpackage.eluo) ((defpackage.eluo) com.google.android.gms.auth.blockstore.service.PackageIntentOperation.a.j()).s(r0)).x("Could not check if package is preinstalled.");
      */
-    /* JADX WARN: Removed duplicated region for block: B:159:0x0402 A[Catch: NameNotFoundException -> 0x040a, TRY_LEAVE, TryCatch #0 {NameNotFoundException -> 0x040a, blocks: (B:157:0x03fc, B:159:0x0402), top: B:156:0x03fc }] */
-    /* JADX WARN: Removed duplicated region for block: B:166:0x0436  */
+    /* JADX WARN: Removed duplicated region for block: B:148:0x03d8 A[Catch: NameNotFoundException -> 0x03e0, TRY_LEAVE, TryCatch #6 {NameNotFoundException -> 0x03e0, blocks: (B:146:0x03d2, B:148:0x03d8), top: B:145:0x03d2 }] */
+    /* JADX WARN: Removed duplicated region for block: B:155:0x040c  */
     @Override // com.google.android.chimera.IntentOperation
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final void onHandleIntent(android.content.Intent r20) {
+    public final void onHandleIntent(android.content.Intent r19) {
         /*
-            Method dump skipped, instructions count: 1213
+            Method dump skipped, instructions count: 1171
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.blockstore.service.PackageIntentOperation.onHandleIntent(android.content.Intent):void");

@@ -3,25 +3,25 @@ package com.google.android.gms.wallet.service.orchestration;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.shared.service.ServerResponse;
-import defpackage.dizc;
-import defpackage.djdv;
-import defpackage.efdk;
-import defpackage.fehf;
+import defpackage.dlkv;
+import defpackage.dlpo;
+import defpackage.ehqn;
+import defpackage.fgvy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class BuyflowResponse implements Parcelable, djdv {
-    public static final Parcelable.Creator CREATOR = new dizc();
+public class BuyflowResponse implements Parcelable, dlpo {
+    public static final Parcelable.Creator CREATOR = new dlkv();
     public final ServerResponse a;
-    public final fehf b;
+    public final fgvy b;
     public int c = 1;
 
-    public BuyflowResponse(ServerResponse serverResponse, fehf fehfVar) {
+    public BuyflowResponse(ServerResponse serverResponse, fgvy fgvyVar) {
         this.a = serverResponse;
-        this.b = fehfVar;
+        this.b = fgvyVar;
     }
 
-    @Override // defpackage.djdv
+    @Override // defpackage.dlpo
     public final boolean a() {
         return this.a.a();
     }
@@ -33,7 +33,7 @@ public class BuyflowResponse implements Parcelable, djdv {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        efdk.o(this.b, parcel);
+        ehqn.o(this.b, parcel);
         this.a.writeToParcel(parcel, i);
         int i2 = this.c;
         int i3 = i2 - 1;

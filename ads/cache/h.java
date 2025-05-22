@@ -1,23 +1,23 @@
 package com.google.android.gms.ads.cache;
 
 import android.net.Uri;
-import defpackage.arwm;
-import defpackage.eiif;
+import defpackage.atzb;
+import defpackage.ekvk;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class h {
     public static String a(String str, String str2, String str3) {
-        arwm.s(str);
-        arwm.s(str2);
-        arwm.s(str3);
+        atzb.s(str);
+        atzb.s(str2);
+        atzb.s(str3);
         return str.length() + "P" + str + str2.length() + "N" + str2 + str3.length() + "I" + str3;
     }
 
     public static String b(String str) {
-        if (eiif.c(str)) {
+        if (ekvk.c(str)) {
             return null;
         }
         try {

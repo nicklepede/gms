@@ -4,17 +4,17 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.tqz;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.vmz;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CorpusStatus extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new tqz();
+    public static final Parcelable.Creator CREATOR = new vmz();
     public final boolean a;
     public final long b;
     public final long c;
@@ -42,7 +42,7 @@ public class CorpusStatus extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof CorpusStatus) {
             CorpusStatus corpusStatus = (CorpusStatus) obj;
-            if (arwb.b(Boolean.valueOf(this.a), Boolean.valueOf(corpusStatus.a)) && arwb.b(Long.valueOf(this.b), Long.valueOf(corpusStatus.b)) && arwb.b(Long.valueOf(this.c), Long.valueOf(corpusStatus.c)) && arwb.b(Long.valueOf(this.d), Long.valueOf(corpusStatus.d)) && arwb.b(a(), corpusStatus.a()) && arwb.b(this.g, corpusStatus.g)) {
+            if (atyq.b(Boolean.valueOf(this.a), Boolean.valueOf(corpusStatus.a)) && atyq.b(Long.valueOf(this.b), Long.valueOf(corpusStatus.b)) && atyq.b(Long.valueOf(this.c), Long.valueOf(corpusStatus.c)) && atyq.b(Long.valueOf(this.d), Long.valueOf(corpusStatus.d)) && atyq.b(a(), corpusStatus.a()) && atyq.b(this.g, corpusStatus.g)) {
                 return true;
             }
         }
@@ -59,15 +59,15 @@ public class CorpusStatus extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, this.a);
-        arxc.q(parcel, 2, this.b);
-        arxc.q(parcel, 3, this.c);
-        arxc.q(parcel, 4, this.d);
-        arxc.g(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, this.a);
+        atzr.q(parcel, 2, this.b);
+        atzr.q(parcel, 3, this.c);
+        atzr.q(parcel, 4, this.d);
+        atzr.g(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.c(parcel, a);
     }
 
     public CorpusStatus(boolean z, long j, long j2, long j3, Bundle bundle, String str, String str2) {

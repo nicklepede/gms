@@ -3,17 +3,17 @@ package com.google.android.gms.people.consentprimitive;
 import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.ctps;
-import defpackage.eitj;
-import defpackage.elkn;
+import defpackage.cvyy;
+import defpackage.elgo;
+import defpackage.enya;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData extends C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData {
-    public static final Parcelable.Creator CREATOR = new ctps();
+    public static final Parcelable.Creator CREATOR = new cvyy();
 
-    public AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData(ContactsConsentData contactsConsentData, ContactsConsentsConfig contactsConsentsConfig, Account account, int i, int i2, boolean z, boolean z2, elkn elknVar, elkn elknVar2, int i3, int i4, int i5, eitj eitjVar) {
-        super(contactsConsentData, contactsConsentsConfig, account, i, i2, z, z2, elknVar, elknVar2, i3, i4, i5, eitjVar);
+    public AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData(ContactsConsentData contactsConsentData, ContactsConsentsConfig contactsConsentsConfig, Account account, int i, int i2, boolean z, boolean z2, enya enyaVar, enya enyaVar2, int i3, int i4, int i5, elgo elgoVar) {
+        super(contactsConsentData, contactsConsentsConfig, account, i, i2, z, z2, enyaVar, enyaVar2, i3, i4, i5, elgoVar);
     }
 
     @Override // android.os.Parcelable

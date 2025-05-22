@@ -1,11 +1,11 @@
 package com.google.android.gms.org.conscrypt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 abstract class NativeRef {
     final long address;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class CMAC_CTX extends NativeRef {
         public CMAC_CTX(long j) {
             super(j);
@@ -17,7 +17,7 @@ abstract class NativeRef {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class EC_GROUP extends NativeRef {
         public EC_GROUP(long j) {
             super(j);
@@ -29,7 +29,7 @@ abstract class NativeRef {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class EC_POINT extends NativeRef {
         public EC_POINT(long j) {
             super(j);
@@ -41,7 +41,7 @@ abstract class NativeRef {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class EVP_CIPHER_CTX extends NativeRef {
         public EVP_CIPHER_CTX(long j) {
             super(j);
@@ -53,7 +53,7 @@ abstract class NativeRef {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class EVP_HPKE_CTX extends NativeRef {
         public EVP_HPKE_CTX(long j) {
             super(j);
@@ -65,7 +65,7 @@ abstract class NativeRef {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class EVP_MD_CTX extends NativeRef {
         public EVP_MD_CTX(long j) {
             super(j);
@@ -77,7 +77,7 @@ abstract class NativeRef {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class EVP_PKEY extends NativeRef {
         public EVP_PKEY(long j) {
             super(j);
@@ -89,7 +89,7 @@ abstract class NativeRef {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class EVP_PKEY_CTX extends NativeRef {
         public EVP_PKEY_CTX(long j) {
             super(j);
@@ -101,7 +101,7 @@ abstract class NativeRef {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class HMAC_CTX extends NativeRef {
         public HMAC_CTX(long j) {
             super(j);
@@ -113,7 +113,7 @@ abstract class NativeRef {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class SSL_SESSION extends NativeRef {
         public SSL_SESSION(long j) {
             super(j);

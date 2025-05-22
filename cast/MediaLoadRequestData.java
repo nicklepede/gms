@@ -3,15 +3,15 @@ package com.google.android.gms.cast;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.amcb;
-import defpackage.amye;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.aspq;
+import defpackage.aodm;
+import defpackage.aozp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.autk;
 import java.util.Arrays;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class MediaLoadRequestData extends AbstractSafeParcelable {
     public final MediaInfo b;
@@ -27,8 +27,8 @@ public class MediaLoadRequestData extends AbstractSafeParcelable {
     public final String l;
     public final String m;
     public final long n;
-    public static final amye a = new amye("MediaLoadRequestData");
-    public static final Parcelable.Creator CREATOR = new amcb();
+    public static final aozp a = new aozp("MediaLoadRequestData");
+    public static final Parcelable.Creator CREATOR = new aodm();
 
     public MediaLoadRequestData(MediaInfo mediaInfo, MediaQueueData mediaQueueData, Boolean bool, long j, double d, long[] jArr, JSONObject jSONObject, String str, String str2, String str3, String str4, long j2) {
         this.b = mediaInfo;
@@ -53,7 +53,7 @@ public class MediaLoadRequestData extends AbstractSafeParcelable {
             return false;
         }
         MediaLoadRequestData mediaLoadRequestData = (MediaLoadRequestData) obj;
-        return aspq.b(this.i, mediaLoadRequestData.i) && arwb.b(this.b, mediaLoadRequestData.b) && arwb.b(this.c, mediaLoadRequestData.c) && arwb.b(this.d, mediaLoadRequestData.d) && this.e == mediaLoadRequestData.e && this.f == mediaLoadRequestData.f && Arrays.equals(this.g, mediaLoadRequestData.g) && arwb.b(this.j, mediaLoadRequestData.j) && arwb.b(this.k, mediaLoadRequestData.k) && arwb.b(this.l, mediaLoadRequestData.l) && arwb.b(this.m, mediaLoadRequestData.m) && this.n == mediaLoadRequestData.n;
+        return autk.b(this.i, mediaLoadRequestData.i) && atyq.b(this.b, mediaLoadRequestData.b) && atyq.b(this.c, mediaLoadRequestData.c) && atyq.b(this.d, mediaLoadRequestData.d) && this.e == mediaLoadRequestData.e && this.f == mediaLoadRequestData.f && Arrays.equals(this.g, mediaLoadRequestData.g) && atyq.b(this.j, mediaLoadRequestData.j) && atyq.b(this.k, mediaLoadRequestData.k) && atyq.b(this.l, mediaLoadRequestData.l) && atyq.b(this.m, mediaLoadRequestData.m) && this.n == mediaLoadRequestData.n;
     }
 
     public final int hashCode() {
@@ -64,19 +64,19 @@ public class MediaLoadRequestData extends AbstractSafeParcelable {
     public final void writeToParcel(Parcel parcel, int i) {
         JSONObject jSONObject = this.i;
         this.h = jSONObject == null ? null : jSONObject.toString();
-        int a2 = arxc.a(parcel);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.z(parcel, 4, this.d);
-        arxc.q(parcel, 5, this.e);
-        arxc.j(parcel, 6, this.f);
-        arxc.r(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.v(parcel, 9, this.j, false);
-        arxc.v(parcel, 10, this.k, false);
-        arxc.v(parcel, 11, this.l, false);
-        arxc.v(parcel, 12, this.m, false);
-        arxc.q(parcel, 13, this.n);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.z(parcel, 4, this.d);
+        atzr.q(parcel, 5, this.e);
+        atzr.j(parcel, 6, this.f);
+        atzr.r(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.v(parcel, 9, this.j, false);
+        atzr.v(parcel, 10, this.k, false);
+        atzr.v(parcel, 11, this.l, false);
+        atzr.v(parcel, 12, this.m, false);
+        atzr.q(parcel, 13, this.n);
+        atzr.c(parcel, a2);
     }
 }

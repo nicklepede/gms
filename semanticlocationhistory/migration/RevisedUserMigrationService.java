@@ -3,49 +3,49 @@ package com.google.android.gms.semanticlocationhistory.migration;
 import android.accounts.Account;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.arts;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bxyt;
-import defpackage.byln;
-import defpackage.bzgc;
-import defpackage.czix;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.czuo;
-import defpackage.dazd;
-import defpackage.dazp;
-import defpackage.dbhz;
-import defpackage.dbia;
-import defpackage.ejhf;
-import defpackage.erdc;
-import defpackage.erdd;
-import defpackage.etoy;
-import defpackage.etoz;
-import defpackage.etqp;
-import defpackage.etqx;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecl;
-import defpackage.frxq;
-import defpackage.frys;
-import defpackage.ftxd;
-import defpackage.ftxe;
-import defpackage.ftye;
-import defpackage.ftyg;
-import defpackage.furn;
-import defpackage.furo;
-import defpackage.unx;
+import defpackage.atwh;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cahl;
+import defpackage.cauf;
+import defpackage.cbot;
+import defpackage.dbsv;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dcep;
+import defpackage.ddjl;
+import defpackage.ddjx;
+import defpackage.ddsf;
+import defpackage.ddsg;
+import defpackage.eluo;
+import defpackage.etry;
+import defpackage.etrz;
+import defpackage.eweq;
+import defpackage.ewer;
+import defpackage.ewgh;
+import defpackage.ewgp;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgre;
+import defpackage.fusk;
+import defpackage.futm;
+import defpackage.fwtb;
+import defpackage.fwtc;
+import defpackage.fwuc;
+import defpackage.fwue;
+import defpackage.fxnl;
+import defpackage.fxnm;
+import defpackage.wjw;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RevisedUserMigrationService extends GmsTaskBoundService {
-    private czlk c;
-    private dazd d;
-    private dbhz e;
-    private final czje f = new czje();
-    private static final asot b = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "RevisedUserMigration");
+    private dbvg c;
+    private ddjl d;
+    private ddsf e;
+    private final dbtc f = new dbtc();
+    private static final ausn b = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "RevisedUserMigration");
     public static final String a = RevisedUserMigrationService.class.getName();
 
     private final void h(Account account) {
@@ -55,16 +55,16 @@ public class RevisedUserMigrationService extends GmsTaskBoundService {
 
     private final boolean j(Account account) {
         g(3);
-        dazd e = e();
+        ddjl e = e();
         e.a(account);
         boolean z = false;
-        for (int i = 0; i < frys.a.a().a(); i++) {
-            dazp dazpVar = e.b;
-            dazpVar.i(e.c, account);
-            if (dazp.g(dazpVar.b(account))) {
+        for (int i = 0; i < futm.a.lK().a(); i++) {
+            ddjx ddjxVar = e.b;
+            ddjxVar.j(e.c, account);
+            if (ddjx.h(ddjxVar.b(account))) {
                 z = true;
             } else {
-                ((ejhf) ((ejhf) dazd.a.j()).ah((char) 10465)).x("Data transfer failed for account");
+                ((eluo) ((eluo) ddjl.a.j()).ai((char) 10471)).x("Data transfer failed for account");
                 z = false;
             }
             if (z) {
@@ -78,90 +78,90 @@ public class RevisedUserMigrationService extends GmsTaskBoundService {
         if (z) {
             g(7);
             if (this.e == null) {
-                this.e = new dbhz();
+                this.e = new ddsf();
             }
-            dbhz dbhzVar = this.e;
+            ddsf ddsfVar = this.e;
             try {
                 try {
-                    etqx etqxVar = etqx.a;
-                    fecl feclVar = (fecl) etqxVar.v();
-                    etqp etqpVar = etqp.a;
-                    fecj v = etqpVar.v();
-                    fecj v2 = etoz.a.v();
+                    ewgp ewgpVar = ewgp.a;
+                    fgre fgreVar = (fgre) ewgpVar.v();
+                    ewgh ewghVar = ewgh.a;
+                    fgrc v = ewghVar.v();
+                    fgrc v2 = ewer.a.v();
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    etoz etozVar = (etoz) v2.b;
-                    etozVar.c = 3;
-                    etozVar.b |= 1;
-                    etoz etozVar2 = (etoz) v2.Q();
+                    ewer ewerVar = (ewer) v2.b;
+                    ewerVar.c = 3;
+                    ewerVar.b |= 1;
+                    ewer ewerVar2 = (ewer) v2.Q();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    etqp etqpVar2 = (etqp) v.b;
-                    etozVar2.getClass();
-                    etqpVar2.g = etozVar2;
-                    etqpVar2.b |= 128;
-                    etqp etqpVar3 = (etqp) v.Q();
-                    if (!feclVar.b.L()) {
-                        feclVar.U();
+                    ewgh ewghVar2 = (ewgh) v.b;
+                    ewerVar2.getClass();
+                    ewghVar2.g = ewerVar2;
+                    ewghVar2.b |= 128;
+                    ewgh ewghVar3 = (ewgh) v.Q();
+                    if (!fgreVar.b.L()) {
+                        fgreVar.U();
                     }
-                    etqx etqxVar2 = (etqx) feclVar.b;
-                    etqpVar3.getClass();
-                    etqxVar2.c = etqpVar3;
-                    etqxVar2.b |= 1;
-                    etqx etqxVar3 = (etqx) feclVar.Q();
-                    dbia dbiaVar = new dbia(dbhzVar.d(), bzgc.a, bxyt.b);
-                    arts a2 = dbhzVar.a(account);
-                    long j = dbia.a;
-                    if (dbia.b == null) {
-                        ftxd ftxdVar = ftxd.UNARY;
-                        febw febwVar = furo.a;
-                        dbia.b = new ftxe(ftxdVar, "google.internal.locationhistory.v1.LocationHistoryService/UpdateSettings", new furn(etqxVar), new furn(etqpVar), false);
+                    ewgp ewgpVar2 = (ewgp) fgreVar.b;
+                    ewghVar3.getClass();
+                    ewgpVar2.c = ewghVar3;
+                    ewgpVar2.b |= 1;
+                    ewgp ewgpVar3 = (ewgp) fgreVar.Q();
+                    ddsg ddsgVar = new ddsg(ddsfVar.d(), cbot.a, cahl.b);
+                    atwh a2 = ddsfVar.a(account);
+                    long j = ddsg.a;
+                    if (ddsg.b == null) {
+                        fwtb fwtbVar = fwtb.UNARY;
+                        fgqp fgqpVar = fxnm.a;
+                        ddsg.b = new fwtc(fwtbVar, "google.internal.locationhistory.v1.LocationHistoryService/UpdateSettings", new fxnl(ewgpVar), new fxnl(ewghVar), false);
                     }
-                    dbhzVar.g("LHServerUpdateMigrationState");
-                    dbhzVar.i();
+                    ddsfVar.g("LHServerUpdateMigrationState");
+                    ddsfVar.i();
                     g(16);
                     h(account);
                     return true;
-                } catch (ftye | ftyg | unx e2) {
-                    dbhzVar.f(e2, "UpdateSettings");
-                    dbhzVar.h(e2, "LHServerUpdateMigrationState");
-                    dbhzVar.i();
-                    ((ejhf) ((ejhf) b.j()).ah((char) 10470)).x("Marking migration complete failed on server");
+                } catch (fwuc | fwue | wjw e2) {
+                    ddsfVar.f(e2, "UpdateSettings");
+                    ddsfVar.h(e2, "LHServerUpdateMigrationState");
+                    ddsfVar.i();
+                    ((eluo) ((eluo) b.j()).ai((char) 10476)).x("Marking migration complete failed on server");
                 }
             } catch (Throwable th) {
-                dbhzVar.i();
+                ddsfVar.i();
                 throw th;
             }
         } else {
-            ((ejhf) ((ejhf) b.j()).ah((char) 10490)).x("Data transfer failed");
+            ((eluo) ((eluo) b.j()).ai((char) 10496)).x("Data transfer failed");
         }
         g(13);
         return false;
     }
 
-    private final boolean k(Account account, czuo czuoVar) {
-        return czuoVar.f.equals(frxq.h() ? d().d(account).g : d().z(account));
+    private final boolean k(Account account, dcep dcepVar) {
+        return dcepVar.f.equals(fusk.g() ? d().d(account).g : d().z(account));
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        czuo c;
+    public final int a(cauf caufVar) {
+        dcep c;
         g(2);
-        for (Account account : czix.d(AppContextProvider.a())) {
+        for (Account account : dbsv.d(AppContextProvider.a())) {
             try {
-                if (frxq.h()) {
+                if (fusk.g()) {
                     c = d().d(account).q;
                     if (c == null) {
-                        c = czuo.a;
+                        c = dcep.a;
                     }
                 } else {
                     c = d().c(account);
                 }
                 int i = 1;
                 if (!c.e) {
-                    int a2 = etoy.a(c.c);
+                    int a2 = eweq.a(c.c);
                     if (a2 != 0) {
                         i = a2;
                     }
@@ -179,7 +179,7 @@ public class RevisedUserMigrationService extends GmsTaskBoundService {
                                 if (j(account)) {
                                     break;
                                 } else {
-                                    ((ejhf) ((ejhf) b.j()).ah(10479)).x("Data transfer failed on primary device.");
+                                    ((eluo) ((eluo) b.j()).ai(10485)).x("Data transfer failed on primary device.");
                                     break;
                                 }
                             } else {
@@ -191,19 +191,19 @@ public class RevisedUserMigrationService extends GmsTaskBoundService {
                         case 8:
                             f(9);
                             g(9);
-                            dazd e = e();
+                            ddjl e = e();
                             e.a(account);
-                            dazp dazpVar = e.b;
-                            dazpVar.h(e.c, account);
-                            if (dazp.g(dazpVar.b(account))) {
+                            ddjx ddjxVar = e.b;
+                            ddjxVar.i(e.c, account);
+                            if (ddjx.h(ddjxVar.b(account))) {
                                 g(17);
                                 h(account);
                                 break;
                             } else {
                                 g(10);
-                                asot asotVar = b;
-                                ((ejhf) ((ejhf) asotVar.j()).ah((char) 10467)).x("Alpha data deletion failed");
-                                ((ejhf) ((ejhf) asotVar.j()).ah(10486)).x("Starting ODLH from scratch failed on account with terminal migration state but migration state on device not complete.");
+                                ausn ausnVar = b;
+                                ((eluo) ((eluo) ausnVar.j()).ai((char) 10473)).x("Alpha data deletion failed");
+                                ((eluo) ((eluo) ausnVar.j()).ai(10492)).x("Starting ODLH from scratch failed on account with terminal migration state but migration state on device not complete.");
                                 break;
                             }
                         case 4:
@@ -217,7 +217,7 @@ public class RevisedUserMigrationService extends GmsTaskBoundService {
                                 if (j(account)) {
                                     break;
                                 } else {
-                                    ((ejhf) ((ejhf) b.j()).ah(10484)).x("Data transfer failed on account which declined transfer on primary device.");
+                                    ((eluo) ((eluo) b.j()).ai(10490)).x("Data transfer failed on account which declined transfer on primary device.");
                                     break;
                                 }
                             } else {
@@ -229,7 +229,7 @@ public class RevisedUserMigrationService extends GmsTaskBoundService {
                             if (j(account)) {
                                 break;
                             } else {
-                                ((ejhf) ((ejhf) b.j()).ah(10481)).x("Data transfer failed on account which took no action.");
+                                ((eluo) ((eluo) b.j()).ai(10487)).x("Data transfer failed on account which took no action.");
                                 break;
                             }
                         case 10:
@@ -242,22 +242,22 @@ public class RevisedUserMigrationService extends GmsTaskBoundService {
                 }
             } catch (IOException e2) {
                 g(15);
-                ((ejhf) ((ejhf) ((ejhf) b.j()).s(e2)).ah((char) 10474)).B("Exception in user migration: %s", new erdd(erdc.NO_USER_DATA, e2.getMessage()));
+                ((eluo) ((eluo) ((eluo) b.j()).s(e2)).ai((char) 10480)).B("Exception in user migration: %s", new etrz(etry.NO_USER_DATA, e2.getMessage()));
             }
         }
         return 0;
     }
 
-    final czlk d() {
+    final dbvg d() {
         if (this.c == null) {
-            this.c = new czlk(new czje());
+            this.c = new dbvg(new dbtc());
         }
         return this.c;
     }
 
-    final dazd e() {
+    final ddjl e() {
         if (this.d == null) {
-            this.d = new dazd();
+            this.d = new ddjl();
         }
         return this.d;
     }

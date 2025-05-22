@@ -6,30 +6,30 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.R;
-import defpackage.aqup;
-import defpackage.arwm;
-import defpackage.asng;
-import defpackage.asqx;
-import defpackage.azqe;
-import defpackage.azrr;
-import defpackage.bacs;
-import defpackage.bact;
+import defpackage.asxe;
+import defpackage.atzb;
+import defpackage.aura;
+import defpackage.auur;
+import defpackage.bbua;
+import defpackage.bbvn;
+import defpackage.bcgo;
+import defpackage.bcgp;
 import defpackage.bp;
-import defpackage.bqna;
-import defpackage.esxb;
+import defpackage.bsup;
+import defpackage.evmr;
 import defpackage.ew;
-import defpackage.feay;
-import defpackage.fecj;
-import defpackage.qet;
-import defpackage.umc;
+import defpackage.fgpr;
+import defpackage.fgrc;
+import defpackage.rxx;
+import defpackage.wib;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class TosChimeraActivity extends qet implements bacs {
+public final class TosChimeraActivity extends rxx implements bcgo {
     private String j;
     private byte[] k;
     private boolean l;
-    private azrr m;
+    private bbvn m;
 
     private final Intent a() {
         return new Intent().putExtra("accountName", getIntent().getStringExtra("accountName")).putExtra("tosAccepted", this.l);
@@ -40,7 +40,7 @@ public final class TosChimeraActivity extends qet implements bacs {
         finish();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         if (getSupportFragmentManager().b() != 0) {
             super.onBackPressed();
@@ -50,17 +50,17 @@ public final class TosChimeraActivity extends qet implements bacs {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.m = new azrr(this);
-        String q = asng.q(this);
-        if (!aqup.d(this).h(asqx.c(q))) {
+        this.m = new bbvn(this);
+        String q = aura.q(this);
+        if (!asxe.d(this).h(auur.c(q))) {
             this.m.f(3, 8, "tos");
             k(-3);
             return;
         }
-        azqe.d(this, getIntent(), q);
+        bbua.d(this, getIntent(), q);
         String stringExtra = getIntent().getStringExtra("accountName");
         if (stringExtra == null) {
             this.m.f(3, 13, "tos");
@@ -76,20 +76,20 @@ public final class TosChimeraActivity extends qet implements bacs {
         } else if (byteArrayExtra != null) {
             this.k = byteArrayExtra;
         } else {
-            fecj v = esxb.a.v();
-            feay w = feay.w(umc.a());
+            fgrc v = evmr.a.v();
+            fgpr w = fgpr.w(wib.a());
             if (!v.b.L()) {
                 v.U();
             }
-            esxb esxbVar = (esxb) v.b;
-            esxbVar.b |= 1;
-            esxbVar.c = w;
-            this.k = ((esxb) v.Q()).r();
+            evmr evmrVar = (evmr) v.b;
+            evmrVar.b |= 1;
+            evmrVar.c = w;
+            this.k = ((evmr) v.Q()).r();
         }
         String stringExtra2 = getIntent().getStringExtra("appId");
-        arwm.s(stringExtra2);
+        atzb.s(stringExtra2);
         this.m.d(this.j, Integer.toString(ModuleManager.get(this).getCurrentModule().moduleVersion), stringExtra2);
-        for (Account account2 : bqna.b(this).p("com.google")) {
+        for (Account account2 : bsup.b(this).p("com.google")) {
             if (true == account2.name.equals(this.j)) {
                 account = account2;
             }
@@ -112,19 +112,19 @@ public final class TosChimeraActivity extends qet implements bacs {
         ew supportFragmentManager = getSupportFragmentManager();
         if (supportFragmentManager.g(R.id.fm_family_play_tos_fragment_container) == null) {
             bp bpVar = new bp(supportFragmentManager);
-            bpVar.t(R.id.fm_family_play_tos_fragment_container, bact.x(this.k, this.j, stringExtra3, stringExtra4, stringExtra5));
+            bpVar.t(R.id.fm_family_play_tos_fragment_container, bcgp.x(this.k, this.j, stringExtra3, stringExtra4, stringExtra5));
             bpVar.a();
         }
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBoolean("tosAccepted", this.l);
         bundle.putByteArray("auditToken", this.k);
     }
 
-    @Override // defpackage.bacs
+    @Override // defpackage.bcgo
     public final void y() {
         this.l = true;
         setResult(1, a());

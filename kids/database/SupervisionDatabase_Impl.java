@@ -1,50 +1,50 @@
 package com.google.android.gms.kids.database;
 
-import defpackage.bpch;
-import defpackage.bpci;
-import defpackage.bpcj;
-import defpackage.bpck;
-import defpackage.bpcl;
-import defpackage.bpcm;
-import defpackage.bpcp;
-import defpackage.bpcq;
-import defpackage.bpcs;
-import defpackage.bpct;
-import defpackage.bpcu;
-import defpackage.bpcv;
-import defpackage.bpcw;
-import defpackage.bpcx;
-import defpackage.bpcy;
-import defpackage.bpcz;
-import defpackage.bpda;
-import defpackage.bpdb;
-import defpackage.bpdc;
-import defpackage.bpdd;
-import defpackage.bpde;
-import defpackage.bpdf;
-import defpackage.bpdg;
-import defpackage.bpdh;
-import defpackage.bpdi;
-import defpackage.bpdj;
-import defpackage.bpdk;
-import defpackage.bpdl;
-import defpackage.bpdm;
-import defpackage.bpdn;
-import defpackage.bpdo;
-import defpackage.bpdp;
-import defpackage.bpdq;
-import defpackage.bpdr;
-import defpackage.bpds;
-import defpackage.bpdt;
-import defpackage.bpdu;
-import defpackage.bpdv;
-import defpackage.bpdw;
-import defpackage.bpdx;
-import defpackage.bpdy;
-import defpackage.bpdz;
-import defpackage.bpea;
-import defpackage.kol;
-import defpackage.kpp;
+import defpackage.brjx;
+import defpackage.brjy;
+import defpackage.brjz;
+import defpackage.brka;
+import defpackage.brkb;
+import defpackage.brkc;
+import defpackage.brkf;
+import defpackage.brkg;
+import defpackage.brki;
+import defpackage.brkj;
+import defpackage.brkk;
+import defpackage.brkl;
+import defpackage.brkm;
+import defpackage.brkn;
+import defpackage.brko;
+import defpackage.brkp;
+import defpackage.brkq;
+import defpackage.brkr;
+import defpackage.brks;
+import defpackage.brkt;
+import defpackage.brku;
+import defpackage.brkv;
+import defpackage.brkw;
+import defpackage.brkx;
+import defpackage.brky;
+import defpackage.brkz;
+import defpackage.brla;
+import defpackage.brlb;
+import defpackage.brlc;
+import defpackage.brld;
+import defpackage.brle;
+import defpackage.brlf;
+import defpackage.brlg;
+import defpackage.brlh;
+import defpackage.brli;
+import defpackage.brlj;
+import defpackage.brlk;
+import defpackage.brll;
+import defpackage.brlm;
+import defpackage.brln;
+import defpackage.brlo;
+import defpackage.brlp;
+import defpackage.brlq;
+import defpackage.mgw;
+import defpackage.mie;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -53,83 +53,83 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public final class SupervisionDatabase_Impl extends SupervisionDatabase {
-    @Override // defpackage.kpm
-    protected final kol a() {
-        return new kol(this, new HashMap(0), new HashMap(0), "ActivitySampleEntity", "AppPendingDisableEntity", "AppStateEntity", "AppStateKeyValueEntity", "AppUsageEntity", "BedTimeEntity", "ConsentStatusEntity", "DailyUsage", "DeviceEventEntity", "GeonotificationStateEntity", "KeyValue", "LocationSampleEntity", "PartialConsentForSecondaryAccountSignIn", "PolicyEntity", "ScreenTimeEntity", "SupervisionModesEntity", "TimeLimitKeyValueEntity", "TimeLimitLocalOverrideEntity", "TimeLimitOverrideEntity", "TimeLimitOverrideEntityV2", "TimeWindowLimitEntity", "TrackedPlace", "TrustedContact", "TrustedPhoneNumber", "UnrestrictedAppsModesEntity");
+    @Override // defpackage.mhx
+    protected final mgw a() {
+        return new mgw(this, new HashMap(0), new HashMap(0), "ActivitySampleEntity", "AppPendingDisableEntity", "AppStateEntity", "AppStateKeyValueEntity", "AppUsageEntity", "BedTimeEntity", "ConsentStatusEntity", "DailyUsage", "DeviceEventEntity", "GeonotificationStateEntity", "KeyValue", "LocationSampleEntity", "PartialConsentForSecondaryAccountSignIn", "PolicyEntity", "ScreenTimeEntity", "SupervisionModesEntity", "TimeLimitKeyValueEntity", "TimeLimitLocalOverrideEntity", "TimeLimitOverrideEntity", "TimeLimitOverrideEntityV2", "TimeWindowLimitEntity", "TrackedPlace", "TrustedContact", "TrustedPhoneNumber", "UnrestrictedAppsModesEntity");
     }
 
-    @Override // defpackage.kpm
-    protected final /* synthetic */ kpp c() {
-        return new bpdx(this);
+    @Override // defpackage.mhx
+    protected final /* synthetic */ mie c() {
+        return new brln(this);
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     protected final Map e() {
         HashMap hashMap = new HashMap();
-        int i = bpci.a;
-        hashMap.put(bpci.class, Collections.EMPTY_LIST);
-        hashMap.put(bpcj.class, Collections.EMPTY_LIST);
-        int i2 = bpcq.a;
-        hashMap.put(bpcq.class, Collections.EMPTY_LIST);
-        hashMap.put(bpcu.class, Collections.EMPTY_LIST);
-        hashMap.put(bpcm.class, Collections.EMPTY_LIST);
-        hashMap.put(bpcp.class, Collections.EMPTY_LIST);
-        hashMap.put(bpdz.class, Collections.EMPTY_LIST);
-        hashMap.put(bpcs.class, Collections.EMPTY_LIST);
-        hashMap.put(bpct.class, Collections.EMPTY_LIST);
-        hashMap.put(bpch.class, Collections.EMPTY_LIST);
-        int i3 = bpdy.a;
-        hashMap.put(bpdy.class, Collections.EMPTY_LIST);
-        hashMap.put(bpck.class, Collections.EMPTY_LIST);
-        hashMap.put(bpea.class, Collections.EMPTY_LIST);
-        hashMap.put(bpcl.class, Collections.EMPTY_LIST);
+        int i = brjy.a;
+        hashMap.put(brjy.class, Collections.EMPTY_LIST);
+        hashMap.put(brjz.class, Collections.EMPTY_LIST);
+        int i2 = brkg.a;
+        hashMap.put(brkg.class, Collections.EMPTY_LIST);
+        hashMap.put(brkk.class, Collections.EMPTY_LIST);
+        hashMap.put(brkc.class, Collections.EMPTY_LIST);
+        hashMap.put(brkf.class, Collections.EMPTY_LIST);
+        hashMap.put(brlp.class, Collections.EMPTY_LIST);
+        hashMap.put(brki.class, Collections.EMPTY_LIST);
+        hashMap.put(brkj.class, Collections.EMPTY_LIST);
+        hashMap.put(brjx.class, Collections.EMPTY_LIST);
+        int i3 = brlo.a;
+        hashMap.put(brlo.class, Collections.EMPTY_LIST);
+        hashMap.put(brka.class, Collections.EMPTY_LIST);
+        hashMap.put(brlq.class, Collections.EMPTY_LIST);
+        hashMap.put(brkb.class, Collections.EMPTY_LIST);
         return hashMap;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final Set f() {
         return new HashSet();
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final void k() {
         throw null;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final List s() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(new bpde());
-        arrayList.add(new bpds());
-        arrayList.add(new bpdt());
-        arrayList.add(new bpdu());
-        arrayList.add(new bpdv());
-        arrayList.add(new bpdw());
-        arrayList.add(new bpcv());
-        arrayList.add(new bpcw());
-        arrayList.add(new bpcx());
-        arrayList.add(new bpcy());
-        arrayList.add(new bpcz());
-        arrayList.add(new bpda());
-        arrayList.add(new bpdb());
-        arrayList.add(new bpdc());
-        arrayList.add(new bpdd());
-        arrayList.add(new bpdf());
-        arrayList.add(new bpdg());
-        arrayList.add(new bpdh());
-        arrayList.add(new bpdi());
-        arrayList.add(new bpdj());
-        arrayList.add(new bpdk());
-        arrayList.add(new bpdl());
-        arrayList.add(new bpdm());
-        arrayList.add(new bpdn());
-        arrayList.add(new bpdo());
-        arrayList.add(new bpdp());
-        arrayList.add(new bpdq());
-        arrayList.add(new bpdr());
+        arrayList.add(new brku());
+        arrayList.add(new brli());
+        arrayList.add(new brlj());
+        arrayList.add(new brlk());
+        arrayList.add(new brll());
+        arrayList.add(new brlm());
+        arrayList.add(new brkl());
+        arrayList.add(new brkm());
+        arrayList.add(new brkn());
+        arrayList.add(new brko());
+        arrayList.add(new brkp());
+        arrayList.add(new brkq());
+        arrayList.add(new brkr());
+        arrayList.add(new brks());
+        arrayList.add(new brkt());
+        arrayList.add(new brkv());
+        arrayList.add(new brkw());
+        arrayList.add(new brkx());
+        arrayList.add(new brky());
+        arrayList.add(new brkz());
+        arrayList.add(new brla());
+        arrayList.add(new brlb());
+        arrayList.add(new brlc());
+        arrayList.add(new brld());
+        arrayList.add(new brle());
+        arrayList.add(new brlf());
+        arrayList.add(new brlg());
+        arrayList.add(new brlh());
         return arrayList;
     }
 }

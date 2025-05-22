@@ -6,9 +6,9 @@ import android.text.method.LinkMovementMethod;
 import android.util.AttributeSet;
 import android.widget.TextView;
 import androidx.preference.Preference;
-import defpackage.kmp;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AutofillSettingsDescriptionPreference extends Preference {
     public AutofillSettingsDescriptionPreference(Context context, AttributeSet attributeSet) {
@@ -16,9 +16,9 @@ public final class AutofillSettingsDescriptionPreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        TextView textView = (TextView) kmpVar.D(R.id.summary);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        TextView textView = (TextView) mfaVar.D(R.id.summary);
         if (textView != null) {
             textView.setMovementMethod(LinkMovementMethod.getInstance());
         }

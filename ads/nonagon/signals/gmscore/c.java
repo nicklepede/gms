@@ -3,14 +3,14 @@ package com.google.android.gms.ads.nonagon.signals.gmscore;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.provider.Settings;
-import defpackage.dmoj;
-import defpackage.dmom;
-import defpackage.dmon;
-import defpackage.eiho;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.ensi;
-import defpackage.enss;
+import defpackage.dozx;
+import defpackage.dpaa;
+import defpackage.dpab;
+import defpackage.ekut;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqgb;
+import defpackage.eqgl;
 import j$.util.Objects;
 import java.io.IOException;
 import java.util.UUID;
@@ -18,7 +18,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class c implements com.google.android.gms.ads.nonagon.signals.e {
     public final Context a;
@@ -43,30 +43,30 @@ public final class c implements com.google.android.gms.ads.nonagon.signals.e {
     }
 
     @Override // com.google.android.gms.ads.nonagon.signals.e
-    public final enss b() {
-        ensi h = ensi.h(com.google.android.gms.ads.adinfo.g.a(this.a, this.f));
-        eiho eihoVar = new eiho() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.a
-            @Override // defpackage.eiho
+    public final eqgl b() {
+        eqgb h = eqgb.h(com.google.android.gms.ads.adinfo.g.a(this.a, this.f));
+        ekut ekutVar = new ekut() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.a
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                dmon dmonVar;
+                dpab dpabVar;
                 com.google.android.gms.ads.identifier.c cVar = (com.google.android.gms.ads.identifier.c) obj;
-                dmoj dmojVar = new dmoj();
+                dozx dozxVar = new dozx();
                 c cVar2 = c.this;
                 if (cVar2.b ? ((Boolean) com.google.android.gms.ads.internal.config.p.ac.g()).booleanValue() : ((Boolean) com.google.android.gms.ads.internal.config.p.ab.g()).booleanValue()) {
                     try {
                         Context context = cVar2.a;
-                        dmon dmonVar2 = dmon.g;
-                        synchronized (dmon.class) {
-                            if (dmon.g == null) {
-                                dmon.g = new dmon(context);
+                        dpab dpabVar2 = dpab.g;
+                        synchronized (dpab.class) {
+                            if (dpab.g == null) {
+                                dpab.g = new dpab(context);
                             }
-                            dmonVar = dmon.g;
+                            dpabVar = dpab.g;
                         }
                         String str = (String) Objects.requireNonNull(((com.google.android.gms.ads.identifier.c) Objects.requireNonNull(cVar)).a);
                         String packageName = context.getPackageName();
                         long longValue = ((Long) com.google.android.gms.ads.internal.config.p.ad.g()).longValue();
                         boolean z = cVar2.c;
-                        synchronized (dmon.class) {
+                        synchronized (dpab.class) {
                             boolean z2 = true;
                             if (str != null) {
                                 try {
@@ -76,13 +76,13 @@ public final class c implements com.google.android.gms.ads.nonagon.signals.e {
                                     }
                                 } catch (IllegalArgumentException unused) {
                                 }
-                                if (str.equals(dmom.a)) {
-                                    dmojVar = new dmoj();
+                                if (str.equals(dpaa.a)) {
+                                    dozxVar = new dozx();
                                 } else {
-                                    String e = dmonVar.e(true);
-                                    String c = dmonVar.f.c("paid_3p_hash_key");
-                                    if (e != null && c != null && !e.equals(dmonVar.d(str, packageName, c))) {
-                                        dmojVar = dmonVar.b(str, packageName);
+                                    String e = dpabVar.e(true);
+                                    String c = dpabVar.f.c("paid_3p_hash_key");
+                                    if (e != null && c != null && !e.equals(dpabVar.d(str, packageName, c))) {
+                                        dozxVar = dpabVar.b(str, packageName);
                                     }
                                 }
                             }
@@ -91,34 +91,34 @@ public final class c implements com.google.android.gms.ads.nonagon.signals.e {
                             }
                             long currentTimeMillis = System.currentTimeMillis();
                             if (currentTimeMillis < 0) {
-                                throw new IllegalStateException(dmonVar.e.concat(": Invalid negative current timestamp. Updating PAID failed"));
+                                throw new IllegalStateException(dpabVar.e.concat(": Invalid negative current timestamp. Updating PAID failed"));
                             }
-                            long a = dmonVar.a(z2);
+                            long a = dpabVar.a(z2);
                             if (a != -1) {
                                 if (currentTimeMillis < a) {
-                                    dmonVar.f.b(z2 ? dmonVar.d : dmonVar.c, Long.valueOf(currentTimeMillis));
+                                    dpabVar.f.b(z2 ? dpabVar.d : dpabVar.c, Long.valueOf(currentTimeMillis));
                                 } else if (currentTimeMillis >= a + longValue) {
-                                    dmojVar = dmonVar.b(str, packageName);
+                                    dozxVar = dpabVar.b(str, packageName);
                                 }
                             }
-                            String e2 = dmonVar.e(z2);
-                            dmojVar = (e2 != null || z) ? new dmoj(e2, dmonVar.a(z2)) : dmonVar.b(str, packageName);
+                            String e2 = dpabVar.e(z2);
+                            dozxVar = (e2 != null || z) ? new dozx(e2, dpabVar.a(z2)) : dpabVar.b(str, packageName);
                         }
                     } catch (IOException | IllegalArgumentException e3) {
                         com.google.android.gms.ads.internal.c.d().d(e3, "AdIdInfoSignalSource.getPaidV1");
-                        dmojVar = new dmoj();
+                        dozxVar = new dozx();
                     }
                 }
-                return new d(cVar, null, dmojVar);
+                return new d(cVar, null, dozxVar);
             }
         };
         Executor executor = this.e;
-        return enox.f(((ensi) enps.f(h, eihoVar, executor)).i(((Long) com.google.android.gms.ads.internal.config.p.J.g()).longValue(), TimeUnit.MILLISECONDS, this.d), Throwable.class, new eiho() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.b
-            @Override // defpackage.eiho
+        return eqcq.f(((eqgb) eqdl.f(h, ekutVar, executor)).i(((Long) com.google.android.gms.ads.internal.config.p.J.g()).longValue(), TimeUnit.MILLISECONDS, this.d), Throwable.class, new ekut() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.b
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 com.google.android.gms.ads.internal.client.u.b();
                 ContentResolver contentResolver = c.this.a.getContentResolver();
-                return new d(null, contentResolver == null ? null : Settings.Secure.getString(contentResolver, "android_id"), new dmoj());
+                return new d(null, contentResolver == null ? null : Settings.Secure.getString(contentResolver, "android_id"), new dozx());
             }
         }, executor);
     }

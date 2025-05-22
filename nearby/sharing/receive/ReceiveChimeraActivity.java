@@ -5,67 +5,67 @@ import android.os.Bundle;
 import androidx.activity.result.ActivityResult;
 import androidx.compose.ui.platform.ComposeView;
 import com.google.android.gms.nearby.sharing.receive.ReceiveChimeraActivity;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.cfdj;
-import defpackage.cmdb;
-import defpackage.cmep;
-import defpackage.cmfe;
-import defpackage.cmhu;
-import defpackage.cohy;
-import defpackage.cohz;
-import defpackage.cpyy;
-import defpackage.cpzi;
-import defpackage.cqae;
-import defpackage.cqaf;
-import defpackage.cqag;
-import defpackage.cqel;
-import defpackage.cqfp;
-import defpackage.crjh;
-import defpackage.crjo;
-import defpackage.fqmk;
-import defpackage.fuuw;
-import defpackage.fuy;
-import defpackage.fvaf;
-import defpackage.fvbi;
-import defpackage.fvbo;
-import defpackage.fvcc;
-import defpackage.fvgt;
-import defpackage.ivf;
-import defpackage.joo;
-import defpackage.jqx;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.chkv;
+import defpackage.colj;
+import defpackage.comx;
+import defpackage.conm;
+import defpackage.coqc;
+import defpackage.cqqt;
+import defpackage.cqqu;
+import defpackage.cshv;
+import defpackage.csif;
+import defpackage.csjd;
+import defpackage.csje;
+import defpackage.csjf;
+import defpackage.csnp;
+import defpackage.csot;
+import defpackage.ctsl;
+import defpackage.ctss;
+import defpackage.ftgf;
+import defpackage.fvp;
+import defpackage.fxqu;
+import defpackage.fxwd;
+import defpackage.fxxg;
+import defpackage.fxxm;
+import defpackage.fxya;
+import defpackage.fycr;
+import defpackage.iwv;
+import defpackage.jvd;
+import defpackage.jxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class ReceiveChimeraActivity extends cpyy {
-    public cmhu f;
-    public cmdb g;
-    public cqel h;
-    public final abv i;
-    private final fuuw j;
+public final class ReceiveChimeraActivity extends cshv {
+    public coqc f;
+    public colj g;
+    public csnp h;
+    public final aca i;
+    private final fxqu j;
 
     public ReceiveChimeraActivity() {
-        fvaf fvafVar = new fvaf() { // from class: cpzd
-            @Override // defpackage.fvaf
+        fxwd fxwdVar = new fxwd() { // from class: csia
+            @Override // defpackage.fxwd
             public final Object a() {
                 ReceiveChimeraActivity receiveChimeraActivity = ReceiveChimeraActivity.this;
-                cqel cqelVar = receiveChimeraActivity.h;
-                if (cqelVar == null) {
-                    fvbo.j("factory");
-                    cqelVar = null;
+                csnp csnpVar = receiveChimeraActivity.h;
+                if (csnpVar == null) {
+                    fxxm.j("factory");
+                    csnpVar = null;
                 }
-                cqelVar.a = receiveChimeraActivity;
-                return cqelVar;
+                csnpVar.a = receiveChimeraActivity;
+                return csnpVar;
             }
         };
-        int i = fvcc.a;
-        this.j = new jqx(new fvbi(cqfp.class), new cqaf(this), fvafVar, new cqag(this));
-        this.i = registerForActivityResult(new acl(), new abt() { // from class: cpze
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        int i = fxya.a;
+        this.j = new jxm(new fxxg(csot.class), new csje(this), fxwdVar, new csjf(this));
+        this.i = registerForActivityResult(new acq(), new aby() { // from class: csib
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 ActivityResult activityResult = (ActivityResult) obj;
-                fvbo.f(activityResult, "result");
+                fxxm.f(activityResult, "result");
                 if (activityResult.a == -1) {
                     ReceiveChimeraActivity.this.finish();
                 }
@@ -73,52 +73,52 @@ public final class ReceiveChimeraActivity extends cpyy {
         });
     }
 
-    public final cmdb b() {
-        cmdb cmdbVar = this.g;
-        if (cmdbVar != null) {
-            return cmdbVar;
+    public final colj b() {
+        colj coljVar = this.g;
+        if (coljVar != null) {
+            return coljVar;
         }
-        fvbo.j("analyticsLogger");
+        fxxm.j("analyticsLogger");
         return null;
     }
 
-    public final cqfp c() {
-        return (cqfp) this.j.a();
+    public final csot c() {
+        return (csot) this.j.a();
     }
 
-    @Override // defpackage.cpyy, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.cshv, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         Bundle extras;
         super.onCreate(bundle);
         Intent intent = getIntent();
-        fvbo.e(intent, "getIntent(...)");
-        Intent a = cohz.a(this, intent, cohy.d);
+        fxxm.e(intent, "getIntent(...)");
+        Intent a = cqqu.a(this, intent, cqqt.d);
         if (a != null) {
             startActivity(a);
             finish();
             return;
         }
-        cmep.b(this);
-        fvgt.b(joo.a(this), null, null, new cpzi(this, null), 3);
-        boolean z = fqmk.a.a().bg() || ((extras = getIntent().getExtras()) != null && extras.getBoolean("enable_send_button_on_receive_ui", false));
-        crjh crjhVar = new crjh(new crjo(this, cfdj.f()));
-        ivf.a(getWindow(), false);
-        cmdb f = cmdb.f(this);
-        fvbo.f(f, "<set-?>");
+        comx.b(this);
+        fycr.b(jvd.a(this), null, null, new csif(this, null), 3);
+        boolean z = ftgf.a.lK().bc() || ((extras = getIntent().getExtras()) != null && extras.getBoolean("enable_send_button_on_receive_ui", false));
+        ctsl ctslVar = new ctsl(new ctss(this, chkv.f()));
+        iwv.a(getWindow(), false);
+        colj f = colj.f(this);
+        fxxm.f(f, "<set-?>");
         this.g = f;
         ComposeView composeView = new ComposeView(this, null, 0, 6, null);
-        composeView.a(new fuy(-198976679, true, new cqae(this, crjhVar, z)));
+        composeView.a(new fvp(-198976679, true, new csjd(this, composeView, ctslVar, z)));
         setContentView(composeView);
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
-    protected final void onNewIntent(Intent intent) {
-        fvbo.f(intent, "intent");
-        super.onNewIntent(intent);
-        if (fqmk.F()) {
-            cmfe.a.b().h("ReceiveChimeraActivity onNewIntent setting intent to: %s", intent.getData());
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
+    public final void onNewIntent(Intent intent) {
+        fxxm.f(intent, "intent");
+        if (ftgf.F()) {
+            conm.a.b().h("ReceiveChimeraActivity onNewIntent setting intent to: %s", intent.getData());
             c().c = true;
             setIntent(intent);
         }
+        super.onNewIntent(intent);
     }
 }

@@ -3,14 +3,14 @@ package com.google.android.gms.location;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bzhq;
+import defpackage.atzr;
+import defpackage.cbqh;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class DeviceOrientationRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bzhq();
+    public static final Parcelable.Creator CREATOR = new cbqh();
     public final long a;
     public final boolean b;
 
@@ -45,9 +45,9 @@ public final class DeviceOrientationRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.a;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 2, j);
-        arxc.e(parcel, 6, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 2, j);
+        atzr.e(parcel, 6, this.b);
+        atzr.c(parcel, a);
     }
 }

@@ -6,36 +6,36 @@ import android.view.View;
 import com.google.android.gms.R;
 import com.google.android.gms.quickstart.common.LandingScreenChimeraActivity;
 import com.google.android.setupdesign.GlifLayout;
-import defpackage.arjz;
-import defpackage.arxo;
-import defpackage.cwxz;
-import defpackage.edfq;
-import defpackage.edfr;
-import defpackage.fkhl;
-import defpackage.qet;
+import defpackage.atmo;
+import defpackage.auad;
+import defpackage.czhx;
+import defpackage.efsl;
+import defpackage.efsm;
+import defpackage.fmya;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class LandingScreenChimeraActivity extends qet {
-    private static final arxo j = new arxo("QuickStart", "LandingScreenChimeraActivity");
+public class LandingScreenChimeraActivity extends rxx {
+    private static final auad j = new auad("QuickStart", "LandingScreenChimeraActivity");
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         setRequestedOrientation(1);
         super.onCreate(bundle);
-        arxo arxoVar = j;
-        arxoVar.d("onCreate()", new Object[0]);
+        auad auadVar = j;
+        auadVar.d("onCreate()", new Object[0]);
         Bundle extras = getIntent().getExtras();
         String string = extras != null ? extras.getString("quickstart.intent.extra.DEVICE_NAME") : null;
         if (string == null) {
-            arxoVar.f("Missing target device name in extras", new Object[0]);
+            auadVar.f("Missing target device name in extras", new Object[0]);
             finish();
             return;
         }
-        if (fkhl.c()) {
-            arjz.a(this);
+        if (fmya.c()) {
+            atmo.a(this);
         }
-        cwxz.a(this);
+        czhx.a(this);
         setContentView(R.layout.quickstart_glif_fragment_v2);
         GlifLayout glifLayout = (GlifLayout) findViewById(R.id.glif_layout);
         Drawable drawable = getDrawable(R.drawable.gs_celebration_vd_theme_40);
@@ -44,11 +44,11 @@ public class LandingScreenChimeraActivity extends qet {
         }
         glifLayout.b(getString(R.string.quickstart_landing_screen_title, new Object[]{string}));
         glifLayout.G(getString(R.string.quickstart_landing_screen_description));
-        edfq edfqVar = (edfq) glifLayout.q(edfq.class);
-        edfr edfrVar = new edfr(this);
-        edfrVar.b(R.string.common_done);
-        edfrVar.c = 4;
-        edfrVar.b = new View.OnClickListener() { // from class: cwxx
+        efsl efslVar = (efsl) glifLayout.q(efsl.class);
+        efsm efsmVar = new efsm(this);
+        efsmVar.b(R.string.common_done);
+        efsmVar.c = 4;
+        efsmVar.b = new View.OnClickListener() { // from class: czhv
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 LandingScreenChimeraActivity landingScreenChimeraActivity = LandingScreenChimeraActivity.this;
@@ -56,6 +56,6 @@ public class LandingScreenChimeraActivity extends qet {
                 landingScreenChimeraActivity.finishAndRemoveTask();
             }
         };
-        edfqVar.b(edfrVar.a());
+        efslVar.b(efsmVar.a());
     }
 }

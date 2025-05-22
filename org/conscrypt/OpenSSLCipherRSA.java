@@ -2,6 +2,10 @@ package com.google.android.gms.org.conscrypt;
 
 import com.google.android.gms.org.conscrypt.EvpMdRef;
 import com.google.android.gms.org.conscrypt.NativeRef;
+import com.google.android.gms.org.conscrypt.metrics.MetricsAlgorithm;
+import com.google.android.gms.org.conscrypt.metrics.MetricsCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsMode;
+import com.google.android.gms.org.conscrypt.metrics.MetricsPadding;
 import defpackage.a;
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
@@ -33,7 +37,7 @@ import javax.crypto.spec.OAEPParameterSpec;
 import javax.crypto.spec.PSource;
 import javax.crypto.spec.SecretKeySpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class OpenSSLCipherRSA extends CipherSpi {
     private byte[] buffer;
@@ -44,10 +48,10 @@ public abstract class OpenSSLCipherRSA extends CipherSpi {
     int padding;
     boolean usingPrivateKey;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public abstract class DirectRSA extends OpenSSLCipherRSA {
-        public DirectRSA(int i) {
-            super(i);
+        public DirectRSA(int i, int i2) {
+            super(i, i2);
         }
 
         @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA
@@ -65,22 +69,195 @@ public abstract class OpenSSLCipherRSA extends CipherSpi {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+    public class OAEP extends OpenSSLCipherRSA {
+        private byte[] label;
+        private long mgf1Md;
+        private long oaepMd;
+        private int oaepMdSizeBytes;
+        private NativeRef.EVP_PKEY_CTX pkeyCtx;
+
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+        public final class SHA1 extends OAEP {
+            public SHA1() {
+                super(EvpMdRef.SHA1.EVP_MD, EvpMdRef.SHA1.SIZE_BYTES, MetricsPadding.OAEP_SHA1.getId());
+            }
+        }
+
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+        public final class SHA224 extends OAEP {
+            public SHA224() {
+                super(EvpMdRef.SHA224.EVP_MD, EvpMdRef.SHA224.SIZE_BYTES, MetricsPadding.OAEP_SHA224.getId());
+            }
+        }
+
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+        public final class SHA256 extends OAEP {
+            public SHA256() {
+                super(EvpMdRef.SHA256.EVP_MD, EvpMdRef.SHA256.SIZE_BYTES, MetricsPadding.OAEP_SHA256.getId());
+            }
+        }
+
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+        public final class SHA384 extends OAEP {
+            public SHA384() {
+                super(EvpMdRef.SHA384.EVP_MD, EvpMdRef.SHA384.SIZE_BYTES, MetricsPadding.OAEP_SHA384.getId());
+            }
+        }
+
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+        public final class SHA512 extends OAEP {
+            public SHA512() {
+                super(EvpMdRef.SHA512.EVP_MD, EvpMdRef.SHA512.SIZE_BYTES, MetricsPadding.OAEP_SHA512.getId());
+            }
+        }
+
+        private void readOAEPParameters(OAEPParameterSpec oAEPParameterSpec) {
+            String upperCase = oAEPParameterSpec.getMGFAlgorithm().toUpperCase(Locale.US);
+            AlgorithmParameterSpec mGFParameters = oAEPParameterSpec.getMGFParameters();
+            if ((!"MGF1".equals(upperCase) && !"1.2.840.113549.1.1.8".equals(upperCase)) || !(mGFParameters instanceof MGF1ParameterSpec)) {
+                throw new InvalidAlgorithmParameterException("Only MGF1 supported as mask generation function");
+            }
+            MGF1ParameterSpec mGF1ParameterSpec = (MGF1ParameterSpec) mGFParameters;
+            String upperCase2 = oAEPParameterSpec.getDigestAlgorithm().toUpperCase(Locale.US);
+            try {
+                this.oaepMd = EvpMdRef.getEVP_MDByJcaDigestAlgorithmStandardName(upperCase2);
+                this.oaepMdSizeBytes = EvpMdRef.getDigestSizeBytesByJcaDigestAlgorithmStandardName(upperCase2);
+                this.mgf1Md = EvpMdRef.getEVP_MDByJcaDigestAlgorithmStandardName(mGF1ParameterSpec.getDigestAlgorithm());
+                PSource pSource = oAEPParameterSpec.getPSource();
+                if (!"PSpecified".equals(pSource.getAlgorithm()) || !(pSource instanceof PSource.PSpecified)) {
+                    throw new InvalidAlgorithmParameterException("Only PSpecified accepted for PSource");
+                }
+                this.label = ((PSource.PSpecified) pSource).getValue();
+            } catch (NoSuchAlgorithmException e) {
+                throw new InvalidAlgorithmParameterException(e);
+            }
+        }
+
+        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA
+        public void doCryptoInit(AlgorithmParameterSpec algorithmParameterSpec) {
+            this.pkeyCtx = new NativeRef.EVP_PKEY_CTX(this.encrypting ? NativeCrypto.EVP_PKEY_encrypt_init(this.key.getNativeRef()) : NativeCrypto.EVP_PKEY_decrypt_init(this.key.getNativeRef()));
+            if (algorithmParameterSpec instanceof OAEPParameterSpec) {
+                readOAEPParameters((OAEPParameterSpec) algorithmParameterSpec);
+            }
+            NativeCrypto.EVP_PKEY_CTX_set_rsa_padding(this.pkeyCtx.address, 4);
+            NativeCrypto.EVP_PKEY_CTX_set_rsa_oaep_md(this.pkeyCtx.address, this.oaepMd);
+            NativeCrypto.EVP_PKEY_CTX_set_rsa_mgf1_md(this.pkeyCtx.address, this.mgf1Md);
+            byte[] bArr = this.label;
+            if (bArr == null || bArr.length <= 0) {
+                return;
+            }
+            NativeCrypto.EVP_PKEY_CTX_set_rsa_oaep_label(this.pkeyCtx.address, bArr);
+        }
+
+        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA
+        public int doCryptoOperation(byte[] bArr, byte[] bArr2) {
+            return this.encrypting ? NativeCrypto.EVP_PKEY_encrypt(this.pkeyCtx, bArr2, 0, bArr, 0, bArr.length) : NativeCrypto.EVP_PKEY_decrypt(this.pkeyCtx, bArr2, 0, bArr, 0, bArr.length);
+        }
+
+        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA, javax.crypto.CipherSpi
+        protected AlgorithmParameters engineGetParameters() {
+            if (!isInitialized()) {
+                return null;
+            }
+            try {
+                AlgorithmParameters algorithmParameters = AlgorithmParameters.getInstance("OAEP");
+                algorithmParameters.init(new OAEPParameterSpec(EvpMdRef.getJcaDigestAlgorithmStandardNameFromEVP_MD(this.oaepMd), "MGF1", new MGF1ParameterSpec(EvpMdRef.getJcaDigestAlgorithmStandardNameFromEVP_MD(this.mgf1Md)), this.label == null ? PSource.PSpecified.DEFAULT : new PSource.PSpecified(this.label)));
+                return algorithmParameters;
+            } catch (NoSuchAlgorithmException e) {
+                throw ((Error) new AssertionError("OAEP not supported").initCause(e));
+            } catch (InvalidParameterSpecException unused) {
+                throw new RuntimeException("No providers of AlgorithmParameters.OAEP available");
+            }
+        }
+
+        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA, javax.crypto.CipherSpi
+        protected void engineInit(int i, Key key, AlgorithmParameters algorithmParameters, SecureRandom secureRandom) {
+            OAEPParameterSpec oAEPParameterSpec;
+            if (algorithmParameters != null) {
+                try {
+                    oAEPParameterSpec = (OAEPParameterSpec) algorithmParameters.getParameterSpec(OAEPParameterSpec.class);
+                } catch (InvalidParameterSpecException e) {
+                    throw new InvalidAlgorithmParameterException("Only OAEP parameters are supported", e);
+                }
+            } else {
+                oAEPParameterSpec = null;
+            }
+            engineInitInternal(i, key, oAEPParameterSpec);
+        }
+
+        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA
+        public void engineInitInternal(int i, Key key, AlgorithmParameterSpec algorithmParameterSpec) {
+            if (i != 1 && i != 3) {
+                if (i != 2) {
+                    if (i == 4) {
+                        i = 4;
+                    }
+                }
+                if (!(key instanceof PrivateKey)) {
+                    throw new InvalidKeyException("Only private keys may be used to decrypt");
+                }
+            } else if (!(key instanceof PublicKey)) {
+                throw new InvalidKeyException("Only public keys may be used to encrypt");
+            }
+            super.engineInitInternal(i, key, algorithmParameterSpec);
+        }
+
+        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA, javax.crypto.CipherSpi
+        protected void engineSetPadding(String str) {
+            if (!str.toUpperCase(Locale.US).equals("OAEPPADDING")) {
+                throw new NoSuchPaddingException("Only OAEP padding is supported");
+            }
+            this.padding = 4;
+        }
+
+        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA
+        public int paddedBlockSizeBytes() {
+            int keySizeBytes = keySizeBytes();
+            int i = this.oaepMdSizeBytes;
+            return keySizeBytes - ((i + i) + 2);
+        }
+
+        public OAEP(long j, int i) {
+            super(4, MetricsPadding.OAEP_SHA1.getId());
+            this.mgf1Md = j;
+            this.oaepMd = j;
+            this.oaepMdSizeBytes = i;
+        }
+
+        private OAEP(long j, int i, int i2) {
+            super(4, i2);
+            this.mgf1Md = j;
+            this.oaepMd = j;
+            this.oaepMdSizeBytes = i;
+        }
+
+        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA, javax.crypto.CipherSpi
+        protected void engineInit(int i, Key key, AlgorithmParameterSpec algorithmParameterSpec, SecureRandom secureRandom) {
+            if (algorithmParameterSpec != null && !(algorithmParameterSpec instanceof OAEPParameterSpec)) {
+                throw new InvalidAlgorithmParameterException("Only OAEPParameterSpec accepted in OAEP mode");
+            }
+            engineInitInternal(i, key, algorithmParameterSpec);
+        }
+    }
+
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class PKCS1 extends DirectRSA {
         public PKCS1() {
-            super(1);
+            super(1, MetricsPadding.PKCS1.getId());
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class Raw extends DirectRSA {
         public Raw() {
-            super(3);
+            super(3, MetricsPadding.NO_PADDING.getId());
         }
     }
 
-    public OpenSSLCipherRSA(int i) {
+    public OpenSSLCipherRSA(int i, int i2) {
         this.padding = i;
+        Platform.getStatsLog().countServiceUsage(MetricsAlgorithm.CIPHER.getId(), MetricsCipher.RSA.getId(), MetricsMode.NO_MODE.getId(), i2);
     }
 
     public abstract int doCryptoOperation(byte[] bArr, byte[] bArr2);
@@ -289,171 +466,6 @@ public abstract class OpenSSLCipherRSA extends CipherSpi {
     public int paddedBlockSizeBytes() {
         int keySizeBytes = keySizeBytes();
         return this.padding == 1 ? keySizeBytes - 11 : keySizeBytes;
-    }
-
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-    public class OAEP extends OpenSSLCipherRSA {
-        private byte[] label;
-        private long mgf1Md;
-        private long oaepMd;
-        private int oaepMdSizeBytes;
-        private NativeRef.EVP_PKEY_CTX pkeyCtx;
-
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-        public final class SHA1 extends OAEP {
-            public SHA1() {
-                super(EvpMdRef.SHA1.EVP_MD, EvpMdRef.SHA1.SIZE_BYTES);
-            }
-        }
-
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-        public final class SHA224 extends OAEP {
-            public SHA224() {
-                super(EvpMdRef.SHA224.EVP_MD, EvpMdRef.SHA224.SIZE_BYTES);
-            }
-        }
-
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-        public final class SHA256 extends OAEP {
-            public SHA256() {
-                super(EvpMdRef.SHA256.EVP_MD, EvpMdRef.SHA256.SIZE_BYTES);
-            }
-        }
-
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-        public final class SHA384 extends OAEP {
-            public SHA384() {
-                super(EvpMdRef.SHA384.EVP_MD, EvpMdRef.SHA384.SIZE_BYTES);
-            }
-        }
-
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-        public final class SHA512 extends OAEP {
-            public SHA512() {
-                super(EvpMdRef.SHA512.EVP_MD, EvpMdRef.SHA512.SIZE_BYTES);
-            }
-        }
-
-        public OAEP(long j, int i) {
-            super(4);
-            this.mgf1Md = j;
-            this.oaepMd = j;
-            this.oaepMdSizeBytes = i;
-        }
-
-        private void readOAEPParameters(OAEPParameterSpec oAEPParameterSpec) {
-            String upperCase = oAEPParameterSpec.getMGFAlgorithm().toUpperCase(Locale.US);
-            AlgorithmParameterSpec mGFParameters = oAEPParameterSpec.getMGFParameters();
-            if ((!"MGF1".equals(upperCase) && !"1.2.840.113549.1.1.8".equals(upperCase)) || !(mGFParameters instanceof MGF1ParameterSpec)) {
-                throw new InvalidAlgorithmParameterException("Only MGF1 supported as mask generation function");
-            }
-            MGF1ParameterSpec mGF1ParameterSpec = (MGF1ParameterSpec) mGFParameters;
-            String upperCase2 = oAEPParameterSpec.getDigestAlgorithm().toUpperCase(Locale.US);
-            try {
-                this.oaepMd = EvpMdRef.getEVP_MDByJcaDigestAlgorithmStandardName(upperCase2);
-                this.oaepMdSizeBytes = EvpMdRef.getDigestSizeBytesByJcaDigestAlgorithmStandardName(upperCase2);
-                this.mgf1Md = EvpMdRef.getEVP_MDByJcaDigestAlgorithmStandardName(mGF1ParameterSpec.getDigestAlgorithm());
-                PSource pSource = oAEPParameterSpec.getPSource();
-                if (!"PSpecified".equals(pSource.getAlgorithm()) || !(pSource instanceof PSource.PSpecified)) {
-                    throw new InvalidAlgorithmParameterException("Only PSpecified accepted for PSource");
-                }
-                this.label = ((PSource.PSpecified) pSource).getValue();
-            } catch (NoSuchAlgorithmException e) {
-                throw new InvalidAlgorithmParameterException(e);
-            }
-        }
-
-        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA
-        public void doCryptoInit(AlgorithmParameterSpec algorithmParameterSpec) {
-            this.pkeyCtx = new NativeRef.EVP_PKEY_CTX(this.encrypting ? NativeCrypto.EVP_PKEY_encrypt_init(this.key.getNativeRef()) : NativeCrypto.EVP_PKEY_decrypt_init(this.key.getNativeRef()));
-            if (algorithmParameterSpec instanceof OAEPParameterSpec) {
-                readOAEPParameters((OAEPParameterSpec) algorithmParameterSpec);
-            }
-            NativeCrypto.EVP_PKEY_CTX_set_rsa_padding(this.pkeyCtx.address, 4);
-            NativeCrypto.EVP_PKEY_CTX_set_rsa_oaep_md(this.pkeyCtx.address, this.oaepMd);
-            NativeCrypto.EVP_PKEY_CTX_set_rsa_mgf1_md(this.pkeyCtx.address, this.mgf1Md);
-            byte[] bArr = this.label;
-            if (bArr == null || bArr.length <= 0) {
-                return;
-            }
-            NativeCrypto.EVP_PKEY_CTX_set_rsa_oaep_label(this.pkeyCtx.address, bArr);
-        }
-
-        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA
-        public int doCryptoOperation(byte[] bArr, byte[] bArr2) {
-            return this.encrypting ? NativeCrypto.EVP_PKEY_encrypt(this.pkeyCtx, bArr2, 0, bArr, 0, bArr.length) : NativeCrypto.EVP_PKEY_decrypt(this.pkeyCtx, bArr2, 0, bArr, 0, bArr.length);
-        }
-
-        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA, javax.crypto.CipherSpi
-        protected AlgorithmParameters engineGetParameters() {
-            if (!isInitialized()) {
-                return null;
-            }
-            try {
-                AlgorithmParameters algorithmParameters = AlgorithmParameters.getInstance("OAEP");
-                algorithmParameters.init(new OAEPParameterSpec(EvpMdRef.getJcaDigestAlgorithmStandardNameFromEVP_MD(this.oaepMd), "MGF1", new MGF1ParameterSpec(EvpMdRef.getJcaDigestAlgorithmStandardNameFromEVP_MD(this.mgf1Md)), this.label == null ? PSource.PSpecified.DEFAULT : new PSource.PSpecified(this.label)));
-                return algorithmParameters;
-            } catch (NoSuchAlgorithmException e) {
-                throw ((Error) new AssertionError("OAEP not supported").initCause(e));
-            } catch (InvalidParameterSpecException unused) {
-                throw new RuntimeException("No providers of AlgorithmParameters.OAEP available");
-            }
-        }
-
-        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA, javax.crypto.CipherSpi
-        protected void engineInit(int i, Key key, AlgorithmParameters algorithmParameters, SecureRandom secureRandom) {
-            OAEPParameterSpec oAEPParameterSpec;
-            if (algorithmParameters != null) {
-                try {
-                    oAEPParameterSpec = (OAEPParameterSpec) algorithmParameters.getParameterSpec(OAEPParameterSpec.class);
-                } catch (InvalidParameterSpecException e) {
-                    throw new InvalidAlgorithmParameterException("Only OAEP parameters are supported", e);
-                }
-            } else {
-                oAEPParameterSpec = null;
-            }
-            engineInitInternal(i, key, oAEPParameterSpec);
-        }
-
-        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA
-        public void engineInitInternal(int i, Key key, AlgorithmParameterSpec algorithmParameterSpec) {
-            if (i != 1 && i != 3) {
-                if (i != 2) {
-                    if (i == 4) {
-                        i = 4;
-                    }
-                }
-                if (!(key instanceof PrivateKey)) {
-                    throw new InvalidKeyException("Only private keys may be used to decrypt");
-                }
-            } else if (!(key instanceof PublicKey)) {
-                throw new InvalidKeyException("Only public keys may be used to encrypt");
-            }
-            super.engineInitInternal(i, key, algorithmParameterSpec);
-        }
-
-        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA, javax.crypto.CipherSpi
-        protected void engineSetPadding(String str) {
-            if (!str.toUpperCase(Locale.US).equals("OAEPPADDING")) {
-                throw new NoSuchPaddingException("Only OAEP padding is supported");
-            }
-            this.padding = 4;
-        }
-
-        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA
-        public int paddedBlockSizeBytes() {
-            int keySizeBytes = keySizeBytes();
-            int i = this.oaepMdSizeBytes;
-            return keySizeBytes - ((i + i) + 2);
-        }
-
-        @Override // com.google.android.gms.org.conscrypt.OpenSSLCipherRSA, javax.crypto.CipherSpi
-        protected void engineInit(int i, Key key, AlgorithmParameterSpec algorithmParameterSpec, SecureRandom secureRandom) {
-            if (algorithmParameterSpec != null && !(algorithmParameterSpec instanceof OAEPParameterSpec)) {
-                throw new InvalidAlgorithmParameterException("Only OAEPParameterSpec accepted in OAEP mode");
-            }
-            engineInitInternal(i, key, algorithmParameterSpec);
-        }
     }
 
     @Override // javax.crypto.CipherSpi

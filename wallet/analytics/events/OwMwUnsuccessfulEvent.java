@@ -3,14 +3,14 @@ package com.google.android.gms.wallet.analytics.events;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.digj;
-import defpackage.diks;
-import defpackage.divi;
+import defpackage.dkru;
+import defpackage.dkwd;
+import defpackage.dlgt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class OwMwUnsuccessfulEvent extends AnalyticsSessionStartEndEvent {
-    public static final Parcelable.Creator CREATOR = new digj();
+    public static final Parcelable.Creator CREATOR = new dkru();
     public final int c;
     public final int d;
     public final int e;
@@ -27,7 +27,7 @@ public class OwMwUnsuccessfulEvent extends AnalyticsSessionStartEndEvent {
     }
 
     public static void b(Context context, int i, int i2, int i3, int i4, String str, String str2) {
-        divi.a(context, new OwMwUnsuccessfulEvent(i, i2, i3, i4, str, str2));
+        dlgt.a(context, new OwMwUnsuccessfulEvent(i, i2, i3, i4, str, str2));
     }
 
     @Override // android.os.Parcelable
@@ -48,7 +48,7 @@ public class OwMwUnsuccessfulEvent extends AnalyticsSessionStartEndEvent {
     public OwMwUnsuccessfulEvent(Parcel parcel) {
         super(parcel);
         this.c = parcel.readInt();
-        this.g = diks.a(parcel.readInt());
+        this.g = dkwd.a(parcel.readInt());
         this.d = parcel.readInt();
         this.e = parcel.readInt();
         this.f = parcel.readString();

@@ -2,13 +2,13 @@ package com.google.android.gms.wallet.service.ib;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.diym;
-import defpackage.djdv;
+import defpackage.dlkf;
+import defpackage.dlpo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class RefreshUserSpecificDataResponse implements Parcelable, djdv {
-    public static final Parcelable.Creator CREATOR = new diym();
+public class RefreshUserSpecificDataResponse implements Parcelable, dlpo {
+    public static final Parcelable.Creator CREATOR = new dlkf();
     public final IbBuyFlowInput a;
     public final int b;
     public final int c;
@@ -19,7 +19,7 @@ public class RefreshUserSpecificDataResponse implements Parcelable, djdv {
         this.c = i2;
     }
 
-    @Override // defpackage.djdv
+    @Override // defpackage.dlpo
     public final boolean a() {
         return false;
     }

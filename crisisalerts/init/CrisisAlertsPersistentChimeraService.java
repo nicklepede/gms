@@ -6,37 +6,37 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.provider.Settings;
 import com.google.android.gms.R;
-import defpackage.asbo;
-import defpackage.asng;
-import defpackage.asnv;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.axbc;
-import defpackage.axcw;
-import defpackage.axdg;
-import defpackage.axdv;
-import defpackage.axdw;
-import defpackage.axdz;
-import defpackage.axef;
-import defpackage.axeg;
-import defpackage.axej;
-import defpackage.axeo;
-import defpackage.axfb;
-import defpackage.axhe;
-import defpackage.axhh;
-import defpackage.dzbh;
-import defpackage.dzbj;
-import defpackage.eask;
-import defpackage.easm;
-import defpackage.easo;
-import defpackage.eatn;
-import defpackage.eato;
-import defpackage.eatq;
-import defpackage.eaua;
-import defpackage.eauf;
-import defpackage.eauh;
-import defpackage.ewwi;
-import defpackage.fnhq;
+import defpackage.aued;
+import defpackage.aura;
+import defpackage.aurp;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.azfc;
+import defpackage.azgw;
+import defpackage.azhg;
+import defpackage.azhv;
+import defpackage.azhw;
+import defpackage.azhz;
+import defpackage.azif;
+import defpackage.azig;
+import defpackage.azij;
+import defpackage.azio;
+import defpackage.azjb;
+import defpackage.azle;
+import defpackage.azlh;
+import defpackage.ebnv;
+import defpackage.edex;
+import defpackage.edez;
+import defpackage.edfb;
+import defpackage.edga;
+import defpackage.edgb;
+import defpackage.edgd;
+import defpackage.edgn;
+import defpackage.edgs;
+import defpackage.edgu;
+import defpackage.ezkr;
+import defpackage.fpzr;
+import defpackage.fxqo;
 import j$.util.Objects;
 import j$.util.Optional;
 import j$.util.function.Consumer$CC;
@@ -45,28 +45,28 @@ import java.io.PrintWriter;
 import java.security.SecureRandom;
 import java.util.function.Consumer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class CrisisAlertsPersistentChimeraService extends axcw {
-    public static final asot a = axdg.a("PS");
-    public axdw b;
+public class CrisisAlertsPersistentChimeraService extends azgw {
+    public static final ausn a = azhg.a("PS");
+    public azhw b;
 
     @Override // com.google.android.chimera.Service
     protected final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        axeg axegVar;
+        azig azigVar;
         printWriter.println("##CRiAl Start");
-        axdw axdwVar = this.b;
-        Object obj = axdwVar.b;
+        azhw azhwVar = this.b;
+        Object obj = azhwVar.b;
         if (obj == null) {
             obj = "n/a";
         }
         printWriter.println(obj);
-        if (fnhq.f() && (axegVar = axdwVar.c) != null) {
-            eaua eauaVar = axegVar.g;
-            if (eauaVar != null) {
-                eauaVar.b(printWriter);
+        if (fpzr.f() && (azigVar = azhwVar.c) != null) {
+            edgn edgnVar = azigVar.g;
+            if (edgnVar != null) {
+                edgnVar.b(printWriter);
             }
-            axegVar.j.a(printWriter);
+            azigVar.k.a(printWriter);
         }
         printWriter.println("##CRiAl End");
     }
@@ -76,112 +76,112 @@ public class CrisisAlertsPersistentChimeraService extends axcw {
         return null;
     }
 
-    @Override // defpackage.axcw, com.google.android.chimera.Service
+    @Override // defpackage.azgw, com.google.android.chimera.Service
     public final void onCreate() {
-        asbo f;
+        aued f;
         super.onCreate();
-        axdw axdwVar = this.b;
-        if (axdwVar.a.compareAndSet(false, true)) {
-            axhh axhhVar = axdwVar.b;
-            if (axhhVar.b()) {
-                int i = true != axhhVar.c() ? 2 : 1;
-                asng.M("com.google.android.gms.crisisalerts.settings.CrisisAlertsSettingInjectorService", i);
-                asng.M("com.google.android.gms.crisisalerts.settings.CrisisAlertsSettingsActivity", i);
-                asng.M("com.google.android.gms.crisisalerts.GcmReceiverService", true != axhhVar.a() ? 2 : 1);
-                if (axhhVar.d()) {
-                    int i2 = axbc.a;
-                    if (asqh.c() && asqh.c() && (f = asbo.f(this)) != null) {
+        azhw azhwVar = this.b;
+        if (azhwVar.a.compareAndSet(false, true)) {
+            azlh azlhVar = azhwVar.b;
+            if (azlhVar.b()) {
+                int i = true != azlhVar.c() ? 2 : 1;
+                aura.M("com.google.android.gms.crisisalerts.settings.CrisisAlertsSettingInjectorService", i);
+                aura.M("com.google.android.gms.crisisalerts.settings.CrisisAlertsSettingsActivity", i);
+                aura.M("com.google.android.gms.crisisalerts.GcmReceiverService", true != azlhVar.a() ? 2 : 1);
+                if (azlhVar.d()) {
+                    int i2 = azfc.a;
+                    if (auub.c() && auub.c() && (f = aued.f(this)) != null) {
                         if (f.d("Personal_Safety_Id") == null) {
                             f.q(new NotificationChannelGroup("Personal_Safety_Id", getString(R.string.personal_safety_channel_name)));
                         }
-                        axbc.a(this, f, "crisis_alerts_3_1", R.string.crisis_alerts_notification_medium_importance_channel_name, true, null);
-                        axbc.a(this, f, "crisis_alerts_2_1", R.string.crisis_alerts_notification_medium_importance_channel_name, false, Settings.System.DEFAULT_NOTIFICATION_URI);
-                        axbc.a(this, f, "crisis_alerts_1_1", R.string.crisis_alerts_notification_high_importance_channel_name, true, Settings.System.DEFAULT_NOTIFICATION_URI);
+                        azfc.a(this, f, "crisis_alerts_3_1", R.string.crisis_alerts_notification_medium_importance_channel_name, true, null);
+                        azfc.a(this, f, "crisis_alerts_2_1", R.string.crisis_alerts_notification_medium_importance_channel_name, false, Settings.System.DEFAULT_NOTIFICATION_URI);
+                        azfc.a(this, f, "crisis_alerts_1_1", R.string.crisis_alerts_notification_high_importance_channel_name, true, Settings.System.DEFAULT_NOTIFICATION_URI);
                     }
                 }
-                if (axhhVar.c() && !axhhVar.d()) {
-                    axdwVar.d.e(ewwi.RESTRICTION_COVERAGE);
+                if (azlhVar.c() && !azlhVar.d()) {
+                    azhwVar.d.e(ezkr.RESTRICTION_COVERAGE);
                 }
-                if (axhhVar.a()) {
+                if (azlhVar.a()) {
                     try {
-                        final axeg axegVar = axdwVar.c;
-                        axdv axdvVar = axegVar.f;
-                        if (axdvVar == null) {
-                            axegVar.h.e(ewwi.RESTRICTION_SYSTEM_ERROR);
+                        final azig azigVar = azhwVar.c;
+                        azhv azhvVar = azigVar.f;
+                        if (azhvVar == null) {
+                            azigVar.h.e(ezkr.RESTRICTION_SYSTEM_ERROR);
                             return;
                         }
-                        eaua eauaVar = axegVar.g;
-                        Context context = axegVar.b;
-                        axeo axeoVar = new axeo(context, new easm(1, eauaVar));
-                        asot asotVar = axeg.a;
-                        eauaVar.k(new eatq("USetSt", axeoVar));
-                        eauaVar.k(new eatq("LocSetSt", new easo(new easm(2, eauaVar), context), Optional.of(new Consumer() { // from class: axea
+                        edgn edgnVar = azigVar.g;
+                        Context context = azigVar.b;
+                        azio azioVar = new azio(context, new edez(1, edgnVar));
+                        ausn ausnVar = azig.a;
+                        edgnVar.k(new edgd("USetSt", azioVar));
+                        edgnVar.k(new edgd("LocSetSt", new edfb(new edez(2, edgnVar), context), Optional.of(new Consumer() { // from class: azia
                             @Override // java.util.function.Consumer
                             public final void accept(Object obj) {
-                                axeg.this.a(((Integer) obj).intValue(), ewwi.RESTRICTION_LOCATION_OFF);
+                                azig.this.a(((Integer) obj).intValue(), ezkr.RESTRICTION_LOCATION_OFF);
                             }
 
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                                 return Consumer$CC.$default$andThen(this, consumer);
                             }
                         })));
-                        eauaVar.k(new eatq("LocLstnrSt", axdvVar, Optional.of(new Consumer() { // from class: axeb
+                        edgnVar.k(new edgd("LocLstnrSt", azhvVar, Optional.of(new Consumer() { // from class: azib
                             @Override // java.util.function.Consumer
                             public final void accept(Object obj) {
-                                axeg.this.a(((Integer) obj).intValue(), ewwi.RESTRICTION_COVERAGE);
+                                azig.this.a(((Integer) obj).intValue(), ezkr.RESTRICTION_COVERAGE);
                             }
 
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                                 return Consumer$CC.$default$andThen(this, consumer);
                             }
                         })));
-                        eauaVar.k(new eato("ConObsSt", new eask(context, fnhq.a.a().v()), new easm(8, eauaVar), new eatn() { // from class: axec
-                            @Override // defpackage.eatn
+                        edgnVar.k(new edgb("ConObsSt", new edex(context, fpzr.a.lK().v()), new edez(8, edgnVar), new edga() { // from class: azic
+                            @Override // defpackage.edga
                             public final void a(Object obj, Object obj2) {
-                                axeg.this.h.d(ewwj.WARNING_OFFLINE, !((Boolean) obj2).booleanValue());
+                                azig.this.h.d(ezks.WARNING_OFFLINE, !((Boolean) obj2).booleanValue());
                             }
-                        }, new axdz()));
-                        dzbh b = dzbh.b(context, asotVar);
+                        }, new azhz()));
+                        fxqo fxqoVar = azigVar.i;
                         SecureRandom secureRandom = new SecureRandom();
-                        asnv asnvVar = axegVar.c;
-                        eauaVar.k(new axfb(context, b, secureRandom, axdvVar, asnvVar));
-                        axegVar.e.ifPresent(new Consumer() { // from class: axed
+                        aurp aurpVar = azigVar.c;
+                        edgnVar.k(new azjb(context, fxqoVar, secureRandom, azhvVar, aurpVar));
+                        azigVar.e.ifPresent(new Consumer() { // from class: azid
                             @Override // java.util.function.Consumer
                             public final void accept(Object obj) {
-                                axbb axbbVar = (axbb) obj;
-                                final axeg axegVar2 = axeg.this;
-                                eaua eauaVar2 = axegVar2.g;
-                                eauaVar2.k(new eato("NtfObsSt", axbbVar, new easm(7, eauaVar2), new eatn() { // from class: axdy
-                                    @Override // defpackage.eatn
+                                azfb azfbVar = (azfb) obj;
+                                final azig azigVar2 = azig.this;
+                                edgn edgnVar2 = azigVar2.g;
+                                edgnVar2.k(new edgb("NtfObsSt", azfbVar, new edez(7, edgnVar2), new edga() { // from class: azhy
+                                    @Override // defpackage.edga
                                     public final void a(Object obj2, Object obj3) {
-                                        boolean z = ((axba) obj3).a;
-                                        axeg axegVar3 = axeg.this;
-                                        axegVar3.h.d(ewwj.WARNING_NOTIFICATIONS_BLOCKED, z);
-                                        axegVar3.j.i();
+                                        boolean z = ((azfa) obj3).a;
+                                        azig azigVar3 = azig.this;
+                                        azigVar3.h.d(ezks.WARNING_NOTIFICATIONS_BLOCKED, z);
+                                        azigVar3.k.i();
                                     }
-                                }, new axdz()));
+                                }, new azhz()));
                             }
 
                             public final /* synthetic */ Consumer andThen(Consumer consumer) {
                                 return Consumer$CC.$default$andThen(this, consumer);
                             }
                         });
-                        axej axejVar = new axej(context, axegVar.d);
-                        axegVar.i = axejVar;
-                        eauf eaufVar = new eauf(context, 4, asnvVar, asotVar, axegVar.j, axdvVar, new axdz());
-                        eauaVar.k(axejVar);
-                        final axhe axheVar = axegVar.h;
-                        Objects.requireNonNull(axheVar);
-                        eauaVar.k(new eauh(Optional.of(new Runnable() { // from class: axee
+                        azij azijVar = new azij(context, azigVar.d);
+                        azigVar.j = azijVar;
+                        edgs edgsVar = new edgs(context, 4, aurpVar, ausnVar, azigVar.k, azhvVar, new azhz());
+                        edgnVar.k(azijVar);
+                        final azle azleVar = azigVar.h;
+                        Objects.requireNonNull(azleVar);
+                        edgnVar.k(new edgu(Optional.of(new Runnable() { // from class: azie
                             @Override // java.lang.Runnable
                             public final void run() {
-                                axhe.this.e(ewwi.RESTRICTION_NONE);
+                                azle.this.e(ezkr.RESTRICTION_NONE);
                             }
                         }), Optional.empty()));
-                        eauaVar.e = eaufVar;
-                        eauaVar.h();
-                    } catch (axef | dzbj unused) {
-                        axdwVar.d.e(ewwi.RESTRICTION_SYSTEM_ERROR);
+                        edgnVar.e = edgsVar;
+                        edgnVar.h();
+                    } catch (azif | ebnv unused) {
+                        azhwVar.d.e(ezkr.RESTRICTION_SYSTEM_ERROR);
                     }
                 }
             }

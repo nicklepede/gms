@@ -3,13 +3,13 @@ package com.google.android.gms.appsearch.stats;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ugj;
+import defpackage.atzr;
+import defpackage.wci;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class SchemaMigrationStats extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ugj();
+    public static final Parcelable.Creator CREATOR = new wci();
     public final String a;
     public final String b;
     public final int c;
@@ -45,21 +45,21 @@ public final class SchemaMigrationStats extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.o(parcel, 7, this.g);
-        arxc.o(parcel, 8, this.h);
-        arxc.e(parcel, 9, this.i);
-        arxc.o(parcel, 10, this.j);
-        arxc.o(parcel, 11, this.k);
-        arxc.o(parcel, 12, this.l);
-        arxc.o(parcel, 13, this.m);
-        arxc.o(parcel, 14, this.n);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.o(parcel, 7, this.g);
+        atzr.o(parcel, 8, this.h);
+        atzr.e(parcel, 9, this.i);
+        atzr.o(parcel, 10, this.j);
+        atzr.o(parcel, 11, this.k);
+        atzr.o(parcel, 12, this.l);
+        atzr.o(parcel, 13, this.m);
+        atzr.o(parcel, 14, this.n);
+        atzr.c(parcel, a);
     }
 }

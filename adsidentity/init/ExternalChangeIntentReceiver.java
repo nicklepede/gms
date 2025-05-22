@@ -4,17 +4,17 @@ import android.content.Intent;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.adsidentity.service.AdservicesStatusService;
-import defpackage.asqh;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykj;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.fkas;
-import defpackage.fncn;
+import defpackage.auub;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.catb;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.fmqy;
+import defpackage.fpum;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ExternalChangeIntentReceiver extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
@@ -25,34 +25,34 @@ public class ExternalChangeIntentReceiver extends IntentOperation {
         }
         Log.i("AdservicesStatusTask", "scheduling task by handle intent");
         int i = AdservicesStatusService.a;
-        if (fkas.a.a().H()) {
-            byjl a = byjl.a(this);
-            bykj bykjVar = new bykj();
-            bykjVar.e(0L, 0L);
-            a.f(bykjVar.b());
+        if (fmqy.a.lK().H()) {
+            casd a = casd.a(this);
+            catb catbVar = new catb();
+            catbVar.e(0L, 0L);
+            a.f(catbVar.b());
             Log.i("AdservicesStatusTask", "One-off debugging task scheduled.");
             return;
         }
-        if (asqh.g() && fkas.n()) {
-            if (fncn.m()) {
-                byjl a2 = byjl.a(this);
-                byko bykoVar = new byko();
-                bykoVar.w(AdservicesStatusService.class.getName());
-                bykoVar.q("AdservicesStatusTask");
-                bykoVar.v(2);
-                bykoVar.l(false);
-                bykoVar.a = bykv.j;
-                a2.f(bykoVar.b());
+        if (auub.g() && fmqy.n()) {
+            if (fpum.m()) {
+                casd a2 = casd.a(this);
+                catg catgVar = new catg();
+                catgVar.w(AdservicesStatusService.class.getName());
+                catgVar.q("AdservicesStatusTask");
+                catgVar.v(2);
+                catgVar.l(false);
+                catgVar.a = catn.j;
+                a2.f(catgVar.b());
                 return;
             }
-            bykm bykmVar = new bykm();
-            bykmVar.w(AdservicesStatusService.class.getName());
-            bykmVar.t("AdservicesStatusTask");
-            bykmVar.j(byki.EVERY_DAY);
-            bykmVar.v(1);
-            bykmVar.p = true;
-            bykmVar.y(2, 2);
-            byjl.a(this).f(bykmVar.b());
+            cate cateVar = new cate();
+            cateVar.w(AdservicesStatusService.class.getName());
+            cateVar.t("AdservicesStatusTask");
+            cateVar.j(cata.EVERY_DAY);
+            cateVar.v(1);
+            cateVar.p = true;
+            cateVar.y(2, 2);
+            casd.a(this).f(cateVar.b());
         }
     }
 }

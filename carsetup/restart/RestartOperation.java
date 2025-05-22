@@ -6,48 +6,48 @@ import android.os.IInterface;
 import android.os.RemoteException;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.carsetup.BinderParcel;
-import defpackage.albn;
-import defpackage.alrj;
-import defpackage.alrl;
-import defpackage.alrw;
-import defpackage.alvu;
-import defpackage.eiig;
-import defpackage.ejhh;
+import defpackage.ancy;
+import defpackage.ansu;
+import defpackage.answ;
+import defpackage.anth;
+import defpackage.anxf;
+import defpackage.ekvl;
+import defpackage.eluq;
 import java.util.concurrent.Semaphore;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class RestartOperation extends IntentOperation {
-    public static final ejhh a = albn.a("CAR.SETUP.RESTART");
+    public static final eluq a = ancy.a("CAR.SETUP.RESTART");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        alrl alrjVar;
-        a.h().ah(2863).x("Beginning restart process");
+        answ ansuVar;
+        a.h().ai(2867).x("Beginning restart process");
         BinderParcel binderParcel = (BinderParcel) intent.getParcelableExtra("binder");
-        eiig.x(binderParcel);
+        ekvl.y(binderParcel);
         Semaphore semaphore = new Semaphore(0);
         IBinder iBinder = binderParcel.a;
         try {
-            iBinder.linkToDeath(new alvu(semaphore, iBinder), 0);
+            iBinder.linkToDeath(new anxf(semaphore, iBinder), 0);
             if (iBinder == null) {
-                alrjVar = null;
+                ansuVar = null;
             } else {
                 IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.carsetup.IRestartCallback");
-                alrjVar = queryLocalInterface instanceof alrl ? (alrl) queryLocalInterface : new alrj(iBinder);
+                ansuVar = queryLocalInterface instanceof answ ? (answ) queryLocalInterface : new ansu(iBinder);
             }
-            alrjVar.a();
+            ansuVar.a();
         } catch (RemoteException unused) {
             semaphore.release();
         }
-        ejhh ejhhVar = a;
-        ejhhVar.h().ah(2864).x("Waiting for remote death");
+        eluq eluqVar = a;
+        eluqVar.h().ai(2868).x("Waiting for remote death");
         semaphore.acquireUninterruptibly();
-        ejhhVar.h().ah(2865).x("Firing restart intent");
+        eluqVar.h().ai(2869).x("Firing restart intent");
         Intent intent2 = (Intent) intent.getParcelableExtra("restart_intent");
-        eiig.x(intent2);
+        ekvl.y(intent2);
         intent2.setFlags(intent2.getFlags() | 268435456);
-        intent2.putExtra("0p_checker", new BinderParcel(new alrw()));
+        intent2.putExtra("0p_checker", new BinderParcel(new anth()));
         startActivity(intent2);
     }
 }

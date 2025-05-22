@@ -3,14 +3,14 @@ package com.google.android.gms.wallet.analytics.events;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.difv;
-import defpackage.diks;
-import defpackage.divi;
+import defpackage.dkrg;
+import defpackage.dkwd;
+import defpackage.dlgt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class OcrResultReceivedEvent extends WalletAnalyticsEvent {
-    public static final Parcelable.Creator CREATOR = new difv();
+    public static final Parcelable.Creator CREATOR = new dkrg();
     public final boolean a;
     public final boolean b;
     public final boolean c;
@@ -25,7 +25,7 @@ public class OcrResultReceivedEvent extends WalletAnalyticsEvent {
     }
 
     public static void a(Context context, int i, boolean z, boolean z2, boolean z3, String str) {
-        divi.a(context, new OcrResultReceivedEvent(i, z, z2, z3, str));
+        dlgt.a(context, new OcrResultReceivedEvent(i, z, z2, z3, str));
     }
 
     @Override // android.os.Parcelable
@@ -44,7 +44,7 @@ public class OcrResultReceivedEvent extends WalletAnalyticsEvent {
 
     public OcrResultReceivedEvent(Parcel parcel) {
         super(parcel);
-        this.d = diks.a(parcel.readInt());
+        this.d = dkwd.a(parcel.readInt());
         this.a = parcel.readByte() != 0;
         this.b = parcel.readByte() != 0;
         this.c = parcel.readByte() != 0;

@@ -2,92 +2,92 @@ package com.google.android.gms.gcm;
 
 import android.util.Log;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.bhwq;
-import defpackage.bhwt;
-import defpackage.bhwz;
-import defpackage.biad;
-import defpackage.bial;
-import defpackage.biew;
-import defpackage.bihd;
-import defpackage.bilf;
-import defpackage.bilg;
-import defpackage.byln;
-import defpackage.eiid;
-import defpackage.eitj;
-import defpackage.ejfh;
-import defpackage.feab;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.feeq;
-import defpackage.foid;
-import defpackage.fojc;
-import defpackage.fzai;
+import defpackage.bkbf;
+import defpackage.bkbi;
+import defpackage.bkbo;
+import defpackage.bkes;
+import defpackage.bkfa;
+import defpackage.bkjl;
+import defpackage.bkls;
+import defpackage.bkpu;
+import defpackage.bkpv;
+import defpackage.cauf;
+import defpackage.ekvi;
+import defpackage.elgo;
+import defpackage.elso;
+import defpackage.fgou;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fgtj;
+import defpackage.frau;
+import defpackage.frbt;
+import defpackage.gbxc;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class BackgroundTaskService extends GmsTaskChimeraService {
     /* JADX WARN: Multi-variable type inference failed */
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        String str = bylnVar.a;
+    public final int a(cauf caufVar) {
+        String str = caufVar.a;
         if (Objects.equals(str, "PersistConnectionInfos")) {
-            bhwz.b().j().d();
+            bkbo.b().j().d();
         } else if (Objects.equals(str, "LogPhenotypeExperimentIds")) {
-            bhwz.b().c().b(bilg.a, null);
+            bkbo.b().c().b(bkpv.a, null);
         } else if (Objects.equals(str, "affinityUpdateTask")) {
-            biad i = bhwz.b().i();
-            if (foid.d()) {
-                fzai d = fzai.d(foid.a.a().c());
-                biew biewVar = i.a;
-                ejfh it = ((eitj) biewVar.f()).iterator();
+            bkes i = bkbo.b().i();
+            if (frau.d()) {
+                gbxc d = gbxc.d(frau.a.lK().c());
+                bkjl bkjlVar = i.a;
+                elso it = ((elgo) bkjlVar.f()).iterator();
                 while (it.hasNext()) {
-                    bhwt bhwtVar = (bhwt) it.next();
-                    fojc.G();
-                    bilf bilfVar = (bilf) bilg.a.v();
-                    fojc.G();
-                    if (((bilg) bilfVar.b).d.size() > 0) {
-                        i.c.b((bilg) bilfVar.Q(), null);
+                    bkbi bkbiVar = (bkbi) it.next();
+                    frbt.F();
+                    bkpu bkpuVar = (bkpu) bkpv.a.v();
+                    frbt.F();
+                    if (((bkpv) bkpuVar.b).d.size() > 0) {
+                        i.c.b((bkpv) bkpuVar.Q(), null);
                     }
-                    fecj fecjVar = (fecj) bhwtVar.iB(5, null);
-                    fecjVar.X(bhwtVar);
+                    fgrc fgrcVar = (fgrc) bkbiVar.iQ(5, null);
+                    fgrcVar.X(bkbiVar);
                     ArrayList arrayList = new ArrayList();
                     boolean z = false;
-                    for (bhwq bhwqVar : DesugarCollections.unmodifiableList(((bhwt) fecjVar.b).i)) {
-                        if (System.currentTimeMillis() - bhwqVar.c < d.b) {
-                            arrayList.add(bhwqVar);
+                    for (bkbf bkbfVar : DesugarCollections.unmodifiableList(((bkbi) fgrcVar.b).i)) {
+                        if (System.currentTimeMillis() - bkbfVar.c < d.b) {
+                            arrayList.add(bkbfVar);
                         } else {
                             z = true;
                         }
                     }
-                    if (!fecjVar.b.L()) {
-                        fecjVar.U();
+                    if (!fgrcVar.b.L()) {
+                        fgrcVar.U();
                     }
-                    ((bhwt) fecjVar.b).i = feeq.a;
-                    if (!fecjVar.b.L()) {
-                        fecjVar.U();
+                    ((bkbi) fgrcVar.b).i = fgtj.a;
+                    if (!fgrcVar.b.L()) {
+                        fgrcVar.U();
                     }
-                    bhwt bhwtVar2 = (bhwt) fecjVar.b;
-                    fedh fedhVar = bhwtVar2.i;
-                    if (!fedhVar.c()) {
-                        bhwtVar2.i = fecp.E(fedhVar);
+                    bkbi bkbiVar2 = (bkbi) fgrcVar.b;
+                    fgsa fgsaVar = bkbiVar2.i;
+                    if (!fgsaVar.c()) {
+                        bkbiVar2.i = fgri.E(fgsaVar);
                     }
-                    feab.E(arrayList, bhwtVar2.i);
+                    fgou.E(arrayList, bkbiVar2.i);
                     if (z) {
-                        bhwt bhwtVar3 = (bhwt) fecjVar.Q();
-                        biewVar.i(bhwtVar3);
+                        bkbi bkbiVar3 = (bkbi) fgrcVar.Q();
+                        bkjlVar.i(bkbiVar3);
                         Iterator it2 = i.b.iterator();
                         while (it2.hasNext()) {
-                            bial bialVar = ((bihd) it2.next()).a;
-                            eiid e = bial.e(bhwtVar3);
+                            bkfa bkfaVar = ((bkls) it2.next()).a;
+                            ekvi e = bkfa.e(bkbiVar3);
                             if (e.h()) {
-                                bialVar.k(bial.b(bhwtVar3), ((Double) e.c()).doubleValue());
+                                bkfaVar.k(bkfa.b(bkbiVar3), ((Double) e.c()).doubleValue());
                             } else {
-                                bialVar.i(bial.b(bhwtVar3));
+                                bkfaVar.i(bkfa.b(bkbiVar3));
                             }
                         }
                     }

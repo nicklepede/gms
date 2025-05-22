@@ -8,17 +8,17 @@ import com.google.android.gms.games.GameEntity;
 import com.google.android.gms.games.Player;
 import com.google.android.gms.games.PlayerEntity;
 import com.google.android.gms.games.internal.GamesAbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bhsd;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bjws;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class SnapshotMetadataEntity extends GamesAbstractSafeParcelable implements SnapshotMetadata {
-    public static final Parcelable.Creator CREATOR = new bhsd();
+    public static final Parcelable.Creator CREATOR = new bjws();
     public final GameEntity a;
     public final PlayerEntity b;
     public final String c;
@@ -84,7 +84,7 @@ public final class SnapshotMetadataEntity extends GamesAbstractSafeParcelable im
             return true;
         }
         SnapshotMetadata snapshotMetadata = (SnapshotMetadata) obj;
-        return arwb.b(snapshotMetadata.f(), this.a) && arwb.b(snapshotMetadata.g(), this.b) && arwb.b(snapshotMetadata.j(), this.c) && arwb.b(snapshotMetadata.e(), this.d) && arwb.b(Float.valueOf(snapshotMetadata.a()), Float.valueOf(this.j)) && arwb.b(snapshotMetadata.k(), this.f) && arwb.b(snapshotMetadata.h(), this.g) && arwb.b(Long.valueOf(snapshotMetadata.b()), Long.valueOf(this.h)) && arwb.b(Long.valueOf(snapshotMetadata.c()), Long.valueOf(this.i)) && arwb.b(snapshotMetadata.m(), this.k) && arwb.b(Boolean.valueOf(snapshotMetadata.n()), Boolean.valueOf(this.l)) && arwb.b(Long.valueOf(snapshotMetadata.d()), Long.valueOf(this.m)) && arwb.b(snapshotMetadata.i(), this.n);
+        return atyq.b(snapshotMetadata.f(), this.a) && atyq.b(snapshotMetadata.g(), this.b) && atyq.b(snapshotMetadata.j(), this.c) && atyq.b(snapshotMetadata.e(), this.d) && atyq.b(Float.valueOf(snapshotMetadata.a()), Float.valueOf(this.j)) && atyq.b(snapshotMetadata.k(), this.f) && atyq.b(snapshotMetadata.h(), this.g) && atyq.b(Long.valueOf(snapshotMetadata.b()), Long.valueOf(this.h)) && atyq.b(Long.valueOf(snapshotMetadata.c()), Long.valueOf(this.i)) && atyq.b(snapshotMetadata.m(), this.k) && atyq.b(Boolean.valueOf(snapshotMetadata.n()), Boolean.valueOf(this.l)) && atyq.b(Long.valueOf(snapshotMetadata.d()), Long.valueOf(this.m)) && atyq.b(snapshotMetadata.i(), this.n);
     }
 
     @Override // com.google.android.gms.games.snapshot.SnapshotMetadata
@@ -133,41 +133,41 @@ public final class SnapshotMetadataEntity extends GamesAbstractSafeParcelable im
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("Game", this.a, arrayList);
-        arwa.b("Owner", this.b, arrayList);
-        arwa.b("SnapshotId", this.c, arrayList);
-        arwa.b("CoverImageUri", this.d, arrayList);
-        arwa.b("CoverImageUrl", this.e, arrayList);
-        arwa.b("CoverImageAspectRatio", Float.valueOf(this.j), arrayList);
-        arwa.b("Description", this.g, arrayList);
-        arwa.b("LastModifiedTimestamp", Long.valueOf(this.h), arrayList);
-        arwa.b("PlayedTime", Long.valueOf(this.i), arrayList);
-        arwa.b("UniqueName", this.k, arrayList);
-        arwa.b("ChangePending", Boolean.valueOf(this.l), arrayList);
-        arwa.b("ProgressValue", Long.valueOf(this.m), arrayList);
-        arwa.b("DeviceName", this.n, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("Game", this.a, arrayList);
+        atyp.b("Owner", this.b, arrayList);
+        atyp.b("SnapshotId", this.c, arrayList);
+        atyp.b("CoverImageUri", this.d, arrayList);
+        atyp.b("CoverImageUrl", this.e, arrayList);
+        atyp.b("CoverImageAspectRatio", Float.valueOf(this.j), arrayList);
+        atyp.b("Description", this.g, arrayList);
+        atyp.b("LastModifiedTimestamp", Long.valueOf(this.h), arrayList);
+        atyp.b("PlayedTime", Long.valueOf(this.i), arrayList);
+        atyp.b("UniqueName", this.k, arrayList);
+        atyp.b("ChangePending", Boolean.valueOf(this.l), arrayList);
+        atyp.b("ProgressValue", Long.valueOf(this.m), arrayList);
+        atyp.b("DeviceName", this.n, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         GameEntity gameEntity = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, gameEntity, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.v(parcel, 8, this.g, false);
-        arxc.q(parcel, 9, this.h);
-        arxc.q(parcel, 10, this.i);
-        arxc.l(parcel, 11, this.j);
-        arxc.v(parcel, 12, this.k, false);
-        arxc.e(parcel, 13, this.l);
-        arxc.q(parcel, 14, this.m);
-        arxc.v(parcel, 15, this.n, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, gameEntity, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.v(parcel, 8, this.g, false);
+        atzr.q(parcel, 9, this.h);
+        atzr.q(parcel, 10, this.i);
+        atzr.l(parcel, 11, this.j);
+        atzr.v(parcel, 12, this.k, false);
+        atzr.e(parcel, 13, this.l);
+        atzr.q(parcel, 14, this.m);
+        atzr.v(parcel, 15, this.n, false);
+        atzr.c(parcel, a);
     }
 
     public SnapshotMetadataEntity(SnapshotMetadata snapshotMetadata) {
@@ -189,7 +189,7 @@ public final class SnapshotMetadataEntity extends GamesAbstractSafeParcelable im
         this.n = snapshotMetadataEntity.n;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

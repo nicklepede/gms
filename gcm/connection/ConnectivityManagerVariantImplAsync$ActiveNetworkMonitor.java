@@ -3,31 +3,31 @@ package com.google.android.gms.gcm.connection;
 import android.net.Network;
 import android.net.NetworkCapabilities;
 import com.google.android.gms.framework.tracing.wrapper.NetworkCallbackWrapper;
-import defpackage.bibj;
-import defpackage.bibl;
-import defpackage.bicm;
+import defpackage.bkfy;
+import defpackage.bkga;
+import defpackage.bkhb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class ConnectivityManagerVariantImplAsync$ActiveNetworkMonitor extends NetworkCallbackWrapper {
     public static final /* synthetic */ int b = 0;
-    public volatile bicm a;
-    private final bibj c;
+    public volatile bkhb a;
+    private final bkfy c;
 
-    public ConnectivityManagerVariantImplAsync$ActiveNetworkMonitor(bibj bibjVar) {
+    public ConnectivityManagerVariantImplAsync$ActiveNetworkMonitor(bkfy bkfyVar) {
         super("gcm", "ActiveNetworkMonitor");
-        this.c = bibjVar;
+        this.c = bkfyVar;
     }
 
     @Override // com.google.android.gms.framework.tracing.wrapper.NetworkCallbackWrapper
     public final void b(Network network, NetworkCapabilities networkCapabilities) {
-        bicm e = bibl.e(network, networkCapabilities);
+        bkhb e = bkga.e(network, networkCapabilities);
         if (e.equals(this.a)) {
             return;
         }
-        bicm bicmVar = this.a;
+        bkhb bkhbVar = this.a;
         this.a = e;
-        this.c.a(bicmVar, e);
+        this.c.a(bkhbVar, e);
     }
 
     @Override // com.google.android.gms.framework.tracing.wrapper.NetworkCallbackWrapper
@@ -35,8 +35,8 @@ public class ConnectivityManagerVariantImplAsync$ActiveNetworkMonitor extends Ne
         if (this.a == null || !network.equals(this.a.a.c())) {
             return;
         }
-        bicm bicmVar = this.a;
+        bkhb bkhbVar = this.a;
         this.a = null;
-        this.c.a(bicmVar, null);
+        this.c.a(bkhbVar, null);
     }
 }

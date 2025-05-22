@@ -1,6 +1,6 @@
 package com.google.android.gms.ads.cache.io;
 
-import defpackage.aspm;
+import defpackage.autg;
 import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class e implements Closeable {
     public final Object a = new Object();
@@ -54,7 +54,7 @@ public class e implements Closeable {
             d();
             OutputStream outputStream = this.c;
             if (outputStream != null) {
-                aspm.b(outputStream);
+                autg.b(outputStream);
             }
             f();
             this.d.setLength(0L);
@@ -89,7 +89,7 @@ public class e implements Closeable {
         Set set = this.e;
         Iterator it = set.iterator();
         while (it.hasNext()) {
-            aspm.b((InputStream) it.next());
+            autg.b((InputStream) it.next());
         }
         set.clear();
     }

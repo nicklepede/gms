@@ -2,17 +2,17 @@ package com.google.android.gms.fido.fido2.api.view;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arxc;
-import defpackage.bbwa;
-import defpackage.bbwe;
+import defpackage.atzr;
+import defpackage.bdzs;
+import defpackage.bdzw;
 import java.util.Arrays;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class NfcViewOptions extends ViewOptions {
-    public static final Parcelable.Creator CREATOR = new bbwa();
+    public static final Parcelable.Creator CREATOR = new bdzs();
     public final boolean a;
     public final boolean b;
 
@@ -20,7 +20,7 @@ public class NfcViewOptions extends ViewOptions {
         this(false, false);
     }
 
-    @Override // com.google.android.gms.fido.fido2.api.view.ViewOptions, defpackage.bbji
+    @Override // com.google.android.gms.fido.fido2.api.view.ViewOptions, defpackage.bdnf
     public final JSONObject a() {
         JSONObject a = super.a();
         try {
@@ -33,8 +33,8 @@ public class NfcViewOptions extends ViewOptions {
     }
 
     @Override // com.google.android.gms.fido.fido2.api.view.ViewOptions
-    public final bbwe b() {
-        return bbwe.NFC;
+    public final bdzw b() {
+        return bdzw.NFC;
     }
 
     public final boolean equals(Object obj) {
@@ -52,10 +52,10 @@ public class NfcViewOptions extends ViewOptions {
     @Override // com.google.android.gms.fido.fido2.api.view.ViewOptions, android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.a;
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 2, z);
-        arxc.e(parcel, 3, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 2, z);
+        atzr.e(parcel, 3, this.b);
+        atzr.c(parcel, a);
     }
 
     public NfcViewOptions(boolean z, boolean z2) {

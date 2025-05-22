@@ -3,18 +3,18 @@ package com.google.android.gms.romanesco.protomodel;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cxpt;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.czzq;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class BackedUpContactsPerDeviceEntity extends AbstractSafeParcelable implements BackedUpContactsPerDevice {
-    public static final Parcelable.Creator CREATOR = new cxpt();
+    public static final Parcelable.Creator CREATOR = new czzq();
     public final String a;
     public final Long b;
     public final String c;
@@ -67,7 +67,7 @@ public class BackedUpContactsPerDeviceEntity extends AbstractSafeParcelable impl
             return true;
         }
         BackedUpContactsPerDevice backedUpContactsPerDevice = (BackedUpContactsPerDevice) obj;
-        return arwb.b(f(), backedUpContactsPerDevice.f()) && arwb.b(b(), backedUpContactsPerDevice.b()) && arwb.b(g(), backedUpContactsPerDevice.g()) && arwb.b(e(), backedUpContactsPerDevice.e()) && arwb.b(d(), backedUpContactsPerDevice.d()) && arwb.b(c(), backedUpContactsPerDevice.c()) && arwb.b(a(), backedUpContactsPerDevice.a());
+        return atyq.b(f(), backedUpContactsPerDevice.f()) && atyq.b(b(), backedUpContactsPerDevice.b()) && atyq.b(g(), backedUpContactsPerDevice.g()) && atyq.b(e(), backedUpContactsPerDevice.e()) && atyq.b(d(), backedUpContactsPerDevice.d()) && atyq.b(c(), backedUpContactsPerDevice.c()) && atyq.b(a(), backedUpContactsPerDevice.a());
     }
 
     @Override // com.google.android.gms.romanesco.protomodel.BackedUpContactsPerDevice
@@ -95,15 +95,15 @@ public class BackedUpContactsPerDeviceEntity extends AbstractSafeParcelable impl
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.y(parcel, 3, g(), false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.I(parcel, 5, this.d);
-        arxc.I(parcel, 6, this.e);
-        arxc.I(parcel, 7, this.b);
-        arxc.t(parcel, 8, this.f, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.y(parcel, 3, g(), false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.I(parcel, 5, this.d);
+        atzr.I(parcel, 6, this.e);
+        atzr.I(parcel, 7, this.b);
+        atzr.t(parcel, 8, this.f, i, false);
+        atzr.c(parcel, a);
     }
 
     public BackedUpContactsPerDeviceEntity(String str, Long l, List list, String str2, Long l2, Long l3, DeviceVersion deviceVersion, boolean z) {
@@ -140,7 +140,7 @@ public class BackedUpContactsPerDeviceEntity extends AbstractSafeParcelable impl
         this.f = (DeviceVersionEntity) deviceVersion;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

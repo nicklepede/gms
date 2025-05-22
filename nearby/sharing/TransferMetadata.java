@@ -5,19 +5,19 @@ import android.os.Parcelable;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmca;
-import defpackage.cmcb;
-import defpackage.eiuu;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.coki;
+import defpackage.cokj;
+import defpackage.elhz;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class TransferMetadata extends AbstractSafeParcelable implements Cloneable, ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new cmcb();
+    public static final Parcelable.Creator CREATOR = new cokj();
     public final int a;
     public final float b;
     public final String c;
@@ -117,27 +117,27 @@ public class TransferMetadata extends AbstractSafeParcelable implements Cloneabl
         }
     }
 
-    public final cmca a() {
-        cmca cmcaVar = new cmca(this.a);
-        cmcaVar.b = this.b;
-        cmcaVar.c = this.c;
-        cmcaVar.d = this.d;
-        cmcaVar.e = this.f;
-        cmcaVar.f = this.g;
-        cmcaVar.g = this.i;
-        cmcaVar.h = this.m;
-        cmcaVar.i = this.j;
-        cmcaVar.j.addAll(this.k);
-        cmcaVar.s = this.l;
-        cmcaVar.k = this.h;
-        cmcaVar.l = this.n;
-        cmcaVar.m = this.o;
-        cmcaVar.n = this.p;
-        cmcaVar.o = this.q;
-        cmcaVar.p = this.r;
-        cmcaVar.q = this.s;
-        cmcaVar.r = this.t;
-        return cmcaVar;
+    public final coki a() {
+        coki cokiVar = new coki(this.a);
+        cokiVar.b = this.b;
+        cokiVar.c = this.c;
+        cokiVar.d = this.d;
+        cokiVar.e = this.f;
+        cokiVar.f = this.g;
+        cokiVar.g = this.i;
+        cokiVar.h = this.m;
+        cokiVar.i = this.j;
+        cokiVar.j.addAll(this.k);
+        cokiVar.s = this.l;
+        cokiVar.k = this.h;
+        cokiVar.l = this.n;
+        cokiVar.m = this.o;
+        cokiVar.n = this.p;
+        cokiVar.o = this.q;
+        cokiVar.p = this.r;
+        cokiVar.q = this.s;
+        cokiVar.r = this.t;
+        return cokiVar;
     }
 
     /* renamed from: b, reason: merged with bridge method [inline-methods] */
@@ -156,7 +156,7 @@ public class TransferMetadata extends AbstractSafeParcelable implements Cloneabl
     public final boolean equals(Object obj) {
         if (obj instanceof TransferMetadata) {
             TransferMetadata transferMetadata = (TransferMetadata) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(transferMetadata.a)) && arwb.b(Float.valueOf(this.b), Float.valueOf(transferMetadata.b)) && arwb.b(this.c, transferMetadata.c) && arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(transferMetadata.d)) && arwb.b(Boolean.valueOf(this.e), Boolean.valueOf(transferMetadata.e)) && arwb.b(Boolean.valueOf(this.m), Boolean.valueOf(transferMetadata.m)) && arwb.b(Integer.valueOf(this.f), Integer.valueOf(transferMetadata.f)) && arwb.b(Integer.valueOf(this.g), Integer.valueOf(transferMetadata.g)) && arwb.b(Boolean.valueOf(this.i), Boolean.valueOf(transferMetadata.i)) && arwb.b(Integer.valueOf(this.j), Integer.valueOf(transferMetadata.j)) && arwb.b(this.k, transferMetadata.k) && arwb.b(this.l, transferMetadata.l) && arwb.b(Integer.valueOf(this.n), Integer.valueOf(transferMetadata.n)) && arwb.b(Integer.valueOf(this.o), Integer.valueOf(transferMetadata.o)) && arwb.b(Integer.valueOf(this.p), Integer.valueOf(transferMetadata.p)) && arwb.b(Integer.valueOf(this.q), Integer.valueOf(transferMetadata.q)) && arwb.b(Integer.valueOf(this.r), Integer.valueOf(transferMetadata.r)) && arwb.b(Long.valueOf(this.s), Long.valueOf(transferMetadata.s))) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(transferMetadata.a)) && atyq.b(Float.valueOf(this.b), Float.valueOf(transferMetadata.b)) && atyq.b(this.c, transferMetadata.c) && atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(transferMetadata.d)) && atyq.b(Boolean.valueOf(this.e), Boolean.valueOf(transferMetadata.e)) && atyq.b(Boolean.valueOf(this.m), Boolean.valueOf(transferMetadata.m)) && atyq.b(Integer.valueOf(this.f), Integer.valueOf(transferMetadata.f)) && atyq.b(Integer.valueOf(this.g), Integer.valueOf(transferMetadata.g)) && atyq.b(Boolean.valueOf(this.i), Boolean.valueOf(transferMetadata.i)) && atyq.b(Integer.valueOf(this.j), Integer.valueOf(transferMetadata.j)) && atyq.b(this.k, transferMetadata.k) && atyq.b(this.l, transferMetadata.l) && atyq.b(Integer.valueOf(this.n), Integer.valueOf(transferMetadata.n)) && atyq.b(Integer.valueOf(this.o), Integer.valueOf(transferMetadata.o)) && atyq.b(Integer.valueOf(this.p), Integer.valueOf(transferMetadata.p)) && atyq.b(Integer.valueOf(this.q), Integer.valueOf(transferMetadata.q)) && atyq.b(Integer.valueOf(this.r), Integer.valueOf(transferMetadata.r)) && atyq.b(Long.valueOf(this.s), Long.valueOf(transferMetadata.s))) {
                 return true;
             }
         }
@@ -180,33 +180,33 @@ public class TransferMetadata extends AbstractSafeParcelable implements Cloneabl
         Long valueOf7 = Long.valueOf(this.h);
         Boolean valueOf8 = Boolean.valueOf(this.i);
         int i = this.j;
-        return String.format(locale, "TransferMetadata<status: %s, progress: %s, token: %s, isOriginal: %s, isFinalStatus: %s, isInitialStatus: %s,  sessionId: %s, position: %s, timeStamp: %s, isSelfShare: %s, useCase: %s, completedAttachmentIds: %s, inProgressAttachmentId: %s, connectionMode: %s, connectionMedium: %s>, mediumFrequency: %s, localStaFrequency: %s, remoteStaFrequency: %s, remainingBytes: %s>", c, valueOf, str, valueOf2, valueOf3, valueOf4, valueOf5, valueOf6, valueOf7, valueOf8, i != 0 ? i != 1 ? "INVALID_USE_CASE" : "REMOTE_COPY" : "NEARBY_SHARE", eiuu.G(this.k), this.l, Integer.valueOf(this.n), Integer.valueOf(this.o), Integer.valueOf(this.p), Integer.valueOf(this.q), Integer.valueOf(this.r), Long.valueOf(this.s));
+        return String.format(locale, "TransferMetadata<status: %s, progress: %s, token: %s, isOriginal: %s, isFinalStatus: %s, isInitialStatus: %s,  sessionId: %s, position: %s, timeStamp: %s, isSelfShare: %s, useCase: %s, completedAttachmentIds: %s, inProgressAttachmentId: %s, connectionMode: %s, connectionMedium: %s>, mediumFrequency: %s, localStaFrequency: %s, remoteStaFrequency: %s, remainingBytes: %s>", c, valueOf, str, valueOf2, valueOf3, valueOf4, valueOf5, valueOf6, valueOf7, valueOf8, i != 0 ? i != 1 ? "INVALID_USE_CASE" : "REMOTE_COPY" : "NEARBY_SHARE", elhz.G(this.k), this.l, Integer.valueOf(this.n), Integer.valueOf(this.o), Integer.valueOf(this.p), Integer.valueOf(this.q), Integer.valueOf(this.r), Long.valueOf(this.s));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.l(parcel, 2, this.b);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.o(parcel, 7, this.g);
-        arxc.q(parcel, 8, this.h);
-        arxc.e(parcel, 9, this.i);
-        arxc.o(parcel, 10, this.j);
-        arxc.H(parcel, 11, this.k);
-        arxc.I(parcel, 12, this.l);
-        arxc.e(parcel, 13, this.m);
-        arxc.o(parcel, 14, this.n);
-        arxc.o(parcel, 15, this.o);
-        arxc.o(parcel, 16, this.p);
-        arxc.o(parcel, 17, this.q);
-        arxc.o(parcel, 18, this.r);
-        arxc.q(parcel, 19, this.s);
-        arxc.y(parcel, 20, this.t, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.l(parcel, 2, this.b);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.o(parcel, 7, this.g);
+        atzr.q(parcel, 8, this.h);
+        atzr.e(parcel, 9, this.i);
+        atzr.o(parcel, 10, this.j);
+        atzr.H(parcel, 11, this.k);
+        atzr.I(parcel, 12, this.l);
+        atzr.e(parcel, 13, this.m);
+        atzr.o(parcel, 14, this.n);
+        atzr.o(parcel, 15, this.o);
+        atzr.o(parcel, 16, this.p);
+        atzr.o(parcel, 17, this.q);
+        atzr.o(parcel, 18, this.r);
+        atzr.q(parcel, 19, this.s);
+        atzr.y(parcel, 20, this.t, false);
+        atzr.c(parcel, a);
     }
 }

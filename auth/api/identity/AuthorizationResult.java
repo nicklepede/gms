@@ -5,17 +5,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zch;
+import defpackage.abcb;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AuthorizationResult extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zch();
+    public static final Parcelable.Creator CREATOR = new abcb();
     public final String a;
     public final String b;
     public final String c;
@@ -27,7 +27,7 @@ public final class AuthorizationResult extends AbstractSafeParcelable {
         this.a = str;
         this.b = str2;
         this.c = str3;
-        arwm.s(list);
+        atzb.s(list);
         this.d = list;
         this.f = pendingIntent;
         this.e = googleSignInAccount;
@@ -38,7 +38,7 @@ public final class AuthorizationResult extends AbstractSafeParcelable {
             return false;
         }
         AuthorizationResult authorizationResult = (AuthorizationResult) obj;
-        return arwb.b(this.a, authorizationResult.a) && arwb.b(this.b, authorizationResult.b) && arwb.b(this.c, authorizationResult.c) && arwb.b(this.d, authorizationResult.d) && arwb.b(this.f, authorizationResult.f) && arwb.b(this.e, authorizationResult.e);
+        return atyq.b(this.a, authorizationResult.a) && atyq.b(this.b, authorizationResult.b) && atyq.b(this.c, authorizationResult.c) && atyq.b(this.d, authorizationResult.d) && atyq.b(this.f, authorizationResult.f) && atyq.b(this.e, authorizationResult.e);
     }
 
     public final int hashCode() {
@@ -48,13 +48,13 @@ public final class AuthorizationResult extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.x(parcel, 4, this.d, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.x(parcel, 4, this.d, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.c(parcel, a);
     }
 }

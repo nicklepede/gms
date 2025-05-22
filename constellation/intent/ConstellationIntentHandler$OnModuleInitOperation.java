@@ -4,63 +4,63 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteException;
 import com.google.android.gms.constellation.storage.gaialifecycle.ConstellationRoomDatabase;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.asxf;
-import defpackage.asxi;
-import defpackage.asxj;
-import defpackage.asys;
-import defpackage.aszj;
-import defpackage.bqvy;
-import defpackage.fmli;
-import defpackage.fmml;
-import defpackage.fvbo;
-import defpackage.knr;
-import defpackage.kpe;
-import defpackage.kro;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.avbi;
+import defpackage.avbl;
+import defpackage.avbm;
+import defpackage.avcv;
+import defpackage.avdm;
+import defpackage.btdp;
+import defpackage.fpcz;
+import defpackage.fpeg;
+import defpackage.fxxm;
+import defpackage.mgc;
+import defpackage.mhp;
+import defpackage.mkd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class ConstellationIntentHandler$OnModuleInitOperation extends anya {
+public class ConstellationIntentHandler$OnModuleInitOperation extends apzs {
     private final void e() {
         try {
-            asys d = asys.d(getBaseContext());
+            avcv d = avcv.d(getBaseContext());
             try {
                 synchronized (d) {
-                    if (d.getWritableDatabase().getVersion() != asys.c()) {
-                        asxj.a.f("Failed to update database", new Object[0]);
+                    if (d.getWritableDatabase().getVersion() != avcv.c()) {
+                        avbm.a.f("Failed to update database", new Object[0]);
                     }
                 }
                 if (d != null) {
                     d.close();
                 }
-                if (!fmli.c()) {
-                    asxj.a.f("c11n room database connot be created.", new Object[0]);
+                if (!fpcz.c()) {
+                    avbm.a.f("c11n room database connot be created.", new Object[0]);
                     return;
                 }
-                aszj aszjVar = ConstellationRoomDatabase.l;
+                avdm avdmVar = ConstellationRoomDatabase.m;
                 Context baseContext = getBaseContext();
-                fvbo.f(baseContext, "context");
-                ConstellationRoomDatabase constellationRoomDatabase = ConstellationRoomDatabase.m;
+                fxxm.f(baseContext, "context");
+                ConstellationRoomDatabase constellationRoomDatabase = ConstellationRoomDatabase.n;
                 if (constellationRoomDatabase == null) {
-                    synchronized (aszjVar) {
-                        kpe a = bqvy.a(baseContext.getApplicationContext(), ConstellationRoomDatabase.class, "constellation_room_database");
+                    synchronized (avdmVar) {
+                        mhp a = btdp.a(baseContext.getApplicationContext(), ConstellationRoomDatabase.class, "constellation_room_database");
                         a.g(false);
                         constellationRoomDatabase = (ConstellationRoomDatabase) a.a();
-                        ConstellationRoomDatabase.m = constellationRoomDatabase;
-                        fvbo.c(constellationRoomDatabase);
+                        ConstellationRoomDatabase.n = constellationRoomDatabase;
+                        fxxm.c(constellationRoomDatabase);
                     }
                 }
-                kro kroVar = constellationRoomDatabase.h;
-                knr knrVar = constellationRoomDatabase.k;
-                if (knrVar == null) {
-                    fvbo.j("connectionManager");
-                    knrVar = null;
+                mkd mkdVar = constellationRoomDatabase.h;
+                mgc mgcVar = constellationRoomDatabase.l;
+                if (mgcVar == null) {
+                    fxxm.j("connectionManager");
+                    mgcVar = null;
                 }
-                if (knrVar.c()) {
-                    asxj.a.d("c11n database is created and open", new Object[0]);
+                if (mgcVar.c()) {
+                    avbm.a.d("c11n database is created and open", new Object[0]);
                 } else {
-                    asxj.a.f("c11n database exists, but database is not open.", new Object[0]);
+                    avbm.a.f("c11n database exists, but database is not open.", new Object[0]);
                 }
             } finally {
             }
@@ -68,42 +68,42 @@ public class ConstellationIntentHandler$OnModuleInitOperation extends anya {
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
         e();
-        if (fmml.g()) {
-            asxi.c(getBaseContext()).g("MODULE_UPDATED_TRIGGER");
+        if (fpeg.g()) {
+            avbl.c(getBaseContext()).g("MODULE_UPDATED_TRIGGER");
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        asxj.a.h("on init with intent ".concat(String.valueOf(String.valueOf(intent))), new Object[0]);
-        asng.H(this, "com.google.android.gms.constellation.checker.RefreshGcmTaskService", true);
-        asng.H(this, "com.google.android.gms.constellation.ui.ConstellationSettingsActivity", true);
-        asng.H(this, "com.google.android.gms.constellation.ui.ConstellationWebSettingsActivity", true);
-        asng.H(this, "com.google.android.gms.constellation.ui.ConstellationDebugActivity", true);
-        asng.H(this, "com.google.android.gms.constellation.GcmBroadcastReceiver", true);
-        asng.H(this, "com.google.android.gms.constellation.ui.ApiConsentActivity", true);
-        asng.H(this, "com.google.android.gms.constellation.ui.ConstellationOnDemandConsentActivity", true);
-        asng.H(this, "com.google.android.gms.constellation.ui.ConstellationOnDemandConsentV2Activity", true);
-        asng.M("com.google.android.gms.constellation.ui.deeplink.DeepLinkEntryPointActivity", 1);
+        avbm.a.h("on init with intent ".concat(String.valueOf(String.valueOf(intent))), new Object[0]);
+        aura.H(this, "com.google.android.gms.constellation.checker.RefreshGcmTaskService", true);
+        aura.H(this, "com.google.android.gms.constellation.ui.ConstellationSettingsActivity", true);
+        aura.H(this, "com.google.android.gms.constellation.ui.ConstellationWebSettingsActivity", true);
+        aura.H(this, "com.google.android.gms.constellation.ui.ConstellationDebugActivity", true);
+        aura.H(this, "com.google.android.gms.constellation.GcmBroadcastReceiver", true);
+        aura.H(this, "com.google.android.gms.constellation.ui.ApiConsentActivity", true);
+        aura.H(this, "com.google.android.gms.constellation.ui.ConstellationOnDemandConsentActivity", true);
+        aura.H(this, "com.google.android.gms.constellation.ui.ConstellationOnDemandConsentV2Activity", true);
+        aura.M("com.google.android.gms.constellation.ui.deeplink.DeepLinkEntryPointActivity", 1);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
         e();
-        if (fmml.g()) {
-            asxi.c(getBaseContext()).g("CONTAINER_UPDATED_TRIGGER");
+        if (fpeg.g()) {
+            avbl.c(getBaseContext()).g("CONTAINER_UPDATED_TRIGGER");
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void d(Intent intent) {
-        asxj.a.h("Received onBootCompleted intent", new Object[0]);
-        new asxf(getBaseContext()).a();
-        if (fmml.g()) {
-            asxi.c(getBaseContext()).g("BOOT_COMPLETED_TRIGGER");
+        avbm.a.h("Received onBootCompleted intent", new Object[0]);
+        new avbi(getBaseContext()).a();
+        if (fpeg.g()) {
+            avbl.c(getBaseContext()).g("BOOT_COMPLETED_TRIGGER");
         }
     }
 }

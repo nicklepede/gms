@@ -11,19 +11,19 @@ import com.google.android.gms.auth.TokenData;
 import com.google.android.gms.auth.firstparty.shared.CaptchaChallenge;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aazo;
-import defpackage.abau;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.uoo;
+import defpackage.aczo;
+import defpackage.adau;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.wkn;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class TokenResponse extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new aazo();
+    public static final Parcelable.Creator CREATOR = new aczo();
     AuthzenBeginTxData A;
     public boolean B;
     final int a;
@@ -63,8 +63,8 @@ public class TokenResponse extends AbstractSafeParcelable implements ReflectedPa
         this.o = new ArrayList();
     }
 
-    public final abau a() {
-        return abau.a(this.c);
+    public final adau a() {
+        return adau.a(this.c);
     }
 
     public final List b() {
@@ -72,14 +72,14 @@ public class TokenResponse extends AbstractSafeParcelable implements ReflectedPa
     }
 
     public final void c(Account account) {
-        arwm.t(account, "Account can't be null.");
+        atzb.t(account, "Account can't be null.");
         this.u = account;
         this.b = account.name;
     }
 
-    public final void d(abau abauVar) {
-        arwm.s(abauVar);
-        this.c = abauVar.ak;
+    public final void d(adau adauVar) {
+        atzb.s(adauVar);
+        this.c = adauVar.ak;
     }
 
     public final void e(TokenData tokenData) {
@@ -94,36 +94,36 @@ public class TokenResponse extends AbstractSafeParcelable implements ReflectedPa
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.e(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.e(parcel, 12, this.l);
-        arxc.e(parcel, 13, this.m);
-        arxc.t(parcel, 14, this.n, i, false);
-        arxc.y(parcel, 15, this.o, false);
-        arxc.v(parcel, 16, this.p, false);
-        arxc.v(parcel, 17, this.q, false);
-        arxc.e(parcel, 19, this.r);
-        arxc.o(parcel, 20, this.s);
-        arxc.t(parcel, 21, this.t, i, false);
-        arxc.t(parcel, 22, this.u, i, false);
-        arxc.v(parcel, 26, this.v, false);
-        arxc.t(parcel, 27, this.w, i, false);
-        arxc.g(parcel, 28, this.x, false);
-        arxc.v(parcel, 29, this.y, false);
-        arxc.t(parcel, 30, this.z, i, false);
-        arxc.t(parcel, 31, this.A, i, false);
-        arxc.e(parcel, 32, this.B);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.e(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.e(parcel, 12, this.l);
+        atzr.e(parcel, 13, this.m);
+        atzr.t(parcel, 14, this.n, i, false);
+        atzr.y(parcel, 15, this.o, false);
+        atzr.v(parcel, 16, this.p, false);
+        atzr.v(parcel, 17, this.q, false);
+        atzr.e(parcel, 19, this.r);
+        atzr.o(parcel, 20, this.s);
+        atzr.t(parcel, 21, this.t, i, false);
+        atzr.t(parcel, 22, this.u, i, false);
+        atzr.v(parcel, 26, this.v, false);
+        atzr.t(parcel, 27, this.w, i, false);
+        atzr.g(parcel, 28, this.x, false);
+        atzr.v(parcel, 29, this.y, false);
+        atzr.t(parcel, 30, this.z, i, false);
+        atzr.t(parcel, 31, this.A, i, false);
+        atzr.e(parcel, 32, this.B);
+        atzr.c(parcel, a);
     }
 
     public TokenResponse(int i, String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, boolean z, boolean z2, boolean z3, boolean z4, CaptchaChallenge captchaChallenge, List list, String str9, String str10, boolean z5, int i2, PostSignInData postSignInData, Account account, String str11, TokenData tokenData, Bundle bundle, String str12, ResolutionData resolutionData, AuthzenBeginTxData authzenBeginTxData, boolean z6) {
@@ -162,9 +162,9 @@ public class TokenResponse extends AbstractSafeParcelable implements ReflectedPa
             c(new Account(str, "com.google"));
         }
         if (str3 != null && tokenData == null) {
-            uoo uooVar = new uoo();
-            uooVar.a = str3;
-            e(uooVar.a());
+            wkn wknVar = new wkn();
+            wknVar.a = str3;
+            e(wknVar.a());
             return;
         }
         e(tokenData);

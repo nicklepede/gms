@@ -1,6 +1,6 @@
 package com.google.android.gms.org.conscrypt;
 
-import defpackage.ctbc;
+import defpackage.cvkg;
 import java.lang.reflect.InvocationTargetException;
 import java.security.InvalidKeyException;
 import java.security.Key;
@@ -13,7 +13,7 @@ import java.security.spec.KeySpec;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OpenSslMlDsaKeyFactory extends KeyFactorySpi {
     private KeySpec makeRawKeySpec(byte[] bArr, Class cls) {
@@ -78,7 +78,7 @@ public final class OpenSslMlDsaKeyFactory extends KeyFactorySpi {
                 return makeRawKeySpec(openSslMlDsaPrivateKey.getSeed(), cls);
             }
         }
-        throw new InvalidKeySpecException(ctbc.a(cls, key));
+        throw new InvalidKeySpecException(cvkg.a(cls, key));
     }
 
     @Override // java.security.KeyFactorySpi

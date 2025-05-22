@@ -3,84 +3,84 @@ package com.google.android.gms.auth.authzen.transaction.workflows;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.chimera.modules.auth.authzen.phone.AppContextProvider;
-import defpackage.fecy;
-import defpackage.ffsu;
-import defpackage.ffti;
-import defpackage.fftl;
-import defpackage.fftv;
-import defpackage.fftw;
-import defpackage.zvl;
-import defpackage.zwn;
-import defpackage.zwo;
-import defpackage.zwt;
-import defpackage.zwx;
-import defpackage.zxb;
+import defpackage.abvl;
+import defpackage.abwn;
+import defpackage.abwo;
+import defpackage.abwt;
+import defpackage.abwx;
+import defpackage.abxb;
+import defpackage.fgrr;
+import defpackage.fihs;
+import defpackage.fiig;
+import defpackage.fiij;
+import defpackage.fiit;
+import defpackage.fiiu;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class PinConfirmationChimeraWorkflow extends zvl {
+public class PinConfirmationChimeraWorkflow extends abvl {
     public static final /* synthetic */ int A = 0;
 
-    public static Intent u(fftw fftwVar, String str, byte[] bArr) {
-        Intent a = a(fftwVar, str, bArr);
+    public static Intent u(fiiu fiiuVar, String str, byte[] bArr) {
+        Intent a = a(fiiuVar, str, bArr);
         a.setClassName(AppContextProvider.a(), "com.google.android.gms.auth.authzen.transaction.workflows.PinConfirmationWorkflow");
         return a;
     }
 
-    @Override // defpackage.zvl, defpackage.zwm
-    public final boolean n(zwx zwxVar, int i) {
-        if (!super.n(zwxVar, i)) {
-            String y = zwxVar.y();
-            if (zwt.a.equals(y)) {
+    @Override // defpackage.abvl, defpackage.abwm
+    public final boolean n(abwx abwxVar, int i) {
+        if (!super.n(abwxVar, i)) {
+            String y = abwxVar.y();
+            if (abwt.a.equals(y)) {
                 if (i == 0) {
                     r(2, false);
-                    fftv fftvVar = this.m.e;
-                    if (fftvVar == null) {
-                        fftvVar = fftv.b;
+                    fiit fiitVar = this.m.e;
+                    if (fiitVar == null) {
+                        fiitVar = fiit.b;
                     }
-                    ffsu ffsuVar = fftvVar.m;
-                    if (ffsuVar == null) {
-                        ffsuVar = ffsu.a;
+                    fihs fihsVar = fiitVar.m;
+                    if (fihsVar == null) {
+                        fihsVar = fihs.a;
                     }
-                    if (((fftl) ffsuVar.c.get(0)).f && this.y == 46) {
+                    if (((fiij) fihsVar.c.get(0)).f && this.y == 46) {
                         r(604, false);
-                        t(ffti.APPROVE_SELECTED, 2);
-                        f(this.j.getString(zxb.g));
+                        t(fiig.APPROVE_SELECTED, 2);
+                        f(this.j.getString(abxb.g));
                         return true;
                     }
-                    fftv fftvVar2 = this.m.e;
-                    if (fftvVar2 == null) {
-                        fftvVar2 = fftv.b;
+                    fiit fiitVar2 = this.m.e;
+                    if (fiitVar2 == null) {
+                        fiitVar2 = fiit.b;
                     }
-                    ffsu ffsuVar2 = fftvVar2.m;
-                    if (ffsuVar2 == null) {
-                        ffsuVar2 = ffsu.a;
+                    fihs fihsVar2 = fiitVar2.m;
+                    if (fihsVar2 == null) {
+                        fihsVar2 = fihs.a;
                     }
-                    fecy fecyVar = ((fftl) ffsuVar2.c.get(0)).e;
+                    fgrr fgrrVar = ((fiij) fihsVar2.c.get(0)).e;
                     Bundle bundle = this.j;
-                    int intValue = ((Integer) fecyVar.get(0)).intValue();
-                    zwo.ai.h("Pins received: ".concat(String.valueOf(String.valueOf(fecyVar))), new Object[0]);
-                    zwo zwoVar = new zwo();
-                    bundle.putString(zwo.d, Integer.toString(intValue));
-                    String str = zwo.ag;
+                    int intValue = ((Integer) fgrrVar.get(0)).intValue();
+                    abwo.ai.h("Pins received: ".concat(String.valueOf(String.valueOf(fgrrVar))), new Object[0]);
+                    abwo abwoVar = new abwo();
+                    bundle.putString(abwo.d, Integer.toString(intValue));
+                    String str = abwo.ag;
                     ArrayList<String> arrayList = new ArrayList<>();
-                    Iterator it = fecyVar.iterator();
+                    Iterator it = fgrrVar.iterator();
                     while (it.hasNext()) {
                         arrayList.add(Integer.toString(((Integer) it.next()).intValue()));
                     }
                     Collections.shuffle(arrayList);
                     bundle.putStringArrayList(str, arrayList);
-                    zwoVar.setArguments(bundle);
-                    l(zwxVar, zwoVar);
+                    abwoVar.setArguments(bundle);
+                    l(abwxVar, abwoVar);
                 } else {
-                    c(zwxVar);
+                    c(abwxVar);
                 }
             } else {
-                if (!zwo.a.equals(y)) {
-                    if (!zwn.a.equals(y)) {
+                if (!abwo.a.equals(y)) {
+                    if (!abwn.a.equals(y)) {
                         throw new RuntimeException("Fragment not supported in account recovery workflow: ".concat(String.valueOf(y)));
                     }
                     setResult(-1);
@@ -88,19 +88,19 @@ public class PinConfirmationChimeraWorkflow extends zvl {
                     return true;
                 }
                 if (i == 0) {
-                    t(ffti.APPROVE_SELECTED, 2);
-                    f(this.j.getString(zxb.g));
+                    t(fiig.APPROVE_SELECTED, 2);
+                    f(this.j.getString(abxb.g));
                 } else if (i == 1) {
-                    t(ffti.APPROVE_MISMATCHED, 202);
+                    t(fiig.APPROVE_MISMATCHED, 202);
                     Bundle bundle2 = (Bundle) this.j.clone();
-                    bundle2.putString(zwn.b, this.j.getString(zxb.c));
-                    bundle2.putString(zwn.c, this.j.getString(zxb.d));
-                    bundle2.putString(zwn.ag, this.j.getString(zxb.e));
-                    bundle2.putString(zwn.d, this.j.getString(zxb.f));
-                    l(zwxVar, zwn.x(bundle2));
+                    bundle2.putString(abwn.b, this.j.getString(abxb.c));
+                    bundle2.putString(abwn.c, this.j.getString(abxb.d));
+                    bundle2.putString(abwn.ag, this.j.getString(abxb.e));
+                    bundle2.putString(abwn.d, this.j.getString(abxb.f));
+                    l(abwxVar, abwn.x(bundle2));
                 } else {
-                    t(ffti.APPROVE_ABORTED, 3);
-                    k(this.j.getString(zxb.h));
+                    t(fiig.APPROVE_ABORTED, 3);
+                    k(this.j.getString(abxb.h));
                     setResult(-1);
                     finish();
                 }

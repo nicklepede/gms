@@ -3,126 +3,195 @@ package com.google.android.gms.autofill.service;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.res.Configuration;
+import android.graphics.drawable.Icon;
 import android.inputmethodservice.InputMethodService;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.RemoteException;
+import android.util.Size;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowInsets;
+import android.view.animation.DecelerateInterpolator;
 import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InlineSuggestion;
+import android.view.inputmethod.InlineSuggestionInfo;
+import android.view.inputmethod.InlineSuggestionsRequest;
+import android.view.inputmethod.InlineSuggestionsResponse;
 import android.view.inputmethod.InputConnection;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.inline.InlinePresentationSpec;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.R;
 import com.google.android.gms.autofill.service.AutofillInputMethodServiceProxy;
-import defpackage.adqo;
-import defpackage.adqq;
-import defpackage.aeju;
-import defpackage.afmz;
-import defpackage.afvm;
-import defpackage.asej;
-import defpackage.asiu;
-import defpackage.asot;
-import defpackage.asrk;
-import defpackage.byhr;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.ejhf;
-import defpackage.iwj;
+import defpackage.afqv;
+import defpackage.afqx;
+import defpackage.agkg;
+import defpackage.aha;
+import defpackage.ahb;
+import defpackage.ahc;
+import defpackage.ahd;
+import defpackage.ahi;
+import defpackage.ahj;
+import defpackage.ahk;
+import defpackage.ahl;
+import defpackage.ahnl;
+import defpackage.ahwb;
+import defpackage.ahwe;
+import defpackage.auid;
+import defpackage.aumo;
+import defpackage.ausn;
+import defpackage.auve;
+import defpackage.caqj;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.eluo;
+import defpackage.hdh$$ExternalSyntheticApiModelOutline0;
+import defpackage.itr;
+import defpackage.ixz;
+import j$.time.Clock;
+import j$.time.Duration;
+import j$.time.LocalTime;
+import j$.util.DesugarArrays;
+import j$.util.function.Consumer$CC;
+import j$.util.function.Predicate$CC;
+import j$.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class AutofillInputMethodServiceProxy extends InputMethodService {
-    public static final asot a = asot.b("AutofillImeProxy", asej.AUTOFILL);
-    public adqo e;
+    public static final ausn a = ausn.b("AutofillImeProxy", auid.AUTOFILL);
+    public afqv e;
     public ViewGroup f;
     public String g;
     public String h;
-    private EditorInfo k;
-    private boolean l;
-    public final Executor b = new asrk(new byhr());
-    private final ServiceConnection j = new afvm(this);
-    public final adqq c = new adqq(this);
+    private EditorInfo l;
+    private boolean m;
+    public final Executor b = new auve(new caqj());
+    private final ServiceConnection j = new ahwb(this);
+    public final afqx c = new afqx(this);
     public final CountDownLatch d = new CountDownLatch(1);
+    private final int k = (int) Duration.between(LocalTime.MIDNIGHT, LocalTime.now(Clock.systemUTC())).toMillis();
     public int i = 1;
 
-    private final void f(afmz afmzVar, eiid eiidVar) {
+    private final void g(ahnl ahnlVar, ekvi ekviVar) {
         try {
             this.d.await(10L, TimeUnit.MILLISECONDS);
             if (this.e == null) {
-                ((ejhf) ((ejhf) a.j()).ah((char) 1161)).x("coreService is null, logEvent failed");
+                ((eluo) ((eluo) a.j()).ai((char) 1156)).x("coreService is null, logEvent failed");
                 return;
             }
             try {
-                int ordinal = afmzVar.ordinal();
+                int ordinal = ahnlVar.ordinal();
                 if (ordinal == 1) {
-                    this.e.d(afmz.USER_ENTER.a(), this.k);
+                    this.e.d(ahnl.USER_ENTER.a(), this.l, this.k);
                     return;
                 }
                 if (ordinal == 3) {
-                    if (eiidVar.h()) {
-                        this.e.e(((aeju) eiidVar.c()).a(), this.k);
+                    if (ekviVar.h()) {
+                        this.e.e(((agkg) ekviVar.c()).a(), this.l, this.k);
                     }
                 } else if (ordinal != 4) {
-                    ((ejhf) ((ejhf) a.j()).ah(1158)).B("logEvent failed, unknown event type: %s", afmzVar.name());
+                    ((eluo) ((eluo) a.j()).ai(1153)).B("logEvent failed, unknown event type: %s", ahnlVar.name());
                 } else {
-                    this.e.d(afmz.EXIT.a(), this.k);
+                    this.e.d(ahnl.EXIT.a(), this.l, this.k);
                 }
             } catch (RemoteException e) {
-                ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 1159)).B("logEvent(): failed to log %s event", afmzVar.name());
+                ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 1154)).B("logEvent(): failed to log %s event", ahnlVar.name());
             }
         } catch (InterruptedException e2) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e2)).ah((char) 1162)).x("service connection failed");
+            ((eluo) ((eluo) ((eluo) a.j()).s(e2)).ai((char) 1157)).x("service connection failed");
         }
     }
 
-    private final void g(View.OnClickListener onClickListener) {
+    private final void h(View.OnClickListener onClickListener) {
         ((ImageButton) this.f.findViewById(R.id.back_button)).setOnClickListener(onClickListener);
     }
 
-    private final void h(boolean z) {
+    private final void i(boolean z) {
         ((ImageButton) this.f.findViewById(R.id.switch_keyboard_button)).setVisibility(true != z ? 4 : 0);
     }
 
-    private final void i(int i) {
+    private final void j(int i) {
         ((TextView) this.f.findViewById(R.id.keyboard_title_text)).setText(i);
     }
 
-    private final void j() {
+    private final void k() {
         ((ImageButton) this.f.findViewById(R.id.back_button)).setVisibility(0);
     }
 
-    public final void a(aeju aejuVar) {
-        f(afmz.SELECT, eiid.j(aejuVar));
+    public final void a(agkg agkgVar) {
+        g(ahnl.SELECT, ekvi.j(agkgVar));
     }
 
-    public final void b(afmz afmzVar) {
+    public final void b(ahnl ahnlVar) {
         super.switchToPreviousInputMethod();
-        f(afmzVar, eigb.a);
+        g(ahnlVar, ektg.a);
     }
 
-    public final /* synthetic */ void c(Intent intent) {
+    public final void c(List list) {
+        list.size();
+        ViewGroup viewGroup = this.f;
+        if (viewGroup == null) {
+            return;
+        }
+        HorizontalScrollView horizontalScrollView = (HorizontalScrollView) viewGroup.findViewById(R.id.keyboard_suggestion_strip_scroll_view);
+        if (horizontalScrollView.getVisibility() == 0) {
+            ((LinearLayout) this.f.findViewById(R.id.keyboard_suggestion_strip)).removeAllViews();
+        }
+        if (list.isEmpty()) {
+            horizontalScrollView.setVisibility(8);
+            return;
+        }
+        horizontalScrollView.setVisibility(0);
+        LinearLayout linearLayout = (LinearLayout) this.f.findViewById(R.id.keyboard_suggestion_strip);
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            linearLayout.addView((View) it.next());
+        }
+        DecelerateInterpolator decelerateInterpolator = new DecelerateInterpolator();
+        Iterator it2 = list.iterator();
+        int i = 0;
+        while (it2.hasNext()) {
+            View view = (View) it2.next();
+            view.setScaleX(0.0f);
+            view.setScaleY(0.0f);
+            view.animate().setDuration(150L).setInterpolator(decelerateInterpolator).scaleX(1.0f).scaleY(1.0f).setStartDelay(i).start();
+            i += 50;
+        }
+        horizontalScrollView.scrollTo(0, 0);
+    }
+
+    public final /* synthetic */ void d(Intent intent) {
         startActivity(intent);
         super.switchToPreviousInputMethod();
     }
 
-    public final void d(String str) {
+    public final void e(String str) {
         InputConnection currentInputConnection = getCurrentInputConnection();
         if (currentInputConnection == null) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 1171)).x("inputConnection is null");
+            ((eluo) ((eluo) a.j()).ai((char) 1173)).x("inputConnection is null");
         } else {
             currentInputConnection.deleteSurroundingText(ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
             currentInputConnection.commitText(str, 1);
         }
     }
 
-    public final void e(int i) {
+    public final void f(int i) {
         int i2 = this.i;
         int i3 = i2 - 1;
         if (i2 == 0) {
@@ -140,99 +209,102 @@ public class AutofillInputMethodServiceProxy extends InputMethodService {
             throw null;
         }
         if (i4 == 0) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 1179)).x("new state shouldn't be STATE_INITIAL");
+            ((eluo) ((eluo) a.j()).ai((char) 1181)).x("new state shouldn't be STATE_INITIAL");
         } else if (i4 == 1) {
             ((LinearLayout) this.f.findViewById(R.id.keyboard_home_layout)).setVisibility(0);
-            g(new View.OnClickListener() { // from class: afvc
+            h(new View.OnClickListener() { // from class: ahvr
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    AutofillInputMethodServiceProxy.this.b(afmz.EXIT);
+                    AutofillInputMethodServiceProxy.this.b(ahnl.EXIT);
                 }
             });
-            j();
-            h(false);
-            i(R.string.autofill_ime_title);
+            k();
+            i(false);
+            j(R.string.autofill_ime_title);
             TextView textView = (TextView) this.f.findViewById(R.id.home_payment_button_text);
             textView.setBackgroundResource(R.drawable.ime_top_item_background);
-            textView.setOnClickListener(new View.OnClickListener() { // from class: afvd
+            textView.setOnClickListener(new View.OnClickListener() { // from class: ahvs
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    AutofillInputMethodServiceProxy.this.e(4);
+                    AutofillInputMethodServiceProxy.this.f(4);
                 }
             });
             TextView textView2 = (TextView) this.f.findViewById(R.id.home_password_button_text);
             textView2.setBackgroundResource(R.drawable.ime_bottom_item_background);
-            if (!this.l) {
+            if (!this.m) {
                 try {
-                    final Intent a2 = this.e.a(this.k.packageName);
+                    final Intent a2 = this.e.a(this.l.packageName);
                     if (a2 != null) {
                         a2.addFlags(268435456);
-                        textView2.setOnClickListener(new View.OnClickListener() { // from class: afvj
+                        textView2.setOnClickListener(new View.OnClickListener() { // from class: ahvn
                             @Override // android.view.View.OnClickListener
                             public final void onClick(View view) {
-                                AutofillInputMethodServiceProxy.this.c(a2);
+                                AutofillInputMethodServiceProxy.this.d(a2);
                             }
                         });
                     }
                 } catch (RemoteException unused) {
                 }
             }
-            textView2.setOnClickListener(new View.OnClickListener() { // from class: afva
+            textView2.setOnClickListener(new View.OnClickListener() { // from class: ahvo
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    AutofillInputMethodServiceProxy.this.e(3);
+                    AutofillInputMethodServiceProxy.this.f(3);
                 }
             });
         } else if (i4 == 2) {
             ((ViewGroup) this.f.findViewById(R.id.keyboard_password_layout)).setVisibility(0);
-            g(new View.OnClickListener() { // from class: afuz
+            h(new View.OnClickListener() { // from class: ahvl
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    AutofillInputMethodServiceProxy.this.e(2);
+                    AutofillInputMethodServiceProxy.this.f(2);
                 }
             });
-            j();
-            h(true);
-            i(R.string.keyboard_password_view_title);
+            k();
+            i(true);
+            j(R.string.keyboard_password_view_title);
             try {
                 this.d.await(10L, TimeUnit.MILLISECONDS);
             } catch (InterruptedException e) {
-                ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 1146)).x("getCredentialsForPackage failed");
+                ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 1140)).x("getCredentialsForPackage failed");
             }
-            adqo adqoVar = this.e;
-            if (adqoVar == null) {
-                ((ejhf) ((ejhf) a.j()).ah((char) 1145)).x("coreService is null");
+            afqv afqvVar = this.e;
+            if (afqvVar == null) {
+                ((eluo) ((eluo) a.j()).ai((char) 1139)).x("coreService is null");
             } else {
                 try {
-                    adqoVar.b(this.k.packageName);
+                    afqvVar.b(this.l.packageName);
                 } catch (RemoteException e2) {
-                    ((ejhf) ((ejhf) ((ejhf) a.j()).s(e2)).ah((char) 1144)).x("getCredentialsForPackage failed");
+                    ((eluo) ((eluo) ((eluo) a.j()).s(e2)).ai((char) 1138)).x("getCredentialsForPackage failed");
                 }
             }
         } else if (i4 == 3) {
             ((ViewGroup) this.f.findViewById(R.id.keyboard_payment_layout)).setVisibility(0);
-            g(new View.OnClickListener() { // from class: afvb
+            h(new View.OnClickListener() { // from class: ahvq
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    AutofillInputMethodServiceProxy.this.e(2);
+                    AutofillInputMethodServiceProxy autofillInputMethodServiceProxy = AutofillInputMethodServiceProxy.this;
+                    autofillInputMethodServiceProxy.f(2);
+                    autofillInputMethodServiceProxy.g = null;
+                    autofillInputMethodServiceProxy.h = null;
                 }
             });
-            j();
-            h(true);
-            i(R.string.keyboard_payment_view_title);
+            k();
+            i(true);
+            j(R.string.keyboard_payment_view_title);
             try {
                 this.d.await(10L, TimeUnit.MILLISECONDS);
             } catch (InterruptedException e3) {
-                ((ejhf) ((ejhf) ((ejhf) a.j()).s(e3)).ah((char) 1150)).x("service connection failed");
+                ((eluo) ((eluo) ((eluo) a.j()).s(e3)).ai((char) 1144)).x("service connection failed");
             }
-            adqo adqoVar2 = this.e;
-            if (adqoVar2 == null) {
-                ((ejhf) ((ejhf) a.j()).ah((char) 1149)).x("coreService is null");
+            afqv afqvVar2 = this.e;
+            if (afqvVar2 == null) {
+                ((eluo) ((eluo) a.j()).ai((char) 1143)).x("coreService is null");
             } else {
                 try {
-                    adqoVar2.c(this.k.packageName);
+                    afqvVar2.c(this.l.packageName);
                 } catch (RemoteException e4) {
-                    ((ejhf) ((ejhf) ((ejhf) a.j()).s(e4)).ah((char) 1148)).x("getCredentialsForPackage failed");
+                    ((eluo) ((eluo) ((eluo) a.j()).s(e4)).ai((char) 1142)).x("getCredentialsForPackage failed");
                 }
             }
         }
@@ -242,34 +314,103 @@ public class AutofillInputMethodServiceProxy extends InputMethodService {
     @Override // android.inputmethodservice.InputMethodService, android.inputmethodservice.AbstractInputMethodService, android.app.Service, android.content.ComponentCallbacks
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        e(this.i);
+        f(this.i);
     }
 
     @Override // android.inputmethodservice.InputMethodService, android.app.Service
     public final void onCreate() {
         super.onCreate();
-        if (!asiu.a().e(this, "com.google.android.gms.autofill.service.AutofillImeCoreService", new Intent().setClassName(this, "com.google.android.gms.autofill.service.AutofillImeCoreService"), this.j, 1)) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 1141)).x("System didn't find data fetch service");
+        if (!aumo.a().e(this, "com.google.android.gms.autofill.service.AutofillImeCoreService", new Intent().setClassName(this, "com.google.android.gms.autofill.service.AutofillImeCoreService"), this.j, 1)) {
+            ((eluo) ((eluo) a.j()).ai((char) 1135)).x("System didn't find data fetch service");
         }
         getTheme().applyStyle(R.style.AutofillImeTheme, true);
         getTheme().applyStyle(R.style.ThemeOverlay_GoogleMaterial3_DynamicColors_DayNight, true);
     }
 
     @Override // android.inputmethodservice.InputMethodService
+    public final InlineSuggestionsRequest onCreateInlineSuggestionsRequest(Bundle bundle) {
+        InlinePresentationSpec.Builder style;
+        InlinePresentationSpec build;
+        InlineSuggestionsRequest.Builder maxSuggestionCount;
+        InlineSuggestionsRequest build2;
+        ((eluo) ((eluo) a.h()).ai((char) 1160)).x("onCreateInlineSuggestionsRequest()");
+        if (Build.VERSION.SDK_INT <= 29) {
+            return null;
+        }
+        ahd ahdVar = new ahd("style_v1");
+        int d = ahwe.d(this) - ahwe.c(this, R.dimen.autofill_keyboard_suggestion_chip_height);
+        int c = ahwe.c(this, R.dimen.inline_suggestion_chip_padding_horizontal);
+        Icon createWithResource = Icon.createWithResource(this, R.drawable.ime_inline_suggestion_background);
+        createWithResource.setTint(ahwe.a(this, R.attr.colorSurfaceContainerLowest));
+        int a2 = ahwe.a(this, R.attr.colorOnSurface);
+        ahd ahdVar2 = new ahd("view_style", null);
+        Bundle bundle2 = ahdVar2.a;
+        bundle2.putIntArray("padding", new int[]{c, 0, c, 0});
+        int i = d / 2;
+        bundle2.putIntArray("layout_margin", new int[]{0, i, 0, i});
+        itr.i(createWithResource, "background icon should not be null");
+        bundle2.putParcelable("background", createWithResource);
+        ahk ahkVar = new ahk(ahdVar2.a);
+        ahkVar.d();
+        Bundle bundle3 = ahdVar.a;
+        bundle3.putBundle("chip_style", ahkVar.a);
+        ahd ahdVar3 = new ahd("text_view_style", null);
+        ahi.b(a2, ahdVar3);
+        ahi.c(ahwe.c(this, R.dimen.autofill_inline_suggestion_title_text_size), ahdVar3);
+        ahi.d(ahdVar3);
+        ahj a3 = ahi.a(ahdVar3);
+        a3.d();
+        bundle3.putBundle("title_style", a3.a);
+        ahd ahdVar4 = new ahd("text_view_style", null);
+        ahi.b(a2, ahdVar4);
+        ahi.c(ahwe.c(this, R.dimen.autofill_inline_suggestion_subtitle_text_size), ahdVar4);
+        ahi.d(ahdVar4);
+        ahj a4 = ahi.a(ahdVar4);
+        a4.d();
+        bundle3.putBundle("subtitle_style", a4.a);
+        ahl ahlVar = new ahl(bundle3);
+        Set set = ahb.a;
+        ArrayList<aha> arrayList = new ArrayList();
+        if (!ahc.a("androidx.autofill.inline.ui.version:v1")) {
+            throw new IllegalArgumentException("Unsupported style version: androidx.autofill.inline.ui.version:v1");
+        }
+        arrayList.add(ahlVar);
+        if (arrayList.isEmpty()) {
+            throw new IllegalStateException("Please put at least one style in the builder");
+        }
+        Bundle bundle4 = new Bundle();
+        ArrayList<String> arrayList2 = new ArrayList<>();
+        for (aha ahaVar : arrayList) {
+            String b = ahaVar.b();
+            arrayList2.add(ahaVar.b());
+            bundle4.putBundle(b, ahaVar.a());
+        }
+        bundle4.putStringArrayList("androidx.autofill.inline.ui.version:key", arrayList2);
+        ArrayList arrayList3 = new ArrayList();
+        style = new InlinePresentationSpec.Builder(new Size(ahwe.c(this, R.dimen.autofill_keyboard_inline_suggestion_min_width), ahwe.d(this)), new Size(ahwe.c(this, R.dimen.autofill_keyboard_inline_suggestion_max_width), ahwe.d(this))).setStyle(bundle4);
+        build = style.build();
+        arrayList3.add(build);
+        maxSuggestionCount = new InlineSuggestionsRequest.Builder(arrayList3).setMaxSuggestionCount(9);
+        build2 = maxSuggestionCount.build();
+        return build2;
+    }
+
+    @Override // android.inputmethodservice.InputMethodService
     public final View onCreateInputView() {
+        ((eluo) ((eluo) a.h()).ai((char) 1162)).x("OnCreateInputView()");
         ViewGroup viewGroup = (ViewGroup) getLayoutInflater().inflate(R.layout.autofill_keyboard, (ViewGroup) null);
         this.f = viewGroup;
-        ((ImageButton) viewGroup.findViewById(R.id.switch_keyboard_button)).setOnClickListener(new View.OnClickListener() { // from class: afve
+        ((ImageButton) viewGroup.findViewById(R.id.switch_keyboard_button)).setOnClickListener(new View.OnClickListener() { // from class: ahvv
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                AutofillInputMethodServiceProxy.this.b(afmz.EXIT);
+                AutofillInputMethodServiceProxy.this.b(ahnl.EXIT);
             }
         });
-        this.f.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() { // from class: afvf
+        this.f.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() { // from class: ahvw
             @Override // android.view.View.OnApplyWindowInsetsListener
             public final WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
                 WindowInsets windowInsets2;
-                asot asotVar = AutofillInputMethodServiceProxy.a;
+                ausn ausnVar = AutofillInputMethodServiceProxy.a;
                 view.setPadding(0, 0, 0, windowInsets.getSystemWindowInsetBottom());
                 if (Build.VERSION.SDK_INT < 30) {
                     return windowInsets.consumeSystemWindowInsets();
@@ -280,11 +421,11 @@ public class AutofillInputMethodServiceProxy extends InputMethodService {
         });
         Window window = getWindow().getWindow();
         int i = getResources().getConfiguration().uiMode & 48;
-        iwj iwjVar = new iwj(window, window.getDecorView());
+        ixz ixzVar = new ixz(window, window.getDecorView());
         if (i == 32) {
-            iwjVar.a(false);
+            ixzVar.a(false);
         } else {
-            iwjVar.a(true);
+            ixzVar.a(true);
         }
         ViewGroup viewGroup2 = this.f;
         float f = getResources().getDisplayMetrics().heightPixels;
@@ -299,25 +440,111 @@ public class AutofillInputMethodServiceProxy extends InputMethodService {
     @Override // android.inputmethodservice.InputMethodService, android.inputmethodservice.AbstractInputMethodService, android.app.Service
     public final void onDestroy() {
         super.onDestroy();
-        asiu.a().b(this, this.j);
+        aumo.a().b(this, this.j);
+    }
+
+    @Override // android.inputmethodservice.InputMethodService
+    public final boolean onEvaluateFullscreenMode() {
+        return false;
+    }
+
+    @Override // android.inputmethodservice.InputMethodService
+    public final boolean onInlineSuggestionsResponse(InlineSuggestionsResponse inlineSuggestionsResponse) {
+        List inlineSuggestions;
+        InlineSuggestionInfo info;
+        boolean isPinned;
+        Executor mainExecutor;
+        Executor mainExecutor2;
+        ((eluo) ((eluo) a.h()).ai((char) 1165)).x("onInlineSuggestionsResponse()");
+        if (Build.VERSION.SDK_INT <= 29) {
+            return false;
+        }
+        inlineSuggestions = inlineSuggestionsResponse.getInlineSuggestions();
+        int size = inlineSuggestions.size();
+        if (size == 0) {
+            mainExecutor2 = getMainExecutor();
+            mainExecutor2.execute(new Runnable() { // from class: ahvt
+                @Override // java.lang.Runnable
+                public final void run() {
+                    AutofillInputMethodServiceProxy.this.c(new ArrayList());
+                }
+            });
+            return true;
+        }
+        final View[] viewArr = new View[size];
+        final AtomicInteger atomicInteger = new AtomicInteger(size);
+        for (final int i = 0; i < size; i++) {
+            InlineSuggestion m353m = hdh$$ExternalSyntheticApiModelOutline0.m353m(inlineSuggestions.get(i));
+            info = m353m.getInfo();
+            isPinned = info.isPinned();
+            if (isPinned) {
+                atomicInteger.get();
+                viewArr[i] = null;
+                atomicInteger.decrementAndGet();
+            } else {
+                Size size2 = new Size(-2, -2);
+                mainExecutor = getMainExecutor();
+                m353m.inflate(this, size2, mainExecutor, new Consumer() { // from class: ahvu
+                    @Override // java.util.function.Consumer
+                    public final void accept(Object obj) {
+                        View[] viewArr2 = viewArr;
+                        viewArr2[i] = aib$$ExternalSyntheticApiModelOutline0.m85m(obj);
+                        if (atomicInteger.decrementAndGet() == 0) {
+                            AutofillInputMethodServiceProxy autofillInputMethodServiceProxy = AutofillInputMethodServiceProxy.this;
+                            Stream filter = DesugarArrays.stream(viewArr2).filter(new Predicate() { // from class: ahvp
+                                public final /* synthetic */ Predicate and(Predicate predicate) {
+                                    return Predicate$CC.$default$and(this, predicate);
+                                }
+
+                                @Override // java.util.function.Predicate
+                                /* renamed from: negate */
+                                public final /* synthetic */ Predicate mo478negate() {
+                                    return Predicate$CC.$default$negate(this);
+                                }
+
+                                @Override // java.util.function.Predicate
+                                public final /* synthetic */ Predicate or(Predicate predicate) {
+                                    return Predicate$CC.$default$or(this, predicate);
+                                }
+
+                                @Override // java.util.function.Predicate
+                                public final boolean test(Object obj2) {
+                                    View view = (View) obj2;
+                                    ausn ausnVar = AutofillInputMethodServiceProxy.a;
+                                    return view != null;
+                                }
+                            });
+                            int i2 = elgo.d;
+                            autofillInputMethodServiceProxy.c((elgo) filter.collect(elcq.a));
+                        }
+                    }
+
+                    public final /* synthetic */ Consumer andThen(Consumer consumer) {
+                        return Consumer$CC.$default$andThen(this, consumer);
+                    }
+                });
+            }
+        }
+        return true;
     }
 
     @Override // android.inputmethodservice.InputMethodService
     public final void onStartInputView(EditorInfo editorInfo, boolean z) {
         super.onStartInputView(editorInfo, z);
-        EditorInfo editorInfo2 = this.k;
+        ((eluo) ((eluo) a.h()).ai(1169)).Q("onStartInputView: editorInfo %s, restarting %s", editorInfo, z);
+        EditorInfo editorInfo2 = this.l;
         if (editorInfo2 != null && !editorInfo2.packageName.equals(editorInfo.packageName)) {
-            b(afmz.EXIT);
+            b(ahnl.EXIT);
         }
-        this.k = editorInfo;
+        this.l = editorInfo;
         if (this.i == 1) {
             try {
-                this.l = this.e.m(editorInfo.packageName);
+                this.m = this.e.m(editorInfo.packageName);
             } catch (RemoteException e) {
-                ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 1173)).x("fetchCredentialImeCache failed");
+                ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 1175)).x("fetchCredentialImeCache failed");
             }
-            if (this.l) {
-                e(3);
+            if (this.m) {
+                f(3);
                 return;
             }
             this.g = null;
@@ -325,28 +552,28 @@ public class AutofillInputMethodServiceProxy extends InputMethodService {
             try {
                 this.d.await(10L, TimeUnit.MILLISECONDS);
             } catch (InterruptedException e2) {
-                ((ejhf) ((ejhf) ((ejhf) a.j()).s(e2)).ah((char) 1178)).x("fetch payment cache interrupted");
+                ((eluo) ((eluo) ((eluo) a.j()).s(e2)).ai((char) 1180)).x("fetch payment cache interrupted");
             }
             if (this.e == null) {
-                ((ejhf) ((ejhf) a.j()).ah((char) 1177)).x("coreService is null, fetch payement cache failed");
+                ((eluo) ((eluo) a.j()).ai((char) 1179)).x("coreService is null, fetch payement cache failed");
             } else {
                 try {
-                    String str = this.k.packageName;
-                    String[] n = this.e.n(this.k.packageName);
+                    String str = this.l.packageName;
+                    String[] n = this.e.n(this.l.packageName);
                     String str2 = n[0];
                     String str3 = n[1];
                     if (str2 != null && !str2.isEmpty()) {
                         this.g = str2;
                         this.h = str3;
-                        e(4);
+                        f(4);
                         return;
                     }
                 } catch (RemoteException e3) {
-                    ((ejhf) ((ejhf) ((ejhf) a.j()).s(e3)).ah((char) 1176)).x("getPaymentCards failed");
+                    ((eluo) ((eluo) ((eluo) a.j()).s(e3)).ai((char) 1178)).x("getPaymentCards failed");
                 }
             }
-            e(2);
-            f(afmz.USER_ENTER, eigb.a);
+            f(2);
+            g(ahnl.USER_ENTER, ektg.a);
         }
     }
 }

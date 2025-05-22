@@ -4,16 +4,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arxc;
-import defpackage.bqev;
-import defpackage.eiig;
-import defpackage.esvk;
+import defpackage.atzr;
+import defpackage.bsml;
+import defpackage.ekvl;
+import defpackage.evla;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public final class InAppTrainerOptions extends BaseOptions {
-    public static final Parcelable.Creator CREATOR = new bqev();
+    public static final Parcelable.Creator CREATOR = new bsml();
     public final String a;
     public final int b;
     public final boolean c;
@@ -31,16 +31,16 @@ public final class InAppTrainerOptions extends BaseOptions {
 
     public InAppTrainerOptions(String str, int i, boolean z, String str2, int i2, Uri uri, InAppTrainingConstraints inAppTrainingConstraints, long j, Uri uri2, TrainingInterval trainingInterval, byte[] bArr, Uri uri3, Bundle bundle, byte[] bArr2) {
         boolean z2 = true;
-        eiig.a(!str.isEmpty());
-        eiig.a(i != 0);
+        ekvl.a(!str.isEmpty());
+        ekvl.a(i != 0);
         if (uri != null && str2 == null) {
-            eiig.a(i2 == 3);
-            eiig.x(uri2);
-            eiig.x(trainingInterval);
+            ekvl.a(i2 == 3);
+            ekvl.y(uri2);
+            ekvl.y(trainingInterval);
             if (uri3 == null && (bundle == null || bundle == Bundle.EMPTY)) {
                 z2 = false;
             }
-            eiig.a(z2);
+            ekvl.a(z2);
         } else {
             if (uri != null || str2 == null) {
                 if (uri != null) {
@@ -48,8 +48,8 @@ public final class InAppTrainerOptions extends BaseOptions {
                 }
                 throw new IllegalArgumentException("must call exactly one of #setFederatedOptions or #setPersonalizedOptions");
             }
-            eiig.a(true ^ str2.isEmpty());
-            eiig.a(b(i2));
+            ekvl.a(true ^ str2.isEmpty());
+            ekvl.a(b(i2));
         }
         this.a = str;
         this.b = i;
@@ -64,16 +64,16 @@ public final class InAppTrainerOptions extends BaseOptions {
         this.n = bArr == null ? new byte[0] : bArr;
         this.k = uri3;
         this.l = bundle;
-        this.m = bArr2 == null ? esvk.a.r() : bArr2;
+        this.m = bArr2 == null ? evla.a.r() : bArr2;
     }
 
     public static void a(Uri uri) {
-        eiig.f(uri.isAbsolute(), "%s is not absolute.", uri);
-        eiig.f(uri.isHierarchical(), "%s is not hierarchical.", uri);
-        eiig.b(uri.getAuthority() == null, "Uri cannot have authority.");
-        eiig.b(uri.getFragment() == null, "Uri cannot have fragment part.");
-        eiig.b(uri.getQuery() == null, "Uri cannot have query part.");
-        eiig.f("appfiles".equals(uri.getScheme()) || "appcache".equals(uri.getScheme()) || "appdir".equals(uri.getScheme()), "Unsupported scheme: %s", uri.getScheme());
+        ekvl.f(uri.isAbsolute(), "%s is not absolute.", uri);
+        ekvl.f(uri.isHierarchical(), "%s is not hierarchical.", uri);
+        ekvl.b(uri.getAuthority() == null, "Uri cannot have authority.");
+        ekvl.b(uri.getFragment() == null, "Uri cannot have fragment part.");
+        ekvl.b(uri.getQuery() == null, "Uri cannot have query part.");
+        ekvl.f("appfiles".equals(uri.getScheme()) || "appcache".equals(uri.getScheme()) || "appdir".equals(uri.getScheme()), "Unsupported scheme: %s", uri.getScheme());
     }
 
     public static boolean b(int i) {
@@ -108,7 +108,7 @@ public final class InAppTrainerOptions extends BaseOptions {
             com.google.android.gms.learning.InAppTrainerOptions r8 = (com.google.android.gms.learning.InAppTrainerOptions) r8
             java.lang.String r1 = r7.a
             java.lang.String r3 = r8.a
-            boolean r1 = defpackage.eihn.a(r1, r3)
+            boolean r1 = defpackage.ekus.a(r1, r3)
             if (r1 == 0) goto Lc4
             int r1 = r7.b
             int r3 = r8.b
@@ -118,22 +118,22 @@ public final class InAppTrainerOptions extends BaseOptions {
             if (r1 != r3) goto Lc4
             java.lang.String r1 = r7.d
             java.lang.String r3 = r8.d
-            boolean r1 = defpackage.eihn.a(r1, r3)
+            boolean r1 = defpackage.ekus.a(r1, r3)
             if (r1 == 0) goto Lc4
             int r1 = r7.e
             int r3 = r8.e
             if (r1 != r3) goto Lc4
             android.net.Uri r1 = r7.f
             android.net.Uri r3 = r8.f
-            boolean r1 = defpackage.eihn.a(r1, r3)
+            boolean r1 = defpackage.ekus.a(r1, r3)
             if (r1 == 0) goto Lc4
             android.net.Uri r1 = r7.i
             android.net.Uri r3 = r8.i
-            boolean r1 = defpackage.eihn.a(r1, r3)
+            boolean r1 = defpackage.ekus.a(r1, r3)
             if (r1 == 0) goto Lc4
             com.google.android.gms.learning.InAppTrainingConstraints r1 = r7.g
             com.google.android.gms.learning.InAppTrainingConstraints r3 = r8.g
-            boolean r1 = defpackage.eihn.a(r1, r3)
+            boolean r1 = defpackage.ekus.a(r1, r3)
             if (r1 == 0) goto Lc4
             long r3 = r7.h
             long r5 = r8.h
@@ -141,7 +141,7 @@ public final class InAppTrainerOptions extends BaseOptions {
             if (r1 != 0) goto Lc4
             com.google.android.gms.learning.TrainingInterval r1 = r7.j
             com.google.android.gms.learning.TrainingInterval r3 = r8.j
-            boolean r1 = defpackage.eihn.a(r1, r3)
+            boolean r1 = defpackage.ekus.a(r1, r3)
             if (r1 == 0) goto Lc4
             byte[] r1 = r7.n
             byte[] r3 = r8.n
@@ -149,7 +149,7 @@ public final class InAppTrainerOptions extends BaseOptions {
             if (r1 == 0) goto Lc4
             android.net.Uri r1 = r7.k
             android.net.Uri r3 = r8.k
-            boolean r1 = defpackage.eihn.a(r1, r3)
+            boolean r1 = defpackage.ekus.a(r1, r3)
             if (r1 == 0) goto Lc4
             android.os.Bundle r1 = r7.l
             android.os.Bundle r3 = r8.l
@@ -174,7 +174,7 @@ public final class InAppTrainerOptions extends BaseOptions {
             java.lang.String r5 = (java.lang.String) r5
             java.lang.Object r6 = r1.get(r5)
             java.lang.Object r5 = r3.get(r5)
-            boolean r5 = defpackage.eihn.a(r6, r5)
+            boolean r5 = defpackage.ekus.a(r6, r5)
             if (r5 != 0) goto L9c
             goto Lc4
         Lb7:
@@ -198,21 +198,21 @@ public final class InAppTrainerOptions extends BaseOptions {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.o(parcel, 5, this.e);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.t(parcel, 9, this.g, i, false);
-        arxc.q(parcel, 10, this.h);
-        arxc.t(parcel, 11, this.i, i, false);
-        arxc.t(parcel, 12, this.j, i, false);
-        arxc.i(parcel, 13, c(), false);
-        arxc.t(parcel, 14, this.k, i, false);
-        arxc.g(parcel, 15, this.l, false);
-        arxc.i(parcel, 16, this.m, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.o(parcel, 5, this.e);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.t(parcel, 9, this.g, i, false);
+        atzr.q(parcel, 10, this.h);
+        atzr.t(parcel, 11, this.i, i, false);
+        atzr.t(parcel, 12, this.j, i, false);
+        atzr.i(parcel, 13, c(), false);
+        atzr.t(parcel, 14, this.k, i, false);
+        atzr.g(parcel, 15, this.l, false);
+        atzr.i(parcel, 16, this.m, false);
+        atzr.c(parcel, a);
     }
 }

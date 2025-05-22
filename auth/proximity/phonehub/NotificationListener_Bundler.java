@@ -10,13 +10,13 @@ import com.google.android.enterprise.connectedapps.internal.BundlerType;
 import com.google.android.enterprise.connectedapps.parcelablewrappers.ParcelableArray;
 import com.google.android.enterprise.connectedapps.parcelablewrappers.ParcelableList;
 import defpackage.a;
-import defpackage.acwg;
+import defpackage.aewg;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class NotificationListener_Bundler implements Bundler {
-    public static final Parcelable.Creator CREATOR = new acwg();
+    public static final Parcelable.Creator CREATOR = new aewg();
 
     @Override // com.google.android.enterprise.connectedapps.internal.Bundler
     public final Object a(Bundle bundle, String str, BundlerType bundlerType) {

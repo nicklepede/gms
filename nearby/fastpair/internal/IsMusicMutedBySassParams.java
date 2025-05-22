@@ -5,17 +5,17 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cifj;
-import defpackage.cigb;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ckno;
+import defpackage.ckog;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class IsMusicMutedBySassParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cigb();
-    public cifj a;
+    public static final Parcelable.Creator CREATOR = new ckog();
+    public ckno a;
 
     private IsMusicMutedBySassParams() {
     }
@@ -25,7 +25,7 @@ public final class IsMusicMutedBySassParams extends AbstractSafeParcelable {
             return true;
         }
         if (obj instanceof IsMusicMutedBySassParams) {
-            return arwb.b(this.a, ((IsMusicMutedBySassParams) obj).a);
+            return atyq.b(this.a, ((IsMusicMutedBySassParams) obj).a);
         }
         return false;
     }
@@ -36,19 +36,19 @@ public final class IsMusicMutedBySassParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.a);
+        atzr.c(parcel, a);
     }
 
     public IsMusicMutedBySassParams(IBinder iBinder) {
-        cifj cifjVar;
+        ckno cknoVar;
         if (iBinder == null) {
-            cifjVar = null;
+            cknoVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.fastpair.internal.IBooleanCallback");
-            cifjVar = queryLocalInterface instanceof cifj ? (cifj) queryLocalInterface : new cifj(iBinder);
+            cknoVar = queryLocalInterface instanceof ckno ? (ckno) queryLocalInterface : new ckno(iBinder);
         }
-        this.a = cifjVar;
+        this.a = cknoVar;
     }
 }

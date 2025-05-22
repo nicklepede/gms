@@ -23,32 +23,32 @@ import com.google.android.gms.appinvite.ui.context.section.GridSectionInfo;
 import com.google.android.gms.appinvite.ui.context.section.ListSectionInfo;
 import com.google.android.gms.appinvite.ui.context.section.LoaderSectionInfo;
 import com.google.android.gms.appinvite.ui.context.section.SelectionSectionInfo;
-import defpackage.aqup;
-import defpackage.arxd;
-import defpackage.asng;
+import defpackage.asxe;
+import defpackage.atzs;
+import defpackage.aura;
 import defpackage.bp;
 import defpackage.ew;
 import defpackage.fj;
-import defpackage.fkbj;
-import defpackage.qet;
-import defpackage.tyh;
-import defpackage.tyj;
-import defpackage.typ;
-import defpackage.tyr;
-import defpackage.tyv;
-import defpackage.tyy;
-import defpackage.un;
+import defpackage.fmrs;
+import defpackage.rxx;
+import defpackage.us;
+import defpackage.vug;
+import defpackage.vui;
+import defpackage.vuo;
+import defpackage.vuq;
+import defpackage.vuu;
+import defpackage.vux;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
-public final class ContextualPeopleSelectionChimeraActivity extends qet implements View.OnClickListener, typ, tyr, tyh {
+public final class ContextualPeopleSelectionChimeraActivity extends rxx implements View.OnClickListener, vuo, vuq, vug {
     private View j;
     private View k;
-    private tyj l;
-    private un m;
+    private vui l;
+    private us m;
     private View n;
     private CharSequence o;
     private CharSequence p;
@@ -88,25 +88,25 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
     }
 
     private final void k() {
-        tyj tyjVar = this.l;
+        vui vuiVar = this.l;
         CharSequence charSequence = this.o;
-        tyy tyyVar = tyjVar.av;
-        if (tyyVar != null) {
-            tyyVar.P(charSequence);
+        vux vuxVar = vuiVar.av;
+        if (vuxVar != null) {
+            vuxVar.P(charSequence);
         }
-        tyv tyvVar = tyjVar.aw;
-        if (tyvVar != null) {
-            tyvVar.P(charSequence);
+        vuu vuuVar = vuiVar.aw;
+        if (vuuVar != null) {
+            vuuVar.P(charSequence);
         }
-        tyj tyjVar2 = this.l;
-        CharSequence charSequence2 = tyjVar2.x() > 0 ? this.q : this.p;
-        tyy tyyVar2 = tyjVar2.av;
-        if (tyyVar2 != null) {
-            tyyVar2.S(charSequence2);
+        vui vuiVar2 = this.l;
+        CharSequence charSequence2 = vuiVar2.x() > 0 ? this.q : this.p;
+        vux vuxVar2 = vuiVar2.av;
+        if (vuxVar2 != null) {
+            vuxVar2.S(charSequence2);
         }
-        tyv tyvVar2 = tyjVar2.aw;
-        if (tyvVar2 != null) {
-            tyvVar2.S(charSequence2);
+        vuu vuuVar2 = vuiVar2.aw;
+        if (vuuVar2 != null) {
+            vuuVar2.S(charSequence2);
         }
     }
 
@@ -115,18 +115,18 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
     }
 
     private final void p() {
-        tyj tyjVar = this.l;
-        boolean z = tyjVar != null && tyjVar.L();
+        vui vuiVar = this.l;
+        boolean z = vuiVar != null && vuiVar.L();
         this.j.setVisibility(true != z ? 8 : 0);
         this.k.setVisibility(true == z ? 8 : 0);
     }
 
-    @Override // defpackage.typ
+    @Override // defpackage.vuo
     public final void l() {
         p();
     }
 
-    @Override // defpackage.typ
+    @Override // defpackage.vuo
     public final void m(int i, int i2) {
         a(i + i2 > 0);
         k();
@@ -134,7 +134,7 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
         o();
     }
 
-    @Override // defpackage.typ
+    @Override // defpackage.vuo
     public final void n(int i, int i2) {
         a(i + i2 > 0);
         k();
@@ -151,7 +151,7 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         Context containerActivity;
         int length;
@@ -161,8 +161,8 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
         boolean z;
         boolean z2;
         super.onCreate(bundle);
-        String q = asng.q(this);
-        if (q == null || !aqup.d(this).h(q)) {
+        String q = aura.q(this);
+        if (q == null || !asxe.d(this).h(q)) {
             finish();
             return;
         }
@@ -190,7 +190,7 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
         if (intent.hasExtra("com.google.android.gms.appinvite.CONTEXT_ACTION_BAR_BACKGROUND_COLOR")) {
             toolbar.setBackgroundColor(intent.getIntExtra("com.google.android.gms.appinvite.CONTEXT_ACTION_BAR_BACKGROUND_COLOR", 0));
         }
-        ht(toolbar);
+        hJ(toolbar);
         String stringExtra2 = intent.getStringExtra("com.google.android.gms.appinvite.CONTEXT_ACCOUNT_NAME");
         if (TextUtils.isEmpty(stringExtra2)) {
             finish();
@@ -243,15 +243,15 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
         CharSequence charSequenceExtra = intent.getCharSequenceExtra("com.google.android.gms.appinvite.CONTEXT_MESSAGE");
         if (!TextUtils.isEmpty(charSequenceExtra)) {
             View inflate2 = getLayoutInflater().inflate(R.layout.appinvite_contextual_selection_message, (ViewGroup) this.j, false);
-            this.m = new un(inflate2);
+            this.m = new us(inflate2);
             ((TextView) inflate2.findViewById(R.id.message)).setText(charSequenceExtra);
         }
         ew supportFragmentManager = getSupportFragmentManager();
         bp bpVar = new bp(supportFragmentManager);
-        tyj tyjVar = (tyj) supportFragmentManager.h("selectionFragment");
-        this.l = tyjVar;
-        if (tyjVar == null) {
-            ArrayList g = arxd.g(intent, "com.google.android.gms.appinvite.CONTEXT_INITIAL_SELECTION", ContactPerson.CREATOR);
+        vui vuiVar = (vui) supportFragmentManager.h("selectionFragment");
+        this.l = vuiVar;
+        if (vuiVar == null) {
+            ArrayList g = atzs.g(intent, "com.google.android.gms.appinvite.CONTEXT_INITIAL_SELECTION", ContactPerson.CREATOR);
             int intExtra3 = intent.getIntExtra("com.google.android.gms.appinvite.CONTEXT_MAX_SELECTED", Integer.MAX_VALUE);
             boolean booleanExtra = intent.getBooleanExtra("com.google.android.gms.appinvite.CONTEXT_CONTACT_METHOD_ICON", false);
             boolean booleanExtra2 = intent.getBooleanExtra("com.google.android.gms.appinvite.CONTEXT_CONTACT_METHOD_SELECTION", false);
@@ -259,11 +259,11 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
             String[] stringArrayExtra = intent.getStringArrayExtra("com.google.android.gms.appinvite.CONTEXT_CONTACT_METHOD_TYPES");
             boolean booleanExtra4 = intent.getBooleanExtra("com.google.android.gms.appinvite.EXTRA_EXCLUDE_NON_GAIA_CONTACTS", false);
             boolean booleanExtra5 = intent.getBooleanExtra("com.google.android.gms.appinvite.CONTEXT_DOCK_RECIPIENTS", false);
-            ArrayList g2 = arxd.g(intent, "com.google.android.gms.appinvite.CONTEXT_ADDITIONAL_GRID_PEOPLE", ContactPerson.CREATOR);
+            ArrayList g2 = atzs.g(intent, "com.google.android.gms.appinvite.CONTEXT_ADDITIONAL_GRID_PEOPLE", ContactPerson.CREATOR);
             ArrayList<String> stringArrayListExtra = intent.getStringArrayListExtra("com.google.android.gms.appinvite.CONTEXT_EXCLUDED_GRID_GAIA_IDS");
             ArrayList<String> stringArrayListExtra2 = intent.getStringArrayListExtra("com.google.android.gms.appinvite.CONTEXT_EXCLUDED_GRID_EMAIL_ADDRESSES");
             ArrayList<String> stringArrayListExtra3 = intent.getStringArrayListExtra("com.google.android.gms.appinvite.CONTEXT_EXCLUDED_GRID_PHONE_NUMBERS");
-            ArrayList g3 = arxd.g(intent, "com.google.android.gms.appinvite.CONTEXT_ADDITIONAL_LIST_PEOPLE", ContactPerson.CREATOR);
+            ArrayList g3 = atzs.g(intent, "com.google.android.gms.appinvite.CONTEXT_ADDITIONAL_LIST_PEOPLE", ContactPerson.CREATOR);
             String stringExtra4 = intent.getStringExtra("com.google.android.gms.appinvite.CONTEXT_GRID_SOURCE");
             String stringExtra5 = intent.getStringExtra("com.google.android.gms.appinvite.CONTEXT_GRID_SOURCE_OPTIONS");
             int intExtra4 = intent.getIntExtra("com.google.android.gms.appinvite.CONTEXT_MAX_PORTRAIT_GRID_ITEMS", Integer.MAX_VALUE);
@@ -320,11 +320,11 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
                 arrayList.add(listSectionInfo2);
             }
             Resources resources = getResources();
-            boolean z3 = (fkbj.a.a().i() && booleanExtra) ? z2 : z;
+            boolean z3 = (fmrs.a.lK().i() && booleanExtra) ? z2 : z;
             int integer = resources.getInteger(R.integer.appinivte_num_portrait_grid_columns);
             int integer2 = resources.getInteger(R.integer.appinivte_num_landscape_grid_columns);
             fjVar = bpVar;
-            tyj z4 = tyj.z(stringExtra2, intExtra3, g, booleanExtra2, null, z3, stringArrayExtra, booleanExtra4, integer, integer2, arrayList, q, booleanExtra6, stringArrayListExtra4, stringArrayListExtra5, stringArrayListExtra6, stringExtra12, true);
+            vui z4 = vui.z(stringExtra2, intExtra3, g, booleanExtra2, null, z3, stringArrayExtra, booleanExtra4, integer, integer2, arrayList, q, booleanExtra6, stringArrayListExtra4, stringArrayListExtra5, stringArrayListExtra6, stringExtra12, true);
             contextualPeopleSelectionChimeraActivity = this;
             contextualPeopleSelectionChimeraActivity.l = z4;
             fjVar.u(R.id.fragment_container, z4, "selectionFragment");
@@ -332,10 +332,10 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
             contextualPeopleSelectionChimeraActivity = this;
             fjVar = bpVar;
         }
-        tyj tyjVar2 = contextualPeopleSelectionChimeraActivity.l;
-        tyjVar2.ag = contextualPeopleSelectionChimeraActivity;
-        tyjVar2.ah = contextualPeopleSelectionChimeraActivity;
-        tyjVar2.az = contextualPeopleSelectionChimeraActivity;
+        vui vuiVar2 = contextualPeopleSelectionChimeraActivity.l;
+        vuiVar2.ag = contextualPeopleSelectionChimeraActivity;
+        vuiVar2.ah = contextualPeopleSelectionChimeraActivity;
+        vuiVar2.az = contextualPeopleSelectionChimeraActivity;
         contextualPeopleSelectionChimeraActivity.a(false);
         contextualPeopleSelectionChimeraActivity.k();
         if (fjVar.j()) {
@@ -344,13 +344,13 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
         fjVar.a();
     }
 
-    @Override // defpackage.qfw
+    @Override // defpackage.rza
     protected final void onResumeFragments() {
         super.onResumeFragments();
         p();
     }
 
-    @Override // defpackage.tyr
+    @Override // defpackage.vuq
     public final void r(ContactPerson contactPerson, boolean z) {
         if (!z ? this.l.x() == 0 : this.l.x() == 1) {
             k();
@@ -358,8 +358,8 @@ public final class ContextualPeopleSelectionChimeraActivity extends qet implemen
         o();
     }
 
-    @Override // defpackage.tyh
-    public final un v() {
+    @Override // defpackage.vug
+    public final us v() {
         return this.m;
     }
 }

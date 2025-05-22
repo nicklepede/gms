@@ -3,15 +3,15 @@ package com.google.android.gms.nearby.presence;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ckkw;
-import defpackage.ckkx;
+import defpackage.atzr;
+import defpackage.cmtb;
+import defpackage.cmtc;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class ServerSyncResult extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckkx();
+    public static final Parcelable.Creator CREATOR = new cmtc();
     public final int a;
     public final int b;
     public final int c;
@@ -30,44 +30,44 @@ public class ServerSyncResult extends AbstractSafeParcelable {
         this.g = i5;
     }
 
-    public static ckkw a(int i) {
-        ckkw ckkwVar = new ckkw();
-        ckkwVar.a = i;
-        ckkwVar.b = i;
-        ckkwVar.c = i;
-        ckkwVar.d = i;
-        return ckkwVar;
+    public static cmtb a(int i) {
+        cmtb cmtbVar = new cmtb();
+        cmtbVar.a = i;
+        cmtbVar.b = i;
+        cmtbVar.c = i;
+        cmtbVar.d = i;
+        return cmtbVar;
     }
 
-    public final ckkw b() {
-        ckkw ckkwVar = new ckkw();
-        ckkwVar.a = this.a;
-        ckkwVar.b = this.b;
-        ckkwVar.c = this.c;
-        ckkwVar.d = this.d;
-        ckkwVar.e = this.g;
+    public final cmtb b() {
+        cmtb cmtbVar = new cmtb();
+        cmtbVar.a = this.a;
+        cmtbVar.b = this.b;
+        cmtbVar.c = this.c;
+        cmtbVar.d = this.d;
+        cmtbVar.e = this.g;
         List list = this.e;
         if (list != null) {
-            ckkwVar.f = list;
+            cmtbVar.f = list;
         }
         String str = this.f;
         if (str != null) {
-            ckkwVar.g = str;
+            cmtbVar.g = str;
         }
-        return ckkwVar;
+        return cmtbVar;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.y(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.o(parcel, 7, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.y(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.o(parcel, 7, this.g);
+        atzr.c(parcel, a);
     }
 }

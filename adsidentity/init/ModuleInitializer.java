@@ -2,27 +2,27 @@ package com.google.android.gms.adsidentity.init;
 
 import android.content.Intent;
 import com.google.android.gms.chimera.modules.adsidentity.AppContextProvider;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.fkaq;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.fmqw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ModuleInitializer extends anya {
-    @Override // defpackage.anya
+public class ModuleInitializer extends apzs {
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
         AppContextProvider.a();
-        asng.M("com.google.android.gms.adsidentity.settings.AdsIdentitySettingsActivity", 1);
-        fkaq.c();
+        aura.M("com.google.android.gms.adsidentity.settings.AdsIdentitySettingsActivity", 1);
+        fmqw.c();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
         AppContextProvider.a();
-        asng.K("com.google.android.gms.adsidentity.settings.AdsIdentityIaSettingsActivity", true);
+        aura.K("com.google.android.gms.adsidentity.settings.AdsIdentityIaSettingsActivity", true);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
     }
 }

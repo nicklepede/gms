@@ -8,13 +8,13 @@ import android.net.Uri;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.util.l;
 import com.google.android.gms.ads.internal.util.m;
-import defpackage.ajt;
-import defpackage.aju;
-import defpackage.ajv;
-import defpackage.fyuu;
-import defpackage.fyuv;
+import defpackage.akc;
+import defpackage.akd;
+import defpackage.ake;
+import defpackage.gbro;
+import defpackage.gbrp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class a {
     public static final void a(Context context, Intent intent, i iVar, h hVar, boolean z) {
@@ -24,12 +24,12 @@ public final class a {
         }
         try {
             intent.toURI();
-            if (((Boolean) p.bZ.g()).booleanValue()) {
+            if (((Boolean) p.ca.g()).booleanValue()) {
                 com.google.android.gms.ads.internal.c.e();
-                m.s(context, intent);
+                m.t(context, intent);
             } else {
                 com.google.android.gms.ads.internal.c.e();
-                m.r(context, intent);
+                m.s(context, intent);
             }
             if (iVar != null) {
                 iVar.a();
@@ -63,16 +63,18 @@ public final class a {
                             }
                         });
                     }
-                    ajv a2 = new aju(cVar.b).a();
-                    a2.a.setPackage(fyuu.a(context));
-                    a2.a(context, uri);
+                    ake a2 = new akd(cVar.b).a();
+                    if (!((Boolean) p.aA.g()).booleanValue() || !m.j()) {
+                        a2.a.setPackage(gbro.a(context));
+                        a2.a(context, uri);
+                    }
                 } else if (((Boolean) p.ax.g()).booleanValue()) {
                     com.google.android.gms.ads.internal.customtabs.d dVar = new com.google.android.gms.ads.internal.customtabs.d();
                     dVar.c = new l(dVar, context, uri);
                     Activity activity = (Activity) context;
-                    if (dVar.a == null && (a = fyuu.a(activity)) != null) {
-                        dVar.b = new fyuv(dVar);
-                        ajt.b(activity, a, dVar.b);
+                    if (dVar.a == null && (a = gbro.a(activity)) != null) {
+                        dVar.b = new gbrp(dVar);
+                        akc.b(activity, a, dVar.b);
                     }
                 } else {
                     m.f(context, uri);

@@ -2,21 +2,21 @@ package com.google.android.gms.identitycredentials;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.bmlx;
-import defpackage.fvbo;
+import defpackage.bosq;
+import defpackage.fxxm;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class CallingAppInfoParcelable implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new bmlx();
-    private final String a;
+    public static final Parcelable.Creator CREATOR = new bosq();
+    public final String a;
     private final List b;
     private final String c;
 
     public CallingAppInfoParcelable(String str, List list, String str2) {
-        fvbo.f(str, "packageName");
-        fvbo.f(list, "packageCertificates");
+        fxxm.f(str, "packageName");
+        fxxm.f(list, "packageCertificates");
         this.a = str;
         this.b = list;
         this.c = str2;
@@ -29,7 +29,7 @@ public final class CallingAppInfoParcelable implements Parcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "dest");
+        fxxm.f(parcel, "dest");
         parcel.writeString(this.a);
         List<byte[]> list = this.b;
         parcel.writeInt(list.size());

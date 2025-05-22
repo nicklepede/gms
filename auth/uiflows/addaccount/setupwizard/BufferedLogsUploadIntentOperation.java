@@ -4,30 +4,30 @@ import android.content.Intent;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.auth.uiflows.addaccount.setupwizard.BufferedLogsUploadIntentOperation;
-import defpackage.asmf;
-import defpackage.edkl;
-import defpackage.edkm;
-import defpackage.vba;
-import defpackage.vbd;
-import defpackage.vbe;
+import defpackage.aupz;
+import defpackage.efxh;
+import defpackage.efxi;
+import defpackage.wxa;
+import defpackage.wxd;
+import defpackage.wxe;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class BufferedLogsUploadIntentOperation extends IntentOperation {
-    public edkl a;
-    public vbd b;
-    private edkm c;
-    private edkm d;
+    public efxh a;
+    public wxd b;
+    private efxi c;
+    private efxi d;
 
-    private final void a(final edkm edkmVar, final String str) {
-        new asmf(1, 9).execute(new Runnable() { // from class: adjy
+    private final void a(final efxi efxiVar, final String str) {
+        new aupz(1, 9).execute(new Runnable() { // from class: afkf
             @Override // java.lang.Runnable
             public final void run() {
-                edkm edkmVar2 = edkmVar;
+                efxi efxiVar2 = efxiVar;
                 BufferedLogsUploadIntentOperation bufferedLogsUploadIntentOperation = BufferedLogsUploadIntentOperation.this;
                 String str2 = str;
-                ((dxob) bufferedLogsUploadIntentOperation.b.a.b.a()).b(Boolean.valueOf(edkmVar2.b(str2)));
+                ((eaab) bufferedLogsUploadIntentOperation.b.a.b.lK()).b(Boolean.valueOf(efxiVar2.b(str2)));
                 bufferedLogsUploadIntentOperation.a.e(str2);
             }
         });
@@ -35,13 +35,13 @@ public class BufferedLogsUploadIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        edkl a = edkl.a(getApplicationContext());
-        edkm edkmVar = new edkm(getApplicationContext(), "ANDROID_AUTH");
-        edkm edkmVar2 = new edkm(getApplicationContext(), "KIDS_SUPERVISION");
-        vbd f = vbe.f(getApplicationContext());
+        efxh a = efxh.a(getApplicationContext());
+        efxi efxiVar = new efxi(getApplicationContext(), "ANDROID_AUTH");
+        efxi efxiVar2 = new efxi(getApplicationContext(), "KIDS_SUPERVISION");
+        wxd f = wxe.f(getApplicationContext());
         this.a = a;
-        this.c = edkmVar;
-        this.d = edkmVar2;
+        this.c = efxiVar;
+        this.d = efxiVar2;
         this.b = f;
     }
 
@@ -55,17 +55,17 @@ public class BufferedLogsUploadIntentOperation extends IntentOperation {
             Log.w("Auth", String.format(Locale.US, "[BufferedLogsUploadIntentOperation] Unknown action", new Object[0]));
             return;
         }
-        edkm edkmVar = this.c;
-        if (edkmVar == null) {
-            edkmVar = new edkm(getApplicationContext(), "ANDROID_AUTH");
+        efxi efxiVar = this.c;
+        if (efxiVar == null) {
+            efxiVar = new efxi(getApplicationContext(), "ANDROID_AUTH");
         }
-        this.c = edkmVar;
-        a(edkmVar, vba.b(getApplicationContext()));
-        edkm edkmVar2 = this.d;
-        if (edkmVar2 == null) {
-            edkmVar2 = new edkm(getApplicationContext(), "KIDS_SUPERVISION");
+        this.c = efxiVar;
+        a(efxiVar, wxa.b(getApplicationContext()));
+        efxi efxiVar2 = this.d;
+        if (efxiVar2 == null) {
+            efxiVar2 = new efxi(getApplicationContext(), "KIDS_SUPERVISION");
         }
-        this.d = edkmVar2;
-        a(edkmVar2, vba.c(getApplicationContext()));
+        this.d = efxiVar2;
+        a(efxiVar2, wxa.c(getApplicationContext()));
     }
 }

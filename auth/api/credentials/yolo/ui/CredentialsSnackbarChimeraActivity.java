@@ -2,22 +2,22 @@ package com.google.android.gms.auth.api.credentials.yolo.ui;
 
 import android.os.Bundle;
 import com.google.android.gms.R;
+import defpackage.aaxe;
+import defpackage.aaxh;
+import defpackage.aaxj;
 import defpackage.bp;
 import defpackage.dg;
-import defpackage.qet;
-import defpackage.yxo;
-import defpackage.yxr;
-import defpackage.yxt;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class CredentialsSnackbarChimeraActivity extends qet {
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+public class CredentialsSnackbarChimeraActivity extends rxx {
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         char c;
-        dg yxoVar;
+        dg aaxeVar;
         super.onCreate(bundle);
-        hC().q(1);
+        hS().q(1);
         setTheme(R.style.ThemeTranslucentDayNight);
         String action = getIntent().getAction();
         int hashCode = action.hashCode();
@@ -38,16 +38,16 @@ public class CredentialsSnackbarChimeraActivity extends qet {
             c = 65535;
         }
         if (c == 0) {
-            yxoVar = new yxo();
+            aaxeVar = new aaxe();
         } else if (c == 1) {
-            yxoVar = new yxr();
+            aaxeVar = new aaxh();
         } else if (c != 2) {
             return;
         } else {
-            yxoVar = new yxt();
+            aaxeVar = new aaxj();
         }
         bp bpVar = new bp(getSupportFragmentManager());
-        bpVar.t(android.R.id.content, yxoVar);
+        bpVar.t(android.R.id.content, aaxeVar);
         bpVar.a();
     }
 }

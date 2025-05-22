@@ -4,155 +4,155 @@ import android.accounts.Account;
 import android.content.Context;
 import android.os.SystemClock;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.aaql;
-import defpackage.aaqo;
-import defpackage.aaqr;
-import defpackage.aaqx;
-import defpackage.aaqz;
-import defpackage.aarp;
-import defpackage.aatt;
-import defpackage.aatu;
-import defpackage.aaud;
-import defpackage.aauf;
-import defpackage.aauh;
-import defpackage.aaui;
-import defpackage.arxo;
-import defpackage.aseu;
-import defpackage.asnd;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.byln;
-import defpackage.deqr;
-import defpackage.eiif;
-import defpackage.eijr;
-import defpackage.ejck;
-import defpackage.enzw;
-import defpackage.fkwv;
-import defpackage.qxr;
-import defpackage.qxt;
-import defpackage.qxv;
-import defpackage.qxw;
+import defpackage.acql;
+import defpackage.acqo;
+import defpackage.acqr;
+import defpackage.acqx;
+import defpackage.acqz;
+import defpackage.acrp;
+import defpackage.actt;
+import defpackage.actu;
+import defpackage.acud;
+import defpackage.acuf;
+import defpackage.acuh;
+import defpackage.acui;
+import defpackage.acum;
+import defpackage.auad;
+import defpackage.auio;
+import defpackage.auqx;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.cauf;
+import defpackage.dhbu;
+import defpackage.ekvk;
+import defpackage.ekww;
+import defpackage.elpp;
+import defpackage.fnoa;
+import defpackage.sqv;
+import defpackage.sqx;
+import defpackage.sqz;
+import defpackage.sra;
 import java.util.ArrayList;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ReEnrollmentChimeraService extends GmsTaskChimeraService {
-    private static final arxo a = new arxo(new String[]{"ReEnrollmentChimeraService"}, (byte[]) null);
+    private static final auad a = new auad(new String[]{"ReEnrollmentChimeraService"}, (byte[]) null);
 
     public ReEnrollmentChimeraService() {
-        this(new aatt(), new aaui());
+        this(new actt(), new acui());
     }
 
-    static final void d(Account account, aaqx aaqxVar, aauf aaufVar) {
-        aaqxVar.e();
-        long j = aaqxVar.b.getLong(aaqxVar.d("checkinafter"), fkwv.b());
-        aaufVar.a(account.name, j, j + fkwv.e(), aaql.a(aaqxVar.b()));
+    static final void d(Account account, acqx acqxVar, acuf acufVar) {
+        acqxVar.e();
+        long j = acqxVar.b.getLong(acqxVar.d("checkinafter"), fnoa.b());
+        acufVar.a(account.name, j, j + fnoa.e(), acql.a(acqxVar.b()));
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         ArrayList arrayList;
         int i;
-        String string = bylnVar.b.getString("account");
+        String string = caufVar.b.getString("account");
         Context applicationContext = getApplicationContext();
-        if (eiif.c(string) || !asnd.m(applicationContext, new Account(string, "com.google"))) {
+        if (ekvk.c(string) || !auqx.m(applicationContext, new Account(string, "com.google"))) {
             a.m("Account doesn't exist on device", new Object[0]);
             return 2;
         }
         Account account = new Account(string, "com.google");
         Context applicationContext2 = getApplicationContext();
-        aauf aaufVar = new aauf(applicationContext2);
-        String str = bylnVar.a;
-        arxo arxoVar = a;
-        arxoVar.d("Performing re-enrollment with tag=%s", str);
-        aaqx aaqxVar = new aaqx(applicationContext2, account);
-        int a2 = (int) aaqxVar.a();
-        aatu aatuVar = new aatu(applicationContext2, a2, str.startsWith("OneTimeTag_") ? 3 : str.startsWith("NonImmediateTag_") ? 5 : str.startsWith("ClientDirectiveTag_") ? 2 : 1);
-        if (a2 > aaqxVar.c()) {
-            arxoVar.m("Number of retries exceeded allowed number of retries.", new Object[0]);
-            aaqxVar.e();
-            d(account, aaqxVar, aaufVar);
+        acuf acufVar = new acuf(applicationContext2);
+        String str = caufVar.a;
+        auad auadVar = a;
+        auadVar.d("Performing re-enrollment with tag=%s", str);
+        acqx acqxVar = new acqx(applicationContext2, account);
+        int a2 = (int) acqxVar.a();
+        actu actuVar = new actu(applicationContext2, a2, str.startsWith("OneTimeTag_") ? 3 : str.startsWith("NonImmediateTag_") ? 5 : str.startsWith("ClientDirectiveTag_") ? 2 : 1);
+        if (a2 > acqxVar.c()) {
+            auadVar.m("Number of retries exceeded allowed number of retries.", new Object[0]);
+            acqxVar.e();
+            d(account, acqxVar, acufVar);
             return 2;
         }
-        aaqz aaqzVar = new aaqz(applicationContext2);
-        Set<String> stringSet = aaqzVar.b.getStringSet(string, ejck.a);
+        acqz acqzVar = new acqz(applicationContext2);
+        Set<String> stringSet = acqzVar.b.getStringSet(string, elpp.a);
         if (stringSet.isEmpty()) {
             arrayList = null;
         } else {
             arrayList = new ArrayList();
             arrayList.addAll(stringSet);
         }
-        aaqr aaqrVar = new aaqr(applicationContext2);
+        acqr acqrVar = new acqr(applicationContext2);
         try {
-            byte[] r = aaui.a(applicationContext2).a(aaqrVar.c(string)).r();
-            aatuVar.d = 6;
-            aaud aaudVar = new aaud(applicationContext2, account, aatuVar);
-            qxr qxrVar = new qxr();
-            qxrVar.b(account.name);
-            qxrVar.c();
-            qxrVar.c = r;
-            qxrVar.a = enzw.PERIODIC;
-            qxrVar.i = new aaqo(applicationContext2);
-            qxrVar.k = new aaql(applicationContext2, account);
-            qxrVar.h = aaqrVar;
-            qxrVar.m = new arxo(new String[]{"ReEnrollmentCryptauthFramework"}, (byte[]) null);
-            qxrVar.e(true);
-            qxrVar.j = aaudVar;
+            byte[] r = acui.a(applicationContext2).a(acqrVar.c(string)).r();
+            actuVar.d = 6;
+            acud acudVar = new acud(applicationContext2, account, actuVar);
+            sqv sqvVar = new sqv();
+            sqvVar.b(account.name);
+            sqvVar.c();
+            sqvVar.c = r;
+            sqvVar.a = acum.a(2);
+            sqvVar.i = new acqo(applicationContext2);
+            sqvVar.k = new acql(applicationContext2, account);
+            sqvVar.h = acqrVar;
+            sqvVar.m = new auad(new String[]{"ReEnrollmentCryptauthFramework"}, (byte[]) null);
+            sqvVar.e(true);
+            sqvVar.j = acudVar;
             if (arrayList != null && !arrayList.isEmpty()) {
-                qxrVar.d(arrayList);
+                sqvVar.d(arrayList);
             }
-            deqr deqrVar = new deqr(applicationContext2, 1, "CryptauthEnroller", null, "com.google.android.gms");
-            deqrVar.c(30000L);
+            dhbu dhbuVar = new dhbu(applicationContext2, 1, "CryptauthEnroller", null, "com.google.android.gms");
+            dhbuVar.c(30000L);
             long elapsedRealtime = SystemClock.elapsedRealtime();
             try {
                 try {
-                    arxoVar.d("Starting ReEnrollment", new Object[0]);
-                    eijr eijrVar = bqqe.a;
-                    bqqa.a(aseu.CRYPTAUTH_REENROLLMENT);
-                    qxw a3 = aauh.a(qxrVar.a());
+                    auadVar.d("Starting ReEnrollment", new Object[0]);
+                    ekww ekwwVar = bsxv.a;
+                    bsxr.a(auio.CRYPTAUTH_REENROLLMENT);
+                    sra a3 = acuh.a(sqvVar.a());
                     long elapsedRealtime2 = SystemClock.elapsedRealtime() - elapsedRealtime;
-                    aatuVar.b = a3.a.p;
-                    aatuVar.a(2, elapsedRealtime2);
-                    synchronized (aaqzVar.a) {
-                        aaqzVar.b.edit().remove(string).commit();
+                    actuVar.b = a3.a.p;
+                    actuVar.a(2, elapsedRealtime2);
+                    synchronized (acqzVar.a) {
+                        acqzVar.b.edit().remove(string).commit();
                     }
-                    if (deqrVar.l()) {
-                        deqrVar.g();
+                    if (dhbuVar.l()) {
+                        dhbuVar.g();
                     }
-                    aaudVar.b();
+                    acudVar.b();
                     return 0;
-                } catch (qxt e) {
+                } catch (sqx e) {
                     long elapsedRealtime3 = SystemClock.elapsedRealtime() - elapsedRealtime;
-                    qxv qxvVar = e.a;
-                    aatuVar.b = qxvVar.p;
-                    aatuVar.a(2, elapsedRealtime3);
-                    if (qxvVar.q) {
-                        aaqxVar.f();
+                    sqz sqzVar = e.a;
+                    actuVar.b = sqzVar.p;
+                    actuVar.a(2, elapsedRealtime3);
+                    if (sqzVar.q) {
+                        acqxVar.f();
                         i = 1;
                     } else {
-                        d(account, aaqxVar, aaufVar);
+                        d(account, acqxVar, acufVar);
                         i = 2;
                     }
-                    if (deqrVar.l()) {
-                        deqrVar.g();
+                    if (dhbuVar.l()) {
+                        dhbuVar.g();
                     }
-                    aaudVar.b();
+                    acudVar.b();
                     return i;
                 }
             } catch (Throwable th) {
-                if (deqrVar.l()) {
-                    deqrVar.g();
+                if (dhbuVar.l()) {
+                    dhbuVar.g();
                 }
-                aaudVar.b();
+                acudVar.b();
                 throw th;
             }
-        } catch (aarp unused) {
+        } catch (acrp unused) {
             a.f("Error while creating client metadata.", new Object[0]);
             return 1;
         }
     }
 
-    public ReEnrollmentChimeraService(aatt aattVar, aaui aauiVar) {
+    public ReEnrollmentChimeraService(actt acttVar, acui acuiVar) {
     }
 }

@@ -5,16 +5,16 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fido.fido2.api.common.FidoCredentialDetails;
 import defpackage.a;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zcs;
+import defpackage.abcn;
+import defpackage.atzb;
+import defpackage.atzr;
 import j$.util.Objects;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GetCredentialUserSelection extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zcs();
+    public static final Parcelable.Creator CREATOR = new abcn();
     public final int a;
     public final InternalSignInCredentialWrapper b;
     public final FidoCredentialDetails c;
@@ -23,8 +23,8 @@ public class GetCredentialUserSelection extends AbstractSafeParcelable {
     public GetCredentialUserSelection(int i, InternalSignInCredentialWrapper internalSignInCredentialWrapper, FidoCredentialDetails fidoCredentialDetails, byte[] bArr) {
         if (i != 1) {
             if (i == 2) {
-                arwm.s(fidoCredentialDetails);
-                arwm.b(internalSignInCredentialWrapper == null);
+                atzb.s(fidoCredentialDetails);
+                atzb.b(internalSignInCredentialWrapper == null);
                 this.a = i;
                 this.b = internalSignInCredentialWrapper;
                 this.c = fidoCredentialDetails;
@@ -34,7 +34,7 @@ public class GetCredentialUserSelection extends AbstractSafeParcelable {
                 throw new IllegalArgumentException(a.j(i, "Invalid credential type: "));
             }
         }
-        arwm.b(fidoCredentialDetails == null);
+        atzb.b(fidoCredentialDetails == null);
         this.a = i;
         this.b = internalSignInCredentialWrapper;
         this.c = fidoCredentialDetails;
@@ -59,11 +59,11 @@ public class GetCredentialUserSelection extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.i(parcel, 4, this.d, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.i(parcel, 4, this.d, false);
+        atzr.c(parcel, a);
     }
 }

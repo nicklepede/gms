@@ -1,119 +1,37 @@
 package com.google.android.gms.common.subscriber;
 
-import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aryj;
-import defpackage.aryk;
-import defpackage.aryl;
-import defpackage.arym;
-import defpackage.aryn;
-import defpackage.aryp;
-import defpackage.asej;
-import defpackage.askx;
-import defpackage.asky;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.bry;
-import defpackage.ejhf;
-import defpackage.ensa;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fmse;
-import j$.time.Duration;
-import j$.util.Objects;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.Callable;
+import defpackage.auid;
+import defpackage.auos;
+import defpackage.ausn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class AnomalyAlertIntentOperation extends IntentOperation {
-    private static final asot b = asot.b("AnomalyAlertLogger", asej.CORE);
-    public final asky a;
+    private static final ausn b = ausn.b("AnomalyAlertLogger", auid.CORE);
+    public final auos a;
 
     public AnomalyAlertIntentOperation() {
-        this.a = new asky();
+        this.a = new auos();
     }
 
+    /* JADX WARN: Removed duplicated region for block: B:27:0x00ed A[Catch: all -> 0x011a, TryCatch #2 {all -> 0x011a, blocks: (B:12:0x004b, B:14:0x0056, B:17:0x005e, B:18:0x0060, B:27:0x00ed, B:28:0x00f0, B:37:0x0078, B:38:0x008a, B:40:0x0090, B:43:0x009e, B:46:0x00a2, B:53:0x00a8, B:49:0x00be, B:58:0x00cd, B:61:0x00e2, B:62:0x00e3, B:20:0x0061, B:22:0x0067, B:23:0x006f, B:35:0x0072, B:36:0x0077), top: B:11:0x004b, inners: #0 }] */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x0116  */
+    /* JADX WARN: Removed duplicated region for block: B:33:? A[RETURN, SYNTHETIC] */
     @Override // com.google.android.chimera.IntentOperation
-    public final void onHandleIntent(Intent intent) {
-        enss i;
-        if (asqh.e()) {
-            ((ejhf) ((ejhf) b.h()).ah((char) 3265)).B("Received alert intent: %s", intent.getAction());
-            asot asotVar = aryk.a;
-            aryk arykVar = aryj.a;
-            if (fmse.e()) {
-                arym arymVar = arym.TRACE;
-                if (arykVar.a(arymVar)) {
-                    intent.getAction();
-                    long longExtra = intent.getLongExtra("android.app.extra.STATS_SUBSCRIPTION_RULE_ID", -1L);
-                    List asList = Arrays.asList(arymVar);
-                    if (asList == null || asList.isEmpty()) {
-                        i = ensj.i(aryn.a());
-                    } else {
-                        bry bryVar = arykVar.b;
-                        synchronized (bryVar) {
-                            if (bryVar.isEmpty()) {
-                                i = ensj.i(aryn.a());
-                            } else {
-                                bry bryVar2 = new bry(bryVar);
-                                ArrayList arrayList = new ArrayList();
-                                final aryl arylVar = new aryl();
-                                for (final aryp arypVar : bryVar2.values()) {
-                                    arym arymVar2 = arym.TRACE;
-                                    if (asList.contains(arymVar2) && arypVar.a) {
-                                        if (arymVar2.ordinal() != 1) {
-                                            ((ejhf) ((ejhf) aryk.a.j()).ah((char) 3200)).B("Metric type %s not supported", arymVar2);
-                                        } else {
-                                            arrayList.add(arykVar.c.submit(new Callable() { // from class: aryh
-                                                @Override // java.util.concurrent.Callable
-                                                public final Object call() {
-                                                    asot asotVar2 = aryk.a;
-                                                    aryp arypVar2 = aryp.this;
-                                                    aryl arylVar2 = arylVar;
-                                                    try {
-                                                        Runtime.getRuntime().gc();
-                                                        try {
-                                                            enoo.a(Duration.ofMillis(fmyf.a.a().a()));
-                                                        } catch (InterruptedException unused) {
-                                                            Thread.currentThread().interrupt();
-                                                        }
-                                                        eitj a = arypVar2.b.a();
-                                                        if (a == null) {
-                                                            return null;
-                                                        }
-                                                        arylVar2.a = a;
-                                                        return null;
-                                                    } catch (ClassCastException e) {
-                                                        ((ejhf) ((ejhf) ((ejhf) aryk.a.j()).s(e)).ah((char) 3199)).x("Failed to retrieve trace data");
-                                                        return null;
-                                                    }
-                                                }
-                                            }));
-                                        }
-                                    }
-                                }
-                                ensa a = ensj.a(arrayList);
-                                Objects.requireNonNull(arylVar);
-                                i = a.a(new Callable() { // from class: aryi
-                                    @Override // java.util.concurrent.Callable
-                                    public final Object call() {
-                                        return new aryn(aryl.this.a);
-                                    }
-                                }, arykVar.c);
-                            }
-                        }
-                    }
-                    ((ejhf) ((ejhf) b.h()).ah((char) 3269)).x("Add callback to upload trace.");
-                    ensj.t(i, new askx(this, longExtra), new asmf(1, 10));
-                }
-            }
-        }
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    public final void onHandleIntent(android.content.Intent r12) {
+        /*
+            Method dump skipped, instructions count: 295
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.common.subscriber.AnomalyAlertIntentOperation.onHandleIntent(android.content.Intent):void");
     }
 
-    public AnomalyAlertIntentOperation(asky askyVar) {
-        this.a = askyVar;
+    public AnomalyAlertIntentOperation(auos auosVar) {
+        this.a = auosVar;
     }
 }

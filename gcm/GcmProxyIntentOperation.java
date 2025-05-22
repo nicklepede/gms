@@ -7,60 +7,60 @@ import android.os.Parcelable;
 import android.os.UserHandle;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
-import defpackage.arwm;
-import defpackage.bhvo;
-import defpackage.bhwo;
-import defpackage.bhwz;
-import defpackage.bhzg;
-import defpackage.biab;
-import defpackage.biac;
-import defpackage.bibu;
-import defpackage.bime;
-import defpackage.bimi;
-import defpackage.dnnr;
+import defpackage.atzb;
+import defpackage.bkad;
+import defpackage.bkbd;
+import defpackage.bkbo;
+import defpackage.bkdv;
+import defpackage.bkeq;
+import defpackage.bker;
+import defpackage.bkgj;
+import defpackage.bkqt;
+import defpackage.bkqx;
+import defpackage.dpya;
 import j$.util.Objects;
 import java.util.Collections;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class GcmProxyIntentOperation extends IntentOperation {
     public static void a(Context context, Intent intent) {
-        bhvo.i(context);
-        if (bhvo.d() == 0) {
+        bkad.i(context);
+        if (bkad.d() == 0) {
             b(intent, 0);
             return;
         }
         Intent intent2 = new Intent("com.google.android.gcm.USER_FORWARD");
         intent2.setPackage(context.getPackageName());
         intent2.putExtra("intent", intent);
-        intent2.putExtra("userSerial", bhvo.d());
+        intent2.putExtra("userSerial", bkad.d());
         intent2.addFlags(268435456);
-        if (!bhvo.k() || !bhvo.a) {
+        if (!bkad.k() || !bkad.a) {
             context.sendBroadcast(intent2);
             return;
         }
-        Object f = bhvo.f(0);
-        arwm.s(f);
+        Object f = bkad.f(0);
+        atzb.s(f);
         context.sendBroadcastAsUser(intent2, (UserHandle) f);
     }
 
     private static void b(final Intent intent, final int i) {
-        biab biabVar;
-        arwm.l(bhvo.d() == 0);
+        bkeq bkeqVar;
+        atzb.l(bkad.d() == 0);
         if (i < 0) {
             Log.w("GCM", "Dispatching intent with invalid user serial");
             return;
         }
         String action = intent.getAction();
-        bhwz b = bhwz.b();
+        bkbo b = bkbo.b();
         if (Objects.equals(action, "com.google.android.gcm.intent.SEND")) {
-            final bhwo a = b.a();
+            final bkbd a = b.a();
             Context context = a.b;
-            if (dnnr.h(context)) {
+            if (dpya.h(context)) {
                 return;
             }
             GcmSenderChimeraProxy.a(context);
-            a.c.execute(new Runnable() { // from class: bhwb
+            a.c.execute(new Runnable() { // from class: bkaq
                 /* JADX WARN: Removed duplicated region for block: B:152:0x0393 A[RETURN] */
                 /* JADX WARN: Removed duplicated region for block: B:153:0x036f A[EXC_TOP_SPLITTER, SYNTHETIC] */
                 /* JADX WARN: Removed duplicated region for block: B:163:0x039b  */
@@ -74,13 +74,13 @@ public final class GcmProxyIntentOperation extends IntentOperation {
                         Method dump skipped, instructions count: 927
                         To view this dump change 'Code comments level' option to 'DEBUG'
                     */
-                    throw new UnsupportedOperationException("Method not decompiled: defpackage.bhwb.run():void");
+                    throw new UnsupportedOperationException("Method not decompiled: defpackage.bkaq.run():void");
                 }
             });
             return;
         }
         if (Objects.equals(action, "com.google.android.gms.gcm.MESSENGER_IPC_USER_FORWARD")) {
-            bhzg g = b.g();
+            bkdv g = b.g();
             Parcelable parcelableExtra = intent.getParcelableExtra("msg");
             if (parcelableExtra instanceof Message) {
                 g.a((Message) parcelableExtra, i);
@@ -91,8 +91,8 @@ public final class GcmProxyIntentOperation extends IntentOperation {
             }
         }
         if (Objects.equals(action, "com.google.android.c2dm.intent.REGISTER")) {
-            bime m = b.m();
-            bimi g2 = bimi.g(1, i, intent, Collections.EMPTY_MAP);
+            bkqt m = b.m();
+            bkqx g2 = bkqx.g(1, i, intent, Collections.EMPTY_MAP);
             if (g2 != null) {
                 m.f(g2);
                 return;
@@ -100,8 +100,8 @@ public final class GcmProxyIntentOperation extends IntentOperation {
             return;
         }
         if (Objects.equals(action, "com.google.android.c2dm.intent.UNREGISTER")) {
-            bime m2 = b.m();
-            bimi g3 = bimi.g(2, i, intent, bimi.i(0));
+            bkqt m2 = b.m();
+            bkqx g3 = bkqx.g(2, i, intent, bkqx.i(0));
             if (g3 != null) {
                 m2.f(g3);
                 return;
@@ -109,17 +109,17 @@ public final class GcmProxyIntentOperation extends IntentOperation {
             return;
         }
         if (Objects.equals(action, "android.intent.action.PACKAGE_REPLACED")) {
-            biac a2 = GcmPackageIntentOperation.a(intent, i);
+            bker a2 = GcmPackageIntentOperation.a(intent, i);
             if (a2 != null) {
-                bhwz.b().e().c(a2);
+                bkbo.b().e().c(a2);
                 return;
             }
             return;
         }
         if (Objects.equals(action, "android.intent.action.PACKAGE_FULLY_REMOVED")) {
-            biac a3 = GcmPackageIntentOperation.a(intent, i);
+            bker a3 = GcmPackageIntentOperation.a(intent, i);
             if (a3 != null) {
-                bhwz.b().e().d(a3);
+                bkbo.b().e().d(a3);
                 return;
             }
             return;
@@ -132,12 +132,12 @@ public final class GcmProxyIntentOperation extends IntentOperation {
             Log.w("GCM", "Unexpected forwarded intent: ".concat(String.valueOf(String.valueOf(intent))));
             return;
         }
-        bhwo a4 = b.a();
-        bibu bibuVar = (bibu) a4.s.a();
-        if (bibuVar == null || (biabVar = a4.d) == null) {
+        bkbd a4 = b.a();
+        bkgj bkgjVar = (bkgj) a4.s.a();
+        if (bkgjVar == null || (bkeqVar = a4.d) == null) {
             return;
         }
-        biabVar.a(intent, bibuVar);
+        bkeqVar.a(intent, bkgjVar);
     }
 
     @Override // com.google.android.chimera.IntentOperation

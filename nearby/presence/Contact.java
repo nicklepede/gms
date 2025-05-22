@@ -3,17 +3,17 @@ package com.google.android.gms.nearby.presence;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ckja;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cmrf;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class Contact extends AbstractSafeParcelable implements Cloneable, Comparable {
-    public static final Parcelable.Creator CREATOR = new ckja();
+    public static final Parcelable.Creator CREATOR = new cmrf();
     public final String a;
     public final int b;
     public final String c;
@@ -51,9 +51,9 @@ public class Contact extends AbstractSafeParcelable implements Cloneable, Compar
     public final boolean equals(Object obj) {
         if (obj instanceof Contact) {
             Contact contact = (Contact) obj;
-            if (arwb.b(this.a, contact.a)) {
-                if (arwb.b(Integer.valueOf(this.b), Integer.valueOf(contact.b)) && arwb.b(this.c, contact.c) && arwb.b(this.d, contact.d) && arwb.b(this.e, contact.e) && arwb.b(this.f, contact.f)) {
-                    if (arwb.b(Boolean.valueOf(this.g), Boolean.valueOf(contact.g))) {
+            if (atyq.b(this.a, contact.a)) {
+                if (atyq.b(Integer.valueOf(this.b), Integer.valueOf(contact.b)) && atyq.b(this.c, contact.c) && atyq.b(this.d, contact.d) && atyq.b(this.e, contact.e) && atyq.b(this.f, contact.f)) {
+                    if (atyq.b(Boolean.valueOf(this.g), Boolean.valueOf(contact.g))) {
                         return true;
                     }
                 }
@@ -79,14 +79,14 @@ public class Contact extends AbstractSafeParcelable implements Cloneable, Compar
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.E(parcel, 5, this.e);
-        arxc.y(parcel, 6, this.f, false);
-        arxc.e(parcel, 7, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.E(parcel, 5, this.e);
+        atzr.y(parcel, 6, this.f, false);
+        atzr.e(parcel, 7, this.g);
+        atzr.c(parcel, a);
     }
 }

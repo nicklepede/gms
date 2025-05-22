@@ -10,20 +10,20 @@ import com.google.android.gms.ads.internal.mediation.client.e;
 import com.google.android.gms.ads.internal.util.c;
 import com.google.android.gms.ads.internal.util.client.h;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.azht;
-import defpackage.tcm;
+import defpackage.bblp;
+import defpackage.uym;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AdLoaderBuilderCreatorImpl extends aj {
     @Override // com.google.android.gms.ads.internal.client.ak
-    public IBinder newAdLoaderBuilder(azht azhtVar, String str, e eVar, int i) {
+    public IBinder newAdLoaderBuilder(bblp bblpVar, String str, e eVar, int i) {
         ak asInterface;
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         p.c(context);
-        if (((Boolean) p.e.d()).booleanValue() && (asInterface = aj.asInterface((IBinder) tcm.a(context).b("com.google.android.gms.ads.ChimeraAdLoaderBuilderCreatorImpl"))) != null) {
+        if (((Boolean) p.e.d()).booleanValue() && (asInterface = aj.asInterface((IBinder) uym.a(context).b("com.google.android.gms.ads.ChimeraAdLoaderBuilderCreatorImpl"))) != null) {
             try {
-                return asInterface.newAdLoaderBuilder(azhtVar, str, eVar, i);
+                return asInterface.newAdLoaderBuilder(bblpVar, str, eVar, i);
             } catch (RemoteException e) {
                 if (c.b()) {
                     h.e("Failed to create using dynamite package", e);

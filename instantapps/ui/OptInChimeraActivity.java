@@ -8,72 +8,72 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ScrollView;
 import com.google.android.gms.R;
-import defpackage.aqxd;
-import defpackage.bodp;
-import defpackage.bodr;
-import defpackage.boem;
-import defpackage.boeo;
-import defpackage.bolt;
-import defpackage.bolu;
-import defpackage.bolv;
-import defpackage.bolw;
-import defpackage.bomj;
-import defpackage.bomk;
-import defpackage.bomm;
-import defpackage.bomp;
-import defpackage.bomq;
+import defpackage.aszs;
 import defpackage.bp;
-import defpackage.brbu;
-import defpackage.dfaq;
+import defpackage.bqlf;
+import defpackage.bqlh;
+import defpackage.bqmc;
+import defpackage.bqme;
+import defpackage.bqtj;
+import defpackage.bqtk;
+import defpackage.bqtl;
+import defpackage.bqtm;
+import defpackage.bqtz;
+import defpackage.bqua;
+import defpackage.bquc;
+import defpackage.bquf;
+import defpackage.bqug;
+import defpackage.btjl;
+import defpackage.dhlw;
 import defpackage.ew;
-import defpackage.qet;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class OptInChimeraActivity extends qet {
+public class OptInChimeraActivity extends rxx {
     public ScrollView j;
     public View k;
     public Button l;
     public Button m;
-    public bomm n;
+    public bquc n;
     public ew o;
-    boeo p;
-    public boem q;
+    bqme p;
+    public bqmc q;
     long r;
     private View s;
     private View t;
 
     public final void a() {
-        p(new bolt());
+        p(new bqtj());
     }
 
     public final void k() {
-        bomm bommVar = this.n;
-        if (bommVar.f >= 3) {
+        bquc bqucVar = this.n;
+        if (bqucVar.f >= 3) {
             return;
         }
-        bommVar.f = 3;
-        View view = bommVar.e;
+        bqucVar.f = 3;
+        View view = bqucVar.e;
         float translationY = view.getTranslationY();
-        View view2 = bommVar.d;
-        bommVar.a(ObjectAnimator.ofFloat(view, "translationY", translationY, view.getHeight()), ObjectAnimator.ofFloat(view2, "alpha", view2.getAlpha(), 0.0f), new bomk(bommVar));
+        View view2 = bqucVar.d;
+        bqucVar.a(ObjectAnimator.ofFloat(view, "translationY", translationY, view.getHeight()), ObjectAnimator.ofFloat(view2, "alpha", view2.getAlpha(), 0.0f), new bqua(bqucVar));
     }
 
     public final void l(String str) {
-        boem boemVar = this.q;
-        if (boemVar != null) {
-            boemVar.b(str);
+        bqmc bqmcVar = this.q;
+        if (bqmcVar != null) {
+            bqmcVar.b(str);
         }
     }
 
     public final void m(int i) {
-        bomp bompVar = new bomp();
+        bquf bqufVar = new bquf();
         Bundle bundle = new Bundle();
         bundle.putInt("failureReason", i);
         Log.w("SetupFailureFragment", String.format("Instant Apps setup failure: %d", Integer.valueOf(i)));
         bundle.putParcelable("browserIntent", null);
-        bompVar.setArguments(bundle);
-        p(bompVar);
+        bqufVar.setArguments(bundle);
+        p(bqufVar);
     }
 
     public final void n() {
@@ -86,13 +86,13 @@ public class OptInChimeraActivity extends qet {
         k();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         this.q.b("OptInActivity.onBackPressed");
         n();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         setTheme(R.style.Theme_OptIn);
         super.onCreate(bundle);
@@ -101,13 +101,13 @@ public class OptInChimeraActivity extends qet {
             return;
         }
         getApplicationContext();
-        boeo boeoVar = new boeo();
-        this.p = boeoVar;
-        boeoVar.c("OptInActivity.onCreate").a();
+        bqme bqmeVar = new bqme();
+        this.p = bqmeVar;
+        bqmeVar.c("OptInActivity.onCreate").a();
         setContentView(R.layout.setup_activity);
         View findViewById = findViewById(R.id.empty_space);
         this.s = findViewById;
-        findViewById.setOnClickListener(new bolu(this));
+        findViewById.setOnClickListener(new bqtk(this));
         View findViewById2 = findViewById(R.id.bottom_sheet);
         this.t = findViewById2;
         findViewById2.setClickable(true);
@@ -118,30 +118,30 @@ public class OptInChimeraActivity extends qet {
         int dimensionPixelSize = getResources().getDimensionPixelSize(R.dimen.opt_in_button_height);
         this.l.setHeight(this.l.getPaddingTop() + this.l.getPaddingBottom() + dimensionPixelSize);
         this.m.setHeight(dimensionPixelSize + this.m.getPaddingTop() + this.m.getPaddingBottom());
-        this.n = new bomm(this, this.s, this.t);
+        this.n = new bquc(this, this.s, this.t);
         if (this.o == null) {
             this.o = getSupportFragmentManager();
         }
         s(false);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
-        boem boemVar = this.q;
-        if (boemVar != null) {
-            this.r = boemVar.a();
+        bqmc bqmcVar = this.q;
+        if (bqmcVar != null) {
+            this.r = bqmcVar.a();
             if (isFinishing()) {
                 this.q.b("OptInActivity.foregroundTime");
-                brbu brbuVar = this.p.a;
-                if (brbuVar != null) {
-                    brbuVar.i();
+                btjl btjlVar = this.p.a;
+                if (btjlVar != null) {
+                    btjlVar.i();
                 }
             }
         }
         super.onPause();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onRestoreInstanceState(Bundle bundle) {
         super.onRestoreInstanceState(bundle);
         long j = bundle != null ? bundle.getLong("stateOptInTotalVisibleMillis", 0L) : 0L;
@@ -151,36 +151,36 @@ public class OptInChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        boeo boeoVar = this.p;
-        if (boeoVar != null) {
-            this.q = boeoVar.a(this.r);
+        bqme bqmeVar = this.p;
+        if (bqmeVar != null) {
+            this.q = bqmeVar.a(this.r);
         }
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         bundle.putLong("stateOptInTotalVisibleMillis", this.r);
-        bundle.putBoolean("stateExising", bomm.a.contains(Integer.valueOf(this.n.f)));
+        bundle.putBoolean("stateExising", bquc.a.contains(Integer.valueOf(this.n.f)));
         super.onSaveInstanceState(bundle);
     }
 
-    public final void p(bomq bomqVar) {
+    public final void p(bqug bqugVar) {
         ew ewVar = this.o;
         if (ewVar.z) {
             return;
         }
         bp bpVar = new bp(ewVar);
-        bpVar.F(R.id.content_wrapper, bomqVar);
+        bpVar.F(R.id.content_wrapper, bqugVar);
         bpVar.b();
         this.o.an();
-        bomm bommVar = this.n;
-        if (bommVar.f != 0) {
+        bquc bqucVar = this.n;
+        if (bqucVar.f != 0) {
             return;
         }
-        bommVar.e.getViewTreeObserver().addOnGlobalLayoutListener(new bomj(bommVar));
+        bqucVar.e.getViewTreeObserver().addOnGlobalLayoutListener(new bqtz(bqucVar));
     }
 
     public final void q(int i, View.OnClickListener onClickListener) {
@@ -197,10 +197,10 @@ public class OptInChimeraActivity extends qet {
 
     public final void s(boolean z) {
         Activity containerActivity = getContainerActivity();
-        aqxd aqxdVar = bodp.a;
-        dfaq c = new bodr(containerActivity).c();
-        c.y(new bolw(this));
-        c.z(new bolv(this, z));
+        aszs aszsVar = bqlf.a;
+        dhlw c = new bqlh(containerActivity).c();
+        c.y(new bqtm(this));
+        c.z(new bqtl(this, z));
     }
 
     public final void t(Throwable th) {

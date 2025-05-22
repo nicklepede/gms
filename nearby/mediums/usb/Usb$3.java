@@ -1,17 +1,17 @@
 package com.google.android.gms.nearby.mediums.usb;
 
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.cjpv;
+import defpackage.clya;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class Usb$3 extends TracingBroadcastReceiver {
-    public final /* synthetic */ cjpv a;
+    public final /* synthetic */ clya a;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public Usb$3(cjpv cjpvVar) {
+    public Usb$3(clya clyaVar) {
         super("nearby", "DeviceAttachedReceiver");
-        this.a = cjpvVar;
+        this.a = clyaVar;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0051, code lost:
@@ -23,7 +23,7 @@ public class Usb$3 extends TracingBroadcastReceiver {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final void jz(android.content.Context r6, android.content.Intent r7) {
+    public final void jP(android.content.Context r6, android.content.Intent r7) {
         /*
             r5 = this;
             java.lang.String r6 = "device"
@@ -31,8 +31,8 @@ public class Usb$3 extends TracingBroadcastReceiver {
             android.hardware.usb.UsbDevice r6 = (android.hardware.usb.UsbDevice) r6
             r0 = 0
             if (r6 != 0) goto L19
-            cexi r6 = defpackage.cjfj.a
-            cexi r6 = r6.c()
+            chet r6 = defpackage.clno.a
+            chet r6 = r6.c()
             java.lang.Object[] r7 = new java.lang.Object[r0]
             java.lang.String r0 = "Received a USB attachment event without a USB device"
             r6.p(r0, r7)
@@ -40,8 +40,8 @@ public class Usb$3 extends TracingBroadcastReceiver {
         L19:
             java.lang.String r1 = r7.getAction()
             if (r1 != 0) goto L2d
-            cexi r6 = defpackage.cjfj.a
-            cexi r6 = r6.c()
+            chet r6 = defpackage.clno.a
+            chet r6 = r6.c()
             java.lang.Object[] r7 = new java.lang.Object[r0]
             java.lang.String r0 = "Received a USB attachment event without an action"
             r6.p(r0, r7)
@@ -71,25 +71,25 @@ public class Usb$3 extends TracingBroadcastReceiver {
         L55:
             if (r0 == 0) goto L74
             if (r0 == r4) goto L69
-            cexi r6 = defpackage.cjfj.a
-            cexi r6 = r6.e()
+            chet r6 = defpackage.clno.a
+            chet r6 = r6.e()
             java.lang.String r7 = r7.getAction()
             java.lang.String r0 = "Received unexpected broadcast %s"
             r6.h(r0, r7)
             return
         L69:
-            cjpv r7 = r5.a
-            cjps r0 = new cjps
+            clya r7 = r5.a
+            clxx r0 = new clxx
             r0.<init>()
             r7.e(r0)
             return
         L74:
-            cjpv r7 = r5.a
-            cjpr r0 = new cjpr
+            clya r7 = r5.a
+            clxw r0 = new clxw
             r0.<init>()
             r7.e(r0)
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.mediums.usb.Usb$3.jz(android.content.Context, android.content.Intent):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.mediums.usb.Usb$3.jP(android.content.Context, android.content.Intent):void");
     }
 }

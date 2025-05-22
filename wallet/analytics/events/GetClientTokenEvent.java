@@ -3,24 +3,24 @@ package com.google.android.gms.wallet.analytics.events;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
-import defpackage.difo;
-import defpackage.digs;
-import defpackage.disk;
-import defpackage.efdk;
-import defpackage.emdx;
-import defpackage.feen;
+import defpackage.dkqz;
+import defpackage.dksd;
+import defpackage.dldv;
+import defpackage.ehqn;
+import defpackage.eorl;
+import defpackage.fgtg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class GetClientTokenEvent extends AnalyticsSessionStartEndEvent implements digs {
-    public static final Parcelable.Creator CREATOR = new difo();
+public class GetClientTokenEvent extends AnalyticsSessionStartEndEvent implements dksd {
+    public static final Parcelable.Creator CREATOR = new dkqz();
     public final BuyFlowConfig c;
-    public final emdx d;
+    public final eorl d;
 
     public GetClientTokenEvent(Parcel parcel) {
         super(parcel);
         this.c = (BuyFlowConfig) parcel.readParcelable(GetClientTokenEvent.class.getClassLoader());
-        this.d = (emdx) efdk.f(parcel, (feen) emdx.a.iB(7, null));
+        this.d = (eorl) ehqn.f(parcel, (fgtg) eorl.a.iQ(7, null));
     }
 
     @Override // android.os.Parcelable
@@ -32,13 +32,13 @@ public class GetClientTokenEvent extends AnalyticsSessionStartEndEvent implement
     public final void writeToParcel(Parcel parcel, int i) {
         super.writeToParcel(parcel, i);
         parcel.writeParcelable(this.c, i);
-        efdk.o(this.d, parcel);
+        ehqn.o(this.d, parcel);
     }
 
-    public GetClientTokenEvent(BuyFlowConfig buyFlowConfig, emdx emdxVar) {
-        this.m = disk.a();
+    public GetClientTokenEvent(BuyFlowConfig buyFlowConfig, eorl eorlVar) {
+        this.m = dldv.a();
         this.c = buyFlowConfig;
-        this.d = emdxVar;
+        this.d = eorlVar;
         this.b = a(buyFlowConfig, this.a);
     }
 }

@@ -3,13 +3,13 @@ package com.google.android.gms.appset;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ugn;
+import defpackage.atzr;
+import defpackage.wcm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AppSetIdRequestParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ugn();
+    public static final Parcelable.Creator CREATOR = new wcm();
     public final String a;
     public final String b;
 
@@ -21,9 +21,9 @@ public class AppSetIdRequestParams extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

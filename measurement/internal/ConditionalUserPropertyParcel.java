@@ -3,14 +3,14 @@ package com.google.android.gms.measurement.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.cdhp;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cfqo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ConditionalUserPropertyParcel extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cdhp();
+    public static final Parcelable.Creator CREATOR = new cfqo();
     public String a;
     public String b;
     public UserAttributeParcel c;
@@ -39,23 +39,23 @@ public final class ConditionalUserPropertyParcel extends AbstractSafeParcelable 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, this.a, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.q(parcel, 5, this.d);
-        arxc.e(parcel, 6, this.e);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.t(parcel, 8, this.g, i, false);
-        arxc.q(parcel, 9, this.h);
-        arxc.t(parcel, 10, this.i, i, false);
-        arxc.q(parcel, 11, this.j);
-        arxc.t(parcel, 12, this.k, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, this.a, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.q(parcel, 5, this.d);
+        atzr.e(parcel, 6, this.e);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.t(parcel, 8, this.g, i, false);
+        atzr.q(parcel, 9, this.h);
+        atzr.t(parcel, 10, this.i, i, false);
+        atzr.q(parcel, 11, this.j);
+        atzr.t(parcel, 12, this.k, i, false);
+        atzr.c(parcel, a);
     }
 
     public ConditionalUserPropertyParcel(ConditionalUserPropertyParcel conditionalUserPropertyParcel) {
-        arwm.s(conditionalUserPropertyParcel);
+        atzb.s(conditionalUserPropertyParcel);
         this.a = conditionalUserPropertyParcel.a;
         this.b = conditionalUserPropertyParcel.b;
         this.c = conditionalUserPropertyParcel.c;

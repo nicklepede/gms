@@ -3,9 +3,9 @@ package com.google.android.gms.appdatasearch;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.trn;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.vnn;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -13,10 +13,10 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GlobalSearchQuerySpecification extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new trn();
+    public static final Parcelable.Creator CREATOR = new vnn();
     final CorpusId[] a;
     public final int b;
     final CorpusScoringInfo[] c;
@@ -94,7 +94,7 @@ public class GlobalSearchQuerySpecification extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof GlobalSearchQuerySpecification) {
             GlobalSearchQuerySpecification globalSearchQuerySpecification = (GlobalSearchQuerySpecification) obj;
-            if (arwb.b(Integer.valueOf(this.b), Integer.valueOf(globalSearchQuerySpecification.b)) && arwb.b(Integer.valueOf(this.d), Integer.valueOf(globalSearchQuerySpecification.d)) && arwb.b(Integer.valueOf(this.e), Integer.valueOf(globalSearchQuerySpecification.e)) && arwb.b(Integer.valueOf(this.f), Integer.valueOf(globalSearchQuerySpecification.f)) && arwb.b(this.g, globalSearchQuerySpecification.g) && arwb.b(Boolean.valueOf(this.h), Boolean.valueOf(globalSearchQuerySpecification.h)) && arwb.b(Boolean.valueOf(this.j), Boolean.valueOf(globalSearchQuerySpecification.j)) && arwb.b(Boolean.valueOf(this.k), Boolean.valueOf(globalSearchQuerySpecification.k)) && arwb.b(Boolean.valueOf(this.l), Boolean.valueOf(globalSearchQuerySpecification.l)) && arwb.b(this.s, globalSearchQuerySpecification.s) && arwb.b(this.o, globalSearchQuerySpecification.o) && arwb.b(this.p, globalSearchQuerySpecification.p) && Arrays.equals(this.a, globalSearchQuerySpecification.a) && Arrays.equals(this.i, globalSearchQuerySpecification.i) && Arrays.equals(this.c, globalSearchQuerySpecification.c) && Arrays.equals(this.m, globalSearchQuerySpecification.m) && Arrays.equals(this.n, globalSearchQuerySpecification.n) && arwb.b(this.q, globalSearchQuerySpecification.q)) {
+            if (atyq.b(Integer.valueOf(this.b), Integer.valueOf(globalSearchQuerySpecification.b)) && atyq.b(Integer.valueOf(this.d), Integer.valueOf(globalSearchQuerySpecification.d)) && atyq.b(Integer.valueOf(this.e), Integer.valueOf(globalSearchQuerySpecification.e)) && atyq.b(Integer.valueOf(this.f), Integer.valueOf(globalSearchQuerySpecification.f)) && atyq.b(this.g, globalSearchQuerySpecification.g) && atyq.b(Boolean.valueOf(this.h), Boolean.valueOf(globalSearchQuerySpecification.h)) && atyq.b(Boolean.valueOf(this.j), Boolean.valueOf(globalSearchQuerySpecification.j)) && atyq.b(Boolean.valueOf(this.k), Boolean.valueOf(globalSearchQuerySpecification.k)) && atyq.b(Boolean.valueOf(this.l), Boolean.valueOf(globalSearchQuerySpecification.l)) && atyq.b(this.s, globalSearchQuerySpecification.s) && atyq.b(this.o, globalSearchQuerySpecification.o) && atyq.b(this.p, globalSearchQuerySpecification.p) && Arrays.equals(this.a, globalSearchQuerySpecification.a) && Arrays.equals(this.i, globalSearchQuerySpecification.i) && Arrays.equals(this.c, globalSearchQuerySpecification.c) && Arrays.equals(this.m, globalSearchQuerySpecification.m) && Arrays.equals(this.n, globalSearchQuerySpecification.n) && atyq.b(this.q, globalSearchQuerySpecification.q)) {
                 return true;
             }
         }
@@ -148,24 +148,24 @@ public class GlobalSearchQuerySpecification extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.J(parcel, 1, this.a, i);
-        arxc.o(parcel, 2, this.b);
-        arxc.J(parcel, 3, this.c, i);
-        arxc.o(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.e(parcel, 8, this.h);
-        arxc.i(parcel, 9, this.i, false);
-        arxc.e(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.e(parcel, 12, this.l);
-        arxc.p(parcel, 13, this.m, false);
-        arxc.i(parcel, 14, this.n, false);
-        arxc.t(parcel, 15, this.o, i, false);
-        arxc.v(parcel, 16, this.p, false);
-        arxc.t(parcel, 18, this.q, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.J(parcel, 1, this.a, i);
+        atzr.o(parcel, 2, this.b);
+        atzr.J(parcel, 3, this.c, i);
+        atzr.o(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.e(parcel, 8, this.h);
+        atzr.i(parcel, 9, this.i, false);
+        atzr.e(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.e(parcel, 12, this.l);
+        atzr.p(parcel, 13, this.m, false);
+        atzr.i(parcel, 14, this.n, false);
+        atzr.t(parcel, 15, this.o, i, false);
+        atzr.v(parcel, 16, this.p, false);
+        atzr.t(parcel, 18, this.q, i, false);
+        atzr.c(parcel, a);
     }
 }

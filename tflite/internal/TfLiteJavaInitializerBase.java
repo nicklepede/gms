@@ -1,16 +1,16 @@
 package com.google.android.gms.tflite.internal;
 
 import android.content.Context;
-import defpackage.dffr;
-import defpackage.ffbf;
+import defpackage.dhqx;
+import defpackage.fhqd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TfLiteJavaInitializerBase extends dffr {
+public class TfLiteJavaInitializerBase extends dhqx {
     public TfLiteJavaInitializerBase(Context context) {
-        super(context, ffbf.CUSTOMER_3P_JAVA_API);
+        super(context, fhqd.CUSTOMER_3P_JAVA_API);
     }
 
-    @Override // defpackage.dffr
+    @Override // defpackage.dhqx
     protected native void initializeNative(Object obj);
 }

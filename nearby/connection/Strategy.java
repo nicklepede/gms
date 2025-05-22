@@ -3,15 +3,15 @@ package com.google.android.gms.nearby.connection;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cfgb;
+import defpackage.atzr;
+import defpackage.chnn;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class Strategy extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cfgb();
+    public static final Parcelable.Creator CREATOR = new chnn();
     public static final Strategy a = new Strategy(1, 3);
     public static final Strategy b = new Strategy(1, 2);
     public static final Strategy c = new Strategy(1, 1);
@@ -45,9 +45,9 @@ public final class Strategy extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.d;
-        int a2 = arxc.a(parcel);
-        arxc.o(parcel, 3, i2);
-        arxc.o(parcel, 4, this.e);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.o(parcel, 3, i2);
+        atzr.o(parcel, 4, this.e);
+        atzr.c(parcel, a2);
     }
 }

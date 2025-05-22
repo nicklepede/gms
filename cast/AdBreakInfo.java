@@ -3,15 +3,15 @@ package com.google.android.gms.cast;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.amac;
-import defpackage.amxr;
-import defpackage.arxc;
+import defpackage.aobn;
+import defpackage.aozc;
+import defpackage.atzr;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class AdBreakInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new amac();
+    public static final Parcelable.Creator CREATOR = new aobn();
     public final long a;
     public final String b;
     public final long c;
@@ -38,7 +38,7 @@ public class AdBreakInfo extends AbstractSafeParcelable {
             return false;
         }
         AdBreakInfo adBreakInfo = (AdBreakInfo) obj;
-        return amxr.u(this.b, adBreakInfo.b) && this.a == adBreakInfo.a && this.c == adBreakInfo.c && this.d == adBreakInfo.d && Arrays.equals(this.e, adBreakInfo.e) && this.f == adBreakInfo.f && this.g == adBreakInfo.g;
+        return aozc.u(this.b, adBreakInfo.b) && this.a == adBreakInfo.a && this.c == adBreakInfo.c && this.d == adBreakInfo.d && Arrays.equals(this.e, adBreakInfo.e) && this.f == adBreakInfo.f && this.g == adBreakInfo.g;
     }
 
     public final int hashCode() {
@@ -48,14 +48,14 @@ public class AdBreakInfo extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.a;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 2, j);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.q(parcel, 4, this.c);
-        arxc.e(parcel, 5, this.d);
-        arxc.w(parcel, 6, this.e, false);
-        arxc.e(parcel, 7, this.f);
-        arxc.e(parcel, 8, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 2, j);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.q(parcel, 4, this.c);
+        atzr.e(parcel, 5, this.d);
+        atzr.w(parcel, 6, this.e, false);
+        atzr.e(parcel, 7, this.f);
+        atzr.e(parcel, 8, this.g);
+        atzr.c(parcel, a);
     }
 }

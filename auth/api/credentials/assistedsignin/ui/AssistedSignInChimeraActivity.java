@@ -21,412 +21,413 @@ import com.google.android.gms.auth.api.identity.SigningInfoCompat;
 import com.google.android.gms.fido.fido2.api.common.FidoCredentialDetails;
 import com.google.android.gms.fido.fido2.api.common.PublicKeyCredential;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.acm;
-import defpackage.arxd;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bmcg;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgu;
-import defpackage.bmgx;
-import defpackage.eble;
-import defpackage.eigb;
-import defpackage.eiic;
-import defpackage.eiid;
-import defpackage.eiiw;
-import defpackage.eitj;
-import defpackage.eldw;
-import defpackage.elef;
-import defpackage.elfb;
-import defpackage.elfd;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.acr;
+import defpackage.atzs;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.boiy;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonm;
+import defpackage.bonp;
+import defpackage.edxt;
+import defpackage.ektg;
+import defpackage.ekvh;
+import defpackage.ekvi;
+import defpackage.ekwb;
+import defpackage.elgo;
+import defpackage.enrj;
+import defpackage.enrs;
+import defpackage.enso;
+import defpackage.ensq;
 import defpackage.ew;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.iru;
-import defpackage.irx;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.vqi;
-import defpackage.vtj;
-import defpackage.vuo;
-import defpackage.vwr;
-import defpackage.vws;
-import defpackage.wim;
-import defpackage.wio;
-import defpackage.wkg;
-import defpackage.wyb;
-import defpackage.xul;
-import defpackage.xum;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.itk;
+import defpackage.itn;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.xmj;
+import defpackage.xpl;
+import defpackage.xqq;
+import defpackage.xsv;
+import defpackage.xsw;
+import defpackage.yes;
+import defpackage.yeu;
+import defpackage.ygq;
+import defpackage.yuv;
+import defpackage.zsi;
+import defpackage.zsj;
 import j$.util.Objects;
 import java.util.Arrays;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AssistedSignInChimeraActivity extends qet {
-    private static final asot p = xul.a("AssistedSignInChimeraActivity");
-    public vws j;
-    public bmgq k;
+public class AssistedSignInChimeraActivity extends rxx {
+    private static final ausn p = zsi.a("AssistedSignInChimeraActivity");
+    public xsw j;
+    public boni k;
     public String l;
-    public abv m;
-    public abv n;
-    public abv o;
+    public aca m;
+    public aca n;
+    public aca o;
     private CredentialRequest q;
     private CallingAppInfoCompat r;
     private GetCredentialUserSelection s;
 
     private final void k(String str) {
-        a((vuo) new wio(eigb.a).c(28453, str));
+        a((xqq) new yeu(ektg.a).c(28453, str));
     }
 
-    public final void a(vuo vuoVar) {
+    public final void a(xqq xqqVar) {
         Intent intent;
         String str;
         Account account;
         CredentialRequest credentialRequest = this.q;
         if (credentialRequest == null) {
-            intent = vuoVar.b();
+            intent = xqqVar.b();
         } else {
             Intent intent2 = new Intent();
-            Object obj = vuoVar.a;
+            Object obj = xqqVar.a;
             if (obj != null) {
                 SignInCredential signInCredential = (SignInCredential) obj;
-                final vqi vqiVar = new vqi(signInCredential.a);
+                final xmj xmjVar = new xmj(signInCredential.a);
                 String str2 = signInCredential.f;
                 if (TextUtils.isEmpty(str2)) {
-                    vqiVar.e = "https://accounts.google.com";
+                    xmjVar.e = "https://accounts.google.com";
                     if (credentialRequest.f) {
                         String str3 = signInCredential.b;
-                        Objects.requireNonNull(vqiVar);
-                        vuo.c(str3, new iru() { // from class: vuj
-                            @Override // defpackage.iru
+                        Objects.requireNonNull(xmjVar);
+                        xqq.c(str3, new itk() { // from class: xql
+                            @Override // defpackage.itk
                             public final void a(Object obj2) {
-                                vqi.this.a = (String) obj2;
+                                xmj.this.a = (String) obj2;
                             }
                         });
                         String str4 = signInCredential.d;
-                        Objects.requireNonNull(vqiVar);
-                        vuo.c(str4, new iru() { // from class: vuk
-                            @Override // defpackage.iru
+                        Objects.requireNonNull(xmjVar);
+                        xqq.c(str4, new itk() { // from class: xqm
+                            @Override // defpackage.itk
                             public final void a(Object obj2) {
-                                vqi.this.g = (String) obj2;
+                                xmj.this.g = (String) obj2;
                             }
                         });
                         String str5 = signInCredential.c;
-                        Objects.requireNonNull(vqiVar);
-                        vuo.c(str5, new iru() { // from class: vul
-                            @Override // defpackage.iru
+                        Objects.requireNonNull(xmjVar);
+                        xqq.c(str5, new itk() { // from class: xqn
+                            @Override // defpackage.itk
                             public final void a(Object obj2) {
-                                vqi.this.f = (String) obj2;
+                                xmj.this.f = (String) obj2;
                             }
                         });
                         Uri uri = signInCredential.e;
-                        Objects.requireNonNull(vqiVar);
-                        vuo.c(uri, new iru() { // from class: vum
-                            @Override // defpackage.iru
+                        Objects.requireNonNull(xmjVar);
+                        xqq.c(uri, new itk() { // from class: xqo
+                            @Override // defpackage.itk
                             public final void a(Object obj2) {
-                                vqi.this.b = (Uri) obj2;
+                                xmj.this.b = (Uri) obj2;
                             }
                         });
                         String str6 = signInCredential.g;
                         if (str6 != null) {
-                            vqiVar.c = eitj.l(new IdToken("https://accounts.google.com", str6));
+                            xmjVar.c = elgo.l(new IdToken("https://accounts.google.com", str6));
                         }
                     }
                 } else {
-                    vqiVar.d = str2;
+                    xmjVar.d = str2;
                 }
-                intent2.putExtra("com.google.android.gms.credentials.Credential", vqiVar.a());
+                intent2.putExtra("com.google.android.gms.credentials.Credential", xmjVar.a());
             }
             intent = intent2;
         }
-        int a = vuoVar.a();
-        fecj k = vuoVar.k();
-        if (!k.b.L()) {
-            k.U();
+        int a = xqqVar.a();
+        fgrc l = xqqVar.l();
+        if (!l.b.L()) {
+            l.U();
         }
-        elfb elfbVar = (elfb) k.b;
-        elfb elfbVar2 = elfb.a;
-        elfbVar.f = 203;
-        elfbVar.b |= 8;
-        vws vwsVar = this.j;
+        enso ensoVar = (enso) l.b;
+        enso ensoVar2 = enso.a;
+        ensoVar.f = 203;
+        ensoVar.b |= 8;
+        xsw xswVar = this.j;
         String str7 = null;
-        elef c = null;
-        if (vwsVar != null) {
-            FidoCredentialDetails fidoCredentialDetails = vwsVar.O;
+        enrs c = null;
+        if (xswVar != null) {
+            FidoCredentialDetails fidoCredentialDetails = xswVar.P;
             if (fidoCredentialDetails != null) {
                 str = fidoCredentialDetails.a;
             } else {
-                InternalSignInCredentialWrapper internalSignInCredentialWrapper = vwsVar.N;
+                InternalSignInCredentialWrapper internalSignInCredentialWrapper = xswVar.O;
                 str = (internalSignInCredentialWrapper == null || (account = internalSignInCredentialWrapper.f) == null) ? null : account.name;
             }
-            vws vwsVar2 = this.j;
-            fecj v = eldw.a.v();
-            int size = vwsVar2.E.size();
+            xsw xswVar2 = this.j;
+            fgrc v = enrj.a.v();
+            int size = xswVar2.F.size();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            eldw eldwVar = (eldw) fecpVar;
-            eldwVar.b |= 2;
-            eldwVar.d = size;
-            boolean z = vwsVar2.R;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v.b;
+            enrj enrjVar = (enrj) fgriVar;
+            enrjVar.b |= 2;
+            enrjVar.d = size;
+            boolean z = xswVar2.S;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            fecp fecpVar2 = v.b;
-            eldw eldwVar2 = (eldw) fecpVar2;
-            eldwVar2.b |= 4;
-            eldwVar2.e = z;
-            boolean z2 = vwsVar2.S;
-            if (!fecpVar2.L()) {
+            fgri fgriVar2 = v.b;
+            enrj enrjVar2 = (enrj) fgriVar2;
+            enrjVar2.b |= 4;
+            enrjVar2.e = z;
+            boolean z2 = xswVar2.T;
+            if (!fgriVar2.L()) {
                 v.U();
             }
-            fecp fecpVar3 = v.b;
-            eldw eldwVar3 = (eldw) fecpVar3;
-            eldwVar3.b |= 8;
-            eldwVar3.f = z2;
-            boolean z3 = vwsVar2.U;
-            if (!fecpVar3.L()) {
+            fgri fgriVar3 = v.b;
+            enrj enrjVar3 = (enrj) fgriVar3;
+            enrjVar3.b |= 8;
+            enrjVar3.f = z2;
+            boolean z3 = xswVar2.V;
+            if (!fgriVar3.L()) {
                 v.U();
             }
-            eldw eldwVar4 = (eldw) v.b;
-            eldwVar4.b |= 16;
-            eldwVar4.g = z3;
-            boolean w = vwsVar2.w();
+            enrj enrjVar4 = (enrj) v.b;
+            enrjVar4.b |= 16;
+            enrjVar4.g = z3;
+            boolean w = xswVar2.w();
             if (!v.b.L()) {
                 v.U();
             }
-            eldw eldwVar5 = (eldw) v.b;
-            eldwVar5.b |= 32;
-            eldwVar5.h = w;
-            vuo vuoVar2 = (vuo) vwsVar2.m.hT();
-            if (vuoVar2 != null && vuoVar2.a != null) {
-                if (vwsVar2.X) {
-                    c = xum.a();
-                } else if (vwsVar2.O != null) {
-                    c = xum.b();
+            enrj enrjVar5 = (enrj) v.b;
+            enrjVar5.b |= 32;
+            enrjVar5.h = w;
+            xqq xqqVar2 = (xqq) xswVar2.n.ii();
+            if (xqqVar2 != null && xqqVar2.a != null) {
+                if (xswVar2.Y) {
+                    c = zsj.a();
+                } else if (xswVar2.P != null) {
+                    c = zsj.b();
                 } else {
-                    InternalSignInCredentialWrapper internalSignInCredentialWrapper2 = vwsVar2.N;
+                    InternalSignInCredentialWrapper internalSignInCredentialWrapper2 = xswVar2.O;
                     if (internalSignInCredentialWrapper2 != null) {
-                        c = xum.c(internalSignInCredentialWrapper2);
+                        c = zsj.c(internalSignInCredentialWrapper2);
                     }
                 }
                 if (c != null) {
                     if (!v.b.L()) {
                         v.U();
                     }
-                    eldw eldwVar6 = (eldw) v.b;
-                    eldwVar6.c = c;
-                    eldwVar6.b |= 1;
+                    enrj enrjVar6 = (enrj) v.b;
+                    enrjVar6.c = c;
+                    enrjVar6.b |= 1;
                 }
             }
-            if (!k.b.L()) {
-                k.U();
+            if (!l.b.L()) {
+                l.U();
             }
-            elfb elfbVar3 = (elfb) k.b;
-            eldw eldwVar7 = (eldw) v.Q();
-            eldwVar7.getClass();
-            elfbVar3.g = eldwVar7;
-            elfbVar3.b |= 16;
-            boolean z4 = vwsVar2.V;
-            if (!k.b.L()) {
-                k.U();
+            enso ensoVar3 = (enso) l.b;
+            enrj enrjVar7 = (enrj) v.Q();
+            enrjVar7.getClass();
+            ensoVar3.g = enrjVar7;
+            ensoVar3.b |= 16;
+            boolean z4 = xswVar2.W;
+            if (!l.b.L()) {
+                l.U();
             }
-            elfb elfbVar4 = (elfb) k.b;
-            elfbVar4.b |= 512;
-            elfbVar4.k = z4;
+            enso ensoVar4 = (enso) l.b;
+            ensoVar4.b |= 512;
+            ensoVar4.k = z4;
             str7 = str;
         }
         if (str7 != null) {
-            this.k = bmgp.a(this, str7);
+            this.k = bonh.a(this, str7);
         }
-        bmgq bmgqVar = this.k;
-        fecj v2 = elfd.a.v();
+        boni boniVar = this.k;
+        fgrc v2 = ensq.a.v();
         String str8 = this.l;
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar4 = v2.b;
-        elfd elfdVar = (elfd) fecpVar4;
+        fgri fgriVar4 = v2.b;
+        ensq ensqVar = (ensq) fgriVar4;
         str8.getClass();
-        elfdVar.b |= 2;
-        elfdVar.e = str8;
-        if (!fecpVar4.L()) {
+        ensqVar.b |= 2;
+        ensqVar.e = str8;
+        if (!fgriVar4.L()) {
             v2.U();
         }
-        fecp fecpVar5 = v2.b;
-        elfd elfdVar2 = (elfd) fecpVar5;
-        elfdVar2.d = 17;
-        elfdVar2.b |= 1;
-        if (!fecpVar5.L()) {
+        fgri fgriVar5 = v2.b;
+        ensq ensqVar2 = (ensq) fgriVar5;
+        ensqVar2.d = 17;
+        ensqVar2.b |= 1;
+        if (!fgriVar5.L()) {
             v2.U();
         }
-        elfd elfdVar3 = (elfd) v2.b;
-        elfb elfbVar5 = (elfb) k.Q();
-        elfbVar5.getClass();
-        elfdVar3.s = elfbVar5;
-        elfdVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-        bmgqVar.a((elfd) v2.Q());
-        vuoVar.f(p);
+        ensq ensqVar3 = (ensq) v2.b;
+        enso ensoVar5 = (enso) l.Q();
+        ensoVar5.getClass();
+        ensqVar3.s = ensoVar5;
+        ensqVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        boniVar.a((ensq) v2.Q());
+        xqqVar.f(p);
         setResult(a, intent);
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        this.k = bmgp.a(this, null);
-        this.l = (String) eiic.c(getIntent().getStringExtra("session_id"), bmgx.a());
-        BeginSignInRequest beginSignInRequest = (BeginSignInRequest) arxd.b(getIntent(), "begin_sign_in_request", BeginSignInRequest.CREATOR);
+        this.k = bonh.a(this, null);
+        this.l = (String) ekvh.c(getIntent().getStringExtra("session_id"), bonp.a());
+        BeginSignInRequest beginSignInRequest = (BeginSignInRequest) atzs.b(getIntent(), "begin_sign_in_request", BeginSignInRequest.CREATOR);
         if (beginSignInRequest == null) {
-            k(wkg.a("beginSignInRequest"));
+            k(ygq.a("beginSignInRequest"));
             return;
         }
         long longExtra = getIntent().getLongExtra("start_time_millis", System.currentTimeMillis());
-        this.q = (CredentialRequest) arxd.b(getIntent(), "credential_request", CredentialRequest.CREATOR);
-        GetCredentialUserSelection getCredentialUserSelection = (GetCredentialUserSelection) arxd.b(getIntent(), "get_credential_user_selection", GetCredentialUserSelection.CREATOR);
+        this.q = (CredentialRequest) atzs.b(getIntent(), "credential_request", CredentialRequest.CREATOR);
+        GetCredentialUserSelection getCredentialUserSelection = (GetCredentialUserSelection) atzs.b(getIntent(), "get_credential_user_selection", GetCredentialUserSelection.CREATOR);
         this.s = getCredentialUserSelection;
         if (getCredentialUserSelection != null) {
-            k(wkg.a("providerGetCredentialRequest"));
+            k(ygq.a("providerGetCredentialRequest"));
         }
-        ChromeOptions chromeOptions = (ChromeOptions) arxd.b(getIntent(), "chrome_option", ChromeOptions.CREATOR);
-        wim.a(this, beginSignInRequest.e);
+        ChromeOptions chromeOptions = (ChromeOptions) atzs.b(getIntent(), "chrome_option", ChromeOptions.CREATOR);
+        yes.a(this, beginSignInRequest.e);
         super.onCreate(bundle);
         getContainerActivity();
-        int i = eble.a;
-        bmgu.a(this, new eiiw() { // from class: vsi
-            @Override // defpackage.eiiw
-            public final void lB(Object obj) {
+        int i = edxt.a;
+        bonm.a(this, new ekwb() { // from class: xok
+            @Override // defpackage.ekwb
+            public final void lY(Object obj) {
                 AssistedSignInChimeraActivity assistedSignInChimeraActivity = AssistedSignInChimeraActivity.this;
-                assistedSignInChimeraActivity.k.a(bmgw.b(204, (bmgv) obj, assistedSignInChimeraActivity.l));
+                assistedSignInChimeraActivity.k.a(bono.b(204, (bonn) obj, assistedSignInChimeraActivity.l));
             }
         });
         if (this.s == null) {
-            String q = asng.q(this);
+            String q = aura.q(this);
             if (q == null) {
-                a((vuo) new wio(eigb.a).c(28442, "Cannot get calling package name."));
+                a((xqq) new yeu(ektg.a).c(28442, "Cannot get calling package name."));
                 return;
             }
             this.r = new CallingAppInfoCompat(q, SigningInfoCompat.a, null);
         } else {
-            CallingAppInfoCompat callingAppInfoCompat = (CallingAppInfoCompat) arxd.b(getIntent(), "calling_app_info_compat", CallingAppInfoCompat.CREATOR);
+            CallingAppInfoCompat callingAppInfoCompat = (CallingAppInfoCompat) atzs.b(getIntent(), "calling_app_info_compat", CallingAppInfoCompat.CREATOR);
             if (callingAppInfoCompat == null) {
-                k(wkg.a("callingAppInfoCompat"));
+                k(ygq.a("callingAppInfoCompat"));
                 return;
             }
             this.r = callingAppInfoCompat;
         }
-        eiid a = bmcg.a(getApplicationContext(), this.r.a);
+        ekvi a = boiy.a(getApplicationContext(), this.r.a);
         if (!a.h()) {
-            a((vuo) new wio(eigb.a).c(28442, "Cannot get app name and icon."));
+            a((xqq) new yeu(ektg.a).c(28442, "Cannot get app name and icon."));
             return;
         }
-        vws vwsVar = (vws) new jrh(this, new vwr(getApplication(), this.r, (irx) a.c(), beginSignInRequest, this.l, this.s, chromeOptions, longExtra)).a(vws.class);
-        this.j = vwsVar;
-        vwsVar.m.g(this, new jpd() { // from class: vsj
-            @Override // defpackage.jpd
+        String stringExtra = getIntent().getStringExtra("caller_verification_token_id");
+        xsw xswVar = (xsw) new jxw(this, new xsv(getApplication(), this.r, (itn) a.c(), beginSignInRequest, this.l, this.s, chromeOptions, longExtra, stringExtra)).a(xsw.class);
+        this.j = xswVar;
+        xswVar.n.g(this, new jvs() { // from class: xol
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                AssistedSignInChimeraActivity.this.a((vuo) obj);
+                AssistedSignInChimeraActivity.this.a((xqq) obj);
             }
         });
-        this.j.p.g(this, new jpd() { // from class: vsk
-            @Override // defpackage.jpd
+        this.j.q.g(this, new jvs() { // from class: xom
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                AssistedSignInChimeraActivity.this.m.b(new ace((PendingIntent) obj).a());
+                AssistedSignInChimeraActivity.this.m.b(new acj((PendingIntent) obj).a());
             }
         });
-        this.j.q.g(this, new jpd() { // from class: vsl
-            @Override // defpackage.jpd
+        this.j.r.g(this, new jvs() { // from class: xon
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                AssistedSignInChimeraActivity.this.n.b(new ace((PendingIntent) obj).a());
+                AssistedSignInChimeraActivity.this.n.b(new acj((PendingIntent) obj).a());
             }
         });
-        this.j.r.g(this, new jpd() { // from class: vsm
-            @Override // defpackage.jpd
+        this.j.s.g(this, new jvs() { // from class: xoo
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 AssistedSignInChimeraActivity.this.o.b((Intent) obj);
             }
         });
-        this.m = registerForActivityResult(new acm(), new abt() { // from class: vsn
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        this.m = registerForActivityResult(new acr(), new aby() { // from class: xop
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 int i2 = ((ActivityResult) obj).a;
-                vws vwsVar2 = AssistedSignInChimeraActivity.this.j;
+                xsw xswVar2 = AssistedSignInChimeraActivity.this.j;
                 boolean z = i2 == -1;
-                vwsVar2.S = z;
+                xswVar2.T = z;
                 if (z) {
-                    vwsVar2.s.f(bmiy.REFETCH_CREDENTIALS);
-                } else if (vwsVar2.q()) {
-                    vwsVar2.s.f(bmiy.CHOOSE_MULTI_CREDENTIAL);
+                    xswVar2.t.f(bopq.REFETCH_CREDENTIALS);
+                } else if (xswVar2.q()) {
+                    xswVar2.t.f(bopq.CHOOSE_MULTI_CREDENTIAL);
                 } else {
-                    vwsVar2.s.k(16, "Zuul key retrieval failed.");
+                    xswVar2.t.k(16, "Zuul key retrieval failed.");
                 }
             }
         });
-        acm acmVar = new acm();
-        final vws vwsVar2 = this.j;
-        Objects.requireNonNull(vwsVar2);
-        iru iruVar = new iru() { // from class: vso
-            @Override // defpackage.iru
+        acr acrVar = new acr();
+        final xsw xswVar2 = this.j;
+        Objects.requireNonNull(xswVar2);
+        itk itkVar = new itk() { // from class: xoq
+            @Override // defpackage.itk
             public final void a(Object obj) {
                 PublicKeyCredential publicKeyCredential = (PublicKeyCredential) obj;
-                vws vwsVar3 = vws.this;
-                if (vwsVar3.O == null) {
-                    Iterator it = vwsVar3.C.iterator();
+                xsw xswVar3 = xsw.this;
+                if (xswVar3.P == null) {
+                    Iterator it = xswVar3.D.iterator();
                     while (true) {
                         if (!it.hasNext()) {
                             break;
                         }
                         FidoCredentialDetails fidoCredentialDetails = (FidoCredentialDetails) it.next();
                         if (Arrays.equals(fidoCredentialDetails.a(), publicKeyCredential.e())) {
-                            vwsVar3.O = fidoCredentialDetails;
+                            xswVar3.P = fidoCredentialDetails;
                             break;
                         }
                     }
                 }
                 String str = publicKeyCredential.b;
-                arwm.s(str);
-                vwsVar3.K = new SignInCredential(str, null, null, null, null, null, null, null, publicKeyCredential);
-                vwsVar3.s.g();
+                atzb.s(str);
+                xswVar3.L = new SignInCredential(str, null, null, null, null, null, null, null, publicKeyCredential);
+                xswVar3.t.g();
             }
         };
-        final vws vwsVar3 = this.j;
-        Objects.requireNonNull(vwsVar3);
-        this.n = registerForActivityResult(acmVar, new wyb(iruVar, new iru() { // from class: vsp
-            @Override // defpackage.iru
+        final xsw xswVar3 = this.j;
+        Objects.requireNonNull(xswVar3);
+        this.n = registerForActivityResult(acrVar, new yuv(itkVar, new itk() { // from class: xor
+            @Override // defpackage.itk
             public final void a(Object obj) {
-                wya wyaVar = (wya) obj;
-                PublicKeyCredential publicKeyCredential = wyaVar.b;
-                vws vwsVar4 = vws.this;
+                yuu yuuVar = (yuu) obj;
+                PublicKeyCredential publicKeyCredential = yuuVar.b;
+                xsw xswVar4 = xsw.this;
                 if (publicKeyCredential != null) {
-                    vwsVar4.K = new SignInCredential((String) eiic.c(publicKeyCredential.b, "error"), null, null, null, null, null, null, null, publicKeyCredential);
+                    xswVar4.L = new SignInCredential((String) ekvh.c(publicKeyCredential.b, "error"), null, null, null, null, null, null, null, publicKeyCredential);
                 }
-                vwsVar4.s.j(wyaVar.a);
+                xswVar4.t.j(yuuVar.a);
             }
         }, 28451));
-        this.o = registerForActivityResult(new acl(), new abt() { // from class: vsq
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        this.o = registerForActivityResult(new acq(), new aby() { // from class: xos
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 ActivityResult activityResult = (ActivityResult) obj;
                 int i2 = activityResult.a;
                 Intent intent = activityResult.b;
-                vws vwsVar4 = AssistedSignInChimeraActivity.this.j;
+                xsw xswVar4 = AssistedSignInChimeraActivity.this.j;
                 try {
-                    vwsVar4.M = FullScreenConsentChimeraActivity.a(i2, intent);
-                    vwsVar4.s.f(bmiy.COMPLETE_SIGN_IN);
-                } catch (bmeo e) {
-                    vwsVar4.s.j(e);
+                    xswVar4.N = FullScreenConsentChimeraActivity.a(i2, intent);
+                    xswVar4.t.f(bopq.COMPLETE_SIGN_IN);
+                } catch (bolg e) {
+                    xswVar4.t.j(e);
                 }
             }
         });
         ew supportFragmentManager = getSupportFragmentManager();
         if (supportFragmentManager.h("AssistedSignInDialogFragment") == null) {
-            new vtj().show(supportFragmentManager, "AssistedSignInDialogFragment");
+            new xpl().show(supportFragmentManager, "AssistedSignInDialogFragment");
         }
     }
 }

@@ -8,10 +8,10 @@ import android.os.Parcelable;
 import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
 import com.google.android.gms.ads.nonagon.util.cache.PoolConfiguration;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
+import defpackage.atzr;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class NonagonRequestParcel extends AbstractSafeParcelable {
     public static final Parcelable.Creator CREATOR = new p();
@@ -52,22 +52,22 @@ public class NonagonRequestParcel extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Bundle bundle = this.a;
-        int a = arxc.a(parcel);
-        arxc.g(parcel, 1, bundle, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.x(parcel, 5, this.e, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.t(parcel, 10, this.i, i, false);
-        arxc.v(parcel, 11, this.j, false);
-        arxc.e(parcel, 12, this.k);
-        arxc.e(parcel, 13, this.l);
-        arxc.g(parcel, 14, this.m, false);
-        arxc.g(parcel, 15, this.n, false);
-        arxc.o(parcel, 16, this.o);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.g(parcel, 1, bundle, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.x(parcel, 5, this.e, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.t(parcel, 10, this.i, i, false);
+        atzr.v(parcel, 11, this.j, false);
+        atzr.e(parcel, 12, this.k);
+        atzr.e(parcel, 13, this.l);
+        atzr.g(parcel, 14, this.m, false);
+        atzr.g(parcel, 15, this.n, false);
+        atzr.o(parcel, 16, this.o);
+        atzr.c(parcel, a);
     }
 }

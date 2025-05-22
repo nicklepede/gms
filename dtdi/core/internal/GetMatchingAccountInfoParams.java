@@ -7,20 +7,20 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.IntermediateAccountInfo;
 import com.google.android.gms.dtdi.core.TokenWrapper;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.aywb;
-import defpackage.aywo;
-import defpackage.aywp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bazv;
+import defpackage.bbai;
+import defpackage.bbaj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class GetMatchingAccountInfoParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new aywb();
+    public static final Parcelable.Creator CREATOR = new bazv();
     public TokenWrapper a;
     public IntermediateAccountInfo b;
-    public aywp c;
+    public bbaj c;
 
     private GetMatchingAccountInfoParams() {
     }
@@ -31,7 +31,7 @@ public final class GetMatchingAccountInfoParams extends AbstractSafeParcelable {
         }
         if (obj instanceof GetMatchingAccountInfoParams) {
             GetMatchingAccountInfoParams getMatchingAccountInfoParams = (GetMatchingAccountInfoParams) obj;
-            if (arwb.b(this.a, getMatchingAccountInfoParams.a) && arwb.b(this.b, getMatchingAccountInfoParams.b) && arwb.b(this.c, getMatchingAccountInfoParams.c)) {
+            if (atyq.b(this.a, getMatchingAccountInfoParams.a) && atyq.b(this.b, getMatchingAccountInfoParams.b) && atyq.b(this.c, getMatchingAccountInfoParams.c)) {
                 return true;
             }
         }
@@ -44,23 +44,23 @@ public final class GetMatchingAccountInfoParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.D(parcel, 3, this.c.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.D(parcel, 3, this.c.asBinder());
+        atzr.c(parcel, a);
     }
 
     public GetMatchingAccountInfoParams(TokenWrapper tokenWrapper, IntermediateAccountInfo intermediateAccountInfo, IBinder iBinder) {
-        aywp aywoVar;
+        bbaj bbaiVar;
         if (iBinder == null) {
-            aywoVar = null;
+            bbaiVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.dtdi.core.internal.IGetMatchingAccountInfoStatusCallback");
-            aywoVar = queryLocalInterface instanceof aywp ? (aywp) queryLocalInterface : new aywo(iBinder);
+            bbaiVar = queryLocalInterface instanceof bbaj ? (bbaj) queryLocalInterface : new bbai(iBinder);
         }
         this.a = tokenWrapper;
         this.b = intermediateAccountInfo;
-        this.c = aywoVar;
+        this.c = bbaiVar;
     }
 }

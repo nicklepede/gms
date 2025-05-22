@@ -5,19 +5,19 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.service.GenericLiteProtoParcelable;
-import defpackage.djbx;
-import defpackage.eicy;
-import defpackage.feen;
+import defpackage.dlnq;
+import defpackage.ekqe;
+import defpackage.fgtg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class WriteDocumentServerRequest extends GenericLiteProtoParcelable {
-    public static final Parcelable.Creator CREATOR = new djbx();
+    public static final Parcelable.Creator CREATOR = new dlnq();
     public final Uri d;
     public final String e;
 
     public WriteDocumentServerRequest(Account account, byte[] bArr, Uri uri, String str) {
-        super(account, (feen) eicy.a.iB(7, null), bArr);
+        super(account, (fgtg) ekqe.a.iQ(7, null), bArr);
         this.d = uri;
         this.e = str;
     }

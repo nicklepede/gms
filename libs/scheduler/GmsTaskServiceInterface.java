@@ -1,18 +1,18 @@
 package com.google.android.gms.libs.scheduler;
 
-import defpackage.byik;
-import defpackage.byln;
-import defpackage.enss;
+import defpackage.carc;
+import defpackage.cauf;
+import defpackage.eqgl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public interface GmsTaskServiceInterface extends byik {
-    int a(byln bylnVar);
+public interface GmsTaskServiceInterface extends carc {
+    int a(cauf caufVar);
 
     @Deprecated
-    void fR();
+    void gf();
 
-    boolean hs(String str);
+    boolean hI(String str);
 
-    enss im(byln bylnVar);
+    eqgl iB(cauf caufVar);
 }

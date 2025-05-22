@@ -5,12 +5,12 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.ambz;
-import defpackage.amxr;
-import defpackage.arxc;
-import defpackage.aspq;
-import defpackage.eite;
-import defpackage.eitj;
+import defpackage.aodk;
+import defpackage.aozc;
+import defpackage.atzr;
+import defpackage.autk;
+import defpackage.elgj;
+import defpackage.elgo;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,7 +21,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcelable {
     public static final Parcelable.Creator CREATOR;
@@ -45,8 +45,8 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
     private JSONObject r;
 
     static {
-        Pattern pattern = amxr.a;
-        CREATOR = new ambz();
+        Pattern pattern = aozc.a;
+        CREATOR = new aodk();
     }
 
     public MediaInfo(String str, int i, String str2, MediaMetadata mediaMetadata, long j, List list, TextTrackStyle textTrackStyle, String str3, List list2, List list3, String str4, VastAdsRequest vastAdsRequest, long j2, String str5, String str6, String str7, String str8) {
@@ -103,7 +103,7 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
             if (j2 <= -1) {
                 jSONObject.put("duration", JSONObject.NULL);
             } else {
-                jSONObject.put("duration", amxr.a(j2));
+                jSONObject.put("duration", aozc.a(j2));
             }
             if (this.e != null) {
                 JSONArray jSONArray = new JSONArray();
@@ -269,10 +269,10 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
                     JSONObject jSONObject6 = new JSONObject();
                     try {
                         jSONObject6.put("id", adBreakInfo.b);
-                        jSONObject6.put("position", amxr.a(adBreakInfo.a));
+                        jSONObject6.put("position", aozc.a(adBreakInfo.a));
                         jSONObject6.put("isWatched", adBreakInfo.d);
                         jSONObject6.put("isEmbedded", adBreakInfo.f);
-                        jSONObject6.put("duration", amxr.a(adBreakInfo.c));
+                        jSONObject6.put("duration", aozc.a(adBreakInfo.c));
                         jSONObject6.put("expanded", adBreakInfo.g);
                         String[] strArr = adBreakInfo.e;
                         if (strArr != null) {
@@ -294,10 +294,10 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
                     JSONObject jSONObject7 = new JSONObject();
                     try {
                         jSONObject7.put("id", adBreakClipInfo.a);
-                        jSONObject7.put("duration", amxr.a(adBreakClipInfo.c));
+                        jSONObject7.put("duration", aozc.a(adBreakClipInfo.c));
                         long j5 = adBreakClipInfo.j;
                         if (j5 != j) {
-                            jSONObject7.put("whenSkippable", amxr.a(j5));
+                            jSONObject7.put("whenSkippable", aozc.a(j5));
                         }
                         String str7 = adBreakClipInfo.h;
                         if (str7 != null) {
@@ -347,7 +347,7 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
             }
             long j6 = this.j;
             if (j6 != j) {
-                jSONObject.put("startAbsoluteTime", amxr.a(j6));
+                jSONObject.put("startAbsoluteTime", aozc.a(j6));
             }
             jSONObject.putOpt("atvEntity", this.k);
             Object obj4 = this.m;
@@ -393,7 +393,7 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
         if (z != (jSONObject2 == null)) {
             return false;
         }
-        return (jSONObject == null || jSONObject2 == null || aspq.b(jSONObject, jSONObject2)) && amxr.u(this.o, mediaInfo.o) && this.a == mediaInfo.a && amxr.u(this.b, mediaInfo.b) && amxr.u(this.c, mediaInfo.c) && this.d == mediaInfo.d && amxr.u(this.e, mediaInfo.e) && amxr.u(this.f, mediaInfo.f) && amxr.u(this.p, mediaInfo.p) && amxr.u(this.q, mediaInfo.q) && amxr.u(this.h, mediaInfo.h) && amxr.u(this.i, mediaInfo.i) && this.j == mediaInfo.j && amxr.u(this.k, mediaInfo.k) && amxr.u(this.l, mediaInfo.l) && amxr.u(this.m, mediaInfo.m) && amxr.u(this.n, mediaInfo.n);
+        return (jSONObject == null || jSONObject2 == null || autk.b(jSONObject, jSONObject2)) && aozc.u(this.o, mediaInfo.o) && this.a == mediaInfo.a && aozc.u(this.b, mediaInfo.b) && aozc.u(this.c, mediaInfo.c) && this.d == mediaInfo.d && aozc.u(this.e, mediaInfo.e) && aozc.u(this.f, mediaInfo.f) && aozc.u(this.p, mediaInfo.p) && aozc.u(this.q, mediaInfo.q) && aozc.u(this.h, mediaInfo.h) && aozc.u(this.i, mediaInfo.i) && this.j == mediaInfo.j && aozc.u(this.k, mediaInfo.k) && aozc.u(this.l, mediaInfo.l) && aozc.u(this.m, mediaInfo.m) && aozc.u(this.n, mediaInfo.n);
     }
 
     public final int hashCode() {
@@ -404,31 +404,31 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
     public final void writeToParcel(Parcel parcel, int i) {
         JSONObject jSONObject = this.r;
         this.g = jSONObject == null ? null : jSONObject.toString();
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         String str = this.o;
         if (str == null) {
             str = "";
         }
-        arxc.v(parcel, 2, str, false);
-        arxc.o(parcel, 3, this.a);
-        arxc.v(parcel, 4, this.b, false);
-        arxc.t(parcel, 5, this.c, i, false);
-        arxc.q(parcel, 6, this.d);
-        arxc.y(parcel, 7, this.e, false);
-        arxc.t(parcel, 8, this.f, i, false);
-        arxc.v(parcel, 9, this.g, false);
+        atzr.v(parcel, 2, str, false);
+        atzr.o(parcel, 3, this.a);
+        atzr.v(parcel, 4, this.b, false);
+        atzr.t(parcel, 5, this.c, i, false);
+        atzr.q(parcel, 6, this.d);
+        atzr.y(parcel, 7, this.e, false);
+        atzr.t(parcel, 8, this.f, i, false);
+        atzr.v(parcel, 9, this.g, false);
         List list = this.p;
-        arxc.y(parcel, 10, list == null ? null : DesugarCollections.unmodifiableList(list), false);
+        atzr.y(parcel, 10, list == null ? null : DesugarCollections.unmodifiableList(list), false);
         List list2 = this.q;
-        arxc.y(parcel, 11, list2 != null ? DesugarCollections.unmodifiableList(list2) : null, false);
-        arxc.v(parcel, 12, this.h, false);
-        arxc.t(parcel, 13, this.i, i, false);
-        arxc.q(parcel, 14, this.j);
-        arxc.v(parcel, 15, this.k, false);
-        arxc.v(parcel, 16, this.l, false);
-        arxc.v(parcel, 17, this.m, false);
-        arxc.v(parcel, 18, this.n, false);
-        arxc.c(parcel, a);
+        atzr.y(parcel, 11, list2 != null ? DesugarCollections.unmodifiableList(list2) : null, false);
+        atzr.v(parcel, 12, this.h, false);
+        atzr.t(parcel, 13, this.i, i, false);
+        atzr.q(parcel, 14, this.j);
+        atzr.v(parcel, 15, this.k, false);
+        atzr.v(parcel, 16, this.l, false);
+        atzr.v(parcel, 17, this.m, false);
+        atzr.v(parcel, 18, this.n, false);
+        atzr.c(parcel, a);
     }
 
     public MediaInfo(JSONObject jSONObject) {
@@ -436,7 +436,7 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
         double d;
         int i;
         int i2;
-        eitj eitjVar;
+        elgo elgoVar;
         String optString = jSONObject.optString("streamType", "NONE");
         if ("NONE".equals(optString)) {
             this.a = 0;
@@ -447,7 +447,7 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
         } else {
             this.a = -1;
         }
-        this.b = amxr.j(jSONObject, "contentType");
+        this.b = aozc.j(jSONObject, "contentType");
         if (jSONObject.has("metadata")) {
             JSONObject jSONObject2 = jSONObject.getJSONObject("metadata");
             MediaMetadata mediaMetadata = new MediaMetadata(jSONObject2.getInt("metadataType"));
@@ -459,7 +459,7 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
         if (this.a != 2 && jSONObject.has("duration") && !jSONObject.isNull("duration")) {
             double optDouble = jSONObject.optDouble("duration", 0.0d);
             if (!Double.isNaN(optDouble) && !Double.isInfinite(optDouble) && optDouble >= 0.0d) {
-                this.d = amxr.c(optDouble);
+                this.d = aozc.c(optDouble);
             }
         }
         if (jSONObject.has("tracks")) {
@@ -478,10 +478,10 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
                 } else {
                     i = "VIDEO".equals(optString2) ? 3 : 0;
                 }
-                String j2 = amxr.j(jSONObject3, "trackContentId");
-                String j3 = amxr.j(jSONObject3, "trackContentType");
-                String j4 = amxr.j(jSONObject3, "name");
-                String j5 = amxr.j(jSONObject3, "language");
+                String j2 = aozc.j(jSONObject3, "trackContentId");
+                String j3 = aozc.j(jSONObject3, "trackContentType");
+                String j4 = aozc.j(jSONObject3, "name");
+                String j5 = aozc.j(jSONObject3, "language");
                 if (jSONObject3.has("subtype")) {
                     String string = jSONObject3.getString("subtype");
                     if ("SUBTITLES".equals(string)) {
@@ -499,17 +499,17 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
                     i2 = 0;
                 }
                 if (jSONObject3.has("roles")) {
-                    int i4 = eitj.d;
-                    eite eiteVar = new eite();
+                    int i4 = elgo.d;
+                    elgj elgjVar = new elgj();
                     JSONArray jSONArray2 = jSONObject3.getJSONArray("roles");
                     for (int i5 = 0; i5 < jSONArray2.length(); i5++) {
-                        eiteVar.i(jSONArray2.optString(i5));
+                        elgjVar.i(jSONArray2.optString(i5));
                     }
-                    eitjVar = eiteVar.g();
+                    elgoVar = elgjVar.g();
                 } else {
-                    eitjVar = null;
+                    elgoVar = null;
                 }
-                arrayList.add(new MediaTrack(j, i, j2, j3, j4, j5, i2, eitjVar, jSONObject3.optJSONObject("customData")));
+                arrayList.add(new MediaTrack(j, i, j2, j3, j4, j5, i2, elgoVar, jSONObject3.optJSONObject("customData")));
                 i3++;
                 d2 = d3;
             }
@@ -554,7 +554,7 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
             if (textTrackStyle.f == 2) {
                 textTrackStyle.h = jSONObject4.optInt("windowRoundedCornerRadius", 0);
             }
-            textTrackStyle.i = amxr.j(jSONObject4, "fontFamily");
+            textTrackStyle.i = aozc.j(jSONObject4, "fontFamily");
             if (jSONObject4.has("fontGenericFamily")) {
                 String string4 = jSONObject4.getString("fontGenericFamily");
                 if ("SANS_SERIF".equals(string4)) {
@@ -592,19 +592,19 @@ public class MediaInfo extends AbstractSafeParcelable implements ReflectedParcel
         }
         b(jSONObject);
         this.r = jSONObject.optJSONObject("customData");
-        this.h = amxr.j(jSONObject, "entity");
-        this.k = amxr.j(jSONObject, "atvEntity");
+        this.h = aozc.j(jSONObject, "entity");
+        this.k = aozc.j(jSONObject, "atvEntity");
         this.i = VastAdsRequest.a(jSONObject.optJSONObject("vmapAdsRequest"));
         if (jSONObject.has("startAbsoluteTime") && !jSONObject.isNull("startAbsoluteTime")) {
             double optDouble2 = jSONObject.optDouble("startAbsoluteTime");
             if (!Double.isNaN(optDouble2) && !Double.isInfinite(optDouble2) && optDouble2 >= d) {
-                this.j = amxr.c(optDouble2);
+                this.j = aozc.c(optDouble2);
             }
         }
         if (jSONObject.has("contentUrl")) {
             this.l = jSONObject.optString("contentUrl");
         }
-        this.m = amxr.j(jSONObject, "hlsSegmentFormat");
-        this.n = amxr.j(jSONObject, "hlsVideoSegmentFormat");
+        this.m = aozc.j(jSONObject, "hlsSegmentFormat");
+        this.n = aozc.j(jSONObject, "hlsVideoSegmentFormat");
     }
 }

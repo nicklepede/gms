@@ -4,36 +4,36 @@ import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.update.SystemUpdateStatus;
 import com.google.android.gms.update.phone.installation.InstallationEventIntentOperation;
-import defpackage.arxo;
-import defpackage.dfak;
-import defpackage.dhdf;
-import defpackage.dhjt;
-import defpackage.fqtk;
+import defpackage.auad;
+import defpackage.dhlq;
+import defpackage.djol;
+import defpackage.djuz;
+import defpackage.ftnj;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class InstallationEventIntentOperation extends IntentOperation {
-    private static final arxo a = dhjt.h("InstallationEventIntentOperation");
+    private static final auad a = djuz.h("InstallationEventIntentOperation");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         a.h("Received intent: %s", intent);
-        if (fqtk.c() && Objects.equals(intent.getAction(), "com.google.android.gms.update.SYSTEM_UPDATE_DOWNLOAD_STARTED")) {
-            dhdf.a(this).e().z(new dfak() { // from class: dhnk
-                @Override // defpackage.dfak
-                public final void gn(Object obj) {
+        if (ftnj.c() && Objects.equals(intent.getAction(), "com.google.android.gms.update.SYSTEM_UPDATE_DOWNLOAD_STARTED")) {
+            djol.a(this).e().z(new dhlq() { // from class: djyq
+                @Override // defpackage.dhlq
+                public final void gC(Object obj) {
                     SystemUpdateStatus systemUpdateStatus = (SystemUpdateStatus) obj;
-                    arxo arxoVar = dhnq.a;
-                    if (fqtk.c() && dhnq.c(InstallationEventIntentOperation.this) && !systemUpdateStatus.N) {
-                        fecj v = ekfz.a.v();
+                    auad auadVar = djyw.a;
+                    if (ftnj.c() && djyw.c(InstallationEventIntentOperation.this) && !systemUpdateStatus.N) {
+                        fgrc v = emtl.a.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ekfz ekfzVar = (ekfz) v.b;
-                        ekfzVar.f = 2;
-                        ekfzVar.b |= 8;
-                        dhnq.d(v, systemUpdateStatus);
+                        emtl emtlVar = (emtl) v.b;
+                        emtlVar.f = 2;
+                        emtlVar.b |= 8;
+                        djyw.d(v, systemUpdateStatus);
                     }
                 }
             });

@@ -5,15 +5,15 @@ import android.text.TextUtils;
 import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.CategoryInfo;
 import com.google.android.gms.reminders.model.CategoryInfoEntity;
-import defpackage.cxeb;
-import defpackage.cxed;
+import defpackage.cznx;
+import defpackage.cznz;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class CategoryInfoRef extends cxeb implements CategoryInfo {
+public class CategoryInfoRef extends cznx implements CategoryInfo {
     public CategoryInfoRef(DataHolder dataHolder, int i, String str) {
         super(dataHolder, i, str);
     }
@@ -52,7 +52,7 @@ public class CategoryInfoRef extends cxeb implements CategoryInfo {
         return 0;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof CategoryInfo)) {
             return false;
@@ -63,18 +63,18 @@ public class CategoryInfoRef extends cxeb implements CategoryInfo {
         return CategoryInfoEntity.e(this, (CategoryInfo) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return CategoryInfoEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new CategoryInfoEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxed.a(new CategoryInfoEntity(this), parcel);
+        cznz.a(new CategoryInfoEntity(this), parcel);
     }
 }

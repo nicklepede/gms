@@ -6,21 +6,21 @@ import android.util.AttributeSet;
 import android.view.View;
 import com.google.android.chimera.FragmentManager;
 import com.google.android.wallet.ui.common.ImageWithCaptionView;
-import defpackage.arwb;
-import defpackage.ding;
-import defpackage.djgw;
-import defpackage.djgx;
-import defpackage.efdk;
-import defpackage.ehzo;
+import defpackage.atyq;
+import defpackage.dkyr;
+import defpackage.dlsp;
+import defpackage.dlsq;
+import defpackage.ehqn;
+import defpackage.ekmu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class CvcHintImageView extends ImageWithCaptionView implements View.OnClickListener {
     public FragmentManager a;
     private String i;
     private String j;
-    private ehzo k;
-    private djgw l;
+    private ekmu k;
+    private dlsp l;
 
     public CvcHintImageView(Context context) {
         super(context);
@@ -31,15 +31,15 @@ public class CvcHintImageView extends ImageWithCaptionView implements View.OnCli
         return (this.i == null || this.k == null || this.j == null) ? false : true;
     }
 
-    public final void a(String str, String str2, ehzo ehzoVar) {
-        if (arwb.b(this.i, str) && arwb.b(this.j, str2) && arwb.b(this.k, ehzoVar)) {
+    public final void a(String str, String str2, ekmu ekmuVar) {
+        if (atyq.b(this.i, str) && atyq.b(this.j, str2) && atyq.b(this.k, ekmuVar)) {
             return;
         }
         this.i = str;
         this.j = str2;
-        this.k = ehzoVar;
+        this.k = ekmuVar;
         if (r()) {
-            o(this.k, ding.o(getContext()));
+            o(this.k, dkyr.o(getContext()));
         } else {
             setVisibility(8);
         }
@@ -59,7 +59,7 @@ public class CvcHintImageView extends ImageWithCaptionView implements View.OnCli
                 super.setVisibility(0);
                 setAlpha(1.0f);
                 animate().alpha(0.0f);
-                animate().setListener(new djgx(this, i));
+                animate().setListener(new dlsq(this, i));
             }
         }
     }
@@ -75,15 +75,15 @@ public class CvcHintImageView extends ImageWithCaptionView implements View.OnCli
         }
         String str = this.i;
         String str2 = this.j;
-        ehzo ehzoVar = this.k;
-        djgw djgwVar = new djgw();
+        ekmu ekmuVar = this.k;
+        dlsp dlspVar = new dlsp();
         Bundle bundle = new Bundle();
         bundle.putString("hintTitle", str);
         bundle.putString("hintText", str2);
-        efdk.j(bundle, "hintImage", ehzoVar);
-        djgwVar.setArguments(bundle);
-        this.l = djgwVar;
-        djgwVar.show(this.a, "cvcHintFragment");
+        ehqn.j(bundle, "hintImage", ekmuVar);
+        dlspVar.setArguments(bundle);
+        this.l = dlspVar;
+        dlspVar.show(this.a, "cvcHintFragment");
     }
 
     @Override // android.widget.ImageView, android.view.View

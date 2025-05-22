@@ -1,10 +1,10 @@
 package com.google.android.gms.growth.featuredrops.storage.database;
 
-import defpackage.bkkd;
-import defpackage.kpm;
+import defpackage.bmqt;
+import defpackage.mhx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public abstract class FeatureDropsDatabase extends kpm {
-    public abstract bkkd v();
+public abstract class FeatureDropsDatabase extends mhx {
+    public abstract bmqt v();
 }

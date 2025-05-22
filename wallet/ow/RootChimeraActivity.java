@@ -21,52 +21,52 @@ import com.google.android.gms.wallet.service.ow.CreateWalletObjectsServiceReques
 import com.google.android.gms.wallet.shared.ApplicationParameters;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
 import defpackage.a;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.dezg;
-import defpackage.dfag;
-import defpackage.dfah;
-import defpackage.dfaj;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.dfas;
-import defpackage.dfax;
-import defpackage.dfay;
-import defpackage.dfaz;
-import defpackage.dfbc;
-import defpackage.difg;
-import defpackage.digu;
-import defpackage.dikj;
-import defpackage.dilm;
-import defpackage.diln;
-import defpackage.dimd;
-import defpackage.dimf;
-import defpackage.dimg;
-import defpackage.ding;
-import defpackage.disx;
-import defpackage.ditw;
-import defpackage.diud;
-import defpackage.djdf;
-import defpackage.djdh;
-import defpackage.djdj;
-import defpackage.djdl;
-import defpackage.efdk;
-import defpackage.efua;
-import defpackage.efub;
-import defpackage.emdf;
-import defpackage.euln;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.feen;
-import defpackage.pob;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.dhkm;
+import defpackage.dhlm;
+import defpackage.dhln;
+import defpackage.dhlp;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.dhly;
+import defpackage.dhmd;
+import defpackage.dhme;
+import defpackage.dhmf;
+import defpackage.dhmi;
+import defpackage.dkqr;
+import defpackage.dksf;
+import defpackage.dkvu;
+import defpackage.dkwx;
+import defpackage.dkwy;
+import defpackage.dkxo;
+import defpackage.dkxq;
+import defpackage.dkxr;
+import defpackage.dkyr;
+import defpackage.dlei;
+import defpackage.dlfh;
+import defpackage.dlfo;
+import defpackage.dloy;
+import defpackage.dlpa;
+import defpackage.dlpc;
+import defpackage.dlpe;
+import defpackage.ehqn;
+import defpackage.eihd;
+import defpackage.eihe;
+import defpackage.eoqt;
+import defpackage.exbg;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgtg;
+import defpackage.rhf;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class RootChimeraActivity extends pob implements View.OnClickListener, dimd, efua, difg {
-    public static final String a = dimg.b("createWalletObjects");
+public class RootChimeraActivity extends rhf implements View.OnClickListener, dkxo, eihd, dkqr {
+    public static final String a = dkxr.b("createWalletObjects");
     public boolean b;
     public boolean c;
     public ButtonBar d;
@@ -74,31 +74,31 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
     public View f;
     public TopBarView g;
     public Account h;
-    dezg i;
-    private efub j;
+    dhkm i;
+    private eihe j;
     private String k;
     private String l;
     private String m;
-    private euln n;
+    private exbg n;
     private boolean o;
     private boolean q;
     private BuyFlowConfig r;
     private HashSet s;
     private int p = -1;
-    private final diud t = new disx(this);
+    private final dlfo t = new dlei(this);
 
-    private final dimg n() {
-        return (dimg) getSupportFragmentManager().findFragmentByTag(a);
+    private final dkxr n() {
+        return (dkxr) getSupportFragmentManager().findFragmentByTag(a);
     }
 
     private final void o() {
-        if (!djdl.a(this)) {
+        if (!dlpe.a(this)) {
             j();
             return;
         }
         if (!this.s.contains(this.h)) {
             this.s.add(this.h);
-            getSupportFragmentManager().beginTransaction().add(dimf.a(this.h, djdj.e(this.r.b)), "RetrieveAuthTokensFragment").commit();
+            getSupportFragmentManager().beginTransaction().add(dkxq.a(this.h, dlpc.e(this.r.b)), "RetrieveAuthTokensFragment").commit();
         }
         if (this.c) {
             this.f.setVisibility(8);
@@ -111,61 +111,61 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
         if (n() != null) {
             Log.e("RootChimeraActivity", "Creating a new TransactionRetainerFragment when one already exists.");
         }
-        getSupportFragmentManager().beginTransaction().add(dimg.a(2, this.r, this.h), a).commit();
+        getSupportFragmentManager().beginTransaction().add(dkxr.a(2, this.r, this.h), a).commit();
         getSupportFragmentManager().executePendingTransactions();
     }
 
     private final void q() {
         this.o = true;
         u();
-        ditw ditwVar = n().b;
-        euln eulnVar = this.n;
-        arwm.m(ditwVar.G(), "Must specify connection to OwIntService!");
-        if (ditwVar.g(eulnVar)) {
+        dlfh dlfhVar = n().b;
+        exbg exbgVar = this.n;
+        atzb.m(dlfhVar.G(), "Must specify connection to OwIntService!");
+        if (dlfhVar.g(exbgVar)) {
             return;
         }
-        Message.obtain(ditwVar.u, 18, new CreateWalletObjectsServiceRequest(ditwVar.b, eulnVar)).sendToTarget();
+        Message.obtain(dlfhVar.u, 18, new CreateWalletObjectsServiceRequest(dlfhVar.b, exbgVar)).sendToTarget();
     }
 
     private final void r() {
-        fecj v = emdf.a.v();
+        fgrc v = eoqt.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        emdf emdfVar = (emdf) v.b;
-        emdfVar.c = 3;
-        emdfVar.b |= 1;
+        eoqt eoqtVar = (eoqt) v.b;
+        eoqtVar.c = 3;
+        eoqtVar.b |= 1;
         String stringExtra = getIntent().getStringExtra("com.google.android.gms.wallet.WOBS_ISSUER_NAME");
         if (!v.b.L()) {
             v.U();
         }
-        emdf emdfVar2 = (emdf) v.b;
+        eoqt eoqtVar2 = (eoqt) v.b;
         stringExtra.getClass();
-        emdfVar2.b |= 2;
-        emdfVar2.d = stringExtra;
+        eoqtVar2.b |= 2;
+        eoqtVar2.d = stringExtra;
         String stringExtra2 = getIntent().getStringExtra("com.google.android.gms.wallet.EXTRA_WOBS_ISSUER_CLASS_ID");
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        emdf emdfVar3 = (emdf) fecpVar;
+        fgri fgriVar = v.b;
+        eoqt eoqtVar3 = (eoqt) fgriVar;
         stringExtra2.getClass();
-        emdfVar3.b |= 4;
-        emdfVar3.e = stringExtra2;
-        if (!fecpVar.L()) {
+        eoqtVar3.b |= 4;
+        eoqtVar3.e = stringExtra2;
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        emdf emdfVar4 = (emdf) fecpVar2;
-        emdfVar4.f = 1;
-        emdfVar4.b |= 8;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v.b;
+        eoqt eoqtVar4 = (eoqt) fgriVar2;
+        eoqtVar4.f = 1;
+        eoqtVar4.b |= 8;
+        if (!fgriVar2.L()) {
             v.U();
         }
-        emdf emdfVar5 = (emdf) v.b;
-        emdfVar5.g = 0;
-        emdfVar5.b |= 16;
-        CreateWalletObjectsEvent.b(this, this.r, (emdf) v.Q());
+        eoqt eoqtVar5 = (eoqt) v.b;
+        eoqtVar5.g = 0;
+        eoqtVar5.b |= 16;
+        CreateWalletObjectsEvent.b(this, this.r, (eoqt) v.Q());
         i(0, null);
     }
 
@@ -191,12 +191,12 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
         this.g.b(!this.o);
     }
 
-    @Override // defpackage.dimd
+    @Override // defpackage.dkxo
     public final void ac() {
         r();
     }
 
-    @Override // defpackage.dimd
+    @Override // defpackage.dkxo
     public final void ad(int i) {
         if (i == 3) {
             f(7);
@@ -205,7 +205,7 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
         }
     }
 
-    @Override // defpackage.dimd
+    @Override // defpackage.dkxo
     public final void ae() {
         Fragment findFragmentByTag = getSupportFragmentManager().findFragmentByTag("RetrieveAuthTokensFragment");
         if (findFragmentByTag != null) {
@@ -213,7 +213,7 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
         }
     }
 
-    @Override // defpackage.efua
+    @Override // defpackage.eihd
     public final void ak(int i, int i2) {
         if (i2 != 1000) {
             Log.e("RootChimeraActivity", a.j(i2, "Unknown error dialog error code: "));
@@ -225,7 +225,7 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
     }
 
     public final void e() {
-        dilm[] dilmVarArr;
+        dkwx[] dkwxVarArr;
         RootChimeraActivity rootChimeraActivity;
         if (!this.o) {
             this.e.setVisibility(8);
@@ -239,25 +239,25 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
         TopBarView topBarView = this.g;
         AccountSelector accountSelector = topBarView.a;
         if (accountSelector != null) {
-            digu.a();
-            Account[] c = digu.c(topBarView.getContext());
+            dksf.a();
+            Account[] c = dksf.c(topBarView.getContext());
             if (c == null) {
-                dilmVarArr = null;
+                dkwxVarArr = null;
             } else {
                 int length = c.length;
-                dilm[] dilmVarArr2 = new dilm[length];
+                dkwx[] dkwxVarArr2 = new dkwx[length];
                 for (int i = 0; i < length; i++) {
-                    dilmVarArr2[i] = new dilm(c[i]);
+                    dkwxVarArr2[i] = new dkwx(c[i]);
                 }
-                dilmVarArr = dilmVarArr2;
+                dkwxVarArr = dkwxVarArr2;
             }
-            int length2 = dilmVarArr.length;
+            int length2 = dkwxVarArr.length;
             if (length2 > 1) {
-                accountSelector.b.setAdapter((SpinnerAdapter) new diln(accountSelector.getContext(), dilmVarArr));
+                accountSelector.b.setAdapter((SpinnerAdapter) new dkwy(accountSelector.getContext(), dkwxVarArr));
                 accountSelector.b.setVisibility(0);
             } else {
                 if (length2 == 1) {
-                    accountSelector.a = dilmVarArr[0].a;
+                    accountSelector.a = dkwxVarArr[0].a;
                 }
                 accountSelector.b.setVisibility(8);
             }
@@ -279,13 +279,13 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
 
     public final void f(int i) {
         Intent intent = new Intent();
-        dikj.b(this.r, intent, i);
+        dkvu.b(this.r, intent, i);
         m(5);
         i(1, intent);
     }
 
     public final void g(Account account) {
-        if (arwb.b(account, this.h)) {
+        if (atyq.b(account, this.h)) {
             return;
         }
         getIntent().removeExtra("com.google.android.gms.wallet.EXTRA_GOOGLE_TRANSACTION_ID");
@@ -293,13 +293,13 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
         getIntent().removeExtra("com.google.android.gms.wallet.EXTRA_SELECTED_ADDRESS_ID");
         this.h = account;
         t();
-        dimg n = n();
+        dkxr n = n();
         if (n != null) {
             getSupportFragmentManager().beginTransaction().remove(n).commit();
         }
         getSupportFragmentManager().executePendingTransactions();
-        djdh b = BuyFlowConfig.b(this.r);
-        djdf b2 = ApplicationParameters.b(this.r.b);
+        dlpa b = BuyFlowConfig.b(this.r);
+        dloy b2 = ApplicationParameters.b(this.r.b);
         b2.d(account);
         b.b(b2.a);
         this.r = b.a();
@@ -320,69 +320,69 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
         if (this.j != null) {
             getSupportFragmentManager().beginTransaction().remove(this.j).commit();
         }
-        efub d = efub.d();
+        eihe d = eihe.d();
         this.j = d;
         d.a = this;
         d.show(getSupportFragmentManager(), "RootChimeraActivity.NETWORK_ERROR_DIALOG");
     }
 
-    @Override // defpackage.edmf
-    public final Account kW() {
-        return this.h;
-    }
-
-    @Override // defpackage.difg
+    @Override // defpackage.dkqr
     public final BuyFlowConfig l() {
         return this.r;
     }
 
+    @Override // defpackage.efzb
+    public final Account ll() {
+        return this.h;
+    }
+
     public final void m(int i) {
-        fecj v = emdf.a.v();
+        fgrc v = eoqt.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        emdf emdfVar = (emdf) fecpVar;
-        emdfVar.c = i - 1;
-        emdfVar.b |= 1;
+        fgri fgriVar = v.b;
+        eoqt eoqtVar = (eoqt) fgriVar;
+        eoqtVar.c = i - 1;
+        eoqtVar.b |= 1;
         String str = this.l;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        emdf emdfVar2 = (emdf) fecpVar2;
+        fgri fgriVar2 = v.b;
+        eoqt eoqtVar2 = (eoqt) fgriVar2;
         str.getClass();
-        emdfVar2.b |= 2;
-        emdfVar2.d = str;
+        eoqtVar2.b |= 2;
+        eoqtVar2.d = str;
         String str2 = this.k;
-        if (!fecpVar2.L()) {
+        if (!fgriVar2.L()) {
             v.U();
         }
-        emdf emdfVar3 = (emdf) v.b;
+        eoqt eoqtVar3 = (eoqt) v.b;
         str2.getClass();
-        emdfVar3.b |= 4;
-        emdfVar3.e = str2;
+        eoqtVar3.b |= 4;
+        eoqtVar3.e = str2;
         int i2 = getIntent().getIntExtra("com.google.android.gms.wallet.EXTRA_CREATE_MODE", 0) == 1 ? 3 : 2;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar3 = v.b;
-        emdf emdfVar4 = (emdf) fecpVar3;
-        emdfVar4.f = i2 - 1;
-        emdfVar4.b |= 8;
+        fgri fgriVar3 = v.b;
+        eoqt eoqtVar4 = (eoqt) fgriVar3;
+        eoqtVar4.f = i2 - 1;
+        eoqtVar4.b |= 8;
         if (i == 2) {
             int i3 = true == this.c ? 3 : 2;
-            if (!fecpVar3.L()) {
+            if (!fgriVar3.L()) {
                 v.U();
             }
-            emdf emdfVar5 = (emdf) v.b;
-            emdfVar5.g = i3 - 1;
-            emdfVar5.b |= 16;
+            eoqt eoqtVar5 = (eoqt) v.b;
+            eoqtVar5.g = i3 - 1;
+            eoqtVar5.b |= 16;
         }
-        CreateWalletObjectsEvent.b(this, this.r, (emdf) v.Q());
+        CreateWalletObjectsEvent.b(this, this.r, (eoqt) v.Q());
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         if (this.c) {
             i(-1, null);
@@ -402,18 +402,18 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
         }
     }
 
-    @Override // defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         String string;
         String string2;
         BuyFlowConfig buyFlowConfig = (BuyFlowConfig) getIntent().getParcelableExtra("buyFlowConfig");
         this.r = buyFlowConfig;
-        arwm.s(buyFlowConfig);
+        atzb.s(buyFlowConfig);
         super.onCreate(bundle);
-        ding.C(this, this.r, ding.a, false);
+        dkyr.C(this, this.r, dkyr.a, false);
         setContentView(R.layout.wallet_activity_simple_dialog);
         if (this.i == null) {
-            this.i = new dezg(this);
+            this.i = new dhkm(this);
         }
         ButtonBar buttonBar = (ButtonBar) findViewById(R.id.button_bar);
         this.d = buttonBar;
@@ -425,8 +425,8 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
         u();
         setTitle(R.string.common_google_pay_icon_with_text_content_description);
         this.s = new HashSet();
-        arwm.s(this.r.b);
-        arwm.s(this.r.b.b);
+        atzb.s(this.r.b);
+        atzb.s(this.r.b.b);
         if (bundle != null) {
             this.p = bundle.getInt("serviceConnectionSavePoint", -1);
             this.o = bundle.getBoolean("remoteOperationInProgress", false);
@@ -436,13 +436,13 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
                 this.s.addAll(bundle.getParcelableArrayList("accountsThatHaveRequestedAuthTokens"));
             }
         }
-        this.n = (euln) efdk.b(getIntent(), "com.google.android.gms.wallet.CREATE_WALLET_OBJECTS_REQUEST", (feen) euln.a.iB(7, null));
+        this.n = (exbg) ehqn.b(getIntent(), "com.google.android.gms.wallet.CREATE_WALLET_OBJECTS_REQUEST", (fgtg) exbg.a.iQ(7, null));
         this.l = getIntent().getStringExtra("com.google.android.gms.wallet.WOBS_ISSUER_NAME");
         this.k = getIntent().getStringExtra("com.google.android.gms.wallet.EXTRA_WOBS_ISSUER_CLASS_ID");
         this.m = getIntent().getStringExtra("com.google.android.gms.wallet.WOBS_OBJECT_DESCRIPTION");
         int intExtra = getIntent().getIntExtra("com.google.android.gms.wallet.EXTRA_CREATE_MODE", 0);
-        digu.a();
-        this.c = intExtra == 1 && digu.c(this).length == 1;
+        dksf.a();
+        this.c = intExtra == 1 && dksf.c(this).length == 1;
         TextView textView = (TextView) findViewById(R.id.confirmation_text);
         if (this.c) {
             this.d.c.setText(getString(R.string.common_got_it));
@@ -484,10 +484,10 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
             return;
         }
         this.e.setVisibility(0);
-        dfaq e = this.i.e();
-        dfak dfakVar = new dfak() { // from class: disv
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        dhlw e = this.i.e();
+        dhlq dhlqVar = new dhlq() { // from class: dleg
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 String str;
                 RootChimeraActivity rootChimeraActivity = RootChimeraActivity.this;
                 AccountInfo accountInfo = (AccountInfo) obj;
@@ -498,42 +498,42 @@ public class RootChimeraActivity extends pob implements View.OnClickListener, di
                 rootChimeraActivity.e();
             }
         };
-        Executor executor = dfax.a;
-        dfaj dfajVar = new dfaj(dfbc.a(executor), dfakVar);
-        dfaz dfazVar = (dfaz) e;
-        dfas dfasVar = dfazVar.b;
-        dfasVar.a(dfajVar);
-        dfay.c(this).g(dfajVar);
-        dfazVar.A();
-        dfag dfagVar = new dfag(dfbc.a(executor), new dfah() { // from class: disw
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        Executor executor = dhmd.a;
+        dhlp dhlpVar = new dhlp(dhmi.a(executor), dhlqVar);
+        dhmf dhmfVar = (dhmf) e;
+        dhly dhlyVar = dhmfVar.b;
+        dhlyVar.a(dhlpVar);
+        dhme.c(this).g(dhlpVar);
+        dhmfVar.A();
+        dhlm dhlmVar = new dhlm(dhmi.a(executor), new dhln() { // from class: dleh
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 RootChimeraActivity.this.e();
             }
         });
-        dfasVar.a(dfagVar);
-        dfay.c(this).g(dfagVar);
-        dfazVar.A();
+        dhlyVar.a(dhlmVar);
+        dhme.c(this).g(dhlmVar);
+        dhmfVar.A();
     }
 
-    @Override // defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onPause() {
         super.onPause();
         t();
     }
 
-    @Override // defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        efub efubVar = (efub) getSupportFragmentManager().findFragmentByTag("RootChimeraActivity.NETWORK_ERROR_DIALOG");
-        this.j = efubVar;
-        if (efubVar != null) {
-            efubVar.a = this;
+        eihe eiheVar = (eihe) getSupportFragmentManager().findFragmentByTag("RootChimeraActivity.NETWORK_ERROR_DIALOG");
+        this.j = eiheVar;
+        if (eiheVar != null) {
+            eiheVar.a = this;
         }
         s();
     }
 
-    @Override // defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putParcelable("account", this.h);

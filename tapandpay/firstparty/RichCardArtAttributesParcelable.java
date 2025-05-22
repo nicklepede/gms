@@ -3,15 +3,15 @@ package com.google.android.gms.tapandpay.firstparty;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dexs;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dhiw;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class RichCardArtAttributesParcelable extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dexs();
+    public static final Parcelable.Creator CREATOR = new dhiw();
     public int a;
     public String b;
     public String c;
@@ -30,7 +30,7 @@ public final class RichCardArtAttributesParcelable extends AbstractSafeParcelabl
         }
         if (obj instanceof RichCardArtAttributesParcelable) {
             RichCardArtAttributesParcelable richCardArtAttributesParcelable = (RichCardArtAttributesParcelable) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(richCardArtAttributesParcelable.a)) && arwb.b(this.b, richCardArtAttributesParcelable.b) && arwb.b(this.c, richCardArtAttributesParcelable.c) && arwb.b(this.d, richCardArtAttributesParcelable.d) && arwb.b(this.e, richCardArtAttributesParcelable.e) && arwb.b(Integer.valueOf(this.f), Integer.valueOf(richCardArtAttributesParcelable.f)) && arwb.b(Integer.valueOf(this.g), Integer.valueOf(richCardArtAttributesParcelable.g)) && arwb.b(this.h, richCardArtAttributesParcelable.h)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(richCardArtAttributesParcelable.a)) && atyq.b(this.b, richCardArtAttributesParcelable.b) && atyq.b(this.c, richCardArtAttributesParcelable.c) && atyq.b(this.d, richCardArtAttributesParcelable.d) && atyq.b(this.e, richCardArtAttributesParcelable.e) && atyq.b(Integer.valueOf(this.f), Integer.valueOf(richCardArtAttributesParcelable.f)) && atyq.b(Integer.valueOf(this.g), Integer.valueOf(richCardArtAttributesParcelable.g)) && atyq.b(this.h, richCardArtAttributesParcelable.h)) {
                 return true;
             }
         }
@@ -43,16 +43,16 @@ public final class RichCardArtAttributesParcelable extends AbstractSafeParcelabl
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.o(parcel, 7, this.g);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.o(parcel, 7, this.g);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.c(parcel, a);
     }
 
     public RichCardArtAttributesParcelable(int i, String str, String str2, String str3, String str4, int i2, int i3, String str5) {

@@ -4,46 +4,46 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.Looper;
 import com.google.android.chimera.Service;
-import defpackage.asmf;
-import defpackage.asrk;
-import defpackage.dfzl;
-import defpackage.dfzq;
-import defpackage.dfzr;
-import defpackage.dfzu;
-import defpackage.dgba;
-import defpackage.eiig;
-import defpackage.ejhf;
-import defpackage.fsnb;
+import defpackage.aupz;
+import defpackage.auve;
+import defpackage.dikq;
+import defpackage.dikv;
+import defpackage.dikw;
+import defpackage.dikz;
+import defpackage.dimf;
+import defpackage.ekvl;
+import defpackage.eluo;
+import defpackage.fvik;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class EmergencyPersistentChimeraService extends Service implements dfzl {
+public class EmergencyPersistentChimeraService extends Service implements dikq {
     private Executor a;
-    private dfzq b;
-    private dgba c;
+    private dikv b;
+    private dimf c;
 
     private final void b() {
-        eiig.q(Looper.myLooper() == Looper.getMainLooper(), "checkServiceLifecycle: Looper.myLooper() != Looper.getMainLooper()");
+        ekvl.r(Looper.myLooper() == Looper.getMainLooper(), "checkServiceLifecycle: Looper.myLooper() != Looper.getMainLooper()");
         if (this.b.l()) {
             if (this.c == null) {
-                ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11246)).x("starting outgoing sms listener");
-                dgba dgbaVar = new dgba(this, this.a, this);
-                this.c = dgbaVar;
-                dgbaVar.a();
+                ((eluo) ((eluo) dikw.a.h()).ai((char) 11249)).x("starting outgoing sms listener");
+                dimf dimfVar = new dimf(this, this.a, this);
+                this.c = dimfVar;
+                dimfVar.a();
                 return;
             }
             return;
         }
-        dgba dgbaVar2 = this.c;
-        if (dgbaVar2 != null) {
-            dgbaVar2.b();
+        dimf dimfVar2 = this.c;
+        if (dimfVar2 != null) {
+            dimfVar2.b();
             this.c = null;
-            ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11245)).x("stopping outgoing sms listener");
+            ((eluo) ((eluo) dikw.a.h()).ai((char) 11248)).x("stopping outgoing sms listener");
         }
     }
 
-    @Override // defpackage.dfzl
+    @Override // defpackage.dikq
     public final void a() {
         b();
     }
@@ -55,24 +55,24 @@ public class EmergencyPersistentChimeraService extends Service implements dfzl {
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        asmf asmfVar = new asmf(1, 9);
+        aupz aupzVar = new aupz(1, 9);
         if (this.a == null) {
-            this.a = asmfVar;
+            this.a = aupzVar;
         }
-        dfzq b = dfzq.b(this);
+        dikv b = dikv.b(this);
         this.b = b;
-        b.j(this, new asrk(Looper.getMainLooper()));
-        if (fsnb.J()) {
-            dfzu.d().g(this, "EmergencyPersistentChimeraService#onCreate");
+        b.j(this, new auve(Looper.getMainLooper()));
+        if (fvik.J()) {
+            dikz.d().g(this, "EmergencyPersistentChimeraService#onCreate");
         }
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
         this.b.k(this);
-        dgba dgbaVar = this.c;
-        if (dgbaVar != null) {
-            dgbaVar.b();
+        dimf dimfVar = this.c;
+        if (dimfVar != null) {
+            dimfVar.b();
         }
         super.onDestroy();
     }

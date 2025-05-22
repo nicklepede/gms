@@ -6,36 +6,36 @@ import android.util.Log;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.chimera.config.InvalidConfigException;
 import com.google.android.chimera.config.ModuleManager;
-import defpackage.anyf;
-import defpackage.aohx;
-import defpackage.aohz;
-import defpackage.aoia;
-import defpackage.aoib;
-import defpackage.aoid;
-import defpackage.asnj;
-import defpackage.bul;
-import defpackage.feab;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.feeq;
+import defpackage.apzx;
+import defpackage.aqjq;
+import defpackage.aqjs;
+import defpackage.aqjt;
+import defpackage.aqju;
+import defpackage.aqjw;
+import defpackage.aurd;
+import defpackage.buy;
+import defpackage.fgou;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.fgtj;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class ModuleSetJournalUpdate$ModuleSetJournalIntentOperation extends IntentOperation {
-    private static final Comparator a = new Comparator() { // from class: aoic
+    private static final Comparator a = new Comparator() { // from class: aqjv
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
-            aoib aoibVar = (aoib) obj;
-            aoib aoibVar2 = (aoib) obj2;
-            return eiqk.b.d(aoibVar.c, aoibVar2.c).c(aoibVar.d, aoibVar2.d).a();
+            aqju aqjuVar = (aqju) obj;
+            aqju aqjuVar2 = (aqju) obj2;
+            return eldp.b.d(aqjuVar.c, aqjuVar2.c).c(aqjuVar.d, aqjuVar2.d).a();
         }
     };
 
@@ -45,75 +45,77 @@ public final class ModuleSetJournalUpdate$ModuleSetJournalIntentOperation extend
             return;
         }
         try {
-            febw febwVar = febw.a;
-            feep feepVar = feep.a;
-            fecp y = fecp.y(aohx.a, bArr, 0, bArr.length, febw.a);
-            fecp.M(y);
-            aohx aohxVar = (aohx) y;
-            anyf d = anyf.d(context);
-            aohx f = d.f();
-            bul bulVar = new bul();
+            fgqp fgqpVar = fgqp.a;
+            fgti fgtiVar = fgti.a;
+            fgri y = fgri.y(aqjq.a, bArr, 0, bArr.length, fgqp.a);
+            fgri.M(y);
+            aqjq aqjqVar = (aqjq) y;
+            apzx d = apzx.d(context);
+            aqjq f = d.f();
+            buy buyVar = new buy();
             if (f != null) {
-                for (aoib aoibVar : f.b) {
-                    bulVar.put(aoid.b(aoibVar), aoibVar);
+                for (aqju aqjuVar : f.b) {
+                    buyVar.put(aqjw.b(aqjuVar), aqjuVar);
                 }
             }
-            bul bulVar2 = z ? new bul() : bulVar;
-            for (aoib aoibVar2 : aohxVar.b) {
-                String b = aoid.b(aoibVar2);
-                aoib aoibVar3 = (aoib) bulVar.get(b);
-                if (aoibVar3 != null) {
-                    fedh fedhVar = aoibVar2.e;
-                    fecj fecjVar = (fecj) aoibVar2.iB(5, null);
-                    fecjVar.X(aoibVar2);
-                    if (!fecjVar.b.L()) {
-                        fecjVar.U();
+            buy buyVar2 = z ? new buy() : buyVar;
+            for (aqju aqjuVar2 : aqjqVar.b) {
+                String b = aqjw.b(aqjuVar2);
+                aqju aqjuVar3 = (aqju) buyVar.get(b);
+                if (aqjuVar3 != null) {
+                    fgsa fgsaVar = aqjuVar2.e;
+                    fgrc fgrcVar = (fgrc) aqjuVar2.iQ(5, null);
+                    fgrcVar.X(aqjuVar2);
+                    if (!fgrcVar.b.L()) {
+                        fgrcVar.U();
                     }
-                    ((aoib) fecjVar.b).e = feeq.a;
-                    fecjVar.da(fedhVar);
-                    fecjVar.da(aoibVar3.e);
-                    if (((aoib) fecjVar.b).e.size() >= 2) {
+                    aqju aqjuVar4 = (aqju) fgrcVar.b;
+                    fgtj fgtjVar = fgtj.a;
+                    aqjuVar4.e = fgtjVar;
+                    fgrcVar.da(fgsaVar);
+                    fgrcVar.da(aqjuVar3.e);
+                    if (((aqju) fgrcVar.b).e.size() >= 2) {
                         ArrayList arrayList = new ArrayList();
-                        aoia aoiaVar = aoia.a;
-                        for (aoia aoiaVar2 : DesugarCollections.unmodifiableList(((aoib) fecjVar.b).e)) {
-                            int a2 = aohz.a(aoiaVar2.c);
+                        aqjt aqjtVar = aqjt.a;
+                        for (aqjt aqjtVar2 : DesugarCollections.unmodifiableList(((aqju) fgrcVar.b).e)) {
+                            int a2 = aqjs.a(aqjtVar2.c);
                             if (a2 == 0) {
                                 a2 = 1;
                             }
-                            int a3 = aohz.a(aoiaVar.c);
+                            int a3 = aqjs.a(aqjtVar.c);
                             if (a2 != (a3 != 0 ? a3 : 1)) {
-                                arrayList.add(aoiaVar2);
-                                aoiaVar = aoiaVar2;
+                                arrayList.add(aqjtVar2);
+                                aqjtVar = aqjtVar2;
                             }
                         }
-                        if (!fecjVar.b.L()) {
-                            fecjVar.U();
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
                         }
-                        ((aoib) fecjVar.b).e = feeq.a;
-                        fecjVar.da(arrayList);
+                        ((aqju) fgrcVar.b).e = fgtjVar;
+                        fgrcVar.da(arrayList);
                     }
-                    aoid.k(fecjVar);
-                    aoibVar2 = (aoib) fecjVar.Q();
+                    aqjw.k(fgrcVar);
+                    aqjuVar2 = (aqju) fgrcVar.Q();
                 }
-                bulVar2.put(b, aoibVar2);
+                buyVar2.put(b, aqjuVar2);
             }
-            ArrayList arrayList2 = new ArrayList(bulVar2.d);
-            for (int i = 0; i < bulVar2.d; i++) {
-                arrayList2.add((aoib) bulVar2.i(i));
+            ArrayList arrayList2 = new ArrayList(buyVar2.d);
+            for (int i = 0; i < buyVar2.d; i++) {
+                arrayList2.add((aqju) buyVar2.i(i));
             }
             Collections.sort(arrayList2, a);
-            fecj v = aohx.a.v();
+            fgrc v = aqjq.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            aohx aohxVar2 = (aohx) v.b;
-            aohxVar2.b();
-            feab.E(arrayList2, aohxVar2.b);
-            aohx aohxVar3 = (aohx) v.Q();
+            aqjq aqjqVar2 = (aqjq) v.b;
+            aqjqVar2.b();
+            fgou.E(arrayList2, aqjqVar2.b);
+            aqjq aqjqVar3 = (aqjq) v.Q();
             if (d.h()) {
-                d.a.edit().putString("Chimera.moduleSetJournal", asnj.a(aohxVar3.r())).commit();
+                d.a.edit().putString("Chimera.moduleSetJournal", aurd.a(aqjqVar3.r())).commit();
             }
-        } catch (fedk unused) {
+        } catch (fgsd unused) {
             Log.w("ModuleSetJournalOp", "Failed to parse module set journal.");
         }
     }
@@ -128,11 +130,11 @@ public final class ModuleSetJournalUpdate$ModuleSetJournalIntentOperation extend
         if ("com.google.android.chimera.MODULE_CONFIGURATION_CHANGED".equals(action)) {
             ModuleManager moduleManager = ModuleManager.get(this);
             try {
-                aoid aoidVar = new aoid();
+                aqjw aqjwVar = new aqjw();
                 for (ModuleManager.ModuleSetInfo moduleSetInfo : moduleManager.getCurrentConfig().moduleSets) {
-                    aoidVar.i(moduleSetInfo.moduleSetId, moduleSetInfo.moduleSetVersion, 2, moduleSetInfo.enabledFeatures);
+                    aqjwVar.i(moduleSetInfo.moduleSetId, moduleSetInfo.moduleSetVersion, 2, moduleSetInfo.enabledFeatures);
                 }
-                a(this, aoidVar.d(), false);
+                a(this, aqjwVar.d(), false);
             } catch (InvalidConfigException e) {
                 Log.w("ModuleSetJournalOp", "Chimera module config error: ".concat(e.toString()));
             }

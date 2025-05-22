@@ -2,18 +2,18 @@ package com.google.android.gms.credential.manager.batchupload;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.atxd;
-import defpackage.atxe;
-import defpackage.atxf;
-import defpackage.fvbo;
+import defpackage.awbg;
+import defpackage.awbh;
+import defpackage.awbi;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
 public abstract class BatchUploadResult implements Parcelable {
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class Conflict extends BatchUploadResult {
-        public static final Parcelable.Creator CREATOR = new atxd();
+        public static final Parcelable.Creator CREATOR = new awbg();
         private final int a;
         private final int b;
         private final int c;
@@ -50,7 +50,7 @@ public abstract class BatchUploadResult implements Parcelable {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            fvbo.f(parcel, "dest");
+            fxxm.f(parcel, "dest");
             parcel.writeInt(this.a);
             parcel.writeInt(this.b);
             parcel.writeInt(this.c);
@@ -61,10 +61,10 @@ public abstract class BatchUploadResult implements Parcelable {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class Error extends BatchUploadResult {
         public static final Error a = new Error();
-        public static final Parcelable.Creator CREATOR = new atxe();
+        public static final Parcelable.Creator CREATOR = new awbh();
 
         private Error() {
         }
@@ -76,14 +76,14 @@ public abstract class BatchUploadResult implements Parcelable {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            fvbo.f(parcel, "dest");
+            fxxm.f(parcel, "dest");
             parcel.writeInt(1);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class Success extends BatchUploadResult {
-        public static final Parcelable.Creator CREATOR = new atxf();
+        public static final Parcelable.Creator CREATOR = new awbi();
         private final int a;
 
         public Success(int i) {
@@ -112,7 +112,7 @@ public abstract class BatchUploadResult implements Parcelable {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            fvbo.f(parcel, "dest");
+            fxxm.f(parcel, "dest");
             parcel.writeInt(this.a);
         }
 

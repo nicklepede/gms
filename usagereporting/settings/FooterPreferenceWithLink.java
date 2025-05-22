@@ -6,9 +6,9 @@ import android.text.method.LinkMovementMethod;
 import android.util.AttributeSet;
 import android.widget.TextView;
 import com.android.settingslib.widget.FooterPreference;
-import defpackage.kmp;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class FooterPreferenceWithLink extends FooterPreference {
     public FooterPreferenceWithLink(Context context) {
@@ -16,9 +16,9 @@ public final class FooterPreferenceWithLink extends FooterPreference {
     }
 
     @Override // com.android.settingslib.widget.FooterPreference, androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        ((TextView) kmpVar.a.findViewById(R.id.title)).setMovementMethod(LinkMovementMethod.getInstance());
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        ((TextView) mfaVar.a.findViewById(R.id.title)).setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     public FooterPreferenceWithLink(Context context, AttributeSet attributeSet) {

@@ -2,142 +2,142 @@ package com.google.android.gms.fitness.service.proxy;
 
 import android.content.Context;
 import android.content.Intent;
-import defpackage.arwm;
-import defpackage.aslv;
-import defpackage.aslw;
-import defpackage.asot;
-import defpackage.bggi;
-import defpackage.bgrt;
-import defpackage.bgru;
-import defpackage.bgrv;
-import defpackage.bgrz;
-import defpackage.bgtr;
-import defpackage.bgts;
-import defpackage.bgtt;
-import defpackage.bgtu;
-import defpackage.bgtv;
-import defpackage.bgtw;
-import defpackage.bgtx;
-import defpackage.bgty;
-import defpackage.bgtz;
-import defpackage.bhaf;
-import defpackage.bxhl;
-import defpackage.eiig;
-import defpackage.ejhf;
+import defpackage.atzb;
+import defpackage.aupp;
+import defpackage.aupq;
+import defpackage.ausn;
+import defpackage.biky;
+import defpackage.biwj;
+import defpackage.biwk;
+import defpackage.biwl;
+import defpackage.biwp;
+import defpackage.biyh;
+import defpackage.biyi;
+import defpackage.biyj;
+import defpackage.biyk;
+import defpackage.biyl;
+import defpackage.biym;
+import defpackage.biyn;
+import defpackage.biyo;
+import defpackage.biyp;
+import defpackage.bjev;
+import defpackage.bzqb;
+import defpackage.ekvl;
+import defpackage.eluo;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FitProxyChimeraBroker extends bgrv {
-    public static final asot g = bhaf.a();
+public class FitProxyChimeraBroker extends biwl {
+    public static final ausn g = bjev.a();
     private static final long p = TimeUnit.SECONDS.toNanos(5);
-    public volatile bgru h;
-    public volatile bgru i;
-    public volatile bgru j;
-    public volatile bgru k;
-    public volatile bgru l;
-    public volatile bgru m;
-    public volatile bgru n;
+    public volatile biwk h;
+    public volatile biwk i;
+    public volatile biwk j;
+    public volatile biwk k;
+    public volatile biwk l;
+    public volatile biwk m;
+    public volatile biwk n;
     public CountDownLatch o;
-    private bgty q;
-    private bgty r;
-    private bgty s;
-    private bgty t;
-    private bgty u;
-    private bgty v;
-    private bgty w;
+    private biyo q;
+    private biyo r;
+    private biyo s;
+    private biyo t;
+    private biyo u;
+    private biyo v;
+    private biyo w;
 
-    @Override // defpackage.bgrv
-    public final /* bridge */ /* synthetic */ bgrt b(String str) {
-        arwm.k("Deadlock!");
+    @Override // defpackage.biwl
+    public final /* bridge */ /* synthetic */ biwj b(String str) {
+        atzb.k("Deadlock!");
         try {
             if (!this.o.await(p, TimeUnit.NANOSECONDS)) {
-                ((ejhf) ((ejhf) g.j()).ah(4804)).x("Proxy connections timed out");
+                ((eluo) ((eluo) g.j()).ai(4814)).x("Proxy connections timed out");
                 return null;
             }
         } catch (InterruptedException unused) {
             Thread.currentThread().interrupt();
             if (this.o.getCount() > 0) {
-                ((ejhf) ((ejhf) g.j()).ah((char) 4806)).x("Proxy dependencies not ready yet");
+                ((eluo) ((eluo) g.j()).ai((char) 4816)).x("Proxy dependencies not ready yet");
                 return null;
             }
         }
         try {
-            return new bgtz(this, str, this.h, this.i, this.j, this.k, this.l, this.m, this.n, this.f);
+            return new biyp(this, str, this.h, this.i, this.j, this.k, this.l, this.m, this.n, this.f);
         } catch (NullPointerException e) {
-            ((ejhf) ((ejhf) ((ejhf) g.j()).s(e)).ah((char) 4805)).x("Failed to connect to Fit proxy broker dependency");
+            ((eluo) ((eluo) ((eluo) g.j()).s(e)).ai((char) 4815)).x("Failed to connect to Fit proxy broker dependency");
             return null;
         }
     }
 
-    @Override // defpackage.bgrv
-    protected final bxhl c(Context context, bgrz bgrzVar) {
-        return new bxhl(context, 17, d(), 3, bgrzVar);
+    @Override // defpackage.biwl
+    protected final bzqb c(Context context, biwp biwpVar) {
+        return new bzqb(context, 17, d(), 3, biwpVar);
     }
 
-    @Override // defpackage.bgrv
-    public final void f(bggi bggiVar, aslw aslwVar, aslv aslvVar, ExecutorService executorService) {
-        super.f(bggiVar, aslwVar, aslvVar, executorService);
+    @Override // defpackage.biwl
+    public final void f(biky bikyVar, aupq aupqVar, aupp auppVar, ExecutorService executorService) {
+        super.f(bikyVar, aupqVar, auppVar, executorService);
         this.o = new CountDownLatch(7);
-        bgtr bgtrVar = new bgtr(this);
-        this.q = bgtrVar;
-        eiig.p(bgtrVar.e("com.google.android.gms.fitness.service.recording.FitRecordingBroker"));
-        bgts bgtsVar = new bgts(this);
-        this.r = bgtsVar;
-        eiig.p(bgtsVar.e("com.google.android.gms.fitness.service.sessions.FitSessionsBroker"));
-        bgtt bgttVar = new bgtt(this);
-        this.s = bgttVar;
-        eiig.p(bgttVar.e("com.google.android.gms.fitness.service.history.FitHistoryBroker"));
-        bgtu bgtuVar = new bgtu(this);
-        this.t = bgtuVar;
-        eiig.p(bgtuVar.e("com.google.android.gms.fitness.service.sensors.FitSensorsBroker"));
-        bgtv bgtvVar = new bgtv(this);
-        this.u = bgtvVar;
-        eiig.p(bgtvVar.e("com.google.android.gms.fitness.service.ble.FitBleBroker"));
-        bgtw bgtwVar = new bgtw(this);
-        this.v = bgtwVar;
-        eiig.p(bgtwVar.e("com.google.android.gms.fitness.service.config.FitConfigBroker"));
-        bgtx bgtxVar = new bgtx(this);
-        this.w = bgtxVar;
-        eiig.p(bgtxVar.e("com.google.android.gms.fitness.service.internal.FitInternalBroker"));
+        biyh biyhVar = new biyh(this);
+        this.q = biyhVar;
+        ekvl.q(biyhVar.e("com.google.android.gms.fitness.service.recording.FitRecordingBroker"));
+        biyi biyiVar = new biyi(this);
+        this.r = biyiVar;
+        ekvl.q(biyiVar.e("com.google.android.gms.fitness.service.sessions.FitSessionsBroker"));
+        biyj biyjVar = new biyj(this);
+        this.s = biyjVar;
+        ekvl.q(biyjVar.e("com.google.android.gms.fitness.service.history.FitHistoryBroker"));
+        biyk biykVar = new biyk(this);
+        this.t = biykVar;
+        ekvl.q(biykVar.e("com.google.android.gms.fitness.service.sensors.FitSensorsBroker"));
+        biyl biylVar = new biyl(this);
+        this.u = biylVar;
+        ekvl.q(biylVar.e("com.google.android.gms.fitness.service.ble.FitBleBroker"));
+        biym biymVar = new biym(this);
+        this.v = biymVar;
+        ekvl.q(biymVar.e("com.google.android.gms.fitness.service.config.FitConfigBroker"));
+        biyn biynVar = new biyn(this);
+        this.w = biynVar;
+        ekvl.q(biynVar.e("com.google.android.gms.fitness.service.internal.FitInternalBroker"));
     }
 
-    @Override // defpackage.bgrv
+    @Override // defpackage.biwl
     protected final boolean h(Intent intent) {
         return "com.google.android.gms.fitness.GoogleFitnessService.START".equals(intent.getAction());
     }
 
-    @Override // defpackage.bgrv, com.google.android.chimera.Service
+    @Override // defpackage.biwl, com.google.android.chimera.Service
     public final void onDestroy() {
-        bgty bgtyVar = this.q;
-        if (bgtyVar != null) {
-            bgtyVar.d();
+        biyo biyoVar = this.q;
+        if (biyoVar != null) {
+            biyoVar.d();
         }
-        bgty bgtyVar2 = this.r;
-        if (bgtyVar2 != null) {
-            bgtyVar2.d();
+        biyo biyoVar2 = this.r;
+        if (biyoVar2 != null) {
+            biyoVar2.d();
         }
-        bgty bgtyVar3 = this.s;
-        if (bgtyVar3 != null) {
-            bgtyVar3.d();
+        biyo biyoVar3 = this.s;
+        if (biyoVar3 != null) {
+            biyoVar3.d();
         }
-        bgty bgtyVar4 = this.t;
-        if (bgtyVar4 != null) {
-            bgtyVar4.d();
+        biyo biyoVar4 = this.t;
+        if (biyoVar4 != null) {
+            biyoVar4.d();
         }
-        bgty bgtyVar5 = this.u;
-        if (bgtyVar5 != null) {
-            bgtyVar5.d();
+        biyo biyoVar5 = this.u;
+        if (biyoVar5 != null) {
+            biyoVar5.d();
         }
-        bgty bgtyVar6 = this.v;
-        if (bgtyVar6 != null) {
-            bgtyVar6.d();
+        biyo biyoVar6 = this.v;
+        if (biyoVar6 != null) {
+            biyoVar6.d();
         }
-        bgty bgtyVar7 = this.w;
-        if (bgtyVar7 != null) {
-            bgtyVar7.d();
+        biyo biyoVar7 = this.w;
+        if (biyoVar7 != null) {
+            biyoVar7.d();
         }
         super.onDestroy();
     }

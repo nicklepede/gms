@@ -5,78 +5,78 @@ import android.content.IntentSender;
 import android.os.Bundle;
 import android.widget.Toast;
 import com.google.android.gms.R;
-import defpackage.aqxd;
-import defpackage.aqxe;
-import defpackage.aqxo;
-import defpackage.aqyd;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bzin;
-import defpackage.bziq;
-import defpackage.bzir;
-import defpackage.dfae;
-import defpackage.dfaq;
-import defpackage.dgmu;
-import defpackage.dguw;
-import defpackage.dgux;
-import defpackage.ejhf;
-import defpackage.ngn;
+import defpackage.aszs;
+import defpackage.aszt;
+import defpackage.atad;
+import defpackage.atas;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cbre;
+import defpackage.cbrh;
+import defpackage.cbri;
+import defpackage.dhlk;
+import defpackage.dhlw;
+import defpackage.dixz;
+import defpackage.djgc;
+import defpackage.djgd;
+import defpackage.eluo;
+import defpackage.ozo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TrustedPlacesSettingsChimeraActivity extends dgmu implements dfae {
-    private static final asot l = asot.b("Trustlet_Place", asej.TRUSTLET_PLACE);
+public class TrustedPlacesSettingsChimeraActivity extends dixz implements dhlk {
+    private static final ausn l = ausn.b("Trustlet_Place", auid.TRUSTLET_PLACE);
     private boolean m = false;
-    private aqxo n;
+    private atad n;
 
-    @Override // defpackage.dgmq
-    protected final ngn a() {
-        return new dguw();
+    @Override // defpackage.dixv
+    protected final ozo a() {
+        return new djgc();
     }
 
-    @Override // defpackage.dfae
-    public final void hr(dfaq dfaqVar) {
+    @Override // defpackage.dhlk
+    public final void hH(dhlw dhlwVar) {
         try {
-            dfaqVar.j(aqxe.class);
-        } catch (aqxe e) {
+            dhlwVar.j(aszt.class);
+        } catch (aszt e) {
             try {
                 if (this.m) {
                     return;
                 }
-                ((aqyd) e).c(getContainerActivity(), 10000);
+                ((atas) e).c(getContainerActivity(), 10000);
                 this.m = true;
             } catch (IntentSender.SendIntentException | ClassCastException e2) {
-                ((ejhf) ((ejhf) ((ejhf) l.j()).s(e2)).ah((char) 11760)).x("[TrustedPlacesSettingsChimeraSettingsActivity] Unable to resolve Location permission");
+                ((eluo) ((eluo) ((eluo) l.j()).s(e2)).ai((char) 11763)).x("[TrustedPlacesSettingsChimeraSettingsActivity] Unable to resolve Location permission");
             }
         }
     }
 
-    @Override // defpackage.dgmq
+    @Override // defpackage.dixv
     protected final String k() {
         return "TrustedPlacesFragment";
     }
 
-    @Override // defpackage.dgmu, defpackage.dgmq, defpackage.dgmn, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dixz, defpackage.dixv, defpackage.dixs, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        aqxd aqxdVar = bziq.a;
-        this.n = new aqxo(this, (float[][]) null);
+        aszs aszsVar = cbrh.a;
+        this.n = new atad(this, (float[][]) null);
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        boolean b = dgux.b(this);
-        boolean a = dgux.a(this);
-        bzir bzirVar = new bzir();
-        bzirVar.b(new bzin(102, 0L).a());
-        this.n.ae(bzirVar.a()).x(this);
+        boolean b = djgd.b(this);
+        boolean a = djgd.a(this);
+        cbri cbriVar = new cbri();
+        cbriVar.b(new cbre(102, 0L).a());
+        this.n.ae(cbriVar.a()).x(this);
         if (!b || a) {
             return;
         }

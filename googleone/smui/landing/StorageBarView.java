@@ -6,15 +6,15 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 import com.google.android.gms.R;
-import defpackage.bjof;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.bltv;
+import defpackage.elgo;
+import defpackage.elpg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class StorageBarView extends View {
     public boolean a;
-    public eitj b;
+    public elgo b;
     private final Context c;
 
     public StorageBarView(Context context) {
@@ -47,24 +47,24 @@ public final class StorageBarView extends View {
         float f5 = 0.0f;
         int i = 0;
         while (true) {
-            eitj eitjVar = this.b;
-            if (i >= ((ejcb) eitjVar).c) {
+            elgo elgoVar = this.b;
+            if (i >= ((elpg) elgoVar).c) {
                 return;
             }
-            bjof bjofVar = (bjof) eitjVar.get(i);
+            bltv bltvVar = (bltv) elgoVar.get(i);
             float f6 = i == 0 ? f4 : f5;
-            float f7 = bjofVar.b * f3;
+            float f7 = bltvVar.b * f3;
             if (f7 - f6 < dimensionPixelSize3 + dimensionPixelSize) {
                 f7 = f6 + dimensionPixelSize3 + f2;
             }
-            int i2 = (((ejcb) this.b).c - 1) - i;
+            int i2 = (((elpg) this.b).c - 1) - i;
             float min = Math.min(f7, f3 - ((r11 * i2) + (i2 * (dimensionPixelSize2 + dimensionPixelSize))));
             if (i == 0) {
-                Paint paint = bjofVar.a;
+                Paint paint = bltvVar.a;
                 paint.setStrokeCap(Paint.Cap.ROUND);
                 float f8 = f6 + ((min - f6) / 2.0f);
                 canvas.drawLine(f6, f4, f8, f4, paint);
-                if (((ejcb) this.b).c == 1) {
+                if (((elpg) this.b).c == 1) {
                     paint.setStrokeCap(this.a ? Paint.Cap.ROUND : Paint.Cap.SQUARE);
                 } else {
                     paint.setStrokeCap(Paint.Cap.SQUARE);
@@ -72,8 +72,8 @@ public final class StorageBarView extends View {
                 f = min;
                 canvas.drawLine(f8, f4, f, f4, paint);
                 i = 0;
-            } else if (i == ((ejcb) this.b).c - 1 && this.a) {
-                Paint paint2 = bjofVar.a;
+            } else if (i == ((elpg) this.b).c - 1 && this.a) {
+                Paint paint2 = bltvVar.a;
                 float f9 = f6 + ((min - f6) / 2.0f);
                 canvas.drawLine(f6, f4, f9, f4, paint2);
                 paint2.setStrokeCap(Paint.Cap.ROUND);
@@ -81,10 +81,10 @@ public final class StorageBarView extends View {
                 canvas.drawLine(f9, f4, f, f4, paint2);
             } else {
                 f = min;
-                canvas.drawLine(f6, f4, f, f4, bjofVar.a);
+                canvas.drawLine(f6, f4, f, f4, bltvVar.a);
             }
             Paint a = a(context.getColor(R.color.smui_bar_separator), Paint.Cap.SQUARE);
-            if (i != ((ejcb) this.b).c - 1) {
+            if (i != ((elpg) this.b).c - 1) {
                 float f10 = f + f2;
                 float f11 = f10 + dimensionPixelSize2;
                 canvas.drawLine(f10, f4, f11, f4, a);
@@ -96,8 +96,8 @@ public final class StorageBarView extends View {
 
     public StorageBarView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        int i = eitj.d;
-        this.b = ejcb.a;
+        int i = elgo.d;
+        this.b = elpg.a;
         this.c = context;
     }
 }

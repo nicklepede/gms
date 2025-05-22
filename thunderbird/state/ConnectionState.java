@@ -3,16 +3,16 @@ package com.google.android.gms.thunderbird.state;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dfyi;
-import defpackage.ekuw;
-import defpackage.fecj;
+import defpackage.atzr;
+import defpackage.dijn;
+import defpackage.enii;
+import defpackage.fgrc;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ConnectionState extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dfyi();
+    public static final Parcelable.Creator CREATOR = new dijn();
     public final int a;
     public final int b;
     public final int c;
@@ -29,63 +29,63 @@ public class ConnectionState extends AbstractSafeParcelable {
         this.f = i6;
     }
 
-    public final ekuw a() {
-        fecj v = ekuw.a.v();
+    public final enii a() {
+        fgrc v = enii.a.v();
         int i = this.a;
         if (i != -9999) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekuw ekuwVar = (ekuw) v.b;
-            ekuwVar.b |= 1;
-            ekuwVar.c = i;
+            enii eniiVar = (enii) v.b;
+            eniiVar.b |= 1;
+            eniiVar.c = i;
         }
         int i2 = this.b;
         if (i2 != -9999) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekuw ekuwVar2 = (ekuw) v.b;
-            ekuwVar2.b |= 2;
-            ekuwVar2.d = i2;
+            enii eniiVar2 = (enii) v.b;
+            eniiVar2.b |= 2;
+            eniiVar2.d = i2;
         }
         int i3 = this.c;
         if (i3 != -9999) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekuw ekuwVar3 = (ekuw) v.b;
-            ekuwVar3.b |= 4;
-            ekuwVar3.e = i3;
+            enii eniiVar3 = (enii) v.b;
+            eniiVar3.b |= 4;
+            eniiVar3.e = i3;
         }
         int i4 = this.d;
         if (i4 != -9999) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekuw ekuwVar4 = (ekuw) v.b;
-            ekuwVar4.b |= 8;
-            ekuwVar4.f = i4;
+            enii eniiVar4 = (enii) v.b;
+            eniiVar4.b |= 8;
+            eniiVar4.f = i4;
         }
         int i5 = this.e;
         if (i5 != -9999) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekuw ekuwVar5 = (ekuw) v.b;
-            ekuwVar5.b |= 16;
-            ekuwVar5.g = i5;
+            enii eniiVar5 = (enii) v.b;
+            eniiVar5.b |= 16;
+            eniiVar5.g = i5;
         }
         int i6 = this.f;
         if (i6 != -9999) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekuw ekuwVar6 = (ekuw) v.b;
-            ekuwVar6.b |= 32;
-            ekuwVar6.h = i6;
+            enii eniiVar6 = (enii) v.b;
+            eniiVar6.b |= 32;
+            eniiVar6.h = i6;
         }
-        return (ekuw) v.Q();
+        return (enii) v.Q();
     }
 
     public final boolean equals(Object obj) {
@@ -112,13 +112,13 @@ public class ConnectionState extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 }

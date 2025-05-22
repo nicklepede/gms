@@ -3,26 +3,26 @@ package com.google.android.gms.autofill.ui.settings;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.R;
-import defpackage.ahcb;
-import defpackage.ahcl;
-import defpackage.ahcw;
-import defpackage.ahdh;
-import defpackage.asej;
-import defpackage.asot;
+import defpackage.ajcr;
+import defpackage.ajdb;
+import defpackage.ajdm;
+import defpackage.ajdx;
+import defpackage.auid;
+import defpackage.ausn;
 import defpackage.bp;
 import defpackage.dg;
-import defpackage.ejhf;
-import defpackage.flek;
-import defpackage.qgg;
+import defpackage.eluo;
+import defpackage.fnvu;
+import defpackage.rzk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class AutofillModernSettingsChimeraActivity extends qgg {
-    private static final asot j = asot.b("AutofillModernSettingsChimeraActivity", asej.AUTOFILL);
+public final class AutofillModernSettingsChimeraActivity extends rzk {
+    private static final ausn j = ausn.b("AutofillModernSettingsChimeraActivity", auid.AUTOFILL);
     private Intent k;
     private Bundle l;
 
-    @Override // defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setTitle(R.string.autofill_label);
@@ -38,7 +38,7 @@ public final class AutofillModernSettingsChimeraActivity extends qgg {
             }
         }
         if (this.k == null) {
-            ((ejhf) ((ejhf) j.j()).ah((char) 1427)).x("Finishing because intent is not found.");
+            ((eluo) ((eluo) j.j()).ai((char) 1431)).x("Finishing because intent is not found.");
             return;
         }
         if (this.l == null) {
@@ -46,17 +46,17 @@ public final class AutofillModernSettingsChimeraActivity extends qgg {
         }
         String action = this.k.getAction();
         if (action == null) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 1426)).x("Fragment name is missing");
+            ((eluo) ((eluo) j.i()).ai((char) 1430)).x("Fragment name is missing");
             return;
         }
-        dg ahclVar = action.equals("MODERN_PREFERENCES") ? flek.f() ? new ahcl() : new ahcb() : flek.f() ? new ahdh() : new ahcw();
-        ahclVar.setArguments(this.l);
+        dg ajdbVar = action.equals("MODERN_PREFERENCES") ? fnvu.g() ? new ajdb() : new ajcr() : fnvu.g() ? new ajdx() : new ajdm();
+        ajdbVar.setArguments(this.l);
         bp bpVar = new bp(getSupportFragmentManager());
-        bpVar.F(R.id.content_frame, ahclVar);
+        bpVar.F(R.id.content_frame, ajdbVar);
         bpVar.a();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putParcelable("com.google.android.gms.autofill.activity_intent", this.k);

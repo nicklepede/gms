@@ -6,38 +6,38 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fitness.data.Session;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgiu;
-import defpackage.bgiw;
-import defpackage.bgll;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bink;
+import defpackage.binm;
+import defpackage.biqb;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SessionInsertRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgll();
+    public static final Parcelable.Creator CREATOR = new biqb();
     public final Session a;
     public final List b;
     public final List c;
-    public final bgiw d;
+    public final binm d;
 
     public SessionInsertRequest(Session session, List list, List list2, IBinder iBinder) {
-        bgiw bgiuVar;
+        binm binkVar;
         this.a = session;
         this.b = DesugarCollections.unmodifiableList(list);
         this.c = DesugarCollections.unmodifiableList(list2);
         if (iBinder == null) {
-            bgiuVar = null;
+            binkVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.IStatusCallback");
-            bgiuVar = queryLocalInterface instanceof bgiw ? (bgiw) queryLocalInterface : new bgiu(iBinder);
+            binkVar = queryLocalInterface instanceof binm ? (binm) queryLocalInterface : new bink(iBinder);
         }
-        this.d = bgiuVar;
+        this.d = binkVar;
     }
 
     public final boolean equals(Object obj) {
@@ -46,7 +46,7 @@ public class SessionInsertRequest extends AbstractSafeParcelable {
         }
         if (obj instanceof SessionInsertRequest) {
             SessionInsertRequest sessionInsertRequest = (SessionInsertRequest) obj;
-            if (arwb.b(this.a, sessionInsertRequest.a) && arwb.b(this.b, sessionInsertRequest.b) && arwb.b(this.c, sessionInsertRequest.c)) {
+            if (atyq.b(this.a, sessionInsertRequest.a) && atyq.b(this.b, sessionInsertRequest.b) && atyq.b(this.c, sessionInsertRequest.c)) {
                 return true;
             }
         }
@@ -59,28 +59,28 @@ public class SessionInsertRequest extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("session", this.a, arrayList);
-        arwa.b("dataSets", this.b, arrayList);
-        arwa.b("aggregateDataPoints", this.c, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("session", this.a, arrayList);
+        atyp.b("dataSets", this.b, arrayList);
+        atyp.b("aggregateDataPoints", this.c, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Session session = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, session, i, false);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.y(parcel, 3, this.c, false);
-        bgiw bgiwVar = this.d;
-        arxc.D(parcel, 4, bgiwVar == null ? null : bgiwVar.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, session, i, false);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.y(parcel, 3, this.c, false);
+        binm binmVar = this.d;
+        atzr.D(parcel, 4, binmVar == null ? null : binmVar.asBinder());
+        atzr.c(parcel, a);
     }
 
-    public SessionInsertRequest(Session session, List list, List list2, bgiw bgiwVar) {
+    public SessionInsertRequest(Session session, List list, List list2, binm binmVar) {
         this.a = session;
         this.b = DesugarCollections.unmodifiableList(list);
         this.c = DesugarCollections.unmodifiableList(list2);
-        this.d = bgiwVar;
+        this.d = binmVar;
     }
 }

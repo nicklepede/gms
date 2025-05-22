@@ -3,21 +3,21 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bbry;
-import defpackage.eite;
-import defpackage.eitj;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bdvp;
+import defpackage.elgj;
+import defpackage.elgo;
 import java.util.Arrays;
 import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class AuthenticationExtensionsClientOutputs extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bbry();
+    public static final Parcelable.Creator CREATOR = new bdvp();
     public final UvmEntries a;
     public final AuthenticationExtensionsDevicePublicKeyOutputs b;
     public final AuthenticationExtensionsCredPropsOutputs c;
@@ -32,22 +32,22 @@ public class AuthenticationExtensionsClientOutputs extends AbstractSafeParcelabl
         this.e = str;
     }
 
-    public final eitj a() {
-        int i = eitj.d;
-        eite eiteVar = new eite();
+    public final elgo a() {
+        int i = elgo.d;
+        elgj elgjVar = new elgj();
         if (this.c != null) {
-            eiteVar.i("credProps");
+            elgjVar.i("credProps");
         }
         if (this.a != null) {
-            eiteVar.i("uvm");
+            elgjVar.i("uvm");
         }
         if (this.d != null) {
-            eiteVar.i("prf");
+            elgjVar.i("prf");
         }
         if (this.e != null) {
-            eiteVar.i("txAuthSimple");
+            elgjVar.i("txAuthSimple");
         }
-        return eiteVar.g();
+        return elgjVar.g();
     }
 
     public final JSONObject b() {
@@ -102,7 +102,7 @@ public class AuthenticationExtensionsClientOutputs extends AbstractSafeParcelabl
             return false;
         }
         AuthenticationExtensionsClientOutputs authenticationExtensionsClientOutputs = (AuthenticationExtensionsClientOutputs) obj;
-        return arwb.b(this.a, authenticationExtensionsClientOutputs.a) && arwb.b(this.b, authenticationExtensionsClientOutputs.b) && arwb.b(this.c, authenticationExtensionsClientOutputs.c) && arwb.b(this.d, authenticationExtensionsClientOutputs.d) && arwb.b(this.e, authenticationExtensionsClientOutputs.e);
+        return atyq.b(this.a, authenticationExtensionsClientOutputs.a) && atyq.b(this.b, authenticationExtensionsClientOutputs.b) && atyq.b(this.c, authenticationExtensionsClientOutputs.c) && atyq.b(this.d, authenticationExtensionsClientOutputs.d) && atyq.b(this.e, authenticationExtensionsClientOutputs.e);
     }
 
     public final int hashCode() {
@@ -116,12 +116,12 @@ public class AuthenticationExtensionsClientOutputs extends AbstractSafeParcelabl
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         UvmEntries uvmEntries = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, uvmEntries, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, uvmEntries, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.c(parcel, a);
     }
 }

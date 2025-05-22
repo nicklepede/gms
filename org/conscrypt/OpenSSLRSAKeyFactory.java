@@ -1,6 +1,6 @@
 package com.google.android.gms.org.conscrypt;
 
-import defpackage.ctbc;
+import defpackage.cvkg;
 import java.security.InvalidKeyException;
 import java.security.Key;
 import java.security.KeyFactorySpi;
@@ -17,7 +17,7 @@ import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OpenSSLRSAKeyFactory extends KeyFactorySpi {
     @Override // java.security.KeyFactorySpi
@@ -121,7 +121,7 @@ public final class OpenSSLRSAKeyFactory extends KeyFactorySpi {
             throw new InvalidKeySpecException("Key is not encodable");
         }
         if (!z || !X509EncodedKeySpec.class.isAssignableFrom(cls)) {
-            throw new InvalidKeySpecException(ctbc.a(cls, key));
+            throw new InvalidKeySpecException(cvkg.a(cls, key));
         }
         byte[] encoded5 = key.getEncoded();
         if (!"X.509".equals(key.getFormat())) {

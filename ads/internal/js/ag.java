@@ -1,8 +1,8 @@
 package com.google.android.gms.ads.internal.js;
 
-import defpackage.arwm;
+import defpackage.atzb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class ag extends com.google.android.gms.ads.internal.util.promise.f {
     public final com.google.android.gms.ads.internal.util.u a;
@@ -18,7 +18,7 @@ public final class ag extends com.google.android.gms.ads.internal.util.promise.f
         ab abVar = new ab(this);
         synchronized (this.c) {
             i(new ac(abVar), new ad(abVar));
-            arwm.l(this.e >= 0);
+            atzb.l(this.e >= 0);
             this.e++;
         }
         return abVar;
@@ -26,7 +26,7 @@ public final class ag extends com.google.android.gms.ads.internal.util.promise.f
 
     public final void b() {
         synchronized (this.c) {
-            arwm.l(this.e >= 0);
+            atzb.l(this.e >= 0);
             this.d = true;
             c();
         }
@@ -34,7 +34,7 @@ public final class ag extends com.google.android.gms.ads.internal.util.promise.f
 
     protected final void c() {
         synchronized (this.c) {
-            arwm.l(this.e >= 0);
+            atzb.l(this.e >= 0);
             if (this.d && this.e == 0) {
                 i(new af(this), new com.google.android.gms.ads.internal.util.promise.b());
             }
@@ -43,7 +43,7 @@ public final class ag extends com.google.android.gms.ads.internal.util.promise.f
 
     protected final void d() {
         synchronized (this.c) {
-            arwm.l(this.e > 0);
+            atzb.l(this.e > 0);
             this.e--;
             c();
         }

@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctej;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvno;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class SortOrderInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctej();
+    public static final Parcelable.Creator CREATOR = new cvno();
     public int a;
     public SortItem[] b;
 
@@ -24,7 +24,7 @@ public final class SortOrderInfo extends AbstractSafeParcelable {
         }
         if (obj instanceof SortOrderInfo) {
             SortOrderInfo sortOrderInfo = (SortOrderInfo) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(sortOrderInfo.a)) && Arrays.equals(this.b, sortOrderInfo.b)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(sortOrderInfo.a)) && Arrays.equals(this.b, sortOrderInfo.b)) {
                 return true;
             }
         }
@@ -37,10 +37,10 @@ public final class SortOrderInfo extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.J(parcel, 2, this.b, i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.J(parcel, 2, this.b, i);
+        atzr.c(parcel, a);
     }
 
     public SortOrderInfo(int i, SortItem[] sortItemArr) {

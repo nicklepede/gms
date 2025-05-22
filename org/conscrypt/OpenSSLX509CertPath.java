@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 final class OpenSSLX509CertPath extends CertPath {
     private static final int PUSHBACK_SIZE = 64;
@@ -26,7 +26,7 @@ final class OpenSSLX509CertPath extends CertPath {
     private static final List ALL_ENCODINGS = DesugarCollections.unmodifiableList(Arrays.asList(Encoding.PKI_PATH.apiName, Encoding.PKCS7.apiName));
     private static final Encoding DEFAULT_ENCODING = Encoding.PKI_PATH;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     enum Encoding {
         PKI_PATH("PkiPath"),
         PKCS7("PKCS7");

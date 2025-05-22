@@ -5,17 +5,17 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.dcxg;
+import defpackage.atzr;
+import defpackage.dfil;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class D2DDevice extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new dcxg();
+    public static final Parcelable.Creator CREATOR = new dfil();
     private static final HashMap i;
     public final Set a;
     public int b;
@@ -54,7 +54,7 @@ public class D2DDevice extends BinarySerializableFastSafeParcelableJson {
         this.h = i3;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i2 = fastJsonResponse$Field.g;
         switch (i2) {
@@ -78,12 +78,12 @@ public class D2DDevice extends BinarySerializableFastSafeParcelableJson {
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return i;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
@@ -105,7 +105,7 @@ public class D2DDevice extends BinarySerializableFastSafeParcelableJson {
         return str2 != null ? str2.equals(d2DDevice.d) : d2DDevice.d == null;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         if (str2 == null) {
             return;
@@ -123,18 +123,8 @@ public class D2DDevice extends BinarySerializableFastSafeParcelableJson {
         this.a.add(Integer.valueOf(i2));
     }
 
-    @Override // defpackage.ashs
-    protected final void gf(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
-        int i2 = fastJsonResponse$Field.g;
-        if (i2 != 7) {
-            throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be a byte array."));
-        }
-        this.g = bArr;
-        this.a.add(Integer.valueOf(i2));
-    }
-
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i2) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i2) {
         int i3 = fastJsonResponse$Field.g;
         if (i3 == 2) {
             this.b = i2;
@@ -149,6 +139,16 @@ public class D2DDevice extends BinarySerializableFastSafeParcelableJson {
         this.a.add(Integer.valueOf(i3));
     }
 
+    @Override // defpackage.aulm
+    protected final void gu(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
+        int i2 = fastJsonResponse$Field.g;
+        if (i2 != 7) {
+            throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be a byte array."));
+        }
+        this.g = bArr;
+        this.a.add(Integer.valueOf(i2));
+    }
+
     @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse
     public final int hashCode() {
         String str = this.c;
@@ -160,29 +160,29 @@ public class D2DDevice extends BinarySerializableFastSafeParcelableJson {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i2) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.o(parcel, 2, this.b);
+            atzr.o(parcel, 2, this.b);
         }
         if (set.contains(3)) {
-            arxc.v(parcel, 3, this.c, true);
+            atzr.v(parcel, 3, this.c, true);
         }
         if (set.contains(4)) {
-            arxc.v(parcel, 4, this.d, true);
+            atzr.v(parcel, 4, this.d, true);
         }
         if (set.contains(5)) {
-            arxc.h(parcel, 5, this.e);
+            atzr.h(parcel, 5, this.e);
         }
         if (set.contains(6)) {
-            arxc.v(parcel, 6, this.f, true);
+            atzr.v(parcel, 6, this.f, true);
         }
         if (set.contains(7)) {
-            arxc.i(parcel, 7, this.g, true);
+            atzr.i(parcel, 7, this.g, true);
         }
         if (set.contains(9)) {
-            arxc.o(parcel, 9, this.h);
+            atzr.o(parcel, 9, this.h);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public D2DDevice() {

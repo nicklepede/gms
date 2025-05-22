@@ -3,26 +3,26 @@ package com.google.android.gms.auth.folsom.service;
 import android.content.Intent;
 import com.google.android.gms.auth.folsom.service.GcmReceiverChimeraService;
 import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
-import defpackage.abbt;
-import defpackage.abbu;
-import defpackage.abnb;
-import defpackage.abng;
-import defpackage.arxo;
-import defpackage.asmf;
-import defpackage.ensv;
-import defpackage.fkyh;
+import defpackage.adbt;
+import defpackage.adbu;
+import defpackage.adnb;
+import defpackage.adng;
+import defpackage.auad;
+import defpackage.aupz;
+import defpackage.eqgo;
+import defpackage.fnpo;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GcmReceiverChimeraService extends TracingIntentService {
     public static final /* synthetic */ int b = 0;
-    private static final arxo c = abng.a("GcmReceiverChimeraService");
-    public final abbt a;
-    private final ensv d;
+    private static final auad c = adng.a("GcmReceiverChimeraService");
+    public final adbt a;
+    private final eqgo d;
 
     public GcmReceiverChimeraService() {
-        this(new abbt(UUID.randomUUID().toString()));
+        this(new adbt(UUID.randomUUID().toString()));
     }
 
     @Override // com.google.android.gms.framework.tracing.wrapper.TracingIntentService
@@ -31,13 +31,13 @@ public class GcmReceiverChimeraService extends TracingIntentService {
             c.d("Null intent. Ignore.", new Object[0]);
             return;
         }
-        if (!abnb.b) {
+        if (!adnb.b) {
             c.m("Gcm ping received on device with build < P. Ignore.", new Object[0]);
-        } else if (!fkyh.c()) {
+        } else if (!fnpo.c()) {
             c.m("The RecoverableKeyStoreGms module is not enabled.", new Object[0]);
         } else {
-            abbu.a.c(this);
-            this.d.execute(new Runnable() { // from class: abik
+            adbu.a.c(this);
+            this.d.execute(new Runnable() { // from class: adik
                 @Override // java.lang.Runnable
                 public final void run() {
                     GcmReceiverChimeraService gcmReceiverChimeraService = GcmReceiverChimeraService.this;
@@ -47,10 +47,10 @@ public class GcmReceiverChimeraService extends TracingIntentService {
         }
     }
 
-    public GcmReceiverChimeraService(abbt abbtVar) {
+    public GcmReceiverChimeraService(adbt adbtVar) {
         super("GcmReceiverService");
-        this.d = new asmf(1, 10);
+        this.d = new aupz(1, 10);
         setIntentRedelivery(true);
-        this.a = abbtVar;
+        this.a = adbtVar;
     }
 }

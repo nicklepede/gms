@@ -4,19 +4,19 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Base64;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bbji;
-import defpackage.bcqu;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bdnf;
+import defpackage.besh;
 import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
-public class RegisteredKey extends AbstractSafeParcelable implements bbji {
-    public static final Parcelable.Creator CREATOR = new bcqu();
+public class RegisteredKey extends AbstractSafeParcelable implements bdnf {
+    public static final Parcelable.Creator CREATOR = new besh();
     public final KeyHandle a;
     public final String b;
     public String c;
@@ -25,7 +25,7 @@ public class RegisteredKey extends AbstractSafeParcelable implements bbji {
         this(keyHandle, null, null);
     }
 
-    @Override // defpackage.bbji
+    @Override // defpackage.bdnf
     public final JSONObject a() {
         throw null;
     }
@@ -97,15 +97,15 @@ public class RegisteredKey extends AbstractSafeParcelable implements bbji {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         KeyHandle keyHandle = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, keyHandle, i, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, keyHandle, i, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.b, false);
+        atzr.c(parcel, a);
     }
 
     public RegisteredKey(KeyHandle keyHandle, String str, String str2) {
-        arwm.s(keyHandle);
+        atzb.s(keyHandle);
         this.a = keyHandle;
         this.c = str;
         this.b = str2;

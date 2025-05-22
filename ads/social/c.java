@@ -1,20 +1,20 @@
 package com.google.android.gms.ads.social;
 
 import android.content.Context;
-import defpackage.dfbl;
-import defpackage.dvni;
-import defpackage.eijy;
-import defpackage.unx;
-import defpackage.uny;
-import defpackage.uoh;
-import defpackage.vay;
-import defpackage.vbf;
-import defpackage.vbh;
-import defpackage.vbi;
+import defpackage.dhmr;
+import defpackage.dxyi;
+import defpackage.ekxd;
+import defpackage.wjw;
+import defpackage.wjx;
+import defpackage.wkg;
+import defpackage.wwy;
+import defpackage.wxf;
+import defpackage.wxh;
+import defpackage.wxi;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class c {
     private final Context a;
@@ -24,28 +24,28 @@ public final class c {
     }
 
     public final String a(String str, String str2) {
-        eijy.a(new vbf());
+        ekxd.a(new wxf());
         Context context = this.a;
-        dvni.f(context);
-        return vbh.f(context, str, str2, new vay(context));
+        dxyi.f(context);
+        return wxh.f(context, str, str2, new wwy(context));
     }
 
     public final void b(String str) {
         Context context = this.a;
-        if (!vbi.c(context)) {
+        if (!wxi.c(context)) {
             Context context2 = this.a;
-            String str2 = uny.a;
-            uoh.k(context2, str);
+            String str2 = wjx.a;
+            wkg.k(context2, str);
             return;
         }
         try {
-            dfbl.n(new vay(context.getApplicationContext()).a(str));
+            dhmr.n(new wwy(context.getApplicationContext()).a(str));
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             throw new IOException(e);
         } catch (ExecutionException e2) {
-            if (e2.getCause() instanceof unx) {
-                throw ((unx) e2.getCause());
+            if (e2.getCause() instanceof wjw) {
+                throw ((wjw) e2.getCause());
             }
             String concat = "Unexpected exception while clearing token: ".concat(e2.toString());
             int i = com.google.android.gms.ads.internal.util.c.a;

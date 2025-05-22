@@ -4,33 +4,33 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.nearby.sharing.discovery.FastInitiation$1;
-import defpackage.cfdg;
-import defpackage.cmtr;
+import defpackage.chks;
+import defpackage.cpbz;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class FastInitiation$1 extends TracingBroadcastReceiver {
-    public final /* synthetic */ cmtr a;
+    public final /* synthetic */ cpbz a;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public FastInitiation$1(cmtr cmtrVar) {
+    public FastInitiation$1(cpbz cpbzVar) {
         super("nearby", "NearbyChangeReceiver");
-        this.a = cmtrVar;
+        this.a = cpbzVar;
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         if ("com.google.android.gms.nearby.sharing.STATE_CHANGED".equals(intent.getAction())) {
-            cmtr cmtrVar = this.a;
-            ((cfdg) cmtrVar.a).submit(new Runnable() { // from class: cmth
+            cpbz cpbzVar = this.a;
+            ((chks) cpbzVar.a).submit(new Runnable() { // from class: cpbp
                 /* JADX WARN: Multi-variable type inference failed */
                 @Override // java.lang.Runnable
                 public final void run() {
-                    cmtr cmtrVar2 = FastInitiation$1.this.a;
-                    synchronized (cmtrVar2) {
-                        ejfh it = eitj.i(cmtrVar2.c.values()).iterator();
+                    cpbz cpbzVar2 = FastInitiation$1.this.a;
+                    synchronized (cpbzVar2) {
+                        elso it = elgo.i(cpbzVar2.c.values()).iterator();
                         while (it.hasNext()) {
-                            ((cmtp) it.next()).e = false;
+                            ((cpbx) it.next()).e = false;
                         }
                     }
                 }

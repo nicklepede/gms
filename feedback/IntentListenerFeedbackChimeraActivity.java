@@ -6,28 +6,28 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.text.TextUtils;
 import com.google.android.gms.googlehelp.feedback.Screenshot;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bakg;
-import defpackage.baok;
-import defpackage.ejhf;
-import defpackage.fnnc;
-import defpackage.fnvj;
-import defpackage.qfp;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bcoc;
+import defpackage.bcsg;
+import defpackage.eluo;
+import defpackage.fqfl;
+import defpackage.fqns;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class IntentListenerFeedbackChimeraActivity extends qfp {
-    private static final asot j = asot.b("gF_IntentListenerFeedbackChimeraActivity", asej.FEEDBACK);
+public class IntentListenerFeedbackChimeraActivity extends ryt {
+    private static final ausn j = ausn.b("gF_IntentListenerFeedbackChimeraActivity", auid.FEEDBACK);
     private String k;
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         Bundle bundleExtra;
         super.onCreate(bundle);
-        String q = asng.q(this);
+        String q = aura.q(this);
         this.k = q;
         if (TextUtils.isEmpty(q)) {
             finish();
@@ -38,7 +38,7 @@ public class IntentListenerFeedbackChimeraActivity extends qfp {
         errorReport.a.packageName = this.k;
         errorReport.a.type = 11;
         errorReport.a.installerPackageName = packageManager.getInstallerPackageName(this.k);
-        Intent className = new Intent().setClassName(this, true != bakg.c(errorReport) ? "com.google.android.gms.feedback.FeedbackActivity" : "com.google.android.gms.feedback.FeedbackAlohaActivity");
+        Intent className = new Intent().setClassName(this, true != bcoc.c(errorReport) ? "com.google.android.gms.feedback.FeedbackActivity" : "com.google.android.gms.feedback.FeedbackAlohaActivity");
         className.addFlags(268435456);
         Intent intent = getIntent();
         if (intent.hasExtra("com.android.feedback.SCREENSHOT_EXTRA")) {
@@ -62,10 +62,10 @@ public class IntentListenerFeedbackChimeraActivity extends qfp {
             errorReport.ap = stringExtra2;
         }
         className.putExtra("com.android.feedback.SAFEPARCELABLE_REPORT", errorReport);
-        if (fnvj.a.a().a()) {
-            baok.a(this, aseu.FEEDBACK_ACTIVITY_FROM_BROADCAST);
-            if (fnnc.c()) {
-                ((ejhf) ((ejhf) j.h()).ah((char) 3617)).x("FEEDBACK_ACTIVITY_FROM_BROADCAST");
+        if (fqns.a.lK().a()) {
+            bcsg.a(this, auio.FEEDBACK_ACTIVITY_FROM_BROADCAST);
+            if (fqfl.c()) {
+                ((eluo) ((eluo) j.h()).ai((char) 3623)).x("FEEDBACK_ACTIVITY_FROM_BROADCAST");
             }
         }
         startActivity(className);

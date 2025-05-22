@@ -4,64 +4,64 @@ import android.content.Context;
 import android.net.Uri;
 import android.util.ArrayMap;
 import androidx.slice.Slice;
-import defpackage.cmfe;
-import defpackage.cril;
-import defpackage.criw;
-import defpackage.crje;
-import defpackage.crjf;
-import defpackage.qdu;
+import defpackage.conm;
+import defpackage.ctrp;
+import defpackage.ctsa;
+import defpackage.ctsi;
+import defpackage.ctsj;
+import defpackage.rwy;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class SharingChimeraSliceProvider extends qdu {
+public class SharingChimeraSliceProvider extends rwy {
     private final Map a = new ArrayMap();
 
-    private final crjf h(Uri uri) {
+    private final ctsj h(Uri uri) {
         Map map = this.a;
-        crjf crjfVar = (crjf) map.get(uri);
-        if (crjfVar == null) {
+        ctsj ctsjVar = (ctsj) map.get(uri);
+        if (ctsjVar == null) {
             Context context = getContext();
             if (context == null) {
-                cmfe.a.e().p("SliceProvider creating failed since context is null", new Object[0]);
+                conm.a.e().p("SliceProvider creating failed since context is null", new Object[0]);
                 return null;
             }
-            if (crjf.e.equals(uri)) {
-                crjfVar = new crje(context);
+            if (ctsj.e.equals(uri)) {
+                ctsjVar = new ctsi(context);
             }
-            if (crjf.f.equals(uri)) {
-                crjfVar = new criw(context);
+            if (ctsj.f.equals(uri)) {
+                ctsjVar = new ctsa(context);
             }
-            if (crjf.g.equals(uri)) {
-                crjfVar = new cril(context);
+            if (ctsj.g.equals(uri)) {
+                ctsjVar = new ctrp(context);
             }
-            if (crjfVar != null) {
-                map.put(uri, crjfVar);
+            if (ctsjVar != null) {
+                map.put(uri, ctsjVar);
             }
         }
-        return crjfVar;
+        return ctsjVar;
     }
 
-    @Override // defpackage.qdu
+    @Override // defpackage.rwy
     public final synchronized Slice a(Uri uri) {
-        crjf h = h(uri);
+        ctsj h = h(uri);
         if (h != null) {
             return h.a(uri);
         }
-        cmfe.a.b().p("onBindSlice failed since slice uri does not match", new Object[0]);
+        conm.a.b().p("onBindSlice failed since slice uri does not match", new Object[0]);
         return null;
     }
 
-    @Override // defpackage.qdu
+    @Override // defpackage.rwy
     public final synchronized void d(Uri uri) {
-        crjf h = h(uri);
+        ctsj h = h(uri);
         if (h != null) {
-            h.jo(uri);
+            h.jD(uri);
         } else {
-            cmfe.a.b().p("onSlicePinned failed since slice uri does not match", new Object[0]);
+            conm.a.b().p("onSlicePinned failed since slice uri does not match", new Object[0]);
         }
     }
 
@@ -72,22 +72,22 @@ public class SharingChimeraSliceProvider extends qdu {
         printWriter.write(String.format("%s\n", "com.google.android.gms.nearby.sharing.SharingSliceProvider"));
         Iterator it = this.a.values().iterator();
         while (it.hasNext()) {
-            ((crjf) it.next()).g(printWriter);
+            ((ctsj) it.next()).g(printWriter);
         }
         printWriter.flush();
     }
 
-    @Override // defpackage.qdu
+    @Override // defpackage.rwy
     public final synchronized void e(Uri uri) {
-        crjf h = h(uri);
+        ctsj h = h(uri);
         if (h != null) {
-            h.jp(uri);
+            h.jE(uri);
         } else {
-            cmfe.a.b().p("onSliceUnpinned failed since slice uri does not match", new Object[0]);
+            conm.a.b().p("onSliceUnpinned failed since slice uri does not match", new Object[0]);
         }
     }
 
-    @Override // defpackage.qdu
+    @Override // defpackage.rwy
     public final void f() {
     }
 }

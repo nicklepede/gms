@@ -5,15 +5,15 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.messages.internal.ClientAppContext;
-import defpackage.arxc;
-import defpackage.cjyr;
-import defpackage.cjzy;
+import defpackage.atzr;
+import defpackage.cmgw;
+import defpackage.cmid;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ClientAppIdentifier extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjyr();
+    public static final Parcelable.Creator CREATOR = new cmgw();
     public static final ClientAppIdentifier a = new ClientAppIdentifier(new ClientAppContext("com.google.android.gms", "0p:com.google.android.gms"), "com.google.android.gms");
     public final ClientAppContext b;
     public final String c;
@@ -42,7 +42,7 @@ public class ClientAppIdentifier extends AbstractSafeParcelable {
     }
 
     public final boolean d() {
-        return e() ? cjzy.b(this.b.c) : cjzy.b(this.c);
+        return e() ? cmid.b(this.b.c) : cmid.b(this.c);
     }
 
     public final boolean e() {
@@ -86,11 +86,11 @@ public class ClientAppIdentifier extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.o(parcel, 4, this.d);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.o(parcel, 4, this.d);
+        atzr.c(parcel, a2);
     }
 
     public ClientAppIdentifier(ClientAppContext clientAppContext, String str) {

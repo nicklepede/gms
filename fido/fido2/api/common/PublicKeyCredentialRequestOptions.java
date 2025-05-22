@@ -3,17 +3,17 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.ResultReceiver;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.arxd;
-import defpackage.asnj;
-import defpackage.bbtv;
-import defpackage.bbtw;
-import defpackage.bbup;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.fnzw;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.atzs;
+import defpackage.aurd;
+import defpackage.bdxm;
+import defpackage.bdxn;
+import defpackage.bdyg;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.fqrs;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,10 +21,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PublicKeyCredentialRequestOptions extends RequestOptions {
-    public static final Parcelable.Creator CREATOR = new bbtw();
+    public static final Parcelable.Creator CREATOR = new bdxn();
     public final byte[] a;
     public final Double b;
     public final String c;
@@ -38,7 +38,7 @@ public class PublicKeyCredentialRequestOptions extends RequestOptions {
 
     public PublicKeyCredentialRequestOptions(byte[] bArr, Double d, String str, List list, Integer num, TokenBinding tokenBinding, String str2, AuthenticationExtensions authenticationExtensions, Long l, String str3, ResultReceiver resultReceiver) {
         this.j = resultReceiver;
-        if (str3 != null && fnzw.j()) {
+        if (str3 != null && fqrs.i()) {
             try {
                 PublicKeyCredentialRequestOptions k = k(new JSONObject(str3));
                 this.a = k.a;
@@ -51,14 +51,14 @@ public class PublicKeyCredentialRequestOptions extends RequestOptions {
                 this.h = k.h;
                 this.i = k.i;
                 return;
-            } catch (bbup | JSONException e) {
+            } catch (bdyg | JSONException e) {
                 throw new IllegalArgumentException(e);
             }
         }
-        arwm.s(bArr);
+        atzb.s(bArr);
         this.a = bArr;
         this.b = d;
-        arwm.s(str);
+        atzb.s(str);
         this.c = str;
         this.d = list;
         this.e = num;
@@ -67,7 +67,7 @@ public class PublicKeyCredentialRequestOptions extends RequestOptions {
         if (str2 != null) {
             try {
                 this.g = UserVerificationRequirement.a(str2);
-            } catch (bbup e2) {
+            } catch (bdyg e2) {
                 throw new IllegalArgumentException(e2);
             }
         } else {
@@ -77,56 +77,56 @@ public class PublicKeyCredentialRequestOptions extends RequestOptions {
     }
 
     public static PublicKeyCredentialRequestOptions k(JSONObject jSONObject) {
-        bbtv bbtvVar = new bbtv();
-        bbtvVar.b(asnj.f(jSONObject.getString("challenge")));
+        bdxm bdxmVar = new bdxm();
+        bdxmVar.b(aurd.f(jSONObject.getString("challenge")));
         if (jSONObject.has("timeout")) {
-            bbtvVar.a = Double.valueOf(jSONObject.getDouble("timeout") / 1000.0d);
+            bdxmVar.a = Double.valueOf(jSONObject.getDouble("timeout") / 1000.0d);
         } else if (jSONObject.has("timeoutSeconds")) {
-            bbtvVar.a = Double.valueOf(jSONObject.getDouble("timeoutSeconds"));
+            bdxmVar.a = Double.valueOf(jSONObject.getDouble("timeoutSeconds"));
         }
-        bbtvVar.c(jSONObject.getString("rpId"));
+        bdxmVar.c(jSONObject.getString("rpId"));
         JSONArray jSONArray = jSONObject.has("allowList") ? jSONObject.getJSONArray("allowList") : jSONObject.has("allowCredentials") ? jSONObject.getJSONArray("allowCredentials") : null;
         if (jSONArray != null) {
             ArrayList arrayList = new ArrayList();
             for (int i = 0; i < jSONArray.length(); i++) {
                 arrayList.add(PublicKeyCredentialDescriptor.b(jSONArray.getJSONObject(i)));
             }
-            bbtvVar.b = arrayList;
+            bdxmVar.b = arrayList;
         }
         if (jSONObject.has("requestId")) {
-            bbtvVar.c = Integer.valueOf(jSONObject.getInt("requestId"));
+            bdxmVar.c = Integer.valueOf(jSONObject.getInt("requestId"));
         }
         if (jSONObject.has("tokenBinding")) {
             JSONObject jSONObject2 = jSONObject.getJSONObject("tokenBinding");
-            bbtvVar.d = new TokenBinding(jSONObject2.getString("status"), jSONObject2.has("id") ? jSONObject2.getString("id") : null);
+            bdxmVar.d = new TokenBinding(jSONObject2.getString("status"), jSONObject2.has("id") ? jSONObject2.getString("id") : null);
         }
         if (jSONObject.has("userVerification")) {
-            bbtvVar.e = UserVerificationRequirement.a(jSONObject.getString("userVerification"));
+            bdxmVar.e = UserVerificationRequirement.a(jSONObject.getString("userVerification"));
         }
         if (jSONObject.has("authenticationExtensions")) {
-            bbtvVar.f = AuthenticationExtensions.a(jSONObject.getJSONObject("authenticationExtensions"));
+            bdxmVar.f = AuthenticationExtensions.a(jSONObject.getJSONObject("authenticationExtensions"));
         } else if (jSONObject.has("extensions")) {
-            bbtvVar.f = AuthenticationExtensions.a(jSONObject.getJSONObject("extensions"));
+            bdxmVar.f = AuthenticationExtensions.a(jSONObject.getJSONObject("extensions"));
         }
         if (jSONObject.has("longRequestId")) {
-            bbtvVar.g = Long.valueOf(jSONObject.getLong("longRequestId"));
+            bdxmVar.g = Long.valueOf(jSONObject.getLong("longRequestId"));
         }
-        return bbtvVar.a();
+        return bdxmVar.a();
     }
 
-    public final bbtv a() {
-        bbtv bbtvVar = new bbtv();
-        bbtvVar.h = this.j;
-        bbtvVar.b(this.a);
-        bbtvVar.a = this.b;
-        bbtvVar.c(this.c);
-        bbtvVar.b = this.d;
-        bbtvVar.c = this.e;
-        bbtvVar.d = this.f;
-        bbtvVar.e = this.g;
-        bbtvVar.f = this.h;
-        bbtvVar.g = this.i;
-        return bbtvVar;
+    public final bdxm a() {
+        bdxm bdxmVar = new bdxm();
+        bdxmVar.h = this.j;
+        bdxmVar.b(this.a);
+        bdxmVar.a = this.b;
+        bdxmVar.c(this.c);
+        bdxmVar.b = this.d;
+        bdxmVar.c = this.e;
+        bdxmVar.d = this.f;
+        bdxmVar.e = this.g;
+        bdxmVar.f = this.h;
+        bdxmVar.g = this.i;
+        return bdxmVar;
     }
 
     @Override // com.google.android.gms.fido.fido2.api.common.RequestOptions
@@ -145,8 +145,8 @@ public class PublicKeyCredentialRequestOptions extends RequestOptions {
     }
 
     @Override // com.google.android.gms.fido.fido2.api.common.RequestOptions
-    public final eiid e() {
-        return eigb.a;
+    public final ekvi e() {
+        return ektg.a;
     }
 
     public final boolean equals(Object obj) {
@@ -156,7 +156,7 @@ public class PublicKeyCredentialRequestOptions extends RequestOptions {
             return false;
         }
         PublicKeyCredentialRequestOptions publicKeyCredentialRequestOptions = (PublicKeyCredentialRequestOptions) obj;
-        return Arrays.equals(this.a, publicKeyCredentialRequestOptions.a) && arwb.b(this.b, publicKeyCredentialRequestOptions.b) && arwb.b(this.c, publicKeyCredentialRequestOptions.c) && (((list = this.d) == null && publicKeyCredentialRequestOptions.d == null) || (list != null && (list2 = publicKeyCredentialRequestOptions.d) != null && list.containsAll(list2) && list2.containsAll(list))) && arwb.b(this.e, publicKeyCredentialRequestOptions.e) && arwb.b(this.f, publicKeyCredentialRequestOptions.f) && arwb.b(this.g, publicKeyCredentialRequestOptions.g) && arwb.b(this.h, publicKeyCredentialRequestOptions.h) && arwb.b(this.i, publicKeyCredentialRequestOptions.i);
+        return Arrays.equals(this.a, publicKeyCredentialRequestOptions.a) && atyq.b(this.b, publicKeyCredentialRequestOptions.b) && atyq.b(this.c, publicKeyCredentialRequestOptions.c) && (((list = this.d) == null && publicKeyCredentialRequestOptions.d == null) || (list != null && (list2 = publicKeyCredentialRequestOptions.d) != null && list.containsAll(list2) && list2.containsAll(list))) && atyq.b(this.e, publicKeyCredentialRequestOptions.e) && atyq.b(this.f, publicKeyCredentialRequestOptions.f) && atyq.b(this.g, publicKeyCredentialRequestOptions.g) && atyq.b(this.h, publicKeyCredentialRequestOptions.h) && atyq.b(this.i, publicKeyCredentialRequestOptions.i);
     }
 
     @Override // com.google.android.gms.fido.fido2.api.common.RequestOptions
@@ -185,12 +185,12 @@ public class PublicKeyCredentialRequestOptions extends RequestOptions {
 
     @Override // com.google.android.gms.fido.fido2.api.common.RequestOptions
     public final byte[] j() {
-        if (!fnzw.p()) {
-            return arxd.n(this);
+        if (!fqrs.o()) {
+            return atzs.n(this);
         }
-        bbtv bbtvVar = new bbtv(this);
-        bbtvVar.h = null;
-        return arxd.n(bbtvVar.a());
+        bdxm bdxmVar = new bdxm(this);
+        bdxmVar.h = null;
+        return atzs.n(bdxmVar.a());
     }
 
     public final String toString() {
@@ -198,25 +198,25 @@ public class PublicKeyCredentialRequestOptions extends RequestOptions {
         UserVerificationRequirement userVerificationRequirement = this.g;
         TokenBinding tokenBinding = this.f;
         List list = this.d;
-        return "PublicKeyCredentialRequestOptions{\n challenge=" + asnj.c(this.a) + ", \n timeoutSeconds=" + this.b + ", \n rpId='" + this.c + "', \n allowList=" + String.valueOf(list) + ", \n requestId=" + this.e + ", \n tokenBinding=" + String.valueOf(tokenBinding) + ", \n userVerification=" + String.valueOf(userVerificationRequirement) + ", \n authenticationExtensions=" + String.valueOf(authenticationExtensions) + ", \n longRequestId=" + this.i + "}";
+        return "PublicKeyCredentialRequestOptions{\n challenge=" + aurd.c(this.a) + ", \n timeoutSeconds=" + this.b + ", \n rpId='" + this.c + "', \n allowList=" + String.valueOf(list) + ", \n requestId=" + this.e + ", \n tokenBinding=" + String.valueOf(tokenBinding) + ", \n userVerification=" + String.valueOf(userVerificationRequirement) + ", \n authenticationExtensions=" + String.valueOf(authenticationExtensions) + ", \n longRequestId=" + this.i + "}";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         byte[] bArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 2, bArr, false);
-        arxc.B(parcel, 3, this.b);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.y(parcel, 5, this.d, false);
-        arxc.F(parcel, 6, this.e);
-        arxc.t(parcel, 7, this.f, i, false);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 2, bArr, false);
+        atzr.B(parcel, 3, this.b);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.y(parcel, 5, this.d, false);
+        atzr.F(parcel, 6, this.e);
+        atzr.t(parcel, 7, this.f, i, false);
         UserVerificationRequirement userVerificationRequirement = this.g;
-        arxc.v(parcel, 8, userVerificationRequirement == null ? null : userVerificationRequirement.d, false);
-        arxc.t(parcel, 9, this.h, i, false);
-        arxc.I(parcel, 10, this.i);
-        arxc.v(parcel, 11, null, false);
-        arxc.t(parcel, 12, this.j, i, false);
-        arxc.c(parcel, a);
+        atzr.v(parcel, 8, userVerificationRequirement == null ? null : userVerificationRequirement.d, false);
+        atzr.t(parcel, 9, this.h, i, false);
+        atzr.I(parcel, 10, this.i);
+        atzr.v(parcel, 11, null, false);
+        atzr.t(parcel, 12, this.j, i, false);
+        atzr.c(parcel, a);
     }
 }

@@ -11,28 +11,28 @@ import com.google.android.gms.R;
 import com.google.android.gms.crisisalerts.settings.CrisisAlertsSettingsChimeraActivity;
 import com.google.android.gms.crisisalerts.state.CrisisAlertsSystemStateChangeIntentOperation;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.axda;
-import defpackage.axdg;
-import defpackage.axfv;
-import defpackage.axfx;
-import defpackage.axfz;
-import defpackage.axgg;
-import defpackage.axgx;
-import defpackage.axhe;
-import defpackage.ensj;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.azha;
+import defpackage.azhg;
+import defpackage.azjv;
+import defpackage.azjx;
+import defpackage.azjz;
+import defpackage.azkg;
+import defpackage.azkx;
+import defpackage.azle;
+import defpackage.eqgc;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class CrisisAlertsSettingsChimeraActivity extends axgg {
-    public static final asot j = axdg.a("StngAct");
+public class CrisisAlertsSettingsChimeraActivity extends azkg {
+    public static final ausn j = azhg.a("StngAct");
     public static WeakReference k = new WeakReference(null);
-    public axgx l;
-    public axhe m;
-    public axda n;
+    public azkx l;
+    public azle m;
+    public azha n;
     public Executor o;
     public Context p;
     public View q;
@@ -40,20 +40,20 @@ public class CrisisAlertsSettingsChimeraActivity extends axgg {
     public TextView s;
     private TextView u;
 
-    @Override // defpackage.asse
+    @Override // defpackage.auvy
     protected final void k(boolean z) {
-        ensj.t(this.l.c(z), new axfz(this, z), this.o);
+        eqgc.t(this.l.c(z), new azjz(this, z), this.o);
     }
 
     public final void o() {
-        ensj.t(this.m.c(), new axfv(this), this.o);
+        eqgc.t(this.m.c(), new azjv(this), this.o);
     }
 
-    @Override // defpackage.axgg, defpackage.asse, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.azkg, defpackage.auvy, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         this.p = this;
-        if (asqh.g()) {
+        if (auub.g()) {
             getWindow().addSystemFlags(AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
         }
         setTheme(R.style.CrisisAlertsAppDayNightTheme);
@@ -61,13 +61,13 @@ public class CrisisAlertsSettingsChimeraActivity extends axgg {
         m(true);
         TextView textView = (TextView) findViewById(R.id.learn_more);
         this.u = textView;
-        textView.setOnClickListener(new View.OnClickListener() { // from class: axfq
+        textView.setOnClickListener(new View.OnClickListener() { // from class: azjq
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 CrisisAlertsSettingsChimeraActivity.this.p.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("")));
             }
         });
-        CrisisAlertsSystemStateChangeIntentOperation.b(new Runnable() { // from class: axfr
+        CrisisAlertsSystemStateChangeIntentOperation.b(new Runnable() { // from class: azjr
             @Override // java.lang.Runnable
             public final void run() {
                 CrisisAlertsSettingsChimeraActivity crisisAlertsSettingsChimeraActivity = (CrisisAlertsSettingsChimeraActivity) CrisisAlertsSettingsChimeraActivity.k.get();
@@ -85,7 +85,7 @@ public class CrisisAlertsSettingsChimeraActivity extends axgg {
         this.n.g();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != 16908332) {
             return false;
@@ -94,9 +94,9 @@ public class CrisisAlertsSettingsChimeraActivity extends axgg {
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        ensj.t(this.l.b(), new axfx(this), this.o);
+        eqgc.t(this.l.b(), new azjx(this), this.o);
     }
 }

@@ -6,105 +6,104 @@ import android.location.Location;
 import android.net.Uri;
 import com.google.android.gms.locationsharingreporter.service.LocationTrackingIntentOperation;
 import defpackage.a;
-import defpackage.asbo;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.bkzk;
-import defpackage.bxfy;
-import defpackage.byzb;
-import defpackage.bziy;
-import defpackage.casx;
-import defpackage.casy;
-import defpackage.catq;
-import defpackage.catr;
-import defpackage.cats;
-import defpackage.cavi;
-import defpackage.cavm;
-import defpackage.cavq;
-import defpackage.cavr;
-import defpackage.cawn;
-import defpackage.caxd;
-import defpackage.cbfb;
-import defpackage.dfee;
-import defpackage.doef;
-import defpackage.dxbn;
-import defpackage.dxbo;
-import defpackage.dxhi;
-import defpackage.dxhj;
-import defpackage.dxkm;
-import defpackage.ebfb;
-import defpackage.ebfc;
-import defpackage.ebfd;
-import defpackage.ebfe;
-import defpackage.ebfg;
-import defpackage.eiho;
-import defpackage.eiig;
-import defpackage.eisx;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.enre;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.fgsw;
-import defpackage.fhin;
-import defpackage.fpwh;
-import defpackage.fpwl;
-import defpackage.fpws;
-import defpackage.fpxh;
-import defpackage.ikd;
+import defpackage.aued;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.bngb;
+import defpackage.bzoo;
+import defpackage.cbhs;
+import defpackage.cbrp;
+import defpackage.cdbn;
+import defpackage.cdbo;
+import defpackage.cdcg;
+import defpackage.cdch;
+import defpackage.cdci;
+import defpackage.cddy;
+import defpackage.cdec;
+import defpackage.cdeg;
+import defpackage.cdeh;
+import defpackage.cdfd;
+import defpackage.cdft;
+import defpackage.cdnt;
+import defpackage.dhpk;
+import defpackage.dqoo;
+import defpackage.dznn;
+import defpackage.dzno;
+import defpackage.dzti;
+import defpackage.dztj;
+import defpackage.dzwm;
+import defpackage.edro;
+import defpackage.edrp;
+import defpackage.edrq;
+import defpackage.edrr;
+import defpackage.edrt;
+import defpackage.ekut;
+import defpackage.ekvl;
+import defpackage.elgc;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.eqex;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fjhu;
+import defpackage.fjyk;
+import defpackage.fsqb;
+import defpackage.fsqf;
+import defpackage.fsqm;
+import defpackage.ilt;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.regex.Pattern;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class LocationTrackingIntentOperation extends bkzk {
+public class LocationTrackingIntentOperation extends bngb {
     public static final /* synthetic */ int h = 0;
-    private static final asot i = asot.b("HighPowerGeoIntOp", asej.LOCATION_SHARING_REPORTER);
+    private static final ausn i = ausn.b("HighPowerGeoIntOp", auid.LOCATION_SHARING_REPORTER);
 
-    private final casx i() {
-        fgsw c = cbfb.c(this);
-        fecj v = casx.a.v();
+    private final cdbn i() {
+        fjhu c = cdnt.c(this);
+        fgrc v = cdbn.a.v();
         long j = c.d;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        casx casxVar = (casx) fecpVar;
-        casxVar.b |= 2;
-        casxVar.d = j;
+        fgri fgriVar = v.b;
+        cdbn cdbnVar = (cdbn) fgriVar;
+        cdbnVar.b |= 2;
+        cdbnVar.d = j;
         boolean z = c.c;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v.U();
         }
-        casx casxVar2 = (casx) v.b;
-        casxVar2.b |= 1;
-        casxVar2.c = z;
-        return (casx) v.Q();
+        cdbn cdbnVar2 = (cdbn) v.b;
+        cdbnVar2.b |= 1;
+        cdbnVar2.c = z;
+        return (cdbn) v.Q();
     }
 
     private final void j(String str, String str2, int i2) {
-        cats catsVar;
+        cdci cdciVar;
         long j;
-        if (fpwl.a.a().d()) {
+        if (fsqf.a.lK().d()) {
             long currentTimeMillis = System.currentTimeMillis();
             try {
-                catsVar = (cats) k().a().get(fpws.i(), TimeUnit.MILLISECONDS);
+                cdciVar = (cdci) k().a().get(fsqm.i(), TimeUnit.MILLISECONDS);
             } catch (InterruptedException | ExecutionException | TimeoutException e) {
-                ((ejhf) ((ejhf) ((ejhf) i.j()).s(e)).ah((char) 5713)).x("failed to get location tracking data");
-                catsVar = null;
+                ((eluo) ((eluo) ((eluo) i.j()).s(e)).ai((char) 5727)).x("failed to get location tracking data");
+                cdciVar = null;
             }
-            if (catsVar != null) {
+            if (cdciVar != null) {
                 long j2 = i2;
-                fedh<catq> fedhVar = catsVar.b;
+                fgsa<cdcg> fgsaVar = cdciVar.b;
                 ArrayList arrayList = new ArrayList();
-                for (catq catqVar : fedhVar) {
-                    if (catqVar.d.equals(str2) && catqVar.c == j2) {
-                        arrayList.add(catqVar);
+                for (cdcg cdcgVar : fgsaVar) {
+                    if (cdcgVar.d.equals(str2) && cdcgVar.c == j2) {
+                        arrayList.add(cdcgVar);
                     }
                 }
                 int size = arrayList.size();
@@ -115,168 +114,169 @@ public class LocationTrackingIntentOperation extends bkzk {
                     if (i3 >= size) {
                         break;
                     }
-                    long j3 = currentTimeMillis - ((catq) arrayList.get(i3)).e;
-                    if (j3 > 0 && j3 <= fpwh.b()) {
+                    long j3 = currentTimeMillis - ((cdcg) arrayList.get(i3)).e;
+                    if (j3 > 0 && j3 <= fsqb.b()) {
                         i4++;
                     }
                     i3++;
                 }
                 int i5 = i4 + 1;
-                fecj v = ebfb.a.v();
+                fgrc v = edro.a.v();
                 int m = m(i2);
                 if (!v.b.L()) {
                     v.U();
                 }
-                ebfb ebfbVar = (ebfb) v.b;
-                ebfbVar.c = m - 1;
-                ebfbVar.b |= 1;
-                boolean z = ((long) i5) >= fpwh.a.a().d();
+                edro edroVar = (edro) v.b;
+                edroVar.c = m - 1;
+                edroVar.b |= 1;
+                fsqb fsqbVar = fsqb.a;
+                boolean z = ((long) i5) >= fsqbVar.lK().d();
                 if (!v.b.L()) {
                     v.U();
                 }
-                fecp fecpVar = v.b;
-                ebfb ebfbVar2 = (ebfb) fecpVar;
-                ebfbVar2.b |= 2;
-                ebfbVar2.d = z;
-                if (!fecpVar.L()) {
+                fgri fgriVar = v.b;
+                edro edroVar2 = (edro) fgriVar;
+                edroVar2.b |= 2;
+                edroVar2.d = z;
+                if (!fgriVar.L()) {
                     v.U();
                 }
-                ebfb ebfbVar3 = (ebfb) v.b;
-                ebfbVar3.b |= 8;
-                ebfbVar3.f = i5;
-                long b = fpwh.b();
+                edro edroVar3 = (edro) v.b;
+                edroVar3.b |= 8;
+                edroVar3.f = i5;
+                long b = fsqb.b();
                 if (!v.b.L()) {
                     v.U();
                 }
-                ebfb ebfbVar4 = (ebfb) v.b;
-                ebfbVar4.b |= 4;
-                ebfbVar4.e = b;
-                ebfb ebfbVar5 = (ebfb) v.Q();
-                cavi a = cavi.a();
-                fecj v2 = ebfg.a.v();
-                fecj v3 = ebfc.a.v();
+                edro edroVar4 = (edro) v.b;
+                edroVar4.b |= 4;
+                edroVar4.e = b;
+                edro edroVar5 = (edro) v.Q();
+                cddy a = cddy.a();
+                fgrc v2 = edrt.a.v();
+                fgrc v3 = edrp.a.v();
                 if (!v3.b.L()) {
                     v3.U();
                 }
-                ebfc ebfcVar = (ebfc) v3.b;
-                ebfbVar5.getClass();
-                ebfcVar.c = ebfbVar5;
-                ebfcVar.b = 4;
+                edrp edrpVar = (edrp) v3.b;
+                edroVar5.getClass();
+                edrpVar.c = edroVar5;
+                edrpVar.b = 4;
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                ebfg ebfgVar = (ebfg) v2.b;
-                ebfc ebfcVar2 = (ebfc) v3.Q();
-                ebfcVar2.getClass();
-                ebfgVar.c = ebfcVar2;
-                ebfgVar.b = 2;
-                a.c(str, (ebfg) v2.Q(), 16);
-                final catr catrVar = (catr) cats.a.v();
+                edrt edrtVar = (edrt) v2.b;
+                edrp edrpVar2 = (edrp) v3.Q();
+                edrpVar2.getClass();
+                edrtVar.c = edrpVar2;
+                edrtVar.b = 2;
+                a.c(str, (edrt) v2.Q(), 16);
+                final cdch cdchVar = (cdch) cdci.a.v();
                 int i6 = 0;
-                for (catq catqVar2 : fedhVar) {
+                for (cdcg cdcgVar2 : fgsaVar) {
                     long j4 = j;
-                    long j5 = currentTimeMillis - catqVar2.e;
-                    if (j5 >= j4 && j5 <= fpwh.b() && i6 < fpwh.a.a().c()) {
-                        catrVar.a(catqVar2);
+                    long j5 = currentTimeMillis - cdcgVar2.e;
+                    if (j5 >= j4 && j5 <= fsqb.b() && i6 < fsqbVar.lK().c()) {
+                        cdchVar.a(cdcgVar2);
                         i6++;
                     }
                     j = j4;
                 }
-                fecj v4 = catq.a.v();
+                fgrc v4 = cdcg.a.v();
                 if (!v4.b.L()) {
                     v4.U();
                 }
-                fecp fecpVar2 = v4.b;
-                catq catqVar3 = (catq) fecpVar2;
+                fgri fgriVar2 = v4.b;
+                cdcg cdcgVar3 = (cdcg) fgriVar2;
                 str2.getClass();
-                catqVar3.b = 2 | catqVar3.b;
-                catqVar3.d = str2;
-                if (!fecpVar2.L()) {
+                cdcgVar3.b = 2 | cdcgVar3.b;
+                cdcgVar3.d = str2;
+                if (!fgriVar2.L()) {
                     v4.U();
                 }
-                fecp fecpVar3 = v4.b;
-                catq catqVar4 = (catq) fecpVar3;
-                catqVar4.b = 1 | catqVar4.b;
-                catqVar4.c = j2;
-                if (!fecpVar3.L()) {
+                fgri fgriVar3 = v4.b;
+                cdcg cdcgVar4 = (cdcg) fgriVar3;
+                cdcgVar4.b |= 1;
+                cdcgVar4.c = j2;
+                if (!fgriVar3.L()) {
                     v4.U();
                 }
-                catq catqVar5 = (catq) v4.b;
-                catqVar5.b |= 4;
-                catqVar5.e = currentTimeMillis;
-                catrVar.a((catq) v4.Q());
+                cdcg cdcgVar5 = (cdcg) v4.b;
+                cdcgVar5.b |= 4;
+                cdcgVar5.e = currentTimeMillis;
+                cdchVar.a((cdcg) v4.Q());
                 try {
-                    ((enpf) k().b(new eiho() { // from class: cavh
-                        @Override // defpackage.eiho
+                    ((eqcy) k().b(new ekut() { // from class: cddx
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
                             int i7 = LocationTrackingIntentOperation.h;
-                            return (cats) catr.this.Q();
+                            return (cdci) cdch.this.Q();
                         }
-                    }, enre.a)).v(fpws.i(), TimeUnit.MILLISECONDS);
+                    }, eqex.a)).v(fsqm.i(), TimeUnit.MILLISECONDS);
                 } catch (InterruptedException | ExecutionException | TimeoutException e2) {
-                    ((ejhf) ((ejhf) ((ejhf) i.j()).s(e2)).ah((char) 5712)).x("failed to update location tracking data");
+                    ((eluo) ((eluo) ((eluo) i.j()).s(e2)).ai((char) 5726)).x("failed to update location tracking data");
                 }
             }
         }
     }
 
-    private final dxkm k() {
-        Pattern pattern = dxbo.a;
-        dxbn dxbnVar = new dxbn(this);
-        dxbnVar.e("locationsharingreporter");
-        dxbnVar.f("Location.Tracking.pb");
-        Uri a = dxbnVar.a();
-        dxhi a2 = dxhj.a();
+    private final dzwm k() {
+        Pattern pattern = dzno.a;
+        dznn dznnVar = new dznn(this);
+        dznnVar.e("locationsharingreporter");
+        dznnVar.f("Location.Tracking.pb");
+        Uri a = dznnVar.a();
+        dzti a2 = dztj.a();
         a2.f(a);
-        a2.e(cats.a);
-        return bxfy.a.a(a2.a());
+        a2.e(cdci.a);
+        return bzoo.a.a(a2.a());
     }
 
-    private static final casy l(Location location) {
-        fecj v = casy.a.v();
+    private static final cdbo l(Location location) {
+        fgrc v = cdbo.a.v();
         double altitude = location.getAltitude();
         if (!v.b.L()) {
             v.U();
         }
-        casy casyVar = (casy) v.b;
-        casyVar.b |= 16;
-        casyVar.g = altitude;
+        cdbo cdboVar = (cdbo) v.b;
+        cdboVar.b |= 16;
+        cdboVar.g = altitude;
         double latitude = location.getLatitude();
         if (!v.b.L()) {
             v.U();
         }
-        casy casyVar2 = (casy) v.b;
-        casyVar2.b |= 8;
-        casyVar2.f = latitude;
+        cdbo cdboVar2 = (cdbo) v.b;
+        cdboVar2.b |= 8;
+        cdboVar2.f = latitude;
         double longitude = location.getLongitude();
         if (!v.b.L()) {
             v.U();
         }
-        casy casyVar3 = (casy) v.b;
-        casyVar3.b |= 4;
-        casyVar3.e = longitude;
+        cdbo cdboVar3 = (cdbo) v.b;
+        cdboVar3.b |= 4;
+        cdboVar3.e = longitude;
         double speed = location.getSpeed();
         if (!v.b.L()) {
             v.U();
         }
-        casy casyVar4 = (casy) v.b;
-        casyVar4.b |= 64;
-        casyVar4.i = speed;
+        cdbo cdboVar4 = (cdbo) v.b;
+        cdboVar4.b |= 64;
+        cdboVar4.i = speed;
         double accuracy = location.getAccuracy();
         if (!v.b.L()) {
             v.U();
         }
-        casy casyVar5 = (casy) v.b;
-        casyVar5.b |= 2;
-        casyVar5.d = accuracy;
+        cdbo cdboVar5 = (cdbo) v.b;
+        cdboVar5.b |= 2;
+        cdboVar5.d = accuracy;
         long elapsedRealtimeNanos = location.getElapsedRealtimeNanos();
         if (!v.b.L()) {
             v.U();
         }
-        casy casyVar6 = (casy) v.b;
-        casyVar6.b |= 1;
-        casyVar6.c = elapsedRealtimeNanos;
-        return (casy) v.Q();
+        cdbo cdboVar6 = (cdbo) v.b;
+        cdboVar6.b |= 1;
+        cdboVar6.c = elapsedRealtimeNanos;
+        return (cdbo) v.Q();
     }
 
     private static final int m(int i2) {
@@ -289,221 +289,217 @@ public class LocationTrackingIntentOperation extends bkzk {
         return 3;
     }
 
-    private static final boolean n(casy casyVar, cawn cawnVar) {
-        return doef.a(casyVar.f, casyVar.e, cawnVar.a, cawnVar.b) < ((double) cawnVar.c);
+    private static final boolean n(cdbo cdboVar, cdfd cdfdVar) {
+        return dqoo.a(cdboVar.f, cdboVar.e, cdfdVar.a, cdfdVar.b) < ((double) cdfdVar.c);
     }
 
-    private static final void o(String str, cawn cawnVar, casy casyVar, casy casyVar2, int i2, int i3, long j) {
-        fecj v = ebfc.a.v();
-        fecj v2 = ebfe.a.v();
-        double a = doef.a(casyVar2.f, casyVar2.e, casyVar.f, casyVar.e);
+    private static final void o(String str, cdfd cdfdVar, cdbo cdboVar, cdbo cdboVar2, int i2, int i3, long j) {
+        fgrc v = edrp.a.v();
+        fgrc v2 = edrr.a.v();
+        double a = dqoo.a(cdboVar2.f, cdboVar2.e, cdboVar.f, cdboVar.e);
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar = v2.b;
-        ebfe ebfeVar = (ebfe) fecpVar;
-        ebfeVar.b |= 128;
-        ebfeVar.j = a;
-        long j2 = casyVar.c;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v2.b;
+        edrr edrrVar = (edrr) fgriVar;
+        edrrVar.b |= 128;
+        edrrVar.j = a;
+        long j2 = cdboVar.c;
+        if (!fgriVar.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        ebfe ebfeVar2 = (ebfe) fecpVar2;
-        ebfeVar2.b |= 32;
-        ebfeVar2.h = j2;
-        long j3 = casyVar2.c;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v2.b;
+        edrr edrrVar2 = (edrr) fgriVar2;
+        edrrVar2.b |= 32;
+        edrrVar2.h = j2;
+        long j3 = cdboVar2.c;
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        fecp fecpVar3 = v2.b;
-        ebfe ebfeVar3 = (ebfe) fecpVar3;
-        ebfeVar3.b |= 64;
-        ebfeVar3.i = j3;
-        double d = casyVar.i;
-        if (!fecpVar3.L()) {
+        fgri fgriVar3 = v2.b;
+        edrr edrrVar3 = (edrr) fgriVar3;
+        edrrVar3.b |= 64;
+        edrrVar3.i = j3;
+        double d = cdboVar.i;
+        if (!fgriVar3.L()) {
             v2.U();
         }
-        fecp fecpVar4 = v2.b;
-        ebfe ebfeVar4 = (ebfe) fecpVar4;
-        ebfeVar4.b |= 8;
-        ebfeVar4.f = d;
-        double d2 = casyVar2.i;
-        if (!fecpVar4.L()) {
+        fgri fgriVar4 = v2.b;
+        edrr edrrVar4 = (edrr) fgriVar4;
+        edrrVar4.b |= 8;
+        edrrVar4.f = d;
+        double d2 = cdboVar2.i;
+        if (!fgriVar4.L()) {
             v2.U();
         }
-        fecp fecpVar5 = v2.b;
-        ebfe ebfeVar5 = (ebfe) fecpVar5;
-        ebfeVar5.b |= 16;
-        ebfeVar5.g = d2;
+        fgri fgriVar5 = v2.b;
+        edrr edrrVar5 = (edrr) fgriVar5;
+        edrrVar5.b |= 16;
+        edrrVar5.g = d2;
         long j4 = i3;
-        if (!fecpVar5.L()) {
+        if (!fgriVar5.L()) {
             v2.U();
         }
-        ebfe ebfeVar6 = (ebfe) v2.b;
-        ebfeVar6.b |= 4;
-        ebfeVar6.e = j4;
-        double d3 = cawnVar.a;
-        double d4 = cawnVar.b;
-        double a2 = doef.a(d3, d4, casyVar.f, casyVar.e);
+        edrr edrrVar6 = (edrr) v2.b;
+        edrrVar6.b |= 4;
+        edrrVar6.e = j4;
+        double d3 = cdfdVar.a;
+        double d4 = cdfdVar.b;
+        double a2 = dqoo.a(d3, d4, cdboVar.f, cdboVar.e);
         if (!v2.b.L()) {
             v2.U();
         }
-        ebfe ebfeVar7 = (ebfe) v2.b;
-        ebfeVar7.b |= 256;
-        ebfeVar7.k = a2;
-        double a3 = doef.a(d3, d4, casyVar2.f, casyVar2.e);
+        edrr edrrVar7 = (edrr) v2.b;
+        edrrVar7.b |= 256;
+        edrrVar7.k = a2;
+        double a3 = dqoo.a(d3, d4, cdboVar2.f, cdboVar2.e);
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar6 = v2.b;
-        ebfe ebfeVar8 = (ebfe) fecpVar6;
-        ebfeVar8.b |= 512;
-        ebfeVar8.l = a3;
-        float f = cawnVar.c;
-        if (!fecpVar6.L()) {
+        fgri fgriVar6 = v2.b;
+        edrr edrrVar8 = (edrr) fgriVar6;
+        edrrVar8.b |= 512;
+        edrrVar8.l = a3;
+        float f = cdfdVar.c;
+        if (!fgriVar6.L()) {
             v2.U();
         }
-        fecp fecpVar7 = v2.b;
-        ebfe ebfeVar9 = (ebfe) fecpVar7;
-        ebfeVar9.b |= 1024;
-        ebfeVar9.m = f;
-        if (!fecpVar7.L()) {
+        fgri fgriVar7 = v2.b;
+        edrr edrrVar9 = (edrr) fgriVar7;
+        edrrVar9.b |= 1024;
+        edrrVar9.m = f;
+        if (!fgriVar7.L()) {
             v2.U();
         }
-        fecp fecpVar8 = v2.b;
-        ebfe ebfeVar10 = (ebfe) fecpVar8;
-        ebfeVar10.b |= 2;
-        ebfeVar10.d = j;
-        if (!fecpVar8.L()) {
+        fgri fgriVar8 = v2.b;
+        edrr edrrVar10 = (edrr) fgriVar8;
+        edrrVar10.b |= 2;
+        edrrVar10.d = j;
+        if (!fgriVar8.L()) {
             v2.U();
         }
-        ebfe ebfeVar11 = (ebfe) v2.b;
-        ebfeVar11.c = i2 - 1;
-        ebfeVar11.b |= 1;
+        edrr edrrVar11 = (edrr) v2.b;
+        edrrVar11.c = i2 - 1;
+        edrrVar11.b |= 1;
         if (!v.b.L()) {
             v.U();
         }
-        ebfc ebfcVar = (ebfc) v.b;
-        ebfe ebfeVar12 = (ebfe) v2.Q();
-        ebfeVar12.getClass();
-        ebfcVar.c = ebfeVar12;
-        ebfcVar.b = 1;
-        ebfc ebfcVar2 = (ebfc) v.Q();
-        cavi a4 = cavi.a();
-        fecj v3 = ebfg.a.v();
+        edrp edrpVar = (edrp) v.b;
+        edrr edrrVar12 = (edrr) v2.Q();
+        edrrVar12.getClass();
+        edrpVar.c = edrrVar12;
+        edrpVar.b = 1;
+        edrp edrpVar2 = (edrp) v.Q();
+        cddy a4 = cddy.a();
+        fgrc v3 = edrt.a.v();
         if (!v3.b.L()) {
             v3.U();
         }
-        ebfg ebfgVar = (ebfg) v3.b;
-        ebfcVar2.getClass();
-        ebfgVar.c = ebfcVar2;
-        ebfgVar.b = 2;
-        a4.c(str, (ebfg) v3.Q(), 9);
+        edrt edrtVar = (edrt) v3.b;
+        edrpVar2.getClass();
+        edrtVar.c = edrpVar2;
+        edrtVar.b = 2;
+        a4.c(str, (edrt) v3.Q(), 9);
     }
 
-    @Override // defpackage.bkzk
-    protected final eisx b() {
-        return cavm.b().c(this);
+    @Override // defpackage.bngb
+    protected final elgc b() {
+        return cdec.b().c(this);
     }
 
-    @Override // defpackage.bkzk
-    protected final void c(fhin fhinVar, int i2) {
-        Account b = asnd.b(this);
-        cavi a = cavi.a();
+    @Override // defpackage.bngb
+    protected final void c(fjyk fjykVar, int i2) {
+        Account b = auqx.b(this);
+        cddy a = cddy.a();
         String str = b != null ? b.name : null;
-        fecj v = ebfg.a.v();
-        fecj v2 = ebfc.a.v();
-        fecj v3 = ebfd.a.v();
+        fgrc v = edrt.a.v();
+        fgrc v2 = edrp.a.v();
+        fgrc v3 = edrq.a.v();
         if (!v3.b.L()) {
             v3.U();
         }
-        fecp fecpVar = v3.b;
-        ebfd ebfdVar = (ebfd) fecpVar;
-        ebfdVar.b |= 2;
-        ebfdVar.d = i2;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v3.b;
+        edrq edrqVar = (edrq) fgriVar;
+        edrqVar.b |= 2;
+        edrqVar.d = i2;
+        if (!fgriVar.L()) {
             v3.U();
         }
-        ebfd ebfdVar2 = (ebfd) v3.b;
-        fhinVar.getClass();
-        ebfdVar2.c = fhinVar;
-        ebfdVar2.b |= 1;
+        edrq edrqVar2 = (edrq) v3.b;
+        fjykVar.getClass();
+        edrqVar2.c = fjykVar;
+        edrqVar2.b |= 1;
         if (!v2.b.L()) {
             v2.U();
         }
-        ebfc ebfcVar = (ebfc) v2.b;
-        ebfd ebfdVar3 = (ebfd) v3.Q();
-        ebfdVar3.getClass();
-        ebfcVar.c = ebfdVar3;
-        ebfcVar.b = 2;
+        edrp edrpVar = (edrp) v2.b;
+        edrq edrqVar3 = (edrq) v3.Q();
+        edrqVar3.getClass();
+        edrpVar.c = edrqVar3;
+        edrpVar.b = 2;
         if (!v.b.L()) {
             v.U();
         }
-        ebfg ebfgVar = (ebfg) v.b;
-        ebfc ebfcVar2 = (ebfc) v2.Q();
-        ebfcVar2.getClass();
-        ebfgVar.c = ebfcVar2;
-        ebfgVar.b = 2;
-        a.c(str, (ebfg) v.Q(), 10);
+        edrt edrtVar = (edrt) v.b;
+        edrp edrpVar2 = (edrp) v2.Q();
+        edrpVar2.getClass();
+        edrtVar.c = edrpVar2;
+        edrtVar.b = 2;
+        a.c(str, (edrt) v.Q(), 10);
     }
 
-    @Override // defpackage.bkzk
+    @Override // defpackage.bngb
     protected final void d(Location location) {
-        ((ejhf) ((ejhf) i.h()).ah((char) 5715)).B("Location update at %s", location);
-        caxd.a().c(this, location, i());
+        ((eluo) ((eluo) i.h()).ai((char) 5729)).B("Location update at %s", location);
+        cdft.a().c(this, location, i());
     }
 
-    @Override // defpackage.bkzk
+    @Override // defpackage.bngb
     protected final void e() {
-        cavr.a().f(this, cavq.SUPERVISED_USER_GEOFENCING);
+        cdeh.a().f(this, cdeg.SUPERVISED_USER_GEOFENCING);
     }
 
-    @Override // defpackage.bkzk
+    @Override // defpackage.bngb
     protected final void f() {
-        cavr.a().g(this, cavq.SUPERVISED_USER_GEOFENCING);
+        cdeh.a().g(this, cdeg.SUPERVISED_USER_GEOFENCING);
     }
 
-    @Override // defpackage.bkzk
+    @Override // defpackage.bngb
     protected final void g(long j, int i2, int i3, int i4) {
-        byzb.a(this).c(17);
-        cavr.a();
-        String a = bziy.a(i2);
+        cbhs.a(this).c(17);
+        cdeh.a();
+        String a = cbrp.a(i2);
         String str = i3 != 1 ? i3 != 2 ? i3 != 3 ? i3 != 4 ? i3 != 5 ? "STILL" : "SLOW" : "FAST" : "INITIAL_ACTIVITY" : "ALL_ACTIVITIES" : "UNKNOWN_ACTIVITY";
         String str2 = i4 != 3 ? i4 != 4 ? i4 != 5 ? i4 != 6 ? "DWELL" : "IN" : "CLOSE" : "FAR" : "INITIAL_DISTANCE";
-        if (fpwl.c()) {
-            asbo f = asbo.f(this);
-            eiig.x(f);
-            cavr.b(f);
-            ikd ikdVar = new ikd(this, "LSR_geofencing_debug_notification");
-            ikdVar.g(R.drawable.ic_dialog_alert);
-            ikdVar.m(a.D(j, "New location sampling rate:"));
-            ikdVar.l(String.format("priority:%s, lastActivityState:%s, lastDistanceCategory:%s", a, str, str2));
-            ikdVar.l = 2;
-            if (fpxh.C()) {
-                f.w(cavr.class.getName(), 397186322, dfee.LSR_SUPERVISED_USERS_TRANSPARENCY, ikdVar.b());
-            } else {
-                f.v(cavr.class.getName(), 397186322, ikdVar.b());
-            }
+        if (fsqf.c()) {
+            aued f = aued.f(this);
+            ekvl.y(f);
+            cdeh.b(f);
+            ilt iltVar = new ilt(this, "LSR_geofencing_debug_notification");
+            iltVar.n(R.drawable.ic_dialog_alert);
+            iltVar.r(a.C(j, "New location sampling rate:"));
+            iltVar.j(String.format("priority:%s, lastActivityState:%s, lastDistanceCategory:%s", a, str, str2));
+            iltVar.l = 2;
+            f.w(cdeh.class.getName(), 397186322, dhpk.LSR_SUPERVISED_USERS_TRANSPARENCY, iltVar.b());
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:103:0x01e0, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:100:0x01cb, code lost:
     
-        if (r10 != 4) goto L50;
+        if (r10 != 4) goto L46;
      */
-    /* JADX WARN: Removed duplicated region for block: B:61:0x0315  */
-    /* JADX WARN: Removed duplicated region for block: B:84:0x041d  */
-    @Override // defpackage.bkzk
+    /* JADX WARN: Removed duplicated region for block: B:58:0x0300  */
+    /* JADX WARN: Removed duplicated region for block: B:81:0x0408  */
+    @Override // defpackage.bngb
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    protected final void h(defpackage.cawn r32, android.location.Location r33, int r34) {
+    protected final void h(defpackage.cdfd r32, android.location.Location r33, int r34) {
         /*
-            Method dump skipped, instructions count: 1218
+            Method dump skipped, instructions count: 1193
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.locationsharingreporter.service.LocationTrackingIntentOperation.h(cawn, android.location.Location, int):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.locationsharingreporter.service.LocationTrackingIntentOperation.h(cdfd, android.location.Location, int):void");
     }
 }

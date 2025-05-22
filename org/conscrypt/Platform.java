@@ -14,7 +14,7 @@ import com.google.android.gms.org.conscrypt.metrics.StatsLogImpl;
 import dalvik.system.BlockGuard;
 import dalvik.system.CloseGuard;
 import defpackage.a;
-import defpackage.bzju$$ExternalSyntheticApiModelOutline2;
+import defpackage.cbsl$$ExternalSyntheticApiModelOutline2;
 import java.io.FileDescriptor;
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -48,7 +48,7 @@ import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.X509TrustManager;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class Platform {
     static boolean DEPRECATED_TLS_V1 = false;
@@ -282,10 +282,10 @@ public final class Platform {
         if (list != null) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
-                SNIServerName m196m = bzju$$ExternalSyntheticApiModelOutline2.m196m(it.next());
-                type = m196m.getType();
+                SNIServerName m192m = cbsl$$ExternalSyntheticApiModelOutline2.m192m(it.next());
+                type = m192m.getType();
                 if (type == 0) {
-                    asciiName = bzju$$ExternalSyntheticApiModelOutline2.m194m((Object) m196m).getAsciiName();
+                    asciiName = cbsl$$ExternalSyntheticApiModelOutline2.m190m((Object) m192m).getAsciiName();
                     return asciiName;
                 }
             }
@@ -434,7 +434,7 @@ public final class Platform {
         }
         Iterator it = sNIMatchers.iterator();
         while (it.hasNext()) {
-            matches = bzju$$ExternalSyntheticApiModelOutline2.m195m(it.next()).matches(new SNIHostName(str));
+            matches = cbsl$$ExternalSyntheticApiModelOutline2.m191m(it.next()).matches(new SNIHostName(str));
             if (matches) {
                 return true;
             }

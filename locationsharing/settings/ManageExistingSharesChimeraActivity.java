@@ -7,53 +7,53 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
 import com.google.android.gms.R;
-import defpackage.asbo;
-import defpackage.asnd;
-import defpackage.assa;
-import defpackage.assb;
-import defpackage.cary;
-import defpackage.casw;
-import defpackage.dfee;
-import defpackage.fecj;
-import defpackage.figx;
-import defpackage.fiha;
-import defpackage.fpwa;
+import defpackage.aued;
+import defpackage.auqx;
+import defpackage.auvu;
+import defpackage.auvv;
+import defpackage.cdao;
+import defpackage.cdbm;
+import defpackage.dhpk;
+import defpackage.fgrc;
+import defpackage.fkwu;
+import defpackage.fkwx;
+import defpackage.fspt;
 import defpackage.ig;
-import defpackage.qet;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class ManageExistingSharesChimeraActivity extends qet implements AdapterView.OnItemSelectedListener {
-    private assb j;
+public class ManageExistingSharesChimeraActivity extends rxx implements AdapterView.OnItemSelectedListener {
+    private auvv j;
     private String k;
-    private cary l;
+    private cdao l;
     private int m;
 
     private static Intent a() {
         return new Intent().setAction("com.google.android.gms.accountsettings.VIEW_SETTINGS_0P").setPackage("com.google.android.gms").putExtra("extra.screenId", 210).addFlags(268435456);
     }
 
-    @Override // defpackage.qet
-    public final boolean hu() {
+    @Override // defpackage.rxx
+    public final boolean hK() {
         finish();
         return true;
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.location_sharing_settings_activity_main);
         findViewById(R.id.progress_bar).setVisibility(8);
-        ig hy = hy();
-        hy.o(true);
-        hy.s(false);
-        asbo.f(this).m(78, dfee.LOCATION_SHARING_MODULEFOOD);
+        ig hO = hO();
+        hO.o(true);
+        hO.s(false);
+        aued.f(this).m(78, dhpk.LOCATION_SHARING_MODULEFOOD);
         if (bundle != null) {
             this.k = bundle.getString("account_name");
             this.m = bundle.getInt("update_progress_count");
@@ -62,9 +62,9 @@ public class ManageExistingSharesChimeraActivity extends qet implements AdapterV
             this.m = 0;
         }
         if (this.k == null) {
-            String[] w = asnd.w(asnd.h(this, getPackageName()));
+            String[] w = auqx.w(auqx.h(this, getPackageName()));
             if (w.length <= 0) {
-                if (fpwa.a.a().j()) {
+                if (fspt.a.lK().j()) {
                     startActivityForResult(a(), 102);
                     return;
                 } else {
@@ -75,71 +75,71 @@ public class ManageExistingSharesChimeraActivity extends qet implements AdapterV
             }
             this.k = w[0];
         }
-        fecj v = figx.a.v();
+        fgrc v = fkwu.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        figx figxVar = (figx) v.b;
-        figxVar.c = 1;
-        figxVar.b = 1 | figxVar.b;
+        fkwu fkwuVar = (fkwu) v.b;
+        fkwuVar.c = 1;
+        fkwuVar.b = 1 | fkwuVar.b;
         String stringExtra = getIntent().getStringExtra("calling_package_name");
         if (stringExtra != null) {
             if (!v.b.L()) {
                 v.U();
             }
-            figx figxVar2 = (figx) v.b;
-            figxVar2.b |= 2;
-            figxVar2.d = stringExtra;
+            fkwu fkwuVar2 = (fkwu) v.b;
+            fkwuVar2.b |= 2;
+            fkwuVar2.d = stringExtra;
         } else if (getIntent().getAction() == null) {
             if (!v.b.L()) {
                 v.U();
             }
-            figx figxVar3 = (figx) v.b;
-            figxVar3.b |= 2;
-            figxVar3.d = "com.google.android.gms";
+            fkwu fkwuVar3 = (fkwu) v.b;
+            fkwuVar3.b |= 2;
+            fkwuVar3.d = "com.google.android.gms";
         }
-        this.l = new cary(this, (figx) v.Q(), bundle, null);
-        assa assaVar = new assa(hy());
-        assaVar.b(R.string.location_sharing_settings_title);
-        assaVar.b = this;
-        assaVar.c = this.k;
-        this.j = assaVar.a();
+        this.l = new cdao(this, (fkwu) v.Q(), bundle, null);
+        auvu auvuVar = new auvu(hO());
+        auvuVar.b(R.string.location_sharing_settings_title);
+        auvuVar.b = this;
+        auvuVar.c = this.k;
+        this.j = auvuVar.a();
         startActivityForResult(a().putExtra("extra.accountName", this.k), 102);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
         return true;
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
         super.onDestroy();
-        casw.a(this);
+        cdbm.a(this);
     }
 
     @Override // android.widget.AdapterView.OnItemSelectedListener
     public final void onItemSelected(AdapterView adapterView, View view, int i, long j) {
-        assb assbVar = this.j;
-        if (assbVar == null || this.k == null) {
+        auvv auvvVar = this.j;
+        if (auvvVar == null || this.k == null) {
             return;
         }
-        String item = assbVar.getItem(i);
+        String item = auvvVar.getItem(i);
         if (item.equals(this.k)) {
             return;
         }
-        this.l.a((fiha) cary.d(13).Q());
+        this.l.a((fkwx) cdao.d(13).Q());
         this.k = item;
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putString("account_name", this.k);
         bundle.putInt("update_progress_count", this.m);
-        cary caryVar = this.l;
-        if (caryVar != null) {
-            caryVar.b(bundle);
+        cdao cdaoVar = this.l;
+        if (cdaoVar != null) {
+            cdaoVar.b(bundle);
         }
     }
 

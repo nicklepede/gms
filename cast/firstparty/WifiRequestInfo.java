@@ -4,16 +4,16 @@ import android.net.wifi.WifiConfiguration;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.amuk;
-import defpackage.amxr;
-import defpackage.arxc;
+import defpackage.aovv;
+import defpackage.aozc;
+import defpackage.atzr;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class WifiRequestInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new amuk();
+    public static final Parcelable.Creator CREATOR = new aovv();
     public final String a;
     public final String b;
     public final int c;
@@ -32,7 +32,7 @@ public class WifiRequestInfo extends AbstractSafeParcelable {
             return false;
         }
         WifiRequestInfo wifiRequestInfo = (WifiRequestInfo) obj;
-        return amxr.u(this.a, wifiRequestInfo.a) && amxr.u(this.b, wifiRequestInfo.b) && this.c == wifiRequestInfo.c;
+        return aozc.u(this.a, wifiRequestInfo.a) && aozc.u(this.b, wifiRequestInfo.b) && this.c == wifiRequestInfo.c;
     }
 
     public final int hashCode() {
@@ -46,10 +46,10 @@ public class WifiRequestInfo extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.o(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.o(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 }

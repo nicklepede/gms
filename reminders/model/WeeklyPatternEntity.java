@@ -3,16 +3,16 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxey;
+import defpackage.atyq;
+import defpackage.czou;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class WeeklyPatternEntity extends AbstractSafeParcelable implements WeeklyPattern {
-    public static final Parcelable.Creator CREATOR = new cxey();
+    public static final Parcelable.Creator CREATOR = new czou();
     public final List a;
 
     public WeeklyPatternEntity(List list) {
@@ -24,7 +24,7 @@ public class WeeklyPatternEntity extends AbstractSafeParcelable implements Weekl
     }
 
     public static boolean c(WeeklyPattern weeklyPattern, WeeklyPattern weeklyPattern2) {
-        return arwb.b(weeklyPattern.a(), weeklyPattern2.a());
+        return atyq.b(weeklyPattern.a(), weeklyPattern2.a());
     }
 
     @Override // com.google.android.gms.reminders.model.WeeklyPattern
@@ -48,7 +48,7 @@ public class WeeklyPatternEntity extends AbstractSafeParcelable implements Weekl
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxey.a(this, parcel);
+        czou.a(this, parcel);
     }
 
     public WeeklyPatternEntity(WeeklyPattern weeklyPattern) {
@@ -56,7 +56,7 @@ public class WeeklyPatternEntity extends AbstractSafeParcelable implements Weekl
         this.a = a == null ? null : new ArrayList(a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

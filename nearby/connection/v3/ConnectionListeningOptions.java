@@ -4,16 +4,16 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.Strategy;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cgcf;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ciki;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ConnectionListeningOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cgcf();
+    public static final Parcelable.Creator CREATOR = new ciki();
     public Strategy a;
     public final int b;
     public final boolean c;
@@ -40,7 +40,7 @@ public final class ConnectionListeningOptions extends AbstractSafeParcelable {
         }
         if (obj instanceof ConnectionListeningOptions) {
             ConnectionListeningOptions connectionListeningOptions = (ConnectionListeningOptions) obj;
-            if (arwb.b(this.a, connectionListeningOptions.a) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(connectionListeningOptions.b)) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(connectionListeningOptions.c)) && arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(connectionListeningOptions.d)) && arwb.b(Boolean.valueOf(this.e), Boolean.valueOf(connectionListeningOptions.e)) && arwb.b(Boolean.valueOf(this.f), Boolean.valueOf(connectionListeningOptions.f)) && Arrays.equals(this.g, connectionListeningOptions.g) && Arrays.equals(this.h, connectionListeningOptions.h) && arwb.b(Integer.valueOf(this.i), Integer.valueOf(connectionListeningOptions.i)) && arwb.b(this.j, connectionListeningOptions.j)) {
+            if (atyq.b(this.a, connectionListeningOptions.a) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(connectionListeningOptions.b)) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(connectionListeningOptions.c)) && atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(connectionListeningOptions.d)) && atyq.b(Boolean.valueOf(this.e), Boolean.valueOf(connectionListeningOptions.e)) && atyq.b(Boolean.valueOf(this.f), Boolean.valueOf(connectionListeningOptions.f)) && Arrays.equals(this.g, connectionListeningOptions.g) && Arrays.equals(this.h, connectionListeningOptions.h) && atyq.b(Integer.valueOf(this.i), Integer.valueOf(connectionListeningOptions.i)) && atyq.b(this.j, connectionListeningOptions.j)) {
                 return true;
             }
         }
@@ -57,18 +57,18 @@ public final class ConnectionListeningOptions extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.e(parcel, 6, this.f);
-        arxc.p(parcel, 7, this.g, false);
-        arxc.p(parcel, 8, this.h, false);
-        arxc.o(parcel, 9, this.i);
-        arxc.t(parcel, 10, this.j, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.e(parcel, 6, this.f);
+        atzr.p(parcel, 7, this.g, false);
+        atzr.p(parcel, 8, this.h, false);
+        atzr.o(parcel, 9, this.i);
+        atzr.t(parcel, 10, this.j, i, false);
+        atzr.c(parcel, a);
     }
 
     public ConnectionListeningOptions(Strategy strategy, int i, boolean z, boolean z2, boolean z3, boolean z4, int[] iArr, int[] iArr2, int i2, AnalyticOptions analyticOptions) {

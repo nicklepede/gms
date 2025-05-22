@@ -5,18 +5,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.games.internal.GamesDowngradeableSafeParcel;
 import com.google.android.gms.games.internal.player.MostRecentGameInfoEntity;
-import defpackage.artd;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bhjq;
+import defpackage.atvs;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bjof;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class PlayerEntity extends GamesDowngradeableSafeParcel implements Player {
-    public static final Parcelable.Creator CREATOR = new bhjq();
+    public static final Parcelable.Creator CREATOR = new bjof();
     public final String a;
     public final String b;
     public final Uri c;
@@ -104,7 +104,7 @@ public final class PlayerEntity extends GamesDowngradeableSafeParcel implements 
             return true;
         }
         Player player = (Player) obj;
-        return arwb.b(player.o(), this.a) && arwb.b(player.j(), this.b) && arwb.b(Boolean.valueOf(player.q()), Boolean.valueOf(this.n)) && arwb.b(player.f(), this.c) && arwb.b(player.e(), this.d) && arwb.b(Long.valueOf(player.a()), Long.valueOf(this.e)) && arwb.b(player.p(), this.j) && arwb.b(player.h(), this.l) && arwb.b(player.m(), this.o) && arwb.b(player.n(), this.p) && arwb.b(player.c(), this.q) && arwb.b(player.d(), this.s) && arwb.b(Long.valueOf(player.b()), Long.valueOf(this.u)) && arwb.b(player.g(), this.w) && arwb.b(player.i(), this.v) && arwb.b(Boolean.valueOf(player.r()), Boolean.valueOf(this.x)) && arwb.b(player.k(), this.y);
+        return atyq.b(player.o(), this.a) && atyq.b(player.j(), this.b) && atyq.b(Boolean.valueOf(player.q()), Boolean.valueOf(this.n)) && atyq.b(player.f(), this.c) && atyq.b(player.e(), this.d) && atyq.b(Long.valueOf(player.a()), Long.valueOf(this.e)) && atyq.b(player.p(), this.j) && atyq.b(player.h(), this.l) && atyq.b(player.m(), this.o) && atyq.b(player.n(), this.p) && atyq.b(player.c(), this.q) && atyq.b(player.d(), this.s) && atyq.b(Long.valueOf(player.b()), Long.valueOf(this.u)) && atyq.b(player.g(), this.w) && atyq.b(player.i(), this.v) && atyq.b(Boolean.valueOf(player.r()), Boolean.valueOf(this.x)) && atyq.b(player.k(), this.y);
     }
 
     @Override // com.google.android.gms.games.Player
@@ -173,68 +173,68 @@ public final class PlayerEntity extends GamesDowngradeableSafeParcel implements 
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("PlayerId", this.a, arrayList);
-        arwa.b("DisplayName", this.b, arrayList);
-        arwa.b("HasDebugAccess", Boolean.valueOf(this.n), arrayList);
-        arwa.b("IconImageUri", this.c, arrayList);
-        arwa.b("IconImageUrl", this.h, arrayList);
-        arwa.b("HiResImageUri", this.d, arrayList);
-        arwa.b("HiResImageUrl", this.i, arrayList);
-        arwa.b("RetrievedTimestamp", Long.valueOf(this.e), arrayList);
-        arwa.b("Title", this.j, arrayList);
-        arwa.b("LevelInfo", this.l, arrayList);
-        arwa.b("GamerTag", this.o, arrayList);
-        arwa.b("Name", this.p, arrayList);
-        arwa.b("BannerImageLandscapeUri", this.q, arrayList);
-        arwa.b("BannerImageLandscapeUrl", this.r, arrayList);
-        arwa.b("BannerImagePortraitUri", this.s, arrayList);
-        arwa.b("BannerImagePortraitUrl", this.t, arrayList);
-        arwa.b("CurrentPlayerInfo", this.w, arrayList);
-        arwa.b("TotalUnlockedAchievement", Long.valueOf(this.u), arrayList);
+        atyp.b("PlayerId", this.a, arrayList);
+        atyp.b("DisplayName", this.b, arrayList);
+        atyp.b("HasDebugAccess", Boolean.valueOf(this.n), arrayList);
+        atyp.b("IconImageUri", this.c, arrayList);
+        atyp.b("IconImageUrl", this.h, arrayList);
+        atyp.b("HiResImageUri", this.d, arrayList);
+        atyp.b("HiResImageUrl", this.i, arrayList);
+        atyp.b("RetrievedTimestamp", Long.valueOf(this.e), arrayList);
+        atyp.b("Title", this.j, arrayList);
+        atyp.b("LevelInfo", this.l, arrayList);
+        atyp.b("GamerTag", this.o, arrayList);
+        atyp.b("Name", this.p, arrayList);
+        atyp.b("BannerImageLandscapeUri", this.q, arrayList);
+        atyp.b("BannerImageLandscapeUrl", this.r, arrayList);
+        atyp.b("BannerImagePortraitUri", this.s, arrayList);
+        atyp.b("BannerImagePortraitUrl", this.t, arrayList);
+        atyp.b("CurrentPlayerInfo", this.w, arrayList);
+        atyp.b("TotalUnlockedAchievement", Long.valueOf(this.u), arrayList);
         if (this.x) {
-            arwa.b("AlwaysAutoSignIn", true, arrayList);
+            atyp.b("AlwaysAutoSignIn", true, arrayList);
         }
         PlayerRelationshipInfoEntity playerRelationshipInfoEntity = this.v;
         if (playerRelationshipInfoEntity != null) {
-            arwa.b("RelationshipInfo", playerRelationshipInfoEntity, arrayList);
+            atyp.b("RelationshipInfo", playerRelationshipInfoEntity, arrayList);
         }
         String str = this.y;
         if (str != null) {
-            arwa.b("GamePlayerId", str, arrayList);
+            atyp.b("GamePlayerId", str, arrayList);
         }
-        return arwa.a(arrayList, this);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.q(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.q(parcel, 7, this.g);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.v(parcel, 14, this.j, false);
-        arxc.t(parcel, 15, this.k, i, false);
-        arxc.t(parcel, 16, this.l, i, false);
-        arxc.e(parcel, 18, this.m);
-        arxc.e(parcel, 19, this.n);
-        arxc.v(parcel, 20, this.o, false);
-        arxc.v(parcel, 21, this.p, false);
-        arxc.t(parcel, 22, this.q, i, false);
-        arxc.v(parcel, 23, this.r, false);
-        arxc.t(parcel, 24, this.s, i, false);
-        arxc.v(parcel, 25, this.t, false);
-        arxc.q(parcel, 29, this.u);
-        arxc.t(parcel, 33, this.v, i, false);
-        arxc.t(parcel, 35, this.w, i, false);
-        arxc.e(parcel, 36, this.x);
-        arxc.v(parcel, 37, this.y, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.q(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.q(parcel, 7, this.g);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.v(parcel, 14, this.j, false);
+        atzr.t(parcel, 15, this.k, i, false);
+        atzr.t(parcel, 16, this.l, i, false);
+        atzr.e(parcel, 18, this.m);
+        atzr.e(parcel, 19, this.n);
+        atzr.v(parcel, 20, this.o, false);
+        atzr.v(parcel, 21, this.p, false);
+        atzr.t(parcel, 22, this.q, i, false);
+        atzr.v(parcel, 23, this.r, false);
+        atzr.t(parcel, 24, this.s, i, false);
+        atzr.v(parcel, 25, this.t, false);
+        atzr.q(parcel, 29, this.u);
+        atzr.t(parcel, 33, this.v, i, false);
+        atzr.t(parcel, 35, this.w, i, false);
+        atzr.e(parcel, 36, this.x);
+        atzr.v(parcel, 37, this.y, false);
+        atzr.c(parcel, a);
     }
 
     public PlayerEntity(Player player) {
@@ -270,12 +270,12 @@ public final class PlayerEntity extends GamesDowngradeableSafeParcel implements 
         this.w = currentPlayerInfoEntity != null ? currentPlayerInfoEntity : null;
         this.x = playerEntity.x;
         this.y = playerEntity.y;
-        artd.b(str);
-        artd.b(str2);
-        artd.e(j > 0);
+        atvs.b(str);
+        atvs.b(str2);
+        atvs.e(j > 0);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

@@ -5,13 +5,13 @@ import android.os.Parcelable;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.internal.ResolveAccountResponse;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dctk;
+import defpackage.atzr;
+import defpackage.dfep;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SignInResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dctk();
+    public static final Parcelable.Creator CREATOR = new dfep();
     final int a;
     public final ConnectionResult b;
     public final ResolveAccountResponse c;
@@ -24,11 +24,11 @@ public class SignInResponse extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.c(parcel, a);
     }
 
     public SignInResponse() {

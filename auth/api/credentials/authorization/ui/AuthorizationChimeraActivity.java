@@ -15,259 +15,259 @@ import com.google.android.gms.auth.api.identity.VerifyWithGoogleResult;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.arxd;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bmbm;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgu;
-import defpackage.bmgx;
-import defpackage.bmhi;
-import defpackage.eiiw;
-import defpackage.eijr;
-import defpackage.eits;
-import defpackage.eldy;
-import defpackage.elen;
-import defpackage.elfb;
-import defpackage.elfd;
+import defpackage.aaup;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.atzs;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.boie;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonm;
+import defpackage.bonp;
+import defpackage.booa;
+import defpackage.ekwb;
+import defpackage.ekww;
+import defpackage.elgx;
+import defpackage.enrl;
+import defpackage.ensa;
+import defpackage.enso;
+import defpackage.ensq;
 import defpackage.ew;
-import defpackage.feab;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.wet;
-import defpackage.wfp;
-import defpackage.wfq;
-import defpackage.wfs;
-import defpackage.wft;
-import defpackage.wio;
-import defpackage.wiq;
-import defpackage.wkg;
-import defpackage.xul;
-import defpackage.yuz;
+import defpackage.fgou;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.yaz;
+import defpackage.ybv;
+import defpackage.ybw;
+import defpackage.yby;
+import defpackage.ybz;
+import defpackage.yeu;
+import defpackage.yew;
+import defpackage.ygq;
+import defpackage.zsi;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AuthorizationChimeraActivity extends qet {
-    private static final asot p = xul.a("AuthorizationChimeraActivity");
-    public bmgq j;
+public class AuthorizationChimeraActivity extends rxx {
+    private static final ausn p = zsi.a("AuthorizationChimeraActivity");
+    public boni j;
     public String k;
     public String l;
-    public eijr m;
-    public wft n;
-    public abv o;
+    public ekww m;
+    public ybz n;
+    public aca o;
     private AuthorizationRequest q;
     private VerifyWithGoogleRequest r;
-    private wio s;
-    private yuz t;
-    private bmbm u;
+    private yeu s;
+    private aaup t;
+    private boie u;
 
-    public final void a(wiq wiqVar) {
+    public final void a(yew yewVar) {
         Account account;
-        wiqVar.f(p);
-        setResult(wiqVar.a(), wiqVar.b());
-        fecj k = wiqVar.k();
-        if (!k.b.L()) {
-            k.U();
+        yewVar.f(p);
+        setResult(yewVar.a(), yewVar.b());
+        fgrc l = yewVar.l();
+        if (!l.b.L()) {
+            l.U();
         }
-        elfb elfbVar = (elfb) k.b;
-        elfb elfbVar2 = elfb.a;
-        elfbVar.f = 207;
-        elfbVar.b |= 8;
-        if (wiqVar.g()) {
-            SafeParcelable safeParcelable = (SafeParcelable) wiqVar.a;
+        enso ensoVar = (enso) l.b;
+        enso ensoVar2 = enso.a;
+        ensoVar.f = 207;
+        ensoVar.b |= 8;
+        if (yewVar.g()) {
+            SafeParcelable safeParcelable = (SafeParcelable) yewVar.a;
             if (safeParcelable instanceof AuthorizationResult) {
-                fecj v = eldy.a.v();
+                fgrc v = enrl.a.v();
                 List list = ((AuthorizationResult) safeParcelable).d;
                 if (!v.b.L()) {
                     v.U();
                 }
-                eldy eldyVar = (eldy) v.b;
-                fedh fedhVar = eldyVar.c;
-                if (!fedhVar.c()) {
-                    eldyVar.c = fecp.E(fedhVar);
+                enrl enrlVar = (enrl) v.b;
+                fgsa fgsaVar = enrlVar.c;
+                if (!fgsaVar.c()) {
+                    enrlVar.c = fgri.E(fgsaVar);
                 }
-                feab.E(list, eldyVar.c);
-                if (!k.b.L()) {
-                    k.U();
+                fgou.E(list, enrlVar.c);
+                if (!l.b.L()) {
+                    l.U();
                 }
-                elfb elfbVar3 = (elfb) k.b;
-                eldy eldyVar2 = (eldy) v.Q();
-                eldyVar2.getClass();
-                elfbVar3.h = eldyVar2;
-                elfbVar3.b |= 32;
+                enso ensoVar3 = (enso) l.b;
+                enrl enrlVar2 = (enrl) v.Q();
+                enrlVar2.getClass();
+                ensoVar3.h = enrlVar2;
+                ensoVar3.b |= 32;
             } else if (safeParcelable instanceof VerifyWithGoogleResult) {
-                fecj v2 = elen.a.v();
+                fgrc v2 = ensa.a.v();
                 List list2 = ((VerifyWithGoogleResult) safeParcelable).c;
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                elen elenVar = (elen) v2.b;
-                fedh fedhVar2 = elenVar.c;
-                if (!fedhVar2.c()) {
-                    elenVar.c = fecp.E(fedhVar2);
+                ensa ensaVar = (ensa) v2.b;
+                fgsa fgsaVar2 = ensaVar.c;
+                if (!fgsaVar2.c()) {
+                    ensaVar.c = fgri.E(fgsaVar2);
                 }
-                feab.E(list2, elenVar.c);
-                if (!k.b.L()) {
-                    k.U();
+                fgou.E(list2, ensaVar.c);
+                if (!l.b.L()) {
+                    l.U();
                 }
-                elfb elfbVar4 = (elfb) k.b;
-                elen elenVar2 = (elen) v2.Q();
-                elenVar2.getClass();
-                elfbVar4.l = elenVar2;
-                elfbVar4.b |= 2048;
+                enso ensoVar4 = (enso) l.b;
+                ensa ensaVar2 = (ensa) v2.Q();
+                ensaVar2.getClass();
+                ensoVar4.l = ensaVar2;
+                ensoVar4.b |= 2048;
             }
         }
-        bmgq bmgqVar = this.j;
-        wft wftVar = this.n;
-        if (wftVar != null && (account = wftVar.I) != null) {
-            bmgqVar = bmgp.a(this, account.name);
+        boni boniVar = this.j;
+        ybz ybzVar = this.n;
+        if (ybzVar != null && (account = ybzVar.I) != null) {
+            boniVar = bonh.a(this, account.name);
         }
-        fecj v3 = elfd.a.v();
+        fgrc v3 = ensq.a.v();
         String str = this.k;
         if (!v3.b.L()) {
             v3.U();
         }
-        fecp fecpVar = v3.b;
-        elfd elfdVar = (elfd) fecpVar;
+        fgri fgriVar = v3.b;
+        ensq ensqVar = (ensq) fgriVar;
         str.getClass();
-        elfdVar.b |= 2;
-        elfdVar.e = str;
-        if (!fecpVar.L()) {
+        ensqVar.b |= 2;
+        ensqVar.e = str;
+        if (!fgriVar.L()) {
             v3.U();
         }
-        fecp fecpVar2 = v3.b;
-        elfd elfdVar2 = (elfd) fecpVar2;
-        elfdVar2.d = 17;
-        elfdVar2.b |= 1;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v3.b;
+        ensq ensqVar2 = (ensq) fgriVar2;
+        ensqVar2.d = 17;
+        ensqVar2.b |= 1;
+        if (!fgriVar2.L()) {
             v3.U();
         }
-        elfd elfdVar3 = (elfd) v3.b;
-        elfb elfbVar5 = (elfb) k.Q();
-        elfbVar5.getClass();
-        elfdVar3.s = elfbVar5;
-        elfdVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-        bmgqVar.a((elfd) v3.Q());
+        ensq ensqVar3 = (ensq) v3.b;
+        enso ensoVar5 = (enso) l.Q();
+        ensoVar5.getClass();
+        ensqVar3.s = ensoVar5;
+        ensqVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        boniVar.a((ensq) v3.Q());
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        hC().q(-1);
+        hS().q(-1);
         setTheme(R.style.ThemeTranslucentDayNight);
         super.onCreate(bundle);
-        this.j = bmgp.a(this, null);
-        this.q = (AuthorizationRequest) arxd.b(getIntent(), "authorization_request", AuthorizationRequest.CREATOR);
-        VerifyWithGoogleRequest verifyWithGoogleRequest = (VerifyWithGoogleRequest) arxd.b(getIntent(), "verify_with_google_request", VerifyWithGoogleRequest.CREATOR);
+        this.j = bonh.a(this, null);
+        this.q = (AuthorizationRequest) atzs.b(getIntent(), "authorization_request", AuthorizationRequest.CREATOR);
+        VerifyWithGoogleRequest verifyWithGoogleRequest = (VerifyWithGoogleRequest) atzs.b(getIntent(), "verify_with_google_request", VerifyWithGoogleRequest.CREATOR);
         this.r = verifyWithGoogleRequest;
-        this.s = verifyWithGoogleRequest != null ? wfs.c() : wfp.c();
+        this.s = verifyWithGoogleRequest != null ? yby.c() : ybv.c();
         if (this.q == null && this.r == null) {
-            this.k = bmgx.a();
-            a(this.s.c(28453, wkg.a("AuthorizationRequest and VerifyWithGoogleRequest")));
+            this.k = bonp.a();
+            a(this.s.c(28453, ygq.a("AuthorizationRequest and VerifyWithGoogleRequest")));
             return;
         }
         this.k = getIntent().getStringExtra("session_id");
-        bmgu.a(this, new eiiw() { // from class: wen
-            @Override // defpackage.eiiw
-            public final void lB(Object obj) {
+        bonm.a(this, new ekwb() { // from class: yat
+            @Override // defpackage.ekwb
+            public final void lY(Object obj) {
                 AuthorizationChimeraActivity authorizationChimeraActivity = AuthorizationChimeraActivity.this;
-                authorizationChimeraActivity.j.a(bmgw.b(AndroidInputTypeSignal.TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS, (bmgv) obj, authorizationChimeraActivity.k));
+                authorizationChimeraActivity.j.a(bono.b(AndroidInputTypeSignal.TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS, (bonn) obj, authorizationChimeraActivity.k));
             }
         });
-        String q = asng.q(this);
+        String q = aura.q(this);
         if (q == null) {
             a(this.s.c(28442, "Cannot get calling package name."));
             return;
         }
         this.l = q;
-        this.m = new eijr() { // from class: weo
-            @Override // defpackage.eijr
-            public final Object a() {
+        this.m = new ekww() { // from class: yau
+            @Override // defpackage.ekww
+            public final Object lK() {
                 AuthorizationChimeraActivity authorizationChimeraActivity = AuthorizationChimeraActivity.this;
-                wft wftVar = authorizationChimeraActivity.n;
-                return yuy.x(wftVar.I, 7, authorizationChimeraActivity.l, wftVar.s);
+                ybz ybzVar = authorizationChimeraActivity.n;
+                return aauo.x(ybzVar.I, 7, authorizationChimeraActivity.l, ybzVar.s);
             }
         };
-        this.o = registerForActivityResult(new acl(), new abt() { // from class: wep
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        this.o = registerForActivityResult(new acq(), new aby() { // from class: yav
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 ActivityResult activityResult = (ActivityResult) obj;
                 int i = activityResult.a;
                 Intent intent = activityResult.b;
-                wft wftVar = AuthorizationChimeraActivity.this.n;
+                ybz ybzVar = AuthorizationChimeraActivity.this.n;
                 try {
-                    wftVar.e(eiid.j(FullScreenConsentChimeraActivity.a(i, intent)));
-                } catch (bmeo e) {
-                    ((ejhf) ((ejhf) ((ejhf) wft.a.j()).s(e)).ah((char) 713)).x("Failed to parse consent result");
-                    wftVar.v.j(e);
+                    ybzVar.e(ekvi.j(FullScreenConsentChimeraActivity.a(i, intent)));
+                } catch (bolg e) {
+                    ((eluo) ((eluo) ((eluo) ybz.a.j()).s(e)).ai((char) 713)).x("Failed to parse consent result");
+                    ybzVar.v.j(e);
                 }
             }
         });
-        wft wftVar = (wft) new jrh(this, new wfq(this.q, this.r, this.l)).a(wft.class);
-        this.n = wftVar;
-        wftVar.d.g(this, new jpd() { // from class: wei
-            @Override // defpackage.jpd
+        ybz ybzVar = (ybz) new jxw(this, new ybw(this.q, this.r, this.l)).a(ybz.class);
+        this.n = ybzVar;
+        ybzVar.d.g(this, new jvs() { // from class: yao
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 AuthorizationChimeraActivity authorizationChimeraActivity = AuthorizationChimeraActivity.this;
                 if (authorizationChimeraActivity.getSupportFragmentManager().h("reauth_account") == null) {
-                    Object a = authorizationChimeraActivity.m.a();
+                    Object lK = authorizationChimeraActivity.m.lK();
                     bp bpVar = new bp(authorizationChimeraActivity.getSupportFragmentManager());
-                    bpVar.v((dg) a, "reauth_account");
+                    bpVar.v((dg) lK, "reauth_account");
                     bpVar.d();
-                    ((yuy) a).y();
+                    ((aauo) lK).y();
                 }
             }
         });
-        this.n.h.g(this, new jpd() { // from class: wej
-            @Override // defpackage.jpd
+        this.n.h.g(this, new jvs() { // from class: yap
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                String format = String.format(fkrs.a.a().a(), SystemProperties.get("gms.auth.sw_domain", "google.com").replace(".", "\\."));
+                String format = String.format(fnir.a.lK().a(), SystemProperties.get("gms.auth.sw_domain", "google.com").replace(".", "\\."));
                 AuthorizationChimeraActivity authorizationChimeraActivity = AuthorizationChimeraActivity.this;
                 String str = authorizationChimeraActivity.k;
-                wft wftVar2 = authorizationChimeraActivity.n;
-                authorizationChimeraActivity.o.b(whx.a(str, wftVar2.I, wftVar2.H, format, true));
+                ybz ybzVar2 = authorizationChimeraActivity.n;
+                authorizationChimeraActivity.o.b(yed.a(str, ybzVar2.I, ybzVar2.H, format, true));
             }
         });
         this.n.h(1);
-        this.n.c.g(this, new jpd() { // from class: wek
-            @Override // defpackage.jpd
+        this.n.c.g(this, new jvs() { // from class: yaq
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                AuthorizationChimeraActivity.this.a((wir) obj);
+                AuthorizationChimeraActivity.this.a((yex) obj);
             }
         });
-        jrh jrhVar = new jrh(this);
-        yuz yuzVar = (yuz) jrhVar.a(yuz.class);
-        this.t = yuzVar;
-        bmhi bmhiVar = yuzVar.a;
-        final wft wftVar2 = this.n;
-        Objects.requireNonNull(wftVar2);
-        bmhiVar.g(this, new jpd() { // from class: wel
-            @Override // defpackage.jpd
+        jxw jxwVar = new jxw(this);
+        aaup aaupVar = (aaup) jxwVar.a(aaup.class);
+        this.t = aaupVar;
+        booa booaVar = aaupVar.a;
+        final ybz ybzVar2 = this.n;
+        Objects.requireNonNull(ybzVar2);
+        booaVar.g(this, new jvs() { // from class: yar
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 Status status = (Status) obj;
                 int i = status.i;
-                wft wftVar3 = wft.this;
+                ybz ybzVar3 = ybz.this;
                 if (i == 0) {
-                    wftVar3.v.f(bmja.AUTH_ACCOUNT);
+                    ybzVar3.v.f(bops.AUTH_ACCOUNT);
                 } else {
-                    wftVar3.v.k(i, status.j);
+                    ybzVar3.v.k(i, status.j);
                 }
             }
         });
-        bmbm bmbmVar = (bmbm) jrhVar.a(bmbm.class);
-        this.u = bmbmVar;
-        bmbmVar.b.g(this, new jpd() { // from class: wem
-            @Override // defpackage.jpd
+        boie boieVar = (boie) jxwVar.a(boie.class);
+        this.u = boieVar;
+        boieVar.b.g(this, new jvs() { // from class: yas
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 AuthorizationChimeraActivity.this.n.h(2);
             }
@@ -275,12 +275,12 @@ public class AuthorizationChimeraActivity extends qet {
         ew supportFragmentManager = getSupportFragmentManager();
         if (supportFragmentManager.h("dialog") == null) {
             String str = this.l;
-            eits eitsVar = wet.ag;
+            elgx elgxVar = yaz.ag;
             Bundle bundle2 = new Bundle();
             bundle2.putString("calling_package", str);
-            wet wetVar = new wet();
-            wetVar.setArguments(bundle2);
-            wetVar.show(supportFragmentManager, "dialog");
+            yaz yazVar = new yaz();
+            yazVar.setArguments(bundle2);
+            yazVar.show(supportFragmentManager, "dialog");
         }
     }
 }

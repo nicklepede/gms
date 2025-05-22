@@ -4,33 +4,33 @@ import android.app.Service;
 import android.app.job.JobParameters;
 import android.content.Intent;
 import android.os.IBinder;
-import defpackage.cduk;
-import defpackage.cdul;
+import defpackage.cgdi;
+import defpackage.cgdj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public final class AppMeasurementService extends Service implements cduk {
-    private cdul a;
+public final class AppMeasurementService extends Service implements cgdi {
+    private cgdj a;
 
-    private final cdul d() {
+    private final cgdj d() {
         if (this.a == null) {
-            this.a = new cdul(this);
+            this.a = new cgdj(this);
         }
         return this.a;
     }
 
-    @Override // defpackage.cduk
+    @Override // defpackage.cgdi
     public final boolean b(int i) {
         return stopSelfResult(i);
     }
 
-    @Override // defpackage.cduk
+    @Override // defpackage.cgdi
     public final void c(JobParameters jobParameters) {
         throw new UnsupportedOperationException();
     }
 
-    @Override // defpackage.cduk
-    public final void il(Intent intent) {
+    @Override // defpackage.cgdi
+    public final void iA(Intent intent) {
         AppMeasurementReceiver.b(intent);
     }
 
@@ -54,7 +54,7 @@ public final class AppMeasurementService extends Service implements cduk {
     @Override // android.app.Service
     public final void onRebind(Intent intent) {
         d();
-        cdul.e(intent);
+        cgdj.e(intent);
     }
 
     @Override // android.app.Service
@@ -66,7 +66,7 @@ public final class AppMeasurementService extends Service implements cduk {
     @Override // android.app.Service
     public final boolean onUnbind(Intent intent) {
         d();
-        cdul.g(intent);
+        cgdj.g(intent);
         return true;
     }
 }

@@ -3,40 +3,40 @@ package com.google.android.gms.auth.account.service;
 import android.os.Bundle;
 import android.util.Log;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.asng;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.vah;
-import defpackage.vbz;
+import defpackage.aura;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.wwh;
+import defpackage.wxz;
 import java.util.Collections;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class WorkAccountApiService extends bxgd {
-    private vah a;
-    private vbz b;
+public class WorkAccountApiService extends bzot {
+    private wwh a;
+    private wxz b;
 
     public WorkAccountApiService() {
         super(120, "com.google.android.gms.auth.account.workaccount.START", Collections.EMPTY_SET, 3, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         String str = getServiceRequest.f;
-        if (asng.X(this)) {
-            bxgjVar.c(this.b);
+        if (aura.X(this)) {
+            bzozVar.c(this.b);
         } else if (str != null && this.a.e(str)) {
-            bxgjVar.c(this.b);
+            bzozVar.c(this.b);
         } else {
             Log.e("Auth", String.format(Locale.US, "[WorkAccountApiService] Caller can't manage work accounts %s", str));
-            bxgjVar.a(13, Bundle.EMPTY);
+            bzozVar.a(13, Bundle.EMPTY);
         }
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
-        this.b = new vbz(this, this.e);
-        this.a = (vah) vah.a.b();
+        this.b = new wxz(this, this.e);
+        this.a = (wwh) wwh.a.b();
     }
 }

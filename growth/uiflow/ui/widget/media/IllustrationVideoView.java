@@ -7,16 +7,16 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.view.Surface;
 import android.view.TextureView;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.eiig;
-import defpackage.ejhf;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.ekvl;
+import defpackage.eluo;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class IllustrationVideoView extends TextureView implements TextureView.SurfaceTextureListener, MediaPlayer.OnPreparedListener, MediaPlayer.OnInfoListener, MediaPlayer.OnErrorListener, MediaPlayer.OnCompletionListener {
-    private static final asot g = asot.b("UiFlow", asej.GROWTH_UIFLOW);
+    private static final ausn g = ausn.b("UiFlow", auid.GROWTH_UIFLOW);
     public MediaPlayer a;
     public Uri b;
     public int c;
@@ -54,7 +54,7 @@ public final class IllustrationVideoView extends TextureView implements TextureV
             this.a.prepareAsync();
             this.c = 1;
         } catch (IOException e) {
-            ((ejhf) ((ejhf) g.i()).s(e)).x("Unable to set data source");
+            ((eluo) ((eluo) g.i()).s(e)).x("Unable to set data source");
             this.c = -1;
             this.d = -1;
         }
@@ -74,7 +74,7 @@ public final class IllustrationVideoView extends TextureView implements TextureV
     public final void c() {
         if (e()) {
             MediaPlayer mediaPlayer = this.a;
-            eiig.x(mediaPlayer);
+            ekvl.y(mediaPlayer);
             mediaPlayer.start();
             this.c = 3;
         }
@@ -86,7 +86,7 @@ public final class IllustrationVideoView extends TextureView implements TextureV
             return false;
         }
         MediaPlayer mediaPlayer = this.a;
-        eiig.x(mediaPlayer);
+        ekvl.y(mediaPlayer);
         return mediaPlayer.isPlaying();
     }
 
@@ -104,7 +104,7 @@ public final class IllustrationVideoView extends TextureView implements TextureV
 
     @Override // android.media.MediaPlayer.OnErrorListener
     public final boolean onError(MediaPlayer mediaPlayer, int i, int i2) {
-        ((ejhf) g.j()).E("MediaPlayer error. what= %d, extra= %d", i, i2);
+        ((eluo) g.j()).E("MediaPlayer error. what= %d, extra= %d", i, i2);
         this.c = -1;
         this.d = -1;
         return false;
@@ -117,7 +117,7 @@ public final class IllustrationVideoView extends TextureView implements TextureV
 
     @Override // android.media.MediaPlayer.OnPreparedListener
     public final void onPrepared(MediaPlayer mediaPlayer) {
-        ((ejhf) g.h()).E("MediaPlayer prepared. seek= %d, target= %d", 0, this.d);
+        ((eluo) g.h()).E("MediaPlayer prepared. seek= %d, target= %d", 0, this.d);
         this.c = 2;
         MediaPlayer.OnPreparedListener onPreparedListener = this.f;
         if (onPreparedListener != null) {

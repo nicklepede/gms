@@ -12,22 +12,22 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import com.google.android.gms.credential.manager.util.FadeInImageView;
-import defpackage.asmb;
-import defpackage.asmf;
-import defpackage.aurd;
-import defpackage.aurf;
-import defpackage.aurk;
-import defpackage.awxy;
-import defpackage.awym;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
+import defpackage.aupv;
+import defpackage.aupz;
+import defpackage.awvd;
+import defpackage.awvf;
+import defpackage.awvk;
+import defpackage.azby;
+import defpackage.azcm;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public class FadeInImageView extends awym {
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public class FadeInImageView extends azcm {
     public String a;
-    public aurk b;
+    public awvk b;
 
     public FadeInImageView(Context context) {
         super(context);
@@ -39,20 +39,20 @@ public class FadeInImageView extends awym {
 
     public final void a(final String str) {
         this.a = str;
-        final awxy awxyVar = new awxy(this);
-        dfaq a = this.b.a.a(new asmb(1, 9), new asmf(Integer.MAX_VALUE, 9), aurf.a(str), new aurd() { // from class: aurj
-            @Override // defpackage.aurd
+        final azby azbyVar = new azby(this);
+        dhlw a = this.b.a.a(new aupv(1, 9), new aupz(Integer.MAX_VALUE, 9), awvf.a(str), new awvd() { // from class: awvj
+            @Override // defpackage.awvd
             public final Object a(byte[] bArr, int i) {
                 return BitmapFactory.decodeByteArray(bArr, 0, i);
             }
         });
-        a.z(new dfak() { // from class: awxw
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
-                aure aureVar = (aure) obj;
-                Bitmap bitmap = (Bitmap) aureVar.a;
-                boolean z = aureVar.b;
-                FadeInImageView fadeInImageView = awxy.this.a;
+        a.z(new dhlq() { // from class: azbw
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
+                awve awveVar = (awve) obj;
+                Bitmap bitmap = (Bitmap) awveVar.a;
+                boolean z = awveVar.b;
+                FadeInImageView fadeInImageView = azby.this.a;
                 if (str.equals(fadeInImageView.a)) {
                     if (z) {
                         fadeInImageView.setImageBitmap(bitmap);
@@ -65,10 +65,10 @@ public class FadeInImageView extends awym {
                 }
             }
         });
-        a.y(new dfah() { // from class: awxx
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
-                awxy.this.a.setImageResource(com.google.android.gms.R.drawable.quantum_ic_chrome_product_vd_theme_24);
+        a.y(new dhln() { // from class: azbx
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                azby.this.a.setImageResource(com.google.android.gms.R.drawable.quantum_ic_chrome_product_vd_theme_24);
             }
         });
     }

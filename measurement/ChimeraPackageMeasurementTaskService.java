@@ -3,42 +3,42 @@ package com.google.android.gms.measurement;
 import android.app.job.JobParameters;
 import android.content.Intent;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.byln;
-import defpackage.cdoq;
-import defpackage.cdqa;
-import defpackage.cduk;
-import defpackage.cdul;
+import defpackage.cauf;
+import defpackage.cfxn;
+import defpackage.cfyy;
+import defpackage.cgdi;
+import defpackage.cgdj;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class ChimeraPackageMeasurementTaskService extends GmsTaskChimeraService implements cduk {
-    private cdul a;
+public class ChimeraPackageMeasurementTaskService extends GmsTaskChimeraService implements cgdi {
+    private cgdj a;
 
-    private final cdul d() {
+    private final cgdj d() {
         if (this.a == null) {
-            this.a = new cdul(this);
+            this.a = new cgdj(this);
         }
         return this.a;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        String str = bylnVar.a;
+    public final int a(cauf caufVar) {
+        String str = caufVar.a;
         if (str.hashCode() == 1395561816 && str.equals("Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG")) {
-            final cdqa i = cdqa.i(this);
-            final cdoq aJ = i.aJ();
-            if (i.e.a) {
-                aJ.k.a("Device ChimeraPackageMeasurementTaskService called.");
+            final cfyy i = cfyy.i(this);
+            final cfxn aK = i.aK();
+            if (i.d.a) {
+                aK.k.a("Device ChimeraPackageMeasurementTaskService called.");
                 final AtomicBoolean atomicBoolean = new AtomicBoolean(false);
                 synchronized (atomicBoolean) {
-                    d().d(new Runnable() { // from class: cdfx
+                    d().d(new Runnable() { // from class: cfow
                         @Override // java.lang.Runnable
                         public final void run() {
-                            if (cdqa.this.e.a) {
-                                cdoq cdoqVar = aJ;
+                            if (cfyy.this.d.a) {
+                                cfxn cfxnVar = aK;
                                 AtomicBoolean atomicBoolean2 = atomicBoolean;
-                                cdoqVar.k.a("ChimeraPackageMeasurementTaskService processed last upload request.");
+                                cfxnVar.k.a("ChimeraPackageMeasurementTaskService processed last upload request.");
                                 synchronized (atomicBoolean2) {
                                     atomicBoolean2.set(true);
                                     atomicBoolean2.notify();
@@ -54,29 +54,29 @@ public class ChimeraPackageMeasurementTaskService extends GmsTaskChimeraService 
                             currentTimeMillis = System.currentTimeMillis();
                         }
                     } catch (InterruptedException unused) {
-                        aJ.f.a("Interrupted in onRunTask while uploading");
+                        aK.f.a("Interrupted in onRunTask while uploading");
                         return 0;
                     }
                 }
                 return 0;
             }
-            aJ.c.a("TaskService called on client side.");
+            aK.c.a("TaskService called on client side.");
         }
         return 2;
     }
 
-    @Override // defpackage.cduk
+    @Override // defpackage.cgdi
     public final boolean b(int i) {
         throw new UnsupportedOperationException();
     }
 
-    @Override // defpackage.cduk
+    @Override // defpackage.cgdi
     public final void c(JobParameters jobParameters) {
         throw new UnsupportedOperationException();
     }
 
-    @Override // defpackage.cduk
-    public final void il(Intent intent) {
+    @Override // defpackage.cgdi
+    public final void iA(Intent intent) {
         throw new UnsupportedOperationException();
     }
 
@@ -95,13 +95,13 @@ public class ChimeraPackageMeasurementTaskService extends GmsTaskChimeraService 
     @Override // com.google.android.chimera.Service
     public final void onRebind(Intent intent) {
         d();
-        cdul.e(intent);
+        cgdj.e(intent);
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.chimera.Service
     public final boolean onUnbind(Intent intent) {
         d();
-        cdul.g(intent);
+        cgdj.g(intent);
         super.onUnbind(intent);
         return false;
     }

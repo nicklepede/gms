@@ -4,12 +4,12 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.chimera.licenses.ChimeraLicense;
 import com.google.android.chimera.licenses.License;
-import defpackage.tqb;
+import defpackage.vmb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class LicenseWrapper implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new tqb();
+    public static final Parcelable.Creator CREATOR = new vmb();
     public final ChimeraLicense a;
     public final License b;
     public final String c;

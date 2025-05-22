@@ -1,11 +1,11 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.fipp;
-import defpackage.fvbo;
+import defpackage.flfm;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
 public final class CredentialExchangeFormat$LinkedItem {
     public final String a;
     public final String b;
@@ -23,7 +23,7 @@ public final class CredentialExchangeFormat$LinkedItem {
             return false;
         }
         CredentialExchangeFormat$LinkedItem credentialExchangeFormat$LinkedItem = (CredentialExchangeFormat$LinkedItem) obj;
-        return fvbo.n(this.a, credentialExchangeFormat$LinkedItem.a) && fvbo.n(this.b, credentialExchangeFormat$LinkedItem.b);
+        return fxxm.n(this.a, credentialExchangeFormat$LinkedItem.a) && fxxm.n(this.b, credentialExchangeFormat$LinkedItem.b);
     }
 
     public final int hashCode() {

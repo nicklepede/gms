@@ -1,71 +1,71 @@
 package com.google.android.gms.ads.internal.client;
 
 import android.os.Parcel;
-import defpackage.otn;
-import defpackage.oto;
-import defpackage.tbw;
+import defpackage.qmq;
+import defpackage.qmr;
+import defpackage.uxw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class z extends otn implements aa {
-    private final tbw a;
+public final class z extends qmq implements aa {
+    private final uxw a;
 
-    public z(tbw tbwVar) {
+    public z(uxw uxwVar) {
         super("com.google.android.gms.ads.internal.client.IAdListener");
-        this.a = tbwVar;
+        this.a = uxwVar;
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         switch (i) {
             case 1:
-                tbw tbwVar = this.a;
-                if (tbwVar != null) {
-                    tbwVar.b();
+                uxw uxwVar = this.a;
+                if (uxwVar != null) {
+                    uxwVar.b();
                     break;
                 }
                 break;
             case 2:
                 parcel.readInt();
-                fq(parcel);
+                fD(parcel);
                 break;
             case 3:
             case 9:
                 break;
             case 4:
-                tbw tbwVar2 = this.a;
-                if (tbwVar2 != null) {
-                    tbwVar2.d();
+                uxw uxwVar2 = this.a;
+                if (uxwVar2 != null) {
+                    uxwVar2.d();
                     break;
                 }
                 break;
             case 5:
-                tbw tbwVar3 = this.a;
-                if (tbwVar3 != null) {
-                    tbwVar3.e();
+                uxw uxwVar3 = this.a;
+                if (uxwVar3 != null) {
+                    uxwVar3.e();
                     break;
                 }
                 break;
             case 6:
-                tbw tbwVar4 = this.a;
-                if (tbwVar4 != null) {
-                    tbwVar4.a();
+                uxw uxwVar4 = this.a;
+                if (uxwVar4 != null) {
+                    uxwVar4.a();
                     break;
                 }
                 break;
             case 7:
-                tbw tbwVar5 = this.a;
-                if (tbwVar5 != null) {
-                    tbwVar5.f();
+                uxw uxwVar5 = this.a;
+                if (uxwVar5 != null) {
+                    uxwVar5.f();
                     break;
                 }
                 break;
             case 8:
-                AdErrorParcel adErrorParcel = (AdErrorParcel) oto.a(parcel, AdErrorParcel.CREATOR);
-                fq(parcel);
-                tbw tbwVar6 = this.a;
-                if (tbwVar6 != null) {
-                    tbwVar6.c(adErrorParcel.b());
+                AdErrorParcel adErrorParcel = (AdErrorParcel) qmr.a(parcel, AdErrorParcel.CREATOR);
+                fD(parcel);
+                uxw uxwVar6 = this.a;
+                if (uxwVar6 != null) {
+                    uxwVar6.c(adErrorParcel.b());
                     break;
                 }
                 break;

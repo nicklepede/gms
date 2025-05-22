@@ -1,20 +1,20 @@
 package com.google.android.gms.nearby.mediums.nearfieldcommunication;
 
 import com.google.android.chimera.HostApduService;
-import defpackage.brz;
-import defpackage.bsa;
-import defpackage.cjfj;
-import defpackage.cjgy;
-import defpackage.cjpf;
-import defpackage.cjpg;
+import defpackage.bsk;
+import defpackage.bsl;
+import defpackage.clno;
+import defpackage.clpd;
+import defpackage.clxk;
+import defpackage.clxl;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class NfcAdvertisingChimeraService extends HostApduService {
-    public volatile cjpf a;
+    public volatile clxk a;
 
     private final boolean a() {
         return this.a != null;
@@ -23,11 +23,11 @@ public class NfcAdvertisingChimeraService extends HostApduService {
     @Override // com.google.android.chimera.Service
     protected final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         StringBuilder sb = new StringBuilder();
-        brz brzVar = new brz((bsa) cjpg.b().c());
-        while (brzVar.hasNext()) {
-            byte[] bArr = (byte[]) brzVar.next();
+        bsk bskVar = new bsk((bsl) clxl.b().c());
+        while (bskVar.hasNext()) {
+            byte[] bArr = (byte[]) bskVar.next();
             sb.append("{ ");
-            sb.append(cjgy.h(bArr));
+            sb.append(clpd.h(bArr));
             sb.append(" } ");
         }
         printWriter.println(String.format("NfcAdvertisingService { hasSocketConnection=%s, advertisements=%s }", Boolean.valueOf(a()), sb));
@@ -35,8 +35,8 @@ public class NfcAdvertisingChimeraService extends HostApduService {
 
     @Override // com.google.android.chimera.HostApduService
     public final void onDeactivated(int i) {
-        cjfj.a.b().h("Remote NFC device has disconnected: %s.", String.format(Locale.ENGLISH, "[%d]%s", Integer.valueOf(i), i != 0 ? i != 1 ? "UNKNOWN" : "DEACTIVATION_DESELECTED" : "DEACTIVATION_LINK_LOSS"));
-        cjgy.z(this.a, "NFC", "NfcAdvertisingSocket");
+        clno.a.b().h("Remote NFC device has disconnected: %s.", String.format(Locale.ENGLISH, "[%d]%s", Integer.valueOf(i), i != 0 ? i != 1 ? "UNKNOWN" : "DEACTIVATION_DESELECTED" : "DEACTIVATION_LINK_LOSS"));
+        clpd.A(this.a, "NFC", "NfcAdvertisingSocket");
     }
 
     /* JADX WARN: Removed duplicated region for block: B:15:0x013a  */

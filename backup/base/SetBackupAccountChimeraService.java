@@ -6,17 +6,17 @@ import android.os.Binder;
 import android.os.UserHandle;
 import android.text.TextUtils;
 import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
-import defpackage.ahhp;
-import defpackage.ahwd;
-import defpackage.aiee;
-import defpackage.flln;
+import defpackage.ajif;
+import defpackage.ajwt;
+import defpackage.akeu;
+import defpackage.focx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SetBackupAccountChimeraService extends TracingIntentService {
-    private static final ahwd a = new ahwd("SetBackupAccountChimeraService");
-    private aiee b;
-    private ahhp c;
+    private static final ajwt a = new ajwt("SetBackupAccountChimeraService");
+    private akeu b;
+    private ajif c;
 
     public SetBackupAccountChimeraService() {
         super("SetBackupAccountChimeraService");
@@ -24,9 +24,9 @@ public class SetBackupAccountChimeraService extends TracingIntentService {
 
     @Override // com.google.android.gms.framework.tracing.wrapper.TracingIntentService
     public final void a(Intent intent) {
-        ahwd ahwdVar = a;
-        if (ahwdVar.b(3)) {
-            ahwdVar.d("SetBackupAccountChimeraService invoked", new Object[0]);
+        ajwt ajwtVar = a;
+        if (ajwtVar.b(3)) {
+            ajwtVar.d("SetBackupAccountChimeraService invoked", new Object[0]);
         }
         Account account = (Account) intent.getParcelableExtra("backupAccount");
         UserHandle userHandle = (UserHandle) intent.getParcelableExtra("backupUserHandle");
@@ -34,20 +34,20 @@ public class SetBackupAccountChimeraService extends TracingIntentService {
             return;
         }
         if (this.b == null) {
-            this.b = new aiee(this);
+            this.b = new akeu(this);
         }
         if (getPackageManager().getNameForUid(Binder.getCallingUid()).equals("com.google.android.backuptransport")) {
             this.b.y(2);
         } else {
             this.b.y(1);
         }
-        if (flln.a.a().a()) {
-            ahwdVar.m("The SetBackupAccount service is disabled.", new Object[0]);
+        if (focx.a.lK().a()) {
+            ajwtVar.m("The SetBackupAccount service is disabled.", new Object[0]);
             return;
         }
-        ahwdVar.h("Setting backup account", new Object[0]);
+        ajwtVar.h("Setting backup account", new Object[0]);
         if (this.c == null) {
-            this.c = new ahhp(this);
+            this.c = new ajif(this);
         }
         this.c.c(account);
     }

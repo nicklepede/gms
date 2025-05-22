@@ -1,20 +1,20 @@
 package com.google.android.gms.personalsafety.psa;
 
 import com.google.android.chimera.IntentOperation;
-import defpackage.asnv;
-import defpackage.asnz;
-import defpackage.cvpo;
-import defpackage.cvrd;
-import defpackage.cvre;
-import defpackage.cvrf;
-import defpackage.dxkm;
-import defpackage.eiho;
-import defpackage.eijr;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.ensi;
+import defpackage.aurp;
+import defpackage.aurt;
+import defpackage.cxze;
+import defpackage.cyat;
+import defpackage.cyau;
+import defpackage.cyav;
+import defpackage.dzwm;
+import defpackage.ekut;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.eqgb;
 import j$.time.Instant;
 import j$.util.Optional;
 import j$.util.concurrent.atomic.DesugarAtomicReference;
@@ -25,61 +25,61 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class UserPresentIntentOperation extends IntentOperation {
-    public final asnv a;
+    public final aurp a;
 
     public UserPresentIntentOperation() {
-        this(asnz.a);
+        this(aurt.a);
     }
 
-    private static final cvre a() {
+    private static final cyau a() {
         try {
-            eijr eijrVar = cvrf.a;
-            final AtomicReference atomicReference = new AtomicReference(new cvrd(null));
-            dxkm dxkmVar = (dxkm) cvrf.a.a();
-            eiho eihoVar = new eiho() { // from class: cvqv
-                @Override // defpackage.eiho
+            ekww ekwwVar = cyav.a;
+            final AtomicReference atomicReference = new AtomicReference(new cyat(null));
+            dzwm dzwmVar = (dzwm) cyav.a.lK();
+            ekut ekutVar = new ekut() { // from class: cyal
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    cvrr cvrrVar = (cvrr) obj;
-                    eijr eijrVar2 = cvrf.a;
-                    long j = cvrrVar.e;
+                    cybh cybhVar = (cybh) obj;
+                    ekww ekwwVar2 = cyav.a;
+                    long j = cybhVar.e;
                     final Optional empty = j == 0 ? Optional.empty() : Optional.of(Instant.ofEpochMilli(j));
                     AtomicReference atomicReference2 = atomicReference;
-                    DesugarAtomicReference.updateAndGet(atomicReference2, new UnaryOperator() { // from class: cvqx
+                    DesugarAtomicReference.updateAndGet(atomicReference2, new UnaryOperator() { // from class: cyan
                         @Override // java.util.function.Function
                         /* renamed from: andThen */
-                        public final /* synthetic */ Function mo464andThen(Function function) {
+                        public final /* synthetic */ Function mo479andThen(Function function) {
                             return Function$CC.$default$andThen(this, function);
                         }
 
                         @Override // java.util.function.Function
                         public final Object apply(Object obj2) {
-                            cvrd cvrdVar = (cvrd) obj2;
-                            eijr eijrVar3 = cvrf.a;
-                            cvrdVar.c(Optional.this);
-                            return cvrdVar;
+                            cyat cyatVar = (cyat) obj2;
+                            ekww ekwwVar3 = cyav.a;
+                            cyatVar.c(Optional.this);
+                            return cyatVar;
                         }
 
                         public final /* synthetic */ Function compose(Function function) {
                             return Function$CC.$default$compose(this, function);
                         }
                     });
-                    final boolean z = cvrrVar.f;
-                    DesugarAtomicReference.updateAndGet(atomicReference2, new UnaryOperator() { // from class: cvqy
+                    final boolean z = cybhVar.f;
+                    DesugarAtomicReference.updateAndGet(atomicReference2, new UnaryOperator() { // from class: cyao
                         @Override // java.util.function.Function
                         /* renamed from: andThen */
-                        public final /* synthetic */ Function mo464andThen(Function function) {
+                        public final /* synthetic */ Function mo479andThen(Function function) {
                             return Function$CC.$default$andThen(this, function);
                         }
 
                         @Override // java.util.function.Function
                         public final Object apply(Object obj2) {
-                            cvrd cvrdVar = (cvrd) obj2;
-                            eijr eijrVar3 = cvrf.a;
-                            cvrdVar.b(z);
-                            return cvrdVar;
+                            cyat cyatVar = (cyat) obj2;
+                            ekww ekwwVar3 = cyav.a;
+                            cyatVar.b(z);
+                            return cyatVar;
                         }
 
                         public final /* synthetic */ Function compose(Function function) {
@@ -87,56 +87,56 @@ public final class UserPresentIntentOperation extends IntentOperation {
                         }
                     });
                     final boolean z2 = true;
-                    if ((cvrrVar.b & 1) == 0 || !cvrrVar.c) {
+                    if ((cybhVar.b & 1) == 0 || !cybhVar.c) {
                         z2 = false;
                     } else {
-                        fecj fecjVar = (fecj) cvrrVar.iB(5, null);
-                        fecjVar.X(cvrrVar);
-                        if (!fecjVar.b.L()) {
-                            fecjVar.U();
+                        fgrc fgrcVar = (fgrc) cybhVar.iQ(5, null);
+                        fgrcVar.X(cybhVar);
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
                         }
-                        cvrr cvrrVar2 = (cvrr) fecjVar.b;
-                        cvrrVar2.b |= 1;
-                        cvrrVar2.c = false;
-                        cvrrVar = (cvrr) fecjVar.Q();
+                        cybh cybhVar2 = (cybh) fgrcVar.b;
+                        cybhVar2.b |= 1;
+                        cybhVar2.c = false;
+                        cybhVar = (cybh) fgrcVar.Q();
                     }
-                    DesugarAtomicReference.updateAndGet(atomicReference2, new UnaryOperator() { // from class: cvqz
+                    DesugarAtomicReference.updateAndGet(atomicReference2, new UnaryOperator() { // from class: cyap
                         @Override // java.util.function.Function
                         /* renamed from: andThen */
-                        public final /* synthetic */ Function mo464andThen(Function function) {
+                        public final /* synthetic */ Function mo479andThen(Function function) {
                             return Function$CC.$default$andThen(this, function);
                         }
 
                         @Override // java.util.function.Function
                         public final Object apply(Object obj2) {
-                            cvrd cvrdVar = (cvrd) obj2;
-                            eijr eijrVar3 = cvrf.a;
-                            cvrdVar.d(z2);
-                            return cvrdVar;
+                            cyat cyatVar = (cyat) obj2;
+                            ekww ekwwVar3 = cyav.a;
+                            cyatVar.d(z2);
+                            return cyatVar;
                         }
 
                         public final /* synthetic */ Function compose(Function function) {
                             return Function$CC.$default$compose(this, function);
                         }
                     });
-                    return cvrrVar;
+                    return cybhVar;
                 }
             };
-            enre enreVar = enre.a;
-            return (cvre) ((enpf) enps.f(ensi.h(dxkmVar.b(eihoVar, enreVar)), new eiho() { // from class: cvqw
-                @Override // defpackage.eiho
+            eqex eqexVar = eqex.a;
+            return (cyau) ((eqcy) eqdl.f(eqgb.h(dzwmVar.b(ekutVar, eqexVar)), new ekut() { // from class: cyam
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    eijr eijrVar2 = cvrf.a;
-                    return ((cvrd) atomicReference.get()).a();
+                    ekww ekwwVar2 = cyav.a;
+                    return ((cyat) atomicReference.get()).a();
                 }
-            }, enreVar)).u();
+            }, eqexVar)).u();
         } catch (InterruptedException | CancellationException | ExecutionException e) {
-            ((ejhf) ((ejhf) ((ejhf) cvpo.a.j()).s(e)).ah((char) 8599)).x("Couldn't access PsaStore");
-            cvrd cvrdVar = new cvrd(null);
-            cvrdVar.b(false);
-            cvrdVar.d(false);
-            cvrdVar.c(Optional.empty());
-            return cvrdVar.a();
+            ((eluo) ((eluo) ((eluo) cxze.a.j()).s(e)).ai((char) 8596)).x("Couldn't access PsaStore");
+            cyat cyatVar = new cyat(null);
+            cyatVar.b(false);
+            cyatVar.d(false);
+            cyatVar.c(Optional.empty());
+            return cyatVar.a();
         }
     }
 
@@ -155,7 +155,7 @@ public final class UserPresentIntentOperation extends IntentOperation {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.personalsafety.psa.UserPresentIntentOperation.onHandleIntent(android.content.Intent):void");
     }
 
-    public UserPresentIntentOperation(asnv asnvVar) {
-        this.a = asnvVar;
+    public UserPresentIntentOperation(aurp aurpVar) {
+        this.a = aurpVar;
     }
 }

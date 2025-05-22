@@ -6,9 +6,9 @@ import com.google.android.gms.auth.folsom.SharedKey;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.arxd;
-import defpackage.ddfy;
+import defpackage.atzr;
+import defpackage.atzs;
+import defpackage.dfrd;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -17,10 +17,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class FolsomSecurityDomainAndKeys extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new ddfy();
+    public static final Parcelable.Creator CREATOR = new dfrd();
     private static final HashMap d;
     final Set a;
     public String b;
@@ -39,7 +39,7 @@ public class FolsomSecurityDomainAndKeys extends BinarySerializableFastSafeParce
         this.c = arrayList;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
@@ -51,17 +51,17 @@ public class FolsomSecurityDomainAndKeys extends BinarySerializableFastSafeParce
         throw new IllegalStateException(a.j(i, "Unknown field ID: "));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final Map b() {
         return d;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
@@ -75,8 +75,8 @@ public class FolsomSecurityDomainAndKeys extends BinarySerializableFastSafeParce
         throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be a valid string."));
     }
 
-    @Override // defpackage.ashs
-    public final void gy(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+    @Override // defpackage.aulm
+    public final void gN(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         int i = fastJsonResponse$Field.g;
         if (i == 3) {
             if (arrayList != null) {
@@ -92,14 +92,14 @@ public class FolsomSecurityDomainAndKeys extends BinarySerializableFastSafeParce
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.v(parcel, 2, this.b, true);
+            atzr.v(parcel, 2, this.b, true);
         }
         if (set.contains(3)) {
-            arxc.x(parcel, 3, this.c, true);
+            atzr.x(parcel, 3, this.c, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public FolsomSecurityDomainAndKeys() {
@@ -116,7 +116,7 @@ public class FolsomSecurityDomainAndKeys extends BinarySerializableFastSafeParce
         this.c = new ArrayList(list.size());
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            this.c.add(arxd.d((SharedKey) it.next()));
+            this.c.add(atzs.d((SharedKey) it.next()));
         }
         this.a.add(2);
         this.a.add(3);

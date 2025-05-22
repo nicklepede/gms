@@ -2,10 +2,10 @@ package com.google.android.gms.wallet.buyflow;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.dijr;
-import defpackage.dijs;
+import defpackage.dkvb;
+import defpackage.dkvc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class BuyFlowResult implements Parcelable {
     public String b;
@@ -15,13 +15,13 @@ public class BuyFlowResult implements Parcelable {
     public int f;
     public byte[] g;
     public static final BuyFlowResult a = a().a;
-    public static final Parcelable.Creator CREATOR = new dijr();
+    public static final Parcelable.Creator CREATOR = new dkvb();
 
     private BuyFlowResult() {
     }
 
-    public static dijs a() {
-        return new dijs(new BuyFlowResult());
+    public static dkvc a() {
+        return new dkvc(new BuyFlowResult());
     }
 
     @Override // android.os.Parcelable

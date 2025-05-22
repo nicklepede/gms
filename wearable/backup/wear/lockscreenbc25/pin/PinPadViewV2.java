@@ -9,10 +9,10 @@ import android.widget.LinearLayout;
 import androidx.compose.ui.platform.ComposeView;
 import com.google.android.gms.R;
 import com.google.android.gms.wearable.backup.wear.lockscreenbc25.pin.PinPadViewV2;
-import defpackage.djxe;
-import defpackage.djxf;
-import defpackage.djxg;
-import defpackage.djxq;
+import defpackage.dmix;
+import defpackage.dmiy;
+import defpackage.dmiz;
+import defpackage.dmjj;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import j$.util.function.Consumer$CC;
@@ -24,7 +24,7 @@ import java.util.Locale;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PinPadViewV2 extends LinearLayout {
     public static final /* synthetic */ int c = 0;
@@ -44,8 +44,8 @@ public class PinPadViewV2 extends LinearLayout {
         return context.getResources().getFraction(i, i2, i2);
     }
 
-    private final djxg c(final int i) {
-        return new djxe(this.f.format(i), new Runnable() { // from class: djxy
+    private final dmiz c(final int i) {
+        return new dmix(this.f.format(i), new Runnable() { // from class: dmjr
             @Override // java.lang.Runnable
             public final void run() {
                 PinPadViewV2 pinPadViewV2 = PinPadViewV2.this;
@@ -78,16 +78,16 @@ public class PinPadViewV2 extends LinearLayout {
     }
 
     public PinPadViewV2(Context context, AttributeSet attributeSet, int i) {
-        this(context, attributeSet, i, new Function() { // from class: djxu
+        this(context, attributeSet, i, new Function() { // from class: dmjn
             @Override // java.util.function.Function
             /* renamed from: andThen */
-            public final /* synthetic */ Function mo464andThen(Function function) {
+            public final /* synthetic */ Function mo479andThen(Function function) {
                 return Function$CC.$default$andThen(this, function);
             }
 
             @Override // java.util.function.Function
             public final Object apply(Object obj) {
-                return new djxq((djxg[]) obj);
+                return new dmjj((dmiz[]) obj);
             }
 
             public final /* synthetic */ Function compose(Function function) {
@@ -116,36 +116,36 @@ public class PinPadViewV2 extends LinearLayout {
         this.a = new ArrayList();
         for (int i2 = 0; i2 < 3; i2++) {
             ComposeView composeView = (ComposeView) findViewById(d[i2]);
-            djxg[] djxgVarArr = new djxg[3];
+            dmiz[] dmizVarArr = new dmiz[3];
             for (int i3 = 0; i3 < 3; i3++) {
-                djxgVarArr[i3] = c((i2 * 3) + i3 + 1);
+                dmizVarArr[i3] = c((i2 * 3) + i3 + 1);
             }
-            apply2 = this.g.apply(djxgVarArr);
-            ((djxq) apply2).a(composeView);
+            apply2 = this.g.apply(dmizVarArr);
+            ((dmjj) apply2).a(composeView);
         }
-        djxg[] djxgVarArr2 = {new djxf(getContext().getString(R.string.keyguard_accessibility_delete_button), R.drawable.ic_backspace_new, new Runnable() { // from class: djxv
+        dmiz[] dmizVarArr2 = {new dmiy(getContext().getString(R.string.keyguard_accessibility_delete_button), R.drawable.ic_backspace_new, new Runnable() { // from class: dmjo
             @Override // java.lang.Runnable
             public final void run() {
                 PinPadViewV2.this.a();
             }
-        }), c(0), new djxf(getContext().getString(R.string.keyguard_accessibility_enter_button), R.drawable.ic_check_new, new Runnable() { // from class: djxw
+        }), c(0), new dmiy(getContext().getString(R.string.keyguard_accessibility_enter_button), R.drawable.ic_check_new, new Runnable() { // from class: dmjp
             @Override // java.lang.Runnable
             public final void run() {
                 PinPadViewV2.this.a();
             }
         })};
         ComposeView composeView2 = (ComposeView) findViewById(d[3]);
-        apply = this.g.apply(djxgVarArr2);
-        final djxq djxqVar = (djxq) apply;
-        djxqVar.a(composeView2);
-        Consumer consumer = new Consumer() { // from class: djxx
+        apply = this.g.apply(dmizVarArr2);
+        final dmjj dmjjVar = (dmjj) apply;
+        dmjjVar.a(composeView2);
+        Consumer consumer = new Consumer() { // from class: dmjq
             @Override // java.util.function.Consumer
             /* renamed from: accept */
-            public final void q(Object obj) {
+            public final void u(Object obj) {
                 Boolean bool = (Boolean) obj;
                 int i4 = PinPadViewV2.c;
                 bool.booleanValue();
-                djxq.this.b[2].b(bool);
+                dmjj.this.b[2].b(bool);
             }
 
             public final /* synthetic */ Consumer andThen(Consumer consumer2) {
@@ -153,6 +153,6 @@ public class PinPadViewV2 extends LinearLayout {
             }
         };
         this.e = consumer;
-        consumer.q(false);
+        consumer.u(false);
     }
 }

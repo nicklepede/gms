@@ -24,19 +24,19 @@ import com.google.android.gms.config.internal.ConfigExperimentPayload;
 import com.google.android.gms.config.internal.FetchConfigIpcResponse;
 import com.google.android.gms.config.internal.PackageConfigTable;
 import defpackage.a;
-import defpackage.aquo;
-import defpackage.arnx;
-import defpackage.arnz;
-import defpackage.asoe;
-import defpackage.astk;
-import defpackage.asto;
-import defpackage.astq;
-import defpackage.asud;
-import defpackage.asue;
-import defpackage.bxhk;
-import defpackage.bxhl;
-import defpackage.deqr;
-import defpackage.ejck;
+import defpackage.asxd;
+import defpackage.atqm;
+import defpackage.atqo;
+import defpackage.aury;
+import defpackage.auxe;
+import defpackage.auxi;
+import defpackage.auxk;
+import defpackage.auxx;
+import defpackage.auxy;
+import defpackage.bzqa;
+import defpackage.bzqb;
+import defpackage.dhbu;
+import defpackage.elpp;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.nio.charset.Charset;
@@ -52,7 +52,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class ConfigChimeraService extends Service {
     public static final /* synthetic */ int l = 0;
@@ -64,8 +64,8 @@ public final class ConfigChimeraService extends Service {
     public final Object g = new Object();
     public Set h = null;
     public boolean i = false;
-    public asto j;
-    public asue k;
+    public auxi j;
+    public auxy k;
     private PackageManager n;
     static final Charset a = Charset.forName("UTF-8");
     private static final char[] m = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
@@ -124,16 +124,16 @@ public final class ConfigChimeraService extends Service {
     }
 
     public static final DataHolder l(List list) {
-        String[] strArr = arnx.b;
+        String[] strArr = atqm.b;
         Parcelable.Creator creator = DataHolder.CREATOR;
-        arnz arnzVar = new arnz(strArr);
+        atqo atqoVar = new atqo(strArr);
         if (list != null) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
-                arnx.f(arnzVar, new ConfigExperimentPayload((byte[]) it.next()));
+                atqm.f(atqoVar, new ConfigExperimentPayload((byte[]) it.next()));
             }
         }
-        return new DataHolder(arnzVar, 0);
+        return new DataHolder(atqoVar, 0);
     }
 
     public static final DataHolder m(Map map) {
@@ -148,16 +148,16 @@ public final class ConfigChimeraService extends Service {
             }
         }
         PackageConfigTable packageConfigTable = new PackageConfigTable(bundle);
-        String[] strArr = arnx.b;
+        String[] strArr = atqm.b;
         Parcelable.Creator creator = DataHolder.CREATOR;
-        arnz arnzVar = new arnz(strArr);
-        arnx.f(arnzVar, packageConfigTable);
-        return new DataHolder(arnzVar, 0);
+        atqo atqoVar = new atqo(strArr);
+        atqm.f(atqoVar, packageConfigTable);
+        return new DataHolder(atqoVar, 0);
     }
 
-    public static final void o(deqr deqrVar) {
-        if (deqrVar.l()) {
-            deqrVar.g();
+    public static final void o(dhbu dhbuVar) {
+        if (dhbuVar.l()) {
+            dhbuVar.g();
         }
     }
 
@@ -173,10 +173,10 @@ public final class ConfigChimeraService extends Service {
         map.remove(String.valueOf(str).concat(":throttling_success_rate"));
     }
 
-    public static final void q(asud asudVar, int i) {
+    public static final void q(auxx auxxVar, int i) {
         DataHolder m2 = m(null);
         DataHolder l2 = l(null);
-        asudVar.a(Status.b, new FetchConfigIpcResponse(i, m2, l2));
+        auxxVar.a(Status.b, new FetchConfigIpcResponse(i, m2, l2));
         if (!m2.g()) {
             m2.close();
         }
@@ -405,7 +405,7 @@ public final class ConfigChimeraService extends Service {
                         hashMap = hashMap6;
                     }
                     int i5 = i2;
-                    hashMap5.put(string4, new astq(f, f2, hashMap, blob2, blob3));
+                    hashMap5.put(string4, new auxk(f, f2, hashMap, blob2, blob3));
                     i2 = i5;
                     i = 3;
                 } catch (Throwable th2) {
@@ -451,7 +451,7 @@ public final class ConfigChimeraService extends Service {
         }
     }
 
-    public final void h(String str, HashMap hashMap, astq astqVar, Map map, List list) {
+    public final void h(String str, HashMap hashMap, auxk auxkVar, Map map, List list) {
         HashMap hashMap2;
         HashMap hashMap3 = hashMap;
         SQLiteDatabase sQLiteDatabase = null;
@@ -501,18 +501,18 @@ public final class ConfigChimeraService extends Service {
                     }
                     compileStatement3.bindString(1, str);
                     compileStatement3.execute();
-                    if (astqVar != null) {
+                    if (auxkVar != null) {
                         compileStatement4.bindString(1, str);
-                        compileStatement4.bindString(2, astqVar.c());
-                        compileStatement4.bindString(3, d(astqVar.d));
-                        compileStatement4.bindString(4, astqVar.d());
-                        byte[] bArr = astqVar.b;
+                        compileStatement4.bindString(2, auxkVar.c());
+                        compileStatement4.bindString(3, d(auxkVar.d));
+                        compileStatement4.bindString(4, auxkVar.d());
+                        byte[] bArr = auxkVar.b;
                         if (bArr == null) {
                             compileStatement4.bindNull(5);
                         } else {
                             compileStatement4.bindBlob(5, bArr);
                         }
-                        byte[] bArr2 = astqVar.c;
+                        byte[] bArr2 = auxkVar.c;
                         if (bArr2 == null) {
                             compileStatement4.bindNull(6);
                         } else {
@@ -563,10 +563,10 @@ public final class ConfigChimeraService extends Service {
                         }
                         Map map3 = this.d;
                         if (map3 != null) {
-                            if (astqVar == null) {
+                            if (auxkVar == null) {
                                 map3.remove(str);
                             } else {
-                                map3.put(str, astqVar);
+                                map3.put(str, auxkVar);
                             }
                         }
                         Map map4 = this.e;
@@ -649,7 +649,7 @@ public final class ConfigChimeraService extends Service {
                 return false;
             }
         }
-        if (!asoe.o() && aquo.h(this)) {
+        if (!aury.o() && asxd.h(this)) {
             Log.w("ConfigChimeraService", "non-user-build device with test-keys GmsCore; override allowed");
             return true;
         }
@@ -686,10 +686,10 @@ public final class ConfigChimeraService extends Service {
             return null;
         }
         i();
-        return new bxhl(this, 64, ejck.a, 3, new bxhk() { // from class: astj
-            @Override // defpackage.bxhk
-            public final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-                bxgjVar.c(ConfigChimeraService.this.k);
+        return new bzqb(this, 64, elpp.a, 3, new bzqa() { // from class: auxd
+            @Override // defpackage.bzqa
+            public final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+                bzozVar.c(ConfigChimeraService.this.k);
             }
         });
     }
@@ -697,14 +697,14 @@ public final class ConfigChimeraService extends Service {
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        this.k = new asue(this);
+        this.k = new auxy(this);
         this.n = getPackageManager();
-        this.j = new asto(this);
+        this.j = new auxi(this);
         synchronized (this.g) {
             this.h = new HashSet();
         }
         this.i = true;
-        new Thread(new astk(this)).start();
+        new Thread(new auxe(this)).start();
     }
 
     @Override // com.google.android.chimera.Service

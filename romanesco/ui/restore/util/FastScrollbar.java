@@ -9,14 +9,14 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
 import com.google.android.gms.R;
-import defpackage.asoq;
+import defpackage.ausk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class FastScrollbar extends RelativeLayout {
     View a;
     private final int b;
-    private asoq c;
+    private ausk c;
     private LinearLayoutManager d;
     private boolean e;
 
@@ -34,8 +34,8 @@ public class FastScrollbar extends RelativeLayout {
         return Math.min(Math.max(0, i2), i);
     }
 
-    public final void a(asoq asoqVar, LinearLayoutManager linearLayoutManager) {
-        this.c = asoqVar;
+    public final void a(ausk auskVar, LinearLayoutManager linearLayoutManager) {
+        this.c = auskVar;
         this.d = linearLayoutManager;
     }
 
@@ -84,8 +84,8 @@ public class FastScrollbar extends RelativeLayout {
         this.a.setSelected(true);
         c(motionEvent.getY());
         float y = motionEvent.getY();
-        asoq asoqVar = this.c;
-        int intValue = asoqVar != null ? ((Integer) asoqVar.a(null)).intValue() : 0;
+        ausk auskVar = this.c;
+        int intValue = auskVar != null ? ((Integer) auskVar.a(null)).intValue() : 0;
         this.d.Z(d(intValue - 1, (int) ((this.a.getY() != 0.0f ? this.a.getY() + ((float) this.a.getHeight()) >= ((float) getHeight()) ? 1.0f : y / getHeight() : 0.0f) * intValue)), 0);
         return true;
     }

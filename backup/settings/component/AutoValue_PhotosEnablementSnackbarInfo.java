@@ -4,12 +4,12 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.ajkh;
+import defpackage.alkz;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class AutoValue_PhotosEnablementSnackbarInfo extends C$AutoValue_PhotosEnablementSnackbarInfo {
-    public static final Parcelable.Creator CREATOR = new ajkh();
+    public static final Parcelable.Creator CREATOR = new alkz();
 
     public AutoValue_PhotosEnablementSnackbarInfo(boolean z, Intent intent, PendingIntent pendingIntent, String str) {
         super(z, intent, pendingIntent, str);

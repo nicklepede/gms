@@ -9,7 +9,7 @@ import javax.net.ssl.SSLSessionContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class OpenSSLContextImpl extends SSLContextSpi {
     private static DefaultSSLContextImpl defaultSslContextImpl;
@@ -18,28 +18,28 @@ public abstract class OpenSSLContextImpl extends SSLContextSpi {
     private final ServerSessionContext serverSessionContext;
     SSLParametersImpl sslParameters;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class TLSv1 extends OpenSSLContextImpl {
         public TLSv1() {
             super(NativeCrypto.TLSV1_PROTOCOLS);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class TLSv11 extends OpenSSLContextImpl {
         public TLSv11() {
             super(NativeCrypto.TLSV11_PROTOCOLS);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class TLSv12 extends OpenSSLContextImpl {
         public TLSv12() {
             super(NativeCrypto.tlsv12protocols);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class TLSv13 extends OpenSSLContextImpl {
         public TLSv13() {
             super(NativeCrypto.tlsv13protocols);

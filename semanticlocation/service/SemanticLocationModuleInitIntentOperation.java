@@ -5,114 +5,114 @@ import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.semanticlocation.gmm.SemanticLocationAvailabilityBroadcastJob;
 import com.google.android.gms.semanticlocation.mdd.MddDownloadScheduleService;
-import defpackage.anya;
-import defpackage.asot;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.czir;
-import defpackage.cziy;
-import defpackage.eiig;
-import defpackage.fnck;
-import defpackage.frwb;
-import defpackage.frxn;
+import defpackage.apzs;
+import defpackage.ausn;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.dbsp;
+import defpackage.dbsw;
+import defpackage.ekvl;
+import defpackage.fpuj;
+import defpackage.fuqv;
+import defpackage.fush;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class SemanticLocationModuleInitIntentOperation extends anya {
-    @Override // defpackage.anya
+public class SemanticLocationModuleInitIntentOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        asot asotVar = czir.a;
+        ausn ausnVar = dbsp.a;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
         Intent startIntent = IntentOperation.getStartIntent(this, SemanticLocationIntentOperation.class, "com.google.android.gms.semanticlocation.ACTION_INIT_RUNTIME_STATE");
-        eiig.x(startIntent);
+        ekvl.y(startIntent);
         startService(startIntent);
         int i2 = MddDownloadScheduleService.a;
-        if (frxn.P() && frwb.c()) {
-            if (fnck.l()) {
+        if (fush.P() && fuqv.c()) {
+            if (fpuj.l()) {
                 Context applicationContext = getApplicationContext();
-                byko bykoVar = new byko();
-                bykoVar.w(MddDownloadScheduleService.class.getName());
-                bykoVar.t("schedule_mdd_task");
-                bykoVar.a = bykv.n;
-                bykoVar.v(2);
-                bykoVar.l(true);
-                cziy.c(applicationContext, bykoVar.b());
+                catg catgVar = new catg();
+                catgVar.w(MddDownloadScheduleService.class.getName());
+                catgVar.t("schedule_mdd_task");
+                catgVar.a = catn.n;
+                catgVar.v(2);
+                catgVar.l(true);
+                dbsw.c(applicationContext, catgVar.b());
             } else {
                 Context applicationContext2 = getApplicationContext();
-                bykm bykmVar = new bykm();
-                bykmVar.w(MddDownloadScheduleService.class.getName());
-                bykmVar.t("schedule_mdd_task");
-                bykmVar.j(byki.EVERY_DAY);
-                bykmVar.p = true;
-                bykmVar.x(0, 1);
-                bykmVar.v(2);
-                bykmVar.y(0, 1);
-                cziy.b(applicationContext2, bykmVar.b());
+                cate cateVar = new cate();
+                cateVar.w(MddDownloadScheduleService.class.getName());
+                cateVar.t("schedule_mdd_task");
+                cateVar.j(cata.EVERY_DAY);
+                cateVar.p = true;
+                cateVar.x(0, 1);
+                cateVar.v(2);
+                cateVar.y(0, 1);
+                dbsw.b(applicationContext2, cateVar.b());
             }
         }
         String str = SemanticLocationCleanupJob.a;
-        if (frxn.P()) {
-            if (fnck.l()) {
+        if (fush.P()) {
+            if (fpuj.l()) {
                 Context applicationContext3 = getApplicationContext();
-                byko bykoVar2 = new byko();
-                bykoVar2.w(SemanticLocationCleanupJob.a);
-                bykoVar2.t("SemanticLocationRemovedAccountsCleanup");
-                bykoVar2.a = bykv.j;
-                bykoVar2.v(2);
-                bykoVar2.l(false);
-                cziy.c(applicationContext3, bykoVar2.b());
+                catg catgVar2 = new catg();
+                catgVar2.w(SemanticLocationCleanupJob.a);
+                catgVar2.t("SemanticLocationRemovedAccountsCleanup");
+                catgVar2.a = catn.j;
+                catgVar2.v(2);
+                catgVar2.l(false);
+                dbsw.c(applicationContext3, catgVar2.b());
             } else {
                 Context applicationContext4 = getApplicationContext();
-                bykm bykmVar2 = new bykm();
-                bykmVar2.w(SemanticLocationCleanupJob.a);
-                bykmVar2.t("SemanticLocationRemovedAccountsCleanup");
-                bykmVar2.j(byki.EVERY_DAY);
-                bykmVar2.v(1);
-                bykmVar2.x(0, 1);
-                cziy.b(applicationContext4, bykmVar2.b());
+                cate cateVar2 = new cate();
+                cateVar2.w(SemanticLocationCleanupJob.a);
+                cateVar2.t("SemanticLocationRemovedAccountsCleanup");
+                cateVar2.j(cata.EVERY_DAY);
+                cateVar2.v(1);
+                cateVar2.x(0, 1);
+                dbsw.b(applicationContext4, cateVar2.b());
             }
         }
         if (SemanticLocationAvailabilityBroadcastJob.d()) {
-            if (!fnck.l()) {
+            if (!fpuj.l()) {
                 Context applicationContext5 = getApplicationContext();
-                bykm bykmVar3 = new bykm();
-                bykmVar3.w(SemanticLocationAvailabilityBroadcastJob.a);
-                bykmVar3.t("SemanticLocationAvailability");
-                bykmVar3.j(byki.EVERY_DAY);
-                bykmVar3.v(2);
-                bykmVar3.r(true);
-                cziy.b(applicationContext5, bykmVar3.b());
+                cate cateVar3 = new cate();
+                cateVar3.w(SemanticLocationAvailabilityBroadcastJob.a);
+                cateVar3.t("SemanticLocationAvailability");
+                cateVar3.j(cata.EVERY_DAY);
+                cateVar3.v(2);
+                cateVar3.r(true);
+                dbsw.b(applicationContext5, cateVar3.b());
                 return;
             }
             Context applicationContext6 = getApplicationContext();
-            byko bykoVar3 = new byko();
-            bykoVar3.w(SemanticLocationAvailabilityBroadcastJob.a);
-            bykoVar3.t("SemanticLocationAvailability");
-            bykoVar3.a = bykv.j;
-            bykoVar3.l(false);
-            bykoVar3.v(2);
-            bykoVar3.e();
-            cziy.c(applicationContext6, bykoVar3.b());
+            catg catgVar3 = new catg();
+            catgVar3.w(SemanticLocationAvailabilityBroadcastJob.a);
+            catgVar3.t("SemanticLocationAvailability");
+            catgVar3.a = catn.j;
+            catgVar3.l(false);
+            catgVar3.v(2);
+            catgVar3.e();
+            dbsw.c(applicationContext6, catgVar3.b());
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
-        asot asotVar = czir.a;
+        ausn ausnVar = dbsp.a;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void d(Intent intent) {
-        asot asotVar = czir.a;
+        ausn ausnVar = dbsp.a;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void j(Intent intent) {
-        asot asotVar = czir.a;
+        ausn ausnVar = dbsp.a;
     }
 }

@@ -4,18 +4,18 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cdzb;
-import defpackage.ceai;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgii;
+import defpackage.cgjp;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MdpPurchaseOfferResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ceai();
+    public static final Parcelable.Creator CREATOR = new cgjp();
     public final String a;
     public final String b;
     public final String c;
@@ -48,7 +48,7 @@ public class MdpPurchaseOfferResponse extends AbstractSafeParcelable {
             return false;
         }
         MdpPurchaseOfferResponse mdpPurchaseOfferResponse = (MdpPurchaseOfferResponse) obj;
-        return arwb.b(this.a, mdpPurchaseOfferResponse.a) && arwb.b(this.b, mdpPurchaseOfferResponse.b) && arwb.b(this.c, mdpPurchaseOfferResponse.c) && arwb.b(this.d, mdpPurchaseOfferResponse.d) && arwb.b(Long.valueOf(this.e), Long.valueOf(mdpPurchaseOfferResponse.e)) && arwb.b(this.f, mdpPurchaseOfferResponse.f) && arwb.b(this.g, mdpPurchaseOfferResponse.g) && cdzb.b(this.h, mdpPurchaseOfferResponse.h) && arwb.b(this.i, mdpPurchaseOfferResponse.i) && arwb.b(this.j, mdpPurchaseOfferResponse.j);
+        return atyq.b(this.a, mdpPurchaseOfferResponse.a) && atyq.b(this.b, mdpPurchaseOfferResponse.b) && atyq.b(this.c, mdpPurchaseOfferResponse.c) && atyq.b(this.d, mdpPurchaseOfferResponse.d) && atyq.b(Long.valueOf(this.e), Long.valueOf(mdpPurchaseOfferResponse.e)) && atyq.b(this.f, mdpPurchaseOfferResponse.f) && atyq.b(this.g, mdpPurchaseOfferResponse.g) && cgii.b(this.h, mdpPurchaseOfferResponse.h) && atyq.b(this.i, mdpPurchaseOfferResponse.i) && atyq.b(this.j, mdpPurchaseOfferResponse.j);
     }
 
     public final int hashCode() {
@@ -57,33 +57,33 @@ public class MdpPurchaseOfferResponse extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("CarrierName", this.a, arrayList);
-        arwa.b("TransactionId", this.b, arrayList);
-        arwa.b("ConfirmationCode", this.c, arrayList);
-        arwa.b("TransactionMsg", this.d, arrayList);
-        arwa.b("RemainingBalance", Long.valueOf(this.e), arrayList);
-        arwa.b("CostCurrency", this.f, arrayList);
-        arwa.b("PlanActivationTime", this.g, arrayList);
-        arwa.b("ExtraInfo", this.h, arrayList);
-        arwa.b("EventFlowId", this.i, arrayList);
-        arwa.b("UniqueRequestId", this.j, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("CarrierName", this.a, arrayList);
+        atyp.b("TransactionId", this.b, arrayList);
+        atyp.b("ConfirmationCode", this.c, arrayList);
+        atyp.b("TransactionMsg", this.d, arrayList);
+        atyp.b("RemainingBalance", Long.valueOf(this.e), arrayList);
+        atyp.b("CostCurrency", this.f, arrayList);
+        atyp.b("PlanActivationTime", this.g, arrayList);
+        atyp.b("ExtraInfo", this.h, arrayList);
+        atyp.b("EventFlowId", this.i, arrayList);
+        atyp.b("UniqueRequestId", this.j, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.q(parcel, 5, this.e);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.g(parcel, 8, this.h, false);
-        arxc.F(parcel, 9, this.i);
-        arxc.I(parcel, 10, this.j);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.q(parcel, 5, this.e);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.g(parcel, 8, this.h, false);
+        atzr.F(parcel, 9, this.i);
+        atzr.I(parcel, 10, this.j);
+        atzr.c(parcel, a);
     }
 }

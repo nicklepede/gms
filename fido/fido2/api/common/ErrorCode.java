@@ -3,9 +3,9 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.fido.fido2.api.common.ErrorCode;
-import defpackage.bbsz;
+import defpackage.bdwq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public enum ErrorCode implements Parcelable {
     NOT_SUPPORTED_ERR(9),
@@ -21,12 +21,12 @@ public enum ErrorCode implements Parcelable {
     NOT_ALLOWED_ERR(35),
     ATTESTATION_NOT_PRIVATE_ERR(36);
 
-    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bbsy
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bdwp
         @Override // android.os.Parcelable.Creator
         public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
             try {
                 return ErrorCode.a(parcel.readInt());
-            } catch (bbsz e) {
+            } catch (bdwq e) {
                 throw new IllegalArgumentException(e);
             }
         }
@@ -48,7 +48,7 @@ public enum ErrorCode implements Parcelable {
                 return errorCode;
             }
         }
-        throw new bbsz(i);
+        throw new bdwq(i);
     }
 
     @Override // android.os.Parcelable

@@ -8,19 +8,19 @@ import android.text.TextUtils;
 import android.util.Log;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.wearable.internal.DataItemAssetParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.djkm;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.dlwf;
 import j$.util.DesugarCollections;
 import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PutDataRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new djkm();
+    public static final Parcelable.Creator CREATOR = new dlwf();
     private static final long e = TimeUnit.MINUTES.toMillis(30);
     public final Uri a;
     public final Bundle b;
@@ -35,7 +35,7 @@ public class PutDataRequest extends AbstractSafeParcelable {
         this.a = uri;
         this.b = bundle;
         ClassLoader classLoader = DataItemAssetParcelable.class.getClassLoader();
-        arwm.s(classLoader);
+        atzb.s(classLoader);
         bundle.setClassLoader(classLoader);
         this.c = bArr;
         this.d = j;
@@ -55,7 +55,7 @@ public class PutDataRequest extends AbstractSafeParcelable {
     }
 
     public static PutDataRequest b(Uri uri) {
-        arwm.t(uri, "uri must not be null");
+        atzb.t(uri, "uri must not be null");
         return new PutDataRequest(uri, new Bundle(), null, e);
     }
 
@@ -69,8 +69,8 @@ public class PutDataRequest extends AbstractSafeParcelable {
     }
 
     public final void d(String str, Asset asset) {
-        arwm.s(str);
-        arwm.s(asset);
+        atzb.s(str);
+        atzb.s(asset);
         this.b.putParcelable(str, asset);
     }
 
@@ -101,13 +101,13 @@ public class PutDataRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        arwm.t(parcel, "dest must not be null");
+        atzb.t(parcel, "dest must not be null");
         Uri uri = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, uri, i, false);
-        arxc.g(parcel, 4, this.b, false);
-        arxc.i(parcel, 5, this.c, false);
-        arxc.q(parcel, 6, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, uri, i, false);
+        atzr.g(parcel, 4, this.b, false);
+        atzr.i(parcel, 5, this.c, false);
+        atzr.q(parcel, 6, this.d);
+        atzr.c(parcel, a);
     }
 }

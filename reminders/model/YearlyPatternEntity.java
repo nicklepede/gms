@@ -3,16 +3,16 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxez;
+import defpackage.atyq;
+import defpackage.czov;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class YearlyPatternEntity extends AbstractSafeParcelable implements YearlyPattern {
-    public static final Parcelable.Creator CREATOR = new cxez();
+    public static final Parcelable.Creator CREATOR = new czov();
     public final MonthlyPatternEntity a;
     public final List b;
 
@@ -26,7 +26,7 @@ public class YearlyPatternEntity extends AbstractSafeParcelable implements Yearl
     }
 
     public static boolean d(YearlyPattern yearlyPattern, YearlyPattern yearlyPattern2) {
-        return arwb.b(yearlyPattern.a(), yearlyPattern2.a()) && arwb.b(yearlyPattern.c(), yearlyPattern2.c());
+        return atyq.b(yearlyPattern.a(), yearlyPattern2.a()) && atyq.b(yearlyPattern.c(), yearlyPattern2.c());
     }
 
     @Override // com.google.android.gms.reminders.model.YearlyPattern
@@ -55,7 +55,7 @@ public class YearlyPatternEntity extends AbstractSafeParcelable implements Yearl
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxez.a(this, parcel, i);
+        czov.a(this, parcel, i);
     }
 
     public YearlyPatternEntity(YearlyPattern yearlyPattern) {
@@ -65,7 +65,7 @@ public class YearlyPatternEntity extends AbstractSafeParcelable implements Yearl
         this.b = c != null ? new ArrayList(c) : null;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

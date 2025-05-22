@@ -5,9 +5,9 @@ import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import com.google.android.gms.R;
-import defpackage.efwo;
+import defpackage.eijr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class CardActionBarView extends LinearLayout {
     public ViewGroup a;
@@ -25,7 +25,7 @@ public class CardActionBarView extends LinearLayout {
     @Override // android.view.View
     public final void setEnabled(boolean z) {
         super.setEnabled(z);
-        efwo.N(this, z);
+        eijr.N(this, z);
     }
 
     public CardActionBarView(Context context, AttributeSet attributeSet) {

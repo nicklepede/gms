@@ -4,40 +4,40 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asit;
-import defpackage.asot;
-import defpackage.bggg;
-import defpackage.bggi;
-import defpackage.bhaf;
-import defpackage.eiig;
-import defpackage.ejhf;
+import defpackage.aumn;
+import defpackage.ausn;
+import defpackage.bikw;
+import defpackage.biky;
+import defpackage.bjev;
+import defpackage.ekvl;
+import defpackage.eluo;
 import java.util.HashSet;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class StoreMaintenanceIntentOperation extends IntentOperation {
-    private bggi d;
-    private static final asot b = bhaf.a();
+    private biky d;
+    private static final ausn b = bjev.a();
     public static final Set a = new HashSet();
     private static long c = 0;
 
     public static PendingIntent a(Context context) {
         Intent startIntent = getStartIntent(context, StoreMaintenanceIntentOperation.class, "com.google.android.gms.fitness.trim");
-        eiig.x(startIntent);
+        ekvl.y(startIntent);
         PendingIntent pendingIntent = getPendingIntent(context, StoreMaintenanceIntentOperation.class, startIntent, 0, 134217728);
-        eiig.x(pendingIntent);
+        ekvl.y(pendingIntent);
         return pendingIntent;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:92:0x0383 A[Catch: IOException -> 0x038c, all -> 0x0431, TRY_LEAVE, TryCatch #4 {IOException -> 0x038c, blocks: (B:90:0x0379, B:92:0x0383), top: B:89:0x0379, outer: #1 }] */
+    /* JADX WARN: Removed duplicated region for block: B:92:0x037f A[Catch: IOException -> 0x0388, all -> 0x042d, TRY_LEAVE, TryCatch #1 {IOException -> 0x0388, blocks: (B:90:0x0375, B:92:0x037f), top: B:89:0x0375, outer: #4 }] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     private final synchronized void b() {
         /*
-            Method dump skipped, instructions count: 1076
+            Method dump skipped, instructions count: 1072
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.fitness.service.maintenance.StoreMaintenanceIntentOperation.b():void");
@@ -46,16 +46,16 @@ public class StoreMaintenanceIntentOperation extends IntentOperation {
     private static synchronized void c(Context context) {
         synchronized (StoreMaintenanceIntentOperation.class) {
             Intent startIntent = getStartIntent(context, StoreMaintenanceIntentOperation.class, "com.google.android.gms.fitness.aggregate");
-            eiig.x(startIntent);
+            ekvl.y(startIntent);
             PendingIntent pendingIntent = getPendingIntent(context, StoreMaintenanceIntentOperation.class, startIntent, 0, 134217728);
-            eiig.x(pendingIntent);
-            new asit(context).a(pendingIntent);
+            ekvl.y(pendingIntent);
+            new aumn(context).a(pendingIntent);
         }
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        bggi a2 = bggg.a(this);
+        biky a2 = bikw.a(this);
         this.d = a2;
         a2.a();
     }
@@ -79,7 +79,7 @@ public class StoreMaintenanceIntentOperation extends IntentOperation {
         if (c2 == 0) {
             b();
         } else if (c2 != 1) {
-            ((ejhf) b.i()).B("Unexpected intent: %s", intent);
+            ((eluo) b.i()).B("Unexpected intent: %s", intent);
         } else {
             c(this);
         }

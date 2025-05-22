@@ -8,43 +8,43 @@ import android.location.Location;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.findmydevice.spot.locationreporting.LocationAssigningIntentOperation;
 import com.google.android.gms.location.LocationResult;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bdap;
-import defpackage.bebo;
-import defpackage.bejb;
-import defpackage.beje;
-import defpackage.belh;
-import defpackage.belx;
-import defpackage.benk;
-import defpackage.benu;
-import defpackage.benw;
-import defpackage.beup;
-import defpackage.bfdp;
-import defpackage.bfiy;
-import defpackage.bqqa;
-import defpackage.bvzi;
-import defpackage.dnlf;
-import defpackage.dwup;
-import defpackage.dwwv;
-import defpackage.dwyw;
-import defpackage.dxaj;
-import defpackage.egmx;
-import defpackage.eigb;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.eiig;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.ezcr;
-import defpackage.ezda;
-import defpackage.fobh;
-import defpackage.fobk;
-import defpackage.fobr;
-import defpackage.fuuq;
-import defpackage.ilq;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bfcb;
+import defpackage.bgda;
+import defpackage.bgkn;
+import defpackage.bgkq;
+import defpackage.bgmt;
+import defpackage.bgnj;
+import defpackage.bgow;
+import defpackage.bgpg;
+import defpackage.bgpi;
+import defpackage.bgwc;
+import defpackage.bhff;
+import defpackage.bhko;
+import defpackage.bsxr;
+import defpackage.byhu;
+import defpackage.dpvo;
+import defpackage.dzgp;
+import defpackage.dziv;
+import defpackage.dzkw;
+import defpackage.dzmj;
+import defpackage.ejaa;
+import defpackage.ektg;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.ekvl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fbrg;
+import defpackage.fbrp;
+import defpackage.fqtb;
+import defpackage.fqte;
+import defpackage.fqtl;
+import defpackage.fxqo;
+import defpackage.ing;
 import j$.util.Objects;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -56,73 +56,73 @@ import java.util.ListIterator;
 import java.util.SortedSet;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class LocationAssigningIntentOperation extends IntentOperation {
-    public static final asot a = asot.b("LocationAssigningIntOp", asej.FIND_MY_DEVICE_SPOT);
-    public final bejb b;
-    public final beup c;
-    public final benu d;
-    public final belx e;
-    public final dwwv f;
-    public final benw g;
-    public final fuuq h;
-    public final benk i;
-    public final fuuq j;
+    public static final ausn a = ausn.b("LocationAssigningIntOp", auid.FIND_MY_DEVICE_SPOT);
+    public final bgkn b;
+    public final bgwc c;
+    public final bgpg d;
+    public final bgnj e;
+    public final dziv f;
+    public final bgpi g;
+    public final fxqo h;
+    public final bgow i;
+    public final fxqo j;
     public final Executor k;
     public final Context l;
-    public final bqqa m;
-    private final dnlf n;
+    public final bsxr m;
+    private final dpvo n;
 
     public LocationAssigningIntentOperation() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
-    public static final void a(final ezda ezdaVar, final dwyw dwywVar, int i) {
-        if (fobk.f()) {
+    public static final void a(final fbrp fbrpVar, final dzkw dzkwVar, int i) {
+        if (fqte.f()) {
             for (int i2 = 0; i2 < i; i2++) {
-                bvzi.v().f(bdap.a(ezcr.SIGHTING_REPORTED, new eiho() { // from class: bejq
-                    @Override // defpackage.eiho
+                byhu.v().f(bfcb.a(fbrg.SIGHTING_REPORTED, new ekut() { // from class: bglc
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        fecj fecjVar = (fecj) obj;
-                        asot asotVar = LocationAssigningIntentOperation.a;
-                        fecj v = ezcz.a.v();
+                        fgrc fgrcVar = (fgrc) obj;
+                        ausn ausnVar = LocationAssigningIntentOperation.a;
+                        fgrc v = fbro.a.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        dwyw dwywVar2 = dwywVar;
-                        ezda ezdaVar2 = ezda.this;
-                        ezcz ezczVar = (ezcz) v.b;
-                        ezczVar.c = ezdaVar2.a();
-                        ezczVar.b |= 1;
-                        boolean i3 = bego.i(dwywVar2);
+                        dzkw dzkwVar2 = dzkwVar;
+                        fbrp fbrpVar2 = fbrp.this;
+                        fbro fbroVar = (fbro) v.b;
+                        fbroVar.c = fbrpVar2.a();
+                        fbroVar.b |= 1;
+                        boolean i3 = bgia.i(dzkwVar2);
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fecp fecpVar = v.b;
-                        ezcz ezczVar2 = (ezcz) fecpVar;
-                        ezczVar2.b |= 2;
-                        ezczVar2.d = i3;
-                        euhg b = euhg.b(dwywVar2.g);
+                        fgri fgriVar = v.b;
+                        fbro fbroVar2 = (fbro) fgriVar;
+                        fbroVar2.b |= 2;
+                        fbroVar2.d = i3;
+                        ewwz b = ewwz.b(dzkwVar2.g);
                         if (b == null) {
-                            b = euhg.FMDN_DISABLED_DEFAULT;
+                            b = ewwz.FMDN_DISABLED_DEFAULT;
                         }
-                        if (!fecpVar.L()) {
+                        if (!fgriVar.L()) {
                             v.U();
                         }
-                        ezcz ezczVar3 = (ezcz) v.b;
-                        ezczVar3.e = b.a();
-                        ezczVar3.b |= 4;
-                        if (!fecjVar.b.L()) {
-                            fecjVar.U();
+                        fbro fbroVar3 = (fbro) v.b;
+                        fbroVar3.e = b.a();
+                        fbroVar3.b |= 4;
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
                         }
-                        ezcq ezcqVar = (ezcq) fecjVar.b;
-                        ezcz ezczVar4 = (ezcz) v.Q();
-                        ezcq ezcqVar2 = ezcq.a;
-                        ezczVar4.getClass();
-                        ezcqVar.d = ezczVar4;
-                        ezcqVar.b |= 2;
-                        return fecjVar;
+                        fbrf fbrfVar = (fbrf) fgrcVar.b;
+                        fbro fbroVar4 = (fbro) v.Q();
+                        fbrf fbrfVar2 = fbrf.a;
+                        fbroVar4.getClass();
+                        fbrfVar.d = fbroVar4;
+                        fbrfVar.b |= 2;
+                        return fgrcVar;
                     }
                 }));
             }
@@ -131,116 +131,116 @@ public class LocationAssigningIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        enss i;
-        enss i2;
-        if (bfdp.b(intent, "com.google.android.gms.findmydevice.spot.locationreporting.ASSIGN_LOCATION")) {
-            if (fobh.g() && intent.hasCategory("PowerConsumingSightingsLocationUpdate")) {
+        eqgl i;
+        eqgl i2;
+        if (bhff.b(intent, "com.google.android.gms.findmydevice.spot.locationreporting.ASSIGN_LOCATION")) {
+            if (fqtb.g() && intent.hasCategory("PowerConsumingSightingsLocationUpdate")) {
                 this.e.a();
             }
-            final long a2 = dxaj.a(this.n.a());
-            if (!bfiy.a(this)) {
-                i = ensj.i(eigb.a);
+            final long a2 = dzmj.a(this.n.a());
+            if (!bhko.a(this)) {
+                i = eqgc.i(ektg.a);
             } else if (LocationResult.d(intent)) {
                 LocationResult c = LocationResult.c(intent);
-                eiig.x(c);
+                ekvl.y(c);
                 Location a3 = c.a();
-                eiig.x(a3);
+                ekvl.y(a3);
                 a3.getAccuracy();
-                if (beje.b(a3)) {
-                    this.b.a(a3, a2, fobh.c() ? eiid.j(Double.valueOf(fobr.e())) : eigb.a);
-                    i2 = ensj.i(eiid.j(a3));
-                    i = egmx.f(i2).h(new eiho() { // from class: bejw
-                        @Override // defpackage.eiho
+                if (bgkq.b(a3)) {
+                    this.b.a(a3, a2, fqtb.c() ? ekvi.j(Double.valueOf(fqtl.e())) : ektg.a);
+                    i2 = eqgc.i(ekvi.j(a3));
+                    i = ejaa.g(i2).h(new ekut() { // from class: bgli
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
-                            eiid eiidVar = (eiid) obj;
-                            asot asotVar = LocationAssigningIntentOperation.a;
-                            if (!eiidVar.h()) {
-                                return eigb.a;
+                            ekvi ekviVar = (ekvi) obj;
+                            ausn ausnVar = LocationAssigningIntentOperation.a;
+                            if (!ekviVar.h()) {
+                                return ektg.a;
                             }
-                            Location location = (Location) eiidVar.c();
-                            if (!location.isFromMockProvider() || fobx.a.a().c()) {
-                                return eiidVar;
+                            Location location = (Location) ekviVar.c();
+                            if (!location.isFromMockProvider() || fqto.a.lK().c()) {
+                                return ekviVar;
                             }
-                            ((ejhf) ((ejhf) LocationAssigningIntentOperation.a.j()).ah((char) 4237)).B("Dropping location %s because it is mocked", location);
-                            return eigb.a;
+                            ((eluo) ((eluo) LocationAssigningIntentOperation.a.j()).ai((char) 4243)).B("Dropping location %s because it is mocked", location);
+                            return ektg.a;
                         }
-                    }, enre.a);
+                    }, eqex.a);
                 } else {
-                    i = ensj.i(eigb.a);
+                    i = eqgc.i(ektg.a);
                 }
             } else if (intent.hasExtra("location")) {
-                Location location = (Location) ilq.a(intent, "location", Location.class);
-                eiig.x(location);
+                Location location = (Location) ing.a(intent, "location", Location.class);
+                ekvl.y(location);
                 location.getAccuracy();
-                i2 = ensj.i(eiid.j(location));
-                i = egmx.f(i2).h(new eiho() { // from class: bejw
-                    @Override // defpackage.eiho
+                i2 = eqgc.i(ekvi.j(location));
+                i = ejaa.g(i2).h(new ekut() { // from class: bgli
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        eiid eiidVar = (eiid) obj;
-                        asot asotVar = LocationAssigningIntentOperation.a;
-                        if (!eiidVar.h()) {
-                            return eigb.a;
+                        ekvi ekviVar = (ekvi) obj;
+                        ausn ausnVar = LocationAssigningIntentOperation.a;
+                        if (!ekviVar.h()) {
+                            return ektg.a;
                         }
-                        Location location2 = (Location) eiidVar.c();
-                        if (!location2.isFromMockProvider() || fobx.a.a().c()) {
-                            return eiidVar;
+                        Location location2 = (Location) ekviVar.c();
+                        if (!location2.isFromMockProvider() || fqto.a.lK().c()) {
+                            return ekviVar;
                         }
-                        ((ejhf) ((ejhf) LocationAssigningIntentOperation.a.j()).ah((char) 4237)).B("Dropping location %s because it is mocked", location2);
-                        return eigb.a;
+                        ((eluo) ((eluo) LocationAssigningIntentOperation.a.j()).ai((char) 4243)).B("Dropping location %s because it is mocked", location2);
+                        return ektg.a;
                     }
-                }, enre.a);
+                }, eqex.a);
             } else {
-                i = ensj.i(eigb.a);
+                i = eqgc.i(ektg.a);
             }
-            dwup.a("Sighting report", egmx.f(i).i(new enqc() { // from class: bejf
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    eiid eiidVar = (eiid) obj;
-                    if (!eiidVar.h()) {
-                        return ensm.a;
+            dzgp.a("Sighting report", ejaa.g(i).i(new eqdv() { // from class: bgkr
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    ekvi ekviVar = (ekvi) obj;
+                    if (!ekviVar.h()) {
+                        return eqgf.a;
                     }
                     final LocationAssigningIntentOperation locationAssigningIntentOperation = LocationAssigningIntentOperation.this;
-                    final Location location2 = (Location) eiidVar.c();
-                    final enss a4 = locationAssigningIntentOperation.i.a(location2);
-                    final enss h = fobk.g() ? egmx.f(locationAssigningIntentOperation.f.f()).h(new eiho() { // from class: bejy
-                        @Override // defpackage.eiho
+                    final Location location2 = (Location) ekviVar.c();
+                    final eqgl a4 = locationAssigningIntentOperation.i.a(location2);
+                    final eqgl h = fqte.g() ? ejaa.g(locationAssigningIntentOperation.f.f()).h(new ekut() { // from class: bglk
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj2) {
-                            return Boolean.valueOf(bego.e((dwyw) obj2));
+                            return Boolean.valueOf(bgia.e((dzkw) obj2));
                         }
-                    }, enre.a) : ensj.i(false);
+                    }, eqex.a) : eqgc.i(false);
                     final long j = a2;
-                    egmz h2 = egna.h(a4, h);
-                    enqb enqbVar = new enqb() { // from class: bejk
-                        @Override // defpackage.enqb
-                        public final enss a() {
+                    ejac h2 = ejad.h(a4, h);
+                    eqdu eqduVar = new eqdu() { // from class: bgkw
+                        @Override // defpackage.eqdu
+                        public final eqgl a() {
                             final List list;
                             List arrayList;
-                            final benj benjVar = (benj) ensj.r(a4);
-                            boolean booleanValue = ((Boolean) ensj.r(h)).booleanValue();
+                            final bgov bgovVar = (bgov) eqgc.r(a4);
+                            boolean booleanValue = ((Boolean) eqgc.r(h)).booleanValue();
                             long j2 = j;
                             final LocationAssigningIntentOperation locationAssigningIntentOperation2 = LocationAssigningIntentOperation.this;
-                            if (benjVar == benj.YES || benjVar == benj.UNINITIALIZED) {
-                                benu benuVar = locationAssigningIntentOperation2.d;
-                                eiho eihoVar = new eiho() { // from class: bejx
-                                    @Override // defpackage.eiho
+                            if (bgovVar == bgov.YES || bgovVar == bgov.UNINITIALIZED) {
+                                bgpg bgpgVar = locationAssigningIntentOperation2.d;
+                                ekut ekutVar = new ekut() { // from class: bglj
+                                    @Override // defpackage.ekut
                                     public final Object apply(Object obj2) {
-                                        asot asotVar = LocationAssigningIntentOperation.a;
-                                        return ((bevo) obj2).d() ? ezcx.RECENT_SIGHTING_LOCATION_NOT_IMPROVED : benj.this == benj.YES ? ezcx.DROPPED_NOTABLE_LOCATION : ezcx.DROPPED_NO_NOTABLE_LOCATIONS;
+                                        ausn ausnVar = LocationAssigningIntentOperation.a;
+                                        return ((bgxb) obj2).d() ? fbrm.RECENT_SIGHTING_LOCATION_NOT_IMPROVED : bgov.this == bgov.YES ? fbrm.DROPPED_NOTABLE_LOCATION : fbrm.DROPPED_NO_NOTABLE_LOCATIONS;
                                     }
                                 };
-                                synchronized (benuVar.b) {
-                                    ListIterator listIterator = benuVar.c.listIterator();
+                                synchronized (bgpgVar.b) {
+                                    ListIterator listIterator = bgpgVar.c.listIterator();
                                     while (listIterator.hasNext()) {
-                                        SortedSet sortedSet = ((bent) listIterator.next()).b;
+                                        SortedSet sortedSet = ((bgpf) listIterator.next()).b;
                                         Iterator it = sortedSet.iterator();
                                         while (it.hasNext()) {
-                                            bevo bevoVar = (bevo) it.next();
-                                            if (bevoVar.c.h()) {
+                                            bgxb bgxbVar = (bgxb) it.next();
+                                            if (bgxbVar.c.h()) {
                                                 break;
                                             }
                                             it.remove();
-                                            benuVar.d--;
-                                            benuVar.a.c((ezcx) eihoVar.apply(bevoVar), bevoVar, bevq.b(bevoVar.e, booleanValue));
+                                            bgpgVar.d--;
+                                            bgpgVar.a.c((fbrm) ekutVar.apply(bgxbVar), bgxbVar, bgxd.b(bgxbVar.e, booleanValue));
                                         }
                                         if (sortedSet.isEmpty()) {
                                             listIterator.remove();
@@ -249,24 +249,24 @@ public class LocationAssigningIntentOperation extends IntentOperation {
                                 }
                             }
                             final Location location3 = location2;
-                            if (bfdr.a()) {
-                                benu benuVar2 = locationAssigningIntentOperation2.d;
-                                eiid b = locationAssigningIntentOperation2.b.b();
-                                if (beje.b(location3)) {
-                                    synchronized (benuVar2.b) {
-                                        benuVar2.a(j2, b, booleanValue);
-                                        long b2 = dxaj.b(location3.getElapsedRealtimeNanos());
-                                        long floor = (int) Math.floor((fobr.c() - location3.getAccuracy()) / fobr.b());
+                            if (bhfh.a()) {
+                                bgpg bgpgVar2 = locationAssigningIntentOperation2.d;
+                                ekvi b = locationAssigningIntentOperation2.b.b();
+                                if (bgkq.b(location3)) {
+                                    synchronized (bgpgVar2.b) {
+                                        bgpgVar2.a(j2, b, booleanValue);
+                                        long b2 = dzmj.b(location3.getElapsedRealtimeNanos());
+                                        long floor = (int) Math.floor((fqtl.c() - location3.getAccuracy()) / fqtl.b());
                                         long j3 = b2 - floor;
                                         long j4 = floor + b2;
                                         if (b.h()) {
                                             j3 = Math.min(((Long) b.c()).longValue(), j3);
                                         }
-                                        List list2 = benuVar2.c;
-                                        int binarySearch = Collections.binarySearch(list2, new bent(j3), new Comparator() { // from class: benr
+                                        List list2 = bgpgVar2.c;
+                                        int binarySearch = Collections.binarySearch(list2, new bgpf(j3), new Comparator() { // from class: bgpd
                                             @Override // java.util.Comparator
                                             public final int compare(Object obj2, Object obj3) {
-                                                return Long.compare(((bent) obj2).a, ((bent) obj3).a);
+                                                return Long.compare(((bgpf) obj2).a, ((bgpf) obj3).a);
                                             }
                                         });
                                         if (binarySearch < 0) {
@@ -275,260 +275,260 @@ public class LocationAssigningIntentOperation extends IntentOperation {
                                         ListIterator listIterator2 = list2.listIterator(binarySearch);
                                         arrayList = new ArrayList();
                                         while (listIterator2.hasNext()) {
-                                            bent bentVar = (bent) listIterator2.next();
-                                            long j5 = bentVar.a;
+                                            bgpf bgpfVar = (bgpf) listIterator2.next();
+                                            long j5 = bgpfVar.a;
                                             if (j5 > j4) {
                                                 break;
                                             }
-                                            double a5 = (!b.h() || ((Long) b.c()).longValue() > j5 || j5 > b2) ? beje.a(location3, j5) : location3.getAccuracy();
-                                            Iterator it2 = bentVar.b.iterator();
+                                            double a5 = (!b.h() || ((Long) b.c()).longValue() > j5 || j5 > b2) ? bgkq.a(location3, j5) : location3.getAccuracy();
+                                            Iterator it2 = bgpfVar.b.iterator();
                                             while (it2.hasNext()) {
-                                                bevo bevoVar2 = (bevo) it2.next();
+                                                bgxb bgxbVar2 = (bgxb) it2.next();
                                                 long j6 = b2;
-                                                double d = bevoVar2.i;
-                                                if (d != 0.0d && d <= a5 + fobr.a.a().e()) {
-                                                    bevoVar2.c();
+                                                double d = bgxbVar2.i;
+                                                if (d != 0.0d && d <= a5 + fqtl.a.lK().e()) {
+                                                    bgxbVar2.c();
                                                     b2 = j6;
                                                 }
                                                 it2.remove();
-                                                benuVar2.d--;
-                                                bevn bevnVar = new bevn(bevoVar2);
-                                                bevnVar.d(a5);
-                                                bevo a6 = bevnVar.a();
+                                                bgpgVar2.d--;
+                                                bgxa bgxaVar = new bgxa(bgxbVar2);
+                                                bgxaVar.d(a5);
+                                                bgxb a6 = bgxaVar.a();
                                                 arrayList.add(a6);
-                                                benuVar2.a.c(bevoVar2.d() ? ezcx.REASSIGNED_LOCATION_POST_REPORTING : ezcx.ASSIGNED_LOCATION_POST_REPORTING, a6, bevq.b(bevoVar2.e, booleanValue));
+                                                bgpgVar2.a.c(bgxbVar2.d() ? fbrm.REASSIGNED_LOCATION_POST_REPORTING : fbrm.ASSIGNED_LOCATION_POST_REPORTING, a6, bgxd.b(bgxbVar2.e, booleanValue));
                                                 b2 = j6;
-                                                benuVar2 = benuVar2;
+                                                bgpgVar2 = bgpgVar2;
                                             }
                                         }
                                     }
                                     list = arrayList;
                                 } else {
-                                    int i3 = eitj.d;
-                                    list = ejcb.a;
+                                    int i3 = elgo.d;
+                                    list = elpg.a;
                                 }
                             } else {
-                                int i4 = eitj.d;
-                                list = ejcb.a;
+                                int i4 = elgo.d;
+                                list = elpg.a;
                             }
-                            eivv.s(eivv.j(list, new eiho() { // from class: bejn
-                                @Override // defpackage.eiho
+                            elja.s(elja.j(list, new ekut() { // from class: bgkz
+                                @Override // defpackage.ekut
                                 public final Object apply(Object obj2) {
-                                    return ((bevo) obj2).c();
+                                    return ((bgxb) obj2).c();
                                 }
                             }));
-                            egmx f = egmx.f(locationAssigningIntentOperation2.f.f());
-                            enqc enqcVar = new enqc() { // from class: bejj
-                                @Override // defpackage.enqc
-                                public final enss a(Object obj2) {
-                                    final eitj eitjVar;
-                                    enss i5;
-                                    final dwyw dwywVar = (dwyw) obj2;
-                                    if (!bego.i(dwywVar)) {
-                                        int i6 = eitj.d;
-                                        return ensj.i(ejcb.a);
+                            ejaa g = ejaa.g(locationAssigningIntentOperation2.f.f());
+                            eqdv eqdvVar = new eqdv() { // from class: bgkv
+                                @Override // defpackage.eqdv
+                                public final eqgl a(Object obj2) {
+                                    final elgo elgoVar;
+                                    eqgl i5;
+                                    final dzkw dzkwVar = (dzkw) obj2;
+                                    if (!bgia.i(dzkwVar)) {
+                                        int i6 = elgo.d;
+                                        return eqgc.i(elpg.a);
                                     }
                                     Location location4 = location3;
                                     final LocationAssigningIntentOperation locationAssigningIntentOperation3 = LocationAssigningIntentOperation.this;
-                                    final long b3 = dxaj.b(location4.getElapsedRealtimeNanos());
-                                    final long a7 = dxaj.a(location4.getTime());
+                                    final long b3 = dzmj.b(location4.getElapsedRealtimeNanos());
+                                    final long a7 = dzmj.a(location4.getTime());
                                     final double accuracy = location4.getAccuracy();
-                                    if (fobb.h()) {
-                                        dwxc dwxcVar = dwywVar.j;
-                                        if (dwxcVar == null) {
-                                            dwxcVar = dwxc.a;
+                                    if (fqsv.h()) {
+                                        dzjc dzjcVar = dzkwVar.j;
+                                        if (dzjcVar == null) {
+                                            dzjcVar = dzjc.a;
                                         }
-                                        if ((dwxcVar.b & 4) != 0) {
-                                            dwxc dwxcVar2 = dwywVar.j;
-                                            if (((dwxcVar2 == null ? dwxc.a : dwxcVar2).b & 2) != 0) {
+                                        if ((dzjcVar.b & 4) != 0) {
+                                            dzjc dzjcVar2 = dzkwVar.j;
+                                            if (((dzjcVar2 == null ? dzjc.a : dzjcVar2).b & 2) != 0) {
                                                 try {
                                                     Context context = locationAssigningIntentOperation3.l;
-                                                    if (dwxcVar2 == null) {
-                                                        dwxcVar2 = dwxc.a;
+                                                    if (dzjcVar2 == null) {
+                                                        dzjcVar2 = dzjc.a;
                                                     }
-                                                    eiid b4 = bfdq.b(context, dwxcVar2.e);
+                                                    ekvi b4 = bhfg.b(context, dzjcVar2.e);
                                                     if (b4.h()) {
-                                                        bqqa.a(aseu.FIND_MY_DEVICE_SELF_SIGHTING_REPORT);
-                                                        ezda ezdaVar = ezda.SELF_REPORTING;
-                                                        LocationAssigningIntentOperation.a(ezdaVar, dwywVar, 1);
-                                                        dwxc dwxcVar3 = dwywVar.j;
-                                                        if (dwxcVar3 == null) {
-                                                            dwxcVar3 = dwxc.a;
+                                                        bsxr.a(auio.FIND_MY_DEVICE_SELF_SIGHTING_REPORT);
+                                                        fbrp fbrpVar = fbrp.SELF_REPORTING;
+                                                        LocationAssigningIntentOperation.a(fbrpVar, dzkwVar, 1);
+                                                        dzjc dzjcVar3 = dzkwVar.j;
+                                                        if (dzjcVar3 == null) {
+                                                            dzjcVar3 = dzjc.a;
                                                         }
-                                                        eufn eufnVar = dwxcVar3.d;
-                                                        if (eufnVar == null) {
-                                                            eufnVar = eufn.a;
+                                                        ewvg ewvgVar = dzjcVar3.d;
+                                                        if (ewvgVar == null) {
+                                                            ewvgVar = ewvg.a;
                                                         }
                                                         Object c2 = b4.c();
-                                                        bevn a8 = bevo.a();
-                                                        a8.c(feay.b);
-                                                        a8.b(dwva.COMPONENTLESS);
+                                                        bgxa a8 = bgxb.a();
+                                                        a8.c(fgpr.b);
+                                                        a8.b(dzha.COMPONENTLESS);
                                                         a8.e(true);
-                                                        a8.a = eiid.j(eufnVar);
-                                                        a8.b = eiid.j(c2);
+                                                        a8.a = ekvi.j(ewvgVar);
+                                                        a8.b = ekvi.j(c2);
                                                         a8.g(b3);
                                                         a8.h(a7);
                                                         a8.d(accuracy);
-                                                        a8.i(ezdaVar);
-                                                        eitjVar = eitj.l(a8.a());
+                                                        a8.i(fbrpVar);
+                                                        elgoVar = elgo.l(a8.a());
                                                     } else {
-                                                        ((ejhf) ((ejhf) LocationAssigningIntentOperation.a.j()).ah(4234)).x("Cannot find owner account for a self location report, skipping the report.");
-                                                        int i7 = eitj.d;
-                                                        eitjVar = ejcb.a;
+                                                        ((eluo) ((eluo) LocationAssigningIntentOperation.a.j()).ai(4240)).x("Cannot find owner account for a self location report, skipping the report.");
+                                                        int i7 = elgo.d;
+                                                        elgoVar = elpg.a;
                                                     }
-                                                } catch (IOException | unx unused) {
-                                                    ((ejhf) ((ejhf) LocationAssigningIntentOperation.a.j()).ah((char) 4233)).x("Error getting owner account for a self location report, skipping the report.");
-                                                    int i8 = eitj.d;
-                                                    eitjVar = ejcb.a;
+                                                } catch (IOException | wjw unused) {
+                                                    ((eluo) ((eluo) LocationAssigningIntentOperation.a.j()).ai((char) 4239)).x("Error getting owner account for a self location report, skipping the report.");
+                                                    int i8 = elgo.d;
+                                                    elgoVar = elpg.a;
                                                 }
-                                                if (fobb.f() || !fobb.a.a().m()) {
-                                                    i5 = ensj.i(ejcb.a);
+                                                if (fqsv.f() || !fqsv.a.lK().m()) {
+                                                    i5 = eqgc.i(elpg.a);
                                                 } else {
-                                                    beiq beiqVar = (beiq) locationAssigningIntentOperation3.j.a();
-                                                    if (beiqVar.b.getAndSet(false)) {
-                                                        eius eiusVar = new eius();
-                                                        exfg exfgVar = beiqVar.a;
-                                                        eiusVar.k(exfgVar.g(2));
-                                                        eiusVar.k(exfgVar.g(1));
-                                                        beiqVar.c = eiusVar.g();
+                                                    bgkc bgkcVar = (bgkc) locationAssigningIntentOperation3.j.a();
+                                                    if (bgkcVar.b.getAndSet(false)) {
+                                                        elhx elhxVar = new elhx();
+                                                        eztp eztpVar = bgkcVar.a;
+                                                        elhxVar.k(eztpVar.g(2));
+                                                        elhxVar.k(eztpVar.g(1));
+                                                        bgkcVar.c = elhxVar.g();
                                                     }
-                                                    eirn l = eirn.j(beiqVar.c).l(new eiho() { // from class: bejg
-                                                        @Override // defpackage.eiho
+                                                    eles l = eles.j(bgkcVar.c).l(new ekut() { // from class: bgks
+                                                        @Override // defpackage.ekut
                                                         public final Object apply(Object obj3) {
                                                             return ((BluetoothDevice) obj3).getAddress();
                                                         }
                                                     });
-                                                    final dwvc dwvcVar = (dwvc) locationAssigningIntentOperation3.h.a();
-                                                    Objects.requireNonNull(dwvcVar);
-                                                    i5 = egna.f(l.l(new eiho() { // from class: bejh
-                                                        @Override // defpackage.eiho
+                                                    final dzhc dzhcVar = (dzhc) locationAssigningIntentOperation3.h.a();
+                                                    Objects.requireNonNull(dzhcVar);
+                                                    i5 = ejad.f(l.l(new ekut() { // from class: bgkt
+                                                        @Override // defpackage.ekut
                                                         public final Object apply(Object obj3) {
-                                                            return dwvc.this.k((String) obj3);
+                                                            return dzhc.this.k((String) obj3);
                                                         }
-                                                    })).h(new eiho() { // from class: beji
-                                                        @Override // defpackage.eiho
+                                                    })).h(new ekut() { // from class: bgku
+                                                        @Override // defpackage.ekut
                                                         public final Object apply(Object obj3) {
-                                                            eirn i9 = eirn.j((List) obj3).i(new eiih() { // from class: bejs
-                                                                @Override // defpackage.eiih
+                                                            eles i9 = eles.j((List) obj3).i(new ekvm() { // from class: bgle
+                                                                @Override // defpackage.ekvm
                                                                 public final boolean a(Object obj4) {
-                                                                    eiid eiidVar2 = (eiid) obj4;
-                                                                    asot asotVar = LocationAssigningIntentOperation.a;
-                                                                    return eiidVar2 != null && eiidVar2.h();
+                                                                    ekvi ekviVar2 = (ekvi) obj4;
+                                                                    ausn ausnVar = LocationAssigningIntentOperation.a;
+                                                                    return ekviVar2 != null && ekviVar2.h();
                                                                 }
-                                                            }).l(new eiho() { // from class: bejt
-                                                                @Override // defpackage.eiho
+                                                            }).l(new ekut() { // from class: bglf
+                                                                @Override // defpackage.ekut
                                                                 public final Object apply(Object obj4) {
-                                                                    return (dwvb) ((eiid) obj4).c();
+                                                                    return (dzhb) ((ekvi) obj4).c();
                                                                 }
-                                                            }).i(new eiih() { // from class: beju
-                                                                @Override // defpackage.eiih
+                                                            }).i(new ekvm() { // from class: bglg
+                                                                @Override // defpackage.ekvm
                                                                 public final boolean a(Object obj4) {
-                                                                    asot asotVar = LocationAssigningIntentOperation.a;
-                                                                    return !((dwvb) obj4).c;
+                                                                    ausn ausnVar = LocationAssigningIntentOperation.a;
+                                                                    return !((dzhb) obj4).c;
                                                                 }
                                                             });
                                                             final long j7 = b3;
                                                             final long j8 = a7;
                                                             final double d2 = accuracy;
-                                                            eirn l2 = i9.l(new eiho() { // from class: bejv
-                                                                @Override // defpackage.eiho
+                                                            eles l2 = i9.l(new ekut() { // from class: bglh
+                                                                @Override // defpackage.ekut
                                                                 public final Object apply(Object obj4) {
-                                                                    dwvb dwvbVar = (dwvb) obj4;
-                                                                    eufn eufnVar2 = dwvbVar.a;
-                                                                    asot asotVar = LocationAssigningIntentOperation.a;
-                                                                    return bevo.b(eufnVar2, eigb.a, dwva.COMPONENTLESS, dwvbVar.b, j7, j8, d2, ezda.CONNECTED_DEVICE_REPORTING);
+                                                                    dzhb dzhbVar = (dzhb) obj4;
+                                                                    ewvg ewvgVar2 = dzhbVar.a;
+                                                                    ausn ausnVar = LocationAssigningIntentOperation.a;
+                                                                    return bgxb.b(ewvgVar2, ektg.a, dzha.COMPONENTLESS, dzhbVar.b, j7, j8, d2, fbrp.CONNECTED_DEVICE_REPORTING);
                                                                 }
                                                             });
-                                                            if (!eivv.x(l2)) {
-                                                                dwyw dwywVar2 = dwywVar;
-                                                                bqqa.a(aseu.FIND_MY_DEVICE_CONNECTED_DEVICE_SIGHTINGS_REPORT);
-                                                                LocationAssigningIntentOperation.a(ezda.CONNECTED_DEVICE_REPORTING, dwywVar2, eivv.b(l2));
+                                                            if (!elja.x(l2)) {
+                                                                dzkw dzkwVar2 = dzkwVar;
+                                                                bsxr.a(auio.FIND_MY_DEVICE_CONNECTED_DEVICE_SIGHTINGS_REPORT);
+                                                                LocationAssigningIntentOperation.a(fbrp.CONNECTED_DEVICE_REPORTING, dzkwVar2, elja.b(l2));
                                                             }
                                                             return l2;
                                                         }
-                                                    }, enre.a);
+                                                    }, eqex.a);
                                                 }
-                                                return egmx.f(i5).h(new eiho() { // from class: bejr
-                                                    @Override // defpackage.eiho
+                                                return ejaa.g(i5).h(new ekut() { // from class: bgld
+                                                    @Override // defpackage.ekut
                                                     public final Object apply(Object obj3) {
-                                                        asot asotVar = LocationAssigningIntentOperation.a;
-                                                        return eirn.f(eitj.this, (Iterable) obj3);
+                                                        ausn ausnVar = LocationAssigningIntentOperation.a;
+                                                        return eles.f(elgo.this, (Iterable) obj3);
                                                     }
-                                                }, enre.a);
+                                                }, eqex.a);
                                             }
                                         }
                                     }
-                                    ((ejhf) ((ejhf) LocationAssigningIntentOperation.a.h()).ah((char) 4232)).x("Incoming location but device is not provisioned, stopping self location fetcher.");
+                                    ((eluo) ((eluo) LocationAssigningIntentOperation.a.h()).ai((char) 4238)).x("Incoming location but device is not provisioned, stopping self location fetcher.");
                                     locationAssigningIntentOperation3.g.b();
-                                    int i9 = eitj.d;
-                                    eitjVar = ejcb.a;
-                                    if (fobb.f()) {
+                                    int i9 = elgo.d;
+                                    elgoVar = elpg.a;
+                                    if (fqsv.f()) {
                                     }
-                                    i5 = ensj.i(ejcb.a);
-                                    return egmx.f(i5).h(new eiho() { // from class: bejr
-                                        @Override // defpackage.eiho
+                                    i5 = eqgc.i(elpg.a);
+                                    return ejaa.g(i5).h(new ekut() { // from class: bgld
+                                        @Override // defpackage.ekut
                                         public final Object apply(Object obj3) {
-                                            asot asotVar = LocationAssigningIntentOperation.a;
-                                            return eirn.f(eitj.this, (Iterable) obj3);
+                                            ausn ausnVar = LocationAssigningIntentOperation.a;
+                                            return eles.f(elgo.this, (Iterable) obj3);
                                         }
-                                    }, enre.a);
+                                    }, eqex.a);
                                 }
                             };
                             Executor executor = locationAssigningIntentOperation2.k;
-                            return egnc.k(egmx.f(f.i(enqcVar, executor)).h(new eiho() { // from class: bejo
-                                @Override // defpackage.eiho
+                            return ejaf.k(ejaa.g(g.i(eqdvVar, executor)).h(new ekut() { // from class: bgla
+                                @Override // defpackage.ekut
                                 public final Object apply(Object obj2) {
-                                    asot asotVar = LocationAssigningIntentOperation.a;
-                                    return eirn.f(list, (Iterable) obj2);
+                                    ausn ausnVar = LocationAssigningIntentOperation.a;
+                                    return eles.f(list, (Iterable) obj2);
                                 }
-                            }, enre.a), new enqc() { // from class: bejp
-                                @Override // defpackage.enqc
-                                public final enss a(Object obj2) {
+                            }, eqex.a), new eqdv() { // from class: bglb
+                                @Override // defpackage.eqdv
+                                public final eqgl a(Object obj2) {
                                     Iterable iterable = (Iterable) obj2;
-                                    if (eivv.x(iterable)) {
-                                        return ensm.a;
+                                    if (elja.x(iterable)) {
+                                        return eqgf.a;
                                     }
                                     Location location4 = location3;
                                     LocationAssigningIntentOperation locationAssigningIntentOperation3 = LocationAssigningIntentOperation.this;
-                                    return locationAssigningIntentOperation3.c.c(new beuo(iterable, location4, eigb.a));
+                                    return locationAssigningIntentOperation3.c.c(new bgwb(iterable, location4, ektg.a));
                                 }
                             }, executor);
                         }
                     };
                     Executor executor = locationAssigningIntentOperation.k;
-                    return h2.b(enqbVar, executor).e(Throwable.class, new enqc() { // from class: bejl
-                        @Override // defpackage.enqc
-                        public final enss a(Object obj2) {
+                    return h2.b(eqduVar, executor).f(Throwable.class, new eqdv() { // from class: bgkx
+                        @Override // defpackage.eqdv
+                        public final eqgl a(Object obj2) {
                             Throwable th = (Throwable) obj2;
-                            asot asotVar = LocationAssigningIntentOperation.a;
+                            ausn ausnVar = LocationAssigningIntentOperation.a;
                             if (th instanceof InterruptedException) {
-                                return ensj.h(th);
+                                return eqgc.h(th);
                             }
-                            ((ejhf) ((ejhf) LocationAssigningIntentOperation.a.j()).ah((char) 4236)).x("Error aggregating sightings.");
-                            return ensm.a;
+                            ((eluo) ((eluo) LocationAssigningIntentOperation.a.j()).ai((char) 4242)).x("Error aggregating sightings.");
+                            return eqgf.a;
                         }
-                    }, enre.a).i(new enqc() { // from class: bejm
-                        @Override // defpackage.enqc
-                        public final enss a(Object obj2) {
+                    }, eqex.a).i(new eqdv() { // from class: bgky
+                        @Override // defpackage.eqdv
+                        public final eqgl a(Object obj2) {
                             int i3;
                             LocationAssigningIntentOperation locationAssigningIntentOperation2 = LocationAssigningIntentOperation.this;
-                            benu benuVar = locationAssigningIntentOperation2.d;
-                            synchronized (benuVar.b) {
-                                i3 = benuVar.d;
+                            bgpg bgpgVar = locationAssigningIntentOperation2.d;
+                            synchronized (bgpgVar.b) {
+                                i3 = bgpgVar.d;
                             }
                             if (i3 == 0) {
-                                belx belxVar = locationAssigningIntentOperation2.e;
-                                synchronized (belxVar.b) {
-                                    if (belxVar.c()) {
-                                        PendingIntent a5 = beiz.a(belxVar.g, "NoPowerSightingsLocationUpdate");
+                                bgnj bgnjVar = locationAssigningIntentOperation2.e;
+                                synchronized (bgnjVar.b) {
+                                    if (bgnjVar.c()) {
+                                        PendingIntent a5 = bgkl.a(bgnjVar.g, "NoPowerSightingsLocationUpdate");
                                         if (a5 != null) {
-                                            belxVar.f.d(a5);
-                                            belxVar.d = eigb.a;
+                                            bgnjVar.f.d(a5);
+                                            bgnjVar.d = ektg.a;
                                         }
                                     }
                                 }
                             }
-                            return ensm.a;
+                            return eqgf.a;
                         }
                     }, executor);
                 }
@@ -536,19 +536,19 @@ public class LocationAssigningIntentOperation extends IntentOperation {
         }
     }
 
-    public LocationAssigningIntentOperation(belh belhVar) {
-        this.b = belhVar.m();
-        this.c = belhVar.v();
-        this.d = belhVar.s();
-        this.e = belhVar.p();
-        this.f = belhVar.F();
-        this.g = belhVar.t();
-        this.h = belhVar.O();
-        this.i = belhVar.r();
-        this.j = belhVar.N();
-        this.m = belhVar.X();
-        this.n = belhVar.C();
-        this.k = belhVar.G();
-        this.l = belhVar.c();
+    public LocationAssigningIntentOperation(bgmt bgmtVar) {
+        this.b = bgmtVar.m();
+        this.c = bgmtVar.v();
+        this.d = bgmtVar.s();
+        this.e = bgmtVar.p();
+        this.f = bgmtVar.F();
+        this.g = bgmtVar.t();
+        this.h = bgmtVar.O();
+        this.i = bgmtVar.r();
+        this.j = bgmtVar.N();
+        this.m = bgmtVar.X();
+        this.n = bgmtVar.C();
+        this.k = bgmtVar.G();
+        this.l = bgmtVar.c();
     }
 }

@@ -1,29 +1,18 @@
 package com.google.android.gms.org.conscrypt;
 
 import com.google.android.gms.org.conscrypt.NativeRef;
-import java.io.ByteArrayOutputStream;
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.SignatureException;
 import java.security.SignatureSpi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class OpenSslSignatureEdDsa extends SignatureSpi {
-    private final Buffer buffer = new Buffer();
+    private final ExposedByteArrayOutputStream buffer = new ExposedByteArrayOutputStream();
     private NativeRef.EVP_MD_CTX ctx;
     private OpenSSLKey key;
-
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-    final class Buffer extends ByteArrayOutputStream {
-        public byte[] array() {
-            return this.buf;
-        }
-
-        private Buffer() {
-        }
-    }
 
     private static OpenSSLKey verifyKey(OpenSSLKey openSSLKey) {
         if (NativeCrypto.EVP_PKEY_type(openSSLKey.getNativeRef()) == 949) {
@@ -63,8 +52,8 @@ public class OpenSslSignatureEdDsa extends SignatureSpi {
         if (this.key == null) {
             throw new SignatureException("No key provided");
         }
-        Buffer buffer = this.buffer;
-        byte[] EVP_DigestSign = NativeCrypto.EVP_DigestSign(evp_md_ctx, buffer.array(), 0, buffer.size());
+        ExposedByteArrayOutputStream exposedByteArrayOutputStream = this.buffer;
+        byte[] EVP_DigestSign = NativeCrypto.EVP_DigestSign(evp_md_ctx, exposedByteArrayOutputStream.array(), 0, exposedByteArrayOutputStream.size());
         this.buffer.reset();
         return EVP_DigestSign;
     }
@@ -81,8 +70,8 @@ public class OpenSslSignatureEdDsa extends SignatureSpi {
             throw new SignatureException("No key provided");
         }
         int length = bArr.length;
-        Buffer buffer = this.buffer;
-        boolean EVP_DigestVerify = NativeCrypto.EVP_DigestVerify(evp_md_ctx, bArr, 0, length, buffer.array(), 0, buffer.size());
+        ExposedByteArrayOutputStream exposedByteArrayOutputStream = this.buffer;
+        boolean EVP_DigestVerify = NativeCrypto.EVP_DigestVerify(evp_md_ctx, bArr, 0, length, exposedByteArrayOutputStream.array(), 0, exposedByteArrayOutputStream.size());
         this.buffer.reset();
         return EVP_DigestVerify;
     }

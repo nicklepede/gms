@@ -14,16 +14,16 @@ import android.os.SystemClock;
 import android.system.Os;
 import com.google.android.gms.carsetup.setup.UsbConnectionHelper$TrackedParcelFileDescriptor;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.akzg;
-import defpackage.alcl;
-import defpackage.alxw;
-import defpackage.alxx;
-import defpackage.duur;
-import defpackage.duus;
-import defpackage.eiig;
-import defpackage.eijr;
-import defpackage.eikf;
-import defpackage.elwq;
+import defpackage.anar;
+import defpackage.andw;
+import defpackage.anzh;
+import defpackage.anzi;
+import defpackage.dxfn;
+import defpackage.dxfo;
+import defpackage.ekvl;
+import defpackage.ekww;
+import defpackage.ekxk;
+import defpackage.eoke;
 import j$.util.DesugarCollections;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -32,7 +32,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class UsbConnectionHelper$TrackedParcelFileDescriptor extends ParcelFileDescriptor {
     public static DisconnectWatcher e;
@@ -47,13 +47,13 @@ public class UsbConnectionHelper$TrackedParcelFileDescriptor extends ParcelFileD
     public static final AtomicInteger c = new AtomicInteger(0);
     public static final Object d = new Object();
     private static final AtomicInteger l = new AtomicInteger(0);
-    static final eijr j = new eijr() { // from class: alxs
-        @Override // defpackage.eijr
-        public final Object a() {
+    static final ekww j = new ekww() { // from class: anzd
+        @Override // defpackage.ekww
+        public final Object lK() {
             boolean z;
-            eiig.y(UsbConnectionHelper$TrackedParcelFileDescriptor.h, "Application context is null");
+            ekvl.z(UsbConnectionHelper$TrackedParcelFileDescriptor.h, "Application context is null");
             UsbManager usbManager = (UsbManager) UsbConnectionHelper$TrackedParcelFileDescriptor.h.getSystemService("usb");
-            eiig.y(usbManager, "UsbManager is null");
+            ekvl.z(usbManager, "UsbManager is null");
             Iterator it = usbManager.getPorts().iterator();
             while (true) {
                 if (!it.hasNext()) {
@@ -69,16 +69,16 @@ public class UsbConnectionHelper$TrackedParcelFileDescriptor extends ParcelFileD
             return Boolean.valueOf(z);
         }
     };
-    public static final Parcelable.Creator CREATOR = new alxw();
+    public static final Parcelable.Creator CREATOR = new anzh();
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class DisconnectWatcher extends TracingBroadcastReceiver {
         public DisconnectWatcher(Context context) {
             super(context);
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             boolean z = false;
             boolean booleanExtra = intent.getBooleanExtra("connected", false);
             boolean booleanExtra2 = intent.getBooleanExtra("configured", false);
@@ -88,17 +88,17 @@ public class UsbConnectionHelper$TrackedParcelFileDescriptor extends ParcelFileD
             } else if (booleanExtra3) {
                 return;
             }
-            if (UsbConnectionHelper$TrackedParcelFileDescriptor.i == 0 || SystemClock.elapsedRealtime() - UsbConnectionHelper$TrackedParcelFileDescriptor.i >= 2000 || !((Boolean) UsbConnectionHelper$TrackedParcelFileDescriptor.j.a()).booleanValue()) {
+            if (UsbConnectionHelper$TrackedParcelFileDescriptor.i == 0 || SystemClock.elapsedRealtime() - UsbConnectionHelper$TrackedParcelFileDescriptor.i >= 2000 || !((Boolean) UsbConnectionHelper$TrackedParcelFileDescriptor.j.lK()).booleanValue()) {
                 List list = UsbConnectionHelper$TrackedParcelFileDescriptor.a;
                 synchronized (list) {
                     if (!list.isEmpty()) {
-                        alxx.a.h().ah(2921).U("Closing %s FDs due to USB disconnect (connected=%s, configured=%s, accessory=%s)", new duur(list.size()), new duus(booleanExtra), new duus(booleanExtra2), new duus(z));
+                        anzi.a.h().ai(2925).U("Closing %s FDs due to USB disconnect (connected=%s, configured=%s, accessory=%s)", new dxfn(list.size()), new dxfo(booleanExtra), new dxfo(booleanExtra2), new dxfo(z));
                     }
                 }
                 try {
                     UsbConnectionHelper$TrackedParcelFileDescriptor.a();
                 } catch (IOException e) {
-                    throw new eikf(e);
+                    throw new ekxk(e);
                 }
             }
         }
@@ -124,16 +124,16 @@ public class UsbConnectionHelper$TrackedParcelFileDescriptor extends ParcelFileD
 
     private final void b() {
         if (this.m.compareAndSet(false, true)) {
-            eiig.y(h, "Application context is null");
-            alcl.h(h, elwq.USB_FD_CLOSED);
+            ekvl.z(h, "Application context is null");
+            andw.h(h, eoke.USB_FD_CLOSED);
             super.close();
         }
     }
 
     @Override // android.os.ParcelFileDescriptor, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
-        if (akzg.a()) {
-            akzg.b();
+        if (anar.a()) {
+            anar.b();
             throw null;
         }
         b();
@@ -152,10 +152,10 @@ public class UsbConnectionHelper$TrackedParcelFileDescriptor extends ParcelFileD
 
     @Override // android.os.ParcelFileDescriptor
     public final ParcelFileDescriptor dup() {
-        eiig.y(h, "Application context is null");
+        ekvl.z(h, "Application context is null");
         UsbConnectionHelper$TrackedParcelFileDescriptor usbConnectionHelper$TrackedParcelFileDescriptor = new UsbConnectionHelper$TrackedParcelFileDescriptor(super.dup());
         a.add(usbConnectionHelper$TrackedParcelFileDescriptor);
-        alcl.h(h, elwq.USB_FD_DUP);
+        andw.h(h, eoke.USB_FD_DUP);
         return usbConnectionHelper$TrackedParcelFileDescriptor;
     }
 

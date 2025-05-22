@@ -8,12 +8,12 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.messages.ble.BleFilter;
 import com.google.android.gms.nearby.messages.devices.NearbyDeviceFilter;
 import com.google.android.gms.nearby.messages.internal.MessageType;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.cjzi;
-import defpackage.cjzj;
-import defpackage.ckbw;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cmhn;
+import defpackage.cmho;
+import defpackage.cmkb;
 import j$.util.DesugarCollections;
 import java.util.Arrays;
 import java.util.Collections;
@@ -21,10 +21,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MessageFilter extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjzj();
+    public static final Parcelable.Creator CREATOR = new cmho();
     public static final MessageFilter a;
     final int b;
     public final List c;
@@ -34,14 +34,14 @@ public class MessageFilter extends AbstractSafeParcelable {
     public final int g;
 
     static {
-        cjzi cjziVar = new cjzi();
-        cjziVar.a = true;
-        a = cjziVar.a();
+        cmhn cmhnVar = new cmhn();
+        cmhnVar.a = true;
+        a = cmhnVar.a();
     }
 
     public MessageFilter(int i, List list, List list2, boolean z, List list3, int i2) {
         this.b = i;
-        arwm.s(list);
+        atzb.s(list);
         this.c = DesugarCollections.unmodifiableList(list);
         this.e = z;
         this.d = DesugarCollections.unmodifiableList(list2 == null ? Collections.EMPTY_LIST : list2);
@@ -95,9 +95,9 @@ public class MessageFilter extends AbstractSafeParcelable {
             if ("__reserved_namespace".equals(message.d)) {
                 String str = message.c;
                 if ("__ble_record".equals(str)) {
-                    int i2 = ckbw.d;
-                    arwm.c(message.d("__ble_record"), "Message type '" + str + "' is not Message.MESSAGE_TYPE_BLE_RECORD.");
-                    ckbw a2 = ckbw.a(message.b);
+                    int i2 = cmkb.d;
+                    atzb.c(message.d("__ble_record"), "Message type '" + str + "' is not Message.MESSAGE_TYPE_BLE_RECORD.");
+                    cmkb a2 = cmkb.a(message.b);
                     if (a2 == null) {
                         continue;
                     } else {
@@ -144,7 +144,7 @@ public class MessageFilter extends AbstractSafeParcelable {
             return false;
         }
         MessageFilter messageFilter = (MessageFilter) obj;
-        return this.e == messageFilter.e && arwb.b(this.c, messageFilter.c) && arwb.b(this.d, messageFilter.d) && arwb.b(this.f, messageFilter.f);
+        return this.e == messageFilter.e && atyq.b(this.c, messageFilter.c) && atyq.b(this.d, messageFilter.d) && atyq.b(this.f, messageFilter.f);
     }
 
     public final int hashCode() {
@@ -158,13 +158,13 @@ public class MessageFilter extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.c;
-        int a2 = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.y(parcel, 2, this.d, false);
-        arxc.e(parcel, 3, this.e);
-        arxc.y(parcel, 4, this.f, false);
-        arxc.o(parcel, 5, this.g);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.b);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.y(parcel, 2, this.d, false);
+        atzr.e(parcel, 3, this.e);
+        atzr.y(parcel, 4, this.f, false);
+        atzr.o(parcel, 5, this.g);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.b);
+        atzr.c(parcel, a2);
     }
 }

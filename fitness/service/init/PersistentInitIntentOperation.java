@@ -3,31 +3,31 @@ package com.google.android.gms.fitness.service.init;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.bggg;
-import defpackage.bggi;
-import defpackage.bgrw;
-import defpackage.bgzx;
-import defpackage.bhaf;
+import defpackage.bikw;
+import defpackage.biky;
+import defpackage.biwm;
+import defpackage.bjen;
+import defpackage.bjev;
 import java.util.HashSet;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PersistentInitIntentOperation extends IntentOperation {
     static {
-        bhaf.a();
+        bjev.a();
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Context applicationContext = getApplicationContext();
-        bggi a = bggg.a(applicationContext);
-        int i = bgrw.a;
-        HashSet<String> hashSet = new HashSet(bggg.a(applicationContext).e().d());
+        biky a = bikw.a(applicationContext);
+        int i = biwm.a;
+        HashSet<String> hashSet = new HashSet(bikw.a(applicationContext).e().d());
         hashSet.remove("none");
         hashSet.remove("local_no_account");
         for (String str : hashSet) {
-            if (bgrw.a(a.p(str), a.q(str), str)) {
-                bgzx.b(applicationContext, str);
+            if (biwm.a(a.p(str), a.q(str), str)) {
+                bjen.b(applicationContext, str);
             }
         }
     }

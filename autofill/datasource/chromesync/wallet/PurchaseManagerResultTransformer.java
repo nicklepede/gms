@@ -6,47 +6,47 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.autofill.data.DataIntent$ResultTransformer;
 import com.google.android.gms.autofill.data.PaymentCard;
-import defpackage.adtp;
-import defpackage.adts;
-import defpackage.adtu;
-import defpackage.adtv;
-import defpackage.adtw;
-import defpackage.aebo;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.ehiw;
-import defpackage.eiid;
-import defpackage.ejhf;
-import defpackage.faow;
-import defpackage.faox;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
+import defpackage.aftw;
+import defpackage.aftz;
+import defpackage.afub;
+import defpackage.afuc;
+import defpackage.afud;
+import defpackage.agbf;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.ejwc;
+import defpackage.ekvi;
+import defpackage.eluo;
+import defpackage.fddl;
+import defpackage.fddm;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
 import j$.time.YearMonth;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class PurchaseManagerResultTransformer implements DataIntent$ResultTransformer {
     final String b;
     final YearMonth c;
     final int d;
-    final adtp e;
-    final eiid f;
-    final eiid g;
+    final aftw e;
+    final ekvi f;
+    final ekvi g;
     final int h;
-    public static final asot a = asot.b("PurchaseManagerResultTransformer", asej.AUTOFILL);
-    public static final Parcelable.Creator CREATOR = new aebo();
+    public static final ausn a = ausn.b("PurchaseManagerResultTransformer", auid.AUTOFILL);
+    public static final Parcelable.Creator CREATOR = new agbf();
 
-    public PurchaseManagerResultTransformer(String str, YearMonth yearMonth, adtp adtpVar, int i, int i2, eiid eiidVar, eiid eiidVar2) {
+    public PurchaseManagerResultTransformer(String str, YearMonth yearMonth, aftw aftwVar, int i, int i2, ekvi ekviVar, ekvi ekviVar2) {
         this.b = str;
         this.c = yearMonth;
-        this.e = adtpVar;
+        this.e = aftwVar;
         this.d = i;
         this.h = i2;
-        this.f = eiidVar;
-        this.g = eiidVar2;
+        this.f = ekviVar;
+        this.g = ekviVar2;
     }
 
     private static YearMonth b(Intent intent) {
@@ -55,21 +55,21 @@ public final class PurchaseManagerResultTransformer implements DataIntent$Result
             if (byteArrayExtra == null) {
                 return null;
             }
-            fecp y = fecp.y(ehiw.a, byteArrayExtra, 0, byteArrayExtra.length, febw.a());
-            fecp.M(y);
-            ehiw ehiwVar = (ehiw) y;
-            if (ehiwVar != null) {
-                return YearMonth.of(ehiwVar.c, ehiwVar.b);
+            fgri y = fgri.y(ejwc.a, byteArrayExtra, 0, byteArrayExtra.length, fgqp.a());
+            fgri.M(y);
+            ejwc ejwcVar = (ejwc) y;
+            if (ejwcVar != null) {
+                return YearMonth.of(ejwcVar.c, ejwcVar.b);
             }
             return null;
-        } catch (fedk e) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 940)).v();
+        } catch (fgsd e) {
+            ((eluo) ((eluo) a.j()).s(e)).v();
             return null;
         }
     }
 
     @Override // com.google.android.gms.autofill.data.DataIntent$ResultTransformer
-    public final Object a(int i, Intent intent, eiid eiidVar) {
+    public final Object a(int i, Intent intent, ekvi ekviVar) {
         YearMonth b;
         YearMonth yearMonth;
         String str;
@@ -78,13 +78,13 @@ public final class PurchaseManagerResultTransformer implements DataIntent$Result
         int i2;
         String str4;
         YearMonth yearMonth2;
-        adts adtsVar = null;
+        aftz aftzVar = null;
         if (i != -1) {
             return null;
         }
         String stringExtra = intent.getStringExtra("com.google.android.gms.wallet.firstparty.REAL_PAN");
-        adts adtsVar2 = !TextUtils.isEmpty(stringExtra) ? new adts(stringExtra) : null;
-        if (adtsVar2 == null) {
+        aftz aftzVar2 = !TextUtils.isEmpty(stringExtra) ? new aftz(stringExtra) : null;
+        if (aftzVar2 == null) {
             return null;
         }
         String stringExtra2 = intent.getStringExtra("com.google.android.gms.wallet.cvnFromServer");
@@ -92,34 +92,34 @@ public final class PurchaseManagerResultTransformer implements DataIntent$Result
             byte[] byteArrayExtra = intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.SECURE_DATA_RESULT");
             if (byteArrayExtra != null) {
                 try {
-                    faox faoxVar = faox.a;
+                    fddm fddmVar = fddm.a;
                     int length = byteArrayExtra.length;
-                    febw febwVar = febw.a;
-                    feep feepVar = feep.a;
-                    fecp y = fecp.y(faoxVar, byteArrayExtra, 0, length, febw.a);
-                    fecp.M(y);
-                    Iterator it = ((faox) y).b.iterator();
+                    fgqp fgqpVar = fgqp.a;
+                    fgti fgtiVar = fgti.a;
+                    fgri y = fgri.y(fddmVar, byteArrayExtra, 0, length, fgqp.a);
+                    fgri.M(y);
+                    Iterator it = ((fddm) y).b.iterator();
                     while (true) {
                         if (!it.hasNext()) {
                             break;
                         }
-                        faow faowVar = (faow) it.next();
-                        if (faowVar.c == 1) {
-                            String str5 = faowVar.d;
+                        fddl fddlVar = (fddl) it.next();
+                        if (fddlVar.c == 1) {
+                            String str5 = fddlVar.d;
                             if (!TextUtils.isEmpty(str5)) {
-                                adtsVar = new adts(str5);
+                                aftzVar = new aftz(str5);
                                 break;
                             }
                         }
                     }
-                } catch (fedk e) {
-                    ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 939)).v();
+                } catch (fgsd e) {
+                    ((eluo) ((eluo) a.j()).s(e)).v();
                 }
             }
         } else {
-            adtsVar = new adts(stringExtra2);
+            aftzVar = new aftz(stringExtra2);
         }
-        adts adtsVar3 = adtsVar;
+        aftz aftzVar3 = aftzVar;
         int i3 = this.h;
         if (i3 == 2) {
             b = b(intent);
@@ -129,62 +129,62 @@ public final class PurchaseManagerResultTransformer implements DataIntent$Result
                 b = this.c;
             }
         }
-        PaymentCard paymentCard = new PaymentCard(adtsVar2, adtsVar3, this.b, b, this.e, this.d);
+        PaymentCard paymentCard = new PaymentCard(aftzVar2, aftzVar3, this.b, b, this.e, this.d);
         if (i3 == 2) {
-            eiid eiidVar2 = this.f;
-            if (eiidVar2.h() && eiidVar.h()) {
-                eiid eiidVar3 = this.g;
-                if (eiidVar3.h() && (yearMonth = this.c) != null) {
-                    adtw adtwVar = (adtw) eiidVar.c();
-                    String str6 = (String) eiidVar2.c();
-                    String str7 = (String) eiidVar3.c();
-                    adts adtsVar4 = paymentCard.a;
-                    adts adtsVar5 = paymentCard.b;
+            ekvi ekviVar2 = this.f;
+            if (ekviVar2.h() && ekviVar.h()) {
+                ekvi ekviVar3 = this.g;
+                if (ekviVar3.h() && (yearMonth = this.c) != null) {
+                    afud afudVar = (afud) ekviVar.c();
+                    String str6 = (String) ekviVar2.c();
+                    String str7 = (String) ekviVar3.c();
+                    aftz aftzVar4 = paymentCard.a;
+                    aftz aftzVar5 = paymentCard.b;
                     String str8 = paymentCard.c;
-                    adtu adtuVar = new adtu();
-                    adtuVar.d = "";
-                    adtuVar.c("");
-                    adtuVar.i = 1;
-                    adtuVar.a("");
-                    adtuVar.f = "";
-                    adtuVar.b(0);
-                    adtuVar.c(adtsVar4.a);
-                    adtuVar.a(adtsVar5 != null ? adtsVar5.a : "");
+                    afub afubVar = new afub();
+                    afubVar.d = "";
+                    afubVar.c("");
+                    afubVar.i = 1;
+                    afubVar.a("");
+                    afubVar.f = "";
+                    afubVar.b(0);
+                    afubVar.c(aftzVar4.a);
+                    afubVar.a(aftzVar5 != null ? aftzVar5.a : "");
                     if (str8 == null) {
                         str8 = "";
                     }
-                    adtuVar.d = str8;
-                    adtuVar.c = paymentCard.d;
-                    adtuVar.i = 2;
-                    adtuVar.b(paymentCard.f);
-                    adtuVar.g = yearMonth;
-                    adtuVar.f = str7;
-                    if (adtuVar.h != 1 || (str = adtuVar.a) == null || (str2 = adtuVar.b) == null || (str3 = adtuVar.d) == null || (i2 = adtuVar.i) == 0 || (str4 = adtuVar.f) == null || (yearMonth2 = adtuVar.g) == null) {
+                    afubVar.d = str8;
+                    afubVar.c = paymentCard.d;
+                    afubVar.i = 2;
+                    afubVar.b(paymentCard.f);
+                    afubVar.g = yearMonth;
+                    afubVar.f = str7;
+                    if (afubVar.h != 1 || (str = afubVar.a) == null || (str2 = afubVar.b) == null || (str3 = afubVar.d) == null || (i2 = afubVar.i) == 0 || (str4 = afubVar.f) == null || (yearMonth2 = afubVar.g) == null) {
                         StringBuilder sb = new StringBuilder();
-                        if (adtuVar.a == null) {
+                        if (afubVar.a == null) {
                             sb.append(" cardNumber");
                         }
-                        if (adtuVar.b == null) {
+                        if (afubVar.b == null) {
                             sb.append(" CVN");
                         }
-                        if (adtuVar.d == null) {
+                        if (afubVar.d == null) {
                             sb.append(" cardholderName");
                         }
-                        if (adtuVar.i == 0) {
+                        if (afubVar.i == 0) {
                             sb.append(" cardType");
                         }
-                        if (adtuVar.h == 0) {
+                        if (afubVar.h == 0) {
                             sb.append(" cardNetworkType");
                         }
-                        if (adtuVar.f == null) {
+                        if (afubVar.f == null) {
                             sb.append(" lastFourOfMaskedCard");
                         }
-                        if (adtuVar.g == null) {
+                        if (afubVar.g == null) {
                             sb.append(" expirationDateOfMaskedCard");
                         }
                         throw new IllegalStateException("Missing required properties:".concat(sb.toString()));
                     }
-                    adtwVar.a.h(str6, new adtv(str, str2, adtuVar.c, str3, i2, adtuVar.e, str4, yearMonth2));
+                    afudVar.a.h(str6, new afuc(str, str2, afubVar.c, str3, i2, afubVar.e, str4, yearMonth2));
                 }
             }
         }

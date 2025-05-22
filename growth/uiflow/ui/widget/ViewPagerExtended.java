@@ -7,24 +7,24 @@ import android.view.View;
 import android.widget.FrameLayout;
 import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.gms.R;
-import defpackage.bksf;
-import defpackage.bkwk;
-import defpackage.fvbo;
-import defpackage.tk;
+import defpackage.bmyy;
+import defpackage.bnda;
+import defpackage.fxxm;
+import defpackage.tp;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ViewPagerExtended extends FrameLayout {
     public final ViewPager2 a;
-    public bksf b;
+    public bmyy b;
     private final boolean c;
     private float d;
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ViewPagerExtended(Context context) {
         this(context, null, 0, 6, null);
-        fvbo.f(context, "context");
+        fxxm.f(context, "context");
     }
 
     public final int a() {
@@ -39,12 +39,12 @@ public final class ViewPagerExtended extends FrameLayout {
     public final boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         float f;
         float x;
-        fvbo.f(motionEvent, "event");
+        fxxm.f(motionEvent, "event");
         ViewPager2 viewPager2 = this.a;
-        tk c = viewPager2.c();
+        tp c = viewPager2.c();
         Integer valueOf = c != null ? Integer.valueOf(c.a()) : null;
-        bksf bksfVar = this.b;
-        if (valueOf == null || bksfVar == null || viewPager2.b != valueOf.intValue() - 1) {
+        bmyy bmyyVar = this.b;
+        if (valueOf == null || bmyyVar == null || viewPager2.b != valueOf.intValue() - 1) {
             return super.onInterceptTouchEvent(motionEvent);
         }
         int action = motionEvent.getAction();
@@ -59,7 +59,7 @@ public final class ViewPagerExtended extends FrameLayout {
                 x = motionEvent.getX();
             }
             if (f - x < 0.0f) {
-                bksfVar.a.f(bksfVar.b);
+                bmyyVar.a.f(bmyyVar.b);
             }
         }
         return super.onInterceptTouchEvent(motionEvent);
@@ -68,17 +68,17 @@ public final class ViewPagerExtended extends FrameLayout {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ViewPagerExtended(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        fvbo.f(context, "context");
+        fxxm.f(context, "context");
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ViewPagerExtended(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        fvbo.f(context, "context");
-        this.c = bkwk.a(context);
+        fxxm.f(context, "context");
+        this.c = bnda.a(context);
         View.inflate(context, R.layout.view_pager_carousel, this);
         View findViewById = findViewById(R.id.view_pager_carousel);
-        fvbo.e(findViewById, "findViewById(...)");
+        fxxm.e(findViewById, "findViewById(...)");
         this.a = (ViewPager2) findViewById;
     }
 

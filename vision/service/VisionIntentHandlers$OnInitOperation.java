@@ -1,28 +1,28 @@
 package com.google.android.gms.vision.service;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.dibd;
-import defpackage.dicc;
-import defpackage.dicm;
-import defpackage.eigb;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.dkmo;
+import defpackage.dknn;
+import defpackage.dknx;
+import defpackage.ektg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class VisionIntentHandlers$OnInitOperation extends anya {
-    @Override // defpackage.anya
+public class VisionIntentHandlers$OnInitOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        asng.H(this, "com.google.android.gms.vision.DependencyBroadcastReceiverProxy", true);
+        aura.H(this, "com.google.android.gms.vision.DependencyBroadcastReceiverProxy", true);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        dicm.d(this, dicm.b(getBaseContext()), true, eigb.a);
+        dknx.d(this, dknx.b(getBaseContext()), true, ektg.a);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void d(Intent intent) {
-        dibd.a(dicc.a(this));
+        dkmo.a(dknn.a(this));
     }
 }

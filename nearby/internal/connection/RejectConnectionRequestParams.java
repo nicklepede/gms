@@ -8,18 +8,18 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.ConnectionsDevice;
 import com.google.android.gms.nearby.connection.v3.dct.DctDevice;
 import com.google.android.gms.nearby.presence.PresenceDevice;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cjbn;
-import defpackage.cjbp;
-import defpackage.cjdo;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cljs;
+import defpackage.clju;
+import defpackage.cllt;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class RejectConnectionRequestParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjdo();
-    public cjbp a;
+    public static final Parcelable.Creator CREATOR = new cllt();
+    public clju a;
     public String b;
     public final int c;
     public PresenceDevice d;
@@ -36,7 +36,7 @@ public final class RejectConnectionRequestParams extends AbstractSafeParcelable 
         }
         if (obj instanceof RejectConnectionRequestParams) {
             RejectConnectionRequestParams rejectConnectionRequestParams = (RejectConnectionRequestParams) obj;
-            if (arwb.b(this.a, rejectConnectionRequestParams.a) && arwb.b(this.b, rejectConnectionRequestParams.b) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(rejectConnectionRequestParams.c)) && arwb.b(this.d, rejectConnectionRequestParams.d) && arwb.b(this.e, rejectConnectionRequestParams.e) && arwb.b(this.f, rejectConnectionRequestParams.f)) {
+            if (atyq.b(this.a, rejectConnectionRequestParams.a) && atyq.b(this.b, rejectConnectionRequestParams.b) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(rejectConnectionRequestParams.c)) && atyq.b(this.d, rejectConnectionRequestParams.d) && atyq.b(this.e, rejectConnectionRequestParams.e) && atyq.b(this.f, rejectConnectionRequestParams.f)) {
                 return true;
             }
         }
@@ -49,26 +49,26 @@ public final class RejectConnectionRequestParams extends AbstractSafeParcelable 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        cjbp cjbpVar = this.a;
-        arxc.D(parcel, 1, cjbpVar == null ? null : cjbpVar.asBinder());
-        arxc.v(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        clju cljuVar = this.a;
+        atzr.D(parcel, 1, cljuVar == null ? null : cljuVar.asBinder());
+        atzr.v(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.c(parcel, a);
     }
 
     public RejectConnectionRequestParams(IBinder iBinder, String str, int i, PresenceDevice presenceDevice, ConnectionsDevice connectionsDevice, DctDevice dctDevice) {
-        cjbp cjbnVar;
+        clju cljsVar;
         if (iBinder == null) {
-            cjbnVar = null;
+            cljsVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IResultListener");
-            cjbnVar = queryLocalInterface instanceof cjbp ? (cjbp) queryLocalInterface : new cjbn(iBinder);
+            cljsVar = queryLocalInterface instanceof clju ? (clju) queryLocalInterface : new cljs(iBinder);
         }
-        this.a = cjbnVar;
+        this.a = cljsVar;
         this.b = str;
         this.c = i;
         this.d = presenceDevice;

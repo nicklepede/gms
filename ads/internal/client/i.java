@@ -3,7 +3,7 @@ package com.google.android.gms.ads.internal.client;
 import android.content.Context;
 import android.os.Bundle;
 import com.google.ads.mediation.admob.AdMobAdapter;
-import defpackage.tdi;
+import defpackage.uzi;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class i {
     public static final i a = new i();
@@ -28,10 +28,10 @@ public final class i {
         String str2;
         Set set = boVar.b;
         List unmodifiableList = !set.isEmpty() ? DesugarCollections.unmodifiableList(new ArrayList(set)) : null;
-        tdi tdiVar = bs.a().a;
+        uzi uziVar = bs.a().a;
         u.b();
         String l = com.google.android.gms.ads.internal.util.client.f.l(context);
-        boolean z = boVar.e.contains(l) || new ArrayList(tdiVar.b).contains(l);
+        boolean z = boVar.e.contains(l) || new ArrayList(uziVar.b).contains(l);
         Bundle bundle = boVar.c;
         Bundle bundle2 = bundle.getBundle(AdMobAdapter.class.getName());
         Context applicationContext = context.getApplicationContext();
@@ -70,11 +70,12 @@ public final class i {
                 if (str2 != null && !str2.contains(packageName)) {
                     str = str2;
                     boolean z2 = boVar.h;
-                    tdi tdiVar2 = bs.a().a;
+                    uzi uziVar2 = bs.a().a;
                     return new AdRequestParcel(8, -1L, bundle2, -1, unmodifiableList, z, Math.max(boVar.d, -1), false, null, null, null, null, bundle, boVar.f, DesugarCollections.unmodifiableList(new ArrayList(boVar.g)), null, str, z2, null, -1, (String) Collections.max(Arrays.asList(null, ""), new Comparator() { // from class: com.google.android.gms.ads.internal.client.h
                         @Override // java.util.Comparator
                         public final int compare(Object obj, Object obj2) {
-                            return tdi.a.indexOf((String) obj) - tdi.a.indexOf((String) obj2);
+                            List list = uzi.a;
+                            return list.indexOf((String) obj) - list.indexOf((String) obj2);
                         }
                     }), new ArrayList(boVar.a), 60000, null, 0, boVar.i);
                 }
@@ -82,11 +83,12 @@ public final class i {
         }
         str = null;
         boolean z22 = boVar.h;
-        tdi tdiVar22 = bs.a().a;
+        uzi uziVar22 = bs.a().a;
         return new AdRequestParcel(8, -1L, bundle2, -1, unmodifiableList, z, Math.max(boVar.d, -1), false, null, null, null, null, bundle, boVar.f, DesugarCollections.unmodifiableList(new ArrayList(boVar.g)), null, str, z22, null, -1, (String) Collections.max(Arrays.asList(null, ""), new Comparator() { // from class: com.google.android.gms.ads.internal.client.h
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
-                return tdi.a.indexOf((String) obj) - tdi.a.indexOf((String) obj2);
+                List list = uzi.a;
+                return list.indexOf((String) obj) - list.indexOf((String) obj2);
             }
         }), new ArrayList(boVar.a), 60000, null, 0, boVar.i);
     }

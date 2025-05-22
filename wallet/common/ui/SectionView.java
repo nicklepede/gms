@@ -7,33 +7,33 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import defpackage.efwo;
-import defpackage.efze;
-import defpackage.efzj;
-import defpackage.efzk;
-import defpackage.efzl;
+import defpackage.eijr;
+import defpackage.eimh;
+import defpackage.eimm;
+import defpackage.eimn;
+import defpackage.eimo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class SectionView extends LinearLayout implements View.OnClickListener, efzl, efze, efzj {
+public class SectionView extends LinearLayout implements View.OnClickListener, eimo, eimh, eimm {
     public View a;
     public ViewGroup b;
     public View c;
     public View d;
-    public final efzk e;
+    public final eimn e;
 
     public SectionView(Context context) {
         super(context);
-        this.e = new efzk();
+        this.e = new eimn();
     }
 
-    @Override // defpackage.efzj
+    @Override // defpackage.eimm
     public final void G() {
-        efwo.C(getRootView());
-        efwo.ai(getContext(), this);
+        eijr.C(getRootView());
+        eijr.ai(getContext(), this);
     }
 
-    @Override // defpackage.efze
+    @Override // defpackage.eimh
     public final void b() {
         boolean z = this.e.c;
         this.a.setVisibility(true != z ? 0 : 8);
@@ -42,21 +42,21 @@ public class SectionView extends LinearLayout implements View.OnClickListener, e
         this.c.setVisibility(i);
     }
 
-    @Override // defpackage.efzl
-    public final efzk ld() {
+    @Override // defpackage.eimo
+    public final eimn ls() {
         return this.e;
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        efzk efzkVar = this.e;
-        if (!efzkVar.c) {
-            efzkVar.m(true);
+        eimn eimnVar = this.e;
+        if (!eimnVar.c) {
+            eimnVar.m(true);
             return;
         }
-        efwo.C(getRootView());
-        efwo.ai(getContext(), this);
-        efzkVar.l(true);
+        eijr.C(getRootView());
+        eijr.ai(getContext(), this);
+        eimnVar.l(true);
     }
 
     @Override // android.view.View
@@ -82,23 +82,23 @@ public class SectionView extends LinearLayout implements View.OnClickListener, e
     public final void setEnabled(boolean z) {
         super.setEnabled(z);
         this.c.setEnabled(z);
-        efwo.N(this.c, z);
+        eijr.N(this.c, z);
         this.a.setEnabled(z);
-        efwo.N(this.a, z);
+        eijr.N(this.a, z);
         this.d.setEnabled(z);
     }
 
     public SectionView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.e = new efzk();
+        this.e = new eimn();
     }
 
     public SectionView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.e = new efzk();
+        this.e = new eimn();
     }
 
-    @Override // defpackage.efze
+    @Override // defpackage.eimh
     public final void c() {
     }
 }

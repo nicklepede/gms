@@ -10,33 +10,33 @@ import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.google.android.gms.R;
-import defpackage.anxn;
-import defpackage.arxo;
-import defpackage.aseu;
-import defpackage.asmf;
-import defpackage.assk;
-import defpackage.assn;
-import defpackage.assp;
-import defpackage.asvp;
-import defpackage.aszi;
-import defpackage.aszu;
-import defpackage.atbt;
-import defpackage.atbw;
-import defpackage.atby;
-import defpackage.atbz;
-import defpackage.atlw;
-import defpackage.atmc;
-import defpackage.atmg;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.byhr;
-import defpackage.eijr;
-import defpackage.enwd;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fedk;
-import defpackage.fjpp;
-import defpackage.fmms;
+import defpackage.apzf;
+import defpackage.auad;
+import defpackage.auio;
+import defpackage.aupz;
+import defpackage.auwe;
+import defpackage.auwh;
+import defpackage.auwj;
+import defpackage.auzl;
+import defpackage.avdl;
+import defpackage.avdx;
+import defpackage.avfw;
+import defpackage.avfz;
+import defpackage.avgb;
+import defpackage.avgc;
+import defpackage.avpz;
+import defpackage.avqf;
+import defpackage.avqj;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.caqj;
+import defpackage.ekww;
+import defpackage.eqjw;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgsd;
+import defpackage.fmfm;
+import defpackage.fpen;
 import defpackage.ig;
 import defpackage.iq;
 import java.util.ArrayList;
@@ -45,24 +45,24 @@ import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.RejectedExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class ConstellationSettingsChimeraActivity extends anxn {
-    public static final arxo j = atmg.a("constellation_settings");
+public class ConstellationSettingsChimeraActivity extends apzf {
+    public static final auad j = avqj.a("constellation_settings");
     public Menu A;
     public Uri B;
-    public atlw C;
-    public atmc D;
-    public atby E;
-    public assn I;
+    public avpz C;
+    public avqf D;
+    public avgb E;
+    public auwh I;
     private Bundle K;
     public ProgressDialog k;
     public Context v;
-    public aszu w;
+    public avdx w;
     public iq x;
     public UUID y;
-    public final Handler l = new byhr();
-    public final ExecutorService m = new asmf(1, 9);
+    public final Handler l = new caqj();
+    public final ExecutorService m = new aupz(1, 9);
     public boolean n = false;
     public boolean o = false;
     public boolean p = false;
@@ -71,7 +71,7 @@ public class ConstellationSettingsChimeraActivity extends anxn {
     public int s = 0;
     public int t = 0;
     public final List u = new ArrayList();
-    public fjpp z = null;
+    public fmfm z = null;
     public final Object F = new Object();
     private boolean L = false;
     public boolean G = false;
@@ -87,18 +87,18 @@ public class ConstellationSettingsChimeraActivity extends anxn {
         if (progressDialog != null && progressDialog.isShowing()) {
             this.k.dismiss();
         }
-        this.C.o(this.D, enwd.CONSENT_SETTINGS_INIT_FAILURE);
-        assk J = this.I.J(getResources().getString(R.string.c11n_device_consent_activity_label), 0);
-        assp asspVar = new assp(this.v);
-        asspVar.i(false);
-        asspVar.r(R.string.c11n_connection_lost);
-        asspVar.o(0);
-        J.k(asspVar);
-        assp asspVar2 = new assp(this.v);
-        asspVar2.r(R.string.c11n_tap_to_retry);
-        asspVar2.n(new atbt(this));
-        asspVar2.o(1);
-        J.k(asspVar2);
+        this.C.o(this.D, eqjw.CONSENT_SETTINGS_INIT_FAILURE);
+        auwe J = this.I.J(getResources().getString(R.string.c11n_device_consent_activity_label), 0);
+        auwj auwjVar = new auwj(this.v);
+        auwjVar.i(false);
+        auwjVar.r(R.string.c11n_connection_lost);
+        auwjVar.o(0);
+        J.k(auwjVar);
+        auwj auwjVar2 = new auwj(this.v);
+        auwjVar2.r(R.string.c11n_tap_to_retry);
+        auwjVar2.n(new avfw(this));
+        auwjVar2.o(1);
+        J.k(auwjVar2);
     }
 
     public final void k() {
@@ -106,7 +106,7 @@ public class ConstellationSettingsChimeraActivity extends anxn {
             this.M = true;
         }
         try {
-            this.m.execute(new atbw(this));
+            this.m.execute(new avfz(this));
         } catch (RejectedExecutionException e) {
             j.g("Couldn't start GetMessageOverridesTask", e, new Object[0]);
             synchronized (this.F) {
@@ -127,32 +127,32 @@ public class ConstellationSettingsChimeraActivity extends anxn {
             return;
         }
         try {
-            this.m.execute(new atbz(this));
+            this.m.execute(new avgc(this));
         } catch (RejectedExecutionException e) {
             j.g("Couldn't start ReadDataTask", e, new Object[0]);
         }
     }
 
-    @Override // defpackage.anxn, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.apzf, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         this.K = bundle;
         super.onCreate(null);
-        eijr eijrVar = bqqe.a;
-        bqqa.a(aseu.CONSTELLATION_UI_SETTINGS);
+        ekww ekwwVar = bsxv.a;
+        bsxr.a(auio.CONSTELLATION_UI_SETTINGS);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
-        if (TextUtils.isEmpty(fmms.d())) {
+        if (TextUtils.isEmpty(fpen.d())) {
             return false;
         }
-        this.B = Uri.parse(fmms.d());
+        this.B = Uri.parse(fpen.d());
         this.A = menu;
         getMenuInflater().inflate(R.menu.settings_menu, this.A);
         return true;
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         ProgressDialog progressDialog = this.k;
         if (progressDialog != null && progressDialog.isShowing()) {
@@ -163,7 +163,7 @@ public class ConstellationSettingsChimeraActivity extends anxn {
         super.onDestroy();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         int itemId = menuItem.getItemId();
         if (itemId == 16908332) {
@@ -180,7 +180,7 @@ public class ConstellationSettingsChimeraActivity extends anxn {
         return true;
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         if (!this.J && isChangingConfigurations()) {
@@ -190,52 +190,52 @@ public class ConstellationSettingsChimeraActivity extends anxn {
                 bundle.putBoolean("init_failed", this.L);
             }
         }
-        fjpp fjppVar = this.z;
-        if (fjppVar != null) {
-            bundle.putByteArray("message_overrides", fjppVar.r());
+        fmfm fmfmVar = this.z;
+        if (fmfmVar != null) {
+            bundle.putByteArray("message_overrides", fmfmVar.r());
         }
     }
 
-    @Override // defpackage.anxn
-    protected final void q(assn assnVar) {
+    @Override // defpackage.apzf
+    protected final void q(auwh auwhVar) {
         this.v = getApplicationContext();
-        this.w = aszi.b().a(this.v);
+        this.w = avdl.b().a(this.v);
         this.k = ProgressDialog.show(this, null, getResources().getString(R.string.common_loading));
-        this.I = assnVar;
+        this.I = auwhVar;
         this.y = UUID.randomUUID();
-        this.C = atlw.a(this.v);
-        atmc atmcVar = new atmc(this.y.toString());
-        this.D = atmcVar;
-        atmcVar.c = 5;
-        ig hy = hy();
-        if (hy != null) {
-            hy.o(true);
+        this.C = avpz.a(this.v);
+        avqf avqfVar = new avqf(this.y.toString());
+        this.D = avqfVar;
+        avqfVar.c = 5;
+        ig hO = hO();
+        if (hO != null) {
+            hO.o(true);
         }
         boolean z = false;
         if (this.K != null) {
-            this.C.o(this.D, enwd.CONSENT_SETTINGS_RECREATED);
+            this.C.o(this.D, eqjw.CONSENT_SETTINGS_RECREATED);
             j.d("savedInstanceState not null", new Object[0]);
             this.r = this.K.getBoolean("changing_configurations", false);
             boolean z2 = this.K.getBoolean("init_failed", false);
             try {
                 byte[] byteArray = this.K.getByteArray("message_overrides");
                 if (byteArray != null && byteArray.length > 0) {
-                    this.z = (fjpp) ((fecj) fjpp.a.v().D(byteArray, febw.a())).Q();
+                    this.z = (fmfm) ((fgrc) fmfm.a.v().D(byteArray, fgqp.a())).Q();
                 }
-            } catch (fedk | NullPointerException e) {
+            } catch (fgsd | NullPointerException e) {
                 j.g("Couldn't parse messageOverrides", e, new Object[0]);
                 this.z = null;
             }
             z = z2;
         } else {
-            this.C.o(this.D, enwd.CONSENT_SETTINGS_OPENED);
+            this.C.o(this.D, eqjw.CONSENT_SETTINGS_OPENED);
         }
-        this.E = new atby(this, this.l, z);
-        asvp.h();
-        asvp.a(this, this.y, this.E);
+        this.E = new avgb(this, this.l, z);
+        auzl.h();
+        auzl.a(this, this.y, this.E);
     }
 
-    @Override // defpackage.anxn
+    @Override // defpackage.apzf
     public final void r() {
     }
 }

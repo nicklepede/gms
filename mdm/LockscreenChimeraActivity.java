@@ -11,19 +11,19 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.asng;
-import defpackage.cctb;
-import defpackage.cctu;
-import defpackage.cdaj;
-import defpackage.frty;
-import defpackage.ips;
-import defpackage.juc;
-import defpackage.pg;
+import defpackage.aura;
+import defpackage.cfbv;
+import defpackage.cfco;
+import defpackage.cfjj;
+import defpackage.fuos;
+import defpackage.iri;
+import defpackage.kar;
+import defpackage.ph;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class LockscreenChimeraActivity extends cctb {
+public class LockscreenChimeraActivity extends cfbv {
     Button o;
 
     @Override // android.view.View.OnClickListener
@@ -47,12 +47,12 @@ public class LockscreenChimeraActivity extends cctb {
         startActivity(intent);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         String stringExtra = getIntent().getStringExtra("lock_message");
         if (TextUtils.isEmpty(stringExtra)) {
-            cdaj.a("LockscreenActivity started without a lock message, closing.", new Object[0]);
+            cfjj.a("LockscreenActivity started without a lock message, closing.", new Object[0]);
             setResult(0);
             finish();
             return;
@@ -64,7 +64,7 @@ public class LockscreenChimeraActivity extends cctb {
         TextView textView = (TextView) findViewById(R.id.phone_number_call_label);
         if (getIntent().hasExtra("phone_number")) {
             this.l = getIntent().getStringExtra("phone_number");
-            this.k.setImageDrawable(pg.d().c(this, R.drawable.mdm_ic_call));
+            this.k.setImageDrawable(ph.d().c(this, R.drawable.mdm_ic_call));
             this.k.setOnClickListener(this);
         } else {
             this.k.setVisibility(8);
@@ -73,20 +73,20 @@ public class LockscreenChimeraActivity extends cctb {
         Button button = (Button) findViewById(R.id.emergency_call);
         this.o = button;
         button.setOnClickListener(this);
-        if (asng.O(this)) {
+        if (aura.O(this)) {
             setRequestedOrientation(1);
         } else {
             this.o.setVisibility(8);
         }
-        this.m = juc.a(this);
+        this.m = kar.a(this);
         this.m.c(this.n, j);
-        new cctu().a();
-        if (frty.a.a().l()) {
-            int i = ips.a;
+        new cfco().a();
+        if (fuos.a.lK().l()) {
+            int i = iri.a;
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
         this.m.d(this.n);
         super.onDestroy();

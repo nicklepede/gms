@@ -5,12 +5,12 @@ import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.DateTime;
 import com.google.android.gms.reminders.model.RecurrenceEnd;
 import com.google.android.gms.reminders.model.RecurrenceEndEntity;
-import defpackage.cxeb;
-import defpackage.cxeq;
+import defpackage.cznx;
+import defpackage.czom;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class RecurrenceEndRef extends cxeb implements RecurrenceEnd {
+public class RecurrenceEndRef extends cznx implements RecurrenceEnd {
     private boolean f;
     private DateTimeRef g;
     private boolean h;
@@ -75,7 +75,7 @@ public class RecurrenceEndRef extends cxeb implements RecurrenceEnd {
         return n(p("recurrence_end_num_occurrences"));
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof RecurrenceEnd)) {
             return false;
@@ -86,18 +86,18 @@ public class RecurrenceEndRef extends cxeb implements RecurrenceEnd {
         return RecurrenceEndEntity.f(this, (RecurrenceEnd) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return RecurrenceEndEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new RecurrenceEndEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxeq.a(new RecurrenceEndEntity(this), parcel, i);
+        czom.a(new RecurrenceEndEntity(this), parcel, i);
     }
 }

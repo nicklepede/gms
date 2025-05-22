@@ -3,15 +3,15 @@ package com.google.android.gms.appinvite.ui.context.section;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.R;
-import defpackage.tyj;
-import defpackage.tyv;
-import defpackage.tzc;
-import defpackage.tzw;
+import defpackage.vui;
+import defpackage.vuu;
+import defpackage.vvb;
+import defpackage.vvv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ListSectionInfo extends LoaderSectionInfo {
-    public static final Parcelable.Creator CREATOR = new tzw();
+    public static final Parcelable.Creator CREATOR = new vvv();
     private boolean q;
 
     public ListSectionInfo(Parcel parcel) {
@@ -20,10 +20,10 @@ public class ListSectionInfo extends LoaderSectionInfo {
     }
 
     @Override // com.google.android.gms.appinvite.ui.context.section.SectionInfo
-    public final tyv a(tyj tyjVar, int i) {
-        tzc tzcVar = new tzc(tyjVar, R.layout.appinvite_contextual_selection_list_item, i, true, this.i, true);
-        tzcVar.U(this.g, this.h);
-        return tzcVar;
+    public final vuu a(vui vuiVar, int i) {
+        vvb vvbVar = new vvb(vuiVar, R.layout.appinvite_contextual_selection_list_item, i, true, this.i, true);
+        vvbVar.U(this.g, this.h);
+        return vvbVar;
     }
 
     @Override // com.google.android.gms.appinvite.ui.context.section.LoaderSectionInfo, com.google.android.gms.appinvite.ui.context.section.SectionInfo, android.os.Parcelable

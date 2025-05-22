@@ -1,32 +1,32 @@
 package com.google.android.gms.potokens.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.cwpe;
-import defpackage.cwqn;
-import defpackage.cwqo;
-import defpackage.cwrh;
-import defpackage.cwrx;
-import defpackage.ejck;
-import defpackage.frpd;
-import defpackage.frpg;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.cyzb;
+import defpackage.czak;
+import defpackage.czal;
+import defpackage.czbe;
+import defpackage.czbu;
+import defpackage.elpp;
+import defpackage.fuji;
+import defpackage.fujl;
 import java.security.GeneralSecurityException;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class PoTokensApiChimeraService extends bxgd {
-    private cwqn a;
+public class PoTokensApiChimeraService extends bzot {
+    private czak a;
 
     static {
-        asot.b("PoTokensApiChimeraService", asej.PO_TOKENS);
+        ausn.b("PoTokensApiChimeraService", auid.PO_TOKENS);
     }
 
     public PoTokensApiChimeraService() {
-        this(new cwqo());
+        this(new czal());
     }
 
     private final void c() {
@@ -34,55 +34,55 @@ public class PoTokensApiChimeraService extends bxgd {
             return;
         }
         try {
-            this.a = cwqn.a(this, 2);
+            this.a = czak.a(this, 2);
         } catch (GeneralSecurityException unused) {
         }
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        if (!frpd.c()) {
-            bxgjVar.a(23, null);
-            cwqn cwqnVar = this.a;
-            if (cwqnVar != null) {
-                cwqnVar.d.m(false);
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        if (!fuji.c()) {
+            bzozVar.a(23, null);
+            czak czakVar = this.a;
+            if (czakVar != null) {
+                czakVar.d.m(false);
                 return;
             }
             return;
         }
         c();
-        cwqn cwqnVar2 = this.a;
-        if (cwqnVar2 == null) {
-            bxgjVar.a(8, null);
+        czak czakVar2 = this.a;
+        if (czakVar2 == null) {
+            bzozVar.a(8, null);
             return;
         }
         String str = getServiceRequest.f;
-        String a = frpg.a.a().a();
+        String a = fujl.a.lK().a();
         if (!a.isEmpty() && a.equals(str)) {
-            Iterator it = cwqnVar2.b.values().iterator();
+            Iterator it = czakVar2.b.values().iterator();
             while (it.hasNext()) {
-                cwrh cwrhVar = ((cwrx) it.next()).a;
-                synchronized (cwrhVar.f) {
-                    cwrhVar.d = null;
+                czbe czbeVar = ((czbu) it.next()).a;
+                synchronized (czbeVar.f) {
+                    czbeVar.d = null;
                 }
             }
-            cwqnVar2.c.f();
+            czakVar2.c.f();
         }
-        cwqnVar2.d.m(true);
-        bxgjVar.c(new cwpe(l(), cwqnVar2, getServiceRequest.f, getServiceRequest.p));
+        czakVar2.d.m(true);
+        bzozVar.c(new cyzb(l(), czakVar2, getServiceRequest.f, getServiceRequest.p));
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
-        frpd.c();
+        fuji.c();
     }
 
-    PoTokensApiChimeraService(cwqn cwqnVar) {
+    PoTokensApiChimeraService(czak czakVar) {
         this();
-        this.a = cwqnVar;
+        this.a = czakVar;
     }
 
-    public PoTokensApiChimeraService(cwqo cwqoVar) {
-        super(285, "com.google.android.gms.potokens.service.START", ejck.a, 1, 9);
+    public PoTokensApiChimeraService(czal czalVar) {
+        super(285, "com.google.android.gms.potokens.service.START", elpp.a, 1, 9);
     }
 }

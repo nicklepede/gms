@@ -11,22 +11,22 @@ import com.google.android.gms.fitness.data.DataType;
 import com.google.android.gms.fitness.data.RawBucket;
 import com.google.android.gms.fitness.data.RawDataSet;
 import com.google.android.gms.fitness.data.Session;
-import defpackage.aqyf;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgdc;
-import defpackage.bglz;
+import defpackage.atau;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bihs;
+import defpackage.biqp;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class DataReadResult extends AbstractSafeParcelable implements aqyf {
-    public static final Parcelable.Creator CREATOR = new bglz();
+public class DataReadResult extends AbstractSafeParcelable implements atau {
+    public static final Parcelable.Creator CREATOR = new biqp();
     public final List a;
     public final Status b;
     public final List c;
@@ -70,16 +70,16 @@ public class DataReadResult extends AbstractSafeParcelable implements aqyf {
         Iterator it2 = list.iterator();
         while (it2.hasNext()) {
             DataType dataType = (DataType) it2.next();
-            bgdc bgdcVar = new bgdc();
-            bgdcVar.b = 1;
-            bgdcVar.a = dataType;
-            bgdcVar.b("Default");
-            arrayList.add(DataSet.a(bgdcVar.a()).a());
+            bihs bihsVar = new bihs();
+            bihsVar.b = 1;
+            bihsVar.a = dataType;
+            bihsVar.b("Default");
+            arrayList.add(DataSet.a(bihsVar.a()).a());
         }
         return new DataReadResult(arrayList, Collections.EMPTY_LIST, status);
     }
 
-    @Override // defpackage.aqyf
+    @Override // defpackage.atau
     public final Status a() {
         return this.b;
     }
@@ -92,7 +92,7 @@ public class DataReadResult extends AbstractSafeParcelable implements aqyf {
             return false;
         }
         DataReadResult dataReadResult = (DataReadResult) obj;
-        return this.b.equals(dataReadResult.b) && arwb.b(this.a, dataReadResult.a) && arwb.b(this.c, dataReadResult.c);
+        return this.b.equals(dataReadResult.b) && atyq.b(this.a, dataReadResult.a) && atyq.b(this.c, dataReadResult.c);
     }
 
     public final int hashCode() {
@@ -101,45 +101,45 @@ public class DataReadResult extends AbstractSafeParcelable implements aqyf {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("status", this.b, arrayList);
+        atyp.b("status", this.b, arrayList);
         List list = this.a;
         int size = list.size();
         Object obj = list;
         if (size > 5) {
             obj = list.size() + " data sets";
         }
-        arwa.b("dataSets", obj, arrayList);
+        atyp.b("dataSets", obj, arrayList);
         List list2 = this.c;
         int size2 = list2.size();
         Object obj2 = list2;
         if (size2 > 5) {
             obj2 = list2.size() + " buckets";
         }
-        arwa.b("buckets", obj2, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("buckets", obj2, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         ArrayList arrayList = new ArrayList(list.size());
         Iterator it = list.iterator();
         while (it.hasNext()) {
             arrayList.add(new RawDataSet((DataSet) it.next(), this.e));
         }
-        arxc.G(parcel, 1, arrayList);
-        arxc.t(parcel, 2, this.b, i, false);
+        atzr.G(parcel, 1, arrayList);
+        atzr.t(parcel, 2, this.b, i, false);
         List list2 = this.c;
         ArrayList arrayList2 = new ArrayList(list2.size());
         Iterator it2 = list2.iterator();
         while (it2.hasNext()) {
             arrayList2.add(new RawBucket((Bucket) it2.next(), this.e));
         }
-        arxc.G(parcel, 3, arrayList2);
-        arxc.o(parcel, 5, this.d);
-        arxc.y(parcel, 6, this.e, false);
-        arxc.c(parcel, a);
+        atzr.G(parcel, 3, arrayList2);
+        atzr.o(parcel, 5, this.d);
+        atzr.y(parcel, 6, this.e, false);
+        atzr.c(parcel, a);
     }
 
     public DataReadResult(List list, List list2, Status status) {

@@ -3,35 +3,35 @@ package com.google.android.gms.constellation.checker;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.arxo;
-import defpackage.asmb;
-import defpackage.asxb;
-import defpackage.asxd;
-import defpackage.asxg;
-import defpackage.aszi;
-import defpackage.atlw;
-import defpackage.atmg;
-import defpackage.enur;
-import defpackage.enwd;
-import defpackage.fecj;
-import defpackage.fmml;
+import defpackage.auad;
+import defpackage.aupv;
+import defpackage.avbe;
+import defpackage.avbg;
+import defpackage.avbj;
+import defpackage.avdl;
+import defpackage.avpz;
+import defpackage.avqj;
+import defpackage.eqik;
+import defpackage.eqjw;
+import defpackage.fgrc;
+import defpackage.fpeg;
 import java.util.UUID;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SimStateChecker extends IntentOperation {
-    public static final arxo a = atmg.a("sim_state_checker");
+    public static final auad a = avqj.a("sim_state_checker");
     public static ScheduledFuture b = null;
     public Context d;
     public UUID e;
-    public asxb f;
-    private atlw i;
+    public avbe f;
+    private avpz i;
     public long c = 0;
-    private final Runnable g = new asxg(this);
-    private final ScheduledExecutorService h = new asmb(1, 9);
+    private final Runnable g = new avbj(this);
+    private final ScheduledExecutorService h = new aupv(1, 9);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.chimera.IntentOperation
@@ -48,18 +48,18 @@ public class SimStateChecker extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         char c;
-        if (!fmml.h() && !fmml.a.a().x()) {
+        if (!fpeg.h() && !fpeg.a.lK().x()) {
             a.h("sim state checker is disabled.", new Object[0]);
             return;
         }
-        arxo arxoVar = a;
-        arxoVar.h("Handling intent ".concat(String.valueOf(String.valueOf(intent))), new Object[0]);
+        auad auadVar = a;
+        auadVar.h("Handling intent ".concat(String.valueOf(String.valueOf(intent))), new Object[0]);
         if (!intent.getAction().equals("android.intent.action.SIM_STATE_CHANGED")) {
-            arxoVar.m("Unexpected intent.", new Object[0]);
+            auadVar.m("Unexpected intent.", new Object[0]);
             return;
         }
-        this.i = atlw.a(this.d);
-        this.f = new asxb(this.i);
+        this.i = avpz.a(this.d);
+        this.f = new avbe(this.i);
         this.e = UUID.randomUUID();
         this.c = System.currentTimeMillis();
         int i = 2;
@@ -117,29 +117,29 @@ public class SimStateChecker extends IntentOperation {
                 i = 6;
             }
         } else {
-            arxoVar.m("Extra not found in intent.", new Object[0]);
+            auadVar.m("Extra not found in intent.", new Object[0]);
         }
-        asxb asxbVar = this.f;
+        avbe avbeVar = this.f;
         String uuid = this.e.toString();
-        enwd enwdVar = enwd.SIM_STATE_CHANGED;
-        fecj v = enur.a.v();
+        eqjw eqjwVar = eqjw.SIM_STATE_CHANGED;
+        fgrc v = eqik.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        atlw atlwVar = asxbVar.a;
-        enur enurVar = (enur) v.b;
-        enurVar.e = i - 2;
-        enurVar.b = 4 | enurVar.b;
-        atlwVar.n(atlw.O(uuid, enwdVar, v));
-        if (fmml.h() && asxd.b(aszi.b().a(this.d))) {
-            arxoVar.j("fire attempt", new Object[0]);
+        avpz avpzVar = avbeVar.a;
+        eqik eqikVar = (eqik) v.b;
+        eqikVar.e = i - 2;
+        eqikVar.b = 4 | eqikVar.b;
+        avpzVar.n(avpz.O(uuid, eqjwVar, v));
+        if (fpeg.h() && avbg.b(avdl.b().a(this.d))) {
+            auadVar.j("fire attempt", new Object[0]);
             synchronized (SimStateChecker.class) {
                 ScheduledFuture scheduledFuture = b;
                 if (scheduledFuture != null && !scheduledFuture.isDone() && !b.isCancelled()) {
-                    arxoVar.j("cancel attempt", new Object[0]);
+                    auadVar.j("cancel attempt", new Object[0]);
                     b.cancel(false);
                 }
-                b = ((asmb) this.h).schedule(this.g, fmml.a.a().e(), TimeUnit.MILLISECONDS);
+                b = ((aupv) this.h).schedule(this.g, fpeg.a.lK().e(), TimeUnit.MILLISECONDS);
             }
         }
     }

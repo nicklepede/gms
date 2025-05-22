@@ -7,9 +7,9 @@ import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arns;
-import defpackage.arwm;
-import defpackage.arxc;
+import defpackage.atqh;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.io.BufferedOutputStream;
 import java.io.Closeable;
 import java.io.DataInputStream;
@@ -20,10 +20,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class BitmapTeleporter extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new arns();
+    public static final Parcelable.Creator CREATOR = new atqh();
     final int a;
     public ParcelFileDescriptor b;
     final int c;
@@ -50,7 +50,7 @@ public class BitmapTeleporter extends AbstractSafeParcelable implements Reflecte
     public final Bitmap a() {
         if (!this.d) {
             ParcelFileDescriptor parcelFileDescriptor = this.b;
-            arwm.s(parcelFileDescriptor);
+            atzb.s(parcelFileDescriptor);
             DataInputStream dataInputStream = new DataInputStream(new ParcelFileDescriptor.AutoCloseInputStream(parcelFileDescriptor));
             try {
                 try {
@@ -87,7 +87,7 @@ public class BitmapTeleporter extends AbstractSafeParcelable implements Reflecte
     public final void writeToParcel(Parcel parcel, int i) {
         if (this.b == null) {
             Bitmap bitmap = this.e;
-            arwm.s(bitmap);
+            atzb.s(bitmap);
             ByteBuffer allocate = ByteBuffer.allocate(bitmap.getRowBytes() * bitmap.getHeight());
             bitmap.copyPixelsToBuffer(allocate);
             byte[] array = allocate.array();
@@ -122,11 +122,11 @@ public class BitmapTeleporter extends AbstractSafeParcelable implements Reflecte
                 throw new IllegalStateException("Could not create temporary file", e2);
             }
         }
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.t(parcel, 2, this.b, i | 1, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.t(parcel, 2, this.b, i | 1, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.c(parcel, a);
         this.b = null;
     }
 

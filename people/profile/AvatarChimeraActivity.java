@@ -10,49 +10,49 @@ import android.widget.Toast;
 import com.google.android.gms.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.people.profile.AvatarChimeraActivity;
-import defpackage.aquo;
-import defpackage.aqxd;
-import defpackage.aqxp;
-import defpackage.aqxq;
-import defpackage.aqxr;
-import defpackage.aqxs;
-import defpackage.aqyg;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asnd;
-import defpackage.asng;
-import defpackage.asot;
+import defpackage.asxd;
+import defpackage.aszs;
+import defpackage.atae;
+import defpackage.ataf;
+import defpackage.atag;
+import defpackage.atah;
+import defpackage.atav;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.auqx;
+import defpackage.aura;
+import defpackage.ausn;
 import defpackage.bp;
 import defpackage.cq;
-import defpackage.ctji;
-import defpackage.ctjk;
-import defpackage.ctkm;
-import defpackage.ctko;
-import defpackage.cuds;
-import defpackage.cudy;
-import defpackage.cuey;
-import defpackage.cuft;
-import defpackage.cufu;
-import defpackage.cufv;
-import defpackage.cufx;
-import defpackage.cufy;
-import defpackage.cufz;
-import defpackage.cvfa;
-import defpackage.ejhf;
-import defpackage.ekya;
-import defpackage.elan;
-import defpackage.enrv;
-import defpackage.ensj;
-import defpackage.ensv;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.frfw;
-import defpackage.qfp;
+import defpackage.cvso;
+import defpackage.cvsq;
+import defpackage.cvts;
+import defpackage.cvtu;
+import defpackage.cwmz;
+import defpackage.cwnf;
+import defpackage.cwof;
+import defpackage.cwpa;
+import defpackage.cwpb;
+import defpackage.cwpc;
+import defpackage.cwpe;
+import defpackage.cwpf;
+import defpackage.cwpg;
+import defpackage.cxoj;
+import defpackage.eluo;
+import defpackage.enlm;
+import defpackage.ennz;
+import defpackage.eqfo;
+import defpackage.eqgc;
+import defpackage.eqgo;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.ftzr;
+import defpackage.ryt;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz {
+public final class AvatarChimeraActivity extends ryt implements ataf, atag, cwpg {
     public cq k;
     public boolean l;
     public Uri m;
@@ -61,50 +61,50 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
     public Uri p;
     public boolean q;
     public Context r;
-    private aqxs u;
+    private atah u;
     private String v;
     private String x;
     private String y;
-    private static final asot s = asot.b("People.Avatar", asej.PEOPLE);
+    private static final ausn s = ausn.b("People.Avatar", auid.PEOPLE);
     public static final byte[] j = new byte[0];
-    private final ctkm t = ctkm.a();
+    private final cvts t = cvts.a();
     private int w = -1;
-    private final ensv z = new asmf(Integer.MAX_VALUE, 9);
-    private final aqyg A = new cuft(this);
-    private final enrv B = new cufu(this);
-    private final aqyg C = new cufv(this);
+    private final eqgo z = new aupz(Integer.MAX_VALUE, 9);
+    private final atav A = new cwpa(this);
+    private final eqfo B = new cwpb(this);
+    private final atav C = new cwpc(this);
 
     private final void n() {
-        Callable callable = new Callable() { // from class: cufs
+        Callable callable = new Callable() { // from class: cwoz
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 AvatarChimeraActivity avatarChimeraActivity = AvatarChimeraActivity.this;
-                return cuca.a(avatarChimeraActivity.r).b(avatarChimeraActivity.o.toString(), false);
+                return cwlh.a(avatarChimeraActivity.r).b(avatarChimeraActivity.o.toString(), false);
             }
         };
-        ensv ensvVar = this.z;
-        ensj.t(ensvVar.submit(callable), this.B, ensvVar);
+        eqgo eqgoVar = this.z;
+        eqgc.t(eqgoVar.submit(callable), this.B, eqgoVar);
     }
 
     private final void o() {
         Uri uri = this.m;
-        aqxd aqxdVar = ctjk.a;
+        aszs aszsVar = cvsq.a;
         boolean z = uri != null;
-        aqxs aqxsVar = this.u;
-        aqxsVar.e(new cudy(aqxsVar, this.x, this.y, this.p, z)).e(this.C);
+        atah atahVar = this.u;
+        atahVar.e(new cwnf(atahVar, this.x, this.y, this.p, z)).e(this.C);
         this.q = true;
-        this.k = new cufx();
+        this.k = new cwpe();
         bp bpVar = new bp(getSupportFragmentManager());
         bpVar.v(this.k, "progress_dialog");
         bpVar.b();
     }
 
-    @Override // defpackage.cufz
+    @Override // defpackage.cwpg
     public final void a() {
         g();
     }
 
-    @Override // defpackage.cufz
+    @Override // defpackage.cwpg
     public final void b() {
         this.n = Uri.EMPTY;
         Intent intent = new Intent("android.intent.action.PICK");
@@ -112,12 +112,12 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
         startActivityForResult(intent, 2);
     }
 
-    @Override // defpackage.cufz
+    @Override // defpackage.cwpg
     public final void c() {
-        Uri a = cufy.a(this, "camera-avatar.jpg");
+        Uri a = cwpf.a(this, "camera-avatar.jpg");
         this.m = a;
         if (a == null) {
-            cuey.l("People.Avatar", "Failed to create temp file to take photo");
+            cwof.l("People.Avatar", "Failed to create temp file to take photo");
             k();
             g();
             return;
@@ -129,7 +129,7 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
         try {
             startActivityForResult(intent, 1);
         } catch (ActivityNotFoundException unused) {
-            cuey.l("People.Avatar", "No activity to take photo");
+            cwof.l("People.Avatar", "No activity to take photo");
         }
     }
 
@@ -162,38 +162,38 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
     }
 
     public final void m(int i, boolean z) {
-        if (frfw.a.a().a()) {
-            ctkm ctkmVar = this.t;
-            fecj v = ekya.a.v();
+        if (ftzr.a.lK().a()) {
+            cvts cvtsVar = this.t;
+            fgrc v = enlm.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            ekya ekyaVar = (ekya) fecpVar;
-            ekyaVar.c = i - 1;
-            ekyaVar.b |= 1;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v.b;
+            enlm enlmVar = (enlm) fgriVar;
+            enlmVar.c = i - 1;
+            enlmVar.b |= 1;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            ekya ekyaVar2 = (ekya) v.b;
-            ekyaVar2.b |= 2;
-            ekyaVar2.d = z;
-            ekya ekyaVar3 = (ekya) v.Q();
+            enlm enlmVar2 = (enlm) v.b;
+            enlmVar2.b |= 2;
+            enlmVar2.d = z;
+            enlm enlmVar3 = (enlm) v.Q();
             String str = this.x;
-            ctko ctkoVar = ctkmVar.b;
-            fecj v2 = elan.a.v();
+            cvtu cvtuVar = cvtsVar.b;
+            fgrc v2 = ennz.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            elan elanVar = (elan) v2.b;
-            ekyaVar3.getClass();
-            elanVar.t = ekyaVar3;
-            elanVar.b |= 32768;
-            ctko.b(str, v2);
+            ennz ennzVar = (ennz) v2.b;
+            enlmVar3.getClass();
+            ennzVar.t = enlmVar3;
+            ennzVar.b |= 32768;
+            cvtu.b(str, v2);
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i == 1) {
@@ -227,7 +227,7 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
         Uri data = intent.getData();
         this.n = data;
         if (data == null || TextUtils.isEmpty(data.toString())) {
-            cuey.l("People.Avatar", "Empty data returned from pick photo");
+            cwof.l("People.Avatar", "Empty data returned from pick photo");
             k();
             g();
             return;
@@ -244,12 +244,12 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
         }
     }
 
-    @Override // defpackage.aqzv
+    @Override // defpackage.atck
     public final void onConnected(Bundle bundle) {
         if (!this.l) {
-            aqxd aqxdVar = ctjk.a;
-            aqxs aqxsVar = this.u;
-            aqxsVar.d(new cuds(aqxsVar, this.x, this.y)).e(this.A);
+            aszs aszsVar = cvsq.a;
+            atah atahVar = this.u;
+            atahVar.d(new cwmz(atahVar, this.x, this.y)).e(this.A);
         } else if (this.o != null) {
             n();
         } else {
@@ -260,27 +260,27 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
         }
     }
 
-    @Override // defpackage.arcf
+    @Override // defpackage.ateu
     public final void onConnectionFailed(ConnectionResult connectionResult) {
         k();
         h();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         Bundle extras;
         super.onCreate(bundle);
         this.r = getApplicationContext();
         getWindow().getDecorView();
-        int i = asnd.a;
-        if (aquo.g(this)) {
-            ((ejhf) s.j()).x("This activity is not available for restricted profile.");
+        int i = auqx.a;
+        if (asxd.g(this)) {
+            ((eluo) s.j()).x("This activity is not available for restricted profile.");
             setResult(0);
             finish();
             return;
         }
         try {
-            this.v = asng.B(this);
+            this.v = aura.B(this);
             if (bundle != null) {
                 this.w = bundle.getInt("app_id", -1);
                 this.x = bundle.getString("account_name");
@@ -297,7 +297,7 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
                 this.y = extras.getString("com.google.android.gms.people.profile.EXTRA_PAGE_ID");
             }
             if (TextUtils.isEmpty(this.x)) {
-                cuey.c("People.Avatar", "Profile image account name is unspecified");
+                cwof.c("People.Avatar", "Profile image account name is unspecified");
                 l(2);
                 setResult(0);
                 finish();
@@ -309,10 +309,10 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
                     this.w = extras2.getInt("com.google.android.gms.people.profile.EXTRA_APP_ID", -1);
                 }
                 if (this.w == -1) {
-                    int intValue = ((Integer) cvfa.a.getOrDefault(this.v, -1)).intValue();
+                    int intValue = ((Integer) cxoj.a.getOrDefault(this.v, -1)).intValue();
                     this.w = intValue;
                     if (intValue == -1) {
-                        cuey.c("People.Avatar", "EXTRA_SOCIAL_CLIENT_APP_ID must be set");
+                        cwof.c("People.Avatar", "EXTRA_SOCIAL_CLIENT_APP_ID must be set");
                         l(3);
                         setResult(0);
                         finish();
@@ -320,13 +320,13 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
                     }
                 }
             }
-            aqxp aqxpVar = new aqxp(this);
-            aqxpVar.c = this.v;
-            aqxd aqxdVar = ctjk.a;
-            ctji ctjiVar = new ctji();
-            ctjiVar.a = this.w;
-            aqxpVar.d(aqxdVar, ctjiVar.a());
-            aqxs a = aqxpVar.a();
+            atae ataeVar = new atae(this);
+            ataeVar.c = this.v;
+            aszs aszsVar = cvsq.a;
+            cvso cvsoVar = new cvso();
+            cvsoVar.a = this.w;
+            ataeVar.d(aszsVar, cvsoVar.a());
+            atah a = ataeVar.a();
             this.u = a;
             a.l(this);
             this.u.m(this);
@@ -339,7 +339,7 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
         }
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putInt("app_id", this.w);
@@ -353,7 +353,7 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
         bundle.putBoolean("result_pending", this.q);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStart() {
         super.onStart();
         if (this.u.p() || this.u.q()) {
@@ -362,7 +362,7 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
         this.u.g();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStop() {
         super.onStop();
         if (this.u.p() || this.u.q()) {
@@ -370,7 +370,7 @@ public final class AvatarChimeraActivity extends qfp implements aqxq, aqxr, cufz
         }
     }
 
-    @Override // defpackage.aqzv
+    @Override // defpackage.atck
     public final void onConnectionSuspended(int i) {
     }
 }

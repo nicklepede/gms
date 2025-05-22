@@ -6,252 +6,252 @@ import android.util.Base64;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
 import com.google.android.gms.semanticlocationhistory.settings.SettingsSyncOneOffService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.czuo;
-import defpackage.czuq;
-import defpackage.czuw;
-import defpackage.dbkw;
-import defpackage.dbln;
-import defpackage.dbnr;
-import defpackage.eiho;
-import defpackage.ejhf;
-import defpackage.enox;
-import defpackage.enpf;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.enti;
-import defpackage.erdc;
-import defpackage.erdd;
-import defpackage.etnz;
-import defpackage.etoc;
-import defpackage.etow;
-import defpackage.etoy;
-import defpackage.etoz;
-import defpackage.etqp;
-import defpackage.evnn;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feea;
-import defpackage.fefi;
-import defpackage.fegw;
-import defpackage.fegx;
-import defpackage.frxn;
-import defpackage.frxq;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dcep;
+import defpackage.dcer;
+import defpackage.dcex;
+import defpackage.ddvc;
+import defpackage.ddvt;
+import defpackage.ddxx;
+import defpackage.ekut;
+import defpackage.eluo;
+import defpackage.eqcq;
+import defpackage.eqcy;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.eqhb;
+import defpackage.etry;
+import defpackage.etrz;
+import defpackage.ewdr;
+import defpackage.ewdu;
+import defpackage.eweo;
+import defpackage.eweq;
+import defpackage.ewer;
+import defpackage.ewgh;
+import defpackage.eydj;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgst;
+import defpackage.fgub;
+import defpackage.fgvp;
+import defpackage.fgvq;
+import defpackage.fush;
+import defpackage.fusk;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class GcmIntentOperation extends IntentOperation {
-    public static final asot a = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "Notification");
-    private czlk b;
-    private czje c;
-    private dbkw d;
+    public static final ausn a = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "Notification");
+    private dbvg b;
+    private dbtc c;
+    private ddvc d;
 
-    public static final erdd b(Throwable th) {
-        return new erdd(erdc.NO_USER_DATA, th.getMessage());
+    public static final etrz b(Throwable th) {
+        return new etrz(etry.NO_USER_DATA, th.getMessage());
     }
 
-    private final czlk c() {
+    private final dbvg c() {
         if (this.b == null) {
-            this.b = new czlk(a());
+            this.b = new dbvg(a());
         }
         return this.b;
     }
 
-    private final dbkw d() {
+    private final ddvc d() {
         if (this.d == null) {
-            this.d = new dbkw();
+            this.d = new ddvc();
         }
         return this.d;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    private final void e(evnn evnnVar) {
-        czuq czuqVar;
-        enss enssVar;
-        Account account = new Account(evnnVar.b, "com.google");
-        if (frxq.h()) {
-            czuw g = c().g();
+    private final void e(eydj eydjVar) {
+        dcer dcerVar;
+        eqgl eqglVar;
+        Account account = new Account(eydjVar.b, "com.google");
+        if (fusk.g()) {
+            dcex g = c().g();
             String str = account.name;
-            czuqVar = czuq.a;
+            dcerVar = dcer.a;
             str.getClass();
-            feea feeaVar = g.c;
-            if (feeaVar.containsKey(str)) {
-                czuqVar = (czuq) feeaVar.get(str);
+            fgst fgstVar = g.c;
+            if (fgstVar.containsKey(str)) {
+                dcerVar = (dcer) fgstVar.get(str);
             }
         } else {
-            czuqVar = (czuq) c().h().getOrDefault(account.name, czuq.a);
+            dcerVar = (dcer) c().h().getOrDefault(account.name, dcer.a);
         }
-        etqp etqpVar = evnnVar.c;
-        if (etqpVar == null) {
-            etqpVar = etqp.a;
+        ewgh ewghVar = eydjVar.c;
+        if (ewghVar == null) {
+            ewghVar = ewgh.a;
         }
-        fefi fefiVar = etqpVar.c;
-        if (fefiVar == null) {
-            fefiVar = fefi.a;
+        fgub fgubVar = ewghVar.c;
+        if (fgubVar == null) {
+            fgubVar = fgub.a;
         }
-        if (fegw.a(fefiVar, fegx.h(czuqVar.t)) >= 0) {
+        if (fgvp.a(fgubVar, fgvq.h(dcerVar.t)) >= 0) {
             try {
                 if (!c().R(account) && c().O(account)) {
-                    etqp etqpVar2 = evnnVar.c;
-                    if (etqpVar2 == null) {
-                        etqpVar2 = etqp.a;
+                    ewgh ewghVar2 = eydjVar.c;
+                    if (ewghVar2 == null) {
+                        ewghVar2 = ewgh.a;
                     }
-                    etoc etocVar = etqpVar2.d;
-                    if (etocVar == null) {
-                        etocVar = etoc.a;
+                    ewdu ewduVar = ewghVar2.d;
+                    if (ewduVar == null) {
+                        ewduVar = ewdu.a;
                     }
-                    etnz etnzVar = etocVar.b;
-                    if (etnzVar == null) {
-                        etnzVar = etnz.a;
+                    ewdr ewdrVar = ewduVar.b;
+                    if (ewdrVar == null) {
+                        ewdrVar = ewdr.a;
                     }
-                    if (etnzVar.b) {
+                    if (ewdrVar.b) {
                         a().e("NotificationScheduleManualSync");
                         SettingsSyncOneOffService.g(AppContextProvider.a());
                     }
                 }
-                dbkw d = d();
-                etqp etqpVar3 = evnnVar.c;
-                if (etqpVar3 == null) {
-                    etqpVar3 = etqp.a;
+                ddvc d = d();
+                ewgh ewghVar3 = eydjVar.c;
+                if (ewghVar3 == null) {
+                    ewghVar3 = ewgh.a;
                 }
-                if (((Boolean) ((enpf) d.a(account, etqpVar3)).v(frxn.l(), TimeUnit.MILLISECONDS)).booleanValue()) {
+                if (((Boolean) ((eqcy) d.a(account, ewghVar3)).v(fush.l(), TimeUnit.MILLISECONDS)).booleanValue()) {
                     a().e("NotificationStoreSettingSuccess");
                 } else {
                     a().e("NotificationStoreSettingFailure");
-                    ((ejhf) ((ejhf) a.i()).ah(10826)).x("Failed to save settings from notification");
+                    ((eluo) ((eluo) a.i()).ai(10829)).x("Failed to save settings from notification");
                 }
                 d().f();
             } catch (InterruptedException | ExecutionException | TimeoutException e) {
                 a().e("NotificationStoreSettingFailure");
-                ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 10827)).B("Failed to save settings from notification %s", b(e));
+                ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 10830)).B("Failed to save settings from notification %s", b(e));
             }
         } else {
             a().e("NotificationStaleSetting");
         }
-        etqp etqpVar4 = evnnVar.c;
-        if (etqpVar4 == null) {
-            etqpVar4 = etqp.a;
+        ewgh ewghVar4 = eydjVar.c;
+        if (ewghVar4 == null) {
+            ewghVar4 = ewgh.a;
         }
-        fefi fefiVar2 = etqpVar4.f;
-        if (fefiVar2 == null) {
-            fefiVar2 = fefi.a;
+        fgub fgubVar2 = ewghVar4.f;
+        if (fgubVar2 == null) {
+            fgubVar2 = fgub.a;
         }
-        if (fegw.a(fefiVar2, fegx.h(czuqVar.i)) > 0) {
-            ensj.t(d().b(account), new dbln(this), enre.a);
+        if (fgvp.a(fgubVar2, fgvq.h(dcerVar.i)) > 0) {
+            eqgc.t(d().b(account), new ddvt(this), eqex.a);
         }
-        if (frxq.a.a().J()) {
-            etqp etqpVar5 = evnnVar.c;
-            if (etqpVar5 == null) {
-                etqpVar5 = etqp.a;
+        if (fusk.a.lK().J()) {
+            ewgh ewghVar5 = eydjVar.c;
+            if (ewghVar5 == null) {
+                ewghVar5 = ewgh.a;
             }
-            etoz etozVar = etqpVar5.g;
-            if (etozVar == null) {
-                etozVar = etoz.a;
+            ewer ewerVar = ewghVar5.g;
+            if (ewerVar == null) {
+                ewerVar = ewer.a;
             }
-            fefi fefiVar3 = etozVar.e;
-            if (fefiVar3 == null) {
-                fefiVar3 = fefi.a;
+            fgub fgubVar3 = ewerVar.e;
+            if (fgubVar3 == null) {
+                fgubVar3 = fgub.a;
             }
-            czuo czuoVar = czuqVar.q;
-            if (czuoVar == null) {
-                czuoVar = czuo.a;
+            dcep dcepVar = dcerVar.q;
+            if (dcepVar == null) {
+                dcepVar = dcep.a;
             }
-            if (fegw.a(fefiVar3, fegx.h(czuoVar.h)) >= 0) {
-                a().p("NotificationSyncMigrationInfoUpdateLatency", dbnr.a(-60L, 1440L, 60L, TimeUnit.MILLISECONDS.toMinutes(System.currentTimeMillis() - fegx.b(fefiVar3))));
+            if (fgvp.a(fgubVar3, fgvq.h(dcepVar.h)) >= 0) {
+                a().p("NotificationSyncMigrationInfoUpdateLatency", ddxx.a(-60L, 1440L, 60L, TimeUnit.MILLISECONDS.toMinutes(System.currentTimeMillis() - fgvq.b(fgubVar3))));
                 try {
-                    dbkw d2 = d();
-                    etqp etqpVar6 = evnnVar.c;
-                    if (etqpVar6 == null) {
-                        etqpVar6 = etqp.a;
+                    ddvc d2 = d();
+                    ewgh ewghVar6 = eydjVar.c;
+                    if (ewghVar6 == null) {
+                        ewghVar6 = ewgh.a;
                     }
-                    enti entiVar = new enti(enre.a);
-                    if ((etqpVar6.b & 128) != 0) {
-                        czlk czlkVar = d2.b;
-                        etoz etozVar2 = etqpVar6.g;
-                        int a2 = etoy.a((etozVar2 == null ? etoz.a : etozVar2).c);
+                    eqhb eqhbVar = new eqhb(eqex.a);
+                    if ((ewghVar6.b & 128) != 0) {
+                        dbvg dbvgVar = d2.b;
+                        ewer ewerVar2 = ewghVar6.g;
+                        int a2 = eweq.a((ewerVar2 == null ? ewer.a : ewerVar2).c);
                         int i = a2 == 0 ? 1 : a2;
-                        String str2 = (etozVar2 == null ? etoz.a : etozVar2).f;
-                        int a3 = etow.a((etozVar2 == null ? etoz.a : etozVar2).d);
+                        String str2 = (ewerVar2 == null ? ewer.a : ewerVar2).f;
+                        int a3 = eweo.a((ewerVar2 == null ? ewer.a : ewerVar2).d);
                         int i2 = a3 == 0 ? 1 : a3;
-                        boolean z = (etozVar2 == null ? etoz.a : etozVar2).g;
-                        if (etozVar2 == null) {
-                            etozVar2 = etoz.a;
+                        boolean z = (ewerVar2 == null ? ewer.a : ewerVar2).g;
+                        if (ewerVar2 == null) {
+                            ewerVar2 = ewer.a;
                         }
-                        fefi fefiVar4 = etozVar2.e;
-                        if (fefiVar4 == null) {
-                            fefiVar4 = fefi.a;
+                        fgub fgubVar4 = ewerVar2.e;
+                        if (fgubVar4 == null) {
+                            fgubVar4 = fgub.a;
                         }
-                        enssVar = czlkVar.X(account, i, str2, i2, z, fegx.b(fefiVar4));
+                        eqglVar = dbvgVar.X(account, i, str2, i2, z, fgvq.b(fgubVar4));
                     } else {
-                        enssVar = ensm.a;
+                        eqglVar = eqgf.a;
                     }
-                    if (((Boolean) ((enpf) enox.f(enps.f(ensi.h(enssVar), new eiho() { // from class: dbkg
-                        @Override // defpackage.eiho
+                    if (((Boolean) ((eqcy) eqcq.f(eqdl.f(eqgb.h(eqglVar), new ekut() { // from class: ddum
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
-                            asot asotVar = dbkw.a;
+                            ausn ausnVar = ddvc.a;
                             return true;
                         }
-                    }, entiVar), Exception.class, new eiho() { // from class: dbkm
-                        @Override // defpackage.eiho
+                    }, eqhbVar), Exception.class, new ekut() { // from class: ddus
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
-                            asot asotVar = dbkw.a;
+                            ausn ausnVar = ddvc.a;
                             return false;
                         }
-                    }, entiVar)).v(frxn.l(), TimeUnit.MILLISECONDS)).booleanValue()) {
+                    }, eqhbVar)).v(fush.l(), TimeUnit.MILLISECONDS)).booleanValue()) {
                         d().d();
                     }
                 } catch (InterruptedException | ExecutionException | TimeoutException e2) {
-                    ((ejhf) ((ejhf) ((ejhf) a.i()).s(e2)).ah((char) 10825)).B("Failed to save migration info from notification %s", b(e2));
+                    ((eluo) ((eluo) ((eluo) a.i()).s(e2)).ai((char) 10828)).B("Failed to save migration info from notification %s", b(e2));
                 }
             }
         }
     }
 
-    public final czje a() {
+    public final dbtc a() {
         if (this.c == null) {
-            this.c = new czje();
+            this.c = new dbtc();
         }
         return this.c;
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (frxq.a.a().I()) {
+        if (fusk.a.lK().I()) {
             a().e("NotificationReceiveNotification");
             if (intent == null) {
-                ((ejhf) ((ejhf) a.i()).ah((char) 10823)).x("Received null intent.");
+                ((eluo) ((eluo) a.i()).ai((char) 10826)).x("Received null intent.");
                 a().e("NotificationNullIntent");
                 return;
             }
-            evnn evnnVar = evnn.a;
+            eydj eydjVar = eydj.a;
             String stringExtra = intent.getStringExtra("lhs_settings_notification");
             if (stringExtra == null) {
-                ((ejhf) ((ejhf) a.i()).ah((char) 10820)).B("Received notification with incorrect keys: %s", intent.getExtras());
+                ((eluo) ((eluo) a.i()).ai((char) 10823)).B("Received notification with incorrect keys: %s", intent.getExtras());
             } else {
                 try {
                     byte[] decode = Base64.decode(stringExtra, 0);
-                    fecp y = fecp.y(evnn.a, decode, 0, decode.length, febw.a());
-                    fecp.M(y);
-                    evnnVar = (evnn) y;
-                } catch (fedk e) {
-                    ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 10819)).B("Failed to decode and parse the notification payload with error %s.", b(e));
+                    fgri y = fgri.y(eydjVar, decode, 0, decode.length, fgqp.a());
+                    fgri.M(y);
+                    eydjVar = (eydj) y;
+                } catch (fgsd e) {
+                    ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 10822)).B("Failed to decode and parse the notification payload with error %s.", b(e));
                 }
             }
-            if (!evnnVar.equals(evnn.a)) {
-                e(evnnVar);
+            if (!eydjVar.equals(eydj.a)) {
+                e(eydjVar);
             } else {
-                ((ejhf) ((ejhf) a.i()).ah((char) 10822)).x("Received notification with invalid payload data.");
+                ((eluo) ((eluo) a.i()).ai((char) 10825)).x("Received notification with invalid payload data.");
                 a().e("NotificationInvalidPayload");
             }
         }

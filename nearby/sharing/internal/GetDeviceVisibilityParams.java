@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmvm;
-import defpackage.cmwg;
-import defpackage.cmwi;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpdu;
+import defpackage.cpeo;
+import defpackage.cpeq;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class GetDeviceVisibilityParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cmvm();
-    public cmwi a;
+    public static final Parcelable.Creator CREATOR = new cpdu();
+    public cpeq a;
 
     public GetDeviceVisibilityParams() {
     }
@@ -26,7 +26,7 @@ public final class GetDeviceVisibilityParams extends AbstractSafeParcelable {
             return true;
         }
         if (obj instanceof GetDeviceVisibilityParams) {
-            return arwb.b(this.a, ((GetDeviceVisibilityParams) obj).a);
+            return atyq.b(this.a, ((GetDeviceVisibilityParams) obj).a);
         }
         return false;
     }
@@ -37,19 +37,19 @@ public final class GetDeviceVisibilityParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.c(parcel, a);
     }
 
     public GetDeviceVisibilityParams(IBinder iBinder) {
-        cmwi cmwgVar;
+        cpeq cpeoVar;
         if (iBinder == null) {
-            cmwgVar = null;
+            cpeoVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IDeviceVisibilityResultListener");
-            cmwgVar = queryLocalInterface instanceof cmwi ? (cmwi) queryLocalInterface : new cmwg(iBinder);
+            cpeoVar = queryLocalInterface instanceof cpeq ? (cpeq) queryLocalInterface : new cpeo(iBinder);
         }
-        this.a = cmwgVar;
+        this.a = cpeoVar;
     }
 }

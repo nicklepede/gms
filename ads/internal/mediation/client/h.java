@@ -6,13 +6,13 @@ import android.os.Parcel;
 import com.google.android.gms.ads.internal.client.AdErrorParcel;
 import com.google.android.gms.ads.internal.reward.mediation.client.RewardItemParcel;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.fwac;
-import defpackage.otn;
-import defpackage.oto;
+import defpackage.fywe;
+import defpackage.qmq;
+import defpackage.qmr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class h extends otn implements i {
+public final class h extends qmq implements i {
     private final com.google.android.gms.ads.mediation.a a;
     private final com.google.android.gms.ads.internal.reward.mediation.client.a b;
 
@@ -25,9 +25,9 @@ public final class h extends otn implements i {
         com.google.android.gms.ads.internal.reward.mediation.client.a aVar = this.b;
         if (aVar != null) {
             ObjectWrapper objectWrapper = new ObjectWrapper(this.a);
-            Parcel fr = aVar.fr();
-            oto.g(fr, objectWrapper);
-            aVar.ft(8, fr);
+            Parcel fE = aVar.fE();
+            qmr.g(fE, objectWrapper);
+            aVar.fG(8, fE);
         }
     }
 
@@ -36,9 +36,9 @@ public final class h extends otn implements i {
         com.google.android.gms.ads.internal.reward.mediation.client.a aVar = this.b;
         if (aVar != null) {
             ObjectWrapper objectWrapper = new ObjectWrapper(this.a);
-            Parcel fr = aVar.fr();
-            oto.g(fr, objectWrapper);
-            aVar.ft(6, fr);
+            Parcel fE = aVar.fE();
+            qmr.g(fE, objectWrapper);
+            aVar.fG(6, fE);
         }
     }
 
@@ -47,9 +47,9 @@ public final class h extends otn implements i {
         com.google.android.gms.ads.internal.reward.mediation.client.a aVar = this.b;
         if (aVar != null) {
             ObjectWrapper objectWrapper = new ObjectWrapper(this.a);
-            Parcel fr = aVar.fr();
-            oto.g(fr, objectWrapper);
-            aVar.ft(3, fr);
+            Parcel fE = aVar.fE();
+            qmr.g(fE, objectWrapper);
+            aVar.fG(3, fE);
         }
     }
 
@@ -58,14 +58,14 @@ public final class h extends otn implements i {
         com.google.android.gms.ads.internal.reward.mediation.client.a aVar = this.b;
         if (aVar != null) {
             ObjectWrapper objectWrapper = new ObjectWrapper(this.a);
-            Parcel fr = aVar.fr();
-            oto.g(fr, objectWrapper);
-            aVar.ft(4, fr);
+            Parcel fE = aVar.fE();
+            qmr.g(fE, objectWrapper);
+            aVar.fG(4, fE);
         }
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         com.google.android.gms.ads.internal.rewarded.client.a aVar;
         switch (i) {
             case 1:
@@ -76,14 +76,14 @@ public final class h extends otn implements i {
                 break;
             case 3:
                 int readInt = parcel.readInt();
-                fq(parcel);
+                fD(parcel);
                 com.google.android.gms.ads.internal.reward.mediation.client.a aVar2 = this.b;
                 if (aVar2 != null) {
                     ObjectWrapper objectWrapper = new ObjectWrapper(this.a);
-                    Parcel fr = aVar2.fr();
-                    oto.g(fr, objectWrapper);
-                    fr.writeInt(readInt);
-                    aVar2.ft(9, fr);
+                    Parcel fE = aVar2.fE();
+                    qmr.g(fE, objectWrapper);
+                    fE.writeInt(readInt);
+                    aVar2.fG(9, fE);
                     break;
                 }
                 break;
@@ -91,7 +91,7 @@ public final class h extends otn implements i {
             case 8:
             case 11:
             case 15:
-            case fwac.t /* 20 */:
+            case fywe.t /* 20 */:
                 break;
             case 5:
                 f();
@@ -106,12 +106,12 @@ public final class h extends otn implements i {
                     if (queryLocalInterface instanceof j) {
                     }
                 }
-                fq(parcel);
+                fD(parcel);
                 break;
             case 9:
                 parcel.readString();
                 parcel.readString();
-                fq(parcel);
+                fD(parcel);
                 break;
             case 10:
                 IBinder readStrongBinder2 = parcel.readStrongBinder();
@@ -121,24 +121,24 @@ public final class h extends otn implements i {
                     }
                 }
                 parcel.readString();
-                fq(parcel);
+                fD(parcel);
                 break;
             case 12:
                 parcel.readString();
-                fq(parcel);
+                fD(parcel);
                 break;
             case 13:
                 com.google.android.gms.ads.internal.reward.mediation.client.a aVar3 = this.b;
                 if (aVar3 != null) {
                     ObjectWrapper objectWrapper2 = new ObjectWrapper(this.a);
-                    Parcel fr2 = aVar3.fr();
-                    oto.g(fr2, objectWrapper2);
-                    aVar3.ft(5, fr2);
+                    Parcel fE2 = aVar3.fE();
+                    qmr.g(fE2, objectWrapper2);
+                    aVar3.fG(5, fE2);
                     break;
                 }
                 break;
             case 14:
-                fq(parcel);
+                fD(parcel);
                 break;
             case 16:
                 IBinder readStrongBinder3 = parcel.readStrongBinder();
@@ -148,63 +148,63 @@ public final class h extends otn implements i {
                     IInterface queryLocalInterface3 = readStrongBinder3.queryLocalInterface("com.google.android.gms.ads.internal.rewarded.client.IRewardItem");
                     aVar = queryLocalInterface3 instanceof com.google.android.gms.ads.internal.rewarded.client.a ? (com.google.android.gms.ads.internal.rewarded.client.a) queryLocalInterface3 : new com.google.android.gms.ads.internal.rewarded.client.a(readStrongBinder3);
                 }
-                fq(parcel);
+                fD(parcel);
                 com.google.android.gms.ads.internal.reward.mediation.client.a aVar4 = this.b;
                 if (aVar4 != null) {
                     ObjectWrapper objectWrapper3 = new ObjectWrapper(this.a);
-                    Parcel fs = aVar.fs(1, aVar.fr());
-                    String readString = fs.readString();
-                    fs.recycle();
-                    Parcel fs2 = aVar.fs(2, aVar.fr());
-                    int readInt2 = fs2.readInt();
-                    fs2.recycle();
+                    Parcel fF = aVar.fF(1, aVar.fE());
+                    String readString = fF.readString();
+                    fF.recycle();
+                    Parcel fF2 = aVar.fF(2, aVar.fE());
+                    int readInt2 = fF2.readInt();
+                    fF2.recycle();
                     RewardItemParcel rewardItemParcel = new RewardItemParcel(readString, readInt2);
-                    Parcel fr3 = aVar4.fr();
-                    oto.g(fr3, objectWrapper3);
-                    oto.e(fr3, rewardItemParcel);
-                    aVar4.ft(7, fr3);
+                    Parcel fE3 = aVar4.fE();
+                    qmr.g(fE3, objectWrapper3);
+                    qmr.e(fE3, rewardItemParcel);
+                    aVar4.fG(7, fE3);
                     break;
                 }
                 break;
-            case fwac.q /* 17 */:
+            case fywe.q /* 17 */:
                 parcel.readInt();
-                fq(parcel);
+                fD(parcel);
                 break;
             case 18:
                 com.google.android.gms.ads.internal.reward.mediation.client.a aVar5 = this.b;
                 if (aVar5 != null) {
                     ObjectWrapper objectWrapper4 = new ObjectWrapper(this.a);
-                    Parcel fr4 = aVar5.fr();
-                    oto.g(fr4, objectWrapper4);
-                    aVar5.ft(11, fr4);
+                    Parcel fE4 = aVar5.fE();
+                    qmr.g(fE4, objectWrapper4);
+                    aVar5.fG(11, fE4);
                     break;
                 }
                 break;
             case 19:
-                fq(parcel);
+                fD(parcel);
                 break;
-            case fwac.u /* 21 */:
+            case fywe.u /* 21 */:
                 parcel.readString();
-                fq(parcel);
+                fD(parcel);
                 break;
-            case fwac.v /* 22 */:
+            case fywe.v /* 22 */:
                 parcel.readInt();
                 parcel.readString();
-                fq(parcel);
+                fD(parcel);
                 break;
-            case fwac.w /* 23 */:
-                fq(parcel);
+            case fywe.w /* 23 */:
+                fD(parcel);
                 break;
-            case fwac.x /* 24 */:
-                fq(parcel);
+            case fywe.x /* 24 */:
+                fD(parcel);
                 break;
-            case fwac.y /* 25 */:
+            case fywe.y /* 25 */:
                 com.google.android.gms.ads.internal.reward.mediation.client.a aVar6 = this.b;
                 if (aVar6 != null) {
                     ObjectWrapper objectWrapper5 = new ObjectWrapper(this.a);
-                    Parcel fr5 = aVar6.fr();
-                    oto.g(fr5, objectWrapper5);
-                    aVar6.ft(13, fr5);
+                    Parcel fE5 = aVar6.fE();
+                    qmr.g(fE5, objectWrapper5);
+                    aVar6.fG(13, fE5);
                     break;
                 }
                 break;

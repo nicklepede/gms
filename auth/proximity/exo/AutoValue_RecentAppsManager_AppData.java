@@ -4,12 +4,12 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.UserHandle;
 import com.google.protobuf.contrib.android.ProtoParsers$ParcelableProto;
-import defpackage.acik;
+import defpackage.aeik;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AutoValue_RecentAppsManager_AppData extends C$AutoValue_RecentAppsManager_AppData {
-    public static final Parcelable.Creator CREATOR = new acik();
+    public static final Parcelable.Creator CREATOR = new aeik();
 
     public AutoValue_RecentAppsManager_AppData(ProtoParsers$ParcelableProto protoParsers$ParcelableProto, long j, UserHandle userHandle) {
         super(protoParsers$ParcelableProto, j, userHandle);

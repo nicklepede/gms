@@ -17,7 +17,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class h extends WebChromeClient {
     private final i a;
@@ -172,7 +172,7 @@ public final class h extends WebChromeClient {
         L27:
             r0 = r3
         L28:
-            com.google.android.gms.ads.internal.config.g r1 = com.google.android.gms.ads.internal.config.p.cd
+            com.google.android.gms.ads.internal.config.g r1 = com.google.android.gms.ads.internal.config.p.ce
             java.lang.Object r1 = r1.g()
             java.lang.Boolean r1 = (java.lang.Boolean) r1
             boolean r1 = r1.booleanValue()
@@ -182,7 +182,7 @@ public final class h extends WebChromeClient {
         L3a:
             r6.invoke(r5, r0, r3)
         L3d:
-            com.google.android.gms.ads.internal.config.g r5 = com.google.android.gms.ads.internal.config.p.ce
+            com.google.android.gms.ads.internal.config.g r5 = com.google.android.gms.ads.internal.config.p.cf
             java.lang.Object r5 = r5.g()
             java.lang.Boolean r5 = (java.lang.Boolean) r5
             boolean r5 = r5.booleanValue()

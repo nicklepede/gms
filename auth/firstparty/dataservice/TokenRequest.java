@@ -11,15 +11,15 @@ import com.google.android.gms.auth.firstparty.shared.FACLConfig;
 import com.google.android.gms.auth.firstparty.shared.PACLConfig;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aazm;
-import defpackage.aazn;
-import defpackage.arwm;
-import defpackage.arxc;
+import defpackage.aczm;
+import defpackage.aczn;
+import defpackage.atzb;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class TokenRequest extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new aazn();
+    public static final Parcelable.Creator CREATOR = new aczn();
     public final String a;
     public final String b;
     Bundle c;
@@ -49,7 +49,7 @@ public class TokenRequest extends AbstractSafeParcelable implements ReflectedPar
         String str2 = account.name;
         String str3 = account.type;
         this.c = new Bundle();
-        this.h = aazm.UNKNOWN.toString();
+        this.h = aczm.UNKNOWN.toString();
         this.k = false;
         this.l = true;
         this.m = "com.google";
@@ -57,9 +57,9 @@ public class TokenRequest extends AbstractSafeParcelable implements ReflectedPar
         this.s = false;
         this.w = true;
         this.x = 0;
-        arwm.q(str2);
+        atzb.q(str2);
         this.b = str2;
-        arwm.q(str3);
+        atzb.q(str3);
         this.m = str3;
         this.a = str;
         this.r = SystemClock.elapsedRealtime();
@@ -73,13 +73,13 @@ public class TokenRequest extends AbstractSafeParcelable implements ReflectedPar
         return new Bundle(this.c);
     }
 
-    public final aazm c() {
-        return aazm.a(this.h);
+    public final aczm c() {
+        return aczm.a(this.h);
     }
 
-    public final void d(aazm aazmVar) {
-        arwm.t(aazmVar, " Consent cannot be null");
-        this.h = aazmVar.toString();
+    public final void d(aczm aczmVar) {
+        atzb.t(aczmVar, " Consent cannot be null");
+        this.h = aczmVar.toString();
     }
 
     @Deprecated
@@ -98,37 +98,37 @@ public class TokenRequest extends AbstractSafeParcelable implements ReflectedPar
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.g(parcel, 4, this.c, false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.e(parcel, 7, this.f);
-        arxc.e(parcel, 8, this.g);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.t(parcel, 10, this.i, i, false);
-        arxc.t(parcel, 11, this.j, i, false);
-        arxc.e(parcel, 13, this.k);
-        arxc.e(parcel, 14, this.l);
-        arxc.v(parcel, 15, this.m, false);
-        arxc.o(parcel, 16, this.n);
-        arxc.v(parcel, 17, this.o, false);
-        arxc.v(parcel, 18, this.p, false);
-        arxc.v(parcel, 19, this.q, false);
-        arxc.q(parcel, 20, this.r);
-        arxc.e(parcel, 21, this.s);
-        arxc.v(parcel, 22, this.t, false);
-        arxc.v(parcel, 23, this.u, false);
-        arxc.o(parcel, 24, this.v);
-        arxc.e(parcel, 25, this.w);
-        arxc.o(parcel, 26, this.x);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.g(parcel, 4, this.c, false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.e(parcel, 7, this.f);
+        atzr.e(parcel, 8, this.g);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.t(parcel, 10, this.i, i, false);
+        atzr.t(parcel, 11, this.j, i, false);
+        atzr.e(parcel, 13, this.k);
+        atzr.e(parcel, 14, this.l);
+        atzr.v(parcel, 15, this.m, false);
+        atzr.o(parcel, 16, this.n);
+        atzr.v(parcel, 17, this.o, false);
+        atzr.v(parcel, 18, this.p, false);
+        atzr.v(parcel, 19, this.q, false);
+        atzr.q(parcel, 20, this.r);
+        atzr.e(parcel, 21, this.s);
+        atzr.v(parcel, 22, this.t, false);
+        atzr.v(parcel, 23, this.u, false);
+        atzr.o(parcel, 24, this.v);
+        atzr.e(parcel, 25, this.w);
+        atzr.o(parcel, 26, this.x);
+        atzr.c(parcel, a);
     }
 
     public TokenRequest(String str, String str2, Bundle bundle, FACLConfig fACLConfig, PACLConfig pACLConfig, boolean z, boolean z2, String str3, AppDescription appDescription, CaptchaSolution captchaSolution, boolean z3, boolean z4, String str4, int i, String str5, String str6, String str7, long j, boolean z5, String str8, String str9, int i2, boolean z6, int i3) {
         this.c = new Bundle();
-        aazm.UNKNOWN.toString();
+        aczm.UNKNOWN.toString();
         this.a = str;
         this.b = str2;
         this.c = bundle;

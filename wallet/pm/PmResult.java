@@ -3,30 +3,30 @@ package com.google.android.gms.wallet.pm;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.firstparty.pm.SecurePaymentsPayload;
-import defpackage.ditf;
-import defpackage.ditg;
-import defpackage.efdk;
-import defpackage.ehiw;
-import defpackage.faox;
-import defpackage.feen;
+import defpackage.dleq;
+import defpackage.dler;
+import defpackage.ehqn;
+import defpackage.ejwc;
+import defpackage.fddm;
+import defpackage.fgtg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PmResult implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new ditf();
+    public static final Parcelable.Creator CREATOR = new dleq();
     public SecurePaymentsPayload a;
     public String b;
     public byte[] c;
     public String d;
-    public faox e;
+    public fddm e;
     public String f;
-    public ehiw g;
+    public ejwc g;
 
     private PmResult() {
     }
 
-    public static ditg a() {
-        return new ditg(new PmResult());
+    public static dler a() {
+        return new dler(new PmResult());
     }
 
     @Override // android.os.Parcelable
@@ -40,9 +40,9 @@ public class PmResult implements Parcelable {
         parcel.writeByteArray(this.c);
         parcel.writeParcelable(this.a, i);
         parcel.writeString(this.d);
-        efdk.o(this.e, parcel);
+        ehqn.o(this.e, parcel);
         parcel.writeString(this.f);
-        efdk.o(this.g, parcel);
+        ehqn.o(this.g, parcel);
     }
 
     public PmResult(Parcel parcel) {
@@ -50,8 +50,8 @@ public class PmResult implements Parcelable {
         this.c = parcel.createByteArray();
         this.a = (SecurePaymentsPayload) parcel.readParcelable(getClass().getClassLoader());
         this.d = parcel.readString();
-        this.e = (faox) efdk.f(parcel, (feen) faox.a.iB(7, null));
+        this.e = (fddm) ehqn.f(parcel, (fgtg) fddm.a.iQ(7, null));
         this.f = parcel.readString();
-        this.g = (ehiw) efdk.f(parcel, (feen) ehiw.a.iB(7, null));
+        this.g = (ejwc) ehqn.f(parcel, (fgtg) ejwc.a.iQ(7, null));
     }
 }

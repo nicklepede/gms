@@ -8,72 +8,72 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.wearable.backup.wear.WearBackupConfirmationChimeraActivity;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.arxo;
-import defpackage.djlj;
-import defpackage.djsy;
-import defpackage.djsz;
-import defpackage.djta;
-import defpackage.djtb;
-import defpackage.djvr;
-import defpackage.qeo;
-import defpackage.qfp;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.auad;
+import defpackage.dlxc;
+import defpackage.dmer;
+import defpackage.dmes;
+import defpackage.dmet;
+import defpackage.dmeu;
+import defpackage.dmhk;
+import defpackage.rxs;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class WearBackupConfirmationChimeraActivity extends qfp {
-    private static final arxo j = new djlj("WearBackupConfirmation");
-    private static final djsy k;
-    private static final djsy l;
-    private static final djsy m;
+public final class WearBackupConfirmationChimeraActivity extends ryt {
+    private static final auad j = new dlxc("WearBackupConfirmation");
+    private static final dmer k;
+    private static final dmer l;
+    private static final dmer m;
 
     static {
-        djsz djszVar = new djsz();
-        djszVar.d(0.125f);
-        djszVar.b(0.208f);
-        djszVar.c(0.0f);
-        djta a = djszVar.a();
-        djsz djszVar2 = new djsz();
-        djszVar2.d(0.122f);
-        djszVar2.b(0.208f);
-        djszVar2.c(0.0f);
-        k = new djsy(a, djszVar2.a());
-        djsz djszVar3 = new djsz();
-        djszVar3.d(0.0f);
-        djszVar3.b(0.0f);
-        djszVar3.c(0.094f);
-        djta a2 = djszVar3.a();
-        djsz djszVar4 = new djsz();
-        djszVar4.d(0.0f);
-        djszVar4.b(0.0f);
-        djszVar4.c(0.056f);
-        l = new djsy(a2, djszVar4.a());
-        djsz djszVar5 = new djsz();
-        djszVar5.d(0.0f);
-        djszVar5.b(0.0f);
-        djszVar5.c(0.052f);
-        djta a3 = djszVar5.a();
-        djsz djszVar6 = new djsz();
-        djszVar6.d(0.0f);
-        djszVar6.b(0.0f);
-        djszVar6.c(0.028f);
-        m = new djsy(a3, djszVar6.a());
+        dmes dmesVar = new dmes();
+        dmesVar.d(0.125f);
+        dmesVar.b(0.208f);
+        dmesVar.c(0.0f);
+        dmet a = dmesVar.a();
+        dmes dmesVar2 = new dmes();
+        dmesVar2.d(0.122f);
+        dmesVar2.b(0.208f);
+        dmesVar2.c(0.0f);
+        k = new dmer(a, dmesVar2.a());
+        dmes dmesVar3 = new dmes();
+        dmesVar3.d(0.0f);
+        dmesVar3.b(0.0f);
+        dmesVar3.c(0.094f);
+        dmet a2 = dmesVar3.a();
+        dmes dmesVar4 = new dmes();
+        dmesVar4.d(0.0f);
+        dmesVar4.b(0.0f);
+        dmesVar4.c(0.056f);
+        l = new dmer(a2, dmesVar4.a());
+        dmes dmesVar5 = new dmes();
+        dmesVar5.d(0.0f);
+        dmesVar5.b(0.0f);
+        dmesVar5.c(0.052f);
+        dmet a3 = dmesVar5.a();
+        dmes dmesVar6 = new dmes();
+        dmesVar6.d(0.0f);
+        dmesVar6.b(0.0f);
+        dmesVar6.c(0.028f);
+        m = new dmer(a3, dmesVar6.a());
     }
 
-    static abv a(qeo qeoVar, abt abtVar) {
-        return qeoVar.registerForActivityResult(new djvr(), abtVar);
+    static aca a(rxs rxsVar, aby abyVar) {
+        return rxsVar.registerForActivityResult(new dmhk(), abyVar);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        arxo arxoVar = j;
-        arxoVar.j("onCreate", new Object[0]);
+        auad auadVar = j;
+        auadVar.j("onCreate", new Object[0]);
         setContentView(R.layout.wear_backup_confirmation_activity);
-        djtb.b(this, findViewById(R.id.container), k);
-        djtb.b(this, findViewById(R.id.text_container), l);
-        djtb.b(this, findViewById(R.id.chip_btn_container), m);
+        dmeu.b(this, findViewById(R.id.container), k);
+        dmeu.b(this, findViewById(R.id.text_container), l);
+        dmeu.b(this, findViewById(R.id.chip_btn_container), m);
         ((TextView) findViewById(R.id.confirmation_title)).setText(getIntent().getStringExtra("confirmation_title"));
         TextView textView = (TextView) findViewById(R.id.confirmation_content);
         if (getIntent().hasExtra("confirmation_content")) {
@@ -81,13 +81,13 @@ public final class WearBackupConfirmationChimeraActivity extends qfp {
         } else {
             textView.setVisibility(8);
         }
-        View.OnClickListener onClickListener = new View.OnClickListener() { // from class: djvp
+        View.OnClickListener onClickListener = new View.OnClickListener() { // from class: dmhi
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 WearBackupConfirmationChimeraActivity.this.finish();
             }
         };
-        View.OnClickListener onClickListener2 = new View.OnClickListener() { // from class: djvq
+        View.OnClickListener onClickListener2 = new View.OnClickListener() { // from class: dmhj
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 Intent putExtra = new Intent().putExtra("confirm_pressed", true);
@@ -106,7 +106,7 @@ public final class WearBackupConfirmationChimeraActivity extends qfp {
             ((Button) findViewById(R.id.chip_cancel_btn)).setOnClickListener(onClickListener);
             findViewById(R.id.chip_btn_container).setVisibility(0);
         } else if (intExtra != 2) {
-            arxoVar.f("Unknown ButtonStyle", new Object[0]);
+            auadVar.f("Unknown ButtonStyle", new Object[0]);
             finish();
         } else {
             ((ImageButton) findViewById(R.id.single_round_cancel_btn)).setOnClickListener(onClickListener);

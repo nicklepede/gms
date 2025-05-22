@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cdzy;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgjf;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MdpDataPlanStatus extends AbstractSafeParcelable {
     private static final Map B;
@@ -58,7 +58,7 @@ public class MdpDataPlanStatus extends AbstractSafeParcelable {
         for (Map.Entry entry : hashMap.entrySet()) {
             B.put((String) entry.getValue(), (Integer) entry.getKey());
         }
-        CREATOR = new cdzy();
+        CREATOR = new cgjf();
     }
 
     public MdpDataPlanStatus() {
@@ -71,7 +71,7 @@ public class MdpDataPlanStatus extends AbstractSafeParcelable {
         }
         if (obj != null && getClass() == obj.getClass()) {
             MdpDataPlanStatus mdpDataPlanStatus = (MdpDataPlanStatus) obj;
-            if (arwb.b(this.b, mdpDataPlanStatus.b) && arwb.b(this.c, mdpDataPlanStatus.c) && arwb.b(this.d, mdpDataPlanStatus.d) && arwb.b(Long.valueOf(this.e), Long.valueOf(mdpDataPlanStatus.e)) && arwb.b(Long.valueOf(this.f), Long.valueOf(mdpDataPlanStatus.f)) && Arrays.equals(this.g, mdpDataPlanStatus.g) && arwb.b(Integer.valueOf(this.h), Integer.valueOf(mdpDataPlanStatus.h)) && arwb.b(Long.valueOf(this.o), Long.valueOf(mdpDataPlanStatus.o)) && arwb.b(Long.valueOf(this.p), Long.valueOf(mdpDataPlanStatus.p)) && arwb.b(Long.valueOf(this.q), Long.valueOf(mdpDataPlanStatus.q)) && arwb.b(this.r, mdpDataPlanStatus.r) && arwb.b(this.i, mdpDataPlanStatus.i) && arwb.b(this.s, mdpDataPlanStatus.s) && arwb.b(this.j, mdpDataPlanStatus.j) && arwb.b(Boolean.valueOf(this.t), Boolean.valueOf(mdpDataPlanStatus.t)) && arwb.b(this.k, mdpDataPlanStatus.k) && arwb.b(this.l, mdpDataPlanStatus.l) && arwb.b(Integer.valueOf(this.m), Integer.valueOf(mdpDataPlanStatus.m)) && arwb.b(this.n, mdpDataPlanStatus.n) && arwb.b(this.u, mdpDataPlanStatus.u) && arwb.b(this.v, mdpDataPlanStatus.v)) {
+            if (atyq.b(this.b, mdpDataPlanStatus.b) && atyq.b(this.c, mdpDataPlanStatus.c) && atyq.b(this.d, mdpDataPlanStatus.d) && atyq.b(Long.valueOf(this.e), Long.valueOf(mdpDataPlanStatus.e)) && atyq.b(Long.valueOf(this.f), Long.valueOf(mdpDataPlanStatus.f)) && Arrays.equals(this.g, mdpDataPlanStatus.g) && atyq.b(Integer.valueOf(this.h), Integer.valueOf(mdpDataPlanStatus.h)) && atyq.b(Long.valueOf(this.o), Long.valueOf(mdpDataPlanStatus.o)) && atyq.b(Long.valueOf(this.p), Long.valueOf(mdpDataPlanStatus.p)) && atyq.b(Long.valueOf(this.q), Long.valueOf(mdpDataPlanStatus.q)) && atyq.b(this.r, mdpDataPlanStatus.r) && atyq.b(this.i, mdpDataPlanStatus.i) && atyq.b(this.s, mdpDataPlanStatus.s) && atyq.b(this.j, mdpDataPlanStatus.j) && atyq.b(Boolean.valueOf(this.t), Boolean.valueOf(mdpDataPlanStatus.t)) && atyq.b(this.k, mdpDataPlanStatus.k) && atyq.b(this.l, mdpDataPlanStatus.l) && atyq.b(Integer.valueOf(this.m), Integer.valueOf(mdpDataPlanStatus.m)) && atyq.b(this.n, mdpDataPlanStatus.n) && atyq.b(this.u, mdpDataPlanStatus.u) && atyq.b(this.v, mdpDataPlanStatus.v)) {
                 return true;
             }
         }
@@ -84,65 +84,65 @@ public class MdpDataPlanStatus extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("PlanName", this.b, arrayList);
-        arwa.b("ExpirationTime", this.c, arrayList);
-        arwa.b("TrafficCategory", this.d, arrayList);
-        arwa.b("QuotaBytes", Long.valueOf(this.e), arrayList);
-        arwa.b("QuotaMinutes", Long.valueOf(this.f), arrayList);
-        arwa.b("FlexTimeWindows", Arrays.toString(this.g), arrayList);
+        atyp.b("PlanName", this.b, arrayList);
+        atyp.b("ExpirationTime", this.c, arrayList);
+        atyp.b("TrafficCategory", this.d, arrayList);
+        atyp.b("QuotaBytes", Long.valueOf(this.e), arrayList);
+        atyp.b("QuotaMinutes", Long.valueOf(this.f), arrayList);
+        atyp.b("FlexTimeWindows", Arrays.toString(this.g), arrayList);
         int i = this.h;
         String str = (String) a.get(Integer.valueOf(i));
         if (str == null) {
             throw new IllegalArgumentException(a.j(i, "Illegal overusage policy string: "));
         }
-        arwa.b("OverUsagePolicy", str, arrayList);
-        arwa.b("RemainingBytes", Long.valueOf(this.p), arrayList);
-        arwa.b("RemainingMinutes", Long.valueOf(this.q), arrayList);
-        arwa.b("ShortDescription", this.k, arrayList);
-        arwa.b("DisplayRefreshPeriod", this.l, arrayList);
-        arwa.b("PlanType", Integer.valueOf(this.m), arrayList);
-        arwa.b("Pmtcs", this.n, arrayList);
-        arwa.b("SnapshotTime", Long.valueOf(this.o), arrayList);
-        arwa.b("Description", this.r, arrayList);
-        arwa.b("PlanId", this.i, arrayList);
-        arwa.b("Balance", this.s, arrayList);
-        arwa.b("ModuleName", this.j, arrayList);
-        arwa.b("IsActive", Boolean.valueOf(this.t), arrayList);
-        arwa.b("QoeMetrics", this.u, arrayList);
-        arwa.b("DataPlanUsageHistory", this.v, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("OverUsagePolicy", str, arrayList);
+        atyp.b("RemainingBytes", Long.valueOf(this.p), arrayList);
+        atyp.b("RemainingMinutes", Long.valueOf(this.q), arrayList);
+        atyp.b("ShortDescription", this.k, arrayList);
+        atyp.b("DisplayRefreshPeriod", this.l, arrayList);
+        atyp.b("PlanType", Integer.valueOf(this.m), arrayList);
+        atyp.b("Pmtcs", this.n, arrayList);
+        atyp.b("SnapshotTime", Long.valueOf(this.o), arrayList);
+        atyp.b("Description", this.r, arrayList);
+        atyp.b("PlanId", this.i, arrayList);
+        atyp.b("Balance", this.s, arrayList);
+        atyp.b("ModuleName", this.j, arrayList);
+        atyp.b("IsActive", Boolean.valueOf(this.t), arrayList);
+        atyp.b("QoeMetrics", this.u, arrayList);
+        atyp.b("DataPlanUsageHistory", this.v, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.v(parcel, 1, this.b, false);
-        arxc.v(parcel, 2, this.c, false);
-        arxc.v(parcel, 3, this.d, false);
-        arxc.q(parcel, 4, this.e);
-        arxc.q(parcel, 5, this.f);
-        arxc.J(parcel, 6, this.g, i);
-        arxc.o(parcel, 7, this.h);
-        arxc.v(parcel, 8, this.i, false);
-        arxc.v(parcel, 9, this.j, false);
-        arxc.v(parcel, 10, this.k, false);
-        arxc.v(parcel, 11, this.l, false);
-        arxc.o(parcel, 12, this.m);
-        arxc.E(parcel, 13, this.n);
-        arxc.q(parcel, 20, this.o);
-        arxc.q(parcel, 21, this.p);
-        arxc.q(parcel, 22, this.q);
-        arxc.v(parcel, 23, this.r, false);
-        arxc.v(parcel, 24, this.s, false);
-        arxc.e(parcel, 25, this.t);
-        arxc.t(parcel, 26, this.u, i, false);
-        arxc.t(parcel, 27, this.v, i, false);
-        arxc.o(parcel, 28, this.w);
-        arxc.q(parcel, 29, this.x);
-        arxc.q(parcel, 30, this.y);
-        arxc.q(parcel, 31, this.z);
-        arxc.q(parcel, 32, this.A);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.v(parcel, 1, this.b, false);
+        atzr.v(parcel, 2, this.c, false);
+        atzr.v(parcel, 3, this.d, false);
+        atzr.q(parcel, 4, this.e);
+        atzr.q(parcel, 5, this.f);
+        atzr.J(parcel, 6, this.g, i);
+        atzr.o(parcel, 7, this.h);
+        atzr.v(parcel, 8, this.i, false);
+        atzr.v(parcel, 9, this.j, false);
+        atzr.v(parcel, 10, this.k, false);
+        atzr.v(parcel, 11, this.l, false);
+        atzr.o(parcel, 12, this.m);
+        atzr.E(parcel, 13, this.n);
+        atzr.q(parcel, 20, this.o);
+        atzr.q(parcel, 21, this.p);
+        atzr.q(parcel, 22, this.q);
+        atzr.v(parcel, 23, this.r, false);
+        atzr.v(parcel, 24, this.s, false);
+        atzr.e(parcel, 25, this.t);
+        atzr.t(parcel, 26, this.u, i, false);
+        atzr.t(parcel, 27, this.v, i, false);
+        atzr.o(parcel, 28, this.w);
+        atzr.q(parcel, 29, this.x);
+        atzr.q(parcel, 30, this.y);
+        atzr.q(parcel, 31, this.z);
+        atzr.q(parcel, 32, this.A);
+        atzr.c(parcel, a2);
     }
 
     public MdpDataPlanStatus(String str, String str2, String str3, long j, long j2, MdpFlexTimeWindow[] mdpFlexTimeWindowArr, int i, String str4, String str5, String str6, String str7, int i2, List list, long j3, long j4, long j5, String str8, String str9, boolean z, QoeMetrics qoeMetrics, DataPlanUsageHistory dataPlanUsageHistory, int i3, long j6, long j7, long j8, long j9) {

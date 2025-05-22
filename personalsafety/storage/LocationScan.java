@@ -5,15 +5,15 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.maps.model.LatLng;
-import defpackage.arxc;
-import defpackage.cvwg;
-import defpackage.eihn;
+import defpackage.atzr;
+import defpackage.cygd;
+import defpackage.ekus;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class LocationScan extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new cvwg();
+    public static final Parcelable.Creator CREATOR = new cygd();
     public final LatLng a;
     public final long b;
 
@@ -25,7 +25,7 @@ public class LocationScan extends AbstractSafeParcelable implements ReflectedPar
     public final boolean equals(Object obj) {
         if (obj instanceof LocationScan) {
             LocationScan locationScan = (LocationScan) obj;
-            if (this.b == locationScan.b && eihn.a(this.a, locationScan.a)) {
+            if (this.b == locationScan.b && ekus.a(this.a, locationScan.a)) {
                 return true;
             }
         }
@@ -43,9 +43,9 @@ public class LocationScan extends AbstractSafeParcelable implements ReflectedPar
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         LatLng latLng = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, latLng, i, false);
-        arxc.q(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, latLng, i, false);
+        atzr.q(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 }

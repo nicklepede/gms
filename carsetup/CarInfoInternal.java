@@ -5,15 +5,15 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.car.CarInfo;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.alov;
-import defpackage.arwm;
-import defpackage.arxc;
+import defpackage.anqg;
+import defpackage.atzb;
+import defpackage.atzr;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CarInfoInternal extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new alov();
+    public static final Parcelable.Creator CREATOR = new anqg();
     public final CarInfo a;
 
     @Deprecated
@@ -65,33 +65,33 @@ public class CarInfoInternal extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.q(parcel, 4, this.d);
-        arxc.q(parcel, 5, this.e);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.o(parcel, 10, this.j);
-        arxc.v(parcel, 11, this.k, false);
-        arxc.o(parcel, 12, this.l);
-        arxc.o(parcel, 13, this.m);
-        arxc.o(parcel, 14, this.n);
-        arxc.e(parcel, 15, this.o);
-        arxc.e(parcel, 16, this.p);
-        arxc.q(parcel, 17, this.q);
-        arxc.e(parcel, 18, this.r);
-        arxc.v(parcel, 19, this.s, false);
-        arxc.o(parcel, 20, this.t);
-        arxc.v(parcel, 21, this.u, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.q(parcel, 4, this.d);
+        atzr.q(parcel, 5, this.e);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.o(parcel, 10, this.j);
+        atzr.v(parcel, 11, this.k, false);
+        atzr.o(parcel, 12, this.l);
+        atzr.o(parcel, 13, this.m);
+        atzr.o(parcel, 14, this.n);
+        atzr.e(parcel, 15, this.o);
+        atzr.e(parcel, 16, this.p);
+        atzr.q(parcel, 17, this.q);
+        atzr.e(parcel, 18, this.r);
+        atzr.v(parcel, 19, this.s, false);
+        atzr.o(parcel, 20, this.t);
+        atzr.v(parcel, 21, this.u, false);
+        atzr.c(parcel, a);
     }
 
     public CarInfoInternal(CarInfo carInfo, String str, boolean z, long j, long j2, String str2, String str3, String str4, String str5, int i, String str6, int i2, int i3, int i4, boolean z2, boolean z3, long j3, boolean z4, String str7, int i5, String str8) {
-        arwm.s(carInfo);
+        atzb.s(carInfo);
         this.a = carInfo;
         this.b = str;
         this.c = z;

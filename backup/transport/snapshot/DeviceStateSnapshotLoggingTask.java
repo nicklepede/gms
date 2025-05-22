@@ -1,13 +1,13 @@
 package com.google.android.gms.backup.transport.snapshot;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.ahwd;
-import defpackage.arxo;
+import defpackage.ajwt;
+import defpackage.auad;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class DeviceStateSnapshotLoggingTask extends GmsTaskBoundService {
-    public static final arxo a = ahwd.a("DeviceStateSnapshotLoggingTask");
+    public static final auad a = ajwt.a("DeviceStateSnapshotLoggingTask");
 
     /* JADX WARN: Code restructure failed: missing block: B:166:0x0554, code lost:
     
@@ -15,7 +15,7 @@ public class DeviceStateSnapshotLoggingTask extends GmsTaskBoundService {
      */
     /* JADX WARN: Code restructure failed: missing block: B:34:0x012f, code lost:
     
-        if (true != r0.l(android.os.UserHandle.of(android.os.UserHandle.myUserId()))) goto L57;
+        if (true != r0.k(android.os.UserHandle.of(android.os.UserHandle.myUserId()))) goto L57;
      */
     /* JADX WARN: Removed duplicated region for block: B:101:0x0359  */
     /* JADX WARN: Removed duplicated region for block: B:104:0x0367  */
@@ -71,11 +71,11 @@ public class DeviceStateSnapshotLoggingTask extends GmsTaskBoundService {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final int a(defpackage.byln r28) {
+    public final int a(defpackage.cauf r28) {
         /*
             Method dump skipped, instructions count: 1858
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.backup.transport.snapshot.DeviceStateSnapshotLoggingTask.a(byln):int");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.backup.transport.snapshot.DeviceStateSnapshotLoggingTask.a(cauf):int");
     }
 }

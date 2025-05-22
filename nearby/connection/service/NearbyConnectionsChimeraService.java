@@ -6,36 +6,36 @@ import android.os.IBinder;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.GetServiceRequest;
 import defpackage.a;
-import defpackage.apud;
-import defpackage.aqxo;
-import defpackage.arwm;
-import defpackage.aspo;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.cexi;
-import defpackage.cexr;
-import defpackage.cexs;
-import defpackage.cfch;
-import defpackage.cfdb;
-import defpackage.cfdj;
-import defpackage.cfhu;
-import defpackage.cfhv;
-import defpackage.cfiv;
-import defpackage.cfju;
-import defpackage.cfjx;
-import defpackage.cfkt;
-import defpackage.cfkz;
-import defpackage.cflb;
-import defpackage.cflc;
-import defpackage.cflz;
-import defpackage.cfqk;
-import defpackage.cfzp;
-import defpackage.cjdh;
-import defpackage.dhqf;
-import defpackage.ejck;
-import defpackage.eydb;
-import defpackage.fqkd;
-import defpackage.fqkh;
+import defpackage.arwu;
+import defpackage.atad;
+import defpackage.atzb;
+import defpackage.auti;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.chet;
+import defpackage.chfc;
+import defpackage.chfd;
+import defpackage.chjt;
+import defpackage.chkn;
+import defpackage.chkv;
+import defpackage.chpg;
+import defpackage.chph;
+import defpackage.chqh;
+import defpackage.chrg;
+import defpackage.chrj;
+import defpackage.chsf;
+import defpackage.chsl;
+import defpackage.chsn;
+import defpackage.chso;
+import defpackage.chtj;
+import defpackage.chxu;
+import defpackage.cihb;
+import defpackage.cllm;
+import defpackage.dkbl;
+import defpackage.elpp;
+import defpackage.farn;
+import defpackage.ftdv;
+import defpackage.ftdz;
 import j$.util.concurrent.ConcurrentHashMap;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
@@ -45,31 +45,31 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class NearbyConnectionsChimeraService extends bxgd {
-    cexs a;
+public class NearbyConnectionsChimeraService extends bzot {
+    chfd a;
     public final Map b;
-    private cfiv c;
-    private final cflb d;
-    private cfkz m;
-    private aqxo n;
+    private chqh c;
+    private final chsn d;
+    private chsl m;
+    private atad n;
 
     public NearbyConnectionsChimeraService() {
-        super(54, "com.google.android.gms.nearby.connection.service.START", ejck.a, 3, 10);
-        this.d = new cflb();
+        super(54, "com.google.android.gms.nearby.connection.service.START", elpp.a, 3, 10);
+        this.d = new chsn();
         this.b = new ConcurrentHashMap();
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         Long l;
         String str;
         String str2;
         String str3;
         String str4 = getServiceRequest.f;
         if (TextUtils.isEmpty(str4)) {
-            bxgjVar.a(16, null);
+            bzozVar.a(16, null);
             return;
         }
         Bundle bundle = getServiceRequest.i;
@@ -89,41 +89,41 @@ public class NearbyConnectionsChimeraService extends bxgd {
             str2 = null;
         }
         if (this.n == null) {
-            this.n = dhqf.a(this);
+            this.n = dkbl.a(this);
         }
         String str5 = getServiceRequest.p;
-        cflb cflbVar = this.d;
-        cfiv cfivVar = this.c;
+        chsn chsnVar = this.d;
+        chqh chqhVar = this.c;
         Long l2 = l;
-        cexs cexsVar = this.a;
-        cfhv cfhvVar = new cfhv(this, str4);
-        aqxo aqxoVar = this.n;
-        cfkz cfkzVar = this.m;
-        int i = cfhu.e;
-        final cfhu cfhuVar = new cfhu(this, cfivVar, cfhvVar, cfdj.f(), cfkzVar);
-        cfhuVar.b = new IBinder.DeathRecipient() { // from class: cfhf
+        chfd chfdVar = this.a;
+        chph chphVar = new chph(this, str4);
+        atad atadVar = this.n;
+        chsl chslVar = this.m;
+        int i = chpg.e;
+        final chpg chpgVar = new chpg(this, chqhVar, chphVar, chkv.f(), chslVar);
+        chpgVar.b = new IBinder.DeathRecipient() { // from class: chor
             @Override // android.os.IBinder.DeathRecipient
             public final void binderDied() {
-                cfhu.this.j(true);
+                chpg.this.j(true);
             }
         };
         String str6 = str;
         String str7 = str4;
-        cfhuVar.d = new cfkt(this, str7, str6, l2, str5, cflbVar, cexsVar, cfhuVar.b, aqxoVar, cfkzVar);
-        this.b.put(str7, cfhuVar);
-        cexi cexiVar = cfju.a;
-        cexiVar.b().i("Client %d requested setting downloads directory to %s.", Long.valueOf(cfhuVar.d.k()), str2);
+        chpgVar.d = new chsf(this, str7, str6, l2, str5, chsnVar, chfdVar, chpgVar.b, atadVar, chslVar);
+        this.b.put(str7, chpgVar);
+        chet chetVar = chrg.a;
+        chetVar.b().i("Client %d requested setting downloads directory to %s.", Long.valueOf(chpgVar.d.k()), str2);
         if (str2 != null) {
-            cfkt cfktVar = cfhuVar.d;
-            arwm.l(cfjx.a(cfktVar.e, cfktVar.f, cfktVar.g));
-            str3 = cfdb.e(str2);
+            chsf chsfVar = chpgVar.d;
+            atzb.l(chrj.a(chsfVar.e, chsfVar.f, chsfVar.g));
+            str3 = chkn.e(str2);
         } else {
             str3 = str2;
         }
-        cfhuVar.d.be(str3);
-        this.a.d.e("NearbyConnectionsConnectionStatus").a(0L, 1L, apud.b);
-        bxgjVar.c(cfhuVar);
-        cexi b = cexiVar.b();
+        chpgVar.d.bf(str3);
+        this.a.d.e("NearbyConnectionsConnectionStatus").a(0L, 1L, arwu.b);
+        bzozVar.c(chpgVar);
+        chet b = chetVar.b();
         Long valueOf2 = Long.valueOf(l2 == null ? 0L : l2.longValue());
         if (str6 != null) {
             str7 = a.i(str6, str7, "0p:", ".");
@@ -131,43 +131,43 @@ public class NearbyConnectionsChimeraService extends bxgd {
         b.k("Client %s with package name %s and sdk version %s has connected, downloads dir is set to %s.", valueOf2, str7, Integer.valueOf(getServiceRequest.e), str2);
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService
     public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        cflc cflcVar;
+        chso chsoVar;
         super.dump(fileDescriptor, printWriter, strArr);
         try {
             for (Map.Entry entry : this.b.entrySet()) {
                 printWriter.write(String.format("%s\n", entry.getKey()));
-                ((cfhu) entry.getValue()).dump(fileDescriptor, printWriter, strArr);
+                ((chpg) entry.getValue()).dump(fileDescriptor, printWriter, strArr);
                 printWriter.write("\n");
             }
-            cfiv cfivVar = this.c;
-            cflc cflcVar2 = cfivVar.b;
-            if (cflcVar2 != null) {
-                cflz cflzVar = ((cfqk) cflcVar2).g;
+            chqh chqhVar = this.c;
+            chso chsoVar2 = chqhVar.b;
+            if (chsoVar2 != null) {
+                chtj chtjVar = ((chxu) chsoVar2).g;
                 printWriter.write(String.format("%s\n", "com.google.android.gms.nearby.connection.service.offline.BandwidthUpgradeManager"));
                 Locale locale = Locale.US;
-                Set keySet = cflzVar.g.keySet();
+                Set keySet = chtjVar.g.keySet();
                 StringBuilder sb = new StringBuilder("[ ");
                 Iterator it = keySet.iterator();
                 while (it.hasNext()) {
-                    sb.append(String.format("%s ", ((eydb) it.next()).name()));
+                    sb.append(String.format("%s ", ((farn) it.next()).name()));
                 }
                 sb.append("]");
                 printWriter.write(String.format(locale, "  Bandwidth Upgrade Mediums: %s\n", sb.toString()));
-                Map map = cflzVar.d.e;
+                Map map = chtjVar.d.e;
                 for (String str : map.keySet()) {
                     printWriter.write(String.format(Locale.US, "[Endpoint ID : %s]%s\n", str, map.get(str)));
                 }
                 printWriter.flush();
-                ((cfqk) cflcVar2).a.B(printWriter);
-                ((cfqk) cflcVar2).h.i(printWriter);
+                ((chxu) chsoVar2).a.C(printWriter);
+                ((chxu) chsoVar2).h.i(printWriter);
             }
-            if (fqkd.F() && (cflcVar = cfivVar.c) != null) {
-                ((cfzp) cflcVar).a.B(printWriter);
+            if (ftdv.J() && (chsoVar = chqhVar.c) != null) {
+                ((cihb) chsoVar).a.C(printWriter);
             }
-            if (fqkd.a.a().ad()) {
-                cfch.a(new aspo(printWriter, "  "), fqkh.class);
+            if (ftdv.a.lK().aj()) {
+                chjt.a(new auti(printWriter, "  "), ftdz.class);
             }
             printWriter.flush();
         } catch (RuntimeException e) {
@@ -176,246 +176,267 @@ public class NearbyConnectionsChimeraService extends bxgd {
         }
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         if (this.a == null) {
-            this.a = new cexs(getApplicationContext(), 2, new cexr() { // from class: cfhw
-                @Override // defpackage.cexr
-                public final void a(fecj fecjVar, Object obj) {
-                    exvh exvhVar = (exvh) obj;
-                    if (!fecjVar.b.L()) {
-                        fecjVar.U();
+            this.a = new chfd(getApplicationContext(), 2, new chfc() { // from class: chpi
+                @Override // defpackage.chfc
+                public final void a(fgrc fgrcVar, Object obj) {
+                    fajt fajtVar = (fajt) obj;
+                    if (!fgrcVar.b.L()) {
+                        fgrcVar.U();
                     }
-                    exwc exwcVar = (exwc) fecjVar.b;
-                    exwc exwcVar2 = exwc.a;
-                    exvhVar.getClass();
-                    exwcVar.g = exvhVar;
-                    exwcVar.b |= 16;
+                    fako fakoVar = (fako) fgrcVar.b;
+                    fako fakoVar2 = fako.a;
+                    fajtVar.getClass();
+                    fakoVar.g = fajtVar;
+                    fakoVar.b |= 16;
                 }
             });
         }
-        this.c = new cfiv(this);
-        cjdh.d(getApplicationContext().getCacheDir());
+        this.c = new chqh(this);
+        cllm.d(getApplicationContext().getCacheDir());
         getApplicationContext();
-        this.m = new cfkz();
+        this.m = new chsl();
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
         this.d.a.b();
-        final cfiv cfivVar = this.c;
-        cfju.a.b().h("Initiating shutdown of ServiceControllerRouter %s.", cfivVar);
-        cfivVar.d(new Runnable() { // from class: cfic
+        final chqh chqhVar = this.c;
+        chrg.a.b().h("Initiating shutdown of ServiceControllerRouter %s.", chqhVar);
+        chqhVar.d(new Runnable() { // from class: chpo
             @Override // java.lang.Runnable
             public final void run() {
-                cflc cflcVar;
-                cfiv cfivVar2 = cfiv.this;
-                cflc cflcVar2 = cfivVar2.b;
-                if (cflcVar2 != null) {
-                    cfqk cfqkVar = (cfqk) cflcVar2;
-                    cfln cflnVar = cfqkVar.c;
-                    exjo exjoVar = exjo.AUTO_RESUME;
-                    cfoa cfoaVar = cfqkVar.e;
-                    cfoaVar.j(exjoVar, cflnVar);
-                    cexi cexiVar = cfju.a;
-                    cexiVar.b().p("Initiating shutdown of OfflineServiceController.", new Object[0]);
-                    cfqkVar.h.p();
-                    cexiVar.b().p("Initiating shutdown of BandwidthUpgradeManager.", new Object[0]);
-                    exjo exjoVar2 = exjo.BANDWIDTH_UPGRADE_NEGOTIATION;
-                    cflz cflzVar = cfqkVar.g;
-                    cflzVar.b.j(exjoVar2, cflzVar);
-                    Map map = cflzVar.k;
+                chso chsoVar;
+                chqh chqhVar2 = chqh.this;
+                chso chsoVar2 = chqhVar2.b;
+                if (chsoVar2 != null) {
+                    chxu chxuVar = (chxu) chsoVar2;
+                    chsx chsxVar = chxuVar.c;
+                    ezxz ezxzVar = ezxz.AUTO_RESUME;
+                    chvk chvkVar = chxuVar.e;
+                    chvkVar.j(ezxzVar, chsxVar);
+                    chet chetVar = chrg.a;
+                    chetVar.b().p("Initiating shutdown of OfflineServiceController.", new Object[0]);
+                    chxuVar.h.p();
+                    chetVar.b().p("Initiating shutdown of BandwidthUpgradeManager.", new Object[0]);
+                    ezxz ezxzVar2 = ezxz.BANDWIDTH_UPGRADE_NEGOTIATION;
+                    chtj chtjVar = chxuVar.g;
+                    chtjVar.b.j(ezxzVar2, chtjVar);
+                    Map map = chtjVar.k;
                     Iterator it = map.values().iterator();
                     while (it.hasNext()) {
-                        ((cfjl) it.next()).d();
+                        ((chqx) it.next()).d();
                     }
                     map.clear();
-                    cflzVar.o.clear();
-                    cfdj.h(cflzVar.e, "BandwidthUpgradeManager.alarmExecutor");
-                    cfdj.h(cflzVar.f, "BandwidthUpgradeManager.serialExecutor");
-                    Map map2 = cflzVar.h;
+                    chtjVar.o.clear();
+                    chkv.h(chtjVar.e, "BandwidthUpgradeManager.alarmExecutor");
+                    chkv.h(chtjVar.f, "BandwidthUpgradeManager.serialExecutor");
+                    Map map2 = chtjVar.h;
                     Iterator it2 = map2.values().iterator();
                     while (it2.hasNext()) {
-                        ((cfnj) it2.next()).E(6);
+                        ((chut) it2.next()).E(6);
                     }
                     map2.clear();
-                    cflzVar.i.clear();
-                    ArrayList arrayList = new ArrayList(cflzVar.l.keySet());
+                    chtjVar.i.clear();
+                    ArrayList arrayList = new ArrayList(chtjVar.l.keySet());
                     int size = arrayList.size();
                     for (int i = 0; i < size; i++) {
-                        cflzVar.o((String) arrayList.get(i));
+                        chtjVar.o((String) arrayList.get(i));
                     }
-                    cflzVar.m.clear();
-                    cflzVar.p.clear();
-                    cflzVar.j.clear();
-                    cfmi cfmiVar = cflzVar.d;
-                    cfmiVar.c.clear();
-                    cfmiVar.e.clear();
-                    cfmiVar.d.clear();
-                    Map map3 = cflzVar.g;
+                    chtjVar.m.clear();
+                    chtjVar.p.clear();
+                    chtjVar.j.clear();
+                    chts chtsVar = chtjVar.d;
+                    chtsVar.c.clear();
+                    chtsVar.e.clear();
+                    chtsVar.d.clear();
+                    Map map3 = chtjVar.g;
                     Iterator it3 = map3.values().iterator();
                     while (it3.hasNext()) {
-                        ((cfmd) it3.next()).b();
+                        ((chtn) it3.next()).b();
                     }
                     map3.clear();
-                    cflzVar.q = null;
-                    cexi cexiVar2 = cfju.a;
-                    cexiVar2.b().p("BandwidthUpgradeManager has shut down.", new Object[0]);
-                    cflnVar.c.clear();
-                    cflnVar.d.clear();
-                    cflnVar.e.clear();
-                    cfdj.h(cflnVar.b, "AutoResumeManager.autoResumeExecutor");
-                    cfxi cfxiVar = cfqkVar.b;
-                    cexiVar2.b().p("Initiating shutdown of ReconnectManager.", new Object[0]);
-                    cfxiVar.h.clear();
-                    cfxiVar.i.clear();
-                    cfxiVar.k.clear();
-                    cfxiVar.j.clear();
-                    cfdj.h(cfxiVar.d, "ReconnectManager.reconnectManagerExecutor");
-                    cfdj.h(cfxiVar.e, "ReconnectManager.alarmExecutor");
-                    cfdj.h(cfxiVar.g, "ReconnectManager.encryptionCallbackExecutor");
-                    cfdj.h(cfxiVar.f, "ReconnectManager.incomingConnectionCallbackExecutor");
-                    cfxiVar.c.b();
-                    cexiVar2.b().p("ReconnectManager has shut down.", new Object[0]);
-                    cfrr cfrrVar = cfqkVar.f;
-                    cexiVar2.b().p("Initiating shutdown of PayloadManager.", new Object[0]);
-                    if (fqkd.K()) {
-                        cfjo.i(cfrrVar.a);
+                    chtjVar.q = null;
+                    chetVar.b().p("BandwidthUpgradeManager has shut down.", new Object[0]);
+                    chsxVar.c.clear();
+                    chsxVar.d.clear();
+                    chsxVar.e.clear();
+                    chkv.h(chsxVar.b, "AutoResumeManager.autoResumeExecutor");
+                    cies ciesVar = chxuVar.b;
+                    chetVar.b().p("Initiating shutdown of ReconnectManager.", new Object[0]);
+                    ciesVar.h.clear();
+                    ciesVar.i.clear();
+                    ciesVar.k.clear();
+                    ciesVar.j.clear();
+                    chkv.h(ciesVar.d, "ReconnectManager.reconnectManagerExecutor");
+                    chkv.h(ciesVar.e, "ReconnectManager.alarmExecutor");
+                    chkv.h(ciesVar.g, "ReconnectManager.encryptionCallbackExecutor");
+                    chkv.h(ciesVar.f, "ReconnectManager.incomingConnectionCallbackExecutor");
+                    ciesVar.c.b();
+                    chetVar.b().p("ReconnectManager has shut down.", new Object[0]);
+                    chzb chzbVar = chxuVar.f;
+                    chetVar.b().p("Initiating shutdown of PayloadManager.", new Object[0]);
+                    if (ftdv.O()) {
+                        chra.i(chzbVar.a);
                     }
-                    cfrrVar.b.j(exjo.PAYLOAD_TRANSFER, cfrrVar);
-                    cfdj.h(cfrrVar.d, "PayloadManager.readStatusExecutor");
-                    cfdj.h(cfrrVar.e, "PayloadManager.payloadStatusUpdateExecutor");
-                    cfdj.h(cfrrVar.g, "PayloadManager.lowPriorityExecutor");
-                    ensv ensvVar = cfrrVar.f;
-                    if (ensvVar != null) {
-                        cfdj.h(ensvVar, "PayloadManager.processingOfflineFrameExecutor");
+                    chzbVar.b.j(ezxz.PAYLOAD_TRANSFER, chzbVar);
+                    chkv.h(chzbVar.d, "PayloadManager.readStatusExecutor");
+                    chkv.h(chzbVar.e, "PayloadManager.payloadStatusUpdateExecutor");
+                    chkv.h(chzbVar.g, "PayloadManager.lowPriorityExecutor");
+                    eqgo eqgoVar = chzbVar.f;
+                    if (eqgoVar != null) {
+                        chkv.h(eqgoVar, "PayloadManager.processingOfflineFrameExecutor");
                     }
-                    cfrm cfrmVar = cfrrVar.h;
-                    for (cfrl cfrlVar : cfrmVar.b()) {
-                        cfrmVar.d(cfrlVar.b());
-                        cfrlVar.e();
+                    chyw chywVar = chzbVar.h;
+                    for (chyv chyvVar : chywVar.b()) {
+                        chywVar.d(chyvVar.b());
+                        chyvVar.e();
                     }
-                    cfrh cfrhVar = cfrrVar.m;
-                    if (cfrhVar.a().size() > 0) {
-                        cfrhVar.a().clear();
-                        cfrhVar.a = 0;
+                    chyr chyrVar = chzbVar.m;
+                    if (chyrVar.a().size() > 0) {
+                        chyrVar.a().clear();
+                        chyrVar.a = 0;
                     }
-                    cfrg cfrgVar = cfrrVar.n;
-                    if (cfrgVar.a().size() > 0) {
-                        cfrgVar.a().clear();
-                        cfrgVar.a = 0;
+                    chyq chyqVar = chzbVar.n;
+                    if (chyqVar.a().size() > 0) {
+                        chyqVar.a().clear();
+                        chyqVar.a = 0;
                     }
-                    cexiVar2.d().p("PayloadManager has shut down.", new Object[0]);
-                    cexiVar2.b().p("Initiating shutdown of EndpointManager.", new Object[0]);
-                    cfdj.h(cfoaVar.d, "EndpointManager.serialExecutor");
-                    cfdj.h(cfoaVar.f, "EndpointManager.endpointReadersThreadPool");
-                    cfdj.h(cfoaVar.g, "EndpointManager.endpointKeepAliveManagerThreadPool");
-                    cfoaVar.e.clear();
-                    cexiVar2.b().p("EndpointManager has shut down.", new Object[0]);
-                    cfqkVar.d.l();
-                    cfqkVar.a.G();
-                    cexiVar2.b().p("OfflineServiceController has shut down.", new Object[0]);
+                    chetVar.d().p("PayloadManager has shut down.", new Object[0]);
+                    chetVar.b().p("Initiating shutdown of EndpointManager.", new Object[0]);
+                    chkv.h(chvkVar.d, "EndpointManager.serialExecutor");
+                    chkv.h(chvkVar.f, "EndpointManager.endpointReadersThreadPool");
+                    chkv.h(chvkVar.g, "EndpointManager.endpointKeepAliveManagerThreadPool");
+                    chvkVar.e.clear();
+                    chetVar.b().p("EndpointManager has shut down.", new Object[0]);
+                    chxuVar.d.l();
+                    chxuVar.a.H();
+                    chetVar.b().p("OfflineServiceController has shut down.", new Object[0]);
                 }
-                if (fqkd.F() && (cflcVar = cfivVar2.c) != null) {
-                    cexi cexiVar3 = cfju.a;
-                    cexiVar3.b().p("Initiating shutdown of DctOfflineServiceController.", new Object[0]);
-                    cfzp cfzpVar = (cfzp) cflcVar;
-                    cgav cgavVar = cfzpVar.f;
-                    cfdj.h(cgavVar.a, "DctThreadManager.dctPcpMainExecutor");
-                    cfdj.h(cgavVar.b, "DctThreadManager.dctPcpCallbackExecutor");
-                    cfdj.h(cgavVar.c, "DctThreadManager.dctEndpointManagerExecutor");
-                    cfdj.h(cgavVar.d, "DctThreadManager.dctBandwidthUpgradeManagerExecutor");
-                    cfdj.h(cgavVar.e, "DctThreadManager.dctBandwidthUpgradeCallbackExecutor");
-                    cexiVar3.b().p("Initiating shutdown of DctPcpManager.", new Object[0]);
-                    boolean u = fqkd.u();
-                    cgam cgamVar = cfzpVar.e;
-                    if (u) {
-                        cfzn cfznVar = cgamVar.b;
-                        cfzm cfzmVar = cgamVar.j;
-                        cfznVar.f(exgd.DEVICE_CAPABILITY_REQUEST, cfzmVar);
-                        cfzm cfzmVar2 = cgamVar.k;
-                        cfznVar.f(exgd.DEVICE_CAPABILITY_RESPONSE, cfzmVar2);
-                        cfzm cfzmVar3 = cgamVar.l;
-                        cfznVar.f(exgd.DEVICE_INFO_REQUEST, cfzmVar3);
-                        cfzm cfzmVar4 = cgamVar.m;
-                        cfznVar.f(exgd.DEVICE_INFO_RESPONSE, cfzmVar4);
-                        cfzm cfzmVar5 = cgamVar.n;
-                        cfznVar.f(exgd.MEDIUM_NEGOTIATION_REQUEST, cfzmVar5);
-                        cfzm cfzmVar6 = cgamVar.o;
-                        cfznVar.f(exgd.MEDIUM_NEGOTIATION_RESPONSE, cfzmVar6);
-                        cfzmVar.c();
-                        cfzmVar2.c();
-                        cfzmVar3.c();
-                        cfzmVar4.c();
-                        cfzmVar5.c();
-                        cfzmVar6.c();
-                        if (fqkd.v()) {
-                            cfzm cfzmVar7 = cgamVar.p;
-                            cfznVar.f(exgd.DEVICE_INTEGRITY_START_REQUEST, cfzmVar7);
-                            cfzm cfzmVar8 = cgamVar.q;
-                            cfznVar.f(exgd.DEVICE_INTEGRITY_START_RESPONSE, cfzmVar8);
-                            cfzm cfzmVar9 = cgamVar.r;
-                            cfznVar.f(exgd.DEVICE_INTEGRITY_ATTESTATION, cfzmVar9);
-                            cfzm cfzmVar10 = cgamVar.s;
-                            cfznVar.f(exgd.DEVICE_INTEGRITY_ATTESTATION_ACK, cfzmVar10);
-                            cfzmVar7.c();
-                            cfzmVar8.c();
-                            cfzmVar9.c();
-                            cfzmVar10.c();
+                if (ftdv.J() && (chsoVar = chqhVar2.c) != null) {
+                    chet chetVar2 = chrg.a;
+                    chetVar2.b().p("Initiating shutdown of DctOfflineServiceController.", new Object[0]);
+                    cihb cihbVar = (cihb) chsoVar;
+                    ciil ciilVar = cihbVar.f;
+                    chkv.h(ciilVar.a, "DctThreadManager.dctPcpMainExecutor");
+                    chkv.h(ciilVar.b, "DctThreadManager.dctPcpCallbackExecutor");
+                    chkv.h(ciilVar.c, "DctThreadManager.dctEndpointManagerExecutor");
+                    chkv.h(ciilVar.d, "DctThreadManager.dctBandwidthUpgradeManagerExecutor");
+                    chkv.h(ciilVar.e, "DctThreadManager.dctBandwidthUpgradeCallbackExecutor");
+                    chkv.h(ciilVar.f, "DctThreadManager.dctPayloadStatusUpdateExecutor");
+                    chetVar2.b().p("Initiating shutdown of DctPcpManager.", new Object[0]);
+                    boolean x = ftdv.x();
+                    ciic ciicVar = cihbVar.e;
+                    if (x) {
+                        cigz cigzVar = ciicVar.b;
+                        cigy cigyVar = ciicVar.i;
+                        cigzVar.g(ezum.DEVICE_CAPABILITY_REQUEST, cigyVar);
+                        cigy cigyVar2 = ciicVar.j;
+                        cigzVar.g(ezum.DEVICE_CAPABILITY_RESPONSE, cigyVar2);
+                        cigy cigyVar3 = ciicVar.k;
+                        cigzVar.g(ezum.DEVICE_INFO_REQUEST, cigyVar3);
+                        cigy cigyVar4 = ciicVar.l;
+                        cigzVar.g(ezum.DEVICE_INFO_RESPONSE, cigyVar4);
+                        cigy cigyVar5 = ciicVar.m;
+                        cigzVar.g(ezum.MEDIUM_NEGOTIATION_REQUEST, cigyVar5);
+                        cigy cigyVar6 = ciicVar.n;
+                        cigzVar.g(ezum.MEDIUM_NEGOTIATION_RESPONSE, cigyVar6);
+                        ezum ezumVar = ezum.DISCONNECTION_REQUEST;
+                        cigy cigyVar7 = cigzVar.f;
+                        cigzVar.g(ezumVar, cigyVar7);
+                        ezum ezumVar2 = ezum.DISCONNECTION_RESPONSE;
+                        cigy cigyVar8 = cigzVar.g;
+                        cigzVar.g(ezumVar2, cigyVar8);
+                        cigy cigyVar9 = ciicVar.o;
+                        cigzVar.g(ezum.MEDIUM_CLOSURE_REQUEST, cigyVar9);
+                        cigy cigyVar10 = ciicVar.p;
+                        cigzVar.g(ezum.MEDIUM_CLOSURE_RESPONSE, cigyVar10);
+                        cigyVar.d();
+                        cigyVar2.d();
+                        cigyVar3.d();
+                        cigyVar4.d();
+                        cigyVar5.d();
+                        cigyVar6.d();
+                        cigyVar7.d();
+                        cigyVar8.d();
+                        cigyVar9.d();
+                        cigyVar10.d();
+                        if (ftdv.C()) {
+                            cigy cigyVar11 = ciicVar.q;
+                            cigzVar.g(ezum.WIFI_CREDENTIAL_REQUEST, cigyVar11);
+                            cigy cigyVar12 = ciicVar.r;
+                            cigzVar.g(ezum.WIFI_CREDENTIAL_RESPONSE, cigyVar12);
+                            cigyVar11.d();
+                            cigyVar12.d();
+                        }
+                        if (ftdv.y()) {
+                            cigy cigyVar13 = ciicVar.s;
+                            cigzVar.g(ezum.DEVICE_INTEGRITY_START_REQUEST, cigyVar13);
+                            cigy cigyVar14 = ciicVar.t;
+                            cigzVar.g(ezum.DEVICE_INTEGRITY_START_RESPONSE, cigyVar14);
+                            cigy cigyVar15 = ciicVar.u;
+                            cigzVar.g(ezum.DEVICE_INTEGRITY_ATTESTATION, cigyVar15);
+                            cigy cigyVar16 = ciicVar.v;
+                            cigzVar.g(ezum.DEVICE_INTEGRITY_ATTESTATION_ACK, cigyVar16);
+                            cigyVar13.d();
+                            cigyVar14.d();
+                            cigyVar15.d();
+                            cigyVar16.d();
                         }
                     }
-                    Map map4 = cgamVar.e;
+                    Map map4 = ciicVar.e;
                     Iterator it4 = map4.values().iterator();
                     while (it4.hasNext()) {
-                        ((cgar) it4.next()).a.clear();
+                        ((ciih) it4.next()).a.clear();
                     }
                     map4.clear();
-                    cgamVar.f.clear();
-                    Map map5 = cgamVar.g;
+                    ciicVar.f.clear();
+                    Map map5 = ciicVar.g;
                     Iterator it5 = map5.values().iterator();
                     while (it5.hasNext()) {
-                        ((cgas) it5.next()).c.c(1, true);
+                        ((ciii) it5.next()).c.d(1, true);
                     }
                     map5.clear();
-                    final cfyx cfyxVar = cfzpVar.d;
-                    final cfzn cfznVar2 = cfyxVar.c;
-                    cfznVar2.b.c(new Runnable() { // from class: cfzb
+                    final cigg ciggVar = cihbVar.d;
+                    final cigz cigzVar2 = ciggVar.c;
+                    cigzVar2.b.d(new Runnable() { // from class: cigk
                         @Override // java.lang.Runnable
                         public final void run() {
-                            Set set = cfzn.this.e;
-                            cfyx cfyxVar2 = cfyxVar;
-                            if (set.contains(cfyxVar2)) {
-                                set.remove(cfyxVar2);
+                            Set set = cigz.this.e;
+                            cigg ciggVar2 = ciggVar;
+                            if (set.contains(ciggVar2)) {
+                                set.remove(ciggVar2);
                             } else {
-                                cfju.a.b().i("%s received request to unregister EndpointTeardownProcessor %s, but it is not registered.", "[DctEndpointManager]", cfyxVar2);
+                                chrg.a.b().i("%s received request to unregister EndpointTeardownProcessor %s, but it is not registered.", "[DctEndpointManager]", ciggVar2);
                             }
                         }
                     });
-                    cfyxVar.d.clear();
-                    cfzn cfznVar3 = cfzpVar.b;
-                    cexi cexiVar4 = cfju.a;
-                    cexiVar4.b().p("Initiating shutdown of DctEndpointManager.", new Object[0]);
-                    cfznVar3.f(exgd.DISCONNECTION_REQUEST, cfznVar3.f);
-                    cfznVar3.f(exgd.DISCONNECTION_RESPONSE, cfznVar3.g);
-                    Map map6 = cfznVar3.c;
+                    ciggVar.d.clear();
+                    cigz cigzVar3 = cihbVar.b;
+                    chetVar2.b().p("Initiating shutdown of DctEndpointManager.", new Object[0]);
+                    cigzVar3.g(ezum.DISCONNECTION_REQUEST, cigzVar3.f);
+                    cigzVar3.g(ezum.DISCONNECTION_RESPONSE, cigzVar3.g);
+                    Map map6 = cigzVar3.c;
                     Iterator it6 = map6.values().iterator();
                     while (it6.hasNext()) {
-                        ((cfyy) it6.next()).c(1, true);
+                        ((cigh) it6.next()).d(1, true);
                     }
                     map6.clear();
-                    cfznVar3.d.clear();
-                    cfzpVar.a.G();
-                    cexiVar4.b().p("DctOfflineServiceController has shut down.", new Object[0]);
+                    cigzVar3.d.clear();
+                    cihbVar.a.H();
+                    chetVar2.b().p("DctOfflineServiceController has shut down.", new Object[0]);
                 }
-                cfju.a.b().h("Completed shutdown of ServiceControllerRouter %s.", cfivVar2);
+                chrg.a.b().h("Completed shutdown of ServiceControllerRouter %s.", chqhVar2);
             }
         });
-        cfdj.h(cfivVar.a, "ServiceControllerRouter.offBinderSerializer");
+        chkv.h(chqhVar.a, "ServiceControllerRouter.offBinderSerializer");
         this.m.d.clear();
         super.onDestroy();
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final boolean onUnbind(Intent intent) {
         return false;
     }

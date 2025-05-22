@@ -4,18 +4,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ckit;
-import defpackage.ckjt;
-import defpackage.ckkq;
-import defpackage.ckkr;
+import defpackage.atzr;
+import defpackage.cmqy;
+import defpackage.cmry;
+import defpackage.cmsv;
+import defpackage.cmsw;
 import java.util.ArrayList;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class RangingData extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckkr();
+    public static final Parcelable.Creator CREATOR = new cmsw();
     public final Distance a;
     public final ZoneTransition b;
     public final AngleOfArrival c;
@@ -23,9 +23,9 @@ public class RangingData extends AbstractSafeParcelable {
     public final long e;
     public final int f;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class AngleOfArrival extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new ckit();
+        public static final Parcelable.Creator CREATOR = new cmqy();
         public final float a;
         public final float b;
 
@@ -41,16 +41,16 @@ public class RangingData extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             float f = this.a;
-            int a = arxc.a(parcel);
-            arxc.l(parcel, 1, f);
-            arxc.l(parcel, 2, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.l(parcel, 1, f);
+            atzr.l(parcel, 2, this.b);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Distance extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new ckjt();
+        public static final Parcelable.Creator CREATOR = new cmry();
         public final float a;
         public final float b;
         public final int c;
@@ -68,11 +68,11 @@ public class RangingData extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             float f = this.a;
-            int a = arxc.a(parcel);
-            arxc.l(parcel, 1, f);
-            arxc.l(parcel, 2, this.b);
-            arxc.o(parcel, 3, this.c);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.l(parcel, 1, f);
+            atzr.l(parcel, 2, this.b);
+            atzr.o(parcel, 3, this.c);
+            atzr.c(parcel, a);
         }
     }
 
@@ -85,26 +85,26 @@ public class RangingData extends AbstractSafeParcelable {
         this.f = i;
     }
 
-    public final ckkq a() {
-        ckkq ckkqVar = new ckkq();
+    public final cmsv a() {
+        cmsv cmsvVar = new cmsv();
         Distance distance = this.a;
         if (distance != null) {
-            ckkqVar.a = distance;
+            cmsvVar.a = distance;
         }
         ZoneTransition zoneTransition = this.b;
         if (zoneTransition != null) {
-            ckkqVar.b = zoneTransition;
+            cmsvVar.b = zoneTransition;
         }
         AngleOfArrival angleOfArrival = this.c;
         if (angleOfArrival != null) {
-            ckkqVar.c = angleOfArrival;
+            cmsvVar.c = angleOfArrival;
         }
         AngleOfArrival angleOfArrival2 = this.d;
         if (angleOfArrival2 != null) {
-            ckkqVar.d = angleOfArrival2;
+            cmsvVar.d = angleOfArrival2;
         }
-        ckkqVar.e = this.f;
-        return ckkqVar;
+        cmsvVar.e = this.f;
+        return cmsvVar;
     }
 
     public final String toString() {
@@ -132,13 +132,13 @@ public class RangingData extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Distance distance = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, distance, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.q(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, distance, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.q(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 }

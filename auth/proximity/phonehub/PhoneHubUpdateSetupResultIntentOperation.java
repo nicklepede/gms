@@ -2,15 +2,15 @@ package com.google.android.gms.auth.proximity.phonehub;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.arxo;
-import defpackage.enss;
+import defpackage.auad;
+import defpackage.eqgl;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class PhoneHubUpdateSetupResultIntentOperation extends IntentOperation {
     public static final /* synthetic */ int a = 0;
-    private static final arxo b = new arxo("ProximityAuth", "PhoneHubUpdateSetupResultIntentOperation");
+    private static final auad b = new auad("ProximityAuth", "PhoneHubUpdateSetupResultIntentOperation");
 
     public static Intent a(String str, int i, int i2, String str2, boolean z, String str3) {
         Intent intent = new Intent();
@@ -24,9 +24,9 @@ public class PhoneHubUpdateSetupResultIntentOperation extends IntentOperation {
         return intent;
     }
 
-    private static final void b(enss enssVar) {
+    private static final void b(eqgl eqglVar) {
         try {
-            enssVar.get();
+            eqglVar.get();
         } catch (InterruptedException unused) {
             Thread.currentThread().interrupt();
             b.m("Thread interrupted while updating feature state.", new Object[0]);

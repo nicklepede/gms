@@ -8,92 +8,92 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.romanesco.contactsupload.triggers.ContactsLoggerIntentOperation;
-import defpackage.ahhp;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.byxq;
-import defpackage.byxs;
-import defpackage.cxjg;
-import defpackage.cxks;
-import defpackage.cxkt;
-import defpackage.cxkw;
-import defpackage.cxln;
-import defpackage.cxme;
-import defpackage.cxmf;
-import defpackage.cxoo;
-import defpackage.cxop;
-import defpackage.dvkb;
-import defpackage.eiho;
-import defpackage.ejhf;
-import defpackage.elbh;
-import defpackage.elbs;
-import defpackage.elbt;
-import defpackage.elbu;
-import defpackage.elbv;
-import defpackage.elcc;
-import defpackage.enox;
+import defpackage.ajif;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.cbgh;
+import defpackage.cbgj;
+import defpackage.cztc;
+import defpackage.czuo;
+import defpackage.czup;
+import defpackage.czus;
+import defpackage.czvj;
+import defpackage.czwa;
+import defpackage.czwb;
+import defpackage.czyl;
+import defpackage.czym;
+import defpackage.dxvc;
+import defpackage.ekut;
+import defpackage.eluo;
+import defpackage.enou;
 import defpackage.enpf;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.fecj;
-import defpackage.fgli;
-import defpackage.fglk;
-import defpackage.fmxe;
-import defpackage.frrn;
-import defpackage.frrq;
-import defpackage.frrr;
+import defpackage.enpg;
+import defpackage.enph;
+import defpackage.enpi;
+import defpackage.enpp;
+import defpackage.eqcq;
+import defpackage.eqcy;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.fgrc;
+import defpackage.fjag;
+import defpackage.fjai;
+import defpackage.fppd;
+import defpackage.fuma;
+import defpackage.fumd;
+import defpackage.fume;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ContactsLoggerIntentOperation extends IntentOperation {
-    public static final asot a = asot.b("DCU_IntentOperation", asej.ROMANESCO);
+    public static final ausn a = ausn.b("DCU_IntentOperation", auid.ROMANESCO);
     private final long b = System.currentTimeMillis();
 
     private final void b() {
-        cxks a2 = cxkt.a(getApplicationContext());
+        czuo a2 = czup.a(getApplicationContext());
         final Long valueOf = Long.valueOf(System.currentTimeMillis());
-        a2.b.b(new eiho() { // from class: cxkh
-            @Override // defpackage.eiho
+        a2.b.b(new ekut() { // from class: czud
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                cxiq cxiqVar = (cxiq) obj;
-                int i = cxks.c;
-                fecj fecjVar = (fecj) cxiqVar.iB(5, null);
-                fecjVar.X(cxiqVar);
+                czsm czsmVar = (czsm) obj;
+                int i = czuo.c;
+                fgrc fgrcVar = (fgrc) czsmVar.iQ(5, null);
+                fgrcVar.X(czsmVar);
                 long longValue = valueOf.longValue();
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                cxiq cxiqVar2 = (cxiq) fecjVar.b;
-                cxiq cxiqVar3 = cxiq.a;
-                cxiqVar2.b |= 32;
-                cxiqVar2.e = longValue;
-                return (cxiq) fecjVar.Q();
+                czsm czsmVar2 = (czsm) fgrcVar.b;
+                czsm czsmVar3 = czsm.a;
+                czsmVar2.b |= 32;
+                czsmVar2.e = longValue;
+                return (czsm) fgrcVar.Q();
             }
-        }, enre.a);
+        }, eqex.a);
     }
 
     private final boolean c(Intent intent) {
         long j;
         try {
-            j = ((Long) ((enpf) enps.f(cxkt.a(getApplicationContext()).b.a(), new eiho() { // from class: cxjj
-                @Override // defpackage.eiho
+            j = ((Long) ((eqcy) eqdl.f(czup.a(getApplicationContext()).b.a(), new ekut() { // from class: cztf
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    return Long.valueOf(((cxiq) obj).e);
+                    return Long.valueOf(((czsm) obj).e);
                 }
-            }, enre.a)).u()).longValue();
+            }, eqex.a)).u()).longValue();
         } catch (InterruptedException | ExecutionException unused) {
             j = 0;
         }
         long currentTimeMillis = System.currentTimeMillis() - j;
         String action = intent.getAction();
-        long millis = "com.google.android.gms.icing.action.CONTACT_CHANGED".equals(action) ? TimeUnit.MINUTES.toMillis(frrq.a.a().c()) : e(action) ? TimeUnit.MINUTES.toMillis(frrq.a.a().g()) : "android.intent.action.ACTION_POWER_CONNECTED".equals(action) ? TimeUnit.HOURS.toMillis(frrq.a.a().f()) : d(action) ? TimeUnit.MINUTES.toMillis(frrq.a.a().d()) : 0L;
+        long millis = "com.google.android.gms.icing.action.CONTACT_CHANGED".equals(action) ? TimeUnit.MINUTES.toMillis(fumd.a.lK().c()) : e(action) ? TimeUnit.MINUTES.toMillis(fumd.a.lK().g()) : "android.intent.action.ACTION_POWER_CONNECTED".equals(action) ? TimeUnit.HOURS.toMillis(fumd.a.lK().f()) : d(action) ? TimeUnit.MINUTES.toMillis(fumd.a.lK().d()) : 0L;
         if (currentTimeMillis <= 0 || currentTimeMillis >= millis) {
             return false;
         }
@@ -109,84 +109,84 @@ public class ContactsLoggerIntentOperation extends IntentOperation {
         return "com.google.android.gms.udc.action.SETTING_CHANGED".equals(str);
     }
 
-    final void a(Context context, boolean z, final fglk fglkVar, final cxkw cxkwVar) {
-        fglk fglkVar2 = fglk.SYNC_REASON_DC_OPT_IN;
-        cxme cxmeVar = new cxme();
-        cxmeVar.b = this.b;
-        if (fglkVar == fglkVar2) {
-            cxmf.b(context, cxmeVar, new cxoo(context), z, true);
+    final void a(Context context, boolean z, final fjai fjaiVar, final czus czusVar) {
+        fjai fjaiVar2 = fjai.SYNC_REASON_DC_OPT_IN;
+        czwa czwaVar = new czwa();
+        czwaVar.b = this.b;
+        if (fjaiVar == fjaiVar2) {
+            czwb.b(context, czwaVar, new czyl(context), z, true);
         } else {
-            cxmf.b(context, cxmeVar, new cxoo(context), z, false);
+            czwb.b(context, czwaVar, new czyl(context), z, false);
         }
-        if (cxmeVar.c) {
-            final fgli fgliVar = fglkVar == fglkVar2 ? fgli.SYNC_ID_UPLOAD_CONTACTS_EXPEDITE : cxmeVar.d ? fgli.SYNC_ID_UPLOAD_CONTACTS_INCREMENTAL : fgli.SYNC_ID_UPLOAD_CONTACTS_BATCH;
-            cxjg a2 = cxjg.a();
-            int i = fgliVar == fgli.SYNC_ID_UPLOAD_CONTACTS_INCREMENTAL ? 3 : 5;
-            elbs elbsVar = (elbs) elbv.a.v();
-            if (!elbsVar.b.L()) {
-                elbsVar.U();
+        if (czwaVar.c) {
+            final fjag fjagVar = fjaiVar == fjaiVar2 ? fjag.SYNC_ID_UPLOAD_CONTACTS_EXPEDITE : czwaVar.d ? fjag.SYNC_ID_UPLOAD_CONTACTS_INCREMENTAL : fjag.SYNC_ID_UPLOAD_CONTACTS_BATCH;
+            cztc a2 = cztc.a();
+            int i = fjagVar == fjag.SYNC_ID_UPLOAD_CONTACTS_INCREMENTAL ? 3 : 5;
+            enpf enpfVar = (enpf) enpi.a.v();
+            if (!enpfVar.b.L()) {
+                enpfVar.U();
             }
-            ((elbv) elbsVar.b).c = elbt.a(7);
-            if (!elbsVar.b.L()) {
-                elbsVar.U();
+            ((enpi) enpfVar.b).c = enpg.a(7);
+            if (!enpfVar.b.L()) {
+                enpfVar.U();
             }
-            ((elbv) elbsVar.b).d = elbu.a(i);
-            elbv elbvVar = (elbv) elbsVar.Q();
-            fecj v = elcc.a.v();
+            ((enpi) enpfVar.b).d = enph.a(i);
+            enpi enpiVar = (enpi) enpfVar.Q();
+            fgrc v = enpp.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            elcc elccVar = (elcc) v.b;
-            elbvVar.getClass();
-            elccVar.s = elbvVar;
-            elccVar.b |= 32768;
+            enpp enppVar = (enpp) v.b;
+            enpiVar.getClass();
+            enppVar.s = enpiVar;
+            enppVar.b |= 32768;
             a2.t(v);
-            final byxs byxsVar = cxln.b(getApplicationContext()).a;
-            ensi h = ensi.h(ensj.i(byxsVar.b(new byxq(fgliVar, null, false, null))));
-            enqc enqcVar = new enqc() { // from class: cxow
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    asot asotVar = ContactsLoggerIntentOperation.a;
-                    return ((drgo) obj).b(fglk.this);
+            final cbgj cbgjVar = czvj.b(getApplicationContext()).a;
+            eqgb h = eqgb.h(eqgc.i(cbgjVar.b(new cbgh(fjagVar, null, false, null))));
+            eqdv eqdvVar = new eqdv() { // from class: czyt
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    ausn ausnVar = ContactsLoggerIntentOperation.a;
+                    return ((dtqw) obj).b(fjai.this);
                 }
             };
-            enre enreVar = enre.a;
+            eqex eqexVar = eqex.a;
             try {
-                ((enpf) enps.f(enps.g(enox.f(enps.g(h, enqcVar, enreVar), Exception.class, new eiho() { // from class: cxox
-                    @Override // defpackage.eiho
+                ((eqcy) eqdl.f(eqdl.g(eqcq.f(eqdl.g(h, eqdvVar, eqexVar), Exception.class, new ekut() { // from class: czyu
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        ((ejhf) ((ejhf) ((ejhf) ContactsLoggerIntentOperation.a.i()).s((Exception) obj)).ah(9228)).x("Could not record sync trigger.");
+                        ((eluo) ((eluo) ((eluo) ContactsLoggerIntentOperation.a.i()).s((Exception) obj)).ai(9230)).x("Could not record sync trigger.");
                         return null;
                     }
-                }, enreVar), new enqc() { // from class: cxoy
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj) {
-                        asot asotVar = ContactsLoggerIntentOperation.a;
+                }, eqexVar), new eqdv() { // from class: czyv
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj) {
+                        ausn ausnVar = ContactsLoggerIntentOperation.a;
                         final Bundle bundle = new Bundle();
-                        cxkw cxkwVar2 = cxkwVar;
-                        bundle.putInt("trigger_id", cxkwVar2.a);
-                        bundle.putLong("trigger_timestamp", cxkwVar2.b);
-                        final byxs byxsVar2 = byxs.this;
-                        final fgli fgliVar2 = fgliVar;
-                        return ensj.m(new Callable() { // from class: byxb
+                        czus czusVar2 = czusVar;
+                        bundle.putInt("trigger_id", czusVar2.a);
+                        bundle.putLong("trigger_timestamp", czusVar2.b);
+                        final cbgj cbgjVar2 = cbgj.this;
+                        final fjag fjagVar2 = fjagVar;
+                        return eqgc.m(new Callable() { // from class: cbfs
                             @Override // java.util.concurrent.Callable
                             public final Object call() {
-                                return Boolean.valueOf(byxs.this.k(fgliVar2, bundle));
+                                return Boolean.valueOf(cbgj.this.k(fjagVar2, bundle));
                             }
-                        }, byxsVar2.b);
+                        }, cbgjVar2.b);
                     }
-                }, enreVar), new eiho() { // from class: cxoz
-                    @Override // defpackage.eiho
+                }, eqexVar), new ekut() { // from class: czyw
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        ((ejhf) ((ejhf) ContactsLoggerIntentOperation.a.h()).ah(9229)).G("SPE one-time sync %d %s", fgli.this.e, true != ((Boolean) obj).booleanValue() ? "disabled" : "scheduled");
+                        ((eluo) ((eluo) ContactsLoggerIntentOperation.a.h()).ai(9231)).G("SPE one-time sync %d %s", fjag.this.e, true != ((Boolean) obj).booleanValue() ? "disabled" : "scheduled");
                         return null;
                     }
-                }, enreVar)).u();
+                }, eqexVar)).u();
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
-                ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 9236)).x("Thread interrupted unexpectedly!");
+                ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 9238)).x("Thread interrupted unexpectedly!");
             } catch (ExecutionException e2) {
-                ((ejhf) ((ejhf) ((ejhf) a.i()).s(e2)).ah((char) 9235)).x("Scheduling sync failed.");
+                ((eluo) ((eluo) ((eluo) a.i()).s(e2)).ai((char) 9237)).x("Scheduling sync failed.");
             }
         }
     }
@@ -194,21 +194,21 @@ public class ContactsLoggerIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Boolean bool;
-        fmxe.a.a();
+        fppd.a.lK();
         try {
             String action = intent.getAction();
             boolean z = false;
-            if (!frrr.c() && "com.google.android.gms.icing.action.CONTACT_CHANGED".equals(action)) {
+            if (!fume.c() && "com.google.android.gms.icing.action.CONTACT_CHANGED".equals(action)) {
                 Context applicationContext = getApplicationContext();
-                if (asqh.f() && new ahhp(applicationContext).a() != null) {
-                    ((ejhf) ((ejhf) a.h()).ah((char) 9230)).x("Nofity BackupManager.dateChanged()");
+                if (auub.f() && new ajif(applicationContext).a() != null) {
+                    ((eluo) ((eluo) a.h()).ai((char) 9232)).x("Nofity BackupManager.dateChanged()");
                     BackupManager.dataChanged(applicationContext.getPackageName());
                 }
-                cxjg.a().l(3);
+                cztc.a().l(3);
                 boolean z2 = intent.getExtras().getBoolean("com.google.android.gms.icing.extra.isSignificant", false);
                 if (c(intent)) {
                     try {
-                        bool = (Boolean) ((enpf) cxkt.a(applicationContext).d()).u();
+                        bool = (Boolean) ((eqcy) czup.a(applicationContext).d()).u();
                     } catch (InterruptedException | ExecutionException unused) {
                         bool = false;
                     }
@@ -216,110 +216,110 @@ public class ContactsLoggerIntentOperation extends IntentOperation {
                     if (!z2 || booleanValue) {
                         return;
                     }
-                    cxkt.a(applicationContext).f(true);
+                    czup.a(applicationContext).f(true);
                     return;
                 }
                 b();
-                cxkw a2 = cxkw.a();
+                czus a2 = czus.a();
                 if (z2) {
-                    cxjg.a().m(4, a2);
+                    cztc.a().m(4, a2);
                     z = true;
                 } else {
-                    cxjg.a().m(3, a2);
+                    cztc.a().m(3, a2);
                 }
-                a(applicationContext, z, z ? fglk.SYNC_REASON_CONTACT_CHANGED_SIGNIFICANT : fglk.SYNC_REASON_CONTACT_CHANGED_INSIGNIFICANT, a2);
+                a(applicationContext, z, z ? fjai.SYNC_REASON_CONTACT_CHANGED_SIGNIFICANT : fjai.SYNC_REASON_CONTACT_CHANGED_INSIGNIFICANT, a2);
                 return;
             }
             if ("com.google.android.gms.udc.action.FACS_CACHE_UPDATED_EXPLICIT".equals(action)) {
                 Context applicationContext2 = getApplicationContext();
-                cxjg.a().l(4);
+                cztc.a().l(4);
                 try {
-                    Thread.sleep(frrn.a.a().a());
+                    Thread.sleep(fuma.a.lK().a());
                 } catch (InterruptedException unused2) {
                 }
                 String stringExtra = intent.getStringExtra("com.google.android.gms.udc.extra.facsCacheAccountName");
                 if (TextUtils.isEmpty(stringExtra)) {
-                    ((ejhf) ((ejhf) a.j()).ah((char) 9222)).x("handleFacsCacheUpdatedIntent: account name is null or empty. Ignore it.");
+                    ((eluo) ((eluo) a.j()).ai((char) 9224)).x("handleFacsCacheUpdatedIntent: account name is null or empty. Ignore it.");
                     return;
                 }
                 b();
                 try {
-                    new dvkb(cxop.a(applicationContext2)).a(intent).get();
+                    new dxvc(czym.a(applicationContext2)).a(intent).get();
                     try {
-                        if (((Boolean) ((enpf) new cxoo(applicationContext2).c().a(new Account(stringExtra, "com.google")).i(11)).u()).booleanValue()) {
-                            cxkw a3 = cxkw.a();
-                            if (((Long) ((enpf) cxkt.b(getApplicationContext(), stringExtra).a()).u()).longValue() > 0) {
-                                cxjg.a().m(8, a3);
-                                cxkt.b(getApplicationContext(), stringExtra).b.b(new eiho() { // from class: cxjs
-                                    @Override // defpackage.eiho
+                        if (((Boolean) ((eqcy) new czyl(applicationContext2).c().a(new Account(stringExtra, "com.google")).i(11)).u()).booleanValue()) {
+                            czus a3 = czus.a();
+                            if (((Long) ((eqcy) czup.b(getApplicationContext(), stringExtra).a()).u()).longValue() > 0) {
+                                cztc.a().m(8, a3);
+                                czup.b(getApplicationContext(), stringExtra).b.b(new ekut() { // from class: czto
+                                    @Override // defpackage.ekut
                                     public final Object apply(Object obj) {
-                                        cxiq cxiqVar = (cxiq) obj;
-                                        int i = cxks.c;
-                                        fecj fecjVar = (fecj) cxiqVar.iB(5, null);
-                                        fecjVar.X(cxiqVar);
-                                        if (!fecjVar.b.L()) {
-                                            fecjVar.U();
+                                        czsm czsmVar = (czsm) obj;
+                                        int i = czuo.c;
+                                        fgrc fgrcVar = (fgrc) czsmVar.iQ(5, null);
+                                        fgrcVar.X(czsmVar);
+                                        if (!fgrcVar.b.L()) {
+                                            fgrcVar.U();
                                         }
-                                        cxiq cxiqVar2 = (cxiq) fecjVar.b;
-                                        cxiq cxiqVar3 = cxiq.a;
-                                        cxiqVar2.b &= -9;
-                                        cxiqVar2.c = 0L;
-                                        if (!fecjVar.b.L()) {
-                                            fecjVar.U();
+                                        czsm czsmVar2 = (czsm) fgrcVar.b;
+                                        czsm czsmVar3 = czsm.a;
+                                        czsmVar2.b &= -9;
+                                        czsmVar2.c = 0L;
+                                        if (!fgrcVar.b.L()) {
+                                            fgrcVar.U();
                                         }
-                                        cxiq cxiqVar4 = (cxiq) fecjVar.b;
-                                        cxiqVar4.b &= -17;
-                                        cxiqVar4.d = 0L;
-                                        return (cxiq) fecjVar.Q();
+                                        czsm czsmVar4 = (czsm) fgrcVar.b;
+                                        czsmVar4.b &= -17;
+                                        czsmVar4.d = 0L;
+                                        return (czsm) fgrcVar.Q();
                                     }
-                                }, enre.a);
-                                a(applicationContext2, true, fglk.SYNC_REASON_DC_OPT_IN, a3);
+                                }, eqex.a);
+                                a(applicationContext2, true, fjai.SYNC_REASON_DC_OPT_IN, a3);
                                 return;
                             }
-                            cxjg.a().m(7, a3);
-                            a(applicationContext2, true, fglk.SYNC_REASON_DC_OPT_IN, a3);
+                            cztc.a().m(7, a3);
+                            a(applicationContext2, true, fjai.SYNC_REASON_DC_OPT_IN, a3);
                             return;
                         }
                         return;
                     } catch (InterruptedException e) {
                         e = e;
-                        ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 9226)).x("Exception while checking isDcOptedIn for account.");
+                        ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 9228)).x("Exception while checking isDcOptedIn for account.");
                         return;
                     } catch (ExecutionException e2) {
                         e = e2;
-                        ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 9226)).x("Exception while checking isDcOptedIn for account.");
+                        ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 9228)).x("Exception while checking isDcOptedIn for account.");
                         return;
                     }
                 } catch (InterruptedException | ExecutionException e3) {
-                    ((ejhf) ((ejhf) ((ejhf) a.i()).s(e3)).ah((char) 9221)).x("Failed to handleFacsIntent.");
+                    ((eluo) ((eluo) ((eluo) a.i()).s(e3)).ai((char) 9223)).x("Failed to handleFacsIntent.");
                     return;
                 }
             }
             if (!e(action)) {
                 if (!"android.intent.action.ACTION_POWER_CONNECTED".equals(action)) {
-                    if (!frrr.c() || !d(action)) {
-                        ((ejhf) ((ejhf) a.j()).ah(9232)).B("Received unexpected broadcast: %s", action);
+                    if (!fume.c() || !d(action)) {
+                        ((eluo) ((eluo) a.j()).ai(9234)).B("Received unexpected broadcast: %s", action);
                         return;
                     } else {
-                        ((ejhf) ((ejhf) a.h()).ah((char) 9219)).x("Started to handle CP2 update.");
-                        a(getApplicationContext(), true, fglk.SYNC_REASON_CONTACT_CHANGED_SIGNIFICANT, cxkw.a());
+                        ((eluo) ((eluo) a.h()).ai((char) 9221)).x("Started to handle CP2 update.");
+                        a(getApplicationContext(), true, fjai.SYNC_REASON_CONTACT_CHANGED_SIGNIFICANT, czus.a());
                         return;
                     }
                 }
                 Context applicationContext3 = getApplicationContext();
-                cxjg.a().l(5);
+                cztc.a().l(5);
                 if (c(intent)) {
                     return;
                 }
                 b();
-                cxkw a4 = cxkw.a();
-                cxjg.a().m(6, a4);
-                a(applicationContext3, true, fglk.SYNC_REASON_POWER_CONNECTED, a4);
+                czus a4 = czus.a();
+                cztc.a().m(6, a4);
+                a(applicationContext3, true, fjai.SYNC_REASON_POWER_CONNECTED, a4);
                 return;
             }
-            ((ejhf) ((ejhf) a.h()).ah((char) 9223)).x("handleUdcSettingChanged: Udc flag is enabled");
+            ((eluo) ((eluo) a.h()).ai((char) 9225)).x("handleUdcSettingChanged: Udc flag is enabled");
             Context applicationContext4 = getApplicationContext();
-            cxjg.a().l(4);
+            cztc.a().l(4);
             if (c(intent)) {
                 return;
             }
@@ -327,47 +327,47 @@ public class ContactsLoggerIntentOperation extends IntentOperation {
             String string = intent.getExtras().getString("com.google.android.gms.udc.extra.accountName");
             for (int i : intent.getIntArrayExtra("com.google.android.gms.udc.extra.settingIdList")) {
                 if (i == 7) {
-                    cxoo cxooVar = new cxoo(applicationContext4);
+                    czyl czylVar = new czyl(applicationContext4);
                     if (TextUtils.isEmpty(string)) {
-                        ((ejhf) cxoo.a.j()).x("Empty Udc Account Name");
+                        ((eluo) czyl.a.j()).x("Empty Udc Account Name");
                         return;
                     }
                     try {
-                        if (((Boolean) ((enpf) cxooVar.c().a(new Account(string, "com.google")).i(11)).u()).booleanValue()) {
-                            cxkw a5 = cxkw.a();
-                            cxjg.a().m(5, a5);
-                            a(applicationContext4, true, fglk.SYNC_REASON_UDC_SETTING_CHANGED, a5);
+                        if (((Boolean) ((eqcy) czylVar.c().a(new Account(string, "com.google")).i(11)).u()).booleanValue()) {
+                            czus a5 = czus.a();
+                            cztc.a().m(5, a5);
+                            a(applicationContext4, true, fjai.SYNC_REASON_UDC_SETTING_CHANGED, a5);
                             return;
                         }
                         return;
                     } catch (InterruptedException e4) {
                         e = e4;
-                        ((ejhf) ((ejhf) cxoo.a.i()).s(e)).x("Failed to query FacsCache.isDataRecordingEnabled on DEVICE_CONTACTS");
+                        ((eluo) ((eluo) czyl.a.i()).s(e)).x("Failed to query FacsCache.isDataRecordingEnabled on DEVICE_CONTACTS");
                         return;
                     } catch (ExecutionException e5) {
                         e = e5;
-                        ((ejhf) ((ejhf) cxoo.a.i()).s(e)).x("Failed to query FacsCache.isDataRecordingEnabled on DEVICE_CONTACTS");
+                        ((eluo) ((eluo) czyl.a.i()).s(e)).x("Failed to query FacsCache.isDataRecordingEnabled on DEVICE_CONTACTS");
                         return;
                     }
                 }
             }
         } catch (Exception e6) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e6)).ah((char) 9233)).x("Unable to start contactsLogger process");
-            cxjg a6 = cxjg.a();
-            fecj v = elbh.a.v();
+            ((eluo) ((eluo) ((eluo) a.i()).s(e6)).ai((char) 9235)).x("Unable to start contactsLogger process");
+            cztc a6 = cztc.a();
+            fgrc v = enou.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            ((elbh) v.b).c = true;
-            elbh elbhVar = (elbh) v.Q();
-            fecj v2 = elcc.a.v();
+            ((enou) v.b).c = true;
+            enou enouVar = (enou) v.Q();
+            fgrc v2 = enpp.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            elcc elccVar = (elcc) v2.b;
-            elbhVar.getClass();
-            elccVar.i = elbhVar;
-            elccVar.b |= 32;
+            enpp enppVar = (enpp) v2.b;
+            enouVar.getClass();
+            enppVar.i = enouVar;
+            enppVar.b |= 32;
             a6.t(v2);
         }
     }

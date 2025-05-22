@@ -7,17 +7,17 @@ import android.os.IBinder;
 import android.os.ResultReceiver;
 import android.util.Log;
 import com.google.android.chimera.Service;
-import defpackage.aoad;
-import defpackage.fmrd;
+import defpackage.aqbv;
+import defpackage.fpjb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class FileApkChimeraService extends Service {
     public static void a(boolean z, Context context, String str, ResultReceiver resultReceiver) {
-        if (!fmrd.j() || z) {
+        if (!fpjb.j() || z) {
             c(context, str, resultReceiver, new Intent().putExtra("STAGE_FILE_APKS_ASSET_NAME", str).putExtra("STAGE_FILE_APKS_RESULT_RECEIVER", resultReceiver));
         } else {
-            aoad.a(context, new Intent("com.google.android.gms.chimera.container.STAGE_MODULE_APKS").putExtra("STAGE_FILE_APKS_ASSET_NAME", str).putExtra("STAGE_FILE_APKS_RESULT_RECEIVER", resultReceiver), -1);
+            aqbv.a(context, new Intent("com.google.android.gms.chimera.container.STAGE_MODULE_APKS").putExtra("STAGE_FILE_APKS_ASSET_NAME", str).putExtra("STAGE_FILE_APKS_RESULT_RECEIVER", resultReceiver), -1);
         }
     }
 
@@ -52,6 +52,6 @@ public class FileApkChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        return aoad.a(this, intent, i2);
+        return aqbv.a(this, intent, i2);
     }
 }

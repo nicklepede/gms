@@ -3,93 +3,93 @@ package com.google.android.gms.mdisync.service;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.BroadcastReceiver;
-import defpackage.ccqw;
-import defpackage.ccri;
-import defpackage.ccrj;
-import defpackage.ccrk;
-import defpackage.ccsm;
-import defpackage.dphg;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.ejdg;
-import defpackage.ejfg;
-import defpackage.enre;
-import defpackage.ensa;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fqbt;
+import defpackage.cezq;
+import defpackage.cfac;
+import defpackage.cfad;
+import defpackage.cfae;
+import defpackage.cfbg;
+import defpackage.drrp;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elqn;
+import defpackage.elsn;
+import defpackage.eqex;
+import defpackage.eqft;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fsvs;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MdiSyncGcmChimeraBroadcastReceiver extends BroadcastReceiver {
-    private final eijr b;
-    private final eijr c;
+    private final ekww b;
+    private final ekww c;
 
     public MdiSyncGcmChimeraBroadcastReceiver() {
-        this(new eijr() { // from class: ccrl
-            @Override // defpackage.eijr
-            public final Object a() {
-                ccog a = ccog.a();
-                return new ccrk(new ejdg(new ccnd((byxs) a.B.a(), new ccns((eijr) a.C.a(), new ccnt((Context) a.d.a(), (dphg) a.E.a())), new asmf(2, 10), (dphg) a.E.a())), (dphg) a.E.a(), (ccqc) a.Q.a());
+        this(new ekww() { // from class: cfaf
+            @Override // defpackage.ekww
+            public final Object lK() {
+                cexa a = cexa.a();
+                return new cfae(new elqn(new cevx((cbgj) a.B.a(), new cewm((ekww) a.C.a(), new cewn((Context) a.d.a(), (drrp) a.E.a())), new aupz(2, 10), (drrp) a.E.a())), (drrp) a.E.a(), (ceyw) a.Q.a());
             }
-        }, new eijr() { // from class: ccrm
-            @Override // defpackage.eijr
-            public final Object a() {
-                return ccog.a().c();
+        }, new ekww() { // from class: cfag
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return cexa.a().c();
             }
         });
     }
 
     @Override // com.google.android.chimera.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        if (!fqbt.g()) {
-            ((dphg) this.c.a()).b().ah(6376).x("Disabled - skipping GCM push notification handling.");
+        if (!fsvs.g()) {
+            ((drrp) this.c.lK()).b().ai(6395).x("Disabled - skipping GCM push notification handling.");
             return;
         }
-        ((dphg) this.c.a()).b().ah(6375).x("Received GCM push notification!");
-        ccrk ccrkVar = (ccrk) this.b.a();
+        ((drrp) this.c.lK()).b().ai(6394).x("Received GCM push notification!");
+        cfae cfaeVar = (cfae) this.b.lK();
         if (intent == null) {
-            ccrkVar.b.b().ah(6374).x("Skipping push message handling due to null intent...");
+            cfaeVar.b.b().ai(6393).x("Skipping push message handling due to null intent...");
             return;
         }
         beginAsync();
-        int i = eitj.d;
-        eite eiteVar = new eite();
-        ejfg listIterator = ((ejdg) ccrkVar.a).listIterator();
+        int i = elgo.d;
+        elgj elgjVar = new elgj();
+        elsn listIterator = ((elqn) cfaeVar.a).listIterator();
         while (listIterator.hasNext()) {
-            ccqw ccqwVar = (ccqw) listIterator.next();
-            if (ccqwVar.c(intent)) {
-                ccsm a = ccqwVar.a();
-                enss b = ccqwVar.b(intent);
-                eiteVar.i(b);
-                ensj.t(b, new ccrj(ccrkVar, a), enre.a);
+            cezq cezqVar = (cezq) listIterator.next();
+            if (cezqVar.c(intent)) {
+                cfbg a = cezqVar.a();
+                eqgl b = cezqVar.b(intent);
+                elgjVar.i(b);
+                eqgc.t(b, new cfad(cfaeVar, a), eqex.a);
             }
         }
-        final eitj g = eiteVar.g();
-        ensa a2 = ensj.a(g);
-        Callable callable = new Callable() { // from class: ccrh
+        final elgo g = elgjVar.g();
+        eqft a2 = eqgc.a(g);
+        Callable callable = new Callable() { // from class: cfab
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                eitj eitjVar = eitj.this;
-                int i2 = ((ejcb) eitjVar).c;
+                elgo elgoVar = elgo.this;
+                int i2 = ((elpg) elgoVar).c;
                 if (i2 > 1) {
                     throw new IllegalArgumentException("Message processed by multiple backends.");
                 }
                 for (int i3 = 0; i3 < i2; i3++) {
-                    ((enss) eitjVar.get(i3)).get();
+                    ((eqgl) elgoVar.get(i3)).get();
                 }
                 return null;
             }
         };
-        enre enreVar = enre.a;
-        ensj.t(a2.a(callable, enreVar), new ccri(ccrkVar, this), enreVar);
+        eqex eqexVar = eqex.a;
+        eqgc.t(a2.a(callable, eqexVar), new cfac(cfaeVar, this), eqexVar);
     }
 
-    public MdiSyncGcmChimeraBroadcastReceiver(eijr eijrVar, eijr eijrVar2) {
-        this.b = eijrVar;
-        this.c = eijy.a(eijrVar2);
+    public MdiSyncGcmChimeraBroadcastReceiver(ekww ekwwVar, ekww ekwwVar2) {
+        this.b = ekwwVar;
+        this.c = ekxd.a(ekwwVar2);
     }
 }

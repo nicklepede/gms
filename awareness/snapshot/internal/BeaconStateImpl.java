@@ -6,37 +6,37 @@ import android.text.TextUtils;
 import com.google.android.gms.awareness.state.BeaconState$TypeFilter;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.ahgk;
-import defpackage.ahgl;
-import defpackage.ahgx;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.fdct;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.qkv;
+import defpackage.ajha;
+import defpackage.ajhb;
+import defpackage.ajhn;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.ffrk;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.sdz;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class BeaconStateImpl extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ahgl();
+    public static final Parcelable.Creator CREATOR = new ajhb();
     public final ArrayList a;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class BeaconInfoImpl extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new ahgk();
+        public static final Parcelable.Creator CREATOR = new ajha();
         public final String a;
         public final String b;
         public final byte[] c;
 
         public BeaconInfoImpl(String str, String str2, byte[] bArr) {
-            arwm.q(str);
+            atzb.q(str);
             this.a = str;
-            arwm.q(str2);
+            atzb.q(str2);
             this.b = str2;
             this.c = bArr;
         }
@@ -48,11 +48,11 @@ public final class BeaconStateImpl extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             String str = this.a;
-            int a = arxc.a(parcel);
-            arxc.v(parcel, 2, str, false);
-            arxc.v(parcel, 3, this.b, false);
-            arxc.i(parcel, 4, this.c, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.v(parcel, 2, str, false);
+            atzr.v(parcel, 3, this.b, false);
+            atzr.i(parcel, 4, this.c, false);
+            atzr.c(parcel, a);
         }
     }
 
@@ -76,51 +76,51 @@ public final class BeaconStateImpl extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         ArrayList arrayList = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 2, arrayList, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 2, arrayList, false);
+        atzr.c(parcel, a);
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class TypeFilterImpl extends BeaconState$TypeFilter {
-        public static final Parcelable.Creator CREATOR = new ahgx();
-        private final fdct a;
+        public static final Parcelable.Creator CREATOR = new ajhn();
+        private final ffrk a;
 
         public TypeFilterImpl(String str, String str2) {
-            fecj v = fdct.a.v();
-            arwm.q(str);
+            fgrc v = ffrk.a.v();
+            atzb.q(str);
             if (!v.b.L()) {
                 v.U();
             }
-            fdct fdctVar = (fdct) v.b;
+            ffrk ffrkVar = (ffrk) v.b;
             str.getClass();
-            fdctVar.b |= 1;
-            fdctVar.c = str;
-            arwm.q(str2);
+            ffrkVar.b |= 1;
+            ffrkVar.c = str;
+            atzb.q(str2);
             if (!v.b.L()) {
                 v.U();
             }
-            fdct fdctVar2 = (fdct) v.b;
+            ffrk ffrkVar2 = (ffrk) v.b;
             str2.getClass();
-            fdctVar2.b |= 2;
-            fdctVar2.d = str2;
-            this.a = (fdct) v.Q();
+            ffrkVar2.b |= 2;
+            ffrkVar2.d = str2;
+            this.a = (ffrk) v.Q();
         }
 
         public final String a() {
-            fdct fdctVar = this.a;
-            if (fdctVar == null) {
+            ffrk ffrkVar = this.a;
+            if (ffrkVar == null) {
                 return null;
             }
-            return fdctVar.c;
+            return ffrkVar.c;
         }
 
         public final String b() {
-            fdct fdctVar = this.a;
-            if (fdctVar == null) {
+            ffrk ffrkVar = this.a;
+            if (ffrkVar == null) {
                 return null;
             }
-            return fdctVar.d;
+            return ffrkVar.d;
         }
 
         public final boolean c(String str, String str2, byte[] bArr) {
@@ -131,11 +131,11 @@ public final class BeaconStateImpl extends AbstractSafeParcelable {
         }
 
         public final byte[] d() {
-            fdct fdctVar = this.a;
-            if (fdctVar == null || fdctVar.e.d() == 0) {
+            ffrk ffrkVar = this.a;
+            if (ffrkVar == null || ffrkVar.e.d() == 0) {
                 return null;
             }
-            return fdctVar.e.M();
+            return ffrkVar.e.M();
         }
 
         public final boolean equals(Object obj) {
@@ -156,29 +156,29 @@ public final class BeaconStateImpl extends AbstractSafeParcelable {
         public final String toString() {
             byte[] d = d();
             String a = a();
-            return a.X(d == null ? "null" : new String(d), b(), new StringBuilder(), a, "(", ",", ",", ")");
+            return a.Y(d == null ? "null" : new String(d), b(), new StringBuilder(), a, "(", ",", ",", ")");
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            fdct fdctVar = this.a;
-            int a = arxc.a(parcel);
-            arxc.i(parcel, 2, fdctVar.r(), false);
-            arxc.c(parcel, a);
+            ffrk ffrkVar = this.a;
+            int a = atzr.a(parcel);
+            atzr.i(parcel, 2, ffrkVar.r(), false);
+            atzr.c(parcel, a);
         }
 
         public TypeFilterImpl(byte[] bArr) {
-            fdct fdctVar;
+            ffrk ffrkVar;
             try {
-                fecp y = fecp.y(fdct.a, bArr, 0, bArr.length, febw.a());
-                fecp.M(y);
-                fdctVar = (fdct) y;
-            } catch (fedk unused) {
-                qkv.a("BeaconStateImpl", "Could not deserialize BeaconFence.BeaconTypeFilter");
-                fdctVar = null;
+                fgri y = fgri.y(ffrk.a, bArr, 0, bArr.length, fgqp.a());
+                fgri.M(y);
+                ffrkVar = (ffrk) y;
+            } catch (fgsd unused) {
+                sdz.a("BeaconStateImpl", "Could not deserialize BeaconFence.BeaconTypeFilter");
+                ffrkVar = null;
             }
-            arwm.s(fdctVar);
-            this.a = fdctVar;
+            atzb.s(ffrkVar);
+            this.a = ffrkVar;
         }
     }
 }

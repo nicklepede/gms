@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bmjw;
-import defpackage.bmjx;
+import defpackage.atzr;
+import defpackage.boqp;
+import defpackage.boqq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class UserAddress extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bmjx();
+    public static final Parcelable.Creator CREATOR = new boqq();
     public String a;
     public String b;
     public String c;
@@ -31,29 +31,29 @@ public final class UserAddress extends AbstractSafeParcelable implements Reflect
     public UserAddress() {
     }
 
-    public static bmjw a() {
-        return new bmjw(new UserAddress());
+    public static boqp a() {
+        return new boqp(new UserAddress());
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, this.a, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.v(parcel, 8, this.g, false);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.v(parcel, 10, this.i, false);
-        arxc.v(parcel, 11, this.j, false);
-        arxc.v(parcel, 12, this.k, false);
-        arxc.v(parcel, 13, this.l, false);
-        arxc.e(parcel, 14, this.m);
-        arxc.v(parcel, 15, this.n, false);
-        arxc.v(parcel, 16, this.o, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, this.a, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.v(parcel, 8, this.g, false);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.v(parcel, 10, this.i, false);
+        atzr.v(parcel, 11, this.j, false);
+        atzr.v(parcel, 12, this.k, false);
+        atzr.v(parcel, 13, this.l, false);
+        atzr.e(parcel, 14, this.m);
+        atzr.v(parcel, 15, this.n, false);
+        atzr.v(parcel, 16, this.o, false);
+        atzr.c(parcel, a);
     }
 
     public UserAddress(String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, String str9, String str10, String str11, String str12, boolean z, String str13, String str14) {

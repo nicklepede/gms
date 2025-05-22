@@ -4,34 +4,34 @@ import android.app.job.JobParameters;
 import android.app.job.JobService;
 import android.content.Context;
 import android.content.Intent;
-import defpackage.arwm;
-import defpackage.cdge;
-import defpackage.cdgq;
-import defpackage.cdnn;
-import defpackage.cdoq;
-import defpackage.cduk;
-import defpackage.cdul;
-import defpackage.cdvv;
+import defpackage.atzb;
+import defpackage.cfpd;
+import defpackage.cfpp;
+import defpackage.cfwk;
+import defpackage.cfxn;
+import defpackage.cgdi;
+import defpackage.cgdj;
+import defpackage.cgev;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public final class AppMeasurementJobService extends JobService implements cduk {
-    private cdul a;
+public final class AppMeasurementJobService extends JobService implements cgdi {
+    private cgdj a;
 
-    private final cdul d() {
+    private final cgdj d() {
         if (this.a == null) {
-            this.a = new cdul(this);
+            this.a = new cgdj(this);
         }
         return this.a;
     }
 
-    @Override // defpackage.cduk
+    @Override // defpackage.cgdi
     public final boolean b(int i) {
         throw new UnsupportedOperationException();
     }
 
-    @Override // defpackage.cduk
+    @Override // defpackage.cgdi
     public final void c(JobParameters jobParameters) {
         jobFinished(jobParameters, false);
     }
@@ -51,50 +51,50 @@ public final class AppMeasurementJobService extends JobService implements cduk {
     @Override // android.app.Service
     public final void onRebind(Intent intent) {
         d();
-        cdul.e(intent);
+        cgdj.e(intent);
     }
 
     @Override // android.app.job.JobService
     public final boolean onStartJob(final JobParameters jobParameters) {
-        final cdul d = d();
+        final cgdj d = d();
         String string = jobParameters.getExtras().getString("action");
         if (Objects.equals(string, "com.google.android.gms.measurement.UPLOAD")) {
-            arwm.s(string);
-            cdvv z = cdvv.z(d.a);
-            final cdoq aJ = z.aJ();
+            atzb.s(string);
+            cgev z = cgev.z(d.a);
+            final cfxn aK = z.aK();
             if (z.n().a) {
-                aJ.k.b("Device PackageMeasurementJobService called. action", string);
+                aK.k.b("Device PackageMeasurementJobService called. action", string);
             } else {
-                aJ.k.b("Local AppMeasurementJobService called. action", string);
+                aK.k.b("Local AppMeasurementJobService called. action", string);
             }
-            cdul.h(z, new Runnable() { // from class: cdui
+            cgdj.h(z, new Runnable() { // from class: cgdg
                 @Override // java.lang.Runnable
                 public final void run() {
-                    aJ.k.a("AppMeasurementJobService processed last upload request.");
-                    ((cduk) cdul.this.a).c(jobParameters);
+                    aK.k.a("AppMeasurementJobService processed last upload request.");
+                    ((cgdi) cgdj.this.a).c(jobParameters);
                 }
             });
         }
         if (!Objects.equals(string, "com.google.android.gms.measurement.SCION_UPLOAD")) {
             return true;
         }
-        arwm.s(string);
+        atzb.s(string);
         Context context = d.a;
-        if (cdgq.a == null) {
-            synchronized (cdgq.class) {
-                if (cdgq.a == null) {
-                    cdgq.a = new cdgq(context);
+        if (cfpp.a == null) {
+            synchronized (cfpp.class) {
+                if (cfpp.a == null) {
+                    cfpp.a = new cfpp(context);
                 }
             }
         }
-        cdgq cdgqVar = cdgq.a;
-        if (!((Boolean) cdnn.aG.a()).booleanValue()) {
+        cfpp cfppVar = cfpp.a;
+        if (!((Boolean) cfwk.aF.a()).booleanValue()) {
             return true;
         }
-        cdgqVar.b(new cdge(cdgqVar, new Runnable() { // from class: cdug
+        cfppVar.b(new cfpd(cfppVar, new Runnable() { // from class: cgde
             @Override // java.lang.Runnable
             public final void run() {
-                ((cduk) cdul.this.a).c(jobParameters);
+                ((cgdi) cgdj.this.a).c(jobParameters);
             }
         }));
         return true;
@@ -108,11 +108,11 @@ public final class AppMeasurementJobService extends JobService implements cduk {
     @Override // android.app.Service
     public final boolean onUnbind(Intent intent) {
         d();
-        cdul.g(intent);
+        cgdj.g(intent);
         return true;
     }
 
-    @Override // defpackage.cduk
-    public final void il(Intent intent) {
+    @Override // defpackage.cgdi
+    public final void iA(Intent intent) {
     }
 }

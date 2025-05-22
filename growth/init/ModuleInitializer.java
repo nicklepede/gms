@@ -8,130 +8,130 @@ import com.google.android.gms.growth.featuredrops.activity.FeatureDropsProofingC
 import com.google.android.gms.growth.notifications.NotificationActionChimeraActivity;
 import com.google.android.gms.growth.ui.GrowthDebugChimeraActivity;
 import com.google.android.gms.growth.ui.webview.GrowthWebViewChimeraActivity;
-import defpackage.anya;
-import defpackage.asbo;
-import defpackage.asbp;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bklb;
-import defpackage.bklc;
-import defpackage.bklm;
-import defpackage.ejhf;
-import defpackage.esno;
-import defpackage.esnq;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.fixm;
-import defpackage.fowr;
+import defpackage.apzs;
+import defpackage.aued;
+import defpackage.auee;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bmrr;
+import defpackage.bmrs;
+import defpackage.bmsc;
+import defpackage.eluo;
+import defpackage.evdb;
+import defpackage.evdd;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.flnj;
+import defpackage.frpu;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class ModuleInitializer extends anya {
-    private static final asot a = asot.e(asej.GROWTH);
+public class ModuleInitializer extends apzs {
+    private static final ausn a = ausn.e(auid.GROWTH);
     private static final String[] b = {GrowthDebugChimeraActivity.j, GrowthWebViewChimeraActivity.j, FeatureDropsChimeraActivity.p, FeatureDropsProofingChimeraActivity.p, NotificationActionChimeraActivity.j, "com.google.android.gms.growth.notifications.GcmBroadcastReceiver", "com.google.android.gms.growth.surveys.activity.GmsSurveyActivity"};
 
-    /* JADX WARN: Type inference failed for: r0v4, types: [bkgt, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r0v4, types: [bmnj, java.lang.Object] */
     private final void e() {
-        asbo f;
+        aued f;
         NotificationChannel c;
         int importance;
         try {
-            bklc a2 = bklb.a();
-            fixm fixmVar = ((bklb) a2).c;
-            fixm fixmVar2 = ((bklb) a2).e;
-            fixmVar.getClass();
-            fixmVar2.getClass();
-            bklm bklmVar = (bklm) fixmVar.a();
-            bklmVar.getClass();
-            ?? a3 = fixmVar2.a();
-            fecj v = esnq.a.v();
+            bmrs a2 = bmrr.a();
+            flnj flnjVar = ((bmrr) a2).c;
+            flnj flnjVar2 = ((bmrr) a2).e;
+            flnjVar.getClass();
+            flnjVar2.getClass();
+            bmsc bmscVar = (bmsc) flnjVar.a();
+            bmscVar.getClass();
+            ?? a3 = flnjVar2.a();
+            fgrc v = evdd.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            esnq esnqVar = (esnq) v.b;
-            esnqVar.c = 1;
-            esnqVar.b |= 1;
-            int i = true != asbp.a(this).g() ? 2 : 3;
+            evdd evddVar = (evdd) v.b;
+            evddVar.c = 1;
+            evddVar.b |= 1;
+            int i = true != auee.a(this).f() ? 2 : 3;
             if (!v.b.L()) {
                 v.U();
             }
-            esnq esnqVar2 = (esnq) v.b;
-            esnqVar2.d = i - 1;
-            esnqVar2.b |= 2;
-            for (String str : fowr.a.a().e().b) {
-                fecj v2 = esno.a.v();
+            evdd evddVar2 = (evdd) v.b;
+            evddVar2.d = i - 1;
+            evddVar2.b |= 2;
+            for (String str : frpu.a.lK().e().b) {
+                fgrc v2 = evdb.a.v();
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                fecp fecpVar = v2.b;
-                esno esnoVar = (esno) fecpVar;
+                fgri fgriVar = v2.b;
+                evdb evdbVar = (evdb) fgriVar;
                 str.getClass();
-                esnoVar.b |= 1;
-                esnoVar.c = str;
-                if (!fecpVar.L()) {
+                evdbVar.b |= 1;
+                evdbVar.c = str;
+                if (!fgriVar.L()) {
                     v2.U();
                 }
-                esno esnoVar2 = (esno) v2.b;
-                esnoVar2.d = 0;
-                esnoVar2.b |= 2;
-                if (Build.VERSION.SDK_INT >= 26 && (f = asbo.f(this)) != null && (c = f.c(str)) != null) {
+                evdb evdbVar2 = (evdb) v2.b;
+                evdbVar2.d = 0;
+                evdbVar2.b |= 2;
+                if (Build.VERSION.SDK_INT >= 26 && (f = aued.f(this)) != null && (c = f.c(str)) != null) {
                     importance = c.getImportance();
                     if (importance < 2) {
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        esno esnoVar3 = (esno) v2.b;
-                        esnoVar3.d = 1;
-                        esnoVar3.b |= 2;
+                        evdb evdbVar3 = (evdb) v2.b;
+                        evdbVar3.d = 1;
+                        evdbVar3.b |= 2;
                     } else {
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        esno esnoVar4 = (esno) v2.b;
-                        esnoVar4.d = 2;
-                        esnoVar4.b |= 2;
+                        evdb evdbVar4 = (evdb) v2.b;
+                        evdbVar4.d = 2;
+                        evdbVar4.b |= 2;
                     }
                 }
-                esno esnoVar5 = (esno) v2.Q();
+                evdb evdbVar5 = (evdb) v2.Q();
                 if (!v.b.L()) {
                     v.U();
                 }
-                esnq esnqVar3 = (esnq) v.b;
-                esnoVar5.getClass();
-                fedh fedhVar = esnqVar3.e;
-                if (!fedhVar.c()) {
-                    esnqVar3.e = fecp.E(fedhVar);
+                evdd evddVar3 = (evdd) v.b;
+                evdbVar5.getClass();
+                fgsa fgsaVar = evddVar3.e;
+                if (!fgsaVar.c()) {
+                    evddVar3.e = fgri.E(fgsaVar);
                 }
-                esnqVar3.e.add(esnoVar5);
+                evddVar3.e.add(evdbVar5);
             }
             Iterator it = a3.b().iterator();
             while (it.hasNext()) {
-                bklmVar.d((String) it.next(), v);
+                bmscVar.d((String) it.next(), v);
             }
         } catch (RuntimeException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 5077)).x("Failed to log notification block state");
+            ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 5090)).x("Failed to log notification block state");
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
         String[] strArr = b;
         int length = strArr.length;
         for (int i = 0; i < 7; i++) {
-            asng.K(strArr[i], true);
+            aura.K(strArr[i], true);
         }
         e();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        bklb.a().e().a(this);
+        bmrr.a().e().a(this);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void d(Intent intent) {
         e();
     }

@@ -9,9 +9,9 @@ import android.util.TypedValue;
 import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import com.google.android.gms.R;
-import defpackage.ixy;
+import defpackage.izo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class DeviceListItemView extends CardView {
     public TextView g;
@@ -24,7 +24,7 @@ public class DeviceListItemView extends CardView {
         this.g.setText(str);
         int dimension = (int) getResources().getDimension(R.dimen.smartdevice_device_list_item_text_size);
         this.g.setGravity(16);
-        ixy.j(this.g, dimension);
+        izo.j(this.g, dimension);
     }
 
     @Override // android.view.View
@@ -39,8 +39,8 @@ public class DeviceListItemView extends CardView {
         TypedValue typedValue = new TypedValue();
         int i = theme.resolveAttribute(R.attr.colorAccent, typedValue, true) ? typedValue.data : -1;
         if (i != -1) {
-            ixy.d(this.g, ColorStateList.valueOf(i));
-            ixy.e(this.g, PorterDuff.Mode.SRC_ATOP);
+            izo.d(this.g, ColorStateList.valueOf(i));
+            izo.e(this.g, PorterDuff.Mode.SRC_ATOP);
         }
         findViewById(R.id.center_aligned_layout).setVisibility(8);
     }

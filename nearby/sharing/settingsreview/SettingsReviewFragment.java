@@ -9,30 +9,30 @@ import com.google.android.chimera.android.Activity;
 import com.google.android.gms.R;
 import com.google.android.gms.nearby.sharing.DeviceVisibility;
 import com.google.android.gms.nearby.sharing.settingsreview.SettingsReviewFragment;
-import defpackage.asmf;
-import defpackage.clof;
-import defpackage.crdx;
-import defpackage.crea;
-import defpackage.creo;
-import defpackage.crfa;
-import defpackage.crfd;
-import defpackage.crgu;
-import defpackage.crht;
-import defpackage.cria;
+import defpackage.aupz;
+import defpackage.cnwn;
+import defpackage.ctnb;
+import defpackage.ctne;
+import defpackage.ctns;
+import defpackage.ctoe;
+import defpackage.ctoh;
+import defpackage.ctpy;
+import defpackage.ctqx;
+import defpackage.ctre;
 import defpackage.dg;
-import defpackage.fqmf;
-import defpackage.fqmn;
-import defpackage.jpc;
-import defpackage.jpd;
-import defpackage.jrc;
-import defpackage.jrh;
+import defpackage.ftga;
+import defpackage.ftgi;
+import defpackage.jvr;
+import defpackage.jvs;
+import defpackage.jxr;
+import defpackage.jxw;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class SettingsReviewFragment extends dg {
-    private asmf a;
-    private cria b;
+    private aupz a;
+    private ctre b;
 
     public SettingsReviewFragment() {
         super(R.layout.sharing_settingsreview_screen);
@@ -45,17 +45,17 @@ public final class SettingsReviewFragment extends dg {
     @Override // defpackage.dg
     public final void onAttach(Context context) {
         super.onAttach(context);
-        cria criaVar = (cria) new jrh(this, jrc.b(cria.a)).a(cria.class);
-        this.b = criaVar;
-        criaVar.h.g(this, new jpd() { // from class: crgv
-            @Override // defpackage.jpd
+        ctre ctreVar = (ctre) new jxw(this, jxr.b(ctre.a)).a(ctre.class);
+        this.b = ctreVar;
+        ctreVar.h.g(this, new jvs() { // from class: ctpz
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 SettingsReviewFragment settingsReviewFragment = SettingsReviewFragment.this;
-                if (((crht) obj) == crht.DONE) {
+                if (((ctqx) obj) == ctqx.DONE) {
                     try {
-                        cexl.b(settingsReviewFragment.requireContext()).a("finishWithSlideDownAnimation", new Class[0]).a(new Object[0]);
-                    } catch (cexm unused) {
-                        ((qet) settingsReviewFragment.requireContext()).finish();
+                        chew.b(settingsReviewFragment.requireContext()).a("finishWithSlideDownAnimation", new Class[0]).a(new Object[0]);
+                    } catch (chex unused) {
+                        ((rxx) settingsReviewFragment.requireContext()).finish();
                     }
                 }
             }
@@ -65,57 +65,57 @@ public final class SettingsReviewFragment extends dg {
     @Override // defpackage.dg
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.a = new asmf(1, 9);
-        cria criaVar = this.b;
+        this.a = new aupz(1, 9);
+        ctre ctreVar = this.b;
         int intExtra = x().getIntExtra("settings_review_state", -1);
-        criaVar.h.l(intExtra == 1 ? crht.PROMPT_TO_UPDATE : crht.DEFAULT);
+        ctreVar.h.l(intExtra == 1 ? ctqx.PROMPT_TO_UPDATE : ctqx.DEFAULT);
         if (intExtra == 2) {
-            jpc jpcVar = criaVar.g;
-            clof a = DeviceVisibility.a.a();
-            a.d = TimeUnit.SECONDS.toMillis(fqmf.C());
-            jpcVar.l(a.a());
+            jvr jvrVar = ctreVar.g;
+            cnwn a = DeviceVisibility.a.a();
+            a.d = TimeUnit.SECONDS.toMillis(ftga.C());
+            jvrVar.l(a.a());
         }
         this.b.j = x().getStringExtra("source_activity");
-        final crdx crdxVar = new crdx(this, this.a, this.b);
-        getViewLifecycleOwnerLiveData().g(this, new jpd() { // from class: crdt
-            @Override // defpackage.jpd
+        final ctnb ctnbVar = new ctnb(this, this.a, this.b);
+        getViewLifecycleOwnerLiveData().g(this, new jvs() { // from class: ctmx
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                ((jon) obj).getLifecycle().b(crdx.this);
+                ((jvc) obj).getLifecycle().b(ctnb.this);
             }
         });
-        final crea creaVar = new crea(this, this.b.h);
-        getViewLifecycleOwnerLiveData().g(this, new jpd() { // from class: crdy
-            @Override // defpackage.jpd
+        final ctne ctneVar = new ctne(this, this.b.h);
+        getViewLifecycleOwnerLiveData().g(this, new jvs() { // from class: ctnc
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                ((jon) obj).getLifecycle().b(crea.this);
+                ((jvc) obj).getLifecycle().b(ctne.this);
             }
         });
-        final crgu crguVar = new crgu(this, this.b);
-        getViewLifecycleOwnerLiveData().g(this, new jpd() { // from class: crgp
-            @Override // defpackage.jpd
+        final ctpy ctpyVar = new ctpy(this, this.b);
+        getViewLifecycleOwnerLiveData().g(this, new jvs() { // from class: ctpt
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                ((jon) obj).getLifecycle().b(crgu.this);
+                ((jvc) obj).getLifecycle().b(ctpy.this);
             }
         });
-        final crfa crfaVar = new crfa(this, this.b);
-        getViewLifecycleOwnerLiveData().g(this, new jpd() { // from class: crex
-            @Override // defpackage.jpd
+        final ctoe ctoeVar = new ctoe(this, this.b);
+        getViewLifecycleOwnerLiveData().g(this, new jvs() { // from class: ctob
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                ((jon) obj).getLifecycle().b(crfa.this);
+                ((jvc) obj).getLifecycle().b(ctoe.this);
             }
         });
-        final crfd crfdVar = new crfd(this, this.b.i);
-        getViewLifecycleOwnerLiveData().g(this, new jpd() { // from class: crfc
-            @Override // defpackage.jpd
+        final ctoh ctohVar = new ctoh(this, this.b.i);
+        getViewLifecycleOwnerLiveData().g(this, new jvs() { // from class: ctog
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                ((jon) obj).getLifecycle().b(crfd.this);
+                ((jvc) obj).getLifecycle().b(ctoh.this);
             }
         });
-        final creo creoVar = new creo(this, this.b.f);
-        getViewLifecycleOwnerLiveData().g(this, new jpd() { // from class: cren
-            @Override // defpackage.jpd
+        final ctns ctnsVar = new ctns(this, this.b.f);
+        getViewLifecycleOwnerLiveData().g(this, new jvs() { // from class: ctnr
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                ((jon) obj).getLifecycle().b(creo.this);
+                ((jvc) obj).getLifecycle().b(ctns.this);
             }
         });
     }
@@ -129,7 +129,7 @@ public final class SettingsReviewFragment extends dg {
     @Override // defpackage.dg
     public final void onViewCreated(View view, Bundle bundle) {
         if (x().getIntExtra("settings_review_state", -1) != 1) {
-            if (fqmn.a.a().D()) {
+            if (ftgi.a.lK().E()) {
                 ((TextView) view.findViewById(R.id.title)).setText(R.string.sharing_settingsreview_default_title_new);
             } else {
                 ((TextView) view.findViewById(R.id.title)).setText(R.string.sharing_settingsreview_default_title);

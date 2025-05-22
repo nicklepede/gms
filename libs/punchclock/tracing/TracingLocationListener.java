@@ -3,21 +3,21 @@ package com.google.android.gms.libs.punchclock.tracing;
 import android.content.Context;
 import android.location.Location;
 import android.os.Bundle;
-import defpackage.byhw;
-import defpackage.byhz;
-import defpackage.byik;
-import defpackage.egkp;
-import defpackage.iol;
+import defpackage.caqo;
+import defpackage.caqr;
+import defpackage.carc;
+import defpackage.eixs;
+import defpackage.iqb;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public abstract class TracingLocationListener implements iol, byik {
-    private final byhw a;
+public abstract class TracingLocationListener implements iqb, carc {
+    private final caqo a;
 
     public TracingLocationListener(Context context) {
-        this.a = byhz.c.c(getClass(), 23, context);
+        this.a = caqr.c.c(getClass(), 23, context);
     }
 
     protected abstract void a(Location location);
@@ -31,7 +31,7 @@ public abstract class TracingLocationListener implements iol, byik {
 
     @Override // android.location.LocationListener
     public final void onFlushComplete(int i) {
-        egkp k = this.a.k("onFlushComplete");
+        eixs k = this.a.k("onFlushComplete");
         try {
             c(i);
             if (k != null) {
@@ -51,7 +51,7 @@ public abstract class TracingLocationListener implements iol, byik {
 
     @Override // android.location.LocationListener
     public final void onLocationChanged(Location location) {
-        egkp k = this.a.k("onLocationChanged");
+        eixs k = this.a.k("onLocationChanged");
         try {
             a(location);
             if (k != null) {
@@ -70,12 +70,12 @@ public abstract class TracingLocationListener implements iol, byik {
     }
 
     public TracingLocationListener(String str) {
-        this.a = byhz.c.d(getClass(), 23, "location", str);
+        this.a = caqr.c.d(getClass(), 23, "location", str);
     }
 
     @Override // android.location.LocationListener
     public final void onLocationChanged(List list) {
-        egkp k = this.a.k("onLocationChanged");
+        eixs k = this.a.k("onLocationChanged");
         try {
             b(list);
             if (k != null) {

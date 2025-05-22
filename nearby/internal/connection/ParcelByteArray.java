@@ -4,15 +4,15 @@ import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.cjcw;
+import defpackage.cllb;
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ParcelByteArray extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjcw();
+    public static final Parcelable.Creator CREATOR = new cllb();
     public byte[] a;
     public ParcelFileDescriptor b;
 
@@ -63,7 +63,7 @@ public final class ParcelByteArray extends AbstractSafeParcelable {
             if (r3 == 0) goto Ld
             goto La2
         Ld:
-            java.io.File r3 = defpackage.cjdh.a     // Catch: java.lang.Throwable -> L76 java.io.IOException -> L78 java.lang.IllegalStateException -> L86
+            java.io.File r3 = defpackage.cllm.a     // Catch: java.lang.Throwable -> L76 java.io.IOException -> L78 java.lang.IllegalStateException -> L86
             if (r3 == 0) goto L6e
             java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch: java.io.IOException -> L65 java.lang.Throwable -> L76 java.lang.IllegalStateException -> L86
             java.lang.String r5 = "teleporter"
@@ -123,7 +123,7 @@ public final class ParcelByteArray extends AbstractSafeParcelable {
             r5 = r2
         L7a:
             java.lang.String r3 = "Could not write into unlinked file. "
-            java.lang.String r1 = defpackage.a.O(r1, r3)     // Catch: java.lang.Throwable -> L9a
+            java.lang.String r1 = defpackage.a.Q(r1, r3)     // Catch: java.lang.Throwable -> L9a
             android.util.Log.e(r0, r1)     // Catch: java.lang.Throwable -> L9a
             if (r5 == 0) goto L96
             goto L93
@@ -132,7 +132,7 @@ public final class ParcelByteArray extends AbstractSafeParcelable {
             r5 = r2
         L88:
             java.lang.String r3 = "Could not create unlinked file. "
-            java.lang.String r1 = defpackage.a.O(r1, r3)     // Catch: java.lang.Throwable -> L9a
+            java.lang.String r1 = defpackage.a.Q(r1, r3)     // Catch: java.lang.Throwable -> L9a
             android.util.Log.e(r0, r1)     // Catch: java.lang.Throwable -> L9a
             if (r5 == 0) goto L96
         L93:
@@ -153,11 +153,11 @@ public final class ParcelByteArray extends AbstractSafeParcelable {
         La2:
             r0 = 1
             r9 = r9 | r0
-            int r1 = defpackage.arxc.a(r8)
+            int r1 = defpackage.atzr.a(r8)
             android.os.ParcelFileDescriptor r3 = r7.b
             r4 = 0
-            defpackage.arxc.t(r8, r0, r3, r9, r4)
-            defpackage.arxc.c(r8, r1)
+            defpackage.atzr.t(r8, r0, r3, r9, r4)
+            defpackage.atzr.c(r8, r1)
             r7.b = r2
             return
         */

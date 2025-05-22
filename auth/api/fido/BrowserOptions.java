@@ -4,25 +4,25 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.auth.api.identity.ChromeOptions;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.feay;
-import defpackage.zaa;
+import defpackage.aazq;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.fgpr;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class BrowserOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zaa();
+    public static final Parcelable.Creator CREATOR = new aazq();
     public final String a;
-    public final feay b;
+    public final fgpr b;
     public final ChromeOptions c;
 
-    public BrowserOptions(String str, feay feayVar, ChromeOptions chromeOptions) {
-        arwm.s(str);
+    public BrowserOptions(String str, fgpr fgprVar, ChromeOptions chromeOptions) {
+        atzb.s(str);
         this.a = str;
-        this.b = feayVar;
+        this.b = fgprVar;
         this.c = chromeOptions;
     }
 
@@ -31,7 +31,7 @@ public final class BrowserOptions extends AbstractSafeParcelable {
             return false;
         }
         BrowserOptions browserOptions = (BrowserOptions) obj;
-        return arwb.b(this.a, browserOptions.a) && arwb.b(this.b, browserOptions.b) && arwb.b(this.c, browserOptions.c);
+        return atyq.b(this.a, browserOptions.a) && atyq.b(this.b, browserOptions.b) && atyq.b(this.c, browserOptions.c);
     }
 
     public final int hashCode() {
@@ -41,11 +41,11 @@ public final class BrowserOptions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        feay feayVar = this.b;
-        arxc.i(parcel, 3, feayVar == null ? null : feayVar.M(), false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        fgpr fgprVar = this.b;
+        atzr.i(parcel, 3, fgprVar == null ? null : fgprVar.M(), false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.c(parcel, a);
     }
 }

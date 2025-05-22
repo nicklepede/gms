@@ -7,40 +7,40 @@ import android.os.SystemClock;
 import android.telecom.Call;
 import com.google.android.chimera.Service;
 import com.google.android.gms.car.telecom.SharedInCallServiceImpl;
-import defpackage.akyk;
-import defpackage.alar;
-import defpackage.albj;
-import defpackage.albk;
-import defpackage.albn;
-import defpackage.alix;
-import defpackage.alja;
-import defpackage.aljh;
-import defpackage.alji;
-import defpackage.aljj;
-import defpackage.asqh;
-import defpackage.eiid;
-import defpackage.eiig;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ejhh;
-import defpackage.elwx;
-import defpackage.elxd;
-import defpackage.elxv;
-import defpackage.elxw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fluv;
+import defpackage.amzv;
+import defpackage.ancc;
+import defpackage.ancu;
+import defpackage.ancv;
+import defpackage.ancy;
+import defpackage.anki;
+import defpackage.ankl;
+import defpackage.anks;
+import defpackage.ankt;
+import defpackage.anku;
+import defpackage.auub;
+import defpackage.ekvi;
+import defpackage.ekvl;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.eluq;
+import defpackage.eokl;
+import defpackage.eokr;
+import defpackage.eolj;
+import defpackage.eolk;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fome;
 import j$.util.Objects;
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SharedInCallServiceImpl extends Service {
-    public static final ejhh a = albn.a("CAR.TEL.CALLSERVICE");
-    public final aljh b = new aljh(this);
+    public static final eluq a = ancy.a("CAR.TEL.CALLSERVICE");
+    public final anks b = new anks(this);
     private final CopyOnWriteArraySet c = new CopyOnWriteArraySet();
-    private final eijr d;
+    private final ekww d;
     private int e;
     private int f;
     private int g;
@@ -48,73 +48,73 @@ public class SharedInCallServiceImpl extends Service {
     private long i;
 
     public SharedInCallServiceImpl() {
-        Objects.requireNonNull(akyk.c);
-        this.d = eijy.a(new eijr() { // from class: aljb
-            @Override // defpackage.eijr
-            public final Object a() {
-                return Boolean.valueOf(fluv.a.a().c());
+        Objects.requireNonNull(amzv.c);
+        this.d = ekxd.a(new ekww() { // from class: ankm
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return Boolean.valueOf(fome.a.lK().c());
             }
         });
     }
 
-    private final void d(elxv elxvVar) {
-        albj f = albk.f(elwx.CAR_SERVICE, elxw.PHONE_CALL, elxvVar);
+    private final void d(eolj eoljVar) {
+        ancu f = ancv.f(eokl.CAR_SERVICE, eolk.PHONE_CALL, eoljVar);
         if (f.h == null) {
-            f.h = elxd.a.v();
+            f.h = eokr.a.v();
         }
-        fecj fecjVar = f.h;
+        fgrc fgrcVar = f.h;
         int i = this.e;
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        elxd elxdVar = (elxd) fecjVar.b;
-        elxd elxdVar2 = elxd.a;
-        elxdVar.b |= 4;
-        elxdVar.e = i;
+        eokr eokrVar = (eokr) fgrcVar.b;
+        eokr eokrVar2 = eokr.a;
+        eokrVar.b |= 4;
+        eokrVar.e = i;
         int i2 = this.f;
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        fecp fecpVar = fecjVar.b;
-        elxd elxdVar3 = (elxd) fecpVar;
-        elxdVar3.b |= 8;
-        elxdVar3.f = i2;
+        fgri fgriVar = fgrcVar.b;
+        eokr eokrVar3 = (eokr) fgriVar;
+        eokrVar3.b |= 8;
+        eokrVar3.f = i2;
         int i3 = this.g;
-        if (!fecpVar.L()) {
-            fecjVar.U();
+        if (!fgriVar.L()) {
+            fgrcVar.U();
         }
-        fecp fecpVar2 = fecjVar.b;
-        elxd elxdVar4 = (elxd) fecpVar2;
-        elxdVar4.b |= 1;
-        elxdVar4.c = i3;
+        fgri fgriVar2 = fgrcVar.b;
+        eokr eokrVar4 = (eokr) fgriVar2;
+        eokrVar4.b |= 1;
+        eokrVar4.c = i3;
         int i4 = this.h;
-        if (!fecpVar2.L()) {
-            fecjVar.U();
+        if (!fgriVar2.L()) {
+            fgrcVar.U();
         }
-        elxd elxdVar5 = (elxd) fecjVar.b;
-        elxdVar5.b |= 2;
-        elxdVar5.d = i4;
-        f.f = eiid.j(Long.valueOf(SystemClock.elapsedRealtime() - this.i));
-        alar.a(this).c(f.c());
+        eokr eokrVar5 = (eokr) fgrcVar.b;
+        eokrVar5.b |= 2;
+        eokrVar5.d = i4;
+        f.f = ekvi.j(Long.valueOf(SystemClock.elapsedRealtime() - this.i));
+        ancc.a(this).c(f.c());
     }
 
     private static boolean e(Intent intent) {
         return "android.telecom.InCallService".equals(intent.getAction());
     }
 
-    public final void a(alji aljiVar) {
+    public final void a(ankt anktVar) {
         Iterator it = this.c.iterator();
         while (it.hasNext()) {
-            aljiVar.a((alix) it.next());
+            anktVar.a((anki) it.next());
         }
     }
 
-    public final void b(alix alixVar) {
-        this.c.add(alixVar);
+    public final void b(anki ankiVar) {
+        this.c.add(ankiVar);
     }
 
-    public final void c(alix alixVar) {
-        this.c.remove(alixVar);
+    public final void c(anki ankiVar) {
+        this.c.remove(ankiVar);
     }
 
     @Override // com.google.android.chimera.Service
@@ -124,46 +124,46 @@ public class SharedInCallServiceImpl extends Service {
         } else {
             this.e++;
         }
-        if (((Boolean) this.d.a()).booleanValue()) {
-            d(e(intent) ? elxv.aeO : elxv.aeM);
+        if (((Boolean) this.d.lK()).booleanValue()) {
+            d(e(intent) ? eolj.aeT : eolj.aeR);
         }
         String action = intent.getAction();
         if (action != null && action.equals("aidl_gearhead_intent")) {
-            return new aljj(this);
+            return new anku(this);
         }
         if (action == null || !action.equals("local_gearhead_ics_intent")) {
-            aljh aljhVar = this.b;
-            aljhVar.attachBaseContext(getApplication().getBaseContext());
-            return aljhVar.onBind(intent);
+            anks anksVar = this.b;
+            anksVar.attachBaseContext(getApplication().getBaseContext());
+            return anksVar.onBind(intent);
         }
-        alja aljaVar = new alja(this, this);
-        if (asqh.g()) {
-            Iterator<Call> it = aljaVar.f.getCalls().iterator();
+        ankl anklVar = new ankl(this, this);
+        if (auub.g()) {
+            Iterator<Call> it = anklVar.f.getCalls().iterator();
             while (it.hasNext()) {
-                it.next().registerCallback(aljaVar.d);
+                it.next().registerCallback(anklVar.d);
             }
-            if (!aljaVar.f.getCalls().isEmpty()) {
-                alar a2 = alar.a(aljaVar.c);
-                albj f = albk.f(elwx.CAR_SERVICE, elxw.PHONE_CALL, elxv.aQ);
-                f.d(aljaVar.f.getCalls().size());
+            if (!anklVar.f.getCalls().isEmpty()) {
+                ancc a2 = ancc.a(anklVar.c);
+                ancu f = ancv.f(eokl.CAR_SERVICE, eolk.PHONE_CALL, eolj.aQ);
+                f.d(anklVar.f.getCalls().size());
                 a2.c(f.c());
             }
         }
-        return aljaVar;
+        return anklVar;
     }
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
         this.i = SystemClock.elapsedRealtime();
-        eiig.q(Build.VERSION.SDK_INT < 30, "GmsCore InCallService is used in R+ or Gearhead");
+        ekvl.r(Build.VERSION.SDK_INT < 30, "GmsCore InCallService is used in R+ or Gearhead");
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
         super.onDestroy();
-        if (((Boolean) this.d.a()).booleanValue()) {
-            d(elxv.aeL);
+        if (((Boolean) this.d.lK()).booleanValue()) {
+            d(eolj.aeQ);
         }
     }
 
@@ -174,44 +174,44 @@ public class SharedInCallServiceImpl extends Service {
         } else {
             this.e++;
         }
-        if (((Boolean) this.d.a()).booleanValue()) {
-            d(e(intent) ? elxv.aeO : elxv.aeM);
+        if (((Boolean) this.d.lK()).booleanValue()) {
+            d(e(intent) ? eolj.aeT : eolj.aeR);
         }
     }
 
     @Override // com.google.android.chimera.Service
     public final boolean onUnbind(Intent intent) {
         String action;
-        ejhh ejhhVar = a;
-        ejhhVar.h().ah(2459).x("onUnbind");
+        eluq eluqVar = a;
+        eluqVar.h().ai(2463).x("onUnbind");
         if (e(intent)) {
             this.h++;
         } else {
             this.f++;
         }
-        if (((Boolean) this.d.a()).booleanValue()) {
-            d(e(intent) ? elxv.aeP : elxv.aeN);
+        if (((Boolean) this.d.lK()).booleanValue()) {
+            d(e(intent) ? eolj.aeU : eolj.aeS);
         }
-        fluv fluvVar = fluv.a;
-        if (fluvVar.a().f() && (action = intent.getAction()) != null && action.equals("android.telecom.InCallService")) {
-            ejhhVar.h().ah(2460).x("Triggering unbind on InCallService instance");
+        fome fomeVar = fome.a;
+        if (fomeVar.lK().f() && (action = intent.getAction()) != null && action.equals("android.telecom.InCallService")) {
+            eluqVar.h().ai(2464).x("Triggering unbind on InCallService instance");
             this.b.onUnbind(intent);
         }
-        if (fluvVar.a().a()) {
-            a(new alji() { // from class: aljc
-                @Override // defpackage.alji
-                public final void a(alix alixVar) {
-                    ejhh ejhhVar2 = SharedInCallServiceImpl.a;
-                    alixVar.a();
+        if (fomeVar.lK().a()) {
+            a(new ankt() { // from class: ankn
+                @Override // defpackage.ankt
+                public final void a(anki ankiVar) {
+                    eluq eluqVar2 = SharedInCallServiceImpl.a;
+                    ankiVar.a();
                 }
             });
             return true;
         }
-        a(new alji() { // from class: aljd
-            @Override // defpackage.alji
-            public final void a(alix alixVar) {
-                ejhh ejhhVar2 = SharedInCallServiceImpl.a;
-                alixVar.a();
+        a(new ankt() { // from class: anko
+            @Override // defpackage.ankt
+            public final void a(anki ankiVar) {
+                eluq eluqVar2 = SharedInCallServiceImpl.a;
+                ankiVar.a();
             }
         });
         return false;

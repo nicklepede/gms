@@ -9,38 +9,38 @@ import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.scheduler.standalone.ReceiverBasedNetworkConstraintObserver;
-import defpackage.asqh;
-import defpackage.cybn;
-import defpackage.cyfk;
-import defpackage.cyfl;
-import defpackage.ensv;
-import defpackage.fnbr;
-import defpackage.iln;
+import defpackage.auub;
+import defpackage.dall;
+import defpackage.dapi;
+import defpackage.dapj;
+import defpackage.eqgo;
+import defpackage.fptq;
+import defpackage.ind;
 import j$.util.Objects;
 import java.io.PrintWriter;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class ReceiverBasedNetworkConstraintObserver extends TracingBroadcastReceiver implements cyfl {
+public class ReceiverBasedNetworkConstraintObserver extends TracingBroadcastReceiver implements dapj {
     private int a;
     private int b;
     private boolean c;
-    private final ensv d;
+    private final eqgo d;
 
-    public ReceiverBasedNetworkConstraintObserver(ensv ensvVar) {
+    public ReceiverBasedNetworkConstraintObserver(eqgo eqgoVar) {
         super("scheduler");
         this.c = false;
-        this.d = ensvVar;
+        this.d = eqgoVar;
     }
 
     private static void g(int i, int i2) {
         if (h(i, 1) && !h(i2, 1)) {
-            cybn.b().g.a(10);
+            dall.b().g.a(10);
         }
         if (h(i, 1) || !h(i2, 1)) {
             return;
         }
-        cybn.b().g.a(9);
+        dall.b().g.a(9);
     }
 
     private static boolean h(int i, int i2) {
@@ -51,12 +51,12 @@ public class ReceiverBasedNetworkConstraintObserver extends TracingBroadcastRece
         return h(this.a, i);
     }
 
-    @Override // defpackage.cyfl
+    @Override // defpackage.dapj
     public final synchronized void b(PrintWriter printWriter) {
-        cyfk.a(printWriter, this.a);
+        dapi.a(printWriter, this.a);
     }
 
-    @Override // defpackage.cyfl
+    @Override // defpackage.dapj
     public final synchronized void c(Context context, int i) {
         try {
             if (i == 7) {
@@ -102,7 +102,7 @@ public class ReceiverBasedNetworkConstraintObserver extends TracingBroadcastRece
                     this.a &= -2;
                 }
                 if (i3 != this.a) {
-                    cybn.b().g.d();
+                    dall.b().g.d();
                 }
             }
         }
@@ -136,29 +136,29 @@ public class ReceiverBasedNetworkConstraintObserver extends TracingBroadcastRece
                     this.a &= -2;
                 }
                 if (i3 != this.a) {
-                    cybn.b().g.d();
+                    dall.b().g.d();
                 }
             }
         }
     }
 
     public final synchronized void f(Context context) {
-        iln.b(context.getApplicationContext(), this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"), 2);
+        ind.b(context.getApplicationContext(), this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"), 2);
         this.c = true;
         this.b = 0;
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final synchronized void jz(final Context context, final Intent intent) {
-        if (fnbr.a.a().Q() && asqh.f()) {
-            this.d.execute(new Runnable() { // from class: cyfu
+    public final synchronized void jP(final Context context, final Intent intent) {
+        if (fptq.a.lK().Q() && auub.f()) {
+            this.d.execute(new Runnable() { // from class: daps
                 @Override // java.lang.Runnable
                 public final void run() {
                     ReceiverBasedNetworkConstraintObserver.this.d(context, intent);
                 }
             });
         } else {
-            this.d.execute(new Runnable() { // from class: cyfv
+            this.d.execute(new Runnable() { // from class: dapt
                 @Override // java.lang.Runnable
                 public final void run() {
                     ReceiverBasedNetworkConstraintObserver.this.e(context, intent);

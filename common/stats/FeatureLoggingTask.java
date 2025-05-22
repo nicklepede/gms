@@ -1,28 +1,28 @@
 package com.google.android.gms.common.stats;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asej;
-import defpackage.askf;
-import defpackage.askh;
-import defpackage.aski;
-import defpackage.askj;
-import defpackage.askk;
-import defpackage.asot;
-import defpackage.bqna;
-import defpackage.bqsq;
-import defpackage.byln;
-import defpackage.eijr;
-import defpackage.fmuo;
+import defpackage.auid;
+import defpackage.aunz;
+import defpackage.auob;
+import defpackage.auoc;
+import defpackage.auod;
+import defpackage.auoe;
+import defpackage.ausn;
+import defpackage.bsup;
+import defpackage.btah;
+import defpackage.cauf;
+import defpackage.ekww;
+import defpackage.fpmm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class FeatureLoggingTask extends GmsTaskBoundService {
     static final String a;
     public static final /* synthetic */ int b = 0;
-    private final askk c;
+    private final auoe c;
 
     static {
-        asot.b("FeatureLoggingTask", asej.CORE);
+        ausn.b("FeatureLoggingTask", auid.CORE);
         a = FeatureLoggingTask.class.getName();
     }
 
@@ -31,34 +31,34 @@ public class FeatureLoggingTask extends GmsTaskBoundService {
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        askk askfVar;
-        askk askkVar = this.c;
-        if (askkVar == null) {
-            if (fmuo.a.a().f()) {
-                int i = askh.b;
-                askfVar = new askh(new bqsq(this), bqna.b(this), new askj(new eijr() { // from class: askg
-                    @Override // defpackage.eijr
-                    public final Object a() {
-                        return Double.valueOf(fmuo.b());
+    public final int a(cauf caufVar) {
+        auoe aunzVar;
+        auoe auoeVar = this.c;
+        if (auoeVar == null) {
+            if (fpmm.a.lK().f()) {
+                int i = auob.b;
+                aunzVar = new auob(new btah(this), bsup.b(this), new auod(new ekww() { // from class: auoa
+                    @Override // defpackage.ekww
+                    public final Object lK() {
+                        return Double.valueOf(fpmm.b());
                     }
-                }), new aski());
+                }), new auoc());
             } else {
-                int i2 = askf.a;
-                askfVar = new askf(new bqsq(this), bqna.b(this), new askj(new eijr() { // from class: aske
-                    @Override // defpackage.eijr
-                    public final Object a() {
-                        return Double.valueOf(fmuo.b());
+                int i2 = aunz.a;
+                aunzVar = new aunz(new btah(this), bsup.b(this), new auod(new ekww() { // from class: auny
+                    @Override // defpackage.ekww
+                    public final Object lK() {
+                        return Double.valueOf(fpmm.b());
                     }
-                }), new aski());
+                }), new auoc());
             }
-            askkVar = askfVar;
+            auoeVar = aunzVar;
         }
-        askkVar.a();
+        auoeVar.a();
         return 0;
     }
 
-    public FeatureLoggingTask(askk askkVar) {
-        this.c = askkVar;
+    public FeatureLoggingTask(auoe auoeVar) {
+        this.c = auoeVar;
     }
 }

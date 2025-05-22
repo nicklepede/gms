@@ -1,10 +1,10 @@
 package com.google.android.gms.ads.internal.util.client;
 
 import android.os.Bundle;
-import defpackage.arwb;
+import defpackage.atyq;
 import java.lang.reflect.Array;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class i {
     public static boolean a(Bundle bundle, Bundle bundle2) {
@@ -31,7 +31,7 @@ public final class i {
                         return false;
                     }
                     for (int i = 0; i < length; i++) {
-                        if (!arwb.b(Array.get(obj, i), Array.get(obj2, i))) {
+                        if (!atyq.b(Array.get(obj, i), Array.get(obj2, i))) {
                             return false;
                         }
                     }

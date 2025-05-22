@@ -5,40 +5,40 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.RemoteException;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.aqum;
-import defpackage.aqun;
-import defpackage.asot;
-import defpackage.basc;
-import defpackage.bbdd;
-import defpackage.bbde;
-import defpackage.bbdh;
-import defpackage.bbdk;
-import defpackage.bcni;
-import defpackage.bcnk;
-import defpackage.bcnl;
-import defpackage.bcnn;
-import defpackage.dvni;
-import defpackage.eiid;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ejhf;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fnwy;
-import defpackage.fnxe;
-import defpackage.fnzb;
-import defpackage.igm;
-import defpackage.igp;
-import defpackage.vay;
-import defpackage.vbf;
-import defpackage.vbh;
+import defpackage.asxb;
+import defpackage.asxc;
+import defpackage.ausn;
+import defpackage.bcvy;
+import defpackage.bdha;
+import defpackage.bdhb;
+import defpackage.bdhe;
+import defpackage.bdhh;
+import defpackage.beov;
+import defpackage.beox;
+import defpackage.beoy;
+import defpackage.bepa;
+import defpackage.dxyi;
+import defpackage.ekvi;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.eluo;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fqpa;
+import defpackage.fqpg;
+import defpackage.fqrd;
+import defpackage.iic;
+import defpackage.iif;
+import defpackage.wwy;
+import defpackage.wxf;
+import defpackage.wxh;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class AuthenticatorBroadcastReceiver extends TracingBroadcastReceiver {
-    private static final asot a = bcni.a("AuthenticatorBroadcastReceiver");
+    private static final ausn a = beov.a("AuthenticatorBroadcastReceiver");
     private final AuthenticatorChimeraService b;
 
     public AuthenticatorBroadcastReceiver(AuthenticatorChimeraService authenticatorChimeraService) {
@@ -47,14 +47,14 @@ public class AuthenticatorBroadcastReceiver extends TracingBroadcastReceiver {
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         String action;
         char c;
-        enss a2;
+        eqgl a2;
         if (intent == null || (action = intent.getAction()) == null) {
             return;
         }
-        ((ejhf) ((ejhf) a.h()).ah((char) 3773)).B("Broadcast receiver triggered: %s", intent.getAction());
+        ((eluo) ((eluo) a.h()).ai((char) 3779)).B("Broadcast receiver triggered: %s", intent.getAction());
         int hashCode = action.hashCode();
         if (hashCode == -1547868113) {
             if (action.equals("com.google.android.gms.fido.AUTHENTICATOR.V2")) {
@@ -73,16 +73,16 @@ public class AuthenticatorBroadcastReceiver extends TracingBroadcastReceiver {
             c = 65535;
         }
         if (c == 0) {
-            fnxe.a.a().a();
+            fqpg.a.lK().a();
             return;
         }
         if (c == 1) {
-            if (fnzb.f()) {
-                bcnl a3 = bbdk.a(intent);
+            if (fqrd.f()) {
+                beoy a3 = bdhh.a(intent);
                 intent.putExtra("session_id", a3.a);
-                new bcnn(context).z(a3, basc.TYPE_INVOCATION_INITIAL_V2_GCM_RECEIVED);
+                new bepa(context).z(a3, bcvy.TYPE_INVOCATION_INITIAL_V2_GCM_RECEIVED);
             }
-            if (fnwy.c()) {
+            if (fqpa.c()) {
                 this.b.a(intent);
                 return;
             }
@@ -93,43 +93,43 @@ public class AuthenticatorBroadcastReceiver extends TracingBroadcastReceiver {
         }
         AuthenticatorChimeraService authenticatorChimeraService = this.b;
         AtomicReference atomicReference = authenticatorChimeraService.d;
-        final bbde bbdeVar = (bbde) ((eiid) atomicReference.get()).f();
-        int i = bbdk.a;
-        bcnl a4 = bcnl.a(bcnk.HYBRID_FCM_EVENT);
+        final bdhb bdhbVar = (bdhb) ((ekvi) atomicReference.get()).f();
+        int i = bdhh.a;
+        beoy a4 = beoy.a(beox.HYBRID_FCM_EVENT);
         a4.b = new int[]{3};
-        if (bbdeVar == null) {
-            bbdd bbddVar = authenticatorChimeraService.b;
-            atomicReference.set(eiid.j(new bbde(authenticatorChimeraService, a4)));
-            bbdeVar = (bbde) ((eiid) atomicReference.get()).c();
+        if (bdhbVar == null) {
+            bdha bdhaVar = authenticatorChimeraService.b;
+            atomicReference.set(ekvi.j(new bdhb(authenticatorChimeraService, a4)));
+            bdhbVar = (bdhb) ((ekvi) atomicReference.get()).c();
         }
-        bbdeVar.b(basc.TYPE_INVOCATION_V2_GCM_RECEIVED_BY_LINKED_HYBRID);
-        bbdeVar.h = true;
-        bbdeVar.f = intent.getStringExtra("caBLE.routingID") + intent.getStringExtra("caBLE.tunnelID") + intent.getStringExtra("caBLE.clientPayload");
+        bdhbVar.b(bcvy.TYPE_INVOCATION_V2_GCM_RECEIVED_BY_LINKED_HYBRID);
+        bdhbVar.h = true;
+        bdhbVar.f = intent.getStringExtra("caBLE.routingID") + intent.getStringExtra("caBLE.tunnelID") + intent.getStringExtra("caBLE.clientPayload");
         final Account account = null;
         try {
-            Context context2 = bbdeVar.b;
-            eijr a5 = eijy.a(new vbf());
-            dvni.f(context2);
-            Account[] a6 = vbh.a(context2, new vay(context2), a5);
+            Context context2 = bdhbVar.b;
+            ekww a5 = ekxd.a(new wxf());
+            dxyi.f(context2);
+            Account[] a6 = wxh.a(context2, new wwy(context2), a5);
             if (a6 != null && a6.length != 0) {
                 account = a6[0];
             }
-        } catch (RemoteException | aqum | aqun e) {
-            ((ejhf) ((ejhf) ((ejhf) bbde.a.j()).s(e)).ah((char) 3758)).x("Error listing Google accounts on device.");
+        } catch (RemoteException | asxb | asxc e) {
+            ((eluo) ((eluo) ((eluo) bdhb.a.j()).s(e)).ai((char) 3764)).x("Error listing Google accounts on device.");
         }
         if (account == null) {
-            ((ejhf) ((ejhf) bbde.a.j()).ah((char) 3770)).x("No account found on the device");
-            a2 = ensj.i(5);
+            ((eluo) ((eluo) bdhb.a.j()).ai((char) 3776)).x("No account found on the device");
+            a2 = eqgc.i(5);
         } else {
-            a2 = igp.a(new igm() { // from class: bbcv
-                @Override // defpackage.igm
-                public final Object a(igk igkVar) {
-                    bbde bbdeVar2 = bbde.this;
-                    bbdeVar2.c(new bbds(bbdeVar2.b, bbdeVar2.c, account.name, 2), new bbcw(bbdeVar2, igkVar));
+            a2 = iif.a(new iic() { // from class: bdgs
+                @Override // defpackage.iic
+                public final Object a(iia iiaVar) {
+                    bdhb bdhbVar2 = bdhb.this;
+                    bdhbVar2.c(new bdhp(bdhbVar2.b, bdhbVar2.c, account.name, 2), new bdgt(bdhbVar2, iiaVar));
                     return "Start linked hybrid";
                 }
             });
         }
-        ensj.t(a2, new bbdh(authenticatorChimeraService), enre.a);
+        eqgc.t(a2, new bdhe(authenticatorChimeraService), eqex.a);
     }
 }

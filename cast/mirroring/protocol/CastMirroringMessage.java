@@ -1,10 +1,10 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
-import defpackage.anee;
-import defpackage.fvbo;
+import defpackage.apfr;
+import defpackage.fxxm;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class CastMirroringMessage {
     private final Answer answer;
@@ -12,11 +12,11 @@ public final class CastMirroringMessage {
     private final Offer offer;
     private final String result;
     private final long seqNum;
-    private final anee type;
+    private final apfr type;
 
-    public CastMirroringMessage(anee aneeVar, long j, Offer offer, Answer answer, String str, String str2) {
-        fvbo.f(aneeVar, "type");
-        this.type = aneeVar;
+    public CastMirroringMessage(apfr apfrVar, long j, Offer offer, Answer answer, String str, String str2) {
+        fxxm.f(apfrVar, "type");
+        this.type = apfrVar;
         this.seqNum = j;
         this.offer = offer;
         this.answer = answer;
@@ -24,9 +24,9 @@ public final class CastMirroringMessage {
         this.error = str2;
     }
 
-    public static /* synthetic */ CastMirroringMessage copy$default(CastMirroringMessage castMirroringMessage, anee aneeVar, long j, Offer offer, Answer answer, String str, String str2, int i, Object obj) {
+    public static /* synthetic */ CastMirroringMessage copy$default(CastMirroringMessage castMirroringMessage, apfr apfrVar, long j, Offer offer, Answer answer, String str, String str2, int i, Object obj) {
         if ((i & 1) != 0) {
-            aneeVar = castMirroringMessage.type;
+            apfrVar = castMirroringMessage.type;
         }
         if ((i & 2) != 0) {
             j = castMirroringMessage.seqNum;
@@ -43,10 +43,10 @@ public final class CastMirroringMessage {
         if ((i & 32) != 0) {
             str2 = castMirroringMessage.error;
         }
-        return castMirroringMessage.copy(aneeVar, j, offer, answer, str, str2);
+        return castMirroringMessage.copy(apfrVar, j, offer, answer, str, str2);
     }
 
-    public final anee component1() {
+    public final apfr component1() {
         return this.type;
     }
 
@@ -70,9 +70,9 @@ public final class CastMirroringMessage {
         return this.error;
     }
 
-    public final CastMirroringMessage copy(anee aneeVar, long j, Offer offer, Answer answer, String str, String str2) {
-        fvbo.f(aneeVar, "type");
-        return new CastMirroringMessage(aneeVar, j, offer, answer, str, str2);
+    public final CastMirroringMessage copy(apfr apfrVar, long j, Offer offer, Answer answer, String str, String str2) {
+        fxxm.f(apfrVar, "type");
+        return new CastMirroringMessage(apfrVar, j, offer, answer, str, str2);
     }
 
     public boolean equals(Object obj) {
@@ -83,7 +83,7 @@ public final class CastMirroringMessage {
             return false;
         }
         CastMirroringMessage castMirroringMessage = (CastMirroringMessage) obj;
-        return this.type == castMirroringMessage.type && this.seqNum == castMirroringMessage.seqNum && fvbo.n(this.offer, castMirroringMessage.offer) && fvbo.n(this.answer, castMirroringMessage.answer) && fvbo.n(this.result, castMirroringMessage.result) && fvbo.n(this.error, castMirroringMessage.error);
+        return this.type == castMirroringMessage.type && this.seqNum == castMirroringMessage.seqNum && fxxm.n(this.offer, castMirroringMessage.offer) && fxxm.n(this.answer, castMirroringMessage.answer) && fxxm.n(this.result, castMirroringMessage.result) && fxxm.n(this.error, castMirroringMessage.error);
     }
 
     public final Answer getAnswer() {
@@ -106,7 +106,7 @@ public final class CastMirroringMessage {
         return this.seqNum;
     }
 
-    public final anee getType() {
+    public final apfr getType() {
         return this.type;
     }
 
@@ -128,7 +128,7 @@ public final class CastMirroringMessage {
         return "CastMirroringMessage(type=" + this.type + ", seqNum=" + this.seqNum + ", offer=" + this.offer + ", answer=" + this.answer + ", result=" + this.result + ", error=" + this.error + ")";
     }
 
-    public /* synthetic */ CastMirroringMessage(anee aneeVar, long j, Offer offer, Answer answer, String str, String str2, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(aneeVar, j, (i & 4) != 0 ? null : offer, (i & 8) != 0 ? null : answer, (i & 16) != 0 ? null : str, (i & 32) != 0 ? null : str2);
+    public /* synthetic */ CastMirroringMessage(apfr apfrVar, long j, Offer offer, Answer answer, String str, String str2, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this(apfrVar, j, (i & 4) != 0 ? null : offer, (i & 8) != 0 ? null : answer, (i & 16) != 0 ? null : str, (i & 32) != 0 ? null : str2);
     }
 }

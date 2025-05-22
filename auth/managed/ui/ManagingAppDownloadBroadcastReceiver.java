@@ -4,29 +4,29 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.abvp;
-import defpackage.arwm;
-import defpackage.iln;
+import defpackage.advp;
+import defpackage.atzb;
+import defpackage.ind;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ManagingAppDownloadBroadcastReceiver extends TracingBroadcastReceiver {
     private final Context a;
     private boolean b;
-    private final abvp c;
+    private final advp c;
 
-    public ManagingAppDownloadBroadcastReceiver(Context context, abvp abvpVar) {
+    public ManagingAppDownloadBroadcastReceiver(Context context, advp advpVar) {
         super("auth_managed");
-        arwm.s(context);
+        atzb.s(context);
         this.a = context;
-        this.c = abvpVar;
+        this.c = advpVar;
     }
 
     public final synchronized void b() {
         if (this.b) {
             return;
         }
-        iln.b(this.a, this, new IntentFilter("android.intent.action.DOWNLOAD_COMPLETE"), 2);
+        ind.b(this.a, this, new IntentFilter("android.intent.action.DOWNLOAD_COMPLETE"), 2);
         this.b = true;
     }
 
@@ -38,11 +38,11 @@ public class ManagingAppDownloadBroadcastReceiver extends TracingBroadcastReceiv
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         if ("android.intent.action.DOWNLOAD_COMPLETE".equals(intent.getAction())) {
-            abvp abvpVar = this.c;
-            if (Long.valueOf(intent.getLongExtra("extra_download_id", -1L)).equals(Long.valueOf(abvpVar.a))) {
-                abvpVar.b = true;
+            advp advpVar = this.c;
+            if (Long.valueOf(intent.getLongExtra("extra_download_id", -1L)).equals(Long.valueOf(advpVar.a))) {
+                advpVar.b = true;
             }
         }
     }

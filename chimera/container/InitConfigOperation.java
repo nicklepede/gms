@@ -2,19 +2,19 @@ package com.google.android.gms.chimera.container;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aoaj;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.eike;
-import defpackage.fmpv;
-import defpackage.fnck;
-import defpackage.ppr;
-import defpackage.ppt;
+import defpackage.aqcb;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.ekxj;
+import defpackage.fpht;
+import defpackage.fpuj;
+import defpackage.riv;
+import defpackage.rix;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class InitConfigOperation extends IntentOperation {
     /* JADX WARN: Removed duplicated region for block: B:17:? A[RETURN, SYNTHETIC] */
@@ -29,10 +29,10 @@ public final class InitConfigOperation extends IntentOperation {
             java.lang.String r0 = "chimera.CLIENT_SESSION_ID"
             java.lang.String r0 = r8.getStringExtra(r0)
             java.lang.String r1 = "progressListener"
-            puv r1 = defpackage.qad.a(r8, r1)
+            rnz r1 = defpackage.rth.a(r8, r1)
             if (r1 == 0) goto L18
-            aoch r2 = new aoch
-            boolean r3 = defpackage.fmqr.g()
+            aqdz r2 = new aqdz
+            boolean r3 = defpackage.fpip.g()
             r2.<init>(r1, r3)
             goto L19
         L18:
@@ -42,16 +42,16 @@ public final class InitConfigOperation extends IntentOperation {
             byte[] r1 = r8.getByteArrayExtra(r1)
             r3 = 0
             if (r1 == 0) goto L4b
-            febw r4 = defpackage.febw.a     // Catch: defpackage.fedk -> L3b
-            feep r4 = defpackage.feep.a     // Catch: defpackage.fedk -> L3b
-            febw r4 = defpackage.febw.a     // Catch: defpackage.fedk -> L3b
-            pup r5 = defpackage.pup.a     // Catch: defpackage.fedk -> L3b
-            int r6 = r1.length     // Catch: defpackage.fedk -> L3b
-            fecp r1 = defpackage.fecp.y(r5, r1, r3, r6, r4)     // Catch: defpackage.fedk -> L3b
-            defpackage.fecp.M(r1)     // Catch: defpackage.fedk -> L3b
-            pup r1 = (defpackage.pup) r1     // Catch: defpackage.fedk -> L3b
-            fedh r1 = r1.b     // Catch: defpackage.fedk -> L3b
-            eitj r1 = defpackage.eitj.i(r1)     // Catch: defpackage.fedk -> L3b
+            fgqp r4 = defpackage.fgqp.a     // Catch: defpackage.fgsd -> L3b
+            fgti r4 = defpackage.fgti.a     // Catch: defpackage.fgsd -> L3b
+            fgqp r4 = defpackage.fgqp.a     // Catch: defpackage.fgsd -> L3b
+            rnt r5 = defpackage.rnt.a     // Catch: defpackage.fgsd -> L3b
+            int r6 = r1.length     // Catch: defpackage.fgsd -> L3b
+            fgri r1 = defpackage.fgri.y(r5, r1, r3, r6, r4)     // Catch: defpackage.fgsd -> L3b
+            defpackage.fgri.M(r1)     // Catch: defpackage.fgsd -> L3b
+            rnt r1 = (defpackage.rnt) r1     // Catch: defpackage.fgsd -> L3b
+            fgsa r1 = r1.b     // Catch: defpackage.fgsd -> L3b
+            elgo r1 = defpackage.elgo.i(r1)     // Catch: defpackage.fgsd -> L3b
             goto L4f
         L3b:
             r1 = move-exception
@@ -61,25 +61,25 @@ public final class InitConfigOperation extends IntentOperation {
             java.lang.String r4 = "FeatureMgr"
             android.util.Log.w(r4, r1)
         L4b:
-            int r1 = defpackage.eitj.d
-            eitj r1 = defpackage.ejcb.a
+            int r1 = defpackage.elgo.d
+            elgo r1 = defpackage.elpg.a
         L4f:
-            anza r4 = defpackage.anza.a(r7)
+            aqas r4 = defpackage.aqas.a(r7)
             r5 = 5
             r4.g(r5, r2, r0, r1)
             if (r2 == 0) goto L7a
-            boolean r0 = defpackage.fmqr.g()
+            boolean r0 = defpackage.fpip.g()
             if (r0 == 0) goto L64
-            puv r0 = r2.a
+            rnz r0 = r2.a
             if (r0 != 0) goto L64
             goto L7a
         L64:
             java.lang.Class<com.google.android.gms.chimera.container.WaitUpdateCompleteOperation> r0 = com.google.android.gms.chimera.container.WaitUpdateCompleteOperation.class
             java.lang.String r1 = "com.google.android.gms.chimera.action.WAIT_UPDATE_COMPLETE"
             android.content.Intent r0 = com.google.android.chimera.IntentOperation.getStartIntent(r7, r0, r1)
-            defpackage.eike.e(r0)
+            defpackage.ekxj.e(r0)
             java.lang.String r1 = "liveListener"
-            defpackage.qad.c(r0, r1, r2)
+            defpackage.rth.c(r0, r1, r2)
             com.google.android.gms.chimera.container.WaitUpdateCompleteOperation.a(r8, r0, r3)
             r7.startService(r0)
         L7a:
@@ -93,7 +93,7 @@ public final class InitConfigOperation extends IntentOperation {
     public final void onHandleIntent(Intent intent) {
         char c;
         String action = intent.getAction();
-        eike.e(action);
+        ekxj.e(action);
         switch (action.hashCode()) {
             case -1482987174:
                 if (action.equals("com.google.android.chimera.container.REQUESTED_FEATURES_CHANGED")) {
@@ -128,7 +128,7 @@ public final class InitConfigOperation extends IntentOperation {
                 break;
         }
         if (c == 0) {
-            a(ppr.a(this, ppt.d().f(), new aoaj(), null));
+            a(riv.a(this, rix.d().f(), new aqcb(), null));
         } else if (c != 1) {
             if (c == 2 || c == 3) {
                 a(intent);
@@ -137,29 +137,29 @@ public final class InitConfigOperation extends IntentOperation {
             return;
         }
         ConfigChimeraService.d().e(this);
-        byjl a = byjl.a(this);
+        casd a = casd.a(this);
         int i = AppModuleManagementService.a;
-        if (fnck.a.a().p()) {
-            byko bykoVar = new byko();
-            bykoVar.t("AppModuleManagemntSrvce");
-            bykoVar.w(AppModuleManagementService.class.getName());
-            bykoVar.l(false);
-            bykoVar.a = bykv.n;
-            bykoVar.p = false;
-            bykoVar.j();
-            bykoVar.e();
-            a.f(bykoVar.b());
+        if (fpuj.a.lK().p()) {
+            catg catgVar = new catg();
+            catgVar.t("AppModuleManagemntSrvce");
+            catgVar.w(AppModuleManagementService.class.getName());
+            catgVar.l(false);
+            catgVar.a = catn.n;
+            catgVar.p = false;
+            catgVar.j();
+            catgVar.e();
+            a.f(catgVar.b());
             return;
         }
-        bykm bykmVar = new bykm();
-        bykmVar.j(byki.a(fmpv.a.a().b()));
-        bykmVar.w(AppModuleManagementService.class.getName());
-        bykmVar.v(1);
-        bykmVar.g(2);
-        bykmVar.r(true);
-        bykmVar.i(true);
-        bykmVar.p = false;
-        bykmVar.t("AppModuleManagemntSrvce");
-        a.f(bykmVar.b());
+        cate cateVar = new cate();
+        cateVar.j(cata.a(fpht.a.lK().b()));
+        cateVar.w(AppModuleManagementService.class.getName());
+        cateVar.v(1);
+        cateVar.g(2);
+        cateVar.r(true);
+        cateVar.i(true);
+        cateVar.p = false;
+        cateVar.t("AppModuleManagemntSrvce");
+        a.f(cateVar.b());
     }
 }

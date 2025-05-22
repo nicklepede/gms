@@ -3,15 +3,15 @@ package com.google.android.gms.mobilesubscription.serviceconfig;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cesk;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.chbs;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ServiceType extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cesk();
+    public static final Parcelable.Creator CREATOR = new chbs();
     public int a;
 
     public ServiceType() {
@@ -22,7 +22,7 @@ public final class ServiceType extends AbstractSafeParcelable {
             return true;
         }
         if (obj instanceof ServiceType) {
-            return arwb.b(Integer.valueOf(this.a), Integer.valueOf(((ServiceType) obj).a));
+            return atyq.b(Integer.valueOf(this.a), Integer.valueOf(((ServiceType) obj).a));
         }
         return false;
     }
@@ -33,9 +33,9 @@ public final class ServiceType extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.c(parcel, a);
     }
 
     public ServiceType(int i) {

@@ -10,20 +10,20 @@ import com.google.android.gms.ads.internal.mediation.client.e;
 import com.google.android.gms.ads.internal.util.c;
 import com.google.android.gms.ads.internal.util.client.h;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.azht;
-import defpackage.tcm;
+import defpackage.bblp;
+import defpackage.uym;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AdPreloaderRemoteCreatorImpl extends at {
     @Override // com.google.android.gms.ads.internal.client.au
-    public IBinder newAdPreloader(azht azhtVar, e eVar, int i) {
+    public IBinder newAdPreloader(bblp bblpVar, e eVar, int i) {
         au asInterface;
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         p.c(context);
-        if (((Boolean) p.e.d()).booleanValue() && (asInterface = at.asInterface((IBinder) tcm.a(context).b("com.google.android.gms.ads.ChimeraAdPreloaderCreatorImpl"))) != null) {
+        if (((Boolean) p.e.d()).booleanValue() && (asInterface = at.asInterface((IBinder) uym.a(context).b("com.google.android.gms.ads.ChimeraAdPreloaderCreatorImpl"))) != null) {
             try {
-                return asInterface.newAdPreloader(azhtVar, eVar, i);
+                return asInterface.newAdPreloader(bblpVar, eVar, i);
             } catch (RemoteException e) {
                 int i2 = c.a;
                 h.e("Failed to create AdPreloader using dyanamite package.", e);

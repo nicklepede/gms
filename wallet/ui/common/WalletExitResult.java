@@ -5,16 +5,16 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.wallet.firstparty.ExitResult;
-import defpackage.arxc;
-import defpackage.diot;
-import defpackage.djfd;
-import defpackage.djfe;
-import defpackage.emdq;
+import defpackage.atzr;
+import defpackage.dlae;
+import defpackage.dlqw;
+import defpackage.dlqx;
+import defpackage.eore;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class WalletExitResult extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new djfe();
+    public static final Parcelable.Creator CREATOR = new dlqx();
     public int a;
     public int b;
     public int c;
@@ -31,12 +31,12 @@ public final class WalletExitResult extends AbstractSafeParcelable implements Re
         this.f = 0;
     }
 
-    public static djfd b() {
-        return new djfd(new WalletExitResult());
+    public static dlqw b() {
+        return new dlqw(new WalletExitResult());
     }
 
     public final ExitResult a() {
-        diot a = ExitResult.a();
+        dlae a = ExitResult.a();
         a.b(this.f);
         ExitResult exitResult = a.a;
         exitResult.c = this.c;
@@ -45,19 +45,19 @@ public final class WalletExitResult extends AbstractSafeParcelable implements Re
     }
 
     public final int c() {
-        return emdq.a(this.b);
+        return eore.a(this.b);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.o(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.o(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 
     public WalletExitResult(int i, int i2, int i3, String str, int i4, int i5) {

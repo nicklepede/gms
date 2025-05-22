@@ -6,26 +6,26 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import com.google.android.chimera.ContentProvider;
-import defpackage.arhg;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.tux;
+import defpackage.atjv;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.vqx;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class AppDoctorChimeraProvider extends ContentProvider {
     public static final /* synthetic */ int a = 0;
-    private static final asot b = asot.b("AppDoctorProvider", asej.CONTAINER);
-    private arhg c;
+    private static final ausn b = ausn.b("AppDoctorProvider", auid.CONTAINER);
+    private atjv c;
 
     public static void a(Context context) {
-        asng.H(context, "com.google.android.gms.common.appdoctor.AppDoctorProvider", true);
+        aura.H(context, "com.google.android.gms.common.appdoctor.AppDoctorProvider", true);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -39,7 +39,7 @@ public final class AppDoctorChimeraProvider extends ContentProvider {
         if (string == null) {
             throw new IllegalArgumentException("No package name in the extras Bundle");
         }
-        asng.N(getContext(), string);
+        aura.N(getContext(), string);
         Bundle bundle2 = new Bundle();
         switch (str.hashCode()) {
             case -1563427184:
@@ -76,11 +76,11 @@ public final class AppDoctorChimeraProvider extends ContentProvider {
         }
         if (c == 0) {
             try {
-                bundle2.putByteArray("com.google.android.gms.common.appdoctor.teledoctorconfig", ((tux) ((enpf) this.c.b(string)).u()).r());
+                bundle2.putByteArray("com.google.android.gms.common.appdoctor.teledoctorconfig", ((vqx) ((eqcy) this.c.b(string)).u()).r());
                 return bundle2;
             } catch (InterruptedException | ExecutionException e) {
-                ((ejhf) ((ejhf) ((ejhf) b.j()).s(e)).ah((char) 3125)).x("Failed to get fixes.");
-                bundle2.putByteArray("com.google.android.gms.common.appdoctor.teledoctorconfig", tux.a.r());
+                ((eluo) ((eluo) ((eluo) b.j()).s(e)).ai((char) 3129)).x("Failed to get fixes.");
+                bundle2.putByteArray("com.google.android.gms.common.appdoctor.teledoctorconfig", vqx.a.r());
             }
         } else if (c == 1) {
             String string2 = bundle.getString("com.google.android.gms.common.appdoctor.uuid");
@@ -88,10 +88,10 @@ public final class AppDoctorChimeraProvider extends ContentProvider {
                 throw new IllegalArgumentException("Need to provide a UUID");
             }
             try {
-                ((enpf) this.c.e(getContext(), string, string2)).u();
+                ((eqcy) this.c.e(getContext(), string, string2)).u();
                 return bundle2;
             } catch (InterruptedException | ExecutionException e2) {
-                ((ejhf) ((ejhf) ((ejhf) b.j()).s(e2)).ah((char) 3126)).x("Failed to mark fix completed.");
+                ((eluo) ((eluo) ((eluo) b.j()).s(e2)).ai((char) 3130)).x("Failed to mark fix completed.");
                 if (e2.getCause() instanceof IllegalArgumentException) {
                     throw ((IllegalArgumentException) e2.getCause());
                 }
@@ -102,10 +102,10 @@ public final class AppDoctorChimeraProvider extends ContentProvider {
                 throw new IllegalArgumentException("Need to provide a UUID");
             }
             try {
-                ((enpf) this.c.d(getContext(), string, string3)).u();
+                ((eqcy) this.c.d(getContext(), string, string3)).u();
                 return bundle2;
             } catch (InterruptedException | ExecutionException e3) {
-                ((ejhf) ((ejhf) ((ejhf) b.j()).s(e3)).ah((char) 3127)).x("Failed to mark fix attempted.");
+                ((eluo) ((eluo) ((eluo) b.j()).s(e3)).ai((char) 3131)).x("Failed to mark fix attempted.");
                 if (e3.getCause() instanceof IllegalArgumentException) {
                     throw ((IllegalArgumentException) e3.getCause());
                 }
@@ -119,10 +119,10 @@ public final class AppDoctorChimeraProvider extends ContentProvider {
                 throw new IllegalArgumentException("Need to provide a UUID");
             }
             try {
-                ((enpf) this.c.c(getContext(), string4)).u();
+                ((eqcy) this.c.c(getContext(), string4)).u();
                 return bundle2;
             } catch (InterruptedException | ExecutionException e4) {
-                ((ejhf) ((ejhf) ((ejhf) b.j()).s(e4)).ah((char) 3128)).x("Failed to log fix in progress.");
+                ((eluo) ((eluo) ((eluo) b.j()).s(e4)).ai((char) 3132)).x("Failed to log fix in progress.");
                 if (e4.getCause() instanceof IllegalArgumentException) {
                     throw ((IllegalArgumentException) e4.getCause());
                 }
@@ -153,7 +153,7 @@ public final class AppDoctorChimeraProvider extends ContentProvider {
 
     @Override // com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
-        this.c = arhg.a();
+        this.c = atjv.a();
         return true;
     }
 

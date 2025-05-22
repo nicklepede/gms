@@ -4,13 +4,13 @@ import android.content.Context;
 import com.google.android.gms.ads.internal.cache.CacheEntryParcel;
 import com.google.android.gms.ads.internal.cache.CacheOffering;
 import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
-import defpackage.asmf;
-import defpackage.bxhc;
+import defpackage.aupz;
+import defpackage.bzps;
 import java.util.concurrent.ExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class j extends com.google.android.gms.ads.internal.cache.g implements bxhc {
+public final class j extends com.google.android.gms.ads.internal.cache.g implements bzps {
     private static f a;
     private static final Object b = new Object();
     private final f c;
@@ -18,9 +18,9 @@ public final class j extends com.google.android.gms.ads.internal.cache.g impleme
 
     public j(Context context) {
         f c = c(context);
-        asmf asmfVar = new asmf(Integer.MAX_VALUE, 10);
+        aupz aupzVar = new aupz(Integer.MAX_VALUE, 10);
         this.c = c;
-        this.d = asmfVar;
+        this.d = aupzVar;
     }
 
     static f c(Context context) {
@@ -35,14 +35,14 @@ public final class j extends com.google.android.gms.ads.internal.cache.g impleme
                 try {
                     com.google.android.gms.ads.cache.io.b bVar = com.google.android.gms.ads.cache.io.b.a;
                     com.google.android.gms.ads.internal.js.function.b b2 = com.google.android.gms.ads.internal.c.b();
-                    VersionInfoParcel versionInfoParcel = new VersionInfoParcel(251661004, 251661004);
+                    VersionInfoParcel versionInfoParcel = new VersionInfoParcel(251864004, 251864004);
                     synchronized (b2.a) {
                         if (b2.b == null) {
                             b2.b = new com.google.android.gms.ads.internal.js.function.k(com.google.android.gms.ads.internal.js.function.b.b(applicationContext), versionInfoParcel, ((Boolean) com.google.android.gms.ads.internal.flag.q.b.d()).booleanValue() ? (String) com.google.android.gms.ads.internal.config.p.a.g() : (String) com.google.android.gms.ads.internal.config.p.b.g(), null);
                         }
                         kVar = b2.b;
                     }
-                    a = new f(applicationContext, bVar, kVar, new asmf(((Integer) com.google.android.gms.ads.internal.config.p.ai.g()).intValue(), 10), new com.google.android.gms.ads.internal.util.client.m());
+                    a = new f(applicationContext, bVar, kVar, new aupz(((Integer) com.google.android.gms.ads.internal.config.p.ai.g()).intValue(), 10), new com.google.android.gms.ads.internal.util.client.m());
                 } catch (g e) {
                     int i = com.google.android.gms.ads.internal.util.c.a;
                     com.google.android.gms.ads.internal.util.client.h.h("Unable to create cache instance.", e);

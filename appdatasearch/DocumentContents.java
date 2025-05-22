@@ -4,17 +4,17 @@ import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.trb;
-import defpackage.tro;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.vnb;
+import defpackage.vno;
 import java.util.Arrays;
 import java.util.BitSet;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class DocumentContents extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new trb();
+    public static final Parcelable.Creator CREATOR = new vnb();
     public final DocumentSection[] a;
     public final String b;
     public final boolean c;
@@ -30,7 +30,7 @@ public class DocumentContents extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof DocumentContents) {
             DocumentContents documentContents = (DocumentContents) obj;
-            if (arwb.b(this.b, documentContents.b) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(documentContents.c)) && arwb.b(this.d, documentContents.d) && Arrays.equals(this.a, documentContents.a)) {
+            if (atyq.b(this.b, documentContents.b) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(documentContents.c)) && atyq.b(this.d, documentContents.d) && Arrays.equals(this.a, documentContents.a)) {
                 return true;
             }
         }
@@ -43,25 +43,25 @@ public class DocumentContents extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.J(parcel, 1, this.a, i);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.J(parcel, 1, this.a, i);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.c(parcel, a);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public DocumentContents(Account account, DocumentSection... documentSectionArr) {
         this(documentSectionArr, null, false, account);
         if (documentSectionArr != null) {
-            int i = tro.b;
+            int i = vno.b;
             BitSet bitSet = new BitSet(10);
             for (DocumentSection documentSection : documentSectionArr) {
                 int i2 = documentSection.e;
                 if (i2 != -1) {
                     if (bitSet.get(i2)) {
-                        throw new IllegalArgumentException("Duplicate global search section type ".concat(String.valueOf(tro.b(i2))));
+                        throw new IllegalArgumentException("Duplicate global search section type ".concat(String.valueOf(vno.b(i2))));
                     }
                     bitSet.set(i2);
                 }

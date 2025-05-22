@@ -7,19 +7,19 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.ChannelInfo;
 import com.google.android.gms.dtdi.core.TokenWrapper;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ayvp;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bazj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class CloseConnectionParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayvp();
+    public static final Parcelable.Creator CREATOR = new bazj();
     public TokenWrapper a;
-    public arbp b;
+    public atee b;
     public String c;
     public String d;
     public ChannelInfo e;
@@ -33,7 +33,7 @@ public final class CloseConnectionParams extends AbstractSafeParcelable {
         }
         if (obj instanceof CloseConnectionParams) {
             CloseConnectionParams closeConnectionParams = (CloseConnectionParams) obj;
-            if (arwb.b(this.a, closeConnectionParams.a) && arwb.b(this.b, closeConnectionParams.b) && arwb.b(this.c, closeConnectionParams.c) && arwb.b(this.d, closeConnectionParams.d) && arwb.b(this.e, closeConnectionParams.e)) {
+            if (atyq.b(this.a, closeConnectionParams.a) && atyq.b(this.b, closeConnectionParams.b) && atyq.b(this.c, closeConnectionParams.c) && atyq.b(this.d, closeConnectionParams.d) && atyq.b(this.e, closeConnectionParams.e)) {
                 return true;
             }
         }
@@ -46,25 +46,25 @@ public final class CloseConnectionParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.c(parcel, a);
     }
 
     public CloseConnectionParams(TokenWrapper tokenWrapper, IBinder iBinder, String str, String str2, ChannelInfo channelInfo) {
-        arbp arbnVar;
+        atee atecVar;
         if (iBinder == null) {
-            arbnVar = null;
+            atecVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbnVar = queryLocalInterface instanceof arbp ? (arbp) queryLocalInterface : new arbn(iBinder);
+            atecVar = queryLocalInterface instanceof atee ? (atee) queryLocalInterface : new atec(iBinder);
         }
         this.a = tokenWrapper;
-        this.b = arbnVar;
+        this.b = atecVar;
         this.c = str;
         this.d = str2;
         this.e = channelInfo;

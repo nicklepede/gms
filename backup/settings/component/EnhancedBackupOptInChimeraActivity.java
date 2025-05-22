@@ -8,101 +8,101 @@ import com.google.android.gms.R;
 import com.google.android.gms.backup.common.util.session.ParcelableSession;
 import com.google.android.gms.backup.settings.component.EnhancedBackupOptInChimeraActivity;
 import defpackage.a;
-import defpackage.ahsw;
-import defpackage.ahtf;
-import defpackage.ahwd;
-import defpackage.ahwm;
-import defpackage.ahxo;
-import defpackage.aiaa;
-import defpackage.aiab;
-import defpackage.aieq;
-import defpackage.aiew;
-import defpackage.aiey;
-import defpackage.aifl;
-import defpackage.ajlc;
-import defpackage.ajld;
-import defpackage.ajle;
-import defpackage.ajlm;
-import defpackage.ajln;
-import defpackage.ajmc;
-import defpackage.ajrc;
-import defpackage.akaa;
-import defpackage.akao;
-import defpackage.akap;
-import defpackage.akas;
-import defpackage.akat;
-import defpackage.akaw;
-import defpackage.akbe;
-import defpackage.akbf;
-import defpackage.arxo;
-import defpackage.asmf;
+import defpackage.ajtm;
+import defpackage.ajtv;
+import defpackage.ajwt;
+import defpackage.ajxc;
+import defpackage.ajye;
+import defpackage.akaq;
+import defpackage.akar;
+import defpackage.akfg;
+import defpackage.akfm;
+import defpackage.akfo;
+import defpackage.akgb;
+import defpackage.allu;
+import defpackage.allv;
+import defpackage.allw;
+import defpackage.alme;
+import defpackage.almf;
+import defpackage.almu;
+import defpackage.alrv;
+import defpackage.amay;
+import defpackage.ambm;
+import defpackage.ambn;
+import defpackage.ambq;
+import defpackage.ambr;
+import defpackage.ambu;
+import defpackage.amcc;
+import defpackage.amcd;
+import defpackage.auad;
+import defpackage.aupz;
 import defpackage.bp;
-import defpackage.dfae;
 import defpackage.dg;
-import defpackage.dwae;
-import defpackage.edeq;
-import defpackage.edjs;
-import defpackage.edjt;
-import defpackage.eiho;
-import defpackage.eiig;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ekiw;
-import defpackage.esiu;
-import defpackage.ffbn;
-import defpackage.fvbo;
-import defpackage.qfp;
+import defpackage.dhlk;
+import defpackage.dymf;
+import defpackage.efrl;
+import defpackage.efwn;
+import defpackage.efwo;
+import defpackage.ekut;
+import defpackage.ekvl;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.emwi;
+import defpackage.euyj;
+import defpackage.fhql;
+import defpackage.fxxm;
+import defpackage.ryt;
 import java.util.concurrent.ExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajlm, akbe, akas {
-    public static final arxo j = ahwd.a("EnhancedBackupOptIn");
-    private ajmc A;
+public class EnhancedBackupOptInChimeraActivity extends ryt implements ambm, alme, amcc, ambq {
+    public static final auad j = ajwt.a("EnhancedBackupOptIn");
+    private almu A;
     public ExecutorService k;
-    public ahsw l;
+    public ajtm l;
     public boolean m;
     public boolean n;
-    public ahxo o;
-    public ajrc p;
+    public ajye o;
+    public alrv p;
     private boolean s;
-    private ajln t;
-    private aiey v;
+    private almf t;
+    private akfo v;
     private boolean w;
     private dg x;
-    private ahwm y;
+    private ajxc y;
     private ParcelableSession z;
-    private final eijr q = eijy.a(new eijr() { // from class: ajkz
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(fllt.x());
+    private final ekww q = ekxd.a(new ekww() { // from class: allr
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(fodd.x());
         }
     });
-    private ffbn r = ffbn.OPT_IN_CALLER_UNSPECIFIED;
-    private final eiho u = new eiho() { // from class: ajla
-        @Override // defpackage.eiho
+    private fhql r = fhql.OPT_IN_CALLER_UNSPECIFIED;
+    private final ekut u = new ekut() { // from class: alls
+        @Override // defpackage.ekut
         public final Object apply(Object obj) {
             Account account = (Account) obj;
-            akbf akbfVar = new akbf();
+            amcd amcdVar = new amcd();
             Bundle bundle = new Bundle();
-            eiig.x(account);
+            ekvl.y(account);
             bundle.putParcelable("account", account);
-            akbfVar.setArguments(bundle);
-            return akbfVar;
+            amcdVar.setArguments(bundle);
+            return amcdVar;
         }
     };
 
-    private final void r(akap akapVar) {
+    private final void r(ambn ambnVar) {
         Account account = (Account) getIntent().getParcelableExtra("account");
         if (account != null) {
-            akapVar.L(account);
+            ambnVar.L(account);
         }
-        n(akapVar);
+        n(ambnVar);
     }
 
     private final void s() {
         bp bpVar = new bp(getSupportFragmentManager());
-        bpVar.E(akat.class, akat.class.getName());
+        bpVar.E(ambr.class, ambr.class.getName());
         bpVar.a();
     }
 
@@ -110,18 +110,18 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
         return getSupportFragmentManager().h(cls.getName()) != null;
     }
 
-    @Override // defpackage.akao
+    @Override // defpackage.ambm
     public final void a(Account account, Intent intent) {
         if (this.t == null) {
-            this.t = new ajln();
+            this.t = new almf();
         }
-        ajmc g = ajmc.g(this, new ahtf(this), account, intent, false, this.z);
+        almu g = almu.g(this, new ajtv(this), account, intent, false, this.z);
         this.A = g;
-        if (t(akaw.class)) {
+        if (t(ambu.class)) {
             s();
-            g.b(esiu.T);
+            g.b(euyj.T);
         } else {
-            ajrc.f(5);
+            alrv.f(5);
             n((dg) this.u.apply(account));
         }
     }
@@ -133,7 +133,7 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
     public final void c(PhotosEnablementSnackbarInfo photosEnablementSnackbarInfo) {
         j.j("navigateToBackupSettings: optInFromBackupSettings=%b", Boolean.valueOf(this.s));
         if (!this.s) {
-            Intent g = aieq.g(ekiw.BBG1_OPT_IN);
+            Intent g = akfg.g(emwi.BBG1_OPT_IN);
             if (photosEnablementSnackbarInfo != null) {
                 g.putExtra("photosEnablementSnackbarInfo", photosEnablementSnackbarInfo);
             }
@@ -152,9 +152,9 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
         overridePendingTransition(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
     }
 
-    @Override // defpackage.akas
+    @Override // defpackage.ambq
     public final void f() {
-        runOnUiThread(new Runnable() { // from class: ajkx
+        runOnUiThread(new Runnable() { // from class: allp
             @Override // java.lang.Runnable
             public final void run() {
                 EnhancedBackupOptInChimeraActivity.this.l(null);
@@ -162,9 +162,9 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
         });
     }
 
-    @Override // defpackage.ajlm
+    @Override // defpackage.alme
     public final void g(final Account account, final PhotosEnablementSnackbarInfo photosEnablementSnackbarInfo) {
-        runOnUiThread(new Runnable() { // from class: ajlb
+        runOnUiThread(new Runnable() { // from class: allt
             @Override // java.lang.Runnable
             public final void run() {
                 EnhancedBackupOptInChimeraActivity.this.m(account, photosEnablementSnackbarInfo);
@@ -172,40 +172,40 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
         });
     }
 
-    @Override // defpackage.akbe
+    @Override // defpackage.amcc
     public final void h() {
-        ajmc ajmcVar = this.A;
-        if (ajmcVar != null) {
+        almu almuVar = this.A;
+        if (almuVar != null) {
             s();
-            ajmcVar.b(esiu.U);
+            almuVar.b(euyj.U);
         } else {
             j.m("photosEnablementController null in onPhotosPreludeFragmentContinuePressed. This shouldn't happen.", new Object[0]);
             b();
         }
     }
 
-    @Override // defpackage.akbe
+    @Override // defpackage.amcc
     public final void k(Account account) {
         l(account);
     }
 
-    @Override // defpackage.akao
+    @Override // defpackage.ambm
     public final void l(Account account) {
         m(account, null);
     }
 
-    @Override // defpackage.akao
+    @Override // defpackage.ambm
     public final void m(Account account, final PhotosEnablementSnackbarInfo photosEnablementSnackbarInfo) {
-        this.y.a(account != null ? account.name : null, ahwm.c, ahwm.b, this.z.c()).x(new dfae() { // from class: ajky
-            @Override // defpackage.dfae
-            public final void hr(dfaq dfaqVar) {
+        this.y.a(account != null ? account.name : null, ajxc.c, ajxc.b, this.z.c()).x(new dhlk() { // from class: allq
+            @Override // defpackage.dhlk
+            public final void hH(dhlw dhlwVar) {
                 EnhancedBackupOptInChimeraActivity.this.c(photosEnablementSnackbarInfo);
             }
         });
     }
 
     public final void n(dg dgVar) {
-        eiig.x(dgVar);
+        ekvl.y(dgVar);
         if (t(dgVar.getClass())) {
             return;
         }
@@ -225,7 +225,7 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
                 dgVar.setArguments(bundle);
             }
         }
-        if (((Boolean) this.q.a()).booleanValue()) {
+        if (((Boolean) this.q.lK()).booleanValue()) {
             Bundle arguments2 = dgVar.getArguments();
             if (arguments2 != null) {
                 arguments2.putInt("opt_in_caller", this.r.v);
@@ -241,10 +241,10 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
     }
 
     public final void o() {
-        r(new akaa(this.l, this.v, this.m, this.n));
+        r(new amay(this.l, this.v, this.m, this.n));
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i == 10004) {
@@ -258,20 +258,20 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
             }
             String stringExtra = intent.getStringExtra("authAccount");
             String stringExtra2 = intent.getStringExtra("accountType");
-            arxo arxoVar = j;
-            String q = arxo.q(stringExtra);
+            auad auadVar = j;
+            String q = auad.q(stringExtra);
             if (stringExtra2 == null) {
                 stringExtra2 = "null";
             }
-            arxoVar.d("Account successfully added: name=%s, type=%s", q, stringExtra2);
+            auadVar.d("Account successfully added: name=%s, type=%s", q, stringExtra2);
             p();
         }
     }
 
     @Override // com.google.android.chimera.ContextThemeWrapper
     protected final void onApplyThemeResource(Resources.Theme theme, int i, boolean z) {
-        int i2 = edjs.a;
-        if (edeq.v(this) && edeq.z(this)) {
+        int i2 = efwn.a;
+        if (efrl.v(this) && efrl.z(this)) {
             j.d("Setting sucUsePartnerResource theme attribute to true.", new Object[0]);
             theme.applyStyle(R.style.BcStyleThemeOverlay, true);
         } else {
@@ -281,103 +281,103 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
         super.onApplyThemeResource(theme, i, z);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         EnhancedBackupOptInChimeraActivity enhancedBackupOptInChimeraActivity;
         j.j("onCreate", new Object[0]);
         String stringExtra = getIntent().getStringExtra("theme");
-        edjt d = edjt.d();
+        efwo d = efwo.d();
         int i = d.a;
         String str = d.b;
         boolean z = d.c;
-        edjt edjtVar = new edjt(R.style.SudThemeGlifV3_DayNight, true);
-        int i2 = edjs.a;
-        setTheme(edjtVar.c(stringExtra, !edeq.v(this)));
-        if (edeq.w(this)) {
-            setTheme(edjs.a(this));
+        efwo efwoVar = new efwo(R.style.SudThemeGlifV3_DayNight, true);
+        int i2 = efwn.a;
+        setTheme(efwoVar.c(stringExtra, !efrl.v(this)));
+        if (efrl.w(this)) {
+            setTheme(efwn.a(this));
         }
         super.onCreate(bundle);
         setContentView(R.layout.backup_settings_activity_main);
-        this.z = aifl.a(bundle);
+        this.z = akgb.a(bundle);
         Intent intent = getIntent();
-        int i3 = dwae.a;
-        fvbo.f(intent, "intent");
+        int i3 = dymf.a;
+        fxxm.f(intent, "intent");
         this.s = intent.getBooleanExtra("optInFromBackupSettings", false) || intent.getBooleanExtra("optInFromBackupSettingsWithMissingDollyConsent", false);
-        if (((Boolean) this.q.a()).booleanValue()) {
-            this.r = dwae.b(getIntent());
+        if (((Boolean) this.q.lK()).booleanValue()) {
+            this.r = dymf.b(getIntent());
         }
         if (this.k == null) {
-            this.k = new asmf(3, 9);
+            this.k = new aupz(3, 9);
         }
         if (this.v == null) {
-            this.v = new aiey(this.k, this);
+            this.v = new akfo(this.k, this);
         }
         if (this.o == null) {
-            this.o = ahxo.b(getApplicationContext());
+            this.o = ajye.b(getApplicationContext());
         }
         if (this.p == null) {
-            this.p = new ajrc();
+            this.p = new alrv();
         }
         if (bundle != null) {
             if (this.t == null) {
-                this.t = new ajln();
+                this.t = new almf();
             }
-            ahtf ahtfVar = new ahtf(this);
+            ajtv ajtvVar = new ajtv(this);
             ParcelableSession parcelableSession = this.z;
             Account account = (Account) bundle.getParcelable("photos-enablement-account");
             Intent intent2 = (Intent) bundle.getParcelable("photos-enablement-intent");
-            ajmc ajmcVar = null;
+            almu almuVar = null;
             if (account == null || intent2 == null) {
                 enhancedBackupOptInChimeraActivity = this;
             } else {
                 enhancedBackupOptInChimeraActivity = this;
-                ajmcVar = ajmc.g(enhancedBackupOptInChimeraActivity, ahtfVar, account, intent2, bundle.getBoolean("photos-enablement-attempted"), parcelableSession);
+                almuVar = almu.g(enhancedBackupOptInChimeraActivity, ajtvVar, account, intent2, bundle.getBoolean("photos-enablement-attempted"), parcelableSession);
             }
-            enhancedBackupOptInChimeraActivity.A = ajmcVar;
+            enhancedBackupOptInChimeraActivity.A = almuVar;
         } else {
             enhancedBackupOptInChimeraActivity = this;
         }
         if (enhancedBackupOptInChimeraActivity.y == null) {
-            enhancedBackupOptInChimeraActivity.y = new ahwm(this, new asmf(Integer.MAX_VALUE, 9));
+            enhancedBackupOptInChimeraActivity.y = new ajxc(this, new aupz(Integer.MAX_VALUE, 9));
         }
-        new aiew(enhancedBackupOptInChimeraActivity.k).b(new ajld(this));
+        new akfm(enhancedBackupOptInChimeraActivity.k).b(new allv(this));
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
         this.k.shutdown();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         j.j("onPause", new Object[0]);
         super.onPause();
         this.w = true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
-        arxo arxoVar = j;
-        arxoVar.j("onResume", new Object[0]);
+        auad auadVar = j;
+        auadVar.j("onResume", new Object[0]);
         super.onResume();
         this.w = false;
         dg dgVar = this.x;
         if (dgVar != null) {
-            arxoVar.d("Showing queued fragment %s", dgVar.getClass().getName());
+            auadVar.d("Showing queued fragment %s", dgVar.getClass().getName());
             n(this.x);
             this.x = null;
         }
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        ajmc ajmcVar = this.A;
-        if (ajmcVar != null) {
-            bundle.putParcelable("photos-enablement-account", ajmcVar.c);
-            bundle.putParcelable("photos-enablement-intent", ajmcVar.h);
-            bundle.putBoolean("photos-enablement-attempted", ajmcVar.j);
+        almu almuVar = this.A;
+        if (almuVar != null) {
+            bundle.putParcelable("photos-enablement-account", almuVar.c);
+            bundle.putParcelable("photos-enablement-intent", almuVar.h);
+            bundle.putBoolean("photos-enablement-attempted", almuVar.j);
         }
         ParcelableSession parcelableSession = this.z;
         if (parcelableSession != null) {
@@ -386,26 +386,26 @@ public class EnhancedBackupOptInChimeraActivity extends qfp implements akao, ajl
     }
 
     public final void p() {
-        arxo arxoVar = j;
-        arxoVar.d("updateScreenToShowOptIn account=".concat(String.valueOf(String.valueOf(getIntent().getParcelableExtra("account")))), new Object[0]);
-        if (this.A != null && (t(akbf.class) || t(akaw.class))) {
-            arxoVar.d("We are in the process of enabling Photos AB, do not change the opt-in fragment. Aborting updateScreenToShowOptIn.", new Object[0]);
+        auad auadVar = j;
+        auadVar.d("updateScreenToShowOptIn account=".concat(String.valueOf(String.valueOf(getIntent().getParcelableExtra("account")))), new Object[0]);
+        if (this.A != null && (t(amcd.class) || t(ambu.class))) {
+            auadVar.d("We are in the process of enabling Photos AB, do not change the opt-in fragment. Aborting updateScreenToShowOptIn.", new Object[0]);
             return;
         }
         if (this.s) {
             o();
             return;
         }
-        if (ajle.a(getIntent(), "showPhotosOptIn")) {
-            r(new akaw(this.l, this.v, this.m, this.n));
+        if (allw.a(getIntent(), "showPhotosOptIn")) {
+            r(new ambu(this.l, this.v, this.m, this.n));
             return;
         }
-        aiaa a = aiab.a();
+        akaq a = akar.a();
         a.c(7);
-        this.l.c(new ajlc(this), a.a());
+        this.l.c(new allu(this), a.a());
     }
 
     public final boolean q() {
-        return ajle.a(getIntent(), "showPhotosOptIn");
+        return allw.a(getIntent(), "showPhotosOptIn");
     }
 }

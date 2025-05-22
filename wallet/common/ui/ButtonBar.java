@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import com.google.android.gms.R;
-import defpackage.efwo;
-import defpackage.rpq;
+import defpackage.eijr;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ButtonBar extends LinearLayout {
     public Button a;
@@ -36,9 +36,9 @@ public class ButtonBar extends LinearLayout {
         this.d = findViewById(R.id.button_progress_spinner);
         Button button = this.a;
         if (button != null) {
-            efwo.I(context, button);
+            eijr.I(context, button);
         }
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.r);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.q);
         if (obtainStyledAttributes.hasValue(0)) {
             b(obtainStyledAttributes.getString(0));
         } else {

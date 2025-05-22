@@ -2,53 +2,53 @@ package com.google.android.gms.potokens.service;
 
 import android.content.Context;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.cwpi;
-import defpackage.cwqn;
-import defpackage.cwqo;
-import defpackage.cwqv;
-import defpackage.cwrd;
-import defpackage.cwry;
-import defpackage.dnlj;
-import defpackage.ehbu;
-import defpackage.ehdf;
-import defpackage.eijm;
-import defpackage.fecj;
-import defpackage.frow;
-import defpackage.frpd;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.cyzf;
+import defpackage.czak;
+import defpackage.czal;
+import defpackage.czas;
+import defpackage.czba;
+import defpackage.czbv;
+import defpackage.dpvs;
+import defpackage.ejoz;
+import defpackage.ejqk;
+import defpackage.ekwr;
+import defpackage.fgrc;
+import defpackage.fujb;
+import defpackage.fuji;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class IntegrityTokenRefreshTaskService extends GmsTaskBoundService {
-    private cwqn a;
+    private czak a;
     private final Context b;
-    private final cwry c;
+    private final czbv c;
 
     static {
-        asot.b("IntegrityTokenRefreshTaskService", asej.PO_TOKENS);
+        ausn.b("IntegrityTokenRefreshTaskService", auid.PO_TOKENS);
     }
 
     public IntegrityTokenRefreshTaskService() {
-        this(new cwqo());
+        this(new czal());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        fecj v = ehdf.a.v();
-        eijm d = cwpi.d(this.c);
-        if (!frpd.c() || !frow.e()) {
-            ehbu ehbuVar = ehbu.BACKGROUND_REFRESH_DISABLED;
+    public final int a(cauf caufVar) {
+        fgrc v = ejqk.a.v();
+        ekwr d = cyzf.d(this.c);
+        if (!fuji.c() || !fujb.e()) {
+            ejoz ejozVar = ejoz.BACKGROUND_REFRESH_DISABLED;
             if (!v.b.L()) {
                 v.U();
             }
-            ehdf ehdfVar = (ehdf) v.b;
-            ehdfVar.c = ehbuVar.f;
-            ehdfVar.b |= 1;
-            cwpi.v(v, d);
+            ejqk ejqkVar = (ejqk) v.b;
+            ejqkVar.c = ejozVar.f;
+            ejqkVar.b |= 1;
+            cyzf.v(v, d);
             return 2;
         }
         if (this.a == null) {
@@ -57,67 +57,67 @@ public final class IntegrityTokenRefreshTaskService extends GmsTaskBoundService 
                 if (context == null) {
                     context = this;
                 }
-                this.a = cwqn.a(context, 1);
+                this.a = czak.a(context, 1);
             } catch (GeneralSecurityException unused) {
-                ehbu ehbuVar2 = ehbu.BACKGROUND_REFRESH_RESCHEDULED_AFTER_TOKEN_MANAGER_INIT_FAILURE;
+                ejoz ejozVar2 = ejoz.BACKGROUND_REFRESH_RESCHEDULED_AFTER_TOKEN_MANAGER_INIT_FAILURE;
                 if (!v.b.L()) {
                     v.U();
                 }
-                ehdf ehdfVar2 = (ehdf) v.b;
-                ehdfVar2.c = ehbuVar2.f;
-                ehdfVar2.b |= 1;
-                cwpi.v(v, d);
+                ejqk ejqkVar2 = (ejqk) v.b;
+                ejqkVar2.c = ejozVar2.f;
+                ejqkVar2.b |= 1;
+                cyzf.v(v, d);
                 return 1;
             }
         }
         try {
             this.a.b(1, v);
-            ehbu ehbuVar3 = ehbu.BACKGROUND_REFRESH_SUCCESS;
+            ejoz ejozVar3 = ejoz.BACKGROUND_REFRESH_SUCCESS;
             if (!v.b.L()) {
                 v.U();
             }
-            ehdf ehdfVar3 = (ehdf) v.b;
-            ehdfVar3.c = ehbuVar3.f;
-            ehdfVar3.b |= 1;
-            cwpi.v(v, d);
+            ejqk ejqkVar3 = (ejqk) v.b;
+            ejqkVar3.c = ejozVar3.f;
+            ejqkVar3.b |= 1;
+            cyzf.v(v, d);
             return 0;
-        } catch (cwqv | cwrd | IOException | GeneralSecurityException unused2) {
-            ehbu ehbuVar4 = ehbu.BACKGROUND_REFRESH_RESCHEDULED_AFTER_FAILURE;
+        } catch (czas | czba | IOException | GeneralSecurityException unused2) {
+            ejoz ejozVar4 = ejoz.BACKGROUND_REFRESH_RESCHEDULED_AFTER_FAILURE;
             if (!v.b.L()) {
                 v.U();
             }
-            ehdf ehdfVar4 = (ehdf) v.b;
-            ehdfVar4.c = ehbuVar4.f;
-            ehdfVar4.b |= 1;
-            cwpi.v(v, d);
+            ejqk ejqkVar4 = (ejqk) v.b;
+            ejqkVar4.c = ejozVar4.f;
+            ejqkVar4.b |= 1;
+            cyzf.v(v, d);
             return 1;
         }
     }
 
-    public IntegrityTokenRefreshTaskService(cwqn cwqnVar) {
-        this.a = cwqnVar;
+    public IntegrityTokenRefreshTaskService(czak czakVar) {
+        this.a = czakVar;
         this.b = null;
-        this.c = new cwry(new dnlj());
+        this.c = new czbv(new dpvs());
     }
 
-    public IntegrityTokenRefreshTaskService(cwqn cwqnVar, cwry cwryVar) {
-        this.a = cwqnVar;
+    public IntegrityTokenRefreshTaskService(czak czakVar, czbv czbvVar) {
+        this.a = czakVar;
         this.b = null;
-        this.c = cwryVar;
+        this.c = czbvVar;
     }
 
-    public IntegrityTokenRefreshTaskService(cwqo cwqoVar) {
+    public IntegrityTokenRefreshTaskService(czal czalVar) {
         this.b = null;
-        this.c = new cwry(new dnlj());
+        this.c = new czbv(new dpvs());
     }
 
-    public IntegrityTokenRefreshTaskService(cwqo cwqoVar, Context context) {
+    public IntegrityTokenRefreshTaskService(czal czalVar, Context context) {
         this.b = context;
-        this.c = new cwry(new dnlj());
+        this.c = new czbv(new dpvs());
     }
 
-    public IntegrityTokenRefreshTaskService(cwqo cwqoVar, cwry cwryVar) {
+    public IntegrityTokenRefreshTaskService(czal czalVar, czbv czbvVar) {
         this.b = null;
-        this.c = cwryVar;
+        this.c = czbvVar;
     }
 }

@@ -5,14 +5,14 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.ashs;
-import defpackage.cwjs;
-import defpackage.cwjt;
-import defpackage.cwju;
-import defpackage.cwjv;
-import defpackage.cwjw;
-import defpackage.cwjx;
+import defpackage.atzr;
+import defpackage.aulm;
+import defpackage.cytp;
+import defpackage.cytq;
+import defpackage.cytr;
+import defpackage.cyts;
+import defpackage.cytt;
+import defpackage.cytu;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -20,26 +20,26 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
-    public static final Parcelable.Creator CREATOR = new cwjs();
+    public static final Parcelable.Creator CREATOR = new cytp();
     private static final HashMap d;
     final Set a;
     List b;
     List c;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class Entries extends FastSafeParcelableJsonResponse {
-        public static final Parcelable.Creator CREATOR = new cwjt();
+        public static final Parcelable.Creator CREATOR = new cytq();
         private static final HashMap d;
         final Set a;
         String b;
         Scope c;
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public final class Scope extends FastSafeParcelableJsonResponse {
-            public static final Parcelable.Creator CREATOR = new cwju();
+            public static final Parcelable.Creator CREATOR = new cytr();
             private static final HashMap f;
             final Set a;
             boolean b;
@@ -47,16 +47,16 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
             Membership d;
             Person e;
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public final class Membership extends FastSafeParcelableJsonResponse {
-                public static final Parcelable.Creator CREATOR = new cwjv();
+                public static final Parcelable.Creator CREATOR = new cyts();
                 private static final HashMap c;
                 final Set a;
                 Circle b;
 
-                /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+                /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
                 public final class Circle extends FastSafeParcelableJsonResponse {
-                    public static final Parcelable.Creator CREATOR = new cwjw();
+                    public static final Parcelable.Creator CREATOR = new cytt();
                     private static final HashMap d;
                     final Set a;
                     String b;
@@ -75,7 +75,7 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                         this.c = str2;
                     }
 
-                    @Override // defpackage.ashs
+                    @Override // defpackage.aulm
                     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
                         int i = fastJsonResponse$Field.g;
                         if (i == 2) {
@@ -87,12 +87,12 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                         throw new IllegalStateException(a.j(i, "Unknown safe parcelable id="));
                     }
 
-                    @Override // defpackage.ashs
+                    @Override // defpackage.aulm
                     public final /* synthetic */ Map b() {
                         return d;
                     }
 
-                    @Override // defpackage.ashs
+                    @Override // defpackage.aulm
                     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
                         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
                     }
@@ -118,7 +118,7 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                         return true;
                     }
 
-                    @Override // defpackage.ashs
+                    @Override // defpackage.aulm
                     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
                         int i = fastJsonResponse$Field.g;
                         if (i == 2) {
@@ -146,14 +146,14 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                     @Override // android.os.Parcelable
                     public final void writeToParcel(Parcel parcel, int i) {
                         Set set = this.a;
-                        int a = arxc.a(parcel);
+                        int a = atzr.a(parcel);
                         if (set.contains(2)) {
-                            arxc.v(parcel, 2, this.b, true);
+                            atzr.v(parcel, 2, this.b, true);
                         }
                         if (set.contains(3)) {
-                            arxc.v(parcel, 3, this.c, true);
+                            atzr.v(parcel, 3, this.c, true);
                         }
-                        arxc.c(parcel, a);
+                        atzr.c(parcel, a);
                     }
 
                     public Circle() {
@@ -172,7 +172,7 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                     this.b = circle;
                 }
 
-                @Override // defpackage.ashs
+                @Override // defpackage.aulm
                 protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
                     int i = fastJsonResponse$Field.g;
                     if (i == 2) {
@@ -181,12 +181,12 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                     throw new IllegalStateException(a.j(i, "Unknown safe parcelable id="));
                 }
 
-                @Override // defpackage.ashs
+                @Override // defpackage.aulm
                 public final /* synthetic */ Map b() {
                     return c;
                 }
 
-                @Override // defpackage.ashs
+                @Override // defpackage.aulm
                 protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
                     return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
                 }
@@ -212,13 +212,13 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                     return true;
                 }
 
-                @Override // defpackage.ashs
-                public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
+                @Override // defpackage.aulm
+                public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
                     int i = fastJsonResponse$Field.g;
                     if (i != 2) {
-                        throw new IllegalArgumentException(a.ag(i, ashsVar, " is not a known custom type.  Found "));
+                        throw new IllegalArgumentException(a.ah(i, aulmVar, " is not a known custom type.  Found "));
                     }
-                    this.b = (Circle) ashsVar;
+                    this.b = (Circle) aulmVar;
                     this.a.add(Integer.valueOf(i));
                 }
 
@@ -236,11 +236,11 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                 @Override // android.os.Parcelable
                 public final void writeToParcel(Parcel parcel, int i) {
                     Set set = this.a;
-                    int a = arxc.a(parcel);
+                    int a = atzr.a(parcel);
                     if (set.contains(2)) {
-                        arxc.t(parcel, 2, this.b, i, true);
+                        atzr.t(parcel, 2, this.b, i, true);
                     }
-                    arxc.c(parcel, a);
+                    atzr.c(parcel, a);
                 }
 
                 public Membership() {
@@ -248,9 +248,9 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                 }
             }
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public final class Person extends FastSafeParcelableJsonResponse {
-                public static final Parcelable.Creator CREATOR = new cwjx();
+                public static final Parcelable.Creator CREATOR = new cytu();
                 private static final HashMap c;
                 final Set a;
                 String b;
@@ -266,7 +266,7 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                     this.b = str;
                 }
 
-                @Override // defpackage.ashs
+                @Override // defpackage.aulm
                 protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
                     int i = fastJsonResponse$Field.g;
                     if (i == 2) {
@@ -275,12 +275,12 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                     throw new IllegalStateException(a.j(i, "Unknown safe parcelable id="));
                 }
 
-                @Override // defpackage.ashs
+                @Override // defpackage.aulm
                 public final /* synthetic */ Map b() {
                     return c;
                 }
 
-                @Override // defpackage.ashs
+                @Override // defpackage.aulm
                 protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
                     return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
                 }
@@ -306,7 +306,7 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                     return true;
                 }
 
-                @Override // defpackage.ashs
+                @Override // defpackage.aulm
                 protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
                     int i = fastJsonResponse$Field.g;
                     if (i != 2) {
@@ -330,11 +330,11 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                 @Override // android.os.Parcelable
                 public final void writeToParcel(Parcel parcel, int i) {
                     Set set = this.a;
-                    int a = arxc.a(parcel);
+                    int a = atzr.a(parcel);
                     if (set.contains(2)) {
-                        arxc.v(parcel, 2, this.b, true);
+                        atzr.v(parcel, 2, this.b, true);
                     }
-                    arxc.c(parcel, a);
+                    atzr.c(parcel, a);
                 }
 
                 public Person() {
@@ -359,7 +359,7 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                 this.e = person;
             }
 
-            @Override // defpackage.ashs
+            @Override // defpackage.aulm
             protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
                 int i = fastJsonResponse$Field.g;
                 if (i == 2) {
@@ -377,12 +377,12 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                 throw new IllegalStateException(a.j(i, "Unknown safe parcelable id="));
             }
 
-            @Override // defpackage.ashs
+            @Override // defpackage.aulm
             public final /* synthetic */ Map b() {
                 return f;
             }
 
-            @Override // defpackage.ashs
+            @Override // defpackage.aulm
             protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
                 return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
             }
@@ -408,8 +408,22 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                 return true;
             }
 
-            @Override // defpackage.ashs
-            protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+            @Override // defpackage.aulm
+            public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
+                int i = fastJsonResponse$Field.g;
+                if (i == 4) {
+                    this.d = (Membership) aulmVar;
+                } else {
+                    if (i != 5) {
+                        throw new IllegalArgumentException(a.ah(i, aulmVar, " is not a known custom type.  Found "));
+                    }
+                    this.e = (Person) aulmVar;
+                }
+                this.a.add(Integer.valueOf(i));
+            }
+
+            @Override // defpackage.aulm
+            protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
                 int i = fastJsonResponse$Field.g;
                 if (i == 2) {
                     this.b = z;
@@ -418,20 +432,6 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
                         throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be a boolean."));
                     }
                     this.c = z;
-                }
-                this.a.add(Integer.valueOf(i));
-            }
-
-            @Override // defpackage.ashs
-            public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
-                int i = fastJsonResponse$Field.g;
-                if (i == 4) {
-                    this.d = (Membership) ashsVar;
-                } else {
-                    if (i != 5) {
-                        throw new IllegalArgumentException(a.ag(i, ashsVar, " is not a known custom type.  Found "));
-                    }
-                    this.e = (Person) ashsVar;
                 }
                 this.a.add(Integer.valueOf(i));
             }
@@ -450,20 +450,20 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel parcel, int i) {
                 Set set = this.a;
-                int a = arxc.a(parcel);
+                int a = atzr.a(parcel);
                 if (set.contains(2)) {
-                    arxc.e(parcel, 2, this.b);
+                    atzr.e(parcel, 2, this.b);
                 }
                 if (set.contains(3)) {
-                    arxc.e(parcel, 3, this.c);
+                    atzr.e(parcel, 3, this.c);
                 }
                 if (set.contains(4)) {
-                    arxc.t(parcel, 4, this.d, i, true);
+                    atzr.t(parcel, 4, this.d, i, true);
                 }
                 if (set.contains(5)) {
-                    arxc.t(parcel, 5, this.e, i, true);
+                    atzr.t(parcel, 5, this.e, i, true);
                 }
-                arxc.c(parcel, a);
+                atzr.c(parcel, a);
             }
 
             public Scope() {
@@ -484,7 +484,7 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
             this.c = scope;
         }
 
-        @Override // defpackage.ashs
+        @Override // defpackage.aulm
         protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
             int i = fastJsonResponse$Field.g;
             if (i == 2) {
@@ -496,12 +496,12 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
             throw new IllegalStateException(a.j(i, "Unknown safe parcelable id="));
         }
 
-        @Override // defpackage.ashs
+        @Override // defpackage.aulm
         public final /* synthetic */ Map b() {
             return d;
         }
 
-        @Override // defpackage.ashs
+        @Override // defpackage.aulm
         protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
             return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
         }
@@ -527,7 +527,7 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
             return true;
         }
 
-        @Override // defpackage.ashs
+        @Override // defpackage.aulm
         protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
             int i = fastJsonResponse$Field.g;
             if (i != 2) {
@@ -537,13 +537,13 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
             this.a.add(Integer.valueOf(i));
         }
 
-        @Override // defpackage.ashs
-        public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
+        @Override // defpackage.aulm
+        public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
             int i = fastJsonResponse$Field.g;
             if (i != 3) {
-                throw new IllegalArgumentException(a.ag(i, ashsVar, " is not a known custom type.  Found "));
+                throw new IllegalArgumentException(a.ah(i, aulmVar, " is not a known custom type.  Found "));
             }
-            this.c = (Scope) ashsVar;
+            this.c = (Scope) aulmVar;
             this.a.add(Integer.valueOf(i));
         }
 
@@ -561,14 +561,14 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             Set set = this.a;
-            int a = arxc.a(parcel);
+            int a = atzr.a(parcel);
             if (set.contains(2)) {
-                arxc.v(parcel, 2, this.b, true);
+                atzr.v(parcel, 2, this.b, true);
             }
             if (set.contains(3)) {
-                arxc.t(parcel, 3, this.c, i, true);
+                atzr.t(parcel, 3, this.c, i, true);
             }
-            arxc.c(parcel, a);
+            atzr.c(parcel, a);
         }
 
         public Entries() {
@@ -589,7 +589,7 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
         this.c = list2;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
@@ -601,12 +601,12 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
         throw new IllegalStateException(a.j(i, "Unknown safe parcelable id="));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return d;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
@@ -632,18 +632,18 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
         return true;
     }
 
-    @Override // defpackage.ashs
-    public final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+    @Override // defpackage.aulm
+    public final void gK(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         int i = fastJsonResponse$Field.g;
         if (i != 2) {
-            throw new IllegalArgumentException(a.F(arrayList != null ? arrayList.getClass().getCanonicalName() : "null", i, "Field with id=", " is not a known array of custom type.  Found ", "."));
+            throw new IllegalArgumentException(a.I(arrayList != null ? arrayList.getClass().getCanonicalName() : "null", i, "Field with id=", " is not a known array of custom type.  Found ", "."));
         }
         this.b = arrayList;
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gy(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+    @Override // defpackage.aulm
+    protected final void gN(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         int i = fastJsonResponse$Field.g;
         if (i != 3) {
             throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be an array of String."));
@@ -666,14 +666,14 @@ public final class Mergedpeoplefieldacl extends FastSafeParcelableJsonResponse {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.y(parcel, 2, this.b, true);
+            atzr.y(parcel, 2, this.b, true);
         }
         if (set.contains(3)) {
-            arxc.x(parcel, 3, this.c, true);
+            atzr.x(parcel, 3, this.c, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public Mergedpeoplefieldacl() {

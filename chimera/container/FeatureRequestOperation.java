@@ -2,7 +2,7 @@ package com.google.android.gms.chimera.container;
 
 import com.google.android.chimera.IntentOperation;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class FeatureRequestOperation extends IntentOperation {
     private static final String a = "FeatureRequestOperation";
@@ -20,7 +20,7 @@ public class FeatureRequestOperation extends IntentOperation {
             java.lang.String r0 = "com.google.android.chimera.container.REQUEST_FEATURES"
             r1 = r18
             android.os.Bundle r0 = r1.getBundleExtra(r0)
-            android.content.UriMatcher r1 = defpackage.prc.a
+            android.content.UriMatcher r1 = defpackage.rkg.a
             int r1 = android.os.Binder.getCallingUid()
             int r2 = android.os.Process.myUid()
             java.lang.String r3 = "listener"
@@ -53,7 +53,7 @@ public class FeatureRequestOperation extends IntentOperation {
             boolean r11 = r0.getBoolean(r1)
             java.lang.String r1 = "urgent"
             boolean r12 = r0.getBoolean(r1)
-            puv r13 = defpackage.qad.b(r0, r3)
+            rnz r13 = defpackage.rth.b(r0, r3)
             java.lang.String r1 = "sessionId"
             java.lang.String r14 = r0.getString(r1)
             java.lang.String r1 = "requesterAppPackage"
@@ -62,16 +62,16 @@ public class FeatureRequestOperation extends IntentOperation {
             java.lang.String r2 = "requested"
             byte[] r2 = r0.getByteArray(r2)
             if (r2 == 0) goto L7b
-            febw r1 = defpackage.febw.a     // Catch: defpackage.fedk -> L75
-            feep r1 = defpackage.feep.a     // Catch: defpackage.fedk -> L75
-            febw r1 = defpackage.febw.a     // Catch: defpackage.fedk -> L75
-            pup r7 = defpackage.pup.a     // Catch: defpackage.fedk -> L75
-            int r9 = r2.length     // Catch: defpackage.fedk -> L75
+            fgqp r1 = defpackage.fgqp.a     // Catch: defpackage.fgsd -> L75
+            fgti r1 = defpackage.fgti.a     // Catch: defpackage.fgsd -> L75
+            fgqp r1 = defpackage.fgqp.a     // Catch: defpackage.fgsd -> L75
+            rnt r7 = defpackage.rnt.a     // Catch: defpackage.fgsd -> L75
+            int r9 = r2.length     // Catch: defpackage.fgsd -> L75
             r15 = 0
-            fecp r1 = defpackage.fecp.y(r7, r2, r15, r9, r1)     // Catch: defpackage.fedk -> L75
-            defpackage.fecp.M(r1)     // Catch: defpackage.fedk -> L75
-            pup r1 = (defpackage.pup) r1     // Catch: defpackage.fedk -> L75
-            fedh r1 = r1.b     // Catch: defpackage.fedk -> L75
+            fgri r1 = defpackage.fgri.y(r7, r2, r15, r9, r1)     // Catch: defpackage.fgsd -> L75
+            defpackage.fgri.M(r1)     // Catch: defpackage.fgsd -> L75
+            rnt r1 = (defpackage.rnt) r1     // Catch: defpackage.fgsd -> L75
+            fgsa r1 = r1.b     // Catch: defpackage.fgsd -> L75
             goto L7b
         L75:
             java.lang.String r1 = "Malformed requested features"
@@ -79,7 +79,7 @@ public class FeatureRequestOperation extends IntentOperation {
             goto L20
         L7b:
             r9 = r1
-            ppt r7 = defpackage.ppt.d()
+            rix r7 = defpackage.rix.d()
             r15 = 0
             boolean r1 = r7.k(r8, r9, r10, r11, r12, r13, r14, r15, r16)
             android.os.Bundle r2 = new android.os.Bundle
@@ -103,12 +103,12 @@ public class FeatureRequestOperation extends IntentOperation {
             if (r0 != 0) goto Laf
             goto Lb3
         Laf:
-            puv r6 = defpackage.qad.b(r0, r3)
+            rnz r6 = defpackage.rth.b(r0, r3)
         Lb3:
             if (r6 == 0) goto L96
             r0 = 1
             r1 = r17
-            defpackage.qad.e(r6, r0, r1)
+            defpackage.rth.e(r6, r0, r1)
         Lbb:
             return
         */

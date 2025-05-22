@@ -4,24 +4,24 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.family.v2.model.PageData;
 import com.google.android.gms.family.v2.model.PageDataMap;
-import defpackage.azrs;
-import defpackage.epte;
+import defpackage.bbvo;
+import defpackage.eshd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class DashboardDataModel implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new azrs();
+    public static final Parcelable.Creator CREATOR = new bbvo();
     public final PageDataMap a;
     public final boolean b;
-    public final epte c;
+    public final eshd c;
     public final ViewerDataModel d;
     public final PageData e;
     public final boolean f;
 
-    public DashboardDataModel(boolean z, PageDataMap pageDataMap, ViewerDataModel viewerDataModel, epte epteVar, PageData pageData) {
+    public DashboardDataModel(boolean z, PageDataMap pageDataMap, ViewerDataModel viewerDataModel, eshd eshdVar, PageData pageData) {
         this.a = pageDataMap;
         this.b = z;
-        this.c = epteVar;
+        this.c = eshdVar;
         this.d = viewerDataModel;
         this.e = pageData;
         this.f = false;
@@ -48,8 +48,8 @@ public final class DashboardDataModel implements Parcelable {
 
     public DashboardDataModel(Parcel parcel) {
         this.b = parcel.readInt() == 1;
-        epte b = epte.b(parcel.readInt());
-        this.c = b == null ? epte.UNKNOWN_FAMILY_ROLE : b;
+        eshd b = eshd.b(parcel.readInt());
+        this.c = b == null ? eshd.UNKNOWN_FAMILY_ROLE : b;
         this.a = (PageDataMap) parcel.readParcelable(PageDataMap.class.getClassLoader());
         this.d = (ViewerDataModel) parcel.readParcelable(ViewerDataModel.class.getClassLoader());
         if (parcel.readInt() == 1) {

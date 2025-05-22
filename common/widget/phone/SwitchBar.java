@@ -11,13 +11,13 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.gms.R;
-import defpackage.asrs;
-import defpackage.assd;
+import defpackage.auvm;
+import defpackage.auvx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SwitchBar extends LinearLayout implements Checkable, View.OnClickListener {
-    public assd a;
+    public auvx a;
     public TextView b;
     public CharSequence c;
     private CompoundButton d;
@@ -37,7 +37,7 @@ public class SwitchBar extends LinearLayout implements Checkable, View.OnClickLi
 
     private final void b(AttributeSet attributeSet, int i, int i2) {
         Context context = getContext();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, asrs.b, i, i2);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, auvm.b, i, i2);
         obtainStyledAttributes.getColor(1, -16777216);
         this.h = obtainStyledAttributes.getText(7);
         this.i = obtainStyledAttributes.getText(6);
@@ -162,9 +162,9 @@ public class SwitchBar extends LinearLayout implements Checkable, View.OnClickLi
         }
         this.d.setChecked(z);
         d(z);
-        assd assdVar = this.a;
-        if (assdVar != null) {
-            assdVar.a(z);
+        auvx auvxVar = this.a;
+        if (auvxVar != null) {
+            auvxVar.a(z);
         }
         this.l = true != z ? 2 : 1;
     }

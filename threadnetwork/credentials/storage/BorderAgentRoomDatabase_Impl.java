@@ -1,11 +1,11 @@
 package com.google.android.gms.threadnetwork.credentials.storage;
 
-import defpackage.dfna;
-import defpackage.dfnr;
-import defpackage.dfns;
-import defpackage.dfnt;
-import defpackage.kol;
-import defpackage.kpp;
+import defpackage.dhye;
+import defpackage.dhyv;
+import defpackage.dhyw;
+import defpackage.dhyx;
+import defpackage.mgw;
+import defpackage.mie;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -14,58 +14,58 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class BorderAgentRoomDatabase_Impl extends BorderAgentRoomDatabase {
-    private volatile dfna l;
+    private volatile dhye m;
 
-    @Override // defpackage.kpm
-    protected final kol a() {
-        return new kol(this, new HashMap(0), new HashMap(0), "border_agent_table");
+    @Override // defpackage.mhx
+    protected final mgw a() {
+        return new mgw(this, new HashMap(0), new HashMap(0), "border_agent_table");
     }
 
-    @Override // defpackage.kpm
-    protected final /* synthetic */ kpp c() {
-        return new dfnt(this);
+    @Override // defpackage.mhx
+    protected final /* synthetic */ mie c() {
+        return new dhyx(this);
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     protected final Map e() {
         HashMap hashMap = new HashMap();
-        hashMap.put(dfna.class, Collections.EMPTY_LIST);
+        hashMap.put(dhye.class, Collections.EMPTY_LIST);
         return hashMap;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final Set f() {
         return new HashSet();
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final void k() {
         super.t("border_agent_table");
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final List s() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(new dfnr());
-        arrayList.add(new dfns());
+        arrayList.add(new dhyv());
+        arrayList.add(new dhyw());
         return arrayList;
     }
 
     @Override // com.google.android.gms.threadnetwork.credentials.storage.BorderAgentRoomDatabase
-    public final dfna v() {
-        dfna dfnaVar;
-        if (this.l != null) {
-            return this.l;
+    public final dhye v() {
+        dhye dhyeVar;
+        if (this.m != null) {
+            return this.m;
         }
         synchronized (this) {
-            if (this.l == null) {
-                this.l = new dfna(this);
+            if (this.m == null) {
+                this.m = new dhye(this);
             }
-            dfnaVar = this.l;
+            dhyeVar = this.m;
         }
-        return dfnaVar;
+        return dhyeVar;
     }
 }

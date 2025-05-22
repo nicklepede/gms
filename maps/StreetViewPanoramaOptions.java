@@ -7,16 +7,16 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.StreetViewPanoramaCamera;
 import com.google.android.gms.maps.model.StreetViewSource;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.ccab;
-import defpackage.ccam;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.ceiv;
+import defpackage.cejg;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class StreetViewPanoramaOptions extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new ccab();
+    public static final Parcelable.Creator CREATOR = new ceiv();
     public StreetViewPanoramaCamera a;
     public String b;
     public LatLng c;
@@ -38,33 +38,33 @@ public final class StreetViewPanoramaOptions extends AbstractSafeParcelable impl
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("PanoramaId", this.b, arrayList);
-        arwa.b("Position", this.c, arrayList);
-        arwa.b("Radius", this.d, arrayList);
-        arwa.b("Source", this.e, arrayList);
-        arwa.b("StreetViewPanoramaCamera", this.a, arrayList);
-        arwa.b("UserNavigationEnabled", this.f, arrayList);
-        arwa.b("ZoomGesturesEnabled", this.g, arrayList);
-        arwa.b("PanningGesturesEnabled", this.h, arrayList);
-        arwa.b("StreetNamesEnabled", this.i, arrayList);
-        arwa.b("UseViewLifecycleInFragment", this.j, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("PanoramaId", this.b, arrayList);
+        atyp.b("Position", this.c, arrayList);
+        atyp.b("Radius", this.d, arrayList);
+        atyp.b("Source", this.e, arrayList);
+        atyp.b("StreetViewPanoramaCamera", this.a, arrayList);
+        atyp.b("UserNavigationEnabled", this.f, arrayList);
+        atyp.b("ZoomGesturesEnabled", this.g, arrayList);
+        atyp.b("PanningGesturesEnabled", this.h, arrayList);
+        atyp.b("StreetNamesEnabled", this.i, arrayList);
+        atyp.b("UseViewLifecycleInFragment", this.j, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.F(parcel, 5, this.d);
-        arxc.h(parcel, 6, ccam.a(this.f));
-        arxc.h(parcel, 7, ccam.a(this.g));
-        arxc.h(parcel, 8, ccam.a(this.h));
-        arxc.h(parcel, 9, ccam.a(this.i));
-        arxc.h(parcel, 10, ccam.a(this.j));
-        arxc.t(parcel, 11, this.e, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.F(parcel, 5, this.d);
+        atzr.h(parcel, 6, cejg.a(this.f));
+        atzr.h(parcel, 7, cejg.a(this.g));
+        atzr.h(parcel, 8, cejg.a(this.h));
+        atzr.h(parcel, 9, cejg.a(this.i));
+        atzr.h(parcel, 10, cejg.a(this.j));
+        atzr.t(parcel, 11, this.e, i, false);
+        atzr.c(parcel, a);
     }
 
     public StreetViewPanoramaOptions(StreetViewPanoramaCamera streetViewPanoramaCamera, String str, LatLng latLng, Integer num, byte b, byte b2, byte b3, byte b4, byte b5, StreetViewSource streetViewSource) {
@@ -77,11 +77,11 @@ public final class StreetViewPanoramaOptions extends AbstractSafeParcelable impl
         this.c = latLng;
         this.d = num;
         this.b = str;
-        this.f = ccam.b(b);
-        this.g = ccam.b(b2);
-        this.h = ccam.b(b3);
-        this.i = ccam.b(b4);
-        this.j = ccam.b(b5);
+        this.f = cejg.b(b);
+        this.g = cejg.b(b2);
+        this.h = cejg.b(b3);
+        this.i = cejg.b(b4);
+        this.j = cejg.b(b5);
         this.e = streetViewSource;
     }
 }

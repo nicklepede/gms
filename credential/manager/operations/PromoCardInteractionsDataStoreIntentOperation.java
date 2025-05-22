@@ -2,32 +2,32 @@ package com.google.android.gms.credential.manager.operations;
 
 import android.accounts.Account;
 import android.content.Intent;
-import defpackage.avnu;
-import defpackage.awes;
-import defpackage.fvbo;
-import defpackage.vks;
+import defpackage.axru;
+import defpackage.ayis;
+import defpackage.fxxm;
+import defpackage.xgt;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public final class PromoCardInteractionsDataStoreIntentOperation extends avnu {
-    public awes a;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public final class PromoCardInteractionsDataStoreIntentOperation extends axru {
+    public ayis a;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
         if (intent.hasCategory("com.google.android.gms.auth.category.ACCOUNT_REMOVED")) {
-            List<Account> c = vks.c(intent);
-            fvbo.e(c, "getRemovedWithRenamedAccounts(...)");
+            List<Account> c = xgt.c(intent);
+            fxxm.e(c, "getRemovedWithRenamedAccounts(...)");
             for (Account account : c) {
-                awes awesVar = this.a;
-                if (awesVar == null) {
-                    fvbo.j("promoCardInteractionsDataStoreFileCreator");
-                    awesVar = null;
+                ayis ayisVar = this.a;
+                if (ayisVar == null) {
+                    fxxm.j("promoCardInteractionsDataStoreFileCreator");
+                    ayisVar = null;
                 }
                 String str = account.name;
-                fvbo.e(str, "name");
-                awesVar.a(str).delete();
+                fxxm.e(str, "name");
+                ayisVar.a(str).delete();
             }
         }
     }

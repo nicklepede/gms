@@ -7,9 +7,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 import androidx.preference.PreferenceCategory;
-import defpackage.kmp;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 class SettingsCustomPreferenceCategory extends PreferenceCategory {
     public SettingsCustomPreferenceCategory(Context context) {
@@ -17,9 +17,9 @@ class SettingsCustomPreferenceCategory extends PreferenceCategory {
     }
 
     @Override // androidx.preference.PreferenceCategory, androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        TextView textView = (TextView) kmpVar.D(R.id.title);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        TextView textView = (TextView) mfaVar.D(R.id.title);
         TypedArray obtainStyledAttributes = this.j.obtainStyledAttributes(new int[]{R.attr.textColorPrimary});
         try {
             int color = obtainStyledAttributes.getColor(0, 0);

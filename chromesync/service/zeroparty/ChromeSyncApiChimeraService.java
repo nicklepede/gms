@@ -2,37 +2,37 @@ package com.google.android.gms.chromesync.service.zeroparty;
 
 import com.google.android.gms.common.apiservice.LifecycleSynchronizer;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.apds;
-import defpackage.aphi;
-import defpackage.aphl;
-import defpackage.apho;
-import defpackage.aphr;
-import defpackage.aphu;
-import defpackage.aphx;
-import defpackage.apib;
-import defpackage.apif;
-import defpackage.apii;
-import defpackage.apil;
-import defpackage.apio;
-import defpackage.apis;
-import defpackage.apiv;
-import defpackage.apnp;
-import defpackage.apnq;
-import defpackage.apnr;
-import defpackage.apsj;
-import defpackage.bxgj;
-import defpackage.eiid;
-import defpackage.ensv;
-import defpackage.fixf;
+import defpackage.argj;
+import defpackage.arjz;
+import defpackage.arkc;
+import defpackage.arkf;
+import defpackage.arki;
+import defpackage.arkl;
+import defpackage.arko;
+import defpackage.arks;
+import defpackage.arkw;
+import defpackage.arkz;
+import defpackage.arlc;
+import defpackage.arlf;
+import defpackage.arlj;
+import defpackage.arlm;
+import defpackage.arqg;
+import defpackage.arqh;
+import defpackage.arqi;
+import defpackage.arva;
+import defpackage.bzoz;
+import defpackage.ekvi;
+import defpackage.eqgo;
+import defpackage.flnc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class ChromeSyncApiChimeraService extends apnr {
-    public apnq a;
+public final class ChromeSyncApiChimeraService extends arqi {
+    public arqh a;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v8, types: [eiuu] */
+    /* JADX WARN: Type inference failed for: r0v8, types: [elhz] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -40,16 +40,16 @@ public final class ChromeSyncApiChimeraService extends apnr {
     public ChromeSyncApiChimeraService() {
         /*
             r7 = this;
-            ejck r3 = defpackage.ejck.a
-            fmgi r0 = defpackage.fmgi.a
-            fmgj r0 = r0.a()
-            boolean r0 = r0.d()
+            elpp r3 = defpackage.elpp.a
+            foxu r0 = defpackage.foxu.a
+            foxv r0 = r0.lK()
+            boolean r0 = r0.c()
             if (r0 == 0) goto L20
-            fmge r0 = defpackage.fmge.a
-            fmgf r0 = r0.a()
-            femw r0 = r0.a()
-            fedh r0 = r0.b
-            eiuu r0 = defpackage.eiuu.G(r0)
+            foxq r0 = defpackage.foxq.a
+            foxr r0 = r0.lK()
+            fhbp r0 = r0.a()
+            fgsa r0 = r0.b
+            elhz r0 = defpackage.elhz.G(r0)
             r6 = r0
             goto L21
         L20:
@@ -66,13 +66,13 @@ public final class ChromeSyncApiChimeraService extends apnr {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.chromesync.service.zeroparty.ChromeSyncApiChimeraService.<init>():void");
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        apnq apnqVar = this.a;
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        arqh arqhVar = this.a;
         LifecycleSynchronizer lifecycleSynchronizer = this.e;
-        ensv ensvVar = this.f;
-        eiid i = eiid.i(getServiceRequest.j);
-        apnp apnpVar = apnqVar.a;
-        bxgjVar.c(new apsj(((apds) apnpVar.a).a(), (aphr) ((fixf) apnpVar.b).a, (apiv) ((fixf) apnpVar.c).a, (apio) ((fixf) apnpVar.d).a, (apis) ((fixf) apnpVar.e).a, (apif) ((fixf) apnpVar.f).a, (apil) ((fixf) apnpVar.g).a, (aphl) ((fixf) apnpVar.h).a, (aphi) ((fixf) apnpVar.i).a, (apii) ((fixf) apnpVar.j).a, (aphx) ((fixf) apnpVar.k).a, (apib) ((fixf) apnpVar.l).a, (aphu) ((fixf) apnpVar.m).a, (apho) ((fixf) apnpVar.n).a, lifecycleSynchronizer, ensvVar, i, getServiceRequest.f, getServiceRequest.p));
+        eqgo eqgoVar = this.f;
+        ekvi i = ekvi.i(getServiceRequest.j);
+        arqg arqgVar = arqhVar.a;
+        bzozVar.c(new arva(((argj) arqgVar.a).a(), (arki) ((flnc) arqgVar.b).a, (arlm) ((flnc) arqgVar.c).a, (arlf) ((flnc) arqgVar.d).a, (arlj) ((flnc) arqgVar.e).a, (arkw) ((flnc) arqgVar.f).a, (arlc) ((flnc) arqgVar.g).a, (arkc) ((flnc) arqgVar.h).a, (arjz) ((flnc) arqgVar.i).a, (arkz) ((flnc) arqgVar.j).a, (arko) ((flnc) arqgVar.k).a, (arks) ((flnc) arqgVar.l).a, (arkl) ((flnc) arqgVar.m).a, (arkf) ((flnc) arqgVar.n).a, lifecycleSynchronizer, eqgoVar, i, getServiceRequest.f, getServiceRequest.p));
     }
 }

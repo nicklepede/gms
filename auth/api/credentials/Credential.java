@@ -6,21 +6,21 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.eiif;
-import defpackage.vqj;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.ekvk;
+import defpackage.xmk;
 import j$.util.DesugarCollections;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public class Credential extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new vqj();
+    public static final Parcelable.Creator CREATOR = new xmk();
     public final String a;
     public final String b;
     public final Uri c;
@@ -32,9 +32,9 @@ public class Credential extends AbstractSafeParcelable implements ReflectedParce
 
     public Credential(String str, String str2, Uri uri, List list, String str3, String str4, String str5, String str6) {
         Boolean bool;
-        arwm.t(str, "credential identifier cannot be null");
+        atzb.t(str, "credential identifier cannot be null");
         String trim = str.trim();
-        arwm.r(trim, "credential identifier cannot be empty");
+        atzb.r(trim, "credential identifier cannot be empty");
         if (str3 != null && TextUtils.isEmpty(str3)) {
             throw new IllegalArgumentException("Password must not be empty if set");
         }
@@ -70,14 +70,14 @@ public class Credential extends AbstractSafeParcelable implements ReflectedParce
     }
 
     public final int a() {
-        int i = true != eiif.c(this.b) ? 2 : 1;
+        int i = true != ekvk.c(this.b) ? 2 : 1;
         if (this.c != null) {
             i++;
         }
-        if (!eiif.c(this.g)) {
+        if (!ekvk.c(this.g)) {
             i++;
         }
-        return !eiif.c(this.h) ? i + 1 : i;
+        return !ekvk.c(this.h) ? i + 1 : i;
     }
 
     public final boolean equals(Object obj) {
@@ -88,7 +88,7 @@ public class Credential extends AbstractSafeParcelable implements ReflectedParce
             return false;
         }
         Credential credential = (Credential) obj;
-        return TextUtils.equals(this.a, credential.a) && TextUtils.equals(this.b, credential.b) && arwb.b(this.c, credential.c) && TextUtils.equals(this.e, credential.e) && TextUtils.equals(this.f, credential.f);
+        return TextUtils.equals(this.a, credential.a) && TextUtils.equals(this.b, credential.b) && atyq.b(this.c, credential.c) && TextUtils.equals(this.e, credential.e) && TextUtils.equals(this.f, credential.f);
     }
 
     public final int hashCode() {
@@ -98,15 +98,15 @@ public class Credential extends AbstractSafeParcelable implements ReflectedParce
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.y(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 9, this.g, false);
-        arxc.v(parcel, 10, this.h, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.y(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 9, this.g, false);
+        atzr.v(parcel, 10, this.h, false);
+        atzr.c(parcel, a);
     }
 }

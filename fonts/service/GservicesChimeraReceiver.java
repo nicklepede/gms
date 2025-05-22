@@ -1,17 +1,17 @@
 package com.google.android.gms.fonts.service;
 
-import defpackage.bhdb;
-import defpackage.bhdp;
+import defpackage.bjhr;
+import defpackage.bjif;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class GservicesChimeraReceiver extends bhdb {
-    @Override // defpackage.bhdb
-    protected final void a(bhdp bhdpVar) {
-        synchronized (bhdpVar.b) {
-            bhdpVar.d = null;
-            bhdpVar.e = null;
+public class GservicesChimeraReceiver extends bjhr {
+    @Override // defpackage.bjhr
+    protected final void a(bjif bjifVar) {
+        synchronized (bjifVar.b) {
+            bjifVar.d = null;
+            bjifVar.e = null;
         }
-        bhdpVar.g(this.a);
+        bjifVar.g(this.a);
     }
 }

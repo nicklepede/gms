@@ -6,38 +6,38 @@ import com.google.android.gms.auth.proximity.firstparty.CryptauthDeviceSyncGcmTa
 import com.google.android.gms.auth.proximity.firstparty.FirstPartyDeviceRegistrationChimeraService;
 import com.google.android.gms.auth.proximity.multidevice.BetterTogetherUnifiedSetupIntentOperation;
 import com.google.android.gms.auth.proximity.phonehub.PhoneHubChimeraService;
-import defpackage.acjm;
-import defpackage.acox;
-import defpackage.anya;
-import defpackage.arxo;
-import defpackage.asng;
-import defpackage.flcw;
+import defpackage.aejm;
+import defpackage.aeox;
+import defpackage.apzs;
+import defpackage.auad;
+import defpackage.aura;
+import defpackage.fnuf;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ProximityAuthInitIntentOperation extends anya {
+public class ProximityAuthInitIntentOperation extends apzs {
     private static final String[] a = {"com.google.android.gms.auth.proximity.phonehub.PhoneHubService"};
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        asng.H(this, a[0], true);
-        acjm.b();
-        if (!flcw.J()) {
-            asng.H(this, "com.google.android.gms.auth.proximity.phonehub.PhoneHubNotificationListenerService", flcw.C());
+        aura.H(this, a[0], true);
+        aejm.b();
+        if (!fnuf.J()) {
+            aura.H(this, "com.google.android.gms.auth.proximity.phonehub.PhoneHubNotificationListenerService", fnuf.C());
         }
-        if (flcw.I()) {
-            asng.M("com.google.android.gms.auth.proximity.phonehub.NotificationOptInActivity", 0);
+        if (fnuf.I()) {
+            aura.M("com.google.android.gms.auth.proximity.phonehub.NotificationOptInActivity", 0);
         }
         if ((i & 2) <= 0) {
             Context applicationContext = getApplicationContext();
-            arxo arxoVar = FirstPartyDeviceRegistrationChimeraService.a;
+            auad auadVar = FirstPartyDeviceRegistrationChimeraService.a;
             applicationContext.startService(new Intent().setClassName(applicationContext, "com.google.android.gms.auth.proximity.firstparty.FirstPartyDeviceRegistrationService").putExtra("EXTRA_IS_INIT_INTENT", true));
         }
         CryptauthDeviceSyncGcmTaskService.f(getApplicationContext());
         startService(BetterTogetherFeatureSupportIntentOperation.a(getBaseContext()));
         startService(BetterTogetherUnifiedSetupIntentOperation.a(getBaseContext()));
         startService(PhoneHubChimeraService.a(getBaseContext()));
-        acjm.b();
-        acox.a(getBaseContext()).a();
+        aejm.b();
+        aeox.a(getBaseContext()).a();
     }
 }

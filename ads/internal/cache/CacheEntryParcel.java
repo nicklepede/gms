@@ -4,10 +4,10 @@ import android.os.Parcel;
 import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
+import defpackage.atzr;
 import java.io.InputStream;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CacheEntryParcel extends AbstractSafeParcelable {
     public static final Parcelable.Creator CREATOR = new b();
@@ -60,13 +60,13 @@ public class CacheEntryParcel extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, b(), i, false);
-        arxc.e(parcel, 3, d());
-        arxc.e(parcel, 4, f());
-        arxc.q(parcel, 5, a());
-        arxc.e(parcel, 6, g());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, b(), i, false);
+        atzr.e(parcel, 3, d());
+        atzr.e(parcel, 4, f());
+        atzr.q(parcel, 5, a());
+        atzr.e(parcel, 6, g());
+        atzr.c(parcel, a);
     }
 
     public CacheEntryParcel() {

@@ -7,29 +7,29 @@ import android.content.SharedPreferences;
 import android.util.Log;
 import com.google.android.gms.chimera.container.boundservice.GmsProvidenceMigrationBroadcastReceiver;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.asqg;
-import defpackage.eiuu;
-import defpackage.ejfg;
-import defpackage.fmqj;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.auua;
+import defpackage.elhz;
+import defpackage.elsn;
+import defpackage.fpih;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class PhenotypeCommittedOperation extends anya {
-    static final String a = asqg.f("com.google.android.gms");
+public class PhenotypeCommittedOperation extends apzs {
+    static final String a = auua.f("com.google.android.gms");
     public static final /* synthetic */ int b = 0;
     private static final String c = "PhenotypeCommittedOperation";
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class PhenotypeCommitUpdateReceiver extends TracingBroadcastReceiver {
         public PhenotypeCommitUpdateReceiver() {
             super("container");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             PhenotypeCommittedOperation.e(context);
         }
     }
@@ -44,7 +44,7 @@ public class PhenotypeCommittedOperation extends anya {
     public static void e(android.content.Context r8) {
         /*
             java.lang.String r0 = "com.google.android.gms"
-            java.lang.String r0 = defpackage.asqg.e(r0)
+            java.lang.String r0 = defpackage.auua.e(r0)
             java.lang.String r1 = "direct_boot:"
             boolean r1 = r0.startsWith(r1)
             r2 = 1
@@ -52,7 +52,7 @@ public class PhenotypeCommittedOperation extends anya {
             if (r1 == 0) goto L1e
             r1 = 12
             java.lang.String r0 = r0.substring(r1)
-            boolean r1 = defpackage.dnnr.j()
+            boolean r1 = defpackage.dpya.j()
             if (r1 == 0) goto L1e
             r1 = r2
             goto L1f
@@ -65,7 +65,7 @@ public class PhenotypeCommittedOperation extends anya {
             android.content.SharedPreferences r6 = r8.getSharedPreferences(r0, r5)
             long r6 = f(r6)
             if (r1 == 0) goto L39
-            android.content.Context r1 = defpackage.dnnr.a(r8)
+            android.content.Context r1 = defpackage.dpya.a(r8)
             r1.getSharedPreferences(r0, r5)
         L39:
             int r0 = (r3 > r6 ? 1 : (r3 == r6 ? 0 : -1))
@@ -74,10 +74,10 @@ public class PhenotypeCommittedOperation extends anya {
             int r0 = (r6 > r0 ? 1 : (r6 == r0 ? 0 : -1))
             if (r0 != 0) goto L4f
         L43:
-            defpackage.dvno.c()
-            boolean r8 = defpackage.aoah.l(r8)
+            defpackage.dxyo.c()
+            boolean r8 = defpackage.aqbz.l(r8)
             if (r8 == 0) goto L4f
-            defpackage.aoah.h(r2)
+            defpackage.aqbz.h(r2)
         L4f:
             return
         */
@@ -90,9 +90,10 @@ public class PhenotypeCommittedOperation extends anya {
 
     private final void g() {
         int componentEnabledSetting;
-        boolean i = fmqj.a.a().i();
-        eiuu G = eiuu.G(fmqj.a.a().b().b);
-        ejfg listIterator = GmsProvidenceMigrationBroadcastReceiver.a.entrySet().listIterator();
+        fpih fpihVar = fpih.a;
+        boolean i = fpihVar.lK().i();
+        elhz G = elhz.G(fpihVar.lK().b().b);
+        elsn listIterator = GmsProvidenceMigrationBroadcastReceiver.a.entrySet().listIterator();
         boolean z = false;
         while (listIterator.hasNext()) {
             Map.Entry entry = (Map.Entry) listIterator.next();
@@ -107,7 +108,7 @@ public class PhenotypeCommittedOperation extends anya {
             if (!z3 || componentEnabledSetting != 1) {
                 if (z3 || componentEnabledSetting != 2) {
                     try {
-                        asng.J(this, componentName.getClassName(), true == z3 ? 1 : 2);
+                        aura.J(this, componentName.getClassName(), true == z3 ? 1 : 2);
                     } catch (IllegalArgumentException e2) {
                         Log.w(c, "Cannot set component-enabled-setting: ".concat(e2.toString()));
                     }
@@ -122,12 +123,12 @@ public class PhenotypeCommittedOperation extends anya {
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
         g();
     }
 
-    @Override // defpackage.anya, com.google.android.chimera.IntentOperation
+    @Override // defpackage.apzs, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         String action = intent.getAction();
         String stringExtra = intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME");
@@ -138,7 +139,7 @@ public class PhenotypeCommittedOperation extends anya {
         if (z) {
             sendBroadcast(new Intent("com.google.android.gms.chimera.CORE_FLAGS_UPDATED").setPackage(getPackageName()));
         }
-        if (fmqj.e()) {
+        if (fpih.e()) {
             if (z) {
                 g();
             } else {

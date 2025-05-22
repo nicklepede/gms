@@ -1,12 +1,12 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.elgo;
+import defpackage.elpg;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ContactPoint extends Thing {
     public final List a;
@@ -16,18 +16,18 @@ public final class ContactPoint extends Thing {
     public ContactPoint(String str, String str2, String str3, List list, List list2, List list3, List list4, List list5, G3AttributionInfo g3AttributionInfo) {
         super(str, str2, str3, list, list2, g3AttributionInfo);
         if (list3 == null) {
-            int i = eitj.d;
-            list3 = ejcb.a;
+            int i = elgo.d;
+            list3 = elpg.a;
         }
         this.a = list3;
         if (list4 == null) {
-            int i2 = eitj.d;
-            list4 = ejcb.a;
+            int i2 = elgo.d;
+            list4 = elpg.a;
         }
         this.b = list4;
         if (list5 == null) {
-            int i3 = eitj.d;
-            list5 = ejcb.a;
+            int i3 = elgo.d;
+            list5 = elpg.a;
         }
         this.c = list5;
     }

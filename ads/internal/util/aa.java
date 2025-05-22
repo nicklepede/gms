@@ -4,11 +4,11 @@ import android.content.Context;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.Volley;
-import defpackage.asnp;
-import defpackage.enss;
+import defpackage.aurj;
+import defpackage.eqgl;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class aa {
     private static RequestQueue a;
@@ -19,12 +19,12 @@ public final class aa {
         synchronized (b) {
             if (a == null) {
                 com.google.android.gms.ads.internal.config.p.c(context);
-                a = (asnp.d() || !((Boolean) com.google.android.gms.ads.internal.config.p.as.g()).booleanValue()) ? Volley.newRequestQueue(context) : r.a(context, new r(context, new HurlStack()));
+                a = (aurj.d() || !((Boolean) com.google.android.gms.ads.internal.config.p.as.g()).booleanValue()) ? Volley.newRequestQueue(context) : r.a(context, new r(context, new HurlStack()));
             }
         }
     }
 
-    public final enss a(int i, String str, Map map, byte[] bArr) {
+    public final eqgl a(int i, String str, Map map, byte[] bArr) {
         x xVar = new x();
         v vVar = new v(str, xVar);
         new com.google.android.gms.ads.internal.util.client.g(null);

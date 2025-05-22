@@ -1,34 +1,28 @@
 package com.google.android.gms.providerinstaller;
 
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.os.Build;
 import android.util.Log;
 import com.google.android.gms.org.conscrypt.Conscrypt;
 import defpackage.a;
-import defpackage.apsr;
-import defpackage.apsz;
-import defpackage.apta;
-import defpackage.asfh;
-import defpackage.asfl;
-import defpackage.asfp;
-import defpackage.asnh;
-import defpackage.asow;
-import defpackage.aspe;
-import defpackage.cwvv;
-import defpackage.cwvw;
-import defpackage.cwwe;
-import defpackage.cwwf;
-import defpackage.dnmt;
-import defpackage.eifw;
-import defpackage.eijm;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fief;
-import defpackage.fiwf;
-import defpackage.frpv;
-import defpackage.frpy;
-import defpackage.frqb;
+import defpackage.arvi;
+import defpackage.arvq;
+import defpackage.arvr;
+import defpackage.aujb;
+import defpackage.aujf;
+import defpackage.aujj;
+import defpackage.czfs;
+import defpackage.czft;
+import defpackage.czgd;
+import defpackage.dpxc;
+import defpackage.ektc;
+import defpackage.ekwr;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fkuc;
+import defpackage.flmc;
+import defpackage.fukb;
+import defpackage.fuke;
 import java.lang.reflect.Field;
 import java.security.NoSuchAlgorithmException;
 import java.security.Provider;
@@ -38,11 +32,14 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLServerSocketFactory;
 import javax.net.ssl.SSLSocketFactory;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ProviderInstallerImpl {
     private static final Object a = new Object();
     private static Provider b;
+
+    private ProviderInstallerImpl() {
+    }
 
     private static SSLContext a() {
         SSLContext sSLContext;
@@ -58,39 +55,7 @@ public class ProviderInstallerImpl {
         throw new SecurityException("Failed to find SSLContext.Default provider");
     }
 
-    private static void b(Context context) {
-        int i = FlagRegistrar.c;
-        cwwe.a.a(context);
-        if ("com.google.android.gms".equals(context.getPackageName())) {
-            try {
-                context.getPackageManager().getApplicationInfo(context.getPackageName(), 0);
-                if (!asow.g(context, "conscrypt_gmscore_jni")) {
-                    throw new SecurityException("loadLibrary failed");
-                }
-                int b2 = aspe.b(asnh.a(context));
-                try {
-                    int nativeCodeVersion = getNativeCodeVersion();
-                    if (b2 != nativeCodeVersion) {
-                        throw new SecurityException(String.format("libgmscore version mismatch (%d vs. %d)", Integer.valueOf(b2), Integer.valueOf(nativeCodeVersion)));
-                    }
-                } catch (UnsatisfiedLinkError e) {
-                    throw new SecurityException(e);
-                }
-            } catch (PackageManager.NameNotFoundException e2) {
-                throw new SecurityException("Failed to find ApplicationInfo", e2);
-            }
-        } else {
-            System.loadLibrary("conscrypt_gmscore_jni");
-        }
-        Conscrypt.ProviderBuilder newProviderBuilder = Conscrypt.newProviderBuilder();
-        newProviderBuilder.setName("GmsCore_OpenSSL");
-        newProviderBuilder.defaultTlsProtocol(true != frpy.a.a().b() ? "TLSv1.2" : "TLSv1.3");
-        newProviderBuilder.isTlsV1Deprecated(frqb.a.a().b());
-        newProviderBuilder.isTlsV1Enabled(!r0.a().a());
-        b = newProviderBuilder.build();
-    }
-
-    private static void c() {
+    private static void b() {
         try {
             SSLContext a2 = a();
             Field declaredField = SSLSocketFactory.class.getDeclaredField("defaultSocketFactory");
@@ -113,46 +78,92 @@ public class ProviderInstallerImpl {
         }
     }
 
-    private static void d(apta aptaVar, Context context, int i, eijm eijmVar) {
-        if (frpv.a.a().a()) {
-            if (aptaVar == null) {
-                apsr m = apta.m(context, "CLEARCUT_PROVIDERINSTALLER");
-                m.d(fief.UNMETERED_OR_DAILY);
-                aptaVar = m.a();
+    /* JADX WARN: Code restructure failed: missing block: B:13:0x0046, code lost:
+    
+        if (r5 >= r0.lK().b()) goto L18;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:15:0x005e, code lost:
+    
+        if (java.security.Security.getProvider("GmsCore_OpenSSL") != null) goto L21;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:16:0x0060, code lost:
+    
+        r9 = true;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:17:0x0063, code lost:
+    
+        defpackage.ekvl.r(r9, "GmsCore Provider already installed");
+        r9 = java.security.Security.getProvider("AndroidOpenSSL");
+        r0 = new defpackage.czgc();
+        r0.putAll(r9);
+        java.security.Security.insertProviderAt(r0, 1);
+        com.google.android.gms.providerinstaller.ProviderInstallerImpl.b = r0;
+        android.util.Log.i("ProviderInstaller", "Installed default security provider AndroidOpenSSL");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:18:0x0080, code lost:
+    
+        return false;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x0062, code lost:
+    
+        r9 = false;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:23:0x0058, code lost:
+    
+        if (android.os.Build.VERSION.SDK_INT < defpackage.fuke.a.lK().a()) goto L24;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    private static boolean c(android.content.Context r9) {
+        /*
+            Method dump skipped, instructions count: 288
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.providerinstaller.ProviderInstallerImpl.c(android.content.Context):boolean");
+    }
+
+    private static void d(arvr arvrVar, Context context, int i, ekwr ekwrVar) {
+        if (fukb.a.lK().a()) {
+            if (arvrVar == null) {
+                arvi m = arvr.m(context, "CLEARCUT_PROVIDERINSTALLER");
+                m.d(fkuc.UNMETERED_OR_DAILY);
+                arvrVar = m.a();
             }
-            cwvw cwvwVar = new cwvw();
-            fecj v = cwvv.a.v();
+            czft czftVar = new czft();
+            fgrc v = czfs.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            cwvv cwvvVar = (cwvv) v.b;
-            cwvvVar.c = i - 1;
-            cwvvVar.b |= 1;
-            long millis = eijmVar.d().toMillis();
+            czfs czfsVar = (czfs) v.b;
+            czfsVar.c = i - 1;
+            czfsVar.b |= 1;
+            long millis = ekwrVar.d().toMillis();
             if (!v.b.L()) {
                 v.U();
             }
-            cwvv cwvvVar2 = (cwvv) v.b;
-            cwvvVar2.b |= 2;
-            cwvvVar2.d = millis;
-            apsz j = aptaVar.j((cwvv) v.Q(), dnmt.b(context, cwvwVar));
-            fecj v2 = asfh.a.v();
-            asfp asfpVar = asfp.USE_CASE_CLEARCUT_DEFAULT;
+            czfs czfsVar2 = (czfs) v.b;
+            czfsVar2.b |= 2;
+            czfsVar2.d = millis;
+            arvq j = arvrVar.j((czfs) v.Q(), dpxc.b(context, czftVar));
+            fgrc v2 = aujb.a.v();
+            aujj aujjVar = aujj.USE_CASE_CLEARCUT_DEFAULT;
             if (!v2.b.L()) {
                 v2.U();
             }
-            ((asfh) v2.b).b = asfpVar.a();
+            ((aujb) v2.b).b = aujjVar.a();
             if (!v2.b.L()) {
                 v2.U();
             }
-            fecp fecpVar = v2.b;
-            ((asfh) fecpVar).c = 1;
-            asfl asflVar = asfl.INITIATOR_CATEGORY_1;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v2.b;
+            ((aujb) fgriVar).c = 1;
+            aujf aujfVar = aujf.INITIATOR_CATEGORY_1;
+            if (!fgriVar.L()) {
                 v2.U();
             }
-            ((asfh) v2.b).d = asflVar.a();
-            j.m = (asfh) v2.Q();
+            ((aujb) v2.b).d = aujfVar.a();
+            j.m = (aujb) v2.Q();
             j.d();
         }
     }
@@ -160,39 +171,40 @@ public class ProviderInstallerImpl {
     private static native int getNativeCodeVersion();
 
     public static void insertProvider(Context context) {
-        insertProvider(null, new cwwf(context));
+        insertProvider(null, new czgd(context));
     }
 
-    public static void insertProvider(apta aptaVar, Context context) {
-        eijm c = eijm.c(eifw.a);
+    public static void insertProvider(arvr arvrVar, Context context) {
+        ekwr c = ekwr.c(ektc.a);
         synchronized (a) {
             if (b == null) {
                 Provider provider = Security.getProvider("GmsCore_OpenSSL");
                 if (provider != null) {
                     b = provider;
                     return;
+                } else if (!c(context)) {
+                    return;
                 }
-                b(context);
             }
             int insertProviderAt = Security.insertProviderAt(b, 1);
             if (insertProviderAt == 1) {
-                Conscrypt.setUseEngineSocketByDefault(frpy.a.a().a());
+                Conscrypt.setUseEngineSocketByDefault(fuke.a.lK().c());
                 if (Build.VERSION.SDK_INT < 28) {
-                    c();
+                    b();
                 }
                 Security.setProperty("ssl.SocketFactory.provider", "com.google.android.gms.org.conscrypt.OpenSSLSocketFactoryImpl");
                 Security.setProperty("ssl.ServerSocketFactory.provider", "com.google.android.gms.org.conscrypt.OpenSSLServerSocketFactoryImpl");
                 SSLContext a2 = a();
                 SSLContext.setDefault(a2);
                 HttpsURLConnection.setDefaultSSLSocketFactory(a2.getSocketFactory());
-                HttpsURLConnection.setDefaultHostnameVerifier(fiwf.a);
-                d(aptaVar, context, 2, c);
+                HttpsURLConnection.setDefaultHostnameVerifier(flmc.a);
+                d(arvrVar, context, 2, c);
                 Log.i("ProviderInstaller", "Installed default security provider GmsCore_OpenSSL");
             } else if (insertProviderAt != -1) {
-                d(aptaVar, context, 1, c);
+                d(arvrVar, context, 1, c);
                 throw new SecurityException(a.j(insertProviderAt, "Failed to install security provider GmsCore_OpenSSL, result: "));
             }
-            d(aptaVar, context, 3, c);
+            d(arvrVar, context, 3, c);
         }
     }
 }

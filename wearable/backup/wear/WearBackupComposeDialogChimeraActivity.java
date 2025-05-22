@@ -2,23 +2,23 @@ package com.google.android.gms.wearable.backup.wear;
 
 import android.os.Bundle;
 import androidx.compose.ui.platform.ComposeView;
-import defpackage.arxo;
-import defpackage.djlj;
-import defpackage.djvo;
-import defpackage.fuy;
-import defpackage.qfp;
+import defpackage.auad;
+import defpackage.dlxc;
+import defpackage.dmhh;
+import defpackage.fvp;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class WearBackupComposeDialogChimeraActivity extends qfp {
-    private static final arxo j = new djlj("WearBackupComposeDialog");
+public final class WearBackupComposeDialogChimeraActivity extends ryt {
+    private static final auad j = new dlxc("WearBackupComposeDialog");
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         j.j("onCreate", new Object[0]);
         ComposeView composeView = new ComposeView(this, null, 0, 6, null);
-        composeView.a(new fuy(1284899153, true, new djvo(this)));
+        composeView.a(new fvp(1284899153, true, new dmhh(this)));
         setContentView(composeView);
     }
 }

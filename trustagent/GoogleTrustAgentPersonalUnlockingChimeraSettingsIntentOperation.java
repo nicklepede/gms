@@ -7,22 +7,22 @@ import android.os.Bundle;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
 import com.google.android.gms.trustagent.common.ui.ConfirmUserCredentialAndStartChimeraActivity;
-import defpackage.anxy;
-import defpackage.aojj;
-import defpackage.aqxo;
-import defpackage.asew;
-import defpackage.asoq;
-import defpackage.asot;
-import defpackage.aspu;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.dgpk;
-import defpackage.dgpm;
-import defpackage.eiic;
-import defpackage.eitj;
-import defpackage.eits;
-import defpackage.ejcb;
-import defpackage.ejhf;
+import defpackage.apzq;
+import defpackage.aqlc;
+import defpackage.atad;
+import defpackage.auiq;
+import defpackage.ausk;
+import defpackage.ausn;
+import defpackage.auto;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.djap;
+import defpackage.djar;
+import defpackage.ekvh;
+import defpackage.elgo;
+import defpackage.elgx;
+import defpackage.elpg;
+import defpackage.eluo;
 import j$.lang.Iterable$EL;
 import j$.util.Objects;
 import j$.util.Optional;
@@ -34,14 +34,14 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.function.Consumer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class GoogleTrustAgentPersonalUnlockingChimeraSettingsIntentOperation extends anxy {
-    static final asoq a = new asoq() { // from class: dgku
-        @Override // defpackage.asoq
+public class GoogleTrustAgentPersonalUnlockingChimeraSettingsIntentOperation extends apzq {
+    static final ausk a = new ausk() { // from class: divz
+        @Override // defpackage.ausk
         public final Object a(Object obj) {
-            aqxd aqxdVar = dglc.a;
-            return new aqxo((Context) obj, (char[]) null);
+            aszs aszsVar = diwh.a;
+            return new atad((Context) obj, (char[]) null);
         }
     };
 
@@ -50,35 +50,35 @@ public class GoogleTrustAgentPersonalUnlockingChimeraSettingsIntentOperation ext
         super.attachBaseContext(context);
     }
 
-    @Override // defpackage.anxy
+    @Override // defpackage.apzq
     public final List c() {
         Optional of;
         Optional empty;
         Bundle bundle;
         final ArrayList arrayList = new ArrayList();
         Context applicationContext = getApplicationContext();
-        if (aspu.a(applicationContext).j()) {
+        if (auto.a(applicationContext).j()) {
             of = Optional.empty();
         } else {
             KeyguardManager keyguardManager = (KeyguardManager) applicationContext.getSystemService("keyguard");
             if (keyguardManager == null || !keyguardManager.isDeviceSecure()) {
-                GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(new Intent(), -1, getString(R.string.personal_unlock_component_name), aojj.TRUST_AGENT_ITEM, asew.DEFAULT_TRUSTAGENT);
+                GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(new Intent(), -1, getString(R.string.personal_unlock_component_name), aqlc.TRUST_AGENT_ITEM, auiq.DEFAULT_TRUSTAGENT);
                 googleSettingsItem.j = false;
                 googleSettingsItem.i = false;
                 googleSettingsItem.p = getString(R.string.disabled_because_no_backup_security);
                 of = Optional.of(googleSettingsItem);
             } else {
-                GoogleSettingsItem googleSettingsItem2 = new GoogleSettingsItem(ConfirmUserCredentialAndStartChimeraActivity.b(applicationContext, new Intent().setClassName(applicationContext, "com.google.android.gms.trustagent.GoogleTrustAgentPersonalUnlockingSettings"), null), -1, getString(R.string.personal_unlock_component_name), aojj.TRUST_AGENT_ITEM, asew.DEFAULT_TRUSTAGENT);
+                GoogleSettingsItem googleSettingsItem2 = new GoogleSettingsItem(ConfirmUserCredentialAndStartChimeraActivity.b(applicationContext, new Intent().setClassName(applicationContext, "com.google.android.gms.trustagent.GoogleTrustAgentPersonalUnlockingSettings"), null), -1, getString(R.string.personal_unlock_component_name), aqlc.TRUST_AGENT_ITEM, auiq.DEFAULT_TRUSTAGENT);
                 googleSettingsItem2.j = false;
                 googleSettingsItem2.p = getString(R.string.auth_google_smart_lock_intro);
                 of = Optional.of(googleSettingsItem2);
             }
         }
         Objects.requireNonNull(arrayList);
-        of.ifPresent(new Consumer() { // from class: dgkv
+        of.ifPresent(new Consumer() { // from class: diwa
             @Override // java.util.function.Consumer
             /* renamed from: accept */
-            public final void q(Object obj) {
+            public final void u(Object obj) {
                 arrayList.add((GoogleSettingsItem) obj);
             }
 
@@ -86,43 +86,43 @@ public class GoogleTrustAgentPersonalUnlockingChimeraSettingsIntentOperation ext
                 return Consumer$CC.$default$andThen(this, consumer);
             }
         });
-        asot asotVar = dgpm.a;
-        asoq asoqVar = a;
+        ausn ausnVar = djar.a;
+        ausk auskVar = a;
         final ArrayList arrayList2 = new ArrayList();
-        dfaq aE = ((aqxo) asoqVar.a(this)).aE(4, new Bundle());
+        dhlw aD = ((atad) auskVar.a(this)).aD(4, new Bundle());
         Bundle bundle2 = new Bundle();
         try {
-            bundle2 = (Bundle) dfbl.n(aE);
+            bundle2 = (Bundle) dhmr.n(aD);
         } catch (InterruptedException | ExecutionException e) {
-            ((ejhf) ((ejhf) dgpm.a.j()).s(e)).x("Could not get Trustagent trustlet config.");
+            ((eluo) ((eluo) djar.a.j()).s(e)).x("Could not get Trustagent trustlet config.");
         }
-        ArrayList<dgpk> arrayList3 = new ArrayList();
+        ArrayList<djap> arrayList3 = new ArrayList();
         ArrayList<String> stringArrayList = bundle2.getStringArrayList("key_trustlet_names");
-        int i = eitj.d;
-        for (String str : (List) eiic.c(stringArrayList, ejcb.a)) {
+        int i = elgo.d;
+        for (String str : (List) ekvh.c(stringArrayList, elpg.a)) {
             if (!str.equals("Place") && (bundle = bundle2.getBundle(str)) != null) {
-                arrayList3.add(new dgpk(this, str, bundle));
+                arrayList3.add(new djap(this, str, bundle));
             }
         }
-        for (dgpk dgpkVar : arrayList3) {
-            Bundle bundle3 = dgpkVar.e;
+        for (djap djapVar : arrayList3) {
+            Bundle bundle3 = djapVar.e;
             if (bundle3.getBoolean("key_trustlet_is_suppored") && bundle3.getBoolean("key_trustlet_has_required_permissions")) {
-                String str2 = dgpkVar.d;
-                eits eitsVar = dgpk.b;
-                if (eitsVar.containsKey(str2)) {
-                    eits eitsVar2 = dgpk.a;
-                    if (eitsVar2.containsKey(str2)) {
+                String str2 = djapVar.d;
+                elgx elgxVar = djap.b;
+                if (elgxVar.containsKey(str2)) {
+                    elgx elgxVar2 = djap.a;
+                    if (elgxVar2.containsKey(str2)) {
                         Intent intent = new Intent("android.intent.action.MAIN");
-                        Context context = dgpkVar.c;
+                        Context context = djapVar.c;
                         Intent className = intent.setClassName(context, "com.google.android.gms.trustagent.TrustAgentSearchEntryPointActivity");
-                        aojj aojjVar = (aojj) eitsVar2.get(str2);
-                        asew asewVar = (asew) eitsVar.get(str2);
-                        if (aojjVar == null || asewVar == null) {
+                        aqlc aqlcVar = (aqlc) elgxVar2.get(str2);
+                        auiq auiqVar = (auiq) elgxVar.get(str2);
+                        if (aqlcVar == null || auiqVar == null) {
                             empty = Optional.empty();
                         } else {
-                            KeyguardManager keyguardManager2 = dgpkVar.f;
+                            KeyguardManager keyguardManager2 = djapVar.f;
                             boolean z = keyguardManager2 != null && keyguardManager2.isDeviceSecure();
-                            final GoogleSettingsItem googleSettingsItem3 = new GoogleSettingsItem(className, -1, bundle3.getString("key_trustlet_pref_title"), aojjVar, asewVar);
+                            final GoogleSettingsItem googleSettingsItem3 = new GoogleSettingsItem(className, -1, bundle3.getString("key_trustlet_pref_title"), aqlcVar, auiqVar);
                             googleSettingsItem3.h = context.getString(R.string.personal_unlock_preference_name);
                             googleSettingsItem3.q = context.getString(R.string.personal_unlock_preference_name);
                             googleSettingsItem3.i = z;
@@ -133,13 +133,13 @@ public class GoogleTrustAgentPersonalUnlockingChimeraSettingsIntentOperation ext
                             String string = context.getString(R.string.personal_unlock_preference_name);
                             String string2 = context.getString(R.string.auth_google_trust_agent_title);
                             BreakIterator wordInstance = BreakIterator.getWordInstance();
-                            dgpkVar.a(hashSet, wordInstance, string);
-                            dgpkVar.a(hashSet, wordInstance, string2);
+                            djapVar.a(hashSet, wordInstance, string);
+                            djapVar.a(hashSet, wordInstance, string2);
                             Objects.requireNonNull(googleSettingsItem3);
-                            Iterable$EL.forEach(hashSet, new Consumer() { // from class: dgpj
+                            Iterable$EL.forEach(hashSet, new Consumer() { // from class: djao
                                 @Override // java.util.function.Consumer
                                 /* renamed from: accept */
-                                public final void q(Object obj) {
+                                public final void u(Object obj) {
                                     GoogleSettingsItem.this.a((String) obj);
                                 }
 
@@ -150,10 +150,10 @@ public class GoogleTrustAgentPersonalUnlockingChimeraSettingsIntentOperation ext
                             empty = Optional.of(googleSettingsItem3);
                         }
                         Objects.requireNonNull(arrayList2);
-                        empty.ifPresent(new Consumer() { // from class: dgpl
+                        empty.ifPresent(new Consumer() { // from class: djaq
                             @Override // java.util.function.Consumer
                             /* renamed from: accept */
-                            public final void q(Object obj) {
+                            public final void u(Object obj) {
                                 arrayList2.add((GoogleSettingsItem) obj);
                             }
 

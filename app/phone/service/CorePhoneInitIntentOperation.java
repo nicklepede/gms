@@ -3,62 +3,62 @@ package com.google.android.gms.app.phone.service;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.fnex;
-import defpackage.ips;
-import defpackage.tqh;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.fpww;
+import defpackage.iri;
+import defpackage.vmh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class CorePhoneInitIntentOperation extends tqh {
+public class CorePhoneInitIntentOperation extends vmh {
     static final String[] a;
 
     static {
-        asot.b("CorePhoneInitIntntOp", asej.CORE);
+        ausn.b("CorePhoneInitIntntOp", auid.CORE);
         a = new String[]{"com.google.android.gms.app.settings.SettingsSubPageActivity"};
     }
 
     private static final void l() {
-        if (fnex.a.a().a()) {
-            asng.M("com.google.android.gms.app.settings.GoogleSettingsIALink", 0);
-            int i = ips.a;
+        if (fpww.a.lK().a()) {
+            aura.M("com.google.android.gms.app.settings.GoogleSettingsIALink", 0);
+            int i = iri.a;
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     public final void a(Intent intent, boolean z) {
         l();
         super.h();
-        if (asqh.e()) {
+        if (auub.e()) {
             getBaseContext();
             super.g("com.google.android.gms.app.search.GmsSearchIndexablesProvider");
         }
         super.i();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     public final void c(Intent intent, boolean z) {
         l();
         super.h();
         super.i();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     public final void d(Intent intent) {
         l();
         super.i();
     }
 
-    @Override // defpackage.tqh
+    @Override // defpackage.vmh
     protected final void e(Context context) {
-        asng.G(context, new ComponentName(context, "com.google.android.gms.app.settings.GoogleSettingsLink"));
-        asng.G(context, new ComponentName(context, "com.google.android.gms.app.settings.GoogleSettingsIALink"));
+        aura.G(context, new ComponentName(context, "com.google.android.gms.app.settings.GoogleSettingsLink"));
+        aura.G(context, new ComponentName(context, "com.google.android.gms.app.settings.GoogleSettingsIALink"));
     }
 
-    @Override // defpackage.tqh
+    @Override // defpackage.vmh
     protected final String[] f() {
         return a;
     }

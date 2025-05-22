@@ -4,57 +4,57 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aqxd;
-import defpackage.aqxo;
-import defpackage.arjj;
-import defpackage.asej;
-import defpackage.aslv;
-import defpackage.aslw;
-import defpackage.asmb;
-import defpackage.asot;
-import defpackage.bqna;
-import defpackage.dcul;
-import defpackage.dece;
-import defpackage.dmkz;
-import defpackage.eiig;
-import defpackage.uqw;
-import defpackage.vcg;
-import defpackage.vch;
-import defpackage.vci;
-import defpackage.vcj;
-import defpackage.vck;
-import defpackage.vcl;
-import defpackage.vnp;
-import defpackage.vog;
+import defpackage.aszs;
+import defpackage.atad;
+import defpackage.atly;
+import defpackage.auid;
+import defpackage.aupp;
+import defpackage.aupq;
+import defpackage.aupv;
+import defpackage.ausn;
+import defpackage.bsup;
+import defpackage.dffq;
+import defpackage.dgnh;
+import defpackage.down;
+import defpackage.ekvl;
+import defpackage.wmv;
+import defpackage.wyg;
+import defpackage.wyh;
+import defpackage.wyi;
+import defpackage.wyj;
+import defpackage.wyk;
+import defpackage.wyl;
+import defpackage.xjq;
+import defpackage.xkh;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AccountTransferIntentOperation extends IntentOperation {
-    vog a;
-    dece b;
-    private aslw c;
+    xkh a;
+    dgnh b;
+    private aupq c;
 
-    private final vch a() {
-        return new vch(this, new vcj(this.a), this.b, bqna.b(this), this.a);
+    private final wyh a() {
+        return new wyh(this, new wyj(this.a), this.b, bsup.b(this), this.a);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        aslw aslwVar = new aslw("AccountTransferIntentOperation", 9);
-        this.c = aslwVar;
-        aslwVar.start();
-        int i = vnp.a;
-        this.a = new vog(this, null);
-        aqxd aqxdVar = dcul.a;
-        this.b = new aqxo((Context) this, (byte[]) null);
+        aupq aupqVar = new aupq("AccountTransferIntentOperation", 9);
+        this.c = aupqVar;
+        aupqVar.start();
+        int i = xjq.a;
+        this.a = new xkh(this, null);
+        aszs aszsVar = dffq.a;
+        this.b = new atad((Context) this, (byte[]) null);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onDestroy() {
-        aslw aslwVar = this.c;
-        if (aslwVar != null) {
-            aslwVar.quit();
+        aupq aupqVar = this.c;
+        if (aupqVar != null) {
+            aupqVar.quit();
             this.c = null;
         }
     }
@@ -72,8 +72,8 @@ public class AccountTransferIntentOperation extends IntentOperation {
         }
         if (!"com.google".equals(stringExtra)) {
             Log.w("Auth", String.format(Locale.US, "[AccountTransfer, AccountTransferIntentOperation] Not handling account type in onHandleIntent(accountType=%s). Sending completion status", stringExtra));
-            int i = vnp.a;
-            vcl.e(new vog(this, null), stringExtra);
+            int i = xjq.a;
+            wyl.e(new xkh(this, null), stringExtra);
             return;
         }
         String action = intent.getAction();
@@ -82,23 +82,23 @@ public class AccountTransferIntentOperation extends IntentOperation {
             return;
         }
         if ("com.google.android.gms.auth.ACCOUNT_IMPORT_DATA_AVAILABLE".equals(action)) {
-            int i2 = vci.a;
-            vcj vcjVar = new vcj(this.a);
-            dece deceVar = this.b;
-            bqna b = bqna.b(this);
-            uqw uqwVar = (uqw) uqw.a.b();
-            aslw aslwVar = this.c;
-            eiig.x(aslwVar);
-            vci.a(asot.c("Auth", asej.AUTH_ACCOUNT_DATA, "AccountTransferImporter"), this, vcjVar, deceVar, b, uqwVar, new vck(this, new aslv(aslwVar)), this.a, new dmkz(new asmb(1, 10), arjj.b(this), arjj.a(this)));
+            int i2 = wyi.a;
+            wyj wyjVar = new wyj(this.a);
+            dgnh dgnhVar = this.b;
+            bsup b = bsup.b(this);
+            wmv wmvVar = (wmv) wmv.a.b();
+            aupq aupqVar = this.c;
+            ekvl.y(aupqVar);
+            wyi.a(ausn.c("Auth", auid.AUTH_ACCOUNT_DATA, "AccountTransferImporter"), this, wyjVar, dgnhVar, b, wmvVar, new wyk(this, new aupp(aupqVar)), this.a, new down(new aupv(1, 10), atly.b(this), atly.a(this)));
             return;
         }
         if ("com.google.android.gms.auth.START_ACCOUNT_EXPORT".equals(action)) {
-            vch a = a();
+            wyh a = a();
             try {
                 a.b();
-            } catch (vcg e) {
+            } catch (wyg e) {
                 Log.e("Auth", String.format(Locale.US, "[AccountTransfer, AccountTransferExporter] startAccountExport() error", new Object[0]), e);
-                vcl.c(a.a);
+                wyl.c(a.a);
             }
         }
     }

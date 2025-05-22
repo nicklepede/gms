@@ -6,15 +6,15 @@ import android.text.TextUtils;
 import com.google.android.gms.auth.firstparty.dataservice.AccountInterruptControls;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.uom;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.wkl;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ResolutionData extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new uom();
+    public static final Parcelable.Creator CREATOR = new wkl();
     final int a;
     public final String b;
     public final int c;
@@ -40,7 +40,7 @@ public class ResolutionData extends AbstractSafeParcelable implements ReflectedP
             return false;
         }
         ResolutionData resolutionData = (ResolutionData) obj;
-        return TextUtils.equals(this.b, resolutionData.b) && this.c == resolutionData.c && TextUtils.equals(this.d, resolutionData.d) && Arrays.equals(this.e, resolutionData.e) && this.f == resolutionData.f && arwb.b(this.g, resolutionData.g) && arwb.b(this.h, resolutionData.h);
+        return TextUtils.equals(this.b, resolutionData.b) && this.c == resolutionData.c && TextUtils.equals(this.d, resolutionData.d) && Arrays.equals(this.e, resolutionData.e) && this.f == resolutionData.f && atyq.b(this.g, resolutionData.g) && atyq.b(this.h, resolutionData.h);
     }
 
     public final int hashCode() {
@@ -49,15 +49,15 @@ public class ResolutionData extends AbstractSafeParcelable implements ReflectedP
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.J(parcel, 5, this.e, i);
-        arxc.e(parcel, 6, this.f);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.t(parcel, 8, this.h, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.J(parcel, 5, this.e, i);
+        atzr.e(parcel, 6, this.f);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.t(parcel, 8, this.h, i, false);
+        atzr.c(parcel, a);
     }
 }

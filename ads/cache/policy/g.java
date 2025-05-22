@@ -5,12 +5,12 @@ import com.google.android.gms.ads.cache.p;
 import com.google.android.gms.ads.cache.q;
 import com.google.android.gms.ads.cache.r;
 import com.google.android.gms.ads.cache.s;
-import defpackage.fecj;
-import defpackage.fecp;
+import defpackage.fgrc;
+import defpackage.fgri;
 import java.util.Iterator;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class g implements com.google.android.gms.ads.internal.js.function.e {
     private final String a;
@@ -113,7 +113,7 @@ final class g implements com.google.android.gms.ads.internal.js.function.e {
         JSONObject jSONObject3 = jSONObject.getJSONObject("meta_data");
         JSONObject jSONObject4 = jSONObject.getJSONObject("source");
         JSONObject optJSONObject = jSONObject3.optJSONObject("tags");
-        fecj v = q.a.v();
+        fgrc v = q.a.v();
         long optLong = jSONObject3.optLong("last_access_time", 0L);
         if (!v.b.L()) {
             v.U();
@@ -173,16 +173,16 @@ final class g implements com.google.android.gms.ads.internal.js.function.e {
                 String next = keys.next();
                 String optString = optJSONObject.optString(next, null);
                 if (optString != null) {
-                    fecj v2 = p.a.v();
+                    fgrc v2 = p.a.v();
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    fecp fecpVar = v2.b;
-                    p pVar = (p) fecpVar;
+                    fgri fgriVar = v2.b;
+                    p pVar = (p) fgriVar;
                     next.getClass();
                     pVar.b |= 1;
                     pVar.c = next;
-                    if (!fecpVar.L()) {
+                    if (!fgriVar.L()) {
                         v2.U();
                     }
                     p pVar2 = (p) v2.b;
@@ -192,7 +192,7 @@ final class g implements com.google.android.gms.ads.internal.js.function.e {
                 }
             }
         }
-        fecj v3 = s.a.v();
+        fgrc v3 = s.a.v();
         String str = this.a;
         if (!v3.b.L()) {
             v3.U();
@@ -209,7 +209,7 @@ final class g implements com.google.android.gms.ads.internal.js.function.e {
         string.getClass();
         sVar2.b |= 16;
         sVar2.g = string;
-        fecj v4 = com.google.android.gms.ads.cache.m.a.v();
+        fgrc v4 = com.google.android.gms.ads.cache.m.a.v();
         String string2 = jSONObject2.getString("id");
         if (!v4.b.L()) {
             v4.U();
@@ -242,7 +242,7 @@ final class g implements com.google.android.gms.ads.internal.js.function.e {
         mVar4.getClass();
         sVar3.d = mVar4;
         sVar3.b |= 2;
-        fecj v5 = r.a.v();
+        fgrc v5 = r.a.v();
         String optString2 = jSONObject4.optString("url");
         if (!v5.b.L()) {
             v5.U();

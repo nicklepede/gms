@@ -4,17 +4,17 @@ import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cali;
-import defpackage.calj;
-import defpackage.calo;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ccty;
+import defpackage.cctz;
+import defpackage.ccue;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class UploadRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new calj();
+    public static final Parcelable.Creator CREATOR = new cctz();
     public final Account a;
     public final String b;
     public final long c;
@@ -39,7 +39,7 @@ public class UploadRequest extends AbstractSafeParcelable {
             return false;
         }
         UploadRequest uploadRequest = (UploadRequest) obj;
-        return this.a.equals(uploadRequest.a) && this.b.equals(uploadRequest.b) && arwb.b(Long.valueOf(this.c), Long.valueOf(uploadRequest.c)) && this.d == uploadRequest.d && this.e == uploadRequest.e && arwb.b(this.f, uploadRequest.f);
+        return this.a.equals(uploadRequest.a) && this.b.equals(uploadRequest.b) && atyq.b(Long.valueOf(this.c), Long.valueOf(uploadRequest.c)) && this.d == uploadRequest.d && this.e == uploadRequest.e && atyq.b(this.f, uploadRequest.f);
     }
 
     public final int hashCode() {
@@ -47,28 +47,28 @@ public class UploadRequest extends AbstractSafeParcelable {
     }
 
     public final String toString() {
-        return "UploadRequest{, mAccount=" + calo.a(this.a) + ", mReason='" + this.b + "', mDurationMillis=" + this.c + ", mMovingLatencyMillis=" + this.d + ", mStationaryLatencyMillis=" + this.e + ", mAppSpecificKey='" + this.f + "'}";
+        return "UploadRequest{, mAccount=" + ccue.a(this.a) + ", mReason='" + this.b + "', mDurationMillis=" + this.c + ", mMovingLatencyMillis=" + this.d + ", mStationaryLatencyMillis=" + this.e + ", mAppSpecificKey='" + this.f + "'}";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Account account = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, account, i, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.q(parcel, 4, this.c);
-        arxc.q(parcel, 5, this.d);
-        arxc.q(parcel, 6, this.e);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, account, i, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.q(parcel, 4, this.c);
+        atzr.q(parcel, 5, this.d);
+        atzr.q(parcel, 6, this.e);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.c(parcel, a);
     }
 
-    public UploadRequest(cali caliVar) {
-        this.a = caliVar.a;
-        this.b = caliVar.b;
-        this.c = caliVar.c;
-        this.d = caliVar.d;
-        this.e = caliVar.e;
-        this.f = caliVar.f;
+    public UploadRequest(ccty cctyVar) {
+        this.a = cctyVar.a;
+        this.b = cctyVar.b;
+        this.c = cctyVar.c;
+        this.d = cctyVar.d;
+        this.e = cctyVar.e;
+        this.f = cctyVar.f;
     }
 }

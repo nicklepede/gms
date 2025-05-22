@@ -19,21 +19,21 @@ import com.google.android.gms.wearable.backup.phone.BackupOptInChimeraActivity;
 import com.google.android.gms.wearable.backup.phone.BackupSettingsChimeraActivity;
 import com.google.android.gms.wearable.internal.NodeParcelable;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
-import defpackage.aqxo;
-import defpackage.arxo;
-import defpackage.djlc;
-import defpackage.djlh;
-import defpackage.djlj;
-import defpackage.djlp;
-import defpackage.djnw;
-import defpackage.djqw;
-import defpackage.dlui;
-import defpackage.dlvs;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fecy;
-import defpackage.fefi;
-import defpackage.qet;
+import defpackage.atad;
+import defpackage.auad;
+import defpackage.dlwv;
+import defpackage.dlxa;
+import defpackage.dlxc;
+import defpackage.dlxi;
+import defpackage.dlzp;
+import defpackage.dmcp;
+import defpackage.dofz;
+import defpackage.dohj;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgrr;
+import defpackage.fgub;
+import defpackage.rxx;
 import j$.util.Collection;
 import j$.util.Optional;
 import j$.util.function.Consumer$CC;
@@ -46,11 +46,11 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class BackupSettingsChimeraActivity extends qet {
-    public static final arxo j = new djlj("BackupSettingsActivity");
-    public static final dlvs k;
+public class BackupSettingsChimeraActivity extends rxx {
+    public static final auad j = new dlxc("BackupSettingsActivity");
+    public static final dohj k;
     static final Optional l;
     static final Optional m;
     static final Optional n;
@@ -58,69 +58,69 @@ public class BackupSettingsChimeraActivity extends qet {
     static final Optional p;
     public String q;
     public String r;
-    public djnw s;
-    public djlc t;
+    public dlzp s;
+    public dlwv t;
     public ConstraintLayout u;
     public AppTheme v;
     public String w;
-    public djqw x;
-    public aqxo y;
+    public dmcp x;
+    public atad y;
 
     static {
-        fecj v = dlvs.a.v();
+        fgrc v = dohj.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        dlvs dlvsVar = (dlvs) fecpVar;
-        dlvsVar.b |= 1;
-        dlvsVar.c = 251661004;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        dohj dohjVar = (dohj) fgriVar;
+        dohjVar.b |= 1;
+        dohjVar.c = 251864004;
+        if (!fgriVar.L()) {
             v.U();
         }
-        dlvs dlvsVar2 = (dlvs) v.b;
-        fecy fecyVar = dlvsVar2.d;
-        if (!fecyVar.c()) {
-            dlvsVar2.d = fecp.C(fecyVar);
+        dohj dohjVar2 = (dohj) v.b;
+        fgrr fgrrVar = dohjVar2.d;
+        if (!fgrrVar.c()) {
+            dohjVar2.d = fgri.C(fgrrVar);
         }
-        dlvsVar2.d.i(R.string.backup_toggle_label);
+        dohjVar2.d.i(R.string.backup_toggle_label);
         if (!v.b.L()) {
             v.U();
         }
-        dlvs dlvsVar3 = (dlvs) v.b;
-        fecy fecyVar2 = dlvsVar3.e;
-        if (!fecyVar2.c()) {
-            dlvsVar3.e = fecp.C(fecyVar2);
+        dohj dohjVar3 = (dohj) v.b;
+        fgrr fgrrVar2 = dohjVar3.e;
+        if (!fgrrVar2.c()) {
+            dohjVar3.e = fgri.C(fgrrVar2);
         }
-        dlvsVar3.e.i(R.string.backup_opt_out_dialog_title);
+        dohjVar3.e.i(R.string.backup_opt_out_dialog_title);
         if (!v.b.L()) {
             v.U();
         }
-        dlvs dlvsVar4 = (dlvs) v.b;
-        fecy fecyVar3 = dlvsVar4.f;
-        if (!fecyVar3.c()) {
-            dlvsVar4.f = fecp.C(fecyVar3);
+        dohj dohjVar4 = (dohj) v.b;
+        fgrr fgrrVar3 = dohjVar4.f;
+        if (!fgrrVar3.c()) {
+            dohjVar4.f = fgri.C(fgrrVar3);
         }
-        dlvsVar4.f.i(R.string.backup_opt_out_dialog_body);
+        dohjVar4.f.i(R.string.backup_opt_out_dialog_body);
         if (!v.b.L()) {
             v.U();
         }
-        dlvs dlvsVar5 = (dlvs) v.b;
-        fecy fecyVar4 = dlvsVar5.g;
-        if (!fecyVar4.c()) {
-            dlvsVar5.g = fecp.C(fecyVar4);
+        dohj dohjVar5 = (dohj) v.b;
+        fgrr fgrrVar4 = dohjVar5.g;
+        if (!fgrrVar4.c()) {
+            dohjVar5.g = fgri.C(fgrrVar4);
         }
-        dlvsVar5.g.i(R.string.companion_backup_opt_out_dialog_confirmation_label);
+        dohjVar5.g.i(R.string.companion_backup_opt_out_dialog_confirmation_label);
         if (!v.b.L()) {
             v.U();
         }
-        dlvs dlvsVar6 = (dlvs) v.b;
-        fecy fecyVar5 = dlvsVar6.h;
-        if (!fecyVar5.c()) {
-            dlvsVar6.h = fecp.C(fecyVar5);
+        dohj dohjVar6 = (dohj) v.b;
+        fgrr fgrrVar5 = dohjVar6.h;
+        if (!fgrrVar5.c()) {
+            dohjVar6.h = fgri.C(fgrrVar5);
         }
-        dlvsVar6.h.i(R.string.common_cancel);
-        k = (dlvs) v.Q();
+        dohjVar6.h.i(R.string.common_cancel);
+        k = (dohj) v.Q();
         l = Optional.empty();
         m = Optional.empty();
         n = Optional.empty();
@@ -142,7 +142,7 @@ public class BackupSettingsChimeraActivity extends qet {
             textView4.setText(getString(R.string.companion_backup_overall_stats_format, new Object[]{this.r, string}));
             return;
         }
-        if ((((dlui) optional.get()).b & 8) == 0) {
+        if ((((dofz) optional.get()).b & 8) == 0) {
             j.j("Watch has not backed up", new Object[0]);
             String string2 = getString(R.string.companion_backup_no_data_backed_up);
             textView.setText(string2);
@@ -152,19 +152,19 @@ public class BackupSettingsChimeraActivity extends qet {
             return;
         }
         j.j("Watch has backed up, showing backup stats", new Object[0]);
-        dlui dluiVar = (dlui) optional.get();
-        textView.setText(djlh.b(this, dluiVar.c));
-        textView2.setText(djlh.b(this, dluiVar.d));
-        textView3.setText(djlh.b(this, dluiVar.e));
+        dofz dofzVar = (dofz) optional.get();
+        textView.setText(dlxa.b(this, dofzVar.c));
+        textView2.setText(dlxa.b(this, dofzVar.d));
+        textView3.setText(dlxa.b(this, dofzVar.e));
         String str = this.r;
-        fefi fefiVar = dluiVar.f;
-        if (fefiVar == null) {
-            fefiVar = fefi.a;
+        fgub fgubVar = dofzVar.f;
+        if (fgubVar == null) {
+            fgubVar = fgub.a;
         }
-        textView4.setText(getString(R.string.companion_backup_overall_stats_format, new Object[]{str, DateUtils.getRelativeDateTimeString(this, fefiVar.b * 1000, 60000L, 604800000L, 0).toString()}));
+        textView4.setText(getString(R.string.companion_backup_overall_stats_format, new Object[]{str, DateUtils.getRelativeDateTimeString(this, fgubVar.b * 1000, 60000L, 604800000L, 0).toString()}));
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         Optional optional;
         super.onCreate(bundle);
@@ -176,21 +176,21 @@ public class BackupSettingsChimeraActivity extends qet {
             this.w = bundle.getString("calling_package");
             optional = ofNullable;
         }
-        djlp djlpVar = (djlp) p.orElseGet(new Supplier() { // from class: djne
+        dlxi dlxiVar = (dlxi) p.orElseGet(new Supplier() { // from class: dlyx
             @Override // java.util.function.Supplier
             public final Object get() {
-                return new djlp(djks.d(BackupSettingsChimeraActivity.this));
+                return new dlxi(dlwl.d(BackupSettingsChimeraActivity.this));
             }
         });
         if (optional.isEmpty()) {
             j.f("Provided node_id extra was null", new Object[0]);
-            djlpVar.a(this.w, new Consumer() { // from class: djnm
+            dlxiVar.a(this.w, new Consumer() { // from class: dlzf
                 @Override // java.util.function.Consumer
                 public final void accept(Object obj) {
                     BackupSettingsChimeraActivity backupSettingsChimeraActivity = BackupSettingsChimeraActivity.this;
                     AppTheme appTheme = (AppTheme) obj;
-                    dkbd.f(appTheme, backupSettingsChimeraActivity.getIntent(), backupSettingsChimeraActivity);
-                    djlv.b(backupSettingsChimeraActivity, R.string.common_something_went_wrong, appTheme);
+                    dmmw.f(appTheme, backupSettingsChimeraActivity.getIntent(), backupSettingsChimeraActivity);
+                    dlxo.b(backupSettingsChimeraActivity, R.string.common_something_went_wrong, appTheme);
                 }
 
                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -202,55 +202,55 @@ public class BackupSettingsChimeraActivity extends qet {
         String str = (String) optional.get();
         this.q = str;
         j.j("onCreate. node_id=".concat(String.valueOf(str)), new Object[0]);
-        this.s = (djnw) l.orElseGet(new Supplier() { // from class: djnn
+        this.s = (dlzp) l.orElseGet(new Supplier() { // from class: dlzg
             @Override // java.util.function.Supplier
             public final Object get() {
-                return djnv.a(BackupSettingsChimeraActivity.this);
+                return dlzo.a(BackupSettingsChimeraActivity.this);
             }
         });
-        this.y = (aqxo) m.orElseGet(new Supplier() { // from class: djno
+        this.y = (atad) m.orElseGet(new Supplier() { // from class: dlzh
             @Override // java.util.function.Supplier
             public final Object get() {
-                return djks.f(BackupSettingsChimeraActivity.this);
+                return dlwl.f(BackupSettingsChimeraActivity.this);
             }
         });
-        this.x = (djqw) n.orElseGet(new Supplier() { // from class: djnp
+        this.x = (dmcp) n.orElseGet(new Supplier() { // from class: dlzi
             @Override // java.util.function.Supplier
             public final Object get() {
                 BackupSettingsChimeraActivity backupSettingsChimeraActivity = BackupSettingsChimeraActivity.this;
                 BluetoothManager bluetoothManager = (BluetoothManager) backupSettingsChimeraActivity.getSystemService(BluetoothManager.class);
-                eiig.x(bluetoothManager);
-                return new djqw(bluetoothManager.getAdapter(), djks.f(backupSettingsChimeraActivity));
+                ekvl.y(bluetoothManager);
+                return new dmcp(bluetoothManager.getAdapter(), dlwl.f(backupSettingsChimeraActivity));
             }
         });
-        this.t = (djlc) o.orElseGet(new Supplier() { // from class: djnq
+        this.t = (dlwv) o.orElseGet(new Supplier() { // from class: dlzj
             @Override // java.util.function.Supplier
             public final Object get() {
-                return djlf.b(BackupSettingsChimeraActivity.this);
+                return dlwy.b(BackupSettingsChimeraActivity.this);
             }
         });
-        djlpVar.a(this.w, new Consumer() { // from class: djnr
+        dlxiVar.a(this.w, new Consumer() { // from class: dlzk
             @Override // java.util.function.Consumer
             public final void accept(Object obj) {
                 final BackupSettingsChimeraActivity backupSettingsChimeraActivity = BackupSettingsChimeraActivity.this;
                 AppTheme appTheme = (AppTheme) obj;
                 backupSettingsChimeraActivity.v = appTheme;
-                dkbd.f(appTheme, backupSettingsChimeraActivity.getIntent(), backupSettingsChimeraActivity);
-                backupSettingsChimeraActivity.setContentView(dkbd.c(appTheme, backupSettingsChimeraActivity.getLayoutInflater()).inflate(R.layout.companion_backup_settings_activity, (ViewGroup) null, false));
-                dfaq bk = backupSettingsChimeraActivity.y.bk();
-                bk.z(new dfak() { // from class: djns
-                    @Override // defpackage.dfak
-                    public final void gn(Object obj2) {
+                dmmw.f(appTheme, backupSettingsChimeraActivity.getIntent(), backupSettingsChimeraActivity);
+                backupSettingsChimeraActivity.setContentView(dmmw.c(appTheme, backupSettingsChimeraActivity.getLayoutInflater()).inflate(R.layout.companion_backup_settings_activity, (ViewGroup) null, false));
+                dhlw bj = backupSettingsChimeraActivity.y.bj();
+                bj.z(new dhlq() { // from class: dlzl
+                    @Override // defpackage.dhlq
+                    public final void gC(Object obj2) {
                         Stream stream = Collection.EL.stream((List) obj2);
                         final BackupSettingsChimeraActivity backupSettingsChimeraActivity2 = BackupSettingsChimeraActivity.this;
-                        Optional findFirst = stream.filter(new Predicate() { // from class: djng
+                        Optional findFirst = stream.filter(new Predicate() { // from class: dlyz
                             public final /* synthetic */ Predicate and(Predicate predicate) {
                                 return Predicate$CC.$default$and(this, predicate);
                             }
 
                             @Override // java.util.function.Predicate
                             /* renamed from: negate */
-                            public final /* synthetic */ Predicate mo463negate() {
+                            public final /* synthetic */ Predicate mo478negate() {
                                 return Predicate$CC.$default$negate(this);
                             }
 
@@ -266,141 +266,141 @@ public class BackupSettingsChimeraActivity extends qet {
                         }).findFirst();
                         if (!findFirst.isPresent()) {
                             BackupSettingsChimeraActivity.j.f("Supplied nodeId is not connected to this device", new Object[0]);
-                            djlv.b(backupSettingsChimeraActivity2, R.string.common_something_went_wrong, backupSettingsChimeraActivity2.v);
+                            dlxo.b(backupSettingsChimeraActivity2, R.string.common_something_went_wrong, backupSettingsChimeraActivity2.v);
                             return;
                         }
                         backupSettingsChimeraActivity2.r = ((NodeParcelable) findFirst.get()).b;
-                        final djqw djqwVar = backupSettingsChimeraActivity2.x;
+                        final dmcp dmcpVar = backupSettingsChimeraActivity2.x;
                         final String str2 = backupSettingsChimeraActivity2.q;
-                        final dfau dfauVar = new dfau();
-                        Stream map = Collection.EL.stream(djqwVar.a.getBondedDevices()).map(new Function() { // from class: djqu
+                        final dhma dhmaVar = new dhma();
+                        Stream map = Collection.EL.stream(dmcpVar.a.getBondedDevices()).map(new Function() { // from class: dmcn
                             @Override // java.util.function.Function
                             /* renamed from: andThen */
-                            public final /* synthetic */ Function mo464andThen(Function function) {
+                            public final /* synthetic */ Function mo479andThen(Function function) {
                                 return Function$CC.$default$andThen(this, function);
                             }
 
                             @Override // java.util.function.Function
                             public final Object apply(Object obj3) {
                                 final BluetoothDevice bluetoothDevice = (BluetoothDevice) obj3;
-                                dfaq bm = djqw.this.b.bm(bluetoothDevice.getAddress());
+                                dhlw bl = dmcp.this.b.bl(bluetoothDevice.getAddress());
                                 final String str3 = str2;
-                                final dfau dfauVar2 = dfauVar;
-                                bm.z(new dfak() { // from class: djqt
-                                    @Override // defpackage.dfak
-                                    public final void gn(Object obj4) {
+                                final dhma dhmaVar2 = dhmaVar;
+                                bl.z(new dhlq() { // from class: dmcm
+                                    @Override // defpackage.dhlq
+                                    public final void gC(Object obj4) {
                                         String alias;
                                         String str4 = str3;
                                         if (str4.equals((String) obj4)) {
-                                            dfau dfauVar3 = dfauVar2;
+                                            dhma dhmaVar3 = dhmaVar2;
                                             alias = bluetoothDevice.getAlias();
                                             if (TextUtils.isEmpty(alias)) {
-                                                dfauVar3.d(new IllegalStateException("Empty Bluetooth alias for node: ".concat(String.valueOf(str4))));
+                                                dhmaVar3.d(new IllegalStateException("Empty Bluetooth alias for node: ".concat(String.valueOf(str4))));
                                             } else {
-                                                dfauVar3.b(alias);
+                                                dhmaVar3.b(alias);
                                             }
                                         }
                                     }
                                 });
-                                return bm;
+                                return bl;
                             }
 
                             public final /* synthetic */ Function compose(Function function) {
                                 return Function$CC.$default$compose(this, function);
                             }
                         });
-                        int i = eitj.d;
-                        dfbl.g((eitj) map.collect(eipl.a)).z(new dfak() { // from class: djqv
-                            @Override // defpackage.dfak
-                            public final void gn(Object obj3) {
-                                dfau.this.d(new RuntimeException("Unable to find Bluetooth alias for node"));
+                        int i = elgo.d;
+                        dhmr.g((elgo) map.collect(elcq.a)).z(new dhlq() { // from class: dmco
+                            @Override // defpackage.dhlq
+                            public final void gC(Object obj3) {
+                                dhma.this.d(new RuntimeException("Unable to find Bluetooth alias for node"));
                             }
                         });
-                        dfaz dfazVar = dfauVar.a;
-                        dfazVar.z(new dfak() { // from class: djmv
-                            @Override // defpackage.dfak
-                            public final void gn(Object obj3) {
+                        dhmf dhmfVar = dhmaVar.a;
+                        dhmfVar.z(new dhlq() { // from class: dlyo
+                            @Override // defpackage.dhlq
+                            public final void gC(Object obj3) {
                                 String str3 = (String) obj3;
                                 BackupSettingsChimeraActivity.j.j("Got watch Bluetooth alias ".concat(String.valueOf(str3)), new Object[0]);
                                 BackupSettingsChimeraActivity.this.r = str3;
                             }
                         });
-                        dfazVar.y(new dfah() { // from class: djmw
-                            @Override // defpackage.dfah
-                            public final void gm(Exception exc) {
+                        dhmfVar.y(new dhln() { // from class: dlyp
+                            @Override // defpackage.dhln
+                            public final void gB(Exception exc) {
                                 BackupSettingsChimeraActivity.j.g("Failed to get watch Bluetooth alias", exc, new Object[0]);
                             }
                         });
-                        dfazVar.x(new dfae() { // from class: djmx
-                            @Override // defpackage.dfae
-                            public final void hr(dfaq dfaqVar) {
+                        dhmfVar.x(new dhlk() { // from class: dlyq
+                            @Override // defpackage.dhlk
+                            public final void hH(dhlw dhlwVar) {
                                 final BackupSettingsChimeraActivity backupSettingsChimeraActivity3 = BackupSettingsChimeraActivity.this;
-                                dfaq g = backupSettingsChimeraActivity3.s.g(backupSettingsChimeraActivity3.q);
-                                g.z(new dfak() { // from class: djni
-                                    @Override // defpackage.dfak
-                                    public final void gn(Object obj3) {
-                                        final dlul dlulVar = (dlul) obj3;
+                                dhlw g = backupSettingsChimeraActivity3.s.g(backupSettingsChimeraActivity3.q);
+                                g.z(new dhlq() { // from class: dlzb
+                                    @Override // defpackage.dhlq
+                                    public final void gC(Object obj3) {
+                                        final dogc dogcVar = (dogc) obj3;
                                         final BackupSettingsChimeraActivity backupSettingsChimeraActivity4 = BackupSettingsChimeraActivity.this;
-                                        backupSettingsChimeraActivity4.runOnUiThread(new Runnable() { // from class: djmt
+                                        backupSettingsChimeraActivity4.runOnUiThread(new Runnable() { // from class: dlym
                                             @Override // java.lang.Runnable
                                             public final void run() {
                                                 final BackupSettingsChimeraActivity backupSettingsChimeraActivity5 = BackupSettingsChimeraActivity.this;
-                                                final dlul dlulVar2 = dlulVar;
-                                                if (!dlulVar2.c || (dlulVar2.b & 2) == 0) {
+                                                final dogc dogcVar2 = dogcVar;
+                                                if (!dogcVar2.c || (dogcVar2.b & 2) == 0) {
                                                     BackupSettingsChimeraActivity.j.j("Backup not enabled, opening backup opt-in screen", new Object[0]);
-                                                    backupSettingsChimeraActivity5.startActivity(BackupOptInChimeraActivity.a(backupSettingsChimeraActivity5.q, null, dlulVar2, backupSettingsChimeraActivity5.w));
+                                                    backupSettingsChimeraActivity5.startActivity(BackupOptInChimeraActivity.a(backupSettingsChimeraActivity5.q, null, dogcVar2, backupSettingsChimeraActivity5.w));
                                                     backupSettingsChimeraActivity5.finish();
                                                     return;
                                                 }
-                                                ((FrameLayout) backupSettingsChimeraActivity5.findViewById(R.id.back_icon_container)).setOnClickListener(new View.OnClickListener() { // from class: djmy
+                                                ((FrameLayout) backupSettingsChimeraActivity5.findViewById(R.id.back_icon_container)).setOnClickListener(new View.OnClickListener() { // from class: dlyr
                                                     @Override // android.view.View.OnClickListener
                                                     public final void onClick(View view) {
                                                         BackupSettingsChimeraActivity.this.finish();
                                                     }
                                                 });
                                                 LinearLayout linearLayout = (LinearLayout) backupSettingsChimeraActivity5.findViewById(R.id.header);
-                                                dkbd.g(linearLayout, backupSettingsChimeraActivity5.v, (TextView) linearLayout.findViewById(R.id.title));
+                                                dmmw.g(linearLayout, backupSettingsChimeraActivity5.v, (TextView) linearLayout.findViewById(R.id.title));
                                                 backupSettingsChimeraActivity5.findViewById(R.id.spinner).setVisibility(8);
                                                 backupSettingsChimeraActivity5.findViewById(R.id.main_content).setVisibility(0);
-                                                final dluj dlujVar = dlulVar2.e;
-                                                if (dlujVar == null) {
-                                                    dlujVar = dluj.a;
+                                                final doga dogaVar = dogcVar2.e;
+                                                if (dogaVar == null) {
+                                                    dogaVar = doga.a;
                                                 }
-                                                BackupSettingsChimeraActivity.j.j("Showing backup settings UI for account %s", arxo.q(dlujVar.c));
-                                                ((TextView) backupSettingsChimeraActivity5.findViewById(R.id.account_storage_email)).setText(dlujVar.c);
-                                                ((ConstraintLayout) backupSettingsChimeraActivity5.findViewById(R.id.account_storage_picker_section)).setOnClickListener(new View.OnClickListener() { // from class: djmz
+                                                BackupSettingsChimeraActivity.j.j("Showing backup settings UI for account %s", auad.q(dogaVar.c));
+                                                ((TextView) backupSettingsChimeraActivity5.findViewById(R.id.account_storage_email)).setText(dogaVar.c);
+                                                ((ConstraintLayout) backupSettingsChimeraActivity5.findViewById(R.id.account_storage_picker_section)).setOnClickListener(new View.OnClickListener() { // from class: dlys
                                                     @Override // android.view.View.OnClickListener
                                                     public final void onClick(View view) {
                                                         final BackupSettingsChimeraActivity backupSettingsChimeraActivity6 = BackupSettingsChimeraActivity.this;
-                                                        final dluj dlujVar2 = dlujVar;
-                                                        final dlul dlulVar3 = dlulVar2;
-                                                        djlt.a(backupSettingsChimeraActivity6.getContainerActivity(), dlulVar3.d, backupSettingsChimeraActivity6.t, new dfak() { // from class: djmu
-                                                            @Override // defpackage.dfak
-                                                            public final void gn(Object obj4) {
-                                                                dluk dlukVar = (dluk) obj4;
-                                                                if (eigd.e(dlukVar.c, dlujVar2.c)) {
+                                                        final doga dogaVar2 = dogaVar;
+                                                        final dogc dogcVar3 = dogcVar2;
+                                                        dlxm.a(backupSettingsChimeraActivity6.getContainerActivity(), dogcVar3.d, backupSettingsChimeraActivity6.t, new dhlq() { // from class: dlyn
+                                                            @Override // defpackage.dhlq
+                                                            public final void gC(Object obj4) {
+                                                                dogb dogbVar = (dogb) obj4;
+                                                                if (ekti.e(dogbVar.c, dogaVar2.c)) {
                                                                     return;
                                                                 }
-                                                                dlul dlulVar4 = dlulVar3;
+                                                                dogc dogcVar4 = dogcVar3;
                                                                 BackupSettingsChimeraActivity backupSettingsChimeraActivity7 = BackupSettingsChimeraActivity.this;
                                                                 BackupSettingsChimeraActivity.j.j("User chose to change account, opening backup opt-in screen", new Object[0]);
-                                                                backupSettingsChimeraActivity7.startActivity(BackupOptInChimeraActivity.a(backupSettingsChimeraActivity7.q, dlukVar.c, dlulVar4, backupSettingsChimeraActivity7.w));
+                                                                backupSettingsChimeraActivity7.startActivity(BackupOptInChimeraActivity.a(backupSettingsChimeraActivity7.q, dogbVar.c, dogcVar4, backupSettingsChimeraActivity7.w));
                                                             }
                                                         }, backupSettingsChimeraActivity6.v);
                                                     }
                                                 });
                                                 backupSettingsChimeraActivity5.u = (ConstraintLayout) backupSettingsChimeraActivity5.findViewById(R.id.bbg1_switch_section);
-                                                backupSettingsChimeraActivity5.u.setAccessibilityDelegate(new djnu(backupSettingsChimeraActivity5));
-                                                backupSettingsChimeraActivity5.u.setOnClickListener(new View.OnClickListener() { // from class: djna
+                                                backupSettingsChimeraActivity5.u.setAccessibilityDelegate(new dlzn(backupSettingsChimeraActivity5));
+                                                backupSettingsChimeraActivity5.u.setOnClickListener(new View.OnClickListener() { // from class: dlyt
                                                     @Override // android.view.View.OnClickListener
                                                     public final void onClick(View view) {
                                                         BackupSettingsChimeraActivity.j.j("Backup on-off toggle clicked, showing confirmation pop-up", new Object[0]);
                                                         final BackupSettingsChimeraActivity backupSettingsChimeraActivity6 = BackupSettingsChimeraActivity.this;
-                                                        ebna ebnaVar = new ebna(dkbd.b(backupSettingsChimeraActivity6, backupSettingsChimeraActivity6.v), R.style.ThemeOverlay_GoogleMaterial3_MaterialAlertDialog_Centered);
-                                                        ebnaVar.N(backupSettingsChimeraActivity6.getString(R.string.backup_opt_out_dialog_title));
-                                                        ebnaVar.C(backupSettingsChimeraActivity6.getString(R.string.backup_opt_out_dialog_body));
-                                                        ebnaVar.z(R.drawable.quantum_gm_ic_error_outline_vd_theme_24);
-                                                        ebnaVar.L(backupSettingsChimeraActivity6.getString(R.string.companion_backup_opt_out_dialog_confirmation_label), new DialogInterface.OnClickListener() { // from class: djnh
+                                                        edzp edzpVar = new edzp(dmmw.b(backupSettingsChimeraActivity6, backupSettingsChimeraActivity6.v), R.style.ThemeOverlay_GoogleMaterial3_MaterialAlertDialog_Centered);
+                                                        edzpVar.N(backupSettingsChimeraActivity6.getString(R.string.backup_opt_out_dialog_title));
+                                                        edzpVar.C(backupSettingsChimeraActivity6.getString(R.string.backup_opt_out_dialog_body));
+                                                        edzpVar.z(R.drawable.quantum_gm_ic_error_outline_vd_theme_24);
+                                                        edzpVar.L(backupSettingsChimeraActivity6.getString(R.string.companion_backup_opt_out_dialog_confirmation_label), new DialogInterface.OnClickListener() { // from class: dlza
                                                             @Override // android.content.DialogInterface.OnClickListener
                                                             public final void onClick(DialogInterface dialogInterface, int i2) {
                                                                 BackupSettingsChimeraActivity.j.j("User confirmed disabling backup", new Object[0]);
@@ -408,59 +408,59 @@ public class BackupSettingsChimeraActivity extends qet {
                                                                 final Switch r0 = (Switch) backupSettingsChimeraActivity7.findViewById(R.id.bbg1_switch);
                                                                 r0.setEnabled(false);
                                                                 backupSettingsChimeraActivity7.u.setClickable(false);
-                                                                dfaq a = backupSettingsChimeraActivity7.s.a(backupSettingsChimeraActivity7.q, BackupSettingsChimeraActivity.k);
-                                                                a.z(new dfak() { // from class: djnk
-                                                                    @Override // defpackage.dfak
-                                                                    public final void gn(Object obj4) {
+                                                                dhlw a = backupSettingsChimeraActivity7.s.a(backupSettingsChimeraActivity7.q, BackupSettingsChimeraActivity.k);
+                                                                a.z(new dhlq() { // from class: dlzd
+                                                                    @Override // defpackage.dhlq
+                                                                    public final void gC(Object obj4) {
                                                                         BackupSettingsChimeraActivity.j.h("Backup successfully disabled", new Object[0]);
                                                                         BackupSettingsChimeraActivity backupSettingsChimeraActivity8 = BackupSettingsChimeraActivity.this;
                                                                         backupSettingsChimeraActivity8.startActivity(BackupOptInChimeraActivity.a(backupSettingsChimeraActivity8.q, null, null, backupSettingsChimeraActivity8.w));
                                                                         backupSettingsChimeraActivity8.finish();
                                                                     }
                                                                 });
-                                                                a.y(new dfah() { // from class: djnl
-                                                                    @Override // defpackage.dfah
-                                                                    public final void gm(Exception exc) {
+                                                                a.y(new dhln() { // from class: dlze
+                                                                    @Override // defpackage.dhln
+                                                                    public final void gB(Exception exc) {
                                                                         BackupSettingsChimeraActivity.j.g("Failed to disable backup", exc, new Object[0]);
                                                                         r0.setEnabled(true);
                                                                         BackupSettingsChimeraActivity backupSettingsChimeraActivity8 = BackupSettingsChimeraActivity.this;
                                                                         backupSettingsChimeraActivity8.u.setClickable(true);
-                                                                        djlv.c(backupSettingsChimeraActivity8, R.string.companion_backup_turn_off_error_dialog_title, backupSettingsChimeraActivity8.v);
+                                                                        dlxo.c(backupSettingsChimeraActivity8, R.string.companion_backup_turn_off_error_dialog_title, backupSettingsChimeraActivity8.v);
                                                                     }
                                                                 });
                                                             }
                                                         });
-                                                        ebnaVar.F(backupSettingsChimeraActivity6.getString(R.string.common_cancel), null);
-                                                        ebnaVar.create().show();
+                                                        edzpVar.F(backupSettingsChimeraActivity6.getString(R.string.common_cancel), null);
+                                                        edzpVar.create().show();
                                                     }
                                                 });
-                                                dfaq f = backupSettingsChimeraActivity5.s.f(backupSettingsChimeraActivity5.q, dlujVar.c);
-                                                f.z(new dfak() { // from class: djnb
-                                                    @Override // defpackage.dfak
-                                                    public final void gn(Object obj4) {
+                                                dhlw f = backupSettingsChimeraActivity5.s.f(backupSettingsChimeraActivity5.q, dogaVar.c);
+                                                f.z(new dhlq() { // from class: dlyu
+                                                    @Override // defpackage.dhlq
+                                                    public final void gC(Object obj4) {
                                                         BackupSettingsChimeraActivity backupSettingsChimeraActivity6 = BackupSettingsChimeraActivity.this;
-                                                        dlum dlumVar = (dlum) obj4;
-                                                        ((TextView) backupSettingsChimeraActivity6.findViewById(R.id.account_storage_quota_text)).setText(backupSettingsChimeraActivity6.getString(R.string.backup_quota_label, new Object[]{djlh.a(backupSettingsChimeraActivity6, dlumVar.d), djlh.b(backupSettingsChimeraActivity6, dlumVar.c)}));
-                                                        ((LinearProgressIndicator) backupSettingsChimeraActivity6.findViewById(R.id.account_storage_progress_bar)).g((int) ((dlumVar.d / dlumVar.c) * 100.0d), true);
+                                                        dogd dogdVar = (dogd) obj4;
+                                                        ((TextView) backupSettingsChimeraActivity6.findViewById(R.id.account_storage_quota_text)).setText(backupSettingsChimeraActivity6.getString(R.string.backup_quota_label, new Object[]{dlxa.a(backupSettingsChimeraActivity6, dogdVar.d), dlxa.b(backupSettingsChimeraActivity6, dogdVar.c)}));
+                                                        ((LinearProgressIndicator) backupSettingsChimeraActivity6.findViewById(R.id.account_storage_progress_bar)).g((int) ((dogdVar.d / dogdVar.c) * 100.0d), true);
                                                     }
                                                 });
-                                                f.y(new dfah() { // from class: djnc
-                                                    @Override // defpackage.dfah
-                                                    public final void gm(Exception exc) {
+                                                f.y(new dhln() { // from class: dlyv
+                                                    @Override // defpackage.dhln
+                                                    public final void gB(Exception exc) {
                                                         BackupSettingsChimeraActivity.j.g("Failed to get storage quota data", exc, new Object[0]);
                                                     }
                                                 });
                                                 backupSettingsChimeraActivity5.a(Optional.empty());
-                                                dfaq e = backupSettingsChimeraActivity5.s.e(backupSettingsChimeraActivity5.q);
-                                                e.z(new dfak() { // from class: djnd
-                                                    @Override // defpackage.dfak
-                                                    public final void gn(Object obj4) {
-                                                        BackupSettingsChimeraActivity.this.a(Optional.of((dlui) obj4));
+                                                dhlw e = backupSettingsChimeraActivity5.s.e(backupSettingsChimeraActivity5.q);
+                                                e.z(new dhlq() { // from class: dlyw
+                                                    @Override // defpackage.dhlq
+                                                    public final void gC(Object obj4) {
+                                                        BackupSettingsChimeraActivity.this.a(Optional.of((dofz) obj4));
                                                     }
                                                 });
-                                                e.y(new dfah() { // from class: djnf
-                                                    @Override // defpackage.dfah
-                                                    public final void gm(Exception exc) {
+                                                e.y(new dhln() { // from class: dlyy
+                                                    @Override // defpackage.dhln
+                                                    public final void gB(Exception exc) {
                                                         BackupSettingsChimeraActivity.j.g("Failed to get size and time stats data", exc, new Object[0]);
                                                         BackupSettingsChimeraActivity backupSettingsChimeraActivity6 = BackupSettingsChimeraActivity.this;
                                                         backupSettingsChimeraActivity6.findViewById(R.id.backup_details_section).setVisibility(8);
@@ -471,24 +471,24 @@ public class BackupSettingsChimeraActivity extends qet {
                                         });
                                     }
                                 });
-                                g.y(new dfah() { // from class: djnj
-                                    @Override // defpackage.dfah
-                                    public final void gm(Exception exc) {
+                                g.y(new dhln() { // from class: dlzc
+                                    @Override // defpackage.dhln
+                                    public final void gB(Exception exc) {
                                         BackupSettingsChimeraActivity.j.g("Failed to get backup status", exc, new Object[0]);
                                         BackupSettingsChimeraActivity backupSettingsChimeraActivity4 = BackupSettingsChimeraActivity.this;
-                                        djlv.b(backupSettingsChimeraActivity4, R.string.companion_backup_status_fetch_error_dialog_title, backupSettingsChimeraActivity4.v);
+                                        dlxo.b(backupSettingsChimeraActivity4, R.string.companion_backup_status_fetch_error_dialog_title, backupSettingsChimeraActivity4.v);
                                     }
                                 });
                             }
                         });
                     }
                 });
-                bk.y(new dfah() { // from class: djnt
-                    @Override // defpackage.dfah
-                    public final void gm(Exception exc) {
+                bj.y(new dhln() { // from class: dlzm
+                    @Override // defpackage.dhln
+                    public final void gB(Exception exc) {
                         BackupSettingsChimeraActivity.j.g("Failed to get connected nodes", exc, new Object[0]);
                         BackupSettingsChimeraActivity backupSettingsChimeraActivity2 = BackupSettingsChimeraActivity.this;
-                        djlv.b(backupSettingsChimeraActivity2, R.string.common_something_went_wrong, backupSettingsChimeraActivity2.v);
+                        dlxo.b(backupSettingsChimeraActivity2, R.string.common_something_went_wrong, backupSettingsChimeraActivity2.v);
                     }
                 });
             }
@@ -499,7 +499,7 @@ public class BackupSettingsChimeraActivity extends qet {
         });
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         bundle.putString("node_id", this.q);
         bundle.putString("calling_package", this.w);

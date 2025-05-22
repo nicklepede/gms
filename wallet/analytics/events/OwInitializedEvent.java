@@ -3,21 +3,21 @@ package com.google.android.gms.wallet.analytics.events;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
-import defpackage.dige;
-import defpackage.disk;
-import defpackage.djdi;
+import defpackage.dkrp;
+import defpackage.dldv;
+import defpackage.dlpb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class OwInitializedEvent extends AnalyticsSessionStartEndEvent {
-    public static final Parcelable.Creator CREATOR = new dige();
+    public static final Parcelable.Creator CREATOR = new dkrp();
     public final BuyFlowConfig c;
     public final int d;
     public final int e;
     public final int f;
 
     public OwInitializedEvent(BuyFlowConfig buyFlowConfig, String str) {
-        this.m = disk.a();
+        this.m = dldv.a();
         this.a = str;
         this.b = a(buyFlowConfig, this.a);
         this.d = 2;
@@ -37,7 +37,7 @@ public class OwInitializedEvent extends AnalyticsSessionStartEndEvent {
         parcel.writeInt(this.d);
         parcel.writeInt(this.e);
         parcel.writeInt(this.f);
-        djdi.a(this.c, parcel, i);
+        dlpb.a(this.c, parcel, i);
     }
 
     public OwInitializedEvent(Parcel parcel) {

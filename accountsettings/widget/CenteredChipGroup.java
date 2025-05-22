@@ -4,13 +4,13 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import com.google.android.material.chip.ChipGroup;
-import defpackage.eivv;
-import defpackage.iuo;
+import defpackage.elja;
+import defpackage.iwe;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CenteredChipGroup extends ChipGroup {
     private final ArrayList f;
@@ -23,13 +23,13 @@ public class CenteredChipGroup extends ChipGroup {
     private final void f(List list, int i, int i2) {
         int right;
         int left;
-        int[] iArr = iuo.a;
+        int[] iArr = iwe.a;
         boolean z = getLayoutDirection() == 1;
         if (z) {
             right = ((View) list.get(0)).getRight();
-            left = ((View) eivv.p(list)).getLeft();
+            left = ((View) elja.p(list)).getLeft();
         } else {
-            right = ((View) eivv.p(list)).getRight();
+            right = ((View) elja.p(list)).getRight();
             left = ((View) list.get(0)).getLeft();
         }
         int i3 = right - left;
@@ -42,7 +42,7 @@ public class CenteredChipGroup extends ChipGroup {
         }
     }
 
-    @Override // defpackage.ebpf, android.view.ViewGroup, android.view.View
+    @Override // defpackage.eebu, android.view.ViewGroup, android.view.View
     protected final void onLayout(boolean z, int i, int i2, int i3, int i4) {
         super.onLayout(z, i, i2, i3, i4);
         if (getChildCount() == 0) {
@@ -53,7 +53,7 @@ public class CenteredChipGroup extends ChipGroup {
         arrayList.add(getChildAt(0));
         for (int i5 = 1; i5 < getChildCount(); i5++) {
             View childAt = getChildAt(i5);
-            View view = (View) eivv.p(arrayList);
+            View view = (View) elja.p(arrayList);
             int e = e(childAt);
             int e2 = e(view);
             if (childAt.getVisibility() != 8) {

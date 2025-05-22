@@ -7,145 +7,145 @@ import android.text.TextUtils;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.gms.googlehelp.common.HelpConfig;
-import defpackage.apta;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bivk;
-import defpackage.bjag;
-import defpackage.bjay;
-import defpackage.bjbk;
-import defpackage.bjdc;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.folw;
+import defpackage.arvr;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bkzz;
+import defpackage.blev;
+import defpackage.blfn;
+import defpackage.blfz;
+import defpackage.blhr;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.frep;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class MetricsIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("gH_MetricsIntentOp", asej.GOOGLE_HELP);
-    private bjay b;
+    private static final ausn a = ausn.b("gH_MetricsIntentOp", auid.GOOGLE_HELP);
+    private blfn b;
 
-    public static void a(Context context, bjdc bjdcVar, boolean z) {
+    public static void a(Context context, blhr blhrVar, boolean z) {
         GoogleHelp googleHelp = new GoogleHelp("gms:googlehelp");
-        if (!bjdcVar.h.isEmpty()) {
-            googleHelp.D = bjdcVar.h;
+        if (!blhrVar.h.isEmpty()) {
+            googleHelp.D = blhrVar.h;
         }
-        googleHelp.e = bjdcVar.d;
-        fecj fecjVar = (fecj) bjdcVar.iB(5, null);
-        fecjVar.X(bjdcVar);
-        if (((bjdc) fecjVar.b).s <= 0) {
+        googleHelp.e = blhrVar.d;
+        fgrc fgrcVar = (fgrc) blhrVar.iQ(5, null);
+        fgrcVar.X(blhrVar);
+        if (((blhr) fgrcVar.b).s <= 0) {
             long currentTimeMillis = System.currentTimeMillis();
-            if (!fecjVar.b.L()) {
-                fecjVar.U();
+            if (!fgrcVar.b.L()) {
+                fgrcVar.U();
             }
-            bjdc bjdcVar2 = (bjdc) fecjVar.b;
-            bjdcVar2.b |= 16777216;
-            bjdcVar2.s = currentTimeMillis;
+            blhr blhrVar2 = (blhr) fgrcVar.b;
+            blhrVar2.b |= 16777216;
+            blhrVar2.s = currentTimeMillis;
         }
-        if (bivk.b(folw.i()) && !bivk.b(folw.a.a().i())) {
+        if (bkzz.b(frep.i()) && !bkzz.b(frep.a.lK().i())) {
             if (z) {
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                bjdc.b((bjdc) fecjVar.b);
+                blhr.b((blhr) fgrcVar.b);
             }
-            bjag.a(context, ((bjdc) fecjVar.Q()).r(), googleHelp);
+            blev.a(context, ((blhr) fgrcVar.Q()).r(), googleHelp);
             return;
         }
         if (!z) {
-            bjag.a(context, ((bjdc) fecjVar.Q()).r(), googleHelp);
+            blev.a(context, ((blhr) fgrcVar.Q()).r(), googleHelp);
             return;
         }
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        bjdc.b((bjdc) fecjVar.b);
-        new ArrayList(1).add((bjdc) fecjVar.Q());
+        blhr.b((blhr) fgrcVar.b);
+        new ArrayList(1).add((blhr) fgrcVar.Q());
     }
 
     public static void b(Context context, String str, String str2, int i, int i2, boolean z) {
-        fecj v = bjdc.a.v();
+        fgrc v = blhr.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        bjdc bjdcVar = (bjdc) fecpVar;
-        bjdcVar.i = i - 1;
-        bjdcVar.b |= 256;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        blhr blhrVar = (blhr) fgriVar;
+        blhrVar.i = i - 1;
+        blhrVar.b |= 256;
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        bjdc bjdcVar2 = (bjdc) fecpVar2;
-        bjdcVar2.j = i2 - 1;
-        bjdcVar2.b |= 1024;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v.b;
+        blhr blhrVar2 = (blhr) fgriVar2;
+        blhrVar2.j = i2 - 1;
+        blhrVar2.b |= 1024;
+        if (!fgriVar2.L()) {
             v.U();
         }
-        bjdc bjdcVar3 = (bjdc) v.b;
+        blhr blhrVar3 = (blhr) v.b;
         str2.getClass();
-        bjdcVar3.b |= 2;
-        bjdcVar3.d = str2;
+        blhrVar3.b |= 2;
+        blhrVar3.d = str2;
         if (!TextUtils.isEmpty(str)) {
             if (!v.b.L()) {
                 v.U();
             }
-            bjdc bjdcVar4 = (bjdc) v.b;
+            blhr blhrVar4 = (blhr) v.b;
             str.getClass();
-            bjdcVar4.b |= 64;
-            bjdcVar4.h = str;
+            blhrVar4.b |= 64;
+            blhrVar4.h = str;
         }
-        a(context, (bjdc) v.Q(), z);
+        a(context, (blhr) v.Q(), z);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onDestroy() {
-        bjay bjayVar = this.b;
-        if (bjayVar != null) {
-            bjayVar.close();
+        blfn blfnVar = this.b;
+        if (blfnVar != null) {
+            blfnVar.close();
         }
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         if (intent == null) {
-            ((ejhf) a.i()).x("Null intent received.");
+            ((eluo) a.i()).x("Null intent received.");
             return;
         }
         if (!intent.hasExtra("EXTRA_METRIC_DATA")) {
-            ((ejhf) a.i()).x("No metric data sent!");
+            ((eluo) a.i()).x("No metric data sent!");
             return;
         }
         try {
-            fecj fecjVar = (fecj) bjdc.a.v().D(intent.getByteArrayExtra("EXTRA_METRIC_DATA"), febw.a());
-            bjbk.G(fecjVar, this);
-            bjdc bjdcVar = (bjdc) fecjVar.Q();
+            fgrc fgrcVar = (fgrc) blhr.a.v().D(intent.getByteArrayExtra("EXTRA_METRIC_DATA"), fgqp.a());
+            blfz.G(fgrcVar, this);
+            blhr blhrVar = (blhr) fgrcVar.Q();
             HelpConfig helpConfig = new HelpConfig();
-            helpConfig.b = bjdcVar.d;
-            helpConfig.e = bjdcVar.h;
-            helpConfig.C = bjdcVar.w;
-            helpConfig.c = bjdcVar.f;
+            helpConfig.b = blhrVar.d;
+            helpConfig.e = blhrVar.h;
+            helpConfig.C = blhrVar.w;
+            helpConfig.c = blhrVar.f;
             if (intent.hasExtra("EXTRA_GOOGLE_HELP")) {
                 helpConfig = HelpConfig.d((GoogleHelp) intent.getParcelableExtra("EXTRA_GOOGLE_HELP"), this);
-                bjbk.C(fecjVar, helpConfig, this);
+                blfz.C(fgrcVar, helpConfig, this);
             }
             if (helpConfig.h) {
-                if (bivk.b(folw.j())) {
-                    bjay bjayVar = new bjay(this);
-                    this.b = bjayVar;
-                    bjayVar.c((bjdc) fecjVar.Q());
+                if (bkzz.b(frep.j())) {
+                    blfn blfnVar = new blfn(this);
+                    this.b = blfnVar;
+                    blfnVar.c((blhr) fgrcVar.Q());
                 }
-                if (bivk.b(folw.i())) {
+                if (bkzz.b(frep.i())) {
                     Account account = helpConfig.d;
-                    bjbk.D(new apta(getApplicationContext(), folw.e(), account != null ? account.name : null), fecjVar, this);
+                    blfz.D(new arvr(getApplicationContext(), frep.e(), account != null ? account.name : null), fgrcVar, this);
                 }
             }
-        } catch (fedk e) {
-            ((ejhf) ((ejhf) a.i()).s(e)).x("Could not parse metric data.");
+        } catch (fgsd e) {
+            ((eluo) ((eluo) a.i()).s(e)).x("Could not parse metric data.");
         }
     }
 }

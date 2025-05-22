@@ -8,14 +8,14 @@ import com.google.android.enterprise.connectedapps.internal.BundlerType;
 import com.google.android.enterprise.connectedapps.parcelablewrappers.ParcelableList;
 import com.google.android.enterprise.connectedapps.parcelablewrappers.generated.AppWrapper;
 import defpackage.a;
-import defpackage.ackm;
-import defpackage.aczy;
+import defpackage.aekm;
+import defpackage.aezy;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class RecentAppsManager_Bundler implements Bundler {
-    public static final Parcelable.Creator CREATOR = new ackm();
+    public static final Parcelable.Creator CREATOR = new aekm();
 
     @Override // com.google.android.enterprise.connectedapps.internal.Bundler
     public final Object a(Bundle bundle, String str, BundlerType bundlerType) {
@@ -68,7 +68,7 @@ public final class RecentAppsManager_Bundler implements Bundler {
             if (!"com.google.android.gms.auth.proximity.phonehub.proto.App".equals(str2)) {
                 throw new IllegalArgumentException(a.a(str2, "Type ", " cannot be written to Bundle"));
             }
-            bundle.putParcelable(str, new AppWrapper((aczy) obj));
+            bundle.putParcelable(str, new AppWrapper((aezy) obj));
         }
     }
 
@@ -86,7 +86,7 @@ public final class RecentAppsManager_Bundler implements Bundler {
             if (!"com.google.android.gms.auth.proximity.phonehub.proto.App".equals(str)) {
                 throw new IllegalArgumentException(a.a(str, "Type ", " cannot be written to Parcel"));
             }
-            parcel.writeParcelable(new AppWrapper((aczy) obj), i);
+            parcel.writeParcelable(new AppWrapper((aezy) obj), i);
         }
     }
 
@@ -105,7 +105,7 @@ public final class RecentAppsManager_Bundler implements Bundler {
             return new RecentAppsManager$AppData[i];
         }
         if ("com.google.android.gms.auth.proximity.phonehub.proto.App".equals(str)) {
-            return new aczy[i];
+            return new aezy[i];
         }
         throw new IllegalArgumentException("Cannot create array of type ".concat(String.valueOf(str)));
     }

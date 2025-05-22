@@ -19,51 +19,51 @@ import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.R;
 import com.google.android.gms.quickstart.qr.QrCodeScannerChimeraActivity;
 import com.google.android.setupdesign.GlifLayout;
-import defpackage.arjz;
-import defpackage.arxo;
-import defpackage.asmf;
-import defpackage.asoe;
-import defpackage.asoq;
-import defpackage.axv;
-import defpackage.axy;
-import defpackage.cwxy;
-import defpackage.cwxz;
-import defpackage.cwyq;
-import defpackage.cwyw;
-import defpackage.cwyx;
-import defpackage.cwzf;
-import defpackage.edfq;
-import defpackage.edfr;
-import defpackage.eitj;
-import defpackage.ejdf;
-import defpackage.ejfh;
-import defpackage.fkhl;
-import defpackage.frql;
-import defpackage.fsdd;
-import defpackage.fsfn;
-import defpackage.iii;
-import defpackage.iit;
-import defpackage.iln;
-import defpackage.qet;
+import defpackage.atmo;
+import defpackage.auad;
+import defpackage.aupz;
+import defpackage.aury;
+import defpackage.ausk;
+import defpackage.aye;
+import defpackage.ayh;
+import defpackage.czhw;
+import defpackage.czhx;
+import defpackage.czio;
+import defpackage.cziu;
+import defpackage.cziv;
+import defpackage.czjd;
+import defpackage.efsl;
+import defpackage.efsm;
+import defpackage.elgo;
+import defpackage.elqm;
+import defpackage.elso;
+import defpackage.fmya;
+import defpackage.fukt;
+import defpackage.fuya;
+import defpackage.fvak;
+import defpackage.ijy;
+import defpackage.ikj;
+import defpackage.ind;
+import defpackage.rxx;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class QrCodeScannerChimeraActivity extends qet implements cwyx {
-    public static final arxo j = new arxo("QuickStart", "QrCodeScannerActivity");
-    public cwyw k;
-    public cwyq l;
-    private final asoq m = new asoq() { // from class: cwyz
-        @Override // defpackage.asoq
+public class QrCodeScannerChimeraActivity extends rxx implements cziv {
+    public static final auad j = new auad("QuickStart", "QrCodeScannerActivity");
+    public cziu k;
+    public czio l;
+    private final ausk m = new ausk() { // from class: czix
+        @Override // defpackage.ausk
         public final Object a(Object obj) {
-            return new cwyq((Context) obj);
+            return new czio((Context) obj);
         }
     };
-    private HashSet n = ejdf.i("https://signin.google");
+    private HashSet n = elqm.i("https://signin.google");
     private String o;
     private String p;
     private String q;
@@ -79,13 +79,13 @@ public class QrCodeScannerChimeraActivity extends qet implements cwyx {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // defpackage.cwyx
+    @Override // defpackage.cziv
     public final void a(List list) {
         VibrationEffect createOneShot;
         Iterator it = this.n.iterator();
         while (it.hasNext()) {
             String str = (String) it.next();
-            ejfh it2 = ((eitj) list).iterator();
+            elso it2 = ((elgo) list).iterator();
             while (it2.hasNext()) {
                 String str2 = (String) it2.next();
                 if (str2.startsWith(str)) {
@@ -109,26 +109,26 @@ public class QrCodeScannerChimeraActivity extends qet implements cwyx {
 
     public final void k(int i, Intent intent) {
         j.d("finishWithResult: %d", Integer.valueOf(i));
-        cwyw cwywVar = this.k;
-        if (cwywVar != null) {
-            if (cwywVar.a()) {
-                cwyw.a.m("startDetecting() called but lifecycle is destroyed", new Object[0]);
+        cziu cziuVar = this.k;
+        if (cziuVar != null) {
+            if (cziuVar.a()) {
+                cziu.a.m("startDetecting() called but lifecycle is destroyed", new Object[0]);
             } else {
-                synchronized (cwywVar.c) {
-                    cwyw.a.j("stopDetecting()", new Object[0]);
-                    cwywVar.k = null;
+                synchronized (cziuVar.c) {
+                    cziu.a.j("stopDetecting()", new Object[0]);
+                    cziuVar.k = null;
                 }
-                axv axvVar = cwywVar.g;
-                synchronized (axvVar.a) {
-                    axy axyVar = axvVar.b;
-                    if (axyVar != null) {
-                        axyVar.f(null, null);
+                aye ayeVar = cziuVar.g;
+                synchronized (ayeVar.a) {
+                    ayh ayhVar = ayeVar.b;
+                    if (ayhVar != null) {
+                        ayhVar.f(null, null);
                     }
-                    if (axvVar.d != null) {
-                        axvVar.J();
+                    if (ayeVar.d != null) {
+                        ayeVar.J();
                     }
-                    axvVar.c = null;
-                    axvVar.d = null;
+                    ayeVar.c = null;
+                    ayeVar.d = null;
                 }
             }
         }
@@ -140,23 +140,23 @@ public class QrCodeScannerChimeraActivity extends qet implements cwyx {
         finish();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
-        new AlertDialog.Builder(this).setTitle(this.o).setMessage(this.p).setNegativeButton(this.r, new DialogInterface.OnClickListener() { // from class: cwzc
+        new AlertDialog.Builder(this).setTitle(this.o).setMessage(this.p).setNegativeButton(this.r, new DialogInterface.OnClickListener() { // from class: czja
             @Override // android.content.DialogInterface.OnClickListener
             public final void onClick(DialogInterface dialogInterface, int i) {
                 QrCodeScannerChimeraActivity.this.k(5001, null);
             }
-        }).setPositiveButton(this.q, new DialogInterface.OnClickListener() { // from class: cwzd
+        }).setPositiveButton(this.q, new DialogInterface.OnClickListener() { // from class: czjb
             @Override // android.content.DialogInterface.OnClickListener
             public final void onClick(DialogInterface dialogInterface, int i) {
-                arxo arxoVar = QrCodeScannerChimeraActivity.j;
+                auad auadVar = QrCodeScannerChimeraActivity.j;
                 dialogInterface.dismiss();
             }
         }).show();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         ArrayList<String> stringArrayListExtra;
         View o;
@@ -164,25 +164,25 @@ public class QrCodeScannerChimeraActivity extends qet implements cwyx {
         ViewGroup.MarginLayoutParams marginLayoutParams;
         setRequestedOrientation(1);
         super.onCreate(bundle);
-        arxo arxoVar = j;
-        arxoVar.d("onCreate()", new Object[0]);
-        if (fkhl.c()) {
-            arjz.a(this);
+        auad auadVar = j;
+        auadVar.d("onCreate()", new Object[0]);
+        if (fmya.c()) {
+            atmo.a(this);
         }
-        cwxz.a(this);
-        if (fsdd.g()) {
+        czhx.a(this);
+        if (fuya.g()) {
             setContentView(R.layout.quickstart_qr_code_scanner_layout_v2);
         } else {
             setContentView(R.layout.quickstart_qr_code_scanner_layout);
         }
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.preview_view_container);
-        linearLayout.setOutlineProvider(new cwzf());
+        linearLayout.setOutlineProvider(new czjd());
         linearLayout.setClipToOutline(true);
         GlifLayout glifLayout = (GlifLayout) findViewById(R.id.glif_layout);
         if (glifLayout != null) {
             int i = getResources().getConfiguration().orientation;
             if (i == 1) {
-                if (glifLayout.gK() && (o2 = glifLayout.o(R.id.sud_layout_content)) != null && (o2.getLayoutParams() instanceof ViewGroup.MarginLayoutParams) && (marginLayoutParams = (ViewGroup.MarginLayoutParams) o2.getLayoutParams()) != null) {
+                if (glifLayout.ha() && (o2 = glifLayout.o(R.id.sud_layout_content)) != null && (o2.getLayoutParams() instanceof ViewGroup.MarginLayoutParams) && (marginLayoutParams = (ViewGroup.MarginLayoutParams) o2.getLayoutParams()) != null) {
                     marginLayoutParams.setMargins(0, marginLayoutParams.topMargin, 0, marginLayoutParams.bottomMargin);
                 }
             } else if (i == 2 && (o = glifLayout.o(R.id.sud_layout_content)) != null) {
@@ -194,42 +194,42 @@ public class QrCodeScannerChimeraActivity extends qet implements cwyx {
             this.n = new HashSet(stringArrayListExtra);
         }
         GlifLayout glifLayout2 = (GlifLayout) findViewById(R.id.glif_layout);
-        String b = cwxy.b(this);
+        String b = czhw.b(this);
         String stringExtra = intent.getStringExtra("scanner-title");
         if (stringExtra != null) {
             b = stringExtra;
         }
         glifLayout2.b(b);
-        glifLayout2.G(cwxy.a(this));
+        glifLayout2.G(czhw.a(this));
         this.o = l(intent, "cancel-dialog-title", R.string.quickstart_qr_code_scanner_exit_title);
-        frql frqlVar = frql.a;
-        this.p = l(intent, "cancel-dialog-message", true != frqlVar.a().e() ? R.string.quickstart_qr_code_scanner_exit_description : R.string.quickstart_qr_code_scanner_exit_detailed_description);
+        fukt fuktVar = fukt.a;
+        this.p = l(intent, "cancel-dialog-message", true != fuktVar.lK().e() ? R.string.quickstart_qr_code_scanner_exit_description : R.string.quickstart_qr_code_scanner_exit_detailed_description);
         this.q = l(intent, "positive-button-text", R.string.common_try_again);
         this.r = l(intent, "negative-button-text", R.string.common_cancel);
         if (intent != null) {
             this.s = intent.getBooleanExtra("pin-fallback-supported", false);
         }
-        if (!frql.c().isEmpty()) {
-            String c = frql.c();
-            arxoVar.h("Returning fake QR code contents: %s", c);
+        if (!fukt.c().isEmpty()) {
+            String c = fukt.c();
+            auadVar.h("Returning fake QR code contents: %s", c);
             Intent intent2 = new Intent();
             intent2.putExtra("qr-code-contents", c);
             k(-1, intent2);
             return;
         }
-        final cwyq cwyqVar = (cwyq) this.m.a(this);
-        this.l = cwyqVar;
-        new asmf(1, 9).submit(new Callable() { // from class: cwyp
+        final czio czioVar = (czio) this.m.a(this);
+        this.l = czioVar;
+        new aupz(1, 9).submit(new Callable() { // from class: czin
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                cwyq cwyqVar2 = cwyq.this;
-                boolean g = asow.g(cwyqVar2.b, "barhopper_qr_only_jni");
-                synchronized (cwyqVar2.a) {
-                    cwyqVar2.d.set(g);
+                czio czioVar2 = czio.this;
+                boolean g = ausq.g(czioVar2.b, "barhopper_qr_only_jni");
+                synchronized (czioVar2.a) {
+                    czioVar2.d.set(g);
                 }
                 return null;
             }
-        }).hn(new Runnable() { // from class: cwza
+        }).hD(new Runnable() { // from class: cziy
             /* JADX WARN: Code restructure failed: missing block: B:56:0x00a5, code lost:
             
                 r3 = move-exception;
@@ -248,46 +248,46 @@ public class QrCodeScannerChimeraActivity extends qet implements cwyx {
                     Method dump skipped, instructions count: 343
                     To view this dump change 'Code comments level' option to 'DEBUG'
                 */
-                throw new UnsupportedOperationException("Method not decompiled: defpackage.cwza.run():void");
+                throw new UnsupportedOperationException("Method not decompiled: defpackage.cziy.run():void");
             }
-        }, iln.g(this));
-        if (frql.a.a().d()) {
-            edfq edfqVar = (edfq) ((GlifLayout) findViewById(R.id.glif_layout)).q(edfq.class);
-            edfr edfrVar = new edfr(this);
-            edfrVar.b(R.string.common_cancel);
-            edfrVar.b = new View.OnClickListener() { // from class: cwyy
+        }, ind.g(this));
+        if (fuktVar.lK().d()) {
+            efsl efslVar = (efsl) ((GlifLayout) findViewById(R.id.glif_layout)).q(efsl.class);
+            efsm efsmVar = new efsm(this);
+            efsmVar.b(R.string.common_cancel);
+            efsmVar.b = new View.OnClickListener() { // from class: cziw
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     QrCodeScannerChimeraActivity.j.d("onAction() with actionId: %d", Integer.valueOf(ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS));
                     QrCodeScannerChimeraActivity.this.onBackPressed();
                 }
             };
-            edfqVar.c(edfrVar.a());
+            efslVar.c(efsmVar.a());
         }
-        if (fsfn.o() && this.s) {
-            arxoVar.d("setupPinFallbackEntryPoint()", new Object[0]);
+        if (fvak.o() && this.s) {
+            auadVar.d("setupPinFallbackEntryPoint()", new Object[0]);
             GlifLayout glifLayout3 = (GlifLayout) findViewById(R.id.glif_layout);
             Button button = (Button) glifLayout3.findViewById(R.id.pin_fallback);
-            button.setOnClickListener(new View.OnClickListener() { // from class: cwzb
+            button.setOnClickListener(new View.OnClickListener() { // from class: cziz
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     QrCodeScannerChimeraActivity.this.k(5003, null);
                 }
             });
             button.setVisibility(0);
-            if (frqlVar.a().b() && getResources().getConfiguration().orientation == 2 && asoe.l(this)) {
-                arxoVar.d("Adjusting layout for Pixel landscape mode", new Object[0]);
+            if (fuktVar.lK().b() && getResources().getConfiguration().orientation == 2 && aury.l(this)) {
+                auadVar.d("Adjusting layout for Pixel landscape mode", new Object[0]);
                 ConstraintLayout constraintLayout = (ConstraintLayout) glifLayout3.findViewById(R.id.constraint_layout);
-                iit iitVar = new iit();
-                iitVar.e(constraintLayout);
-                iitVar.d(R.id.preview_view_container, 4);
-                iitVar.c(constraintLayout);
-                iii iiiVar = (iii) ((LinearLayout) glifLayout3.findViewById(R.id.preview_view_container)).getLayoutParams();
-                if (iiiVar != null) {
+                ikj ikjVar = new ikj();
+                ikjVar.e(constraintLayout);
+                ikjVar.d(R.id.preview_view_container, 4);
+                ikjVar.c(constraintLayout);
+                ijy ijyVar = (ijy) ((LinearLayout) glifLayout3.findViewById(R.id.preview_view_container)).getLayoutParams();
+                if (ijyVar != null) {
                     int dimensionPixelSize = getResources().getDimensionPixelSize(R.dimen.quickstart_qr_code_scanner_landscape_padding_horizontal);
-                    iiiVar.topMargin = getResources().getDimensionPixelSize(R.dimen.quickstart_qr_code_scanner_landscape_top_margin);
-                    iiiVar.leftMargin = dimensionPixelSize;
-                    iiiVar.rightMargin = dimensionPixelSize;
+                    ijyVar.topMargin = getResources().getDimensionPixelSize(R.dimen.quickstart_qr_code_scanner_landscape_top_margin);
+                    ijyVar.leftMargin = dimensionPixelSize;
+                    ijyVar.rightMargin = dimensionPixelSize;
                 }
             }
         }

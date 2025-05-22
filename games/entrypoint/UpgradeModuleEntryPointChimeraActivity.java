@@ -2,22 +2,22 @@ package com.google.android.gms.games.entrypoint;
 
 import android.content.Intent;
 import android.os.Bundle;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bhlt;
-import defpackage.bhsf;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bjqi;
+import defpackage.bjwu;
 import defpackage.bp;
 import defpackage.dg;
 import defpackage.ew;
-import defpackage.fiwq;
-import defpackage.fiwu;
-import defpackage.qet;
+import defpackage.flmn;
+import defpackage.flmr;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class UpgradeModuleEntryPointChimeraActivity extends qet implements fiwu {
-    private static final asot j = asot.b("UpgradeModuleActivity", asej.GAMES);
-    private bhlt k;
+public final class UpgradeModuleEntryPointChimeraActivity extends rxx implements flmr {
+    private static final ausn j = ausn.b("UpgradeModuleActivity", auid.GAMES);
+    private bjqi k;
 
     private final void k() {
         Intent intent = getIntent();
@@ -29,34 +29,34 @@ public final class UpgradeModuleEntryPointChimeraActivity extends qet implements
         if (stringExtra2 == null) {
             stringExtra2 = "";
         }
-        int i = bhsf.ag;
+        int i = bjwu.ag;
         Bundle bundle = new Bundle();
         bundle.putString("game_package_name", stringExtra);
         bundle.putString("game_id", stringExtra2);
-        bhsf bhsfVar = new bhsf();
-        bhsfVar.setCancelable(false);
-        bhsfVar.setArguments(bundle);
+        bjwu bjwuVar = new bjwu();
+        bjwuVar.setCancelable(false);
+        bjwuVar.setArguments(bundle);
         ew supportFragmentManager = getSupportFragmentManager();
         bp bpVar = new bp(supportFragmentManager);
         dg h = supportFragmentManager.h("play_games_upgrade");
         if (h != null) {
-            bpVar.n(h);
+            bpVar.m(h);
         }
-        bpVar.v(bhsfVar, "play_games_upgrade");
+        bpVar.v(bjwuVar, "play_games_upgrade");
         bpVar.b();
     }
 
-    @Override // defpackage.fiwu
-    public final fiwq a() {
+    @Override // defpackage.flmr
+    public final flmn a() {
         return this.k.c();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
-        bhlt bhltVar = this.k;
-        if (bhltVar != null) {
-            bhltVar.b().a(i, intent);
+        bjqi bjqiVar = this.k;
+        if (bjqiVar != null) {
+            bjqiVar.b().a(i, intent);
         }
     }
 
@@ -64,7 +64,7 @@ public final class UpgradeModuleEntryPointChimeraActivity extends qet implements
     
         if (r7 >= r1) goto L36;
      */
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -77,11 +77,11 @@ public final class UpgradeModuleEntryPointChimeraActivity extends qet implements
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.games.entrypoint.UpgradeModuleEntryPointChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
-        bhlt bhltVar = this.k;
-        if (bhltVar != null) {
-            bhltVar.a().c(bundle);
+        bjqi bjqiVar = this.k;
+        if (bjqiVar != null) {
+            bjqiVar.a().c(bundle);
         }
         super.onSaveInstanceState(bundle);
     }

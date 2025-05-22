@@ -5,18 +5,18 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import com.google.android.chimera.IntentOperation;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.ctkm;
-import defpackage.ctnp;
-import defpackage.cuey;
-import defpackage.cufp;
-import defpackage.ekwj;
-import defpackage.ekwk;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.frhu;
+import defpackage.cvts;
+import defpackage.cvwv;
+import defpackage.cwof;
+import defpackage.cwow;
+import defpackage.enjv;
+import defpackage.enjw;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fubp;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ContactsLoggerIntentOperation extends IntentOperation {
     /* JADX WARN: Code restructure failed: missing block: B:63:0x01ba, code lost:
@@ -36,26 +36,26 @@ public class ContactsLoggerIntentOperation extends IntentOperation {
     }
 
     private final void b() {
-        ctnp.a(getApplicationContext()).edit().putLong("intent-received-timestamp", System.currentTimeMillis()).apply();
+        cvwv.a(getApplicationContext()).edit().putLong("intent-received-timestamp", System.currentTimeMillis()).apply();
     }
 
     private final boolean c(Intent intent) {
         long j;
-        long currentTimeMillis = System.currentTimeMillis() - ctnp.a(getApplicationContext()).getLong("intent-received-timestamp", 0L);
+        long currentTimeMillis = System.currentTimeMillis() - cvwv.a(getApplicationContext()).getLong("intent-received-timestamp", 0L);
         String action = intent.getAction();
         if ("com.google.android.gms.icing.action.CONTACT_CHANGED".equals(action)) {
             TimeUnit timeUnit = TimeUnit.MINUTES;
-            long C = frhu.a.a().C();
+            long C = fubp.a.lK().C();
             Long.valueOf(C).getClass();
             j = timeUnit.toMillis(C);
         } else if ("com.google.android.gms.udc.action.SETTING_CHANGED".equals(action)) {
             TimeUnit timeUnit2 = TimeUnit.MINUTES;
-            long F = frhu.a.a().F();
+            long F = fubp.a.lK().F();
             Long.valueOf(F).getClass();
             j = timeUnit2.toMillis(F);
         } else if ("android.intent.action.ACTION_POWER_CONNECTED".equals(action)) {
             TimeUnit timeUnit3 = TimeUnit.HOURS;
-            long E = frhu.a.a().E();
+            long E = fubp.a.lK().E();
             Long.valueOf(E).getClass();
             j = timeUnit3.toMillis(E);
         } else {
@@ -70,16 +70,16 @@ public class ContactsLoggerIntentOperation extends IntentOperation {
 
     private static boolean d() {
         Boolean valueOf;
-        valueOf = Boolean.valueOf(frhu.a.a().ak());
-        return (valueOf.booleanValue() || cufp.a().booleanValue()) ? false : true;
+        valueOf = Boolean.valueOf(fubp.a.lK().ak());
+        return (valueOf.booleanValue() || cwow.a().booleanValue()) ? false : true;
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Boolean valueOf;
         try {
-            cufp.O();
-            valueOf = Boolean.valueOf(frhu.a.a().aq());
+            cwow.N();
+            valueOf = Boolean.valueOf(fubp.a.lK().aq());
             if (valueOf.booleanValue()) {
                 String action = intent.getAction();
                 boolean z = false;
@@ -88,37 +88,37 @@ public class ContactsLoggerIntentOperation extends IntentOperation {
                         return;
                     }
                     if (!"android.intent.action.ACTION_POWER_CONNECTED".equals(action)) {
-                        cuey.n("ContactsLoggerIntentOperation", "Received unexpected broadcast: %s", action);
+                        cwof.n("CBR_ContactsLoggerIntentOperation", "Received unexpected broadcast: %s", action);
                         return;
                     }
                     if (d()) {
                         return;
                     }
                     Context applicationContext = getApplicationContext();
-                    ctkm a = ctkm.a();
-                    if (ctkm.a.nextDouble() < 1.0E-4d) {
-                        fecj v = ekwk.a.v();
+                    cvts a = cvts.a();
+                    if (cvts.a.nextDouble() < 1.0E-4d) {
+                        fgrc v = enjw.a.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ekwk ekwkVar = (ekwk) v.b;
-                        ekwkVar.b |= 32768;
-                        ekwkVar.k = true;
-                        a.b((ekwk) v.Q());
+                        enjw enjwVar = (enjw) v.b;
+                        enjwVar.b |= 32768;
+                        enjwVar.k = true;
+                        a.b((enjw) v.Q());
                     }
                     if (c(intent)) {
                         return;
                     }
                     b();
-                    ctkm a2 = ctkm.a();
-                    fecj v2 = ekwk.a.v();
+                    cvts a2 = cvts.a();
+                    fgrc v2 = enjw.a.v();
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    ekwk ekwkVar2 = (ekwk) v2.b;
-                    ekwkVar2.b |= 4096;
-                    ekwkVar2.i = true;
-                    a2.b((ekwk) v2.Q());
+                    enjw enjwVar2 = (enjw) v2.b;
+                    enjwVar2.b |= 4096;
+                    enjwVar2.i = true;
+                    a2.b((enjw) v2.Q());
                     a(applicationContext, true);
                     return;
                 }
@@ -126,20 +126,20 @@ public class ContactsLoggerIntentOperation extends IntentOperation {
                     return;
                 }
                 Context applicationContext2 = getApplicationContext();
-                ctkm a3 = ctkm.a();
-                if (ctkm.a.nextDouble() < 1.0E-4d) {
-                    fecj v3 = ekwk.a.v();
+                cvts a3 = cvts.a();
+                if (cvts.a.nextDouble() < 1.0E-4d) {
+                    fgrc v3 = enjw.a.v();
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    ekwk ekwkVar3 = (ekwk) v3.b;
-                    ekwkVar3.b |= 8192;
-                    ekwkVar3.j = true;
-                    a3.b((ekwk) v3.Q());
+                    enjw enjwVar3 = (enjw) v3.b;
+                    enjwVar3.b |= 8192;
+                    enjwVar3.j = true;
+                    a3.b((enjw) v3.Q());
                 }
                 boolean z2 = intent.getExtras().getBoolean("com.google.android.gms.icing.extra.isSignificant", false);
                 if (c(intent)) {
-                    SharedPreferences a4 = ctnp.a(applicationContext2);
+                    SharedPreferences a4 = cvwv.a(applicationContext2);
                     boolean z3 = a4.getBoolean("contacts-logger-pending-significant-update", false);
                     if (!z2 || z3) {
                         return;
@@ -148,46 +148,46 @@ public class ContactsLoggerIntentOperation extends IntentOperation {
                     return;
                 }
                 b();
-                ctkm a5 = ctkm.a();
-                fecj v4 = ekwk.a.v();
+                cvts a5 = cvts.a();
+                fgrc v4 = enjw.a.v();
                 if (!v4.b.L()) {
                     v4.U();
                 }
-                fecp fecpVar = v4.b;
-                ekwk ekwkVar4 = (ekwk) fecpVar;
-                ekwkVar4.b |= 8;
-                ekwkVar4.c = true;
+                fgri fgriVar = v4.b;
+                enjw enjwVar4 = (enjw) fgriVar;
+                enjwVar4.b |= 8;
+                enjwVar4.c = true;
                 if (z2) {
-                    if (!fecpVar.L()) {
+                    if (!fgriVar.L()) {
                         v4.U();
                     }
-                    ekwk ekwkVar5 = (ekwk) v4.b;
-                    ekwkVar5.b |= 16;
-                    ekwkVar5.d = true;
+                    enjw enjwVar5 = (enjw) v4.b;
+                    enjwVar5.b |= 16;
+                    enjwVar5.d = true;
                     z = true;
                 }
-                a5.b((ekwk) v4.Q());
+                a5.b((enjw) v4.Q());
                 a(applicationContext2, z);
             }
         } catch (Exception unused) {
-            ctkm a6 = ctkm.a();
-            fecj v5 = ekwj.a.v();
+            cvts a6 = cvts.a();
+            fgrc v5 = enjv.a.v();
             if (!v5.b.L()) {
                 v5.U();
             }
-            ekwj ekwjVar = (ekwj) v5.b;
-            ekwjVar.b |= 256;
-            ekwjVar.k = true;
-            ekwj ekwjVar2 = (ekwj) v5.Q();
-            fecj v6 = ekwk.a.v();
+            enjv enjvVar = (enjv) v5.b;
+            enjvVar.b |= 256;
+            enjvVar.h = true;
+            enjv enjvVar2 = (enjv) v5.Q();
+            fgrc v6 = enjw.a.v();
             if (!v6.b.L()) {
                 v6.U();
             }
-            ekwk ekwkVar6 = (ekwk) v6.b;
-            ekwjVar2.getClass();
-            ekwkVar6.m = ekwjVar2;
-            ekwkVar6.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_MULTI_LINE;
-            a6.b((ekwk) v6.Q());
+            enjw enjwVar6 = (enjw) v6.b;
+            enjvVar2.getClass();
+            enjwVar6.m = enjvVar2;
+            enjwVar6.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_MULTI_LINE;
+            a6.b((enjw) v6.Q());
         }
     }
 }

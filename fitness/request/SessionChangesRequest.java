@@ -5,38 +5,38 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bgir;
-import defpackage.bglk;
+import defpackage.atzr;
+import defpackage.binh;
+import defpackage.biqa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SessionChangesRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bglk();
+    public static final Parcelable.Creator CREATOR = new biqa();
     public final long a;
     public final int b;
-    public final bgir c;
+    public final binh c;
 
     public SessionChangesRequest(IBinder iBinder, long j, int i) {
-        bgir bgirVar;
+        binh binhVar;
         if (iBinder == null) {
-            bgirVar = null;
+            binhVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.ISessionChangesCallback");
-            bgirVar = queryLocalInterface instanceof bgir ? (bgir) queryLocalInterface : new bgir(iBinder);
+            binhVar = queryLocalInterface instanceof binh ? (binh) queryLocalInterface : new binh(iBinder);
         }
-        this.c = bgirVar;
+        this.c = binhVar;
         this.a = j;
         this.b = i;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        bgir bgirVar = this.c;
-        arxc.D(parcel, 1, bgirVar == null ? null : bgirVar.a);
-        arxc.q(parcel, 2, this.a);
-        arxc.o(parcel, 3, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        binh binhVar = this.c;
+        atzr.D(parcel, 1, binhVar == null ? null : binhVar.a);
+        atzr.q(parcel, 2, this.a);
+        atzr.o(parcel, 3, this.b);
+        atzr.c(parcel, a);
     }
 }

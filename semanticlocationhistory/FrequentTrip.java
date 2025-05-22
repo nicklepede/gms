@@ -3,16 +3,16 @@ package com.google.android.gms.semanticlocationhistory;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dacg;
-import defpackage.dacp;
-import defpackage.dacq;
+import defpackage.atzr;
+import defpackage.dcmo;
+import defpackage.dcmx;
+import defpackage.dcmy;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class FrequentTrip extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dacg();
+    public static final Parcelable.Creator CREATOR = new dcmo();
     public final List a;
     public final Metadata b;
     public final List c;
@@ -22,9 +22,9 @@ public class FrequentTrip extends AbstractSafeParcelable {
     public final float g;
     public final int h;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Metadata extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dacp();
+        public static final Parcelable.Creator CREATOR = new dcmx();
         public final long a;
 
         public Metadata(long j) {
@@ -34,15 +34,15 @@ public class FrequentTrip extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             long j = this.a;
-            int a = arxc.a(parcel);
-            arxc.q(parcel, 1, j);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.q(parcel, 1, j);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class ModeDistribution extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dacq();
+        public static final Parcelable.Creator CREATOR = new dcmy();
         public final int a;
         public final float b;
 
@@ -54,10 +54,10 @@ public class FrequentTrip extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             int i2 = this.a;
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 1, i2);
-            arxc.l(parcel, 2, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 1, i2);
+            atzr.l(parcel, 2, this.b);
+            atzr.c(parcel, a);
         }
     }
 
@@ -75,15 +75,15 @@ public class FrequentTrip extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.y(parcel, 3, this.c, false);
-        arxc.o(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.l(parcel, 7, this.g);
-        arxc.o(parcel, 8, this.h);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.y(parcel, 3, this.c, false);
+        atzr.o(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.l(parcel, 7, this.g);
+        atzr.o(parcel, 8, this.h);
+        atzr.c(parcel, a);
     }
 }

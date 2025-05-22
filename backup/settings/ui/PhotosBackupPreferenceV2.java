@@ -8,50 +8,50 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.TextView;
 import com.google.android.gms.backup.settings.ui.PhotosBackupPreferenceV2;
-import defpackage.ahxo;
-import defpackage.ahyx;
-import defpackage.aiaa;
-import defpackage.aiab;
-import defpackage.aiah;
-import defpackage.ajwx;
-import defpackage.ajzl;
-import defpackage.akbh;
-import defpackage.akbu;
-import defpackage.akbw;
-import defpackage.asmf;
-import defpackage.byhr;
-import defpackage.eijr;
-import defpackage.eitj;
-import defpackage.ensv;
-import defpackage.kmp;
-import defpackage.qfp;
+import defpackage.ajye;
+import defpackage.ajzn;
+import defpackage.akaq;
+import defpackage.akar;
+import defpackage.akax;
+import defpackage.alxv;
+import defpackage.amaj;
+import defpackage.amcf;
+import defpackage.amcs;
+import defpackage.amcu;
+import defpackage.aupz;
+import defpackage.caqj;
+import defpackage.ekww;
+import defpackage.elgo;
+import defpackage.eqgo;
+import defpackage.mfa;
+import defpackage.ryt;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class PhotosBackupPreferenceV2 extends PhotosPreference {
-    private final ensv G;
-    public final akbu a;
+    private final eqgo G;
+    public final amcs a;
     public final Handler b;
     public TextView c;
     public final int d;
     public boolean e;
-    public final qfp f;
-    public final akbw g;
-    public final akbh h;
-    public final aiab i;
+    public final ryt f;
+    public final amcu g;
+    public final amcf h;
+    public final akar i;
 
     public PhotosBackupPreferenceV2(final Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, new akbu(context, ahxo.b(context), new eijr() { // from class: akbq
-            @Override // defpackage.eijr
-            public final Object a() {
-                return ahyj.a(context);
+        this(context, attributeSet, new amcs(context, ajye.b(context), new ekww() { // from class: amco
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return ajyz.a(context);
             }
-        }, new eijr() { // from class: akbr
-            @Override // defpackage.eijr
-            public final Object a() {
-                return ahxq.a(context);
+        }, new ekww() { // from class: amcp
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return ajyg.a(context);
             }
         }));
     }
@@ -59,7 +59,7 @@ public final class PhotosBackupPreferenceV2 extends PhotosPreference {
     @Override // androidx.preference.Preference
     protected final void E() {
         super.V();
-        this.G.execute(new Runnable() { // from class: ajzg
+        this.G.execute(new Runnable() { // from class: amae
             @Override // java.lang.Runnable
             public final void run() {
                 PhotosBackupPreferenceV2 photosBackupPreferenceV2 = PhotosBackupPreferenceV2.this;
@@ -70,17 +70,17 @@ public final class PhotosBackupPreferenceV2 extends PhotosPreference {
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        this.c = (TextView) Objects.requireNonNull((TextView) kmpVar.D(R.id.summary));
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        this.c = (TextView) Objects.requireNonNull((TextView) mfaVar.D(R.id.summary));
     }
 
     @Override // com.google.android.gms.backup.settings.ui.PhotosPreference
     public final String af() {
-        akbu akbuVar = this.a;
-        aiah aiahVar = akbuVar.g.h() ? ((ahyx) akbuVar.g.c()).e : null;
-        if (aiahVar != null) {
-            return aiahVar.b;
+        amcs amcsVar = this.a;
+        akax akaxVar = amcsVar.g.h() ? ((ajzn) amcsVar.g.c()).e : null;
+        if (akaxVar != null) {
+            return akaxVar.b;
         }
         return null;
     }
@@ -88,37 +88,37 @@ public final class PhotosBackupPreferenceV2 extends PhotosPreference {
     @Override // com.google.android.gms.backup.settings.ui.BackupPreference
     public final List k(Account account) {
         String str = account == null ? null : account.name;
-        final akbu akbuVar = this.a;
-        final aiab aiabVar = this.i;
-        String str2 = akbuVar.h;
-        akbuVar.h = str;
-        if (str2 != null && akbuVar.i != null && !Objects.equals(str2, str)) {
-            akbuVar.a().execute(new Runnable() { // from class: akbo
+        final amcs amcsVar = this.a;
+        final akar akarVar = this.i;
+        String str2 = amcsVar.h;
+        amcsVar.h = str;
+        if (str2 != null && amcsVar.i != null && !Objects.equals(str2, str)) {
+            amcsVar.a().execute(new Runnable() { // from class: amcm
                 @Override // java.lang.Runnable
                 public final void run() {
-                    akbu akbuVar2 = akbu.this;
-                    akbuVar2.b(akbuVar2.a.c(), aiabVar);
+                    amcs amcsVar2 = amcs.this;
+                    amcsVar2.b(amcsVar2.a.c(), akarVar);
                 }
             });
         }
-        return eitj.l(new ajzl(this));
+        return elgo.l(new amaj(this));
     }
 
-    public PhotosBackupPreferenceV2(Context context, AttributeSet attributeSet, akbu akbuVar) {
+    public PhotosBackupPreferenceV2(Context context, AttributeSet attributeSet, amcs amcsVar) {
         super(context, attributeSet);
-        this.G = new asmf(1, 9);
+        this.G = new aupz(1, 9);
         this.e = false;
-        aiaa a = aiab.a();
+        akaq a = akar.a();
         a.c(2);
         this.i = a.a();
-        this.b = new byhr(context.getMainLooper());
+        this.b = new caqj(context.getMainLooper());
         H(false);
-        n(ajwx.h.a(context));
-        this.a = akbuVar;
-        qfp qfpVar = (qfp) context;
-        this.f = qfpVar;
-        this.h = new akbh(qfpVar);
-        this.g = new akbw(qfpVar);
+        n(alxv.h.a(context));
+        this.a = amcsVar;
+        ryt rytVar = (ryt) context;
+        this.f = rytVar;
+        this.h = new amcf(rytVar);
+        this.g = new amcu(rytVar);
         TypedValue typedValue = new TypedValue();
         context.getTheme().resolveAttribute(R.attr.textColorSecondary, typedValue, true);
         this.d = typedValue.resourceId;

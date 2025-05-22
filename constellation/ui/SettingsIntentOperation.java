@@ -1,23 +1,23 @@
 package com.google.android.gms.constellation.ui;
 
-import defpackage.anxy;
-import defpackage.arxo;
-import defpackage.atmc;
-import defpackage.atmg;
-import defpackage.atmm;
+import defpackage.apzq;
+import defpackage.auad;
+import defpackage.avqf;
+import defpackage.avqj;
+import defpackage.avqp;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class SettingsIntentOperation extends anxy {
-    private static final arxo a = atmg.a("settings_operation");
-    private final atmm b = atmm.r(new atmc(UUID.randomUUID().toString()));
+public class SettingsIntentOperation extends apzq {
+    private static final auad a = avqj.a("settings_operation");
+    private final avqp b = avqp.t(new avqf(UUID.randomUUID().toString()));
 
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0026, code lost:
     
         if (r0 == 0) goto L11;
      */
-    @Override // defpackage.anxy
+    @Override // defpackage.apzq
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -29,25 +29,25 @@ public class SettingsIntentOperation extends anxy {
             android.content.Context r1 = r0.getApplicationContext()
             java.util.ArrayList r2 = new java.util.ArrayList
             r2.<init>()
-            boolean r0 = defpackage.fmms.f()
+            boolean r0 = defpackage.fpen.f()
             r3 = 0
             if (r0 == 0) goto L59
-            atmm r0 = r11.b     // Catch: java.lang.SecurityException -> L29
-            int r0 = r0.d()     // Catch: java.lang.SecurityException -> L29
-            fmms r4 = defpackage.fmms.a     // Catch: java.lang.SecurityException -> L29
-            fmmt r4 = r4.a()     // Catch: java.lang.SecurityException -> L29
+            avqp r0 = r11.b     // Catch: java.lang.SecurityException -> L29
+            int r0 = r0.f()     // Catch: java.lang.SecurityException -> L29
+            fpen r4 = defpackage.fpen.a     // Catch: java.lang.SecurityException -> L29
+            fpeo r4 = r4.lK()     // Catch: java.lang.SecurityException -> L29
             boolean r4 = r4.g()     // Catch: java.lang.SecurityException -> L29
             if (r4 == 0) goto L33
             if (r0 == 0) goto L59
             goto L33
         L29:
             r0 = move-exception
-            arxo r4 = com.google.android.gms.constellation.ui.SettingsIntentOperation.a
+            auad r4 = com.google.android.gms.constellation.ui.SettingsIntentOperation.a
             java.lang.Object[] r5 = new java.lang.Object[r3]
             java.lang.String r6 = "Error fetching subscription count"
             r4.g(r6, r0, r5)
         L33:
-            arxo r0 = com.google.android.gms.constellation.ui.SettingsIntentOperation.a
+            auad r0 = com.google.android.gms.constellation.ui.SettingsIntentOperation.a
             java.lang.Object[] r4 = new java.lang.Object[r3]
             java.lang.String r5 = "Displaying device-level Phone Number Verification consent options"
             r0.j(r5, r4)
@@ -55,17 +55,17 @@ public class SettingsIntentOperation extends anxy {
             r0.<init>()
             java.lang.String r4 = "com.google.android.gms.constellation.ui.ConstellationConsentSettingActivity"
             android.content.Intent r6 = r0.setClassName(r1, r4)
-            aojj r9 = defpackage.aojj.CONSTELLATION_ITEM
+            aqlc r9 = defpackage.aqlc.CONSTELLATION_ITEM
             com.google.android.gms.libs.googlesettings.GoogleSettingsItem r5 = new com.google.android.gms.libs.googlesettings.GoogleSettingsItem
             r8 = 2132083972(0x7f150504, float:1.9808101E38)
-            asew r10 = defpackage.asno.b(r11)
+            auiq r10 = defpackage.auri.b(r11)
             r7 = 5
             r5.<init>(r6, r7, r8, r9, r10)
             r2.add(r5)
         L59:
-            boolean r0 = defpackage.fmms.e()
+            boolean r0 = defpackage.fpen.e()
             if (r0 == 0) goto L85
-            arxo r0 = com.google.android.gms.constellation.ui.SettingsIntentOperation.a
+            auad r0 = com.google.android.gms.constellation.ui.SettingsIntentOperation.a
             java.lang.Object[] r4 = new java.lang.Object[r3]
             java.lang.String r5 = "Displaying settings"
             r0.j(r5, r4)
@@ -73,10 +73,10 @@ public class SettingsIntentOperation extends anxy {
             r0.<init>()
             java.lang.String r4 = "com.google.android.gms.constellation.ui.ConstellationDebugActivity"
             android.content.Intent r6 = r0.setClassName(r1, r4)
-            aojj r9 = defpackage.aojj.CONSTELLATION_DEBUG_ITEM
+            aqlc r9 = defpackage.aqlc.CONSTELLATION_DEBUG_ITEM
             com.google.android.gms.libs.googlesettings.GoogleSettingsItem r5 = new com.google.android.gms.libs.googlesettings.GoogleSettingsItem
             r8 = 2132083970(0x7f150502, float:1.9808097E38)
-            asew r10 = defpackage.asno.b(r11)
+            auiq r10 = defpackage.auri.b(r11)
             r7 = 2
             r5.<init>(r6, r7, r8, r9, r10)
             r2.add(r5)

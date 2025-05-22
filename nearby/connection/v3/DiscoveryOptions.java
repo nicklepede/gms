@@ -5,16 +5,16 @@ import android.os.ParcelUuid;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.Strategy;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cgch;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cikk;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class DiscoveryOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cgch();
+    public static final Parcelable.Creator CREATOR = new cikk();
     public Strategy a;
     public int[] b;
     public final int c;
@@ -37,7 +37,7 @@ public final class DiscoveryOptions extends AbstractSafeParcelable {
         }
         if (obj instanceof DiscoveryOptions) {
             DiscoveryOptions discoveryOptions = (DiscoveryOptions) obj;
-            if (arwb.b(this.a, discoveryOptions.a) && Arrays.equals(this.b, discoveryOptions.b) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(discoveryOptions.c)) && arwb.b(this.d, discoveryOptions.d) && arwb.b(this.e, discoveryOptions.e) && arwb.b(Boolean.valueOf(this.f), Boolean.valueOf(discoveryOptions.f)) && arwb.b(Boolean.valueOf(this.g), Boolean.valueOf(discoveryOptions.g)) && arwb.b(this.h, discoveryOptions.h) && arwb.b(this.i, discoveryOptions.i)) {
+            if (atyq.b(this.a, discoveryOptions.a) && Arrays.equals(this.b, discoveryOptions.b) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(discoveryOptions.c)) && atyq.b(this.d, discoveryOptions.d) && atyq.b(this.e, discoveryOptions.e) && atyq.b(Boolean.valueOf(this.f), Boolean.valueOf(discoveryOptions.f)) && atyq.b(Boolean.valueOf(this.g), Boolean.valueOf(discoveryOptions.g)) && atyq.b(this.h, discoveryOptions.h) && atyq.b(this.i, discoveryOptions.i)) {
                 return true;
             }
         }
@@ -54,17 +54,17 @@ public final class DiscoveryOptions extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.p(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.e(parcel, 6, this.f);
-        arxc.e(parcel, 7, this.g);
-        arxc.t(parcel, 8, this.h, i, false);
-        arxc.t(parcel, 9, this.i, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.p(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.e(parcel, 6, this.f);
+        atzr.e(parcel, 7, this.g);
+        atzr.t(parcel, 8, this.h, i, false);
+        atzr.t(parcel, 9, this.i, i, false);
+        atzr.c(parcel, a);
     }
 
     public DiscoveryOptions(Strategy strategy, int[] iArr, int i, AnalyticOptions analyticOptions, UwbOptions uwbOptions, boolean z, boolean z2, ParcelUuid parcelUuid, SafeParcelableDataElements safeParcelableDataElements) {

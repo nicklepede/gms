@@ -4,25 +4,25 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.R;
-import defpackage.aqup;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.cary;
-import defpackage.casd;
-import defpackage.casg;
-import defpackage.casw;
-import defpackage.ejhf;
-import defpackage.fpwa;
-import defpackage.jth;
-import defpackage.qfp;
+import defpackage.asxe;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cdao;
+import defpackage.cdat;
+import defpackage.cdaw;
+import defpackage.cdbm;
+import defpackage.eluo;
+import defpackage.fspt;
+import defpackage.jzw;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class OnboardingChimeraActivity extends qfp {
-    private static final asot l = asot.e(asej.LOCATION_SHARING);
-    public casd j;
+public class OnboardingChimeraActivity extends ryt {
+    private static final ausn l = ausn.e(auid.LOCATION_SHARING);
+    public cdat j;
     public String k;
-    private final jth m = new casg(this);
+    private final jzw m = new cdaw(this);
 
     private final void b() {
         setResult(-1);
@@ -34,7 +34,7 @@ public class OnboardingChimeraActivity extends qfp {
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i == 0 && i2 == -1) {
@@ -44,17 +44,17 @@ public class OnboardingChimeraActivity extends qfp {
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
-        cary x;
-        casd casdVar = this.j;
-        if (casdVar != null && (x = casdVar.x()) != null) {
+        cdao x;
+        cdat cdatVar = this.j;
+        if (cdatVar != null && (x = cdatVar.x()) != null) {
             x.c(6);
         }
         super.onBackPressed();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         getWindow().setStatusBarColor(0);
@@ -63,13 +63,13 @@ public class OnboardingChimeraActivity extends qfp {
         ComponentName callingActivity = getCallingActivity();
         if (callingActivity != null || intent.getAction() != null) {
             String packageName = callingActivity == null ? null : callingActivity.getPackageName();
-            if (packageName != null && aqup.d(this).h(packageName)) {
-                for (String str : String.valueOf(fpwa.a.a().h()).concat(",com.google.android.gms").split(",")) {
+            if (packageName != null && asxe.d(this).h(packageName)) {
+                for (String str : fspt.a.lK().h().concat(",com.google.android.gms").split(",")) {
                     if (!str.equals(packageName)) {
                     }
                 }
             }
-            ((ejhf) ((ejhf) l.h()).ah((char) 5682)).x("Calling Activity is not whitelisted for Location Sharing settings.");
+            ((eluo) ((eluo) l.h()).ai((char) 5696)).x("Calling Activity is not whitelisted for Location Sharing settings.");
             finish();
             return;
         }
@@ -87,17 +87,17 @@ public class OnboardingChimeraActivity extends qfp {
             return;
         }
         setTitle(R.string.location_sharing_tos_activity_title);
-        casd casdVar = (casd) getSupportFragmentManager().g(R.id.fragment_container);
-        this.j = casdVar;
-        if (casdVar == null) {
+        cdat cdatVar = (cdat) getSupportFragmentManager().g(R.id.fragment_container);
+        this.j = cdatVar;
+        if (cdatVar == null) {
             getSupportLoaderManager().c(3, intent2.getExtras(), this.m);
-            casw.b(this, R.string.common_loading, true);
+            cdbm.b(this, R.string.common_loading, true);
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
         super.onDestroy();
-        casw.a(this);
+        cdbm.a(this);
     }
 }

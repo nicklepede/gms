@@ -1,10 +1,10 @@
 package com.google.android.gms.ads.nonagon.util.logging.cui;
 
-import defpackage.fecu;
+import defpackage.fgrn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public enum o implements fecu {
+public enum o implements fgrn {
     SCAR_REQUEST_TYPE_ADMOB(0),
     SCAR_REQUEST_TYPE_UNSPECIFIED(-1),
     SCAR_REQUEST_TYPE_INBOUND_MEDIATION(1),
@@ -23,7 +23,7 @@ public enum o implements fecu {
         this.m = i;
     }
 
-    @Override // defpackage.fecu
+    @Override // defpackage.fgrn
     public final int a() {
         if (this != UNRECOGNIZED) {
             return this.m;

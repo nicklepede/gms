@@ -1,19 +1,19 @@
 package com.google.android.gms.wallet.dynamite.util;
 
 import android.util.Log;
-import defpackage.eiuu;
-import defpackage.ejdg;
+import defpackage.elhz;
+import defpackage.elqn;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class o {
     public static final /* synthetic */ int a = 0;
     private static final String b = "o";
-    private static final eiuu c = eiuu.K("CRYPTOGRAM_3DS", "PAN_ONLY");
-    private static final eiuu d = new ejdg("CARD");
+    private static final elhz c = elhz.K("CRYPTOGRAM_3DS", "PAN_ONLY");
+    private static final elhz d = new elqn("CARD");
 
     private o() {
     }

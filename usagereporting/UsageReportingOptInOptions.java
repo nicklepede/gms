@@ -3,15 +3,15 @@ package com.google.android.gms.usagereporting;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dhqi;
+import defpackage.atzr;
+import defpackage.dkbo;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class UsageReportingOptInOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dhqi();
+    public static final Parcelable.Creator CREATOR = new dkbo();
     public final int a;
     public boolean b;
     public final List c;
@@ -26,14 +26,14 @@ public class UsageReportingOptInOptions extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, this.a);
-        arxc.e(parcel, 3, this.b);
-        arxc.x(parcel, 4, this.c, false);
-        arxc.o(parcel, 5, this.d);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.e(parcel, 7, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, this.a);
+        atzr.e(parcel, 3, this.b);
+        atzr.x(parcel, 4, this.c, false);
+        atzr.o(parcel, 5, this.d);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.e(parcel, 7, this.f);
+        atzr.c(parcel, a);
     }
 
     public UsageReportingOptInOptions(int i, boolean z, List list, int i2, String str, boolean z2) {

@@ -5,51 +5,51 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asbo;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bwth;
-import defpackage.calv;
-import defpackage.canf;
-import defpackage.dfee;
-import defpackage.eiho;
-import defpackage.ejhf;
-import defpackage.emlv;
-import defpackage.fvbo;
+import defpackage.aued;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bzbx;
+import defpackage.ccul;
+import defpackage.ccvv;
+import defpackage.dhpk;
+import defpackage.ekut;
+import defpackage.eluo;
+import defpackage.eozj;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class GlaNotificationIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("GlaNotification", asej.LOCATION);
+    private static final ausn a = ausn.b("GlaNotification", auid.LOCATION);
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        fvbo.f(intent, "intent");
-        boolean t = bwth.t(this, "gps");
-        boolean t2 = bwth.t(this, "network");
+        fxxm.f(intent, "intent");
+        boolean u = bzbx.u(this, "gps");
+        boolean u2 = bzbx.u(this, "network");
         try {
             sendBroadcast(new Intent("android.intent.action.CLOSE_SYSTEM_DIALOGS"));
         } catch (SecurityException e) {
-            ((ejhf) ((ejhf) a.j()).s(e)).x("GLA notification unable to close system dialogs");
+            ((eluo) ((eluo) a.j()).s(e)).x("GLA notification unable to close system dialogs");
         }
-        asot asotVar = calv.a;
-        asbo f = asbo.f(this);
-        fvbo.c(f);
-        f.m(-1302891281, dfee.LOCATION_ACCURACY_NOTICE);
-        canf.c().f(new eiho() { // from class: camn
-            @Override // defpackage.eiho
+        ausn ausnVar = ccul.a;
+        aued f = aued.f(this);
+        fxxm.c(f);
+        f.m(-1302891281, dhpk.LOCATION_ACCURACY_NOTICE);
+        ccvv.c().f(new ekut() { // from class: ccvd
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                cang cangVar = (cang) obj;
-                asot asotVar2 = canf.a;
-                if (!cangVar.b.L()) {
-                    cangVar.U();
+                ccvw ccvwVar = (ccvw) obj;
+                ausn ausnVar2 = ccvv.a;
+                if (!ccvwVar.b.L()) {
+                    ccvwVar.U();
                 }
-                cani caniVar = (cani) cangVar.b;
-                cani caniVar2 = cani.a;
-                caniVar.b |= 64;
-                caniVar.j = true;
-                return cangVar;
+                ccvy ccvyVar = (ccvy) ccvwVar.b;
+                ccvy ccvyVar2 = ccvy.a;
+                ccvyVar.b |= 64;
+                ccvyVar.j = true;
+                return ccvwVar;
             }
         });
         String action = intent.getAction();
@@ -57,7 +57,7 @@ public final class GlaNotificationIntentOperation extends IntentOperation {
             switch (action.hashCode()) {
                 case -1538639377:
                     if (action.equals("com.google.android.gms.location.settings.GLA_NOTIFICATION_LEARN_MORE_CLICKED")) {
-                        calv.b(t, t2, emlv.LEARN_MORE_CLICKED);
+                        ccul.b(u, u2, eozj.LEARN_MORE_CLICKED);
                         Intent intent2 = new Intent("android.intent.action.VIEW");
                         intent2.setData(Uri.parse("https://support.google.com/android/?p=location_accuracy"));
                         intent2.setFlags(268435456);
@@ -67,7 +67,7 @@ public final class GlaNotificationIntentOperation extends IntentOperation {
                     break;
                 case -763916222:
                     if (action.equals("com.google.android.gms.location.settings.GLA_NOTIFICATION_SETTINGS_CLICKED")) {
-                        calv.b(t, t2, emlv.SETTINGS_CLICKED);
+                        ccul.b(u, u2, eozj.SETTINGS_CLICKED);
                         Intent intent3 = new Intent();
                         if (Build.VERSION.SDK_INT >= 28) {
                             intent3.setAction("com.google.android.gms.location.settings.LOCATION_ACCURACY");
@@ -83,13 +83,13 @@ public final class GlaNotificationIntentOperation extends IntentOperation {
                     break;
                 case 495545685:
                     if (action.equals("com.google.android.gms.location.settings.GLA_NOTIFICATION_CLEARED")) {
-                        calv.b(t, t2, emlv.NOTIFICATION_CLEARED);
+                        ccul.b(u, u2, eozj.NOTIFICATION_CLEARED);
                         break;
                     }
                     break;
                 case 1788864929:
                     if (action.equals("com.google.android.gms.location.settings.SETUP_WIZARD_MESSAGE_SHOWN")) {
-                        calv.b(t, t2, emlv.SETUP_WIZARD_MESSAGE_SHOWN);
+                        ccul.b(u, u2, eozj.SETUP_WIZARD_MESSAGE_SHOWN);
                         break;
                     }
                     break;

@@ -12,20 +12,20 @@ import android.view.View;
 import android.widget.FrameLayout;
 import com.google.android.gms.common.people.data.Audience;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.aquo;
-import defpackage.arim;
-import defpackage.arin;
-import defpackage.ario;
-import defpackage.ariq;
-import defpackage.aris;
-import defpackage.arwm;
+import defpackage.asxd;
+import defpackage.atlb;
+import defpackage.atlc;
+import defpackage.atld;
+import defpackage.atlf;
+import defpackage.atlh;
+import defpackage.atzb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class AudienceView extends FrameLayout {
     private static Context c;
-    public final ario a;
-    public aris b;
+    public final atld a;
+    public atlh b;
     private final Context d;
 
     public AudienceView(Context context) {
@@ -33,25 +33,25 @@ public final class AudienceView extends FrameLayout {
     }
 
     private static Pair b(Context context) {
-        ario arimVar;
+        atld atlbVar;
         if (c == null) {
-            c = aquo.b(context);
+            c = asxd.b(context);
         }
         Context context2 = c;
         if (context2 != null) {
             try {
                 IBinder iBinder = (IBinder) context2.getClassLoader().loadClass("com.google.android.gms.plus.audience.widgets.AudienceViewImpl$DynamiteHost").newInstance();
                 if (iBinder == null) {
-                    arimVar = null;
+                    atlbVar = null;
                 } else {
                     IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.audience.dynamite.IAudienceView");
-                    arimVar = queryLocalInterface instanceof ario ? (ario) queryLocalInterface : new arim(iBinder);
+                    atlbVar = queryLocalInterface instanceof atld ? (atld) queryLocalInterface : new atlb(iBinder);
                 }
-                return new Pair(arimVar, c);
+                return new Pair(atlbVar, c);
             } catch (ClassNotFoundException | IllegalAccessException | InstantiationException unused) {
             }
         }
-        return new Pair(new arin(), context);
+        return new Pair(new atlc(), context);
     }
 
     public final void a(Audience audience) {
@@ -65,13 +65,13 @@ public final class AudienceView extends FrameLayout {
     protected final void onRestoreInstanceState(Parcelable parcelable) {
         Bundle bundle = (Bundle) parcelable;
         Parcelable parcelable2 = bundle.getParcelable("parent");
-        arwm.s(parcelable2);
+        atzb.s(parcelable2);
         super.onRestoreInstanceState(parcelable2);
         try {
-            ario arioVar = this.a;
+            atld atldVar = this.a;
             Bundle bundle2 = bundle.getBundle("impl");
-            arwm.s(bundle2);
-            arioVar.d(bundle2);
+            atzb.s(bundle2);
+            atldVar.d(bundle2);
         } catch (RemoteException unused) {
         }
     }
@@ -94,13 +94,13 @@ public final class AudienceView extends FrameLayout {
     public AudienceView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         Pair b = b(context);
-        ario arioVar = (ario) b.first;
-        this.a = arioVar;
+        atld atldVar = (atld) b.first;
+        this.a = atldVar;
         Context context2 = (Context) b.second;
         this.d = context2;
         try {
-            arioVar.c(new ObjectWrapper(getContext()), new ObjectWrapper(context2), new ariq(this));
-            addView((View) ObjectWrapper.a(arioVar.b()));
+            atldVar.c(new ObjectWrapper(getContext()), new ObjectWrapper(context2), new atlf(this));
+            addView((View) ObjectWrapper.a(atldVar.b()));
         } catch (RemoteException unused) {
         }
     }

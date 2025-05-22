@@ -5,19 +5,19 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmvr;
-import defpackage.cmxf;
-import defpackage.cmxh;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpdz;
+import defpackage.cpfn;
+import defpackage.cpfp;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class GetShareTargetsParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cmvr();
+    public static final Parcelable.Creator CREATOR = new cpdz();
     public int a;
-    public cmxh b;
+    public cpfp b;
 
     public GetShareTargetsParams() {
     }
@@ -28,7 +28,7 @@ public final class GetShareTargetsParams extends AbstractSafeParcelable {
         }
         if (obj instanceof GetShareTargetsParams) {
             GetShareTargetsParams getShareTargetsParams = (GetShareTargetsParams) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(getShareTargetsParams.a)) && arwb.b(this.b, getShareTargetsParams.b)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(getShareTargetsParams.a)) && atyq.b(this.b, getShareTargetsParams.b)) {
                 return true;
             }
         }
@@ -41,21 +41,21 @@ public final class GetShareTargetsParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.c(parcel, a);
     }
 
     public GetShareTargetsParams(int i, IBinder iBinder) {
-        cmxh cmxfVar;
+        cpfp cpfnVar;
         if (iBinder == null) {
-            cmxfVar = null;
+            cpfnVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IShareTargetsResultListener");
-            cmxfVar = queryLocalInterface instanceof cmxh ? (cmxh) queryLocalInterface : new cmxf(iBinder);
+            cpfnVar = queryLocalInterface instanceof cpfp ? (cpfp) queryLocalInterface : new cpfn(iBinder);
         }
         this.a = i;
-        this.b = cmxfVar;
+        this.b = cpfnVar;
     }
 }

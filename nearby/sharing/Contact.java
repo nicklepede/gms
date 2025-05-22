@@ -4,16 +4,16 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.clnw;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cnwe;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class Contact extends AbstractSafeParcelable implements Cloneable, Comparable {
-    public static final Parcelable.Creator CREATOR = new clnw();
+    public static final Parcelable.Creator CREATOR = new cnwe();
     public final long a;
     public final String b;
     public final String c;
@@ -57,9 +57,9 @@ public class Contact extends AbstractSafeParcelable implements Cloneable, Compar
     public final boolean equals(Object obj) {
         if (obj instanceof Contact) {
             Contact contact = (Contact) obj;
-            if (arwb.b(Long.valueOf(this.a), Long.valueOf(contact.a)) && arwb.b(this.b, contact.b) && arwb.b(this.c, contact.c) && arwb.b(this.d, contact.d) && arwb.b(this.f, contact.f)) {
-                if (arwb.b(Boolean.valueOf(this.g), Boolean.valueOf(contact.g))) {
-                    if (arwb.b(Boolean.valueOf(this.h), Boolean.valueOf(contact.h))) {
+            if (atyq.b(Long.valueOf(this.a), Long.valueOf(contact.a)) && atyq.b(this.b, contact.b) && atyq.b(this.c, contact.c) && atyq.b(this.d, contact.d) && atyq.b(this.f, contact.f)) {
+                if (atyq.b(Boolean.valueOf(this.g), Boolean.valueOf(contact.g))) {
+                    if (atyq.b(Boolean.valueOf(this.h), Boolean.valueOf(contact.h))) {
                         return true;
                     }
                 }
@@ -79,15 +79,15 @@ public class Contact extends AbstractSafeParcelable implements Cloneable, Compar
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.a;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, j);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.e(parcel, 5, this.e);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.e(parcel, 7, this.g);
-        arxc.e(parcel, 8, this.h);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, j);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.e(parcel, 5, this.e);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.e(parcel, 7, this.g);
+        atzr.e(parcel, 8, this.h);
+        atzr.c(parcel, a);
     }
 }

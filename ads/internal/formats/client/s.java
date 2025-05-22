@@ -3,19 +3,19 @@ package com.google.android.gms.ads.internal.formats.client;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
-import defpackage.otn;
+import defpackage.qmq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class s extends otn implements IInterface {
+public final class s extends qmq implements IInterface {
     private final com.google.ads.mediation.c a;
 
     public s() {
         super("com.google.android.gms.ads.internal.formats.client.IOnUnifiedNativeAdLoadedListener");
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         t tVar;
         if (i != 1) {
             return false;
@@ -27,7 +27,7 @@ public final class s extends otn implements IInterface {
             IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.ads.internal.formats.client.IUnifiedNativeAd");
             tVar = queryLocalInterface instanceof t ? (t) queryLocalInterface : new t(readStrongBinder);
         }
-        fq(parcel);
+        fD(parcel);
         com.google.ads.mediation.c cVar = this.a;
         cVar.b.a(cVar.a, new com.google.android.gms.ads.mediation.n(new u(tVar)));
         parcel2.writeNoException();

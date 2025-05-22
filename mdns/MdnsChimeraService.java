@@ -6,67 +6,68 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.HandlerThread;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.arxd;
-import defpackage.brz;
-import defpackage.bsa;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.cdaq;
-import defpackage.cdas;
-import defpackage.cday;
-import defpackage.cdaz;
-import defpackage.cdbb;
-import defpackage.cdbd;
-import defpackage.cdce;
-import defpackage.cdcz;
-import defpackage.cdeu;
-import defpackage.ejck;
-import defpackage.ergh;
+import defpackage.atzs;
+import defpackage.bsk;
+import defpackage.bsl;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.cfjq;
+import defpackage.cfjs;
+import defpackage.cfjy;
+import defpackage.cfjz;
+import defpackage.cfkb;
+import defpackage.cfkd;
+import defpackage.cfle;
+import defpackage.cfly;
+import defpackage.cfnt;
+import defpackage.elpp;
+import defpackage.etuw;
+import defpackage.etvm;
 import java.util.Set;
 import java.util.concurrent.ScheduledExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class MdnsChimeraService extends bxgd {
-    private final cdeu a;
-    private cdbb b;
-    private cdaz c;
-    private bxgo d;
-    private cdaq m;
-    private cday n;
-    private cdcz o;
+public class MdnsChimeraService extends bzot {
+    private final cfnt a;
+    private cfkb b;
+    private cfjz c;
+    private bzpe d;
+    private cfjq m;
+    private cfjy n;
+    private cfly o;
 
     public MdnsChimeraService() {
-        super(168, "com.google.android.gms.mdns.service.START", ejck.a, 1, 10);
-        this.a = new cdeu("MdnsChimeraService");
+        super(168, "com.google.android.gms.mdns.service.START", elpp.a, 1, 10);
+        this.a = new cfnt("MdnsChimeraService");
         setWantIntentExtras(true);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         byte[] byteArray;
-        cdce cdceVar;
+        cfle cfleVar;
         Bundle bundle = getServiceRequest.i;
-        MdnsOptions mdnsOptions = (bundle == null || (byteArray = bundle.getByteArray("MDNS_OPTIONS")) == null) ? null : (MdnsOptions) arxd.a(byteArray, MdnsOptions.CREATOR);
+        MdnsOptions mdnsOptions = (bundle == null || (byteArray = bundle.getByteArray("MDNS_OPTIONS")) == null) ? null : (MdnsOptions) atzs.a(byteArray, MdnsOptions.CREATOR);
         if (mdnsOptions == null) {
-            bxgjVar.a(8, null);
+            bzozVar.a(8, null);
             return;
         }
         if (this.b == null || this.c == null || this.d == null) {
             this.a.a("MdnsChimeraService was not properly set up. Not creating service stub.");
-            cdceVar = null;
+            cfleVar = null;
         } else {
-            cdceVar = new cdce(mdnsOptions, this.b, this.d, this.c, getServiceRequest.f, getServiceRequest.p);
+            cfleVar = new cfle(mdnsOptions, this.b, this.d, this.c, getServiceRequest.f, getServiceRequest.p);
         }
-        if (cdceVar == null) {
-            bxgjVar.a(8, null);
+        if (cfleVar == null) {
+            bzozVar.a(8, null);
         } else {
-            bxgjVar.c(cdceVar);
+            bzozVar.c(cfleVar);
         }
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         Context applicationContext = getApplicationContext();
         WifiManager wifiManager = (WifiManager) applicationContext.getApplicationContext().getSystemService("wifi");
@@ -76,63 +77,68 @@ public class MdnsChimeraService extends bxgd {
         }
         WifiManager.MulticastLock createMulticastLock = wifiManager.createMulticastLock("mdns-cast");
         createMulticastLock.setReferenceCounted(false);
-        cdas cdasVar = new cdas(applicationContext.getApplicationContext());
-        this.m = cdasVar;
-        cdas.a.a("Start watching connectivity changes");
-        if (!cdasVar.d) {
-            cdasVar.f.registerNetworkCallback(new NetworkRequest.Builder().addTransportType(1).build(), cdasVar.e);
-            cdasVar.d = true;
+        cfjs cfjsVar = new cfjs(applicationContext.getApplicationContext());
+        this.m = cfjsVar;
+        cfjs.a.a("Start watching connectivity changes");
+        if (!cfjsVar.d) {
+            cfjsVar.f.registerNetworkCallback(new NetworkRequest.Builder().addTransportType(1).build(), cfjsVar.e);
+            cfjsVar.d = true;
         }
-        this.n = new cday();
-        this.o = new cdcz(applicationContext.getApplicationContext(), this.m, createMulticastLock);
-        cdbb cdbbVar = new cdbb(this.n, this.o);
-        this.b = cdbbVar;
-        this.o.f(cdbbVar);
+        this.n = new cfjy();
+        this.o = new cfly(applicationContext.getApplicationContext(), this.m, createMulticastLock);
+        cfkb cfkbVar = new cfkb(this.n, this.o);
+        this.b = cfkbVar;
+        this.o.f(cfkbVar);
         this.d = l();
-        this.c = new cdbd(applicationContext.getApplicationContext(), wifiManager);
+        this.c = new cfkd(applicationContext.getApplicationContext(), wifiManager);
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
-        HandlerThread handlerThread;
         this.d = null;
         this.b = null;
         this.o = null;
-        cdaq cdaqVar = this.m;
-        if (cdaqVar != null) {
-            cdas.a.a("Stop watching connectivity changes");
-            cdas cdasVar = (cdas) cdaqVar;
-            if (cdasVar.d) {
-                cdasVar.f.unregisterNetworkCallback(cdasVar.e);
-                cdasVar.d = false;
+        cfjq cfjqVar = this.m;
+        if (cfjqVar != null) {
+            cfjs.a.a("Stop watching connectivity changes");
+            cfjs cfjsVar = (cfjs) cfjqVar;
+            if (cfjsVar.d) {
+                cfjsVar.f.unregisterNetworkCallback(cfjsVar.e);
+                cfjsVar.d = false;
             }
             this.m = null;
         }
-        cday cdayVar = this.n;
-        if (cdayVar != null) {
-            brz brzVar = new brz((bsa) cdayVar.a);
-            while (brzVar.hasNext()) {
-                ScheduledExecutorService scheduledExecutorService = (ScheduledExecutorService) brzVar.next();
+        cfjy cfjyVar = this.n;
+        if (cfjyVar != null) {
+            bsk bskVar = new bsk((bsl) cfjyVar.a);
+            while (bskVar.hasNext()) {
+                ScheduledExecutorService scheduledExecutorService = (ScheduledExecutorService) bskVar.next();
                 if (!scheduledExecutorService.isShutdown()) {
                     scheduledExecutorService.shutdownNow();
                 }
             }
         }
-        cdaz cdazVar = this.c;
-        if (cdazVar != null) {
-            cdbd cdbdVar = (cdbd) cdazVar;
-            cdbdVar.b = null;
-            cdbdVar.c = null;
-            Set<ScheduledExecutorService> set = cdbdVar.a.a;
+        cfjz cfjzVar = this.c;
+        if (cfjzVar != null) {
+            cfkd cfkdVar = (cfkd) cfjzVar;
+            cfkdVar.b = null;
+            cfkdVar.c = null;
+            Set<ScheduledExecutorService> set = cfkdVar.a.a;
             for (ScheduledExecutorService scheduledExecutorService2 : set) {
                 if (!scheduledExecutorService2.isShutdown()) {
                     scheduledExecutorService2.shutdownNow();
                 }
             }
             set.clear();
-            ergh erghVar = cdbdVar.b;
-            if (erghVar != null && (handlerThread = erghVar.d.a) != null) {
-                handlerThread.quitSafely();
+            etvm etvmVar = cfkdVar.b;
+            if (etvmVar != null) {
+                etuw etuwVar = etvmVar.d;
+                HandlerThread handlerThread = etuwVar.a;
+                if (handlerThread != null) {
+                    handlerThread.quitSafely();
+                }
+                synchronized (etuwVar.c) {
+                }
             }
             this.c = null;
         }

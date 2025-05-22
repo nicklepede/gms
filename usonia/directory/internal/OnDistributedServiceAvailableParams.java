@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.usonia.PeerAddress;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dhxc;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dkik;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class OnDistributedServiceAvailableParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dhxc();
+    public static final Parcelable.Creator CREATOR = new dkik();
     public String a;
     public PeerAddress b;
 
@@ -25,7 +25,7 @@ public final class OnDistributedServiceAvailableParams extends AbstractSafeParce
         }
         if (obj instanceof OnDistributedServiceAvailableParams) {
             OnDistributedServiceAvailableParams onDistributedServiceAvailableParams = (OnDistributedServiceAvailableParams) obj;
-            if (arwb.b(this.a, onDistributedServiceAvailableParams.a) && arwb.b(this.b, onDistributedServiceAvailableParams.b)) {
+            if (atyq.b(this.a, onDistributedServiceAvailableParams.a) && atyq.b(this.b, onDistributedServiceAvailableParams.b)) {
                 return true;
             }
         }
@@ -38,10 +38,10 @@ public final class OnDistributedServiceAvailableParams extends AbstractSafeParce
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 
     public OnDistributedServiceAvailableParams(String str, PeerAddress peerAddress) {

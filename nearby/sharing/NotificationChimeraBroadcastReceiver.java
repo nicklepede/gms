@@ -7,40 +7,40 @@ import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.nearby.sharing.NotificationChimeraBroadcastReceiver;
 import com.google.android.gms.nearby.sharing.ShareTarget;
 import com.google.android.gms.nearby.sharing.TransferMetadata;
-import defpackage.asnv;
-import defpackage.asnz;
-import defpackage.bxdd;
-import defpackage.bxdg;
-import defpackage.cewl;
-import defpackage.cfao;
-import defpackage.cmaz;
-import defpackage.cmci;
-import defpackage.cmdb;
-import defpackage.cmdh;
-import defpackage.cmfe;
-import defpackage.cmts;
-import defpackage.cnau;
-import defpackage.crmv;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.exxh;
-import defpackage.exxi;
-import defpackage.exzg;
-import defpackage.fecj;
-import defpackage.fqmf;
+import defpackage.aurp;
+import defpackage.aurt;
+import defpackage.bzlt;
+import defpackage.bzlw;
+import defpackage.chdw;
+import defpackage.chhz;
+import defpackage.cojh;
+import defpackage.cokq;
+import defpackage.colj;
+import defpackage.colp;
+import defpackage.conm;
+import defpackage.cpca;
+import defpackage.cpjc;
+import defpackage.ctwa;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.falt;
+import defpackage.falu;
+import defpackage.fans;
+import defpackage.fgrc;
+import defpackage.ftga;
 import j$.util.Objects;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class NotificationChimeraBroadcastReceiver extends IntentOperation {
-    public cmaz a;
-    public cfao b;
-    private cmts c;
+    public cojh a;
+    public chhz b;
+    private cpca c;
 
     public NotificationChimeraBroadcastReceiver() {
     }
@@ -48,79 +48,79 @@ public class NotificationChimeraBroadcastReceiver extends IntentOperation {
     @Override // android.content.ContextWrapper
     protected final void attachBaseContext(Context context) {
         super.attachBaseContext(context);
-        this.a = cewl.e(this);
-        this.b = new cfao(this);
-        this.c = new cmts(getApplicationContext(), asnz.a);
+        this.a = chdw.e(this);
+        this.b = new chhz(this);
+        this.c = new cpca(getApplicationContext(), aurt.a);
     }
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         long J;
-        if (fqmf.bd()) {
+        if (ftga.be()) {
             String action = intent.getAction();
             if (action == null) {
-                cmfe.a.b().p("Received unexpected broadcast with no action", new Object[0]);
+                conm.a.b().p("Received unexpected broadcast with no action", new Object[0]);
                 return;
             }
             boolean z = true;
             if ("com.google.android.gms.nearby.sharing.ACTION_DISMISS".equals(action) && "nearby_sharing_alert".equals(intent.getStringExtra("channel_id"))) {
-                cmts cmtsVar = this.c;
-                asnv asnvVar = cmtsVar.a;
+                cpca cpcaVar = this.c;
+                aurp aurpVar = cpcaVar.a;
                 long currentTimeMillis = System.currentTimeMillis();
-                if (currentTimeMillis - bxdg.b(cmtsVar.a(), "most_recent_notification_dismissed_timestamp", 0L) < TimeUnit.SECONDS.toMillis(fqmf.a.a().R())) {
-                    J = TimeUnit.SECONDS.toMillis(fqmf.I()) + currentTimeMillis;
+                if (currentTimeMillis - bzlw.b(cpcaVar.a(), "most_recent_notification_dismissed_timestamp", 0L) < TimeUnit.SECONDS.toMillis(ftga.a.lK().U())) {
+                    J = TimeUnit.SECONDS.toMillis(ftga.I()) + currentTimeMillis;
                 } else {
                     z = false;
-                    J = fqmf.J() + currentTimeMillis;
+                    J = ftga.J() + currentTimeMillis;
                 }
-                bxdd c = cmtsVar.a().c();
+                bzlt c = cpcaVar.a().c();
                 c.g("most_recent_notification_dismissed_timestamp", currentTimeMillis);
                 c.e("enable_long_timeout_for_hide_dismissed_notification", z);
-                bxdg.g(c);
+                bzlw.g(c);
                 String format = DateFormat.getDateTimeInstance().format(new Date(J));
-                cmdb cmdbVar = cmtsVar.b;
-                fecj L = cmdh.L(30);
-                exxh exxhVar = exxh.a;
+                colj coljVar = cpcaVar.b;
+                fgrc L = colp.L(30);
+                falt faltVar = falt.a;
                 if (!L.b.L()) {
                     L.U();
                 }
-                exzg exzgVar = (exzg) L.b;
-                exzg exzgVar2 = exzg.a;
-                exxhVar.getClass();
-                exzgVar.G = exxhVar;
-                exzgVar.c |= 2;
-                cmdbVar.i(new cmci((exzg) L.Q()));
-                cmfe.a.b().h("User dismissed the fast init notification. Not showing the notification until %s.", format);
+                fans fansVar = (fans) L.b;
+                fans fansVar2 = fans.a;
+                faltVar.getClass();
+                fansVar.G = faltVar;
+                fansVar.c |= 2;
+                coljVar.i(new cokq((fans) L.Q()));
+                conm.a.b().h("User dismissed the fast init notification. Not showing the notification until %s.", format);
                 return;
             }
             if ("com.google.android.gms.nearby.sharing.ACTION_DISMISS".equals(action) && "nearby_sharing_privacy".equals(intent.getStringExtra("channel_id"))) {
-                cmdb f = cmdb.f(this);
-                fecj L2 = cmdh.L(33);
-                exxi exxiVar = exxi.a;
+                colj f = colj.f(this);
+                fgrc L2 = colp.L(33);
+                falu faluVar = falu.a;
                 if (!L2.b.L()) {
                     L2.U();
                 }
-                exzg exzgVar3 = (exzg) L2.b;
-                exzg exzgVar4 = exzg.a;
-                exxiVar.getClass();
-                exzgVar3.H = exxiVar;
-                exzgVar3.c |= 8;
-                f.i(new cmci((exzg) L2.Q()));
+                fans fansVar3 = (fans) L2.b;
+                fans fansVar4 = fans.a;
+                faluVar.getClass();
+                fansVar3.H = faluVar;
+                fansVar3.c |= 8;
+                f.i(new cokq((fans) L2.Q()));
             }
             char c2 = 65535;
             if (action.equals("com.google.android.gms.nearby.sharing.ACTION_STOP_SHOW_PRIVACY_NOTIFICATION") && Objects.equals(intent.getStringExtra("channel_id"), "nearby_sharing_privacy")) {
-                crmv.a(getApplicationContext(), true);
+                ctwa.a(getApplicationContext(), true);
                 this.b.e("nearby_sharing", intent.getIntExtra("notification_id", -1));
                 return;
             }
             byte[] byteArrayExtra = intent.getByteArrayExtra("share_target_bytes");
             if (byteArrayExtra == null) {
-                cmfe.a.b().p("Received unexpected broadcast with no share target", new Object[0]);
+                conm.a.b().p("Received unexpected broadcast with no share target", new Object[0]);
                 return;
             }
             try {
-                final ShareTarget shareTarget = (ShareTarget) cnau.b(byteArrayExtra, ShareTarget.CREATOR);
+                final ShareTarget shareTarget = (ShareTarget) cpjc.b(byteArrayExtra, ShareTarget.CREATOR);
                 final int intExtra = intent.getIntExtra("notification_id", -1);
                 switch (action.hashCode()) {
                     case -1796513094:
@@ -161,9 +161,9 @@ public class NotificationChimeraBroadcastReceiver extends IntentOperation {
                         break;
                 }
                 if (c2 == 0) {
-                    this.a.a(shareTarget).y(new dfah() { // from class: clxc
-                        @Override // defpackage.dfah
-                        public final void gm(Exception exc) {
+                    this.a.a(shareTarget).y(new dhln() { // from class: cofk
+                        @Override // defpackage.dhln
+                        public final void gB(Exception exc) {
                             NotificationChimeraBroadcastReceiver.this.b.e("nearby_sharing", intExtra);
                         }
                     });
@@ -175,10 +175,10 @@ public class NotificationChimeraBroadcastReceiver extends IntentOperation {
                     if (shareTarget.f) {
                         this.a.b(shareTarget);
                     } else {
-                        dfaq F = this.a.F();
-                        F.z(new dfak() { // from class: clxd
-                            @Override // defpackage.dfak
-                            public final void gn(Object obj) {
+                        dhlw F = this.a.F();
+                        F.z(new dhlq() { // from class: cofl
+                            @Override // defpackage.dhlq
+                            public final void gC(Object obj) {
                                 Map map = (Map) obj;
                                 for (ShareTarget shareTarget2 : map.keySet()) {
                                     ShareTarget shareTarget3 = shareTarget;
@@ -189,10 +189,10 @@ public class NotificationChimeraBroadcastReceiver extends IntentOperation {
                                 }
                             }
                         });
-                        F.y(new dfah() { // from class: clxe
-                            @Override // defpackage.dfah
-                            public final void gm(Exception exc) {
-                                cmfe.a.e().f(exc).p("Failed to get share targets.", new Object[0]);
+                        F.y(new dhln() { // from class: cofm
+                            @Override // defpackage.dhln
+                            public final void gB(Exception exc) {
+                                conm.a.e().f(exc).p("Failed to get share targets.", new Object[0]);
                             }
                         });
                     }
@@ -204,21 +204,21 @@ public class NotificationChimeraBroadcastReceiver extends IntentOperation {
                         try {
                             pendingIntent.send();
                         } catch (PendingIntent.CanceledException e) {
-                            cmfe.a.b().f(e).p("Failed to send pendingIntent.", new Object[0]);
+                            conm.a.b().f(e).p("Failed to send pendingIntent.", new Object[0]);
                         }
                     }
                     sendBroadcast(new Intent("android.intent.action.CLOSE_SYSTEM_DIALOGS"));
                 }
                 this.b.e("nearby_sharing", intExtra);
             } catch (IllegalArgumentException e2) {
-                cmfe.a.b().f(e2).p("Received unexpected broadcast with invalid share target", new Object[0]);
+                conm.a.b().f(e2).p("Received unexpected broadcast with invalid share target", new Object[0]);
             }
         }
     }
 
-    NotificationChimeraBroadcastReceiver(cmaz cmazVar, cfao cfaoVar, cmts cmtsVar) {
-        this.a = cmazVar;
-        this.b = cfaoVar;
-        this.c = cmtsVar;
+    NotificationChimeraBroadcastReceiver(cojh cojhVar, chhz chhzVar, cpca cpcaVar) {
+        this.a = cojhVar;
+        this.b = chhzVar;
+        this.c = cpcaVar;
     }
 }

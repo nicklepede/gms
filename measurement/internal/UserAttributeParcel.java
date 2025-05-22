@@ -3,14 +3,14 @@ package com.google.android.gms.measurement.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.cdvz;
-import defpackage.cdwa;
+import defpackage.atzb;
+import defpackage.cgez;
+import defpackage.cgfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class UserAttributeParcel extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cdvz();
+    public static final Parcelable.Creator CREATOR = new cgez();
     public final int a;
     public final String b;
     public final long c;
@@ -47,15 +47,15 @@ public class UserAttributeParcel extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cdvz.a(this, parcel);
+        cgez.a(this, parcel);
     }
 
-    public UserAttributeParcel(cdwa cdwaVar) {
-        this(cdwaVar.c, cdwaVar.d, cdwaVar.e, cdwaVar.b);
+    public UserAttributeParcel(cgfa cgfaVar) {
+        this(cgfaVar.c, cgfaVar.d, cgfaVar.e, cgfaVar.b);
     }
 
     public UserAttributeParcel(String str, long j, Object obj, String str2) {
-        arwm.q(str);
+        atzb.q(str);
         this.a = 2;
         this.b = str;
         this.c = j;

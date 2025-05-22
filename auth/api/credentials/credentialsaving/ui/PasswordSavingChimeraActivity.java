@@ -7,161 +7,161 @@ import androidx.activity.result.ActivityResult;
 import com.google.android.gms.auth.api.credentials.credentialsaving.ui.PasswordSavingChimeraActivity;
 import com.google.android.gms.auth.api.identity.SavePasswordRequest;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acm;
-import defpackage.aozv;
-import defpackage.arxd;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bmcg;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgu;
-import defpackage.bmgx;
-import defpackage.eble;
-import defpackage.eiic;
-import defpackage.eiid;
-import defpackage.eiiw;
-import defpackage.elfb;
-import defpackage.elfd;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acr;
+import defpackage.arcm;
+import defpackage.atzs;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.boiy;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonm;
+import defpackage.bonp;
+import defpackage.edxt;
+import defpackage.ekvh;
+import defpackage.ekvi;
+import defpackage.ekwb;
+import defpackage.enso;
+import defpackage.ensq;
 import defpackage.ew;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.irx;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.wim;
-import defpackage.wit;
-import defpackage.wkg;
-import defpackage.wkp;
-import defpackage.wmm;
-import defpackage.wol;
-import defpackage.wom;
-import defpackage.xul;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.itn;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.yes;
+import defpackage.yez;
+import defpackage.ygq;
+import defpackage.ygz;
+import defpackage.yiw;
+import defpackage.ykv;
+import defpackage.ykw;
+import defpackage.zsi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class PasswordSavingChimeraActivity extends qet {
-    private static final asot n = xul.b("PasswordSavingChimeraActivity");
-    public wom j;
-    public bmgq k;
+public class PasswordSavingChimeraActivity extends rxx {
+    private static final ausn n = zsi.b("PasswordSavingChimeraActivity");
+    public ykw j;
+    public boni k;
     public String l;
-    public abv m;
+    public aca m;
 
-    public final void a(wit witVar) {
+    public final void a(yez yezVar) {
         Account account;
-        witVar.f(n);
-        bmgq bmgqVar = this.k;
-        wom womVar = this.j;
-        if (womVar != null && (account = womVar.r) != null) {
-            bmgqVar = bmgp.a(this, account.name);
+        yezVar.f(n);
+        boni boniVar = this.k;
+        ykw ykwVar = this.j;
+        if (ykwVar != null && (account = ykwVar.r) != null) {
+            boniVar = bonh.a(this, account.name);
         }
-        fecj v = elfd.a.v();
+        fgrc v = ensq.a.v();
         String str = this.l;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elfd elfdVar = (elfd) fecpVar;
+        fgri fgriVar = v.b;
+        ensq ensqVar = (ensq) fgriVar;
         str.getClass();
-        elfdVar.b |= 2;
-        elfdVar.e = str;
-        if (!fecpVar.L()) {
+        ensqVar.b |= 2;
+        ensqVar.e = str;
+        if (!fgriVar.L()) {
             v.U();
         }
-        elfd elfdVar2 = (elfd) v.b;
-        elfdVar2.d = 17;
-        elfdVar2.b |= 1;
-        fecj k = witVar.k();
-        if (!k.b.L()) {
-            k.U();
+        ensq ensqVar2 = (ensq) v.b;
+        ensqVar2.d = 17;
+        ensqVar2.b |= 1;
+        fgrc l = yezVar.l();
+        if (!l.b.L()) {
+            l.U();
         }
-        elfb elfbVar = (elfb) k.b;
-        elfb elfbVar2 = elfb.a;
-        elfbVar.f = 206;
-        elfbVar.b |= 8;
+        enso ensoVar = (enso) l.b;
+        enso ensoVar2 = enso.a;
+        ensoVar.f = 206;
+        ensoVar.b |= 8;
         if (!v.b.L()) {
             v.U();
         }
-        elfd elfdVar3 = (elfd) v.b;
-        elfb elfbVar3 = (elfb) k.Q();
-        elfbVar3.getClass();
-        elfdVar3.s = elfbVar3;
-        elfdVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-        bmgqVar.a((elfd) v.Q());
-        setResult(witVar.a(), witVar.b());
+        ensq ensqVar3 = (ensq) v.b;
+        enso ensoVar3 = (enso) l.Q();
+        ensoVar3.getClass();
+        ensqVar3.s = ensoVar3;
+        ensqVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        boniVar.a((ensq) v.Q());
+        setResult(yezVar.a(), yezVar.b());
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        this.k = bmgp.a(this, null);
-        SavePasswordRequest savePasswordRequest = (SavePasswordRequest) arxd.b(getIntent(), "save_password_request", SavePasswordRequest.CREATOR);
+        this.k = bonh.a(this, null);
+        SavePasswordRequest savePasswordRequest = (SavePasswordRequest) atzs.b(getIntent(), "save_password_request", SavePasswordRequest.CREATOR);
         if (savePasswordRequest == null) {
-            this.l = bmgx.a();
-            a((wit) wit.c().c(28453, wkg.a("savePasswordRequest")));
+            this.l = bonp.a();
+            a((yez) yez.c().c(28453, ygq.a("savePasswordRequest")));
             return;
         }
-        this.l = (String) eiic.c(savePasswordRequest.b, bmgx.a());
-        wim.a(this, savePasswordRequest.c);
+        this.l = (String) ekvh.c(savePasswordRequest.b, bonp.a());
+        yes.a(this, savePasswordRequest.c);
         super.onCreate(bundle);
         getContainerActivity();
-        int i = eble.a;
-        String q = asng.q(this);
-        bmgu.a(this, new eiiw() { // from class: wmn
-            @Override // defpackage.eiiw
-            public final void lB(Object obj) {
+        int i = edxt.a;
+        String q = aura.q(this);
+        bonm.a(this, new ekwb() { // from class: yix
+            @Override // defpackage.ekwb
+            public final void lY(Object obj) {
                 PasswordSavingChimeraActivity passwordSavingChimeraActivity = PasswordSavingChimeraActivity.this;
-                passwordSavingChimeraActivity.k.a(bmgw.b(207, (bmgv) obj, passwordSavingChimeraActivity.l));
+                passwordSavingChimeraActivity.k.a(bono.b(207, (bonn) obj, passwordSavingChimeraActivity.l));
             }
         });
         if (q == null) {
-            a((wit) wit.c().c(28442, "Cannot get calling package name."));
+            a((yez) yez.c().c(28442, "Cannot get calling package name."));
             return;
         }
-        eiid a = bmcg.a(getApplication(), q);
+        ekvi a = boiy.a(getApplication(), q);
         if (!a.h()) {
-            a((wit) wit.c().c(28442, "Cannot get app name and icon."));
+            a((yez) yez.c().c(28442, "Cannot get app name and icon."));
             return;
         }
-        eiid a2 = aozv.a(this, q);
+        ekvi a2 = arcm.a(this, q);
         if (!a2.h()) {
-            a((wit) wit.c().c(28442, "Cannot get app ID."));
+            a((yez) yez.c().c(28442, "Cannot get app ID."));
             return;
         }
-        wom womVar = (wom) new jrh(this, new wol(getApplication(), (String) a2.c(), q, this.l, (irx) a.c(), savePasswordRequest)).a(wom.class);
-        this.j = womVar;
-        womVar.l.g(this, new jpd() { // from class: wmo
-            @Override // defpackage.jpd
+        ykw ykwVar = (ykw) new jxw(this, new ykv(getApplication(), (String) a2.c(), q, this.l, (itn) a.c(), savePasswordRequest)).a(ykw.class);
+        this.j = ykwVar;
+        ykwVar.l.g(this, new jvs() { // from class: yiy
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                PasswordSavingChimeraActivity.this.m.b(new ace((PendingIntent) obj).a());
+                PasswordSavingChimeraActivity.this.m.b(new acj((PendingIntent) obj).a());
             }
         });
-        this.m = registerForActivityResult(new acm(), new abt() { // from class: wmp
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        this.m = registerForActivityResult(new acr(), new aby() { // from class: yiz
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 int i2 = ((ActivityResult) obj).a;
-                wom womVar2 = PasswordSavingChimeraActivity.this.j;
+                ykw ykwVar2 = PasswordSavingChimeraActivity.this.j;
                 if (i2 != -1) {
-                    womVar2.j.k(16, "Zuul key retrieval failed.");
+                    ykwVar2.j.k(16, "Zuul key retrieval failed.");
                 } else {
-                    womVar2.p.add(womVar2.r);
-                    womVar2.j.f(bmjm.ACCOUNT_CONFIRMATION);
+                    ykwVar2.p.add(ykwVar2.r);
+                    ykwVar2.j.f(boqf.ACCOUNT_CONFIRMATION);
                 }
             }
         });
-        this.j.m.g(this, new jpd() { // from class: wmq
-            @Override // defpackage.jpd
+        this.j.m.g(this, new jvs() { // from class: yja
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                PasswordSavingChimeraActivity.this.a((wit) obj);
+                PasswordSavingChimeraActivity.this.a((yez) obj);
             }
         });
-        new jrh(this).a(wkp.class);
+        new jxw(this).a(ygz.class);
         ew supportFragmentManager = getSupportFragmentManager();
         if (supportFragmentManager.h("PasswordSavingBottomSheetDialogFragment") == null) {
-            new wmm().show(supportFragmentManager, "PasswordSavingBottomSheetDialogFragment");
+            new yiw().show(supportFragmentManager, "PasswordSavingBottomSheetDialogFragment");
         }
     }
 }

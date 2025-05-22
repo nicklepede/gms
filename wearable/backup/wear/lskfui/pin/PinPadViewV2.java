@@ -10,16 +10,16 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.gms.R;
-import defpackage.djym;
-import defpackage.djyt;
-import defpackage.djyu;
-import defpackage.rpq;
+import defpackage.dmkf;
+import defpackage.dmkm;
+import defpackage.dmkn;
+import defpackage.tiy;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PinPadViewV2 extends LinearLayout implements View.OnClickListener {
     public final ArrayList a;
@@ -71,7 +71,7 @@ public class PinPadViewV2 extends LinearLayout implements View.OnClickListener {
         this.c = new int[]{R.id.button_0, R.id.button_1, R.id.button_2, R.id.button_3, R.id.button_4, R.id.button_5, R.id.button_6, R.id.button_7, R.id.button_8, R.id.button_9, R.id.button_enter, R.id.button_del};
         this.d = new int[]{7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 66, 67};
         int i2 = 0;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.m, R.attr.wearableLockPinPadStyle, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.m, R.attr.wearableLockPinPadStyle, 0);
         this.b = obtainStyledAttributes.getColor(1, obtainStyledAttributes.getColor(0, 0));
         obtainStyledAttributes.recycle();
         setLayoutDirection(0);
@@ -91,12 +91,12 @@ public class PinPadViewV2 extends LinearLayout implements View.OnClickListener {
                 int i3 = this.c[i2];
                 if (i3 != R.id.button_enter && i3 != R.id.button_del) {
                     ((TextView) findViewById).setText(decimalFormat.format(i2));
-                    findViewById.setOnHoverListener(new djym(getContext()));
+                    findViewById.setOnHoverListener(new dmkf(getContext()));
                 }
                 findViewById.setOnClickListener(this);
-                djyt djytVar = new djyt(getContext(), this.b);
-                djytVar.e = new djyu(findViewById);
-                findViewById.setBackground(new InsetDrawable((Drawable) djytVar, findViewById.getPaddingLeft(), findViewById.getPaddingTop(), findViewById.getPaddingRight(), findViewById.getPaddingBottom()));
+                dmkm dmkmVar = new dmkm(getContext(), this.b);
+                dmkmVar.e = new dmkn(findViewById);
+                findViewById.setBackground(new InsetDrawable((Drawable) dmkmVar, findViewById.getPaddingLeft(), findViewById.getPaddingTop(), findViewById.getPaddingRight(), findViewById.getPaddingBottom()));
             }
             i2++;
         }

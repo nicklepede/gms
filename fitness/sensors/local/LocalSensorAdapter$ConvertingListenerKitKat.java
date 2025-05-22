@@ -2,33 +2,33 @@ package com.google.android.gms.fitness.sensors.local;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener2;
-import defpackage.bgmp;
-import defpackage.bgpd;
-import defpackage.bgpi;
-import defpackage.bgpj;
-import defpackage.bgpk;
-import defpackage.bgpo;
-import defpackage.entj;
-import defpackage.fhrw;
+import defpackage.birf;
+import defpackage.bitt;
+import defpackage.bity;
+import defpackage.bitz;
+import defpackage.biua;
+import defpackage.biue;
+import defpackage.eqhc;
+import defpackage.fkht;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class LocalSensorAdapter$ConvertingListenerKitKat extends LocalSensorAdapter$ConvertingListener implements SensorEventListener2 {
-    private entj g;
+    private eqhc g;
 
-    public LocalSensorAdapter$ConvertingListenerKitKat(bgpi bgpiVar, bgmp bgmpVar, bgpd bgpdVar, fhrw fhrwVar, bgpj bgpjVar, bgpk bgpkVar, bgpo bgpoVar) {
-        super(bgpiVar, bgmpVar, bgpdVar, fhrwVar, bgpjVar, bgpkVar, bgpoVar);
+    public LocalSensorAdapter$ConvertingListenerKitKat(bity bityVar, birf birfVar, bitt bittVar, fkht fkhtVar, bitz bitzVar, biua biuaVar, biue biueVar) {
+        super(bityVar, birfVar, bittVar, fkhtVar, bitzVar, biuaVar, biueVar);
     }
 
-    public final synchronized void c(entj entjVar) {
-        this.g = entjVar;
+    public final synchronized void c(eqhc eqhcVar) {
+        this.g = eqhcVar;
     }
 
     @Override // android.hardware.SensorEventListener2
     public final synchronized void onFlushCompleted(Sensor sensor) {
-        entj entjVar = this.g;
-        if (entjVar != null) {
-            entjVar.q(null);
+        eqhc eqhcVar = this.g;
+        if (eqhcVar != null) {
+            eqhcVar.q(null);
             this.g = null;
         }
     }

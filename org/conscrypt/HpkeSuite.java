@@ -2,7 +2,7 @@ package com.google.android.gms.org.conscrypt;
 
 import defpackage.a;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class HpkeSuite {
     public static final int AEAD_AES_128_GCM = 1;
@@ -14,7 +14,7 @@ public final class HpkeSuite {
     private final KDF mKdf;
     private final KEM mKem;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public enum AEAD {
         AES_128_GCM(1, 16, 12, 16),
         AES_256_GCM(2, 32, 12, 16),
@@ -73,7 +73,7 @@ public final class HpkeSuite {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public enum KDF {
         HKDF_SHA256(1, 32, "HmacSHA256");
 
@@ -123,7 +123,7 @@ public final class HpkeSuite {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public enum KEM {
         DHKEM_X25519_HKDF_SHA256(32, 32, 32, 32, 32);
 

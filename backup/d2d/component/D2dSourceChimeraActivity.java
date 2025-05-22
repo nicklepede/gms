@@ -13,88 +13,88 @@ import android.view.ViewGroup;
 import com.google.android.gms.R;
 import com.google.android.gms.backup.d2d.component.D2dSourceChimeraActivity;
 import defpackage.a;
-import defpackage.ahwd;
-import defpackage.aihu;
-import defpackage.aihv;
-import defpackage.aihy;
-import defpackage.ailg;
-import defpackage.aiwb;
-import defpackage.aiwc;
-import defpackage.aiwe;
-import defpackage.aiwf;
-import defpackage.aiwg;
-import defpackage.aiwh;
-import defpackage.aiwk;
-import defpackage.aiwl;
-import defpackage.aiwm;
-import defpackage.aiwn;
-import defpackage.aiwq;
-import defpackage.aiwr;
-import defpackage.aiws;
-import defpackage.asiu;
+import defpackage.ajwt;
+import defpackage.akik;
+import defpackage.akil;
+import defpackage.akio;
+import defpackage.aklw;
+import defpackage.akwr;
+import defpackage.akws;
+import defpackage.akwu;
+import defpackage.akwv;
+import defpackage.akww;
+import defpackage.akwx;
+import defpackage.akxa;
+import defpackage.akxb;
+import defpackage.akxc;
+import defpackage.akxd;
+import defpackage.akxg;
+import defpackage.akxh;
+import defpackage.akxi;
+import defpackage.aumo;
 import defpackage.bp;
-import defpackage.bxao;
-import defpackage.byit;
-import defpackage.byiu;
+import defpackage.bzje;
+import defpackage.carl;
+import defpackage.carm;
 import defpackage.dg;
-import defpackage.edeq;
-import defpackage.edgk;
-import defpackage.edjs;
-import defpackage.edjt;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.ejcb;
-import defpackage.fhmn;
-import defpackage.fllb;
-import defpackage.flpt;
-import defpackage.flql;
-import defpackage.iln;
-import defpackage.ips;
-import defpackage.qfp;
+import defpackage.efrl;
+import defpackage.eftf;
+import defpackage.efwn;
+import defpackage.efwo;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elpg;
+import defpackage.fkck;
+import defpackage.focl;
+import defpackage.fohd;
+import defpackage.fohv;
+import defpackage.ind;
+import defpackage.iri;
+import defpackage.ryt;
 import j$.util.Objects;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashSet;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, aiwb {
-    public static final ahwd j = new ahwd("D2dSourceChimeraActivity");
-    static final eitj k;
-    static final eitj l;
-    public ailg m;
+public class D2dSourceChimeraActivity extends ryt implements akwu, akxa, akxg, akwr {
+    public static final ajwt j = new ajwt("D2dSourceChimeraActivity");
+    static final elgo k;
+    static final elgo l;
+    public aklw m;
     public String n;
     public String o;
     public boolean p;
     public boolean q;
-    public aihu r;
+    public akik r;
     private boolean v = true;
-    public fhmn s = null;
-    public fhmn t = fhmn.CONNECTION_TYPE_UNSPECIFIED;
-    private final aihy w = new aihy(this);
-    private final eijr x = eijy.a(new eijr() { // from class: aihs
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(aies.h());
+    public fkck s = null;
+    public fkck t = fkck.CONNECTION_TYPE_UNSPECIFIED;
+    private final akio w = new akio(this);
+    private final ekww x = ekxd.a(new ekww() { // from class: akii
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(akfi.h());
         }
     });
-    public final eijr u = eijy.a(new eijr() { // from class: aiht
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(fllb.p());
+    public final ekww u = ekxd.a(new ekww() { // from class: akij
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(focl.p());
         }
     });
 
     static {
-        eitj n = eitj.n("android.permission.READ_EXTERNAL_STORAGE", "android.permission.READ_CONTACTS", "android.permission.READ_SMS");
+        elgo n = elgo.n("android.permission.READ_EXTERNAL_STORAGE", "android.permission.READ_CONTACTS", "android.permission.READ_SMS");
         k = n;
-        eite eiteVar = new eite();
-        eiteVar.k(n);
-        eiteVar.i("android.permission.ACCESS_MEDIA_LOCATION");
-        l = eiteVar.g();
-        eitj.q("android.permission.READ_MEDIA_AUDIO", "android.permission.READ_MEDIA_IMAGES", "android.permission.READ_MEDIA_VIDEO", "android.permission.READ_CONTACTS", "android.permission.READ_SMS", "android.permission.ACCESS_MEDIA_LOCATION");
+        elgj elgjVar = new elgj();
+        elgjVar.k(n);
+        elgjVar.i("android.permission.ACCESS_MEDIA_LOCATION");
+        l = elgjVar.g();
+        elgo.q("android.permission.READ_MEDIA_AUDIO", "android.permission.READ_MEDIA_IMAGES", "android.permission.READ_MEDIA_VIDEO", "android.permission.READ_CONTACTS", "android.permission.READ_SMS", "android.permission.ACCESS_MEDIA_LOCATION");
     }
 
     private final void A() {
@@ -112,22 +112,22 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
     }
 
     public static final boolean u(UsbAccessory usbAccessory) {
-        return usbAccessory != null && Objects.equals(usbAccessory.getSerial(), fllb.a.a().S());
+        return usbAccessory != null && Objects.equals(usbAccessory.getSerial(), focl.a.lK().S());
     }
 
     private final void v() {
-        if (((Boolean) this.u.a()).booleanValue()) {
+        if (((Boolean) this.u.lK()).booleanValue()) {
             if (B()) {
-                this.t = fhmn.WIFI;
+                this.t = fkck.WIFI;
                 return;
             }
             if (!r()) {
                 j.m("Activity is launched by a general intent, flow type is set to unspecified.", new Object[0]);
-                this.t = fhmn.CONNECTION_TYPE_UNSPECIFIED;
+                this.t = fkck.CONNECTION_TYPE_UNSPECIFIED;
             } else if (u((UsbAccessory) getIntent().getParcelableExtra("accessory"))) {
-                this.t = fhmn.WIFI;
+                this.t = fkck.WIFI;
             } else {
-                this.t = fhmn.USB;
+                this.t = fkck.USB;
             }
         }
     }
@@ -139,28 +139,28 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
     }
 
     private final void x() {
-        ahwd ahwdVar = j;
-        ahwdVar.j("Starting the service and binding to it.", new Object[0]);
+        ajwt ajwtVar = j;
+        ajwtVar.j("Starting the service and binding to it.", new Object[0]);
         if (this.n != null) {
-            ahwdVar.m("uuidForServiceCallbacksRegister is not null. The service resources might have not been freed correctly!", new Object[0]);
+            ajwtVar.m("uuidForServiceCallbacksRegister is not null. The service resources might have not been freed correctly!", new Object[0]);
         }
         this.n = UUID.randomUUID().toString();
         Intent putExtra = s() ? D2dSourceChimeraService.a(this).putExtra("is_wifi_d2d", true) : D2dSourceChimeraService.a(this);
         startService(putExtra);
-        asiu.a().d(this, putExtra, this.w, 1);
+        aumo.a().d(this, putExtra, this.w, 1);
         this.p = true;
     }
 
     private final void y() {
-        if (!flpt.a.a().b()) {
+        if (!fohd.a.lK().b()) {
             x();
             return;
         }
         HashSet hashSet = new HashSet();
-        eitj eitjVar = Build.VERSION.SDK_INT >= 30 ? l : k;
-        for (int i = 0; i < ((ejcb) eitjVar).c; i++) {
-            String str = (String) eitjVar.get(i);
-            if (bxao.b(this, str) != 0) {
+        elgo elgoVar = Build.VERSION.SDK_INT >= 30 ? l : k;
+        for (int i = 0; i < ((elpg) elgoVar).c; i++) {
+            String str = (String) elgoVar.get(i);
+            if (bzje.b(this, str) != 0) {
                 hashSet.add(str);
             }
         }
@@ -169,97 +169,97 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
             x();
         } else {
             j.d("%s permissions not granted, requesting permissions.", hashSet);
-            iln.h(getContainerActivity(), (String[]) hashSet.toArray(new String[hashSet.size()]), 0);
+            ind.h(getContainerActivity(), (String[]) hashSet.toArray(new String[hashSet.size()]), 0);
         }
     }
 
     private final void z() {
         j.d("Unbinding service", new Object[0]);
         try {
-            asiu.a().b(this, this.w);
+            aumo.a().b(this, this.w);
         } catch (IllegalArgumentException | IllegalStateException e) {
             j.l(e);
         }
     }
 
-    public final dg a(aihu aihuVar) {
-        dg aiwhVar;
-        dg h = getSupportFragmentManager().h(aihuVar.name());
+    public final dg a(akik akikVar) {
+        dg akwxVar;
+        dg h = getSupportFragmentManager().h(akikVar.name());
         if (h != null) {
-            j.j("%s already exists, reusing.", aihuVar);
+            j.j("%s already exists, reusing.", akikVar);
             return h;
         }
-        switch (aihuVar) {
+        switch (akikVar) {
             case CONNECTING_FRAGMENT:
-                aiwhVar = new aiwh();
+                akwxVar = new akwx();
                 break;
             case CONNECTED_FRAGMENT:
-                aiwhVar = new aiwg();
-                w(aiwhVar);
+                akwxVar = new akww();
+                w(akwxVar);
                 break;
             case LOCKSCREEN_FRAGMENT:
-                aiwhVar = new aiwf();
+                akwxVar = new akwv();
                 break;
             case COPY_CONFIRMATION_FRAGMENT:
-                aiwhVar = new aiwl();
-                w(aiwhVar);
+                akwxVar = new akxb();
+                w(akwxVar);
                 break;
             case WAITING_FRAGMENT:
                 boolean s = s();
-                aiwhVar = new aiws();
+                akwxVar = new akxi();
                 Bundle bundle = new Bundle();
                 bundle.putBoolean("isWifiD2d", s);
-                aiwhVar.setArguments(bundle);
-                w(aiwhVar);
+                akwxVar.setArguments(bundle);
+                w(akwxVar);
                 break;
             case COPYING_FRAGMENT:
                 boolean s2 = s();
-                boolean y = flql.a.a().y();
+                boolean y = fohv.a.lK().y();
                 String str = this.o;
-                aiwm aiwmVar = new aiwm();
+                akxc akxcVar = new akxc();
                 Bundle bundle2 = new Bundle();
                 bundle2.putBoolean("isWifiD2d", s2);
                 bundle2.putBoolean("shouldUseNewSubText", y);
                 bundle2.putString("target_device_model", str);
-                aiwmVar.setArguments(bundle2);
-                aiwhVar = aiwmVar;
+                akxcVar.setArguments(bundle2);
+                akwxVar = akxcVar;
                 break;
             case SUCCESS_FRAGMENT:
                 boolean s3 = s();
-                aiwhVar = new aiwr();
+                akwxVar = new akxh();
                 Bundle bundle3 = new Bundle();
                 bundle3.putBoolean("isWifiD2d", s3);
-                aiwhVar.setArguments(bundle3);
-                w(aiwhVar);
+                akwxVar.setArguments(bundle3);
+                w(akwxVar);
                 break;
             case DISCONNECTED_FRAGMENT:
                 boolean s4 = s();
-                aiwhVar = new aiwn();
+                akwxVar = new akxd();
                 Bundle bundle4 = new Bundle();
                 bundle4.putBoolean("isWifiD2d", s4);
-                aiwhVar.setArguments(bundle4);
-                w(aiwhVar);
+                akwxVar.setArguments(bundle4);
+                w(akwxVar);
                 break;
             default:
                 throw new RuntimeException("Unknown fragment tag.");
         }
-        j.j("Created new %s", aihuVar);
-        return aiwhVar;
+        j.j("Created new %s", akikVar);
+        return akwxVar;
     }
 
     public final void b() {
-        n(new aihv() { // from class: aihr
-            @Override // defpackage.aihv
+        n(new akil() { // from class: akih
+            @Override // defpackage.akil
             public final void a() {
                 D2dSourceChimeraActivity.this.m.e();
             }
         });
     }
 
-    @Override // defpackage.aiwb
+    @Override // defpackage.akwr
     public final void c() {
-        n(new aihv() { // from class: aihp
-            @Override // defpackage.aihv
+        n(new akil() { // from class: akif
+            @Override // defpackage.akil
             public final void a() {
                 D2dSourceChimeraActivity.this.m.b();
             }
@@ -267,32 +267,32 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
         p();
     }
 
-    @Override // defpackage.aiwk
+    @Override // defpackage.akxa
     public final void f() {
         Bundle bundle = new Bundle();
         bundle.putBoolean("is_transferring", false);
-        aiwc aiwcVar = new aiwc();
-        aiwcVar.setArguments(bundle);
-        aiwcVar.show(getSupportFragmentManager(), "DIALOG");
+        akws akwsVar = new akws();
+        akwsVar.setArguments(bundle);
+        akwsVar.show(getSupportFragmentManager(), "DIALOG");
     }
 
-    @Override // defpackage.aiwk
+    @Override // defpackage.akxa
     public final void g() {
-        o(aihu.WAITING_FRAGMENT);
-        n(new aihv() { // from class: aihq
-            @Override // defpackage.aihv
+        o(akik.WAITING_FRAGMENT);
+        n(new akil() { // from class: akig
+            @Override // defpackage.akil
             public final void a() {
                 D2dSourceChimeraActivity.this.m.d();
             }
         });
     }
 
-    @Override // defpackage.aiwe
+    @Override // defpackage.akwu
     public final void k() {
         j.f("The screen lock failed", new Object[0]);
     }
 
-    @Override // defpackage.aiwe
+    @Override // defpackage.akwu
     public final void l() {
         if (this.m != null) {
             b();
@@ -302,18 +302,18 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
         }
     }
 
-    @Override // defpackage.aiwq
+    @Override // defpackage.akxg
     public final void m() {
         p();
     }
 
-    public final void n(aihv aihvVar) {
+    public final void n(akil akilVar) {
         try {
         } catch (RemoteException e) {
             j.g("Unexpected remote exception; aborting migration: ", e, new Object[0]);
         }
         if (this.m != null) {
-            aihvVar.a();
+            akilVar.a();
             return;
         }
         j.f("Unable to call method because boundServiceInterface is null. Raise a bug.", new Object[0]);
@@ -321,11 +321,11 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
         p();
     }
 
-    public final void o(aihu aihuVar) {
-        this.r = aihuVar;
-        dg a = a(aihuVar);
+    public final void o(akik akikVar) {
+        this.r = akikVar;
+        dg a = a(akikVar);
         if (a.isVisible()) {
-            j.d(String.valueOf(String.valueOf(aihuVar)).concat(" is already visible, reusing."), new Object[0]);
+            j.d(String.valueOf(String.valueOf(akikVar)).concat(" is already visible, reusing."), new Object[0]);
             return;
         }
         if (this.v) {
@@ -333,15 +333,15 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
             return;
         }
         bp bpVar = new bp(getSupportFragmentManager());
-        bpVar.z(R.id.source_main_container, a, aihuVar.name());
+        bpVar.z(R.id.source_main_container, a, akikVar.name());
         bpVar.a();
-        j.j("Changing the visible fragment to %s", aihuVar);
+        j.j("Changing the visible fragment to %s", akikVar);
     }
 
     @Override // com.google.android.chimera.ContextThemeWrapper
     protected final void onApplyThemeResource(Resources.Theme theme, int i, boolean z) {
-        int i2 = edjs.a;
-        if (edeq.v(this) && edeq.z(this)) {
+        int i2 = efwn.a;
+        if (efrl.v(this) && efrl.z(this)) {
             j.d("Setting sucUsePartnerResource theme attribute to true.", new Object[0]);
             theme.applyStyle(R.style.BcStyleThemeOverlay, true);
         } else {
@@ -351,69 +351,70 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
         super.onApplyThemeResource(theme, i, z);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        int i = edjs.a;
-        boolean v = edeq.v(this);
-        edjt d = edjt.d();
+        int i = efwn.a;
+        boolean v = efrl.v(this);
+        efwo d = efwo.d();
         int i2 = d.a;
         String str = d.b;
         boolean z = d.c;
-        setTheme(new edjt(edjs.b(this), v).c(getIntent().getStringExtra("theme"), !v));
-        if (edeq.w(this)) {
-            setTheme(edjs.a(this));
+        setTheme(new efwo(efwn.b(this), v).c(getIntent().getStringExtra("theme"), !v));
+        if (efrl.w(this)) {
+            setTheme(efwn.a(this));
         }
-        ahwd ahwdVar = j;
-        ahwdVar.j("onCreate", new Object[0]);
+        ajwt ajwtVar = j;
+        ajwtVar.j("onCreate", new Object[0]);
         super.onCreate(bundle);
         v();
-        if (B() && !flql.d()) {
-            ahwdVar.h("Launched for wifi d2d but feature is disabled by flag. Finishing.", new Object[0]);
+        if (B() && !fohv.d()) {
+            ajwtVar.h("Launched for wifi d2d but feature is disabled by flag. Finishing.", new Object[0]);
             finish();
             return;
         }
-        int i3 = ips.a;
-        if (bxao.b(this, "android.permission.NFC") == 0) {
+        int i3 = iri.a;
+        if (bzje.b(this, "android.permission.NFC") == 0) {
             NfcAdapter defaultAdapter = NfcAdapter.getDefaultAdapter(this);
             if (defaultAdapter != null) {
-                ahwdVar.d("Disabling NFC for d2d source device", new Object[0]);
+                ajwtVar.d("Disabling NFC for d2d source device", new Object[0]);
                 try {
-                    byiu.b(NfcAdapter.class, "setNdefPushMessage", defaultAdapter, new byit(NdefMessage.class, null), new byit(Activity.class, getContainerActivity()), new byit(Activity[].class, new Activity[0]));
+                    carm.b(NfcAdapter.class, "setNdefPushMessage", defaultAdapter, new carl(NdefMessage.class, null), new carl(Activity.class, getContainerActivity()), new carl(Activity[].class, new Activity[0]));
                 } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
                     j.d("Unable to disable NFC for d2d source device ".concat(String.valueOf(e.toString())), new Object[0]);
                 }
             }
         } else {
-            ahwdVar.d("Unable to disable NFC for d2d source device because NFC permission is not granted.", new Object[0]);
+            ajwtVar.d("Unable to disable NFC for d2d source device because NFC permission is not granted.", new Object[0]);
         }
         setContentView(getLayoutInflater().inflate(R.layout.source_activity, (ViewGroup) null));
-        if (!fllb.a.a().aa()) {
+        focl foclVar = focl.a;
+        if (!foclVar.lK().aa()) {
             setRequestedOrientation(1);
         }
-        edgk.f(getWindow(), false);
+        eftf.f(getWindow(), false);
         getWindow().addFlags(128);
         this.o = getString(R.string.source_default_target_device_name);
         if (bundle != null) {
-            this.r = (aihu) Enum.valueOf(aihu.class, bundle.getString("current_fragment", aihu.CONNECTED_FRAGMENT.name()));
+            this.r = (akik) Enum.valueOf(akik.class, bundle.getString("current_fragment", akik.CONNECTED_FRAGMENT.name()));
             if (bundle.isEmpty()) {
                 j.h("Activity is restored with an empty savedInstanceState bundle.", new Object[0]);
             }
         } else {
-            this.r = s() ? aihu.WAITING_FRAGMENT : aihu.CONNECTED_FRAGMENT;
+            this.r = s() ? akik.WAITING_FRAGMENT : akik.CONNECTED_FRAGMENT;
         }
         if (bundle != null) {
             j.j("Activity is restored with non empty saved instance state.", new Object[0]);
-            this.s = (fhmn) bundle.getSerializable("connection_type");
+            this.s = (fkck) bundle.getSerializable("connection_type");
         } else if ((getIntent().getFlags() & 1048576) != 0) {
             j.j("Activity is launched from history, not starting the protocol.", new Object[0]);
             this.s = null;
         } else if (r()) {
-            if (((Boolean) this.x.a()).booleanValue()) {
+            if (((Boolean) this.x.lK()).booleanValue()) {
                 j.j("Activity is created via adb for e2e testing. Not Starting protocol yet.", new Object[0]);
                 this.s = null;
             } else {
                 j.h("Activity is created by attaching the cable.", new Object[0]);
-                this.s = fhmn.USB;
+                this.s = fkck.USB;
             }
         } else if (B()) {
             if (getIntent().getBooleanExtra("com.google.android.gms.backup.LAUNCHED_FROM_NOTIFICATION", false)) {
@@ -421,25 +422,25 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
             } else {
                 j.h("Activity is created by wifi d2d intent.", new Object[0]);
             }
-            this.s = fhmn.WIFI;
+            this.s = fkck.WIFI;
         } else {
             j.h("Activity is launched by a general intent, not starting the protocol.", new Object[0]);
             this.s = null;
         }
-        if (!fllb.a.a().aQ() || this.r == aihu.SUCCESS_FRAGMENT) {
+        if (!foclVar.lK().aQ() || this.r == akik.SUCCESS_FRAGMENT) {
             return;
         }
         y();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         j.j("onDestroy", new Object[0]);
         super.onDestroy();
         q();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         j.j("onNewIntent. Action=%s", intent.getAction());
         q();
@@ -447,21 +448,21 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
         setIntent(intent);
         v();
         if (B()) {
-            this.s = fhmn.WIFI;
+            this.s = fkck.WIFI;
         } else if (r()) {
-            this.s = fhmn.USB;
+            this.s = fkck.USB;
         }
         y();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         j.j("onPause", new Object[0]);
         this.v = true;
         super.onPause();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
         super.onRequestPermissionsResult(i, strArr, iArr);
         if (i != 0) {
@@ -478,7 +479,7 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
         x();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         j.j("onResume", new Object[0]);
         this.v = false;
@@ -486,7 +487,7 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
         o(this.r);
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         bundle.putSerializable("connection_type", this.s);
         bundle.putString("current_fragment", this.r.name());
@@ -502,7 +503,7 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
     }
 
     public final void q() {
-        if (!fllb.a.a().W()) {
+        if (!focl.a.lK().W()) {
             if (this.m == null) {
                 j.d("mBoundServiceInterface already null; not unbinding.", new Object[0]);
                 return;
@@ -525,18 +526,18 @@ public class D2dSourceChimeraActivity extends qfp implements aiwe, aiwk, aiwq, a
         if (Objects.equals(getIntent().getAction(), "android.hardware.usb.action.USB_ACCESSORY_ATTACHED") && getIntent().hasExtra("accessory")) {
             return true;
         }
-        return ((Boolean) this.x.a()).booleanValue() && !Objects.equals(this.t, fhmn.WIFI);
+        return ((Boolean) this.x.lK()).booleanValue() && !Objects.equals(this.t, fkck.WIFI);
     }
 
     public final boolean s() {
-        return !((Boolean) this.u.a()).booleanValue() ? B() : this.t == fhmn.WIFI;
+        return !((Boolean) this.u.lK()).booleanValue() ? B() : this.t == fkck.WIFI;
     }
 
-    @Override // defpackage.aiwe
+    @Override // defpackage.akwu
     public final void h() {
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
     }
 }

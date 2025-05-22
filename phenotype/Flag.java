@@ -5,19 +5,19 @@ import android.os.Parcelable;
 import android.util.Base64;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.cvze;
-import defpackage.cvzf;
-import defpackage.cwam;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cyjb;
+import defpackage.cyjc;
+import defpackage.cykj;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class Flag extends AbstractSafeParcelable implements Comparable {
-    public static final Parcelable.Creator CREATOR = new cvzf();
-    public static final Comparator a = new cvze();
+    public static final Parcelable.Creator CREATOR = new cyjc();
+    public static final Comparator a = new cyjb();
     public final String b;
     final long c;
     final boolean d;
@@ -79,7 +79,7 @@ public class Flag extends AbstractSafeParcelable implements Comparable {
             throw new AssertionError(a.j(i, "Invalid enum value: "));
         }
         byte[] bArr = this.g;
-        arwm.s(bArr);
+        atzb.s(bArr);
         return Base64.encodeToString(bArr, 3);
     }
 
@@ -161,7 +161,7 @@ public class Flag extends AbstractSafeParcelable implements Comparable {
             throw new IllegalArgumentException("Not a String type");
         }
         String str = this.f;
-        arwm.s(str);
+        atzb.s(str);
         return str;
     }
 
@@ -180,7 +180,7 @@ public class Flag extends AbstractSafeParcelable implements Comparable {
         } else if (i == 4) {
             sb.append("'");
             String str2 = this.f;
-            arwm.s(str2);
+            atzb.s(str2);
             sb.append(str2);
             sb.append("'");
         } else {
@@ -189,7 +189,7 @@ public class Flag extends AbstractSafeParcelable implements Comparable {
             }
             sb.append("'");
             byte[] bArr = this.g;
-            arwm.s(bArr);
+            atzb.s(bArr);
             sb.append(Base64.encodeToString(bArr, 3));
             sb.append("'");
         }
@@ -206,7 +206,7 @@ public class Flag extends AbstractSafeParcelable implements Comparable {
         int i;
         if (obj instanceof Flag) {
             Flag flag = (Flag) obj;
-            if (cwam.a(this.b, flag.b) && (i = this.h) == flag.h && this.i == flag.i && this.j == flag.j) {
+            if (cykj.a(this.b, flag.b) && (i = this.h) == flag.h && this.i == flag.i && this.j == flag.j) {
                 if (i != 1) {
                     if (i == 2) {
                         return this.d == flag.d;
@@ -215,7 +215,7 @@ public class Flag extends AbstractSafeParcelable implements Comparable {
                         return this.e == flag.e;
                     }
                     if (i == 4) {
-                        return cwam.a(this.f, flag.f);
+                        return cykj.a(this.f, flag.f);
                     }
                     if (i == 5) {
                         return Arrays.equals(this.g, flag.g);
@@ -242,7 +242,7 @@ public class Flag extends AbstractSafeParcelable implements Comparable {
             throw new IllegalArgumentException("Not a bytes type");
         }
         byte[] bArr = this.g;
-        arwm.s(bArr);
+        atzb.s(bArr);
         return bArr;
     }
 
@@ -255,42 +255,42 @@ public class Flag extends AbstractSafeParcelable implements Comparable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.b;
-        int a2 = arxc.a(parcel);
-        if (!cvzf.b(str)) {
-            arxc.v(parcel, 2, str, false);
+        int a2 = atzr.a(parcel);
+        if (!cyjc.b(str)) {
+            atzr.v(parcel, 2, str, false);
         }
         long j = this.c;
         if (j != 0) {
-            arxc.q(parcel, 3, j);
+            atzr.q(parcel, 3, j);
         }
         if (this.d) {
-            arxc.e(parcel, 4, true);
+            atzr.e(parcel, 4, true);
         }
         double d = this.e;
         if (d != 0.0d) {
-            arxc.j(parcel, 5, d);
+            atzr.j(parcel, 5, d);
         }
         String str2 = this.f;
-        if (!cvzf.b(str2)) {
-            arxc.v(parcel, 6, str2, false);
+        if (!cyjc.b(str2)) {
+            atzr.v(parcel, 6, str2, false);
         }
         byte[] bArr = this.g;
-        if (!cvzf.b(bArr)) {
-            arxc.i(parcel, 7, bArr, false);
+        if (!cyjc.b(bArr)) {
+            atzr.i(parcel, 7, bArr, false);
         }
         int i2 = this.h;
-        if (!cvzf.a(i2)) {
-            arxc.o(parcel, 8, i2);
+        if (!cyjc.a(i2)) {
+            atzr.o(parcel, 8, i2);
         }
         int i3 = this.i;
-        if (!cvzf.a(i3)) {
-            arxc.o(parcel, 9, i3);
+        if (!cyjc.a(i3)) {
+            atzr.o(parcel, 9, i3);
         }
         int i4 = this.j;
-        if (!cvzf.a(i4)) {
-            arxc.o(parcel, 10, i4);
+        if (!cyjc.a(i4)) {
+            atzr.o(parcel, 10, i4);
         }
-        arxc.c(parcel, a2);
+        atzr.c(parcel, a2);
     }
 
     public Flag(String str, double d, int i) {

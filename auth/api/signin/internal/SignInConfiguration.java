@@ -5,20 +5,20 @@ import android.os.Parcelable;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zpn;
-import defpackage.zpv;
+import defpackage.abpn;
+import defpackage.abpv;
+import defpackage.atzb;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class SignInConfiguration extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new zpv();
+    public static final Parcelable.Creator CREATOR = new abpv();
     public final String a;
     public final GoogleSignInOptions b;
 
     public SignInConfiguration(String str, GoogleSignInOptions googleSignInOptions) {
-        arwm.q(str);
+        atzb.q(str);
         this.a = str;
         this.b = googleSignInOptions;
     }
@@ -43,18 +43,18 @@ public final class SignInConfiguration extends AbstractSafeParcelable implements
     }
 
     public final int hashCode() {
-        zpn zpnVar = new zpn();
-        zpnVar.b(this.a);
-        zpnVar.b(this.b);
-        return zpnVar.a;
+        abpn abpnVar = new abpn();
+        abpnVar.b(this.a);
+        abpnVar.b(this.b);
+        return abpnVar.a;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.t(parcel, 5, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.t(parcel, 5, this.b, i, false);
+        atzr.c(parcel, a);
     }
 }

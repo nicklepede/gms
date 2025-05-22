@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import defpackage.asqx;
-import defpackage.azru;
-import defpackage.eiig;
-import defpackage.epue;
+import defpackage.auur;
+import defpackage.bbvq;
+import defpackage.ekvl;
+import defpackage.esid;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class InvitationDataModel implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new azru();
+    public static final Parcelable.Creator CREATOR = new bbvq();
     public final String a;
     public final String b;
     public final String c;
@@ -37,7 +37,7 @@ public final class InvitationDataModel implements ReflectedParcelable {
             return str;
         }
         String str2 = this.d;
-        return !TextUtils.isEmpty(str2) ? str2 : asqx.c(this.c);
+        return !TextUtils.isEmpty(str2) ? str2 : auur.c(this.c);
     }
 
     @Override // android.os.Parcelable
@@ -60,13 +60,13 @@ public final class InvitationDataModel implements ReflectedParcelable {
 
     public InvitationDataModel(Parcel parcel) {
         String readString = parcel.readString();
-        eiig.x(readString);
+        ekvl.y(readString);
         this.a = readString;
         this.b = parcel.readString();
         this.c = parcel.readString();
         this.d = parcel.readString();
         this.e = parcel.readString();
-        int a = epue.a(parcel.readInt());
+        int a = esid.a(parcel.readInt());
         this.g = a == 0 ? 1 : a;
         this.f = Long.valueOf(parcel.readLong());
     }

@@ -5,105 +5,105 @@ import android.net.ConnectivityManager;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddDownloadScheduleService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.czlp;
-import defpackage.dawm;
-import defpackage.eiig;
-import defpackage.ejhf;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enqr;
-import defpackage.enqt;
-import defpackage.enqx;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.frxg;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dbvl;
+import defpackage.ddgu;
+import defpackage.ekvl;
+import defpackage.eluo;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqek;
+import defpackage.eqem;
+import defpackage.eqeq;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fusa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RegionMddDownloadScheduleService extends GmsTaskBoundService {
-    public final czje b;
-    private dawm d;
-    private final czlk e;
-    private static final asot c = asot.b("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY);
+    public final dbtc b;
+    private ddgu d;
+    private final dbvg e;
+    private static final ausn c = ausn.b("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY);
     public static final String a = RegionMddDownloadScheduleService.class.getName();
 
     public RegionMddDownloadScheduleService() {
-        czje czjeVar = new czje();
-        this.b = czjeVar;
-        this.e = new czlk(czjeVar);
+        dbtc dbtcVar = new dbtc();
+        this.b = dbtcVar;
+        this.e = new dbvg(dbtcVar);
     }
 
-    public final dawm d(Context context) {
-        if (frxg.d()) {
-            return dawm.a(context);
+    public final ddgu d(Context context) {
+        if (fusa.c()) {
+            return ddgu.a(context);
         }
         if (this.d == null) {
-            this.d = dawm.a(context);
+            this.d = ddgu.a(context);
         }
         return this.d;
     }
 
-    public final enss e(dawm dawmVar, boolean z) {
-        return enps.g(ensi.h(dawmVar.c.e(true != z ? "MDD.WIFI.CHARGING.PERIODIC.TASK" : "MDD.CELLULAR.CHARGING.PERIODIC.TASK")), new enqc() { // from class: dawi
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+    public final eqgl e(ddgu ddguVar, boolean z) {
+        return eqdl.g(eqgb.h(ddguVar.c.e(true != z ? "MDD.WIFI.CHARGING.PERIODIC.TASK" : "MDD.CELLULAR.CHARGING.PERIODIC.TASK")), new eqdv() { // from class: ddgq
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 RegionMddDownloadScheduleService.this.b.e("RegionMddDownloadScheduleSuccess");
-                return ensj.i(0);
+                return eqgc.i(0);
             }
-        }, enre.a);
+        }, eqex.a);
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(final byln bylnVar) {
-        czje czjeVar = this.b;
-        czjeVar.e("RegionMddDownloadScheduleInvocation");
-        if (!frxg.e()) {
+    public final eqgl iB(final cauf caufVar) {
+        dbtc dbtcVar = this.b;
+        dbtcVar.e("RegionMddDownloadScheduleInvocation");
+        if (!fusa.d()) {
             this.b.e("RegionMddDownloadScheduleFailureServiceDisabled");
-            return ensj.i(2);
+            return eqgc.i(2);
         }
-        String str = bylnVar.a;
+        String str = caufVar.a;
         if (!str.equals("RegionMddRefreshDownloadTask")) {
-            czjeVar.e("RegionMddDownloadScheduleFailureTagInvalid");
-            ((ejhf) ((ejhf) c.i()).ah((char) 10434)).B("Unexpected tag: %s.", str);
-            return ensj.i(2);
+            dbtcVar.e("RegionMddDownloadScheduleFailureTagInvalid");
+            ((eluo) ((eluo) c.i()).ai((char) 10440)).B("Unexpected tag: %s.", str);
+            return eqgc.i(2);
         }
-        czlk czlkVar = this.e;
+        dbvg dbvgVar = this.e;
         final Context a2 = AppContextProvider.a();
-        if (czlp.b(a2, czlkVar).isEmpty()) {
-            czjeVar.e("RegionMddDownloadScheduleFailureAccountLocationDisabled");
-            ((ejhf) ((ejhf) c.h()).ah((char) 10433)).x("Account-level location setting is turned off.");
-            return ensj.i(2);
+        if (dbvl.b(a2, dbvgVar).isEmpty()) {
+            dbtcVar.e("RegionMddDownloadScheduleFailureAccountLocationDisabled");
+            ((eluo) ((eluo) c.h()).ai((char) 10439)).x("Account-level location setting is turned off.");
+            return eqgc.i(2);
         }
         ConnectivityManager connectivityManager = (ConnectivityManager) a2.getSystemService("connectivity");
-        eiig.x(connectivityManager);
+        ekvl.y(connectivityManager);
         final boolean isActiveNetworkMetered = connectivityManager.isActiveNetworkMetered();
-        if (frxg.d()) {
-            enqt enqtVar = new enqt() { // from class: dawj
-                @Override // defpackage.enqt
-                public final Object a(enqv enqvVar) {
-                    dawm d = RegionMddDownloadScheduleService.this.d(a2);
-                    enqvVar.a(d, enre.a);
+        if (fusa.c()) {
+            eqem eqemVar = new eqem() { // from class: ddgr
+                @Override // defpackage.eqem
+                public final Object a(eqeo eqeoVar) {
+                    ddgu d = RegionMddDownloadScheduleService.this.d(a2);
+                    eqeoVar.a(d, eqex.a);
                     return d;
                 }
             };
-            enre enreVar = enre.a;
-            return enqx.b(enqtVar, enreVar).d(new enqr() { // from class: dawk
-                @Override // defpackage.enqr
-                public final enqx a(enqv enqvVar, Object obj) {
-                    return new enqx(RegionMddDownloadScheduleService.this.e((dawm) obj, isActiveNetworkMetered));
+            eqex eqexVar = eqex.a;
+            return eqeq.b(eqemVar, eqexVar).d(new eqek() { // from class: ddgs
+                @Override // defpackage.eqek
+                public final eqeq a(eqeo eqeoVar, Object obj) {
+                    return new eqeq(RegionMddDownloadScheduleService.this.e((ddgu) obj, isActiveNetworkMetered));
                 }
-            }, enreVar).i();
+            }, eqexVar).i();
         }
-        dawm d = d(a2);
+        ddgu d = d(a2);
         try {
-            enss e = e(d, isActiveNetworkMetered);
+            eqgl e = e(d, isActiveNetworkMetered);
             if (d != null) {
                 d.close();
             }
@@ -121,6 +121,6 @@ public class RegionMddDownloadScheduleService extends GmsTaskBoundService {
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final void fR() {
+    public final void gf() {
     }
 }

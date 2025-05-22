@@ -3,23 +3,23 @@ package com.google.android.gms.nearby.sharing.receive;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.nearby.sharing.receive.FileSelectionChimeraActivity;
-import defpackage.abt;
-import defpackage.aci;
-import defpackage.qet;
+import defpackage.aby;
+import defpackage.acn;
+import defpackage.rxx;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class FileSelectionChimeraActivity extends qet {
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+public final class FileSelectionChimeraActivity extends rxx {
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        registerForActivityResult(new aci(), new abt() { // from class: cpyw
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        registerForActivityResult(new acn(), new aby() { // from class: csht
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 List list = (List) obj;
-                fvbo.f(list, "uris");
+                fxxm.f(list, "uris");
                 boolean isEmpty = list.isEmpty();
                 FileSelectionChimeraActivity fileSelectionChimeraActivity = FileSelectionChimeraActivity.this;
                 if (isEmpty) {

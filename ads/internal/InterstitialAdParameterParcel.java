@@ -3,9 +3,9 @@ package com.google.android.gms.ads.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class InterstitialAdParameterParcel extends AbstractSafeParcelable {
     public static final Parcelable.Creator CREATOR = new b();
@@ -33,16 +33,16 @@ public final class InterstitialAdParameterParcel extends AbstractSafeParcelable 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 2, this.a);
-        arxc.e(parcel, 3, this.b);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.e(parcel, 5, this.d);
-        arxc.l(parcel, 6, this.e);
-        arxc.o(parcel, 7, this.f);
-        arxc.e(parcel, 8, this.g);
-        arxc.e(parcel, 9, this.h);
-        arxc.e(parcel, 10, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 2, this.a);
+        atzr.e(parcel, 3, this.b);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.e(parcel, 5, this.d);
+        atzr.l(parcel, 6, this.e);
+        atzr.o(parcel, 7, this.f);
+        atzr.e(parcel, 8, this.g);
+        atzr.e(parcel, 9, this.h);
+        atzr.e(parcel, 10, this.i);
+        atzr.c(parcel, a);
     }
 }

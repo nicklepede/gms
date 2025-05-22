@@ -4,13 +4,13 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dexq;
+import defpackage.atzr;
+import defpackage.dhiu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class RetrieveInAppPaymentCredentialRequest extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new dexq();
+    public static final Parcelable.Creator CREATOR = new dhiu();
     public final String a;
     public final String b;
     final TransactionData c;
@@ -30,13 +30,13 @@ public final class RetrieveInAppPaymentCredentialRequest extends AbstractSafePar
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.i(parcel, 5, this.d, false);
-        arxc.e(parcel, 6, this.e);
-        arxc.o(parcel, 7, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.i(parcel, 5, this.d, false);
+        atzr.e(parcel, 6, this.e);
+        atzr.o(parcel, 7, this.f);
+        atzr.c(parcel, a);
     }
 }

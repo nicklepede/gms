@@ -5,22 +5,22 @@ import android.content.Context;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.deidentifieddata.batchactivity.CyclingProcessingService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.dade;
-import defpackage.dahq;
-import defpackage.dann;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fruy;
-import defpackage.frxn;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dcnm;
+import defpackage.dcry;
+import defpackage.dcxv;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fups;
+import defpackage.fush;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -28,81 +28,82 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class CyclingProcessingService extends GmsTaskBoundService {
     public static final String a;
-    public dade b;
-    public final dahq c = new dahq();
-    private dann d;
-    private czlk e;
-    private czje f;
+    public dcnm b;
+    public final dcry c = new dcry();
+    private dcxv d;
+    private dbvg e;
+    private dbtc f;
 
     static {
-        asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "CyclingActivity");
+        ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "CyclingActivity");
         a = CyclingProcessingService.class.getName();
     }
 
     public static boolean g() {
-        return fruy.a.a().a() && fruy.a.a().b() && frxn.Q();
+        fups fupsVar = fups.a;
+        return fupsVar.lK().a() && fupsVar.lK().b() && fush.Q();
     }
 
-    public final czje d() {
+    public final dbtc d() {
         if (this.f == null) {
-            this.f = new czje();
+            this.f = new dbtc();
         }
         return this.f;
     }
 
-    public final czlk e() {
+    public final dbvg e() {
         if (this.e == null) {
-            this.e = new czlk(d());
+            this.e = new dbvg(d());
         }
         return this.e;
     }
 
-    public final dann f() {
+    public final dcxv f() {
         if (this.d == null) {
-            this.d = new dann(e(), d());
+            this.d = new dcxv(e(), d());
         }
         return this.d;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
+    public final eqgl iB(cauf caufVar) {
         if (!g()) {
-            return ensj.i(0);
+            return eqgc.i(0);
         }
         d().e("CyclingActivityJobCount");
-        return enps.g(ensi.h(this.c.b()), new enqc() { // from class: dahx
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                enss g;
+        return eqdl.g(eqgb.h(this.c.b()), new eqdv() { // from class: dcsf
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                eqgl g;
                 String str = (String) obj;
                 boolean isEmpty = str.isEmpty();
                 final CyclingProcessingService cyclingProcessingService = CyclingProcessingService.this;
                 if (isEmpty) {
                     cyclingProcessingService.d().e("CyclingActivityJobEmptyAccount");
-                    return ensj.i(0);
+                    return eqgc.i(0);
                 }
                 final Account account = new Account(str, "com.google");
                 Context a2 = AppContextProvider.a();
                 if (cyclingProcessingService.b == null) {
-                    cyclingProcessingService.b = dadh.w(a2);
+                    cyclingProcessingService.b = dcnp.w(a2);
                 }
-                final daie daieVar = new daie(cyclingProcessingService.b, cyclingProcessingService.e(), cyclingProcessingService.d());
-                if (czlp.e(daieVar.d, account)) {
-                    daieVar.a().e("CyclingActivityBeginProcessing");
-                    g = enps.g(ensi.h(daieVar.g.a()), new enqc() { // from class: daic
-                        @Override // defpackage.enqc
-                        public final enss a(Object obj2) {
+                final dcsm dcsmVar = new dcsm(cyclingProcessingService.b, cyclingProcessingService.e(), cyclingProcessingService.d());
+                if (dbvl.e(dcsmVar.d, account)) {
+                    dcsmVar.a().e("CyclingActivityBeginProcessing");
+                    g = eqdl.g(eqgb.h(dcsmVar.g.a()), new eqdv() { // from class: dcsk
+                        @Override // defpackage.eqdv
+                        public final eqgl a(Object obj2) {
                             boolean z;
                             long j;
-                            enss b;
-                            czwr b2;
-                            czwr b3;
-                            final fefi fefiVar = (fefi) obj2;
-                            long d = fegx.d(fefiVar);
+                            eqgl b;
+                            dcgs b2;
+                            dcgs b3;
+                            final fgub fgubVar = (fgub) obj2;
+                            long d = fgvq.d(fgubVar);
                             long seconds = TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()) - TimeUnit.HOURS.toSeconds(12L);
                             long j2 = seconds - d;
                             if (j2 > TimeUnit.HOURS.toSeconds(48L)) {
@@ -111,348 +112,349 @@ public final class CyclingProcessingService extends GmsTaskBoundService {
                             } else {
                                 z = false;
                             }
-                            final daie daieVar2 = daie.this;
+                            final dcsm dcsmVar2 = dcsm.this;
                             if (z) {
-                                daieVar2.a().p("CyclingActivityHoursFailedSinceLastProcessedEndTime", TimeUnit.SECONDS.toHours(j2 - TimeUnit.HOURS.toSeconds(24L)));
+                                dcsmVar2.a().p("CyclingActivityHoursFailedSinceLastProcessedEndTime", TimeUnit.SECONDS.toHours(j2 - TimeUnit.HOURS.toSeconds(24L)));
                             } else {
-                                daieVar2.a().p("CyclingActivityDurationSinceLastProcessedEndTime", TimeUnit.SECONDS.toHours(j2));
+                                dcsmVar2.a().p("CyclingActivityDurationSinceLastProcessedEndTime", TimeUnit.SECONDS.toHours(j2));
                             }
                             Account account2 = account;
-                            if (frwz.f()) {
+                            if (furt.e()) {
                                 try {
-                                    if (daieVar2.h == null) {
-                                        daieVar2.h = new dbej();
+                                    if (dcsmVar2.h == null) {
+                                        dcsmVar2.h = new ddor();
                                     }
-                                    eyuv eyuvVar = (eyuv) ((enpf) daieVar2.h.b(account2)).u();
-                                    if (!eyuvVar.equals(eyuv.a)) {
-                                        for (int i = 0; i < eyuvVar.c.size(); i++) {
-                                            int b4 = eysv.b(((eysw) eyuvVar.c.get(i)).e);
+                                    fbjj fbjjVar = (fbjj) ((eqcy) dcsmVar2.h.b(account2)).u();
+                                    if (!fbjjVar.equals(fbjj.a)) {
+                                        for (int i = 0; i < fbjjVar.c.size(); i++) {
+                                            int b4 = fbhj.b(((fbhk) fbjjVar.c.get(i)).e);
                                             if (b4 != 0 && b4 == 2) {
-                                                daieVar2.i = (eysw) eyuvVar.c.get(i);
+                                                dcsmVar2.i = (fbhk) fbjjVar.c.get(i);
                                             }
-                                            int b5 = eysv.b(((eysw) eyuvVar.c.get(i)).e);
+                                            int b5 = fbhj.b(((fbhk) fbjjVar.c.get(i)).e);
                                             if (b5 != 0 && b5 == 3) {
-                                                daieVar2.j = (eysw) eyuvVar.c.get(i);
+                                                dcsmVar2.j = (fbhk) fbjjVar.c.get(i);
                                             }
                                         }
                                     }
                                 } catch (InterruptedException | ExecutionException e) {
                                     e.getMessage();
-                                    daieVar2.a().e("CyclingActivityPulpStorageExecutionNotComplete");
-                                    daieVar2.i = null;
-                                    daieVar2.j = null;
+                                    dcsmVar2.a().e("CyclingActivityPulpStorageExecutionNotComplete");
+                                    dcsmVar2.i = null;
+                                    dcsmVar2.j = null;
                                 }
                             }
-                            dade dadeVar = daieVar2.e;
-                            asot asotVar = daig.a;
+                            dcnm dcnmVar = dcsmVar2.e;
+                            ausn ausnVar = dcso.a;
                             long seconds2 = TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis());
                             int i2 = 2;
                             if (TimeUnit.SECONDS.toDays(seconds2) - TimeUnit.SECONDS.toDays(d) > 90) {
                                 long seconds3 = seconds2 - TimeUnit.DAYS.toSeconds(90L);
-                                ((ejhf) ((ejhf) daig.a.h()).ah(10225)).J("Location history from %d requested, exceeding max location history range. Truncating the start time to %d.", d, seconds3);
+                                ((eluo) ((eluo) dcso.a.h()).ai(10231)).J("Location history from %d requested, exceeding max location history range. Truncating the start time to %d.", d, seconds3);
                                 j = seconds3;
                             } else {
                                 j = d;
                             }
-                            eitj l = dadeVar.l(account2, "deidentified-cycling-activity", j, seconds, eyue.STABILIZED, new int[]{2});
+                            elgo l = dcnmVar.l(account2, "deidentified-cycling-activity", j, seconds, fbis.STABILIZED, new int[]{2});
                             final ArrayList arrayList = new ArrayList();
-                            int i3 = ((ejcb) l).c;
+                            int i3 = ((elpg) l).c;
                             for (int i4 = 0; i4 < i3; i4++) {
-                                eyul eyulVar = (eyul) l.get(i4);
-                                eyui eyuiVar = eyulVar.g;
-                                if (eyuiVar == null) {
-                                    eyuiVar = eyui.a;
+                                fbiz fbizVar = (fbiz) l.get(i4);
+                                fbiw fbiwVar = fbizVar.g;
+                                if (fbiwVar == null) {
+                                    fbiwVar = fbiw.a;
                                 }
-                                if (eyuiVar.b == i2) {
-                                    eyui eyuiVar2 = eyulVar.g;
-                                    if (eyuiVar2 == null) {
-                                        eyuiVar2 = eyui.a;
+                                if (fbiwVar.b == i2) {
+                                    fbiw fbiwVar2 = fbizVar.g;
+                                    if (fbiwVar2 == null) {
+                                        fbiwVar2 = fbiw.a;
                                     }
-                                    ffaj ffajVar = (eyuiVar2.b == i2 ? (ffak) eyuiVar2.c : ffak.a).g;
-                                    if (ffajVar == null) {
-                                        ffajVar = ffaj.a;
+                                    fhph fhphVar = (fbiwVar2.b == i2 ? (fhpi) fbiwVar2.c : fhpi.a).g;
+                                    if (fhphVar == null) {
+                                        fhphVar = fhph.a;
                                     }
-                                    if (ffajVar.c != ffai.CYCLING.p) {
+                                    if (fhphVar.c != fhpg.CYCLING.p) {
                                         i2 = 2;
                                     } else {
-                                        fefi fefiVar2 = eyulVar.c;
-                                        if (fefiVar2 == null) {
-                                            fefiVar2 = fefi.a;
+                                        fgub fgubVar2 = fbizVar.c;
+                                        if (fgubVar2 == null) {
+                                            fgubVar2 = fgub.a;
                                         }
-                                        fefi fefiVar3 = eyulVar.d;
-                                        if (fefiVar3 == null) {
-                                            fefiVar3 = fefi.a;
+                                        fgub fgubVar3 = fbizVar.d;
+                                        if (fgubVar3 == null) {
+                                            fgubVar3 = fgub.a;
                                         }
-                                        if (fegt.b(fegx.e(fefiVar2, fefiVar3), daie.a) > 0) {
-                                            daieVar2.a().e("CyclingActivityIneligibleExceedMaxSegmentDuration");
-                                            daieVar2.a().e("CyclingActivityTotalIneligibleUploads");
+                                        if (fgvm.b(fgvq.e(fgubVar2, fgubVar3), dcsm.a) > 0) {
+                                            dcsmVar2.a().e("CyclingActivityIneligibleExceedMaxSegmentDuration");
+                                            dcsmVar2.a().e("CyclingActivityTotalIneligibleUploads");
                                             i2 = 2;
                                         } else {
-                                            daieVar2.a().e("CyclingActivityTotalEligibleUploads");
-                                            eyui eyuiVar3 = eyulVar.g;
-                                            if (eyuiVar3 == null) {
-                                                eyuiVar3 = eyui.a;
+                                            dcsmVar2.a().e("CyclingActivityTotalEligibleUploads");
+                                            fbiw fbiwVar3 = fbizVar.g;
+                                            if (fbiwVar3 == null) {
+                                                fbiwVar3 = fbiw.a;
                                             }
-                                            ffak ffakVar = eyuiVar3.b == 2 ? (ffak) eyuiVar3.c : ffak.a;
-                                            fecj v = czvj.a.v();
-                                            fefi fefiVar4 = eyulVar.c;
-                                            if (fefiVar4 == null) {
-                                                fefiVar4 = fefi.a;
+                                            fhpi fhpiVar = fbiwVar3.b == 2 ? (fhpi) fbiwVar3.c : fhpi.a;
+                                            dcfk dcfkVar = dcfk.a;
+                                            fgrc v = dcfkVar.v();
+                                            fgub fgubVar4 = fbizVar.c;
+                                            if (fgubVar4 == null) {
+                                                fgubVar4 = fgub.a;
                                             }
                                             if (!v.b.L()) {
                                                 v.U();
                                             }
-                                            fecp fecpVar = v.b;
-                                            czvj czvjVar = (czvj) fecpVar;
-                                            fefiVar4.getClass();
-                                            czvjVar.e = fefiVar4;
-                                            czvjVar.b |= 4;
-                                            fefi fefiVar5 = eyulVar.d;
-                                            if (fefiVar5 == null) {
-                                                fefiVar5 = fefi.a;
+                                            fgri fgriVar = v.b;
+                                            dcfk dcfkVar2 = (dcfk) fgriVar;
+                                            fgubVar4.getClass();
+                                            dcfkVar2.e = fgubVar4;
+                                            dcfkVar2.b |= 4;
+                                            fgub fgubVar5 = fbizVar.d;
+                                            if (fgubVar5 == null) {
+                                                fgubVar5 = fgub.a;
                                             }
-                                            if (!fecpVar.L()) {
+                                            if (!fgriVar.L()) {
                                                 v.U();
                                             }
-                                            czvj czvjVar2 = (czvj) v.b;
-                                            fefiVar5.getClass();
-                                            czvjVar2.f = fefiVar5;
-                                            czvjVar2.b |= 8;
-                                            ffat ffatVar = ffakVar.c;
-                                            if (ffatVar == null) {
-                                                ffatVar = ffat.a;
+                                            dcfk dcfkVar3 = (dcfk) v.b;
+                                            fgubVar5.getClass();
+                                            dcfkVar3.f = fgubVar5;
+                                            dcfkVar3.b |= 8;
+                                            fhpr fhprVar = fhpiVar.c;
+                                            if (fhprVar == null) {
+                                                fhprVar = fhpr.a;
                                             }
-                                            czwr b6 = daig.b(ffatVar);
+                                            dcgs b6 = dcso.b(fhprVar);
                                             if (!v.b.L()) {
                                                 v.U();
                                             }
-                                            czvj czvjVar3 = (czvj) v.b;
+                                            dcfk dcfkVar4 = (dcfk) v.b;
                                             b6.getClass();
-                                            czvjVar3.c = b6;
-                                            czvjVar3.b |= 1;
-                                            ffat ffatVar2 = ffakVar.d;
-                                            if (ffatVar2 == null) {
-                                                ffatVar2 = ffat.a;
+                                            dcfkVar4.c = b6;
+                                            dcfkVar4.b |= 1;
+                                            fhpr fhprVar2 = fhpiVar.d;
+                                            if (fhprVar2 == null) {
+                                                fhprVar2 = fhpr.a;
                                             }
-                                            czwr b7 = daig.b(ffatVar2);
+                                            dcgs b7 = dcso.b(fhprVar2);
                                             if (!v.b.L()) {
                                                 v.U();
                                             }
-                                            fecp fecpVar2 = v.b;
-                                            czvj czvjVar4 = (czvj) fecpVar2;
+                                            fgri fgriVar2 = v.b;
+                                            dcfk dcfkVar5 = (dcfk) fgriVar2;
                                             b7.getClass();
-                                            czvjVar4.d = b7;
+                                            dcfkVar5.d = b7;
                                             i2 = 2;
-                                            czvjVar4.b |= 2;
-                                            float f = ffakVar.e;
-                                            if (!fecpVar2.L()) {
+                                            dcfkVar5.b |= 2;
+                                            float f = fhpiVar.e;
+                                            if (!fgriVar2.L()) {
                                                 v.U();
                                             }
-                                            fecp fecpVar3 = v.b;
-                                            czvj czvjVar5 = (czvj) fecpVar3;
-                                            czvjVar5.b |= 64;
-                                            czvjVar5.i = f;
-                                            ffaj ffajVar2 = ffakVar.g;
-                                            if (ffajVar2 == null) {
-                                                ffajVar2 = ffaj.a;
+                                            fgri fgriVar3 = v.b;
+                                            dcfk dcfkVar6 = (dcfk) fgriVar3;
+                                            dcfkVar6.b |= 64;
+                                            dcfkVar6.i = f;
+                                            fhph fhphVar2 = fhpiVar.g;
+                                            if (fhphVar2 == null) {
+                                                fhphVar2 = fhph.a;
                                             }
-                                            int f2 = daig.f(ffajVar2.c);
-                                            if (!fecpVar3.L()) {
+                                            int f2 = dcso.f(fhphVar2.c);
+                                            if (!fgriVar3.L()) {
                                                 v.U();
                                             }
-                                            fecp fecpVar4 = v.b;
-                                            czvj czvjVar6 = (czvj) fecpVar4;
-                                            czvjVar6.g = f2 - 1;
-                                            czvjVar6.b |= 16;
-                                            ffaj ffajVar3 = ffakVar.g;
-                                            if (ffajVar3 == null) {
-                                                ffajVar3 = ffaj.a;
+                                            fgri fgriVar4 = v.b;
+                                            dcfk dcfkVar7 = (dcfk) fgriVar4;
+                                            dcfkVar7.g = f2 - 1;
+                                            dcfkVar7.b |= 16;
+                                            fhph fhphVar3 = fhpiVar.g;
+                                            if (fhphVar3 == null) {
+                                                fhphVar3 = fhph.a;
                                             }
-                                            float f3 = ffajVar3.d;
-                                            if (!fecpVar4.L()) {
+                                            float f3 = fhphVar3.d;
+                                            if (!fgriVar4.L()) {
                                                 v.U();
                                             }
-                                            czvj czvjVar7 = (czvj) v.b;
-                                            czvjVar7.b |= 32;
-                                            czvjVar7.h = f3;
-                                            czvj czvjVar8 = (czvj) v.Q();
-                                            daga dagaVar = daieVar2.c;
-                                            eysw eyswVar = daieVar2.i;
-                                            if (eyswVar == null) {
+                                            dcfk dcfkVar8 = (dcfk) v.b;
+                                            dcfkVar8.b |= 32;
+                                            dcfkVar8.h = f3;
+                                            dcfk dcfkVar9 = (dcfk) v.Q();
+                                            dcqi dcqiVar = dcsmVar2.c;
+                                            fbhk fbhkVar = dcsmVar2.i;
+                                            if (fbhkVar == null) {
                                                 b2 = null;
                                             } else {
-                                                ffat ffatVar3 = eyswVar.d;
-                                                if (ffatVar3 == null) {
-                                                    ffatVar3 = ffat.a;
+                                                fhpr fhprVar3 = fbhkVar.d;
+                                                if (fhprVar3 == null) {
+                                                    fhprVar3 = fhpr.a;
                                                 }
-                                                b2 = daig.b(ffatVar3);
+                                                b2 = dcso.b(fhprVar3);
                                             }
-                                            eysw eyswVar2 = daieVar2.j;
-                                            if (eyswVar2 == null) {
+                                            fbhk fbhkVar2 = dcsmVar2.j;
+                                            if (fbhkVar2 == null) {
                                                 b3 = null;
                                             } else {
-                                                ffat ffatVar4 = eyswVar2.d;
-                                                if (ffatVar4 == null) {
-                                                    ffatVar4 = ffat.a;
+                                                fhpr fhprVar4 = fbhkVar2.d;
+                                                if (fhprVar4 == null) {
+                                                    fhprVar4 = fhpr.a;
                                                 }
-                                                b3 = daig.b(ffatVar4);
+                                                b3 = dcso.b(fhprVar4);
                                             }
-                                            czvj a3 = daig.a(dagaVar, czvjVar8, b2, b3);
-                                            if (!czvj.a.equals(a3)) {
-                                                czvk czvkVar = (czvk) czvm.a.v();
-                                                czvkVar.a(a3);
-                                                arrayList.add((czvm) czvkVar.Q());
+                                            dcfk a3 = dcso.a(dcqiVar, dcfkVar9, b2, b3);
+                                            if (!dcfkVar.equals(a3)) {
+                                                dcfl dcflVar = (dcfl) dcfn.a.v();
+                                                dcflVar.a(a3);
+                                                arrayList.add((dcfn) dcflVar.Q());
                                             }
-                                            fefi fefiVar6 = eyulVar.d;
-                                            if (fefiVar6 == null) {
-                                                fefiVar6 = fefi.a;
+                                            fgub fgubVar6 = fbizVar.d;
+                                            if (fgubVar6 == null) {
+                                                fgubVar6 = fgub.a;
                                             }
-                                            if (fegw.a(fefiVar6, fefiVar) > 0) {
-                                                fefiVar = fefiVar6;
+                                            if (fgvp.a(fgubVar6, fgubVar) > 0) {
+                                                fgubVar = fgubVar6;
                                             }
                                         }
                                     }
                                 }
-                                daieVar2.a().e("CyclingActivityIneligibleDueToType");
-                                daieVar2.a().e("CyclingActivityTotalIneligibleUploads");
+                                dcsmVar2.a().e("CyclingActivityIneligibleDueToType");
+                                dcsmVar2.a().e("CyclingActivityTotalIneligibleUploads");
                             }
-                            dxkm dxkmVar = daieVar2.g.b;
-                            synchronized (dxkmVar) {
-                                b = dxkmVar.b(new eiho() { // from class: dahh
-                                    @Override // defpackage.eiho
+                            dzwm dzwmVar = dcsmVar2.g.b;
+                            synchronized (dzwmVar) {
+                                b = dzwmVar.b(new ekut() { // from class: dcrp
+                                    @Override // defpackage.ekut
                                     public final Object apply(Object obj3) {
-                                        dbas dbasVar = (dbas) obj3;
-                                        asot asotVar2 = dahq.a;
-                                        dban dbanVar = dbasVar.g;
-                                        if (dbanVar == null) {
-                                            dbanVar = dban.a;
+                                        ddla ddlaVar = (ddla) obj3;
+                                        ausn ausnVar2 = dcry.a;
+                                        ddkv ddkvVar = ddlaVar.g;
+                                        if (ddkvVar == null) {
+                                            ddkvVar = ddkv.a;
                                         }
-                                        fecj fecjVar = (fecj) dbasVar.iB(5, null);
-                                        fecjVar.X(dbasVar);
-                                        dbao dbaoVar = (dbao) fecjVar;
-                                        fecj fecjVar2 = (fecj) dbanVar.iB(5, null);
-                                        fecjVar2.X(dbanVar);
-                                        if (!fecjVar2.b.L()) {
-                                            fecjVar2.U();
+                                        fgrc fgrcVar = (fgrc) ddlaVar.iQ(5, null);
+                                        fgrcVar.X(ddlaVar);
+                                        ddkw ddkwVar = (ddkw) fgrcVar;
+                                        fgrc fgrcVar2 = (fgrc) ddkvVar.iQ(5, null);
+                                        fgrcVar2.X(ddkvVar);
+                                        if (!fgrcVar2.b.L()) {
+                                            fgrcVar2.U();
                                         }
-                                        fefi fefiVar7 = fefi.this;
-                                        dban dbanVar2 = (dban) fecjVar2.b;
-                                        fefiVar7.getClass();
-                                        dbanVar2.c = fefiVar7;
-                                        dbanVar2.b |= 1;
-                                        dban dbanVar3 = (dban) fecjVar2.Q();
-                                        if (!dbaoVar.b.L()) {
-                                            dbaoVar.U();
+                                        fgub fgubVar7 = fgub.this;
+                                        ddkv ddkvVar2 = (ddkv) fgrcVar2.b;
+                                        fgubVar7.getClass();
+                                        ddkvVar2.c = fgubVar7;
+                                        ddkvVar2.b |= 1;
+                                        ddkv ddkvVar3 = (ddkv) fgrcVar2.Q();
+                                        if (!ddkwVar.b.L()) {
+                                            ddkwVar.U();
                                         }
-                                        dbas dbasVar2 = (dbas) dbaoVar.b;
-                                        dbanVar3.getClass();
-                                        dbasVar2.g = dbanVar3;
-                                        dbasVar2.b |= 4;
-                                        return (dbas) dbaoVar.Q();
+                                        ddla ddlaVar2 = (ddla) ddkwVar.b;
+                                        ddkvVar3.getClass();
+                                        ddlaVar2.g = ddkvVar3;
+                                        ddlaVar2.b |= 4;
+                                        return (ddla) ddkwVar.Q();
                                     }
-                                }, enre.a);
+                                }, eqex.a);
                             }
-                            return enps.f(b, new eiho() { // from class: daid
-                                @Override // defpackage.eiho
+                            return eqdl.f(b, new ekut() { // from class: dcsl
+                                @Override // defpackage.ekut
                                 public final Object apply(Object obj3) {
-                                    daie daieVar3;
+                                    dcsm dcsmVar3;
                                     List list = arrayList;
-                                    Collections.sort(list, daig.b);
-                                    int i5 = eitj.d;
-                                    eite eiteVar = new eite();
-                                    febp febpVar = fegt.b;
+                                    Collections.sort(list, dcso.b);
+                                    int i5 = elgo.d;
+                                    elgj elgjVar = new elgj();
+                                    fgqi fgqiVar = fgvm.b;
                                     Iterator it = list.iterator();
                                     int i6 = 0;
                                     int i7 = 0;
                                     int i8 = 0;
                                     while (true) {
-                                        daieVar3 = daie.this;
+                                        dcsmVar3 = dcsm.this;
                                         if (!it.hasNext()) {
                                             break;
                                         }
-                                        czvm czvmVar = (czvm) it.next();
-                                        if (fegt.b(fegt.h(febpVar, daig.c(czvmVar)), daie.b) <= 0) {
+                                        dcfn dcfnVar = (dcfn) it.next();
+                                        if (fgvm.b(fgvm.h(fgqiVar, dcso.c(dcfnVar)), dcsm.b) <= 0) {
                                             i7++;
-                                            i8 += ((czvj) czvmVar.e.get(0)).j.size();
-                                            fecj fecjVar = (fecj) czvmVar.iB(5, null);
-                                            fecjVar.X(czvmVar);
-                                            czvk czvkVar2 = (czvk) fecjVar;
-                                            if (!czvkVar2.b.L()) {
-                                                czvkVar2.U();
+                                            i8 += ((dcfk) dcfnVar.e.get(0)).j.size();
+                                            fgrc fgrcVar = (fgrc) dcfnVar.iQ(5, null);
+                                            fgrcVar.X(dcfnVar);
+                                            dcfl dcflVar2 = (dcfl) fgrcVar;
+                                            if (!dcflVar2.b.L()) {
+                                                dcflVar2.U();
                                             }
-                                            czvm czvmVar2 = (czvm) czvkVar2.b;
-                                            czvmVar2.b |= 2;
-                                            czvmVar2.d = i7;
-                                            czvm czvmVar3 = (czvm) czvkVar2.Q();
-                                            eiteVar.i(czvmVar3);
-                                            febpVar = fegt.h(febpVar, daig.c(czvmVar3));
+                                            dcfn dcfnVar2 = (dcfn) dcflVar2.b;
+                                            dcfnVar2.b |= 2;
+                                            dcfnVar2.d = i7;
+                                            dcfn dcfnVar3 = (dcfn) dcflVar2.Q();
+                                            elgjVar.i(dcfnVar3);
+                                            fgqiVar = fgvm.h(fgqiVar, dcso.c(dcfnVar3));
                                             if (i7 == 4) {
                                                 int size = (list.size() - 4) - i6;
-                                                daieVar3.a().k("CyclingActivityIneligibleDueToDailyCap", size);
-                                                daieVar3.a().f("CyclingActivityTotalIneligibleUploads", size);
+                                                dcsmVar3.a().k("CyclingActivityIneligibleDueToDailyCap", size);
+                                                dcsmVar3.a().f("CyclingActivityTotalIneligibleUploads", size);
                                                 break;
                                             }
                                         } else {
-                                            daieVar3.a().e("CyclingActivityIneligibleExceedMaxDailyDuration");
-                                            daieVar3.a().e("CyclingActivityTotalIneligibleUploads");
+                                            dcsmVar3.a().e("CyclingActivityIneligibleExceedMaxDailyDuration");
+                                            dcsmVar3.a().e("CyclingActivityTotalIneligibleUploads");
                                             i6++;
                                         }
                                     }
-                                    daieVar3.a().k("CyclingActivityTotalSegmentToUpload", i7);
+                                    dcsmVar3.a().k("CyclingActivityTotalSegmentToUpload", i7);
                                     if (i7 > 0) {
-                                        daieVar3.f.p("CyclingActivityTotalPointToUpload", daig.e(i8, 256L));
-                                        daieVar3.f.k("CyclingActivityTotalDurationToUpload", (((int) (fegt.f(febpVar) / 30)) + 1) * 30);
+                                        dcsmVar3.f.p("CyclingActivityTotalPointToUpload", dcso.e(i8, 256L));
+                                        dcsmVar3.f.k("CyclingActivityTotalDurationToUpload", (((int) (fgvm.f(fgqiVar) / 30)) + 1) * 30);
                                     }
-                                    return eiteVar.g();
+                                    return elgjVar.g();
                                 }
-                            }, enre.a);
+                            }, eqex.a);
                         }
-                    }, enre.a);
+                    }, eqex.a);
                 } else {
-                    int i = eitj.d;
-                    g = ensj.i(ejcb.a);
+                    int i = elgo.d;
+                    g = eqgc.i(elpg.a);
                 }
-                return enps.g(ensi.h(g), new enqc() { // from class: dahy
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj2) {
-                        eitj eitjVar = (eitj) obj2;
-                        boolean isEmpty2 = eitjVar.isEmpty();
+                return eqdl.g(eqgb.h(g), new eqdv() { // from class: dcsg
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj2) {
+                        elgo elgoVar = (elgo) obj2;
+                        boolean isEmpty2 = elgoVar.isEmpty();
                         CyclingProcessingService cyclingProcessingService2 = CyclingProcessingService.this;
                         if (isEmpty2) {
                             cyclingProcessingService2.d().e("CyclingActivityJobEmptyOutput");
-                            return frwe.d() ? enps.f(cyclingProcessingService2.c.e("CyclingActivity", false), new eiho() { // from class: daib
-                                @Override // defpackage.eiho
+                            return fuqy.d() ? eqdl.f(cyclingProcessingService2.c.e("CyclingActivity", false), new ekut() { // from class: dcsj
+                                @Override // defpackage.ekut
                                 public final Object apply(Object obj3) {
                                     String str2 = CyclingProcessingService.a;
                                     return 0;
                                 }
-                            }, enre.a) : ensj.i(0);
+                            }, eqex.a) : eqgc.i(0);
                         }
-                        if (cyclingProcessingService2.f().d(account, eitjVar)) {
+                        if (cyclingProcessingService2.f().d(account, elgoVar)) {
                             cyclingProcessingService2.d().e("CyclingActivityJobSuccess");
-                            return frwe.d() ? enps.f(cyclingProcessingService2.c.e("CyclingActivity", false), new eiho() { // from class: dahz
-                                @Override // defpackage.eiho
+                            return fuqy.d() ? eqdl.f(cyclingProcessingService2.c.e("CyclingActivity", false), new ekut() { // from class: dcsh
+                                @Override // defpackage.ekut
                                 public final Object apply(Object obj3) {
                                     String str2 = CyclingProcessingService.a;
                                     return 0;
                                 }
-                            }, enre.a) : ensj.i(0);
+                            }, eqex.a) : eqgc.i(0);
                         }
                         cyclingProcessingService2.d().e("CyclingActivityJobFailure");
-                        return frwe.d() ? enps.f(cyclingProcessingService2.c.g("CyclingActivity", fegx.h(System.currentTimeMillis())), new eiho() { // from class: daia
-                            @Override // defpackage.eiho
+                        return fuqy.d() ? eqdl.f(cyclingProcessingService2.c.g("CyclingActivity", fgvq.h(System.currentTimeMillis())), new ekut() { // from class: dcsi
+                            @Override // defpackage.ekut
                             public final Object apply(Object obj3) {
                                 String str2 = CyclingProcessingService.a;
                                 return 1;
                             }
-                        }, enre.a) : ensj.i(1);
+                        }, eqex.a) : eqgc.i(1);
                     }
-                }, enre.a);
+                }, eqex.a);
             }
-        }, enre.a);
+        }, eqex.a);
     }
 
-    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
         if (this.d != null) {
             f().a();

@@ -9,21 +9,21 @@ import android.text.TextUtils;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.eiib;
-import defpackage.eiic;
-import defpackage.eitj;
-import defpackage.zdb;
+import defpackage.abcw;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.ekvg;
+import defpackage.ekvh;
+import defpackage.elgo;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class InternalSignInCredentialWrapper extends AbstractSafeParcelable implements Comparable {
-    public static final Parcelable.Creator CREATOR = new zdb();
+    public static final Parcelable.Creator CREATOR = new abcw();
     public static final Scope a = new Scope("profile");
     public static final Scope b = new Scope("email");
     public static final Scope c = new Scope("openid");
@@ -43,14 +43,14 @@ public final class InternalSignInCredentialWrapper extends AbstractSafeParcelabl
 
     public InternalSignInCredentialWrapper(Account account, SignInCredential signInCredential, List list, boolean z, boolean z2, long j, boolean z3, long j2, String str, boolean z4, Intent intent) {
         this.f = account;
-        arwm.s(signInCredential);
+        atzb.s(signInCredential);
         this.g = signInCredential;
         if (!TextUtils.isEmpty(signInCredential.f)) {
-            arwm.c(list.isEmpty(), "Password credentials should have empty granted-scopes list");
-            arwm.c(!z, "Converted credentials should not contain the original password");
+            atzb.c(list.isEmpty(), "Password credentials should have empty granted-scopes list");
+            atzb.c(!z, "Converted credentials should not contain the original password");
         }
-        arwm.s(list);
-        this.h = eitj.i(list);
+        atzb.s(list);
+        this.h = elgo.i(list);
         this.i = z;
         this.j = z2;
         this.k = j;
@@ -103,7 +103,7 @@ public final class InternalSignInCredentialWrapper extends AbstractSafeParcelabl
             return false;
         }
         InternalSignInCredentialWrapper internalSignInCredentialWrapper = (InternalSignInCredentialWrapper) obj;
-        return arwb.b(this.f, internalSignInCredentialWrapper.f) && arwb.b(this.g, internalSignInCredentialWrapper.g) && arwb.b(this.h, internalSignInCredentialWrapper.h) && this.i == internalSignInCredentialWrapper.i && this.j == internalSignInCredentialWrapper.j && this.k == internalSignInCredentialWrapper.k && this.l == internalSignInCredentialWrapper.l && this.m == internalSignInCredentialWrapper.m && arwb.b(this.n, internalSignInCredentialWrapper.n) && this.o == internalSignInCredentialWrapper.o && arwb.b(this.p, internalSignInCredentialWrapper.p);
+        return atyq.b(this.f, internalSignInCredentialWrapper.f) && atyq.b(this.g, internalSignInCredentialWrapper.g) && atyq.b(this.h, internalSignInCredentialWrapper.h) && this.i == internalSignInCredentialWrapper.i && this.j == internalSignInCredentialWrapper.j && this.k == internalSignInCredentialWrapper.k && this.l == internalSignInCredentialWrapper.l && this.m == internalSignInCredentialWrapper.m && atyq.b(this.n, internalSignInCredentialWrapper.n) && this.o == internalSignInCredentialWrapper.o && atyq.b(this.p, internalSignInCredentialWrapper.p);
     }
 
     public final int hashCode() {
@@ -111,7 +111,7 @@ public final class InternalSignInCredentialWrapper extends AbstractSafeParcelabl
     }
 
     public final String toString() {
-        eiib b2 = eiic.b(this);
+        ekvg b2 = ekvh.b(this);
         b2.b("owningAccount", this.f);
         b2.b("signInCredential", this.g);
         b2.b("grantedScopes", this.h);
@@ -129,18 +129,18 @@ public final class InternalSignInCredentialWrapper extends AbstractSafeParcelabl
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Account account = this.f;
-        int a2 = arxc.a(parcel);
-        arxc.t(parcel, 1, account, i, false);
-        arxc.t(parcel, 2, this.g, i, false);
-        arxc.y(parcel, 3, a(), false);
-        arxc.e(parcel, 4, this.i);
-        arxc.e(parcel, 5, this.j);
-        arxc.q(parcel, 6, this.k);
-        arxc.e(parcel, 7, this.l);
-        arxc.q(parcel, 8, this.m);
-        arxc.v(parcel, 9, this.n, false);
-        arxc.e(parcel, 10, this.o);
-        arxc.t(parcel, 11, this.p, i, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.t(parcel, 1, account, i, false);
+        atzr.t(parcel, 2, this.g, i, false);
+        atzr.y(parcel, 3, a(), false);
+        atzr.e(parcel, 4, this.i);
+        atzr.e(parcel, 5, this.j);
+        atzr.q(parcel, 6, this.k);
+        atzr.e(parcel, 7, this.l);
+        atzr.q(parcel, 8, this.m);
+        atzr.v(parcel, 9, this.n, false);
+        atzr.e(parcel, 10, this.o);
+        atzr.t(parcel, 11, this.p, i, false);
+        atzr.c(parcel, a2);
     }
 }

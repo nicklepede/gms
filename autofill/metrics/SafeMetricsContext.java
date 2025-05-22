@@ -5,37 +5,37 @@ import android.os.Parcelable;
 import android.view.autofill.AutofillId;
 import com.google.android.gms.autofill.metrics.MetricsContext;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.affy;
-import defpackage.afmu;
-import defpackage.afrk;
-import defpackage.arxc;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
+import defpackage.ahgk;
+import defpackage.ahng;
+import defpackage.ahrw;
+import defpackage.atzr;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SafeMetricsContext extends AbstractSafeParcelable implements MetricsContext {
     public final int a;
     public final byte[] b;
     public final byte[] c;
     private final HashMap e = new HashMap();
-    private final eite f;
+    private final elgj f;
     private final AtomicInteger g;
     private int h;
-    private static final asot d = asot.b("SafeMetricsContext", asej.AUTOFILL);
-    public static final Parcelable.Creator CREATOR = new affy();
+    private static final ausn d = ausn.b("SafeMetricsContext", auid.AUTOFILL);
+    public static final Parcelable.Creator CREATOR = new ahgk();
 
     public SafeMetricsContext(int i, byte[] bArr, byte[] bArr2) {
-        int i2 = eitj.d;
-        this.f = new eite();
+        int i2 = elgo.d;
+        this.f = new elgj();
         this.g = new AtomicInteger(1);
         this.h = 1;
         this.a = i;
@@ -66,33 +66,33 @@ public class SafeMetricsContext extends AbstractSafeParcelable implements Metric
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext
-    public final afmu d() {
+    public final ahng d() {
         try {
             byte[] bArr = this.b;
-            fecp y = fecp.y(afmu.a, bArr, 0, bArr.length, febw.a());
-            fecp.M(y);
-            return (afmu) y;
-        } catch (fedk e) {
-            ((ejhf) ((ejhf) d.j()).s(e)).x("Failed to parse app");
-            return afmu.a;
+            fgri y = fgri.y(ahng.a, bArr, 0, bArr.length, fgqp.a());
+            fgri.M(y);
+            return (ahng) y;
+        } catch (fgsd e) {
+            ((eluo) ((eluo) d.j()).s(e)).x("Failed to parse app");
+            return ahng.a;
         }
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext
-    public final afrk e() {
+    public final ahrw e() {
         try {
             byte[] bArr = this.c;
-            fecp y = fecp.y(afrk.a, bArr, 0, bArr.length, febw.a());
-            fecp.M(y);
-            return (afrk) y;
-        } catch (fedk e) {
-            ((ejhf) ((ejhf) d.j()).s(e)).x("Failed to parse screen");
-            return afrk.a;
+            fgri y = fgri.y(ahrw.a, bArr, 0, bArr.length, fgqp.a());
+            fgri.M(y);
+            return (ahrw) y;
+        } catch (fgsd e) {
+            ((eluo) ((eluo) d.j()).s(e)).x("Failed to parse screen");
+            return ahrw.a;
         }
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext
-    public final eitj f() {
+    public final elgo f() {
         return this.f.g();
     }
 
@@ -104,10 +104,10 @@ public class SafeMetricsContext extends AbstractSafeParcelable implements Metric
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.i(parcel, 2, this.b, false);
-        arxc.i(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.i(parcel, 2, this.b, false);
+        atzr.i(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 }

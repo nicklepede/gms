@@ -21,17 +21,17 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import com.google.android.gms.R;
 import com.google.android.gms.wearable.backup.wear.lskfui.pattern.LockPatternView;
-import defpackage.djyg;
-import defpackage.djyh;
-import defpackage.djyi;
-import defpackage.djyk;
-import defpackage.djyl;
-import defpackage.rpq;
+import defpackage.dmjz;
+import defpackage.dmka;
+import defpackage.dmkb;
+import defpackage.dmkd;
+import defpackage.dmke;
+import defpackage.tiy;
 import j$.util.Objects;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class LockPatternView extends View {
     private int A;
@@ -42,12 +42,12 @@ public class LockPatternView extends View {
     private boolean F;
     private final Interpolator G;
     private final Interpolator H;
-    private final djyk I;
+    private final dmkd I;
     public final boolean[][] a;
     public boolean b;
     public boolean c;
     public float d;
-    private final djyi[][] e;
+    private final dmkb[][] e;
     private final int f;
     private final int g;
     private final float h;
@@ -74,10 +74,10 @@ public class LockPatternView extends View {
         this(context, null);
     }
 
-    private final djyh e(float f, float f2) {
-        djyh djyhVar;
-        djyh c = c(f, f2);
-        djyh djyhVar2 = null;
+    private final dmka e(float f, float f2) {
+        dmka dmkaVar;
+        dmka c = c(f, f2);
+        dmka dmkaVar2 = null;
         if (c == null || this.a[c.a][c.b]) {
             c = null;
         }
@@ -86,14 +86,14 @@ public class LockPatternView extends View {
         }
         ArrayList arrayList = this.l;
         if (arrayList.isEmpty()) {
-            djyhVar = null;
+            dmkaVar = null;
         } else {
-            djyh djyhVar3 = (djyh) arrayList.get(arrayList.size() - 1);
+            dmka dmkaVar3 = (dmka) arrayList.get(arrayList.size() - 1);
             int i = c.a;
-            int i2 = djyhVar3.a;
+            int i2 = dmkaVar3.a;
             int i3 = i - i2;
             int i4 = c.b;
-            int i5 = djyhVar3.b;
+            int i5 = dmkaVar3.b;
             int i6 = i4 - i5;
             if (Math.abs(i3) == 2 && Math.abs(i6) != 1) {
                 i2 += i3 > 0 ? 1 : -1;
@@ -101,17 +101,17 @@ public class LockPatternView extends View {
             if (Math.abs(i6) == 2 && Math.abs(i3) != 1) {
                 i5 += i6 > 0 ? 1 : -1;
             }
-            djyhVar = djyhVar3;
-            djyhVar2 = djyh.a(i2, i5);
+            dmkaVar = dmkaVar3;
+            dmkaVar2 = dmka.a(i2, i5);
         }
-        if (djyhVar2 != null && !this.a[djyhVar2.a][djyhVar2.b]) {
-            f(djyhVar2);
+        if (dmkaVar2 != null && !this.a[dmkaVar2.a][dmkaVar2.b]) {
+            f(dmkaVar2);
             if (this.F) {
-                m(djyhVar2);
+                m(dmkaVar2);
             }
         }
-        if (this.F && djyhVar != null) {
-            m(djyhVar);
+        if (this.F && dmkaVar != null) {
+            m(dmkaVar);
         }
         f(c);
         if (this.r) {
@@ -120,11 +120,11 @@ public class LockPatternView extends View {
         return c;
     }
 
-    private final void f(djyh djyhVar) {
-        this.a[djyhVar.a][djyhVar.b] = true;
-        this.l.add(djyhVar);
+    private final void f(dmka dmkaVar) {
+        this.a[dmkaVar.a][dmkaVar.b] = true;
+        this.l.add(dmkaVar);
         if (!this.q) {
-            l(djyhVar, true);
+            l(dmkaVar, true);
         }
         this.I.b();
     }
@@ -155,19 +155,19 @@ public class LockPatternView extends View {
         this.I.b();
     }
 
-    private final void l(djyh djyhVar, boolean z) {
-        djyi[][] djyiVarArr = this.e;
-        int i = djyhVar.a;
-        djyi[] djyiVarArr2 = djyiVarArr[i];
-        int i2 = djyhVar.b;
-        final djyi djyiVar = djyiVarArr2[i2];
-        Animator animator = djyiVar.g;
+    private final void l(dmka dmkaVar, boolean z) {
+        dmkb[][] dmkbVarArr = this.e;
+        int i = dmkaVar.a;
+        dmkb[] dmkbVarArr2 = dmkbVarArr[i];
+        int i2 = dmkaVar.b;
+        final dmkb dmkbVar = dmkbVarArr2[i2];
+        Animator animator = dmkbVar.g;
         if (animator != null) {
             animator.cancel();
         }
         AnimatorSet animatorSet = new AnimatorSet();
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
-        ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: djyf
+        ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: dmjy
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 LockPatternView.this.invalidate();
@@ -181,15 +181,15 @@ public class LockPatternView extends View {
         final float a = a(i2);
         final float b = b(i);
         ValueAnimator ofFloat2 = ValueAnimator.ofFloat(0.0f, 1.0f);
-        ofFloat2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: djyc
+        ofFloat2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: dmjv
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
                 float f3 = 1.0f - floatValue;
                 float f4 = a * floatValue;
-                djyi djyiVar2 = djyiVar;
-                djyiVar2.e = (f * f3) + f4;
-                djyiVar2.f = (f3 * f2) + (floatValue * b);
+                dmkb dmkbVar2 = dmkbVar;
+                dmkbVar2.e = (f * f3) + f4;
+                dmkbVar2.f = (f3 * f2) + (floatValue * b);
                 LockPatternView.this.invalidate();
             }
         });
@@ -200,10 +200,10 @@ public class LockPatternView extends View {
         int i3 = this.f;
         int i4 = this.g;
         if (i3 != i4) {
-            ValueAnimator.AnimatorUpdateListener animatorUpdateListener = new ValueAnimator.AnimatorUpdateListener() { // from class: djyd
+            ValueAnimator.AnimatorUpdateListener animatorUpdateListener = new ValueAnimator.AnimatorUpdateListener() { // from class: dmjw
                 @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    djyiVar.a = ((Float) valueAnimator.getAnimatedValue()).floatValue();
+                    dmkbVar.a = ((Float) valueAnimator.getAnimatedValue()).floatValue();
                     LockPatternView.this.invalidate();
                 }
             };
@@ -222,10 +222,10 @@ public class LockPatternView extends View {
             with.with(animatorSet2);
         }
         if (this.D != this.E) {
-            ValueAnimator.AnimatorUpdateListener animatorUpdateListener2 = new ValueAnimator.AnimatorUpdateListener() { // from class: djye
+            ValueAnimator.AnimatorUpdateListener animatorUpdateListener2 = new ValueAnimator.AnimatorUpdateListener() { // from class: dmjx
                 @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    djyiVar.d = ((Float) valueAnimator.getAnimatedValue()).floatValue();
+                    dmkbVar.d = ((Float) valueAnimator.getAnimatedValue()).floatValue();
                     LockPatternView.this.invalidate();
                 }
             };
@@ -248,13 +248,13 @@ public class LockPatternView extends View {
             }
             with.with(animatorSet3);
         }
-        animatorSet.addListener(new djyg(this, djyiVar));
-        djyiVar.g = animatorSet;
+        animatorSet.addListener(new dmjz(this, dmkbVar));
+        dmkbVar.g = animatorSet;
         animatorSet.start();
     }
 
-    private final void m(djyh djyhVar) {
-        l(djyhVar, false);
+    private final void m(dmka dmkaVar) {
+        l(dmkaVar, false);
     }
 
     private static final int n(int i, int i2) {
@@ -275,7 +275,7 @@ public class LockPatternView extends View {
         return paddingTop + (i * f) + (f / 2.0f);
     }
 
-    public final djyh c(float f, float f2) {
+    public final dmka c(float f, float f2) {
         float f3 = this.d;
         float f4 = f3 * f3;
         for (int i = 0; i < 3; i++) {
@@ -284,7 +284,7 @@ public class LockPatternView extends View {
                 float a = f - a(i2);
                 float f5 = f2 - b;
                 if ((a * a) + (f5 * f5) < f4) {
-                    return djyh.a(i, i2);
+                    return dmka.a(i, i2);
                 }
             }
         }
@@ -314,7 +314,7 @@ public class LockPatternView extends View {
     protected final boolean dispatchHoverEvent(android.view.MotionEvent r8) {
         /*
             r7 = this;
-            djyk r0 = r7.I
+            dmkd r0 = r7.I
             android.view.accessibility.AccessibilityManager r1 = r0.h
             boolean r2 = super.dispatchHoverEvent(r8)
             boolean r3 = r1.isEnabled()
@@ -345,7 +345,7 @@ public class LockPatternView extends View {
             float r1 = r8.getX()
             float r8 = r8.getY()
             com.google.android.gms.wearable.backup.wear.lskfui.pattern.LockPatternView r3 = r0.m
-            djyh r8 = r3.c(r1, r8)
+            dmka r8 = r3.c(r1, r8)
             if (r8 != 0) goto L44
         L42:
             r8 = r6
@@ -428,7 +428,7 @@ public class LockPatternView extends View {
 
     @Override // android.view.View
     protected final void onRestoreInstanceState(Parcelable parcelable) {
-        ArrayList<djyh> arrayList;
+        ArrayList<dmka> arrayList;
         SavedState savedState = (SavedState) parcelable;
         super.onRestoreInstanceState(savedState.getSuperState());
         byte[] bytes = savedState.a.getBytes();
@@ -438,7 +438,7 @@ public class LockPatternView extends View {
             ArrayList arrayList2 = new ArrayList();
             for (byte b : bytes) {
                 byte b2 = (byte) (b - 49);
-                arrayList2.add(djyh.a(b2 / 3, b2 % 3));
+                arrayList2.add(dmka.a(b2 / 3, b2 % 3));
             }
             arrayList = arrayList2;
         }
@@ -446,8 +446,8 @@ public class LockPatternView extends View {
         arrayList3.clear();
         arrayList3.addAll(arrayList);
         g();
-        for (djyh djyhVar : arrayList) {
-            this.a[djyhVar.a][djyhVar.b] = true;
+        for (dmka dmkaVar : arrayList) {
+            this.a[dmkaVar.a][dmkaVar.b] = true;
         }
         this.p = 0;
         invalidate();
@@ -468,8 +468,8 @@ public class LockPatternView extends View {
             int size = arrayList.size();
             byte[] bArr2 = new byte[size];
             for (int i = 0; i < size; i++) {
-                djyh djyhVar = (djyh) arrayList.get(i);
-                bArr2[i] = (byte) ((djyhVar.a * 3) + djyhVar.b + 49);
+                dmka dmkaVar = (dmka) arrayList.get(i);
+                bArr2[i] = (byte) ((dmkaVar.a * 3) + dmkaVar.b + 49);
             }
             bArr = bArr2;
         }
@@ -502,7 +502,7 @@ public class LockPatternView extends View {
             d();
             float x = motionEvent.getX();
             float y = motionEvent.getY();
-            djyh e = e(x, y);
+            dmka e = e(x, y);
             if (e != null) {
                 k(true);
                 this.p = 0;
@@ -529,20 +529,20 @@ public class LockPatternView extends View {
                 k(false);
                 for (int i2 = 0; i2 < 3; i2++) {
                     for (int i3 = 0; i3 < 3; i3++) {
-                        djyi djyiVar = this.e[i2][i3];
-                        Animator animator = djyiVar.g;
+                        dmkb dmkbVar = this.e[i2][i3];
+                        Animator animator = dmkbVar.g;
                         if (animator != null) {
                             animator.cancel();
-                            djyiVar.g = null;
-                            djyiVar.a = this.f / 2.0f;
-                            djyiVar.d = 0.0f;
-                            djyiVar.e = Float.MIN_VALUE;
-                            djyiVar.f = Float.MIN_VALUE;
+                            dmkbVar.g = null;
+                            dmkbVar.a = this.f / 2.0f;
+                            dmkbVar.d = 0.0f;
+                            dmkbVar.e = Float.MIN_VALUE;
+                            dmkbVar.f = Float.MIN_VALUE;
                         }
                     }
                 }
                 if (this.F) {
-                    m((djyh) arrayList.get(arrayList.size() - 1));
+                    m((dmka) arrayList.get(arrayList.size() - 1));
                 }
                 j(R.string.wearable_lockscreen_access_pattern_detected);
                 if (this.s) {
@@ -572,7 +572,7 @@ public class LockPatternView extends View {
         while (i < historySize + 1) {
             float historicalX = i < historySize ? motionEvent.getHistoricalX(i) : motionEvent.getX();
             float historicalY = i < historySize ? motionEvent.getHistoricalY(i) : motionEvent.getY();
-            djyh e2 = e(historicalX, historicalY);
+            dmka e2 = e(historicalX, historicalY);
             ArrayList arrayList2 = this.l;
             int size = arrayList2.size();
             ?? r13 = size;
@@ -591,9 +591,9 @@ public class LockPatternView extends View {
                 z = z2;
             } else {
                 float f4 = i4;
-                djyh djyhVar = (djyh) arrayList2.get(r13 - 1);
-                float a2 = a(djyhVar.b);
-                float b2 = b(djyhVar.a);
+                dmka dmkaVar = (dmka) arrayList2.get(r13 - 1);
+                float a2 = a(dmkaVar.b);
+                float b2 = b(dmkaVar.a);
                 float min = Math.min(a2, historicalX) - f4;
                 float max = Math.max(a2, historicalX) + f4;
                 float min2 = Math.min(b2, historicalY) - f4;
@@ -649,7 +649,7 @@ public class LockPatternView extends View {
         this.w = new Path();
         this.x = new Rect();
         this.y = new Rect();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.i, R.attr.wearableLockPatternStyle, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.i, R.attr.wearableLockPatternStyle, 0);
         String string = obtainStyledAttributes.getString(0);
         if (Objects.equals(string, "square")) {
             this.z = 0;
@@ -685,26 +685,26 @@ public class LockPatternView extends View {
         this.h = Math.max(Math.min(typedValue.getFloat(), 1.0f), 0.2f);
         paint.setAntiAlias(true);
         paint.setDither(true);
-        this.e = (djyi[][]) Array.newInstance((Class<?>) djyi.class, 3, 3);
+        this.e = (dmkb[][]) Array.newInstance((Class<?>) dmkb.class, 3, 3);
         for (int i = 0; i < 3; i++) {
             for (int i2 = 0; i2 < 3; i2++) {
-                djyi[][] djyiVarArr = this.e;
-                djyiVarArr[i][i2] = new djyi();
-                djyiVarArr[i][i2].a = this.f / 2.0f;
+                dmkb[][] dmkbVarArr = this.e;
+                dmkbVarArr[i][i2] = new dmkb();
+                dmkbVarArr[i][i2].a = this.f / 2.0f;
             }
         }
         this.G = AnimationUtils.loadInterpolator(context, android.R.interpolator.fast_out_slow_in);
         this.H = AnimationUtils.loadInterpolator(context, android.R.interpolator.linear_out_slow_in);
-        djyk djykVar = new djyk(this, this);
-        this.I = djykVar;
-        setAccessibilityDelegate(djykVar);
+        dmkd dmkdVar = new dmkd(this, this);
+        this.I = dmkdVar;
+        setAccessibilityDelegate(dmkdVar);
         this.v = new LinearGradient((-r1) / 2.0f, 0.0f, getResources().getDimensionPixelSize(R.dimen.wearable_lock_pattern_fade_away_gradient_width) / 2.0f, 0.0f, 0, color2, Shader.TileMode.CLAMP);
         obtainStyledAttributes.recycle();
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class SavedState extends View.BaseSavedState {
-        public static final Parcelable.Creator CREATOR = new djyl();
+        public static final Parcelable.Creator CREATOR = new dmke();
         public final String a;
         public final int b;
         public final boolean c;

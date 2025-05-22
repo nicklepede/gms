@@ -1,48 +1,48 @@
 package com.google.android.gms.learning.dynamite.training;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asmb;
-import defpackage.asnx;
-import defpackage.bqhv;
-import defpackage.bqif;
-import defpackage.bqig;
-import defpackage.bqld;
-import defpackage.ensj;
-import defpackage.enss;
+import defpackage.aupv;
+import defpackage.aurr;
+import defpackage.bspk;
+import defpackage.bspu;
+import defpackage.bspv;
+import defpackage.bsss;
+import defpackage.eqgc;
+import defpackage.eqgl;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public class GmsTrainingJobTaskBoundService extends GmsTaskBoundService {
     private static final Object a = new Object();
-    private bqig b;
+    private bspv b;
 
-    protected final bqig d() {
-        bqig bqigVar;
+    protected final bspv d() {
+        bspv bspvVar;
         synchronized (a) {
             if (this.b == null) {
-                bqld.a();
-                this.b = new bqig(new bqhv(this), new asmb(1, 10));
+                bsss.a();
+                this.b = new bspv(new bspk(this), new aupv(1, 10));
             }
-            bqigVar = this.b;
+            bspvVar = this.b;
         }
-        return bqigVar;
+        return bspvVar;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final void fR() {
-        final bqig d = d();
+    public final void gf() {
+        final bspv d = d();
         d.i.c(1124);
-        final enss g = d.h.g();
-        bqig.b(ensj.b(g).a(new Callable() { // from class: bqid
+        final eqgl g = d.h.g();
+        bspv.b(eqgc.b(g).a(new Callable() { // from class: bsps
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 try {
-                    ensj.r(g);
+                    eqgc.r(g);
                     return null;
                 } catch (ExecutionException e) {
-                    bqig.this.i.c(1123);
+                    bspv.this.i.c(1123);
                     throw e;
                 }
             }
@@ -51,39 +51,39 @@ public class GmsTrainingJobTaskBoundService extends GmsTaskBoundService {
 
     /* JADX WARN: Code restructure failed: missing block: B:22:0x006d, code lost:
     
-        if ((r6.c == 13 ? (defpackage.dtgq) r6.d : defpackage.dtgq.a).h.isEmpty() != false) goto L22;
+        if ((r6.c == 13 ? (defpackage.dvqy) r6.d : defpackage.dvqy.a).h.isEmpty() != false) goto L22;
      */
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final defpackage.enss im(defpackage.byln r17) {
+    public final defpackage.eqgl iB(defpackage.cauf r17) {
         /*
             Method dump skipped, instructions count: 701
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.learning.dynamite.training.GmsTrainingJobTaskBoundService.im(byln):enss");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.learning.dynamite.training.GmsTrainingJobTaskBoundService.iB(cauf):eqgl");
     }
 
-    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
         synchronized (a) {
-            bqig bqigVar = this.b;
-            if (bqigVar != null) {
+            bspv bspvVar = this.b;
+            if (bspvVar != null) {
                 try {
-                    bqigVar.f(1198);
-                    synchronized (bqig.b) {
-                        bqif bqifVar = bqigVar.d;
-                        if (bqifVar != null) {
-                            bqigVar.d(bqifVar, true);
+                    bspvVar.f(1198);
+                    synchronized (bspv.b) {
+                        bspu bspuVar = bspvVar.d;
+                        if (bspuVar != null) {
+                            bspvVar.d(bspuVar, true);
                         }
                     }
-                    bqigVar.f.close();
-                    bqigVar.f = null;
+                    bspvVar.f.close();
+                    bspvVar.f = null;
                 } catch (RuntimeException e) {
-                    bqigVar.f(1197);
-                    asnx.f(bqigVar.c, e);
+                    bspvVar.f(1197);
+                    aurr.f(bspvVar.c, e);
                     throw e;
                 }
             }

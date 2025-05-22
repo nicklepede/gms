@@ -1,14 +1,14 @@
 package com.google.android.gms.findmydevice.spot.fastpair;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bech;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.fobb;
+import defpackage.bgdt;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.fqsv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FastPairApiChimeraService extends bxgd {
+public class FastPairApiChimeraService extends bzot {
     /* JADX WARN: Illegal instructions before constructor call */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -17,15 +17,15 @@ public class FastPairApiChimeraService extends bxgd {
     public FastPairApiChimeraService() {
         /*
             r7 = this;
-            ejck r3 = defpackage.ejck.a
-            java.lang.String r0 = defpackage.fobx.d()
+            elpp r3 = defpackage.elpp.a
+            java.lang.String r0 = defpackage.fqto.d()
             boolean r0 = r0.isEmpty()
             if (r0 == 0) goto Le
             r6 = r3
             goto L18
         Le:
-            java.lang.String r0 = defpackage.fobx.d()
-            ejdg r1 = new ejdg
+            java.lang.String r0 = defpackage.fqto.d()
+            elqn r1 = new elqn
             r1.<init>(r0)
             r6 = r1
         L18:
@@ -40,12 +40,12 @@ public class FastPairApiChimeraService extends bxgd {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.findmydevice.spot.fastpair.FastPairApiChimeraService.<init>():void");
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        if (fobb.f()) {
-            bxgjVar.c(new bech(l()));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        if (fqsv.f()) {
+            bzozVar.c(new bgdt(l()));
         } else {
-            bxgjVar.a(16, null);
+            bzozVar.a(16, null);
         }
     }
 }

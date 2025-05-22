@@ -15,127 +15,127 @@ import android.widget.LinearLayout;
 import com.google.android.wallet.ui.common.ImageWithCaptionView;
 import com.google.android.wallet.ui.common.InfoMessageView;
 import com.google.android.wallet.ui.common.LinkView;
-import defpackage.efee;
-import defpackage.efeh;
-import defpackage.efei;
-import defpackage.eflq;
-import defpackage.efss;
-import defpackage.efud;
-import defpackage.efwo;
-import defpackage.ehoy;
-import defpackage.ehzo;
-import defpackage.ehzr;
-import defpackage.fasd;
-import defpackage.fase;
-import defpackage.fasi;
-import defpackage.fask;
-import defpackage.fasl;
-import defpackage.feay;
-import defpackage.fecj;
+import defpackage.ehrh;
+import defpackage.ehrk;
+import defpackage.ehrl;
+import defpackage.ehyt;
+import defpackage.eifv;
+import defpackage.eihg;
+import defpackage.eijr;
+import defpackage.ekce;
+import defpackage.ekmu;
+import defpackage.ekmx;
+import defpackage.fdgs;
+import defpackage.fdgt;
+import defpackage.fdgx;
+import defpackage.fdgz;
+import defpackage.fdha;
+import defpackage.fgpr;
+import defpackage.fgrc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class AlertMessageView extends LinearLayout implements View.OnClickListener, efee {
+public class AlertMessageView extends LinearLayout implements View.OnClickListener, ehrh {
     View a;
     ImageWithCaptionView b;
     InfoMessageView c;
     ViewGroup d;
     LinkView e;
     public Button f;
-    public efss g;
-    public efeh h;
+    public eifv g;
+    public ehrk h;
     private ViewGroup i;
-    private efud j;
-    private fask k;
+    private eihg j;
+    private fdgz k;
 
     public AlertMessageView(Context context) {
         super(context);
     }
 
-    private final void c(fask faskVar, int i, LayoutInflater layoutInflater, eflq eflqVar) {
+    private final void c(fdgz fdgzVar, int i, LayoutInflater layoutInflater, ehyt ehytVar) {
         LayoutInflater layoutInflater2;
-        eflq eflqVar2;
-        ColorStateList m = i == getContext().getResources().getColor(R.color.white) ? efwo.m(getContext()) : efwo.j(i);
+        ehyt ehytVar2;
+        ColorStateList m = i == getContext().getResources().getColor(R.color.white) ? eijr.m(getContext()) : eijr.j(i);
         ImageWithCaptionView imageWithCaptionView = this.b;
-        ehzo ehzoVar = faskVar.g;
-        if (ehzoVar == null) {
-            ehzoVar = ehzo.a;
+        ekmu ekmuVar = fdgzVar.g;
+        if (ekmuVar == null) {
+            ekmuVar = ekmu.a;
         }
-        imageWithCaptionView.m(ehzoVar);
+        imageWithCaptionView.m(ekmuVar);
         this.b.g = m;
         InfoMessageView infoMessageView = this.c;
-        ehzr ehzrVar = faskVar.c;
-        if (ehzrVar == null) {
-            ehzrVar = ehzr.a;
+        ekmx ekmxVar = fdgzVar.c;
+        if (ekmxVar == null) {
+            ekmxVar = ekmx.a;
         }
-        infoMessageView.p(ehzrVar);
-        this.c.setId(eflqVar.a());
-        if ((faskVar.b & 16) != 0) {
-            fase faseVar = faskVar.e;
-            if (faseVar == null) {
-                faseVar = fase.a;
+        infoMessageView.p(ekmxVar);
+        this.c.setId(ehytVar.a());
+        if ((fdgzVar.b & 16) != 0) {
+            fdgt fdgtVar = fdgzVar.e;
+            if (fdgtVar == null) {
+                fdgtVar = fdgt.a;
             }
-            int a = fasd.a(faseVar.g);
+            int a = fdgs.a(fdgtVar.g);
             if (a == 0 || a == 1) {
-                fecj fecjVar = (fecj) faseVar.iB(5, null);
-                fecjVar.X(faseVar);
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                fgrc fgrcVar = (fgrc) fdgtVar.iQ(5, null);
+                fgrcVar.X(fdgtVar);
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                fase faseVar2 = (fase) fecjVar.b;
-                faseVar2.g = 2;
-                faseVar2.b |= 16;
-                faseVar = (fase) fecjVar.Q();
+                fdgt fdgtVar2 = (fdgt) fgrcVar.b;
+                fdgtVar2.g = 2;
+                fdgtVar2.b |= 16;
+                fdgtVar = (fdgt) fgrcVar.Q();
             }
             layoutInflater2 = layoutInflater;
-            eflqVar2 = eflqVar;
-            LinkView c = LinkView.c(faseVar, getContext(), this.d, layoutInflater2, eflqVar2, this.j);
-            this.e = c;
-            c.setGravity(17);
+            ehytVar2 = ehytVar;
+            LinkView e = LinkView.e(fdgtVar, getContext(), this.d, layoutInflater2, ehytVar2, this.j);
+            this.e = e;
+            e.setGravity(17);
             this.e.setTextColor(m);
             this.d.addView(this.e);
         } else {
             layoutInflater2 = layoutInflater;
-            eflqVar2 = eflqVar;
+            ehytVar2 = ehytVar;
         }
-        if ((faskVar.b & 8) != 0) {
+        if ((fdgzVar.b & 8) != 0) {
             Button button = (Button) layoutInflater2.inflate(com.google.android.gms.R.layout.wallet_view_secondary_button, this.d, false);
             this.f = button;
-            fasl faslVar = faskVar.d;
-            if (faslVar == null) {
-                faslVar = fasl.a;
+            fdha fdhaVar = fdgzVar.d;
+            if (fdhaVar == null) {
+                fdhaVar = fdha.a;
             }
-            button.setText(faslVar.d);
-            this.f.setId(eflqVar2.a());
+            button.setText(fdhaVar.d);
+            this.f.setId(ehytVar2.a());
             this.f.setTextColor(m);
             this.f.setOnClickListener(this);
             this.d.addView(this.f);
         }
-        if ((faskVar.b & 32) != 0) {
-            ehoy ehoyVar = faskVar.f;
-            if (ehoyVar == null) {
-                ehoyVar = ehoy.a;
+        if ((fdgzVar.b & 32) != 0) {
+            ekce ekceVar = fdgzVar.f;
+            if (ekceVar == null) {
+                ekceVar = ekce.a;
             }
-            this.g = (efss) layoutInflater2.inflate(com.google.android.gms.R.layout.wallet_view_standard_button_basic, this.d, false);
-            if (((ehoyVar.b & 8) == 0 || ehoyVar.f.isEmpty()) && getContext().getString(com.google.android.gms.R.string.common_dismiss) != null) {
-                fecj fecjVar2 = (fecj) ehoyVar.iB(5, null);
-                fecjVar2.X(ehoyVar);
+            this.g = (eifv) layoutInflater2.inflate(com.google.android.gms.R.layout.wallet_view_standard_button_basic, this.d, false);
+            if (((ekceVar.b & 8) == 0 || ekceVar.f.isEmpty()) && getContext().getString(com.google.android.gms.R.string.common_dismiss) != null) {
+                fgrc fgrcVar2 = (fgrc) ekceVar.iQ(5, null);
+                fgrcVar2.X(ekceVar);
                 String string = getContext().getString(com.google.android.gms.R.string.common_dismiss);
-                if (!fecjVar2.b.L()) {
-                    fecjVar2.U();
+                if (!fgrcVar2.b.L()) {
+                    fgrcVar2.U();
                 }
-                ehoy ehoyVar2 = (ehoy) fecjVar2.b;
+                ekce ekceVar2 = (ekce) fgrcVar2.b;
                 string.getClass();
-                ehoyVar2.b |= 8;
-                ehoyVar2.f = string;
-                ehoyVar = (ehoy) fecjVar2.Q();
+                ekceVar2.b |= 8;
+                ekceVar2.f = string;
+                ekceVar = (ekce) fgrcVar2.Q();
             }
-            this.g.i(ehoyVar);
-            this.g.setId(eflqVar2.a());
-            this.g.d().setTextColor(m);
-            this.g.c().setOnClickListener(this);
-            efei.b(this.g.c(), ehoyVar.c, this.h);
-            this.d.addView(this.g.c());
+            this.g.k(ekceVar);
+            this.g.setId(ehytVar2.a());
+            this.g.f().setTextColor(m);
+            this.g.e().setOnClickListener(this);
+            ehrl.b(this.g.e(), ekceVar.c, this.h);
+            this.d.addView(this.g.e());
         }
         if (this.d.getChildCount() == 0) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) this.i.getLayoutParams();
@@ -144,59 +144,59 @@ public class AlertMessageView extends LinearLayout implements View.OnClickListen
         }
     }
 
-    public final void a(fask faskVar, eflq eflqVar, efud efudVar, boolean z) {
-        this.k = faskVar;
-        this.j = efudVar;
+    public final void a(fdgz fdgzVar, ehyt ehytVar, eihg eihgVar, boolean z) {
+        this.k = fdgzVar;
+        this.j = eihgVar;
         LayoutInflater from = LayoutInflater.from(getContext());
         if (!z) {
             this.a.setVisibility(0);
         }
-        int a = fasi.a(faskVar.h);
+        int a = fdgx.a(fdgzVar.h);
         if (a == 0) {
             a = 1;
         }
         int i = a - 1;
         if (i != 2 && i != 3) {
-            c(faskVar, efwo.b(getContext(), com.google.android.gms.R.attr.colorAccent), from, eflqVar);
+            c(fdgzVar, eijr.b(getContext(), com.google.android.gms.R.attr.colorAccent), from, ehytVar);
         } else {
             if (!z) {
-                c(faskVar, efwo.b(getContext(), com.google.android.gms.R.attr.walletCardViewPageErrorColor), from, eflqVar);
+                c(fdgzVar, eijr.b(getContext(), com.google.android.gms.R.attr.walletCardViewPageErrorColor), from, ehytVar);
                 return;
             }
             int color = getResources().getColor(R.color.white);
-            c(faskVar, color, from, eflqVar);
+            c(fdgzVar, color, from, ehytVar);
             this.c.v(color);
         }
     }
 
-    @Override // defpackage.efee
-    public final void ks() {
-        efss efssVar = this.g;
-        if (efssVar != null) {
-            View c = efssVar.c();
-            ehoy ehoyVar = this.k.f;
-            if (ehoyVar == null) {
-                ehoyVar = ehoy.a;
+    @Override // defpackage.ehrh
+    public final void kH() {
+        eifv eifvVar = this.g;
+        if (eifvVar != null) {
+            View e = eifvVar.e();
+            ekce ekceVar = this.k.f;
+            if (ekceVar == null) {
+                ekceVar = ekce.a;
             }
-            efei.c(c, ehoyVar.c, this.h);
+            ehrl.c(e, ekceVar.c, this.h);
         }
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         if (view == this.f) {
-            fasl faslVar = this.k.d;
-            if (faslVar == null) {
-                faslVar = fasl.a;
+            fdha fdhaVar = this.k.d;
+            if (fdhaVar == null) {
+                fdhaVar = fdha.a;
             }
-            if (faslVar.b != 2 || ((feay) faslVar.c).d() <= 0) {
-                if ((faslVar.b == 3 ? (String) faslVar.c : "").isEmpty()) {
+            if (fdhaVar.b != 2 || ((fgpr) fdhaVar.c).d() <= 0) {
+                if ((fdhaVar.b == 3 ? (String) fdhaVar.c : "").isEmpty()) {
                     return;
                 }
-                getContext().startActivity(new Intent("android.intent.action.VIEW").setData(Uri.parse(faslVar.b == 3 ? (String) faslVar.c : "")));
+                getContext().startActivity(new Intent("android.intent.action.VIEW").setData(Uri.parse(fdhaVar.b == 3 ? (String) fdhaVar.c : "")));
             } else {
                 Bundle bundle = new Bundle();
-                bundle.putByteArray("EventListener.EXTRA_ALERT_ACTION_TOKEN", (faslVar.b == 2 ? (feay) faslVar.c : feay.b).M());
+                bundle.putByteArray("EventListener.EXTRA_ALERT_ACTION_TOKEN", (fdhaVar.b == 2 ? (fgpr) fdhaVar.c : fgpr.b).M());
                 this.j.x(22, bundle);
             }
         }
@@ -215,7 +215,7 @@ public class AlertMessageView extends LinearLayout implements View.OnClickListen
     @Override // android.view.View
     public final void setEnabled(boolean z) {
         super.setEnabled(z);
-        efwo.N(this, z);
+        eijr.N(this, z);
     }
 
     public AlertMessageView(Context context, AttributeSet attributeSet) {

@@ -7,61 +7,61 @@ import android.os.IInterface;
 import android.os.RemoteException;
 import android.util.Log;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.bqja;
-import defpackage.bqjf;
-import defpackage.bqjg;
-import defpackage.bqjh;
-import defpackage.bqjr;
-import defpackage.bqkd;
+import defpackage.bsqp;
+import defpackage.bsqu;
+import defpackage.bsqv;
+import defpackage.bsqw;
+import defpackage.bsrg;
+import defpackage.bsrs;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public final class InAppTrainingService extends Service {
     private static final String TAG = "brella.InAppTrngSvc";
-    bqkd dynamiteImpl;
+    bsrs dynamiteImpl;
 
     @Override // android.app.Service
     public IBinder onBind(Intent intent) {
-        bqkd bqkdVar = this.dynamiteImpl;
-        if (bqkdVar != null) {
+        bsrs bsrsVar = this.dynamiteImpl;
+        if (bsrsVar != null) {
             try {
-                return bqkdVar.b(intent);
+                return bsrsVar.b(intent);
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onBind", e);
                 }
             }
         }
-        return new bqja("No IInAppTrainingService implementation found");
+        return new bsqp("No IInAppTrainingService implementation found");
     }
 
     @Override // android.app.Service
     public void onCreate() {
         super.onCreate();
         try {
-            bqkd bqkdVar = (bqkd) bqjh.a(this, "com.google.android.gms.learning.dynamite.training.InAppTrainingServiceImpl", new bqjg() { // from class: bqkk
-                @Override // defpackage.bqjg
+            bsrs bsrsVar = (bsrs) bsqw.a(this, "com.google.android.gms.learning.dynamite.training.InAppTrainingServiceImpl", new bsqv() { // from class: bsrz
+                @Override // defpackage.bsqv
                 public final IInterface a(IBinder iBinder) {
                     IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.learning.internal.training.IInAppTrainingService");
-                    return queryLocalInterface instanceof bqkd ? (bqkd) queryLocalInterface : new bqkc(iBinder);
+                    return queryLocalInterface instanceof bsrs ? (bsrs) queryLocalInterface : new bsrr(iBinder);
                 }
             });
             try {
-                bqkdVar.d(new ObjectWrapper(this));
+                bsrsVar.d(new ObjectWrapper(this));
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException during onCreate", e);
                 }
             }
             try {
-                bqkdVar.c("cronet", new bqjr(getApplicationContext()));
+                bsrsVar.c("cronet", new bsrg(getApplicationContext()));
             } catch (RemoteException e2) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException during addHttpUrlConnectionFactory", e2);
                 }
             }
-            this.dynamiteImpl = bqkdVar;
-        } catch (bqjf e3) {
+            this.dynamiteImpl = bsrsVar;
+        } catch (bsqu e3) {
             if (Log.isLoggable(TAG, 5)) {
                 Log.w(TAG, "LoadingException during onCreate", e3);
             }
@@ -70,10 +70,10 @@ public final class InAppTrainingService extends Service {
 
     @Override // android.app.Service
     public void onDestroy() {
-        bqkd bqkdVar = this.dynamiteImpl;
-        if (bqkdVar != null) {
+        bsrs bsrsVar = this.dynamiteImpl;
+        if (bsrsVar != null) {
             try {
-                bqkdVar.e();
+                bsrsVar.e();
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onDestroy", e);
@@ -85,10 +85,10 @@ public final class InAppTrainingService extends Service {
 
     @Override // android.app.Service
     public void onRebind(Intent intent) {
-        bqkd bqkdVar = this.dynamiteImpl;
-        if (bqkdVar != null) {
+        bsrs bsrsVar = this.dynamiteImpl;
+        if (bsrsVar != null) {
             try {
-                bqkdVar.f(intent);
+                bsrsVar.f(intent);
                 return;
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
@@ -101,10 +101,10 @@ public final class InAppTrainingService extends Service {
 
     @Override // android.app.Service
     public int onStartCommand(Intent intent, int i, int i2) {
-        bqkd bqkdVar = this.dynamiteImpl;
-        if (bqkdVar != null) {
+        bsrs bsrsVar = this.dynamiteImpl;
+        if (bsrsVar != null) {
             try {
-                return bqkdVar.a(intent, i, i2);
+                return bsrsVar.a(intent, i, i2);
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onStartCommand", e);
@@ -116,10 +116,10 @@ public final class InAppTrainingService extends Service {
 
     @Override // android.app.Service, android.content.ComponentCallbacks2
     public void onTrimMemory(int i) {
-        bqkd bqkdVar = this.dynamiteImpl;
-        if (bqkdVar != null) {
+        bsrs bsrsVar = this.dynamiteImpl;
+        if (bsrsVar != null) {
             try {
-                bqkdVar.g(i);
+                bsrsVar.g(i);
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onTrimMemory", e);
@@ -130,10 +130,10 @@ public final class InAppTrainingService extends Service {
 
     @Override // android.app.Service
     public boolean onUnbind(Intent intent) {
-        bqkd bqkdVar = this.dynamiteImpl;
-        if (bqkdVar != null) {
+        bsrs bsrsVar = this.dynamiteImpl;
+        if (bsrsVar != null) {
             try {
-                return bqkdVar.h(intent);
+                return bsrsVar.h(intent);
             } catch (RemoteException e) {
                 if (Log.isLoggable(TAG, 5)) {
                     Log.w(TAG, "RemoteException in IInAppTrainingService.onUnbind", e);

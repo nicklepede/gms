@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import com.google.android.gms.R;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class OptInDataTypesItem extends OptInItem {
     private final View.OnClickListener a;
@@ -17,7 +17,7 @@ public final class OptInDataTypesItem extends OptInItem {
         D(R.layout.item_with_button);
     }
 
-    @Override // com.google.android.setupdesign.items.Item, defpackage.edhg
+    @Override // com.google.android.setupdesign.items.Item, defpackage.efub
     public final void b(View view) {
         super.b(view);
         Button button = (Button) view.findViewById(R.id.sud_items_button);

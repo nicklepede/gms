@@ -2,20 +2,20 @@ package com.google.android.gms.wallet.service.orchestration;
 
 import android.os.Parcelable;
 import com.google.android.wallet.ui.tapandpay.TapAndPayConsumerVerificationResponse;
-import defpackage.dizl;
-import defpackage.djdv;
-import defpackage.fapn;
+import defpackage.dlle;
+import defpackage.dlpo;
+import defpackage.fdec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class GcoreTapAndPayConsumerVerificationServerResponse extends TapAndPayConsumerVerificationResponse implements djdv {
-    public static final Parcelable.Creator CREATOR = new dizl();
+public class GcoreTapAndPayConsumerVerificationServerResponse extends TapAndPayConsumerVerificationResponse implements dlpo {
+    public static final Parcelable.Creator CREATOR = new dlle();
 
-    public GcoreTapAndPayConsumerVerificationServerResponse(fapn fapnVar, int i) {
-        super(fapnVar, i);
+    public GcoreTapAndPayConsumerVerificationServerResponse(fdec fdecVar, int i) {
+        super(fdecVar, i);
     }
 
-    @Override // defpackage.djdv
+    @Override // defpackage.dlpo
     public final boolean a() {
         return false;
     }

@@ -4,19 +4,19 @@ import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dfyj;
-import defpackage.dfyk;
-import defpackage.dgbg;
-import defpackage.eihn;
-import defpackage.eiid;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.ejcb;
-import defpackage.fsnb;
+import defpackage.atzr;
+import defpackage.dijo;
+import defpackage.dijp;
+import defpackage.diml;
+import defpackage.ekus;
+import defpackage.ekvi;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elpg;
+import defpackage.fvik;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class DeviceState extends AbstractSafeParcelable {
     public final int a;
@@ -39,10 +39,10 @@ public final class DeviceState extends AbstractSafeParcelable {
     public final int p;
     public final ConnectionState q;
     private static final String[] r = {"", "00", "0", "", ""};
-    public static final Parcelable.Creator CREATOR = new dfyk();
+    public static final Parcelable.Creator CREATOR = new dijp();
 
     public DeviceState(int i, int i2, String str, String str2, String str3, String str4, boolean z, String str5, String str6, String str7, String str8, String str9, List list, int i3, int i4, int i5, ConnectionState connectionState) {
-        eitj i6;
+        elgo i6;
         this.a = i;
         this.b = i2;
         this.c = str;
@@ -56,10 +56,10 @@ public final class DeviceState extends AbstractSafeParcelable {
         this.k = str8;
         this.l = str9;
         if (list == null) {
-            int i7 = eitj.d;
-            i6 = ejcb.a;
+            int i7 = elgo.d;
+            i6 = elpg.a;
         } else {
-            i6 = eitj.i(list);
+            i6 = elgo.i(list);
         }
         this.m = i6;
         this.n = i3;
@@ -108,12 +108,12 @@ public final class DeviceState extends AbstractSafeParcelable {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public static defpackage.eitj c(android.content.Context r46) {
+    public static defpackage.elgo c(android.content.Context r46) {
         /*
             Method dump skipped, instructions count: 2779
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.thunderbird.state.DeviceState.c(android.content.Context):eitj");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.thunderbird.state.DeviceState.c(android.content.Context):elgo");
     }
 
     public static String d(String str) {
@@ -168,22 +168,22 @@ public final class DeviceState extends AbstractSafeParcelable {
     }
 
     public final DeviceState a(TelephoneNumber telephoneNumber) {
-        eiid i = eiid.i(this.q);
-        eite eiteVar = new eite();
-        eiteVar.k(this.m);
-        eiteVar.i(telephoneNumber);
-        return dfyj.a(this.a, this.b, this.c, this.d, this.e, this.f, this.g, this.h, this.i, this.j, this.k, this.l, eiteVar.g(), this.n, this.o, this.p, i);
+        ekvi i = ekvi.i(this.q);
+        elgj elgjVar = new elgj();
+        elgjVar.k(this.m);
+        elgjVar.i(telephoneNumber);
+        return dijo.a(this.a, this.b, this.c, this.d, this.e, this.f, this.g, this.h, this.i, this.j, this.k, this.l, elgjVar.g(), this.n, this.o, this.p, i);
     }
 
-    public final eiid b() {
-        return eiid.i(this.q);
+    public final ekvi b() {
+        return ekvi.i(this.q);
     }
 
     public final String e(Context context) {
-        if (!fsnb.H()) {
+        if (!fvik.H()) {
             return this.f;
         }
-        eiid b = fsnb.t() ? new dgbg(context, this.m, this.k, this.l).b() : new dgbg(context, this.m, this.j).b();
+        ekvi b = fvik.t() ? new diml(context, this.m, this.k, this.l).b() : new diml(context, this.m, this.j).b();
         if (b.h()) {
             return ((TelephoneNumber) b.c()).a;
         }
@@ -196,7 +196,7 @@ public final class DeviceState extends AbstractSafeParcelable {
         }
         if (obj != null && getClass() == obj.getClass()) {
             DeviceState deviceState = (DeviceState) obj;
-            if (this.a == deviceState.a && this.b == deviceState.b && eihn.a(this.c, deviceState.c) && eihn.a(this.d, deviceState.d) && eihn.a(this.e, deviceState.e) && eihn.a(this.f, deviceState.f) && eihn.a(this.h, deviceState.h) && eihn.a(this.i, deviceState.i) && eihn.a(this.j, deviceState.j) && eihn.a(this.k, deviceState.k) && eihn.a(this.l, deviceState.l) && eihn.a(this.m, deviceState.m) && this.n == deviceState.n && this.o == deviceState.o && this.p == deviceState.p && eihn.a(this.q, deviceState.q)) {
+            if (this.a == deviceState.a && this.b == deviceState.b && ekus.a(this.c, deviceState.c) && ekus.a(this.d, deviceState.d) && ekus.a(this.e, deviceState.e) && ekus.a(this.f, deviceState.f) && ekus.a(this.h, deviceState.h) && ekus.a(this.i, deviceState.i) && ekus.a(this.j, deviceState.j) && ekus.a(this.k, deviceState.k) && ekus.a(this.l, deviceState.l) && ekus.a(this.m, deviceState.m) && this.n == deviceState.n && this.o == deviceState.o && this.p == deviceState.p && ekus.a(this.q, deviceState.q)) {
                 return true;
             }
         }
@@ -229,7 +229,7 @@ public final class DeviceState extends AbstractSafeParcelable {
     }
 
     public final String toString() {
-        if (fsnb.a.a().ay()) {
+        if (fvik.a.lK().ay()) {
             return h() + "{HomeMCCMNC=" + this.h + ", NetworkMCCMNC=" + this.i + "}";
         }
         String h = h();
@@ -253,24 +253,24 @@ public final class DeviceState extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.c;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.d, false);
-        arxc.v(parcel, 3, this.e, false);
-        arxc.v(parcel, 4, this.f, false);
-        arxc.v(parcel, 6, this.h, false);
-        arxc.v(parcel, 7, this.i, false);
-        arxc.o(parcel, 9, this.a);
-        arxc.e(parcel, 10, this.g);
-        arxc.v(parcel, 11, this.j, false);
-        arxc.y(parcel, 12, this.m, false);
-        arxc.o(parcel, 13, this.b);
-        arxc.o(parcel, 14, this.n);
-        arxc.v(parcel, 15, this.k, false);
-        arxc.v(parcel, 16, this.l, false);
-        arxc.o(parcel, 17, this.o);
-        arxc.o(parcel, 18, this.p);
-        arxc.t(parcel, 19, this.q, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.d, false);
+        atzr.v(parcel, 3, this.e, false);
+        atzr.v(parcel, 4, this.f, false);
+        atzr.v(parcel, 6, this.h, false);
+        atzr.v(parcel, 7, this.i, false);
+        atzr.o(parcel, 9, this.a);
+        atzr.e(parcel, 10, this.g);
+        atzr.v(parcel, 11, this.j, false);
+        atzr.y(parcel, 12, this.m, false);
+        atzr.o(parcel, 13, this.b);
+        atzr.o(parcel, 14, this.n);
+        atzr.v(parcel, 15, this.k, false);
+        atzr.v(parcel, 16, this.l, false);
+        atzr.o(parcel, 17, this.o);
+        atzr.o(parcel, 18, this.p);
+        atzr.t(parcel, 19, this.q, i, false);
+        atzr.c(parcel, a);
     }
 }

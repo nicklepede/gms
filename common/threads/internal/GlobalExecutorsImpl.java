@@ -2,22 +2,22 @@ package com.google.android.gms.common.threads.internal;
 
 import com.google.android.gms.common.threads.internal.GlobalExecutorsImpl;
 import defpackage.a;
-import defpackage.asrm;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.fner;
+import defpackage.auvg;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.fpwq;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class GlobalExecutorsImpl {
-    private static final ThreadPoolExecutor a = new ThreadPoolExecutor(4, Integer.MAX_VALUE, 10, TimeUnit.SECONDS, new SynchronousQueue(), new asrm("lowpool", 10));
-    private static final ThreadPoolExecutor b = new ThreadPoolExecutor(4, Integer.MAX_VALUE, 10, TimeUnit.SECONDS, new SynchronousQueue(), new asrm("highpool", 9));
-    private static final eijr c = eijy.a(new eijr() { // from class: asmn
-        @Override // defpackage.eijr
-        public final Object a() {
+    private static final ThreadPoolExecutor a = new ThreadPoolExecutor(4, Integer.MAX_VALUE, 10, TimeUnit.SECONDS, new SynchronousQueue(), new auvg("lowpool", 10));
+    private static final ThreadPoolExecutor b = new ThreadPoolExecutor(4, Integer.MAX_VALUE, 10, TimeUnit.SECONDS, new SynchronousQueue(), new auvg("highpool", 9));
+    private static final ekww c = ekxd.a(new ekww() { // from class: auqh
+        @Override // defpackage.ekww
+        public final Object lK() {
             return GlobalExecutorsImpl.lambda$static$0();
         }
     });
@@ -27,7 +27,7 @@ public final class GlobalExecutorsImpl {
 
     public static ThreadPoolExecutor getPool(int i) {
         if (i == 0) {
-            return (ThreadPoolExecutor) c.a();
+            return (ThreadPoolExecutor) c.lK();
         }
         if (i == 9) {
             return b;
@@ -39,6 +39,6 @@ public final class GlobalExecutorsImpl {
     }
 
     public static /* synthetic */ ThreadPoolExecutor lambda$static$0() {
-        return new ThreadPoolExecutor((int) fner.a.a().a(), Integer.MAX_VALUE, 10L, TimeUnit.SECONDS, new SynchronousQueue(), new asrm("actvpool", 0));
+        return new ThreadPoolExecutor((int) fpwq.a.lK().a(), Integer.MAX_VALUE, 10L, TimeUnit.SECONDS, new SynchronousQueue(), new auvg("actvpool", 0));
     }
 }

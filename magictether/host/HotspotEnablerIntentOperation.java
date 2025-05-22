@@ -7,11 +7,11 @@ import android.os.ResultReceiver;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.auth.magictether.AppContextProvider;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.cbrl;
-import defpackage.deqr;
-import defpackage.juc;
+import defpackage.cead;
+import defpackage.dhbu;
+import defpackage.kar;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class HotspotEnablerIntentOperation extends IntentOperation {
     public static Intent a(Context context, boolean z, ResultReceiver resultReceiver) {
@@ -26,14 +26,14 @@ public class HotspotEnablerIntentOperation extends IntentOperation {
         if ("com.google.android.gms.magictether.ENABLE_HOTSPOT".equals(intent.getAction())) {
             final boolean booleanExtra = intent.getBooleanExtra("EXTRA_SHOW_PROVISIONING_UI", false);
             final ResultReceiver resultReceiver = (ResultReceiver) intent.getParcelableExtra("EXTRA_RESULT_RECEIVER");
-            final cbrl cbrlVar = new cbrl(this);
-            cbrl.b();
-            cbrl.b = new deqr(AppContextProvider.a(), 268435462, "Magic Tether");
-            cbrl.b.e("Starting tethering", cbrl.a);
-            if (cbrlVar.d.a() != 10) {
-                cbrlVar.a(booleanExtra, resultReceiver);
+            final cead ceadVar = new cead(this);
+            cead.b();
+            cead.b = new dhbu(AppContextProvider.a(), 268435462, "Magic Tether");
+            cead.b.e("Starting tethering", cead.a);
+            if (ceadVar.d.a() != 10) {
+                ceadVar.a(booleanExtra, resultReceiver);
             } else {
-                final juc a = juc.a(AppContextProvider.a());
+                final kar a = kar.a(AppContextProvider.a());
                 a.c(new TracingBroadcastReceiver() { // from class: com.google.android.gms.magictether.host.HotspotEnabler$2
                     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
                     {
@@ -41,9 +41,9 @@ public class HotspotEnablerIntentOperation extends IntentOperation {
                     }
 
                     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-                    public final void jz(Context context, Intent intent2) {
+                    public final void jP(Context context, Intent intent2) {
                         a.d(this);
-                        cbrlVar.a(booleanExtra, resultReceiver);
+                        ceadVar.a(booleanExtra, resultReceiver);
                     }
                 }, new IntentFilter("com.google.android.gms.magictether.AP_FINISHED_DISABLING"));
             }

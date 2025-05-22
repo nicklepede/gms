@@ -3,15 +3,15 @@ package com.google.android.gms.audiomodem;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.uln;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.whm;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class Encoding extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new uln();
+    public static final Parcelable.Creator CREATOR = new whm();
     public final int a;
     public final DsssEncoding b;
     public final DtmfEncoding c;
@@ -40,7 +40,7 @@ public class Encoding extends AbstractSafeParcelable {
         Encoding encoding = (Encoding) obj;
         int i = this.a;
         if (i == encoding.a) {
-            return i == 0 ? arwb.b(this.b, encoding.b) : i != 1 || arwb.b(this.c, encoding.c);
+            return i == 0 ? atyq.b(this.b, encoding.b) : i != 1 || atyq.b(this.c, encoding.c);
         }
         return false;
     }
@@ -63,10 +63,10 @@ public class Encoding extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, i2);
-        arxc.t(parcel, 3, this.b, i, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, i2);
+        atzr.t(parcel, 3, this.b, i, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.c(parcel, a);
     }
 }

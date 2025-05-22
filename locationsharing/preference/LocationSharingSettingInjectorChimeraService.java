@@ -9,21 +9,21 @@ import android.preference.PreferenceManager;
 import com.google.android.cast.JGCastService;
 import com.google.android.chimera.SettingInjectorService;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.aquo;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.aspr;
-import defpackage.asqh;
-import defpackage.bqqa;
-import defpackage.ejhf;
-import defpackage.fpsa;
-import defpackage.iln;
+import defpackage.asxd;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.autl;
+import defpackage.auub;
+import defpackage.bsxr;
+import defpackage.eluo;
+import defpackage.fsls;
+import defpackage.ind;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class LocationSharingSettingInjectorChimeraService extends SettingInjectorService {
     public boolean b;
@@ -35,10 +35,10 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
     private Boolean k;
     private Boolean l;
     private final TracingBroadcastReceiver m;
-    private static final asot h = asot.e(asej.LOCATION_SHARING);
+    private static final ausn h = ausn.e(auid.LOCATION_SHARING);
     public static final String a = String.valueOf(LocationSharingSettingInjectorChimeraService.class.getName()).concat(".CALL_COMPLETE");
     private static final String i = String.valueOf(LocationSharingSettingInjectorChimeraService.class.getName()).concat(".request_id");
-    public static bqqa g = null;
+    public static bsxr g = null;
 
     public LocationSharingSettingInjectorChimeraService() {
         super("LocationSharingSettingInjectorService");
@@ -47,7 +47,7 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
         this.f = new Semaphore(1, true);
         this.m = new TracingBroadcastReceiver() { // from class: com.google.android.gms.locationsharing.preference.LocationSharingSettingInjectorChimeraService.1
             @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-            public final void jz(Context context, Intent intent) {
+            public final void jP(Context context, Intent intent) {
                 LocationSharingSettingInjectorChimeraService locationSharingSettingInjectorChimeraService = LocationSharingSettingInjectorChimeraService.this;
                 if (locationSharingSettingInjectorChimeraService.a()) {
                     if (!LocationSharingSettingInjectorChimeraService.a.equals(intent.getAction())) {
@@ -69,8 +69,8 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
     }
 
     private final void b() {
-        if (a() && asqh.f()) {
-            List h2 = asnd.h(this, getPackageName());
+        if (a() && auub.f()) {
+            List h2 = auqx.h(this, getPackageName());
             if (h2.size() != 1 || ((Account) h2.get(0)).name == null) {
                 return;
             }
@@ -99,21 +99,21 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
                     }
                 }
             } catch (InterruptedException e) {
-                ((ejhf) ((ejhf) h.h()).s(e)).x("lookupSharingState interrupted: ");
+                ((eluo) ((eluo) h.h()).s(e)).x("lookupSharingState interrupted: ");
             }
         }
     }
 
     private final synchronized boolean c() {
         if (this.k == null) {
-            this.k = Boolean.valueOf(fpsa.a.a().b());
+            this.k = Boolean.valueOf(fsls.a.lK().b());
         }
         return this.k.booleanValue();
     }
 
     public final synchronized boolean a() {
         if (this.l == null) {
-            this.l = Boolean.valueOf(fpsa.d());
+            this.l = Boolean.valueOf(fsls.d());
         }
         return this.l.booleanValue();
     }
@@ -122,7 +122,7 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
     public final void onCreate() {
         super.onCreate();
         if (a()) {
-            iln.b(this, this.m, new IntentFilter(a), 2);
+            ind.b(this, this.m, new IntentFilter(a), 2);
             b();
         }
     }
@@ -134,18 +134,18 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
             try {
                 unregisterReceiver(this.m);
             } catch (IllegalArgumentException e) {
-                ((ejhf) ((ejhf) h.h()).s(e)).x("onDestroy error in unregisterReceiver");
+                ((eluo) ((eluo) h.h()).s(e)).x("onDestroy error in unregisterReceiver");
             }
         }
     }
 
     @Override // com.google.android.chimera.SettingInjectorService
     public final boolean onGetEnabled() {
-        if (!aspr.c(this)) {
+        if (!autl.c(this)) {
             return false;
         }
-        int i2 = asnd.a;
-        return !aquo.g(this);
+        int i2 = auqx.a;
+        return !asxd.g(this);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:38:0x0091  */
@@ -161,7 +161,7 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
             if (r0 == 0) goto L9
             r8.b()
         L9:
-            boolean r0 = defpackage.asqh.f()
+            boolean r0 = defpackage.auub.f()
             r1 = 0
             if (r0 == 0) goto L97
             boolean r0 = r8.a()
@@ -169,7 +169,7 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
             goto L97
         L18:
             java.lang.String r0 = r8.getPackageName()
-            java.util.List r0 = defpackage.asnd.h(r8, r0)
+            java.util.List r0 = defpackage.auqx.h(r8, r0)
             int r0 = r0.size()
             r2 = 1
             if (r0 == r2) goto L29
@@ -191,11 +191,11 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
             if (r0 == 0) goto L59
             boolean r0 = r8.c     // Catch: java.lang.Throwable -> L70 java.lang.InterruptedException -> L72
             if (r0 == 0) goto L50
-            r0 = 2132084770(0x7f150822, float:1.980972E38)
+            r0 = 2132084771(0x7f150823, float:1.9809722E38)
             java.lang.String r0 = r8.getString(r0)     // Catch: java.lang.Throwable -> L70 java.lang.InterruptedException -> L72
             goto L57
         L50:
-            r0 = 2132084767(0x7f15081f, float:1.9809714E38)
+            r0 = 2132084768(0x7f150820, float:1.9809716E38)
             java.lang.String r0 = r8.getString(r0)     // Catch: java.lang.Throwable -> L70 java.lang.InterruptedException -> L72
         L57:
             r1 = r0
@@ -203,11 +203,11 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
         L59:
             boolean r0 = r8.c     // Catch: java.lang.Throwable -> L70 java.lang.InterruptedException -> L72
             if (r0 == 0) goto L65
-            r0 = 2132087972(0x7f1514a4, float:1.9816214E38)
+            r0 = 2132088094(0x7f15151e, float:1.9816462E38)
             java.lang.String r0 = r8.getString(r0)     // Catch: java.lang.Throwable -> L70 java.lang.InterruptedException -> L72
             goto L6c
         L65:
-            r0 = 2132087971(0x7f1514a3, float:1.9816212E38)
+            r0 = 2132088093(0x7f15151d, float:1.981646E38)
             java.lang.String r0 = r8.getString(r0)     // Catch: java.lang.Throwable -> L70 java.lang.InterruptedException -> L72
         L6c:
             r1 = r0
@@ -230,10 +230,10 @@ public class LocationSharingSettingInjectorChimeraService extends SettingInjecto
             r2 = r0
             r0 = r7
         L7c:
-            asot r3 = com.google.android.gms.locationsharing.preference.LocationSharingSettingInjectorChimeraService.h     // Catch: java.lang.Throwable -> L70
-            ejgq r3 = r3.h()     // Catch: java.lang.Throwable -> L70
+            ausn r3 = com.google.android.gms.locationsharing.preference.LocationSharingSettingInjectorChimeraService.h     // Catch: java.lang.Throwable -> L70
+            eltz r3 = r3.h()     // Catch: java.lang.Throwable -> L70
             java.lang.String r4 = "getSummary interrupted"
-            defpackage.a.Q(r3, r4, r0)     // Catch: java.lang.Throwable -> L70
+            defpackage.a.S(r3, r4, r0)     // Catch: java.lang.Throwable -> L70
             if (r2 == 0) goto L97
             java.util.concurrent.Semaphore r0 = r8.f
         L8b:

@@ -3,54 +3,54 @@ package com.google.android.gms.location.fused.manager;
 import android.location.Location;
 import android.os.SystemClock;
 import com.google.android.gms.libs.identity.ClientIdentity;
-import defpackage.asot;
-import defpackage.bwpp;
-import defpackage.bwpu;
-import defpackage.bwrl;
-import defpackage.bzmw;
-import defpackage.bzmz;
-import defpackage.bznb;
-import defpackage.bzpx;
-import defpackage.bzrx;
-import defpackage.bzry;
-import defpackage.bzsa;
-import defpackage.bzsc;
-import defpackage.bzsf;
-import defpackage.bzsv;
-import defpackage.bzsy;
-import defpackage.capn;
-import defpackage.deqr;
-import defpackage.eiho;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.ejhf;
-import defpackage.fppc;
-import defpackage.fptx;
-import defpackage.fvaq;
-import defpackage.fvbo;
-import defpackage.ips;
+import defpackage.ausn;
+import defpackage.byyc;
+import defpackage.byyh;
+import defpackage.bzab;
+import defpackage.cbvn;
+import defpackage.cbvq;
+import defpackage.cbvs;
+import defpackage.cbyo;
+import defpackage.ccao;
+import defpackage.ccap;
+import defpackage.ccar;
+import defpackage.ccat;
+import defpackage.ccaw;
+import defpackage.ccbm;
+import defpackage.ccbp;
+import defpackage.ccyd;
+import defpackage.dhbu;
+import defpackage.ekut;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.eluo;
+import defpackage.fsiu;
+import defpackage.fsnp;
+import defpackage.fxwo;
+import defpackage.fxxm;
+import defpackage.iri;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public abstract class FusedLocationManager$LocationRegistration extends FusedLocationManager$Registration {
-    public final bzpx g;
-    public final deqr h;
+    public final cbyo g;
+    public final dhbu h;
     boolean i;
     public boolean j;
-    public final /* synthetic */ bzsc k;
+    public final /* synthetic */ ccat k;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public FusedLocationManager$LocationRegistration(bzsc bzscVar, bzmz bzmzVar, ClientIdentity clientIdentity, bzsy bzsyVar, bzpx bzpxVar) {
-        super(bzscVar, bzmzVar, clientIdentity, bzsyVar);
-        this.k = bzscVar;
-        this.g = bzpxVar;
-        if (bzsyVar instanceof bzsv) {
-            deqr deqrVar = new deqr(bzscVar.d, 1, "FusedLocation", "ClientDelivery", clientIdentity.e);
-            this.h = deqrVar;
-            deqrVar.j(true);
-            deqrVar.k(bzmzVar.n.b());
+    public FusedLocationManager$LocationRegistration(ccat ccatVar, cbvq cbvqVar, ClientIdentity clientIdentity, ccbp ccbpVar, cbyo cbyoVar) {
+        super(ccatVar, cbvqVar, clientIdentity, ccbpVar);
+        this.k = ccatVar;
+        this.g = cbyoVar;
+        if (ccbpVar instanceof ccbm) {
+            dhbu dhbuVar = new dhbu(ccatVar.d, 1, "FusedLocation", "ClientDelivery", clientIdentity.e);
+            this.h = dhbuVar;
+            dhbuVar.j(true);
+            dhbuVar.k(cbvqVar.n.b());
         } else {
             this.h = null;
         }
@@ -66,10 +66,10 @@ public abstract class FusedLocationManager$LocationRegistration extends FusedLoc
         if (z == this.j) {
             return;
         }
-        ib(new bzrx(this, z));
+        iq(new ccao(this, z));
     }
 
-    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bwrm
+    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bzac
     protected final void b() {
         Location v;
         super.b();
@@ -79,114 +79,114 @@ public abstract class FusedLocationManager$LocationRegistration extends FusedLoc
             E = null;
         }
         if (E != null) {
-            ib(o(bznb.e(E), true));
+            iq(o(cbvs.e(E), true));
         }
     }
 
-    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bwrm
+    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bzac
     protected final void c() {
         super.c();
         p();
     }
 
-    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bwrx, defpackage.bwrm
+    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bzan, defpackage.bzac
     protected void f() {
-        bzpx bzpxVar = this.g;
-        if (bzpxVar != null) {
-            bzpxVar.c(SystemClock.elapsedRealtime());
+        cbyo cbyoVar = this.g;
+        if (cbyoVar != null) {
+            cbyoVar.c(SystemClock.elapsedRealtime());
         }
         super.f();
     }
 
     @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$Registration
-    public final bwrl o(bznb bznbVar, boolean z) {
+    public final bzab o(cbvs cbvsVar, boolean z) {
         List list;
         List list2;
-        bznb f;
-        bznb bznbVar2;
-        bznb bznbVar3 = bznbVar;
+        cbvs f;
+        cbvs cbvsVar2;
+        cbvs cbvsVar3 = cbvsVar;
         if (SystemClock.elapsedRealtime() >= this.o) {
             s();
             return null;
         }
         if (!this.b) {
-            ((ejhf) ((ejhf) bzmw.a.j()).ah(5564)).B("location delivery to %s blocked - inactive", this.l);
+            ((eluo) ((eluo) cbvn.a.j()).ai(5578)).B("location delivery to %s blocked - inactive", this.l);
             return null;
         }
-        bzsc bzscVar = this.k;
+        ccat ccatVar = this.k;
         int t = t();
         final boolean z2 = w().m;
         final ClientIdentity clientIdentity = this.l;
-        if (bznbVar3 == null || t == 0) {
+        if (cbvsVar3 == null || t == 0) {
             f = null;
         } else {
             if (t == 1) {
-                final bzsf bzsfVar = bzscVar.l;
-                if (fptx.d()) {
-                    int i = ips.a;
+                final ccaw ccawVar = ccatVar.l;
+                if (fsnp.d()) {
+                    int i = iri.a;
                 }
-                synchronized (bzsfVar) {
-                    if (bznbVar3 != bzsfVar.a && bznbVar3 != bzsfVar.b) {
-                        fvaq fvaqVar = new fvaq() { // from class: bzse
-                            @Override // defpackage.fvaq
+                synchronized (ccawVar) {
+                    if (cbvsVar3 != ccawVar.a && cbvsVar3 != ccawVar.b) {
+                        fxwo fxwoVar = new fxwo() { // from class: ccav
+                            @Override // defpackage.fxwo
                             public final Object a(Object obj) {
-                                return bzsf.this.a((Location) obj);
+                                return ccaw.this.a((Location) obj);
                             }
                         };
-                        eitj eitjVar = bznbVar3.a;
-                        int size = eitjVar.size();
-                        eite eiteVar = null;
+                        elgo elgoVar = cbvsVar3.a;
+                        int size = elgoVar.size();
+                        elgj elgjVar = null;
                         for (int i2 = 0; i2 < size; i2++) {
-                            Object obj = eitjVar.get(i2);
-                            fvbo.e(obj, "get(...)");
+                            Object obj = elgoVar.get(i2);
+                            fxxm.e(obj, "get(...)");
                             Location location = (Location) obj;
-                            Object a = fvaqVar.a(location);
-                            if (eiteVar != null) {
-                                eiteVar.i(a);
+                            Object a = fxwoVar.a(location);
+                            if (elgjVar != null) {
+                                elgjVar.i(a);
                             } else if (a != location) {
-                                eiteVar = eitj.e(size);
+                                elgjVar = elgo.e(size);
                                 for (int i3 = 0; i3 < i2; i3++) {
-                                    eiteVar.i(eitjVar.get(i3));
+                                    elgjVar.i(elgoVar.get(i3));
                                 }
-                                eiteVar.i(a);
+                                elgjVar.i(a);
                             }
                         }
-                        if (eiteVar == null) {
-                            bznbVar2 = bznbVar3;
+                        if (elgjVar == null) {
+                            cbvsVar2 = cbvsVar3;
                         } else {
-                            eitj g = eiteVar.g();
-                            fvbo.e(g, "build(...)");
-                            bznbVar2 = new bznb(g);
+                            elgo g = elgjVar.g();
+                            fxxm.e(g, "build(...)");
+                            cbvsVar2 = new cbvs(g);
                         }
-                        synchronized (bzsfVar) {
-                            bzsfVar.a = bznbVar3;
-                            bzsfVar.b = bznbVar2;
+                        synchronized (ccawVar) {
+                            ccawVar.a = cbvsVar3;
+                            ccawVar.b = cbvsVar2;
                         }
-                        bznbVar3 = bznbVar2;
+                        cbvsVar3 = cbvsVar2;
                     }
-                    bznbVar3 = (bznb) Objects.requireNonNull(bzsfVar.b);
+                    cbvsVar3 = (cbvs) Objects.requireNonNull(ccawVar.b);
                 }
             }
-            final capn capnVar = bzscVar.m;
-            Object a2 = new bwpp(clientIdentity).a(capnVar.h);
-            if (capn.e((bwpu) a2, z2)) {
-                list = capn.d(bznbVar3, new eiho() { // from class: capk
-                    @Override // defpackage.eiho
+            final ccyd ccydVar = ccatVar.m;
+            Object a2 = new byyc(clientIdentity).a(ccydVar.h);
+            if (ccyd.e((byyh) a2, z2)) {
+                list = ccyd.d(cbvsVar3, new ekut() { // from class: ccya
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
-                        return capn.this.a((Location) obj2, z2, clientIdentity);
+                        return ccyd.this.a((Location) obj2, z2, clientIdentity);
                     }
                 });
             } else {
-                synchronized (capnVar) {
-                    if (bznbVar3 == capnVar.d) {
-                        int ordinal = ((bwpu) a2).ordinal();
+                synchronized (ccydVar) {
+                    if (cbvsVar3 == ccydVar.d) {
+                        int ordinal = ((byyh) a2).ordinal();
                         if (ordinal == 0) {
-                            list2 = capnVar.g;
+                            list2 = ccydVar.g;
                             if (list2 != null) {
                                 list = list2;
                             }
                         } else if (ordinal == 1) {
-                            list2 = capnVar.f;
+                            list2 = ccydVar.f;
                             if (list2 != null) {
                                 list = list2;
                             }
@@ -194,92 +194,92 @@ public abstract class FusedLocationManager$LocationRegistration extends FusedLoc
                             if (ordinal != 2) {
                                 throw new IllegalStateException();
                             }
-                            list2 = capnVar.e;
+                            list2 = ccydVar.e;
                             if (list2 != null) {
                                 list = list2;
                             }
                         }
                     }
-                    List d = capn.d(bznbVar3, new eiho() { // from class: capl
-                        @Override // defpackage.eiho
+                    List d = ccyd.d(cbvsVar3, new ekut() { // from class: ccyb
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj2) {
-                            return capn.this.a((Location) obj2, z2, clientIdentity);
+                            return ccyd.this.a((Location) obj2, z2, clientIdentity);
                         }
                     });
-                    synchronized (capnVar) {
-                        capnVar.d = bznbVar3;
-                        int ordinal2 = ((bwpu) a2).ordinal();
+                    synchronized (ccydVar) {
+                        ccydVar.d = cbvsVar3;
+                        int ordinal2 = ((byyh) a2).ordinal();
                         if (ordinal2 == 0) {
-                            capnVar.g = d;
-                            capnVar.f = null;
-                            capnVar.e = null;
+                            ccydVar.g = d;
+                            ccydVar.f = null;
+                            ccydVar.e = null;
                         } else if (ordinal2 == 1) {
-                            capnVar.g = null;
-                            capnVar.f = d;
-                            capnVar.e = null;
+                            ccydVar.g = null;
+                            ccydVar.f = d;
+                            ccydVar.e = null;
                         } else {
                             if (ordinal2 != 2) {
                                 throw new IllegalStateException();
                             }
-                            capnVar.g = null;
-                            capnVar.f = null;
-                            capnVar.e = d;
+                            ccydVar.g = null;
+                            ccydVar.f = null;
+                            ccydVar.e = d;
                         }
                     }
                     list = d;
                 }
             }
-            f = bznb.f(list);
+            f = cbvs.f(list);
         }
         if (f == null) {
-            asot asotVar = bzmw.a;
+            ausn ausnVar = cbvn.a;
             return null;
         }
-        if (fppc.y() && f.a() > 1) {
-            bzmz bzmzVar = this.m;
-            if (!bzmzVar.b() && !bzmzVar.c()) {
-                f = bznb.e(f.c());
+        if (fsiu.y() && f.a() > 1) {
+            cbvq cbvqVar = this.m;
+            if (!cbvqVar.b() && !cbvqVar.c()) {
+                f = cbvs.e(f.c());
             }
         }
-        bzry bzryVar = new bzry(this);
-        eitj eitjVar2 = f.a;
-        int size2 = eitjVar2.size();
-        eite eiteVar2 = null;
+        ccap ccapVar = new ccap(this);
+        elgo elgoVar2 = f.a;
+        int size2 = elgoVar2.size();
+        elgj elgjVar2 = null;
         for (int i4 = 0; i4 < size2; i4++) {
-            Object obj2 = eitjVar2.get(i4);
-            fvbo.e(obj2, "get(...)");
-            if (((Boolean) bzryVar.a(obj2)).booleanValue()) {
-                if (eiteVar2 != null) {
-                    eiteVar2.i(eitjVar2.get(i4));
+            Object obj2 = elgoVar2.get(i4);
+            fxxm.e(obj2, "get(...)");
+            if (((Boolean) ccapVar.a(obj2)).booleanValue()) {
+                if (elgjVar2 != null) {
+                    elgjVar2.i(elgoVar2.get(i4));
                 }
-            } else if (eiteVar2 == null) {
-                eiteVar2 = eitj.e(size2 - 1);
+            } else if (elgjVar2 == null) {
+                elgjVar2 = elgo.e(size2 - 1);
                 for (int i5 = 0; i5 < i4; i5++) {
-                    eiteVar2.i(eitjVar2.get(i5));
+                    elgjVar2.i(elgoVar2.get(i5));
                 }
             }
         }
-        if (eiteVar2 != null) {
-            eitj g2 = eiteVar2.g();
-            fvbo.e(g2, "build(...)");
-            f = g2.isEmpty() ? null : new bznb(g2);
+        if (elgjVar2 != null) {
+            elgo g2 = elgjVar2.g();
+            fxxm.e(g2, "build(...)");
+            f = g2.isEmpty() ? null : new cbvs(g2);
         }
         if (f == null) {
             return null;
         }
-        if (fppc.x() && !fppc.y() && f.a() > 1) {
-            bzmz bzmzVar2 = this.m;
-            if (!bzmzVar2.b() && !bzmzVar2.c()) {
-                f = bznb.e(f.c());
+        if (fsiu.x() && !fsiu.y() && f.a() > 1) {
+            cbvq cbvqVar2 = this.m;
+            if (!cbvqVar2.b() && !cbvqVar2.c()) {
+                f = cbvs.e(f.c());
             }
         }
-        bzsc bzscVar2 = this.k;
+        ccat ccatVar2 = this.k;
         String x = x();
         ClientIdentity clientIdentity2 = this.l;
-        if (bzscVar2.o.n(x, clientIdentity2.c, clientIdentity2.e, clientIdentity2.f, clientIdentity2.g) == 0) {
-            return new bzsa(this, f, z);
+        if (ccatVar2.o.n(x, clientIdentity2.c, clientIdentity2.e, clientIdentity2.f, clientIdentity2.g) == 0) {
+            return new ccar(this, f, z);
         }
-        ((ejhf) ((ejhf) bzmw.a.h()).ah((char) 5562)).B("delivery noteOp denied for %s", clientIdentity2);
+        ((eluo) ((eluo) cbvn.a.h()).ai((char) 5576)).B("delivery noteOp denied for %s", clientIdentity2);
         return null;
     }
 

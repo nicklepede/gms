@@ -4,27 +4,27 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.cyxu;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.dbhs;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SnetDailyHygieneChimeraIntentService extends IntentOperation {
     public static final /* synthetic */ int a = 0;
 
     static {
-        asot.b("snet_daily_hygiene", asej.SECURITY);
+        ausn.b("snet_daily_hygiene", auid.SECURITY);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         if (intent != null && "com.google.android.gms.security.snet.ACTION_CLEAN_PREFS".equals(intent.getAction())) {
-            cyxu cyxuVar = new cyxu(this);
-            if (!cyxuVar.b.getBoolean("migrated_to_safetynet_preferences", false)) {
-                SharedPreferences sharedPreferences = cyxuVar.a;
-                SharedPreferences sharedPreferences2 = cyxuVar.a;
+            dbhs dbhsVar = new dbhs(this);
+            if (!dbhsVar.b.getBoolean("migrated_to_safetynet_preferences", false)) {
+                SharedPreferences sharedPreferences = dbhsVar.a;
+                SharedPreferences sharedPreferences2 = dbhsVar.a;
                 Map<String, ?> all = sharedPreferences.getAll();
                 SharedPreferences.Editor edit = sharedPreferences2.edit();
                 for (String str : all.keySet()) {
@@ -33,19 +33,19 @@ public class SnetDailyHygieneChimeraIntentService extends IntentOperation {
                     }
                 }
                 if (edit.commit()) {
-                    SharedPreferences.Editor edit2 = cyxuVar.b.edit();
+                    SharedPreferences.Editor edit2 = dbhsVar.b.edit();
                     edit2.putBoolean("migrated_to_safetynet_preferences", true);
                     edit2.commit();
                 }
             }
-            SharedPreferences sharedPreferences3 = cyxuVar.b;
-            SharedPreferences sharedPreferences4 = cyxuVar.b;
+            SharedPreferences sharedPreferences3 = dbhsVar.b;
+            SharedPreferences sharedPreferences4 = dbhsVar.b;
             Map<String, ?> all2 = sharedPreferences3.getAll();
             SharedPreferences.Editor edit3 = sharedPreferences4.edit();
             for (String str2 : all2.keySet()) {
                 if (str2.startsWith("snet_attestation_request_times_ms")) {
                     try {
-                        cyxuVar.c.getPackageInfo(str2.substring(34), 0);
+                        dbhsVar.c.getPackageInfo(str2.substring(34), 0);
                     } catch (PackageManager.NameNotFoundException unused) {
                         edit3.remove(str2);
                     }

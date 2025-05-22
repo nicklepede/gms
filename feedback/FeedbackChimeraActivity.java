@@ -61,118 +61,118 @@ import com.google.android.gms.googlehelp.common.HelpConfig;
 import com.google.android.gms.googlehelp.feedback.Screenshot;
 import com.google.android.material.card.MaterialCardView;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.arts;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asiu;
-import defpackage.asmf;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.aspy;
-import defpackage.bagq;
-import defpackage.bags;
-import defpackage.bagt;
-import defpackage.bagv;
-import defpackage.baim;
-import defpackage.baio;
-import defpackage.baiq;
-import defpackage.bair;
-import defpackage.bais;
-import defpackage.bait;
-import defpackage.baiu;
-import defpackage.baiv;
-import defpackage.baja;
-import defpackage.bajb;
-import defpackage.bajp;
-import defpackage.bajq;
-import defpackage.bajx;
-import defpackage.bajz;
-import defpackage.baka;
-import defpackage.bakb;
-import defpackage.bakg;
-import defpackage.bakl;
-import defpackage.bakp;
-import defpackage.baky;
-import defpackage.bakz;
-import defpackage.bala;
-import defpackage.balb;
-import defpackage.balc;
-import defpackage.bald;
-import defpackage.bale;
-import defpackage.balf;
-import defpackage.balk;
-import defpackage.baln;
-import defpackage.balv;
-import defpackage.balz;
-import defpackage.bama;
-import defpackage.bamg;
-import defpackage.baog;
-import defpackage.baok;
-import defpackage.baoo;
-import defpackage.baor;
-import defpackage.baox;
-import defpackage.bapf;
-import defpackage.bapk;
-import defpackage.bipr;
-import defpackage.biqu;
-import defpackage.bivj;
-import defpackage.bivk;
-import defpackage.bivo;
-import defpackage.bivr;
-import defpackage.bivs;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.atwh;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.aumo;
+import defpackage.aupz;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.auts;
+import defpackage.bckm;
+import defpackage.bcko;
+import defpackage.bckp;
+import defpackage.bckr;
+import defpackage.bcmi;
+import defpackage.bcmk;
+import defpackage.bcmm;
+import defpackage.bcmn;
+import defpackage.bcmo;
+import defpackage.bcmp;
+import defpackage.bcmq;
+import defpackage.bcmr;
+import defpackage.bcmw;
+import defpackage.bcmx;
+import defpackage.bcnl;
+import defpackage.bcnm;
+import defpackage.bcnt;
+import defpackage.bcnv;
+import defpackage.bcnw;
+import defpackage.bcnx;
+import defpackage.bcoc;
+import defpackage.bcoh;
+import defpackage.bcol;
+import defpackage.bcou;
+import defpackage.bcov;
+import defpackage.bcow;
+import defpackage.bcox;
+import defpackage.bcoy;
+import defpackage.bcoz;
+import defpackage.bcpa;
+import defpackage.bcpb;
+import defpackage.bcpg;
+import defpackage.bcpj;
+import defpackage.bcpr;
+import defpackage.bcpv;
+import defpackage.bcpw;
+import defpackage.bcqc;
+import defpackage.bcsc;
+import defpackage.bcsg;
+import defpackage.bcsk;
+import defpackage.bcsn;
+import defpackage.bcst;
+import defpackage.bctb;
+import defpackage.bctg;
+import defpackage.bkug;
+import defpackage.bkvj;
+import defpackage.bkzy;
+import defpackage.bkzz;
+import defpackage.blad;
+import defpackage.blag;
+import defpackage.blah;
 import defpackage.bp;
-import defpackage.byhr;
-import defpackage.dvyt;
-import defpackage.dvyx;
-import defpackage.eble;
-import defpackage.ebna;
-import defpackage.eitj;
-import defpackage.ejhf;
-import defpackage.ensv;
-import defpackage.epmm;
-import defpackage.epnk;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fefi;
-import defpackage.fjrw;
-import defpackage.fjse;
-import defpackage.fjtb;
-import defpackage.fjtc;
-import defpackage.fjte;
-import defpackage.fjtf;
-import defpackage.fjtg;
-import defpackage.fjth;
-import defpackage.fnnl;
-import defpackage.fnob;
-import defpackage.fnoh;
-import defpackage.fnou;
-import defpackage.fnpd;
-import defpackage.fnpg;
-import defpackage.fnpp;
-import defpackage.fnps;
-import defpackage.fnqb;
-import defpackage.fnqe;
-import defpackage.fnqk;
-import defpackage.fnqw;
-import defpackage.fnro;
-import defpackage.fnsj;
-import defpackage.fnth;
-import defpackage.fnvm;
-import defpackage.fnvs;
-import defpackage.fonb;
-import defpackage.fwac;
-import defpackage.fwaf;
+import defpackage.caqj;
+import defpackage.dyku;
+import defpackage.dyky;
+import defpackage.edxt;
+import defpackage.edzp;
+import defpackage.elgo;
+import defpackage.eluo;
+import defpackage.eqgo;
+import defpackage.esal;
+import defpackage.esbj;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgub;
+import defpackage.fmht;
+import defpackage.fmib;
+import defpackage.fmiy;
+import defpackage.fmiz;
+import defpackage.fmjb;
+import defpackage.fmjc;
+import defpackage.fmjd;
+import defpackage.fmje;
+import defpackage.fqfu;
+import defpackage.fqgk;
+import defpackage.fqgq;
+import defpackage.fqhd;
+import defpackage.fqhm;
+import defpackage.fqhp;
+import defpackage.fqhy;
+import defpackage.fqib;
+import defpackage.fqik;
+import defpackage.fqin;
+import defpackage.fqit;
+import defpackage.fqjf;
+import defpackage.fqjx;
+import defpackage.fqks;
+import defpackage.fqlq;
+import defpackage.fqnv;
+import defpackage.fqob;
+import defpackage.frfu;
+import defpackage.fywe;
+import defpackage.fywh;
 import defpackage.ig;
-import defpackage.imw;
+import defpackage.ion;
 import defpackage.ip;
-import defpackage.ipv;
-import defpackage.qet;
-import defpackage.rbj;
-import defpackage.unx;
-import defpackage.uoh;
+import defpackage.irl;
+import defpackage.rxx;
+import defpackage.sun;
+import defpackage.wjw;
+import defpackage.wkg;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
@@ -183,29 +183,29 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemClickListener, balz, baja, bagv, baka, bajq, bivo {
-    public static bajp k;
+public class FeedbackChimeraActivity extends rxx implements MenuItem.OnMenuItemClickListener, bcpv, bcmw, bckr, bcnw, bcnm, blad {
+    public static bcnl k;
     public static Bitmap l;
     public static List m;
     public static HelpConfig n;
-    public static biqu o;
-    public static rbj p;
+    public static bkvj o;
+    public static sun p;
     private KeyguardManager C;
-    private abv D;
+    private aca D;
     private ServiceConnection E;
     private String F;
-    public bajb r;
+    public bcmx r;
     public Map s;
     public Bitmap u;
     public String v;
     public View x;
-    public bapf y;
+    public bctb y;
     public String z;
-    public static final asot j = asot.b("gf_FeedbackActivity", asej.FEEDBACK);
+    public static final ausn j = ausn.b("gf_FeedbackActivity", auid.FEEDBACK);
     public static boolean q = false;
-    private final ensv B = new asmf(Integer.MAX_VALUE, 10);
+    private final eqgo B = new aupz(Integer.MAX_VALUE, 10);
     public boolean t = false;
     public boolean w = false;
     public boolean A = false;
@@ -215,213 +215,210 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
     }
 
     static final boolean ab(ErrorReport errorReport) {
-        return fnqw.a.a().a() && !errorReport.E;
+        return fqjf.a.lK().a() && !errorReport.E;
     }
 
     static final boolean ac(ErrorReport errorReport) {
-        if (fnnl.a.a().I() && !errorReport.E) {
+        fqfu fqfuVar = fqfu.a;
+        if (fqfuVar.lK().I() && !errorReport.E) {
             String str = errorReport.a.packageName;
-            fnnl fnnlVar = fnnl.a;
-            String B = fnnlVar.a().B();
+            String B = fqfuVar.lK().B();
             int i = errorReport.a.type;
-            String F = fnnlVar.a().F();
-            if (str == null || B == null || F == null) {
-                return false;
-            }
-            for (String str2 : bivr.y(B)) {
-                if (str.startsWith(str2) && !TextUtils.isEmpty(str2)) {
-                    return bivr.x(Integer.toString(i), F);
+            String F = fqfuVar.lK().F();
+            if (str != null) {
+                for (String str2 : blag.y(B)) {
+                    if (str.startsWith(str2) && !TextUtils.isEmpty(str2)) {
+                        return blag.x(Integer.toString(i), F);
+                    }
                 }
             }
         }
         return false;
     }
 
-    public static final fefi af() {
+    public static final fgub af() {
         long currentTimeMillis = System.currentTimeMillis();
-        fecj v = fefi.a.v();
+        fgrc v = fgub.a.v();
         long j2 = currentTimeMillis / 1000;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ((fefi) fecpVar).b = j2;
+        fgri fgriVar = v.b;
+        ((fgub) fgriVar).b = j2;
         long j3 = currentTimeMillis % 1000;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v.U();
         }
-        ((fefi) v.b).c = (int) (j3 * 1000000);
-        return (fefi) v.Q();
+        ((fgub) v.b).c = (int) (j3 * 1000000);
+        return (fgub) v.Q();
     }
 
-    public static final fjtg ag(String str, String str2) {
-        Locale g = ipv.a(Resources.getSystem().getConfiguration()).g(0);
+    public static final fmjd ag(String str, String str2) {
+        Locale g = irl.a(Resources.getSystem().getConfiguration()).g(0);
         String languageTag = g != null ? g.toLanguageTag() : "en";
-        String a = baor.a();
-        fecj v = fjtg.a.v();
+        String a = bcsn.a();
+        fgrc v = fmjd.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fjtg fjtgVar = (fjtg) v.b;
+        fmjd fmjdVar = (fmjd) v.b;
         str.getClass();
-        fjtgVar.b |= 1;
-        fjtgVar.c = str;
-        boolean c = fnsj.c();
+        fmjdVar.b |= 1;
+        fmjdVar.c = str;
+        boolean c = fqks.c();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        fjtg fjtgVar2 = (fjtg) fecpVar;
-        fjtgVar2.b |= 32;
-        fjtgVar2.h = c;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        fmjd fmjdVar2 = (fmjd) fgriVar;
+        fmjdVar2.b |= 32;
+        fmjdVar2.h = c;
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        fjtg fjtgVar3 = (fjtg) fecpVar2;
+        fgri fgriVar2 = v.b;
+        fmjd fmjdVar3 = (fmjd) fgriVar2;
         languageTag.getClass();
-        fjtgVar3.b |= 2;
-        fjtgVar3.d = languageTag;
-        if (!fecpVar2.L()) {
+        fmjdVar3.b |= 2;
+        fmjdVar3.d = languageTag;
+        if (!fgriVar2.L()) {
             v.U();
         }
-        fjtg fjtgVar4 = (fjtg) v.b;
-        a.getClass();
-        fjtgVar4.b |= 4;
-        fjtgVar4.e = a;
-        String e = fnou.a.a().e();
+        fmjd fmjdVar4 = (fmjd) v.b;
+        fmjdVar4.b |= 4;
+        fmjdVar4.e = a;
+        String e = fqhd.a.lK().e();
         if (!v.b.L()) {
             v.U();
         }
-        fjtg fjtgVar5 = (fjtg) v.b;
-        e.getClass();
-        fjtgVar5.b |= 8;
-        fjtgVar5.f = e;
+        fmjd fmjdVar5 = (fmjd) v.b;
+        fmjdVar5.b |= 8;
+        fmjdVar5.f = e;
         if (!TextUtils.isEmpty(str2)) {
             if (!v.b.L()) {
                 v.U();
             }
-            fjtg fjtgVar6 = (fjtg) v.b;
+            fmjd fmjdVar6 = (fmjd) v.b;
             str2.getClass();
-            fjtgVar6.b |= 16;
-            fjtgVar6.g = str2;
+            fmjdVar6.b |= 16;
+            fmjdVar6.g = str2;
         }
-        return (fjtg) v.Q();
+        return (fmjd) v.Q();
     }
 
-    public static final boolean ah(fefi fefiVar) {
-        return af().b - fefiVar.b < fnou.b();
+    public static final boolean ah(fgub fgubVar) {
+        return af().b - fgubVar.b < fqhd.b();
     }
 
-    private final epnk aj(ErrorReport errorReport) {
-        fjtc fjtcVar = ((fjth) this.s.get(ag(errorReport.a.packageName, errorReport.P))).d;
-        if (fjtcVar == null) {
-            fjtcVar = fjtc.a;
+    private final esbj aj(ErrorReport errorReport) {
+        fmiz fmizVar = ((fmje) this.s.get(ag(errorReport.a.packageName, errorReport.P))).d;
+        if (fmizVar == null) {
+            fmizVar = fmiz.a;
         }
-        epnk epnkVar = fjtcVar.c;
-        return epnkVar == null ? epnk.a : epnkVar;
+        esbj esbjVar = fmizVar.c;
+        return esbjVar == null ? esbj.a : esbjVar;
     }
 
-    private final fjtb ak(String str, String str2) {
-        fjtg ag = ag(str, str2);
-        fecj v = fjrw.a.v();
+    private final fmiy ak(String str, String str2) {
+        fmjd ag = ag(str, str2);
+        fgrc v = fmht.a.v();
         String str3 = ag.c;
         if (!v.b.L()) {
             v.U();
         }
-        fjrw fjrwVar = (fjrw) v.b;
+        fmht fmhtVar = (fmht) v.b;
         str3.getClass();
-        fjrwVar.b |= 4;
-        fjrwVar.c = str3;
+        fmhtVar.b |= 4;
+        fmhtVar.c = str3;
         float f = getResources().getDisplayMetrics().density;
         if (!v.b.L()) {
             v.U();
         }
-        fjrw fjrwVar2 = (fjrw) v.b;
-        fjrwVar2.b |= 16;
-        fjrwVar2.e = f;
+        fmht fmhtVar2 = (fmht) v.b;
+        fmhtVar2.b |= 16;
+        fmhtVar2.e = f;
         if (!TextUtils.isEmpty(str2)) {
             if (!v.b.L()) {
                 v.U();
             }
-            fjrw fjrwVar3 = (fjrw) v.b;
+            fmht fmhtVar3 = (fmht) v.b;
             str2.getClass();
-            fjrwVar3.b |= 8;
-            fjrwVar3.d = str2;
+            fmhtVar3.b |= 8;
+            fmhtVar3.d = str2;
         }
-        fecj v2 = fjtb.a.v();
+        fgrc v2 = fmiy.a.v();
         String str4 = ag.e;
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar = v2.b;
-        fjtb fjtbVar = (fjtb) fecpVar;
+        fgri fgriVar = v2.b;
+        fmiy fmiyVar = (fmiy) fgriVar;
         str4.getClass();
-        fjtbVar.b |= 2;
-        fjtbVar.d = str4;
+        fmiyVar.b |= 2;
+        fmiyVar.d = str4;
         String str5 = ag.f;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        fjtb fjtbVar2 = (fjtb) fecpVar2;
+        fgri fgriVar2 = v2.b;
+        fmiy fmiyVar2 = (fmiy) fgriVar2;
         str5.getClass();
-        fjtbVar2.b |= 4;
-        fjtbVar2.e = str5;
+        fmiyVar2.b |= 4;
+        fmiyVar2.e = str5;
         boolean z = ag.h;
-        if (!fecpVar2.L()) {
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        fjtb fjtbVar3 = (fjtb) v2.b;
-        fjtbVar3.b |= 8;
-        fjtbVar3.f = z;
-        fecj v3 = fjse.a.v();
+        fmiy fmiyVar3 = (fmiy) v2.b;
+        fmiyVar3.b |= 8;
+        fmiyVar3.f = z;
+        fgrc v3 = fmib.a.v();
         String str6 = ag.d;
         if (!v3.b.L()) {
             v3.U();
         }
-        fecp fecpVar3 = v3.b;
-        fjse fjseVar = (fjse) fecpVar3;
+        fgri fgriVar3 = v3.b;
+        fmib fmibVar = (fmib) fgriVar3;
         str6.getClass();
-        fjseVar.b |= 2;
-        fjseVar.e = str6;
-        if (!fecpVar3.L()) {
+        fmibVar.b |= 2;
+        fmibVar.e = str6;
+        if (!fgriVar3.L()) {
             v3.U();
         }
-        fjse fjseVar2 = (fjse) v3.b;
-        fjrw fjrwVar4 = (fjrw) v.Q();
-        fjrwVar4.getClass();
-        fjseVar2.d = fjrwVar4;
-        fjseVar2.c = 2;
-        fjse fjseVar3 = (fjse) v3.Q();
+        fmib fmibVar2 = (fmib) v3.b;
+        fmht fmhtVar4 = (fmht) v.Q();
+        fmhtVar4.getClass();
+        fmibVar2.d = fmhtVar4;
+        fmibVar2.c = 2;
+        fmib fmibVar3 = (fmib) v3.Q();
         if (!v2.b.L()) {
             v2.U();
         }
-        fjtb fjtbVar4 = (fjtb) v2.b;
-        fjseVar3.getClass();
-        fjtbVar4.c = fjseVar3;
-        fjtbVar4.b |= 1;
-        return (fjtb) v2.Q();
+        fmiy fmiyVar4 = (fmiy) v2.b;
+        fmibVar3.getClass();
+        fmiyVar4.c = fmibVar3;
+        fmiyVar4.b |= 1;
+        return (fmiy) v2.Q();
     }
 
     private final Map al() {
         try {
-            fjte fjteVar = (fjte) new bags(this).a().get(2L, TimeUnit.SECONDS);
+            fmjb fmjbVar = (fmjb) new bcko(this).a().get(2L, TimeUnit.SECONDS);
             HashMap hashMap = new HashMap();
-            for (fjtf fjtfVar : fjteVar.b) {
-                fjtg fjtgVar = fjtfVar.c;
-                if (fjtgVar == null) {
-                    fjtgVar = fjtg.a;
+            for (fmjc fmjcVar : fmjbVar.b) {
+                fmjd fmjdVar = fmjcVar.c;
+                if (fmjdVar == null) {
+                    fmjdVar = fmjd.a;
                 }
-                fjth fjthVar = fjtfVar.d;
-                if (fjthVar == null) {
-                    fjthVar = fjth.a;
+                fmje fmjeVar = fmjcVar.d;
+                if (fmjeVar == null) {
+                    fmjeVar = fmje.a;
                 }
-                hashMap.put(fjtgVar, fjthVar);
+                hashMap.put(fmjdVar, fmjeVar);
             }
             return hashMap;
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) j.h()).s(e)).ah((char) 3585)).x("Exception occurred while getting config");
+            ((eluo) ((eluo) ((eluo) j.h()).s(e)).ai((char) 3591)).x("Exception occurred while getting config");
             return new HashMap();
         }
     }
@@ -434,8 +431,8 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
     }
 
     private final void an(Intent intent) {
-        if (fnpg.c()) {
-            baoo.j(this, w(intent), intent.getBooleanExtra("LAUNCHED_FROM_FEEDBACK_MODULE", false) ? fwac.z : fwac.A, 0, 0);
+        if (fqhp.c()) {
+            bcsk.j(this, w(intent), intent.getBooleanExtra("LAUNCHED_FROM_FEEDBACK_MODULE", false) ? fywe.z : fywe.A, 0, 0);
         }
     }
 
@@ -457,10 +454,10 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
     }
 
     private final void ap() {
-        baim baimVar = new baim(this);
+        bcmi bcmiVar = new bcmi(this);
         KeyguardManager keyguardManager = this.C;
         if (keyguardManager != null) {
-            keyguardManager.requestDismissKeyguard(getContainerActivity(), baimVar);
+            keyguardManager.requestDismissKeyguard(getContainerActivity(), bcmiVar);
         }
     }
 
@@ -480,45 +477,45 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         return getPackageManager().hasSystemFeature("android.software.communal_mode");
     }
 
-    private final boolean as(fjtg fjtgVar) {
+    private final boolean as(fmjd fmjdVar) {
         if (this.s == null) {
             this.s = al();
         }
-        if (!this.s.containsKey(fjtgVar)) {
+        if (!this.s.containsKey(fmjdVar)) {
             return false;
         }
-        fefi fefiVar = ((fjth) this.s.get(fjtgVar)).c;
-        if (fefiVar == null) {
-            fefiVar = fefi.a;
+        fgub fgubVar = ((fmje) this.s.get(fmjdVar)).c;
+        if (fgubVar == null) {
+            fgubVar = fgub.a;
         }
-        return ah(fefiVar);
+        return ah(fgubVar);
     }
 
     public static ErrorReport x() {
-        bajp bajpVar = k;
-        if (bajpVar != null) {
-            return bajpVar.b();
+        bcnl bcnlVar = k;
+        if (bcnlVar != null) {
+            return bcnlVar.b();
         }
         return null;
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final String A() {
-        bajb bajbVar = this.r;
-        return bajbVar == null ? "" : ((EditText) ((bald) bajbVar).y(R.id.gf_issue_description)).getText().toString().trim();
+        bcmx bcmxVar = this.r;
+        return bcmxVar == null ? "" : ((EditText) ((bcoz) bcmxVar).y(R.id.gf_issue_description)).getText().toString().trim();
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final String B() {
         return this.v;
     }
 
-    @Override // defpackage.baja
+    @Override // defpackage.bcmw
     public final void C(CharSequence charSequence) {
         if (k == null) {
             return;
         }
-        if (bajx.e(x())) {
+        if (bcnt.e(x())) {
             super.invalidateOptionsMenu();
         }
         k.b().b = charSequence.toString();
@@ -527,7 +524,7 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
     public final void D(int i, int i2, int i3) {
         ValueAnimator ofObject = ValueAnimator.ofObject(new ArgbEvaluator(), Integer.valueOf(i), Integer.valueOf(i2));
         ofObject.setDuration(i3);
-        ofObject.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: baik
+        ofObject.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: bcmg
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 FeedbackChimeraActivity.this.getWindow().getDecorView().setBackgroundColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
@@ -536,7 +533,7 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         ofObject.start();
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final void E() {
         String str;
         int i;
@@ -544,14 +541,14 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
             return;
         }
         ErrorReport w = w(getIntent());
-        if (w == null || !bakg.c(w)) {
-            if (!bivk.a(fnqk.a.a().a()) || (str = this.F) == null) {
+        if (w == null || !bcoc.c(w)) {
+            if (!bkzz.a(fqit.a.lK().a()) || (str = this.F) == null) {
                 str = this.v;
             }
-            bajp bajpVar = k;
-            String[] strArr = bajpVar.e;
+            bcnl bcnlVar = k;
+            String[] strArr = bcnlVar.e;
             int length = strArr.length;
-            String[] strArr2 = bajpVar.f;
+            String[] strArr2 = bcnlVar.f;
             int length2 = strArr2.length;
             int i2 = length + length2;
             String[] strArr3 = new String[i2];
@@ -586,15 +583,15 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
             if (i6 > 0) {
                 am(strArr3, length, strArr2);
             }
-            bajb bajbVar = this.r;
-            if (bajbVar != null) {
-                bald baldVar = (bald) bajbVar;
-                Spinner spinner = (Spinner) baldVar.y(R.id.gf_account_spinner);
-                ArrayAdapter arrayAdapter = new ArrayAdapter(bajbVar.getContext(), R.layout.gf_material_2_spinner, strArr3);
+            bcmx bcmxVar = this.r;
+            if (bcmxVar != null) {
+                bcoz bcozVar = (bcoz) bcmxVar;
+                Spinner spinner = (Spinner) bcozVar.y(R.id.gf_account_spinner);
+                ArrayAdapter arrayAdapter = new ArrayAdapter(bcmxVar.getContext(), R.layout.gf_material_2_spinner, strArr3);
                 arrayAdapter.setDropDownViewResource(R.layout.gf_account_spinner_dropdown_item);
                 spinner.setAdapter((SpinnerAdapter) arrayAdapter);
-                spinner.setOnTouchListener(new balb());
-                spinner.setOnItemSelectedListener(new balc(baldVar));
+                spinner.setOnTouchListener(new bcox());
+                spinner.setOnItemSelectedListener(new bcoy(bcozVar));
                 if (i2 > 1) {
                     spinner.setSelection(i);
                 }
@@ -602,15 +599,15 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         }
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final void F(Screenshot screenshot, ErrorReport errorReport) {
         int i;
         int i2;
         if (screenshot == null || TextUtils.isEmpty(screenshot.d)) {
-            bald baldVar = (bald) this.r;
-            ((ImageView) baldVar.y(R.id.gf_screenshot_icon)).setVisibility(8);
-            ((MaterialCardView) baldVar.y(R.id.gf_include_screenshot_card)).setVisibility(8);
-            ((TextView) baldVar.y(R.id.gf_edit_screenshot)).setVisibility(8);
+            bcoz bcozVar = (bcoz) this.r;
+            ((ImageView) bcozVar.y(R.id.gf_screenshot_icon)).setVisibility(8);
+            ((MaterialCardView) bcozVar.y(R.id.gf_include_screenshot_card)).setVisibility(8);
+            ((TextView) bcozVar.y(R.id.gf_edit_screenshot)).setVisibility(8);
             return;
         }
         if (errorReport.v == null) {
@@ -622,24 +619,24 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         }
         Rect rect = new Rect();
         getWindow().getDecorView().getWindowVisibleDisplayFrame(rect);
-        Pair a = bajx.a(getResources(), rect, i, i2, true);
+        Pair a = bcnt.a(getResources(), rect, i, i2, true);
         Display defaultDisplay = getWindowManager().getDefaultDisplay();
         Point point = new Point();
         defaultDisplay.getSize(point);
-        asng.F(new bair(this, Pair.create(Integer.valueOf(point.x), Integer.valueOf(point.y)), screenshot, errorReport, a), new Void[0]);
+        aura.F(new bcmn(this, Pair.create(Integer.valueOf(point.x), Integer.valueOf(point.y)), screenshot, errorReport, a), new Void[0]);
     }
 
-    @Override // defpackage.bivo
+    @Override // defpackage.blad
     public final void G(Parcelable parcelable) {
-        bajp bajpVar = k;
-        if (bajpVar == null) {
-            ((ejhf) ((ejhf) j.j()).ah((char) 3593)).x("Session is null, not updating screenshot.");
+        bcnl bcnlVar = k;
+        if (bcnlVar == null) {
+            ((eluo) ((eluo) j.j()).ai((char) 3599)).x("Session is null, not updating screenshot.");
         } else {
-            bajpVar.s((Screenshot) parcelable);
+            bcnlVar.s((Screenshot) parcelable);
         }
     }
 
-    @Override // defpackage.baja
+    @Override // defpackage.bcmw
     public final void H(int i) {
         String concat;
         if (k == null) {
@@ -651,14 +648,14 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
             k.b().B = "";
             concat = concat2.concat(String.valueOf(getString(R.string.gf_unspecified_email_account)));
         } else {
-            bajp bajpVar = k;
-            String[] strArr = bajpVar.e;
+            bcnl bcnlVar = k;
+            String[] strArr = bcnlVar.e;
             int length = strArr.length;
-            String str = i < length ? strArr[i] : bajpVar.f[i - length];
+            String str = i < length ? strArr[i] : bcnlVar.f[i - length];
             if (i < length) {
                 this.F = str;
             }
-            bajpVar.b().B = str;
+            bcnlVar.b().B = str;
             concat = concat2.concat(String.valueOf(str));
         }
         AccessibilityManager accessibilityManager = (AccessibilityManager) getSystemService("accessibility");
@@ -673,10 +670,10 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         }
     }
 
-    @Override // defpackage.baja
+    @Override // defpackage.bcmw
     public final void I(Intent intent) {
         if (intent == null) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 3595)).x("onFragmentResume called with null intent.");
+            ((eluo) ((eluo) j.i()).ai((char) 3601)).x("onFragmentResume called with null intent.");
             finish();
             return;
         }
@@ -689,76 +686,76 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
                 this.t = false;
                 return;
             } catch (RemoteException e) {
-                ((ejhf) ((ejhf) j.i()).ah((char) 3583)).B("Log message : %s", e.getMessage());
+                ((eluo) ((eluo) j.i()).ai((char) 3589)).B("Log message : %s", e.getMessage());
                 return;
             }
         }
         if (k == null) {
             k = y(intent.getParcelableExtra("com.android.feedback.SCREENSHOT_EXTRA"), w(intent), intent.hasExtra("ASYNC_PSD_START_TICK_NANOS") ? Long.valueOf(intent.getLongExtra("ASYNC_PSD_START_TICK_NANOS", -1L)) : null);
         }
-        bajp bajpVar = k;
-        if (bajpVar == null) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 3594)).x("onFragmentResume failed to create a session.");
+        bcnl bcnlVar = k;
+        if (bcnlVar == null) {
+            ((eluo) ((eluo) j.i()).ai((char) 3600)).x("onFragmentResume failed to create a session.");
             return;
         }
         if (this.t) {
-            ErrorReport b = bajpVar.b();
+            ErrorReport b = bcnlVar.b();
             Screenshot screenshot = k.g;
-            bajb bajbVar = this.r;
-            final bald baldVar = (bald) bajbVar;
-            ImageView imageView = (ImageView) baldVar.y(R.id.gf_screenshot_icon);
-            ProgressBar progressBar = (ProgressBar) baldVar.y(R.id.gf_progress_spinner);
-            TextView textView = (TextView) baldVar.y(R.id.gf_edit_screenshot);
-            EditText editText = (EditText) baldVar.y(R.id.gf_issue_description);
-            TextView textView2 = (TextView) baldVar.y(R.id.gf_view_logs);
-            CheckBox checkBox = (CheckBox) baldVar.y(R.id.gf_include_screenshot);
-            CheckBox checkBox2 = (CheckBox) baldVar.y(R.id.gf_include_logs);
+            bcmx bcmxVar = this.r;
+            final bcoz bcozVar = (bcoz) bcmxVar;
+            ImageView imageView = (ImageView) bcozVar.y(R.id.gf_screenshot_icon);
+            ProgressBar progressBar = (ProgressBar) bcozVar.y(R.id.gf_progress_spinner);
+            TextView textView = (TextView) bcozVar.y(R.id.gf_edit_screenshot);
+            EditText editText = (EditText) bcozVar.y(R.id.gf_issue_description);
+            TextView textView2 = (TextView) bcozVar.y(R.id.gf_view_logs);
+            CheckBox checkBox = (CheckBox) bcozVar.y(R.id.gf_include_screenshot);
+            CheckBox checkBox2 = (CheckBox) bcozVar.y(R.id.gf_include_logs);
             editText.setText(b.b);
             editText.setSelection(editText.getText().length());
-            String string = bajbVar.getString(R.string.common_view);
+            String string = bcmxVar.getString(R.string.common_view);
             textView2.setLinksClickable(true);
             textView2.setText(string);
             checkBox.setChecked(!b.W);
-            checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: bakr
+            checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: bcon
                 @Override // android.widget.CompoundButton.OnCheckedChangeListener
                 public final void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-                    Object context = bald.this.getContext();
-                    if (context instanceof baja) {
-                        ((baja) context).aa();
+                    Object context = bcoz.this.getContext();
+                    if (context instanceof bcmw) {
+                        ((bcmw) context).aa();
                     }
                 }
             });
-            if (bivk.a(fnqb.c())) {
-                bajx.c(checkBox);
+            if (bkzz.a(fqik.c())) {
+                bcnt.c(checkBox);
             }
             checkBox2.setChecked(!b.W);
-            checkBox2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: baks
+            checkBox2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: bcoo
                 @Override // android.widget.CompoundButton.OnCheckedChangeListener
                 public final void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-                    Object context = bald.this.getContext();
-                    if (context instanceof baja) {
-                        ((baja) context).aa();
+                    Object context = bcoz.this.getContext();
+                    if (context instanceof bcmw) {
+                        ((bcmw) context).aa();
                     }
                 }
             });
-            if (bivk.a(fnqb.c())) {
-                bajx.c(checkBox2);
+            if (bkzz.a(fqik.c())) {
+                bcnt.c(checkBox2);
             }
-            baldVar.y(R.id.gf_system_info_card).setOnClickListener(new View.OnClickListener() { // from class: bakt
+            bcozVar.y(R.id.gf_system_info_card).setOnClickListener(new View.OnClickListener() { // from class: bcop
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    Object context = bald.this.getContext();
-                    if (context instanceof baja) {
-                        ((baja) context).i();
+                    Object context = bcoz.this.getContext();
+                    if (context instanceof bcmw) {
+                        ((bcmw) context).i();
                     }
                 }
             });
-            baldVar.y(R.id.gf_screenshot_card).setOnClickListener(new View.OnClickListener() { // from class: baku
+            bcozVar.y(R.id.gf_screenshot_card).setOnClickListener(new View.OnClickListener() { // from class: bcoq
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    Object context = bald.this.getContext();
-                    if (context instanceof baja) {
-                        ((baja) context).j();
+                    Object context = bcoz.this.getContext();
+                    if (context instanceof bcmw) {
+                        ((bcmw) context).j();
                     }
                 }
             });
@@ -766,21 +763,22 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
                 imageView.setVisibility(8);
                 textView.setVisibility(8);
             } else {
-                imageView.setMaxHeight(bajbVar.getResources().getDimensionPixelSize(R.dimen.gf_screenshot_preview_height));
+                imageView.setMaxHeight(bcmxVar.getResources().getDimensionPixelSize(R.dimen.gf_screenshot_preview_height));
                 imageView.setScaleType(ImageView.ScaleType.MATRIX);
                 progressBar.setVisibility(0);
             }
-            Resources resources = bajbVar.getResources();
-            TextView textView3 = (TextView) baldVar.y(R.id.gf_preview_text);
+            Resources resources = bcmxVar.getResources();
+            TextView textView3 = (TextView) bcozVar.y(R.id.gf_preview_text);
             String string2 = resources.getString(R.string.gf_legal_request);
             String string3 = resources.getString(R.string.gf_account_system_info);
             String string4 = resources.getString(R.string.common_privacy_policy_composed_string);
             String string5 = resources.getString(R.string.common_terms_of_service_composed_string);
             Spannable a2 = URLSpanNoUnderline.a(Html.fromHtml(resources.getString(R.string.gf_policy, string2, string3, string4, string5)));
-            bivr.t(a2, string2, new bakz(baldVar, fnnl.a.a().x()));
-            bivr.t(a2, string3, new baky(baldVar));
-            bivr.t(a2, string4, new bala(baldVar));
-            bivr.t(a2, string5, new bakz(baldVar, fnnl.a.a().D()));
+            fqfu fqfuVar = fqfu.a;
+            blag.t(a2, string2, new bcov(bcozVar, fqfuVar.lK().x()));
+            blag.t(a2, string3, new bcou(bcozVar));
+            blag.t(a2, string4, new bcow(bcozVar));
+            blag.t(a2, string5, new bcov(bcozVar, fqfuVar.lK().D()));
             textView3.setLinksClickable(true);
             textView3.setMovementMethod(LinkMovementMethod.getInstance());
             textView3.setText(a2);
@@ -792,164 +790,164 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
             if (bitmap != null) {
                 this.r.x(bitmap, R());
             }
-            ig hy = hy();
-            if (hy != null) {
-                hy.A(getString(R.string.gf_send_feedback));
-                hy.o(true);
-                hy.N();
+            ig hO = hO();
+            if (hO != null) {
+                hO.A(getString(R.string.gf_send_feedback));
+                hO.o(true);
+                hO.N();
             }
             N(!(k.m == 3));
             this.t = false;
         }
     }
 
-    @Override // defpackage.balz
-    public final void J(bakp bakpVar) {
-        bajp bajpVar = k;
-        if (bajpVar != null) {
-            bajpVar.i(bakpVar);
+    @Override // defpackage.bcpv
+    public final void J(bcol bcolVar) {
+        bcnl bcnlVar = k;
+        if (bcnlVar != null) {
+            bcnlVar.i(bcolVar);
         }
     }
 
-    @Override // defpackage.baka
-    public final void K(bajz bajzVar, ErrorReport errorReport, balk balkVar) {
-        bajz bajzVar2;
-        biqu biquVar;
+    @Override // defpackage.bcnw
+    public final void K(bcnv bcnvVar, ErrorReport errorReport, bcpg bcpgVar) {
+        bcnv bcnvVar2;
+        bkvj bkvjVar;
         String str;
         String str2;
-        if (bakg.c(errorReport)) {
-            if (balkVar != null) {
-                balkVar.dismiss();
+        if (bcoc.c(errorReport)) {
+            if (bcpgVar != null) {
+                bcpgVar.dismiss();
             }
-            if (bajzVar != null) {
-                k.a().h(epmm.CLIENT_REFERENCE_IS_JUNK, true != bajzVar.c ? "false" : "true");
+            if (bcnvVar != null) {
+                k.a().h(esal.CLIENT_REFERENCE_IS_JUNK, true != bcnvVar.c ? "false" : "true");
             }
-            k.m(epmm.CLIENT_REFERENCE_JUNK_ASYNC);
+            k.m(esal.CLIENT_REFERENCE_JUNK_ASYNC);
             return;
         }
         if (ab(errorReport)) {
-            bajp bajpVar = k;
-            if (bajpVar.c && (str2 = bajpVar.d) != null && !errorReport.b.equals(str2)) {
+            bcnl bcnlVar = k;
+            if (bcnlVar.c && (str2 = bcnlVar.d) != null && !errorReport.b.equals(str2)) {
                 ae(129, errorReport);
             }
         }
-        if (bajzVar == null) {
-            bajzVar2 = null;
+        if (bcnvVar == null) {
+            bcnvVar2 = null;
         } else {
-            if (bajzVar.c && !k.c && ab(errorReport)) {
+            if (bcnvVar.c && !k.c && ab(errorReport)) {
                 ae(128, errorReport);
-                bajp bajpVar2 = k;
+                bcnl bcnlVar2 = k;
                 String str3 = errorReport.b;
-                bajpVar2.d = str3;
-                bakl baklVar = new bakl();
+                bcnlVar2.d = str3;
+                bcoh bcohVar = new bcoh();
                 Bundle bundle = new Bundle();
                 bundle.putCharSequence("description", str3);
-                baklVar.setArguments(bundle);
-                baklVar.show(getSupportFragmentManager(), "junkDialog");
-                if (balkVar != null) {
-                    balkVar.dismiss();
+                bcohVar.setArguments(bundle);
+                bcohVar.show(getSupportFragmentManager(), "junkDialog");
+                if (bcpgVar != null) {
+                    bcpgVar.dismiss();
                 }
                 k.c = true;
                 return;
             }
-            bajzVar2 = bajzVar;
+            bcnvVar2 = bcnvVar;
         }
-        if (!ac(errorReport) || bajzVar2 == null || (biquVar = bajzVar2.b) == null || (str = bajzVar2.a) == null) {
+        if (!ac(errorReport) || bcnvVar2 == null || (bkvjVar = bcnvVar2.b) == null || (str = bcnvVar2.a) == null) {
             errorReport.ab = false;
             errorReport.H = true;
-            baln.f(errorReport, this);
+            bcpj.f(errorReport, this);
             f(errorReport, true);
             return;
         }
-        if (balkVar != null) {
-            balkVar.dismiss();
+        if (bcpgVar != null) {
+            bcpgVar.dismiss();
         }
         errorReport.ab = true;
         errorReport.H = false;
-        o = biquVar;
-        balv balvVar = new balv();
+        o = bkvjVar;
+        bcpr bcprVar = new bcpr();
         Bundle bundle2 = new Bundle();
-        bundle2.putCharSequence("help_response_title", biquVar.f);
+        bundle2.putCharSequence("help_response_title", bkvjVar.f);
         bundle2.putCharSequence("help_response_snippet", str);
-        if (bivk.b(fnpp.c())) {
-            bundle2.putCharSequence("help_response_prediction_id", biquVar.c);
-            bundle2.putCharSequence("help_response_reporting_id", biquVar.d);
+        if (bkzz.b(fqhy.c())) {
+            bundle2.putCharSequence("help_response_prediction_id", bkvjVar.c);
+            bundle2.putCharSequence("help_response_reporting_id", bkvjVar.d);
         }
-        balvVar.setArguments(bundle2);
-        balvVar.setCancelable(false);
-        balvVar.show(getSupportFragmentManager(), "suggestionDialog");
+        bcprVar.setArguments(bundle2);
+        bcprVar.setCancelable(false);
+        bcprVar.show(getSupportFragmentManager(), "suggestionDialog");
         String str4 = errorReport.b;
-        biqu biquVar2 = o;
-        String str5 = biquVar2.g;
-        String str6 = biquVar2.c;
-        String str7 = biquVar2.d;
+        bkvj bkvjVar2 = o;
+        String str5 = bkvjVar2.g;
+        String str6 = bkvjVar2.c;
+        String str7 = bkvjVar2.d;
         if (errorReport == null) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 3591)).x("ErrorReport is required to populate MetricsData.");
+            ((eluo) ((eluo) j.i()).ai((char) 3597)).x("ErrorReport is required to populate MetricsData.");
         } else {
             Account account = TextUtils.isEmpty(this.v) ? null : new Account(this.v, "com.google");
-            asot asotVar = baoo.a;
-            if (bivk.b(fnpp.d()) && bivk.b(fonb.d())) {
+            ausn ausnVar = bcsk.a;
+            if (bkzz.b(fqhy.d()) && bkzz.b(frfu.d())) {
                 if (TextUtils.isEmpty(str6) || TextUtils.isEmpty(str7)) {
-                    ((ejhf) ((ejhf) baoo.a.i()).ah(3682)).P("Trying to log MoltronInteraction for ShownFeedbackSuggestion with predictionId: %s, reportingId: %s. Falling back to old metric format.", str6, str7);
+                    ((eluo) ((eluo) bcsk.a.i()).ai(3688)).P("Trying to log MoltronInteraction for ShownFeedbackSuggestion with predictionId: %s, reportingId: %s. Falling back to old metric format.", str6, str7);
                 } else {
-                    baoo.h(this, errorReport, 43, account, str5, str4, str6, str7, 2);
+                    bcsk.h(this, errorReport, 43, account, str5, str4, str6, str7, 2);
                 }
             }
-            baoo.g(this, errorReport, 43, account, str5, str4);
+            bcsk.g(this, errorReport, 43, account, str5, str4);
         }
         f(errorReport, false);
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final void L(ErrorReport errorReport) {
-        bajp bajpVar = k;
-        if (bajpVar != null) {
+        bcnl bcnlVar = k;
+        if (bcnlVar != null) {
             Bundle bundle = new Bundle();
-            bundle.putString("feedbackUserCtlConsent", String.valueOf(bajpVar.h.S()));
-            bajpVar.l.b(bundle, false);
+            bundle.putString("feedbackUserCtlConsent", String.valueOf(bcnlVar.h.S()));
+            bcnlVar.l.b(bundle, false);
         }
-        if (aspy.b(this) && (ab(errorReport) || ac(errorReport))) {
-            n = bajx.b(errorReport, this);
-            AsyncTask a = bakb.a(this, errorReport);
+        if (auts.b(this) && (ab(errorReport) || ac(errorReport))) {
+            n = bcnt.b(errorReport, this);
+            AsyncTask a = bcnx.a(this, errorReport);
             if (a != null) {
-                asng.F(a, n);
+                aura.F(a, n);
                 return;
             }
         }
-        baln.f(errorReport, this);
+        bcpj.f(errorReport, this);
         f(errorReport, true);
     }
 
     public final void M(ErrorReport errorReport, boolean z) {
-        if (aspy.b(this) && bajx.e(errorReport)) {
+        if (auts.b(this) && bcnt.e(errorReport)) {
             FeedbackAsyncChimeraService.c(this, errorReport);
         } else {
-            new baln(this, errorReport).start();
+            new bcpj(this, errorReport).start();
         }
         if (z) {
-            if (!bakg.c(errorReport)) {
+            if (!bcoc.c(errorReport)) {
                 p();
             } else if (k != null) {
-                bama.f();
+                bcpw.f();
             }
         }
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final void N(boolean z) {
-        bald baldVar = (bald) this.r;
-        baldVar.y(R.id.gf_progress).setVisibility(true != z ? 4 : 0);
-        baldVar.y(R.id.gf_feedback_view).setVisibility(true != z ? 0 : 4);
+        bcoz bcozVar = (bcoz) this.r;
+        bcozVar.y(R.id.gf_progress).setVisibility(true != z ? 4 : 0);
+        bcozVar.y(R.id.gf_feedback_view).setVisibility(true != z ? 0 : 4);
     }
 
     public final void O(Intent intent) {
         this.t = true;
-        bald.a = false;
-        bald baldVar = new bald();
+        bcoz.a = false;
+        bcoz bcozVar = new bcoz();
         Bundle bundle = new Bundle();
         bundle.putParcelable("extra_intent", intent);
-        baldVar.setArguments(bundle);
-        this.r = baldVar;
+        bcozVar.setArguments(bundle);
+        this.r = bcozVar;
         bp bpVar = new bp(getSupportFragmentManager());
         if (getSupportFragmentManager().h("feedback_fragment") != null) {
             bpVar.z(R.id.feedback_content, this.r, "feedback_fragment");
@@ -964,82 +962,82 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         String b;
         Intent intent = getIntent();
         ErrorReport w = w(intent);
-        if (w != null && (b = baox.b((str = w.a.packageName), fnnl.o())) != null) {
-            if (baox.a(getPackageManager().getPackageInfo(str, 0).versionName, b) <= 0) {
+        if (w != null && (b = bcst.b((str = w.a.packageName), fqfu.o())) != null) {
+            if (bcst.a(getPackageManager().getPackageInfo(str, 0).versionName, b) <= 0) {
                 ae(119, w);
                 ErrorReport w2 = w(intent);
-                new bamg(new baio(this, w2, intent), w2).show(getSupportFragmentManager(), "UpgradeDialog");
-                bivj.a(this.B, this);
+                new bcqc(new bcmk(this, w2, intent), w2).show(getSupportFragmentManager(), "UpgradeDialog");
+                bkzy.a(this.B, this);
             }
         }
         ae(8, w);
         String stringExtra = intent.getStringExtra("com.android.feedback.SAFEPARCELABLE_SESSION_ID");
         this.z = stringExtra;
         if (!TextUtils.isEmpty(stringExtra)) {
-            this.E = new baiq(this, intent);
-            asiu.a().d(this, new Intent().setClassName(this, "com.google.android.gms.feedback.FeedbackAsyncService"), this.E, 1);
-        } else if (bakg.c(w)) {
+            this.E = new bcmm(this, intent);
+            aumo.a().d(this, new Intent().setClassName(this, "com.google.android.gms.feedback.FeedbackAsyncService"), this.E, 1);
+        } else if (bcoc.c(w)) {
             ao(intent, false);
         } else {
             O(intent);
         }
-        bivj.a(this.B, this);
+        bkzy.a(this.B, this);
     }
 
-    public final void Q(bajp bajpVar, boolean z) {
-        if (bajpVar.x()) {
-            M(bajpVar.b(), z);
+    public final void Q(bcnl bcnlVar, boolean z) {
+        if (bcnlVar.x()) {
+            M(bcnlVar.b(), z);
         } else {
-            new byhr(Looper.getMainLooper()).postDelayed(new baiu(this, bajpVar, z), fnnl.e());
+            new caqj(Looper.getMainLooper()).postDelayed(new bcmq(this, bcnlVar, z), fqfu.e());
         }
     }
 
     public final boolean R() {
-        return this.w && fnnl.p();
+        return this.w && fqfu.p();
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean S() {
-        return ((CheckBox) ((bald) this.r).y(R.id.gf_email_consent_check)).isChecked();
+        return ((CheckBox) ((bcoz) this.r).y(R.id.gf_email_consent_check)).isChecked();
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean T() {
-        bajb bajbVar = this.r;
-        if (!bivk.a(fnqe.c())) {
-            return ((CheckBox) ((bald) bajbVar).y(R.id.gf_include_screenshot)).isChecked();
+        bcmx bcmxVar = this.r;
+        if (!bkzz.a(fqin.c())) {
+            return ((CheckBox) ((bcoz) bcmxVar).y(R.id.gf_include_screenshot)).isChecked();
         }
-        CheckBox checkBox = (CheckBox) ((bald) bajbVar).y(R.id.gf_include_screenshot);
+        CheckBox checkBox = (CheckBox) ((bcoz) bcmxVar).y(R.id.gf_include_screenshot);
         if (checkBox == null || checkBox.getVisibility() != 0) {
             return false;
         }
         return checkBox.isChecked();
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean U() {
-        bajb bajbVar = this.r;
-        if (!bivk.a(fnqe.c())) {
-            return ((CheckBox) ((bald) bajbVar).y(R.id.gf_include_logs)).isChecked();
+        bcmx bcmxVar = this.r;
+        if (!bkzz.a(fqin.c())) {
+            return ((CheckBox) ((bcoz) bcmxVar).y(R.id.gf_include_logs)).isChecked();
         }
-        CheckBox checkBox = (CheckBox) ((bald) bajbVar).y(R.id.gf_include_logs);
+        CheckBox checkBox = (CheckBox) ((bcoz) bcmxVar).y(R.id.gf_include_logs);
         if (checkBox == null || checkBox.getVisibility() != 0) {
             return false;
         }
         return checkBox.isChecked();
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean V() {
-        return bald.a;
+        return bcoz.a;
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean X() {
-        return bakg.c(w(getIntent()));
+        return bcoc.c(w(getIntent()));
     }
 
-    @Override // defpackage.baja
+    @Override // defpackage.bcmw
     public final void Z(int i) {
         if (x() == null) {
             return;
@@ -1061,90 +1059,90 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         }
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final Activity a() {
         return getContainerActivity();
     }
 
-    @Override // defpackage.baja
+    @Override // defpackage.bcmw
     public final void aa() {
-        bajp bajpVar = k;
-        if (bajpVar == null) {
+        bcnl bcnlVar = k;
+        if (bcnlVar == null) {
             return;
         }
-        bajpVar.q();
+        bcnlVar.q();
     }
 
-    @Override // defpackage.baka
-    public final void ad(balk balkVar) {
-        balkVar.show(getSupportFragmentManager(), "progress_dialog");
+    @Override // defpackage.bcnw
+    public final void ad(bcpg bcpgVar) {
+        bcpgVar.show(getSupportFragmentManager(), "progress_dialog");
     }
 
     public final void ae(int i, ErrorReport errorReport) {
         if (errorReport == null) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 3590)).x("ErrorReport is required to populate MetricsData.");
+            ((eluo) ((eluo) j.i()).ai((char) 3596)).x("ErrorReport is required to populate MetricsData.");
         } else {
-            baoo.g(this, errorReport, i, TextUtils.isEmpty(this.v) ? null : new Account(this.v, "com.google"), null, null);
+            bcsk.g(this, errorReport, i, TextUtils.isEmpty(this.v) ? null : new Account(this.v, "com.google"), null, null);
         }
     }
 
-    public final void ai(ErrorReport errorReport, int i, epnk epnkVar) {
-        if (!fnsj.d()) {
-            baoo.j(this, errorReport, fwac.p, 0, i);
+    public final void ai(ErrorReport errorReport, int i, esbj esbjVar) {
+        if (!fqks.d()) {
+            bcsk.j(this, errorReport, fywe.p, 0, i);
             return;
         }
-        baog baogVar = new baog();
-        baogVar.a = x();
-        baogVar.b(fwac.p);
-        baogVar.m = i;
-        baogVar.h = Integer.valueOf(balf.a(epnkVar.c));
-        baogVar.i = Integer.valueOf(balf.a(epnkVar.d));
-        baoo.b(this, baogVar.a());
+        bcsc bcscVar = new bcsc();
+        bcscVar.a = x();
+        bcscVar.b(fywe.p);
+        bcscVar.m = i;
+        bcscVar.h = Integer.valueOf(bcpb.a(esbjVar.c));
+        bcscVar.i = Integer.valueOf(bcpb.a(esbjVar.d));
+        bcsk.b(this, bcscVar.a());
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void d() {
         getWindow().getDecorView().setBackgroundColor(q());
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void e() {
         x();
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void f(ErrorReport errorReport, boolean z) {
-        if (bivk.b(fnoh.c())) {
-            this.B.execute(new bait(this, errorReport, z));
+        if (bkzz.b(fqgq.c())) {
+            this.B.execute(new bcmp(this, errorReport, z));
             return;
         }
-        bajp bajpVar = k;
-        if (bajpVar == null || !bajpVar.u()) {
+        bcnl bcnlVar = k;
+        if (bcnlVar == null || !bcnlVar.u()) {
             M(errorReport, z);
         } else {
-            Q(bajpVar, z);
+            Q(bcnlVar, z);
         }
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void g(String str, ErrorReport errorReport) {
-        if (!fnps.c() || !str.equals(fnnl.n())) {
-            bale.c(getContainerActivity(), str, errorReport);
+        if (!fqib.c() || !str.equals(fqfu.n())) {
+            bcpa.c(getContainerActivity(), str, errorReport);
             return;
         }
         try {
-            dvyx.b(this, this.D, errorReport != null ? errorReport.B : "");
-        } catch (dvyt unused) {
-            bale.c(getContainerActivity(), fnnl.n(), errorReport);
+            dyky.b(this, this.D, errorReport != null ? errorReport.B : "");
+        } catch (dyku unused) {
+            bcpa.c(getContainerActivity(), fqfu.n(), errorReport);
         }
     }
 
-    @Override // defpackage.baja, defpackage.bagv
+    @Override // defpackage.bcmw, defpackage.bckr
     public final void i() {
         startActivity(new Intent().setClassName(this, "com.google.android.gms.feedback.PreviewActivity"));
     }
 
-    @Override // defpackage.baja, defpackage.bagv
+    @Override // defpackage.bcmw, defpackage.bckr
     public final void j() {
         ThemeSettings themeSettings;
         Intent intent = new Intent();
@@ -1152,7 +1150,7 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
             intent.setClassName(this, "com.google.android.gms.feedback.AnnotateScreenshotActivity");
             ErrorReport x = x();
             if (x != null && (themeSettings = x.Y) != null && themeSettings.b != 0) {
-                intent.putExtra("EXTRA_ACTION_BAR_COLOR_RES_ID", bipr.a(themeSettings));
+                intent.putExtra("EXTRA_ACTION_BAR_COLOR_RES_ID", bkug.a(themeSettings));
             }
         } else {
             intent.setClassName(this, "com.google.android.gms.feedback.PreviewScreenshotActivity");
@@ -1160,32 +1158,32 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         startActivity(intent);
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void k() {
-        startActivity(bale.a(this));
+        startActivity(bcpa.a(this));
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void l() {
-        startActivity(bale.b(this));
+        startActivity(bcpa.b(this));
     }
 
-    @Override // defpackage.bagv
-    public final void m(Integer num, Integer num2, eitj eitjVar) {
-        rbj.d(num, num2, eitjVar);
+    @Override // defpackage.bckr
+    public final void m(Integer num, Integer num2, elgo elgoVar) {
+        sun.d(num, num2, elgoVar);
     }
 
-    @Override // defpackage.bagv, defpackage.bajq
+    @Override // defpackage.bckr, defpackage.bcnm
     public final void n(Runnable runnable) {
         runOnUiThread(runnable);
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void o() {
         getWindow().getDecorView().setBackgroundColor(r());
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i == 0 && i2 == -1) {
@@ -1193,19 +1191,19 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         }
     }
 
-    @Override // defpackage.qet, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         super.invalidateOptionsMenu();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        bakg.b();
+        bcoc.b();
         Intent intent = getIntent();
         ErrorReport w = w(intent);
-        if (Build.VERSION.SDK_INT >= 26 && ar() && fnth.c()) {
+        if (Build.VERSION.SDK_INT >= 26 && ar() && fqlq.c()) {
             KeyguardManager keyguardManager = (KeyguardManager) getSystemService("keyguard");
             this.C = keyguardManager;
             if (keyguardManager != null && keyguardManager.isKeyguardLocked()) {
@@ -1213,7 +1211,7 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
                 return;
             }
         }
-        if (bakg.c(w)) {
+        if (bcoc.c(w)) {
             k = y(intent.getParcelableExtra("com.android.feedback.SCREENSHOT_EXTRA"), w(intent), intent.hasExtra("ASYNC_PSD_START_TICK_NANOS") ? Long.valueOf(intent.getLongExtra("ASYNC_PSD_START_TICK_NANOS", -1L)) : null);
             getWindow().setSoftInputMode(16);
             getWindow().setFlags(JGCastService.FLAG_USE_TDLS, 0);
@@ -1221,69 +1219,69 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
             if (Build.VERSION.SDK_INT != 26) {
                 setRequestedOrientation(1);
             }
-            if (fnvm.c()) {
-                bivs.b(this, w, R.style.DynamicUI_Theme_Transparent_Light_GM3Expressive, R.style.DynamicUI_Theme_Transparent_Dark_GM3Expressive, R.style.DynamicUI_Theme_Transparent_GM3Expressive);
+            if (fqnv.c()) {
+                blah.b(this, w, R.style.DynamicUI_Theme_Transparent_Light_GM3Expressive, R.style.DynamicUI_Theme_Transparent_Dark_GM3Expressive, R.style.DynamicUI_Theme_Transparent_GM3Expressive);
             } else {
-                bivs.b(this, w, R.style.DynamicUI_Theme_Transparent_Light, R.style.DynamicUI_Theme_Transparent_Dark, R.style.DynamicUI_Theme_Transparent);
+                blah.b(this, w, R.style.DynamicUI_Theme_Transparent_Light, R.style.DynamicUI_Theme_Transparent_Dark, R.style.DynamicUI_Theme_Transparent);
             }
-            if (w.an && fnob.c()) {
-                int i = eble.a;
+            if (w.an && fqgk.c()) {
+                int i = edxt.a;
             }
         } else {
             getWindow().setSoftInputMode(34);
-            bivs.b(this, w, R.style.gf_LightActivityStyle, R.style.gf_DarkActivityStyle, R.style.gf_DayNightActivityStyle);
+            blah.b(this, w, R.style.gf_LightActivityStyle, R.style.gf_DarkActivityStyle, R.style.gf_DayNightActivityStyle);
         }
-        baoo.d(this, w, TextUtils.isEmpty(this.v) ? null : new Account(this.v, "com.google"));
-        if (!bakg.c(w)) {
-            bipr.b(this, hy(), true);
+        bcsk.d(this, w, TextUtils.isEmpty(this.v) ? null : new Account(this.v, "com.google"));
+        if (!bcoc.c(w)) {
+            bkug.b(this, hO(), true);
         }
-        bama.b(this);
+        bcpw.b(this);
         if (w.E) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 3592)).x("Invalid request for feedback invocation. This action is not permitted");
+            ((eluo) ((eluo) j.i()).ai((char) 3598)).x("Invalid request for feedback invocation. This action is not permitted");
             finish();
             return;
         }
-        if (fnpd.c() && getPackageManager().hasSystemFeature("android.software.communal_mode")) {
+        if (fqhm.c() && getPackageManager().hasSystemFeature("android.software.communal_mode")) {
             getWindow().addFlags(524416);
         }
         setContentView(s());
-        baoo.j(this, w(intent), fwac.b, 0, 0);
+        bcsk.j(this, w(intent), fywe.b, 0, 0);
         an(intent);
-        if (!aspy.b(this) || !bakg.c(w)) {
+        if (!auts.b(this) || !bcoc.c(w)) {
             P();
         } else if (as(ag(w.a.packageName, w.P))) {
-            ai(w, fwaf.c, aj(w));
+            ai(w, fywh.c, aj(w));
             P();
         } else {
             String str = w.a.packageName;
-            bagt a = bagq.a(this);
+            bckp a = bckm.a(this);
             ErrorReport w2 = w(getIntent());
             WeakReference weakReference = new WeakReference(this);
-            arts t = t();
-            fjtb ak = ak(str, w2.P);
+            atwh t = t();
+            fmiy ak = ak(str, w2.P);
             ag(str, w2.P);
-            asng.F(new baiv(weakReference, t, a, ak, w2), new Void[0]);
+            aura.F(new bcmr(weakReference, t, a, ak, w2), new Void[0]);
         }
-        if (fnvs.c()) {
-            baok.a(this, aseu.FEEDBACK_ACTIVITY);
+        if (fqob.c()) {
+            bcsg.a(this, auio.FEEDBACK_ACTIVITY);
         }
-        this.D = registerForActivityResult(new acl(), new abt() { // from class: baij
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
-                asot asotVar = FeedbackChimeraActivity.j;
+        this.D = registerForActivityResult(new acq(), new aby() { // from class: bcmf
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
+                ausn ausnVar = FeedbackChimeraActivity.j;
             }
         });
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_action_bar, menu);
         MenuItem findItem = menu.findItem(R.id.common_send);
-        int a = TextUtils.isEmpty(A()) ? bivs.a(this, R.attr.gf_disabledIconColor) : bivs.a(this, R.attr.gf_primaryBlueColor);
-        int i = bivr.a;
+        int a = TextUtils.isEmpty(A()) ? blah.a(this, R.attr.gf_disabledIconColor) : blah.a(this, R.attr.gf_primaryBlueColor);
+        int i = blag.a;
         Resources resources = getResources();
-        Drawable a2 = bivr.a(getDrawable(2131233483), resources);
-        Drawable a3 = bivr.a(a2, resources);
+        Drawable a2 = blag.a(getDrawable(2131233549), resources);
+        Drawable a3 = blag.a(a2, resources);
         a3.setAlpha(100);
         Bitmap createBitmap = Bitmap.createBitmap(a3.getIntrinsicWidth(), a3.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
         a3.setBounds(0, 0, a3.getIntrinsicWidth(), a3.getIntrinsicHeight());
@@ -1292,58 +1290,58 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         StateListDrawable stateListDrawable = new StateListDrawable();
         stateListDrawable.addState(new int[]{android.R.attr.state_enabled}, a2);
         stateListDrawable.addState(StateSet.WILD_CARD, bitmapDrawable);
-        bivr.s(stateListDrawable, a);
+        blag.s(stateListDrawable, a);
         findItem.setIcon(stateListDrawable);
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
-        bama.d(this);
+        bcpw.d(this);
         l = null;
         q = false;
         m = null;
         k = null;
         if (this.y != null) {
-            asiu.a().b(this, this.E);
+            aumo.a().b(this, this.E);
         }
         super.onDestroy();
     }
 
-    @Override // defpackage.qet, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onKeyDown(int i, KeyEvent keyEvent) {
-        bajp bajpVar;
+        bcnl bcnlVar;
         if (i != 4) {
             return super.onKeyDown(i, keyEvent);
         }
-        if (!bakg.c(w(getIntent())) || (bajpVar = k) == null || bajpVar.w() || p == null) {
+        if (!bcoc.c(w(getIntent())) || (bcnlVar = k) == null || bcnlVar.w() || p == null) {
             p();
             return true;
         }
-        rbj.b();
+        sun.b();
         return true;
     }
 
     @Override // android.view.MenuItem.OnMenuItemClickListener
     public final boolean onMenuItemClick(MenuItem menuItem) {
-        if (!bajx.e(x())) {
+        if (!bcnt.e(x())) {
             return false;
         }
         ip ipVar = new ip(this);
         ipVar.setPositiveButton(R.string.common_ok, null);
-        ipVar.m(R.string.gf_invalid_description_text);
+        ipVar.o(R.string.gf_invalid_description_text);
         ipVar.create().show();
         return true;
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         if (aq(intent)) {
             return;
         }
-        baoo.j(this, w(intent), fwac.b, 0, 0);
+        bcsk.j(this, w(intent), fywe.b, 0, 0);
         an(intent);
-        bakg.b();
+        bcoc.b();
         k = null;
         l = null;
         q = false;
@@ -1351,7 +1349,7 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         m = null;
         ErrorReport w = w(intent);
         super.onNewIntent(intent);
-        if (Build.VERSION.SDK_INT >= 26 && ar() && fnth.c()) {
+        if (Build.VERSION.SDK_INT >= 26 && ar() && fqlq.c()) {
             if (this.C == null) {
                 this.C = (KeyguardManager) getSystemService("keyguard");
             }
@@ -1363,15 +1361,15 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         }
         if (w.E) {
             k = y(intent.getParcelableExtra("com.android.feedback.SCREENSHOT_EXTRA"), w, intent.hasExtra("ASYNC_PSD_START_TICK_NANOS") ? Long.valueOf(intent.getLongExtra("ASYNC_PSD_START_TICK_NANOS", -1L)) : null);
-        } else if (!bakg.c(w)) {
+        } else if (!bcoc.c(w)) {
             O(intent);
         } else {
             k = y(intent.getParcelableExtra("com.android.feedback.SCREENSHOT_EXTRA"), w(intent), intent.hasExtra("ASYNC_PSD_START_TICK_NANOS") ? Long.valueOf(intent.getLongExtra("ASYNC_PSD_START_TICK_NANOS", -1L)) : null);
-            ao(intent, fnro.a.a().b());
+            ao(intent, fqjx.a.lK().b());
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (TextUtils.isEmpty(this.z)) {
             if (k != null) {
@@ -1383,52 +1381,52 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
                     p();
                     return true;
                 }
-                baoo.j(this, x(), fwac.e, 0, 0);
+                bcsk.j(this, x(), fywe.e, 0, 0);
                 View findViewById = findViewById(R.id.gf_issue_description);
                 if (findViewById != null) {
                     ((InputMethodManager) getSystemService("input_method")).hideSoftInputFromWindow(findViewById.getWindowToken(), 0);
                 }
-                final bajp bajpVar = k;
-                bajpVar.q();
-                if (!bajpVar.h.V()) {
-                    String[] strArr = bajpVar.f;
+                final bcnl bcnlVar = k;
+                bcnlVar.q();
+                if (!bcnlVar.h.V()) {
+                    String[] strArr = bcnlVar.f;
                     if (strArr.length > 0) {
                         final String str = strArr[0];
-                        ebna ebnaVar = new ebna(bajpVar.h.b(), R.style.ThemeOverlay_Feedback_MaterialAlertDialog);
-                        ebnaVar.z(2131231773);
-                        ebnaVar.M(R.string.gf_send_feedback_as_Googler_title);
-                        ebnaVar.C(Html.fromHtml(bajpVar.h.b().getString(R.string.gf_send_feedback_as_Googler_description, str)));
-                        ebnaVar.K(R.string.gf_yes_send_as_Googler, new DialogInterface.OnClickListener() { // from class: bajj
+                        edzp edzpVar = new edzp(bcnlVar.h.b(), R.style.ThemeOverlay_Feedback_MaterialAlertDialog);
+                        edzpVar.z(2131231779);
+                        edzpVar.M(R.string.gf_send_feedback_as_Googler_title);
+                        edzpVar.C(Html.fromHtml(bcnlVar.h.b().getString(R.string.gf_send_feedback_as_Googler_description, str)));
+                        edzpVar.K(R.string.gf_yes_send_as_Googler, new DialogInterface.OnClickListener() { // from class: bcnf
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i) {
                                 dialogInterface.dismiss();
-                                bajp bajpVar2 = bajp.this;
-                                bajpVar2.b().B = str;
-                                bajpVar2.h.L(bajpVar2.b());
+                                bcnl bcnlVar2 = bcnl.this;
+                                bcnlVar2.b().B = str;
+                                bcnlVar2.h.L(bcnlVar2.b());
                             }
                         });
-                        ebnaVar.E(R.string.common_no, new DialogInterface.OnClickListener() { // from class: bajk
+                        edzpVar.E(R.string.common_no, new DialogInterface.OnClickListener() { // from class: bcng
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i) {
                                 dialogInterface.dismiss();
-                                bajp bajpVar2 = bajp.this;
-                                bajpVar2.h.L(bajpVar2.b());
+                                bcnl bcnlVar2 = bcnl.this;
+                                bcnlVar2.h.L(bcnlVar2.b());
                             }
                         });
-                        ebnaVar.create().show();
+                        edzpVar.create().show();
                     }
                 }
-                bajpVar.h.L(bajpVar.b());
+                bcnlVar.h.L(bcnlVar.b());
             }
         } else if (menuItem.getItemId() == R.id.common_send) {
-            this.B.execute(new Runnable() { // from class: baih
+            this.B.execute(new Runnable() { // from class: bcmd
                 @Override // java.lang.Runnable
                 public final void run() {
                     FeedbackChimeraActivity feedbackChimeraActivity = FeedbackChimeraActivity.this;
                     try {
                         feedbackChimeraActivity.y.c(feedbackChimeraActivity.z);
                     } catch (RemoteException e) {
-                        ((ejhf) ((ejhf) FeedbackChimeraActivity.j.i()).ah((char) 3588)).B("Log message : %s", e.getMessage());
+                        ((eluo) ((eluo) FeedbackChimeraActivity.j.i()).ai((char) 3594)).B("Log message : %s", e.getMessage());
                     }
                 }
             });
@@ -1436,69 +1434,69 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem item = menu.getItem(0);
-        if (!bajx.e(x()) || !TextUtils.isEmpty(A())) {
+        if (!bcnt.e(x()) || !TextUtils.isEmpty(A())) {
             return true;
         }
         item.setOnMenuItemClickListener(this);
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onRestoreInstanceState(Bundle bundle) {
         super.onRestoreInstanceState(bundle);
-        bakg.b();
-        bajp bajpVar = k;
-        if (bajpVar != null) {
-            bajpVar.j(bundle);
+        bcoc.b();
+        bcnl bcnlVar = k;
+        if (bcnlVar != null) {
+            bcnlVar.j(bundle);
             return;
         }
-        k = new bajp(this, bundle);
-        if (!bakg.c(w(getIntent()))) {
+        k = new bcnl(this, bundle);
+        if (!bcoc.c(w(getIntent()))) {
             this.t = true;
         }
         k.n();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        bajp bajpVar = k;
-        if (bajpVar != null) {
-            bajpVar.k(bundle);
+        bcnl bcnlVar = k;
+        if (bcnlVar != null) {
+            bcnlVar.k(bundle);
         }
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStop() {
         super.onStop();
-        bajp bajpVar = k;
-        if (bajpVar != null) {
-            bajpVar.l();
+        bcnl bcnlVar = k;
+        if (bcnlVar != null) {
+            bcnlVar.l();
         }
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void p() {
-        bajp bajpVar = k;
-        if (bajpVar != null) {
-            bajpVar.l();
+        bcnl bcnlVar = k;
+        if (bcnlVar != null) {
+            bcnlVar.l();
         }
-        if (!bakg.c(w(getIntent())) || this.x == null) {
+        if (!bcoc.c(w(getIntent())) || this.x == null) {
             finish();
             return;
         }
         Animation loadAnimation = AnimationUtils.loadAnimation(this, R.anim.dui_slide_down);
         loadAnimation.setInterpolator(this, android.R.interpolator.accelerate_decelerate);
         this.x.startAnimation(loadAnimation);
-        loadAnimation.setAnimationListener(new bais(this));
+        loadAnimation.setAnimationListener(new bcmo(this));
         D(q(), r(), 500);
     }
 
     public final int q() {
-        return imw.f(getColor(R.color.gm3_ref_palette_black), 102);
+        return ion.f(getColor(R.color.gm3_ref_palette_black), 102);
     }
 
     public final int r() {
@@ -1512,22 +1510,22 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
         return frameLayout;
     }
 
-    final arts t() {
-        arts artsVar = new arts();
-        artsVar.d = getPackageName();
-        artsVar.e = getPackageName();
-        artsVar.a = getApplicationInfo().uid;
-        return artsVar;
+    final atwh t() {
+        atwh atwhVar = new atwh();
+        atwhVar.d = getPackageName();
+        atwhVar.e = getPackageName();
+        atwhVar.a = getApplicationInfo().uid;
+        return atwhVar;
     }
 
-    public final arts u() {
+    public final atwh u() {
         String str = null;
         Account account = TextUtils.isEmpty(this.v) ? null : new Account(this.v, "com.google");
-        arts t = t();
+        atwh t = t();
         if (account != null) {
             try {
-                str = uoh.f(this, account, "oauth2:https://www.googleapis.com/auth/supportcontent");
-            } catch (IOException | unx unused) {
+                str = wkg.f(this, account, "oauth2:https://www.googleapis.com/auth/supportcontent");
+            } catch (IOException | wjw unused) {
             }
             if (str != null) {
                 t.n("auth_token", str);
@@ -1550,17 +1548,17 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
                 }
             }
         }
-        bama.i = errorReport.Z;
+        bcpw.i = errorReport.Z;
         if (TextUtils.isEmpty(errorReport.ag)) {
-            errorReport.ag = bapk.c();
+            errorReport.ag = bctg.c();
         }
         return errorReport;
     }
 
-    final bajp y(Parcelable parcelable, ErrorReport errorReport, Long l2) {
+    final bcnl y(Parcelable parcelable, ErrorReport errorReport, Long l2) {
         Screenshot c;
         Screenshot screenshot = null;
-        if (bajx.e(errorReport)) {
+        if (bcnt.e(errorReport)) {
             try {
                 ApplicationInfo applicationInfo = getPackageManager().getApplicationInfo(errorReport.a.packageName, 0);
                 Bitmap bitmap = errorReport.af;
@@ -1587,32 +1585,32 @@ public class FeedbackChimeraActivity extends qet implements MenuItem.OnMenuItemC
                 return null;
             }
         }
-        bajp bajpVar = new bajp(this, errorReport, screenshot, l2);
-        bajpVar.n();
-        return bajpVar;
+        bcnl bcnlVar = new bcnl(this, errorReport, screenshot, l2);
+        bcnlVar.n();
+        return bcnlVar;
     }
 
-    @Override // defpackage.baka
-    public final ensv z() {
+    @Override // defpackage.bcnw
+    public final eqgo z() {
         return this.B;
     }
 
-    @Override // defpackage.bagv, defpackage.baka, defpackage.bajq
+    @Override // defpackage.bckr, defpackage.bcnw, defpackage.bcnm
     public final Context b() {
         return this;
     }
 
-    @Override // defpackage.bagv
-    public final baka c() {
+    @Override // defpackage.bckr
+    public final bcnw c() {
         return this;
     }
 
-    @Override // defpackage.bajq
-    public final bagv v() {
+    @Override // defpackage.bcnm
+    public final bckr v() {
         return this;
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void h(String str) {
     }
 }

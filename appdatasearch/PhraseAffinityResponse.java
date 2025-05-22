@@ -3,14 +3,14 @@ package com.google.android.gms.appdatasearch;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.trt;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.vnt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class PhraseAffinityResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new trt();
+    public static final Parcelable.Creator CREATOR = new vnt();
     public final String a;
     final CorpusId[] b;
     final int[] c;
@@ -24,11 +24,11 @@ public class PhraseAffinityResponse extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.J(parcel, 2, this.b, i);
-        arxc.p(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.J(parcel, 2, this.b, i);
+        atzr.p(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 
     public PhraseAffinityResponse(String str) {
@@ -42,6 +42,6 @@ public class PhraseAffinityResponse extends AbstractSafeParcelable {
         if (length != 0 && iArr.length % length != 0) {
             z = false;
         }
-        arwm.b(z);
+        atzb.b(z);
     }
 }

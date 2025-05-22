@@ -5,25 +5,25 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.os.Bundle;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.edgl;
-import defpackage.ejhf;
-import defpackage.fkdo;
-import defpackage.qfn;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.eftg;
+import defpackage.eluo;
+import defpackage.fmua;
+import defpackage.ryr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class UnpackingRedirectChimeraActivity extends qfn {
-    private static final asot h = asot.b("UnpackingRedirectAct", asej.AUTH_ACCOUNT_DATA);
+public class UnpackingRedirectChimeraActivity extends ryr {
+    private static final ausn h = ausn.b("UnpackingRedirectAct", auid.AUTH_ACCOUNT_DATA);
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (isFinishing()) {
-            ((ejhf) h.j()).x("Restarted UnpackingRedirectChimeraActivity.");
-            if (fkdo.a.a().y()) {
+            ((eluo) h.j()).x("Restarted UnpackingRedirectChimeraActivity.");
+            if (fmua.a.lK().z()) {
                 return;
             }
         }
@@ -34,11 +34,11 @@ public class UnpackingRedirectChimeraActivity extends qfn {
             if (accountAuthenticatorResponse != null) {
                 intent.putExtra("response", accountAuthenticatorResponse);
             }
-            String p = asng.p(this);
+            String p = aura.p(this);
             if (p != null) {
                 intent.putExtra("caller", p);
             }
-            edgl.a(getIntent(), intent);
+            eftg.a(getIntent(), intent);
             try {
             } catch (IntentSender.SendIntentException e) {
                 e = e;
@@ -49,7 +49,7 @@ public class UnpackingRedirectChimeraActivity extends qfn {
                 return;
             } catch (IntentSender.SendIntentException e2) {
                 e = e2;
-                ((ejhf) ((ejhf) h.i()).s(e)).x("Unable to start unpacked pending intent!");
+                ((eluo) ((eluo) h.i()).s(e)).x("Unable to start unpacked pending intent!");
                 setResult(0);
                 finish();
             }

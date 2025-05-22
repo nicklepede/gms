@@ -8,12 +8,12 @@ import com.google.android.gms.semanticlocation.PeriodSummary;
 import com.google.android.gms.semanticlocation.TimelineMemory;
 import com.google.android.gms.semanticlocation.TimelinePath;
 import com.google.android.gms.semanticlocation.Visit;
-import defpackage.dacm;
+import defpackage.dcmu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class LocationHistorySegment extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dacm();
+    public static final Parcelable.Creator CREATOR = new dcmu();
     public final long a;
     public final long b;
     public final int c;
@@ -46,6 +46,6 @@ public class LocationHistorySegment extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        dacm.a(this, parcel, i);
+        dcmu.a(this, parcel, i);
     }
 }

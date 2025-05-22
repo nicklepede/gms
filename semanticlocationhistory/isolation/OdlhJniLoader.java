@@ -1,28 +1,28 @@
 package com.google.android.gms.semanticlocationhistory.isolation;
 
 import android.content.Context;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asow;
-import defpackage.aspx;
-import defpackage.daza;
-import defpackage.dazb;
-import defpackage.dazc;
-import defpackage.eiig;
-import defpackage.ejhf;
-import defpackage.fmyi;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.ausq;
+import defpackage.autr;
+import defpackage.ddji;
+import defpackage.ddjj;
+import defpackage.ddjk;
+import defpackage.ekvl;
+import defpackage.eluo;
+import defpackage.fpqh;
 import java.lang.Thread;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OdlhJniLoader {
     private boolean d;
-    private static final asot b = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "OdlhJniLoader");
+    private static final ausn b = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "OdlhJniLoader");
     public static final OdlhJniLoader a = new OdlhJniLoader();
     private String c = null;
     private Exception e = null;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class NullNativeProxyReferenceError extends UnsatisfiedLinkError {
         private NullNativeProxyReferenceError() {
         }
@@ -32,9 +32,9 @@ public final class OdlhJniLoader {
 
     private static native void nativeDisconnect();
 
-    public final Object a(dazc dazcVar) {
+    public final Object a(ddjk ddjkVar) {
         try {
-            return dazcVar.a();
+            return ddjkVar.a();
         } catch (NullNativeProxyReferenceError e) {
             Exception exc = this.e;
             if (exc != null) {
@@ -51,7 +51,7 @@ public final class OdlhJniLoader {
     public final void b() {
         synchronized (this) {
             this.e = new Exception();
-            eiig.p(this.c != null);
+            ekvl.q(this.c != null);
             if (this.d) {
                 nativeDisconnect();
             }
@@ -61,7 +61,7 @@ public final class OdlhJniLoader {
     public final boolean c() {
         synchronized (this) {
             this.e = null;
-            eiig.p(this.c != null);
+            ekvl.q(this.c != null);
             if (this.d) {
                 return nativeConnect();
             }
@@ -72,40 +72,40 @@ public final class OdlhJniLoader {
     public final synchronized boolean d(Context context) {
         String str = this.c;
         if (str != null) {
-            ((ejhf) b.h()).B("%s already loaded", str);
+            ((eluo) b.h()).B("%s already loaded", str);
             return true;
         }
-        if (fmyi.a.a().b()) {
-            int i = aspx.a;
-            if (asow.g(context, "odlh_proxy_jni")) {
+        if (fpqh.a.lK().b()) {
+            int i = autr.a;
+            if (ausq.g(context, "odlh_proxy_jni")) {
                 this.c = "odlh_proxy_jni";
                 this.d = true;
-                dazb.d(context);
-                ((ejhf) b.h()).B("Loaded remote proxy library %s", "odlh_proxy_jni");
+                ddjj.d(context);
+                ((eluo) b.h()).B("Loaded remote proxy library %s", "odlh_proxy_jni");
                 return true;
             }
         } else {
-            boolean c = fmyi.c();
-            if (c || fmyi.d()) {
-                String a2 = daza.a(context);
+            boolean c = fpqh.c();
+            if (c || fpqh.d()) {
+                String a2 = ddji.a(context);
                 if (c && a2 != null) {
                     try {
                         System.load(a2);
                         this.c = a2;
                         this.d = false;
-                        ((ejhf) b.h()).B("Loaded ODLH WASM library %s", a2);
+                        ((eluo) b.h()).B("Loaded ODLH WASM library %s", a2);
                         return true;
                     } catch (UnsatisfiedLinkError e) {
-                        ((ejhf) ((ejhf) b.j()).s(e)).B("Failed to load ODLH WASM library %s", a2);
+                        ((eluo) ((eluo) b.j()).s(e)).B("Failed to load ODLH WASM library %s", a2);
                         return false;
                     }
                 }
             }
-            int i2 = aspx.a;
-            if (asow.g(context, "odlh_jni")) {
+            int i2 = autr.a;
+            if (ausq.g(context, "odlh_jni")) {
                 this.c = "odlh_jni";
                 this.d = false;
-                ((ejhf) b.h()).B("Loaded %s library", "odlh_jni");
+                ((eluo) b.h()).B("Loaded %s library", "odlh_jni");
                 return true;
             }
         }

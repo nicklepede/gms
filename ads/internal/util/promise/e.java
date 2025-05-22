@@ -1,10 +1,10 @@
 package com.google.android.gms.ads.internal.util.promise;
 
-import defpackage.enrv;
+import defpackage.eqfo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-final class e implements enrv {
+final class e implements eqfo {
     final /* synthetic */ c a;
     final /* synthetic */ a b;
 
@@ -13,12 +13,12 @@ final class e implements enrv {
         this.b = aVar;
     }
 
-    @Override // defpackage.enrv
+    @Override // defpackage.eqfo
     public final void a(Throwable th) {
         this.b.a();
     }
 
-    @Override // defpackage.enrv
+    @Override // defpackage.eqfo
     public final void b(Object obj) {
         this.a.a(obj);
     }

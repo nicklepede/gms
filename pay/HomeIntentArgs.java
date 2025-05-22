@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctcv;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvma;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class HomeIntentArgs extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctcv();
+    public static final Parcelable.Creator CREATOR = new cvma();
     public boolean a;
     public IntentSource b;
     public HomescreenConfig c;
@@ -26,7 +26,7 @@ public final class HomeIntentArgs extends AbstractSafeParcelable {
         }
         if (obj instanceof HomeIntentArgs) {
             HomeIntentArgs homeIntentArgs = (HomeIntentArgs) obj;
-            if (arwb.b(Boolean.valueOf(this.a), Boolean.valueOf(homeIntentArgs.a)) && arwb.b(this.b, homeIntentArgs.b) && arwb.b(this.c, homeIntentArgs.c) && arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(homeIntentArgs.d))) {
+            if (atyq.b(Boolean.valueOf(this.a), Boolean.valueOf(homeIntentArgs.a)) && atyq.b(this.b, homeIntentArgs.b) && atyq.b(this.c, homeIntentArgs.c) && atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(homeIntentArgs.d))) {
                 return true;
             }
         }
@@ -39,12 +39,12 @@ public final class HomeIntentArgs extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, this.a);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.e(parcel, 4, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, this.a);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.e(parcel, 4, this.d);
+        atzr.c(parcel, a);
     }
 
     public HomeIntentArgs(boolean z, IntentSource intentSource, HomescreenConfig homescreenConfig, boolean z2) {

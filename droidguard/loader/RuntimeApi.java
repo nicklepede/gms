@@ -1,9 +1,9 @@
 package com.google.android.gms.droidguard.loader;
 
 import android.content.Context;
-import defpackage.asng;
+import defpackage.aura;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class RuntimeApi {
     private final Context a;
@@ -20,7 +20,7 @@ public class RuntimeApi {
     }
 
     public String b() {
-        return String.valueOf(asng.e(this.a));
+        return String.valueOf(aura.e(this.a));
     }
 
     public String c() {
@@ -28,7 +28,7 @@ public class RuntimeApi {
     }
 
     public String f() {
-        return String.valueOf(asng.f(this.a));
+        return String.valueOf(aura.f(this.a));
     }
 
     @Deprecated

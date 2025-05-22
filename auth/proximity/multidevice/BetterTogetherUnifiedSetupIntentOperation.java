@@ -10,40 +10,40 @@ import android.text.TextUtils;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.proximity.firstparty.SyncedCryptauthDevice;
-import defpackage.acex;
-import defpackage.acey;
-import defpackage.acez;
-import defpackage.acnd;
-import defpackage.acnr;
-import defpackage.acqe;
-import defpackage.acql;
-import defpackage.acsm;
-import defpackage.anxo;
-import defpackage.arxo;
-import defpackage.asbo;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.dfee;
-import defpackage.eixf;
-import defpackage.esjn;
-import defpackage.flcg;
-import defpackage.flcj;
-import defpackage.fldd;
-import defpackage.ikb;
-import defpackage.ikd;
+import defpackage.aeex;
+import defpackage.aeey;
+import defpackage.aeez;
+import defpackage.aend;
+import defpackage.aenr;
+import defpackage.aeqe;
+import defpackage.aeql;
+import defpackage.aesm;
+import defpackage.apzg;
+import defpackage.auad;
+import defpackage.aued;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.dhpk;
+import defpackage.elkk;
+import defpackage.euzc;
+import defpackage.fntp;
+import defpackage.fnts;
+import defpackage.fnum;
+import defpackage.ilr;
+import defpackage.ilt;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class BetterTogetherUnifiedSetupIntentOperation extends IntentOperation {
     public static final /* synthetic */ int a = 0;
-    private static final arxo b = new arxo("ProximityAuth", "BetterTogetherSetup");
-    private final acqe c = new acqe();
+    private static final auad b = new auad("ProximityAuth", "BetterTogetherSetup");
+    private final aeqe c = new aeqe();
 
     public BetterTogetherUnifiedSetupIntentOperation() {
     }
@@ -69,20 +69,20 @@ public class BetterTogetherUnifiedSetupIntentOperation extends IntentOperation {
             b.m("Better Together setup was started with a null intent.", new Object[0]);
             return;
         }
-        if (fldd.a.a().k() && !acez.d(this, false)) {
-            asot asotVar = SettingsChimeraActivity.j;
-            asng.K("com.google.android.gms.auth.proximity.multidevice.SettingsActivity", false);
-            asng.K("com.google.android.gms.auth.proximity.multidevice.SettingsContentProvider", false);
-            asot asotVar2 = SettingsMaterialNextChimeraActivity.j;
-            asng.K("com.google.android.gms.auth.proximity.multidevice.SettingsMaterialNextActivity", false);
+        if (fnum.a.lK().k() && !aeez.d(this, false)) {
+            ausn ausnVar = SettingsChimeraActivity.j;
+            aura.K("com.google.android.gms.auth.proximity.multidevice.SettingsActivity", false);
+            aura.K("com.google.android.gms.auth.proximity.multidevice.SettingsContentProvider", false);
+            ausn ausnVar2 = SettingsMaterialNextChimeraActivity.j;
+            aura.K("com.google.android.gms.auth.proximity.multidevice.SettingsMaterialNextActivity", false);
             return;
         }
         if ("com.google.android.gms.auth.proximity.multidevice.UPDATE_UNIFIED_SETUP".equals(intent.getAction())) {
-            asot asotVar3 = SettingsChimeraActivity.j;
-            asng.H(this, "com.google.android.gms.auth.proximity.multidevice.SettingsActivity", true);
-            asng.H(this, "com.google.android.gms.auth.proximity.multidevice.SettingsContentProvider", true);
-            asot asotVar4 = SettingsMaterialNextChimeraActivity.j;
-            asng.H(this, "com.google.android.gms.auth.proximity.multidevice.SettingsMaterialNextActivity", false);
+            ausn ausnVar3 = SettingsChimeraActivity.j;
+            aura.H(this, "com.google.android.gms.auth.proximity.multidevice.SettingsActivity", true);
+            aura.H(this, "com.google.android.gms.auth.proximity.multidevice.SettingsContentProvider", true);
+            ausn ausnVar4 = SettingsMaterialNextChimeraActivity.j;
+            aura.H(this, "com.google.android.gms.auth.proximity.multidevice.SettingsMaterialNextActivity", false);
             return;
         }
         if ("com.google.android.gms.auth.proximity.multidevice.UNIFIED_SETUP_REQUESTED".equals(intent.getAction())) {
@@ -93,15 +93,15 @@ public class BetterTogetherUnifiedSetupIntentOperation extends IntentOperation {
                 this.c.g(2);
                 return;
             }
-            SyncedCryptauthDevice b2 = acnd.b(this, stringExtra);
-            acey a2 = acex.a(this);
+            SyncedCryptauthDevice b2 = aend.b(this, stringExtra);
+            aeey a2 = aeex.a(this);
             char c = 3;
             if (b2 == null) {
                 this.c.g(3);
                 return;
             }
             Account account = new Account(stringExtra, "com.google");
-            boolean d = a2.d(account, esjn.BETTER_TOGETHER_HOST);
+            boolean d = a2.d(account, euzc.BETTER_TOGETHER_HOST);
             HashSet<String> hashSet = new HashSet(b2.m);
             b.h("Trying to ".concat(true != d ? "disable" : "enable"), new Object[0]);
             if (!d) {
@@ -109,23 +109,23 @@ public class BetterTogetherUnifiedSetupIntentOperation extends IntentOperation {
                 int i5 = 0;
                 int i6 = 0;
                 for (String str : hashSet) {
-                    if (new HashSet(Arrays.asList(TextUtils.split(fldd.a.a().c(), ","))).contains(str)) {
+                    if (new HashSet(Arrays.asList(TextUtils.split(fnum.a.lK().c(), ","))).contains(str)) {
                         b.h("Not disabling enabled feature %s since it is blocklisted for disabling", str);
                     } else {
-                        arxo arxoVar = b;
-                        arxoVar.h("Attempting to disable enabled feature %s", str);
+                        auad auadVar = b;
+                        auadVar.h("Attempting to disable enabled feature %s", str);
                         i5++;
-                        if (flcj.f()) {
+                        if (fnts.f()) {
                             arrayList.add(str);
-                        } else if (acnr.b(eixf.d(str), stringExtra, this)) {
+                        } else if (aenr.b(elkk.d(str), stringExtra, this)) {
                             i6++;
                         } else {
-                            arxoVar.m("Failed to disable feature: ".concat(String.valueOf(str)), new Object[0]);
+                            auadVar.m("Failed to disable feature: ".concat(String.valueOf(str)), new Object[0]);
                         }
                     }
                 }
-                if (flcj.f() && !arrayList.isEmpty()) {
-                    if (acnr.b(arrayList, stringExtra, this)) {
+                if (fnts.f() && !arrayList.isEmpty()) {
+                    if (aenr.b(arrayList, stringExtra, this)) {
                         i6 = arrayList.size();
                     } else {
                         b.m("Failed to disable features: ".concat(arrayList.toString()), new Object[0]);
@@ -140,18 +140,18 @@ public class BetterTogetherUnifiedSetupIntentOperation extends IntentOperation {
                 } else {
                     this.c.e(0);
                 }
-                acql.b(this, false);
+                aeql.b(this, false);
                 return;
             }
             HashSet hashSet2 = new HashSet();
-            if (flcg.i()) {
+            if (fntp.h()) {
                 try {
-                    hashSet2 = new HashSet(new acez(this).a(account));
+                    hashSet2 = new HashSet(new aeez(this).a(account));
                 } catch (IOException e) {
                     b.n("Couldn't retrieve supported features", e, new Object[0]);
                 }
             } else {
-                hashSet2 = new HashSet(new acez(this).b(account, new ArrayList()));
+                hashSet2 = new HashSet(new aeez(this).b(account, new ArrayList()));
             }
             List<String> list = b2.l;
             ArrayList arrayList2 = new ArrayList();
@@ -160,20 +160,20 @@ public class BetterTogetherUnifiedSetupIntentOperation extends IntentOperation {
             for (String str2 : list) {
                 char c2 = c;
                 try {
-                    contains = hashSet2.contains(esjn.b(str2));
+                    contains = hashSet2.contains(euzc.b(str2));
                     contains2 = hashSet.contains(str2);
                     i2 = i4;
-                    contains3 = new HashSet(Arrays.asList(TextUtils.split(fldd.a.a().d(), ","))).contains(str2);
+                    contains3 = new HashSet(Arrays.asList(TextUtils.split(fnum.a.lK().d(), ","))).contains(str2);
                 } catch (IllegalArgumentException unused) {
                     i = i3;
                     i2 = i4;
-                    arxo arxoVar2 = b;
+                    auad auadVar2 = b;
                     Object[] objArr = new Object[1];
                     objArr[i] = str2;
-                    arxoVar2.m("Invalid supported feature: %s", objArr);
+                    auadVar2.m("Invalid supported feature: %s", objArr);
                 }
                 if (!contains || contains2 || contains3) {
-                    arxo arxoVar3 = b;
+                    auad auadVar3 = b;
                     Boolean valueOf = Boolean.valueOf(contains);
                     Boolean valueOf2 = Boolean.valueOf(contains2);
                     Boolean valueOf3 = Boolean.valueOf(contains3);
@@ -183,22 +183,22 @@ public class BetterTogetherUnifiedSetupIntentOperation extends IntentOperation {
                     objArr2[1] = valueOf;
                     objArr2[i2] = valueOf2;
                     objArr2[c2] = valueOf3;
-                    arxoVar3.h("Not enabling feature %s. isLocallySupported: %s isFeatureAlreadyEnabled: %s isFeatureSupportBlocklisted: %s", objArr2);
+                    auadVar3.h("Not enabling feature %s. isLocallySupported: %s isFeatureAlreadyEnabled: %s isFeatureSupportBlocklisted: %s", objArr2);
                     c = c2;
                     i4 = i2;
                     i3 = i;
                 } else {
-                    arxo arxoVar4 = b;
+                    auad auadVar4 = b;
                     Object[] objArr3 = new Object[1];
                     objArr3[i3] = str2;
-                    arxoVar4.h("Enabling disabled feature %s", objArr3);
+                    auadVar4.h("Enabling disabled feature %s", objArr3);
                     i7++;
-                    if (flcj.f()) {
+                    if (fnts.f()) {
                         arrayList2.add(str2);
-                    } else if (acnr.c(eixf.d(str2), account.name, this)) {
+                    } else if (aenr.c(elkk.d(str2), account.name, this)) {
                         i8++;
                     } else {
-                        arxoVar4.m("Failed to enable feature: ".concat(String.valueOf(str2)), new Object[i3]);
+                        auadVar4.m("Failed to enable feature: ".concat(String.valueOf(str2)), new Object[i3]);
                     }
                     c = c2;
                     i4 = i2;
@@ -206,8 +206,8 @@ public class BetterTogetherUnifiedSetupIntentOperation extends IntentOperation {
             }
             int i9 = i3;
             int i10 = i4;
-            if (flcj.f() && !arrayList2.isEmpty()) {
-                if (acnr.c(arrayList2, account.name, this)) {
+            if (fnts.f() && !arrayList2.isEmpty()) {
+                if (aenr.c(arrayList2, account.name, this)) {
                     i8 = arrayList2.size();
                 } else {
                     b.m("Failed to enable features: ".concat(arrayList2.toString()), new Object[i9]);
@@ -225,35 +225,35 @@ public class BetterTogetherUnifiedSetupIntentOperation extends IntentOperation {
                     this.c.g(0);
                     if (i8 > 0 || getSharedPreferences("com.google.android.gms.auth.proximity.UNIFIED_SETUP", r4).getBoolean("SETUP_COMPLETE_NOTIFICATION", r4)) {
                     }
-                    asbo f = asbo.f(this);
+                    aued f = aued.f(this);
                     Resources resources = getResources();
-                    acql.a(f, resources);
+                    aeql.a(f, resources);
                     Object[] objArr4 = new Object[i10];
                     objArr4[r4] = SettingsChimeraContentProvider.a(this, stringExtra);
                     objArr4[1] = "";
                     String string = resources.getString(R.string.settings_subhead_enabled, objArr4);
-                    ikd ikdVar = new ikd(this, "better-together-notification-channel-id");
-                    ikdVar.g(anxo.a(this, 2131233293));
-                    ikdVar.A = resources.getColor(R.color.quantum_googblue);
-                    ikdVar.l = 0;
-                    ikdVar.m(resources.getString(R.string.settings_summary_enabled));
-                    ikdVar.l(string);
-                    ikb ikbVar = new ikb();
-                    ikbVar.d(string);
-                    ikdVar.v(ikbVar);
-                    ikdVar.g = PendingIntent.getActivity(this, 0, acsm.a(this).putExtra("FROM_BETTER_TOGETHER_NOTIFICATION", true), 134217728);
-                    ikdVar.k(true);
-                    if (asqh.a()) {
+                    ilt iltVar = new ilt(this, "better-together-notification-channel-id");
+                    iltVar.n(apzg.a(this, 2131233359));
+                    iltVar.A = resources.getColor(R.color.quantum_googblue);
+                    iltVar.l = 0;
+                    iltVar.r(resources.getString(R.string.settings_summary_enabled));
+                    iltVar.j(string);
+                    ilr ilrVar = new ilr();
+                    ilrVar.d(string);
+                    iltVar.o(ilrVar);
+                    iltVar.g = PendingIntent.getActivity(this, 0, aesm.a(this).putExtra("FROM_BETTER_TOGETHER_NOTIFICATION", true), 134217728);
+                    iltVar.i(true);
+                    if (auub.a()) {
                         Bundle bundle = new Bundle();
                         bundle.putString("android.substName", resources.getString(R.string.notification_substitute_app_name));
-                        ikdVar.j(bundle);
+                        iltVar.g(bundle);
                     }
-                    if (fldd.e()) {
-                        f.w("better-together-setup-complete-tag", 1, dfee.CHROMEBOOK_CROSS_DEVICE_ONBOARDING, ikdVar.b());
+                    if (fnum.e()) {
+                        f.w("better-together-setup-complete-tag", 1, dhpk.CHROMEBOOK_CROSS_DEVICE_ONBOARDING, iltVar.b());
                     } else {
-                        f.v("better-together-setup-complete-tag", 1, ikdVar.b());
+                        f.v("better-together-setup-complete-tag", 1, iltVar.b());
                     }
-                    acql.b(this, true);
+                    aeql.b(this, true);
                     return;
                 }
                 this.c.g(5);

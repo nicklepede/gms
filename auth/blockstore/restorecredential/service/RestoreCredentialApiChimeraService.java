@@ -6,126 +6,126 @@ import com.google.android.gms.auth.blockstore.restorecredential.service.RestoreC
 import com.google.android.gms.auth.blockstore.service.BlockstoreApiChimeraService;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.aabe;
-import defpackage.aacb;
-import defpackage.aacc;
-import defpackage.aadl;
-import defpackage.aadu;
-import defpackage.aaez;
-import defpackage.aahf;
-import defpackage.aajh;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.ejhf;
-import defpackage.fkwh;
-import defpackage.fuuw;
-import defpackage.fuvg;
-import defpackage.fvaf;
-import defpackage.fvbo;
-import defpackage.zyn;
+import defpackage.abyn;
+import defpackage.acbe;
+import defpackage.accb;
+import defpackage.accc;
+import defpackage.acdl;
+import defpackage.acdu;
+import defpackage.acez;
+import defpackage.achf;
+import defpackage.acjh;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.eluo;
+import defpackage.fnnl;
+import defpackage.fxqu;
+import defpackage.fxre;
+import defpackage.fxwd;
+import defpackage.fxxm;
 import java.util.Collections;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class RestoreCredentialApiChimeraService extends bxgd {
+public final class RestoreCredentialApiChimeraService extends bzot {
     public static final /* synthetic */ int b = 0;
-    private static final asot c = aacc.b("RestoreCredentialApiChimeraService");
-    public final fuuw a;
-    private final fuuw d;
-    private final fuuw m;
-    private final fuuw n;
-    private final fuuw o;
-    private final fuuw p;
+    private static final ausn c = accc.b("RestoreCredentialApiChimeraService");
+    public final fxqu a;
+    private final fxqu d;
+    private final fxqu m;
+    private final fxqu n;
+    private final fxqu o;
+    private final fxqu p;
 
     public RestoreCredentialApiChimeraService() {
         super(381, "com.google.android.gms.auth.blockstore.restorecredential.service.START_RESTORE_CRED", Collections.EMPTY_SET, 3, 10);
-        this.a = new fuvg(new fvaf() { // from class: aaee
-            @Override // defpackage.fvaf
+        this.a = new fxre(new fxwd() { // from class: acee
+            @Override // defpackage.fxwd
             public final Object a() {
                 RestoreCredentialApiChimeraService restoreCredentialApiChimeraService = RestoreCredentialApiChimeraService.this;
                 restoreCredentialApiChimeraService.b();
-                return new aafh(restoreCredentialApiChimeraService);
+                return new acfh(restoreCredentialApiChimeraService);
             }
         });
-        this.d = new fuvg(new fvaf() { // from class: aaef
-            @Override // defpackage.fvaf
+        this.d = new fxre(new fxwd() { // from class: acef
+            @Override // defpackage.fxwd
             public final Object a() {
                 RestoreCredentialApiChimeraService restoreCredentialApiChimeraService = RestoreCredentialApiChimeraService.this;
                 restoreCredentialApiChimeraService.b();
-                return new aafe(restoreCredentialApiChimeraService, restoreCredentialApiChimeraService.c(), new asmf(Integer.MAX_VALUE, 9), (aafh) restoreCredentialApiChimeraService.a.a());
+                return new acfe(restoreCredentialApiChimeraService, restoreCredentialApiChimeraService.c(), new aupz(Integer.MAX_VALUE, 9), (acfh) restoreCredentialApiChimeraService.a.a());
             }
         });
-        this.m = new fuvg(new fvaf() { // from class: aaeg
-            @Override // defpackage.fvaf
+        this.m = new fxre(new fxwd() { // from class: aceg
+            @Override // defpackage.fxwd
             public final Object a() {
                 RestoreCredentialApiChimeraService restoreCredentialApiChimeraService = RestoreCredentialApiChimeraService.this;
-                return aacc.a(restoreCredentialApiChimeraService, aacc.c(restoreCredentialApiChimeraService));
+                return accc.a(restoreCredentialApiChimeraService, accc.c(restoreCredentialApiChimeraService));
             }
         });
-        this.n = new fuvg(new fvaf() { // from class: aaeh
-            @Override // defpackage.fvaf
+        this.n = new fxre(new fxwd() { // from class: aceh
+            @Override // defpackage.fxwd
             public final Object a() {
                 int i = RestoreCredentialApiChimeraService.b;
-                return aakp.n();
+                return ackp.n();
             }
         });
-        this.o = new fuvg(new fvaf() { // from class: aaei
-            @Override // defpackage.fvaf
+        this.o = new fxre(new fxwd() { // from class: acei
+            @Override // defpackage.fxwd
             public final Object a() {
-                return aahf.a(RestoreCredentialApiChimeraService.this);
+                return achf.a(RestoreCredentialApiChimeraService.this);
             }
         });
-        this.p = new fuvg(new fvaf() { // from class: aaej
-            @Override // defpackage.fvaf
+        this.p = new fxre(new fxwd() { // from class: acej
+            @Override // defpackage.fxwd
             public final Object a() {
                 int i = RestoreCredentialApiChimeraService.b;
-                return new aabn();
+                return new acbn();
             }
         });
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        fvbo.f(getServiceRequest, "request");
-        if (!fkwh.d()) {
-            ((ejhf) c.h()).x("Restore Credential flag is disabled.");
-            bxgjVar.a(16, null);
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        fxxm.f(getServiceRequest, "request");
+        if (!fnnl.d()) {
+            ((eluo) c.h()).x("Restore Credential flag is disabled.");
+            bzozVar.a(16, null);
             return;
         }
         String str = getServiceRequest.f;
         try {
             Signature[] b2 = BlockstoreApiChimeraService.b(this, str);
-            fvbo.e(b2, "getPackageSignatures(...)");
+            fxxm.e(b2, "getPackageSignatures(...)");
             Signature[] b3 = BlockstoreApiChimeraService.b(this, "com.google.android.gms");
-            fvbo.e(b3, "getPackageSignatures(...)");
-            aacb b4 = b();
+            fxxm.e(b3, "getPackageSignatures(...)");
+            accb b4 = b();
             Object a = this.o.a();
-            fvbo.e(a, "getValue(...)");
-            zyn zynVar = new zyn(b4, (aahf) a, (aaez) this.d.a(), c(), (aabe) this.p.a(), "com.google.android.gms", b3, this);
-            boolean R = asng.R(this, str);
-            bxgo l = l();
-            fvbo.c(str);
+            fxxm.e(a, "getValue(...)");
+            abyn abynVar = new abyn(b4, (achf) a, (acez) this.d.a(), c(), (acbe) this.p.a(), "com.google.android.gms", b3, this);
+            boolean R = aura.R(this, str);
+            bzpe l = l();
+            fxxm.c(str);
             PackageManager packageManager = getPackageManager();
-            fvbo.e(packageManager, "getPackageManager(...)");
-            bxgjVar.c(new aadu(l, new aadl(zynVar, str, b2, packageManager, R, b())));
+            fxxm.e(packageManager, "getPackageManager(...)");
+            bzozVar.c(new acdu(l, new acdl(abynVar, str, b2, packageManager, R, b())));
         } catch (PackageManager.NameNotFoundException e) {
-            ((ejhf) ((ejhf) c.j()).s(e)).x("Calling package not found by package manager.");
-            bxgjVar.a(Status.d.i, null);
+            ((eluo) ((eluo) c.j()).s(e)).x("Calling package not found by package manager.");
+            bzozVar.a(Status.d.i, null);
         }
     }
 
-    public final aacb b() {
+    public final accb b() {
         Object a = this.m.a();
-        fvbo.e(a, "getValue(...)");
-        return (aacb) a;
+        fxxm.e(a, "getValue(...)");
+        return (accb) a;
     }
 
-    public final aajh c() {
+    public final acjh c() {
         Object a = this.n.a();
-        fvbo.e(a, "getValue(...)");
-        return (aajh) a;
+        fxxm.e(a, "getValue(...)");
+        return (acjh) a;
     }
 }

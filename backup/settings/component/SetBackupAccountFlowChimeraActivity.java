@@ -13,74 +13,74 @@ import com.google.android.gms.R;
 import com.google.android.gms.backup.settings.component.SetBackupAccountFlowChimeraActivity;
 import com.google.android.setupdesign.GlifLayout;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.ahhp;
-import defpackage.ahpv;
-import defpackage.ahrf;
-import defpackage.ahrj;
-import defpackage.ahwd;
-import defpackage.ahws;
-import defpackage.aidc;
-import defpackage.ajks;
-import defpackage.ajmt;
-import defpackage.ajmw;
-import defpackage.ajmx;
-import defpackage.arxo;
-import defpackage.asmf;
-import defpackage.dfae;
-import defpackage.edeq;
-import defpackage.edfq;
-import defpackage.edfr;
-import defpackage.edfs;
-import defpackage.edjs;
-import defpackage.edjt;
-import defpackage.ennt;
-import defpackage.ensv;
-import defpackage.esiu;
-import defpackage.esiw;
-import defpackage.eswh;
-import defpackage.eswm;
-import defpackage.esws;
-import defpackage.eswt;
-import defpackage.eswu;
-import defpackage.eswz;
-import defpackage.esxa;
-import defpackage.esxo;
-import defpackage.esxp;
-import defpackage.esyj;
-import defpackage.esyk;
-import defpackage.esyo;
-import defpackage.esyq;
-import defpackage.esyr;
-import defpackage.esys;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.flom;
-import defpackage.flpk;
-import defpackage.qfp;
+import defpackage.ajif;
+import defpackage.ajql;
+import defpackage.ajrv;
+import defpackage.ajsa;
+import defpackage.ajwt;
+import defpackage.ajxi;
+import defpackage.akds;
+import defpackage.allk;
+import defpackage.alnl;
+import defpackage.alno;
+import defpackage.alnp;
+import defpackage.auad;
+import defpackage.aupz;
+import defpackage.dhlk;
+import defpackage.efrl;
+import defpackage.efsl;
+import defpackage.efsm;
+import defpackage.efsn;
+import defpackage.efwn;
+import defpackage.efwo;
+import defpackage.eqbm;
+import defpackage.eqgo;
+import defpackage.euyj;
+import defpackage.euyl;
+import defpackage.evlx;
+import defpackage.evmc;
+import defpackage.evmi;
+import defpackage.evmj;
+import defpackage.evmk;
+import defpackage.evmp;
+import defpackage.evmq;
+import defpackage.evne;
+import defpackage.evnf;
+import defpackage.evnz;
+import defpackage.evoa;
+import defpackage.evoe;
+import defpackage.evog;
+import defpackage.evoh;
+import defpackage.evoi;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fofw;
+import defpackage.fogu;
+import defpackage.ryt;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
-    public static final arxo j = ahwd.a("SetBackupAccountFlow");
-    private eswh A;
-    private fecj B;
+public class SetBackupAccountFlowChimeraActivity extends ryt implements alno {
+    public static final auad j = ajwt.a("SetBackupAccountFlow");
+    private evlx A;
+    private fgrc B;
     public GlifLayout k;
     public TextView l;
     public TextView m;
-    public edfs n;
-    public edfs o;
-    public ahhp p;
+    public efsn n;
+    public efsn o;
+    public ajif p;
     public Account q;
-    public eswm r;
+    public evmc r;
     public Account s;
-    private final ensv t = new asmf(1, 9);
+    private final eqgo t = new aupz(1, 9);
     private TextView u;
     private Button v;
     private AsyncTask w;
-    private ahpv x;
+    private ajql x;
     private List y;
-    private eswu z;
+    private evmk z;
 
     private final void k() {
         setTitle(R.string.backup_turned_off_title);
@@ -89,7 +89,7 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
         this.l.setText(R.string.backup_turned_off_description);
         this.m.setVisibility(8);
         this.n.d(getString(android.R.string.ok));
-        this.n.f = new View.OnClickListener() { // from class: ajmo
+        this.n.f = new View.OnClickListener() { // from class: alng
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 SetBackupAccountFlowChimeraActivity.this.finishAndRemoveTask();
@@ -101,7 +101,7 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
     }
 
     private final void l() {
-        List a = aidc.a(this);
+        List a = akds.a(this);
         this.y = a;
         if (a.isEmpty()) {
             j.j("No accounts for backup on device, launching add account", new Object[0]);
@@ -109,10 +109,10 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
             finishAndRemoveTask();
             return;
         }
-        if (!ahrf.a()) {
-            ajmt ajmtVar = new ajmt(this);
-            this.w = ajmtVar;
-            ajmtVar.executeOnExecutor(this.t, new Void[0]);
+        if (!ajrv.a()) {
+            alnl alnlVar = new alnl(this);
+            this.w = alnlVar;
+            alnlVar.executeOnExecutor(this.t, new Void[0]);
             return;
         }
         if (getIntent().getParcelableExtra("account") == null) {
@@ -127,197 +127,197 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
         setTitle(R.string.backup_data_title_no_drive_branding);
         this.k.H(R.string.backup_data_title_no_drive_branding);
         this.n.d(getString(R.string.common_ok));
-        this.n.f = new View.OnClickListener() { // from class: ajmp
+        this.n.f = new View.OnClickListener() { // from class: alnh
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 SetBackupAccountFlowChimeraActivity setBackupAccountFlowChimeraActivity = SetBackupAccountFlowChimeraActivity.this;
                 Account account = setBackupAccountFlowChimeraActivity.s;
-                eswz eswzVar = (eswz) esxa.a.v();
-                fecj v = esxo.a.v();
-                esiw esiwVar = esiw.ANDROID_BACKUP_SET_ACCOUNT;
+                evmp evmpVar = (evmp) evmq.a.v();
+                fgrc v = evne.a.v();
+                euyl euylVar = euyl.ANDROID_BACKUP_SET_ACCOUNT;
                 if (!v.b.L()) {
                     v.U();
                 }
-                esxo esxoVar = (esxo) v.b;
-                esxoVar.c = esiwVar.lF;
-                esxoVar.b |= 1;
-                fecj v2 = esxp.a.v();
-                eswm eswmVar = setBackupAccountFlowChimeraActivity.r;
-                fecj fecjVar = (fecj) eswmVar.iB(5, null);
-                fecjVar.X(eswmVar);
-                fecj v3 = esyr.a.v();
-                esyq esyqVar = esyq.ENABLED;
+                evne evneVar = (evne) v.b;
+                evneVar.c = euylVar.lK;
+                evneVar.b |= 1;
+                fgrc v2 = evnf.a.v();
+                evmc evmcVar = setBackupAccountFlowChimeraActivity.r;
+                fgrc fgrcVar = (fgrc) evmcVar.iQ(5, null);
+                fgrcVar.X(evmcVar);
+                fgrc v3 = evoh.a.v();
+                evog evogVar = evog.ENABLED;
                 if (!v3.b.L()) {
                     v3.U();
                 }
-                esyr esyrVar = (esyr) v3.b;
-                esyrVar.c = esyqVar.d;
-                esyrVar.b |= 1;
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                evoh evohVar = (evoh) v3.b;
+                evohVar.c = evogVar.d;
+                evohVar.b |= 1;
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                eswm eswmVar2 = (eswm) fecjVar.b;
-                esyr esyrVar2 = (esyr) v3.Q();
-                eswm eswmVar3 = eswm.a;
-                esyrVar2.getClass();
-                eswmVar2.c = esyrVar2;
-                eswmVar2.b |= 1;
-                boolean c = ajks.c(setBackupAccountFlowChimeraActivity);
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                evmc evmcVar2 = (evmc) fgrcVar.b;
+                evoh evohVar2 = (evoh) v3.Q();
+                evmc evmcVar3 = evmc.a;
+                evohVar2.getClass();
+                evmcVar2.c = evohVar2;
+                evmcVar2.b |= 1;
+                boolean c = allk.c(setBackupAccountFlowChimeraActivity);
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                eswm eswmVar4 = (eswm) fecjVar.b;
-                eswmVar4.b |= 16;
-                eswmVar4.g = c;
-                setBackupAccountFlowChimeraActivity.r = (eswm) fecjVar.Q();
-                eswm eswmVar5 = setBackupAccountFlowChimeraActivity.r;
+                evmc evmcVar4 = (evmc) fgrcVar.b;
+                evmcVar4.b |= 16;
+                evmcVar4.g = c;
+                setBackupAccountFlowChimeraActivity.r = (evmc) fgrcVar.Q();
+                evmc evmcVar5 = setBackupAccountFlowChimeraActivity.r;
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                esxp esxpVar = (esxp) v2.b;
-                eswmVar5.getClass();
-                esxpVar.h = eswmVar5;
-                esxpVar.b |= 8;
-                esyj esyjVar = (esyj) esyk.a.v();
-                esyjVar.a(12);
-                esyk esykVar = (esyk) esyjVar.Q();
+                evnf evnfVar = (evnf) v2.b;
+                evmcVar5.getClass();
+                evnfVar.h = evmcVar5;
+                evnfVar.b |= 8;
+                evnz evnzVar = (evnz) evoa.a.v();
+                evnzVar.a(12);
+                evoa evoaVar = (evoa) evnzVar.Q();
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                esxp esxpVar2 = (esxp) v2.b;
-                esykVar.getClass();
-                esxpVar2.t = esykVar;
-                esxpVar2.d |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+                evnf evnfVar2 = (evnf) v2.b;
+                evoaVar.getClass();
+                evnfVar2.t = evoaVar;
+                evnfVar2.d |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
                 if (!v.b.L()) {
                     v.U();
                 }
-                esxo esxoVar2 = (esxo) v.b;
-                esxp esxpVar3 = (esxp) v2.Q();
-                esxpVar3.getClass();
-                esxoVar2.d = esxpVar3;
-                esxoVar2.b |= 2;
-                if (!eswzVar.b.L()) {
-                    eswzVar.U();
+                evne evneVar2 = (evne) v.b;
+                evnf evnfVar3 = (evnf) v2.Q();
+                evnfVar3.getClass();
+                evneVar2.d = evnfVar3;
+                evneVar2.b |= 2;
+                if (!evmpVar.b.L()) {
+                    evmpVar.U();
                 }
-                esxa esxaVar = (esxa) eswzVar.b;
-                esxo esxoVar3 = (esxo) v.Q();
-                esxoVar3.getClass();
-                esxaVar.f = esxoVar3;
-                esxaVar.b |= 4;
-                fecj v4 = esys.a.v();
-                esiu esiuVar = esiu.X;
+                evmq evmqVar = (evmq) evmpVar.b;
+                evne evneVar3 = (evne) v.Q();
+                evneVar3.getClass();
+                evmqVar.f = evneVar3;
+                evmqVar.b |= 4;
+                fgrc v4 = evoi.a.v();
+                euyj euyjVar = euyj.X;
                 if (!v4.b.L()) {
                     v4.U();
                 }
-                esys esysVar = (esys) v4.b;
-                esysVar.c = esiuVar.a();
-                esysVar.b |= 1;
-                fecj v5 = esyo.a.v();
-                esws a2 = setBackupAccountFlowChimeraActivity.a();
+                evoi evoiVar = (evoi) v4.b;
+                evoiVar.c = euyjVar.a();
+                evoiVar.b |= 1;
+                fgrc v5 = evoe.a.v();
+                evmi a2 = setBackupAccountFlowChimeraActivity.a();
                 if (!v5.b.L()) {
                     v5.U();
                 }
-                esyo esyoVar = (esyo) v5.b;
+                evoe evoeVar = (evoe) v5.b;
                 a2.getClass();
-                esyoVar.h = a2;
-                esyoVar.b |= 128;
+                evoeVar.h = a2;
+                evoeVar.b |= 128;
                 if (!v4.b.L()) {
                     v4.U();
                 }
-                esys esysVar2 = (esys) v4.b;
-                esyo esyoVar2 = (esyo) v5.Q();
-                esyoVar2.getClass();
-                esysVar2.d = esyoVar2;
-                esysVar2.b |= 8;
-                if (!eswzVar.b.L()) {
-                    eswzVar.U();
+                evoi evoiVar2 = (evoi) v4.b;
+                evoe evoeVar2 = (evoe) v5.Q();
+                evoeVar2.getClass();
+                evoiVar2.d = evoeVar2;
+                evoiVar2.b |= 8;
+                if (!evmpVar.b.L()) {
+                    evmpVar.U();
                 }
-                esxa esxaVar2 = (esxa) eswzVar.b;
-                esys esysVar3 = (esys) v4.Q();
-                esysVar3.getClass();
-                esxaVar2.g = esysVar3;
-                esxaVar2.b |= 8;
-                ahws.c(setBackupAccountFlowChimeraActivity.getApplicationContext(), eswzVar, account).x(new dfae() { // from class: ajmk
-                    @Override // defpackage.dfae
-                    public final void hr(dfaq dfaqVar) {
-                        arxo arxoVar = SetBackupAccountFlowChimeraActivity.j;
-                        if (dfaqVar.m()) {
+                evmq evmqVar2 = (evmq) evmpVar.b;
+                evoi evoiVar3 = (evoi) v4.Q();
+                evoiVar3.getClass();
+                evmqVar2.g = evoiVar3;
+                evmqVar2.b |= 8;
+                ajxi.c(setBackupAccountFlowChimeraActivity.getApplicationContext(), evmpVar, account).x(new dhlk() { // from class: alnc
+                    @Override // defpackage.dhlk
+                    public final void hH(dhlw dhlwVar) {
+                        auad auadVar = SetBackupAccountFlowChimeraActivity.j;
+                        if (dhlwVar.m()) {
                             return;
                         }
-                        SetBackupAccountFlowChimeraActivity.j.g("Exception writing audit record", dfaqVar.h(), new Object[0]);
+                        SetBackupAccountFlowChimeraActivity.j.g("Exception writing audit record", dhlwVar.h(), new Object[0]);
                     }
                 });
-                eswm eswmVar6 = setBackupAccountFlowChimeraActivity.r;
-                ahpw ahpwVar = ahpw.a;
-                ahpwVar.d(setBackupAccountFlowChimeraActivity, eswmVar6.d);
-                ahpwVar.g(setBackupAccountFlowChimeraActivity, eswmVar6.e);
-                ahpwVar.b(setBackupAccountFlowChimeraActivity, eswmVar6.f);
-                ahpwVar.c(setBackupAccountFlowChimeraActivity, eswmVar6.h);
-                if (asiu.a().d(setBackupAccountFlowChimeraActivity, new Intent().setClassName(setBackupAccountFlowChimeraActivity, "com.google.android.gms.backup.BackupAccountManagerService"), new ajmu(setBackupAccountFlowChimeraActivity, account), 1)) {
+                evmc evmcVar6 = setBackupAccountFlowChimeraActivity.r;
+                ajqm ajqmVar = ajqm.a;
+                ajqmVar.d(setBackupAccountFlowChimeraActivity, evmcVar6.d);
+                ajqmVar.g(setBackupAccountFlowChimeraActivity, evmcVar6.e);
+                ajqmVar.b(setBackupAccountFlowChimeraActivity, evmcVar6.f);
+                ajqmVar.c(setBackupAccountFlowChimeraActivity, evmcVar6.h);
+                if (aumo.a().d(setBackupAccountFlowChimeraActivity, new Intent().setClassName(setBackupAccountFlowChimeraActivity, "com.google.android.gms.backup.BackupAccountManagerService"), new alnm(setBackupAccountFlowChimeraActivity, account), 1)) {
                     return;
                 }
                 SetBackupAccountFlowChimeraActivity.j.f("Cannot connect to BackupAccountManagerService.", new Object[0]);
                 setBackupAccountFlowChimeraActivity.finishAndRemoveTask();
             }
         };
-        boolean b = ahrj.b();
+        boolean b = ajsa.b();
         int i = R.string.empty_string;
         int i2 = true != b ? R.string.empty_string : R.string.drive_backup_disabled_encryption_supported_info;
-        boolean c = ajks.c(this);
+        boolean c = allk.c(this);
         if (true == c) {
             i = R.string.drive_backup_disabled_detailedinfo;
         }
         int i3 = true != c ? R.string.drive_backup_disabled_backuplist_no_photos : R.string.drive_backup_disabled_backuplist;
-        eswu eswuVar = eswu.a;
-        eswt eswtVar = (eswt) eswuVar.v();
-        eswtVar.k(R.string.drive_backup_disabled_introduction);
-        eswtVar.k(R.string.common_learn_more);
-        eswtVar.k(i3);
-        eswtVar.k(i);
-        eswtVar.k(i2);
-        this.z = (eswu) eswtVar.Q();
-        fecj fecjVar = this.B;
-        int[] iArr = ajks.d(this) ? new int[]{R.string.backup_opt_in_backup_auth_setup_wizard_services_backup_dialog_text_pixel_v2_no_drive, R.string.backup_opt_in_backup_main_message_no_branding, R.string.backup_opt_in_backup_photos_sync, R.string.backup_opt_in_backup_photos_no_quota} : ajks.b(this) ? new int[]{R.string.backup_opt_in_backup_auth_setup_wizard_services_backup_dialog_text_v2, R.string.backup_opt_in_backup_main_message_no_branding, R.string.backup_opt_in_backup_photos_sync, R.string.backup_opt_in_backup_photos_count_against_quota} : new int[]{R.string.backup_opt_in_backup_auth_setup_wizard_services_backup_dialog_text_no_photos_v2_no_drive, R.string.backup_opt_in_backup_main_message_no_branding};
-        eswt eswtVar2 = (eswt) eswuVar.v();
-        eswtVar2.a(ennt.j(iArr));
-        eswtVar2.k(R.string.common_privacy_policy_composed_string);
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        evmk evmkVar = evmk.a;
+        evmj evmjVar = (evmj) evmkVar.v();
+        evmjVar.k(R.string.drive_backup_disabled_introduction);
+        evmjVar.k(R.string.common_learn_more);
+        evmjVar.k(i3);
+        evmjVar.k(i);
+        evmjVar.k(i2);
+        this.z = (evmk) evmjVar.Q();
+        fgrc fgrcVar = this.B;
+        int[] iArr = allk.d(this) ? new int[]{R.string.backup_opt_in_backup_auth_setup_wizard_services_backup_dialog_text_pixel_v2_no_drive, R.string.backup_opt_in_backup_main_message_no_branding, R.string.backup_opt_in_backup_photos_sync, R.string.backup_opt_in_backup_photos_no_quota} : allk.b(this) ? new int[]{R.string.backup_opt_in_backup_auth_setup_wizard_services_backup_dialog_text_v2, R.string.backup_opt_in_backup_main_message_no_branding, R.string.backup_opt_in_backup_photos_sync, R.string.backup_opt_in_backup_photos_count_against_quota} : new int[]{R.string.backup_opt_in_backup_auth_setup_wizard_services_backup_dialog_text_no_photos_v2_no_drive, R.string.backup_opt_in_backup_main_message_no_branding};
+        evmj evmjVar2 = (evmj) evmkVar.v();
+        evmjVar2.a(eqbm.j(iArr));
+        evmjVar2.k(R.string.common_privacy_policy_composed_string);
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        eswh eswhVar = (eswh) fecjVar.b;
-        eswu eswuVar2 = (eswu) eswtVar2.Q();
-        eswh eswhVar2 = eswh.a;
-        eswuVar2.getClass();
-        eswhVar.e = eswuVar2;
-        eswhVar.b |= 4;
-        eswt eswtVar3 = (eswt) eswu.a.v();
-        eswtVar3.k(R.string.close_button_label);
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        evlx evlxVar = (evlx) fgrcVar.b;
+        evmk evmkVar2 = (evmk) evmjVar2.Q();
+        evlx evlxVar2 = evlx.a;
+        evmkVar2.getClass();
+        evlxVar.e = evmkVar2;
+        evlxVar.b |= 4;
+        evmj evmjVar3 = (evmj) evmkVar.v();
+        evmjVar3.k(R.string.close_button_label);
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        eswh eswhVar3 = (eswh) fecjVar.b;
-        eswu eswuVar3 = (eswu) eswtVar3.Q();
-        eswuVar3.getClass();
-        eswhVar3.g = eswuVar3;
-        eswhVar3.b |= 16;
+        evlx evlxVar3 = (evlx) fgrcVar.b;
+        evmk evmkVar3 = (evmk) evmjVar3.Q();
+        evmkVar3.getClass();
+        evlxVar3.g = evmkVar3;
+        evlxVar3.b |= 16;
         this.l.setMovementMethod(LinkMovementMethod.getInstance());
-        if (flpk.a.a().a()) {
+        if (fogu.a.lK().a()) {
             this.l.setGravity(17);
-            this.l.setText(ajks.e(this, this.z, this.B));
+            this.l.setText(allk.e(this, this.z, this.B));
             this.m.setVisibility(0);
-            this.m.setText(ajks.a(this, this.z));
+            this.m.setText(allk.a(this, this.z));
         } else {
             this.l.setGravity(8388611);
             TextView textView = this.l;
-            eswu eswuVar4 = this.z;
-            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(ajks.e(this, eswuVar4, this.B));
-            spannableStringBuilder.append((CharSequence) "\n\n").append(ajks.a(this, eswuVar4));
+            evmk evmkVar4 = this.z;
+            SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(allk.e(this, evmkVar4, this.B));
+            spannableStringBuilder.append((CharSequence) "\n\n").append(allk.a(this, evmkVar4));
             textView.setText(spannableStringBuilder);
             this.m.setVisibility(8);
         }
         this.v.setVisibility(0);
         this.v.setText(R.string.change_backup_account_button_label);
-        this.v.setOnClickListener(new View.OnClickListener() { // from class: ajmq
+        this.v.setOnClickListener(new View.OnClickListener() { // from class: alni
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 SetBackupAccountFlowChimeraActivity.this.b();
@@ -327,7 +327,7 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
             this.o.f(4);
         } else {
             this.o.f(0);
-            this.o.f = new View.OnClickListener() { // from class: ajmr
+            this.o.f = new View.OnClickListener() { // from class: alnj
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     SetBackupAccountFlowChimeraActivity.this.f();
@@ -336,35 +336,35 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
         }
     }
 
-    public final esws a() {
-        fecj v = esws.a.v();
-        eswu eswuVar = this.z;
+    public final evmi a() {
+        fgrc v = evmi.a.v();
+        evmk evmkVar = this.z;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        esws eswsVar = (esws) fecpVar;
-        eswuVar.getClass();
-        eswsVar.d = eswuVar;
-        eswsVar.b |= 2;
-        fecj fecjVar = this.B;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        evmi evmiVar = (evmi) fgriVar;
+        evmkVar.getClass();
+        evmiVar.d = evmkVar;
+        evmiVar.b |= 2;
+        fgrc fgrcVar = this.B;
+        if (!fgriVar.L()) {
             v.U();
         }
-        esws eswsVar2 = (esws) v.b;
-        eswh eswhVar = (eswh) fecjVar.Q();
-        eswhVar.getClass();
-        eswsVar2.e = eswhVar;
-        eswsVar2.b |= 4;
-        eswh eswhVar2 = this.A;
+        evmi evmiVar2 = (evmi) v.b;
+        evlx evlxVar = (evlx) fgrcVar.Q();
+        evlxVar.getClass();
+        evmiVar2.e = evlxVar;
+        evmiVar2.b |= 4;
+        evlx evlxVar2 = this.A;
         if (!v.b.L()) {
             v.U();
         }
-        esws eswsVar3 = (esws) v.b;
-        eswhVar2.getClass();
-        eswsVar3.c = eswhVar2;
-        eswsVar3.b |= 1;
-        return (esws) v.Q();
+        evmi evmiVar3 = (evmi) v.b;
+        evlxVar2.getClass();
+        evmiVar3.c = evlxVar2;
+        evmiVar3.b |= 1;
+        return (evmi) v.Q();
     }
 
     public final void b() {
@@ -374,140 +374,140 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
         startActivity(className);
     }
 
-    @Override // defpackage.ajmw
+    @Override // defpackage.alno
     public final void c() {
-        eswz eswzVar = (eswz) esxa.a.v();
-        fecj v = esxo.a.v();
-        esiw esiwVar = esiw.ANDROID_BACKUP_SETTING_CHANGE;
+        evmp evmpVar = (evmp) evmq.a.v();
+        fgrc v = evne.a.v();
+        euyl euylVar = euyl.ANDROID_BACKUP_SETTING_CHANGE;
         if (!v.b.L()) {
             v.U();
         }
-        esxo esxoVar = (esxo) v.b;
-        esxoVar.c = esiwVar.lF;
-        esxoVar.b |= 1;
-        fecj v2 = esxp.a.v();
-        fecj v3 = eswm.a.v();
-        fecj v4 = esyr.a.v();
-        esyq esyqVar = esyq.DISABLED;
+        evne evneVar = (evne) v.b;
+        evneVar.c = euylVar.lK;
+        evneVar.b |= 1;
+        fgrc v2 = evnf.a.v();
+        fgrc v3 = evmc.a.v();
+        fgrc v4 = evoh.a.v();
+        evog evogVar = evog.DISABLED;
         if (!v4.b.L()) {
             v4.U();
         }
-        esyr esyrVar = (esyr) v4.b;
-        esyrVar.c = esyqVar.d;
-        esyrVar.b |= 1;
+        evoh evohVar = (evoh) v4.b;
+        evohVar.c = evogVar.d;
+        evohVar.b |= 1;
         if (!v3.b.L()) {
             v3.U();
         }
-        eswm eswmVar = (eswm) v3.b;
-        esyr esyrVar2 = (esyr) v4.Q();
-        esyrVar2.getClass();
-        eswmVar.c = esyrVar2;
-        eswmVar.b |= 1;
-        eswm eswmVar2 = (eswm) v3.Q();
+        evmc evmcVar = (evmc) v3.b;
+        evoh evohVar2 = (evoh) v4.Q();
+        evohVar2.getClass();
+        evmcVar.c = evohVar2;
+        evmcVar.b |= 1;
+        evmc evmcVar2 = (evmc) v3.Q();
         if (!v2.b.L()) {
             v2.U();
         }
-        esxp esxpVar = (esxp) v2.b;
-        eswmVar2.getClass();
-        esxpVar.h = eswmVar2;
-        esxpVar.b |= 8;
-        esyj esyjVar = (esyj) esyk.a.v();
-        esyjVar.a(11);
-        esyk esykVar = (esyk) esyjVar.Q();
+        evnf evnfVar = (evnf) v2.b;
+        evmcVar2.getClass();
+        evnfVar.h = evmcVar2;
+        evnfVar.b |= 8;
+        evnz evnzVar = (evnz) evoa.a.v();
+        evnzVar.a(11);
+        evoa evoaVar = (evoa) evnzVar.Q();
         if (!v2.b.L()) {
             v2.U();
         }
-        esxp esxpVar2 = (esxp) v2.b;
-        esykVar.getClass();
-        esxpVar2.t = esykVar;
-        esxpVar2.d |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        evnf evnfVar2 = (evnf) v2.b;
+        evoaVar.getClass();
+        evnfVar2.t = evoaVar;
+        evnfVar2.d |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
         if (!v.b.L()) {
             v.U();
         }
-        esxo esxoVar2 = (esxo) v.b;
-        esxp esxpVar3 = (esxp) v2.Q();
-        esxpVar3.getClass();
-        esxoVar2.d = esxpVar3;
-        esxoVar2.b |= 2;
-        if (!eswzVar.b.L()) {
-            eswzVar.U();
+        evne evneVar2 = (evne) v.b;
+        evnf evnfVar3 = (evnf) v2.Q();
+        evnfVar3.getClass();
+        evneVar2.d = evnfVar3;
+        evneVar2.b |= 2;
+        if (!evmpVar.b.L()) {
+            evmpVar.U();
         }
-        esxa esxaVar = (esxa) eswzVar.b;
-        esxo esxoVar3 = (esxo) v.Q();
-        esxoVar3.getClass();
-        esxaVar.f = esxoVar3;
-        esxaVar.b |= 4;
-        fecj v5 = esys.a.v();
-        esiu esiuVar = esiu.X;
+        evmq evmqVar = (evmq) evmpVar.b;
+        evne evneVar3 = (evne) v.Q();
+        evneVar3.getClass();
+        evmqVar.f = evneVar3;
+        evmqVar.b |= 4;
+        fgrc v5 = evoi.a.v();
+        euyj euyjVar = euyj.X;
         if (!v5.b.L()) {
             v5.U();
         }
-        esys esysVar = (esys) v5.b;
-        esysVar.c = esiuVar.a();
-        esysVar.b |= 1;
-        fecj v6 = esyo.a.v();
-        eswh eswhVar = this.A;
-        fecj fecjVar = (fecj) eswhVar.iB(5, null);
-        fecjVar.X(eswhVar);
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        evoi evoiVar = (evoi) v5.b;
+        evoiVar.c = euyjVar.a();
+        evoiVar.b |= 1;
+        fgrc v6 = evoe.a.v();
+        evlx evlxVar = this.A;
+        fgrc fgrcVar = (fgrc) evlxVar.iQ(5, null);
+        fgrcVar.X(evlxVar);
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        eswh eswhVar2 = (eswh) fecjVar.b;
-        eswh eswhVar3 = eswh.a;
-        eswhVar2.b |= 1;
-        eswhVar2.c = true;
-        this.A = (eswh) fecjVar.Q();
-        esws a = a();
+        evlx evlxVar2 = (evlx) fgrcVar.b;
+        evlx evlxVar3 = evlx.a;
+        evlxVar2.b |= 1;
+        evlxVar2.c = true;
+        this.A = (evlx) fgrcVar.Q();
+        evmi a = a();
         if (!v6.b.L()) {
             v6.U();
         }
-        esyo esyoVar = (esyo) v6.b;
+        evoe evoeVar = (evoe) v6.b;
         a.getClass();
-        esyoVar.h = a;
-        esyoVar.b |= 128;
+        evoeVar.h = a;
+        evoeVar.b |= 128;
         if (!v5.b.L()) {
             v5.U();
         }
-        esys esysVar2 = (esys) v5.b;
-        esyo esyoVar2 = (esyo) v6.Q();
-        esyoVar2.getClass();
-        esysVar2.d = esyoVar2;
-        esysVar2.b |= 8;
-        if (!eswzVar.b.L()) {
-            eswzVar.U();
+        evoi evoiVar2 = (evoi) v5.b;
+        evoe evoeVar2 = (evoe) v6.Q();
+        evoeVar2.getClass();
+        evoiVar2.d = evoeVar2;
+        evoiVar2.b |= 8;
+        if (!evmpVar.b.L()) {
+            evmpVar.U();
         }
-        esxa esxaVar2 = (esxa) eswzVar.b;
-        esys esysVar3 = (esys) v5.Q();
-        esysVar3.getClass();
-        esxaVar2.g = esysVar3;
-        esxaVar2.b |= 8;
-        ahws.c(this, eswzVar, this.q).x(new dfae() { // from class: ajml
-            @Override // defpackage.dfae
-            public final void hr(dfaq dfaqVar) {
-                arxo arxoVar = SetBackupAccountFlowChimeraActivity.j;
-                if (dfaqVar.m()) {
+        evmq evmqVar2 = (evmq) evmpVar.b;
+        evoi evoiVar3 = (evoi) v5.Q();
+        evoiVar3.getClass();
+        evmqVar2.g = evoiVar3;
+        evmqVar2.b |= 8;
+        ajxi.c(this, evmpVar, this.q).x(new dhlk() { // from class: alnd
+            @Override // defpackage.dhlk
+            public final void hH(dhlw dhlwVar) {
+                auad auadVar = SetBackupAccountFlowChimeraActivity.j;
+                if (dhlwVar.m()) {
                     return;
                 }
-                SetBackupAccountFlowChimeraActivity.j.g("Exception writing audit record", dfaqVar.h(), new Object[0]);
+                SetBackupAccountFlowChimeraActivity.j.g("Exception writing audit record", dhlwVar.h(), new Object[0]);
             }
         });
-        this.x.g(false);
+        this.x.f(false);
         k();
     }
 
     public final void f() {
-        eswh eswhVar = this.A;
-        fecj fecjVar = (fecj) eswhVar.iB(5, null);
-        fecjVar.X(eswhVar);
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        evlx evlxVar = this.A;
+        fgrc fgrcVar = (fgrc) evlxVar.iQ(5, null);
+        fgrcVar.X(evlxVar);
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        eswh eswhVar2 = (eswh) fecjVar.b;
-        eswh eswhVar3 = eswh.a;
-        eswhVar2.b |= 1;
-        eswhVar2.c = true;
-        this.A = (eswh) fecjVar.Q();
-        new ajmx().show(getSupportFragmentManager(), "TurnOffBackupConfirmationDialog");
+        evlx evlxVar2 = (evlx) fgrcVar.b;
+        evlx evlxVar3 = evlx.a;
+        evlxVar2.b |= 1;
+        evlxVar2.c = true;
+        this.A = (evlx) fgrcVar.Q();
+        new alnp().show(getSupportFragmentManager(), "TurnOffBackupConfirmationDialog");
     }
 
     public final void g(String str) {
@@ -517,7 +517,7 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
         this.l.setText(getString(R.string.backup_account_added_description, new Object[]{str}));
         this.m.setVisibility(8);
         this.n.d(getString(R.string.common_done));
-        this.n.f = new View.OnClickListener() { // from class: ajms
+        this.n.f = new View.OnClickListener() { // from class: alnk
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 SetBackupAccountFlowChimeraActivity.this.finishAndRemoveTask();
@@ -536,17 +536,17 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         j.j("onCreate", new Object[0]);
-        if (flom.a.a().j()) {
-            int i = edjs.a;
-            boolean v = edeq.v(this);
-            edjt d = edjt.d();
+        if (fofw.a.lK().j()) {
+            int i = efwn.a;
+            boolean v = efrl.v(this);
+            efwo d = efwo.d();
             int i2 = d.a;
             String str = d.b;
             boolean z = d.c;
-            setTheme(new edjt(edjs.b(this), v).c("", !v));
+            setTheme(new efwo(efwn.b(this), v).c("", !v));
         } else {
             setTheme(R.style.BackupGlifV3DayNight);
         }
@@ -557,64 +557,64 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
         this.m = (TextView) findViewById(R.id.set_backup_account_description_body);
         this.u = (TextView) findViewById(R.id.backup_account);
         this.v = (Button) findViewById(R.id.change_backup_account);
-        this.p = new ahhp(this);
-        this.x = new ahpv(this);
-        this.z = eswu.a;
-        this.B = eswh.a.v();
-        this.A = ajmx.x();
-        fecj v2 = eswm.a.v();
+        this.p = new ajif(this);
+        this.x = new ajql(this);
+        this.z = evmk.a;
+        this.B = evlx.a.v();
+        this.A = alnp.x();
+        fgrc v2 = evmc.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar = v2.b;
-        eswm eswmVar = (eswm) fecpVar;
-        eswmVar.b |= 2;
-        eswmVar.d = true;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v2.b;
+        evmc evmcVar = (evmc) fgriVar;
+        evmcVar.b |= 2;
+        evmcVar.d = true;
+        if (!fgriVar.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        eswm eswmVar2 = (eswm) fecpVar2;
-        eswmVar2.b |= 4;
-        eswmVar2.e = true;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v2.b;
+        evmc evmcVar2 = (evmc) fgriVar2;
+        evmcVar2.b |= 4;
+        evmcVar2.e = true;
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        eswm eswmVar3 = (eswm) v2.b;
-        eswmVar3.b |= 8;
-        eswmVar3.f = true;
-        boolean b = ahrj.b();
+        evmc evmcVar3 = (evmc) v2.b;
+        evmcVar3.b |= 8;
+        evmcVar3.f = true;
+        boolean b = ajsa.b();
         if (!v2.b.L()) {
             v2.U();
         }
-        eswm eswmVar4 = (eswm) v2.b;
-        eswmVar4.b |= 32;
-        eswmVar4.h = b;
-        this.r = (eswm) v2.Q();
-        edfq edfqVar = (edfq) this.k.q(edfq.class);
-        edfr edfrVar = new edfr(this);
-        edfrVar.c = 5;
-        edfrVar.d = R.style.SudGlifButton_Primary;
-        edfqVar.b(edfrVar.a());
-        edfr edfrVar2 = new edfr(this);
-        edfrVar2.c = 7;
-        edfrVar2.d = R.style.SudGlifButton_Secondary;
-        edfqVar.c(edfrVar2.a());
-        this.n = edfqVar.i;
-        edfs edfsVar = edfqVar.j;
-        this.o = edfsVar;
-        edfsVar.d(getString(R.string.common_turn_off));
+        evmc evmcVar4 = (evmc) v2.b;
+        evmcVar4.b |= 32;
+        evmcVar4.h = b;
+        this.r = (evmc) v2.Q();
+        efsl efslVar = (efsl) this.k.q(efsl.class);
+        efsm efsmVar = new efsm(this);
+        efsmVar.c = 5;
+        efsmVar.d = R.style.SudGlifButton_Primary;
+        efslVar.b(efsmVar.a());
+        efsm efsmVar2 = new efsm(this);
+        efsmVar2.c = 7;
+        efsmVar2.d = R.style.SudGlifButton_Secondary;
+        efslVar.c(efsmVar2.a());
+        this.n = efslVar.i;
+        efsn efsnVar = efslVar.j;
+        this.o = efsnVar;
+        efsnVar.d(getString(R.string.common_turn_off));
         l();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         j.j("onNewIntent", new Object[0]);
         super.onNewIntent(intent);
         setIntent(intent);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         j.j("onPause", new Object[0]);
         AsyncTask asyncTask = this.w;
@@ -625,11 +625,11 @@ public class SetBackupAccountFlowChimeraActivity extends qfp implements ajmw {
         super.onPause();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         j.j("onResume", new Object[0]);
         super.onResume();
-        if (this.x.k()) {
+        if (this.x.j()) {
             l();
         } else {
             k();

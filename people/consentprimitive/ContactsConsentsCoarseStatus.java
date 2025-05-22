@@ -3,18 +3,18 @@ package com.google.android.gms.people.consentprimitive;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ctta;
-import defpackage.eihn;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.atzr;
+import defpackage.cwcg;
+import defpackage.ekus;
+import defpackage.elgo;
+import defpackage.elpg;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ContactsConsentsCoarseStatus extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctta();
+    public static final Parcelable.Creator CREATOR = new cwcg();
     public final boolean a;
     public final boolean b;
     public final String c;
@@ -33,22 +33,22 @@ public final class ContactsConsentsCoarseStatus extends AbstractSafeParcelable {
         this.g = list3;
     }
 
-    public final eitj a() {
+    public final elgo a() {
         List list = this.e;
         if (list != null) {
-            return eitj.i(list);
+            return elgo.i(list);
         }
-        int i = eitj.d;
-        return ejcb.a;
+        int i = elgo.d;
+        return elpg.a;
     }
 
     public final List b() {
         List list = this.g;
         if (list != null) {
-            return eitj.i(list);
+            return elgo.i(list);
         }
-        int i = eitj.d;
-        return ejcb.a;
+        int i = elgo.d;
+        return elpg.a;
     }
 
     public final boolean equals(Object obj) {
@@ -59,7 +59,7 @@ public final class ContactsConsentsCoarseStatus extends AbstractSafeParcelable {
             return false;
         }
         ContactsConsentsCoarseStatus contactsConsentsCoarseStatus = (ContactsConsentsCoarseStatus) obj;
-        return this.a == contactsConsentsCoarseStatus.a && this.b == contactsConsentsCoarseStatus.b && eihn.a(this.f, contactsConsentsCoarseStatus.f) && eihn.a(this.e, contactsConsentsCoarseStatus.e) && eihn.a(this.c, contactsConsentsCoarseStatus.c) && this.d == contactsConsentsCoarseStatus.d && eihn.a(this.g, contactsConsentsCoarseStatus.g);
+        return this.a == contactsConsentsCoarseStatus.a && this.b == contactsConsentsCoarseStatus.b && ekus.a(this.f, contactsConsentsCoarseStatus.f) && ekus.a(this.e, contactsConsentsCoarseStatus.e) && ekus.a(this.c, contactsConsentsCoarseStatus.c) && this.d == contactsConsentsCoarseStatus.d && ekus.a(this.g, contactsConsentsCoarseStatus.g);
     }
 
     public final int hashCode() {
@@ -68,23 +68,23 @@ public final class ContactsConsentsCoarseStatus extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        eitj i2;
+        elgo i2;
         boolean z = this.a;
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, z);
-        arxc.e(parcel, 2, this.b);
-        arxc.y(parcel, 3, a(), false);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, z);
+        atzr.e(parcel, 2, this.b);
+        atzr.y(parcel, 3, a(), false);
         List list = this.f;
         if (list == null) {
-            int i3 = eitj.d;
-            i2 = ejcb.a;
+            int i3 = elgo.d;
+            i2 = elpg.a;
         } else {
-            i2 = eitj.i(list);
+            i2 = elgo.i(list);
         }
-        arxc.y(parcel, 4, i2, false);
-        arxc.v(parcel, 5, this.c, false);
-        arxc.e(parcel, 6, this.d);
-        arxc.y(parcel, 7, b(), false);
-        arxc.c(parcel, a);
+        atzr.y(parcel, 4, i2, false);
+        atzr.v(parcel, 5, this.c, false);
+        atzr.e(parcel, 6, this.d);
+        atzr.y(parcel, 7, b(), false);
+        atzr.c(parcel, a);
     }
 }

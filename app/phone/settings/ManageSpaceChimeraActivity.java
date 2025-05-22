@@ -21,44 +21,44 @@ import com.google.android.gms.R;
 import com.google.android.gms.app.phone.settings.ManageSpaceChimeraActivity;
 import com.google.android.gms.credential.manager.invocationparams.CallerInfo;
 import com.google.android.gms.credential.manager.invocationparams.CredentialManagerAccount;
-import defpackage.aqwv;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asqh;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.bzff;
-import defpackage.cyjo;
-import defpackage.cylp;
-import defpackage.dfae;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.djks;
-import defpackage.dxpj;
-import defpackage.dxpm;
-import defpackage.dxpo;
-import defpackage.dxpu;
-import defpackage.dxqz;
-import defpackage.eiig;
-import defpackage.eijr;
-import defpackage.fmxu;
-import defpackage.fpzx;
-import defpackage.fvbo;
-import defpackage.ips;
-import defpackage.jpc;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.tow;
-import defpackage.tox;
-import defpackage.tpe;
-import defpackage.tpf;
+import defpackage.aszk;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.auub;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.cbnw;
+import defpackage.datm;
+import defpackage.davn;
+import defpackage.dhlk;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.dlwl;
+import defpackage.eabk;
+import defpackage.eabn;
+import defpackage.eabp;
+import defpackage.eabv;
+import defpackage.eada;
+import defpackage.ekvl;
+import defpackage.ekww;
+import defpackage.fppt;
+import defpackage.fstu;
+import defpackage.fxxm;
+import defpackage.iri;
+import defpackage.jvr;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.vkw;
+import defpackage.vkx;
+import defpackage.vle;
+import defpackage.vlf;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ManageSpaceChimeraActivity extends qet implements View.OnClickListener {
+public class ManageSpaceChimeraActivity extends rxx implements View.OnClickListener {
     public TextView j;
     public TextView k;
     public TextView l;
@@ -67,24 +67,24 @@ public class ManageSpaceChimeraActivity extends qet implements View.OnClickListe
     private CharSequence o;
     private Button p;
     private TextView q;
-    private tow r;
-    private bqqa s;
+    private vkw r;
+    private bsxr s;
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
         if (view == this.m) {
-            bqqa.a(aseu.CORE_PHONE_STORAGE_MANAGE_ICING);
+            bsxr.a(auio.CORE_PHONE_STORAGE_MANAGE_ICING);
             startActivity(new Intent().setClassName(this, "com.google.android.gms.icing.ui.IcingManageSpaceActivity"));
             return;
         }
         if (view == this.n) {
-            bqqa.a(aseu.CORE_PHONE_STORAGE_CLEAR_DATA);
-            String str = (String) this.r.i.hT();
-            eiig.x(str);
-            new AlertDialog.Builder(this).setTitle(getText(R.string.icing_storage_management_clear_all_data_dlg_title)).setIconAttribute(android.R.attr.alertDialogIcon).setMessage(Html.fromHtml(str)).setPositiveButton(R.string.common_ui_confirm_deleting_button, new DialogInterface.OnClickListener() { // from class: tpa
+            bsxr.a(auio.CORE_PHONE_STORAGE_CLEAR_DATA);
+            String str = (String) this.r.i.ii();
+            ekvl.y(str);
+            new AlertDialog.Builder(this).setTitle(getText(R.string.icing_storage_management_clear_all_data_dlg_title)).setIconAttribute(android.R.attr.alertDialogIcon).setMessage(Html.fromHtml(str)).setPositiveButton(R.string.common_ui_confirm_deleting_button, new DialogInterface.OnClickListener() { // from class: vla
                 @Override // android.content.DialogInterface.OnClickListener
                 public final void onClick(DialogInterface dialogInterface, int i) {
-                    boolean a = fndr.a.a().a();
+                    boolean a = fpvq.a.lK().a();
                     ManageSpaceChimeraActivity manageSpaceChimeraActivity = ManageSpaceChimeraActivity.this;
                     if (!a) {
                         ContentValues contentValues = new ContentValues();
@@ -93,42 +93,42 @@ public class ManageSpaceChimeraActivity extends qet implements View.OnClickListe
                         manageSpaceChimeraActivity.getContentResolver().update(new Uri.Builder().scheme("content").authority("com.google.android.gsf.gservices").appendPath("override").build(), contentValues, null, null);
                     }
                     ActivityManager activityManager = (ActivityManager) manageSpaceChimeraActivity.getSystemService("activity");
-                    eike.e(activityManager);
+                    ekxj.e(activityManager);
                     activityManager.clearApplicationUserData();
                 }
             }).setNegativeButton(android.R.string.cancel, (DialogInterface.OnClickListener) null).show();
             return;
         }
         if (view == this.p) {
-            bqqa.a(aseu.CORE_PHONE_STORAGE_MANAGE_WEARABLE);
+            bsxr.a(auio.CORE_PHONE_STORAGE_MANAGE_WEARABLE);
             startActivity(new Intent("com.google.android.gms.wearable.STORAGE_SETTINGS").setPackage(getPackageName()));
         } else if (view == this.q) {
-            bqqa.a(aseu.CORE_PHONE_STORAGE_MANAGE_PASSWORDS);
-            dfaq a = this.r.c.a(new CredentialManagerAccount("pwm.constant.LocalAccount"), new CallerInfo("gmscore", "android", "gmscore_deletion_dialog", ""));
-            a.z(new dfak() { // from class: tor
-                @Override // defpackage.dfak
-                public final void gn(Object obj) {
-                    tow.a((PendingIntent) obj);
+            bsxr.a(auio.CORE_PHONE_STORAGE_MANAGE_PASSWORDS);
+            dhlw a = this.r.c.a(new CredentialManagerAccount("pwm.constant.LocalAccount"), new CallerInfo("gmscore", "android", "gmscore_deletion_dialog", ""));
+            a.z(new dhlq() { // from class: vkr
+                @Override // defpackage.dhlq
+                public final void gC(Object obj) {
+                    vkw.a((PendingIntent) obj);
                 }
             });
-            a.y(new dfah() { // from class: tos
-                @Override // defpackage.dfah
-                public final void gm(Exception exc) {
-                    ((ejhf) ((ejhf) tow.a.j()).s(exc)).x("Error getting credential manager intent");
+            a.y(new dhln() { // from class: vks
+                @Override // defpackage.dhln
+                public final void gB(Exception exc) {
+                    ((eluo) ((eluo) vkw.a.j()).s(exc)).x("Error getting credential manager intent");
                 }
             });
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        if (fpzx.c() && asqh.c()) {
+        if (fstu.c() && auub.c()) {
             startActivity(new Intent().setClassName("com.google.android.gms", "com.google.android.gms.managestorage.ui.ManageStorageActivity"));
             finish();
         }
         super.onCreate(bundle);
         setContentView(R.layout.manage_space_activity);
-        int i = ips.a;
+        int i = iri.a;
         this.o = getText(R.string.storage_managment_computing_size);
         this.j = (TextView) findViewById(R.id.icing_storage_size_text);
         Button button = (Button) findViewById(R.id.manage_icing_storage);
@@ -151,69 +151,70 @@ public class ManageSpaceChimeraActivity extends qet implements View.OnClickListe
         this.q = textView3;
         textView3.setOnClickListener(this);
         ((TextView) findViewById(R.id.all_storage_description)).setText(R.string.storage_management_all_storage_descriptive_text_new);
-        tow towVar = (tow) new jrh(this, new tox(this)).a(tow.class);
-        this.r = towVar;
-        towVar.e.g(this, new jpd() { // from class: tpc
-            @Override // defpackage.jpd
+        vkw vkwVar = (vkw) new jxw(this, new vkx(this)).a(vkw.class);
+        this.r = vkwVar;
+        vkwVar.e.g(this, new jvs() { // from class: vlc
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 linearLayout.setVisibility(true != ((Boolean) obj).booleanValue() ? 8 : 0);
             }
         });
-        jpc jpcVar = this.r.f;
+        jvr jvrVar = this.r.f;
         Objects.requireNonNull(textView);
-        jpcVar.g(this, new jpd() { // from class: tpd
-            @Override // defpackage.jpd
+        jvrVar.g(this, new jvs() { // from class: vld
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 textView.setText((String) obj);
             }
         });
-        this.r.g.g(this, new jpd() { // from class: tpc
-            @Override // defpackage.jpd
+        this.r.g.g(this, new jvs() { // from class: vlc
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 linearLayout2.setVisibility(true != ((Boolean) obj).booleanValue() ? 8 : 0);
             }
         });
-        jpc jpcVar2 = this.r.h;
+        jvr jvrVar2 = this.r.h;
         Objects.requireNonNull(textView2);
-        jpcVar2.g(this, new jpd() { // from class: tpd
-            @Override // defpackage.jpd
+        jvrVar2.g(this, new jvs() { // from class: vld
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 textView2.setText((String) obj);
             }
         });
-        jpc jpcVar3 = this.r.j;
+        jvr jvrVar3 = this.r.j;
         final TextView textView4 = this.q;
-        jpcVar3.g(this, new jpd() { // from class: tpc
-            @Override // defpackage.jpd
+        jvrVar3.g(this, new jvs() { // from class: vlc
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 textView4.setVisibility(true != ((Boolean) obj).booleanValue() ? 8 : 0);
             }
         });
-        eijr eijrVar = bqqe.a;
-        this.s = new bqqa();
-        dxpj.d(this, new dxqz() { // from class: tpb
-            @Override // defpackage.dxqz
-            public final ftwe a(String str) {
-                return ftwg.k(str, 443).a();
+        ekww ekwwVar = bsxv.a;
+        this.s = new bsxr();
+        eabk.d(this, new eada() { // from class: vlb
+            @Override // defpackage.eada
+            public final fwsc a(String str) {
+                return fwse.k(str, 443).a();
             }
         });
         Activity containerActivity = getContainerActivity();
-        asej asejVar = asej.CORE;
-        fvbo.f(containerActivity, "activity");
-        fvbo.f(asejVar, "serviceId");
-        bzff bzffVar = new bzff(containerActivity, R.id.prompt_parent_sheet, asejVar, dxpo.FIRST_CARD_NON_MODAL, dxpm.CARD, null, null, null, null);
+        auid auidVar = auid.CORE;
+        fxxm.f(containerActivity, "activity");
+        fxxm.f(auidVar, "serviceId");
+        cbnw cbnwVar = new cbnw(containerActivity, R.id.prompt_parent_sheet, auidVar, eabp.FIRST_CARD_NON_MODAL, eabn.CARD, null, null, null, null);
         Activity containerActivity2 = getContainerActivity();
-        String a = fmxu.a.a().a();
+        fppt fpptVar = fppt.a;
+        String a = fpptVar.lK().a();
         if (containerActivity2 == null) {
             throw new IllegalArgumentException("Client context is not set.");
         }
         if (TextUtils.isEmpty(a)) {
             throw new IllegalArgumentException("Trigger ID cannot be null or empty.");
         }
-        dxpj.c(new dxpu(containerActivity2, a, bzffVar, "AIzaSyAP-gfH3qvi6vgHZbSYwQ_XHqV_mXHhzIk", null, fmxu.a.a().b()));
+        eabk.c(new eabv(containerActivity2, a, cbnwVar, "AIzaSyAP-gfH3qvi6vgHZbSYwQ_XHqV_mXHhzIk", null, fpptVar.lK().b()));
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         this.j.setText(this.o);
@@ -221,75 +222,75 @@ public class ManageSpaceChimeraActivity extends qet implements View.OnClickListe
         if (textView != null) {
             textView.setText(this.o);
         }
-        aqwv aqwvVar = cyjo.a;
-        dfaq a = new cylp(this).a();
-        a.z(new tpe(this));
-        a.y(new dfah() { // from class: toy
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        aszk aszkVar = datm.a;
+        dhlw a = new davn(this).a();
+        a.z(new vle(this));
+        a.y(new dhln() { // from class: vky
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 Log.e("ManageSpaceActivity", "Unable to connect to Google Play Services for icing storage info.");
             }
         });
-        dfaq ba = djks.c(this).ba();
-        ba.z(new tpf(this));
-        ba.y(new dfah() { // from class: toz
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        dhlw aZ = dlwl.c(this).aZ();
+        aZ.z(new vlf(this));
+        aZ.y(new dhln() { // from class: vkz
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 Log.e("ManageSpaceActivity", "Unable to connect to Google Play Services for wearble storage info.");
             }
         });
-        final tow towVar = this.r;
-        if (towVar.d != null) {
+        final vkw vkwVar = this.r;
+        if (vkwVar.d != null) {
             return;
         }
-        towVar.e.l(true);
-        jpc jpcVar = towVar.f;
-        Context context = towVar.b;
-        jpcVar.l(context.getString(R.string.storage_managment_computing_size));
-        towVar.g.l(false);
-        towVar.i.l(context.getString(R.string.icing_storage_management_clear_all_data_dlg_text_unknown));
-        towVar.j.l(false);
-        dfaq b = towVar.l.b(Bundle.EMPTY);
-        b.z(new dfak() { // from class: tot
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
-                int size = ((eitj) obj).size();
-                tow towVar2 = tow.this;
-                towVar2.e.l(true);
+        vkwVar.e.l(true);
+        jvr jvrVar = vkwVar.f;
+        Context context = vkwVar.b;
+        jvrVar.l(context.getString(R.string.storage_managment_computing_size));
+        vkwVar.g.l(false);
+        vkwVar.i.l(context.getString(R.string.icing_storage_management_clear_all_data_dlg_text_unknown));
+        vkwVar.j.l(false);
+        dhlw b = vkwVar.l.b(Bundle.EMPTY);
+        b.z(new dhlq() { // from class: vkt
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
+                int size = ((elgo) obj).size();
+                vkw vkwVar2 = vkw.this;
+                vkwVar2.e.l(true);
                 Integer valueOf = Integer.valueOf(size);
-                Context context2 = towVar2.b;
-                towVar2.f.l(context2.getString(R.string.storage_management_nr_local_passwords, valueOf));
-                towVar2.h.l(context2.getResources().getQuantityString(R.plurals.storage_management_nr_local_passwords_will_be_deleted, size, valueOf));
+                Context context2 = vkwVar2.b;
+                vkwVar2.f.l(context2.getString(R.string.storage_management_nr_local_passwords, valueOf));
+                vkwVar2.h.l(context2.getResources().getQuantityString(R.plurals.storage_management_nr_local_passwords_will_be_deleted, size, valueOf));
                 boolean z = size > 0;
-                jpc jpcVar2 = towVar2.g;
+                jvr jvrVar2 = vkwVar2.g;
                 Boolean valueOf2 = Boolean.valueOf(z);
-                jpcVar2.l(valueOf2);
-                towVar2.j.l(valueOf2);
+                jvrVar2.l(valueOf2);
+                vkwVar2.j.l(valueOf2);
                 String string = size == 0 ? context2.getString(R.string.icing_storage_management_clear_all_data_dlg_text_new) : context2.getResources().getQuantityString(R.plurals.icing_storage_management_clear_all_data_dlg_text_with_passwords, size, valueOf);
-                towVar2.i.l(string);
-                towVar2.k.l(string);
+                vkwVar2.i.l(string);
+                vkwVar2.k.l(string);
             }
         });
-        b.y(new dfah() { // from class: tou
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
-                ((ejhf) ((ejhf) tow.a.j()).s(exc)).x("Could not get number of local passwords");
-                tow towVar2 = tow.this;
-                towVar2.e.l(false);
-                Context context2 = towVar2.b;
-                towVar2.h.l(context2.getString(R.string.storage_management_nr_local_passwords_will_be_deleted_unknown));
-                towVar2.g.l(true);
-                towVar2.i.l(context2.getString(R.string.icing_storage_management_clear_all_data_dlg_text_unknown));
-                towVar2.j.l(true);
-                towVar2.k.l(context2.getString(R.string.icing_storage_management_clear_all_data_dlg_text_unknown));
+        b.y(new dhln() { // from class: vku
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                ((eluo) ((eluo) vkw.a.j()).s(exc)).x("Could not get number of local passwords");
+                vkw vkwVar2 = vkw.this;
+                vkwVar2.e.l(false);
+                Context context2 = vkwVar2.b;
+                vkwVar2.h.l(context2.getString(R.string.storage_management_nr_local_passwords_will_be_deleted_unknown));
+                vkwVar2.g.l(true);
+                vkwVar2.i.l(context2.getString(R.string.icing_storage_management_clear_all_data_dlg_text_unknown));
+                vkwVar2.j.l(true);
+                vkwVar2.k.l(context2.getString(R.string.icing_storage_management_clear_all_data_dlg_text_unknown));
             }
         });
-        b.x(new dfae() { // from class: tov
-            @Override // defpackage.dfae
-            public final void hr(dfaq dfaqVar) {
-                tow.this.d = null;
+        b.x(new dhlk() { // from class: vkv
+            @Override // defpackage.dhlk
+            public final void hH(dhlw dhlwVar) {
+                vkw.this.d = null;
             }
         });
-        towVar.d = b;
+        vkwVar.d = b;
     }
 }

@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxel;
+import defpackage.atyq;
+import defpackage.czoh;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class LocationEntity extends AbstractSafeParcelable implements Location {
-    public static final Parcelable.Creator CREATOR = new cxel();
+    public static final Parcelable.Creator CREATOR = new czoh();
     public final Double a;
     public final Double b;
     public final String c;
@@ -38,7 +38,7 @@ public class LocationEntity extends AbstractSafeParcelable implements Location {
     }
 
     public static boolean k(Location location, Location location2) {
-        return arwb.b(location.d(), location2.d()) && arwb.b(location.e(), location2.e()) && arwb.b(location.j(), location2.j()) && arwb.b(location.g(), location2.g()) && arwb.b(location.f(), location2.f()) && arwb.b(location.c(), location2.c()) && arwb.b(location.h(), location2.h()) && arwb.b(location.a(), location2.a()) && arwb.b(location.i(), location2.i());
+        return atyq.b(location.d(), location2.d()) && atyq.b(location.e(), location2.e()) && atyq.b(location.j(), location2.j()) && atyq.b(location.g(), location2.g()) && atyq.b(location.f(), location2.f()) && atyq.b(location.c(), location2.c()) && atyq.b(location.h(), location2.h()) && atyq.b(location.a(), location2.a()) && atyq.b(location.i(), location2.i());
     }
 
     @Override // com.google.android.gms.reminders.model.Location
@@ -102,7 +102,7 @@ public class LocationEntity extends AbstractSafeParcelable implements Location {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxel.a(this, parcel, i);
+        czoh.a(this, parcel, i);
     }
 
     public LocationEntity(Location location) {
@@ -126,7 +126,7 @@ public class LocationEntity extends AbstractSafeParcelable implements Location {
         this.h = a != null ? new AddressEntity(a) : null;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

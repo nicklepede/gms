@@ -7,15 +7,15 @@ import android.os.Parcelable;
 import android.telecom.GatewayInfo;
 import android.telecom.PhoneAccountHandle;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.akpr;
-import defpackage.akps;
-import defpackage.arxc;
+import defpackage.amrc;
+import defpackage.amrd;
+import defpackage.atzr;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CarCall extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new akpr();
+    public static final Parcelable.Creator CREATOR = new amrc();
     public final int a;
     public CarCall b;
     public List c;
@@ -28,9 +28,9 @@ public class CarCall extends AbstractSafeParcelable {
     public final List h;
     public final List i;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Details extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new akps();
+        public static final Parcelable.Creator CREATOR = new amrd();
         public Uri a;
         public String b;
         public String c;
@@ -58,21 +58,21 @@ public class CarCall extends AbstractSafeParcelable {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            int a = arxc.a(parcel);
-            arxc.t(parcel, 1, this.a, i, false);
-            arxc.v(parcel, 2, this.b, false);
-            arxc.v(parcel, 3, this.c, false);
-            arxc.q(parcel, 4, this.d);
-            arxc.t(parcel, 5, this.e, i, false);
-            arxc.t(parcel, 6, this.f, i, false);
-            arxc.o(parcel, 7, this.g);
-            arxc.t(parcel, 8, this.h, i, false);
-            arxc.o(parcel, 9, this.i);
-            arxc.g(parcel, 10, this.j, false);
-            arxc.g(parcel, 11, this.k, false);
-            arxc.o(parcel, 12, this.l);
-            arxc.t(parcel, 13, this.m, i, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.t(parcel, 1, this.a, i, false);
+            atzr.v(parcel, 2, this.b, false);
+            atzr.v(parcel, 3, this.c, false);
+            atzr.q(parcel, 4, this.d);
+            atzr.t(parcel, 5, this.e, i, false);
+            atzr.t(parcel, 6, this.f, i, false);
+            atzr.o(parcel, 7, this.g);
+            atzr.t(parcel, 8, this.h, i, false);
+            atzr.o(parcel, 9, this.i);
+            atzr.g(parcel, 10, this.j, false);
+            atzr.g(parcel, 11, this.k, false);
+            atzr.o(parcel, 12, this.l);
+            atzr.t(parcel, 13, this.m, i, false);
+            atzr.c(parcel, a);
         }
 
         public Details(Uri uri, String str, String str2, long j, Uri uri2, Uri uri3, int i, PhoneAccountHandle phoneAccountHandle, int i2, Bundle bundle, Bundle bundle2, int i3, GatewayInfo gatewayInfo) {
@@ -118,16 +118,16 @@ public class CarCall extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.x(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.o(parcel, 5, this.e);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.e(parcel, 7, this.g);
-        arxc.y(parcel, 8, this.h, false);
-        arxc.y(parcel, 9, this.i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.x(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.o(parcel, 5, this.e);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.e(parcel, 7, this.g);
+        atzr.y(parcel, 8, this.h, false);
+        atzr.y(parcel, 9, this.i, false);
+        atzr.c(parcel, a);
     }
 }

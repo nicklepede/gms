@@ -2,12 +2,12 @@ package com.google.android.gms.location.settings;
 
 import com.google.android.chimera.SettingInjectorService;
 import com.google.android.gms.R;
-import defpackage.asqh;
-import defpackage.bwth;
-import defpackage.camc;
-import defpackage.fvbo;
+import defpackage.auub;
+import defpackage.bzbx;
+import defpackage.ccus;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class LocationAccuracyNonwearableChimeraInjectorService extends SettingInjectorService {
     public LocationAccuracyNonwearableChimeraInjectorService() {
@@ -16,16 +16,16 @@ public class LocationAccuracyNonwearableChimeraInjectorService extends SettingIn
 
     @Override // com.google.android.chimera.SettingInjectorService
     public final boolean onGetEnabled() {
-        return camc.a() && !bwth.o(this);
+        return ccus.a() && !bzbx.o(this);
     }
 
     @Override // com.google.android.chimera.SettingInjectorService
     public final String onGetSummary() {
-        if (!asqh.f()) {
+        if (!auub.f()) {
             return "";
         }
-        String string = getString(true != bwth.r(this) ? R.string.location_accuracy_summary_text_off : R.string.location_accuracy_summary_text_on);
-        fvbo.c(string);
+        String string = getString(true != bzbx.s(this) ? R.string.location_accuracy_summary_text_off : R.string.location_accuracy_summary_text_on);
+        fxxm.c(string);
         return string;
     }
 }

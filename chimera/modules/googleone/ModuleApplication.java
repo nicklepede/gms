@@ -1,11 +1,11 @@
 package com.google.android.gms.chimera.modules.googleone;
 
 import android.content.Context;
-import defpackage.aopv;
+import defpackage.aqsu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class ModuleApplication extends aopv {
+public final class ModuleApplication extends aqsu {
     private static volatile ModuleApplication a;
 
     public static ModuleApplication getInstance(Context context) {

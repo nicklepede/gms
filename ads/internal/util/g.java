@@ -2,7 +2,7 @@ package com.google.android.gms.ads.internal.util;
 
 import android.content.SharedPreferences;
 import android.os.Looper;
-import defpackage.enss;
+import defpackage.eqgl;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -13,14 +13,14 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class g {
     public int A;
     public int B;
     public long C;
     public boolean b;
-    public enss d;
+    public eqgl d;
     public SharedPreferences f;
     public SharedPreferences.Editor g;
     public String i;
@@ -61,8 +61,8 @@ public final class g {
     }
 
     public final void a() {
-        enss enssVar = this.d;
-        if (enssVar == null || enssVar.isDone()) {
+        eqgl eqglVar = this.d;
+        if (eqglVar == null || eqglVar.isDone()) {
             return;
         }
         try {

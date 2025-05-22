@@ -4,65 +4,65 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.view.autofill.AutofillId;
 import com.google.android.gms.autofill.metrics.MetricsContext;
-import defpackage.abnj$$ExternalSyntheticApiModelOutline0;
-import defpackage.affv;
-import defpackage.affw;
-import defpackage.afmu;
-import defpackage.afqt;
-import defpackage.afqu;
-import defpackage.afra;
-import defpackage.afrk;
-import defpackage.eiid;
-import defpackage.eite;
-import defpackage.eitj;
+import defpackage.abnm$$ExternalSyntheticApiModelOutline0;
+import defpackage.ahgh;
+import defpackage.ahgi;
+import defpackage.ahng;
+import defpackage.ahrf;
+import defpackage.ahrg;
+import defpackage.ahrm;
+import defpackage.ahrw;
+import defpackage.ekvi;
+import defpackage.elgj;
+import defpackage.elgo;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class MetricsContextImpl implements MetricsContext {
-    public static final Parcelable.Creator CREATOR = new affv();
+    public static final Parcelable.Creator CREATOR = new ahgh();
     public final HashMap a = new HashMap();
-    public final eite b;
+    public final elgj b;
     public AtomicInteger c;
     public int d;
     private final int e;
-    private final afmu f;
-    private final afrk g;
+    private final ahng f;
+    private final ahrw g;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class FillContextImpl implements MetricsContext.FillContext {
-        public static final Parcelable.Creator CREATOR = new affw();
-        private final eiid a;
-        private final eitj b;
-        private final eiid c;
+        public static final Parcelable.Creator CREATOR = new ahgi();
+        private final ekvi a;
+        private final elgo b;
+        private final ekvi c;
         private final boolean d;
         private final boolean e;
         private final boolean f;
 
-        public FillContextImpl(afra afraVar, List list, afqt afqtVar, boolean z, boolean z2, boolean z3) {
-            this.a = eiid.i(afraVar);
-            this.b = eitj.i(list);
-            this.c = eiid.i(afqtVar);
+        public FillContextImpl(ahrm ahrmVar, List list, ahrf ahrfVar, boolean z, boolean z2, boolean z3) {
+            this.a = ekvi.i(ahrmVar);
+            this.b = elgo.i(list);
+            this.c = ekvi.i(ahrfVar);
             this.d = z;
             this.e = z2;
             this.f = z3;
         }
 
         @Override // com.google.android.gms.autofill.metrics.MetricsContext.FillContext
-        public final eiid a() {
+        public final ekvi a() {
             return this.a;
         }
 
         @Override // com.google.android.gms.autofill.metrics.MetricsContext.FillContext
-        public final eiid b() {
+        public final ekvi b() {
             return this.c;
         }
 
         @Override // com.google.android.gms.autofill.metrics.MetricsContext.FillContext
-        public final eitj c() {
+        public final elgo c() {
             return this.b;
         }
 
@@ -88,21 +88,21 @@ public final class MetricsContextImpl implements MetricsContext {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            eiid eiidVar = this.a;
-            parcel.writeInt(eiidVar.h() ? 1 : 0);
-            if (eiidVar.h()) {
-                parcel.writeByteArray(((afra) eiidVar.c()).r());
+            ekvi ekviVar = this.a;
+            parcel.writeInt(ekviVar.h() ? 1 : 0);
+            if (ekviVar.h()) {
+                parcel.writeByteArray(((ahrm) ekviVar.c()).r());
             }
-            eitj eitjVar = this.b;
-            parcel.writeInt(eitjVar.size());
-            int size = eitjVar.size();
+            elgo elgoVar = this.b;
+            parcel.writeInt(elgoVar.size());
+            int size = elgoVar.size();
             for (int i2 = 0; i2 < size; i2++) {
-                parcel.writeByteArray(((afqu) eitjVar.get(i2)).r());
+                parcel.writeByteArray(((ahrg) elgoVar.get(i2)).r());
             }
-            eiid eiidVar2 = this.c;
-            parcel.writeInt(eiidVar2.h() ? 1 : 0);
-            if (eiidVar2.h()) {
-                parcel.writeInt(((afqt) eiidVar2.c()).a());
+            ekvi ekviVar2 = this.c;
+            parcel.writeInt(ekviVar2.h() ? 1 : 0);
+            if (ekviVar2.h()) {
+                parcel.writeInt(((ahrf) ekviVar2.c()).a());
             }
             parcel.writeInt(this.d ? 1 : 0);
             parcel.writeInt(this.e ? 1 : 0);
@@ -110,14 +110,14 @@ public final class MetricsContextImpl implements MetricsContext {
         }
     }
 
-    public MetricsContextImpl(int i, afmu afmuVar, afrk afrkVar) {
-        int i2 = eitj.d;
-        this.b = new eite();
+    public MetricsContextImpl(int i, ahng ahngVar, ahrw ahrwVar) {
+        int i2 = elgo.d;
+        this.b = new elgj();
         this.c = new AtomicInteger(1);
         this.d = 1;
         this.e = i;
-        this.f = afmuVar;
-        this.g = afrkVar;
+        this.f = ahngVar;
+        this.g = ahrwVar;
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext
@@ -143,7 +143,7 @@ public final class MetricsContextImpl implements MetricsContext {
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext
-    public final afmu d() {
+    public final ahng d() {
         return this.f;
     }
 
@@ -153,12 +153,12 @@ public final class MetricsContextImpl implements MetricsContext {
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext
-    public final afrk e() {
+    public final ahrw e() {
         return this.g;
     }
 
     @Override // com.google.android.gms.autofill.metrics.MetricsContext
-    public final eitj f() {
+    public final elgo f() {
         return this.b.g();
     }
 
@@ -177,7 +177,7 @@ public final class MetricsContextImpl implements MetricsContext {
         HashMap hashMap = this.a;
         parcel.writeInt(hashMap.size());
         for (Map.Entry entry : hashMap.entrySet()) {
-            parcel.writeTypedObject(abnj$$ExternalSyntheticApiModelOutline0.m17m(entry.getKey()), i);
+            parcel.writeTypedObject(abnm$$ExternalSyntheticApiModelOutline0.m16m(entry.getKey()), i);
             parcel.writeInt(((Integer) entry.getValue()).intValue());
         }
         parcel.writeTypedList(this.b.g());

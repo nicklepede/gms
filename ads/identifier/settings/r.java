@@ -1,19 +1,19 @@
 package com.google.android.gms.ads.identifier.settings;
 
 import com.google.android.gms.chimera.modules.ads.AppContextProvider;
-import defpackage.byln;
-import defpackage.fjzz;
+import defpackage.cauf;
+import defpackage.fmqe;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class r implements com.google.android.gms.ads.task.a {
     @Override // com.google.android.gms.ads.task.a
-    public final synchronized int a(byln bylnVar) {
+    public final synchronized int a(cauf caufVar) {
         int i;
         AtomicInteger atomicInteger = p.a;
-        if (fjzz.i() && !p.a()) {
-            if (p.a.incrementAndGet() < fjzz.a.a().j()) {
+        if (fmqe.i() && !p.a()) {
+            if (p.a.incrementAndGet() < fmqe.a.lK().j()) {
                 return 1;
             }
             i = 2;

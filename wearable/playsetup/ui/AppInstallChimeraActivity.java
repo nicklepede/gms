@@ -6,24 +6,24 @@ import android.util.Log;
 import com.google.android.gms.R;
 import com.google.android.gms.wearable.AppTheme;
 import com.google.android.gms.wearable.playsetup.ui.AppInstallChimeraActivity;
-import defpackage.aqxo;
-import defpackage.arwm;
+import defpackage.atad;
+import defpackage.atzb;
 import defpackage.bp;
-import defpackage.dfab;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.djks;
-import defpackage.dkbd;
-import defpackage.dlsx;
-import defpackage.ftjs;
-import defpackage.qet;
+import defpackage.dhlh;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.dlwl;
+import defpackage.dmmw;
+import defpackage.doeo;
+import defpackage.fwfk;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class AppInstallChimeraActivity extends qet {
+public class AppInstallChimeraActivity extends rxx {
     public final void a(AppTheme appTheme, Intent intent) {
-        dkbd.f(appTheme, intent, this);
+        dmmw.f(appTheme, intent, this);
         setContentView(R.layout.wearable_app_install_activity);
         String stringExtra = intent.getStringExtra("node_id");
         if (stringExtra == null) {
@@ -37,7 +37,7 @@ public class AppInstallChimeraActivity extends qet {
         if (Log.isLoggable("Wear_PlaySetup", 3)) {
             Log.d("Wear_PlaySetup", String.format("[AppInstallFragment] newInstance(%s, %s, %s, %b)", appTheme, stringExtra, str, Boolean.valueOf(booleanExtra)));
         }
-        dlsx dlsxVar = new dlsx();
+        doeo doeoVar = new doeo();
         if (Log.isLoggable("Wear_PlaySetup", 3)) {
             Log.d("Wear_PlaySetup", String.format("[AppInstallFragment] initialize(%b)", Boolean.valueOf(booleanExtra)));
         }
@@ -46,12 +46,12 @@ public class AppInstallChimeraActivity extends qet {
         bundle.putString("node_id", stringExtra);
         bundle.putString("caller_id", str);
         bundle.putParcelable("theme", appTheme);
-        dlsxVar.setArguments(bundle);
-        bpVar.z(R.id.fragment_container, dlsxVar, "AppInstallFragment");
+        doeoVar.setArguments(bundle);
+        bpVar.z(R.id.fragment_container, doeoVar, "AppInstallFragment");
         bpVar.a();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         if (Log.isLoggable("Wear_PlaySetup", 3)) {
             Log.d("Wear_PlaySetup", "Received back button event, canceling activity.");
@@ -60,10 +60,10 @@ public class AppInstallChimeraActivity extends qet {
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (!ftjs.a.a().c()) {
+        if (!fwfk.a.lK().c()) {
             Log.w("Wear_PlaySetup", "[AppInstallActivity] Activity invoked but feature is disabled.");
             setResult(2);
             finish();
@@ -83,17 +83,17 @@ public class AppInstallChimeraActivity extends qet {
                 }
             }
         }
-        aqxo d = djks.d(this);
+        atad d = dlwl.d(this);
         if (getCallingPackage() == null) {
-            a(dkbd.d(), intent);
+            a(dmmw.d(), intent);
             return;
         }
         String callingPackage = getCallingPackage();
-        arwm.s(callingPackage);
-        dfaq bd = d.bd(callingPackage);
-        bd.z(new dfak() { // from class: dlsd
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        atzb.s(callingPackage);
+        dhlw bc = d.bc(callingPackage);
+        bc.z(new dhlq() { // from class: dodu
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 AppTheme appTheme = (AppTheme) obj;
                 if (Log.isLoggable("Wear_PlaySetup", 3)) {
                     Log.d("Wear_PlaySetup", "Result: ".concat(String.valueOf(String.valueOf(appTheme))));
@@ -101,19 +101,19 @@ public class AppInstallChimeraActivity extends qet {
                 AppInstallChimeraActivity.this.a(appTheme, intent);
             }
         });
-        bd.y(new dfah() { // from class: dlse
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        bc.y(new dhln() { // from class: dodv
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 if (Log.isLoggable("Wear_PlaySetup", 5)) {
                     Log.w("Wear_PlaySetup", "Did not get app theme result ", exc);
                 }
-                AppInstallChimeraActivity.this.a(dkbd.d(), intent);
+                AppInstallChimeraActivity.this.a(dmmw.d(), intent);
             }
         });
-        bd.a(new dfab() { // from class: dlsf
-            @Override // defpackage.dfab
-            public final void jH() {
-                AppInstallChimeraActivity.this.a(dkbd.d(), intent);
+        bc.a(new dhlh() { // from class: dodw
+            @Override // defpackage.dhlh
+            public final void jX() {
+                AppInstallChimeraActivity.this.a(dmmw.d(), intent);
             }
         });
     }

@@ -14,22 +14,22 @@ import android.view.ViewOutlineProvider;
 import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import com.google.android.chimera.Activity;
+import com.google.android.chimera.android.Activity;
 import com.google.android.gms.wallet.ui.common.WalletExitResult;
 import com.google.android.gms.wallet.ui.component.lineitem.LineItemBundleView;
-import defpackage.dils;
-import defpackage.dilt;
-import defpackage.dilu;
-import defpackage.dilv;
-import defpackage.dilw;
-import defpackage.dimb;
-import defpackage.ding;
-import defpackage.emdq;
-import defpackage.fsxy;
-import defpackage.rpq;
+import defpackage.dkxd;
+import defpackage.dkxe;
+import defpackage.dkxf;
+import defpackage.dkxg;
+import defpackage.dkxh;
+import defpackage.dkxm;
+import defpackage.dkyr;
+import defpackage.eore;
+import defpackage.fvts;
+import defpackage.tiy;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PopoverView extends FrameLayout {
     public boolean A;
@@ -45,8 +45,8 @@ public class PopoverView extends FrameLayout {
     public FrameLayout b;
     public FrameLayout c;
     LinearLayout d;
-    public dimb e;
-    public dils f;
+    public dkxm e;
+    public dkxd f;
     public View g;
     public View h;
     public View i;
@@ -95,18 +95,18 @@ public class PopoverView extends FrameLayout {
         View view;
         Window window;
         LayoutInflater from = LayoutInflater.from(context);
-        int i = ding.j(context).y;
+        int i = dkyr.j(context).y;
         float f = i;
         this.w = 0.67d;
         this.x = 0.3d;
-        boolean f2 = fsxy.a.a().f();
+        boolean f2 = fvts.a.lK().f();
         this.A = f2;
         if (f2) {
             this.B = getResources().getDimensionPixelSize(com.google.android.gms.R.dimen.wallet_popover_corner_radius);
-            this.C = new dilv(this);
-            this.D = new dilw(this);
+            this.C = new dkxg(this);
+            this.D = new dkxh(this);
         }
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.v);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.u);
         this.H = obtainStyledAttributes.getColor(2, context.getResources().getColor(R.color.white));
         this.I = obtainStyledAttributes.getColor(1, context.getResources().getColor(R.color.transparent));
         this.s = obtainStyledAttributes.getBoolean(4, this.s);
@@ -127,9 +127,9 @@ public class PopoverView extends FrameLayout {
         } else {
             this.m = 0;
         }
-        dimb dimbVar = new dimb(context, this);
-        this.e = dimbVar;
-        dimbVar.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
+        dkxm dkxmVar = new dkxm(context, this);
+        this.e = dkxmVar;
+        dkxmVar.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
         LinearLayout linearLayout = new LinearLayout(context);
         this.d = linearLayout;
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(0, -2, 2.0f));
@@ -199,9 +199,9 @@ public class PopoverView extends FrameLayout {
     public final void d(WalletExitResult walletExitResult) {
         this.p = walletExitResult;
         this.q = true;
-        dimb dimbVar = this.e;
-        dimbVar.g = false;
-        if (dimbVar.h || dimbVar.getScrollY() > b()) {
+        dkxm dkxmVar = this.e;
+        dkxmVar.g = false;
+        if (dkxmVar.h || dkxmVar.getScrollY() > b()) {
             this.e.a();
         } else {
             this.e.c();
@@ -209,19 +209,19 @@ public class PopoverView extends FrameLayout {
     }
 
     public final void e(boolean z) {
-        dimb dimbVar = this.e;
-        if (dimbVar.k || dimbVar.l || dimbVar.h) {
+        dkxm dkxmVar = this.e;
+        if (dkxmVar.k || dkxmVar.l || dkxmVar.h) {
             return;
         }
-        dimbVar.k = true;
+        dkxmVar.k = true;
         f(z);
     }
 
     public final void f(boolean z) {
-        dimb dimbVar = this.e;
-        dilu diluVar = new dilu(this, z);
-        int i = dimb.n;
-        dimbVar.d(diluVar);
+        dkxm dkxmVar = this.e;
+        dkxf dkxfVar = new dkxf(this, z);
+        int i = dkxm.n;
+        dkxmVar.d(dkxfVar);
     }
 
     public final void g(int i) {
@@ -237,13 +237,13 @@ public class PopoverView extends FrameLayout {
 
     public final void h(boolean z) {
         this.v = z;
-        dimb dimbVar = this.e;
-        if (dimbVar != null) {
+        dkxm dkxmVar = this.e;
+        if (dkxmVar != null) {
             boolean z2 = false;
             if (z && this.n) {
                 z2 = true;
             }
-            dimbVar.m(z2);
+            dkxmVar.m(z2);
         }
     }
 
@@ -283,13 +283,13 @@ public class PopoverView extends FrameLayout {
             this.l.addView(this.c, 0);
         }
         if (this.h == null) {
-            dimb dimbVar = this.e;
-            int i2 = dimb.n;
-            dimbVar.b();
+            dkxm dkxmVar = this.e;
+            int i2 = dkxm.n;
+            dkxmVar.b();
         } else {
-            dimb dimbVar2 = this.e;
-            int i3 = dimb.n;
-            dimbVar2.e();
+            dkxm dkxmVar2 = this.e;
+            int i3 = dkxm.n;
+            dkxmVar2.e();
         }
     }
 
@@ -301,9 +301,9 @@ public class PopoverView extends FrameLayout {
         this.c.removeAllViews();
         if (!this.n || view == null) {
             this.h = null;
-            dimb dimbVar = this.e;
-            int i = dimb.n;
-            dimbVar.b();
+            dkxm dkxmVar = this.e;
+            int i = dkxm.n;
+            dkxmVar.b();
             return;
         }
         int i2 = this.o;
@@ -316,9 +316,9 @@ public class PopoverView extends FrameLayout {
             lineItemBundleView2.setLayoutParams(new FrameLayout.LayoutParams(-2, -1));
         }
         this.c.addView(this.h);
-        dimb dimbVar2 = this.e;
-        int i3 = dimb.n;
-        dimbVar2.e();
+        dkxm dkxmVar2 = this.e;
+        int i3 = dkxm.n;
+        dkxmVar2.e();
         this.e.h();
     }
 
@@ -364,7 +364,7 @@ public class PopoverView extends FrameLayout {
         this.e.l = bundle.getBoolean("fullScreenState");
         this.e.g = bundle.getBoolean("notifiedOffscreen");
         this.e.d = true;
-        this.F = emdq.a(bundle.getInt("popoverExitAction"));
+        this.F = eore.a(bundle.getInt("popoverExitAction"));
         this.q = bundle.getBoolean("programmaticDismiss");
         this.p = (WalletExitResult) bundle.getParcelable("popoverExitResult");
     }
@@ -373,9 +373,9 @@ public class PopoverView extends FrameLayout {
     protected final Parcelable onSaveInstanceState() {
         Bundle bundle = new Bundle();
         bundle.putParcelable("superInstanceState", super.onSaveInstanceState());
-        dimb dimbVar = this.e;
+        dkxm dkxmVar = this.e;
         boolean z = true;
-        if (!dimbVar.k && !dimbVar.l) {
+        if (!dkxmVar.k && !dkxmVar.l) {
             z = false;
         }
         bundle.putBoolean("pendingFullScreenState", z);
@@ -398,9 +398,9 @@ public class PopoverView extends FrameLayout {
     public final void p(int i) {
         this.F = i;
         this.q = true;
-        dimb dimbVar = this.e;
-        dimbVar.g = false;
-        if (dimbVar.h || dimbVar.getScrollY() > b()) {
+        dkxm dkxmVar = this.e;
+        dkxmVar.g = false;
+        if (dkxmVar.h || dkxmVar.getScrollY() > b()) {
             this.e.a();
         } else {
             this.e.c();
@@ -409,10 +409,10 @@ public class PopoverView extends FrameLayout {
 
     @Override // android.view.View
     public final void scrollTo(int i, int i2) {
-        dimb dimbVar = this.e;
-        dilt diltVar = new dilt(this, i, i2);
-        int i3 = dimb.n;
-        dimbVar.d(diltVar);
+        dkxm dkxmVar = this.e;
+        dkxe dkxeVar = new dkxe(this, i, i2);
+        int i3 = dkxm.n;
+        dkxmVar.d(dkxeVar);
     }
 
     public PopoverView(Context context, AttributeSet attributeSet) {

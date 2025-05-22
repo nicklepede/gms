@@ -1,20 +1,20 @@
 package com.google.android.gms.app.service;
 
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
-import defpackage.anxy;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.eite;
+import defpackage.apzq;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.elgj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class CoreGoogleSettingsIntentOperation extends anxy {
-    private static final asot a = asot.b("CoreGoogleSettingsIO", asej.CORE);
+public class CoreGoogleSettingsIntentOperation extends apzq {
+    private static final ausn a = ausn.b("CoreGoogleSettingsIO", auid.CORE);
     private boolean b;
 
-    private static final void e(eite eiteVar, GoogleSettingsItem googleSettingsItem) {
+    private static final void e(elgj elgjVar, GoogleSettingsItem googleSettingsItem) {
         if (googleSettingsItem != null) {
-            eiteVar.i(googleSettingsItem);
+            elgjVar.i(googleSettingsItem);
         }
     }
 
@@ -24,7 +24,7 @@ public class CoreGoogleSettingsIntentOperation extends anxy {
     /* JADX WARN: Removed duplicated region for block: B:18:0x0186  */
     /* JADX WARN: Removed duplicated region for block: B:22:0x012e  */
     /* JADX WARN: Removed duplicated region for block: B:29:0x00f8  */
-    @Override // defpackage.anxy
+    @Override // defpackage.apzq
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences

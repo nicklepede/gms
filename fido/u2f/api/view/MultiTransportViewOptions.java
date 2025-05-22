@@ -3,9 +3,9 @@ package com.google.android.gms.fido.u2f.api.view;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.fido.common.Transport;
-import defpackage.arxc;
-import defpackage.bcsc;
-import defpackage.bcsm;
+import defpackage.atzr;
+import defpackage.betp;
+import defpackage.betz;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -15,10 +15,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class MultiTransportViewOptions extends ViewOptions {
-    public static final Parcelable.Creator CREATOR = new bcsc();
+    public static final Parcelable.Creator CREATOR = new betp();
     public final int a;
     public final List b;
 
@@ -27,7 +27,7 @@ public class MultiTransportViewOptions extends ViewOptions {
         this.b = list;
     }
 
-    @Override // com.google.android.gms.fido.u2f.api.view.ViewOptions, defpackage.bbji
+    @Override // com.google.android.gms.fido.u2f.api.view.ViewOptions, defpackage.bdnf
     public final JSONObject a() {
         JSONObject a = super.a();
         try {
@@ -54,8 +54,8 @@ public class MultiTransportViewOptions extends ViewOptions {
     }
 
     @Override // com.google.android.gms.fido.u2f.api.view.ViewOptions
-    public final bcsm d() {
-        return bcsm.MULTI_TRANSPORT;
+    public final betz d() {
+        return betz.MULTI_TRANSPORT;
     }
 
     @Override // com.google.android.gms.fido.u2f.api.view.ViewOptions
@@ -82,10 +82,10 @@ public class MultiTransportViewOptions extends ViewOptions {
     @Override // com.google.android.gms.fido.u2f.api.view.ViewOptions, android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.G(parcel, 2, new ArrayList(this.b));
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.G(parcel, 2, new ArrayList(this.b));
+        atzr.c(parcel, a);
     }
 
     public MultiTransportViewOptions(Collection collection) {

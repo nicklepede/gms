@@ -8,20 +8,20 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
-import defpackage.arxo;
-import defpackage.ddth;
-import defpackage.denq;
-import defpackage.dwdg;
-import defpackage.ikb;
-import defpackage.ikd;
+import defpackage.auad;
+import defpackage.dgem;
+import defpackage.dgyt;
+import defpackage.dyph;
+import defpackage.ilr;
+import defpackage.ilt;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class SerializableNotification implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new ddth();
-    private static final arxo m = new denq(new String[]{"Notification", "SerializableNotification"});
+    public static final Parcelable.Creator CREATOR = new dgem();
+    private static final auad m = new dgyt(new String[]{"Notification", "SerializableNotification"});
     public long a;
     public long b;
     public long c;
@@ -69,28 +69,28 @@ public class SerializableNotification implements Parcelable {
     }
 
     public final Notification a(Context context) {
-        ikd ikdVar = new ikd(context);
+        ilt iltVar = new ilt(context);
         CharSequence charSequence = this.d;
         if (charSequence != null) {
-            ikb ikbVar = new ikb();
-            ikbVar.d(charSequence);
-            ikdVar.v(ikbVar);
+            ilr ilrVar = new ilr();
+            ilrVar.d(charSequence);
+            iltVar.o(ilrVar);
         }
         Uri uri = this.e;
         if (uri != null) {
             Intent intent = new Intent("android.intent.action.VIEW", uri);
             intent.setFlags(268435456);
-            ClipData clipData = dwdg.a;
-            ikdVar.g = dwdg.b(context, 0, intent, 201326592);
+            ClipData clipData = dyph.a;
+            iltVar.g = dyph.b(context, 0, intent, 201326592);
         }
-        ikdVar.l(this.f);
-        ikdVar.m(this.g);
-        ikdVar.r(this.h);
-        ikdVar.g(this.i);
-        ikdVar.x(this.j);
-        ikdVar.k(this.k);
-        ikdVar.x = this.l;
-        return ikdVar.b();
+        iltVar.j(this.f);
+        iltVar.r(this.g);
+        iltVar.v(this.h);
+        iltVar.n(this.i);
+        iltVar.z(this.j);
+        iltVar.i(this.k);
+        iltVar.x = this.l;
+        return iltVar.b();
     }
 
     public final String c() {

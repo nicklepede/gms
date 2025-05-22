@@ -2,24 +2,24 @@ package com.google.android.gms.semanticlocationhistory.transientcache.database;
 
 import android.content.Context;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
-import defpackage.bqvy;
-import defpackage.dbmy;
-import defpackage.fryp;
-import defpackage.kpe;
-import defpackage.kpm;
+import defpackage.btdp;
+import defpackage.ddxe;
+import defpackage.futj;
+import defpackage.mhp;
+import defpackage.mhx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public abstract class TransientDatabase extends kpm {
-    private static volatile TransientDatabase l;
+public abstract class TransientDatabase extends mhx {
+    private static volatile TransientDatabase m;
 
     public static synchronized TransientDatabase w() {
         TransientDatabase transientDatabase;
         synchronized (TransientDatabase.class) {
-            if (l == null) {
-                l = x(AppContextProvider.a());
+            if (m == null) {
+                m = x(AppContextProvider.a());
             }
-            transientDatabase = l;
+            transientDatabase = m;
         }
         return transientDatabase;
     }
@@ -27,12 +27,12 @@ public abstract class TransientDatabase extends kpm {
     public static synchronized TransientDatabase x(Context context) {
         TransientDatabase transientDatabase;
         synchronized (TransientDatabase.class) {
-            kpe a = bqvy.a(context, TransientDatabase.class, fryp.a.a().z() ? "semloc_transient_database" : String.format("%s/%s", context.getCacheDir().getAbsolutePath(), "semloc_transient_database"));
+            mhp a = btdp.a(context, TransientDatabase.class, futj.a.lK().z() ? "semloc_transient_database" : String.format("%s/%s", context.getCacheDir().getAbsolutePath(), "semloc_transient_database"));
             a.d();
             transientDatabase = (TransientDatabase) a.a();
         }
         return transientDatabase;
     }
 
-    public abstract dbmy v();
+    public abstract ddxe v();
 }

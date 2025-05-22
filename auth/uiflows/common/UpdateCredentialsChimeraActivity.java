@@ -7,76 +7,76 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import com.google.android.gms.R;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.adko;
-import defpackage.adkt;
-import defpackage.arke;
-import defpackage.arxo;
-import defpackage.jth;
-import defpackage.jti;
-import defpackage.jtu;
-import defpackage.vcw;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.afkv;
+import defpackage.afla;
+import defpackage.atmt;
+import defpackage.auad;
+import defpackage.jzw;
+import defpackage.jzx;
+import defpackage.kaj;
+import defpackage.wyw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class UpdateCredentialsChimeraActivity extends adko implements jth {
-    private static final arxo j = new arxo("Auth", "UpdateCredentialsActivity");
-    private static final aano k = new aano("account_type");
-    private static final aano l = new aano("auth_code");
-    public static final aano h = new aano("token_handle");
-    public static final aano i = new aano("succeeded");
+public class UpdateCredentialsChimeraActivity extends afkv implements jzw {
+    private static final auad j = new auad("Auth", "UpdateCredentialsActivity");
+    private static final acno k = new acno("account_type");
+    private static final acno l = new acno("auth_code");
+    public static final acno h = new acno("token_handle");
+    public static final acno i = new acno("succeeded");
 
-    public static Intent j(Context context, Account account, String str, boolean z, arke arkeVar) {
+    public static Intent j(Context context, Account account, String str, boolean z, atmt atmtVar) {
         Intent className = new Intent().setClassName(context, "com.google.android.gms.auth.uiflows.common.UpdateCredentialsActivity");
-        aanp x = adko.x(arkeVar, z);
+        acnp x = afkv.x(atmtVar, z);
         x.d(k, account);
         x.d(l, str);
         return className.putExtras(x.a);
     }
 
-    @Override // defpackage.jth
-    public final jtu a(int i2, Bundle bundle) {
-        return new adkt(this, (Account) s().a(k), (String) s().a(l), t().c);
+    @Override // defpackage.jzw
+    public final kaj a(int i2, Bundle bundle) {
+        return new afla(this, (Account) s().a(k), (String) s().a(l), t().c);
     }
 
-    @Override // defpackage.jth
-    public final /* bridge */ /* synthetic */ void b(jtu jtuVar, Object obj) {
+    @Override // defpackage.jzw
+    public final /* bridge */ /* synthetic */ void b(kaj kajVar, Object obj) {
         Bundle bundle = (Bundle) obj;
         Account account = (Account) s().a(k);
         if (bundle == null || !bundle.getBoolean(i.a)) {
-            j.m("Failed to update credentials for account: ".concat(String.valueOf(arxo.q(account))), new Object[0]);
-            gD(0, null);
+            j.m("Failed to update credentials for account: ".concat(String.valueOf(auad.q(account))), new Object[0]);
+            gT(0, null);
             return;
         }
-        j.h("Updated credentials for account: ".concat(String.valueOf(arxo.q(account))), new Object[0]);
-        gD(-1, new Intent().putExtras(bundle));
+        j.h("Updated credentials for account: ".concat(String.valueOf(auad.q(account))), new Object[0]);
+        gT(-1, new Intent().putExtras(bundle));
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "UpdateCredentialsActivity";
     }
 
-    @Override // defpackage.adkg
-    protected final void gH() {
-        if (vcw.a.a(this)) {
+    @Override // defpackage.afkn
+    protected final void gX() {
+        if (wyw.a.a(this)) {
             setTheme(R.style.TvMinuteMaidOpaque);
         } else {
-            super.gH();
+            super.gX();
         }
     }
 
-    @Override // defpackage.adko, defpackage.adlg, defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkv, defpackage.afln, defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (vcw.a.a(this)) {
+        if (wyw.a.a(this)) {
             setContentView(LayoutInflater.from(this).inflate(R.layout.auth_tv_suw_glif_activity, (ViewGroup) null));
         }
-        jti.a(this).c(0, null, this);
+        jzx.a(this).c(0, null, this);
     }
 
-    @Override // defpackage.jth
-    public final void c(jtu jtuVar) {
+    @Override // defpackage.jzw
+    public final void c(kaj kajVar) {
     }
 }

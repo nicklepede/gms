@@ -3,22 +3,22 @@ package com.google.android.gms.appset.service;
 import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.eiho;
-import defpackage.emvf;
-import defpackage.emvt;
-import defpackage.emzw;
-import defpackage.emzx;
-import defpackage.enps;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.uii;
-import defpackage.uiv;
+import defpackage.ekut;
+import defpackage.epiv;
+import defpackage.epjj;
+import defpackage.epnn;
+import defpackage.epno;
+import defpackage.eqdl;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.weh;
+import defpackage.weu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AppSetIdProviderChimeraService extends Service {
     public static final String a = "AppSetIdProviderChimeraService";
-    uiv b;
+    weu b;
 
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
@@ -26,96 +26,96 @@ public final class AppSetIdProviderChimeraService extends Service {
             return this.b.onBind(intent);
         } catch (RuntimeException e) {
             long currentTimeMillis = System.currentTimeMillis();
-            emzw emzwVar = (emzw) emzx.a.v();
-            fecj v = emvf.a.v();
+            epnn epnnVar = (epnn) epno.a.v();
+            fgrc v = epiv.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            emvf emvfVar = (emvf) fecpVar;
-            emvfVar.b |= 1;
-            emvfVar.e = currentTimeMillis;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v.b;
+            epiv epivVar = (epiv) fgriVar;
+            epivVar.b |= 1;
+            epivVar.e = currentTimeMillis;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            emvf emvfVar2 = (emvf) v.b;
-            emvfVar2.g = 2;
-            emvfVar2.b |= 4;
-            fecj v2 = emvt.a.v();
+            epiv epivVar2 = (epiv) v.b;
+            epivVar2.g = 2;
+            epivVar2.b |= 4;
+            fgrc v2 = epjj.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            emvt emvtVar = (emvt) v2.b;
-            emvtVar.c = 3;
-            emvtVar.b |= 1;
-            emvt emvtVar2 = (emvt) v2.Q();
+            epjj epjjVar = (epjj) v2.b;
+            epjjVar.c = 3;
+            epjjVar.b |= 1;
+            epjj epjjVar2 = (epjj) v2.Q();
             if (!v.b.L()) {
                 v.U();
             }
-            emvf emvfVar3 = (emvf) v.b;
-            emvtVar2.getClass();
-            emvfVar3.d = emvtVar2;
-            emvfVar3.c = 5;
-            emzwVar.s(v);
-            uii.b((emzx) emzwVar.Q());
+            epiv epivVar3 = (epiv) v.b;
+            epjjVar2.getClass();
+            epivVar3.d = epjjVar2;
+            epivVar3.c = 5;
+            epnnVar.s(v);
+            weh.b((epno) epnnVar.Q());
             throw e;
         }
     }
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        this.b = new uiv();
+        this.b = new weu();
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
         try {
-            uiv uivVar = this.b;
-            if (uivVar.a) {
-                enps.f(uivVar.b, new eiho() { // from class: uit
-                    @Override // defpackage.eiho
+            weu weuVar = this.b;
+            if (weuVar.a) {
+                eqdl.f(weuVar.b, new ekut() { // from class: wes
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        int i = uiv.d;
-                        ((uhr) ((uhx) obj)).c();
+                        int i = weu.d;
+                        ((wdq) ((wdw) obj)).c();
                         return null;
                     }
-                }, uivVar.c);
+                }, weuVar.c);
             }
             super.onDestroy();
         } catch (RuntimeException e) {
             long currentTimeMillis = System.currentTimeMillis();
-            emzw emzwVar = (emzw) emzx.a.v();
-            fecj v = emvf.a.v();
+            epnn epnnVar = (epnn) epno.a.v();
+            fgrc v = epiv.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            emvf emvfVar = (emvf) fecpVar;
-            emvfVar.b |= 1;
-            emvfVar.e = currentTimeMillis;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v.b;
+            epiv epivVar = (epiv) fgriVar;
+            epivVar.b |= 1;
+            epivVar.e = currentTimeMillis;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            emvf emvfVar2 = (emvf) v.b;
-            emvfVar2.g = 2;
-            emvfVar2.b |= 4;
-            fecj v2 = emvt.a.v();
+            epiv epivVar2 = (epiv) v.b;
+            epivVar2.g = 2;
+            epivVar2.b |= 4;
+            fgrc v2 = epjj.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            emvt emvtVar = (emvt) v2.b;
-            emvtVar.c = 6;
-            emvtVar.b |= 1;
-            emvt emvtVar2 = (emvt) v2.Q();
+            epjj epjjVar = (epjj) v2.b;
+            epjjVar.c = 6;
+            epjjVar.b |= 1;
+            epjj epjjVar2 = (epjj) v2.Q();
             if (!v.b.L()) {
                 v.U();
             }
-            emvf emvfVar3 = (emvf) v.b;
-            emvtVar2.getClass();
-            emvfVar3.d = emvtVar2;
-            emvfVar3.c = 5;
-            emzwVar.s(v);
-            uii.b((emzx) emzwVar.Q());
+            epiv epivVar3 = (epiv) v.b;
+            epjjVar2.getClass();
+            epivVar3.d = epjjVar2;
+            epivVar3.c = 5;
+            epnnVar.s(v);
+            weh.b((epno) epnnVar.Q());
             throw e;
         }
     }

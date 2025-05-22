@@ -1,46 +1,46 @@
 package com.google.android.gms.findmydevice.service;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.beym;
-import defpackage.beyn;
-import defpackage.bfdr;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bgzz;
+import defpackage.bhaa;
+import defpackage.bhfh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FindMyDeviceModuleInitIntentOperation extends anya {
-    private final beym a;
+public class FindMyDeviceModuleInitIntentOperation extends apzs {
+    private final bgzz a;
 
     static {
-        asot.b("FindMyDeviceModuleInit", asej.FIND_MY_DEVICE_SPOT);
+        ausn.b("FindMyDeviceModuleInit", auid.FIND_MY_DEVICE_SPOT);
     }
 
     public FindMyDeviceModuleInitIntentOperation() {
-        this(new beyn());
+        this(new bhaa());
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        asng.K("com.google.android.gms.findmydevice.spot.suw.SetupWizardActivity", true);
-        asng.K("com.google.android.gms.findmydevice.spot.locationreporting.taptoid.TapToIdHalfSheetActivity", true);
+        aura.K("com.google.android.gms.findmydevice.spot.suw.SetupWizardActivity", true);
+        aura.K("com.google.android.gms.findmydevice.spot.locationreporting.taptoid.TapToIdHalfSheetActivity", true);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        if (bfdr.c()) {
-            asng.K("com.google.android.gms.findmydevice.spot.wearables.WearableCompanionListenerService", true);
+        if (bhfh.c()) {
+            aura.K("com.google.android.gms.findmydevice.spot.wearables.WearableCompanionListenerService", true);
         }
         this.a.a(getBaseContext());
     }
 
-    public FindMyDeviceModuleInitIntentOperation(beym beymVar) {
-        this.a = beymVar;
+    public FindMyDeviceModuleInitIntentOperation(bgzz bgzzVar) {
+        this.a = bgzzVar;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
     }
 }

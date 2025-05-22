@@ -7,20 +7,20 @@ import android.util.Log;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.common.app.BaseApplicationContext;
 import com.google.android.gms.common.stats.radio.RadiosTracingLoggerProvider;
-import defpackage.ardf;
-import defpackage.ardl;
-import defpackage.arno;
-import defpackage.arnp;
-import defpackage.arnq;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.dmnn;
-import defpackage.dmnx;
-import defpackage.eijr;
-import defpackage.eike;
-import defpackage.fmtg;
-import defpackage.fywa;
+import defpackage.atfu;
+import defpackage.atga;
+import defpackage.atqd;
+import defpackage.atqe;
+import defpackage.atqf;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.dozb;
+import defpackage.dozl;
+import defpackage.ekww;
+import defpackage.ekxj;
+import defpackage.fple;
+import defpackage.gbsu;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentMap;
@@ -28,7 +28,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import org.chromium.net.CronetEngine;
 import org.chromium.net.ExperimentalCronetEngine;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public abstract class BaseApplicationContext extends ContextWrapper {
     private static final String APP_CONTEXT_ATTRIBUTION_TAG = "apkappcontext";
@@ -40,8 +40,8 @@ public abstract class BaseApplicationContext extends ContextWrapper {
     private final Object cronetEngineLockHttp1Only;
     private final BaseApplicationContext globalGmsState;
     private volatile boolean inSafeBoot;
-    private volatile arnq lazyCronetEngine;
-    private volatile arnq lazyCronetEngineHttp1Only;
+    private volatile atqf lazyCronetEngine;
+    private volatile atqf lazyCronetEngineHttp1Only;
     private final Object lazyCronetEngineLock;
     private final Object lazyCronetEngineLockHttp1Only;
     private final Map lockMap;
@@ -54,7 +54,7 @@ public abstract class BaseApplicationContext extends ContextWrapper {
     public ExperimentalCronetEngine getRealCronetEngine() {
         CronetEngine cronetEngine;
         CronetEngine cronetEngine2 = this.cronetEngine;
-        if (cronetEngine2 != null && !(cronetEngine2 instanceof fywa)) {
+        if (cronetEngine2 != null && !(cronetEngine2 instanceof gbsu)) {
             return (ExperimentalCronetEngine) cronetEngine2;
         }
         BaseApplicationContext baseApplicationContext = this.globalGmsState;
@@ -63,13 +63,13 @@ public abstract class BaseApplicationContext extends ContextWrapper {
         }
         synchronized (this.cronetEngineLock) {
             cronetEngine = this.cronetEngine;
-            if (cronetEngine == null || (cronetEngine instanceof fywa)) {
-                asot b = asot.b("CronetEngineFactory", asej.COMMON_API);
+            if (cronetEngine == null || (cronetEngine instanceof gbsu)) {
+                ausn b = ausn.b("CronetEngineFactory", auid.COMMON_API);
                 try {
-                    cronetEngine = arnp.a(false, b, this);
-                } catch (arno unused) {
+                    cronetEngine = atqe.a(false, b, this);
+                } catch (atqd unused) {
                     if (cronetEngine == null) {
-                        cronetEngine = arnp.b(b, this);
+                        cronetEngine = atqe.b(b, this);
                     } else {
                         Log.e(TAG, "Failed loading Cronet module again, falling back to Java implementation");
                     }
@@ -84,7 +84,7 @@ public abstract class BaseApplicationContext extends ContextWrapper {
     public ExperimentalCronetEngine getRealCronetEngineHttp1Only() {
         CronetEngine cronetEngine;
         CronetEngine cronetEngine2 = this.cronetEngineHttp1Only;
-        if (cronetEngine2 != null && !(cronetEngine2 instanceof fywa)) {
+        if (cronetEngine2 != null && !(cronetEngine2 instanceof gbsu)) {
             return (ExperimentalCronetEngine) cronetEngine2;
         }
         BaseApplicationContext baseApplicationContext = this.globalGmsState;
@@ -93,13 +93,13 @@ public abstract class BaseApplicationContext extends ContextWrapper {
         }
         synchronized (this.cronetEngineLockHttp1Only) {
             cronetEngine = this.cronetEngineHttp1Only;
-            if (cronetEngine == null || (cronetEngine instanceof fywa)) {
-                asot b = asot.b("CronetEngineFactory", asej.COMMON_API);
+            if (cronetEngine == null || (cronetEngine instanceof gbsu)) {
+                ausn b = ausn.b("CronetEngineFactory", auid.COMMON_API);
                 try {
-                    cronetEngine = arnp.a(true, b, this);
-                } catch (arno unused) {
+                    cronetEngine = atqe.a(true, b, this);
+                } catch (atqd unused) {
                     if (cronetEngine == null) {
-                        cronetEngine = arnp.b(b, this);
+                        cronetEngine = atqe.b(b, this);
                     } else {
                         Log.e(TAG, "Failed loading Cronet module again, falling back to Java implementation");
                     }
@@ -113,7 +113,7 @@ public abstract class BaseApplicationContext extends ContextWrapper {
     @Override // android.content.ContextWrapper
     protected void attachBaseContext(Context context) {
         this.baseContext = context;
-        if (asqh.g()) {
+        if (auub.g()) {
             context = context.createAttributionContext(APP_CONTEXT_ATTRIBUTION_TAG);
         }
         super.attachBaseContext(context);
@@ -121,34 +121,34 @@ public abstract class BaseApplicationContext extends ContextWrapper {
 
     @Override // android.content.ContextWrapper, android.content.Context
     public Context createAttributionContext(String str) {
-        return new ardf(this, super.createAttributionContext(str));
+        return new atfu(this, super.createAttributionContext(str));
     }
 
     public Context createCredentialProtectedStorageContext() {
-        return new ardf(this, super.createCredentialProtectedStorageContext());
+        return new atfu(this, super.createCredentialProtectedStorageContext());
     }
 
     @Override // android.content.ContextWrapper, android.content.Context
     public Context createDeviceProtectedStorageContext() {
-        return new ardf(this, super.createDeviceProtectedStorageContext());
+        return new atfu(this, super.createDeviceProtectedStorageContext());
     }
 
     @Override // android.content.ContextWrapper
     public Context getBaseContext() {
         Context context = this.baseContext;
-        eike.e(context);
+        ekxj.e(context);
         return context;
     }
 
     public CronetEngine getCronetEngine() {
-        if (!fmtg.c()) {
+        if (!fple.c()) {
             return getRealCronetEngine();
         }
         synchronized (this.lazyCronetEngineLock) {
             if (this.lazyCronetEngine == null) {
-                this.lazyCronetEngine = new arnq(new eijr() { // from class: ardg
-                    @Override // defpackage.eijr
-                    public final Object a() {
+                this.lazyCronetEngine = new atqf(new ekww() { // from class: atfv
+                    @Override // defpackage.ekww
+                    public final Object lK() {
                         ExperimentalCronetEngine realCronetEngine;
                         realCronetEngine = BaseApplicationContext.this.getRealCronetEngine();
                         return realCronetEngine;
@@ -160,14 +160,14 @@ public abstract class BaseApplicationContext extends ContextWrapper {
     }
 
     public CronetEngine getCronetEngineHttp1Only() {
-        if (!fmtg.c()) {
+        if (!fple.c()) {
             return getRealCronetEngineHttp1Only();
         }
         synchronized (this.lazyCronetEngineLockHttp1Only) {
             if (this.lazyCronetEngineHttp1Only == null) {
-                this.lazyCronetEngineHttp1Only = new arnq(new eijr() { // from class: ardh
-                    @Override // defpackage.eijr
-                    public final Object a() {
+                this.lazyCronetEngineHttp1Only = new atqf(new ekww() { // from class: atfw
+                    @Override // defpackage.ekww
+                    public final Object lK() {
                         ExperimentalCronetEngine realCronetEngineHttp1Only;
                         realCronetEngineHttp1Only = BaseApplicationContext.this.getRealCronetEngineHttp1Only();
                         return realCronetEngineHttp1Only;
@@ -220,32 +220,32 @@ public abstract class BaseApplicationContext extends ContextWrapper {
 
     public ScheduledExecutorService getPhenotypeBaseExecutor() {
         BaseApplicationContext baseApplicationContext = this.globalGmsState;
-        return baseApplicationContext != null ? baseApplicationContext.getPhenotypeBaseExecutor() : (ScheduledExecutorService) ardl.a.a();
+        return baseApplicationContext != null ? baseApplicationContext.getPhenotypeBaseExecutor() : (ScheduledExecutorService) atga.a.lK();
     }
 
     public void gservicesBulkCacheByPrefix(String[] strArr) {
-        dmnn.i(getContentResolver(), strArr);
+        dozb.i(getContentResolver(), strArr);
     }
 
     public boolean gservicesGetBoolean(String str, boolean z) {
-        return dmnn.k(getContentResolver(), str, z);
+        return dozb.k(getContentResolver(), str, z);
     }
 
     public float gservicesGetFloat(String str, float f) {
         Object obj;
         Float f2;
         ContentResolver contentResolver = getContentResolver();
-        dmnx dmnxVar = dmnn.a;
-        ContentResolver a = dmnxVar.a(contentResolver);
-        synchronized (dmnxVar) {
-            dmnxVar.d(a);
-            obj = dmnxVar.f;
-            f2 = (Float) dmnx.f(dmnxVar.e, str, Float.valueOf(f));
+        dozl dozlVar = dozb.a;
+        ContentResolver a = dozlVar.a(contentResolver);
+        synchronized (dozlVar) {
+            dozlVar.d(a);
+            obj = dozlVar.f;
+            f2 = (Float) dozl.f(dozlVar.e, str, Float.valueOf(f));
         }
         if (f2 != null) {
             return f2.floatValue();
         }
-        String b = dmnxVar.b(a, str, null);
+        String b = dozlVar.b(a, str, null);
         if (b != null) {
             try {
                 float parseFloat = Float.parseFloat(b);
@@ -254,30 +254,30 @@ public abstract class BaseApplicationContext extends ContextWrapper {
             } catch (NumberFormatException unused) {
             }
         }
-        synchronized (dmnxVar) {
-            dmnxVar.e(obj, dmnxVar.e, str, f2);
+        synchronized (dozlVar) {
+            dozlVar.e(obj, dozlVar.e, str, f2);
         }
         return f;
     }
 
     public int gservicesGetInt(String str, int i) {
-        return dmnn.a(getContentResolver(), str, i);
+        return dozb.a(getContentResolver(), str, i);
     }
 
     public long gservicesGetLong(String str, long j) {
-        return dmnn.c(getContentResolver(), str, j);
+        return dozb.c(getContentResolver(), str, j);
     }
 
     public String gservicesGetString(String str, String str2) {
-        return dmnn.g(getContentResolver(), str, str2);
+        return dozb.g(getContentResolver(), str, str2);
     }
 
     public Map gservicesGetStringsByPrefix(String[] strArr) {
-        return dmnn.h(getContentResolver(), strArr);
+        return dozb.h(getContentResolver(), strArr);
     }
 
     public Object gservicesGetVersionToken() {
-        return dmnn.d(getContentResolver());
+        return dozb.d(getContentResolver());
     }
 
     protected boolean isFromContainer() {

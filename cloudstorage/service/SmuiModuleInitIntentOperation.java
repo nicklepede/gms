@@ -1,38 +1,38 @@
 package com.google.android.gms.cloudstorage.service;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.dvms;
-import defpackage.fmje;
-import defpackage.fvbo;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.dxxt;
+import defpackage.fpas;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class SmuiModuleInitIntentOperation extends anya {
+public final class SmuiModuleInitIntentOperation extends apzs {
     static {
-        asot.b("SmuiModuleInitIntentOperation", asej.UNKNOWN);
+        ausn.b("SmuiModuleInitIntentOperation", auid.UNKNOWN);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        asng.K("com.google.android.gms.cloudstorage.smui.SmuiActivity", !fmje.a.a().b());
+        aura.K("com.google.android.gms.cloudstorage.smui.SmuiActivity", !fpas.a.lK().b());
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        dvms.e(getApplicationContext());
+        dxxt.e(getApplicationContext());
     }
 }

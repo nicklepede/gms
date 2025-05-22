@@ -6,52 +6,52 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import com.google.android.gms.common.Feature;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.arug;
-import defpackage.arxo;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.byhr;
-import defpackage.dcuj;
-import defpackage.dddi;
-import defpackage.ddec;
-import defpackage.ddur;
-import defpackage.demy;
-import defpackage.denf;
-import defpackage.denq;
-import defpackage.ejck;
-import defpackage.fsfh;
+import defpackage.atwv;
+import defpackage.auad;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.caqj;
+import defpackage.dffo;
+import defpackage.dfon;
+import defpackage.dfph;
+import defpackage.dgfw;
+import defpackage.dgyb;
+import defpackage.dgyi;
+import defpackage.dgyt;
+import defpackage.elpp;
+import defpackage.fvae;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TargetDeviceApiService extends bxgd {
-    private static final arxo b = new denq(new String[]{"D2D", "TargetDeviceApiService"});
+public class TargetDeviceApiService extends bzot {
+    private static final auad b = new dgyt(new String[]{"D2D", "TargetDeviceApiService"});
     Handler a;
-    private ddec c;
-    private ddur d;
+    private dfph c;
+    private dgfw d;
 
     public TargetDeviceApiService() {
-        super(76, "com.google.android.gms.smartdevice.d2d.TargetDeviceService.START", ejck.a, 3, 9);
+        super(76, "com.google.android.gms.smartdevice.d2d.TargetDeviceService.START", elpp.a, 3, 9);
     }
 
-    @Override // defpackage.bxgd
-    public final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    public final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         TargetDeviceApiService targetDeviceApiService;
         String str = getServiceRequest.f;
-        int i = denf.a;
+        int i = dgyi.a;
         PackageManager packageManager = getPackageManager();
         getPackageManager();
-        fsfh.o();
-        new arug(str).a();
+        fvae.n();
+        new atwv(str).a();
         Feature[] featureArr = getServiceRequest.k;
         if (featureArr != null && featureArr.length != 0) {
-            if (featureArr[0].equals(dcuj.a)) {
+            if (featureArr[0].equals(dffo.a)) {
                 if (this.d == null) {
                     targetDeviceApiService = this;
-                    targetDeviceApiService.d = new ddur(this.e, this, denf.b(str, this), str, getServiceRequest.p);
+                    targetDeviceApiService.d = new dgfw(this.e, this, dgyi.b(str, this), str, getServiceRequest.p);
                 } else {
                     targetDeviceApiService = this;
                 }
-                bxgjVar.c(targetDeviceApiService.d);
+                bzozVar.c(targetDeviceApiService.d);
                 return;
             }
             return;
@@ -59,57 +59,57 @@ public class TargetDeviceApiService extends bxgd {
         TargetDeviceApiService targetDeviceApiService2 = this;
         if (targetDeviceApiService2.c == null) {
             b.d("Creating targetDeviceServiceDelegate.", new Object[0]);
-            ddec ddecVar = new ddec(targetDeviceApiService2.e, targetDeviceApiService2, targetDeviceApiService2.a, denf.b(str, this), denf.c(str, packageManager), str, getServiceRequest.p);
+            dfph dfphVar = new dfph(targetDeviceApiService2.e, targetDeviceApiService2, targetDeviceApiService2.a, dgyi.b(str, this), dgyi.c(str, packageManager), str, getServiceRequest.p);
             targetDeviceApiService2 = targetDeviceApiService2;
-            targetDeviceApiService2.c = ddecVar;
+            targetDeviceApiService2.c = dfphVar;
         } else {
             b.d("Set client info after new onGetService call from calling package: ".concat(String.valueOf(str)), new Object[0]);
-            targetDeviceApiService2.c.u(str, denf.b(str, this), denf.c(str, packageManager));
+            targetDeviceApiService2.c.u(str, dgyi.b(str, this), dgyi.c(str, packageManager));
         }
-        bxgjVar.c(targetDeviceApiService2.c);
+        bzozVar.c(targetDeviceApiService2.c);
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         b.j("onCreate()", new Object[0]);
         HandlerThread handlerThread = new HandlerThread("TargetDeviceBackground", 10);
         handlerThread.start();
         handlerThread.getLooper();
-        this.a = new byhr(handlerThread.getLooper());
+        this.a = new caqj(handlerThread.getLooper());
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
         b.j("onDestroy()", new Object[0]);
-        ddec ddecVar = this.c;
-        if (ddecVar != null) {
-            ddec.a.h("onDestroyWithoutLogging()", new Object[0]);
-            ddecVar.b.post(new dddi(ddecVar));
+        dfph dfphVar = this.c;
+        if (dfphVar != null) {
+            dfph.a.h("onDestroyWithoutLogging()", new Object[0]);
+            dfphVar.b.post(new dfon(dfphVar));
         }
-        demy.a(this.a);
+        dgyb.a(this.a);
         super.onDestroy();
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onRebind(Intent intent) {
         b.j("onRebind", new Object[0]);
-        ddec ddecVar = this.c;
-        if (ddecVar != null) {
-            ddecVar.t();
+        dfph dfphVar = this.c;
+        if (dfphVar != null) {
+            dfphVar.t();
         }
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final boolean onUnbind(Intent intent) {
         b.j("onUnbind", new Object[0]);
         if (!"com.google.android.gms.smartdevice.d2d.TargetDeviceService.START".equals(intent.getAction())) {
             return false;
         }
-        ddec ddecVar = this.c;
-        if (ddecVar == null) {
+        dfph dfphVar = this.c;
+        if (dfphVar == null) {
             return true;
         }
-        ddecVar.g();
+        dfphVar.g();
         return true;
     }
 }

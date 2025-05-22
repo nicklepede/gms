@@ -11,26 +11,26 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import defpackage.aqto;
-import defpackage.artx;
-import defpackage.arwm;
-import defpackage.azhm;
-import defpackage.azhn;
-import defpackage.azho;
-import defpackage.azhq;
-import defpackage.cbzw;
-import defpackage.cbzy;
-import defpackage.ccdo;
-import defpackage.ccen;
+import defpackage.aswd;
+import defpackage.atwm;
+import defpackage.atzb;
+import defpackage.bbli;
+import defpackage.bblj;
+import defpackage.bblk;
+import defpackage.bblm;
+import defpackage.ceiq;
+import defpackage.ceis;
+import defpackage.cemi;
+import defpackage.cenh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MapView extends FrameLayout {
-    private final azhq a;
+    private final bblm a;
 
     public MapView(Context context) {
         super(context);
-        this.a = new azhq(this, context, null);
+        this.a = new bblm(this, context, null);
         h();
     }
 
@@ -38,14 +38,14 @@ public class MapView extends FrameLayout {
         setClickable(true);
     }
 
-    public final void a(cbzy cbzyVar) {
-        arwm.h("getMapAsync() must be called on the main thread");
-        azhq azhqVar = this.a;
-        cbzw cbzwVar = azhqVar.c;
-        if (cbzwVar != null) {
-            cbzwVar.a(cbzyVar);
+    public final void a(ceis ceisVar) {
+        atzb.h("getMapAsync() must be called on the main thread");
+        bblm bblmVar = this.a;
+        ceiq ceiqVar = bblmVar.c;
+        if (ceiqVar != null) {
+            ceiqVar.a(ceisVar);
         } else {
-            azhqVar.d.add(cbzyVar);
+            bblmVar.d.add(ceisVar);
         }
     }
 
@@ -53,14 +53,14 @@ public class MapView extends FrameLayout {
         StrictMode.ThreadPolicy threadPolicy = StrictMode.getThreadPolicy();
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder(threadPolicy).permitAll().build());
         try {
-            azhq azhqVar = this.a;
-            azhqVar.b(bundle, new azhm(azhqVar, bundle));
-            if (azhqVar.c == null) {
-                aqto aqtoVar = aqto.a;
+            bblm bblmVar = this.a;
+            bblmVar.b(bundle, new bbli(bblmVar, bundle));
+            if (bblmVar.c == null) {
+                aswd aswdVar = aswd.a;
                 Context context = getContext();
-                int m = aqtoVar.m(context);
-                String c = artx.c(context, m);
-                String b = artx.b(context, m);
+                int m = aswdVar.m(context);
+                String c = atwm.c(context, m);
+                String b = atwm.b(context, m);
                 LinearLayout linearLayout = new LinearLayout(getContext());
                 linearLayout.setOrientation(1);
                 linearLayout.setLayoutParams(new FrameLayout.LayoutParams(-2, -2));
@@ -69,14 +69,14 @@ public class MapView extends FrameLayout {
                 textView.setLayoutParams(new FrameLayout.LayoutParams(-2, -2));
                 textView.setText(c);
                 linearLayout.addView(textView);
-                Intent k = aqtoVar.k(context, m, null);
+                Intent k = aswdVar.k(context, m, null);
                 if (k != null) {
                     Button button = new Button(context);
                     button.setId(R.id.button1);
                     button.setLayoutParams(new FrameLayout.LayoutParams(-2, -2));
                     button.setText(b);
                     linearLayout.addView(button);
-                    button.setOnClickListener(new azhn(context, k));
+                    button.setOnClickListener(new bblj(context, k));
                 }
             }
         } finally {
@@ -85,54 +85,54 @@ public class MapView extends FrameLayout {
     }
 
     public final void c() {
-        azhq azhqVar = this.a;
-        cbzw cbzwVar = azhqVar.c;
-        if (cbzwVar == null) {
-            azhqVar.a(1);
+        bblm bblmVar = this.a;
+        ceiq ceiqVar = bblmVar.c;
+        if (ceiqVar == null) {
+            bblmVar.a(1);
             return;
         }
         try {
-            cbzwVar.b.c();
+            ceiqVar.b.c();
         } catch (RemoteException e) {
-            throw new ccen(e);
+            throw new cenh(e);
         }
     }
 
     public final void d() {
-        cbzw cbzwVar = this.a.c;
-        if (cbzwVar != null) {
+        ceiq ceiqVar = this.a.c;
+        if (ceiqVar != null) {
             try {
-                cbzwVar.b.d();
+                ceiqVar.b.d();
             } catch (RemoteException e) {
-                throw new ccen(e);
+                throw new cenh(e);
             }
         }
     }
 
     public final void e() {
-        azhq azhqVar = this.a;
-        cbzw cbzwVar = azhqVar.c;
-        if (cbzwVar == null) {
-            azhqVar.a(5);
+        bblm bblmVar = this.a;
+        ceiq ceiqVar = bblmVar.c;
+        if (ceiqVar == null) {
+            bblmVar.a(5);
             return;
         }
         try {
-            cbzwVar.b.e();
+            ceiqVar.b.e();
         } catch (RemoteException e) {
-            throw new ccen(e);
+            throw new cenh(e);
         }
     }
 
     public final void f() {
-        azhq azhqVar = this.a;
-        azhqVar.b(null, new azho(azhqVar));
+        bblm bblmVar = this.a;
+        bblmVar.b(null, new bblk(bblmVar));
     }
 
     public final void g(Bundle bundle) {
-        azhq azhqVar = this.a;
-        cbzw cbzwVar = azhqVar.c;
-        if (cbzwVar == null) {
-            Bundle bundle2 = azhqVar.a;
+        bblm bblmVar = this.a;
+        ceiq ceiqVar = bblmVar.c;
+        if (ceiqVar == null) {
+            Bundle bundle2 = bblmVar.a;
             if (bundle2 != null) {
                 bundle.putAll(bundle2);
                 return;
@@ -141,29 +141,29 @@ public class MapView extends FrameLayout {
         }
         try {
             Bundle bundle3 = new Bundle();
-            ccdo.b(bundle, bundle3);
-            cbzwVar.b.g(bundle3);
-            ccdo.b(bundle3, bundle);
+            cemi.b(bundle, bundle3);
+            ceiqVar.b.g(bundle3);
+            cemi.b(bundle3, bundle);
         } catch (RemoteException e) {
-            throw new ccen(e);
+            throw new cenh(e);
         }
     }
 
     public MapView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.a = new azhq(this, context, GoogleMapOptions.a(context, attributeSet));
+        this.a = new bblm(this, context, GoogleMapOptions.a(context, attributeSet));
         h();
     }
 
     public MapView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.a = new azhq(this, context, GoogleMapOptions.a(context, attributeSet));
+        this.a = new bblm(this, context, GoogleMapOptions.a(context, attributeSet));
         h();
     }
 
     public MapView(Context context, GoogleMapOptions googleMapOptions) {
         super(context);
-        this.a = new azhq(this, context, googleMapOptions);
+        this.a = new bblm(this, context, googleMapOptions);
         h();
     }
 }

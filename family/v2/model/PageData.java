@@ -3,24 +3,24 @@ package com.google.android.gms.family.v2.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import defpackage.baci;
-import defpackage.eiig;
-import defpackage.epus;
-import defpackage.eput;
-import defpackage.epuv;
-import defpackage.epuw;
-import defpackage.epuy;
-import defpackage.epuz;
+import defpackage.bcge;
+import defpackage.ekvl;
+import defpackage.esir;
+import defpackage.esis;
+import defpackage.esiu;
+import defpackage.esiv;
+import defpackage.esix;
+import defpackage.esiy;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class PageData implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new baci();
+    public static final Parcelable.Creator CREATOR = new bcge();
     public HashMap a;
     public HashMap b;
     public ArrayList c;
@@ -31,7 +31,7 @@ public final class PageData implements ReflectedParcelable {
         this.a = new HashMap();
         this.b = new HashMap();
         this.c = new ArrayList();
-        int a = epuy.a(parcel.readInt());
+        int a = esix.a(parcel.readInt());
         this.d = a != 0 ? a : 1;
         int readInt = parcel.readInt();
         for (int i = 0; i < readInt; i++) {
@@ -41,7 +41,7 @@ public final class PageData implements ReflectedParcelable {
         for (int i2 = 0; i2 < readInt2; i2++) {
             HashMap hashMap = this.b;
             String readString = parcel.readString();
-            eiig.x(readString);
+            ekvl.y(readString);
             hashMap.put(readString, (HelpData) HelpData.CREATOR.createFromParcel(parcel));
         }
         int readInt3 = parcel.readInt();
@@ -98,32 +98,32 @@ public final class PageData implements ReflectedParcelable {
         }
     }
 
-    public PageData(epuz epuzVar) {
+    public PageData(esiy esiyVar) {
         this.d = 1;
-        int a = epuy.a(epuzVar.b);
+        int a = esix.a(esiyVar.b);
         this.d = a == 0 ? 1 : a;
         this.a = new HashMap();
         this.b = new HashMap();
         this.c = new ArrayList();
-        if (epuzVar.c.size() != 0) {
-            for (eput eputVar : epuzVar.c) {
+        if (esiyVar.c.size() != 0) {
+            for (esis esisVar : esiyVar.c) {
                 HashMap hashMap = this.a;
-                int a2 = epuv.a(eputVar.b);
+                int a2 = esiu.a(esisVar.b);
                 if (a2 == 0) {
                     a2 = 1;
                 }
-                hashMap.put(Integer.valueOf(a2 - 1), eputVar.c);
+                hashMap.put(Integer.valueOf(a2 - 1), esisVar.c);
             }
         }
-        if (epuzVar.d.size() != 0) {
-            for (epuw epuwVar : epuzVar.d) {
-                this.b.put(epuwVar.b, new HelpData(epuwVar));
+        if (esiyVar.d.size() != 0) {
+            for (esiv esivVar : esiyVar.d) {
+                this.b.put(esivVar.b, new HelpData(esivVar));
             }
         }
-        if (epuzVar.e.size() != 0) {
-            Iterator it = epuzVar.e.iterator();
+        if (esiyVar.e.size() != 0) {
+            Iterator it = esiyVar.e.iterator();
             while (it.hasNext()) {
-                this.c.add(new BulletPoint((epus) it.next()));
+                this.c.add(new BulletPoint((esir) it.next()));
             }
         }
     }

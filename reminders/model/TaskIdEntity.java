@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxew;
+import defpackage.atyq;
+import defpackage.czos;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class TaskIdEntity extends AbstractSafeParcelable implements TaskId {
-    public static final Parcelable.Creator CREATOR = new cxew();
+    public static final Parcelable.Creator CREATOR = new czos();
     public final String a;
     public final String b;
 
@@ -24,7 +24,7 @@ public class TaskIdEntity extends AbstractSafeParcelable implements TaskId {
     }
 
     public static boolean d(TaskId taskId, TaskId taskId2) {
-        return arwb.b(taskId.a(), taskId2.a()) && arwb.b(taskId.c(), taskId2.c());
+        return atyq.b(taskId.a(), taskId2.a()) && atyq.b(taskId.c(), taskId2.c());
     }
 
     @Override // com.google.android.gms.reminders.model.TaskId
@@ -53,14 +53,14 @@ public class TaskIdEntity extends AbstractSafeParcelable implements TaskId {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxew.a(this, parcel);
+        czos.a(this, parcel);
     }
 
     public TaskIdEntity(TaskId taskId) {
         this(taskId.a(), taskId.c());
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

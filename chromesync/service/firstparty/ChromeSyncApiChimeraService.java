@@ -1,26 +1,26 @@
 package com.google.android.gms.chromesync.service.firstparty;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.apds;
-import defpackage.apeq;
-import defpackage.apgb;
-import defpackage.apgi;
-import defpackage.apgl;
-import defpackage.apgp;
-import defpackage.apgt;
-import defpackage.apgw;
-import defpackage.apgz;
-import defpackage.aphc;
-import defpackage.apnl;
-import defpackage.apnm;
-import defpackage.apnn;
-import defpackage.bxgj;
-import defpackage.fixf;
+import defpackage.argj;
+import defpackage.arhh;
+import defpackage.aris;
+import defpackage.ariz;
+import defpackage.arjc;
+import defpackage.arjg;
+import defpackage.arjk;
+import defpackage.arjn;
+import defpackage.arjq;
+import defpackage.arjt;
+import defpackage.arqc;
+import defpackage.arqd;
+import defpackage.arqe;
+import defpackage.bzoz;
+import defpackage.flnc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class ChromeSyncApiChimeraService extends apnn {
-    public apnm a;
+public final class ChromeSyncApiChimeraService extends arqe {
+    public arqd a;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -30,14 +30,14 @@ public final class ChromeSyncApiChimeraService extends apnn {
     public ChromeSyncApiChimeraService() {
         /*
             r7 = this;
-            ejck r3 = defpackage.ejck.a
-            fmfw r0 = defpackage.fmfw.a
-            fmfx r0 = r0.a()
-            femw r0 = r0.f()
-            fedh r0 = r0.b
+            elpp r3 = defpackage.elpp.a
+            foxi r0 = defpackage.foxi.a
+            foxj r0 = r0.lK()
+            fhbp r0 = r0.f()
+            fgsa r0 = r0.b
             java.lang.String r1 = "getElementList(...)"
-            defpackage.fvbo.e(r0, r1)
-            eiuu r6 = defpackage.eitd.c(r0)
+            defpackage.fxxm.e(r0, r1)
+            elhz r6 = defpackage.elgi.c(r0)
             r4 = 0
             r5 = 9
             r1 = 303(0x12f, float:4.25E-43)
@@ -49,9 +49,9 @@ public final class ChromeSyncApiChimeraService extends apnn {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.chromesync.service.firstparty.ChromeSyncApiChimeraService.<init>():void");
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        apnl apnlVar = this.a.a;
-        bxgjVar.c(new apeq(((apds) apnlVar.a).a(), (apgt) ((fixf) apnlVar.b).a, (apgl) ((fixf) apnlVar.c).a, (apgp) ((fixf) apnlVar.d).a, (aphc) ((fixf) apnlVar.e).a, (apgb) ((fixf) apnlVar.f).a, (apgi) ((fixf) apnlVar.g).a, (apgz) ((fixf) apnlVar.h).a, (apgw) ((fixf) apnlVar.i).a, this.e, this.f, getServiceRequest.j, getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        arqc arqcVar = this.a.a;
+        bzozVar.c(new arhh(((argj) arqcVar.a).a(), (arjk) ((flnc) arqcVar.b).a, (arjc) ((flnc) arqcVar.c).a, (arjg) ((flnc) arqcVar.d).a, (arjt) ((flnc) arqcVar.e).a, (aris) ((flnc) arqcVar.f).a, (ariz) ((flnc) arqcVar.g).a, (arjq) ((flnc) arqcVar.h).a, (arjn) ((flnc) arqcVar.i).a, this.e, this.f, getServiceRequest.j, getServiceRequest.f, getServiceRequest.p));
     }
 }

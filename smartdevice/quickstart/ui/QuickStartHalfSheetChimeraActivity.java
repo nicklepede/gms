@@ -9,34 +9,34 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.smartdevice.quickstart.ui.QuickStartHalfSheetChimeraActivity;
-import defpackage.arjz;
-import defpackage.denq;
-import defpackage.dnie;
-import defpackage.fkhl;
-import defpackage.fsfn;
-import defpackage.qex;
+import defpackage.atmo;
+import defpackage.dgyt;
+import defpackage.dpsn;
+import defpackage.fmya;
+import defpackage.fvak;
+import defpackage.ryb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class QuickStartHalfSheetChimeraActivity extends qex {
-    private static final denq i = new denq(new String[]{"QuickStartHalfSheetChimeraActivity"});
-    public dnie h;
+public final class QuickStartHalfSheetChimeraActivity extends ryb {
+    private static final dgyt i = new dgyt(new String[]{"QuickStartHalfSheetChimeraActivity"});
+    public dpsn h;
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (!fsfn.a.a().H()) {
+        if (!fvak.a.lK().H()) {
             i.m("Activity is not enabled", new Object[0]);
             finish();
             return;
         }
-        if (fkhl.c()) {
-            arjz.a(this);
+        if (fmya.c()) {
+            atmo.a(this);
         }
         setContentView(R.layout.smartdevice_fast_pair_two_button_half_sheet);
         String stringExtra = getIntent().getStringExtra("com.google.android.gms.nearby.discovery.fastpair.MODEL_ID");
         i.d("Showing QuickStart half-sheet dialog for %s", stringExtra);
-        this.h = dnie.b(getContainerActivity(), this.f, stringExtra, false);
+        this.h = dpsn.b(getContainerActivity(), this.f, stringExtra, false);
         String stringExtra2 = getIntent().getStringExtra("com.google.android.gms.nearby.discovery.fastpair.DEVICE_NAME");
         String string = stringExtra2 == null ? getString(R.string.smartdevice_half_sheet_default_title) : getString(R.string.smartdevice_half_sheet_title, new Object[]{stringExtra2});
         ((TextView) findViewById(R.id.half_sheet_title_textview)).setText(string);
@@ -52,13 +52,13 @@ public final class QuickStartHalfSheetChimeraActivity extends qex {
         }
         Button button = (Button) findViewById(R.id.half_sheet_button);
         button.setText(R.string.smartdevice_half_sheet_button_text_short);
-        button.setOnClickListener(new View.OnClickListener() { // from class: deap
+        button.setOnClickListener(new View.OnClickListener() { // from class: dglt
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 QuickStartHalfSheetChimeraActivity quickStartHalfSheetChimeraActivity = QuickStartHalfSheetChimeraActivity.this;
-                dnie dnieVar = quickStartHalfSheetChimeraActivity.h;
-                if (dnieVar != null) {
-                    dnieVar.a();
+                dpsn dpsnVar = quickStartHalfSheetChimeraActivity.h;
+                if (dpsnVar != null) {
+                    dpsnVar.a();
                 }
                 quickStartHalfSheetChimeraActivity.finish();
                 Intent intent = new Intent("com.google.android.gms.smartdevice.quickstart.SOURCE_DEVICE_SETUP");
@@ -70,7 +70,7 @@ public final class QuickStartHalfSheetChimeraActivity extends qex {
         });
         Button button2 = (Button) findViewById(R.id.half_sheet_button_secondary);
         button2.setText(R.string.common_dismiss);
-        button2.setOnClickListener(new View.OnClickListener() { // from class: deaq
+        button2.setOnClickListener(new View.OnClickListener() { // from class: dglu
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 QuickStartHalfSheetChimeraActivity.this.finish();

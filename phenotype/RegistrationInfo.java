@@ -3,11 +3,11 @@ package com.google.android.gms.phenotype;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cwap;
+import defpackage.atzr;
+import defpackage.cykm;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RegistrationInfo extends AbstractSafeParcelable {
     public final String c;
@@ -22,7 +22,7 @@ public class RegistrationInfo extends AbstractSafeParcelable {
     public final int l;
     public static final int[] a = new int[0];
     public static final byte[] b = new byte[0];
-    public static final Parcelable.Creator CREATOR = new cwap();
+    public static final Parcelable.Creator CREATOR = new cykm();
 
     public RegistrationInfo(String str, int i, String[] strArr, byte[] bArr, String str2, byte[] bArr2, int i2, int i3) {
         this.c = str;
@@ -57,18 +57,18 @@ public class RegistrationInfo extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.c;
-        int a2 = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.d);
-        arxc.w(parcel, 3, this.e, false);
-        arxc.i(parcel, 4, this.f, false);
-        arxc.e(parcel, 5, this.g);
-        arxc.p(parcel, 6, this.h, false);
-        arxc.v(parcel, 7, this.i, false);
-        arxc.i(parcel, 8, this.j, false);
-        arxc.o(parcel, 9, this.k);
-        arxc.o(parcel, 10, this.l);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.d);
+        atzr.w(parcel, 3, this.e, false);
+        atzr.i(parcel, 4, this.f, false);
+        atzr.e(parcel, 5, this.g);
+        atzr.p(parcel, 6, this.h, false);
+        atzr.v(parcel, 7, this.i, false);
+        atzr.i(parcel, 8, this.j, false);
+        atzr.o(parcel, 9, this.k);
+        atzr.o(parcel, 10, this.l);
+        atzr.c(parcel, a2);
     }
 
     public RegistrationInfo(String str, int i, String[] strArr, byte[] bArr, boolean z, int[] iArr, String str2, byte[] bArr2, int i2, int i3) {

@@ -4,17 +4,17 @@ import android.app.PendingIntent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zdp;
+import defpackage.abdk;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class VerifyWithGoogleResult extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zdp();
+    public static final Parcelable.Creator CREATOR = new abdk();
     public final String a;
     public final String b;
     public final List c;
@@ -23,7 +23,7 @@ public final class VerifyWithGoogleResult extends AbstractSafeParcelable {
     public VerifyWithGoogleResult(String str, String str2, List list, PendingIntent pendingIntent) {
         this.a = str;
         this.b = str2;
-        arwm.s(list);
+        atzb.s(list);
         this.c = list;
         this.d = pendingIntent;
     }
@@ -33,7 +33,7 @@ public final class VerifyWithGoogleResult extends AbstractSafeParcelable {
             return false;
         }
         VerifyWithGoogleResult verifyWithGoogleResult = (VerifyWithGoogleResult) obj;
-        return arwb.b(this.a, verifyWithGoogleResult.a) && arwb.b(this.b, verifyWithGoogleResult.b) && arwb.b(this.c, verifyWithGoogleResult.c) && arwb.b(this.d, verifyWithGoogleResult.d);
+        return atyq.b(this.a, verifyWithGoogleResult.a) && atyq.b(this.b, verifyWithGoogleResult.b) && atyq.b(this.c, verifyWithGoogleResult.c) && atyq.b(this.d, verifyWithGoogleResult.d);
     }
 
     public final int hashCode() {
@@ -43,11 +43,11 @@ public final class VerifyWithGoogleResult extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.x(parcel, 3, this.c, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.x(parcel, 3, this.c, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.c(parcel, a);
     }
 }

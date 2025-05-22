@@ -2,7 +2,7 @@ package com.google.android.gms.org.conscrypt;
 
 import java.security.spec.AlgorithmParameterSpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 class OpenSSLXECParameterSpec implements AlgorithmParameterSpec {
     public static final String X25519 = "1.3.101.110";

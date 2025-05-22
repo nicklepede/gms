@@ -5,18 +5,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.mobiledataplan.payment.PaymentForm;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cdzb;
-import defpackage.ceah;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgii;
+import defpackage.cgjo;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MdpPurchaseOfferRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ceah();
+    public static final Parcelable.Creator CREATOR = new cgjo();
     public final String a;
     public final String b;
     public final String c;
@@ -49,42 +49,42 @@ public class MdpPurchaseOfferRequest extends AbstractSafeParcelable {
             return false;
         }
         MdpPurchaseOfferRequest mdpPurchaseOfferRequest = (MdpPurchaseOfferRequest) obj;
-        return arwb.b(this.a, mdpPurchaseOfferRequest.a) && arwb.b(this.b, mdpPurchaseOfferRequest.b) && arwb.b(this.c, mdpPurchaseOfferRequest.c) && arwb.b(this.d, mdpPurchaseOfferRequest.d) && cdzb.b(this.e, mdpPurchaseOfferRequest.e) && arwb.b(this.f, mdpPurchaseOfferRequest.f) && arwb.b(this.g, mdpPurchaseOfferRequest.g) && arwb.b(Integer.valueOf(this.h), Integer.valueOf(mdpPurchaseOfferRequest.h)) && Arrays.equals(this.i, mdpPurchaseOfferRequest.i) && arwb.b(this.j, mdpPurchaseOfferRequest.j);
+        return atyq.b(this.a, mdpPurchaseOfferRequest.a) && atyq.b(this.b, mdpPurchaseOfferRequest.b) && atyq.b(this.c, mdpPurchaseOfferRequest.c) && atyq.b(this.d, mdpPurchaseOfferRequest.d) && cgii.b(this.e, mdpPurchaseOfferRequest.e) && atyq.b(this.f, mdpPurchaseOfferRequest.f) && atyq.b(this.g, mdpPurchaseOfferRequest.g) && atyq.b(Integer.valueOf(this.h), Integer.valueOf(mdpPurchaseOfferRequest.h)) && Arrays.equals(this.i, mdpPurchaseOfferRequest.i) && atyq.b(this.j, mdpPurchaseOfferRequest.j);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{this.a, this.b, this.c, this.d, Integer.valueOf(cdzb.a(this.e)), this.f, this.g, Integer.valueOf(this.h), Integer.valueOf(Arrays.hashCode(this.i)), this.j});
+        return Arrays.hashCode(new Object[]{this.a, this.b, this.c, this.d, Integer.valueOf(cgii.a(this.e)), this.f, this.g, Integer.valueOf(this.h), Integer.valueOf(Arrays.hashCode(this.i)), this.j});
     }
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("CarrierPlanId", this.a, arrayList);
-        arwa.b("PlanId", this.b, arrayList);
-        arwa.b("OfferContext", this.c, arrayList);
-        arwa.b("TransactionId", this.d, arrayList);
-        arwa.b("ExtraInfo", this.e, arrayList);
-        arwa.b("EventFlowId", this.f, arrayList);
-        arwa.b("UniqueRequestId", this.g, arrayList);
-        arwa.b("OfferType", Integer.valueOf(this.h), arrayList);
-        arwa.b("PaymentForms", Arrays.toString(this.i), arrayList);
-        arwa.b("GooglePayPaymentDataSerialized", this.j, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("CarrierPlanId", this.a, arrayList);
+        atyp.b("PlanId", this.b, arrayList);
+        atyp.b("OfferContext", this.c, arrayList);
+        atyp.b("TransactionId", this.d, arrayList);
+        atyp.b("ExtraInfo", this.e, arrayList);
+        atyp.b("EventFlowId", this.f, arrayList);
+        atyp.b("UniqueRequestId", this.g, arrayList);
+        atyp.b("OfferType", Integer.valueOf(this.h), arrayList);
+        atyp.b("PaymentForms", Arrays.toString(this.i), arrayList);
+        atyp.b("GooglePayPaymentDataSerialized", this.j, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.g(parcel, 5, this.e, false);
-        arxc.F(parcel, 6, this.f);
-        arxc.I(parcel, 7, this.g);
-        arxc.o(parcel, 8, this.h);
-        arxc.J(parcel, 9, this.i, i);
-        arxc.v(parcel, 10, this.j, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.g(parcel, 5, this.e, false);
+        atzr.F(parcel, 6, this.f);
+        atzr.I(parcel, 7, this.g);
+        atzr.o(parcel, 8, this.h);
+        atzr.J(parcel, 9, this.i, i);
+        atzr.v(parcel, 10, this.j, false);
+        atzr.c(parcel, a);
     }
 }

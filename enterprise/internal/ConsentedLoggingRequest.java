@@ -3,37 +3,37 @@ package com.google.android.gms.enterprise.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.azmq;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.fwcg;
+import defpackage.atzr;
+import defpackage.bbqm;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fyyi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class ConsentedLoggingRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new azmq();
-    private final fwcg a;
+    public static final Parcelable.Creator CREATOR = new bbqm();
+    private final fyyi a;
 
-    public ConsentedLoggingRequest(fwcg fwcgVar) {
-        this.a = fwcgVar;
+    public ConsentedLoggingRequest(fyyi fyyiVar) {
+        this.a = fyyiVar;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fwcg fwcgVar = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, fwcgVar.r(), false);
-        arxc.c(parcel, a);
+        fyyi fyyiVar = this.a;
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, fyyiVar.r(), false);
+        atzr.c(parcel, a);
     }
 
     public ConsentedLoggingRequest(byte[] bArr) {
         try {
-            fecp y = fecp.y(fwcg.a, bArr, 0, bArr.length, febw.a());
-            fecp.M(y);
-            this.a = (fwcg) y;
-        } catch (fedk e) {
+            fgri y = fgri.y(fyyi.a, bArr, 0, bArr.length, fgqp.a());
+            fgri.M(y);
+            this.a = (fyyi) y;
+        } catch (fgsd e) {
             throw new IllegalArgumentException("Failed to parse event from bytes", e);
         }
     }

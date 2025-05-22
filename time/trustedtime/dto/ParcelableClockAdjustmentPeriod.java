@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.time.dto.ParcelableDuration;
-import defpackage.arxc;
-import defpackage.dgdv;
+import defpackage.atzr;
+import defpackage.dipa;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class ParcelableClockAdjustmentPeriod extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dgdv();
+    public static final Parcelable.Creator CREATOR = new dipa();
     public final ParcelableDuration a;
     public final ParcelableDuration b;
     public final ParcelableDuration c;
@@ -57,11 +57,11 @@ public final class ParcelableClockAdjustmentPeriod extends AbstractSafeParcelabl
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         ParcelableDuration parcelableDuration = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, parcelableDuration, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, parcelableDuration, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.c(parcel, a);
     }
 }

@@ -4,27 +4,27 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.dgls;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.diwx;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ScreenOnOffReceiver extends TracingBroadcastReceiver {
     private final Context a;
-    private final dgls b;
+    private final diwx b;
     private boolean c;
 
     static {
-        asot.b("TrustAgent", asej.TRUSTAGENT);
+        ausn.b("TrustAgent", auid.TRUSTAGENT);
     }
 
-    public ScreenOnOffReceiver(Context context, dgls dglsVar) {
+    public ScreenOnOffReceiver(Context context, diwx diwxVar) {
         super("trustagent");
         this.c = false;
         this.a = context;
-        this.b = dglsVar;
+        this.b = diwxVar;
     }
 
     public final void b() {
@@ -44,13 +44,13 @@ public class ScreenOnOffReceiver extends TracingBroadcastReceiver {
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         if (Objects.equals(intent.getAction(), "android.intent.action.USER_PRESENT")) {
-            this.b.jM();
+            this.b.c();
         } else if (Objects.equals(intent.getAction(), "android.intent.action.SCREEN_ON")) {
-            this.b.jS();
+            this.b.kh();
         } else if (Objects.equals(intent.getAction(), "android.intent.action.SCREEN_OFF")) {
-            this.b.jL();
+            this.b.kb();
         }
     }
 }

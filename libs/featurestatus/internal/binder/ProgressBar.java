@@ -3,14 +3,14 @@ package com.google.android.gms.libs.featurestatus.internal.binder;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bque;
-import defpackage.fvbo;
+import defpackage.atzr;
+import defpackage.btbv;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ProgressBar extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bque();
+    public static final Parcelable.Creator CREATOR = new btbv();
     public final double a;
     public final String b;
 
@@ -27,7 +27,7 @@ public final class ProgressBar extends AbstractSafeParcelable {
             return false;
         }
         ProgressBar progressBar = (ProgressBar) obj;
-        return Double.compare(this.a, progressBar.a) == 0 && fvbo.n(this.b, progressBar.b);
+        return Double.compare(this.a, progressBar.a) == 0 && fxxm.n(this.b, progressBar.b);
     }
 
     public final int hashCode() {
@@ -43,11 +43,11 @@ public final class ProgressBar extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "dest");
+        fxxm.f(parcel, "dest");
         double d = this.a;
-        int a = arxc.a(parcel);
-        arxc.j(parcel, 1, d);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.j(parcel, 1, d);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

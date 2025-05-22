@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxek;
+import defpackage.atyq;
+import defpackage.czog;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class FeatureIdProtoEntity extends AbstractSafeParcelable implements FeatureIdProto {
-    public static final Parcelable.Creator CREATOR = new cxek();
+    public static final Parcelable.Creator CREATOR = new czog();
     public final Long a;
     public final Long b;
 
@@ -24,7 +24,7 @@ public class FeatureIdProtoEntity extends AbstractSafeParcelable implements Feat
     }
 
     public static boolean d(FeatureIdProto featureIdProto, FeatureIdProto featureIdProto2) {
-        return arwb.b(featureIdProto.a(), featureIdProto2.a()) && arwb.b(featureIdProto.c(), featureIdProto2.c());
+        return atyq.b(featureIdProto.a(), featureIdProto2.a()) && atyq.b(featureIdProto.c(), featureIdProto2.c());
     }
 
     @Override // com.google.android.gms.reminders.model.FeatureIdProto
@@ -53,14 +53,14 @@ public class FeatureIdProtoEntity extends AbstractSafeParcelable implements Feat
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxek.a(this, parcel);
+        czog.a(this, parcel);
     }
 
     public FeatureIdProtoEntity(FeatureIdProto featureIdProto) {
         this(featureIdProto.a(), featureIdProto.c());
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

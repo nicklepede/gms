@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
-import defpackage.arxc;
-import defpackage.ddfv;
-import defpackage.eito;
+import defpackage.atzr;
+import defpackage.dfra;
+import defpackage.elgt;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class DeviceStatus extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new ddfv();
+    public static final Parcelable.Creator CREATOR = new dfra();
     private static final Map e;
     public int a;
     public int b;
@@ -22,11 +22,11 @@ public class DeviceStatus extends BinarySerializableFastSafeParcelableJson {
     public final Set d;
 
     static {
-        eito eitoVar = new eito();
-        eitoVar.i("errorCode", new FastJsonResponse$Field(0, false, 0, false, "errorCode", 1, null));
-        eitoVar.i("errorSource", new FastJsonResponse$Field(0, false, 0, false, "errorSource", 2, null));
-        eitoVar.i("errorCodeFromSource", new FastJsonResponse$Field(0, false, 0, false, "errorCodeFromSource", 3, null));
-        e = eitoVar.b();
+        elgt elgtVar = new elgt();
+        elgtVar.i("errorCode", new FastJsonResponse$Field(0, false, 0, false, "errorCode", 1, null));
+        elgtVar.i("errorSource", new FastJsonResponse$Field(0, false, 0, false, "errorSource", 2, null));
+        elgtVar.i("errorCodeFromSource", new FastJsonResponse$Field(0, false, 0, false, "errorCodeFromSource", 3, null));
+        e = elgtVar.b();
     }
 
     public DeviceStatus(Set set, int i, int i2, int i3) {
@@ -36,7 +36,7 @@ public class DeviceStatus extends BinarySerializableFastSafeParcelableJson {
         this.c = i3;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void W(String str, int i) {
         if (str.equals("errorCode")) {
             p(i);
@@ -47,12 +47,12 @@ public class DeviceStatus extends BinarySerializableFastSafeParcelableJson {
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final Map b() {
         return e;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.d.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
@@ -75,20 +75,20 @@ public class DeviceStatus extends BinarySerializableFastSafeParcelableJson {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.d;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(1)) {
-            arxc.o(parcel, 1, this.a);
+            atzr.o(parcel, 1, this.a);
         }
         if (set.contains(2)) {
-            arxc.o(parcel, 2, this.b);
+            atzr.o(parcel, 2, this.b);
         }
         if (set.contains(3)) {
-            arxc.o(parcel, 3, this.c);
+            atzr.o(parcel, 3, this.c);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
-    @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse, defpackage.ashs
+    @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse, defpackage.aulm
     public final Object z(String str) {
         if (str.equals("errorCode")) {
             return Integer.valueOf(this.a);

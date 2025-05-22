@@ -7,10 +7,10 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.internal.connection.ParcelByteArray;
-import defpackage.arwb;
-import defpackage.cmam;
-import defpackage.cmao;
-import defpackage.eitj;
+import defpackage.atyq;
+import defpackage.coiu;
+import defpackage.coiw;
+import defpackage.elgo;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -18,10 +18,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ShareTarget extends AbstractSafeParcelable implements Cloneable {
-    public static final Parcelable.Creator CREATOR = new cmao();
+    public static final Parcelable.Creator CREATOR = new coiw();
     public final long a;
     public final String b;
     public final Uri c;
@@ -106,34 +106,34 @@ public class ShareTarget extends AbstractSafeParcelable implements Cloneable {
         return this.h ? Arrays.hashCode(new Object[]{this.b, this.c, Integer.valueOf(this.d), Boolean.valueOf(this.f), this.g, true, this.i, Boolean.valueOf(this.k), this.l, Integer.valueOf(this.m), Boolean.valueOf(this.n), Integer.valueOf(this.r)}) : Arrays.hashCode(new Object[]{this.b, this.c, Integer.valueOf(this.d), Boolean.valueOf(this.f), this.g, false, this.i, Boolean.valueOf(this.k), Integer.valueOf(this.m), Boolean.valueOf(this.n), Integer.valueOf(this.r)});
     }
 
-    public final synchronized cmam b() {
-        cmam cmamVar;
-        cmamVar = new cmam();
-        cmamVar.a = this.a;
-        cmamVar.b = this.b;
-        cmamVar.c = this.c;
-        cmamVar.d = this.d;
-        cmamVar.e = this.e;
-        cmamVar.f = new ArrayList(this.u);
-        cmamVar.g = new ArrayList(this.v);
-        cmamVar.h = new ArrayList(this.w);
-        cmamVar.i = new ArrayList(this.x);
-        cmamVar.j = new ArrayList(this.y);
-        cmamVar.k = this.f;
-        cmamVar.l = this.g;
-        cmamVar.m = this.h;
-        cmamVar.n = this.i;
-        cmamVar.o = this.j;
-        cmamVar.p = this.k;
-        cmamVar.q = this.l;
-        cmamVar.r = this.m;
-        cmamVar.s = this.n;
-        cmamVar.t = this.o;
-        cmamVar.u = this.p;
-        cmamVar.v = this.q;
-        cmamVar.w = this.r;
-        cmamVar.x = this.s;
-        return cmamVar;
+    public final synchronized coiu b() {
+        coiu coiuVar;
+        coiuVar = new coiu();
+        coiuVar.a = this.a;
+        coiuVar.b = this.b;
+        coiuVar.c = this.c;
+        coiuVar.d = this.d;
+        coiuVar.e = this.e;
+        coiuVar.f = new ArrayList(this.u);
+        coiuVar.g = new ArrayList(this.v);
+        coiuVar.h = new ArrayList(this.w);
+        coiuVar.i = new ArrayList(this.x);
+        coiuVar.j = new ArrayList(this.y);
+        coiuVar.k = this.f;
+        coiuVar.l = this.g;
+        coiuVar.m = this.h;
+        coiuVar.n = this.i;
+        coiuVar.o = this.j;
+        coiuVar.p = this.k;
+        coiuVar.q = this.l;
+        coiuVar.r = this.m;
+        coiuVar.s = this.n;
+        coiuVar.t = this.o;
+        coiuVar.u = this.p;
+        coiuVar.v = this.q;
+        coiuVar.w = this.r;
+        coiuVar.x = this.s;
+        return coiuVar;
     }
 
     /* renamed from: c, reason: merged with bridge method [inline-methods] */
@@ -165,7 +165,7 @@ public class ShareTarget extends AbstractSafeParcelable implements Cloneable {
     public final boolean equals(Object obj) {
         if (obj instanceof ShareTarget) {
             ShareTarget shareTarget = (ShareTarget) obj;
-            if (arwb.b(Long.valueOf(this.a), Long.valueOf(shareTarget.a)) && arwb.b(this.b, shareTarget.b) && arwb.b(this.c, shareTarget.c) && arwb.b(Integer.valueOf(this.d), Integer.valueOf(shareTarget.d)) && arwb.b(Boolean.valueOf(this.f), Boolean.valueOf(shareTarget.f)) && arwb.b(this.g, shareTarget.g) && arwb.b(Boolean.valueOf(this.h), Boolean.valueOf(shareTarget.h)) && arwb.b(this.i, shareTarget.i) && arwb.b(Boolean.valueOf(this.k), Boolean.valueOf(shareTarget.k)) && arwb.b(this.l, shareTarget.l) && arwb.b(Integer.valueOf(this.m), Integer.valueOf(shareTarget.m)) && arwb.b(Boolean.valueOf(this.n), Boolean.valueOf(shareTarget.n)) && arwb.b(this.p, shareTarget.p) && arwb.b(Integer.valueOf(this.r), Integer.valueOf(shareTarget.r)) && arwb.b(this.s, shareTarget.s) && arwb.b(Boolean.valueOf(this.q), Boolean.valueOf(shareTarget.q))) {
+            if (atyq.b(Long.valueOf(this.a), Long.valueOf(shareTarget.a)) && atyq.b(this.b, shareTarget.b) && atyq.b(this.c, shareTarget.c) && atyq.b(Integer.valueOf(this.d), Integer.valueOf(shareTarget.d)) && atyq.b(Boolean.valueOf(this.f), Boolean.valueOf(shareTarget.f)) && atyq.b(this.g, shareTarget.g) && atyq.b(Boolean.valueOf(this.h), Boolean.valueOf(shareTarget.h)) && atyq.b(this.i, shareTarget.i) && atyq.b(Boolean.valueOf(this.k), Boolean.valueOf(shareTarget.k)) && atyq.b(this.l, shareTarget.l) && atyq.b(Integer.valueOf(this.m), Integer.valueOf(shareTarget.m)) && atyq.b(Boolean.valueOf(this.n), Boolean.valueOf(shareTarget.n)) && atyq.b(this.p, shareTarget.p) && atyq.b(Integer.valueOf(this.r), Integer.valueOf(shareTarget.r)) && atyq.b(this.s, shareTarget.s) && atyq.b(Boolean.valueOf(this.q), Boolean.valueOf(shareTarget.q))) {
                 return true;
             }
         }
@@ -253,7 +253,7 @@ public class ShareTarget extends AbstractSafeParcelable implements Cloneable {
         if (shareTarget == null) {
             return false;
         }
-        return arwb.b(this, shareTarget) || a() == shareTarget.a();
+        return atyq.b(this, shareTarget) || a() == shareTarget.a();
     }
 
     public final synchronized boolean r(AppAttachment appAttachment, AppAttachment appAttachment2) {
@@ -314,7 +314,7 @@ public class ShareTarget extends AbstractSafeParcelable implements Cloneable {
                 ParcelByteArray parcelByteArray = new ParcelByteArray();
                 Parcel obtain = Parcel.obtain();
                 try {
-                    obtain.writeTypedList(eitj.i(arrayList));
+                    obtain.writeTypedList(elgo.i(arrayList));
                     byte[] marshall = obtain.marshall();
                     obtain.recycle();
                     parcelByteArray.a = marshall;
@@ -324,13 +324,13 @@ public class ShareTarget extends AbstractSafeParcelable implements Cloneable {
                     throw th;
                 }
             }
-            cmao.a(this, parcel, i);
+            coiw.a(this, parcel, i);
             List list2 = this.v;
             list2.clear();
             list2.addAll(arrayList);
             this.s = null;
             return;
         }
-        cmao.a(this, parcel, i);
+        coiw.a(this, parcel, i);
     }
 }

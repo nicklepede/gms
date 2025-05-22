@@ -1,13 +1,13 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.elgo;
+import defpackage.elpg;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class MusicGroup extends Thing {
     public final List a;
@@ -20,15 +20,15 @@ public final class MusicGroup extends Thing {
         if (list3 != null) {
             list5 = DesugarCollections.unmodifiableList(list3);
         } else {
-            int i = eitj.d;
-            list5 = ejcb.a;
+            int i = elgo.d;
+            list5 = elpg.a;
         }
         this.a = list5;
         if (list4 != null) {
             list6 = DesugarCollections.unmodifiableList(list4);
         } else {
-            int i2 = eitj.d;
-            list6 = ejcb.a;
+            int i2 = elgo.d;
+            list6 = elpg.a;
         }
         this.b = list6;
     }

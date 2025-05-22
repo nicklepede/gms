@@ -1,6 +1,5 @@
 package com.google.android.gms.mdi.download.ui;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -9,67 +8,63 @@ import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.google.android.gms.R;
-import com.google.android.gms.common.api.ApiMetadata;
-import com.google.android.gms.common.api.ComplianceOptions;
 import com.google.android.gms.mdi.download.ui.DebugUiChimeraActivity;
-import defpackage.aqxo;
-import defpackage.arco;
-import defpackage.arcy;
-import defpackage.cckt;
-import defpackage.ccku;
-import defpackage.dqjp;
-import defpackage.qet;
+import defpackage.atad;
+import defpackage.atfd;
+import defpackage.atfn;
+import defpackage.cetn;
+import defpackage.ceto;
+import defpackage.dstx;
+import defpackage.rxx;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class DebugUiChimeraActivity extends qet {
+public class DebugUiChimeraActivity extends rxx {
     public ArrayAdapter j;
 
     public final void a() {
-        aqxo aqxoVar = new aqxo(this, (int[][][]) null);
-        arcy arcyVar = new arcy();
-        arcyVar.d = 303;
-        arcyVar.a = new arco() { // from class: cchb
-            @Override // defpackage.arco
+        atad atadVar = new atad(this, (int[][][]) null);
+        atfn atfnVar = new atfn();
+        atfnVar.d = 303;
+        atfnVar.a = new atfd() { // from class: cepv
+            @Override // defpackage.atfd
             public final void d(Object obj, Object obj2) {
-                cchu cchuVar = (cchu) obj;
-                ccgs ccgsVar = new ccgs((dfau) obj2);
-                Context context = cchuVar.r;
-                ((ccgw) cchuVar.H()).g(ccgsVar, new ApiMetadata(new ComplianceOptions(-1, -1, 0, true)));
+                ceqo ceqoVar = (ceqo) obj;
+                ((cepq) ceqoVar.H()).g(new cepm((dhma) obj2), bsxa.a(ceqoVar.r));
             }
         };
-        aqxoVar.iO(arcyVar.a()).z(new cckt(this));
+        atadVar.jd(atfnVar.a()).z(new cetn(this));
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        int i = dqjp.a;
+        int i = dstx.a;
         super.onCreate(bundle);
         setContentView(R.layout.mdd_debug_activity);
         setTitle(R.string.mdd_debug_ui_title);
-        ((Button) findViewById(R.id.refresh_file_group_list)).setOnClickListener(new View.OnClickListener() { // from class: cckj
+        ((Button) findViewById(R.id.refresh_file_group_list)).setOnClickListener(new View.OnClickListener() { // from class: cetd
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 DebugUiChimeraActivity debugUiChimeraActivity = DebugUiChimeraActivity.this;
-                aqxo aqxoVar = new aqxo(debugUiChimeraActivity, (int[][][]) null);
-                aqxoVar.ah().z(new ccko(debugUiChimeraActivity, aqxoVar));
+                atad atadVar = new atad(debugUiChimeraActivity, (int[][][]) null);
+                atadVar.ag().z(new ceti(debugUiChimeraActivity, atadVar));
             }
         });
-        ((Button) findViewById(R.id.delete_all_downloaded_files)).setOnClickListener(new View.OnClickListener() { // from class: cckk
+        ((Button) findViewById(R.id.delete_all_downloaded_files)).setOnClickListener(new View.OnClickListener() { // from class: cete
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 DebugUiChimeraActivity debugUiChimeraActivity = DebugUiChimeraActivity.this;
-                aqxo aqxoVar = new aqxo(debugUiChimeraActivity, (int[][][]) null);
-                aqxoVar.ai().z(new cckq(debugUiChimeraActivity, aqxoVar));
+                atad atadVar = new atad(debugUiChimeraActivity, (int[][][]) null);
+                atadVar.ah().z(new cetk(debugUiChimeraActivity, atadVar));
             }
         });
-        ((Button) findViewById(R.id.trigger_download)).setOnClickListener(new View.OnClickListener() { // from class: cckl
+        ((Button) findViewById(R.id.trigger_download)).setOnClickListener(new View.OnClickListener() { // from class: cetf
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 DebugUiChimeraActivity debugUiChimeraActivity = DebugUiChimeraActivity.this;
-                aqxo aqxoVar = new aqxo(debugUiChimeraActivity, (int[][][]) null);
-                aqxoVar.aj(true).z(new ccks(debugUiChimeraActivity, aqxoVar));
+                atad atadVar = new atad(debugUiChimeraActivity, (int[][][]) null);
+                atadVar.ai(true).z(new cetm(debugUiChimeraActivity, atadVar));
             }
         });
         ListView listView = (ListView) findViewById(R.id.file_group_list);
@@ -79,9 +74,9 @@ public class DebugUiChimeraActivity extends qet {
         a();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, 1, 0, "Trigger Maintenance Task").setOnMenuItemClickListener(new ccku(this));
+        menu.add(0, 1, 0, "Trigger Maintenance Task").setOnMenuItemClickListener(new ceto(this));
         return super.onCreateOptionsMenu(menu);
     }
 }

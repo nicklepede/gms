@@ -10,19 +10,19 @@ import com.google.android.gms.ads.identifier.settings.ac;
 import com.google.android.gms.ads.identifier.settings.t;
 import com.google.android.gms.chimera.modules.ads.AppContextProvider;
 import com.google.android.gms.common.api.Status;
-import defpackage.bxgi;
-import defpackage.enyl;
-import defpackage.enyp;
-import defpackage.enyq;
-import defpackage.fecj;
-import defpackage.fjzz;
-import defpackage.oto;
+import defpackage.bzoy;
+import defpackage.eqme;
+import defpackage.eqmi;
+import defpackage.eqmj;
+import defpackage.fgrc;
+import defpackage.fmqe;
+import defpackage.qmr;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class h extends bxgi {
+public final class h extends bzoy {
     private final ImpressionAttestationTokenRequestParcel a;
     private final int b;
     private final o c;
@@ -34,7 +34,7 @@ public final class h extends bxgi {
         this.c = oVar;
     }
 
-    @Override // defpackage.bxgi
+    @Override // defpackage.bzoy
     public final void f(Context context) {
         byte[] d;
         int i = this.b;
@@ -47,31 +47,31 @@ public final class h extends bxgi {
             Parcel parcel = impressionAttestationTokenRequestParcel.d;
             int i2 = impressionAttestationTokenRequestParcel.e;
             int i3 = impressionAttestationTokenRequestParcel.f;
-            if (fjzz.a.a().K()) {
+            if (fmqe.a.lK().K()) {
                 String b = a.b(str2, a2);
-                final fecj v = enyq.a.v();
-                fecj f = a.f(b, a2);
+                final fgrc v = eqmj.a.v();
+                fgrc f = a.f(b, a2);
                 if (!v.b.L()) {
                     v.U();
                 }
-                enyq enyqVar = (enyq) v.b;
-                enyl enylVar = (enyl) f.Q();
-                enylVar.getClass();
-                enyqVar.c = enylVar;
-                enyqVar.b |= 1;
+                eqmj eqmjVar = (eqmj) v.b;
+                eqme eqmeVar = (eqme) f.Q();
+                eqmeVar.getClass();
+                eqmjVar.c = eqmeVar;
+                eqmjVar.b |= 1;
                 d = a.d(str, "impressionAttestationToken", new ab() { // from class: com.google.android.gms.ads.identifier.settings.z
                     @Override // com.google.android.gms.ads.identifier.settings.ab
-                    public final void a(fecj fecjVar) {
-                        if (!fecjVar.b.L()) {
-                            fecjVar.U();
+                    public final void a(fgrc fgrcVar) {
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
                         }
-                        fecj fecjVar2 = fecj.this;
-                        enyp enypVar = (enyp) fecjVar.b;
-                        enyq enyqVar2 = (enyq) fecjVar2.Q();
-                        enyp enypVar2 = enyp.a;
-                        enyqVar2.getClass();
-                        enypVar.d = enyqVar2;
-                        enypVar.c = 9;
+                        fgrc fgrcVar2 = fgrc.this;
+                        eqmi eqmiVar = (eqmi) fgrcVar.b;
+                        eqmj eqmjVar2 = (eqmj) fgrcVar2.Q();
+                        eqmi eqmiVar2 = eqmi.a;
+                        eqmjVar2.getClass();
+                        eqmiVar.d = eqmjVar2;
+                        eqmiVar.c = 9;
                     }
                 }, a2);
             } else {
@@ -79,9 +79,9 @@ public final class h extends bxgi {
             }
             o oVar = this.c;
             ImpressionAttestationTokenResponseParcel impressionAttestationTokenResponseParcel = new ImpressionAttestationTokenResponseParcel(d);
-            Parcel fr = oVar.fr();
-            oto.e(fr, impressionAttestationTokenResponseParcel);
-            oVar.fu(2, fr);
+            Parcel fE = oVar.fE();
+            qmr.e(fE, impressionAttestationTokenResponseParcel);
+            oVar.fH(2, fE);
         } catch (t e) {
             this.c.a(e.a, e.b);
         } catch (IOException e2) {
@@ -95,7 +95,7 @@ public final class h extends bxgi {
         }
     }
 
-    @Override // defpackage.bxgi
+    @Override // defpackage.bzoy
     public final void j(Status status) {
         this.c.a(1, status.j);
     }

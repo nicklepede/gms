@@ -6,15 +6,15 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.ConnectionsDevice;
 import com.google.android.gms.nearby.connection.v3.dct.DctDevice;
 import com.google.android.gms.nearby.presence.PresenceDevice;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cjco;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.clkt;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class OnPayloadReceivedParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjco();
+    public static final Parcelable.Creator CREATOR = new clkt();
     public String a;
     public ParcelablePayload b;
     public boolean c;
@@ -33,7 +33,7 @@ public final class OnPayloadReceivedParams extends AbstractSafeParcelable {
         }
         if (obj instanceof OnPayloadReceivedParams) {
             OnPayloadReceivedParams onPayloadReceivedParams = (OnPayloadReceivedParams) obj;
-            if (arwb.b(this.a, onPayloadReceivedParams.a) && arwb.b(this.b, onPayloadReceivedParams.b) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(onPayloadReceivedParams.c)) && arwb.b(Integer.valueOf(this.d), Integer.valueOf(onPayloadReceivedParams.d)) && arwb.b(this.e, onPayloadReceivedParams.e) && arwb.b(this.f, onPayloadReceivedParams.f) && arwb.b(this.g, onPayloadReceivedParams.g)) {
+            if (atyq.b(this.a, onPayloadReceivedParams.a) && atyq.b(this.b, onPayloadReceivedParams.b) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(onPayloadReceivedParams.c)) && atyq.b(Integer.valueOf(this.d), Integer.valueOf(onPayloadReceivedParams.d)) && atyq.b(this.e, onPayloadReceivedParams.e) && atyq.b(this.f, onPayloadReceivedParams.f) && atyq.b(this.g, onPayloadReceivedParams.g)) {
                 return true;
             }
         }
@@ -46,15 +46,15 @@ public final class OnPayloadReceivedParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.c(parcel, a);
     }
 
     public OnPayloadReceivedParams(String str, ParcelablePayload parcelablePayload, boolean z, int i, PresenceDevice presenceDevice, ConnectionsDevice connectionsDevice, DctDevice dctDevice) {

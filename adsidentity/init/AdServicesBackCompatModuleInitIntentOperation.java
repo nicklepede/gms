@@ -5,40 +5,40 @@ import android.content.Intent;
 import android.util.Log;
 import com.google.android.gms.adsidentity.service.AdsidentityMendelPropertyUpdateService;
 import com.google.android.gms.chimera.modules.adsidentity.AppContextProvider;
-import defpackage.anya;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.fkas;
-import defpackage.teh;
+import defpackage.apzs;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.fmqy;
+import defpackage.vah;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AdServicesBackCompatModuleInitIntentOperation extends anya {
+public class AdServicesBackCompatModuleInitIntentOperation extends apzs {
     private Context a;
-    private teh b;
+    private vah b;
 
     public AdServicesBackCompatModuleInitIntentOperation() {
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        if (fkas.p()) {
+        if (fmqy.p()) {
             Log.i("adservices", "Register privacy sandbox mendel properties by handle intent");
             this.b.b();
         }
-        if (fkas.a.a().l()) {
+        if (fmqy.a.lK().l()) {
             Context context = this.a;
             int i2 = AdsidentityMendelPropertyUpdateService.a;
             Log.i("adservices", "Schedule privacy sandbox mendel properties daily job");
-            bykm bykmVar = new bykm();
-            bykmVar.w(AdsidentityMendelPropertyUpdateService.class.getName());
-            bykmVar.t("adservices");
-            bykmVar.j(byki.EVERY_DAY);
-            bykmVar.v(0);
-            bykmVar.p = true;
-            bykmVar.y(2, 2);
-            byjl.a(context).f(bykmVar.b());
+            cate cateVar = new cate();
+            cateVar.w(AdsidentityMendelPropertyUpdateService.class.getName());
+            cateVar.t("adservices");
+            cateVar.j(cata.EVERY_DAY);
+            cateVar.v(0);
+            cateVar.p = true;
+            cateVar.y(2, 2);
+            casd.a(context).f(cateVar.b());
         }
     }
 
@@ -46,11 +46,11 @@ public class AdServicesBackCompatModuleInitIntentOperation extends anya {
     public final void onCreate() {
         Context a = AppContextProvider.a();
         this.a = a;
-        this.b = teh.a(a);
+        this.b = vah.a(a);
     }
 
-    AdServicesBackCompatModuleInitIntentOperation(Context context, teh tehVar) {
+    AdServicesBackCompatModuleInitIntentOperation(Context context, vah vahVar) {
         this.a = context;
-        this.b = tehVar;
+        this.b = vahVar;
     }
 }

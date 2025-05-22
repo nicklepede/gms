@@ -8,67 +8,67 @@ import com.google.android.gms.R;
 import com.google.android.gms.chimera.modules.trustlet.place.AppContextProvider;
 import com.google.android.gms.significantplaces.SignificantPlacesRequest;
 import com.google.android.gms.trustlet.place.internal.PlaceTrustletChimeraService;
-import defpackage.arfc;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asot;
-import defpackage.asrk;
-import defpackage.bwtg;
-import defpackage.dcgp;
-import defpackage.dcgq;
-import defpackage.dchx;
-import defpackage.dfae;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.dgme;
-import defpackage.dgnc;
-import defpackage.dgne;
-import defpackage.dguq;
-import defpackage.ejhf;
-import defpackage.ekhd;
-import defpackage.ekhf;
-import defpackage.ekhg;
-import defpackage.fecj;
-import defpackage.fspg;
+import defpackage.athr;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.ausn;
+import defpackage.auve;
+import defpackage.bzbw;
+import defpackage.deqv;
+import defpackage.deqw;
+import defpackage.desd;
+import defpackage.dhlk;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.dixj;
+import defpackage.diyh;
+import defpackage.diyj;
+import defpackage.djfw;
+import defpackage.eluo;
+import defpackage.emup;
+import defpackage.emur;
+import defpackage.emus;
+import defpackage.fgrc;
+import defpackage.fvku;
 import j$.util.Objects;
 import java.util.Iterator;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class PlaceTrustletChimeraService extends dgme implements dcgq, bwtg {
-    public static final asot d = asot.b("Trustlet_Place", asej.TRUSTLET_PLACE);
+public class PlaceTrustletChimeraService extends dixj implements deqw, bzbw {
+    public static final ausn d = ausn.b("Trustlet_Place", auid.TRUSTLET_PLACE);
     private SharedPreferences f;
     private SharedPreferences.OnSharedPreferenceChangeListener h;
     private boolean i;
     private boolean g = false;
-    private dchx j = null;
+    private desd j = null;
     public String e = "";
 
     private final void x() {
         if (this.i) {
-            y().c().x(new dfae() { // from class: dgun
-                @Override // defpackage.dfae
-                public final void hr(dfaq dfaqVar) {
+            y().c().x(new dhlk() { // from class: djft
+                @Override // defpackage.dhlk
+                public final void hH(dhlw dhlwVar) {
                     int i;
                     PlaceTrustletChimeraService placeTrustletChimeraService = PlaceTrustletChimeraService.this;
-                    if (fsot.d()) {
-                        if (dfaqVar.m()) {
-                            i = ((Integer) dfaqVar.i()).intValue();
+                    if (fvkf.e()) {
+                        if (dhlwVar.m()) {
+                            i = ((Integer) dhlwVar.i()).intValue();
                         } else {
-                            ((ejhf) ((ejhf) ((ejhf) PlaceTrustletChimeraService.d.i()).s(dfaqVar.h())).ah((char) 11740)).x("Failed to get significant places count");
+                            ((eluo) ((eluo) ((eluo) PlaceTrustletChimeraService.d.i()).s(dhlwVar.h())).ai((char) 11743)).x("Failed to get significant places count");
                             i = 0;
                         }
-                        placeTrustletChimeraService.e = mrs.b(placeTrustletChimeraService, R.string.trusted_places_significant_places_summary, "count", Integer.valueOf(i));
+                        placeTrustletChimeraService.e = oka.b(placeTrustletChimeraService, R.string.trusted_places_significant_places_summary, "count", Integer.valueOf(i));
                         return;
                     }
-                    if (!dfaqVar.m()) {
-                        ((ejhf) ((ejhf) ((ejhf) PlaceTrustletChimeraService.d.i()).s(dfaqVar.h())).ah((char) 11739)).x("Failed to get significant places count");
+                    if (!dhlwVar.m()) {
+                        ((eluo) ((eluo) ((eluo) PlaceTrustletChimeraService.d.i()).s(dhlwVar.h())).ai((char) 11742)).x("Failed to get significant places count");
                         placeTrustletChimeraService.e = placeTrustletChimeraService.getString(R.string.trusted_places_significant_places_no_places_summary);
                         return;
                     }
-                    Integer num = (Integer) dfaqVar.i();
+                    Integer num = (Integer) dhlwVar.i();
                     int intValue = num.intValue();
                     if (intValue != 0) {
                         placeTrustletChimeraService.e = placeTrustletChimeraService.getString(R.string.trusted_places_significant_places_multiple_configured_summary, placeTrustletChimeraService.getResources().getQuantityString(R.plurals.significant_places_places_configured_count, intValue, num));
@@ -82,22 +82,22 @@ public class PlaceTrustletChimeraService extends dgme implements dcgq, bwtg {
         }
     }
 
-    private final dchx y() {
-        dchx dchxVar = this.j;
-        if (dchxVar != null) {
-            return dchxVar;
+    private final desd y() {
+        desd desdVar = this.j;
+        if (desdVar != null) {
+            return desdVar;
         }
-        dchx dchxVar2 = new dchx(this);
-        this.j = dchxVar2;
-        return dchxVar2;
+        desd desdVar2 = new desd(this);
+        this.j = desdVar2;
+        return desdVar2;
     }
 
-    @Override // defpackage.dcgq
-    public final void c(dcgp dcgpVar) {
+    @Override // defpackage.deqw
+    public final void c(deqv deqvVar) {
         boolean z;
-        asot asotVar = d;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 11744)).B("onSignificantPlacesEvent: %s", dcgpVar);
-        int ordinal = dcgpVar.ordinal();
+        ausn ausnVar = d;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 11747)).B("onSignificantPlacesEvent: %s", deqvVar);
+        int ordinal = deqvVar.ordinal();
         boolean z2 = true;
         if (ordinal != 0) {
             z = false;
@@ -108,25 +108,25 @@ public class PlaceTrustletChimeraService extends dgme implements dcgq, bwtg {
             z = true;
         }
         if (z2 != o()) {
-            ((ejhf) ((ejhf) asotVar.h()).ah((char) 11747)).x("[PlaceTrustletChimeraService] update configuration");
-            jT(z2, z2);
+            ((eluo) ((eluo) ausnVar.h()).ai((char) 11750)).x("[PlaceTrustletChimeraService] update configuration");
+            ki(z2, z2);
             x();
         }
         if (z) {
             if (r()) {
                 return;
             }
-            ((ejhf) ((ejhf) asotVar.h()).ah((char) 11746)).x("[PlaceTrustletChimeraService] grant trust using significant places");
-            jO("Entered a trusted location", null, aseu.TRUSTLET_PLACE_TRUST_GRANTED);
+            ((eluo) ((eluo) ausnVar.h()).ai((char) 11749)).x("[PlaceTrustletChimeraService] grant trust using significant places");
+            kd("Entered a trusted location", null, auio.TRUSTLET_PLACE_TRUST_GRANTED);
             return;
         }
         if (r()) {
-            ((ejhf) ((ejhf) asotVar.h()).ah((char) 11745)).x("[PlaceTrustletChimeraService] revoke trust using significant places");
-            jR("Left a trusted location");
+            ((eluo) ((eluo) ausnVar.h()).ai((char) 11748)).x("[PlaceTrustletChimeraService] revoke trust using significant places");
+            kg("Left a trusted location");
         }
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     public final Bundle d() {
         Bundle bundle = new Bundle();
         x();
@@ -145,35 +145,35 @@ public class PlaceTrustletChimeraService extends dgme implements dcgq, bwtg {
         return bundle;
     }
 
-    @Override // defpackage.dgme
-    public final ekhf e() {
-        return ekhf.PLACE_TRUSTLET;
+    @Override // defpackage.dixj
+    public final emur e() {
+        return emur.PLACE_TRUSTLET;
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     public final String f() {
         return "Place";
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     protected final void g() {
         super.g();
         if (this.i) {
             w();
         }
         if (this.g) {
-            ((ejhf) ((ejhf) d.h()).ah((char) 11735)).x("[PlaceTrustletChimeraService] destroyTrustlet, unregister listener");
+            ((eluo) ((eluo) d.h()).ai((char) 11738)).x("[PlaceTrustletChimeraService] destroyTrustlet, unregister listener");
             this.f.unregisterOnSharedPreferenceChangeListener(this.h);
             this.g = false;
         }
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     protected final void i() {
         boolean z;
         super.i();
         this.i = false;
-        this.h = new dguq(this);
+        this.h = new djfw(this);
         if (!this.f.contains("auth_trust_agent_pref_trusted_places_is_places_enabled_key")) {
             SharedPreferences.Editor edit = this.f.edit();
             Iterator<String> it = this.f.getAll().keySet().iterator();
@@ -192,7 +192,7 @@ public class PlaceTrustletChimeraService extends dgme implements dcgq, bwtg {
         }
         this.j = y();
         if (!this.g) {
-            ((ejhf) ((ejhf) d.h()).ah((char) 11737)).x("[PlaceTrustletChimeraService] onSharedPreferenceChanged, register listener");
+            ((eluo) ((eluo) d.h()).ai((char) 11740)).x("[PlaceTrustletChimeraService] onSharedPreferenceChanged, register listener");
             this.f.registerOnSharedPreferenceChangeListener(this.h);
             this.g = true;
         }
@@ -203,8 +203,8 @@ public class PlaceTrustletChimeraService extends dgme implements dcgq, bwtg {
         }
     }
 
-    @Override // defpackage.bwtg
-    public final void ic(String str, boolean z) {
+    @Override // defpackage.bzbw
+    public final void ir(String str, boolean z) {
         if (Objects.equals(str, "network")) {
             boolean z2 = this.i;
             if (!z2 && z) {
@@ -218,91 +218,91 @@ public class PlaceTrustletChimeraService extends dgme implements dcgq, bwtg {
         }
     }
 
-    @Override // defpackage.bwtg
-    public final void ii(Set set) {
+    @Override // defpackage.bzbw
+    public final void ix(Set set) {
         if (this.i || !set.contains("network")) {
             return;
         }
         v();
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         AppContextProvider appContextProvider = AppContextProvider.c;
-        this.f = dgnc.a(appContextProvider == null ? arfc.a() : appContextProvider.a);
+        this.f = diyh.a(appContextProvider == null ? athr.a() : appContextProvider.a);
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     public final boolean p() {
-        return dgne.a().c;
+        return diyj.a().c;
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     public final boolean q() {
-        boolean c = fspg.c();
-        ((ejhf) ((ejhf) d.h()).ah((char) 11738)).B("[PlaceTrustletChimeraService] Trusted Places isSupported: %s", Boolean.valueOf(c));
+        boolean c = fvku.c();
+        ((eluo) ((eluo) d.h()).ai((char) 11741)).B("[PlaceTrustletChimeraService] Trusted Places isSupported: %s", Boolean.valueOf(c));
         return c;
     }
 
-    @Override // defpackage.dgme
-    public final void u(fecj fecjVar) {
-        ekhd ekhdVar = ((ekhg) fecjVar.b).i;
-        if (ekhdVar == null) {
-            ekhdVar = ekhd.a;
+    @Override // defpackage.dixj
+    public final void u(fgrc fgrcVar) {
+        emup emupVar = ((emus) fgrcVar.b).i;
+        if (emupVar == null) {
+            emupVar = emup.a;
         }
-        fecj fecjVar2 = (fecj) ekhdVar.iB(5, null);
-        fecjVar2.X(ekhdVar);
+        fgrc fgrcVar2 = (fgrc) emupVar.iQ(5, null);
+        fgrcVar2.X(emupVar);
         boolean o = o();
-        if (!fecjVar2.b.L()) {
-            fecjVar2.U();
+        if (!fgrcVar2.b.L()) {
+            fgrcVar2.U();
         }
-        ekhd ekhdVar2 = (ekhd) fecjVar2.b;
-        ekhdVar2.b |= 2;
-        ekhdVar2.d = o;
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        emup emupVar2 = (emup) fgrcVar2.b;
+        emupVar2.b |= 2;
+        emupVar2.d = o;
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        ekhg ekhgVar = (ekhg) fecjVar.b;
-        ekhd ekhdVar3 = (ekhd) fecjVar2.Q();
-        ekhdVar3.getClass();
-        ekhgVar.i = ekhdVar3;
-        ekhgVar.b |= 128;
+        emus emusVar = (emus) fgrcVar.b;
+        emup emupVar3 = (emup) fgrcVar2.Q();
+        emupVar3.getClass();
+        emusVar.i = emupVar3;
+        emusVar.b |= 128;
     }
 
     public final void v() {
-        asot asotVar = d;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 11748)).x("[PlaceTrustletChimeraService] Place trustlet started");
+        ausn ausnVar = d;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 11751)).x("[PlaceTrustletChimeraService] Place trustlet started");
         this.i = true;
-        dfaq d2 = y().d(new SignificantPlacesRequest(null), this, new asrk(Looper.getMainLooper()));
-        d2.z(new dfak() { // from class: dguo
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
-                ((ejhf) ((ejhf) PlaceTrustletChimeraService.d.h()).ah((char) 11741)).x("Registered Significant Places listener");
+        dhlw d2 = y().d(new SignificantPlacesRequest(null), this, new auve(Looper.getMainLooper()));
+        d2.z(new dhlq() { // from class: djfu
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
+                ((eluo) ((eluo) PlaceTrustletChimeraService.d.h()).ai((char) 11744)).x("Registered Significant Places listener");
             }
         });
-        d2.y(new dfah() { // from class: dgup
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
-                ((ejhf) ((ejhf) ((ejhf) PlaceTrustletChimeraService.d.i()).s(exc)).ah((char) 11742)).x("Failed to register for significant place updates");
+        d2.y(new dhln() { // from class: djfv
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                ((eluo) ((eluo) ((eluo) PlaceTrustletChimeraService.d.i()).s(exc)).ai((char) 11745)).x("Failed to register for significant place updates");
             }
         });
         x();
         if (this.g) {
             return;
         }
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 11750)).x("[PlaceTrustletChimeraService] startTrustlet, register listener");
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 11753)).x("[PlaceTrustletChimeraService] startTrustlet, register listener");
         this.f.registerOnSharedPreferenceChangeListener(this.h);
         this.g = true;
     }
 
     public final void w() {
-        ((ejhf) ((ejhf) d.h()).ah((char) 11751)).x("[PlaceTrustletChimeraService] stopTrustlet()");
+        ((eluo) ((eluo) d.h()).ai((char) 11754)).x("[PlaceTrustletChimeraService] stopTrustlet()");
         y().e(this);
-        jT(false, false);
+        ki(false, false);
         this.i = false;
         x();
         if (r()) {
-            jR("Place trustlet is stopping");
+            kg("Place trustlet is stopping");
         }
     }
 }

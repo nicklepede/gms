@@ -3,26 +3,26 @@ package com.google.android.gms.wallet.analytics.events;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
-import defpackage.difp;
-import defpackage.disk;
-import defpackage.efdk;
-import defpackage.emea;
-import defpackage.emfa;
-import defpackage.feen;
+import defpackage.dkra;
+import defpackage.dldv;
+import defpackage.ehqn;
+import defpackage.eoro;
+import defpackage.eoso;
+import defpackage.fgtg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class IsReadyToPayCallEvent extends AnalyticsSessionStartEndEvent {
-    public static final Parcelable.Creator CREATOR = new difp();
+    public static final Parcelable.Creator CREATOR = new dkra();
     public final BuyFlowConfig c;
-    public final emea d;
-    public final emfa e;
+    public final eoro d;
+    public final eoso e;
 
     public IsReadyToPayCallEvent(Parcel parcel) {
         super(parcel);
         this.c = (BuyFlowConfig) parcel.readParcelable(IsReadyToPayCallEvent.class.getClassLoader());
-        this.d = (emea) efdk.f(parcel, (feen) emea.a.iB(7, null));
-        this.e = (emfa) efdk.f(parcel, (feen) emfa.a.iB(7, null));
+        this.d = (eoro) ehqn.f(parcel, (fgtg) eoro.a.iQ(7, null));
+        this.e = (eoso) ehqn.f(parcel, (fgtg) eoso.a.iQ(7, null));
     }
 
     @Override // android.os.Parcelable
@@ -34,16 +34,16 @@ public class IsReadyToPayCallEvent extends AnalyticsSessionStartEndEvent {
     public final void writeToParcel(Parcel parcel, int i) {
         super.writeToParcel(parcel, i);
         parcel.writeParcelable(this.c, i);
-        efdk.o(this.d, parcel);
-        efdk.o(this.e, parcel);
+        ehqn.o(this.d, parcel);
+        ehqn.o(this.e, parcel);
     }
 
-    public IsReadyToPayCallEvent(BuyFlowConfig buyFlowConfig, emea emeaVar, String str, emfa emfaVar) {
-        this.m = disk.a();
+    public IsReadyToPayCallEvent(BuyFlowConfig buyFlowConfig, eoro eoroVar, String str, eoso eosoVar) {
+        this.m = dldv.a();
         this.c = buyFlowConfig;
-        this.d = emeaVar;
+        this.d = eoroVar;
         this.a = str;
-        this.e = emfaVar;
+        this.e = eosoVar;
         this.b = a(buyFlowConfig, str);
     }
 }

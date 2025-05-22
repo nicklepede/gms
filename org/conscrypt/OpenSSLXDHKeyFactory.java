@@ -1,6 +1,6 @@
 package com.google.android.gms.org.conscrypt;
 
-import defpackage.ctbc;
+import defpackage.cvkg;
 import java.lang.reflect.InvocationTargetException;
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
@@ -15,7 +15,7 @@ import java.security.spec.KeySpec;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OpenSSLXDHKeyFactory extends KeyFactorySpi {
     private static final Class javaXecPublicKeySpec = getJavaXECPublicKeySpec();
@@ -70,18 +70,6 @@ public final class OpenSSLXDHKeyFactory extends KeyFactorySpi {
         }
     }
 
-    private KeySpec makeRawKeySpec(byte[] bArr, Class cls) {
-        try {
-            KeySpec keySpec = (KeySpec) cls.getConstructor(byte[].class).newInstance(bArr);
-            if (((EncodedKeySpec) keySpec).getFormat().equalsIgnoreCase("raw")) {
-                return keySpec;
-            }
-            throw new InvalidKeySpecException("EncodedKeySpec class must be raw format");
-        } catch (IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e) {
-            throw new InvalidKeySpecException("Can't process KeySpec class ".concat(String.valueOf(cls.getName())), e);
-        }
-    }
-
     @Override // java.security.KeyFactorySpi
     protected PrivateKey engineGeneratePrivate(KeySpec keySpec) {
         if (keySpec == null) {
@@ -133,7 +121,7 @@ public final class OpenSSLXDHKeyFactory extends KeyFactorySpi {
                     return new XdhKeySpec(openSSLX25519PublicKey.getU());
                 }
                 if (EncodedKeySpec.class.isAssignableFrom(cls)) {
-                    return makeRawKeySpec(openSSLX25519PublicKey.getU(), cls);
+                    return KeySpecUtil.makeRawKeySpec(openSSLX25519PublicKey.getU(), cls);
                 }
             } else if (engineTranslateKey instanceof OpenSSLX25519PrivateKey) {
                 OpenSSLX25519PrivateKey openSSLX25519PrivateKey = (OpenSSLX25519PrivateKey) engineTranslateKey;
@@ -148,10 +136,10 @@ public final class OpenSSLXDHKeyFactory extends KeyFactorySpi {
                     return new XdhKeySpec(openSSLX25519PrivateKey.getU());
                 }
                 if (EncodedKeySpec.class.isAssignableFrom(cls)) {
-                    return makeRawKeySpec(openSSLX25519PrivateKey.getU(), cls);
+                    return KeySpecUtil.makeRawKeySpec(openSSLX25519PrivateKey.getU(), cls);
                 }
             }
-            throw new InvalidKeySpecException(ctbc.a(cls, engineTranslateKey));
+            throw new InvalidKeySpecException(cvkg.a(cls, engineTranslateKey));
         } catch (InvalidKeyException e) {
             throw new InvalidKeySpecException("Unsupported key class: ".concat(String.valueOf(String.valueOf(key.getClass()))), e);
         }

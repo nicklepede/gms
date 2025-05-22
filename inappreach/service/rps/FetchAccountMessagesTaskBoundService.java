@@ -4,101 +4,101 @@ import android.accounts.Account;
 import android.content.Context;
 import com.google.android.gms.inappreach.service.rps.FetchAccountMessagesTaskBoundService;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.boae;
-import defpackage.boai;
-import defpackage.bobg;
-import defpackage.bodk;
-import defpackage.byln;
-import defpackage.eiho;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.etll;
-import defpackage.fecj;
-import defpackage.fpfb;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.bqho;
+import defpackage.bqhv;
+import defpackage.bqiu;
+import defpackage.bqla;
+import defpackage.cauf;
+import defpackage.ekut;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.ewbd;
+import defpackage.fgrc;
+import defpackage.fryl;
 import j$.util.DesugarCollections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class FetchAccountMessagesTaskBoundService extends GmsTaskBoundService {
     public static final String a = "com.google.android.gms.inappreach.service.rps.FetchAccountMessagesTaskBoundService";
     private static final String b = "com.google.android.gms.inappreach.service.rps.FetchAccountMessagesTaskBoundService";
-    private static final asot c = asot.b(FetchAccountMessagesTaskBoundService.class.getName(), asej.INAPP_REACH);
+    private static final ausn c = ausn.b(FetchAccountMessagesTaskBoundService.class.getName(), auid.INAPP_REACH);
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         Context applicationContext = getApplicationContext();
-        if (!fpfb.d()) {
+        if (!fryl.e()) {
             return 2;
         }
-        final List<Account> h = asnd.h(applicationContext, applicationContext.getPackageName());
+        final List<Account> h = auqx.h(applicationContext, applicationContext.getPackageName());
         try {
-            ((enpf) ((boai) bobg.c().b().a()).d(new eiho() { // from class: bodl
-                @Override // defpackage.eiho
+            ((eqcy) ((bqhv) bqiu.d().c().a()).d(new ekut() { // from class: bqlb
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    bnzy bnzyVar = (bnzy) obj;
+                    bqhi bqhiVar = (bqhi) obj;
                     String str = FetchAccountMessagesTaskBoundService.a;
-                    HashSet<String> hashSet = new HashSet(DesugarCollections.unmodifiableMap(bnzyVar.b).keySet());
+                    HashSet<String> hashSet = new HashSet(DesugarCollections.unmodifiableMap(bqhiVar.b).keySet());
                     Iterator it = h.iterator();
                     while (it.hasNext()) {
                         hashSet.remove(((Account) it.next()).name);
                     }
-                    fecj fecjVar = (fecj) bnzyVar.iB(5, null);
-                    fecjVar.X(bnzyVar);
-                    bnzx bnzxVar = (bnzx) fecjVar;
+                    fgrc fgrcVar = (fgrc) bqhiVar.iQ(5, null);
+                    fgrcVar.X(bqhiVar);
+                    bqhh bqhhVar = (bqhh) fgrcVar;
                     for (String str2 : hashSet) {
                         str2.getClass();
-                        if (!bnzxVar.b.L()) {
-                            bnzxVar.U();
+                        if (!bqhhVar.b.L()) {
+                            bqhhVar.U();
                         }
-                        ((bnzy) bnzxVar.b).b().remove(str2);
+                        ((bqhi) bqhhVar.b).b().remove(str2);
                     }
-                    return (bnzy) bnzxVar.Q();
+                    return (bqhi) bqhhVar.Q();
                 }
             })).u();
             for (Account account : h) {
-                fecj v = boae.a.v();
+                fgrc v = bqho.a.v();
                 String str = account.name;
                 if (!v.b.L()) {
                     v.U();
                 }
-                boae boaeVar = (boae) v.b;
+                bqho bqhoVar = (bqho) v.b;
                 str.getClass();
-                boaeVar.c = str;
-                fecj v2 = etll.a.v();
+                bqhoVar.c = str;
+                fgrc v2 = ewbd.a.v();
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                etll etllVar = (etll) v2.b;
-                etllVar.c = 3;
-                etllVar.b |= 1;
-                etll etllVar2 = (etll) v2.Q();
+                ewbd ewbdVar = (ewbd) v2.b;
+                ewbdVar.c = 3;
+                ewbdVar.b |= 1;
+                ewbd ewbdVar2 = (ewbd) v2.Q();
                 if (!v.b.L()) {
                     v.U();
                 }
-                boae boaeVar2 = (boae) v.b;
-                etllVar2.getClass();
-                boaeVar2.d = etllVar2;
-                boaeVar2.b |= 1;
+                bqho bqhoVar2 = (bqho) v.b;
+                ewbdVar2.getClass();
+                bqhoVar2.d = ewbdVar2;
+                bqhoVar2.b |= 1;
                 String packageName = applicationContext.getPackageName();
                 if (!v.b.L()) {
                     v.U();
                 }
-                boae boaeVar3 = (boae) v.b;
+                bqho bqhoVar3 = (bqho) v.b;
                 packageName.getClass();
-                boaeVar3.b |= 2;
-                boaeVar3.e = packageName;
-                new bodk((boae) v.Q(), null).f(applicationContext);
+                bqhoVar3.b |= 2;
+                bqhoVar3.e = packageName;
+                new bqla((bqho) v.Q(), null).f(applicationContext);
             }
             return 0;
         } catch (InterruptedException | ExecutionException e) {
-            ((ejhf) ((ejhf) ((ejhf) c.j()).s(e)).ah((char) 5200)).x("Periodic fetch account messages task failed.");
+            ((eluo) ((eluo) ((eluo) c.j()).s(e)).ai((char) 5213)).x("Periodic fetch account messages task failed.");
             return 1;
         }
     }

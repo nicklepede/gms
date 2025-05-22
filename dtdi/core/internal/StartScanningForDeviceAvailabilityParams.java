@@ -7,23 +7,23 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.AnalyticsInfo;
 import com.google.android.gms.dtdi.core.DeviceFilter;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.aywi;
-import defpackage.ayxm;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bbac;
+import defpackage.bbbg;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class StartScanningForDeviceAvailabilityParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayxm();
+    public static final Parcelable.Creator CREATOR = new bbbg();
     public DeviceFilter[] a;
     public int b;
-    public arbp c;
+    public atee c;
     public AnalyticsInfo d;
-    public aywi e;
+    public bbac e;
 
     private StartScanningForDeviceAvailabilityParams() {
     }
@@ -34,7 +34,7 @@ public final class StartScanningForDeviceAvailabilityParams extends AbstractSafe
         }
         if (obj instanceof StartScanningForDeviceAvailabilityParams) {
             StartScanningForDeviceAvailabilityParams startScanningForDeviceAvailabilityParams = (StartScanningForDeviceAvailabilityParams) obj;
-            if (Arrays.equals(this.a, startScanningForDeviceAvailabilityParams.a) && arwb.b(this.e, startScanningForDeviceAvailabilityParams.e) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(startScanningForDeviceAvailabilityParams.b)) && arwb.b(this.c, startScanningForDeviceAvailabilityParams.c) && arwb.b(this.d, startScanningForDeviceAvailabilityParams.d)) {
+            if (Arrays.equals(this.a, startScanningForDeviceAvailabilityParams.a) && atyq.b(this.e, startScanningForDeviceAvailabilityParams.e) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(startScanningForDeviceAvailabilityParams.b)) && atyq.b(this.c, startScanningForDeviceAvailabilityParams.c) && atyq.b(this.d, startScanningForDeviceAvailabilityParams.d)) {
                 return true;
             }
         }
@@ -47,32 +47,32 @@ public final class StartScanningForDeviceAvailabilityParams extends AbstractSafe
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.J(parcel, 1, this.a, i);
-        arxc.D(parcel, 2, this.e.a);
-        arxc.o(parcel, 3, this.b);
-        arxc.D(parcel, 4, this.c.asBinder());
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.J(parcel, 1, this.a, i);
+        atzr.D(parcel, 2, this.e.a);
+        atzr.o(parcel, 3, this.b);
+        atzr.D(parcel, 4, this.c.asBinder());
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.c(parcel, a);
     }
 
     public StartScanningForDeviceAvailabilityParams(DeviceFilter[] deviceFilterArr, IBinder iBinder, int i, IBinder iBinder2, AnalyticsInfo analyticsInfo) {
-        aywi aywiVar;
-        arbp arbpVar = null;
+        bbac bbacVar;
+        atee ateeVar = null;
         if (iBinder == null) {
-            aywiVar = null;
+            bbacVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.dtdi.core.internal.IDeviceAvailabilityListener");
-            aywiVar = queryLocalInterface instanceof aywi ? (aywi) queryLocalInterface : new aywi(iBinder);
+            bbacVar = queryLocalInterface instanceof bbac ? (bbac) queryLocalInterface : new bbac(iBinder);
         }
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbpVar = queryLocalInterface2 instanceof arbp ? (arbp) queryLocalInterface2 : new arbn(iBinder2);
+            ateeVar = queryLocalInterface2 instanceof atee ? (atee) queryLocalInterface2 : new atec(iBinder2);
         }
         this.a = deviceFilterArr;
-        this.e = aywiVar;
+        this.e = bbacVar;
         this.b = i;
-        this.c = arbpVar;
+        this.c = ateeVar;
         this.d = analyticsInfo;
     }
 }

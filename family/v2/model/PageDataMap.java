@@ -4,12 +4,12 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.SparseArray;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import defpackage.bacj;
+import defpackage.bcgf;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class PageDataMap implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bacj();
+    public static final Parcelable.Creator CREATOR = new bcgf();
     private final SparseArray a = new SparseArray();
 
     public PageDataMap() {

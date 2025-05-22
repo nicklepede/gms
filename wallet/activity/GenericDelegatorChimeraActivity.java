@@ -3,17 +3,17 @@ package com.google.android.gms.wallet.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import defpackage.asnw;
-import defpackage.diew;
-import defpackage.pob;
+import defpackage.aurq;
+import defpackage.dkqh;
+import defpackage.rhf;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes7.dex */
-public class GenericDelegatorChimeraActivity extends pob {
-    private static final Set a = asnw.j("com.google.android.gms.wallet.ib.ACTION_GCORE_UPDATE_REQUIRED", "com.google.android.gms.wallet.firstparty.ACTION_VERIFY_PIN_ACTIVITY", "com.google.android.gms.wallet.firstparty.ACTION_ADD_INSTRUMENT_FROM_NOTIFICATION");
-    private diew b;
+public class GenericDelegatorChimeraActivity extends rhf {
+    private static final Set a = aurq.j("com.google.android.gms.wallet.ib.ACTION_GCORE_UPDATE_REQUIRED", "com.google.android.gms.wallet.firstparty.ACTION_VERIFY_PIN_ACTIVITY", "com.google.android.gms.wallet.firstparty.ACTION_ADD_INSTRUMENT_FROM_NOTIFICATION");
+    private dkqh b;
 
     protected boolean e() {
         return true;
@@ -22,7 +22,7 @@ public class GenericDelegatorChimeraActivity extends pob {
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Removed duplicated region for block: B:27:0x0096  */
     /* JADX WARN: Removed duplicated region for block: B:29:0x00a2  */
-    @Override // defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -33,7 +33,7 @@ public class GenericDelegatorChimeraActivity extends pob {
             android.content.Intent r0 = r6.getIntent()
             java.lang.String r0 = r0.getAction()
             java.lang.String r1 = "Intent action must not be null"
-            defpackage.arwm.t(r0, r1)
+            defpackage.atzb.t(r0, r1)
             java.util.Set r1 = com.google.android.gms.wallet.activity.GenericDelegatorChimeraActivity.a
             boolean r2 = r1.contains(r0)
             if (r2 == 0) goto L24
@@ -104,30 +104,30 @@ public class GenericDelegatorChimeraActivity extends pob {
             if (r1 == r3) goto L77
             goto L92
         L77:
-            dirq r1 = new dirq
+            dldb r1 = new dldb
             r1.<init>(r6)
             goto L82
         L7d:
-            diqw r1 = new diqw
+            dlch r1 = new dlch
             r1.<init>(r6)
         L82:
             r6.b = r1
             goto L92
         L85:
-            djim r1 = new djim
+            dluf r1 = new dluf
             r1.<init>(r6)
             goto L90
         L8b:
-            djgg r1 = new djgg
+            dlrz r1 = new dlrz
             r1.<init>(r6)
         L90:
             r6.b = r1
         L92:
-            diew r1 = r6.b
+            dkqh r1 = r6.b
             if (r1 == 0) goto La2
             r1.a(r7)
             super.onCreate(r7)
-            diew r0 = r6.b
+            dkqh r0 = r6.b
             r0.b(r7)
             return
         La2:
@@ -143,34 +143,34 @@ public class GenericDelegatorChimeraActivity extends pob {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.wallet.activity.GenericDelegatorChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         return this.b.f(menuItem) || super.onOptionsItemSelected(menuItem);
     }
 
-    @Override // defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         this.b.c();
     }
 
-    @Override // defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         this.b.d();
     }
 
-    @Override // defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         this.b.e(bundle);
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onNewIntent(Intent intent) {
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
     }
 }

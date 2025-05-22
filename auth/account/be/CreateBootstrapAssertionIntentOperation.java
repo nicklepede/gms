@@ -14,21 +14,21 @@ import com.google.android.gms.smartdevice.setup.accounts.Assertion;
 import com.google.android.gms.smartdevice.setup.accounts.Challenge;
 import com.google.android.gms.smartdevice.setup.accounts.ExchangeAssertionsForUserCredentialsRequest;
 import com.google.android.gms.smartdevice.setup.accounts.UserBootstrapInfo;
-import defpackage.aqxd;
-import defpackage.aqxo;
-import defpackage.arxd;
-import defpackage.dcul;
-import defpackage.decd;
-import defpackage.dece;
-import defpackage.dfbl;
-import defpackage.eiig;
+import defpackage.aszs;
+import defpackage.atad;
+import defpackage.atzs;
+import defpackage.dffq;
+import defpackage.dgng;
+import defpackage.dgnh;
+import defpackage.dhmr;
+import defpackage.ekvl;
 import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CreateBootstrapAssertionIntentOperation extends IntentOperation {
-    private dece a;
+    private dgnh a;
 
     public CreateBootstrapAssertionIntentOperation() {
     }
@@ -37,7 +37,7 @@ public class CreateBootstrapAssertionIntentOperation extends IntentOperation {
         Message obtain = Message.obtain((Handler) null, 1001);
         Bundle bundle = new Bundle();
         ClassLoader classLoader = CreateBootstrapAssertionIntentOperation.class.getClassLoader();
-        eiig.x(classLoader);
+        ekvl.y(classLoader);
         bundle.setClassLoader(classLoader);
         bundle.putString("errorMsg", str);
         obtain.setData(bundle);
@@ -53,8 +53,8 @@ public class CreateBootstrapAssertionIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        aqxd aqxdVar = dcul.a;
-        this.a = new aqxo((Context) this, (byte[]) null);
+        aszs aszsVar = dffq.a;
+        this.a = new atad((Context) this, (byte[]) null);
     }
 
     @Override // com.google.android.chimera.IntentOperation
@@ -81,33 +81,33 @@ public class CreateBootstrapAssertionIntentOperation extends IntentOperation {
                 return;
             }
             try {
-                UserBootstrapInfo[] userBootstrapInfoArr = (UserBootstrapInfo[]) dfbl.n(this.a.aB(new Account[]{account}));
+                UserBootstrapInfo[] userBootstrapInfoArr = (UserBootstrapInfo[]) dhmr.n(this.a.aA(new Account[]{account}));
                 if (userBootstrapInfoArr == null || userBootstrapInfoArr.length <= 0) {
                     b = a("No bootstrap infos");
                 } else {
                     try {
-                        Challenge[] challengeArr = (Challenge[]) dfbl.n(this.a.aA(userBootstrapInfoArr));
+                        Challenge[] challengeArr = (Challenge[]) dhmr.n(this.a.az(userBootstrapInfoArr));
                         if (challengeArr == null || challengeArr.length <= 0) {
                             b = a("No challenges");
                         } else {
                             try {
-                                Assertion[] assertionArr = (Assertion[]) dfbl.n(this.a.ax(challengeArr, false, true));
+                                Assertion[] assertionArr = (Assertion[]) dhmr.n(this.a.aw(challengeArr, false, true));
                                 if (assertionArr == null || assertionArr.length <= 0) {
                                     b = a("No assertions");
                                 } else {
                                     try {
-                                        ExchangeAssertionsForUserCredentialsRequest exchangeAssertionsForUserCredentialsRequest = (ExchangeAssertionsForUserCredentialsRequest) dfbl.n(this.a.az(assertionArr));
+                                        ExchangeAssertionsForUserCredentialsRequest exchangeAssertionsForUserCredentialsRequest = (ExchangeAssertionsForUserCredentialsRequest) dhmr.n(this.a.ay(assertionArr));
                                         if (exchangeAssertionsForUserCredentialsRequest == null) {
                                             b = a("Error generating partial request.");
                                         } else {
                                             try {
-                                                ExchangeAssertionsForUserCredentialsRequest exchangeAssertionsForUserCredentialsRequest2 = (ExchangeAssertionsForUserCredentialsRequest) dfbl.n(this.a.aC(exchangeAssertionsForUserCredentialsRequest));
+                                                ExchangeAssertionsForUserCredentialsRequest exchangeAssertionsForUserCredentialsRequest2 = (ExchangeAssertionsForUserCredentialsRequest) dhmr.n(this.a.aB(exchangeAssertionsForUserCredentialsRequest));
                                                 if (exchangeAssertionsForUserCredentialsRequest2 == null) {
                                                     b = a("Error populating source device info");
                                                 } else {
                                                     Message obtain = Message.obtain((Handler) null, 1);
                                                     Bundle bundle = new Bundle();
-                                                    bundle.putByteArray("bootstrapAssertion", arxd.n(exchangeAssertionsForUserCredentialsRequest2));
+                                                    bundle.putByteArray("bootstrapAssertion", atzs.n(exchangeAssertionsForUserCredentialsRequest2));
                                                     obtain.setData(bundle);
                                                     b = obtain;
                                                 }
@@ -166,7 +166,7 @@ public class CreateBootstrapAssertionIntentOperation extends IntentOperation {
         }
     }
 
-    CreateBootstrapAssertionIntentOperation(decd decdVar, dece deceVar) {
-        this.a = deceVar;
+    CreateBootstrapAssertionIntentOperation(dgng dgngVar, dgnh dgnhVar) {
+        this.a = dgnhVar;
     }
 }

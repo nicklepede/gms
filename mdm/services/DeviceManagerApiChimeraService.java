@@ -4,20 +4,20 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxhk;
-import defpackage.bxhl;
-import defpackage.ejck;
+import defpackage.bzqa;
+import defpackage.bzqb;
+import defpackage.elpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class DeviceManagerApiChimeraService extends Service {
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
         if ("com.google.android.gms.mdm.services.DeviceManagerApiService.START".equals(intent.getAction())) {
-            return new bxhl(this, 37, ejck.a, 0, new bxhk() { // from class: ccuu
-                @Override // defpackage.bxhk
-                public final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-                    bxgjVar.c(new ccts(getServiceRequest.e));
+            return new bzqb(this, 37, elpp.a, 0, new bzqa() { // from class: cfdo
+                @Override // defpackage.bzqa
+                public final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+                    bzozVar.c(new cfcm(getServiceRequest.e));
                 }
             });
         }

@@ -6,21 +6,21 @@ import android.os.Parcelable;
 import com.google.android.gms.auth.api.credentials.Credential;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.xui;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.zsf;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class InternalCredentialWrapper extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new xui();
+    public static final Parcelable.Creator CREATOR = new zsf();
     public final Credential a;
     public final Account b;
 
     public InternalCredentialWrapper(Credential credential, Account account) {
-        arwm.s(credential);
+        atzb.s(credential);
         this.a = credential;
         this.b = account;
     }
@@ -33,7 +33,7 @@ public class InternalCredentialWrapper extends AbstractSafeParcelable implements
             return false;
         }
         InternalCredentialWrapper internalCredentialWrapper = (InternalCredentialWrapper) obj;
-        return arwb.b(this.a, internalCredentialWrapper.a) && arwb.b(this.b, internalCredentialWrapper.b);
+        return atyq.b(this.a, internalCredentialWrapper.a) && atyq.b(this.b, internalCredentialWrapper.b);
     }
 
     public final int hashCode() {
@@ -43,9 +43,9 @@ public class InternalCredentialWrapper extends AbstractSafeParcelable implements
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Credential credential = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, credential, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, credential, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 }

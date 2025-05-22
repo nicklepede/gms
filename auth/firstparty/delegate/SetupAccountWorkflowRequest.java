@@ -8,16 +8,16 @@ import com.google.android.gms.auth.firstparty.shared.AppDescription;
 import com.google.android.gms.auth.firstparty.shared.ManagedAuthOptions;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.abaa;
-import defpackage.arwm;
-import defpackage.arxc;
+import defpackage.adaa;
+import defpackage.atzb;
+import defpackage.atzr;
 import j$.util.DesugarCollections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SetupAccountWorkflowRequest extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new abaa();
+    public static final Parcelable.Creator CREATOR = new adaa();
     public final int a;
     public boolean b;
     public boolean c;
@@ -51,7 +51,7 @@ public class SetupAccountWorkflowRequest extends AbstractSafeParcelable implemen
         this.c = z2;
         this.d = list;
         this.e = bundle;
-        arwm.s(appDescription);
+        atzb.s(appDescription);
         this.f = appDescription;
         this.g = z3;
         this.h = str;
@@ -87,32 +87,32 @@ public class SetupAccountWorkflowRequest extends AbstractSafeParcelable implemen
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.e(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.x(parcel, 4, this.d, false);
-        arxc.g(parcel, 5, this.e, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.e(parcel, 7, this.g);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.t(parcel, 9, this.i, i, false);
-        arxc.e(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.v(parcel, 12, this.l, false);
-        arxc.v(parcel, 13, this.m, false);
-        arxc.v(parcel, 14, this.n, false);
-        arxc.v(parcel, 15, this.o, false);
-        arxc.e(parcel, 16, this.p);
-        arxc.e(parcel, 17, this.q);
-        arxc.e(parcel, 18, this.r);
-        arxc.e(parcel, 19, this.s);
-        arxc.t(parcel, 20, this.t, i, false);
-        arxc.v(parcel, 21, this.u, false);
-        arxc.e(parcel, 22, this.v);
-        arxc.o(parcel, 23, this.w);
-        arxc.e(parcel, 24, this.x);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.e(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.x(parcel, 4, this.d, false);
+        atzr.g(parcel, 5, this.e, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.e(parcel, 7, this.g);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.t(parcel, 9, this.i, i, false);
+        atzr.e(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.v(parcel, 12, this.l, false);
+        atzr.v(parcel, 13, this.m, false);
+        atzr.v(parcel, 14, this.n, false);
+        atzr.v(parcel, 15, this.o, false);
+        atzr.e(parcel, 16, this.p);
+        atzr.e(parcel, 17, this.q);
+        atzr.e(parcel, 18, this.r);
+        atzr.e(parcel, 19, this.s);
+        atzr.t(parcel, 20, this.t, i, false);
+        atzr.v(parcel, 21, this.u, false);
+        atzr.e(parcel, 22, this.v);
+        atzr.o(parcel, 23, this.w);
+        atzr.e(parcel, 24, this.x);
+        atzr.c(parcel, a);
     }
 
     public SetupAccountWorkflowRequest(AppDescription appDescription, String str) {

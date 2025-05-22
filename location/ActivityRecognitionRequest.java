@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.WorkSource;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bzha;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cbpr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ActivityRecognitionRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bzha();
+    public static final Parcelable.Creator CREATOR = new cbpr();
     public final long a;
     public final boolean b;
     public final WorkSource c;
@@ -36,17 +36,17 @@ public class ActivityRecognitionRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        arwm.s(parcel);
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, this.a);
-        arxc.e(parcel, 2, this.b);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.p(parcel, 5, this.e, false);
-        arxc.e(parcel, 6, this.f);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.q(parcel, 8, this.h);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.c(parcel, a);
+        atzb.s(parcel);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, this.a);
+        atzr.e(parcel, 2, this.b);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.p(parcel, 5, this.e, false);
+        atzr.e(parcel, 6, this.f);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.q(parcel, 8, this.h);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.c(parcel, a);
     }
 }

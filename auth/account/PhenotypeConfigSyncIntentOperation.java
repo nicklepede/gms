@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.common.Feature;
-import defpackage.aaok;
-import defpackage.arco;
-import defpackage.arcy;
-import defpackage.unp;
+import defpackage.acok;
+import defpackage.atfd;
+import defpackage.atfn;
+import defpackage.wjo;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class PhenotypeConfigSyncIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
@@ -20,19 +20,19 @@ public class PhenotypeConfigSyncIntentOperation extends IntentOperation {
             Log.i("Auth", String.format(Locale.US, "[PhenotypeConfigSyncIntentOperation] Not handling unknown action:".concat(String.valueOf(action)), new Object[0]));
             return;
         }
-        aaok aaokVar = new aaok(this);
-        arcy arcyVar = new arcy();
-        arcyVar.c = new Feature[]{unp.e};
-        arcyVar.b = false;
-        arcyVar.a = new arco() { // from class: aaoh
-            @Override // defpackage.arco
+        acok acokVar = new acok(this);
+        atfn atfnVar = new atfn();
+        atfnVar.c = new Feature[]{wjo.e};
+        atfnVar.b = false;
+        atfnVar.a = new atfd() { // from class: acoh
+            @Override // defpackage.atfd
             public final void d(Object obj, Object obj2) {
-                int i = aaok.a;
-                ((aaob) ((aaog) obj).H()).a(new aaoj((dfau) obj2));
+                int i = acok.a;
+                ((acob) ((acog) obj).H()).a(new acoj((dhma) obj2));
             }
         };
-        arcyVar.d = 1521;
-        aaokVar.iT(arcyVar.a());
+        atfnVar.d = 1521;
+        acokVar.ji(atfnVar.a());
         Log.i("Auth", String.format(Locale.US, "[PhenotypeConfigSyncIntentOperation] Requested phenotype config sync.", new Object[0]));
     }
 }

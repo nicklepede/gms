@@ -9,15 +9,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import com.google.android.cast.JGCastService;
-import defpackage.asnb;
-import defpackage.iuo;
-import defpackage.rpq;
+import defpackage.auqv;
+import defpackage.iwe;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class IndeterminateMultiColorSpinner extends ViewGroup {
     ImageView a;
-    asnb b;
+    auqv b;
     private int c;
     private int d;
 
@@ -60,7 +60,7 @@ public class IndeterminateMultiColorSpinner extends ViewGroup {
         super.onMeasure(i, i2);
         this.a.measure(View.MeasureSpec.makeMeasureSpec(this.c, JGCastService.FLAG_PRIVATE_DISPLAY), View.MeasureSpec.makeMeasureSpec(this.d, JGCastService.FLAG_PRIVATE_DISPLAY));
         int i3 = this.c;
-        int[] iArr = iuo.a;
+        int[] iArr = iwe.a;
         setMeasuredDimension(i3 + getPaddingStart() + getPaddingEnd(), this.d + getPaddingTop() + getPaddingBottom());
     }
 
@@ -93,13 +93,13 @@ public class IndeterminateMultiColorSpinner extends ViewGroup {
         ImageView imageView = new ImageView(getContext());
         this.a = imageView;
         imageView.setLayoutParams(new ViewGroup.LayoutParams(-2, -2));
-        asnb asnbVar = new asnb(getContext(), this);
-        this.b = asnbVar;
-        asnbVar.setAlpha(255);
+        auqv auqvVar = new auqv(getContext(), this);
+        this.b = auqvVar;
+        auqvVar.setAlpha(255);
         this.a.setImageDrawable(this.b);
         this.a.setVisibility(8);
         addView(this.a);
-        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, rpq.g);
+        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, tiy.g);
         int i = obtainStyledAttributes2.getInt(2, 0);
         if (i == 0) {
             a(1);

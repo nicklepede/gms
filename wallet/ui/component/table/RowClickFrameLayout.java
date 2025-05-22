@@ -7,31 +7,31 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
-import defpackage.djhv;
-import defpackage.djhw;
-import defpackage.efec;
-import defpackage.fata;
-import defpackage.tz;
+import defpackage.dlto;
+import defpackage.dltp;
+import defpackage.ehrf;
+import defpackage.fdhp;
+import defpackage.ue;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class RowClickFrameLayout extends FrameLayout implements tz {
+public class RowClickFrameLayout extends FrameLayout implements ue {
     boolean a;
     int b;
-    public djhv c;
-    public djhw d;
+    public dlto c;
+    public dltp d;
 
     public RowClickFrameLayout(Context context) {
         super(context);
         this.b = -1;
     }
 
-    @Override // defpackage.tz
+    @Override // defpackage.ue
     public final void c(boolean z) {
         this.a = z;
     }
 
-    @Override // defpackage.tz
+    @Override // defpackage.ue
     public final boolean i(RecyclerView recyclerView, MotionEvent motionEvent) {
         View view;
         this.b = -1;
@@ -60,7 +60,7 @@ public class RowClickFrameLayout extends FrameLayout implements tz {
         }
         if (view != null) {
             int i = this.c.a(recyclerView.c(view)).a;
-            int a2 = fata.a(this.c.d(i).d);
+            int a2 = fdhp.a(this.c.d(i).d);
             if (a2 != 0 && a2 == 3) {
                 this.b = i;
                 Drawable background = getBackground();
@@ -73,15 +73,15 @@ public class RowClickFrameLayout extends FrameLayout implements tz {
         return this.b != -1;
     }
 
-    @Override // defpackage.tz
+    @Override // defpackage.ue
     public final void k(MotionEvent motionEvent) {
         if (this.b != -1) {
             onTouchEvent(motionEvent);
             if (motionEvent.getAction() == 1) {
-                djhw djhwVar = this.d;
-                efec efecVar = (efec) djhwVar.f.e(djhwVar.a.d(this.b).b);
-                if (efecVar != null) {
-                    efecVar.a();
+                dltp dltpVar = this.d;
+                ehrf ehrfVar = (ehrf) dltpVar.f.e(dltpVar.a.d(this.b).b);
+                if (ehrfVar != null) {
+                    ehrfVar.a();
                 }
             }
         }

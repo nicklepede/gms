@@ -7,32 +7,32 @@ import android.view.MenuItem;
 import androidx.activity.result.ActivityResult;
 import com.google.android.gms.R;
 import com.google.android.gms.trustagent.trustlet.device.bluetooth.model.TrustableDevice;
-import defpackage.abt;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqh;
+import defpackage.aby;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auub;
 import defpackage.dg;
-import defpackage.dgmu;
-import defpackage.dgoy;
-import defpackage.dgqz;
-import defpackage.dgsk;
-import defpackage.eiig;
-import defpackage.ejhf;
-import defpackage.ngn;
+import defpackage.dixz;
+import defpackage.djad;
+import defpackage.djce;
+import defpackage.djdp;
+import defpackage.ekvl;
+import defpackage.eluo;
+import defpackage.ozo;
 import j$.util.Objects;
 import j$.util.Optional;
 import j$.util.function.Consumer$CC;
 import java.util.function.Consumer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class GoogleTrustAgentTrustedDevicesChimeraSettings extends dgmu implements dgoy, abt {
-    private static final asot m = asot.b("TrustAgent", asej.TRUSTAGENT);
-    dgqz l;
+public class GoogleTrustAgentTrustedDevicesChimeraSettings extends dixz implements djad, aby {
+    private static final ausn m = ausn.b("TrustAgent", auid.TRUSTAGENT);
+    djce l;
     private boolean n = false;
 
-    @Override // defpackage.dgmq
-    protected final ngn a() {
+    @Override // defpackage.dixv
+    protected final ozo a() {
         Bundle bundle = new Bundle();
         Intent intent = getIntent();
         if (intent != null && intent.getExtras() != null) {
@@ -42,21 +42,21 @@ public class GoogleTrustAgentTrustedDevicesChimeraSettings extends dgmu implemen
                 bundle.putInt("notification_type", i);
             }
         }
-        dgsk dgskVar = new dgsk();
-        dgskVar.setArguments(bundle);
-        return dgskVar;
+        djdp djdpVar = new djdp();
+        djdpVar.setArguments(bundle);
+        return djdpVar;
     }
 
-    @Override // defpackage.dgoy
+    @Override // defpackage.djad
     public final void b() {
-        l().N();
+        l().P();
     }
 
-    @Override // defpackage.abt
-    public final /* bridge */ /* synthetic */ void jq(Object obj) {
+    @Override // defpackage.aby
+    public final /* bridge */ /* synthetic */ void jF(Object obj) {
         ActivityResult activityResult = (ActivityResult) obj;
         int i = activityResult.a;
-        if (asqh.f()) {
+        if (auub.f()) {
             j.intValue();
             if (i == -11) {
                 finish();
@@ -70,16 +70,16 @@ public class GoogleTrustAgentTrustedDevicesChimeraSettings extends dgmu implemen
         int intExtra = intent.getIntExtra("extra_request_code", 0);
         if (i == -1) {
             if (intExtra != 1002) {
-                ((ejhf) m.j()).x("Unknown request code");
+                ((eluo) m.j()).x("Unknown request code");
             } else if (Objects.equals(intent.getAction(), "com.google.android.gms.auth.trustagent.ADD_DEVICE")) {
                 Optional e = TrustableDevice.e(intent);
-                final dgqz dgqzVar = this.l;
-                Objects.requireNonNull(dgqzVar);
-                e.ifPresent(new Consumer() { // from class: dgrb
+                final djce djceVar = this.l;
+                Objects.requireNonNull(djceVar);
+                e.ifPresent(new Consumer() { // from class: djcg
                     @Override // java.util.function.Consumer
                     /* renamed from: accept */
-                    public final void q(Object obj2) {
-                        dgqz.this.a((TrustableDevice) obj2);
+                    public final void u(Object obj2) {
+                        djce.this.a((TrustableDevice) obj2);
                     }
 
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -90,35 +90,35 @@ public class GoogleTrustAgentTrustedDevicesChimeraSettings extends dgmu implemen
         }
     }
 
-    @Override // defpackage.dgmq
+    @Override // defpackage.dixv
     protected final String k() {
         return "TrustedDevicesFragment";
     }
 
-    public final dgsk l() {
+    public final djdp l() {
         dg h = getSupportFragmentManager().h("TrustedDevicesFragment");
-        eiig.x(h);
-        return (dgsk) h;
+        ekvl.y(h);
+        return (djdp) h;
     }
 
-    @Override // defpackage.dgmu, defpackage.dgmq, defpackage.dgmn, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dixz, defpackage.dixv, defpackage.dixs, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         getIntent();
-        this.l = new dgqz(this);
+        this.l = new djce(this);
         if (bundle != null) {
             this.n = bundle.getBoolean("TrustedDeviceDialogActionTakenKey", false);
         }
-        hy().h();
+        hO().h();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
     }
 
-    @Override // defpackage.dgmq, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dixv, com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != R.id.trusted_devices_actions_help) {
             return super.onOptionsItemSelected(menuItem);
@@ -127,7 +127,7 @@ public class GoogleTrustAgentTrustedDevicesChimeraSettings extends dgmu implemen
         return true;
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         bundle.putBoolean("TrustedDeviceDialogActionTakenKey", this.n);
         super.onSaveInstanceState(bundle);

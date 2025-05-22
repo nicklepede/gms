@@ -1,6 +1,6 @@
 package com.google.android.gms.games.install.activity;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* renamed from: com.google.android.gms.games.install.activity.$AutoValue_InstallRequest, reason: invalid class name */
 /* loaded from: classes4.dex */
 abstract class C$AutoValue_InstallRequest extends InstallRequest {

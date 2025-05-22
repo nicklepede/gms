@@ -4,196 +4,196 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import com.google.android.gms.chromesync.sync.SyncIntentOperation;
-import defpackage.apem;
-import defpackage.apen;
-import defpackage.apfc;
-import defpackage.apix;
-import defpackage.apoa;
-import defpackage.appe;
-import defpackage.apqb;
-import defpackage.apqd;
-import defpackage.apqe;
-import defpackage.asej;
-import defpackage.asnv;
-import defpackage.asot;
-import defpackage.bmap;
-import defpackage.bmat;
-import defpackage.eito;
-import defpackage.eits;
-import defpackage.fuuq;
-import defpackage.fuuw;
-import defpackage.fuvg;
-import defpackage.fvaf;
+import defpackage.arhd;
+import defpackage.arhe;
+import defpackage.arht;
+import defpackage.arlo;
+import defpackage.arqr;
+import defpackage.arrv;
+import defpackage.arss;
+import defpackage.arsu;
+import defpackage.arsv;
+import defpackage.auid;
+import defpackage.aurp;
+import defpackage.ausn;
+import defpackage.bohh;
+import defpackage.bohl;
+import defpackage.elgt;
+import defpackage.elgx;
+import defpackage.fxqo;
+import defpackage.fxqu;
+import defpackage.fxre;
+import defpackage.fxwd;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class SyncIntentOperation extends appe {
-    public static final asot a = asot.b("SyncIntentOperation", asej.CHROME_SYNC);
+public final class SyncIntentOperation extends arrv {
+    public static final ausn a = ausn.b("SyncIntentOperation", auid.CHROME_SYNC);
     public static final Uri b = Uri.parse("content://com.google.android.gms.chromesync.sync.ChimeraSyncReceiverService");
-    public static final eits c;
-    public fuuq d;
-    public fuuq e;
-    public fuuq f;
-    public fuuq g;
-    public fuuq h;
-    public fuuq i;
-    public fuuq j;
-    public fuuq k;
-    private final fuuw l = new fuvg(new fvaf() { // from class: appp
-        @Override // defpackage.fvaf
+    public static final elgx c;
+    public fxqo d;
+    public fxqo e;
+    public fxqo f;
+    public fxqo g;
+    public fxqo h;
+    public fxqo i;
+    public fxqo j;
+    public fxqo k;
+    private final fxqu l = new fxre(new fxwd() { // from class: arsg
+        @Override // defpackage.fxwd
         public final Object a() {
-            fuuq fuuqVar = SyncIntentOperation.this.d;
-            if (fuuqVar == null) {
-                fvbo.j("accountProviderFactory");
-                fuuqVar = null;
+            fxqo fxqoVar = SyncIntentOperation.this.d;
+            if (fxqoVar == null) {
+                fxxm.j("accountProviderFactory");
+                fxqoVar = null;
             }
-            return ((apdo) fuuqVar).a();
+            return ((argf) fxqoVar).a();
         }
     });
-    private final fuuw m = new fuvg(new fvaf() { // from class: appq
-        @Override // defpackage.fvaf
+    private final fxqu m = new fxre(new fxwd() { // from class: arsh
+        @Override // defpackage.fxwd
         public final Object a() {
-            fuuq fuuqVar = SyncIntentOperation.this.e;
-            if (fuuqVar == null) {
-                fvbo.j("syncManagerFactory");
-                fuuqVar = null;
+            fxqo fxqoVar = SyncIntentOperation.this.e;
+            if (fxqoVar == null) {
+                fxxm.j("syncManagerFactory");
+                fxqoVar = null;
             }
-            return ((apqc) fuuqVar).b();
+            return ((arst) fxqoVar).b();
         }
     });
-    private final fuuw n = new fuvg(new fvaf() { // from class: appr
-        @Override // defpackage.fvaf
+    private final fxqu n = new fxre(new fxwd() { // from class: arsi
+        @Override // defpackage.fxwd
         public final Object a() {
-            fuuq fuuqVar = SyncIntentOperation.this.f;
-            if (fuuqVar == null) {
-                fvbo.j("metricsLoggerCacheFactory");
-                fuuqVar = null;
+            fxqo fxqoVar = SyncIntentOperation.this.f;
+            if (fxqoVar == null) {
+                fxxm.j("metricsLoggerCacheFactory");
+                fxqoVar = null;
             }
-            return ((apfd) fuuqVar).a();
+            return ((arhu) fxqoVar).a();
         }
     });
-    private final fuuw o = new fuvg(new fvaf() { // from class: apps
-        @Override // defpackage.fvaf
+    private final fxqu o = new fxre(new fxwd() { // from class: arsj
+        @Override // defpackage.fxwd
         public final Object a() {
             if (SyncIntentOperation.this.g == null) {
-                fvbo.j("clockFactory");
+                fxxm.j("clockFactory");
             }
-            return asnz.a;
+            return aurt.a;
         }
     });
-    private final fuuw p = new fuvg(new fvaf() { // from class: appt
-        @Override // defpackage.fvaf
+    private final fxqu p = new fxre(new fxwd() { // from class: arsk
+        @Override // defpackage.fxwd
         public final Object a() {
-            fuuq fuuqVar = SyncIntentOperation.this.h;
-            if (fuuqVar == null) {
-                fvbo.j("accountAffiliationsUpdaterFactory");
-                fuuqVar = null;
+            fxqo fxqoVar = SyncIntentOperation.this.h;
+            if (fxqoVar == null) {
+                fxxm.j("accountAffiliationsUpdaterFactory");
+                fxqoVar = null;
             }
-            return fuuqVar.a();
+            return fxqoVar.a();
         }
     });
-    private final fuuw q = new fuvg(new fvaf() { // from class: appu
-        @Override // defpackage.fvaf
+    private final fxqu q = new fxre(new fxwd() { // from class: arsl
+        @Override // defpackage.fxwd
         public final Object a() {
-            fuuq fuuqVar = SyncIntentOperation.this.i;
-            if (fuuqVar == null) {
-                fvbo.j("accountDataStoreFactory");
-                fuuqVar = null;
+            fxqo fxqoVar = SyncIntentOperation.this.i;
+            if (fxqoVar == null) {
+                fxxm.j("accountDataStoreFactory");
+                fxqoVar = null;
             }
-            return (apix) fuuqVar.a();
+            return (arlo) fxqoVar.a();
         }
     });
-    private final fuuw r = new fuvg(new fvaf() { // from class: appv
-        @Override // defpackage.fvaf
+    private final fxqu r = new fxre(new fxwd() { // from class: arsm
+        @Override // defpackage.fxwd
         public final Object a() {
-            fuuq fuuqVar = SyncIntentOperation.this.j;
-            if (fuuqVar == null) {
-                fvbo.j("syncEntityStoreFactory");
-                fuuqVar = null;
+            fxqo fxqoVar = SyncIntentOperation.this.j;
+            if (fxqoVar == null) {
+                fxxm.j("syncEntityStoreFactory");
+                fxqoVar = null;
             }
-            return ((apke) fuuqVar).a();
+            return ((armv) fxqoVar).a();
         }
     });
-    private final fuuw s = new fuvg(new fvaf() { // from class: appw
-        @Override // defpackage.fvaf
+    private final fxqu s = new fxre(new fxwd() { // from class: arsn
+        @Override // defpackage.fxwd
         public final Object a() {
-            fuuq fuuqVar = SyncIntentOperation.this.k;
-            if (fuuqVar == null) {
-                fvbo.j("passwordLocalChromeDataStoreFactory");
-                fuuqVar = null;
+            fxqo fxqoVar = SyncIntentOperation.this.k;
+            if (fxqoVar == null) {
+                fxxm.j("passwordLocalChromeDataStoreFactory");
+                fxqoVar = null;
             }
-            return ((apjs) fuuqVar).a();
+            return ((armj) fxqoVar).a();
         }
     });
 
     static {
-        eito eitoVar = new eito();
-        eitoVar.i("PASSWORD", apqe.EVENT_GSYNC_PASSWORD_DATA_CHANGED);
-        eitoVar.i("AUTOFILL_WALLET", apqe.EVENT_GSYNC_AUTOFILL_WALLET_DATA_CHANGED);
-        eitoVar.i("WALLET_METADATA", apqe.EVENT_GSYNC_WALLET_METADATA_CHANGED);
-        eitoVar.i("AUTOFILL_WALLET_USAGE", apqe.EVENT_GSYNC_AUTOFILL_WALLET_USAGE_DATA_CHANGED);
-        eitoVar.i("AUTOFILL_OFFER", apqe.EVENT_GSYNC_AUTOFILL_OFFER_DATA_CHANGED);
-        eitoVar.i("WIFI_CONFIGURATION", apqe.EVENT_GSYNC_WIFI_CONFIGURATION_DATA_CHANGED);
-        eitoVar.i("AUTOFILL_PROFILE", apqe.EVENT_GSYNC_AUTOFILL_PROFILE_DATA_CHANGED);
-        eitoVar.i("PLUS_ADDRESS", apqe.EVENT_GSYNC_AUTOFILL_SHIELDED_ID_DATA_CHANGED);
-        eitoVar.i("PLUS_ADDRESS_SETTING", apqe.EVENT_GSYNC_AUTOFILL_SHIELDED_ID_SETTING_DATA_CHANGED);
-        eitoVar.i("NIGORI", apqe.EVENT_GSYNC_METADATA_CHANGED);
-        eitoVar.i("PRIORITY_PREFERENCE", apqe.EVENT_GSYNC_PREFERENCE_DATA_CHANGED);
-        eitoVar.i("MANAGED_USER_SETTING", apqe.EVENT_GSYNC_MANAGED_USER_SETTING_DATA_CHANGED);
-        eitoVar.i("WEBAUTHN_CREDENTIAL", apqe.EVENT_GSYNC_WEBAUTHN_CREDENTIAL_DATA_CHANGED);
-        eitoVar.i("INCOMING_PASSWORD_SHARING_INVITATION", apqe.EVENT_GSYNC_INCOMING_PASSWORD_SHARING_INVITATION_DATA_CHANGED);
-        c = eitoVar.b();
+        elgt elgtVar = new elgt();
+        elgtVar.i("PASSWORD", arsv.EVENT_GSYNC_PASSWORD_DATA_CHANGED);
+        elgtVar.i("AUTOFILL_WALLET", arsv.EVENT_GSYNC_AUTOFILL_WALLET_DATA_CHANGED);
+        elgtVar.i("WALLET_METADATA", arsv.EVENT_GSYNC_WALLET_METADATA_CHANGED);
+        elgtVar.i("AUTOFILL_WALLET_USAGE", arsv.EVENT_GSYNC_AUTOFILL_WALLET_USAGE_DATA_CHANGED);
+        elgtVar.i("AUTOFILL_OFFER", arsv.EVENT_GSYNC_AUTOFILL_OFFER_DATA_CHANGED);
+        elgtVar.i("WIFI_CONFIGURATION", arsv.EVENT_GSYNC_WIFI_CONFIGURATION_DATA_CHANGED);
+        elgtVar.i("AUTOFILL_PROFILE", arsv.EVENT_GSYNC_AUTOFILL_PROFILE_DATA_CHANGED);
+        elgtVar.i("PLUS_ADDRESS", arsv.EVENT_GSYNC_AUTOFILL_SHIELDED_ID_DATA_CHANGED);
+        elgtVar.i("PLUS_ADDRESS_SETTING", arsv.EVENT_GSYNC_AUTOFILL_SHIELDED_ID_SETTING_DATA_CHANGED);
+        elgtVar.i("NIGORI", arsv.EVENT_GSYNC_METADATA_CHANGED);
+        elgtVar.i("PRIORITY_PREFERENCE", arsv.EVENT_GSYNC_PREFERENCE_DATA_CHANGED);
+        elgtVar.i("MANAGED_USER_SETTING", arsv.EVENT_GSYNC_MANAGED_USER_SETTING_DATA_CHANGED);
+        elgtVar.i("WEBAUTHN_CREDENTIAL", arsv.EVENT_GSYNC_WEBAUTHN_CREDENTIAL_DATA_CHANGED);
+        elgtVar.i("INCOMING_PASSWORD_SHARING_INVITATION", arsv.EVENT_GSYNC_INCOMING_PASSWORD_SHARING_INVITATION_DATA_CHANGED);
+        c = elgtVar.b();
     }
 
     public static final Intent b(Context context) {
-        Intent startIntent = appe.getStartIntent(context, SyncIntentOperation.class, "com.google.android.gms.chromesync.AFFILIATION_UPDATE_REQUESTED");
+        Intent startIntent = arrv.getStartIntent(context, SyncIntentOperation.class, "com.google.android.gms.chromesync.AFFILIATION_UPDATE_REQUESTED");
         if (startIntent != null) {
             return startIntent;
         }
-        throw new apen(apem.f);
+        throw new arhe(arhd.f);
     }
 
-    private final apfc d() {
-        return (apfc) this.n.a();
+    private final arht d() {
+        return (arht) this.n.a();
     }
 
-    private final apix f() {
-        return (apix) this.q.a();
+    private final arlo f() {
+        return (arlo) this.q.a();
     }
 
-    private final apoa i() {
-        return (apoa) this.p.a();
+    private final arqr i() {
+        return (arqr) this.p.a();
     }
 
-    private final apqb j() {
-        return (apqb) this.m.a();
+    private final arss j() {
+        return (arss) this.m.a();
     }
 
-    private final asnv k() {
-        return (asnv) this.o.a();
+    private final aurp k() {
+        return (aurp) this.o.a();
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:28:0x00ee, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x00e8, code lost:
     
-        if (r12 == null) goto L40;
+        if (r12 == null) goto L38;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private final void l(android.content.Intent r19, defpackage.fvaf r20) {
+    private final void l(android.content.Intent r19, defpackage.fxwd r20) {
         /*
-            Method dump skipped, instructions count: 464
+            Method dump skipped, instructions count: 455
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.chromesync.sync.SyncIntentOperation.l(android.content.Intent, fvaf):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.chromesync.sync.SyncIntentOperation.l(android.content.Intent, fxwd):void");
     }
 
     private final void m() {
         Iterator it = c().a().iterator();
         while (it.hasNext()) {
-            j().c(apqd.a((bmat) it.next(), apqe.EVENT_GMS_UPDATED, false, null, null));
+            j().c(arsu.a((bohl) it.next(), arsv.EVENT_GMS_UPDATED, false, null, null));
         }
         i().b();
     }
@@ -201,16 +201,16 @@ public final class SyncIntentOperation extends appe {
     private final void n() {
         Iterator it = c().a().iterator();
         while (it.hasNext()) {
-            j().c(apqd.a((bmat) it.next(), apqe.EVENT_PHENOTYPE_CHANGED, false, null, null));
+            j().c(arsu.a((bohl) it.next(), arsv.EVENT_PHENOTYPE_CHANGED, false, null, null));
         }
     }
 
-    public final bmap c() {
-        return (bmap) this.l.a();
+    public final bohh c() {
+        return (bohh) this.l.a();
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:153:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Removed duplicated region for block: B:77:0x01ca A[Catch: unx -> 0x083a, apen -> 0x0847, TryCatch #14 {apen -> 0x0847, unx -> 0x083a, blocks: (B:3:0x0016, B:6:0x001d, B:8:0x0025, B:11:0x0035, B:12:0x003d, B:16:0x0042, B:18:0x004a, B:21:0x004f, B:23:0x0057, B:24:0x0063, B:26:0x0069, B:30:0x007d, B:32:0x0085, B:35:0x008a, B:37:0x0092, B:39:0x0098, B:41:0x009e, B:43:0x00b5, B:45:0x00bd, B:47:0x00c5, B:49:0x00d1, B:51:0x00da, B:52:0x00eb, B:54:0x00f1, B:57:0x010a, B:60:0x0118, B:66:0x011c, B:68:0x0122, B:70:0x012b, B:72:0x013c, B:74:0x0144, B:77:0x01ca, B:79:0x01d2, B:82:0x01da, B:83:0x01e7, B:85:0x01ed, B:87:0x020a, B:89:0x0210, B:90:0x021a, B:92:0x0220, B:93:0x0231, B:95:0x0237, B:100:0x024d, B:102:0x0256, B:107:0x0269, B:109:0x0277, B:111:0x028b, B:113:0x02a1, B:115:0x02ba, B:116:0x02ca, B:122:0x02e2, B:124:0x02e8, B:125:0x0316, B:127:0x031c, B:129:0x032c, B:131:0x0336, B:132:0x0339, B:135:0x0388, B:136:0x03a0, B:138:0x03aa, B:139:0x03b2, B:148:0x03c6, B:151:0x03d5, B:154:0x015b, B:156:0x0163, B:158:0x0179, B:161:0x018f, B:163:0x01ac, B:164:0x03e4, B:167:0x03ee, B:169:0x03f6, B:170:0x0402, B:172:0x0408, B:174:0x041e, B:177:0x0427, B:179:0x042f, B:181:0x0437, B:182:0x0448, B:201:0x04a9, B:202:0x04da, B:204:0x04e0, B:206:0x04f2, B:207:0x0504, B:209:0x050a, B:211:0x0520, B:222:0x057d, B:223:0x057e, B:225:0x0586, B:227:0x0593, B:232:0x05b2, B:234:0x05ba, B:236:0x05c8, B:240:0x05cd, B:242:0x05d5, B:243:0x05e1, B:245:0x05e7, B:246:0x05fc, B:248:0x0602, B:250:0x061a, B:252:0x0620, B:254:0x062f, B:259:0x063f, B:261:0x0647, B:262:0x064d, B:313:0x07e6, B:340:0x07f9, B:341:0x07fa, B:343:0x07fb, B:345:0x0803, B:348:0x0807, B:350:0x080f, B:352:0x082c, B:264:0x064e, B:265:0x0659, B:267:0x065f, B:269:0x0675, B:330:0x06e8, B:282:0x06f0, B:283:0x06f9, B:285:0x06ff, B:287:0x0710, B:318:0x0779, B:300:0x0781, B:301:0x078a, B:303:0x0790, B:305:0x07a1, B:306:0x07b2, B:308:0x07b8, B:310:0x07c6, B:312:0x07d4, B:299:0x0770, B:325:0x07ec, B:326:0x07ef, B:281:0x06df, B:337:0x07f4, B:338:0x07f7, B:289:0x071f, B:290:0x0727, B:293:0x072d, B:294:0x0750, B:316:0x0774, B:297:0x0755, B:322:0x07ea, B:271:0x068e, B:272:0x0696, B:275:0x069c, B:276:0x06bf, B:328:0x06e3, B:279:0x06c4, B:334:0x07f2, B:184:0x0449, B:191:0x0472, B:199:0x04a0, B:200:0x04a8, B:214:0x056d, B:215:0x0575, B:218:0x0577, B:219:0x057a, B:193:0x0481, B:194:0x0485, B:196:0x048b, B:198:0x049d, B:186:0x045c, B:187:0x045f, B:189:0x0465), top: B:2:0x0016, inners: #10, #13, #15 }] */
+    /* JADX WARN: Removed duplicated region for block: B:163:? A[RETURN, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:87:0x0209 A[Catch: wjw -> 0x088f, arhe -> 0x089c, TryCatch #14 {arhe -> 0x089c, wjw -> 0x088f, blocks: (B:3:0x0016, B:6:0x001d, B:8:0x0025, B:11:0x0035, B:12:0x003d, B:16:0x0042, B:18:0x004a, B:21:0x004f, B:23:0x0057, B:24:0x0063, B:26:0x0069, B:30:0x007d, B:32:0x0085, B:35:0x008a, B:37:0x0092, B:39:0x0098, B:41:0x009e, B:43:0x00b5, B:45:0x00bd, B:47:0x00c5, B:49:0x00d1, B:51:0x00da, B:52:0x00eb, B:54:0x00f1, B:57:0x010a, B:60:0x0118, B:66:0x011c, B:68:0x0122, B:70:0x012b, B:72:0x013c, B:75:0x0144, B:77:0x015b, B:80:0x0164, B:82:0x017b, B:84:0x0183, B:87:0x0209, B:89:0x0211, B:92:0x0219, B:93:0x0226, B:95:0x022c, B:97:0x0249, B:99:0x024f, B:100:0x0259, B:102:0x025f, B:103:0x0270, B:105:0x0276, B:110:0x028c, B:112:0x0295, B:117:0x02a8, B:119:0x02b6, B:121:0x02ca, B:123:0x02e0, B:125:0x02f9, B:126:0x0309, B:132:0x0321, B:133:0x034f, B:135:0x0355, B:137:0x0365, B:139:0x036f, B:140:0x0372, B:143:0x03bf, B:145:0x03e1, B:146:0x03e9, B:151:0x03f7, B:153:0x03fd, B:158:0x041b, B:161:0x042a, B:164:0x019a, B:166:0x01a2, B:168:0x01b8, B:171:0x01ce, B:173:0x01eb, B:174:0x0439, B:177:0x0443, B:179:0x044b, B:180:0x0457, B:182:0x045d, B:184:0x0473, B:187:0x047c, B:189:0x0484, B:191:0x048c, B:192:0x049d, B:211:0x04fe, B:212:0x052f, B:214:0x0535, B:216:0x0547, B:217:0x0559, B:219:0x055f, B:221:0x0575, B:232:0x05d2, B:233:0x05d3, B:235:0x05db, B:237:0x05e8, B:242:0x0607, B:244:0x060f, B:246:0x061d, B:250:0x0622, B:252:0x062a, B:253:0x0636, B:255:0x063c, B:256:0x0651, B:258:0x0657, B:260:0x066f, B:262:0x0675, B:264:0x0684, B:269:0x0694, B:271:0x069c, B:272:0x06a2, B:323:0x083b, B:350:0x084e, B:351:0x084f, B:353:0x0850, B:355:0x0858, B:358:0x085c, B:360:0x0864, B:362:0x0881, B:274:0x06a3, B:275:0x06ae, B:277:0x06b4, B:279:0x06ca, B:340:0x073d, B:292:0x0745, B:293:0x074e, B:295:0x0754, B:297:0x0765, B:328:0x07ce, B:310:0x07d6, B:311:0x07df, B:313:0x07e5, B:315:0x07f6, B:316:0x0807, B:318:0x080d, B:320:0x081b, B:322:0x0829, B:309:0x07c5, B:335:0x0841, B:336:0x0844, B:291:0x0734, B:347:0x0849, B:348:0x084c, B:332:0x083f, B:281:0x06e3, B:282:0x06eb, B:285:0x06f1, B:286:0x0714, B:338:0x0738, B:289:0x0719, B:344:0x0847, B:303:0x0782, B:299:0x0774, B:300:0x077c, B:304:0x07a5, B:326:0x07c9, B:307:0x07aa, B:194:0x049e, B:201:0x04c7, B:209:0x04f5, B:210:0x04fd, B:224:0x05c2, B:225:0x05ca, B:228:0x05cc, B:229:0x05cf, B:203:0x04d6, B:204:0x04da, B:206:0x04e0, B:208:0x04f2, B:196:0x04b1, B:197:0x04b4, B:199:0x04ba), top: B:2:0x0016, inners: #7, #8, #15 }] */
     @Override // com.google.android.chimera.IntentOperation
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -218,7 +218,7 @@ public final class SyncIntentOperation extends appe {
     */
     public final void onHandleIntent(android.content.Intent r20) {
         /*
-            Method dump skipped, instructions count: 2178
+            Method dump skipped, instructions count: 2264
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.chromesync.sync.SyncIntentOperation.onHandleIntent(android.content.Intent):void");

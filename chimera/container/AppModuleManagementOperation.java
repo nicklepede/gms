@@ -2,22 +2,22 @@ package com.google.android.gms.chimera.container;
 
 import com.google.android.chimera.IntentOperation;
 import com.google.android.chimera.config.ModuleManager;
-import defpackage.aoha;
-import defpackage.dmlk;
-import defpackage.fmpv;
-import defpackage.ppt;
+import defpackage.aqit;
+import defpackage.dowy;
+import defpackage.fpht;
+import defpackage.rix;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class AppModuleManagementOperation extends IntentOperation {
     private static final String a = "com.google.android.gms.chimera.container.AppModuleManagementOperation";
     private ModuleManager b;
-    private ppt c;
-    private aoha d;
-    private final dmlk e;
+    private rix c;
+    private aqit d;
+    private final dowy e;
 
     public AppModuleManagementOperation() {
-        this.e = fmpv.b();
+        this.e = fpht.b();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:102:? A[RETURN, SYNTHETIC] */
@@ -35,10 +35,10 @@ public class AppModuleManagementOperation extends IntentOperation {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.chimera.container.AppModuleManagementOperation.onHandleIntent(android.content.Intent):void");
     }
 
-    AppModuleManagementOperation(ModuleManager moduleManager, ppt pptVar, aoha aohaVar) {
+    AppModuleManagementOperation(ModuleManager moduleManager, rix rixVar, aqit aqitVar) {
         this();
         this.b = moduleManager;
-        this.c = pptVar;
-        this.d = aohaVar;
+        this.c = rixVar;
+        this.d = aqitVar;
     }
 }

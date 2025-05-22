@@ -5,28 +5,28 @@ import android.os.ParcelFileDescriptor;
 import com.google.android.chimera.BackupAgent;
 import com.google.android.chimera.config.InvalidConfigException;
 import com.google.android.chimera.config.ModuleManager;
-import defpackage.ahhx;
-import defpackage.ahhy;
-import defpackage.ahly;
-import defpackage.ahwd;
-import defpackage.bqux;
-import defpackage.eits;
-import defpackage.flne;
-import defpackage.fmut;
+import defpackage.ajin;
+import defpackage.ajio;
+import defpackage.ajmo;
+import defpackage.ajwt;
+import defpackage.btco;
+import defpackage.elgx;
+import defpackage.foeo;
+import defpackage.fpmr;
 import j$.io.FileRetargetClass;
 import j$.nio.file.Files;
 import java.io.File;
 import java.util.LinkedHashMap;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class GmsBackupAgent extends BackupAgent {
     public static final /* synthetic */ int a = 0;
-    private static final ahwd b = new ahwd("GmsBackupAgent");
-    private eits c;
-    private ahly d;
+    private static final ajwt b = new ajwt("GmsBackupAgent");
+    private elgx c;
+    private ajmo d;
 
-    private final eits a() {
+    private final elgx a() {
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         try {
             for (ModuleManager.ModuleInfo moduleInfo : ModuleManager.get(this).getAllModulesWithMetadata("ChimeraModuleBackupAgent")) {
@@ -46,7 +46,7 @@ public class GmsBackupAgent extends BackupAgent {
         } catch (InvalidConfigException e) {
             b.g("Failed to load module configuration", e, new Object[0]);
         }
-        return eits.k(linkedHashMap);
+        return elgx.k(linkedHashMap);
     }
 
     private final File b(String str) {
@@ -58,15 +58,15 @@ public class GmsBackupAgent extends BackupAgent {
     }
 
     private static final File d(File file, String str) {
-        return fmut.i() ? new File(bqux.a.b(file, str)) : new File(file, str);
+        return fpmr.i() ? new File(btco.a.b(file, str)) : new File(file, str);
     }
 
     private static final boolean e() {
-        return ((long) Build.VERSION.SDK_INT) >= flne.a.a().c();
+        return ((long) Build.VERSION.SDK_INT) >= foeo.a.lK().c();
     }
 
     private static final boolean f(String str) {
-        return flne.a.a().h().contains(str);
+        return foeo.a.lK().h().contains(str);
     }
 
     private static final ParcelFileDescriptor g(File file) {
@@ -81,7 +81,7 @@ public class GmsBackupAgent extends BackupAgent {
         if (file.length() == 0) {
             return;
         }
-        ahhx.b(ahhy.a(str, (int) file.length(), Files.readAllBytes(FileRetargetClass.toPath(file))), parcelFileDescriptor);
+        ajin.b(ajio.a(str, (int) file.length(), Files.readAllBytes(FileRetargetClass.toPath(file))), parcelFileDescriptor);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:112:0x0186 A[EXC_TOP_SPLITTER, SYNTHETIC] */
@@ -104,7 +104,13 @@ public class GmsBackupAgent extends BackupAgent {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.backup.base.GmsBackupAgent.onBackup(android.os.ParcelFileDescriptor, android.app.backup.BackupDataOutput, android.os.ParcelFileDescriptor):void");
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:79:0x034e  */
+    @Override // com.google.android.chimera.BackupAgent
+    public final void onCreate() {
+        super.onCreate();
+        foeo.a.lK().o();
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:79:0x034a  */
     @Override // com.google.android.chimera.BackupAgent
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -112,7 +118,7 @@ public class GmsBackupAgent extends BackupAgent {
     */
     public final void onRestore(android.app.backup.BackupDataInput r13, int r14, android.os.ParcelFileDescriptor r15) {
         /*
-            Method dump skipped, instructions count: 1079
+            Method dump skipped, instructions count: 1075
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.backup.base.GmsBackupAgent.onRestore(android.app.backup.BackupDataInput, int, android.os.ParcelFileDescriptor):void");

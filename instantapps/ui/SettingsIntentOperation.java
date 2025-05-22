@@ -7,40 +7,40 @@ import android.util.Log;
 import com.google.android.gms.R;
 import com.google.android.gms.instantapps.internal.OptInInfo;
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
-import defpackage.anxy;
-import defpackage.aojj;
-import defpackage.aqxd;
-import defpackage.asew;
-import defpackage.asqh;
-import defpackage.bodp;
-import defpackage.bodr;
-import defpackage.bofd;
-import defpackage.boku;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.fjul;
-import defpackage.fpfx;
+import defpackage.apzq;
+import defpackage.aqlc;
+import defpackage.aszs;
+import defpackage.auiq;
+import defpackage.auub;
+import defpackage.bqlf;
+import defpackage.bqlh;
+import defpackage.bqmt;
+import defpackage.bqsk;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.fmkm;
+import defpackage.frzi;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class SettingsIntentOperation extends anxy {
-    @Override // defpackage.anxy
+public class SettingsIntentOperation extends apzq {
+    @Override // defpackage.apzq
     public final GoogleSettingsItem b() {
-        if (new boku(this).a()) {
-            aqxd aqxdVar = bodp.a;
-            dfaq c = new bodr(this).c();
+        if (new bqsk(this).a()) {
+            aszs aszsVar = bqlf.a;
+            dhlw c = new bqlh(this).c();
             try {
-                dfbl.n(c);
+                dhmr.n(c);
                 Account[] accountArr = ((OptInInfo) c.i()).c;
                 if (accountArr == null || accountArr.length == 0) {
                     Log.w("SettingsIntentOperation", "No accounts");
                 }
                 if (accountArr != null && accountArr.length > 0) {
                     Intent intent = new Intent("com.google.android.instantapps.supervisor.SETTINGS_ACTIVITY");
-                    if (asqh.c() || fpfx.a.a().v()) {
-                        String f = fpfx.f();
-                        String e = fpfx.e();
+                    if (auub.c() || frzi.a.lK().v()) {
+                        String f = frzi.f();
+                        String e = frzi.e();
                         if (TextUtils.isEmpty(f) || TextUtils.isEmpty(e)) {
                             Log.e("SettingsIntentOperation", String.format("Cannot find settings page in O+", new Object[0]));
                             return null;
@@ -48,15 +48,15 @@ public class SettingsIntentOperation extends anxy {
                         intent.setClassName(f, e);
                     } else {
                         intent.setClassName("com.google.android.instantapps.supervisor", "com.google.android.instantapps.supervisor.SettingsActivity");
-                        if (!bofd.b(this)) {
+                        if (!bqmt.b(this)) {
                             Log.e("SettingsIntentOperation", String.format("Cannot find settings page pre-O", new Object[0]));
                             return null;
                         }
                     }
-                    if (fjul.h()) {
+                    if (fmkm.g()) {
                         intent.addFlags(268435456);
                     }
-                    GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(intent, 4, R.string.instantapps_module_display_name, aojj.INSTANT_APPS_ITEM, asew.DEFAULT_INSTANTAPPS);
+                    GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(intent, 4, R.string.instantapps_module_display_name, aqlc.INSTANT_APPS_ITEM, auiq.DEFAULT_INSTANTAPPS);
                     googleSettingsItem.e = true;
                     googleSettingsItem.j = true;
                     googleSettingsItem.m = SettingsChimeraActivity.class.getName();

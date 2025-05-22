@@ -4,12 +4,12 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
 import com.google.android.gms.ads.internal.formats.NativeAdOptionsParcel;
-import defpackage.otn;
-import defpackage.oto;
+import defpackage.qmq;
+import defpackage.qmr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class ag extends otn implements ah {
+public final class ag extends qmq implements ah {
     public aa a;
 
     public ag() {
@@ -26,14 +26,14 @@ public final class ag extends otn implements ah {
         this.a = aaVar;
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         aa yVar;
         switch (i) {
             case 1:
                 ad adVar = new ad(this);
                 parcel2.writeNoException();
-                oto.g(parcel2, adVar);
+                qmr.g(parcel2, adVar);
                 return true;
             case 2:
                 IBinder readStrongBinder = parcel.readStrongBinder();
@@ -43,7 +43,7 @@ public final class ag extends otn implements ah {
                     IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.ads.internal.client.IAdListener");
                     yVar = queryLocalInterface instanceof aa ? (aa) queryLocalInterface : new y(readStrongBinder);
                 }
-                fq(parcel);
+                fD(parcel);
                 this.a = yVar;
                 parcel2.writeNoException();
                 return true;
@@ -54,7 +54,7 @@ public final class ag extends otn implements ah {
                     if (queryLocalInterface2 instanceof com.google.android.gms.ads.internal.formats.client.n) {
                     }
                 }
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 4:
@@ -64,7 +64,7 @@ public final class ag extends otn implements ah {
                     if (queryLocalInterface3 instanceof com.google.android.gms.ads.internal.formats.client.o) {
                     }
                 }
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 5:
@@ -81,11 +81,11 @@ public final class ag extends otn implements ah {
                     if (queryLocalInterface5 instanceof com.google.android.gms.ads.internal.formats.client.p) {
                     }
                 }
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 6:
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 7:
@@ -95,7 +95,7 @@ public final class ag extends otn implements ah {
                     if (queryLocalInterface6 instanceof az) {
                     }
                 }
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 8:
@@ -105,11 +105,11 @@ public final class ag extends otn implements ah {
                     if (queryLocalInterface7 instanceof com.google.android.gms.ads.internal.formats.client.r) {
                     }
                 }
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 9:
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 10:
@@ -119,7 +119,7 @@ public final class ag extends otn implements ah {
                     if (queryLocalInterface8 instanceof com.google.android.gms.ads.internal.formats.client.s) {
                     }
                 }
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 11:
@@ -127,7 +127,7 @@ public final class ag extends otn implements ah {
             default:
                 return false;
             case 13:
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 14:
@@ -137,11 +137,11 @@ public final class ag extends otn implements ah {
                     if (queryLocalInterface9 instanceof com.google.android.gms.ads.internal.instream.client.a) {
                     }
                 }
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
             case 15:
-                fq(parcel);
+                fD(parcel);
                 parcel2.writeNoException();
                 return true;
         }

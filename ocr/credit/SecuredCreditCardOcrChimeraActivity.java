@@ -3,24 +3,25 @@ package com.google.android.gms.ocr.credit;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.ocr.RecognitionScreen;
-import defpackage.asng;
-import defpackage.csje;
-import defpackage.edeq;
-import defpackage.edjs;
-import defpackage.edxp;
-import defpackage.fann;
-import defpackage.fqpy;
+import defpackage.aura;
+import defpackage.cusj;
+import defpackage.efrl;
+import defpackage.efwn;
+import defpackage.egkq;
+import defpackage.fdcc;
+import defpackage.ftjv;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class SecuredCreditCardOcrChimeraActivity extends csje {
+public class SecuredCreditCardOcrChimeraActivity extends cusj {
     private final boolean o() {
         int intExtra = getIntent().getIntExtra("com.google.android.gms.ocr.THEME", 0);
-        boolean contains = fqpy.a.a().b().b.contains(Integer.valueOf(intExtra));
+        ftjv ftjvVar = ftjv.a;
+        boolean contains = ftjvVar.lK().b().b.contains(Integer.valueOf(intExtra));
         if (intExtra == 4) {
-            int i = edjs.a;
-            contains &= edeq.s(this);
+            int i = efwn.a;
+            contains &= efrl.s(this);
         }
         Bundle bundleExtra = getIntent().getBundleExtra("com.google.android.gms.ocr.RECOGNITION");
         if (bundleExtra != null) {
@@ -36,24 +37,24 @@ public class SecuredCreditCardOcrChimeraActivity extends csje {
                     arrayList.add(Integer.valueOf(((RecognitionScreen) parcelableArrayList.get(i3)).c));
                 }
             }
-            contains &= fqpy.a.a().a().b.containsAll(arrayList);
+            contains &= ftjvVar.lK().a().b.containsAll(arrayList);
         }
-        return (getIntent().getBooleanExtra("com.google.android.gms.ocr.PREVIEW_AGGREGATED_EXP_DATE", false) || getIntent().getBooleanExtra("com.google.android.gms.ocr.PREVIEW_AGGREGATED_NAME", false)) ? fqpy.a.a().e() & contains : contains;
+        return (getIntent().getBooleanExtra("com.google.android.gms.ocr.PREVIEW_AGGREGATED_EXP_DATE", false) || getIntent().getBooleanExtra("com.google.android.gms.ocr.PREVIEW_AGGREGATED_NAME", false)) ? ftjvVar.lK().e() & contains : contains;
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         l(null, 0);
         super.onBackPressed();
     }
 
-    @Override // defpackage.csje, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.cusj, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
-        asng.B(this);
-        if (fqpy.c() && o()) {
-            edxp.f(g(), fann.STATIC_OCR_ELIGIBLE);
+        aura.B(this);
+        if (ftjv.c() && o()) {
+            egkq.f(g(), fdcc.STATIC_OCR_ELIGIBLE);
         }
-        if (!fqpy.a.a().c() || !o()) {
+        if (!ftjv.a.lK().c() || !o()) {
             super.onCreate(bundle);
             return;
         }

@@ -5,23 +5,23 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.eitj;
-import defpackage.zdg;
+import defpackage.abdb;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.elgo;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class RevokeAccessRequest extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new zdg();
-    public final eitj a;
+    public static final Parcelable.Creator CREATOR = new abdb();
+    public final elgo a;
     public final Account b;
     public final String c;
 
     public RevokeAccessRequest(List list, Account account, String str) {
-        this.a = eitj.i(list);
+        this.a = elgo.i(list);
         this.b = account;
         this.c = str;
     }
@@ -29,10 +29,10 @@ public class RevokeAccessRequest extends AbstractSafeParcelable implements Refle
     public final boolean equals(Object obj) {
         if (obj instanceof RevokeAccessRequest) {
             RevokeAccessRequest revokeAccessRequest = (RevokeAccessRequest) obj;
-            eitj eitjVar = this.a;
-            int size = eitjVar.size();
-            eitj eitjVar2 = revokeAccessRequest.a;
-            if (size == eitjVar2.size() && eitjVar.containsAll(eitjVar2) && arwb.b(this.b, revokeAccessRequest.b) && arwb.b(this.c, revokeAccessRequest.c)) {
+            elgo elgoVar = this.a;
+            int size = elgoVar.size();
+            elgo elgoVar2 = revokeAccessRequest.a;
+            if (size == elgoVar2.size() && elgoVar.containsAll(elgoVar2) && atyq.b(this.b, revokeAccessRequest.b) && atyq.b(this.c, revokeAccessRequest.c)) {
                 return true;
             }
         }
@@ -45,11 +45,11 @@ public class RevokeAccessRequest extends AbstractSafeParcelable implements Refle
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        eitj eitjVar = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, eitjVar, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        elgo elgoVar = this.a;
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, elgoVar, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 }

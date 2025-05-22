@@ -3,36 +3,36 @@ package com.google.android.gms.phonesky.recovery;
 import android.content.Intent;
 import android.net.Uri;
 import com.google.android.chimera.IntentOperation;
-import defpackage.assw;
-import defpackage.cwhj;
-import defpackage.cwhk;
-import defpackage.cwhl;
-import defpackage.cwhs;
-import defpackage.eiig;
-import defpackage.frmq;
+import defpackage.auwq;
+import defpackage.cyrg;
+import defpackage.cyrh;
+import defpackage.cyri;
+import defpackage.cyrp;
+import defpackage.ekvl;
+import defpackage.fugp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class NotificationClickedIntentOperation extends IntentOperation {
-    private cwhk a;
-    private cwhl b;
-    private cwhs c;
+    private cyrh a;
+    private cyri b;
+    private cyrp c;
 
     private final void a(int i) {
-        cwhl cwhlVar = this.b;
-        if (cwhlVar != null) {
-            cwhlVar.b(3, i);
+        cyri cyriVar = this.b;
+        if (cyriVar != null) {
+            cyriVar.b(3, i);
         }
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        cwhl cwhlVar = new cwhl(this);
-        cwhk cwhkVar = new cwhk(new assw(this));
-        cwhs cwhsVar = new cwhs(this, cwhlVar);
-        this.a = cwhkVar;
-        this.b = cwhlVar;
-        this.c = cwhsVar;
+        cyri cyriVar = new cyri(this);
+        cyrh cyrhVar = new cyrh(new auwq(this));
+        cyrp cyrpVar = new cyrp(this, cyriVar);
+        this.a = cyrhVar;
+        this.b = cyriVar;
+        this.c = cyrpVar;
     }
 
     @Override // com.google.android.chimera.IntentOperation
@@ -41,18 +41,18 @@ public class NotificationClickedIntentOperation extends IntentOperation {
             return;
         }
         if (this.c == null || this.a == null) {
-            cwhj.b("Invalid state", new Object[0]);
+            cyrg.b("Invalid state", new Object[0]);
             a(3);
             return;
         }
-        cwhj.a("Recovery notification clicked", new Object[0]);
+        cyrg.a("Recovery notification clicked", new Object[0]);
         a(2);
-        cwhs cwhsVar = this.c;
-        eiig.x(cwhsVar);
-        cwhsVar.b();
-        cwhk cwhkVar = this.a;
-        eiig.x(cwhkVar);
-        if (cwhkVar.a(frmq.e())) {
+        cyrp cyrpVar = this.c;
+        ekvl.y(cyrpVar);
+        cyrpVar.b();
+        cyrh cyrhVar = this.a;
+        ekvl.y(cyrhVar);
+        if (cyrhVar.a(fugp.e())) {
             Intent intent2 = new Intent("android.intent.action.UNINSTALL_PACKAGE", Uri.parse("package:com.android.vending"));
             intent2.setFlags(268468224);
             startActivity(intent2);

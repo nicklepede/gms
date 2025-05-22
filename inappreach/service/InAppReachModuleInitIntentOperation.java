@@ -3,42 +3,42 @@ package com.google.android.gms.inappreach.service;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.inappreach.service.rps.FetchAccountMessagesTaskBoundService;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.fpfb;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.fryl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class InAppReachModuleInitIntentOperation extends anya {
+public class InAppReachModuleInitIntentOperation extends apzs {
     static {
-        asot.b("InAppReachModuleInit", asej.INAPP_REACH);
+        ausn.b("InAppReachModuleInit", auid.INAPP_REACH);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        if (fpfb.d()) {
+        if (fryl.e()) {
             Context applicationContext = getApplicationContext();
             String str = FetchAccountMessagesTaskBoundService.a;
-            byjl a = byjl.a(applicationContext);
-            bykm bykmVar = new bykm();
-            bykmVar.j(byki.a(fpfb.a.a().a()));
-            bykmVar.w(FetchAccountMessagesTaskBoundService.a);
-            bykmVar.t("PERIODIC_FETCH_TASK");
-            bykmVar.g(1);
-            bykmVar.v(1);
-            a.f(bykmVar.b());
+            casd a = casd.a(applicationContext);
+            cate cateVar = new cate();
+            cateVar.j(cata.a(fryl.a.lK().a()));
+            cateVar.w(FetchAccountMessagesTaskBoundService.a);
+            cateVar.t("PERIODIC_FETCH_TASK");
+            cateVar.g(1);
+            cateVar.v(1);
+            a.f(cateVar.b());
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
     }
 }

@@ -16,43 +16,43 @@ import com.google.android.gms.auth.account.be.RemoveAccountChimeraIntentService;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
 import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.SetupWizardLayout;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.adfx;
-import defpackage.adjb;
-import defpackage.adlg;
-import defpackage.arkc;
-import defpackage.arke;
-import defpackage.arkf;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.edfq;
-import defpackage.edfr;
-import defpackage.edjy;
-import defpackage.ejhf;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.affz;
+import defpackage.afji;
+import defpackage.afln;
+import defpackage.atmr;
+import defpackage.atmt;
+import defpackage.atmu;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.efsl;
+import defpackage.efsm;
+import defpackage.efwt;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class RemoveAccountChimeraActivity extends adlg implements edjy {
-    private static final aano h = new aano("account");
-    private static final aano i = new aano("reason");
-    private static final aano j = new aano("is_unicorn_account");
-    private static final aano k = new aano("is_from_finish_session");
-    private final asot l = asot.c("Auth", asej.AUTH_ACCOUNT_DATA, "RemoveAccountChimeraActivity");
+public class RemoveAccountChimeraActivity extends afln implements efwt {
+    private static final acno h = new acno("account");
+    private static final acno i = new acno("reason");
+    private static final acno j = new acno("is_unicorn_account");
+    private static final acno k = new acno("is_from_finish_session");
+    private final ausn l = ausn.c("Auth", auid.AUTH_ACCOUNT_DATA, "RemoveAccountChimeraActivity");
     private UserManager m;
     private ViewGroup n;
 
-    public static Intent l(Context context, Account account, int i2, boolean z, arke arkeVar, boolean z2, boolean z3) {
+    public static Intent l(Context context, Account account, int i2, boolean z, atmt atmtVar, boolean z2, boolean z3) {
         Intent className = new Intent().setClassName(context, "com.google.android.gms.auth.uiflows.addaccount.RemoveAccountActivity");
-        aanp aanpVar = new aanp();
-        aanpVar.d(h, account);
-        aanpVar.d(i, Integer.valueOf(i2));
-        aanpVar.d(adjb.b, Boolean.valueOf(z));
-        aanpVar.d(adjb.a, arkeVar == null ? null : arkeVar.a());
-        aanpVar.d(j, Boolean.valueOf(z2));
-        aanpVar.d(k, Boolean.valueOf(z3));
-        return className.putExtras(aanpVar.a);
+        acnp acnpVar = new acnp();
+        acnpVar.d(h, account);
+        acnpVar.d(i, Integer.valueOf(i2));
+        acnpVar.d(afji.b, Boolean.valueOf(z));
+        acnpVar.d(afji.a, atmtVar == null ? null : atmtVar.a());
+        acnpVar.d(j, Boolean.valueOf(z2));
+        acnpVar.d(k, Boolean.valueOf(z3));
+        return className.putExtras(acnpVar.a);
     }
 
     private final CharSequence o(int i2) {
@@ -63,7 +63,7 @@ public class RemoveAccountChimeraActivity extends adlg implements edjy {
         try {
             return this.m.removeUser(userHandle);
         } catch (IllegalAccessError | NoSuchMethodError e) {
-            ((ejhf) this.l.j()).B("removeUser. Unable to remove user: %s", e.getMessage());
+            ((eluo) this.l.j()).B("removeUser. Unable to remove user: %s", e.getMessage());
             return false;
         }
     }
@@ -72,43 +72,43 @@ public class RemoveAccountChimeraActivity extends adlg implements edjy {
         try {
             return ((ActivityManager) AppContextProvider.a().getSystemService(ActivityManager.class)).switchUser(userHandle);
         } catch (IllegalAccessError | NoSuchMethodError e) {
-            ((ejhf) this.l.j()).B("switchUser. Unable to switch user: %s", e.getMessage());
+            ((eluo) this.l.j()).B("switchUser. Unable to switch user: %s", e.getMessage());
             return false;
         }
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
-        return "RemoveAccountActivity";
-    }
-
-    @Override // defpackage.edjy
-    public final void gs() {
+    @Override // defpackage.efwt
+    public final void gH() {
         n();
     }
 
-    @Override // defpackage.edjy
-    public final void jw() {
+    @Override // defpackage.afkn
+    protected final String gW() {
+        return "RemoveAccountActivity";
+    }
+
+    @Override // defpackage.efwt
+    public final void jM() {
         n();
     }
 
     public final void n() {
-        if (!asqh.f() || !((Boolean) s().a(j)).booleanValue() || !((Boolean) s().a(k)).booleanValue()) {
-            ((ejhf) this.l.j()).x("maybeRemoveCurrentUser. Skipping remove current user.");
+        if (!auub.f() || !((Boolean) s().a(j)).booleanValue() || !((Boolean) s().a(k)).booleanValue()) {
+            ((eluo) this.l.j()).x("maybeRemoveCurrentUser. Skipping remove current user.");
         } else if (!q(UserHandle.SYSTEM)) {
-            ((ejhf) this.l.j()).x("maybeRemoveCurrentUser. Failed to switch to user.");
+            ((eluo) this.l.j()).x("maybeRemoveCurrentUser. Failed to switch to user.");
         } else if (!p(Process.myUserHandle())) {
-            ((ejhf) this.l.j()).x("maybeRemoveCurrentUser. Failed to remove user");
+            ((eluo) this.l.j()).x("maybeRemoveCurrentUser. Failed to remove user");
         }
-        gD(-1, null);
+        gT(-1, null);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         n();
     }
 
-    @Override // defpackage.adlg, defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afln, defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         CharSequence string;
         super.onCreate(bundle);
@@ -116,7 +116,7 @@ public class RemoveAccountChimeraActivity extends adlg implements edjy {
         int intValue = ((Integer) s().a(i)).intValue();
         this.m = (UserManager) AppContextProvider.a().getSystemService("user");
         startService(RemoveAccountChimeraIntentService.b(this, account));
-        arkf f = arkf.f(this, true != arkc.i(t().a) ? R.layout.auth_account_removed : R.layout.auth_account_removed_glif);
+        atmu f = atmu.f(this, true != atmr.i(t().a) ? R.layout.auth_account_removed : R.layout.auth_account_removed_glif);
         ViewGroup a = f.a();
         this.n = a;
         setContentView(a);
@@ -165,17 +165,17 @@ public class RemoveAccountChimeraActivity extends adlg implements edjy {
             button.setText(string2);
             button.setContentDescription(string2);
         } else if (viewGroup2 instanceof GlifLayout) {
-            edfq edfqVar = (edfq) ((GlifLayout) viewGroup2.findViewById(R.id.setup_wizard_layout)).q(edfq.class);
-            edfr edfrVar = new edfr(this);
-            edfrVar.c = 5;
-            edfrVar.b = new adfx(this);
-            edfrVar.d = R.style.SudGlifButton_Primary;
+            efsl efslVar = (efsl) ((GlifLayout) viewGroup2.findViewById(R.id.setup_wizard_layout)).q(efsl.class);
+            efsm efsmVar = new efsm(this);
+            efsmVar.c = 5;
+            efsmVar.b = new affz(this);
+            efsmVar.d = R.style.SudGlifButton_Primary;
             if (true != z) {
                 i2 = R.string.common_next;
             }
-            edfrVar.b(i2);
-            edfqVar.b(edfrVar.a());
+            efsmVar.b(i2);
+            efslVar.b(efsmVar.a());
         }
-        arkc.e(this.n);
+        atmr.e(this.n);
     }
 }

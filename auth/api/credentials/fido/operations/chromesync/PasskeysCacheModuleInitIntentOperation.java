@@ -1,27 +1,27 @@
 package com.google.android.gms.auth.api.credentials.fido.operations.chromesync;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asqh;
-import defpackage.byjl;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.xde;
+import defpackage.apzs;
+import defpackage.auub;
+import defpackage.casd;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.yzy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class PasskeysCacheModuleInitIntentOperation extends anya {
-    @Override // defpackage.anya
+public final class PasskeysCacheModuleInitIntentOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        if (asqh.e() && xde.f()) {
-            byko bykoVar = new byko();
-            bykoVar.w(PasskeysCacheUpdateService.class.getName());
-            bykoVar.v(2);
-            bykoVar.p = true;
-            bykoVar.t("PasskeysCacheUpdateTask");
-            bykoVar.a = bykv.k;
-            bykoVar.l(true);
-            byjl.a(this).f(bykoVar.b());
+        if (auub.e() && yzy.f()) {
+            catg catgVar = new catg();
+            catgVar.w(PasskeysCacheUpdateService.class.getName());
+            catgVar.v(2);
+            catgVar.p = true;
+            catgVar.t("PasskeysCacheUpdateTask");
+            catgVar.a = catn.k;
+            catgVar.l(true);
+            casd.a(this).f(catgVar.b());
         }
     }
 }

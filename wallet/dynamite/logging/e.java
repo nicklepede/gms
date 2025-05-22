@@ -6,16 +6,16 @@ import android.content.pm.PackageManager;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
-import defpackage.assx;
+import defpackage.auwr;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class e {
     public static void a(Context context, Throwable th, String str) {
         try {
-            if ((assx.b(context).e(context.getPackageName(), 0).flags & 2) == 0) {
+            if ((auwr.b(context).e(context.getPackageName(), 0).flags & 2) == 0) {
                 StringWriter stringWriter = new StringWriter();
                 th.printStackTrace(new PrintWriter(stringWriter));
                 d dVar = new d(stringWriter.toString(), str, Runtime.getRuntime().freeMemory(), Runtime.getRuntime().totalMemory());

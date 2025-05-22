@@ -6,18 +6,18 @@ import android.text.TextUtils;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.people.model.AvatarReference;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.txk;
-import defpackage.txl;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.vtj;
+import defpackage.vtk;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ContactPerson extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new txl();
+    public static final Parcelable.Creator CREATOR = new vtk();
     public String a;
     public String b;
     public Long c;
@@ -25,9 +25,9 @@ public class ContactPerson extends AbstractSafeParcelable implements ReflectedPa
     public final ArrayList e;
     int f;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class ContactMethod extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new txk();
+        public static final Parcelable.Creator CREATOR = new vtj();
         public final int a;
         public final String b;
         public final AvatarReference c;
@@ -46,7 +46,7 @@ public class ContactPerson extends AbstractSafeParcelable implements ReflectedPa
                 return false;
             }
             ContactMethod contactMethod = (ContactMethod) obj;
-            return this.a == contactMethod.a && arwb.b(this.b, contactMethod.b);
+            return this.a == contactMethod.a && atyq.b(this.b, contactMethod.b);
         }
 
         public final int hashCode() {
@@ -56,11 +56,11 @@ public class ContactPerson extends AbstractSafeParcelable implements ReflectedPa
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             int i2 = this.a;
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 2, i2);
-            arxc.v(parcel, 3, this.b, false);
-            arxc.t(parcel, 4, this.c, i, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 2, i2);
+            atzr.v(parcel, 3, this.b, false);
+            atzr.t(parcel, 4, this.c, i, false);
+            atzr.c(parcel, a);
         }
 
         public ContactMethod(int i, String str) {
@@ -99,7 +99,7 @@ public class ContactPerson extends AbstractSafeParcelable implements ReflectedPa
             return false;
         }
         ContactPerson contactPerson = (ContactPerson) obj;
-        return arwb.b(this.a, contactPerson.a) && arwb.b(this.b, contactPerson.b) && arwb.b(this.c, contactPerson.c) && arwb.b(this.e, contactPerson.e);
+        return atyq.b(this.a, contactPerson.a) && atyq.b(this.b, contactPerson.b) && atyq.b(this.c, contactPerson.c) && atyq.b(this.e, contactPerson.e);
     }
 
     public final int hashCode() {
@@ -126,14 +126,14 @@ public class ContactPerson extends AbstractSafeParcelable implements ReflectedPa
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, this.a, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.I(parcel, 4, this.c);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.y(parcel, 6, this.e, false);
-        arxc.o(parcel, 7, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, this.a, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.I(parcel, 4, this.c);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.y(parcel, 6, this.e, false);
+        atzr.o(parcel, 7, this.f);
+        atzr.c(parcel, a);
     }
 
     public ContactPerson(String str, String str2, Long l, AvatarReference avatarReference, List list, int i) {

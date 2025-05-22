@@ -5,18 +5,18 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.ashs;
-import defpackage.decu;
+import defpackage.atzr;
+import defpackage.aulm;
+import defpackage.dgnx;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class DeviceRiskSignals extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new decu();
+    public static final Parcelable.Creator CREATOR = new dgnx();
     private static final HashMap j;
     final Set a;
     public int b;
@@ -53,7 +53,7 @@ public class DeviceRiskSignals extends BinarySerializableFastSafeParcelableJson 
         this.i = starguardData;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         switch (i) {
@@ -78,17 +78,17 @@ public class DeviceRiskSignals extends BinarySerializableFastSafeParcelableJson 
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return j;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         if (str2 == null) {
             return;
@@ -105,22 +105,22 @@ public class DeviceRiskSignals extends BinarySerializableFastSafeParcelableJson 
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
+    @Override // defpackage.aulm
+    public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
         int i = fastJsonResponse$Field.g;
         if (i == 8) {
-            this.h = (ScreenlockState) ashsVar;
+            this.h = (ScreenlockState) aulmVar;
         } else {
             if (i != 9) {
-                throw new IllegalArgumentException(String.format("Field with id=%d is not a known custom type. Found %s", Integer.valueOf(i), ashsVar.getClass().getCanonicalName()));
+                throw new IllegalArgumentException(String.format("Field with id=%d is not a known custom type. Found %s", Integer.valueOf(i), aulmVar.getClass().getCanonicalName()));
             }
-            this.i = (StarguardData) ashsVar;
+            this.i = (StarguardData) aulmVar;
         }
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
         int i2 = fastJsonResponse$Field.g;
         if (i2 != 2) {
             throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be an int."));
@@ -129,7 +129,7 @@ public class DeviceRiskSignals extends BinarySerializableFastSafeParcelableJson 
         this.a.add(Integer.valueOf(i2));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void k(FastJsonResponse$Field fastJsonResponse$Field, String str, long j2) {
         int i = fastJsonResponse$Field.g;
         if (i == 3) {
@@ -148,32 +148,32 @@ public class DeviceRiskSignals extends BinarySerializableFastSafeParcelableJson 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.o(parcel, 2, this.b);
+            atzr.o(parcel, 2, this.b);
         }
         if (set.contains(3)) {
-            arxc.q(parcel, 3, this.c);
+            atzr.q(parcel, 3, this.c);
         }
         if (set.contains(4)) {
-            arxc.v(parcel, 4, this.d, true);
+            atzr.v(parcel, 4, this.d, true);
         }
         if (set.contains(5)) {
-            arxc.v(parcel, 5, this.e, true);
+            atzr.v(parcel, 5, this.e, true);
         }
         if (set.contains(6)) {
-            arxc.q(parcel, 6, this.f);
+            atzr.q(parcel, 6, this.f);
         }
         if (set.contains(7)) {
-            arxc.q(parcel, 7, this.g);
+            atzr.q(parcel, 7, this.g);
         }
         if (set.contains(8)) {
-            arxc.t(parcel, 8, this.h, i, true);
+            atzr.t(parcel, 8, this.h, i, true);
         }
         if (set.contains(9)) {
-            arxc.t(parcel, 9, this.i, i, true);
+            atzr.t(parcel, 9, this.i, i, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public DeviceRiskSignals() {
@@ -188,7 +188,7 @@ public class DeviceRiskSignals extends BinarySerializableFastSafeParcelableJson 
         this.d = str;
         this.e = str2;
         this.f = j3;
-        this.g = 251661004L;
+        this.g = 251864004L;
         this.h = screenlockState;
         this.i = starguardData;
         hashSet.add(2);

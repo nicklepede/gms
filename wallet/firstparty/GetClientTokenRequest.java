@@ -3,13 +3,13 @@ package com.google.android.gms.wallet.firstparty;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dipe;
+import defpackage.atzr;
+import defpackage.dlap;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class GetClientTokenRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dipe();
+    public static final Parcelable.Creator CREATOR = new dlap();
     public WalletCustomTheme a;
     public boolean b;
     public int c;
@@ -20,11 +20,11 @@ public final class GetClientTokenRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.e(parcel, 3, this.b);
-        arxc.o(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.e(parcel, 3, this.b);
+        atzr.o(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 
     public GetClientTokenRequest(WalletCustomTheme walletCustomTheme) {

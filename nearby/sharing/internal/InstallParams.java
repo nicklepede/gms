@@ -6,20 +6,20 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.sharing.ShareTarget;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmxw;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpge;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class InstallParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cmxw();
+    public static final Parcelable.Creator CREATOR = new cpge();
     public ShareTarget a;
     public long b;
-    public arbp c;
+    public atee c;
 
     public InstallParams() {
     }
@@ -30,7 +30,7 @@ public final class InstallParams extends AbstractSafeParcelable {
         }
         if (obj instanceof InstallParams) {
             InstallParams installParams = (InstallParams) obj;
-            if (arwb.b(this.a, installParams.a) && arwb.b(Long.valueOf(this.b), Long.valueOf(installParams.b)) && arwb.b(this.c, installParams.c)) {
+            if (atyq.b(this.a, installParams.a) && atyq.b(Long.valueOf(this.b), Long.valueOf(installParams.b)) && atyq.b(this.c, installParams.c)) {
                 return true;
             }
         }
@@ -43,23 +43,23 @@ public final class InstallParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.q(parcel, 2, this.b);
-        arxc.D(parcel, 3, this.c.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.q(parcel, 2, this.b);
+        atzr.D(parcel, 3, this.c.asBinder());
+        atzr.c(parcel, a);
     }
 
     public InstallParams(ShareTarget shareTarget, long j, IBinder iBinder) {
-        arbp arbnVar;
+        atee atecVar;
         if (iBinder == null) {
-            arbnVar = null;
+            atecVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbnVar = queryLocalInterface instanceof arbp ? (arbp) queryLocalInterface : new arbn(iBinder);
+            atecVar = queryLocalInterface instanceof atee ? (atee) queryLocalInterface : new atec(iBinder);
         }
         this.a = shareTarget;
         this.b = j;
-        this.c = arbnVar;
+        this.c = atecVar;
     }
 }

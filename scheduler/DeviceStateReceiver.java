@@ -4,28 +4,28 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.chimera.modules.scheduler.AppContextProvider;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.asmf;
-import defpackage.cyac;
-import defpackage.cyat;
-import defpackage.ensv;
+import defpackage.aupz;
+import defpackage.dajz;
+import defpackage.dakq;
+import defpackage.eqgo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class DeviceStateReceiver extends TracingBroadcastReceiver {
-    public cyac a;
-    private final ensv b;
+    public dajz a;
+    private final eqgo b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DeviceStateReceiver() {
         super("scheduler");
-        asmf asmfVar = new asmf(1, 10);
-        this.a = new cyac(new cyat(AppContextProvider.a()));
-        this.b = asmfVar;
+        aupz aupzVar = new aupz(1, 10);
+        this.a = new dajz(new dakq(AppContextProvider.a()));
+        this.b = aupzVar;
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(final Context context, final Intent intent) {
-        this.b.execute(new Runnable() { // from class: cyad
+    public final void jP(final Context context, final Intent intent) {
+        this.b.execute(new Runnable() { // from class: daka
             /* JADX WARN: Code restructure failed: missing block: B:21:0x0072, code lost:
             
                 if (r8.c() == false) goto L27;
@@ -46,8 +46,8 @@ public final class DeviceStateReceiver extends TracingBroadcastReceiver {
                     java.lang.String r1 = "android.os.action.DEVICE_IDLE_MODE_CHANGED"
                     boolean r1 = r1.equals(r0)
                     if (r1 == 0) goto L1d
-                    cybn r0 = defpackage.cybn.b()
-                    cybh r0 = r0.g
+                    dall r0 = defpackage.dall.b()
+                    dale r0 = r0.g
                     r1 = 4
                     r0.a(r1)
                     return
@@ -55,14 +55,14 @@ public final class DeviceStateReceiver extends TracingBroadcastReceiver {
                     java.lang.String r1 = "android.os.action.LIGHT_DEVICE_IDLE_MODE_CHANGED"
                     boolean r1 = r1.equals(r0)
                     if (r1 == 0) goto L30
-                    cybn r0 = defpackage.cybn.b()
-                    cybh r0 = r0.g
+                    dall r0 = defpackage.dall.b()
+                    dale r0 = r0.g
                     r1 = 5
                     r0.a(r1)
                     return
                 L30:
                     com.google.android.gms.scheduler.DeviceStateReceiver r1 = com.google.android.gms.scheduler.DeviceStateReceiver.this
-                    cyac r1 = r1.a
+                    dajz r1 = r1.a
                     java.lang.String r2 = "android.intent.action.DOCK_ACTIVE"
                     boolean r3 = r0.equals(r2)
                     java.lang.String r4 = "android.intent.action.SCREEN_OFF"
@@ -77,7 +77,7 @@ public final class DeviceStateReceiver extends TracingBroadcastReceiver {
                     goto La3
                 L4d:
                     android.content.Context r3 = r3
-                    asit r7 = new asit
+                    aumn r7 = new aumn
                     r7.<init>(r3)
                     boolean r8 = r0.equals(r5)
                     if (r8 != 0) goto La0
@@ -86,9 +86,9 @@ public final class DeviceStateReceiver extends TracingBroadcastReceiver {
                     if (r8 != 0) goto L63
                     goto L74
                 L63:
-                    cyat r8 = r1.b
-                    fnbr r9 = defpackage.fnbr.a
-                    fnce r9 = r9.a()
+                    dakq r8 = r1.b
+                    fptq r9 = defpackage.fptq.a
+                    fpud r9 = r9.lK()
                     r9.ao()
                     boolean r8 = r8.c()
                     if (r8 != 0) goto La0
@@ -117,8 +117,8 @@ public final class DeviceStateReceiver extends TracingBroadcastReceiver {
                 La0:
                     r1.b(r7, r0)
                 La3:
-                    cybn r1 = defpackage.cybn.b()
-                    cybh r1 = r1.g
+                    dall r1 = defpackage.dall.b()
+                    dale r1 = r1.g
                     int r2 = r0.hashCode()
                     r3 = -2128145023(0xffffffff81271581, float:-3.0688484E-38)
                     r6 = 1
@@ -152,7 +152,7 @@ public final class DeviceStateReceiver extends TracingBroadcastReceiver {
                     r1.a(r0)
                     return
                 */
-                throw new UnsupportedOperationException("Method not decompiled: defpackage.cyad.run():void");
+                throw new UnsupportedOperationException("Method not decompiled: defpackage.daka.run():void");
             }
         });
     }

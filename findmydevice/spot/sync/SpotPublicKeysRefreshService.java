@@ -4,113 +4,113 @@ import android.accounts.Account;
 import android.content.Context;
 import com.google.android.gms.findmydevice.spot.sync.SpotPublicKeysRefreshService;
 import com.google.android.gms.findmydevice.util.SafeGmsTaskBoundService;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.bcyr;
-import defpackage.bebe;
-import defpackage.bebf;
-import defpackage.bebo;
-import defpackage.bebp;
-import defpackage.bfcs;
-import defpackage.bfdr;
-import defpackage.byjl;
-import defpackage.byln;
-import defpackage.egmx;
-import defpackage.ejhf;
-import defpackage.enqc;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fobb;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.bfad;
+import defpackage.bgcq;
+import defpackage.bgcr;
+import defpackage.bgda;
+import defpackage.bgdb;
+import defpackage.bhei;
+import defpackage.bhfh;
+import defpackage.casd;
+import defpackage.cauf;
+import defpackage.ejaa;
+import defpackage.eluo;
+import defpackage.eqdv;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fqsv;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SpotPublicKeysRefreshService extends SafeGmsTaskBoundService {
-    public static final asot a = asot.b("SpotPublicKeysRfrshSvc", asej.FIND_MY_DEVICE_SPOT);
-    private final bebe b;
+    public static final ausn a = ausn.b("SpotPublicKeysRfrshSvc", auid.FIND_MY_DEVICE_SPOT);
+    private final bgcq b;
 
     public SpotPublicKeysRefreshService() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
     @Override // com.google.android.gms.findmydevice.util.SafeGmsTaskBoundService
-    protected final enss d(byln bylnVar) {
-        if (!bfdr.a()) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 4554)).x("Eddystone use cases are disabled.");
-            return ensj.i(2);
+    protected final eqgl d(cauf caufVar) {
+        if (!bhfh.a()) {
+            ((eluo) ((eluo) a.j()).ai((char) 4564)).x("Eddystone use cases are disabled.");
+            return eqgc.i(2);
         }
         Context baseContext = getBaseContext();
-        ArrayDeque arrayDeque = new ArrayDeque(asnd.h(baseContext, baseContext.getPackageName()));
+        ArrayDeque arrayDeque = new ArrayDeque(auqx.h(baseContext, baseContext.getPackageName()));
         if (!arrayDeque.isEmpty()) {
             return e(arrayDeque, false);
         }
-        ((ejhf) ((ejhf) a.i()).ah((char) 4553)).x("No user accounts were available while refreshing the caches of SPOT public keys.");
-        bfcs.h(byjl.a(this));
-        return ensj.i(2);
+        ((eluo) ((eluo) a.i()).ai((char) 4563)).x("No user accounts were available while refreshing the caches of SPOT public keys.");
+        bhei.h(casd.a(this));
+        return eqgc.i(2);
     }
 
-    public final enss e(final Deque deque, final boolean z) {
+    public final eqgl e(final Deque deque, final boolean z) {
         if (!deque.isEmpty()) {
-            final bebf a2 = this.b.a((Account) deque.removeFirst());
-            return egmx.f(a2.c().e()).i(new enqc() { // from class: bfdb
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
+            final bgcr a2 = this.b.a((Account) deque.removeFirst());
+            return ejaa.g(a2.c().e()).i(new eqdv() { // from class: bher
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
                     if (!((Boolean) obj).booleanValue()) {
                         return SpotPublicKeysRefreshService.this.e(deque, z);
                     }
-                    bebf bebfVar = a2;
-                    Context b = bebk.b();
-                    bebo beboVar = bebfVar.j;
-                    dxhm dxhmVar = (dxhm) beboVar.p.a();
-                    boolean z2 = beboVar.a.b;
-                    dwep b2 = bcyn.b(bcyo.b(b, dxhmVar), new bcyk(bebfVar.f(), fobb.q()), (dnlf) beboVar.e.a(), bebo.W(), (Executor) beboVar.b.a());
-                    return egna.h(egmx.f(b2.a(true)).h(new eiho() { // from class: dwem
-                        @Override // defpackage.eiho
+                    bgcr bgcrVar = a2;
+                    Context b = bgcw.b();
+                    bgda bgdaVar = bgcrVar.j;
+                    dztm dztmVar = (dztm) bgdaVar.p.a();
+                    boolean z2 = bgdaVar.a.b;
+                    dyqq b2 = bezz.b(bfaa.b(b, dztmVar), new bezw(bgcrVar.f()), (dpvo) bgdaVar.e.a(), bgda.W(), (Executor) bgdaVar.b.a());
+                    return ejad.h(ejaa.g(b2.a(true)).h(new ekut() { // from class: dyqn
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj2) {
                             return null;
                         }
-                    }, b2.d)).a(new Callable() { // from class: bfde
+                    }, b2.d)).a(new Callable() { // from class: bheu
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
-                            asot asotVar = SpotPublicKeysRefreshService.a;
+                            ausn ausnVar = SpotPublicKeysRefreshService.a;
                             return 0;
                         }
-                    }, enre.a);
+                    }, eqex.a);
                 }
-            }, a2.e()).e(bcyr.class, new enqc() { // from class: bfdc
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    bcyr bcyrVar = (bcyr) obj;
-                    if (bcyrVar.d()) {
-                        return ensj.h(bcyrVar);
+            }, a2.e()).f(bfad.class, new eqdv() { // from class: bhes
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    bfad bfadVar = (bfad) obj;
+                    if (bfadVar.d()) {
+                        return eqgc.h(bfadVar);
                     }
                     Deque deque2 = deque;
                     SpotPublicKeysRefreshService spotPublicKeysRefreshService = SpotPublicKeysRefreshService.this;
-                    ((ejhf) ((ejhf) ((ejhf) SpotPublicKeysRefreshService.a.j()).s(bcyrVar)).ah((char) 4551)).x("Failed refreshing the SPOT public keys cache because the account was unauthenticated. Will try again with another account, if available.");
+                    ((eluo) ((eluo) ((eluo) SpotPublicKeysRefreshService.a.j()).s(bfadVar)).ai((char) 4561)).x("Failed refreshing the SPOT public keys cache because the account was unauthenticated. Will try again with another account, if available.");
                     return spotPublicKeysRefreshService.e(deque2, false);
                 }
-            }, a2.e()).e(Throwable.class, new enqc() { // from class: bfdd
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    ((ejhf) ((ejhf) ((ejhf) SpotPublicKeysRefreshService.a.j()).s((Throwable) obj)).ah((char) 4552)).x("Failed refreshing the SPOT public keys cache. Will try again with another account, if available.");
+            }, a2.e()).f(Throwable.class, new eqdv() { // from class: bhet
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    ((eluo) ((eluo) ((eluo) SpotPublicKeysRefreshService.a.j()).s((Throwable) obj)).ai((char) 4562)).x("Failed refreshing the SPOT public keys cache. Will try again with another account, if available.");
                     return SpotPublicKeysRefreshService.this.e(deque, true);
                 }
             }, a2.e());
         }
         if (z) {
-            ((ejhf) ((ejhf) a.i()).ah((char) 4556)).x("Failed refreshing the SPOT public keys cache using all available properly-authenticated accounts. Will try again later.");
-            return ensj.i(Integer.valueOf(true != fobb.a.a().D() ? 1 : 2));
+            ((eluo) ((eluo) a.i()).ai((char) 4566)).x("Failed refreshing the SPOT public keys cache using all available properly-authenticated accounts. Will try again later.");
+            return eqgc.i(Integer.valueOf(true != fqsv.a.lK().D() ? 1 : 2));
         }
-        ((ejhf) ((ejhf) a.i()).ah((char) 4555)).x("No user accounts that own SPOT devices were available while refreshing the caches of SPOT public keys.");
-        bfcs.h(byjl.a(this));
-        return ensj.i(2);
+        ((eluo) ((eluo) a.i()).ai((char) 4565)).x("No user accounts that own SPOT devices were available while refreshing the caches of SPOT public keys.");
+        bhei.h(casd.a(this));
+        return eqgc.i(2);
     }
 
-    public SpotPublicKeysRefreshService(bebp bebpVar) {
-        this.b = bebpVar.R();
+    public SpotPublicKeysRefreshService(bgdb bgdbVar) {
+        this.b = bgdbVar.R();
     }
 }

@@ -6,18 +6,18 @@ import android.net.Uri;
 import android.os.Build;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
-import defpackage.anyg;
-import defpackage.aoah;
-import defpackage.aobk;
-import defpackage.arna;
-import defpackage.dnnr;
-import defpackage.eike;
-import defpackage.fmrd;
-import defpackage.pph;
-import defpackage.pqm;
-import defpackage.pqr;
-import defpackage.pwg;
-import defpackage.pwh;
+import defpackage.apzy;
+import defpackage.aqbz;
+import defpackage.aqdc;
+import defpackage.atpp;
+import defpackage.dpya;
+import defpackage.ekxj;
+import defpackage.fpjb;
+import defpackage.ril;
+import defpackage.rjq;
+import defpackage.rjv;
+import defpackage.rpk;
+import defpackage.rpl;
 import j$.util.Collection;
 import j$.util.function.Predicate$CC;
 import java.io.File;
@@ -25,41 +25,41 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class GmsModuleFinder$ConfigUpdateIntentOperation extends IntentOperation {
     private final void a() {
-        pph.f().z();
-        pqm e = pqm.e();
+        ril.f().z();
+        rjq e = rjq.e();
         if (e.a()) {
             File file = new File(e.b, "m");
-            pqr.i(file);
-            pqm.e.readLock().lock();
+            rjv.i(file);
+            rjq.e.readLock().lock();
             try {
-                pwg pwgVar = e.d().c;
-                pqm.e.readLock().unlock();
-                Iterator it = pwgVar.e.iterator();
+                rpk rpkVar = e.d().c;
+                rjq.e.readLock().unlock();
+                Iterator it = rpkVar.e.iterator();
                 while (it.hasNext()) {
-                    pqr.h(pqr.c(file, ((pwh) it.next()).e));
+                    rjv.h(rjv.c(file, ((rpl) it.next()).e));
                 }
             } catch (Throwable th) {
-                pqm.e.readLock().unlock();
+                rjq.e.readLock().unlock();
                 throw th;
             }
         }
-        aoah.h(false);
-        aoah.j(this);
+        aqbz.h(false);
+        aqbz.j(this);
         FileApkChimeraService.d(this, true);
     }
 
     private final void b() {
-        if (dnnr.j() && dnnr.i(this)) {
-            SharedPreferences.Editor edit = arna.c(this).edit();
-            arna[] a = anyg.a();
+        if (dpya.j() && dpya.i(this)) {
+            SharedPreferences.Editor edit = atpp.c(this).edit();
+            atpp[] a = apzy.a();
             for (int i = 0; i < 2; i++) {
-                arna arnaVar = a[i];
-                String str = arnaVar.e;
-                Object i2 = arnaVar.i();
+                atpp atppVar = a[i];
+                String str = atppVar.e;
+                Object i2 = atppVar.i();
                 if (i2 != null) {
                     edit.putString(str, i2.toString());
                 } else {
@@ -78,7 +78,7 @@ public class GmsModuleFinder$ConfigUpdateIntentOperation extends IntentOperation
     public final void onHandleIntent(Intent intent) {
         char c;
         String action = intent.getAction();
-        eike.e(action);
+        ekxj.e(action);
         switch (action.hashCode()) {
             case -905063602:
                 if (action.equals("android.intent.action.LOCKED_BOOT_COMPLETED")) {
@@ -152,7 +152,7 @@ public class GmsModuleFinder$ConfigUpdateIntentOperation extends IntentOperation
                 a();
                 return;
             case 1:
-                if (dnnr.j()) {
+                if (dpya.j()) {
                     b();
                     return;
                 } else {
@@ -170,16 +170,16 @@ public class GmsModuleFinder$ConfigUpdateIntentOperation extends IntentOperation
                 break;
             case 6:
                 b();
-                aoah.h(true);
+                aqbz.h(true);
                 FileApkChimeraService.b(this);
                 return;
             case 7:
-                aoah.h(true);
+                aqbz.h(true);
                 return;
             case '\b':
                 b();
                 FileApkChimeraService.d(this, Build.VERSION.SDK_INT >= 26 && Build.VERSION.SDK_INT <= 28);
-                aoah.j(this);
+                aqbz.j(this);
                 return;
             default:
                 return;
@@ -190,21 +190,21 @@ public class GmsModuleFinder$ConfigUpdateIntentOperation extends IntentOperation
         if (schemeSpecificPart == null) {
             return;
         }
-        aoah c2 = aoah.c();
+        aqbz c2 = aqbz.c();
         Set e = c2.e();
         String action2 = intent.getAction();
         if (!e.contains(schemeSpecificPart)) {
             if ("android.intent.action.PACKAGE_REPLACED".equals(action2) || "android.intent.action.PACKAGE_REMOVED".equals(action2)) {
-                set = aoah.q();
+                set = aqbz.q();
                 boolean contains = set.contains(schemeSpecificPart);
-                if (!fmrd.o() || Build.VERSION.SDK_INT < 30 || !schemeSpecificPart.equals("com.google.android.gms") || !Collection.EL.stream(aobk.n().g().b).anyMatch(new Predicate() { // from class: aobb
+                if (!fpjb.o() || Build.VERSION.SDK_INT < 30 || !schemeSpecificPart.equals("com.google.android.gms") || !Collection.EL.stream(aqdc.n().g().b).anyMatch(new Predicate() { // from class: aqct
                     public final /* synthetic */ Predicate and(Predicate predicate) {
                         return Predicate$CC.$default$and(this, predicate);
                     }
 
                     @Override // java.util.function.Predicate
                     /* renamed from: negate */
-                    public final /* synthetic */ Predicate mo463negate() {
+                    public final /* synthetic */ Predicate mo478negate() {
                         return Predicate$CC.$default$negate(this);
                     }
 
@@ -216,8 +216,8 @@ public class GmsModuleFinder$ConfigUpdateIntentOperation extends IntentOperation
                     @Override // java.util.function.Predicate
                     public final boolean test(Object obj) {
                         int a;
-                        pwl pwlVar = (pwl) obj;
-                        return (pwlVar.b & 16) == 0 && (a = pwk.a(pwlVar.f)) != 0 && a == 2;
+                        rpp rppVar = (rpp) obj;
+                        return (rppVar.b & 16) == 0 && (a = rpo.a(rppVar.f)) != 0 && a == 2;
                     }
                 })) {
                     r4 = contains;

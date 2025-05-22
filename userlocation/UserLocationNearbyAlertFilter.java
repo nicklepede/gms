@@ -3,22 +3,22 @@ package com.google.android.gms.userlocation;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dhtc;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dkek;
+import defpackage.elgo;
+import defpackage.elpg;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class UserLocationNearbyAlertFilter extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dhtc();
+    public static final Parcelable.Creator CREATOR = new dkek();
     final List a;
     final List b;
     final String c;
@@ -27,15 +27,15 @@ public final class UserLocationNearbyAlertFilter extends AbstractSafeParcelable 
         List arrayList;
         List arrayList2;
         if (list == null) {
-            int i = eitj.d;
-            arrayList = ejcb.a;
+            int i = elgo.d;
+            arrayList = elpg.a;
         } else {
             arrayList = new ArrayList(new HashSet(list));
         }
         this.a = arrayList;
         if (list2 == null) {
-            int i2 = eitj.d;
-            arrayList2 = ejcb.a;
+            int i2 = elgo.d;
+            arrayList2 = elpg.a;
         } else {
             arrayList2 = new ArrayList(new HashSet(list2));
         }
@@ -53,7 +53,7 @@ public final class UserLocationNearbyAlertFilter extends AbstractSafeParcelable 
             return false;
         }
         UserLocationNearbyAlertFilter userLocationNearbyAlertFilter = (UserLocationNearbyAlertFilter) obj;
-        return this.b.equals(userLocationNearbyAlertFilter.b) && this.a.equals(userLocationNearbyAlertFilter.a) && arwb.b(this.c, userLocationNearbyAlertFilter.c);
+        return this.b.equals(userLocationNearbyAlertFilter.b) && this.a.equals(userLocationNearbyAlertFilter.a) && atyq.b(this.c, userLocationNearbyAlertFilter.c);
     }
 
     public final int hashCode() {
@@ -64,26 +64,26 @@ public final class UserLocationNearbyAlertFilter extends AbstractSafeParcelable 
         ArrayList arrayList = new ArrayList();
         List list = this.b;
         if (!list.isEmpty()) {
-            arwa.b("types", list, arrayList);
+            atyp.b("types", list, arrayList);
         }
         List list2 = this.a;
         if (!list2.isEmpty()) {
-            arwa.b("placeIds", list2, arrayList);
+            atyp.b("placeIds", list2, arrayList);
         }
         String str = this.c;
         if (str != null) {
-            arwa.b("chainName", str, arrayList);
+            atyp.b("chainName", str, arrayList);
         }
-        return arwa.a(arrayList, this);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.x(parcel, 1, list, false);
-        arxc.E(parcel, 2, this.b);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.x(parcel, 1, list, false);
+        atzr.E(parcel, 2, this.b);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.c(parcel, a);
     }
 }

@@ -13,29 +13,29 @@ import com.google.android.chimera.android.Activity;
 import com.google.android.gms.R;
 import com.google.android.gms.app.phone.settings.licenses.LicenseWrapper;
 import defpackage.dg;
-import defpackage.eiif;
-import defpackage.eike;
+import defpackage.ekvk;
+import defpackage.ekxj;
 import defpackage.ig;
-import defpackage.jpc;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.kdr;
-import defpackage.kjo;
-import defpackage.qet;
-import defpackage.tpm;
-import defpackage.tpv;
-import defpackage.tpw;
+import defpackage.jvr;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.lwb;
+import defpackage.mbz;
+import defpackage.rxx;
+import defpackage.vlm;
+import defpackage.vlv;
+import defpackage.vlw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class LicenseSourceFragment extends dg {
     @Override // defpackage.dg
     public final View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         LicenseSourceWrapper licenseSourceWrapper = (LicenseSourceWrapper) getArguments().getParcelable("source");
-        eike.e(licenseSourceWrapper);
-        ig hy = ((qet) requireContext()).hy();
-        eike.e(hy);
-        hy.y(eiif.b(licenseSourceWrapper.d));
+        ekxj.e(licenseSourceWrapper);
+        ig hO = ((rxx) requireContext()).hO();
+        ekxj.e(hO);
+        hO.y(ekvk.b(licenseSourceWrapper.d));
         return layoutInflater.inflate(R.layout.list_fragment, viewGroup, false);
     }
 
@@ -43,37 +43,37 @@ public class LicenseSourceFragment extends dg {
     public final void onViewCreated(View view, Bundle bundle) {
         Application application = ((Activity) requireContext()).getApplication();
         LicenseSourceWrapper licenseSourceWrapper = (LicenseSourceWrapper) getArguments().getParcelable("source");
-        eike.e(licenseSourceWrapper);
-        tpw tpwVar = (tpw) new jrh(this, new tpv(application, licenseSourceWrapper)).a(tpw.class);
-        final tpm tpmVar = new tpm(requireContext());
-        tpwVar.a.g(getViewLifecycleOwner(), new jpd() { // from class: tpj
-            @Override // defpackage.jpd
+        ekxj.e(licenseSourceWrapper);
+        vlw vlwVar = (vlw) new jxw(this, new vlv(application, licenseSourceWrapper)).a(vlw.class);
+        final vlm vlmVar = new vlm(requireContext());
+        vlwVar.a.g(getViewLifecycleOwner(), new jvs() { // from class: vlj
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                ArrayAdapter arrayAdapter = tpmVar;
+                ArrayAdapter arrayAdapter = vlmVar;
                 arrayAdapter.clear();
-                arrayAdapter.addAll((eivh) obj);
+                arrayAdapter.addAll((elim) obj);
             }
         });
-        jpc jpcVar = tpwVar.b;
-        final kdr a = kjo.a(this);
-        jpcVar.g(getViewLifecycleOwner(), new jpd() { // from class: tpk
-            @Override // defpackage.jpd
+        jvr jvrVar = vlwVar.b;
+        final lwb a = mbz.a(this);
+        jvrVar.g(getViewLifecycleOwner(), new jvs() { // from class: vlk
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 if (((Boolean) obj).booleanValue()) {
-                    kdr.this.q();
+                    lwb.this.q();
                 }
             }
         });
         ListView listView = (ListView) view;
-        listView.setAdapter((ListAdapter) tpmVar);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: tpl
+        listView.setAdapter((ListAdapter) vlmVar);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: vll
             @Override // android.widget.AdapterView.OnItemClickListener
             public final void onItemClick(AdapterView adapterView, View view2, int i, long j) {
-                LicenseWrapper licenseWrapper = (LicenseWrapper) tpmVar.getItem(i);
-                eike.e(licenseWrapper);
+                LicenseWrapper licenseWrapper = (LicenseWrapper) vlmVar.getItem(i);
+                ekxj.e(licenseWrapper);
                 Bundle bundle2 = new Bundle();
                 bundle2.putParcelable("license", licenseWrapper);
-                kdr.this.k(R.id.action_openLicense, bundle2);
+                lwb.this.k(R.id.action_openLicense, bundle2);
             }
         });
     }

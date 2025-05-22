@@ -2,18 +2,18 @@ package com.google.android.gms.wallet.service.ib;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.diwv;
-import defpackage.efdk;
-import defpackage.emfa;
+import defpackage.dlik;
+import defpackage.ehqn;
+import defpackage.eoso;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class IbMerchantParameters implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new diwv();
+    public static final Parcelable.Creator CREATOR = new dlik();
     public final int a;
     public String b;
     public boolean c;
-    public emfa d;
+    public eoso d;
 
     public IbMerchantParameters() {
         this.a = 0;
@@ -29,13 +29,13 @@ public class IbMerchantParameters implements Parcelable {
         parcel.writeInt(this.a);
         parcel.writeString(this.b);
         parcel.writeByte(this.c ? (byte) 1 : (byte) 0);
-        efdk.o(this.d, parcel);
+        ehqn.o(this.d, parcel);
     }
 
-    public IbMerchantParameters(int i, String str, boolean z, emfa emfaVar) {
+    public IbMerchantParameters(int i, String str, boolean z, eoso eosoVar) {
         this.a = i;
         this.b = str;
         this.c = z;
-        this.d = emfaVar;
+        this.d = eosoVar;
     }
 }

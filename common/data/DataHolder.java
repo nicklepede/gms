@@ -9,21 +9,21 @@ import android.util.Log;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.arny;
-import defpackage.arnz;
-import defpackage.aroa;
-import defpackage.arob;
-import defpackage.arwm;
-import defpackage.arxc;
+import defpackage.atqn;
+import defpackage.atqo;
+import defpackage.atqp;
+import defpackage.atqq;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.io.Closeable;
 import java.util.ArrayList;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class DataHolder extends AbstractSafeParcelable implements Closeable {
-    public static final Parcelable.Creator CREATOR = new arob();
-    public static final arnz a = new arny(new String[0]);
+    public static final Parcelable.Creator CREATOR = new atqq();
+    public static final atqo a = new atqn(new String[0]);
     final int b;
     public final String[] c;
     public Bundle d;
@@ -45,14 +45,14 @@ public final class DataHolder extends AbstractSafeParcelable implements Closeabl
         this.g = bundle;
     }
 
-    private static CursorWindow[] i(arnz arnzVar) {
+    private static CursorWindow[] i(atqo atqoVar) {
         int length;
-        String[] strArr = arnzVar.a;
+        String[] strArr = atqoVar.a;
         int length2 = strArr.length;
         if (length2 == 0) {
             return new CursorWindow[0];
         }
-        ArrayList arrayList = arnzVar.b;
+        ArrayList arrayList = atqoVar.b;
         int size = arrayList.size();
         CursorWindow cursorWindow = new CursorWindow(false);
         ArrayList arrayList2 = new ArrayList();
@@ -110,7 +110,7 @@ public final class DataHolder extends AbstractSafeParcelable implements Closeabl
                     }
                 }
                 if (z) {
-                    throw new aroa();
+                    throw new atqp();
                 }
                 cursorWindow.freeLastRow();
                 cursorWindow = new CursorWindow(false);
@@ -134,7 +134,7 @@ public final class DataHolder extends AbstractSafeParcelable implements Closeabl
     public final int a(int i) {
         int length;
         int i2 = 0;
-        arwm.l(i >= 0 && i < this.i);
+        atzb.l(i >= 0 && i < this.i);
         while (true) {
             int[] iArr = this.h;
             length = iArr.length;
@@ -243,13 +243,13 @@ public final class DataHolder extends AbstractSafeParcelable implements Closeabl
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String[] strArr = this.c;
-        int a2 = arxc.a(parcel);
-        arxc.w(parcel, 1, strArr, false);
-        arxc.J(parcel, 2, this.e, i);
-        arxc.o(parcel, 3, this.f);
-        arxc.g(parcel, 4, this.g, false);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.b);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.w(parcel, 1, strArr, false);
+        atzr.J(parcel, 2, this.e, i);
+        atzr.o(parcel, 3, this.f);
+        atzr.g(parcel, 4, this.g, false);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.b);
+        atzr.c(parcel, a2);
         if ((i & 1) != 0) {
             close();
         }
@@ -263,7 +263,7 @@ public final class DataHolder extends AbstractSafeParcelable implements Closeabl
     public DataHolder(android.database.Cursor r7) {
         /*
             r6 = this;
-            asiq r0 = new asiq
+            aumk r0 = new aumk
             r0.<init>(r7)
             java.lang.String[] r7 = r0.getColumnNames()
             java.util.ArrayList r1 = new java.util.ArrayList
@@ -322,21 +322,21 @@ public final class DataHolder extends AbstractSafeParcelable implements Closeabl
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.common.data.DataHolder.<init>(android.database.Cursor):void");
     }
 
-    public DataHolder(arnz arnzVar, int i) {
-        this(arnzVar.a, i(arnzVar), i, null);
+    public DataHolder(atqo atqoVar, int i) {
+        this(atqoVar.a, i(atqoVar), i, null);
     }
 
-    public /* synthetic */ DataHolder(arnz arnzVar, int i, Bundle bundle) {
-        this(arnzVar.a, i(arnzVar), i, bundle);
+    public /* synthetic */ DataHolder(atqo atqoVar, int i, Bundle bundle) {
+        this(atqoVar.a, i(atqoVar), i, bundle);
     }
 
     public DataHolder(String[] strArr, CursorWindow[] cursorWindowArr, int i, Bundle bundle) {
         this.j = false;
         this.k = true;
         this.b = 1;
-        arwm.s(strArr);
+        atzb.s(strArr);
         this.c = strArr;
-        arwm.s(cursorWindowArr);
+        atzb.s(cursorWindowArr);
         this.e = cursorWindowArr;
         this.f = i;
         this.g = bundle;

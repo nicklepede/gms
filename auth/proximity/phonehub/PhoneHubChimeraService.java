@@ -12,71 +12,71 @@ import com.google.android.gms.auth.proximity.RemoteDevice;
 import com.google.android.gms.auth.proximity.phonehub.PhoneHubChimeraService;
 import com.google.android.gms.chimera.modules.auth.proximity.AppContextProvider;
 import defpackage.a;
-import defpackage.acek;
-import defpackage.acgs;
-import defpackage.acih;
-import defpackage.acjm;
-import defpackage.acku;
-import defpackage.acqe;
-import defpackage.actj;
-import defpackage.actt;
-import defpackage.acuh;
-import defpackage.acwa;
-import defpackage.acwb;
-import defpackage.acwc;
-import defpackage.acxl;
-import defpackage.acxm;
-import defpackage.acyi;
-import defpackage.acyl;
-import defpackage.acyq;
-import defpackage.acyr;
-import defpackage.acyy;
-import defpackage.aczz;
-import defpackage.adaa;
-import defpackage.adab;
-import defpackage.adak;
-import defpackage.adal;
-import defpackage.adam;
-import defpackage.adan;
-import defpackage.adao;
-import defpackage.adaq;
-import defpackage.adar;
-import defpackage.adat;
-import defpackage.adav;
-import defpackage.adaw;
-import defpackage.adax;
-import defpackage.adaz;
-import defpackage.adba;
-import defpackage.adbb;
-import defpackage.adbe;
-import defpackage.adbo;
-import defpackage.adbp;
-import defpackage.adbw;
-import defpackage.adbx;
-import defpackage.adby;
-import defpackage.adbz;
-import defpackage.adcd;
-import defpackage.adce;
-import defpackage.adcf;
-import defpackage.adcg;
-import defpackage.adci;
-import defpackage.adcj;
-import defpackage.adck;
-import defpackage.adcl;
-import defpackage.adcm;
-import defpackage.arwm;
-import defpackage.arxo;
-import defpackage.asmf;
-import defpackage.asng;
-import defpackage.byjl;
-import defpackage.ensv;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feeg;
-import defpackage.flcm;
-import defpackage.flcw;
-import defpackage.fwac;
+import defpackage.aeek;
+import defpackage.aegs;
+import defpackage.aeih;
+import defpackage.aejm;
+import defpackage.aeku;
+import defpackage.aeqe;
+import defpackage.aetj;
+import defpackage.aett;
+import defpackage.aeuh;
+import defpackage.aewa;
+import defpackage.aewb;
+import defpackage.aewc;
+import defpackage.aexl;
+import defpackage.aexm;
+import defpackage.aeyi;
+import defpackage.aeyl;
+import defpackage.aeyq;
+import defpackage.aeyr;
+import defpackage.aeyy;
+import defpackage.aezz;
+import defpackage.afaa;
+import defpackage.afab;
+import defpackage.afak;
+import defpackage.afal;
+import defpackage.afam;
+import defpackage.afan;
+import defpackage.afao;
+import defpackage.afaq;
+import defpackage.afar;
+import defpackage.afat;
+import defpackage.afav;
+import defpackage.afaw;
+import defpackage.afax;
+import defpackage.afaz;
+import defpackage.afba;
+import defpackage.afbb;
+import defpackage.afbe;
+import defpackage.afbo;
+import defpackage.afbp;
+import defpackage.afbw;
+import defpackage.afbx;
+import defpackage.afby;
+import defpackage.afbz;
+import defpackage.afcd;
+import defpackage.afce;
+import defpackage.afcf;
+import defpackage.afcg;
+import defpackage.afci;
+import defpackage.afcj;
+import defpackage.afck;
+import defpackage.afcl;
+import defpackage.afcm;
+import defpackage.atzb;
+import defpackage.auad;
+import defpackage.aupz;
+import defpackage.aura;
+import defpackage.casd;
+import defpackage.eqgo;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgsz;
+import defpackage.fntv;
+import defpackage.fnuf;
+import defpackage.fywe;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.nio.ByteBuffer;
@@ -85,38 +85,39 @@ import java.util.Iterator;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class PhoneHubChimeraService extends Service implements acgs {
-    public static final arxo a = new arxo("ProximityAuth", "PhoneHubService");
+public class PhoneHubChimeraService extends Service implements aegs {
+    public static final auad a = new auad("ProximityAuth", "PhoneHubService");
     public static ChargingStateBroadcastReceiver b;
     public static InterruptionFilterBroadcastReceiver c;
     public static PhoneHubChimeraService d;
     public static WorkProfileStateBroadcastReceiver e;
-    public final acih f;
-    public final acyl g;
-    public final acyi h;
-    public final acwb i;
-    public final acuh j;
+    public final aeih f;
+    public final aeyl g;
+    public final aeyi h;
+    public final aewb i;
+    public final aeuh j;
     String k;
-    private final ensv l;
-    private final acku m;
-    private final actj n;
+    private final eqgo l;
+    private final aeku m;
+    private final aetj n;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class BluetoothAdapterStateChangeIntentOperation extends IntentOperation {
         @Override // com.google.android.chimera.IntentOperation
         public final void onHandleIntent(Intent intent) {
-            PhoneHubChimeraService.a.d("Received Bluetooth event: %s.", intent);
+            auad auadVar = PhoneHubChimeraService.a;
+            auadVar.d("Received Bluetooth event: %s.", intent);
             if ("android.bluetooth.adapter.action.STATE_CHANGED".equals(intent.getAction())) {
-                PhoneHubChimeraService.a.h("Bluetooth state has changed. Calling startService.", new Object[0]);
+                auadVar.h("Bluetooth state has changed. Calling startService.", new Object[0]);
                 startService(PhoneHubChimeraService.a(this));
             }
         }
     }
 
     public PhoneHubChimeraService() {
-        this(new acih("phone_hub"), new acyl(), new acyi(), acwb.b(), flcw.a.a().ai() ? new asmf(new LinkedBlockingQueue(), new ThreadPoolExecutor.DiscardPolicy()) : new asmf(1, 10), flcw.p() ? new acuh(AppContextProvider.a()) : null, acku.a(AppContextProvider.a()), actj.a(AppContextProvider.a()));
+        this(new aeih("phone_hub"), new aeyl(), new aeyi(), aewb.b(), fnuf.a.lK().ah() ? new aupz(new LinkedBlockingQueue(), new ThreadPoolExecutor.DiscardPolicy()) : new aupz(1, 10), fnuf.p() ? new aeuh(AppContextProvider.a()) : null, aeku.a(AppContextProvider.a()), aetj.a(AppContextProvider.a()));
     }
 
     public static Intent a(Context context) {
@@ -125,16 +126,16 @@ public class PhoneHubChimeraService extends Service implements acgs {
 
     private final void f() {
         a.h("All devices have disconnected. Performing cleanup...", new Object[0]);
-        acyi.a(this);
+        aeyi.a(this);
         int i = PhoneStatusGmsTaskBoundService.a;
-        byjl.a(this).d("PhoneHubStatusUpdate", PhoneStatusGmsTaskBoundService.class.getName());
+        casd.a(this).d("PhoneHubStatusUpdate", PhoneStatusGmsTaskBoundService.class.getName());
         PhoneGalleryGmsTaskBoundService.e(this);
     }
 
     public final void b() {
         Iterator it = this.i.d().iterator();
         while (it.hasNext()) {
-            if (((acwa) it.next()).e) {
+            if (((aewa) it.next()).e) {
                 PhoneGalleryGmsTaskBoundService.f(this);
                 return;
             }
@@ -143,46 +144,46 @@ public class PhoneHubChimeraService extends Service implements acgs {
     }
 
     public final void c(boolean z) {
-        if (flcw.J()) {
-            asng.H(this, "com.google.android.gms.auth.proximity.phonehub.PhoneHubNotificationListenerService", z);
+        if (fnuf.J()) {
+            aura.H(this, "com.google.android.gms.auth.proximity.phonehub.PhoneHubNotificationListenerService", z);
         }
     }
 
-    @Override // defpackage.acgs
+    @Override // defpackage.aegs
     public final void d(String str, int i, int i2, int i3) {
         if (i != 5) {
             return;
         }
         String a2 = ConnectionInfo.a(i2);
-        arxo arxoVar = a;
+        auad auadVar = a;
         String a3 = ConnectionInfo.a(i3);
-        String a4 = acek.a(str);
-        acwb acwbVar = this.i;
-        arxoVar.h("Connection status changed from %s to %s for %s. Existing message processor state: %s", a2, a3, a4, acwbVar.c());
+        String a4 = aeek.a(str);
+        aewb aewbVar = this.i;
+        auadVar.h("Connection status changed from %s to %s for %s. Existing message processor state: %s", a2, a3, a4, aewbVar.c());
         if (i3 != 3) {
             if (i3 == 0) {
-                acwa a5 = acwbVar.a(str);
+                aewa a5 = aewbVar.a(str);
                 if (a5 != null) {
-                    if (acyr.a()) {
-                        acwbVar.g(str);
+                    if (aeyr.a()) {
+                        aewbVar.g(str);
                         a5.c();
                     } else {
                         a5.c();
-                        acwbVar.g(str);
+                        aewbVar.g(str);
                     }
                 }
-                if (flcw.p() || flcw.h()) {
-                    this.l.execute(new Runnable() { // from class: acxk
+                if (fnuf.p() || fnuf.h()) {
+                    this.l.execute(new Runnable() { // from class: aexk
                         @Override // java.lang.Runnable
                         public final void run() {
                             PhoneHubChimeraService phoneHubChimeraService = PhoneHubChimeraService.this;
-                            acyi.b(phoneHubChimeraService, phoneHubChimeraService.g);
+                            aeyi.b(phoneHubChimeraService, phoneHubChimeraService.g);
                         }
                     });
                 } else {
-                    acyi.b(this, this.g);
+                    aeyi.b(this, this.g);
                 }
-                if (acwbVar.d().isEmpty()) {
+                if (aewbVar.d().isEmpty()) {
                     f();
                     return;
                 }
@@ -190,37 +191,37 @@ public class PhoneHubChimeraService extends Service implements acgs {
             }
             return;
         }
-        acyl acylVar = this.g;
-        final acwa acwaVar = new acwa(this, str, acylVar, this.h, new acxl(str), new acyq(), new LruCache((int) flcw.a.a().d()), this.n, new actt(this), new asmf(1, 10));
-        acwbVar.a.put(str, acwaVar);
-        if (acyr.a()) {
-            acwaVar.g.execute(new Runnable() { // from class: acvu
+        aeyl aeylVar = this.g;
+        final aewa aewaVar = new aewa(this, str, aeylVar, this.h, new aexl(str), new aeyq(), new LruCache((int) fnuf.a.lK().d()), this.n, new aett(this), new aupz(1, 10));
+        aewbVar.a.put(str, aewaVar);
+        if (aeyr.a()) {
+            aewaVar.g.execute(new Runnable() { // from class: aevu
                 @Override // java.lang.Runnable
                 public final void run() {
-                    acyy.c(acwa.this.b).k();
+                    aeyy.c(aewa.this.b).k();
                 }
             });
         } else {
-            acwaVar.c.e.add(acwaVar);
+            aewaVar.c.e.add(aewaVar);
         }
-        acwaVar.j = true;
-        adci adciVar = adci.a;
-        if (flcw.p() || flcw.h()) {
-            this.l.execute(new Runnable() { // from class: acxj
+        aewaVar.j = true;
+        afci afciVar = afci.a;
+        if (fnuf.p() || fnuf.h()) {
+            this.l.execute(new Runnable() { // from class: aexj
                 @Override // java.lang.Runnable
                 public final void run() {
                     PhoneHubChimeraService phoneHubChimeraService = PhoneHubChimeraService.this;
-                    acyi.b(phoneHubChimeraService, phoneHubChimeraService.g);
+                    aeyi.b(phoneHubChimeraService, phoneHubChimeraService.g);
                 }
             });
         } else {
-            acyi.b(this, acylVar);
+            aeyi.b(this, aeylVar);
         }
         PhoneStatusGmsTaskBoundService.d(this);
         b();
-        acqe acqeVar = new acqe();
-        acqeVar.b("phone_hub_session_start_count");
-        acqeVar.c();
+        aeqe aeqeVar = new aeqe();
+        aeqeVar.b("phone_hub_session_start_count");
+        aeqeVar.c();
     }
 
     @Override // com.google.android.chimera.Service
@@ -235,216 +236,216 @@ public class PhoneHubChimeraService extends Service implements acgs {
         printWriter.append("\nPhone Hub Connected Clients: \n\n");
         Iterator it2 = this.i.c().iterator();
         while (it2.hasNext()) {
-            printWriter.append((CharSequence) String.valueOf(acek.a((String) it2.next())).concat("\n"));
+            printWriter.append((CharSequence) String.valueOf(aeek.a((String) it2.next())).concat("\n"));
         }
-        if (flcm.a.a().d()) {
-            acjm.b();
+        if (fntv.a.lK().d()) {
+            aejm.b();
             printWriter.append("\nisExoAvailable false\n");
         }
-        printWriter.append((CharSequence) ("\nEnable Cross-Profile Connector: " + flcw.p() + "\n"));
-        printWriter.append((CharSequence) ("\nAlways off-thread: " + flcw.h() + "\n"));
-        printWriter.append((CharSequence) ("\nSimplified Notification Infra: " + acyr.a() + "\n"));
+        printWriter.append((CharSequence) ("\nEnable Cross-Profile Connector: " + fnuf.p() + "\n"));
+        printWriter.append((CharSequence) ("\nAlways off-thread: " + fnuf.h() + "\n"));
+        printWriter.append((CharSequence) ("\nSimplified Notification Infra: " + aeyr.a() + "\n"));
     }
 
-    @Override // defpackage.acgs
+    @Override // defpackage.aegs
     public final void e(final String str, String str2, byte[] bArr) {
-        final feeg feegVar;
+        final fgsz fgszVar;
         if ("phone_hub".equals(str2)) {
-            final acwa a2 = this.i.a(str);
+            final aewa a2 = this.i.a(str);
             if (a2 == null) {
                 a.m("Received message for %s but no messageProcessor was registered for it!", new Object[0]);
                 return;
             }
             try {
-                arxo arxoVar = acwc.a;
+                auad auadVar = aewc.a;
                 byte[] copyOf = Arrays.copyOf(bArr, 2);
                 byte[] copyOfRange = Arrays.copyOfRange(bArr, 2, bArr.length);
                 short s = ByteBuffer.wrap(copyOf).getShort();
-                int b2 = adbe.b(s);
+                int b2 = afbe.b(s);
                 if (b2 == 0) {
-                    throw new fedk(a.j(s, "Unknown message type "));
+                    throw new fgsd(a.j(s, "Unknown message type "));
                 }
                 switch (b2 - 2) {
                     case 0:
-                        fecp y = fecp.y(adak.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y);
-                        feegVar = (adak) y;
+                        fgri y = fgri.y(afak.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y);
+                        fgszVar = (afak) y;
                         break;
                     case 1:
-                        fecp y2 = fecp.y(adbw.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y2);
-                        feegVar = (adbw) y2;
+                        fgri y2 = fgri.y(afbw.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y2);
+                        fgszVar = (afbw) y2;
                         break;
                     case 2:
-                        fecp y3 = fecp.y(adbx.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y3);
-                        feegVar = (adbx) y3;
+                        fgri y3 = fgri.y(afbx.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y3);
+                        fgszVar = (afbx) y3;
                         break;
                     case 3:
-                        fecp y4 = fecp.y(adcl.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y4);
-                        feegVar = (adcl) y4;
+                        fgri y4 = fgri.y(afcl.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y4);
+                        fgszVar = (afcl) y4;
                         break;
                     case 4:
-                        fecp y5 = fecp.y(adcm.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y5);
-                        feegVar = (adcm) y5;
+                        fgri y5 = fgri.y(afcm.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y5);
+                        fgszVar = (afcm) y5;
                         break;
                     case 5:
-                        fecp y6 = fecp.y(adcd.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y6);
-                        feegVar = (adcd) y6;
+                        fgri y6 = fgri.y(afcd.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y6);
+                        fgszVar = (afcd) y6;
                         break;
                     case 6:
-                        fecp y7 = fecp.y(adce.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y7);
-                        feegVar = (adce) y7;
+                        fgri y7 = fgri.y(afce.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y7);
+                        fgszVar = (afce) y7;
                         break;
                     case 7:
-                        fecp y8 = fecp.y(adcj.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y8);
-                        feegVar = (adcj) y8;
+                        fgri y8 = fgri.y(afcj.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y8);
+                        fgszVar = (afcj) y8;
                         break;
                     case 8:
-                        fecp y9 = fecp.y(adck.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y9);
-                        feegVar = (adck) y9;
+                        fgri y9 = fgri.y(afck.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y9);
+                        fgszVar = (afck) y9;
                         break;
                     case 9:
-                        fecp y10 = fecp.y(adan.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y10);
-                        feegVar = (adan) y10;
+                        fgri y10 = fgri.y(afan.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y10);
+                        fgszVar = (afan) y10;
                         break;
                     case 10:
-                        fecp y11 = fecp.y(adao.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y11);
-                        feegVar = (adao) y11;
+                        fgri y11 = fgri.y(afao.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y11);
+                        fgszVar = (afao) y11;
                         break;
                     case 11:
-                        fecp y12 = fecp.y(adbo.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y12);
-                        feegVar = (adbo) y12;
+                        fgri y12 = fgri.y(afbo.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y12);
+                        fgszVar = (afbo) y12;
                         break;
                     case 12:
-                        fecp y13 = fecp.y(adbp.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y13);
-                        feegVar = (adbp) y13;
+                        fgri y13 = fgri.y(afbp.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y13);
+                        fgszVar = (afbp) y13;
                         break;
                     case 13:
-                        fecp y14 = fecp.y(adcf.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y14);
-                        feegVar = (adcf) y14;
+                        fgri y14 = fgri.y(afcf.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y14);
+                        fgszVar = (afcf) y14;
                         break;
                     case 14:
-                        fecp y15 = fecp.y(adcg.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y15);
-                        feegVar = (adcg) y15;
+                        fgri y15 = fgri.y(afcg.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y15);
+                        fgszVar = (afcg) y15;
                         break;
                     case 15:
-                        fecp y16 = fecp.y(adaw.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y16);
-                        feegVar = (adaw) y16;
+                        fgri y16 = fgri.y(afaw.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y16);
+                        fgszVar = (afaw) y16;
                         break;
                     case 16:
-                        fecp y17 = fecp.y(adax.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y17);
-                        feegVar = (adax) y17;
+                        fgri y17 = fgri.y(afax.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y17);
+                        fgszVar = (afax) y17;
                         break;
-                    case fwac.q /* 17 */:
-                        fecp y18 = fecp.y(adat.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y18);
-                        feegVar = (adat) y18;
+                    case fywe.q /* 17 */:
+                        fgri y18 = fgri.y(afat.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y18);
+                        fgszVar = (afat) y18;
                         break;
                     case 18:
-                        fecp y19 = fecp.y(adav.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y19);
-                        feegVar = (adav) y19;
+                        fgri y19 = fgri.y(afav.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y19);
+                        fgszVar = (afav) y19;
                         break;
                     case 19:
-                        fecp y20 = fecp.y(adbb.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y20);
-                        feegVar = (adbb) y20;
+                        fgri y20 = fgri.y(afbb.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y20);
+                        fgszVar = (afbb) y20;
                         break;
-                    case fwac.t /* 20 */:
-                        fecp y21 = fecp.y(adal.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y21);
-                        feegVar = (adal) y21;
+                    case fywe.t /* 20 */:
+                        fgri y21 = fgri.y(afal.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y21);
+                        fgszVar = (afal) y21;
                         break;
-                    case fwac.u /* 21 */:
-                        fecp y22 = fecp.y(adam.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y22);
-                        feegVar = (adam) y22;
+                    case fywe.u /* 21 */:
+                        fgri y22 = fgri.y(afam.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y22);
+                        fgszVar = (afam) y22;
                         break;
-                    case fwac.v /* 22 */:
-                        fecp y23 = fecp.y(adaz.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y23);
-                        feegVar = (adaz) y23;
+                    case fywe.v /* 22 */:
+                        fgri y23 = fgri.y(afaz.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y23);
+                        fgszVar = (afaz) y23;
                         break;
-                    case fwac.w /* 23 */:
-                        fecp y24 = fecp.y(adba.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y24);
-                        feegVar = (adba) y24;
+                    case fywe.w /* 23 */:
+                        fgri y24 = fgri.y(afba.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y24);
+                        fgszVar = (afba) y24;
                         break;
-                    case fwac.x /* 24 */:
-                        fecp y25 = fecp.y(adaq.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y25);
-                        feegVar = (adaq) y25;
+                    case fywe.x /* 24 */:
+                        fgri y25 = fgri.y(afaq.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y25);
+                        fgszVar = (afaq) y25;
                         break;
-                    case fwac.y /* 25 */:
-                        fecp y26 = fecp.y(adar.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y26);
-                        feegVar = (adar) y26;
+                    case fywe.y /* 25 */:
+                        fgri y26 = fgri.y(afar.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y26);
+                        fgszVar = (afar) y26;
                         break;
                     case 26:
-                        fecp y27 = fecp.y(adby.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y27);
-                        feegVar = (adby) y27;
+                        fgri y27 = fgri.y(afby.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y27);
+                        fgszVar = (afby) y27;
                         break;
-                    case fwac.A /* 27 */:
-                        fecp y28 = fecp.y(adbz.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y28);
-                        feegVar = (adbz) y28;
+                    case fywe.A /* 27 */:
+                        fgri y28 = fgri.y(afbz.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y28);
+                        fgszVar = (afbz) y28;
                         break;
-                    case fwac.B /* 28 */:
-                        fecp y29 = fecp.y(adab.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y29);
-                        feegVar = (adab) y29;
+                    case fywe.B /* 28 */:
+                        fgri y29 = fgri.y(afab.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y29);
+                        fgszVar = (afab) y29;
                         break;
-                    case fwac.C /* 29 */:
-                        fecp y30 = fecp.y(adaa.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y30);
-                        feegVar = (adaa) y30;
+                    case fywe.C /* 29 */:
+                        fgri y30 = fgri.y(afaa.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y30);
+                        fgszVar = (afaa) y30;
                         break;
-                    case fwac.D /* 30 */:
-                        fecp y31 = fecp.y(aczz.a, copyOfRange, 0, copyOfRange.length, febw.a());
-                        fecp.M(y31);
-                        feegVar = (aczz) y31;
+                    case fywe.D /* 30 */:
+                        fgri y31 = fgri.y(aezz.a, copyOfRange, 0, copyOfRange.length, fgqp.a());
+                        fgri.M(y31);
+                        fgszVar = (aezz) y31;
                         break;
                     default:
-                        throw new fedk("Invalid message type: " + adbe.a(b2));
+                        throw new fgsd("Invalid message type: " + afbe.a(b2));
                 }
-                arwm.s(feegVar);
-                acwc.a(feegVar);
-                if (!flcw.p() && !flcw.h()) {
-                    a2.g(feegVar, str);
-                    if (feegVar instanceof adak) {
+                atzb.s(fgszVar);
+                aewc.a(fgszVar);
+                if (!fnuf.p() && !fnuf.h()) {
+                    a2.g(fgszVar, str);
+                    if (fgszVar instanceof afak) {
                         b();
                         return;
                     }
                     return;
                 }
-                this.l.execute(new Runnable() { // from class: acxi
+                this.l.execute(new Runnable() { // from class: aexi
                     @Override // java.lang.Runnable
                     public final void run() {
-                        acwa acwaVar = a2;
-                        feeg feegVar2 = feegVar;
-                        acwaVar.g(feegVar2, str);
-                        if (feegVar2 instanceof adak) {
+                        aewa aewaVar = a2;
+                        fgsz fgszVar2 = fgszVar;
+                        aewaVar.g(fgszVar2, str);
+                        if (fgszVar2 instanceof afak) {
                             PhoneHubChimeraService.this.b();
                         }
                     }
                 });
-            } catch (fedk e2) {
+            } catch (fgsd e2) {
                 a.n("Couldn't decode received message from ".concat(String.valueOf(str)), e2, new Object[0]);
             }
         }
@@ -464,30 +465,30 @@ public class PhoneHubChimeraService extends Service implements acgs {
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
         this.l.shutdown();
-        if (flcw.C()) {
+        if (fnuf.C()) {
             a.h("Destroying PhoneHubChimeraService.", new Object[0]);
-            acyl acylVar = this.g;
-            synchronized (acyl.class) {
-                if (acylVar.c != null) {
-                    if (acyr.a()) {
-                        acyy.c(acylVar.c).c.g();
-                    } else if (flcw.p()) {
-                        acylVar.f = null;
+            aeyl aeylVar = this.g;
+            synchronized (aeyl.class) {
+                if (aeylVar.c != null) {
+                    if (aeyr.a()) {
+                        aeyy.c(aeylVar.c).c.g();
+                    } else if (fnuf.p()) {
+                        aeylVar.f = null;
                     } else {
-                        acylVar.c.unbindService(acylVar.b);
-                        acylVar.b = null;
+                        aeylVar.c.unbindService(aeylVar.b);
+                        aeylVar.b = null;
                     }
-                    acylVar.c = null;
+                    aeylVar.c = null;
                 } else {
-                    acyl.a.m("shutdown(): context is null.", new Object[0]);
+                    aeyl.a.m("shutdown(): context is null.", new Object[0]);
                 }
             }
-            acwb acwbVar = this.i;
-            Iterator it = acwbVar.d().iterator();
+            aewb aewbVar = this.i;
+            Iterator it = aewbVar.d().iterator();
             while (it.hasNext()) {
-                ((acwa) it.next()).c();
+                ((aewa) it.next()).c();
             }
-            acwbVar.a.clear();
+            aewbVar.a.clear();
             f();
         }
         this.f.c(this);
@@ -497,35 +498,35 @@ public class PhoneHubChimeraService extends Service implements acgs {
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        if (flcw.C()) {
+        if (fnuf.C()) {
             a.h("Handling intent for PhoneHubChimeraService.", new Object[0]);
-            this.l.execute(new acxm(this));
+            this.l.execute(new aexm(this));
             return 1;
         }
-        new acqe().T(1);
-        if (flcw.J()) {
-            asng.H(this, "com.google.android.gms.auth.proximity.phonehub.PhoneHubNotificationListenerService", false);
+        new aeqe().T(1);
+        if (fnuf.J()) {
+            aura.H(this, "com.google.android.gms.auth.proximity.phonehub.PhoneHubNotificationListenerService", false);
         }
         stopSelf();
         return 2;
     }
 
-    public PhoneHubChimeraService(acih acihVar, acyl acylVar, acyi acyiVar, acwb acwbVar, ensv ensvVar, acuh acuhVar, acku ackuVar, actj actjVar) {
+    public PhoneHubChimeraService(aeih aeihVar, aeyl aeylVar, aeyi aeyiVar, aewb aewbVar, eqgo eqgoVar, aeuh aeuhVar, aeku aekuVar, aetj aetjVar) {
         this.k = null;
-        this.f = acihVar;
-        this.g = acylVar;
-        this.h = acyiVar;
-        this.i = acwbVar;
-        this.l = ensvVar;
-        this.j = acuhVar;
-        this.m = ackuVar;
-        this.n = actjVar;
-        acjm.b();
-        d = true == flcw.H() ? this : null;
+        this.f = aeihVar;
+        this.g = aeylVar;
+        this.h = aeyiVar;
+        this.i = aewbVar;
+        this.l = eqgoVar;
+        this.j = aeuhVar;
+        this.m = aekuVar;
+        this.n = aetjVar;
+        aejm.b();
+        d = true == fnuf.H() ? this : null;
     }
 
-    PhoneHubChimeraService(acih acihVar, acyl acylVar, acyi acyiVar, acwb acwbVar, ensv ensvVar, acuh acuhVar, acku ackuVar, actj actjVar, String str) {
-        this(acihVar, acylVar, acyiVar, acwbVar, ensvVar, acuhVar, ackuVar, actjVar);
+    PhoneHubChimeraService(aeih aeihVar, aeyl aeylVar, aeyi aeyiVar, aewb aewbVar, eqgo eqgoVar, aeuh aeuhVar, aeku aekuVar, aetj aetjVar, String str) {
+        this(aeihVar, aeylVar, aeyiVar, aewbVar, eqgoVar, aeuhVar, aekuVar, aetjVar);
         this.k = str;
     }
 }

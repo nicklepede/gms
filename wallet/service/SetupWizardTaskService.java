@@ -4,34 +4,34 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.byln;
-import defpackage.efdv;
-import defpackage.ftcw;
-import defpackage.ftcz;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.cauf;
+import defpackage.ehqy;
+import defpackage.fvyq;
+import defpackage.fvyt;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class SetupWizardTaskService extends GmsTaskBoundService {
     public static final String a = "SetupWizardTaskService";
 
     public static void d(Context context) {
-        long a2 = ftcw.a.a().a();
-        bykj bykjVar = new bykj();
-        bykjVar.w(a);
-        bykjVar.e(a2, 1 + a2);
-        bykjVar.y(2, 2);
-        bykjVar.x(0, 1);
-        bykjVar.i(true);
-        bykjVar.q(a);
-        bykjVar.v(0);
-        byjl.a(context).f(bykjVar.b());
+        long a2 = fvyq.a.lK().a();
+        catb catbVar = new catb();
+        catbVar.w(a);
+        catbVar.e(a2, 1 + a2);
+        catbVar.y(2, 2);
+        catbVar.x(0, 1);
+        catbVar.i(true);
+        catbVar.q(a);
+        catbVar.v(0);
+        casd.a(context).f(catbVar.b());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("payments.setupWizardPrefs", 0);
         Map<String, ?> all = sharedPreferences.getAll();
         SharedPreferences.Editor edit = sharedPreferences.edit();
@@ -41,7 +41,7 @@ public class SetupWizardTaskService extends GmsTaskBoundService {
             if (str.startsWith("initResponse")) {
                 String string = sharedPreferences.getString(str, null);
                 if (!TextUtils.isEmpty(string)) {
-                    if (System.currentTimeMillis() - new efdv(string).a(0L) > ftcz.b()) {
+                    if (System.currentTimeMillis() - new ehqy(string).a(0L) > fvyt.b()) {
                         edit.remove(str);
                         z2 = false;
                         z = true;

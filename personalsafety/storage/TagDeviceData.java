@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cvxg;
-import defpackage.eigd;
+import defpackage.atzr;
+import defpackage.cyhd;
+import defpackage.ekti;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class TagDeviceData extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new cvxg();
+    public static final Parcelable.Creator CREATOR = new cyhd();
     public final int a;
     public final String b;
     public final Integer c;
@@ -26,7 +26,7 @@ public class TagDeviceData extends AbstractSafeParcelable implements ReflectedPa
     public final boolean equals(Object obj) {
         if (obj instanceof TagDeviceData) {
             TagDeviceData tagDeviceData = (TagDeviceData) obj;
-            if (this.a == tagDeviceData.a && eigd.e(this.b, tagDeviceData.b)) {
+            if (this.a == tagDeviceData.a && ekti.e(this.b, tagDeviceData.b)) {
                 return true;
             }
         }
@@ -44,11 +44,11 @@ public class TagDeviceData extends AbstractSafeParcelable implements ReflectedPa
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.F(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.F(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 
     public TagDeviceData(int i, String str) {

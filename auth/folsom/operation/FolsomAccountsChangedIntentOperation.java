@@ -2,16 +2,16 @@ package com.google.android.gms.auth.folsom.operation;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.abfo;
-import defpackage.abnb;
-import defpackage.abng;
-import defpackage.arxo;
+import defpackage.adfo;
+import defpackage.adnb;
+import defpackage.adng;
+import defpackage.auad;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class FolsomAccountsChangedIntentOperation extends IntentOperation {
-    private static final arxo a = abng.a("RecoverableKeyStoreAccountChangeIntentOperation");
+    private static final auad a = adng.a("RecoverableKeyStoreAccountChangeIntentOperation");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
@@ -28,9 +28,9 @@ public class FolsomAccountsChangedIntentOperation extends IntentOperation {
             a.d("Unsupported intent operation action=%s", action);
             return;
         }
-        abfo.a(this, UUID.randomUUID().toString());
-        if (abnb.c()) {
-            abfo.c(false);
+        adfo.a(this, UUID.randomUUID().toString());
+        if (adnb.c()) {
+            adfo.c(false);
         }
     }
 }

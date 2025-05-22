@@ -9,12 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.google.android.cast.JGCastService;
 import defpackage.a;
-import defpackage.clzc;
-import defpackage.crog;
-import defpackage.croh;
+import defpackage.cohk;
+import defpackage.ctxl;
+import defpackage.ctxm;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class NavigationLayout extends ViewGroup implements Iterable {
     public Drawable a;
@@ -61,10 +61,10 @@ public class NavigationLayout extends ViewGroup implements Iterable {
             if (childAt != null && childAt.getVisibility() != 8) {
                 int measuredWidth = childAt.getMeasuredWidth();
                 int measuredHeight = childAt.getMeasuredHeight();
-                croh crohVar = (croh) childAt.getLayoutParams();
-                int i9 = (i - crohVar.rightMargin) - measuredWidth;
-                childAt.layout(i9, crohVar.topMargin + i2, i, measuredHeight + i2);
-                int i10 = i9 - crohVar.leftMargin;
+                ctxm ctxmVar = (ctxm) childAt.getLayoutParams();
+                int i9 = (i - ctxmVar.rightMargin) - measuredWidth;
+                childAt.layout(i9, ctxmVar.topMargin + i2, i, measuredHeight + i2);
+                int i10 = i9 - ctxmVar.leftMargin;
                 if (a(i8)) {
                     i10 -= this.b;
                 }
@@ -83,14 +83,14 @@ public class NavigationLayout extends ViewGroup implements Iterable {
             if (childAt != null && childAt.getVisibility() != 8) {
                 int measuredWidth = childAt.getMeasuredWidth();
                 int measuredHeight = childAt.getMeasuredHeight();
-                croh crohVar = (croh) childAt.getLayoutParams();
-                int i9 = i + crohVar.leftMargin;
+                ctxm ctxmVar = (ctxm) childAt.getLayoutParams();
+                int i9 = i + ctxmVar.leftMargin;
                 if (a(i8)) {
                     i9 += this.b;
                 }
-                i2 += crohVar.topMargin;
+                i2 += ctxmVar.topMargin;
                 childAt.layout(i9, i2, i9 + measuredWidth, measuredHeight + i2);
-                i = i9 + measuredWidth + crohVar.rightMargin;
+                i = i9 + measuredWidth + ctxmVar.rightMargin;
             }
         }
     }
@@ -98,8 +98,8 @@ public class NavigationLayout extends ViewGroup implements Iterable {
     protected final boolean a(int i) {
         if (this.g) {
             View childAt = getChildAt(i);
-            croh crohVar = (croh) childAt.getLayoutParams();
-            return this.f ? crohVar.a == 2 && childAt.getVisibility() == 0 : crohVar.a == 1 && childAt.getVisibility() == 0;
+            ctxm ctxmVar = (ctxm) childAt.getLayoutParams();
+            return this.f ? ctxmVar.a == 2 && childAt.getVisibility() == 0 : ctxmVar.a == 1 && childAt.getVisibility() == 0;
         }
         while (true) {
             i--;
@@ -119,22 +119,22 @@ public class NavigationLayout extends ViewGroup implements Iterable {
 
     @Override // android.view.ViewGroup
     protected final boolean checkLayoutParams(ViewGroup.LayoutParams layoutParams) {
-        return layoutParams instanceof croh;
+        return layoutParams instanceof ctxm;
     }
 
     @Override // android.view.ViewGroup
     protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateDefaultLayoutParams() {
-        return new croh();
+        return new ctxm();
     }
 
     @Override // android.view.ViewGroup
     public final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
-        return new croh(getContext(), attributeSet);
+        return new ctxm(getContext(), attributeSet);
     }
 
     @Override // java.lang.Iterable
     public final Iterator iterator() {
-        return new crog(this);
+        return new ctxl(this);
     }
 
     @Override // android.view.View
@@ -146,8 +146,8 @@ public class NavigationLayout extends ViewGroup implements Iterable {
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
             if (childAt != null && childAt.getVisibility() != 8 && a(i)) {
-                croh crohVar = (croh) childAt.getLayoutParams();
-                int right = this.f ? childAt.getRight() + crohVar.rightMargin : (childAt.getLeft() - crohVar.leftMargin) - this.b;
+                ctxm ctxmVar = (ctxm) childAt.getLayoutParams();
+                int right = this.f ? childAt.getRight() + ctxmVar.rightMargin : (childAt.getLeft() - ctxmVar.leftMargin) - this.b;
                 Drawable drawable = this.a;
                 if (drawable != null) {
                     drawable.setBounds(right, getPaddingTop() + this.e, this.b + right, (getHeight() - getPaddingBottom()) - this.e);
@@ -189,7 +189,7 @@ public class NavigationLayout extends ViewGroup implements Iterable {
             int paddingTop2 = getPaddingTop();
             int childCount2 = getChildCount() - 1;
             while (i7 <= childCount2) {
-                if (((croh) getChildAt(i7).getLayoutParams()).a == 1) {
+                if (((ctxm) getChildAt(i7).getLayoutParams()).a == 1) {
                     if (this.f) {
                         e(paddingLeft2, paddingTop2, i7, i7);
                     } else {
@@ -236,7 +236,7 @@ public class NavigationLayout extends ViewGroup implements Iterable {
         int childCount3 = getChildCount() - 1;
         while (i7 <= childCount3) {
             int i12 = ((paddingRight3 - paddingLeft3) / 2) + paddingLeft3;
-            if (((croh) getChildAt(i7).getLayoutParams()).a == 1) {
+            if (((ctxm) getChildAt(i7).getLayoutParams()).a == 1) {
                 if (this.f) {
                     d(i12, paddingTop3, i7, i7);
                 } else {
@@ -274,9 +274,9 @@ public class NavigationLayout extends ViewGroup implements Iterable {
             for (int i6 = 0; i6 < childCount; i6++) {
                 View childAt2 = getChildAt(i6);
                 if (childAt2 != null && childAt2.getVisibility() != 8) {
-                    croh crohVar = (croh) childAt2.getLayoutParams();
+                    ctxm ctxmVar = (ctxm) childAt2.getLayoutParams();
                     childAt2.measure(View.MeasureSpec.makeMeasureSpec(paddingLeft, JGCastService.FLAG_PRIVATE_DISPLAY), i2);
-                    i5 = Math.max(i5, childAt2.getMeasuredHeight() + crohVar.topMargin + crohVar.bottomMargin);
+                    i5 = Math.max(i5, childAt2.getMeasuredHeight() + ctxmVar.topMargin + ctxmVar.bottomMargin);
                 }
             }
             setMeasuredDimension(resolveSize(size, i), resolveSize(i5 + paddingTop, i2));
@@ -290,9 +290,9 @@ public class NavigationLayout extends ViewGroup implements Iterable {
             for (int i8 = 0; i8 < childCount2; i8++) {
                 View childAt3 = getChildAt(i8);
                 if (childAt3 != null && childAt3.getVisibility() != 8) {
-                    croh crohVar2 = (croh) childAt3.getLayoutParams();
+                    ctxm ctxmVar2 = (ctxm) childAt3.getLayoutParams();
                     measureChildWithMargins(childAt3, i, paddingLeft2, i2, paddingTop2);
-                    i7 = Math.max(i7, childAt3.getMeasuredHeight() + crohVar2.topMargin + crohVar2.bottomMargin);
+                    i7 = Math.max(i7, childAt3.getMeasuredHeight() + ctxmVar2.topMargin + ctxmVar2.bottomMargin);
                 }
             }
             setMeasuredDimension(resolveSize(paddingLeft2, i), resolveSize(i7 + paddingTop2, i2));
@@ -308,10 +308,10 @@ public class NavigationLayout extends ViewGroup implements Iterable {
                 if (a(i10)) {
                     paddingLeft3 += this.b;
                 }
-                croh crohVar3 = (croh) childAt4.getLayoutParams();
+                ctxm ctxmVar3 = (ctxm) childAt4.getLayoutParams();
                 measureChildWithMargins(childAt4, i, paddingLeft3, i2, paddingTop3);
-                paddingLeft3 += childAt4.getMeasuredWidth() + crohVar3.leftMargin + crohVar3.rightMargin;
-                i9 = Math.max(i9, childAt4.getMeasuredHeight() + crohVar3.topMargin + crohVar3.bottomMargin);
+                paddingLeft3 += childAt4.getMeasuredWidth() + ctxmVar3.leftMargin + ctxmVar3.rightMargin;
+                i9 = Math.max(i9, childAt4.getMeasuredHeight() + ctxmVar3.topMargin + ctxmVar3.bottomMargin);
             }
         }
         setMeasuredDimension(resolveSize(paddingLeft3, i), resolveSize(i9 + paddingTop3, i2));
@@ -319,7 +319,7 @@ public class NavigationLayout extends ViewGroup implements Iterable {
 
     @Override // android.view.ViewGroup
     protected final /* bridge */ /* synthetic */ ViewGroup.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
-        return layoutParams instanceof croh ? new croh((ViewGroup.MarginLayoutParams) layoutParams) : layoutParams instanceof ViewGroup.MarginLayoutParams ? new croh((ViewGroup.MarginLayoutParams) layoutParams) : new croh(layoutParams);
+        return layoutParams instanceof ctxm ? new ctxm((ViewGroup.MarginLayoutParams) layoutParams) : layoutParams instanceof ViewGroup.MarginLayoutParams ? new ctxm((ViewGroup.MarginLayoutParams) layoutParams) : new ctxm(layoutParams);
     }
 
     public NavigationLayout(Context context, AttributeSet attributeSet) {
@@ -345,7 +345,7 @@ public class NavigationLayout extends ViewGroup implements Iterable {
             this.f = true;
         }
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, clzc.b, i, 0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, cohk.b, i, 0);
             int i3 = obtainStyledAttributes.getInt(2, 0);
             if (i3 >= 0) {
                 this.d = c(i3);

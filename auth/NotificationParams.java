@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.uol;
+import defpackage.atzr;
+import defpackage.wkk;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class NotificationParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new uol();
+    public static final Parcelable.Creator CREATOR = new wkk();
     public final String a;
     public final String b;
     public final boolean c;
@@ -46,10 +46,10 @@ public class NotificationParams extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 }

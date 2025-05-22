@@ -14,19 +14,19 @@ import com.google.android.chimera.Service;
 import com.google.android.gms.R;
 import com.google.android.gms.cast_mirroring.CastSystemMirroringChimeraService;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.amap;
-import defpackage.amhy;
-import defpackage.anpc;
-import defpackage.anpe;
-import defpackage.anpf;
-import defpackage.anpo;
-import defpackage.asbo;
-import defpackage.asqh;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.flxs;
-import defpackage.iln;
-import defpackage.kaz;
+import defpackage.aoca;
+import defpackage.aoji;
+import defpackage.apqv;
+import defpackage.apqx;
+import defpackage.apqy;
+import defpackage.aprh;
+import defpackage.aued;
+import defpackage.auub;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.fopc;
+import defpackage.ind;
+import defpackage.ltj;
 import j$.time.Duration;
 import j$.time.Instant;
 import j$.util.Objects;
@@ -34,31 +34,31 @@ import j$.util.function.Consumer$CC;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.function.Consumer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CastSystemMirroringChimeraService extends Service {
-    public anpf a;
+    public apqy a;
     public PendingIntent b;
-    private amap c;
+    private aoca c;
     private BroadcastReceiver d;
     private BroadcastReceiver e;
-    private final eijr f = eijy.a(new eijr() { // from class: anpm
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(flyr.a.a().G());
+    private final ekww f = ekxd.a(new ekww() { // from class: aprf
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(foqb.a.lK().G());
         }
     });
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class DisconnectReceiver extends TracingBroadcastReceiver {
         public DisconnectReceiver() {
             super("cast");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             if ("com.google.android.gms.cast.media.ACTION_DISCONNECT".equals(intent.getAction())) {
-                amhy.a().execute(new Runnable() { // from class: anpn
+                aoji.a().execute(new Runnable() { // from class: aprg
                     @Override // java.lang.Runnable
                     public final void run() {
                         CastSystemMirroringChimeraService.this.a.j(null);
@@ -69,65 +69,65 @@ public class CastSystemMirroringChimeraService extends Service {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class ProjectionReceiver extends TracingBroadcastReceiver {
         public ProjectionReceiver() {
             super("Projection receiver");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
-            anpo anpoVar;
+        public final void jP(Context context, Intent intent) {
+            aprh aprhVar;
             if (Objects.equals(intent.getAction(), "com.google.android.gms.cast.media.PROJECT")) {
                 if (intent.getIntExtra("com.google.android.gms.media.USER_CONSENT_REQUEST_RESULT", 0) == -1) {
                     Intent intent2 = (Intent) intent.getParcelableExtra("extra_projection_intent");
                     if (intent2 != null) {
                         CastSystemMirroringChimeraService castSystemMirroringChimeraService = CastSystemMirroringChimeraService.this;
                         castSystemMirroringChimeraService.a.e(intent2);
-                        final anpf anpfVar = castSystemMirroringChimeraService.a;
-                        anpfVar.p = false;
-                        anpfVar.c.m("User consent requested successfully!");
-                        if (((Boolean) anpfVar.h.a()).booleanValue()) {
-                            anpfVar.j.ifPresent(new Consumer() { // from class: anof
+                        final apqy apqyVar = castSystemMirroringChimeraService.a;
+                        apqyVar.p = false;
+                        apqyVar.c.m("User consent requested successfully!");
+                        if (((Boolean) apqyVar.h.lK()).booleanValue()) {
+                            apqyVar.j.ifPresent(new Consumer() { // from class: appy
                                 @Override // java.util.function.Consumer
                                 /* renamed from: accept */
-                                public final void q(Object obj) {
-                                    final anpf anpfVar2 = anpf.this;
-                                    final amgd amgdVar = (amgd) obj;
-                                    anpfVar2.k.ifPresent(new Consumer() { // from class: anox
+                                public final void u(Object obj) {
+                                    final apqy apqyVar2 = apqy.this;
+                                    final aoho aohoVar = (aoho) obj;
+                                    apqyVar2.k.ifPresent(new Consumer() { // from class: apqq
                                         @Override // java.util.function.Consumer
                                         /* renamed from: accept */
-                                        public final void q(Object obj2) {
-                                            final amgk amgkVar = (amgk) obj2;
-                                            final amgd amgdVar2 = amgdVar;
-                                            final anpf anpfVar3 = anpf.this;
-                                            anpfVar3.l.ifPresent(new Consumer() { // from class: anow
+                                        public final void u(Object obj2) {
+                                            final aohv aohvVar = (aohv) obj2;
+                                            final aoho aohoVar2 = aohoVar;
+                                            final apqy apqyVar3 = apqy.this;
+                                            apqyVar3.l.ifPresent(new Consumer() { // from class: apqp
                                                 @Override // java.util.function.Consumer
                                                 /* renamed from: accept */
-                                                public final void q(Object obj3) {
-                                                    amgk amgkVar2 = amgkVar;
+                                                public final void u(Object obj3) {
+                                                    aohv aohvVar2 = aohvVar;
                                                     Instant instant = (Instant) obj3;
-                                                    int a = amgkVar2.a();
-                                                    fecj v = emtr.a.v();
-                                                    String valueOf = String.valueOf(amgkVar2.b());
+                                                    int a = aohvVar2.a();
+                                                    fgrc v = ephh.a.v();
+                                                    String valueOf = String.valueOf(aohvVar2.b());
                                                     if (!v.b.L()) {
                                                         v.U();
                                                     }
-                                                    anpf anpfVar4 = anpf.this;
-                                                    emtr emtrVar = (emtr) v.b;
+                                                    apqy apqyVar4 = apqy.this;
+                                                    ephh ephhVar = (ephh) v.b;
                                                     valueOf.getClass();
-                                                    emtrVar.b |= 2;
-                                                    emtrVar.g = valueOf;
-                                                    long millis = Duration.between(instant, ((enoq) anpfVar4.m.get()).a()).toMillis();
+                                                    ephhVar.b |= 2;
+                                                    ephhVar.g = valueOf;
+                                                    long millis = Duration.between(instant, ((eqcj) apqyVar4.m.get()).a()).toMillis();
                                                     if (!v.b.L()) {
                                                         v.U();
                                                     }
-                                                    amgd amgdVar3 = amgdVar2;
-                                                    emtr emtrVar2 = (emtr) v.b;
-                                                    emtrVar2.b |= 4;
-                                                    emtrVar2.h = millis;
-                                                    amgdVar3.z((emtr) v.Q(), a, anpfVar4.a());
-                                                    anpfVar4.c.p("Mirroring request consent succeeded; logging session info: %s and event sequence number: %d", amgkVar2.b(), Integer.valueOf(a));
+                                                    aoho aohoVar3 = aohoVar2;
+                                                    ephh ephhVar2 = (ephh) v.b;
+                                                    ephhVar2.b |= 4;
+                                                    ephhVar2.h = millis;
+                                                    aohoVar3.z((ephh) v.Q(), a, apqyVar4.a());
+                                                    apqyVar4.c.p("Mirroring request consent succeeded; logging session info: %s and event sequence number: %d", aohvVar2.b(), Integer.valueOf(a));
                                                 }
 
                                                 public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -147,20 +147,20 @@ public class CastSystemMirroringChimeraService extends Service {
                                 }
                             });
                         }
-                        anpe anpeVar = anpfVar.r;
-                        if (anpeVar != null) {
-                            anpfVar.c(anpeVar.a);
+                        apqx apqxVar = apqyVar.r;
+                        if (apqxVar != null) {
+                            apqyVar.c(apqxVar.a);
                             return;
                         }
-                        final anpc anpcVar = anpfVar.s;
-                        if (anpcVar != null) {
-                            anpfVar.f.execute(new Runnable() { // from class: anog
+                        final apqv apqvVar = apqyVar.s;
+                        if (apqvVar != null) {
+                            apqyVar.f.execute(new Runnable() { // from class: appz
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    anpf anpfVar2 = anpf.this;
-                                    anpc anpcVar2 = anpcVar;
-                                    anpfVar2.i(anpcVar2.c, anpcVar2.d, anpcVar2.a.f(), anpcVar2.b);
-                                    anpfVar2.s = null;
+                                    apqy apqyVar2 = apqy.this;
+                                    apqv apqvVar2 = apqvVar;
+                                    apqyVar2.i(apqvVar2.c, apqvVar2.d, apqvVar2.a.f(), apqvVar2.b);
+                                    apqyVar2.s = null;
                                 }
                             });
                             return;
@@ -169,49 +169,49 @@ public class CastSystemMirroringChimeraService extends Service {
                     }
                     return;
                 }
-                final anpf anpfVar2 = CastSystemMirroringChimeraService.this.a;
-                anpfVar2.c.g("Failed to get user consent to start mirroring.", new Object[0]);
-                if (((Boolean) anpfVar2.h.a()).booleanValue()) {
-                    anpfVar2.j.ifPresent(new Consumer() { // from class: anpa
+                final apqy apqyVar2 = CastSystemMirroringChimeraService.this.a;
+                apqyVar2.c.g("Failed to get user consent to start mirroring.", new Object[0]);
+                if (((Boolean) apqyVar2.h.lK()).booleanValue()) {
+                    apqyVar2.j.ifPresent(new Consumer() { // from class: apqt
                         @Override // java.util.function.Consumer
                         /* renamed from: accept */
-                        public final void q(Object obj) {
-                            final anpf anpfVar3 = anpf.this;
-                            final amgd amgdVar = (amgd) obj;
-                            anpfVar3.k.ifPresent(new Consumer() { // from class: anpb
+                        public final void u(Object obj) {
+                            final apqy apqyVar3 = apqy.this;
+                            final aoho aohoVar = (aoho) obj;
+                            apqyVar3.k.ifPresent(new Consumer() { // from class: apqu
                                 @Override // java.util.function.Consumer
                                 /* renamed from: accept */
-                                public final void q(Object obj2) {
-                                    final amgk amgkVar = (amgk) obj2;
-                                    final amgd amgdVar2 = amgdVar;
-                                    final anpf anpfVar4 = anpf.this;
-                                    anpfVar4.l.ifPresent(new Consumer() { // from class: anod
+                                public final void u(Object obj2) {
+                                    final aohv aohvVar = (aohv) obj2;
+                                    final aoho aohoVar2 = aohoVar;
+                                    final apqy apqyVar4 = apqy.this;
+                                    apqyVar4.l.ifPresent(new Consumer() { // from class: appw
                                         @Override // java.util.function.Consumer
                                         /* renamed from: accept */
-                                        public final void q(Object obj3) {
-                                            amgk amgkVar2 = amgkVar;
+                                        public final void u(Object obj3) {
+                                            aohv aohvVar2 = aohvVar;
                                             Instant instant = (Instant) obj3;
-                                            int a = amgkVar2.a();
-                                            fecj v = emtr.a.v();
-                                            String valueOf = String.valueOf(amgkVar2.b());
+                                            int a = aohvVar2.a();
+                                            fgrc v = ephh.a.v();
+                                            String valueOf = String.valueOf(aohvVar2.b());
                                             if (!v.b.L()) {
                                                 v.U();
                                             }
-                                            anpf anpfVar5 = anpf.this;
-                                            emtr emtrVar = (emtr) v.b;
+                                            apqy apqyVar5 = apqy.this;
+                                            ephh ephhVar = (ephh) v.b;
                                             valueOf.getClass();
-                                            emtrVar.b |= 2;
-                                            emtrVar.g = valueOf;
-                                            long millis = Duration.between(instant, ((enoq) anpfVar5.m.get()).a()).toMillis();
+                                            ephhVar.b |= 2;
+                                            ephhVar.g = valueOf;
+                                            long millis = Duration.between(instant, ((eqcj) apqyVar5.m.get()).a()).toMillis();
                                             if (!v.b.L()) {
                                                 v.U();
                                             }
-                                            amgd amgdVar3 = amgdVar2;
-                                            emtr emtrVar2 = (emtr) v.b;
-                                            emtrVar2.b |= 4;
-                                            emtrVar2.h = millis;
-                                            amgdVar3.y((emtr) v.Q(), a, anpfVar5.a());
-                                            anpfVar5.c.p("Mirroring request consent failed; logging session info: %s and event sequence number: %d", amgkVar2.b(), Integer.valueOf(a));
+                                            aoho aohoVar3 = aohoVar2;
+                                            ephh ephhVar2 = (ephh) v.b;
+                                            ephhVar2.b |= 4;
+                                            ephhVar2.h = millis;
+                                            aohoVar3.y((ephh) v.Q(), a, apqyVar5.a());
+                                            apqyVar5.c.p("Mirroring request consent failed; logging session info: %s and event sequence number: %d", aohvVar2.b(), Integer.valueOf(a));
                                         }
 
                                         public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -231,38 +231,38 @@ public class CastSystemMirroringChimeraService extends Service {
                         }
                     });
                 }
-                anpfVar2.p = false;
-                anpe anpeVar2 = anpfVar2.r;
-                if (anpeVar2 != null) {
-                    int discoveryMode = anpfVar2.getDiscoveryMode();
-                    RemoteDisplay remoteDisplay = anpeVar2.a;
+                apqyVar2.p = false;
+                apqx apqxVar2 = apqyVar2.r;
+                if (apqxVar2 != null) {
+                    int discoveryMode = apqyVar2.getDiscoveryMode();
+                    RemoteDisplay remoteDisplay = apqxVar2.a;
                     if (discoveryMode == 0) {
-                        anpfVar2.removeDisplay(remoteDisplay);
+                        apqyVar2.removeDisplay(remoteDisplay);
                     } else {
-                        RemoteDisplay findRemoteDisplay = anpfVar2.findRemoteDisplay(remoteDisplay.getId());
+                        RemoteDisplay findRemoteDisplay = apqyVar2.findRemoteDisplay(remoteDisplay.getId());
                         if (findRemoteDisplay != null) {
                             findRemoteDisplay.setStatus(2);
-                            anpfVar2.updateDisplay(findRemoteDisplay);
+                            apqyVar2.updateDisplay(findRemoteDisplay);
                         }
                     }
-                    anpfVar2.r = null;
+                    apqyVar2.r = null;
                 } else {
-                    anpc anpcVar2 = anpfVar2.s;
-                    if (anpcVar2 != null && (anpoVar = anpcVar2.c) != null) {
+                    apqv apqvVar2 = apqyVar2.s;
+                    if (apqvVar2 != null && (aprhVar = apqvVar2.c) != null) {
                         try {
-                            anpoVar.c(2209);
+                            aprhVar.c(2209);
                         } catch (RemoteException unused) {
                         }
                     }
                 }
-                anpfVar2.s = null;
-                anpfVar2.f();
+                apqyVar2.s = null;
+                apqyVar2.f();
             }
         }
     }
 
     public static Intent a(Context context) {
-        if (flxs.c()) {
+        if (fopc.c()) {
             Intent intent = new Intent("com.android.media.remotedisplay.RemoteDisplayProvider");
             intent.setPackage("com.google.android.gms");
             return intent;
@@ -286,13 +286,13 @@ public class CastSystemMirroringChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        asbo f;
+        aued f;
         super.onCreate();
-        this.c = amap.a(getApplicationContext(), "CastSystemMirroringSrv");
+        this.c = aoca.a(getApplicationContext(), "CastSystemMirroringSrv");
         Context applicationContext = getApplicationContext();
-        ScheduledExecutorService a = amhy.a();
-        amap amapVar = this.c;
-        anpf b = anpf.b(applicationContext, a, amapVar.g, amapVar.m, kaz.b(this), this.c.e);
+        ScheduledExecutorService a = aoji.a();
+        aoca aocaVar = this.c;
+        apqy b = apqy.b(applicationContext, a, aocaVar.g, aocaVar.m, ltj.b(this), this.c.e);
         this.a = b;
         b.g(this);
         Intent intent = new Intent("com.google.android.gms.cast.media.ACTION_DISCONNECT");
@@ -302,10 +302,10 @@ public class CastSystemMirroringChimeraService extends Service {
         this.e = new ProjectionReceiver();
         BroadcastReceiver broadcastReceiver = this.d;
         IntentFilter intentFilter = new IntentFilter("com.google.android.gms.cast.media.ACTION_DISCONNECT");
-        eijr eijrVar = this.f;
-        iln.b(this, broadcastReceiver, intentFilter, true != ((Boolean) eijrVar.a()).booleanValue() ? 2 : 4);
-        iln.b(this, this.e, new IntentFilter("com.google.android.gms.cast.media.PROJECT"), true != ((Boolean) eijrVar.a()).booleanValue() ? 2 : 4);
-        if (asqh.c() && (f = asbo.f(getApplicationContext())) != null) {
+        ekww ekwwVar = this.f;
+        ind.b(this, broadcastReceiver, intentFilter, true != ((Boolean) ekwwVar.lK()).booleanValue() ? 2 : 4);
+        ind.b(this, this.e, new IntentFilter("com.google.android.gms.cast.media.PROJECT"), true != ((Boolean) ekwwVar.lK()).booleanValue() ? 2 : 4);
+        if (auub.c() && (f = aued.f(getApplicationContext())) != null) {
             NotificationChannel notificationChannel = new NotificationChannel("cast_system_mirroring_service", getString(R.string.cast_display_notification_channel_name), 2);
             notificationChannel.setShowBadge(false);
             f.p(notificationChannel);
@@ -316,13 +316,13 @@ public class CastSystemMirroringChimeraService extends Service {
     public final void onDestroy() {
         unregisterReceiver(this.d);
         unregisterReceiver(this.e);
-        anpf anpfVar = this.a;
-        if (anpfVar != null) {
-            anpfVar.g(null);
+        apqy apqyVar = this.a;
+        if (apqyVar != null) {
+            apqyVar.g(null);
             this.a.e(null);
         }
         if (this.c != null) {
-            amap.b("CastSystemMirroringSrv");
+            aoca.b("CastSystemMirroringSrv");
         }
         super.onDestroy();
     }

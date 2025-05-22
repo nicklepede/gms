@@ -1,25 +1,25 @@
 package com.google.android.gms.ocr.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.csku;
-import defpackage.cslk;
-import defpackage.ejck;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.cutz;
+import defpackage.cuup;
+import defpackage.elpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class InternalOcrModelChimeraService extends bxgd {
+public class InternalOcrModelChimeraService extends bzot {
     public InternalOcrModelChimeraService() {
-        super(281, "com.google.android.gms.ocr.service.internal.START", ejck.a, 0, 9);
+        super(281, "com.google.android.gms.ocr.service.internal.START", elpp.a, 0, 9);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new cslk(l(), csku.a(0), getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new cuup(l(), cutz.a(0), getServiceRequest.f, getServiceRequest.p));
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
     }
 }

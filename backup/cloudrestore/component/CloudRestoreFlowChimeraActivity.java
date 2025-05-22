@@ -15,64 +15,64 @@ import com.google.android.cast.JGCastService;
 import com.google.android.gms.R;
 import com.google.android.gms.backup.cloudrestore.component.CloudRestoreFlowChimeraActivity;
 import com.google.android.gms.backup.cloudrestore.migrate.service.ContactsBackupInfo;
-import defpackage.ahiw;
-import defpackage.ahmo;
-import defpackage.ahna;
-import defpackage.ahnb;
-import defpackage.ahnc;
-import defpackage.ahnd;
-import defpackage.ahne;
-import defpackage.ahnf;
-import defpackage.ahng;
-import defpackage.ahnh;
-import defpackage.ahni;
-import defpackage.ahnj;
-import defpackage.ahnn;
-import defpackage.ahnp;
-import defpackage.ahns;
-import defpackage.ahnw;
-import defpackage.ahny;
-import defpackage.ahnz;
-import defpackage.ahoe;
-import defpackage.ahoh;
-import defpackage.ahoi;
-import defpackage.ahoj;
-import defpackage.ahoo;
-import defpackage.ahou;
-import defpackage.ahov;
-import defpackage.ahox;
-import defpackage.ahoy;
-import defpackage.ahpi;
-import defpackage.ahpk;
-import defpackage.ahpm;
-import defpackage.ahpo;
-import defpackage.ahwd;
-import defpackage.ahwj;
-import defpackage.aief;
-import defpackage.aies;
-import defpackage.arni;
-import defpackage.arwm;
-import defpackage.arxo;
-import defpackage.asiu;
-import defpackage.asmf;
+import defpackage.ajjm;
+import defpackage.ajne;
+import defpackage.ajnq;
+import defpackage.ajnr;
+import defpackage.ajns;
+import defpackage.ajnt;
+import defpackage.ajnu;
+import defpackage.ajnv;
+import defpackage.ajnw;
+import defpackage.ajnx;
+import defpackage.ajny;
+import defpackage.ajnz;
+import defpackage.ajod;
+import defpackage.ajof;
+import defpackage.ajoi;
+import defpackage.ajom;
+import defpackage.ajoo;
+import defpackage.ajop;
+import defpackage.ajou;
+import defpackage.ajox;
+import defpackage.ajoy;
+import defpackage.ajoz;
+import defpackage.ajpe;
+import defpackage.ajpk;
+import defpackage.ajpl;
+import defpackage.ajpn;
+import defpackage.ajpo;
+import defpackage.ajpy;
+import defpackage.ajqa;
+import defpackage.ajqc;
+import defpackage.ajqe;
+import defpackage.ajwt;
+import defpackage.ajwz;
+import defpackage.akev;
+import defpackage.akfi;
+import defpackage.atpx;
+import defpackage.atzb;
+import defpackage.auad;
+import defpackage.aumo;
+import defpackage.aupz;
 import defpackage.bp;
-import defpackage.bqna;
-import defpackage.byhr;
-import defpackage.dfaq;
-import defpackage.dnle;
-import defpackage.eiig;
-import defpackage.ekhk;
-import defpackage.ekhl;
-import defpackage.ekjg;
-import defpackage.ekjl;
-import defpackage.ekjp;
-import defpackage.ekjq;
-import defpackage.ensv;
+import defpackage.bsup;
+import defpackage.caqj;
+import defpackage.dhlw;
+import defpackage.dpvn;
+import defpackage.ekvl;
+import defpackage.emuw;
+import defpackage.emux;
+import defpackage.emws;
+import defpackage.emwx;
+import defpackage.emxb;
+import defpackage.emxc;
+import defpackage.eqgo;
 import defpackage.ew;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.flkv;
-import defpackage.iln;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.focf;
+import defpackage.ind;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -82,10 +82,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny, ahox, ahoh, ahne {
-    public static final ahwd n = new ahwd("CloudRestoreFlow");
+public class CloudRestoreFlowChimeraActivity extends ajne implements ajpk, ajoo, ajpn, ajox, ajnu {
+    public static final ajwt n = new ajwt("CloudRestoreFlow");
     private ContactsBackupInfo A;
     private String B;
     private long C;
@@ -99,19 +99,19 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
     private long K;
     private AsyncTask L;
     private AsyncTask M;
-    public ahnn o;
+    public ajod o;
     public List p;
     public Map q;
-    public ahpo r;
-    public arni s;
+    public ajqe r;
+    public atpx s;
     public long t;
-    public ahns u;
-    private ahnj v;
+    public ajoi u;
+    private ajnz v;
     private boolean w;
     private boolean x;
     private Map z;
-    private final ahnd y = new ahnd(this);
-    private final ensv N = new asmf(1, 9);
+    private final ajnt y = new ajnt(this);
+    private final eqgo N = new aupz(1, 9);
 
     private final int F() {
         Map map = this.z;
@@ -133,19 +133,19 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
     }
 
     private final void H(Map map) {
-        ahna ahnaVar = new ahna(this, this, map);
-        this.L = ahnaVar;
-        ahnaVar.executeOnExecutor(this.N, new Void[0]);
+        ajnq ajnqVar = new ajnq(this, this, map);
+        this.L = ajnqVar;
+        ajnqVar.executeOnExecutor(this.N, new Void[0]);
     }
 
     private final void I(long j) {
-        ahnb ahnbVar = new ahnb(this);
-        this.J = ahnbVar;
+        ajnr ajnrVar = new ajnr(this);
+        this.J = ajnrVar;
         if (j <= 0) {
-            this.I.post(ahnbVar);
+            this.I.post(ajnrVar);
             this.K = SystemClock.elapsedRealtime();
         } else {
-            this.I.postDelayed(ahnbVar, j);
+            this.I.postDelayed(ajnrVar, j);
             this.K = SystemClock.elapsedRealtime() + j;
         }
     }
@@ -161,67 +161,67 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         return false;
     }
 
-    @Override // defpackage.ahou
+    @Override // defpackage.ajpk
     public final void A() {
-        new ahoi().show(getSupportFragmentManager(), "DIALOG");
+        new ajoy().show(getSupportFragmentManager(), "DIALOG");
     }
 
-    @Override // defpackage.ahou
+    @Override // defpackage.ajpk
     public final void B(final Map map) {
-        eiig.q(this.k != null, "No device was selected when starting restore.");
+        ekvl.r(this.k != null, "No device was selected when starting restore.");
         boolean K = K(map, 3);
         boolean K2 = K(map, 1);
         int F = F();
-        int b = K2 ? aies.b(this.z) : 0;
-        fecj v = ekjq.a.v();
+        int b = K2 ? akfi.b(this.z) : 0;
+        fgrc v = emxc.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ekjq ekjqVar = (ekjq) fecpVar;
-        ekjqVar.b |= 1;
-        ekjqVar.c = F;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        emxc emxcVar = (emxc) fgriVar;
+        emxcVar.b |= 1;
+        emxcVar.c = F;
+        if (!fgriVar.L()) {
             v.U();
         }
-        ekjq ekjqVar2 = (ekjq) v.b;
-        ekjqVar2.b |= 2;
-        ekjqVar2.d = b;
+        emxc emxcVar2 = (emxc) v.b;
+        emxcVar2.b |= 2;
+        emxcVar2.d = b;
         if (map.containsKey(3)) {
             boolean booleanValue = ((Boolean) map.get(3)).booleanValue();
             if (!v.b.L()) {
                 v.U();
             }
-            ekjq ekjqVar3 = (ekjq) v.b;
-            ekjqVar3.b |= 4;
-            ekjqVar3.e = booleanValue;
+            emxc emxcVar3 = (emxc) v.b;
+            emxcVar3.b |= 4;
+            emxcVar3.e = booleanValue;
         }
         if (map.containsKey(2)) {
             boolean booleanValue2 = ((Boolean) map.get(2)).booleanValue();
             if (!v.b.L()) {
                 v.U();
             }
-            ekjq ekjqVar4 = (ekjq) v.b;
-            ekjqVar4.b |= 8;
-            ekjqVar4.f = booleanValue2;
+            emxc emxcVar4 = (emxc) v.b;
+            emxcVar4.b |= 8;
+            emxcVar4.f = booleanValue2;
         }
         if (map.containsKey(4)) {
             boolean booleanValue3 = ((Boolean) map.get(4)).booleanValue();
             if (!v.b.L()) {
                 v.U();
             }
-            ekjq ekjqVar5 = (ekjq) v.b;
-            ekjqVar5.b |= 16;
-            ekjqVar5.g = booleanValue3;
+            emxc emxcVar5 = (emxc) v.b;
+            emxcVar5.b |= 16;
+            emxcVar5.g = booleanValue3;
         }
         if (map.containsKey(5)) {
             boolean booleanValue4 = ((Boolean) map.get(5)).booleanValue();
             if (!v.b.L()) {
                 v.U();
             }
-            ekjq ekjqVar6 = (ekjq) v.b;
-            ekjqVar6.b |= 32;
-            ekjqVar6.h = booleanValue4;
+            emxc emxcVar6 = (emxc) v.b;
+            emxcVar6.b |= 32;
+            emxcVar6.h = booleanValue4;
         }
         ContactsBackupInfo contactsBackupInfo = this.A;
         if (contactsBackupInfo != null) {
@@ -229,22 +229,22 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
             if (!v.b.L()) {
                 v.U();
             }
-            ekjq ekjqVar7 = (ekjq) v.b;
-            ekjqVar7.b |= 64;
-            ekjqVar7.i = i;
+            emxc emxcVar7 = (emxc) v.b;
+            emxcVar7.b |= 64;
+            emxcVar7.i = i;
         }
-        ahpo ahpoVar = this.r;
-        ekjq ekjqVar8 = (ekjq) v.Q();
-        fecj c = ahwj.c();
+        ajqe ajqeVar = this.r;
+        emxc emxcVar8 = (emxc) v.Q();
+        fgrc c = ajwz.c();
         if (!c.b.L()) {
             c.U();
         }
-        ekhl ekhlVar = (ekhl) c.b;
-        ekhl ekhlVar2 = ekhl.a;
-        ekjqVar8.getClass();
-        ekhlVar.x = ekjqVar8;
-        ekhlVar.b |= 4194304;
-        ahpoVar.d(c, ekhk.CLOUD_RESTORE_START);
+        emux emuxVar = (emux) c.b;
+        emux emuxVar2 = emux.a;
+        emxcVar8.getClass();
+        emuxVar.x = emxcVar8;
+        emuxVar.b |= 4194304;
+        ajqeVar.d(c, emuw.CLOUD_RESTORE_START);
         this.E = map.size();
         if (!map.containsKey(1)) {
             this.E++;
@@ -255,22 +255,22 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         this.t = System.currentTimeMillis();
         HashSet hashSet = new HashSet();
         if (K(map, 3)) {
-            if (iln.a(this, "android.permission.READ_CONTACTS") != 0) {
+            if (ind.a(this, "android.permission.READ_CONTACTS") != 0) {
                 hashSet.add("android.permission.READ_CONTACTS");
             }
-            if (iln.a(this, "android.permission.WRITE_CONTACTS") != 0) {
+            if (ind.a(this, "android.permission.WRITE_CONTACTS") != 0) {
                 hashSet.add("android.permission.WRITE_CONTACTS");
             }
         }
         if (!hashSet.isEmpty()) {
             this.r.b(7);
-            iln.h(getContainerActivity(), (String[]) hashSet.toArray(new String[0]), 0);
+            ind.h(getContainerActivity(), (String[]) hashSet.toArray(new String[0]), 0);
             return;
         }
         final boolean containsKey = map.containsKey(2);
         final boolean containsKey2 = map.containsKey(4);
         final boolean containsKey3 = map.containsKey(5);
-        this.N.execute(new Runnable() { // from class: ahmu
+        this.N.execute(new Runnable() { // from class: ajnk
             @Override // java.lang.Runnable
             public final void run() {
                 final CloudRestoreFlowChimeraActivity cloudRestoreFlowChimeraActivity = CloudRestoreFlowChimeraActivity.this;
@@ -279,7 +279,7 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
                     SharedPreferences.Editor edit = cloudRestoreFlowChimeraActivity.s.edit();
                     edit.putBoolean("call_history", ((Boolean) map2.get(2)).booleanValue());
                     final boolean commit = edit.commit();
-                    cloudRestoreFlowChimeraActivity.runOnUiThread(new Runnable() { // from class: ahmx
+                    cloudRestoreFlowChimeraActivity.runOnUiThread(new Runnable() { // from class: ajnn
                         @Override // java.lang.Runnable
                         public final void run() {
                             CloudRestoreFlowChimeraActivity.this.t(2, commit);
@@ -290,7 +290,7 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
                     SharedPreferences.Editor edit2 = cloudRestoreFlowChimeraActivity.s.edit();
                     edit2.putBoolean("settings", ((Boolean) map2.get(4)).booleanValue());
                     final boolean commit2 = edit2.commit();
-                    cloudRestoreFlowChimeraActivity.runOnUiThread(new Runnable() { // from class: ahmy
+                    cloudRestoreFlowChimeraActivity.runOnUiThread(new Runnable() { // from class: ajno
                         @Override // java.lang.Runnable
                         public final void run() {
                             CloudRestoreFlowChimeraActivity.this.t(4, commit2);
@@ -301,7 +301,7 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
                     SharedPreferences.Editor edit3 = cloudRestoreFlowChimeraActivity.s.edit();
                     edit3.putBoolean("sms", ((Boolean) map2.get(5)).booleanValue());
                     final boolean commit3 = edit3.commit();
-                    cloudRestoreFlowChimeraActivity.runOnUiThread(new Runnable() { // from class: ahmz
+                    cloudRestoreFlowChimeraActivity.runOnUiThread(new Runnable() { // from class: ajnp
                         @Override // java.lang.Runnable
                         public final void run() {
                             CloudRestoreFlowChimeraActivity.this.t(5, commit3);
@@ -322,27 +322,27 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
             }
             String[] strArr3 = (String[]) hashSet2.toArray(new String[0]);
             if (this.w) {
-                ahnj ahnjVar = this.v;
+                ajnz ajnzVar = this.v;
                 Account account = this.j;
                 String str = this.B;
                 String str2 = this.k.e;
-                ahwd ahwdVar = ahnj.a;
-                ahwdVar.j("CloudRestoreContactsHelper.restoreContacts() was called.", new Object[0]);
+                ajwt ajwtVar = ajnz.a;
+                ajwtVar.j("CloudRestoreContactsHelper.restoreContacts() was called.", new Object[0]);
                 if (strArr3.length == 0) {
-                    ahwdVar.j("No device/SIM contacts to restore", new Object[0]);
-                    ahnjVar.b(true);
+                    ajwtVar.j("No device/SIM contacts to restore", new Object[0]);
+                    ajnzVar.b(true);
                 } else {
-                    ahnjVar.d.f(3);
-                    dfaq d = ahnjVar.b.d(account.name, str, str2, strArr3);
-                    d.z(new ahni(ahnjVar, 0));
-                    d.y(new ahnh(ahnjVar, account.name, str, str2, strArr3, 0));
+                    ajnzVar.d.f(3);
+                    dhlw d = ajnzVar.b.d(account.name, str, str2, strArr3);
+                    d.z(new ajny(ajnzVar, 0));
+                    d.y(new ajnx(ajnzVar, account.name, str, str2, strArr3, 0));
                 }
             } else {
                 try {
-                    this.o.b(this.j, this.B, this.k.e, strArr3, new ahnp(this));
+                    this.o.b(this.j, this.B, this.k.e, strArr3, new ajof(this));
                 } catch (RemoteException e) {
                     n.g("Failed to restore contacts.", e, new Object[0]);
-                    this.r.c(ekjl.CONTACTS, 2);
+                    this.r.c(emwx.CONTACTS, 2);
                     t(3, false);
                 }
             }
@@ -357,21 +357,21 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         } else {
             H(Collections.EMPTY_MAP);
         }
-        a(new ahoy(), true, "FRAGMENT");
+        a(new ajpo(), true, "FRAGMENT");
     }
 
-    @Override // defpackage.ahou
+    @Override // defpackage.ajpk
     public final void C() {
         Iterator it = this.z.keySet().iterator();
         while (it.hasNext()) {
-            this.z.put((ahpk) it.next(), true);
+            this.z.put((ajqa) it.next(), true);
         }
     }
 
-    @Override // defpackage.ahou
+    @Override // defpackage.ajpk
     public final void D(Set set) {
-        for (ahpk ahpkVar : this.z.keySet()) {
-            this.z.put(ahpkVar, Boolean.valueOf(set.contains(ahpkVar)));
+        for (ajqa ajqaVar : this.z.keySet()) {
+            this.z.put(ajqaVar, Boolean.valueOf(set.contains(ajqaVar)));
         }
     }
 
@@ -383,18 +383,18 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         this.x = false;
         int F = F();
         String str = this.j.name;
-        ahov ahovVar = new ahov();
+        ajpl ajplVar = new ajpl();
         Bundle bundle = new Bundle();
         bundle.putString("arg_account_name", str);
         bundle.putInt("arg_num_available_apps", F);
-        ahovVar.setArguments(bundle);
-        a(ahovVar, true, "FRAGMENT");
+        ajplVar.setArguments(bundle);
+        a(ajplVar, true, "FRAGMENT");
     }
 
-    @Override // defpackage.ahmo
+    @Override // defpackage.ajne
     public final Account b() {
         String stringExtra = getIntent().getStringExtra("account");
-        Account[] p = bqna.b(this).p("com.google");
+        Account[] p = bsup.b(this).p("com.google");
         if (stringExtra != null) {
             for (Account account : p) {
                 if (stringExtra.equals(account.name)) {
@@ -408,32 +408,32 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         return null;
     }
 
-    @Override // defpackage.ahmo, defpackage.ahpd
-    public final void f(ahiw ahiwVar) {
+    @Override // defpackage.ajne, defpackage.ajpt
+    public final void f(ajjm ajjmVar) {
         String str;
-        this.k = ahiwVar;
-        if (ahiwVar == null) {
+        this.k = ajjmVar;
+        if (ajjmVar == null) {
             return;
         }
         this.C = this.k.c;
         G();
         String str2 = this.j.name;
         String l = Long.toString(this.k.c);
-        arxo arxoVar = aief.a;
-        String b = dnle.b(l);
+        auad auadVar = akev.a;
+        String b = dpvn.b(l);
         if (b == null) {
             str = null;
         } else {
-            synchronized (aief.b) {
-                String str3 = (String) aief.c.a(str2, l);
+            synchronized (akev.b) {
+                String str3 = (String) akev.c.a(str2, l);
                 if (str3 == null) {
                     try {
-                        str3 = dnle.a(str2, b);
+                        str3 = dpvn.a(str2, b);
                     } catch (Exception e) {
-                        aief.a.g(e.getMessage(), e, new Object[0]);
+                        akev.a.g(e.getMessage(), e, new Object[0]);
                     }
                     if (str3 != null) {
-                        aief.c.b(str2, l, str3);
+                        akev.c.b(str2, l, str3);
                     }
                 }
                 str = str3;
@@ -444,61 +444,61 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         if (contactsBackupInfo != null && J(contactsBackupInfo, this.j.name, this.B)) {
             v(this.A);
         } else if (this.w) {
-            ahnj ahnjVar = this.v;
+            ajnz ajnzVar = this.v;
             String str4 = this.j.name;
             String str5 = this.B;
-            ahnj.a.j("CloudRestoreContactsHelper.fetchContactsBackupInfo() was called.", new Object[0]);
-            ahnjVar.d.f(2);
-            dfaq e2 = ahnjVar.b.e(str4);
-            Set set = ahnjVar.c;
-            e2.z(new ahng(ahnjVar, str4, str5, set, 0));
-            e2.y(new ahnf(ahnjVar, str4, str5, set, 0));
+            ajnz.a.j("CloudRestoreContactsHelper.fetchContactsBackupInfo() was called.", new Object[0]);
+            ajnzVar.d.f(2);
+            dhlw e2 = ajnzVar.b.e(str4);
+            Set set = ajnzVar.c;
+            e2.z(new ajnw(ajnzVar, str4, str5, set, 0));
+            e2.y(new ajnv(ajnzVar, str4, str5, set, 0));
         } else if (this.o == null) {
             n.m("Cannot access CloudRestoreChimeraService.", new Object[0]);
             v(new ContactsBackupInfo());
         } else {
             try {
-                this.u = new ahns(this);
+                this.u = new ajoi(this);
                 this.o.a(this.j.name, this.B, this.u);
             } catch (RemoteException e3) {
                 n.g("Fetching contacts backup info failed.", e3, new Object[0]);
                 this.A = new ContactsBackupInfo();
             }
         }
-        ahnc ahncVar = new ahnc(this, ahiwVar);
-        this.M = ahncVar;
-        ahncVar.executeOnExecutor(this.N, new Void[0]);
-        this.k = ahiwVar;
-        long j = ahiwVar.c;
+        ajns ajnsVar = new ajns(this, ajjmVar);
+        this.M = ajnsVar;
+        ajnsVar.executeOnExecutor(this.N, new Void[0]);
+        this.k = ajjmVar;
+        long j = ajjmVar.c;
         ew supportFragmentManager = getSupportFragmentManager();
-        int i = ahoe.al;
-        this.l = (ahnw) ((ahoe) supportFragmentManager.h("APP_FETCHER_SIDECAR"));
-        ahnw ahnwVar = this.l;
-        if (ahnwVar == null || !ahnwVar.a.equals(Collections.singletonList(this.j)) || j != ahnwVar.b) {
+        int i = ajou.al;
+        this.l = (ajom) ((ajou) supportFragmentManager.h("APP_FETCHER_SIDECAR"));
+        ajom ajomVar = this.l;
+        if (ajomVar == null || !ajomVar.a.equals(Collections.singletonList(this.j)) || j != ajomVar.b) {
             Account account = this.j;
-            int i2 = ahnw.c;
+            int i2 = ajom.c;
             Account[] accountArr = {account};
-            ahnw ahnwVar2 = new ahnw();
+            ajom ajomVar2 = new ajom();
             Bundle bundle = new Bundle();
             bundle.putLong("android_id", j);
             bundle.putParcelableArray("accounts", accountArr);
-            ahnwVar2.setArguments(bundle);
-            this.l = ahnwVar2;
+            ajomVar2.setArguments(bundle);
+            this.l = ajomVar2;
             bp bpVar = new bp(getSupportFragmentManager());
             bpVar.v(this.l, "APP_FETCHER_SIDECAR");
             bpVar.a();
         }
-        ((ahmo) this).m = a(new ahpi(), true, "FRAGMENT");
-        ahnw ahnwVar3 = this.l;
-        ahnwVar3.ag = this;
-        List list = ahnwVar3.ai;
+        ((ajne) this).m = a(new ajpy(), true, "FRAGMENT");
+        ajom ajomVar3 = this.l;
+        ajomVar3.ag = this;
+        List list = ajomVar3.ai;
         if (list != null) {
-            List list2 = ahnwVar3.aj;
+            List list2 = ajomVar3.aj;
             l(list);
         }
     }
 
-    @Override // defpackage.ahmo, defpackage.ahod
+    @Override // defpackage.ajne, defpackage.ajot
     public final void l(List list) {
         n.j("Apps have been fetched by the sidecar: %d apps", Integer.valueOf(list == null ? 0 : list.size()));
         this.q.put(2, true);
@@ -506,78 +506,78 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         if (list != null) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
-                this.z.put((ahpk) it.next(), true);
+                this.z.put((ajqa) it.next(), true);
             }
         }
         E();
     }
 
-    @Override // defpackage.ahou
+    @Override // defpackage.ajpk
     public final List m() {
         String quantityString;
-        ahoj ahojVar;
+        ajoz ajozVar;
         ArrayList arrayList = new ArrayList();
         Map map = this.z;
         if (map != null && !map.isEmpty()) {
             Map map2 = this.z;
-            ahwd ahwdVar = ahoo.a;
+            ajwt ajwtVar = ajpe.a;
             if (map2.isEmpty()) {
                 Resources resources = getResources();
-                ahojVar = new ahoj(1);
-                ahojVar.b = resources.getString(R.string.d2d_app_picker_title);
-                ahojVar.e = resources.getString(R.string.common_no_apps_found);
+                ajozVar = new ajoz(1);
+                ajozVar.b = resources.getString(R.string.d2d_app_picker_title);
+                ajozVar.e = resources.getString(R.string.common_no_apps_found);
             } else {
                 Resources resources2 = getResources();
-                ahoj ahojVar2 = new ahoj(1);
-                ahojVar2.b = resources2.getString(R.string.d2d_app_picker_title);
-                ahojVar2.d();
-                ahojVar2.c();
-                int b = aies.b(map2);
-                ahojVar2.f = b > 0;
+                ajoz ajozVar2 = new ajoz(1);
+                ajozVar2.b = resources2.getString(R.string.d2d_app_picker_title);
+                ajozVar2.d();
+                ajozVar2.c();
+                int b = akfi.b(map2);
+                ajozVar2.f = b > 0;
                 long j = 0;
                 if (b > 0) {
-                    ahwd ahwdVar2 = ahpm.a;
+                    ajwt ajwtVar2 = ajqc.a;
                     if (map2 != null) {
                         for (Map.Entry entry : map2.entrySet()) {
                             if (((Boolean) entry.getValue()).booleanValue()) {
-                                j += ((ahpk) entry.getKey()).f;
+                                j += ((ajqa) entry.getKey()).f;
                             }
                         }
                     }
-                    ahojVar2.i = j;
+                    ajozVar2.i = j;
                 } else {
                     Set keySet = map2.keySet();
-                    ahwd ahwdVar3 = ahpm.a;
+                    ajwt ajwtVar3 = ajqc.a;
                     if (keySet != null) {
                         Iterator it = keySet.iterator();
                         while (it.hasNext()) {
-                            j += ((ahpk) it.next()).f;
+                            j += ((ajqa) it.next()).f;
                         }
                     }
-                    ahojVar2.i = j;
+                    ajozVar2.i = j;
                 }
-                ahojVar2.c = (b == 0 || map2.size() == b) ? resources2.getQuantityString(R.plurals.app_picker_all_apps, map2.size(), Integer.valueOf(map2.size())) : resources2.getQuantityString(R.plurals.app_picker_some_apps, b, Integer.valueOf(b));
-                ahojVar2.d = getString(R.string.app_picker_no_apps);
-                ahojVar = ahojVar2;
+                ajozVar2.c = (b == 0 || map2.size() == b) ? resources2.getQuantityString(R.plurals.app_picker_all_apps, map2.size(), Integer.valueOf(map2.size())) : resources2.getQuantityString(R.plurals.app_picker_some_apps, b, Integer.valueOf(b));
+                ajozVar2.d = getString(R.string.app_picker_no_apps);
+                ajozVar = ajozVar2;
             }
-            arrayList.add(ahojVar);
+            arrayList.add(ajozVar);
         }
         ContactsBackupInfo contactsBackupInfo = this.A;
         if (contactsBackupInfo != null) {
             int i = contactsBackupInfo.d;
             int i2 = contactsBackupInfo.e;
             if (i + i2 > 0) {
-                ahwd ahwdVar4 = ahoo.a;
+                ajwt ajwtVar4 = ajpe.a;
                 if (i < 0) {
-                    ahoo.a.m("The given number of device contacts is negative, set it to 0", new Object[0]);
+                    ajpe.a.m("The given number of device contacts is negative, set it to 0", new Object[0]);
                     i = 0;
                 }
                 if (i2 < 0) {
-                    ahoo.a.m("The given number of SIM contacts is negative, set it to 0", new Object[0]);
+                    ajpe.a.m("The given number of SIM contacts is negative, set it to 0", new Object[0]);
                     i2 = 0;
                 }
-                ahoj ahojVar3 = new ahoj(3);
-                ahojVar3.b = getString(R.string.drive_backup_content_contacts_title);
+                ajoz ajozVar3 = new ajoz(3);
+                ajozVar3.b = getString(R.string.drive_backup_content_contacts_title);
                 Resources resources3 = getResources();
                 if (i2 > 0 && i == 0) {
                     quantityString = resources3.getQuantityString(R.plurals.contacts_number_sim, i2, Integer.valueOf(i2));
@@ -588,16 +588,16 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
                     quantityString = resources3.getQuantityString(R.plurals.contacts_number_device, i, Integer.valueOf(i));
                 }
                 if (i == 0 && i2 == 0) {
-                    ahojVar3.e = quantityString;
+                    ajozVar3.e = quantityString;
                 } else {
-                    ahojVar3.c = quantityString;
-                    ahojVar3.d = getString(R.string.google_contacts_will_sync);
-                    ahojVar3.f = true;
-                    ahojVar3.c();
-                    ahojVar3.d();
+                    ajozVar3.c = quantityString;
+                    ajozVar3.d = getString(R.string.google_contacts_will_sync);
+                    ajozVar3.f = true;
+                    ajozVar3.c();
+                    ajozVar3.d();
                 }
-                ahojVar3.i = (i + i2) * flkv.a.a().c();
-                arrayList.add(ahojVar3);
+                ajozVar3.i = (i + i2) * focf.a.lK().c();
+                arrayList.add(ajozVar3);
             }
         }
         List list = this.p;
@@ -607,26 +607,26 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         return arrayList;
     }
 
-    @Override // defpackage.ahou
+    @Override // defpackage.ajpk
     public final Set n() {
         HashSet hashSet = new HashSet();
         for (Map.Entry entry : this.z.entrySet()) {
             if (((Boolean) entry.getValue()).booleanValue()) {
-                hashSet.add((ahpk) entry.getKey());
+                hashSet.add((ajqa) entry.getKey());
             }
         }
         return hashSet;
     }
 
-    @Override // defpackage.ahou
+    @Override // defpackage.ajpk
     public final void o() {
         Iterator it = this.z.keySet().iterator();
         while (it.hasNext()) {
-            this.z.put((ahpk) it.next(), false);
+            this.z.put((ajqa) it.next(), false);
         }
     }
 
-    @Override // defpackage.ahmo, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ajne, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         if (this.D) {
             c();
@@ -638,20 +638,20 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         }
     }
 
-    @Override // defpackage.ahmo, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ajne, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         SharedPreferences preferences = getPreferences(0);
         this.D = preferences.getBoolean("restore_started", false);
         this.C = preferences.getLong("android_id", 0L);
-        this.r = new ahpo();
-        this.s = new arni(this, "cloud_restore", true);
+        this.r = new ajqe();
+        this.s = new atpx(this, "cloud_restore", true);
         if (this.D) {
             n.h("Immediately finishing because restore has already started.", new Object[0]);
             p(-1);
             return;
         }
-        this.N.execute(new Runnable() { // from class: ahmv
+        this.N.execute(new Runnable() { // from class: ajnl
             @Override // java.lang.Runnable
             public final void run() {
                 SharedPreferences.Editor edit = CloudRestoreFlowChimeraActivity.this.s.edit();
@@ -663,8 +663,8 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         Intent intent = new Intent();
         intent.setClassName(this, "com.google.android.gms.backup.component.RestoreSessionV0Service");
         intent.setAction("com.google.android.gms.backup.CLOUD_RESTORE_SERVICE_ACTION");
-        asiu.a().d(this, intent, this.y, 1);
-        this.I = new byhr(Looper.getMainLooper());
+        aumo.a().d(this, intent, this.y, 1);
+        this.I = new caqj(Looper.getMainLooper());
         if (bundle != null) {
             this.A = (ContactsBackupInfo) bundle.getParcelable("fetched_contacts_backup_info");
             long j = bundle.getLong("scheduled_finish_time_millis", -1L);
@@ -674,11 +674,11 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
             }
             this.t = bundle.getLong("restore_start_time_millis");
         }
-        this.v = new ahnj(getApplicationContext(), this);
-        this.w = flkv.a.a().j();
+        this.v = new ajnz(getApplicationContext(), this);
+        this.w = focf.a.lK().j();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         Runnable runnable;
         super.onDestroy();
@@ -695,7 +695,7 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         if (this.o != null) {
             this.o = null;
             try {
-                asiu.a().b(this, this.y);
+                aumo.a().b(this, this.y);
             } catch (IllegalArgumentException | IllegalStateException e) {
                 n.l(e);
             }
@@ -707,13 +707,13 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         handler.removeCallbacks(runnable);
     }
 
-    @Override // defpackage.ahmo, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ajne, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         getPreferences(0).edit().putBoolean("restore_started", this.D).putLong("android_id", this.C).apply();
     }
 
-    @Override // defpackage.ahmo, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ajne, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         ContactsBackupInfo contactsBackupInfo = this.A;
         if (contactsBackupInfo != null) {
@@ -736,7 +736,7 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
             return;
         }
         if (i == -1) {
-            eiig.q(this.C != 0, "No restore android id was set to pass to suw.");
+            ekvl.r(this.C != 0, "No restore android id was set to pass to suw.");
             Intent intent = new Intent();
             intent.putExtra("restoreToken", this.C);
             setResult(-1, intent);
@@ -746,123 +746,123 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         finish();
     }
 
-    @Override // defpackage.ahou
+    @Override // defpackage.ajpk
     public final void q() {
         this.x = true;
         String str = this.k.e;
         Map map = this.z;
-        ahnz ahnzVar = new ahnz();
-        ahnzVar.b = map;
+        ajop ajopVar = new ajop();
+        ajopVar.b = map;
         Bundle bundle = new Bundle();
         bundle.putCharSequence("device_name", str);
-        ahnzVar.setArguments(bundle);
-        a(ahnzVar, true, "APP_PICKER_FRAGMENT_V2");
+        ajopVar.setArguments(bundle);
+        a(ajopVar, true, "APP_PICKER_FRAGMENT_V2");
     }
 
-    @Override // defpackage.ahny
+    @Override // defpackage.ajoo
     public final void r(Map map) {
         this.z = map;
         onBackPressed();
     }
 
-    @Override // defpackage.ahny
+    @Override // defpackage.ajoo
     public final void s(Map map) {
         this.z = map;
     }
 
     public final void t(int i, boolean z) {
-        arwm.h("onAsyncRestoreJobCompleted must run on the main thread.");
-        ahwd ahwdVar = n;
+        atzb.h("onAsyncRestoreJobCompleted must run on the main thread.");
+        ajwt ajwtVar = n;
         Integer valueOf = Integer.valueOf(i);
-        ahwdVar.h("Async restore job for type %s is completed, it %s", valueOf, true != z ? "failed" : "succeeded");
+        ajwtVar.h("Async restore job for type %s is completed, it %s", valueOf, true != z ? "failed" : "succeeded");
         if (!z) {
             this.F++;
         }
         int i2 = this.G - 1;
         this.G = i2;
         if (i2 == 0) {
-            ahwdVar.h("Async restore job for type %s is the last job", valueOf);
+            ajwtVar.h("Async restore job for type %s is the last job", valueOf);
             int i3 = this.F;
             if (i3 == this.E) {
                 this.r.b(4);
             } else if (i3 > 0) {
                 this.r.b(3);
             } else {
-                ahpo ahpoVar = this.r;
+                ajqe ajqeVar = this.r;
                 long currentTimeMillis = System.currentTimeMillis() - this.t;
-                fecj c = ahwj.c();
-                fecj v = ekjg.a.v();
+                fgrc c = ajwz.c();
+                fgrc v = emws.a.v();
                 if (!v.b.L()) {
                     v.U();
                 }
-                fecp fecpVar = v.b;
-                ekjg ekjgVar = (ekjg) fecpVar;
-                ekjgVar.c = 1;
-                ekjgVar.b = 1 | ekjgVar.b;
-                if (!fecpVar.L()) {
+                fgri fgriVar = v.b;
+                emws emwsVar = (emws) fgriVar;
+                emwsVar.c = 1;
+                emwsVar.b = 1 | emwsVar.b;
+                if (!fgriVar.L()) {
                     v.U();
                 }
-                ekjg ekjgVar2 = (ekjg) v.b;
-                ekjgVar2.b = 2 | ekjgVar2.b;
-                ekjgVar2.d = currentTimeMillis;
+                emws emwsVar2 = (emws) v.b;
+                emwsVar2.b = 2 | emwsVar2.b;
+                emwsVar2.d = currentTimeMillis;
                 if (!c.b.L()) {
                     c.U();
                 }
-                ekhl ekhlVar = (ekhl) c.b;
-                ekjg ekjgVar3 = (ekjg) v.Q();
-                ekhl ekhlVar2 = ekhl.a;
-                ekjgVar3.getClass();
-                ekhlVar.z = ekjgVar3;
-                ekhlVar.b |= 16777216;
-                ahpoVar.d(c, ekhk.CLOUD_RESTORE_END);
+                emux emuxVar = (emux) c.b;
+                emws emwsVar3 = (emws) v.Q();
+                emux emuxVar2 = emux.a;
+                emwsVar3.getClass();
+                emuxVar.z = emwsVar3;
+                emuxVar.b |= 16777216;
+                ajqeVar.d(c, emuw.CLOUD_RESTORE_END);
             }
             if (!this.H) {
-                ahwdVar.h("Async restore jobs finished when on restoring screen, not finishing activity.", new Object[0]);
+                ajwtVar.h("Async restore jobs finished when on restoring screen, not finishing activity.", new Object[0]);
             } else {
-                ahwdVar.h("Async restore jobs finished when on waiting screen, finishing activity.", new Object[0]);
+                ajwtVar.h("Async restore jobs finished when on waiting screen, finishing activity.", new Object[0]);
                 p(-1);
             }
         }
     }
 
-    @Override // defpackage.ahoh
+    @Override // defpackage.ajox
     public final void u() {
-        ahpo ahpoVar = this.r;
-        fecj c = ahwj.c();
-        fecj v = ekjp.a.v();
+        ajqe ajqeVar = this.r;
+        fgrc c = ajwz.c();
+        fgrc v = emxb.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        ekjp ekjpVar = (ekjp) v.b;
-        ekjpVar.c = 2;
-        ekjpVar.b |= 1;
+        emxb emxbVar = (emxb) v.b;
+        emxbVar.c = 2;
+        emxbVar.b |= 1;
         if (!c.b.L()) {
             c.U();
         }
-        ekhl ekhlVar = (ekhl) c.b;
-        ekjp ekjpVar2 = (ekjp) v.Q();
-        ekhl ekhlVar2 = ekhl.a;
-        ekjpVar2.getClass();
-        ekhlVar.G = ekjpVar2;
-        ekhlVar.b |= JGCastService.FLAG_USE_TDLS;
-        ahpoVar.d(c, ekhk.CLOUD_RESTORE_SKIP);
+        emux emuxVar = (emux) c.b;
+        emxb emxbVar2 = (emxb) v.Q();
+        emux emuxVar2 = emux.a;
+        emxbVar2.getClass();
+        emuxVar.G = emxbVar2;
+        emuxVar.b |= JGCastService.FLAG_USE_TDLS;
+        ajqeVar.d(c, emuw.CLOUD_RESTORE_SKIP);
         p(1);
     }
 
     public final void v(ContactsBackupInfo contactsBackupInfo) {
-        ahwd ahwdVar = n;
-        ahwdVar.j("Contacts backup information has been fetched", new Object[0]);
+        ajwt ajwtVar = n;
+        ajwtVar.j("Contacts backup information has been fetched", new Object[0]);
         this.q.put(1, true);
         if (J(contactsBackupInfo, this.j.name, this.B)) {
             this.A = contactsBackupInfo;
         } else {
-            ahwdVar.m("The account name and device ID don't match the request.", new Object[0]);
+            ajwtVar.m("The account name and device ID don't match the request.", new Object[0]);
             this.A = new ContactsBackupInfo();
         }
         E();
     }
 
-    @Override // defpackage.ahox
+    @Override // defpackage.ajpn
     public final void w() {
         if (this.G <= 0) {
             n.h("'Continue with suw' pressed afer restore jobs finished, finishing activity.", new Object[0]);
@@ -870,17 +870,17 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
         } else {
             n.h("'Continue with suw' pressed before restore jobs finished, displaying waiting screen.", new Object[0]);
             this.H = true;
-            a(new ahpi(), true, "FRAGMENT");
-            I(flkv.a.a().a());
+            a(new ajpy(), true, "FRAGMENT");
+            I(focf.a.lK().a());
         }
     }
 
-    @Override // defpackage.ahne
+    @Override // defpackage.ajnu
     public final void x(ContactsBackupInfo contactsBackupInfo) {
         v(contactsBackupInfo);
     }
 
-    @Override // defpackage.ahne
+    @Override // defpackage.ajnu
     public final void y(boolean z) {
         z(z);
     }
@@ -888,11 +888,11 @@ public class CloudRestoreFlowChimeraActivity extends ahmo implements ahou, ahny,
     public final void z(final boolean z) {
         n.h("Restore contacts %s", true != z ? "failed" : "succeeded");
         if (z) {
-            this.r.a(ekjl.CONTACTS, System.currentTimeMillis() - this.t);
+            this.r.a(emwx.CONTACTS, System.currentTimeMillis() - this.t);
         } else {
-            this.r.c(ekjl.CONTACTS, 4);
+            this.r.c(emwx.CONTACTS, 4);
         }
-        runOnUiThread(new Runnable() { // from class: ahmw
+        runOnUiThread(new Runnable() { // from class: ajnm
             @Override // java.lang.Runnable
             public final void run() {
                 CloudRestoreFlowChimeraActivity.this.t(3, z);

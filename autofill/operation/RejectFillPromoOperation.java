@@ -2,23 +2,23 @@ package com.google.android.gms.autofill.operation;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.adtr;
-import defpackage.aery;
-import defpackage.aggx;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.ejhf;
+import defpackage.afty;
+import defpackage.agsl;
+import defpackage.aihn;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class RejectFillPromoOperation extends IntentOperation {
-    private static final asot a = asot.b("RejectFillPromoOperation", asej.AUTOFILL);
+    private static final ausn a = ausn.b("RejectFillPromoOperation", auid.AUTOFILL);
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        aggx j = aery.a(this).j();
-        if (!adtr.a.equals(j.z())) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 1031)).x("RejectFillPromoOperation called when already setup");
+        aihn j = agsl.a(this).j();
+        if (!afty.a.equals(j.z())) {
+            ((eluo) ((eluo) a.j()).ai((char) 1025)).x("RejectFillPromoOperation called when already setup");
             return;
         }
         String stringExtra = intent.getStringExtra("fill_promo_rejected_domain_extra");

@@ -4,21 +4,21 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqyf;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgmm;
+import defpackage.atau;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.birc;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class SessionStopResult extends AbstractSafeParcelable implements aqyf {
-    public static final Parcelable.Creator CREATOR = new bgmm();
+public class SessionStopResult extends AbstractSafeParcelable implements atau {
+    public static final Parcelable.Creator CREATOR = new birc();
     public final Status a;
     public final List b;
 
@@ -31,7 +31,7 @@ public class SessionStopResult extends AbstractSafeParcelable implements aqyf {
         return new SessionStopResult(status, Collections.EMPTY_LIST);
     }
 
-    @Override // defpackage.aqyf
+    @Override // defpackage.atau
     public final Status a() {
         return this.a;
     }
@@ -44,7 +44,7 @@ public class SessionStopResult extends AbstractSafeParcelable implements aqyf {
             return false;
         }
         SessionStopResult sessionStopResult = (SessionStopResult) obj;
-        return this.a.equals(sessionStopResult.a) && arwb.b(this.b, sessionStopResult.b);
+        return this.a.equals(sessionStopResult.a) && atyq.b(this.b, sessionStopResult.b);
     }
 
     public final int hashCode() {
@@ -53,17 +53,17 @@ public class SessionStopResult extends AbstractSafeParcelable implements aqyf {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("status", this.a, arrayList);
-        arwa.b("sessions", this.b, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("status", this.a, arrayList);
+        atyp.b("sessions", this.b, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Status status = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, status, i, false);
-        arxc.y(parcel, 3, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, status, i, false);
+        atzr.y(parcel, 3, this.b, false);
+        atzr.c(parcel, a);
     }
 }

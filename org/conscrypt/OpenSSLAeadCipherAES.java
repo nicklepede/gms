@@ -1,6 +1,10 @@
 package com.google.android.gms.org.conscrypt;
 
 import com.google.android.gms.org.conscrypt.OpenSSLCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsAlgorithm;
+import com.google.android.gms.org.conscrypt.metrics.MetricsCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsMode;
+import com.google.android.gms.org.conscrypt.metrics.MetricsPadding;
 import defpackage.a;
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
@@ -9,16 +13,20 @@ import java.security.NoSuchAlgorithmException;
 import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.InvalidParameterSpecException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class OpenSSLAeadCipherAES extends OpenSSLAeadCipher {
     private static final int AES_BLOCK_SIZE = 16;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class GCM extends OpenSSLAeadCipherAES {
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class AES_128 extends GCM {
+            public AES_128() {
+                Platform.getStatsLog().countServiceUsage(MetricsAlgorithm.CIPHER.getId(), MetricsCipher.AES.getId(), MetricsMode.GCM.getId(), MetricsPadding.NO_PADDING.getId());
+            }
+
             @Override // com.google.android.gms.org.conscrypt.OpenSSLAeadCipherAES, com.google.android.gms.org.conscrypt.OpenSSLCipher
             public void checkSupportedKeySize(int i) {
                 if (i != 16) {
@@ -27,8 +35,12 @@ public abstract class OpenSSLAeadCipherAES extends OpenSSLAeadCipher {
             }
         }
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class AES_256 extends GCM {
+            public AES_256() {
+                Platform.getStatsLog().countServiceUsage(MetricsAlgorithm.CIPHER.getId(), MetricsCipher.AES.getId(), MetricsMode.GCM.getId(), MetricsPadding.NO_PADDING.getId());
+            }
+
             @Override // com.google.android.gms.org.conscrypt.OpenSSLAeadCipherAES, com.google.android.gms.org.conscrypt.OpenSSLCipher
             public void checkSupportedKeySize(int i) {
                 if (i != 32) {
@@ -60,11 +72,15 @@ public abstract class OpenSSLAeadCipherAES extends OpenSSLAeadCipher {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class GCM_SIV extends OpenSSLAeadCipherAES {
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class AES_128 extends GCM_SIV {
+            public AES_128() {
+                Platform.getStatsLog().countServiceUsage(MetricsAlgorithm.CIPHER.getId(), MetricsCipher.AES.getId(), MetricsMode.GCM_SIV.getId(), MetricsPadding.NO_PADDING.getId());
+            }
+
             @Override // com.google.android.gms.org.conscrypt.OpenSSLAeadCipherAES, com.google.android.gms.org.conscrypt.OpenSSLCipher
             public void checkSupportedKeySize(int i) {
                 if (i != 16) {
@@ -73,8 +89,12 @@ public abstract class OpenSSLAeadCipherAES extends OpenSSLAeadCipher {
             }
         }
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class AES_256 extends GCM_SIV {
+            public AES_256() {
+                Platform.getStatsLog().countServiceUsage(MetricsAlgorithm.CIPHER.getId(), MetricsCipher.AES.getId(), MetricsMode.GCM_SIV.getId(), MetricsPadding.NO_PADDING.getId());
+            }
+
             @Override // com.google.android.gms.org.conscrypt.OpenSSLAeadCipherAES, com.google.android.gms.org.conscrypt.OpenSSLCipher
             public void checkSupportedKeySize(int i) {
                 if (i != 32) {

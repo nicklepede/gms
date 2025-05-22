@@ -3,15 +3,15 @@ package com.google.android.gms.wallet.wobs;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.djiw;
-import defpackage.djix;
+import defpackage.atzr;
+import defpackage.dlup;
+import defpackage.dluq;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class CommonWalletObject extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new djix();
+    public static final Parcelable.Creator CREATOR = new dluq();
     public String a;
     public String b;
     public String c;
@@ -60,33 +60,33 @@ public class CommonWalletObject extends AbstractSafeParcelable {
         this.s = arrayList6;
     }
 
-    public static djiw a() {
-        return new djiw(new CommonWalletObject());
+    public static dlup a() {
+        return new dlup(new CommonWalletObject());
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, this.a, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.v(parcel, 8, this.g, false);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.o(parcel, 10, this.i);
-        arxc.y(parcel, 11, this.j, false);
-        arxc.t(parcel, 12, this.k, i, false);
-        arxc.y(parcel, 13, this.l, false);
-        arxc.v(parcel, 14, this.m, false);
-        arxc.v(parcel, 15, this.n, false);
-        arxc.y(parcel, 16, this.o, false);
-        arxc.e(parcel, 17, this.p);
-        arxc.y(parcel, 18, this.q, false);
-        arxc.y(parcel, 19, this.r, false);
-        arxc.y(parcel, 20, this.s, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, this.a, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.v(parcel, 8, this.g, false);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.o(parcel, 10, this.i);
+        atzr.y(parcel, 11, this.j, false);
+        atzr.t(parcel, 12, this.k, i, false);
+        atzr.y(parcel, 13, this.l, false);
+        atzr.v(parcel, 14, this.m, false);
+        atzr.v(parcel, 15, this.n, false);
+        atzr.y(parcel, 16, this.o, false);
+        atzr.e(parcel, 17, this.p);
+        atzr.y(parcel, 18, this.q, false);
+        atzr.y(parcel, 19, this.r, false);
+        atzr.y(parcel, 20, this.s, false);
+        atzr.c(parcel, a);
     }
 
     public CommonWalletObject() {

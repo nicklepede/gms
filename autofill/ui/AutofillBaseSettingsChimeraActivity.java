@@ -1,25 +1,25 @@
 package com.google.android.gms.autofill.ui;
 
 import android.os.Bundle;
-import defpackage.agkv;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.eigb;
-import defpackage.ejhf;
-import defpackage.qet;
+import defpackage.aill;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.ektg;
+import defpackage.eluo;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class AutofillBaseSettingsChimeraActivity extends qet {
-    private static final asot j = asot.b("AutofillBaseSettingsChimeraActivity", asej.AUTOFILL);
+public final class AutofillBaseSettingsChimeraActivity extends rxx {
+    private static final ausn j = ausn.b("AutofillBaseSettingsChimeraActivity", auid.AUTOFILL);
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        asot asotVar = j;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 1268)).x("onCreate");
+        ausn ausnVar = j;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 1272)).x("onCreate");
         super.onCreate(bundle);
-        startActivity(agkv.F(7, eigb.a));
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 1269)).x("Started settings intent");
+        startActivity(aill.F(7, ektg.a));
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 1273)).x("Started settings intent");
         finish();
     }
 }

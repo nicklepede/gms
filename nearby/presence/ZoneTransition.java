@@ -3,18 +3,18 @@ package com.google.android.gms.nearby.presence;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cklf;
-import defpackage.eihn;
-import defpackage.eitj;
+import defpackage.atzr;
+import defpackage.cmtk;
+import defpackage.ekus;
+import defpackage.elgo;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class ZoneTransition extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cklf();
+    public static final Parcelable.Creator CREATOR = new cmtk();
     public final int a;
     public final int b;
     public final int c;
@@ -28,7 +28,7 @@ public class ZoneTransition extends AbstractSafeParcelable {
     }
 
     public final List a() {
-        return eitj.i(this.d);
+        return elgo.i(this.d);
     }
 
     public final boolean equals(Object obj) {
@@ -39,7 +39,7 @@ public class ZoneTransition extends AbstractSafeParcelable {
             return false;
         }
         ZoneTransition zoneTransition = (ZoneTransition) obj;
-        return this.a == zoneTransition.a && this.b == zoneTransition.b && this.c == zoneTransition.c && eihn.a(this.d, zoneTransition.d);
+        return this.a == zoneTransition.a && this.b == zoneTransition.b && this.c == zoneTransition.c && ekus.a(this.d, zoneTransition.d);
     }
 
     public final int hashCode() {
@@ -58,11 +58,11 @@ public class ZoneTransition extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.y(parcel, 4, a(), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.y(parcel, 4, a(), false);
+        atzr.c(parcel, a);
     }
 }

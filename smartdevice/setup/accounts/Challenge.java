@@ -5,17 +5,17 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.decs;
+import defpackage.atzr;
+import defpackage.dgnv;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class Challenge extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new decs();
+    public static final Parcelable.Creator CREATOR = new dgnv();
     private static final HashMap g;
     final Set a;
     public int b;
@@ -43,7 +43,7 @@ public class Challenge extends BinarySerializableFastSafeParcelableJson {
         this.f = bArr2;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
@@ -64,17 +64,17 @@ public class Challenge extends BinarySerializableFastSafeParcelableJson {
         throw new IllegalStateException(a.j(i, "Unknown SafeParcelable id="));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return g;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i = fastJsonResponse$Field.g;
         if (i != 3) {
@@ -90,8 +90,18 @@ public class Challenge extends BinarySerializableFastSafeParcelableJson {
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gf(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
+        int i2 = fastJsonResponse$Field.g;
+        if (i2 != 2) {
+            throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be an int."));
+        }
+        this.b = i;
+        this.a.add(Integer.valueOf(i2));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gu(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
         if (bArr == null) {
             return;
         }
@@ -107,36 +117,26 @@ public class Challenge extends BinarySerializableFastSafeParcelableJson {
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
-        int i2 = fastJsonResponse$Field.g;
-        if (i2 != 2) {
-            throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be an int."));
-        }
-        this.b = i;
-        this.a.add(Integer.valueOf(i2));
-    }
-
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.o(parcel, 2, this.b);
+            atzr.o(parcel, 2, this.b);
         }
         if (set.contains(3)) {
-            arxc.v(parcel, 3, this.c, true);
+            atzr.v(parcel, 3, this.c, true);
         }
         if (set.contains(4)) {
-            arxc.v(parcel, 4, this.d, true);
+            atzr.v(parcel, 4, this.d, true);
         }
         if (set.contains(5)) {
-            arxc.i(parcel, 5, this.e, true);
+            atzr.i(parcel, 5, this.e, true);
         }
         if (set.contains(6)) {
-            arxc.i(parcel, 6, this.f, true);
+            atzr.i(parcel, 6, this.f, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public Challenge() {

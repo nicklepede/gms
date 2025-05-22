@@ -3,27 +3,27 @@ package com.google.android.gms.udc;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dgve;
-import defpackage.dgvp;
-import defpackage.dgvr;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.djgk;
+import defpackage.djgv;
+import defpackage.djgx;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class UdcCacheResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dgvp();
+    public static final Parcelable.Creator CREATOR = new djgv();
     public final List a;
     public final int[] b;
     public final boolean c;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class SettingAvailability extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dgve();
+        public static final Parcelable.Creator CREATOR = new djgk();
         public final boolean a;
 
         public SettingAvailability(boolean z) {
@@ -43,22 +43,22 @@ public class UdcCacheResponse extends AbstractSafeParcelable {
 
         public final String toString() {
             ArrayList arrayList = new ArrayList();
-            arwa.b("CanShowValue", Boolean.valueOf(this.a), arrayList);
-            return arwa.a(arrayList, this);
+            atyp.b("CanShowValue", Boolean.valueOf(this.a), arrayList);
+            return atyp.a(arrayList, this);
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             boolean z = this.a;
-            int a = arxc.a(parcel);
-            arxc.e(parcel, 2, z);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.e(parcel, 2, z);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class UdcSetting extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dgvr();
+        public static final Parcelable.Creator CREATOR = new djgx();
         public final int a;
         public final int b;
         public final SettingAvailability c;
@@ -77,7 +77,7 @@ public class UdcCacheResponse extends AbstractSafeParcelable {
                 return false;
             }
             UdcSetting udcSetting = (UdcSetting) obj;
-            return this.a == udcSetting.a && this.b == udcSetting.b && arwb.b(this.c, udcSetting.c);
+            return this.a == udcSetting.a && this.b == udcSetting.b && atyq.b(this.c, udcSetting.c);
         }
 
         public final int hashCode() {
@@ -86,20 +86,20 @@ public class UdcCacheResponse extends AbstractSafeParcelable {
 
         public final String toString() {
             ArrayList arrayList = new ArrayList();
-            arwa.b("SettingId", Integer.valueOf(this.a), arrayList);
-            arwa.b("SettingValue", Integer.valueOf(this.b), arrayList);
-            arwa.b("SettingAvailability", this.c, arrayList);
-            return arwa.a(arrayList, this);
+            atyp.b("SettingId", Integer.valueOf(this.a), arrayList);
+            atyp.b("SettingValue", Integer.valueOf(this.b), arrayList);
+            atyp.b("SettingAvailability", this.c, arrayList);
+            return atyp.a(arrayList, this);
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             int i2 = this.a;
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 2, i2);
-            arxc.o(parcel, 3, this.b);
-            arxc.t(parcel, 4, this.c, i, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 2, i2);
+            atzr.o(parcel, 3, this.b);
+            atzr.t(parcel, 4, this.c, i, false);
+            atzr.c(parcel, a);
         }
     }
 
@@ -126,19 +126,19 @@ public class UdcCacheResponse extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("Settings", this.a, arrayList);
-        arwa.b("ConsentableSettings", Arrays.toString(this.b), arrayList);
-        arwa.b("CanMostLikelyStartConsentFlow", Boolean.valueOf(this.c), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("Settings", this.a, arrayList);
+        atyp.b("ConsentableSettings", Arrays.toString(this.b), arrayList);
+        atyp.b("CanMostLikelyStartConsentFlow", Boolean.valueOf(this.c), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 2, list, false);
-        arxc.p(parcel, 3, this.b, false);
-        arxc.e(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 2, list, false);
+        atzr.p(parcel, 3, this.b, false);
+        atzr.e(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 }

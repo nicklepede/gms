@@ -5,98 +5,98 @@ import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.locationsharingreporter.AppContextProvider;
 import com.google.android.gms.locationsharingreporter.service.reporting.periodic.PersistentDispatchingIntentOperation;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bkzh;
-import defpackage.cavm;
-import defpackage.cawc;
-import defpackage.cawo;
-import defpackage.caxd;
-import defpackage.cbfb;
-import defpackage.dfbl;
-import defpackage.eigb;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.eiuu;
-import defpackage.ejck;
-import defpackage.ejhf;
-import defpackage.enss;
-import defpackage.fpws;
-import defpackage.fpxh;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bnfy;
+import defpackage.cdec;
+import defpackage.cdes;
+import defpackage.cdfe;
+import defpackage.cdft;
+import defpackage.cdnt;
+import defpackage.dhmr;
+import defpackage.ektg;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.elhz;
+import defpackage.elpp;
+import defpackage.eluo;
+import defpackage.eqgl;
+import defpackage.fsqm;
+import defpackage.fsrb;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class LocationSharingReporterModuleInitIntentOperation extends anya {
-    private static final asot a = asot.b("LSRModuleInit", asej.LOCATION_SHARING_REPORTER);
+public class LocationSharingReporterModuleInitIntentOperation extends apzs {
+    private static final ausn a = ausn.b("LSRModuleInit", auid.LOCATION_SHARING_REPORTER);
     private static final String[] b = {"com.google.android.gms.locationsharingreporter.service.reporting.periodic.PeriodicReporterMonitoringService"};
 
     private final void f() {
         try {
-            final cawo b2 = cavm.b();
-            enss e = b2.e(this, new eiho() { // from class: cawl
-                @Override // defpackage.eiho
+            final cdfe b2 = cdec.b();
+            eqgl e = b2.e(this, new ekut() { // from class: cdfb
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    asot asotVar = cawo.a;
-                    return cath.a;
+                    ausn ausnVar = cdfe.a;
+                    return cdbx.a;
                 }
             });
-            e.hn(new Runnable() { // from class: cawm
+            e.hD(new Runnable() { // from class: cdfc
                 @Override // java.lang.Runnable
                 public final void run() {
-                    cawo.this.g(this, null, eigb.a);
+                    cdfe.this.h(this, null, ektg.a);
                 }
-            }, cawo.b);
-            e.get(fpws.i(), TimeUnit.MILLISECONDS);
+            }, cdfe.b);
+            e.get(fsqm.i(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e2) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e2)).ah((char) 5703)).x("failed to clear location reporting status storage");
+            ((eluo) ((eluo) ((eluo) a.j()).s(e2)).ai((char) 5717)).x("failed to clear location reporting status storage");
         }
     }
 
-    private static final void g(bkzh bkzhVar) {
+    private static final void g(bnfy bnfyVar) {
         try {
-            dfbl.n(bkzhVar.a(ejck.a));
+            dhmr.n(bnfyVar.a(elpp.a));
         } catch (InterruptedException | CancellationException | ExecutionException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 5704)).x("Failed to clean up geofences.");
+            ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 5718)).x("Failed to clean up geofences.");
         }
     }
 
     private static final void h(boolean z) {
-        ((ejhf) ((ejhf) a.h()).ah((char) 5711)).B("Attempting to change container components state to enabled: %s", Boolean.valueOf(z));
+        ((eluo) ((eluo) a.h()).ai((char) 5725)).B("Attempting to change container components state to enabled: %s", Boolean.valueOf(z));
         String[] strArr = b;
         int length = strArr.length;
         String str = strArr[0];
         try {
-            asng.H(AppContextProvider.a(), str, z);
+            aura.H(AppContextProvider.a(), str, z);
         } catch (IllegalArgumentException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 5710)).B("Component %s disabled", str);
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 5724)).B("Component %s disabled", str);
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        eiid j;
+        ekvi j;
         if ((i & 2) != 0) {
-            Map f = cavm.b().f(this);
-            caxd.a().f(this);
+            Map f = cdec.b().f(this);
+            cdft.a().f(this);
             f();
-            for (Account account : asnd.x(this)) {
+            for (Account account : auqx.x(this)) {
                 if (f.containsKey(account.name)) {
-                    cawc.a(this, account);
+                    cdes.a(this, account);
                 }
             }
         } else {
-            cawo b2 = cavm.b();
+            cdfe b2 = cdec.b();
             e(b2, b2.a(this));
         }
-        if (!fpxh.E()) {
+        if (!fsrb.D()) {
             h(false);
             return;
         }
@@ -104,29 +104,29 @@ public class LocationSharingReporterModuleInitIntentOperation extends anya {
         int i2 = PersistentDispatchingIntentOperation.a;
         Intent startIntent = IntentOperation.getStartIntent(AppContextProvider.a(), PersistentDispatchingIntentOperation.class, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACTION_LSR_MODULE_INIT");
         if (startIntent == null) {
-            j = eigb.a;
+            j = ektg.a;
         } else {
             startIntent.putExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.EXTRA_MODULE_INIT_FLAGS", i);
-            j = eiid.j(startIntent);
+            j = ekvi.j(startIntent);
         }
         if (j.h()) {
             AppContextProvider.a().startService((Intent) j.c());
         } else {
-            ((ejhf) ((ejhf) a.i()).ah((char) 5706)).x("Failed to forward module init intent");
+            ((eluo) ((eluo) a.i()).ai((char) 5720)).x("Failed to forward module init intent");
         }
     }
 
-    final void e(cawo cawoVar, bkzh bkzhVar) {
-        if (!cbfb.f(this)) {
-            g(bkzhVar);
+    final void e(cdfe cdfeVar, bnfy bnfyVar) {
+        if (!cdnt.f(this)) {
+            g(bnfyVar);
             return;
         }
-        eiuu c = cawoVar.c(this);
+        elhz c = cdfeVar.c(this);
         try {
-            dfbl.n(bkzhVar.a(c));
-            ((ejhf) ((ejhf) a.h()).ah(5707)).B("New Geofences: %s", c);
+            dhmr.n(bnfyVar.a(c));
+            ((eluo) ((eluo) a.h()).ai(5721)).B("New Geofences: %s", c);
         } catch (InterruptedException | CancellationException | ExecutionException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 5708)).x("failed to register geofences.");
+            ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 5722)).x("failed to register geofences.");
         }
     }
 }

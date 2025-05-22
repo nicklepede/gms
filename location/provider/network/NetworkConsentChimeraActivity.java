@@ -4,161 +4,161 @@ import android.content.DialogInterface;
 import android.os.Build;
 import com.google.android.gms.R;
 import com.google.android.gms.location.provider.network.NetworkConsentChimeraActivity;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bwth;
-import defpackage.bwti;
-import defpackage.canf;
-import defpackage.eiho;
-import defpackage.ejhf;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.esiu;
-import defpackage.eswh;
-import defpackage.eswq;
-import defpackage.eswt;
-import defpackage.eswu;
-import defpackage.esyo;
-import defpackage.esys;
-import defpackage.fecj;
-import defpackage.fpss;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bzbx;
+import defpackage.bzby;
+import defpackage.ccvv;
+import defpackage.ekut;
+import defpackage.eluo;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.euyj;
+import defpackage.evlx;
+import defpackage.evmg;
+import defpackage.evmj;
+import defpackage.evmk;
+import defpackage.evoe;
+import defpackage.evoi;
+import defpackage.fgrc;
+import defpackage.fsmk;
 import defpackage.iq;
-import defpackage.qfp;
+import defpackage.ryt;
 import j$.util.Objects;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class NetworkConsentChimeraActivity extends qfp implements DialogInterface.OnClickListener {
-    public static final asot j = asot.b("NlpConsent", asej.LOCATION);
+public class NetworkConsentChimeraActivity extends ryt implements DialogInterface.OnClickListener {
+    public static final ausn j = ausn.b("NlpConsent", auid.LOCATION);
     private iq k;
     private int l;
     private int m;
-    private enss n = null;
+    private eqgl n = null;
 
     private final void a(boolean z) {
         final int intExtra;
         if (this.n != null) {
             return;
         }
-        asot asotVar = j;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 5638)).B("consent dialog choice was %b", Boolean.valueOf(z));
+        ausn ausnVar = j;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 5652)).B("consent dialog choice was %b", Boolean.valueOf(z));
         if (!isFinishing()) {
             finish();
         }
         if (!z) {
             if (Build.VERSION.SDK_INT < 28) {
-                this.n = ensm.a;
+                this.n = eqgf.a;
                 return;
             }
-            ((ejhf) ((ejhf) asotVar.h()).ah((char) 5639)).x("setting location off");
-            enss e = canf.c().e(System.currentTimeMillis() + fpss.b());
-            eiho eihoVar = new eiho() { // from class: cakb
-                @Override // defpackage.eiho
+            ((eluo) ((eluo) ausnVar.h()).ai((char) 5653)).x("setting location off");
+            eqgl e = ccvv.c().e(System.currentTimeMillis() + fsmk.b());
+            ekut ekutVar = new ekut() { // from class: ccsr
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    ((ejhf) ((ejhf) ((ejhf) NetworkConsentChimeraActivity.j.i()).s((Throwable) obj)).ah((char) 5637)).x("Error suppressing next LOWD invocation from NLP consent dialog");
+                    ((eluo) ((eluo) ((eluo) NetworkConsentChimeraActivity.j.i()).s((Throwable) obj)).ai((char) 5651)).x("Error suppressing next LOWD invocation from NLP consent dialog");
                     return null;
                 }
             };
-            enre enreVar = enre.a;
-            this.n = enps.g(enox.f(e, Throwable.class, eihoVar, enreVar), new enqc() { // from class: cakc
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    return bwth.c(NetworkConsentChimeraActivity.this, false, bwti.a);
+            eqex eqexVar = eqex.a;
+            this.n = eqdl.g(eqcq.f(e, Throwable.class, ekutVar, eqexVar), new eqdv() { // from class: ccss
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    return bzbx.c(NetworkConsentChimeraActivity.this, false, bzby.a);
                 }
-            }, enreVar);
+            }, eqexVar);
             return;
         }
-        bwti bwtiVar = bwti.a;
-        eswq eswqVar = eswq.SOURCE_QUICK_SETTINGS;
-        fecj v = esys.a.v();
-        esiu esiuVar = esiu.Y;
+        bzby bzbyVar = bzby.a;
+        evmg evmgVar = evmg.SOURCE_QUICK_SETTINGS;
+        fgrc v = evoi.a.v();
+        euyj euyjVar = euyj.Y;
         if (!v.b.L()) {
             v.U();
         }
-        esys esysVar = (esys) v.b;
-        esysVar.c = esiuVar.a();
-        esysVar.b |= 1;
-        fecj v2 = esyo.a.v();
-        fecj v3 = eswh.a.v();
+        evoi evoiVar = (evoi) v.b;
+        evoiVar.c = euyjVar.a();
+        evoiVar.b |= 1;
+        fgrc v2 = evoe.a.v();
+        fgrc v3 = evlx.a.v();
         if (!v3.b.L()) {
             v3.U();
         }
-        eswh eswhVar = (eswh) v3.b;
-        eswhVar.b |= 1;
-        eswhVar.c = true;
-        eswt eswtVar = (eswt) eswu.a.v();
-        eswtVar.k(this.l);
+        evlx evlxVar = (evlx) v3.b;
+        evlxVar.b |= 1;
+        evlxVar.c = true;
+        evmk evmkVar = evmk.a;
+        evmj evmjVar = (evmj) evmkVar.v();
+        evmjVar.k(this.l);
         if (!v3.b.L()) {
             v3.U();
         }
-        eswh eswhVar2 = (eswh) v3.b;
-        eswu eswuVar = (eswu) eswtVar.Q();
-        eswuVar.getClass();
-        eswhVar2.d = eswuVar;
-        eswhVar2.b |= 2;
-        eswu eswuVar2 = eswu.a;
-        eswt eswtVar2 = (eswt) eswuVar2.v();
-        eswtVar2.k(R.string.common_agree);
+        evlx evlxVar2 = (evlx) v3.b;
+        evmk evmkVar2 = (evmk) evmjVar.Q();
+        evmkVar2.getClass();
+        evlxVar2.d = evmkVar2;
+        evlxVar2.b |= 2;
+        evmj evmjVar2 = (evmj) evmkVar.v();
+        evmjVar2.k(R.string.common_agree);
         if (!v3.b.L()) {
             v3.U();
         }
-        eswh eswhVar3 = (eswh) v3.b;
-        eswu eswuVar3 = (eswu) eswtVar2.Q();
-        eswuVar3.getClass();
-        eswhVar3.f = eswuVar3;
-        eswhVar3.b |= 8;
-        eswt eswtVar3 = (eswt) eswuVar2.v();
-        eswtVar3.k(R.string.common_disagree);
+        evlx evlxVar3 = (evlx) v3.b;
+        evmk evmkVar3 = (evmk) evmjVar2.Q();
+        evmkVar3.getClass();
+        evlxVar3.f = evmkVar3;
+        evlxVar3.b |= 8;
+        evmj evmjVar3 = (evmj) evmkVar.v();
+        evmjVar3.k(R.string.common_disagree);
         if (!v3.b.L()) {
             v3.U();
         }
-        eswh eswhVar4 = (eswh) v3.b;
-        eswu eswuVar4 = (eswu) eswtVar3.Q();
-        eswuVar4.getClass();
-        eswhVar4.g = eswuVar4;
-        eswhVar4.b |= 16;
-        eswt eswtVar4 = (eswt) eswuVar2.v();
-        eswtVar4.k(this.m);
+        evlx evlxVar4 = (evlx) v3.b;
+        evmk evmkVar4 = (evmk) evmjVar3.Q();
+        evmkVar4.getClass();
+        evlxVar4.g = evmkVar4;
+        evlxVar4.b |= 16;
+        evmj evmjVar4 = (evmj) evmkVar.v();
+        evmjVar4.k(this.m);
         if (!v3.b.L()) {
             v3.U();
         }
-        eswh eswhVar5 = (eswh) v3.b;
-        eswu eswuVar5 = (eswu) eswtVar4.Q();
-        eswuVar5.getClass();
-        eswhVar5.e = eswuVar5;
-        eswhVar5.b |= 4;
+        evlx evlxVar5 = (evlx) v3.b;
+        evmk evmkVar5 = (evmk) evmjVar4.Q();
+        evmkVar5.getClass();
+        evlxVar5.e = evmkVar5;
+        evlxVar5.b |= 4;
         if (!v2.b.L()) {
             v2.U();
         }
-        esyo esyoVar = (esyo) v2.b;
-        eswh eswhVar6 = (eswh) v3.Q();
-        eswhVar6.getClass();
-        esyoVar.e = eswhVar6;
-        esyoVar.b |= 1;
+        evoe evoeVar = (evoe) v2.b;
+        evlx evlxVar6 = (evlx) v3.Q();
+        evlxVar6.getClass();
+        evoeVar.e = evlxVar6;
+        evoeVar.b |= 1;
         if (!v.b.L()) {
             v.U();
         }
-        esys esysVar2 = (esys) v.b;
-        esyo esyoVar2 = (esyo) v2.Q();
-        esyoVar2.getClass();
-        esysVar2.d = esyoVar2;
-        esysVar2.b |= 8;
-        this.n = bwth.e(this, true, bwtiVar, eswqVar, (esys) v.Q());
+        evoi evoiVar2 = (evoi) v.b;
+        evoe evoeVar2 = (evoe) v2.Q();
+        evoeVar2.getClass();
+        evoiVar2.d = evoeVar2;
+        evoiVar2.b |= 8;
+        this.n = bzbx.e(this, true, bzbyVar, evmgVar, (evoi) v.Q());
         if (Build.VERSION.SDK_INT > 28 || (intExtra = getIntent().getIntExtra("newMode", 0)) == 0) {
             return;
         }
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 5640)).z("setting location mode to %d", intExtra);
-        this.n = enps.g((enss) Objects.requireNonNull(this.n), new enqc() { // from class: caka
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                return bwth.d(NetworkConsentChimeraActivity.this, intExtra, bwti.a);
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 5654)).z("setting location mode to %d", intExtra);
+        this.n = eqdl.g((eqgl) Objects.requireNonNull(this.n), new eqdv() { // from class: ccsq
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                return bzbx.d(NetworkConsentChimeraActivity.this, intExtra, bzby.a);
             }
-        }, enre.a);
+        }, eqex.a);
     }
 
     @Override // android.content.DialogInterface.OnClickListener
@@ -170,7 +170,7 @@ public class NetworkConsentChimeraActivity extends qfp implements DialogInterfac
     /* JADX WARN: Removed duplicated region for block: B:22:0x00e1  */
     /* JADX WARN: Removed duplicated region for block: B:23:0x007b  */
     /* JADX WARN: Removed duplicated region for block: B:9:0x006d  */
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -183,27 +183,29 @@ public class NetworkConsentChimeraActivity extends qfp implements DialogInterfac
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.location.provider.network.NetworkConsentChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
-        enss enssVar = this.n;
-        if (enssVar != null) {
+        eqgl eqglVar;
+        if (!isChangingConfigurations() && (eqglVar = this.n) != null) {
             try {
-                enssVar.get();
+                eqglVar.get();
             } catch (InterruptedException | ExecutionException e) {
                 boolean z = e instanceof ExecutionException;
                 Throwable th = e;
                 if (z) {
                     th = e.getCause();
                 }
-                ((ejhf) ((ejhf) ((ejhf) j.i()).s(th)).ah((char) 5645)).x("failed to set NLP consent from NLP consent dialog");
+                ((eluo) ((eluo) ((eluo) j.i()).s(th)).ai((char) 5659)).x("failed to set NLP consent from NLP consent dialog");
             }
         }
         super.onDestroy();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
-        a(false);
+        if (!isChangingConfigurations()) {
+            a(false);
+        }
         super.onPause();
     }
 }

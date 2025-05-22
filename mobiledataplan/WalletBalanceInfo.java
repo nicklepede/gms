@@ -3,15 +3,15 @@ package com.google.android.gms.mobiledataplan;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ceat;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgka;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class WalletBalanceInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ceat();
+    public static final Parcelable.Creator CREATOR = new cgka();
     public long a;
     public String b;
     public int c;
@@ -32,7 +32,7 @@ public final class WalletBalanceInfo extends AbstractSafeParcelable {
         }
         if (obj instanceof WalletBalanceInfo) {
             WalletBalanceInfo walletBalanceInfo = (WalletBalanceInfo) obj;
-            if (arwb.b(Long.valueOf(this.a), Long.valueOf(walletBalanceInfo.a)) && arwb.b(this.b, walletBalanceInfo.b) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(walletBalanceInfo.c)) && arwb.b(this.d, walletBalanceInfo.d) && arwb.b(this.e, walletBalanceInfo.e) && arwb.b(this.f, walletBalanceInfo.f) && arwb.b(this.g, walletBalanceInfo.g) && arwb.b(this.h, walletBalanceInfo.h) && arwb.b(this.i, walletBalanceInfo.i) && arwb.b(this.j, walletBalanceInfo.j)) {
+            if (atyq.b(Long.valueOf(this.a), Long.valueOf(walletBalanceInfo.a)) && atyq.b(this.b, walletBalanceInfo.b) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(walletBalanceInfo.c)) && atyq.b(this.d, walletBalanceInfo.d) && atyq.b(this.e, walletBalanceInfo.e) && atyq.b(this.f, walletBalanceInfo.f) && atyq.b(this.g, walletBalanceInfo.g) && atyq.b(this.h, walletBalanceInfo.h) && atyq.b(this.i, walletBalanceInfo.i) && atyq.b(this.j, walletBalanceInfo.j)) {
                 return true;
             }
         }
@@ -45,18 +45,18 @@ public final class WalletBalanceInfo extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.I(parcel, 4, this.d);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.I(parcel, 7, this.g);
-        arxc.I(parcel, 8, this.h);
-        arxc.I(parcel, 9, this.i);
-        arxc.v(parcel, 10, this.j, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.I(parcel, 4, this.d);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.I(parcel, 7, this.g);
+        atzr.I(parcel, 8, this.h);
+        atzr.I(parcel, 9, this.i);
+        atzr.v(parcel, 10, this.j, false);
+        atzr.c(parcel, a);
     }
 
     public WalletBalanceInfo(long j, String str, int i, Long l, String str2, String str3, Long l2, Long l3, Long l4, String str4) {

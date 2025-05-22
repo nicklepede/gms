@@ -3,14 +3,14 @@ package com.google.android.gms.phenotype;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cvzg;
-import defpackage.cwam;
+import defpackage.atzr;
+import defpackage.cyjd;
+import defpackage.cykj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class FlagOverride extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cvzg();
+    public static final Parcelable.Creator CREATOR = new cyjd();
     public final String a;
     public final String b;
     public final Flag c;
@@ -43,7 +43,7 @@ public class FlagOverride extends AbstractSafeParcelable {
             return false;
         }
         FlagOverride flagOverride = (FlagOverride) obj;
-        return cwam.a(this.a, flagOverride.a) && cwam.a(this.b, flagOverride.b) && cwam.a(this.c, flagOverride.c) && this.d == flagOverride.d;
+        return cykj.a(this.a, flagOverride.a) && cykj.a(this.b, flagOverride.b) && cykj.a(this.c, flagOverride.c) && this.d == flagOverride.d;
     }
 
     public final String toString() {
@@ -55,11 +55,11 @@ public class FlagOverride extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.e(parcel, 5, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.e(parcel, 5, this.d);
+        atzr.c(parcel, a);
     }
 }

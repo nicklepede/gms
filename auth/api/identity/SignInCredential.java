@@ -5,17 +5,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fido.fido2.api.common.PublicKeyCredential;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zdl;
+import defpackage.abdg;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public final class SignInCredential extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zdl();
+    public static final Parcelable.Creator CREATOR = new abdg();
     public final String a;
     public final String b;
     public final String c;
@@ -27,7 +27,7 @@ public final class SignInCredential extends AbstractSafeParcelable {
     public final PublicKeyCredential i;
 
     public SignInCredential(String str, String str2, String str3, String str4, Uri uri, String str5, String str6, String str7, PublicKeyCredential publicKeyCredential) {
-        arwm.s(str);
+        atzb.s(str);
         this.a = str;
         this.b = str2;
         this.c = str3;
@@ -44,7 +44,7 @@ public final class SignInCredential extends AbstractSafeParcelable {
             return false;
         }
         SignInCredential signInCredential = (SignInCredential) obj;
-        return arwb.b(this.a, signInCredential.a) && arwb.b(this.b, signInCredential.b) && arwb.b(this.c, signInCredential.c) && arwb.b(this.d, signInCredential.d) && arwb.b(this.e, signInCredential.e) && arwb.b(this.f, signInCredential.f) && arwb.b(this.g, signInCredential.g) && arwb.b(this.h, signInCredential.h) && arwb.b(this.i, signInCredential.i);
+        return atyq.b(this.a, signInCredential.a) && atyq.b(this.b, signInCredential.b) && atyq.b(this.c, signInCredential.c) && atyq.b(this.d, signInCredential.d) && atyq.b(this.e, signInCredential.e) && atyq.b(this.f, signInCredential.f) && atyq.b(this.g, signInCredential.g) && atyq.b(this.h, signInCredential.h) && atyq.b(this.i, signInCredential.i);
     }
 
     public final int hashCode() {
@@ -54,16 +54,16 @@ public final class SignInCredential extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.t(parcel, 9, this.i, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.t(parcel, 9, this.i, i, false);
+        atzr.c(parcel, a);
     }
 }

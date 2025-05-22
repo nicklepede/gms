@@ -6,12 +6,12 @@ import android.util.Base64;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.phenotype.ExperimentTokens;
 import defpackage.a;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.cvzb;
-import defpackage.cvzc;
-import defpackage.cwam;
-import defpackage.ejdf;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cyiy;
+import defpackage.cyiz;
+import defpackage.cykj;
+import defpackage.elqm;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
@@ -25,10 +25,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ExperimentTokens extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cvzc();
+    public static final Parcelable.Creator CREATOR = new cyiz();
     public static final byte[][] a;
     public static final ExperimentTokens b;
     public final String c;
@@ -104,26 +104,26 @@ public class ExperimentTokens extends AbstractSafeParcelable {
             return (ExperimentTokens) list.get(0);
         }
         String str = (!g(list) || list.isEmpty()) ? "" : ((ExperimentTokens) list.get(0)).c;
-        byte[][] u = u(list, new cvzb() { // from class: cvyx
-            @Override // defpackage.cvzb
+        byte[][] u = u(list, new cyiy() { // from class: cyiu
+            @Override // defpackage.cyiy
             public final byte[][] a(ExperimentTokens experimentTokens) {
                 return experimentTokens.e;
             }
         });
-        byte[][] u2 = u(list, new cvzb() { // from class: cvyy
-            @Override // defpackage.cvzb
+        byte[][] u2 = u(list, new cyiy() { // from class: cyiv
+            @Override // defpackage.cyiy
             public final byte[][] a(ExperimentTokens experimentTokens) {
                 return experimentTokens.f;
             }
         });
-        byte[][] u3 = u(list, new cvzb() { // from class: cvyz
-            @Override // defpackage.cvzb
+        byte[][] u3 = u(list, new cyiy() { // from class: cyiw
+            @Override // defpackage.cyiy
             public final byte[][] a(ExperimentTokens experimentTokens) {
                 return experimentTokens.g;
             }
         });
-        byte[][] u4 = u(list, new cvzb() { // from class: cvza
-            @Override // defpackage.cvzb
+        byte[][] u4 = u(list, new cyiy() { // from class: cyix
+            @Override // defpackage.cyiy
             public final byte[][] a(ExperimentTokens experimentTokens) {
                 return experimentTokens.h;
             }
@@ -262,7 +262,7 @@ public class ExperimentTokens extends AbstractSafeParcelable {
         String str = ((ExperimentTokens) list.get(0)).c;
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            if (!cwam.a(str, ((ExperimentTokens) it.next()).c)) {
+            if (!cykj.a(str, ((ExperimentTokens) it.next()).c)) {
                 return false;
             }
         }
@@ -312,7 +312,7 @@ public class ExperimentTokens extends AbstractSafeParcelable {
         if (iArr == null || (length = iArr.length) == 0) {
             return Collections.EMPTY_SET;
         }
-        HashSet j = ejdf.j(length);
+        HashSet j = elqm.j(length);
         for (int i : iArr) {
             j.add(Integer.valueOf(i));
         }
@@ -324,9 +324,9 @@ public class ExperimentTokens extends AbstractSafeParcelable {
         if (bArr == null || (length = bArr.length) == 0) {
             return Collections.EMPTY_SET;
         }
-        HashSet j = ejdf.j(length);
+        HashSet j = elqm.j(length);
         for (byte[] bArr2 : bArr) {
-            arwm.s(bArr2);
+            atzb.s(bArr2);
             j.add(Base64.encodeToString(bArr2, 3));
         }
         return j;
@@ -380,7 +380,7 @@ public class ExperimentTokens extends AbstractSafeParcelable {
                 sb.append(", ");
             }
             sb.append("'");
-            arwm.s(bArr2);
+            atzb.s(bArr2);
             sb.append(Base64.encodeToString(bArr2, 3));
             sb.append("'");
             i++;
@@ -416,14 +416,14 @@ public class ExperimentTokens extends AbstractSafeParcelable {
         return iArr;
     }
 
-    private static byte[][] u(List list, cvzb cvzbVar) {
+    private static byte[][] u(List list, cyiy cyiyVar) {
         byte[][] a2;
         byte[][] a3;
         Iterator it = list.iterator();
         int i = 0;
         while (it.hasNext()) {
             ExperimentTokens experimentTokens = (ExperimentTokens) it.next();
-            if (experimentTokens != null && (a3 = cvzbVar.a(experimentTokens)) != null) {
+            if (experimentTokens != null && (a3 = cyiyVar.a(experimentTokens)) != null) {
                 i += a3.length;
             }
         }
@@ -432,7 +432,7 @@ public class ExperimentTokens extends AbstractSafeParcelable {
         int i2 = 0;
         while (it2.hasNext()) {
             ExperimentTokens experimentTokens2 = (ExperimentTokens) it2.next();
-            if (experimentTokens2 != null && (a2 = cvzbVar.a(experimentTokens2)) != null) {
+            if (experimentTokens2 != null && (a2 = cyiyVar.a(experimentTokens2)) != null) {
                 for (byte[] bArr2 : a2) {
                     if (bArr2 != null) {
                         bArr[i2] = bArr2;
@@ -502,7 +502,7 @@ public class ExperimentTokens extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof ExperimentTokens) {
             ExperimentTokens experimentTokens = (ExperimentTokens) obj;
-            if (cwam.a(this.c, experimentTokens.c) && cwam.a(k(), experimentTokens.k()) && cwam.a(m(this.e), m(experimentTokens.e)) && cwam.a(m(this.f), m(experimentTokens.f)) && cwam.a(m(this.g), m(experimentTokens.g)) && cwam.a(m(this.h), m(experimentTokens.h)) && cwam.a(l(this.i), l(experimentTokens.i)) && cwam.a(j(this.k), j(experimentTokens.k)) && cwam.a(m(this.l), m(experimentTokens.l))) {
+            if (cykj.a(this.c, experimentTokens.c) && cykj.a(k(), experimentTokens.k()) && cykj.a(m(this.e), m(experimentTokens.e)) && cykj.a(m(this.f), m(experimentTokens.f)) && cykj.a(m(this.g), m(experimentTokens.g)) && cykj.a(m(this.h), m(experimentTokens.h)) && cykj.a(l(this.i), l(experimentTokens.i)) && cykj.a(j(this.k), j(experimentTokens.k)) && cykj.a(m(this.l), m(experimentTokens.l))) {
                 return true;
             }
         }
@@ -580,18 +580,18 @@ public class ExperimentTokens extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.c;
-        int a2 = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.i(parcel, 3, this.d, false);
-        arxc.A(parcel, 4, this.e);
-        arxc.A(parcel, 5, this.f);
-        arxc.A(parcel, 6, this.g);
-        arxc.A(parcel, 7, this.h);
-        arxc.p(parcel, 8, this.i, false);
-        arxc.A(parcel, 9, this.j);
-        arxc.p(parcel, 10, this.k, false);
-        arxc.A(parcel, 11, this.l);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.i(parcel, 3, this.d, false);
+        atzr.A(parcel, 4, this.e);
+        atzr.A(parcel, 5, this.f);
+        atzr.A(parcel, 6, this.g);
+        atzr.A(parcel, 7, this.h);
+        atzr.p(parcel, 8, this.i, false);
+        atzr.A(parcel, 9, this.j);
+        atzr.p(parcel, 10, this.k, false);
+        atzr.A(parcel, 11, this.l);
+        atzr.c(parcel, a2);
     }
 
     public ExperimentTokens(String str, byte[] bArr, byte[][] bArr2, byte[][] bArr3, byte[][] bArr4, byte[][] bArr5, int[] iArr) {

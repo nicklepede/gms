@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.text.TextUtils;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.libraries.matchstick.net.SilentRegisterIntentOperation;
-import defpackage.ccgd;
-import defpackage.fqaz;
+import defpackage.ceox;
+import defpackage.fsux;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MatchstickIntentHandler$TriggerRegistrationIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
@@ -17,10 +17,10 @@ public class MatchstickIntentHandler$TriggerRegistrationIntentOperation extends 
                 SilentRegisterIntentOperation.d(new Intent("com.google.android.gms.matchstick.register_intent_google_account_change"), getBaseContext());
             }
         } else {
-            ccgd.b(getBaseContext());
-            ccgd.d(getBaseContext());
-            if (fqaz.g()) {
-                ccgd.g(getBaseContext(), "com.google.android.gms.matchstick.ui.LighterEntryPointActivity", true);
+            ceox.b(getBaseContext());
+            ceox.d(getBaseContext());
+            if (fsux.g()) {
+                ceox.g(getBaseContext(), "com.google.android.gms.matchstick.ui.LighterEntryPointActivity", true);
             }
         }
     }

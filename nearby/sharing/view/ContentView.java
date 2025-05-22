@@ -6,10 +6,10 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 import com.google.android.gms.R;
-import defpackage.cfdj;
-import defpackage.clzc;
+import defpackage.chkv;
+import defpackage.cohk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ContentView extends FrameLayout {
     public ContentView(Context context) {
@@ -18,7 +18,7 @@ public class ContentView extends FrameLayout {
     }
 
     private final void a(Context context, AttributeSet attributeSet) {
-        cfdj.f();
+        chkv.f();
         LayoutInflater.from(context).inflate(R.layout.sharing_view_content_preview, this);
         if (attributeSet == null || b(context, attributeSet) == 1 || b(context, attributeSet) != 2) {
             return;
@@ -29,7 +29,7 @@ public class ContentView extends FrameLayout {
     }
 
     private static final int b(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, clzc.e);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, cohk.e);
         if (!obtainStyledAttributes.hasValue(0)) {
             return 1;
         }

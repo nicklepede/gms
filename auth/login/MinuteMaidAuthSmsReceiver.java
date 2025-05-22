@@ -7,15 +7,15 @@ import android.telephony.SmsMessage;
 import android.util.Log;
 import android.webkit.WebView;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.dvni;
-import defpackage.fkkz;
-import defpackage.vfv;
+import defpackage.dxyi;
+import defpackage.fnbo;
+import defpackage.xbw;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class MinuteMaidAuthSmsReceiver extends TracingBroadcastReceiver {
     private final WebView a;
@@ -26,15 +26,15 @@ public class MinuteMaidAuthSmsReceiver extends TracingBroadcastReceiver {
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         ArrayList arrayList = new ArrayList();
         SmsMessage[] messagesFromIntent = Telephony.Sms.Intents.getMessagesFromIntent(intent);
         if (messagesFromIntent == null) {
             Log.w("Auth", String.format(Locale.US, "[MinuteMaid, MinuteMaidAuthSmsReceiver] messages is null", new Object[0]));
             return;
         }
-        dvni dvniVar = vfv.a;
-        Pattern compile = Pattern.compile(fkkz.a.a().u());
+        dxyi dxyiVar = xbw.a;
+        Pattern compile = Pattern.compile(fnbo.a.lK().u());
         for (SmsMessage smsMessage : messagesFromIntent) {
             String displayMessageBody = smsMessage.getDisplayMessageBody();
             if (displayMessageBody == null) {

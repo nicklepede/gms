@@ -4,12 +4,12 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.abas;
-import defpackage.arxc;
+import defpackage.adas;
+import defpackage.atzr;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class ScopeData extends AbstractSafeParcelable implements ReflectedParcelable {
     final int b;
@@ -29,7 +29,7 @@ public final class ScopeData extends AbstractSafeParcelable implements Reflected
     public List p;
     public String q;
     public static final List a = Collections.EMPTY_LIST;
-    public static final Parcelable.Creator CREATOR = new abas();
+    public static final Parcelable.Creator CREATOR = new adas();
 
     public ScopeData(int i, String str, String str2, String str3, String str4, boolean z, String str5, String str6, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, List list, String str7) {
         this.b = i;
@@ -64,24 +64,24 @@ public final class ScopeData extends AbstractSafeParcelable implements Reflected
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.o(parcel, 1, this.b);
-        arxc.v(parcel, 2, this.c, false);
-        arxc.v(parcel, 3, this.d, false);
-        arxc.v(parcel, 4, this.e, false);
-        arxc.v(parcel, 5, this.f, false);
-        arxc.e(parcel, 6, this.g);
-        arxc.v(parcel, 7, this.h, false);
-        arxc.v(parcel, 8, this.i, false);
-        arxc.e(parcel, 9, this.j);
-        arxc.e(parcel, 10, this.k);
-        arxc.e(parcel, 11, this.l);
-        arxc.e(parcel, 12, this.m);
-        arxc.e(parcel, 13, this.n);
-        arxc.e(parcel, 14, this.o);
-        arxc.x(parcel, 15, this.p, false);
-        arxc.v(parcel, 16, this.q, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.o(parcel, 1, this.b);
+        atzr.v(parcel, 2, this.c, false);
+        atzr.v(parcel, 3, this.d, false);
+        atzr.v(parcel, 4, this.e, false);
+        atzr.v(parcel, 5, this.f, false);
+        atzr.e(parcel, 6, this.g);
+        atzr.v(parcel, 7, this.h, false);
+        atzr.v(parcel, 8, this.i, false);
+        atzr.e(parcel, 9, this.j);
+        atzr.e(parcel, 10, this.k);
+        atzr.e(parcel, 11, this.l);
+        atzr.e(parcel, 12, this.m);
+        atzr.e(parcel, 13, this.n);
+        atzr.e(parcel, 14, this.o);
+        atzr.x(parcel, 15, this.p, false);
+        atzr.v(parcel, 16, this.q, false);
+        atzr.c(parcel, a2);
     }
 
     public ScopeData(String str, String str2, String str3, String str4, boolean z, String str5, String str6, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, List list, String str7) {

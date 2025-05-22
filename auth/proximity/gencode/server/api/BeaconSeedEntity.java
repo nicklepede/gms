@@ -5,18 +5,18 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse;
 import defpackage.a;
-import defpackage.acon;
-import defpackage.acoo;
-import defpackage.arxc;
+import defpackage.aeon;
+import defpackage.aeoo;
+import defpackage.atzr;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class BeaconSeedEntity extends FastSafeParcelableJsonResponse implements acon {
-    public static final Parcelable.Creator CREATOR = new acoo();
+public final class BeaconSeedEntity extends FastSafeParcelableJsonResponse implements aeon {
+    public static final Parcelable.Creator CREATOR = new aeoo();
     private static final HashMap e;
     final Set a;
     String b;
@@ -38,7 +38,7 @@ public final class BeaconSeedEntity extends FastSafeParcelableJsonResponse imple
         this.d = j2;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
@@ -53,22 +53,22 @@ public final class BeaconSeedEntity extends FastSafeParcelableJsonResponse imple
         throw new IllegalStateException(a.j(i, "Unknown safe parcelable id="));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return e;
     }
 
-    @Override // defpackage.acon
+    @Override // defpackage.aeon
     public final long c() {
         return this.c;
     }
 
-    @Override // defpackage.acon
+    @Override // defpackage.aeon
     public final long d() {
         return this.d;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
@@ -94,7 +94,7 @@ public final class BeaconSeedEntity extends FastSafeParcelableJsonResponse imple
         return true;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i = fastJsonResponse$Field.g;
         if (i != 2) {
@@ -104,12 +104,12 @@ public final class BeaconSeedEntity extends FastSafeParcelableJsonResponse imple
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.acon
+    @Override // defpackage.aeon
     public final String g() {
         return this.b;
     }
 
-    @Override // defpackage.acon
+    @Override // defpackage.aeon
     public final boolean h() {
         return this.a.contains(2);
     }
@@ -125,17 +125,17 @@ public final class BeaconSeedEntity extends FastSafeParcelableJsonResponse imple
         return i;
     }
 
-    @Override // defpackage.acon
+    @Override // defpackage.aeon
     public final boolean i() {
         return this.a.contains(3);
     }
 
-    @Override // defpackage.acon
+    @Override // defpackage.aeon
     public final boolean j() {
         return this.a.contains(4);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void k(FastJsonResponse$Field fastJsonResponse$Field, String str, long j) {
         int i = fastJsonResponse$Field.g;
         if (i == 3) {
@@ -152,24 +152,24 @@ public final class BeaconSeedEntity extends FastSafeParcelableJsonResponse imple
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.v(parcel, 2, this.b, true);
+            atzr.v(parcel, 2, this.b, true);
         }
         if (set.contains(3)) {
-            arxc.q(parcel, 3, this.c);
+            atzr.q(parcel, 3, this.c);
         }
         if (set.contains(4)) {
-            arxc.q(parcel, 4, this.d);
+            atzr.q(parcel, 4, this.d);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public BeaconSeedEntity() {
         this.a = new HashSet();
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

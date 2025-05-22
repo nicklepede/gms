@@ -4,53 +4,53 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.BroadcastReceiver;
 import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
-import defpackage.apta;
-import defpackage.apud;
-import defpackage.aqam;
-import defpackage.aqxd;
-import defpackage.aqxo;
-import defpackage.arho;
-import defpackage.arhq;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asot;
-import defpackage.asri;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.derv;
-import defpackage.desa;
-import defpackage.detn;
-import defpackage.detx;
-import defpackage.dhqe;
-import defpackage.dhqf;
-import defpackage.eijr;
-import defpackage.eitj;
-import defpackage.fecj;
-import defpackage.fijx;
-import defpackage.fikc;
-import defpackage.fkba;
-import defpackage.fshj;
-import defpackage.fsic;
-import defpackage.fski;
-import defpackage.fuuq;
+import defpackage.arvr;
+import defpackage.arwu;
+import defpackage.asdd;
+import defpackage.aszs;
+import defpackage.atad;
+import defpackage.atkd;
+import defpackage.atkf;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.ausn;
+import defpackage.auvc;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.dhcy;
+import defpackage.dhdd;
+import defpackage.dheq;
+import defpackage.dhfa;
+import defpackage.dkbk;
+import defpackage.dkbl;
+import defpackage.ekww;
+import defpackage.elgo;
+import defpackage.fgrc;
+import defpackage.fkzu;
+import defpackage.fkzz;
+import defpackage.fmri;
+import defpackage.fvch;
+import defpackage.fvda;
+import defpackage.fvfg;
+import defpackage.fxqo;
 import j$.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class DropBoxEntryAddedChimeraService extends TracingIntentService {
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Receiver extends BroadcastReceiver {
         @Override // com.google.android.chimera.BroadcastReceiver
         public final void onReceive(Context context, Intent intent) {
-            if (!fski.a.a().s() || detx.a()) {
-                eijr eijrVar = bqqe.a;
+            if (!fvfg.a.lK().s() || dhfa.a()) {
+                ekww ekwwVar = bsxv.a;
                 if (Objects.equals(intent.getAction(), "android.intent.action.DROPBOX_ENTRY_ADDED")) {
-                    bqqa.a(aseu.STATS_DROPBOX_ENTRY_ADDED);
+                    bsxr.a(auio.STATS_DROPBOX_ENTRY_ADDED);
                 }
-                if (Objects.equals(intent.getAction(), "android.intent.action.DROPBOX_ENTRY_ADDED") && detn.c(context, intent.getStringExtra("tag"))) {
-                    bqqa.a(aseu.STATS_DROPBOX_ENTRY_CONSENTED);
+                if (Objects.equals(intent.getAction(), "android.intent.action.DROPBOX_ENTRY_ADDED") && dheq.c(context, intent.getStringExtra("tag"))) {
+                    bsxr.a(auio.STATS_DROPBOX_ENTRY_CONSENTED);
                     Intent intent2 = new Intent("com.google.android.gms.stats.ACTION_UPLOAD_DROPBOX_ENTRIES");
                     intent2.setPackage(context.getPackageName());
                     context.startService(intent2);
@@ -60,7 +60,7 @@ public class DropBoxEntryAddedChimeraService extends TracingIntentService {
     }
 
     static {
-        asot.b("DropBoxEntryAddedChiSer", asej.STATS);
+        ausn.b("DropBoxEntryAddedChiSer", auid.STATS);
     }
 
     public DropBoxEntryAddedChimeraService() {
@@ -69,111 +69,112 @@ public class DropBoxEntryAddedChimeraService extends TracingIntentService {
 
     @Override // com.google.android.gms.framework.tracing.wrapper.TracingIntentService
     protected final void a(Intent intent) {
-        apud apudVar;
-        apta aptaVar;
-        aqxo aqxoVar;
+        arwu arwuVar;
+        arvr arvrVar;
+        atad atadVar;
         if ("com.google.android.gms.stats.ACTION_UPLOAD_DROPBOX_ENTRIES".equals(intent.getAction())) {
-            long j = derv.a;
-            if (!asri.o().contains("(eng-") && detx.a()) {
-                desa desaVar = new desa();
-                if (fsic.c()) {
+            long j = dhcy.a;
+            if (!auvc.o().contains("(eng-") && dhfa.a()) {
+                dhdd dhddVar = new dhdd();
+                if (fvda.c()) {
                     long currentTimeMillis = System.currentTimeMillis();
-                    aqam aqamVar = derv.c;
-                    fuuq fuuqVar = new fuuq() { // from class: dern
-                        @Override // defpackage.fuuq, defpackage.fuup
+                    asdd asddVar = dhcy.c;
+                    fxqo fxqoVar = new fxqo() { // from class: dhcq
+                        @Override // defpackage.fxqo, defpackage.fxqn
                         public final Object a() {
-                            long j2 = derv.a;
-                            asot asotVar = tvo.a;
-                            asee h = fshj.a.a().h();
-                            tvo tvoVar = null;
-                            if ((!h.b.isEmpty() || fshj.d()) && asqh.a()) {
-                                tvoVar = new tvo(this, h);
+                            long j2 = dhcy.a;
+                            ausn ausnVar = vro.a;
+                            auhy h = fvch.a.lK().h();
+                            vro vroVar = null;
+                            if ((!h.b.isEmpty() || fvch.c()) && auub.a()) {
+                                vroVar = new vro(this, h);
                             }
-                            return eiid.i(tvoVar);
+                            return ekvi.i(vroVar);
                         }
                     };
-                    arho arhoVar = new arho(this);
-                    arhq b = arhq.b();
-                    long e = fshj.a.a().e();
+                    atkd atkdVar = new atkd(this);
+                    atkf b = atkf.b();
+                    fvch fvchVar = fvch.a;
+                    long e = fvchVar.lK().e();
                     if (e != 0) {
-                        if (currentTimeMillis - derv.a < e) {
-                            int i = derv.b + 1;
-                            derv.b = i;
-                            if (i > fshj.a.a().f()) {
+                        if (currentTimeMillis - dhcy.a < e) {
+                            int i = dhcy.b + 1;
+                            dhcy.b = i;
+                            if (i > fvchVar.lK().f()) {
                                 return;
                             }
                         } else {
-                            derv.a = currentTimeMillis;
-                            derv.b = 1;
+                            dhcy.a = currentTimeMillis;
+                            dhcy.b = 1;
                         }
                     }
-                    fuuq fuuqVar2 = aqamVar.a;
-                    apta aptaVar2 = new apta(this, null, null);
-                    apud apudVar2 = new apud(aptaVar2, "PLATFORM_STATS_COUNTERS", 1024);
-                    dhqe dhqeVar = new dhqe();
-                    aqxd aqxdVar = dhqf.a;
-                    aqxo aqxoVar2 = new aqxo(this, dhqeVar);
-                    if (fski.a.a().u()) {
-                        eitj b2 = derv.b(this, apudVar2, desaVar, aqxoVar2, currentTimeMillis);
-                        apudVar = apudVar2;
-                        desa desaVar2 = desaVar;
-                        aqxo aqxoVar3 = aqxoVar2;
+                    fxqo fxqoVar2 = asddVar.a;
+                    arvr arvrVar2 = new arvr(this, null, null);
+                    arwu arwuVar2 = new arwu(arvrVar2, "PLATFORM_STATS_COUNTERS", 1024);
+                    dkbk dkbkVar = new dkbk();
+                    aszs aszsVar = dkbl.a;
+                    atad atadVar2 = new atad(this, dkbkVar);
+                    if (fvfg.a.lK().u()) {
+                        elgo b2 = dhcy.b(this, arwuVar2, dhddVar, atadVar2, currentTimeMillis);
+                        arwuVar = arwuVar2;
+                        dhdd dhddVar2 = dhddVar;
+                        atad atadVar3 = atadVar2;
                         long j2 = currentTimeMillis;
                         int size = b2.size();
                         int i2 = 0;
                         while (i2 < size) {
-                            fikc fikcVar = (fikc) b2.get(i2);
-                            fuuq fuuqVar3 = fuuqVar;
+                            fkzz fkzzVar = (fkzz) b2.get(i2);
+                            fxqo fxqoVar3 = fxqoVar;
                             int i3 = i2;
-                            derv.c(this, desaVar2, fikcVar, j2, fuuqVar3);
-                            arho arhoVar2 = arhoVar;
-                            derv.d(this, desaVar2, fikcVar, j2, arhoVar2);
+                            dhcy.c(this, dhddVar2, fkzzVar, j2, fxqoVar3);
+                            atkd atkdVar2 = atkdVar;
+                            dhcy.d(this, dhddVar2, fkzzVar, j2, atkdVar2);
                             long j3 = j2;
-                            if (fikcVar != null && fkba.f()) {
-                                fikcVar = b.c(fikcVar);
+                            if (fkzzVar != null && fmri.f()) {
+                                fkzzVar = b.c(fkzzVar);
                             }
-                            if (fikcVar == null || fikcVar.k.isEmpty()) {
-                                aqxoVar = aqxoVar3;
+                            if (fkzzVar == null || fkzzVar.k.isEmpty()) {
+                                atadVar = atadVar3;
                             } else {
-                                fecj fecjVar = (fecj) fikcVar.iB(5, null);
-                                fecjVar.X(fikcVar);
-                                fijx fijxVar = (fijx) fecjVar;
-                                desa desaVar3 = desaVar2;
-                                aqxoVar = aqxoVar3;
-                                desaVar3.l(this, aqxoVar, aptaVar2, apudVar, fijxVar);
-                                desaVar2 = desaVar3;
+                                fgrc fgrcVar = (fgrc) fkzzVar.iQ(5, null);
+                                fgrcVar.X(fkzzVar);
+                                fkzu fkzuVar = (fkzu) fgrcVar;
+                                dhdd dhddVar3 = dhddVar2;
+                                atadVar = atadVar3;
+                                dhddVar3.l(this, atadVar, arvrVar2, arwuVar, fkzuVar);
+                                dhddVar2 = dhddVar3;
                             }
                             i2 = i3 + 1;
-                            aqxoVar3 = aqxoVar;
-                            fuuqVar = fuuqVar3;
+                            atadVar3 = atadVar;
+                            fxqoVar = fxqoVar3;
                             j2 = j3;
-                            arhoVar = arhoVar2;
+                            atkdVar = atkdVar2;
                         }
                         long j4 = j2;
-                        arho arhoVar3 = arhoVar;
-                        fuuq fuuqVar4 = fuuqVar;
+                        atkd atkdVar3 = atkdVar;
+                        fxqo fxqoVar4 = fxqoVar;
                         if (b2.isEmpty()) {
-                            derv.c(this, desaVar2, null, j4, fuuqVar4);
-                            derv.d(this, desaVar2, null, j4, arhoVar3);
+                            dhcy.c(this, dhddVar2, null, j4, fxqoVar4);
+                            dhcy.d(this, dhddVar2, null, j4, atkdVar3);
                         }
                     } else {
-                        fikc a = derv.a(this, apudVar2, desaVar, aqxoVar2, currentTimeMillis);
-                        apudVar = apudVar2;
-                        derv.c(this, desaVar, a, currentTimeMillis, fuuqVar);
-                        derv.d(this, desaVar, a, currentTimeMillis, arhoVar);
-                        fikc c = (a == null || !fkba.f()) ? a : b.c(a);
+                        fkzz a = dhcy.a(this, arwuVar2, dhddVar, atadVar2, currentTimeMillis);
+                        arwuVar = arwuVar2;
+                        dhcy.c(this, dhddVar, a, currentTimeMillis, fxqoVar);
+                        dhcy.d(this, dhddVar, a, currentTimeMillis, atkdVar);
+                        fkzz c = (a == null || !fmri.f()) ? a : b.c(a);
                         if (c != null && !c.k.isEmpty()) {
-                            fecj fecjVar2 = (fecj) c.iB(5, null);
-                            fecjVar2.X(c);
-                            aptaVar = aptaVar2;
-                            desaVar.l(this, aqxoVar2, aptaVar, apudVar, (fijx) fecjVar2);
-                            apudVar.h();
-                            aptaVar.e(10L, TimeUnit.SECONDS);
+                            fgrc fgrcVar2 = (fgrc) c.iQ(5, null);
+                            fgrcVar2.X(c);
+                            arvrVar = arvrVar2;
+                            dhddVar.l(this, atadVar2, arvrVar, arwuVar, (fkzu) fgrcVar2);
+                            arwuVar.h();
+                            arvrVar.e(10L, TimeUnit.SECONDS);
                         }
                     }
-                    aptaVar = aptaVar2;
-                    apudVar.h();
-                    aptaVar.e(10L, TimeUnit.SECONDS);
+                    arvrVar = arvrVar2;
+                    arwuVar.h();
+                    arvrVar.e(10L, TimeUnit.SECONDS);
                 }
             }
         }

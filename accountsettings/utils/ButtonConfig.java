@@ -3,12 +3,12 @@ package com.google.android.gms.accountsettings.utils;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.sye;
+import defpackage.uuc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ButtonConfig implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new sye();
+    public static final Parcelable.Creator CREATOR = new uuc();
     public final String a;
     public final int b;
     private final Bundle c;

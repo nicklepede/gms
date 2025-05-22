@@ -1,69 +1,69 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.fipo;
-import defpackage.fipt;
-import defpackage.fipu;
-import defpackage.fipw;
-import defpackage.fiqb;
-import defpackage.fiqq;
-import defpackage.firp;
-import defpackage.fuwy;
-import defpackage.fvbo;
+import defpackage.flfl;
+import defpackage.flfq;
+import defpackage.flfr;
+import defpackage.flft;
+import defpackage.flfy;
+import defpackage.flgn;
+import defpackage.flhm;
+import defpackage.fxsw;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public final class CredentialExchangeFormat_Fido2HmacSecretJsonAdapter extends fipo {
-    private final fipu a;
-    private final fipo b;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public final class CredentialExchangeFormat_Fido2HmacSecretJsonAdapter extends flfl {
+    private final flfr a;
+    private final flfl b;
 
-    public CredentialExchangeFormat_Fido2HmacSecretJsonAdapter(fiqq fiqqVar) {
-        fvbo.f(fiqqVar, "moshi");
-        this.a = fipt.a("algorithm", "secret");
-        this.b = fiqqVar.d(String.class, fuwy.a, "algorithm");
+    public CredentialExchangeFormat_Fido2HmacSecretJsonAdapter(flgn flgnVar) {
+        fxxm.f(flgnVar, "moshi");
+        this.a = flfq.a("algorithm", "secret");
+        this.b = flgnVar.d(String.class, fxsw.a, "algorithm");
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ Object a(fipw fipwVar) {
-        fipwVar.i();
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ Object a(flft flftVar) {
+        flftVar.i();
         String str = null;
         String str2 = null;
-        while (fipwVar.o()) {
-            int c = fipwVar.c(this.a);
+        while (flftVar.o()) {
+            int c = flftVar.c(this.a);
             if (c == -1) {
-                fipwVar.m();
-                fipwVar.n();
+                flftVar.m();
+                flftVar.n();
             } else if (c == 0) {
-                str = (String) this.b.a(fipwVar);
+                str = (String) this.b.a(flftVar);
                 if (str == null) {
-                    throw firp.c("algorithm", "algorithm", fipwVar);
+                    throw flhm.c("algorithm", "algorithm", flftVar);
                 }
-            } else if (c == 1 && (str2 = (String) this.b.a(fipwVar)) == null) {
-                throw firp.c("secret", "secret", fipwVar);
+            } else if (c == 1 && (str2 = (String) this.b.a(flftVar)) == null) {
+                throw flhm.c("secret", "secret", flftVar);
             }
         }
-        fipwVar.k();
+        flftVar.k();
         if (str == null) {
-            throw firp.b("algorithm", "algorithm", fipwVar);
+            throw flhm.b("algorithm", "algorithm", flftVar);
         }
         if (str2 != null) {
             return new CredentialExchangeFormat$Fido2HmacSecret(str, str2);
         }
-        throw firp.b("secret", "secret", fipwVar);
+        throw flhm.b("secret", "secret", flftVar);
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ void b(fiqb fiqbVar, Object obj) {
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ void b(flfy flfyVar, Object obj) {
         CredentialExchangeFormat$Fido2HmacSecret credentialExchangeFormat$Fido2HmacSecret = (CredentialExchangeFormat$Fido2HmacSecret) obj;
         if (credentialExchangeFormat$Fido2HmacSecret == null) {
             throw new NullPointerException("value was null! Wrap in .nullSafe() to write nullable values.");
         }
-        fiqbVar.d();
-        fiqbVar.j("algorithm");
-        fipo fipoVar = this.b;
-        fipoVar.b(fiqbVar, credentialExchangeFormat$Fido2HmacSecret.a);
-        fiqbVar.j("secret");
-        fipoVar.b(fiqbVar, credentialExchangeFormat$Fido2HmacSecret.b);
-        fiqbVar.f();
+        flfyVar.d();
+        flfyVar.j("algorithm");
+        flfl flflVar = this.b;
+        flflVar.b(flfyVar, credentialExchangeFormat$Fido2HmacSecret.a);
+        flfyVar.j("secret");
+        flflVar.b(flfyVar, credentialExchangeFormat$Fido2HmacSecret.b);
+        flfyVar.f();
     }
 
     public final String toString() {

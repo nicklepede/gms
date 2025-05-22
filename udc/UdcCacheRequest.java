@@ -3,16 +3,16 @@ package com.google.android.gms.udc;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.dgvo;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.djgu;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class UdcCacheRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dgvo();
+    public static final Parcelable.Creator CREATOR = new djgu();
     public final int[] a;
 
     public UdcCacheRequest(int[] iArr) {
@@ -35,15 +35,15 @@ public class UdcCacheRequest extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("SettingId", Arrays.toString(this.a), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("SettingId", Arrays.toString(this.a), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int[] iArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.p(parcel, 2, iArr, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.p(parcel, 2, iArr, false);
+        atzr.c(parcel, a);
     }
 }

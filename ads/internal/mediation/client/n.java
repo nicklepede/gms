@@ -2,7 +2,7 @@ package com.google.android.gms.ads.internal.mediation.client;
 
 import com.google.android.gms.ads.internal.client.VideoOptionsParcel;
 import com.google.android.gms.ads.internal.formats.NativeAdOptionsParcel;
-import defpackage.tdl;
+import defpackage.uzl;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class n implements com.google.android.gms.ads.mediation.k {
     private final Set a;
@@ -89,7 +89,7 @@ public final class n implements com.google.android.gms.ads.mediation.k {
             }
             VideoOptionsParcel videoOptionsParcel = nativeAdOptionsParcel.f;
             if (videoOptionsParcel != null) {
-                dVar.e = new tdl(videoOptionsParcel);
+                dVar.e = new uzl(videoOptionsParcel);
             }
         }
         dVar.f = nativeAdOptionsParcel.e;
@@ -156,7 +156,7 @@ public final class n implements com.google.android.gms.ads.mediation.k {
         L46:
             com.google.android.gms.ads.internal.client.VideoOptionsParcel r2 = r1.f
             if (r2 == 0) goto L51
-            tdl r3 = new tdl
+            uzl r3 = new uzl
             r3.<init>(r2)
             r0.d = r3
         L51:

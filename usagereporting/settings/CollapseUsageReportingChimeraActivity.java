@@ -9,107 +9,107 @@ import com.android.settingslib.widget.MainSwitchPreference;
 import com.google.android.gms.R;
 import com.google.android.gms.usagereporting.UsageReportingOptInOptions;
 import com.google.android.gms.usagereporting.settings.CollapseUsageReportingChimeraActivity;
-import defpackage.aqxd;
-import defpackage.aqxo;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asmf;
-import defpackage.asot;
+import defpackage.aszs;
+import defpackage.atad;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.aupz;
+import defpackage.ausn;
 import defpackage.bp;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.cwwi;
-import defpackage.dfah;
-import defpackage.dhqe;
-import defpackage.dhqf;
-import defpackage.dhrq;
-import defpackage.dhsa;
-import defpackage.dhse;
-import defpackage.dhsf;
-import defpackage.dhsg;
-import defpackage.dhsj;
-import defpackage.dhsk;
-import defpackage.dhsl;
-import defpackage.dhsm;
-import defpackage.dhso;
-import defpackage.dhsp;
-import defpackage.eijr;
-import defpackage.ejhf;
-import defpackage.ensv;
-import defpackage.fssc;
-import defpackage.fssf;
-import defpackage.ngk;
-import defpackage.qgg;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.czgg;
+import defpackage.dhln;
+import defpackage.dkbk;
+import defpackage.dkbl;
+import defpackage.dkcw;
+import defpackage.dkdi;
+import defpackage.dkdm;
+import defpackage.dkdn;
+import defpackage.dkdo;
+import defpackage.dkdr;
+import defpackage.dkds;
+import defpackage.dkdt;
+import defpackage.dkdu;
+import defpackage.dkdw;
+import defpackage.dkdx;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.eqgo;
+import defpackage.fvns;
+import defpackage.fvnv;
+import defpackage.ozl;
+import defpackage.rzk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class CollapseUsageReportingChimeraActivity extends qgg implements ngk {
-    public static final asot j = asot.b("CollapseUsageReportingChimeraActivity", asej.USAGE_REPORTING);
-    dhsj k;
-    public dhsg l;
-    public bqqa m;
-    private final ensv n = new asmf(1, 9);
+public class CollapseUsageReportingChimeraActivity extends rzk implements ozl {
+    public static final ausn j = ausn.b("CollapseUsageReportingChimeraActivity", auid.USAGE_REPORTING);
+    dkdr k;
+    public dkdo l;
+    public bsxr m;
+    private final eqgo n = new aupz(1, 9);
     private boolean o;
-    private aqxo p;
+    private atad p;
 
-    @Override // defpackage.ngk
-    public final void fb(CompoundButton compoundButton, boolean z) {
-        aseu aseuVar;
-        ((ejhf) j.h()).x("set checkbox optin options");
-        this.p.aN(new UsageReportingOptInOptions(true != z ? 2 : 1)).y(new dfah() { // from class: dhsd
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
-                ((ejhf) ((ejhf) CollapseUsageReportingChimeraActivity.j.i()).s(exc)).x("Unable to set opt-in options");
+    @Override // defpackage.ozl
+    public final void fo(CompoundButton compoundButton, boolean z) {
+        auio auioVar;
+        ((eluo) j.h()).x("set checkbox optin options");
+        this.p.aM(new UsageReportingOptInOptions(true != z ? 2 : 1)).y(new dhln() { // from class: dkdl
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                ((eluo) ((eluo) CollapseUsageReportingChimeraActivity.j.i()).s(exc)).x("Unable to set opt-in options");
             }
         });
         if (z) {
-            aseuVar = aseu.USAGEREPORTING_CHECKBOX_OPT_IN;
+            auioVar = auio.USAGEREPORTING_CHECKBOX_OPT_IN;
         } else {
-            aqxd aqxdVar = cwwi.a;
-            new aqxo((Context) this, (short[]) null).ar();
-            aseuVar = aseu.USAGEREPORTING_CHECKBOX_OPT_OUT;
+            aszs aszsVar = czgg.a;
+            new atad((Context) this, (short[]) null).aq();
+            auioVar = auio.USAGEREPORTING_CHECKBOX_OPT_OUT;
         }
-        bqqa.a(aseuVar);
+        bsxr.a(auioVar);
     }
 
-    @Override // defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         MainSwitchPreference J;
         super.onCreate(bundle);
-        eijr eijrVar = bqqe.a;
-        this.m = new bqqa();
+        ekww ekwwVar = bsxv.a;
+        this.m = new bsxr();
         setTitle(getString(R.string.common_usage_and_diagnostics));
-        if (fssc.a.a().j()) {
-            this.k = new dhse();
+        if (fvns.a.lK().j()) {
+            this.k = new dkdm();
             bp bpVar = new bp(getSupportFragmentManager());
-            bpVar.F(R.id.content_frame, (dhse) this.k);
+            bpVar.F(R.id.content_frame, (dkdm) this.k);
             bpVar.d();
         } else {
-            this.k = new dhsf();
+            this.k = new dkdn();
             bp bpVar2 = new bp(getSupportFragmentManager());
-            bpVar2.F(R.id.content_frame, (dhsf) this.k);
+            bpVar2.F(R.id.content_frame, (dkdn) this.k);
             bpVar2.d();
         }
-        dhsa.e();
-        this.o = !dhrq.g();
-        dhqe dhqeVar = new dhqe();
-        aqxd aqxdVar = dhqf.a;
-        this.p = new aqxo(this, dhqeVar);
-        fssc.e();
-        fssc.e();
-        this.l = new dhsg(this);
+        dkdi.e();
+        this.o = !dkcw.g();
+        dkbk dkbkVar = new dkbk();
+        aszs aszsVar = dkbl.a;
+        this.p = new atad(this, dkbkVar);
+        fvns.e();
+        fvns.e();
+        this.l = new dkdo(this);
         if (this.o || (J = this.k.J()) == null) {
             return;
         }
         J.ah(this);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStart() {
-        dhsp dhslVar;
+        dkdx dkdtVar;
         super.onStart();
-        asot asotVar = dhrq.a;
-        boolean e = dhrq.e(this);
+        ausn ausnVar = dkcw.a;
+        boolean e = dkcw.e(this);
         MainSwitchPreference J = this.k.J();
         if (J != null) {
             J.k(e);
@@ -123,27 +123,27 @@ public class CollapseUsageReportingChimeraActivity extends qgg implements ngk {
         if (K == null) {
             return;
         }
-        dhsg dhsgVar = this.l;
-        if (dhsgVar.b()) {
-            dhslVar = new dhso(dhsgVar.b);
-        } else if (dhsgVar.a()) {
-            dhslVar = new dhsm(dhsgVar.b);
+        dkdo dkdoVar = this.l;
+        if (dkdoVar.b()) {
+            dkdtVar = new dkdw(dkdoVar.b);
+        } else if (dkdoVar.a()) {
+            dkdtVar = new dkdu(dkdoVar.b);
         } else {
-            boolean h = fssf.h();
-            Context context = dhsgVar.b;
-            dhslVar = h ? new dhsl(context) : new dhsk(context);
+            boolean h = fvnv.h();
+            Context context = dkdoVar.b;
+            dkdtVar = h ? new dkdt(context) : new dkds(context);
         }
-        K.S(dhslVar.a());
+        K.S(dkdtVar.a());
         K.o(getString(R.string.usage_reporting_learn_more_description));
         K.af(getString(R.string.usage_reporting_learn_more_description));
-        K.l(new View.OnClickListener() { // from class: dhsc
+        K.l(new View.OnClickListener() { // from class: dkdk
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 Intent intent = new Intent("android.intent.action.VIEW");
                 CollapseUsageReportingChimeraActivity collapseUsageReportingChimeraActivity = CollapseUsageReportingChimeraActivity.this;
-                dhsg dhsgVar2 = collapseUsageReportingChimeraActivity.l;
-                collapseUsageReportingChimeraActivity.startActivity(intent.setData((dhsgVar2.a() || dhsgVar2.b()) ? dhsg.a : dmoe.a(dhsgVar2.b)));
-                bqqa.a(aseu.USAGEREPORTING_ON_CLICK_LEARN_MORE);
+                dkdo dkdoVar2 = collapseUsageReportingChimeraActivity.l;
+                collapseUsageReportingChimeraActivity.startActivity(intent.setData((dkdoVar2.a() || dkdoVar2.b()) ? dkdo.a : dozs.a(dkdoVar2.b)));
+                bsxr.a(auio.USAGEREPORTING_ON_CLICK_LEARN_MORE);
             }
         });
     }

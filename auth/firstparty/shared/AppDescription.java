@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.abai;
-import defpackage.arwm;
-import defpackage.arxc;
+import defpackage.adai;
+import defpackage.atzb;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AppDescription extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new abai();
+    public static final Parcelable.Creator CREATOR = new adai();
     private static final String g = "[AppDescription]";
     final int a;
     public int b;
@@ -25,9 +25,9 @@ public class AppDescription extends AbstractSafeParcelable implements ReflectedP
         this.a = i;
         this.c = str;
         this.d = str2;
-        arwm.r(str3, String.valueOf(g).concat(" callingPkg cannot be null or empty!"));
+        atzb.r(str3, String.valueOf(g).concat(" callingPkg cannot be null or empty!"));
         this.e = str3;
-        arwm.c(i2 != 0, "Invalid callingUid! Cannot be 0!");
+        atzb.c(i2 != 0, "Invalid callingUid! Cannot be 0!");
         this.b = i2;
         this.f = z;
     }
@@ -38,14 +38,14 @@ public class AppDescription extends AbstractSafeParcelable implements ReflectedP
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.o(parcel, 2, this.b);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.e(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.o(parcel, 2, this.b);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.e(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 
     public AppDescription(String str, int i) {

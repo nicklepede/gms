@@ -5,12 +5,12 @@ import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.ChainInfo;
 import com.google.android.gms.reminders.model.ChainInfoEntity;
 import com.google.android.gms.reminders.model.FeatureIdProto;
-import defpackage.cxeb;
-import defpackage.cxee;
+import defpackage.cznx;
+import defpackage.czoa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class ChainInfoRef extends cxeb implements ChainInfo {
+public class ChainInfoRef extends cznx implements ChainInfo {
     private boolean f;
     private FeatureIdProtoRef g;
 
@@ -50,7 +50,7 @@ public class ChainInfoRef extends cxeb implements ChainInfo {
         return 0;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof ChainInfo)) {
             return false;
@@ -61,18 +61,18 @@ public class ChainInfoRef extends cxeb implements ChainInfo {
         return ChainInfoEntity.d(this, (ChainInfo) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return ChainInfoEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new ChainInfoEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxee.a(new ChainInfoEntity(this), parcel, i);
+        czoa.a(new ChainInfoEntity(this), parcel, i);
     }
 }

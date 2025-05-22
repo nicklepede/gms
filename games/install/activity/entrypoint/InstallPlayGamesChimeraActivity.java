@@ -2,46 +2,46 @@ package com.google.android.gms.games.install.activity.entrypoint;
 
 import android.content.Intent;
 import android.os.Bundle;
-import defpackage.bhlt;
-import defpackage.bhlu;
-import defpackage.bhnq;
+import defpackage.bjqi;
+import defpackage.bjqj;
+import defpackage.bjsf;
 import defpackage.bp;
-import defpackage.fiwq;
-import defpackage.fiwu;
-import defpackage.qet;
+import defpackage.flmn;
+import defpackage.flmr;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class InstallPlayGamesChimeraActivity extends qet implements fiwu {
-    private bhlt j;
+public final class InstallPlayGamesChimeraActivity extends rxx implements flmr {
+    private bjqi j;
 
-    @Override // defpackage.fiwu
-    public final fiwq a() {
+    @Override // defpackage.flmr
+    public final flmn a() {
         return this.j.c();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         this.j.b().a(i, intent);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        bhlt a = bhlu.a(this);
+        bjqi a = bjqj.a(this);
         this.j = a;
         a.a().b(bundle);
         super.onCreate(bundle);
         if (getSupportFragmentManager().h("installFlowFragment") != null) {
             return;
         }
-        bhnq bhnqVar = new bhnq();
+        bjsf bjsfVar = new bjsf();
         bp bpVar = new bp(getSupportFragmentManager());
-        bpVar.v(bhnqVar, "installFlowFragment");
+        bpVar.v(bjsfVar, "installFlowFragment");
         bpVar.a();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         this.j.a().c(bundle);
         super.onSaveInstanceState(bundle);

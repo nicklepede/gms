@@ -14,43 +14,43 @@ import com.google.android.gms.common.Feature;
 import com.google.android.gms.common.moduleinstall.internal.ApiFeatureRequest;
 import com.google.android.setupdesign.GlifLayout;
 import defpackage.a;
-import defpackage.aodx;
-import defpackage.aogy;
-import defpackage.aryu;
-import defpackage.asaa;
-import defpackage.byhr;
-import defpackage.edeq;
-import defpackage.edfq;
-import defpackage.edgl;
-import defpackage.edjc;
-import defpackage.edjs;
-import defpackage.edjt;
-import defpackage.eiho;
-import defpackage.eitj;
-import defpackage.eivv;
-import defpackage.ejcb;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.ppx;
-import defpackage.psf;
-import defpackage.puq;
-import defpackage.qac;
-import defpackage.qet;
+import defpackage.aqfq;
+import defpackage.aqir;
+import defpackage.aubj;
+import defpackage.aucp;
+import defpackage.caqj;
+import defpackage.efrl;
+import defpackage.efsl;
+import defpackage.eftg;
+import defpackage.efvx;
+import defpackage.efwn;
+import defpackage.efwo;
+import defpackage.ekut;
+import defpackage.elgo;
+import defpackage.elja;
+import defpackage.elpg;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.rjb;
+import defpackage.rlj;
+import defpackage.rnu;
+import defpackage.rtg;
+import defpackage.rxx;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class ModuleDownloadChimeraActivity extends qet {
+public class ModuleDownloadChimeraActivity extends rxx {
     public Handler k;
     List l;
     String m;
-    aogy n;
+    aqir n;
     private long o;
     private long p;
     private long q;
-    private aryu r;
+    private aubj r;
     private GlifLayout s;
     public int j = 0;
     private boolean t = false;
@@ -68,11 +68,11 @@ public class ModuleDownloadChimeraActivity extends qet {
             this.r.c(new ApiFeatureRequest(this.l, false, null, this.m));
             i = 6;
         }
-        aogy aogyVar = this.n;
-        if (aogyVar != null) {
-            this.r.e(aogyVar);
+        aqir aqirVar = this.n;
+        if (aqirVar != null) {
+            this.r.e(aqirVar);
         }
-        aodx e = aodx.e();
+        aqfq e = aqfq.e();
         String l = l();
         if (l != null) {
             e.f(l);
@@ -105,35 +105,35 @@ public class ModuleDownloadChimeraActivity extends qet {
         }
         List list = this.l;
         if (list != null && !list.isEmpty()) {
-            str = ppx.b(qac.f(eitj.h(eivv.j(this.l, new eiho() { // from class: aogt
-                @Override // defpackage.eiho
+            str = rjb.b(rtg.g(elgo.h(elja.j(this.l, new ekut() { // from class: aqim
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
                     Feature feature = (Feature) obj;
-                    fecj v = pun.a.v();
+                    fgrc v = rnr.a.v();
                     String str2 = feature.a;
                     if (!v.b.L()) {
                         v.U();
                     }
-                    pun punVar = (pun) v.b;
+                    rnr rnrVar = (rnr) v.b;
                     str2.getClass();
-                    punVar.b |= 1;
-                    punVar.c = str2;
+                    rnrVar.b |= 1;
+                    rnrVar.c = str2;
                     long a = feature.a();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    pun punVar2 = (pun) v.b;
-                    punVar2.b |= 2;
-                    punVar2.d = a;
-                    return (pun) v.Q();
+                    rnr rnrVar2 = (rnr) v.b;
+                    rnrVar2.b |= 2;
+                    rnrVar2.d = a;
+                    return (rnr) v.Q();
                 }
-            })), ppx.a), true).toString();
+            })), rjb.a), true).toString();
         }
         e.b(this, i2, str);
         if (l != null) {
             e.g(l);
         }
-        Intent putExtra = new Intent().putExtra(psf.FALLBACK_ONLY_TAG, true);
+        Intent putExtra = new Intent().putExtra(rlj.FALLBACK_ONLY_TAG, true);
         FeatureRequestExtras.ResultBuilder resultBuilder = new FeatureRequestExtras.ResultBuilder();
         switch (i) {
             case 1:
@@ -176,14 +176,14 @@ public class ModuleDownloadChimeraActivity extends qet {
         k(i, 0);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void finish() {
         super.finish();
         if (this.t) {
             if (this.j == 1) {
-                edjc.e(getContainerActivity(), 2);
+                efvx.e(getContainerActivity(), 2);
             } else {
-                edjc.b(getContainerActivity(), 2);
+                efvx.b(getContainerActivity(), 2);
             }
         }
     }
@@ -206,7 +206,7 @@ public class ModuleDownloadChimeraActivity extends qet {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.chimera.container.ui.ModuleDownloadChimeraActivity.k(int, int):void");
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         int i = this.j;
         if (i == 0 || i == 7) {
@@ -215,9 +215,9 @@ public class ModuleDownloadChimeraActivity extends qet {
         m(i);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        eitj h;
+        elgo h;
         super.onCreate(bundle);
         if (bundle == null) {
             this.o = SystemClock.elapsedRealtime();
@@ -227,8 +227,8 @@ public class ModuleDownloadChimeraActivity extends qet {
             this.q = bundle.getLong("activity_foreground_duration_millis");
         }
         Intent intent = getIntent();
-        this.t = edgl.b(intent);
-        this.k = new byhr(new Handler.Callback() { // from class: aogu
+        this.t = eftg.b(intent);
+        this.k = new caqj(new Handler.Callback() { // from class: aqin
             @Override // android.os.Handler.Callback
             public final boolean handleMessage(Message message) {
                 ModuleDownloadChimeraActivity moduleDownloadChimeraActivity = ModuleDownloadChimeraActivity.this;
@@ -237,7 +237,7 @@ public class ModuleDownloadChimeraActivity extends qet {
                 return true;
             }
         });
-        this.r = new asaa(this);
+        this.r = new aucp(this);
         String stringExtra = intent.getStringExtra("get_module_install_request_package");
         if (stringExtra == null) {
             stringExtra = "com.google.android.gms";
@@ -246,18 +246,18 @@ public class ModuleDownloadChimeraActivity extends qet {
         try {
             byte[] byteArrayExtra = intent.getByteArrayExtra("chimera.FEATURE_LIST");
             if (byteArrayExtra == null) {
-                int i = eitj.d;
-                h = ejcb.a;
+                int i = elgo.d;
+                h = elpg.a;
             } else {
-                febw febwVar = febw.a;
-                feep feepVar = feep.a;
-                fecp y = fecp.y(puq.a, byteArrayExtra, 0, byteArrayExtra.length, febw.a);
-                fecp.M(y);
-                h = eitj.h(eivv.j(((puq) y).b, new eiho() { // from class: aoes
-                    @Override // defpackage.eiho
+                fgqp fgqpVar = fgqp.a;
+                fgti fgtiVar = fgti.a;
+                fgri y = fgri.y(rnu.a, byteArrayExtra, 0, byteArrayExtra.length, fgqp.a);
+                fgri.M(y);
+                h = elgo.h(elja.j(((rnu) y).b, new ekut() { // from class: aqgl
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        pun punVar = (pun) obj;
-                        return new Feature(punVar.c, punVar.d);
+                        rnr rnrVar = (rnr) obj;
+                        return new Feature(rnrVar.c, rnrVar.d);
                     }
                 }));
             }
@@ -266,18 +266,18 @@ public class ModuleDownloadChimeraActivity extends qet {
                 m(1);
                 return;
             }
-            int i2 = edjs.a;
-            boolean v = edeq.v(this);
-            edjt d = edjt.d();
+            int i2 = efwn.a;
+            boolean v = efrl.v(this);
+            efwo d = efwo.d();
             int i3 = d.a;
             String str = d.b;
             boolean z = d.c;
-            setTheme(new edjt(edjs.b(this), v).b(intent, !v));
-            edjs.d();
+            setTheme(new efwo(efwn.b(this), v).b(intent, !v));
+            efwn.d();
             setContentView(R.layout.module_install_activity_sud_v2);
             GlifLayout glifLayout = (GlifLayout) findViewById(R.id.module_install_sud_layout_v2);
             this.s = glifLayout;
-            ((edfq) glifLayout.q(edfq.class)).i.f = new View.OnClickListener() { // from class: aogs
+            ((efsl) glifLayout.q(efsl.class)).i.f = new View.OnClickListener() { // from class: aqil
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     ModuleDownloadChimeraActivity moduleDownloadChimeraActivity = ModuleDownloadChimeraActivity.this;
@@ -286,7 +286,7 @@ public class ModuleDownloadChimeraActivity extends qet {
                         moduleDownloadChimeraActivity.onBackPressed();
                     } else {
                         if (i4 != 5) {
-                            throw new IllegalArgumentException(a.W(i4, " is not a valid state"));
+                            throw new IllegalArgumentException(a.B(i4, " is not a valid state"));
                         }
                         moduleDownloadChimeraActivity.a(0);
                     }
@@ -296,36 +296,36 @@ public class ModuleDownloadChimeraActivity extends qet {
                 this.j = bundle.getInt("state", 0);
             }
             a(this.j);
-        } catch (fedk e) {
+        } catch (fgsd e) {
             Log.e("ModuleDownloadActivity", "Invalid FeatureList: ".concat(e.toString()));
             m(2);
         }
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
-        aogy aogyVar = this.n;
-        if (aogyVar != null) {
-            this.r.e(aogyVar);
+        aqir aqirVar = this.n;
+        if (aqirVar != null) {
+            this.r.e(aqirVar);
             this.n = null;
             this.k.removeCallbacksAndMessages(null);
         }
         super.onDestroy();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onPause() {
         super.onPause();
         this.q += SystemClock.elapsedRealtime() - this.p;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
         this.p = SystemClock.elapsedRealtime();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putInt("state", this.j);

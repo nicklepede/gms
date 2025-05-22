@@ -2,14 +2,14 @@ package com.google.android.gms.ads.internal.client;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arxb;
+import defpackage.atzq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class j implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int h = arxb.h(parcel);
+        int h = atzq.h(parcel);
         int i = 0;
         int i2 = 0;
         boolean z = false;
@@ -27,58 +27,58 @@ public final class j implements Parcelable.Creator {
         AdSizeParcel[] adSizeParcelArr = null;
         while (parcel.dataPosition() < h) {
             int readInt = parcel.readInt();
-            switch (arxb.d(readInt)) {
+            switch (atzq.d(readInt)) {
                 case 2:
-                    str = arxb.s(parcel, readInt);
+                    str = atzq.s(parcel, readInt);
                     break;
                 case 3:
-                    i = arxb.f(parcel, readInt);
+                    i = atzq.f(parcel, readInt);
                     break;
                 case 4:
-                    i2 = arxb.f(parcel, readInt);
+                    i2 = atzq.f(parcel, readInt);
                     break;
                 case 5:
-                    z = arxb.D(parcel, readInt);
+                    z = atzq.D(parcel, readInt);
                     break;
                 case 6:
-                    i3 = arxb.f(parcel, readInt);
+                    i3 = atzq.f(parcel, readInt);
                     break;
                 case 7:
-                    i4 = arxb.f(parcel, readInt);
+                    i4 = atzq.f(parcel, readInt);
                     break;
                 case 8:
-                    adSizeParcelArr = (AdSizeParcel[]) arxb.J(parcel, readInt, AdSizeParcel.CREATOR);
+                    adSizeParcelArr = (AdSizeParcel[]) atzq.J(parcel, readInt, AdSizeParcel.CREATOR);
                     break;
                 case 9:
-                    z2 = arxb.D(parcel, readInt);
+                    z2 = atzq.D(parcel, readInt);
                     break;
                 case 10:
-                    z3 = arxb.D(parcel, readInt);
+                    z3 = atzq.D(parcel, readInt);
                     break;
                 case 11:
-                    z4 = arxb.D(parcel, readInt);
+                    z4 = atzq.D(parcel, readInt);
                     break;
                 case 12:
-                    z5 = arxb.D(parcel, readInt);
+                    z5 = atzq.D(parcel, readInt);
                     break;
                 case 13:
-                    z6 = arxb.D(parcel, readInt);
+                    z6 = atzq.D(parcel, readInt);
                     break;
                 case 14:
-                    z7 = arxb.D(parcel, readInt);
+                    z7 = atzq.D(parcel, readInt);
                     break;
                 case 15:
-                    z8 = arxb.D(parcel, readInt);
+                    z8 = atzq.D(parcel, readInt);
                     break;
                 case 16:
-                    z9 = arxb.D(parcel, readInt);
+                    z9 = atzq.D(parcel, readInt);
                     break;
                 default:
-                    arxb.C(parcel, readInt);
+                    atzq.C(parcel, readInt);
                     break;
             }
         }
-        arxb.A(parcel, h);
+        atzq.A(parcel, h);
         return new AdSizeParcel(str, i, i2, z, i3, i4, adSizeParcelArr, z2, z3, z4, z5, z6, z7, z8, z9);
     }
 

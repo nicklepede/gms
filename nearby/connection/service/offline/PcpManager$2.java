@@ -3,63 +3,63 @@ package com.google.android.gms.nearby.connection.service.offline;
 import android.net.Network;
 import com.google.android.gms.framework.tracing.wrapper.NetworkCallbackWrapper;
 import com.google.android.gms.nearby.connection.service.offline.PcpManager$2;
-import defpackage.cfkt;
-import defpackage.cfwc;
+import defpackage.chsf;
+import defpackage.cidm;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class PcpManager$2 extends NetworkCallbackWrapper {
     final /* synthetic */ String a;
-    final /* synthetic */ cfkt b;
-    public final /* synthetic */ cfwc c;
+    final /* synthetic */ chsf b;
+    public final /* synthetic */ cidm c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public PcpManager$2(cfwc cfwcVar, String str, cfkt cfktVar) {
+    public PcpManager$2(cidm cidmVar, String str, chsf chsfVar) {
         super("nearby", "PcpManager");
         this.a = str;
-        this.b = cfktVar;
-        this.c = cfwcVar;
+        this.b = chsfVar;
+        this.c = cidmVar;
     }
 
     @Override // com.google.android.gms.framework.tracing.wrapper.NetworkCallbackWrapper
     public final void a(Network network) {
         final String str = this.a;
-        final cfkt cfktVar = this.b;
-        this.c.T(new Runnable() { // from class: cfth
+        final chsf chsfVar = this.b;
+        this.c.T(new Runnable() { // from class: ciar
             @Override // java.lang.Runnable
             public final void run() {
-                final cfkt cfktVar2;
+                final chsf chsfVar2;
                 final PcpManager$2 pcpManager$2 = PcpManager$2.this;
-                cfwc cfwcVar = pcpManager$2.c;
-                cfnn cfnnVar = cfwcVar.k;
+                cidm cidmVar = pcpManager$2.c;
+                chux chuxVar = cidmVar.k;
                 final String str2 = str;
-                final cfnj c = cfnnVar.c(str2);
-                if (c == null || (cfktVar2 = cfktVar) == null || cfktVar2.B(str2) == null || cfktVar2.o() == null) {
+                final chut c = chuxVar.c(str2);
+                if (c == null || (chsfVar2 = chsfVar) == null || chsfVar2.B(str2) == null || chsfVar2.o() == null) {
                     return;
                 }
-                if (!cfktVar2.ck(str2)) {
-                    cewq.d(cfju.a, new Runnable() { // from class: cfti
+                if (!chsfVar2.cl(str2)) {
+                    cheb.d(chrg.a, new Runnable() { // from class: cias
                         @Override // java.lang.Runnable
                         public final void run() {
-                            cfju.a.b().h("retryBandwidthUpgradeWhenConnectedToWifi sendSupportedMediumsToRemoteDevice after %d ms.", Long.valueOf(fqjy.x()));
-                            PcpManager$2.this.c.W(cfktVar2, c, str2);
+                            chrg.a.b().h("retryBandwidthUpgradeWhenConnectedToWifi sendSupportedMediumsToRemoteDevice after %d ms.", Long.valueOf(ftdq.x()));
+                            PcpManager$2.this.c.W(chsfVar2, c, str2);
                         }
-                    }, fqjy.x(), cfwcVar.o);
+                    }, ftdq.x(), cidmVar.o);
                     return;
                 }
-                cfju.a.b().p("retryBandwidthUpgradeWhenConnectedToWifi requestSupportedMediumsFromRemoteDevice.", new Object[0]);
+                chrg.a.b().p("retryBandwidthUpgradeWhenConnectedToWifi requestSupportedMediumsFromRemoteDevice.", new Object[0]);
                 try {
-                    fecj v = exia.b.v();
+                    fgrc v = ezwl.b.v();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    exia exiaVar = (exia) v.b;
-                    exiaVar.c |= 1;
-                    exiaVar.e = true;
-                    c.u(cfqi.b(exjo.BANDWIDTH_UPGRADE_RETRY, (exia) v.Q()).r());
+                    ezwl ezwlVar = (ezwl) v.b;
+                    ezwlVar.c |= 1;
+                    ezwlVar.e = true;
+                    c.u(chxs.b(ezxz.BANDWIDTH_UPGRADE_RETRY, (ezwl) v.Q()).r());
                 } catch (IOException e) {
-                    cfju.a.b().f(e).p("retryBandwidthUpgradeWhenConnectedToWifi requestSupportedMediumsFromRemoteDevice failed", new Object[0]);
+                    chrg.a.b().f(e).p("retryBandwidthUpgradeWhenConnectedToWifi requestSupportedMediumsFromRemoteDevice failed", new Object[0]);
                 }
             }
         });

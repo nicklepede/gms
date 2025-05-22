@@ -4,19 +4,19 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bgdf;
+import defpackage.atzr;
+import defpackage.bihv;
 import j$.util.DesugarCollections;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class DataType extends AbstractSafeParcelable implements ReflectedParcelable {
     public static final DataType A;
     public static final DataType B;
     public static final DataType C;
-    public static final Parcelable.Creator CREATOR = new bgdf();
+    public static final Parcelable.Creator CREATOR = new bihv();
     public static final DataType D;
     public static final DataType E;
     public static final DataType F;
@@ -299,12 +299,12 @@ public final class DataType extends AbstractSafeParcelable implements ReflectedP
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i2) {
         String str = this.aI;
-        int a2 = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.y(parcel, 2, this.aJ, false);
-        arxc.v(parcel, 3, this.aK, false);
-        arxc.v(parcel, 4, this.aL, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.y(parcel, 2, this.aJ, false);
+        atzr.v(parcel, 3, this.aK, false);
+        atzr.v(parcel, 4, this.aL, false);
+        atzr.c(parcel, a2);
     }
 
     public DataType(String str, List list, String str2, String str3) {

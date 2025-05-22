@@ -1,10 +1,10 @@
 package com.google.android.gms.cast.mirroring.jni;
 
 import android.content.Context;
-import defpackage.asow;
-import defpackage.aspx;
+import defpackage.ausq;
+import defpackage.autr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class JGCastLogger extends com.google.android.cast.JGCastLogger {
     public JGCastLogger(Context context) {
@@ -13,7 +13,7 @@ public class JGCastLogger extends com.google.android.cast.JGCastLogger {
 
     @Override // com.google.android.cast.JGCastLogger
     public final boolean b(Context context) {
-        int i = aspx.a;
-        return asow.g(context, "jgcast_service_jni");
+        int i = autr.a;
+        return ausq.g(context, "jgcast_service_jni");
     }
 }

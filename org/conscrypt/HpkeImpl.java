@@ -9,28 +9,28 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import javax.crypto.BadPaddingException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class HpkeImpl implements HpkeSpi {
     private NativeRef.EVP_HPKE_CTX ctx;
     private byte[] encapsulated = null;
     private final HpkeSuite hpkeSuite;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class X25519_AES_128 extends HpkeImpl {
         public X25519_AES_128() {
             super(new HpkeSuite(32, 1, 1));
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class X25519_AES_256 extends HpkeImpl {
         public X25519_AES_256() {
             super(new HpkeSuite(32, 1, 2));
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class X25519_CHACHA20 extends HpkeImpl {
         public X25519_CHACHA20() {
             super(new HpkeSuite(32, 1, 3));

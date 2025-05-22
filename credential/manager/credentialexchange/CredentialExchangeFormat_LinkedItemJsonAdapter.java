@@ -1,68 +1,68 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.fipo;
-import defpackage.fipt;
-import defpackage.fipu;
-import defpackage.fipw;
-import defpackage.fiqb;
-import defpackage.fiqq;
-import defpackage.firp;
-import defpackage.fuwy;
-import defpackage.fvbo;
+import defpackage.flfl;
+import defpackage.flfq;
+import defpackage.flfr;
+import defpackage.flft;
+import defpackage.flfy;
+import defpackage.flgn;
+import defpackage.flhm;
+import defpackage.fxsw;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public final class CredentialExchangeFormat_LinkedItemJsonAdapter extends fipo {
-    private final fipu a;
-    private final fipo b;
-    private final fipo c;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public final class CredentialExchangeFormat_LinkedItemJsonAdapter extends flfl {
+    private final flfr a;
+    private final flfl b;
+    private final flfl c;
 
-    public CredentialExchangeFormat_LinkedItemJsonAdapter(fiqq fiqqVar) {
-        fvbo.f(fiqqVar, "moshi");
-        this.a = fipt.a("item", "account");
-        fuwy fuwyVar = fuwy.a;
-        this.b = fiqqVar.d(String.class, fuwyVar, "item");
-        this.c = fiqqVar.d(String.class, fuwyVar, "account");
+    public CredentialExchangeFormat_LinkedItemJsonAdapter(flgn flgnVar) {
+        fxxm.f(flgnVar, "moshi");
+        this.a = flfq.a("item", "account");
+        fxsw fxswVar = fxsw.a;
+        this.b = flgnVar.d(String.class, fxswVar, "item");
+        this.c = flgnVar.d(String.class, fxswVar, "account");
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ Object a(fipw fipwVar) {
-        fipwVar.i();
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ Object a(flft flftVar) {
+        flftVar.i();
         String str = null;
         String str2 = null;
-        while (fipwVar.o()) {
-            int c = fipwVar.c(this.a);
+        while (flftVar.o()) {
+            int c = flftVar.c(this.a);
             if (c == -1) {
-                fipwVar.m();
-                fipwVar.n();
+                flftVar.m();
+                flftVar.n();
             } else if (c == 0) {
-                str = (String) this.b.a(fipwVar);
+                str = (String) this.b.a(flftVar);
                 if (str == null) {
-                    throw firp.c("item", "item", fipwVar);
+                    throw flhm.c("item", "item", flftVar);
                 }
             } else if (c == 1) {
-                str2 = (String) this.c.a(fipwVar);
+                str2 = (String) this.c.a(flftVar);
             }
         }
-        fipwVar.k();
+        flftVar.k();
         if (str != null) {
             return new CredentialExchangeFormat$LinkedItem(str, str2);
         }
-        throw firp.b("item", "item", fipwVar);
+        throw flhm.b("item", "item", flftVar);
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ void b(fiqb fiqbVar, Object obj) {
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ void b(flfy flfyVar, Object obj) {
         CredentialExchangeFormat$LinkedItem credentialExchangeFormat$LinkedItem = (CredentialExchangeFormat$LinkedItem) obj;
         if (credentialExchangeFormat$LinkedItem == null) {
             throw new NullPointerException("value was null! Wrap in .nullSafe() to write nullable values.");
         }
-        fiqbVar.d();
-        fiqbVar.j("item");
-        this.b.b(fiqbVar, credentialExchangeFormat$LinkedItem.a);
-        fiqbVar.j("account");
-        this.c.b(fiqbVar, credentialExchangeFormat$LinkedItem.b);
-        fiqbVar.f();
+        flfyVar.d();
+        flfyVar.j("item");
+        this.b.b(flfyVar, credentialExchangeFormat$LinkedItem.a);
+        flfyVar.j("account");
+        this.c.b(flfyVar, credentialExchangeFormat$LinkedItem.b);
+        flfyVar.f();
     }
 
     public final String toString() {

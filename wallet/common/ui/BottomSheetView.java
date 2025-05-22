@@ -13,18 +13,18 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.wallet.ui.common.FocusedViewToTopScrollView;
-import defpackage.dilb;
-import defpackage.dilc;
-import defpackage.dilo;
-import defpackage.dils;
-import defpackage.ding;
-import defpackage.emdq;
+import defpackage.dkwm;
+import defpackage.dkwn;
+import defpackage.dkwz;
+import defpackage.dkxd;
+import defpackage.dkyr;
+import defpackage.eore;
 import java.util.Arrays;
 import org.xmlpull.v1.XmlPullParser;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeListener, dilb {
+public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeListener, dkwm {
     static int a;
     public static int b;
     public boolean c;
@@ -35,7 +35,7 @@ public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeL
     public FocusedViewToTopScrollView h;
     public BottomSheetBehavior i;
     View j;
-    public dils k;
+    public dkxd k;
     int l;
 
     public BottomSheetView(Context context) {
@@ -56,7 +56,7 @@ public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeL
         int color = obtainStyledAttributes.getColor(Arrays.binarySearch(iArr, R.attr.colorBackground), -1);
         int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(Arrays.binarySearch(iArr, com.google.android.gms.R.attr.bottomSheetCornerRadius), 0);
         obtainStyledAttributes.recycle();
-        a = ding.j(context).y;
+        a = dkyr.j(context).y;
         FocusedViewToTopScrollView focusedViewToTopScrollView = new FocusedViewToTopScrollView(context);
         this.h = focusedViewToTopScrollView;
         focusedViewToTopScrollView.setId(com.google.android.gms.R.id.content_scroll_view);
@@ -76,7 +76,7 @@ public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeL
         this.g.setBackgroundColor(color);
         this.h.addView(this.g);
         if (dimensionPixelSize > 0) {
-            this.g.setOutlineProvider(new dilo(this, dimensionPixelSize));
+            this.g.setOutlineProvider(new dkwz(this, dimensionPixelSize));
             this.g.setClipToOutline(true);
         }
         View inflate = from.inflate((XmlPullParser) getResources().getLayout(com.google.android.gms.R.layout.wallet_view_progress_spinner), (ViewGroup) this, false);
@@ -93,9 +93,9 @@ public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeL
         b();
     }
 
-    @Override // defpackage.dilb
+    @Override // defpackage.dkwm
     public final void aq(Bundle bundle) {
-        if (TextUtils.equals(dilc.b(bundle), "verticallyCenterSpinner")) {
+        if (TextUtils.equals(dkwn.b(bundle), "verticallyCenterSpinner")) {
             e();
         }
     }
@@ -103,9 +103,9 @@ public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeL
     public final void b() {
         this.i.F(a);
         this.i.E(false);
-        dils dilsVar = this.k;
-        if (dilsVar != null) {
-            dilsVar.ag();
+        dkxd dkxdVar = this.k;
+        if (dkxdVar != null) {
+            dkxdVar.ag();
         }
         this.g.setOutlineProvider(null);
         this.g.setClipToOutline(false);
@@ -133,9 +133,9 @@ public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeL
         BottomSheetBehavior bottomSheetBehavior = this.i;
         bottomSheetBehavior.x = true;
         bottomSheetBehavior.E(true);
-        dils dilsVar = this.k;
-        if (dilsVar != null) {
-            dilsVar.al(i);
+        dkxd dkxdVar = this.k;
+        if (dkxdVar != null) {
+            dkxdVar.al(i);
         }
     }
 
@@ -154,7 +154,7 @@ public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeL
                 this.i.F((int) (height * d));
             }
         }
-        post(dilc.a(this, "verticallyCenterSpinner"));
+        post(dkwn.a(this, "verticallyCenterSpinner"));
     }
 
     @Override // android.view.View
@@ -170,7 +170,7 @@ public class BottomSheetView extends FrameLayout implements View.OnLayoutChangeL
         } else {
             this.i.H(i);
         }
-        this.l = emdq.a(bundle.getInt("popoverExitAction"));
+        this.l = eore.a(bundle.getInt("popoverExitAction"));
         super.onRestoreInstanceState(bundle.getParcelable("superInstanceState"));
     }
 

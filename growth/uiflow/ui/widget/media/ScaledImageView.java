@@ -3,12 +3,12 @@ package com.google.android.gms.growth.uiflow.ui.widget.media;
 import android.content.Context;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import defpackage.bkvb;
+import defpackage.bnbr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class ScaledImageView extends AppCompatImageView {
-    public bkvb a;
+    public bnbr a;
 
     public ScaledImageView(Context context) {
         super(context);
@@ -16,9 +16,9 @@ public class ScaledImageView extends AppCompatImageView {
 
     @Override // android.widget.ImageView
     protected final boolean setFrame(int i, int i2, int i3, int i4) {
-        bkvb bkvbVar;
-        if (getDrawable() != null && (bkvbVar = this.a) != null) {
-            bkvbVar.a();
+        bnbr bnbrVar;
+        if (getDrawable() != null && (bnbrVar = this.a) != null) {
+            bnbrVar.a();
         }
         return super.setFrame(i, i2, i3, i4);
     }

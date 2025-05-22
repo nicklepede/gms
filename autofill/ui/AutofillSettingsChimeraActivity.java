@@ -3,26 +3,26 @@ package com.google.android.gms.autofill.ui;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
-import defpackage.agkr;
-import defpackage.agkx;
-import defpackage.agky;
+import defpackage.ailh;
+import defpackage.ailn;
+import defpackage.ailo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class AutofillSettingsChimeraActivity extends agky {
-    private final agkx j;
+public final class AutofillSettingsChimeraActivity extends ailo {
+    private final ailn j;
 
     public AutofillSettingsChimeraActivity() {
         this(AutofillChimeraActivity.k);
     }
 
-    @Override // defpackage.agky
-    protected final agkr a(Intent intent, Bundle bundle) {
+    @Override // defpackage.ailo
+    protected final ailh a(Intent intent, Bundle bundle) {
         ComponentName component = intent.getComponent();
         return (component == null || !component.getShortClassName().equals(".autofill.ui.AutofillManagePasswordsActivity")) ? this.j.a(this, "SETTINGS", bundle, getActivityResultRegistry()) : this.j.a(this, "MANAGE_PASSWORDS", bundle, getActivityResultRegistry());
     }
 
-    public AutofillSettingsChimeraActivity(agkx agkxVar) {
-        this.j = agkxVar;
+    public AutofillSettingsChimeraActivity(ailn ailnVar) {
+        this.j = ailnVar;
     }
 }

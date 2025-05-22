@@ -6,27 +6,27 @@ import android.view.View;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.libraries.material.progress.MaterialProgressBar;
-import defpackage.blvq;
-import defpackage.blvs;
-import defpackage.qgg;
+import defpackage.boci;
+import defpackage.bock;
+import defpackage.rzk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class OnDeviceSharingCollapsingToolbarChimeraActivity extends qgg {
+public class OnDeviceSharingCollapsingToolbarChimeraActivity extends rzk {
     public Context j;
     public MaterialProgressBar k;
     public TextView l;
     public TextView m;
-    public final blvs n = new blvs(this);
+    public final bock n = new bock(this);
     private View o;
 
-    @Override // defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setTitle(R.string.personalize_using_shared_data_settings_title);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         this.j = this;
@@ -41,6 +41,6 @@ public class OnDeviceSharingCollapsingToolbarChimeraActivity extends qgg {
         View findViewById = findViewById(android.R.id.list);
         this.o = findViewById;
         findViewById.setVisibility(8);
-        new blvq(this).execute(new Void[0]);
+        new boci(this).execute(new Void[0]);
     }
 }

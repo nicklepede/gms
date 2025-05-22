@@ -4,10 +4,10 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.ads.internal.client.AdErrorParcel;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.eiif;
+import defpackage.atzr;
+import defpackage.ekvk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ExceptionParcel extends AbstractSafeParcelable {
     public static final Parcelable.Creator CREATOR = new t();
@@ -33,15 +33,15 @@ public class ExceptionParcel extends AbstractSafeParcelable {
             }
             a = com.google.android.gms.ads.nonagon.util.b.a(1);
         }
-        return new ExceptionParcel(eiif.c(th.getMessage()) ? a.b : th.getMessage(), a.a);
+        return new ExceptionParcel(ekvk.c(th.getMessage()) ? a.b : th.getMessage(), a.a);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 }

@@ -2,82 +2,82 @@ package com.google.android.gms.cast.remote_display;
 
 import android.content.Context;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.amap;
-import defpackage.amhy;
-import defpackage.anah;
-import defpackage.anal;
-import defpackage.anax;
-import defpackage.andy;
-import defpackage.andz;
-import defpackage.anhu;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.eiig;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ejck;
+import defpackage.aoca;
+import defpackage.aoji;
+import defpackage.apbt;
+import defpackage.apbx;
+import defpackage.apcj;
+import defpackage.apfl;
+import defpackage.apfm;
+import defpackage.apjh;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.ekvl;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.elpp;
 import java.util.concurrent.ScheduledExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class CastRemoteDisplayChimeraService extends bxgd {
-    private static final eijr a = eijy.a(new eijr() { // from class: anhr
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(flyr.o());
+public class CastRemoteDisplayChimeraService extends bzot {
+    private static final ekww a = ekxd.a(new ekww() { // from class: apje
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return Boolean.valueOf(foqb.o());
         }
     });
-    private bxgo b;
-    private amap c;
-    private anah d;
-    private anal m;
+    private bzpe b;
+    private aoca c;
+    private apbt d;
+    private apbx m;
 
     public CastRemoteDisplayChimeraService() {
-        super(83, "com.google.android.gms.cast.remote_display.service.START", ejck.a, 3, 10);
+        super(83, "com.google.android.gms.cast.remote_display.service.START", elpp.a, 3, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         if (getServiceRequest.d != 83) {
-            bxgjVar.a(1, null);
+            bzozVar.a(1, null);
             return;
         }
         if (this.d == null) {
-            amap amapVar = this.c;
-            if (amapVar == null) {
+            aoca aocaVar = this.c;
+            if (aocaVar == null) {
                 throw new IllegalStateException("castComponent cannot be null");
             }
-            this.d = new anah(getApplicationContext(), amapVar.g, this.m);
+            this.d = new apbt(getApplicationContext(), aocaVar.g, this.m);
         }
         Context applicationContext = getApplicationContext();
-        bxgo bxgoVar = this.b;
+        bzpe bzpeVar = this.b;
         String str = getServiceRequest.f;
-        anah anahVar = this.d;
-        eiig.x(anahVar);
-        bxgjVar.c(new anhu(applicationContext, bxgoVar, str, anahVar, getServiceRequest.f, getServiceRequest.p));
+        apbt apbtVar = this.d;
+        ekvl.y(apbtVar);
+        bzozVar.c(new apjh(applicationContext, bzpeVar, str, apbtVar, getServiceRequest.f, getServiceRequest.p));
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
-        amap a2 = amap.a(getApplicationContext(), "CastRemoteDisplayService");
+        aoca a2 = aoca.a(getApplicationContext(), "CastRemoteDisplayService");
         this.c = a2;
-        anax anaxVar = a2.j.a;
-        eiig.x(a2);
-        this.b = m(amhy.a());
-        ScheduledExecutorService a3 = amhy.a();
-        andz andzVar = new andz();
-        andy andyVar = new andy();
-        amap amapVar = this.c;
-        eiig.x(amapVar);
-        this.m = new anal(this, a3, anaxVar, a2.g, andzVar, andyVar, amapVar.e, a);
+        apcj apcjVar = a2.j.a;
+        ekvl.y(a2);
+        this.b = m(aoji.a());
+        ScheduledExecutorService a3 = aoji.a();
+        apfm apfmVar = new apfm();
+        apfl apflVar = new apfl();
+        aoca aocaVar = this.c;
+        ekvl.y(aocaVar);
+        this.m = new apbx(this, a3, apcjVar, a2.g, apfmVar, apflVar, aocaVar.e, a);
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
         this.d = null;
         if (this.c != null) {
-            amap.b("CastRemoteDisplayService");
+            aoca.b("CastRemoteDisplayService");
             this.c = null;
         }
         super.onDestroy();

@@ -4,12 +4,12 @@ import android.os.Parcel;
 import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.FeatureIdProto;
 import com.google.android.gms.reminders.model.FeatureIdProtoEntity;
-import defpackage.cxeb;
-import defpackage.cxek;
+import defpackage.cznx;
+import defpackage.czog;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class FeatureIdProtoRef extends cxeb implements FeatureIdProto {
+public class FeatureIdProtoRef extends cznx implements FeatureIdProto {
     public FeatureIdProtoRef(DataHolder dataHolder, int i, String str) {
         super(dataHolder, i, str);
     }
@@ -33,7 +33,7 @@ public class FeatureIdProtoRef extends cxeb implements FeatureIdProto {
         return 0;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof FeatureIdProto)) {
             return false;
@@ -44,18 +44,18 @@ public class FeatureIdProtoRef extends cxeb implements FeatureIdProto {
         return FeatureIdProtoEntity.d(this, (FeatureIdProto) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return FeatureIdProtoEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new FeatureIdProtoEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxek.a(new FeatureIdProtoEntity(this), parcel);
+        czog.a(new FeatureIdProtoEntity(this), parcel);
     }
 }

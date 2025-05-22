@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
-import defpackage.dmdc;
+import defpackage.dooo;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class WearableController$PackageIntentOperation extends IntentOperation {
     private static final String a(Intent intent) {
@@ -33,14 +33,14 @@ public final class WearableController$PackageIntentOperation extends IntentOpera
         if (Objects.equals(action, "android.intent.action.PACKAGE_ADDED")) {
             String a2 = a(intent);
             if (a2 != null) {
-                dmdc.f();
-                if (dmdc.b(this)) {
-                    if (!dmdc.d(this, a2)) {
-                        dmdc.a(this, "com.google.android.gms.wearable.ACTION_PACKAGE_ADDED", a2);
+                dooo.f();
+                if (dooo.b(this)) {
+                    if (!dooo.d(this, a2)) {
+                        dooo.a(this, "com.google.android.gms.wearable.ACTION_PACKAGE_ADDED", a2);
                         return;
                     } else {
-                        dmdc.c(this);
-                        dmdc.a(this, "com.google.android.gms.wearable.ACTION_WEARABLE_APP_PACKAGE_ADDED", a2);
+                        dooo.c(this);
+                        dooo.a(this, "com.google.android.gms.wearable.ACTION_WEARABLE_APP_PACKAGE_ADDED", a2);
                         return;
                     }
                 }
@@ -51,9 +51,9 @@ public final class WearableController$PackageIntentOperation extends IntentOpera
         if (Objects.equals(action, "android.intent.action.PACKAGE_DATA_CLEARED")) {
             String a3 = a(intent);
             if (a3 != null) {
-                dmdc.f();
-                if (dmdc.b(this)) {
-                    dmdc.a(this, "com.google.android.gms.wearable.ACTION_PACKAGE_DATA_CLEARED", a3);
+                dooo.f();
+                if (dooo.b(this)) {
+                    dooo.a(this, "com.google.android.gms.wearable.ACTION_PACKAGE_DATA_CLEARED", a3);
                     return;
                 }
                 return;
@@ -63,9 +63,9 @@ public final class WearableController$PackageIntentOperation extends IntentOpera
         if (Objects.equals(action, "android.intent.action.PACKAGE_CHANGED")) {
             String a4 = a(intent);
             if (a4 != null) {
-                dmdc.f();
-                if (dmdc.b(this)) {
-                    dmdc.a(this, "com.google.android.gms.wearable.ACTION_PACKAGE_CHANGED", a4);
+                dooo.f();
+                if (dooo.b(this)) {
+                    dooo.a(this, "com.google.android.gms.wearable.ACTION_PACKAGE_CHANGED", a4);
                     return;
                 }
                 return;
@@ -75,12 +75,12 @@ public final class WearableController$PackageIntentOperation extends IntentOpera
         if (!Objects.equals(action, "android.intent.action.PACKAGE_REMOVED") || intent.getBooleanExtra("android.intent.extra.REPLACING", false) || (a = a(intent)) == null) {
             return;
         }
-        dmdc.f();
-        if (dmdc.b(this)) {
-            if (dmdc.d(this, a)) {
-                dmdc.a(this, "com.google.android.gms.wearable.ACTION_WEARABLE_APP_PACKAGE_REMOVED", a);
+        dooo.f();
+        if (dooo.b(this)) {
+            if (dooo.d(this, a)) {
+                dooo.a(this, "com.google.android.gms.wearable.ACTION_WEARABLE_APP_PACKAGE_REMOVED", a);
             } else {
-                dmdc.a(this, "com.google.android.gms.wearable.ACTION_PACKAGE_REMOVED", a);
+                dooo.a(this, "com.google.android.gms.wearable.ACTION_PACKAGE_REMOVED", a);
             }
         }
     }

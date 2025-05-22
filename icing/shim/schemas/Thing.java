@@ -1,15 +1,15 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.dqvk;
-import defpackage.eiif;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.dtfs;
+import defpackage.ekvk;
+import defpackage.elgo;
+import defpackage.elpg;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class Thing {
     private final List a;
@@ -24,22 +24,22 @@ public class Thing {
         List list4;
         this.p = str2;
         this.q = str;
-        this.r = eiif.b(str3);
+        this.r = ekvk.b(str3);
         if (list != null) {
             list3 = DesugarCollections.unmodifiableList(list);
         } else {
-            int i = eitj.d;
-            list3 = ejcb.a;
+            int i = elgo.d;
+            list3 = elpg.a;
         }
         this.a = list3;
         if (list2 != null) {
             list4 = DesugarCollections.unmodifiableList(list2);
         } else {
-            int i2 = eitj.d;
-            list4 = ejcb.a;
+            int i2 = elgo.d;
+            list4 = elpg.a;
         }
         this.b = list4;
-        this.s = g3AttributionInfo == null ? dqvk.a(null) : g3AttributionInfo;
+        this.s = g3AttributionInfo == null ? dtfs.a(null) : g3AttributionInfo;
     }
 
     public final List a() {
@@ -47,8 +47,8 @@ public class Thing {
         if (list != null) {
             return list;
         }
-        int i = eitj.d;
-        return ejcb.a;
+        int i = elgo.d;
+        return elpg.a;
     }
 
     public final List b() {
@@ -56,8 +56,8 @@ public class Thing {
         if (list != null) {
             return list;
         }
-        int i = eitj.d;
-        return ejcb.a;
+        int i = elgo.d;
+        return elpg.a;
     }
 
     public boolean equals(Object obj) {

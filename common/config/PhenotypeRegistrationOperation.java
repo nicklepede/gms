@@ -5,73 +5,49 @@ import com.google.android.chimera.IntentOperation;
 import com.google.android.chimera.config.InvalidConfigException;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.phenotype.RegistrationInfo;
-import defpackage.aqxd;
-import defpackage.arne;
-import defpackage.asej;
-import defpackage.asni;
-import defpackage.asot;
-import defpackage.bhfk;
-import defpackage.bul;
-import defpackage.cvzk;
-import defpackage.cwal;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.feep;
-import defpackage.fnaf;
+import defpackage.aszs;
+import defpackage.atpt;
+import defpackage.auid;
+import defpackage.aurc;
+import defpackage.ausn;
+import defpackage.bjka;
+import defpackage.buy;
+import defpackage.cyjh;
+import defpackage.cyki;
+import defpackage.dhmr;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgti;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class PhenotypeRegistrationOperation extends IntentOperation {
-    private static final asot b = asot.b("PhenotypeRegOp", asej.CORE);
+    private static final ausn b = ausn.b("PhenotypeRegOp", auid.CORE);
     private static final String[] c = {"com.google.android.chimera.MODULE_CONFIGURATION_CHANGED", "com.google.android.gms.phenotype.DAILY_CHECKIN", "android.intent.action.BOOT_COMPLETED"};
-    cwal a;
-
-    final void a(List list) {
-        dfaq i = this.a.i((RegistrationInfo[]) list.toArray(new RegistrationInfo[list.size()]));
-        try {
-            if (fnaf.a.a().l()) {
-                dfbl.n(i);
-            } else {
-                dfbl.o(i, 10000L, TimeUnit.MILLISECONDS);
-            }
-        } catch (InterruptedException e) {
-            e = e;
-            ((ejhf) ((ejhf) b.j()).s(e)).x("Phenotype bulk registration failed");
-        } catch (ExecutionException e2) {
-            ((ejhf) ((ejhf) b.i()).s(e2)).x("Phenotype bulk registration failed");
-        } catch (TimeoutException e3) {
-            e = e3;
-            ((ejhf) ((ejhf) b.j()).s(e)).x("Phenotype bulk registration failed");
-        }
-    }
+    cyki a;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        aqxd aqxdVar = cvzk.a;
-        this.a = new cwal(this);
+        aszs aszsVar = cyjh.a;
+        this.a = new cyki(this);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         int i;
-        if (intent == null || !asni.e(c, intent.getAction())) {
-            ((ejhf) b.i()).x("Invalid intent");
+        if (intent == null || !aurc.e(c, intent.getAction())) {
+            ((eluo) b.i()).x("Invalid intent");
             return;
         }
         try {
             Collection allModulesWithMetadata = ModuleManager.get(this).getAllModulesWithMetadata("com.google.android.gms.phenotype.registration.proto");
-            bul bulVar = new bul();
+            buy buyVar = new buy();
             Iterator it = allModulesWithMetadata.iterator();
             while (true) {
                 if (!it.hasNext()) {
@@ -81,42 +57,48 @@ public class PhenotypeRegistrationOperation extends IntentOperation {
                 try {
                     byte[] byteArray = moduleInfo.getMetadata(this).getByteArray("com.google.android.gms.phenotype.registration.proto");
                     if (byteArray == null) {
-                        ((ejhf) b.i()).B("Failed to read metadata for %s", moduleInfo.moduleId);
+                        ((eluo) b.i()).B("Failed to read metadata for %s", moduleInfo.moduleId);
                     } else {
-                        bhfk bhfkVar = bhfk.a;
+                        bjka bjkaVar = bjka.a;
                         int length = byteArray.length;
-                        febw febwVar = febw.a;
-                        feep feepVar = feep.a;
-                        fecp y = fecp.y(bhfkVar, byteArray, 0, length, febw.a);
-                        fecp.M(y);
-                        for (RegistrationInfo registrationInfo : arne.c(this, (bhfk) y, moduleInfo.moduleVersion)) {
+                        fgqp fgqpVar = fgqp.a;
+                        fgti fgtiVar = fgti.a;
+                        fgri y = fgri.y(bjkaVar, byteArray, 0, length, fgqp.a);
+                        fgri.M(y);
+                        for (RegistrationInfo registrationInfo : atpt.c(this, (bjka) y, moduleInfo.moduleVersion)) {
                             String str = registrationInfo.c;
-                            if (bulVar.containsKey(str)) {
+                            if (buyVar.containsKey(str)) {
                                 "com.google.android.gms".equals(str);
                             } else {
-                                bulVar.put(str, registrationInfo);
+                                buyVar.put(str, registrationInfo);
                                 String str2 = moduleInfo.moduleId;
                             }
                         }
                     }
                 } catch (IOException e) {
                     e = e;
-                    ((ejhf) b.i()).P("Failed to build phenotype registration for %s:%s", moduleInfo.moduleId, e.getMessage());
+                    ((eluo) b.i()).P("Failed to build phenotype registration for %s:%s", moduleInfo.moduleId, e.getMessage());
                 } catch (RuntimeException e2) {
                     e = e2;
-                    ((ejhf) b.i()).P("Failed to build phenotype registration for %s:%s", moduleInfo.moduleId, e.getMessage());
+                    ((eluo) b.i()).P("Failed to build phenotype registration for %s:%s", moduleInfo.moduleId, e.getMessage());
                 }
             }
-            if (!bulVar.containsKey("com.google.android.gms") && getPackageName().equals("com.google.android.gms")) {
-                ((ejhf) b.i()).x("Core gms application properties were not set in phenotype registration.");
+            if (!buyVar.containsKey("com.google.android.gms") && getPackageName().equals("com.google.android.gms")) {
+                ((eluo) b.i()).x("Core gms application properties were not set in phenotype registration.");
             }
-            ArrayList arrayList = new ArrayList(bulVar.d);
-            for (i = 0; i < bulVar.d; i++) {
-                arrayList.add((RegistrationInfo) bulVar.i(i));
+            ArrayList arrayList = new ArrayList(buyVar.d);
+            for (i = 0; i < buyVar.d; i++) {
+                arrayList.add((RegistrationInfo) buyVar.i(i));
             }
-            a(arrayList);
-        } catch (InvalidConfigException e3) {
-            ((ejhf) ((ejhf) b.i()).s(e3)).x("Failed to load module configuration");
+            try {
+                dhmr.n(this.a.i((RegistrationInfo[]) arrayList.toArray(new RegistrationInfo[arrayList.size()])));
+            } catch (InterruptedException e3) {
+                ((eluo) ((eluo) b.j()).s(e3)).x("Phenotype bulk registration failed");
+            } catch (ExecutionException e4) {
+                ((eluo) ((eluo) b.i()).s(e4)).x("Phenotype bulk registration failed");
+            }
+        } catch (InvalidConfigException e5) {
+            ((eluo) ((eluo) b.i()).s(e5)).x("Failed to load module configuration");
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.google.android.gms.org.conscrypt;
 
+import com.google.android.gms.org.conscrypt.metrics.MetricsAlgorithm;
 import defpackage.a;
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
@@ -25,7 +26,7 @@ import javax.crypto.ShortBufferException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class OpenSSLCipher extends CipherSpi {
     private int blockSize;
@@ -35,7 +36,7 @@ public abstract class OpenSSLCipher extends CipherSpi {
     Mode mode;
     private Padding padding;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     enum Mode {
         NONE,
         CBC,
@@ -57,7 +58,7 @@ public abstract class OpenSSLCipher extends CipherSpi {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     enum Padding {
         NOPADDING,
         PKCS5PADDING,
@@ -277,6 +278,11 @@ public abstract class OpenSSLCipher extends CipherSpi {
         this.mode = mode;
         this.padding = padding;
         this.blockSize = getCipherBlockSize();
+    }
+
+    public OpenSSLCipher(Mode mode, Padding padding, int i, int i2, int i3) {
+        this(mode, padding);
+        Platform.getStatsLog().countServiceUsage(MetricsAlgorithm.CIPHER.getId(), i, i2, i3);
     }
 
     @Override // javax.crypto.CipherSpi

@@ -3,18 +3,18 @@ package com.google.android.gms.tapandpay.firstparty;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dexu;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dhiy;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class SeTransactionInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dexu();
+    public static final Parcelable.Creator CREATOR = new dhiy();
     final long a;
     final BigDecimal b;
     final String c;
@@ -32,7 +32,7 @@ public class SeTransactionInfo extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof SeTransactionInfo) {
             SeTransactionInfo seTransactionInfo = (SeTransactionInfo) obj;
-            if (this.a == seTransactionInfo.a && arwb.b(this.b, seTransactionInfo.b) && arwb.b(this.c, seTransactionInfo.c) && this.d == seTransactionInfo.d && this.e == seTransactionInfo.e) {
+            if (this.a == seTransactionInfo.a && atyq.b(this.b, seTransactionInfo.b) && atyq.b(this.c, seTransactionInfo.c) && this.d == seTransactionInfo.d && this.e == seTransactionInfo.e) {
                 return true;
             }
         }
@@ -45,22 +45,22 @@ public class SeTransactionInfo extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("transactionId", Long.valueOf(this.a), arrayList);
-        arwa.b("amount", this.b, arrayList);
-        arwa.b("currency", this.c, arrayList);
-        arwa.b("transactionTimeMillis", Long.valueOf(this.d), arrayList);
-        arwa.b("type", Integer.valueOf(this.e), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("transactionId", Long.valueOf(this.a), arrayList);
+        atyp.b("amount", this.b, arrayList);
+        atyp.b("currency", this.c, arrayList);
+        atyp.b("transactionTimeMillis", Long.valueOf(this.d), arrayList);
+        atyp.b("type", Integer.valueOf(this.e), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, this.a);
-        arxc.d(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.q(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, this.a);
+        atzr.d(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.q(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.c(parcel, a);
     }
 }

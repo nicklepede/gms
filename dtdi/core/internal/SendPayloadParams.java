@@ -7,20 +7,20 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.ChannelInfo;
 import com.google.android.gms.dtdi.core.TokenWrapper;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ayxg;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bbba;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class SendPayloadParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayxg();
+    public static final Parcelable.Creator CREATOR = new bbba();
     public TokenWrapper a;
     public byte[] b;
-    public arbp c;
+    public atee c;
     public String d;
     public ChannelInfo e;
 
@@ -33,7 +33,7 @@ public final class SendPayloadParams extends AbstractSafeParcelable {
         }
         if (obj instanceof SendPayloadParams) {
             SendPayloadParams sendPayloadParams = (SendPayloadParams) obj;
-            if (arwb.b(this.a, sendPayloadParams.a) && Arrays.equals(this.b, sendPayloadParams.b) && arwb.b(this.c, sendPayloadParams.c) && arwb.b(this.d, sendPayloadParams.d) && arwb.b(this.e, sendPayloadParams.e)) {
+            if (atyq.b(this.a, sendPayloadParams.a) && Arrays.equals(this.b, sendPayloadParams.b) && atyq.b(this.c, sendPayloadParams.c) && atyq.b(this.d, sendPayloadParams.d) && atyq.b(this.e, sendPayloadParams.e)) {
                 return true;
             }
         }
@@ -46,26 +46,26 @@ public final class SendPayloadParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.i(parcel, 2, this.b, false);
-        arxc.D(parcel, 3, this.c.asBinder());
-        arxc.v(parcel, 4, this.d, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.i(parcel, 2, this.b, false);
+        atzr.D(parcel, 3, this.c.asBinder());
+        atzr.v(parcel, 4, this.d, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.c(parcel, a);
     }
 
     public SendPayloadParams(TokenWrapper tokenWrapper, byte[] bArr, IBinder iBinder, String str, ChannelInfo channelInfo) {
-        arbp arbnVar;
+        atee atecVar;
         if (iBinder == null) {
-            arbnVar = null;
+            atecVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbnVar = queryLocalInterface instanceof arbp ? (arbp) queryLocalInterface : new arbn(iBinder);
+            atecVar = queryLocalInterface instanceof atee ? (atee) queryLocalInterface : new atec(iBinder);
         }
         this.a = tokenWrapper;
         this.b = bArr;
-        this.c = arbnVar;
+        this.c = atecVar;
         this.d = str;
         this.e = channelInfo;
     }

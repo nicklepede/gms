@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Pair;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ccem;
+import defpackage.atzr;
+import defpackage.ceng;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class PolylineOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ccem();
+    public static final Parcelable.Creator CREATOR = new ceng();
     public final List a;
     public float b;
     public int c;
@@ -44,18 +44,18 @@ public final class PolylineOptions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 2, list, false);
-        arxc.l(parcel, 3, this.b);
-        arxc.o(parcel, 4, this.c);
-        arxc.l(parcel, 5, this.d);
-        arxc.e(parcel, 6, this.e);
-        arxc.e(parcel, 7, this.f);
-        arxc.e(parcel, 8, this.g);
-        arxc.t(parcel, 9, this.h.a(), i, false);
-        arxc.t(parcel, 10, this.i.a(), i, false);
-        arxc.o(parcel, 11, this.j);
-        arxc.y(parcel, 12, this.k, false);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 2, list, false);
+        atzr.l(parcel, 3, this.b);
+        atzr.o(parcel, 4, this.c);
+        atzr.l(parcel, 5, this.d);
+        atzr.e(parcel, 6, this.e);
+        atzr.e(parcel, 7, this.f);
+        atzr.e(parcel, 8, this.g);
+        atzr.t(parcel, 9, this.h.a(), i, false);
+        atzr.t(parcel, 10, this.i.a(), i, false);
+        atzr.o(parcel, 11, this.j);
+        atzr.y(parcel, 12, this.k, false);
         ArrayList arrayList = new ArrayList(this.l.size());
         for (StyleSpan styleSpan : this.l) {
             StrokeStyle strokeStyle = styleSpan.a;
@@ -66,8 +66,8 @@ public final class PolylineOptions extends AbstractSafeParcelable {
             boolean z = strokeStyle.d;
             arrayList.add(new StyleSpan(new StrokeStyle(this.b, intValue, intValue2, this.e, strokeStyle.e), styleSpan.b));
         }
-        arxc.y(parcel, 13, arrayList, false);
-        arxc.c(parcel, a);
+        atzr.y(parcel, 13, arrayList, false);
+        atzr.c(parcel, a);
     }
 
     public PolylineOptions(List list, float f, int i, float f2, boolean z, boolean z2, boolean z3, Cap cap, Cap cap2, int i2, List list2, List list3) {

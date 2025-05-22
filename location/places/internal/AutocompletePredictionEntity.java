@@ -4,23 +4,23 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.style.CharacterStyle;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cads;
-import defpackage.caft;
-import defpackage.cafz;
-import defpackage.cahf;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ccmj;
+import defpackage.ccok;
+import defpackage.ccoq;
+import defpackage.ccpw;
+import defpackage.elgo;
+import defpackage.elpg;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class AutocompletePredictionEntity extends AbstractSafeParcelable implements cads {
-    public static final Parcelable.Creator CREATOR = new caft();
+public class AutocompletePredictionEntity extends AbstractSafeParcelable implements ccmj {
+    public static final Parcelable.Creator CREATOR = new ccok();
     public final String a;
     public final String b;
     public final List c;
@@ -31,9 +31,9 @@ public class AutocompletePredictionEntity extends AbstractSafeParcelable impleme
     public final String h;
     public final List i;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class SubstringEntity extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new cahf();
+        public static final Parcelable.Creator CREATOR = new ccpw();
         public final int a;
         public final int b;
 
@@ -50,7 +50,7 @@ public class AutocompletePredictionEntity extends AbstractSafeParcelable impleme
                 return false;
             }
             SubstringEntity substringEntity = (SubstringEntity) obj;
-            return arwb.b(Integer.valueOf(this.a), Integer.valueOf(substringEntity.a)) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(substringEntity.b));
+            return atyq.b(Integer.valueOf(this.a), Integer.valueOf(substringEntity.a)) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(substringEntity.b));
         }
 
         public final int hashCode() {
@@ -59,23 +59,23 @@ public class AutocompletePredictionEntity extends AbstractSafeParcelable impleme
 
         public final String toString() {
             ArrayList arrayList = new ArrayList();
-            arwa.b("offset", Integer.valueOf(this.a), arrayList);
-            arwa.b("length", Integer.valueOf(this.b), arrayList);
-            return arwa.a(arrayList, this);
+            atyp.b("offset", Integer.valueOf(this.a), arrayList);
+            atyp.b("length", Integer.valueOf(this.b), arrayList);
+            return atyp.a(arrayList, this);
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 1, this.a);
-            arxc.o(parcel, 2, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 1, this.a);
+            atzr.o(parcel, 2, this.b);
+            atzr.c(parcel, a);
         }
     }
 
     static {
-        int i = eitj.d;
-        eitj eitjVar = ejcb.a;
+        int i = elgo.d;
+        elgo elgoVar = elpg.a;
     }
 
     public AutocompletePredictionEntity(String str, List list, int i, String str2, List list2, String str3, List list3, String str4, List list4) {
@@ -90,29 +90,29 @@ public class AutocompletePredictionEntity extends AbstractSafeParcelable impleme
         this.i = list4;
     }
 
-    @Override // defpackage.cads
+    @Override // defpackage.ccmj
     public final CharSequence a(CharacterStyle characterStyle) {
-        return cafz.a(this.f, this.g, characterStyle);
+        return ccoq.a(this.f, this.g, characterStyle);
     }
 
-    @Override // defpackage.cads
+    @Override // defpackage.ccmj
     public final String b() {
         return this.a;
     }
 
-    @Override // defpackage.cads
+    @Override // defpackage.ccmj
     public final String c() {
         return this.b;
     }
 
-    @Override // defpackage.cads
+    @Override // defpackage.ccmj
     public final CharSequence d() {
-        return cafz.a(this.a, this.d, null);
+        return ccoq.a(this.a, this.d, null);
     }
 
-    @Override // defpackage.cads
+    @Override // defpackage.ccmj
     public final CharSequence e() {
-        return cafz.a(this.h, this.i, null);
+        return ccoq.a(this.h, this.i, null);
     }
 
     public final boolean equals(Object obj) {
@@ -123,7 +123,7 @@ public class AutocompletePredictionEntity extends AbstractSafeParcelable impleme
             return false;
         }
         AutocompletePredictionEntity autocompletePredictionEntity = (AutocompletePredictionEntity) obj;
-        return arwb.b(this.b, autocompletePredictionEntity.b) && arwb.b(this.c, autocompletePredictionEntity.c) && arwb.b(Integer.valueOf(this.e), Integer.valueOf(autocompletePredictionEntity.e)) && arwb.b(this.a, autocompletePredictionEntity.a) && arwb.b(this.d, autocompletePredictionEntity.d) && arwb.b(this.f, autocompletePredictionEntity.f) && arwb.b(this.g, autocompletePredictionEntity.g) && arwb.b(this.h, autocompletePredictionEntity.h) && arwb.b(this.i, autocompletePredictionEntity.i);
+        return atyq.b(this.b, autocompletePredictionEntity.b) && atyq.b(this.c, autocompletePredictionEntity.c) && atyq.b(Integer.valueOf(this.e), Integer.valueOf(autocompletePredictionEntity.e)) && atyq.b(this.a, autocompletePredictionEntity.a) && atyq.b(this.d, autocompletePredictionEntity.d) && atyq.b(this.f, autocompletePredictionEntity.f) && atyq.b(this.g, autocompletePredictionEntity.g) && atyq.b(this.h, autocompletePredictionEntity.h) && atyq.b(this.i, autocompletePredictionEntity.i);
     }
 
     public final int hashCode() {
@@ -132,34 +132,34 @@ public class AutocompletePredictionEntity extends AbstractSafeParcelable impleme
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("placeId", this.b, arrayList);
-        arwa.b("placeTypes", this.c, arrayList);
-        arwa.b("fullText", this.a, arrayList);
-        arwa.b("fullTextMatchedSubstrings", this.d, arrayList);
-        arwa.b("primaryText", this.f, arrayList);
-        arwa.b("primaryTextMatchedSubstrings", this.g, arrayList);
-        arwa.b("secondaryText", this.h, arrayList);
-        arwa.b("secondaryTextMatchedSubstrings", this.i, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("placeId", this.b, arrayList);
+        atyp.b("placeTypes", this.c, arrayList);
+        atyp.b("fullText", this.a, arrayList);
+        atyp.b("fullTextMatchedSubstrings", this.d, arrayList);
+        atyp.b("primaryText", this.f, arrayList);
+        atyp.b("primaryTextMatchedSubstrings", this.g, arrayList);
+        atyp.b("secondaryText", this.h, arrayList);
+        atyp.b("secondaryTextMatchedSubstrings", this.i, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.E(parcel, 3, this.c);
-        arxc.y(parcel, 4, this.d, false);
-        arxc.o(parcel, 5, this.e);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.y(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.y(parcel, 9, this.i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.E(parcel, 3, this.c);
+        atzr.y(parcel, 4, this.d, false);
+        atzr.o(parcel, 5, this.e);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.y(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.y(parcel, 9, this.i, false);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

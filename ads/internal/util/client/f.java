@@ -15,11 +15,11 @@ import android.view.Display;
 import android.view.WindowManager;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.flag.s;
-import defpackage.aqtp;
-import defpackage.aquo;
-import defpackage.byhr;
-import defpackage.tca;
-import defpackage.tce;
+import defpackage.aswe;
+import defpackage.asxd;
+import defpackage.caqj;
+import defpackage.uya;
+import defpackage.uye;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -33,16 +33,16 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class f {
-    public static final Handler a = new byhr(Looper.getMainLooper());
-    public static final String b = tce.class.getName();
+    public static final Handler a = new caqj(Looper.getMainLooper());
+    public static final String b = uye.class.getName();
     public static final String c = com.google.android.gms.ads.interstitial.b.class.getName();
     public static final String d = com.google.android.gms.ads.admanager.a.class.getName();
     public static final String e = com.google.android.gms.ads.admanager.b.class.getName();
     public static final String f = com.google.android.gms.ads.search.a.class.getName();
-    public static final String g = tca.class.getName();
+    public static final String g = uya.class.getName();
     private float h = -1.0f;
 
     public static String b() {
@@ -90,7 +90,7 @@ public final class f {
     }
 
     public static final boolean i() {
-        ((Boolean) p.bI.g()).booleanValue();
+        ((Boolean) p.bJ.g()).booleanValue();
         return Build.DEVICE.startsWith("generic");
     }
 
@@ -112,7 +112,7 @@ public final class f {
     }
 
     public static final boolean m(Context context) {
-        return aqtp.d.m(context) == 0;
+        return aswe.d.m(context) == 0;
     }
 
     public static final void n(Context context, String str, String str2, Bundle bundle, e eVar) {
@@ -124,8 +124,8 @@ public final class f {
         bundle.putString("api", String.valueOf(Build.VERSION.SDK_INT));
         bundle.putString("appid", applicationContext.getPackageName());
         if (str == null) {
-            int i = aqtp.c;
-            str = defpackage.a.W(aquo.a(context), ".251661000");
+            int i = aswe.c;
+            str = defpackage.a.B(asxd.a(context), ".251864000");
         }
         bundle.putString("js", str);
         Uri.Builder appendQueryParameter = new Uri.Builder().scheme("https").path("//pagead2.googlesyndication.com/pagead/gen_204").appendQueryParameter("id", str2);

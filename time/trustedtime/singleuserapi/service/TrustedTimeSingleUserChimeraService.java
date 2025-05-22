@@ -1,47 +1,47 @@
 package com.google.android.gms.time.trustedtime.singleuserapi.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.dggs;
-import defpackage.dggu;
-import defpackage.dggw;
-import defpackage.dghr;
-import defpackage.dgii;
-import defpackage.dgij;
-import defpackage.dgiy;
-import defpackage.dgjb;
-import defpackage.duut;
-import defpackage.duuw;
-import defpackage.ejck;
-import defpackage.ejhf;
-import defpackage.fsnk;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.dirx;
+import defpackage.dirz;
+import defpackage.disb;
+import defpackage.disw;
+import defpackage.ditn;
+import defpackage.dito;
+import defpackage.diud;
+import defpackage.diug;
+import defpackage.dxfp;
+import defpackage.dxfs;
+import defpackage.elpp;
+import defpackage.eluo;
+import defpackage.fviu;
 import j$.util.Objects;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class TrustedTimeSingleUserChimeraService extends bxgd {
-    public static final duut a = new duuw(TrustedTimeSingleUserChimeraService.class);
-    private final dggs b;
-    private final dgij c;
+public final class TrustedTimeSingleUserChimeraService extends bzot {
+    public static final dxfp a = new dxfs(TrustedTimeSingleUserChimeraService.class);
+    private final dirx b;
+    private final dito c;
 
     public TrustedTimeSingleUserChimeraService() {
-        this(new dggu(), dgii.a);
+        this(new dirz(), ditn.a);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        if (dgjb.b() || fsnk.c()) {
-            bxgjVar.c(new dggw(l(), this.b, this.c, getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        if (diug.b() || fviu.c()) {
+            bzozVar.c(new disb(l(), this.b, this.c, getServiceRequest.f, getServiceRequest.p));
         } else {
-            ((ejhf) ((ejhf) dgiy.a.j()).ah(11420)).B("%s: TrustedTime or test mode is not enabled", a);
-            bxgjVar.a(16, null);
+            ((eluo) ((eluo) diud.a.j()).ai(11423)).B("%s: TrustedTime or test mode is not enabled", a);
+            bzozVar.a(16, null);
         }
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService
     public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         super.dump(fileDescriptor, printWriter, strArr);
         if (printWriter == null) {
@@ -49,12 +49,12 @@ public final class TrustedTimeSingleUserChimeraService extends bxgd {
         }
         printWriter.println();
         printWriter.println(a);
-        dghr.a.a(printWriter);
+        disw.a.a(printWriter);
     }
 
-    public TrustedTimeSingleUserChimeraService(dggs dggsVar, dgij dgijVar) {
-        super(326, "com.google.android.gms.time.trustedtime.singleuserapi.service.START", ejck.a, 0, 10);
-        this.b = (dggs) Objects.requireNonNull(dggsVar);
-        this.c = (dgij) Objects.requireNonNull(dgijVar);
+    public TrustedTimeSingleUserChimeraService(dirx dirxVar, dito ditoVar) {
+        super(326, "com.google.android.gms.time.trustedtime.singleuserapi.service.START", elpp.a, 0, 10);
+        this.b = (dirx) Objects.requireNonNull(dirxVar);
+        this.c = (dito) Objects.requireNonNull(ditoVar);
     }
 }

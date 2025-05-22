@@ -6,41 +6,41 @@ import android.os.Build;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.cbom;
-import defpackage.cbpv;
-import defpackage.cbpz;
-import defpackage.cbqo;
-import defpackage.cbrf;
-import defpackage.cbry;
-import defpackage.cbrz;
-import defpackage.cbta;
-import defpackage.cbvk;
-import defpackage.ensv;
-import defpackage.fpzd;
-import defpackage.fpzk;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.cdxe;
+import defpackage.cdyn;
+import defpackage.cdyr;
+import defpackage.cdzg;
+import defpackage.cdzx;
+import defpackage.ceaq;
+import defpackage.cear;
+import defpackage.cebs;
+import defpackage.ceec;
+import defpackage.eqgo;
+import defpackage.fssz;
+import defpackage.fstg;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class TetherListenerChimeraService extends Service {
-    public static final asot a = cbta.a("TetherListenerService");
+    public static final ausn a = cebs.a("TetherListenerService");
     public static BluetoothStateChangeReceiver b;
     public final Object c;
-    public cbpz d;
-    public cbry e;
-    private final ensv f;
+    public cdyr d;
+    public ceaq e;
+    private final eqgo f;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class BluetoothStateChangeReceiver extends TracingBroadcastReceiver {
         public BluetoothStateChangeReceiver() {
             super("auth_magictether");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             Intent a = TetherListenerChimeraService.a(context);
             if (intent.getIntExtra("android.bluetooth.adapter.extra.STATE", 10) == 12) {
                 context.startService(a);
@@ -51,20 +51,20 @@ public class TetherListenerChimeraService extends Service {
     }
 
     public TetherListenerChimeraService() {
-        this(new asmf(1, 10), null);
+        this(new aupz(1, 10), null);
     }
 
     public static Intent a(Context context) {
-        return (!cbpv.c(fpzk.y()) || (fpzk.a.a().o() && cbom.a(Build.MANUFACTURER) && context.getPackageManager().hasSystemFeature("com.samsung.android.feature.INSTANT_HOTSPOT_NOT_SUPPORTED"))) ? new Intent().setClassName(context, "com.google.android.gms.magictether.host.TetherListenerService") : cbvk.a();
+        return (!cdyn.c(fstg.y()) || (fstg.a.lK().o() && cdxe.a(Build.MANUFACTURER) && context.getPackageManager().hasSystemFeature("com.samsung.android.feature.INSTANT_HOTSPOT_NOT_SUPPORTED"))) ? new Intent().setClassName(context, "com.google.android.gms.magictether.host.TetherListenerService") : ceec.a();
     }
 
     @Override // com.google.android.chimera.Service
     public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         printWriter.append("==== TetherListenerService Dump ====\n");
         synchronized (this.c) {
-            cbpz cbpzVar = this.d;
-            if (cbpzVar != null) {
-                cbpzVar.b(printWriter);
+            cdyr cdyrVar = this.d;
+            if (cdyrVar != null) {
+                cdyrVar.b(printWriter);
             }
         }
     }
@@ -76,27 +76,27 @@ public class TetherListenerChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        if (fpzd.i()) {
+        if (fssz.i()) {
             this.f.shutdown();
             super.onDestroy();
             return;
         }
-        cbrf.a(this, true);
-        cbry cbryVar = this.e;
-        if (cbryVar != null) {
-            cbryVar.d();
-            cbry cbryVar2 = this.e;
-            cbqo cbqoVar = cbryVar2.b;
-            if (cbqoVar != null) {
-                cbqoVar.a();
-                cbryVar2.b = null;
+        cdzx.a(this, true);
+        ceaq ceaqVar = this.e;
+        if (ceaqVar != null) {
+            ceaqVar.d();
+            ceaq ceaqVar2 = this.e;
+            cdzg cdzgVar = ceaqVar2.b;
+            if (cdzgVar != null) {
+                cdzgVar.a();
+                ceaqVar2.b = null;
             }
             this.e = null;
         }
         synchronized (this.c) {
-            cbpz cbpzVar = this.d;
-            if (cbpzVar != null) {
-                cbpzVar.a();
+            cdyr cdyrVar = this.d;
+            if (cdyrVar != null) {
+                cdyrVar.a();
                 this.d = null;
             }
         }
@@ -106,17 +106,17 @@ public class TetherListenerChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        if (fpzd.i()) {
+        if (fssz.i()) {
             stopSelf();
             return 2;
         }
-        this.f.execute(new cbrz(this));
+        this.f.execute(new cear(this));
         return 1;
     }
 
-    public TetherListenerChimeraService(ensv ensvVar, cbpz cbpzVar) {
+    public TetherListenerChimeraService(eqgo eqgoVar, cdyr cdyrVar) {
         this.c = new Object();
-        this.f = ensvVar;
-        this.d = cbpzVar;
+        this.f = eqgoVar;
+        this.d = cdyrVar;
     }
 }

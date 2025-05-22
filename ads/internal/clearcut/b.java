@@ -5,24 +5,24 @@ import android.os.SystemClock;
 import android.util.Base64;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.util.m;
-import defpackage.bqux;
-import defpackage.feab;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedb;
-import defpackage.fedu;
+import defpackage.btco;
+import defpackage.fgou;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgru;
+import defpackage.fgsn;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class b {
     private final g a;
     private final boolean b;
-    private final fecj c;
+    private final fgrc c;
 
     public b() {
         this.c = i.a.v();
@@ -31,12 +31,12 @@ public final class b {
     }
 
     private final synchronized String c(int i) {
-        fecj fecjVar;
+        fgrc fgrcVar;
         String str;
-        fecjVar = this.c;
-        str = ((i) fecjVar.b).c;
+        fgrcVar = this.c;
+        str = ((i) fgrcVar.b).c;
         com.google.android.gms.ads.internal.c.j();
-        return String.format("id=%s,timestamp=%s,event=%s,data=%s\n", str, Long.valueOf(SystemClock.elapsedRealtime()), Integer.valueOf(i - 1), Base64.encodeToString(((i) fecjVar.Q()).r(), 3));
+        return String.format("id=%s,timestamp=%s,event=%s,data=%s\n", str, Long.valueOf(SystemClock.elapsedRealtime()), Integer.valueOf(i - 1), Base64.encodeToString(((i) fgrcVar.Q()).r(), 3));
     }
 
     private final synchronized void d(int i) {
@@ -45,7 +45,7 @@ public final class b {
             return;
         }
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream(new File(bqux.a.b(externalStorageDirectory, "clearcut_events.txt")), true);
+            FileOutputStream fileOutputStream = new FileOutputStream(new File(btco.a.b(externalStorageDirectory, "clearcut_events.txt")), true);
             try {
                 try {
                     fileOutputStream.write(c(i).getBytes());
@@ -69,24 +69,24 @@ public final class b {
     }
 
     private final synchronized void e(int i) {
-        fecj fecjVar = this.c;
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        fgrc fgrcVar = this.c;
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        i iVar = (i) fecjVar.b;
+        i iVar = (i) fgrcVar.b;
         i iVar2 = i.a;
-        iVar.d = fedu.a;
+        iVar.d = fgsn.a;
         List b = m.b();
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        i iVar3 = (i) fecjVar.b;
-        fedb fedbVar = iVar3.d;
-        if (!fedbVar.c()) {
-            iVar3.d = fecp.D(fedbVar);
+        i iVar3 = (i) fgrcVar.b;
+        fgru fgruVar = iVar3.d;
+        if (!fgruVar.c()) {
+            iVar3.d = fgri.D(fgruVar);
         }
-        feab.E(b, iVar3.d);
-        f fVar = new f(this.a, ((i) fecjVar.Q()).r());
+        fgou.E(b, iVar3.d);
+        f fVar = new f(this.a, ((i) fgrcVar.Q()).r());
         int i2 = i - 1;
         fVar.a = i2;
         fVar.b();
@@ -105,7 +105,7 @@ public final class b {
 
     public final synchronized void b(int i) {
         if (this.b) {
-            if (((Boolean) p.aB.g()).booleanValue()) {
+            if (((Boolean) p.aC.g()).booleanValue()) {
                 d(i);
             } else {
                 e(i);
@@ -116,6 +116,6 @@ public final class b {
     public b(g gVar) {
         this.c = i.a.v();
         this.a = gVar;
-        this.b = ((Boolean) p.aA.g()).booleanValue();
+        this.b = ((Boolean) p.aB.g()).booleanValue();
     }
 }

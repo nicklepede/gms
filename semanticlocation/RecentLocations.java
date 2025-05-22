@@ -4,22 +4,22 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.czgp;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.atzr;
+import defpackage.dbqn;
+import defpackage.elgo;
+import defpackage.elpg;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RecentLocations extends AbstractSafeParcelable implements ReflectedParcelable {
     public static final Parcelable.Creator CREATOR;
     public final List a;
 
     static {
-        int i = eitj.d;
-        eitj eitjVar = ejcb.a;
-        CREATOR = new czgp();
+        int i = elgo.d;
+        elgo elgoVar = elpg.a;
+        CREATOR = new dbqn();
     }
 
     public RecentLocations(List list) {
@@ -29,8 +29,8 @@ public class RecentLocations extends AbstractSafeParcelable implements Reflected
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.c(parcel, a);
     }
 }

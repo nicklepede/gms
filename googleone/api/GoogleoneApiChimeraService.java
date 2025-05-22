@@ -1,25 +1,25 @@
 package com.google.android.gms.googleone.api;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bjim;
-import defpackage.bxgj;
-import defpackage.ejck;
-import defpackage.fouv;
-import defpackage.fvbo;
+import defpackage.blnb;
+import defpackage.bzoz;
+import defpackage.elpp;
+import defpackage.frnw;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class GoogleoneApiChimeraService extends bjim {
+public final class GoogleoneApiChimeraService extends blnb {
     public GoogleoneApiChimeraService() {
-        super(425, "com.google.android.gms.googleone.api.GoogleoneApiChimeraService.START", ejck.a, 0, 10);
+        super(425, "com.google.android.gms.googleone.api.GoogleoneApiChimeraService.START", elpp.a, 0, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        fvbo.f(getServiceRequest, "request");
-        if (fouv.c()) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        fxxm.f(getServiceRequest, "request");
+        if (frnw.c()) {
             return;
         }
-        bxgjVar.a(23, null);
+        bzozVar.a(23, null);
     }
 }

@@ -6,20 +6,20 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.arxd;
-import defpackage.bzhc;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.atzs;
+import defpackage.cbpt;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ActivityRecognitionResult extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bzhc();
+    public static final Parcelable.Creator CREATOR = new cbpt();
     public List a;
     public long b;
     public long c;
@@ -55,7 +55,7 @@ public class ActivityRecognitionResult extends AbstractSafeParcelable implements
             if (r2 == 0) goto L25
             byte[] r0 = (byte[]) r0
             android.os.Parcelable$Creator r2 = com.google.android.gms.location.ActivityRecognitionResult.CREATOR
-            com.google.android.gms.common.internal.safeparcel.SafeParcelable r0 = defpackage.arxd.a(r0, r2)
+            com.google.android.gms.common.internal.safeparcel.SafeParcelable r0 = defpackage.atzs.a(r0, r2)
             com.google.android.gms.location.ActivityRecognitionResult r0 = (com.google.android.gms.location.ActivityRecognitionResult) r0
             goto L2b
         L25:
@@ -85,7 +85,7 @@ public class ActivityRecognitionResult extends AbstractSafeParcelable implements
 
     public static List f(Intent intent) {
         if (h(intent)) {
-            return arxd.g(intent, "com.google.android.location.internal.EXTRA_ACTIVITY_RESULT_LIST", CREATOR);
+            return atzs.g(intent, "com.google.android.location.internal.EXTRA_ACTIVITY_RESULT_LIST", CREATOR);
         }
         return null;
     }
@@ -134,7 +134,7 @@ public class ActivityRecognitionResult extends AbstractSafeParcelable implements
                 if (obj.getClass().isArray()) {
                     if (obj2 != null && obj2.getClass().isArray() && (length = Array.getLength(obj)) == Array.getLength(obj2)) {
                         for (int i = 0; i < length; i++) {
-                            if (arwb.b(Array.get(obj, i), Array.get(obj2, i))) {
+                            if (atyq.b(Array.get(obj, i), Array.get(obj2, i))) {
                             }
                         }
                     }
@@ -193,7 +193,7 @@ public class ActivityRecognitionResult extends AbstractSafeParcelable implements
         }
         if (obj != null && getClass() == obj.getClass()) {
             ActivityRecognitionResult activityRecognitionResult = (ActivityRecognitionResult) obj;
-            if (this.b == activityRecognitionResult.b && this.c == activityRecognitionResult.c && this.d == activityRecognitionResult.d && arwb.b(this.a, activityRecognitionResult.a) && i(this.e, activityRecognitionResult.e)) {
+            if (this.b == activityRecognitionResult.b && this.c == activityRecognitionResult.c && this.d == activityRecognitionResult.d && atyq.b(this.a, activityRecognitionResult.a) && i(this.e, activityRecognitionResult.e)) {
                 return true;
             }
         }
@@ -210,13 +210,13 @@ public class ActivityRecognitionResult extends AbstractSafeParcelable implements
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, this.a, false);
-        arxc.q(parcel, 2, this.b);
-        arxc.q(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.g(parcel, 5, this.e, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, this.a, false);
+        atzr.q(parcel, 2, this.b);
+        atzr.q(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.g(parcel, 5, this.e, false);
+        atzr.c(parcel, a);
     }
 
     public ActivityRecognitionResult(List list, long j, long j2) {
@@ -224,8 +224,8 @@ public class ActivityRecognitionResult extends AbstractSafeParcelable implements
     }
 
     public ActivityRecognitionResult(List list, long j, long j2, int i, Bundle bundle) {
-        arwm.c((list == null || list.isEmpty()) ? false : true, "Must have at least 1 detected activity");
-        arwm.c(j > 0 && j2 > 0, "Must set times");
+        atzb.c((list == null || list.isEmpty()) ? false : true, "Must have at least 1 detected activity");
+        atzb.c(j > 0 && j2 > 0, "Must set times");
         this.a = list;
         this.b = j;
         this.c = j2;

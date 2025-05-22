@@ -8,21 +8,21 @@ import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.libs.identity.ClientIdentity;
 import defpackage.a;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.asrj;
-import defpackage.bzhx;
-import defpackage.bzio;
-import defpackage.bziy;
-import defpackage.bzjc;
-import defpackage.canl;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.auvd;
+import defpackage.cbqo;
+import defpackage.cbrf;
+import defpackage.cbrp;
+import defpackage.cbrt;
+import defpackage.ccwb;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class LocationRequest extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bzio();
+    public static final Parcelable.Creator CREATOR = new cbrf();
     public int a;
     public long b;
     public long c;
@@ -44,7 +44,7 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
     }
 
     private static String j(long j) {
-        return j == Long.MAX_VALUE ? "∞" : canl.a(j);
+        return j == Long.MAX_VALUE ? "∞" : ccwb.a(j);
     }
 
     public final boolean a() {
@@ -58,19 +58,19 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
 
     @Deprecated
     public final void c(long j) {
-        arwm.c(j > 0, "durationMillis must be greater than 0");
+        atzb.c(j > 0, "durationMillis must be greater than 0");
         this.e = j;
     }
 
     @Deprecated
     public final void d(long j) {
-        arwm.d(j >= 0, "illegal fastest interval: %d", Long.valueOf(j));
+        atzb.d(j >= 0, "illegal fastest interval: %d", Long.valueOf(j));
         this.c = j;
     }
 
     @Deprecated
     public final void e(long j) {
-        arwm.c(j >= 0, "intervalMillis must be greater than or equal to 0");
+        atzb.c(j >= 0, "intervalMillis must be greater than or equal to 0");
         long j2 = this.c;
         long j3 = this.b;
         if (j2 == j3 / 6) {
@@ -86,7 +86,7 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
         if (obj instanceof LocationRequest) {
             LocationRequest locationRequest = (LocationRequest) obj;
             boolean a = a();
-            if (this.a == locationRequest.a && ((b() || this.b == locationRequest.b) && this.c == locationRequest.c && a == locationRequest.a() && ((!a || this.d == locationRequest.d) && this.e == locationRequest.e && this.f == locationRequest.f && this.g == locationRequest.g && this.h == locationRequest.h && this.j == locationRequest.j && this.k == locationRequest.k && this.l == locationRequest.l && this.m.equals(locationRequest.m) && arwb.b(this.n, locationRequest.n)))) {
+            if (this.a == locationRequest.a && ((b() || this.b == locationRequest.b) && this.c == locationRequest.c && a == locationRequest.a() && ((!a || this.d == locationRequest.d) && this.e == locationRequest.e && this.f == locationRequest.f && this.g == locationRequest.g && this.h == locationRequest.h && this.j == locationRequest.j && this.k == locationRequest.k && this.l == locationRequest.l && this.m.equals(locationRequest.m) && atyq.b(this.n, locationRequest.n)))) {
                 return true;
             }
         }
@@ -95,7 +95,7 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
 
     @Deprecated
     public final void f(long j) {
-        arwm.d(j >= 0, "illegal max wait time: %d", Long.valueOf(j));
+        atzb.d(j >= 0, "illegal max wait time: %d", Long.valueOf(j));
         this.d = j;
     }
 
@@ -109,7 +109,7 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
 
     @Deprecated
     public final void h(int i) {
-        bziy.b(i);
+        cbrp.b(i);
         this.a = i;
     }
 
@@ -126,22 +126,22 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
         StringBuilder sb = new StringBuilder();
         sb.append("Request[");
         if (b()) {
-            sb.append(bziy.a(this.a));
+            sb.append(cbrp.a(this.a));
             if (this.d > 0) {
                 sb.append("/");
-                canl.e(this.d, sb);
+                ccwb.e(this.d, sb);
             }
         } else {
             sb.append("@");
             if (a()) {
-                canl.e(this.b, sb);
+                ccwb.e(this.b, sb);
                 sb.append("/");
-                canl.e(this.d, sb);
+                ccwb.e(this.d, sb);
             } else {
-                canl.e(this.b, sb);
+                ccwb.e(this.b, sb);
             }
             sb.append(" ");
-            sb.append(bziy.a(this.a));
+            sb.append(cbrp.a(this.a));
         }
         if (b() || this.c != this.b) {
             sb.append(", minUpdateInterval=");
@@ -157,7 +157,7 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
         }
         if (this.e != Long.MAX_VALUE) {
             sb.append(", duration=");
-            canl.e(this.e, sb);
+            ccwb.e(this.e, sb);
         }
         if (this.f != Integer.MAX_VALUE) {
             sb.append(", maxUpdates=");
@@ -166,12 +166,12 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
         int i = this.k;
         if (i != 0) {
             sb.append(", ");
-            sb.append(bzjc.a(i));
+            sb.append(cbrt.a(i));
         }
         int i2 = this.j;
         if (i2 != 0) {
             sb.append(", ");
-            sb.append(bzhx.a(i2));
+            sb.append(cbqo.a(i2));
         }
         if (this.h) {
             sb.append(", waitForAccurateLocation");
@@ -180,7 +180,7 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
             sb.append(", bypass");
         }
         WorkSource workSource = this.m;
-        if (!asrj.g(workSource)) {
+        if (!auvd.g(workSource)) {
             sb.append(", ");
             sb.append(workSource);
         }
@@ -195,22 +195,22 @@ public final class LocationRequest extends AbstractSafeParcelable implements Ref
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.q(parcel, 2, this.b);
-        arxc.q(parcel, 3, this.c);
-        arxc.o(parcel, 6, this.f);
-        arxc.l(parcel, 7, this.g);
-        arxc.q(parcel, 8, this.d);
-        arxc.e(parcel, 9, this.h);
-        arxc.q(parcel, 10, this.e);
-        arxc.q(parcel, 11, this.i);
-        arxc.o(parcel, 12, this.j);
-        arxc.o(parcel, 13, this.k);
-        arxc.e(parcel, 15, this.l);
-        arxc.t(parcel, 16, this.m, i, false);
-        arxc.t(parcel, 17, this.n, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.q(parcel, 2, this.b);
+        atzr.q(parcel, 3, this.c);
+        atzr.o(parcel, 6, this.f);
+        atzr.l(parcel, 7, this.g);
+        atzr.q(parcel, 8, this.d);
+        atzr.e(parcel, 9, this.h);
+        atzr.q(parcel, 10, this.e);
+        atzr.q(parcel, 11, this.i);
+        atzr.o(parcel, 12, this.j);
+        atzr.o(parcel, 13, this.k);
+        atzr.e(parcel, 15, this.l);
+        atzr.t(parcel, 16, this.m, i, false);
+        atzr.t(parcel, 17, this.n, i, false);
+        atzr.c(parcel, a);
     }
 
     public LocationRequest(int i, long j, long j2, long j3, long j4, long j5, int i2, float f, boolean z, long j6, int i3, int i4, boolean z2, WorkSource workSource, ClientIdentity clientIdentity) {

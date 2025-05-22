@@ -3,19 +3,19 @@ package com.google.android.gms.wallet.analytics.events;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.dify;
-import defpackage.divi;
-import defpackage.divs;
-import defpackage.divt;
-import defpackage.emcz;
-import defpackage.emdk;
-import defpackage.emdl;
-import defpackage.fecj;
+import defpackage.dkrj;
+import defpackage.dlgt;
+import defpackage.dlhd;
+import defpackage.dlhe;
+import defpackage.eoqn;
+import defpackage.eoqy;
+import defpackage.eoqz;
+import defpackage.fgrc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class OrchestrationDcbEvent extends WalletAnalyticsEvent implements divs {
-    public static final Parcelable.Creator CREATOR = new dify();
+public class OrchestrationDcbEvent extends WalletAnalyticsEvent implements dlhd {
+    public static final Parcelable.Creator CREATOR = new dkrj();
     private final int a;
 
     public OrchestrationDcbEvent(String str, int i) {
@@ -24,28 +24,28 @@ public class OrchestrationDcbEvent extends WalletAnalyticsEvent implements divs 
     }
 
     public static void a(Context context, String str, int i) {
-        divi.a(context, new OrchestrationDcbEvent(str, i));
+        dlgt.a(context, new OrchestrationDcbEvent(str, i));
     }
 
-    @Override // defpackage.divs
-    public final void b(Context context, divt divtVar, fecj fecjVar) {
-        fecj v = emdl.a.v();
+    @Override // defpackage.dlhd
+    public final void b(Context context, dlhe dlheVar, fgrc fgrcVar) {
+        fgrc v = eoqz.a.v();
         if (!v.b.L()) {
             v.U();
         }
         int i = this.a;
-        emdl emdlVar = (emdl) v.b;
-        emdlVar.c = i - 1;
-        emdlVar.b |= 1;
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        eoqz eoqzVar = (eoqz) v.b;
+        eoqzVar.c = i - 1;
+        eoqzVar.b |= 1;
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        emcz emczVar = (emcz) fecjVar.b;
-        emdl emdlVar2 = (emdl) v.Q();
-        emcz emczVar2 = emcz.a;
-        emdlVar2.getClass();
-        emczVar.g = emdlVar2;
-        emczVar.b |= 4;
+        eoqn eoqnVar = (eoqn) fgrcVar.b;
+        eoqz eoqzVar2 = (eoqz) v.Q();
+        eoqn eoqnVar2 = eoqn.a;
+        eoqzVar2.getClass();
+        eoqnVar.g = eoqzVar2;
+        eoqnVar.b |= 4;
     }
 
     @Override // android.os.Parcelable
@@ -61,7 +61,7 @@ public class OrchestrationDcbEvent extends WalletAnalyticsEvent implements divs 
 
     public OrchestrationDcbEvent(Parcel parcel) {
         super(parcel);
-        int a = emdk.a(parcel.readInt());
+        int a = eoqy.a(parcel.readInt());
         if (a == 0) {
             this.a = 1;
         } else {

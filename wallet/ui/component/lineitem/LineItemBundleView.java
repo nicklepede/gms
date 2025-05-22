@@ -16,34 +16,34 @@ import com.google.android.gms.R;
 import com.google.android.wallet.ui.common.FifeNetworkImageView;
 import com.google.android.wallet.ui.common.ImageWithCaptionView;
 import defpackage.a;
-import defpackage.ding;
-import defpackage.djeo;
-import defpackage.djep;
-import defpackage.djhj;
-import defpackage.eful;
-import defpackage.efwo;
-import defpackage.ehvl;
-import defpackage.ehvo;
-import defpackage.ehvp;
-import defpackage.ehzo;
-import defpackage.rpq;
+import defpackage.dkyr;
+import defpackage.dlqh;
+import defpackage.dlqi;
+import defpackage.dltc;
+import defpackage.eiho;
+import defpackage.eijr;
+import defpackage.ekir;
+import defpackage.ekiu;
+import defpackage.ekiv;
+import defpackage.ekmu;
+import defpackage.tiy;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class LineItemBundleView extends FrameLayout implements View.OnClickListener, djeo, eful {
+public class LineItemBundleView extends FrameLayout implements View.OnClickListener, dlqh, eiho {
     public LineItemView a;
     LinearLayout b;
     LinearLayout c;
     View d;
     public ImageWithCaptionView e;
     View f;
-    public ehvl g;
+    public ekir g;
     boolean h;
     Paint i;
     Drawable j;
     public int k;
-    public djhj l;
+    public dltc l;
     private TextView m;
     private ViewGroup n;
     private boolean o;
@@ -88,13 +88,13 @@ public class LineItemBundleView extends FrameLayout implements View.OnClickListe
     }
 
     private final boolean l() {
-        ehvl ehvlVar = this.g;
-        return ehvlVar != null && ehvlVar.e.size() > 0;
+        ekir ekirVar = this.g;
+        return ekirVar != null && ekirVar.e.size() > 0;
     }
 
     private final boolean m() {
-        ehvl ehvlVar = this.g;
-        return ehvlVar != null && ehvlVar.f.size() > 0;
+        ekir ekirVar = this.g;
+        return ekirVar != null && ekirVar.f.size() > 0;
     }
 
     private final boolean n() {
@@ -103,7 +103,7 @@ public class LineItemBundleView extends FrameLayout implements View.OnClickListe
 
     private static final Paint o(Context context, int i) {
         Paint paint;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(R.style.WalletLineItemBundle, rpq.u);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(R.style.WalletLineItemBundle, tiy.t);
         int color = obtainStyledAttributes.getColor(i, android.R.color.transparent);
         if (color != 17170445) {
             paint = new Paint(1);
@@ -116,9 +116,9 @@ public class LineItemBundleView extends FrameLayout implements View.OnClickListe
         return paint;
     }
 
-    @Override // defpackage.djeo
+    @Override // defpackage.dlqh
     public final /* bridge */ /* synthetic */ boolean b(Object obj) {
-        return ((ehvl) obj) != null;
+        return ((ekir) obj) != null;
     }
 
     public final void c(int i) {
@@ -177,14 +177,14 @@ public class LineItemBundleView extends FrameLayout implements View.OnClickListe
         obtainStyledAttributes.recycle();
         this.d.setOnClickListener(this);
         k(false);
-        efwo.M((ImageView) inflate.findViewById(R.id.line_item_bundle_expand_button_image), efwo.h(getContext(), android.R.attr.textColorSecondary));
+        eijr.M((ImageView) inflate.findViewById(R.id.line_item_bundle_expand_button_image), eijr.h(getContext(), android.R.attr.textColorSecondary));
     }
 
-    @Override // defpackage.djeo
+    @Override // defpackage.dlqh
     /* renamed from: e, reason: merged with bridge method [inline-methods] */
-    public final void a(ehvl ehvlVar) {
-        this.g = ehvlVar;
-        g(ehvlVar, this.h);
+    public final void a(ekir ekirVar) {
+        this.g = ekirVar;
+        g(ekirVar, this.h);
     }
 
     public final void f(boolean z, boolean z2, boolean z3) {
@@ -196,34 +196,34 @@ public class LineItemBundleView extends FrameLayout implements View.OnClickListe
         }
     }
 
-    protected final void g(ehvl ehvlVar, boolean z) {
+    protected final void g(ekir ekirVar, boolean z) {
         Paint paint;
         Context context = getContext();
         LineItemView lineItemView = this.a;
-        ehvp ehvpVar = ehvlVar.d;
-        if (ehvpVar == null) {
-            ehvpVar = ehvp.a;
+        ekiv ekivVar = ekirVar.d;
+        if (ekivVar == null) {
+            ekivVar = ekiv.a;
         }
         boolean z2 = false;
-        if (lineItemView.b(ehvpVar)) {
+        if (lineItemView.b(ekivVar)) {
             lineItemView.setVisibility(0);
-            lineItemView.a(ehvpVar);
+            lineItemView.a(ekivVar);
         } else {
             lineItemView.setVisibility(8);
         }
         ImageWithCaptionView imageWithCaptionView = this.e;
-        ehvp ehvpVar2 = ehvlVar.d;
-        if (ehvpVar2 == null) {
-            ehvpVar2 = ehvp.a;
+        ekiv ekivVar2 = ekirVar.d;
+        if (ekivVar2 == null) {
+            ekivVar2 = ekiv.a;
         }
-        ehzo ehzoVar = ehvpVar2.h;
-        if (ehzoVar == null) {
-            ehzoVar = ehzo.a;
+        ekmu ekmuVar = ekivVar2.h;
+        if (ekmuVar == null) {
+            ekmuVar = ekmu.a;
         }
-        ding.y(imageWithCaptionView, ehzoVar, context);
+        dkyr.y(imageWithCaptionView, ekmuVar, context);
         Paint paint2 = null;
         if (h()) {
-            int[] iArr = rpq.a;
+            int[] iArr = tiy.a;
             paint = o(context, 0);
         } else {
             paint = null;
@@ -237,14 +237,14 @@ public class LineItemBundleView extends FrameLayout implements View.OnClickListe
             this.f.setVisibility(8);
             this.j = context.getResources().getDrawable(R.drawable.wallet_header_shadow);
             this.t = context.getResources().getDimensionPixelSize(R.dimen.wallet_header_shadow_height);
-            ding.T(this.a.a, this);
+            dkyr.T(this.a.a, this);
             this.x = context.getResources().getDimension(R.dimen.wallet_line_item_bundle_animation_scroll_distance);
         } else {
-            djep.a(context, this.b, ehvlVar.f, LineItemView.class);
-            djep.a(context, this.c, ehvlVar.e, LineItemView.class);
-            this.m.setText(ehvlVar.h);
+            dlqi.a(context, this.b, ekirVar.f, LineItemView.class);
+            dlqi.a(context, this.c, ekirVar.e, LineItemView.class);
+            this.m.setText(ekirVar.h);
             if (h()) {
-                TypedArray obtainStyledAttributes = context.obtainStyledAttributes(R.style.WalletLineItemBundle, rpq.u);
+                TypedArray obtainStyledAttributes = context.obtainStyledAttributes(R.style.WalletLineItemBundle, tiy.t);
                 boolean z3 = obtainStyledAttributes.getBoolean(1, false);
                 obtainStyledAttributes.recycle();
                 if (z3) {
@@ -255,14 +255,14 @@ public class LineItemBundleView extends FrameLayout implements View.OnClickListe
                 }
             }
             if (n() && !z) {
-                Iterator it = ehvlVar.f.iterator();
+                Iterator it = ekirVar.f.iterator();
                 while (true) {
                     if (!it.hasNext()) {
-                        int[] iArr2 = rpq.a;
+                        int[] iArr2 = tiy.a;
                         paint2 = o(context, 2);
                         break;
                     } else {
-                        int a = ehvo.a(((ehvp) it.next()).g);
+                        int a = ekiu.a(((ekiv) it.next()).g);
                         if (a != 0 && a == 7) {
                             break;
                         }
@@ -270,7 +270,7 @@ public class LineItemBundleView extends FrameLayout implements View.OnClickListe
                 }
             }
             this.i = paint2;
-            f(!ehvlVar.g, true, false);
+            f(!ekirVar.g, true, false);
         }
         if (this.r == null && this.i == null) {
             z2 = true;
@@ -279,30 +279,30 @@ public class LineItemBundleView extends FrameLayout implements View.OnClickListe
     }
 
     public final boolean h() {
-        ehvl ehvlVar = this.g;
-        return (ehvlVar == null || (ehvlVar.b & 2) == 0) ? false : true;
+        ekir ekirVar = this.g;
+        return (ekirVar == null || (ekirVar.b & 2) == 0) ? false : true;
     }
 
     public final boolean i() {
         if (!h()) {
             return false;
         }
-        ehvp ehvpVar = this.g.d;
-        if (ehvpVar == null) {
-            ehvpVar = ehvp.a;
+        ekiv ekivVar = this.g.d;
+        if (ekivVar == null) {
+            ekivVar = ekiv.a;
         }
-        return (ehvpVar.b & 8) != 0;
+        return (ekivVar.b & 8) != 0;
     }
 
     public final void j() {
-        djhj djhjVar = this.l;
-        if (djhjVar != null) {
-            djhjVar.c = this.u;
+        dltc dltcVar = this.l;
+        if (dltcVar != null) {
+            dltcVar.c = this.u;
         }
     }
 
-    @Override // defpackage.eful
-    public final void lb() {
+    @Override // defpackage.eiho
+    public final void lq() {
         c(this.v);
     }
 

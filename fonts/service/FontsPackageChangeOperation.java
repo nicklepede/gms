@@ -1,13 +1,13 @@
 package com.google.android.gms.fonts.service;
 
-import defpackage.bhcz;
-import defpackage.bhdp;
+import defpackage.bjhp;
+import defpackage.bjif;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FontsPackageChangeOperation extends bhcz {
-    @Override // defpackage.bhcz
+public class FontsPackageChangeOperation extends bjhp {
+    @Override // defpackage.bjhp
     public final void h() {
-        bhdp.a.g(getApplicationContext());
+        bjif.a.g(getApplicationContext());
     }
 }

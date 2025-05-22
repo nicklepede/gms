@@ -5,27 +5,27 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cjax;
-import defpackage.cjaz;
-import defpackage.cjba;
-import defpackage.cjbc;
-import defpackage.cjbn;
-import defpackage.cjbp;
-import defpackage.cjdw;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cljc;
+import defpackage.clje;
+import defpackage.cljf;
+import defpackage.cljh;
+import defpackage.cljs;
+import defpackage.clju;
+import defpackage.clmb;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class StartDiscoveryParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjdw();
-    public cjbp a;
-    public cjaz b;
+    public static final Parcelable.Creator CREATOR = new clmb();
+    public clju a;
+    public clje b;
     public String c;
     public long d;
     public DiscoveryOptions e;
-    public cjbc f;
+    public cljh f;
     public String g;
 
     public StartDiscoveryParams() {
@@ -37,7 +37,7 @@ public final class StartDiscoveryParams extends AbstractSafeParcelable {
         }
         if (obj instanceof StartDiscoveryParams) {
             StartDiscoveryParams startDiscoveryParams = (StartDiscoveryParams) obj;
-            if (arwb.b(this.a, startDiscoveryParams.a) && arwb.b(this.b, startDiscoveryParams.b) && arwb.b(this.c, startDiscoveryParams.c) && arwb.b(Long.valueOf(this.d), Long.valueOf(startDiscoveryParams.d)) && arwb.b(this.e, startDiscoveryParams.e) && arwb.b(this.f, startDiscoveryParams.f) && arwb.b(this.g, startDiscoveryParams.g)) {
+            if (atyq.b(this.a, startDiscoveryParams.a) && atyq.b(this.b, startDiscoveryParams.b) && atyq.b(this.c, startDiscoveryParams.c) && atyq.b(Long.valueOf(this.d), Long.valueOf(startDiscoveryParams.d)) && atyq.b(this.e, startDiscoveryParams.e) && atyq.b(this.f, startDiscoveryParams.f) && atyq.b(this.g, startDiscoveryParams.g)) {
                 return true;
             }
         }
@@ -50,46 +50,46 @@ public final class StartDiscoveryParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        cjbp cjbpVar = this.a;
-        arxc.D(parcel, 1, cjbpVar == null ? null : cjbpVar.asBinder());
-        cjaz cjazVar = this.b;
-        arxc.D(parcel, 2, cjazVar == null ? null : cjazVar.asBinder());
-        arxc.v(parcel, 3, this.c, false);
-        arxc.q(parcel, 4, this.d);
-        arxc.t(parcel, 5, this.e, i, false);
-        cjbc cjbcVar = this.f;
-        arxc.D(parcel, 6, cjbcVar != null ? cjbcVar.asBinder() : null);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        clju cljuVar = this.a;
+        atzr.D(parcel, 1, cljuVar == null ? null : cljuVar.asBinder());
+        clje cljeVar = this.b;
+        atzr.D(parcel, 2, cljeVar == null ? null : cljeVar.asBinder());
+        atzr.v(parcel, 3, this.c, false);
+        atzr.q(parcel, 4, this.d);
+        atzr.t(parcel, 5, this.e, i, false);
+        cljh cljhVar = this.f;
+        atzr.D(parcel, 6, cljhVar != null ? cljhVar.asBinder() : null);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.c(parcel, a);
     }
 
     public StartDiscoveryParams(IBinder iBinder, IBinder iBinder2, String str, long j, DiscoveryOptions discoveryOptions, IBinder iBinder3, String str2) {
-        cjbp cjbnVar;
-        cjaz cjaxVar;
-        cjbc cjbcVar = null;
+        clju cljsVar;
+        clje cljcVar;
+        cljh cljhVar = null;
         if (iBinder == null) {
-            cjbnVar = null;
+            cljsVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IResultListener");
-            cjbnVar = queryLocalInterface instanceof cjbp ? (cjbp) queryLocalInterface : new cjbn(iBinder);
+            cljsVar = queryLocalInterface instanceof clju ? (clju) queryLocalInterface : new cljs(iBinder);
         }
         if (iBinder2 == null) {
-            cjaxVar = null;
+            cljcVar = null;
         } else {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IDiscoveryCallback");
-            cjaxVar = queryLocalInterface2 instanceof cjaz ? (cjaz) queryLocalInterface2 : new cjax(iBinder2);
+            cljcVar = queryLocalInterface2 instanceof clje ? (clje) queryLocalInterface2 : new cljc(iBinder2);
         }
         if (iBinder3 != null) {
             IInterface queryLocalInterface3 = iBinder3.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IDiscoveryListener");
-            cjbcVar = queryLocalInterface3 instanceof cjbc ? (cjbc) queryLocalInterface3 : new cjba(iBinder3);
+            cljhVar = queryLocalInterface3 instanceof cljh ? (cljh) queryLocalInterface3 : new cljf(iBinder3);
         }
-        this.a = cjbnVar;
-        this.b = cjaxVar;
+        this.a = cljsVar;
+        this.b = cljcVar;
         this.c = str;
         this.d = j;
         this.e = discoveryOptions;
-        this.f = cjbcVar;
+        this.f = cljhVar;
         this.g = str2;
     }
 }

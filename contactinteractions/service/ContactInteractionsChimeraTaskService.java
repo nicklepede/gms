@@ -5,98 +5,98 @@ import android.os.Build;
 import android.os.SystemClock;
 import com.google.android.gms.contactinteractions.service.ContactInteractionsChimeraTaskService;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.apul;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.atnm;
-import defpackage.atnn;
-import defpackage.atno;
-import defpackage.bxdd;
-import defpackage.bxdf;
-import defpackage.bxdg;
-import defpackage.bxek;
-import defpackage.byjl;
-import defpackage.bykm;
-import defpackage.bylf;
-import defpackage.byll;
-import defpackage.byln;
-import defpackage.dnmt;
-import defpackage.enxx;
-import defpackage.fmnc;
-import defpackage.fnbr;
-import defpackage.fnde;
+import defpackage.arxc;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.avrp;
+import defpackage.avrq;
+import defpackage.avrr;
+import defpackage.bzlt;
+import defpackage.bzlv;
+import defpackage.bzlw;
+import defpackage.bzna;
+import defpackage.casd;
+import defpackage.cate;
+import defpackage.catx;
+import defpackage.caud;
+import defpackage.cauf;
+import defpackage.dpxc;
+import defpackage.eqlq;
+import defpackage.fpey;
+import defpackage.fptq;
+import defpackage.fpvd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class ContactInteractionsChimeraTaskService extends GmsTaskChimeraService {
     public static final /* synthetic */ int a = 0;
-    private static apul b;
+    private static arxc b;
 
     static {
-        asot.b("ContactInteractionsServ", asej.CONTACT_INTERACTIONS);
+        ausn.b("ContactInteractionsServ", auid.CONTACT_INTERACTIONS);
     }
 
-    public static synchronized apul e(Context context) {
-        apul apulVar;
+    public static synchronized arxc e(Context context) {
+        arxc arxcVar;
         synchronized (ContactInteractionsChimeraTaskService.class) {
             if (b == null) {
-                b = dnmt.b(context, new enxx());
+                b = dpxc.b(context, new eqlq());
             }
-            apulVar = b;
+            arxcVar = b;
         }
-        return apulVar;
+        return arxcVar;
     }
 
     public static void f(Context context) {
-        atnm.b(false, fmnc.c(), fmnc.j(), fmnc.b(), fmnc.h(), fmnc.i(), fmnc.g(), bxek.a(context, "contactinteractions", "contactinteractions_gms_prefs", 0));
+        avrp.b(false, fpey.c(), fpey.j(), fpey.b(), fpey.h(), fpey.i(), fpey.g(), bzna.a(context, "contactinteractions", "contactinteractions_gms_prefs", 0));
         try {
-            byjl.a(context).c("com.google.android.gms.contactinteractions.service.ContactInteractionsTaskService");
+            casd.a(context).c("com.google.android.gms.contactinteractions.service.ContactInteractionsTaskService");
         } catch (IllegalArgumentException unused) {
         }
     }
 
-    public static void g(Context context, atno atnoVar) {
-        if (!fmnc.f()) {
+    public static void g(Context context, avrr avrrVar) {
+        if (!fpey.f()) {
             f(context);
         } else if (j(context)) {
-            h(context, atnoVar);
+            h(context, avrrVar);
         }
     }
 
-    public static void h(Context context, atno atnoVar) {
-        bxdf a2 = bxek.a(context, "contactinteractions", "contactinteractions_gms_prefs", 0);
+    public static void h(Context context, avrr avrrVar) {
+        bzlv a2 = bzna.a(context, "contactinteractions", "contactinteractions_gms_prefs", 0);
         long uptimeMillis = SystemClock.uptimeMillis();
         long currentTimeMillis = System.currentTimeMillis();
-        long b2 = bxdg.b(a2, "clear_interaction_service_last_scheduled_timestamp", currentTimeMillis);
-        bxdd c = a2.c();
+        long b2 = bzlw.b(a2, "clear_interaction_service_last_scheduled_timestamp", currentTimeMillis);
+        bzlt c = a2.c();
         c.g("clear_interaction_service_last_scheduled_timestamp", currentTimeMillis);
-        bxdg.f(c);
-        boolean j = fmnc.a.a().e() ? j(context) : true;
-        bykm bykmVar = new bykm();
-        bykmVar.j = "com.google.android.gms.contactinteractions.service.ContactInteractionsTaskService";
-        bykmVar.t("com.google.android.gms.contactinteractions.service.ClearContactInteractionsPeriodicTask");
-        bykmVar.y(2, 2);
-        bykmVar.x(fmnc.h() ? 1 : 0, 1);
-        bykmVar.i(fmnc.i());
-        bykmVar.u(j);
-        bykmVar.p = fmnc.g();
-        long c2 = fmnc.c();
-        if (fnde.a.a().p()) {
-            bykmVar.e(c2, (long) (fnbr.b() * c2), bylf.a);
+        bzlw.f(c);
+        boolean j = fpey.a.lK().e() ? j(context) : true;
+        cate cateVar = new cate();
+        cateVar.j = "com.google.android.gms.contactinteractions.service.ContactInteractionsTaskService";
+        cateVar.t("com.google.android.gms.contactinteractions.service.ClearContactInteractionsPeriodicTask");
+        cateVar.y(2, 2);
+        cateVar.x(fpey.h() ? 1 : 0, 1);
+        cateVar.i(fpey.i());
+        cateVar.u(j);
+        cateVar.p = fpey.g();
+        long c2 = fpey.c();
+        if (fpvd.a.lK().p()) {
+            cateVar.e(c2, (long) (fptq.b() * c2), catx.a);
         } else {
-            bykmVar.a = c2;
-            if (fmnc.j()) {
-                bykmVar.b = fmnc.b();
+            cateVar.a = c2;
+            if (fpey.j()) {
+                cateVar.b = fpey.b();
             }
         }
-        atnm.b(true, fmnc.c(), fmnc.j(), fmnc.b(), fmnc.h(), fmnc.i(), fmnc.g(), a2);
-        i(context, bykmVar.b(), true != j ? 6 : 3, currentTimeMillis, uptimeMillis, b2, atnoVar);
+        avrp.b(true, fpey.c(), fpey.j(), fpey.b(), fpey.h(), fpey.i(), fpey.g(), a2);
+        i(context, cateVar.b(), true != j ? 6 : 3, currentTimeMillis, uptimeMillis, b2, avrrVar);
     }
 
-    public static void i(Context context, byll byllVar, int i, long j, long j2, long j3, atno atnoVar) {
+    public static void i(Context context, caud caudVar, int i, long j, long j2, long j3, avrr avrrVar) {
         int i2;
         try {
-            byjl.a(context).f(byllVar);
+            casd.a(context).f(caudVar);
             i2 = 3;
         } catch (IllegalArgumentException unused) {
             i2 = 4;
@@ -104,22 +104,22 @@ public final class ContactInteractionsChimeraTaskService extends GmsTaskChimeraS
         long uptimeMillis = SystemClock.uptimeMillis();
         long currentTimeMillis = System.currentTimeMillis();
         long j4 = j - j3;
-        atnoVar.a(i, i2, null, Long.valueOf(j), Long.valueOf(currentTimeMillis), Long.valueOf(uptimeMillis - j2), Long.valueOf(j4));
+        avrrVar.a(i, i2, null, Long.valueOf(j), Long.valueOf(currentTimeMillis), Long.valueOf(uptimeMillis - j2), Long.valueOf(j4));
     }
 
     private static boolean j(Context context) {
-        bxdf a2 = bxek.a(context, "contactinteractions", "contactinteractions_gms_prefs", 0);
-        return (bxdg.i(a2, "clear_interactions_service_enabled", false) == fmnc.f() && bxdg.b(a2, "clear_interactions_service_period_seconds", -1L) == fmnc.c() && bxdg.i(a2, "clear_interactions_service_use_flex", false) == fmnc.j() && bxdg.b(a2, "clear_interactions_service_flex_seconds", -1L) == fmnc.b() && bxdg.i(a2, "clear_interactions_service_requires_charging", false) == fmnc.h() && bxdg.i(a2, "clear_interactions_service_requires_device_idle", false) == fmnc.i() && bxdg.i(a2, "clear_interactions_service_persist_task", false) == fmnc.g()) ? false : true;
+        bzlv a2 = bzna.a(context, "contactinteractions", "contactinteractions_gms_prefs", 0);
+        return (bzlw.i(a2, "clear_interactions_service_enabled", false) == fpey.f() && bzlw.b(a2, "clear_interactions_service_period_seconds", -1L) == fpey.c() && bzlw.i(a2, "clear_interactions_service_use_flex", false) == fpey.j() && bzlw.b(a2, "clear_interactions_service_flex_seconds", -1L) == fpey.b() && bzlw.i(a2, "clear_interactions_service_requires_charging", false) == fpey.h() && bzlw.i(a2, "clear_interactions_service_requires_device_idle", false) == fpey.i() && bzlw.i(a2, "clear_interactions_service_persist_task", false) == fpey.g()) ? false : true;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         if (Build.VERSION.SDK_INT >= 29) {
             return 0;
         }
-        return d(bylnVar, new atno(this, new atnn() { // from class: atnl
-            @Override // defpackage.atnn
-            public final apul a() {
+        return d(caufVar, new avrr(this, new avrq() { // from class: avro
+            @Override // defpackage.avrq
+            public final arxc a() {
                 return ContactInteractionsChimeraTaskService.e(ContactInteractionsChimeraTaskService.this);
             }
         }));
@@ -133,7 +133,7 @@ public final class ContactInteractionsChimeraTaskService extends GmsTaskChimeraS
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    final int d(defpackage.byln r23, defpackage.atno r24) {
+    final int d(defpackage.cauf r23, defpackage.avrr r24) {
         /*
             r22 = this;
             r0 = r22
@@ -143,28 +143,28 @@ public final class ContactInteractionsChimeraTaskService extends GmsTaskChimeraS
             boolean r3 = r1.equals(r2)
             r4 = 2
             if (r3 == 0) goto L15
-            boolean r3 = defpackage.fmnc.f()
+            boolean r3 = defpackage.fpey.f()
             if (r3 != 0) goto L23
         L15:
             java.lang.String r3 = "com.google.android.gms.contactinteractions.service.ClearContactInteractionsOneOffTask"
             boolean r3 = r1.equals(r3)
             if (r3 == 0) goto Ldf
-            boolean r3 = defpackage.fmnc.e()
+            boolean r3 = defpackage.fpey.e()
             if (r3 == 0) goto Ldf
         L23:
             java.lang.String r3 = "contactinteractions"
             java.lang.String r5 = "contactinteractions_gms_prefs"
             r6 = 0
-            bxdf r3 = defpackage.bxek.a(r0, r3, r5, r6)
+            bzlv r3 = defpackage.bzna.a(r0, r3, r5, r6)
             long r7 = android.os.SystemClock.uptimeMillis()
             long r9 = java.lang.System.currentTimeMillis()
-            long r11 = defpackage.atnm.a(r9, r3)
-            bxdd r3 = r3.c()
+            long r11 = defpackage.avrp.a(r9, r3)
+            bzlt r3 = r3.c()
             java.lang.String r5 = "clear_interactions_service_last_run_timestamp"
             r3.g(r5, r9)
-            defpackage.bxdg.f(r3)
+            defpackage.bzlw.f(r3)
             java.lang.String r3 = "android.permission.WRITE_CONTACTS"
-            int r3 = defpackage.iln.a(r0, r3)
+            int r3 = defpackage.ind.a(r0, r3)
             r5 = 3
             r13 = 0
             if (r3 == 0) goto L54
@@ -181,7 +181,7 @@ public final class ContactInteractionsChimeraTaskService extends GmsTaskChimeraS
             java.lang.String r17 = "times_contacted>? OR last_time_contacted>?"
             r19 = 0
             java.lang.String r15 = "content://com.android.contacts/raw_contacts"
-            android.database.Cursor r3 = defpackage.bqpl.b(r14, r15, r16, r17, r18, r19)
+            android.database.Cursor r3 = defpackage.bsxc.b(r14, r15, r16, r17, r18, r19)
             if (r3 == 0) goto L81
             int r14 = r3.getCount()
             if (r14 <= 0) goto L81
@@ -196,7 +196,7 @@ public final class ContactInteractionsChimeraTaskService extends GmsTaskChimeraS
             android.content.ContentResolver r14 = r0.getContentResolver()     // Catch: java.lang.Throwable -> La3 java.lang.IllegalArgumentException -> La5
             java.lang.String r15 = "contentResolver"
             java.lang.String r16 = "content://com.android.contacts/contacts/delete_usage"
-            defpackage.fvbo.f(r14, r15)     // Catch: java.lang.Throwable -> La3 java.lang.IllegalArgumentException -> La5
+            defpackage.fxxm.f(r14, r15)     // Catch: java.lang.Throwable -> La3 java.lang.IllegalArgumentException -> La5
             android.net.Uri r15 = android.net.Uri.parse(r16)     // Catch: java.lang.Throwable -> La3 java.lang.IllegalArgumentException -> La5
             int r13 = r14.delete(r15, r13, r13)     // Catch: java.lang.Throwable -> La3 java.lang.IllegalArgumentException -> La5
             r17 = r3
@@ -242,6 +242,6 @@ public final class ContactInteractionsChimeraTaskService extends GmsTaskChimeraS
         Ldf:
             return r4
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.contactinteractions.service.ContactInteractionsChimeraTaskService.d(byln, atno):int");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.contactinteractions.service.ContactInteractionsChimeraTaskService.d(cauf, avrr):int");
     }
 }

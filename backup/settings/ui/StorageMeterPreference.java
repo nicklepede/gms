@@ -7,22 +7,22 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.preference.Preference;
 import com.google.android.gms.R;
-import defpackage.ahwd;
-import defpackage.ajdx;
-import defpackage.ajwp;
-import defpackage.arxo;
-import defpackage.flos;
-import defpackage.kmp;
+import defpackage.ajwt;
+import defpackage.alep;
+import defpackage.alxn;
+import defpackage.auad;
+import defpackage.fogc;
+import defpackage.mfa;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class StorageMeterPreference extends Preference {
-    public static final arxo a = ahwd.a("StorageMeterPreference");
+    public static final auad a = ajwt.a("StorageMeterPreference");
     private static final int d = R.color.backup_error_tint;
     private static final int e = R.color.backup_warning_tint;
     public String b;
-    public ajdx c;
+    public alep c;
     private TextView f;
     private TextView g;
     private ProgressBar h;
@@ -39,11 +39,11 @@ public class StorageMeterPreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        this.f = (TextView) kmpVar.D(R.id.storage_account_name);
-        this.h = (ProgressBar) kmpVar.D(R.id.storage_progress_bar);
-        this.g = (TextView) kmpVar.D(R.id.storage_account_info);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        this.f = (TextView) mfaVar.D(R.id.storage_account_name);
+        this.h = (ProgressBar) mfaVar.D(R.id.storage_progress_bar);
+        this.g = (TextView) mfaVar.D(R.id.storage_account_info);
         this.i = true;
         k();
     }
@@ -54,7 +54,7 @@ public class StorageMeterPreference extends Preference {
             return;
         }
         this.f.setText(str);
-        if (flos.d()) {
+        if (fogc.d()) {
             this.h.setVisibility(0);
             this.g.setVisibility(0);
         } else {
@@ -64,21 +64,21 @@ public class StorageMeterPreference extends Preference {
         if (this.c != null) {
             this.h.setIndeterminate(false);
             this.h.setMax(100);
-            ajdx ajdxVar = this.c;
-            double d2 = (ajdxVar.d * 100.0d) / ajdxVar.c;
+            alep alepVar = this.c;
+            double d2 = (alepVar.d * 100.0d) / alepVar.c;
             this.h.setProgress((int) d2);
             Context context = this.j;
-            String a2 = ajwp.a(context, this.c.d);
+            String a2 = alxn.a(context, this.c.d);
             long j = this.c.c;
             if (j <= 0) {
                 this.h.setVisibility(8);
                 this.g.setText(context.getString(R.string.storage_meter_summary_unlimited_quota, a2));
                 return;
             }
-            String a3 = ajwp.a(context, j);
+            String a3 = alxn.a(context, j);
             this.g.setText(context.getString(R.string.storage_meter_summary, a2, a3, String.format(Locale.getDefault(), "%.0f", Double.valueOf(d2))));
-            ajdx ajdxVar2 = this.c;
-            if (ajdxVar2.d >= ajdxVar2.c) {
+            alep alepVar2 = this.c;
+            if (alepVar2.d >= alepVar2.c) {
                 ProgressBar progressBar = this.h;
                 int i = d;
                 progressBar.setProgressTintList(ColorStateList.valueOf(l(i)));

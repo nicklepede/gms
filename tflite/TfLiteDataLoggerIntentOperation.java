@@ -8,110 +8,110 @@ import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.tflite.AppContextProvider;
 import com.google.android.gms.learning.InAppTrainerOptions;
 import com.google.android.gms.tflite.examplestore.TfLiteExampleStoreDataTtlService;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.bykn;
-import defpackage.dffk;
-import defpackage.eiho;
-import defpackage.eixf;
-import defpackage.feay;
-import defpackage.fecj;
-import defpackage.fsls;
-import defpackage.fzkp;
-import defpackage.fzkq;
-import defpackage.fzkr;
-import defpackage.fzks;
-import defpackage.fzkt;
-import defpackage.fzkv;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.catf;
+import defpackage.dhqq;
+import defpackage.ekut;
+import defpackage.elkk;
+import defpackage.fgpr;
+import defpackage.fgrc;
+import defpackage.fvgv;
+import defpackage.gchj;
+import defpackage.gchk;
+import defpackage.gchl;
+import defpackage.gchm;
+import defpackage.gchn;
+import defpackage.gchp;
 import j$.time.Instant;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class TfLiteDataLoggerIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (!fsls.c() || intent == null || !Objects.equals(intent.getAction(), "com.google.android.gms.tflite.LOG_PRIVATE_AGGREGATED_DATA")) {
-            fsls.c();
+        if (!fvgv.c() || intent == null || !Objects.equals(intent.getAction(), "com.google.android.gms.tflite.LOG_PRIVATE_AGGREGATED_DATA")) {
+            fvgv.c();
             return;
         }
         String stringExtra = intent.getStringExtra("package_name");
         if (stringExtra == null) {
             return;
         }
-        fecj v = fzks.a.v();
-        fzkp fzkpVar = (fzkp) fzkq.a.v();
-        fzkpVar.a(feay.A(stringExtra));
+        fgrc v = gchm.a.v();
+        gchj gchjVar = (gchj) gchk.a.v();
+        gchjVar.a(fgpr.A(stringExtra));
         if (!v.b.L()) {
             v.U();
         }
-        fzks fzksVar = (fzks) v.b;
-        fzkq fzkqVar = (fzkq) fzkpVar.Q();
-        fzkqVar.getClass();
-        fzksVar.c = fzkqVar;
-        fzksVar.b = 1;
-        fzks fzksVar2 = (fzks) v.Q();
-        dffk a = dffk.a();
-        fecj v2 = fzkr.a.v();
-        fzkt fzktVar = (fzkt) fzkv.a.v();
-        fzktVar.k("package_name", fzksVar2);
+        gchm gchmVar = (gchm) v.b;
+        gchk gchkVar = (gchk) gchjVar.Q();
+        gchkVar.getClass();
+        gchmVar.c = gchkVar;
+        gchmVar.b = 1;
+        gchm gchmVar2 = (gchm) v.Q();
+        dhqq a = dhqq.a();
+        fgrc v2 = gchl.a.v();
+        gchn gchnVar = (gchn) gchp.a.v();
+        gchnVar.k("package_name", gchmVar2);
         if (!v2.b.L()) {
             v2.U();
         }
-        fzkr fzkrVar = (fzkr) v2.b;
-        fzkv fzkvVar = (fzkv) fzktVar.Q();
-        fzkvVar.getClass();
-        fzkrVar.c = fzkvVar;
-        fzkrVar.b |= 1;
-        final List h = eixf.h(eixf.d((fzkr) v2.Q()), new eiho() { // from class: dffh
-            @Override // defpackage.eiho
+        gchl gchlVar = (gchl) v2.b;
+        gchp gchpVar = (gchp) gchnVar.Q();
+        gchpVar.getClass();
+        gchlVar.c = gchpVar;
+        gchlVar.b |= 1;
+        final List h = elkk.h(elkk.d((gchl) v2.Q()), new ekut() { // from class: dhqn
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                return ((fzkr) obj).ng();
+                return ((gchl) obj).nD();
             }
         });
         InAppTrainerOptions inAppTrainerOptions = TfLiteExampleStoreDataTtlService.a;
-        bykm bykmVar = new bykm();
-        bykmVar.t("TfLiteDataTtlService");
-        bykmVar.w(TfLiteExampleStoreDataTtlService.b);
-        bykmVar.j(byki.EVERY_DAY);
-        bykmVar.v(1);
-        bykmVar.r(false);
-        bykmVar.g(2);
-        bykmVar.f(1, 1);
-        bykn b = bykmVar.b();
-        byjl.a(AppContextProvider.a()).f(b);
-        byki.a(b.a);
-        a.b.a(new eiho() { // from class: dffi
+        cate cateVar = new cate();
+        cateVar.t("TfLiteDataTtlService");
+        cateVar.w(TfLiteExampleStoreDataTtlService.b);
+        cateVar.j(cata.EVERY_DAY);
+        cateVar.v(1);
+        cateVar.r(false);
+        cateVar.g(2);
+        cateVar.f(1, 1);
+        catf b = cateVar.b();
+        casd.a(AppContextProvider.a()).f(b);
+        cata.a(b.a);
+        a.b.a(new ekut() { // from class: dhqo
             public final /* synthetic */ String a = "/tflite_package_usage_collection";
 
-            @Override // defpackage.eiho
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                dffb dffbVar = (dffb) obj;
-                ensv ensvVar = dffk.a;
-                for (feay feayVar : h) {
+                dhqh dhqhVar = (dhqh) obj;
+                eqgo eqgoVar = dhqq.a;
+                for (fgpr fgprVar : h) {
                     String str = this.a;
                     ContentValues contentValues = new ContentValues();
-                    dnlf dnlfVar = dffbVar.b;
+                    dpvo dpvoVar = dhqhVar.b;
                     contentValues.put("time", Long.valueOf(Instant.now().toEpochMilli()));
                     contentValues.put("collection_name", str);
-                    contentValues.put("value", feayVar.M());
-                    dffbVar.a.insertWithOnConflict("collections", null, contentValues, 5);
-                    int i = dffc.e;
+                    contentValues.put("value", fgprVar.M());
+                    dhqhVar.a.insertWithOnConflict("collections", null, contentValues, 5);
+                    int i = dhqi.e;
                 }
-                SQLiteDatabase sQLiteDatabase = dffbVar.a;
-                long queryNumEntries = DatabaseUtils.queryNumEntries(sQLiteDatabase, "collections") - dffbVar.c;
+                SQLiteDatabase sQLiteDatabase = dhqhVar.a;
+                long queryNumEntries = DatabaseUtils.queryNumEntries(sQLiteDatabase, "collections") - dhqhVar.c;
                 if (queryNumEntries > 0) {
                     sQLiteDatabase.delete("collections", String.format("id IN (SELECT id FROM %s ORDER BY id ASC LIMIT ?)", "collections"), new String[]{String.valueOf(queryNumEntries)});
-                    int i2 = dffc.e;
+                    int i2 = dhqi.e;
                 }
                 return null;
             }
-        }).hn(new Runnable() { // from class: dfef
+        }).hD(new Runnable() { // from class: dhpl
             @Override // java.lang.Runnable
             public final void run() {
             }
-        }, dffk.a);
+        }, dhqq.a);
     }
 }

@@ -4,25 +4,25 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.semanticlocation.PlaceCandidate;
-import defpackage.arxc;
-import defpackage.dacl;
-import defpackage.dacs;
-import defpackage.dact;
-import defpackage.dacz;
-import defpackage.dada;
+import defpackage.atzr;
+import defpackage.dcmt;
+import defpackage.dcna;
+import defpackage.dcnb;
+import defpackage.dcnh;
+import defpackage.dcni;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class Persona extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dacs();
+    public static final Parcelable.Creator CREATOR = new dcna();
     public final PersonaMetadata a;
     public final List b;
     public final List c;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class LocationAffinity extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dacl();
+        public static final Parcelable.Creator CREATOR = new dcmt();
         public final PlaceCandidate.Identifier a;
         public final float b;
         public final long c;
@@ -42,20 +42,20 @@ public class Persona extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             PlaceCandidate.Identifier identifier = this.a;
-            int a = arxc.a(parcel);
-            arxc.t(parcel, 1, identifier, i, false);
-            arxc.l(parcel, 2, this.b);
-            arxc.q(parcel, 3, this.c);
-            arxc.l(parcel, 4, this.d);
-            arxc.l(parcel, 5, this.e);
-            arxc.l(parcel, 6, this.f);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.t(parcel, 1, identifier, i, false);
+            atzr.l(parcel, 2, this.b);
+            atzr.q(parcel, 3, this.c);
+            atzr.l(parcel, 4, this.d);
+            atzr.l(parcel, 5, this.e);
+            atzr.l(parcel, 6, this.f);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class PersonaMetadata extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dact();
+        public static final Parcelable.Creator CREATOR = new dcnb();
         public final long a;
 
         public PersonaMetadata(long j) {
@@ -65,15 +65,15 @@ public class Persona extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             long j = this.a;
-            int a = arxc.a(parcel);
-            arxc.q(parcel, 1, j);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.q(parcel, 1, j);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class TravelModeAffinity extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dacz();
+        public static final Parcelable.Creator CREATOR = new dcnh();
         public final int a;
         public final float b;
         public final int c;
@@ -99,23 +99,23 @@ public class Persona extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             int i2 = this.a;
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 1, i2);
-            arxc.l(parcel, 2, this.b);
-            arxc.o(parcel, 3, this.c);
-            arxc.o(parcel, 4, this.d);
-            arxc.o(parcel, 5, this.e);
-            arxc.o(parcel, 6, this.f);
-            arxc.t(parcel, 7, this.g, i, false);
-            arxc.t(parcel, 8, this.h, i, false);
-            arxc.t(parcel, 9, this.i, i, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 1, i2);
+            atzr.l(parcel, 2, this.b);
+            atzr.o(parcel, 3, this.c);
+            atzr.o(parcel, 4, this.d);
+            atzr.o(parcel, 5, this.e);
+            atzr.o(parcel, 6, this.f);
+            atzr.t(parcel, 7, this.g, i, false);
+            atzr.t(parcel, 8, this.h, i, false);
+            atzr.t(parcel, 9, this.i, i, false);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class TripSummary extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dada();
+        public static final Parcelable.Creator CREATOR = new dcni();
         public final float a;
         public final float b;
         public final long c;
@@ -135,14 +135,14 @@ public class Persona extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             float f = this.a;
-            int a = arxc.a(parcel);
-            arxc.l(parcel, 1, f);
-            arxc.l(parcel, 2, this.b);
-            arxc.q(parcel, 3, this.c);
-            arxc.q(parcel, 4, this.d);
-            arxc.o(parcel, 5, this.e);
-            arxc.o(parcel, 6, this.f);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.l(parcel, 1, f);
+            atzr.l(parcel, 2, this.b);
+            atzr.q(parcel, 3, this.c);
+            atzr.q(parcel, 4, this.d);
+            atzr.o(parcel, 5, this.e);
+            atzr.o(parcel, 6, this.f);
+            atzr.c(parcel, a);
         }
     }
 
@@ -155,10 +155,10 @@ public class Persona extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         PersonaMetadata personaMetadata = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, personaMetadata, i, false);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.y(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, personaMetadata, i, false);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.y(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 }

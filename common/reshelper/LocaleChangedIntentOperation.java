@@ -5,33 +5,33 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.SystemClock;
 import com.google.android.chimera.IntentOperation;
-import defpackage.apsz;
-import defpackage.apta;
-import defpackage.apul;
-import defpackage.asbt;
-import defpackage.asej;
-import defpackage.asop;
-import defpackage.asot;
-import defpackage.bqpt;
-import defpackage.btji;
-import defpackage.ejhf;
-import defpackage.emzs;
-import defpackage.emzw;
-import defpackage.emzx;
-import defpackage.epit;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.fmps;
-import defpackage.fmxg;
+import defpackage.arvq;
+import defpackage.arvr;
+import defpackage.arxc;
+import defpackage.auei;
+import defpackage.auid;
+import defpackage.ausj;
+import defpackage.ausn;
+import defpackage.bsxk;
+import defpackage.bvrg;
+import defpackage.eluo;
+import defpackage.epnj;
+import defpackage.epnn;
+import defpackage.epno;
+import defpackage.erws;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fphq;
+import defpackage.fppf;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class LocaleChangedIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("LocaleChangeIO", asej.CORE);
-    private final apta b;
+    private static final ausn a = ausn.b("LocaleChangeIO", auid.CORE);
+    private final arvr b;
 
     public LocaleChangedIntentOperation() {
         this.b = null;
@@ -42,7 +42,7 @@ public class LocaleChangedIntentOperation extends IntentOperation {
         String action;
         char c;
         byte[] byteArrayExtra;
-        if (fmps.f() && (action = intent.getAction()) != null) {
+        if (fphq.f() && (action = intent.getAction()) != null) {
             int hashCode = action.hashCode();
             char c2 = 1;
             if (hashCode != -19011148) {
@@ -58,66 +58,66 @@ public class LocaleChangedIntentOperation extends IntentOperation {
             }
             if (c != 0) {
                 if (c == 1 && (byteArrayExtra = intent.getByteArrayExtra("proto")) != null) {
-                    emzw emzwVar = (emzw) emzx.a.v();
+                    epnn epnnVar = (epnn) epno.a.v();
                     try {
-                        fecp y = fecp.y(emzs.a, byteArrayExtra, 0, byteArrayExtra.length, febw.a());
-                        fecp.M(y);
-                        emzs emzsVar = (emzs) y;
-                        if (!emzwVar.b.L()) {
-                            emzwVar.U();
+                        fgri y = fgri.y(epnj.a, byteArrayExtra, 0, byteArrayExtra.length, fgqp.a());
+                        fgri.M(y);
+                        epnj epnjVar = (epnj) y;
+                        if (!epnnVar.b.L()) {
+                            epnnVar.U();
                         }
-                        emzx emzxVar = (emzx) emzwVar.b;
-                        emzsVar.getClass();
-                        emzxVar.l = emzsVar;
-                        emzxVar.b |= 64;
-                        apul b = bqpt.b(this);
-                        if (fmxg.a.a().c()) {
-                            btji.v().f((emzx) emzwVar.Q());
+                        epno epnoVar = (epno) epnnVar.b;
+                        epnjVar.getClass();
+                        epnoVar.l = epnjVar;
+                        epnoVar.b |= 64;
+                        arxc b = bsxk.b(this);
+                        if (fppf.a.lK().c()) {
+                            bvrg.v().f((epno) epnnVar.Q());
                             return;
                         }
-                        apta aptaVar = this.b;
-                        if (aptaVar == null) {
-                            aptaVar = asbt.d(this);
+                        arvr arvrVar = this.b;
+                        if (arvrVar == null) {
+                            arvrVar = auei.d(this);
                         }
-                        apsz j = aptaVar.j(emzwVar.Q(), b);
+                        arvq j = arvrVar.j(epnnVar.Q(), b);
                         j.l(13);
                         j.d();
                         return;
-                    } catch (fedk unused) {
-                        ((ejhf) a.j()).x("Dropping malformed log event");
+                    } catch (fgsd unused) {
+                        ((eluo) a.j()).x("Dropping malformed log event");
                         return;
                     }
                 }
                 return;
             }
-            if (asop.c(fmxg.c())) {
+            if (ausj.c(fppf.c())) {
                 return;
             }
             String language = getResources().getConfiguration().locale.getLanguage();
-            fecj v = emzs.a.v();
+            fgrc v = epnj.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            emzs emzsVar2 = (emzs) fecpVar;
-            emzsVar2.c = 1;
-            emzsVar2.b |= 1;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v.b;
+            epnj epnjVar2 = (epnj) fgriVar;
+            epnjVar2.c = 1;
+            epnjVar2.b |= 1;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            emzs emzsVar3 = (emzs) v.b;
+            epnj epnjVar3 = (epnj) v.b;
             language.getClass();
-            emzsVar3.b |= 2;
-            emzsVar3.d = language;
+            epnjVar3.b |= 2;
+            epnjVar3.d = language;
             long uptimeMillis = SystemClock.uptimeMillis();
             try {
                 try {
-                    epit i = epit.i(this, getResources(), fmxg.e());
+                    erws i = erws.i(this, getResources(), fppf.e());
                     try {
                         Resources resources = getResources();
                         if (i.a(resources, getPackageName())) {
                             if (i.c(resources, language, getPackageName())) {
-                                Context h = epit.h(this);
+                                Context h = erws.h(this);
                                 if (i.b(h, language)) {
                                     c2 = 3;
                                 } else {
@@ -134,19 +134,19 @@ public class LocaleChangedIntentOperation extends IntentOperation {
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            emzs emzsVar4 = (emzs) v.b;
-                            emzsVar4.b |= 4;
-                            emzsVar4.e = (int) j2;
+                            epnj epnjVar4 = (epnj) v.b;
+                            epnjVar4.b |= 4;
+                            epnjVar4.e = (int) j2;
                             c2 = 2;
                         }
                         Intent startIntent = IntentOperation.getStartIntent(this, LocaleChangedIntentOperation.class, "com.google.android.gms.common.LEMON_LOG");
                         if (startIntent != null) {
-                            startService(startIntent.putExtra("proto", ((emzs) v.Q()).r()));
+                            startService(startIntent.putExtra("proto", ((epnj) v.Q()).r()));
                         }
                         if (c2 != 2 && c2 != 3) {
-                            ((ejhf) a.h()).B("No action required after switch to %s", language);
+                            ((eluo) a.h()).B("No action required after switch to %s", language);
                         } else {
-                            ((ejhf) a.h()).x("Requesting GmsCore restart due to change in locale assets");
+                            ((eluo) a.h()).x("Requesting GmsCore restart due to change in locale assets");
                             sendBroadcast(new Intent("com.google.android.gms.common.LANGUAGE_RELOAD").setPackage(getPackageName()).putExtra("lang", language));
                         }
                     } catch (IOException e) {
@@ -154,31 +154,31 @@ public class LocaleChangedIntentOperation extends IntentOperation {
                     }
                 } catch (RuntimeException e2) {
                     String message = e2.getMessage();
-                    ((ejhf) a.i()).P("Failed extracting language %s: %s", language, message);
+                    ((eluo) a.i()).P("Failed extracting language %s: %s", language, message);
                     if (message != null) {
                         if (!v.b.L()) {
                             v.U();
                         }
-                        emzs emzsVar5 = (emzs) v.b;
-                        emzsVar5.b |= 8;
-                        emzsVar5.f = message;
+                        epnj epnjVar5 = (epnj) v.b;
+                        epnjVar5.b |= 8;
+                        epnjVar5.f = message;
                     }
                     Intent startIntent2 = IntentOperation.getStartIntent(this, LocaleChangedIntentOperation.class, "com.google.android.gms.common.LEMON_LOG");
                     if (startIntent2 != null) {
-                        startService(startIntent2.putExtra("proto", ((emzs) v.Q()).r()));
+                        startService(startIntent2.putExtra("proto", ((epnj) v.Q()).r()));
                     }
                 }
             } catch (Throwable th) {
                 Intent startIntent3 = IntentOperation.getStartIntent(this, LocaleChangedIntentOperation.class, "com.google.android.gms.common.LEMON_LOG");
                 if (startIntent3 != null) {
-                    startService(startIntent3.putExtra("proto", ((emzs) v.Q()).r()));
+                    startService(startIntent3.putExtra("proto", ((epnj) v.Q()).r()));
                 }
                 throw th;
             }
         }
     }
 
-    protected LocaleChangedIntentOperation(apta aptaVar) {
-        this.b = aptaVar;
+    protected LocaleChangedIntentOperation(arvr arvrVar) {
+        this.b = arvrVar;
     }
 }

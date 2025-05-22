@@ -3,23 +3,23 @@ package com.google.android.gms.location.places.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cafx;
-import defpackage.cafy;
-import defpackage.caha;
+import defpackage.atzr;
+import defpackage.ccoo;
+import defpackage.ccop;
+import defpackage.ccpr;
 import j$.util.DesugarCollections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class PlaceOpeningHoursEntity extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new caha();
+    public static final Parcelable.Creator CREATOR = new ccpr();
     final List a;
     final List b;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class BusinessHoursInterval extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new cafx();
+        public static final Parcelable.Creator CREATOR = new ccoo();
         final int a;
         final int b;
 
@@ -30,16 +30,16 @@ public class PlaceOpeningHoursEntity extends AbstractSafeParcelable {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 1, this.a);
-            arxc.o(parcel, 2, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 1, this.a);
+            atzr.o(parcel, 2, this.b);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class ExceptionalHours extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new cafy();
+        public static final Parcelable.Creator CREATOR = new ccop();
         final int a;
         final int b;
         final int c;
@@ -60,15 +60,15 @@ public class PlaceOpeningHoursEntity extends AbstractSafeParcelable {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 1, this.a);
-            arxc.o(parcel, 2, this.b);
-            arxc.o(parcel, 3, this.c);
-            arxc.o(parcel, 4, this.d);
-            arxc.o(parcel, 5, this.e);
-            arxc.o(parcel, 6, this.f);
-            arxc.y(parcel, 7, this.g, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 1, this.a);
+            atzr.o(parcel, 2, this.b);
+            atzr.o(parcel, 3, this.c);
+            atzr.o(parcel, 4, this.d);
+            atzr.o(parcel, 5, this.e);
+            atzr.o(parcel, 6, this.f);
+            atzr.y(parcel, 7, this.g, false);
+            atzr.c(parcel, a);
         }
     }
 
@@ -80,9 +80,9 @@ public class PlaceOpeningHoursEntity extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

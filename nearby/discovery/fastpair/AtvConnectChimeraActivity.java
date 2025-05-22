@@ -7,34 +7,34 @@ import android.util.DisplayMetrics;
 import android.view.WindowManager;
 import com.google.android.gms.R;
 import defpackage.bp;
-import defpackage.cgiv;
-import defpackage.cgqf;
-import defpackage.chmk;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.qfp;
+import defpackage.ciqy;
+import defpackage.ciyi;
+import defpackage.cjul;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class AtvConnectChimeraActivity extends qfp {
+public class AtvConnectChimeraActivity extends ryt {
     private Drawable j;
-    private cgqf k;
+    private ciyi k;
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void finish() {
         super.finish();
         overridePendingTransition(0, R.anim.fast_pair_bottom_sheet_exit);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj, android.view.Window.Callback
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn, android.view.Window.Callback
     public final void onAttachedToWindow() {
         super.onAttachedToWindow();
         getWindow().setGravity(81);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         byte[] byteArrayExtra = getIntent().getByteArrayExtra("com.google.android.gms.nearby.discovery.ATV_CONNECT");
@@ -43,14 +43,14 @@ public class AtvConnectChimeraActivity extends qfp {
             return;
         }
         try {
-            fecp y = fecp.y(chmk.b, byteArrayExtra, 0, byteArrayExtra.length, febw.a());
-            fecp.M(y);
-            chmk chmkVar = (chmk) y;
-            if (chmkVar != null) {
-                cgiv.a.d().B("AtvConnectChimeraActivity: Check the passing info %s", chmkVar.e);
+            fgri y = fgri.y(cjul.b, byteArrayExtra, 0, byteArrayExtra.length, fgqp.a());
+            fgri.M(y);
+            cjul cjulVar = (cjul) y;
+            if (cjulVar != null) {
+                ciqy.a.d().B("AtvConnectChimeraActivity: Check the passing info %s", cjulVar.e);
             }
-        } catch (fedk e) {
-            ((ejhf) cgiv.a.g().s(e)).x("AtvConnectChimeraActivity: Error happened when passing info");
+        } catch (fgsd e) {
+            ((eluo) ciqy.a.g().s(e)).x("AtvConnectChimeraActivity: Error happened when passing info");
         }
         Intent intent = getIntent();
         Bundle bundle2 = new Bundle();
@@ -62,9 +62,9 @@ public class AtvConnectChimeraActivity extends qfp {
         if (bundle != null && bundle.containsKey("ARG_FRAGMENT_STATE")) {
             bundle2.putSerializable("ARG_FRAGMENT_STATE", bundle.getSerializable("ARG_FRAGMENT_STATE"));
         }
-        cgqf cgqfVar = new cgqf();
-        cgqfVar.setArguments(bundle2);
-        this.k = cgqfVar;
+        ciyi ciyiVar = new ciyi();
+        ciyiVar.setArguments(bundle2);
+        this.k = ciyiVar;
         setContentView(R.layout.fast_pair_bottom_sheet);
         overridePendingTransition(R.anim.fast_pair_bottom_sheet_enter, 0);
         this.j = getResources().getDrawable(R.drawable.bottom_sheet_bg);
@@ -94,12 +94,12 @@ public class AtvConnectChimeraActivity extends qfp {
         }
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        cgqf cgqfVar = this.k;
-        if (cgqfVar != null) {
-            cgqfVar.onSaveInstanceState(bundle);
+        ciyi ciyiVar = this.k;
+        if (ciyiVar != null) {
+            ciyiVar.onSaveInstanceState(bundle);
         }
     }
 }

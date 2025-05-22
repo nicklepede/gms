@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import androidx.preference.Preference;
 import com.google.android.gms.R;
-import defpackage.bwqs;
-import defpackage.kmp;
+import defpackage.byzi;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class LayoutPreference extends Preference {
     private boolean a;
@@ -24,13 +24,13 @@ public final class LayoutPreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
+    public final void a(mfa mfaVar) {
         boolean z = this.v;
-        View view = kmpVar.a;
+        View view = mfaVar.a;
         view.setFocusable(z);
         view.setClickable(z);
-        kmpVar.v = this.a;
-        kmpVar.w = this.b;
+        mfaVar.v = this.a;
+        mfaVar.w = this.b;
         FrameLayout frameLayout = (FrameLayout) view;
         frameLayout.removeAllViews();
         View view2 = this.c;
@@ -48,11 +48,12 @@ public final class LayoutPreference extends Preference {
 
     public LayoutPreference(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, bwqs.a);
+        int[] iArr = byzi.a;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr);
         this.a = obtainStyledAttributes.getBoolean(16, false);
         this.b = obtainStyledAttributes.getBoolean(17, false);
         obtainStyledAttributes.recycle();
-        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, bwqs.a, i, 0);
+        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, iArr, i, 0);
         int resourceId = obtainStyledAttributes2.getResourceId(3, 0);
         if (resourceId == 0) {
             throw new IllegalArgumentException("LayoutPreference requires a layout to be defined");

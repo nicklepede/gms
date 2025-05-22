@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmxc;
-import defpackage.cmxe;
-import defpackage.cnbb;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpfk;
+import defpackage.cpfm;
+import defpackage.cpjj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ProviderStartDiscoveryParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cnbb();
-    public cmxe a;
+    public static final Parcelable.Creator CREATOR = new cpjj();
+    public cpfm a;
 
     public ProviderStartDiscoveryParams() {
     }
@@ -26,7 +26,7 @@ public final class ProviderStartDiscoveryParams extends AbstractSafeParcelable {
             return true;
         }
         if (obj instanceof ProviderStartDiscoveryParams) {
-            return arwb.b(this.a, ((ProviderStartDiscoveryParams) obj).a);
+            return atyq.b(this.a, ((ProviderStartDiscoveryParams) obj).a);
         }
         return false;
     }
@@ -37,19 +37,19 @@ public final class ProviderStartDiscoveryParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.c(parcel, a);
     }
 
     public ProviderStartDiscoveryParams(IBinder iBinder) {
-        cmxe cmxcVar;
+        cpfm cpfkVar;
         if (iBinder == null) {
-            cmxcVar = null;
+            cpfkVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IShareTargetDiscoveredCallback");
-            cmxcVar = queryLocalInterface instanceof cmxe ? (cmxe) queryLocalInterface : new cmxc(iBinder);
+            cpfkVar = queryLocalInterface instanceof cpfm ? (cpfm) queryLocalInterface : new cpfk(iBinder);
         }
-        this.a = cmxcVar;
+        this.a = cpfkVar;
     }
 }

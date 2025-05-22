@@ -1,26 +1,26 @@
 package com.google.android.gms.trustagent.api.trusted.devices;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.dgod;
-import defpackage.ejck;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.dizi;
+import defpackage.elpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TrustedDevicesApiChimeraService extends bxgd {
+public class TrustedDevicesApiChimeraService extends bzot {
     static {
-        asot.b("TrustAgent", asej.TRUSTAGENT_TRUSTED_DEVICES);
+        ausn.b("TrustAgent", auid.TRUSTAGENT_TRUSTED_DEVICES);
     }
 
     public TrustedDevicesApiChimeraService() {
-        super(72, "com.google.android.gms.trustagent.TrustedDevicesService.START", ejck.a, 0, 10);
+        super(72, "com.google.android.gms.trustagent.TrustedDevicesService.START", elpp.a, 0, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new dgod(l(), getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new dizi(l(), getServiceRequest.f, getServiceRequest.p));
     }
 }

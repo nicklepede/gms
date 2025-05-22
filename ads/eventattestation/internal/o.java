@@ -3,19 +3,19 @@ package com.google.android.gms.ads.eventattestation.internal;
 import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
-import defpackage.otm;
+import defpackage.qmp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class o extends otm implements IInterface {
+public final class o extends qmp implements IInterface {
     public o(IBinder iBinder) {
         super(iBinder, "com.google.android.gms.ads.eventattestation.internal.IImpressionAttestationTokenCallback");
     }
 
     public final void a(int i, String str) {
-        Parcel fr = fr();
-        fr.writeInt(i);
-        fr.writeString(str);
-        fu(3, fr);
+        Parcel fE = fE();
+        fE.writeInt(i);
+        fE.writeString(str);
+        fH(3, fE);
     }
 }

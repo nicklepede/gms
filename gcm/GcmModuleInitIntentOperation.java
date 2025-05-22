@@ -2,18 +2,18 @@ package com.google.android.gms.gcm;
 
 import android.content.Intent;
 import com.google.android.gms.gcm.gmsproc.GmsAutoStarter;
-import defpackage.anya;
-import defpackage.bhvo;
-import defpackage.dnnr;
+import defpackage.apzs;
+import defpackage.bkad;
+import defpackage.dpya;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class GcmModuleInitIntentOperation extends anya {
-    @Override // defpackage.anya
+public class GcmModuleInitIntentOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        bhvo.i(this);
-        if (bhvo.p()) {
+        bkad.i(this);
+        if (bkad.p()) {
             Intent intent2 = new Intent(intent);
             String action = intent.getAction();
             if (Objects.equals(action, "android.intent.action.BOOT_COMPLETED")) {
@@ -27,7 +27,7 @@ public class GcmModuleInitIntentOperation extends anya {
             intent.setAction("com.google.android.gcm.intent.USER_UNLOCKED");
             GcmProxyIntentOperation.a(this, intent);
         }
-        if (dnnr.h(this)) {
+        if (dpya.h(this)) {
             return;
         }
         GmsAutoStarter.a(this, intent);

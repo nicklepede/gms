@@ -7,17 +7,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import com.google.android.chimera.ContentProvider;
 import com.google.android.gms.R;
-import defpackage.dyet;
-import defpackage.eaqw;
-import defpackage.enpf;
-import defpackage.ips;
+import defpackage.eaqy;
+import defpackage.eddi;
+import defpackage.eqcy;
+import defpackage.iri;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class LocationSESettingChimeraContentProvider extends ContentProvider {
-    private eaqw a;
-    private dyet b;
+    private eddi a;
+    private eaqy b;
 
     @Override // com.google.android.chimera.ContentProvider
     public final Bundle call(String str, String str2, Bundle bundle) {
@@ -39,7 +39,7 @@ public class LocationSESettingChimeraContentProvider extends ContentProvider {
         }
         if (c == 0) {
             try {
-                string = getContext().getString(true != ((Boolean) ((enpf) this.a.b()).u()).booleanValue() ? R.string.ealert_summary_text_off : R.string.ealert_summary_text_on);
+                string = getContext().getString(true != ((Boolean) ((eqcy) this.a.b()).u()).booleanValue() ? R.string.ealert_summary_text_off : R.string.ealert_summary_text_on);
             } catch (InterruptedException | ExecutionException e) {
                 e.toString();
                 string = getContext().getString(R.string.ealert_summary_text_off);
@@ -48,7 +48,7 @@ public class LocationSESettingChimeraContentProvider extends ContentProvider {
         } else if (c == 1) {
             try {
                 Context context = getContext();
-                int i = ips.a;
+                int i = iri.a;
                 ((Boolean) this.b.b().get()).booleanValue();
                 string2 = context.getString(R.string.driving_behavior_summary_text_off);
             } catch (InterruptedException | ExecutionException e2) {
@@ -77,8 +77,8 @@ public class LocationSESettingChimeraContentProvider extends ContentProvider {
 
     @Override // com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
-        this.a = eaqw.a();
-        this.b = dyet.a();
+        this.a = eddi.a();
+        this.b = eaqy.a();
         return true;
     }
 

@@ -2,15 +2,15 @@ package com.google.android.gms.family.v2.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.asqx;
-import defpackage.bacg;
-import defpackage.eprv;
+import defpackage.auur;
+import defpackage.bcgc;
+import defpackage.esfu;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ContactPickerOptionsData implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new bacg();
+    public static final Parcelable.Creator CREATOR = new bcgc();
     public final String a;
     public final String b;
     public final String c;
@@ -23,16 +23,16 @@ public final class ContactPickerOptionsData implements Parcelable {
     private final String j;
     private final String k;
 
-    public ContactPickerOptionsData(eprv eprvVar) {
-        this.a = eprvVar.b;
-        this.b = eprvVar.c;
-        this.i = eprvVar.d;
-        this.j = eprvVar.e;
-        this.k = eprvVar.f;
-        this.c = eprvVar.g;
-        this.d = eprvVar.h;
-        this.e = eprvVar.i;
-        this.f = eprvVar.j;
+    public ContactPickerOptionsData(esfu esfuVar) {
+        this.a = esfuVar.b;
+        this.b = esfuVar.c;
+        this.i = esfuVar.d;
+        this.j = esfuVar.e;
+        this.k = esfuVar.f;
+        this.c = esfuVar.g;
+        this.d = esfuVar.h;
+        this.e = esfuVar.i;
+        this.f = esfuVar.j;
     }
 
     public final void a(int[] iArr) {
@@ -60,15 +60,15 @@ public final class ContactPickerOptionsData implements Parcelable {
     }
 
     public ContactPickerOptionsData(Parcel parcel) {
-        this.a = asqx.c(parcel.readString());
-        this.b = asqx.c(parcel.readString());
-        this.i = asqx.c(parcel.readString());
-        this.j = asqx.c(parcel.readString());
-        this.k = asqx.c(parcel.readString());
-        this.c = asqx.c(parcel.readString());
-        this.d = asqx.c(parcel.readString());
-        this.e = asqx.c(parcel.readString());
-        this.f = asqx.c(parcel.readString());
+        this.a = auur.c(parcel.readString());
+        this.b = auur.c(parcel.readString());
+        this.i = auur.c(parcel.readString());
+        this.j = auur.c(parcel.readString());
+        this.k = auur.c(parcel.readString());
+        this.c = auur.c(parcel.readString());
+        this.d = auur.c(parcel.readString());
+        this.e = auur.c(parcel.readString());
+        this.f = auur.c(parcel.readString());
         this.g = parcel.readInt();
         int[] createIntArray = parcel.createIntArray();
         this.h = createIntArray == null ? new int[0] : createIntArray;

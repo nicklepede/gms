@@ -4,18 +4,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.games.internal.GamesAbstractSafeParcelable;
-import defpackage.aqyf;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bhpo;
+import defpackage.atau;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bjud;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class ProfileSettingsEntity extends GamesAbstractSafeParcelable implements aqyf {
-    public static final Parcelable.Creator CREATOR = new bhpo();
+public class ProfileSettingsEntity extends GamesAbstractSafeParcelable implements atau {
+    public static final Parcelable.Creator CREATOR = new bjud();
     public final Status a;
     public final String b;
     public final boolean c;
@@ -52,7 +52,7 @@ public class ProfileSettingsEntity extends GamesAbstractSafeParcelable implement
         this.p = bool;
     }
 
-    @Override // defpackage.aqyf
+    @Override // defpackage.atau
     public final Status a() {
         return this.a;
     }
@@ -65,12 +65,12 @@ public class ProfileSettingsEntity extends GamesAbstractSafeParcelable implement
             return true;
         }
         ProfileSettingsEntity profileSettingsEntity = (ProfileSettingsEntity) obj;
-        if (arwb.b(this.b, profileSettingsEntity.b)) {
-            if (arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(profileSettingsEntity.c))) {
-                if (arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(profileSettingsEntity.d))) {
-                    if (arwb.b(Boolean.valueOf(this.e), Boolean.valueOf(profileSettingsEntity.e)) && arwb.b(this.a, profileSettingsEntity.a) && arwb.b(this.f, profileSettingsEntity.f)) {
-                        if (arwb.b(Boolean.valueOf(this.g), Boolean.valueOf(profileSettingsEntity.g))) {
-                            if (arwb.b(Boolean.valueOf(this.h), Boolean.valueOf(profileSettingsEntity.h)) && this.i == profileSettingsEntity.i && this.j == profileSettingsEntity.j && this.k == profileSettingsEntity.k && this.l == profileSettingsEntity.l && this.m == profileSettingsEntity.m && this.n == profileSettingsEntity.n && arwb.b(this.p, profileSettingsEntity.p) && arwb.b(this.o, profileSettingsEntity.o)) {
+        if (atyq.b(this.b, profileSettingsEntity.b)) {
+            if (atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(profileSettingsEntity.c))) {
+                if (atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(profileSettingsEntity.d))) {
+                    if (atyq.b(Boolean.valueOf(this.e), Boolean.valueOf(profileSettingsEntity.e)) && atyq.b(this.a, profileSettingsEntity.a) && atyq.b(this.f, profileSettingsEntity.f)) {
+                        if (atyq.b(Boolean.valueOf(this.g), Boolean.valueOf(profileSettingsEntity.g))) {
+                            if (atyq.b(Boolean.valueOf(this.h), Boolean.valueOf(profileSettingsEntity.h)) && this.i == profileSettingsEntity.i && this.j == profileSettingsEntity.j && this.k == profileSettingsEntity.k && this.l == profileSettingsEntity.l && this.m == profileSettingsEntity.m && this.n == profileSettingsEntity.n && atyq.b(this.p, profileSettingsEntity.p) && atyq.b(this.o, profileSettingsEntity.o)) {
                                 return true;
                             }
                         }
@@ -87,45 +87,45 @@ public class ProfileSettingsEntity extends GamesAbstractSafeParcelable implement
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("GamerTag", this.b, arrayList);
-        arwa.b("IsGamerTagExplicitlySet", Boolean.valueOf(this.c), arrayList);
-        arwa.b("IsProfileVisible", Boolean.valueOf(this.d), arrayList);
-        arwa.b("IsVisibilityExplicitlySet", Boolean.valueOf(this.e), arrayList);
-        arwa.b("Status", this.a, arrayList);
-        arwa.b("StockProfileImage", this.f, arrayList);
-        arwa.b("IsProfileDiscoverable", Boolean.valueOf(this.g), arrayList);
-        arwa.b("AutoSignIn", Boolean.valueOf(this.h), arrayList);
-        arwa.b("httpErrorCode", Integer.valueOf(this.i), arrayList);
-        arwa.b("IsSettingsChangesProhibited", Boolean.valueOf(this.j), arrayList);
-        arwa.b("AllowFriendInvites", Boolean.valueOf(this.k), arrayList);
-        arwa.b("ProfileVisibility", Integer.valueOf(this.l), arrayList);
-        arwa.b("global_friends_list_visibility", Integer.valueOf(this.m), arrayList);
-        arwa.b("always_auto_sign_in", Boolean.valueOf(this.n), arrayList);
-        arwa.b("profileless_recall_summary", this.o, arrayList);
-        arwa.b("games_streaks_enabled", this.p, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("GamerTag", this.b, arrayList);
+        atyp.b("IsGamerTagExplicitlySet", Boolean.valueOf(this.c), arrayList);
+        atyp.b("IsProfileVisible", Boolean.valueOf(this.d), arrayList);
+        atyp.b("IsVisibilityExplicitlySet", Boolean.valueOf(this.e), arrayList);
+        atyp.b("Status", this.a, arrayList);
+        atyp.b("StockProfileImage", this.f, arrayList);
+        atyp.b("IsProfileDiscoverable", Boolean.valueOf(this.g), arrayList);
+        atyp.b("AutoSignIn", Boolean.valueOf(this.h), arrayList);
+        atyp.b("httpErrorCode", Integer.valueOf(this.i), arrayList);
+        atyp.b("IsSettingsChangesProhibited", Boolean.valueOf(this.j), arrayList);
+        atyp.b("AllowFriendInvites", Boolean.valueOf(this.k), arrayList);
+        atyp.b("ProfileVisibility", Integer.valueOf(this.l), arrayList);
+        atyp.b("global_friends_list_visibility", Integer.valueOf(this.m), arrayList);
+        atyp.b("always_auto_sign_in", Boolean.valueOf(this.n), arrayList);
+        atyp.b("profileless_recall_summary", this.o, arrayList);
+        atyp.b("games_streaks_enabled", this.p, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Status status = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, status, i, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.e(parcel, 7, this.g);
-        arxc.e(parcel, 8, this.h);
-        arxc.o(parcel, 9, this.i);
-        arxc.e(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.o(parcel, 12, this.l);
-        arxc.o(parcel, 13, this.m);
-        arxc.e(parcel, 14, this.n);
-        arxc.t(parcel, 15, this.o, i, false);
-        arxc.z(parcel, 16, this.p);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, status, i, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.e(parcel, 7, this.g);
+        atzr.e(parcel, 8, this.h);
+        atzr.o(parcel, 9, this.i);
+        atzr.e(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.o(parcel, 12, this.l);
+        atzr.o(parcel, 13, this.m);
+        atzr.e(parcel, 14, this.n);
+        atzr.t(parcel, 15, this.o, i, false);
+        atzr.z(parcel, 16, this.p);
+        atzr.c(parcel, a);
     }
 }

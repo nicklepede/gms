@@ -4,25 +4,25 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.adpr;
-import defpackage.aeko;
-import defpackage.aeku;
-import defpackage.byxs;
-import defpackage.drbl;
+import defpackage.afpy;
+import defpackage.agla;
+import defpackage.aglg;
+import defpackage.cbgj;
+import defpackage.dtlt;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class PackageEventBroadcastReceiver extends TracingBroadcastReceiver {
-    private final aeko a;
+    private final agla a;
 
-    public PackageEventBroadcastReceiver(aeko aekoVar) {
+    public PackageEventBroadcastReceiver(agla aglaVar) {
         super("autofill");
-        this.a = aekoVar;
+        this.a = aglaVar;
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         if (intent == null) {
             return;
         }
@@ -37,23 +37,23 @@ public final class PackageEventBroadcastReceiver extends TracingBroadcastReceive
         }
         final String substring = uri.substring(8);
         if ("android.intent.action.PACKAGE_ADDED".equals(action)) {
-            final aeku aekuVar = (aeku) this.a;
-            ((byxs) aekuVar.b.a()).l(adpr.SYNC_ID_PREDICTIONS_DOWNLOAD).b(new drbl() { // from class: aeks
-                @Override // defpackage.drbl
-                public final enss a() {
-                    return aeku.this.a(substring, false);
+            final aglg aglgVar = (aglg) this.a;
+            ((cbgj) aglgVar.b.a()).l(afpy.SYNC_ID_PREDICTIONS_DOWNLOAD).b(new dtlt() { // from class: agle
+                @Override // defpackage.dtlt
+                public final eqgl a() {
+                    return aglg.this.a(substring, false);
                 }
-            }, 1, (Executor) aekuVar.c.a());
+            }, 1, (Executor) aglgVar.c.a());
         } else if ("android.intent.action.PACKAGE_REMOVED".equals(action)) {
-            ((aeku) this.a).a.V(substring);
+            ((aglg) this.a).a.V(substring);
         } else if ("android.intent.action.PACKAGE_REPLACED".equals(action)) {
-            final aeku aekuVar2 = (aeku) this.a;
-            ((byxs) aekuVar2.b.a()).l(adpr.SYNC_ID_PREDICTIONS_DOWNLOAD).b(new drbl() { // from class: aekt
-                @Override // defpackage.drbl
-                public final enss a() {
-                    return aeku.this.a(substring, false);
+            final aglg aglgVar2 = (aglg) this.a;
+            ((cbgj) aglgVar2.b.a()).l(afpy.SYNC_ID_PREDICTIONS_DOWNLOAD).b(new dtlt() { // from class: aglf
+                @Override // defpackage.dtlt
+                public final eqgl a() {
+                    return aglg.this.a(substring, false);
                 }
-            }, 1, (Executor) aekuVar2.c.a());
+            }, 1, (Executor) aglgVar2.c.a());
         }
     }
 }

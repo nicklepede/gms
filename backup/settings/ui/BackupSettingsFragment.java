@@ -18,74 +18,74 @@ import androidx.preference.TwoStatePreference;
 import com.google.android.gms.R;
 import com.google.android.gms.backup.common.util.session.ParcelableSession;
 import com.google.android.gms.backup.settings.component.PhotosEnablementSnackbarInfo;
-import com.google.android.gms.backup.settings.ui.AppsBackupPreference;
 import com.google.android.gms.backup.settings.ui.BackupSettingsFragment;
+import com.google.android.gms.backup.settings.ui.BackupStateTogglePreference;
 import com.google.android.gms.chimera.modules.backup.settings.AppContextProvider;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.ahpt;
-import defpackage.ahrf;
-import defpackage.ahte;
-import defpackage.ahtf;
-import defpackage.ahth;
-import defpackage.ahvq;
-import defpackage.ahvr;
-import defpackage.ahws;
-import defpackage.aiaa;
-import defpackage.aiab;
-import defpackage.aicy;
-import defpackage.aiew;
-import defpackage.aiez;
-import defpackage.ajiy;
-import defpackage.ajlk;
-import defpackage.ajll;
-import defpackage.ajrc;
-import defpackage.ajwr;
-import defpackage.ajxq;
-import defpackage.ajxr;
-import defpackage.ajxs;
-import defpackage.ajxu;
-import defpackage.ajyn;
-import defpackage.ajyr;
-import defpackage.ajzq;
-import defpackage.arfc;
-import defpackage.asmf;
-import defpackage.dfae;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.eklh;
-import defpackage.ensv;
-import defpackage.esiu;
-import defpackage.esiw;
-import defpackage.eswh;
-import defpackage.eswm;
-import defpackage.eswn;
-import defpackage.eswz;
-import defpackage.esxa;
-import defpackage.esxo;
-import defpackage.esxp;
-import defpackage.esyj;
-import defpackage.esyk;
-import defpackage.esyo;
-import defpackage.esyq;
-import defpackage.esyr;
-import defpackage.esys;
-import defpackage.fecj;
-import defpackage.fllq;
-import defpackage.fllt;
-import defpackage.flom;
-import defpackage.flos;
-import defpackage.klo;
-import defpackage.klp;
-import defpackage.klv;
+import defpackage.ajqj;
+import defpackage.ajrv;
+import defpackage.ajtu;
+import defpackage.ajtv;
+import defpackage.ajtx;
+import defpackage.ajwg;
+import defpackage.ajwh;
+import defpackage.ajxi;
+import defpackage.akaq;
+import defpackage.akar;
+import defpackage.akdo;
+import defpackage.akfm;
+import defpackage.akfp;
+import defpackage.aljq;
+import defpackage.almc;
+import defpackage.almd;
+import defpackage.alrv;
+import defpackage.alxp;
+import defpackage.alyo;
+import defpackage.alyp;
+import defpackage.alyq;
+import defpackage.alys;
+import defpackage.alzl;
+import defpackage.alzp;
+import defpackage.amao;
+import defpackage.athr;
+import defpackage.aupz;
+import defpackage.dhlk;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.emyt;
+import defpackage.eqgo;
+import defpackage.euyj;
+import defpackage.euyl;
+import defpackage.evlx;
+import defpackage.evmc;
+import defpackage.evmd;
+import defpackage.evmp;
+import defpackage.evmq;
+import defpackage.evne;
+import defpackage.evnf;
+import defpackage.evnz;
+import defpackage.evoa;
+import defpackage.evoe;
+import defpackage.evog;
+import defpackage.evoh;
+import defpackage.evoi;
+import defpackage.fgrc;
+import defpackage.foda;
+import defpackage.fodd;
+import defpackage.fofw;
+import defpackage.fogc;
+import defpackage.mdz;
+import defpackage.mea;
+import defpackage.meg;
 import java.util.Iterator;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class BackupSettingsFragment extends ajyr {
+public class BackupSettingsFragment extends alzp {
     private Preference aK;
     private StorageMeterPreference aL;
-    private final eijr aM;
+    private final ekww aM;
     private boolean aN;
     public PhotosPreference ag;
     public DollyBackupPreference ah;
@@ -96,31 +96,31 @@ public class BackupSettingsFragment extends ajyr {
     public BackupNowPreference am;
     public ManageStoragePreference an;
     public SwitchPreference ao;
-    public final ensv ap = new asmf(1, 9);
+    public final eqgo ap = new aupz(1, 9);
     public final boolean aq;
     public final long ar;
-    public final eijr as;
-    public final ahtf at;
+    public final ekww as;
+    public final ajtv at;
     public boolean au;
     public BackupStateTogglePreference d;
 
     public BackupSettingsFragment() {
-        this.aq = Build.VERSION.SDK_INT >= 24 && fllq.k();
-        this.ar = fllt.e() * 3600000;
-        this.as = eijy.a(new eijr() { // from class: ajxh
-            @Override // defpackage.eijr
-            public final Object a() {
-                return Boolean.valueOf(fllt.w());
+        this.aq = Build.VERSION.SDK_INT >= 24 && foda.k();
+        this.ar = fodd.e() * 3600000;
+        this.as = ekxd.a(new ekww() { // from class: alyf
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return Boolean.valueOf(fodd.w());
             }
         });
-        this.aM = eijy.a(new eijr() { // from class: ajxi
-            @Override // defpackage.eijr
-            public final Object a() {
-                return Boolean.valueOf(flog.i());
+        this.aM = ekxd.a(new ekww() { // from class: alyg
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return Boolean.valueOf(fofq.i());
             }
         });
         AppContextProvider appContextProvider = AppContextProvider.c;
-        this.at = new ahtf(appContextProvider == null ? arfc.a() : appContextProvider.a);
+        this.at = new ajtv(appContextProvider == null ? athr.a() : appContextProvider.a);
     }
 
     public static final void W(StringBuilder sb) {
@@ -131,10 +131,10 @@ public class BackupSettingsFragment extends ajyr {
         return requireContext().getString(R.string.ebnr_photos_snackbar_success_text, str);
     }
 
-    @Override // defpackage.kmb
+    @Override // defpackage.mem
     public final void C(Bundle bundle, String str) {
-        eijr eijrVar = this.aM;
-        if (((Boolean) eijrVar.a()).booleanValue()) {
+        ekww ekwwVar = this.aM;
+        if (((Boolean) ekwwVar.lK()).booleanValue()) {
             A(R.xml.backup_settings_with_photos_v2);
         } else {
             A(R.xml.backup_settings);
@@ -145,15 +145,15 @@ public class BackupSettingsFragment extends ajyr {
         BackupStateTogglePreference backupStateTogglePreference = (BackupStateTogglePreference) z.l("backup_state_toggle");
         this.d = backupStateTogglePreference;
         backupStateTogglePreference.k(ab());
-        this.d.n = new ajxq(this);
+        this.d.n = new alyo(this);
         BackupNowPreference backupNowPreference = (BackupNowPreference) z.l("backup_now_preference");
         this.am = backupNowPreference;
         backupNowPreference.k(this.aC);
         M().o = this;
         this.aB = UUID.randomUUID().toString();
-        this.aA = new ajyn(this);
+        this.aA = new alzl(this);
         PreferenceCategory preferenceCategory = (PreferenceCategory) z.l("backup_content_group");
-        this.ag = (PhotosPreference) preferenceCategory.l(true != ((Boolean) eijrVar.a()).booleanValue() ? "photos" : "photos_v2");
+        this.ag = (PhotosPreference) preferenceCategory.l(true != ((Boolean) ekwwVar.lK()).booleanValue() ? "photos" : "photos_v2");
         this.ak = (AppsBackupPreference) preferenceCategory.l("apps");
         this.ah = (DollyBackupPreference) preferenceCategory.l("callhistory");
         this.ai = (DollyBackupPreference) preferenceCategory.l("devicesettings");
@@ -164,38 +164,38 @@ public class BackupSettingsFragment extends ajyr {
         SwitchPreference switchPreference = (SwitchPreference) preferenceCategory2.l("use_mobile_data_preference");
         this.ao = switchPreference;
         if (this.aq) {
-            switchPreference.n = new klo() { // from class: ajxn
-                @Override // defpackage.klo
+            switchPreference.n = new mdz() { // from class: alyl
+                @Override // defpackage.mdz
                 public final boolean a(Preference preference, Object obj) {
                     Boolean bool = (Boolean) obj;
                     final boolean booleanValue = bool.booleanValue();
                     Object[] objArr = {bool};
                     BackupSettingsFragment backupSettingsFragment = BackupSettingsFragment.this;
                     backupSettingsFragment.ay.j("Use mobile data: %b", objArr);
-                    fecj v = ekjb.a.v();
+                    fgrc v = emwn.a.v();
                     if (booleanValue) {
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ekjb ekjbVar = (ekjb) v.b;
-                        ekjbVar.e = 8;
-                        ekjbVar.b |= 4;
+                        emwn emwnVar = (emwn) v.b;
+                        emwnVar.e = 8;
+                        emwnVar.b |= 4;
                     } else {
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ekjb ekjbVar2 = (ekjb) v.b;
-                        ekjbVar2.e = 9;
-                        ekjbVar2.b |= 4;
+                        emwn emwnVar2 = (emwn) v.b;
+                        emwnVar2.e = 9;
+                        emwnVar2.b |= 4;
                     }
-                    ajrc.a((ekjb) v.Q());
+                    alrv.a((emwn) v.Q());
                     final Context applicationContext = backupSettingsFragment.getContext().getApplicationContext();
-                    final arni arniVar = new arni(applicationContext, "backup_settings", true);
-                    backupSettingsFragment.ap.execute(new Runnable() { // from class: ajxj
+                    final atpx atpxVar = new atpx(applicationContext, "backup_settings", true);
+                    backupSettingsFragment.ap.execute(new Runnable() { // from class: alyh
                         @Override // java.lang.Runnable
                         public final void run() {
                             boolean z2 = booleanValue;
-                            SharedPreferences.Editor edit = arni.this.edit();
+                            SharedPreferences.Editor edit = atpx.this.edit();
                             edit.putBoolean("use_mobile_data", z2);
                             edit.apply();
                             applicationContext.sendBroadcast(new Intent("com.google.android.gms.backup.ACTION_BACKUP_NETWORK_SETTINGS_CHANGED").setPackage("com.google.android.gms"));
@@ -205,7 +205,7 @@ public class BackupSettingsFragment extends ajyr {
                     return true;
                 }
             };
-            if (flom.a.a().i() && context != null && !context.getPackageManager().hasSystemFeature("android.hardware.telephony")) {
+            if (fofw.a.lK().i() && context != null && !context.getPackageManager().hasSystemFeature("android.hardware.telephony")) {
                 this.ao.R(R.string.backup_settings_use_metered_data_preference);
             }
         } else {
@@ -214,7 +214,7 @@ public class BackupSettingsFragment extends ajyr {
         this.aK = z.l("backup_scheduling_info");
         R(((TwoStatePreference) this.ao).a);
         if (context != null) {
-            this.au = new ahte(context).a().c;
+            this.au = new ajtu(context).a().c;
             if (!context.getPackageManager().hasSystemFeature("android.hardware.telephony")) {
                 this.ay.j("Device does not have telephony feature, removing call logs and SMS items", new Object[0]);
                 preferenceCategory.ai(this.ah);
@@ -225,12 +225,12 @@ public class BackupSettingsFragment extends ajyr {
         this.aj.R(true != this.au ? R.string.data_flavor_sms : R.string.ebnr_save_data_sms_mms);
     }
 
-    @Override // defpackage.ajyv
-    public final eklh J() {
-        return eklh.BACKUP_SETTINGS;
+    @Override // defpackage.alzt
+    public final emyt J() {
+        return emyt.BACKUP_SETTINGS;
     }
 
-    @Override // defpackage.ajyr
+    @Override // defpackage.alzp
     public final BackupNowPreference M() {
         return this.am;
     }
@@ -242,142 +242,142 @@ public class BackupSettingsFragment extends ajyr {
     }
 
     public final void O(boolean z, boolean z2) {
-        ajll ajllVar = (ajll) getContext();
-        if (ajllVar != null) {
-            ajllVar.k(z, z2);
+        almd almdVar = (almd) getContext();
+        if (almdVar != null) {
+            almdVar.k(z, z2);
         }
     }
 
-    @Override // defpackage.ajyr
-    public final void P(eswh eswhVar) {
+    @Override // defpackage.alzp
+    public final void P(evlx evlxVar) {
         ParcelableSession b = ParcelableSession.b();
-        eswz eswzVar = (eswz) esxa.a.v();
-        fecj v = esxo.a.v();
-        esiw esiwVar = esiw.ANDROID_BACKUP_SETTING_CHANGE;
+        evmp evmpVar = (evmp) evmq.a.v();
+        fgrc v = evne.a.v();
+        euyl euylVar = euyl.ANDROID_BACKUP_SETTING_CHANGE;
         if (!v.b.L()) {
             v.U();
         }
-        esxo esxoVar = (esxo) v.b;
-        esxoVar.c = esiwVar.lF;
-        esxoVar.b |= 1;
-        fecj v2 = esxp.a.v();
-        fecj v3 = eswm.a.v();
-        fecj v4 = esyr.a.v();
-        esyq esyqVar = esyq.DISABLED;
+        evne evneVar = (evne) v.b;
+        evneVar.c = euylVar.lK;
+        evneVar.b |= 1;
+        fgrc v2 = evnf.a.v();
+        fgrc v3 = evmc.a.v();
+        fgrc v4 = evoh.a.v();
+        evog evogVar = evog.DISABLED;
         if (!v4.b.L()) {
             v4.U();
         }
-        esyr esyrVar = (esyr) v4.b;
-        esyrVar.c = esyqVar.d;
-        esyrVar.b |= 1;
+        evoh evohVar = (evoh) v4.b;
+        evohVar.c = evogVar.d;
+        evohVar.b |= 1;
         if (!v3.b.L()) {
             v3.U();
         }
-        eswm eswmVar = (eswm) v3.b;
-        esyr esyrVar2 = (esyr) v4.Q();
-        esyrVar2.getClass();
-        eswmVar.c = esyrVar2;
-        eswmVar.b |= 1;
+        evmc evmcVar = (evmc) v3.b;
+        evoh evohVar2 = (evoh) v4.Q();
+        evohVar2.getClass();
+        evmcVar.c = evohVar2;
+        evmcVar.b |= 1;
         if (!v2.b.L()) {
             v2.U();
         }
-        esxp esxpVar = (esxp) v2.b;
-        eswm eswmVar2 = (eswm) v3.Q();
-        eswmVar2.getClass();
-        esxpVar.h = eswmVar2;
-        esxpVar.b |= 8;
-        esyj esyjVar = (esyj) esyk.a.v();
-        esyjVar.a(11);
+        evnf evnfVar = (evnf) v2.b;
+        evmc evmcVar2 = (evmc) v3.Q();
+        evmcVar2.getClass();
+        evnfVar.h = evmcVar2;
+        evnfVar.b |= 8;
+        evnz evnzVar = (evnz) evoa.a.v();
+        evnzVar.a(11);
         if (!v2.b.L()) {
             v2.U();
         }
-        esxp esxpVar2 = (esxp) v2.b;
-        esyk esykVar = (esyk) esyjVar.Q();
-        esykVar.getClass();
-        esxpVar2.t = esykVar;
-        esxpVar2.d |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        evnf evnfVar2 = (evnf) v2.b;
+        evoa evoaVar = (evoa) evnzVar.Q();
+        evoaVar.getClass();
+        evnfVar2.t = evoaVar;
+        evnfVar2.d |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
         if (!v.b.L()) {
             v.U();
         }
-        esxo esxoVar2 = (esxo) v.b;
-        esxp esxpVar3 = (esxp) v2.Q();
-        esxpVar3.getClass();
-        esxoVar2.d = esxpVar3;
-        esxoVar2.b |= 2;
-        if (!eswzVar.b.L()) {
-            eswzVar.U();
+        evne evneVar2 = (evne) v.b;
+        evnf evnfVar3 = (evnf) v2.Q();
+        evnfVar3.getClass();
+        evneVar2.d = evnfVar3;
+        evneVar2.b |= 2;
+        if (!evmpVar.b.L()) {
+            evmpVar.U();
         }
-        esxa esxaVar = (esxa) eswzVar.b;
-        esxo esxoVar3 = (esxo) v.Q();
-        esxoVar3.getClass();
-        esxaVar.f = esxoVar3;
-        esxaVar.b |= 4;
-        fecj v5 = esys.a.v();
-        esiu esiuVar = esiu.V;
+        evmq evmqVar = (evmq) evmpVar.b;
+        evne evneVar3 = (evne) v.Q();
+        evneVar3.getClass();
+        evmqVar.f = evneVar3;
+        evmqVar.b |= 4;
+        fgrc v5 = evoi.a.v();
+        euyj euyjVar = euyj.V;
         if (!v5.b.L()) {
             v5.U();
         }
-        esys esysVar = (esys) v5.b;
-        esysVar.c = esiuVar.a();
-        esysVar.b |= 1;
-        fecj v6 = esyo.a.v();
-        fecj v7 = eswn.a.v();
+        evoi evoiVar = (evoi) v5.b;
+        evoiVar.c = euyjVar.a();
+        evoiVar.b |= 1;
+        fgrc v6 = evoe.a.v();
+        fgrc v7 = evmd.a.v();
         if (!v7.b.L()) {
             v7.U();
         }
-        eswn eswnVar = (eswn) v7.b;
-        eswhVar.getClass();
-        eswnVar.c = eswhVar;
-        eswnVar.b |= 1;
+        evmd evmdVar = (evmd) v7.b;
+        evlxVar.getClass();
+        evmdVar.c = evlxVar;
+        evmdVar.b |= 1;
         if (!v6.b.L()) {
             v6.U();
         }
-        esyo esyoVar = (esyo) v6.b;
-        eswn eswnVar2 = (eswn) v7.Q();
-        eswnVar2.getClass();
-        esyoVar.g = eswnVar2;
-        esyoVar.b |= 16;
+        evoe evoeVar = (evoe) v6.b;
+        evmd evmdVar2 = (evmd) v7.Q();
+        evmdVar2.getClass();
+        evoeVar.g = evmdVar2;
+        evoeVar.b |= 16;
         if (!v5.b.L()) {
             v5.U();
         }
-        esys esysVar2 = (esys) v5.b;
-        esyo esyoVar2 = (esyo) v6.Q();
-        esyoVar2.getClass();
-        esysVar2.d = esyoVar2;
-        esysVar2.b |= 8;
-        if (!eswzVar.b.L()) {
-            eswzVar.U();
+        evoi evoiVar2 = (evoi) v5.b;
+        evoe evoeVar2 = (evoe) v6.Q();
+        evoeVar2.getClass();
+        evoiVar2.d = evoeVar2;
+        evoiVar2.b |= 8;
+        if (!evmpVar.b.L()) {
+            evmpVar.U();
         }
-        esxa esxaVar2 = (esxa) eswzVar.b;
-        esys esysVar3 = (esys) v5.Q();
-        esysVar3.getClass();
-        esxaVar2.g = esysVar3;
-        esxaVar2.b |= 8;
-        ahws.d(getContext(), eswzVar, this.aE, b.c()).x(new dfae() { // from class: ajxe
-            @Override // defpackage.dfae
-            public final void hr(dfaq dfaqVar) {
-                if (dfaqVar.m()) {
+        evmq evmqVar2 = (evmq) evmpVar.b;
+        evoi evoiVar3 = (evoi) v5.Q();
+        evoiVar3.getClass();
+        evmqVar2.g = evoiVar3;
+        evmqVar2.b |= 8;
+        ajxi.d(getContext(), evmpVar, this.aE, b.c()).x(new dhlk() { // from class: alyc
+            @Override // defpackage.dhlk
+            public final void hH(dhlw dhlwVar) {
+                if (dhlwVar.m()) {
                     return;
                 }
                 BackupSettingsFragment backupSettingsFragment = BackupSettingsFragment.this;
-                backupSettingsFragment.ay.g("Exception writing audit record", dfaqVar.h(), new Object[0]);
+                backupSettingsFragment.ay.g("Exception writing audit record", dhlwVar.h(), new Object[0]);
             }
         });
-        ajrc.j(3);
-        this.aw.g(false);
-        this.ax.b(new ajxs(this, false));
-        aiaa a = aiab.a();
+        alrv.j(3);
+        this.aw.f(false);
+        this.ax.b(new alyq(this, false));
+        akaq a = akar.a();
         a.c(15);
         a.b(b.c());
-        final aiab a2 = a.a();
-        this.ap.execute(new Runnable() { // from class: ajxm
+        final akar a2 = a.a();
+        this.ap.execute(new Runnable() { // from class: alyk
             @Override // java.lang.Runnable
             public final void run() {
                 final BackupSettingsFragment backupSettingsFragment = BackupSettingsFragment.this;
                 Account account = backupSettingsFragment.aE;
                 String str = account != null ? account.name : null;
                 backupSettingsFragment.at.a.d(str, a2);
-                asrb.a(new Runnable() { // from class: ajxc
+                auuv.a(new Runnable() { // from class: alya
                     @Override // java.lang.Runnable
                     public final void run() {
                         BackupSettingsFragment.this.O(false, true);
@@ -389,20 +389,20 @@ public class BackupSettingsFragment extends ajyr {
 
     public final void Q() {
         Account account = this.aE;
-        if (flos.d()) {
+        if (fogc.d()) {
             StorageMeterPreference storageMeterPreference = this.aL;
-            storageMeterPreference.b = aicy.a(account, storageMeterPreference.j);
+            storageMeterPreference.b = akdo.a(account, storageMeterPreference.j);
             storageMeterPreference.k();
             final Intent intent = new Intent();
-            if (ahrf.a() && account == null) {
+            if (ajrv.a() && account == null) {
                 intent.setClassName("com.google.android.gms", "com.google.android.gms.backup.component.SetBackupAccountFlowActivity");
                 intent.putExtra("turnOff", false);
             } else {
                 intent.setClassName("com.google.android.gms", "com.google.android.gms.backup.SetBackupAccountActivity");
                 intent.putExtra("currentBackupAccount", account);
             }
-            this.aL.o = new klp() { // from class: ajxl
-                @Override // defpackage.klp
+            this.aL.o = new mea() { // from class: alyj
+                @Override // defpackage.mea
                 public final boolean b(Preference preference) {
                     BackupSettingsFragment backupSettingsFragment = BackupSettingsFragment.this;
                     String af = backupSettingsFragment.ag.af();
@@ -413,15 +413,15 @@ public class BackupSettingsFragment extends ajyr {
                     return true;
                 }
             };
-            this.ax.b(new ajwr(account, ajwr.c(ahpt.a(getContext(), account), new ahvq(ahvr.a(getContext()), new ahth(flos.c()))), new ajzq(this.aL, this)));
+            this.ax.b(new alxp(account, alxp.c(ajqj.a(getContext(), account), new ajwg(ajwh.a(getContext()), new ajtx(fogc.c()))), new amao(this.aL, this)));
         }
         this.ag.o();
-        aiew aiewVar = this.ax;
+        akfm akfmVar = this.ax;
         Iterator it = this.ag.k(this.aE).iterator();
         while (it.hasNext()) {
-            aiewVar.b((aiez) it.next());
+            akfmVar.b((akfp) it.next());
         }
-        aiewVar.b(new ajxr(this));
+        akfmVar.b(new alyp(this));
     }
 
     public final void R(boolean z) {
@@ -429,66 +429,64 @@ public class BackupSettingsFragment extends ajyr {
     }
 
     public final void S() {
-        Y(new ajxu() { // from class: ajxd
-            @Override // defpackage.ajxu
+        Y(new alys() { // from class: alyb
+            @Override // defpackage.alys
             public final void a(final Account account) {
                 final BackupSettingsFragment backupSettingsFragment = BackupSettingsFragment.this;
                 Account account2 = backupSettingsFragment.aE;
                 if (account2 != null && account != null && !account2.equals(account)) {
-                    backupSettingsFragment.d.ah(ajwx.d);
-                    AppsBackupPreference appsBackupPreference = backupSettingsFragment.ak;
-                    ajwx ajwxVar = ajwx.d;
-                    appsBackupPreference.l(ajwxVar);
-                    backupSettingsFragment.aj.l(ajwxVar);
-                    backupSettingsFragment.ah.l(ajwxVar);
-                    backupSettingsFragment.ai.l(ajwxVar);
-                    backupSettingsFragment.ax.b(new ajxs(backupSettingsFragment, true));
+                    BackupStateTogglePreference backupStateTogglePreference = backupSettingsFragment.d;
+                    alxv alxvVar = alxv.d;
+                    backupStateTogglePreference.ah(alxvVar);
+                    backupSettingsFragment.ak.l(alxvVar);
+                    backupSettingsFragment.aj.l(alxvVar);
+                    backupSettingsFragment.ah.l(alxvVar);
+                    backupSettingsFragment.ai.l(alxvVar);
+                    backupSettingsFragment.ax.b(new alyq(backupSettingsFragment, true));
                 }
                 backupSettingsFragment.aE = account;
                 if (account == null || !backupSettingsFragment.ab()) {
                     backupSettingsFragment.O(false, false);
                     return;
                 }
-                if (ahpw.a.l(backupSettingsFragment.getContext())) {
-                    ahpw ahpwVar = ahpw.a;
-                    if (ahpwVar.m(backupSettingsFragment.getContext()) && ahpwVar.j(backupSettingsFragment.getContext())) {
-                        backupSettingsFragment.d.k(backupSettingsFragment.ab());
-                        backupSettingsFragment.al.o = new klp() { // from class: ajxo
-                            @Override // defpackage.klp
-                            public final boolean b(Preference preference) {
-                                Intent intent = new Intent("android.settings.ACCOUNT_SYNC_SETTINGS");
-                                intent.setPackage("com.android.settings");
-                                Bundle bundle = new Bundle();
-                                bundle.putParcelable("account", account);
-                                intent.putExtra(":settings:show_fragment_args", bundle);
-                                if (!flom.a.a().a()) {
-                                    intent.setFlags(268435456);
-                                }
-                                BackupSettingsFragment.this.startActivity(intent);
-                                return true;
-                            }
-                        };
-                        backupSettingsFragment.Q();
-                        if (backupSettingsFragment.aq && fllq.a.a().B()) {
-                            backupSettingsFragment.ax.b(new ajxp(backupSettingsFragment));
-                        }
-                        new ahkk(backupSettingsFragment.getContext()).a().p((qfp) backupSettingsFragment.getContext(), new ajyq(backupSettingsFragment));
-                        return;
-                    }
+                ajqm ajqmVar = ajqm.a;
+                if (!ajqmVar.l(backupSettingsFragment.getContext()) || !ajqmVar.m(backupSettingsFragment.getContext()) || !ajqmVar.j(backupSettingsFragment.getContext())) {
+                    backupSettingsFragment.O(true, false);
+                    return;
                 }
-                backupSettingsFragment.O(true, false);
+                backupSettingsFragment.d.k(backupSettingsFragment.ab());
+                backupSettingsFragment.al.o = new mea() { // from class: alym
+                    @Override // defpackage.mea
+                    public final boolean b(Preference preference) {
+                        Intent intent = new Intent("android.settings.ACCOUNT_SYNC_SETTINGS");
+                        intent.setPackage("com.android.settings");
+                        Bundle bundle = new Bundle();
+                        bundle.putParcelable("account", account);
+                        intent.putExtra(":settings:show_fragment_args", bundle);
+                        if (!fofw.a.lK().a()) {
+                            intent.setFlags(268435456);
+                        }
+                        BackupSettingsFragment.this.startActivity(intent);
+                        return true;
+                    }
+                };
+                backupSettingsFragment.Q();
+                if (backupSettingsFragment.aq && foda.a.lK().A()) {
+                    backupSettingsFragment.ax.b(new alyn(backupSettingsFragment));
+                }
+                new ajla(backupSettingsFragment.getContext()).a().p((ryt) backupSettingsFragment.getContext(), new alzo(backupSettingsFragment));
             }
         });
     }
 
-    @Override // defpackage.ajyr
+    @Override // defpackage.alzp
     public final void T() {
         if (this.aE != null) {
             Q();
         }
     }
 
-    @Override // defpackage.ajyr
+    @Override // defpackage.alzp
     public final void U(boolean z) {
         if (this.aD == z) {
             return;
@@ -506,7 +504,7 @@ public class BackupSettingsFragment extends ajyr {
                 progressBar2.setVisibility(4);
                 this.aI.setVisibility(4);
             }
-            ajiy.a(getContext());
+            aljq.a(getContext());
         }
         boolean z2 = !z;
         this.d.H(z2);
@@ -516,7 +514,7 @@ public class BackupSettingsFragment extends ajyr {
         this.aL.H(z2);
     }
 
-    @Override // defpackage.ajyr
+    @Override // defpackage.alzp
     public final boolean V() {
         return this.aq && ((TwoStatePreference) this.ao).a;
     }
@@ -530,7 +528,7 @@ public class BackupSettingsFragment extends ajyr {
         }
     }
 
-    @Override // defpackage.ajyr, defpackage.ajxv, defpackage.ajyv, defpackage.kmb, defpackage.dg
+    @Override // defpackage.alzp, defpackage.alyt, defpackage.alzt, defpackage.mem, defpackage.dg
     public final void onCreate(Bundle bundle) {
         if (bundle != null) {
             this.aN = bundle.getBoolean("photosEnablementSnackbarShown", false);
@@ -538,7 +536,7 @@ public class BackupSettingsFragment extends ajyr {
         super.onCreate(bundle);
     }
 
-    @Override // defpackage.ajyr, defpackage.dg
+    @Override // defpackage.alzp, defpackage.dg
     public final void onResume() {
         final PhotosEnablementSnackbarInfo photosEnablementSnackbarInfo;
         super.onResume();
@@ -551,56 +549,56 @@ public class BackupSettingsFragment extends ajyr {
             if ((photosEnablementSnackbarInfo.b() == null) == (photosEnablementSnackbarInfo.a() == null)) {
                 this.ay.m("Photos enablement error snackbar received incorrect intent state", new Object[0]);
                 Z(getContext().getString(R.string.ebnr_photos_snackbar_error_text));
-                ajrc.h(3);
+                alrv.h(3);
             } else if (photosEnablementSnackbarInfo.b() != null) {
                 this.ay.j("Showing Photos enablement error snackbar with Photos alley-oop intent", new Object[0]);
-                aa(getContext().getString(R.string.ebnr_photos_snackbar_error_text), getContext().getString(R.string.ebnr_photos_snackbar_error_button), new View.OnClickListener() { // from class: ajxk
+                aa(getContext().getString(R.string.ebnr_photos_snackbar_error_text), getContext().getString(R.string.ebnr_photos_snackbar_error_button), new View.OnClickListener() { // from class: alyi
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
                         BackupSettingsFragment.this.startActivity(photosEnablementSnackbarInfo.b());
                     }
                 });
-                ajrc.g(3);
+                alrv.g(3);
             } else if (photosEnablementSnackbarInfo.a() != null) {
                 this.ay.j("Showing Photos enablement error snackbar with Photos backup settings intent", new Object[0]);
                 String string = getContext().getString(R.string.ebnr_photos_snackbar_error_text);
                 String string2 = getContext().getString(R.string.ebnr_photos_snackbar_error_button);
                 final PendingIntent a = photosEnablementSnackbarInfo.a();
-                aa(string, string2, new View.OnClickListener() { // from class: ajxg
+                aa(string, string2, new View.OnClickListener() { // from class: alye
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
                         BackupSettingsFragment.this.X(a);
                     }
                 });
-                ajrc.g(3);
+                alrv.g(3);
             }
         } else if (photosEnablementSnackbarInfo.a() != null) {
             this.ay.j("Showing Photos enablement success snackbar", new Object[0]);
             CharSequence aj = aj(photosEnablementSnackbarInfo.c());
             String string3 = getContext().getString(R.string.ebnr_photos_snackbar_success_button);
             final PendingIntent a2 = photosEnablementSnackbarInfo.a();
-            aa(aj, string3, new View.OnClickListener() { // from class: ajxg
+            aa(aj, string3, new View.OnClickListener() { // from class: alye
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     BackupSettingsFragment.this.X(a2);
                 }
             });
-            ajrc.g(2);
+            alrv.g(2);
         } else {
             this.ay.m("Photos enablement success snackbar missing intent for Photos backup settings", new Object[0]);
             Z(aj(photosEnablementSnackbarInfo.c()));
-            ajrc.h(2);
+            alrv.h(2);
         }
         this.aN = true;
     }
 
-    @Override // defpackage.kmb, defpackage.dg
+    @Override // defpackage.mem, defpackage.dg
     public final void onSaveInstanceState(Bundle bundle) {
         bundle.putBoolean("photosEnablementSnackbarShown", this.aN);
         super.onSaveInstanceState(bundle);
     }
 
-    @Override // defpackage.ajyr, defpackage.kmb, defpackage.dg
+    @Override // defpackage.alzp, defpackage.mem, defpackage.dg
     public final void onViewCreated(View view, Bundle bundle) {
         String string;
         super.onViewCreated(view, bundle);
@@ -608,14 +606,14 @@ public class BackupSettingsFragment extends ajyr {
         if (arguments == null || (string = arguments.getString("scrollPreferenceKey")) == null) {
             return;
         }
-        klv klvVar = new klv(this, string);
+        meg megVar = new meg(this, string);
         if (this.b == null) {
-            this.c = klvVar;
+            this.c = megVar;
         } else {
-            klvVar.run();
+            megVar.run();
         }
-        if (getContext() instanceof ajlk) {
-            ((ajlk) getContext()).c();
+        if (getContext() instanceof almc) {
+            ((almc) getContext()).f();
         }
     }
 }

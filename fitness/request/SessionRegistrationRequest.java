@@ -6,30 +6,30 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgiu;
-import defpackage.bgiw;
-import defpackage.bgln;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bink;
+import defpackage.binm;
+import defpackage.biqd;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SessionRegistrationRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgln();
+    public static final Parcelable.Creator CREATOR = new biqd();
     public final PendingIntent a;
-    public final bgiw b;
+    public final binm b;
 
-    public SessionRegistrationRequest(PendingIntent pendingIntent, bgiw bgiwVar) {
+    public SessionRegistrationRequest(PendingIntent pendingIntent, binm binmVar) {
         this.a = pendingIntent;
-        this.b = bgiwVar;
+        this.b = binmVar;
     }
 
     public final boolean equals(Object obj) {
         if (this != obj) {
-            return (obj instanceof SessionRegistrationRequest) && arwb.b(this.a, ((SessionRegistrationRequest) obj).a);
+            return (obj instanceof SessionRegistrationRequest) && atyq.b(this.a, ((SessionRegistrationRequest) obj).a);
         }
         return true;
     }
@@ -40,29 +40,29 @@ public class SessionRegistrationRequest extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("pendingIntent", this.a, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("pendingIntent", this.a, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         PendingIntent pendingIntent = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, pendingIntent, i, false);
-        bgiw bgiwVar = this.b;
-        arxc.D(parcel, 2, bgiwVar == null ? null : bgiwVar.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, pendingIntent, i, false);
+        binm binmVar = this.b;
+        atzr.D(parcel, 2, binmVar == null ? null : binmVar.asBinder());
+        atzr.c(parcel, a);
     }
 
     public SessionRegistrationRequest(PendingIntent pendingIntent, IBinder iBinder) {
-        bgiw bgiuVar;
+        binm binkVar;
         this.a = pendingIntent;
         if (iBinder == null) {
-            bgiuVar = null;
+            binkVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.IStatusCallback");
-            bgiuVar = queryLocalInterface instanceof bgiw ? (bgiw) queryLocalInterface : new bgiu(iBinder);
+            binkVar = queryLocalInterface instanceof binm ? (binm) queryLocalInterface : new bink(iBinder);
         }
-        this.b = bgiuVar;
+        this.b = binkVar;
     }
 }

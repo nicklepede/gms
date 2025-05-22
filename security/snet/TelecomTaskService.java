@@ -5,70 +5,70 @@ import android.os.Build;
 import android.telecom.PhoneAccountHandle;
 import android.telecom.TelecomManager;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.bykk;
-import defpackage.byln;
-import defpackage.czbx;
-import defpackage.czby;
-import defpackage.czbz;
-import defpackage.czcb;
-import defpackage.czcc;
-import defpackage.feab;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.frtq;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.catc;
+import defpackage.cauf;
+import defpackage.dblv;
+import defpackage.dblw;
+import defpackage.dblx;
+import defpackage.dblz;
+import defpackage.dbma;
+import defpackage.fgou;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fuoj;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class TelecomTaskService extends GmsTaskBoundService {
-    public byjl a;
+    public casd a;
     private Context b;
     private TelecomManager c;
 
     public TelecomTaskService() {
     }
 
-    static synchronized void d(byjl byjlVar) {
+    static synchronized void d(casd casdVar) {
         synchronized (TelecomTaskService.class) {
-            byjlVar.d("snet_telecom_task_tag", TelecomTaskService.class.getName());
+            casdVar.d("snet_telecom_task_tag", TelecomTaskService.class.getName());
         }
     }
 
-    static void e(byjl byjlVar) {
-        if (!frtq.m() || (!frtq.k() && !frtq.j())) {
-            d(byjlVar);
+    static void e(casd casdVar) {
+        if (!fuoj.m() || (!fuoj.k() && !fuoj.j())) {
+            d(casdVar);
             return;
         }
-        long i = frtq.a.a().i() * 3600;
-        bykj bykjVar = new bykj();
-        bykjVar.w(TelecomTaskService.class.getName());
-        bykjVar.t("snet_telecom_task_tag");
-        bykjVar.p = true;
-        bykjVar.v(1);
-        bykjVar.y(2, 2);
-        bykjVar.e(i, 21600 + i);
-        f(bykjVar.b(), byjlVar);
+        long i = fuoj.a.lK().i() * 3600;
+        catb catbVar = new catb();
+        catbVar.w(TelecomTaskService.class.getName());
+        catbVar.t("snet_telecom_task_tag");
+        catbVar.p = true;
+        catbVar.v(1);
+        catbVar.y(2, 2);
+        catbVar.e(i, 21600 + i);
+        f(catbVar.b(), casdVar);
     }
 
-    static synchronized void f(bykk bykkVar, byjl byjlVar) {
+    static synchronized void f(catc catcVar, casd casdVar) {
         synchronized (TelecomTaskService.class) {
-            byjlVar.f(bykkVar);
+            casdVar.f(catcVar);
         }
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (frtq.m()) {
-            if (frtq.k()) {
-                Map a = czbx.a(this.c);
-                boolean j = frtq.j();
+    public final int a(cauf caufVar) {
+        if (fuoj.m()) {
+            if (fuoj.k()) {
+                Map a = dblv.a(this.c);
+                boolean j = fuoj.j();
                 Context context = this.b;
                 if (!a.isEmpty()) {
                     Iterator it = a.entrySet().iterator();
@@ -76,48 +76,48 @@ public class TelecomTaskService extends GmsTaskBoundService {
                     while (it.hasNext()) {
                         i += ((Integer) ((Map.Entry) it.next()).getValue()).intValue();
                     }
-                    fecj v = czcb.a.v();
+                    fgrc v = dblz.a.v();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    fecp fecpVar = v.b;
-                    czcb czcbVar = (czcb) fecpVar;
-                    czcbVar.b |= 1;
-                    czcbVar.d = j;
-                    if (!fecpVar.L()) {
+                    fgri fgriVar = v.b;
+                    dblz dblzVar = (dblz) fgriVar;
+                    dblzVar.b |= 1;
+                    dblzVar.d = j;
+                    if (!fgriVar.L()) {
                         v.U();
                     }
-                    czcb czcbVar2 = (czcb) v.b;
-                    czcbVar2.b |= 2;
-                    czcbVar2.e = i;
-                    List a2 = czby.a(a);
+                    dblz dblzVar2 = (dblz) v.b;
+                    dblzVar2.b |= 2;
+                    dblzVar2.e = i;
+                    List a2 = dblw.a(a);
                     if (!v.b.L()) {
                         v.U();
                     }
-                    czcb czcbVar3 = (czcb) v.b;
-                    fedh fedhVar = czcbVar3.c;
-                    if (!fedhVar.c()) {
-                        czcbVar3.c = fecp.E(fedhVar);
+                    dblz dblzVar3 = (dblz) v.b;
+                    fgsa fgsaVar = dblzVar3.c;
+                    if (!fgsaVar.c()) {
+                        dblzVar3.c = fgri.E(fgsaVar);
                     }
-                    feab.E(a2, czcbVar3.c);
-                    czcb czcbVar4 = (czcb) v.Q();
-                    fecj v2 = czcc.a.v();
+                    fgou.E(a2, dblzVar3.c);
+                    dblz dblzVar4 = (dblz) v.Q();
+                    fgrc v2 = dbma.a.v();
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    czcc czccVar = (czcc) v2.b;
-                    czcbVar4.getClass();
-                    czccVar.c = czcbVar4;
-                    czccVar.b |= 1;
-                    czby.b(context, (czcc) v2.Q());
+                    dbma dbmaVar = (dbma) v2.b;
+                    dblzVar4.getClass();
+                    dbmaVar.c = dblzVar4;
+                    dbmaVar.b |= 1;
+                    dblw.b(context, (dbma) v2.Q());
                 }
             }
-            if (frtq.j()) {
+            if (fuoj.j()) {
                 TelecomManager telecomManager = this.c;
-                long h = frtq.a.a().h();
+                long h = fuoj.a.lK().h();
                 HashMap hashMap = new HashMap();
                 if (Build.VERSION.SDK_INT >= 26) {
-                    Map a3 = czbx.a(telecomManager);
+                    Map a3 = dblv.a(telecomManager);
                     HashSet hashSet = new HashSet();
                     for (String str : a3.keySet()) {
                         Integer num = (Integer) a3.get(str);
@@ -137,27 +137,27 @@ public class TelecomTaskService extends GmsTaskBoundService {
                 }
                 Context context2 = this.b;
                 if (!hashMap.isEmpty()) {
-                    fecj v3 = czbz.a.v();
-                    List a4 = czby.a(hashMap);
+                    fgrc v3 = dblx.a.v();
+                    List a4 = dblw.a(hashMap);
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    czbz czbzVar = (czbz) v3.b;
-                    fedh fedhVar2 = czbzVar.b;
-                    if (!fedhVar2.c()) {
-                        czbzVar.b = fecp.E(fedhVar2);
+                    dblx dblxVar = (dblx) v3.b;
+                    fgsa fgsaVar2 = dblxVar.b;
+                    if (!fgsaVar2.c()) {
+                        dblxVar.b = fgri.E(fgsaVar2);
                     }
-                    feab.E(a4, czbzVar.b);
-                    czbz czbzVar2 = (czbz) v3.Q();
-                    fecj v4 = czcc.a.v();
+                    fgou.E(a4, dblxVar.b);
+                    dblx dblxVar2 = (dblx) v3.Q();
+                    fgrc v4 = dbma.a.v();
                     if (!v4.b.L()) {
                         v4.U();
                     }
-                    czcc czccVar2 = (czcc) v4.b;
-                    czbzVar2.getClass();
-                    czccVar2.d = czbzVar2;
-                    czccVar2.b |= 2;
-                    czby.b(context2, (czcc) v4.Q());
+                    dbma dbmaVar2 = (dbma) v4.b;
+                    dblxVar2.getClass();
+                    dbmaVar2.d = dblxVar2;
+                    dbmaVar2.b |= 2;
+                    dblw.b(context2, (dbma) v4.Q());
                 }
             }
         }
@@ -165,30 +165,30 @@ public class TelecomTaskService extends GmsTaskBoundService {
         return 0;
     }
 
-    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         super.onCreate();
         this.b = this;
-        int i = czbx.a;
-        int i2 = czby.a;
+        int i = dblv.a;
+        int i2 = dblw.a;
         if (Build.VERSION.SDK_INT >= 26) {
             this.c = (TelecomManager) this.b.getSystemService(TelecomManager.class);
         }
-        this.a = byjl.a(this.b);
+        this.a = casd.a(this.b);
     }
 
     public TelecomTaskService(Context context) {
-        this.a = byjl.a(context);
+        this.a = casd.a(context);
     }
 
-    TelecomTaskService(Context context, byjl byjlVar) {
+    TelecomTaskService(Context context, casd casdVar) {
         this.b = context;
-        this.a = byjlVar;
+        this.a = casdVar;
     }
 
-    TelecomTaskService(Context context, czbx czbxVar, czby czbyVar, TelecomManager telecomManager, byjl byjlVar) {
+    TelecomTaskService(Context context, dblv dblvVar, dblw dblwVar, TelecomManager telecomManager, casd casdVar) {
         this.b = context;
         this.c = telecomManager;
-        this.a = byjlVar;
+        this.a = casdVar;
     }
 }

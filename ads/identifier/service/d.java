@@ -9,20 +9,20 @@ import com.google.android.gms.ads.identifier.settings.ac;
 import com.google.android.gms.ads.identifier.settings.t;
 import com.google.android.gms.chimera.modules.ads.AppContextProvider;
 import com.google.android.gms.common.api.Status;
-import defpackage.bxgi;
-import defpackage.enyi;
-import defpackage.enyl;
-import defpackage.enyp;
-import defpackage.feay;
-import defpackage.fecj;
-import defpackage.fjzz;
-import defpackage.oto;
+import defpackage.bzoy;
+import defpackage.eqmb;
+import defpackage.eqme;
+import defpackage.eqmi;
+import defpackage.fgpr;
+import defpackage.fgrc;
+import defpackage.fmqe;
+import defpackage.qmr;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class d extends bxgi {
+public final class d extends bzoy {
     private final AdRequestAttestationTokenRequestParcel a;
     private final int b;
     private final com.google.android.gms.ads.eventattestation.internal.h c;
@@ -34,7 +34,7 @@ public final class d extends bxgi {
         this.c = hVar;
     }
 
-    @Override // defpackage.bxgi
+    @Override // defpackage.bzoy
     public final void f(Context context) {
         int i = this.b;
         ac a = ac.a(context);
@@ -44,48 +44,48 @@ public final class d extends bxgi {
             String str = adRequestAttestationTokenRequestParcel.a;
             final byte[] bArr = adRequestAttestationTokenRequestParcel.b;
             String b = a.b(adRequestAttestationTokenRequestParcel.d, a2);
-            final fecj v = enyi.a.v();
-            fecj f = a.f(b, a2);
+            final fgrc v = eqmb.a.v();
+            fgrc f = a.f(b, a2);
             if (!v.b.L()) {
                 v.U();
             }
-            enyi enyiVar = (enyi) v.b;
-            enyl enylVar = (enyl) f.Q();
-            enylVar.getClass();
-            enyiVar.d = enylVar;
-            enyiVar.b |= 2;
+            eqmb eqmbVar = (eqmb) v.b;
+            eqme eqmeVar = (eqme) f.Q();
+            eqmeVar.getClass();
+            eqmbVar.d = eqmeVar;
+            eqmbVar.b |= 2;
             byte[] d = a.d(str, "adRequestAttestationToken", new ab() { // from class: com.google.android.gms.ads.identifier.settings.aa
                 @Override // com.google.android.gms.ads.identifier.settings.ab
-                public final void a(fecj fecjVar) {
+                public final void a(fgrc fgrcVar) {
                     byte[] bArr2 = bArr;
                     boolean c = ac.c(bArr2);
-                    fecj fecjVar2 = v;
+                    fgrc fgrcVar2 = v;
                     if (!c) {
-                        feay w = feay.w(bArr2);
-                        if (!fecjVar2.b.L()) {
-                            fecjVar2.U();
+                        fgpr w = fgpr.w(bArr2);
+                        if (!fgrcVar2.b.L()) {
+                            fgrcVar2.U();
                         }
-                        enyi enyiVar2 = (enyi) fecjVar2.b;
-                        enyi enyiVar3 = enyi.a;
-                        enyiVar2.b |= 1;
-                        enyiVar2.c = w;
+                        eqmb eqmbVar2 = (eqmb) fgrcVar2.b;
+                        eqmb eqmbVar3 = eqmb.a;
+                        eqmbVar2.b |= 1;
+                        eqmbVar2.c = w;
                     }
-                    if (!fecjVar.b.L()) {
-                        fecjVar.U();
+                    if (!fgrcVar.b.L()) {
+                        fgrcVar.U();
                     }
-                    enyp enypVar = (enyp) fecjVar.b;
-                    enyi enyiVar4 = (enyi) fecjVar2.Q();
-                    enyp enypVar2 = enyp.a;
-                    enyiVar4.getClass();
-                    enypVar.d = enyiVar4;
-                    enypVar.c = 3;
+                    eqmi eqmiVar = (eqmi) fgrcVar.b;
+                    eqmb eqmbVar4 = (eqmb) fgrcVar2.Q();
+                    eqmi eqmiVar2 = eqmi.a;
+                    eqmbVar4.getClass();
+                    eqmiVar.d = eqmbVar4;
+                    eqmiVar.c = 3;
                 }
             }, a2);
             com.google.android.gms.ads.eventattestation.internal.h hVar = this.c;
             AdRequestAttestationTokenParcel adRequestAttestationTokenParcel = new AdRequestAttestationTokenParcel(d);
-            Parcel fr = hVar.fr();
-            oto.e(fr, adRequestAttestationTokenParcel);
-            hVar.fu(2, fr);
+            Parcel fE = hVar.fE();
+            qmr.e(fE, adRequestAttestationTokenParcel);
+            hVar.fH(2, fE);
         } catch (t e) {
             this.c.a(e.a, e.b);
         } catch (IOException e2) {
@@ -93,7 +93,7 @@ public final class d extends bxgi {
             this.c.a(1, "");
             com.google.android.gms.ads.identifier.settings.d.c(AppContextProvider.a(), "request-attestation", e);
         } catch (RuntimeException e3) {
-            if (!fjzz.l()) {
+            if (!fmqe.l()) {
                 throw e3;
             }
             com.google.android.gms.ads.identifier.settings.d.c(context, "getAdRequestAttestationToken", e3);
@@ -104,7 +104,7 @@ public final class d extends bxgi {
         }
     }
 
-    @Override // defpackage.bxgi
+    @Override // defpackage.bzoy
     public final void j(Status status) {
         this.c.a(1, status.j);
     }

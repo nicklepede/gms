@@ -2,10 +2,10 @@ package com.google.android.gms.ads.signalsdk;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
-import defpackage.aqus;
-import defpackage.aquu;
+import defpackage.asxh;
+import defpackage.asxj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class h implements g {
     private boolean a;
@@ -13,7 +13,7 @@ final class h implements g {
 
     public h(Context context, String str) {
         try {
-            aquu a = new aqus(context, str, 0L).a();
+            asxj a = new asxh(context, str, 0L).a();
             this.a = a.b();
             this.b = a.c();
         } catch (PackageManager.NameNotFoundException unused) {

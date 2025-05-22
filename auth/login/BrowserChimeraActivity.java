@@ -11,13 +11,13 @@ import android.webkit.CookieSyncManager;
 import android.webkit.WebSettings;
 import com.google.android.gms.R;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
-import defpackage.aanv;
-import defpackage.abau;
-import defpackage.abpf;
-import defpackage.abpg;
-import defpackage.abph;
-import defpackage.abpx;
-import defpackage.vfv;
+import defpackage.acnv;
+import defpackage.adau;
+import defpackage.adpf;
+import defpackage.adpg;
+import defpackage.adph;
+import defpackage.adpx;
+import defpackage.xbw;
 import j$.util.DesugarCollections;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -26,13 +26,13 @@ import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeListener {
+public class BrowserChimeraActivity extends adpf implements View.OnFocusChangeListener {
     public static final /* synthetic */ int B = 0;
     private boolean C;
     private String D;
-    private aanv G;
+    private acnv G;
     private AsyncTask H;
     public String h;
     public String i;
@@ -49,7 +49,7 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
     public String z = null;
     public String A = null;
 
-    public static boolean b(String str, aanv aanvVar) {
+    public static boolean b(String str, acnv acnvVar) {
         String path;
         if (str == null) {
             return false;
@@ -58,7 +58,7 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
             path = new URI(str).getPath();
         } catch (URISyntaxException unused) {
         }
-        return path != null && aanvVar.b(str) && path.startsWith("/EmbeddedSetup");
+        return path != null && acnvVar.b(str) && path.startsWith("/EmbeddedSetup");
     }
 
     public static void l(String str) {
@@ -83,15 +83,15 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
         this.A = bundle.getString("purchaser_name");
     }
 
-    public final void c(abau abauVar) {
+    public final void c(adau adauVar) {
         String str = this.h;
         boolean z = this.C;
         ArrayList arrayList = this.F;
         int i = ShowErrorChimeraActivity.i;
-        startActivityForResult(new Intent().setClassName(AppContextProvider.a(), "com.google.android.gms.auth.login.ShowErrorActivity").putExtra("isCreatingAccount", z).putExtra("detail", (String) null).putExtra("accountName", str).putExtra("status", abauVar.ak).putExtra("isAddingAccount", true).putExtra("allowSkip", arrayList == null), 109);
+        startActivityForResult(new Intent().setClassName(AppContextProvider.a(), "com.google.android.gms.auth.login.ShowErrorActivity").putExtra("isCreatingAccount", z).putExtra("detail", (String) null).putExtra("accountName", str).putExtra("status", adauVar.ak).putExtra("isAddingAccount", true).putExtra("allowSkip", arrayList == null), 109);
     }
 
-    @Override // defpackage.abpf, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj, android.view.Window.Callback
+    @Override // defpackage.adpf, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn, android.view.Window.Callback
     public final boolean dispatchKeyEvent(KeyEvent keyEvent) {
         CustomWebView customWebView;
         if (keyEvent.getKeyCode() != 4 || keyEvent.getAction() != 0 || keyEvent.getRepeatCount() != 0 || (customWebView = this.v) == null || !customWebView.canGoBack()) {
@@ -101,7 +101,7 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
         return true;
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i2 == 1) {
@@ -112,7 +112,7 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
         finish();
     }
 
-    @Override // defpackage.abpf, defpackage.abpc, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.adpf, defpackage.adpc, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Locale locale = Locale.getDefault();
@@ -130,7 +130,7 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
             linkedHashMap.put("Accept-Language", this.D);
             this.u = DesugarCollections.unmodifiableMap(linkedHashMap);
         }
-        this.G = aanv.a(vfv.k());
+        this.G = acnv.a(xbw.k());
         setContentView(R.layout.auth_browser_add_account_activity);
         if (bundle != null) {
             this.w = bundle.getBoolean("interactivity_completed", false);
@@ -146,8 +146,8 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
         this.v.a();
         CookieSyncManager.createInstance(this);
         this.y = CookieManager.getInstance();
-        this.v.setWebViewClient(new abpx(this, this.G));
-        this.v.setWebChromeClient(new abph(this));
+        this.v.setWebViewClient(new adpx(this, this.G));
+        this.v.setWebChromeClient(new adph(this));
         WebSettings settings = this.v.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setSupportMultipleWindows(false);
@@ -165,12 +165,12 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
         this.v.setFocusable(true);
         this.v.setFocusableInTouchMode(true);
         this.v.getSettings().setUseWideViewPort(false);
-        abpg abpgVar = new abpg(this);
-        this.H = abpgVar;
-        abpgVar.execute(new Void[0]);
+        adpg adpgVar = new adpg(this);
+        this.H = adpgVar;
+        adpgVar.execute(new Void[0]);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
         AsyncTask asyncTask = this.H;
@@ -180,7 +180,7 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
         }
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() == 0) {
             setResult(0);
@@ -189,7 +189,7 @@ public class BrowserChimeraActivity extends abpf implements View.OnFocusChangeLi
         return super.onOptionsItemSelected(menuItem);
     }
 
-    @Override // defpackage.abpf, defpackage.abpc, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.adpf, defpackage.adpc, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putString("access_token", this.r);

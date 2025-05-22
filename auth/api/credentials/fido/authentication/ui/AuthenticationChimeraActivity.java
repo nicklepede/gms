@@ -4,319 +4,252 @@ import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
+import android.os.ResultReceiver;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.api.credentials.fido.authentication.ui.AuthenticationChimeraActivity;
 import com.google.android.gms.auth.api.fido.AuthenticationOptions;
 import com.google.android.gms.fido.fido2.api.common.PublicKeyCredential;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.a;
-import defpackage.abv;
-import defpackage.acm;
-import defpackage.arxd;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgx;
-import defpackage.eble;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.eldt;
-import defpackage.elfb;
-import defpackage.elfd;
+import defpackage.aazk;
+import defpackage.abad;
+import defpackage.aca;
+import defpackage.acr;
+import defpackage.atzs;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonp;
+import defpackage.edxt;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.enrg;
+import defpackage.enso;
+import defpackage.ensq;
 import defpackage.ew;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fksi;
-import defpackage.fuwt;
-import defpackage.fuwy;
-import defpackage.fvbo;
-import defpackage.iru;
-import defpackage.iyo;
-import defpackage.iyt;
-import defpackage.iyz;
-import defpackage.izt;
-import defpackage.jbo;
-import defpackage.jbr;
-import defpackage.jcd;
-import defpackage.jcj;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.wio;
-import defpackage.wiq;
-import defpackage.wkg;
-import defpackage.wtc;
-import defpackage.wyb;
-import defpackage.wzp;
-import defpackage.wzq;
-import defpackage.xah;
-import defpackage.xcy;
-import defpackage.xdi;
-import defpackage.xdk;
-import defpackage.xtg;
-import defpackage.xul;
-import defpackage.yzu;
-import defpackage.zam;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fngi;
+import defpackage.fnjh;
+import defpackage.itk;
+import defpackage.jaj;
+import defpackage.jap;
+import defpackage.jbj;
+import defpackage.jdt;
+import defpackage.jdu;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.yeu;
+import defpackage.yew;
+import defpackage.ygq;
+import defpackage.ypq;
+import defpackage.yuv;
+import defpackage.ywj;
+import defpackage.ywk;
+import defpackage.yxb;
+import defpackage.yzs;
+import defpackage.zac;
+import defpackage.zae;
+import defpackage.zrd;
+import defpackage.zsi;
 import j$.util.Objects;
-import java.util.ArrayList;
-import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AuthenticationChimeraActivity extends qet {
+public class AuthenticationChimeraActivity extends rxx {
     public static final /* synthetic */ int j = 0;
-    private static final asot k = xul.b("AuthenticationChimeraActivity");
-    private bmgq l;
+    private static final ausn k = zsi.b("AuthenticationChimeraActivity");
+    private boni l;
     private String m;
-    private wzq n;
+    private ywk n;
     private AuthenticationOptions o;
 
-    public final void a(wiq wiqVar) {
+    public final void a(yew yewVar) {
         Intent b;
-        wiq wiqVar2;
-        if (fksi.c() && zam.a(this.o)) {
-            xdi c = xdi.c(wiqVar);
+        yew yewVar2;
+        if (fnjh.c() && abad.a(this.o)) {
+            zac c = zac.c(yewVar);
             b = new Intent();
             if (c.g()) {
-                iyt iytVar = new iyt(new iyz(((PublicKeyCredential) c.a).c()));
-                jcd.d(b, iytVar);
-                wiqVar2 = c;
+                jaj jajVar = new jaj(new jap(((PublicKeyCredential) c.a).c()));
+                jdt.d(b, jajVar);
+                yewVar2 = c;
             } else {
-                izt iztVar = (izt) wtc.a.a(c.b);
-                jcd.c(b, iztVar);
-                wiqVar2 = c;
+                jbj jbjVar = (jbj) ypq.a.a(c.b);
+                jdt.c(b, jbjVar);
+                yewVar2 = c;
             }
         } else {
-            b = wiqVar.b();
-            wiqVar2 = wiqVar;
+            b = yewVar.b();
+            yewVar2 = yewVar;
         }
-        wiqVar2.f(k);
-        fecj k2 = wiqVar2.k();
-        if (!k2.b.L()) {
-            k2.U();
+        yewVar2.f(k);
+        fgrc l = yewVar2.l();
+        if (!l.b.L()) {
+            l.U();
         }
-        elfb elfbVar = (elfb) k2.b;
-        elfb elfbVar2 = elfb.a;
-        elfbVar.f = 210;
-        elfbVar.b |= 8;
-        wzq wzqVar = this.n;
-        if (wzqVar != null) {
-            fecj c2 = xcy.c(wzqVar.v, wzqVar.i, wzqVar.q);
-            int i = wzqVar.p;
+        enso ensoVar = (enso) l.b;
+        enso ensoVar2 = enso.a;
+        ensoVar.f = 210;
+        ensoVar.b |= 8;
+        ywk ywkVar = this.n;
+        if (ywkVar != null) {
+            fgrc c2 = yzs.c(ywkVar.v, ywkVar.i, ywkVar.q);
+            int i = ywkVar.p;
             if (!c2.b.L()) {
                 c2.U();
             }
-            eldt eldtVar = (eldt) c2.b;
-            eldt eldtVar2 = eldt.a;
-            eldtVar.b |= 1;
-            eldtVar.c = i;
-            boolean z = wzqVar.w instanceof xdk;
+            enrg enrgVar = (enrg) c2.b;
+            enrg enrgVar2 = enrg.a;
+            enrgVar.b |= 1;
+            enrgVar.c = i;
+            boolean z = ywkVar.w instanceof zae;
             if (!c2.b.L()) {
                 c2.U();
             }
-            eldt eldtVar3 = (eldt) c2.b;
-            eldtVar3.b |= 32;
-            eldtVar3.g = z;
-            eldt eldtVar4 = (eldt) c2.Q();
-            if (!k2.b.L()) {
-                k2.U();
+            enrg enrgVar3 = (enrg) c2.b;
+            enrgVar3.b |= 32;
+            enrgVar3.g = z;
+            enrg enrgVar4 = (enrg) c2.Q();
+            if (!l.b.L()) {
+                l.U();
             }
-            elfb elfbVar3 = (elfb) k2.b;
-            eldtVar4.getClass();
-            elfbVar3.j = eldtVar4;
-            elfbVar3.b |= 128;
+            enso ensoVar3 = (enso) l.b;
+            enrgVar4.getClass();
+            ensoVar3.j = enrgVar4;
+            ensoVar3.b |= 128;
         } else {
-            fecj v = eldt.a.v();
+            fgrc v = enrg.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            eldt eldtVar5 = (eldt) v.b;
-            eldtVar5.b |= 32;
-            eldtVar5.g = false;
-            eldt eldtVar6 = (eldt) v.Q();
-            if (!k2.b.L()) {
-                k2.U();
+            enrg enrgVar5 = (enrg) v.b;
+            enrgVar5.b |= 32;
+            enrgVar5.g = false;
+            enrg enrgVar6 = (enrg) v.Q();
+            if (!l.b.L()) {
+                l.U();
             }
-            elfb elfbVar4 = (elfb) k2.b;
-            eldtVar6.getClass();
-            elfbVar4.j = eldtVar6;
-            elfbVar4.b |= 128;
+            enso ensoVar4 = (enso) l.b;
+            enrgVar6.getClass();
+            ensoVar4.j = enrgVar6;
+            ensoVar4.b |= 128;
         }
-        bmgq bmgqVar = this.l;
-        fecj v2 = elfd.a.v();
+        boni boniVar = this.l;
+        fgrc v2 = ensq.a.v();
         String str = this.m;
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar = v2.b;
-        elfd elfdVar = (elfd) fecpVar;
+        fgri fgriVar = v2.b;
+        ensq ensqVar = (ensq) fgriVar;
         str.getClass();
-        elfdVar.b |= 2;
-        elfdVar.e = str;
-        if (!fecpVar.L()) {
+        ensqVar.b |= 2;
+        ensqVar.e = str;
+        if (!fgriVar.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        elfd elfdVar2 = (elfd) fecpVar2;
-        elfdVar2.d = 17;
-        elfdVar2.b |= 1;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v2.b;
+        ensq ensqVar2 = (ensq) fgriVar2;
+        ensqVar2.d = 17;
+        ensqVar2.b |= 1;
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        elfd elfdVar3 = (elfd) v2.b;
-        elfb elfbVar5 = (elfb) k2.Q();
-        elfbVar5.getClass();
-        elfdVar3.s = elfbVar5;
-        elfdVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-        bmgqVar.a((elfd) v2.Q());
-        setResult(wiqVar2.a(), b);
+        ensq ensqVar3 = (ensq) v2.b;
+        enso ensoVar5 = (enso) l.Q();
+        ensoVar5.getClass();
+        ensqVar3.s = ensoVar5;
+        ensqVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        boniVar.a((ensq) v2.Q());
+        setResult(yewVar2.a(), b);
+        AuthenticationOptions authenticationOptions = this.o;
+        ResultReceiver resultReceiver = authenticationOptions != null ? authenticationOptions.i : null;
+        if (fngi.f() && resultReceiver != null) {
+            resultReceiver.send(-1, yewVar2.h());
+        }
         finish();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r7v3, types: [int] */
-    /* JADX WARN: Type inference failed for: r7v5 */
-    /* JADX WARN: Type inference failed for: r7v6 */
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
-        Set set;
-        Parcelable[] parcelableArray;
-        jcj jcjVar = null;
-        this.l = bmgp.a(this, null);
-        this.m = bmgx.a();
+        this.l = bonh.a(this, null);
+        this.m = bonp.a();
         setTheme(R.style.ThemeTranslucentDayNight);
         super.onCreate(bundle);
         getContainerActivity();
-        int i = eble.a;
-        AuthenticationOptions authenticationOptions = (AuthenticationOptions) arxd.b(getIntent(), "authentication_options", AuthenticationOptions.CREATOR);
+        int i = edxt.a;
+        Intent intent = getIntent();
+        AuthenticationOptions authenticationOptions = (AuthenticationOptions) atzs.b(intent, "authentication_options", AuthenticationOptions.CREATOR);
         this.o = authenticationOptions;
         if (authenticationOptions == null) {
-            a(new wio(eigb.a, (int[]) null).c(50170, wkg.a("authenticationOptions")));
+            a(new yeu((ekvi) ektg.a, (short[]) null).c(50170, ygq.a("authenticationOptions")));
             return;
         }
-        if (fksi.c()) {
-            Intent intent = getIntent();
-            fvbo.f(intent, "intent");
-            fvbo.f(intent, "intent");
-            try {
-                Bundle bundleExtra = intent.getBundleExtra("android.service.credentials.extra.GET_CREDENTIAL_REQUEST");
-                if (bundleExtra != null) {
-                    jbr d = jbo.d(bundleExtra);
-                    if (d == null) {
-                        throw new IllegalArgumentException("Bundle was missing CallingAppInfo.");
-                    }
-                    int i2 = bundleExtra.getInt("androidx.credentials.provider.extra.CREDENTIAL_OPTION_SIZE", -1);
-                    if (i2 < 0) {
-                        throw new IllegalArgumentException("Bundle had invalid option size as " + i2 + '.');
-                    }
-                    ArrayList arrayList = new ArrayList();
-                    boolean z = false;
-                    int i3 = 0;
-                    while (i3 < i2) {
-                        String string = bundleExtra.getString(a.j(i3, "androidx.credentials.provider.extra.CREDENTIAL_OPTION_TYPE_"));
-                        if (string == null) {
-                            throw new IllegalArgumentException("Bundle was missing option type at index " + i2 + '.');
-                        }
-                        Bundle bundle2 = bundleExtra.getBundle(a.j(i3, "androidx.credentials.provider.extra.CREDENTIAL_OPTION_CANDIDATE_QUERY_DATA_"));
-                        if (bundle2 == null) {
-                            throw new IllegalArgumentException("Bundle was missing candidate query data at index " + i2 + '.');
-                        }
-                        Bundle bundle3 = bundleExtra.getBundle(a.j(i3, "androidx.credentials.provider.extra.CREDENTIAL_OPTION_CREDENTIAL_RETRIEVAL_DATA_"));
-                        if (bundle3 == null) {
-                            throw new IllegalArgumentException("Bundle was missing request data at index " + i2 + '.');
-                        }
-                        boolean z2 = bundleExtra.getBoolean(a.j(i3, "androidx.credentials.provider.extra.CREDENTIAL_OPTION_IS_SYSTEM_PROVIDER_REQUIRED_"), z);
-                        try {
-                            parcelableArray = bundleExtra.getParcelableArray(a.j(i3, "androidx.credentials.provider.extra.CREDENTIAL_OPTION_ALLOWED_PROVIDERS_"));
-                        } catch (Exception unused) {
-                            set = fuwy.a;
-                        }
-                        if (parcelableArray != null) {
-                            ArrayList arrayList2 = new ArrayList();
-                            int length = parcelableArray.length;
-                            for (?? r7 = z; r7 < length; r7++) {
-                                ComponentName componentName = (ComponentName) parcelableArray[r7];
-                                if (componentName != null) {
-                                    arrayList2.add(componentName);
-                                }
-                            }
-                            set = fuwt.ak(arrayList2);
-                            if (set != null) {
-                                arrayList.add(iyo.a(string, bundle3, bundle2, z2, set));
-                                i3++;
-                                z = false;
-                            }
-                        }
-                        set = fuwy.a;
-                        arrayList.add(iyo.a(string, bundle3, bundle2, z2, set));
-                        i3++;
-                        z = false;
-                    }
-                    jcjVar = new jcj(arrayList, d);
-                }
-            } catch (Exception unused2) {
-                jcjVar = null;
-            }
-            if (jcjVar != null) {
-                yzu yzuVar = new yzu(this.o);
-                yzuVar.c = null;
-                this.o = yzuVar.a();
+        ResultReceiver resultReceiver = (ResultReceiver) intent.getParcelableExtra("result_receiver");
+        aazk aazkVar = new aazk(this.o);
+        aazkVar.d = resultReceiver;
+        this.o = aazkVar.a();
+        if (fnjh.c()) {
+            if (jdu.b(getIntent()) != null) {
+                aazk aazkVar2 = new aazk(this.o);
+                aazkVar2.c = null;
+                this.o = aazkVar2.a();
             }
         }
         this.m = this.o.b;
-        if (!asqh.a()) {
-            a(new wio(eigb.a, (int[]) null).b(xtg.a()));
+        if (!auub.a()) {
+            a(new yeu((ekvi) ektg.a, (short[]) null).b(zrd.a()));
             return;
         }
         ComponentName callingActivity = getCallingActivity();
-        wzq wzqVar = (wzq) new jrh(this, new wzp(this.o, callingActivity != null ? eiid.j(callingActivity.getClassName()) : eigb.a)).a(wzq.class);
-        this.n = wzqVar;
-        wzqVar.c.g(this, new jpd() { // from class: wzr
-            @Override // defpackage.jpd
+        ywk ywkVar = (ywk) new jxw(this, new ywj(this.o, callingActivity != null ? ekvi.j(callingActivity.getClassName()) : ektg.a)).a(ywk.class);
+        this.n = ywkVar;
+        ywkVar.c.g(this, new jvs() { // from class: ywl
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                AuthenticationChimeraActivity.this.a((wiq) obj);
+                AuthenticationChimeraActivity.this.a((yew) obj);
             }
         });
-        acm acmVar = new acm();
-        final wzq wzqVar2 = this.n;
-        Objects.requireNonNull(wzqVar2);
-        iru iruVar = new iru() { // from class: wzs
-            @Override // defpackage.iru
+        acr acrVar = new acr();
+        final ywk ywkVar2 = this.n;
+        Objects.requireNonNull(ywkVar2);
+        itk itkVar = new itk() { // from class: ywm
+            @Override // defpackage.itk
             public final void a(Object obj) {
-                wiq d2 = new wio((eiid) eigb.a, (short[]) null).d((PublicKeyCredential) obj);
-                wzq wzqVar3 = wzq.this;
-                wzqVar3.w = d2;
-                wzqVar3.g.g();
+                yew d = new yeu(ektg.a, (boolean[]) null).d((PublicKeyCredential) obj);
+                ywk ywkVar3 = ywk.this;
+                ywkVar3.w = d;
+                ywkVar3.g.g();
             }
         };
-        final wzq wzqVar3 = this.n;
-        Objects.requireNonNull(wzqVar3);
-        final abv registerForActivityResult = registerForActivityResult(acmVar, new wyb(iruVar, new iru() { // from class: wzt
-            @Override // defpackage.iru
+        final ywk ywkVar3 = this.n;
+        Objects.requireNonNull(ywkVar3);
+        final aca registerForActivityResult = registerForActivityResult(acrVar, new yuv(itkVar, new itk() { // from class: ywn
+            @Override // defpackage.itk
             public final void a(Object obj) {
-                wya wyaVar = (wya) obj;
-                PublicKeyCredential publicKeyCredential = wyaVar.b;
-                wzq wzqVar4 = wzq.this;
+                yuu yuuVar = (yuu) obj;
+                PublicKeyCredential publicKeyCredential = yuuVar.b;
+                ywk ywkVar4 = ywk.this;
                 if (publicKeyCredential == null) {
-                    wzqVar4.w = new wio(eigb.a, (int[]) null).b(wyaVar.a);
+                    ywkVar4.w = new yeu((ekvi) ektg.a, (short[]) null).b(yuuVar.a);
                 } else {
-                    wzqVar4.w = new wio((eiid) eigb.a, (short[]) null).f(publicKeyCredential, wyaVar.a);
+                    ywkVar4.w = new yeu(ektg.a, (boolean[]) null).f(publicKeyCredential, yuuVar.a);
                 }
-                wzqVar4.g.g();
+                ywkVar4.g.g();
             }
         }, 50172));
-        this.n.u.g(this, new jpd() { // from class: wzu
-            @Override // defpackage.jpd
+        this.n.u.g(this, new jvs() { // from class: ywo
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                int i4 = AuthenticationChimeraActivity.j;
-                abv.this.b(new ace(((PendingIntent) obj).getIntentSender()).a());
+                int i2 = AuthenticationChimeraActivity.j;
+                aca.this.b(new acj(((PendingIntent) obj).getIntentSender()).a());
             }
         });
         ew supportFragmentManager = getSupportFragmentManager();
         if (supportFragmentManager.h("dialog") == null) {
-            new xah().showNow(supportFragmentManager, "dialog");
+            new yxb().showNow(supportFragmentManager, "dialog");
         }
     }
 }

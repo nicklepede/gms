@@ -3,13 +3,13 @@ package com.google.android.gms.wallet.analytics.events;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.digf;
-import defpackage.divi;
+import defpackage.dkrq;
+import defpackage.dlgt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class OwMaskedWalletReceivedEvent extends AnalyticsSessionStartEndEvent {
-    public static final Parcelable.Creator CREATOR = new digf();
+    public static final Parcelable.Creator CREATOR = new dkrq();
     public final boolean c;
     public final int d;
     public final String e;
@@ -24,7 +24,7 @@ public class OwMaskedWalletReceivedEvent extends AnalyticsSessionStartEndEvent {
     }
 
     public static void b(Context context, int i, String str, String str2, int i2) {
-        divi.a(context, new OwMaskedWalletReceivedEvent(i, str, str2, i2));
+        dlgt.a(context, new OwMaskedWalletReceivedEvent(i, str, str2, i2));
     }
 
     @Override // android.os.Parcelable

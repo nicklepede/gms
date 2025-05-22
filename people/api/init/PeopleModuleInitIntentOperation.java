@@ -12,62 +12,62 @@ import com.google.android.gms.people.service.cpg.ActionPreferenceCleanupTask;
 import com.google.android.gms.people.service.cpg.callingcard.CallingCardCleanupTask;
 import com.google.android.gms.people.service.wipeout.PeopleAndroidUriWipeoutTask;
 import com.google.android.gms.people.sync.focus.ContactsSyncIntentOperation;
-import defpackage.afk;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asnf;
-import defpackage.asng;
-import defpackage.asnh;
-import defpackage.asot;
-import defpackage.bqna;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykj;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.ctkm;
-import defpackage.ctpn;
-import defpackage.ctww;
-import defpackage.ctxd;
-import defpackage.ctzp;
-import defpackage.ctzs;
-import defpackage.ctzu;
-import defpackage.ctzw;
-import defpackage.ctzx;
-import defpackage.cuae;
-import defpackage.cuaf;
-import defpackage.cuey;
-import defpackage.cufp;
-import defpackage.cuhg;
-import defpackage.cuxf;
-import defpackage.cuxv;
-import defpackage.cuyj;
-import defpackage.cuyq;
-import defpackage.cvex;
-import defpackage.eitj;
-import defpackage.ejhf;
-import defpackage.ekww;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fnck;
-import defpackage.fqzi;
-import defpackage.fqzp;
-import defpackage.frac;
-import defpackage.fraf;
-import defpackage.fram;
-import defpackage.frdc;
-import defpackage.frfh;
-import defpackage.frfn;
-import defpackage.frhu;
-import defpackage.frib;
+import defpackage.afp;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.auqz;
+import defpackage.aura;
+import defpackage.aurb;
+import defpackage.ausn;
+import defpackage.bsup;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.catb;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.cvts;
+import defpackage.cvyt;
+import defpackage.cwgc;
+import defpackage.cwgj;
+import defpackage.cwiw;
+import defpackage.cwiz;
+import defpackage.cwjb;
+import defpackage.cwjd;
+import defpackage.cwje;
+import defpackage.cwjl;
+import defpackage.cwjm;
+import defpackage.cwof;
+import defpackage.cwow;
+import defpackage.cwqn;
+import defpackage.cxgn;
+import defpackage.cxhd;
+import defpackage.cxhr;
+import defpackage.cxhy;
+import defpackage.cxog;
+import defpackage.elgo;
+import defpackage.eluo;
+import defpackage.enki;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fpuj;
+import defpackage.fttd;
+import defpackage.fttk;
+import defpackage.fttx;
+import defpackage.ftua;
+import defpackage.ftuh;
+import defpackage.ftwx;
+import defpackage.ftzc;
+import defpackage.ftzi;
+import defpackage.fubp;
+import defpackage.fubw;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class PeopleModuleInitIntentOperation extends anya {
-    public static final asot a = asot.b("PeopleInitIntentOp", asej.PEOPLE);
+public class PeopleModuleInitIntentOperation extends apzs {
+    public static final ausn a = ausn.b("PeopleInitIntentOp", auid.PEOPLE);
     private static final String[] b = {"com.google.android.gms.people.sync.coreui.ContactsSyncCoreActivity"};
 
     private final boolean e() {
@@ -75,19 +75,19 @@ public class PeopleModuleInitIntentOperation extends anya {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        afk afkVar;
+        afp afpVar;
         Boolean valueOf;
         boolean r;
         Boolean valueOf2;
         if ((i & 2) != 0) {
-            ctpn.i(this).B(false);
+            cvyt.i(this).B(false);
             Intent startIntent = IntentOperation.getStartIntent(this, ContactsSyncIntentOperation.class, "com.google.android.gms.people.sync.focus.contacts_sync_action");
             if (startIntent != null) {
                 startService(startIntent);
             } else {
-                cuey.c("PeopleInitIntentOp", "Intent was not found: ContactsSyncIntentOperation");
+                cwof.c("PeopleInitIntentOp", "Intent was not found: ContactsSyncIntentOperation");
             }
         }
         int i2 = i & 4;
@@ -95,191 +95,192 @@ public class PeopleModuleInitIntentOperation extends anya {
         int i4 = i & 8;
         byte b2 = i2 != 0;
         if (i4 != 0 || b2 != false) {
-            asnf asnfVar = asng.a;
-            asnh.a(this);
-            ctzp.b(this);
-            if (fraf.g()) {
-                cuxf.a(this);
+            auqz auqzVar = aura.a;
+            aurb.a(this);
+            cwiw.b(this);
+            if (ftua.g()) {
+                cxgn.a(this);
             }
-            if (frfn.g()) {
-                cuhg.a(this);
+            if (ftzi.g()) {
+                cwqn.a(this);
             }
-            if (fqzi.n()) {
+            if (fttd.n()) {
                 try {
-                    afkVar = (afk) ctww.a(this).get();
+                    afpVar = (afp) cwgc.a(this).get();
                 } catch (InterruptedException | ExecutionException e) {
-                    cuey.d("CpgSchemaBuilder", "Failed to get AppSearchSession", e);
-                    afkVar = null;
+                    cwof.d("CpgSchemaBuilder", "Failed to get AppSearchSession", e);
+                    afpVar = null;
                 }
-                ctxd.b(this, afkVar);
+                cwgj.b(this, afpVar);
             }
         }
-        if (frib.k()) {
-            if (frib.e()) {
-                if ((System.currentTimeMillis() - ctpn.i(this).a.getLong("deleted_null_contacts_cleanup_last_run_timestamp", 0L)) / 1000 >= frib.a.a().c()) {
-                    bykj bykjVar = new bykj();
-                    bykjVar.j = "com.google.android.gms.people.service.DeletedNullContactsCleanupService";
-                    bykjVar.t("DeletedNullContactsCleanupOneoffTask");
-                    bykjVar.y(2, 2);
-                    bykjVar.v(1);
-                    bykjVar.p = false;
-                    frib fribVar = frib.a;
-                    bykjVar.e(0L, fribVar.a().b());
-                    bykjVar.x(fribVar.a().h() ? 1 : 0, 1);
-                    bykjVar.i(fribVar.a().i());
+        if (fubw.k()) {
+            if (fubw.e()) {
+                long currentTimeMillis = System.currentTimeMillis() - cvyt.i(this).a.getLong("deleted_null_contacts_cleanup_last_run_timestamp", 0L);
+                fubw fubwVar = fubw.a;
+                if (currentTimeMillis / 1000 >= fubwVar.lK().c()) {
+                    catb catbVar = new catb();
+                    catbVar.j = "com.google.android.gms.people.service.DeletedNullContactsCleanupService";
+                    catbVar.t("DeletedNullContactsCleanupOneoffTask");
+                    catbVar.y(2, 2);
+                    catbVar.v(1);
+                    catbVar.p = false;
+                    catbVar.e(0L, fubwVar.lK().b());
+                    catbVar.x(fubwVar.lK().h() ? 1 : 0, 1);
+                    catbVar.i(fubwVar.lK().i());
                     try {
-                        byjl.a(this).f(bykjVar.b());
+                        casd.a(this).f(catbVar.b());
                         i3 = 2;
                     } catch (IllegalArgumentException e2) {
-                        cuey.d("DeletedNullContactsCleanup", "Error when scheduling the oneoff task.", e2);
+                        cwof.d("DeletedNullContactsCleanup", "Error when scheduling the oneoff task.", e2);
                     }
-                    ctkm a2 = ctkm.a();
-                    fecj v = ekww.a.v();
+                    cvts a2 = cvts.a();
+                    fgrc v = enki.a.v();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    fecp fecpVar = v.b;
-                    ekww ekwwVar = (ekww) fecpVar;
-                    ekwwVar.c = i3 - 1;
-                    ekwwVar.b |= 1;
-                    if (!fecpVar.L()) {
+                    fgri fgriVar = v.b;
+                    enki enkiVar = (enki) fgriVar;
+                    enkiVar.c = i3 - 1;
+                    enkiVar.b |= 1;
+                    if (!fgriVar.L()) {
                         v.U();
                     }
-                    ekww ekwwVar2 = (ekww) v.b;
-                    ekwwVar2.f = 4;
-                    ekwwVar2.b |= 32;
-                    a2.e((ekww) v.Q());
+                    enki enkiVar2 = (enki) v.b;
+                    enkiVar2.f = 4;
+                    enkiVar2.b |= 32;
+                    a2.e((enki) v.Q());
                 }
             }
-            if (frib.f()) {
+            if (fubw.f()) {
                 DeletedNullContactsCleanupChimeraService.g(this);
             } else {
                 DeletedNullContactsCleanupChimeraService.d(this);
             }
         }
-        if (fram.j()) {
-            if (fram.e()) {
+        if (ftuh.j()) {
+            if (ftuh.e()) {
                 BackupAndSyncOptInValidationChimeraService.f(this);
             } else {
                 BackupAndSyncOptInValidationChimeraService.d(this);
             }
         }
-        byjl a3 = byjl.a(this);
+        casd a3 = casd.a(this);
         int i5 = PeopleAndroidUriWipeoutTask.a;
-        if (fnck.k()) {
-            byko bykoVar = new byko();
-            bykoVar.w(".people.service.wipeout.PeopleAndroidUriWipeoutTask");
-            bykoVar.t("PeopleAndroidUriWipeoutTask.Periodic");
-            bykoVar.v(2);
-            bykoVar.l(false);
-            bykoVar.m((int) frhu.a.a().k());
-            a3.f(bykoVar.b());
+        if (fpuj.k()) {
+            catg catgVar = new catg();
+            catgVar.w(".people.service.wipeout.PeopleAndroidUriWipeoutTask");
+            catgVar.t("PeopleAndroidUriWipeoutTask.Periodic");
+            catgVar.v(2);
+            catgVar.l(false);
+            catgVar.m((int) fubp.a.lK().k());
+            a3.f(catgVar.b());
         } else {
-            bykm bykmVar = new bykm();
-            bykmVar.w(".people.service.wipeout.PeopleAndroidUriWipeoutTask");
-            bykmVar.t("PeopleAndroidUriWipeoutTask.Periodic");
-            bykmVar.v(2);
-            bykmVar.j(byki.a(TimeUnit.HOURS.toSeconds(frhu.a.a().l())));
-            bykmVar.y(2, 2);
-            bykmVar.x(0, 1);
-            bykmVar.f(0, 1);
-            a3.f(bykmVar.b());
+            cate cateVar = new cate();
+            cateVar.w(".people.service.wipeout.PeopleAndroidUriWipeoutTask");
+            cateVar.t("PeopleAndroidUriWipeoutTask.Periodic");
+            cateVar.v(2);
+            cateVar.j(cata.a(TimeUnit.HOURS.toSeconds(fubp.a.lK().l())));
+            cateVar.y(2, 2);
+            cateVar.x(0, 1);
+            cateVar.f(0, 1);
+            a3.f(cateVar.b());
         }
-        if (fqzi.i()) {
-            ActionPreferenceCleanupTask.d(byjl.a(this));
+        if (fttd.i()) {
+            ActionPreferenceCleanupTask.d(casd.a(this));
         }
-        if (fqzi.k()) {
-            CallingCardCleanupTask.d(byjl.a(this));
+        if (fttd.k()) {
+            CallingCardCleanupTask.d(casd.a(this));
         }
         if (b2 != false) {
             String[] strArr = b;
             int length = strArr.length;
-            asng.H(this, strArr[0], true);
+            aura.H(this, strArr[0], true);
         }
         Intent startIntent2 = IntentOperation.getStartIntent(this, RegisterPhenotypeOperation.class, "com.google.android.gms.people.phenotype.PHENOTYPE_REGISTER_ACTION");
         if (startIntent2 != null) {
             startIntent2.putExtra("mendel_package_name", "com.google.android.gms.people");
             startService(startIntent2);
         }
-        cufp.O();
-        valueOf = Boolean.valueOf(frhu.a.a().as());
+        cwow.N();
+        valueOf = Boolean.valueOf(fubp.a.lK().ar());
         if (valueOf.booleanValue()) {
-            cufp.O();
-            r = frhu.a.a().aw();
+            cwow.N();
+            r = fubp.a.lK().av();
             Boolean.valueOf(r).getClass();
         } else {
-            r = asnd.r(getApplicationContext());
+            r = auqx.r(getApplicationContext());
         }
         if (r) {
-            cufp.O();
-            valueOf2 = Boolean.valueOf(frhu.a.a().as());
+            cwow.N();
+            valueOf2 = Boolean.valueOf(fubp.a.lK().ar());
             valueOf2.booleanValue();
-            boolean c = frac.c();
+            boolean c = fttx.c();
             Boolean.valueOf(c).getClass();
             if (c) {
-                ctzu a4 = ctzw.a();
+                cwjb a4 = cwjd.a();
                 a4.a = "Android People Data Layer";
                 a4.b = getString(R.string.people_settings_feedback_confirmation);
                 a4.c();
-                frac.c();
+                fttx.c();
                 a4.a(getApplicationContext());
             }
-            boolean h = fraf.h();
+            boolean h = ftua.h();
             Boolean.valueOf(h).getClass();
             if (h) {
-                ctzu a5 = ctzw.a();
+                cwjb a5 = cwjd.a();
                 a5.a = "Focus Sync Adapter 2";
                 a5.b = getString(R.string.people_settings_feedback_confirmation);
                 a5.c();
-                fraf.h();
-                a5.b(new cuae());
-                a5.b(ctzs.a);
-                a5.b(ctzs.b);
-                a5.b(ctzs.c);
-                a5.b(ctzs.d);
-                a5.b(new ctzx());
+                ftua.h();
+                a5.b(new cwjl());
+                a5.b(cwiz.a);
+                a5.b(cwiz.b);
+                a5.b(cwiz.c);
+                a5.b(cwiz.d);
+                a5.b(new cwje());
                 a5.a(getApplicationContext());
             }
-            boolean p = frhu.p();
-            Boolean.valueOf(p).getClass();
-            if (p) {
-                ctzu a6 = ctzw.a();
+            boolean o = fubp.o();
+            Boolean.valueOf(o).getClass();
+            if (o) {
+                cwjb a6 = cwjd.a();
                 a6.a = "Menagerie";
                 a6.b = getString(R.string.people_settings_feedback_confirmation);
                 a6.c();
-                frhu.p();
-                a6.b(new cuaf(eitj.p("owners", "ac_people", "ac_container", "ac_item", "ac_index")));
+                fubp.o();
+                a6.b(new cwjm(elgo.p("owners", "ac_people", "ac_container", "ac_item", "ac_index")));
                 a6.a(getApplicationContext());
             }
         } else {
-            ((ejhf) a.h()).x("Not initializing debuggability");
+            ((eluo) a.h()).x("Not initializing debuggability");
         }
-        if (fqzp.j()) {
-            ((ejhf) a.h()).x("Register contacts changed observer.");
-            cuxv.a(getApplicationContext()).e();
+        if (fttk.j()) {
+            ((eluo) a.h()).x("Register contacts changed observer.");
+            cxhd.a(getApplicationContext()).e();
         }
-        frdc.k();
-        if (frdc.g() && !e()) {
-            cuyq a7 = cuyq.a(getApplicationContext());
-            ((ejhf) a.h()).x("Add the account adding listener.");
+        ftwx.k();
+        if (ftwx.g() && !e()) {
+            cxhy a7 = cxhy.a(getApplicationContext());
+            ((eluo) a.h()).x("Add the account adding listener.");
             try {
-                bqna.b(getApplicationContext()).t(a7, new String[]{"com.google"});
+                bsup.b(getApplicationContext()).t(a7, new String[]{"com.google"});
             } catch (IllegalStateException e3) {
-                ((ejhf) ((ejhf) a.j()).s(e3)).x("Failed to add the account listener for Preliminary sync.");
+                ((eluo) ((eluo) a.j()).s(e3)).x("Failed to add the account listener for Preliminary sync.");
             }
         }
-        cuyj.a(getApplicationContext()).c();
-        if (frdc.h() && !e()) {
-            cvex.b(getApplicationContext(), new Runnable() { // from class: ctkv
+        cxhr.a(getApplicationContext()).c();
+        if (ftwx.h() && !e()) {
+            cxog.b(getApplicationContext(), new Runnable() { // from class: cvub
                 @Override // java.lang.Runnable
                 public final void run() {
-                    ((ejhf) PeopleModuleInitIntentOperation.a.h()).x("Set Provisioned timestamp");
-                    cuyj.a(PeopleModuleInitIntentOperation.this.getApplicationContext()).b(System.currentTimeMillis());
+                    ((eluo) PeopleModuleInitIntentOperation.a.h()).x("Set Provisioned timestamp");
+                    cxhr.a(PeopleModuleInitIntentOperation.this.getApplicationContext()).b(System.currentTimeMillis());
                 }
             });
         }
-        if (frfh.d()) {
-            frfh.a.a().g();
+        if (ftzc.d()) {
+            ftzc.a.lK().g();
         }
     }
 }

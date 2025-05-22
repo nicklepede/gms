@@ -7,20 +7,20 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import com.google.android.gms.R;
-import defpackage.djeo;
-import defpackage.djep;
-import defpackage.djhj;
-import defpackage.ehvl;
-import defpackage.ehvm;
+import defpackage.dlqh;
+import defpackage.dlqi;
+import defpackage.dltc;
+import defpackage.ekir;
+import defpackage.ekis;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class LineItemContainerView extends FrameLayout implements djeo {
+public class LineItemContainerView extends FrameLayout implements dlqh {
     public ArrayList a;
     public boolean b;
-    public ehvm c;
-    public djhj d;
+    public ekis c;
+    public dltc d;
     private LinearLayout e;
 
     public LineItemContainerView(Context context) {
@@ -28,20 +28,20 @@ public class LineItemContainerView extends FrameLayout implements djeo {
         c(context);
     }
 
-    @Override // defpackage.djeo
+    @Override // defpackage.dlqh
     public final /* bridge */ /* synthetic */ boolean b(Object obj) {
-        return ((ehvm) obj) != null;
+        return ((ekis) obj) != null;
     }
 
     protected final void c(Context context) {
         this.e = (LinearLayout) LayoutInflater.from(context).inflate(R.layout.wallet_view_line_item_container, (ViewGroup) this, true).findViewById(R.id.line_item_container_bundles);
     }
 
-    @Override // defpackage.djeo
+    @Override // defpackage.dlqh
     /* renamed from: d, reason: merged with bridge method [inline-methods] */
-    public final void a(ehvm ehvmVar) {
-        this.c = ehvmVar;
-        f(ehvmVar, this.b);
+    public final void a(ekis ekisVar) {
+        this.c = ekisVar;
+        f(ekisVar, this.b);
     }
 
     public final void e() {
@@ -54,17 +54,17 @@ public class LineItemContainerView extends FrameLayout implements djeo {
         }
     }
 
-    public final void f(ehvm ehvmVar, boolean z) {
-        ArrayList a = djep.a(getContext(), this.e, ehvmVar.c, LineItemBundleView.class);
+    public final void f(ekis ekisVar, boolean z) {
+        ArrayList a = dlqi.a(getContext(), this.e, ekisVar.c, LineItemBundleView.class);
         this.a = a;
         if (a != null) {
             int size = a.size();
             for (int i = 0; i < size; i++) {
                 LineItemBundleView lineItemBundleView = (LineItemBundleView) this.a.get(i);
                 lineItemBundleView.h = z;
-                ehvl ehvlVar = lineItemBundleView.g;
-                if (ehvlVar != null) {
-                    lineItemBundleView.g(ehvlVar, z);
+                ekir ekirVar = lineItemBundleView.g;
+                if (ekirVar != null) {
+                    lineItemBundleView.g(ekirVar, z);
                 }
             }
         }

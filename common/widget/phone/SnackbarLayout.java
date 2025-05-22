@@ -7,9 +7,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.asrs;
+import defpackage.auvm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SnackbarLayout extends LinearLayout {
     private final int a;
@@ -20,7 +20,7 @@ public class SnackbarLayout extends LinearLayout {
 
     public SnackbarLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, asrs.a, 0, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, auvm.a, 0, 0);
         this.a = obtainStyledAttributes.getInt(3, 0);
         this.b = obtainStyledAttributes.getInt(5, 0);
         this.c = obtainStyledAttributes.getInt(4, 0);
@@ -57,7 +57,7 @@ public class SnackbarLayout extends LinearLayout {
 
     public SnackbarLayout(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, asrs.a, i, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, auvm.a, i, 0);
         this.a = obtainStyledAttributes.getInt(3, 0);
         this.b = obtainStyledAttributes.getInt(5, 0);
         this.c = obtainStyledAttributes.getInt(4, 0);

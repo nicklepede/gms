@@ -3,16 +3,16 @@ package com.google.android.gms.games;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.games.internal.GamesAbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.bhja;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.bjnp;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class CurrentPlayerInfoEntity extends GamesAbstractSafeParcelable implements CurrentPlayerInfo {
-    public static final Parcelable.Creator CREATOR = new bhja();
+    public static final Parcelable.Creator CREATOR = new bjnp();
     public final int a;
 
     public CurrentPlayerInfoEntity(int i) {
@@ -37,19 +37,19 @@ public final class CurrentPlayerInfoEntity extends GamesAbstractSafeParcelable i
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("FriendsListVisibilityStatus", Integer.valueOf(this.a), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("FriendsListVisibilityStatus", Integer.valueOf(this.a), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

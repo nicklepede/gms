@@ -9,18 +9,18 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.semanticlocation.SemanticLocationEventRequest;
 import com.google.android.gms.semanticlocation.SemanticLocationState;
 import com.google.android.gms.semanticlocation.internal.SemanticLocationParameters;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dabp;
-import defpackage.dabq;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dclx;
+import defpackage.dcly;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class Subscription extends AbstractSafeParcelable implements ReflectedParcelable, dabq {
-    public static final Parcelable.Creator CREATOR = new dabp();
+public class Subscription extends AbstractSafeParcelable implements ReflectedParcelable, dcly {
+    public static final Parcelable.Creator CREATOR = new dclx();
     public final PendingIntent a;
     public final SemanticLocationParameters b;
     public final SemanticLocationEventRequest c;
@@ -39,27 +39,27 @@ public class Subscription extends AbstractSafeParcelable implements ReflectedPar
         this.g = j2;
     }
 
-    @Override // defpackage.dabq
+    @Override // defpackage.dcly
     public final long a() {
         return this.g;
     }
 
-    @Override // defpackage.dabq
+    @Override // defpackage.dcly
     public final SemanticLocationEventRequest b() {
         return this.c;
     }
 
-    @Override // defpackage.dabq
+    @Override // defpackage.dcly
     public final SemanticLocationState c() {
         return this.f;
     }
 
-    @Override // defpackage.dabq
+    @Override // defpackage.dcly
     public final SemanticLocationParameters d() {
         return this.b;
     }
 
-    @Override // defpackage.dabq
+    @Override // defpackage.dcly
     public final String e() {
         return this.e;
     }
@@ -72,17 +72,17 @@ public class Subscription extends AbstractSafeParcelable implements ReflectedPar
             return false;
         }
         Subscription subscription = (Subscription) obj;
-        return arwb.b(this.a, subscription.a) && arwb.b(this.b, subscription.b) && arwb.b(this.c, subscription.c) && arwb.b(this.e, subscription.e);
+        return atyq.b(this.a, subscription.a) && atyq.b(this.b, subscription.b) && atyq.b(this.c, subscription.c) && atyq.b(this.e, subscription.e);
     }
 
-    @Override // defpackage.dabq
+    @Override // defpackage.dcly
     public final boolean f() {
         return false;
     }
 
     public final boolean g(Account account, String str, String str2) {
         SemanticLocationParameters semanticLocationParameters = this.b;
-        return arwb.b(semanticLocationParameters.a, account) && arwb.b(semanticLocationParameters.b, str) && arwb.b(semanticLocationParameters.c, str2);
+        return atyq.b(semanticLocationParameters.a, account) && atyq.b(semanticLocationParameters.b, str) && atyq.b(semanticLocationParameters.c, str2);
     }
 
     public final int hashCode() {
@@ -91,23 +91,23 @@ public class Subscription extends AbstractSafeParcelable implements ReflectedPar
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("request", this.c, arrayList);
-        arwa.b("params", this.b, arrayList);
-        arwa.b("attributionTag", this.e, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("request", this.c, arrayList);
+        atyp.b("params", this.b, arrayList);
+        atyp.b("attributionTag", this.e, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         PendingIntent pendingIntent = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, pendingIntent, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.q(parcel, 4, this.d);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.q(parcel, 7, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, pendingIntent, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.q(parcel, 4, this.d);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.q(parcel, 7, this.g);
+        atzr.c(parcel, a);
     }
 }

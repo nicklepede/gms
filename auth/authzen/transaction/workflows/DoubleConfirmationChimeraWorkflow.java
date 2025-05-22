@@ -3,44 +3,44 @@ package com.google.android.gms.auth.authzen.transaction.workflows;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.chimera.modules.auth.authzen.phone.AppContextProvider;
-import defpackage.ffti;
-import defpackage.fftw;
-import defpackage.zvl;
-import defpackage.zwn;
-import defpackage.zwp;
-import defpackage.zwt;
-import defpackage.zwx;
-import defpackage.zxb;
+import defpackage.abvl;
+import defpackage.abwn;
+import defpackage.abwp;
+import defpackage.abwt;
+import defpackage.abwx;
+import defpackage.abxb;
+import defpackage.fiig;
+import defpackage.fiiu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class DoubleConfirmationChimeraWorkflow extends zvl {
+public class DoubleConfirmationChimeraWorkflow extends abvl {
     public static final /* synthetic */ int A = 0;
 
-    public static Intent u(fftw fftwVar, String str, byte[] bArr) {
-        Intent a = a(fftwVar, str, bArr);
+    public static Intent u(fiiu fiiuVar, String str, byte[] bArr) {
+        Intent a = a(fiiuVar, str, bArr);
         a.setClassName(AppContextProvider.a(), "com.google.android.gms.auth.authzen.transaction.workflows.DoubleConfirmationWorkflow");
         return a;
     }
 
-    @Override // defpackage.zvl, defpackage.zwm
-    public final boolean n(zwx zwxVar, int i) {
-        if (!super.n(zwxVar, i)) {
-            String y = zwxVar.y();
-            if (zwt.a.equals(y)) {
+    @Override // defpackage.abvl, defpackage.abwm
+    public final boolean n(abwx abwxVar, int i) {
+        if (!super.n(abwxVar, i)) {
+            String y = abwxVar.y();
+            if (abwt.a.equals(y)) {
                 if (i == 0) {
                     r(2, false);
                     Bundle bundle = this.j;
-                    zwp zwpVar = new zwp();
-                    zwpVar.setArguments(bundle);
-                    l(zwxVar, zwpVar);
+                    abwp abwpVar = new abwp();
+                    abwpVar.setArguments(bundle);
+                    l(abwxVar, abwpVar);
                 } else {
-                    t(ffti.APPROVE_ABORTED, 3);
-                    c(zwxVar);
+                    t(fiig.APPROVE_ABORTED, 3);
+                    c(abwxVar);
                 }
             } else {
-                if (!zwp.a.equals(y)) {
-                    if (!zwn.a.equals(y)) {
+                if (!abwp.a.equals(y)) {
+                    if (!abwn.a.equals(y)) {
                         throw new RuntimeException("Fragment not supported in double confirm workflow: ".concat(String.valueOf(y)));
                     }
                     setResult(-1);
@@ -48,11 +48,11 @@ public class DoubleConfirmationChimeraWorkflow extends zvl {
                     return true;
                 }
                 if (i == 0) {
-                    t(ffti.APPROVE_SELECTED, 2);
-                    f(this.j.getString(zxb.g));
+                    t(fiig.APPROVE_SELECTED, 2);
+                    f(this.j.getString(abxb.g));
                 } else {
-                    t(ffti.APPROVE_ABORTED, 3);
-                    k(this.j.getString(zxb.h));
+                    t(fiig.APPROVE_ABORTED, 3);
+                    k(this.j.getString(abxb.h));
                     setResult(-1);
                     finish();
                 }

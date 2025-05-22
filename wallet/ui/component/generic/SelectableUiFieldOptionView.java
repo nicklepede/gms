@@ -6,23 +6,23 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import com.google.android.gms.R;
-import defpackage.efwb;
+import defpackage.eije;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class SelectableUiFieldOptionView extends efwb {
+public class SelectableUiFieldOptionView extends eije {
     public TextView a;
 
     public SelectableUiFieldOptionView(Context context) {
         super(context);
     }
 
-    @Override // defpackage.efwa
+    @Override // defpackage.eijd
     public final CharSequence a() {
         return this.a.getText();
     }
 
-    @Override // defpackage.efwb, defpackage.efwa
+    @Override // defpackage.eije, defpackage.eijd
     public final void b(String str) {
         super.b(str);
         this.a.setTag(R.id.summary_expander_transition_name, str);

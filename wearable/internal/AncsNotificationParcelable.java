@@ -3,13 +3,13 @@ package com.google.android.gms.wearable.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dkgp;
+import defpackage.atzr;
+import defpackage.dmsi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class AncsNotificationParcelable extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dkgp();
+    public static final Parcelable.Creator CREATOR = new dmsi();
     public final int a;
     public final String b;
     public final String c;
@@ -80,24 +80,24 @@ public final class AncsNotificationParcelable extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, this.a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, this.a);
         String str = this.b;
-        arxc.v(parcel, 3, str, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.v(parcel, 7, this.f, false);
+        atzr.v(parcel, 3, str, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.v(parcel, 7, this.f, false);
         String str2 = this.l;
         if (str2 != null) {
             str = str2;
         }
-        arxc.v(parcel, 8, str, false);
-        arxc.h(parcel, 9, this.g);
-        arxc.h(parcel, 10, this.h);
-        arxc.h(parcel, 11, this.i);
-        arxc.h(parcel, 12, this.j);
-        arxc.v(parcel, 13, this.k, false);
-        arxc.c(parcel, a);
+        atzr.v(parcel, 8, str, false);
+        atzr.h(parcel, 9, this.g);
+        atzr.h(parcel, 10, this.h);
+        atzr.h(parcel, 11, this.i);
+        atzr.h(parcel, 12, this.j);
+        atzr.v(parcel, 13, this.k, false);
+        atzr.c(parcel, a);
     }
 }

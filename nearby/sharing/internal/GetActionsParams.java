@@ -6,19 +6,19 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.sharing.ShareTarget;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmvf;
-import defpackage.cmwz;
-import defpackage.cmxb;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpdn;
+import defpackage.cpfh;
+import defpackage.cpfj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class GetActionsParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cmvf();
+    public static final Parcelable.Creator CREATOR = new cpdn();
     public ShareTarget a;
-    public cmxb b;
+    public cpfj b;
 
     public GetActionsParams() {
     }
@@ -29,7 +29,7 @@ public final class GetActionsParams extends AbstractSafeParcelable {
         }
         if (obj instanceof GetActionsParams) {
             GetActionsParams getActionsParams = (GetActionsParams) obj;
-            if (arwb.b(this.a, getActionsParams.a) && arwb.b(this.b, getActionsParams.b)) {
+            if (atyq.b(this.a, getActionsParams.a) && atyq.b(this.b, getActionsParams.b)) {
                 return true;
             }
         }
@@ -42,21 +42,21 @@ public final class GetActionsParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.c(parcel, a);
     }
 
     public GetActionsParams(ShareTarget shareTarget, IBinder iBinder) {
-        cmxb cmwzVar;
+        cpfj cpfhVar;
         if (iBinder == null) {
-            cmwzVar = null;
+            cpfhVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IShareTargetActionListResultListener");
-            cmwzVar = queryLocalInterface instanceof cmxb ? (cmxb) queryLocalInterface : new cmwz(iBinder);
+            cpfhVar = queryLocalInterface instanceof cpfj ? (cpfj) queryLocalInterface : new cpfh(iBinder);
         }
         this.a = shareTarget;
-        this.b = cmwzVar;
+        this.b = cpfhVar;
     }
 }

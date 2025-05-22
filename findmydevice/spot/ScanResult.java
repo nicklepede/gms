@@ -3,17 +3,17 @@ package com.google.android.gms.findmydevice.spot;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bcwl;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bexx;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ScanResult extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bcwl();
+    public static final Parcelable.Creator CREATOR = new bexx();
     public final Set a;
     public byte[] b;
     public int c;
@@ -38,7 +38,7 @@ public final class ScanResult extends AbstractSafeParcelable {
         }
         if (obj instanceof ScanResult) {
             ScanResult scanResult = (ScanResult) obj;
-            if (Arrays.equals(this.b, scanResult.b) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(scanResult.c)) && arwb.b(this.d, scanResult.d) && arwb.b(Long.valueOf(this.e), Long.valueOf(scanResult.e))) {
+            if (Arrays.equals(this.b, scanResult.b) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(scanResult.c)) && atyq.b(this.d, scanResult.d) && atyq.b(Long.valueOf(this.e), Long.valueOf(scanResult.e))) {
                 return true;
             }
         }
@@ -52,20 +52,20 @@ public final class ScanResult extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(1)) {
-            arxc.i(parcel, 1, this.b, true);
+            atzr.i(parcel, 1, this.b, true);
         }
         if (set.contains(2)) {
-            arxc.o(parcel, 2, this.c);
+            atzr.o(parcel, 2, this.c);
         }
         if (set.contains(3)) {
-            arxc.v(parcel, 3, this.d, true);
+            atzr.v(parcel, 3, this.d, true);
         }
         if (set.contains(4)) {
-            arxc.q(parcel, 4, this.e);
+            atzr.q(parcel, 4, this.e);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public ScanResult() {

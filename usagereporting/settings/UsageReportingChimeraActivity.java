@@ -11,73 +11,73 @@ import com.google.android.gms.R;
 import com.google.android.gms.common.widget.phone.SwitchBar;
 import com.google.android.gms.usagereporting.UsageReportingOptInOptions;
 import com.google.android.gms.usagereporting.settings.UsageReportingChimeraActivity;
-import defpackage.aqxd;
-import defpackage.aqxo;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.assd;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.cwwi;
-import defpackage.dfae;
-import defpackage.dhqe;
-import defpackage.dhqf;
-import defpackage.dhqh;
-import defpackage.dhrq;
-import defpackage.dhsa;
-import defpackage.dhsi;
-import defpackage.dmoe;
-import defpackage.eijr;
-import defpackage.ejhf;
-import defpackage.fssf;
+import defpackage.aszs;
+import defpackage.atad;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.auvx;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.czgg;
+import defpackage.dhlk;
+import defpackage.dkbk;
+import defpackage.dkbl;
+import defpackage.dkbn;
+import defpackage.dkcw;
+import defpackage.dkdi;
+import defpackage.dkdq;
+import defpackage.dozs;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.fvnv;
 import defpackage.ig;
-import defpackage.qet;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class UsageReportingChimeraActivity extends qet implements View.OnClickListener, assd {
-    private static final asot j = asot.b("UsageReportingActivity", asej.USAGE_REPORTING);
+public class UsageReportingChimeraActivity extends rxx implements View.OnClickListener, auvx {
+    private static final ausn j = ausn.b("UsageReportingActivity", auid.USAGE_REPORTING);
     private SwitchBar k;
     private TextView l;
     private TextView m;
     private boolean n;
-    private dhqh o;
-    private bqqa p;
-    private aqxo q;
+    private dkbn o;
+    private bsxr p;
+    private atad q;
 
     private final View n(int i) {
         View findViewById = findViewById(i);
         if (findViewById != null) {
             return findViewById;
         }
-        ((ejhf) j.i()).z("Could not find view: id=%d", i);
+        ((eluo) j.i()).z("Could not find view: id=%d", i);
         return null;
     }
 
-    @Override // defpackage.assd
+    @Override // defpackage.auvx
     public final void a(boolean z) {
-        aseu aseuVar;
-        this.q.aN(new UsageReportingOptInOptions(true != z ? 2 : 1));
+        auio auioVar;
+        this.q.aM(new UsageReportingOptInOptions(true != z ? 2 : 1));
         if (z) {
-            aseuVar = aseu.USAGEREPORTING_CHECKBOX_OPT_IN;
+            auioVar = auio.USAGEREPORTING_CHECKBOX_OPT_IN;
         } else {
-            aqxd aqxdVar = cwwi.a;
-            new aqxo((Context) this, (short[]) null).ar();
-            aseuVar = aseu.USAGEREPORTING_CHECKBOX_OPT_OUT;
+            aszs aszsVar = czgg.a;
+            new atad((Context) this, (short[]) null).aq();
+            auioVar = auio.USAGEREPORTING_CHECKBOX_OPT_OUT;
         }
-        bqqa.a(aseuVar);
+        bsxr.a(auioVar);
     }
 
     public final void k() {
-        this.q.aL().x(new dfae() { // from class: dhsh
-            @Override // defpackage.dfae
-            public final void hr(dfaq dfaqVar) {
-                if (!dfaqVar.m() || dfaqVar.i() == null) {
+        this.q.aK().x(new dhlk() { // from class: dkdp
+            @Override // defpackage.dhlk
+            public final void hH(dhlw dhlwVar) {
+                if (!dhlwVar.m() || dhlwVar.i() == null) {
                     return;
                 }
-                UsageReportingChimeraActivity.this.l(((aqye) dfaqVar.i()).r());
+                UsageReportingChimeraActivity.this.l(((atat) dhlwVar.i()).q());
             }
         });
     }
@@ -90,7 +90,7 @@ public class UsageReportingChimeraActivity extends qet implements View.OnClickLi
     }
 
     protected final void m() {
-        startActivity(new Intent("android.intent.action.VIEW").setData(dmoe.a(this)));
+        startActivity(new Intent("android.intent.action.VIEW").setData(dozs.a(this)));
     }
 
     @Override // android.view.View.OnClickListener
@@ -98,24 +98,24 @@ public class UsageReportingChimeraActivity extends qet implements View.OnClickLi
         view.getClass();
         if (view == this.m) {
             m();
-            bqqa.a(aseu.USAGEREPORTING_ON_CLICK_LEARN_MORE);
+            bsxr.a(auio.USAGEREPORTING_ON_CLICK_LEARN_MORE);
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         String str;
         super.onCreate(bundle);
-        eijr eijrVar = bqqe.a;
-        this.p = new bqqa();
+        ekww ekwwVar = bsxv.a;
+        this.p = new bsxr();
         getApplicationContext();
-        dhsa.e();
-        this.n = !dhrq.g();
+        dkdi.e();
+        this.n = !dkcw.g();
         setContentView(R.layout.usage_reporting);
-        ig hy = hy();
-        hy.o(true);
-        if (asnd.r(this)) {
-            hy.M();
+        ig hO = hO();
+        hO.o(true);
+        if (auqx.r(this)) {
+            hO.M();
         }
         SwitchBar switchBar = (SwitchBar) n(R.id.switch_bar);
         this.k = switchBar;
@@ -125,7 +125,7 @@ public class UsageReportingChimeraActivity extends qet implements View.OnClickLi
                 this.k.a = this;
             }
         }
-        if (dhrq.d(this)) {
+        if (dkcw.d(this)) {
             TextView textView = (TextView) n(R.id.multi_user_info);
             if (textView != null) {
                 textView.setVisibility(0);
@@ -140,7 +140,7 @@ public class UsageReportingChimeraActivity extends qet implements View.OnClickLi
         TextView textView2 = (TextView) n(android.R.id.summary);
         this.l = textView2;
         if (textView2 != null) {
-            if (fssf.h()) {
+            if (fvnv.h()) {
                 str = getString(R.string.usage_reporting_dialog_message_dogfood) + "\n\n" + getString(R.string.usage_reporting_dialog_more_message) + "\n\n" + getString(R.string.usage_and_diagnostics_consent_message);
             } else {
                 str = getString(R.string.usage_reporting_dialog_message) + "\n\n" + getString(R.string.usage_reporting_dialog_more_message) + "\n\n" + getString(R.string.usage_and_diagnostics_consent_message);
@@ -152,18 +152,18 @@ public class UsageReportingChimeraActivity extends qet implements View.OnClickLi
         if (textView3 != null) {
             textView3.setOnClickListener(this);
         }
-        dhqe dhqeVar = new dhqe();
-        aqxd aqxdVar = dhqf.a;
-        this.q = new aqxo(this, dhqeVar);
+        dkbk dkbkVar = new dkbk();
+        aszs aszsVar = dkbl.a;
+        this.q = new atad(this, dkbkVar);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.usage_reporting_settings_menu, menu);
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() == R.id.settings_help) {
             m();
@@ -176,11 +176,11 @@ public class UsageReportingChimeraActivity extends qet implements View.OnClickLi
         return true;
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStart() {
         super.onStart();
         if (this.n) {
-            l(dhrq.e(this));
+            l(dkcw.e(this));
             SwitchBar switchBar = this.k;
             if (switchBar != null) {
                 switchBar.setEnabled(false);
@@ -192,17 +192,17 @@ public class UsageReportingChimeraActivity extends qet implements View.OnClickLi
         if (switchBar2 != null) {
             switchBar2.setEnabled(true);
         }
-        dhsi dhsiVar = new dhsi(this);
-        this.o = dhsiVar;
-        this.q.aO(dhsiVar);
+        dkdq dkdqVar = new dkdq(this);
+        this.o = dkdqVar;
+        this.q.aN(dkdqVar);
         k();
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStop() {
-        dhqh dhqhVar;
-        if (!this.n && (dhqhVar = this.o) != null) {
-            this.q.aR(dhqhVar);
+        dkbn dkbnVar;
+        if (!this.n && (dkbnVar = this.o) != null) {
+            this.q.aQ(dkbnVar);
         }
         super.onStop();
     }

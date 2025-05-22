@@ -2,12 +2,12 @@ package com.google.android.gms.ads.nonagon.util.concurrent;
 
 import com.google.android.gms.ads.nonagon.clearcut.k;
 import com.google.android.gms.ads.nonagon.clearcut.l;
-import defpackage.enrv;
+import defpackage.eqfo;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-final class l implements enrv {
+final class l implements eqfo {
     final /* synthetic */ g a;
     final /* synthetic */ m b;
 
@@ -16,7 +16,7 @@ final class l implements enrv {
         this.b = mVar;
     }
 
-    @Override // defpackage.enrv
+    @Override // defpackage.eqfo
     public final void a(Throwable th) {
         final g gVar = this.a;
         this.b.a.b.d(new com.google.android.gms.ads.nonagon.ad.event.b() { // from class: com.google.android.gms.ads.nonagon.util.event.b
@@ -32,7 +32,7 @@ final class l implements enrv {
         });
     }
 
-    @Override // defpackage.enrv
+    @Override // defpackage.eqfo
     public final void b(Object obj) {
         final g gVar = this.a;
         this.b.a.b.d(new com.google.android.gms.ads.nonagon.ad.event.b() { // from class: com.google.android.gms.ads.nonagon.util.event.c

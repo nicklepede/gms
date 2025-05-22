@@ -1,17 +1,17 @@
 package com.google.android.gms.gmscompliance.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bimp;
-import defpackage.biob;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.dnlf;
+import defpackage.bkre;
+import defpackage.bksq;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.dpvo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class GmsDeviceComplianceChimeraService extends bxgd {
-    private final biob a;
-    private final dnlf b;
+public class GmsDeviceComplianceChimeraService extends bzot {
+    private final bksq a;
+    private final dpvo b;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -21,8 +21,8 @@ public class GmsDeviceComplianceChimeraService extends bxgd {
     public GmsDeviceComplianceChimeraService() {
         /*
             r7 = this;
-            ejck r3 = defpackage.ejck.a
-            asnf r0 = defpackage.asng.a
+            elpp r3 = defpackage.elpp.a
+            auqz r0 = defpackage.aura.a
             r4 = 1
             r5 = 10
             r1 = 257(0x101, float:3.6E-43)
@@ -30,10 +30,10 @@ public class GmsDeviceComplianceChimeraService extends bxgd {
             r6 = r3
             r0 = r7
             r0.<init>(r1, r2, r3, r4, r5, r6)
-            dnlj r1 = new dnlj
+            dpvs r1 = new dpvs
             r1.<init>()
             r0.b = r1
-            biob r1 = new biob
+            bksq r1 = new bksq
             r1.<init>()
             r0.a = r1
             return
@@ -41,8 +41,8 @@ public class GmsDeviceComplianceChimeraService extends bxgd {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.gmscompliance.service.GmsDeviceComplianceChimeraService.<init>():void");
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new bimp(this, l(), this.a, this.b, getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new bkre(this, l(), this.a, this.b, getServiceRequest.f, getServiceRequest.p));
     }
 }

@@ -3,15 +3,15 @@ package com.google.android.gms.people.protomodel;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cugj;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cwpq;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class NameEntity extends AbstractSafeParcelable implements Name {
-    public static final Parcelable.Creator CREATOR = new cugj();
+    public static final Parcelable.Creator CREATOR = new cwpq();
     public final PersonFieldMetadataEntity a;
     public final String b;
     public final String c;
@@ -63,7 +63,7 @@ public class NameEntity extends AbstractSafeParcelable implements Name {
             return true;
         }
         Name name = (Name) obj;
-        return arwb.b(a(), name.a()) && arwb.b(b(), name.b()) && arwb.b(g(), name.g()) && arwb.b(e(), name.e()) && arwb.b(c(), name.c()) && arwb.b(f(), name.f()) && arwb.b(d(), name.d());
+        return atyq.b(a(), name.a()) && atyq.b(b(), name.b()) && atyq.b(g(), name.g()) && atyq.b(e(), name.e()) && atyq.b(c(), name.c()) && atyq.b(f(), name.f()) && atyq.b(d(), name.d());
     }
 
     @Override // com.google.android.gms.people.protomodel.Name
@@ -83,15 +83,15 @@ public class NameEntity extends AbstractSafeParcelable implements Name {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         PersonFieldMetadataEntity personFieldMetadataEntity = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, personFieldMetadataEntity, i, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.g, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.v(parcel, 17, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, personFieldMetadataEntity, i, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.g, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.v(parcel, 17, this.c, false);
+        atzr.c(parcel, a);
     }
 
     public NameEntity(PersonFieldMetadataEntity personFieldMetadataEntity, String str, String str2, String str3, String str4, String str5, String str6) {
@@ -104,7 +104,7 @@ public class NameEntity extends AbstractSafeParcelable implements Name {
         this.g = str6;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

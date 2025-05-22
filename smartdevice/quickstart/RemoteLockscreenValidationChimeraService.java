@@ -4,17 +4,17 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.arxo;
-import defpackage.ddwh;
-import defpackage.ddwj;
-import defpackage.denq;
+import defpackage.auad;
+import defpackage.dghl;
+import defpackage.dghn;
+import defpackage.dgyt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class RemoteLockscreenValidationChimeraService extends Service {
-    private static final arxo b = new denq(new String[]{"RemoteLockscreenValidationChimeraService"});
-    public ddwj a;
-    private ddwh c;
+    private static final auad b = new dgyt(new String[]{"RemoteLockscreenValidationChimeraService"});
+    public dghn a;
+    private dghl c;
 
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
@@ -29,7 +29,7 @@ public class RemoteLockscreenValidationChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        this.c = new ddwh(this);
+        this.c = new dghl(this);
     }
 
     @Override // com.google.android.chimera.Service

@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 import javax.net.ssl.SSLException;
 import javax.net.ssl.SSLSession;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OkHostnameVerifier implements ConscryptHostnameVerifier {
     private static final int ALT_DNS_NAME = 2;

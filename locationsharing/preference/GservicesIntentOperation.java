@@ -3,15 +3,15 @@ package com.google.android.gms.locationsharing.preference;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aseu;
-import defpackage.asng;
-import defpackage.aspr;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.eijr;
-import defpackage.fpwa;
+import defpackage.auio;
+import defpackage.aura;
+import defpackage.autl;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.ekww;
+import defpackage.fspt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class GservicesIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
@@ -19,17 +19,17 @@ public class GservicesIntentOperation extends IntentOperation {
         if ("com.google.gservices.intent.action.GSERVICES_CHANGED".equals(intent.getAction())) {
             Context baseContext = getBaseContext();
             boolean z = false;
-            if (aspr.c(baseContext) && fpwa.a.a().m()) {
+            if (autl.c(baseContext) && fspt.a.lK().m()) {
                 z = true;
             }
             String str = LocationSharingSettingInjectorChimeraService.a;
-            asng.H(baseContext, "com.google.android.gms.locationsharing.service.LocationSharingSettingInjectorService", z);
+            aura.H(baseContext, "com.google.android.gms.locationsharing.service.LocationSharingSettingInjectorService", z);
             if (z) {
                 if (LocationSharingSettingInjectorChimeraService.g == null) {
-                    eijr eijrVar = bqqe.a;
-                    LocationSharingSettingInjectorChimeraService.g = new bqqa();
+                    ekww ekwwVar = bsxv.a;
+                    LocationSharingSettingInjectorChimeraService.g = new bsxr();
                 }
-                bqqa.a(aseu.LOCATION_SHARING_SETTINGS_VIEW_SHARING_STATUS);
+                bsxr.a(auio.LOCATION_SHARING_SETTINGS_VIEW_SHARING_STATUS);
             }
         }
     }

@@ -12,43 +12,43 @@ import android.widget.ListView;
 import com.google.android.gms.R;
 import com.google.android.gms.googlehelp.common.HelpConfig;
 import com.google.android.material.appbar.MaterialToolbar;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bafe;
-import defpackage.bagy;
-import defpackage.bagz;
-import defpackage.bakp;
-import defpackage.balz;
-import defpackage.bama;
-import defpackage.baol;
-import defpackage.baqd;
-import defpackage.baqe;
-import defpackage.baqj;
-import defpackage.baqk;
-import defpackage.bivs;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bcja;
+import defpackage.bcku;
+import defpackage.bckv;
+import defpackage.bcol;
+import defpackage.bcpv;
+import defpackage.bcpw;
+import defpackage.bcsh;
+import defpackage.bctz;
+import defpackage.bcua;
+import defpackage.bcuf;
+import defpackage.bcug;
+import defpackage.blah;
 import defpackage.bp;
-import defpackage.dozi;
-import defpackage.dxry;
-import defpackage.dxsa;
-import defpackage.eble;
-import defpackage.fnpd;
-import defpackage.fnvj;
-import defpackage.fnvm;
-import defpackage.qet;
+import defpackage.drjr;
+import defpackage.eadz;
+import defpackage.eaeb;
+import defpackage.edxt;
+import defpackage.fqhm;
+import defpackage.fqns;
+import defpackage.fqnv;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class PreviewChimeraActivity extends qet implements AdapterView.OnItemClickListener, balz, baqd, baqj {
+public class PreviewChimeraActivity extends rxx implements AdapterView.OnItemClickListener, bcpv, bctz, bcuf {
     public HelpConfig j;
-    public bagz k;
+    public bckv k;
 
     static {
-        asot.b("PreviewActivity", asej.FEEDBACK);
+        ausn.b("PreviewActivity", auid.FEEDBACK);
     }
 
     private final void l(ErrorReport errorReport) {
         try {
-            this.k = new bagz(this, errorReport);
+            this.k = new bckv(this, errorReport);
             ListView listView = (ListView) findViewById(R.id.list);
             listView.setAdapter((ListAdapter) this.k);
             listView.setOnItemClickListener(this);
@@ -63,9 +63,9 @@ public class PreviewChimeraActivity extends qet implements AdapterView.OnItemCli
         }
     }
 
-    @Override // defpackage.balz
-    public final void J(bakp bakpVar) {
-        ErrorReport b = baol.b();
+    @Override // defpackage.bcpv
+    public final void J(bcol bcolVar) {
+        ErrorReport b = bcsh.b();
         if (b == null) {
             return;
         }
@@ -73,49 +73,49 @@ public class PreviewChimeraActivity extends qet implements AdapterView.OnItemCli
         l(b);
     }
 
-    @Override // defpackage.baqd
+    @Override // defpackage.bctz
     public final void a() {
         finish();
     }
 
-    @Override // defpackage.baqj
+    @Override // defpackage.bcuf
     public final void k() {
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (fnpd.c() && getPackageManager().hasSystemFeature("android.software.communal_mode")) {
+        if (fqhm.c() && getPackageManager().hasSystemFeature("android.software.communal_mode")) {
             getWindow().addFlags(524416);
         }
         Intent intent = getIntent();
         String stringExtra = intent.getStringExtra("page_name");
         if (stringExtra != null) {
-            ErrorReport b = baol.b();
+            ErrorReport b = bcsh.b();
             if (b == null) {
                 finish();
                 return;
             }
-            if (fnvm.c()) {
-                bivs.b(this, b, R.style.Feedback_Activity_Theme_Light_GM3Expressive, R.style.Feedback_Activity_Theme_Dark_GM3Expressive, R.style.Feedback_Activity_Theme_DayNight_GM3Expressive);
-                int i = eble.a;
+            if (fqnv.c()) {
+                blah.b(this, b, R.style.Feedback_Activity_Theme_Light_GM3Expressive, R.style.Feedback_Activity_Theme_Dark_GM3Expressive, R.style.Feedback_Activity_Theme_DayNight_GM3Expressive);
+                int i = edxt.a;
             } else {
-                bivs.b(this, b, R.style.Feedback_Activity_Theme_Light, R.style.Feedback_Activity_Theme_Dark, R.style.Feedback_Activity_Theme_DayNight);
+                blah.b(this, b, R.style.Feedback_Activity_Theme_Light, R.style.Feedback_Activity_Theme_Dark, R.style.Feedback_Activity_Theme_DayNight);
             }
             FrameLayout frameLayout = new FrameLayout(this);
             frameLayout.setId(R.id.frag_container_preview_activity);
-            if (fnvm.c()) {
-                frameLayout.setBackgroundColor(dozi.b(R.dimen.gm3_sys_elevation_level2, this));
+            if (fqnv.c()) {
+                frameLayout.setBackgroundColor(drjr.b(R.dimen.gm3_sys_elevation_level2, this));
             }
             frameLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-            if (fnvj.a.a().f()) {
-                dxsa.a(frameLayout, dxry.c);
+            if (fqns.a.lK().f()) {
+                eaeb.a(frameLayout, eadz.c);
             }
             setContentView(frameLayout);
             if (stringExtra.equals("page_system_info")) {
                 bp bpVar = new bp(getSupportFragmentManager());
-                bpVar.z(R.id.frag_container_preview_activity, new baqe(), "SystemInformationFragment");
+                bpVar.z(R.id.frag_container_preview_activity, new bcua(), "SystemInformationFragment");
                 bpVar.a();
                 return;
             } else {
@@ -123,26 +123,26 @@ public class PreviewChimeraActivity extends qet implements AdapterView.OnItemCli
                     throw new IllegalStateException("Can't handle page ".concat(stringExtra));
                 }
                 bp bpVar2 = new bp(getSupportFragmentManager());
-                bpVar2.z(R.id.frag_container_preview_activity, new baqk(), "SystemInformationFragment");
+                bpVar2.z(R.id.frag_container_preview_activity, new bcug(), "SystemInformationFragment");
                 bpVar2.a();
                 return;
             }
         }
         if (!intent.hasExtra("EXTRA_HELP_CONFIG") && (bundle == null || bundle.getParcelable("EXTRA_HELP_CONFIG") == null)) {
-            ErrorReport b2 = baol.b();
+            ErrorReport b2 = bcsh.b();
             if (b2 == null) {
                 finish();
                 return;
             }
-            if (fnvm.c()) {
-                bivs.b(this, b2, R.style.Feedback_Activity_Dialog_Theme_GM3Expressive, R.style.Feedback_Activity_Dialog_Theme_Dark_GM3Expressive, R.style.Feedback_Activity_Dialog_Theme_DayNight_GM3Expressive);
+            if (fqnv.c()) {
+                blah.b(this, b2, R.style.Feedback_Activity_Dialog_Theme_GM3Expressive, R.style.Feedback_Activity_Dialog_Theme_Dark_GM3Expressive, R.style.Feedback_Activity_Dialog_Theme_DayNight_GM3Expressive);
             } else {
-                bivs.b(this, b2, R.style.Feedback_Activity_Dialog_Theme, R.style.Feedback_Activity_Dialog_Theme_Dark, R.style.Feedback_Activity_Dialog_Theme_DayNight);
+                blah.b(this, b2, R.style.Feedback_Activity_Dialog_Theme, R.style.Feedback_Activity_Dialog_Theme_Dark, R.style.Feedback_Activity_Dialog_Theme_DayNight);
             }
             setContentView(R.layout.show_list_activity);
             ((MaterialToolbar) findViewById(R.id.toolbar_preview_activity)).A(R.string.gf_preview_feedback);
-            bama.b(this);
-            baol.c();
+            bcpw.b(this);
+            bcsh.c();
             m();
             l(b2);
             return;
@@ -152,10 +152,10 @@ public class PreviewChimeraActivity extends qet implements AdapterView.OnItemCli
             throw new IllegalStateException("No HelpConfig provided!");
         }
         this.j = e;
-        if (fnvm.c()) {
-            bivs.c(this, e, R.style.Feedback_Activity_Dialog_Theme_GM3Expressive, R.style.Feedback_Activity_Dialog_Theme_Dark_GM3Expressive, R.style.Feedback_Activity_Dialog_Theme_DayNight_GM3Expressive);
+        if (fqnv.c()) {
+            blah.c(this, e, R.style.Feedback_Activity_Dialog_Theme_GM3Expressive, R.style.Feedback_Activity_Dialog_Theme_Dark_GM3Expressive, R.style.Feedback_Activity_Dialog_Theme_DayNight_GM3Expressive);
         } else {
-            bivs.c(this, e, R.style.Feedback_Activity_Dialog_Theme, R.style.Feedback_Activity_Dialog_Theme_Dark, R.style.Feedback_Activity_Dialog_Theme_DayNight);
+            blah.c(this, e, R.style.Feedback_Activity_Dialog_Theme, R.style.Feedback_Activity_Dialog_Theme_Dark, R.style.Feedback_Activity_Dialog_Theme_DayNight);
         }
         setContentView(R.layout.gf_preview_activity);
         MaterialToolbar materialToolbar = (MaterialToolbar) findViewById(R.id.toolbar_preview_activity);
@@ -164,29 +164,29 @@ public class PreviewChimeraActivity extends qet implements AdapterView.OnItemCli
         }
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.gf_account_and_system_info_viewer);
         recyclerView.aj(new LinearLayoutManager());
-        recyclerView.ah(new bafe(this));
+        recyclerView.ah(new bcja(this));
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
-        bama.d(this);
+        bcpw.d(this);
     }
 
     @Override // android.widget.AdapterView.OnItemClickListener
     public final void onItemClick(AdapterView adapterView, View view, int i, long j) {
-        bagz bagzVar = this.k;
-        if (bagzVar != null) {
-            bagy bagyVar = (bagy) bagzVar.a.get(i);
-            if (bagyVar.a()) {
+        bckv bckvVar = this.k;
+        if (bckvVar != null) {
+            bcku bckuVar = (bcku) bckvVar.a.get(i);
+            if (bckuVar.a()) {
                 Intent intent = new Intent();
-                PreviewChimeraActivity previewChimeraActivity = bagzVar.b;
-                Intent className = intent.setClassName(previewChimeraActivity, bagyVar.c);
-                className.putExtra("feedback.FIELD_NAME", bagyVar.a);
-                String str = bagyVar.f;
+                PreviewChimeraActivity previewChimeraActivity = bckvVar.b;
+                Intent className = intent.setClassName(previewChimeraActivity, bckuVar.c);
+                className.putExtra("feedback.FIELD_NAME", bckuVar.a);
+                String str = bckuVar.f;
                 className.putExtra("feedback.FIELD_VALUE", str);
                 if (str.equals("product specific binary file path") || str.equals("service dump")) {
-                    className.putExtra("feedback.OBJECT_VALUE", bagyVar.e.toString());
+                    className.putExtra("feedback.OBJECT_VALUE", bckuVar.e.toString());
                 }
                 className.putExtra("extra_theme_dialog", true);
                 previewChimeraActivity.startActivity(className);
@@ -194,7 +194,7 @@ public class PreviewChimeraActivity extends qet implements AdapterView.OnItemCli
         }
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         HelpConfig helpConfig = this.j;

@@ -3,17 +3,17 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bbrz;
-import defpackage.eite;
-import defpackage.eitj;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bdvq;
+import defpackage.elgj;
+import defpackage.elgo;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class AuthenticationExtensions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bbrz();
+    public static final Parcelable.Creator CREATOR = new bdvq();
     public final FidoAppIdExtension a;
     public final CableAuthenticationExtension b;
     public final UserVerificationMethodExtension c;
@@ -75,46 +75,46 @@ public class AuthenticationExtensions extends AbstractSafeParcelable {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.fido.fido2.api.common.AuthenticationExtensions.a(org.json.JSONObject):com.google.android.gms.fido.fido2.api.common.AuthenticationExtensions");
     }
 
-    public final eitj b() {
-        int i = eitj.d;
-        eite eiteVar = new eite();
+    public final elgo b() {
+        int i = elgo.d;
+        elgj elgjVar = new elgj();
         if (this.a != null) {
-            eiteVar.i("fidoAppIdExtension");
+            elgjVar.i("fidoAppIdExtension");
         }
         if (this.c != null) {
-            eiteVar.i("userVerificationMethodExtension");
+            elgjVar.i("userVerificationMethodExtension");
         }
         if (this.b != null) {
-            eiteVar.i("cableAuthenticationExtension");
+            elgjVar.i("cableAuthenticationExtension");
         }
         if (this.d != null) {
-            eiteVar.i("google_multiAssertionExtension");
+            elgjVar.i("google_multiAssertionExtension");
         }
         if (this.e != null) {
-            eiteVar.i("google_sessionIdExtension");
+            elgjVar.i("google_sessionIdExtension");
         }
         if (this.f != null) {
-            eiteVar.i("google_silentVerificationExtension");
+            elgjVar.i("google_silentVerificationExtension");
         }
         if (this.g != null) {
-            eiteVar.i("devicePublicKeyExtension");
+            elgjVar.i("devicePublicKeyExtension");
         }
         if (this.h != null) {
-            eiteVar.i("google_tunnelServerIdExtension");
+            elgjVar.i("google_tunnelServerIdExtension");
         }
         if (this.i != null) {
-            eiteVar.i("google_thirdPartyPaymentExtension");
+            elgjVar.i("google_thirdPartyPaymentExtension");
         }
         if (this.j != null) {
-            eiteVar.i("prfAlreadyHashed");
+            elgjVar.i("prfAlreadyHashed");
         }
         if (this.k != null) {
-            eiteVar.i("txAuthSimple");
+            elgjVar.i("txAuthSimple");
         }
         if (this.m != null) {
-            eiteVar.i("payment");
+            elgjVar.i("payment");
         }
-        return eiteVar.g();
+        return elgjVar.g();
     }
 
     public final boolean equals(Object obj) {
@@ -122,7 +122,7 @@ public class AuthenticationExtensions extends AbstractSafeParcelable {
             return false;
         }
         AuthenticationExtensions authenticationExtensions = (AuthenticationExtensions) obj;
-        return arwb.b(this.a, authenticationExtensions.a) && arwb.b(this.b, authenticationExtensions.b) && arwb.b(this.c, authenticationExtensions.c) && arwb.b(this.d, authenticationExtensions.d) && arwb.b(this.e, authenticationExtensions.e) && arwb.b(this.f, authenticationExtensions.f) && arwb.b(this.g, authenticationExtensions.g) && arwb.b(this.h, authenticationExtensions.h) && arwb.b(this.i, authenticationExtensions.i) && arwb.b(this.j, authenticationExtensions.j) && arwb.b(this.k, authenticationExtensions.k) && arwb.b(this.l, authenticationExtensions.l) && arwb.b(this.m, authenticationExtensions.m);
+        return atyq.b(this.a, authenticationExtensions.a) && atyq.b(this.b, authenticationExtensions.b) && atyq.b(this.c, authenticationExtensions.c) && atyq.b(this.d, authenticationExtensions.d) && atyq.b(this.e, authenticationExtensions.e) && atyq.b(this.f, authenticationExtensions.f) && atyq.b(this.g, authenticationExtensions.g) && atyq.b(this.h, authenticationExtensions.h) && atyq.b(this.i, authenticationExtensions.i) && atyq.b(this.j, authenticationExtensions.j) && atyq.b(this.k, authenticationExtensions.k) && atyq.b(this.l, authenticationExtensions.l) && atyq.b(this.m, authenticationExtensions.m);
     }
 
     public final int hashCode() {
@@ -147,20 +147,20 @@ public class AuthenticationExtensions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         FidoAppIdExtension fidoAppIdExtension = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, fidoAppIdExtension, i, false);
-        arxc.t(parcel, 3, this.b, i, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.t(parcel, 7, this.f, i, false);
-        arxc.t(parcel, 8, this.g, i, false);
-        arxc.t(parcel, 9, this.h, i, false);
-        arxc.t(parcel, 10, this.i, i, false);
-        arxc.t(parcel, 11, this.j, i, false);
-        arxc.t(parcel, 12, this.k, i, false);
-        arxc.t(parcel, 13, this.l, i, false);
-        arxc.t(parcel, 14, this.m, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, fidoAppIdExtension, i, false);
+        atzr.t(parcel, 3, this.b, i, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.t(parcel, 7, this.f, i, false);
+        atzr.t(parcel, 8, this.g, i, false);
+        atzr.t(parcel, 9, this.h, i, false);
+        atzr.t(parcel, 10, this.i, i, false);
+        atzr.t(parcel, 11, this.j, i, false);
+        atzr.t(parcel, 12, this.k, i, false);
+        atzr.t(parcel, 13, this.l, i, false);
+        atzr.t(parcel, 14, this.m, i, false);
+        atzr.c(parcel, a);
     }
 }

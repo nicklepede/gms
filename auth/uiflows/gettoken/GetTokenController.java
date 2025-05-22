@@ -28,84 +28,84 @@ import com.google.android.gms.auth.uiflows.consent.GrantCredentialsWithAclChimer
 import com.google.android.gms.auth.uiflows.controller.Controller;
 import com.google.android.gms.auth.uiflows.minutemaid.MinuteMaidChimeraActivity;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.aant;
-import defpackage.abau;
-import defpackage.adjb;
-import defpackage.adjd;
-import defpackage.adjh;
-import defpackage.adle;
-import defpackage.adli;
-import defpackage.adlk;
-import defpackage.adoq;
-import defpackage.arka;
-import defpackage.arke;
-import defpackage.arwm;
-import defpackage.dvni;
-import defpackage.fkkz;
-import defpackage.fwac;
-import defpackage.unw;
-import defpackage.vah;
-import defpackage.vba;
-import defpackage.vfv;
-import defpackage.vjt;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.acnt;
+import defpackage.adau;
+import defpackage.afji;
+import defpackage.afjk;
+import defpackage.afjo;
+import defpackage.afll;
+import defpackage.aflp;
+import defpackage.aflr;
+import defpackage.afox;
+import defpackage.atmp;
+import defpackage.atmt;
+import defpackage.atzb;
+import defpackage.dxyi;
+import defpackage.fnbo;
+import defpackage.fywe;
+import defpackage.wjv;
+import defpackage.wwh;
+import defpackage.wxa;
+import defpackage.xbw;
+import defpackage.xfu;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GetTokenController implements Controller {
-    public static final Parcelable.Creator CREATOR = new adlk();
+    public static final Parcelable.Creator CREATOR = new aflr();
     private final Context a;
-    private final aant b;
-    private final vah c;
+    private final acnt b;
+    private final wwh c;
     private final AccountAuthenticatorResponse d;
     private final Account e;
     private final TokenRequest f;
     private final boolean g;
     private final boolean h;
-    private final arke i;
+    private final atmt i;
     private int j;
 
-    public GetTokenController(AccountAuthenticatorResponse accountAuthenticatorResponse, TokenRequest tokenRequest, boolean z, boolean z2, arke arkeVar, int i) {
+    public GetTokenController(AccountAuthenticatorResponse accountAuthenticatorResponse, TokenRequest tokenRequest, boolean z, boolean z2, atmt atmtVar, int i) {
         Context a = AppContextProvider.a();
-        aant aantVar = new aant(AppContextProvider.a());
+        acnt acntVar = new acnt(AppContextProvider.a());
         AppContextProvider.a().getPackageManager();
-        vah vahVar = (vah) vah.a.b();
+        wwh wwhVar = (wwh) wwh.a.b();
         this.a = a;
-        this.b = aantVar;
-        this.c = vahVar;
+        this.b = acntVar;
+        this.c = wwhVar;
         this.d = accountAuthenticatorResponse;
-        arwm.s(tokenRequest);
+        atzb.s(tokenRequest);
         this.f = tokenRequest;
         this.e = tokenRequest.a();
         this.g = z;
         this.h = z2;
-        this.i = arkeVar;
+        this.i = atmtVar;
         this.j = i;
     }
 
-    private final Intent c(aanp aanpVar, abau abauVar) {
-        boolean booleanValue = ((Boolean) aanpVar.b(GetTokenChimeraActivity.i, false)).booleanValue();
+    private final Intent c(acnp acnpVar, adau adauVar) {
+        boolean booleanValue = ((Boolean) acnpVar.b(GetTokenChimeraActivity.i, false)).booleanValue();
         Context context = this.a;
         boolean z = this.h;
-        return arka.c(context, this.e, false, z, this.i.a(), false, null, true, abauVar.ak, booleanValue, 1, Bundle.EMPTY, false);
+        return atmp.c(context, this.e, false, z, this.i.a(), false, null, true, adauVar.ak, booleanValue, 1, Bundle.EMPTY, false);
     }
 
-    private final adle d(int i, String str) {
+    private final afll d(int i, String str) {
         Intent putExtra = new Intent().putExtra("errorCode", i).putExtra("errorMessage", str);
         AccountAuthenticatorResponse accountAuthenticatorResponse = this.d;
         if (accountAuthenticatorResponse != null) {
             accountAuthenticatorResponse.onError(i, str);
         }
-        return new adle(0, null, 0, putExtra, -1, -1);
+        return new afll(0, null, 0, putExtra, -1, -1);
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller
-    public final adle a(adli adliVar) {
+    public final afll a(aflp aflpVar) {
         String str;
         String str2;
         boolean z;
@@ -119,27 +119,27 @@ public class GetTokenController implements Controller {
         boolean z9;
         boolean z10;
         boolean z11;
-        if (adliVar == null) {
+        if (aflpVar == null) {
             if (this.b.a()) {
-                return new adle(10, GetTokenChimeraActivity.j(this.a, this.f, this.g, this.h, this.i), 0, null, -1, -1);
+                return new afll(10, GetTokenChimeraActivity.j(this.a, this.f, this.g, this.h, this.i), 0, null, -1, -1);
             }
             Context context = this.a;
-            return new adle(1001, adjh.c.a(context, new adjd(this.h, false, 0, context.getString(R.string.common_no_network), context.getString(R.string.auth_error_no_network), this.i)), 0, null, -1, -1);
+            return new afll(1001, afjo.c.a(context, new afjk(this.h, false, 0, context.getString(R.string.common_no_network), context.getString(R.string.auth_error_no_network), this.i)), 0, null, -1, -1);
         }
-        Intent intent = adliVar.c;
-        new aanp(intent != null ? intent.getExtras() : new Bundle());
-        int i = adliVar.a;
+        Intent intent = aflpVar.c;
+        new acnp(intent != null ? intent.getExtras() : new Bundle());
+        int i = aflpVar.a;
         if (i == 10) {
-            int i2 = adliVar.b;
+            int i2 = aflpVar.b;
             if (i2 == -1) {
-                aanp aanpVar = new aanp(intent.getExtras());
-                TokenResponse tokenResponse = (TokenResponse) aanpVar.a(GetTokenChimeraActivity.h);
+                acnp acnpVar = new acnp(intent.getExtras());
+                TokenResponse tokenResponse = (TokenResponse) acnpVar.a(GetTokenChimeraActivity.h);
                 if (tokenResponse == null) {
                     Log.w("Auth", String.format(Locale.US, "[GetToken, GetTokenController] Unable to get token", new Object[0]));
                     return d(5, "token response is null");
                 }
-                abau a = tokenResponse.a();
-                if (a == abau.SUCCESS && !TextUtils.isEmpty(tokenResponse.d)) {
+                adau a = tokenResponse.a();
+                if (a == adau.SUCCESS && !TextUtils.isEmpty(tokenResponse.d)) {
                     Account account = this.e;
                     if (!account.equals(tokenResponse.u)) {
                         Log.w("Auth", String.format(Locale.US, "[GetToken, GetTokenController] Account in TokenResponse does not match! Expected %s but got %s.", account, tokenResponse.u));
@@ -149,50 +149,50 @@ public class GetTokenController implements Controller {
                     if (accountAuthenticatorResponse != null) {
                         accountAuthenticatorResponse.onResult(putExtra.getExtras());
                     }
-                    return new adle(0, null, -1, putExtra, -1, -1);
+                    return new afll(0, null, -1, putExtra, -1, -1);
                 }
                 int ordinal = a.ordinal();
                 if (ordinal != 8) {
                     if (ordinal != 22) {
                         if (ordinal != 23) {
                             switch (ordinal) {
-                                case fwac.D /* 30 */:
-                                case fwac.E /* 31 */:
+                                case fywe.D /* 30 */:
+                                case fywe.E /* 31 */:
                                 case 32:
-                                case fwac.G /* 33 */:
-                                case fwac.H /* 34 */:
-                                case fwac.I /* 35 */:
-                                case fwac.J /* 36 */:
-                                case fwac.L /* 38 */:
-                                case fwac.M /* 39 */:
+                                case fywe.G /* 33 */:
+                                case fywe.H /* 34 */:
+                                case fywe.I /* 35 */:
+                                case fywe.J /* 36 */:
+                                case fywe.L /* 38 */:
+                                case fywe.M /* 39 */:
                                     if (this.j < 32) {
-                                        Intent c = c(aanpVar, a);
+                                        Intent c = c(acnpVar, a);
                                         if (c != null) {
-                                            return new adle(32, WrapperControlledChimeraActivity.b(this.a, this.h, this.i, c), 0, null, -1, -1);
+                                            return new afll(32, WrapperControlledChimeraActivity.b(this.a, this.h, this.i, c), 0, null, -1, -1);
                                         }
                                         Log.w("Auth", String.format(Locale.US, "[GetToken, GetTokenController] Can't install device management app, status=%s", a.ak));
                                         return d(6, "device management not supported");
                                     }
                                     break;
-                                case fwac.K /* 37 */:
-                                    dvni dvniVar = vfv.a;
-                                    if (fkkz.a.a().F()) {
+                                case fywe.K /* 37 */:
+                                    dxyi dxyiVar = xbw.a;
+                                    if (fnbo.a.lK().E()) {
                                         Context context2 = this.a;
                                         Account account2 = this.e;
                                         boolean z12 = this.h;
-                                        arke arkeVar = this.i;
-                                        aano aanoVar = DmSetScreenlockChimeraActivity.h;
+                                        atmt atmtVar = this.i;
+                                        acno acnoVar = DmSetScreenlockChimeraActivity.h;
                                         Intent className = new Intent().setClassName(context2, "com.google.android.gms.auth.uiflows.addaccount.DmSetScreenlockActivity");
-                                        aanp aanpVar2 = new aanp();
-                                        aanpVar2.d(DmSetScreenlockChimeraActivity.h, account2);
-                                        aanpVar2.d(adjb.b, Boolean.valueOf(z12));
-                                        aanpVar2.d(adjb.a, arkeVar.a());
-                                        return new adle(33, className.putExtras(aanpVar2.a), 0, null, -1, -1);
+                                        acnp acnpVar2 = new acnp();
+                                        acnpVar2.d(DmSetScreenlockChimeraActivity.h, account2);
+                                        acnpVar2.d(afji.b, Boolean.valueOf(z12));
+                                        acnpVar2.d(afji.a, atmtVar.a());
+                                        return new afll(33, className.putExtras(acnpVar2.a), 0, null, -1, -1);
                                     }
                                     if (this.j < 32) {
-                                        Intent c2 = c(aanpVar, a);
+                                        Intent c2 = c(acnpVar, a);
                                         if (c2 != null) {
-                                            return new adle(32, WrapperControlledChimeraActivity.b(this.a, this.h, this.i, c2), 0, null, -1, -1);
+                                            return new afll(32, WrapperControlledChimeraActivity.b(this.a, this.h, this.i, c2), 0, null, -1, -1);
                                         }
                                         Log.w("Auth", String.format(Locale.US, "[GetToken, GetTokenController] screenlock required", new Object[0]));
                                         return d(6, "device management not supported");
@@ -209,20 +209,20 @@ public class GetTokenController implements Controller {
                                 Account account3 = this.e;
                                 String str3 = resolutionData.d;
                                 BrowserResolutionCookie[] browserResolutionCookieArr = resolutionData.e;
-                                arke arkeVar2 = this.i;
-                                aano aanoVar2 = BrowserConsentChimeraActivity.h;
+                                atmt atmtVar2 = this.i;
+                                acno acnoVar2 = BrowserConsentChimeraActivity.h;
                                 Intent className2 = new Intent().setClassName(context3, "com.google.android.gms.auth.uiflows.consent.BrowserConsentActivity");
-                                aanp aanpVar3 = new aanp();
-                                aanpVar3.d(BrowserConsentChimeraActivity.h, account3);
-                                aanpVar3.d(BrowserConsentChimeraActivity.i, str3);
-                                aanpVar3.d(BrowserConsentChimeraActivity.j, browserResolutionCookieArr);
-                                aanpVar3.d(adjb.a, arkeVar2.a());
-                                return new adle(40, className2.putExtras(aanpVar3.a), 0, null, -1, -1);
+                                acnp acnpVar3 = new acnp();
+                                acnpVar3.d(BrowserConsentChimeraActivity.h, account3);
+                                acnpVar3.d(BrowserConsentChimeraActivity.i, str3);
+                                acnpVar3.d(BrowserConsentChimeraActivity.j, browserResolutionCookieArr);
+                                acnpVar3.d(afji.a, atmtVar2.a());
+                                return new afll(40, className2.putExtras(acnpVar3.a), 0, null, -1, -1);
                             }
                         }
                     } else if (this.j < 40) {
                         TokenRequest tokenRequest = this.f;
-                        unw a2 = unw.a(tokenRequest.b());
+                        wjv a2 = wjv.a(tokenRequest.b());
                         boolean z13 = !a2.e();
                         String d = a2.d();
                         AppDescription appDescription = tokenRequest.i;
@@ -230,7 +230,7 @@ public class GetTokenController implements Controller {
                         int i3 = appDescription.b;
                         String str5 = this.e.name;
                         List<ScopeDetail> b = tokenResponse.b();
-                        int i4 = vjt.a;
+                        int i4 = xfu.a;
                         ArrayList<? extends Parcelable> arrayList = new ArrayList<>();
                         if (b != null) {
                             for (ScopeDetail scopeDetail : b) {
@@ -296,22 +296,22 @@ public class GetTokenController implements Controller {
                         className3.putExtra("GrantCredentialsWithAclChimeraActivityconsentCookieWrapper", str9);
                         className3.putExtra("GrantCredentialsWithAclChimeraActivityisRemoteApp", z13);
                         className3.putExtra("GrantCredentialsWithAclChimeraActivityremoteAppLabel", d);
-                        return new adle(40, className3, 0, null, -1, -1);
+                        return new afll(40, className3, 0, null, -1, -1);
                     }
                 } else if (this.j < 20) {
-                    vah vahVar = this.c;
+                    wwh wwhVar = this.c;
                     Account account4 = this.e;
-                    if (vahVar.g(account4)) {
+                    if (wwhVar.g(account4)) {
                         Context context4 = this.a;
-                        return new adle(22, adjh.c.a(context4, new adjd(this.h, false, 0, context4.getString(R.string.auth_get_token_bad_auth_work_service_account_title), context4.getString(R.string.auth_get_token_bad_auth_work_service_account_message), null)), 0, null, 0, 0);
+                        return new afll(22, afjo.c.a(context4, new afjk(this.h, false, 0, context4.getString(R.string.auth_get_token_bad_auth_work_service_account_title), context4.getString(R.string.auth_get_token_bad_auth_work_service_account_message), null)), 0, null, 0, 0);
                     }
                     Context context5 = this.a;
-                    adoq adoqVar = new adoq(context5, 3);
-                    adoqVar.a = account4.name;
-                    adoqVar.b = account4.type;
-                    arke arkeVar3 = this.i;
-                    adoqVar.b(arkeVar3);
-                    return new adle(20, MinuteMaidChimeraActivity.p(context5, account4, this.h, arkeVar3, adoqVar.a()), 0, null, 0, 0);
+                    afox afoxVar = new afox(context5, 3);
+                    afoxVar.a = account4.name;
+                    afoxVar.b = account4.type;
+                    atmt atmtVar3 = this.i;
+                    afoxVar.b(atmtVar3);
+                    return new afll(20, MinuteMaidChimeraActivity.p(context5, account4, this.h, atmtVar3, afoxVar.a()), 0, null, 0, 0);
                 }
                 return d(5, "something went wrong");
             }
@@ -320,11 +320,11 @@ public class GetTokenController implements Controller {
             }
         } else if (i == 40) {
             this.j = 40;
-            int i7 = adliVar.b;
+            int i7 = aflpVar.b;
             if (i7 == -1) {
                 ConsentResult consentResult = (ConsentResult) intent.getParcelableExtra(ConsentResult.a);
-                abau b2 = abau.b(consentResult.c);
-                if (b2 != abau.SUCCESS) {
+                adau b2 = adau.b(consentResult.c);
+                if (b2 != adau.SUCCESS) {
                     Log.w("Auth", String.format(Locale.US, "[GetToken, GetTokenController] Unexpected status in grant credentials response: ".concat(String.valueOf(String.valueOf(b2))), new Object[0]));
                     return d(5, b2.ak);
                 }
@@ -332,7 +332,7 @@ public class GetTokenController implements Controller {
                 tokenRequest2.d(consentResult.a());
                 tokenRequest2.p = consentResult.g;
                 tokenRequest2.q = consentResult.h;
-                return new adle(10, GetTokenChimeraActivity.j(this.a, tokenRequest2, this.g, this.h, this.i), 0, null, -1, -1);
+                return new afll(10, GetTokenChimeraActivity.j(this.a, tokenRequest2, this.g, this.h, this.i), 0, null, -1, -1);
             }
             if (i7 == 0) {
                 return d(4, "user declined");
@@ -343,7 +343,7 @@ public class GetTokenController implements Controller {
             }
             if (i == 32) {
                 this.j = 32;
-                switch (adliVar.b) {
+                switch (aflpVar.b) {
                     case 2:
                     case 7:
                     case 8:
@@ -359,26 +359,26 @@ public class GetTokenController implements Controller {
                     case 6:
                         return d(4, "user canceled");
                     default:
-                        return new adle(10, GetTokenChimeraActivity.j(this.a, this.f, this.g, this.h, this.i), 0, null, -1, -1);
+                        return new afll(10, GetTokenChimeraActivity.j(this.a, this.f, this.g, this.h, this.i), 0, null, -1, -1);
                 }
             }
             if (i == 33) {
                 this.j = 33;
-                return adliVar.b == -1 ? new adle(10, GetTokenChimeraActivity.j(this.a, this.f, this.g, this.h, this.i), 0, null, -1, -1) : d(4, "missing lock screen");
+                return aflpVar.b == -1 ? new afll(10, GetTokenChimeraActivity.j(this.a, this.f, this.g, this.h, this.i), 0, null, -1, -1) : d(4, "missing lock screen");
             }
             switch (i) {
-                case fwac.t /* 20 */:
+                case fywe.t /* 20 */:
                     this.j = 20;
-                    int i8 = adliVar.b;
+                    int i8 = aflpVar.b;
                     if (i8 == -1) {
-                        aanp aanpVar4 = new aanp(intent.getExtras());
-                        String str10 = (String) aanpVar4.a(MinuteMaidChimeraActivity.h);
-                        String str11 = (String) aanpVar4.a(MinuteMaidChimeraActivity.j);
+                        acnp acnpVar4 = new acnp(intent.getExtras());
+                        String str10 = (String) acnpVar4.a(MinuteMaidChimeraActivity.h);
+                        String str11 = (String) acnpVar4.a(MinuteMaidChimeraActivity.j);
                         Account account5 = this.e;
                         if (!TextUtils.isEmpty(str11) && !account5.name.equalsIgnoreCase(str11)) {
-                            vba.w(8);
+                            wxa.w(8);
                         }
-                        return new adle(21, UpdateCredentialsChimeraActivity.j(this.a, account5, str10, this.h, this.i), 0, null, 0, 0);
+                        return new afll(21, UpdateCredentialsChimeraActivity.j(this.a, account5, str10, this.h, this.i), 0, null, 0, 0);
                     }
                     if (i8 == 0) {
                         return d(4, "user did not reauth");
@@ -387,23 +387,23 @@ public class GetTokenController implements Controller {
                         return d(5, "something went wrong");
                     }
                     break;
-                case fwac.u /* 21 */:
+                case fywe.u /* 21 */:
                     this.j = 21;
-                    int i9 = adliVar.b;
+                    int i9 = aflpVar.b;
                     if (i9 == -1) {
-                        return new adle(10, GetTokenChimeraActivity.j(this.a, this.f, this.g, this.h, this.i), 0, null, 0, 0);
+                        return new afll(10, GetTokenChimeraActivity.j(this.a, this.f, this.g, this.h, this.i), 0, null, 0, 0);
                     }
                     if (i9 == 0) {
                         return d(5, "something went wrong");
                     }
                     break;
-                case fwac.v /* 22 */:
+                case fywe.v /* 22 */:
                     this.j = 22;
                     Log.w("Auth", String.format(Locale.US, "[GetToken, GetTokenController] work service account", new Object[0]));
                     return d(6, "work service account");
             }
         }
-        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(adliVar.b)));
+        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(aflpVar.b)));
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller

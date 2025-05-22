@@ -9,35 +9,35 @@ import com.google.android.gms.wallet.setupwizard.WalletGlifLayout;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
 import com.google.android.wallet.clientlog.LogContext;
 import com.google.android.wallet.ui.common.ImageWithCaptionView;
-import defpackage.arwm;
-import defpackage.dinh;
-import defpackage.dirm;
-import defpackage.dirr;
-import defpackage.djey;
-import defpackage.edig;
-import defpackage.efdk;
-import defpackage.efoz;
-import defpackage.efwo;
-import defpackage.ehzo;
-import defpackage.eiae;
-import defpackage.eidz;
-import defpackage.eieb;
-import defpackage.eiej;
-import defpackage.feen;
-import defpackage.ftcw;
+import defpackage.atzb;
+import defpackage.dkys;
+import defpackage.dlcx;
+import defpackage.dldc;
+import defpackage.dlqr;
+import defpackage.efvb;
+import defpackage.ehqn;
+import defpackage.eicc;
+import defpackage.eijr;
+import defpackage.ekmu;
+import defpackage.eknk;
+import defpackage.ekrf;
+import defpackage.ekrh;
+import defpackage.ekrp;
+import defpackage.fgtg;
+import defpackage.fvyq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class SetupWizardImRootChimeraActivity extends ImRootChimeraActivity implements dinh {
+public class SetupWizardImRootChimeraActivity extends ImRootChimeraActivity implements dkys {
     WalletGlifLayout n;
-    private ehzo o;
+    private ekmu o;
 
-    @Override // defpackage.diez, defpackage.dinh
+    @Override // defpackage.dkqk, defpackage.dkys
     public final void C(Bundle bundle) {
         bundle.putBoolean("savedSpinnerState", P());
     }
 
-    @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity, defpackage.diez, defpackage.dinh
+    @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity, defpackage.dkqk, defpackage.dkys
     public final void L(boolean z) {
         WalletGlifLayout walletGlifLayout = this.n;
         if (walletGlifLayout != null) {
@@ -45,7 +45,7 @@ public class SetupWizardImRootChimeraActivity extends ImRootChimeraActivity impl
         }
     }
 
-    @Override // defpackage.diez, defpackage.dinh
+    @Override // defpackage.dkqk, defpackage.dkys
     public final boolean P() {
         WalletGlifLayout walletGlifLayout = this.n;
         return walletGlifLayout != null && walletGlifLayout.N();
@@ -57,7 +57,7 @@ public class SetupWizardImRootChimeraActivity extends ImRootChimeraActivity impl
     }
 
     @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity
-    protected final dirm ac() {
+    protected final dlcx ac() {
         if (this.h == null) {
             BuyFlowConfig l = l();
             String str = this.a;
@@ -65,38 +65,38 @@ public class SetupWizardImRootChimeraActivity extends ImRootChimeraActivity impl
             boolean z = this.j;
             boolean z2 = this.k;
             LogContext logContext = this.b;
-            arwm.m(bArr != null, "InstrumentManager parameters must not be null.");
-            dirr dirrVar = new dirr();
-            Bundle bZ = djey.bZ(l, str, logContext);
-            bZ.putByteArray("instrumentManagerParams", bArr);
-            bZ.putBoolean("isDialog", z);
-            bZ.putBoolean("showCancelButton", z2);
-            dirrVar.setArguments(bZ);
-            return dirrVar;
+            atzb.m(bArr != null, "InstrumentManager parameters must not be null.");
+            dldc dldcVar = new dldc();
+            Bundle bY = dlqr.bY(l, str, logContext);
+            bY.putByteArray("instrumentManagerParams", bArr);
+            bY.putBoolean("isDialog", z);
+            bY.putBoolean("showCancelButton", z2);
+            dldcVar.setArguments(bY);
+            return dldcVar;
         }
         BuyFlowConfig l2 = l();
         String str2 = this.a;
-        eiej eiejVar = this.h;
+        ekrp ekrpVar = this.h;
         boolean z3 = this.j;
         boolean z4 = this.k;
         LogContext logContext2 = this.b;
         boolean z5 = this.l;
         boolean z6 = this.m;
-        arwm.m(eiejVar != null, "ActionToken must not be null.");
-        eidz eidzVar = eiejVar.d;
-        if (eidzVar == null) {
-            eidzVar = eidz.a;
+        atzb.m(ekrpVar != null, "ActionToken must not be null.");
+        ekrf ekrfVar = ekrpVar.d;
+        if (ekrfVar == null) {
+            ekrfVar = ekrf.a;
         }
-        arwm.m((eidzVar.b & 2) != 0, "ActionToken must have a ResponseContext.");
-        dirr dirrVar2 = new dirr();
-        Bundle bZ2 = djey.bZ(l2, str2, logContext2);
-        efdk.j(bZ2, "actionToken", eiejVar);
-        bZ2.putBoolean("isDialog", z3);
-        bZ2.putBoolean("showCancelButton", z4);
-        bZ2.putBoolean("showTitleInHeader", z5);
-        bZ2.putBoolean("showHeaderSeparator", z6);
-        dirrVar2.setArguments(bZ2);
-        return dirrVar2;
+        atzb.m((ekrfVar.b & 2) != 0, "ActionToken must have a ResponseContext.");
+        dldc dldcVar2 = new dldc();
+        Bundle bY2 = dlqr.bY(l2, str2, logContext2);
+        ehqn.j(bY2, "actionToken", ekrpVar);
+        bY2.putBoolean("isDialog", z3);
+        bY2.putBoolean("showCancelButton", z4);
+        bY2.putBoolean("showTitleInHeader", z5);
+        bY2.putBoolean("showHeaderSeparator", z6);
+        dldcVar2.setArguments(bY2);
+        return dldcVar2;
     }
 
     @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity
@@ -107,17 +107,17 @@ public class SetupWizardImRootChimeraActivity extends ImRootChimeraActivity impl
         WalletGlifLayout walletGlifLayout = (WalletGlifLayout) findViewById(R.id.setup_wizard_layout);
         this.n = walletGlifLayout;
         if (walletGlifLayout != null) {
-            ehzo ehzoVar = this.o;
-            if (ehzoVar != null) {
-                ar = ImageWithCaptionView.j(ehzoVar, this);
+            ekmu ekmuVar = this.o;
+            if (ekmuVar != null) {
+                ar = ImageWithCaptionView.j(ekmuVar, this);
                 string = this.o.k;
             } else {
-                ar = efwo.ar(this);
+                ar = eijr.ar(this);
                 ar.setTintList(this.n.n);
                 string = getResources().getString(R.string.wallet_activity_default_title);
             }
             this.n.I(ar);
-            if (ftcw.e() && (b = ((edig) this.n.q(edig.class)).b()) != null) {
+            if (fvyq.e() && (b = ((efvb) this.n.q(efvb.class)).b()) != null) {
                 b.setContentDescription(string);
             }
             this.n.b(getTitle());
@@ -125,33 +125,33 @@ public class SetupWizardImRootChimeraActivity extends ImRootChimeraActivity impl
     }
 
     @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity
-    protected final boolean af(eieb eiebVar) {
-        if (ftcw.a.a().h()) {
+    protected final boolean af(ekrh ekrhVar) {
+        if (fvyq.a.lK().h()) {
             return false;
         }
-        return super.af(eiebVar);
+        return super.af(ekrhVar);
     }
 
-    @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity, defpackage.diez
+    @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity, defpackage.dkqk
     protected final Intent i() {
         Intent i = super.i();
-        efoz.g(i, efoz.i(getIntent()));
+        eicc.g(i, eicc.i(getIntent()));
         return i;
     }
 
-    @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity, defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity, defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         this.l = false;
         this.m = false;
         Intent intent = getIntent();
         super.onCreate(bundle);
         if (intent.hasExtra("com.google.android.gms.wallet.im.SetupWizardImRootChimeraActivity.EXTRA_GLIF_ICON")) {
-            this.o = (ehzo) efdk.b(intent, "com.google.android.gms.wallet.im.SetupWizardImRootChimeraActivity.EXTRA_GLIF_ICON", (feen) ehzo.a.iB(7, null));
+            this.o = (ekmu) ehqn.b(intent, "com.google.android.gms.wallet.im.SetupWizardImRootChimeraActivity.EXTRA_GLIF_ICON", (fgtg) ekmu.a.iQ(7, null));
             ae();
         }
     }
 
-    @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity, defpackage.pob, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.gms.wallet.im.ImRootChimeraActivity, defpackage.rhf, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onTitleChanged(CharSequence charSequence, int i) {
         super.onTitleChanged(charSequence, i);
         WalletGlifLayout walletGlifLayout = this.n;
@@ -160,7 +160,7 @@ public class SetupWizardImRootChimeraActivity extends ImRootChimeraActivity impl
         }
     }
 
-    @Override // defpackage.diez, defpackage.dinh
+    @Override // defpackage.dkqk, defpackage.dkys
     public final void s(Bundle bundle) {
         L(bundle.getBoolean("savedSpinnerState"));
     }
@@ -169,11 +169,11 @@ public class SetupWizardImRootChimeraActivity extends ImRootChimeraActivity impl
     protected final void ad() {
     }
 
-    @Override // defpackage.diez, defpackage.dinh
+    @Override // defpackage.dkqk, defpackage.dkys
     public final void I(String str) {
     }
 
-    @Override // defpackage.diez, defpackage.dinh
-    public final void G(eiae eiaeVar, boolean z) {
+    @Override // defpackage.dkqk, defpackage.dkys
+    public final void G(eknk eknkVar, boolean z) {
     }
 }

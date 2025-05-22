@@ -3,17 +3,17 @@ package com.google.android.gms.fitness.data;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bgdn;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.biid;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class Field extends AbstractSafeParcelable {
     public final String aS;
     public final int aT;
     public final Boolean aU;
-    public static final Parcelable.Creator CREATOR = new bgdn();
+    public static final Parcelable.Creator CREATOR = new biid();
     public static final Field a = new Field("activity", 1);
     public static final Field b = new Field("sleep_segment_type", 1);
     public static final Field c = new Field("confidence", 2);
@@ -149,15 +149,15 @@ public final class Field extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i2) {
         String str = this.aS;
-        int a2 = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.aT);
-        arxc.z(parcel, 3, this.aU);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.aT);
+        atzr.z(parcel, 3, this.aU);
+        atzr.c(parcel, a2);
     }
 
     public Field(String str, int i2, Boolean bool) {
-        arwm.s(str);
+        atzb.s(str);
         this.aS = str;
         this.aT = i2;
         this.aU = bool;

@@ -8,17 +8,17 @@ import android.view.View;
 import com.google.android.gms.R;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
 import com.google.android.wallet.clientlog.LogContext;
-import defpackage.arwm;
-import defpackage.diez;
-import defpackage.dije;
-import defpackage.ding;
-import defpackage.diqs;
-import defpackage.efwo;
-import defpackage.emen;
+import defpackage.atzb;
+import defpackage.dkqk;
+import defpackage.dkuo;
+import defpackage.dkyr;
+import defpackage.dlcd;
+import defpackage.eijr;
+import defpackage.eosb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class FixInstrumentRootChimeraActivity extends diez implements View.OnFocusChangeListener {
+public class FixInstrumentRootChimeraActivity extends dkqk implements View.OnFocusChangeListener {
     private Toolbar h;
     private View i;
     private byte[] j;
@@ -34,17 +34,17 @@ public class FixInstrumentRootChimeraActivity extends diez implements View.OnFoc
         return intent2;
     }
 
-    @Override // defpackage.diez
+    @Override // defpackage.dkqk
     public final Intent i() {
-        return dije.b(this, getIntent());
+        return dkuo.b(this, getIntent());
     }
 
-    @Override // defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         Intent intent = getIntent();
         boolean z = true;
-        ding.C(this, l(), ding.e, true);
-        q(bundle, true, 8, emen.FLOW_TYPE_FIX_INSTRUMENT);
+        dkyr.C(this, l(), dkyr.e, true);
+        q(bundle, true, 8, eosb.FLOW_TYPE_FIX_INSTRUMENT);
         super.onCreate(bundle);
         setContentView(R.layout.wallet_activity_common_with_focus_stealer);
         this.j = intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS");
@@ -53,11 +53,11 @@ public class FixInstrumentRootChimeraActivity extends diez implements View.OnFoc
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         this.h = toolbar;
         d(toolbar);
-        kJ().o(true);
+        kY().o(true);
         View findViewById = findViewById(R.id.focus_stealer);
         this.i = findViewById;
         findViewById.setOnFocusChangeListener(this);
-        if (((diqs) m()) == null) {
+        if (((dlcd) m()) == null) {
             BuyFlowConfig l = l();
             String str = this.a;
             byte[] bArr = this.j;
@@ -66,32 +66,32 @@ public class FixInstrumentRootChimeraActivity extends diez implements View.OnFoc
             LogContext logContext = this.b;
             boolean z2 = bArr != null && bArr.length > 0;
             boolean z3 = bArr2 != null && bArr2.length > 0;
-            arwm.c(z2 || z3, "Parameters or initializeToken is required to launch FixInstrument.");
+            atzb.c(z2 || z3, "Parameters or initializeToken is required to launch FixInstrument.");
             if (z2 && z3) {
                 z = false;
             }
-            arwm.c(z, "Only parameters or initializeToken should be set when launching FixInstrument.");
-            diqs diqsVar = new diqs();
-            Bundle bZ = diqs.bZ(l, str, logContext);
+            atzb.c(z, "Only parameters or initializeToken should be set when launching FixInstrument.");
+            dlcd dlcdVar = new dlcd();
+            Bundle bY = dlcd.bY(l, str, logContext);
             if (bArr != null) {
-                bZ.putByteArray("parameters", bArr);
+                bY.putByteArray("parameters", bArr);
             }
             if (bArr2 != null) {
-                bZ.putByteArray("initializeToken", bArr2);
+                bY.putByteArray("initializeToken", bArr2);
             }
             if (bArr3 != null) {
-                bZ.putByteArray("productAuthToken", bArr3);
+                bY.putByteArray("productAuthToken", bArr3);
             }
-            diqsVar.setArguments(bZ);
-            B(diqsVar, R.id.fragment_holder);
+            dlcdVar.setArguments(bY);
+            B(dlcdVar, R.id.fragment_holder);
         }
-        ding.A(findViewById(R.id.wallet_root));
+        dkyr.A(findViewById(R.id.wallet_root));
     }
 
     @Override // android.view.View.OnFocusChangeListener
     public final void onFocusChange(View view, boolean z) {
         if (z && view == this.i) {
-            efwo.ai(this, view);
+            eijr.ai(this, view);
         }
     }
 }

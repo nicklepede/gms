@@ -3,19 +3,19 @@ package com.google.android.gms.cast;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.amch;
-import defpackage.amxr;
-import defpackage.arxc;
-import defpackage.aspq;
+import defpackage.aods;
+import defpackage.aozc;
+import defpackage.atzr;
+import defpackage.autk;
 import java.util.Arrays;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class MediaQueueItem extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new amch();
+    public static final Parcelable.Creator CREATOR = new aods();
     public MediaInfo a;
     public int b;
     public boolean c;
@@ -130,7 +130,7 @@ public class MediaQueueItem extends AbstractSafeParcelable {
         if (z != (jSONObject2 == null)) {
             return false;
         }
-        return (jSONObject == null || jSONObject2 == null || aspq.b(jSONObject, jSONObject2)) && amxr.u(this.a, mediaQueueItem.a) && this.b == mediaQueueItem.b && this.c == mediaQueueItem.c && ((Double.isNaN(this.d) && Double.isNaN(mediaQueueItem.d)) || this.d == mediaQueueItem.d) && this.e == mediaQueueItem.e && this.f == mediaQueueItem.f && Arrays.equals(this.g, mediaQueueItem.g);
+        return (jSONObject == null || jSONObject2 == null || autk.b(jSONObject, jSONObject2)) && aozc.u(this.a, mediaQueueItem.a) && this.b == mediaQueueItem.b && this.c == mediaQueueItem.c && ((Double.isNaN(this.d) && Double.isNaN(mediaQueueItem.d)) || this.d == mediaQueueItem.d) && this.e == mediaQueueItem.e && this.f == mediaQueueItem.f && Arrays.equals(this.g, mediaQueueItem.g);
     }
 
     public final int hashCode() {
@@ -141,16 +141,16 @@ public class MediaQueueItem extends AbstractSafeParcelable {
     public final void writeToParcel(Parcel parcel, int i) {
         JSONObject jSONObject = this.i;
         this.h = jSONObject == null ? null : jSONObject.toString();
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.o(parcel, 3, this.b);
-        arxc.e(parcel, 4, this.c);
-        arxc.j(parcel, 5, this.d);
-        arxc.j(parcel, 6, this.e);
-        arxc.j(parcel, 7, this.f);
-        arxc.r(parcel, 8, this.g, false);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.o(parcel, 3, this.b);
+        atzr.e(parcel, 4, this.c);
+        atzr.j(parcel, 5, this.d);
+        atzr.j(parcel, 6, this.e);
+        atzr.j(parcel, 7, this.f);
+        atzr.r(parcel, 8, this.g, false);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.c(parcel, a);
     }
 
     public MediaQueueItem(JSONObject jSONObject) {

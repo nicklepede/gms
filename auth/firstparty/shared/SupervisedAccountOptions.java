@@ -4,16 +4,16 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.abav;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.arxd;
+import defpackage.adav;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.atzs;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SupervisedAccountOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new abav();
+    public static final Parcelable.Creator CREATOR = new adav();
     public final String a;
     public final String b;
     public final int c;
@@ -25,7 +25,7 @@ public class SupervisedAccountOptions extends AbstractSafeParcelable {
     }
 
     public static SupervisedAccountOptions a(byte[] bArr) {
-        return (bArr == null || bArr.length == 0) ? new SupervisedAccountOptions("", "") : (SupervisedAccountOptions) arxd.a(bArr, CREATOR);
+        return (bArr == null || bArr.length == 0) ? new SupervisedAccountOptions("", "") : (SupervisedAccountOptions) atzs.a(bArr, CREATOR);
     }
 
     public static SupervisedAccountOptions b(Bundle bundle) {
@@ -38,7 +38,7 @@ public class SupervisedAccountOptions extends AbstractSafeParcelable {
         }
         if (obj instanceof SupervisedAccountOptions) {
             SupervisedAccountOptions supervisedAccountOptions = (SupervisedAccountOptions) obj;
-            if (arwb.b(this.a, supervisedAccountOptions.a) && arwb.b(this.b, supervisedAccountOptions.b) && this.c == supervisedAccountOptions.c) {
+            if (atyq.b(this.a, supervisedAccountOptions.a) && atyq.b(this.b, supervisedAccountOptions.b) && this.c == supervisedAccountOptions.c) {
                 return true;
             }
         }
@@ -52,11 +52,11 @@ public class SupervisedAccountOptions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 
     public SupervisedAccountOptions() {

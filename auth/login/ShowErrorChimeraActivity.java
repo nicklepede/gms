@@ -11,20 +11,20 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.android.setupwizard.navigationbar.SetupWizardNavBar;
 import com.google.android.gms.R;
-import defpackage.abau;
-import defpackage.abpf;
-import defpackage.abqb;
-import defpackage.arut;
-import defpackage.asot;
-import defpackage.assx;
-import defpackage.bxax;
-import defpackage.ejhf;
-import defpackage.fwac;
-import defpackage.ngz;
+import defpackage.adau;
+import defpackage.adpf;
+import defpackage.adqb;
+import defpackage.atxi;
+import defpackage.ausn;
+import defpackage.auwr;
+import defpackage.bzjn;
+import defpackage.eluo;
+import defpackage.fywe;
+import defpackage.pac;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ShowErrorChimeraActivity extends abpf implements View.OnClickListener, ngz {
+public class ShowErrorChimeraActivity extends adpf implements View.OnClickListener, pac {
     public static final /* synthetic */ int i = 0;
     private SetupWizardNavBar A;
     int h = -1;
@@ -33,7 +33,7 @@ public class ShowErrorChimeraActivity extends abpf implements View.OnClickListen
     private boolean t;
     private boolean u;
     private boolean v;
-    private abau w;
+    private adau w;
     private TextView x;
     private Button y;
     private TextView z;
@@ -42,19 +42,19 @@ public class ShowErrorChimeraActivity extends abpf implements View.OnClickListen
         Intent b;
         if (!this.l) {
             try {
-                assx.b(this).f("com.google.android.apps.enterprise.dmagent", 32768);
+                auwr.b(this).f("com.google.android.apps.enterprise.dmagent", 32768);
                 PackageManager packageManager = getPackageManager();
                 if (packageManager.getApplicationEnabledSetting("com.google.android.apps.enterprise.dmagent") == 4) {
-                    bxax.a(this, "com.google.android.apps.enterprise.dmagent", 0, 1);
+                    bzjn.a(this, "com.google.android.apps.enterprise.dmagent", 0, 1);
                 }
                 b = Intent.makeMainActivity(new ComponentName("com.google.android.apps.enterprise.dmagent", "com.google.android.apps.enterprise.dmagent.DMAgentActivity"));
                 if (packageManager.queryIntentActivities(b, 0).isEmpty()) {
                     Log.w("GLSActivity", String.format("Couldn't find activity %s attempting to enable %s", "com.google.android.apps.enterprise.dmagent.DMAgentActivity", "com.google.android.apps.enterprise.dmagent"));
-                    b = arut.b("com.google.android.apps.enterprise.dmagent");
+                    b = atxi.b("com.google.android.apps.enterprise.dmagent");
                 }
             } catch (PackageManager.NameNotFoundException unused) {
                 Log.w("GLSActivity", "Couldn't find package com.google.android.apps.enterprise.dmagent");
-                b = arut.b("com.google.android.apps.enterprise.dmagent");
+                b = atxi.b("com.google.android.apps.enterprise.dmagent");
             }
             try {
                 startActivity(b);
@@ -66,7 +66,7 @@ public class ShowErrorChimeraActivity extends abpf implements View.OnClickListen
         finish();
     }
 
-    @Override // defpackage.ngz
+    @Override // defpackage.pac
     public final void c(SetupWizardNavBar setupWizardNavBar) {
         this.A = setupWizardNavBar;
         boolean z = this.m;
@@ -86,25 +86,25 @@ public class ShowErrorChimeraActivity extends abpf implements View.OnClickListen
     }
 
     public final void m(Bundle bundle) {
-        abau abauVar;
+        adau adauVar;
         this.r = bundle.getString("accountName");
         this.t = bundle.getBoolean("isCreatingAccount");
         this.u = bundle.getBoolean("isAddingAccount");
         this.v = bundle.getBoolean("allowSkip");
         this.s = bundle.getString("detail");
         String string = bundle.getString("status");
-        asot asotVar = abqb.a;
+        ausn ausnVar = adqb.a;
         if (string == null) {
-            abauVar = abau.SUCCESS;
+            adauVar = adau.SUCCESS;
         } else {
-            abau a = abau.a(string);
-            ((ejhf) abqb.a.j()).T("%s Status from wire: %s status: %s", "gms.StatusHelper", string, a);
-            abauVar = a == null ? abau.UNKNOWN : a;
+            adau a = adau.a(string);
+            ((eluo) adqb.a.j()).T("%s Status from wire: %s status: %s", "gms.StatusHelper", string, a);
+            adauVar = a == null ? adau.UNKNOWN : a;
         }
-        this.w = abauVar;
+        this.w = adauVar;
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i2, int i3, Intent intent) {
         super.onActivityResult(i2, i3, intent);
         if (i2 != 121) {
@@ -117,21 +117,21 @@ public class ShowErrorChimeraActivity extends abpf implements View.OnClickListen
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        abau abauVar = this.w;
-        this.w = abau.SUCCESS;
-        int ordinal = abauVar.ordinal();
+        adau adauVar = this.w;
+        this.w = adau.SUCCESS;
+        int ordinal = adauVar.ordinal();
         if (ordinal != 4) {
             if (ordinal != 8) {
                 switch (ordinal) {
-                    case fwac.E /* 31 */:
+                    case fywe.E /* 31 */:
                     case 32:
-                    case fwac.G /* 33 */:
-                    case fwac.H /* 34 */:
-                    case fwac.I /* 35 */:
-                    case fwac.J /* 36 */:
-                    case fwac.K /* 37 */:
-                    case fwac.L /* 38 */:
-                    case fwac.M /* 39 */:
+                    case fywe.G /* 33 */:
+                    case fywe.H /* 34 */:
+                    case fywe.I /* 35 */:
+                    case fywe.J /* 36 */:
+                    case fywe.K /* 37 */:
+                    case fywe.L /* 38 */:
+                    case fywe.M /* 39 */:
                         n();
                         break;
                 }
@@ -159,7 +159,7 @@ public class ShowErrorChimeraActivity extends abpf implements View.OnClickListen
      */
     /* JADX WARN: Removed duplicated region for block: B:55:0x018c  */
     /* JADX WARN: Removed duplicated region for block: B:57:0x019a  */
-    @Override // defpackage.abpf, defpackage.abpc, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.adpf, defpackage.adpc, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -172,7 +172,7 @@ public class ShowErrorChimeraActivity extends abpf implements View.OnClickListen
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.login.ShowErrorChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.abpf, defpackage.abpc, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.adpf, defpackage.adpc, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         bundle.putString("accountName", this.r);
         bundle.putBoolean("isCreatingAccount", this.t);
@@ -182,16 +182,16 @@ public class ShowErrorChimeraActivity extends abpf implements View.OnClickListen
         bundle.putString("status", this.w.ak);
     }
 
-    @Override // defpackage.abpf, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.adpf, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void setTitle(CharSequence charSequence) {
         ((TextView) findViewById(R.id.title)).setText(charSequence);
     }
 
-    @Override // defpackage.ngz
+    @Override // defpackage.pac
     public final void a() {
     }
 
-    @Override // defpackage.ngz
+    @Override // defpackage.pac
     public final void b() {
     }
 }

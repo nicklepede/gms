@@ -6,20 +6,20 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.sharing.ShareTarget;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmxr;
-import defpackage.cmxt;
-import defpackage.cnaz;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpfz;
+import defpackage.cpgb;
+import defpackage.cpjh;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ProviderSendParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cnaz();
+    public static final Parcelable.Creator CREATOR = new cpjh();
     public String a;
     public ShareTarget b;
-    public cmxt c;
+    public cpgb c;
 
     public ProviderSendParams() {
     }
@@ -30,7 +30,7 @@ public final class ProviderSendParams extends AbstractSafeParcelable {
         }
         if (obj instanceof ProviderSendParams) {
             ProviderSendParams providerSendParams = (ProviderSendParams) obj;
-            if (arwb.b(this.a, providerSendParams.a) && arwb.b(this.b, providerSendParams.b) && arwb.b(this.c, providerSendParams.c)) {
+            if (atyq.b(this.a, providerSendParams.a) && atyq.b(this.b, providerSendParams.b) && atyq.b(this.c, providerSendParams.c)) {
                 return true;
             }
         }
@@ -43,23 +43,23 @@ public final class ProviderSendParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.D(parcel, 3, this.c.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.D(parcel, 3, this.c.asBinder());
+        atzr.c(parcel, a);
     }
 
     public ProviderSendParams(String str, ShareTarget shareTarget, IBinder iBinder) {
-        cmxt cmxrVar;
+        cpgb cpfzVar;
         if (iBinder == null) {
-            cmxrVar = null;
+            cpfzVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.ITransferUpdateCallback");
-            cmxrVar = queryLocalInterface instanceof cmxt ? (cmxt) queryLocalInterface : new cmxr(iBinder);
+            cpfzVar = queryLocalInterface instanceof cpgb ? (cpgb) queryLocalInterface : new cpfz(iBinder);
         }
         this.a = str;
         this.b = shareTarget;
-        this.c = cmxrVar;
+        this.c = cpfzVar;
     }
 }

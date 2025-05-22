@@ -3,12 +3,12 @@ package com.google.android.gms.common.threads;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.asmh;
+import defpackage.auqb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class TraceWrappingParcelable implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new asmh();
+    public static final Parcelable.Creator CREATOR = new auqb();
     public final Bundle a;
     public Object b;
     public Bundle c;

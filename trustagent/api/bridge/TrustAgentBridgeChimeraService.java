@@ -1,30 +1,30 @@
 package com.google.android.gms.trustagent.api.bridge;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.dgnq;
-import defpackage.eiuu;
-import defpackage.ejck;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.diyv;
+import defpackage.elhz;
+import defpackage.elpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TrustAgentBridgeChimeraService extends bxgd {
-    private static final eiuu a;
+public class TrustAgentBridgeChimeraService extends bzot {
+    private static final elhz a;
 
     static {
-        asot.b("TrustAgent", asej.TRUSTAGENT);
-        a = ejck.a;
+        ausn.b("TrustAgent", auid.TRUSTAGENT);
+        a = elpp.a;
     }
 
     public TrustAgentBridgeChimeraService() {
         super(89, "com.google.android.gms.trustagent.BridgeApi.START", a, 0, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new dgnq(l(), getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new diyv(l(), getServiceRequest.f, getServiceRequest.p));
     }
 }

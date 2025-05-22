@@ -5,13 +5,13 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.data.BitmapTeleporter;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bods;
+import defpackage.atzr;
+import defpackage.bqli;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class LaunchData extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bods();
+    public static final Parcelable.Creator CREATOR = new bqli();
     public final Intent a;
     public final String b;
     public final String c;
@@ -30,11 +30,11 @@ public class LaunchData extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Intent intent = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, intent, i, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, intent, i, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.c(parcel, a);
     }
 }

@@ -4,17 +4,17 @@ import android.accounts.Account;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.acex;
-import defpackage.acqe;
-import defpackage.arxo;
-import defpackage.asnd;
-import defpackage.fldd;
+import defpackage.aeex;
+import defpackage.aeqe;
+import defpackage.auad;
+import defpackage.auqx;
+import defpackage.fnum;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class FeatureEnabledStateReconcilerIntentOperation extends IntentOperation {
-    private static final arxo a = new arxo("ProximityAuth", "FeatureEnabledStateReconciler");
-    private final acqe b = new acqe();
+    private static final auad a = new auad("ProximityAuth", "FeatureEnabledStateReconciler");
+    private final aeqe b = new aeqe();
 
     public FeatureEnabledStateReconcilerIntentOperation() {
     }
@@ -27,10 +27,10 @@ public class FeatureEnabledStateReconcilerIntentOperation extends IntentOperatio
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (fldd.d() && intent != null && "com.google.android.gms.auth.proximity.RECONCILE_FEATURE_STATE".equals(intent.getAction())) {
+        if (fnum.d() && intent != null && "com.google.android.gms.auth.proximity.RECONCILE_FEATURE_STATE".equals(intent.getAction())) {
             Account account = new Account(intent.getStringExtra("EXTRA_ACCOUNT_NAME"), "com.google");
-            if (asnd.m(this, account)) {
-                this.b.r(true != acex.a(this).f(account) ? 2 : 1);
+            if (auqx.m(this, account)) {
+                this.b.r(true != aeex.a(this).f(account) ? 2 : 1);
             } else {
                 a.m("Invalid account: %s", account.name);
                 this.b.r(0);

@@ -14,102 +14,102 @@ import com.google.android.gms.auth.uiflows.common.UpdateCredentialsChimeraActivi
 import com.google.android.gms.auth.uiflows.controller.Controller;
 import com.google.android.gms.auth.uiflows.minutemaid.MinuteMaidChimeraActivity;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.aant;
-import defpackage.adjd;
-import defpackage.adjh;
-import defpackage.adle;
-import defpackage.adli;
-import defpackage.adoq;
-import defpackage.adpd;
-import defpackage.arke;
-import defpackage.asqh;
-import defpackage.bqna;
-import defpackage.fkih;
-import defpackage.uqw;
-import defpackage.vba;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.acnt;
+import defpackage.afjk;
+import defpackage.afjo;
+import defpackage.afll;
+import defpackage.aflp;
+import defpackage.afox;
+import defpackage.afpk;
+import defpackage.atmt;
+import defpackage.auub;
+import defpackage.bsup;
+import defpackage.fmyw;
+import defpackage.wmv;
+import defpackage.wxa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class UpdateCredentialsController implements Controller {
     private final Context b;
-    private final aant c;
-    private final bqna d;
+    private final acnt c;
+    private final bsup d;
     private final AccountAuthenticatorResponse e;
     private final Account f;
     private String g;
     private String h;
     private final boolean i;
-    private final arke j;
+    private final atmt j;
     private final boolean k;
     private String l;
-    private static final aano a = new aano("token_handle");
-    public static final Parcelable.Creator CREATOR = new adpd();
+    private static final acno a = new acno("token_handle");
+    public static final Parcelable.Creator CREATOR = new afpk();
 
-    public UpdateCredentialsController(AccountAuthenticatorResponse accountAuthenticatorResponse, Account account, arke arkeVar, boolean z) {
-        this(accountAuthenticatorResponse, account, false, arkeVar, z, null, null, null);
+    public UpdateCredentialsController(AccountAuthenticatorResponse accountAuthenticatorResponse, Account account, atmt atmtVar, boolean z) {
+        this(accountAuthenticatorResponse, account, false, atmtVar, z, null, null, null);
     }
 
-    private final adle c(int i, String str) {
+    private final afll c(int i, String str) {
         Intent putExtra = new Intent().putExtra("errorCode", i).putExtra("errorMessage", str);
         AccountAuthenticatorResponse accountAuthenticatorResponse = this.e;
         if (accountAuthenticatorResponse != null) {
             accountAuthenticatorResponse.onError(i, str);
         }
-        return new adle(0, null, 0, putExtra, -1, -1);
+        return new afll(0, null, 0, putExtra, -1, -1);
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller
-    public final adle a(adli adliVar) {
-        if (adliVar == null) {
+    public final afll a(aflp aflpVar) {
+        if (aflpVar == null) {
             if (!this.c.a()) {
                 Context context = this.b;
-                return new adle(1001, adjh.c.a(context, new adjd(this.i, false, 0, context.getString(R.string.common_no_network), context.getString(R.string.auth_error_no_network), this.j)), 0, null, -1, -1);
+                return new afll(1001, afjo.c.a(context, new afjk(this.i, false, 0, context.getString(R.string.common_no_network), context.getString(R.string.auth_error_no_network), this.j)), 0, null, -1, -1);
             }
-            if (TextUtils.isEmpty(fkih.d() ? ((uqw) uqw.a.b()).i(this.f) : this.d.c(this.f))) {
+            if (TextUtils.isEmpty(fmyw.d() ? ((wmv) wmv.a.b()).i(this.f) : this.d.c(this.f))) {
                 Context context2 = this.b;
                 Account account = this.f;
                 boolean z = this.i;
-                arke arkeVar = this.j;
-                adoq adoqVar = new adoq(context2, 3);
-                adoqVar.a = account.name;
-                adoqVar.b = account.type;
-                adoqVar.b(arkeVar);
-                return new adle(10, MinuteMaidChimeraActivity.p(context2, account, z, arkeVar, adoqVar.a()), 0, null, -1, -1);
+                atmt atmtVar = this.j;
+                afox afoxVar = new afox(context2, 3);
+                afoxVar.a = account.name;
+                afoxVar.b = account.type;
+                afoxVar.b(atmtVar);
+                return new afll(10, MinuteMaidChimeraActivity.p(context2, account, z, atmtVar, afoxVar.a()), 0, null, -1, -1);
             }
             Context context3 = this.b;
             Account account2 = this.f;
             boolean z2 = this.i;
-            arke arkeVar2 = this.j;
-            adoq adoqVar2 = new adoq(context3, 4);
-            adoqVar2.a = account2.name;
-            adoqVar2.b = account2.type;
-            adoqVar2.b(arkeVar2);
-            return new adle(10, MinuteMaidChimeraActivity.q(context3, account2, z2, arkeVar2, adoqVar2.a()), 0, null, -1, -1);
+            atmt atmtVar2 = this.j;
+            afox afoxVar2 = new afox(context3, 4);
+            afoxVar2.a = account2.name;
+            afoxVar2.b = account2.type;
+            afoxVar2.b(atmtVar2);
+            return new afll(10, MinuteMaidChimeraActivity.q(context3, account2, z2, atmtVar2, afoxVar2.a()), 0, null, -1, -1);
         }
-        int i = adliVar.a;
+        int i = aflpVar.a;
         if (i == 10) {
-            int i2 = adliVar.b;
+            int i2 = aflpVar.b;
             if (i2 == -1) {
-                aanp aanpVar = new aanp(adliVar.c.getExtras());
-                this.h = (String) aanpVar.a(MinuteMaidChimeraActivity.h);
-                String str = (String) aanpVar.a(MinuteMaidChimeraActivity.j);
+                acnp acnpVar = new acnp(aflpVar.c.getExtras());
+                this.h = (String) acnpVar.a(MinuteMaidChimeraActivity.h);
+                String str = (String) acnpVar.a(MinuteMaidChimeraActivity.j);
                 Account account3 = this.f;
                 if (account3 != null && !TextUtils.isEmpty(str) && !account3.name.equalsIgnoreCase(str)) {
-                    vba.w(7);
+                    wxa.w(7);
                 }
-                if (!this.k || !asqh.a()) {
-                    return new adle(20, UpdateCredentialsChimeraActivity.j(this.b, account3, this.h, false, this.j), 0, null, 0, 0);
+                if (!this.k || !auub.a()) {
+                    return new afll(20, UpdateCredentialsChimeraActivity.j(this.b, account3, this.h, false, this.j), 0, null, 0, 0);
                 }
-                this.g = (String) aanpVar.a(MinuteMaidChimeraActivity.k);
+                this.g = (String) acnpVar.a(MinuteMaidChimeraActivity.k);
                 boolean z3 = this.i;
-                arke arkeVar3 = this.j;
+                atmt atmtVar3 = this.j;
                 String str2 = this.h;
-                aano aanoVar = FinishSessionChimeraActivity.i;
+                acno acnoVar = FinishSessionChimeraActivity.i;
                 Bundle bundle = new Bundle();
                 bundle.putBoolean(FinishSessionChimeraActivity.k.a, z3);
-                bundle.putParcelable(FinishSessionChimeraActivity.l.a, arkeVar3.a());
+                bundle.putParcelable(FinishSessionChimeraActivity.l.a, atmtVar3.a());
                 bundle.putString(FinishSessionChimeraActivity.m.a, str2);
                 bundle.putParcelable(FinishSessionChimeraActivity.q.a, account3);
                 bundle.putString(FinishSessionChimeraActivity.i.a, "finish_update_credentials_session_type");
@@ -121,7 +121,7 @@ public class UpdateCredentialsController implements Controller {
                 if (accountAuthenticatorResponse != null) {
                     accountAuthenticatorResponse.onResult(bundle2);
                 }
-                return new adle(0, null, -1, putExtras, -1, -1);
+                return new afll(0, null, -1, putExtras, -1, -1);
             }
             if (i2 == 0) {
                 return c(4, "user canceled");
@@ -130,11 +130,11 @@ public class UpdateCredentialsController implements Controller {
                 return c(5, "something went wrong");
             }
         } else if (i == 20) {
-            int i3 = adliVar.b;
+            int i3 = aflpVar.b;
             if (i3 == -1) {
-                Intent intent = adliVar.c;
+                Intent intent = aflpVar.c;
                 if (intent != null) {
-                    this.l = (String) new aanp(intent.getExtras()).a(a);
+                    this.l = (String) new acnp(intent.getExtras()).a(a);
                 }
                 Bundle bundle3 = new Bundle();
                 Account account4 = this.f;
@@ -148,7 +148,7 @@ public class UpdateCredentialsController implements Controller {
                 if (accountAuthenticatorResponse2 != null) {
                     accountAuthenticatorResponse2.onResult(bundle3);
                 }
-                return new adle(0, null, -1, new Intent().putExtras(bundle3), -1, -1);
+                return new afll(0, null, -1, new Intent().putExtras(bundle3), -1, -1);
             }
             if (i3 == 0) {
                 return c(5, "something went wrong");
@@ -156,7 +156,7 @@ public class UpdateCredentialsController implements Controller {
         } else if (i == 1001) {
             return c(3, "no network");
         }
-        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(adliVar.b)));
+        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(aflpVar.b)));
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller
@@ -181,16 +181,16 @@ public class UpdateCredentialsController implements Controller {
         parcel.writeString(this.l);
     }
 
-    public UpdateCredentialsController(AccountAuthenticatorResponse accountAuthenticatorResponse, Account account, boolean z, arke arkeVar, boolean z2, String str, String str2, String str3) {
-        aant aantVar = new aant(AppContextProvider.a());
-        bqna b = bqna.b(AppContextProvider.a());
+    public UpdateCredentialsController(AccountAuthenticatorResponse accountAuthenticatorResponse, Account account, boolean z, atmt atmtVar, boolean z2, String str, String str2, String str3) {
+        acnt acntVar = new acnt(AppContextProvider.a());
+        bsup b = bsup.b(AppContextProvider.a());
         this.b = AppContextProvider.a();
-        this.c = aantVar;
+        this.c = acntVar;
         this.d = b;
         this.e = accountAuthenticatorResponse;
         this.f = account;
         this.i = z;
-        this.j = arkeVar;
+        this.j = atmtVar;
         this.k = z2;
         this.h = str;
         this.g = str2;

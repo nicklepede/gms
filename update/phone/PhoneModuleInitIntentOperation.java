@@ -1,31 +1,31 @@
 package com.google.android.gms.update.phone;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.arxo;
-import defpackage.asng;
-import defpackage.dhfe;
-import defpackage.dhjt;
-import defpackage.fqug;
+import defpackage.apzs;
+import defpackage.auad;
+import defpackage.aura;
+import defpackage.djqk;
+import defpackage.djuz;
+import defpackage.ftoc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class PhoneModuleInitIntentOperation extends anya {
-    private static final arxo a = dhjt.h("PhoneModuleInitIntentOperation");
+public class PhoneModuleInitIntentOperation extends apzs {
+    private static final auad a = djuz.h("PhoneModuleInitIntentOperation");
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        if (!dhfe.b(this)) {
+        if (!djqk.b(this)) {
             a.h("Disabling the system update activity since it's not the main profile.", new Object[0]);
-            asng.H(this, "com.google.android.gms.update.OtaSuggestionSummaryProvider", false);
-            asng.H(this, "com.google.android.gms.update.SystemUpdateActivity", false);
-            asng.H(this, "com.google.android.gms.update.UpdateFromSdCardActivity", false);
+            aura.H(this, "com.google.android.gms.update.OtaSuggestionSummaryProvider", false);
+            aura.H(this, "com.google.android.gms.update.SystemUpdateActivity", false);
+            aura.H(this, "com.google.android.gms.update.UpdateFromSdCardActivity", false);
             return;
         }
-        asng.K("com.google.android.gms.update.OtaSuggestionSummaryProvider", true);
-        asng.K("com.google.android.gms.update.SystemUpdateActivity", true);
-        if (fqug.c()) {
-            asng.K("com.google.android.gms.update.UpdateFromSdCardActivity", true);
+        aura.K("com.google.android.gms.update.OtaSuggestionSummaryProvider", true);
+        aura.K("com.google.android.gms.update.SystemUpdateActivity", true);
+        if (ftoc.c()) {
+            aura.K("com.google.android.gms.update.UpdateFromSdCardActivity", true);
         }
     }
 }

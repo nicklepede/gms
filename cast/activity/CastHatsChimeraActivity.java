@@ -8,21 +8,21 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import com.google.android.gms.R;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.amdf;
-import defpackage.annu;
-import defpackage.annw;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.bzfc;
-import defpackage.eivv;
-import defpackage.qet;
+import defpackage.aoeq;
+import defpackage.appn;
+import defpackage.appp;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.cbnt;
+import defpackage.elja;
+import defpackage.rxx;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class CastHatsChimeraActivity extends qet {
-    public static final annw j = new annw("CastHatsChimeraActivity");
+public final class CastHatsChimeraActivity extends rxx {
+    public static final appp j = new appp("CastHatsChimeraActivity");
     private static final AtomicInteger k = new AtomicInteger(new Random().nextInt(AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE));
     private int l;
 
@@ -37,7 +37,7 @@ public final class CastHatsChimeraActivity extends qet {
         return intent;
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onActivityResult(int i, int i2, Intent intent) {
         j.p("onActivityResult(): requestCode=%d, resultCode=%d", Integer.valueOf(i), Integer.valueOf(i2));
         super.onActivityResult(i, i2, intent);
@@ -50,7 +50,7 @@ public final class CastHatsChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.cast_hats_activity);
@@ -67,8 +67,8 @@ public final class CastHatsChimeraActivity extends qet {
         int andIncrement = k.getAndIncrement();
         this.l = andIncrement;
         j.n("Launching HaTS survey with request code: %d", Integer.valueOf(andIncrement));
-        annu.b();
+        appn.b();
         Context applicationContext = getApplicationContext();
-        new bzfc(asej.CAST, annu.b().d(), annu.b().f(), new amdf(this), eivv.o(asnd.h(applicationContext, applicationContext.getPackageName()), null) == null ? null : annu.b().a(getApplicationContext()), Integer.valueOf(this.l), ((Boolean) annu.b().c.a()).booleanValue() ? Integer.valueOf(R.drawable.gs_cast_vd_theme_24) : null).a(getContainerActivity(), annu.b().d());
+        new cbnt(auid.CAST, appn.b().d(), appn.b().f(), new aoeq(this), elja.o(auqx.h(applicationContext, applicationContext.getPackageName()), null) == null ? null : appn.b().a(getApplicationContext()), Integer.valueOf(this.l), ((Boolean) appn.b().c.lK()).booleanValue() ? Integer.valueOf(R.drawable.gs_cast_vd_theme_24) : null).a(getContainerActivity(), appn.b().d());
     }
 }

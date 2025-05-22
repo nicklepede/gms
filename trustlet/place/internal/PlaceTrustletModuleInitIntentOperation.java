@@ -2,22 +2,22 @@ package com.google.android.gms.trustlet.place.internal;
 
 import android.content.Context;
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class PlaceTrustletModuleInitIntentOperation extends anya {
+public class PlaceTrustletModuleInitIntentOperation extends apzs {
     static final String[] a;
 
     static {
-        asot.b("Trustlet_Place", asej.TRUSTLET_PLACE);
+        ausn.b("Trustlet_Place", auid.TRUSTLET_PLACE);
         a = new String[]{"com.google.android.gms.trustlet.place.ui.TrustedPlacesSettingsActivity"};
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
         int i2 = i & 4;
         Context applicationContext = getApplicationContext();
@@ -26,6 +26,6 @@ public class PlaceTrustletModuleInitIntentOperation extends anya {
         }
         String[] strArr = a;
         int length = strArr.length;
-        asng.H(applicationContext, strArr[0], true);
+        aura.H(applicationContext, strArr[0], true);
     }
 }

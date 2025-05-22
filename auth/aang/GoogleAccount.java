@@ -3,15 +3,15 @@ package com.google.android.gms.auth.aang;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.upk;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.wlj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class GoogleAccount extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new upk();
+    public static final Parcelable.Creator CREATOR = new wlj();
     public final String a;
     public final String b;
     public final String c;
@@ -30,7 +30,7 @@ public final class GoogleAccount extends AbstractSafeParcelable {
             return false;
         }
         GoogleAccount googleAccount = (GoogleAccount) obj;
-        return arwb.b(this.a, googleAccount.a) && arwb.b(this.c, googleAccount.c) && arwb.b(this.b, googleAccount.b);
+        return atyq.b(this.a, googleAccount.a) && atyq.b(this.c, googleAccount.c) && atyq.b(this.b, googleAccount.b);
     }
 
     public final int hashCode() {
@@ -44,10 +44,10 @@ public final class GoogleAccount extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 }

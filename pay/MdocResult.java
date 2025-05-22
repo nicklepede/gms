@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctdc;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvmh;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class MdocResult extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctdc();
+    public static final Parcelable.Creator CREATOR = new cvmh();
     public String a;
     public byte[] b;
     public EncryptionParameters c;
@@ -25,7 +25,7 @@ public final class MdocResult extends AbstractSafeParcelable {
         }
         if (obj instanceof MdocResult) {
             MdocResult mdocResult = (MdocResult) obj;
-            if (arwb.b(this.a, mdocResult.a) && Arrays.equals(this.b, mdocResult.b) && arwb.b(this.c, mdocResult.c)) {
+            if (atyq.b(this.a, mdocResult.a) && Arrays.equals(this.b, mdocResult.b) && atyq.b(this.c, mdocResult.c)) {
                 return true;
             }
         }
@@ -38,11 +38,11 @@ public final class MdocResult extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.i(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.i(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.c(parcel, a);
     }
 
     public MdocResult(String str, byte[] bArr, EncryptionParameters encryptionParameters) {

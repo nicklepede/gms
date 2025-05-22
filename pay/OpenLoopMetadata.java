@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctdf;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvmk;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OpenLoopMetadata extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctdf();
+    public static final Parcelable.Creator CREATOR = new cvmk();
     public String a;
     public String b;
     public String c;
@@ -26,7 +26,7 @@ public final class OpenLoopMetadata extends AbstractSafeParcelable {
         }
         if (obj instanceof OpenLoopMetadata) {
             OpenLoopMetadata openLoopMetadata = (OpenLoopMetadata) obj;
-            if (arwb.b(this.a, openLoopMetadata.a) && arwb.b(this.b, openLoopMetadata.b) && arwb.b(this.c, openLoopMetadata.c) && arwb.b(this.d, openLoopMetadata.d)) {
+            if (atyq.b(this.a, openLoopMetadata.a) && atyq.b(this.b, openLoopMetadata.b) && atyq.b(this.c, openLoopMetadata.c) && atyq.b(this.d, openLoopMetadata.d)) {
                 return true;
             }
         }
@@ -39,12 +39,12 @@ public final class OpenLoopMetadata extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.c(parcel, a);
     }
 
     public OpenLoopMetadata(String str, String str2, String str3, Animation animation) {

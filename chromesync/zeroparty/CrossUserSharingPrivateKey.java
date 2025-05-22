@@ -3,19 +3,19 @@ package com.google.android.gms.chromesync.zeroparty;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
-import defpackage.aprz;
-import defpackage.fvbo;
+import defpackage.aruq;
+import defpackage.fxxm;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class CrossUserSharingPrivateKey implements SafeParcelable {
-    public static final Parcelable.Creator CREATOR = new aprz();
+    public static final Parcelable.Creator CREATOR = new aruq();
     public final int a;
     public final byte[] b;
 
     public CrossUserSharingPrivateKey(int i, byte[] bArr) {
-        fvbo.f(bArr, "x25519PrivateKey");
+        fxxm.f(bArr, "x25519PrivateKey");
         this.a = i;
         this.b = bArr;
     }
@@ -43,7 +43,7 @@ public final class CrossUserSharingPrivateKey implements SafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "dest");
+        fxxm.f(parcel, "dest");
         parcel.writeInt(this.a);
         parcel.writeByteArray(this.b);
     }

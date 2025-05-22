@@ -4,78 +4,78 @@ import android.accounts.Account;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.csbr;
-import defpackage.csdt;
-import defpackage.csdw;
-import defpackage.csea;
-import defpackage.ejhf;
-import defpackage.fcuj;
-import defpackage.feda;
-import defpackage.fqnv;
-import defpackage.fqob;
-import defpackage.fuvd;
-import defpackage.fuve;
-import defpackage.fuvs;
-import defpackage.fuxd;
-import defpackage.fuyy;
-import defpackage.fvbo;
-import defpackage.fvgu;
-import defpackage.vks;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cukw;
+import defpackage.cumy;
+import defpackage.cunb;
+import defpackage.cunf;
+import defpackage.eluo;
+import defpackage.ffja;
+import defpackage.fgrt;
+import defpackage.fthr;
+import defpackage.fthx;
+import defpackage.fxrb;
+import defpackage.fxrc;
+import defpackage.fxrq;
+import defpackage.fxtb;
+import defpackage.fxuw;
+import defpackage.fxxm;
+import defpackage.fycs;
+import defpackage.xgt;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class AccountsChangeIntentOperation extends csea {
-    public static final asot a = asot.b("AccountsChangeIntentOperation", asej.NOTIFICATIONS_REGISTRATION);
-    public csbr b;
+public final class AccountsChangeIntentOperation extends cunf {
+    public static final ausn a = ausn.b("AccountsChangeIntentOperation", auid.NOTIFICATIONS_REGISTRATION);
+    public cukw b;
 
-    public final csbr a() {
-        csbr csbrVar = this.b;
-        if (csbrVar != null) {
-            return csbrVar;
+    public final cukw a() {
+        cukw cukwVar = this.b;
+        if (cukwVar != null) {
+            return cukwVar;
         }
-        fvbo.j("chimeGmsAccountStorage");
+        fxxm.j("chimeGmsAccountStorage");
         return null;
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Object a2;
-        if (fqob.a.a().i()) {
-            if (fvbo.n(intent != null ? intent.getAction() : null, "com.google.android.gms.auth.GOOGLE_ACCOUNT_CHANGE")) {
-                Map e = vks.e(intent);
-                fvbo.e(e, "getRenamedAccounts(...)");
-                LinkedHashMap linkedHashMap = new LinkedHashMap(fuxd.a(e.size()));
+        if (fthx.a.lK().i()) {
+            if (fxxm.n(intent != null ? intent.getAction() : null, "com.google.android.gms.auth.GOOGLE_ACCOUNT_CHANGE")) {
+                Map e = xgt.e(intent);
+                fxxm.e(e, "getRenamedAccounts(...)");
+                LinkedHashMap linkedHashMap = new LinkedHashMap(fxtb.a(e.size()));
                 for (Map.Entry entry : e.entrySet()) {
                     linkedHashMap.put(entry.getKey(), ((Account) entry.getValue()).name);
                 }
-                LinkedHashMap linkedHashMap2 = new LinkedHashMap(fuxd.a(linkedHashMap.size()));
+                LinkedHashMap linkedHashMap2 = new LinkedHashMap(fxtb.a(linkedHashMap.size()));
                 for (Map.Entry entry2 : linkedHashMap.entrySet()) {
                     linkedHashMap2.put(((Account) entry2.getKey()).name, entry2.getValue());
                 }
                 if (!linkedHashMap2.isEmpty()) {
                     try {
-                        fvgu.a(fuyy.a, new csdw(this, linkedHashMap2, null));
-                        a2 = fuvs.a;
+                        fycs.a(fxuw.a, new cunb(this, linkedHashMap2, null));
+                        a2 = fxrq.a;
                     } catch (Throwable th) {
-                        a2 = fuve.a(th);
+                        a2 = fxrc.a(th);
                     }
-                    Throwable a3 = fuvd.a(a2);
+                    Throwable a3 = fxrb.a(a2);
                     if (a3 != null) {
-                        ((ejhf) ((ejhf) a.j()).s(a3)).x("Failed to handle username change.");
+                        ((eluo) ((eluo) a.j()).s(a3)).x("Failed to handle username change.");
                     }
                 }
             }
         }
-        if (new feda(fqob.b().c, fqnv.a).contains(fcuj.ACCOUNT_CHANGED)) {
-            asot asotVar = NotificationsRegistrationTaskBoundService.a;
+        if (new fgrt(fthx.b().c, fthr.a).contains(ffja.ACCOUNT_CHANGED)) {
+            ausn ausnVar = NotificationsRegistrationTaskBoundService.a;
             Context applicationContext = getApplicationContext();
-            fvbo.e(applicationContext, "getApplicationContext(...)");
-            fvbo.f(applicationContext, "context");
-            csdt.a(applicationContext, "RE_REGISTER_ACCOUNTS_CHANGE");
+            fxxm.e(applicationContext, "getApplicationContext(...)");
+            fxxm.f(applicationContext, "context");
+            cumy.a(applicationContext, "RE_REGISTER_ACCOUNTS_CHANGE");
         }
     }
 }

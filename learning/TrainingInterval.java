@@ -3,15 +3,15 @@ package com.google.android.gms.learning;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bqez;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bsmp;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public class TrainingInterval extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bqez();
+    public static final Parcelable.Creator CREATOR = new bsmp();
     public final int a;
     public final long b;
 
@@ -25,7 +25,7 @@ public class TrainingInterval extends AbstractSafeParcelable {
                 z = false;
             }
         }
-        arwm.c(z, "Recurrent jobs cannot have non-positive minimal interval.");
+        atzb.c(z, "Recurrent jobs cannot have non-positive minimal interval.");
         this.a = i;
         this.b = j;
     }
@@ -48,9 +48,9 @@ public class TrainingInterval extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.q(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.q(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 }

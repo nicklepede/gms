@@ -11,72 +11,72 @@ import android.widget.FrameLayout;
 import com.google.android.chimera.WebView;
 import com.google.android.gms.R;
 import com.google.android.gms.growth.uiflow.ui.widget.WebViewWrapper;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bkjl;
-import defpackage.bkkt;
-import defpackage.bkux;
-import defpackage.bkva;
-import defpackage.bkvz;
-import defpackage.fowd;
-import defpackage.fuuw;
-import defpackage.fuvg;
-import defpackage.fvaf;
-import defpackage.fvaq;
-import defpackage.fvbo;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bmqb;
+import defpackage.bmrj;
+import defpackage.bnbn;
+import defpackage.bnbq;
+import defpackage.bncp;
+import defpackage.frpg;
+import defpackage.fxqu;
+import defpackage.fxre;
+import defpackage.fxwd;
+import defpackage.fxwo;
+import defpackage.fxxm;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class WebViewWrapper extends FrameLayout implements bkvz {
-    public static final asot a = asot.b("UiFlow", asej.GROWTH_UIFLOW);
-    public bkjl b;
-    private final fuuw c;
+public final class WebViewWrapper extends FrameLayout implements bncp {
+    public static final ausn a = ausn.b("UiFlow", auid.GROWTH_UIFLOW);
+    public bmqb b;
+    private final fxqu c;
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public WebViewWrapper(Context context) {
         this(context, null, 0, 6, null);
-        fvbo.f(context, "context");
+        fxxm.f(context, "context");
     }
 
-    private final WebView c() {
+    private final WebView b() {
         Object a2 = this.c.a();
-        fvbo.e(a2, "getValue(...)");
+        fxxm.e(a2, "getValue(...)");
         return (WebView) a2;
     }
 
-    @Override // defpackage.bkvz
-    public final void a(bkkt bkktVar) {
-        fvbo.f(bkktVar, "uiFlowFlags");
-        setSaveEnabled(true);
-        if (fowd.c()) {
-            FrameLayout.inflate(getContext(), R.layout.webview_wrapper_bc25, this);
-        } else {
-            FrameLayout.inflate(getContext(), R.layout.webview_wrapper, this);
-        }
-    }
-
-    public final void b(fvaq fvaqVar) {
-        WebView c = c();
-        WebSettings settings = c.getSettings();
+    public final void a(fxwo fxwoVar) {
+        WebView b = b();
+        WebSettings settings = b.getSettings();
         settings.setAllowContentAccess(true);
         settings.setDomStorageEnabled(true);
         settings.setDatabaseEnabled(true);
         settings.setJavaScriptEnabled(true);
         settings.setSupportMultipleWindows(true);
-        c.setBackgroundColor(0);
-        fvaqVar.a(c);
-        String url = c().getUrl();
-        bkjl bkjlVar = null;
+        b.setBackgroundColor(0);
+        fxwoVar.a(b);
+        String url = b().getUrl();
+        bmqb bmqbVar = null;
         String host = url != null ? Uri.parse(url).getHost() : null;
-        c.setWebChromeClient(new bkux());
-        bkjl bkjlVar2 = this.b;
-        if (bkjlVar2 == null) {
-            fvbo.j("clientStreamz");
+        b.setWebChromeClient(new bnbn());
+        bmqb bmqbVar2 = this.b;
+        if (bmqbVar2 == null) {
+            fxxm.j("clientStreamz");
         } else {
-            bkjlVar = bkjlVar2;
+            bmqbVar = bmqbVar2;
         }
-        c.setWebViewClient(new bkva(this, bkjlVar, host));
+        b.setWebViewClient(new bnbq(this, bmqbVar, host));
+    }
+
+    @Override // defpackage.bncp
+    public final void g(bmrj bmrjVar) {
+        fxxm.f(bmrjVar, "uiFlowFlags");
+        setSaveEnabled(true);
+        if (frpg.c()) {
+            FrameLayout.inflate(getContext(), R.layout.webview_wrapper_bc25, this);
+        } else {
+            FrameLayout.inflate(getContext(), R.layout.webview_wrapper, this);
+        }
     }
 
     @Override // android.view.View
@@ -85,22 +85,22 @@ public final class WebViewWrapper extends FrameLayout implements bkvz {
             super.onRestoreInstanceState(parcelable);
         } else {
             super.onRestoreInstanceState(((Bundle) parcelable).getParcelable("_parent_state"));
-            b(new fvaq() { // from class: bkuu
-                @Override // defpackage.fvaq
+            a(new fxwo() { // from class: bnbk
+                @Override // defpackage.fxwo
                 public final Object a(Object obj) {
                     String url;
                     WebView webView = (WebView) obj;
-                    asot asotVar = WebViewWrapper.a;
-                    fvbo.f(webView, "$this$initializeWebView");
+                    ausn ausnVar = WebViewWrapper.a;
+                    fxxm.f(webView, "$this$initializeWebView");
                     webView.restoreState((Bundle) parcelable);
                     if (Build.VERSION.SDK_INT >= 29 && (url = webView.getUrl()) != null) {
                         Uri parse = Uri.parse(url);
-                        if (!fvbo.n(parse.getQueryParameter("dark"), bkuw.a(webView))) {
-                            fvbo.c(parse);
-                            webView.loadUrl(bkuw.b(webView, parse).toString());
+                        if (!fxxm.n(parse.getQueryParameter("dark"), bnbm.a(webView))) {
+                            fxxm.c(parse);
+                            webView.loadUrl(bnbm.b(webView, parse).toString());
                         }
                     }
-                    return fuvs.a;
+                    return fxrq.a;
                 }
             });
         }
@@ -110,22 +110,22 @@ public final class WebViewWrapper extends FrameLayout implements bkvz {
     protected final Parcelable onSaveInstanceState() {
         Bundle bundle = new Bundle();
         bundle.putParcelable("_parent_state", super.onSaveInstanceState());
-        c().saveState(bundle);
+        b().saveState(bundle);
         return bundle;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public WebViewWrapper(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
-        fvbo.f(context, "context");
+        fxxm.f(context, "context");
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public WebViewWrapper(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        fvbo.f(context, "context");
-        this.c = new fuvg(new fvaf() { // from class: bkut
-            @Override // defpackage.fvaf
+        fxxm.f(context, "context");
+        this.c = new fxre(new fxwd() { // from class: bnbj
+            @Override // defpackage.fxwd
             public final Object a() {
                 return (WebView) WebViewWrapper.this.findViewById(R.id.webview);
             }

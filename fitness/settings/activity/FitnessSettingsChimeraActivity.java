@@ -7,20 +7,20 @@ import android.os.LocaleList;
 import android.view.View;
 import android.widget.Toast;
 import com.google.android.gms.R;
-import defpackage.aspy;
-import defpackage.asqh;
-import defpackage.bgvi;
-import defpackage.bhaf;
-import defpackage.cslv;
-import defpackage.eiig;
-import defpackage.focp;
+import defpackage.auts;
+import defpackage.auub;
+import defpackage.bizy;
+import defpackage.bjev;
+import defpackage.cuva;
+import defpackage.ekvl;
+import defpackage.fquy;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FitnessSettingsChimeraActivity extends bgvi implements View.OnClickListener {
+public class FitnessSettingsChimeraActivity extends bizy implements View.OnClickListener {
     static {
-        bhaf.a();
+        bjev.a();
     }
 
     public FitnessSettingsChimeraActivity() {
@@ -30,15 +30,15 @@ public class FitnessSettingsChimeraActivity extends bgvi implements View.OnClick
     private final void k(int i) {
         String languageTag;
         LocaleList localeList;
-        if (!aspy.b(this)) {
+        if (!auts.b(this)) {
             Toast.makeText(this, R.string.common_no_network, 1).show();
             return;
         }
-        int b = (int) focp.a.a().b();
-        focp focpVar = focp.a;
-        int a = (int) focpVar.a().a();
-        String g = focpVar.a().g();
-        if (asqh.a()) {
+        fquy fquyVar = fquy.a;
+        int b = (int) fquyVar.lK().b();
+        int a = (int) fquyVar.lK().a();
+        String g = fquyVar.lK().g();
+        if (auub.a()) {
             localeList = LocaleList.getDefault();
             languageTag = localeList.toLanguageTags();
         } else {
@@ -48,13 +48,13 @@ public class FitnessSettingsChimeraActivity extends bgvi implements View.OnClick
             g = Uri.parse(g).buildUpon().appendQueryParameter("hl", languageTag).build().toString();
         }
         String a2 = a();
-        eiig.x(a2);
-        Intent c = cslv.c(g, a2, b, a);
+        ekvl.y(a2);
+        Intent c = cuva.c(g, a2, b, a);
         c.addFlags(402653184);
         startActivityForResult(c, i);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i != 1) {
@@ -85,7 +85,7 @@ public class FitnessSettingsChimeraActivity extends bgvi implements View.OnClick
         }
     }
 
-    @Override // defpackage.bgvi, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.bizy, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if ("com.google.android.gms.fitness.settings.DELETE_HISTORY".equals(getIntent().getAction())) {

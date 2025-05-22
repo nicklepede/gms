@@ -7,119 +7,119 @@ import android.os.Build;
 import android.os.LocaleList;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.asno;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.esyz;
-import defpackage.esza;
-import defpackage.feay;
-import defpackage.fkce;
-import defpackage.ump;
+import defpackage.auri;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.evop;
+import defpackage.evoq;
+import defpackage.fgpr;
+import defpackage.fmsq;
+import defpackage.wio;
 import java.util.Collections;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AuditApiChimeraService extends bxgd {
+public class AuditApiChimeraService extends bzot {
     public AuditApiChimeraService() {
         super(154, "com.google.android.gms.audit.service.START", Collections.EMPTY_SET, 1, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         LocaleList locales;
         int size;
         Locale locale;
-        esyz esyzVar = (esyz) esza.a.v();
+        evop evopVar = (evop) evoq.a.v();
         String str = Build.ID;
-        if (!esyzVar.b.L()) {
-            esyzVar.U();
+        if (!evopVar.b.L()) {
+            evopVar.U();
         }
-        esza eszaVar = (esza) esyzVar.b;
+        evoq evoqVar = (evoq) evopVar.b;
         str.getClass();
-        eszaVar.b |= 2;
-        eszaVar.d = str;
+        evoqVar.b |= 2;
+        evoqVar.d = str;
         int i = Build.VERSION.SDK_INT;
-        if (!esyzVar.b.L()) {
-            esyzVar.U();
+        if (!evopVar.b.L()) {
+            evopVar.U();
         }
-        esza eszaVar2 = (esza) esyzVar.b;
-        eszaVar2.b |= 1;
-        eszaVar2.c = i;
+        evoq evoqVar2 = (evoq) evopVar.b;
+        evoqVar2.b |= 1;
+        evoqVar2.c = i;
         String str2 = getServiceRequest.f;
         try {
             PackageInfo packageInfo = getPackageManager().getPackageInfo(str2, 0);
             int i2 = packageInfo.versionCode;
-            if (!esyzVar.b.L()) {
-                esyzVar.U();
+            if (!evopVar.b.L()) {
+                evopVar.U();
             }
-            esza eszaVar3 = (esza) esyzVar.b;
-            eszaVar3.b |= 8;
-            eszaVar3.f = i2;
+            evoq evoqVar3 = (evoq) evopVar.b;
+            evoqVar3.b |= 8;
+            evoqVar3.f = i2;
             if (packageInfo.versionName != null) {
                 String str3 = packageInfo.versionName;
-                if (!esyzVar.b.L()) {
-                    esyzVar.U();
+                if (!evopVar.b.L()) {
+                    evopVar.U();
                 }
-                esza eszaVar4 = (esza) esyzVar.b;
+                evoq evoqVar4 = (evoq) evopVar.b;
                 str3.getClass();
-                eszaVar4.b |= 4;
-                eszaVar4.e = str3;
+                evoqVar4.b |= 4;
+                evoqVar4.e = str3;
             }
         } catch (PackageManager.NameNotFoundException unused) {
         }
-        if (!esyzVar.b.L()) {
-            esyzVar.U();
+        if (!evopVar.b.L()) {
+            evopVar.U();
         }
-        esza eszaVar5 = (esza) esyzVar.b;
+        evoq evoqVar5 = (evoq) evopVar.b;
         str2.getClass();
-        eszaVar5.b |= 16;
-        eszaVar5.g = str2;
-        String num = Integer.toString(251661004);
-        if (!esyzVar.b.L()) {
-            esyzVar.U();
+        evoqVar5.b |= 16;
+        evoqVar5.g = str2;
+        String num = Integer.toString(251864004);
+        if (!evopVar.b.L()) {
+            evopVar.U();
         }
-        esza eszaVar6 = (esza) esyzVar.b;
+        evoq evoqVar6 = (evoq) evopVar.b;
         num.getClass();
-        eszaVar6.b |= 32;
-        eszaVar6.h = num;
+        evoqVar6.b |= 32;
+        evoqVar6.h = num;
         String num2 = Integer.toString(getServiceRequest.e);
-        if (!esyzVar.b.L()) {
-            esyzVar.U();
+        if (!evopVar.b.L()) {
+            evopVar.U();
         }
-        esza eszaVar7 = (esza) esyzVar.b;
+        evoq evoqVar7 = (evoq) evopVar.b;
         num2.getClass();
-        eszaVar7.b |= 64;
-        eszaVar7.i = num2;
+        evoqVar7.b |= 64;
+        evoqVar7.i = num2;
         String str4 = Build.MANUFACTURER + " " + Build.MODEL;
-        if (!esyzVar.b.L()) {
-            esyzVar.U();
+        if (!evopVar.b.L()) {
+            evopVar.U();
         }
-        esza eszaVar8 = (esza) esyzVar.b;
-        eszaVar8.b |= 128;
-        eszaVar8.j = str4;
+        evoq evoqVar8 = (evoq) evopVar.b;
+        evoqVar8.b |= 128;
+        evoqVar8.j = str4;
         Configuration configuration = getResources().getConfiguration();
         if (Build.VERSION.SDK_INT >= 24) {
             locales = configuration.getLocales();
             size = locales.size();
-            long min = Math.min(size, fkce.a.a().a());
+            long min = Math.min(size, fmsq.a.lK().a());
             for (int i3 = 0; i3 < min; i3++) {
                 locale = locales.get(i3);
-                esyzVar.a(locale.toLanguageTag());
+                evopVar.a(locale.toLanguageTag());
             }
         } else {
             String languageTag = configuration.locale.toLanguageTag();
             if (languageTag != null) {
-                esyzVar.a(languageTag);
+                evopVar.a(languageTag);
             }
         }
-        feay w = feay.w(asno.c(ModuleManager.get(this)).a());
-        if (!esyzVar.b.L()) {
-            esyzVar.U();
+        fgpr w = fgpr.w(auri.d(ModuleManager.get(this)).a());
+        if (!evopVar.b.L()) {
+            evopVar.U();
         }
-        esza eszaVar9 = (esza) esyzVar.b;
-        eszaVar9.b |= 256;
-        eszaVar9.l = w;
-        bxgjVar.c(new ump((esza) esyzVar.Q(), l(), getServiceRequest.f, getServiceRequest.p));
+        evoq evoqVar9 = (evoq) evopVar.b;
+        evoqVar9.b |= 256;
+        evoqVar9.l = w;
+        bzozVar.c(new wio((evoq) evopVar.Q(), l(), getServiceRequest.f, getServiceRequest.p));
     }
 }

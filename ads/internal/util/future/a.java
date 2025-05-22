@@ -1,13 +1,13 @@
 package com.google.android.gms.ads.internal.util.future;
 
 import android.os.Build;
-import defpackage.byhl;
+import defpackage.caqd;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class a extends ScheduledThreadPoolExecutor implements AutoCloseable {
     public a(ThreadFactory threadFactory) {
@@ -46,6 +46,6 @@ final class a extends ScheduledThreadPoolExecutor implements AutoCloseable {
 
     @Override // java.util.concurrent.ScheduledThreadPoolExecutor, java.util.concurrent.ThreadPoolExecutor, java.util.concurrent.Executor
     public final void execute(Runnable runnable) {
-        super.execute(byhl.b.b(runnable));
+        super.execute(caqd.b.b(runnable));
     }
 }

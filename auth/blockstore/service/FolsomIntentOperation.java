@@ -3,61 +3,61 @@ package com.google.android.gms.auth.blockstore.service;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.auth.blockstore.service.FolsomIntentOperation;
-import defpackage.aacc;
-import defpackage.aaey;
-import defpackage.aagm;
-import defpackage.asmf;
-import defpackage.asop;
-import defpackage.asot;
-import defpackage.ejhf;
-import defpackage.enrv;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.ensv;
-import defpackage.fkvs;
-import defpackage.fkwa;
+import defpackage.accc;
+import defpackage.acey;
+import defpackage.acgm;
+import defpackage.aupz;
+import defpackage.ausj;
+import defpackage.ausn;
+import defpackage.eluo;
+import defpackage.eqfo;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgo;
+import defpackage.fnmw;
+import defpackage.fnne;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class FolsomIntentOperation extends IntentOperation {
-    public static final asot a = aacc.b("FolsomIntentOperation");
-    private final enrv b = new aaey();
-    private final ensv c = new asmf(Integer.MAX_VALUE, 10);
+    public static final ausn a = accc.b("FolsomIntentOperation");
+    private final eqfo b = new acey();
+    private final eqgo c = new aupz(Integer.MAX_VALUE, 10);
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (!asop.c(fkvs.d())) {
-            ((ejhf) a.h()).x("Feature flags are not turned on, skipping operations.");
+        if (!ausj.c(fnmw.d())) {
+            ((eluo) a.h()).x("Feature flags are not turned on, skipping operations.");
             return;
         }
         if (!"com.google.android.gms.auth.folsom.SUCCESSFUL_RECOVERY".equals(intent.getAction())) {
-            ((ejhf) a.h()).x("Not an intent event that Blockstore needs to handle. Skipping.");
+            ((eluo) a.h()).x("Not an intent event that Blockstore needs to handle. Skipping.");
             return;
         }
-        asot asotVar = a;
-        ((ejhf) asotVar.h()).x("FOLSOM_SUCCESSFUL_RECOVERY_INTENT received");
+        ausn ausnVar = a;
+        ((eluo) ausnVar.h()).x("FOLSOM_SUCCESSFUL_RECOVERY_INTENT received");
         final long longExtra = intent.getLongExtra("com.google.android.gms.auth.folsom.EXTRA_SOURCE_ANDROID_ID", 0L);
-        if (!fkwa.g() || !fkwa.a.a().q()) {
-            ((ejhf) asotVar.h()).x("feature flags not enabled, skipping restore.");
+        if (!fnne.g() || !fnne.a.lK().q()) {
+            ((eluo) ausnVar.h()).x("feature flags not enabled, skipping restore.");
         } else {
             if (longExtra == 0) {
-                ((ejhf) asotVar.j()).x("No source android id found from Folsom broadcast.");
+                ((eluo) ausnVar.j()).x("No source android id found from Folsom broadcast.");
                 return;
             }
-            ensv ensvVar = this.c;
-            final aagm b = aagm.b();
-            ensj.t(ensi.h(ensvVar.submit(new Callable() { // from class: aaex
+            eqgo eqgoVar = this.c;
+            final acgm b = acgm.b();
+            eqgc.t(eqgb.h(eqgoVar.submit(new Callable() { // from class: acex
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
-                    asot asotVar2 = FolsomIntentOperation.a;
-                    aagn a2 = aagp.a();
+                    ausn ausnVar2 = FolsomIntentOperation.a;
+                    acgn a2 = acgp.a();
                     a2.b(longExtra);
-                    a2.c(aago.SINGLE_DEVICE);
+                    a2.c(acgo.SINGLE_DEVICE);
                     a2.b = 2;
-                    return Integer.valueOf(aagm.this.a(a2.a()));
+                    return Integer.valueOf(acgm.this.a(a2.a()));
                 }
-            })), this.b, ensvVar);
+            })), this.b, eqgoVar);
         }
     }
 }

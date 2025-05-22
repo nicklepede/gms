@@ -13,39 +13,39 @@ import com.google.android.gms.auth.firstparty.shared.SupervisedAccountOptions;
 import com.google.android.gms.auth.uiflows.controller.Controller;
 import com.google.android.gms.auth.uiflows.minutemaid.MinuteMaidChimeraActivity;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.aant;
-import defpackage.adew;
-import defpackage.adfy;
-import defpackage.adjb;
-import defpackage.adjd;
-import defpackage.adjh;
-import defpackage.adle;
-import defpackage.adli;
-import defpackage.adoq;
-import defpackage.arka;
-import defpackage.arke;
-import defpackage.arxd;
-import defpackage.asop;
-import defpackage.asqh;
-import defpackage.fkgl;
-import defpackage.fkka;
-import defpackage.fkml;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.acnt;
+import defpackage.afey;
+import defpackage.afga;
+import defpackage.afji;
+import defpackage.afjk;
+import defpackage.afjo;
+import defpackage.afll;
+import defpackage.aflp;
+import defpackage.afox;
+import defpackage.atmp;
+import defpackage.atmt;
+import defpackage.atzs;
+import defpackage.ausj;
+import defpackage.auub;
+import defpackage.fmwx;
+import defpackage.fnap;
+import defpackage.fnda;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class StartAddAccountSessionController implements Controller {
-    public static final Parcelable.Creator CREATOR = new adfy();
+    public static final Parcelable.Creator CREATOR = new afga();
     private final Context a;
-    private final aant b;
+    private final acnt b;
     private final AccountAuthenticatorResponse c;
     private final String d;
     private final boolean e;
     private final boolean f;
     private final boolean g;
     private final boolean h;
-    private final arke i;
+    private final atmt i;
     private final String j;
     private final String k;
     private final String[] l;
@@ -62,33 +62,33 @@ public class StartAddAccountSessionController implements Controller {
     private String w;
     private boolean x;
 
-    public StartAddAccountSessionController(AccountAuthenticatorResponse accountAuthenticatorResponse, String str, boolean z, boolean z2, boolean z3, arke arkeVar, String str2, String str3, String[] strArr, String str4, SupervisedAccountOptions supervisedAccountOptions, boolean z4, AppDescription appDescription, boolean z5) {
-        this(accountAuthenticatorResponse, str, z, z2, false, z3, arkeVar, str2, str3, strArr, str4, null, false, false, null, null, null, null, supervisedAccountOptions, z4, appDescription, z5);
+    public StartAddAccountSessionController(AccountAuthenticatorResponse accountAuthenticatorResponse, String str, boolean z, boolean z2, boolean z3, atmt atmtVar, String str2, String str3, String[] strArr, String str4, SupervisedAccountOptions supervisedAccountOptions, boolean z4, AppDescription appDescription, boolean z5) {
+        this(accountAuthenticatorResponse, str, z, z2, false, z3, atmtVar, str2, str3, strArr, str4, null, false, false, null, null, null, null, supervisedAccountOptions, z4, appDescription, z5);
     }
 
     private final Intent c(String str) {
         boolean z = this.e;
         int i = true != z ? 4 : 0;
         boolean z2 = this.h;
-        adjh adjhVar = adjh.c;
+        afjo afjoVar = afjo.c;
         Context context = this.a;
-        return adjhVar.a(context, new adjd(z2, z, i, context.getString(R.string.common_login_error_title), str, this.i));
+        return afjoVar.a(context, new afjk(z2, z, i, context.getString(R.string.common_login_error_title), str, this.i));
     }
 
-    private final adle d() {
+    private final afll d() {
         AccountAuthenticatorResponse accountAuthenticatorResponse = this.c;
         if (accountAuthenticatorResponse != null) {
             accountAuthenticatorResponse.onError(4, "canceled");
         }
-        return new adle(0, null, 0, null, R.anim.sud_slide_back_in, R.anim.sud_slide_back_out);
+        return new afll(0, null, 0, null, R.anim.sud_slide_back_in, R.anim.sud_slide_back_out);
     }
 
-    private final adle e() {
+    private final afll e() {
         AccountAuthenticatorResponse accountAuthenticatorResponse = this.c;
         if (accountAuthenticatorResponse != null) {
             accountAuthenticatorResponse.onError(4, "skipped or error");
         }
-        return new adle(0, null, 1, null, R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
+        return new afll(0, null, 1, null, R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
     }
 
     private final boolean f() {
@@ -96,71 +96,72 @@ public class StartAddAccountSessionController implements Controller {
     }
 
     private static boolean g() {
-        return fkml.d() || fkml.c();
+        return fnda.d() || fnda.c();
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller
-    public final adle a(adli adliVar) {
-        if (adliVar == null) {
+    public final afll a(aflp aflpVar) {
+        if (aflpVar == null) {
             if (!this.b.a()) {
-                return new adle(19, c(this.a.getString(R.string.auth_error_no_network)), 0, null, -1, -1);
+                return new afll(19, c(this.a.getString(R.string.auth_error_no_network)), 0, null, -1, -1);
             }
             Context context = this.a;
             boolean z = this.h;
             boolean z2 = this.e;
-            arke arkeVar = this.i;
-            Intent b = arka.b(context, z, z2, arkeVar.a(), Bundle.EMPTY);
+            atmt atmtVar = this.i;
+            Intent b = atmp.b(context, z, z2, atmtVar.a(), Bundle.EMPTY);
             if (b != null) {
-                return new adle(0, WrapperControlledChimeraActivity.b(context, z, arkeVar, b), 0, null, -1, -1);
+                return new afll(0, WrapperControlledChimeraActivity.b(context, z, atmtVar, b), 0, null, -1, -1);
             }
-            if (asqh.c() && this.o.c == 1) {
+            if (auub.c() && this.o.c == 1) {
                 r3 = 5;
-            } else if (asqh.c() && this.o.c == 2) {
+            } else if (auub.c() && this.o.c == 2) {
                 r3 = 6;
             } else if (!f()) {
                 r3 = 1;
             }
-            adoq adoqVar = new adoq(context, r3);
-            adoqVar.a = this.v;
+            afox afoxVar = new afox(context, r3);
+            afoxVar.a = this.v;
             String str = this.d;
-            adoqVar.b = str;
-            adoqVar.b(arkeVar);
-            return new adle(10, MinuteMaidChimeraActivity.o(context, str, z2, this.f, this.g, true, z, arkeVar, this.l, g() ? this.o : null, null, this.j, this.k, this.m, this.n, true, false, false, false, null, asop.c(fkka.b()) ? adew.a(context) : null, 0, adoqVar.a()), 0, null, -1, -1);
+            afoxVar.b = str;
+            afoxVar.b(atmtVar);
+            return new afll(10, MinuteMaidChimeraActivity.o(context, str, z2, this.f, this.g, true, z, atmtVar, this.l, g() ? this.o : null, null, this.j, this.k, this.m, this.n, true, false, false, false, null, ausj.c(fnap.b()) ? afey.a(context) : null, 0, afoxVar.a()), 0, null, -1, -1);
         }
-        Intent intent = adliVar.c;
-        aanp aanpVar = new aanp(intent != null ? intent.getExtras() : new Bundle());
-        int i = adliVar.a;
+        Intent intent = aflpVar.c;
+        acnp acnpVar = new acnp(intent != null ? intent.getExtras() : new Bundle());
+        int i = aflpVar.a;
         if (i == 0) {
-            int i2 = adliVar.b;
+            int i2 = aflpVar.b;
             if (i2 == -1) {
                 r3 = true != f() ? 1 : 2;
                 Context context2 = this.a;
-                adoq adoqVar2 = new adoq(context2, r3);
-                adoqVar2.a = this.v;
+                afox afoxVar2 = new afox(context2, r3);
+                afoxVar2.a = this.v;
                 String str2 = this.d;
-                adoqVar2.b = str2;
-                arke arkeVar2 = this.i;
-                adoqVar2.b(arkeVar2);
-                return new adle(10, MinuteMaidChimeraActivity.o(context2, str2, this.e, this.f, this.g, true, this.h, arkeVar2, this.l, g() ? this.o : null, null, this.j, this.k, this.m, this.n, true, false, false, false, null, asop.c(fkka.b()) ? adew.a(context2) : null, 0, adoqVar2.a()), 0, null, -1, -1);
+                afoxVar2.b = str2;
+                atmt atmtVar2 = this.i;
+                afoxVar2.b(atmtVar2);
+                return new afll(10, MinuteMaidChimeraActivity.o(context2, str2, this.e, this.f, this.g, true, this.h, atmtVar2, this.l, g() ? this.o : null, null, this.j, this.k, this.m, this.n, true, false, false, false, null, ausj.c(fnap.b()) ? afey.a(context2) : null, 0, afoxVar2.a()), 0, null, -1, -1);
             }
             if (i2 == 0) {
                 return d();
             }
             if (i2 == 1) {
-                return new adle(19, c(this.a.getString(R.string.auth_error_generic_server_error)), 0, null, R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
+                return new afll(19, c(this.a.getString(R.string.auth_error_generic_server_error)), 0, null, R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
             }
         } else if (i == 10) {
-            int i3 = adliVar.b;
+            int i3 = aflpVar.b;
             if (i3 == -1) {
-                this.t = (String) aanpVar.a(MinuteMaidChimeraActivity.h);
-                this.u = (String) aanpVar.a(MinuteMaidChimeraActivity.i);
-                this.v = (String) aanpVar.a(MinuteMaidChimeraActivity.j);
-                this.w = (String) aanpVar.a(MinuteMaidChimeraActivity.k);
-                this.x = ((Boolean) aanpVar.b(MinuteMaidChimeraActivity.l, false)).booleanValue();
-                this.s = ((Boolean) aanpVar.b(adjb.e, false)).booleanValue();
-                boolean z3 = fkgl.c() ? this.p : this.e;
+                this.t = (String) acnpVar.a(MinuteMaidChimeraActivity.h);
+                acno acnoVar = MinuteMaidChimeraActivity.i;
+                this.u = (String) acnpVar.a(acnoVar);
+                this.v = (String) acnpVar.a(MinuteMaidChimeraActivity.j);
+                this.w = (String) acnpVar.a(MinuteMaidChimeraActivity.k);
+                this.x = ((Boolean) acnpVar.b(MinuteMaidChimeraActivity.l, false)).booleanValue();
+                this.s = ((Boolean) acnpVar.b(afji.e, false)).booleanValue();
+                boolean z3 = fmwx.c() ? this.p : this.e;
                 boolean z4 = this.h;
-                arke arkeVar3 = this.i;
+                atmt atmtVar3 = this.i;
                 String str3 = this.t;
                 String str4 = this.u;
                 boolean z5 = this.x;
@@ -168,11 +169,11 @@ public class StartAddAccountSessionController implements Controller {
                 String str5 = this.v;
                 String str6 = this.d;
                 boolean z7 = this.r;
-                aano aanoVar = FinishSessionChimeraActivity.i;
+                acno acnoVar2 = FinishSessionChimeraActivity.i;
                 Bundle bundle = new Bundle();
                 bundle.putBoolean(FinishSessionChimeraActivity.j.a, z3);
                 bundle.putBoolean(FinishSessionChimeraActivity.k.a, z4);
-                bundle.putParcelable(FinishSessionChimeraActivity.l.a, arkeVar3.a());
+                bundle.putParcelable(FinishSessionChimeraActivity.l.a, atmtVar3.a());
                 bundle.putString(FinishSessionChimeraActivity.m.a, str3);
                 bundle.putString(FinishSessionChimeraActivity.n.a, str4);
                 bundle.putBoolean(FinishSessionChimeraActivity.o.a, z5);
@@ -180,20 +181,20 @@ public class StartAddAccountSessionController implements Controller {
                 bundle.putString(FinishSessionChimeraActivity.r.a, str6);
                 bundle.putString(FinishSessionChimeraActivity.s.a, str5);
                 bundle.putString(FinishSessionChimeraActivity.i.a, "finish_add_account_session_type");
-                bundle.putBoolean(arka.a.a, z7);
+                bundle.putBoolean(atmp.a.a, z7);
                 Bundle bundle2 = new Bundle();
                 bundle2.putBundle("accountSessionBundle", bundle);
                 bundle2.putString("password", this.w);
-                if (asqh.c() && this.q.b == Process.myUid()) {
+                if (auub.c() && this.q.b == Process.myUid()) {
                     bundle2.putString("authAccount", this.v);
-                    bundle2.putString(MinuteMaidChimeraActivity.i.a, this.u);
+                    bundle2.putString(acnoVar.a, this.u);
                 }
                 Intent putExtras = new Intent().putExtras(bundle2);
                 AccountAuthenticatorResponse accountAuthenticatorResponse = this.c;
                 if (accountAuthenticatorResponse != null) {
                     accountAuthenticatorResponse.onResult(bundle2);
                 }
-                return new adle(0, null, -1, putExtras, R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
+                return new afll(0, null, -1, putExtras, R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
             }
             if (i3 == 0) {
                 return d();
@@ -202,11 +203,11 @@ public class StartAddAccountSessionController implements Controller {
                 return e();
             }
             if (i3 == 2) {
-                String str7 = (String) aanpVar.a(MinuteMaidChimeraActivity.m);
-                return new adle(19, str7 != null ? c(str7) : c(this.a.getString(R.string.auth_error_generic_server_error)), 0, null, R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
+                String str7 = (String) acnpVar.a(MinuteMaidChimeraActivity.m);
+                return new afll(19, str7 != null ? c(str7) : c(this.a.getString(R.string.auth_error_generic_server_error)), 0, null, R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
             }
         } else if (i == 19) {
-            int i4 = adliVar.b;
+            int i4 = aflpVar.b;
             if (i4 == -1) {
                 return e();
             }
@@ -214,7 +215,7 @@ public class StartAddAccountSessionController implements Controller {
                 return d();
             }
         }
-        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(adliVar.b)));
+        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(aflpVar.b)));
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller
@@ -247,22 +248,22 @@ public class StartAddAccountSessionController implements Controller {
         parcel.writeString(this.u);
         parcel.writeString(this.v);
         parcel.writeString(this.w);
-        parcel.writeByteArray(arxd.n(this.o));
+        parcel.writeByteArray(atzs.n(this.o));
         parcel.writeByte(this.p ? (byte) 1 : (byte) 0);
         parcel.writeParcelable(this.q, 0);
         parcel.writeByte(this.r ? (byte) 1 : (byte) 0);
     }
 
-    public StartAddAccountSessionController(AccountAuthenticatorResponse accountAuthenticatorResponse, String str, boolean z, boolean z2, boolean z3, boolean z4, arke arkeVar, String str2, String str3, String[] strArr, String str4, String str5, boolean z5, boolean z6, String str6, String str7, String str8, String str9, SupervisedAccountOptions supervisedAccountOptions, boolean z7, AppDescription appDescription, boolean z8) {
-        aant aantVar = new aant(AppContextProvider.a());
+    public StartAddAccountSessionController(AccountAuthenticatorResponse accountAuthenticatorResponse, String str, boolean z, boolean z2, boolean z3, boolean z4, atmt atmtVar, String str2, String str3, String[] strArr, String str4, String str5, boolean z5, boolean z6, String str6, String str7, String str8, String str9, SupervisedAccountOptions supervisedAccountOptions, boolean z7, AppDescription appDescription, boolean z8) {
+        acnt acntVar = new acnt(AppContextProvider.a());
         this.a = AppContextProvider.a();
-        this.b = aantVar;
+        this.b = acntVar;
         this.c = accountAuthenticatorResponse;
         this.d = str;
         this.e = z;
         this.f = z2;
         this.g = z3;
-        this.i = arkeVar;
+        this.i = atmtVar;
         this.h = z4;
         this.j = str2;
         this.k = str3;

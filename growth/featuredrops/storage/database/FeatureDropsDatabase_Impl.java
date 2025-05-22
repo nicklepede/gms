@@ -1,10 +1,10 @@
 package com.google.android.gms.growth.featuredrops.storage.database;
 
-import defpackage.bkkc;
-import defpackage.bkkd;
-import defpackage.bkki;
-import defpackage.kol;
-import defpackage.kpp;
+import defpackage.bmqs;
+import defpackage.bmqt;
+import defpackage.bmqy;
+import defpackage.mgw;
+import defpackage.mie;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -13,55 +13,55 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class FeatureDropsDatabase_Impl extends FeatureDropsDatabase {
-    private volatile bkkd l;
+    private volatile bmqt m;
 
-    @Override // defpackage.kpm
-    protected final kol a() {
-        return new kol(this, new HashMap(0), new HashMap(0), "ScreenEntity");
+    @Override // defpackage.mhx
+    protected final mgw a() {
+        return new mgw(this, new HashMap(0), new HashMap(0), "ScreenEntity");
     }
 
-    @Override // defpackage.kpm
-    protected final /* synthetic */ kpp c() {
-        return new bkkc(this);
+    @Override // defpackage.mhx
+    protected final /* synthetic */ mie c() {
+        return new bmqs(this);
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     protected final Map e() {
         HashMap hashMap = new HashMap();
-        hashMap.put(bkkd.class, Collections.EMPTY_LIST);
+        hashMap.put(bmqt.class, Collections.EMPTY_LIST);
         return hashMap;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final Set f() {
         return new HashSet();
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final void k() {
         throw null;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final List s() {
         return new ArrayList();
     }
 
     @Override // com.google.android.gms.growth.featuredrops.storage.database.FeatureDropsDatabase
-    public final bkkd v() {
-        bkkd bkkdVar;
-        if (this.l != null) {
-            return this.l;
+    public final bmqt v() {
+        bmqt bmqtVar;
+        if (this.m != null) {
+            return this.m;
         }
         synchronized (this) {
-            if (this.l == null) {
-                this.l = new bkki(this);
+            if (this.m == null) {
+                this.m = new bmqy(this);
             }
-            bkkdVar = this.l;
+            bmqtVar = this.m;
         }
-        return bkkdVar;
+        return bmqtVar;
     }
 }

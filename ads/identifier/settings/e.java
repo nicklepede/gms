@@ -5,25 +5,25 @@ import android.net.Uri;
 import android.util.Base64;
 import android.util.Log;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.asnh;
-import defpackage.bqux;
-import defpackage.bquz;
-import defpackage.dxax;
-import defpackage.dxbg;
-import defpackage.dxby;
-import defpackage.dxca;
-import defpackage.dxci;
-import defpackage.dxew;
-import defpackage.dxff;
-import defpackage.dxfr;
-import defpackage.dxfs;
-import defpackage.dxft;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.ejtr;
-import defpackage.ensh;
-import defpackage.fjzz;
-import defpackage.fmut;
+import defpackage.aurb;
+import defpackage.btco;
+import defpackage.btcq;
+import defpackage.dzmx;
+import defpackage.dzng;
+import defpackage.dzny;
+import defpackage.dzoa;
+import defpackage.dzoi;
+import defpackage.dzqw;
+import defpackage.dzrf;
+import defpackage.dzrr;
+import defpackage.dzrs;
+import defpackage.dzrt;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.emha;
+import defpackage.eqga;
+import defpackage.fmqe;
+import defpackage.fpmr;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -32,17 +32,17 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class e {
-    private static dxbg a;
+    private static dzng a;
 
     public static byte[] a(PackageInfo packageInfo, String str) {
         try {
-            if (!fjzz.a.a().D()) {
-                File file = fmut.i() ? new File(bqux.a.a(packageInfo.applicationInfo.sourceDir)) : new File(packageInfo.applicationInfo.sourceDir);
+            if (!fmqe.a.lK().D()) {
+                File file = fpmr.i() ? new File(btco.a.a(packageInfo.applicationInfo.sourceDir)) : new File(packageInfo.applicationInfo.sourceDir);
                 byte[] bArr = new byte[AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES];
-                MessageDigest e = asnh.e("SHA-256");
+                MessageDigest e = aurb.e("SHA-256");
                 if (e == null) {
                     Log.d("ApkHashUtils", String.format("Hashing algorithm cannot be found", new Object[0]));
                     return null;
@@ -64,18 +64,18 @@ public final class e {
                 }
             }
             Uri.Builder path = new Uri.Builder().scheme("file").authority("").path("/");
-            int i = eitj.d;
-            eite eiteVar = new eite();
+            int i = elgo.d;
+            elgj elgjVar = new elgj();
             path.path(packageInfo.applicationInfo.sourceDir);
-            Uri a2 = dxfs.a(dxby.a(path, eiteVar), dxft.b);
-            dxbg b = b();
-            dxci dxciVar = new dxci(a2);
-            dxew dxewVar = new dxew();
-            dxewVar.b = new dxax[]{dxciVar};
-            InputStream inputStream = (InputStream) b.d(a2, dxewVar);
+            Uri a2 = dzrs.a(dzny.a(path, elgjVar), dzrt.b);
+            dzng b = b();
+            dzoi dzoiVar = new dzoi(a2);
+            dzqw dzqwVar = new dzqw();
+            dzqwVar.b = new dzmx[]{dzoiVar};
+            InputStream inputStream = (InputStream) b.d(a2, dzqwVar);
             try {
-                ejtr.i(inputStream);
-                String g = dxfr.g((Uri) ensh.b(dxciVar.a, IOException.class));
+                emha.i(inputStream);
+                String g = dzrr.g((Uri) eqga.b(dzoiVar.a, IOException.class));
                 if (g == null) {
                     Log.d("ApkHashUtils", "Digest cannot be found in computed uri");
                     if (inputStream != null) {
@@ -107,16 +107,16 @@ public final class e {
         }
     }
 
-    private static synchronized dxbg b() {
-        dxbg dxbgVar;
+    private static synchronized dzng b() {
+        dzng dzngVar;
         synchronized (e.class) {
             if (a == null) {
-                dxff[] dxffVarArr = new dxff[1];
-                dxffVarArr[0] = fmut.f() ? new bquz(new dxca()) : new dxca();
-                a = new dxbg(Arrays.asList(dxffVarArr), Arrays.asList(new dxfr()));
+                dzrf[] dzrfVarArr = new dzrf[1];
+                dzrfVarArr[0] = fpmr.f() ? new btcq(new dzoa()) : new dzoa();
+                a = new dzng(Arrays.asList(dzrfVarArr), Arrays.asList(new dzrr()));
             }
-            dxbgVar = a;
+            dzngVar = a;
         }
-        return dxbgVar;
+        return dzngVar;
     }
 }

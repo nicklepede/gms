@@ -1,28 +1,28 @@
 package com.google.android.gms.romanesco.base;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.cxln;
-import defpackage.cxov;
-import defpackage.frrr;
-import defpackage.frsd;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.czvj;
+import defpackage.czys;
+import defpackage.fume;
+import defpackage.fumq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class SettingsChangedIntentOperation extends anya {
+public class SettingsChangedIntentOperation extends apzs {
     static {
-        asot.b("ROM_SettingsChangeOp", asej.ROMANESCO);
+        ausn.b("ROM_SettingsChangeOp", auid.ROMANESCO);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent, boolean z) {
-        if (frsd.a.a().i()) {
-            cxln.b(this).a.j();
+        if (fumq.a.lK().k()) {
+            czvj.b(this).a.j();
         }
-        if (frrr.d()) {
-            cxov.b(getApplicationContext());
+        if (fume.d()) {
+            czys.b(getApplicationContext());
         }
     }
 }

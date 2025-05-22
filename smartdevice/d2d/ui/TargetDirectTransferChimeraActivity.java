@@ -6,28 +6,28 @@ import android.os.ResultReceiver;
 import com.google.android.gms.R;
 import com.google.android.gms.smartdevice.d2d.utils.ProxyResultReceiver;
 import defpackage.a;
-import defpackage.arjz;
-import defpackage.arkc;
-import defpackage.ddod;
-import defpackage.ddoq;
-import defpackage.ddqr;
-import defpackage.dego;
-import defpackage.degp;
-import defpackage.degq;
+import defpackage.atmo;
+import defpackage.atmr;
+import defpackage.dfzi;
+import defpackage.dfzv;
 import defpackage.dg;
-import defpackage.fkhl;
-import defpackage.qex;
+import defpackage.dgbw;
+import defpackage.dgrr;
+import defpackage.dgrs;
+import defpackage.dgrt;
+import defpackage.fmya;
+import defpackage.ryb;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TargetDirectTransferChimeraActivity extends qex implements degp, ddqr {
+public class TargetDirectTransferChimeraActivity extends ryb implements dgrs, dgbw {
     public static final /* synthetic */ int h = 0;
     private ResultReceiver i;
     private ProxyResultReceiver j;
-    private ddod k;
+    private dfzi k;
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void o(int i) {
         Bundle bundle = new Bundle();
         bundle.putInt("dependencyErrorCode", i);
@@ -35,28 +35,28 @@ public class TargetDirectTransferChimeraActivity extends qex implements degp, dd
         finishAndRemoveTask();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         this.i.send(2004, Bundle.EMPTY);
         finishAndRemoveTask();
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        dg g = gI().g(R.id.fragment_container);
-        if (g instanceof degq) {
-            ((degq) g).y();
+        dg g = gY().g(R.id.fragment_container);
+        if (g instanceof dgrt) {
+            ((dgrt) g).y();
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (fkhl.c()) {
-            arjz.a(this);
+        if (fmya.c()) {
+            atmo.a(this);
         }
-        arkc.g(this);
+        atmr.g(this);
         setContentView(R.layout.smartdevice_fragment_container);
         ResultReceiver resultReceiver = (ResultReceiver) getIntent().getParcelableExtra("resultReceiver");
         if (resultReceiver == null) {
@@ -70,21 +70,21 @@ public class TargetDirectTransferChimeraActivity extends qex implements degp, dd
                 finish();
                 return;
             }
-            Bundle a = dego.a(parcelableArrayListExtra, "", null, null, R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24, true, getIntent().getBooleanExtra("isFidoFlow", false), false, null);
-            ddod ddodVar = new ddod(this, new ddoq());
-            this.k = ddodVar;
-            ddodVar.b(1, 1, a);
+            Bundle a = dgrr.a(parcelableArrayListExtra, "", null, null, R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24, true, getIntent().getBooleanExtra("isFidoFlow", false), false, null);
+            dfzi dfziVar = new dfzi(this, new dfzv());
+            this.k = dfziVar;
+            dfziVar.b(1, 1, a);
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         this.i.send(2002, Bundle.EMPTY);
         this.j = null;
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         this.j = new ProxyResultReceiver(null, this);
@@ -93,7 +93,7 @@ public class TargetDirectTransferChimeraActivity extends qex implements degp, dd
         this.i.send(2001, bundle);
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void p(ArrayList arrayList) {
         Bundle bundle = new Bundle();
         bundle.putParcelableArrayList("accountChallengeData", arrayList);
@@ -101,7 +101,7 @@ public class TargetDirectTransferChimeraActivity extends qex implements degp, dd
         finishAndRemoveTask();
     }
 
-    @Override // defpackage.ddqr
+    @Override // defpackage.dgbw
     public final void y(int i, Bundle bundle) {
         if (i != 2051) {
             throw new RuntimeException(a.j(i, "Unknown event code: "));
@@ -109,7 +109,7 @@ public class TargetDirectTransferChimeraActivity extends qex implements degp, dd
         finishAndRemoveTask();
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void x(String str) {
     }
 }

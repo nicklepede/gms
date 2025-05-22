@@ -4,17 +4,18 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.asiu;
-import defpackage.ckmb;
-import defpackage.ckse;
-import defpackage.clhw;
-import defpackage.ejhf;
+import defpackage.aumo;
+import defpackage.ausn;
+import defpackage.cmug;
+import defpackage.cnaj;
+import defpackage.cnqe;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class LifeCycleChimeraService extends Service {
-    public ckse a;
-    private final ServiceConnection b = new clhw(this);
+    public cnaj a;
+    private final ServiceConnection b = new cnqe(this);
 
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
@@ -23,23 +24,24 @@ public class LifeCycleChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        ((ejhf) ckmb.a.f(ckmb.a()).ah(8201)).x("create presence life cycle service");
+        ((eluo) cmug.a.f(cmug.a()).ai(8153)).x("create presence life cycle service");
         super.onCreate();
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        ((ejhf) ckmb.a.f(ckmb.a()).ah(8202)).x("presence life cycle service destroy");
+        ((eluo) cmug.a.f(cmug.a()).ai(8154)).x("presence life cycle service destroy");
         super.onDestroy();
     }
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        ((ejhf) ckmb.a.f(ckmb.a()).ah(8199)).x("bind presence service");
+        ausn ausnVar = cmug.a;
+        ((eluo) ausnVar.f(cmug.a()).ai(8151)).x("bind presence service");
         if (this.a != null) {
-            ((ejhf) ckmb.a.f(ckmb.a()).ah(8200)).x("presence api service already bonded");
+            ((eluo) ausnVar.f(cmug.a()).ai(8152)).x("presence api service already bonded");
         } else {
-            asiu.a().d(this, new Intent().setClassName("com.google.android.gms", "com.google.android.gms.chimera.PersistentApiServiceNoInstantApps").setAction("com.google.android.gms.nearby.presence.service.START"), this.b, 1);
+            aumo.a().d(this, new Intent().setClassName("com.google.android.gms", "com.google.android.gms.chimera.PersistentApiServiceNoInstantApps").setAction("com.google.android.gms.nearby.presence.service.START"), this.b, 1);
         }
         return 1;
     }

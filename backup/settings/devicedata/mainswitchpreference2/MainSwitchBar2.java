@@ -13,13 +13,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.backup.settings.devicedata.mainswitchpreference2.MainSwitchBar2;
-import defpackage.ajom;
-import defpackage.kmq;
+import defpackage.alpf;
+import defpackage.mfb;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class MainSwitchBar2 extends LinearLayout implements CompoundButton.OnCheckedChangeListener {
     public final List a;
@@ -118,9 +118,9 @@ public class MainSwitchBar2 extends LinearLayout implements CompoundButton.OnChe
         this(context, attributeSet, 0);
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class SavedState extends View.BaseSavedState {
-        public static final Parcelable.Creator CREATOR = new ajom();
+        public static final Parcelable.Creator CREATOR = new alpf();
         boolean a;
         boolean b;
 
@@ -164,7 +164,7 @@ public class MainSwitchBar2 extends LinearLayout implements CompoundButton.OnChe
         this.b = (TextView) findViewById(R.id.switch_text);
         this.c = (TextView) findViewById(R.id.switch_summary);
         this.d = (CompoundButton) findViewById(android.R.id.switch_widget);
-        a(new CompoundButton.OnCheckedChangeListener() { // from class: ajol
+        a(new CompoundButton.OnCheckedChangeListener() { // from class: alpe
             @Override // android.widget.CompoundButton.OnCheckedChangeListener
             public final void onCheckedChanged(CompoundButton compoundButton, boolean z) {
                 MainSwitchBar2.this.b(z);
@@ -175,7 +175,7 @@ public class MainSwitchBar2 extends LinearLayout implements CompoundButton.OnChe
         }
         b(this.d.isChecked());
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, kmq.g, 0, 0);
+            TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(attributeSet, mfb.g, 0, 0);
             d(obtainStyledAttributes2.getText(4));
             c(obtainStyledAttributes2.getText(7));
             obtainStyledAttributes2.recycle();

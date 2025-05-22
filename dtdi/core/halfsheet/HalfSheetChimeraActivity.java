@@ -5,27 +5,27 @@ import android.os.Bundle;
 import android.view.View;
 import com.google.android.gms.R;
 import com.google.android.gms.dtdi.core.halfsheet.HalfSheetChimeraActivity;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.ayay;
-import defpackage.ayqk;
-import defpackage.aytf;
-import defpackage.aytt;
-import defpackage.ayuv;
-import defpackage.ayva;
-import defpackage.ayvn;
-import defpackage.azds;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.baey;
+import defpackage.baug;
+import defpackage.bawz;
+import defpackage.baxn;
+import defpackage.bayp;
+import defpackage.bayu;
+import defpackage.bazh;
+import defpackage.bbhu;
 import defpackage.bp;
 import defpackage.dg;
-import defpackage.eble;
-import defpackage.ejhf;
-import defpackage.fvbo;
-import defpackage.qfp;
+import defpackage.edxt;
+import defpackage.eluo;
+import defpackage.fxxm;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class HalfSheetChimeraActivity extends qfp {
-    public static final asot j = ayay.a("HalfSheetActivity");
+public final class HalfSheetChimeraActivity extends ryt {
+    public static final ausn j = baey.a("HalfSheetActivity");
 
     public HalfSheetChimeraActivity() {
         super(R.layout.half_sheet_container);
@@ -42,7 +42,7 @@ public final class HalfSheetChimeraActivity extends qfp {
         if (byteArrayExtra != null) {
             return byteArrayExtra;
         }
-        ((ejhf) j.j()).x("No wakeup request");
+        ((eluo) j.j()).x("No wakeup request");
         a("com.google.android.gms.dtdi.core.halfsheet.extra.cancellationReasonNoWakeupRequest");
         return null;
     }
@@ -52,47 +52,47 @@ public final class HalfSheetChimeraActivity extends qfp {
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (ayqk.d()) {
+        if (baug.d()) {
             getContainerActivity();
-            int i = eble.a;
+            int i = edxt.a;
         }
-        if (!asqh.c()) {
-            ((ejhf) j.j()).x("Platform version too old");
+        if (!auub.c()) {
+            ((eluo) j.j()).x("Platform version too old");
             a("com.google.android.gms.dtdi.core.halfsheet.extra.cancellationReasonPlatformVersion");
             return;
         }
         int intExtra = getIntent().getIntExtra("com.google.android.gms.dtdi.halfsheet.extra.TYPE", 0);
         if (intExtra != 1 && intExtra != 2 && intExtra != 3 && intExtra != 4) {
-            ((ejhf) j.j()).z("Invalid type %d", intExtra);
+            ((eluo) j.j()).z("Invalid type %d", intExtra);
             a("com.google.android.gms.dtdi.core.halfsheet.extra.cancellationReasonHalfsheetType");
             return;
         }
-        findViewById(R.id.outer_container).setOnClickListener(new View.OnClickListener() { // from class: ayum
+        findViewById(R.id.outer_container).setOnClickListener(new View.OnClickListener() { // from class: bayg
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                ((ejhf) HalfSheetChimeraActivity.j.h()).x("Default handling for out-of-bounds halfsheet taps; dismissing");
+                ((eluo) HalfSheetChimeraActivity.j.h()).x("Default handling for out-of-bounds halfsheet taps; dismissing");
                 HalfSheetChimeraActivity.this.a("com.google.android.gms.dtdi.halfsheet.extra.cancellationReasonActivityDismissed");
             }
         });
         if (bundle != null) {
-            ((ejhf) j.h()).x("Activity data already exists, not adding fragment");
+            ((eluo) j.h()).x("Activity data already exists, not adding fragment");
             return;
         }
         if (intExtra == 1) {
-            if (azds.b(this)) {
-                b(new ayva());
+            if (bbhu.b(this)) {
+                b(new bayu());
                 return;
             } else {
-                ((ejhf) j.j()).z("Ineligible for type %d", intExtra);
+                ((eluo) j.j()).z("Ineligible for type %d", intExtra);
                 a("com.google.android.gms.dtdi.core.halfsheet.extra.cancellationReasonMediaTransferUnavailable");
                 return;
             }
         }
         if (intExtra == 2) {
-            ayuv ayuvVar = new ayuv();
+            bayp baypVar = new bayp();
             Bundle bundle2 = new Bundle();
             bundle2.putString("com.google.android.gms.dtdi.halfsheet.extra.REQUESTOR_DEVICE_NAME", getIntent().getStringExtra("com.google.android.gms.dtdi.halfsheet.extra.REQUESTOR_DEVICE_NAME"));
             bundle2.putString("com.google.android.gms.dtdi.halfsheet.extra.REQUESTOR_PACKAGE_NAME", getIntent().getStringExtra("com.google.android.gms.dtdi.halfsheet.extra.REQUESTOR_PACKAGE_NAME"));
@@ -100,8 +100,8 @@ public final class HalfSheetChimeraActivity extends qfp {
             bundle2.putInt("com.google.android.gms.dtdi.halfsheet.extra.FORM_FACTOR", getIntent().getIntExtra("com.google.android.gms.dtdi.halfsheet.extra.FORM_FACTOR", -1));
             bundle2.putString("com.google.android.gms.dtdi.halfsheet.extra.PROFILE_PICTURE_URL", getIntent().getStringExtra("com.google.android.gms.dtdi.halfsheet.extra.PROFILE_PICTURE_URL"));
             bundle2.putString("com.google.android.gms.dtdi.halfsheet.extra.WAKEUP_REQUEST_ID", getIntent().getStringExtra("com.google.android.gms.dtdi.halfsheet.extra.WAKEUP_REQUEST_ID"));
-            ayuvVar.setArguments(bundle2);
-            b(ayuvVar);
+            baypVar.setArguments(bundle2);
+            b(baypVar);
             return;
         }
         if (intExtra != 3) {
@@ -109,20 +109,20 @@ public final class HalfSheetChimeraActivity extends qfp {
             if (c == null) {
                 return;
             }
-            ayvn ayvnVar = new ayvn();
+            bazh bazhVar = new bazh();
             Intent intent = getIntent();
-            fvbo.e(intent, "getIntent(...)");
-            ayvnVar.setArguments(aytf.a(intent, c));
-            b(ayvnVar);
+            fxxm.e(intent, "getIntent(...)");
+            bazhVar.setArguments(bawz.a(intent, c));
+            b(bazhVar);
             return;
         }
         byte[] c2 = c();
         if (c2 != null) {
-            aytt ayttVar = new aytt();
+            baxn baxnVar = new baxn();
             Intent intent2 = getIntent();
-            fvbo.e(intent2, "getIntent(...)");
-            ayttVar.setArguments(aytf.a(intent2, c2));
-            b(ayttVar);
+            fxxm.e(intent2, "getIntent(...)");
+            baxnVar.setArguments(bawz.a(intent2, c2));
+            b(baxnVar);
         }
     }
 }

@@ -3,17 +3,17 @@ package com.google.android.gms.auth.proximity.phonehub;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.acto;
-import defpackage.acvm;
-import defpackage.acwb;
-import defpackage.arxo;
-import defpackage.flcw;
+import defpackage.aeto;
+import defpackage.aevm;
+import defpackage.aewb;
+import defpackage.auad;
+import defpackage.fnuf;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class UpdateCameraRollAccessStateIntentOperation extends IntentOperation {
-    private static final arxo a = new arxo("ProximityAuth", "UpdateCameraRollAccessStateIntentOperation");
+    private static final auad a = new auad("ProximityAuth", "UpdateCameraRollAccessStateIntentOperation");
 
     public static Intent a(Context context, String str, boolean z) {
         Intent startIntent = IntentOperation.getStartIntent(context, UpdateCameraRollAccessStateIntentOperation.class, "com.google.android.gms.auth.proximity.phonehub.ACTION_UPDATE_CAMERA_ROLL_ACCESS_STATE");
@@ -33,8 +33,8 @@ public class UpdateCameraRollAccessStateIntentOperation extends IntentOperation 
             }
             boolean booleanExtra = intent.getBooleanExtra("isFeatureEnabled", false);
             try {
-                (flcw.P() ? acvm.a(stringExtra).i(booleanExtra) : acto.a(stringExtra).c(booleanExtra)).get();
-                acwb.b().f();
+                (fnuf.P() ? aevm.a(stringExtra).i(booleanExtra) : aeto.a(stringExtra).c(booleanExtra)).get();
+                aewb.b().f();
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
                 a.m("Thread interrupted while updating CameraRollAccessState", new Object[0]);

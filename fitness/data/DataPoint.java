@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgcz;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bihp;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class DataPoint extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bgcz();
+    public static final Parcelable.Creator CREATOR = new bihp();
     public final DataSource a;
     public long b;
     public long c;
@@ -59,7 +59,7 @@ public final class DataPoint extends AbstractSafeParcelable implements Reflected
             return false;
         }
         DataPoint dataPoint = (DataPoint) obj;
-        return arwb.b(this.a, dataPoint.a) && this.b == dataPoint.b && this.c == dataPoint.c && Arrays.equals(this.d, dataPoint.d) && arwb.b(c(), dataPoint.c());
+        return atyq.b(this.a, dataPoint.a) && this.b == dataPoint.b && this.c == dataPoint.c && Arrays.equals(this.d, dataPoint.d) && atyq.b(c(), dataPoint.c());
     }
 
     public final int hashCode() {
@@ -79,14 +79,14 @@ public final class DataPoint extends AbstractSafeParcelable implements Reflected
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         DataSource dataSource = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, dataSource, i, false);
-        arxc.q(parcel, 3, this.b);
-        arxc.q(parcel, 4, this.c);
-        arxc.J(parcel, 5, this.d, i);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.q(parcel, 7, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, dataSource, i, false);
+        atzr.q(parcel, 3, this.b);
+        atzr.q(parcel, 4, this.c);
+        atzr.J(parcel, 5, this.d, i);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.q(parcel, 7, this.f);
+        atzr.c(parcel, a);
     }
 
     public DataPoint(DataSource dataSource, DataSource dataSource2, RawDataPoint rawDataPoint) {
@@ -103,7 +103,7 @@ public final class DataPoint extends AbstractSafeParcelable implements Reflected
             r2 = this;
             int r0 = r4.d
             com.google.android.gms.fitness.data.DataSource r0 = d(r3, r0)
-            defpackage.arwm.s(r0)
+            defpackage.atzb.s(r0)
             int r1 = r4.e
             com.google.android.gms.fitness.data.DataSource r3 = d(r3, r1)
             r2.<init>(r0, r3, r4)

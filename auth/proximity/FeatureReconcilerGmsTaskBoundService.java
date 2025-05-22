@@ -4,38 +4,38 @@ import android.accounts.Account;
 import android.content.Context;
 import android.os.Bundle;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.aans;
-import defpackage.arxo;
-import defpackage.asnd;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.byln;
-import defpackage.fldd;
+import defpackage.acns;
+import defpackage.auad;
+import defpackage.auqx;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.cauf;
+import defpackage.fnum;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class FeatureReconcilerGmsTaskBoundService extends GmsTaskBoundService {
-    private static final arxo a = new arxo("ProximityAuth", "FeatureReconcilerGmsTaskBoundService");
+    private static final auad a = new auad("ProximityAuth", "FeatureReconcilerGmsTaskBoundService");
 
     public static void d(Context context, Account account) {
-        int a2 = (int) fldd.a.a().a();
+        int a2 = (int) fnum.a.lK().a();
         Bundle bundle = new Bundle();
         bundle.putString("ACCOUNT_NAME", account.name);
-        byjl a3 = byjl.a(context);
-        bykj bykjVar = new bykj();
-        bykjVar.u = bundle;
-        bykjVar.w(FeatureReconcilerGmsTaskBoundService.class.getName());
-        bykjVar.t("FeatureReconcilerGmsTaskBoundService_retry_" + account.name.hashCode());
-        bykjVar.e((long) (a2 / 2), (long) a2);
-        bykjVar.v(1);
-        bykjVar.p = true;
-        a3.f(bykjVar.b());
+        casd a3 = casd.a(context);
+        catb catbVar = new catb();
+        catbVar.u = bundle;
+        catbVar.w(FeatureReconcilerGmsTaskBoundService.class.getName());
+        catbVar.t("FeatureReconcilerGmsTaskBoundService_retry_" + account.name.hashCode());
+        catbVar.e((long) (a2 / 2), (long) a2);
+        catbVar.v(1);
+        catbVar.p = true;
+        a3.f(catbVar.b());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (fldd.g()) {
-            Bundle bundle = bylnVar.b;
+    public final int a(cauf caufVar) {
+        if (fnum.g()) {
+            Bundle bundle = caufVar.b;
             if (bundle == null || !bundle.containsKey("ACCOUNT_NAME")) {
                 a.m("Missing account name", new Object[0]);
                 return 2;
@@ -43,8 +43,8 @@ public class FeatureReconcilerGmsTaskBoundService extends GmsTaskBoundService {
             String string = bundle.getString("ACCOUNT_NAME");
             Account account = null;
             if (string != null) {
-                for (Account account2 : asnd.h(this, getPackageName())) {
-                    if (true == aans.a(account2.name).equals(aans.a(string))) {
+                for (Account account2 : auqx.h(this, getPackageName())) {
+                    if (true == acns.a(account2.name).equals(acns.a(string))) {
                         account = account2;
                     }
                 }
@@ -53,7 +53,7 @@ public class FeatureReconcilerGmsTaskBoundService extends GmsTaskBoundService {
                 a.m("Null account retrieved from account name.", new Object[0]);
                 return 2;
             }
-            if (bylnVar.a.startsWith("FeatureReconcilerGmsTaskBoundService_retry_")) {
+            if (caufVar.a.startsWith("FeatureReconcilerGmsTaskBoundService_retry_")) {
                 getApplicationContext().startService(FeatureEnabledStateReconcilerIntentOperation.a(this, account));
                 return 0;
             }

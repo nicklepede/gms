@@ -1,20 +1,20 @@
 package com.google.android.gms.thunderbird;
 
 import com.google.android.chimera.IntentOperation;
-import defpackage.dfzq;
-import defpackage.dfzu;
-import defpackage.fsnb;
+import defpackage.dikv;
+import defpackage.dikz;
+import defpackage.fvik;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class OutgoingEmergencyIntentOperation extends IntentOperation {
-    private dfzq a;
+    private dikv a;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        this.a = dfzq.b(this);
-        if (fsnb.J()) {
-            dfzu.d().g(this, "OutgoingEmergencyIntentOperation#onCreate");
+        this.a = dikv.b(this);
+        if (fvik.J()) {
+            dikz.d().g(this, "OutgoingEmergencyIntentOperation#onCreate");
         }
     }
 

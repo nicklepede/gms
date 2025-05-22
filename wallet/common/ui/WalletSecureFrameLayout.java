@@ -6,9 +6,9 @@ import android.view.MotionEvent;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 import com.google.android.gms.R;
-import defpackage.ding;
+import defpackage.dkyr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class WalletSecureFrameLayout extends FrameLayout {
     public WalletSecureFrameLayout(Context context) {
@@ -17,7 +17,7 @@ public class WalletSecureFrameLayout extends FrameLayout {
     }
 
     private final void a() {
-        ding.z(this, true);
+        dkyr.z(this, true);
     }
 
     @Override // android.view.View

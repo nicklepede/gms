@@ -5,22 +5,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.aavw;
-import defpackage.aawh;
-import defpackage.aawi;
-import defpackage.aawj;
-import defpackage.aaws;
-import defpackage.arlb;
-import defpackage.asmf;
-import defpackage.asot;
+import defpackage.acvw;
+import defpackage.acwh;
+import defpackage.acwi;
+import defpackage.acwj;
+import defpackage.acws;
+import defpackage.atnq;
+import defpackage.aupz;
+import defpackage.ausn;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class EasyUnlockChimeraService extends Service {
-    public static final asot a = aaws.a("EasyUnlockService");
-    private static aawj c;
+    public static final ausn a = acws.a("EasyUnlockService");
+    private static acwj c;
     public BluetoothAdapter b;
     private ExecutorService d;
     private Future e;
@@ -32,17 +32,17 @@ public class EasyUnlockChimeraService extends Service {
         return new Intent().setClassName(context, "com.google.android.gms.auth.easyunlock.authorization.InitializerIntentService");
     }
 
-    public static aawj b() {
-        aawj aawjVar;
+    public static acwj b() {
+        acwj acwjVar;
         synchronized (EasyUnlockChimeraService.class) {
-            aawjVar = c;
+            acwjVar = c;
         }
-        return aawjVar;
+        return acwjVar;
     }
 
-    public static void c(aawj aawjVar) {
+    public static void c(acwj acwjVar) {
         synchronized (EasyUnlockChimeraService.class) {
-            c = aawjVar;
+            c = acwjVar;
         }
     }
 
@@ -53,8 +53,8 @@ public class EasyUnlockChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        this.b = arlb.a(this);
-        this.d = new asmf(1, 10);
+        this.b = atnq.a(this);
+        this.d = new aupz(1, 10);
     }
 
     @Override // com.google.android.chimera.Service
@@ -64,7 +64,7 @@ public class EasyUnlockChimeraService extends Service {
             future.cancel(false);
             this.e = null;
         }
-        aawj b = b();
+        acwj b = b();
         if (b != null) {
             b.a();
             c(null);
@@ -78,11 +78,11 @@ public class EasyUnlockChimeraService extends Service {
         if (future != null && !future.isDone()) {
             return 1;
         }
-        this.e = this.d.submit(new aawh(this));
+        this.e = this.d.submit(new acwh(this));
         return 1;
     }
 
-    EasyUnlockChimeraService(aavw aavwVar, BluetoothAdapter bluetoothAdapter, aawi aawiVar, ExecutorService executorService) {
+    EasyUnlockChimeraService(acvw acvwVar, BluetoothAdapter bluetoothAdapter, acwi acwiVar, ExecutorService executorService) {
         this.b = bluetoothAdapter;
         this.d = executorService;
     }

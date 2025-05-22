@@ -4,18 +4,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.Strategy;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.civc;
-import defpackage.civd;
-import defpackage.ckdt;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cldh;
+import defpackage.cldi;
+import defpackage.cmly;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ConnectionOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new civd();
+    public static final Parcelable.Creator CREATOR = new cldi();
     public boolean a;
     public boolean b;
     public boolean c;
@@ -97,7 +97,7 @@ public final class ConnectionOptions extends AbstractSafeParcelable {
         if (iArr2 != null) {
             connectionOptions2.o = iArr2;
         }
-        civc.a(connectionOptions2);
+        cldh.a(connectionOptions2);
         return connectionOptions2;
     }
 
@@ -137,7 +137,7 @@ public final class ConnectionOptions extends AbstractSafeParcelable {
         }
         if (obj instanceof ConnectionOptions) {
             ConnectionOptions connectionOptions = (ConnectionOptions) obj;
-            if (arwb.b(Boolean.valueOf(this.a), Boolean.valueOf(connectionOptions.a)) && arwb.b(Boolean.valueOf(this.b), Boolean.valueOf(connectionOptions.b)) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(connectionOptions.c)) && arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(connectionOptions.d)) && arwb.b(Boolean.valueOf(this.e), Boolean.valueOf(connectionOptions.e)) && arwb.b(Boolean.valueOf(this.f), Boolean.valueOf(connectionOptions.f)) && arwb.b(Boolean.valueOf(this.g), Boolean.valueOf(connectionOptions.g)) && arwb.b(Boolean.valueOf(this.h), Boolean.valueOf(connectionOptions.h)) && Arrays.equals(this.i, connectionOptions.i) && arwb.b(Boolean.valueOf(this.j), Boolean.valueOf(connectionOptions.j)) && arwb.b(Boolean.valueOf(this.k), Boolean.valueOf(connectionOptions.k)) && arwb.b(Boolean.valueOf(this.l), Boolean.valueOf(connectionOptions.l)) && arwb.b(Integer.valueOf(this.m), Integer.valueOf(connectionOptions.m)) && arwb.b(Integer.valueOf(this.n), Integer.valueOf(connectionOptions.n)) && Arrays.equals(this.o, connectionOptions.o) && Arrays.equals(this.p, connectionOptions.p) && Arrays.equals(this.q, connectionOptions.q) && arwb.b(this.r, connectionOptions.r) && arwb.b(Integer.valueOf(this.s), Integer.valueOf(connectionOptions.s)) && arwb.b(Long.valueOf(this.t), Long.valueOf(connectionOptions.t)) && arwb.b(Boolean.valueOf(this.u), Boolean.valueOf(connectionOptions.u)) && arwb.b(Boolean.valueOf(this.v), Boolean.valueOf(connectionOptions.v)) && arwb.b(Boolean.valueOf(this.w), Boolean.valueOf(connectionOptions.w)) && arwb.b(this.x, connectionOptions.x)) {
+            if (atyq.b(Boolean.valueOf(this.a), Boolean.valueOf(connectionOptions.a)) && atyq.b(Boolean.valueOf(this.b), Boolean.valueOf(connectionOptions.b)) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(connectionOptions.c)) && atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(connectionOptions.d)) && atyq.b(Boolean.valueOf(this.e), Boolean.valueOf(connectionOptions.e)) && atyq.b(Boolean.valueOf(this.f), Boolean.valueOf(connectionOptions.f)) && atyq.b(Boolean.valueOf(this.g), Boolean.valueOf(connectionOptions.g)) && atyq.b(Boolean.valueOf(this.h), Boolean.valueOf(connectionOptions.h)) && Arrays.equals(this.i, connectionOptions.i) && atyq.b(Boolean.valueOf(this.j), Boolean.valueOf(connectionOptions.j)) && atyq.b(Boolean.valueOf(this.k), Boolean.valueOf(connectionOptions.k)) && atyq.b(Boolean.valueOf(this.l), Boolean.valueOf(connectionOptions.l)) && atyq.b(Integer.valueOf(this.m), Integer.valueOf(connectionOptions.m)) && atyq.b(Integer.valueOf(this.n), Integer.valueOf(connectionOptions.n)) && Arrays.equals(this.o, connectionOptions.o) && Arrays.equals(this.p, connectionOptions.p) && Arrays.equals(this.q, connectionOptions.q) && atyq.b(this.r, connectionOptions.r) && atyq.b(Integer.valueOf(this.s), Integer.valueOf(connectionOptions.s)) && atyq.b(Long.valueOf(this.t), Long.valueOf(connectionOptions.t)) && atyq.b(Boolean.valueOf(this.u), Boolean.valueOf(connectionOptions.u)) && atyq.b(Boolean.valueOf(this.v), Boolean.valueOf(connectionOptions.v)) && atyq.b(Boolean.valueOf(this.w), Boolean.valueOf(connectionOptions.w)) && atyq.b(this.x, connectionOptions.x)) {
                 return true;
             }
         }
@@ -159,42 +159,42 @@ public final class ConnectionOptions extends AbstractSafeParcelable {
         Boolean valueOf7 = Boolean.valueOf(this.g);
         Boolean valueOf8 = Boolean.valueOf(this.h);
         byte[] bArr = this.i;
-        String b = bArr == null ? null : ckdt.b(bArr);
+        String b = bArr == null ? null : cmly.b(bArr);
         Boolean valueOf9 = Boolean.valueOf(this.j);
         Boolean valueOf10 = Boolean.valueOf(this.k);
         Boolean valueOf11 = Boolean.valueOf(this.l);
         byte[] bArr2 = this.q;
-        return String.format(locale, "ConnectionOptions{lowPower: %s, enableBluetooth: %s, enableBle: %s, enableWifiLan: %s, enableNfc: %s, enableWifiAware: %s, enableWifiHotspot: %s, enableWifiDirect: %s, remoteBluetoothMacAddress: %s, enableWebRtc: %s, enforceTopologyConstraints: %s, disruptiveUpgrade: %s, deviceInfo: %s, strategy: %s, connectionType: %d, flowId: %d, connection mediums %s, upgrade mediums %s}", valueOf, valueOf2, valueOf3, valueOf4, valueOf5, valueOf6, valueOf7, valueOf8, b, valueOf9, valueOf10, valueOf11, bArr2 != null ? ckdt.b(bArr2) : null, this.r, Integer.valueOf(this.s), Long.valueOf(this.t), Arrays.toString(this.p), Arrays.toString(this.o));
+        return String.format(locale, "ConnectionOptions{lowPower: %s, enableBluetooth: %s, enableBle: %s, enableWifiLan: %s, enableNfc: %s, enableWifiAware: %s, enableWifiHotspot: %s, enableWifiDirect: %s, remoteBluetoothMacAddress: %s, enableWebRtc: %s, enforceTopologyConstraints: %s, disruptiveUpgrade: %s, deviceInfo: %s, strategy: %s, connectionType: %d, flowId: %d, connection mediums %s, upgrade mediums %s}", valueOf, valueOf2, valueOf3, valueOf4, valueOf5, valueOf6, valueOf7, valueOf8, b, valueOf9, valueOf10, valueOf11, bArr2 != null ? cmly.b(bArr2) : null, this.r, Integer.valueOf(this.s), Long.valueOf(this.t), Arrays.toString(this.p), Arrays.toString(this.o));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, this.a);
-        arxc.e(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.e(parcel, 6, this.f);
-        arxc.e(parcel, 7, this.g);
-        arxc.e(parcel, 8, this.h);
-        arxc.i(parcel, 9, this.i, false);
-        arxc.e(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.e(parcel, 12, this.l);
-        arxc.o(parcel, 13, this.m);
-        arxc.o(parcel, 14, this.n);
-        arxc.p(parcel, 15, this.o, false);
-        arxc.p(parcel, 16, this.p, false);
-        arxc.i(parcel, 17, this.q, false);
-        arxc.t(parcel, 18, this.r, i, false);
-        arxc.o(parcel, 19, this.s);
-        arxc.q(parcel, 20, this.t);
-        arxc.e(parcel, 21, this.u);
-        arxc.e(parcel, 22, this.v);
-        arxc.e(parcel, 23, this.w);
-        arxc.v(parcel, 24, this.x, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, this.a);
+        atzr.e(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.e(parcel, 6, this.f);
+        atzr.e(parcel, 7, this.g);
+        atzr.e(parcel, 8, this.h);
+        atzr.i(parcel, 9, this.i, false);
+        atzr.e(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.e(parcel, 12, this.l);
+        atzr.o(parcel, 13, this.m);
+        atzr.o(parcel, 14, this.n);
+        atzr.p(parcel, 15, this.o, false);
+        atzr.p(parcel, 16, this.p, false);
+        atzr.i(parcel, 17, this.q, false);
+        atzr.t(parcel, 18, this.r, i, false);
+        atzr.o(parcel, 19, this.s);
+        atzr.q(parcel, 20, this.t);
+        atzr.e(parcel, 21, this.u);
+        atzr.e(parcel, 22, this.v);
+        atzr.e(parcel, 23, this.w);
+        atzr.v(parcel, 24, this.x, false);
+        atzr.c(parcel, a);
     }
 
     public ConnectionOptions(boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8, byte[] bArr, boolean z9, boolean z10, boolean z11, int i, int i2, int[] iArr, int[] iArr2, byte[] bArr2, Strategy strategy, int i3, long j, boolean z12, boolean z13, boolean z14, String str) {

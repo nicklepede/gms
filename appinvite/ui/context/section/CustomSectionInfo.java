@@ -2,15 +2,15 @@ package com.google.android.gms.appinvite.ui.context.section;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.tyj;
-import defpackage.tyv;
-import defpackage.tyw;
-import defpackage.tzu;
+import defpackage.vui;
+import defpackage.vuu;
+import defpackage.vuv;
+import defpackage.vvt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CustomSectionInfo extends SectionInfo {
-    public static final Parcelable.Creator CREATOR = new tzu();
+    public static final Parcelable.Creator CREATOR = new vvt();
     private final int[] a;
 
     public CustomSectionInfo(int[] iArr) {
@@ -18,8 +18,8 @@ public class CustomSectionInfo extends SectionInfo {
     }
 
     @Override // com.google.android.gms.appinvite.ui.context.section.SectionInfo
-    public final tyv a(tyj tyjVar, int i) {
-        return new tyw(tyjVar, this.a, i);
+    public final vuu a(vui vuiVar, int i) {
+        return new vuv(vuiVar, this.a, i);
     }
 
     @Override // com.google.android.gms.appinvite.ui.context.section.SectionInfo, android.os.Parcelable

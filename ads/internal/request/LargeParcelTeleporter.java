@@ -5,13 +5,13 @@ import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
-import defpackage.arxc;
-import defpackage.aspm;
+import defpackage.atzr;
+import defpackage.autg;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class LargeParcelTeleporter extends AbstractSafeParcelable {
     public static final Parcelable.Creator CREATOR = new o();
@@ -50,7 +50,7 @@ public final class LargeParcelTeleporter extends AbstractSafeParcelable {
                                         try {
                                             dataOutputStream2.writeInt(bArr.length);
                                             dataOutputStream2.write(bArr);
-                                            aspm.b(dataOutputStream2);
+                                            autg.b(dataOutputStream2);
                                         } catch (IOException e) {
                                             e = e;
                                             dataOutputStream = dataOutputStream2;
@@ -58,17 +58,17 @@ public final class LargeParcelTeleporter extends AbstractSafeParcelable {
                                             com.google.android.gms.ads.internal.util.client.h.h("Error transporting the ad response", e);
                                             com.google.android.gms.ads.internal.c.d().d(e, "LargeParcelTeleporter.pipeData.1");
                                             if (dataOutputStream == null) {
-                                                aspm.b(outputStream);
+                                                autg.b(outputStream);
                                             } else {
-                                                aspm.b(dataOutputStream);
+                                                autg.b(dataOutputStream);
                                             }
                                         } catch (Throwable th) {
                                             th = th;
                                             dataOutputStream = dataOutputStream2;
                                             if (dataOutputStream == null) {
-                                                aspm.b(outputStream);
+                                                autg.b(outputStream);
                                             } else {
-                                                aspm.b(dataOutputStream);
+                                                autg.b(dataOutputStream);
                                             }
                                             throw th;
                                         }
@@ -86,7 +86,7 @@ public final class LargeParcelTeleporter extends AbstractSafeParcelable {
                         int i = com.google.android.gms.ads.internal.util.c.a;
                         com.google.android.gms.ads.internal.util.client.h.h("Error transporting the ad response", e);
                         com.google.android.gms.ads.internal.c.d().d(e, "LargeParcelTeleporter.pipeData.2");
-                        aspm.b(autoCloseOutputStream);
+                        autg.b(autoCloseOutputStream);
                         this.a = parcelFileDescriptor;
                         return this.a;
                     }
@@ -106,9 +106,9 @@ public final class LargeParcelTeleporter extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         a();
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.c(parcel, a);
     }
 
     public LargeParcelTeleporter(SafeParcelable safeParcelable) {

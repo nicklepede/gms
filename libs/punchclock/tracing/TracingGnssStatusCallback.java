@@ -1,27 +1,27 @@
 package com.google.android.gms.libs.punchclock.tracing;
 
 import android.content.Context;
-import defpackage.byhw;
-import defpackage.byhz;
-import defpackage.byik;
-import defpackage.egkp;
-import defpackage.iod;
-import defpackage.ioe;
+import defpackage.caqo;
+import defpackage.caqr;
+import defpackage.carc;
+import defpackage.eixs;
+import defpackage.ipt;
+import defpackage.ipu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public abstract class TracingGnssStatusCallback extends iod implements byik {
-    private final byhw a;
+public abstract class TracingGnssStatusCallback extends ipt implements carc {
+    private final caqo a;
 
     public TracingGnssStatusCallback(Context context) {
-        this.a = byhz.c.c(getClass(), 23, context);
+        this.a = caqr.c.c(getClass(), 23, context);
     }
 
-    @Override // defpackage.iod
-    public final void a(ioe ioeVar) {
-        egkp k = this.a.k("onSatelliteStatusChanged");
+    @Override // defpackage.ipt
+    public final void a(ipu ipuVar) {
+        eixs k = this.a.k("onSatelliteStatusChanged");
         try {
-            e(ioeVar);
+            e(ipuVar);
             if (k != null) {
                 k.close();
             }
@@ -37,29 +37,29 @@ public abstract class TracingGnssStatusCallback extends iod implements byik {
         }
     }
 
-    @Override // defpackage.iod
+    @Override // defpackage.ipt
     public final void b() {
-        egkp k = this.a.k("onStarted");
+        eixs k = this.a.k("onStarted");
         if (k != null) {
             k.close();
         }
     }
 
-    @Override // defpackage.iod
+    @Override // defpackage.ipt
     public final void c() {
-        egkp k = this.a.k("onStopped");
+        eixs k = this.a.k("onStopped");
         if (k != null) {
             k.close();
         }
     }
 
-    @Override // defpackage.iod
+    @Override // defpackage.ipt
     public final void d() {
-        egkp k = this.a.k("onFirstFix");
+        eixs k = this.a.k("onFirstFix");
         if (k != null) {
             k.close();
         }
     }
 
-    protected abstract void e(ioe ioeVar);
+    protected abstract void e(ipu ipuVar);
 }

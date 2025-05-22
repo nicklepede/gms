@@ -13,33 +13,33 @@ import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.CustomizedSnoozePreset;
 import com.google.android.gms.reminders.model.CustomizedSnoozePresetEntity;
 import defpackage.a;
-import defpackage.arwm;
-import defpackage.asej;
-import defpackage.asfs;
-import defpackage.asft;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.bqna;
-import defpackage.bry;
-import defpackage.brz;
-import defpackage.bsa;
-import defpackage.cxdc;
-import defpackage.cxdg;
-import defpackage.cxdl;
-import defpackage.cxdn;
-import defpackage.cxdp;
-import defpackage.cxdu;
-import defpackage.cxdv;
-import defpackage.cxdy;
-import defpackage.cxdz;
-import defpackage.cxfa;
-import defpackage.cxfc;
-import defpackage.cxhd;
-import defpackage.cxhe;
-import defpackage.cxhf;
-import defpackage.cxhg;
-import defpackage.ejhf;
-import defpackage.frrk;
+import defpackage.atzb;
+import defpackage.auid;
+import defpackage.aujm;
+import defpackage.aujn;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.bsj;
+import defpackage.bsk;
+import defpackage.bsl;
+import defpackage.bsup;
+import defpackage.czmy;
+import defpackage.cznc;
+import defpackage.cznh;
+import defpackage.cznj;
+import defpackage.cznl;
+import defpackage.cznq;
+import defpackage.cznr;
+import defpackage.cznu;
+import defpackage.cznv;
+import defpackage.czow;
+import defpackage.czoy;
+import defpackage.czqz;
+import defpackage.czra;
+import defpackage.czrb;
+import defpackage.czrc;
+import defpackage.eluo;
+import defpackage.fulw;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -47,10 +47,10 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class RemindersChimeraProvider extends asfs {
-    private static final asot b = asot.b("RemindersProvider", asej.REMINDERS);
+public class RemindersChimeraProvider extends aujm {
+    private static final ausn b = ausn.b("RemindersProvider", auid.REMINDERS);
     private static final UriMatcher c;
     private static final Map d;
     private static final Map e;
@@ -61,14 +61,14 @@ public class RemindersChimeraProvider extends asfs {
     private static final Map j;
     private static final String[] k;
     private SQLiteDatabase l;
-    private bqna m;
-    private cxdg n;
+    private bsup m;
+    private cznc n;
     private boolean r;
     private boolean s;
     private final ArrayList o = new ArrayList();
     private final ArrayList p = new ArrayList();
     private final ArrayList q = new ArrayList();
-    private final ThreadPoolExecutor t = new asmf(1, 9);
+    private final ThreadPoolExecutor t = new aupz(1, 9);
 
     static {
         UriMatcher uriMatcher = new UriMatcher(-1);
@@ -155,27 +155,27 @@ public class RemindersChimeraProvider extends asfs {
         if (query2 == null) {
             return 0;
         }
-        bsa bsaVar = new bsa();
+        bsl bslVar = new bsl();
         while (query2.moveToNext()) {
             try {
-                bsaVar.add(Integer.valueOf(query2.getInt(0)));
+                bslVar.add(Integer.valueOf(query2.getInt(0)));
             } catch (Throwable th) {
                 query2.close();
                 throw th;
             }
         }
         query2.close();
-        brz brzVar = new brz(bsaVar);
-        while (brzVar.hasNext()) {
-            Integer num = (Integer) brzVar.next();
+        bsk bskVar = new bsk(bslVar);
+        while (bskVar.hasNext()) {
+            Integer num = (Integer) bskVar.next();
             int intValue = num.intValue();
             contentValues.remove("due_date_millis");
             r(num, contentValues);
-            String a = cxhf.a(str, a.j(intValue, "account_id="));
+            String a = czrb.a(str, a.j(intValue, "account_id="));
             if (Boolean.TRUE.equals(contentValues.getAsBoolean("archived")) && contentValues.getAsLong("archived_time_ms") == null) {
                 ContentValues contentValues2 = new ContentValues();
                 contentValues2.put("archived_time_ms", Long.valueOf(System.currentTimeMillis()));
-                this.l.update("reminders", contentValues2, cxhf.a(a, "archived=0"), strArr);
+                this.l.update("reminders", contentValues2, czrb.a(a, "archived=0"), strArr);
                 contentValues.remove("archived_time_ms");
             }
             i2 += this.l.update("reminders", contentValues, a, strArr);
@@ -184,7 +184,7 @@ public class RemindersChimeraProvider extends asfs {
     }
 
     private final int m(String str, String[] strArr) {
-        cxhg.a();
+        czrc.a();
         Cursor query = this.l.query("reminders", new String[]{"recurrence_id", "recurrence_exceptional", "due_date_millis", "account_id"}, str, strArr, null, null, null);
         if (query != null) {
             while (true) {
@@ -194,39 +194,39 @@ public class RemindersChimeraProvider extends asfs {
                     }
                     String string = query.getString(0);
                     if (string == null) {
-                        cxhg.a();
+                        czrc.a();
                         break;
                     }
                     if (query.getInt(1) == 1) {
-                        cxhg.a();
+                        czrc.a();
                         break;
                     }
                     long j2 = query.getLong(2);
                     String string2 = query.getString(3);
-                    cxhg.a();
+                    czrc.a();
                     String[] strArr2 = {string, string2};
-                    Cursor query2 = this.l.query("reminders", new String[]{"due_date_year", "due_date_month", "due_date_day", "due_date_hour", "due_date_minute", "due_date_second", "due_date_period", "due_date_absolute_time_ms"}, cxhf.a(cxhf.a("recurrence_id=? AND account_id=?", a.D(j2, "due_date_millis>")), "recurrence_exceptional IS NULL OR recurrence_exceptional!=1"), strArr2, null, null, "due_date_millis ASC", "1");
+                    Cursor query2 = this.l.query("reminders", new String[]{"due_date_year", "due_date_month", "due_date_day", "due_date_hour", "due_date_minute", "due_date_second", "due_date_period", "due_date_absolute_time_ms"}, czrb.a(czrb.a("recurrence_id=? AND account_id=?", a.C(j2, "due_date_millis>")), "recurrence_exceptional IS NULL OR recurrence_exceptional!=1"), strArr2, null, null, "due_date_millis ASC", "1");
                     if (query2 == null) {
-                        cxhg.a();
+                        czrc.a();
                     } else {
                         try {
                             if (query2.moveToFirst()) {
                                 query2.moveToFirst();
-                                cxhg.a();
+                                czrc.a();
                                 ContentValues contentValues = new ContentValues();
-                                contentValues.put("due_date_year", cxhe.a(query2, 0));
-                                contentValues.put("due_date_month", cxhe.a(query2, 1));
-                                contentValues.put("due_date_day", cxhe.a(query2, 2));
-                                contentValues.put("due_date_hour", cxhe.a(query2, 3));
-                                contentValues.put("due_date_minute", cxhe.a(query2, 4));
-                                contentValues.put("due_date_second", cxhe.a(query2, 5));
-                                contentValues.put("due_date_period", cxhe.a(query2, 6));
-                                contentValues.put("due_date_absolute_time_ms", cxhe.b(query2, 7));
-                                if (l(contentValues, cxhf.a("recurrence_id=? AND account_id=?", "recurrence_master=1"), strArr2) != 1) {
-                                    cxhg.a();
+                                contentValues.put("due_date_year", czra.a(query2, 0));
+                                contentValues.put("due_date_month", czra.a(query2, 1));
+                                contentValues.put("due_date_day", czra.a(query2, 2));
+                                contentValues.put("due_date_hour", czra.a(query2, 3));
+                                contentValues.put("due_date_minute", czra.a(query2, 4));
+                                contentValues.put("due_date_second", czra.a(query2, 5));
+                                contentValues.put("due_date_period", czra.a(query2, 6));
+                                contentValues.put("due_date_absolute_time_ms", czra.b(query2, 7));
+                                if (l(contentValues, czrb.a("recurrence_id=? AND account_id=?", "recurrence_master=1"), strArr2) != 1) {
+                                    czrc.a();
                                 }
                             } else {
-                                cxhg.a();
+                                czrc.a();
                             }
                         } finally {
                             query2.close();
@@ -237,9 +237,9 @@ public class RemindersChimeraProvider extends asfs {
                 }
             }
         } else {
-            ((ejhf) ((ejhf) b.i()).ah((char) 9045)).B("Fired reminders not found in the provider. %s", cxhg.a());
+            ((eluo) ((eluo) b.i()).ai((char) 9043)).B("Fired reminders not found in the provider. %s", czrc.a());
         }
-        cxhg.a();
+        czrc.a();
         ContentValues contentValues2 = new ContentValues();
         contentValues2.put("snoozed", (Boolean) false);
         contentValues2.put("pinned", (Boolean) true);
@@ -257,7 +257,7 @@ public class RemindersChimeraProvider extends asfs {
         if (contentValues.getAsLong("created_time_millis") == null) {
             contentValues.put("created_time_millis", Long.valueOf(System.currentTimeMillis()));
         }
-        Uri o = o("reminders", cxdz.a, contentValues);
+        Uri o = o("reminders", cznv.a, contentValues);
         if (o != null) {
             this.o.add(Long.valueOf(ContentUris.parseId(o)));
         }
@@ -272,20 +272,20 @@ public class RemindersChimeraProvider extends asfs {
         return ContentUris.withAppendedId(uri, insert);
     }
 
-    private final bry p() {
+    private final bsj p() {
         Cursor query = this.l.query("account", new String[]{"_id", "morning_customized_time", "afternoon_customized_time", "evening_customized_time"}, null, null, null, null, null);
-        bry bryVar = new bry();
+        bsj bsjVar = new bsj();
         if (query == null) {
-            return bryVar;
+            return bsjVar;
         }
         while (query.moveToNext()) {
             try {
-                bryVar.put(Integer.valueOf(query.getInt(0)), new CustomizedSnoozePresetEntity(cxdc.b(query.getLong(1)), cxdc.b(query.getLong(2)), cxdc.b(query.getLong(3))));
+                bsjVar.put(Integer.valueOf(query.getInt(0)), new CustomizedSnoozePresetEntity(czmy.b(query.getLong(1)), czmy.b(query.getLong(2)), czmy.b(query.getLong(3))));
             } finally {
                 query.close();
             }
         }
-        return bryVar;
+        return bsjVar;
     }
 
     private final void q(ContentValues contentValues) {
@@ -295,17 +295,17 @@ public class RemindersChimeraProvider extends asfs {
             }
             contentValues.remove("silent_change");
         }
-        if (frrk.k() && frrk.a.a().F()) {
+        if (fulw.k() && fulw.a.lK().F()) {
             this.r = true;
         }
         if (this.r) {
-            cxhg.a();
+            czrc.a();
         }
     }
 
     private final void r(Integer num, ContentValues contentValues) {
         if (contentValues.containsKey("due_date_year") || contentValues.containsKey("due_date_month") || contentValues.containsKey("due_date_day") || contentValues.containsKey("due_date_hour") || contentValues.containsKey("due_date_minute") || contentValues.containsKey("due_date_second") || contentValues.containsKey("due_date_period") || contentValues.containsKey("due_date_absolute_time_ms")) {
-            Long d2 = cxhd.d(getContext(), contentValues.getAsInteger("due_date_year"), contentValues.getAsInteger("due_date_month"), contentValues.getAsInteger("due_date_day"), contentValues.getAsInteger("due_date_hour"), contentValues.getAsInteger("due_date_minute"), contentValues.getAsInteger("due_date_second"), contentValues.getAsInteger("due_date_period"), contentValues.getAsLong("due_date_absolute_time_ms"), (CustomizedSnoozePreset) p().get(num));
+            Long d2 = czqz.d(getContext(), contentValues.getAsInteger("due_date_year"), contentValues.getAsInteger("due_date_month"), contentValues.getAsInteger("due_date_day"), contentValues.getAsInteger("due_date_hour"), contentValues.getAsInteger("due_date_minute"), contentValues.getAsInteger("due_date_second"), contentValues.getAsInteger("due_date_period"), contentValues.getAsLong("due_date_absolute_time_ms"), (CustomizedSnoozePreset) p().get(num));
             if (d2 == null) {
                 contentValues.putNull("due_date_millis");
             } else {
@@ -334,7 +334,7 @@ public class RemindersChimeraProvider extends asfs {
         s(contentValues, "event_date_second");
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     protected final int a(SQLiteDatabase sQLiteDatabase, Uri uri, String str, String[] strArr) {
         this.l = sQLiteDatabase;
         int match = c.match(uri);
@@ -350,7 +350,7 @@ public class RemindersChimeraProvider extends asfs {
                 strArr = new String[]{uri.getLastPathSegment()};
                 str = "_id=?";
             }
-            arwm.t(str, "Cannot delete reminders with null selection");
+            atzb.t(str, "Cannot delete reminders with null selection");
             return this.l.delete("reminders", str, strArr);
         }
         if (match == 300 || match == 301) {
@@ -377,7 +377,7 @@ public class RemindersChimeraProvider extends asfs {
         return this.l.delete("place_alias", str, strArr);
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     protected final int b(SQLiteDatabase sQLiteDatabase, Uri uri, ContentValues contentValues, String str, String[] strArr) {
         String str2;
         String[] strArr2;
@@ -457,19 +457,19 @@ public class RemindersChimeraProvider extends asfs {
                 if (query == null) {
                     return 0;
                 }
-                bry p = p();
+                bsj p = p();
                 int i4 = 0;
                 while (query.moveToNext()) {
                     try {
                         long j2 = query.getLong(i3);
-                        Long d2 = cxhd.d(getContext(), cxhe.a(query, 2), cxhe.a(query, 3), cxhe.a(query, 4), cxhe.a(query, 5), cxhe.a(query, 6), cxhe.a(query, 7), cxhe.a(query, 8), cxhe.b(query, 9), (CustomizedSnoozePreset) p.get(Integer.valueOf(query.getInt(1))));
+                        Long d2 = czqz.d(getContext(), czra.a(query, 2), czra.a(query, 3), czra.a(query, 4), czra.a(query, 5), czra.a(query, 6), czra.a(query, 7), czra.a(query, 8), czra.b(query, 9), (CustomizedSnoozePreset) p.get(Integer.valueOf(query.getInt(1))));
                         ContentValues contentValues2 = new ContentValues();
                         if (d2 == null) {
                             contentValues2.putNull("due_date_millis");
                         } else {
                             contentValues2.put("due_date_millis", d2);
                         }
-                        cxhg.a();
+                        czrc.a();
                         i4 += this.l.update("reminders", contentValues2, "_id=?", new String[]{String.valueOf(j2)});
                         i3 = 0;
                     } finally {
@@ -526,7 +526,7 @@ public class RemindersChimeraProvider extends asfs {
                 if (query != null) {
                     try {
                         if (query.moveToFirst()) {
-                            Integer a = cxhe.a(query, 0);
+                            Integer a = czra.a(query, 0);
                             if (a != null) {
                                 if (a.intValue() == 2) {
                                     z = false;
@@ -545,7 +545,7 @@ public class RemindersChimeraProvider extends asfs {
                     } finally {
                     }
                 }
-                ((ejhf) ((ejhf) b.j()).ah(9036)).P("Asked to fire a reminder that should not be fired, id=%s %s", lastPathSegment, cxhg.a());
+                ((eluo) ((eluo) b.j()).ai(9034)).P("Asked to fire a reminder that should not be fired, id=%s %s", lastPathSegment, czrc.a());
                 return 0;
             case 206:
                 return m(str3, strArr);
@@ -554,7 +554,7 @@ public class RemindersChimeraProvider extends asfs {
         }
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     public final Cursor c(SQLiteDatabase sQLiteDatabase, Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         String str3;
         String[] strArr3;
@@ -644,7 +644,7 @@ public class RemindersChimeraProvider extends asfs {
         }
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     protected final Uri d(SQLiteDatabase sQLiteDatabase, Uri uri, ContentValues contentValues) {
         Uri withAppendedId;
         this.l = sQLiteDatabase;
@@ -662,8 +662,8 @@ public class RemindersChimeraProvider extends asfs {
             }
             return o("operation", uri, contentValues);
         }
-        arwm.c(contentValues.containsKey("account_id"), "Missing account_id when upserting reminder");
-        arwm.c(contentValues.containsKey("client_assigned_id"), "Missing client_assigned_id when upserting reminder");
+        atzb.c(contentValues.containsKey("account_id"), "Missing account_id when upserting reminder");
+        atzb.c(contentValues.containsKey("client_assigned_id"), "Missing client_assigned_id when upserting reminder");
         Cursor query = this.l.query("reminders", new String[]{"_id"}, "client_assigned_id=? AND account_id=?", new String[]{contentValues.getAsString("client_assigned_id"), String.valueOf(contentValues.getAsInteger("account_id"))}, null, null, null);
         if (query != null) {
             try {
@@ -671,7 +671,7 @@ public class RemindersChimeraProvider extends asfs {
                     query.moveToFirst();
                     long j2 = query.getLong(0);
                     l(contentValues, "_id=?", new String[]{String.valueOf(j2)});
-                    withAppendedId = ContentUris.withAppendedId(cxdz.a, j2);
+                    withAppendedId = ContentUris.withAppendedId(cznv.a, j2);
                     return withAppendedId;
                 }
             } finally {
@@ -682,67 +682,67 @@ public class RemindersChimeraProvider extends asfs {
         return withAppendedId;
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     protected final void e() {
-        cxfa cxfaVar;
-        cxdp cxdpVar;
+        czow czowVar;
+        cznl cznlVar;
         Context context = getContext();
         if (this.s) {
-            cxfaVar = new cxfa(context, context.getContentResolver().query(cxdv.b, cxfa.b, cxhf.b(), null, null));
-            cxdpVar = !this.r ? new cxdp(context, asft.d(context, cxdy.a, null, cxhf.b(), null, null)) : null;
+            czowVar = new czow(context, context.getContentResolver().query(cznr.b, czow.b, czrb.b(), null, null));
+            cznlVar = !this.r ? new cznl(context, aujn.d(context, cznu.a, null, czrb.b(), null, null)) : null;
         } else {
             ArrayList arrayList = this.o;
             if (arrayList.isEmpty()) {
-                cxfaVar = null;
-                cxdpVar = null;
+                czowVar = null;
+                cznlVar = null;
             } else {
-                cxfa cxfaVar2 = new cxfa(context, context.getContentResolver().query(cxdv.b, cxfa.b, a.al(arrayList, "reminders._id IN (", ",", ")"), null, null));
-                cxdpVar = !this.r ? new cxdp(context, asft.d(context, cxdy.a, null, a.a(cxhd.h(arrayList), "reminders._id IN (", ")"), null, null)) : null;
-                cxfaVar = cxfaVar2;
+                czow czowVar2 = new czow(context, context.getContentResolver().query(cznr.b, czow.b, a.al(arrayList, "reminders._id IN (", ",", ")"), null, null));
+                cznlVar = !this.r ? new cznl(context, aujn.d(context, cznu.a, null, a.a(czqz.h(arrayList), "reminders._id IN (", ")"), null, null)) : null;
+                czowVar = czowVar2;
             }
         }
-        if (cxfaVar != null) {
-            this.t.execute(cxfaVar);
+        if (czowVar != null) {
+            this.t.execute(czowVar);
         }
-        if (cxdpVar != null) {
-            this.t.execute(cxdpVar);
+        if (cznlVar != null) {
+            this.t.execute(cznlVar);
         }
         if (!this.r) {
             ArrayList arrayList2 = this.p;
             if (arrayList2.size() > 1) {
-                ((ejhf) ((ejhf) b.i()).ah((char) 9033)).B("Firing more than one task in a single transaction. %s", cxhg.a());
+                ((eluo) ((eluo) b.i()).ai((char) 9031)).B("Firing more than one task in a single transaction. %s", czrc.a());
             }
             if (!arrayList2.isEmpty()) {
                 ArrayList arrayList3 = new ArrayList();
                 Iterator it = arrayList2.iterator();
                 while (it.hasNext()) {
-                    arrayList3.add(asft.d(context, cxdy.a, null, "reminders._id=?", new String[]{String.valueOf((Long) it.next())}, null));
+                    arrayList3.add(aujn.d(context, cznu.a, null, "reminders._id=?", new String[]{String.valueOf((Long) it.next())}, null));
                 }
                 Iterator it2 = arrayList3.iterator();
                 while (it2.hasNext()) {
-                    this.t.execute(new cxdn(context, (DataHolder) it2.next()));
+                    this.t.execute(new cznj(context, (DataHolder) it2.next()));
                 }
             }
         }
         if (!this.r) {
             ArrayList arrayList4 = this.q;
             if (!arrayList4.isEmpty()) {
-                this.t.execute(new cxdl(context, asft.d(context, cxdu.a, new String[]{"account_name", "morning_customized_time", "afternoon_customized_time", "evening_customized_time"}, a.a(cxhd.h(arrayList4), "account._id IN (", ")"), null, null)));
+                this.t.execute(new cznh(context, aujn.d(context, cznq.a, new String[]{"account_name", "morning_customized_time", "afternoon_customized_time", "evening_customized_time"}, a.a(czqz.h(arrayList4), "account._id IN (", ")"), null, null)));
             }
         }
         ArrayList arrayList5 = this.o;
         if (!arrayList5.isEmpty()) {
-            a(this.l, cxdz.a, "deleted=1", null);
+            a(this.l, cznv.a, "deleted=1", null);
         }
         arrayList5.size();
         this.p.size();
         this.q.size();
-        cxhg.a();
+        czrc.a();
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     protected final void g() {
-        cxhg.a();
+        czrc.a();
         this.o.clear();
         this.p.clear();
         this.q.clear();
@@ -755,38 +755,38 @@ public class RemindersChimeraProvider extends asfs {
         return null;
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     protected final String i() {
         return "reminders.db";
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     protected final SQLiteOpenHelper j() {
-        return cxfc.c(getContext());
+        return czoy.c(getContext());
     }
 
-    @Override // defpackage.asfs, com.google.android.chimera.ContentProvider
+    @Override // defpackage.aujm, com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
         setShutdownAllowed(true);
         Context context = getContext();
-        this.m = bqna.b(context);
-        cxdg cxdgVar = new cxdg(context);
-        this.n = cxdgVar;
-        this.m.f(cxdgVar, null, true);
+        this.m = bsup.b(context);
+        cznc czncVar = new cznc(context);
+        this.n = czncVar;
+        this.m.f(czncVar, null, true);
         return true;
     }
 
     @Override // com.google.android.chimera.ContentProvider
     public final void shutdown() {
         this.m.i(this.n);
-        cxfc.c(getContext()).close();
+        czoy.c(getContext()).close();
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     protected final void f() {
     }
 
-    @Override // defpackage.asfs
+    @Override // defpackage.aujm
     protected final void k() {
     }
 }

@@ -4,43 +4,43 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.ipa.base.IpaInitIntentOperation;
 import com.google.android.gms.ipa.mediastoreindexer.MediastoreCorporaInstantIndexingBoundService;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asiu;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bonb;
-import defpackage.bons;
-import defpackage.bont;
-import defpackage.bopn;
-import defpackage.boqt;
-import defpackage.ejhf;
-import defpackage.fpgv;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.aumo;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bqur;
+import defpackage.bqvi;
+import defpackage.bqvj;
+import defpackage.bqxd;
+import defpackage.bqyj;
+import defpackage.eluo;
+import defpackage.fsah;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class IpaInitIntentOperation extends anya {
+public class IpaInitIntentOperation extends apzs {
     public static final /* synthetic */ int a = 0;
     private static final String[] b = {"com.google.android.gms.ipa.base.IpaGcmTaskService"};
-    private static final asot c = asot.b("GmscoreIpa", asej.PLATFORM_DATA_INDEXER);
+    private static final ausn c = ausn.b("GmscoreIpa", auid.PLATFORM_DATA_INDEXER);
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        if (fpgv.o()) {
-            new boqt(getApplicationContext().getSharedPreferences("MediastoreIndexerSharedPrefs", 0)).f();
+        if (fsah.o()) {
+            new bqyj(getApplicationContext().getSharedPreferences("MediastoreIndexerSharedPrefs", 0)).f();
         }
-        if (fpgv.j() && fpgv.a.a().F()) {
+        if (fsah.j() && fsah.a.lK().F()) {
             getApplicationContext();
-            final bonb c2 = bonb.c();
+            final bqur c2 = bqur.c();
             if (c2 != null) {
-                bont.a().b(new Runnable() { // from class: bonm
+                bqvj.a().b(new Runnable() { // from class: bqvc
                     @Override // java.lang.Runnable
                     public final void run() {
                         int i = IpaInitIntentOperation.a;
                         try {
-                            bonb.this.b();
+                            bqur.this.b();
                         } catch (Exception unused) {
-                            bons.a().c(49);
+                            bqvi.a().c(49);
                         }
                     }
                 });
@@ -48,25 +48,25 @@ public class IpaInitIntentOperation extends anya {
         }
         String str = b[0];
         try {
-            asng.H(this, str, true);
+            aura.H(this, str, true);
         } catch (IllegalArgumentException e) {
-            ((ejhf) ((ejhf) c.i()).ah(5358)).P("Component %s invalid: %s", str, e.getMessage());
-            bons.a().c(6);
+            ((eluo) ((eluo) c.i()).ai(5371)).P("Component %s invalid: %s", str, e.getMessage());
+            bqvi.a().c(6);
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
         IpaGcmTaskChimeraService.d(getBaseContext());
-        if (fpgv.m()) {
+        if (fsah.m()) {
             return;
         }
         Context applicationContext = getApplicationContext();
         Intent startIntent = MediastoreCorporaInstantIndexingBoundService.getStartIntent(applicationContext, "com.google.android.gms.ipa.mediastoreindexer.PERSISTENT_START");
         if (startIntent == null) {
-            ((ejhf) MediastoreCorporaInstantIndexingBoundService.a.i()).x("Service intent not available.");
+            ((eluo) MediastoreCorporaInstantIndexingBoundService.a.i()).x("Service intent not available.");
         } else {
-            asiu.a().d(applicationContext, startIntent, new bopn(applicationContext), 1);
+            aumo.a().d(applicationContext, startIntent, new bqxd(applicationContext), 1);
         }
     }
 }

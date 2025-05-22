@@ -2,7 +2,7 @@ package com.google.android.gms.org.conscrypt.metrics;
 
 import com.google.android.gms.org.conscrypt.Platform;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ReflexiveStatsEvent {
     private static final Class c_statsEvent;
@@ -10,7 +10,7 @@ public class ReflexiveStatsEvent {
     private static final boolean sdkVersionBiggerThan32;
     private final Object statsEvent;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class Builder {
         private static final OptionalMethod build;
         private static final Class c_statsEvent_Builder;

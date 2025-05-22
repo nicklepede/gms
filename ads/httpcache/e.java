@@ -1,11 +1,11 @@
 package com.google.android.gms.ads.httpcache;
 
 import android.os.ParcelFileDescriptor;
-import defpackage.enrv;
+import defpackage.eqfo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class e implements enrv {
+public final class e implements eqfo {
     final /* synthetic */ com.google.android.gms.ads.internal.httpcache.f a;
     final /* synthetic */ f b;
 
@@ -14,12 +14,12 @@ public final class e implements enrv {
         this.b = fVar;
     }
 
-    @Override // defpackage.enrv
+    @Override // defpackage.eqfo
     public final void a(Throwable th) {
         this.b.b(this.a, null);
     }
 
-    @Override // defpackage.enrv
+    @Override // defpackage.eqfo
     public final /* bridge */ /* synthetic */ void b(Object obj) {
         this.b.b(this.a, (ParcelFileDescriptor) obj);
     }

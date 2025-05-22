@@ -5,71 +5,71 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import com.google.android.gms.R;
 import com.google.android.gms.smartdevice.d2d.FallbackAccount;
-import defpackage.arjz;
-import defpackage.arkc;
-import defpackage.arkd;
-import defpackage.arxo;
+import defpackage.atmo;
+import defpackage.atmr;
+import defpackage.atms;
+import defpackage.auad;
 import defpackage.bp;
-import defpackage.ddne;
-import defpackage.ddre;
-import defpackage.ddwc;
-import defpackage.ddzf;
-import defpackage.degs;
-import defpackage.degt;
-import defpackage.degu;
-import defpackage.demq;
-import defpackage.denq;
+import defpackage.dfyj;
 import defpackage.dg;
-import defpackage.dtiv;
-import defpackage.dtiw;
-import defpackage.dtiy;
-import defpackage.elno;
-import defpackage.elpn;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fkhl;
-import defpackage.qex;
+import defpackage.dgcj;
+import defpackage.dghh;
+import defpackage.dgkj;
+import defpackage.dgrv;
+import defpackage.dgrw;
+import defpackage.dgrx;
+import defpackage.dgxt;
+import defpackage.dgyt;
+import defpackage.dvth;
+import defpackage.dvti;
+import defpackage.dvtk;
+import defpackage.eobc;
+import defpackage.eodb;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fmya;
+import defpackage.ryb;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TargetFallbackChimeraActivity extends qex implements degt {
-    private static final arxo h = new denq(new String[]{"TargetFallbackChimeraActivity"});
-    private ddzf i;
+public class TargetFallbackChimeraActivity extends ryb implements dgrw {
+    private static final auad h = new dgyt(new String[]{"TargetFallbackChimeraActivity"});
+    private dgkj i;
     private int j;
 
     private final dg j() {
-        return gI().g(R.id.fragment_container);
+        return gY().g(R.id.fragment_container);
     }
 
-    @Override // defpackage.degt
+    @Override // defpackage.dgrw
     public final void A(List list) {
         int size = this.j - list.size();
-        fecj v = elno.a.v();
+        fgrc v = eobc.a.v();
         int i = this.j;
         if (!v.b.L()) {
             v.U();
         }
-        elno elnoVar = (elno) v.b;
-        elnoVar.b |= 1;
-        elnoVar.c = i;
+        eobc eobcVar = (eobc) v.b;
+        eobcVar.b |= 1;
+        eobcVar.c = i;
         int size2 = list.size();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elno elnoVar2 = (elno) fecpVar;
-        elnoVar2.b |= 2;
-        elnoVar2.d = size2;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        eobc eobcVar2 = (eobc) fgriVar;
+        eobcVar2.b |= 2;
+        eobcVar2.d = size2;
+        if (!fgriVar.L()) {
             v.U();
         }
-        elno elnoVar3 = (elno) v.b;
-        elnoVar3.b |= 4;
-        elnoVar3.e = size;
-        this.i.l((elno) v.Q());
+        eobc eobcVar3 = (eobc) v.b;
+        eobcVar3.b |= 4;
+        eobcVar3.e = size;
+        this.i.l((eobc) v.Q());
         ArrayList<String> arrayList = new ArrayList<>();
         Iterator it = list.iterator();
         while (it.hasNext()) {
@@ -81,70 +81,70 @@ public class TargetFallbackChimeraActivity extends qex implements degt {
         finish();
     }
 
-    @Override // defpackage.degt
+    @Override // defpackage.dgrw
     public final void o(int i) {
-        fecj v = ddne.a.v();
+        fgrc v = dfyj.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ddne ddneVar = (ddne) fecpVar;
-        ddneVar.c = 5;
-        ddneVar.b |= 1;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        dfyj dfyjVar = (dfyj) fgriVar;
+        dfyjVar.c = 5;
+        dfyjVar.b |= 1;
+        if (!fgriVar.L()) {
             v.U();
         }
-        ddne ddneVar2 = (ddne) v.b;
-        ddneVar2.b |= 2;
-        ddneVar2.d = i;
-        this.i.n(10599, (ddne) v.Q());
+        dfyj dfyjVar2 = (dfyj) v.b;
+        dfyjVar2.b |= 2;
+        dfyjVar2.d = i;
+        this.i.n(10599, (dfyj) v.Q());
         setResult(0);
         finish();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         this.i.s(5);
         dg j = j();
-        if (j instanceof degu) {
-            ((degu) j).y();
+        if (j instanceof dgrx) {
+            ((dgrx) j).y();
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onConfigurationChanged(Configuration configuration) {
         h.d("onConfigurationChanged()", new Object[0]);
         super.onConfigurationChanged(configuration);
         dg j = j();
-        if (j instanceof degu) {
-            ((degu) j).x();
+        if (j instanceof dgrx) {
+            ((dgrx) j).x();
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        if (!arkd.a(this)) {
+        if (!atms.a(this)) {
             h.m("Invalid caller, finishing activity.", new Object[0]);
             finishAndRemoveTask();
             return;
         }
         super.onCreate(bundle);
         Intent intent = getIntent();
-        if (fkhl.c()) {
-            arjz.a(this);
+        if (fmya.c()) {
+            atmo.a(this);
         }
-        arkc.g(this);
+        atmr.g(this);
         setContentView(R.layout.smartdevice_fragment_container);
         if (bundle == null) {
-            List<dtiv> list = ((dtiw) new dtiy().j(intent)).a;
+            List<dvth> list = ((dvti) new dvtk().j(intent)).a;
             ArrayList arrayList = new ArrayList();
-            for (dtiv dtivVar : list) {
-                arrayList.add(new FallbackAccount(dtivVar.b, dtivVar.c, ""));
+            for (dvth dvthVar : list) {
+                arrayList.add(new FallbackAccount(dvthVar.b, dvthVar.c, ""));
             }
             this.j = arrayList.size();
-            degu a = degs.a(arrayList);
-            bp bpVar = new bp(gI());
-            if (!demq.b(this)) {
+            dgrx a = dgrv.a(arrayList);
+            bp bpVar = new bp(gY());
+            if (!dgxt.b(this)) {
                 getApplicationContext();
                 bpVar.A(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out, R.anim.sud_slide_back_in, R.anim.sud_slide_back_out);
             }
@@ -152,11 +152,11 @@ public class TargetFallbackChimeraActivity extends qex implements degt {
             bpVar.w(null);
             bpVar.b();
         }
-        long a2 = ddwc.a(this);
-        h.h("onCreate(): SessionId: %d; Is deferred SUW: %b", Long.valueOf(a2), Boolean.valueOf(ddre.s(this)));
-        ddzf i = ddzf.i(this);
+        long a2 = dghh.a(this);
+        h.h("onCreate(): SessionId: %d; Is deferred SUW: %b", Long.valueOf(a2), Boolean.valueOf(dgcj.s(this)));
+        dgkj i = dgkj.i(this);
         this.i = i;
         i.b = a2;
-        i.c = elpn.COSMIC_RAY;
+        i.c = eodb.COSMIC_RAY;
     }
 }

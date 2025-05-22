@@ -1,32 +1,32 @@
 package com.google.android.gms.findmydevice.spot.wearables;
 
 import com.google.android.gms.wearable.internal.MessageEventParcelable;
-import defpackage.bebo;
-import defpackage.bfez;
-import defpackage.bfiv;
-import defpackage.djjm;
-import defpackage.dkbc;
+import defpackage.bgda;
+import defpackage.bhgp;
+import defpackage.bhkl;
+import defpackage.dlvf;
+import defpackage.dmmv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class WearableCompanionListenerChimeraService extends dkbc {
-    private final bfez a;
+public final class WearableCompanionListenerChimeraService extends dmmv {
+    private final bhgp a;
 
     public WearableCompanionListenerChimeraService() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
-    @Override // defpackage.dkbc, defpackage.djkh
+    @Override // defpackage.dmmv, defpackage.dlwa
     public final void a(MessageEventParcelable messageEventParcelable) {
         this.a.a(messageEventParcelable);
     }
 
-    @Override // defpackage.dkbc, defpackage.djjk
-    public final void b(djjm djjmVar) {
-        this.a.b(djjmVar);
+    @Override // defpackage.dmmv, defpackage.dlvd
+    public final void b(dlvf dlvfVar) {
+        this.a.b(dlvfVar);
     }
 
-    public WearableCompanionListenerChimeraService(bfiv bfivVar) {
-        this.a = bfivVar.z();
+    public WearableCompanionListenerChimeraService(bhkl bhklVar) {
+        this.a = bhklVar.z();
     }
 }

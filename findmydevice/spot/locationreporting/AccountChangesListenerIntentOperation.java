@@ -3,65 +3,65 @@ package com.google.android.gms.findmydevice.spot.locationreporting;
 import android.content.Context;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.findmydevice.spot.locationreporting.AccountChangesListenerIntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bebm;
-import defpackage.bebo;
-import defpackage.bebp;
-import defpackage.belk;
-import defpackage.bffp;
-import defpackage.byjl;
-import defpackage.dwwv;
-import defpackage.fuuq;
-import defpackage.iru;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bgcy;
+import defpackage.bgda;
+import defpackage.bgdb;
+import defpackage.bgmw;
+import defpackage.bhhf;
+import defpackage.casd;
+import defpackage.dziv;
+import defpackage.fxqo;
+import defpackage.itk;
 import java.io.IOException;
 import java.util.concurrent.Executor;
 import java.util.regex.Pattern;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class AccountChangesListenerIntentOperation extends IntentOperation {
-    public static final asot a = asot.b("AccountChangesIntOp", asej.FIND_MY_DEVICE_SPOT);
-    public final bebm b;
-    public final byjl c;
+    public static final ausn a = ausn.b("AccountChangesIntOp", auid.FIND_MY_DEVICE_SPOT);
+    public final bgcy b;
+    public final casd c;
     public final Executor d;
-    private final belk e;
-    private final fuuq f;
+    private final bgmw e;
+    private final fxqo f;
     private final Context g;
-    private final iru h;
-    private final bffp i;
-    private final dwwv j;
+    private final itk h;
+    private final bhhf i;
+    private final dziv j;
 
     public AccountChangesListenerIntentOperation() {
-        this(bebo.a(), new iru() { // from class: beif
-            @Override // defpackage.iru
+        this(bgda.a(), new itk() { // from class: bgjr
+            @Override // defpackage.itk
             public final void a(Object obj) {
-                Object dxblVar;
-                eiuu eiuuVar = (eiuu) obj;
-                asot asotVar = AccountChangesListenerIntentOperation.a;
+                Object dznlVar;
+                elhz elhzVar = (elhz) obj;
+                ausn ausnVar = AccountChangesListenerIntentOperation.a;
                 try {
-                    bebo.a();
-                    Context b = bebk.b();
-                    dxbq dxbqVar = new dxbq();
-                    if (fmut.f()) {
-                        dxbk dxbkVar = new dxbk(b);
-                        dxbkVar.d = bxfi.a;
-                        dxblVar = new bquz(new dxbl(dxbkVar));
+                    bgda.a();
+                    Context b = bgcw.b();
+                    dznq dznqVar = new dznq();
+                    if (fpmr.f()) {
+                        dznk dznkVar = new dznk(b);
+                        dznkVar.d = bzny.a;
+                        dznlVar = new btcq(new dznl(dznkVar));
                     } else {
-                        dxbk dxbkVar2 = new dxbk(b);
-                        dxbkVar2.d = bxfi.a;
-                        dxblVar = new dxbl(dxbkVar2);
+                        dznk dznkVar2 = new dznk(b);
+                        dznkVar2.d = bzny.a;
+                        dznlVar = new dznl(dznkVar2);
                     }
-                    dxbqVar.a = new dxbg(eitj.l(dxblVar));
-                    Pattern pattern = dxbo.a;
-                    dxbn dxbnVar = new dxbn(b);
-                    dxbnVar.j();
-                    dxbnVar.e("findmydevice");
-                    dxbqVar.c(dxbnVar.a());
-                    dxbqVar.b(eiuuVar);
-                    dxbqVar.a().a();
+                    dznqVar.a = new dzng(elgo.l(dznlVar));
+                    Pattern pattern = dzno.a;
+                    dznn dznnVar = new dznn(b);
+                    dznnVar.j();
+                    dznnVar.e("findmydevice");
+                    dznqVar.c(dznnVar.a());
+                    dznqVar.b(elhzVar);
+                    dznqVar.a().a();
                 } catch (IOException e) {
-                    ((ejhf) ((ejhf) ((ejhf) AccountChangesListenerIntentOperation.a.i()).s(e)).ah((char) 4216)).x("Error removing removed accounts data.");
+                    ((eluo) ((eluo) ((eluo) AccountChangesListenerIntentOperation.a.i()).s(e)).ai((char) 4222)).x("Error removing removed accounts data.");
                 }
             }
         });
@@ -82,16 +82,16 @@ public final class AccountChangesListenerIntentOperation extends IntentOperation
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.findmydevice.spot.locationreporting.AccountChangesListenerIntentOperation.onHandleIntent(android.content.Intent):void");
     }
 
-    public AccountChangesListenerIntentOperation(bebp bebpVar, iru iruVar) {
-        this.e = bebpVar.o();
-        this.f = bebpVar.O();
-        this.b = bebpVar.i();
-        Context c = bebpVar.c();
+    public AccountChangesListenerIntentOperation(bgdb bgdbVar, itk itkVar) {
+        this.e = bgdbVar.o();
+        this.f = bgdbVar.O();
+        this.b = bgdbVar.i();
+        Context c = bgdbVar.c();
         this.g = c;
-        this.c = byjl.a(c);
-        this.d = bebpVar.G();
-        this.i = bebpVar.A();
-        this.j = bebpVar.F();
-        this.h = iruVar;
+        this.c = casd.a(c);
+        this.d = bgdbVar.G();
+        this.i = bgdbVar.A();
+        this.j = bgdbVar.F();
+        this.h = itkVar;
     }
 }

@@ -24,51 +24,51 @@ import com.google.android.gms.wallet.ui.common.WalletExitResult;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
 import defpackage.a;
-import defpackage.arwm;
-import defpackage.diez;
-import defpackage.dihb;
-import defpackage.dijq;
-import defpackage.dikm;
-import defpackage.dikz;
-import defpackage.dilp;
-import defpackage.dils;
-import defpackage.dimd;
-import defpackage.dimf;
-import defpackage.ding;
-import defpackage.dioj;
-import defpackage.djdj;
-import defpackage.djdl;
-import defpackage.djfd;
-import defpackage.efat;
-import defpackage.efdk;
-import defpackage.efua;
-import defpackage.efub;
-import defpackage.ehla;
-import defpackage.emcz;
-import defpackage.emdc;
-import defpackage.emef;
-import defpackage.emeg;
-import defpackage.emen;
-import defpackage.faos;
-import defpackage.fecj;
-import defpackage.fedb;
-import defpackage.fedh;
-import defpackage.feen;
-import defpackage.fsvg;
-import defpackage.fsxv;
-import defpackage.fsxy;
-import defpackage.fsye;
-import defpackage.ijf;
-import defpackage.ims;
+import defpackage.atzb;
+import defpackage.dkqk;
+import defpackage.dksm;
+import defpackage.dkva;
+import defpackage.dkvx;
+import defpackage.dkwk;
+import defpackage.dkxa;
+import defpackage.dkxd;
+import defpackage.dkxo;
+import defpackage.dkxq;
+import defpackage.dkyr;
+import defpackage.dkzu;
+import defpackage.dlpc;
+import defpackage.dlpe;
+import defpackage.dlqw;
+import defpackage.ehnw;
+import defpackage.ehqn;
+import defpackage.eihd;
+import defpackage.eihe;
+import defpackage.ejyg;
+import defpackage.eoqn;
+import defpackage.eoqq;
+import defpackage.eort;
+import defpackage.eoru;
+import defpackage.eosb;
+import defpackage.fddh;
+import defpackage.fgrc;
+import defpackage.fgru;
+import defpackage.fgsa;
+import defpackage.fgtg;
+import defpackage.fvra;
+import defpackage.fvtp;
+import defpackage.fvts;
+import defpackage.fvty;
+import defpackage.ikv;
+import defpackage.ioj;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
+public class CheckoutChimeraActivity extends dkqk implements dkxo, eihd, dkxd {
     int h;
-    efub i;
+    eihe i;
     PopoverView j;
     BottomSheetView k;
     Toolbar l;
@@ -77,8 +77,8 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
     static int Z(Context context, BuyFlowConfig buyFlowConfig) {
         WalletCustomTheme walletCustomTheme = buyFlowConfig.b.f;
         boolean z = walletCustomTheme != null && walletCustomTheme.d().getInt("windowTransitionsStyle", -1) == 4;
-        boolean z2 = ding.K(context.getResources()) && fsxy.c();
-        boolean a = fsxv.a.a().a();
+        boolean z2 = dkyr.K(context.getResources()) && fvts.c();
+        boolean a = fvtp.a.lK().a();
         if (z && z2) {
             return 2;
         }
@@ -92,9 +92,9 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
     }
 
     public static Intent aa(Context context, Intent intent, BuyFlowConfig buyFlowConfig) {
-        arwm.s(buyFlowConfig);
-        arwm.s(buyFlowConfig.b);
-        arwm.b(!buyFlowConfig.b.d);
+        atzb.s(buyFlowConfig);
+        atzb.s(buyFlowConfig.b);
+        atzb.b(!buyFlowConfig.b.d);
         Intent intent2 = new Intent();
         intent2.setClassName(context, "com.google.android.gms.wallet.buyflow.CheckoutActivity");
         intent2.putExtras(intent.getExtras());
@@ -107,65 +107,65 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         return intent2;
     }
 
-    private static int am(ehla ehlaVar) {
-        if (ehlaVar == null) {
+    private static int am(ejyg ejygVar) {
+        if (ejygVar == null) {
             return -1;
         }
-        if ((ehlaVar.c & 512) != 0) {
-            return ehlaVar.n;
+        if ((ejygVar.c & 512) != 0) {
+            return ejygVar.n;
         }
-        faos faosVar = ehlaVar.p;
-        if (faosVar == null) {
-            faosVar = faos.a;
+        fddh fddhVar = ejygVar.p;
+        if (fddhVar == null) {
+            fddhVar = fddh.a;
         }
-        if ((faosVar.b & 1) == 0) {
+        if ((fddhVar.b & 1) == 0) {
             return -1;
         }
-        faos faosVar2 = ehlaVar.p;
-        if (faosVar2 == null) {
-            faosVar2 = faos.a;
+        fddh fddhVar2 = ejygVar.p;
+        if (fddhVar2 == null) {
+            fddhVar2 = fddh.a;
         }
-        return faosVar2.c;
+        return fddhVar2.c;
     }
 
-    private static int an(ehla ehlaVar) {
-        if (ehlaVar == null) {
+    private static int an(ejyg ejygVar) {
+        if (ejygVar == null) {
             return -1;
         }
-        if ((ehlaVar.c & 1024) != 0) {
-            return ehlaVar.o;
+        if ((ejygVar.c & 1024) != 0) {
+            return ejygVar.o;
         }
-        faos faosVar = ehlaVar.p;
-        if (faosVar == null) {
-            faosVar = faos.a;
+        fddh fddhVar = ejygVar.p;
+        if (fddhVar == null) {
+            fddhVar = fddh.a;
         }
-        if ((faosVar.b & 2) == 0) {
+        if ((fddhVar.b & 2) == 0) {
             return -1;
         }
-        faos faosVar2 = ehlaVar.p;
-        if (faosVar2 == null) {
-            faosVar2 = faos.a;
+        fddh fddhVar2 = ejygVar.p;
+        if (fddhVar2 == null) {
+            fddhVar2 = fddh.a;
         }
-        return faosVar2.d;
+        return fddhVar2.d;
     }
 
-    private final ehla ao() {
+    private final ejyg ao() {
         if (getIntent().getExtras().containsKey("com.google.android.gms.wallet.firstparty.EXTRA_UNENCRYPTED_PARAMS")) {
-            return (ehla) efdk.b(getIntent(), "com.google.android.gms.wallet.firstparty.EXTRA_UNENCRYPTED_PARAMS", (feen) ehla.b.iB(7, null));
+            return (ejyg) ehqn.b(getIntent(), "com.google.android.gms.wallet.firstparty.EXTRA_UNENCRYPTED_PARAMS", (fgtg) ejyg.b.iQ(7, null));
         }
         if (getIntent().getExtras().containsKey("com.google.android.gms.wallet.firstparty.EXTRA_CLIENT_PARAMETERS")) {
-            return (ehla) efdk.b(getIntent(), "com.google.android.gms.wallet.firstparty.EXTRA_CLIENT_PARAMETERS", (feen) ehla.b.iB(7, null));
+            return (ejyg) ehqn.b(getIntent(), "com.google.android.gms.wallet.firstparty.EXTRA_CLIENT_PARAMETERS", (fgtg) ejyg.b.iQ(7, null));
         }
         return null;
     }
 
     private final void ap() {
-        dijq aB;
-        if (!djdl.a(this)) {
+        dkva aA;
+        if (!dlpe.a(this)) {
             if (this.i != null) {
                 getSupportFragmentManager().beginTransaction().remove(this.i).commit();
             }
-            efub d = efub.d();
+            eihe d = eihe.d();
             this.i = d;
             d.a = this;
             d.show(getSupportFragmentManager(), "CheckoutChimeraActivity.NETWORK_ERROR_DIALOG");
@@ -173,19 +173,19 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         }
         if (!this.m) {
             this.m = true;
-            getSupportFragmentManager().beginTransaction().add(dimf.a(kW(), djdj.e(l().b)), "RetrieveAuthTokensFragment").commit();
+            getSupportFragmentManager().beginTransaction().add(dkxq.a(ll(), dlpc.e(l().b)), "RetrieveAuthTokensFragment").commit();
         }
         Intent intent = getIntent();
         byte[] byteArrayExtra = intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_AUTH_TOKEN");
         if (intent.getExtras().containsKey("com.google.android.gms.wallet.firstparty.EXTRA_INITIALIZE_TOKEN")) {
-            aB = dijq.aA(intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_INITIALIZE_TOKEN"), null, null, byteArrayExtra, l(), this.a, null, this.b);
+            aA = dkva.az(intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_INITIALIZE_TOKEN"), null, null, byteArrayExtra, l(), this.a, null, this.b);
         } else {
             if (!intent.getExtras().containsKey("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS")) {
                 throw new IllegalArgumentException("CheckoutChimeraActivity requires either buyflow params or InitializeResponse token");
             }
-            aB = dijq.aB(intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS"), intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_UNENCRYPTED_PARAMS"), byteArrayExtra, l(), this.a, null, this.b);
+            aA = dkva.aA(intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS"), intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_UNENCRYPTED_PARAMS"), byteArrayExtra, l(), this.a, null, this.b);
         }
-        B(aB, R.id.popover_content_holder);
+        B(aA, R.id.popover_content_holder);
     }
 
     private final void aq(int i) {
@@ -197,19 +197,19 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
 
     private final void ar(WalletExitResult walletExitResult) {
         Intent au = au(4, 0, walletExitResult.c(), false);
-        if (dikm.a(l().c)) {
+        if (dkvx.a(l().c)) {
             walletExitResult.a().b(au);
         }
         setResult(0, au);
         finish();
     }
 
-    private static boolean as(dioj diojVar, int i, int i2, List list) {
-        if (!diojVar.b.isEmpty() && !diojVar.b.contains(Integer.valueOf(i))) {
+    private static boolean as(dkzu dkzuVar, int i, int i2, List list) {
+        if (!dkzuVar.b.isEmpty() && !dkzuVar.b.contains(Integer.valueOf(i))) {
             return false;
         }
-        if (diojVar.c.isEmpty() || diojVar.c.contains(Integer.valueOf(i2))) {
-            return diojVar.d.isEmpty() || !Collections.disjoint(diojVar.d, list);
+        if (dkzuVar.c.isEmpty() || dkzuVar.c.contains(Integer.valueOf(i2))) {
+            return dkzuVar.d.isEmpty() || !Collections.disjoint(dkzuVar.d, list);
         }
         return false;
     }
@@ -220,38 +220,38 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
 
     private final Intent au(int i, int i2, int i3, boolean z) {
         Intent T = T(z);
-        emeg b = AnalyticsIntentOperation.b(this, new OrchestrationClosedEvent(i, i2, i3, kW() != null ? kW().name : "", this.a));
+        eoru b = AnalyticsIntentOperation.b(this, new OrchestrationClosedEvent(i, i2, i3, ll() != null ? ll().name : "", this.a));
         if (b != null) {
-            for (emef emefVar : b.b) {
-                emcz emczVar = emefVar.i;
-                if (emczVar == null) {
-                    emczVar = emcz.a;
+            for (eort eortVar : b.b) {
+                eoqn eoqnVar = eortVar.i;
+                if (eoqnVar == null) {
+                    eoqnVar = eoqn.a;
                 }
-                if (emczVar.e.size() != 0) {
-                    emcz emczVar2 = emefVar.i;
-                    if (emczVar2 == null) {
-                        emczVar2 = emcz.a;
+                if (eoqnVar.e.size() != 0) {
+                    eoqn eoqnVar2 = eortVar.i;
+                    if (eoqnVar2 == null) {
+                        eoqnVar2 = eoqn.a;
                     }
-                    for (emdc emdcVar : emczVar2.e) {
-                        fecj fecjVar = (fecj) emdcVar.iB(5, null);
-                        fecjVar.X(emdcVar);
-                        if (!fecjVar.b.L()) {
-                            fecjVar.U();
+                    for (eoqq eoqqVar : eoqnVar2.e) {
+                        fgrc fgrcVar = (fgrc) eoqqVar.iQ(5, null);
+                        fgrcVar.X(eoqqVar);
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
                         }
-                        emdc emdcVar2 = (emdc) fecjVar.b;
-                        emdc emdcVar3 = emdc.a;
-                        emdcVar2.b &= -9;
-                        emdcVar2.f = emdc.a.f;
+                        eoqq eoqqVar2 = (eoqq) fgrcVar.b;
+                        eoqq eoqqVar3 = eoqq.a;
+                        eoqqVar2.b &= -9;
+                        eoqqVar2.f = eoqq.a.f;
                     }
                 }
             }
         }
-        efdk.k(T, "com.google.android.gms.wallet.firstparty.EXTRA_ANALYTICS_PROTO", b);
+        ehqn.k(T, "com.google.android.gms.wallet.firstparty.EXTRA_ANALYTICS_PROTO", b);
         byte[] bArr = this.c;
         if (bArr != null && bArr.length > 0) {
             T.putExtra("com.google.android.gms.wallet.firstparty.EXTRA_SERVER_ANALYTICS_TOKEN", bArr);
         }
-        efat.r(this.b, dikz.a(i), i2);
+        ehnw.r(this.b, dkwk.a(i), i2);
         return T;
     }
 
@@ -260,25 +260,25 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         finish();
     }
 
-    @Override // defpackage.diez
+    @Override // defpackage.dkqk
     protected final boolean N() {
-        ehla ao;
+        ejyg ao;
         if (l() != null && (ao = ao()) != null) {
             int an = an(ao);
             int am = am(ao);
-            faos faosVar = ao.p;
-            if (faosVar == null) {
-                faosVar = faos.a;
+            fddh fddhVar = ao.p;
+            if (fddhVar == null) {
+                fddhVar = fddh.a;
             }
-            fedb fedbVar = faosVar.e;
-            fedh fedhVar = fsvg.b().b;
-            int size = fedhVar.size();
+            fgru fgruVar = fddhVar.e;
+            fgsa fgsaVar = fvra.b().b;
+            int size = fgsaVar.size();
             int i = 0;
             while (true) {
                 if (i >= size) {
                     break;
                 }
-                if (!as((dioj) fedhVar.get(i), am, an, fedbVar)) {
+                if (!as((dkzu) fgsaVar.get(i), am, an, fgruVar)) {
                     i++;
                 } else if (getIntent().getExtras().containsKey("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS")) {
                     return true;
@@ -288,37 +288,37 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         return false;
     }
 
-    @Override // defpackage.diez
+    @Override // defpackage.dkqk
     protected final void U() {
-        ehla ao;
-        if (!fsye.a.a().g() || (ao = ao()) == null) {
+        ejyg ao;
+        if (!fvty.a.lK().g() || (ao = ao()) == null) {
             return;
         }
         int an = an(ao);
         int am = am(ao);
-        faos faosVar = ao.p;
-        if (faosVar == null) {
-            faosVar = faos.a;
+        fddh fddhVar = ao.p;
+        if (fddhVar == null) {
+            fddhVar = fddh.a;
         }
-        fedb fedbVar = faosVar.e;
-        fedh fedhVar = fsvg.b().b;
-        int size = fedhVar.size();
+        fgru fgruVar = fddhVar.e;
+        fgsa fgsaVar = fvra.b().b;
+        int size = fgsaVar.size();
         Integer[] numArr = new Integer[size];
         for (int i = 0; i < size; i++) {
-            dioj diojVar = (dioj) fedhVar.get(i);
-            if (as(diojVar, am, an, fedbVar)) {
-                numArr[i] = Integer.valueOf(diojVar.e);
+            dkzu dkzuVar = (dkzu) fgsaVar.get(i);
+            if (as(dkzuVar, am, an, fgruVar)) {
+                numArr[i] = Integer.valueOf(dkzuVar.e);
             } else {
-                numArr[i] = Integer.valueOf(diojVar.f);
+                numArr[i] = Integer.valueOf(dkzuVar.f);
             }
         }
-        efat.h(this.b, 1L, numArr);
+        ehnw.h(this.b, 1L, numArr);
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final void X(int i) {
         if (this.j != null) {
-            if (ding.K(getResources())) {
+            if (dkyr.K(getResources())) {
                 av(i);
                 return;
             } else {
@@ -341,17 +341,17 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         getWindow().setStatusBarColor(0);
     }
 
-    @Override // defpackage.dimd
+    @Override // defpackage.dkxo
     public final void ac() {
         av(8);
     }
 
-    @Override // defpackage.dimd
+    @Override // defpackage.dkxo
     public final void ad(int i) {
         aq(-1);
     }
 
-    @Override // defpackage.dimd
+    @Override // defpackage.dkxo
     public final void ae() {
         Fragment findFragmentByTag = getSupportFragmentManager().findFragmentByTag("RetrieveAuthTokensFragment");
         if (findFragmentByTag != null) {
@@ -359,15 +359,15 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         }
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void af(WalletExitResult walletExitResult) {
         ar(walletExitResult);
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void ag() {
         if (this.k != null) {
-            kJ().C();
+            kY().C();
             int[] iArr = {android.R.attr.colorBackground, R.attr.colorPrimaryDark};
             Arrays.sort(iArr);
             TypedArray obtainStyledAttributes = obtainStyledAttributes(iArr);
@@ -379,16 +379,16 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         }
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void ah() {
         if (m() != null) {
-            ((dijq) m()).al();
+            ((dkva) m()).al();
         }
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void ai() {
-        djfd b = WalletExitResult.b();
+        dlqw b = WalletExitResult.b();
         b.c(0);
         b.d(401);
         b.b(3);
@@ -403,7 +403,7 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         findViewById.setVisibility(true != z ? 8 : 0);
     }
 
-    @Override // defpackage.efua
+    @Override // defpackage.eihd
     public final void ak(int i, int i2) {
         if (i2 != 1000) {
             Log.e("CheckoutChimeraActivity", a.j(i2, "Unknown error dialog error code: "));
@@ -415,43 +415,43 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         }
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void al(int i) {
         av(i);
     }
 
-    @Override // defpackage.diez
+    @Override // defpackage.dkqk
     protected final int e() {
         return am(ao());
     }
 
-    @Override // defpackage.diez, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void finish() {
         super.finish();
         if (this.h == 3) {
-            overridePendingTransition(0, ding.c(l()));
+            overridePendingTransition(0, dkyr.c(l()));
         }
     }
 
-    @Override // defpackage.diez
+    @Override // defpackage.dkqk
     protected final int g() {
         return an(ao());
     }
 
-    @Override // defpackage.diez
+    @Override // defpackage.dkqk
     protected final Intent i() {
-        return dihb.i(this, 1, getIntent().getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS"), getIntent().getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_UNENCRYPTED_PARAMS"), l(), getIntent().getLongExtra("com.google.android.gms.wallet.intentBuildTimeMs", 0L));
+        return dksm.i(this, 1, getIntent().getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS"), getIntent().getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_UNENCRYPTED_PARAMS"), l(), getIntent().getLongExtra("com.google.android.gms.wallet.intentBuildTimeMs", 0L));
     }
 
-    @Override // defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         BuyFlowConfig l = l();
         if (!Q()) {
             int Z = Z(this, l);
             this.h = Z;
-            ding.C(this, l, (Z == 1 || Z == 2 || Z == 3) ? ding.e : Z != 4 ? ding.b : ding.c, true);
+            dkyr.C(this, l, (Z == 1 || Z == 2 || Z == 3) ? dkyr.e : Z != 4 ? dkyr.b : dkyr.c, true);
         }
-        q(bundle, true, 1, emen.FLOW_TYPE_BUYFLOW);
+        q(bundle, true, 1, eosb.FLOW_TYPE_BUYFLOW);
         super.onCreate(bundle);
         if (Q()) {
             return;
@@ -469,12 +469,12 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
             obtainStyledAttributes.recycle();
             Resources resources = getResources();
             Resources.Theme theme = getTheme();
-            ThreadLocal threadLocal = ims.a;
-            Drawable drawable = resources.getDrawable(2131233258, theme);
+            ThreadLocal threadLocal = ioj.a;
+            Drawable drawable = resources.getDrawable(2131233324, theme);
             if (color != 0 && drawable != null) {
                 drawable.setTint(color);
-                kJ().w(drawable);
-                kJ().u(R.string.close_button_label);
+                kY().w(drawable);
+                kY().u(R.string.close_button_label);
             }
         } else {
             setContentView(R.layout.wallet_activity_checkout_bottom_sheet);
@@ -483,7 +483,7 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
             d(toolbar2);
             ab();
         }
-        kJ().o(true);
+        kY().o(true);
         BottomSheetView bottomSheetView = (BottomSheetView) findViewById(R.id.bottom_sheet);
         this.k = bottomSheetView;
         if (bottomSheetView != null) {
@@ -494,8 +494,8 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
             }
             bottomSheetView.f = d;
             bottomSheetView.i = new BottomSheetBehavior();
-            ((ijf) bottomSheetView.getLayoutParams()).b(bottomSheetView.i);
-            bottomSheetView.i.A(new dilp(bottomSheetView));
+            ((ikv) bottomSheetView.getLayoutParams()).b(bottomSheetView.i);
+            bottomSheetView.i.A(new dkxa(bottomSheetView));
             bottomSheetView.i.H(4);
             bottomSheetView.i.E(false);
             this.k.k = this;
@@ -520,27 +520,27 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         } else {
             ap();
         }
-        ding.A(findViewById(R.id.wallet_root));
+        dkyr.A(findViewById(R.id.wallet_root));
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         if (m() != null) {
-            ((dijq) m()).X(intent);
+            ((dkva) m()).X(intent);
         }
     }
 
-    @Override // defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        efub efubVar = (efub) getSupportFragmentManager().findFragmentByTag("CheckoutChimeraActivity.NETWORK_ERROR_DIALOG");
-        this.i = efubVar;
-        if (efubVar != null) {
-            efubVar.a = this;
+        eihe eiheVar = (eihe) getSupportFragmentManager().findFragmentByTag("CheckoutChimeraActivity.NETWORK_ERROR_DIALOG");
+        this.i = eiheVar;
+        if (eiheVar != null) {
+            eiheVar.a = this;
         }
     }
 
-    @Override // defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBoolean("hasAuthTokens", this.m);
@@ -550,23 +550,23 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         }
     }
 
-    @Override // defpackage.diez
+    @Override // defpackage.dkqk
     protected final String p() {
-        ehla ao = ao();
+        ejyg ao = ao();
         if (ao == null || (ao.c & 2048) == 0) {
             return null;
         }
-        faos faosVar = ao.p;
-        if (faosVar == null) {
-            faosVar = faos.a;
+        fddh fddhVar = ao.p;
+        if (fddhVar == null) {
+            fddhVar = fddh.a;
         }
-        return faosVar.f;
+        return fddhVar.f;
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final void v(WalletExitResult walletExitResult) {
         if (this.j != null) {
-            if (ding.K(getResources())) {
+            if (dkyr.K(getResources())) {
                 ar(walletExitResult);
                 return;
             } else {
@@ -583,23 +583,23 @@ public class CheckoutChimeraActivity extends diez implements dimd, efua, dils {
         this.k.f(walletExitResult.c());
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final void w(int i) {
         aq(i);
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final void x(WalletExitResult walletExitResult) {
         Intent au = au(5, walletExitResult.e, 9, false);
         au.putExtra("com.google.android.gms.wallet.firstparty.EXTRA_ERROR_CODE", walletExitResult.e);
-        if (dikm.a(l().c)) {
+        if (dkvx.a(l().c)) {
             walletExitResult.a().b(au);
         }
         setResult(1, au);
         finish();
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final /* synthetic */ void z(Parcelable parcelable, boolean z) {
         BuyFlowResult buyFlowResult = (BuyFlowResult) parcelable;
         Intent au = au(2, 0, 2, z);

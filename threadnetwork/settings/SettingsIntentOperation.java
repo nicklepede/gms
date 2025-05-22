@@ -3,30 +3,30 @@ package com.google.android.gms.threadnetwork.settings;
 import android.content.Intent;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
-import defpackage.anxy;
-import defpackage.aojj;
-import defpackage.asej;
-import defpackage.asew;
-import defpackage.asot;
-import defpackage.dfrp;
-import defpackage.ejhf;
-import defpackage.fsmk;
-import defpackage.fuur;
-import defpackage.fvbo;
+import defpackage.apzq;
+import defpackage.aqlc;
+import defpackage.auid;
+import defpackage.auiq;
+import defpackage.ausn;
+import defpackage.dicu;
+import defpackage.eluo;
+import defpackage.fvhs;
+import defpackage.fxqp;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class SettingsIntentOperation extends anxy {
-    private static final asot a = asot.b("SettingsIntentOperation", asej.THREADNETWORK);
+public final class SettingsIntentOperation extends apzq {
+    private static final ausn a = ausn.b("SettingsIntentOperation", auid.THREADNETWORK);
 
-    @Override // defpackage.anxy
-    @fuur
+    @Override // defpackage.apzq
+    @fxqp
     public final GoogleSettingsItem b() {
-        if (!fsmk.d()) {
+        if (!fvhs.d()) {
             return null;
         }
-        dfrp dfrpVar = SettingsChimeraActivity.j;
-        GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(dfrp.a(), 6, getString(R.string.gmscore_settings_threadnetwork_item_title), aojj.THREADNETWORK_ITEM, asew.DEFAULT_THREADNETWORK);
+        dicu dicuVar = SettingsChimeraActivity.j;
+        GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(dicu.a(), 6, getString(R.string.gmscore_settings_threadnetwork_item_title), aqlc.THREADNETWORK_ITEM, auiq.DEFAULT_THREADNETWORK);
         googleSettingsItem.j = true;
         googleSettingsItem.l = true;
         googleSettingsItem.p = getString(R.string.gmscore_settings_threadnetwork_item_description);
@@ -34,13 +34,13 @@ public final class SettingsIntentOperation extends anxy {
         return googleSettingsItem;
     }
 
-    @Override // defpackage.anxy, com.google.android.chimera.IntentOperation
+    @Override // defpackage.apzq, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
         try {
             super.onHandleIntent(intent);
         } catch (IllegalArgumentException e) {
-            ((ejhf) ((ejhf) a.j()).s(e)).x("Invalid intent");
+            ((eluo) ((eluo) a.j()).s(e)).x("Invalid intent");
         }
     }
 }

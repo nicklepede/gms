@@ -6,87 +6,87 @@ import android.os.Bundle;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.autofill.data.Credential;
 import com.google.android.gms.autofill.fill.FillForm;
-import defpackage.adsf;
-import defpackage.adsv;
-import defpackage.adty;
-import defpackage.adve;
-import defpackage.advg;
-import defpackage.adxv;
-import defpackage.aery;
-import defpackage.aerz;
-import defpackage.afji;
-import defpackage.afkk;
-import defpackage.aflc;
-import defpackage.ahfm;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.eius;
-import defpackage.eiuu;
-import defpackage.ejdg;
-import defpackage.ejhf;
-import defpackage.ensj;
-import defpackage.ensv;
+import defpackage.afsm;
+import defpackage.aftc;
+import defpackage.afuf;
+import defpackage.afvl;
+import defpackage.afvn;
+import defpackage.afyc;
+import defpackage.agsl;
+import defpackage.agsm;
+import defpackage.ahju;
+import defpackage.ahkw;
+import defpackage.ahlo;
+import defpackage.ajgc;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.elhx;
+import defpackage.elhz;
+import defpackage.elqn;
+import defpackage.eluo;
+import defpackage.eqgc;
+import defpackage.eqgo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class WarmupPasswordBreachIntentOperation extends IntentOperation {
-    public static final asot a = asot.b("WarmupPasswordBreachIntentOperation", asej.AUTOFILL);
-    private final ensv b;
+    public static final ausn a = ausn.b("WarmupPasswordBreachIntentOperation", auid.AUTOFILL);
+    private final eqgo b;
 
     public WarmupPasswordBreachIntentOperation() {
-        this(new asmf(1, 9));
+        this(new aupz(1, 9));
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        adsf adsfVar;
+        afsm afsmVar;
         getBaseContext();
-        if (afji.a() != afji.UI) {
-            ((ejhf) ((ejhf) a.i()).ah((char) 1044)).x("WarmupPasswordBreachIntentOperation must run on UI process");
+        if (ahju.a() != ahju.UI) {
+            ((eluo) ((eluo) a.i()).ai((char) 1038)).x("WarmupPasswordBreachIntentOperation must run on UI process");
             return;
         }
-        aerz a2 = aery.a(this);
-        eiid q = a2.q();
+        agsm a2 = agsl.a(this);
+        ekvi q = a2.q();
         if (q.h() && intent.getBooleanExtra("clear_password_leak_cache", false)) {
-            ((aflc) q.c()).b();
+            ((ahlo) q.c()).b();
             return;
         }
         try {
-            FillForm fillForm = (FillForm) ahfm.b((Bundle) intent.getParcelableExtra("fill_form"));
-            eiid g = a2.x(getBaseContext()).g();
+            FillForm fillForm = (FillForm) ajgc.b((Bundle) intent.getParcelableExtra("fill_form"));
+            ekvi g = a2.x(getBaseContext()).g();
             if (q.h() && g.h() && fillForm != null) {
-                ensv ensvVar = this.b;
-                eiid eiidVar = fillForm.g;
-                advg advgVar = null;
-                if (eiidVar.h()) {
-                    adsfVar = (adsf) eiidVar.c();
+                eqgo eqgoVar = this.b;
+                ekvi ekviVar = fillForm.g;
+                afvn afvnVar = null;
+                if (ekviVar.h()) {
+                    afsmVar = (afsm) ekviVar.c();
                 } else {
-                    adsv adsvVar = fillForm.f;
-                    adsfVar = adsvVar instanceof adsf ? (adsf) adsvVar : null;
+                    aftc aftcVar = fillForm.f;
+                    afsmVar = aftcVar instanceof afsm ? (afsm) aftcVar : null;
                 }
-                if (adsfVar == null) {
-                    ((ejhf) ((ejhf) a.j()).ah((char) 1042)).x("Android domain not found!");
+                if (afsmVar == null) {
+                    ((eluo) ((eluo) a.j()).ai((char) 1036)).x("Android domain not found!");
                 } else {
-                    eius D = eiuu.D(1);
-                    adsv adsvVar2 = fillForm.f;
-                    if (adsvVar2 instanceof adty) {
-                        D.c(adsvVar2);
+                    elhx D = elhz.D(1);
+                    aftc aftcVar2 = fillForm.f;
+                    if (aftcVar2 instanceof afuf) {
+                        D.c(aftcVar2);
                     }
-                    advgVar = new advg(ensvVar, adsfVar, D.g(), eigb.a);
+                    afvnVar = new afvn(eqgoVar, afsmVar, D.g(), ektg.a);
                 }
-                if (advgVar != null) {
-                    ensj.t(((adxv) g.c()).a(new adve(advgVar, new ejdg(Credential.class))), new afkk((aflc) q.c()), ensvVar);
+                if (afvnVar != null) {
+                    eqgc.t(((afyc) g.c()).a(new afvl(afvnVar, new elqn(Credential.class))), new ahkw((ahlo) q.c()), eqgoVar);
                 }
             }
         } catch (BadParcelableException | IllegalStateException | NullPointerException | OutOfMemoryError e) {
-            ((ejhf) ((ejhf) ((ejhf) a.h()).s(e)).ah((char) 1043)).x("Failed to unbundle fill form.");
+            ((eluo) ((eluo) ((eluo) a.h()).s(e)).ai((char) 1037)).x("Failed to unbundle fill form.");
         }
     }
 
-    public WarmupPasswordBreachIntentOperation(ensv ensvVar) {
-        this.b = ensvVar;
+    public WarmupPasswordBreachIntentOperation(eqgo eqgoVar) {
+        this.b = eqgoVar;
     }
 }

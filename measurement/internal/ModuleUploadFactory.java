@@ -1,47 +1,47 @@
 package com.google.android.gms.measurement.internal;
 
 import android.content.Context;
-import defpackage.cdoj;
-import defpackage.cdok;
-import defpackage.cdol;
-import defpackage.cdom;
-import defpackage.cdov;
-import defpackage.cdoy;
-import defpackage.cdsr;
-import defpackage.cduf;
-import defpackage.cdvc;
-import defpackage.cdvv;
-import defpackage.cdvw;
+import defpackage.cfxg;
+import defpackage.cfxh;
+import defpackage.cfxi;
+import defpackage.cfxj;
+import defpackage.cfxs;
+import defpackage.cfxv;
+import defpackage.cgbp;
+import defpackage.cgdd;
+import defpackage.cgea;
+import defpackage.cgev;
+import defpackage.cgew;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class ModuleUploadFactory extends cdvw {
+public class ModuleUploadFactory extends cgew {
     public ModuleUploadFactory(Context context) {
         super(context);
     }
 
-    @Override // defpackage.cdvw
-    public final cdov a(cdvv cdvvVar) {
-        return new cdoj(cdvvVar);
+    @Override // defpackage.cgew
+    public final cfxs a(cgev cgevVar) {
+        return new cfxg(cgevVar);
     }
 
-    @Override // defpackage.cdvw
-    public final cdsr b(cdvv cdvvVar) {
-        return new cdok(cdvvVar);
+    @Override // defpackage.cgew
+    public final cgbp b(cgev cgevVar) {
+        return new cfxh(cgevVar);
     }
 
-    @Override // defpackage.cdvw
-    public final cduf c(cdvv cdvvVar) {
-        return new cdol(cdvvVar);
+    @Override // defpackage.cgew
+    public final cgdd c(cgev cgevVar) {
+        return new cfxi(cgevVar);
     }
 
-    @Override // defpackage.cdvw
-    public final cdvc d(cdvv cdvvVar) {
-        return new cdoy(cdvvVar);
+    @Override // defpackage.cgew
+    public final cgea d(cgev cgevVar) {
+        return new cfxv(cgevVar);
     }
 
-    @Override // defpackage.cdvw
-    public final cdvv e() {
-        return new cdom(this);
+    @Override // defpackage.cgew
+    public final cgev e() {
+        return new cfxj(this);
     }
 }

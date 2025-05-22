@@ -11,53 +11,53 @@ import android.os.ResultReceiver;
 import android.telephony.TelephonyManager;
 import com.google.android.gms.R;
 import com.google.android.gms.chimera.modules.auth.magictether.AppContextProvider;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.byhr;
-import defpackage.cbpv;
-import defpackage.cbpw;
-import defpackage.cbqk;
-import defpackage.cbqn;
-import defpackage.cbqo;
-import defpackage.cbrf;
-import defpackage.cbrl;
-import defpackage.cbrm;
-import defpackage.cbrq;
-import defpackage.cbtx;
-import defpackage.cbty;
-import defpackage.cbue;
-import defpackage.cbux;
-import defpackage.cbvo;
-import defpackage.cbvp;
-import defpackage.cbvu;
-import defpackage.eiif;
-import defpackage.ejhf;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fpzd;
-import defpackage.fpzk;
-import defpackage.irn;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.caqj;
+import defpackage.cdyn;
+import defpackage.cdyo;
+import defpackage.cdzc;
+import defpackage.cdzf;
+import defpackage.cdzg;
+import defpackage.cdzx;
+import defpackage.cead;
+import defpackage.ceae;
+import defpackage.ceai;
+import defpackage.cecp;
+import defpackage.cecq;
+import defpackage.cecw;
+import defpackage.cedp;
+import defpackage.ceeg;
+import defpackage.ceeh;
+import defpackage.ceem;
+import defpackage.ekvk;
+import defpackage.eluo;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fssz;
+import defpackage.fstg;
+import defpackage.itd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ConnectTetheringResponder$TetheringResultReceiver extends ResultReceiver {
     public boolean a;
     private final Context b;
-    private final cbqn c;
-    private final cbux d;
-    private final cbty e;
-    private final cbvo f;
-    private final cbvp g;
+    private final cdzf c;
+    private final cedp d;
+    private final cecq e;
+    private final ceeg f;
+    private final ceeh g;
 
-    public ConnectTetheringResponder$TetheringResultReceiver(Context context, cbqn cbqnVar, cbux cbuxVar, cbty cbtyVar, cbvo cbvoVar) {
-        super(new byhr());
+    public ConnectTetheringResponder$TetheringResultReceiver(Context context, cdzf cdzfVar, cedp cedpVar, cecq cecqVar, ceeg ceegVar) {
+        super(new caqj());
         this.a = false;
         this.b = context;
-        this.c = cbqnVar;
-        this.d = cbuxVar;
-        this.e = cbtyVar;
-        this.f = cbvoVar;
-        this.g = new cbvp(cbvoVar);
+        this.c = cdzfVar;
+        this.d = cedpVar;
+        this.e = cecqVar;
+        this.f = ceegVar;
+        this.g = new ceeh(ceegVar);
     }
 
     private static final void a() {
@@ -70,7 +70,7 @@ public class ConnectTetheringResponder$TetheringResultReceiver extends ResultRec
             flags.putExtra("dialog_content_message", string2);
             PendingIntent.getActivity(a, 0, flags, 134217728).send();
         } catch (PendingIntent.CanceledException e) {
-            ((ejhf) ((ejhf) cbqo.a.j()).s(e)).x("Failed to show \"provisioning failed\" dialog.");
+            ((eluo) ((eluo) cdzg.a.j()).s(e)).x("Failed to show \"provisioning failed\" dialog.");
         }
     }
 
@@ -78,153 +78,153 @@ public class ConnectTetheringResponder$TetheringResultReceiver extends ResultRec
     protected final void onReceiveResult(int i, Bundle bundle) {
         String ssid;
         String passphrase;
-        asot asotVar = cbqo.a;
+        ausn ausnVar = cdzg.a;
         if (i == 0) {
-            new cbpw(this.b, (byte[]) null).e("com.google.android.gms.magictether.HAS_FINISHED_FIRST_TIME_SETUP", true);
+            new cdyo(this.b, (byte[]) null).e("com.google.android.gms.magictether.HAS_FINISHED_FIRST_TIME_SETUP", true);
             i = 0;
         }
         if (this.a) {
-            new cbrl(this.b).c();
+            new cead(this.b).c();
             this.g.a();
             return;
         }
-        fecj v = cbtx.a.v();
-        cbty cbtyVar = this.e;
+        fgrc v = cecp.a.v();
+        cecq cecqVar = this.e;
         if (!v.b.L()) {
             v.U();
         }
-        cbtx cbtxVar = (cbtx) v.b;
-        cbtyVar.getClass();
-        cbtxVar.f = cbtyVar;
-        cbtxVar.b |= 8;
-        if (cbpv.c(fpzk.j())) {
+        cecp cecpVar = (cecp) v.b;
+        cecqVar.getClass();
+        cecpVar.f = cecqVar;
+        cecpVar.b |= 8;
+        if (cdyn.c(fstg.j())) {
             Context a = AppContextProvider.a();
-            int i2 = cbrm.a;
-            cbue a2 = cbrm.a(a, new cbvo(a), (TelephonyManager) a.getSystemService("phone"), (WifiManager) a.getApplicationContext().getSystemService("wifi"));
+            int i2 = ceae.a;
+            cecw a2 = ceae.a(a, new ceeg(a), (TelephonyManager) a.getSystemService("phone"), (WifiManager) a.getApplicationContext().getSystemService("wifi"));
             if (!v.b.L()) {
                 v.U();
             }
-            cbtx cbtxVar2 = (cbtx) v.b;
+            cecp cecpVar2 = (cecp) v.b;
             a2.getClass();
-            cbtxVar2.g = a2;
-            cbtxVar2.b |= 16;
+            cecpVar2.g = a2;
+            cecpVar2.b |= 16;
         }
         Context a3 = AppContextProvider.a();
         if (i == 0) {
             if (!v.b.L()) {
                 v.U();
             }
-            cbtx cbtxVar3 = (cbtx) v.b;
-            cbtxVar3.c = 1;
-            cbtxVar3.b |= 1;
-            if (cbpv.c(fpzd.k()) && asqh.g()) {
+            cecp cecpVar3 = (cecp) v.b;
+            cecpVar3.c = 1;
+            cecpVar3.b |= 1;
+            if (cdyn.c(fssz.k()) && auub.g()) {
                 SoftApConfiguration softApConfiguration = ((WifiManager) this.b.getApplicationContext().getSystemService("wifi")).getSoftApConfiguration();
                 ssid = softApConfiguration.getSsid();
                 passphrase = softApConfiguration.getPassphrase();
-                if (ssid == null || (passphrase == null && !fpzk.q())) {
+                if (ssid == null || (passphrase == null && !fstg.q())) {
                     if (!v.b.L()) {
                         v.U();
                     }
-                    cbtx cbtxVar4 = (cbtx) v.b;
-                    cbtxVar4.c = 9;
-                    cbtxVar4.b |= 1;
-                    this.c.a((cbtx) v.Q());
+                    cecp cecpVar4 = (cecp) v.b;
+                    cecpVar4.c = 9;
+                    cecpVar4.b |= 1;
+                    this.c.a((cecp) v.Q());
                     return;
                 }
                 if (!v.b.L()) {
                     v.U();
                 }
-                fecp fecpVar = v.b;
-                cbtx cbtxVar5 = (cbtx) fecpVar;
-                cbtxVar5.b |= 2;
-                cbtxVar5.d = ssid;
+                fgri fgriVar = v.b;
+                cecp cecpVar5 = (cecp) fgriVar;
+                cecpVar5.b |= 2;
+                cecpVar5.d = ssid;
                 if (passphrase != null) {
-                    if (!fecpVar.L()) {
+                    if (!fgriVar.L()) {
                         v.U();
                     }
-                    cbtx cbtxVar6 = (cbtx) v.b;
-                    cbtxVar6.b |= 4;
-                    cbtxVar6.e = passphrase;
+                    cecp cecpVar6 = (cecp) v.b;
+                    cecpVar6.b |= 4;
+                    cecpVar6.e = passphrase;
                 }
             } else {
                 WifiConfiguration b = this.f.b();
-                if (cbpv.c(fpzd.k()) && b == null) {
-                    ((ejhf) cbqo.a.i()).x("getWifiApConfiguration returned null");
+                if (cdyn.c(fssz.k()) && b == null) {
+                    ((eluo) cdzg.a.i()).x("getWifiApConfiguration returned null");
                     if (!v.b.L()) {
                         v.U();
                     }
-                    cbtx cbtxVar7 = (cbtx) v.b;
-                    cbtxVar7.c = 10;
-                    cbtxVar7.b |= 1;
-                    this.c.a((cbtx) v.Q());
+                    cecp cecpVar7 = (cecp) v.b;
+                    cecpVar7.c = 10;
+                    cecpVar7.b |= 1;
+                    this.c.a((cecp) v.Q());
                     return;
                 }
                 String str = b.SSID;
                 if (!v.b.L()) {
                     v.U();
                 }
-                cbtx cbtxVar8 = (cbtx) v.b;
+                cecp cecpVar8 = (cecp) v.b;
                 str.getClass();
-                cbtxVar8.b |= 2;
-                cbtxVar8.d = str;
+                cecpVar8.b |= 2;
+                cecpVar8.d = str;
                 String str2 = b.preSharedKey;
                 if (!v.b.L()) {
                     v.U();
                 }
-                cbtx cbtxVar9 = (cbtx) v.b;
+                cecp cecpVar9 = (cecp) v.b;
                 str2.getClass();
-                cbtxVar9.b |= 4;
-                cbtxVar9.e = str2;
+                cecpVar9.b |= 4;
+                cecpVar9.e = str2;
             }
-            if (cbpv.c(fpzk.j())) {
-                cbqk.e(this.d);
-                cbrf.b();
-                cbrq.a(true, a3);
+            if (cdyn.c(fstg.j())) {
+                cdzc.e(this.d);
+                cdzx.b();
+                ceai.a(true, a3);
             } else {
-                cbqk.d(this.d.a());
-                cbvu.c().f(ApDisablingIntentOperation.a(AppContextProvider.a()));
-                cbrq.a(true, a3);
+                cdzc.d(this.d.a());
+                ceem.c().f(ApDisablingIntentOperation.a(AppContextProvider.a()));
+                ceai.a(true, a3);
             }
         } else {
             if (i == 1) {
-                cbrq.a(false, a3);
+                ceai.a(false, a3);
                 if (!v.b.L()) {
                     v.U();
                 }
-                cbtx cbtxVar10 = (cbtx) v.b;
-                cbtxVar10.c = 2;
-                cbtxVar10.b |= 1;
+                cecp cecpVar10 = (cecp) v.b;
+                cecpVar10.c = 2;
+                cecpVar10.b |= 1;
             } else if (i == 2) {
                 if (!v.b.L()) {
                     v.U();
                 }
-                cbtx cbtxVar11 = (cbtx) v.b;
-                cbtxVar11.c = 6;
-                cbtxVar11.b |= 1;
+                cecp cecpVar11 = (cecp) v.b;
+                cecpVar11.c = 6;
+                cecpVar11.b |= 1;
             } else if (i == 3) {
                 if (!v.b.L()) {
                     v.U();
                 }
-                cbtx cbtxVar12 = (cbtx) v.b;
-                cbtxVar12.c = 7;
-                cbtxVar12.b |= 1;
+                cecp cecpVar12 = (cecp) v.b;
+                cecpVar12.c = 7;
+                cecpVar12.b |= 1;
             } else {
                 if (!v.b.L()) {
                     v.U();
                 }
-                cbtx cbtxVar13 = (cbtx) v.b;
-                cbtxVar13.c = 0;
-                cbtxVar13.b |= 1;
+                cecp cecpVar13 = (cecp) v.b;
+                cecpVar13.c = 0;
+                cecpVar13.b |= 1;
             }
-            if (fpzk.a.a().P()) {
-                cbvu c = cbvu.c();
-                String str3 = cbtyVar.d;
-                c.l(c.c, c.b(cbvu.n(), c.b.getString(R.string.magictether_host_hotspot_error_title_carrier_block), eiif.c(str3) ? c.b.getString(R.string.magictether_host_hotspot_error_message_carrier_block_no_carrier_specified) : c.b.getString(R.string.magictether_host_hotspot_error_message_carrier_block, irn.a().d(str3))).b(), 9);
+            if (fstg.a.lK().P()) {
+                ceem c = ceem.c();
+                String str3 = cecqVar.d;
+                c.l(c.c, c.b(ceem.n(), c.b.getString(R.string.magictether_host_hotspot_error_title_carrier_block), ekvk.c(str3) ? c.b.getString(R.string.magictether_host_hotspot_error_message_carrier_block_no_carrier_specified) : c.b.getString(R.string.magictether_host_hotspot_error_message_carrier_block, itd.a().d(str3))).b(), 9);
             } else {
                 a();
             }
             this.g.a();
         }
-        this.c.a((cbtx) v.Q());
+        this.c.a((cecp) v.Q());
     }
 }

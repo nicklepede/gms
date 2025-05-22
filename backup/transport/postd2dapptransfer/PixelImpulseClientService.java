@@ -4,61 +4,61 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.BoundService;
 import com.google.android.gms.backup.transport.postd2dapptransfer.PixelImpulseClientService;
-import defpackage.ahwd;
-import defpackage.akjw;
-import defpackage.akkm;
-import defpackage.arxo;
-import defpackage.fvaf;
-import defpackage.fvaq;
-import defpackage.pgn;
-import defpackage.phh;
+import defpackage.ajwt;
+import defpackage.amkx;
+import defpackage.amlm;
+import defpackage.auad;
+import defpackage.fxwd;
+import defpackage.fxwo;
+import defpackage.qzr;
+import defpackage.ral;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class PixelImpulseClientService extends BoundService {
-    private static final arxo a = ahwd.a("PixelImpulseClientService");
+    private static final auad a = ajwt.a("PixelImpulseClientService");
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final IBinder onBind(Intent intent) {
         a.j("PixelImpulseClientService onBind", new Object[0]);
-        arxo arxoVar = akjw.a;
-        final phh phhVar = new phh(this, akjw.b);
-        final akkm akkmVar = new akkm();
-        return new pgn(phhVar, new fvaf() { // from class: akjs
-            @Override // defpackage.fvaf
+        auad auadVar = amkx.a;
+        final ral ralVar = new ral(this, amkx.b);
+        final amlm amlmVar = new amlm();
+        return new qzr(ralVar, new fxwd() { // from class: amkt
+            @Override // defpackage.fxwd
             public final Object a() {
                 final PixelImpulseClientService pixelImpulseClientService = PixelImpulseClientService.this;
-                final akkm akkmVar2 = akkmVar;
-                final phh phhVar2 = phhVar;
-                akjw.c(new Runnable() { // from class: akjr
+                final amlm amlmVar2 = amlmVar;
+                final ral ralVar2 = ralVar;
+                amkx.b(new Runnable() { // from class: amks
                     @Override // java.lang.Runnable
                     public final void run() {
-                        akka a2 = akjw.a(PixelImpulseClientService.this);
-                        akjw.d(a2, akkmVar2);
-                        akjw.f(a2, phhVar2);
+                        amlp f = amlp.f(PixelImpulseClientService.this);
+                        amkx.c(f, amlmVar2);
+                        amkx.e(f.b(), ralVar2);
                     }
-                }, "Failed to refresh app data cleanup listener configurations on server start", akkmVar2);
-                return fuvs.a;
+                }, "Failed to refresh app data cleanup listener configurations on server start", amlmVar2);
+                return fxrq.a;
             }
-        }, new fvaq() { // from class: akjp
-            @Override // defpackage.fvaq
+        }, new fxwo() { // from class: amkq
+            @Override // defpackage.fxwo
             public final Object a(Object obj) {
-                final phl phlVar = (phl) obj;
-                final phh phhVar2 = phhVar;
+                final rap rapVar = (rap) obj;
+                final ral ralVar2 = ralVar;
                 final PixelImpulseClientService pixelImpulseClientService = PixelImpulseClientService.this;
-                final akkm akkmVar2 = akkmVar;
-                akjw.c(new Runnable() { // from class: akjq
+                final amlm amlmVar2 = amlmVar;
+                amkx.b(new Runnable() { // from class: amkr
                     @Override // java.lang.Runnable
                     public final void run() {
-                        akjw.e(phlVar, akjw.a(PixelImpulseClientService.this), phhVar2, akkmVar2);
+                        amkx.d(rapVar, amlp.f(PixelImpulseClientService.this), ralVar2, amlmVar2);
                     }
-                }, "Failed to handle PixelStateChangeEvents", akkmVar2);
-                return fuvs.a;
+                }, "Failed to handle PixelStateChangeEvents", amlmVar2);
+                return fxrq.a;
             }
         });
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         a.j("PixelImpulseClientService onCreate", new Object[0]);
     }

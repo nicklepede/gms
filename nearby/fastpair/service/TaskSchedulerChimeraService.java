@@ -4,114 +4,114 @@ import android.content.Context;
 import android.os.Bundle;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import defpackage.a;
-import defpackage.asmb;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykj;
-import defpackage.bykm;
-import defpackage.bykn;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.bykw;
-import defpackage.byky;
-import defpackage.cexu;
-import defpackage.cibd;
-import defpackage.cigw;
-import defpackage.ciqg;
-import defpackage.ejhf;
-import defpackage.ensv;
-import defpackage.fqkx;
-import defpackage.fqld;
+import defpackage.aupv;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.catb;
+import defpackage.cate;
+import defpackage.catf;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.cato;
+import defpackage.catq;
+import defpackage.chff;
+import defpackage.ckji;
+import defpackage.ckpb;
+import defpackage.ckyl;
+import defpackage.eluo;
+import defpackage.eqgo;
+import defpackage.ftes;
+import defpackage.ftey;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class TaskSchedulerChimeraService extends GmsTaskBoundService {
     public static final /* synthetic */ int a = 0;
-    private final ensv b = new asmb(1, 10);
+    private final eqgo b = new aupv(1, 10);
 
-    public static bykn d(String str, byki bykiVar) {
-        bykm bykmVar = new bykm();
-        bykmVar.w("com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
-        bykmVar.t(str);
-        bykmVar.j(bykiVar);
-        bykmVar.v(1);
-        bykmVar.t = byky.a;
-        bykmVar.y(0, 1);
-        bykmVar.x(0, 1);
-        return bykmVar.b();
+    public static catf d(String str, cata cataVar) {
+        cate cateVar = new cate();
+        cateVar.w("com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
+        cateVar.t(str);
+        cateVar.j(cataVar);
+        cateVar.v(1);
+        cateVar.t = catq.a;
+        cateVar.y(0, 1);
+        cateVar.x(0, 1);
+        return cateVar.b();
     }
 
-    public static bykw e(String str, bykv bykvVar) {
-        byko bykoVar = new byko();
-        bykoVar.q(str);
-        bykoVar.w("com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
-        bykoVar.a = bykvVar;
-        bykoVar.v(1);
-        bykoVar.l(true);
-        return bykoVar.b();
+    public static cato e(String str, catn catnVar) {
+        catg catgVar = new catg();
+        catgVar.q(str);
+        catgVar.w("com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
+        catgVar.a = catnVar;
+        catgVar.v(1);
+        catgVar.l(true);
+        return catgVar.b();
     }
 
     public static void f(Context context) {
-        ciqg.b(context, "TAG_FOOTPRINTS_PERIODIC_SCHEDULE");
+        ckyl.b(context, "TAG_FOOTPRINTS_PERIODIC_SCHEDULE");
     }
 
     public static void g(Context context, boolean z) {
-        if (!fqld.L()) {
-            ((ejhf) cigw.a.d().ah(7413)).x("TSS scheduleFootprintsOneOffSync: not enable");
+        if (!ftey.M()) {
+            ((eluo) ckpb.a.d().ai(7362)).x("TSS scheduleFootprintsOneOffSync: not enable");
             return;
         }
-        bykj bykjVar = new bykj();
-        bykjVar.w("com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
-        bykjVar.t("TAG_FOOTPRINTS_ONE_OFF_SCHEDULE");
-        bykjVar.v(0);
-        bykjVar.e(z ? 0L : fqkx.B(), z ? 1L : fqkx.B() + 60);
-        bykjVar.t = byky.a;
-        bykjVar.y(0, 0);
-        bykjVar.x(0, 0);
-        ciqg.d(context, bykjVar.b());
+        catb catbVar = new catb();
+        catbVar.w("com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
+        catbVar.t("TAG_FOOTPRINTS_ONE_OFF_SCHEDULE");
+        catbVar.v(0);
+        catbVar.e(z ? 0L : ftes.B(), z ? 1L : ftes.B() + 60);
+        catbVar.t = catq.a;
+        catbVar.y(0, 0);
+        catbVar.x(0, 0);
+        ckyl.d(context, catbVar.b());
     }
 
-    public static void h(Context context, cibd cibdVar) {
-        if (!fqld.af()) {
-            ((ejhf) cigw.a.g().ah(7416)).x("TSS startTriangleMonitor: not enable");
+    public static void h(Context context, ckji ckjiVar) {
+        if (!ftey.ag()) {
+            ((eluo) ckpb.a.g().ai(7365)).x("TSS startTriangleMonitor: not enable");
             return;
         }
-        j(context, cibdVar, true);
-        ejhf ejhfVar = (ejhf) cigw.a.d().ah(7415);
-        long j = cibdVar.a;
-        ejhfVar.A("TSS startTriangleMonitor: id %s", j);
+        j(context, ckjiVar, true);
+        eluo eluoVar = (eluo) ckpb.a.d().ai(7364);
+        long j = ckjiVar.a;
+        eluoVar.A("TSS startTriangleMonitor: id %s", j);
         TimeUnit timeUnit = TimeUnit.MINUTES;
-        fqkx fqkxVar = fqkx.a;
-        long millis = timeUnit.toMillis(fqkxVar.a().bE());
-        if (cibdVar.k(millis)) {
+        ftes ftesVar = ftes.a;
+        long millis = timeUnit.toMillis(ftesVar.lK().bE());
+        if (ckjiVar.k(millis)) {
             Bundle bundle = new Bundle();
-            bundle.putInt("KEY_TRIANGLE_MONITOR_TYPE", cibdVar.b - 1);
-            byjl a2 = byjl.a(context);
+            bundle.putInt("KEY_TRIANGLE_MONITOR_TYPE", ckjiVar.b - 1);
+            casd a2 = casd.a(context);
             long seconds = TimeUnit.MILLISECONDS.toSeconds(millis);
-            bykj bykjVar = new bykj();
-            bykjVar.w("com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
-            bykjVar.t(a.D(j, "TAG_TRIANGLE_STOP_TRIANGLE_MONITOR_"));
-            bykjVar.v(1);
-            bykjVar.r(false);
-            bykjVar.i(false);
-            bykjVar.g(2);
-            bykjVar.e(seconds, TimeUnit.MINUTES.toSeconds(fqkxVar.a().dQ()) + seconds);
-            bykjVar.u = bundle;
-            a2.f(bykjVar.b());
+            catb catbVar = new catb();
+            catbVar.w("com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
+            catbVar.t(a.C(j, "TAG_TRIANGLE_STOP_TRIANGLE_MONITOR_"));
+            catbVar.v(1);
+            catbVar.r(false);
+            catbVar.i(false);
+            catbVar.g(2);
+            catbVar.e(seconds, TimeUnit.MINUTES.toSeconds(ftesVar.lK().dQ()) + seconds);
+            catbVar.u = bundle;
+            a2.f(catbVar.b());
         }
     }
 
-    public static void j(Context context, cibd cibdVar, boolean z) {
-        if (!fqld.af()) {
-            ((ejhf) cigw.a.d().ah(7421)).x("TSS stopTriangleMonitor: not enable");
+    public static void j(Context context, ckji ckjiVar, boolean z) {
+        if (!ftey.ag()) {
+            ((eluo) ckpb.a.d().ai(7370)).x("TSS stopTriangleMonitor: not enable");
             return;
         }
-        ejhf ejhfVar = (ejhf) cigw.a.d().ah(7420);
-        long j = cibdVar.a;
-        ejhfVar.A("TSS stopTriangleMonitor: id %s", j);
-        byjl.a(context).d(a.D(j, "TAG_TRIANGLE_STOP_TRIANGLE_MONITOR_"), "com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
-        cibdVar.j(new cexu(context), z);
+        eluo eluoVar = (eluo) ckpb.a.d().ai(7369);
+        long j = ckjiVar.a;
+        eluoVar.A("TSS stopTriangleMonitor: id %s", j);
+        casd.a(context).d(a.C(j, "TAG_TRIANGLE_STOP_TRIANGLE_MONITOR_"), "com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService");
+        ckjiVar.j(new chff(context), z);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:27:0x0057, code lost:
@@ -123,17 +123,17 @@ public class TaskSchedulerChimeraService extends GmsTaskBoundService {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final defpackage.enss im(defpackage.byln r10) {
+    public final defpackage.eqgl iB(defpackage.cauf r10) {
         /*
-            Method dump skipped, instructions count: 266
+            Method dump skipped, instructions count: 264
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService.im(byln):enss");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraService.iB(cauf):eqgl");
     }
 
-    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
-        ((ejhf) cigw.a.d().ah(7407)).x("TSS destroyed");
+        ((eluo) ckpb.a.d().ai(7356)).x("TSS destroyed");
         this.b.shutdown();
         super.onDestroy();
     }

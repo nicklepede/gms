@@ -1,11 +1,11 @@
 package com.google.android.gms.ads.cache;
 
-import defpackage.aspm;
+import defpackage.autg;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class i implements Runnable {
     final /* synthetic */ InputStream a;
@@ -23,10 +23,10 @@ final class i implements Runnable {
         try {
             InputStream inputStream = this.a;
             inputStream.skip(this.b);
-            aspm.i(inputStream, this.c, true);
+            autg.i(inputStream, this.c, true);
         } catch (IOException unused) {
-            aspm.b(this.a);
-            aspm.b(this.c);
+            autg.b(this.a);
+            autg.b(this.c);
         }
     }
 }

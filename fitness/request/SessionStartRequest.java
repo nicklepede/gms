@@ -6,39 +6,39 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fitness.data.Session;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bgiu;
-import defpackage.bgiw;
-import defpackage.bglo;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bink;
+import defpackage.binm;
+import defpackage.biqe;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SessionStartRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bglo();
+    public static final Parcelable.Creator CREATOR = new biqe();
     public final Session a;
-    public final bgiw b;
+    public final binm b;
 
     public SessionStartRequest(Session session, IBinder iBinder) {
-        bgiw bgiuVar;
+        binm binkVar;
         this.a = session;
         if (iBinder == null) {
-            bgiuVar = null;
+            binkVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.IStatusCallback");
-            bgiuVar = queryLocalInterface instanceof bgiw ? (bgiw) queryLocalInterface : new bgiu(iBinder);
+            binkVar = queryLocalInterface instanceof binm ? (binm) queryLocalInterface : new bink(iBinder);
         }
-        this.b = bgiuVar;
+        this.b = binkVar;
     }
 
     public final boolean equals(Object obj) {
         if (obj != this) {
-            return (obj instanceof SessionStartRequest) && arwb.b(this.a, ((SessionStartRequest) obj).a);
+            return (obj instanceof SessionStartRequest) && atyq.b(this.a, ((SessionStartRequest) obj).a);
         }
         return true;
     }
@@ -49,24 +49,24 @@ public class SessionStartRequest extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("session", this.a, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("session", this.a, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Session session = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, session, i, false);
-        bgiw bgiwVar = this.b;
-        arxc.D(parcel, 2, bgiwVar == null ? null : bgiwVar.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, session, i, false);
+        binm binmVar = this.b;
+        atzr.D(parcel, 2, binmVar == null ? null : binmVar.asBinder());
+        atzr.c(parcel, a);
     }
 
-    public SessionStartRequest(Session session, bgiw bgiwVar) {
-        arwm.c(session.a(TimeUnit.MILLISECONDS) <= System.currentTimeMillis(), "Cannot start a session in the future");
-        arwm.c(session.b == 0, "Cannot start a session which has already ended");
+    public SessionStartRequest(Session session, binm binmVar) {
+        atzb.c(session.a(TimeUnit.MILLISECONDS) <= System.currentTimeMillis(), "Cannot start a session in the future");
+        atzb.c(session.b == 0, "Cannot start a session which has already ended");
         this.a = session;
-        this.b = bgiwVar;
+        this.b = binmVar;
     }
 }

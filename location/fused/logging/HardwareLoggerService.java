@@ -5,74 +5,74 @@ import android.location.LocationManager;
 import android.os.Build;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.location.fused.logging.HardwareLoggerService;
-import defpackage.brbz;
-import defpackage.bubv;
-import defpackage.byln;
-import defpackage.eijr;
+import defpackage.btjq;
+import defpackage.bwjx;
+import defpackage.cauf;
+import defpackage.ekww;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class HardwareLoggerService extends GmsTaskBoundService {
     public static final /* synthetic */ int a = 0;
-    private brbz b;
+    private btjq b;
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (!"HardwareLogger".equals(bylnVar.a)) {
+    public final int a(cauf caufVar) {
+        if (!"HardwareLogger".equals(caufVar.a)) {
             return 2;
         }
-        this.b.d(new eijr() { // from class: bzqu
-            @Override // defpackage.eijr
-            public final Object a() {
+        this.b.d(new ekww() { // from class: cbzl
+            @Override // defpackage.ekww
+            public final Object lK() {
                 GnssCapabilities gnssCapabilities;
                 boolean hasLowPowerMode;
-                fecj v = elfm.a.v();
-                elfl elflVar = elfl.HARDWARE;
+                fgrc v = ensz.a.v();
+                ensy ensyVar = ensy.HARDWARE;
                 if (!v.b.L()) {
                     v.U();
                 }
                 HardwareLoggerService hardwareLoggerService = HardwareLoggerService.this;
-                elfm elfmVar = (elfm) v.b;
-                elfmVar.c = elflVar.F;
-                elfmVar.b |= 1;
-                fecj v2 = bzqt.a.v();
+                ensz enszVar = (ensz) v.b;
+                enszVar.c = ensyVar.F;
+                enszVar.b |= 1;
+                fgrc v2 = cbzk.a.v();
                 LocationManager locationManager = (LocationManager) Objects.requireNonNull((LocationManager) hardwareLoggerService.getSystemService("location"));
-                String a2 = ipm.a(locationManager);
+                String a2 = irc.a(locationManager);
                 if (a2 != null) {
                     String substring = a2.substring(0, Math.min(a2.length(), 50));
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    bzqt bzqtVar = (bzqt) v2.b;
+                    cbzk cbzkVar = (cbzk) v2.b;
                     substring.getClass();
-                    bzqtVar.b |= 2;
-                    bzqtVar.d = substring;
+                    cbzkVar.b |= 2;
+                    cbzkVar.d = substring;
                 }
                 if (Build.VERSION.SDK_INT >= 28) {
                     boolean hasSystemFeature = hardwareLoggerService.getPackageManager().hasSystemFeature("android.hardware.wifi.aware");
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    bzqt bzqtVar2 = (bzqt) v2.b;
-                    bzqtVar2.b |= 4;
-                    bzqtVar2.e = hasSystemFeature;
+                    cbzk cbzkVar2 = (cbzk) v2.b;
+                    cbzkVar2.b |= 4;
+                    cbzkVar2.e = hasSystemFeature;
                     boolean hasSystemFeature2 = hardwareLoggerService.getPackageManager().hasSystemFeature("android.hardware.wifi.rtt");
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    bzqt bzqtVar3 = (bzqt) v2.b;
-                    bzqtVar3.b |= 8;
-                    bzqtVar3.f = hasSystemFeature2;
+                    cbzk cbzkVar3 = (cbzk) v2.b;
+                    cbzkVar3.b |= 8;
+                    cbzkVar3.f = hasSystemFeature2;
                 }
                 if (Build.VERSION.SDK_INT >= 26) {
                     boolean z = locationManager.getGnssBatchSize() > 1;
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    bzqt bzqtVar4 = (bzqt) v2.b;
-                    bzqtVar4.b |= 16;
-                    bzqtVar4.g = z;
+                    cbzk cbzkVar4 = (cbzk) v2.b;
+                    cbzkVar4.b |= 16;
+                    cbzkVar4.g = z;
                 }
                 if (Build.VERSION.SDK_INT >= 29) {
                     gnssCapabilities = locationManager.getGnssCapabilities();
@@ -80,27 +80,27 @@ public final class HardwareLoggerService extends GmsTaskBoundService {
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    bzqt bzqtVar5 = (bzqt) v2.b;
-                    bzqtVar5.b |= 32;
-                    bzqtVar5.h = hasLowPowerMode;
+                    cbzk cbzkVar5 = (cbzk) v2.b;
+                    cbzkVar5.b |= 32;
+                    cbzkVar5.h = hasLowPowerMode;
                 }
                 if (!v.b.L()) {
                     v.U();
                 }
-                elfm elfmVar2 = (elfm) v.b;
-                bzqt bzqtVar6 = (bzqt) v2.Q();
-                bzqtVar6.getClass();
-                elfmVar2.w = bzqtVar6;
-                elfmVar2.b |= 1048576;
-                return (elfm) v.Q();
+                ensz enszVar2 = (ensz) v.b;
+                cbzk cbzkVar6 = (cbzk) v2.Q();
+                cbzkVar6.getClass();
+                enszVar2.w = cbzkVar6;
+                enszVar2.b |= 1048576;
+                return (ensz) v.Q();
             }
         });
         return 0;
     }
 
-    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         super.onCreate();
-        this.b = bubv.v();
+        this.b = bwjx.v();
     }
 }

@@ -2,28 +2,29 @@ package com.google.android.gms.ads.nonagon.util.concurrent;
 
 import com.google.android.gms.ads.nonagon.clearcut.k;
 import com.google.android.gms.ads.nonagon.clearcut.l;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensj;
-import defpackage.enss;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.eqgo;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class m {
     public final /* synthetic */ n a;
     private final Object b;
-    private final enss c;
+    private final eqgl c;
     private final List d;
-    private final enss e;
+    private final eqgl e;
 
-    public m(n nVar, Object obj, enss enssVar, List list, enss enssVar2) {
+    public m(n nVar, Object obj, eqgl eqglVar, List list, eqgl eqglVar2) {
         this.a = nVar;
         this.b = obj;
-        this.c = enssVar;
+        this.c = eqglVar;
         this.d = list;
-        this.e = enssVar2;
+        this.e = eqglVar2;
     }
 
     public final g a() {
@@ -34,7 +35,7 @@ public final class m {
             public final void a(Object obj2) {
             }
         });
-        this.c.hn(new Runnable() { // from class: com.google.android.gms.ads.nonagon.util.concurrent.k
+        Runnable runnable = new Runnable() { // from class: com.google.android.gms.ads.nonagon.util.concurrent.k
             @Override // java.lang.Runnable
             public final void run() {
                 final g gVar2 = gVar;
@@ -50,22 +51,24 @@ public final class m {
                     }
                 });
             }
-        }, com.google.android.gms.ads.internal.util.future.e.d);
-        ensj.t(gVar, new l(this, gVar), com.google.android.gms.ads.internal.util.future.e.d);
+        };
+        eqgo eqgoVar = com.google.android.gms.ads.internal.util.future.e.d;
+        this.c.hD(runnable, eqgoVar);
+        eqgc.t(gVar, new l(this, gVar), eqgoVar);
         return gVar;
     }
 
     public final m b(final f fVar) {
-        return c(new enqc() { // from class: com.google.android.gms.ads.nonagon.util.concurrent.j
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                return ensj.i(f.this.a(obj));
+        return c(new eqdv() { // from class: com.google.android.gms.ads.nonagon.util.concurrent.j
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                return eqgc.i(f.this.a(obj));
             }
         });
     }
 
-    public final m c(enqc enqcVar) {
+    public final m c(eqdv eqdvVar) {
         n nVar = this.a;
-        return new m(nVar, this.b, this.c, this.d, enps.g(this.e, enqcVar, nVar.a));
+        return new m(nVar, this.b, this.c, this.d, eqdl.g(this.e, eqdvVar, nVar.a));
     }
 }

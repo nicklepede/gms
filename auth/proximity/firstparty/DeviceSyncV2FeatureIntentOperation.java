@@ -4,55 +4,55 @@ import android.accounts.Account;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.acmm;
-import defpackage.arxo;
-import defpackage.asnd;
-import defpackage.ejqk;
-import defpackage.ejqn;
-import defpackage.ejtk;
-import defpackage.esjn;
-import defpackage.flcj;
+import defpackage.aemm;
+import defpackage.auad;
+import defpackage.auqx;
+import defpackage.emdt;
+import defpackage.emdw;
+import defpackage.emgt;
+import defpackage.euzc;
+import defpackage.fnts;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class DeviceSyncV2FeatureIntentOperation extends IntentOperation {
-    private static final arxo a = new arxo("ProximityAuth", "DeviceSyncV2FeatureIntentOperation");
-    private final acmm b;
+    private static final auad a = new auad("ProximityAuth", "DeviceSyncV2FeatureIntentOperation");
+    private final aemm b;
 
     public DeviceSyncV2FeatureIntentOperation() {
-        this.b = new acmm();
+        this.b = new aemm();
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         String name;
-        if ("com.google.android.gms.auth.cryptauth.DEVICE_SYNC_V2_FEATURE".equals(intent.getAction()) && flcj.i()) {
+        if ("com.google.android.gms.auth.cryptauth.DEVICE_SYNC_V2_FEATURE".equals(intent.getAction()) && fnts.i()) {
             String stringExtra = intent.getStringExtra("account_name");
             Account account = new Account(stringExtra, "com.google");
-            if (!asnd.m(this, account)) {
+            if (!auqx.m(this, account)) {
                 a.m("Invalid account: %s", stringExtra);
                 return;
             }
             String stringExtra2 = intent.getStringExtra("feature_name");
-            esjn[] values = esjn.values();
+            euzc[] values = euzc.values();
             int length = values.length;
             int i = 0;
             while (true) {
                 if (i >= length) {
                     a.m("Couldn't retrieve feature name from hashed value", new Object[0]);
-                    name = esjn.UNKNOWN_FEATURE.name();
+                    name = euzc.UNKNOWN_FEATURE.name();
                     break;
                 }
-                esjn esjnVar = values[i];
-                String name2 = esjnVar.name();
-                int i2 = ejqn.b;
-                long c = ejqk.a.c(name2, Charset.forName("UTF-8")).c();
+                euzc euzcVar = values[i];
+                String name2 = euzcVar.name();
+                int i2 = emdw.b;
+                long c = emdt.a.c(name2, Charset.forName("UTF-8")).c();
                 ByteBuffer allocate = ByteBuffer.allocate(8);
                 allocate.putLong(c);
-                if (ejtk.e.g().n(allocate.array()).equals(stringExtra2)) {
-                    name = esjnVar.name();
+                if (emgt.e.g().n(allocate.array()).equals(stringExtra2)) {
+                    name = euzcVar.name();
                     break;
                 }
                 i++;
@@ -61,8 +61,8 @@ public class DeviceSyncV2FeatureIntentOperation extends IntentOperation {
         }
     }
 
-    DeviceSyncV2FeatureIntentOperation(Context context, acmm acmmVar) {
+    DeviceSyncV2FeatureIntentOperation(Context context, aemm aemmVar) {
         attachBaseContext(context);
-        this.b = acmmVar;
+        this.b = aemmVar;
     }
 }

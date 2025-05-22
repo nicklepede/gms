@@ -14,39 +14,39 @@ import com.google.android.gms.nearby.presence.PresenceIdentity;
 import com.google.android.gms.nearby.presence.PresenceZone;
 import com.google.android.gms.nearby.presence.log.NearbyPresenceDiscoveryRequestAttribution;
 import com.google.android.gms.nearby.presence.managers.registration.DiscoveryRegistration;
-import defpackage.asot;
-import defpackage.asrj;
-import defpackage.bwqu;
-import defpackage.bwrd;
-import defpackage.bwrl;
-import defpackage.bwrx;
-import defpackage.bxah;
-import defpackage.bxcp;
-import defpackage.bxcr;
-import defpackage.cfcm;
-import defpackage.cfdj;
-import defpackage.cklu;
-import defpackage.cklv;
-import defpackage.ckmb;
-import defpackage.ckmy;
-import defpackage.ckna;
-import defpackage.cknb;
-import defpackage.ckne;
-import defpackage.ckoh;
-import defpackage.clex;
-import defpackage.clfq;
-import defpackage.clfs;
-import defpackage.clfz;
-import defpackage.deqr;
-import defpackage.dnlf;
-import defpackage.egtz;
-import defpackage.eitj;
-import defpackage.eius;
-import defpackage.eiuu;
-import defpackage.ejcb;
-import defpackage.ejck;
-import defpackage.ejhf;
-import defpackage.fqma;
+import defpackage.ausn;
+import defpackage.auvd;
+import defpackage.byzk;
+import defpackage.byzt;
+import defpackage.bzab;
+import defpackage.bzan;
+import defpackage.bzix;
+import defpackage.bzlf;
+import defpackage.bzlh;
+import defpackage.chjy;
+import defpackage.chkv;
+import defpackage.cmtz;
+import defpackage.cmua;
+import defpackage.cmug;
+import defpackage.cmvd;
+import defpackage.cmvf;
+import defpackage.cmvg;
+import defpackage.cmvj;
+import defpackage.cmwm;
+import defpackage.cnnc;
+import defpackage.cnnw;
+import defpackage.cnny;
+import defpackage.cnof;
+import defpackage.dhbu;
+import defpackage.dpvo;
+import defpackage.ejhe;
+import defpackage.elgo;
+import defpackage.elhx;
+import defpackage.elhz;
+import defpackage.elpg;
+import defpackage.elpp;
+import defpackage.eluo;
+import defpackage.ftfv;
 import j$.util.Objects;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -55,55 +55,55 @@ import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
-public abstract class DiscoveryRegistration extends bwrx implements ForegroundHelper$ForegroundListener {
-    private final bwrd A;
-    private cknb B;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
+public abstract class DiscoveryRegistration extends bzan implements ForegroundHelper$ForegroundListener {
+    private final byzt A;
+    private cmvg B;
     private int C;
     private boolean D;
     private final ScheduledExecutorService E;
-    private final clex F;
+    private final cnnc F;
     public final Object f;
-    public final dnlf g;
-    public final ckoh h;
+    public final dpvo g;
+    public final cmwm h;
     public final DiscoveryFilter i;
     public final DiscoveryRequest j;
     public final WorkSource k;
-    public final deqr l;
+    public final dhbu l;
     public final Long m;
     public final String n;
-    public final cklu o;
+    public final cmtz o;
     public final Map p;
     public final Set q;
     public final Map r;
     public final Map s;
     public final Map t;
     public boolean u;
-    private final bxah v;
+    private final bzix v;
     private final Context w;
-    private final bxcr x;
-    private final cklv y;
+    private final bzlh x;
+    private final cmua y;
     private final int z;
 
-    protected DiscoveryRegistration(Context context, DiscoveryRequest discoveryRequest, ckoh ckohVar, clfz clfzVar, bwrd bwrdVar, Object obj, clex clexVar, Long l, Executor executor, dnlf dnlfVar) {
-        super(executor, clfzVar);
+    protected DiscoveryRegistration(Context context, DiscoveryRequest discoveryRequest, cmwm cmwmVar, cnof cnofVar, byzt byztVar, Object obj, cnnc cnncVar, Long l, Executor executor, dpvo dpvoVar) {
+        super(executor, cnofVar);
         String str;
         this.s = new ArrayMap();
         this.t = new ArrayMap();
-        this.E = cfdj.f();
+        this.E = chkv.f();
         this.w = context;
         this.i = discoveryRequest.d;
         this.j = discoveryRequest;
-        this.h = ckohVar;
-        this.A = bwrdVar;
+        this.h = cmwmVar;
+        this.A = byztVar;
         this.f = obj;
-        this.x = bxcp.a();
-        this.F = clexVar;
-        ClientIdentity clientIdentity = ckohVar.a;
-        if (asrj.g(discoveryRequest.g) || !clientIdentity.p()) {
+        this.x = bzlf.a();
+        this.F = cnncVar;
+        ClientIdentity clientIdentity = cmwmVar.a;
+        if (auvd.g(discoveryRequest.g) || !clientIdentity.p()) {
             WorkSource workSource = new WorkSource();
-            asrj.e(workSource, clientIdentity.c, clientIdentity.e);
+            auvd.e(workSource, clientIdentity.c, clientIdentity.e);
             this.k = workSource;
         } else {
             this.k = discoveryRequest.g;
@@ -116,37 +116,37 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
             str = clientIdentity.e + ":" + str2;
         }
         this.n = str;
-        this.g = dnlfVar;
-        cklv cklvVar = (cklv) cfcm.c(context, cklv.class);
-        this.y = cklvVar;
-        int d = cklvVar.d(str);
+        this.g = dpvoVar;
+        cmua cmuaVar = (cmua) chjy.c(context, cmua.class);
+        this.y = cmuaVar;
+        int d = cmuaVar.d(str);
         this.z = d;
-        this.o = cklvVar.c(d, str);
-        if (fqma.a.a().Z() && discoveryRequest.e != null && discoveryRequest.f > System.currentTimeMillis()) {
+        this.o = cmuaVar.c(d, str);
+        if (ftfv.a.lK().aa() && discoveryRequest.e != null && discoveryRequest.f > System.currentTimeMillis()) {
             NearbyPresenceDiscoveryRequestAttribution nearbyPresenceDiscoveryRequestAttribution = discoveryRequest.e;
         }
         this.p = new ArrayMap();
         this.q = new ArraySet();
         this.r = new ArrayMap();
-        this.v = bxah.f(context);
-        this.B = ckna.a(new ArrayMap(), null, 400, ejck.a);
-        deqr deqrVar = new deqr(context, 1, "PresenceDiscovery", "ClientRegistration", clientIdentity.e);
-        this.l = deqrVar;
-        deqrVar.j(true);
-        deqrVar.k(this.k);
+        this.v = bzix.f(context);
+        this.B = cmvf.a(new ArrayMap(), null, 400, elpp.a);
+        dhbu dhbuVar = new dhbu(context, 1, "PresenceDiscovery", "ClientRegistration", clientIdentity.e);
+        this.l = dhbuVar;
+        dhbuVar.j(true);
+        dhbuVar.k(this.k);
     }
 
     static String[] v() {
         String[] strArr = {"android:fine_location"};
-        if (fqma.F()) {
-            int i = eitj.d;
-            eitj eitjVar = ejcb.a;
-            int i2 = ((ejcb) eitjVar).c;
+        if (ftfv.H()) {
+            int i = elgo.d;
+            elgo elgoVar = elpg.a;
+            int i2 = ((elpg) elgoVar).c;
             strArr = (String[]) Objects.requireNonNull((String[]) Arrays.copyOf(strArr, i2 + 1));
             int i3 = 0;
             while (i3 < i2) {
                 int i4 = i3 + 1;
-                strArr[i4] = (String) eitjVar.get(i3);
+                strArr[i4] = (String) elgoVar.get(i3);
                 i3 = i4;
             }
         }
@@ -156,12 +156,12 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
     private final boolean w() {
         ArrayMap arrayMap;
         boolean z;
-        ckmy ckmyVar;
+        cmvd cmvdVar;
         boolean z2;
         Object obj = this.f;
         synchronized (obj) {
             arrayMap = new ArrayMap();
-            ejck ejckVar = ejck.a;
+            elpp elppVar = elpp.a;
             DiscoveryFilter discoveryFilter = this.i;
             Iterator it = discoveryFilter.c().iterator();
             while (true) {
@@ -179,27 +179,27 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
                 Iterator it2 = discoveryFilter.c().iterator();
                 while (true) {
                     if (!it2.hasNext()) {
-                        ckmyVar = new ckmy(discoveryFilter.a, z, false);
+                        cmvdVar = new cmvd(discoveryFilter.a, z, false);
                         break;
                     }
                     if (!((PresenceZone) it2.next()).a().isEmpty()) {
-                        ckmyVar = new ckmy(discoveryFilter.a, z, true);
+                        cmvdVar = new cmvd(discoveryFilter.a, z, true);
                         break;
                     }
                 }
             } else {
-                ckmyVar = new ckmy(discoveryFilter.a, z, true);
+                cmvdVar = new cmvd(discoveryFilter.a, z, true);
             }
             if (discoveryFilter.a().isEmpty()) {
                 Iterator it3 = discoveryFilter.b().iterator();
                 while (it3.hasNext()) {
-                    ckna.b(new PresenceAction(-1), (PresenceIdentity) it3.next(), ckmyVar, arrayMap);
+                    cmvf.b(new PresenceAction(-1), (PresenceIdentity) it3.next(), cmvdVar, arrayMap);
                 }
             } else {
                 for (PresenceAction presenceAction : discoveryFilter.a()) {
                     Iterator it4 = discoveryFilter.b().iterator();
                     while (it4.hasNext()) {
-                        ckna.b(presenceAction, (PresenceIdentity) it4.next(), ckmyVar, arrayMap);
+                        cmvf.b(presenceAction, (PresenceIdentity) it4.next(), cmvdVar, arrayMap);
                     }
                 }
             }
@@ -208,26 +208,26 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
             }
         }
         int i = 200;
-        if (z2 && ((int) fqma.f()) == 100) {
+        if (z2 && ((int) ftfv.f()) == 100) {
             i = 100;
         }
         WorkSource workSource = this.k;
         int[] iArr = (int[]) Objects.requireNonNull(this.j.a());
-        eiuu eiuuVar = ejck.a;
+        elhz elhzVar = elpp.a;
         if (iArr != null) {
-            eius eiusVar = new eius();
-            eiusVar.k(eiuuVar);
+            elhx elhxVar = new elhx();
+            elhxVar.k(elhzVar);
             for (int i2 : iArr) {
-                eiusVar.c(Integer.valueOf(i2));
+                elhxVar.c(Integer.valueOf(i2));
             }
-            eiuuVar = eiusVar.g();
+            elhzVar = elhxVar.g();
         }
-        cknb a = ckna.a(arrayMap, workSource, i, eiuuVar);
+        cmvg a = cmvf.a(arrayMap, workSource, i, elhzVar);
         if (this.B.equals(a)) {
             return false;
         }
         this.B = a;
-        asot asotVar = ckmb.a;
+        ausn ausnVar = cmug.a;
         this.F.a.B();
         return true;
     }
@@ -242,7 +242,7 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
                 if (z == this.D) {
                     return;
                 }
-                asot asotVar = ckmb.a;
+                ausn ausnVar = cmug.a;
                 this.D = z;
                 if (w()) {
                     n();
@@ -251,13 +251,13 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
         }
     }
 
-    @Override // defpackage.bwrx, defpackage.bwrm
+    @Override // defpackage.bzan, defpackage.bzac
     protected void f() {
         synchronized (this.f) {
             Map map = this.s;
             Iterator it = map.values().iterator();
             while (it.hasNext()) {
-                ((clfs) it.next()).a();
+                ((cnny) it.next()).a();
             }
             map.clear();
             this.p.clear();
@@ -266,28 +266,28 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
         }
         super.f();
         this.x.c(this);
-        ((ejhf) ckmb.a.f(ckmb.a()).ah(8005)).B("removed registration %s", this.h);
+        ((eluo) cmug.a.f(cmug.a()).ai(7954)).B("removed registration %s", this.h);
         this.o.h();
         this.y.b(this.z);
     }
 
-    @Override // defpackage.bwrx
-    protected final /* synthetic */ bwqu h() {
+    @Override // defpackage.bzan
+    protected final /* synthetic */ byzk h() {
         return this.A;
     }
 
-    @Override // defpackage.bwrx
+    @Override // defpackage.bzan
     protected void j() {
-        ejhf ejhfVar = (ejhf) ckmb.a.f(ckmb.a()).ah(8004);
-        ckoh ckohVar = this.h;
-        ejhfVar.P("added registration %s -> %s", ckohVar, this.i);
-        int i = ckohVar.a.c;
-        bxcr bxcrVar = this.x;
-        bxcrVar.a(this.w, i, this.E, this);
+        eluo eluoVar = (eluo) cmug.a.f(cmug.a()).ai(7953);
+        cmwm cmwmVar = this.h;
+        eluoVar.P("added registration %s -> %s", cmwmVar, this.i);
+        int i = cmwmVar.a.c;
+        bzlh bzlhVar = this.x;
+        bzlhVar.a(this.w, i, this.E, this);
         u();
-        a(i, bxcrVar.d(i));
+        a(i, bzlhVar.d(i));
         w();
-        if (fqma.H()) {
+        if (ftfv.I()) {
             this.o.f(this.j);
         } else {
             this.o.e();
@@ -298,10 +298,10 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
         return this.h.a;
     }
 
-    public final bwrl p(ckne ckneVar) {
-        final long j = ckneVar.a.a;
+    public final bzab p(cmvj cmvjVar) {
+        final long j = cmvjVar.a.a;
         this.t.remove(Long.valueOf(j));
-        return q(1, ckneVar, new Runnable() { // from class: clfm
+        return q(1, cmvjVar, new Runnable() { // from class: cnns
             @Override // java.lang.Runnable
             public final void run() {
                 DiscoveryRegistration discoveryRegistration = DiscoveryRegistration.this;
@@ -313,47 +313,48 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
                     set.remove(valueOf);
                     discoveryRegistration.p.remove(valueOf);
                     discoveryRegistration.r.remove(valueOf);
-                    clfs clfsVar = (clfs) discoveryRegistration.s.remove(valueOf);
-                    if (clfsVar != null) {
-                        clfsVar.a();
+                    cnny cnnyVar = (cnny) discoveryRegistration.s.remove(valueOf);
+                    if (cnnyVar != null) {
+                        cnnyVar.a();
                     }
                 }
             }
         });
     }
 
-    public final bwrl q(int i, ckne ckneVar, Runnable runnable) {
-        ((ejhf) ckmb.a.f(ckmb.a()).ah(8006)).G("[NP_API_CALLBACK] report result %s, %s", i, ckneVar);
+    public final bzab q(int i, cmvj cmvjVar, Runnable runnable) {
+        ausn ausnVar = cmug.a;
+        ((eluo) ausnVar.f(cmug.a()).ai(7955)).G("[NP_API_CALLBACK] report result %s, %s", i, cmvjVar);
         for (String str : v()) {
             if (this.v.c(str, o().c, o().e, o().f, o().g) != 0) {
-                ((ejhf) ckmb.a.f(ckmb.a()).ah(8007)).B("delivery noteOp denied for %s", o());
+                ((eluo) ausnVar.f(cmug.a()).ai(7956)).B("delivery noteOp denied for %s", o());
                 return null;
             }
         }
-        return new clfq(this, i, ckneVar, runnable);
+        return new cnnw(this, i, cmvjVar, runnable);
     }
 
-    public final cknb r() {
-        cknb cknbVar;
+    public final cmvg r() {
+        cmvg cmvgVar;
         synchronized (this.f) {
-            cknbVar = this.B;
+            cmvgVar = this.B;
         }
-        return cknbVar;
+        return cmvgVar;
     }
 
-    public final void s(ckne ckneVar) {
-        if (ckneVar.d != egtz.MDNS) {
-            PresenceDevice presenceDevice = ckneVar.a;
+    public final void s(cmvj cmvjVar) {
+        if (cmvjVar.d != ejhe.MDNS) {
+            PresenceDevice presenceDevice = cmvjVar.a;
             Map map = this.s;
             Long valueOf = Long.valueOf(presenceDevice.a);
-            clfs clfsVar = (clfs) map.get(valueOf);
-            if (clfsVar == null) {
-                clfs clfsVar2 = new clfs(this, ckneVar, this.E);
-                map.put(valueOf, clfsVar2);
-                clfsVar = clfsVar2;
+            cnny cnnyVar = (cnny) map.get(valueOf);
+            if (cnnyVar == null) {
+                cnny cnnyVar2 = new cnny(this, cmvjVar, this.E);
+                map.put(valueOf, cnnyVar2);
+                cnnyVar = cnnyVar2;
             }
-            clfsVar.b();
-            ((ejhf) ckmb.a.f(ckmb.a()).ah(8008)).B("FusedDiscoveryEngine updated state for %s", presenceDevice);
+            cnnyVar.b();
+            ((eluo) cmug.a.f(cmug.a()).ai(7957)).B("FusedDiscoveryEngine updated state for %s", presenceDevice);
         }
     }
 
@@ -401,8 +402,8 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
         /*
             r10 = this;
             android.content.Context r0 = r10.w
-            ckoh r1 = r10.h
-            boolean r2 = defpackage.fqma.F()
+            cmwm r1 = r10.h
+            boolean r2 = defpackage.ftfv.H()
             java.lang.String r3 = "android.permission.ACCESS_FINE_LOCATION"
             r4 = 1
             r5 = 0
@@ -423,10 +424,10 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
         L28:
             int r2 = r10.C
             if (r0 == r2) goto L30
-            asot r2 = defpackage.ckmb.a
+            ausn r2 = defpackage.cmug.a
             r10.C = r0
         L30:
-            boolean r0 = defpackage.fqma.F()
+            boolean r0 = defpackage.ftfv.H()
             if (r0 == 0) goto L38
             com.google.android.gms.libs.identity.ClientIdentity r0 = r1.a
         L38:
@@ -434,14 +435,14 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
             if (r0 <= 0) goto L61
             com.google.android.gms.nearby.presence.DiscoveryRequest r0 = r10.j
             com.google.android.gms.nearby.presence.DiscoveryFilter r0 = r0.d
-            defpackage.fqma.F()
+            defpackage.ftfv.H()
             java.lang.String[] r0 = v()
             int r2 = r0.length
             r3 = r5
         L49:
             if (r3 >= r2) goto L5f
             r6 = r0[r3]
-            bxah r7 = r10.v
+            bzix r7 = r10.v
             com.google.android.gms.libs.identity.ClientIdentity r8 = r1.a
             int r9 = r8.c
             java.lang.String r8 = r8.e
@@ -455,12 +456,12 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
             r0 = r4
             goto L87
         L61:
-            asot r0 = defpackage.ckmb.a
-            java.util.logging.Level r2 = defpackage.ckmb.a()
-            ejhf r0 = r0.f(r2)
-            r2 = 7993(0x1f39, float:1.12E-41)
-            ejgq r0 = r0.ah(r2)
-            ejhf r0 = (defpackage.ejhf) r0
+            ausn r0 = defpackage.cmug.a
+            java.util.logging.Level r2 = defpackage.cmug.a()
+            eluo r0 = r0.f(r2)
+            r2 = 7942(0x1f06, float:1.1129E-41)
+            eltz r0 = r0.ai(r2)
+            eluo r0 = (defpackage.eluo) r0
             com.google.android.gms.libs.identity.ClientIdentity r2 = r10.o()
             java.lang.Integer r3 = java.lang.Integer.valueOf(r4)
             int r6 = r10.C
@@ -473,7 +474,7 @@ public abstract class DiscoveryRegistration extends bwrx implements ForegroundHe
             boolean r2 = r10.u
             if (r0 == r2) goto L92
             r10.u = r0
-            asot r0 = defpackage.ckmb.a
+            ausn r0 = defpackage.cmug.a
             com.google.android.gms.libs.identity.ClientIdentity r0 = r1.a
             return r4
         L92:

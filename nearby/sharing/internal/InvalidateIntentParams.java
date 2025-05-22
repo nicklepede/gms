@@ -6,19 +6,19 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmwq;
-import defpackage.cmws;
-import defpackage.cnae;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpey;
+import defpackage.cpfa;
+import defpackage.cpim;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class InvalidateIntentParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cnae();
+    public static final Parcelable.Creator CREATOR = new cpim();
     public Intent a;
-    public cmws b;
+    public cpfa b;
 
     public InvalidateIntentParams() {
     }
@@ -29,7 +29,7 @@ public final class InvalidateIntentParams extends AbstractSafeParcelable {
         }
         if (obj instanceof InvalidateIntentParams) {
             InvalidateIntentParams invalidateIntentParams = (InvalidateIntentParams) obj;
-            if (arwb.b(this.a, invalidateIntentParams.a) && arwb.b(this.b, invalidateIntentParams.b)) {
+            if (atyq.b(this.a, invalidateIntentParams.a) && atyq.b(this.b, invalidateIntentParams.b)) {
                 return true;
             }
         }
@@ -42,21 +42,21 @@ public final class InvalidateIntentParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.c(parcel, a);
     }
 
     public InvalidateIntentParams(Intent intent, IBinder iBinder) {
-        cmws cmwqVar;
+        cpfa cpeyVar;
         if (iBinder == null) {
-            cmwqVar = null;
+            cpeyVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IIntentResultListener");
-            cmwqVar = queryLocalInterface instanceof cmws ? (cmws) queryLocalInterface : new cmwq(iBinder);
+            cpeyVar = queryLocalInterface instanceof cpfa ? (cpfa) queryLocalInterface : new cpey(iBinder);
         }
         this.a = intent;
-        this.b = cmwqVar;
+        this.b = cpeyVar;
     }
 }

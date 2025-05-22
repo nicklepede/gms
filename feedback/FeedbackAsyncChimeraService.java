@@ -12,36 +12,36 @@ import android.text.TextUtils;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.chimera.Service;
 import com.google.android.gms.common.internal.BinderWrapper;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.baha;
-import defpackage.bahl;
-import defpackage.bahq;
-import defpackage.balg;
-import defpackage.baln;
-import defpackage.bape;
-import defpackage.bapg;
-import defpackage.bivk;
-import defpackage.bry;
-import defpackage.ejhf;
-import defpackage.ensv;
-import defpackage.fnqt;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.bckw;
+import defpackage.bclh;
+import defpackage.bclm;
+import defpackage.bcpc;
+import defpackage.bcpj;
+import defpackage.bcta;
+import defpackage.bctc;
+import defpackage.bkzz;
+import defpackage.bsj;
+import defpackage.eluo;
+import defpackage.eqgo;
+import defpackage.fqjc;
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class FeedbackAsyncChimeraService extends Service {
-    private final IBinder e = new bape(this);
-    public static final bry a = new bry();
-    public static bapg d = null;
-    public static final asot b = asot.b("gf_FeedbackAsyncService", asej.FEEDBACK);
-    public static final ensv c = new asmf(Integer.MAX_VALUE, 10);
+    private final IBinder e = new bcta(this);
+    public static final bsj a = new bsj();
+    public static bctc d = null;
+    public static final ausn b = ausn.b("gf_FeedbackAsyncService", auid.FEEDBACK);
+    public static final eqgo c = new aupz(Integer.MAX_VALUE, 10);
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class ReportTransferIntentOperation extends IntentOperation {
         @Override // com.google.android.chimera.IntentOperation
         public final void onHandleIntent(Intent intent) {
@@ -60,7 +60,7 @@ public class FeedbackAsyncChimeraService extends Service {
                         obtain.recycle();
                         ParcelFileDescriptor a = FeedbackAsyncChimeraService.a((BinderWrapper) intent.getParcelableExtra("com.google.android.gms.feedback.REPORT_WRITER_BINDER_WRAPPER"));
                         if (a == null) {
-                            ((ejhf) ((ejhf) FeedbackAsyncChimeraService.b.i()).ah(3546)).x("Failed to get FileDescriptor");
+                            ((eluo) ((eluo) FeedbackAsyncChimeraService.b.i()).ai(3550)).x("Failed to get FileDescriptor");
                             return;
                         }
                         ParcelFileDescriptor.AutoCloseOutputStream autoCloseOutputStream2 = new ParcelFileDescriptor.AutoCloseOutputStream(a);
@@ -71,19 +71,19 @@ public class FeedbackAsyncChimeraService extends Service {
                                 autoCloseOutputStream2.close();
                                 return;
                             } catch (IOException e) {
-                                ((ejhf) ((ejhf) ((ejhf) FeedbackAsyncChimeraService.b.i()).s(e)).ah((char) 3545)).x("Exception while closing report output stream.");
+                                ((eluo) ((eluo) ((eluo) FeedbackAsyncChimeraService.b.i()).s(e)).ai((char) 3549)).x("Exception while closing report output stream.");
                                 return;
                             }
                         } catch (Exception e2) {
                             e = e2;
                             autoCloseOutputStream = autoCloseOutputStream2;
-                            ((ejhf) ((ejhf) ((ejhf) FeedbackAsyncChimeraService.b.i()).s(e)).ah(3542)).x("Exception while transferring report.");
+                            ((eluo) ((eluo) ((eluo) FeedbackAsyncChimeraService.b.i()).s(e)).ai(3546)).x("Exception while transferring report.");
                             if (autoCloseOutputStream != null) {
                                 try {
                                     autoCloseOutputStream.close();
                                     return;
                                 } catch (IOException e3) {
-                                    ((ejhf) ((ejhf) ((ejhf) FeedbackAsyncChimeraService.b.i()).s(e3)).ah((char) 3543)).x("Exception while closing report output stream.");
+                                    ((eluo) ((eluo) ((eluo) FeedbackAsyncChimeraService.b.i()).s(e3)).ai((char) 3547)).x("Exception while closing report output stream.");
                                     return;
                                 }
                             }
@@ -95,13 +95,13 @@ public class FeedbackAsyncChimeraService extends Service {
                                 try {
                                     autoCloseOutputStream.close();
                                 } catch (IOException e4) {
-                                    ((ejhf) ((ejhf) ((ejhf) FeedbackAsyncChimeraService.b.i()).s(e4)).ah((char) 3544)).x("Exception while closing report output stream.");
+                                    ((eluo) ((eluo) ((eluo) FeedbackAsyncChimeraService.b.i()).s(e4)).ai((char) 3548)).x("Exception while closing report output stream.");
                                 }
                             }
                             throw th;
                         }
                     }
-                    ((ejhf) ((ejhf) FeedbackAsyncChimeraService.b.i()).ah(3541)).x("Failed to get report bytes");
+                    ((eluo) ((eluo) FeedbackAsyncChimeraService.b.i()).ai(3545)).x("Failed to get report bytes");
                 } catch (Exception e5) {
                     e = e5;
                 }
@@ -113,7 +113,7 @@ public class FeedbackAsyncChimeraService extends Service {
 
     static ParcelFileDescriptor a(BinderWrapper binderWrapper) {
         if (binderWrapper == null) {
-            ((ejhf) ((ejhf) b.i()).ah((char) 3549)).x("No binder wrapper found");
+            ((eluo) ((eluo) b.i()).ai((char) 3553)).x("No binder wrapper found");
             return null;
         }
         IBinder iBinder = binderWrapper.a;
@@ -126,7 +126,7 @@ public class FeedbackAsyncChimeraService extends Service {
             obtain2.recycle();
             return parcelFileDescriptor;
         } catch (RemoteException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 3548)).x("Failed to get FileDescriptor.");
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 3552)).x("Failed to get FileDescriptor.");
             return null;
         }
     }
@@ -139,14 +139,14 @@ public class FeedbackAsyncChimeraService extends Service {
             ParcelFileDescriptor parcelFileDescriptor2 = createPipe[1];
             try {
                 Parcel obtain = Parcel.obtain();
-                baha.a(errorReport, obtain, 0);
+                bckw.a(errorReport, obtain, 0);
                 bArr = obtain.marshall();
                 obtain.recycle();
             } catch (NullPointerException e) {
                 if (!Build.MODEL.toLowerCase(Locale.ENGLISH).contains("vivo")) {
                     throw e;
                 }
-                ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 3551)).x("Got NPE when trying to create report for Vivo.");
+                ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 3555)).x("Got NPE when trying to create report for Vivo.");
                 bArr = null;
             }
             if (bArr == null) {
@@ -155,29 +155,29 @@ public class FeedbackAsyncChimeraService extends Service {
             Intent startIntent = IntentOperation.getStartIntent(context, ReportTransferIntentOperation.class, "com.google.android.gms.feedback.transfer_report");
             if (startIntent != null) {
                 startIntent.putExtra("com.google.android.gms.feedback.REPORT_SIZE_BYTES", bArr.length);
-                startIntent.putExtra("com.google.android.gms.feedback.REPORT_BYTES", new BinderWrapper(new bahq(bArr)));
+                startIntent.putExtra("com.google.android.gms.feedback.REPORT_BYTES", new BinderWrapper(new bclm(bArr)));
                 startIntent.putExtra("com.google.android.gms.feedback.REPORT_WRITER_BINDER_WRAPPER", e(parcelFileDescriptor2));
                 context.startService(startIntent);
             }
             context.startService(new Intent().setClassName(context, "com.google.android.gms.feedback.FeedbackAsyncService").putExtra("com.google.android.gms.feedback.REPORT_SIZE_BYTES", bArr.length).putExtra("com.google.android.gms.feedback.REPORT_READER_BINDER", e(parcelFileDescriptor)));
         } catch (IOException e2) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e2)).ah((char) 3562)).x("Exception while creating IPC pipe to transfer report.");
+            ((eluo) ((eluo) ((eluo) b.i()).s(e2)).ai((char) 3566)).x("Exception while creating IPC pipe to transfer report.");
         }
     }
 
     public static final void d(Context context, ErrorReport errorReport) {
         try {
-            baln.c(context, baln.b(errorReport, context));
+            bcpj.c(context, bcpj.b(errorReport, context));
             OfflineReportSendTaskChimeraService.d(context);
-        } catch (balg | IllegalArgumentException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 3565)).x("invalid report.");
+        } catch (bcpc | IllegalArgumentException e) {
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 3569)).x("invalid report.");
         } catch (IOException e2) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e2)).ah((char) 3564)).x("Error saving report.");
+            ((eluo) ((eluo) ((eluo) b.i()).s(e2)).ai((char) 3568)).x("Error saving report.");
         }
     }
 
     private static BinderWrapper e(ParcelFileDescriptor parcelFileDescriptor) {
-        return new BinderWrapper(new bahl(parcelFileDescriptor));
+        return new BinderWrapper(new bclh(parcelFileDescriptor));
     }
 
     public final void b(ErrorReport errorReport) {
@@ -189,17 +189,17 @@ public class FeedbackAsyncChimeraService extends Service {
             errorReport.B = "";
             return;
         }
-        if (bivk.b(fnqt.c()) && errorReport.B.endsWith("@google.com")) {
+        if (bkzz.b(fqjc.c()) && errorReport.B.endsWith("@google.com")) {
             return;
         }
-        List h = asnd.h(this, getPackageName());
+        List h = auqx.h(this, getPackageName());
         int size = h.size();
         for (int i = 0; i < size; i++) {
             if (((Account) h.get(i)).name.equals(str)) {
                 return;
             }
         }
-        ((ejhf) ((ejhf) b.i()).ah((char) 3547)).x("Requested account was not found on device. Submitting anonymously");
+        ((eluo) ((eluo) b.i()).ai((char) 3551)).x("Requested account was not found on device. Submitting anonymously");
         errorReport.B = "";
     }
 
@@ -217,22 +217,22 @@ public class FeedbackAsyncChimeraService extends Service {
         }
         final int intExtra = intent.getIntExtra("com.google.android.gms.feedback.REPORT_SIZE_BYTES", 0);
         if (intExtra == 0) {
-            ((ejhf) ((ejhf) b.i()).ah((char) 3554)).x("Empty report!");
+            ((eluo) ((eluo) b.i()).ai((char) 3558)).x("Empty report!");
             stopSelf();
             return 2;
         }
         ParcelFileDescriptor a2 = a((BinderWrapper) intent.getParcelableExtra("com.google.android.gms.feedback.REPORT_READER_BINDER"));
         if (a2 == null) {
-            ((ejhf) ((ejhf) b.i()).ah((char) 3550)).x("Failed to get FileDescriptor");
+            ((eluo) ((eluo) b.i()).ai((char) 3554)).x("Failed to get FileDescriptor");
             autoCloseInputStream = null;
         } else {
             autoCloseInputStream = new ParcelFileDescriptor.AutoCloseInputStream(a2);
         }
         if (autoCloseInputStream != null) {
-            c.execute(new Runnable() { // from class: bahk
+            c.execute(new Runnable() { // from class: bclg
                 /* JADX WARN: Code restructure failed: missing block: B:10:0x0016, code lost:
                 
-                    ((defpackage.ejhf) ((defpackage.ejhf) com.google.android.gms.feedback.FeedbackAsyncChimeraService.b.j()).ah(3558)).x("Unexpectedly reached EOF while reading an ErrorReport");
+                    ((defpackage.eluo) ((defpackage.eluo) com.google.android.gms.feedback.FeedbackAsyncChimeraService.b.j()).ai(3562)).x("Unexpectedly reached EOF while reading an ErrorReport");
                  */
                 /* JADX WARN: Code restructure failed: missing block: B:65:0x006e, code lost:
                 
@@ -244,7 +244,7 @@ public class FeedbackAsyncChimeraService extends Service {
                  */
                 /* JADX WARN: Code restructure failed: missing block: B:73:0x0073, code lost:
                 
-                    ((defpackage.ejhf) ((defpackage.ejhf) ((defpackage.ejhf) com.google.android.gms.feedback.FeedbackAsyncChimeraService.b.i()).s(r3)).ah(3557)).x("Exception while closing report input stream.");
+                    ((defpackage.eluo) ((defpackage.eluo) ((defpackage.eluo) com.google.android.gms.feedback.FeedbackAsyncChimeraService.b.i()).s(r3)).ai(3561)).x("Exception while closing report input stream.");
                  */
                 /* JADX WARN: Removed duplicated region for block: B:18:0x00a5 A[RETURN] */
                 /* JADX WARN: Removed duplicated region for block: B:20:0x00a6  */
@@ -258,12 +258,12 @@ public class FeedbackAsyncChimeraService extends Service {
                         Method dump skipped, instructions count: 322
                         To view this dump change 'Code comments level' option to 'DEBUG'
                     */
-                    throw new UnsupportedOperationException("Method not decompiled: defpackage.bahk.run():void");
+                    throw new UnsupportedOperationException("Method not decompiled: defpackage.bclg.run():void");
                 }
             });
             return 2;
         }
-        ((ejhf) ((ejhf) b.i()).ah((char) 3553)).x("Unable to get input stream.");
+        ((eluo) ((eluo) b.i()).ai((char) 3557)).x("Unable to get input stream.");
         stopSelf();
         return 2;
     }

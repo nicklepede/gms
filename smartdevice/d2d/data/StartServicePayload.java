@@ -7,19 +7,19 @@ import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.postsetup.StartServiceResponse;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.ashs;
-import defpackage.ddge;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.aulm;
+import defpackage.dfrj;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class StartServicePayload extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new ddge();
+    public static final Parcelable.Creator CREATOR = new dfrj();
     private static final HashMap f;
     public final Set a;
     public String b;
@@ -44,7 +44,7 @@ public class StartServicePayload extends BinarySerializableFastSafeParcelableJso
         this.e = str2;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 1) {
@@ -73,7 +73,7 @@ public class StartServicePayload extends BinarySerializableFastSafeParcelableJso
         return hashMap;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void ae(FastJsonResponse$Field fastJsonResponse$Field, String str, Map map) {
         Bundle bundle;
         int i = fastJsonResponse$Field.g;
@@ -95,17 +95,17 @@ public class StartServicePayload extends BinarySerializableFastSafeParcelableJso
         set.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return f;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         if (str2 == null) {
             return;
@@ -122,24 +122,24 @@ public class StartServicePayload extends BinarySerializableFastSafeParcelableJso
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
+    @Override // defpackage.aulm
+    public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
         int i = fastJsonResponse$Field.g;
         if (i != 4) {
             throw new IllegalArgumentException(String.format("Field with id=%d not a concrete type", Integer.valueOf(i)));
         }
-        this.d = (StartServiceResponse) ashsVar;
+        this.d = (StartServiceResponse) aulmVar;
         this.a.add(Integer.valueOf(i));
     }
 
     public final void p(String str) {
-        arwm.r(str, "action cannot be null or empty.");
+        atzb.r(str, "action cannot be null or empty.");
         this.e = str;
         this.a.add(5);
     }
 
     public final void q(String str) {
-        arwm.r(str, "packageName cannot be null or empty.");
+        atzb.r(str, "packageName cannot be null or empty.");
         this.b = str;
         this.a.add(1);
     }
@@ -147,20 +147,20 @@ public class StartServicePayload extends BinarySerializableFastSafeParcelableJso
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(1)) {
-            arxc.v(parcel, 1, this.b, true);
+            atzr.v(parcel, 1, this.b, true);
         }
         if (set.contains(3)) {
-            arxc.g(parcel, 3, this.c, true);
+            atzr.g(parcel, 3, this.c, true);
         }
         if (set.contains(4)) {
-            arxc.t(parcel, 4, this.d, i, true);
+            atzr.t(parcel, 4, this.d, i, true);
         }
         if (set.contains(5)) {
-            arxc.v(parcel, 5, this.e, true);
+            atzr.v(parcel, 5, this.e, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public StartServicePayload() {

@@ -9,23 +9,23 @@ import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.messages.MessageFilter;
 import com.google.android.gms.nearby.messages.Strategy;
-import defpackage.arxc;
-import defpackage.ckea;
-import defpackage.ckec;
-import defpackage.cked;
-import defpackage.ckef;
-import defpackage.ckel;
-import defpackage.cken;
-import defpackage.ckfm;
+import defpackage.atzr;
+import defpackage.cmmf;
+import defpackage.cmmh;
+import defpackage.cmmi;
+import defpackage.cmmk;
+import defpackage.cmmq;
+import defpackage.cmms;
+import defpackage.cmnr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class SubscribeRequest extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new ckfm();
+    public static final Parcelable.Creator CREATOR = new cmnr();
     final int a;
-    public final ckec b;
+    public final cmmh b;
     public final Strategy c;
-    public final ckef d;
+    public final cmmk d;
     public final MessageFilter e;
     public final PendingIntent f;
 
@@ -41,7 +41,7 @@ public final class SubscribeRequest extends AbstractSafeParcelable implements Re
 
     @Deprecated
     public final boolean k;
-    public final cken l;
+    public final cmms l;
 
     @Deprecated
     public final boolean m;
@@ -53,25 +53,25 @@ public final class SubscribeRequest extends AbstractSafeParcelable implements Re
     public final int q;
 
     public SubscribeRequest(int i, IBinder iBinder, Strategy strategy, IBinder iBinder2, MessageFilter messageFilter, PendingIntent pendingIntent, int i2, String str, String str2, byte[] bArr, boolean z, IBinder iBinder3, boolean z2, ClientAppContext clientAppContext, boolean z3, int i3, int i4) {
-        ckec ckeaVar;
-        ckef ckedVar;
+        cmmh cmmfVar;
+        cmmk cmmiVar;
         this.a = i;
-        cken ckenVar = null;
+        cmms cmmsVar = null;
         if (iBinder == null) {
-            ckeaVar = null;
+            cmmfVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.messages.internal.IMessageListener");
-            ckeaVar = queryLocalInterface instanceof ckec ? (ckec) queryLocalInterface : new ckea(iBinder);
+            cmmfVar = queryLocalInterface instanceof cmmh ? (cmmh) queryLocalInterface : new cmmf(iBinder);
         }
-        this.b = ckeaVar;
+        this.b = cmmfVar;
         this.c = strategy;
         if (iBinder2 == null) {
-            ckedVar = null;
+            cmmiVar = null;
         } else {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.nearby.messages.internal.INearbyMessagesCallback");
-            ckedVar = queryLocalInterface2 instanceof ckef ? (ckef) queryLocalInterface2 : new cked(iBinder2);
+            cmmiVar = queryLocalInterface2 instanceof cmmk ? (cmmk) queryLocalInterface2 : new cmmi(iBinder2);
         }
-        this.d = ckedVar;
+        this.d = cmmiVar;
         this.e = messageFilter;
         this.f = pendingIntent;
         this.g = i2;
@@ -81,9 +81,9 @@ public final class SubscribeRequest extends AbstractSafeParcelable implements Re
         this.k = z;
         if (iBinder3 != null) {
             IInterface queryLocalInterface3 = iBinder3.queryLocalInterface("com.google.android.gms.nearby.messages.internal.ISubscribeCallback");
-            ckenVar = queryLocalInterface3 instanceof cken ? (cken) queryLocalInterface3 : new ckel(iBinder3);
+            cmmsVar = queryLocalInterface3 instanceof cmms ? (cmms) queryLocalInterface3 : new cmmq(iBinder3);
         }
-        this.l = ckenVar;
+        this.l = cmmsVar;
         this.m = z2;
         this.n = ClientAppContext.b(clientAppContext, str2, str, z2);
         this.o = z3;
@@ -96,11 +96,11 @@ public final class SubscribeRequest extends AbstractSafeParcelable implements Re
         byte[] bArr = this.j;
         PendingIntent pendingIntent = this.f;
         MessageFilter messageFilter = this.e;
-        ckef ckefVar = this.d;
+        cmmk cmmkVar = this.d;
         Strategy strategy = this.c;
         String valueOf = String.valueOf(this.b);
         String valueOf2 = String.valueOf(strategy);
-        String valueOf3 = String.valueOf(ckefVar);
+        String valueOf3 = String.valueOf(cmmkVar);
         String valueOf4 = String.valueOf(messageFilter);
         String valueOf5 = String.valueOf(pendingIntent);
         if (bArr == null) {
@@ -108,7 +108,7 @@ public final class SubscribeRequest extends AbstractSafeParcelable implements Re
         } else {
             str = "<" + bArr.length + " bytes>";
         }
-        cken ckenVar = this.l;
+        cmms cmmsVar = this.l;
         boolean z = this.m;
         ClientAppContext clientAppContext = this.n;
         boolean z2 = this.o;
@@ -116,33 +116,33 @@ public final class SubscribeRequest extends AbstractSafeParcelable implements Re
         String str3 = this.i;
         boolean z3 = this.k;
         int i = this.q;
-        return "SubscribeRequest{messageListener=" + valueOf + ", strategy=" + valueOf2 + ", callback=" + valueOf3 + ", filter=" + valueOf4 + ", pendingIntent=" + valueOf5 + ", hint=" + str + ", subscribeCallback=" + String.valueOf(ckenVar) + ", useRealClientApiKey=" + z + ", clientAppContext=" + String.valueOf(clientAppContext) + ", isDiscardPendingIntent=" + z2 + ", zeroPartyPackageName=" + str2 + ", realClientPackageName=" + str3 + ", isIgnoreNearbyPermission=" + z3 + ", callingContext=" + i + "}";
+        return "SubscribeRequest{messageListener=" + valueOf + ", strategy=" + valueOf2 + ", callback=" + valueOf3 + ", filter=" + valueOf4 + ", pendingIntent=" + valueOf5 + ", hint=" + str + ", subscribeCallback=" + String.valueOf(cmmsVar) + ", useRealClientApiKey=" + z + ", clientAppContext=" + String.valueOf(clientAppContext) + ", isDiscardPendingIntent=" + z2 + ", zeroPartyPackageName=" + str2 + ", realClientPackageName=" + str3 + ", isIgnoreNearbyPermission=" + z3 + ", callingContext=" + i + "}";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        ckec ckecVar = this.b;
-        arxc.D(parcel, 2, ckecVar == null ? null : ckecVar.asBinder());
-        arxc.t(parcel, 3, this.c, i, false);
-        ckef ckefVar = this.d;
-        arxc.D(parcel, 4, ckefVar == null ? null : ckefVar.asBinder());
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.o(parcel, 7, this.g);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.i(parcel, 10, this.j, false);
-        arxc.e(parcel, 11, this.k);
-        cken ckenVar = this.l;
-        arxc.D(parcel, 12, ckenVar != null ? ckenVar.asBinder() : null);
-        arxc.e(parcel, 13, this.m);
-        arxc.t(parcel, 14, this.n, i, false);
-        arxc.e(parcel, 15, this.o);
-        arxc.o(parcel, 16, this.p);
-        arxc.o(parcel, 17, this.q);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        cmmh cmmhVar = this.b;
+        atzr.D(parcel, 2, cmmhVar == null ? null : cmmhVar.asBinder());
+        atzr.t(parcel, 3, this.c, i, false);
+        cmmk cmmkVar = this.d;
+        atzr.D(parcel, 4, cmmkVar == null ? null : cmmkVar.asBinder());
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.o(parcel, 7, this.g);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.i(parcel, 10, this.j, false);
+        atzr.e(parcel, 11, this.k);
+        cmms cmmsVar = this.l;
+        atzr.D(parcel, 12, cmmsVar != null ? cmmsVar.asBinder() : null);
+        atzr.e(parcel, 13, this.m);
+        atzr.t(parcel, 14, this.n, i, false);
+        atzr.e(parcel, 15, this.o);
+        atzr.o(parcel, 16, this.p);
+        atzr.o(parcel, 17, this.q);
+        atzr.c(parcel, a);
     }
 
     public SubscribeRequest(IBinder iBinder, Strategy strategy, IBinder iBinder2, MessageFilter messageFilter, PendingIntent pendingIntent, IBinder iBinder3, boolean z, int i) {

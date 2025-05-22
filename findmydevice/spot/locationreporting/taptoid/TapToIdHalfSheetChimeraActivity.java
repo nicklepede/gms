@@ -12,28 +12,28 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.findmydevice.spot.locationreporting.taptoid.TapToIdHalfSheetChimeraActivity;
 import com.google.android.material.chip.Chip;
-import defpackage.bdak;
-import defpackage.bebh;
-import defpackage.eble;
-import defpackage.eiif;
-import defpackage.eiig;
-import defpackage.iru;
-import defpackage.nln;
-import defpackage.nmh;
-import defpackage.qet;
+import defpackage.bfbw;
+import defpackage.bgct;
+import defpackage.edxt;
+import defpackage.ekvk;
+import defpackage.ekvl;
+import defpackage.itk;
+import defpackage.peq;
+import defpackage.pfk;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class TapToIdHalfSheetChimeraActivity extends qet {
-    private bdak j = null;
+public final class TapToIdHalfSheetChimeraActivity extends rxx {
+    private bfbw j = null;
 
     public final void a(final int i) {
-        bdak bdakVar = this.j;
-        if (bdakVar != null) {
-            bdakVar.a(new iru() { // from class: bevx
-                @Override // defpackage.iru
+        bfbw bfbwVar = this.j;
+        if (bfbwVar != null) {
+            bfbwVar.a(new itk() { // from class: bgxk
+                @Override // defpackage.itk
                 public final void a(Object obj) {
-                    ((apud) obj).d(bdam.a(i)).a(0L, 1L, apud.b);
+                    ((arwu) obj).d(bfby.a(i)).a(0L, 1L, arwu.b);
                 }
             });
         } else {
@@ -41,45 +41,45 @@ public final class TapToIdHalfSheetChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         boolean z;
         boolean z2;
         super.onCreate(bundle);
         if (this.j == null) {
-            this.j = (bdak) new bebh().g.a();
+            this.j = (bfbw) new bgct().g.a();
         }
         setTheme(R.style.Theme_TapToIdHalfSheet);
-        int i = eble.a;
+        int i = edxt.a;
         setContentView(R.layout.tap_to_id_half_sheet);
-        findViewById(R.id.background).setOnClickListener(new View.OnClickListener() { // from class: bevt
+        findViewById(R.id.background).setOnClickListener(new View.OnClickListener() { // from class: bgxg
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 TapToIdHalfSheetChimeraActivity.this.finish();
             }
         });
-        findViewById(R.id.card).setOnClickListener(new View.OnClickListener() { // from class: bevu
+        findViewById(R.id.card).setOnClickListener(new View.OnClickListener() { // from class: bgxh
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
             }
         });
         ImageView imageView = (ImageView) findViewById(R.id.device_icon);
         if (getIntent().hasExtra("DEVICE_ICON_URL")) {
-            nmh d = nln.d(this);
+            pfk d = peq.d(this);
             String stringExtra = getIntent().getStringExtra("DEVICE_ICON_URL");
-            eiig.x(stringExtra);
+            ekvl.y(stringExtra);
             d.e(stringExtra).m(imageView);
         } else if (getIntent().hasExtra("DEVICE_ICON_BYTES")) {
-            nmh d2 = nln.d(this);
+            pfk d2 = peq.d(this);
             byte[] byteArrayExtra = getIntent().getByteArrayExtra("DEVICE_ICON_BYTES");
-            eiig.x(byteArrayExtra);
+            ekvl.y(byteArrayExtra);
             d2.c().f(byteArrayExtra).m(imageView);
         }
         String stringExtra2 = getIntent().getStringExtra("DEVICE_MANUFACTURER");
         String stringExtra3 = getIntent().getStringExtra("DEVICE_MODEL");
         TextView textView = (TextView) findViewById(R.id.device_name);
         if (TextUtils.isEmpty(stringExtra3)) {
-            stringExtra3 = eiif.b(stringExtra2);
+            stringExtra3 = ekvk.b(stringExtra2);
         }
         textView.setText(stringExtra3);
         String stringExtra4 = getIntent().getStringExtra("EID");
@@ -98,7 +98,7 @@ public final class TapToIdHalfSheetChimeraActivity extends qet {
             intent.putExtra("android.intent.extra.EMAIL", new String[]{stringExtra5});
             if (intent.resolveActivity(getPackageManager()) != null) {
                 chip.setEnabled(true);
-                chip.setOnClickListener(new View.OnClickListener() { // from class: bevw
+                chip.setOnClickListener(new View.OnClickListener() { // from class: bgxj
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
                         TapToIdHalfSheetChimeraActivity tapToIdHalfSheetChimeraActivity = TapToIdHalfSheetChimeraActivity.this;
@@ -120,7 +120,7 @@ public final class TapToIdHalfSheetChimeraActivity extends qet {
             Chip chip3 = (Chip) findViewById(R.id.message_chip);
             chip2.setVisibility(0);
             chip3.setVisibility(0);
-            chip2.setOnClickListener(new View.OnClickListener() { // from class: bevy
+            chip2.setOnClickListener(new View.OnClickListener() { // from class: bgxl
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     TapToIdHalfSheetChimeraActivity tapToIdHalfSheetChimeraActivity = TapToIdHalfSheetChimeraActivity.this;
@@ -130,7 +130,7 @@ public final class TapToIdHalfSheetChimeraActivity extends qet {
                     tapToIdHalfSheetChimeraActivity.startActivity(intent2);
                 }
             });
-            chip3.setOnClickListener(new View.OnClickListener() { // from class: bevz
+            chip3.setOnClickListener(new View.OnClickListener() { // from class: bgxm
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     TapToIdHalfSheetChimeraActivity tapToIdHalfSheetChimeraActivity = TapToIdHalfSheetChimeraActivity.this;
@@ -158,10 +158,10 @@ public final class TapToIdHalfSheetChimeraActivity extends qet {
         } else {
             ((TextView) findViewById(R.id.p3_content_text_view)).setText(R.string.p3_content);
         }
-        ((Button) findViewById(R.id.more_info_button)).setOnClickListener(new View.OnClickListener() { // from class: bevv
+        ((Button) findViewById(R.id.more_info_button)).setOnClickListener(new View.OnClickListener() { // from class: bgxi
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                TapToIdHalfSheetChimeraActivity.this.startActivity(new Intent("android.intent.action.VIEW", Uri.parse(fobr.a.a().aE())));
+                TapToIdHalfSheetChimeraActivity.this.startActivity(new Intent("android.intent.action.VIEW", Uri.parse(fqtl.a.lK().aE())));
             }
         });
     }

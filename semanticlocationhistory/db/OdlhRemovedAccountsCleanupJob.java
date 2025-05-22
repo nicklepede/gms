@@ -3,25 +3,25 @@ package com.google.android.gms.semanticlocationhistory.db;
 import android.content.Context;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.db.OdlhRemovedAccountsCleanupJob;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.czje;
-import defpackage.czjg;
-import defpackage.dade;
-import defpackage.dadh;
-import defpackage.dahq;
-import defpackage.daky;
-import defpackage.dbeb;
-import defpackage.dbej;
-import defpackage.eiho;
-import defpackage.eitj;
-import defpackage.ejbr;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensm;
-import defpackage.enss;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.dbtc;
+import defpackage.dbte;
+import defpackage.dcnm;
+import defpackage.dcnp;
+import defpackage.dcry;
+import defpackage.dcvg;
+import defpackage.ddoj;
+import defpackage.ddor;
+import defpackage.ekut;
+import defpackage.elgo;
+import defpackage.elow;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgf;
+import defpackage.eqgl;
 import j$.util.Collection;
 import j$.util.function.Predicate$CC;
 import j$.util.stream.Stream;
@@ -30,79 +30,79 @@ import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class OdlhRemovedAccountsCleanupJob extends GmsTaskBoundService {
-    public static final asot a = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "OdlhRemovedAccountsCleanup");
+    public static final ausn a = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "OdlhRemovedAccountsCleanup");
     public static final String b = OdlhRemovedAccountsCleanupJob.class.getName();
-    private dade c;
-    private dbeb d;
-    private dahq e;
-    private czje f;
-    private czjg g;
-    private daky h;
+    private dcnm c;
+    private ddoj d;
+    private dcry e;
+    private dbtc f;
+    private dbte g;
+    private dcvg h;
 
-    private final dade h(Context context) {
+    private final dcnm h(Context context) {
         if (this.c == null) {
-            this.c = dadh.w(context);
+            this.c = dcnp.w(context);
         }
         return this.c;
     }
 
-    private final daky j() {
+    private final dcvg j() {
         if (this.h == null) {
-            this.h = new daky();
+            this.h = new dcvg();
         }
         return this.h;
     }
 
-    public final czje d() {
+    public final dbtc d() {
         if (this.f == null) {
-            this.f = new czje();
+            this.f = new dbtc();
         }
         return this.f;
     }
 
-    public final dahq e() {
+    public final dcry e() {
         if (this.e == null) {
-            this.e = new dahq();
+            this.e = new dcry();
         }
         return this.e;
     }
 
-    public final dbeb f() {
+    public final ddoj f() {
         if (this.d == null) {
-            this.d = new dbej();
+            this.d = new ddor();
         }
         return this.d;
     }
 
-    public final enss g(eitj eitjVar, final Set set, final Executor executor) {
-        if (eitjVar.isEmpty()) {
-            return ensm.a;
+    public final eqgl g(elgo elgoVar, final Set set, final Executor executor) {
+        if (elgoVar.isEmpty()) {
+            return eqgf.a;
         }
-        final String str = (String) eitjVar.get(0);
-        final eitj subList = eitjVar.subList(1, eitjVar.size());
+        final String str = (String) elgoVar.get(0);
+        final elgo subList = elgoVar.subList(1, elgoVar.size());
         if (set.contains(str)) {
             return g(subList, set, executor);
         }
-        final daky j = j();
-        final ejbr ejbrVar = ejbr.a;
-        ensi h = ensi.h(j.c(str));
-        eiho eihoVar = new eiho() { // from class: daki
-            @Override // defpackage.eiho
+        final dcvg j = j();
+        final elow elowVar = elow.a;
+        eqgb h = eqgb.h(j.c(str));
+        ekut ekutVar = new ekut() { // from class: dcuq
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                ejbt ejbtVar = (ejbt) obj;
-                Stream stream = Collection.EL.stream(ejbtVar.b().entrySet());
-                final ejbr ejbrVar2 = ejbr.this;
-                Stream map = stream.filter(new Predicate() { // from class: daku
+                eloy eloyVar = (eloy) obj;
+                Stream stream = Collection.EL.stream(eloyVar.b().entrySet());
+                final elow elowVar2 = elow.this;
+                Stream map = stream.filter(new Predicate() { // from class: dcvc
                     public final /* synthetic */ Predicate and(Predicate predicate) {
                         return Predicate$CC.$default$and(this, predicate);
                     }
 
                     @Override // java.util.function.Predicate
                     /* renamed from: negate */
-                    public final /* synthetic */ Predicate mo463negate() {
+                    public final /* synthetic */ Predicate mo478negate() {
                         return Predicate$CC.$default$negate(this);
                     }
 
@@ -113,33 +113,33 @@ public final class OdlhRemovedAccountsCleanupJob extends GmsTaskBoundService {
 
                     @Override // java.util.function.Predicate
                     public final boolean test(Object obj2) {
-                        return ((ejbr) ((Map.Entry) obj2).getKey()).u(ejbr.this);
+                        return ((elow) ((Map.Entry) obj2).getKey()).u(elow.this);
                     }
-                }).map(new dakv());
-                int i = eitj.d;
-                eitj eitjVar2 = (eitj) map.collect(eipl.a);
-                int size = eitjVar2.size();
+                }).map(new dcvd());
+                int i = elgo.d;
+                elgo elgoVar2 = (elgo) map.collect(elcq.a);
+                int size = elgoVar2.size();
                 for (int i2 = 0; i2 < size; i2++) {
-                    ejbtVar.e((ejbr) eitjVar2.get(i2));
+                    eloyVar.e((elow) elgoVar2.get(i2));
                 }
-                return new eiie(ejbtVar, Integer.valueOf(eitjVar2.size()));
+                return new ekvj(eloyVar, Integer.valueOf(elgoVar2.size()));
             }
         };
-        enre enreVar = enre.a;
-        return enps.g(ensi.h(enps.g(enps.f(h, eihoVar, enreVar), new enqc() { // from class: dakk
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                final eiie eiieVar = (eiie) obj;
-                return enps.f(daky.this.d(str, (ejbt) eiieVar.a), new eiho() { // from class: dakn
-                    @Override // defpackage.eiho
+        eqex eqexVar = eqex.a;
+        return eqdl.g(eqgb.h(eqdl.g(eqdl.f(h, ekutVar, eqexVar), new eqdv() { // from class: dcus
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                final ekvj ekvjVar = (ekvj) obj;
+                return eqdl.f(dcvg.this.d(str, (eloy) ekvjVar.a), new ekut() { // from class: dcuv
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
-                        return (Integer) eiie.this.b;
+                        return (Integer) ekvj.this.b;
                     }
-                }, enre.a);
+                }, eqex.a);
             }
-        }, enreVar)), new enqc() { // from class: daej
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+        }, eqexVar)), new eqdv() { // from class: dcor
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 return OdlhRemovedAccountsCleanupJob.this.g(subList, set, executor);
             }
         }, executor);
@@ -150,7 +150,7 @@ public final class OdlhRemovedAccountsCleanupJob extends GmsTaskBoundService {
     /* JADX WARN: Removed duplicated region for block: B:76:0x030d  */
     /* JADX WARN: Removed duplicated region for block: B:85:0x0363 A[SYNTHETIC] */
     /* JADX WARN: Removed duplicated region for block: B:86:0x02fc  */
-    /* JADX WARN: Removed duplicated region for block: B:95:0x0287 A[Catch: SQLiteException -> 0x029d, all -> 0x029f, TryCatch #9 {SQLiteException -> 0x029d, blocks: (B:64:0x021c, B:67:0x0239, B:69:0x0249, B:70:0x024c, B:88:0x0261, B:93:0x027f, B:95:0x0287, B:96:0x028a, B:98:0x0273, B:100:0x027b), top: B:63:0x021c }] */
+    /* JADX WARN: Removed duplicated region for block: B:95:0x0287 A[Catch: SQLiteException -> 0x029d, all -> 0x029f, TryCatch #8 {SQLiteException -> 0x029d, blocks: (B:64:0x021c, B:67:0x0239, B:69:0x0249, B:70:0x024c, B:88:0x0261, B:93:0x027f, B:95:0x0287, B:96:0x028a, B:98:0x0273, B:100:0x027b), top: B:63:0x021c }] */
     /* JADX WARN: Type inference failed for: r0v31, types: [java.lang.Object, java.util.Collection] */
     /* JADX WARN: Type inference failed for: r0v74, types: [java.lang.Object, java.util.Collection] */
     /* JADX WARN: Type inference failed for: r10v2, types: [java.util.HashSet, java.util.Set] */
@@ -164,11 +164,11 @@ public final class OdlhRemovedAccountsCleanupJob extends GmsTaskBoundService {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final defpackage.enss im(defpackage.byln r24) {
+    public final defpackage.eqgl iB(defpackage.cauf r24) {
         /*
             Method dump skipped, instructions count: 1264
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.semanticlocationhistory.db.OdlhRemovedAccountsCleanupJob.im(byln):enss");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.semanticlocationhistory.db.OdlhRemovedAccountsCleanupJob.iB(cauf):eqgl");
     }
 }

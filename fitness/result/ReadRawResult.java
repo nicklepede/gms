@@ -5,24 +5,24 @@ import android.os.Parcelable;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqyf;
-import defpackage.arxc;
-import defpackage.bgmj;
+import defpackage.atau;
+import defpackage.atzr;
+import defpackage.biqz;
 import java.io.Closeable;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class ReadRawResult extends AbstractSafeParcelable implements Closeable, aqyf {
-    public static final Parcelable.Creator CREATOR = new bgmj();
+public class ReadRawResult extends AbstractSafeParcelable implements Closeable, atau {
+    public static final Parcelable.Creator CREATOR = new biqz();
     public final DataHolder a;
 
     public ReadRawResult(DataHolder dataHolder) {
         this.a = dataHolder;
     }
 
-    @Override // defpackage.aqyf
+    @Override // defpackage.atau
     public final Status a() {
         return new Status(this.a.f);
     }
@@ -38,10 +38,10 @@ public class ReadRawResult extends AbstractSafeParcelable implements Closeable, 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         DataHolder dataHolder = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, dataHolder, i, false);
-        arxc.y(parcel, 2, null, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, dataHolder, i, false);
+        atzr.y(parcel, 2, null, false);
+        atzr.c(parcel, a);
     }
 
     public ReadRawResult(DataHolder dataHolder, List list) {

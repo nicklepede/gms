@@ -5,17 +5,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.chlf;
-import defpackage.eiif;
-import defpackage.eiig;
-import defpackage.eygp;
+import defpackage.atzr;
+import defpackage.cjtg;
+import defpackage.ekvk;
+import defpackage.ekvl;
+import defpackage.favb;
 import java.util.Random;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class SpotPairingSessionData extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new chlf();
+    public static final Parcelable.Creator CREATOR = new cjtg();
     public final byte[] a;
     public final Account b;
     public final int c;
@@ -23,26 +23,26 @@ public class SpotPairingSessionData extends AbstractSafeParcelable implements Re
     public final String e;
 
     public SpotPairingSessionData(byte[] bArr, Account account, int i, int i2, String str) {
-        eiig.x(bArr);
-        eiig.x(account);
+        ekvl.y(bArr);
+        ekvl.y(account);
         this.a = bArr;
         this.b = account;
         this.c = i;
         this.d = i2;
-        this.e = eiif.b(str);
+        this.e = ekvk.b(str);
     }
 
     public static int a() {
         return new Random().nextInt(2147483646) + 1;
     }
 
-    public static SpotPairingSessionData b(byte[] bArr, Account account, eygp eygpVar, int i, String str) {
-        return new SpotPairingSessionData(bArr, account, eygpVar.g, i, eiif.b(str));
+    public static SpotPairingSessionData b(byte[] bArr, Account account, favb favbVar, int i, String str) {
+        return new SpotPairingSessionData(bArr, account, favbVar.g, i, ekvk.b(str));
     }
 
-    public final eygp c() {
-        eygp b = eygp.b(this.c);
-        eiig.x(b);
+    public final favb c() {
+        favb b = favb.b(this.c);
+        ekvl.y(b);
         return b;
     }
 
@@ -60,16 +60,16 @@ public class SpotPairingSessionData extends AbstractSafeParcelable implements Re
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         byte[] bArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, bArr, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, bArr, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.c(parcel, a);
     }
 
-    public SpotPairingSessionData(byte[] bArr, Account account, eygp eygpVar) {
-        this(bArr, account, eygpVar.g, a(), "");
+    public SpotPairingSessionData(byte[] bArr, Account account, favb favbVar) {
+        this(bArr, account, favbVar.g, a(), "");
     }
 }

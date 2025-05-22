@@ -4,28 +4,28 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
-import defpackage.efec;
-import defpackage.efed;
-import defpackage.efej;
-import defpackage.efem;
+import defpackage.ehrf;
+import defpackage.ehrg;
+import defpackage.ehrm;
+import defpackage.ehrp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class ClickableImageView extends ImageView implements View.OnClickListener, efed {
-    final efec a;
+public class ClickableImageView extends ImageView implements View.OnClickListener, ehrg {
+    final ehrf a;
 
     public ClickableImageView(Context context) {
         super(context);
-        this.a = new efec();
+        this.a = new ehrf();
     }
 
-    @Override // defpackage.efel
-    public final efej a() {
+    @Override // defpackage.ehro
+    public final ehrm a() {
         return null;
     }
 
-    @Override // defpackage.efed
-    public final efem b() {
+    @Override // defpackage.ehrg
+    public final ehrp b() {
         return this.a;
     }
 
@@ -42,11 +42,11 @@ public class ClickableImageView extends ImageView implements View.OnClickListene
 
     public ClickableImageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.a = new efec();
+        this.a = new ehrf();
     }
 
     public ClickableImageView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.a = new efec();
+        this.a = new ehrf();
     }
 }

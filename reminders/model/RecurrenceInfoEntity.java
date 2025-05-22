@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxer;
+import defpackage.atyq;
+import defpackage.czon;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RecurrenceInfoEntity extends AbstractSafeParcelable implements RecurrenceInfo {
-    public static final Parcelable.Creator CREATOR = new cxer();
+    public static final Parcelable.Creator CREATOR = new czon();
     public final RecurrenceEntity a;
     public final String b;
     public final Boolean c;
@@ -28,7 +28,7 @@ public class RecurrenceInfoEntity extends AbstractSafeParcelable implements Recu
     }
 
     public static boolean f(RecurrenceInfo recurrenceInfo, RecurrenceInfo recurrenceInfo2) {
-        return arwb.b(recurrenceInfo.a(), recurrenceInfo2.a()) && arwb.b(recurrenceInfo.e(), recurrenceInfo2.e()) && arwb.b(recurrenceInfo.d(), recurrenceInfo2.d()) && arwb.b(recurrenceInfo.c(), recurrenceInfo2.c());
+        return atyq.b(recurrenceInfo.a(), recurrenceInfo2.a()) && atyq.b(recurrenceInfo.e(), recurrenceInfo2.e()) && atyq.b(recurrenceInfo.d(), recurrenceInfo2.d()) && atyq.b(recurrenceInfo.c(), recurrenceInfo2.c());
     }
 
     @Override // com.google.android.gms.reminders.model.RecurrenceInfo
@@ -67,7 +67,7 @@ public class RecurrenceInfoEntity extends AbstractSafeParcelable implements Recu
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxer.a(this, parcel, i);
+        czon.a(this, parcel, i);
     }
 
     public RecurrenceInfoEntity(RecurrenceInfo recurrenceInfo) {
@@ -81,7 +81,7 @@ public class RecurrenceInfoEntity extends AbstractSafeParcelable implements Recu
         this.a = a == null ? null : new RecurrenceEntity(a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

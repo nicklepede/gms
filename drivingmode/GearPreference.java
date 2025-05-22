@@ -4,16 +4,16 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import com.google.android.gms.R;
-import defpackage.axpx;
-import defpackage.axqb;
-import defpackage.elxv;
-import defpackage.elxw;
-import defpackage.kmp;
+import defpackage.aztx;
+import defpackage.azub;
+import defpackage.eolj;
+import defpackage.eolk;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class GearPreference extends TwoTargetPreference implements View.OnClickListener {
-    public axpx a;
+    public aztx a;
     private boolean b;
 
     public GearPreference(Context context, AttributeSet attributeSet) {
@@ -22,9 +22,9 @@ public class GearPreference extends TwoTargetPreference implements View.OnClickL
     }
 
     @Override // com.google.android.gms.drivingmode.TwoTargetPreference, androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        View D = kmpVar.D(R.id.settings_button);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        View D = mfaVar.D(R.id.settings_button);
         if (this.a != null) {
             D.setOnClickListener(this);
         } else {
@@ -32,8 +32,8 @@ public class GearPreference extends TwoTargetPreference implements View.OnClickL
         }
     }
 
-    public final void af(axpx axpxVar) {
-        this.a = axpxVar;
+    public final void af(aztx aztxVar) {
+        this.a = aztxVar;
         d();
     }
 
@@ -54,12 +54,12 @@ public class GearPreference extends TwoTargetPreference implements View.OnClickL
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        axpx axpxVar;
-        if (view.getId() != R.id.settings_button || (axpxVar = this.a) == null) {
+        aztx aztxVar;
+        if (view.getId() != R.id.settings_button || (aztxVar = this.a) == null) {
             return;
         }
-        axqb axqbVar = axpxVar.a;
-        axqbVar.ag.b(elxw.DRIVING_MODE, elxv.hE);
-        axqbVar.startActivityForResult(axpxVar.b, 0);
+        azub azubVar = aztxVar.a;
+        azubVar.ag.b(eolk.DRIVING_MODE, eolj.hE);
+        azubVar.startActivityForResult(aztxVar.b, 0);
     }
 }

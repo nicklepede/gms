@@ -1,23 +1,23 @@
 package com.google.android.gms.people.contactssync;
 
 import android.content.Context;
-import defpackage.aqxt;
-import defpackage.dfaq;
+import defpackage.atai;
+import defpackage.dhlw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public interface DeviceContactsSyncClient extends aqxt {
+public interface DeviceContactsSyncClient extends atai {
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public interface SyncSettingUpdatedListener {
         void onDeviceContactsSyncSettingUpdated();
     }
 
-    dfaq getDeviceContactsSyncSetting();
+    dhlw getDeviceContactsSyncSetting();
 
-    dfaq launchDeviceContactsSyncSettingActivity(Context context);
+    dhlw launchDeviceContactsSyncSettingActivity(Context context);
 
-    dfaq registerSyncSettingUpdatedListener(SyncSettingUpdatedListener syncSettingUpdatedListener);
+    dhlw registerSyncSettingUpdatedListener(SyncSettingUpdatedListener syncSettingUpdatedListener);
 
-    dfaq unregisterSyncSettingUpdatedListener(SyncSettingUpdatedListener syncSettingUpdatedListener);
+    dhlw unregisterSyncSettingUpdatedListener(SyncSettingUpdatedListener syncSettingUpdatedListener);
 }

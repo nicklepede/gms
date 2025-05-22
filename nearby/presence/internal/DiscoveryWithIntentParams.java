@@ -8,18 +8,18 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.presence.DiscoveryFilter;
 import com.google.android.gms.nearby.presence.DiscoveryOptions;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ckri;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cmzn;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public final class DiscoveryWithIntentParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckri();
-    public arbp a;
+    public static final Parcelable.Creator CREATOR = new cmzn();
+    public atee a;
     public PendingIntent b;
     public DiscoveryFilter c;
     public DiscoveryOptions d;
@@ -33,7 +33,7 @@ public final class DiscoveryWithIntentParams extends AbstractSafeParcelable {
         }
         if (obj instanceof DiscoveryWithIntentParams) {
             DiscoveryWithIntentParams discoveryWithIntentParams = (DiscoveryWithIntentParams) obj;
-            if (arwb.b(this.a, discoveryWithIntentParams.a) && arwb.b(this.b, discoveryWithIntentParams.b) && arwb.b(this.c, discoveryWithIntentParams.c) && arwb.b(this.d, discoveryWithIntentParams.d)) {
+            if (atyq.b(this.a, discoveryWithIntentParams.a) && atyq.b(this.b, discoveryWithIntentParams.b) && atyq.b(this.c, discoveryWithIntentParams.c) && atyq.b(this.d, discoveryWithIntentParams.d)) {
                 return true;
             }
         }
@@ -46,23 +46,23 @@ public final class DiscoveryWithIntentParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.c(parcel, a);
     }
 
     public DiscoveryWithIntentParams(IBinder iBinder, PendingIntent pendingIntent, DiscoveryFilter discoveryFilter, DiscoveryOptions discoveryOptions) {
-        arbp arbnVar;
+        atee atecVar;
         if (iBinder == null) {
-            arbnVar = null;
+            atecVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbnVar = queryLocalInterface instanceof arbp ? (arbp) queryLocalInterface : new arbn(iBinder);
+            atecVar = queryLocalInterface instanceof atee ? (atee) queryLocalInterface : new atec(iBinder);
         }
-        this.a = arbnVar;
+        this.a = atecVar;
         this.b = pendingIntent;
         this.c = discoveryFilter;
         this.d = discoveryOptions;

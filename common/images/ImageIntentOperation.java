@@ -1,22 +1,22 @@
 package com.google.android.gms.common.images;
 
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.eijr;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.ekww;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ImageIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("ImageIntentOp", asej.COMMON);
-    private bqqa b;
+    private static final ausn a = ausn.b("ImageIntentOp", auid.COMMON);
+    private bsxr b;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        eijr eijrVar = bqqe.a;
-        this.b = new bqqa();
+        ekww ekwwVar = bsxv.a;
+        this.b = new bsxr();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:22:0x008e  */

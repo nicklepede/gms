@@ -3,15 +3,15 @@ package com.google.android.gms.fitness.data;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgcy;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.biho;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DataPointChange extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgcy();
+    public static final Parcelable.Creator CREATOR = new biho();
     public final InsertionDataPointChange a;
     public final DeletionDataPointChange b;
     public final DeletionByTimeDataPointChange c;
@@ -30,7 +30,7 @@ public class DataPointChange extends AbstractSafeParcelable {
             return false;
         }
         DataPointChange dataPointChange = (DataPointChange) obj;
-        return arwb.b(this.a, dataPointChange.a) && arwb.b(this.b, dataPointChange.b) && arwb.b(this.c, dataPointChange.c);
+        return atyq.b(this.a, dataPointChange.a) && atyq.b(this.b, dataPointChange.b) && atyq.b(this.c, dataPointChange.c);
     }
 
     public final int hashCode() {
@@ -40,10 +40,10 @@ public class DataPointChange extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         InsertionDataPointChange insertionDataPointChange = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, insertionDataPointChange, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, insertionDataPointChange, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.c(parcel, a);
     }
 }

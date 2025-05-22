@@ -4,22 +4,22 @@ import android.content.Intent;
 import com.google.android.gms.chimera.modules.googlehelp.AppContextProvider;
 import com.google.android.gms.googlehelp.webview.GoogleHelpRenderingApiWebViewChimeraActivity;
 import com.google.android.gms.googlehelp.webview.GoogleHelpSupportWebViewChimeraActivity;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.bivk;
-import defpackage.fote;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.bkzz;
+import defpackage.frlx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class ModuleInitializer extends anya {
+public class ModuleInitializer extends apzs {
     static final void e(String str) {
-        asng.M(str, 1);
+        aura.M(str, 1);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
         AppContextProvider.a();
-        if (bivk.a(fote.a.a().a())) {
+        if (bkzz.a(frlx.a.lK().a())) {
             e("com.google.android.gms.googlehelp.helpactivities.HelpActivity");
         }
         e("com.google.android.gms.googlehelp.gcm.InvalidateGcmTokenGcmTaskService");

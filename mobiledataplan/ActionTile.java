@@ -3,17 +3,17 @@ package com.google.android.gms.mobiledataplan;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cdza;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgih;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ActionTile extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cdza();
+    public static final Parcelable.Creator CREATOR = new cgih();
     public final Long a;
     public final String b;
     public final String c;
@@ -36,10 +36,10 @@ public class ActionTile extends AbstractSafeParcelable {
             return false;
         }
         ActionTile actionTile = (ActionTile) obj;
-        if (arwb.b(this.a, actionTile.a) && arwb.b(this.b, actionTile.b)) {
+        if (atyq.b(this.a, actionTile.a) && atyq.b(this.b, actionTile.b)) {
             String str = this.c;
             String str2 = actionTile.c;
-            if (arwb.b(str, str2) && arwb.b(str, str2) && arwb.b(this.d, actionTile.d) && arwb.b(this.e, actionTile.e)) {
+            if (atyq.b(str, str2) && atyq.b(str, str2) && atyq.b(this.d, actionTile.d) && atyq.b(this.e, actionTile.e)) {
                 return true;
             }
         }
@@ -52,23 +52,23 @@ public class ActionTile extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("tileId", this.a, arrayList);
-        arwa.b("title", this.b, arrayList);
-        arwa.b("description", this.c, arrayList);
-        arwa.b("landingPageUri", this.d, arrayList);
-        arwa.b("buttonText", this.e, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("tileId", this.a, arrayList);
+        atyp.b("title", this.b, arrayList);
+        atyp.b("description", this.c, arrayList);
+        atyp.b("landingPageUri", this.d, arrayList);
+        atyp.b("buttonText", this.e, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Long l = this.a;
-        int a = arxc.a(parcel);
-        arxc.I(parcel, 1, l);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.I(parcel, 1, l);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.c(parcel, a);
     }
 }

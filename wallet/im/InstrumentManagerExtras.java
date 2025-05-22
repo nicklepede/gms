@@ -2,18 +2,18 @@ package com.google.android.gms.wallet.im;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.dirn;
-import defpackage.efdk;
-import defpackage.eiea;
+import defpackage.dlcy;
+import defpackage.ehqn;
+import defpackage.ekrg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class InstrumentManagerExtras implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new dirn();
-    public final eiea a;
+    public static final Parcelable.Creator CREATOR = new dlcy();
+    public final ekrg a;
 
-    public InstrumentManagerExtras(eiea eieaVar) {
-        this.a = eieaVar;
+    public InstrumentManagerExtras(ekrg ekrgVar) {
+        this.a = ekrgVar;
     }
 
     @Override // android.os.Parcelable
@@ -23,6 +23,6 @@ public class InstrumentManagerExtras implements Parcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        efdk.o(this.a, parcel);
+        ehqn.o(this.a, parcel);
     }
 }

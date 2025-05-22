@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.ParcelUuid;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cfdv;
-import defpackage.ckdt;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.chlh;
+import defpackage.cmly;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class AdvertisingOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cfdv();
+    public static final Parcelable.Creator CREATOR = new chlh();
     public int A;
     public byte[] B;
     public boolean C;
@@ -91,7 +91,7 @@ public final class AdvertisingOptions extends AbstractSafeParcelable {
         }
         if (obj instanceof AdvertisingOptions) {
             AdvertisingOptions advertisingOptions = (AdvertisingOptions) obj;
-            if (arwb.b(this.a, advertisingOptions.a) && arwb.b(Boolean.valueOf(this.b), Boolean.valueOf(advertisingOptions.b)) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(advertisingOptions.c)) && arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(advertisingOptions.d)) && arwb.b(Boolean.valueOf(this.e), Boolean.valueOf(advertisingOptions.e)) && Arrays.equals(this.f, advertisingOptions.f) && arwb.b(Boolean.valueOf(this.g), Boolean.valueOf(advertisingOptions.g)) && arwb.b(this.h, advertisingOptions.h) && arwb.b(Boolean.valueOf(this.i), Boolean.valueOf(advertisingOptions.i)) && arwb.b(Boolean.valueOf(this.j), Boolean.valueOf(advertisingOptions.j)) && arwb.b(Boolean.valueOf(this.k), Boolean.valueOf(advertisingOptions.k)) && arwb.b(Boolean.valueOf(this.l), Boolean.valueOf(advertisingOptions.l)) && arwb.b(Boolean.valueOf(this.m), Boolean.valueOf(advertisingOptions.m)) && arwb.b(Boolean.valueOf(this.n), Boolean.valueOf(advertisingOptions.n)) && arwb.b(Integer.valueOf(this.o), Integer.valueOf(advertisingOptions.o)) && arwb.b(Integer.valueOf(this.p), Integer.valueOf(advertisingOptions.p)) && Arrays.equals(this.q, advertisingOptions.q) && arwb.b(Long.valueOf(this.r), Long.valueOf(advertisingOptions.r)) && Arrays.equals(this.s, advertisingOptions.s) && arwb.b(Boolean.valueOf(this.t), Boolean.valueOf(advertisingOptions.t)) && arwb.b(Boolean.valueOf(this.u), Boolean.valueOf(advertisingOptions.u)) && arwb.b(Boolean.valueOf(this.v), Boolean.valueOf(advertisingOptions.v)) && arwb.b(Boolean.valueOf(this.w), Boolean.valueOf(advertisingOptions.w)) && Arrays.equals(this.x, advertisingOptions.x) && Arrays.equals(this.y, advertisingOptions.y) && arwb.b(Boolean.valueOf(this.z), Boolean.valueOf(advertisingOptions.z)) && arwb.b(Integer.valueOf(this.A), Integer.valueOf(advertisingOptions.A)) && Arrays.equals(this.B, advertisingOptions.B) && arwb.b(Boolean.valueOf(this.C), Boolean.valueOf(advertisingOptions.C)) && arwb.b(Integer.valueOf(this.D), Integer.valueOf(advertisingOptions.D)) && arwb.b(Boolean.valueOf(this.E), Boolean.valueOf(advertisingOptions.E)) && arwb.b(Boolean.valueOf(this.F), Boolean.valueOf(advertisingOptions.F)) && arwb.b(Boolean.valueOf(this.G), Boolean.valueOf(advertisingOptions.G)) && arwb.b(Boolean.valueOf(this.H), Boolean.valueOf(advertisingOptions.H)) && arwb.b(Long.valueOf(this.I), Long.valueOf(advertisingOptions.I))) {
+            if (atyq.b(this.a, advertisingOptions.a) && atyq.b(Boolean.valueOf(this.b), Boolean.valueOf(advertisingOptions.b)) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(advertisingOptions.c)) && atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(advertisingOptions.d)) && atyq.b(Boolean.valueOf(this.e), Boolean.valueOf(advertisingOptions.e)) && Arrays.equals(this.f, advertisingOptions.f) && atyq.b(Boolean.valueOf(this.g), Boolean.valueOf(advertisingOptions.g)) && atyq.b(this.h, advertisingOptions.h) && atyq.b(Boolean.valueOf(this.i), Boolean.valueOf(advertisingOptions.i)) && atyq.b(Boolean.valueOf(this.j), Boolean.valueOf(advertisingOptions.j)) && atyq.b(Boolean.valueOf(this.k), Boolean.valueOf(advertisingOptions.k)) && atyq.b(Boolean.valueOf(this.l), Boolean.valueOf(advertisingOptions.l)) && atyq.b(Boolean.valueOf(this.m), Boolean.valueOf(advertisingOptions.m)) && atyq.b(Boolean.valueOf(this.n), Boolean.valueOf(advertisingOptions.n)) && atyq.b(Integer.valueOf(this.o), Integer.valueOf(advertisingOptions.o)) && atyq.b(Integer.valueOf(this.p), Integer.valueOf(advertisingOptions.p)) && Arrays.equals(this.q, advertisingOptions.q) && atyq.b(Long.valueOf(this.r), Long.valueOf(advertisingOptions.r)) && Arrays.equals(this.s, advertisingOptions.s) && atyq.b(Boolean.valueOf(this.t), Boolean.valueOf(advertisingOptions.t)) && atyq.b(Boolean.valueOf(this.u), Boolean.valueOf(advertisingOptions.u)) && atyq.b(Boolean.valueOf(this.v), Boolean.valueOf(advertisingOptions.v)) && atyq.b(Boolean.valueOf(this.w), Boolean.valueOf(advertisingOptions.w)) && Arrays.equals(this.x, advertisingOptions.x) && Arrays.equals(this.y, advertisingOptions.y) && atyq.b(Boolean.valueOf(this.z), Boolean.valueOf(advertisingOptions.z)) && atyq.b(Integer.valueOf(this.A), Integer.valueOf(advertisingOptions.A)) && Arrays.equals(this.B, advertisingOptions.B) && atyq.b(Boolean.valueOf(this.C), Boolean.valueOf(advertisingOptions.C)) && atyq.b(Integer.valueOf(this.D), Integer.valueOf(advertisingOptions.D)) && atyq.b(Boolean.valueOf(this.E), Boolean.valueOf(advertisingOptions.E)) && atyq.b(Boolean.valueOf(this.F), Boolean.valueOf(advertisingOptions.F)) && atyq.b(Boolean.valueOf(this.G), Boolean.valueOf(advertisingOptions.G)) && atyq.b(Boolean.valueOf(this.H), Boolean.valueOf(advertisingOptions.H)) && atyq.b(Long.valueOf(this.I), Long.valueOf(advertisingOptions.I))) {
                 return true;
             }
         }
@@ -110,7 +110,7 @@ public final class AdvertisingOptions extends AbstractSafeParcelable {
         Boolean valueOf3 = Boolean.valueOf(this.d);
         Boolean valueOf4 = Boolean.valueOf(this.e);
         byte[] bArr = this.f;
-        String b = bArr == null ? null : ckdt.b(bArr);
+        String b = bArr == null ? null : cmly.b(bArr);
         Boolean valueOf5 = Boolean.valueOf(this.g);
         ParcelUuid parcelUuid = this.h;
         Boolean valueOf6 = Boolean.valueOf(this.i);
@@ -122,55 +122,55 @@ public final class AdvertisingOptions extends AbstractSafeParcelable {
         Integer valueOf12 = Integer.valueOf(this.o);
         Integer valueOf13 = Integer.valueOf(this.p);
         byte[] bArr2 = this.q;
-        String b2 = bArr2 == null ? "null" : ckdt.b(bArr2);
+        String b2 = bArr2 == null ? "null" : cmly.b(bArr2);
         Long valueOf14 = Long.valueOf(this.r);
         String arrays = Arrays.toString(this.s);
         Boolean valueOf15 = Boolean.valueOf(this.t);
         Boolean valueOf16 = Boolean.valueOf(this.u);
         Boolean valueOf17 = Boolean.valueOf(this.w);
         byte[] bArr3 = this.B;
-        return String.format(locale, "AdvertisingOptions{strategy: %s, autoUpgradeBandwidth: %s, enforceTopologyConstraints: %s, enableBluetooth: %s, enableBle: %s, nearbyNotificationsBeaconData: %s, lowPower: %s, fastAdvertisementServiceUuid: %s, enableWifiLan: %s, enableNfc: %s, enableWifiAware: %s, enableBluetoothListening: %s, enableWebRtcListening: %s, enableUwbRanging: %s, uwbChannel: %d, uwbPreambleIndex: %d, remoteUwbAddress: %s, flowId: %d, uwbSenderInfo: %s, enableOutOfBandConnection: %s, disruptiveUpgrade: %s, useStableIdentifiers: %s, deviceInfo: %s,allowGattConnections: %s, connectionType: %d, enableBleL2capListening: %s, upgradeBandwidthTimeoutMillis: %d}", strategy, valueOf, valueOf2, valueOf3, valueOf4, b, valueOf5, parcelUuid, valueOf6, valueOf7, valueOf8, valueOf9, valueOf10, valueOf11, valueOf12, valueOf13, b2, valueOf14, arrays, valueOf15, valueOf16, valueOf17, bArr3 == null ? null : ckdt.b(bArr3), Boolean.valueOf(this.C), Integer.valueOf(this.D), Boolean.valueOf(this.H), Long.valueOf(this.I));
+        return String.format(locale, "AdvertisingOptions{strategy: %s, autoUpgradeBandwidth: %s, enforceTopologyConstraints: %s, enableBluetooth: %s, enableBle: %s, nearbyNotificationsBeaconData: %s, lowPower: %s, fastAdvertisementServiceUuid: %s, enableWifiLan: %s, enableNfc: %s, enableWifiAware: %s, enableBluetoothListening: %s, enableWebRtcListening: %s, enableUwbRanging: %s, uwbChannel: %d, uwbPreambleIndex: %d, remoteUwbAddress: %s, flowId: %d, uwbSenderInfo: %s, enableOutOfBandConnection: %s, disruptiveUpgrade: %s, useStableIdentifiers: %s, deviceInfo: %s,allowGattConnections: %s, connectionType: %d, enableBleL2capListening: %s, upgradeBandwidthTimeoutMillis: %d}", strategy, valueOf, valueOf2, valueOf3, valueOf4, b, valueOf5, parcelUuid, valueOf6, valueOf7, valueOf8, valueOf9, valueOf10, valueOf11, valueOf12, valueOf13, b2, valueOf14, arrays, valueOf15, valueOf16, valueOf17, bArr3 == null ? null : cmly.b(bArr3), Boolean.valueOf(this.C), Integer.valueOf(this.D), Boolean.valueOf(this.H), Long.valueOf(this.I));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.e(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.i(parcel, 6, this.f, false);
-        arxc.e(parcel, 7, this.g);
-        arxc.t(parcel, 8, this.h, i, false);
-        arxc.e(parcel, 9, this.i);
-        arxc.e(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.e(parcel, 12, this.l);
-        arxc.e(parcel, 13, this.m);
-        arxc.e(parcel, 14, this.n);
-        arxc.o(parcel, 15, this.o);
-        arxc.o(parcel, 16, this.p);
-        arxc.i(parcel, 17, this.q, false);
-        arxc.q(parcel, 18, this.r);
-        arxc.J(parcel, 19, this.s, i);
-        arxc.e(parcel, 20, this.t);
-        arxc.e(parcel, 21, this.u);
-        arxc.e(parcel, 22, this.v);
-        arxc.e(parcel, 23, this.w);
-        arxc.p(parcel, 24, this.x, false);
-        arxc.p(parcel, 25, this.y, false);
-        arxc.e(parcel, 26, this.z);
-        arxc.o(parcel, 27, this.A);
-        arxc.i(parcel, 28, this.B, false);
-        arxc.e(parcel, 29, this.C);
-        arxc.o(parcel, 30, this.D);
-        arxc.e(parcel, 31, this.E);
-        arxc.e(parcel, 32, this.F);
-        arxc.e(parcel, 33, this.G);
-        arxc.e(parcel, 34, this.H);
-        arxc.q(parcel, 35, this.I);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.e(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.i(parcel, 6, this.f, false);
+        atzr.e(parcel, 7, this.g);
+        atzr.t(parcel, 8, this.h, i, false);
+        atzr.e(parcel, 9, this.i);
+        atzr.e(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.e(parcel, 12, this.l);
+        atzr.e(parcel, 13, this.m);
+        atzr.e(parcel, 14, this.n);
+        atzr.o(parcel, 15, this.o);
+        atzr.o(parcel, 16, this.p);
+        atzr.i(parcel, 17, this.q, false);
+        atzr.q(parcel, 18, this.r);
+        atzr.J(parcel, 19, this.s, i);
+        atzr.e(parcel, 20, this.t);
+        atzr.e(parcel, 21, this.u);
+        atzr.e(parcel, 22, this.v);
+        atzr.e(parcel, 23, this.w);
+        atzr.p(parcel, 24, this.x, false);
+        atzr.p(parcel, 25, this.y, false);
+        atzr.e(parcel, 26, this.z);
+        atzr.o(parcel, 27, this.A);
+        atzr.i(parcel, 28, this.B, false);
+        atzr.e(parcel, 29, this.C);
+        atzr.o(parcel, 30, this.D);
+        atzr.e(parcel, 31, this.E);
+        atzr.e(parcel, 32, this.F);
+        atzr.e(parcel, 33, this.G);
+        atzr.e(parcel, 34, this.H);
+        atzr.q(parcel, 35, this.I);
+        atzr.c(parcel, a);
     }
 
     public AdvertisingOptions(Strategy strategy, boolean z, boolean z2, boolean z3, boolean z4, byte[] bArr, boolean z5, ParcelUuid parcelUuid, boolean z6, boolean z7, boolean z8, boolean z9, boolean z10, boolean z11, int i, int i2, byte[] bArr2, long j, UwbSenderInfo[] uwbSenderInfoArr, boolean z12, boolean z13, boolean z14, boolean z15, int[] iArr, int[] iArr2, boolean z16, int i3, byte[] bArr3, boolean z17, int i4, boolean z18, boolean z19, boolean z20, boolean z21, long j2) {

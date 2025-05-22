@@ -3,17 +3,17 @@ package com.google.android.gms.nearby.fastpair.triangle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wearable.internal.NodeParcelable;
-import defpackage.citp;
-import defpackage.eiif;
+import defpackage.clbu;
+import defpackage.ekvk;
 import j$.util.Objects;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class NodeHolder implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new citp();
+    public static final Parcelable.Creator CREATOR = new clbu();
     public final String a;
     public final boolean b;
 
@@ -60,7 +60,7 @@ public class NodeHolder implements Parcelable {
     }
 
     public NodeHolder(Parcel parcel) {
-        this.a = eiif.b(parcel.readString());
+        this.a = ekvk.b(parcel.readString());
         this.b = parcel.readByte() != 0;
     }
 }

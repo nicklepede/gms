@@ -4,17 +4,17 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.games.internal.GamesDowngradeableSafeParcel;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bhpj;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bjty;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class GameBadgeEntity extends GamesDowngradeableSafeParcel implements GameBadge {
-    public static final Parcelable.Creator CREATOR = new bhpj();
+    public static final Parcelable.Creator CREATOR = new bjty();
     public final int a;
     public final String b;
     public final String c;
@@ -45,7 +45,7 @@ public final class GameBadgeEntity extends GamesDowngradeableSafeParcel implemen
             return true;
         }
         GameBadge gameBadge = (GameBadge) obj;
-        return arwb.b(Integer.valueOf(gameBadge.a()), this.b) && arwb.b(gameBadge.b(), this.d);
+        return atyq.b(Integer.valueOf(gameBadge.a()), this.b) && atyq.b(gameBadge.b(), this.d);
     }
 
     public final int hashCode() {
@@ -54,24 +54,24 @@ public final class GameBadgeEntity extends GamesDowngradeableSafeParcel implemen
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("Type", Integer.valueOf(this.a), arrayList);
-        arwa.b("Title", this.b, arrayList);
-        arwa.b("Description", this.c, arrayList);
-        arwa.b("IconImageUri", this.d, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("Type", Integer.valueOf(this.a), arrayList);
+        atyp.b("Title", this.b, arrayList);
+        atyp.b("Description", this.c, arrayList);
+        atyp.b("IconImageUri", this.d, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

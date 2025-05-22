@@ -6,19 +6,19 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.AnalyticsInfo;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ayxp;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bbbj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class StopScanningForDeviceAvailabilityParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayxp();
+    public static final Parcelable.Creator CREATOR = new bbbj();
     public int a;
-    public arbp b;
+    public atee b;
     public AnalyticsInfo c;
 
     private StopScanningForDeviceAvailabilityParams() {
@@ -30,7 +30,7 @@ public final class StopScanningForDeviceAvailabilityParams extends AbstractSafeP
         }
         if (obj instanceof StopScanningForDeviceAvailabilityParams) {
             StopScanningForDeviceAvailabilityParams stopScanningForDeviceAvailabilityParams = (StopScanningForDeviceAvailabilityParams) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(stopScanningForDeviceAvailabilityParams.a)) && arwb.b(this.b, stopScanningForDeviceAvailabilityParams.b) && arwb.b(this.c, stopScanningForDeviceAvailabilityParams.c)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(stopScanningForDeviceAvailabilityParams.a)) && atyq.b(this.b, stopScanningForDeviceAvailabilityParams.b) && atyq.b(this.c, stopScanningForDeviceAvailabilityParams.c)) {
                 return true;
             }
         }
@@ -43,23 +43,23 @@ public final class StopScanningForDeviceAvailabilityParams extends AbstractSafeP
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.c(parcel, a);
     }
 
     public StopScanningForDeviceAvailabilityParams(int i, IBinder iBinder, AnalyticsInfo analyticsInfo) {
-        arbp arbnVar;
+        atee atecVar;
         if (iBinder == null) {
-            arbnVar = null;
+            atecVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbnVar = queryLocalInterface instanceof arbp ? (arbp) queryLocalInterface : new arbn(iBinder);
+            atecVar = queryLocalInterface instanceof atee ? (atee) queryLocalInterface : new atec(iBinder);
         }
         this.a = i;
-        this.b = arbnVar;
+        this.b = atecVar;
         this.c = analyticsInfo;
     }
 }

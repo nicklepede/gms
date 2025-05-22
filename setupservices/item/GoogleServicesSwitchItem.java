@@ -2,87 +2,87 @@ package com.google.android.gms.setupservices.item;
 
 import com.google.android.gms.R;
 import com.google.android.setupdesign.items.SwitchItem;
-import defpackage.dcdy;
-import defpackage.dcem;
-import defpackage.dcfd;
-import defpackage.esxx;
-import defpackage.esyb;
-import defpackage.esye;
-import defpackage.esyq;
-import defpackage.esyr;
-import defpackage.fecj;
+import defpackage.deoe;
+import defpackage.deos;
+import defpackage.depj;
+import defpackage.evnn;
+import defpackage.evnr;
+import defpackage.evnu;
+import defpackage.evog;
+import defpackage.evoh;
+import defpackage.fgrc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class GoogleServicesSwitchItem extends SwitchItem implements dcdy {
-    public dcem a;
-    public dcem b;
+public class GoogleServicesSwitchItem extends SwitchItem implements deoe {
+    public deos a;
+    public deos b;
 
-    @Override // defpackage.dcdy
+    @Override // defpackage.deoe
     public final int c() {
         return R.id.section_device_maintenance;
     }
 
-    @Override // defpackage.dcdy
-    public final dcfd i() {
-        fecj v = esxx.a.v();
-        fecj v2 = esyr.a.v();
-        esyq esyqVar = this.o ? esyq.ENABLED : esyq.DISABLED;
+    @Override // defpackage.deoe
+    public final depj i() {
+        fgrc v = evnn.a.v();
+        fgrc v2 = evoh.a.v();
+        evog evogVar = this.o ? evog.ENABLED : evog.DISABLED;
         if (!v2.b.L()) {
             v2.U();
         }
-        esyr esyrVar = (esyr) v2.b;
-        esyrVar.c = esyqVar.d;
-        esyrVar.b |= 1;
-        esyr esyrVar2 = (esyr) v2.Q();
+        evoh evohVar = (evoh) v2.b;
+        evohVar.c = evogVar.d;
+        evohVar.b |= 1;
+        evoh evohVar2 = (evoh) v2.Q();
         if (!v.b.L()) {
             v.U();
         }
-        esxx esxxVar = (esxx) v.b;
-        esyrVar2.getClass();
-        esxxVar.d = esyrVar2;
-        esxxVar.b |= 2;
-        fecj v3 = esye.a.v();
-        dcem dcemVar = this.a;
-        if (dcemVar != null) {
-            esyb d = dcemVar.d();
+        evnn evnnVar = (evnn) v.b;
+        evohVar2.getClass();
+        evnnVar.d = evohVar2;
+        evnnVar.b |= 2;
+        fgrc v3 = evnu.a.v();
+        deos deosVar = this.a;
+        if (deosVar != null) {
+            evnr d = deosVar.d();
             if (!v3.b.L()) {
                 v3.U();
             }
-            esye esyeVar = (esye) v3.b;
+            evnu evnuVar = (evnu) v3.b;
             d.getClass();
-            esyeVar.d = d;
-            esyeVar.b |= 2;
+            evnuVar.d = d;
+            evnuVar.b |= 2;
         }
-        dcem dcemVar2 = this.b;
-        if (dcemVar2 != null) {
-            esyb d2 = dcemVar2.d();
+        deos deosVar2 = this.b;
+        if (deosVar2 != null) {
+            evnr d2 = deosVar2.d();
             if (!v3.b.L()) {
                 v3.U();
             }
-            esye esyeVar2 = (esye) v3.b;
+            evnu evnuVar2 = (evnu) v3.b;
             d2.getClass();
-            esyeVar2.e = d2;
-            esyeVar2.b |= 4;
+            evnuVar2.e = d2;
+            evnuVar2.b |= 4;
         }
-        return new dcfd((esxx) v.Q(), (esye) v3.Q());
+        return new depj((evnn) v.Q(), (evnu) v3.Q());
     }
 
     @Override // com.google.android.setupdesign.items.Item
-    public final CharSequence jx() {
-        dcem dcemVar = this.b;
-        if (dcemVar == null) {
+    public final CharSequence jN() {
+        deos deosVar = this.b;
+        if (deosVar == null) {
             return null;
         }
-        return dcemVar.a;
+        return deosVar.a;
     }
 
     @Override // com.google.android.setupdesign.items.Item
     public final CharSequence l() {
-        dcem dcemVar = this.a;
-        if (dcemVar == null) {
+        deos deosVar = this.a;
+        if (deosVar == null) {
             return null;
         }
-        return dcemVar.a;
+        return deosVar.a;
     }
 }

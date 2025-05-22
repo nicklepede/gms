@@ -1,20 +1,20 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
-import defpackage.anef;
-import defpackage.erov;
-import defpackage.fvbo;
+import defpackage.apfs;
+import defpackage.euei;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class NativeMirroringClientConfigWithIpAddress {
-    public static final anef Companion = new anef();
-    private static final erov gson = new erov();
+    public static final apfs Companion = new apfs();
+    private static final euei gson = new euei();
     private final String ipAddress;
     private final NativeMirroringClientConfig jsonConfig;
 
     public NativeMirroringClientConfigWithIpAddress(String str, NativeMirroringClientConfig nativeMirroringClientConfig) {
-        fvbo.f(str, "ipAddress");
-        fvbo.f(nativeMirroringClientConfig, "jsonConfig");
+        fxxm.f(str, "ipAddress");
+        fxxm.f(nativeMirroringClientConfig, "jsonConfig");
         this.ipAddress = str;
         this.jsonConfig = nativeMirroringClientConfig;
     }
@@ -38,8 +38,8 @@ public final class NativeMirroringClientConfigWithIpAddress {
     }
 
     public final NativeMirroringClientConfigWithIpAddress copy(String str, NativeMirroringClientConfig nativeMirroringClientConfig) {
-        fvbo.f(str, "ipAddress");
-        fvbo.f(nativeMirroringClientConfig, "jsonConfig");
+        fxxm.f(str, "ipAddress");
+        fxxm.f(nativeMirroringClientConfig, "jsonConfig");
         return new NativeMirroringClientConfigWithIpAddress(str, nativeMirroringClientConfig);
     }
 
@@ -51,7 +51,7 @@ public final class NativeMirroringClientConfigWithIpAddress {
             return false;
         }
         NativeMirroringClientConfigWithIpAddress nativeMirroringClientConfigWithIpAddress = (NativeMirroringClientConfigWithIpAddress) obj;
-        return fvbo.n(this.ipAddress, nativeMirroringClientConfigWithIpAddress.ipAddress) && fvbo.n(this.jsonConfig, nativeMirroringClientConfigWithIpAddress.jsonConfig);
+        return fxxm.n(this.ipAddress, nativeMirroringClientConfigWithIpAddress.ipAddress) && fxxm.n(this.jsonConfig, nativeMirroringClientConfigWithIpAddress.jsonConfig);
     }
 
     public final String getIpAddress() {

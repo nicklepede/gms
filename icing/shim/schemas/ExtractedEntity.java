@@ -1,18 +1,18 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eiif;
+import defpackage.ekvk;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ExtractedEntity extends Thing {
     public final String a;
 
     public ExtractedEntity(String str, String str2, String str3, List list, List list2, String str4, G3AttributionInfo g3AttributionInfo) {
         super(str, str2, str3, list, list2, g3AttributionInfo);
-        this.a = eiif.b(str4);
+        this.a = ekvk.b(str4);
     }
 
     @Override // com.google.android.gms.icing.shim.schemas.Thing

@@ -3,32 +3,32 @@ package com.google.android.gms.auth.api.fido;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.feay;
-import defpackage.zat;
-import defpackage.zau;
+import defpackage.abak;
+import defpackage.abal;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.fgpr;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class RegisteredCredentialData extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zau();
+    public static final Parcelable.Creator CREATOR = new abal();
     public final String a;
-    public final feay b;
+    public final fgpr b;
     public final boolean c;
 
-    public RegisteredCredentialData(String str, feay feayVar, boolean z) {
-        arwm.t(str, "storage ID shouldn't be null");
+    public RegisteredCredentialData(String str, fgpr fgprVar, boolean z) {
+        atzb.t(str, "storage ID shouldn't be null");
         this.a = str;
-        this.b = feayVar;
+        this.b = fgprVar;
         this.c = z;
     }
 
-    public static zat a() {
-        zat zatVar = new zat();
-        zatVar.c(false);
-        return zatVar;
+    public static abak a() {
+        abak abakVar = new abak();
+        abakVar.c(false);
+        return abakVar;
     }
 
     public final boolean equals(Object obj) {
@@ -46,11 +46,11 @@ public class RegisteredCredentialData extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        feay feayVar = this.b;
-        arxc.i(parcel, 2, feayVar == null ? null : feayVar.M(), false);
-        arxc.e(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        fgpr fgprVar = this.b;
+        atzr.i(parcel, 2, fgprVar == null ? null : fgprVar.M(), false);
+        atzr.e(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 }

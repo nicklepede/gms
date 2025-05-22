@@ -21,7 +21,7 @@ import javax.net.ssl.SSLHandshakeException;
 import javax.net.ssl.X509KeyManager;
 import javax.security.auth.x500.X500Principal;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 final class NativeSsl {
     private final SSLParametersImpl.AliasChooser aliasChooser;
@@ -32,7 +32,7 @@ final class NativeSsl {
     private final SSLParametersImpl.PSKCallbacks pskCallbacks;
     private volatile long ssl;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class BioWrapper {
         private volatile long bio;
 

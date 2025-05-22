@@ -11,13 +11,13 @@ import com.google.android.enterprise.connectedapps.parcelablewrappers.Parcelable
 import com.google.android.enterprise.connectedapps.parcelablewrappers.ParcelableList;
 import com.google.android.gms.auth.proximity.phonehub.ParcelableRanking;
 import defpackage.a;
-import defpackage.aczc;
+import defpackage.aezc;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class PhoneHubNotificationManager_Bundler implements Bundler {
-    public static final Parcelable.Creator CREATOR = new aczc();
+    public static final Parcelable.Creator CREATOR = new aezc();
 
     @Override // com.google.android.enterprise.connectedapps.internal.Bundler
     public final Object a(Bundle bundle, String str, BundlerType bundlerType) {

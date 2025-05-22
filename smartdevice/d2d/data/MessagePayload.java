@@ -11,20 +11,20 @@ import com.google.android.gms.smartdevice.d2d.PostTransferAction;
 import com.google.android.gms.smartdevice.quickstart.QuickStartHandshakePayload;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.ashs;
-import defpackage.ddfz;
-import defpackage.fwac;
+import defpackage.atzr;
+import defpackage.aulm;
+import defpackage.dfre;
+import defpackage.fywe;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class MessagePayload extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new ddfz();
+    public static final Parcelable.Creator CREATOR = new dfre();
     private static final HashMap v;
     public final Set a;
     public final int b;
@@ -103,7 +103,7 @@ public class MessagePayload extends BinarySerializableFastSafeParcelableJson {
         this.u = postTransferAction;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         switch (i) {
@@ -139,15 +139,15 @@ public class MessagePayload extends BinarySerializableFastSafeParcelableJson {
                 return this.o;
             case 16:
                 return this.p;
-            case fwac.q /* 17 */:
+            case fywe.q /* 17 */:
                 return this.q;
             case 18:
                 return this.r;
             case 19:
                 return this.s;
-            case fwac.t /* 20 */:
+            case fywe.t /* 20 */:
                 return this.t;
-            case fwac.u /* 21 */:
+            case fywe.u /* 21 */:
                 return this.u;
             default:
                 throw new IllegalStateException(a.j(i, "Unknown SafeParcelable id="));
@@ -194,38 +194,18 @@ public class MessagePayload extends BinarySerializableFastSafeParcelableJson {
         this.a.add(17);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return v;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
-    protected final void gf(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
-        int i = fastJsonResponse$Field.g;
-        if (i != 18) {
-            throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be a byte array"));
-        }
-        this.r = bArr;
-        this.a.add(Integer.valueOf(i));
-    }
-
-    @Override // defpackage.ashs
-    protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
-        int i = fastJsonResponse$Field.g;
-        if (i != 9) {
-            throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be a boolean."));
-        }
-        this.i = z;
-        this.a.add(Integer.valueOf(i));
-    }
-
-    @Override // defpackage.ashs
-    public final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+    @Override // defpackage.aulm
+    public final void gK(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         int i = fastJsonResponse$Field.g;
         if (i == 10) {
             this.j = arrayList;
@@ -240,64 +220,64 @@ public class MessagePayload extends BinarySerializableFastSafeParcelableJson {
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
+    @Override // defpackage.aulm
+    public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
         this.x = true;
         int i = fastJsonResponse$Field.g;
         switch (i) {
             case 3:
-                this.d = (BootstrapOptions) ashsVar;
+                this.d = (BootstrapOptions) aulmVar;
                 break;
             case 4:
-                this.e = (BootstrapConfigurations) ashsVar;
+                this.e = (BootstrapConfigurations) aulmVar;
                 break;
             case 5:
-                this.f = (DisplayText) ashsVar;
+                this.f = (DisplayText) aulmVar;
                 break;
             case 6:
-                this.g = (AccountBootstrapPayload) ashsVar;
+                this.g = (AccountBootstrapPayload) aulmVar;
                 break;
             case 7:
             case 9:
             case 10:
             case 14:
-            case fwac.q /* 17 */:
+            case fywe.q /* 17 */:
             case 18:
             default:
-                throw new IllegalArgumentException(String.format("Field with id=%d is not a known custom type. Found %s", Integer.valueOf(i), ashsVar.getClass().getCanonicalName()));
+                throw new IllegalArgumentException(String.format("Field with id=%d is not a known custom type. Found %s", Integer.valueOf(i), aulmVar.getClass().getCanonicalName()));
             case 8:
-                this.h = (ProgressEvent) ashsVar;
+                this.h = (ProgressEvent) aulmVar;
                 break;
             case 11:
-                this.k = (AccountTransferPayload) ashsVar;
+                this.k = (AccountTransferPayload) aulmVar;
                 break;
             case 12:
-                this.l = (DeviceStatus) ashsVar;
+                this.l = (DeviceStatus) aulmVar;
                 break;
             case 13:
-                this.m = (WorkProfilePayload) ashsVar;
+                this.m = (WorkProfilePayload) aulmVar;
                 break;
             case 15:
-                this.o = (BlockstorePayload) ashsVar;
+                this.o = (BlockstorePayload) aulmVar;
                 break;
             case 16:
-                this.p = (SecondDeviceAuthPayload) ashsVar;
+                this.p = (SecondDeviceAuthPayload) aulmVar;
                 break;
             case 19:
-                this.s = (StartServicePayload) ashsVar;
+                this.s = (StartServicePayload) aulmVar;
                 break;
-            case fwac.t /* 20 */:
-                this.t = (QuickStartHandshakePayload) ashsVar;
+            case fywe.t /* 20 */:
+                this.t = (QuickStartHandshakePayload) aulmVar;
                 break;
-            case fwac.u /* 21 */:
-                this.u = (PostTransferAction) ashsVar;
+            case fywe.u /* 21 */:
+                this.u = (PostTransferAction) aulmVar;
                 break;
         }
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
         this.x = true;
         int i2 = fastJsonResponse$Field.g;
         if (i2 == 2) {
@@ -310,6 +290,26 @@ public class MessagePayload extends BinarySerializableFastSafeParcelableJson {
             this.y = true;
         }
         this.a.add(Integer.valueOf(i2));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gu(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
+        int i = fastJsonResponse$Field.g;
+        if (i != 18) {
+            throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be a byte array"));
+        }
+        this.r = bArr;
+        this.a.add(Integer.valueOf(i));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+        int i = fastJsonResponse$Field.g;
+        if (i != 9) {
+            throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be a boolean."));
+        }
+        this.i = z;
+        this.a.add(Integer.valueOf(i));
     }
 
     public final int p() {
@@ -411,71 +411,71 @@ public class MessagePayload extends BinarySerializableFastSafeParcelableJson {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(1)) {
-            arxc.o(parcel, 1, this.b);
+            atzr.o(parcel, 1, this.b);
         }
         if (set.contains(2)) {
-            arxc.o(parcel, 2, this.c);
+            atzr.o(parcel, 2, this.c);
         }
         if (set.contains(3)) {
-            arxc.t(parcel, 3, this.d, i, true);
+            atzr.t(parcel, 3, this.d, i, true);
         }
         if (set.contains(4)) {
-            arxc.t(parcel, 4, this.e, i, true);
+            atzr.t(parcel, 4, this.e, i, true);
         }
         if (set.contains(5)) {
-            arxc.t(parcel, 5, this.f, i, true);
+            atzr.t(parcel, 5, this.f, i, true);
         }
         if (set.contains(6)) {
-            arxc.t(parcel, 6, this.g, i, true);
+            atzr.t(parcel, 6, this.g, i, true);
         }
         if (set.contains(7)) {
-            arxc.o(parcel, 7, p());
+            atzr.o(parcel, 7, p());
         }
         if (set.contains(8)) {
-            arxc.t(parcel, 8, this.h, i, true);
+            atzr.t(parcel, 8, this.h, i, true);
         }
         if (set.contains(9)) {
-            arxc.e(parcel, 9, this.i);
+            atzr.e(parcel, 9, this.i);
         }
         if (set.contains(10)) {
-            arxc.y(parcel, 10, this.j, true);
+            atzr.y(parcel, 10, this.j, true);
         }
         if (set.contains(11)) {
-            arxc.t(parcel, 11, this.k, i, true);
+            atzr.t(parcel, 11, this.k, i, true);
         }
         if (set.contains(12)) {
-            arxc.t(parcel, 12, this.l, i, true);
+            atzr.t(parcel, 12, this.l, i, true);
         }
         if (set.contains(13)) {
-            arxc.t(parcel, 13, this.m, i, true);
+            atzr.t(parcel, 13, this.m, i, true);
         }
         if (set.contains(14)) {
-            arxc.y(parcel, 14, this.n, true);
+            atzr.y(parcel, 14, this.n, true);
         }
         if (set.contains(15)) {
-            arxc.t(parcel, 15, this.o, i, true);
+            atzr.t(parcel, 15, this.o, i, true);
         }
         if (set.contains(16)) {
-            arxc.t(parcel, 16, this.p, i, true);
+            atzr.t(parcel, 16, this.p, i, true);
         }
         if (set.contains(17)) {
-            arxc.y(parcel, 17, this.q, true);
+            atzr.y(parcel, 17, this.q, true);
         }
         if (set.contains(18)) {
-            arxc.i(parcel, 18, this.r, true);
+            atzr.i(parcel, 18, this.r, true);
         }
         if (set.contains(19)) {
-            arxc.t(parcel, 19, this.s, i, true);
+            atzr.t(parcel, 19, this.s, i, true);
         }
         if (set.contains(20)) {
-            arxc.t(parcel, 20, this.t, i, true);
+            atzr.t(parcel, 20, this.t, i, true);
         }
         if (set.contains(21)) {
-            arxc.t(parcel, 21, this.u, i, true);
+            atzr.t(parcel, 21, this.u, i, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public final void x(int i) {

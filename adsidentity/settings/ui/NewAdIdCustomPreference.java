@@ -6,9 +6,9 @@ import android.view.View;
 import android.widget.ImageView;
 import androidx.preference.Preference;
 import com.google.android.gms.R;
-import defpackage.kmp;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class NewAdIdCustomPreference extends Preference {
     public View.OnClickListener a;
@@ -18,9 +18,9 @@ public class NewAdIdCustomPreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        View D = kmpVar.D(R.id.informationIcon);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        View D = mfaVar.D(R.id.informationIcon);
         if (D != null) {
             ImageView imageView = (ImageView) D;
             imageView.setEnabled(true);

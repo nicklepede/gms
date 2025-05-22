@@ -5,9 +5,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import androidx.preference.Preference;
-import defpackage.kmp;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class TwoTargetPreference extends Preference {
     public TwoTargetPreference(Context context, AttributeSet attributeSet) {
@@ -16,9 +16,9 @@ public class TwoTargetPreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    public void a(kmp kmpVar) {
-        super.a(kmpVar);
-        View D = kmpVar.D(R.id.widget_frame);
+    public void a(mfa mfaVar) {
+        super.a(mfaVar);
+        View D = mfaVar.D(R.id.widget_frame);
         boolean o = o();
         if (D != null) {
             D.setVisibility(true != o ? 0 : 8);

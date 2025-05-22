@@ -18,13 +18,13 @@ import com.google.android.gms.ads.internal.js.ah;
 import com.google.android.gms.ads.internal.overlay.AdLauncherIntentInfoParcel;
 import com.google.android.gms.ads.internal.overlay.AdOverlayInfoParcel;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.arwm;
-import defpackage.byhr;
-import defpackage.ensj;
-import defpackage.ensv;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.oth;
+import defpackage.atzb;
+import defpackage.caqj;
+import defpackage.eqgc;
+import defpackage.eqgo;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.qmk;
 import j$.util.Objects;
 import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class n extends WebViewClient implements com.google.android.gms.ads.internal.client.a, com.google.android.gms.ads.nonagon.ad.event.e {
     public static final /* synthetic */ int f = 0;
@@ -48,7 +48,7 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
     public final HashMap b = new HashMap();
     public final Object c = new Object();
     public boolean d = false;
-    private final HashSet g = new HashSet(Arrays.asList(((String) com.google.android.gms.ads.internal.config.p.aG.g()).split(",")));
+    private final HashSet g = new HashSet(Arrays.asList(((String) com.google.android.gms.ads.internal.config.p.aH.g()).split(",")));
 
     public n(i iVar) {
         this.a = iVar;
@@ -222,7 +222,7 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
         List list = (List) hashMap.get(path);
         if (path == null || list == null) {
             String.valueOf(uri);
-            if (!((Boolean) com.google.android.gms.ads.internal.config.p.aQ.g()).booleanValue() || com.google.android.gms.ads.internal.c.d().a() == null) {
+            if (!((Boolean) com.google.android.gms.ads.internal.config.p.aR.g()).booleanValue() || com.google.android.gms.ads.internal.c.d().a() == null) {
                 return;
             }
             final String substring = (path == null || path.length() < 2) ? "null" : path.substring(1);
@@ -245,21 +245,21 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
             return;
         }
         String encodedQuery = uri.getEncodedQuery();
-        if (((Boolean) com.google.android.gms.ads.internal.config.p.aF.g()).booleanValue() && this.g.contains(path) && encodedQuery != null) {
-            if (encodedQuery.length() >= ((Integer) com.google.android.gms.ads.internal.config.p.aH.g()).intValue()) {
-                ensj.t(ensj.m(new Callable() { // from class: com.google.android.gms.ads.internal.util.k
+        if (((Boolean) com.google.android.gms.ads.internal.config.p.aG.g()).booleanValue() && this.g.contains(path) && encodedQuery != null) {
+            if (encodedQuery.length() >= ((Integer) com.google.android.gms.ads.internal.config.p.aI.g()).intValue()) {
+                eqgc.t(eqgc.m(new Callable() { // from class: com.google.android.gms.ads.internal.util.k
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
-                        byhr byhrVar = m.a;
+                        caqj caqjVar = m.a;
                         com.google.android.gms.ads.internal.c.e();
-                        return m.m(uri);
+                        return m.n(uri);
                     }
                 }, com.google.android.gms.ads.internal.c.e().c), new m(this, list, uri), com.google.android.gms.ads.internal.util.future.e.c);
                 return;
             }
         }
         com.google.android.gms.ads.internal.c.e();
-        e(com.google.android.gms.ads.internal.util.m.m(uri), list);
+        e(com.google.android.gms.ads.internal.util.m.n(uri), list);
     }
 
     public final void e(Map map, List list) {
@@ -293,7 +293,7 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
             i iVar = this.a;
             if (iVar.l()) {
                 com.google.android.gms.ads.internal.video.b bVar = ((r) iVar).b;
-                arwm.h("onDestroy must be called from the UI thread.");
+                atzb.h("onDestroy must be called from the UI thread.");
                 com.google.android.gms.ads.internal.video.a aVar = bVar.a;
                 ((r) iVar).a.k();
                 return;
@@ -306,11 +306,11 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
                 final ArrayList arrayList = nVar.b;
                 arrayList.add(Long.valueOf(currentTimeMillis));
                 String.valueOf(arrayList.get(0));
-                byhr byhrVar = com.google.android.gms.ads.internal.util.m.a;
+                caqj caqjVar = com.google.android.gms.ads.internal.util.m.a;
                 final ah ahVar = nVar.a;
                 final ag agVar = nVar.d;
                 final com.google.android.gms.ads.internal.js.k kVar = nVar.e;
-                byhrVar.postDelayed(new Runnable() { // from class: com.google.android.gms.ads.internal.js.o
+                caqjVar.postDelayed(new Runnable() { // from class: com.google.android.gms.ads.internal.js.o
                     @Override // java.lang.Runnable
                     public final void run() {
                         ag agVar2 = agVar;
@@ -318,14 +318,14 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
                         ArrayList arrayList2 = arrayList;
                         synchronized (ah.this.a) {
                             if (agVar2.e() != -1 && agVar2.e() != 1) {
-                                if (((Boolean) com.google.android.gms.ads.internal.config.p.aY.g()).booleanValue()) {
+                                if (((Boolean) com.google.android.gms.ads.internal.config.p.aZ.g()).booleanValue()) {
                                     agVar2.g(new TimeoutException("Unable to receive /jsLoaded GMSG."), "SdkJavascriptFactory.loadJavascriptEngine.setLoadedListener");
                                 } else {
                                     agVar2.f();
                                 }
-                                ensv ensvVar = com.google.android.gms.ads.internal.util.future.e.c;
+                                eqgo eqgoVar = com.google.android.gms.ads.internal.util.future.e.c;
                                 Objects.requireNonNull(kVar2);
-                                ensvVar.execute(new Runnable() { // from class: com.google.android.gms.ads.internal.js.m
+                                eqgoVar.execute(new Runnable() { // from class: com.google.android.gms.ads.internal.js.m
                                     @Override // java.lang.Runnable
                                     public final void run() {
                                         k.this.d();
@@ -376,14 +376,14 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
         com.google.android.gms.ads.internal.clearcut.b bVar = xVar.g;
         bVar.a(new com.google.android.gms.ads.internal.clearcut.a() { // from class: com.google.android.gms.ads.internal.webview.u
             @Override // com.google.android.gms.ads.internal.clearcut.a
-            public final void a(fecj fecjVar) {
+            public final void a(fgrc fgrcVar) {
                 int i = x.h;
-                fecj v = com.google.android.gms.ads.internal.clearcut.j.a.v();
-                fecp fecpVar = v.b;
-                boolean z = ((com.google.android.gms.ads.internal.clearcut.j) fecpVar).c;
+                fgrc v = com.google.android.gms.ads.internal.clearcut.j.a.v();
+                fgri fgriVar = v.b;
+                boolean z = ((com.google.android.gms.ads.internal.clearcut.j) fgriVar).c;
                 boolean z2 = didCrash;
                 if (z != z2) {
-                    if (!fecpVar.L()) {
+                    if (!fgriVar.L()) {
                         v.U();
                     }
                     com.google.android.gms.ads.internal.clearcut.j jVar = (com.google.android.gms.ads.internal.clearcut.j) v.b;
@@ -398,10 +398,10 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
                 jVar2.b |= 2;
                 jVar2.d = i2;
                 com.google.android.gms.ads.internal.clearcut.j jVar3 = (com.google.android.gms.ads.internal.clearcut.j) v.Q();
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                com.google.android.gms.ads.internal.clearcut.i iVar2 = (com.google.android.gms.ads.internal.clearcut.i) fecjVar.b;
+                com.google.android.gms.ads.internal.clearcut.i iVar2 = (com.google.android.gms.ads.internal.clearcut.i) fgrcVar.b;
                 com.google.android.gms.ads.internal.clearcut.i iVar3 = com.google.android.gms.ads.internal.clearcut.i.a;
                 jVar3.getClass();
                 iVar2.e = jVar3;
@@ -456,8 +456,8 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
             com.google.android.gms.ads.internal.util.client.h.k("AdWebView unable to handle URL: ".concat(String.valueOf(str)));
         } else {
             try {
-                ((Boolean) com.google.android.gms.ads.internal.config.p.bT.g()).booleanValue();
-            } catch (oth unused) {
+                ((Boolean) com.google.android.gms.ads.internal.config.p.bU.g()).booleanValue();
+            } catch (qmk unused) {
                 com.google.android.gms.ads.internal.util.client.h.k("Unable to append parameter to URL: ".concat(String.valueOf(str)));
             }
             AdLauncherIntentInfoParcel adLauncherIntentInfoParcel = new AdLauncherIntentInfoParcel("android.intent.action.VIEW", parse.toString(), null, null, null, null, null, null, new ObjectWrapper(null), false);
@@ -561,12 +561,12 @@ public class n extends WebViewClient implements com.google.android.gms.ads.inter
                 if (!(context instanceof Activity)) {
                     intent3.addFlags(268435456);
                 }
-                if (((Boolean) com.google.android.gms.ads.internal.config.p.bZ.g()).booleanValue()) {
+                if (((Boolean) com.google.android.gms.ads.internal.config.p.ca.g()).booleanValue()) {
                     com.google.android.gms.ads.internal.c.e();
-                    com.google.android.gms.ads.internal.util.m.s(context, intent3);
+                    com.google.android.gms.ads.internal.util.m.t(context, intent3);
                 } else {
                     com.google.android.gms.ads.internal.c.e();
-                    com.google.android.gms.ads.internal.util.m.r(context, intent3);
+                    com.google.android.gms.ads.internal.util.m.s(context, intent3);
                 }
             }
         }

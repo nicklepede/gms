@@ -4,16 +4,16 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.abam;
-import defpackage.arxc;
-import defpackage.arxd;
+import defpackage.adam;
+import defpackage.atzr;
+import defpackage.atzs;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class D2dOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new abam();
+    public static final Parcelable.Creator CREATOR = new adam();
     public final boolean a;
     public final boolean b;
     public final boolean c;
@@ -31,7 +31,7 @@ public class D2dOptions extends AbstractSafeParcelable {
     }
 
     public static D2dOptions a(byte[] bArr) {
-        return (bArr == null || bArr.length == 0) ? new D2dOptions() : (D2dOptions) arxd.a(bArr, CREATOR);
+        return (bArr == null || bArr.length == 0) ? new D2dOptions() : (D2dOptions) atzs.a(bArr, CREATOR);
     }
 
     public static D2dOptions b(Bundle bundle) {
@@ -116,14 +116,14 @@ public class D2dOptions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.a;
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, z);
-        arxc.e(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.g(parcel, 6, this.f, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, z);
+        atzr.e(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.g(parcel, 6, this.f, false);
+        atzr.c(parcel, a);
     }
 
     public D2dOptions() {

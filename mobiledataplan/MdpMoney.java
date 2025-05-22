@@ -3,17 +3,17 @@ package com.google.android.gms.mobiledataplan;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ceaf;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgjm;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MdpMoney extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ceaf();
+    public static final Parcelable.Creator CREATOR = new cgjm();
     public final String a;
     public final long b;
     public final int c;
@@ -32,7 +32,7 @@ public class MdpMoney extends AbstractSafeParcelable {
             return false;
         }
         MdpMoney mdpMoney = (MdpMoney) obj;
-        return arwb.b(this.a, mdpMoney.a) && arwb.b(Long.valueOf(this.b), Long.valueOf(mdpMoney.b)) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(mdpMoney.c));
+        return atyq.b(this.a, mdpMoney.a) && atyq.b(Long.valueOf(this.b), Long.valueOf(mdpMoney.b)) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(mdpMoney.c));
     }
 
     public final int hashCode() {
@@ -41,19 +41,19 @@ public class MdpMoney extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("currencyCode", this.a, arrayList);
-        arwa.b("units", Long.valueOf(this.b), arrayList);
-        arwa.b("nanos", Integer.valueOf(this.c), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("currencyCode", this.a, arrayList);
+        atyp.b("units", Long.valueOf(this.b), arrayList);
+        atyp.b("nanos", Integer.valueOf(this.c), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.q(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.q(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 }

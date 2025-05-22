@@ -6,9 +6,9 @@ import android.os.IInterface;
 import android.os.Parcel;
 import com.google.android.gms.dynamic.ObjectWrapper;
 import com.google.android.gms.dynamite.descriptors.com.google.android.gms.ads.dynamite.ModuleDescriptor;
-import defpackage.oto;
+import defpackage.qmr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class o extends t {
     final /* synthetic */ Context a;
@@ -38,20 +38,20 @@ final class o extends t {
     public final /* bridge */ /* synthetic */ Object c(ay ayVar) {
         an alVar;
         ObjectWrapper objectWrapper = new ObjectWrapper(this.a);
-        Parcel fr = ayVar.fr();
-        oto.g(fr, objectWrapper);
-        oto.e(fr, this.b);
-        fr.writeString(this.c);
-        fr.writeInt(ModuleDescriptor.MODULE_VERSION);
-        Parcel fs = ayVar.fs(10, fr);
-        IBinder readStrongBinder = fs.readStrongBinder();
+        Parcel fE = ayVar.fE();
+        qmr.g(fE, objectWrapper);
+        qmr.e(fE, this.b);
+        fE.writeString(this.c);
+        fE.writeInt(ModuleDescriptor.MODULE_VERSION);
+        Parcel fF = ayVar.fF(10, fE);
+        IBinder readStrongBinder = fF.readStrongBinder();
         if (readStrongBinder == null) {
             alVar = null;
         } else {
             IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.ads.internal.client.IAdManager");
             alVar = queryLocalInterface instanceof an ? (an) queryLocalInterface : new al(readStrongBinder);
         }
-        fs.recycle();
+        fF.recycle();
         return alVar;
     }
 }

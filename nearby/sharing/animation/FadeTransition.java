@@ -10,10 +10,10 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import com.google.android.gms.R;
-import defpackage.clzc;
-import defpackage.cmdn;
+import defpackage.cohk;
+import defpackage.colv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class FadeTransition extends Transition {
     public static final /* synthetic */ int b = 0;
@@ -95,7 +95,7 @@ public class FadeTransition extends Transition {
             return null;
         }
         ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, "alpha", ((Float) transitionValues.values.get("com.google.android.gms.nearby.sharing.animation:FadeTransition:alpha")).floatValue(), ((Float) transitionValues2.values.get("com.google.android.gms.nearby.sharing.animation:FadeTransition:alpha")).floatValue());
-        ofFloat.addListener(new cmdn(this, view));
+        ofFloat.addListener(new colv(this, view));
         return ofFloat;
     }
 
@@ -107,7 +107,7 @@ public class FadeTransition extends Transition {
     public FadeTransition(Context context, AttributeSet attributeSet) {
         this.a = 2;
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, clzc.a, 0, 0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, cohk.a, 0, 0);
             if (obtainStyledAttributes.hasValue(0)) {
                 this.a = new int[]{1, 2}[obtainStyledAttributes.getInt(0, 0)];
             }

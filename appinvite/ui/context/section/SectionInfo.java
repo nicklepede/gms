@@ -2,10 +2,10 @@ package com.google.android.gms.appinvite.ui.context.section;
 
 import android.os.Parcel;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import defpackage.tyj;
-import defpackage.tyv;
+import defpackage.vui;
+import defpackage.vuu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public abstract class SectionInfo implements ReflectedParcelable {
     public boolean p;
@@ -13,10 +13,10 @@ public abstract class SectionInfo implements ReflectedParcelable {
     public SectionInfo() {
     }
 
-    public abstract tyv a(tyj tyjVar, int i);
+    public abstract vuu a(vui vuiVar, int i);
 
-    public tyv d(tyj tyjVar, int i) {
-        return a(tyjVar, i);
+    public vuu d(vui vuiVar, int i) {
+        return a(vuiVar, i);
     }
 
     @Override // android.os.Parcelable

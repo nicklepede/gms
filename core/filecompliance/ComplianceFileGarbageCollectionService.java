@@ -2,17 +2,17 @@ package com.google.android.gms.core.filecompliance;
 
 import com.google.android.gms.chimera.modules.core.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.byln;
-import defpackage.fmut;
+import defpackage.cauf;
+import defpackage.fpmr;
 import j$.time.Instant;
 import java.io.File;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class ComplianceFileGarbageCollectionService extends GmsTaskBoundService {
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (fmut.l()) {
+    public final int a(cauf caufVar) {
+        if (fpmr.l()) {
             File[] listFiles = AppContextProvider.a().getCacheDir().listFiles();
             if (listFiles == null) {
                 listFiles = new File[0];

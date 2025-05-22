@@ -7,11 +7,11 @@ import java.security.spec.KeySpec;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactorySpi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ScryptSecretKeyFactory extends SecretKeyFactorySpi {
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class NotImplementedException extends RuntimeException {
         private static final long serialVersionUID = -7755435858585859108L;
 
@@ -20,7 +20,7 @@ public class ScryptSecretKeyFactory extends SecretKeyFactorySpi {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class ScryptKey implements SecretKey {
         private static final long serialVersionUID = 2024924811854189128L;
         private final byte[] key;

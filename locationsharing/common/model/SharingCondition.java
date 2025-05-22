@@ -6,26 +6,26 @@ import android.os.SystemClock;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.maps.model.LatLng;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.carp;
-import defpackage.carq;
-import defpackage.carw;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cdaf;
+import defpackage.cdag;
+import defpackage.cdam;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class SharingCondition extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new carw();
+    public static final Parcelable.Creator CREATOR = new cdam();
     public final int a;
     public final long b;
     public final Destination c;
     public final long d;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Destination extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new carp();
+        public static final Parcelable.Creator CREATOR = new cdaf();
         public final String a;
         public final FeatureId b;
         public final LatLng c;
@@ -44,8 +44,8 @@ public class SharingCondition extends AbstractSafeParcelable implements Reflecte
             }
             if (obj != null && getClass() == obj.getClass()) {
                 Destination destination = (Destination) obj;
-                if (arwb.b(this.a, destination.a) && arwb.b(this.b, destination.b) && arwb.b(this.c, destination.c)) {
-                    if (arwb.b(Long.valueOf(this.d), Long.valueOf(destination.d))) {
+                if (atyq.b(this.a, destination.a) && atyq.b(this.b, destination.b) && atyq.b(this.c, destination.c)) {
+                    if (atyq.b(Long.valueOf(this.d), Long.valueOf(destination.d))) {
                         return true;
                     }
                 }
@@ -60,18 +60,18 @@ public class SharingCondition extends AbstractSafeParcelable implements Reflecte
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             String str = this.a;
-            int a = arxc.a(parcel);
-            arxc.v(parcel, 2, str, false);
-            arxc.t(parcel, 3, this.b, i, false);
-            arxc.t(parcel, 4, this.c, i, false);
-            arxc.q(parcel, 5, this.d);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.v(parcel, 2, str, false);
+            atzr.t(parcel, 3, this.b, i, false);
+            atzr.t(parcel, 4, this.c, i, false);
+            atzr.q(parcel, 5, this.d);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class FeatureId extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new carq();
+        public static final Parcelable.Creator CREATOR = new cdag();
         public final long a;
         public final long b;
 
@@ -100,10 +100,10 @@ public class SharingCondition extends AbstractSafeParcelable implements Reflecte
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             long j = this.a;
-            int a = arxc.a(parcel);
-            arxc.q(parcel, 2, j);
-            arxc.q(parcel, 3, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.q(parcel, 2, j);
+            atzr.q(parcel, 3, this.b);
+            atzr.c(parcel, a);
         }
     }
 
@@ -133,7 +133,7 @@ public class SharingCondition extends AbstractSafeParcelable implements Reflecte
             return false;
         }
         SharingCondition sharingCondition = (SharingCondition) obj;
-        return this.a == sharingCondition.a && this.b == sharingCondition.b && arwb.b(this.c, sharingCondition.c);
+        return this.a == sharingCondition.a && this.b == sharingCondition.b && atyq.b(this.c, sharingCondition.c);
     }
 
     public final int hashCode() {
@@ -143,11 +143,11 @@ public class SharingCondition extends AbstractSafeParcelable implements Reflecte
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.q(parcel, 2, this.b);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.q(parcel, 4, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.q(parcel, 2, this.b);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.q(parcel, 4, this.d);
+        atzr.c(parcel, a);
     }
 }

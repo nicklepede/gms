@@ -5,36 +5,36 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorManager;
 import com.google.android.gms.libs.punchclock.tracing.TracingSensorEventListener;
 import com.google.android.gms.location.weather.collector.PressureProvider;
-import defpackage.asmf;
-import defpackage.capy;
-import defpackage.ensv;
-import defpackage.fcna;
-import defpackage.fcnb;
-import defpackage.fpni;
-import defpackage.fptf;
+import defpackage.aupz;
+import defpackage.ccyo;
+import defpackage.eqgo;
+import defpackage.ffbr;
+import defpackage.ffbs;
+import defpackage.fsha;
+import defpackage.fsmx;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public final class PressureProvider extends TracingSensorEventListener implements fcna {
+public final class PressureProvider extends TracingSensorEventListener implements ffbr {
     public final SensorManager a;
     public final Sensor b;
-    public final capy c;
+    public final ccyo c;
     public boolean d;
-    private final fcnb e;
-    private final ensv g;
+    private final ffbs e;
+    private final eqgo g;
 
-    public PressureProvider(SensorManager sensorManager, fcnb fcnbVar, capy capyVar) {
+    public PressureProvider(SensorManager sensorManager, ffbs ffbsVar, ccyo ccyoVar) {
         super("PressureProvider", "location");
         this.d = false;
         this.a = sensorManager;
-        this.c = capyVar;
-        this.e = fcnbVar;
+        this.c = ccyoVar;
+        this.e = ffbsVar;
         this.b = sensorManager.getDefaultSensor(6);
-        asmf asmfVar = new asmf(1, 9);
-        this.g = asmfVar;
-        if (fpni.c() && fptf.k()) {
-            fcnbVar.c(this, asmfVar);
+        aupz aupzVar = new aupz(1, 9);
+        this.g = aupzVar;
+        if (fsha.c() && fsmx.k()) {
+            ffbsVar.c(this, aupzVar);
         }
     }
 
@@ -48,7 +48,7 @@ public final class PressureProvider extends TracingSensorEventListener implement
         if (Float.isNaN(f)) {
             return;
         }
-        this.g.execute(new Runnable() { // from class: capx
+        this.g.execute(new Runnable() { // from class: ccyn
             @Override // java.lang.Runnable
             public final void run() {
                 PressureProvider.this.c.c(millis, f);
@@ -62,7 +62,7 @@ public final class PressureProvider extends TracingSensorEventListener implement
             if (this.b != null) {
                 this.a.unregisterListener(this);
             }
-            if (fpni.c()) {
+            if (fsha.c()) {
                 this.e.b(this);
             }
         }

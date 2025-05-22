@@ -4,13 +4,13 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import com.google.android.libraries.onegoogle.account.disc.AccountParticleDisc;
-import defpackage.asmf;
-import defpackage.dtmk;
-import defpackage.dtyl;
-import defpackage.dtyz;
-import defpackage.dujr;
+import defpackage.aupz;
+import defpackage.dvww;
+import defpackage.dwix;
+import defpackage.dwjl;
+import defpackage.dwud;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class GoogleAccountAvatar extends FrameLayout {
     public final AccountParticleDisc a;
@@ -23,13 +23,13 @@ public class GoogleAccountAvatar extends FrameLayout {
     }
 
     private static void a(Context context, AccountParticleDisc accountParticleDisc) {
-        dtyl dtylVar = new dtyl();
-        asmf asmfVar = new asmf(1, 9);
+        dwix dwixVar = new dwix();
+        aupz aupzVar = new aupz(1, 9);
         Context applicationContext = context.getApplicationContext();
         Context applicationContext2 = context.getApplicationContext();
-        dujr dujrVar = new dujr();
-        dujrVar.a = asmfVar;
-        accountParticleDisc.i(new dtmk(applicationContext, asmfVar, dtylVar, new dtyz(applicationContext2, dujrVar.a())), dtylVar);
+        dwud dwudVar = new dwud();
+        dwudVar.a = aupzVar;
+        accountParticleDisc.i(new dvww(applicationContext, aupzVar, dwixVar, new dwjl(applicationContext2, dwudVar.a())), dwixVar);
     }
 
     @Override // android.view.View

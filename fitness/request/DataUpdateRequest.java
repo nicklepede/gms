@@ -6,36 +6,36 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fitness.data.DataSet;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgiu;
-import defpackage.bgiw;
-import defpackage.bgku;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bink;
+import defpackage.binm;
+import defpackage.bipk;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DataUpdateRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgku();
+    public static final Parcelable.Creator CREATOR = new bipk();
     public final long a;
     public final long b;
     public final DataSet c;
-    public final bgiw d;
+    public final binm d;
 
     public DataUpdateRequest(long j, long j2, DataSet dataSet, IBinder iBinder) {
-        bgiw bgiuVar;
+        binm binkVar;
         this.a = j;
         this.b = j2;
         this.c = dataSet;
         if (iBinder == null) {
-            bgiuVar = null;
+            binkVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.IStatusCallback");
-            bgiuVar = queryLocalInterface instanceof bgiw ? (bgiw) queryLocalInterface : new bgiu(iBinder);
+            binkVar = queryLocalInterface instanceof binm ? (binm) queryLocalInterface : new bink(iBinder);
         }
-        this.d = bgiuVar;
+        this.d = binkVar;
     }
 
     public final boolean equals(Object obj) {
@@ -46,7 +46,7 @@ public class DataUpdateRequest extends AbstractSafeParcelable {
             return false;
         }
         DataUpdateRequest dataUpdateRequest = (DataUpdateRequest) obj;
-        return this.a == dataUpdateRequest.a && this.b == dataUpdateRequest.b && arwb.b(this.c, dataUpdateRequest.c);
+        return this.a == dataUpdateRequest.a && this.b == dataUpdateRequest.b && atyq.b(this.c, dataUpdateRequest.c);
     }
 
     public final int hashCode() {
@@ -55,21 +55,21 @@ public class DataUpdateRequest extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("startTimeMillis", Long.valueOf(this.a), arrayList);
-        arwa.b("endTimeMillis", Long.valueOf(this.b), arrayList);
-        arwa.b("dataSet", this.c, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("startTimeMillis", Long.valueOf(this.a), arrayList);
+        atyp.b("endTimeMillis", Long.valueOf(this.b), arrayList);
+        atyp.b("dataSet", this.c, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.a;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, j);
-        arxc.q(parcel, 2, this.b);
-        arxc.t(parcel, 3, this.c, i, false);
-        bgiw bgiwVar = this.d;
-        arxc.D(parcel, 4, bgiwVar == null ? null : bgiwVar.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, j);
+        atzr.q(parcel, 2, this.b);
+        atzr.t(parcel, 3, this.c, i, false);
+        binm binmVar = this.d;
+        atzr.D(parcel, 4, binmVar == null ? null : binmVar.asBinder());
+        atzr.c(parcel, a);
     }
 }

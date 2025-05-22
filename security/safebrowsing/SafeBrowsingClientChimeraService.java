@@ -1,32 +1,32 @@
 package com.google.android.gms.security.safebrowsing;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.cxwx;
-import defpackage.cxyd;
-import defpackage.eits;
-import defpackage.ejck;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.dagu;
+import defpackage.daia;
+import defpackage.elgx;
+import defpackage.elpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class SafeBrowsingClientChimeraService extends bxgd {
+public class SafeBrowsingClientChimeraService extends bzot {
     public static final String a = "SafeBrowsingClientChimeraService";
-    private cxyd b;
+    private daia b;
 
     public SafeBrowsingClientChimeraService() {
-        super(new int[]{354}, new String[]{"com.google.android.gms.safebrowsing.SafeBrowsingService.START"}, ejck.a, 3, 9, 5, (eits) null);
+        super(new int[]{354}, new String[]{"com.google.android.gms.safebrowsing.SafeBrowsingService.START"}, elpp.a, 3, 9, 5, (elgx) null);
     }
 
-    private final synchronized cxyd c() {
+    private final synchronized daia c() {
         if (this.b == null) {
-            this.b = new cxyd(getApplicationContext());
+            this.b = new daia(getApplicationContext());
         }
         return this.b;
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new cxwx(l(), c(), getServiceRequest.f));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new dagu(l(), c(), getServiceRequest.f));
     }
 }

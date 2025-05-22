@@ -10,33 +10,33 @@ import android.os.Bundle;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.quickstart.oem.OemAppInstallChimeraActivity;
-import defpackage.arwm;
-import defpackage.arxo;
+import defpackage.atzb;
+import defpackage.auad;
 import defpackage.bp;
-import defpackage.cwxz;
-import defpackage.cwya;
-import defpackage.cwyc;
-import defpackage.cwym;
-import defpackage.cwyn;
+import defpackage.czhx;
+import defpackage.czhy;
+import defpackage.czia;
+import defpackage.czik;
+import defpackage.czil;
 import defpackage.dg;
-import defpackage.enss;
-import defpackage.frqi;
-import defpackage.igm;
-import defpackage.igp;
+import defpackage.eqgl;
+import defpackage.fukq;
+import defpackage.iic;
+import defpackage.iif;
 import defpackage.ip;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
 import j$.util.Objects;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class OemAppInstallChimeraActivity extends qet {
-    public static final arxo j = new arxo("QuickStart", "OemAppInstallActivity");
-    public cwyn l;
-    public enss n;
+public class OemAppInstallChimeraActivity extends rxx {
+    public static final auad j = new auad("QuickStart", "OemAppInstallActivity");
+    public czil l;
+    public eqgl n;
     public BroadcastReceiver o;
     private int p;
     public String k = "";
@@ -71,39 +71,39 @@ public class OemAppInstallChimeraActivity extends qet {
     }
 
     public final void l(int i) {
-        dg cwycVar;
+        dg cziaVar;
         this.p = i;
         if (i == 0) {
             k();
-            cwycVar = new cwya();
+            cziaVar = new czhy();
         } else {
             finishActivity(460);
-            cwycVar = new cwyc();
+            cziaVar = new czia();
         }
         bp bpVar = new bp(getSupportFragmentManager());
         bpVar.A(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out, R.anim.sud_slide_back_in, R.anim.sud_slide_back_out);
-        bpVar.F(R.id.fragment_container, cwycVar);
+        bpVar.F(R.id.fragment_container, cziaVar);
         bpVar.a();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onActivityResult(int i, int i2, Intent intent) {
-        arxo arxoVar = j;
+        auad auadVar = j;
         Integer valueOf = Integer.valueOf(i);
-        arxoVar.h("onActivityResult(): request=%d, result=%d", valueOf, Integer.valueOf(i2));
+        auadVar.h("onActivityResult(): request=%d, result=%d", valueOf, Integer.valueOf(i2));
         if (i != 460) {
-            arxoVar.m("Unknown activity request code: %d", valueOf);
+            auadVar.m("Unknown activity request code: %d", valueOf);
             super.onActivityResult(i, i2, intent);
         } else if (this.p == 0) {
             ip ipVar = new ip(this);
-            ipVar.j(R.string.quickstart_qr_code_scanner_exit_title);
-            ipVar.setPositiveButton(R.string.common_ok, new DialogInterface.OnClickListener() { // from class: cwyg
+            ipVar.l(R.string.quickstart_qr_code_scanner_exit_title);
+            ipVar.setPositiveButton(R.string.common_ok, new DialogInterface.OnClickListener() { // from class: czie
                 @Override // android.content.DialogInterface.OnClickListener
                 public final void onClick(DialogInterface dialogInterface, int i3) {
                     OemAppInstallChimeraActivity.this.a(5010);
                 }
             });
-            ipVar.setNegativeButton(R.string.common_cancel, new DialogInterface.OnClickListener() { // from class: cwyh
+            ipVar.setNegativeButton(R.string.common_cancel, new DialogInterface.OnClickListener() { // from class: czif
                 @Override // android.content.DialogInterface.OnClickListener
                 public final void onClick(DialogInterface dialogInterface, int i3) {
                     OemAppInstallChimeraActivity.this.k();
@@ -114,21 +114,21 @@ public class OemAppInstallChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        cwxz.a(this);
+        czhx.a(this);
         setContentView(R.layout.quickstart_fragment_container);
         String stringExtra = getIntent().getStringExtra("package-name");
         if (stringExtra != null) {
             this.k = stringExtra;
         }
-        cwyn cwynVar = (cwyn) new jrh(this, new cwym(getApplication(), this.k)).a(cwyn.class);
-        this.l = cwynVar;
-        cwynVar.b().g(this, new jpd() { // from class: cwyd
-            @Override // defpackage.jpd
+        czil czilVar = (czil) new jxw(this, new czik(getApplication(), this.k)).a(czil.class);
+        this.l = czilVar;
+        czilVar.b().g(this, new jvs() { // from class: czib
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                int i = ((cwyj) obj).a;
+                int i = ((czih) obj).a;
                 final OemAppInstallChimeraActivity oemAppInstallChimeraActivity = OemAppInstallChimeraActivity.this;
                 if (i == 1) {
                     OemAppInstallChimeraActivity.j.h("There are %d sessions in the install queue", Integer.valueOf(oemAppInstallChimeraActivity.l.c().size()));
@@ -138,9 +138,9 @@ public class OemAppInstallChimeraActivity extends qet {
                 if (i != 2) {
                     if (i != 3) {
                         ip ipVar = new ip(oemAppInstallChimeraActivity);
-                        ipVar.j(R.string.common_something_went_wrong);
-                        ipVar.m(R.string.quickstart_oem_restore_app_install_failed);
-                        ipVar.setPositiveButton(R.string.common_ok, new DialogInterface.OnClickListener() { // from class: cwyf
+                        ipVar.l(R.string.common_something_went_wrong);
+                        ipVar.o(R.string.quickstart_oem_restore_app_install_failed);
+                        ipVar.setPositiveButton(R.string.common_ok, new DialogInterface.OnClickListener() { // from class: czid
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i2) {
                                 OemAppInstallChimeraActivity.this.a(5011);
@@ -157,18 +157,18 @@ public class OemAppInstallChimeraActivity extends qet {
                         oemAppInstallChimeraActivity.a(-1);
                     } else {
                         OemAppInstallChimeraActivity.j.h("Waiting for PACKAGE_ADDED broadcast before finishing...", new Object[0]);
-                        ensj.t(ensj.q(oemAppInstallChimeraActivity.n, oemAppInstallChimeraActivity.m, TimeUnit.MILLISECONDS, Executors.newSingleThreadScheduledExecutor()), new cwyi(oemAppInstallChimeraActivity), enre.a);
+                        eqgc.t(eqgc.q(oemAppInstallChimeraActivity.n, oemAppInstallChimeraActivity.m, TimeUnit.MILLISECONDS, Executors.newSingleThreadScheduledExecutor()), new czig(oemAppInstallChimeraActivity), eqex.a);
                     }
                 }
             }
         });
         l(0);
-        long a = frqi.a.a().a();
+        long a = fukq.a.lK().a();
         this.m = a;
         if (a > 0) {
-            this.n = igp.a(new igm() { // from class: cwye
-                @Override // defpackage.igm
-                public final Object a(final igk igkVar) {
+            this.n = iif.a(new iic() { // from class: czic
+                @Override // defpackage.iic
+                public final Object a(final iia iiaVar) {
                     final OemAppInstallChimeraActivity oemAppInstallChimeraActivity = OemAppInstallChimeraActivity.this;
                     oemAppInstallChimeraActivity.o = new TracingBroadcastReceiver() { // from class: com.google.android.gms.quickstart.oem.OemAppInstallChimeraActivity.1
                         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -177,12 +177,12 @@ public class OemAppInstallChimeraActivity extends qet {
                         }
 
                         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-                        public final void jz(Context context, Intent intent) {
+                        public final void jP(Context context, Intent intent) {
                             String str;
                             if (Objects.equals(intent.getAction(), "android.intent.action.PACKAGE_ADDED")) {
                                 if (intent.getData() != null) {
                                     Uri data = intent.getData();
-                                    arwm.s(data);
+                                    atzb.s(data);
                                     str = data.getSchemeSpecificPart();
                                 } else {
                                     str = null;
@@ -190,7 +190,7 @@ public class OemAppInstallChimeraActivity extends qet {
                                 OemAppInstallChimeraActivity.j.h("Received PACKAGE_ADDED broadcast for %s", String.valueOf(str));
                                 OemAppInstallChimeraActivity oemAppInstallChimeraActivity2 = oemAppInstallChimeraActivity;
                                 if (oemAppInstallChimeraActivity2.k.equals(str)) {
-                                    igkVar.b(null);
+                                    iiaVar.b(null);
                                     OemAppInstallChimeraActivity.m(oemAppInstallChimeraActivity2, oemAppInstallChimeraActivity2.o);
                                 }
                             }
@@ -198,7 +198,7 @@ public class OemAppInstallChimeraActivity extends qet {
                     };
                     IntentFilter intentFilter = new IntentFilter("android.intent.action.PACKAGE_ADDED");
                     intentFilter.addDataScheme("package");
-                    iln.b(oemAppInstallChimeraActivity, oemAppInstallChimeraActivity.o, intentFilter, 2);
+                    ind.b(oemAppInstallChimeraActivity, oemAppInstallChimeraActivity.o, intentFilter, 2);
                     OemAppInstallChimeraActivity.j.h("Registered BroadcastReceiver for PACKAGE_ADDED broadcasts for %s", oemAppInstallChimeraActivity.k);
                     return "quickstart package receiver";
                 }
@@ -206,7 +206,7 @@ public class OemAppInstallChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
         BroadcastReceiver broadcastReceiver = this.o;

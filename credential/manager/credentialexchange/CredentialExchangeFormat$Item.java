@@ -1,19 +1,19 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.audj;
-import defpackage.fipp;
-import defpackage.fvbo;
+import defpackage.awho;
+import defpackage.flfm;
+import defpackage.fxxm;
 import java.util.List;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
 public final class CredentialExchangeFormat$Item {
     public final String a;
     public final Long b;
     public final Long c;
-    public final audj d;
+    public final awho d;
     public final String e;
     public final String f;
     public final boolean g;
@@ -21,15 +21,15 @@ public final class CredentialExchangeFormat$Item {
     public final Set i;
     public final List j;
 
-    public CredentialExchangeFormat$Item(String str, Long l, Long l2, audj audjVar, String str2, String str3, boolean z, List list, Set set, List list2) {
-        fvbo.f(str, "id");
-        fvbo.f(audjVar, "type");
-        fvbo.f(str2, "title");
-        fvbo.f(list, "credentials");
+    public CredentialExchangeFormat$Item(String str, Long l, Long l2, awho awhoVar, String str2, String str3, boolean z, List list, Set set, List list2) {
+        fxxm.f(str, "id");
+        fxxm.f(awhoVar, "type");
+        fxxm.f(str2, "title");
+        fxxm.f(list, "credentials");
         this.a = str;
         this.b = l;
         this.c = l2;
-        this.d = audjVar;
+        this.d = awhoVar;
         this.e = str2;
         this.f = str3;
         this.g = z;
@@ -46,7 +46,7 @@ public final class CredentialExchangeFormat$Item {
             return false;
         }
         CredentialExchangeFormat$Item credentialExchangeFormat$Item = (CredentialExchangeFormat$Item) obj;
-        return fvbo.n(this.a, credentialExchangeFormat$Item.a) && fvbo.n(this.b, credentialExchangeFormat$Item.b) && fvbo.n(this.c, credentialExchangeFormat$Item.c) && this.d == credentialExchangeFormat$Item.d && fvbo.n(this.e, credentialExchangeFormat$Item.e) && fvbo.n(this.f, credentialExchangeFormat$Item.f) && this.g == credentialExchangeFormat$Item.g && fvbo.n(this.h, credentialExchangeFormat$Item.h) && fvbo.n(this.i, credentialExchangeFormat$Item.i) && fvbo.n(this.j, credentialExchangeFormat$Item.j);
+        return fxxm.n(this.a, credentialExchangeFormat$Item.a) && fxxm.n(this.b, credentialExchangeFormat$Item.b) && fxxm.n(this.c, credentialExchangeFormat$Item.c) && this.d == credentialExchangeFormat$Item.d && fxxm.n(this.e, credentialExchangeFormat$Item.e) && fxxm.n(this.f, credentialExchangeFormat$Item.f) && this.g == credentialExchangeFormat$Item.g && fxxm.n(this.h, credentialExchangeFormat$Item.h) && fxxm.n(this.i, credentialExchangeFormat$Item.i) && fxxm.n(this.j, credentialExchangeFormat$Item.j);
     }
 
     public final int hashCode() {
@@ -72,13 +72,13 @@ public final class CredentialExchangeFormat$Item {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public /* synthetic */ CredentialExchangeFormat$Item(java.lang.String r14, java.lang.Long r15, java.lang.Long r16, defpackage.audj r17, java.lang.String r18, java.lang.String r19, boolean r20, java.util.List r21, java.util.Set r22, java.util.List r23, int r24, kotlin.jvm.internal.DefaultConstructorMarker r25) {
+    public /* synthetic */ CredentialExchangeFormat$Item(java.lang.String r14, java.lang.Long r15, java.lang.Long r16, defpackage.awho r17, java.lang.String r18, java.lang.String r19, boolean r20, java.util.List r21, java.util.Set r22, java.util.List r23, int r24, kotlin.jvm.internal.DefaultConstructorMarker r25) {
         /*
             r13 = this;
             r0 = r24
             r1 = r0 & 256(0x100, float:3.59E-43)
             if (r1 == 0) goto La
-            fuwy r1 = defpackage.fuwy.a
+            fxsw r1 = defpackage.fxsw.a
             r11 = r1
             goto Lc
         La:
@@ -86,7 +86,7 @@ public final class CredentialExchangeFormat$Item {
         Lc:
             r1 = r0 & 512(0x200, float:7.17E-43)
             if (r1 == 0) goto L14
-            fuww r1 = defpackage.fuww.a
+            fxsu r1 = defpackage.fxsu.a
             r12 = r1
             goto L16
         L14:
@@ -118,6 +118,6 @@ public final class CredentialExchangeFormat$Item {
             r2.<init>(r3, r4, r5, r6, r7, r8, r9, r10, r11, r12)
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.credential.manager.credentialexchange.CredentialExchangeFormat$Item.<init>(java.lang.String, java.lang.Long, java.lang.Long, audj, java.lang.String, java.lang.String, boolean, java.util.List, java.util.Set, java.util.List, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.credential.manager.credentialexchange.CredentialExchangeFormat$Item.<init>(java.lang.String, java.lang.Long, java.lang.Long, awho, java.lang.String, java.lang.String, boolean, java.util.List, java.util.Set, java.util.List, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
     }
 }

@@ -5,20 +5,20 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cifs;
-import defpackage.cifu;
-import defpackage.cigj;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cknx;
+import defpackage.cknz;
+import defpackage.ckoo;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class RenameDeviceParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cigj();
+    public static final Parcelable.Creator CREATOR = new ckoo();
     public byte[] a;
     public String b;
-    public cifu c;
+    public cknz c;
 
     private RenameDeviceParams() {
     }
@@ -33,7 +33,7 @@ public final class RenameDeviceParams extends AbstractSafeParcelable {
         }
         if (obj instanceof RenameDeviceParams) {
             RenameDeviceParams renameDeviceParams = (RenameDeviceParams) obj;
-            if (Arrays.equals(this.a, renameDeviceParams.a) && arwb.b(this.b, renameDeviceParams.b) && arwb.b(this.c, renameDeviceParams.c)) {
+            if (Arrays.equals(this.a, renameDeviceParams.a) && atyq.b(this.b, renameDeviceParams.b) && atyq.b(this.c, renameDeviceParams.c)) {
                 return true;
             }
         }
@@ -46,23 +46,23 @@ public final class RenameDeviceParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.D(parcel, 3, a());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.D(parcel, 3, a());
+        atzr.c(parcel, a);
     }
 
     public RenameDeviceParams(byte[] bArr, String str, IBinder iBinder) {
-        cifu cifsVar;
+        cknz cknxVar;
         if (iBinder == null) {
-            cifsVar = null;
+            cknxVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.fastpair.internal.IFastPairStatusCallback");
-            cifsVar = queryLocalInterface instanceof cifu ? (cifu) queryLocalInterface : new cifs(iBinder);
+            cknxVar = queryLocalInterface instanceof cknz ? (cknz) queryLocalInterface : new cknx(iBinder);
         }
         this.a = bArr;
         this.b = str;
-        this.c = cifsVar;
+        this.c = cknxVar;
     }
 }

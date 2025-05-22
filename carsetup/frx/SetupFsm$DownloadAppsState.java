@@ -1,36 +1,36 @@
 package com.google.android.gms.carsetup.frx;
 
-import defpackage.aluf;
-import defpackage.alus;
-import defpackage.aluv;
-import defpackage.alvg;
-import defpackage.alvh;
-import defpackage.alvi;
-import defpackage.ejhh;
+import defpackage.anvq;
+import defpackage.anwd;
+import defpackage.anwg;
+import defpackage.anwr;
+import defpackage.anws;
+import defpackage.anwt;
+import defpackage.eluq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@alvi(a = {@alvh(c = SetupFsm$CarMovingState.class, d = "EVENT_CAR_STARTED_MOVING"), @alvh(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$ErrorState.class, d = "EVENT_ERROR"), @alvh(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$SetupFailedState.class, d = "EVENT_CAR_DISCONNECTED"), @alvh(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$StartCarService.class, d = "EVENT_OK_STATE_SKIPPED"), @alvh(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$InstallingAppsState.class, d = "EVENT_APPLICATION_INSTALLATION_ALLOWED"), @alvh(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$DownloadRetryState.class, d = "EVENT_APPLICATION_INSTALLATION_CANCELLED")})
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@anwt(a = {@anws(c = SetupFsm$CarMovingState.class, d = "EVENT_CAR_STARTED_MOVING"), @anws(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$ErrorState.class, d = "EVENT_ERROR"), @anws(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$SetupFailedState.class, d = "EVENT_CAR_DISCONNECTED"), @anws(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$StartCarService.class, d = "EVENT_OK_STATE_SKIPPED"), @anws(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$InstallingAppsState.class, d = "EVENT_APPLICATION_INSTALLATION_ALLOWED"), @anws(a = SetupFsm$DownloadAppsState.class, c = SetupFsm$DownloadRetryState.class, d = "EVENT_APPLICATION_INSTALLATION_CANCELLED")})
 /* loaded from: classes3.dex */
-public class SetupFsm$DownloadAppsState extends alvg {
-    @Override // defpackage.alvg
+public class SetupFsm$DownloadAppsState extends anwr {
+    @Override // defpackage.anwr
     public final int a() {
         return 5;
     }
 
-    @Override // defpackage.alvg
+    @Override // defpackage.anwr
     public final boolean b(String str, Object obj) {
         return ("EVENT_CAR_STARTED_MOVING".equals(str) || "EVENT_ERROR".equals(str) || "EVENT_CAR_DISCONNECTED".equals(str) || "EVENT_OK_STATE_SKIPPED".equals(str) || "EVENT_APPLICATION_INSTALLATION_ALLOWED".equals(str) || "EVENT_APPLICATION_INSTALLATION_CANCELLED".equals(str)) ? false : true;
     }
 
-    @Override // defpackage.alvg
+    @Override // defpackage.anwr
     public final void c(String str) {
-        aluv aluvVar = (aluv) this.c.k;
-        if (aluvVar.O()) {
+        anwg anwgVar = (anwg) this.c.k;
+        if (anwgVar.O()) {
             this.c.d("EVENT_OK_STATE_SKIPPED");
             return;
         }
-        this.c.k(aluf.class, null, true);
-        ejhh ejhhVar = alus.a;
-        aluvVar.F();
+        this.c.k(anvq.class, null, true);
+        eluq eluqVar = anwd.a;
+        anwgVar.F();
     }
 }

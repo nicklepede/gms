@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxep;
+import defpackage.atyq;
+import defpackage.czol;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RecurrenceEntity extends AbstractSafeParcelable implements Recurrence {
-    public static final Parcelable.Creator CREATOR = new cxep();
+    public static final Parcelable.Creator CREATOR = new czol();
     public final Integer a;
     public final Integer b;
     public final RecurrenceStartEntity c;
@@ -36,7 +36,7 @@ public class RecurrenceEntity extends AbstractSafeParcelable implements Recurren
     }
 
     public static boolean j(Recurrence recurrence, Recurrence recurrence2) {
-        return arwb.b(recurrence.i(), recurrence2.i()) && arwb.b(recurrence.h(), recurrence2.h()) && arwb.b(recurrence.e(), recurrence2.e()) && arwb.b(recurrence.d(), recurrence2.d()) && arwb.b(recurrence.a(), recurrence2.a()) && arwb.b(recurrence.f(), recurrence2.f()) && arwb.b(recurrence.c(), recurrence2.c()) && arwb.b(recurrence.g(), recurrence2.g());
+        return atyq.b(recurrence.i(), recurrence2.i()) && atyq.b(recurrence.h(), recurrence2.h()) && atyq.b(recurrence.e(), recurrence2.e()) && atyq.b(recurrence.d(), recurrence2.d()) && atyq.b(recurrence.a(), recurrence2.a()) && atyq.b(recurrence.f(), recurrence2.f()) && atyq.b(recurrence.c(), recurrence2.c()) && atyq.b(recurrence.g(), recurrence2.g());
     }
 
     @Override // com.google.android.gms.reminders.model.Recurrence
@@ -95,7 +95,7 @@ public class RecurrenceEntity extends AbstractSafeParcelable implements Recurren
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxep.a(this, parcel, i);
+        czol.a(this, parcel, i);
     }
 
     public RecurrenceEntity(Recurrence recurrence) {
@@ -122,7 +122,7 @@ public class RecurrenceEntity extends AbstractSafeParcelable implements Recurren
         this.h = yearlyPattern != null ? new YearlyPatternEntity(yearlyPattern) : null;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

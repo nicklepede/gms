@@ -5,29 +5,29 @@ import android.content.Intent;
 import android.os.BadParcelableException;
 import android.os.Bundle;
 import android.os.Message;
-import defpackage.armd;
-import defpackage.aslv;
-import defpackage.aslw;
-import defpackage.asot;
-import defpackage.bfzx;
-import defpackage.bggi;
-import defpackage.bgrt;
-import defpackage.bgrz;
-import defpackage.bgsb;
-import defpackage.bguo;
-import defpackage.bgvb;
-import defpackage.bhaf;
-import defpackage.bxhl;
-import defpackage.ejhf;
+import defpackage.atos;
+import defpackage.aupp;
+import defpackage.aupq;
+import defpackage.ausn;
+import defpackage.bien;
+import defpackage.biky;
+import defpackage.biwj;
+import defpackage.biwp;
+import defpackage.biwr;
+import defpackage.bize;
+import defpackage.bizr;
+import defpackage.bjev;
+import defpackage.bzqb;
+import defpackage.eluo;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.concurrent.ExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FitSessionsChimeraBroker extends bgsb {
-    private static final asot i = bhaf.a();
-    private bfzx j;
+public class FitSessionsChimeraBroker extends biwr {
+    private static final ausn i = bjev.a();
+    private bien j;
 
     public FitSessionsChimeraBroker() {
         super("com.google.android.gms.fitness.service.sessions.FitSessionsBroker");
@@ -43,45 +43,45 @@ public class FitSessionsChimeraBroker extends bgsb {
             intent.replaceExtras(bundle);
             r(intent);
             this.j.c();
-            ((ejhf) ((ejhf) ((ejhf) i.i()).s(e)).ah((char) 4826)).x("Found bad intent, had to clear it.");
+            ((eluo) ((eluo) ((eluo) i.i()).s(e)).ai((char) 4836)).x("Found bad intent, had to clear it.");
         }
     }
 
     private final void r(Intent intent) {
-        if (armd.m(intent) && armd.a(intent) == 1) {
+        if (atos.m(intent) && atos.a(intent) == 1) {
             this.j.d(intent);
             i();
         }
     }
 
-    @Override // defpackage.bgrv
-    public final /* bridge */ /* synthetic */ bgrt b(String str) {
-        return new bguo(this, str, new bgvb(this.j, str), this.f);
+    @Override // defpackage.biwl
+    public final /* bridge */ /* synthetic */ biwj b(String str) {
+        return new bize(this, str, new bizr(this.j, str), this.f);
     }
 
-    @Override // defpackage.bgrv
-    protected final bxhl c(Context context, bgrz bgrzVar) {
-        return new bxhl(context, 58, d(), 3, bgrzVar);
+    @Override // defpackage.biwl
+    protected final bzqb c(Context context, biwp biwpVar) {
+        return new bzqb(context, 58, d(), 3, biwpVar);
     }
 
-    @Override // defpackage.bgrv, com.google.android.chimera.Service
+    @Override // defpackage.biwl, com.google.android.chimera.Service
     protected final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         super.dump(fileDescriptor, printWriter, strArr);
         this.j.a.g(printWriter);
     }
 
-    @Override // defpackage.bgsb, defpackage.bgrv
-    public final void f(bggi bggiVar, aslw aslwVar, aslv aslvVar, ExecutorService executorService) {
-        super.f(bggiVar, aslwVar, aslvVar, executorService);
-        this.j = bggiVar.E(this);
+    @Override // defpackage.biwr, defpackage.biwl
+    public final void f(biky bikyVar, aupq aupqVar, aupp auppVar, ExecutorService executorService) {
+        super.f(bikyVar, aupqVar, auppVar, executorService);
+        this.j = bikyVar.E(this);
     }
 
-    @Override // defpackage.bgrv
+    @Override // defpackage.biwl
     protected final boolean h(Intent intent) {
         return "com.google.android.gms.fitness.SessionsApi".equals(intent.getAction());
     }
 
-    @Override // defpackage.bgsb, defpackage.bgrv, android.os.Handler.Callback
+    @Override // defpackage.biwr, defpackage.biwl, android.os.Handler.Callback
     public final boolean handleMessage(Message message) {
         if (message.what <= 2) {
             return super.handleMessage(message);
@@ -97,9 +97,9 @@ public class FitSessionsChimeraBroker extends bgsb {
         return true;
     }
 
-    @Override // defpackage.bgsb, com.google.android.chimera.Service
+    @Override // defpackage.biwr, com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i2, int i3) {
-        if (armd.m(intent)) {
+        if (atos.m(intent)) {
             m(3, intent);
             return 1;
         }
@@ -107,7 +107,7 @@ public class FitSessionsChimeraBroker extends bgsb {
         return 1;
     }
 
-    @Override // defpackage.bgsb
+    @Override // defpackage.biwr
     protected final void k() {
     }
 }

@@ -2,10 +2,10 @@ package com.google.android.gms.ads.internal.client;
 
 import android.os.IBinder;
 import android.os.IInterface;
-import defpackage.azht;
+import defpackage.bblp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public interface bd extends IInterface {
-    IBinder getMobileAdsSettingManager(azht azhtVar, int i);
+    IBinder getMobileAdsSettingManager(bblp bblpVar, int i);
 }

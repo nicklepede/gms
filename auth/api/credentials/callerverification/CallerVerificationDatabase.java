@@ -1,24 +1,24 @@
 package com.google.android.gms.auth.api.credentials.callerverification;
 
 import com.google.android.gms.chimera.modules.auth.credentials.base.AppContextProvider;
-import defpackage.bqvy;
-import defpackage.kpe;
-import defpackage.kpm;
-import defpackage.wgk;
+import defpackage.btdp;
+import defpackage.mhp;
+import defpackage.mhx;
+import defpackage.ycq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public abstract class CallerVerificationDatabase extends kpm {
-    private static CallerVerificationDatabase l;
+public abstract class CallerVerificationDatabase extends mhx {
+    private static CallerVerificationDatabase m;
 
     public static CallerVerificationDatabase v() {
-        if (l == null) {
-            kpe a = bqvy.a(AppContextProvider.a(), CallerVerificationDatabase.class, "callerverification.db");
+        if (m == null) {
+            mhp a = btdp.a(AppContextProvider.a(), CallerVerificationDatabase.class, "callerverification.db");
             a.g(true);
-            l = (CallerVerificationDatabase) a.a();
+            m = (CallerVerificationDatabase) a.a();
         }
-        return l;
+        return m;
     }
 
-    public abstract wgk w();
+    public abstract ycq w();
 }

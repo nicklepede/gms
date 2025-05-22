@@ -5,10 +5,10 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.ashs;
-import defpackage.cwjy;
-import defpackage.cwjz;
+import defpackage.atzr;
+import defpackage.aulm;
+import defpackage.cytv;
+import defpackage.cytw;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -16,10 +16,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
-    public static final Parcelable.Creator CREATOR = new cwjy();
+    public static final Parcelable.Creator CREATOR = new cytv();
     private static final HashMap n;
     final Set a;
     List b;
@@ -35,9 +35,9 @@ public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
     String l;
     boolean m;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class EdgeKeyInfo extends FastSafeParcelableJsonResponse {
-        public static final Parcelable.Creator CREATOR = new cwjz();
+        public static final Parcelable.Creator CREATOR = new cytw();
         private static final HashMap b = new HashMap();
         final Set a;
 
@@ -45,17 +45,17 @@ public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
             this.a = set;
         }
 
-        @Override // defpackage.ashs
+        @Override // defpackage.aulm
         protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
             throw new IllegalStateException("Unknown safe parcelable id=" + fastJsonResponse$Field.g);
         }
 
-        @Override // defpackage.ashs
+        @Override // defpackage.aulm
         public final /* synthetic */ Map b() {
             return b;
         }
 
-        @Override // defpackage.ashs
+        @Override // defpackage.aulm
         protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
             return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
         }
@@ -94,7 +94,7 @@ public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            arxc.c(parcel, arxc.a(parcel));
+            atzr.c(parcel, atzr.a(parcel));
         }
 
         public EdgeKeyInfo() {
@@ -135,7 +135,7 @@ public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
         this.m = z5;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         switch (i) {
@@ -168,12 +168,12 @@ public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return n;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
@@ -199,7 +199,7 @@ public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
         return true;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i = fastJsonResponse$Field.g;
         if (i == 3) {
@@ -217,8 +217,32 @@ public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+    @Override // defpackage.aulm
+    public final void gK(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+        int i = fastJsonResponse$Field.g;
+        if (i == 2) {
+            this.b = arrayList;
+        } else {
+            if (i != 8) {
+                throw new IllegalArgumentException(a.I(arrayList != null ? arrayList.getClass().getCanonicalName() : "null", i, "Field with id=", " is not a known array of custom type.  Found ", "."));
+            }
+            this.h = arrayList;
+        }
+        this.a.add(Integer.valueOf(i));
+    }
+
+    @Override // defpackage.aulm
+    public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
+        int i = fastJsonResponse$Field.g;
+        if (i != 9) {
+            throw new IllegalArgumentException(a.ah(i, aulmVar, " is not a known custom type.  Found "));
+        }
+        this.i = (Mergedpeoplefieldacl) aulmVar;
+        this.a.add(Integer.valueOf(i));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
         int i = fastJsonResponse$Field.g;
         if (i == 6) {
             this.f = z;
@@ -237,30 +261,6 @@ public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    public final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
-        int i = fastJsonResponse$Field.g;
-        if (i == 2) {
-            this.b = arrayList;
-        } else {
-            if (i != 8) {
-                throw new IllegalArgumentException(a.F(arrayList != null ? arrayList.getClass().getCanonicalName() : "null", i, "Field with id=", " is not a known array of custom type.  Found ", "."));
-            }
-            this.h = arrayList;
-        }
-        this.a.add(Integer.valueOf(i));
-    }
-
-    @Override // defpackage.ashs
-    public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
-        int i = fastJsonResponse$Field.g;
-        if (i != 9) {
-            throw new IllegalArgumentException(a.ag(i, ashsVar, " is not a known custom type.  Found "));
-        }
-        this.i = (Mergedpeoplefieldacl) ashsVar;
-        this.a.add(Integer.valueOf(i));
-    }
-
     @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse
     public final int hashCode() {
         int i = 0;
@@ -275,44 +275,44 @@ public final class Mergedpeoplemetadata extends FastSafeParcelableJsonResponse {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.y(parcel, 2, this.b, true);
+            atzr.y(parcel, 2, this.b, true);
         }
         if (set.contains(3)) {
-            arxc.v(parcel, 3, this.c, true);
+            atzr.v(parcel, 3, this.c, true);
         }
         if (set.contains(4)) {
-            arxc.v(parcel, 4, this.d, true);
+            atzr.v(parcel, 4, this.d, true);
         }
         if (set.contains(5)) {
-            arxc.v(parcel, 5, this.e, true);
+            atzr.v(parcel, 5, this.e, true);
         }
         if (set.contains(6)) {
-            arxc.e(parcel, 6, this.f);
+            atzr.e(parcel, 6, this.f);
         }
         if (set.contains(7)) {
-            arxc.e(parcel, 7, this.g);
+            atzr.e(parcel, 7, this.g);
         }
         if (set.contains(8)) {
-            arxc.y(parcel, 8, this.h, true);
+            atzr.y(parcel, 8, this.h, true);
         }
         if (set.contains(9)) {
-            arxc.t(parcel, 9, this.i, i, true);
+            atzr.t(parcel, 9, this.i, i, true);
         }
         if (set.contains(10)) {
-            arxc.e(parcel, 10, this.j);
+            atzr.e(parcel, 10, this.j);
         }
         if (set.contains(11)) {
-            arxc.e(parcel, 11, this.k);
+            atzr.e(parcel, 11, this.k);
         }
         if (set.contains(12)) {
-            arxc.v(parcel, 12, this.l, true);
+            atzr.v(parcel, 12, this.l, true);
         }
         if (set.contains(13)) {
-            arxc.e(parcel, 13, this.m);
+            atzr.e(parcel, 13, this.m);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public Mergedpeoplemetadata() {

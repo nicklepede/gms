@@ -6,14 +6,14 @@ import android.os.Parcelable;
 import android.os.UserHandle;
 import com.google.android.gms.appsearch.stats.SchemaMigrationStats;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ufq;
+import defpackage.atzr;
+import defpackage.wbp;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class PutDocumentsFromFileAidlRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ufq();
+    public static final Parcelable.Creator CREATOR = new wbp();
     public final AppSearchAttributionSource a;
     public final String b;
     public final ParcelFileDescriptor c;
@@ -35,14 +35,14 @@ public class PutDocumentsFromFileAidlRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         AppSearchAttributionSource appSearchAttributionSource = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, appSearchAttributionSource, i, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.q(parcel, 6, this.f);
-        arxc.q(parcel, 7, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, appSearchAttributionSource, i, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.q(parcel, 6, this.f);
+        atzr.q(parcel, 7, this.g);
+        atzr.c(parcel, a);
     }
 }

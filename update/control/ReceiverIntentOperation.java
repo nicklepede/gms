@@ -8,54 +8,53 @@ import android.text.TextUtils;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.common.Feature;
 import com.google.android.gms.common.api.ApiMetadata;
-import com.google.android.gms.common.api.ComplianceOptions;
 import com.google.android.gms.update.DownloadOptions;
 import com.google.android.gms.update.InstallationOptions;
-import defpackage.aqgv;
-import defpackage.arco;
-import defpackage.arcy;
-import defpackage.arxo;
-import defpackage.asqg;
-import defpackage.bklk;
-import defpackage.dhen;
-import defpackage.dhey;
-import defpackage.dhfe;
-import defpackage.dhfk;
-import defpackage.dhfx;
-import defpackage.dhgc;
-import defpackage.dhgi;
-import defpackage.dhgz;
-import defpackage.dhjs;
-import defpackage.dhjt;
-import defpackage.eito;
-import defpackage.eits;
-import defpackage.ekpk;
-import defpackage.ekpt;
-import defpackage.fecj;
+import defpackage.asjm;
+import defpackage.atfd;
+import defpackage.atfn;
+import defpackage.auad;
+import defpackage.auua;
+import defpackage.bmsa;
+import defpackage.djpt;
+import defpackage.djqe;
+import defpackage.djqk;
+import defpackage.djqq;
+import defpackage.djrd;
+import defpackage.djri;
+import defpackage.djro;
+import defpackage.djsf;
+import defpackage.djuy;
+import defpackage.djuz;
+import defpackage.elgt;
+import defpackage.elgx;
+import defpackage.encw;
+import defpackage.endf;
+import defpackage.fgrc;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ReceiverIntentOperation extends IntentOperation {
     static final String a;
     public static final /* synthetic */ int b = 0;
-    private static final arxo c = dhjt.f("ReceiverIntentOperation");
-    private static final eits d;
+    private static final auad c = djuz.f("ReceiverIntentOperation");
+    private static final elgx d;
 
     static {
-        String f = asqg.f("com.google.android.gms.update");
+        String f = auua.f("com.google.android.gms.update");
         a = f;
-        eito eitoVar = new eito();
-        eitoVar.i("com.google.gservices.intent.action.GSERVICES_CHANGED", 2);
-        eitoVar.i("com.google.android.gms.update.BASE_MODULE_INIT", 1);
-        eitoVar.i("android.app.action.SYSTEM_UPDATE_POLICY_CHANGED", 6);
-        eitoVar.i("android.intent.action.TIME_SET", 6);
-        eitoVar.i("android.intent.action.ACTION_POWER_CONNECTED", 9);
-        eitoVar.i("android.intent.action.USER_PRESENT", 11);
-        eitoVar.i("com.google.android.gms.phenotype.COMMITTED", 2);
-        eitoVar.i(f, 2);
-        eitoVar.i("com.google.android.gms.update.RESUME_ON_REBOOOT_LSKF_CAPTURED", 12);
-        d = eitoVar.b();
+        elgt elgtVar = new elgt();
+        elgtVar.i("com.google.gservices.intent.action.GSERVICES_CHANGED", 2);
+        elgtVar.i("com.google.android.gms.update.BASE_MODULE_INIT", 1);
+        elgtVar.i("android.app.action.SYSTEM_UPDATE_POLICY_CHANGED", 6);
+        elgtVar.i("android.intent.action.TIME_SET", 6);
+        elgtVar.i("android.intent.action.ACTION_POWER_CONNECTED", 9);
+        elgtVar.i("android.intent.action.USER_PRESENT", 11);
+        elgtVar.i("com.google.android.gms.phenotype.COMMITTED", 2);
+        elgtVar.i(f, 2);
+        elgtVar.i("com.google.android.gms.update.RESUME_ON_REBOOOT_LSKF_CAPTURED", 12);
+        d = elgtVar.b();
     }
 
     public static PendingIntent a(Context context) {
@@ -64,7 +63,7 @@ public class ReceiverIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (!dhfe.b(this)) {
+        if (!djqk.b(this)) {
             c.h("System update management not enabled in this context. Ignoring intent: %s", intent);
             return;
         }
@@ -74,100 +73,98 @@ public class ReceiverIntentOperation extends IntentOperation {
             return;
         }
         c.h("Received intent: %s.", intent);
-        dhfx dhfxVar = (dhfx) dhfx.b.b();
+        djrd djrdVar = (djrd) djrd.b.b();
         Integer num = (Integer) d.get(intent.getAction());
         if (num != null) {
-            dhfxVar.a(num.intValue());
+            djrdVar.a(num.intValue());
         }
-        if (dhen.l() && "com.google.vr.powerpolicy.action.ACTION_POLICY_CHANGED".equals(action)) {
+        if (djpt.l() && "com.google.vr.powerpolicy.action.ACTION_POLICY_CHANGED".equals(action)) {
             int intExtra = intent.getIntExtra("com.google.vr.powerpolicy.extra.POLICY", 0);
             if (intExtra == 0) {
-                dhfxVar.a(7);
+                djrdVar.a(7);
             } else if (intExtra == 2) {
-                dhfxVar.a(5);
+                djrdVar.a(5);
             }
         }
         if ("com.google.android.gms.update.NOTIFICATION_ACTION".equals(action)) {
-            dhgi dhgiVar = (dhgi) dhgi.b.b();
+            djro djroVar = (djro) djro.b.b();
             int intExtra2 = intent.getIntExtra("notification_action", -1);
             switch (intExtra2) {
                 case 0:
-                    dhgiVar.c.d(new DownloadOptions(true, true, true, -1));
+                    djroVar.c.d(new DownloadOptions(true, true, true, -1));
                     break;
                 case 1:
-                    dhgc dhgcVar = dhgiVar.c;
-                    dhgcVar.e(new InstallationOptions(true, true, true, false));
-                    if (((Integer) dhgcVar.p.b(dhgz.n)).intValue() != 1) {
-                        Context context = dhgiVar.e;
-                        context.startActivity(dhfk.a().addFlags(268435456).addFlags(2097152));
+                    djri djriVar = djroVar.c;
+                    djriVar.e(new InstallationOptions(true, true, true, false));
+                    if (((Integer) djriVar.p.b(djsf.n)).intValue() != 1) {
+                        Context context = djroVar.e;
+                        context.startActivity(djqq.a().addFlags(268435456).addFlags(2097152));
                         context.sendBroadcast(new Intent("android.intent.action.CLOSE_SYSTEM_DIALOGS"));
                         break;
                     }
                     break;
                 case 2:
                     try {
-                        dhgiVar.c.g(true);
+                        djroVar.c.g(true);
                         break;
                     } catch (IOException unused) {
-                        dhgi.a.f("Unable to schedule install tonight", new Object[0]);
+                        djro.a.f("Unable to schedule install tonight", new Object[0]);
                         break;
                     }
                 case 3:
-                    dhgiVar.c.p(new InstallationOptions(true, true, true, false));
+                    djroVar.c.p(new InstallationOptions(true, true, true, false));
                     break;
                 case 4:
                     break;
                 case 5:
-                    dhgiVar.c.m();
+                    djroVar.c.m();
                     break;
                 case 6:
-                    if (dhey.a().booleanValue()) {
-                        final bklk bklkVar = new bklk(dhgiVar.e);
-                        arcy arcyVar = new arcy();
-                        arcyVar.c = new Feature[]{aqgv.a};
-                        arcyVar.a = new arco() { // from class: bklh
-                            @Override // defpackage.arco
+                    if (djqe.a().booleanValue()) {
+                        final bmsa bmsaVar = new bmsa(djroVar.e);
+                        atfn atfnVar = new atfn();
+                        atfnVar.c = new Feature[]{asjm.a};
+                        atfnVar.a = new atfd() { // from class: bmrx
+                            @Override // defpackage.atfd
                             public final void d(Object obj, Object obj2) {
-                                bkll bkllVar = (bkll) obj;
-                                bklf bklfVar = new bklf(bklk.this, (dfau) obj2);
-                                Context context2 = bkllVar.r;
-                                ComplianceOptions complianceOptions = new ComplianceOptions(-1, -1, 0, true);
-                                bklg bklgVar = (bklg) bkllVar.H();
-                                ApiMetadata apiMetadata = new ApiMetadata(complianceOptions);
-                                Parcel fr = bklgVar.fr();
-                                oto.g(fr, bklfVar);
-                                oto.e(fr, apiMetadata);
-                                bklgVar.ft(4, fr);
+                                bmsb bmsbVar = (bmsb) obj;
+                                bmrv bmrvVar = new bmrv(bmsa.this, (dhma) obj2);
+                                bmrw bmrwVar = (bmrw) bmsbVar.H();
+                                ApiMetadata a2 = bsxa.a(bmsbVar.r);
+                                Parcel fE = bmrwVar.fE();
+                                qmr.g(fE, bmrvVar);
+                                qmr.e(fE, a2);
+                                bmrwVar.fG(4, fE);
                             }
                         };
-                        arcyVar.d = 27904;
-                        bklkVar.iO(arcyVar.a());
+                        atfnVar.d = 27904;
+                        bmsaVar.jd(atfnVar.a());
                         break;
                     }
                     break;
                 default:
-                    dhgi.a.f("Unknown notification action: %d.", Integer.valueOf(intExtra2));
+                    djro.a.f("Unknown notification action: %d.", Integer.valueOf(intExtra2));
                     return;
             }
-            fecj v = ekpt.a.v();
+            fgrc v = endf.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            ekpt ekptVar = (ekpt) v.b;
-            ekptVar.b = 1 | ekptVar.b;
-            ekptVar.c = intExtra2;
-            ekpt ekptVar2 = (ekpt) v.Q();
-            dhjs dhjsVar = dhgiVar.d;
-            fecj g = dhjsVar.g(8);
+            endf endfVar = (endf) v.b;
+            endfVar.b = 1 | endfVar.b;
+            endfVar.c = intExtra2;
+            endf endfVar2 = (endf) v.Q();
+            djuy djuyVar = djroVar.d;
+            fgrc g = djuyVar.g(8);
             if (!g.b.L()) {
                 g.U();
             }
-            ekpk ekpkVar = (ekpk) g.b;
-            ekpk ekpkVar2 = ekpk.a;
-            ekptVar2.getClass();
-            ekpkVar.l = ekptVar2;
-            ekpkVar.b |= 512;
-            dhjsVar.f((ekpk) g.Q());
+            encw encwVar = (encw) g.b;
+            encw encwVar2 = encw.a;
+            endfVar2.getClass();
+            encwVar.l = endfVar2;
+            encwVar.b |= 512;
+            djuyVar.f((encw) g.Q());
         }
     }
 }

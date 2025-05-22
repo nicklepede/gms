@@ -5,37 +5,37 @@ import android.os.Bundle;
 import android.widget.Toast;
 import com.google.android.gms.R;
 import defpackage.a;
-import defpackage.arxo;
-import defpackage.asqh;
+import defpackage.auad;
+import defpackage.auub;
 import defpackage.bp;
-import defpackage.dhfe;
-import defpackage.dhjt;
-import defpackage.dhnh;
-import defpackage.dhni;
-import defpackage.dhnj;
-import defpackage.dhnr;
-import defpackage.edeq;
-import defpackage.edgl;
-import defpackage.edjc;
-import defpackage.edjs;
-import defpackage.edjt;
-import defpackage.fqsp;
-import defpackage.qfp;
+import defpackage.djqk;
+import defpackage.djuz;
+import defpackage.djyn;
+import defpackage.djyo;
+import defpackage.djyp;
+import defpackage.djyx;
+import defpackage.efrl;
+import defpackage.eftg;
+import defpackage.efvx;
+import defpackage.efwn;
+import defpackage.efwo;
+import defpackage.ftmo;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class SystemUpdateChimeraActivity extends qfp {
-    private static final arxo j = dhjt.h("SystemUpdateChimeraActivity");
+public class SystemUpdateChimeraActivity extends ryt {
+    private static final auad j = djuz.h("SystemUpdateChimeraActivity");
     private boolean k = false;
 
     private final boolean b() {
-        return edgl.e(getIntent());
+        return eftg.e(getIntent());
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0089, code lost:
     
-        if (defpackage.fqtw.a.a().b() != false) goto L37;
+        if (defpackage.ftns.a.lK().b() != false) goto L37;
      */
     /* JADX WARN: Removed duplicated region for block: B:18:0x009e A[RETURN] */
     /* JADX WARN: Removed duplicated region for block: B:19:0x009f A[RETURN] */
@@ -46,8 +46,8 @@ public class SystemUpdateChimeraActivity extends qfp {
     public final int a() {
         /*
             r5 = this;
-            fqtt r0 = defpackage.fqtt.a
-            fqtu r0 = r0.a()
+            ftnp r0 = defpackage.ftnp.a
+            ftnq r0 = r0.lK()
             r0.a()
             android.content.Intent r0 = r5.getIntent()
             java.lang.String r1 = "theme"
@@ -139,18 +139,18 @@ public class SystemUpdateChimeraActivity extends qfp {
         L7e:
             goto L98
         L7f:
-            fqtw r0 = defpackage.fqtw.a
-            fqtx r0 = r0.a()
+            ftns r0 = defpackage.ftns.a
+            ftnt r0 = r0.lK()
             boolean r0 = r0.b()
             if (r0 == 0) goto L98
         L8b:
-            fqtw r0 = defpackage.fqtw.a
-            fqtx r0 = r0.a()
+            ftns r0 = defpackage.ftns.a
+            ftnt r0 = r0.lK()
             boolean r0 = r0.a()
             if (r0 == 0) goto L98
             return r2
         L98:
-            boolean r0 = defpackage.asqh.b()
+            boolean r0 = defpackage.auub.b()
             if (r0 == 0) goto L9f
             return r3
         L9f:
@@ -159,50 +159,50 @@ public class SystemUpdateChimeraActivity extends qfp {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.update.phone.SystemUpdateChimeraActivity.a():int");
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void finish() {
         if (this.k) {
             super.finish();
         } else {
             this.k = true;
-            edjc.d(getContainerActivity());
+            efvx.d(getContainerActivity());
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         boolean z;
         super.onCreate(bundle);
-        arxo arxoVar = j;
-        arxoVar.j("onCreate", new Object[0]);
+        auad auadVar = j;
+        auadVar.j("onCreate", new Object[0]);
         getWindow().requestFeature(13);
-        edjc.c(getContainerActivity());
-        edjc.a(getContainerActivity());
+        efvx.c(getContainerActivity());
+        efvx.a(getContainerActivity());
         Intent intent = getIntent();
-        int i = edjs.a;
-        boolean c = edjs.c(intent.getStringExtra("theme"));
+        int i = efwn.a;
+        boolean c = efwn.c(intent.getStringExtra("theme"));
         if (a() == 5) {
-            setTheme(edjt.d().c(true != c ? "glif_v3" : "glif_v3_light", edgl.e(getIntent()) && !fqsp.a.a().a()));
-            if (edeq.v(this) && edeq.z(this)) {
+            setTheme(efwo.d().c(true != c ? "glif_v3" : "glif_v3_light", eftg.e(getIntent()) && !ftmo.a.lK().a()));
+            if (efrl.v(this) && efrl.z(this)) {
                 getTheme().applyStyle(R.style.BcStyleThemeOverlay, true);
             } else {
                 getTheme().applyStyle(R.style.HeavyThemeOverlay, true);
             }
-            if (edeq.w(this)) {
-                int a = edjs.a(this);
+            if (efrl.w(this)) {
+                int a = efwn.a(this);
                 if (a == 0) {
-                    arxoVar.m("Could not get dynamic color theme.", new Object[0]);
+                    auadVar.m("Could not get dynamic color theme.", new Object[0]);
                 } else {
                     setTheme(a);
                     z = true;
-                    arxoVar.h(a.Z(z, "Try to set dynamic color. Result="), new Object[0]);
+                    auadVar.h(a.aa(z, "Try to set dynamic color. Result="), new Object[0]);
                 }
             } else {
-                arxoVar.m("SetupWizard does not support the dynamic color or supporting status unknown.", new Object[0]);
+                auadVar.m("SetupWizard does not support the dynamic color or supporting status unknown.", new Object[0]);
             }
             z = false;
-            arxoVar.h(a.Z(z, "Try to set dynamic color. Result="), new Object[0]);
-        } else if (asqh.b()) {
+            auadVar.h(a.aa(z, "Try to set dynamic color. Result="), new Object[0]);
+        } else if (auub.b()) {
             if (c) {
                 setTheme(R.style.systemUpdateActivitySudTheme_Light);
                 c = true;
@@ -228,23 +228,23 @@ public class SystemUpdateChimeraActivity extends qfp {
         setContentView(R.layout.system_update_activity_container);
         if (bundle == null) {
             int a2 = a();
-            dhnr dhnjVar = a2 != 1 ? a2 != 5 ? new dhnj() : new dhnh() : new dhni();
-            arxoVar.j("Load layout with type=%d, isSetupWizard=%s, isLightTheme=%s.", Integer.valueOf(dhnjVar.I()), Boolean.valueOf(b()), Boolean.valueOf(c));
+            djyx djypVar = a2 != 1 ? a2 != 5 ? new djyp() : new djyn() : new djyo();
+            auadVar.j("Load layout with type=%d, isSetupWizard=%s, isLightTheme=%s.", Integer.valueOf(djypVar.I()), Boolean.valueOf(b()), Boolean.valueOf(c));
             bp bpVar = new bp(getSupportFragmentManager());
-            bpVar.z(R.id.layout_container, dhnjVar, "layout_fragment");
+            bpVar.z(R.id.layout_container, djypVar, "layout_fragment");
             bpVar.d();
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
-        arxo arxoVar = j;
-        arxoVar.j("onResume", new Object[0]);
-        if (dhfe.b(this)) {
+        auad auadVar = j;
+        auadVar.j("onResume", new Object[0]);
+        if (djqk.b(this)) {
             return;
         }
-        arxoVar.h("Attempting to manage ota on non-owner profile. Finish immediately.", new Object[0]);
+        auadVar.h("Attempting to manage ota on non-owner profile. Finish immediately.", new Object[0]);
         Toast makeText = Toast.makeText(this, R.string.system_update_not_owner_text, 1);
         makeText.setGravity(17, makeText.getXOffset(), makeText.getYOffset());
         makeText.show();

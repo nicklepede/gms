@@ -13,60 +13,60 @@ import com.google.android.gms.auth.proximity.firstparty.SyncedCryptauthDevice;
 import com.google.android.gms.auth.proximity.multidevice.SettingsChimeraActivity;
 import com.google.android.gms.auth.proximity.multidevice.SettingsChimeraContentProvider;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.acex;
-import defpackage.acey;
-import defpackage.acqc;
-import defpackage.acqe;
-import defpackage.acqy;
-import defpackage.acra;
-import defpackage.acrb;
-import defpackage.acto;
-import defpackage.acvm;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.assa;
-import defpackage.assb;
-import defpackage.eiho;
-import defpackage.ejhf;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.entc;
-import defpackage.esjn;
-import defpackage.flcw;
-import defpackage.fldd;
+import defpackage.aeex;
+import defpackage.aeey;
+import defpackage.aeqc;
+import defpackage.aeqe;
+import defpackage.aeqy;
+import defpackage.aera;
+import defpackage.aerb;
+import defpackage.aeto;
+import defpackage.aevm;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.auvu;
+import defpackage.auvv;
+import defpackage.ekut;
+import defpackage.eluo;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.eqgv;
+import defpackage.euzc;
+import defpackage.fnuf;
+import defpackage.fnum;
 import defpackage.ig;
-import defpackage.iln;
-import defpackage.qet;
+import defpackage.ind;
+import defpackage.rxx;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class SettingsChimeraActivity extends qet {
-    public static final asot j = acqc.a("BetterTogetherSettings");
-    public enss k;
-    public enss l;
-    public acey m;
-    public assb n;
+public class SettingsChimeraActivity extends rxx {
+    public static final ausn j = aeqc.a("BetterTogetherSettings");
+    public eqgl k;
+    public eqgl l;
+    public aeey m;
+    public auvv n;
     private FeatureEnabledReceiver o;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class FeatureEnabledReceiver extends TracingBroadcastReceiver {
         public FeatureEnabledReceiver() {
             super("auth_proximity");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             if ("com.google.android.gms.auth.proximity.ACTION_FEATURE_ENABLED_CHANGE".equals(intent.getAction())) {
                 SettingsChimeraActivity settingsChimeraActivity = SettingsChimeraActivity.this;
                 String d = settingsChimeraActivity.n.d();
                 if (d != null) {
                     String stringExtra = intent.getStringExtra("EXTRA_FEATURE_NAME");
-                    if ((esjn.BETTER_TOGETHER_HOST.name().equals(stringExtra) || esjn.WIFI_SYNC_HOST.name().equals(stringExtra) || esjn.PHONE_HUB_CAMERA_ROLL_HOST.name().equals(stringExtra) || esjn.PHONE_HUB_HOST.name().equals(stringExtra)) && d.equals(intent.getStringExtra("EXTRA_ACCOUNT_NAME"))) {
+                    if ((euzc.BETTER_TOGETHER_HOST.name().equals(stringExtra) || euzc.WIFI_SYNC_HOST.name().equals(stringExtra) || euzc.PHONE_HUB_CAMERA_ROLL_HOST.name().equals(stringExtra) || euzc.PHONE_HUB_HOST.name().equals(stringExtra)) && d.equals(intent.getStringExtra("EXTRA_ACCOUNT_NAME"))) {
                         settingsChimeraActivity.a(new Account(d, "com.google"));
                     }
                 }
@@ -80,18 +80,18 @@ public class SettingsChimeraActivity extends qet {
     }
 
     public final void a(final Account account) {
-        enss submit = entc.a(new asmf(1, 9)).submit(new Callable() { // from class: acqq
+        eqgl submit = eqgv.a(new aupz(1, 9)).submit(new Callable() { // from class: aeqq
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 Account account2 = account;
                 boolean z = false;
-                if (account2 != null && SettingsChimeraActivity.this.m.d(account2, esjn.BETTER_TOGETHER_HOST)) {
+                if (account2 != null && SettingsChimeraActivity.this.m.d(account2, euzc.BETTER_TOGETHER_HOST)) {
                     z = true;
                 }
                 return Boolean.valueOf(z);
             }
         });
-        enss submit2 = entc.a(new asmf(1, 9)).submit(new Callable() { // from class: acqr
+        eqgl submit2 = eqgv.a(new aupz(1, 9)).submit(new Callable() { // from class: aeqr
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 Account account2 = account;
@@ -101,11 +101,11 @@ public class SettingsChimeraActivity extends qet {
                 return SettingsChimeraContentProvider.a(SettingsChimeraActivity.this, account2.name);
             }
         });
-        boolean f = fldd.f();
-        enss i = ensj.i(false);
-        enss i2 = ensj.i(false);
+        boolean f = fnum.f();
+        eqgl i = eqgc.i(false);
+        eqgl i2 = eqgc.i(false);
         if (f) {
-            i = entc.a(new asmf(1, 9)).submit(new Callable() { // from class: acqs
+            i = eqgv.a(new aupz(1, 9)).submit(new Callable() { // from class: aeqs
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
                     Account account2 = account;
@@ -113,10 +113,10 @@ public class SettingsChimeraActivity extends qet {
                         return false;
                     }
                     SettingsChimeraActivity settingsChimeraActivity = SettingsChimeraActivity.this;
-                    return fldd.g() ? Boolean.valueOf(settingsChimeraActivity.m.e(account2, esjn.WIFI_SYNC_HOST)) : Boolean.valueOf(settingsChimeraActivity.m.d(account2, esjn.WIFI_SYNC_HOST));
+                    return fnum.g() ? Boolean.valueOf(settingsChimeraActivity.m.e(account2, euzc.WIFI_SYNC_HOST)) : Boolean.valueOf(settingsChimeraActivity.m.d(account2, euzc.WIFI_SYNC_HOST));
                 }
             });
-            i2 = entc.a(new asmf(1, 9)).submit(new Callable() { // from class: acqt
+            i2 = eqgv.a(new aupz(1, 9)).submit(new Callable() { // from class: aeqt
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
                     Account account2 = account;
@@ -124,9 +124,9 @@ public class SettingsChimeraActivity extends qet {
                     if (account2 == null) {
                         return false;
                     }
-                    SyncedCryptauthDevice b = acnd.b(SettingsChimeraActivity.this, account2.name);
+                    SyncedCryptauthDevice b = aend.b(SettingsChimeraActivity.this, account2.name);
                     if (b != null) {
-                        if (b.l.contains(esjn.WIFI_SYNC_HOST.name())) {
+                        if (b.l.contains(euzc.WIFI_SYNC_HOST.name())) {
                             z = true;
                         }
                     }
@@ -134,85 +134,85 @@ public class SettingsChimeraActivity extends qet {
                 }
             });
         }
-        enss submit3 = flcw.i() ? entc.a(new asmf(1, 9)).submit(new Callable() { // from class: acqu
+        eqgl submit3 = fnuf.i() ? eqgv.a(new aupz(1, 9)).submit(new Callable() { // from class: aequ
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 List b;
-                if (account == null || (b = acnf.b(SettingsChimeraActivity.this, null)) == null) {
+                if (account == null || (b = aenf.b(SettingsChimeraActivity.this, null)) == null) {
                     return false;
                 }
-                return Boolean.valueOf(eivv.v(b, new eiih() { // from class: acqo
-                    @Override // defpackage.eiih
+                return Boolean.valueOf(elja.v(b, new ekvm() { // from class: aeqo
+                    @Override // defpackage.ekvm
                     public final boolean a(Object obj) {
-                        asot asotVar = SettingsChimeraActivity.j;
-                        return ((SyncedCryptauthDevice) obj).l.contains(esjn.PHONE_HUB_CAMERA_ROLL_CLIENT.name());
+                        ausn ausnVar = SettingsChimeraActivity.j;
+                        return ((SyncedCryptauthDevice) obj).l.contains(euzc.PHONE_HUB_CAMERA_ROLL_CLIENT.name());
                     }
                 }));
             }
-        }) : ensj.i(true);
-        enss i3 = ensj.i(false);
+        }) : eqgc.i(true);
+        eqgl i3 = eqgc.i(false);
         if (account != null) {
-            i3 = enps.f(flcw.P() ? acvm.a(account.name).c() : acto.a(account.name).b(), new eiho() { // from class: acqv
-                @Override // defpackage.eiho
+            i3 = eqdl.f(fnuf.P() ? aevm.a(account.name).c() : aeto.a(account.name).b(), new ekut() { // from class: aeqv
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    return Boolean.valueOf(((adae) obj).b);
+                    return Boolean.valueOf(((afae) obj).b);
                 }
-            }, enre.a);
+            }, eqex.a);
         }
-        enss i4 = ensj.i(false);
-        if (flcw.v() && account != null) {
-            i4 = ensj.m(new Callable() { // from class: acqw
+        eqgl i4 = eqgc.i(false);
+        if (fnuf.v() && account != null) {
+            i4 = eqgc.m(new Callable() { // from class: aeqw
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
-                    asot asotVar = SettingsChimeraActivity.j;
-                    return (Boolean) acvm.a(account.name).f().get();
+                    ausn ausnVar = SettingsChimeraActivity.j;
+                    return (Boolean) aevm.a(account.name).f().get();
                 }
-            }, new asmf(1, 9));
+            }, new aupz(1, 9));
         }
-        enss i5 = ensj.i(false);
-        if (flcw.x() && account != null) {
-            i5 = enps.f(acvm.a(account.name).e(), new eiho() { // from class: acqx
-                @Override // defpackage.eiho
+        eqgl i5 = eqgc.i(false);
+        if (fnuf.x() && account != null) {
+            i5 = eqdl.f(aevm.a(account.name).e(), new ekut() { // from class: aeqx
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    return Boolean.valueOf(((adbr) obj).b);
+                    return Boolean.valueOf(((afbr) obj).b);
                 }
-            }, enre.a);
+            }, eqex.a);
         }
-        enss f2 = ensj.f(submit, submit2, i, i2, submit3, i3, i4, i5);
+        eqgl f2 = eqgc.f(submit, submit2, i, i2, submit3, i3, i4, i5);
         this.k = f2;
-        ensj.t(f2, new acra(this, f, account), new asmf(1, 9));
+        eqgc.t(f2, new aera(this, f, account), new aupz(1, 9));
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.m = acex.a(this);
+        this.m = aeex.a(this);
         FeatureEnabledReceiver featureEnabledReceiver = new FeatureEnabledReceiver();
         this.o = featureEnabledReceiver;
-        iln.b(this, featureEnabledReceiver, new IntentFilter("com.google.android.gms.auth.proximity.ACTION_FEATURE_ENABLED_CHANGE"), 2);
+        ind.b(this, featureEnabledReceiver, new IntentFilter("com.google.android.gms.auth.proximity.ACTION_FEATURE_ENABLED_CHANGE"), 2);
         setContentView(R.layout.better_together_settings_activity);
-        ig hy = hy();
-        hy.o(true);
-        assa assaVar = new assa(hy);
-        assaVar.b = new acqy(this);
-        assaVar.b(R.string.auth_settings_activity_title);
-        this.n = assaVar.a();
-        enss submit = entc.a(new asmf(1, 9)).submit(new Callable() { // from class: acqp
+        ig hO = hO();
+        hO.o(true);
+        auvu auvuVar = new auvu(hO);
+        auvuVar.b = new aeqy(this);
+        auvuVar.b(R.string.auth_settings_activity_title);
+        this.n = auvuVar.a();
+        eqgl submit = eqgv.a(new aupz(1, 9)).submit(new Callable() { // from class: aeqp
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 SettingsChimeraActivity settingsChimeraActivity = SettingsChimeraActivity.this;
                 Account[] accountArr = new Account[0];
                 try {
-                    eijr a = eijy.a(new vbf());
-                    dvni.f(settingsChimeraActivity);
-                    accountArr = vbh.a(settingsChimeraActivity, new vay(settingsChimeraActivity), a);
-                } catch (RemoteException | aqum | aqun e) {
-                    ((ejhf) ((ejhf) SettingsChimeraActivity.j.j()).s(e)).x("Can't get Google accounts.");
+                    ekww a = ekxd.a(new wxf());
+                    dxyi.f(settingsChimeraActivity);
+                    accountArr = wxh.a(settingsChimeraActivity, new wwy(settingsChimeraActivity), a);
+                } catch (RemoteException | asxb | asxc e) {
+                    ((eluo) ((eluo) SettingsChimeraActivity.j.j()).s(e)).x("Can't get Google accounts.");
                 }
                 Account account = null;
                 if (accountArr.length > 0) {
                     for (Account account2 : accountArr) {
-                        if (account == null && settingsChimeraActivity.m.d(account2, esjn.BETTER_TOGETHER_HOST)) {
+                        if (account == null && settingsChimeraActivity.m.d(account2, euzc.BETTER_TOGETHER_HOST)) {
                             account = account2;
                         }
                     }
@@ -221,17 +221,17 @@ public class SettingsChimeraActivity extends qet {
             }
         });
         this.l = submit;
-        ensj.t(submit, new acrb(this), new asmf(1, 9));
+        eqgc.t(submit, new aerb(this), new aupz(1, 9));
         if (k()) {
-            new acqe().H();
+            new aeqe().H();
         }
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
-        enss enssVar = this.k;
-        if (enssVar != null) {
-            enssVar.cancel(true);
+        eqgl eqglVar = this.k;
+        if (eqglVar != null) {
+            eqglVar.cancel(true);
             this.k = null;
         }
         FeatureEnabledReceiver featureEnabledReceiver = this.o;
@@ -242,21 +242,21 @@ public class SettingsChimeraActivity extends qet {
         super.onDestroy();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         Intent intent;
         if (menuItem.getItemId() != 16908332) {
             return super.onOptionsItemSelected(menuItem);
         }
-        if (fldd.a.a().w() && (((intent = getIntent()) == null || !intent.getBooleanExtra("FROM_BETTER_TOGETHER_NOTIFICATION", false)) && !k())) {
+        if (fnum.a.lK().w() && (((intent = getIntent()) == null || !intent.getBooleanExtra("FROM_BETTER_TOGETHER_NOTIFICATION", false)) && !k())) {
             onBackPressed();
             finish();
             return true;
         }
         Intent intent2 = new Intent();
-        if (asqh.e()) {
+        if (auub.e()) {
             intent2.setAction("com.android.settings.ADVANCED_CONNECTED_DEVICE_SETTINGS");
-        } else if (asqh.c()) {
+        } else if (auub.c()) {
             intent2.setAction("android.settings.BLUETOOTH_SETTINGS");
         } else {
             intent2.setClassName("com.google.android.gms", "com.google.android.gms.app.settings.GoogleSettingsActivity");
@@ -271,12 +271,12 @@ public class SettingsChimeraActivity extends qet {
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         this.n.g(this.n.d());
         if (this.n.d() == null) {
-            ((ejhf) j.j()).x("The account spinner was not able to select a new account after refresh.");
+            ((eluo) j.j()).x("The account spinner was not able to select a new account after refresh.");
             a(null);
         }
     }

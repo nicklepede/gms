@@ -8,138 +8,139 @@ import android.widget.ImageView;
 import androidx.activity.result.ActivityResult;
 import com.google.android.gms.R;
 import com.google.android.gms.significantplaces.settings.SuggestionListChimeraActivity;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
 import defpackage.bp;
-import defpackage.dciy;
-import defpackage.dcko;
-import defpackage.dckv;
-import defpackage.dckw;
-import defpackage.dckx;
-import defpackage.dcky;
-import defpackage.dcli;
-import defpackage.fuuw;
-import defpackage.fvaq;
-import defpackage.fvbi;
-import defpackage.fvcc;
-import defpackage.ips;
-import defpackage.jqx;
-import defpackage.qfp;
+import defpackage.dete;
+import defpackage.devi;
+import defpackage.devp;
+import defpackage.devq;
+import defpackage.devr;
+import defpackage.devs;
+import defpackage.dewc;
+import defpackage.fxqu;
+import defpackage.fxwo;
+import defpackage.fxxg;
+import defpackage.fxya;
+import defpackage.iri;
+import defpackage.jxm;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class SuggestionListChimeraActivity extends qfp {
-    private final fuuw j;
+public final class SuggestionListChimeraActivity extends ryt {
+    private final fxqu j;
 
     public SuggestionListChimeraActivity() {
-        dckw dckwVar = new dckw(this);
-        int i = fvcc.a;
-        this.j = new jqx(new fvbi(dcko.class), new dckx(this), dckwVar, new dcky(this));
+        devq devqVar = new devq(this);
+        int i = fxya.a;
+        this.j = new jxm(new fxxg(devi.class), new devr(this), devqVar, new devs(this));
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        int i = dciy.a;
-        dciy.c(this);
+        int i = dete.a;
+        dete.c(this);
         setContentView(R.layout.significant_places_suggestion_list);
-        int i2 = ips.a;
-        final abv registerForActivityResult = registerForActivityResult(new acl(), new abt() { // from class: dckr
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        int i2 = iri.a;
+        final aca registerForActivityResult = registerForActivityResult(new acq(), new aby() { // from class: devl
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 ActivityResult activityResult = (ActivityResult) obj;
-                fvbo.f(activityResult, "result");
+                fxxm.f(activityResult, "result");
                 if (activityResult.a == -1) {
                     SuggestionListChimeraActivity suggestionListChimeraActivity = SuggestionListChimeraActivity.this;
-                    int i3 = dciy.a;
-                    dciy.b(suggestionListChimeraActivity);
+                    int i3 = dete.a;
+                    dete.b(suggestionListChimeraActivity);
                 }
             }
         });
         if (bundle == null) {
             bp bpVar = new bp(getSupportFragmentManager());
-            bpVar.F(R.id.content_frame, new dcli());
+            bpVar.F(R.id.suggestions, new dewc());
             bpVar.a();
         }
         final EditText editText = (EditText) findViewById(R.id.edit_text_enter_address);
         if (editText != null) {
-            editText.setOnFocusChangeListener(new View.OnFocusChangeListener() { // from class: dcks
+            editText.setOnFocusChangeListener(new View.OnFocusChangeListener() { // from class: devm
                 @Override // android.view.View.OnFocusChangeListener
                 public final void onFocusChange(View view, boolean z) {
                     if (z) {
                         bp bpVar2 = new bp(SuggestionListChimeraActivity.this.getSupportFragmentManager());
-                        bpVar2.F(R.id.content_frame, new dcjy());
+                        bpVar2.F(R.id.suggestions, new deue());
                         bpVar2.a();
                     }
                 }
             });
         }
         ImageView imageView = (ImageView) findViewById(R.id.place_autocomplete_back_button);
+        imageView.setVisibility(0);
         if (imageView != null) {
-            imageView.setOnClickListener(new View.OnClickListener() { // from class: dckt
+            imageView.setOnClickListener(new View.OnClickListener() { // from class: devn
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     SuggestionListChimeraActivity suggestionListChimeraActivity = SuggestionListChimeraActivity.this;
-                    dg g = suggestionListChimeraActivity.getSupportFragmentManager().g(R.id.content_frame);
-                    if (g == null || !(g instanceof dcjy)) {
-                        int i3 = dciy.a;
-                        dciy.b(suggestionListChimeraActivity);
+                    dg g = suggestionListChimeraActivity.getSupportFragmentManager().g(R.id.suggestions);
+                    if (g == null || !(g instanceof deue)) {
+                        int i3 = dete.a;
+                        dete.b(suggestionListChimeraActivity);
                         return;
                     }
                     EditText editText2 = editText;
                     bp bpVar2 = new bp(suggestionListChimeraActivity.getSupportFragmentManager());
-                    bpVar2.F(R.id.content_frame, new dcli());
+                    bpVar2.F(R.id.suggestions, new dewc());
                     bpVar2.a();
                     editText2.setText("");
                     editText2.clearFocus();
                 }
             });
         }
-        ((dcko) this.j.a()).a.g(this, new dckv(new fvaq() { // from class: dcku
-            @Override // defpackage.fvaq
+        ((devi) this.j.a()).a.g(this, new devp(new fxwo() { // from class: devo
+            @Override // defpackage.fxwo
             public final Object a(Object obj) {
                 Intent a;
-                dcmm dcmmVar = (dcmm) obj;
-                fvbo.f(dcmmVar, "item");
-                int i3 = dciy.a;
-                dciy.a();
-                fhip fhipVar = dcmmVar.d;
-                if (fhipVar == null) {
-                    fhipVar = fhip.a;
+                dexp dexpVar = (dexp) obj;
+                fxxm.f(dexpVar, "item");
+                int i3 = dete.a;
+                dete.a();
+                fjym fjymVar = dexpVar.d;
+                if (fjymVar == null) {
+                    fjymVar = fjym.a;
                 }
-                double d = fhipVar.b;
-                fhip fhipVar2 = dcmmVar.d;
-                if (fhipVar2 == null) {
-                    fhipVar2 = fhip.a;
+                double d = fjymVar.b;
+                fjym fjymVar2 = dexpVar.d;
+                if (fjymVar2 == null) {
+                    fjymVar2 = fjym.a;
                 }
                 SuggestionListChimeraActivity suggestionListChimeraActivity = this;
-                abv abvVar = abv.this;
-                double d2 = fhipVar2.c;
-                String str = dcmmVar.g;
-                fvbo.e(str, "getDisplayAddress(...)");
-                String str2 = dcmmVar.c;
-                fvbo.e(str2, "getPlaceId(...)");
-                String str3 = dcmmVar.f;
-                fvbo.e(str3, "getDisplayName(...)");
-                a = dcje.a(suggestionListChimeraActivity, d, d2, str, str2, str3, 2, null, null);
-                abvVar.b(a);
-                return fuvs.a;
+                aca acaVar = aca.this;
+                double d2 = fjymVar2.c;
+                String str = dexpVar.g;
+                fxxm.e(str, "getDisplayAddress(...)");
+                String str2 = dexpVar.c;
+                fxxm.e(str2, "getPlaceId(...)");
+                String str3 = dexpVar.f;
+                fxxm.e(str3, "getDisplayName(...)");
+                a = detk.a(suggestionListChimeraActivity, d, d2, str, str2, str3, 2, null, null);
+                acaVar.b(a);
+                return fxrq.a;
             }
         }));
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStart() {
         super.onStart();
-        int i = dciy.a;
-        dciy.d(this);
+        int i = dete.a;
+        dete.d(this);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStop() {
-        int i = dciy.a;
-        dciy.e(this);
+        int i = dete.a;
+        dete.e(this);
         super.onStop();
     }
 }

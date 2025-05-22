@@ -7,9 +7,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.wallet.ui.common.ImageWithCaptionView;
-import defpackage.efwo;
+import defpackage.eijr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class InstrumentDetailsView extends RelativeLayout {
     public ImageWithCaptionView a;
@@ -22,7 +22,7 @@ public class InstrumentDetailsView extends RelativeLayout {
     public final void a(View view, int i) {
         RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) view.getLayoutParams();
         layoutParams.addRule(3, i);
-        int i2 = efwo.b;
+        int i2 = eijr.b;
         layoutParams.addRule(17, this.a.getId());
         view.setLayoutParams(layoutParams);
     }
@@ -37,7 +37,7 @@ public class InstrumentDetailsView extends RelativeLayout {
     @Override // android.view.View
     public final void setEnabled(boolean z) {
         super.setEnabled(z);
-        efwo.N(this, z);
+        eijr.N(this, z);
     }
 
     public InstrumentDetailsView(Context context, AttributeSet attributeSet) {

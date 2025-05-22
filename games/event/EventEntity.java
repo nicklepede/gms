@@ -6,17 +6,17 @@ import android.os.Parcelable;
 import com.google.android.gms.games.Player;
 import com.google.android.gms.games.PlayerEntity;
 import com.google.android.gms.games.internal.GamesAbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bhmi;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bjqx;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class EventEntity extends GamesAbstractSafeParcelable implements Event {
-    public static final Parcelable.Creator CREATOR = new bhmi();
+    public static final Parcelable.Creator CREATOR = new bjqx();
     public final String a;
     public final String b;
     public final String c;
@@ -72,7 +72,7 @@ public final class EventEntity extends GamesAbstractSafeParcelable implements Ev
             return true;
         }
         Event event = (Event) obj;
-        return arwb.b(event.e(), this.a) && arwb.b(event.g(), this.b) && arwb.b(event.d(), this.c) && arwb.b(event.b(), this.d) && arwb.b(event.getIconImageUrl(), this.e) && arwb.b(event.c(), this.f) && arwb.b(Long.valueOf(event.a()), Long.valueOf(this.g)) && arwb.b(event.f(), this.h) && arwb.b(Boolean.valueOf(event.h()), Boolean.valueOf(this.i));
+        return atyq.b(event.e(), this.a) && atyq.b(event.g(), this.b) && atyq.b(event.d(), this.c) && atyq.b(event.b(), this.d) && atyq.b(event.getIconImageUrl(), this.e) && atyq.b(event.c(), this.f) && atyq.b(Long.valueOf(event.a()), Long.valueOf(this.g)) && atyq.b(event.f(), this.h) && atyq.b(Boolean.valueOf(event.h()), Boolean.valueOf(this.i));
     }
 
     @Override // com.google.android.gms.games.event.Event
@@ -101,35 +101,35 @@ public final class EventEntity extends GamesAbstractSafeParcelable implements Ev
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("Id", this.a, arrayList);
-        arwa.b("Name", this.b, arrayList);
-        arwa.b("Description", this.c, arrayList);
-        arwa.b("IconImageUri", this.d, arrayList);
-        arwa.b("IconImageUrl", this.e, arrayList);
-        arwa.b("Player", this.f, arrayList);
-        arwa.b("Value", Long.valueOf(this.g), arrayList);
-        arwa.b("FormattedValue", this.h, arrayList);
-        arwa.b("isVisible", Boolean.valueOf(this.i), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("Id", this.a, arrayList);
+        atyp.b("Name", this.b, arrayList);
+        atyp.b("Description", this.c, arrayList);
+        atyp.b("IconImageUri", this.d, arrayList);
+        atyp.b("IconImageUrl", this.e, arrayList);
+        atyp.b("Player", this.f, arrayList);
+        atyp.b("Value", Long.valueOf(this.g), arrayList);
+        atyp.b("FormattedValue", this.h, arrayList);
+        atyp.b("isVisible", Boolean.valueOf(this.i), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.q(parcel, 7, this.g);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.e(parcel, 9, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.q(parcel, 7, this.g);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.e(parcel, 9, this.i);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

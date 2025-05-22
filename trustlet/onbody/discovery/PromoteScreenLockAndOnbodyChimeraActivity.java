@@ -10,31 +10,31 @@ import android.widget.TextView;
 import androidx.activity.result.ActivityResult;
 import com.google.android.gms.R;
 import com.google.android.setupdesign.GlifLayout;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.dglq;
-import defpackage.dgmd;
-import defpackage.dgna;
-import defpackage.dgsz;
-import defpackage.dgta;
-import defpackage.dgtg;
-import defpackage.dgth;
-import defpackage.dgti;
-import defpackage.dgtj;
-import defpackage.dgtk;
-import defpackage.dgtl;
-import defpackage.ejhf;
-import defpackage.jti;
-import defpackage.qfp;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.diwv;
+import defpackage.dixi;
+import defpackage.diyf;
+import defpackage.djee;
+import defpackage.djef;
+import defpackage.djel;
+import defpackage.djem;
+import defpackage.djen;
+import defpackage.djeo;
+import defpackage.djep;
+import defpackage.djeq;
+import defpackage.eluo;
+import defpackage.jzx;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dgsz, abt {
-    public dgta k;
-    private dgtl n;
+public class PromoteScreenLockAndOnbodyChimeraActivity extends ryt implements djee, aby {
+    public djef k;
+    private djeq n;
     private KeyguardManager o;
     private Button p;
     private Button q;
@@ -42,18 +42,18 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
     private TextView s;
     private ProgressBar t;
     private GlifLayout u;
-    private abv v;
-    private static final asot l = asot.b("Trustlet_Onbody", asej.TRUSTLET_ONBODY);
-    public static final dglq j = new dgtj();
-    private final dgtk m = new dgtk(this);
+    private aca v;
+    private static final ausn l = ausn.b("Trustlet_Onbody", auid.TRUSTLET_ONBODY);
+    public static final diwv j = new djeo();
+    private final djep m = new djep(this);
     private int w = 0;
 
-    private final abv l() {
-        abv abvVar = this.v;
-        if (abvVar != null) {
-            return abvVar;
+    private final aca l() {
+        aca acaVar = this.v;
+        if (acaVar != null) {
+            return acaVar;
         }
-        abv registerForActivityResult = registerForActivityResult(new acl(), this);
+        aca registerForActivityResult = registerForActivityResult(new acq(), this);
         this.v = registerForActivityResult;
         return registerForActivityResult;
     }
@@ -61,13 +61,13 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
     private final void m(boolean z) {
         this.p.setVisibility(0);
         this.p.setText(getString(R.string.trust_agent_button_got_it));
-        this.p.setOnClickListener(new dgtg(this, z));
+        this.p.setOnClickListener(new djel(this, z));
     }
 
-    @Override // defpackage.dgsz
+    @Override // defpackage.djee
     public final void b() {
         if (!this.o.isDeviceSecure()) {
-            Intent a = dgna.a(getApplicationContext());
+            Intent a = diyf.a(getApplicationContext());
             this.w = 1;
             l().b(a);
         } else {
@@ -78,7 +78,7 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
         }
     }
 
-    @Override // defpackage.dgsz
+    @Override // defpackage.djee
     public final void c() {
         this.q.setVisibility(8);
         this.p.setVisibility(8);
@@ -86,21 +86,21 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
         this.s.setVisibility(8);
         this.t.setVisibility(0);
         this.u.H(R.string.trust_agent_checking_smartlock_status);
-        jti.a(this).c(0, new Bundle(), this.m);
+        jzx.a(this).c(0, new Bundle(), this.m);
     }
 
-    @Override // defpackage.dgsz
+    @Override // defpackage.djee
     public final void d() {
-        dgtl dgtlVar = this.n;
-        dgtlVar.b = true;
-        dgmd dgmdVar = dgtlVar.c;
-        if (dgmdVar == null || !dgmdVar.k()) {
+        djeq djeqVar = this.n;
+        djeqVar.b = true;
+        dixi dixiVar = djeqVar.c;
+        if (dixiVar == null || !dixiVar.k()) {
             return;
         }
-        dgtlVar.x();
+        djeqVar.x();
     }
 
-    @Override // defpackage.dgsz
+    @Override // defpackage.djee
     public final void e() {
         this.q.setVisibility(0);
         this.p.setVisibility(0);
@@ -109,11 +109,11 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
         this.t.setVisibility(8);
         this.u.b(this.k.b());
         this.r.addView(this.k.a(getLayoutInflater()));
-        this.p.setOnClickListener(new dgth(this));
-        this.q.setOnClickListener(new dgti(this));
+        this.p.setOnClickListener(new djem(this));
+        this.q.setOnClickListener(new djen(this));
     }
 
-    @Override // defpackage.dgsz
+    @Override // defpackage.djee
     public final void f() {
         this.q.setVisibility(8);
         this.r.setVisibility(8);
@@ -124,14 +124,14 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
         m(true);
     }
 
-    @Override // defpackage.dgsz
+    @Override // defpackage.djee
     public final void g() {
         this.q.setVisibility(8);
         this.r.setVisibility(8);
         this.s.setVisibility(0);
         this.t.setVisibility(8);
         this.u.b(this.k.e());
-        this.u.I(getDrawable(2131233391));
+        this.u.I(getDrawable(2131233457));
         if (this.k.d().isEmpty()) {
             this.s.setVisibility(8);
         } else {
@@ -140,18 +140,18 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
         m(false);
     }
 
-    @Override // defpackage.dgsz
+    @Override // defpackage.djee
     public final boolean h() {
         return this.o.isDeviceSecure();
     }
 
-    @Override // defpackage.abt
-    public final /* bridge */ /* synthetic */ void jq(Object obj) {
+    @Override // defpackage.aby
+    public final /* bridge */ /* synthetic */ void jF(Object obj) {
         int i = ((ActivityResult) obj).a;
         int i2 = this.w;
         if (i2 != 1) {
             if (i2 != 2) {
-                ((ejhf) l.j()).z("Invalid request code: %s", i2);
+                ((eluo) l.j()).z("Invalid request code: %s", i2);
                 return;
             } else if (i == -1) {
                 this.k.i();
@@ -165,10 +165,10 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
             k();
             return;
         }
-        dgtl dgtlVar = this.n;
-        dgmd dgmdVar = dgtlVar.c;
-        if (dgmdVar != null && dgmdVar.k()) {
-            dgtlVar.c.f("screen_lock_set_from", dgtlVar.a);
+        djeq djeqVar = this.n;
+        dixi dixiVar = djeqVar.c;
+        if (dixiVar != null && dixiVar.k()) {
+            djeqVar.c.f("screen_lock_set_from", djeqVar.a);
         }
         this.k.j();
     }
@@ -182,7 +182,7 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
     
         if (r0.equals("com.google.android.gms.trustlet.onbody.discovery.OnbodyPromotionActivity") == false) goto L25;
      */
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -195,11 +195,11 @@ public class PromoteScreenLockAndOnbodyChimeraActivity extends qfp implements dg
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.trustlet.onbody.discovery.PromoteScreenLockAndOnbodyChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
-        dgta dgtaVar = this.k;
-        if (dgtaVar != null) {
-            dgtaVar.g();
+        djef djefVar = this.k;
+        if (djefVar != null) {
+            djefVar.g();
         }
         super.onDestroy();
     }

@@ -5,28 +5,28 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.cbta;
-import defpackage.cbwh;
-import defpackage.cbwi;
-import defpackage.cbwl;
-import defpackage.cbwm;
-import defpackage.cbwo;
-import defpackage.cbwp;
-import defpackage.ensv;
-import defpackage.fpzu;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.cebs;
+import defpackage.ceez;
+import defpackage.cefa;
+import defpackage.cefd;
+import defpackage.cefe;
+import defpackage.cefg;
+import defpackage.cefh;
+import defpackage.eqgo;
+import defpackage.fstq;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.Timer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class WifiSyncChimeraService extends Service {
-    public static final asot a = cbta.a("WifiSyncService");
-    public final ensv b;
-    public final cbwm c;
+    public static final ausn a = cebs.a("WifiSyncService");
+    public final eqgo b;
+    public final cefe c;
     public PlatformWifiBroadcastReceiver d;
     public ChromeSyncBroadcastReceiver e;
     public Timer f;
@@ -34,15 +34,15 @@ public class WifiSyncChimeraService extends Service {
     public long h;
     public int i;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class ChromeSyncBroadcastReceiver extends TracingBroadcastReceiver {
         public ChromeSyncBroadcastReceiver() {
             super("auth_magictether");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
-            if (!fpzu.g() && "wifisync.CHROME_SYNC_DATA_UPDATED".equals(intent.getAction())) {
+        public final void jP(Context context, Intent intent) {
+            if (!fstq.f() && "wifisync.CHROME_SYNC_DATA_UPDATED".equals(intent.getAction())) {
                 WifiSyncChimeraService wifiSyncChimeraService = WifiSyncChimeraService.this;
                 wifiSyncChimeraService.c.d(1);
                 intent.getStringExtra("account_name");
@@ -51,15 +51,15 @@ public class WifiSyncChimeraService extends Service {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class PlatformWifiBroadcastReceiver extends TracingBroadcastReceiver {
         public PlatformWifiBroadcastReceiver() {
             super("auth_magictether");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
-            if (!fpzu.g() && "android.net.wifi.CONFIGURED_NETWORKS_CHANGE".equals(intent.getAction())) {
+        public final void jP(Context context, Intent intent) {
+            if (!fstq.f() && "android.net.wifi.CONFIGURED_NETWORKS_CHANGE".equals(intent.getAction())) {
                 WifiSyncChimeraService wifiSyncChimeraService = WifiSyncChimeraService.this;
                 wifiSyncChimeraService.c.d(0);
                 wifiSyncChimeraService.b();
@@ -72,8 +72,8 @@ public class WifiSyncChimeraService extends Service {
         this.g = new HashSet();
         this.h = 0L;
         this.i = 0;
-        this.b = new asmf(1, 10);
-        this.c = cbwl.a();
+        this.b = new aupz(1, 10);
+        this.c = cefd.a();
     }
 
     public static Intent a(Context context) {
@@ -87,7 +87,7 @@ public class WifiSyncChimeraService extends Service {
         }
         Timer timer2 = new Timer();
         this.f = timer2;
-        timer2.schedule(new cbwo(this), fpzu.b());
+        timer2.schedule(new cefg(this), fstq.b());
     }
 
     @Override // com.google.android.chimera.Service
@@ -97,12 +97,12 @@ public class WifiSyncChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        if (fpzu.g()) {
+        if (fstq.f()) {
             return;
         }
-        Iterator it = cbwh.a.b.values().iterator();
+        Iterator it = ceez.a.b.values().iterator();
         while (it.hasNext()) {
-            ((cbwi) it.next()).c();
+            ((cefa) it.next()).c();
         }
         ChromeSyncBroadcastReceiver chromeSyncBroadcastReceiver = this.e;
         if (chromeSyncBroadcastReceiver != null) {
@@ -120,20 +120,20 @@ public class WifiSyncChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        if (fpzu.g() || !fpzu.e()) {
+        if (fstq.f() || !fstq.d()) {
             stopSelf();
             return 2;
         }
-        this.b.execute(new cbwp(this));
+        this.b.execute(new cefh(this));
         return 1;
     }
 
-    WifiSyncChimeraService(ensv ensvVar) {
+    WifiSyncChimeraService(eqgo eqgoVar) {
         this.f = null;
         this.g = new HashSet();
         this.h = 0L;
         this.i = 0;
-        this.b = ensvVar;
-        this.c = cbwl.a();
+        this.b = eqgoVar;
+        this.c = cefd.a();
     }
 }

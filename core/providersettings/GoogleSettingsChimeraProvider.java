@@ -4,19 +4,19 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 import com.google.android.chimera.ContentProvider;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.ejhf;
-import defpackage.ips;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.eluo;
+import defpackage.iri;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class GoogleSettingsChimeraProvider extends ContentProvider {
-    private static final asot a = asot.b("GoogleSettingsProvider", asej.CORE);
+    private static final ausn a = ausn.b("GoogleSettingsProvider", auid.CORE);
 
     private static final void a() {
-        int i = ips.a;
-        ((ejhf) ((ejhf) a.j()).ah((char) 3305)).x("Provider is only supported on API 35+");
+        int i = iri.a;
+        ((eluo) ((eluo) a.j()).ai((char) 3309)).x("Provider is only supported on API 35+");
     }
 
     @Override // com.google.android.chimera.ContentProvider
@@ -45,8 +45,8 @@ public class GoogleSettingsChimeraProvider extends ContentProvider {
 
     @Override // com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
-        int i = ips.a;
-        ((ejhf) ((ejhf) a.j()).ah((char) 3308)).x("Provider is only supported on API 35+");
+        int i = iri.a;
+        ((eluo) ((eluo) a.j()).ai((char) 3312)).x("Provider is only supported on API 35+");
         return false;
     }
 

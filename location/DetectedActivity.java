@@ -3,22 +3,22 @@ package com.google.android.gms.location;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bzhl;
-import defpackage.bzhm;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cbqc;
+import defpackage.cbqd;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class DetectedActivity extends AbstractSafeParcelable {
     final int d;
     public final int e;
-    public static final Comparator a = new bzhl();
+    public static final Comparator a = new cbqc();
     public static final int[] b = {9, 10};
     public static final int[] c = {0, 1, 2, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22};
-    public static final Parcelable.Creator CREATOR = new bzhm();
+    public static final Parcelable.Creator CREATOR = new cbqd();
 
     public DetectedActivity(int i, int i2) {
         this.d = i;
@@ -65,10 +65,10 @@ public class DetectedActivity extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        arwm.s(parcel);
-        int a2 = arxc.a(parcel);
-        arxc.o(parcel, 1, this.d);
-        arxc.o(parcel, 2, this.e);
-        arxc.c(parcel, a2);
+        atzb.s(parcel);
+        int a2 = atzr.a(parcel);
+        atzr.o(parcel, 1, this.d);
+        atzr.o(parcel, 2, this.e);
+        atzr.c(parcel, a2);
     }
 }

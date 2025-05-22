@@ -5,11 +5,11 @@ import android.content.SharedPreferences;
 import com.google.android.gms.ads.internal.client.w;
 import com.google.android.gms.ads.internal.config.i;
 import com.google.android.gms.ads.internal.config.p;
-import defpackage.fmpp;
+import defpackage.fphn;
 import java.util.HashSet;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class d {
     public static final Set a;
@@ -34,7 +34,7 @@ public final class d {
         }
         SharedPreferences.Editor edit = b.edit();
         com.google.android.gms.ads.internal.flag.b.a(new c(edit));
-        edit.putString("gad:dynamite_module:experiment_id", fmpp.a.a().a());
+        edit.putString("gad:dynamite_module:experiment_id", fphn.a.lK().a());
         if (((Boolean) p.af.g()).booleanValue()) {
             return;
         }

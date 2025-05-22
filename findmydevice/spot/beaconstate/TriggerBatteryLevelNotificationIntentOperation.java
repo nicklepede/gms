@@ -5,66 +5,66 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import defpackage.a;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bcyc;
-import defpackage.bcyd;
-import defpackage.bczc;
-import defpackage.bebc;
-import defpackage.bebk;
-import defpackage.bebl;
-import defpackage.bebo;
-import defpackage.bebp;
-import defpackage.bfdp;
-import defpackage.bfiz;
-import defpackage.dnlf;
-import defpackage.dwup;
-import defpackage.dwvc;
-import defpackage.egmx;
-import defpackage.eiho;
-import defpackage.ejhf;
-import defpackage.enqc;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.ensw;
-import defpackage.eufn;
-import defpackage.fecj;
-import defpackage.fixm;
-import defpackage.fobb;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bezo;
+import defpackage.bezp;
+import defpackage.bfao;
+import defpackage.bgco;
+import defpackage.bgcw;
+import defpackage.bgcx;
+import defpackage.bgda;
+import defpackage.bgdb;
+import defpackage.bhff;
+import defpackage.bhkp;
+import defpackage.dpvo;
+import defpackage.dzgp;
+import defpackage.dzhc;
+import defpackage.ejaa;
+import defpackage.ekut;
+import defpackage.eluo;
+import defpackage.eqdv;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.eqgp;
+import defpackage.ewvg;
+import defpackage.fgrc;
+import defpackage.flnj;
+import defpackage.fqsv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class TriggerBatteryLevelNotificationIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("BatteryLevelNotifIntOp", asej.FIND_MY_DEVICE_SPOT);
-    private final bebl b;
+    private static final ausn a = ausn.b("BatteryLevelNotifIntOp", auid.FIND_MY_DEVICE_SPOT);
+    private final bgcx b;
 
     public TriggerBatteryLevelNotificationIntentOperation() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         int i;
-        enss d;
-        if (bfdp.b(intent, "com.google.android.gms.findmydevice.spot.beaconstate.TRIGGER_BATTERY_LEVEL_NOTIFICATION")) {
-            if (!fobb.f()) {
-                ((ejhf) ((ejhf) a.j()).ah((char) 3934)).x("Fast Pair Accessories are disabled.");
+        eqgl e;
+        if (bhff.b(intent, "com.google.android.gms.findmydevice.spot.beaconstate.TRIGGER_BATTERY_LEVEL_NOTIFICATION")) {
+            if (!fqsv.f()) {
+                ((eluo) ((eluo) a.j()).ai((char) 3940)).x("Fast Pair Accessories are disabled.");
                 return;
             }
             String stringExtra = intent.getStringExtra("device_id");
             if (stringExtra == null) {
-                ((ejhf) ((ejhf) a.j()).ah((char) 3933)).x("No canonic device id in intent");
+                ((eluo) ((eluo) a.j()).ai((char) 3939)).x("No canonic device id in intent");
                 return;
             }
-            fecj v = eufn.a.v();
+            fgrc v = ewvg.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            ((eufn) v.b).b = stringExtra;
-            eufn eufnVar = (eufn) v.Q();
+            ((ewvg) v.b).b = stringExtra;
+            ewvg ewvgVar = (ewvg) v.Q();
             int intExtra = intent.getIntExtra("battery_level", -1);
             if (intExtra == -1) {
-                ((ejhf) ((ejhf) a.j()).ah((char) 3932)).x("No battery level in intent");
+                ((eluo) ((eluo) a.j()).ai((char) 3938)).x("No battery level in intent");
                 return;
             }
             if (intExtra != 0) {
@@ -85,126 +85,126 @@ public class TriggerBatteryLevelNotificationIntentOperation extends IntentOperat
             }
             int i3 = i - 1;
             if (i3 == 0 || i3 == 1) {
-                ((ejhf) ((ejhf) a.j()).ah((char) 3931)).z("Unexpected battery level %s", intExtra);
+                ((eluo) ((eluo) a.j()).ai((char) 3937)).z("Unexpected battery level %s", intExtra);
                 return;
             }
             Account account = (Account) intent.getParcelableExtra("account");
             if (account != null) {
-                bebc b = this.b.b(account);
-                bebo beboVar = b.P;
-                fixm fixmVar = b.e;
-                fixm fixmVar2 = beboVar.w;
-                fixm fixmVar3 = beboVar.e;
-                fixm fixmVar4 = beboVar.b;
-                fixmVar2.getClass();
-                fixmVar3.getClass();
-                fixmVar4.getClass();
-                Context b2 = bebk.b();
-                dwvc dwvcVar = (dwvc) fixmVar2.a();
-                dwvcVar.getClass();
-                bcyc a2 = ((bcyd) fixmVar).a();
-                dnlf dnlfVar = (dnlf) fixmVar3.a();
-                dnlfVar.getClass();
-                ensw enswVar = (ensw) fixmVar4.a();
-                enswVar.getClass();
-                eufnVar.getClass();
-                final bczc bczcVar = new bczc(b2, dwvcVar, a2, dnlfVar, enswVar, eufnVar, i);
-                if (bfiz.b(bczcVar.b, bczcVar.g)) {
-                    egmx f = egmx.f(bczcVar.c.j(bczcVar.f));
-                    enqc enqcVar = new enqc() { // from class: bcyz
-                        @Override // defpackage.enqc
-                        public final enss a(Object obj) {
-                            eiid eiidVar = (eiid) obj;
-                            if (!eiidVar.h()) {
-                                ((ejhf) bczc.a.j()).x("Failed notifying battery level change - no device in cache.");
-                                return ensj.i(eigb.a);
+                bgco b = this.b.b(account);
+                bgda bgdaVar = b.P;
+                flnj flnjVar = b.e;
+                flnj flnjVar2 = bgdaVar.w;
+                flnj flnjVar3 = bgdaVar.e;
+                flnj flnjVar4 = bgdaVar.b;
+                flnjVar2.getClass();
+                flnjVar3.getClass();
+                flnjVar4.getClass();
+                Context b2 = bgcw.b();
+                dzhc dzhcVar = (dzhc) flnjVar2.a();
+                dzhcVar.getClass();
+                bezo a2 = ((bezp) flnjVar).a();
+                dpvo dpvoVar = (dpvo) flnjVar3.a();
+                dpvoVar.getClass();
+                eqgp eqgpVar = (eqgp) flnjVar4.a();
+                eqgpVar.getClass();
+                ewvgVar.getClass();
+                final bfao bfaoVar = new bfao(b2, dzhcVar, a2, dpvoVar, eqgpVar, ewvgVar, i);
+                if (bhkp.b(bfaoVar.b, bfaoVar.g)) {
+                    ejaa g = ejaa.g(bfaoVar.c.j(bfaoVar.f));
+                    eqdv eqdvVar = new eqdv() { // from class: bfal
+                        @Override // defpackage.eqdv
+                        public final eqgl a(Object obj) {
+                            ekvi ekviVar = (ekvi) obj;
+                            if (!ekviVar.h()) {
+                                ((eluo) bfao.a.j()).x("Failed notifying battery level change - no device in cache.");
+                                return eqgc.i(ektg.a);
                             }
-                            bczc bczcVar2 = bczc.this;
-                            if (!bcyx.a((dwuv) eiidVar.c(), bczcVar2.h, bczcVar2.d.d().toEpochMilli())) {
-                                ((ejhf) bczc.a.j()).x("Should not trigger battery level notification.");
-                                return ensj.i(eigb.a);
+                            bfao bfaoVar2 = bfao.this;
+                            if (!bfaj.a((dzgv) ekviVar.c(), bfaoVar2.h, bfaoVar2.d.d().toEpochMilli())) {
+                                ((eluo) bfao.a.j()).x("Should not trigger battery level notification.");
+                                return eqgc.i(ektg.a);
                             }
-                            bcyc bcycVar = bczcVar2.i;
-                            eufn eufnVar2 = bczcVar2.f;
-                            eujv eujvVar = (eujv) bcycVar.a.o(bzgc.a, bxqv.b);
-                            euhi euhiVar = euhi.a;
-                            fecj v2 = euhiVar.v();
+                            bezo bezoVar = bfaoVar2.i;
+                            ewvg ewvgVar2 = bfaoVar2.f;
+                            ewzo ewzoVar = (ewzo) bezoVar.a.o(cbot.a, bzzl.b);
+                            ewxb ewxbVar = ewxb.a;
+                            fgrc v2 = ewxbVar.v();
                             if (!v2.b.L()) {
                                 v2.U();
                             }
-                            euhi euhiVar2 = (euhi) v2.b;
-                            euhiVar2.c = eufnVar2;
-                            euhiVar2.b |= 1;
-                            euhi euhiVar3 = (euhi) v2.Q();
-                            fttm fttmVar = eujvVar.a;
-                            ftxe ftxeVar = eujw.j;
-                            if (ftxeVar == null) {
-                                synchronized (eujw.class) {
-                                    ftxeVar = eujw.j;
-                                    if (ftxeVar == null) {
-                                        ftxb a3 = ftxe.a();
-                                        a3.c = ftxd.UNARY;
-                                        a3.d = ftxe.c("google.internal.spot.v1.SpotService", "GetBleDevice");
+                            ewxb ewxbVar2 = (ewxb) v2.b;
+                            ewxbVar2.c = ewvgVar2;
+                            ewxbVar2.b |= 1;
+                            ewxb ewxbVar3 = (ewxb) v2.Q();
+                            fwpk fwpkVar = ewzoVar.a;
+                            fwtc fwtcVar = ewzp.j;
+                            if (fwtcVar == null) {
+                                synchronized (ewzp.class) {
+                                    fwtcVar = ewzp.j;
+                                    if (fwtcVar == null) {
+                                        fwsz a3 = fwtc.a();
+                                        a3.c = fwtb.UNARY;
+                                        a3.d = fwtc.c("google.internal.spot.v1.SpotService", "GetBleDevice");
                                         a3.b();
-                                        febw febwVar = furo.a;
-                                        a3.a = new furn(euhiVar);
-                                        a3.b = new furn(euhj.a);
-                                        ftxe a4 = a3.a();
-                                        eujw.j = a4;
-                                        ftxeVar = a4;
+                                        fgqp fgqpVar = fxnm.a;
+                                        a3.a = new fxnl(ewxbVar);
+                                        a3.b = new fxnl(ewxc.a);
+                                        fwtc a4 = a3.a();
+                                        ewzp.j = a4;
+                                        fwtcVar = a4;
                                     }
                                 }
                             }
-                            return egmx.f(bcxc.a(fusb.a(fttmVar.a(ftxeVar, eujvVar.b), euhiVar3), "getOwnedDevice", bcycVar.e)).h(new eiho() { // from class: bcxt
-                                @Override // defpackage.eiho
+                            return ejaa.g(beyo.a(fxnz.a(fwpkVar.a(fwtcVar, ewzoVar.b), ewxbVar3), "getOwnedDevice")).h(new ekut() { // from class: bezf
+                                @Override // defpackage.ekut
                                 public final Object apply(Object obj2) {
-                                    euhj euhjVar = (euhj) obj2;
-                                    if ((euhjVar.b & 1) == 0) {
-                                        return eigb.a;
+                                    ewxc ewxcVar = (ewxc) obj2;
+                                    if ((ewxcVar.b & 1) == 0) {
+                                        return ektg.a;
                                     }
-                                    eugc eugcVar = euhjVar.c;
-                                    if (eugcVar == null) {
-                                        eugcVar = eugc.a;
+                                    ewvv ewvvVar = ewxcVar.c;
+                                    if (ewvvVar == null) {
+                                        ewvvVar = ewvv.a;
                                     }
-                                    return eiid.j(eugcVar);
+                                    return ekvi.j(ewvvVar);
                                 }
-                            }, bcycVar.c);
+                            }, bezoVar.c);
                         }
                     };
-                    ensw enswVar2 = bczcVar.e;
-                    d = f.i(enqcVar, enswVar2).i(new enqc() { // from class: bcza
+                    eqgp eqgpVar2 = bfaoVar.e;
+                    e = g.i(eqdvVar, eqgpVar2).i(new eqdv() { // from class: bfam
                         /* JADX WARN: Code restructure failed: missing block: B:31:0x005a, code lost:
                         
                             if (r0 != 28) goto L35;
                          */
-                        @Override // defpackage.enqc
+                        @Override // defpackage.eqdv
                         /*
                             Code decompiled incorrectly, please refer to instructions dump.
                             To view partially-correct code enable 'Show inconsistent code' option in preferences
                         */
-                        public final defpackage.enss a(java.lang.Object r10) {
+                        public final defpackage.eqgl a(java.lang.Object r10) {
                             /*
                                 Method dump skipped, instructions count: 267
                                 To view this dump change 'Code comments level' option to 'DEBUG'
                             */
-                            throw new UnsupportedOperationException("Method not decompiled: defpackage.bcza.a(java.lang.Object):enss");
+                            throw new UnsupportedOperationException("Method not decompiled: defpackage.bfam.a(java.lang.Object):eqgl");
                         }
-                    }, enswVar2).d(Exception.class, new eiho() { // from class: bczb
-                        @Override // defpackage.eiho
+                    }, eqgpVar2).e(Exception.class, new ekut() { // from class: bfan
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
-                            ((ejhf) ((ejhf) bczc.a.j()).s((Exception) obj)).x("Failed notifying battery level change.");
+                            ((eluo) ((eluo) bfao.a.j()).s((Exception) obj)).x("Failed notifying battery level change.");
                             return null;
                         }
-                    }, enswVar2);
+                    }, eqgpVar2);
                 } else {
-                    d = ensm.a;
+                    e = eqgf.a;
                 }
-                dwup.a("Triggering battery level notification", d);
+                dzgp.a("Triggering battery level notification", e);
             }
         }
     }
 
-    public TriggerBatteryLevelNotificationIntentOperation(bebp bebpVar) {
-        this.b = bebpVar.i();
+    public TriggerBatteryLevelNotificationIntentOperation(bgdb bgdbVar) {
+        this.b = bgdbVar.i();
     }
 }

@@ -3,16 +3,16 @@ package com.google.android.gms.wallet.analytics.events;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.difz;
-import defpackage.divi;
-import defpackage.divs;
-import defpackage.divt;
-import defpackage.fecj;
+import defpackage.dkrk;
+import defpackage.dlgt;
+import defpackage.dlhd;
+import defpackage.dlhe;
+import defpackage.fgrc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class OrchestrationDependentEvent extends WalletAnalyticsEvent implements divs {
-    public static final Parcelable.Creator CREATOR = new difz();
+public class OrchestrationDependentEvent extends WalletAnalyticsEvent implements dlhd {
+    public static final Parcelable.Creator CREATOR = new dkrk();
     private final String a;
     private final int b;
 
@@ -23,13 +23,13 @@ public class OrchestrationDependentEvent extends WalletAnalyticsEvent implements
     }
 
     public static void a(Context context, String str, String str2) {
-        divi.a(context, new OrchestrationDependentEvent(str, str2));
+        dlgt.a(context, new OrchestrationDependentEvent(str, str2));
     }
 
-    @Override // defpackage.divs
-    public final void b(Context context, divt divtVar, fecj fecjVar) {
-        divtVar.g = this.b;
-        divtVar.h = this.a;
+    @Override // defpackage.dlhd
+    public final void b(Context context, dlhe dlheVar, fgrc fgrcVar) {
+        dlheVar.g = this.b;
+        dlheVar.h = this.a;
     }
 
     @Override // android.os.Parcelable

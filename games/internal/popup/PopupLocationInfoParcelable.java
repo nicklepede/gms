@@ -5,14 +5,14 @@ import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.games.internal.GamesAbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bhpr;
-import defpackage.bhps;
+import defpackage.atzr;
+import defpackage.bjug;
+import defpackage.bjuh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class PopupLocationInfoParcelable extends GamesAbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bhps();
+    public static final Parcelable.Creator CREATOR = new bjuh();
     public final Bundle a;
     public final IBinder b;
 
@@ -24,14 +24,14 @@ public final class PopupLocationInfoParcelable extends GamesAbstractSafeParcelab
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Bundle bundle = this.a;
-        int a = arxc.a(parcel);
-        arxc.g(parcel, 1, bundle, false);
-        arxc.D(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.g(parcel, 1, bundle, false);
+        atzr.D(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 
-    public PopupLocationInfoParcelable(bhpr bhprVar) {
-        this.a = bhprVar.a();
-        this.b = bhprVar.a;
+    public PopupLocationInfoParcelable(bjug bjugVar) {
+        this.a = bjugVar.a();
+        this.b = bjugVar.a;
     }
 }

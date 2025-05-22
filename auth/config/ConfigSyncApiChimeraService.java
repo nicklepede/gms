@@ -2,30 +2,30 @@ package com.google.android.gms.auth.config;
 
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.aaoa;
-import defpackage.aaoc;
-import defpackage.aaof;
-import defpackage.adlm;
-import defpackage.aqxd;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.cvzk;
-import defpackage.cwal;
-import defpackage.ejck;
-import defpackage.ejdg;
+import defpackage.acoa;
+import defpackage.acoc;
+import defpackage.acof;
+import defpackage.aflt;
+import defpackage.aszs;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.cyjh;
+import defpackage.cyki;
+import defpackage.elpp;
+import defpackage.elqn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ConfigSyncApiChimeraService extends bxgd {
+public class ConfigSyncApiChimeraService extends bzot {
     public ConfigSyncApiChimeraService() {
-        super(221, "com.google.android.gms.auth.config.service.START", ejck.a, 0, 9, new ejdg("com.google.android.setupwizard"));
+        super(221, "com.google.android.gms.auth.config.service.START", elpp.a, 0, 9, new elqn("com.google.android.setupwizard"));
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgo l = l();
-        aqxd aqxdVar = cvzk.a;
-        bxgjVar.c(new aaoa(l, new aaof(new cwal(this), new adlm(), new aaoc(ModuleManager.get(this))), getServiceRequest.f));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzpe l = l();
+        aszs aszsVar = cyjh.a;
+        bzozVar.c(new acoa(l, new acof(new cyki(this), new aflt(), new acoc(ModuleManager.get(this))), getServiceRequest.f));
     }
 }

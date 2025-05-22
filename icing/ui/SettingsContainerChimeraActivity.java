@@ -5,24 +5,24 @@ import android.os.Bundle;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.libraries.material.progress.MaterialProgressBar;
-import defpackage.assn;
-import defpackage.blfw;
-import defpackage.blmk;
-import defpackage.blve;
-import defpackage.blvo;
-import defpackage.blxc;
-import defpackage.blxy;
+import defpackage.auwh;
+import defpackage.bnmo;
+import defpackage.bntc;
+import defpackage.bobw;
+import defpackage.bocg;
+import defpackage.bodu;
+import defpackage.boeq;
 import defpackage.bp;
-import defpackage.fpad;
-import defpackage.qet;
+import defpackage.frtk;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class SettingsContainerChimeraActivity extends qet {
-    private blvo j;
+public class SettingsContainerChimeraActivity extends rxx {
+    private bocg j;
 
-    @Override // defpackage.qet
-    public final boolean hu() {
+    @Override // defpackage.rxx
+    public final boolean hK() {
         if (getSupportFragmentManager().b() == 0) {
             finish();
             return true;
@@ -31,16 +31,16 @@ public class SettingsContainerChimeraActivity extends qet {
         return true;
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         char c;
         super.onCreate(bundle);
         String action = getIntent().getAction();
         if (action == null) {
-            blfw.f("SettingsContainerChimeraActivity received a null action.");
+            bnmo.f("SettingsContainerChimeraActivity received a null action.");
             return;
         }
-        blmk blmkVar = new blmk(getApplicationContext());
+        bntc bntcVar = new bntc(getApplicationContext());
         int hashCode = action.hashCode();
         if (hashCode == -1422852856) {
             if (action.equals("com.google.android.gms.icing.PRIVACY_SETTINGS")) {
@@ -62,28 +62,28 @@ public class SettingsContainerChimeraActivity extends qet {
             setContentView(R.layout.app_indexing_debug_activity);
             if (bundle == null) {
                 bp bpVar = new bp(getSupportFragmentManager());
-                bpVar.u(R.id.debug_container, new blxy(), "packagesFragment");
+                bpVar.u(R.id.debug_container, new boeq(), "packagesFragment");
                 bpVar.a();
             }
-            if (fpad.a.a().ab()) {
-                blmkVar.p(7003);
+            if (frtk.a.lK().aa()) {
+                bntcVar.p(7003);
                 return;
             }
             return;
         }
         if (c == 1) {
-            blmkVar.p(8003);
+            bntcVar.p(8003);
         } else if (c != 2) {
-            blfw.g("SettingsContainerChimeraActivity received unknown intent action: %s", action);
+            bnmo.g("SettingsContainerChimeraActivity received unknown intent action: %s", action);
             return;
         }
-        blmkVar.p(8005);
+        bntcVar.p(8005);
         if (this.j == null) {
-            this.j = new blvo(this);
+            this.j = new bocg(this);
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
@@ -92,42 +92,42 @@ public class SettingsContainerChimeraActivity extends qet {
             if (stringExtra == null) {
                 stringExtra = "";
             }
-            blxc blxcVar = (blxc) getSupportFragmentManager().h("indexablesFragment");
-            if (blxcVar != null) {
-                blxcVar.x(stringExtra);
+            bodu boduVar = (bodu) getSupportFragmentManager().h("indexablesFragment");
+            if (boduVar != null) {
+                boduVar.x(stringExtra);
             }
         }
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStart() {
         super.onStart();
-        blvo blvoVar = this.j;
-        if (blvoVar != null) {
-            blvoVar.b = true;
-            qet qetVar = blvoVar.a;
-            qetVar.setTitle(R.string.personalize_using_shared_data_settings_title);
-            qetVar.setContentView(R.layout.on_device_sharing_activity);
-            blvoVar.c = qetVar.getPackageManager();
-            blvoVar.h = new assn(qetVar);
-            blvoVar.i = blvoVar.h.H(R.string.personalize_using_shared_data_settings_apps_header);
-            blvoVar.j = blvoVar.h.H(R.string.personalize_using_shared_data_settings_other_sources_header);
-            blvoVar.h.D(qetVar.getWindow());
-            blvoVar.d = (MaterialProgressBar) qetVar.findViewById(R.id.progress);
-            blvoVar.e = (TextView) qetVar.findViewById(R.id.empty);
-            blvoVar.e.setText(R.string.personalize_using_shared_data_ui_empty);
-            blvoVar.f = (TextView) qetVar.findViewById(R.id.error);
-            blvoVar.f.setText(R.string.on_device_sharing_ui_error);
-            new blve(blvoVar).execute(new Void[0]);
+        bocg bocgVar = this.j;
+        if (bocgVar != null) {
+            bocgVar.b = true;
+            rxx rxxVar = bocgVar.a;
+            rxxVar.setTitle(R.string.personalize_using_shared_data_settings_title);
+            rxxVar.setContentView(R.layout.on_device_sharing_activity);
+            bocgVar.c = rxxVar.getPackageManager();
+            bocgVar.h = new auwh(rxxVar);
+            bocgVar.i = bocgVar.h.H(R.string.personalize_using_shared_data_settings_apps_header);
+            bocgVar.j = bocgVar.h.H(R.string.personalize_using_shared_data_settings_other_sources_header);
+            bocgVar.h.D(rxxVar.getWindow());
+            bocgVar.d = (MaterialProgressBar) rxxVar.findViewById(R.id.progress);
+            bocgVar.e = (TextView) rxxVar.findViewById(R.id.empty);
+            bocgVar.e.setText(R.string.personalize_using_shared_data_ui_empty);
+            bocgVar.f = (TextView) rxxVar.findViewById(R.id.error);
+            bocgVar.f.setText(R.string.on_device_sharing_ui_error);
+            new bobw(bocgVar).execute(new Void[0]);
         }
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStop() {
         super.onStop();
-        blvo blvoVar = this.j;
-        if (blvoVar != null) {
-            blvoVar.b = false;
+        bocg bocgVar = this.j;
+        if (bocgVar != null) {
+            bocgVar.b = false;
         }
     }
 }

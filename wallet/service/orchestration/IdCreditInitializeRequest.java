@@ -3,20 +3,20 @@ package com.google.android.gms.wallet.service.orchestration;
 import android.accounts.Account;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.service.GenericLiteProtoParcelable;
-import defpackage.dizs;
-import defpackage.eidn;
-import defpackage.feen;
+import defpackage.dlll;
+import defpackage.ekqt;
+import defpackage.fgtg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class IdCreditInitializeRequest extends GenericLiteProtoParcelable {
-    public static final Parcelable.Creator CREATOR = new dizs();
+    public static final Parcelable.Creator CREATOR = new dlll();
 
-    public IdCreditInitializeRequest(Account account, eidn eidnVar) {
-        super(account, (feen) eidn.a.iB(7, null), eidnVar);
+    public IdCreditInitializeRequest(Account account, ekqt ekqtVar) {
+        super(account, (fgtg) ekqt.a.iQ(7, null), ekqtVar);
     }
 
     public IdCreditInitializeRequest(Account account, byte[] bArr) {
-        super(account, (feen) eidn.a.iB(7, null), bArr);
+        super(account, (fgtg) ekqt.a.iQ(7, null), bArr);
     }
 }

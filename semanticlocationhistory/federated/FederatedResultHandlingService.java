@@ -2,31 +2,31 @@ package com.google.android.gms.semanticlocationhistory.federated;
 
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.learning.ExampleConsumption;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bqer;
-import defpackage.bqey;
-import defpackage.czje;
-import defpackage.daru;
-import defpackage.dasg;
-import defpackage.dasj;
-import defpackage.dauj;
-import defpackage.daxu;
-import defpackage.eius;
-import defpackage.eiuu;
-import defpackage.ejhf;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.esuu;
-import defpackage.evok;
-import defpackage.evos;
-import defpackage.evot;
-import defpackage.feag;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bsmh;
+import defpackage.bsmo;
+import defpackage.dbtc;
+import defpackage.ddcc;
+import defpackage.ddco;
+import defpackage.ddcr;
+import defpackage.dder;
+import defpackage.ddic;
+import defpackage.elhx;
+import defpackage.elhz;
+import defpackage.eluo;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.evkk;
+import defpackage.eyeg;
+import defpackage.eyeo;
+import defpackage.eyep;
+import defpackage.fgoz;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
 import j$.util.Objects;
 import j$.util.Optional;
 import j$.util.function.Consumer$CC;
@@ -34,121 +34,121 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class FederatedResultHandlingService extends bqer {
-    public static final asot a = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "FederatedResultHandlingService");
-    private czje b;
-    private daru c;
+public final class FederatedResultHandlingService extends bsmh {
+    public static final ausn a = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "FederatedResultHandlingService");
+    private dbtc b;
+    private ddcc c;
 
     public FederatedResultHandlingService() {
     }
 
-    private final czje b() {
+    private final dbtc b() {
         if (this.b == null) {
-            this.b = new czje();
+            this.b = new dbtc();
         }
         return this.b;
     }
 
-    private final daru c() {
+    private final ddcc c() {
         if (this.c == null) {
-            this.c = dasg.d();
+            this.c = ddco.d();
         }
         return this.c;
     }
 
-    @Override // defpackage.bqer
-    public final void a(boolean z, List list, bqey bqeyVar) {
+    @Override // defpackage.bsmh
+    public final void a(boolean z, List list, bsmo bsmoVar) {
         Optional empty;
         Optional empty2;
         if (!z) {
-            bqeyVar.a(Status.b);
+            bsmoVar.a(Status.b);
             return;
         }
-        final eius eiusVar = new eius();
-        final eius eiusVar2 = new eius();
+        final elhx elhxVar = new elhx();
+        final elhx elhxVar2 = new elhx();
         Iterator it = list.iterator();
         while (it.hasNext()) {
             byte[] bArr = ((ExampleConsumption) it.next()).b;
-            feag a2 = esuu.a(bArr);
+            fgoz a2 = evkk.a(bArr);
             if (a2 == null) {
                 try {
-                    fecp y = fecp.y(feag.a, bArr, 0, bArr.length, febw.a());
-                    fecp.M(y);
-                    a2 = (feag) y;
-                } catch (fedk unused) {
-                    ((ejhf) ((ejhf) a.j()).ah((char) 10403)).x("Error parsing Any proto from the selection criteria.");
+                    fgri y = fgri.y(fgoz.a, bArr, 0, bArr.length, fgqp.a());
+                    fgri.M(y);
+                    a2 = (fgoz) y;
+                } catch (fgsd unused) {
+                    ((eluo) ((eluo) a.j()).ai((char) 10409)).x("Error parsing Any proto from the selection criteria.");
                     b().e("ExampleStoreSelectionCriteriaParseFail");
                 }
             }
             if (a2.b.equals("type.googleapis.com/location.hulk.aggregates.federated.proto.examplestore.SelectionCriteria")) {
-                evok evokVar = evok.a;
+                eyeg eyegVar = eyeg.a;
                 try {
-                    evok a3 = dauj.a(a2);
+                    eyeg a3 = dder.a(a2);
                     b().k("ExampleStoreSelectionCriteriaParseSuccessPerTask", a3.d);
-                    if (dauj.i(a3)) {
+                    if (dder.i(a3)) {
                         b().k("ExampleStoreSelectionCriteriaValidPerTask", a3.d);
                         empty = Optional.of(a3.c);
                     } else {
-                        ((ejhf) ((ejhf) a.j()).ah((char) 10399)).x("SelectionCriteria is invalid.");
+                        ((eluo) ((eluo) a.j()).ai((char) 10405)).x("SelectionCriteria is invalid.");
                         b().k("ExampleStoreSelectionCriteriaInvalidPerTask", a3.d);
                         empty = Optional.empty();
                     }
-                } catch (fedk unused2) {
-                    ((ejhf) ((ejhf) a.j()).ah((char) 10400)).x("Error parsing SelectionCriteria proto.");
+                } catch (fgsd unused2) {
+                    ((eluo) ((eluo) a.j()).ai((char) 10406)).x("Error parsing SelectionCriteria proto.");
                     b().e("ExampleStoreSelectionCriteriaParseFail");
                     empty = Optional.empty();
                 }
-                Objects.requireNonNull(eiusVar);
-                empty.ifPresent(new Consumer() { // from class: dasi
+                Objects.requireNonNull(elhxVar);
+                empty.ifPresent(new Consumer() { // from class: ddcq
                     @Override // java.util.function.Consumer
                     /* renamed from: accept */
-                    public final void q(Object obj) {
-                        eius.this.c((String) obj);
+                    public final void u(Object obj) {
+                        elhx.this.c((String) obj);
                     }
 
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
                         return Consumer$CC.$default$andThen(this, consumer);
                     }
                 });
-            } else if (daxu.b(a2)) {
-                evot evotVar = evot.a;
+            } else if (ddic.b(a2)) {
+                eyep eyepVar = eyep.a;
                 try {
-                    evot a4 = daxu.a(a2);
-                    czje b = b();
-                    evos evosVar = a4.c;
-                    if (evosVar == null) {
-                        evosVar = evos.a;
+                    eyep a4 = ddic.a(a2);
+                    dbtc b = b();
+                    eyeo eyeoVar = a4.c;
+                    if (eyeoVar == null) {
+                        eyeoVar = eyeo.a;
                     }
-                    b.k("ExampleStoreSelectionCriteriaParseSuccessPerTask", evosVar.c);
-                    if (daxu.c(a4)) {
-                        evos evosVar2 = a4.c;
-                        if (evosVar2 == null) {
-                            evosVar2 = evos.a;
+                    b.k("ExampleStoreSelectionCriteriaParseSuccessPerTask", eyeoVar.c);
+                    if (ddic.c(a4)) {
+                        eyeo eyeoVar2 = a4.c;
+                        if (eyeoVar2 == null) {
+                            eyeoVar2 = eyeo.a;
                         }
-                        empty2 = Optional.of(evosVar2.b);
+                        empty2 = Optional.of(eyeoVar2.b);
                     } else {
-                        ((ejhf) ((ejhf) a.j()).ah((char) 10401)).x("SelectionCriteria is invalid.");
-                        czje b2 = b();
-                        evos evosVar3 = a4.c;
-                        if (evosVar3 == null) {
-                            evosVar3 = evos.a;
+                        ((eluo) ((eluo) a.j()).ai((char) 10407)).x("SelectionCriteria is invalid.");
+                        dbtc b2 = b();
+                        eyeo eyeoVar3 = a4.c;
+                        if (eyeoVar3 == null) {
+                            eyeoVar3 = eyeo.a;
                         }
-                        b2.k("ExampleStoreSelectionCriteriaInvalidPerTask", evosVar3.c);
+                        b2.k("ExampleStoreSelectionCriteriaInvalidPerTask", eyeoVar3.c);
                         empty2 = Optional.empty();
                     }
-                } catch (fedk unused3) {
-                    ((ejhf) ((ejhf) a.j()).ah((char) 10402)).x("Error parsing TransientSelectionCriteria proto.");
+                } catch (fgsd unused3) {
+                    ((eluo) ((eluo) a.j()).ai((char) 10408)).x("Error parsing TransientSelectionCriteria proto.");
                     b().e("ExampleStoreSelectionCriteriaParseFail");
                     empty2 = Optional.empty();
                 }
-                Objects.requireNonNull(eiusVar2);
-                empty2.ifPresent(new Consumer() { // from class: dasi
+                Objects.requireNonNull(elhxVar2);
+                empty2.ifPresent(new Consumer() { // from class: ddcq
                     @Override // java.util.function.Consumer
                     /* renamed from: accept */
-                    public final void q(Object obj) {
-                        eius.this.c((String) obj);
+                    public final void u(Object obj) {
+                        elhx.this.c((String) obj);
                     }
 
                     public final /* synthetic */ Consumer andThen(Consumer consumer) {
@@ -157,19 +157,19 @@ public final class FederatedResultHandlingService extends bqer {
                 });
             }
         }
-        eiuu g = eiusVar.g();
-        eiuu g2 = eiusVar2.g();
+        elhz g = elhxVar.g();
+        elhz g2 = elhxVar2.g();
         if (g.isEmpty() && g2.isEmpty()) {
-            bqeyVar.a(Status.b);
+            bsmoVar.a(Status.b);
             return;
         }
-        enss[] enssVarArr = new enss[2];
-        enssVarArr[0] = g.isEmpty() ? ensm.a : c().b(g);
-        enssVarArr[1] = g2.isEmpty() ? ensm.a : c().c(g2);
-        ensj.t(ensj.p(enssVarArr), new dasj(bqeyVar), enre.a);
+        eqgl[] eqglVarArr = new eqgl[2];
+        eqglVarArr[0] = g.isEmpty() ? eqgf.a : c().b(g);
+        eqglVarArr[1] = g2.isEmpty() ? eqgf.a : c().c(g2);
+        eqgc.t(eqgc.p(eqglVarArr), new ddcr(bsmoVar), eqex.a);
     }
 
-    public FederatedResultHandlingService(daru daruVar) {
-        this.c = daruVar;
+    public FederatedResultHandlingService(ddcc ddccVar) {
+        this.c = ddccVar;
     }
 }

@@ -1,44 +1,44 @@
 package com.google.android.gms.backup.settings.gmsfeatures.card;
 
 import android.accounts.Account;
-import defpackage.ahwd;
-import defpackage.ajqp;
-import defpackage.ajqu;
-import defpackage.ajwk;
-import defpackage.arxo;
-import defpackage.asew;
-import defpackage.bquj;
-import defpackage.bqul;
-import defpackage.bqun;
-import defpackage.flom;
+import defpackage.ajwt;
+import defpackage.alri;
+import defpackage.alrn;
+import defpackage.alxi;
+import defpackage.auad;
+import defpackage.auiq;
+import defpackage.btca;
+import defpackage.btcc;
+import defpackage.btce;
+import defpackage.fofw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class BackupContextualCardIntentOperation extends bqun {
-    private final arxo a;
+public class BackupContextualCardIntentOperation extends btce {
+    private final auad a;
 
     public BackupContextualCardIntentOperation() {
-        super(asew.DEFAULT_BACKUP_SETTINGS);
-        this.a = ahwd.a("BackupContextualCardIntentOperation");
+        super(auiq.DEFAULT_BACKUP_SETTINGS);
+        this.a = ajwt.a("BackupContextualCardIntentOperation");
     }
 
-    @Override // defpackage.bqun
-    public final bquj a(bqul bqulVar) {
-        flom flomVar = flom.a;
-        if (flomVar.a().e()) {
+    @Override // defpackage.btce
+    public final btca a(btcc btccVar) {
+        fofw fofwVar = fofw.a;
+        if (fofwVar.lK().e()) {
             this.a.d("Kill switch enabled - cancel contextual card fetcher.", new Object[0]);
-            return bquj.e;
+            return btca.e;
         }
-        ajqp ajqpVar = flomVar.a().h() ? new ajqp(this) : null;
-        if (ajqpVar != null && !ajqpVar.a()) {
+        alri alriVar = fofwVar.lK().h() ? new alri(this) : null;
+        if (alriVar != null && !alriVar.a()) {
             this.a.d("Backup settings item disabled - cancel contextual card fetcher.", new Object[0]);
-            return bquj.e;
+            return btca.e;
         }
-        Account account = bqulVar.a;
+        Account account = btccVar.a;
         if (account != null) {
-            return new ajqu(this, ajwk.f(this), account);
+            return new alrn(this, alxi.f(this), account);
         }
         this.a.d("No account passed - cancel contextual card fetcher.", new Object[0]);
-        return bquj.e;
+        return btca.e;
     }
 }

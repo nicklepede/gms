@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxev;
+import defpackage.atyq;
+import defpackage.czor;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class TaskEntity extends AbstractSafeParcelable implements Task {
-    public static final Parcelable.Creator CREATOR = new cxev();
+    public static final Parcelable.Creator CREATOR = new czor();
     public final TaskIdEntity a;
     public final Integer b;
     public final String c;
@@ -64,7 +64,7 @@ public class TaskEntity extends AbstractSafeParcelable implements Task {
     }
 
     public static boolean m(Task task, Task task2) {
-        return arwb.b(task.h(), task2.h()) && arwb.b(task.K(), task2.K()) && arwb.b(task.R(), task2.R()) && arwb.b(task.M(), task2.M()) && arwb.b(task.L(), task2.L()) && arwb.b(task.i(), task2.i()) && arwb.b(task.j(), task2.j()) && arwb.b(task.k(), task2.k()) && arwb.b(task.I(), task2.I()) && arwb.b(task.Q(), task2.Q()) && arwb.b(task.a(), task2.a()) && arwb.b(task.c(), task2.c()) && arwb.b(task.e(), task2.e()) && arwb.b(task.f(), task2.f()) && arwb.b(task.P(), task2.P()) && Arrays.equals(task.T(), task2.T()) && arwb.b(task.g(), task2.g()) && arwb.b(task.S(), task2.S()) && arwb.b(task.J(), task2.J()) && arwb.b(task.d(), task2.d()) && arwb.b(task.O(), task2.O());
+        return atyq.b(task.h(), task2.h()) && atyq.b(task.K(), task2.K()) && atyq.b(task.R(), task2.R()) && atyq.b(task.M(), task2.M()) && atyq.b(task.L(), task2.L()) && atyq.b(task.i(), task2.i()) && atyq.b(task.j(), task2.j()) && atyq.b(task.k(), task2.k()) && atyq.b(task.I(), task2.I()) && atyq.b(task.Q(), task2.Q()) && atyq.b(task.a(), task2.a()) && atyq.b(task.c(), task2.c()) && atyq.b(task.e(), task2.e()) && atyq.b(task.f(), task2.f()) && atyq.b(task.P(), task2.P()) && Arrays.equals(task.T(), task2.T()) && atyq.b(task.g(), task2.g()) && atyq.b(task.S(), task2.S()) && atyq.b(task.J(), task2.J()) && atyq.b(task.d(), task2.d()) && atyq.b(task.O(), task2.O());
     }
 
     @Override // com.google.android.gms.reminders.model.Task
@@ -193,14 +193,14 @@ public class TaskEntity extends AbstractSafeParcelable implements Task {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxev.a(this, parcel, i);
+        czor.a(this, parcel, i);
     }
 
     public TaskEntity(Task task) {
         this(task.h(), task.K(), task.R(), task.M(), task.L(), task.i(), task.j(), task.k(), task.I(), task.Q(), task.a(), task.c(), task.e(), task.f(), task.P(), task.T(), task.g(), task.S(), task.J(), task.d(), task.O(), task.N(), false);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

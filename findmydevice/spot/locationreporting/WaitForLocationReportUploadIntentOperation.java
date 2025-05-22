@@ -3,46 +3,46 @@ package com.google.android.gms.findmydevice.spot.locationreporting;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.findmydevice.spot.locationreporting.WaitForLocationReportUploadIntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bebo;
-import defpackage.belc;
-import defpackage.belh;
-import defpackage.bfdp;
-import defpackage.dwup;
-import defpackage.egmx;
-import defpackage.eiho;
-import defpackage.enre;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bgda;
+import defpackage.bgmo;
+import defpackage.bgmt;
+import defpackage.bhff;
+import defpackage.dzgp;
+import defpackage.ejaa;
+import defpackage.ekut;
+import defpackage.eqex;
 import java.util.concurrent.CancellationException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class WaitForLocationReportUploadIntentOperation extends IntentOperation {
     public static final /* synthetic */ int a = 0;
-    private final belc b;
+    private final bgmo b;
 
     static {
-        asot.b("WaitForLocRptUplIntOp", asej.FIND_MY_DEVICE_SPOT);
+        ausn.b("WaitForLocRptUplIntOp", auid.FIND_MY_DEVICE_SPOT);
     }
 
     public WaitForLocationReportUploadIntentOperation() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (bfdp.b(intent, "com.google.android.gms.findmydevice.spot.locationreporting.WAIT_FOR_UPLOAD_SIGHTINGS")) {
-            dwup.a("Fast sightings upload", egmx.f(this.b.a()).d(CancellationException.class, new eiho() { // from class: bevs
-                @Override // defpackage.eiho
+        if (bhff.b(intent, "com.google.android.gms.findmydevice.spot.locationreporting.WAIT_FOR_UPLOAD_SIGHTINGS")) {
+            dzgp.a("Fast sightings upload", ejaa.g(this.b.a()).e(CancellationException.class, new ekut() { // from class: bgxf
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
                     int i = WaitForLocationReportUploadIntentOperation.a;
                     return null;
                 }
-            }, enre.a));
+            }, eqex.a));
         }
     }
 
-    public WaitForLocationReportUploadIntentOperation(belh belhVar) {
-        this.b = belhVar.n();
+    public WaitForLocationReportUploadIntentOperation(bgmt bgmtVar) {
+        this.b = bgmtVar.n();
     }
 }

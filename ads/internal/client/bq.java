@@ -1,8 +1,8 @@
 package com.google.android.gms.ads.internal.client;
 
-import defpackage.tdh;
+import defpackage.uzh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class bq extends v {
     final /* synthetic */ br c;
@@ -11,14 +11,14 @@ final class bq extends v {
         this.c = brVar;
     }
 
-    @Override // com.google.android.gms.ads.internal.client.v, defpackage.tbw
-    public final void c(tdh tdhVar) {
+    @Override // com.google.android.gms.ads.internal.client.v, defpackage.uxw
+    public final void c(uzh uzhVar) {
         br brVar = this.c;
         brVar.a.b(brVar.a());
-        super.c(tdhVar);
+        super.c(uzhVar);
     }
 
-    @Override // com.google.android.gms.ads.internal.client.v, defpackage.tbw
+    @Override // com.google.android.gms.ads.internal.client.v, defpackage.uxw
     public final void d() {
         br brVar = this.c;
         brVar.a.b(brVar.a());

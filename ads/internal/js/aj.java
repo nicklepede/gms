@@ -3,7 +3,7 @@ package com.google.android.gms.ads.internal.js;
 import java.util.HashSet;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class aj implements c, ai {
     public final ai a;
@@ -28,13 +28,13 @@ public final class aj implements c, ai {
         b.b(this, str, jSONObject);
     }
 
-    @Override // com.google.android.gms.ads.internal.js.c, com.google.android.gms.ads.internal.js.l
-    public final void fW(String str) {
-        this.a.fW(str);
-    }
-
     @Override // com.google.android.gms.ads.internal.js.ai
     public final void g(String str, com.google.android.gms.ads.internal.gmsg.e eVar) {
         throw null;
+    }
+
+    @Override // com.google.android.gms.ads.internal.js.c, com.google.android.gms.ads.internal.js.l
+    public final void gl(String str) {
+        this.a.gl(str);
     }
 }

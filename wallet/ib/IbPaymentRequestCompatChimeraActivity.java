@@ -21,31 +21,31 @@ import com.google.android.gms.wallet.service.ib.LoadFullWalletServiceResponse;
 import com.google.android.gms.wallet.service.ib.LoadMaskedWalletServiceRequest;
 import com.google.android.gms.wallet.service.ib.LoadMaskedWalletServiceResponse;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
-import defpackage.arxd;
-import defpackage.dies;
-import defpackage.dimg;
-import defpackage.dirb;
-import defpackage.diud;
-import defpackage.dixi;
+import defpackage.atzs;
+import defpackage.dkqd;
+import defpackage.dkxr;
+import defpackage.dlcm;
+import defpackage.dlfo;
+import defpackage.dljb;
 import java.util.concurrent.ExecutorService;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class IbPaymentRequestCompatChimeraActivity extends Activity {
     public static final /* synthetic */ int d = 0;
-    private static final String e = dimg.b("ibPaymentRequestCompat");
+    private static final String e = dkxr.b("ibPaymentRequestCompat");
     FullWallet a;
     MaskedWallet b;
     private BuyFlowConfig f;
     private LoadMaskedWalletServiceRequest g;
-    private dimg h;
+    private dkxr h;
     private WebPaymentDataRequest i;
     private int j;
     int c = 0;
-    private final diud k = new dirb(this);
+    private final dlfo k = new dlcm(this);
 
     private final void e() {
         JSONObject jSONObject;
@@ -69,9 +69,9 @@ public class IbPaymentRequestCompatChimeraActivity extends Activity {
         }
         this.c = 5;
         try {
-            dies a = WebPaymentData.a();
+            dkqd a = WebPaymentData.a();
             FullWallet fullWallet = this.a;
-            ExecutorService executorService = dixi.a;
+            ExecutorService executorService = dljb.a;
             JSONObject jSONObject2 = new JSONObject();
             UserAddress userAddress = fullWallet.h;
             JSONArray jSONArray2 = null;
@@ -127,9 +127,9 @@ public class IbPaymentRequestCompatChimeraActivity extends Activity {
         }
     }
 
-    final dimg a() {
+    final dkxr a() {
         if (this.h == null) {
-            this.h = (dimg) getSupportFragmentManager().findFragmentByTag(e);
+            this.h = (dkxr) getSupportFragmentManager().findFragmentByTag(e);
         }
         return this.h;
     }
@@ -137,9 +137,9 @@ public class IbPaymentRequestCompatChimeraActivity extends Activity {
     public final void b(LoadFullWalletServiceResponse loadFullWalletServiceResponse) {
         Bundle bundle = loadFullWalletServiceResponse.a;
         ConnectionResult connectionResult = new ConnectionResult(loadFullWalletServiceResponse.c, bundle != null ? (PendingIntent) bundle.getParcelable("com.google.android.gms.wallet.EXTRA_PENDING_INTENT") : null);
-        if (connectionResult.b()) {
+        if (connectionResult.c()) {
             try {
-                connectionResult.a(getContainerActivity(), 502);
+                connectionResult.b(getContainerActivity(), 502);
                 return;
             } catch (IntentSender.SendIntentException unused) {
                 d(8);
@@ -159,9 +159,9 @@ public class IbPaymentRequestCompatChimeraActivity extends Activity {
     public final void c(LoadMaskedWalletServiceResponse loadMaskedWalletServiceResponse) {
         Bundle bundle = loadMaskedWalletServiceResponse.a;
         ConnectionResult connectionResult = new ConnectionResult(loadMaskedWalletServiceResponse.c, bundle != null ? (PendingIntent) bundle.getParcelable("com.google.android.gms.wallet.EXTRA_PENDING_INTENT") : null);
-        if (connectionResult.b()) {
+        if (connectionResult.c()) {
             try {
-                connectionResult.a(getContainerActivity(), 501);
+                connectionResult.b(getContainerActivity(), 501);
                 return;
             } catch (IntentSender.SendIntentException unused) {
                 d(8);
@@ -184,7 +184,7 @@ public class IbPaymentRequestCompatChimeraActivity extends Activity {
         f(1, intent);
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         if (i == 501) {
             if (i2 == -1) {
@@ -215,13 +215,13 @@ public class IbPaymentRequestCompatChimeraActivity extends Activity {
         }
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         setTheme(R.style.Theme_Wallet_No_Display);
         super.onCreate(bundle);
         Intent intent = getIntent();
         this.f = (BuyFlowConfig) intent.getParcelableExtra("com.google.android.gms.wallet.buyFlowConfig");
-        this.i = (WebPaymentDataRequest) arxd.b(intent, "webPaymentDataRequest", WebPaymentDataRequest.CREATOR);
+        this.i = (WebPaymentDataRequest) atzs.b(intent, "webPaymentDataRequest", WebPaymentDataRequest.CREATOR);
         this.g = (LoadMaskedWalletServiceRequest) intent.getParcelableExtra("loadMaskedWalletServiceRequest");
         if (bundle != null) {
             this.c = bundle.getInt("state");
@@ -234,19 +234,19 @@ public class IbPaymentRequestCompatChimeraActivity extends Activity {
         }
         if (a() == null) {
             BuyFlowConfig buyFlowConfig = this.f;
-            this.h = dimg.a(8, buyFlowConfig, buyFlowConfig.b.b);
+            this.h = dkxr.a(8, buyFlowConfig, buyFlowConfig.b.b);
             getSupportFragmentManager().beginTransaction().add(this.h, e).commit();
         }
         setFinishOnTouchOutside(false);
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         g();
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         a().b.d(this.k, this.j);
@@ -254,7 +254,7 @@ public class IbPaymentRequestCompatChimeraActivity extends Activity {
         e();
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         g();

@@ -5,48 +5,48 @@ import android.os.RemoteException;
 import android.util.Log;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.api.internal.BasePendingResult;
-import defpackage.aqxs;
-import defpackage.aqxv;
-import defpackage.aqxw;
-import defpackage.aqxz;
-import defpackage.aqyf;
-import defpackage.aqyg;
-import defpackage.aqyj;
-import defpackage.aqzi;
-import defpackage.aqzj;
-import defpackage.aqzk;
-import defpackage.ardb;
-import defpackage.arvc;
-import defpackage.arwm;
-import defpackage.byhl;
-import defpackage.byhn;
+import defpackage.atah;
+import defpackage.atak;
+import defpackage.atal;
+import defpackage.atao;
+import defpackage.atau;
+import defpackage.atav;
+import defpackage.atay;
+import defpackage.atbx;
+import defpackage.atby;
+import defpackage.atbz;
+import defpackage.atfq;
+import defpackage.atxr;
+import defpackage.atzb;
+import defpackage.caqd;
+import defpackage.caqf;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public abstract class BasePendingResult extends aqxw {
-    static final ThreadLocal e = new aqzi();
+public abstract class BasePendingResult extends atal {
+    static final ThreadLocal e = new atbx();
     public static final /* synthetic */ int k = 0;
     private final CountDownLatch a;
     private final ArrayList b;
-    private aqyg c;
+    private atav c;
     private final AtomicReference d;
     public final Object f;
-    protected final aqzj g;
+    protected final atby g;
     public final WeakReference h;
-    public aqyf i;
+    public atau i;
     public boolean j;
     private Status l;
     private volatile boolean m;
     private boolean n;
     private boolean o;
-    private arvc p;
-    private volatile aqyj q;
-    private aqzk resultGuardian;
+    private atxr p;
+    private volatile atay q;
+    private atbz resultGuardian;
 
     @Deprecated
     BasePendingResult() {
@@ -55,99 +55,99 @@ public abstract class BasePendingResult extends aqxw {
         this.b = new ArrayList();
         this.d = new AtomicReference();
         this.j = false;
-        this.g = new aqzj(Looper.getMainLooper());
+        this.g = new atby(Looper.getMainLooper());
         this.h = new WeakReference(null);
     }
 
-    private final aqyf h() {
-        aqyf aqyfVar;
+    private final atau h() {
+        atau atauVar;
         synchronized (this.f) {
-            arwm.m(!this.m, "Result has already been consumed.");
-            arwm.m(r(), "Result is not ready.");
-            aqyfVar = this.i;
+            atzb.m(!this.m, "Result has already been consumed.");
+            atzb.m(r(), "Result is not ready.");
+            atauVar = this.i;
             this.i = null;
             this.c = null;
             this.m = true;
         }
-        ardb ardbVar = (ardb) this.d.getAndSet(null);
-        if (ardbVar != null) {
-            ardbVar.a.b.remove(this);
+        atfq atfqVar = (atfq) this.d.getAndSet(null);
+        if (atfqVar != null) {
+            atfqVar.a.b.remove(this);
         }
-        arwm.s(aqyfVar);
-        return aqyfVar;
+        atzb.s(atauVar);
+        return atauVar;
     }
 
-    public static aqyg k(final aqyg aqygVar) {
-        final byhn a = byhl.b.a();
-        return new aqyg() { // from class: aqze
-            @Override // defpackage.aqyg
-            public final void a(final aqyf aqyfVar) {
+    public static atav k(final atav atavVar) {
+        final caqf a = caqd.b.a();
+        return new atav() { // from class: atbt
+            @Override // defpackage.atav
+            public final void a(final atau atauVar) {
                 int i = BasePendingResult.k;
-                final aqyg aqygVar2 = aqygVar;
-                byhn.this.c(new Runnable() { // from class: aqzg
+                final atav atavVar2 = atavVar;
+                caqf.this.c(new Runnable() { // from class: atbv
                     @Override // java.lang.Runnable
                     public final void run() {
                         int i2 = BasePendingResult.k;
-                        aqyg.this.a(aqyfVar);
+                        atav.this.a(atauVar);
                     }
                 });
             }
         };
     }
 
-    public static void n(aqyf aqyfVar) {
-        if (aqyfVar instanceof aqxz) {
+    public static void n(atau atauVar) {
+        if (atauVar instanceof atao) {
             try {
-                ((aqxz) aqyfVar).ij();
+                ((atao) atauVar).iy();
             } catch (RuntimeException e2) {
-                Log.w("BasePendingResult", "Unable to release ".concat(String.valueOf(String.valueOf(aqyfVar))), e2);
+                Log.w("BasePendingResult", "Unable to release ".concat(String.valueOf(String.valueOf(atauVar))), e2);
             }
         }
     }
 
-    private final void y(aqyf aqyfVar) {
-        this.i = aqyfVar;
-        this.l = aqyfVar.a();
+    private final void y(atau atauVar) {
+        this.i = atauVar;
+        this.l = atauVar.a();
         this.p = null;
         this.a.countDown();
         if (this.n) {
             this.c = null;
         } else {
-            aqyg aqygVar = this.c;
-            if (aqygVar != null) {
-                aqzj aqzjVar = this.g;
-                aqzjVar.removeMessages(2);
-                aqzjVar.b(aqygVar, h());
-            } else if (this.i instanceof aqxz) {
-                this.resultGuardian = new aqzk(this);
+            atav atavVar = this.c;
+            if (atavVar != null) {
+                atby atbyVar = this.g;
+                atbyVar.removeMessages(2);
+                atbyVar.b(atavVar, h());
+            } else if (this.i instanceof atao) {
+                this.resultGuardian = new atbz(this);
             }
         }
         ArrayList arrayList = this.b;
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
-            ((aqxv) arrayList.get(i)).a(this.l);
+            ((atak) arrayList.get(i)).a(this.l);
         }
         arrayList.clear();
     }
 
-    @Override // defpackage.aqxw
-    public final void c(final aqxv aqxvVar) {
-        arwm.c(true, "Callback cannot be null.");
+    @Override // defpackage.atal
+    public final void c(final atak atakVar) {
+        atzb.c(true, "Callback cannot be null.");
         synchronized (this.f) {
             if (r()) {
-                aqxvVar.a(this.l);
+                atakVar.a(this.l);
             } else {
-                final byhn a = byhl.b.a();
-                this.b.add(new aqxv() { // from class: aqzh
-                    @Override // defpackage.aqxv
+                final caqf a = caqd.b.a();
+                this.b.add(new atak() { // from class: atbw
+                    @Override // defpackage.atak
                     public final void a(final Status status) {
                         int i = BasePendingResult.k;
-                        final aqxv aqxvVar2 = aqxvVar;
-                        byhn.this.c(new Runnable() { // from class: aqzf
+                        final atak atakVar2 = atakVar;
+                        caqf.this.c(new Runnable() { // from class: atbu
                             @Override // java.lang.Runnable
                             public final void run() {
                                 int i2 = BasePendingResult.k;
-                                aqxv.this.a(status);
+                                atak.this.a(status);
                             }
                         });
                     }
@@ -156,14 +156,14 @@ public abstract class BasePendingResult extends aqxw {
         }
     }
 
-    @Override // defpackage.aqxw
+    @Override // defpackage.atal
     public final void d() {
         synchronized (this.f) {
             if (!this.n && !this.m) {
-                arvc arvcVar = this.p;
-                if (arvcVar != null) {
+                atxr atxrVar = this.p;
+                if (atxrVar != null) {
                     try {
-                        arvcVar.a();
+                        atxrVar.a();
                     } catch (RemoteException unused) {
                     }
                 }
@@ -174,45 +174,45 @@ public abstract class BasePendingResult extends aqxw {
         }
     }
 
-    @Override // defpackage.aqxw
-    public final void e(aqyg aqygVar) {
+    @Override // defpackage.atal
+    public final void e(atav atavVar) {
         synchronized (this.f) {
-            if (aqygVar == null) {
+            if (atavVar == null) {
                 this.c = null;
                 return;
             }
-            arwm.m(!this.m, "Result has already been consumed.");
-            arwm.m(true, "Cannot set callbacks if then() has been called.");
+            atzb.m(!this.m, "Result has already been consumed.");
+            atzb.m(true, "Cannot set callbacks if then() has been called.");
             if (q()) {
                 return;
             }
             if (r()) {
-                this.g.b(aqygVar, h());
+                this.g.b(atavVar, h());
             } else {
-                this.c = k(aqygVar);
+                this.c = k(atavVar);
             }
         }
     }
 
-    @Override // defpackage.aqxw
-    public final void f(aqyg aqygVar, long j, TimeUnit timeUnit) {
+    @Override // defpackage.atal
+    public final void f(atav atavVar, long j, TimeUnit timeUnit) {
         synchronized (this.f) {
-            arwm.m(!this.m, "Result has already been consumed.");
-            arwm.m(true, "Cannot set callbacks if then() has been called.");
+            atzb.m(!this.m, "Result has already been consumed.");
+            atzb.m(true, "Cannot set callbacks if then() has been called.");
             if (q()) {
                 return;
             }
             if (r()) {
-                this.g.b(aqygVar, h());
+                this.g.b(atavVar, h());
             } else {
-                this.c = k(aqygVar);
-                aqzj aqzjVar = this.g;
-                aqzjVar.sendMessageDelayed(aqzjVar.obtainMessage(2, this), timeUnit.toMillis(j));
+                this.c = k(atavVar);
+                atby atbyVar = this.g;
+                atbyVar.sendMessageDelayed(atbyVar.obtainMessage(2, this), timeUnit.toMillis(j));
             }
         }
     }
 
-    protected abstract aqyf g(Status status);
+    protected abstract atau g(Status status);
 
     @Deprecated
     public final void l(Status status) {
@@ -232,22 +232,22 @@ public abstract class BasePendingResult extends aqxw {
         this.j = z;
     }
 
-    protected final void o(arvc arvcVar) {
+    protected final void o(atxr atxrVar) {
         synchronized (this.f) {
-            this.p = arvcVar;
+            this.p = atxrVar;
         }
     }
 
-    public final void p(aqyf aqyfVar) {
+    public final void p(atau atauVar) {
         synchronized (this.f) {
             if (this.o || this.n) {
-                n(aqyfVar);
+                n(atauVar);
                 return;
             }
             r();
-            arwm.m(!r(), "Results have already been set");
-            arwm.m(!this.m, "Result has already been consumed");
-            y(aqyfVar);
+            atzb.m(!r(), "Results have already been set");
+            atzb.m(!this.m, "Result has already been consumed");
+            y(atauVar);
         }
     }
 
@@ -263,31 +263,31 @@ public abstract class BasePendingResult extends aqxw {
         return this.a.getCount() == 0;
     }
 
-    public final void s(ardb ardbVar) {
-        this.d.set(ardbVar);
+    public final void s(atfq atfqVar) {
+        this.d.set(atfqVar);
     }
 
-    @Override // defpackage.aqxw
-    public final aqyf w() {
-        arwm.k("await must not be called on the UI thread");
-        arwm.m(!this.m, "Result has already been consumed");
-        arwm.m(true, "Cannot await if then() has been called.");
+    @Override // defpackage.atal
+    public final atau w() {
+        atzb.k("await must not be called on the UI thread");
+        atzb.m(!this.m, "Result has already been consumed");
+        atzb.m(true, "Cannot await if then() has been called.");
         try {
             this.a.await();
         } catch (InterruptedException unused) {
             l(Status.c);
         }
-        arwm.m(r(), "Result is not ready.");
+        atzb.m(r(), "Result is not ready.");
         return h();
     }
 
-    @Override // defpackage.aqxw
-    public final aqyf x(long j, TimeUnit timeUnit) {
+    @Override // defpackage.atal
+    public final atau x(long j, TimeUnit timeUnit) {
         if (j > 0) {
-            arwm.k("await must not be called on the UI thread when time is greater than zero.");
+            atzb.k("await must not be called on the UI thread when time is greater than zero.");
         }
-        arwm.m(!this.m, "Result has already been consumed.");
-        arwm.m(true, "Cannot await if then() has been called.");
+        atzb.m(!this.m, "Result has already been consumed.");
+        atzb.m(true, "Cannot await if then() has been called.");
         try {
             if (!this.a.await(j, timeUnit)) {
                 l(Status.e);
@@ -295,7 +295,7 @@ public abstract class BasePendingResult extends aqxw {
         } catch (InterruptedException unused) {
             l(Status.c);
         }
-        arwm.m(r(), "Result is not ready.");
+        atzb.m(r(), "Result is not ready.");
         return h();
     }
 
@@ -306,17 +306,17 @@ public abstract class BasePendingResult extends aqxw {
         this.b = new ArrayList();
         this.d = new AtomicReference();
         this.j = false;
-        this.g = new aqzj(looper);
+        this.g = new atby(looper);
         this.h = new WeakReference(null);
     }
 
-    protected BasePendingResult(aqxs aqxsVar) {
+    protected BasePendingResult(atah atahVar) {
         this.f = new Object();
         this.a = new CountDownLatch(1);
         this.b = new ArrayList();
         this.d = new AtomicReference();
         this.j = false;
-        this.g = new aqzj(aqxsVar != null ? aqxsVar.a() : Looper.getMainLooper());
-        this.h = new WeakReference(aqxsVar);
+        this.g = new atby(atahVar != null ? atahVar.a() : Looper.getMainLooper());
+        this.h = new WeakReference(atahVar);
     }
 }

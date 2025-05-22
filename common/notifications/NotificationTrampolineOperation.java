@@ -4,22 +4,22 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.libs.notifications.NotificationTrampoline;
-import defpackage.asbb;
-import defpackage.asbn;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.ejhf;
-import defpackage.fmys;
+import defpackage.audq;
+import defpackage.auec;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.eluo;
+import defpackage.fpqr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class NotificationTrampolineOperation extends IntentOperation {
-    private static final asot a = asot.b("NotificationTrampolineOperation", asej.CORE);
+    private static final ausn a = ausn.b("NotificationTrampolineOperation", auid.CORE);
 
     static final void a(Intent intent) {
         NotificationTrampoline notificationTrampoline = (NotificationTrampoline) intent.getParcelableExtra("com.google.android.gms.common.notifications.extra.NOTIFICATION_TRAMPOLINE");
         if (notificationTrampoline == null) {
-            ((ejhf) ((ejhf) a.i()).ah((char) 3224)).B("Missing required extra: %s", "com.google.android.gms.common.notifications.extra.NOTIFICATION_TRAMPOLINE");
+            ((eluo) ((eluo) a.i()).ai((char) 3228)).B("Missing required extra: %s", "com.google.android.gms.common.notifications.extra.NOTIFICATION_TRAMPOLINE");
             return;
         }
         try {
@@ -29,7 +29,7 @@ public class NotificationTrampolineOperation extends IntentOperation {
             }
             String action = intent.getAction();
             if ("com.google.android.gms.common.notifications.action.NOTIFICATION_CLICK".equals(action)) {
-                if (fmys.d()) {
+                if (fpqr.d()) {
                     b(notificationTrampoline).b(notificationTrampoline.h, notificationTrampoline.c, "gmscore_notification");
                     return;
                 } else {
@@ -38,19 +38,19 @@ public class NotificationTrampolineOperation extends IntentOperation {
                 }
             }
             if (!"com.google.android.gms.common.notifications.action.NOTIFICATION_DISMISS".equals(action)) {
-                ((ejhf) ((ejhf) a.i()).ah((char) 3222)).B("Unexpected action: %s", action);
-            } else if (fmys.d()) {
+                ((eluo) ((eluo) a.i()).ai((char) 3226)).B("Unexpected action: %s", action);
+            } else if (fpqr.d()) {
                 b(notificationTrampoline).c(notificationTrampoline.h, notificationTrampoline.c, "gmscore_notification");
             } else {
                 b(notificationTrampoline).c(notificationTrampoline.b, notificationTrampoline.c, notificationTrampoline.d);
             }
         } catch (PendingIntent.CanceledException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 3223)).B("Error handling target intent: %s", notificationTrampoline);
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 3227)).B("Error handling target intent: %s", notificationTrampoline);
         }
     }
 
-    private static final asbn b(NotificationTrampoline notificationTrampoline) {
-        return new asbb(notificationTrampoline.e, notificationTrampoline.f);
+    private static final auec b(NotificationTrampoline notificationTrampoline) {
+        return new audq(notificationTrampoline.e, notificationTrampoline.f);
     }
 
     @Override // com.google.android.chimera.IntentOperation

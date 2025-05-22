@@ -6,20 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import com.google.android.gms.identity.accounts.api.AccountData;
 import com.google.android.gms.udc.UdcSettingsListActivityRequest;
-import defpackage.arxd;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.blzq;
-import defpackage.dhcc;
-import defpackage.ejhf;
-import defpackage.qet;
+import defpackage.atzs;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bogi;
+import defpackage.djni;
+import defpackage.eluo;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class UdcSettingsListChimeraActivity extends qet {
-    private static final asot j = asot.d();
+public class UdcSettingsListChimeraActivity extends rxx {
+    private static final ausn j = ausn.d();
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         Intent b;
         super.onCreate(bundle);
@@ -28,10 +28,10 @@ public class UdcSettingsListChimeraActivity extends qet {
             return;
         }
         try {
-            asng.B(this);
+            aura.B(this);
             Intent intent = getIntent();
             if (intent == null) {
-                ((ejhf) ((ejhf) j.j()).ah((char) 11890)).x("No intent found.");
+                ((eluo) ((eluo) j.j()).ai((char) 11893)).x("No intent found.");
                 setResult(0);
                 finish();
                 return;
@@ -39,33 +39,33 @@ public class UdcSettingsListChimeraActivity extends qet {
             try {
                 String str = null;
                 AccountData accountData = null;
-                if (blzq.a(intent)) {
-                    if (blzq.a(intent)) {
-                        accountData = (AccountData) arxd.b(intent, "com.google.android.gms.accounts.ACCOUNT_DATA", AccountData.CREATOR);
+                if (bogi.a(intent)) {
+                    if (bogi.a(intent)) {
+                        accountData = (AccountData) atzs.b(intent, "com.google.android.gms.accounts.ACCOUNT_DATA", AccountData.CREATOR);
                     }
                     str = accountData.a;
                 }
                 if (str == null) {
-                    b = dhcc.a();
+                    b = djni.a();
                 } else {
                     UdcSettingsListActivityRequest udcSettingsListActivityRequest = (UdcSettingsListActivityRequest) intent.getParcelableExtra("ClientRequestExtra");
                     if (udcSettingsListActivityRequest != null && udcSettingsListActivityRequest.a()) {
                         String str2 = udcSettingsListActivityRequest.a;
                         if (!"me".equalsIgnoreCase(str2)) {
-                            b = dhcc.c(this, str, str2);
+                            b = djni.c(this, str, str2);
                         }
                     }
-                    b = dhcc.b(str);
+                    b = djni.b(str);
                 }
                 startActivityForResult(b, 0);
                 setResult(-1);
             } catch (ActivityNotFoundException e) {
-                ((ejhf) ((ejhf) ((ejhf) j.j()).s(e)).ah((char) 11889)).x("Account settings activity not found.");
+                ((eluo) ((eluo) ((eluo) j.j()).s(e)).ai((char) 11892)).x("Account settings activity not found.");
                 setResult(0);
             }
             finish();
         } catch (SecurityException e2) {
-            ((ejhf) ((ejhf) ((ejhf) j.j()).s(e2)).ah((char) 11891)).x("Non-google signed package forbidden to access this Activity");
+            ((eluo) ((eluo) ((eluo) j.j()).s(e2)).ai((char) 11894)).x("Non-google signed package forbidden to access this Activity");
             setResult(0);
             finish();
         }

@@ -12,32 +12,32 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.wallet.clientlog.LogContext;
 import com.google.android.wallet.ui.common.ImageWithCaptionView;
-import defpackage.dilb;
-import defpackage.dilc;
-import defpackage.ding;
-import defpackage.djeg;
-import defpackage.djer;
-import defpackage.efpj;
-import defpackage.ehoh;
-import defpackage.ehzo;
-import defpackage.fsxy;
-import defpackage.iuo;
+import defpackage.dkwm;
+import defpackage.dkwn;
+import defpackage.dkyr;
+import defpackage.dlpz;
+import defpackage.dlqk;
+import defpackage.eicm;
+import defpackage.ekbn;
+import defpackage.ekmu;
+import defpackage.fvts;
+import defpackage.iwe;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class FingerprintButton extends LinearLayout implements dilb {
+public class FingerprintButton extends LinearLayout implements dkwm {
     ImageWithCaptionView a;
     TextView b;
     FingerprintManager c;
     public CancellationSignal d;
     public int e;
-    public ehoh f;
+    public ekbn f;
     public LogContext g;
     public String h;
     public boolean i;
     FingerprintManager.AuthenticationCallback j;
     public FingerprintManager.CryptoObject k;
-    public djeg l;
+    public dlpz l;
     private Runnable m;
     private boolean n;
 
@@ -49,8 +49,8 @@ public class FingerprintButton extends LinearLayout implements dilb {
     }
 
     private final void g(Context context) {
-        if (efpj.h(getContext())) {
-            this.j = new djer(this);
+        if (eicm.h(getContext())) {
+            this.j = new dlqk(this);
             inflate(context, R.layout.wallet_view_fingerprint_button, this);
             this.b = (TextView) findViewById(R.id.help_text);
             this.a = (ImageWithCaptionView) findViewById(R.id.fingerprint_icon);
@@ -69,14 +69,14 @@ public class FingerprintButton extends LinearLayout implements dilb {
         d();
     }
 
-    @Override // defpackage.dilb
+    @Override // defpackage.dkwm
     public final void aq(Bundle bundle) {
-        if (!"completeFingerprintAuthentication".equals(dilc.b(bundle)) || this.l == null || getContext() == null || getVisibility() != 0) {
+        if (!"completeFingerprintAuthentication".equals(dkwn.b(bundle)) || this.l == null || getContext() == null || getVisibility() != 0) {
             return;
         }
-        djeg djegVar = this.l;
+        dlpz dlpzVar = this.l;
         FingerprintManager.CryptoObject cryptoObject = this.k;
-        djegVar.A(1, cryptoObject != null ? cryptoObject.getSignature() : null);
+        dlpzVar.A(1, cryptoObject != null ? cryptoObject.getSignature() : null);
     }
 
     public final void b(String str) {
@@ -92,7 +92,7 @@ public class FingerprintButton extends LinearLayout implements dilb {
             if (this.n) {
                 setOrientation(1);
                 TextView textView = this.b;
-                int[] iArr = iuo.a;
+                int[] iArr = iwe.a;
                 this.b.setPadding(0, textView.getPaddingStart(), 0, 0);
                 layoutParams.gravity = 1;
             } else {
@@ -135,23 +135,23 @@ public class FingerprintButton extends LinearLayout implements dilb {
     public final void e(int i) {
         this.e = i;
         if (h()) {
-            if (!efpj.h(getContext())) {
+            if (!eicm.h(getContext())) {
                 throw new IllegalStateException("Fingerprint auth not supported on this device.");
             }
             this.a.clearColorFilter();
             this.b.setTextAppearance(R.style.WalletInfoMessageText);
             int i2 = this.e;
-            ehzo ehzoVar = null;
+            ekmu ekmuVar = null;
             if (i2 == 0) {
                 TextView textView = this.b;
-                ehoh ehohVar = this.f;
-                textView.setText((ehohVar == null || (2 & ehohVar.b) == 0) ? null : ehohVar.d);
+                ekbn ekbnVar = this.f;
+                textView.setText((ekbnVar == null || (2 & ekbnVar.b) == 0) ? null : ekbnVar.d);
                 ImageWithCaptionView imageWithCaptionView = this.a;
-                ehoh ehohVar2 = this.f;
-                if (ehohVar2 != null && (ehzoVar = ehohVar2.e) == null) {
-                    ehzoVar = ehzo.a;
+                ekbn ekbnVar2 = this.f;
+                if (ekbnVar2 != null && (ekmuVar = ekbnVar2.e) == null) {
+                    ekmuVar = ekmu.a;
                 }
-                imageWithCaptionView.o(ehzoVar, ding.o(getContext()));
+                imageWithCaptionView.o(ekmuVar, dkyr.o(getContext()));
                 return;
             }
             if (i2 == 1) {
@@ -160,19 +160,19 @@ public class FingerprintButton extends LinearLayout implements dilb {
                 obtainStyledAttributes.recycle();
                 this.b.setTextColor(color);
                 TextView textView2 = this.b;
-                ehoh ehohVar3 = this.f;
-                textView2.setText((ehohVar3 == null || (ehohVar3.b & 8) == 0) ? null : ehohVar3.f);
+                ekbn ekbnVar3 = this.f;
+                textView2.setText((ekbnVar3 == null || (ekbnVar3.b & 8) == 0) ? null : ekbnVar3.f);
                 ImageWithCaptionView imageWithCaptionView2 = this.a;
-                ehoh ehohVar4 = this.f;
-                if (ehohVar4 != null && (ehzoVar = ehohVar4.g) == null) {
-                    ehzoVar = ehzo.a;
+                ekbn ekbnVar4 = this.f;
+                if (ekbnVar4 != null && (ekmuVar = ekbnVar4.g) == null) {
+                    ekmuVar = ekmu.a;
                 }
-                imageWithCaptionView2.o(ehzoVar, ding.o(getContext()));
+                imageWithCaptionView2.o(ekmuVar, dkyr.o(getContext()));
                 this.a.setColorFilter(color);
                 removeCallbacks(this.m);
-                dilc a = dilc.a(this, "completeFingerprintAuthentication");
+                dkwn a = dkwn.a(this, "completeFingerprintAuthentication");
                 this.m = a;
-                postDelayed(a, fsxy.a.a().b());
+                postDelayed(a, fvts.a.lK().b());
                 return;
             }
             if (i2 != 2) {
@@ -182,28 +182,28 @@ public class FingerprintButton extends LinearLayout implements dilb {
                 this.b.setTextColor(getResources().getColor(R.color.wallet_uic_error_text_color_light));
                 this.b.setText(this.h);
                 ImageWithCaptionView imageWithCaptionView3 = this.a;
-                ehoh ehohVar5 = this.f;
-                if (ehohVar5 != null && (ehzoVar = ehohVar5.i) == null) {
-                    ehzoVar = ehzo.a;
+                ekbn ekbnVar5 = this.f;
+                if (ekbnVar5 != null && (ekmuVar = ekbnVar5.i) == null) {
+                    ekmuVar = ekmu.a;
                 }
-                imageWithCaptionView3.o(ehzoVar, ding.o(getContext()));
+                imageWithCaptionView3.o(ekmuVar, dkyr.o(getContext()));
                 return;
             }
             this.b.setTextColor(getResources().getColor(R.color.wallet_uic_error_text_color_light));
             TextView textView3 = this.b;
-            ehoh ehohVar6 = this.f;
-            textView3.setText((ehohVar6 == null || (ehohVar6.b & 32) == 0) ? null : ehohVar6.h);
+            ekbn ekbnVar6 = this.f;
+            textView3.setText((ekbnVar6 == null || (ekbnVar6.b & 32) == 0) ? null : ekbnVar6.h);
             ImageWithCaptionView imageWithCaptionView4 = this.a;
-            ehoh ehohVar7 = this.f;
-            if (ehohVar7 != null && (ehzoVar = ehohVar7.i) == null) {
-                ehzoVar = ehzo.a;
+            ekbn ekbnVar7 = this.f;
+            if (ekbnVar7 != null && (ekmuVar = ekbnVar7.i) == null) {
+                ekmuVar = ekmu.a;
             }
-            imageWithCaptionView4.o(ehzoVar, ding.o(getContext()));
+            imageWithCaptionView4.o(ekmuVar, dkyr.o(getContext()));
         }
     }
 
-    public final void f(djeg djegVar) {
-        this.l = djegVar;
+    public final void f(dlpz dlpzVar) {
+        this.l = dlpzVar;
         d();
     }
 

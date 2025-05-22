@@ -6,14 +6,14 @@ import android.text.style.URLSpan;
 import android.view.View;
 import android.widget.Toast;
 import com.google.android.gms.R;
-import defpackage.asot;
-import defpackage.ejhf;
-import defpackage.xul;
+import defpackage.ausn;
+import defpackage.eluo;
+import defpackage.zsi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class DefensiveURLSpan extends URLSpan {
-    private static final asot a = xul.a("DefensiveURLSpan");
+    private static final ausn a = zsi.a("DefensiveURLSpan");
     private final boolean b;
 
     public DefensiveURLSpan(String str, boolean z) {
@@ -27,7 +27,7 @@ public class DefensiveURLSpan extends URLSpan {
             super.onClick(view);
         } catch (ActivityNotFoundException e) {
             Toast.makeText(view.getContext(), view.getResources().getString(R.string.common_no_browser_found), 1).show();
-            ((ejhf) ((ejhf) a.i()).s(e)).x("Cannot find the activity.");
+            ((eluo) ((eluo) a.i()).s(e)).x("Cannot find the activity.");
         }
     }
 

@@ -1,12 +1,12 @@
 package com.google.android.gms.ads.cache.csi;
 
 import android.os.Looper;
-import defpackage.byhr;
+import defpackage.caqj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class a implements Runnable {
-    private static final byhr b = new byhr(Looper.getMainLooper());
+    private static final caqj b = new caqj(Looper.getMainLooper());
     public volatile boolean a = false;
     private final int c;
     private final Runnable d;
@@ -21,9 +21,9 @@ public final class a implements Runnable {
     }
 
     public final void b() {
-        byhr byhrVar = b;
-        byhrVar.removeCallbacks(this);
-        byhrVar.postDelayed(this, this.c);
+        caqj caqjVar = b;
+        caqjVar.removeCallbacks(this);
+        caqjVar.postDelayed(this, this.c);
     }
 
     @Override // java.lang.Runnable

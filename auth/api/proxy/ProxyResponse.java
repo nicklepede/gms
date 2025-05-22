@@ -6,14 +6,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.zoh;
+import defpackage.aboh;
+import defpackage.atzr;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ProxyResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zoh();
+    public static final Parcelable.Creator CREATOR = new aboh();
     final int a;
     public final int b;
     public final PendingIntent c;
@@ -42,14 +42,14 @@ public class ProxyResponse extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.b);
-        arxc.t(parcel, 2, this.c, i, false);
-        arxc.o(parcel, 3, this.d);
-        arxc.g(parcel, 4, this.e, false);
-        arxc.i(parcel, 5, this.f, false);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.b);
+        atzr.t(parcel, 2, this.c, i, false);
+        atzr.o(parcel, 3, this.d);
+        atzr.g(parcel, 4, this.e, false);
+        atzr.i(parcel, 5, this.f, false);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
+        atzr.c(parcel, a);
     }
 
     public ProxyResponse(int i, PendingIntent pendingIntent, int i2) {

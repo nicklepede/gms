@@ -3,17 +3,17 @@ package com.google.android.gms.wearable.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dkhy;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dmtr;
 import j$.time.Instant;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ConsentResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dkhy();
+    public static final Parcelable.Creator CREATOR = new dmtr();
     public final int a;
     public final boolean b;
     public final boolean c;
@@ -46,7 +46,7 @@ public class ConsentResponse extends AbstractSafeParcelable {
             List list = consentResponse.f;
             List list2 = this.f;
             if (list2 == null || list == null ? list2 == list : !(!list2.containsAll(list) || list2.size() != list.size())) {
-                if (arwb.b(this.g, consentResponse.g) && arwb.b(this.h, consentResponse.h)) {
+                if (atyq.b(this.g, consentResponse.g) && atyq.b(this.h, consentResponse.h)) {
                     return true;
                 }
             }
@@ -72,15 +72,15 @@ public class ConsentResponse extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.e(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.y(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.I(parcel, 8, this.h);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.e(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.y(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.I(parcel, 8, this.h);
+        atzr.c(parcel, a);
     }
 }

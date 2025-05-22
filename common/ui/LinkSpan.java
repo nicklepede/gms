@@ -13,11 +13,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import defpackage.a;
-import defpackage.juc;
+import defpackage.kar;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class LinkSpan extends URLSpan {
     private static final Typeface a = Typeface.create("sans-serif-medium", 0);
@@ -54,7 +54,7 @@ public class LinkSpan extends URLSpan {
         if (context != null) {
             Intent intent = new Intent("com.google.android.setupwizard.LINK_SPAN_CLICKED");
             intent.putExtra("id", getURL());
-            juc.a(context).e(intent);
+            kar.a(context).e(intent);
         }
         view.cancelPendingInputEvents();
     }

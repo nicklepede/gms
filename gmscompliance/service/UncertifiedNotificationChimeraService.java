@@ -8,48 +8,48 @@ import com.google.android.gms.R;
 import com.google.android.gms.chimera.modules.gmscompliance.AppContextProvider;
 import com.google.android.gms.gmscompliance.GmsDeviceComplianceResponse;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.anxo;
-import defpackage.aquo;
-import defpackage.arsm;
-import defpackage.asbo;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.byln;
-import defpackage.dfee;
-import defpackage.ejhf;
-import defpackage.fnfa;
-import defpackage.foku;
-import defpackage.fokx;
-import defpackage.ikb;
-import defpackage.ikd;
+import defpackage.apzg;
+import defpackage.asxd;
+import defpackage.atvb;
+import defpackage.aued;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.cauf;
+import defpackage.dhpk;
+import defpackage.eluo;
+import defpackage.fpwz;
+import defpackage.frdk;
+import defpackage.frdn;
+import defpackage.ilr;
+import defpackage.ilt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class UncertifiedNotificationChimeraService extends GmsTaskChimeraService {
-    private static final asot a = asot.b("UncertifiedNotificationSvc", asej.GMS_COMPLIANCE);
-    private asbo b;
+    private static final ausn a = ausn.b("UncertifiedNotificationSvc", auid.GMS_COMPLIANCE);
+    private aued b;
 
-    private final asbo e() {
+    private final aued e() {
         if (this.b == null) {
-            this.b = asbo.f(this);
+            this.b = aued.f(this);
         }
         return this.b;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         GmsDeviceComplianceResponse gmsDeviceComplianceResponse;
-        if (!fnfa.c()) {
+        if (!fpwz.c()) {
             return 0;
         }
-        e().o("UncertifiedNotificationChimeraService", 1, dfee.AUTH_ACCOUNT_UNCERTIFIED_PROVISIONAL);
-        foku fokuVar = foku.a;
-        long k = fokuVar.a().k();
+        e().o("UncertifiedNotificationChimeraService", 1, dhpk.AUTH_ACCOUNT_UNCERTIFIED_PROVISIONAL);
+        frdk frdkVar = frdk.a;
+        long k = frdkVar.lK().k();
         Bundle bundle = null;
-        Bundle bundle2 = foku.c() ? bylnVar.b : null;
-        if (!foku.c() || bundle2 == null) {
+        Bundle bundle2 = frdk.c() ? caufVar.b : null;
+        if (!frdk.c() || bundle2 == null) {
             gmsDeviceComplianceResponse = null;
         } else {
             gmsDeviceComplianceResponse = new GmsDeviceComplianceResponse();
@@ -65,26 +65,26 @@ public class UncertifiedNotificationChimeraService extends GmsTaskChimeraService
             return 0;
         }
         if (currentTimeMillis > 604800000) {
-            ((ejhf) ((ejhf) a.i()).ah((char) 5050)).z("[UncertifiedDevice, UncertifiedNotificationChimeraService] UncertifiedNotificationChimeraService should not be triggered when remaining days to expire registration is %d or more days.", 7);
+            ((eluo) ((eluo) a.i()).ai((char) 5060)).z("[UncertifiedDevice, UncertifiedNotificationChimeraService] UncertifiedNotificationChimeraService should not be triggered when remaining days to expire registration is %d or more days.", 7);
             return 0;
         }
         d(currentTimeMillis);
-        if (foku.c()) {
+        if (frdk.c()) {
             bundle = new Bundle();
             bundle.putBoolean("AUTH_IS_PROVISIONAL", gmsDeviceComplianceResponse.d);
             bundle.putLong("AUTH_PROVISIONAL_EXPIRATION", gmsDeviceComplianceResponse.e);
         }
         long j = (currentTimeMillis % 86400000) / 1000;
-        long j2 = fokuVar.a().j() + j;
-        bykj bykjVar = new bykj();
-        bykjVar.e(j, j2);
-        bykjVar.t("UncertifiedNotificationTask");
-        bykjVar.j = "com.google.android.gms.gmscompliance.service.UncertifiedNotificationService";
-        bykjVar.g(2);
-        bykjVar.p = true;
-        bykjVar.v(1);
-        bykjVar.u = bundle;
-        byjl.a(this).f(bykjVar.b());
+        long j2 = frdkVar.lK().j() + j;
+        catb catbVar = new catb();
+        catbVar.e(j, j2);
+        catbVar.t("UncertifiedNotificationTask");
+        catbVar.j = "com.google.android.gms.gmscompliance.service.UncertifiedNotificationService";
+        catbVar.g(2);
+        catbVar.p = true;
+        catbVar.v(1);
+        catbVar.u = bundle;
+        casd.a(this).f(catbVar.b());
         return 0;
     }
 
@@ -92,9 +92,9 @@ public class UncertifiedNotificationChimeraService extends GmsTaskChimeraService
         String quantityString;
         String str;
         Intent intent = new Intent("android.intent.action.VIEW");
-        String c = !aquo.e(AppContextProvider.a()) ? null : arsm.c(AppContextProvider.a(), "auth_uncertified_notification_url");
+        String c = !asxd.e(AppContextProvider.a()) ? null : atvb.c(AppContextProvider.a(), "auth_uncertified_notification_url");
         if (c == null) {
-            fokx.c();
+            frdn.c();
             c = "https://support.google.com/googleplay/?p=uncertified_registration";
         }
         intent.setData(Uri.parse(c));
@@ -110,16 +110,16 @@ public class UncertifiedNotificationChimeraService extends GmsTaskChimeraService
             quantityString = getResources().getQuantityString(R.plurals.uncertified_notification_expiring_content, i2, Integer.valueOf(i2));
             str = string;
         }
-        ikd ikdVar = new ikd(this);
-        ikdVar.m(str);
-        ikdVar.l(quantityString);
-        ikdVar.g(anxo.a(this, 2131233569));
-        ikdVar.r(true);
-        ikb ikbVar = new ikb();
-        ikbVar.d(quantityString);
-        ikdVar.v(ikbVar);
-        ikdVar.l = 2;
-        ikdVar.g = activity;
-        e().w("UncertifiedNotificationChimeraService", 1, dfee.AUTH_ACCOUNT_UNCERTIFIED_PROVISIONAL, ikdVar.b());
+        ilt iltVar = new ilt(this);
+        iltVar.r(str);
+        iltVar.j(quantityString);
+        iltVar.n(apzg.a(this, 2131233635));
+        iltVar.v(true);
+        ilr ilrVar = new ilr();
+        ilrVar.d(quantityString);
+        iltVar.o(ilrVar);
+        iltVar.l = 2;
+        iltVar.g = activity;
+        e().w("UncertifiedNotificationChimeraService", 1, dhpk.AUTH_ACCOUNT_UNCERTIFIED_PROVISIONAL, iltVar.b());
     }
 }

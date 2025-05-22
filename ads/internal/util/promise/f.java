@@ -2,10 +2,10 @@ package com.google.android.gms.ads.internal.util.promise;
 
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.util.future.i;
-import defpackage.ensj;
+import defpackage.eqgc;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public class f {
@@ -16,7 +16,7 @@ public class f {
         i iVar = new i();
         this.a = iVar;
         this.b = new AtomicInteger(0);
-        ensj.t(iVar, new d(this), com.google.android.gms.ads.internal.util.future.e.d);
+        eqgc.t(iVar, new d(this), com.google.android.gms.ads.internal.util.future.e.d);
     }
 
     @Deprecated
@@ -32,7 +32,7 @@ public class f {
     @Deprecated
     public final void g(Throwable th, String str) {
         this.a.c(th);
-        if (((Boolean) p.aY.g()).booleanValue()) {
+        if (((Boolean) p.aZ.g()).booleanValue()) {
             com.google.android.gms.ads.internal.c.d().c(th, str);
         }
     }
@@ -44,6 +44,6 @@ public class f {
 
     @Deprecated
     public final void i(c cVar, a aVar) {
-        ensj.t(this.a, new e(cVar, aVar), com.google.android.gms.ads.internal.util.future.e.d);
+        eqgc.t(this.a, new e(cVar, aVar), com.google.android.gms.ads.internal.util.future.e.d);
     }
 }

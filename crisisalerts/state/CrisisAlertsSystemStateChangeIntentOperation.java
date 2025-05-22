@@ -4,20 +4,20 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.axdg;
-import defpackage.eiif;
+import defpackage.azhg;
+import defpackage.ekvk;
 import j$.util.Optional;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class CrisisAlertsSystemStateChangeIntentOperation extends IntentOperation {
     private static final AtomicReference a;
 
     static {
-        axdg.a("SysStChng");
+        azhg.a("SysStChng");
         a = new AtomicReference(Optional.empty());
     }
 
@@ -46,7 +46,7 @@ public class CrisisAlertsSystemStateChangeIntentOperation extends IntentOperatio
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (intent == null || !eiif.b(intent.getAction()).equals("com.google.android.gms.crisisalerts.state.CRISIS_ALERTS_SYSTEM_STATE_CHANGED")) {
+        if (intent == null || !ekvk.b(intent.getAction()).equals("com.google.android.gms.crisisalerts.state.CRISIS_ALERTS_SYSTEM_STATE_CHANGED")) {
             return;
         }
         AtomicReference atomicReference = a;

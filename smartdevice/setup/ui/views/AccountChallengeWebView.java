@@ -17,26 +17,26 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import com.google.android.gms.R;
 import com.google.android.setupdesign.GlifLayout;
-import defpackage.arjx;
-import defpackage.arwm;
-import defpackage.arxo;
-import defpackage.ddoe;
-import defpackage.degl;
-import defpackage.degq;
-import defpackage.delf;
-import defpackage.delg;
-import defpackage.delh;
-import defpackage.deli;
-import defpackage.dell;
-import defpackage.delm;
-import defpackage.denq;
-import defpackage.fkdk;
-import defpackage.fsfh;
+import defpackage.atmm;
+import defpackage.atzb;
+import defpackage.auad;
+import defpackage.dfzj;
+import defpackage.dgro;
+import defpackage.dgrt;
+import defpackage.dgwi;
+import defpackage.dgwj;
+import defpackage.dgwk;
+import defpackage.dgwl;
+import defpackage.dgwo;
+import defpackage.dgwp;
+import defpackage.dgyt;
+import defpackage.fmtw;
+import defpackage.fvae;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.concurrent.Semaphore;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class AccountChallengeWebView extends LinearLayout {
     public boolean d;
@@ -52,22 +52,22 @@ public class AccountChallengeWebView extends LinearLayout {
     public WebView n;
     public GlifLayout o;
     public boolean p;
-    public degl q;
+    public dgro q;
     private volatile ArrayList t;
     private CookieManager u;
     private View v;
     private WebViewClient w;
     private final Runnable x;
-    public static final arxo a = new denq(new String[]{"Setup", "UI", "View", "AccountChallengeWebView"});
+    public static final auad a = new dgyt(new String[]{"Setup", "UI", "View", "AccountChallengeWebView"});
     private static final int r = R.id.glif_notice;
-    public static final String b = fsfh.a.a().v();
-    public static final String c = fsfh.a.a().w();
-    private static final String s = fsfh.a.a().x();
+    public static final String b = fvae.a.lK().v();
+    public static final String c = fvae.a.lK().w();
+    private static final String s = fvae.a.lK().x();
 
     public AccountChallengeWebView(Context context) {
         super(context);
         this.h = new ArrayList();
-        this.x = new dell(this);
+        this.x = new dgwo(this);
         j();
     }
 
@@ -77,20 +77,20 @@ public class AccountChallengeWebView extends LinearLayout {
     }
 
     private final void j() {
-        if (fkdk.d()) {
+        if (fmtw.d()) {
             Context context = getContext();
-            arwm.s(context);
+            atzb.s(context);
             LayoutInflater cloneInContext = LayoutInflater.from(context).cloneInContext(context);
-            cloneInContext.setFactory2(new arjx());
+            cloneInContext.setFactory2(new atmm());
             this.v = cloneInContext.inflate(R.layout.smartdevice_account_challenge_webview, this);
         } else {
             this.v = inflate(getContext(), R.layout.smartdevice_account_challenge_webview, this);
         }
         this.u = CookieManager.getInstance();
         this.n = (WebView) this.v.findViewById(R.id.webview);
-        delf delfVar = new delf(this);
-        this.w = delfVar;
-        this.n.setWebViewClient(delfVar);
+        dgwi dgwiVar = new dgwi(this);
+        this.w = dgwiVar;
+        this.n.setWebViewClient(dgwiVar);
         this.o = (GlifLayout) this.v.findViewById(r);
         d();
     }
@@ -98,7 +98,7 @@ public class AccountChallengeWebView extends LinearLayout {
     public final void a() {
         d();
         if (!h()) {
-            new deli(this).execute(new Void[0]);
+            new dgwl(this).execute(new Void[0]);
             return;
         }
         Bundle bundle = (Bundle) this.t.get(this.k);
@@ -109,7 +109,7 @@ public class AccountChallengeWebView extends LinearLayout {
         this.l = string;
         if (TextUtils.isEmpty(string3)) {
             this.h.add(this.m);
-            new delm(this, string, string2, this.m.getString("firstName"), this.m.getString("lastName")).execute(new Void[0]);
+            new dgwp(this, string, string2, this.m.getString("firstName"), this.m.getString("lastName")).execute(new Void[0]);
             return;
         }
         Uri parse = Uri.parse(string3);
@@ -131,7 +131,7 @@ public class AccountChallengeWebView extends LinearLayout {
         if (this.p) {
             buildUpon.appendQueryParameter(s, "1");
         }
-        this.u.removeAllCookies(new delh(this, buildUpon.toString()));
+        this.u.removeAllCookies(new dgwk(this, buildUpon.toString()));
     }
 
     public final void b() {
@@ -150,15 +150,15 @@ public class AccountChallengeWebView extends LinearLayout {
         if (str2 != null) {
             this.o.G(str2);
         }
-        ddoe.b(getContext(), this.o, this.g);
+        dfzj.b(getContext(), this.o, this.g);
     }
 
     public final void d() {
-        degl deglVar = this.q;
-        if (deglVar != null) {
-            degq degqVar = deglVar.b;
-            if (degqVar.isAdded()) {
-                degqVar.x(degqVar.b);
+        dgro dgroVar = this.q;
+        if (dgroVar != null) {
+            dgrt dgrtVar = dgroVar.b;
+            if (dgrtVar.isAdded()) {
+                dgrtVar.x(dgrtVar.b);
             }
         }
         this.n.setVisibility(8);
@@ -185,22 +185,22 @@ public class AccountChallengeWebView extends LinearLayout {
     }
 
     public final void f(ArrayList arrayList) {
-        arwm.m(this.t == null, "Cannot call AccountChallengeWebView#startChallenges more than once.");
+        atzb.m(this.t == null, "Cannot call AccountChallengeWebView#startChallenges more than once.");
         this.t = arrayList;
         this.k = 0;
         this.m = null;
-        arwm.m(!arrayList.isEmpty(), "Must have at least one account.");
+        atzb.m(!arrayList.isEmpty(), "Must have at least one account.");
         this.i = this.t.size();
-        post(new delg(this));
+        post(new dgwj(this));
     }
 
     public final void g() {
-        arxo arxoVar = a;
-        arxoVar.j("Acquiring semaphore.", new Object[0]);
+        auad auadVar = a;
+        auadVar.j("Acquiring semaphore.", new Object[0]);
         if (!this.j.tryAcquire()) {
-            arxoVar.o("This should not happen.", new Object[0]);
+            auadVar.o("This should not happen.", new Object[0]);
         } else {
-            arxoVar.j("Semaphore acquired successfully.", new Object[0]);
+            auadVar.j("Semaphore acquired successfully.", new Object[0]);
             post(this.x);
         }
     }
@@ -242,21 +242,21 @@ public class AccountChallengeWebView extends LinearLayout {
     public AccountChallengeWebView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         this.h = new ArrayList();
-        this.x = new dell(this);
+        this.x = new dgwo(this);
         j();
     }
 
     public AccountChallengeWebView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         this.h = new ArrayList();
-        this.x = new dell(this);
+        this.x = new dgwo(this);
         j();
     }
 
     public AccountChallengeWebView(Context context, AttributeSet attributeSet, int i, int i2) {
         super(context, attributeSet, i, i2);
         this.h = new ArrayList();
-        this.x = new dell(this);
+        this.x = new dgwo(this);
         j();
     }
 }

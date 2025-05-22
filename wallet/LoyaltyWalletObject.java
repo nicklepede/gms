@@ -6,15 +6,15 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.wallet.wobs.CommonWalletObject;
 import com.google.android.gms.wallet.wobs.LoyaltyPoints;
 import com.google.android.gms.wallet.wobs.TimeInterval;
-import defpackage.arxc;
-import defpackage.didv;
-import defpackage.djiw;
+import defpackage.atzr;
+import defpackage.dkpg;
+import defpackage.dlup;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class LoyaltyWalletObject extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new didv();
+    public static final Parcelable.Creator CREATOR = new dkpg();
     String a;
     public String b;
     String c;
@@ -70,7 +70,7 @@ public final class LoyaltyWalletObject extends AbstractSafeParcelable {
     }
 
     public final CommonWalletObject a() {
-        djiw a = CommonWalletObject.a();
+        dlup a = CommonWalletObject.a();
         a.a(this.a);
         CommonWalletObject commonWalletObject = a.a;
         commonWalletObject.b = this.j;
@@ -96,30 +96,30 @@ public final class LoyaltyWalletObject extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, this.a, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.v(parcel, 8, this.g, false);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.v(parcel, 10, this.i, false);
-        arxc.v(parcel, 11, this.j, false);
-        arxc.o(parcel, 12, this.k);
-        arxc.y(parcel, 13, this.l, false);
-        arxc.t(parcel, 14, this.m, i, false);
-        arxc.y(parcel, 15, this.n, false);
-        arxc.v(parcel, 16, this.o, false);
-        arxc.v(parcel, 17, this.p, false);
-        arxc.y(parcel, 18, this.q, false);
-        arxc.e(parcel, 19, this.r);
-        arxc.y(parcel, 20, this.s, false);
-        arxc.y(parcel, 21, this.t, false);
-        arxc.y(parcel, 22, this.u, false);
-        arxc.t(parcel, 23, this.v, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, this.a, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.v(parcel, 8, this.g, false);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.v(parcel, 10, this.i, false);
+        atzr.v(parcel, 11, this.j, false);
+        atzr.o(parcel, 12, this.k);
+        atzr.y(parcel, 13, this.l, false);
+        atzr.t(parcel, 14, this.m, i, false);
+        atzr.y(parcel, 15, this.n, false);
+        atzr.v(parcel, 16, this.o, false);
+        atzr.v(parcel, 17, this.p, false);
+        atzr.y(parcel, 18, this.q, false);
+        atzr.e(parcel, 19, this.r);
+        atzr.y(parcel, 20, this.s, false);
+        atzr.y(parcel, 21, this.t, false);
+        atzr.y(parcel, 22, this.u, false);
+        atzr.t(parcel, 23, this.v, i, false);
+        atzr.c(parcel, a);
     }
 
     LoyaltyWalletObject() {

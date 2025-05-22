@@ -5,20 +5,20 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.mobiledataplan.payment.PaymentForm;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cdzb;
-import defpackage.ceal;
-import defpackage.ceam;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgii;
+import defpackage.cgjs;
+import defpackage.cgjt;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MdpUpsellOfferResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ceam();
+    public static final Parcelable.Creator CREATOR = new cgjt();
     public final String a;
     public final String b;
     public final String c;
@@ -30,9 +30,9 @@ public class MdpUpsellOfferResponse extends AbstractSafeParcelable {
     public final PaymentForm[] i;
     public final List j;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Filter extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new ceal();
+        public static final Parcelable.Creator CREATOR = new cgjs();
         public final String a;
         public final String b;
 
@@ -47,9 +47,9 @@ public class MdpUpsellOfferResponse extends AbstractSafeParcelable {
 
         public final String toString() {
             ArrayList arrayList = new ArrayList();
-            arwa.b("tag", this.a, arrayList);
-            arwa.b("display_text", this.b, arrayList);
-            return arwa.a(arrayList, this);
+            atyp.b("tag", this.a, arrayList);
+            atyp.b("display_text", this.b, arrayList);
+            return atyp.a(arrayList, this);
         }
 
         @Override // android.os.Parcelable
@@ -80,42 +80,42 @@ public class MdpUpsellOfferResponse extends AbstractSafeParcelable {
             return false;
         }
         MdpUpsellOfferResponse mdpUpsellOfferResponse = (MdpUpsellOfferResponse) obj;
-        return arwb.b(this.a, mdpUpsellOfferResponse.a) && arwb.b(this.b, mdpUpsellOfferResponse.b) && arwb.b(this.c, mdpUpsellOfferResponse.c) && arwb.b(this.d, mdpUpsellOfferResponse.d) && Arrays.equals(this.e, mdpUpsellOfferResponse.e) && cdzb.b(this.f, mdpUpsellOfferResponse.f) && arwb.b(this.g, mdpUpsellOfferResponse.g) && arwb.b(this.h, mdpUpsellOfferResponse.h) && Arrays.equals(this.i, mdpUpsellOfferResponse.i) && arwb.b(this.j, mdpUpsellOfferResponse.j);
+        return atyq.b(this.a, mdpUpsellOfferResponse.a) && atyq.b(this.b, mdpUpsellOfferResponse.b) && atyq.b(this.c, mdpUpsellOfferResponse.c) && atyq.b(this.d, mdpUpsellOfferResponse.d) && Arrays.equals(this.e, mdpUpsellOfferResponse.e) && cgii.b(this.f, mdpUpsellOfferResponse.f) && atyq.b(this.g, mdpUpsellOfferResponse.g) && atyq.b(this.h, mdpUpsellOfferResponse.h) && Arrays.equals(this.i, mdpUpsellOfferResponse.i) && atyq.b(this.j, mdpUpsellOfferResponse.j);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{this.a, this.b, this.c, this.d, Integer.valueOf(cdzb.a(this.f)), this.g, this.h, Integer.valueOf(Arrays.hashCode(this.e)), Integer.valueOf(Arrays.hashCode(this.i)), this.j});
+        return Arrays.hashCode(new Object[]{this.a, this.b, this.c, this.d, Integer.valueOf(cgii.a(this.f)), this.g, this.h, Integer.valueOf(Arrays.hashCode(this.e)), Integer.valueOf(Arrays.hashCode(this.i)), this.j});
     }
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("CarrierName", this.a, arrayList);
-        arwa.b("CarrierLogoUrl", this.b, arrayList);
-        arwa.b("PromoMessage", this.c, arrayList);
-        arwa.b("Info", this.d, arrayList);
-        arwa.b("UpsellPlans", Arrays.toString(this.e), arrayList);
-        arwa.b("ExtraInfo", this.f, arrayList);
-        arwa.b("EventFlowId", this.g, arrayList);
-        arwa.b("UniqueRequestId", this.h, arrayList);
-        arwa.b("PaymentForms", Arrays.toString(this.i), arrayList);
-        arwa.b("Filters", this.j.toString(), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("CarrierName", this.a, arrayList);
+        atyp.b("CarrierLogoUrl", this.b, arrayList);
+        atyp.b("PromoMessage", this.c, arrayList);
+        atyp.b("Info", this.d, arrayList);
+        atyp.b("UpsellPlans", Arrays.toString(this.e), arrayList);
+        atyp.b("ExtraInfo", this.f, arrayList);
+        atyp.b("EventFlowId", this.g, arrayList);
+        atyp.b("UniqueRequestId", this.h, arrayList);
+        atyp.b("PaymentForms", Arrays.toString(this.i), arrayList);
+        atyp.b("Filters", this.j.toString(), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.J(parcel, 5, this.e, i);
-        arxc.g(parcel, 6, this.f, false);
-        arxc.F(parcel, 7, this.g);
-        arxc.I(parcel, 8, this.h);
-        arxc.J(parcel, 9, this.i, i);
-        arxc.y(parcel, 10, this.j, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.J(parcel, 5, this.e, i);
+        atzr.g(parcel, 6, this.f, false);
+        atzr.F(parcel, 7, this.g);
+        atzr.I(parcel, 8, this.h);
+        atzr.J(parcel, 9, this.i, i);
+        atzr.y(parcel, 10, this.j, false);
+        atzr.c(parcel, a);
     }
 }

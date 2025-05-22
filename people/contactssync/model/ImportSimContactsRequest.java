@@ -3,25 +3,25 @@ package com.google.android.gms.people.contactssync.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ctwp;
-import defpackage.eihn;
-import defpackage.eiib;
-import defpackage.eiic;
-import defpackage.eiuu;
-import defpackage.ennt;
+import defpackage.atzr;
+import defpackage.cwfv;
+import defpackage.ekus;
+import defpackage.ekvg;
+import defpackage.ekvh;
+import defpackage.elhz;
+import defpackage.eqbm;
 import java.util.Arrays;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ImportSimContactsRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctwp();
+    public static final Parcelable.Creator CREATOR = new cwfv();
     public final Set a;
     public final AccountWithDataSet b;
 
     public ImportSimContactsRequest(Set set, AccountWithDataSet accountWithDataSet) {
-        this.a = eiuu.G(set);
+        this.a = elhz.G(set);
         this.b = accountWithDataSet;
     }
 
@@ -33,7 +33,7 @@ public final class ImportSimContactsRequest extends AbstractSafeParcelable {
             return false;
         }
         ImportSimContactsRequest importSimContactsRequest = (ImportSimContactsRequest) obj;
-        return eihn.a(this.a, importSimContactsRequest.a) && eihn.a(this.b, importSimContactsRequest.b);
+        return ekus.a(this.a, importSimContactsRequest.a) && ekus.a(this.b, importSimContactsRequest.b);
     }
 
     public final int hashCode() {
@@ -41,7 +41,7 @@ public final class ImportSimContactsRequest extends AbstractSafeParcelable {
     }
 
     public final String toString() {
-        eiib b = eiic.b(this);
+        ekvg b = ekvh.b(this);
         b.b("subscriptionIds", this.a);
         b.b("destinationAccount", this.b);
         return b.toString();
@@ -50,9 +50,9 @@ public final class ImportSimContactsRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
-        arxc.p(parcel, 1, ennt.m(set), false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.p(parcel, 1, eqbm.m(set), false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 }

@@ -11,41 +11,40 @@ import com.google.android.chimera.Service;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.common.Feature;
 import com.google.android.gms.common.api.ApiMetadata;
-import com.google.android.gms.common.api.ComplianceOptions;
 import defpackage.a;
-import defpackage.aqxo;
-import defpackage.aqxt;
-import defpackage.arbz;
-import defpackage.arcb;
-import defpackage.arcc;
-import defpackage.arcm;
-import defpackage.arco;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.aspo;
-import defpackage.bzjo;
-import defpackage.bzkd;
-import defpackage.bzkm;
-import defpackage.cajn;
-import defpackage.cajo;
-import defpackage.cajq;
-import defpackage.cajt;
-import defpackage.caju;
-import defpackage.cajy;
-import defpackage.canf;
-import defpackage.dfah;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.dfds;
-import defpackage.dfec;
-import defpackage.eiho;
-import defpackage.eiig;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fpls;
-import defpackage.fsli;
+import defpackage.atad;
+import defpackage.atai;
+import defpackage.ateo;
+import defpackage.ateq;
+import defpackage.ater;
+import defpackage.atfb;
+import defpackage.atfd;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auti;
+import defpackage.cbsf;
+import defpackage.cbsu;
+import defpackage.cbtd;
+import defpackage.ccsd;
+import defpackage.ccse;
+import defpackage.ccsg;
+import defpackage.ccsj;
+import defpackage.ccsk;
+import defpackage.ccso;
+import defpackage.ccvv;
+import defpackage.dhln;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.dhoy;
+import defpackage.dhpi;
+import defpackage.ekut;
+import defpackage.ekvl;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fsfk;
+import defpackage.fvgk;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -53,113 +52,109 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class GnssLocationChimeraService extends Service {
-    public static final asot a = asot.b("GnssShim", asej.LOCATION);
-    public cajt b;
+    public static final ausn a = ausn.b("GnssShim", auid.LOCATION);
+    public ccsj b;
 
     @Override // com.google.android.chimera.Service
     protected final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        bzjo bzjoVar;
-        bzkm bzkmVar;
+        cbsf cbsfVar;
+        cbtd cbtdVar;
         List asList = Arrays.asList(strArr);
-        aspo aspoVar = new aspo(printWriter, "  ");
-        aspoVar.println("Flags:");
-        aspoVar.b();
-        aspoVar.println(a.Z(fpls.k(), "use_blue_star_location_provider: "));
-        aspoVar.println("enable_blue_star_in_flp: " + fpls.i());
-        aspoVar.println("enable_bugreport_measurement_logging: " + fpls.j());
-        aspoVar.println("bugreport_measurement_logging_duration_seconds: " + fpls.b());
-        aspoVar.println("disable_inertials: " + fpls.g());
-        aspoVar.println("disable_request_chipset_location_updates: " + fpls.h());
-        aspoVar.println("disable_activity_recognition: " + fpls.f());
-        aspoVar.println("use_chipset_default: " + fpls.l());
-        aspoVar.println("use_chipset_pedestrian: " + fpls.m());
-        aspoVar.println("use_chipset_vehicle: " + fpls.n());
-        aspoVar.println(a.Z(fsli.c(), "tensorgps_location_provider_enabled: "));
+        auti autiVar = new auti(printWriter, "  ");
+        autiVar.println("Flags:");
+        autiVar.b();
+        autiVar.println(a.aa(fsfk.k(), "use_blue_star_location_provider: "));
+        autiVar.println("enable_blue_star_in_flp: " + fsfk.i());
+        autiVar.println("enable_bugreport_measurement_logging: " + fsfk.j());
+        autiVar.println("bugreport_measurement_logging_duration_seconds: " + fsfk.b());
+        autiVar.println("disable_inertials: " + fsfk.g());
+        autiVar.println("disable_request_chipset_location_updates: " + fsfk.h());
+        autiVar.println("disable_activity_recognition: " + fsfk.f());
+        autiVar.println("use_chipset_default: " + fsfk.l());
+        autiVar.println("use_chipset_pedestrian: " + fsfk.m());
+        autiVar.println("use_chipset_vehicle: " + fsfk.n());
+        autiVar.println(a.aa(fvgk.c(), "tensorgps_location_provider_enabled: "));
         if (this.b == null || asList.contains("disableMeasurementLogs")) {
             return;
         }
-        cajt cajtVar = this.b;
-        cajq cajqVar = cajtVar.d;
-        cajq cajqVar2 = cajtVar.b;
-        cajq cajqVar3 = cajtVar.c;
+        ccsj ccsjVar = this.b;
+        ccsg ccsgVar = ccsjVar.d;
+        ccsg ccsgVar2 = ccsjVar.b;
+        ccsg ccsgVar3 = ccsjVar.c;
         StringBuilder sb = new StringBuilder("Active delegate: ");
-        sb.append(cajqVar == cajqVar2 ? "chipset" : "bluestar");
-        sb.append(cajqVar3 != null ? " and tensorgps" : "");
+        sb.append(ccsgVar == ccsgVar2 ? "chipset" : "bluestar");
+        sb.append(ccsgVar3 != null ? " and tensorgps" : "");
         printWriter.println(sb.toString());
-        cajq cajqVar4 = cajtVar.a;
-        if (cajqVar4 == null || (bzjoVar = ((cajn) cajqVar4).e) == null || (bzkmVar = ((bzkd) bzjoVar.e).u) == null) {
+        ccsg ccsgVar4 = ccsjVar.a;
+        if (ccsgVar4 == null || (cbsfVar = ((ccsd) ccsgVar4).e) == null || (cbtdVar = ((cbsu) cbsfVar.e).u) == null) {
             return;
         }
         printWriter.println("MeasurementLogStore Begin");
-        synchronized (bzkmVar) {
-            bzkmVar.b();
+        synchronized (cbtdVar) {
+            cbtdVar.b();
         }
-        bzkmVar.a.c(printWriter);
+        cbtdVar.a.c(printWriter);
         printWriter.println("MeasurementLogStore End");
     }
 
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
-        dfaq iP;
+        dhlw je;
         Context createSubmoduleContext = ModuleManager.createSubmoduleContext(this, "gnss_location_provider");
-        eiig.x(createSubmoduleContext);
-        canf c = canf.c();
+        ekvl.y(createSubmoduleContext);
+        ccvv c = ccvv.c();
         final long currentTimeMillis = System.currentTimeMillis();
-        final long e = fpls.a.a().e();
+        final long e = fsfk.a.lK().e();
         final AtomicInteger atomicInteger = new AtomicInteger();
-        enss f = c.f(new eiho() { // from class: canc
-            @Override // defpackage.eiho
+        eqgl f = c.f(new ekut() { // from class: ccvs
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                cang cangVar = (cang) obj;
-                asot asotVar = canf.a;
-                cani caniVar = (cani) cangVar.b;
-                long j = caniVar.h;
+                ccvw ccvwVar = (ccvw) obj;
+                ausn ausnVar = ccvv.a;
+                ccvy ccvyVar = (ccvy) ccvwVar.b;
+                long j = ccvyVar.h;
                 long j2 = currentTimeMillis;
-                int i = j2 - j > e ? 0 : caniVar.i + 1;
+                int i = j2 - j > e ? 0 : ccvyVar.i + 1;
                 atomicInteger.set(i);
-                if (!cangVar.b.L()) {
-                    cangVar.U();
+                if (!ccvwVar.b.L()) {
+                    ccvwVar.U();
                 }
-                cani caniVar2 = (cani) cangVar.b;
-                caniVar2.b |= 32;
-                caniVar2.i = i;
-                if (!cangVar.b.L()) {
-                    cangVar.U();
+                ccvy ccvyVar2 = (ccvy) ccvwVar.b;
+                ccvyVar2.b |= 32;
+                ccvyVar2.i = i;
+                if (!ccvwVar.b.L()) {
+                    ccvwVar.U();
                 }
-                cani caniVar3 = (cani) cangVar.b;
-                caniVar3.b |= 16;
-                caniVar3.h = j2;
-                return cangVar;
+                ccvy ccvyVar3 = (ccvy) ccvwVar.b;
+                ccvyVar3.b |= 16;
+                ccvyVar3.h = j2;
+                return ccvwVar;
             }
         });
-        eiho eihoVar = new eiho() { // from class: cami
-            @Override // defpackage.eiho
+        ekut ekutVar = new ekut() { // from class: ccuy
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                asot asotVar = canf.a;
+                ausn ausnVar = ccvv.a;
                 return Integer.valueOf(atomicInteger.get());
             }
         };
-        enre enreVar = enre.a;
-        ensj.t(enps.f(f, eihoVar, enreVar), new caju(this, createSubmoduleContext), enreVar);
+        eqex eqexVar = eqex.a;
+        eqgc.t(eqdl.f(f, ekutVar, eqexVar), new ccsk(this, createSubmoduleContext), eqexVar);
         if (this.b == null) {
-            cajt cajtVar = new cajt(createSubmoduleContext);
-            this.b = cajtVar;
-            cajtVar.d = cajtVar.a(ProviderRequest.EMPTY_REQUEST);
-            cajq cajqVar = cajtVar.a;
-            if (cajqVar != null) {
-                final cajn cajnVar = (cajn) cajqVar;
-                cajnVar.c.execute(new Runnable() { // from class: cajm
-                    /* JADX WARN: Code restructure failed: missing block: B:46:0x009b, code lost:
-                    
-                        if (r12.equals("sm-s908b") != false) goto L27;
-                     */
-                    /* JADX WARN: Removed duplicated region for block: B:19:0x00a3  */
-                    /* JADX WARN: Removed duplicated region for block: B:24:0x00b2  */
-                    /* JADX WARN: Removed duplicated region for block: B:34:0x012e  */
-                    /* JADX WARN: Removed duplicated region for block: B:40:0x00ad  */
+            ccsj ccsjVar = new ccsj(createSubmoduleContext);
+            this.b = ccsjVar;
+            ccsjVar.d = ccsjVar.a(ProviderRequest.EMPTY_REQUEST);
+            ccsg ccsgVar = ccsjVar.a;
+            if (ccsgVar != null) {
+                final ccsd ccsdVar = (ccsd) ccsgVar;
+                ccsdVar.c.execute(new Runnable() { // from class: ccsc
+                    /* JADX WARN: Removed duplicated region for block: B:19:0x00a4  */
+                    /* JADX WARN: Removed duplicated region for block: B:24:0x00b3  */
+                    /* JADX WARN: Removed duplicated region for block: B:34:0x012f  */
+                    /* JADX WARN: Removed duplicated region for block: B:40:0x00ae  */
                     @Override // java.lang.Runnable
                     /*
                         Code decompiled incorrectly, please refer to instructions dump.
@@ -167,79 +162,75 @@ public final class GnssLocationChimeraService extends Service {
                     */
                     public final void run() {
                         /*
-                            Method dump skipped, instructions count: 631
+                            Method dump skipped, instructions count: 635
                             To view this dump change 'Code comments level' option to 'DEBUG'
                         */
-                        throw new UnsupportedOperationException("Method not decompiled: defpackage.cajm.run():void");
+                        throw new UnsupportedOperationException("Method not decompiled: defpackage.ccsc.run():void");
                     }
                 });
             }
-            cajq cajqVar2 = cajtVar.b;
-            cajq cajqVar3 = cajtVar.c;
-            if (cajqVar3 != null) {
-                final cajy cajyVar = (cajy) cajqVar3;
-                if (!cajyVar.c.get() && !cajyVar.f) {
-                    cajyVar.f = true;
-                    if (cajyVar.e == null) {
-                        cajyVar.e = new dfec(cajyVar.a);
+            ccsg ccsgVar2 = ccsjVar.b;
+            ccsg ccsgVar3 = ccsjVar.c;
+            if (ccsgVar3 != null) {
+                final ccso ccsoVar = (ccso) ccsgVar3;
+                if (!ccsoVar.c.get() && !ccsoVar.f) {
+                    ccsoVar.f = true;
+                    if (ccsoVar.e == null) {
+                        ccsoVar.e = new dhpi(ccsoVar.a);
                     }
-                    aqxt aqxtVar = cajyVar.e;
-                    if (aqxtVar != null) {
-                        aqxo aqxoVar = (aqxo) aqxtVar;
-                        final arcb iL = aqxoVar.iL(cajyVar.d, "TensorGpsLocationListener");
-                        arbz arbzVar = iL.b;
-                        if (arbzVar == null) {
-                            iP = dfbl.d(null);
+                    atai ataiVar = ccsoVar.e;
+                    if (ataiVar != null) {
+                        atad atadVar = (atad) ataiVar;
+                        final ateq ja = atadVar.ja(ccsoVar.d, "TensorGpsLocationListener");
+                        ateo ateoVar = ja.b;
+                        if (ateoVar == null) {
+                            je = dhmr.d(null);
                         } else {
-                            final int hashCode = arbzVar.hashCode();
-                            arco arcoVar = new arco() { // from class: dfdw
-                                @Override // defpackage.arco
+                            final int hashCode = ateoVar.hashCode();
+                            atfd atfdVar = new atfd() { // from class: dhpc
+                                @Override // defpackage.atfd
                                 public final void d(Object obj, Object obj2) {
-                                    dfed dfedVar = (dfed) obj;
-                                    int i = dfec.a;
-                                    dfdz dfdzVar = new dfdz((dfau) obj2);
-                                    Context context = dfedVar.r;
-                                    ComplianceOptions complianceOptions = new ComplianceOptions(-1, -1, 0, true);
-                                    dfdu dfduVar = (dfdu) dfedVar.H();
-                                    dfdv dfdvVar = new dfdv(iL);
-                                    ApiMetadata apiMetadata = new ApiMetadata(complianceOptions);
-                                    Parcel fr = dfduVar.fr();
-                                    oto.g(fr, dfdzVar);
-                                    oto.g(fr, dfdvVar);
-                                    fr.writeInt(hashCode);
-                                    oto.e(fr, apiMetadata);
-                                    dfduVar.ft(1, fr);
+                                    dhpj dhpjVar = (dhpj) obj;
+                                    int i = dhpi.a;
+                                    dhpf dhpfVar = new dhpf((dhma) obj2);
+                                    dhpa dhpaVar = (dhpa) dhpjVar.H();
+                                    dhpb dhpbVar = new dhpb(ja);
+                                    ApiMetadata a2 = bsxa.a(dhpjVar.r);
+                                    Parcel fE = dhpaVar.fE();
+                                    qmr.g(fE, dhpfVar);
+                                    qmr.g(fE, dhpbVar);
+                                    fE.writeInt(hashCode);
+                                    qmr.e(fE, a2);
+                                    dhpaVar.fG(1, fE);
                                 }
                             };
-                            arco arcoVar2 = new arco() { // from class: dfdx
-                                @Override // defpackage.arco
+                            atfd atfdVar2 = new atfd() { // from class: dhpd
+                                @Override // defpackage.atfd
                                 public final void d(Object obj, Object obj2) {
-                                    dfed dfedVar = (dfed) obj;
-                                    int i = dfec.a;
-                                    dfeb dfebVar = new dfeb((dfau) obj2);
-                                    Context context = dfedVar.r;
-                                    ComplianceOptions complianceOptions = new ComplianceOptions(-1, -1, 0, true);
-                                    dfdu dfduVar = (dfdu) dfedVar.H();
-                                    ApiMetadata apiMetadata = new ApiMetadata(complianceOptions);
-                                    Parcel fr = dfduVar.fr();
-                                    oto.g(fr, dfebVar);
-                                    fr.writeInt(hashCode);
-                                    oto.e(fr, apiMetadata);
-                                    dfduVar.ft(2, fr);
+                                    dhpj dhpjVar = (dhpj) obj;
+                                    int i = dhpi.a;
+                                    dhph dhphVar = new dhph((dhma) obj2);
+                                    dhpa dhpaVar = (dhpa) dhpjVar.H();
+                                    ApiMetadata a2 = bsxa.a(dhpjVar.r);
+                                    Parcel fE = dhpaVar.fE();
+                                    qmr.g(fE, dhphVar);
+                                    fE.writeInt(hashCode);
+                                    qmr.e(fE, a2);
+                                    dhpaVar.fG(2, fE);
                                 }
                             };
-                            arcm arcmVar = new arcm();
-                            arcmVar.c = iL;
-                            arcmVar.d = new Feature[]{dfds.a};
-                            arcmVar.a = arcoVar;
-                            arcmVar.b = arcoVar2;
-                            arcmVar.e = 34301;
-                            iP = aqxoVar.iP(arcmVar.a());
+                            atfb atfbVar = new atfb();
+                            atfbVar.c = ja;
+                            atfbVar.d = new Feature[]{dhoy.a};
+                            atfbVar.a = atfdVar;
+                            atfbVar.b = atfdVar2;
+                            atfbVar.e = 34301;
+                            je = atadVar.je(atfbVar.a());
                         }
-                        iP.y(new dfah() { // from class: cajw
-                            @Override // defpackage.dfah
-                            public final void gm(Exception exc) {
-                                cajy.this.c.set(true);
+                        je.y(new dhln() { // from class: ccsm
+                            @Override // defpackage.dhln
+                            public final void gB(Exception exc) {
+                                ccso.this.c.set(true);
                             }
                         });
                     }
@@ -251,28 +242,28 @@ public final class GnssLocationChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        cajt cajtVar = this.b;
-        if (cajtVar != null) {
-            cajq cajqVar = cajtVar.a;
-            if (cajqVar != null) {
-                final cajn cajnVar = (cajn) cajqVar;
-                cajnVar.c.execute(new Runnable() { // from class: cajk
+        ccsj ccsjVar = this.b;
+        if (ccsjVar != null) {
+            ccsg ccsgVar = ccsjVar.a;
+            if (ccsgVar != null) {
+                final ccsd ccsdVar = (ccsd) ccsgVar;
+                ccsdVar.c.execute(new Runnable() { // from class: ccsa
                     @Override // java.lang.Runnable
                     public final void run() {
-                        cajn cajnVar2 = cajn.this;
-                        bzjo bzjoVar = cajnVar2.e;
-                        if (bzjoVar != null) {
-                            bzjoVar.c();
-                            cajnVar2.e = null;
-                            cajnVar2.f = null;
+                        ccsd ccsdVar2 = ccsd.this;
+                        cbsf cbsfVar = ccsdVar2.e;
+                        if (cbsfVar != null) {
+                            cbsfVar.c();
+                            ccsdVar2.e = null;
+                            ccsdVar2.f = null;
                         }
                     }
                 });
             }
-            cajo cajoVar = (cajo) cajtVar.b;
-            cajoVar.c.removeUpdates(cajoVar.d);
+            ccse ccseVar = (ccse) ccsjVar.b;
+            ccseVar.c.removeUpdates(ccseVar.d);
             ArrayList arrayList = new ArrayList();
-            SparseArray sparseArray = cajoVar.a;
+            SparseArray sparseArray = ccseVar.a;
             synchronized (sparseArray) {
                 for (int i = 0; i < sparseArray.size(); i++) {
                     arrayList.add((LocationProviderBase.OnFlushCompleteCallback) sparseArray.valueAt(i));
@@ -283,19 +274,19 @@ public final class GnssLocationChimeraService extends Service {
             for (int i2 = 0; i2 < size; i2++) {
                 ((LocationProviderBase.OnFlushCompleteCallback) arrayList.get(i2)).onFlushComplete();
             }
-            cajq cajqVar2 = cajtVar.c;
-            if (cajqVar2 != null) {
-                cajy cajyVar = (cajy) cajqVar2;
-                if (!cajyVar.c.get() && cajyVar.f) {
-                    cajyVar.f = false;
-                    aqxt aqxtVar = cajyVar.e;
-                    if (aqxtVar != null) {
-                        arbz a2 = arcc.a(cajyVar.d, "TensorGpsLocationListener");
+            ccsg ccsgVar2 = ccsjVar.c;
+            if (ccsgVar2 != null) {
+                ccso ccsoVar = (ccso) ccsgVar2;
+                if (!ccsoVar.c.get() && ccsoVar.f) {
+                    ccsoVar.f = false;
+                    atai ataiVar = ccsoVar.e;
+                    if (ataiVar != null) {
+                        ateo a2 = ater.a(ccsoVar.d, "TensorGpsLocationListener");
                         a2.hashCode();
-                        ((aqxo) aqxtVar).iS(a2, 34302).y(new dfah() { // from class: cajv
-                            @Override // defpackage.dfah
-                            public final void gm(Exception exc) {
-                                int i3 = cajy.h;
+                        ((atad) ataiVar).jh(a2, 34302).y(new dhln() { // from class: ccsl
+                            @Override // defpackage.dhln
+                            public final void gB(Exception exc) {
+                                int i3 = ccso.h;
                             }
                         });
                     }

@@ -8,140 +8,140 @@ import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.wearable.backup.wear.WearBackupOptInChimeraActivity;
 import com.google.android.gms.wearable.backup.wear.WearBackupOptInNotificationService;
 import com.google.android.gms.wearable.backup.wear.WearBackupSettingsChimeraActivity;
-import defpackage.ahpv;
-import defpackage.arxo;
-import defpackage.bxfy;
-import defpackage.byln;
-import defpackage.djlj;
-import defpackage.dlzh;
-import defpackage.dxbn;
-import defpackage.dxbo;
-import defpackage.dxhi;
-import defpackage.dxhj;
-import defpackage.dxhm;
-import defpackage.dxkm;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
+import defpackage.ajql;
+import defpackage.auad;
+import defpackage.bzoo;
+import defpackage.cauf;
+import defpackage.dlxc;
+import defpackage.dokt;
+import defpackage.dznn;
+import defpackage.dzno;
+import defpackage.dzti;
+import defpackage.dztj;
+import defpackage.dztm;
+import defpackage.dzwm;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgl;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Pattern;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class WearBackupOptInNotificationService extends GmsTaskBoundService {
-    public static final arxo a = new djlj("OptInNotificationService");
+    public static final auad a = new dlxc("OptInNotificationService");
 
-    public static dxkm d(Context context) {
-        dxhm dxhmVar = bxfy.a;
-        dxhi a2 = dxhj.a();
-        Pattern pattern = dxbo.a;
-        dxbn dxbnVar = new dxbn(context);
-        dxbnVar.e("wearable");
-        dxbnVar.f("wear_backup_opt_in_notification.pb");
-        a2.f(dxbnVar.a());
-        a2.e(dlzh.a);
-        return dxhmVar.a(a2.a());
+    public static dzwm d(Context context) {
+        dztm dztmVar = bzoo.a;
+        dzti a2 = dztj.a();
+        Pattern pattern = dzno.a;
+        dznn dznnVar = new dznn(context);
+        dznnVar.e("wearable");
+        dznnVar.f("wear_backup_opt_in_notification.pb");
+        a2.f(dznnVar.a());
+        a2.e(dokt.a);
+        return dztmVar.a(a2.a());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        arxo arxoVar = a;
-        arxoVar.d("onRunTaskAsync", new Object[0]);
-        boolean k = new ahpv(this).k();
-        arxoVar.d("isBackupEnabled=%b", Boolean.valueOf(k));
-        if (k) {
-            arxoVar.j("Backup is already enabled, not showing notification", new Object[0]);
-            return ensj.i(0);
+    public final eqgl iB(cauf caufVar) {
+        auad auadVar = a;
+        auadVar.d("onRunTaskAsync", new Object[0]);
+        boolean j = new ajql(this).j();
+        auadVar.d("isBackupEnabled=%b", Boolean.valueOf(j));
+        if (j) {
+            auadVar.j("Backup is already enabled, not showing notification", new Object[0]);
+            return eqgc.i(0);
         }
-        arxoVar.d("Notification disabled: device is not wearable", new Object[0]);
-        return enps.g(ensj.i(false), new enqc() { // from class: djwi
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+        auadVar.d("Notification disabled: device is not wearable", new Object[0]);
+        return eqdl.g(eqgc.i(false), new eqdv() { // from class: dmib
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 if (!((Boolean) obj).booleanValue()) {
                     WearBackupOptInNotificationService.a.d("Disabled, not running", new Object[0]);
-                    return ensj.i(2);
+                    return eqgc.i(2);
                 }
                 final WearBackupOptInNotificationService wearBackupOptInNotificationService = WearBackupOptInNotificationService.this;
-                asbo f = asbo.f(wearBackupOptInNotificationService);
+                aued f = aued.f(wearBackupOptInNotificationService);
                 if (f == null) {
                     WearBackupOptInNotificationService.a.f("Unable to send notifications: notificationManager is null", new Object[0]);
-                    return ensj.i(2);
+                    return eqgc.i(2);
                 }
                 WearBackupOptInNotificationService.a.d("Showing opt-in notification", new Object[0]);
-                Notification.Builder addAction = djsd.a(wearBackupOptInNotificationService).setContentTitle(wearBackupOptInNotificationService.getText(R.string.wear_backup_opt_in_notification_title)).setContentText(wearBackupOptInNotificationService.getText(R.string.wear_backup_opt_in_notification_text)).setAutoCancel(false).addAction(new Notification.Action.Builder((Icon) null, wearBackupOptInNotificationService.getText(R.string.common_turn_on), djsd.b(wearBackupOptInNotificationService, WearBackupSettingsChimeraActivity.b().putExtra("enable_backup_from_notification", true))).build());
-                if (ftfu.e()) {
-                    new ild(wearBackupOptInNotificationService).c("com.google.android.backup.notification.wear_backup_opt_in.tag", 2, addAction.build());
+                Notification.Builder addAction = dmdw.a(wearBackupOptInNotificationService).setContentTitle(wearBackupOptInNotificationService.getText(R.string.wear_backup_opt_in_notification_title)).setContentText(wearBackupOptInNotificationService.getText(R.string.wear_backup_opt_in_notification_text)).setAutoCancel(false).addAction(new Notification.Action.Builder((Icon) null, wearBackupOptInNotificationService.getText(R.string.common_turn_on), dmdw.b(wearBackupOptInNotificationService, WearBackupSettingsChimeraActivity.b().putExtra("enable_backup_from_notification", true))).build());
+                if (fwbj.e()) {
+                    new imt(wearBackupOptInNotificationService).c("com.google.android.backup.notification.wear_backup_opt_in.tag", 2, addAction.build());
                 } else {
-                    addAction.setContentIntent(djsd.b(wearBackupOptInNotificationService, WearBackupOptInChimeraActivity.a(null)));
-                    f.w("com.google.android.backup.notification.wear_backup_opt_in.tag", 2, dfee.WEARABLE_BACKUP_OPT_IN, addAction.build());
+                    addAction.setContentIntent(dmdw.b(wearBackupOptInNotificationService, WearBackupOptInChimeraActivity.a(null)));
+                    f.w("com.google.android.backup.notification.wear_backup_opt_in.tag", 2, dhpk.WEARABLE_BACKUP_OPT_IN, addAction.build());
                 }
                 final AtomicReference atomicReference = new AtomicReference();
-                dxkm d = WearBackupOptInNotificationService.d(wearBackupOptInNotificationService);
-                eiho eihoVar = new eiho() { // from class: djwj
-                    @Override // defpackage.eiho
+                dzwm d = WearBackupOptInNotificationService.d(wearBackupOptInNotificationService);
+                ekut ekutVar = new ekut() { // from class: dmic
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
-                        dlzh dlzhVar = (dlzh) obj2;
-                        arxo arxoVar2 = WearBackupOptInNotificationService.a;
-                        fecj v = dlzh.a.v();
-                        fefi h = fegx.h(System.currentTimeMillis());
+                        dokt doktVar = (dokt) obj2;
+                        auad auadVar2 = WearBackupOptInNotificationService.a;
+                        fgrc v = dokt.a.v();
+                        fgub h = fgvq.h(System.currentTimeMillis());
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fecp fecpVar = v.b;
-                        dlzh dlzhVar2 = (dlzh) fecpVar;
+                        fgri fgriVar = v.b;
+                        dokt doktVar2 = (dokt) fgriVar;
                         h.getClass();
-                        dlzhVar2.c = h;
-                        dlzhVar2.b |= 1;
-                        long j = dlzhVar.d + 1;
-                        if (!fecpVar.L()) {
+                        doktVar2.c = h;
+                        doktVar2.b |= 1;
+                        long j2 = doktVar.d + 1;
+                        if (!fgriVar.L()) {
                             v.U();
                         }
                         AtomicReference atomicReference2 = atomicReference;
-                        dlzh dlzhVar3 = (dlzh) v.b;
-                        dlzhVar3.b |= 2;
-                        dlzhVar3.d = j;
-                        dlzh dlzhVar4 = (dlzh) v.Q();
-                        atomicReference2.set(dlzhVar4);
-                        return dlzhVar4;
+                        dokt doktVar3 = (dokt) v.b;
+                        doktVar3.b |= 2;
+                        doktVar3.d = j2;
+                        dokt doktVar4 = (dokt) v.Q();
+                        atomicReference2.set(doktVar4);
+                        return doktVar4;
                     }
                 };
-                enre enreVar = enre.a;
-                return enps.f(ensi.h(enps.f(d.b(eihoVar, enreVar), new eiho() { // from class: djwk
-                    @Override // defpackage.eiho
+                eqex eqexVar = eqex.a;
+                return eqdl.f(eqgb.h(eqdl.f(d.b(ekutVar, eqexVar), new ekut() { // from class: dmid
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
-                        arxo arxoVar2 = WearBackupOptInNotificationService.a;
-                        return (dlzh) atomicReference.get();
+                        auad auadVar2 = WearBackupOptInNotificationService.a;
+                        return (dokt) atomicReference.get();
                     }
-                }, enreVar)), new eiho() { // from class: djwm
-                    @Override // defpackage.eiho
+                }, eqexVar)), new ekut() { // from class: dmif
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
-                        int i = (int) ((dlzh) obj2).d;
-                        ftfu ftfuVar = ftfu.a;
-                        if (i < ftfuVar.a().g()) {
-                            List n = eijj.g(";").n(ftfuVar.a().i());
-                            arxo arxoVar2 = WearBackupOptInNotificationService.a;
-                            arxoVar2.j("Current back off values: %s", n);
-                            String str = i < n.size() ? (String) n.get(ennt.a(r3) - 1) : (String) eivv.p(n);
+                        int i = (int) ((dokt) obj2).d;
+                        fwbj fwbjVar = fwbj.a;
+                        if (i < fwbjVar.lK().g()) {
+                            List n = ekwo.g(";").n(fwbjVar.lK().i());
+                            auad auadVar2 = WearBackupOptInNotificationService.a;
+                            auadVar2.j("Current back off values: %s", n);
+                            String str = i < n.size() ? (String) n.get(eqbm.a(r3) - 1) : (String) elja.p(n);
                             WearBackupOptInNotificationService wearBackupOptInNotificationService2 = WearBackupOptInNotificationService.this;
-                            long f2 = ftfuVar.a().f() + Long.parseLong(str);
-                            long h = ftfu.a.a().h();
-                            arxoVar2.h("Scheduling opt-in notification task with %d seconds delay", Long.valueOf(f2));
-                            byjl a2 = byjl.a(wearBackupOptInNotificationService2);
-                            bykj bykjVar = new bykj();
-                            bykjVar.t("wear_backup_opt_in_notification_service");
-                            bykjVar.p = true;
-                            bykjVar.v(1);
-                            bykjVar.w("com.google.android.gms.wearable.backup.wear.WearBackupOptInNotificationService");
-                            bykjVar.e(f2, h + f2);
-                            a2.f(bykjVar.b());
+                            long f2 = fwbjVar.lK().f() + Long.parseLong(str);
+                            long h = fwbjVar.lK().h();
+                            auadVar2.h("Scheduling opt-in notification task with %d seconds delay", Long.valueOf(f2));
+                            casd a2 = casd.a(wearBackupOptInNotificationService2);
+                            catb catbVar = new catb();
+                            catbVar.t("wear_backup_opt_in_notification_service");
+                            catbVar.p = true;
+                            catbVar.v(1);
+                            catbVar.w("com.google.android.gms.wearable.backup.wear.WearBackupOptInNotificationService");
+                            catbVar.e(f2, h + f2);
+                            a2.f(catbVar.b());
                         }
                         return 0;
                     }
-                }, enreVar);
+                }, eqexVar);
             }
-        }, enre.a);
+        }, eqex.a);
     }
 }

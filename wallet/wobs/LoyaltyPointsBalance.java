@@ -3,13 +3,13 @@ package com.google.android.gms.wallet.wobs;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.djja;
+import defpackage.atzr;
+import defpackage.dlut;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class LoyaltyPointsBalance extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new djja();
+    public static final Parcelable.Creator CREATOR = new dlut();
     public final int a;
     public String b;
     public final double c;
@@ -25,14 +25,14 @@ public final class LoyaltyPointsBalance extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, this.a);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.j(parcel, 4, this.c);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.q(parcel, 6, this.e);
-        arxc.o(parcel, 7, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, this.a);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.j(parcel, 4, this.c);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.q(parcel, 6, this.e);
+        atzr.o(parcel, 7, this.f);
+        atzr.c(parcel, a);
     }
 
     public LoyaltyPointsBalance(int i, String str, double d, String str2, long j, int i2) {

@@ -4,18 +4,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
-import defpackage.arxc;
-import defpackage.bry;
-import defpackage.dcxi;
+import defpackage.atzr;
+import defpackage.bsj;
+import defpackage.dfin;
 import j$.util.DesugarCollections;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class DeviceDetails extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new dcxi();
+    public static final Parcelable.Creator CREATOR = new dfin();
     private static final Map l;
     public final Set a;
     public long b;
@@ -30,18 +30,18 @@ public class DeviceDetails extends BinarySerializableFastSafeParcelableJson {
     public String k;
 
     static {
-        bry bryVar = new bry();
-        bryVar.put("androidId", new FastJsonResponse$Field(2, false, 2, false, "androidId", 2, null));
-        bryVar.put("gmsVersion", new FastJsonResponse$Field(0, false, 0, false, "gmsVersion", 3, null));
-        bryVar.put("isSourceIos", new FastJsonResponse$Field(6, false, 6, false, "isSourceIos", 4, null));
-        bryVar.put("useEnrollment2", new FastJsonResponse$Field(6, false, 6, false, "useEnrollment2", 5, null));
-        bryVar.put("hasConnectivity", new FastJsonResponse$Field(6, false, 6, false, "hasConnectivity", 6, null));
-        bryVar.put("hasLockscreen", new FastJsonResponse$Field(6, false, 6, false, "hasLockscreen", 7, null));
-        bryVar.put("model", new FastJsonResponse$Field(7, false, 7, false, "model", 8, null));
-        bryVar.put("deviceType", new FastJsonResponse$Field(0, false, 0, false, "deviceType", 9, null));
-        bryVar.put("deviceFingerprint", new FastJsonResponse$Field(7, false, 7, false, "deviceFingerprint", 10, null));
-        bryVar.put("instanceId", new FastJsonResponse$Field(7, false, 7, false, "instanceId", 11, null));
-        l = DesugarCollections.unmodifiableMap(bryVar);
+        bsj bsjVar = new bsj();
+        bsjVar.put("androidId", new FastJsonResponse$Field(2, false, 2, false, "androidId", 2, null));
+        bsjVar.put("gmsVersion", new FastJsonResponse$Field(0, false, 0, false, "gmsVersion", 3, null));
+        bsjVar.put("isSourceIos", new FastJsonResponse$Field(6, false, 6, false, "isSourceIos", 4, null));
+        bsjVar.put("useEnrollment2", new FastJsonResponse$Field(6, false, 6, false, "useEnrollment2", 5, null));
+        bsjVar.put("hasConnectivity", new FastJsonResponse$Field(6, false, 6, false, "hasConnectivity", 6, null));
+        bsjVar.put("hasLockscreen", new FastJsonResponse$Field(6, false, 6, false, "hasLockscreen", 7, null));
+        bsjVar.put("model", new FastJsonResponse$Field(7, false, 7, false, "model", 8, null));
+        bsjVar.put("deviceType", new FastJsonResponse$Field(0, false, 0, false, "deviceType", 9, null));
+        bsjVar.put("deviceFingerprint", new FastJsonResponse$Field(7, false, 7, false, "deviceFingerprint", 10, null));
+        bsjVar.put("instanceId", new FastJsonResponse$Field(7, false, 7, false, "instanceId", 11, null));
+        l = DesugarCollections.unmodifiableMap(bsjVar);
     }
 
     public DeviceDetails(Set set, long j, int i, boolean z, boolean z2, boolean z3, boolean z4, String str, byte b, String str2, String str3) {
@@ -58,7 +58,7 @@ public class DeviceDetails extends BinarySerializableFastSafeParcelableJson {
         this.k = str3;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         switch (fastJsonResponse$Field.g) {
             case 2:
@@ -86,17 +86,17 @@ public class DeviceDetails extends BinarySerializableFastSafeParcelableJson {
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final Map b() {
         return l;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i = fastJsonResponse$Field.g;
         if (i == 8) {
@@ -112,8 +112,22 @@ public class DeviceDetails extends BinarySerializableFastSafeParcelableJson {
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
+        int i2 = fastJsonResponse$Field.g;
+        if (i2 == 3) {
+            this.c = i;
+        } else {
+            if (i2 != 9) {
+                throw new IllegalArgumentException(String.format("Invalid id %s", Integer.valueOf(i2)));
+            }
+            this.i = (byte) i;
+        }
+        this.a.add(Integer.valueOf(i2));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
         int i = fastJsonResponse$Field.g;
         if (i == 4) {
             this.d = z;
@@ -130,21 +144,7 @@ public class DeviceDetails extends BinarySerializableFastSafeParcelableJson {
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
-        int i2 = fastJsonResponse$Field.g;
-        if (i2 == 3) {
-            this.c = i;
-        } else {
-            if (i2 != 9) {
-                throw new IllegalArgumentException(String.format("Invalid id %s", Integer.valueOf(i2)));
-            }
-            this.i = (byte) i;
-        }
-        this.a.add(Integer.valueOf(i2));
-    }
-
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void k(FastJsonResponse$Field fastJsonResponse$Field, String str, long j) {
         int i = fastJsonResponse$Field.g;
         if (i != 2) {
@@ -182,38 +182,38 @@ public class DeviceDetails extends BinarySerializableFastSafeParcelableJson {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.q(parcel, 2, this.b);
+            atzr.q(parcel, 2, this.b);
         }
         if (set.contains(3)) {
-            arxc.o(parcel, 3, this.c);
+            atzr.o(parcel, 3, this.c);
         }
         if (set.contains(4)) {
-            arxc.e(parcel, 4, this.d);
+            atzr.e(parcel, 4, this.d);
         }
         if (set.contains(5)) {
-            arxc.e(parcel, 5, this.e);
+            atzr.e(parcel, 5, this.e);
         }
         if (set.contains(6)) {
-            arxc.e(parcel, 6, this.f);
+            atzr.e(parcel, 6, this.f);
         }
         if (set.contains(7)) {
-            arxc.e(parcel, 7, this.g);
+            atzr.e(parcel, 7, this.g);
         }
         if (set.contains(8)) {
-            arxc.v(parcel, 8, this.h, true);
+            atzr.v(parcel, 8, this.h, true);
         }
         if (set.contains(9)) {
-            arxc.h(parcel, 9, this.i);
+            atzr.h(parcel, 9, this.i);
         }
         if (set.contains(10)) {
-            arxc.v(parcel, 10, this.j, true);
+            atzr.v(parcel, 10, this.j, true);
         }
         if (set.contains(11)) {
-            arxc.v(parcel, 11, this.k, true);
+            atzr.v(parcel, 11, this.k, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public DeviceDetails() {

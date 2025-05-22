@@ -2,12 +2,12 @@ package com.google.android.gms.wearable.node.accountmatching.ui;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.dldi;
+import defpackage.dnpc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class AutoValue_GoogleAccountInfo extends C$AutoValue_GoogleAccountInfo {
-    public static final Parcelable.Creator CREATOR = new dldi();
+    public static final Parcelable.Creator CREATOR = new dnpc();
 
     public AutoValue_GoogleAccountInfo(String str, boolean z) {
         super(str, z);

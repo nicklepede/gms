@@ -12,26 +12,26 @@ import android.webkit.WebView;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import com.google.android.gms.R;
-import defpackage.arwm;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.dhbe;
-import defpackage.dhbf;
-import defpackage.dhbh;
-import defpackage.dwbd;
-import defpackage.dwbi;
-import defpackage.eitj;
-import defpackage.ejhf;
-import defpackage.fspp;
+import defpackage.atzb;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.djmk;
+import defpackage.djml;
+import defpackage.djmn;
+import defpackage.dyne;
+import defpackage.dynj;
+import defpackage.elgo;
+import defpackage.eluo;
+import defpackage.fvle;
 import defpackage.ig;
-import defpackage.qet;
+import defpackage.rxx;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class AuthenticatingWebViewChimeraActivity extends qet {
-    public static final asot j = asot.d();
+public class AuthenticatingWebViewChimeraActivity extends rxx {
+    public static final ausn j = ausn.d();
     public String k;
     public boolean l;
     public ProgressBar m;
@@ -41,14 +41,10 @@ public class AuthenticatingWebViewChimeraActivity extends qet {
     private FrameLayout q;
 
     public static Pattern a() {
-        String g = fspp.a.a().g();
-        if (g == null) {
-            g = "";
-        }
         try {
-            return Pattern.compile(g);
+            return Pattern.compile(fvle.a.lK().g());
         } catch (PatternSyntaxException e) {
-            ((ejhf) ((ejhf) ((ejhf) j.i()).s(e)).ah((char) 11887)).x("failed to compile whitelist pattern");
+            ((eluo) ((eluo) ((eluo) j.i()).s(e)).ai((char) 11890)).x("failed to compile whitelist pattern");
             return null;
         }
     }
@@ -77,23 +73,23 @@ public class AuthenticatingWebViewChimeraActivity extends qet {
             settings.setSupportZoom(true);
             settings.setCacheMode(1);
             settings.setUseWideViewPort(true);
-            dhbe dhbeVar = new dhbe(this, new dwbi(eitj.l(this.p)));
-            dhbeVar.i(dwbd.a);
-            this.o.setWebViewClient(dhbeVar);
-            this.o.setWebChromeClient(new dhbf(this));
+            djmk djmkVar = new djmk(this, new dynj(elgo.l(this.p)));
+            djmkVar.i(dyne.a);
+            this.o.setWebViewClient(djmkVar);
+            this.o.setWebChromeClient(new djml(this));
             if (TextUtils.isEmpty(this.k)) {
                 this.o.loadUrl(this.n);
             } else {
                 String str = this.k;
                 String str2 = this.n;
-                arwm.r(str2, "Url must be set");
-                new dhbh(this, str, str2, this).execute(new Void[0]);
+                atzb.r(str2, "Url must be set");
+                new djmn(this, str, str2, this).execute(new Void[0]);
             }
         }
         this.q.addView(this.o);
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         if (this.o.canGoBack()) {
             this.o.goBack();
@@ -102,7 +98,7 @@ public class AuthenticatingWebViewChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qet, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onConfigurationChanged(Configuration configuration) {
         if (this.o != null) {
             this.q.removeAllViews();
@@ -111,16 +107,16 @@ public class AuthenticatingWebViewChimeraActivity extends qet {
         k();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (!"com.google.android.gms".equals(asng.q(this))) {
+        if (!"com.google.android.gms".equals(aura.q(this))) {
             setResult(0);
             finish();
             return;
         }
         Intent intent = getIntent();
-        arwm.s(intent.getData());
+        atzb.s(intent.getData());
         this.n = intent.getData().toString();
         this.k = intent.getStringExtra("AuthWebviewAccountName");
         this.l = intent.getBooleanExtra("AuthWebviewShowProgressBar", false);
@@ -128,24 +124,24 @@ public class AuthenticatingWebViewChimeraActivity extends qet {
         CharSequence charSequenceExtra = intent.getCharSequenceExtra("AuthWebviewTitle");
         boolean booleanExtra = intent.getBooleanExtra("AuthWebviewHomeAsUpEnabled", false);
         boolean z = !TextUtils.isEmpty(charSequenceExtra) || booleanExtra;
-        ig hy = hy();
+        ig hO = hO();
         if (z) {
-            hy.o(booleanExtra);
+            hO.o(booleanExtra);
             if (TextUtils.isEmpty(charSequenceExtra)) {
-                hy.s(false);
+                hO.s(false);
             } else {
-                hy.s(true);
-                hy.A(charSequenceExtra);
+                hO.s(true);
+                hO.A(charSequenceExtra);
             }
-            hy.C();
+            hO.C();
         } else {
-            hy.h();
+            hO.h();
         }
         k();
         setResult(-1);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != 16908332) {
             return false;
@@ -154,13 +150,13 @@ public class AuthenticatingWebViewChimeraActivity extends qet {
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onRestoreInstanceState(Bundle bundle) {
         super.onRestoreInstanceState(bundle);
         this.o.restoreState(bundle);
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         this.o.saveState(bundle);

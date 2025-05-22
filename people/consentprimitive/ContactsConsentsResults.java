@@ -4,15 +4,15 @@ import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ctte;
-import defpackage.eihn;
+import defpackage.atzr;
+import defpackage.cwck;
+import defpackage.ekus;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ContactsConsentsResults extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctte();
+    public static final Parcelable.Creator CREATOR = new cwck();
     public final Account a;
     public final boolean b;
     public final int c;
@@ -35,7 +35,7 @@ public final class ContactsConsentsResults extends AbstractSafeParcelable {
             return false;
         }
         ContactsConsentsResults contactsConsentsResults = (ContactsConsentsResults) obj;
-        return this.b == contactsConsentsResults.b && eihn.a(this.a, contactsConsentsResults.a) && this.c == contactsConsentsResults.c && this.d == contactsConsentsResults.d && this.e == contactsConsentsResults.e;
+        return this.b == contactsConsentsResults.b && ekus.a(this.a, contactsConsentsResults.a) && this.c == contactsConsentsResults.c && this.d == contactsConsentsResults.d && this.e == contactsConsentsResults.e;
     }
 
     public final int hashCode() {
@@ -45,12 +45,12 @@ public final class ContactsConsentsResults extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Account account = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, account, i, false);
-        arxc.e(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, account, i, false);
+        atzr.e(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.c(parcel, a);
     }
 }

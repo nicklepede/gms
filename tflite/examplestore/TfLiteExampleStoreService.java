@@ -1,89 +1,89 @@
 package com.google.android.gms.tflite.examplestore;
 
 import android.util.Log;
-import defpackage.bqeq;
-import defpackage.bqik;
-import defpackage.dfew;
-import defpackage.dffk;
-import defpackage.dffm;
-import defpackage.dffn;
-import defpackage.esvf;
-import defpackage.feag;
-import defpackage.feay;
-import defpackage.febe;
-import defpackage.febf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.feex;
-import defpackage.fefm;
+import defpackage.bsmg;
+import defpackage.bspz;
+import defpackage.dhqc;
+import defpackage.dhqq;
+import defpackage.dhqs;
+import defpackage.dhqt;
+import defpackage.evkv;
+import defpackage.fgoz;
+import defpackage.fgpr;
+import defpackage.fgpx;
+import defpackage.fgpy;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.fgtq;
+import defpackage.fguf;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TfLiteExampleStoreService extends bqeq {
-    @Override // defpackage.bqeq
-    public final void a(String str, byte[] bArr, byte[] bArr2, bqik bqikVar, esvf esvfVar) {
-        dffn dffnVar = dffn.a;
+public class TfLiteExampleStoreService extends bsmg {
+    @Override // defpackage.bsmg
+    public final void a(String str, byte[] bArr, byte[] bArr2, bspz bspzVar, evkv evkvVar) {
+        dhqt dhqtVar = dhqt.a;
         try {
-            fecp y = fecp.y(feag.a, bArr2, 0, bArr2.length, febw.a());
-            fecp.M(y);
-            feag feagVar = (feag) y;
+            fgri y = fgri.y(fgoz.a, bArr2, 0, bArr2.length, fgqp.a());
+            fgri.M(y);
+            fgoz fgozVar = (fgoz) y;
             try {
-                if (!feagVar.equals(feag.a) && !feagVar.b.equals("type.googleapis.com/google.android.gms.tflite.ResumptionPoint")) {
-                    throw new fedk(String.format("Incorrect type url: %s, expected: %s", feagVar.b, "type.googleapis.com/google.android.gms.tflite.ResumptionPoint"));
+                if (!fgozVar.equals(fgoz.a) && !fgozVar.b.equals("type.googleapis.com/google.android.gms.tflite.ResumptionPoint")) {
+                    throw new fgsd(String.format("Incorrect type url: %s, expected: %s", fgozVar.b, "type.googleapis.com/google.android.gms.tflite.ResumptionPoint"));
                 }
-                feay feayVar = feagVar.c;
-                febw a = febw.a();
-                dffm dffmVar = dffm.a;
-                febe k = feayVar.k();
-                fecp x = dffmVar.x();
+                fgpr fgprVar = fgozVar.c;
+                fgqp a = fgqp.a();
+                dhqs dhqsVar = dhqs.a;
+                fgpx k = fgprVar.k();
+                fgri x = dhqsVar.x();
                 try {
                     try {
                         try {
-                            feex b = feep.a.b(x);
-                            b.l(x, febf.p(k), a);
+                            fgtq b = fgti.a.b(x);
+                            b.l(x, fgpy.p(k), a);
                             b.g(x);
                             try {
                                 k.z(0);
-                                fecp.M(x);
-                                dffm dffmVar2 = (dffm) x;
-                                if (dffmVar2.c < 0) {
-                                    throw new fedk("Last consumed timestamp less than zero");
+                                fgri.M(x);
+                                dhqs dhqsVar2 = (dhqs) x;
+                                if (dhqsVar2.c < 0) {
+                                    throw new fgsd("Last consumed timestamp less than zero");
                                 }
-                                dffk a2 = dffk.a();
-                                bqikVar.b(new dfew(a2.b, str, dffmVar2, a2.c));
-                            } catch (fedk e) {
+                                dhqq a2 = dhqq.a();
+                                bspzVar.b(new dhqc(a2.b, str, dhqsVar2, a2.c));
+                            } catch (fgsd e) {
                                 throw e;
                             }
-                        } catch (fedk e2) {
+                        } catch (fgsd e2) {
                             if (!e2.a) {
                                 throw e2;
                             }
-                            throw new fedk(e2);
-                        } catch (fefm e3) {
+                            throw new fgsd(e2);
+                        } catch (fguf e3) {
                             throw e3.a();
                         }
                     } catch (RuntimeException e4) {
-                        if (!(e4.getCause() instanceof fedk)) {
+                        if (!(e4.getCause() instanceof fgsd)) {
                             throw e4;
                         }
-                        throw ((fedk) e4.getCause());
+                        throw ((fgsd) e4.getCause());
                     }
                 } catch (IOException e5) {
-                    if (!(e5.getCause() instanceof fedk)) {
-                        throw new fedk(e5);
+                    if (!(e5.getCause() instanceof fgsd)) {
+                        throw new fgsd(e5);
                     }
-                    throw ((fedk) e5.getCause());
+                    throw ((fgsd) e5.getCause());
                 }
-            } catch (fedk e6) {
+            } catch (fgsd e6) {
                 Log.e("TfLiteExampleStoreSvc", "Parsing of ResumptionPoint failed.");
-                bqikVar.a(10, e6.getMessage());
+                bspzVar.a(10, e6.getMessage());
             }
-        } catch (fedk unused) {
+        } catch (fgsd unused) {
             Log.e("TfLiteExampleStoreSvc", "Error parsing Any proto from resumptionPoint");
-            bqikVar.a(10, "Error parsing Any proto from resumptionPoint");
+            bspzVar.a(10, "Error parsing Any proto from resumptionPoint");
         }
     }
 }

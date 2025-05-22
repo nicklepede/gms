@@ -3,13 +3,13 @@ package com.google.android.gms.app.phone.settings.licenses;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.chimera.licenses.ChimeraLicenseSource;
-import defpackage.eike;
-import defpackage.tpx;
+import defpackage.ekxj;
+import defpackage.vlx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class LicenseSourceWrapper implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new tpx();
+    public static final Parcelable.Creator CREATOR = new vlx();
     public final ChimeraLicenseSource a;
     public final String b;
     public final String c;
@@ -50,7 +50,7 @@ public final class LicenseSourceWrapper implements Parcelable {
         this.a = (ChimeraLicenseSource) parcel.readParcelable(ChimeraLicenseSource.class.getClassLoader());
         this.b = parcel.readString();
         String readString = parcel.readString();
-        eike.e(readString);
+        ekxj.e(readString);
         this.c = readString;
         this.d = parcel.readString();
     }

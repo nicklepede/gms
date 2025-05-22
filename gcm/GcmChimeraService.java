@@ -12,43 +12,43 @@ import android.util.SparseArray;
 import com.google.android.chimera.Service;
 import com.google.android.gms.gcm.connection.HeartbeatChimeraAlarm;
 import defpackage.a;
-import defpackage.asmf;
-import defpackage.asnv;
-import defpackage.bhvo;
-import defpackage.bhwo;
-import defpackage.bhwz;
-import defpackage.bhxm;
-import defpackage.bhxn;
-import defpackage.bhxs;
-import defpackage.bhyc;
-import defpackage.bhyh;
-import defpackage.bhzc;
-import defpackage.bhzt;
-import defpackage.biak;
-import defpackage.bial;
-import defpackage.biao;
-import defpackage.biav;
-import defpackage.bibc;
-import defpackage.bibe;
-import defpackage.bibm;
-import defpackage.bibu;
-import defpackage.bicm;
-import defpackage.bidm;
-import defpackage.bidn;
-import defpackage.bidw;
-import defpackage.bul;
-import defpackage.dnnr;
-import defpackage.eiid;
-import defpackage.eirg;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.ejcb;
-import defpackage.ensv;
-import defpackage.foin;
-import defpackage.foiw;
-import defpackage.fojc;
-import defpackage.fojf;
-import defpackage.iln;
+import defpackage.aupz;
+import defpackage.aurp;
+import defpackage.bkad;
+import defpackage.bkbd;
+import defpackage.bkbo;
+import defpackage.bkcb;
+import defpackage.bkcc;
+import defpackage.bkch;
+import defpackage.bkcr;
+import defpackage.bkcw;
+import defpackage.bkdr;
+import defpackage.bkei;
+import defpackage.bkez;
+import defpackage.bkfa;
+import defpackage.bkfd;
+import defpackage.bkfk;
+import defpackage.bkfr;
+import defpackage.bkft;
+import defpackage.bkgb;
+import defpackage.bkgj;
+import defpackage.bkhb;
+import defpackage.bkib;
+import defpackage.bkic;
+import defpackage.bkil;
+import defpackage.buy;
+import defpackage.dpya;
+import defpackage.ekvi;
+import defpackage.elel;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elpg;
+import defpackage.eqgo;
+import defpackage.frbe;
+import defpackage.frbn;
+import defpackage.frbt;
+import defpackage.frbw;
+import defpackage.ind;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
@@ -58,56 +58,56 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.Semaphore;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class GcmChimeraService extends Service {
     public static volatile GcmChimeraService a;
     public static final Semaphore b = new Semaphore(0);
-    private static final Collection i = new eirg(e());
+    private static final Collection i = new elel(e());
     HeartbeatChimeraAlarm c;
-    public bibu d;
-    bhyh e;
-    final ensv f = new asmf(1, 10);
-    public bhzt g;
-    public bidn h;
-    private bhyc j;
-    private bhwo k;
-    private bhxs l;
+    public bkgj d;
+    bkcw e;
+    final eqgo f = new aupz(1, 10);
+    public bkei g;
+    public bkic h;
+    private bkcr j;
+    private bkbd k;
+    private bkch l;
 
-    public static eitj a() {
+    public static elgo a() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM-dd HH:mm:ss.SSS", Locale.US);
-        eite eiteVar = new eite();
-        Collection<bhxn> collection = i;
+        elgj elgjVar = new elgj();
+        Collection<bkcc> collection = i;
         synchronized (collection) {
-            for (bhxn bhxnVar : collection) {
-                eiteVar.i(simpleDateFormat.format(Long.valueOf(bhxnVar.a)) + " net=" + bhxnVar.b + ": " + String.format(bhxnVar.c, bhxnVar.d));
+            for (bkcc bkccVar : collection) {
+                elgjVar.i(simpleDateFormat.format(Long.valueOf(bkccVar.a)) + " net=" + bkccVar.b + ": " + String.format(bkccVar.c, bkccVar.d));
             }
         }
-        return eiteVar.g();
+        return elgjVar.g();
     }
 
     public static void b(String str, Object... objArr) {
-        bidn bidnVar;
+        bkic bkicVar;
         if (e() <= 0) {
             return;
         }
         GcmChimeraService gcmChimeraService = a;
         int i2 = -2;
-        if (gcmChimeraService != null && (bidnVar = gcmChimeraService.h) != null) {
-            i2 = bidnVar.b();
+        if (gcmChimeraService != null && (bkicVar = gcmChimeraService.h) != null) {
+            i2 = bkicVar.b();
         }
         Collection collection = i;
         synchronized (collection) {
-            collection.add(new bhxn(i2, str, objArr));
+            collection.add(new bkcc(i2, str, objArr));
         }
     }
 
     private static int e() {
-        return (int) foin.a.a().a();
+        return (int) frbe.a.lK().a();
     }
 
     public final void c(PrintWriter printWriter) {
-        if (dnnr.h(this)) {
+        if (dpya.h(this)) {
             printWriter.println("Direct boot mode (DeviceID not available");
         } else {
             printWriter.println("DeviceID: ".concat(String.valueOf(this.e.c())));
@@ -119,12 +119,12 @@ public class GcmChimeraService extends Service {
         if (this.d.s()) {
             printWriter.println(this.d.toString());
             HeartbeatChimeraAlarm heartbeatChimeraAlarm = this.c;
-            if (((bibu) heartbeatChimeraAlarm.e.a()).r()) {
+            if (((bkgj) heartbeatChimeraAlarm.e.a()).r()) {
                 printWriter.println("Heartbeat waiting ack ".concat(String.valueOf(String.valueOf(heartbeatChimeraAlarm.f))));
             } else {
                 printWriter.println("Heartbeat: ".concat(String.valueOf(String.valueOf(heartbeatChimeraAlarm.f))));
             }
-            asnv asnvVar = heartbeatChimeraAlarm.q;
+            aurp aurpVar = heartbeatChimeraAlarm.q;
             long elapsedRealtime = SystemClock.elapsedRealtime();
             long j = heartbeatChimeraAlarm.g;
             if (j > 0) {
@@ -132,14 +132,14 @@ public class GcmChimeraService extends Service {
             }
             long j2 = heartbeatChimeraAlarm.l;
             if (j2 > 0) {
-                printWriter.println(a.D(j2, "Last ping: "));
+                printWriter.println(a.C(j2, "Last ping: "));
             }
             SparseArray a2 = heartbeatChimeraAlarm.d.a();
             for (int i2 = 0; i2 < a2.size(); i2++) {
-                bibe bibeVar = (bibe) a2.valueAt(i2);
+                bkft bkftVar = (bkft) a2.valueAt(i2);
                 boolean k = HeartbeatChimeraAlarm.k(a2.keyAt(i2));
-                printWriter.println("Adaptive Heartbeat type " + bibeVar.c + ": " + k);
-                int i3 = bibeVar.d;
+                printWriter.println("Adaptive Heartbeat type " + bkftVar.c + ": " + k);
+                int i3 = bkftVar.d;
                 StringBuilder sb = new StringBuilder("connectionsLimit: ");
                 sb.append(i3);
                 printWriter.println(sb.toString());
@@ -147,18 +147,18 @@ public class GcmChimeraService extends Service {
                 printWriter.println("All stored connections: ");
                 int i4 = 0;
                 while (true) {
-                    bul bulVar = bibeVar.b;
-                    if (i4 < bulVar.d) {
-                        printWriter.println(bulVar.i(i4));
+                    buy buyVar = bkftVar.b;
+                    if (i4 < buyVar.d) {
+                        printWriter.println(buyVar.i(i4));
                         i4++;
                     }
                 }
                 printWriter.println();
             }
             printWriter.println();
-            bibc bibcVar = heartbeatChimeraAlarm.i;
-            if (bibcVar != null) {
-                printWriter.println("Last connected: ".concat(bibcVar.toString()));
+            bkfr bkfrVar = heartbeatChimeraAlarm.i;
+            if (bkfrVar != null) {
+                printWriter.println("Last connected: ".concat(bkfrVar.toString()));
                 printWriter.println("Seen good heartbeat in last connection? " + heartbeatChimeraAlarm.k);
                 printWriter.println();
             }
@@ -169,7 +169,7 @@ public class GcmChimeraService extends Service {
             this.h.e(printWriter);
         } else {
             printWriter.println("Not connected");
-            if (fojc.C()) {
+            if (frbt.B()) {
                 printWriter.println(this.d.toString());
             }
             this.h.e(printWriter);
@@ -178,8 +178,8 @@ public class GcmChimeraService extends Service {
     }
 
     public final synchronized void d() {
-        this.d.f().c.a = fojc.n();
-        this.d.f().c.b = (int) fojc.g();
+        this.d.f().c.a = frbt.n();
+        this.d.f().c.b = (int) frbt.g();
         this.d.m(this);
         if (this.l.a()) {
             this.h.g();
@@ -188,53 +188,53 @@ public class GcmChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     protected final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        bhzc bhzcVar;
+        bkdr bkdrVar;
         TreeMap treeMap;
-        if (!bhvo.p()) {
+        if (!bkad.p()) {
             printWriter.println("Not dumping stats for secondary user GcmService");
             return;
         }
         c(printWriter);
-        eitj a2 = a();
-        int i2 = ((ejcb) a2).c;
+        elgo a2 = a();
+        int i2 = ((elpg) a2).c;
         for (int i3 = 0; i3 < i2; i3++) {
             printWriter.println((String) a2.get(i3));
         }
-        bhwo bhwoVar = this.k;
-        biao biaoVar = bhwoVar.h;
-        if (biaoVar.a) {
-            bial bialVar = biaoVar.c;
+        bkbd bkbdVar = this.k;
+        bkfd bkfdVar = bkbdVar.h;
+        if (bkfdVar.a) {
+            bkfa bkfaVar = bkfdVar.c;
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM-dd HH:mm", Locale.US);
-            synchronized (bialVar) {
-                treeMap = new TreeMap(bialVar.b);
+            synchronized (bkfaVar) {
+                treeMap = new TreeMap(bkfaVar.b);
             }
             printWriter.println("\nApps supporting client queue:");
             for (Map.Entry entry : treeMap.entrySet()) {
-                eiid eiidVar = ((biak) entry.getValue()).b;
-                if (eiidVar.h()) {
+                ekvi ekviVar = ((bkez) entry.getValue()).b;
+                if (ekviVar.h()) {
                     printWriter.print(entry.getKey());
                     printWriter.print(" v");
-                    printWriter.println(eiidVar.c());
+                    printWriter.println(ekviVar.c());
                 }
             }
             printWriter.println("\nAffinity Scores:");
             for (Map.Entry entry2 : treeMap.entrySet()) {
-                eiid eiidVar2 = ((biak) entry2.getValue()).c;
-                if (eiidVar2.h()) {
-                    printWriter.printf("%s %4.3f\n", entry2.getKey(), eiidVar2.c());
+                ekvi ekviVar2 = ((bkez) entry2.getValue()).c;
+                if (ekviVar2.h()) {
+                    printWriter.printf("%s %4.3f\n", entry2.getKey(), ekviVar2.c());
                 }
             }
             printWriter.println("\nHigh priority quota usage:");
             for (Map.Entry entry3 : treeMap.entrySet()) {
-                if (((biak) entry3.getValue()).a != biav.a) {
-                    biav biavVar = ((biak) entry3.getValue()).a;
-                    printWriter.printf("%s used %d since %s\n", entry3.getKey(), Integer.valueOf(biavVar.c), simpleDateFormat.format(Long.valueOf(biavVar.b)));
+                if (((bkez) entry3.getValue()).a != bkfk.a) {
+                    bkfk bkfkVar = ((bkez) entry3.getValue()).a;
+                    printWriter.printf("%s used %d since %s\n", entry3.getKey(), Integer.valueOf(bkfkVar.c), simpleDateFormat.format(Long.valueOf(bkfkVar.b)));
                 }
             }
-            biaoVar.d.i(printWriter);
+            bkfdVar.d.i(printWriter);
         }
-        if (fojc.D() && (bhzcVar = bhwoVar.n) != null) {
-            bhzcVar.a(printWriter);
+        if (frbt.C() && (bkdrVar = bkbdVar.n) != null) {
+            bkdrVar.a(printWriter);
         }
         printWriter.println("For scheduler stats see SchedulerService dump.");
     }
@@ -247,8 +247,8 @@ public class GcmChimeraService extends Service {
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        bhwz b2 = bhwz.b();
-        if (bhvo.p()) {
+        bkbo b2 = bkbo.b();
+        if (bkad.p()) {
             this.e = b2.f();
             this.h = b2.p();
             this.c = b2.l();
@@ -256,31 +256,32 @@ public class GcmChimeraService extends Service {
             this.d = b2.k();
             this.l = b2.d();
             a = this;
-            bhyc bhycVar = new bhyc(this.c, this.h, this.k, this.l, this);
-            this.j = bhycVar;
-            final bidn bidnVar = bhycVar.f;
-            Runnable runnable = new Runnable() { // from class: bidl
+            bkcr bkcrVar = new bkcr(this.c, this.h, this.k, this.l, this);
+            this.j = bkcrVar;
+            final bkic bkicVar = bkcrVar.f;
+            Runnable runnable = new Runnable() { // from class: bkia
                 @Override // java.lang.Runnable
                 public final void run() {
-                    bidn.this.f();
+                    bkic.this.f();
                 }
             };
-            bidw bidwVar = bidnVar.e;
-            bidwVar.b.i(runnable);
-            bidnVar.i = bidn.m(foiw.a.a().b());
-            bidnVar.j = bidn.m(foiw.a.a().a());
-            bidnVar.g = (bicm) bidnVar.f.b().f();
-            bidn.k(null, bidnVar.g);
-            if (bidnVar.g != null) {
-                bidnVar.h = fojc.o() ? bidnVar.c.b() : bidnVar.g;
+            bkil bkilVar = bkicVar.e;
+            bkilVar.c.i(runnable);
+            frbn frbnVar = frbn.a;
+            bkicVar.i = bkic.m(frbnVar.lK().b());
+            bkicVar.j = bkic.m(frbnVar.lK().a());
+            bkicVar.g = (bkhb) bkicVar.f.b().f();
+            bkic.k(null, bkicVar.g);
+            if (bkicVar.g != null) {
+                bkicVar.h = bkicVar.c.b();
             }
-            bidnVar.a.a(bidnVar);
+            bkicVar.a.a(bkicVar);
             IntentFilter intentFilter = new IntentFilter();
             intentFilter.addAction("com.google.android.intent.action.GCM_RECONNECT");
-            iln.b(bidnVar.k, bidnVar.d, intentFilter, 2);
-            bidwVar.j();
-            bidnVar.l.b.add(new bidm(bidnVar));
-            BroadcastReceiver broadcastReceiver = bhycVar.d.p;
+            ind.b(bkicVar.k, bkicVar.d, intentFilter, 2);
+            bkilVar.i();
+            bkicVar.l.b.add(new bkib(bkicVar));
+            BroadcastReceiver broadcastReceiver = bkcrVar.d.p;
             if (broadcastReceiver != null) {
                 IntentFilter intentFilter2 = new IntentFilter();
                 intentFilter2.addAction("android.intent.action.USER_ADDED");
@@ -289,26 +290,26 @@ public class GcmChimeraService extends Service {
                 intentFilter2.addAction("android.intent.action.USER_STOPPED");
                 intentFilter2.addAction("android.intent.action.USER_STOPPING");
                 intentFilter2.addAction("android.intent.action.USER_SWITCHED");
-                iln.b(bhycVar.b, broadcastReceiver, intentFilter2, 2);
+                ind.b(bkcrVar.b, broadcastReceiver, intentFilter2, 2);
             }
             IntentFilter intentFilter3 = new IntentFilter("android.provider.Telephony.SECRET_CODE");
             intentFilter3.addDataScheme("android_secret_code");
             intentFilter3.addDataAuthority("426", null);
-            Context context = bhycVar.b;
-            iln.b(context, bhycVar.a, intentFilter3, 2);
-            if (fojf.f() > 0) {
+            Context context = bkcrVar.b;
+            ind.b(context, bkcrVar.a, intentFilter3, 2);
+            if (frbw.f() > 0) {
                 IntentFilter intentFilter4 = new IntentFilter();
-                if (fojf.a.a().r()) {
+                if (frbw.a.lK().r()) {
                     intentFilter4.addAction("com.google.android.intent.action.MCS_HEARTBEAT");
                     intentFilter4.addAction("com.google.android.gms.gcm.ACTION_HEARTBEAT_NOW");
                 } else {
                     intentFilter4.addAction("android.intent.action.USER_PRESENT");
                     intentFilter4.addAction("android.intent.action.SCREEN_OFF");
                 }
-                iln.b(context, bhycVar.c, intentFilter4, 2);
+                ind.b(context, bkcrVar.c, intentFilter4, 2);
             }
-            iln.c(context, bhycVar.c, new IntentFilter("com.google.android.gms.gcm.HEARTBEAT_ALARM"), "com.google.android.gms.permission.INTERNAL_BROADCAST", null, 2);
-            bibm bibmVar = bhycVar.e.d;
+            ind.c(context, bkcrVar.c, new IntentFilter("com.google.android.gms.gcm.HEARTBEAT_ALARM"), "com.google.android.gms.permission.INTERNAL_BROADCAST", null, true == frbt.a.lK().an() ? 4 : 2);
+            bkgb bkgbVar = bkcrVar.e.d;
             d();
             b.release();
         }
@@ -318,29 +319,29 @@ public class GcmChimeraService extends Service {
     public final void onDestroy() {
         BroadcastReceiver broadcastReceiver;
         super.onDestroy();
-        if (bhvo.p()) {
-            bhwz.b().e().b(3);
+        if (bkad.p()) {
+            bkbo.b().e().b(3);
             a = null;
-            bhyc bhycVar = this.j;
-            HeartbeatChimeraAlarm heartbeatChimeraAlarm = bhycVar.c;
+            bkcr bkcrVar = this.j;
+            HeartbeatChimeraAlarm heartbeatChimeraAlarm = bkcrVar.c;
             if (heartbeatChimeraAlarm != null) {
-                bhycVar.b.unregisterReceiver(heartbeatChimeraAlarm);
+                bkcrVar.b.unregisterReceiver(heartbeatChimeraAlarm);
                 heartbeatChimeraAlarm.f.f();
                 heartbeatChimeraAlarm.d.c();
             }
-            bhwo bhwoVar = bhycVar.d;
-            if (bhwoVar != null && (broadcastReceiver = bhwoVar.p) != null) {
-                bhycVar.b.unregisterReceiver(broadcastReceiver);
+            bkbd bkbdVar = bkcrVar.d;
+            if (bkbdVar != null && (broadcastReceiver = bkbdVar.p) != null) {
+                bkcrVar.b.unregisterReceiver(broadcastReceiver);
             }
-            bhycVar.b.unregisterReceiver(bhycVar.a);
-            boolean z = bhycVar.e.c;
-            bibu bibuVar = this.d;
-            if (bibuVar != null) {
-                bibuVar.y(15, null);
+            bkcrVar.b.unregisterReceiver(bkcrVar.a);
+            boolean z = bkcrVar.e.c;
+            bkgj bkgjVar = this.d;
+            if (bkgjVar != null) {
+                bkgjVar.y(15, null);
             }
-            ensv ensvVar = this.f;
-            if (ensvVar != null) {
-                ensvVar.shutdownNow();
+            eqgo eqgoVar = this.f;
+            if (eqgoVar != null) {
+                eqgoVar.shutdownNow();
             }
         }
     }
@@ -350,8 +351,8 @@ public class GcmChimeraService extends Service {
         if (intent != null) {
             intent.getAction();
         }
-        if (bhvo.p()) {
-            this.f.execute(new bhxm(this, intent));
+        if (bkad.p()) {
+            this.f.execute(new bkcb(this, intent));
             return 1;
         }
         Log.e("GCM", "Unexpected GcmService started as secondary user !");

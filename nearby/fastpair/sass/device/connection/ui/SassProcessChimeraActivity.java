@@ -16,25 +16,25 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.nearby.fastpair.sass.device.connection.ui.SassProcessChimeraActivity;
-import defpackage.byhr;
-import defpackage.cfcs;
-import defpackage.cigw;
-import defpackage.cimt;
-import defpackage.eike;
-import defpackage.ejhf;
-import defpackage.fqkx;
-import defpackage.qfp;
+import defpackage.caqj;
+import defpackage.chke;
+import defpackage.ckpb;
+import defpackage.ckuy;
+import defpackage.ekxj;
+import defpackage.eluo;
+import defpackage.ftes;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class SassProcessChimeraActivity extends qfp {
+public class SassProcessChimeraActivity extends ryt {
     private BroadcastReceiver j;
     private AudioManager k;
-    private final Handler l = new byhr(Looper.getMainLooper());
+    private final Handler l = new caqj(Looper.getMainLooper());
     private AudioDeviceCallback m;
 
     public static final void b(Context context) {
-        ((ejhf) cigw.a.d().ah(7263)).x("SassProcessChimeraActivity: Call bt settings.");
+        ((eluo) ckpb.a.d().ai(7212)).x("SassProcessChimeraActivity: Call bt settings.");
         Intent intent = new Intent("android.settings.BLUETOOTH_SETTINGS");
         intent.putExtra("EXTRA_CONNECTION_ONLY", true);
         intent.putExtra("EXTRA_CLOSE_ON_CONNECT", true);
@@ -63,11 +63,11 @@ public class SassProcessChimeraActivity extends qfp {
         return false;
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (a()) {
-            ((ejhf) cigw.a.d().ah(7265)).x("SassProcessChimeraActivity: Bt headset connected already. Finish activity.");
+            ((eluo) ckpb.a.d().ai(7214)).x("SassProcessChimeraActivity: Bt headset connected already. Finish activity.");
             if (isFinishing()) {
                 return;
             }
@@ -83,35 +83,35 @@ public class SassProcessChimeraActivity extends qfp {
             finish();
             return;
         }
-        cfcs.d(this, new Intent("com.google.android.gms.nearby.fastpair.sass.device.ACTION_CONNECTING_UI_LAUNCHING"));
+        chke.d(this, new Intent("com.google.android.gms.nearby.fastpair.sass.device.ACTION_CONNECTING_UI_LAUNCHING"));
         setContentView(R.layout.fast_pair_sass_connecting);
         ((TextView) findViewById(R.id.text_subtitle)).setText(mutingExpectedDevice.getName());
-        this.m = new cimt(this);
+        this.m = new ckuy(this);
         AudioManager c = c();
         AudioDeviceCallback audioDeviceCallback = this.m;
-        eike.e(audioDeviceCallback);
+        ekxj.e(audioDeviceCallback);
         c.registerAudioDeviceCallback(audioDeviceCallback, null);
-        this.l.postDelayed(new Runnable() { // from class: cims
+        this.l.postDelayed(new Runnable() { // from class: ckux
             @Override // java.lang.Runnable
             public final void run() {
                 SassProcessChimeraActivity sassProcessChimeraActivity = SassProcessChimeraActivity.this;
                 if (sassProcessChimeraActivity.isFinishing()) {
                     return;
                 }
-                ((ejhf) cigw.a.d().ah(7264)).x("SassProcessChimeraActivity: Timeout. Finish activity.");
+                ((eluo) ckpb.a.d().ai(7213)).x("SassProcessChimeraActivity: Timeout. Finish activity.");
                 if (!sassProcessChimeraActivity.a()) {
                     SassProcessChimeraActivity.b(sassProcessChimeraActivity);
                 }
                 sassProcessChimeraActivity.finish();
             }
-        }, fqkx.a.a().es());
+        }, ftes.a.lK().es());
         TracingBroadcastReceiver tracingBroadcastReceiver = new TracingBroadcastReceiver() { // from class: com.google.android.gms.nearby.fastpair.sass.device.connection.ui.SassProcessChimeraActivity.2
             @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-            public final void jz(Context context, Intent intent) {
+            public final void jP(Context context, Intent intent) {
                 if (intent == null || TextUtils.isEmpty(intent.getAction())) {
                     return;
                 }
-                ((ejhf) cigw.a.d().ah(7262)).Q("SassProcessChimeraActivity: Received action=%s, call_settings=%s", intent.getAction(), intent.getBooleanExtra("call_settings", false));
+                ((eluo) ckpb.a.d().ai(7211)).Q("SassProcessChimeraActivity: Received action=%s, call_settings=%s", intent.getAction(), intent.getBooleanExtra("call_settings", false));
                 if (intent.getBooleanExtra("call_settings", false)) {
                     SassProcessChimeraActivity.b(context);
                 }
@@ -123,20 +123,20 @@ public class SassProcessChimeraActivity extends qfp {
             }
         };
         this.j = tracingBroadcastReceiver;
-        cfcs.b(this, tracingBroadcastReceiver, new IntentFilter("com.google.android.gms.nearby.fastpair.sass.device.ACTION_WEAR_OS_CONNECTING_UI_DISMISS"));
+        chke.b(this, tracingBroadcastReceiver, new IntentFilter("com.google.android.gms.nearby.fastpair.sass.device.ACTION_WEAR_OS_CONNECTING_UI_DISMISS"));
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
         BroadcastReceiver broadcastReceiver = this.j;
         if (broadcastReceiver != null) {
-            cfcs.f(this, broadcastReceiver);
+            chke.f(this, broadcastReceiver);
         }
         if (this.m != null) {
             AudioManager c = c();
             AudioDeviceCallback audioDeviceCallback = this.m;
-            eike.e(audioDeviceCallback);
+            ekxj.e(audioDeviceCallback);
             c.unregisterAudioDeviceCallback(audioDeviceCallback);
         }
     }

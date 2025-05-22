@@ -11,35 +11,35 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.google.android.gms.R;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.aqvq;
-import defpackage.aqvr;
-import defpackage.aqvs;
-import defpackage.aqwn;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bqna;
-import defpackage.eitj;
-import defpackage.ejcb;
-import defpackage.ejhf;
-import defpackage.qfp;
+import defpackage.asyf;
+import defpackage.asyg;
+import defpackage.asyh;
+import defpackage.aszc;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bsup;
+import defpackage.elgo;
+import defpackage.elpg;
+import defpackage.eluo;
+import defpackage.ryt;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class AccountTypePickerChimeraActivity extends qfp {
-    private static final asot k = asot.b("AccountChooser", asej.COMMON_ACCOUNT);
+public class AccountTypePickerChimeraActivity extends ryt {
+    private static final ausn k = ausn.b("AccountChooser", auid.COMMON_ACCOUNT);
     public ArrayList j;
     private final HashMap l = new HashMap();
 
-    public static Intent a(Context context, aqwn aqwnVar) {
+    public static Intent a(Context context, aszc aszcVar) {
         Intent intent = new Intent();
         intent.setClassName(context, "com.google.android.gms.common.account.AccountTypePickerActivity");
         intent.setFlags(AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
-        eitj eitjVar = aqwnVar.a;
-        intent.putExtra("allowableAccountTypes", eitjVar == null ? null : (String[]) eitjVar.toArray(new String[((ejcb) eitjVar).c]));
+        elgo elgoVar = aszcVar.a;
+        intent.putExtra("allowableAccountTypes", elgoVar == null ? null : (String[]) elgoVar.toArray(new String[((elpg) elgoVar).c]));
         return intent;
     }
 
@@ -50,7 +50,7 @@ public class AccountTypePickerChimeraActivity extends qfp {
         Drawable drawable;
         String str2;
         Context createPackageContext;
-        for (AuthenticatorDescription authenticatorDescription : bqna.b(this).r()) {
+        for (AuthenticatorDescription authenticatorDescription : bsup.b(this).r()) {
             Drawable drawable2 = null;
             try {
                 createPackageContext = createPackageContext(authenticatorDescription.packageName, 0);
@@ -72,26 +72,26 @@ public class AccountTypePickerChimeraActivity extends qfp {
                 str = null;
                 drawable2 = drawable;
                 nameNotFoundException = e3;
-                asot asotVar = k;
-                if (((ejhf) asotVar.j()).ab()) {
-                    ((ejhf) ((ejhf) ((ejhf) asotVar.j()).s(nameNotFoundException)).ah(3120)).B("No icon name for account type %s", authenticatorDescription.type);
+                ausn ausnVar = k;
+                if (((eluo) ausnVar.j()).ab()) {
+                    ((eluo) ((eluo) ((eluo) ausnVar.j()).s(nameNotFoundException)).ai(3124)).B("No icon name for account type %s", authenticatorDescription.type);
                 }
                 drawable = drawable2;
                 str2 = str;
-                this.l.put(authenticatorDescription.type, new aqvs(authenticatorDescription, str2, drawable));
+                this.l.put(authenticatorDescription.type, new asyh(authenticatorDescription, str2, drawable));
             } catch (Resources.NotFoundException e4) {
                 str = null;
                 drawable2 = drawable;
                 notFoundException = e4;
-                asot asotVar2 = k;
-                if (((ejhf) asotVar2.j()).ab()) {
-                    ((ejhf) ((ejhf) ((ejhf) asotVar2.j()).s(notFoundException)).ah(3121)).B("No icon resource for account type %s", authenticatorDescription.type);
+                ausn ausnVar2 = k;
+                if (((eluo) ausnVar2.j()).ab()) {
+                    ((eluo) ((eluo) ((eluo) ausnVar2.j()).s(notFoundException)).ai(3125)).B("No icon resource for account type %s", authenticatorDescription.type);
                 }
                 drawable = drawable2;
                 str2 = str;
-                this.l.put(authenticatorDescription.type, new aqvs(authenticatorDescription, str2, drawable));
+                this.l.put(authenticatorDescription.type, new asyh(authenticatorDescription, str2, drawable));
             }
-            this.l.put(authenticatorDescription.type, new aqvs(authenticatorDescription, str2, drawable));
+            this.l.put(authenticatorDescription.type, new asyh(authenticatorDescription, str2, drawable));
         }
     }
 
@@ -102,7 +102,7 @@ public class AccountTypePickerChimeraActivity extends qfp {
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         HashSet hashSet;
         super.onCreate(bundle);
@@ -120,9 +120,9 @@ public class AccountTypePickerChimeraActivity extends qfp {
         this.j = new ArrayList(hashMap.size());
         for (Map.Entry entry : hashMap.entrySet()) {
             String str2 = (String) entry.getKey();
-            aqvs aqvsVar = (aqvs) entry.getValue();
+            asyh asyhVar = (asyh) entry.getValue();
             if (hashSet == null || hashSet.contains(str2)) {
-                this.j.add(aqvsVar);
+                this.j.add(asyhVar);
             }
         }
         if (this.j.isEmpty()) {
@@ -133,14 +133,14 @@ public class AccountTypePickerChimeraActivity extends qfp {
             return;
         }
         if (this.j.size() == 1) {
-            b(((aqvs) this.j.get(0)).a.type);
+            b(((asyh) this.j.get(0)).a.type);
             return;
         }
         setContentView(R.layout.common_account_type_picker);
         ListView listView = (ListView) findViewById(android.R.id.list);
-        listView.setAdapter((ListAdapter) new aqvr(this, this.j));
+        listView.setAdapter((ListAdapter) new asyg(this, this.j));
         listView.setChoiceMode(0);
         listView.setTextFilterEnabled(false);
-        listView.setOnItemClickListener(new aqvq(this));
+        listView.setOnItemClickListener(new asyf(this));
     }
 }

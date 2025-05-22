@@ -6,53 +6,53 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fitness.data.Subscription;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.bgiu;
-import defpackage.bgiw;
-import defpackage.bglt;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.bink;
+import defpackage.binm;
+import defpackage.biqj;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SubscribeRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bglt();
+    public static final Parcelable.Creator CREATOR = new biqj();
     public Subscription a;
     public final boolean b;
-    public final bgiw c;
+    public final binm c;
 
-    public SubscribeRequest(Subscription subscription, boolean z, bgiw bgiwVar) {
+    public SubscribeRequest(Subscription subscription, boolean z, binm binmVar) {
         this.a = subscription;
         this.b = z;
-        this.c = bgiwVar;
+        this.c = binmVar;
     }
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("subscription", this.a, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("subscription", this.a, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.e(parcel, 2, this.b);
-        bgiw bgiwVar = this.c;
-        arxc.D(parcel, 3, bgiwVar == null ? null : bgiwVar.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.e(parcel, 2, this.b);
+        binm binmVar = this.c;
+        atzr.D(parcel, 3, binmVar == null ? null : binmVar.asBinder());
+        atzr.c(parcel, a);
     }
 
     public SubscribeRequest(Subscription subscription, boolean z, IBinder iBinder) {
-        bgiw bgiuVar;
+        binm binkVar;
         this.a = subscription;
         this.b = z;
         if (iBinder == null) {
-            bgiuVar = null;
+            binkVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.IStatusCallback");
-            bgiuVar = queryLocalInterface instanceof bgiw ? (bgiw) queryLocalInterface : new bgiu(iBinder);
+            binkVar = queryLocalInterface instanceof binm ? (binm) queryLocalInterface : new bink(iBinder);
         }
-        this.c = bgiuVar;
+        this.c = binkVar;
     }
 }

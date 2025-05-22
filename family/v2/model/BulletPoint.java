@@ -2,18 +2,18 @@ package com.google.android.gms.family.v2.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.bacc;
-import defpackage.epus;
-import defpackage.eput;
-import defpackage.epuv;
+import defpackage.bcfy;
+import defpackage.esir;
+import defpackage.esis;
+import defpackage.esiu;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class BulletPoint implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new bacc();
+    public static final Parcelable.Creator CREATOR = new bcfy();
     public HashMap a = new HashMap();
 
     public BulletPoint(Parcel parcel) {
@@ -45,15 +45,15 @@ public final class BulletPoint implements Parcelable {
         }
     }
 
-    public BulletPoint(epus epusVar) {
-        if (epusVar.b.size() != 0) {
-            for (eput eputVar : epusVar.b) {
+    public BulletPoint(esir esirVar) {
+        if (esirVar.b.size() != 0) {
+            for (esis esisVar : esirVar.b) {
                 HashMap hashMap = this.a;
-                int a = epuv.a(eputVar.b);
+                int a = esiu.a(esisVar.b);
                 if (a == 0) {
                     a = 1;
                 }
-                hashMap.put(Integer.valueOf(a - 1), eputVar.c);
+                hashMap.put(Integer.valueOf(a - 1), esisVar.c);
             }
         }
     }

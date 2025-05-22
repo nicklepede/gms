@@ -3,25 +3,25 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bbtx;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bdxo;
 import java.util.Arrays;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PublicKeyCredentialRpEntity extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bbtx();
+    public static final Parcelable.Creator CREATOR = new bdxo();
     public final String a;
     public final String b;
     public final String c;
 
     public PublicKeyCredentialRpEntity(String str, String str2, String str3) {
-        arwm.s(str);
+        atzb.s(str);
         this.a = str;
-        arwm.s(str2);
+        atzb.s(str2);
         this.b = str2;
         this.c = str3;
     }
@@ -35,7 +35,7 @@ public class PublicKeyCredentialRpEntity extends AbstractSafeParcelable {
             return false;
         }
         PublicKeyCredentialRpEntity publicKeyCredentialRpEntity = (PublicKeyCredentialRpEntity) obj;
-        return arwb.b(this.a, publicKeyCredentialRpEntity.a) && arwb.b(this.b, publicKeyCredentialRpEntity.b) && arwb.b(this.c, publicKeyCredentialRpEntity.c);
+        return atyq.b(this.a, publicKeyCredentialRpEntity.a) && atyq.b(this.b, publicKeyCredentialRpEntity.b) && atyq.b(this.c, publicKeyCredentialRpEntity.c);
     }
 
     public final int hashCode() {
@@ -49,10 +49,10 @@ public class PublicKeyCredentialRpEntity extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.c(parcel, a);
     }
 }

@@ -1,20 +1,20 @@
 package com.google.android.gms.auth.aang.events.services;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.ejck;
-import defpackage.van;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.elpp;
+import defpackage.wwn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class GoogleAuthAangChimeraService extends bxgd {
+public final class GoogleAuthAangChimeraService extends bzot {
     public GoogleAuthAangChimeraService() {
-        super(343, "com.google.android.gms.auth.aang.events.services.START", ejck.a, 1, 9);
+        super(343, "com.google.android.gms.auth.aang.events.services.START", elpp.a, 1, 9);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new van(l(), getServiceRequest.f, getApplicationContext(), bxgjVar.e()));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new wwn(l(), getServiceRequest.f, getApplicationContext(), bzozVar.e()));
     }
 }

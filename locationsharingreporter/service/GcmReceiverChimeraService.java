@@ -5,120 +5,120 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.chimera.modules.locationsharingreporter.AppContextProvider;
 import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.caym;
-import defpackage.cbbn;
-import defpackage.cbbx;
-import defpackage.ebfs;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.fpxh;
-import defpackage.unx;
-import defpackage.uny;
-import defpackage.uoh;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.cdhh;
+import defpackage.cdkf;
+import defpackage.cdkp;
+import defpackage.edsf;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.fsrb;
+import defpackage.wjw;
+import defpackage.wjx;
+import defpackage.wkg;
 import java.io.IOException;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class GcmReceiverChimeraService extends TracingIntentService {
-    private static final asot a = asot.b("LSR", asej.LOCATION_SHARING_REPORTER);
+    private static final ausn a = ausn.b("LSR", auid.LOCATION_SHARING_REPORTER);
 
     public GcmReceiverChimeraService() {
         super("GcmReceiverChimeraService");
     }
 
-    private static final eiid b(String str) {
+    private static final ekvi b(String str) {
         String str2;
         Context a2 = AppContextProvider.a();
-        for (Account account : asnd.h(a2, a2.getPackageName())) {
+        for (Account account : auqx.h(a2, a2.getPackageName())) {
             try {
                 str2 = account.name;
-                String str3 = uny.a;
-            } catch (IOException | unx e) {
-                ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 5690)).x("Failed to retrieve account ID");
+                String str3 = wjx.a;
+            } catch (IOException | wjw e) {
+                ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 5704)).x("Failed to retrieve account ID");
             }
-            if (str.equals(uoh.e(a2, str2))) {
-                return eiid.j(account);
+            if (str.equals(wkg.e(a2, str2))) {
+                return ekvi.j(account);
             }
             continue;
         }
-        return eigb.a;
+        return ektg.a;
     }
 
     private static final void c(Intent intent) {
-        cbbx cbbxVar;
-        eiid i = eiid.i(intent.getStringExtra("gaia_id"));
+        cdkp cdkpVar;
+        ekvi i = ekvi.i(intent.getStringExtra("gaia_id"));
         if (!i.h()) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 5697)).x("Received GCM intent doesn't have related gaia ID, returning");
-            cbbn.d(null, ebfs.STATUS_GCM_PING_FAILED_MISSING_OBFUSCATED_GAIA_ID);
+            ((eluo) ((eluo) a.j()).ai((char) 5711)).x("Received GCM intent doesn't have related gaia ID, returning");
+            cdkf.d(null, edsf.STATUS_GCM_PING_FAILED_MISSING_OBFUSCATED_GAIA_ID);
             return;
         }
-        eiid i2 = eiid.i(intent.getStringExtra("ovenfresh_id"));
+        ekvi i2 = ekvi.i(intent.getStringExtra("ovenfresh_id"));
         if (!i2.h()) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 5696)).x("Received ovenfresh GCM intent doesn't have necessary extras, returning");
-            cbbn.d(null, ebfs.STATUS_GCM_PING_FAILED_MISSING_NECESSARY_EXTRAS);
+            ((eluo) ((eluo) a.j()).ai((char) 5710)).x("Received ovenfresh GCM intent doesn't have necessary extras, returning");
+            cdkf.d(null, edsf.STATUS_GCM_PING_FAILED_MISSING_NECESSARY_EXTRAS);
             return;
         }
-        eiid b = b((String) i.c());
+        ekvi b = b((String) i.c());
         try {
-            synchronized (cbbx.b) {
-                if (cbbx.c == null) {
-                    cbbx.c = new cbbx();
+            synchronized (cdkp.b) {
+                if (cdkp.c == null) {
+                    cdkp.c = new cdkp();
                 }
-                cbbxVar = cbbx.c;
+                cdkpVar = cdkp.c;
             }
-            cbbxVar.a(b, (String) i2.c(), !fpxh.J() ? false : ((String) eiid.i(intent.getStringExtra("requested_super_fresh")).e("")).equals("1")).get(fpxh.a.a().v(), TimeUnit.MILLISECONDS);
+            cdkpVar.a(b, (String) i2.c(), !fsrb.H() ? false : ((String) ekvi.i(intent.getStringExtra("requested_super_fresh")).e("")).equals("1")).get(fsrb.a.lK().x(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException e) {
             e = e;
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 5694)).x("Failed to handle ovenfresh");
-            cbbn.k(null, 12);
+            ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 5708)).x("Failed to handle ovenfresh");
+            cdkf.k(null, 12);
         } catch (CancellationException e2) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e2)).ah((char) 5695)).x("Failed to handle ovenfresh");
-            cbbn.k(null, 17);
+            ((eluo) ((eluo) ((eluo) a.j()).s(e2)).ai((char) 5709)).x("Failed to handle ovenfresh");
+            cdkf.k(null, 17);
         } catch (ExecutionException e3) {
             e = e3;
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 5694)).x("Failed to handle ovenfresh");
-            cbbn.k(null, 12);
+            ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 5708)).x("Failed to handle ovenfresh");
+            cdkf.k(null, 12);
         } catch (TimeoutException e4) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e4)).ah((char) 5693)).x("Failed to handle ovenfresh");
-            cbbn.k(null, 11);
+            ((eluo) ((eluo) ((eluo) a.j()).s(e4)).ai((char) 5707)).x("Failed to handle ovenfresh");
+            cdkf.k(null, 11);
         }
     }
 
     private static final void d(Intent intent) {
-        if (!fpxh.a.a().aq()) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 5702)).x("Ignoring received refresh reporting state GCM ping, GCM handling is disabled");
+        if (!fsrb.a.lK().ap()) {
+            ((eluo) ((eluo) a.j()).ai((char) 5716)).x("Ignoring received refresh reporting state GCM ping, GCM handling is disabled");
             return;
         }
-        cbbn.d(null, ebfs.STATUS_REFRESH_REPORTING_STATE_GCM_PING_RECEIVED);
-        eiid i = eiid.i(intent.getStringExtra("gaia_id"));
+        cdkf.d(null, edsf.STATUS_REFRESH_REPORTING_STATE_GCM_PING_RECEIVED);
+        ekvi i = ekvi.i(intent.getStringExtra("gaia_id"));
         if (!i.h()) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 5701)).x("Refresh reporting state GCM ping doesn't have necessary extras, ignoring");
-            cbbn.d(null, ebfs.STATUS_REFRESH_REPORTING_MISSING_OBFUSCATED_GAIA_ID);
+            ((eluo) ((eluo) a.j()).ai((char) 5715)).x("Refresh reporting state GCM ping doesn't have necessary extras, ignoring");
+            cdkf.d(null, edsf.STATUS_REFRESH_REPORTING_MISSING_OBFUSCATED_GAIA_ID);
             return;
         }
-        eiid b = b((String) i.c());
+        ekvi b = b((String) i.c());
         if (!b.h()) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 5700)).x("Failed to find account for which reporting refresh was requested in GCM ping, returning");
-            cbbn.d(null, ebfs.STATUS_REFRESH_REPORTING_STATE_FAILED_TO_FIND_ACCOUNT);
+            ((eluo) ((eluo) a.j()).ai((char) 5714)).x("Failed to find account for which reporting refresh was requested in GCM ping, returning");
+            cdkf.d(null, edsf.STATUS_REFRESH_REPORTING_STATE_FAILED_TO_FIND_ACCOUNT);
             return;
         }
         String str = ((Account) b.c()).name;
         try {
-            ((ejhf) ((ejhf) a.h()).ah(5698)).x("Refresh reporting state after GCM ping from backend");
-            ((enpf) caym.a().c(str)).v(fpxh.k(), TimeUnit.MILLISECONDS);
-            cbbn.d(str, ebfs.STATUS_REFRESH_REPORTING_STATE_SUCCEEDED);
+            ((eluo) ((eluo) a.h()).ai(5712)).x("Refresh reporting state after GCM ping from backend");
+            ((eqcy) cdhh.a().c(str)).v(fsrb.l(), TimeUnit.MILLISECONDS);
+            cdkf.d(str, edsf.STATUS_REFRESH_REPORTING_STATE_SUCCEEDED);
         } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 5699)).x("Failed to refresh reporting state for account after GCM ping");
-            cbbn.d(str, ebfs.STATUS_REFRESH_REPORTING_STATE_FAILED_DURING_EXECUTION);
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 5713)).x("Failed to refresh reporting state for account after GCM ping");
+            cdkf.d(str, edsf.STATUS_REFRESH_REPORTING_STATE_FAILED_DURING_EXECUTION);
         }
     }
 

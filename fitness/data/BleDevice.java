@@ -4,10 +4,10 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bgcv;
+import defpackage.atyp;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bihl;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,11 +15,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public class BleDevice extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bgcv();
+    public static final Parcelable.Creator CREATOR = new bihl();
     public final String a;
     public final String b;
     public final List c;
@@ -49,32 +49,32 @@ public class BleDevice extends AbstractSafeParcelable implements ReflectedParcel
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("name", this.b, arrayList);
-        arwa.b("address", this.a, arrayList);
-        arwa.b("dataTypes", this.d, arrayList);
-        arwa.b("supportedProfiles", this.c, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("name", this.b, arrayList);
+        atyp.b("address", this.a, arrayList);
+        atyp.b("dataTypes", this.d, arrayList);
+        atyp.b("supportedProfiles", this.c, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.x(parcel, 3, this.c, false);
-        arxc.y(parcel, 4, this.d, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.x(parcel, 3, this.c, false);
+        atzr.y(parcel, 4, this.d, false);
+        atzr.c(parcel, a);
     }
 
     public BleDevice(String str, String str2, Set set, Set set2) {
-        arwm.s(str);
+        atzb.s(str);
         this.a = str;
-        arwm.s(str2);
+        atzb.s(str2);
         this.b = str2;
-        arwm.s(set2);
+        atzb.s(set2);
         this.d = new ArrayList(set2);
-        arwm.s(set);
+        atzb.s(set);
         this.c = new ArrayList(set);
     }
 }

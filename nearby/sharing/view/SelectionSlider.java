@@ -17,19 +17,19 @@ import android.widget.LinearLayout;
 import com.google.android.cast.JGCastService;
 import com.google.android.gms.R;
 import com.google.android.gms.nearby.sharing.view.SelectionSlider;
-import defpackage.asnf;
-import defpackage.asng;
-import defpackage.asqh;
-import defpackage.clzc;
-import defpackage.crnz;
-import defpackage.cros;
-import defpackage.crot;
-import defpackage.jja;
-import defpackage.jjc;
-import defpackage.jje;
+import defpackage.auqz;
+import defpackage.aura;
+import defpackage.auub;
+import defpackage.cohk;
+import defpackage.ctxe;
+import defpackage.ctxx;
+import defpackage.ctxy;
+import defpackage.jpp;
+import defpackage.jpr;
+import defpackage.jpt;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SelectionSlider extends FrameLayout {
     public ImageView a;
@@ -54,7 +54,7 @@ public class SelectionSlider extends FrameLayout {
     }
 
     private final int c() {
-        if (crnz.a(getContext())) {
+        if (ctxe.a(getContext())) {
             return (-getMeasuredWidth()) / 0;
         }
         getMeasuredWidth();
@@ -65,35 +65,35 @@ public class SelectionSlider extends FrameLayout {
     private final void d(float f) {
         int width = getWidth() - this.a.getWidth();
         int i = 0;
-        if (crnz.a(getContext())) {
+        if (ctxe.a(getContext())) {
             i = -width;
             width = 0;
         }
-        jje jjeVar = new jje(this.a, jjc.a);
-        jjeVar.h = f;
-        jjeVar.s.a = -16.8f;
-        jjeVar.o = i;
-        jjeVar.n = width;
-        jja jjaVar = new jja() { // from class: cror
-            @Override // defpackage.jja
+        jpt jptVar = new jpt(this.a, jpr.a);
+        jptVar.h = f;
+        jptVar.s.a = -16.8f;
+        jptVar.o = i;
+        jptVar.n = width;
+        jpp jppVar = new jpp() { // from class: ctxw
+            @Override // defpackage.jpp
             public final void a() {
                 SelectionSlider selectionSlider = SelectionSlider.this;
                 selectionSlider.b.a((int) selectionSlider.a.getTranslationX(), ((int) selectionSlider.a.getTranslationX()) + selectionSlider.a.getWidth());
             }
         };
-        if (jjeVar.m) {
+        if (jptVar.m) {
             throw new UnsupportedOperationException("Error: Update listeners must be added beforethe animation.");
         }
-        ArrayList arrayList = jjeVar.r;
-        if (!arrayList.contains(jjaVar)) {
-            arrayList.add(jjaVar);
+        ArrayList arrayList = jptVar.r;
+        if (!arrayList.contains(jppVar)) {
+            arrayList.add(jppVar);
         }
-        cros crosVar = new cros(this);
-        ArrayList arrayList2 = jjeVar.q;
-        if (!arrayList2.contains(crosVar)) {
-            arrayList2.add(crosVar);
+        ctxx ctxxVar = new ctxx(this);
+        ArrayList arrayList2 = jptVar.q;
+        if (!arrayList2.contains(ctxxVar)) {
+            arrayList2.add(ctxxVar);
         }
-        jjeVar.d();
+        jptVar.d();
     }
 
     private final void e(Context context, AttributeSet attributeSet) {
@@ -107,16 +107,16 @@ public class SelectionSlider extends FrameLayout {
         this.f = viewConfiguration.getScaledMinimumFlingVelocity();
         this.g = viewConfiguration.getScaledMaximumFlingVelocity();
         this.h = viewConfiguration.getScaledTouchSlop();
-        if (asqh.g()) {
+        if (auub.g()) {
             scaledAmbiguousGestureMultiplier = viewConfiguration.getScaledAmbiguousGestureMultiplier();
             this.i = scaledAmbiguousGestureMultiplier;
-        } else if (asqh.f()) {
+        } else if (auub.f()) {
             ambiguousGestureMultiplier = ViewConfiguration.getAmbiguousGestureMultiplier();
             this.i = ambiguousGestureMultiplier;
         }
-        this.a.addOnLayoutChangeListener(new crot(this));
+        this.a.addOnLayoutChangeListener(new ctxy(this));
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, clzc.d);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, cohk.d);
             if (obtainStyledAttributes.hasValue(0)) {
                 this.a.setImageResource(obtainStyledAttributes.getResourceId(0, 0));
             }
@@ -127,19 +127,19 @@ public class SelectionSlider extends FrameLayout {
 
     private final void f(boolean z) {
         int c = c();
-        if (crnz.a(getContext())) {
+        if (ctxe.a(getContext())) {
             c += (-getMeasuredWidth()) + this.a.getMeasuredWidth();
         }
         float f = c;
         if (z && this.a.isLaidOut()) {
             this.d = true;
-            this.a.animate().translationX(f).setUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: crop
+            this.a.animate().translationX(f).setUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: ctxu
                 @Override // android.animation.ValueAnimator.AnimatorUpdateListener
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                     SelectionSlider selectionSlider = SelectionSlider.this;
                     selectionSlider.b.a((int) selectionSlider.a.getTranslationX(), ((int) selectionSlider.a.getTranslationX()) + selectionSlider.a.getWidth());
                 }
-            }).withEndAction(new Runnable() { // from class: croq
+            }).withEndAction(new Runnable() { // from class: ctxv
                 @Override // java.lang.Runnable
                 public final void run() {
                     SelectionSlider.this.d = false;
@@ -167,7 +167,7 @@ public class SelectionSlider extends FrameLayout {
 
     public final void a() {
         int width = (this.c + (this.a.getWidth() / 2)) / this.a.getWidth();
-        if (crnz.a(getContext())) {
+        if (ctxe.a(getContext())) {
             width = (-width) - 1;
         }
         Math.min(Math.max(width, 0), -1);
@@ -175,7 +175,7 @@ public class SelectionSlider extends FrameLayout {
 
     public final void b() {
         Context context = getContext();
-        asnf asnfVar = asng.a;
+        auqz auqzVar = aura.a;
         if (((AccessibilityManager) context.getSystemService("accessibility")).isEnabled()) {
             this.b.getChildAt(0).sendAccessibilityEvent(8);
         }

@@ -3,20 +3,20 @@ package com.google.android.gms.wallet.analytics.events;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.digb;
-import defpackage.divi;
-import defpackage.divs;
-import defpackage.divt;
-import defpackage.edml;
-import defpackage.emfu;
-import defpackage.emfv;
-import defpackage.fecj;
-import defpackage.fecp;
+import defpackage.dkrm;
+import defpackage.dlgt;
+import defpackage.dlhd;
+import defpackage.dlhe;
+import defpackage.efzh;
+import defpackage.eoti;
+import defpackage.eotj;
+import defpackage.fgrc;
+import defpackage.fgri;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class OrchestrationViewEvent extends WalletAnalyticsEvent implements divs {
-    public static final Parcelable.Creator CREATOR = new digb();
+public class OrchestrationViewEvent extends WalletAnalyticsEvent implements dlhd {
+    public static final Parcelable.Creator CREATOR = new dkrm();
     private final int a;
     private final int b;
 
@@ -26,44 +26,44 @@ public class OrchestrationViewEvent extends WalletAnalyticsEvent implements divs
         this.b = i2;
     }
 
-    public static void a(Context context, String str, edml edmlVar) {
-        e(context, str, edmlVar, 2);
+    public static void a(Context context, String str, efzh efzhVar) {
+        e(context, str, efzhVar, 2);
     }
 
-    public static void c(Context context, String str, edml edmlVar) {
-        e(context, str, edmlVar, 3);
+    public static void c(Context context, String str, efzh efzhVar) {
+        e(context, str, efzhVar, 3);
     }
 
-    public static void d(Context context, String str, edml edmlVar) {
-        e(context, str, edmlVar, 1);
+    public static void d(Context context, String str, efzh efzhVar) {
+        e(context, str, efzhVar, 1);
     }
 
-    public static void e(Context context, String str, edml edmlVar, int i) {
-        if (edmlVar == null) {
+    public static void e(Context context, String str, efzh efzhVar, int i) {
+        if (efzhVar == null) {
             return;
         }
-        divi.a(context, new OrchestrationViewEvent(str, edmlVar.a, i));
+        dlgt.a(context, new OrchestrationViewEvent(str, efzhVar.a, i));
     }
 
-    @Override // defpackage.divs
-    public final void b(Context context, divt divtVar, fecj fecjVar) {
-        fecj v = emfv.a.v();
+    @Override // defpackage.dlhd
+    public final void b(Context context, dlhe dlheVar, fgrc fgrcVar) {
+        fgrc v = eotj.a.v();
         if (!v.b.L()) {
             v.U();
         }
         int i = this.a;
-        fecp fecpVar = v.b;
-        emfv emfvVar = (emfv) fecpVar;
-        emfvVar.b |= 1;
-        emfvVar.c = i;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        eotj eotjVar = (eotj) fgriVar;
+        eotjVar.b |= 1;
+        eotjVar.c = i;
+        if (!fgriVar.L()) {
             v.U();
         }
         int i2 = this.b;
-        emfv emfvVar2 = (emfv) v.b;
-        emfvVar2.d = i2;
-        emfvVar2.b |= 2;
-        divtVar.c.add((emfv) v.Q());
+        eotj eotjVar2 = (eotj) v.b;
+        eotjVar2.d = i2;
+        eotjVar2.b |= 2;
+        dlheVar.c.add((eotj) v.Q());
     }
 
     @Override // android.os.Parcelable
@@ -81,7 +81,7 @@ public class OrchestrationViewEvent extends WalletAnalyticsEvent implements divs
     public OrchestrationViewEvent(Parcel parcel) {
         super(parcel);
         this.a = parcel.readInt();
-        int a = emfu.a(parcel.readInt());
+        int a = eoti.a(parcel.readInt());
         this.b = a == 0 ? 1 : a;
     }
 }

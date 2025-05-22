@@ -3,34 +3,33 @@ package com.google.android.gms.framework.tracing;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bhdy;
-import defpackage.bhea;
-import defpackage.bhec;
-import defpackage.bhed;
-import defpackage.bhee;
-import defpackage.bhef;
-import defpackage.bhgt;
-import defpackage.bhgv;
-import defpackage.bhgw;
-import defpackage.byhs;
-import defpackage.egkp;
-import defpackage.egmm;
-import defpackage.egmn;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bjio;
+import defpackage.bjiq;
+import defpackage.bjis;
+import defpackage.bjit;
+import defpackage.bjiu;
+import defpackage.bjiv;
+import defpackage.bjli;
+import defpackage.bjlk;
+import defpackage.bjll;
+import defpackage.caqk;
+import defpackage.eixs;
+import defpackage.eizp;
+import defpackage.eizq;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
 import j$.util.concurrent.ConcurrentHashMap;
 import java.io.Closeable;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public abstract class AbstractGmsTracer {
     final ClassLoader b;
@@ -40,28 +39,22 @@ public abstract class AbstractGmsTracer {
     final Class f;
     final String g;
     final int h;
-    private static final asot i = asot.b("AbstractGmsTracer", asej.COMMON_BASE);
+    private static final ausn i = ausn.b("AbstractGmsTracer", auid.COMMON_BASE);
     private static final AtomicBoolean j = new AtomicBoolean(true);
     private static final AtomicBoolean k = new AtomicBoolean(true);
-    private static final eijr l = eijy.a(new eijr() { // from class: bhgn
-        @Override // defpackage.eijr
-        public final Object a() {
-            return Boolean.valueOf(fneu.a.a().T());
-        }
-    });
     public static final ConcurrentMap a = new ConcurrentHashMap(10);
 
-    /* JADX WARN: Removed duplicated region for block: B:20:0x00c4  */
-    /* JADX WARN: Removed duplicated region for block: B:23:0x0104  */
-    /* JADX WARN: Removed duplicated region for block: B:27:0x0122  */
-    /* JADX WARN: Removed duplicated region for block: B:38:0x00c7  */
+    /* JADX WARN: Removed duplicated region for block: B:15:0x00a6  */
+    /* JADX WARN: Removed duplicated region for block: B:18:0x00e4  */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x0102  */
+    /* JADX WARN: Removed duplicated region for block: B:33:0x00a9  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public AbstractGmsTracer(java.lang.ClassLoader r6, int r7, android.content.Context r8, java.lang.String r9, java.lang.Class r10) {
         /*
-            Method dump skipped, instructions count: 297
+            Method dump skipped, instructions count: 265
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.framework.tracing.AbstractGmsTracer.<init>(java.lang.ClassLoader, int, android.content.Context, java.lang.String, java.lang.Class):void");
@@ -74,25 +67,25 @@ public abstract class AbstractGmsTracer {
     public static String e(Class cls) {
         String simpleName = cls.getSimpleName();
         if (simpleName.equals(cls.getName())) {
-            ((ejhf) ((ejhf) i.i()).ah((char) 4983)).B("Traced class shouldn't be obfuscated: %s", simpleName);
+            ((eluo) ((eluo) i.i()).ai((char) 4993)).B("Traced class shouldn't be obfuscated: %s", simpleName);
         }
         return simpleName;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:16:0x0038  */
-    /* JADX WARN: Removed duplicated region for block: B:25:0x011d  */
-    /* JADX WARN: Removed duplicated region for block: B:33:0x0133  */
-    /* JADX WARN: Removed duplicated region for block: B:76:0x0118  */
+    /* JADX WARN: Removed duplicated region for block: B:25:0x011b  */
+    /* JADX WARN: Removed duplicated region for block: B:33:0x0131  */
+    /* JADX WARN: Removed duplicated region for block: B:76:0x0116  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    static defpackage.egkp h(final java.lang.String r16, final defpackage.bhee r17, boolean r18, java.lang.Class r19, final java.lang.String r20, final int r21, defpackage.aqyc r22) {
+    static defpackage.eixs h(final java.lang.String r16, final defpackage.bjiu r17, boolean r18, java.lang.Class r19, final java.lang.String r20, final int r21, defpackage.atar r22) {
         /*
-            Method dump skipped, instructions count: 353
+            Method dump skipped, instructions count: 351
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.framework.tracing.AbstractGmsTracer.h(java.lang.String, bhee, boolean, java.lang.Class, java.lang.String, int, aqyc):egkp");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.framework.tracing.AbstractGmsTracer.h(java.lang.String, bjiu, boolean, java.lang.Class, java.lang.String, int, atar):eixs");
     }
 
     private static String i(String str, String str2) {
@@ -106,7 +99,7 @@ public abstract class AbstractGmsTracer {
 
     private static void j(Exception exc) {
         if (k.getAndSet(false)) {
-            ((ejhf) ((ejhf) ((ejhf) i.i()).s(exc)).ah((char) 4985)).x("Reflection failed");
+            ((eluo) ((eluo) ((eluo) i.i()).s(exc)).ai((char) 4995)).x("Reflection failed");
         }
     }
 
@@ -114,98 +107,93 @@ public abstract class AbstractGmsTracer {
         j.getAndSet(false);
     }
 
-    public final bhee a(String str, eijr eijrVar, Intent intent, ClassLoader classLoader) {
-        bhed bhedVar;
+    public final bjiu a(String str, ekww ekwwVar, Intent intent, ClassLoader classLoader) {
+        bjit bjitVar;
         Bundle extras;
-        fecj fecjVar;
-        fecj v = bhee.a.v();
-        fecj v2 = bhea.a.v();
+        fgrc fgrcVar;
+        fgrc v = bjiu.a.v();
+        fgrc v2 = bjiq.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar = v2.b;
-        bhea bheaVar = (bhea) fecpVar;
-        bheaVar.b |= 2;
-        bheaVar.d = str;
+        fgri fgriVar = v2.b;
+        bjiq bjiqVar = (bjiq) fgriVar;
+        bjiqVar.b |= 2;
+        bjiqVar.d = str;
         int i2 = this.h;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v2.U();
         }
-        bhea bheaVar2 = (bhea) v2.b;
-        bheaVar2.c = i2 - 1;
-        bheaVar2.b |= 1;
+        bjiq bjiqVar2 = (bjiq) v2.b;
+        bjiqVar2.c = i2 - 1;
+        bjiqVar2.b |= 1;
         if (intent != null) {
-            int a2 = byhs.a(intent.getAction());
+            int a2 = caqk.a(intent.getAction());
             if (!v2.b.L()) {
                 v2.U();
             }
-            bhea bheaVar3 = (bhea) v2.b;
-            bheaVar3.b |= 4;
-            bheaVar3.e = a2;
+            bjiq bjiqVar3 = (bjiq) v2.b;
+            bjiqVar3.b |= 4;
+            bjiqVar3.e = a2;
         }
         if (!v.b.L()) {
             v.U();
         }
-        bhee bheeVar = (bhee) v.b;
-        bhea bheaVar4 = (bhea) v2.Q();
-        bheaVar4.getClass();
-        bheeVar.d = bheaVar4;
-        bheeVar.b |= 2;
+        bjiu bjiuVar = (bjiu) v.b;
+        bjiq bjiqVar4 = (bjiq) v2.Q();
+        bjiqVar4.getClass();
+        bjiuVar.d = bjiqVar4;
+        bjiuVar.b |= 2;
         String str2 = this.d;
         if (!TextUtils.isEmpty(str2)) {
-            fecj v3 = bhef.a.v();
+            fgrc v3 = bjiv.a.v();
             if (!v3.b.L()) {
                 v3.U();
             }
-            fecp fecpVar2 = v3.b;
-            bhef bhefVar = (bhef) fecpVar2;
+            fgri fgriVar2 = v3.b;
+            bjiv bjivVar = (bjiv) fgriVar2;
             str2.getClass();
-            bhefVar.b |= 1;
-            bhefVar.c = str2;
+            bjivVar.b |= 1;
+            bjivVar.c = str2;
             int i3 = this.c;
             if (i3 != -1) {
-                if (!fecpVar2.L()) {
+                if (!fgriVar2.L()) {
                     v3.U();
                 }
-                bhef bhefVar2 = (bhef) v3.b;
-                bhefVar2.b |= 2;
-                bhefVar2.d = i3;
+                bjiv bjivVar2 = (bjiv) v3.b;
+                bjivVar2.b |= 2;
+                bjivVar2.d = i3;
             }
             if (!v.b.L()) {
                 v.U();
             }
-            bhee bheeVar2 = (bhee) v.b;
-            bhef bhefVar3 = (bhef) v3.Q();
-            bhefVar3.getClass();
-            bheeVar2.e = bhefVar3;
-            bheeVar2.b |= 4;
+            bjiu bjiuVar2 = (bjiu) v.b;
+            bjiv bjivVar3 = (bjiv) v3.Q();
+            bjivVar3.getClass();
+            bjiuVar2.e = bjivVar3;
+            bjiuVar2.b |= 4;
         }
-        bhed bhedVar2 = bhed.a;
-        if (eijrVar == null || egmm.j(egmn.a)) {
-            bhedVar = bhedVar2;
-        } else {
-            bhedVar = (bhed) eijrVar.a();
-            if (bhedVar == null) {
-                bhedVar = bhed.a;
-            }
+        bjit bjitVar2 = bjit.a;
+        if (ekwwVar == null || eizp.j(eizq.a) || (bjitVar = (bjit) ekwwVar.lK()) == null) {
+            bjitVar = bjitVar2;
         }
-        int i4 = bhgt.a;
+        int i4 = bjli.a;
         if (intent != null && classLoader != null && (extras = intent.getExtras()) != null) {
             extras.setClassLoader(classLoader);
-            String c = bhgt.c(extras, "gms_trace_module_LOGGED");
+            String c = bjli.c(extras, "gms_trace_module_LOGGED");
             if (c != null) {
-                bhedVar = bhgt.a(c, bhedVar);
+                bjitVar = bjli.a(c, bjitVar);
             }
-            String c2 = bhgt.c(extras, "gms_trace_fired_alarms_ALARM_SOURCE");
-            String c3 = bhgt.c(extras, "gms_trace_fired_alarms_ALARM_TYPE");
+            String c2 = bjli.c(extras, "gms_trace_fired_alarms_ALARM_SOURCE");
+            String c3 = bjli.c(extras, "gms_trace_fired_alarms_ALARM_TYPE");
             if (c2 != null || c3 != null) {
-                if (bhedVar == null) {
-                    fecjVar = bhedVar2.v();
+                if (bjitVar == null) {
+                    fgrcVar = bjitVar2.v();
                 } else {
-                    fecjVar = (fecj) bhedVar.iB(5, null);
-                    fecjVar.X(bhedVar);
+                    fgrcVar = (fgrc) bjitVar.iQ(5, null);
+                    fgrcVar.X(bjitVar);
                 }
-                String str3 = bhedVar == null ? "" : bhedVar.c;
+                String str3 = bjitVar == null ? "" : bjitVar.c;
                 StringBuilder sb = new StringBuilder();
                 if (str3.length() > 0) {
                     sb.append(str3);
@@ -222,50 +210,50 @@ public abstract class AbstractGmsTracer {
                 sb.append("-alarm_type:");
                 sb.append(c3);
                 String sb2 = sb.toString();
-                bhec bhecVar = bhec.ZERO_PARTY;
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                bjis bjisVar = bjis.ZERO_PARTY;
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                fecp fecpVar3 = fecjVar.b;
-                bhed bhedVar3 = (bhed) fecpVar3;
-                bhedVar3.g = bhecVar.h;
-                bhedVar3.b |= 16;
-                if (!fecpVar3.L()) {
-                    fecjVar.U();
+                fgri fgriVar3 = fgrcVar.b;
+                bjit bjitVar3 = (bjit) fgriVar3;
+                bjitVar3.g = bjisVar.h;
+                bjitVar3.b |= 16;
+                if (!fgriVar3.L()) {
+                    fgrcVar.U();
                 }
-                bhed bhedVar4 = (bhed) fecjVar.b;
-                bhedVar4.b |= 1;
-                bhedVar4.c = sb2;
-                bhedVar = (bhed) fecjVar.Q();
+                bjit bjitVar4 = (bjit) fgrcVar.b;
+                bjitVar4.b |= 1;
+                bjitVar4.c = sb2;
+                bjitVar = (bjit) fgrcVar.Q();
             }
         }
         if (!v.b.L()) {
             v.U();
         }
-        bhee bheeVar3 = (bhee) v.b;
-        bhedVar.getClass();
-        bheeVar3.c = bhedVar;
-        bheeVar3.b |= 1;
-        int i5 = bhgw.a;
-        int a3 = bhgv.a.a();
+        bjiu bjiuVar3 = (bjiu) v.b;
+        bjitVar.getClass();
+        bjiuVar3.c = bjitVar;
+        bjiuVar3.b |= 1;
+        int i5 = bjll.a;
+        int a3 = bjlk.a.a();
         if (a3 != 7) {
-            fecj v4 = bhdy.a.v();
+            fgrc v4 = bjio.a.v();
             if (!v4.b.L()) {
                 v4.U();
             }
-            bhdy bhdyVar = (bhdy) v4.b;
-            bhdyVar.b |= 1;
-            bhdyVar.c = a3;
+            bjio bjioVar = (bjio) v4.b;
+            bjioVar.b |= 1;
+            bjioVar.c = a3;
             if (!v.b.L()) {
                 v.U();
             }
-            bhee bheeVar4 = (bhee) v.b;
-            bhdy bhdyVar2 = (bhdy) v4.Q();
-            bhdyVar2.getClass();
-            bheeVar4.f = bhdyVar2;
-            bheeVar4.b |= 8;
+            bjiu bjiuVar4 = (bjiu) v.b;
+            bjio bjioVar2 = (bjio) v4.Q();
+            bjioVar2.getClass();
+            bjiuVar4.f = bjioVar2;
+            bjiuVar4.b |= 8;
         }
-        return (bhee) v.Q();
+        return (bjiu) v.Q();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x00c7 A[RETURN] */
@@ -274,13 +262,13 @@ public abstract class AbstractGmsTracer {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final defpackage.egkp b(java.lang.String r11, defpackage.eijr r12, android.content.Intent r13, boolean r14, defpackage.aqyc r15) {
+    public final defpackage.eixs b(java.lang.String r11, defpackage.ekww r12, android.content.Intent r13, boolean r14, defpackage.atar r15) {
         /*
             r10 = this;
             java.lang.Class<byte[]> r0 = byte[].class
             java.lang.String r1 = "beginTraceInternalUsingReflection"
             java.lang.ClassLoader r2 = r10.b
-            bhee r4 = r10.a(r11, r12, r13, r2)
+            bjiu r4 = r10.a(r11, r12, r13, r2)
             java.lang.Class<com.google.android.gms.framework.tracing.AbstractGmsTracer> r12 = com.google.android.gms.framework.tracing.AbstractGmsTracer.class
             java.lang.ClassLoader r13 = r12.getClassLoader()
             if (r2 != r13) goto L20
@@ -290,7 +278,7 @@ public abstract class AbstractGmsTracer {
             r3 = r11
             r5 = r14
             r9 = r15
-            egkp r11 = h(r3, r4, r5, r6, r7, r8, r9)
+            eixs r11 = h(r3, r4, r5, r6, r7, r8, r9)
             return r11
         L20:
             r3 = r11
@@ -390,14 +378,14 @@ public abstract class AbstractGmsTracer {
             if (r11 != 0) goto Lc8
             return r12
         Lc8:
-            bhgm r12 = new bhgm
+            bjlc r12 = new bjlc
             r12.<init>()
             return r12
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.framework.tracing.AbstractGmsTracer.b(java.lang.String, eijr, android.content.Intent, boolean, aqyc):egkp");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.framework.tracing.AbstractGmsTracer.b(java.lang.String, ekww, android.content.Intent, boolean, atar):eixs");
     }
 
-    public final egkp c(String str, boolean z) {
+    public final eixs c(String str, boolean z) {
         return b(d(str), null, null, z, null);
     }
 
@@ -414,24 +402,24 @@ public abstract class AbstractGmsTracer {
         return sb;
     }
 
-    public final egkp g(String str, eijr eijrVar, Intent intent) {
-        return b(str, eijrVar, intent, false, null);
+    public final eixs g(String str, ekww ekwwVar, Intent intent) {
+        return b(str, ekwwVar, intent, false, null);
     }
 
     public static Closeable beginTraceInternalUsingReflection(String str, byte[] bArr, boolean z, Class cls) {
-        bhee bheeVar;
+        bjiu bjiuVar;
         if (bArr != null) {
             try {
-                fecp y = fecp.y(bhee.a, bArr, 0, bArr.length, febw.a());
-                fecp.M(y);
-                bheeVar = (bhee) y;
-            } catch (fedk e) {
-                ((ejhf) ((ejhf) ((ejhf) i.i()).s(e)).ah((char) 4982)).x("Invalid GCoreClientInfo bytes.");
+                fgri y = fgri.y(bjiu.a, bArr, 0, bArr.length, fgqp.a());
+                fgri.M(y);
+                bjiuVar = (bjiu) y;
+            } catch (fgsd e) {
+                ((eluo) ((eluo) ((eluo) i.i()).s(e)).ai((char) 4992)).x("Invalid GCoreClientInfo bytes.");
             }
-            return h(str, bheeVar, z, cls, "", 1, null);
+            return h(str, bjiuVar, z, cls, "", 1, null);
         }
-        bheeVar = null;
-        return h(str, bheeVar, z, cls, "", 1, null);
+        bjiuVar = null;
+        return h(str, bjiuVar, z, cls, "", 1, null);
     }
 
     public AbstractGmsTracer(ClassLoader classLoader, int i2, String str, String str2, Class cls) {

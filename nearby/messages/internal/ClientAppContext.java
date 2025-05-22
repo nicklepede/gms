@@ -6,16 +6,16 @@ import android.text.TextUtils;
 import android.util.Log;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.ckdu;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cmlz;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ClientAppContext extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new ckdu();
+    public static final Parcelable.Creator CREATOR = new cmlz();
     final int a;
     public final String b;
     public final String c;
@@ -27,7 +27,7 @@ public final class ClientAppContext extends AbstractSafeParcelable implements Re
 
     public ClientAppContext(int i, String str, String str2, boolean z, int i2, String str3) {
         this.a = i;
-        arwm.s(str);
+        atzb.s(str);
         this.b = str;
         if (str2 != null && !str2.isEmpty() && !str2.startsWith("0p:")) {
             Log.w("NearbyMessages", String.format(Locale.US, "ClientAppContext: 0P identifier(%s) without 0P prefix(%s)", str2, "0p:"));
@@ -81,14 +81,14 @@ public final class ClientAppContext extends AbstractSafeParcelable implements Re
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.e(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.e(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.c(parcel, a);
     }
 
     public ClientAppContext(String str) {

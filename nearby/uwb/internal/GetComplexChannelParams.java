@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.crpn;
-import defpackage.crqf;
-import defpackage.crqh;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ctys;
+import defpackage.ctzk;
+import defpackage.ctzm;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class GetComplexChannelParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new crpn();
-    public crqh a;
+    public static final Parcelable.Creator CREATOR = new ctys();
+    public ctzm a;
 
     public GetComplexChannelParams() {
     }
@@ -26,7 +26,7 @@ public final class GetComplexChannelParams extends AbstractSafeParcelable {
             return true;
         }
         if (obj instanceof GetComplexChannelParams) {
-            return arwb.b(this.a, ((GetComplexChannelParams) obj).a);
+            return atyq.b(this.a, ((GetComplexChannelParams) obj).a);
         }
         return false;
     }
@@ -37,19 +37,19 @@ public final class GetComplexChannelParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.c(parcel, a);
     }
 
     public GetComplexChannelParams(IBinder iBinder) {
-        crqh crqfVar;
+        ctzm ctzkVar;
         if (iBinder == null) {
-            crqfVar = null;
+            ctzkVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.uwb.internal.IUwbComplexChannelResultListener");
-            crqfVar = queryLocalInterface instanceof crqh ? (crqh) queryLocalInterface : new crqf(iBinder);
+            ctzkVar = queryLocalInterface instanceof ctzm ? (ctzm) queryLocalInterface : new ctzk(iBinder);
         }
-        this.a = crqfVar;
+        this.a = ctzkVar;
     }
 }

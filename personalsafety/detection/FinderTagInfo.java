@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cvip;
-import defpackage.eigd;
-import defpackage.eihn;
+import defpackage.atzr;
+import defpackage.cxsf;
+import defpackage.ekti;
+import defpackage.ekus;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class FinderTagInfo extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new cvip();
+    public static final Parcelable.Creator CREATOR = new cxsf();
     public final String a;
     public final String b;
     public final String c;
@@ -46,7 +46,7 @@ public class FinderTagInfo extends AbstractSafeParcelable implements ReflectedPa
     public final boolean equals(Object obj) {
         if (obj instanceof FinderTagInfo) {
             FinderTagInfo finderTagInfo = (FinderTagInfo) obj;
-            if (eigd.e(this.a, finderTagInfo.a) && eihn.a(this.b, finderTagInfo.b) && eihn.a(this.c, finderTagInfo.c) && eihn.a(this.d, finderTagInfo.d) && eihn.a(this.e, finderTagInfo.e) && eihn.a(this.f, finderTagInfo.f) && eihn.a(this.g, finderTagInfo.g) && eihn.a(this.h, finderTagInfo.h) && eihn.a(this.i, finderTagInfo.i) && eihn.a(this.j, finderTagInfo.j) && eihn.a(this.k, finderTagInfo.k)) {
+            if (ekti.e(this.a, finderTagInfo.a) && ekus.a(this.b, finderTagInfo.b) && ekus.a(this.c, finderTagInfo.c) && ekus.a(this.d, finderTagInfo.d) && ekus.a(this.e, finderTagInfo.e) && ekus.a(this.f, finderTagInfo.f) && ekus.a(this.g, finderTagInfo.g) && ekus.a(this.h, finderTagInfo.h) && ekus.a(this.i, finderTagInfo.i) && ekus.a(this.j, finderTagInfo.j) && ekus.a(this.k, finderTagInfo.k)) {
                 return true;
             }
         }
@@ -64,19 +64,19 @@ public class FinderTagInfo extends AbstractSafeParcelable implements ReflectedPa
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.z(parcel, 6, this.f);
-        arxc.x(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.v(parcel, 10, this.j, false);
-        arxc.x(parcel, 11, this.k, false);
-        arxc.z(parcel, 12, this.l);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.z(parcel, 6, this.f);
+        atzr.x(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.v(parcel, 10, this.j, false);
+        atzr.x(parcel, 11, this.k, false);
+        atzr.z(parcel, 12, this.l);
+        atzr.c(parcel, a);
     }
 }

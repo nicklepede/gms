@@ -5,36 +5,36 @@ import android.accounts.AccountAuthenticatorResponse;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.auth.firstparty.shared.AppDescription;
-import defpackage.abau;
-import defpackage.abqb;
-import defpackage.asej;
-import defpackage.asnd;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.qfn;
-import defpackage.uny;
-import defpackage.uon;
-import defpackage.uyv;
-import defpackage.zxe;
+import defpackage.abxe;
+import defpackage.adau;
+import defpackage.adqb;
+import defpackage.auid;
+import defpackage.auqx;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.ryr;
+import defpackage.wjx;
+import defpackage.wkm;
+import defpackage.wuv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
-public class TokenChimeraActivity extends qfn {
+public class TokenChimeraActivity extends ryr {
     private String i;
     private String j;
     private AppDescription l;
-    private zxe n;
+    private abxe n;
     private boolean h = false;
     private Bundle k = new Bundle();
     private String m = null;
 
     static {
-        asot.b("GLSActivity", asej.AUTH_ACCOUNT_DATA);
+        ausn.b("GLSActivity", auid.AUTH_ACCOUNT_DATA);
     }
 
     final void a(Intent intent, boolean z) {
-        abau a;
+        adau a;
         String stringExtra;
         Intent intent2 = new Intent();
         Intent intent3 = getIntent();
@@ -42,7 +42,7 @@ public class TokenChimeraActivity extends qfn {
         intent2.putExtra("service", this.j);
         intent2.putExtra("callerExtras", this.k);
         if (z) {
-            abqb.b.c(intent2);
+            adqb.b.c(intent2);
             setResult(0, intent2);
             AccountAuthenticatorResponse accountAuthenticatorResponse = (AccountAuthenticatorResponse) intent3.getParcelableExtra("response");
             if (accountAuthenticatorResponse != null) {
@@ -51,22 +51,22 @@ public class TokenChimeraActivity extends qfn {
             finish();
             return;
         }
-        asot asotVar = abqb.a;
+        ausn ausnVar = adqb.a;
         if (intent == null) {
-            a = abau.SUCCESS;
+            a = adau.SUCCESS;
         } else {
             String stringExtra2 = intent.getStringExtra("Error");
             if (stringExtra2 == null) {
-                a = abau.SUCCESS;
+                a = adau.SUCCESS;
             } else {
-                a = abau.a(stringExtra2);
+                a = adau.a(stringExtra2);
                 if (a == null) {
-                    a = abau.UNKNOWN;
+                    a = adau.UNKNOWN;
                 }
             }
         }
         if (a != null) {
-            abqb.b(a).c(intent2);
+            adqb.b(a).c(intent2);
         }
         if (intent != null && (stringExtra = intent.getStringExtra("authtoken")) != null && this.h) {
             intent2.putExtra("authtoken", stringExtra);
@@ -92,7 +92,7 @@ public class TokenChimeraActivity extends qfn {
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i2 == 0) {
@@ -102,11 +102,11 @@ public class TokenChimeraActivity extends qfn {
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         getWindow().clearFlags(2);
-        this.n = new zxe(this);
+        this.n = new abxe(this);
         if (bundle != null) {
             b(bundle);
             return;
@@ -118,10 +118,10 @@ public class TokenChimeraActivity extends qfn {
             return;
         }
         b(extras);
-        String string = this.k.getString(uny.b);
+        String string = this.k.getString(wjx.b);
         if (string != null) {
             int a = this.n.a(string);
-            String p = asng.p(this);
+            String p = aura.p(this);
             this.h = true;
             if (p == null) {
                 p = this.k.containsKey("clientPackageName") ? this.k.getString("clientPackageName") : this.n.e;
@@ -129,20 +129,20 @@ public class TokenChimeraActivity extends qfn {
             }
             this.k.putString("clientPackageName", p);
             int a2 = this.n.a(p);
-            this.l = uyv.a(getApplicationInfo().uid, a2, string, a, this.n);
+            this.l = wuv.a(getApplicationInfo().uid, a2, string, a, this.n);
         }
         String str = this.i;
         String str2 = this.j;
         AppDescription appDescription = this.l;
-        if (str != null && str2 != null && appDescription != null && appDescription.b != 0 && asnd.m(this, new Account(str, "com.google"))) {
-            new uon(this, this.m, this.i, this.j, this.k, this.l).execute(new Object[0]);
+        if (str != null && str2 != null && appDescription != null && appDescription.b != 0 && auqx.m(this, new Account(str, "com.google"))) {
+            new wkm(this, this.m, this.i, this.j, this.k, this.l).execute(new Object[0]);
         } else {
             setResult(0);
             finish();
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putString("authAccount", this.i);

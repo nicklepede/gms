@@ -2,7 +2,7 @@ package com.google.android.gms.org.conscrypt;
 
 import com.google.android.gms.org.conscrypt.SSLParametersImpl;
 import defpackage.a;
-import defpackage.bzju$$ExternalSyntheticApiModelOutline2;
+import defpackage.cbsl$$ExternalSyntheticApiModelOutline2;
 import j$.io.DesugarInputStream;
 import j$.io.InputStreamRetargetInterface;
 import java.io.EOFException;
@@ -25,7 +25,7 @@ import javax.net.ssl.X509KeyManager;
 import javax.net.ssl.X509TrustManager;
 import javax.security.auth.x500.X500Principal;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 class ConscryptEngineSocket extends OpenSSLSocketImpl implements SSLParametersImpl.AliasChooser {
     private static final ByteBuffer EMPTY_BUFFER = ByteBuffer.allocate(0);
@@ -38,7 +38,7 @@ class ConscryptEngineSocket extends OpenSSLSocketImpl implements SSLParametersIm
     private int state;
     private final Object stateLock;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     /* renamed from: com.google.android.gms.org.conscrypt.ConscryptEngineSocket$3, reason: invalid class name */
     /* synthetic */ class AnonymousClass3 {
         static final /* synthetic */ int[] $SwitchMap$javax$net$ssl$SSLEngineResult$HandshakeStatus;
@@ -166,24 +166,24 @@ class ConscryptEngineSocket extends OpenSSLSocketImpl implements SSLParametersIm
     }
 
     private static X509TrustManager getDelegatingTrustManager(X509TrustManager x509TrustManager, final ConscryptEngineSocket conscryptEngineSocket) {
-        if (!bzju$$ExternalSyntheticApiModelOutline2.m201m((Object) x509TrustManager)) {
+        if (!cbsl$$ExternalSyntheticApiModelOutline2.m197m((Object) x509TrustManager)) {
             return x509TrustManager;
         }
-        final X509ExtendedTrustManager m197m = bzju$$ExternalSyntheticApiModelOutline2.m197m((Object) x509TrustManager);
+        final X509ExtendedTrustManager m193m = cbsl$$ExternalSyntheticApiModelOutline2.m193m((Object) x509TrustManager);
         return new X509ExtendedTrustManager() { // from class: com.google.android.gms.org.conscrypt.ConscryptEngineSocket.2
             @Override // javax.net.ssl.X509TrustManager
             public void checkClientTrusted(X509Certificate[] x509CertificateArr, String str) {
-                m197m.checkClientTrusted(x509CertificateArr, str);
+                m193m.checkClientTrusted(x509CertificateArr, str);
             }
 
             @Override // javax.net.ssl.X509TrustManager
             public void checkServerTrusted(X509Certificate[] x509CertificateArr, String str) {
-                m197m.checkServerTrusted(x509CertificateArr, str);
+                m193m.checkServerTrusted(x509CertificateArr, str);
             }
 
             @Override // javax.net.ssl.X509TrustManager
             public X509Certificate[] getAcceptedIssuers() {
-                return m197m.getAcceptedIssuers();
+                return m193m.getAcceptedIssuers();
             }
 
             @Override // javax.net.ssl.X509ExtendedTrustManager
@@ -198,12 +198,12 @@ class ConscryptEngineSocket extends OpenSSLSocketImpl implements SSLParametersIm
 
             @Override // javax.net.ssl.X509ExtendedTrustManager
             public void checkClientTrusted(X509Certificate[] x509CertificateArr, String str, SSLEngine sSLEngine) {
-                m197m.checkClientTrusted(x509CertificateArr, str, conscryptEngineSocket);
+                m193m.checkClientTrusted(x509CertificateArr, str, conscryptEngineSocket);
             }
 
             @Override // javax.net.ssl.X509ExtendedTrustManager
             public void checkServerTrusted(X509Certificate[] x509CertificateArr, String str, SSLEngine sSLEngine) {
-                m197m.checkServerTrusted(x509CertificateArr, str, conscryptEngineSocket);
+                m193m.checkServerTrusted(x509CertificateArr, str, conscryptEngineSocket);
             }
         };
     }
@@ -544,7 +544,7 @@ class ConscryptEngineSocket extends OpenSSLSocketImpl implements SSLParametersIm
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class SSLOutputStream extends OutputStream {
         private OutputStream socketOutputStream;
         private final ByteBuffer target;
@@ -669,7 +669,7 @@ class ConscryptEngineSocket extends OpenSSLSocketImpl implements SSLParametersIm
         this.engine = newEngine(sSLParametersImpl, this);
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class SSLInputStream extends InputStream implements InputStreamRetargetInterface {
         private final AllocatedBuffer allocatedBuffer;
         private final ByteBuffer fromEngine;

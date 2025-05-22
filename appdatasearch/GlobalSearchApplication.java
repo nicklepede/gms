@@ -3,14 +3,14 @@ package com.google.android.gms.appdatasearch;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.trj;
+import defpackage.atyq;
+import defpackage.vnj;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GlobalSearchApplication extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new trj();
+    public static final Parcelable.Creator CREATOR = new vnj();
     public final GlobalSearchApplicationInfo a;
     public final GlobalSearchAppCorpusFeatures[] b;
     public final boolean c;
@@ -24,7 +24,7 @@ public class GlobalSearchApplication extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof GlobalSearchApplication) {
             GlobalSearchApplication globalSearchApplication = (GlobalSearchApplication) obj;
-            if (arwb.b(this.a, globalSearchApplication.a) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(globalSearchApplication.c)) && Arrays.equals(this.b, globalSearchApplication.b)) {
+            if (atyq.b(this.a, globalSearchApplication.a) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(globalSearchApplication.c)) && Arrays.equals(this.b, globalSearchApplication.b)) {
                 return true;
             }
         }
@@ -37,7 +37,7 @@ public class GlobalSearchApplication extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        trj.a(this, parcel, i);
+        vnj.a(this, parcel, i);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -65,10 +65,10 @@ public class GlobalSearchApplication extends AbstractSafeParcelable {
             com.google.android.gms.appdatasearch.GlobalSearchAppCorpusFeatures r3 = new com.google.android.gms.appdatasearch.GlobalSearchAppCorpusFeatures
             java.lang.Object r4 = r2.getKey()
             java.lang.String r4 = (java.lang.String) r4
-            defpackage.arwm.s(r4)
+            defpackage.atzb.s(r4)
             java.lang.Object r2 = r2.getValue()
             com.google.android.gms.appdatasearch.Feature[] r2 = (com.google.android.gms.appdatasearch.Feature[]) r2
-            defpackage.arwm.s(r2)
+            defpackage.atzb.s(r2)
             r3.<init>(r4, r2)
             r0[r1] = r3
             int r1 = r1 + 1

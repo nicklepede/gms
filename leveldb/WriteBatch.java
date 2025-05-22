@@ -1,17 +1,17 @@
 package com.google.android.gms.leveldb;
 
-import defpackage.bqmu;
-import defpackage.bqmy;
+import defpackage.bsuj;
+import defpackage.bsun;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
-public class WriteBatch extends bqmu {
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
+public class WriteBatch extends bsuj {
     private WriteBatch() {
         super(nativeCreate());
     }
 
     public static WriteBatch create() {
-        return LevelDb.a ? new bqmy() : new WriteBatch();
+        return LevelDb.a ? new bsun() : new WriteBatch();
     }
 
     private static native void nativeBufferedPut(long j, byte[] bArr, byte[] bArr2);
@@ -36,12 +36,12 @@ public class WriteBatch extends bqmu {
         nativeClear(this.c);
     }
 
-    @Override // defpackage.bqmu, java.io.Closeable, java.lang.AutoCloseable
+    @Override // defpackage.bsuj, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         super.close();
     }
 
-    @Override // defpackage.bqmu
+    @Override // defpackage.bsuj
     protected void closeNativeObject() {
         nativeDestroy(this.c);
     }

@@ -4,65 +4,65 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.chimera.modules.locationsharingreporter.AppContextProvider;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.asej;
-import defpackage.aslw;
-import defpackage.asot;
-import defpackage.cavm;
-import defpackage.cbbk;
-import defpackage.cbdu;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.fpws;
-import defpackage.fpxh;
+import defpackage.auid;
+import defpackage.aupq;
+import defpackage.ausn;
+import defpackage.cdec;
+import defpackage.cdkc;
+import defpackage.cdmm;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.fsqm;
+import defpackage.fsrb;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class DeviceSettingChangeManager extends TracingBroadcastReceiver {
-    public static final asot a = asot.b("LSR", asej.LOCATION_SHARING_REPORTER);
+    public static final ausn a = ausn.b("LSR", auid.LOCATION_SHARING_REPORTER);
     public final Context b;
     public final AtomicBoolean c;
-    public final aslw d;
-    private final cbbk e;
+    public final aupq d;
+    private final cdkc e;
 
     public DeviceSettingChangeManager() {
         super("lsrDeviceSettingChangeManager");
         this.b = AppContextProvider.a();
         this.c = new AtomicBoolean(false);
-        this.d = new aslw(10);
-        this.e = cavm.c();
+        this.d = new aupq(10);
+        this.e = cdec.c();
     }
 
     public final void b(boolean z) {
-        ((ejhf) ((ejhf) a.h()).ah((char) 5799)).B("Device battery saver mode change, isEnabled: %s", Boolean.valueOf(z));
+        ((eluo) ((eluo) a.h()).ai((char) 5813)).B("Device battery saver mode change, isEnabled: %s", Boolean.valueOf(z));
         try {
-            ((enpf) this.e.l(z)).v(fpws.i(), TimeUnit.MILLISECONDS);
+            ((eqcy) this.e.l(z)).v(fsqm.i(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 5800)).x("Failed store device battery saver state");
+            ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 5814)).x("Failed store device battery saver state");
         }
     }
 
     public final void c(boolean z) {
-        ((ejhf) ((ejhf) a.h()).ah((char) 5801)).B("Device location setting change, isEnabled: %s", Boolean.valueOf(z));
+        ((eluo) ((eluo) a.h()).ai((char) 5815)).B("Device location setting change, isEnabled: %s", Boolean.valueOf(z));
         try {
-            ((enpf) this.e.m(z)).v(fpws.i(), TimeUnit.MILLISECONDS);
+            ((eqcy) this.e.m(z)).v(fsqm.i(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 5802)).x("Failed store device location setting state");
+            ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 5816)).x("Failed store device location setting state");
         }
     }
 
     public final void d() {
-        asot asotVar = a;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 5805)).x("Attempting to stop listening to device setting changes");
+        ausn ausnVar = a;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 5819)).x("Attempting to stop listening to device setting changes");
         if (!this.c.get()) {
-            ((ejhf) ((ejhf) asotVar.j()).ah((char) 5806)).x("Can't stop listening to device setting changes, not started");
+            ((eluo) ((eluo) ausnVar.j()).ai((char) 5820)).x("Can't stop listening to device setting changes, not started");
             return;
         }
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 5807)).x("Stopping listening to device setting changes");
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 5821)).x("Stopping listening to device setting changes");
         try {
             this.b.unregisterReceiver(this);
         } catch (IllegalArgumentException unused) {
@@ -71,19 +71,19 @@ public class DeviceSettingChangeManager extends TracingBroadcastReceiver {
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         char c;
-        if (!fpxh.E()) {
+        if (!fsrb.D()) {
             d();
             return;
         }
-        if (!fpxh.a.a().ai()) {
+        if (!fsrb.a.lK().ai()) {
             d();
             return;
         }
         String action = intent.getAction();
         if (action == null) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 5798)).x("Received intent with null action");
+            ((eluo) ((eluo) a.j()).ai((char) 5812)).x("Received intent with null action");
             return;
         }
         int hashCode = action.hashCode();
@@ -104,11 +104,11 @@ public class DeviceSettingChangeManager extends TracingBroadcastReceiver {
             c = 65535;
         }
         if (c == 0) {
-            b(cbdu.a(context));
+            b(cdmm.a(context));
         } else if (c == 1 || c == 2) {
-            c(cbdu.b(context));
+            c(cdmm.b(context));
         } else {
-            ((ejhf) ((ejhf) a.j()).ah((char) 5797)).B("Unexpected action received: %s", action);
+            ((eluo) ((eluo) a.j()).ai((char) 5811)).B("Unexpected action received: %s", action);
         }
     }
 }

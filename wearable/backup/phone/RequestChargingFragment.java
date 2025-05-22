@@ -11,39 +11,39 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.wearable.AppTheme;
 import defpackage.dg;
-import defpackage.djll;
-import defpackage.djqh;
-import defpackage.dkbd;
-import defpackage.eiig;
-import defpackage.jrh;
+import defpackage.dlxe;
+import defpackage.dmca;
+import defpackage.dmmw;
+import defpackage.ekvl;
+import defpackage.jxw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class RequestChargingFragment extends dg {
-    private djqh a = null;
+    private dmca a = null;
 
     @Override // defpackage.dg
     public final void onAttach(Context context) {
         super.onAttach(context);
-        this.a = (djqh) new jrh((RestoreFlowChimeraActivity) context).a(djqh.class);
+        this.a = (dmca) new jxw((RestoreFlowChimeraActivity) context).a(dmca.class);
     }
 
     @Override // defpackage.dg
     public final View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        AppTheme e = dkbd.e(getArguments());
-        View inflate = dkbd.c(e, layoutInflater).inflate(true != dkbd.h(e) ? R.layout.companion_restore_request_charging_fragment : R.layout.companion_restore_expressive_request_charging_fragment, viewGroup, false);
+        AppTheme e = dmmw.e(getArguments());
+        View inflate = dmmw.c(e, layoutInflater).inflate(true != dmmw.h(e) ? R.layout.companion_restore_request_charging_fragment : R.layout.companion_restore_expressive_request_charging_fragment, viewGroup, false);
         LinearLayout linearLayout = (LinearLayout) inflate.findViewById(R.id.header);
-        dkbd.g(linearLayout, e, (TextView) linearLayout.findViewById(R.id.title), (TextView) linearLayout.findViewById(R.id.subtitle));
+        dmmw.g(linearLayout, e, (TextView) linearLayout.findViewById(R.id.title), (TextView) linearLayout.findViewById(R.id.subtitle));
         Button button = (Button) inflate.findViewById(R.id.cancel_action);
-        final djqh djqhVar = this.a;
-        eiig.x(djqhVar);
-        button.setOnClickListener(new View.OnClickListener() { // from class: djop
+        final dmca dmcaVar = this.a;
+        ekvl.y(dmcaVar);
+        button.setOnClickListener(new View.OnClickListener() { // from class: dmai
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                djqh.this.h(5);
+                dmca.this.h(5);
             }
         });
-        djll.a(inflate.findViewById(R.id.title));
+        dlxe.a(inflate.findViewById(R.id.title));
         return inflate;
     }
 }

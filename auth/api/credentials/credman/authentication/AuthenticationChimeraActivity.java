@@ -7,170 +7,170 @@ import androidx.activity.result.ActivityResult;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.api.credentials.credman.authentication.AuthenticationChimeraActivity;
 import com.google.android.gms.auth.api.identity.CallingAppInfoCompat;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acm;
-import defpackage.arxd;
-import defpackage.asot;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgx;
-import defpackage.eigb;
-import defpackage.eiic;
-import defpackage.eiid;
-import defpackage.elcx;
-import defpackage.eldc;
-import defpackage.elfd;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fvbo;
-import defpackage.jbe;
-import defpackage.jbf;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.wio;
-import defpackage.wkg;
-import defpackage.wps;
-import defpackage.wqm;
-import defpackage.wqn;
-import defpackage.wxz;
-import defpackage.xul;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acr;
+import defpackage.atzs;
+import defpackage.ausn;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonp;
+import defpackage.ektg;
+import defpackage.ekvh;
+import defpackage.ekvi;
+import defpackage.enqk;
+import defpackage.enqp;
+import defpackage.ensq;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fxxm;
+import defpackage.jcu;
+import defpackage.jcv;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.yeu;
+import defpackage.ygq;
+import defpackage.ymc;
+import defpackage.ymy;
+import defpackage.ymz;
+import defpackage.yut;
+import defpackage.zsi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AuthenticationChimeraActivity extends qet {
-    private static final asot l = xul.b("AuthenticationChimeraActivity");
-    public wqn j;
-    public abv k;
-    private bmgq m;
+public class AuthenticationChimeraActivity extends rxx {
+    private static final ausn l = zsi.b("AuthenticationChimeraActivity");
+    public ymz j;
+    public aca k;
+    private boni m;
     private String n;
     private CallingAppInfoCompat o;
-    private jbf p;
+    private jcv p;
 
     private final void k(String str) {
-        a((wps) new wio((eiid) eigb.a, (byte[]) null).c(28453, str));
+        a((ymc) new yeu((ekvi) ektg.a, (byte[]) null).c(28453, str));
     }
 
-    public final void a(wps wpsVar) {
-        wpsVar.f(l);
-        fecj v = eldc.a.v();
+    public final void a(ymc ymcVar) {
+        ymcVar.f(l);
+        fgrc v = enqp.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        eldc eldcVar = (eldc) v.b;
-        eldcVar.c = 1;
-        eldcVar.b |= 1;
-        wxz.a(v, this.o);
-        wxz.b(v, wpsVar.b);
-        fecj v2 = elcx.a.v();
-        wqn wqnVar = this.j;
-        if (wqnVar != null) {
-            boolean z = wqnVar.j;
+        enqp enqpVar = (enqp) v.b;
+        enqpVar.c = 1;
+        enqpVar.b |= 1;
+        yut.a(v, this.o);
+        yut.b(v, ymcVar.b);
+        fgrc v2 = enqk.a.v();
+        ymz ymzVar = this.j;
+        if (ymzVar != null) {
+            boolean z = ymzVar.j;
             if (!v2.b.L()) {
                 v2.U();
             }
-            elcx elcxVar = (elcx) v2.b;
-            elcxVar.b |= 1;
-            elcxVar.c = z;
+            enqk enqkVar = (enqk) v2.b;
+            enqkVar.b |= 1;
+            enqkVar.c = z;
         }
         if (!v.b.L()) {
             v.U();
         }
-        eldc eldcVar2 = (eldc) v.b;
-        elcx elcxVar2 = (elcx) v2.Q();
-        elcxVar2.getClass();
-        eldcVar2.m = elcxVar2;
-        eldcVar2.b |= 8192;
-        bmgq bmgqVar = this.m;
-        fecj v3 = elfd.a.v();
+        enqp enqpVar2 = (enqp) v.b;
+        enqk enqkVar2 = (enqk) v2.Q();
+        enqkVar2.getClass();
+        enqpVar2.m = enqkVar2;
+        enqpVar2.b |= 8192;
+        boni boniVar = this.m;
+        fgrc v3 = ensq.a.v();
         String str = this.n;
         if (!v3.b.L()) {
             v3.U();
         }
-        fecp fecpVar = v3.b;
-        elfd elfdVar = (elfd) fecpVar;
+        fgri fgriVar = v3.b;
+        ensq ensqVar = (ensq) fgriVar;
         str.getClass();
-        elfdVar.b |= 2;
-        elfdVar.e = str;
-        if (!fecpVar.L()) {
+        ensqVar.b |= 2;
+        ensqVar.e = str;
+        if (!fgriVar.L()) {
             v3.U();
         }
-        fecp fecpVar2 = v3.b;
-        elfd elfdVar2 = (elfd) fecpVar2;
-        elfdVar2.d = 26;
-        elfdVar2.b = 1 | elfdVar2.b;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v3.b;
+        ensq ensqVar2 = (ensq) fgriVar2;
+        ensqVar2.d = 26;
+        ensqVar2.b = 1 | ensqVar2.b;
+        if (!fgriVar2.L()) {
             v3.U();
         }
-        elfd elfdVar3 = (elfd) v3.b;
-        eldc eldcVar3 = (eldc) v.Q();
-        eldcVar3.getClass();
-        elfdVar3.A = eldcVar3;
-        elfdVar3.b |= 33554432;
-        bmgqVar.a((elfd) v3.Q());
-        setResult(wpsVar.a(), wpsVar.b());
+        ensq ensqVar3 = (ensq) v3.b;
+        enqp enqpVar3 = (enqp) v.Q();
+        enqpVar3.getClass();
+        ensqVar3.A = enqpVar3;
+        ensqVar3.b |= 33554432;
+        boniVar.a((ensq) v3.Q());
+        setResult(ymcVar.a(), ymcVar.b());
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setTheme(R.style.Theme_GisHidden);
-        this.m = bmgp.a(this, null);
-        this.n = (String) eiic.c(getIntent().getStringExtra("session_id"), bmgx.a());
-        CallingAppInfoCompat callingAppInfoCompat = (CallingAppInfoCompat) arxd.b(getIntent(), "calling_app_info_compat", CallingAppInfoCompat.CREATOR);
+        this.m = bonh.a(this, null);
+        this.n = (String) ekvh.c(getIntent().getStringExtra("session_id"), bonp.a());
+        CallingAppInfoCompat callingAppInfoCompat = (CallingAppInfoCompat) atzs.b(getIntent(), "calling_app_info_compat", CallingAppInfoCompat.CREATOR);
         if (callingAppInfoCompat == null) {
-            k(wkg.a("callingAppInfoCompat"));
+            k(ygq.a("callingAppInfoCompat"));
             return;
         }
         this.o = callingAppInfoCompat;
         String stringExtra = getIntent().getStringExtra("credential_provider_account_name");
         if (stringExtra == null) {
-            k(wkg.a("accountName"));
+            k(ygq.a("accountName"));
             return;
         }
         Intent intent = getIntent();
-        fvbo.f(intent, "intent");
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
+        fxxm.f(intent, "intent");
         Bundle bundleExtra = intent.getBundleExtra("android.service.credentials.extra.BEGIN_GET_CREDENTIAL_REQUEST");
-        jbf b = bundleExtra != null ? jbe.b(bundleExtra) : null;
+        jcv b = bundleExtra != null ? jcu.b(bundleExtra) : null;
         this.p = b;
         if (b == null) {
-            k(wkg.a("beginGetCredentialRequest"));
+            k(ygq.a("beginGetCredentialRequest"));
             return;
         }
-        wqn wqnVar = (wqn) new jrh(this, new wqm(this.n, this.o, b, stringExtra)).a(wqn.class);
-        this.j = wqnVar;
-        wqnVar.h.g(this, new jpd() { // from class: wqd
-            @Override // defpackage.jpd
+        ymz ymzVar = (ymz) new jxw(this, new ymy(this.n, this.o, b, stringExtra)).a(ymz.class);
+        this.j = ymzVar;
+        ymzVar.h.g(this, new jvs() { // from class: ymp
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                AuthenticationChimeraActivity.this.a((wps) obj);
+                AuthenticationChimeraActivity.this.a((ymc) obj);
             }
         });
-        this.j.g.g(this, new jpd() { // from class: wqe
-            @Override // defpackage.jpd
+        this.j.g.g(this, new jvs() { // from class: ymq
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                AuthenticationChimeraActivity.this.k.b(new ace((PendingIntent) obj).a());
+                AuthenticationChimeraActivity.this.k.b(new acj((PendingIntent) obj).a());
             }
         });
-        this.k = registerForActivityResult(new acm(), new abt() { // from class: wqf
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        this.k = registerForActivityResult(new acr(), new aby() { // from class: ymr
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 boolean z = ((ActivityResult) obj).a == -1;
-                wqn wqnVar2 = AuthenticationChimeraActivity.this.j;
-                wqnVar2.j = z;
-                wqnVar2.f.f(2);
+                ymz ymzVar2 = AuthenticationChimeraActivity.this.j;
+                ymzVar2.j = z;
+                ymzVar2.f.f(2);
             }
         });
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStart() {
         super.onStart();
-        wqn wqnVar = this.j;
-        if (wqnVar != null) {
-            wqnVar.f.i();
+        ymz ymzVar = this.j;
+        if (ymzVar != null) {
+            ymzVar.f.i();
         }
     }
 }

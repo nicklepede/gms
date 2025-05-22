@@ -2,17 +2,17 @@ package com.google.android.gms.car.senderprotocol;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.aldv;
-import defpackage.alfd;
-import defpackage.alga;
-import defpackage.eiig;
-import defpackage.ejhh;
+import defpackage.anfg;
+import defpackage.ango;
+import defpackage.anhl;
+import defpackage.ekvl;
+import defpackage.eluq;
 import java.nio.ByteBuffer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ChannelMessage implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new aldv();
+    public static final Parcelable.Creator CREATOR = new anfg();
     public final int a;
     public final int b;
     public final ByteBuffer c;
@@ -37,7 +37,7 @@ public class ChannelMessage implements Parcelable {
     }
 
     public final void a(long j) {
-        eiig.p(j > 0);
+        ekvl.q(j > 0);
         this.j = j;
     }
 
@@ -53,8 +53,8 @@ public class ChannelMessage implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         parcel.writeInt(this.b);
-        ejhh ejhhVar = alga.a;
-        parcel.writeStrongBinder(new alfd(this.c));
+        eluq eluqVar = anhl.a;
+        parcel.writeStrongBinder(new ango(this.c));
         parcel.writeInt(this.d);
         parcel.writeByte(this.e ? (byte) 1 : (byte) 0);
         parcel.writeByte(this.f ? (byte) 1 : (byte) 0);

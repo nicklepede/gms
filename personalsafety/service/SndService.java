@@ -9,33 +9,33 @@ import com.google.android.chimera.Service;
 import com.google.android.gms.chimera.modules.personalsafety.AppContextProvider;
 import com.google.android.gms.location.ActivityRecognitionResult;
 import com.google.android.gms.location.DetectedActivity;
-import defpackage.aseu;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.aspo;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.cvfw;
-import defpackage.cvgb;
-import defpackage.cvgn;
-import defpackage.cvgy;
-import defpackage.cvha;
-import defpackage.cvhl;
-import defpackage.cvhv;
-import defpackage.cvhz;
-import defpackage.cvpo;
-import defpackage.cvpp;
-import defpackage.cvtz;
-import defpackage.cvuh;
-import defpackage.eckb;
-import defpackage.eiie;
-import defpackage.eijr;
-import defpackage.ejhf;
-import defpackage.ensj;
-import defpackage.evxk;
-import defpackage.evxp;
-import defpackage.evxu;
-import defpackage.evxw;
+import defpackage.auio;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.auti;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.cxpf;
+import defpackage.cxpk;
+import defpackage.cxpw;
+import defpackage.cxqh;
+import defpackage.cxqj;
+import defpackage.cxqw;
+import defpackage.cxrh;
+import defpackage.cxrl;
+import defpackage.cxze;
+import defpackage.cxzf;
+import defpackage.cydw;
+import defpackage.cyee;
+import defpackage.eewt;
+import defpackage.ekvj;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.eqgc;
+import defpackage.eyng;
+import defpackage.eynl;
+import defpackage.eynq;
+import defpackage.eyns;
 import j$.time.Duration;
 import j$.util.Optional;
 import java.io.FileDescriptor;
@@ -45,14 +45,14 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SndService extends Service {
     public long d;
     private long f;
     public final Object a = new Object();
-    private final Executor e = new asmf(2, 9);
-    public final cvfw b = new cvfw(AppContextProvider.a());
+    private final Executor e = new aupz(2, 9);
+    public final cxpf b = new cxpf(AppContextProvider.a());
     public boolean c = false;
     private boolean g = false;
 
@@ -69,40 +69,40 @@ public class SndService extends Service {
                 this.f = System.currentTimeMillis();
             }
         }
-        ensj.t(eckb.b().c(), new cvuh(this), this.e);
+        eqgc.t(eewt.b().c(), new cyee(this), this.e);
     }
 
     @Override // com.google.android.chimera.Service
     public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         printWriter.append("==== START SND Dump ====\n");
-        aspo aspoVar = new aspo(printWriter, "  ");
+        auti autiVar = new auti(printWriter, "  ");
         synchronized (this.a) {
             printWriter.append((CharSequence) ("\nInitialized: " + this.g + "\n"));
-            printWriter.append((CharSequence) ("Initialized at: " + cvpp.b(this.f) + "\n"));
+            printWriter.append((CharSequence) ("Initialized at: " + cxzf.b(this.f) + "\n"));
             printWriter.append((CharSequence) ("Snd active: " + this.c + "\n"));
             if (this.c) {
-                printWriter.append((CharSequence) ("Snd started at: " + cvpp.b(this.d) + "\n"));
+                printWriter.append((CharSequence) ("Snd started at: " + cxzf.b(this.d) + "\n"));
             }
-            cvfw cvfwVar = this.b;
-            printWriter.append((CharSequence) ("\nSensor Streaming: " + cvfwVar.g + "\n\n"));
-            cvgb cvgbVar = cvfwVar.d;
-            cvhz cvhzVar = cvgbVar.d;
-            cvhzVar.h(cvhzVar.o);
-            evxw evxwVar = cvhzVar.m;
+            cxpf cxpfVar = this.b;
+            printWriter.append((CharSequence) ("\nSensor Streaming: " + cxpfVar.g + "\n\n"));
+            cxpk cxpkVar = cxpfVar.d;
+            cxrl cxrlVar = cxpkVar.d;
+            cxrlVar.h(cxrlVar.o);
+            eyns eynsVar = cxrlVar.m;
             printWriter.append("\nMost recent screen session:\n");
-            if ((evxwVar.b & 1) != 0) {
-                printWriter.format("Start time: %s\n", cvpp.b(Duration.ofSeconds(evxwVar.c).toMillis()));
+            if ((eynsVar.b & 1) != 0) {
+                printWriter.format("Start time: %s\n", cxzf.b(Duration.ofSeconds(eynsVar.c).toMillis()));
             }
-            if ((evxwVar.b & 2) != 0) {
-                printWriter.format("Duration (sec): %d\n", Integer.valueOf(evxwVar.d));
+            if ((eynsVar.b & 2) != 0) {
+                printWriter.format("Duration (sec): %d\n", Integer.valueOf(eynsVar.d));
             }
-            if ((evxwVar.b & 4) != 0) {
-                printWriter.format("Largest peak: %f\n", Double.valueOf(evxwVar.e));
+            if ((eynsVar.b & 4) != 0) {
+                printWriter.format("Largest peak: %f\n", Double.valueOf(eynsVar.e));
             }
-            if ((evxwVar.b & 16) != 0) {
-                printWriter.format("Count peaks: %d\n", Integer.valueOf(evxwVar.h));
+            if ((eynsVar.b & 16) != 0) {
+                printWriter.format("Count peaks: %d\n", Integer.valueOf(eynsVar.h));
             }
-            ArrayDeque arrayDeque = cvhzVar.a;
+            ArrayDeque arrayDeque = cxrlVar.a;
             printWriter.format("\nAccel sample buffer size: %d\n", Integer.valueOf(arrayDeque.size()));
             printWriter.append("\nAccel samples:\n");
             Iterator descendingIterator = arrayDeque.descendingIterator();
@@ -110,38 +110,38 @@ public class SndService extends Service {
                 printWriter.format("%s\n", descendingIterator.next());
             }
             printWriter.append("\nDebug events:\n");
-            Iterator it = cvhzVar.c.iterator();
+            Iterator it = cxrlVar.c.iterator();
             while (it.hasNext()) {
-                evxp evxpVar = ((evxu) it.next()).e;
-                if (evxpVar == null) {
-                    evxpVar = evxp.a;
+                eynl eynlVar = ((eynq) it.next()).e;
+                if (eynlVar == null) {
+                    eynlVar = eynl.a;
                 }
-                printWriter.append((CharSequence) (cvpp.b(evxpVar.c) + "; Spike:" + evxpVar.g + "; BatchSize:" + evxpVar.f + "\n"));
+                printWriter.append((CharSequence) (cxzf.b(eynlVar.c) + "; Spike:" + eynlVar.g + "; BatchSize:" + eynlVar.f + "\n"));
             }
             printWriter.append("\n");
             printWriter.append("\nPeaks:\n");
-            Iterator it2 = cvgbVar.e.iterator();
+            Iterator it2 = cxpkVar.e.iterator();
             while (it2.hasNext()) {
-                eiie eiieVar = (eiie) it2.next();
-                String valueOf = String.valueOf(eiieVar.b);
-                Object obj = eiieVar.a;
-                printWriter.append((CharSequence) (valueOf + " at " + String.valueOf(obj) + " " + cvpp.b(cvgbVar.l + ((Long) obj).longValue()) + " - " + ((String) cvgbVar.f.get(obj)) + "\n"));
+                ekvj ekvjVar = (ekvj) it2.next();
+                String valueOf = String.valueOf(ekvjVar.b);
+                Object obj = ekvjVar.a;
+                printWriter.append((CharSequence) (valueOf + " at " + String.valueOf(obj) + " " + cxzf.b(cxpkVar.l + ((Long) obj).longValue()) + " - " + ((String) cxpkVar.f.get(obj)) + "\n"));
             }
             printWriter.append("\n== Snd status ==\n");
-            Iterator it3 = cvgbVar.p.iterator();
+            Iterator it3 = cxpkVar.p.iterator();
             while (it3.hasNext()) {
-                cvhv cvhvVar = (cvhv) it3.next();
-                cvha cvhaVar = cvhvVar.a;
+                cxrh cxrhVar = (cxrh) it3.next();
+                cxqj cxqjVar = cxrhVar.a;
                 long currentTimeMillis = System.currentTimeMillis() - SystemClock.elapsedRealtime();
-                cvhl cvhlVar = cvhaVar.g;
-                float f = cvhlVar.a;
-                cvhl cvhlVar2 = cvhaVar.f;
-                float f2 = f - cvhlVar2.a;
-                String str = cvhlVar2.toString() + cvhlVar.toString() + f2;
-                printWriter.append((CharSequence) ("status=" + cvhvVar.b.ordinal() + "; time=" + cvpp.b(currentTimeMillis + cvhaVar.a) + "; model=" + cvhaVar.b + "; conf=" + cvhaVar.c + "; peak=" + cvhaVar.d + "; disconnecting=" + ((evxk) cvhvVar.c.b).g + "; connected=" + String.valueOf(cvhvVar.c()) + "; network=" + (cvhvVar.d() - 1) + "; info=" + str + "\n"));
+                cxqw cxqwVar = cxqjVar.g;
+                float f = cxqwVar.a;
+                cxqw cxqwVar2 = cxqjVar.f;
+                float f2 = f - cxqwVar2.a;
+                String str = cxqwVar2.toString() + cxqwVar.toString() + f2;
+                printWriter.append((CharSequence) ("status=" + cxrhVar.b.ordinal() + "; time=" + cxzf.b(currentTimeMillis + cxqjVar.a) + "; model=" + cxqjVar.b + "; conf=" + cxqjVar.c + "; peak=" + cxqjVar.d + "; disconnecting=" + ((eyng) cxrhVar.c.b).g + "; connected=" + String.valueOf(cxrhVar.c()) + "; network=" + (cxrhVar.d() - 1) + "; info=" + str + "\n"));
             }
             printWriter.append("== End Snd status ==\n");
-            ArrayDeque arrayDeque2 = cvgbVar.v;
+            ArrayDeque arrayDeque2 = cxpkVar.v;
             if (!arrayDeque2.isEmpty()) {
                 printWriter.append("\n== Begin stl ==\n");
                 Iterator it4 = arrayDeque2.iterator();
@@ -150,7 +150,7 @@ public class SndService extends Service {
                 }
                 printWriter.append("== End stl ==\n");
             }
-            ArrayDeque arrayDeque3 = cvgbVar.w;
+            ArrayDeque arrayDeque3 = cxpkVar.w;
             if (!arrayDeque3.isEmpty()) {
                 printWriter.append("\n== Begin esc ==\n");
                 Iterator it5 = arrayDeque3.iterator();
@@ -159,27 +159,27 @@ public class SndService extends Service {
                 }
                 printWriter.append("== End esc ==\n");
             }
-            if (cvgbVar.q != null) {
+            if (cxpkVar.q != null) {
                 printWriter.append("\nLast config:\n");
-                printWriter.append((CharSequence) ("batchDuration=" + String.valueOf(cvgbVar.q.a) + "\n"));
-                printWriter.append((CharSequence) ("numBatches=" + cvgbVar.q.b + "\n"));
-                printWriter.append((CharSequence) ("pt=" + cvgbVar.q.c + "\n"));
+                printWriter.append((CharSequence) ("batchDuration=" + String.valueOf(cxpkVar.q.a) + "\n"));
+                printWriter.append((CharSequence) ("numBatches=" + cxpkVar.q.b + "\n"));
+                printWriter.append((CharSequence) ("pt=" + cxpkVar.q.c + "\n"));
             }
             printWriter.append("\n== Activity Logs ==\n");
-            for (Map.Entry entry : cvgbVar.k.entrySet()) {
+            for (Map.Entry entry : cxpkVar.k.entrySet()) {
                 DetectedActivity d = ((ActivityRecognitionResult) entry.getValue()).d();
-                printWriter.append((CharSequence) ("At " + cvpp.b(((Long) entry.getKey()).longValue()) + " " + String.valueOf(d) + "\n"));
+                printWriter.append((CharSequence) ("At " + cxzf.b(((Long) entry.getKey()).longValue()) + " " + String.valueOf(d) + "\n"));
             }
             printWriter.append("==End Activity Logs ==\n");
         }
         printWriter.append("\n== Flags ==\n");
-        aspoVar.b();
-        cvtz.b(aspoVar);
-        aspoVar.a();
+        autiVar.b();
+        cydw.b(autiVar);
+        autiVar.a();
         printWriter.append("\n== Backup dump of PSA flags ==\n");
-        aspoVar.b();
-        cvtz.a(aspoVar);
-        aspoVar.a();
+        autiVar.b();
+        cydw.a(autiVar);
+        autiVar.a();
     }
 
     @Override // com.google.android.chimera.Service
@@ -192,12 +192,12 @@ public class SndService extends Service {
     public final int onStartCommand(Intent intent, int i, int i2) {
         char c;
         if (intent == null) {
-            asot asotVar = cvpo.a;
+            ausn ausnVar = cxze.a;
             b();
         } else {
             String action = intent.getAction();
             if (action == null) {
-                ((ejhf) ((ejhf) cvpo.a.j()).ah((char) 8709)).x("Unexpected null action");
+                ((eluo) ((eluo) cxze.a.j()).ai((char) 8707)).x("Unexpected null action");
             } else {
                 switch (action.hashCode()) {
                     case -2046552780:
@@ -234,17 +234,17 @@ public class SndService extends Service {
                 }
                 if (c == 0 || c == 1) {
                     AppContextProvider.a();
-                    eijr eijrVar = bqqe.a;
-                    bqqa.a(aseu.PERSONALSAFETY_THEFT_SND_TOGGLE);
+                    ekww ekwwVar = bsxv.a;
+                    bsxr.a(auio.PERSONALSAFETY_THEFT_SND_TOGGLE);
                 } else if (c != 2) {
                     if (c != 3) {
-                        ((ejhf) ((ejhf) cvpo.a.j()).ah((char) 8708)).B("Unexpected action %s", action);
+                        ((eluo) ((eluo) cxze.a.j()).ai((char) 8706)).B("Unexpected action %s", action);
                     } else {
                         synchronized (this.a) {
-                            cvgn cvgnVar = this.b.d.y;
-                            cvgy a = cvha.a();
+                            cxpw cxpwVar = this.b.d.y;
+                            cxqh a = cxqj.a();
                             a.c(SystemClock.elapsedRealtime());
-                            cvgnVar.a(new cvhv(a.a(), false, Optional.empty()));
+                            cxpwVar.a(new cxrh(a.a(), false, Optional.empty()));
                         }
                     }
                 }

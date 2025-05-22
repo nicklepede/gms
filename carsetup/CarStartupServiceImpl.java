@@ -16,54 +16,54 @@ import android.os.SystemClock;
 import com.google.android.chimera.Service;
 import com.google.android.gms.R;
 import com.google.android.gms.car.compat.TracingBroadcastReceiver;
-import defpackage.akye;
-import defpackage.akyg;
-import defpackage.albn;
-import defpackage.albz;
-import defpackage.alce;
-import defpackage.alcf;
-import defpackage.alcg;
-import defpackage.alcj;
-import defpackage.alcl;
-import defpackage.alkr;
-import defpackage.alqd;
-import defpackage.alqg;
-import defpackage.alqh;
-import defpackage.alqi;
-import defpackage.alqj;
-import defpackage.alxn;
-import defpackage.asqh;
-import defpackage.byhr;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.ejhh;
-import defpackage.flsr;
-import defpackage.flwn;
-import defpackage.flwu;
-import defpackage.ijy;
-import defpackage.ikb;
-import defpackage.ikd;
-import defpackage.iln;
-import defpackage.juc;
+import defpackage.amzp;
+import defpackage.amzr;
+import defpackage.ancy;
+import defpackage.andk;
+import defpackage.andp;
+import defpackage.andq;
+import defpackage.andr;
+import defpackage.andu;
+import defpackage.andw;
+import defpackage.anmc;
+import defpackage.anro;
+import defpackage.anrr;
+import defpackage.anrs;
+import defpackage.anrt;
+import defpackage.anru;
+import defpackage.anyy;
+import defpackage.auub;
+import defpackage.caqj;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.eluq;
+import defpackage.fokd;
+import defpackage.fonw;
+import defpackage.food;
+import defpackage.ilo;
+import defpackage.ilr;
+import defpackage.ilt;
+import defpackage.ind;
+import defpackage.kar;
 import j$.time.Duration;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CarStartupServiceImpl extends Service {
-    private static final ejhh e;
+    private static final eluq e;
     private static final int f;
-    protected alqj a;
-    public alkr b;
+    protected anru a;
+    public anmc b;
     private boolean j;
     private final BroadcastReceiver g = new CarStartupBroadcastReceiver();
-    private final Handler h = new byhr(Looper.getMainLooper());
+    private final Handler h = new caqj(Looper.getMainLooper());
     private boolean i = false;
     private long k = 60000;
     private boolean l = false;
-    protected final alxn c = new alxn();
-    final Runnable d = new alqd(this);
+    protected final anyy c = new anyy();
+    final Runnable d = new anro(this);
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class CarStartupBroadcastReceiver extends TracingBroadcastReceiver {
         public CarStartupBroadcastReceiver() {
             super("car");
@@ -71,8 +71,8 @@ public class CarStartupServiceImpl extends Service {
 
         /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
-            eiid eiidVar;
+        public final void jP(Context context, Intent intent) {
+            ekvi ekviVar;
             char c;
             if ("com.google.android.gms.car_setup.CAR_STARTUP_STOP_FOREGROUND".equals(intent.getAction())) {
                 CarStartupServiceImpl.this.b();
@@ -83,12 +83,12 @@ public class CarStartupServiceImpl extends Service {
                 return;
             }
             CarStartupServiceImpl carStartupServiceImpl = CarStartupServiceImpl.this;
-            alqj alqjVar = carStartupServiceImpl.a;
-            if (alqjVar != null) {
+            anru anruVar = carStartupServiceImpl.a;
+            if (anruVar != null) {
                 String action = intent.getAction();
                 if (action == null) {
-                    alqj.a.j().ah(2696).x("null action type");
-                    eiidVar = eigb.a;
+                    anru.a.j().ai(2700).x("null action type");
+                    ekviVar = ektg.a;
                 } else {
                     try {
                         switch (action.hashCode()) {
@@ -138,144 +138,144 @@ public class CarStartupServiceImpl extends Service {
                                 c = 65535;
                                 break;
                         }
-                    } catch (alcg e) {
+                    } catch (andr e) {
                         intent.getAction();
                         e.getMessage();
                     }
                     if (c == 0) {
-                        boolean e2 = alqj.e(intent);
-                        if (alqjVar.f != e2) {
-                            alqjVar.f = e2;
-                            alqjVar.e = false;
-                            eiidVar = alqjVar.c();
+                        boolean e2 = anru.e(intent);
+                        if (anruVar.f != e2) {
+                            anruVar.f = e2;
+                            anruVar.e = false;
+                            ekviVar = anruVar.c();
                         } else {
-                            eiidVar = eigb.a;
+                            ekviVar = ektg.a;
                         }
                     } else if (c == 1) {
-                        alcj alcjVar = (alcj) alcl.d(intent, alcj.values());
-                        if (alcjVar == alcj.CHARGE_ONLY_DETECTED) {
-                            alqjVar.e = true;
-                            eiidVar = alqjVar.c();
+                        andu anduVar = (andu) andw.d(intent, andu.values());
+                        if (anduVar == andu.CHARGE_ONLY_DETECTED) {
+                            anruVar.e = true;
+                            ekviVar = anruVar.c();
                         } else {
-                            if (alcjVar == alcj.CHARGE_ONLY_OVER) {
-                                alqjVar.e = false;
-                                eiidVar = alqjVar.c();
+                            if (anduVar == andu.CHARGE_ONLY_OVER) {
+                                anruVar.e = false;
+                                ekviVar = anruVar.c();
                             }
-                            eiidVar = eigb.a;
+                            ekviVar = ektg.a;
                         }
                     } else if (c == 2) {
-                        alcf alcfVar = (alcf) alcl.d(intent, alcf.values());
-                        if (alcfVar == alcf.ACCESSORY_ATTACHED || alcfVar == alcf.FORCE_STARTED) {
-                            alqjVar.e = false;
-                            alqjVar.g = true;
-                            eiidVar = alqjVar.c();
+                        andq andqVar = (andq) andw.d(intent, andq.values());
+                        if (andqVar == andq.ACCESSORY_ATTACHED || andqVar == andq.FORCE_STARTED) {
+                            anruVar.e = false;
+                            anruVar.g = true;
+                            ekviVar = anruVar.c();
                         }
-                        eiidVar = eigb.a;
+                        ekviVar = ektg.a;
                     } else if (c == 3) {
-                        alqjVar.g = false;
-                        eiidVar = alqjVar.c();
+                        anruVar.g = false;
+                        ekviVar = anruVar.c();
                     } else if (c != 4) {
                         if (c != 5) {
-                            alqj.a.j().ah(2690).B("Unknown action type %s", action);
+                            anru.a.j().ai(2694).B("Unknown action type %s", action);
                         } else {
                             int intExtra = intent.getIntExtra("NOTIFICATION_TYPE_EXTRA", -1);
                             BinderParcel binderParcel = (BinderParcel) intent.getParcelableExtra("PARCEL_EXTRA");
-                            if (binderParcel != null && binderParcel.a == alqjVar.b) {
+                            if (binderParcel != null && binderParcel.a == anruVar.b) {
                                 if (intExtra >= 0) {
-                                    alqi.a();
+                                    anrt.a();
                                     if (intExtra <= 0) {
-                                        int i = alqi.a()[0];
+                                        int i = anrt.a()[0];
                                         int i2 = i - 1;
                                         if (i == 0) {
                                             throw null;
                                         }
                                         if (i2 == 0) {
-                                            alqjVar.d(alce.CHARGE_ONLY_MORE_INFO_SELECTED);
+                                            anruVar.d(andp.CHARGE_ONLY_MORE_INFO_SELECTED);
                                             Intent intent2 = new Intent("android.intent.action.VIEW");
                                             intent2.setFlags(268566528);
-                                            intent2.setData(Uri.parse(flwn.a.a().u()));
-                                            Context context2 = alqjVar.c;
+                                            intent2.setData(Uri.parse(fonw.a.lK().u()));
+                                            Context context2 = anruVar.c;
                                             context2.startActivity(intent2);
                                             try {
                                                 context2.sendBroadcast(new Intent("android.intent.action.CLOSE_SYSTEM_DIALOGS"));
                                             } catch (SecurityException e3) {
-                                                alqj.a.j().s(e3).ah(2695).x("SecurityException while trying to close system dialogs.");
+                                                anru.a.j().s(e3).ai(2699).x("SecurityException while trying to close system dialogs.");
                                             }
                                         }
                                     }
                                 }
-                                alqj.a.j().ah(2694).z("Invalid notificationType: %d", intExtra);
-                                eiidVar = eigb.a;
+                                anru.a.j().ai(2698).z("Invalid notificationType: %d", intExtra);
+                                ekviVar = ektg.a;
                             }
-                            alqj.a.j().ah(2693).x("Notification action from unknown source");
-                            eiidVar = eigb.a;
+                            anru.a.j().ai(2697).x("Notification action from unknown source");
+                            ekviVar = ektg.a;
                         }
-                        eiidVar = eigb.a;
+                        ekviVar = ektg.a;
                     } else {
                         if (intent.getIntExtra("android.bluetooth.adapter.extra.STATE", -1) == 10) {
-                            eiidVar = alqjVar.b();
+                            ekviVar = anruVar.b();
                         }
-                        eiidVar = eigb.a;
+                        ekviVar = ektg.a;
                     }
                 }
-                carStartupServiceImpl.c(eiidVar);
+                carStartupServiceImpl.c(ekviVar);
             }
         }
     }
 
     static {
         Duration.ofSeconds(1L);
-        e = albn.a("CAR.WIFI.INFO");
+        e = ancy.a("CAR.WIFI.INFO");
         f = R.id.car_startup_service_notification_id;
     }
 
-    public final void a(alqg alqgVar) {
+    public final void a(anrr anrrVar) {
         if (Build.VERSION.SDK_INT >= 30 || this.i || this.c.a.get() + 5000000000L > SystemClock.elapsedRealtimeNanos()) {
             if (this.i) {
                 this.b.c(this, 100);
             }
-            int a = akye.a(this);
-            ikd ikdVar = new ikd(this);
-            ikdVar.m(getString(R.string.car_app_name));
-            ikb ikbVar = new ikb();
-            eiid eiidVar = alqgVar.d;
-            ikbVar.d((CharSequence) eiidVar.f());
-            ikdVar.v(ikbVar);
-            ikdVar.m((CharSequence) alqgVar.c.f());
-            ikdVar.l((CharSequence) eiidVar.f());
-            ikdVar.A = getResources().getColor(R.color.car_light_blue_500);
-            ikdVar.g(a);
-            ikdVar.l = -1;
-            albz.a(ikdVar, getString(R.string.car_app_name));
-            eiid eiidVar2 = alqgVar.f;
-            if (eiidVar2.h()) {
-                ikdVar.i((ijy) eiidVar2.c());
+            int a = amzp.a(this);
+            ilt iltVar = new ilt(this);
+            iltVar.r(getString(R.string.car_app_name));
+            ilr ilrVar = new ilr();
+            ekvi ekviVar = anrrVar.d;
+            ilrVar.d((CharSequence) ekviVar.f());
+            iltVar.o(ilrVar);
+            iltVar.r((CharSequence) anrrVar.c.f());
+            iltVar.j((CharSequence) ekviVar.f());
+            iltVar.A = getResources().getColor(R.color.car_light_blue_500);
+            iltVar.n(a);
+            iltVar.l = -1;
+            andk.a(iltVar, getString(R.string.car_app_name));
+            ekvi ekviVar2 = anrrVar.f;
+            if (ekviVar2.h()) {
+                iltVar.f((ilo) ekviVar2.c());
             }
-            eiid eiidVar3 = alqgVar.g;
-            if (eiidVar3.h()) {
-                ikdVar.g = (PendingIntent) eiidVar3.c();
+            ekvi ekviVar3 = anrrVar.g;
+            if (ekviVar3.h()) {
+                iltVar.g = (PendingIntent) ekviVar3.c();
             }
-            ikdVar.i(new ijy(0, getString(R.string.common_dismiss), PendingIntent.getBroadcast(this, 0, new Intent("com.google.android.gms.car_setup.CAR_STARTUP_STOP_FOREGROUND").setPackage(getPackageName()), 0)));
-            if (flwn.e()) {
-                ikdVar.i(new ijy(0, getString(R.string.common_retry), PendingIntent.getBroadcast(this, 0, new Intent("com.google.android.gms.car_setup.RESET_CONNECTION").setPackage(getPackageName()), 0)));
+            iltVar.f(new ilo(0, getString(R.string.common_dismiss), PendingIntent.getBroadcast(this, 0, new Intent("com.google.android.gms.car_setup.CAR_STARTUP_STOP_FOREGROUND").setPackage(getPackageName()), 0)));
+            if (fonw.e()) {
+                iltVar.f(new ilo(0, getString(R.string.common_retry), PendingIntent.getBroadcast(this, 0, new Intent("com.google.android.gms.car_setup.RESET_CONNECTION").setPackage(getPackageName()), 0)));
             }
-            if (asqh.c()) {
-                akyg b = akyg.b(this);
+            if (auub.c()) {
+                amzr b = amzr.b(this);
                 if (b.a("car.default_notification_channel") == null) {
                     b.c(new NotificationChannel("car.default_notification_channel", getString(R.string.car_app_name), 3));
                 }
                 if (b.a("car.low_priority_notification_channel") == null && this.l) {
                     b.c(new NotificationChannel("car.low_priority_notification_channel", getString(R.string.car_status_notification_channel_name), 2));
                 }
-                eiid eiidVar4 = alqgVar.e;
-                if (eiidVar4.h() && eiidVar4.c() == alqh.STATUS && this.l) {
-                    ikdVar.G = "car.low_priority_notification_channel";
+                ekvi ekviVar4 = anrrVar.e;
+                if (ekviVar4.h() && ekviVar4.c() == anrs.STATUS && this.l) {
+                    iltVar.G = "car.low_priority_notification_channel";
                 } else {
-                    ikdVar.G = "car.default_notification_channel";
+                    iltVar.G = "car.default_notification_channel";
                 }
             }
-            startForeground(f, ikdVar.b());
-            e.h().ah(2681).x("started foreground service");
+            startForeground(f, iltVar.b());
+            e.h().ai(2685).x("started foreground service");
             Handler handler = this.h;
             Runnable runnable = this.d;
             handler.removeCallbacks(runnable);
@@ -288,31 +288,31 @@ public class CarStartupServiceImpl extends Service {
             this.h.removeCallbacks(this.d);
             this.b.d(this);
             stopForeground(true);
-            e.h().ah(2683).x("stopped foreground service");
+            e.h().ai(2687).x("stopped foreground service");
         }
     }
 
-    protected final boolean c(eiid eiidVar) {
-        if (!eiidVar.h()) {
-            e.j().ah(2674).x("Notification option is not present. Not starting foreground service.");
+    protected final boolean c(ekvi ekviVar) {
+        if (!ekviVar.h()) {
+            e.j().ai(2678).x("Notification option is not present. Not starting foreground service.");
             return false;
         }
-        alqg alqgVar = (alqg) eiidVar.c();
+        anrr anrrVar = (anrr) ekviVar.c();
         if (Build.VERSION.SDK_INT >= 30) {
-            a(alqgVar);
-            if (alqgVar.b) {
+            a(anrrVar);
+            if (anrrVar.b) {
                 b();
             }
             return true;
         }
-        if (alqgVar.b) {
+        if (anrrVar.b) {
             b();
             return false;
         }
-        if (!alqgVar.a) {
+        if (!anrrVar.a) {
             return false;
         }
-        a(alqgVar);
+        a(anrrVar);
         return true;
     }
 
@@ -325,17 +325,17 @@ public class CarStartupServiceImpl extends Service {
     public final void onCreate() {
         super.onCreate();
         boolean z = false;
-        if (flwu.d() && flsr.d()) {
+        if (food.d() && fokd.d()) {
             z = true;
         }
         this.i = z;
-        e.h().ah(2675).B("onCreate usbMonitoringEnabled %b", Boolean.valueOf(this.i));
-        flwn flwnVar = flwn.a;
-        this.k = flwnVar.a().c();
-        this.l = flwn.a.a().K();
+        e.h().ai(2679).B("onCreate usbMonitoringEnabled %b", Boolean.valueOf(this.i));
+        fonw fonwVar = fonw.a;
+        this.k = fonwVar.lK().c();
+        this.l = fonwVar.lK().K();
         if (this.i) {
-            this.b = alkr.a(this);
-            this.a = new alqj(this, (UsbManager) getSystemService("usb"));
+            this.b = anmc.a(this);
+            this.a = new anru(this, (UsbManager) getSystemService("usb"));
             IntentFilter intentFilter = new IntentFilter();
             intentFilter.addAction("android.intent.action.BATTERY_CHANGED");
             intentFilter.addAction("com.google.android.gms.car.FIRST_ACTIVITY");
@@ -344,12 +344,12 @@ public class CarStartupServiceImpl extends Service {
             intentFilter.addAction("com.google.android.gms.car_setup.CAR_STARTUP_NOTIFICATION");
             intentFilter.addAction("com.google.android.gms.car_setup.CAR_STARTUP_STOP_FOREGROUND");
             intentFilter.addAction("com.google.android.gms.car_setup.RESET_CONNECTION");
-            if (flwnVar.a().w()) {
+            if (fonwVar.lK().w()) {
                 intentFilter.addAction("com.google.android.gms.car.USB_ISSUE_FOUND");
             }
             BroadcastReceiver broadcastReceiver = this.g;
-            iln.b(this, broadcastReceiver, intentFilter, 2);
-            juc.a(this).c(broadcastReceiver, intentFilter);
+            ind.b(this, broadcastReceiver, intentFilter, 2);
+            kar.a(this).c(broadcastReceiver, intentFilter);
             this.j = true;
         }
     }
@@ -361,7 +361,7 @@ public class CarStartupServiceImpl extends Service {
             this.j = false;
             BroadcastReceiver broadcastReceiver = this.g;
             unregisterReceiver(broadcastReceiver);
-            juc.a(this).d(broadcastReceiver);
+            kar.a(this).d(broadcastReceiver);
         }
         this.h.removeCallbacks(this.d);
     }

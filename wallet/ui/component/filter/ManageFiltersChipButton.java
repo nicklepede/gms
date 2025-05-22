@@ -6,9 +6,9 @@ import android.graphics.drawable.GradientDrawable;
 import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
 import com.google.android.gms.R;
-import defpackage.efwo;
+import defpackage.eijr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ManageFiltersChipButton extends AppCompatButton {
     public ManageFiltersChipButton(Context context) {
@@ -18,7 +18,7 @@ public class ManageFiltersChipButton extends AppCompatButton {
     @Override // android.view.View
     protected final void onFinishInflate() {
         super.onFinishInflate();
-        ColorStateList i = efwo.i(getContext(), R.attr.uicColorMaterialAccent);
+        ColorStateList i = eijr.i(getContext(), R.attr.uicColorMaterialAccent);
         setTextColor(i);
         GradientDrawable gradientDrawable = (GradientDrawable) getBackground();
         gradientDrawable.setStroke(getResources().getDimensionPixelSize(R.dimen.wallet_manage_filters_chip_button_stroke_width), i);

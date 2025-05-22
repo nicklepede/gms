@@ -1,35 +1,35 @@
 package com.google.android.gms.googleone.service;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.dvms;
-import defpackage.fouo;
-import defpackage.fouv;
-import defpackage.fvbo;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.dxxt;
+import defpackage.frni;
+import defpackage.frnw;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class GoogleoneModuleInitIntentOperation extends anya {
-    @Override // defpackage.anya
+public final class GoogleoneModuleInitIntentOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        fvbo.f(intent, "intent");
-        fouv.c();
+        fxxm.f(intent, "intent");
+        frnw.c();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        asng.K("com.google.android.gms.googleone.smui.SmuiActivity", !fouo.a.a().b());
+        aura.K("com.google.android.gms.googleone.smui.SmuiActivity", !frni.a.lK().b());
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
-        fvbo.f(intent, "intent");
-        fouv.c();
+        fxxm.f(intent, "intent");
+        frnw.c();
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        dvms.e(getApplicationContext());
+        dxxt.e(getApplicationContext());
     }
 }

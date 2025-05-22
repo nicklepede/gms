@@ -3,19 +3,19 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bbrv;
-import defpackage.bbsl;
-import defpackage.bbuf;
-import defpackage.bbup;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bdvm;
+import defpackage.bdwc;
+import defpackage.bdxw;
+import defpackage.bdyg;
 import java.util.Arrays;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class AuthenticatorSelectionCriteria extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bbsl();
+    public static final Parcelable.Creator CREATOR = new bdwc();
     public final Attachment a;
     public final Boolean b;
     public final UserVerificationRequirement c;
@@ -29,7 +29,7 @@ public class AuthenticatorSelectionCriteria extends AbstractSafeParcelable {
         } else {
             try {
                 a = Attachment.a(str);
-            } catch (bbrv | bbuf | bbup e) {
+            } catch (bdvm | bdxw | bdyg e) {
                 throw new IllegalArgumentException(e);
             }
         }
@@ -84,7 +84,7 @@ public class AuthenticatorSelectionCriteria extends AbstractSafeParcelable {
             return false;
         }
         AuthenticatorSelectionCriteria authenticatorSelectionCriteria = (AuthenticatorSelectionCriteria) obj;
-        return arwb.b(this.a, authenticatorSelectionCriteria.a) && arwb.b(this.b, authenticatorSelectionCriteria.b) && arwb.b(this.c, authenticatorSelectionCriteria.c) && arwb.b(b(), authenticatorSelectionCriteria.b());
+        return atyq.b(this.a, authenticatorSelectionCriteria.a) && atyq.b(this.b, authenticatorSelectionCriteria.b) && atyq.b(this.c, authenticatorSelectionCriteria.c) && atyq.b(b(), authenticatorSelectionCriteria.b());
     }
 
     public final int hashCode() {
@@ -99,11 +99,11 @@ public class AuthenticatorSelectionCriteria extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, c(), false);
-        arxc.z(parcel, 3, this.b);
-        arxc.v(parcel, 4, d(), false);
-        arxc.v(parcel, 5, e(), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, c(), false);
+        atzr.z(parcel, 3, this.b);
+        atzr.v(parcel, 4, d(), false);
+        atzr.v(parcel, 5, e(), false);
+        atzr.c(parcel, a);
     }
 }

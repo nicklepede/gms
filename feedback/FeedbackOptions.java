@@ -7,15 +7,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.data.BitmapTeleporter;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.bafq;
-import defpackage.baji;
+import defpackage.bcjm;
+import defpackage.bcne;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class FeedbackOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new baji();
+    public static final Parcelable.Creator CREATOR = new bcne();
     public String a;
     public Bundle b;
     public String c;
@@ -35,7 +35,7 @@ public class FeedbackOptions extends AbstractSafeParcelable {
     public boolean q;
     public String r;
     public AdditionalConsentConfig s;
-    public bafq t;
+    public bcjm t;
 
     public FeedbackOptions(ApplicationErrorReport applicationErrorReport) {
         this(null, null, null, applicationErrorReport, null, null, null, null, true, null, null, false, null, null, false, 0L, false, null, null);
@@ -51,7 +51,7 @@ public class FeedbackOptions extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        baji.a(this, parcel, i);
+        bcne.a(this, parcel, i);
     }
 
     public FeedbackOptions(String str, Bundle bundle, String str2, ApplicationErrorReport applicationErrorReport, String str3, BitmapTeleporter bitmapTeleporter, String str4, List list, boolean z, ThemeSettings themeSettings, LogOptions logOptions, boolean z2, Bitmap bitmap, String str5, boolean z3, long j, boolean z4, String str6, AdditionalConsentConfig additionalConsentConfig) {

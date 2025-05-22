@@ -2,36 +2,36 @@ package com.google.android.gms.nearby.sharing;
 
 import android.content.Intent;
 import android.os.IBinder;
-import defpackage.clwz;
-import defpackage.clxj;
-import defpackage.cmaz;
-import defpackage.dxkm;
-import defpackage.fqmk;
-import defpackage.fvbo;
+import defpackage.cofh;
+import defpackage.cofr;
+import defpackage.cojh;
+import defpackage.dzwm;
+import defpackage.ftgf;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class NearbySharingModuleBackupAgentService extends clxj {
-    public cmaz a;
-    public dxkm b;
+public final class NearbySharingModuleBackupAgentService extends cofr {
+    public cojh a;
+    public dzwm b;
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final IBinder onBind(Intent intent) {
-        dxkm dxkmVar = null;
-        if (!fqmk.x()) {
+        dzwm dzwmVar = null;
+        if (!ftgf.x()) {
             return null;
         }
-        cmaz cmazVar = this.a;
-        if (cmazVar == null) {
-            fvbo.j("sharingClient");
-            cmazVar = null;
+        cojh cojhVar = this.a;
+        if (cojhVar == null) {
+            fxxm.j("sharingClient");
+            cojhVar = null;
         }
-        dxkm dxkmVar2 = this.b;
-        if (dxkmVar2 == null) {
-            fvbo.j("deviceConfig");
+        dzwm dzwmVar2 = this.b;
+        if (dzwmVar2 == null) {
+            fxxm.j("deviceConfig");
         } else {
-            dxkmVar = dxkmVar2;
+            dzwmVar = dzwmVar2;
         }
-        return new clwz(cmazVar, dxkmVar);
+        return new cofh(cojhVar, dzwmVar);
     }
 }

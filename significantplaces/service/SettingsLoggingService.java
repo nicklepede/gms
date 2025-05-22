@@ -1,35 +1,30 @@
 package com.google.android.gms.significantplaces.service;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.bqpn;
-import defpackage.byln;
-import defpackage.dcip;
-import defpackage.dciq;
-import defpackage.ejhf;
-import defpackage.enss;
-import defpackage.fuyx;
-import defpackage.fuyy;
-import defpackage.fvid;
-import defpackage.fvie;
-import defpackage.fvug;
+import defpackage.bsxe;
+import defpackage.cauf;
+import defpackage.desv;
+import defpackage.desw;
+import defpackage.eluo;
+import defpackage.fxuv;
+import defpackage.fyeb;
+import defpackage.fyqe;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class SettingsLoggingService extends GmsTaskBoundService {
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        enss b;
+    public final int a(cauf caufVar) {
         try {
-            fuyx fuyxVar = bqpn.a;
-            b = fvug.b(fvid.b(bqpn.b), fuyy.a, fvie.a, new dcip(this, null));
-            b.get();
+            fxuv fxuvVar = bsxe.a;
+            fyqe.d(fyeb.b(bsxe.b), new desv(this, null)).get();
             return 0;
         } catch (InterruptedException e) {
-            ((ejhf) ((ejhf) dciq.a.j()).s(e)).x("Failed to log significant places settings");
+            ((eluo) ((eluo) desw.a.j()).s(e)).x("Failed to log significant places settings");
             return 2;
         } catch (ExecutionException e2) {
-            ((ejhf) ((ejhf) dciq.a.j()).s(e2)).x("Failed to log significant places settings");
+            ((eluo) ((eluo) desw.a.j()).s(e2)).x("Failed to log significant places settings");
             return 2;
         }
     }
@@ -67,11 +62,11 @@ public final class SettingsLoggingService extends GmsTaskBoundService {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final java.lang.Object d(defpackage.fuyp r15) {
+    public final java.lang.Object d(defpackage.fxun r15) {
         /*
             Method dump skipped, instructions count: 683
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.significantplaces.service.SettingsLoggingService.d(fuyp):java.lang.Object");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.significantplaces.service.SettingsLoggingService.d(fxun):java.lang.Object");
     }
 }

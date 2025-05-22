@@ -1,65 +1,65 @@
 package com.google.android.gms.ads.internal.client;
 
-import defpackage.tbw;
-import defpackage.tdh;
+import defpackage.uxw;
+import defpackage.uzh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class v extends tbw {
+public class v extends uxw {
     public final Object a = new Object();
-    public tbw b;
+    public uxw b;
 
-    @Override // defpackage.tbw, com.google.android.gms.ads.internal.client.a
+    @Override // defpackage.uxw, com.google.android.gms.ads.internal.client.a
     public final void a() {
         synchronized (this.a) {
-            tbw tbwVar = this.b;
-            if (tbwVar != null) {
-                tbwVar.a();
+            uxw uxwVar = this.b;
+            if (uxwVar != null) {
+                uxwVar.a();
             }
         }
     }
 
-    @Override // defpackage.tbw
+    @Override // defpackage.uxw
     public final void b() {
         synchronized (this.a) {
-            tbw tbwVar = this.b;
-            if (tbwVar != null) {
-                tbwVar.b();
+            uxw uxwVar = this.b;
+            if (uxwVar != null) {
+                uxwVar.b();
             }
         }
     }
 
-    @Override // defpackage.tbw
-    public void c(tdh tdhVar) {
+    @Override // defpackage.uxw
+    public void c(uzh uzhVar) {
         synchronized (this.a) {
-            tbw tbwVar = this.b;
-            if (tbwVar != null) {
-                tbwVar.c(tdhVar);
+            uxw uxwVar = this.b;
+            if (uxwVar != null) {
+                uxwVar.c(uzhVar);
             }
         }
     }
 
-    @Override // defpackage.tbw
+    @Override // defpackage.uxw
     public void d() {
         synchronized (this.a) {
-            tbw tbwVar = this.b;
-            if (tbwVar != null) {
-                tbwVar.d();
+            uxw uxwVar = this.b;
+            if (uxwVar != null) {
+                uxwVar.d();
             }
         }
     }
 
-    @Override // defpackage.tbw
+    @Override // defpackage.uxw
     public final void e() {
         synchronized (this.a) {
-            tbw tbwVar = this.b;
-            if (tbwVar != null) {
-                tbwVar.e();
+            uxw uxwVar = this.b;
+            if (uxwVar != null) {
+                uxwVar.e();
             }
         }
     }
 
-    @Override // defpackage.tbw
+    @Override // defpackage.uxw
     public final void f() {
         synchronized (this.a) {
         }

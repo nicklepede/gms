@@ -3,19 +3,19 @@ package com.google.android.gms.appsearch;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bsa;
-import defpackage.udl;
+import defpackage.atzr;
+import defpackage.bsl;
+import defpackage.vzk;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class GetSchemaResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new udl();
+    public static final Parcelable.Creator CREATOR = new vzk();
     public final int a;
     final List b;
     final List c;
@@ -42,7 +42,7 @@ public final class GetSchemaResponse extends AbstractSafeParcelable {
 
     public final Set b() {
         if (this.i == null) {
-            this.i = DesugarCollections.unmodifiableSet(new bsa(this.b));
+            this.i = DesugarCollections.unmodifiableSet(new bsl(this.b));
         }
         return this.i;
     }
@@ -50,10 +50,10 @@ public final class GetSchemaResponse extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.y(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.y(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 }

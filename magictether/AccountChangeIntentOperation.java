@@ -3,9 +3,9 @@ package com.google.android.gms.magictether;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.cbla;
+import defpackage.cdts;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class AccountChangeIntentOperation extends IntentOperation {
     public AccountChangeIntentOperation() {
@@ -16,7 +16,7 @@ public class AccountChangeIntentOperation extends IntentOperation {
         if (intent == null || !intent.hasCategory("com.google.android.gms.auth.category.ACCOUNT_ADDED")) {
             return;
         }
-        cbla.a(this, true);
+        cdts.a(this, true);
     }
 
     AccountChangeIntentOperation(Context context) {

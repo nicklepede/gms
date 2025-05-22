@@ -1,6 +1,6 @@
 package com.google.android.gms.car.audio.resampling;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class NativeResampler {
     public static native void native16000MonoTo48000StereoFirst(byte[] bArr, int i, byte[] bArr2, int i2, byte[] bArr3, int i3);

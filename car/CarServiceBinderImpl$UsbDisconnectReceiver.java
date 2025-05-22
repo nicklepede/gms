@@ -8,40 +8,40 @@ import android.os.Looper;
 import com.google.android.gms.car.CarServiceBinderImpl$UsbDisconnectReceiver;
 import com.google.android.gms.car.compat.TracingBroadcastReceiver;
 import com.google.android.gms.car.diagnostics.CriticalError;
-import defpackage.akre;
-import defpackage.akud;
+import defpackage.amsp;
+import defpackage.amvo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CarServiceBinderImpl$UsbDisconnectReceiver extends TracingBroadcastReceiver {
-    public final /* synthetic */ akre a;
+    public final /* synthetic */ amsp a;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public CarServiceBinderImpl$UsbDisconnectReceiver(akre akreVar) {
+    public CarServiceBinderImpl$UsbDisconnectReceiver(amsp amspVar) {
         super("car");
-        this.a = akreVar;
+        this.a = amspVar;
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         String action = intent.getAction();
         if (((UsbAccessory) intent.getParcelableExtra("accessory")) == null || !action.equals("android.hardware.usb.action.USB_ACCESSORY_DETACHED")) {
             return;
         }
-        akre akreVar = this.a;
-        Runnable runnable = new Runnable() { // from class: akrd
+        amsp amspVar = this.a;
+        Runnable runnable = new Runnable() { // from class: amso
             @Override // java.lang.Runnable
             public final void run() {
-                CarServiceBinderImpl$UsbDisconnectReceiver.this.a.r(CriticalError.a(elxk.PROTOCOL_BYEBYE_REQUESTED_BY_USER, elxl.BYEBYE_BY_USER));
+                CarServiceBinderImpl$UsbDisconnectReceiver.this.a.r(CriticalError.a(eoky.PROTOCOL_BYEBYE_REQUESTED_BY_USER, eokz.BYEBYE_BY_USER));
             }
         };
-        Handler handler = akreVar.f;
+        Handler handler = amspVar.f;
         if (handler.getLooper() == Looper.myLooper()) {
             runnable.run();
             return;
         }
-        akud akudVar = new akud(runnable);
-        handler.post(akudVar);
-        akudVar.a();
+        amvo amvoVar = new amvo(runnable);
+        handler.post(amvoVar);
+        amvoVar.a();
     }
 }

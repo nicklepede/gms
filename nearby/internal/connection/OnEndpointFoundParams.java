@@ -6,15 +6,15 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.ConnectionsDevice;
 import com.google.android.gms.nearby.connection.v3.dct.DctDevice;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cjci;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.clkn;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class OnEndpointFoundParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjci();
+    public static final Parcelable.Creator CREATOR = new clkn();
     public String a;
     public String b;
     public String c;
@@ -34,7 +34,7 @@ public final class OnEndpointFoundParams extends AbstractSafeParcelable {
         }
         if (obj instanceof OnEndpointFoundParams) {
             OnEndpointFoundParams onEndpointFoundParams = (OnEndpointFoundParams) obj;
-            if (arwb.b(this.a, onEndpointFoundParams.a) && arwb.b(this.b, onEndpointFoundParams.b) && arwb.b(this.c, onEndpointFoundParams.c) && arwb.b(this.d, onEndpointFoundParams.d) && Arrays.equals(this.e, onEndpointFoundParams.e) && arwb.b(Integer.valueOf(this.f), Integer.valueOf(onEndpointFoundParams.f)) && arwb.b(this.g, onEndpointFoundParams.g) && arwb.b(this.h, onEndpointFoundParams.h)) {
+            if (atyq.b(this.a, onEndpointFoundParams.a) && atyq.b(this.b, onEndpointFoundParams.b) && atyq.b(this.c, onEndpointFoundParams.c) && atyq.b(this.d, onEndpointFoundParams.d) && Arrays.equals(this.e, onEndpointFoundParams.e) && atyq.b(Integer.valueOf(this.f), Integer.valueOf(onEndpointFoundParams.f)) && atyq.b(this.g, onEndpointFoundParams.g) && atyq.b(this.h, onEndpointFoundParams.h)) {
                 return true;
             }
         }
@@ -47,16 +47,16 @@ public final class OnEndpointFoundParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.i(parcel, 5, this.e, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.t(parcel, 8, this.h, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.i(parcel, 5, this.e, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.t(parcel, 8, this.h, i, false);
+        atzr.c(parcel, a);
     }
 
     public OnEndpointFoundParams(String str, String str2, String str3, BluetoothDevice bluetoothDevice, byte[] bArr, int i, ConnectionsDevice connectionsDevice, DctDevice dctDevice) {

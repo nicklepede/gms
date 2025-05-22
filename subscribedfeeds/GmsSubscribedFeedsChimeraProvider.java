@@ -10,33 +10,33 @@ import android.net.Uri;
 import android.os.Binder;
 import android.os.Process;
 import com.google.android.chimera.ContentProvider;
-import defpackage.aqup;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byhj;
-import defpackage.byhp;
-import defpackage.deuf;
-import defpackage.devk;
-import defpackage.dxnw;
-import defpackage.dxob;
-import defpackage.eiuu;
-import defpackage.ejhf;
-import defpackage.erdc;
-import defpackage.erdd;
-import defpackage.fskq;
+import defpackage.asxe;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.caqb;
+import defpackage.caqh;
+import defpackage.dhfi;
+import defpackage.dhgn;
+import defpackage.dzzw;
+import defpackage.eaab;
+import defpackage.elhz;
+import defpackage.eluo;
+import defpackage.etry;
+import defpackage.etrz;
+import defpackage.fvfp;
 import j$.util.Objects;
 import java.util.Arrays;
 import java.util.concurrent.ScheduledExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class GmsSubscribedFeedsChimeraProvider extends ContentProvider {
-    private static final asot a = asot.b("GmsSubscribedFeeds", asej.SUBSCRIBED_FEEDS);
-    private static final eiuu b = eiuu.K("com.google.android.gms", "com.google.android.gsf");
+    private static final ausn a = ausn.b("GmsSubscribedFeeds", auid.SUBSCRIBED_FEEDS);
+    private static final elhz b = elhz.K("com.google.android.gms", "com.google.android.gsf");
     private UriMatcher c;
     private ContentResolver d;
-    private final ScheduledExecutorService e = byhj.b.h(1, byhp.LOW_POWER);
-    private deuf f;
+    private final ScheduledExecutorService e = caqb.b.h(1, caqh.LOW_POWER);
+    private dhfi f;
 
     private static Uri a(Uri uri) {
         return uri.buildUpon().authority("subscribedfeeds").build();
@@ -53,25 +53,25 @@ public class GmsSubscribedFeedsChimeraProvider extends ContentProvider {
         String callingPackage = getCallingPackage();
         if (!b(callingPackage)) {
             try {
-                aqup.d(getContext()).e(callingPackage);
+                asxe.d(getContext()).e(callingPackage);
             } catch (SecurityException e) {
-                ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 11039)).x("Signature check failed. The calling package is not google signed.");
+                ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 11042)).x("Signature check failed. The calling package is not google signed.");
                 return false;
             }
         }
         boolean b2 = b(callingPackage);
         String str = i != 1 ? i != 2 ? i != 3 ? "QUERY" : "DELETE" : "UPDATE" : "INSERT";
-        deuf deufVar = this.f;
-        if (deufVar != null) {
-            ((dxob) deufVar.b.a()).b(str, true != b2 ? "OPERATION_BLOCKED" : "OPERATION_ALLOWED");
+        dhfi dhfiVar = this.f;
+        if (dhfiVar != null) {
+            ((eaab) dhfiVar.b.lK()).b(str, true != b2 ? "OPERATION_BLOCKED" : "OPERATION_ALLOWED");
         }
         if (b2 && !Objects.equals(callingPackage, "com.google.android.gms")) {
-            ejhf ejhfVar = (ejhf) ((ejhf) a.j()).ah(11041);
-            erdc erdcVar = erdc.NO_USER_DATA;
-            ejhfVar.P("Unsupported API %s called by package %s", new erdd(erdcVar, str), new erdd(erdcVar, callingPackage));
-            deuf deufVar2 = this.f;
-            if (deufVar2 != null) {
-                ((dxob) deufVar2.c.a()).b(str, callingPackage);
+            eluo eluoVar = (eluo) ((eluo) a.j()).ai(11044);
+            etry etryVar = etry.NO_USER_DATA;
+            eluoVar.P("Unsupported API %s called by package %s", new etrz(etryVar, str), new etrz(etryVar, callingPackage));
+            dhfi dhfiVar2 = this.f;
+            if (dhfiVar2 != null) {
+                ((eaab) dhfiVar2.c.lK()).b(str, callingPackage);
                 return true;
             }
         }
@@ -87,15 +87,15 @@ public class GmsSubscribedFeedsChimeraProvider extends ContentProvider {
             }
             return 0;
         } catch (SQLiteException | UnsupportedOperationException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 11033)).x("Could not perform the delete operation.");
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 11036)).x("Could not perform the delete operation.");
             return 0;
         }
     }
 
     @Override // com.google.android.chimera.ContentProvider
     public final String getType(Uri uri) {
-        asot asotVar = a;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 11034)).B("GetType: Uri: %s", uri);
+        ausn ausnVar = a;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 11037)).B("GetType: Uri: %s", uri);
         if (this.c == null) {
             UriMatcher uriMatcher = new UriMatcher(-1);
             this.c = uriMatcher;
@@ -111,7 +111,7 @@ public class GmsSubscribedFeedsChimeraProvider extends ContentProvider {
         if (match == 2) {
             return "vnd.android.cursor.item/com.google.android.gms.subscribedfeeds.feeds";
         }
-        ((ejhf) ((ejhf) asotVar.i()).ah((char) 11035)).x("Unknown URL.");
+        ((eluo) ((eluo) ausnVar.i()).ai((char) 11038)).x("Unknown URL.");
         return "";
     }
 
@@ -123,7 +123,7 @@ public class GmsSubscribedFeedsChimeraProvider extends ContentProvider {
             }
             return null;
         } catch (SQLiteException | UnsupportedOperationException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 11037)).x("Could not perform the insert operation.");
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 11040)).x("Could not perform the insert operation.");
             return null;
         }
     }
@@ -134,13 +134,13 @@ public class GmsSubscribedFeedsChimeraProvider extends ContentProvider {
         try {
             Context createPackageContext = getContext().createPackageContext("com.google.android.gsf", 0);
             createPackageContext.getDatabasePath("subscribedfeeds.db");
-            new devk(createPackageContext);
+            new dhgn(createPackageContext);
         } catch (Exception e) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 11044)).B("Can't find package: %s", "com.google.android.gsf");
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 11047)).B("Can't find package: %s", "com.google.android.gsf");
         }
-        deuf deufVar = new deuf(this.e, new dxnw(getContext(), "STREAMZ_SUBSCRIBEDFEEDS"));
-        this.f = deufVar;
-        deufVar.a(fskq.b());
+        dhfi dhfiVar = new dhfi(this.e, new dzzw(getContext(), "STREAMZ_SUBSCRIBEDFEEDS"));
+        this.f = dhfiVar;
+        dhfiVar.a(fvfp.b());
         return true;
     }
 
@@ -154,7 +154,7 @@ public class GmsSubscribedFeedsChimeraProvider extends ContentProvider {
             }
             return null;
         } catch (SQLiteException | UnsupportedOperationException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 11046)).x("Could not process the query.");
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 11049)).x("Could not process the query.");
             return null;
         }
     }
@@ -167,7 +167,7 @@ public class GmsSubscribedFeedsChimeraProvider extends ContentProvider {
             }
             return 0;
         } catch (SQLiteException | UnsupportedOperationException e) {
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 11048)).x("Could not perform the update operation.");
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 11051)).x("Could not perform the update operation.");
             return 0;
         }
     }

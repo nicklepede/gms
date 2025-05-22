@@ -3,17 +3,17 @@ package com.google.android.gms.mobiledataplan;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ceas;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgjz;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class QoeMetrics extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ceas();
+    public static final Parcelable.Creator CREATOR = new cgjz();
     public final Long a;
     public final Float b;
     public final Float c;
@@ -32,7 +32,7 @@ public class QoeMetrics extends AbstractSafeParcelable {
             return false;
         }
         QoeMetrics qoeMetrics = (QoeMetrics) obj;
-        return arwb.b(this.a, qoeMetrics.a) && arwb.b(this.b, qoeMetrics.b) && arwb.b(this.c, qoeMetrics.c);
+        return atyq.b(this.a, qoeMetrics.a) && atyq.b(this.b, qoeMetrics.b) && atyq.b(this.c, qoeMetrics.c);
     }
 
     public final int hashCode() {
@@ -41,19 +41,19 @@ public class QoeMetrics extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("uptime", this.a, arrayList);
-        arwa.b("networkScore", this.b, arrayList);
-        arwa.b("timeConnectedPercent", this.c, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("uptime", this.a, arrayList);
+        atyp.b("networkScore", this.b, arrayList);
+        atyp.b("timeConnectedPercent", this.c, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Long l = this.a;
-        int a = arxc.a(parcel);
-        arxc.I(parcel, 1, l);
-        arxc.C(parcel, 2, this.b);
-        arxc.C(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.I(parcel, 1, l);
+        atzr.C(parcel, 2, this.b);
+        atzr.C(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 }

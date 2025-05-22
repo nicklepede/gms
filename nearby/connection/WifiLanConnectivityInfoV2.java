@@ -4,22 +4,22 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.cfey;
-import defpackage.cffb;
-import defpackage.cfgo;
-import defpackage.eitj;
-import defpackage.enng;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.chmk;
+import defpackage.chmn;
+import defpackage.choa;
+import defpackage.elgo;
+import defpackage.eqba;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class WifiLanConnectivityInfoV2 extends AbstractSafeParcelable implements cfey {
-    public static final Parcelable.Creator CREATOR = new cfgo();
-    public static final eitj a = eitj.q((byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0);
+public class WifiLanConnectivityInfoV2 extends AbstractSafeParcelable implements chmk {
+    public static final Parcelable.Creator CREATOR = new choa();
+    public static final elgo a = elgo.q((byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0);
     public final byte[] b;
     private final byte[] c;
     private final byte[] d;
@@ -32,7 +32,7 @@ public class WifiLanConnectivityInfoV2 extends AbstractSafeParcelable implements
         this.e = bArr4;
     }
 
-    @Override // defpackage.cfey
+    @Override // defpackage.chmk
     public final int a() {
         return 5;
     }
@@ -55,14 +55,14 @@ public class WifiLanConnectivityInfoV2 extends AbstractSafeParcelable implements
         return false;
     }
 
-    @Override // defpackage.cffa
+    @Override // defpackage.chmm
     public final byte[] g() {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try {
             byte[] bArr = this.b;
             int i = 2;
             boolean z = true;
-            arwm.c(bArr.length == 2, "The Port can't be empty");
+            atzb.c(bArr.length == 2, "The Port can't be empty");
             byte[] bArr2 = this.c;
             int length = bArr2.length;
             if (length != 4) {
@@ -72,7 +72,7 @@ public class WifiLanConnectivityInfoV2 extends AbstractSafeParcelable implements
                     z = false;
                 }
             }
-            arwm.c(z, "The IP address has invalid length");
+            atzb.c(z, "The IP address has invalid length");
             if (length != 4) {
                 i = 3;
             }
@@ -81,7 +81,7 @@ public class WifiLanConnectivityInfoV2 extends AbstractSafeParcelable implements
             byteArrayOutputStream.write(bArr);
             byte[] bArr3 = this.d;
             if (bArr3 == null || bArr3.length != 6) {
-                byteArrayOutputStream.write(enng.e(a));
+                byteArrayOutputStream.write(eqba.e(a));
             } else {
                 byteArrayOutputStream.write(bArr3);
             }
@@ -91,7 +91,7 @@ public class WifiLanConnectivityInfoV2 extends AbstractSafeParcelable implements
             }
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             byteArrayOutputStream.reset();
-            byteArrayOutputStream.write(cffb.g(20, byteArray.length));
+            byteArrayOutputStream.write(chmn.g(20, byteArray.length));
             byteArrayOutputStream.write(byteArray);
             return byteArrayOutputStream.toByteArray();
         } catch (IOException unused) {
@@ -110,13 +110,13 @@ public class WifiLanConnectivityInfoV2 extends AbstractSafeParcelable implements
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.i(parcel, 1, c(), false);
-        arxc.i(parcel, 2, b(), false);
+        int a2 = atzr.a(parcel);
+        atzr.i(parcel, 1, c(), false);
+        atzr.i(parcel, 2, b(), false);
         byte[] bArr = this.d;
-        arxc.i(parcel, 3, bArr == null ? null : (byte[]) bArr.clone(), false);
+        atzr.i(parcel, 3, bArr == null ? null : (byte[]) bArr.clone(), false);
         byte[] bArr2 = this.e;
-        arxc.i(parcel, 4, bArr2 != null ? (byte[]) bArr2.clone() : null, false);
-        arxc.c(parcel, a2);
+        atzr.i(parcel, 4, bArr2 != null ? (byte[]) bArr2.clone() : null, false);
+        atzr.c(parcel, a2);
     }
 }

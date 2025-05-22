@@ -5,17 +5,17 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.os.Bundle;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.ejhf;
-import defpackage.qfn;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.eluo;
+import defpackage.ryr;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class FilteringRedirectChimeraActivity extends qfn {
-    private static final asot h = asot.b("GLSActivity", asej.AUTH_ACCOUNT_DATA);
+public class FilteringRedirectChimeraActivity extends ryr {
+    private static final ausn h = ausn.b("GLSActivity", auid.AUTH_ACCOUNT_DATA);
     private AccountAuthenticatorResponse i;
     private List j;
 
@@ -31,7 +31,7 @@ public class FilteringRedirectChimeraActivity extends qfn {
         finish();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         boolean z;
         super.onActivityResult(i, i2, intent);
@@ -83,12 +83,12 @@ public class FilteringRedirectChimeraActivity extends qfn {
         a(i2, i3, str2);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         IntentSender intentSender;
         super.onCreate(bundle);
         if (bundle != null) {
-            ((ejhf) h.h()).B("%sMarshalled state from icicle.", "[ FilteringRedirectActivity ] ");
+            ((eluo) h.h()).B("%sMarshalled state from icicle.", "[ FilteringRedirectActivity ] ");
             this.i = (AccountAuthenticatorResponse) bundle.getParcelable("response");
             this.j = bundle.getStringArrayList("com.google.android.gms.auth.redirect.whitelist");
             return;
@@ -104,7 +104,7 @@ public class FilteringRedirectChimeraActivity extends qfn {
                 intentSender = pendingIntent.getIntentSender();
             } catch (IntentSender.SendIntentException e) {
                 e = e;
-                ((ejhf) h.i()).P("%s Unable to initiate pending workflow! %s", "[ FilteringRedirectActivity ] ", e.getMessage());
+                ((eluo) h.i()).P("%s Unable to initiate pending workflow! %s", "[ FilteringRedirectActivity ] ", e.getMessage());
                 a(0, 8, "Cannot launch workflow!");
             }
         }
@@ -116,12 +116,12 @@ public class FilteringRedirectChimeraActivity extends qfn {
             }
         } catch (IntentSender.SendIntentException e2) {
             e = e2;
-            ((ejhf) h.i()).P("%s Unable to initiate pending workflow! %s", "[ FilteringRedirectActivity ] ", e.getMessage());
+            ((eluo) h.i()).P("%s Unable to initiate pending workflow! %s", "[ FilteringRedirectActivity ] ", e.getMessage());
             a(0, 8, "Cannot launch workflow!");
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putParcelable("response", this.i);

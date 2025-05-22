@@ -13,93 +13,93 @@ import androidx.activity.result.ActivityResult;
 import com.google.android.gms.auth.managed.ui.EmmChimeraActivity;
 import com.google.android.gms.common.api.Status;
 import defpackage.a;
-import defpackage.abqr;
-import defpackage.abqs;
-import defpackage.abqx;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.abvc;
-import defpackage.abve;
-import defpackage.abvg;
-import defpackage.abvn;
-import defpackage.abxx;
-import defpackage.abyh;
-import defpackage.abzk;
-import defpackage.abzm;
-import defpackage.abzr;
-import defpackage.abzu;
-import defpackage.acat;
-import defpackage.arjr;
-import defpackage.arjs;
-import defpackage.arkc;
-import defpackage.arwm;
-import defpackage.aseu;
-import defpackage.asqh;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.adqr;
+import defpackage.adqs;
+import defpackage.adqx;
+import defpackage.advc;
+import defpackage.adve;
+import defpackage.advg;
+import defpackage.advn;
+import defpackage.adxx;
+import defpackage.adyh;
+import defpackage.adzk;
+import defpackage.adzm;
+import defpackage.adzr;
+import defpackage.adzu;
+import defpackage.aeat;
+import defpackage.atmg;
+import defpackage.atmh;
+import defpackage.atmr;
+import defpackage.atzb;
+import defpackage.auio;
+import defpackage.auub;
 import defpackage.bp;
-import defpackage.bqqa;
+import defpackage.bsxr;
 import defpackage.dg;
-import defpackage.dxbn;
-import defpackage.dxbo;
-import defpackage.edeq;
-import defpackage.edgl;
-import defpackage.edjs;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fiko;
-import defpackage.fiwo;
-import defpackage.fkzn;
-import defpackage.fkzo;
-import defpackage.fkzs;
-import defpackage.flaa;
-import defpackage.flad;
-import defpackage.flbn;
-import defpackage.fvbo;
-import defpackage.fwbp;
-import defpackage.fwbs;
-import defpackage.fwca;
+import defpackage.dznn;
+import defpackage.dzno;
+import defpackage.efrl;
+import defpackage.eftg;
+import defpackage.efwn;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.flal;
+import defpackage.flml;
+import defpackage.fnqv;
+import defpackage.fnqw;
+import defpackage.fnra;
+import defpackage.fnri;
+import defpackage.fnrl;
+import defpackage.fnsv;
+import defpackage.fxxm;
+import defpackage.fyxr;
+import defpackage.fyxu;
+import defpackage.fyyc;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class EmmChimeraActivity extends abxx implements arjr {
+public class EmmChimeraActivity extends adxx implements atmg {
     private String A;
     private boolean B;
     private String C;
-    public fiwo h;
-    public final abv i = registerForActivityResult(new abqr(), new abt() { // from class: abuy
-        @Override // defpackage.abt
-        public final void jq(Object obj) {
+    public flml h;
+    public final aca i = registerForActivityResult(new adqr(), new aby() { // from class: aduy
+        @Override // defpackage.aby
+        public final void jF(Object obj) {
             ActivityResult activityResult = (ActivityResult) obj;
             EmmChimeraActivity.this.k(activityResult.a, activityResult.b);
         }
     });
-    final abv j = registerForActivityResult(new abqs(), new abt() { // from class: abuz
-        @Override // defpackage.abt
-        public final void jq(Object obj) {
+    final aca j = registerForActivityResult(new adqs(), new aby() { // from class: aduz
+        @Override // defpackage.aby
+        public final void jF(Object obj) {
             ActivityResult activityResult = (ActivityResult) obj;
             EmmChimeraActivity.this.l(activityResult.a, activityResult.b);
         }
     });
     public Account k;
-    public abve l;
+    public adve l;
     public byte[] m;
-    public fiko n;
+    public flal n;
     public long o;
     public int p;
-    public abzm q;
-    public abzr r;
+    public adzm q;
+    public adzr r;
     public boolean s;
     public Bundle t;
     public int u;
-    public abvc v;
+    public advc v;
     public boolean w;
-    public bqqa x;
+    public bsxr x;
 
     public EmmChimeraActivity() {
-        registerForActivityResult(new abqx(), new abt() { // from class: abva
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        registerForActivityResult(new adqx(), new aby() { // from class: adva
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 ActivityResult activityResult = (ActivityResult) obj;
                 EmmChimeraActivity.this.m(activityResult.a, activityResult.b);
             }
@@ -109,7 +109,7 @@ public class EmmChimeraActivity extends abxx implements arjr {
     }
 
     private final void A(int i, Intent intent) {
-        abzm e = abzm.e();
+        adzm e = adzm.e();
         this.q = e;
         e.i(this, this.k, false);
         j(i, intent);
@@ -121,19 +121,19 @@ public class EmmChimeraActivity extends abxx implements arjr {
     }
 
     private final void C(int i, int i2) {
-        acat acatVar;
+        aeat aeatVar;
         Log.i("Auth", String.format(Locale.US, a.t(i, i2, "[AuthManaged, EmmActivity] onActivityResult: ", " "), new Object[0]));
-        if (flbn.e()) {
-            abvc abvcVar = this.v;
-            acat acatVar2 = abvcVar.a;
-            if (acatVar2 != null) {
-                fwbp b = new abzr().b(this);
-                fvbo.e(b, "getProfileStateLogEnum(...)");
-                acatVar = acat.b(acatVar2, 0, false, b, null, null, 0, 59);
+        if (fnsv.e()) {
+            advc advcVar = this.v;
+            aeat aeatVar2 = advcVar.a;
+            if (aeatVar2 != null) {
+                fyxr b = new adzr().b(this);
+                fxxm.e(b, "getProfileStateLogEnum(...)");
+                aeatVar = aeat.b(aeatVar2, 0, false, b, null, null, 0, 59);
             } else {
-                acatVar = null;
+                aeatVar = null;
             }
-            abvcVar.a = acatVar;
+            advcVar.a = aeatVar;
         }
     }
 
@@ -141,7 +141,7 @@ public class EmmChimeraActivity extends abxx implements arjr {
         if (!v() || i != 0) {
             return i;
         }
-        if (!this.q.j(this) && (!asqh.a() || ((DevicePolicyManager) getSystemService("device_policy")).getUserProvisioningState() != 4)) {
+        if (!this.q.j(this) && (!auub.a() || ((DevicePolicyManager) getSystemService("device_policy")).getUserProvisioningState() != 4)) {
             return 0;
         }
         Log.i("Auth", String.format(Locale.US, "[AuthManaged, EmmActivity] Provisioning is indeed done, returns RESULT_OKAY instead", new Object[0]));
@@ -159,79 +159,75 @@ public class EmmChimeraActivity extends abxx implements arjr {
         if (getIntent().getBooleanExtra("is_unicorn_account", false)) {
             return 2;
         }
-        return (getIntent().getBooleanExtra("is_unicorn_account", false) && fkzn.a.a().j()) ? 1 : 0;
+        return (getIntent().getBooleanExtra("is_unicorn_account", false) && fnqv.a.lK().j()) ? 1 : 0;
     }
 
-    public final acat c() {
+    public final aeat c() {
         return this.v.a;
     }
 
-    @Override // defpackage.arjn
-    protected final void gu(String str, boolean z) {
-        if (flad.c()) {
-            arkc.g(this);
-        } else {
-            arkc.f(this, str);
-        }
-        if (flad.e()) {
-            int i = edjs.a;
-            if (edeq.w(this)) {
-                setTheme(edjs.a(this));
+    @Override // defpackage.atmc
+    protected final void gJ(String str, boolean z) {
+        atmr.g(this);
+        if (fnrl.d()) {
+            int i = efwn.a;
+            if (efrl.w(this)) {
+                setTheme(efwn.a(this));
             }
         }
     }
 
     public final void j(int i, Intent intent) {
-        fwca fwcaVar;
+        fyyc fyycVar;
         Log.i("Auth", String.format(Locale.US, a.j(i, "[AuthManaged, EmmActivity] Finish with resultCode: "), new Object[0]));
-        if (flbn.f()) {
-            abzu a = abzu.a(this);
-            acat c = c();
-            if (!flbn.e() || c == null) {
-                fecj v = fwca.a.v();
-                fwbs b = abzu.b();
+        if (fnsv.f()) {
+            adzu a = adzu.a(this);
+            aeat c = c();
+            if (!fnsv.e() || c == null) {
+                fgrc v = fyyc.a.v();
+                fyxu b = adzu.b();
                 if (!v.b.L()) {
                     v.U();
                 }
-                fecp fecpVar = v.b;
-                fwca fwcaVar2 = (fwca) fecpVar;
+                fgri fgriVar = v.b;
+                fyyc fyycVar2 = (fyyc) fgriVar;
                 b.getClass();
-                fwcaVar2.c = b;
-                fwcaVar2.b |= 1;
-                if (!fecpVar.L()) {
+                fyycVar2.c = b;
+                fyycVar2.b |= 1;
+                if (!fgriVar.L()) {
                     v.U();
                 }
-                fecp fecpVar2 = v.b;
-                fwca fwcaVar3 = (fwca) fecpVar2;
-                fwcaVar3.d = 15;
-                fwcaVar3.b |= 2;
-                int i2 = abzu.i(i);
-                if (!fecpVar2.L()) {
+                fgri fgriVar2 = v.b;
+                fyyc fyycVar3 = (fyyc) fgriVar2;
+                fyycVar3.d = 15;
+                fyycVar3.b |= 2;
+                int i2 = adzu.i(i);
+                if (!fgriVar2.L()) {
                     v.U();
                 }
-                fwca fwcaVar4 = (fwca) v.b;
-                fwcaVar4.f = i2 - 1;
-                fwcaVar4.b |= 8;
-                fwcaVar = (fwca) v.Q();
+                fyyc fyycVar4 = (fyyc) v.b;
+                fyycVar4.f = i2 - 1;
+                fyycVar4.b |= 8;
+                fyycVar = (fyyc) v.Q();
             } else {
-                fecj p = abzu.p(c);
+                fgrc p = adzu.p(c);
                 if (!p.b.L()) {
                     p.U();
                 }
-                fwca fwcaVar5 = (fwca) p.b;
-                fwca fwcaVar6 = fwca.a;
-                fwcaVar5.d = 15;
-                fwcaVar5.b |= 2;
-                int i3 = abzu.i(i);
+                fyyc fyycVar5 = (fyyc) p.b;
+                fyyc fyycVar6 = fyyc.a;
+                fyycVar5.d = 15;
+                fyycVar5.b |= 2;
+                int i3 = adzu.i(i);
                 if (!p.b.L()) {
                     p.U();
                 }
-                fwca fwcaVar7 = (fwca) p.b;
-                fwcaVar7.f = i3 - 1;
-                fwcaVar7.b |= 8;
-                fwcaVar = (fwca) p.Q();
+                fyyc fyycVar7 = (fyyc) p.b;
+                fyycVar7.f = i3 - 1;
+                fyycVar7.b |= 8;
+                fyycVar = (fyyc) p.Q();
             }
-            a.n(fwcaVar, a.a, 16);
+            a.n(fyycVar, a.a, 16);
         }
         if (i == 0) {
             if (intent == null) {
@@ -255,11 +251,11 @@ public class EmmChimeraActivity extends abxx implements arjr {
 
     public final void l(int i, Intent intent) {
         C(2, i);
-        fkzo fkzoVar = fkzo.a;
-        if (fkzoVar.a().q() && !v() && i == 0) {
-            abzm abzmVar = this.q;
-            fiko fikoVar = this.n;
-            if (abzmVar.k(this.C) && (((fkzoVar.a().r() && "com.google.android.apps.work.clouddpc".equals(fikoVar.c)) || (fkzoVar.a().s() && "com.google.android.apps.enterprise.dmagent".equals(fikoVar.c))) && getIntent().getIntExtra("flow", -1) == 0)) {
+        fnqw fnqwVar = fnqw.a;
+        if (fnqwVar.lK().q() && !v() && i == 0) {
+            adzm adzmVar = this.q;
+            flal flalVar = this.n;
+            if (adzmVar.k(this.C) && (((fnqwVar.lK().r() && "com.google.android.apps.work.clouddpc".equals(flalVar.c)) || (fnqwVar.lK().s() && "com.google.android.apps.enterprise.dmagent".equals(flalVar.c))) && getIntent().getIntExtra("flow", -1) == 0)) {
                 B("Returning to remove just added Google managed account");
                 return;
             }
@@ -270,28 +266,28 @@ public class EmmChimeraActivity extends abxx implements arjr {
 
     public final void m(int i, Intent intent) {
         C(3, i);
-        if (flbn.f()) {
-            abzu.a(this).j(c(), 18);
+        if (fnsv.f()) {
+            adzu.a(this).j(c(), 18);
         }
-        if (fkzo.a.a().t() && (i == 122 || i == 123)) {
+        if (fnqw.a.lK().t() && (i == 122 || i == 123)) {
             i = -1;
         }
-        if (fkzs.a.a().g() && i == 0) {
+        if (fnra.a.lK().g() && i == 0) {
             B("Streamlined SyncAuth is cancelled, removing the account");
         } else {
             A(D(i), intent);
         }
     }
 
-    @Override // defpackage.arjr
-    public final void n(arjs arjsVar, int i) {
-        dg h = gI().h("SkipDialogFragment");
-        dg h2 = gI().h("FailedDialogFragment");
-        arjsVar.dismissAllowingStateLoss();
+    @Override // defpackage.atmg
+    public final void n(atmh atmhVar, int i) {
+        dg h = gY().h("SkipDialogFragment");
+        dg h2 = gY().h("FailedDialogFragment");
+        atmhVar.dismissAllowingStateLoss();
         this.l.d = null;
-        if (i == 1 && h == arjsVar) {
+        if (i == 1 && h == atmhVar) {
             j(6, null);
-        } else if (h2 == arjsVar) {
+        } else if (h2 == atmhVar) {
             if (i == 1) {
                 t();
             } else {
@@ -308,7 +304,7 @@ public class EmmChimeraActivity extends abxx implements arjr {
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i == 3) {
@@ -320,46 +316,46 @@ public class EmmChimeraActivity extends abxx implements arjr {
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:71:0x024e, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:102:0x02a0, code lost:
     
-        if (defpackage.fkzn.a.a().e() == false) goto L90;
+        if (r5 != false) goto L94;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:77:0x0285, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:92:0x0281, code lost:
     
-        if ("com.google.work".equals(r12.k.type) != false) goto L90;
+        if (defpackage.fnqv.a.lK().e() == false) goto L99;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:81:0x026d, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:98:0x02b8, code lost:
     
-        if (r5 != false) goto L85;
+        if ("com.google.work".equals(r12.k.type) != false) goto L99;
      */
-    @Override // defpackage.abxx, defpackage.arjn, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.adxx, defpackage.atmc, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public final void onCreate(android.os.Bundle r13) {
         /*
-            Method dump skipped, instructions count: 780
+            Method dump skipped, instructions count: 807
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.managed.ui.EmmChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.qfn, com.google.android.chimera.Activity, defpackage.qam
+    @Override // defpackage.ryr, com.google.android.chimera.Activity, defpackage.rtq
     protected final void onResumeFragments() {
         super.onResumeFragments();
         Log.i("Auth", String.format(Locale.US, "[AuthManaged, EmmActivity] onResumeFragments", new Object[0]));
         if (isFinishing()) {
             return;
         }
-        if (flaa.c() && this.l.ag) {
+        if (fnri.c() && this.l.ag) {
             return;
         }
         if (this.l.a != null) {
             if (!this.q.p(this.p, this.n)) {
                 p();
             }
-            if (!fkzn.f() ? this.l.c != -1 : this.l.b != null) {
+            if (!fnqv.f() ? this.l.c != -1 : this.l.b != null) {
                 if ("ProgressDialogFragment".equals(this.l.d)) {
                     r();
                     return;
@@ -376,43 +372,43 @@ public class EmmChimeraActivity extends abxx implements arjr {
                 return;
             }
         }
-        if (((abvg) gI().h("FetchManagingAppFragment")) == null) {
+        if (((advg) gY().h("FetchManagingAppFragment")) == null) {
             Account account = this.k;
             String y = y();
             int i = this.u;
-            abvg abvgVar = new abvg();
+            advg advgVar = new advg();
             Bundle bundle = new Bundle();
             bundle.putParcelable("account", account);
             bundle.putString("theme", y);
-            if (abzm.e().o(i)) {
+            if (adzm.e().o(i)) {
                 bundle.putInt("unmanagedWorkProfileMode", i);
             }
-            abvgVar.setArguments(bundle);
-            bp bpVar = new bp(gI());
-            bpVar.u(R.id.content, abvgVar, "FetchManagingAppFragment");
+            advgVar.setArguments(bundle);
+            bp bpVar = new bp(gY());
+            bpVar.u(R.id.content, advgVar, "FetchManagingAppFragment");
             bpVar.a();
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBoolean("force_device_owner_launched", this.s);
-        if (fkzs.f()) {
+        if (fnra.f()) {
             bundle.putBoolean("streamlined_flow_launched", this.B);
         }
     }
 
     public final void p() {
-        if (((abvn) gI().h("DownloadInstallFragment")) == null) {
+        if (((advn) gY().h("DownloadInstallFragment")) == null) {
             String str = this.k.name;
-            fiko fikoVar = this.n;
-            String str2 = fikoVar.d;
-            String str3 = fikoVar.i;
+            flal flalVar = this.n;
+            String str2 = flalVar.d;
+            String str3 = flalVar.i;
             int i = this.p;
             String y = y();
             int a = a();
-            abvn abvnVar = new abvn();
+            advn advnVar = new advn();
             Bundle bundle = new Bundle();
             bundle.putString("account_name", str);
             bundle.putString("package_display_name", str2);
@@ -420,18 +416,18 @@ public class EmmChimeraActivity extends abxx implements arjr {
             bundle.putInt("package_install_state", i);
             bundle.putString("theme", y);
             bundle.putInt("variant_index", a);
-            abvnVar.setArguments(bundle);
-            bp bpVar = new bp(gI());
-            bpVar.z(R.id.content, abvnVar, "DownloadInstallFragment");
+            advnVar.setArguments(bundle);
+            bp bpVar = new bp(gY());
+            bpVar.z(R.id.content, advnVar, "DownloadInstallFragment");
             bpVar.b();
         }
     }
 
     public final void q() {
         int i = this.p;
-        if (((arjs) gI().h("FailedDialogFragment")) == null) {
-            arjs x = arjs.x(getText(z(com.google.android.gms.R.array.auth_device_management_download_failed_title)), getText(z(i == 2 ? com.google.android.gms.R.array.auth_device_management_download_not_updated_message : com.google.android.gms.R.array.auth_device_management_download_failed_message)), getText(com.google.android.gms.R.string.common_retry), getText(com.google.android.gms.R.string.common_dismiss), null, true);
-            bp bpVar = new bp(gI());
+        if (((atmh) gY().h("FailedDialogFragment")) == null) {
+            atmh x = atmh.x(getText(z(com.google.android.gms.R.array.auth_device_management_download_failed_title)), getText(z(i == 2 ? com.google.android.gms.R.array.auth_device_management_download_not_updated_message : com.google.android.gms.R.array.auth_device_management_download_failed_message)), getText(com.google.android.gms.R.string.common_retry), getText(com.google.android.gms.R.string.common_dismiss), null, true);
+            bp bpVar = new bp(gY());
             bpVar.v(x, "FailedDialogFragment");
             bpVar.b();
             this.l.d = "FailedDialogFragment";
@@ -439,14 +435,14 @@ public class EmmChimeraActivity extends abxx implements arjr {
     }
 
     final void r() {
-        if (((abyh) gI().h("ProgressDialogFragment")) == null) {
+        if (((adyh) gY().h("ProgressDialogFragment")) == null) {
             String str = this.n.d;
             String string = getString(com.google.android.gms.R.string.auth_common_downloading);
             String string2 = getString(com.google.android.gms.R.string.auth_device_management_download_paused);
             long j = this.o;
             String str2 = this.A;
             byte[] bArr = this.m;
-            abyh abyhVar = new abyh();
+            adyh adyhVar = new adyh();
             Bundle bundle = new Bundle();
             bundle.putCharSequence("title", str);
             bundle.putCharSequence("message", string);
@@ -454,18 +450,18 @@ public class EmmChimeraActivity extends abxx implements arjr {
             bundle.putString("downloadFileDestinationUri", str2);
             bundle.putLong("downloadRequestId", j);
             bundle.putByteArray("packageInformationBytes", bArr);
-            abyhVar.setArguments(bundle);
-            bp bpVar = new bp(gI());
-            bpVar.v(abyhVar, "ProgressDialogFragment");
+            adyhVar.setArguments(bundle);
+            bp bpVar = new bp(gY());
+            bpVar.v(adyhVar, "ProgressDialogFragment");
             bpVar.b();
             this.l.d = "ProgressDialogFragment";
         }
     }
 
     public final void s() {
-        if (((arjs) gI().h("SkipDialogFragment")) == null) {
-            arjs y = arjs.y(getText(z(com.google.android.gms.R.array.auth_device_management_download_skip_message)), getText(z(com.google.android.gms.R.array.auth_device_management_download_skip_confirm)), getText(com.google.android.gms.R.string.auth_common_go_back), false);
-            bp bpVar = new bp(gI());
+        if (((atmh) gY().h("SkipDialogFragment")) == null) {
+            atmh y = atmh.y(getText(z(com.google.android.gms.R.array.auth_device_management_download_skip_message)), getText(z(com.google.android.gms.R.array.auth_device_management_download_skip_confirm)), getText(com.google.android.gms.R.string.auth_common_go_back), false);
+            bp bpVar = new bp(gY());
             bpVar.v(y, "SkipDialogFragment");
             bpVar.b();
             this.l.d = "SkipDialogFragment";
@@ -473,21 +469,21 @@ public class EmmChimeraActivity extends abxx implements arjr {
     }
 
     final void t() {
-        if (fkzn.f()) {
-            Pattern pattern = dxbo.a;
-            dxbn dxbnVar = new dxbn(this);
-            dxbnVar.j();
-            dxbnVar.e("auth_managed");
-            dxbnVar.f("ManagingAppFileId");
-            String uri = dxbnVar.a().toString();
+        if (fnqv.f()) {
+            Pattern pattern = dzno.a;
+            dznn dznnVar = new dznn(this);
+            dznnVar.j();
+            dznnVar.e("auth_managed");
+            dznnVar.f("ManagingAppFileId");
+            String uri = dznnVar.a().toString();
             this.A = uri;
             this.l.b = uri;
         } else {
-            fiko fikoVar = this.n;
-            arwm.s(fikoVar);
-            DownloadManager.Request visibleInDownloadsUi = new DownloadManager.Request(Uri.parse(fikoVar.j)).setNotificationVisibility(2).setVisibleInDownloadsUi(false);
-            if (!fikoVar.k.isEmpty() && !fikoVar.l.isEmpty()) {
-                visibleInDownloadsUi.addRequestHeader("Cookie", fikoVar.k + "=" + fikoVar.l);
+            flal flalVar = this.n;
+            atzb.s(flalVar);
+            DownloadManager.Request visibleInDownloadsUi = new DownloadManager.Request(Uri.parse(flalVar.j)).setNotificationVisibility(2).setVisibleInDownloadsUi(false);
+            if (!flalVar.k.isEmpty() && !flalVar.l.isEmpty()) {
+                visibleInDownloadsUi.addRequestHeader("Cookie", flalVar.k + "=" + flalVar.l);
             }
             long enqueue = ((DownloadManager) getSystemService("download")).enqueue(visibleInDownloadsUi);
             this.o = enqueue;
@@ -498,17 +494,17 @@ public class EmmChimeraActivity extends abxx implements arjr {
 
     public final void u(int i) {
         Intent intent;
-        if (fkzo.h()) {
+        if (fnqw.h()) {
             this.q.i(this, this.k, true);
         }
         Intent intent2 = getIntent();
-        fiko fikoVar = this.n;
+        flal flalVar = this.n;
         Account account = this.k;
         boolean booleanExtra = intent2.getBooleanExtra("is_setup_wizard", false);
         Bundle bundle = this.t;
-        arwm.s(fikoVar);
-        arwm.s(account);
-        abzk d = abzm.d(this, fikoVar.c, fikoVar, account, bundle, Boolean.valueOf(booleanExtra), false, null);
+        atzb.s(flalVar);
+        atzb.s(account);
+        adzk d = adzm.d(this, flalVar.c, flalVar, account, bundle, Boolean.valueOf(booleanExtra), false, null);
         if (d.a.i != Status.b.i || (intent = d.b) == null) {
             if (i == -1) {
                 j(2, null);
@@ -518,19 +514,19 @@ public class EmmChimeraActivity extends abxx implements arjr {
                 return;
             }
         }
-        if (flbn.f()) {
+        if (fnsv.f()) {
             Log.i("Auth", String.format(Locale.US, "[AuthManaged, EmmActivity] Launching managing app", new Object[0]));
-            if (flbn.e()) {
-                abzu.a(this).j(c(), 14);
+            if (fnsv.e()) {
+                adzu.a(this).j(c(), 14);
             } else {
-                abzu.a(this).l(14, this.n);
+                adzu.a(this).l(14, this.n);
             }
         }
         if (this.x != null) {
-            bqqa.a(aseu.AUTH_MANAGED_MANAGING_APP_LAUNCHED);
+            bsxr.a(auio.AUTH_MANAGED_MANAGING_APP_LAUNCHED);
         }
-        if (fkzo.d()) {
-            edgl.a(getIntent(), intent);
+        if (fnqw.d()) {
+            eftg.a(getIntent(), intent);
         }
         if (this.w) {
             this.j.b(intent);
@@ -541,15 +537,15 @@ public class EmmChimeraActivity extends abxx implements arjr {
 
     public final boolean v() {
         boolean booleanExtra;
-        if (fkzo.a.a().g()) {
+        if (fnqw.a.lK().g()) {
             booleanExtra = true;
-            if (!getIntent().getBooleanExtra("is_setup_wizard", false) && edgl.d(this)) {
+            if (!getIntent().getBooleanExtra("is_setup_wizard", false) && eftg.d(this)) {
                 booleanExtra = false;
             }
         } else {
             booleanExtra = getIntent().getBooleanExtra("is_setup_wizard", false);
         }
-        Log.i("Auth", String.format(Locale.US, a.Z(booleanExtra, "[AuthManaged, EmmActivity] isSetupWizard: "), new Object[0]));
+        Log.i("Auth", String.format(Locale.US, a.aa(booleanExtra, "[AuthManaged, EmmActivity] isSetupWizard: "), new Object[0]));
         return booleanExtra;
     }
 }

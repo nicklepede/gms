@@ -1,17 +1,20 @@
 package com.google.android.gms.org.conscrypt;
 
 import com.google.android.gms.org.conscrypt.OpenSSLCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsMode;
+import com.google.android.gms.org.conscrypt.metrics.MetricsPadding;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
 import javax.crypto.NoSuchPaddingException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class OpenSSLEvpCipherDESEDE extends OpenSSLEvpCipher {
     private static final int DES_BLOCK_SIZE = 8;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     /* renamed from: com.google.android.gms.org.conscrypt.OpenSSLEvpCipherDESEDE$1, reason: invalid class name */
     /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$conscrypt$OpenSSLCipher$Padding;
@@ -30,30 +33,30 @@ public abstract class OpenSSLEvpCipherDESEDE extends OpenSSLEvpCipher {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class CBC extends OpenSSLEvpCipherDESEDE {
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class NoPadding extends CBC {
             public NoPadding() {
-                super(OpenSSLCipher.Padding.NOPADDING);
+                super(OpenSSLCipher.Padding.NOPADDING, MetricsPadding.NO_PADDING.getId());
             }
         }
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class PKCS5Padding extends CBC {
             public PKCS5Padding() {
-                super(OpenSSLCipher.Padding.PKCS5PADDING);
+                super(OpenSSLCipher.Padding.PKCS5PADDING, MetricsPadding.PKCS5.getId());
             }
         }
 
-        public CBC(OpenSSLCipher.Padding padding) {
-            super(OpenSSLCipher.Mode.CBC, padding);
+        public CBC(OpenSSLCipher.Padding padding, int i) {
+            super(OpenSSLCipher.Mode.CBC, padding, MetricsMode.CBC.getId(), i);
         }
     }
 
-    public OpenSSLEvpCipherDESEDE(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding) {
-        super(mode, padding);
+    public OpenSSLEvpCipherDESEDE(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding, int i, int i2) {
+        super(mode, padding, MetricsCipher.DESEDE.getId(), i, i2);
     }
 
     @Override // com.google.android.gms.org.conscrypt.OpenSSLCipher

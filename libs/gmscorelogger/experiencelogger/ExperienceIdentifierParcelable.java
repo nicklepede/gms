@@ -3,14 +3,14 @@ package com.google.android.gms.libs.gmscorelogger.experiencelogger;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.brpg;
+import defpackage.atzr;
+import defpackage.btwy;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ExperienceIdentifierParcelable extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new brpg();
+    public static final Parcelable.Creator CREATOR = new btwy();
     public final Long a;
     public final long b;
     public final long c;
@@ -41,11 +41,11 @@ public class ExperienceIdentifierParcelable extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Long l = this.a;
-        int a = arxc.a(parcel);
-        arxc.I(parcel, 1, l);
-        arxc.q(parcel, 2, this.b);
-        arxc.q(parcel, 3, this.c);
-        arxc.q(parcel, 4, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.I(parcel, 1, l);
+        atzr.q(parcel, 2, this.b);
+        atzr.q(parcel, 3, this.c);
+        atzr.q(parcel, 4, this.d);
+        atzr.c(parcel, a);
     }
 }

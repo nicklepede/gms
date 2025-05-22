@@ -5,28 +5,28 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
 import com.google.android.gms.cast.media.CastMediaRoute2ProviderChimeraService;
-import defpackage.amap;
-import defpackage.amhy;
-import defpackage.anac;
-import defpackage.annw;
-import defpackage.bhib;
-import defpackage.eiig;
-import defpackage.iru;
-import defpackage.kak;
+import defpackage.aoca;
+import defpackage.aoji;
+import defpackage.apbo;
+import defpackage.appp;
+import defpackage.bjmq;
+import defpackage.ekvl;
+import defpackage.itk;
+import defpackage.lsu;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.ScheduledExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CastMediaRoute2ProviderChimeraService extends Service {
-    public amap c;
-    public bhib d;
-    private iru f;
-    public final annw a = new annw("CastMR2PService");
+    public aoca c;
+    public bjmq d;
+    private itk f;
+    public final appp a = new appp("CastMR2PService");
     public final Object b = new Object();
-    private final anac e = new anac();
+    private final apbo e = new apbo();
 
     @Override // android.content.ContextWrapper
     public final void attachBaseContext(Context context) {
@@ -38,7 +38,7 @@ public class CastMediaRoute2ProviderChimeraService extends Service {
     public final IBinder onBind(Intent intent) {
         this.a.n("onBind %s", intent);
         IBinder onBind = this.e.onBind(intent);
-        eiig.x(onBind);
+        ekvl.y(onBind);
         return onBind;
     }
 
@@ -48,10 +48,10 @@ public class CastMediaRoute2ProviderChimeraService extends Service {
         this.a.m("onCreate");
         this.e.onCreate();
         synchronized (this.b) {
-            this.c = amap.a(getApplicationContext(), "CastMR2PService");
+            this.c = aoca.a(getApplicationContext(), "CastMR2PService");
         }
-        this.f = new iru() { // from class: amzq
-            @Override // defpackage.iru
+        this.f = new itk() { // from class: apbb
+            @Override // defpackage.itk
             public final void a(Object obj) {
                 List list = (List) obj;
                 CastMediaRoute2ProviderChimeraService castMediaRoute2ProviderChimeraService = CastMediaRoute2ProviderChimeraService.this;
@@ -59,21 +59,21 @@ public class CastMediaRoute2ProviderChimeraService extends Service {
                     if (castMediaRoute2ProviderChimeraService.c == null) {
                         return;
                     }
-                    egkp o = bhib.o(castMediaRoute2ProviderChimeraService.d, "onClientInfoChanged");
+                    eixs o = bjmq.o(castMediaRoute2ProviderChimeraService.d, "onClientInfoChanged");
                     try {
                         final ArrayList arrayList = new ArrayList();
                         Iterator it = list.iterator();
                         while (it.hasNext()) {
-                            arrayList.add(((jzz) it.next()).a);
+                            arrayList.add(((lsj) it.next()).a);
                         }
                         castMediaRoute2ProviderChimeraService.a.n("Binding with packages %s", arrayList.toString());
-                        amap amapVar = castMediaRoute2ProviderChimeraService.c;
-                        eiig.x(amapVar);
-                        final amgd amgdVar = amapVar.e;
-                        amgdVar.d.execute(new Runnable() { // from class: amfs
+                        aoca aocaVar = castMediaRoute2ProviderChimeraService.c;
+                        ekvl.y(aocaVar);
+                        final aoho aohoVar = aocaVar.e;
+                        aohoVar.d.execute(new Runnable() { // from class: aohd
                             @Override // java.lang.Runnable
                             public final void run() {
-                                amgd.this.r.a(arrayList);
+                                aoho.this.r.a(arrayList);
                             }
                         });
                         if (o != null) {
@@ -84,30 +84,30 @@ public class CastMediaRoute2ProviderChimeraService extends Service {
                 }
             }
         };
-        this.d = new bhib(getApplicationContext(), getClass(), 14, "CastMediaRoute2ProviderChimeraService");
-        anac anacVar = this.e;
-        ScheduledExecutorService a = amhy.a();
-        iru iruVar = this.f;
-        eiig.x(iruVar);
-        kak kakVar = anacVar.d;
-        synchronized (kakVar.i) {
-            kakVar.h.put(iruVar, a);
-            kakVar.h();
+        this.d = new bjmq(getApplicationContext(), getClass(), 14, "CastMediaRoute2ProviderChimeraService");
+        apbo apboVar = this.e;
+        ScheduledExecutorService a = aoji.a();
+        itk itkVar = this.f;
+        ekvl.y(itkVar);
+        lsu lsuVar = apboVar.d;
+        synchronized (lsuVar.i) {
+            lsuVar.h.put(itkVar, a);
+            lsuVar.h();
         }
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
         this.a.m("onDestroy");
-        iru iruVar = this.f;
-        if (iruVar != null) {
-            kak kakVar = this.e.d;
-            synchronized (kakVar.i) {
-                kakVar.h.remove(iruVar);
+        itk itkVar = this.f;
+        if (itkVar != null) {
+            lsu lsuVar = this.e.d;
+            synchronized (lsuVar.i) {
+                lsuVar.h.remove(itkVar);
             }
             synchronized (this.b) {
                 if (this.c != null) {
-                    amap.b("CastMR2PService");
+                    aoca.b("CastMR2PService");
                     this.c = null;
                 }
             }

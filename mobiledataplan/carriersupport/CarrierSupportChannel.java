@@ -3,17 +3,17 @@ package com.google.android.gms.mobiledataplan.carriersupport;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cebh;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgko;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class CarrierSupportChannel extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cebh();
+    public static final Parcelable.Creator CREATOR = new cgko();
     public String a;
     public String b;
     public String c;
@@ -30,7 +30,7 @@ public final class CarrierSupportChannel extends AbstractSafeParcelable {
         }
         if (obj instanceof CarrierSupportChannel) {
             CarrierSupportChannel carrierSupportChannel = (CarrierSupportChannel) obj;
-            if (arwb.b(this.a, carrierSupportChannel.a) && arwb.b(this.b, carrierSupportChannel.b) && arwb.b(this.c, carrierSupportChannel.c) && arwb.b(this.d, carrierSupportChannel.d) && arwb.b(this.e, carrierSupportChannel.e) && arwb.b(Integer.valueOf(this.f), Integer.valueOf(carrierSupportChannel.f))) {
+            if (atyq.b(this.a, carrierSupportChannel.a) && atyq.b(this.b, carrierSupportChannel.b) && atyq.b(this.c, carrierSupportChannel.c) && atyq.b(this.d, carrierSupportChannel.d) && atyq.b(this.e, carrierSupportChannel.e) && atyq.b(Integer.valueOf(this.f), Integer.valueOf(carrierSupportChannel.f))) {
                 return true;
             }
         }
@@ -43,25 +43,25 @@ public final class CarrierSupportChannel extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("Title", this.a, arrayList);
-        arwa.b("SubTitle", this.b, arrayList);
-        arwa.b("Target", this.c, arrayList);
-        arwa.b("DefaultMessageSubject", this.d, arrayList);
-        arwa.b("DefaultMessageBody", this.e, arrayList);
-        arwa.b("Type", Integer.valueOf(this.f), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("Title", this.a, arrayList);
+        atyp.b("SubTitle", this.b, arrayList);
+        atyp.b("Target", this.c, arrayList);
+        atyp.b("DefaultMessageSubject", this.d, arrayList);
+        atyp.b("DefaultMessageBody", this.e, arrayList);
+        atyp.b("Type", Integer.valueOf(this.f), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 
     public CarrierSupportChannel(String str, String str2, String str3, String str4, String str5, int i) {

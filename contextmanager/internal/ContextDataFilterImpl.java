@@ -3,27 +3,27 @@ package com.google.android.gms.contextmanager.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.atqj;
-import defpackage.atqk;
-import defpackage.atqm;
-import defpackage.atrr;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.avum;
+import defpackage.avun;
+import defpackage.avup;
+import defpackage.avvu;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class ContextDataFilterImpl extends AbstractSafeParcelable implements atqm, atrr {
-    public static final Parcelable.Creator CREATOR = new atqj();
+public class ContextDataFilterImpl extends AbstractSafeParcelable implements avup, avvu {
+    public static final Parcelable.Creator CREATOR = new avum();
     public final ArrayList a;
     public final ArrayList b;
     public final QueryFilterParameters c;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Inclusion extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new atqk();
+        public static final Parcelable.Creator CREATOR = new avun();
         public final int a;
         public final int b;
         public final TimeFilterImpl c;
@@ -60,7 +60,7 @@ public class ContextDataFilterImpl extends AbstractSafeParcelable implements atq
                 return false;
             }
             Inclusion inclusion = (Inclusion) obj;
-            return this.a == inclusion.a && this.b == inclusion.b && this.c.equals(inclusion.c) && arwb.b(this.d, inclusion.d);
+            return this.a == inclusion.a && this.b == inclusion.b && this.c.equals(inclusion.c) && atyq.b(this.d, inclusion.d);
         }
 
         public final int hashCode() {
@@ -69,12 +69,12 @@ public class ContextDataFilterImpl extends AbstractSafeParcelable implements atq
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 2, this.a);
-            arxc.o(parcel, 3, this.b);
-            arxc.t(parcel, 4, this.c, i, false);
-            arxc.t(parcel, 5, this.d, i, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 2, this.a);
+            atzr.o(parcel, 3, this.b);
+            atzr.t(parcel, 4, this.c, i, false);
+            atzr.t(parcel, 5, this.d, i, false);
+            atzr.c(parcel, a);
         }
     }
 
@@ -84,7 +84,7 @@ public class ContextDataFilterImpl extends AbstractSafeParcelable implements atq
         this.c = queryFilterParameters;
     }
 
-    @Override // defpackage.atrr
+    @Override // defpackage.avvu
     public final QueryFilterParameters a() {
         return this.c;
     }
@@ -114,7 +114,7 @@ public class ContextDataFilterImpl extends AbstractSafeParcelable implements atq
 
     /* JADX WARN: Removed duplicated region for block: B:25:0x013f A[SYNTHETIC] */
     /* JADX WARN: Removed duplicated region for block: B:27:? A[LOOP:1: B:17:0x0042->B:27:?, LOOP_END, SYNTHETIC] */
-    @Override // defpackage.atqm
+    @Override // defpackage.avup
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -135,7 +135,7 @@ public class ContextDataFilterImpl extends AbstractSafeParcelable implements atq
             return false;
         }
         ContextDataFilterImpl contextDataFilterImpl = (ContextDataFilterImpl) obj;
-        return arwb.b(this.a, contextDataFilterImpl.a) && arwb.b(this.b, contextDataFilterImpl.b);
+        return atyq.b(this.a, contextDataFilterImpl.a) && atyq.b(this.b, contextDataFilterImpl.b);
     }
 
     public final int hashCode() {
@@ -159,10 +159,10 @@ public class ContextDataFilterImpl extends AbstractSafeParcelable implements atq
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         ArrayList arrayList = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 2, arrayList, false);
-        arxc.x(parcel, 3, this.b, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 2, arrayList, false);
+        atzr.x(parcel, 3, this.b, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.c(parcel, a);
     }
 }

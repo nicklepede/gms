@@ -1,14 +1,14 @@
 package com.google.android.gms.ads.internal.util.future;
 
-import defpackage.enss;
-import defpackage.entj;
+import defpackage.eqgl;
+import defpackage.eqhc;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class i implements enss {
-    private final entj a = new entj();
+public class i implements eqgl {
+    private final eqhc a = new eqhc();
 
     private static final void d(boolean z) {
         if (z) {
@@ -35,9 +35,9 @@ public class i implements enss {
         return this.a.u();
     }
 
-    @Override // defpackage.enss
-    public final void hn(Runnable runnable, Executor executor) {
-        this.a.hn(runnable, executor);
+    @Override // defpackage.eqgl
+    public final void hD(Runnable runnable, Executor executor) {
+        this.a.hD(runnable, executor);
     }
 
     @Override // java.util.concurrent.Future

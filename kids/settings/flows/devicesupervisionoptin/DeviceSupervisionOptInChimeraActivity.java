@@ -3,73 +3,73 @@ package com.google.android.gms.kids.settings.flows.devicesupervisionoptin;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.R;
-import defpackage.asej;
-import defpackage.asot;
+import defpackage.auid;
+import defpackage.ausn;
 import defpackage.bp;
-import defpackage.bpyl;
-import defpackage.bqak;
-import defpackage.edeq;
-import defpackage.edjs;
-import defpackage.edjt;
-import defpackage.ejhf;
-import defpackage.eurf;
-import defpackage.eurh;
-import defpackage.fpiu;
-import defpackage.fuvb;
-import defpackage.fvbo;
-import defpackage.ipt;
-import defpackage.qet;
+import defpackage.bsgb;
+import defpackage.bsia;
+import defpackage.efrl;
+import defpackage.efwn;
+import defpackage.efwo;
+import defpackage.eluo;
+import defpackage.exgy;
+import defpackage.exha;
+import defpackage.fsck;
+import defpackage.fxqz;
+import defpackage.fxxm;
+import defpackage.irj;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
-public final class DeviceSupervisionOptInChimeraActivity extends qet {
-    private static final asot j = asot.b("DeviceSupervisionOptInChimeraActivity", asej.KIDS);
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
+public final class DeviceSupervisionOptInChimeraActivity extends rxx {
+    private static final ausn j = ausn.b("DeviceSupervisionOptInChimeraActivity", auid.KIDS);
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         int a;
         super.onCreate(bundle);
         setTheme(R.style.Theme_GoogleMaterial3_DayNight);
-        if (fpiu.a.a().n()) {
-            setTheme(edjs.b(this));
-            edjs.d();
+        if (fsck.f()) {
+            setTheme(efwn.b(this));
+            efwn.d();
         } else {
-            setTheme(new edjt(R.style.SudThemeGlifV3_DayNight, true).a(getIntent()));
-            int i = edjs.a;
-            if (edeq.w(this) && (a = edjs.a(this)) != 0) {
+            setTheme(new efwo(R.style.SudThemeGlifV3_DayNight, true).a(getIntent()));
+            int i = efwn.a;
+            if (efrl.w(this) && (a = efwn.a(this)) != 0) {
                 setTheme(a);
             }
         }
         if (bundle == null) {
             Intent intent = getIntent();
-            eurf eurfVar = eurf.UNKNOWN_ENTRY_POINT;
-            int intExtra = intent.getIntExtra("entry_point", eurfVar.h);
-            if (fvbo.n(getIntent().getStringExtra("destination"), "accounts_removal")) {
-                ((ejhf) j.h()).x("Accounts Removal fragment initiated");
+            exgy exgyVar = exgy.UNKNOWN_ENTRY_POINT;
+            int intExtra = intent.getIntExtra("entry_point", exgyVar.i);
+            if (fxxm.n(getIntent().getStringExtra("destination"), "accounts_removal")) {
+                ((eluo) j.h()).x("Accounts Removal fragment initiated");
                 String stringExtra = getIntent().getStringExtra("selected_account");
                 String stringExtra2 = getIntent().getStringExtra("session_id");
                 if (stringExtra2 == null) {
                     stringExtra2 = "";
                 }
-                bpyl bpylVar = new bpyl();
-                bpylVar.setArguments(stringExtra != null ? ipt.a(new fuvb("selected_account", stringExtra), new fuvb("session_id", stringExtra2)) : new Bundle());
+                bsgb bsgbVar = new bsgb();
+                bsgbVar.setArguments(stringExtra != null ? irj.a(new fxqz("selected_account", stringExtra), new fxqz("session_id", stringExtra2)) : new Bundle());
                 bp bpVar = new bp(getSupportFragmentManager());
-                bpVar.F(android.R.id.content, bpylVar);
+                bpVar.F(android.R.id.content, bsgbVar);
                 bpVar.a();
                 return;
             }
-            asot asotVar = bqak.a;
-            eurh eurhVar = eurh.DEVICE_SUPERVISION_OPT_IN;
-            eurf b = eurf.b(intExtra);
+            ausn ausnVar = bsia.a;
+            exha exhaVar = exha.DEVICE_SUPERVISION_OPT_IN;
+            exgy b = exgy.b(intExtra);
             if (b != null) {
-                eurfVar = b;
+                exgyVar = b;
             }
-            fvbo.f(eurhVar, "flowType");
-            fvbo.f(eurfVar, "entryPoint");
-            bqak bqakVar = new bqak();
-            bqakVar.setArguments(ipt.a(new fuvb("flow_type", Integer.valueOf(eurhVar.Y)), new fuvb("entry_point", Integer.valueOf(eurfVar.h))));
+            fxxm.f(exhaVar, "flowType");
+            fxxm.f(exgyVar, "entryPoint");
+            bsia bsiaVar = new bsia();
+            bsiaVar.setArguments(irj.a(new fxqz("flow_type", Integer.valueOf(exhaVar.Z)), new fxqz("entry_point", Integer.valueOf(exgyVar.i))));
             bp bpVar2 = new bp(getSupportFragmentManager());
-            bpVar2.F(android.R.id.content, bqakVar);
+            bpVar2.F(android.R.id.content, bsiaVar);
             bpVar2.w("fragment");
             bpVar2.a();
         }

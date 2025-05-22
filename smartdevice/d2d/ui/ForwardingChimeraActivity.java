@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.ResultReceiver;
 import com.google.android.gms.R;
-import defpackage.denq;
-import defpackage.edgl;
-import defpackage.qex;
+import defpackage.dgyt;
+import defpackage.eftg;
+import defpackage.ryb;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Queue;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class ForwardingChimeraActivity extends qex {
+public class ForwardingChimeraActivity extends ryb {
     public static final /* synthetic */ int h = 0;
-    private static final denq i = new denq(new String[]{"ForwardingChimeraActivity"});
+    private static final dgyt i = new dgyt(new String[]{"ForwardingChimeraActivity"});
     private ResultReceiver j;
     private Queue k;
     private Intent l;
@@ -32,12 +32,12 @@ public class ForwardingChimeraActivity extends qex {
         return resultReceiver2;
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void finish() {
         finishAndRemoveTask();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i2, int i3, Intent intent) {
         super.onActivityResult(i2, i3, intent);
         if (i2 == 2) {
@@ -58,14 +58,14 @@ public class ForwardingChimeraActivity extends qex {
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         ForwardingChimeraActivity forwardingChimeraActivity;
         super.onCreate(bundle);
         Intent intent = getIntent();
         Intent intent2 = new Intent();
         this.l = intent2;
-        edgl.a(intent, intent2);
+        eftg.a(intent, intent2);
         setTheme(R.style.SmartDevice_TransparentTheme);
         ResultReceiver resultReceiver = (ResultReceiver) intent.getParcelableExtra("resultReceiver");
         if (resultReceiver == null) {
@@ -119,7 +119,7 @@ public class ForwardingChimeraActivity extends qex {
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         Queue queue = this.k;

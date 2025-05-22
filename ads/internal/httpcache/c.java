@@ -2,14 +2,14 @@ package com.google.android.gms.ads.internal.httpcache;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arxb;
+import defpackage.atzq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class c implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int h = arxb.h(parcel);
+        int h = atzq.h(parcel);
         long j = 0;
         boolean z = false;
         int i = 0;
@@ -20,37 +20,37 @@ public final class c implements Parcelable.Creator {
         String[] strArr2 = null;
         while (parcel.dataPosition() < h) {
             int readInt = parcel.readInt();
-            switch (arxb.d(readInt)) {
+            switch (atzq.d(readInt)) {
                 case 1:
-                    z = arxb.D(parcel, readInt);
+                    z = atzq.D(parcel, readInt);
                     break;
                 case 2:
-                    str = arxb.s(parcel, readInt);
+                    str = atzq.s(parcel, readInt);
                     break;
                 case 3:
-                    i = arxb.f(parcel, readInt);
+                    i = atzq.f(parcel, readInt);
                     break;
                 case 4:
-                    bArr = arxb.E(parcel, readInt);
+                    bArr = atzq.E(parcel, readInt);
                     break;
                 case 5:
-                    strArr = arxb.K(parcel, readInt);
+                    strArr = atzq.K(parcel, readInt);
                     break;
                 case 6:
-                    strArr2 = arxb.K(parcel, readInt);
+                    strArr2 = atzq.K(parcel, readInt);
                     break;
                 case 7:
-                    z2 = arxb.D(parcel, readInt);
+                    z2 = atzq.D(parcel, readInt);
                     break;
                 case 8:
-                    j = arxb.i(parcel, readInt);
+                    j = atzq.i(parcel, readInt);
                     break;
                 default:
-                    arxb.C(parcel, readInt);
+                    atzq.C(parcel, readInt);
                     break;
             }
         }
-        arxb.A(parcel, h);
+        atzq.A(parcel, h);
         return new HttpResponseParcel(z, str, i, bArr, strArr, strArr2, z2, j);
     }
 

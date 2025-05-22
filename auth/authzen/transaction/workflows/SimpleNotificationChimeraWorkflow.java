@@ -3,40 +3,40 @@ package com.google.android.gms.auth.authzen.transaction.workflows;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.chimera.modules.auth.authzen.phone.AppContextProvider;
-import defpackage.ffti;
-import defpackage.fftw;
-import defpackage.zvl;
-import defpackage.zwv;
-import defpackage.zwx;
+import defpackage.abvl;
+import defpackage.abwv;
+import defpackage.abwx;
+import defpackage.fiig;
+import defpackage.fiiu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class SimpleNotificationChimeraWorkflow extends zvl {
+public class SimpleNotificationChimeraWorkflow extends abvl {
     public static final /* synthetic */ int A = 0;
 
-    public static Intent u(fftw fftwVar, String str, byte[] bArr) {
-        Intent a = a(fftwVar, str, bArr);
+    public static Intent u(fiiu fiiuVar, String str, byte[] bArr) {
+        Intent a = a(fiiuVar, str, bArr);
         a.setClassName(AppContextProvider.a(), "com.google.android.gms.auth.authzen.transaction.workflows.SimpleNotificationWorkflow");
         return a;
     }
 
-    @Override // defpackage.zvl
-    protected final zwx b() {
+    @Override // defpackage.abvl
+    protected final abwx b() {
         Bundle bundle = this.j;
-        zwv zwvVar = new zwv();
-        zwvVar.setArguments(bundle);
-        return zwvVar;
+        abwv abwvVar = new abwv();
+        abwvVar.setArguments(bundle);
+        return abwvVar;
     }
 
-    @Override // defpackage.zvl, defpackage.zwm
-    public final boolean n(zwx zwxVar, int i) {
-        if (super.n(zwxVar, i)) {
+    @Override // defpackage.abvl, defpackage.abwm
+    public final boolean n(abwx abwxVar, int i) {
+        if (super.n(abwxVar, i)) {
             return true;
         }
-        if (!zwv.a.equals(zwxVar.y())) {
+        if (!abwv.a.equals(abwxVar.y())) {
             throw new UnsupportedOperationException("Fragment not supported in simple notification flow.");
         }
-        t(ffti.APPROVE_SELECTED, 2);
+        t(fiig.APPROVE_SELECTED, 2);
         setResult(-1);
         finish();
         return true;

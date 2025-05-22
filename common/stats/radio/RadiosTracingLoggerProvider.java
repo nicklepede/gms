@@ -1,16 +1,16 @@
 package com.google.android.gms.common.stats.radio;
 
-import defpackage.askv;
-import defpackage.askw;
+import defpackage.auop;
+import defpackage.auoq;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class RadiosTracingLoggerProvider {
-    public static final NetworkActivityLogger NOOP_ACTIVITY_LOGGER = new askv();
-    public static final NetworkLatencyLogger NOOP_LATENCY_LOGGER = new askw();
+    public static final NetworkActivityLogger NOOP_ACTIVITY_LOGGER = new auop();
+    public static final NetworkLatencyLogger NOOP_LATENCY_LOGGER = new auoq();
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public interface Logger {
         int deleteEntries(String str, long j, long j2);
 
@@ -21,11 +21,11 @@ public class RadiosTracingLoggerProvider {
         boolean isNopLogger();
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public interface NetworkActivityLogger extends Logger {
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public interface NetworkLatencyLogger extends Logger {
     }
 }

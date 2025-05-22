@@ -1,30 +1,30 @@
 package com.google.android.gms.autofill.operation;
 
 import android.accounts.Account;
-import defpackage.aeye;
-import defpackage.aggz;
-import defpackage.asew;
-import defpackage.bqup;
-import defpackage.bqur;
-import defpackage.bquw;
-import defpackage.eiid;
-import defpackage.flfw;
+import defpackage.agyr;
+import defpackage.aihp;
+import defpackage.auiq;
+import defpackage.btcg;
+import defpackage.btci;
+import defpackage.btcn;
+import defpackage.ekvi;
+import defpackage.fnxj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class AutofillFeatureStatusIntentOperation extends bquw {
+public class AutofillFeatureStatusIntentOperation extends btcn {
     public AutofillFeatureStatusIntentOperation() {
-        super(asew.DEFAULT_AUTOFILL);
+        super(auiq.DEFAULT_AUTOFILL);
     }
 
-    @Override // defpackage.bquw
-    public final bqup a(bqur bqurVar) {
-        Account account = bqurVar.a;
-        return (account != null || flfw.a.a().a()) ? new aggz(aeye.a(this, eiid.i(account)).a()) : bqup.d;
+    @Override // defpackage.btcn
+    public final btcg a(btci btciVar) {
+        Account account = btciVar.a;
+        return (account != null || fnxj.a.lK().a()) ? new aihp(agyr.a(this, ekvi.i(account)).a()) : btcg.d;
     }
 
-    @Override // defpackage.bqtk
+    @Override // defpackage.btbb
     protected final boolean b() {
-        return flfw.a.a().e();
+        return fnxj.a.lK().e();
     }
 }

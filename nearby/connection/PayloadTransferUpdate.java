@@ -3,15 +3,15 @@ package com.google.android.gms.nearby.connection;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cffw;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.chni;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class PayloadTransferUpdate extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cffw();
+    public static final Parcelable.Creator CREATOR = new chni();
     public long a;
     public int b;
     public long c;
@@ -26,7 +26,7 @@ public final class PayloadTransferUpdate extends AbstractSafeParcelable {
         }
         if (obj instanceof PayloadTransferUpdate) {
             PayloadTransferUpdate payloadTransferUpdate = (PayloadTransferUpdate) obj;
-            if (arwb.b(Long.valueOf(this.a), Long.valueOf(payloadTransferUpdate.a)) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(payloadTransferUpdate.b)) && arwb.b(Long.valueOf(this.c), Long.valueOf(payloadTransferUpdate.c)) && arwb.b(Long.valueOf(this.d), Long.valueOf(payloadTransferUpdate.d))) {
+            if (atyq.b(Long.valueOf(this.a), Long.valueOf(payloadTransferUpdate.a)) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(payloadTransferUpdate.b)) && atyq.b(Long.valueOf(this.c), Long.valueOf(payloadTransferUpdate.c)) && atyq.b(Long.valueOf(this.d), Long.valueOf(payloadTransferUpdate.d))) {
                 return true;
             }
         }
@@ -39,12 +39,12 @@ public final class PayloadTransferUpdate extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, this.a);
-        arxc.o(parcel, 2, this.b);
-        arxc.q(parcel, 3, this.c);
-        arxc.q(parcel, 4, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, this.a);
+        atzr.o(parcel, 2, this.b);
+        atzr.q(parcel, 3, this.c);
+        atzr.q(parcel, 4, this.d);
+        atzr.c(parcel, a);
     }
 
     public PayloadTransferUpdate(long j, int i, long j2, long j3) {

@@ -4,41 +4,41 @@ import android.content.Intent;
 import android.net.Uri;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.quickstart.XosLaunchParameters;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxo;
-import defpackage.eijj;
-import defpackage.ejcg;
-import defpackage.frqo;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.auad;
+import defpackage.ekwo;
+import defpackage.elpl;
+import defpackage.fukw;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class OsmosisIntentOperation extends IntentOperation {
-    private static final arxo a = new arxo("QuickStart", "OsmosisIntentOperation");
+    private static final auad a = new auad("QuickStart", "OsmosisIntentOperation");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Map map;
         int i;
         int i2;
-        if (frqo.a.a().a()) {
+        if (fukw.a.lK().a()) {
             Uri uri = (Uri) intent.getParcelableExtra("deeplink-uri");
-            arxo arxoVar = a;
-            arxoVar.h("onHandleIntent(), URI = %s", uri);
+            auad auadVar = a;
+            auadVar.h("onHandleIntent(), URI = %s", uri);
             if (uri == null) {
-                arxoVar.f("URI is missing from the intent", new Object[0]);
+                auadVar.f("URI is missing from the intent", new Object[0]);
                 return;
             }
             try {
-                if (!arwb.b(uri.getHost(), "migrate.google")) {
+                if (!atyq.b(uri.getHost(), "migrate.google")) {
                     throw new IllegalArgumentException("URI does not begin with the correct hostname");
                 }
                 String fragment = uri.getFragment();
-                Map map2 = ejcg.a;
+                Map map2 = elpl.a;
                 if (fragment != null) {
-                    map2 = eijj.g("&").o().a(fragment);
+                    map2 = ekwo.g("&").o().a(fragment);
                 }
                 List<String> pathSegments = uri.getPathSegments();
                 if (pathSegments.size() < 2) {
@@ -46,7 +46,7 @@ public class OsmosisIntentOperation extends IntentOperation {
                 }
                 try {
                     int parseInt = Integer.parseInt(pathSegments.get(0));
-                    arwm.c(parseInt >= 0, "Version code must be non-negative integer");
+                    atzb.c(parseInt >= 0, "Version code must be non-negative integer");
                     if (pathSegments.get(1).equals("d")) {
                         map = map2;
                         i = parseInt;
@@ -69,13 +69,13 @@ public class OsmosisIntentOperation extends IntentOperation {
                         throw new IllegalArgumentException("Auth key param is missing");
                     }
                     XosLaunchParameters xosLaunchParameters = new XosLaunchParameters(uri, i, i2, str, str2);
-                    arxoVar.d("Parsed parameters: %s", xosLaunchParameters);
+                    auadVar.d("Parsed parameters: %s", xosLaunchParameters);
                     int i3 = xosLaunchParameters.c;
                     if (i3 != 2) {
-                        arxoVar.f("Unable to handle flow type %d", Integer.valueOf(i3));
+                        auadVar.f("Unable to handle flow type %d", Integer.valueOf(i3));
                         return;
                     }
-                    arxoVar.h("Launching eSIM activity", new Object[0]);
+                    auadVar.h("Launching eSIM activity", new Object[0]);
                     Intent intent2 = new Intent();
                     intent2.setFlags(268468224);
                     intent2.putExtra("xos-params", xosLaunchParameters);

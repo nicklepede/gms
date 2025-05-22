@@ -5,18 +5,18 @@ import android.os.Parcelable;
 import com.google.android.gms.auth.util.BinarySerializableFastSafeParcelableJson;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.ashs;
-import defpackage.voo;
+import defpackage.atzr;
+import defpackage.aulm;
+import defpackage.xkp;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AuthenticatorAnnotatedData extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new voo();
+    public static final Parcelable.Creator CREATOR = new xkp();
     private static final HashMap g;
     final Set a;
     final int b;
@@ -42,7 +42,7 @@ public class AuthenticatorAnnotatedData extends BinarySerializableFastSafeParcel
         this.f = str3;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 1) {
@@ -60,17 +60,17 @@ public class AuthenticatorAnnotatedData extends BinarySerializableFastSafeParcel
         throw new IllegalStateException(a.j(i, "Unknown SafeParcelable id="));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return g;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i = fastJsonResponse$Field.g;
         if (i == 3) {
@@ -84,36 +84,36 @@ public class AuthenticatorAnnotatedData extends BinarySerializableFastSafeParcel
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
+    @Override // defpackage.aulm
+    public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
         int i = fastJsonResponse$Field.g;
         if (i != 2) {
-            throw new IllegalArgumentException(String.format("Field with id=%d is not a known custom type. Found %s", Integer.valueOf(i), ashsVar.getClass().getCanonicalName()));
+            throw new IllegalArgumentException(String.format("Field with id=%d is not a known custom type. Found %s", Integer.valueOf(i), aulmVar.getClass().getCanonicalName()));
         }
-        this.c = (AuthenticatorTransferInfo) ashsVar;
+        this.c = (AuthenticatorTransferInfo) aulmVar;
         this.a.add(Integer.valueOf(i));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(1)) {
-            arxc.o(parcel, 1, this.b);
+            atzr.o(parcel, 1, this.b);
         }
         if (set.contains(2)) {
-            arxc.t(parcel, 2, this.c, i, true);
+            atzr.t(parcel, 2, this.c, i, true);
         }
         if (set.contains(3)) {
-            arxc.v(parcel, 3, this.d, true);
+            atzr.v(parcel, 3, this.d, true);
         }
         if (set.contains(4)) {
-            arxc.v(parcel, 4, this.e, true);
+            atzr.v(parcel, 4, this.e, true);
         }
         if (set.contains(5)) {
-            arxc.v(parcel, 5, this.f, true);
+            atzr.v(parcel, 5, this.f, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public AuthenticatorAnnotatedData() {

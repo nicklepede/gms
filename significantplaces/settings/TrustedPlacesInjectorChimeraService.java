@@ -2,9 +2,9 @@ package com.google.android.gms.significantplaces.settings;
 
 import com.google.android.chimera.SettingInjectorService;
 import com.google.android.gms.R;
-import defpackage.fvbo;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class TrustedPlacesInjectorChimeraService extends SettingInjectorService {
     public TrustedPlacesInjectorChimeraService() {
@@ -19,7 +19,7 @@ public final class TrustedPlacesInjectorChimeraService extends SettingInjectorSe
     @Override // com.google.android.chimera.SettingInjectorService
     public final String onGetSummary() {
         String string = getString(R.string.significant_places_trusted_places_summary);
-        fvbo.e(string, "getString(...)");
+        fxxm.e(string, "getString(...)");
         return string;
     }
 }

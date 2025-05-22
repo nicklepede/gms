@@ -8,26 +8,26 @@ import android.os.RemoteException;
 import android.util.Log;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.aqtx;
-import defpackage.aqug;
-import defpackage.arvd;
-import defpackage.arve;
-import defpackage.arvf;
-import defpackage.arxc;
-import defpackage.azht;
+import defpackage.aswm;
+import defpackage.aswv;
+import defpackage.atxs;
+import defpackage.atxt;
+import defpackage.atxu;
+import defpackage.atzr;
+import defpackage.bblp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class GoogleCertificatesQuery extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new aqug();
+    public static final Parcelable.Creator CREATOR = new aswv();
     public final String a;
     public final boolean b;
     public final boolean c;
-    public final arve d;
+    public final atxt d;
 
-    public GoogleCertificatesQuery(String str, arve arveVar, boolean z, boolean z2) {
+    public GoogleCertificatesQuery(String str, atxt atxtVar, boolean z, boolean z2) {
         this.a = str;
-        this.d = arveVar;
+        this.d = atxtVar;
         this.b = z;
         this.c = z2;
     }
@@ -35,29 +35,29 @@ public class GoogleCertificatesQuery extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arve arveVar = this.d;
-        if (arveVar == null) {
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atxt atxtVar = this.d;
+        if (atxtVar == null) {
             Log.w("GoogleCertificatesQuery", "certificate binder is null");
-            arveVar = null;
+            atxtVar = null;
         }
-        arxc.D(parcel, 2, arveVar);
-        arxc.e(parcel, 3, this.b);
-        arxc.e(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        atzr.D(parcel, 2, atxtVar);
+        atzr.e(parcel, 3, this.b);
+        atzr.e(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 
     public GoogleCertificatesQuery(String str, IBinder iBinder, boolean z, boolean z2) {
         this.a = str;
-        aqtx aqtxVar = null;
+        aswm aswmVar = null;
         if (iBinder != null) {
             try {
                 IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.internal.ICertData");
-                azht b = (queryLocalInterface instanceof arvf ? (arvf) queryLocalInterface : new arvd(iBinder)).b();
+                bblp b = (queryLocalInterface instanceof atxu ? (atxu) queryLocalInterface : new atxs(iBinder)).b();
                 byte[] bArr = b == null ? null : (byte[]) ObjectWrapper.a(b);
                 if (bArr != null) {
-                    aqtxVar = new aqtx(bArr);
+                    aswmVar = new aswm(bArr);
                 } else {
                     Log.e("GoogleCertificatesQuery", "Could not unwrap certificate");
                 }
@@ -65,7 +65,7 @@ public class GoogleCertificatesQuery extends AbstractSafeParcelable {
                 Log.e("GoogleCertificatesQuery", "Could not unwrap certificate", e);
             }
         }
-        this.d = aqtxVar;
+        this.d = aswmVar;
         this.b = z;
         this.c = z2;
     }

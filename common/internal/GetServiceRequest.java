@@ -9,16 +9,16 @@ import android.os.Parcelable;
 import com.google.android.gms.common.Feature;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aruh;
-import defpackage.arux;
-import defpackage.aruy;
-import defpackage.aruz;
+import defpackage.atww;
+import defpackage.atxm;
+import defpackage.atxn;
+import defpackage.atxo;
 import java.util.Collection;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class GetServiceRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new aruh();
+    public static final Parcelable.Creator CREATOR = new atww();
     public static final Scope[] a = new Scope[0];
     public static final Feature[] b = new Feature[0];
     public final int c;
@@ -45,7 +45,7 @@ public class GetServiceRequest extends AbstractSafeParcelable {
             return null;
         }
         IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.internal.IAccountAccessor");
-        return aruy.c(queryLocalInterface instanceof aruz ? (aruz) queryLocalInterface : new arux(iBinder));
+        return atxn.c(queryLocalInterface instanceof atxo ? (atxo) queryLocalInterface : new atxm(iBinder));
     }
 
     public final Account a() {
@@ -58,7 +58,7 @@ public class GetServiceRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        aruh.a(this, parcel, i);
+        atww.a(this, parcel, i);
     }
 
     public GetServiceRequest(int i, int i2, int i3, String str, IBinder iBinder, Scope[] scopeArr, Bundle bundle, Account account, Feature[] featureArr, Feature[] featureArr2, boolean z, int i4, boolean z2, String str2) {
@@ -98,7 +98,7 @@ public class GetServiceRequest extends AbstractSafeParcelable {
     public GetServiceRequest(int r16, java.lang.String r17) {
         /*
             r15 = this;
-            int r3 = defpackage.aqtp.c
+            int r3 = defpackage.aswe.c
             com.google.android.gms.common.api.Scope[] r6 = com.google.android.gms.common.internal.GetServiceRequest.a
             android.os.Bundle r7 = new android.os.Bundle
             r7.<init>()

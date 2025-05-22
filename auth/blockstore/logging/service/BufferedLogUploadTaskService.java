@@ -4,149 +4,149 @@ import android.content.Context;
 import android.os.Bundle;
 import com.google.android.gms.auth.blockstore.logging.service.BufferedLogUploadTaskService;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.aabn;
-import defpackage.aacb;
-import defpackage.aacc;
-import defpackage.asot;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.byln;
-import defpackage.dxkm;
-import defpackage.eiho;
-import defpackage.ejhf;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.enss;
-import defpackage.fkwd;
+import defpackage.acbn;
+import defpackage.accb;
+import defpackage.accc;
+import defpackage.ausn;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.cauf;
+import defpackage.dzwm;
+import defpackage.ekut;
+import defpackage.eluo;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgl;
+import defpackage.fnnh;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class BufferedLogUploadTaskService extends GmsTaskBoundService {
-    public static final asot a = aacc.b("BufferedLogUploadTaskService");
-    public aacb b;
+    public static final ausn a = accc.b("BufferedLogUploadTaskService");
+    public accb b;
 
-    public static enss d(final Context context) {
+    public static eqgl d(final Context context) {
         final Bundle bundle = new Bundle();
-        final aabn aabnVar = new aabn();
-        return enps.g(ensi.h(aabnVar.c()), new enqc() { // from class: aacu
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                aalq aalqVar = (aalq) obj;
-                asot asotVar = BufferedLogUploadTaskService.a;
-                if (aalqVar == aalq.TASK_SCHEDULED) {
-                    ((ejhf) BufferedLogUploadTaskService.a.h()).x("There is already a buffer flush task scheduled, skipping this time.");
-                    return ensm.a;
+        final acbn acbnVar = new acbn();
+        return eqdl.g(eqgb.h(acbnVar.c()), new eqdv() { // from class: accu
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                aclq aclqVar = (aclq) obj;
+                ausn ausnVar = BufferedLogUploadTaskService.a;
+                final aclq aclqVar2 = aclq.TASK_SCHEDULED;
+                if (aclqVar == aclqVar2) {
+                    ((eluo) BufferedLogUploadTaskService.a.h()).x("There is already a buffer flush task scheduled, skipping this time.");
+                    return eqgf.a;
                 }
-                aabe aabeVar = aabnVar;
+                acbe acbeVar = acbnVar;
                 BufferedLogUploadTaskService.e(context, bundle);
-                ((ejhf) BufferedLogUploadTaskService.a.h()).x("Buffer flush one-off task scheduled.");
-                final aalq aalqVar2 = aalq.TASK_SCHEDULED;
-                ((ejhf) aabn.a.h()).B("Updating BufferFlushTaskStatus to: %s", aalqVar2);
-                return ((aabn) aabeVar).b.b(new eiho() { // from class: aabj
-                    @Override // defpackage.eiho
+                ((eluo) BufferedLogUploadTaskService.a.h()).x("Buffer flush one-off task scheduled.");
+                ((eluo) acbn.a.h()).B("Updating BufferFlushTaskStatus to: %s", aclqVar2);
+                return ((acbn) acbeVar).b.b(new ekut() { // from class: acbj
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
-                        aals aalsVar = (aals) obj2;
-                        asot asotVar2 = aabn.a;
-                        fecj fecjVar = (fecj) aalsVar.iB(5, null);
-                        fecjVar.X(aalsVar);
-                        if (!fecjVar.b.L()) {
-                            fecjVar.U();
+                        acls aclsVar = (acls) obj2;
+                        ausn ausnVar2 = acbn.a;
+                        fgrc fgrcVar = (fgrc) aclsVar.iQ(5, null);
+                        fgrcVar.X(aclsVar);
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
                         }
-                        aalq aalqVar3 = aalq.this;
-                        aals aalsVar2 = (aals) fecjVar.b;
-                        aals aalsVar3 = aals.a;
-                        aalsVar2.d = aalqVar3.d;
-                        aalsVar2.b |= 1;
-                        return (aals) fecjVar.Q();
+                        aclq aclqVar3 = aclq.this;
+                        acls aclsVar2 = (acls) fgrcVar.b;
+                        acls aclsVar3 = acls.a;
+                        aclsVar2.d = aclqVar3.d;
+                        aclsVar2.b |= 1;
+                        return (acls) fgrcVar.Q();
                     }
-                }, enre.a);
+                }, eqex.a);
             }
-        }, enre.a);
+        }, eqex.a);
     }
 
     public static void e(Context context, Bundle bundle) {
-        bykj bykjVar = new bykj();
-        bykjVar.e(TimeUnit.MILLISECONDS.toSeconds(fkwd.b()), TimeUnit.MILLISECONDS.toSeconds(fkwd.b() + fkwd.a.a().b()));
-        bykjVar.u = bundle;
-        bykjVar.t("BlockstoreBufferedLogUploadTask");
-        bykjVar.w(BufferedLogUploadTaskService.class.getName());
-        bykjVar.x(0, 0);
-        bykjVar.g(2);
-        byjl.a(context).f(bykjVar.b());
-        ((ejhf) a.h()).x("One off task scheduled.");
+        catb catbVar = new catb();
+        catbVar.e(TimeUnit.MILLISECONDS.toSeconds(fnnh.b()), TimeUnit.MILLISECONDS.toSeconds(fnnh.b() + fnnh.a.lK().b()));
+        catbVar.u = bundle;
+        catbVar.t("BlockstoreBufferedLogUploadTask");
+        catbVar.w(BufferedLogUploadTaskService.class.getName());
+        catbVar.x(0, 0);
+        catbVar.g(2);
+        casd.a(context).f(catbVar.b());
+        ((eluo) a.h()).x("One off task scheduled.");
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        aabn aabnVar = new aabn();
-        ((ejhf) aabn.a.h()).x("flushing all buffered events");
+    public final eqgl iB(cauf caufVar) {
+        acbn acbnVar = new acbn();
+        ((eluo) acbn.a.h()).x("flushing all buffered events");
         final AtomicReference atomicReference = new AtomicReference(new ArrayList());
-        dxkm dxkmVar = aabnVar.b;
-        eiho eihoVar = new eiho() { // from class: aabl
-            @Override // defpackage.eiho
+        dzwm dzwmVar = acbnVar.b;
+        ekut ekutVar = new ekut() { // from class: acbl
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                aals aalsVar = (aals) obj;
-                asot asotVar = aabn.a;
-                if (aalsVar == null) {
-                    ((ejhf) aabn.a.i()).x("No buffer data on device!");
+                acls aclsVar = (acls) obj;
+                ausn ausnVar = acbn.a;
+                if (aclsVar == null) {
+                    ((eluo) acbn.a.i()).x("No buffer data on device!");
                     return null;
                 }
-                atomicReference.set(aalsVar.c);
-                fecj fecjVar = (fecj) aalsVar.iB(5, null);
-                fecjVar.X(aalsVar);
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                atomicReference.set(aclsVar.c);
+                fgrc fgrcVar = (fgrc) aclsVar.iQ(5, null);
+                fgrcVar.X(aclsVar);
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                ((aals) fecjVar.b).c = feeq.a;
-                aalq aalqVar = aalq.TASK_EXECUTED;
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                ((acls) fgrcVar.b).c = fgtj.a;
+                aclq aclqVar = aclq.TASK_EXECUTED;
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                aals aalsVar2 = (aals) fecjVar.b;
-                aalsVar2.d = aalqVar.d;
-                aalsVar2.b |= 1;
-                return (aals) fecjVar.Q();
+                acls aclsVar2 = (acls) fgrcVar.b;
+                aclsVar2.d = aclqVar.d;
+                aclsVar2.b |= 1;
+                return (acls) fgrcVar.Q();
             }
         };
-        enre enreVar = enre.a;
-        return enps.g(ensi.h(enps.f(dxkmVar.b(eihoVar, enreVar), new eiho() { // from class: aabm
-            @Override // defpackage.eiho
+        eqex eqexVar = eqex.a;
+        return eqdl.g(eqgb.h(eqdl.f(dzwmVar.b(ekutVar, eqexVar), new ekut() { // from class: acbm
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                asot asotVar = aabn.a;
+                ausn ausnVar = acbn.a;
                 return (List) atomicReference.get();
             }
-        }, enreVar)), new enqc() { // from class: aacv
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                List<aalr> list = (List) obj;
+        }, eqexVar)), new eqdv() { // from class: accv
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                List<aclr> list = (List) obj;
                 if (list == null) {
-                    ((ejhf) BufferedLogUploadTaskService.a.j()).x("bufferedEvents is null. Skip the task.");
-                    return ensj.i(0);
+                    ((eluo) BufferedLogUploadTaskService.a.j()).x("bufferedEvents is null. Skip the task.");
+                    return eqgc.i(0);
                 }
-                ((ejhf) BufferedLogUploadTaskService.a.h()).z("Flushed out %s events. Try logging them to Clearcut now.", list.size());
-                for (aalr aalrVar : list) {
+                ((eluo) BufferedLogUploadTaskService.a.h()).z("Flushed out %s events. Try logging them to Clearcut now.", list.size());
+                for (aclr aclrVar : list) {
                     BufferedLogUploadTaskService bufferedLogUploadTaskService = BufferedLogUploadTaskService.this;
                     if (bufferedLogUploadTaskService.b == null) {
-                        bufferedLogUploadTaskService.b = aacc.a(bufferedLogUploadTaskService.getApplicationContext(), aacc.c(bufferedLogUploadTaskService.getApplicationContext()));
+                        bufferedLogUploadTaskService.b = accc.a(bufferedLogUploadTaskService.getApplicationContext(), accc.c(bufferedLogUploadTaskService.getApplicationContext()));
                     }
-                    aacb aacbVar = bufferedLogUploadTaskService.b;
-                    int i = aalrVar.c;
+                    accb accbVar = bufferedLogUploadTaskService.b;
+                    int i = aclrVar.c;
                     if (i == 2) {
-                        aacbVar.l((pmw) aalrVar.d, aalrVar.f);
+                        accbVar.l((rga) aclrVar.d, aclrVar.f);
                     } else if (i == 3) {
-                        aacbVar.a((pld) aalrVar.d, aalrVar.f);
+                        accbVar.a((reh) aclrVar.d, aclrVar.f);
                     } else if (i == 4) {
-                        aacbVar.e((plr) aalrVar.d, aalrVar.f);
+                        accbVar.e((rev) aclrVar.d, aclrVar.f);
                     }
                 }
-                return ensj.i(0);
+                return eqgc.i(0);
             }
-        }, enreVar);
+        }, eqexVar);
     }
 }

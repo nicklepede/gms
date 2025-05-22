@@ -3,15 +3,15 @@ package com.google.android.gms.presencemanager;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cwsi;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.czcf;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class PresentUser extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cwsi();
+    public static final Parcelable.Creator CREATOR = new czcf();
     public final String a;
     public final long b;
     public final int c;
@@ -36,7 +36,7 @@ public class PresentUser extends AbstractSafeParcelable {
             return true;
         }
         PresentUser presentUser = (PresentUser) obj;
-        return arwb.b(this.a, presentUser.a) && this.b == presentUser.b && this.c == presentUser.c && this.d == presentUser.d && arwb.b(this.e, presentUser.e) && arwb.b(this.f, presentUser.f);
+        return atyq.b(this.a, presentUser.a) && this.b == presentUser.b && this.c == presentUser.c && this.d == presentUser.d && atyq.b(this.e, presentUser.e) && atyq.b(this.f, presentUser.f);
     }
 
     public final int hashCode() {
@@ -46,13 +46,13 @@ public class PresentUser extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.q(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.q(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.c(parcel, a);
     }
 }

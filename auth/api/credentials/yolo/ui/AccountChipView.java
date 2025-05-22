@@ -9,16 +9,16 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.android.volley.toolbox.ImageLoader;
 import com.google.android.gms.R;
-import defpackage.arsr;
-import defpackage.ashg;
-import defpackage.assc;
-import defpackage.yxl;
+import defpackage.aaxb;
+import defpackage.atvg;
+import defpackage.aula;
+import defpackage.auvw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AccountChipView extends LinearLayout {
     private static ImageLoader a;
-    private static arsr b;
+    private static atvg b;
 
     public AccountChipView(Context context) {
         super(context);
@@ -31,8 +31,8 @@ public final class AccountChipView extends LinearLayout {
 
     private static ImageLoader e() {
         if (a == null) {
-            b = new arsr();
-            a = new ImageLoader(ashg.b(), b);
+            b = new atvg();
+            a = new ImageLoader(aula.b(), b);
         }
         return a;
     }
@@ -41,32 +41,32 @@ public final class AccountChipView extends LinearLayout {
         View.inflate(context, R.layout.account_chip_view, this);
     }
 
-    final assc a() {
-        return (assc) findViewById(R.id.credential_avatar);
+    final auvw a() {
+        return (auvw) findViewById(R.id.credential_avatar);
     }
 
-    public final void b(yxl yxlVar) {
+    public final void b(aaxb aaxbVar) {
         TextView textView = (TextView) findViewById(R.id.credential_primary_label);
-        String str = yxlVar.d;
+        String str = aaxbVar.d;
         if (TextUtils.isEmpty(str)) {
             textView.setText("");
         } else {
             textView.setText(str);
         }
-        c(yxlVar.e);
-        String str2 = yxlVar.c;
+        c(aaxbVar.e);
+        String str2 = aaxbVar.c;
         if (!TextUtils.isEmpty(str2)) {
             d().setVisibility(8);
             a().setVisibility(0);
             a().setImageUrl(str2, e());
-        } else if (yxlVar.b) {
-            int i = yxlVar.a;
+        } else if (aaxbVar.b) {
+            int i = aaxbVar.a;
             d().setVisibility(8);
             a().setVisibility(0);
             a().setDefaultImageResId(i);
             a().setImageUrl(null, e());
         } else {
-            int i2 = yxlVar.a;
+            int i2 = aaxbVar.a;
             a().setVisibility(8);
             d().setVisibility(0);
             ((ImageView) findViewById(R.id.default_credential_avatar_icon)).setBackgroundResource(i2);

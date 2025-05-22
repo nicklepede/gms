@@ -5,186 +5,186 @@ import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.googlesettings.ui.GoogleSettingsChimeraActivity;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bjsj;
-import defpackage.bjsk;
-import defpackage.bjsl;
-import defpackage.bjux;
-import defpackage.bjwf;
-import defpackage.bjwg;
-import defpackage.bjwk;
-import defpackage.bjwm;
-import defpackage.bjwr;
-import defpackage.bjwu;
-import defpackage.bwpm;
-import defpackage.byow;
-import defpackage.bzck;
-import defpackage.bzfc;
-import defpackage.dnlf;
-import defpackage.dtyr;
-import defpackage.ejhf;
-import defpackage.fouy;
-import defpackage.fovf;
-import defpackage.fuuw;
-import defpackage.fuuz;
-import defpackage.fuvg;
-import defpackage.fuy;
-import defpackage.fvaf;
-import defpackage.fvau;
-import defpackage.fvbo;
-import defpackage.fvfu;
-import defpackage.fvfw;
-import defpackage.fvfx;
-import defpackage.fvgt;
-import defpackage.gbw;
-import defpackage.job;
-import defpackage.joo;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.blyz;
+import defpackage.blza;
+import defpackage.blzb;
+import defpackage.bmbn;
+import defpackage.bmcv;
+import defpackage.bmcw;
+import defpackage.bmda;
+import defpackage.bmdc;
+import defpackage.bmdh;
+import defpackage.bmdk;
+import defpackage.byxz;
+import defpackage.caxo;
+import defpackage.cblb;
+import defpackage.cbnt;
+import defpackage.dpvo;
+import defpackage.dwjd;
+import defpackage.eluo;
+import defpackage.froa;
+import defpackage.froh;
+import defpackage.fvp;
+import defpackage.fxqu;
+import defpackage.fxqx;
+import defpackage.fxre;
+import defpackage.fxwd;
+import defpackage.fxws;
+import defpackage.fxxm;
+import defpackage.fybs;
+import defpackage.fybu;
+import defpackage.fybv;
+import defpackage.fycr;
+import defpackage.gcn;
+import defpackage.juq;
+import defpackage.jvd;
 import java.util.Set;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class GoogleSettingsChimeraActivity extends bjwr {
-    public static final asot j = asot.b("GoogleSettingsChimeraActivity", asej.GOOGLESETTINGS);
+public final class GoogleSettingsChimeraActivity extends bmdh {
+    public static final ausn j = ausn.b("GoogleSettingsChimeraActivity", auid.GOOGLESETTINGS);
     public static final long k;
-    public byow l;
-    public dtyr m;
-    public bzck n;
-    public dnlf o;
-    public final fuuw p = new fuvg(new fvaf() { // from class: bjwi
-        @Override // defpackage.fvaf
+    public caxo l;
+    public dwjd m;
+    public cblb n;
+    public dpvo o;
+    public final fxqu p = new fxre(new fxwd() { // from class: bmcy
+        @Override // defpackage.fxwd
         public final Object a() {
-            jst jstVar = new jst((byte[]) null);
-            if (fouy.d()) {
-                long j2 = bjux.a;
-                bjsl bjslVar = bjux.b;
-                if (!(bjslVar instanceof bjsj)) {
-                    if (!(bjslVar instanceof bjsk)) {
-                        throw new fuuz();
+            jzi jziVar = new jzi((byte[]) null);
+            if (froa.d()) {
+                long j2 = bmbn.a;
+                blzb blzbVar = bmbn.b;
+                if (!(blzbVar instanceof blyz)) {
+                    if (!(blzbVar instanceof blza)) {
+                        throw new fxqx();
                     }
-                    ((ejhf) GoogleSettingsChimeraActivity.j.j()).x("session unavailable");
-                    return jstVar;
+                    ((eluo) GoogleSettingsChimeraActivity.j.j()).x("session unavailable");
+                    return jziVar;
                 }
-                bjsj bjsjVar = (bjsj) bjslVar;
-                jstVar.b(bkfe.a, bjsjVar.a);
-                bzau bzauVar = bjsjVar.b;
-                if (bzauVar != null) {
-                    jstVar.b(bkfe.b, bzauVar);
-                    return jstVar;
+                blyz blyzVar = (blyz) blzbVar;
+                jziVar.b(bmlu.a, blyzVar.a);
+                cbjl cbjlVar = blyzVar.b;
+                if (cbjlVar != null) {
+                    jziVar.b(bmlu.b, cbjlVar);
+                    return jziVar;
                 }
             } else {
                 GoogleSettingsChimeraActivity googleSettingsChimeraActivity = GoogleSettingsChimeraActivity.this;
                 String stringExtra = googleSettingsChimeraActivity.getIntent().getStringExtra("com.google.android.gms.googlesettings.EXTRA_SETTINGS_EMBEDDED_DEEP_LINK_SESSION_ID");
                 if (stringExtra != null && stringExtra.length() > 0) {
-                    jstVar.b(bkfe.a, stringExtra);
+                    jziVar.b(bmlu.a, stringExtra);
                 }
-                Set set = bwpm.a;
+                Set set = byxz.a;
                 Intent intent = googleSettingsChimeraActivity.getIntent();
-                fvbo.e(intent, "getIntent(...)");
-                bzau b = bwpm.b(intent);
+                fxxm.e(intent, "getIntent(...)");
+                cbjl b = byxz.b(intent);
                 if (b != null) {
-                    jstVar.b(bkfe.b, b);
+                    jziVar.b(bmlu.b, b);
                 }
             }
-            return jstVar;
+            return jziVar;
         }
     });
-    public bzfc q;
-    public bjwu r;
-    public bjwf s;
+    public cbnt q;
+    public bmdk r;
+    public bmcv s;
 
     static {
-        long j2 = fvfu.a;
-        k = fvfw.g(1, fvfx.d);
+        long j2 = fybs.a;
+        k = fybu.g(1, fybv.d);
     }
 
-    @Override // defpackage.byst
-    public final byow a() {
-        byow byowVar = this.l;
-        if (byowVar != null) {
-            return byowVar;
+    @Override // defpackage.cbbl
+    public final caxo a() {
+        caxo caxoVar = this.l;
+        if (caxoVar != null) {
+            return caxoVar;
         }
-        fvbo.j("settingsEnvironmentFactory");
+        fxxm.j("settingsEnvironmentFactory");
         return null;
     }
 
-    public final dnlf k() {
-        dnlf dnlfVar = this.o;
-        if (dnlfVar != null) {
-            return dnlfVar;
+    public final dpvo k() {
+        dpvo dpvoVar = this.o;
+        if (dpvoVar != null) {
+            return dpvoVar;
         }
-        fvbo.j("clock");
+        fxxm.j("clock");
         return null;
     }
 
-    @Override // defpackage.byst, defpackage.dbpz
-    protected final void l(fvau fvauVar) {
-        super.l(new fuy(-1726624370, true, new bjwm(this, fvauVar)));
+    @Override // defpackage.cbbl, defpackage.deaf
+    protected final void l(fxws fxwsVar) {
+        super.l(new fvp(-1726624370, true, new bmdc(this, fxwsVar)));
     }
 
-    @Override // defpackage.bjwr, defpackage.dbpz, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.bmdh, defpackage.deaf, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        gbw.a = true;
-        job lifecycle = getLifecycle();
-        dtyr dtyrVar = this.m;
-        if (dtyrVar == null) {
-            fvbo.j("accountsModelUpdater");
-            dtyrVar = null;
+        gcn.a = true;
+        juq lifecycle = getLifecycle();
+        dwjd dwjdVar = this.m;
+        if (dwjdVar == null) {
+            fxxm.j("accountsModelUpdater");
+            dwjdVar = null;
         }
-        lifecycle.b(dtyrVar);
-        if (fovf.a.a().d()) {
-            bzfc bzfcVar = this.q;
-            if (bzfcVar == null) {
-                fvbo.j("surveyLauncher");
-                bzfcVar = null;
+        lifecycle.b(dwjdVar);
+        if (froh.a.lK().d()) {
+            cbnt cbntVar = this.q;
+            if (cbntVar == null) {
+                fxxm.j("surveyLauncher");
+                cbntVar = null;
             }
             Activity containerActivity = getContainerActivity();
-            fvbo.e(containerActivity, "getContainerActivity(...)");
-            bzfcVar.a(containerActivity, null);
+            fxxm.e(containerActivity, "getContainerActivity(...)");
+            cbntVar.a(containerActivity, null);
         }
-        if (fouy.d()) {
-            fvgt.b(joo.a(this), null, null, new bjwk(this, null), 3);
+        if (froa.d()) {
+            fycr.b(jvd.a(this), null, null, new bmda(this, null), 3);
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        if (fouy.d()) {
-            long j2 = bjux.a;
-            bjsl bjslVar = bjux.b;
-            if (bjslVar instanceof bjsj) {
-                ((ejhf) j.h()).x("observer already started");
+        if (froa.d()) {
+            long j2 = bmbn.a;
+            blzb blzbVar = bmbn.b;
+            if (blzbVar instanceof blyz) {
+                ((eluo) j.h()).x("observer already started");
                 return;
             }
-            if (!(bjslVar instanceof bjsk)) {
-                throw new fuuz();
+            if (!(blzbVar instanceof blza)) {
+                throw new fxqx();
             }
-            asot asotVar = j;
-            ((ejhf) asotVar.h()).x("observer not started yet");
+            ausn ausnVar = j;
+            ((eluo) ausnVar.h()).x("observer not started yet");
             if (this.s == null) {
-                fvbo.j("featureStatusObserverLauncherProvider");
+                fxxm.j("featureStatusObserverLauncherProvider");
             }
             Intent startIntent = IntentOperation.getStartIntent(this, "com.google.android.gms.googlesettings.service.attribution.FeatureStatusObserverIntentOperation", "com.google.android.gms.googlesettings.service.attribution.FEATURE_STATUS_DIFF");
-            bjwg bjwgVar = startIntent != null ? new bjwg(this, startIntent) : null;
-            if (bjwgVar == null) {
-                ((ejhf) asotVar.j()).x("unable to resolve observer");
+            bmcw bmcwVar = startIntent != null ? new bmcw(this, startIntent) : null;
+            if (bmcwVar == null) {
+                ((eluo) ausnVar.j()).x("unable to resolve observer");
                 return;
             }
             if (this.r == null) {
-                fvbo.j("sessionIdProvider");
+                fxxm.j("sessionIdProvider");
             }
             String uuid = UUID.randomUUID().toString();
-            fvbo.e(uuid, "toString(...)");
-            Set set = bwpm.a;
+            fxxm.e(uuid, "toString(...)");
+            Set set = byxz.a;
             Intent intent = getIntent();
-            fvbo.e(intent, "getIntent(...)");
-            bjux.b = new bjsj(uuid, bwpm.b(intent));
-            bjux.a = k().a();
-            ((ejhf) asotVar.h()).x("starting observer");
-            bjwgVar.a.startService(bjwgVar.b);
+            fxxm.e(intent, "getIntent(...)");
+            bmbn.b = new blyz(uuid, byxz.b(intent));
+            bmbn.a = k().a();
+            ((eluo) ausnVar.h()).x("starting observer");
+            bmcwVar.a.startService(bmcwVar.b);
         }
     }
 }

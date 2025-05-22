@@ -4,159 +4,160 @@ import android.content.Context;
 import android.os.Handler;
 import android.util.AttributeSet;
 import com.google.android.gms.accountsettings.mg.poc.ui.card.widget.CardDeckView;
-import defpackage.byhr;
+import defpackage.caqj;
 import defpackage.dg;
-import defpackage.etii;
-import defpackage.fixf;
-import defpackage.fixl;
-import defpackage.fixm;
-import defpackage.fjue;
-import defpackage.fvbo;
+import defpackage.evya;
+import defpackage.flnc;
+import defpackage.flni;
+import defpackage.flnj;
+import defpackage.fmkf;
+import defpackage.fxxm;
 import defpackage.ld;
 import defpackage.le;
-import defpackage.rrk;
-import defpackage.rsc;
-import defpackage.rsd;
-import defpackage.scl;
-import defpackage.sct;
-import defpackage.scx;
-import defpackage.sdw;
-import defpackage.sdx;
-import defpackage.sdy;
-import defpackage.sdz;
-import defpackage.sea;
-import defpackage.seh;
-import defpackage.sew;
-import defpackage.sfb;
-import defpackage.sfo;
-import defpackage.sfx;
-import defpackage.sii;
-import defpackage.sil;
-import defpackage.sim;
-import defpackage.sin;
-import defpackage.sio;
-import defpackage.sip;
-import defpackage.siq;
-import defpackage.sir;
-import defpackage.sis;
-import defpackage.sit;
-import defpackage.skq;
-import defpackage.sqg;
-import defpackage.srn;
-import defpackage.srp;
-import defpackage.sxe;
+import defpackage.tkt;
+import defpackage.tll;
+import defpackage.tlm;
+import defpackage.twb;
+import defpackage.twp;
+import defpackage.tws;
+import defpackage.txr;
+import defpackage.txs;
+import defpackage.txt;
+import defpackage.txu;
+import defpackage.txv;
+import defpackage.tyc;
+import defpackage.tyr;
+import defpackage.tyv;
+import defpackage.tzi;
+import defpackage.tzu;
+import defpackage.tzx;
+import defpackage.ucp;
+import defpackage.ucs;
+import defpackage.uct;
+import defpackage.ucu;
+import defpackage.ucv;
+import defpackage.ucw;
+import defpackage.ucx;
+import defpackage.ucy;
+import defpackage.ucz;
+import defpackage.uda;
+import defpackage.ufc;
+import defpackage.ulh;
+import defpackage.unl;
+import defpackage.unn;
+import defpackage.utc;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class CardDeckView extends sil {
+public class CardDeckView extends ucs {
     public static final /* synthetic */ int aD = 0;
     public Set aA;
     public dg aB;
-    public rsc aC;
+    public tll aC;
     private final Handler aE;
-    public sis ag;
-    public sis ah;
-    public sis ai;
-    public sis aj;
-    public sip ak;
-    public sir al;
-    public sdy am;
-    public siq an;
-    public sio ao;
-    public sit ap;
-    public sin aq;
-    public sim ar;
-    public srn as;
-    public sdz at;
-    public etii au;
-    public srp av;
-    public sxe aw;
+    public ucz ag;
+    public ucz ah;
+    public ucz ai;
+    public ucz aj;
+    public ucw ak;
+    public ucy al;
+    public txt am;
+    public ucx an;
+    public ucv ao;
+    public uda ap;
+    public ucu aq;
+    public uct ar;
+    public unl as;
+    public txu at;
+    public evya au;
+    public unn av;
+    public utc aw;
     public String ax;
     public boolean ay;
     public List az;
 
     public CardDeckView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.ag = new sis() { // from class: sda
-            @Override // defpackage.sis
-            public final void a(etgv etgvVar) {
+        this.ag = new ucz() { // from class: twv
+            @Override // defpackage.ucz
+            public final void a(evwn evwnVar) {
                 int i = CardDeckView.aD;
             }
         };
-        this.ah = new sis() { // from class: sdo
-            @Override // defpackage.sis
-            public final void a(etgv etgvVar) {
+        this.ah = new ucz() { // from class: txj
+            @Override // defpackage.ucz
+            public final void a(evwn evwnVar) {
                 int i = CardDeckView.aD;
             }
         };
-        this.ai = new sis() { // from class: sdp
-            @Override // defpackage.sis
-            public final void a(etgv etgvVar) {
+        this.ai = new ucz() { // from class: txk
+            @Override // defpackage.ucz
+            public final void a(evwn evwnVar) {
                 int i = CardDeckView.aD;
             }
         };
-        this.aj = new sis() { // from class: sdq
-            @Override // defpackage.sis
-            public final void a(etgv etgvVar) {
+        this.aj = new ucz() { // from class: txl
+            @Override // defpackage.ucz
+            public final void a(evwn evwnVar) {
                 int i = CardDeckView.aD;
             }
         };
-        this.ak = new sip() { // from class: sdr
-            @Override // defpackage.sip
-            public final void a(etie etieVar) {
+        this.ak = new ucw() { // from class: txm
+            @Override // defpackage.ucw
+            public final void a(evxw evxwVar) {
                 int i = CardDeckView.aD;
             }
         };
-        this.al = new sir() { // from class: sds
-            @Override // defpackage.sir
-            public final void a(eitj eitjVar) {
+        this.al = new ucy() { // from class: txn
+            @Override // defpackage.ucy
+            public final void a(elgo elgoVar) {
                 int i = CardDeckView.aD;
             }
         };
-        this.am = new sdy() { // from class: sdt
-            @Override // defpackage.sdy
-            public final void a(rua ruaVar) {
+        this.am = new txt() { // from class: txo
+            @Override // defpackage.txt
+            public final void a(tnj tnjVar) {
                 int i = CardDeckView.aD;
             }
         };
-        this.an = new siq() { // from class: sdu
-            @Override // defpackage.siq
-            public final void a(etie etieVar) {
+        this.an = new ucx() { // from class: txp
+            @Override // defpackage.ucx
+            public final void a(evxw evxwVar) {
                 int i = CardDeckView.aD;
             }
         };
-        this.ao = new sio() { // from class: sdv
-            @Override // defpackage.sio
+        this.ao = new ucv() { // from class: txq
+            @Override // defpackage.ucv
             public final void a() {
                 int i = CardDeckView.aD;
             }
         };
-        this.ap = new sit() { // from class: sdb
-            @Override // defpackage.sit
-            public final void a(sim simVar) {
+        this.ap = new uda() { // from class: tww
+            @Override // defpackage.uda
+            public final void a(uct uctVar) {
                 int i = CardDeckView.aD;
             }
         };
-        this.aq = new sin() { // from class: sdl
-            @Override // defpackage.sin
+        this.aq = new ucu() { // from class: txg
+            @Override // defpackage.ucu
             public final void a() {
                 int i = CardDeckView.aD;
             }
         };
         this.ay = false;
-        this.aE = new byhr();
+        this.aE = new caqj();
         this.az = new ArrayList();
         this.aA = new HashSet();
         this.aB = new dg();
-        ((sdx) rrk.a(sdx.class, context)).c(this);
+        ((txs) tkt.a(txs.class, context)).c(this);
     }
 
     public final void a() {
-        this.aE.post(new Runnable() { // from class: sdc
+        this.aE.post(new Runnable() { // from class: twx
             @Override // java.lang.Runnable
             public final void run() {
                 CardDeckView.this.R();
@@ -165,94 +166,94 @@ public class CardDeckView extends sil {
     }
 
     public final void aF() {
-        rsc rscVar = this.aC;
+        tll tllVar = this.aC;
         dg dgVar = this.aB;
-        le a = new ld(scx.a).a();
+        le a = new ld(tws.a).a();
         Context context = getContext();
-        fvbo.f(context, "context");
-        int a2 = sii.a((int) fjue.a.a().j(), context);
-        int a3 = sqg.a(context);
-        sis sisVar = new sis() { // from class: sdd
-            @Override // defpackage.sis
-            public final void a(etgv etgvVar) {
-                CardDeckView.this.ag.a(etgvVar);
+        fxxm.f(context, "context");
+        int b = ucp.b((int) fmkf.a.lK().j(), context);
+        int a2 = ulh.a(context);
+        ucz uczVar = new ucz() { // from class: twy
+            @Override // defpackage.ucz
+            public final void a(evwn evwnVar) {
+                CardDeckView.this.ag.a(evwnVar);
             }
         };
-        sis sisVar2 = new sis() { // from class: sde
-            @Override // defpackage.sis
-            public final void a(etgv etgvVar) {
-                CardDeckView.this.ai.a(etgvVar);
+        ucz uczVar2 = new ucz() { // from class: twz
+            @Override // defpackage.ucz
+            public final void a(evwn evwnVar) {
+                CardDeckView.this.ai.a(evwnVar);
             }
         };
-        sis sisVar3 = new sis() { // from class: sdf
-            @Override // defpackage.sis
-            public final void a(etgv etgvVar) {
-                CardDeckView.this.ah.a(etgvVar);
+        ucz uczVar3 = new ucz() { // from class: txa
+            @Override // defpackage.ucz
+            public final void a(evwn evwnVar) {
+                CardDeckView.this.ah.a(evwnVar);
             }
         };
-        sis sisVar4 = new sis() { // from class: sdg
-            @Override // defpackage.sis
-            public final void a(etgv etgvVar) {
-                CardDeckView.this.aj.a(etgvVar);
+        ucz uczVar4 = new ucz() { // from class: txb
+            @Override // defpackage.ucz
+            public final void a(evwn evwnVar) {
+                CardDeckView.this.aj.a(evwnVar);
             }
         };
-        sip sipVar = new sip() { // from class: sdh
-            @Override // defpackage.sip
-            public final void a(etie etieVar) {
-                CardDeckView.this.ak.a(etieVar);
+        ucw ucwVar = new ucw() { // from class: txc
+            @Override // defpackage.ucw
+            public final void a(evxw evxwVar) {
+                CardDeckView.this.ak.a(evxwVar);
             }
         };
-        sir sirVar = new sir() { // from class: sdi
-            @Override // defpackage.sir
-            public final void a(eitj eitjVar) {
-                CardDeckView.this.al.a(eitjVar);
+        ucy ucyVar = new ucy() { // from class: txd
+            @Override // defpackage.ucy
+            public final void a(elgo elgoVar) {
+                CardDeckView.this.al.a(elgoVar);
             }
         };
-        sdy sdyVar = new sdy() { // from class: sdj
-            @Override // defpackage.sdy
-            public final void a(rua ruaVar) {
-                CardDeckView.this.am.a(ruaVar);
+        txt txtVar = new txt() { // from class: txe
+            @Override // defpackage.txt
+            public final void a(tnj tnjVar) {
+                CardDeckView.this.am.a(tnjVar);
             }
         };
-        siq siqVar = new siq() { // from class: sdk
-            @Override // defpackage.siq
-            public final void a(etie etieVar) {
-                CardDeckView.this.an.a(etieVar);
+        ucx ucxVar = new ucx() { // from class: txf
+            @Override // defpackage.ucx
+            public final void a(evxw evxwVar) {
+                CardDeckView.this.an.a(evxwVar);
             }
         };
-        sio sioVar = new sio() { // from class: sdm
-            @Override // defpackage.sio
+        ucv ucvVar = new ucv() { // from class: txh
+            @Override // defpackage.ucv
             public final void a() {
                 CardDeckView.this.ao.a();
             }
         };
-        sin sinVar = new sin() { // from class: sdn
-            @Override // defpackage.sin
+        ucu ucuVar = new ucu() { // from class: txi
+            @Override // defpackage.ucu
             public final void a() {
                 CardDeckView.this.aq.a();
             }
         };
-        fixl.b(dgVar);
-        rsd rsdVar = new rsd(rscVar.a, dgVar, a, Boolean.valueOf(a3 < a2), sisVar, sisVar2, sisVar3, sisVar4, sipVar, sirVar, sdyVar, siqVar, sioVar, sinVar);
-        le leVar = rsdVar.a;
-        Boolean bool = rsdVar.b;
-        fixm fixmVar = rsdVar.d;
-        fixm fixmVar2 = rsdVar.h;
-        fixm fixmVar3 = rsdVar.k;
-        sdz b = sea.b(leVar, bool.booleanValue(), (skq) ((fixf) fixmVar).a, (seh) ((fixf) fixmVar2).a, (sfo) fixmVar3.a(), (sew) ((fixf) rsdVar.p).a, (sfx) ((fixf) rsdVar.u).a, (sfb) ((fixf) rsdVar.x).a, ((fixf) rsdVar.A).a, ((fixf) rsdVar.C).a, (scl) ((fixf) rsdVar.H).a, (sct) ((fixf) rsdVar.K).a);
-        this.at = b;
-        b.D(this.au, this.av, this.as, this.az, this.aw, this.ax, this.aA, this.ay);
+        flni.b(dgVar);
+        tlm tlmVar = new tlm(tllVar.a, dgVar, a, Boolean.valueOf(a2 < b), uczVar, uczVar2, uczVar3, uczVar4, ucwVar, ucyVar, txtVar, ucxVar, ucvVar, ucuVar);
+        le leVar = tlmVar.a;
+        Boolean bool = tlmVar.b;
+        flnj flnjVar = tlmVar.d;
+        flnj flnjVar2 = tlmVar.h;
+        flnj flnjVar3 = tlmVar.k;
+        txu b2 = txv.b(leVar, bool.booleanValue(), (ufc) ((flnc) flnjVar).a, (tyc) ((flnc) flnjVar2).a, (tzi) flnjVar3.a(), (tyr) ((flnc) tlmVar.p).a, (tzx) ((flnc) tlmVar.s).a, (tzu) ((flnc) tlmVar.w).a, (tyv) ((flnc) tlmVar.z).a, ((flnc) tlmVar.C).a, ((flnc) tlmVar.E).a, (twb) ((flnc) tlmVar.J).a, (twp) ((flnc) tlmVar.M).a);
+        this.at = b2;
+        b2.D(this.au, this.av, this.as, this.az, this.aw, this.ax, this.aA, this.ay);
         this.at.E(this.ar, this.ap);
         ah(this.at);
-        this.at.y(new sdw(this));
+        this.at.y(new txr(this));
     }
 
     public final void aG() {
-        sdz sdzVar = this.at;
-        if (sdzVar == null) {
+        txu txuVar = this.at;
+        if (txuVar == null) {
             aF();
         } else {
-            sdzVar.D(this.au, this.av, this.as, this.az, this.aw, this.ax, this.aA, this.ay);
+            txuVar.D(this.au, this.av, this.as, this.az, this.aw, this.ax, this.aA, this.ay);
         }
     }
 }

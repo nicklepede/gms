@@ -2,16 +2,16 @@ package com.google.android.gms.locationsharingreporter.service;
 
 import android.os.Bundle;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.ejhf;
-import defpackage.ftya;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.eluo;
+import defpackage.fwty;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class UploadLocationSignalsService extends GmsTaskBoundService {
-    private static final asot a = asot.b("LSR", asej.LOCATION_SHARING_REPORTER);
+    private static final ausn a = ausn.b("LSR", auid.LOCATION_SHARING_REPORTER);
 
     /* JADX WARN: Removed duplicated region for block: B:83:0x01e6  */
     /* JADX WARN: Removed duplicated region for block: B:85:0x01ff  */
@@ -28,24 +28,24 @@ public class UploadLocationSignalsService extends GmsTaskBoundService {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.locationsharingreporter.service.UploadLocationSignalsService.d(android.content.Context, java.lang.String):int");
     }
 
-    private static int e(Exception exc, ftya ftyaVar) {
-        ((ejhf) ((ejhf) ((ejhf) a.j()).s(exc)).ah(5716)).z("Failed in RPC with error code %s", ftyaVar.r);
-        int ordinal = ftyaVar.ordinal();
+    private static int e(Exception exc, fwty fwtyVar) {
+        ((eluo) ((eluo) ((eluo) a.j()).s(exc)).ai(5730)).z("Failed in RPC with error code %s", fwtyVar.r);
+        int ordinal = fwtyVar.ordinal();
         return (ordinal == 4 || ordinal == 8 || ordinal == 10 || ordinal == 16 || ordinal == 13 || ordinal == 14) ? 1 : 2;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (!"uploadLocationSignals".equals(bylnVar.a)) {
-            ((ejhf) ((ejhf) a.h()).ah((char) 5719)).x("unknown task tag");
+    public final int a(cauf caufVar) {
+        if (!"uploadLocationSignals".equals(caufVar.a)) {
+            ((eluo) ((eluo) a.h()).ai((char) 5733)).x("unknown task tag");
             return 2;
         }
-        Bundle bundle = bylnVar.b;
+        Bundle bundle = caufVar.b;
         String string = bundle != null ? bundle.getString("accountName") : null;
         if (string != null) {
             return d(this, string);
         }
-        ((ejhf) ((ejhf) a.h()).ah((char) 5718)).x("scheduled location signal upload with null account name");
+        ((eluo) ((eluo) a.h()).ai((char) 5732)).x("scheduled location signal upload with null account name");
         return 2;
     }
 }

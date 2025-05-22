@@ -2,54 +2,54 @@ package com.google.android.gms.wallet.ui.common;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arwm;
-import defpackage.djes;
-import defpackage.efdk;
-import defpackage.ehma;
-import defpackage.ehmk;
-import defpackage.ehml;
-import defpackage.ehmp;
-import defpackage.ehwq;
-import defpackage.eicq;
-import defpackage.farq;
-import defpackage.fatp;
-import defpackage.fatq;
-import defpackage.feeg;
-import defpackage.feen;
+import defpackage.atzb;
+import defpackage.dlql;
+import defpackage.ehqn;
+import defpackage.ejzg;
+import defpackage.ejzq;
+import defpackage.ejzr;
+import defpackage.ejzv;
+import defpackage.ekjw;
+import defpackage.ekpw;
+import defpackage.fdgf;
+import defpackage.fdie;
+import defpackage.fdif;
+import defpackage.fgsz;
+import defpackage.fgtg;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PageDetails implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new djes();
+    public static final Parcelable.Creator CREATOR = new dlql();
     public boolean a;
     public byte[] b;
-    public farq c;
+    public fdgf c;
     public List d;
-    public ehma e;
+    public ejzg e;
     public List f;
-    public fatq g;
+    public fdif g;
     public long h;
     public Object i;
     public Object j;
-    public fatp k;
-    public ehwq l;
+    public fdie k;
+    public ekjw l;
     public Parcelable m;
-    public ehmk n;
+    public ejzq n;
     public Parcelable o;
-    public ehml p;
-    public ehmp q;
+    public ejzr p;
+    public ejzv q;
     public byte[] r;
     public int s;
 
     public PageDetails() {
-        this.c = farq.UNKNOWN_FLOW_INSTRUCTION;
+        this.c = fdgf.UNKNOWN_FLOW_INSTRUCTION;
         this.d = new ArrayList();
         this.s = 1;
     }
 
-    protected feen a() {
+    protected fgtg a() {
         throw new UnsupportedOperationException("Must be implemented by subclasses to properly parse their Page protos.");
     }
 
@@ -58,10 +58,10 @@ public class PageDetails implements Parcelable {
         return 0;
     }
 
-    /* JADX WARN: Type inference failed for: r0v12, types: [feeg, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r0v12, types: [fgsz, java.lang.Object] */
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        efdk.n(this.f, parcel);
+        ehqn.n(this.f, parcel);
         parcel.writeLong(this.h);
         parcel.writeByteArray(this.b);
         parcel.writeByteArray(this.r);
@@ -73,53 +73,53 @@ public class PageDetails implements Parcelable {
             throw null;
         }
         parcel.writeInt(i3);
-        efdk.o(this.e, parcel);
-        efdk.o(this.g, parcel);
-        efdk.o((feeg) this.i, parcel);
-        efdk.o(this.j, parcel);
-        efdk.o(this.k, parcel);
-        efdk.o(this.l, parcel);
+        ehqn.o(this.e, parcel);
+        ehqn.o(this.g, parcel);
+        ehqn.o((fgsz) this.i, parcel);
+        ehqn.o(this.j, parcel);
+        ehqn.o(this.k, parcel);
+        ehqn.o(this.l, parcel);
         parcel.writeList(this.d);
-        efdk.o(this.n, parcel);
+        ehqn.o(this.n, parcel);
         parcel.writeParcelable(this.o, i);
-        efdk.o(this.p, parcel);
+        ehqn.o(this.p, parcel);
         parcel.writeInt(this.a ? 1 : 0);
-        efdk.o(this.q, parcel);
+        ehqn.o(this.q, parcel);
     }
 
     public PageDetails(Parcel parcel) {
-        farq farqVar = farq.UNKNOWN_FLOW_INSTRUCTION;
-        this.c = farqVar;
+        fdgf fdgfVar = fdgf.UNKNOWN_FLOW_INSTRUCTION;
+        this.c = fdgfVar;
         this.d = new ArrayList();
         this.s = 1;
         ClassLoader classLoader = PageDetails.class.getClassLoader();
-        this.f = efdk.h(parcel, a());
+        this.f = ehqn.h(parcel, a());
         this.h = parcel.readLong();
         this.b = parcel.createByteArray();
         this.r = parcel.createByteArray();
         this.m = parcel.readParcelable(classLoader);
-        farq b = farq.b(parcel.readInt());
+        fdgf b = fdgf.b(parcel.readInt());
         this.c = b;
         if (b == null) {
-            this.c = farqVar;
+            this.c = fdgfVar;
         }
-        this.s = eicq.a(parcel.readInt());
-        this.e = (ehma) efdk.f(parcel, (feen) ehma.a.iB(7, null));
-        this.g = (fatq) efdk.f(parcel, (feen) fatq.a.iB(7, null));
-        this.i = efdk.f(parcel, a());
-        this.j = efdk.f(parcel, a());
-        this.k = (fatp) efdk.f(parcel, (feen) fatp.a.iB(7, null));
-        this.l = (ehwq) efdk.f(parcel, (feen) ehwq.a.iB(7, null));
+        this.s = ekpw.a(parcel.readInt());
+        this.e = (ejzg) ehqn.f(parcel, (fgtg) ejzg.a.iQ(7, null));
+        this.g = (fdif) ehqn.f(parcel, (fgtg) fdif.a.iQ(7, null));
+        this.i = ehqn.f(parcel, a());
+        this.j = ehqn.f(parcel, a());
+        this.k = (fdie) ehqn.f(parcel, (fgtg) fdie.a.iQ(7, null));
+        this.l = (ekjw) ehqn.f(parcel, (fgtg) ekjw.a.iQ(7, null));
         parcel.readList(this.d, Integer.class.getClassLoader());
-        this.n = (ehmk) efdk.f(parcel, (feen) ehmk.c.iB(7, null));
+        this.n = (ejzq) ehqn.f(parcel, (fgtg) ejzq.c.iQ(7, null));
         this.o = parcel.readParcelable(classLoader);
-        this.p = (ehml) efdk.f(parcel, (feen) ehml.a.iB(7, null));
+        this.p = (ejzr) ehqn.f(parcel, (fgtg) ejzr.a.iQ(7, null));
         this.a = parcel.readInt() == 1;
-        this.q = (ehmp) efdk.f(parcel, (feen) ehmp.a.iB(7, null));
+        this.q = (ejzv) ehqn.f(parcel, (fgtg) ejzv.a.iQ(7, null));
     }
 
     public PageDetails(PageDetails pageDetails) {
-        this.c = farq.UNKNOWN_FLOW_INSTRUCTION;
+        this.c = fdgf.UNKNOWN_FLOW_INSTRUCTION;
         this.d = new ArrayList();
         this.s = 1;
         this.f = pageDetails.f;
@@ -127,9 +127,9 @@ public class PageDetails implements Parcelable {
         this.b = pageDetails.b;
         this.r = pageDetails.r;
         this.m = pageDetails.m;
-        farq farqVar = pageDetails.c;
-        arwm.s(farqVar);
-        this.c = farqVar;
+        fdgf fdgfVar = pageDetails.c;
+        atzb.s(fdgfVar);
+        this.c = fdgfVar;
         this.s = pageDetails.s;
         this.e = pageDetails.e;
         this.g = pageDetails.g;

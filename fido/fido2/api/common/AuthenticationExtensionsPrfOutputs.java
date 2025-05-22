@@ -5,39 +5,39 @@ import android.os.Parcelable;
 import android.util.Base64;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.asnj;
-import defpackage.bbsc;
-import defpackage.eive;
-import defpackage.enng;
-import defpackage.feay;
-import defpackage.ffug;
-import defpackage.ffui;
-import defpackage.ffun;
-import defpackage.ffuo;
-import defpackage.ffup;
-import defpackage.ffur;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.aurd;
+import defpackage.bdvt;
+import defpackage.elij;
+import defpackage.eqba;
+import defpackage.fgpr;
+import defpackage.fije;
+import defpackage.fijg;
+import defpackage.fijl;
+import defpackage.fijm;
+import defpackage.fijn;
+import defpackage.fijp;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class AuthenticationExtensionsPrfOutputs extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bbsc();
+    public static final Parcelable.Creator CREATOR = new bdvt();
     public final boolean a;
-    private final feay b;
+    private final fgpr b;
 
-    public AuthenticationExtensionsPrfOutputs(boolean z, feay feayVar) {
+    public AuthenticationExtensionsPrfOutputs(boolean z, fgpr fgprVar) {
         this.a = z;
-        this.b = feayVar;
+        this.b = fgprVar;
     }
 
     public static byte[] c(String str) {
         try {
-            byte[] f = asnj.f(str);
+            byte[] f = aurd.f(str);
             if (f.length == 32) {
                 return f;
             }
@@ -47,21 +47,21 @@ public class AuthenticationExtensionsPrfOutputs extends AbstractSafeParcelable {
         }
     }
 
-    public static byte[] e(ffur ffurVar) {
-        eive eiveVar = ffurVar.m().a;
-        if (!eiveVar.containsKey(new ffup("first"))) {
+    public static byte[] e(fijp fijpVar) {
+        elij elijVar = fijpVar.m().a;
+        if (!elijVar.containsKey(new fijn("first"))) {
             return null;
         }
-        byte[] M = ((ffur) eiveVar.get(new ffup("first"))).j().a.M();
+        byte[] M = ((fijp) elijVar.get(new fijn("first"))).j().a.M();
         if (M.length != 32) {
             throw new IllegalArgumentException("Bad PRF input length");
         }
-        if (!eiveVar.containsKey(new ffup("second"))) {
+        if (!elijVar.containsKey(new fijn("second"))) {
             return M;
         }
-        byte[] M2 = ((ffur) eiveVar.get(new ffup("second"))).j().a.M();
+        byte[] M2 = ((fijp) elijVar.get(new fijn("second"))).j().a.M();
         if (M2.length == 32) {
-            return enng.d(M, M2);
+            return eqba.d(M, M2);
         }
         throw new IllegalArgumentException("Bad PRF input length");
     }
@@ -70,26 +70,26 @@ public class AuthenticationExtensionsPrfOutputs extends AbstractSafeParcelable {
         return Base64.encodeToString(bArr, 11);
     }
 
-    public final ffur a() {
-        ffuo o;
+    public final fijp a() {
+        fijm o;
         try {
             ArrayList arrayList = new ArrayList();
             byte[] d = d();
             if (d != null) {
                 int length = d.length;
                 if (length == 32) {
-                    o = ffur.o(new ffun(new ffup("first"), ffur.k(d)));
+                    o = fijp.o(new fijl(new fijn("first"), fijp.k(d)));
                 } else {
                     if (length != 64) {
                         throw new IllegalArgumentException(a.j(length, "invalid length PRF outputs: "));
                     }
-                    o = ffur.o(new ffun(new ffup("first"), ffur.k(Arrays.copyOf(d, 32))), new ffun(new ffup("second"), ffur.k(Arrays.copyOfRange(d, 32, 64))));
+                    o = fijp.o(new fijl(new fijn("first"), fijp.k(Arrays.copyOf(d, 32))), new fijl(new fijn("second"), fijp.k(Arrays.copyOfRange(d, 32, 64))));
                 }
-                arrayList.add(new ffun(new ffup("results"), o));
+                arrayList.add(new fijl(new fijn("results"), o));
             }
-            arrayList.add(new ffun(new ffup("enabled"), new ffui(this.a)));
-            return ffur.n(arrayList);
-        } catch (ffug e) {
+            arrayList.add(new fijl(new fijn("enabled"), new fijg(this.a)));
+            return fijp.n(arrayList);
+        } catch (fije e) {
             throw new IllegalArgumentException("Error encoding AuthenticationExtensionsPrfOutputs to CBOR", e);
         }
     }
@@ -116,11 +116,11 @@ public class AuthenticationExtensionsPrfOutputs extends AbstractSafeParcelable {
     }
 
     public final byte[] d() {
-        feay feayVar = this.b;
-        if (feayVar == null) {
+        fgpr fgprVar = this.b;
+        if (fgprVar == null) {
             return null;
         }
-        return feayVar.M();
+        return fgprVar.M();
     }
 
     public final boolean equals(Object obj) {
@@ -128,7 +128,7 @@ public class AuthenticationExtensionsPrfOutputs extends AbstractSafeParcelable {
             return false;
         }
         AuthenticationExtensionsPrfOutputs authenticationExtensionsPrfOutputs = (AuthenticationExtensionsPrfOutputs) obj;
-        return this.a == authenticationExtensionsPrfOutputs.a && arwb.b(this.b, authenticationExtensionsPrfOutputs.b);
+        return this.a == authenticationExtensionsPrfOutputs.a && atyq.b(this.b, authenticationExtensionsPrfOutputs.b);
     }
 
     public final int hashCode() {
@@ -148,13 +148,13 @@ public class AuthenticationExtensionsPrfOutputs extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.a;
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, z);
-        arxc.i(parcel, 2, d(), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, z);
+        atzr.i(parcel, 2, d(), false);
+        atzr.c(parcel, a);
     }
 
     public AuthenticationExtensionsPrfOutputs(boolean z, byte[] bArr) {
-        this(z, bArr == null ? null : feay.w(bArr));
+        this(z, bArr == null ? null : fgpr.w(bArr));
     }
 }

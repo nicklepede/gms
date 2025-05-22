@@ -10,48 +10,48 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.view.IllustrationVideoView;
-import defpackage.aand;
-import defpackage.aane;
-import defpackage.aanh;
-import defpackage.adkl;
-import defpackage.asqy;
-import defpackage.edeo;
-import defpackage.edeq;
-import defpackage.eder;
-import defpackage.edfz;
-import defpackage.edgl;
-import defpackage.fkdo;
-import defpackage.fkie;
-import defpackage.qfn;
+import defpackage.acnd;
+import defpackage.acne;
+import defpackage.acnh;
+import defpackage.afks;
+import defpackage.auus;
+import defpackage.efrj;
+import defpackage.efrl;
+import defpackage.efrm;
+import defpackage.efsu;
+import defpackage.eftg;
+import defpackage.fmua;
+import defpackage.fmyt;
+import defpackage.ryr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class GlifAuthAccountLayout extends GlifLayout implements aane, aanh {
+public class GlifAuthAccountLayout extends GlifLayout implements acne, acnh {
     public GlifAuthAccountLayout(Context context) {
         this(context, null);
     }
 
-    @Override // defpackage.aane
+    @Override // defpackage.acne
     public final void e(CharSequence charSequence) {
         ((TextView) findViewById(R.id.message)).setText(charSequence);
     }
 
-    @Override // defpackage.aane
+    @Override // defpackage.acne
     public final void g() {
         findViewById(R.id.progress_bar_layout).setVisibility(0);
     }
 
-    @Override // defpackage.aanh
+    @Override // defpackage.acnh
     public final void h(Window window, Context context) {
-        ((edfz) q(edfz.class)).b(window, context);
+        ((efsu) q(efsu.class)).b(window, context);
     }
 
-    @Override // defpackage.aanh
+    @Override // defpackage.acnh
     public final void i(Window window) {
-        edfz.c(window);
+        efsu.c(window);
     }
 
-    @Override // defpackage.aanh
+    @Override // defpackage.acnh
     public final void j(Window window) {
         i(window);
     }
@@ -62,25 +62,23 @@ public class GlifAuthAccountLayout extends GlifLayout implements aane, aanh {
 
     public GlifAuthAccountLayout(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        eder i2;
+        efrm i2;
         Intent intent;
         LayoutInflater.from(getContext()).inflate(R.layout.auth_glif_auth_account_layout, this);
         K(false);
-        if (fkdo.n()) {
-            adkl.b(context, this);
-        }
+        afks.b(context, this);
         boolean z = true;
-        if (!asqy.a(context)) {
-            if (context instanceof qfn) {
-                intent = ((qfn) context).getIntent();
+        if (!auus.a(context)) {
+            if (context instanceof ryr) {
+                intent = ((ryr) context).getIntent();
             } else {
                 intent = context instanceof Activity ? ((Activity) context).getIntent() : null;
             }
-            if (!edgl.b(intent)) {
+            if (!eftg.b(intent)) {
                 z = false;
             }
         }
-        if ((!fkdo.a.a().w() || z) && fkie.c() && (i2 = edeq.h(context).i(context, edeo.CONFIG_PROGRESS_ILLUSTRATION_ACCOUNT)) != null) {
+        if ((!fmua.a.lK().x() || z) && fmyt.c() && (i2 = efrl.h(context).i(context, efrj.CONFIG_PROGRESS_ILLUSTRATION_ACCOUNT)) != null) {
             findViewById(R.id.progress_bar).setVisibility(8);
             IllustrationVideoView illustrationVideoView = (IllustrationVideoView) findViewById(R.id.animation_view);
             illustrationVideoView.c(i2.c, i2.a);
@@ -88,19 +86,19 @@ public class GlifAuthAccountLayout extends GlifLayout implements aane, aanh {
         }
     }
 
-    @Override // defpackage.aane
+    @Override // defpackage.acne
     public final void f() {
     }
 
-    @Override // defpackage.aane
+    @Override // defpackage.acne
     public final void a(boolean z) {
     }
 
-    @Override // defpackage.aane
+    @Override // defpackage.acne
     public final /* synthetic */ void c(int i) {
     }
 
-    @Override // defpackage.aane
-    public final void d(aand aandVar) {
+    @Override // defpackage.acne
+    public final void d(acnd acndVar) {
     }
 }

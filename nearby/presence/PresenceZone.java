@@ -3,27 +3,27 @@ package com.google.android.gms.nearby.presence;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ckis;
-import defpackage.ckjs;
-import defpackage.ckkp;
-import defpackage.eihn;
-import defpackage.eitj;
+import defpackage.atzr;
+import defpackage.cmqx;
+import defpackage.cmrx;
+import defpackage.cmsu;
+import defpackage.ekus;
+import defpackage.elgo;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class PresenceZone extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckkp();
+    public static final Parcelable.Creator CREATOR = new cmsu();
     public final DistanceBoundary a;
     public final AngleOfArrivalBoundary b;
     public final AngleOfArrivalBoundary c;
     private final List d;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class AngleOfArrivalBoundary extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new ckis();
+        public static final Parcelable.Creator CREATOR = new cmqx();
         public final float a;
         public final float b;
 
@@ -54,16 +54,16 @@ public class PresenceZone extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             float f = this.a;
-            int a = arxc.a(parcel);
-            arxc.l(parcel, 1, f);
-            arxc.l(parcel, 2, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.l(parcel, 1, f);
+            atzr.l(parcel, 2, this.b);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class DistanceBoundary extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new ckjs();
+        public static final Parcelable.Creator CREATOR = new cmrx();
         public final float a;
         public final float b;
         public final int c;
@@ -96,11 +96,11 @@ public class PresenceZone extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             float f = this.a;
-            int a = arxc.a(parcel);
-            arxc.l(parcel, 1, f);
-            arxc.l(parcel, 2, this.b);
-            arxc.o(parcel, 3, this.c);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.l(parcel, 1, f);
+            atzr.l(parcel, 2, this.b);
+            atzr.o(parcel, 3, this.c);
+            atzr.c(parcel, a);
         }
     }
 
@@ -112,7 +112,7 @@ public class PresenceZone extends AbstractSafeParcelable {
     }
 
     public final List a() {
-        return eitj.i(this.d);
+        return elgo.i(this.d);
     }
 
     public final boolean equals(Object obj) {
@@ -123,7 +123,7 @@ public class PresenceZone extends AbstractSafeParcelable {
             return false;
         }
         PresenceZone presenceZone = (PresenceZone) obj;
-        return eihn.a(this.a, presenceZone.a) && eihn.a(this.b, presenceZone.b) && eihn.a(this.c, presenceZone.c) && eihn.a(this.d, presenceZone.d);
+        return ekus.a(this.a, presenceZone.a) && ekus.a(this.b, presenceZone.b) && ekus.a(this.c, presenceZone.c) && ekus.a(this.d, presenceZone.d);
     }
 
     public final int hashCode() {
@@ -140,11 +140,11 @@ public class PresenceZone extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         DistanceBoundary distanceBoundary = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, distanceBoundary, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.y(parcel, 4, a(), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, distanceBoundary, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.y(parcel, 4, a(), false);
+        atzr.c(parcel, a);
     }
 }

@@ -5,15 +5,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.mdocstore.types.ProvisioningId;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cdex;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cfnw;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class MakeCryptoSchemeRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cdex();
+    public static final Parcelable.Creator CREATOR = new cfnw();
     public Account a;
     public ProvisioningId b;
     public byte[] c;
@@ -27,7 +27,7 @@ public final class MakeCryptoSchemeRequest extends AbstractSafeParcelable {
         }
         if (obj instanceof MakeCryptoSchemeRequest) {
             MakeCryptoSchemeRequest makeCryptoSchemeRequest = (MakeCryptoSchemeRequest) obj;
-            if (arwb.b(this.a, makeCryptoSchemeRequest.a) && arwb.b(this.b, makeCryptoSchemeRequest.b) && Arrays.equals(this.c, makeCryptoSchemeRequest.c)) {
+            if (atyq.b(this.a, makeCryptoSchemeRequest.a) && atyq.b(this.b, makeCryptoSchemeRequest.b) && Arrays.equals(this.c, makeCryptoSchemeRequest.c)) {
                 return true;
             }
         }
@@ -40,11 +40,11 @@ public final class MakeCryptoSchemeRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.i(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.i(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 
     public MakeCryptoSchemeRequest(Account account, ProvisioningId provisioningId, byte[] bArr) {

@@ -4,15 +4,15 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.tyu;
+import defpackage.atzr;
+import defpackage.vut;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public class SelectionFragmentOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new tyu();
+    public static final Parcelable.Creator CREATOR = new vut();
     public final String a;
     public final int b;
     public final ArrayList c;
@@ -50,21 +50,21 @@ public class SelectionFragmentOptions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.o(parcel, 3, this.b);
-        arxc.y(parcel, 4, this.c, false);
-        arxc.e(parcel, 5, this.d);
-        arxc.w(parcel, 6, this.e, false);
-        arxc.o(parcel, 7, this.f);
-        arxc.o(parcel, 8, this.g);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.v(parcel, 10, this.i, false);
-        arxc.e(parcel, 11, this.j);
-        arxc.y(parcel, 12, this.k, false);
-        arxc.e(parcel, 13, this.l);
-        arxc.e(parcel, 14, this.m);
-        arxc.g(parcel, 15, this.n, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.o(parcel, 3, this.b);
+        atzr.y(parcel, 4, this.c, false);
+        atzr.e(parcel, 5, this.d);
+        atzr.w(parcel, 6, this.e, false);
+        atzr.o(parcel, 7, this.f);
+        atzr.o(parcel, 8, this.g);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.v(parcel, 10, this.i, false);
+        atzr.e(parcel, 11, this.j);
+        atzr.y(parcel, 12, this.k, false);
+        atzr.e(parcel, 13, this.l);
+        atzr.e(parcel, 14, this.m);
+        atzr.g(parcel, 15, this.n, false);
+        atzr.c(parcel, a);
     }
 }

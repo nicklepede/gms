@@ -7,36 +7,36 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import com.google.android.gms.R;
 import com.google.android.gms.drivingmode.ToggleButtonPreference;
-import defpackage.axpz;
-import defpackage.fpsg;
-import defpackage.kmp;
+import defpackage.aztz;
+import defpackage.fsly;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class ToggleButtonPreference extends TwoTargetPreference {
     public Button a;
     public Button b;
-    public axpz c;
+    public aztz c;
     private final View.OnClickListener d;
 
     public ToggleButtonPreference(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.d = new View.OnClickListener() { // from class: axqp
+        this.d = new View.OnClickListener() { // from class: azup
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 int id = view.getId();
                 boolean z = id != R.id.on_button;
                 ToggleButtonPreference toggleButtonPreference = ToggleButtonPreference.this;
                 toggleButtonPreference.l(z);
-                axpz axpzVar = toggleButtonPreference.c;
-                if (axpzVar != null) {
-                    axqb axqbVar = axpzVar.a;
+                aztz aztzVar = toggleButtonPreference.c;
+                if (aztzVar != null) {
+                    azub azubVar = aztzVar.a;
                     if (id != R.id.on_button) {
-                        axqbVar.ag.b(elxw.DRIVING_MODE, elxv.hC);
-                        axqbVar.ah.A(axqq.MANUAL);
+                        azubVar.ag.b(eolk.DRIVING_MODE, eolj.hC);
+                        azubVar.ah.A(azuq.MANUAL);
                     } else {
-                        axqbVar.ag.b(elxw.DRIVING_MODE, elxv.hD);
-                        axqbVar.ah.x(axqq.MANUAL);
+                        azubVar.ag.b(eolk.DRIVING_MODE, eolj.hD);
+                        azubVar.ah.x(azuq.MANUAL);
                     }
                 }
             }
@@ -44,13 +44,13 @@ public class ToggleButtonPreference extends TwoTargetPreference {
     }
 
     @Override // com.google.android.gms.drivingmode.TwoTargetPreference, androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        LinearLayout linearLayout = (LinearLayout) kmpVar.D(android.R.id.widget_frame);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        LinearLayout linearLayout = (LinearLayout) mfaVar.D(android.R.id.widget_frame);
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
         linearLayout.setPadding(0, 0, 0, 0);
-        this.a = (Button) kmpVar.D(R.id.on_button);
-        this.b = (Button) kmpVar.D(R.id.off_button);
+        this.a = (Button) mfaVar.D(R.id.on_button);
+        this.b = (Button) mfaVar.D(R.id.off_button);
         Button button = this.a;
         View.OnClickListener onClickListener = this.d;
         button.setOnClickListener(onClickListener);
@@ -69,7 +69,7 @@ public class ToggleButtonPreference extends TwoTargetPreference {
         }
         if (z) {
             button.setVisibility(0);
-            if (fpsg.h()) {
+            if (fsly.h()) {
                 this.a.sendAccessibilityEvent(8);
             }
             this.b.setVisibility(8);
@@ -77,7 +77,7 @@ public class ToggleButtonPreference extends TwoTargetPreference {
         }
         button.setVisibility(8);
         this.b.setVisibility(0);
-        if (fpsg.h()) {
+        if (fsly.h()) {
             this.b.sendAccessibilityEvent(8);
         }
     }

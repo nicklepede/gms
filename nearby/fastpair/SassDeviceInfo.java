@@ -4,15 +4,15 @@ import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.chzc;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ckhh;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class SassDeviceInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new chzc();
+    public static final Parcelable.Creator CREATOR = new ckhh();
     final String a;
     final Bitmap b;
 
@@ -27,7 +27,7 @@ public final class SassDeviceInfo extends AbstractSafeParcelable {
         }
         if (obj != null && getClass() == obj.getClass()) {
             SassDeviceInfo sassDeviceInfo = (SassDeviceInfo) obj;
-            if (arwb.b(this.a, sassDeviceInfo.a) && arwb.b(this.b, sassDeviceInfo.b)) {
+            if (atyq.b(this.a, sassDeviceInfo.a) && atyq.b(this.b, sassDeviceInfo.b)) {
                 return true;
             }
         }
@@ -45,9 +45,9 @@ public final class SassDeviceInfo extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 }

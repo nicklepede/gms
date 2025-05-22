@@ -4,28 +4,28 @@ import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dffx;
-import defpackage.enmp;
+import defpackage.atzr;
+import defpackage.dhre;
+import defpackage.eqaj;
 import java.net.InetAddress;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class SyncGoogleBorderRouterRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dffx();
+    public static final Parcelable.Creator CREATOR = new dhre();
     public final InetAddress a;
     public final String b;
     public final Account c;
 
     public SyncGoogleBorderRouterRequest(String str, String str2, Account account) {
-        this.a = enmp.b(str);
+        this.a = eqaj.b(str);
         this.b = str2;
         this.c = account;
     }
 
     public final String a() {
-        return enmp.a(this.a);
+        return eqaj.a(this.a);
     }
 
     public final boolean equals(Object obj) {
@@ -45,10 +45,10 @@ public final class SyncGoogleBorderRouterRequest extends AbstractSafeParcelable 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, a(), false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, a(), false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.c(parcel, a);
     }
 }

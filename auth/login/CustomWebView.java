@@ -11,20 +11,20 @@ import android.webkit.WebView;
 import com.google.android.chimera.Activity;
 import com.google.android.chimera.ModuleContext;
 import com.google.android.gms.auth.uiflows.minutemaid.MinuteMaidChimeraActivity;
-import defpackage.abpj;
-import defpackage.abpk;
-import defpackage.dvni;
-import defpackage.fkdo;
-import defpackage.vfv;
+import defpackage.adpj;
+import defpackage.adpk;
+import defpackage.dxyi;
+import defpackage.fmua;
+import defpackage.xbw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CustomWebView extends WebView {
     boolean a;
     public boolean b;
 
     public CustomWebView(Context context) {
-        super(fkdo.e() ? b(context) : context);
+        super(fmua.e() ? b(context) : context);
     }
 
     private static Context b(Context context) {
@@ -42,7 +42,7 @@ public class CustomWebView extends WebView {
         }
         Context containerContext = moduleContext.getContainerContext();
         ClassLoader classLoader = containerContext.getClass().getClassLoader();
-        return classLoader != null ? new abpj(containerContext, ((MinuteMaidChimeraActivity) activity).B, classLoader, moduleContext) : context;
+        return classLoader != null ? new adpj(containerContext, ((MinuteMaidChimeraActivity) activity).B, classLoader, moduleContext) : context;
     }
 
     public final void a() {
@@ -57,7 +57,7 @@ public class CustomWebView extends WebView {
             editorInfo.hintLocales = forLanguageTags;
         }
         InputConnection onCreateInputConnection = super.onCreateInputConnection(editorInfo);
-        dvni dvniVar = vfv.a;
+        dxyi dxyiVar = xbw.a;
         if (!this.b || onCreateInputConnection == null) {
             return onCreateInputConnection;
         }
@@ -66,7 +66,7 @@ public class CustomWebView extends WebView {
         } else {
             editorInfo.privateImeOptions = String.valueOf(editorInfo.privateImeOptions).concat(",escapeNorth");
         }
-        return new abpk(this, onCreateInputConnection);
+        return new adpk(this, onCreateInputConnection);
     }
 
     @Override // android.webkit.WebView, android.view.View
@@ -78,10 +78,10 @@ public class CustomWebView extends WebView {
     }
 
     public CustomWebView(Context context, AttributeSet attributeSet) {
-        super(fkdo.e() ? b(context) : context, attributeSet);
+        super(fmua.e() ? b(context) : context, attributeSet);
     }
 
     public CustomWebView(Context context, AttributeSet attributeSet, int i) {
-        super(fkdo.e() ? b(context) : context, attributeSet, i);
+        super(fmua.e() ? b(context) : context, attributeSet, i);
     }
 }

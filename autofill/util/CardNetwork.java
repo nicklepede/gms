@@ -4,22 +4,22 @@ import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.R;
-import defpackage.adtb;
-import defpackage.adtc;
-import defpackage.aher;
-import defpackage.fldt;
-import defpackage.flek;
+import defpackage.afti;
+import defpackage.aftj;
+import defpackage.ajfh;
+import defpackage.fnvd;
+import defpackage.fnvu;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public abstract class CardNetwork implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new aher();
+    public static final Parcelable.Creator CREATOR = new ajfh();
 
-    public static adtc d(Context context, int i) {
+    public static aftj d(Context context, int i) {
         Integer f = f(i);
-        return flek.u() ? adtc.d(f.intValue(), e(context, i), adtb.NETWORK) : adtc.c("com.google.android.gms", f.intValue(), e(context, i));
+        return fnvu.w() ? aftj.d(f.intValue(), e(context, i), afti.NETWORK) : aftj.c("com.google.android.gms", f.intValue(), e(context, i));
     }
 
     public static CharSequence e(Context context, int i) {
@@ -58,7 +58,7 @@ public abstract class CardNetwork implements Parcelable {
                     return "EFTPOS";
             }
         }
-        if (fldt.y()) {
+        if (fnvd.x()) {
             return "Verve";
         }
         return context.getText(R.string.common_card);
@@ -66,27 +66,27 @@ public abstract class CardNetwork implements Parcelable {
 
     public static Integer f(int i) {
         if (i == 1) {
-            return 2131234014;
+            return 2131234086;
         }
         if (i == 2) {
-            return 2131234016;
+            return 2131234088;
         }
         if (i == 3) {
-            return 2131234017;
+            return 2131234089;
         }
         if (i == 4) {
-            return 2131234020;
+            return 2131234092;
         }
         if (i == 5) {
-            return 2131234021;
+            return 2131234093;
         }
         if (i == 8) {
-            return 2131234023;
+            return 2131234095;
         }
         if (i != 9) {
-            return (i == 23 && fldt.y()) ? 2131234022 : 2131234019;
+            return (i == 23 && fnvd.x()) ? 2131234094 : 2131234091;
         }
-        return 2131234018;
+        return 2131234090;
     }
 
     public abstract int a();

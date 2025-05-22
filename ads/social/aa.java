@@ -3,20 +3,20 @@ package com.google.android.gms.ads.social;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Base64;
-import defpackage.eobu;
-import defpackage.eoca;
-import defpackage.eocl;
-import defpackage.eolj;
-import defpackage.eolo;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.felv;
-import defpackage.fjzn;
+import defpackage.eqpn;
+import defpackage.eqpt;
+import defpackage.eqqe;
+import defpackage.eqzf;
+import defpackage.eqzk;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fhao;
+import defpackage.fmpr;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class aa {
     private static aa b;
@@ -27,7 +27,7 @@ final class aa {
     public aa(Context context) {
         this.a = context.getSharedPreferences("social.trustless_token", 0);
         try {
-            eolj.a();
+            eqzf.a();
         } catch (GeneralSecurityException e) {
             com.google.android.gms.ads.internal.c.d().d(e, "TrustlessTokenStorage.TrustlessTokenStorage");
         }
@@ -45,36 +45,36 @@ final class aa {
     }
 
     private final synchronized byte[] g(String str) {
-        fecj v;
-        v = felv.a.v();
+        fgrc v;
+        v = fhao.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        felv felvVar = (felv) v.b;
-        felvVar.b |= 1;
-        felvVar.c = str;
+        fhao fhaoVar = (fhao) v.b;
+        fhaoVar.b |= 1;
+        fhaoVar.c = str;
         long currentTimeMillis = System.currentTimeMillis();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        felv felvVar2 = (felv) fecpVar;
-        felvVar2.b |= 2;
-        felvVar2.d = currentTimeMillis;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        fhao fhaoVar2 = (fhao) fgriVar;
+        fhaoVar2.b |= 2;
+        fhaoVar2.d = currentTimeMillis;
+        if (!fgriVar.L()) {
             v.U();
         }
-        felv felvVar3 = (felv) v.b;
-        felvVar3.e = 1;
-        felvVar3.b |= 4;
-        return ((felv) v.Q()).r();
+        fhao fhaoVar3 = (fhao) v.b;
+        fhaoVar3.e = 1;
+        fhaoVar3.b |= 4;
+        return ((fhao) v.Q()).r();
     }
 
     final synchronized String b(String str) {
         if (str != null) {
-            if (fjzn.g()) {
+            if (fmpr.g()) {
                 try {
-                    return Base64.encodeToString(((eoca) eocl.i(eobu.a(Base64.decode(fjzn.d(), 8))).l(eolo.a(), eoca.class)).a(g(str), new byte[0]), 10);
+                    return Base64.encodeToString(((eqpt) eqqe.i(eqpn.a(Base64.decode(fmpr.d(), 8))).l(eqzk.a(), eqpt.class)).a(g(str), new byte[0]), 10);
                 } catch (IOException | IllegalArgumentException | GeneralSecurityException e) {
                     String concat = "Failed to encrypt the token: ".concat(e.toString());
                     int i = com.google.android.gms.ads.internal.util.c.a;
@@ -107,7 +107,7 @@ final class aa {
         a aVar2 = a.DORITOS_WITH_GAIA;
         edit.putString(aVar == aVar2 ? "token" : "gaialess_token", str).apply();
         com.google.android.gms.ads.internal.c.j();
-        sharedPreferences.edit().putLong(aVar == aVar2 ? "token_expiration_millis" : "gaialess_token_expiration_millis", System.currentTimeMillis() + fjzn.b()).apply();
+        sharedPreferences.edit().putLong(aVar == aVar2 ? "token_expiration_millis" : "gaialess_token_expiration_millis", System.currentTimeMillis() + fmpr.b()).apply();
         if (aVar == aVar2) {
             this.c.set(false);
         } else {
@@ -144,13 +144,13 @@ final class aa {
         L19:
             com.google.android.gms.ads.internal.c.j()     // Catch: java.lang.Throwable -> L37
             android.content.SharedPreferences r2 = r7.a     // Catch: java.lang.Throwable -> L37
-            long r3 = java.lang.System.currentTimeMillis()     // Catch: java.lang.Throwable -> L37
-            if (r8 != r0) goto L27
+            if (r8 != r0) goto L23
             java.lang.String r8 = "token_expiration_millis"
-            goto L29
-        L27:
+            goto L25
+        L23:
             java.lang.String r8 = "gaialess_token_expiration_millis"
-        L29:
+        L25:
+            long r3 = java.lang.System.currentTimeMillis()     // Catch: java.lang.Throwable -> L37
             r5 = 0
             long r5 = r2.getLong(r8, r5)     // Catch: java.lang.Throwable -> L37
             int r8 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))

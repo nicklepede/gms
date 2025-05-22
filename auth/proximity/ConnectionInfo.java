@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.acea;
-import defpackage.arxc;
-import defpackage.bsa;
+import defpackage.aeea;
+import defpackage.atzr;
+import defpackage.bsl;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ConnectionInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new acea();
+    public static final Parcelable.Creator CREATOR = new aeea();
     public final int a;
     public final RemoteDevice b;
     public final Role[] c;
@@ -35,7 +35,7 @@ public class ConnectionInfo extends AbstractSafeParcelable {
         if (obj != null) {
             if (obj.getClass().equals(getClass())) {
                 ConnectionInfo connectionInfo = (ConnectionInfo) obj;
-                boolean equals = new bsa(Arrays.asList(this.c)).equals(new bsa(Arrays.asList(connectionInfo.c)));
+                boolean equals = new bsl(Arrays.asList(this.c)).equals(new bsl(Arrays.asList(connectionInfo.c)));
                 if (connectionInfo.b.equals(this.b) && equals && connectionInfo.d == this.d && Arrays.equals(connectionInfo.e, this.e)) {
                     return true;
                 }
@@ -62,12 +62,12 @@ public class ConnectionInfo extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         RemoteDevice remoteDevice = this.b;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, remoteDevice, i, false);
-        arxc.J(parcel, 2, this.c, i);
-        arxc.o(parcel, 3, this.d);
-        arxc.i(parcel, 4, this.e, false);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, remoteDevice, i, false);
+        atzr.J(parcel, 2, this.c, i);
+        atzr.o(parcel, 3, this.d);
+        atzr.i(parcel, 4, this.e, false);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
+        atzr.c(parcel, a);
     }
 }

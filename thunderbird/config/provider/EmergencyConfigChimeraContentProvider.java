@@ -11,32 +11,32 @@ import android.text.TextUtils;
 import com.google.android.chimera.ContentProvider;
 import com.google.android.gms.thunderbird.config.provider.EmergencyConfigChimeraContentProvider;
 import com.google.android.gms.thunderbird.state.DeviceState;
-import defpackage.asni;
-import defpackage.dfuq;
-import defpackage.dfvc;
-import defpackage.dfvn;
-import defpackage.dfvt;
-import defpackage.dfvu;
-import defpackage.dfvw;
-import defpackage.dfzr;
-import defpackage.eiih;
-import defpackage.eitj;
-import defpackage.eivv;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.feep;
-import defpackage.fsnb;
+import defpackage.aurc;
+import defpackage.difv;
+import defpackage.digh;
+import defpackage.digs;
+import defpackage.digy;
+import defpackage.digz;
+import defpackage.dihb;
+import defpackage.dikw;
+import defpackage.ekvm;
+import defpackage.elgo;
+import defpackage.elja;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgti;
+import defpackage.fvik;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class EmergencyConfigChimeraContentProvider extends ContentProvider {
     public static final /* synthetic */ int a = 0;
     private static final UriMatcher b;
-    private dfvn c;
+    private digs c;
 
     static {
         UriMatcher uriMatcher = new UriMatcher(-1);
@@ -48,24 +48,24 @@ public class EmergencyConfigChimeraContentProvider extends ContentProvider {
     }
 
     private final Iterable a(Iterable iterable) {
-        if (!fsnb.a.a().T()) {
+        if (!fvik.a.lK().T()) {
             return iterable;
         }
         final Context context = getContext();
-        final eitj c = DeviceState.c(context);
-        return eivv.d(iterable, new eiih() { // from class: dfvr
-            @Override // defpackage.eiih
+        final elgo c = DeviceState.c(context);
+        return elja.d(iterable, new ekvm() { // from class: digw
+            @Override // defpackage.ekvm
             public final boolean a(Object obj) {
                 boolean f;
-                dfvc dfvcVar = (dfvc) obj;
+                digh dighVar = (digh) obj;
                 int i = EmergencyConfigChimeraContentProvider.a;
                 int i2 = 0;
                 do {
-                    eitj eitjVar = eitj.this;
-                    if (i2 >= ((ejcb) eitjVar).c) {
+                    elgo elgoVar = elgo.this;
+                    if (i2 >= ((elpg) elgoVar).c) {
                         return false;
                     }
-                    f = dfvcVar.f(context, (DeviceState) eitjVar.get(i2));
+                    f = dighVar.f(context, (DeviceState) elgoVar.get(i2));
                     i2++;
                 } while (!f);
                 return true;
@@ -84,14 +84,14 @@ public class EmergencyConfigChimeraContentProvider extends ContentProvider {
     }
 
     private final void c() {
-        if (TextUtils.isEmpty(fsnb.n()) || asni.e(fsnb.n().split(","), getCallingPackage())) {
+        if (TextUtils.isEmpty(fvik.n()) || aurc.e(fvik.n().split(","), getCallingPackage())) {
             return;
         }
         throw new SecurityException("Permission Denial: " + getCallingPackage() + " from pid=" + Binder.getCallingPid() + ", uid=" + Binder.getCallingUid() + " not allowed");
     }
 
     private final void d() {
-        for (String str : Build.VERSION.SDK_INT >= 28 ? dfvw.b : dfvw.a) {
+        for (String str : Build.VERSION.SDK_INT >= 28 ? dihb.b : dihb.a) {
             getContext().enforceCallingPermission(str, null);
         }
     }
@@ -102,16 +102,16 @@ public class EmergencyConfigChimeraContentProvider extends ContentProvider {
         d();
         int match = b.match(uri);
         if (match == 1) {
-            dfvn dfvnVar = this.c;
+            digs digsVar = this.c;
             Context context = getContext();
-            CopyOnWriteArrayList copyOnWriteArrayList = dfvnVar.a;
+            CopyOnWriteArrayList copyOnWriteArrayList = digsVar.a;
             synchronized (copyOnWriteArrayList) {
-                dfvnVar.c(context);
+                digsVar.c(context);
                 size = copyOnWriteArrayList.size();
-                ((ejhf) ((ejhf) dfzr.a.h()).ah(11258)).x("clearing all mock configs");
+                ((eluo) ((eluo) dikw.a.h()).ai(11261)).x("clearing all mock configs");
                 copyOnWriteArrayList.clear();
-                dfvnVar.g(context);
-                dfvnVar.e(dfvu.a);
+                digsVar.g(context);
+                digsVar.e(digz.a);
             }
             return size;
         }
@@ -119,17 +119,17 @@ public class EmergencyConfigChimeraContentProvider extends ContentProvider {
             throw new IllegalArgumentException("Unsupported URI: ".concat(String.valueOf(String.valueOf(uri))));
         }
         String b2 = b(uri, "mock");
-        dfvn dfvnVar2 = this.c;
+        digs digsVar2 = this.c;
         Context context2 = getContext();
-        CopyOnWriteArrayList copyOnWriteArrayList2 = dfvnVar2.a;
+        CopyOnWriteArrayList copyOnWriteArrayList2 = digsVar2.a;
         synchronized (copyOnWriteArrayList2) {
-            dfvnVar2.c(context2);
+            digsVar2.c(context2);
             for (int i = 0; i < copyOnWriteArrayList2.size(); i++) {
-                if (((dfvc) copyOnWriteArrayList2.get(i)).a.equals(b2)) {
-                    ((ejhf) ((ejhf) dfzr.a.h()).ah(11268)).B("removing mock config: %s", b2);
+                if (((digh) copyOnWriteArrayList2.get(i)).a.equals(b2)) {
+                    ((eluo) ((eluo) dikw.a.h()).ai(11271)).B("removing mock config: %s", b2);
                     copyOnWriteArrayList2.remove(i);
-                    dfvnVar2.g(context2);
-                    dfvnVar2.e(dfvu.a.buildUpon().appendPath(b2).build());
+                    digsVar2.g(context2);
+                    digsVar2.e(digz.a.buildUpon().appendPath(b2).build());
                     return 1;
                 }
             }
@@ -145,7 +145,7 @@ public class EmergencyConfigChimeraContentProvider extends ContentProvider {
     */
     public final void dump(java.io.FileDescriptor r6, java.io.PrintWriter r7, java.lang.String[] r8) {
         /*
-            Method dump skipped, instructions count: 424
+            Method dump skipped, instructions count: 430
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.thunderbird.config.provider.EmergencyConfigChimeraContentProvider.dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]):void");
@@ -180,15 +180,15 @@ public class EmergencyConfigChimeraContentProvider extends ContentProvider {
             throw new IllegalArgumentException("No values provided");
         }
         try {
-            dfuq dfuqVar = dfuq.a;
+            difv difvVar = difv.a;
             int length = asByteArray.length;
-            febw febwVar = febw.a;
-            feep feepVar = feep.a;
-            fecp y = fecp.y(dfuqVar, asByteArray, 0, length, febw.a);
-            fecp.M(y);
-            dfuq dfuqVar2 = (dfuq) y;
-            if (this.c.h(getContext(), dfuqVar2, false)) {
-                return uri.buildUpon().appendPath(dfuqVar2.c).build();
+            fgqp fgqpVar = fgqp.a;
+            fgti fgtiVar = fgti.a;
+            fgri y = fgri.y(difvVar, asByteArray, 0, length, fgqp.a);
+            fgri.M(y);
+            difv difvVar2 = (difv) y;
+            if (this.c.h(getContext(), difvVar2, false)) {
+                return uri.buildUpon().appendPath(difvVar2.c).build();
             }
             return null;
         } catch (IOException | ParseException e) {
@@ -198,16 +198,16 @@ public class EmergencyConfigChimeraContentProvider extends ContentProvider {
 
     @Override // com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
-        dfvn a2 = dfvn.a();
+        digs a2 = digs.a();
         this.c = a2;
-        a2.registerObserver((ContentObserver) new dfvt(this));
+        a2.registerObserver((ContentObserver) new digy(this));
         return true;
     }
 
     @Override // com.google.android.chimera.ContentProvider
     public final void onTrimMemory(int i) {
         if (i >= 60) {
-            dfvn.f();
+            digs.f();
         }
     }
 
@@ -238,15 +238,15 @@ public class EmergencyConfigChimeraContentProvider extends ContentProvider {
             throw new IllegalArgumentException("No values provided");
         }
         try {
-            dfuq dfuqVar = dfuq.a;
+            difv difvVar = difv.a;
             int length = asByteArray.length;
-            febw febwVar = febw.a;
-            feep feepVar = feep.a;
-            fecp y = fecp.y(dfuqVar, asByteArray, 0, length, febw.a);
-            fecp.M(y);
-            dfuq dfuqVar2 = (dfuq) y;
-            if (b2.equals(dfuqVar2.c)) {
-                return this.c.h(getContext(), dfuqVar2, true) ? 1 : 0;
+            fgqp fgqpVar = fgqp.a;
+            fgti fgtiVar = fgti.a;
+            fgri y = fgri.y(difvVar, asByteArray, 0, length, fgqp.a);
+            fgri.M(y);
+            difv difvVar2 = (difv) y;
+            if (b2.equals(difvVar2.c)) {
+                return this.c.h(getContext(), difvVar2, true) ? 1 : 0;
             }
             throw new IllegalArgumentException("Config name must match updated config name");
         } catch (IOException | ParseException e) {

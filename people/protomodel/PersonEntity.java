@@ -3,18 +3,18 @@ package com.google.android.gms.people.protomodel;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cugk;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cwpr;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class PersonEntity extends AbstractSafeParcelable implements Person {
-    public static final Parcelable.Creator CREATOR = new cugk();
+    public static final Parcelable.Creator CREATOR = new cwpr();
     public final String a;
     private final List b;
     private final List c;
@@ -104,7 +104,7 @@ public class PersonEntity extends AbstractSafeParcelable implements Person {
             return true;
         }
         Person person = (Person) obj;
-        return arwb.b(a(), person.a()) && arwb.b(e(), person.e()) && arwb.b(g(), person.g()) && arwb.b(d(), person.d()) && arwb.b(f(), person.f()) && arwb.b(c(), person.c()) && arwb.b(b(), person.b());
+        return atyq.b(a(), person.a()) && atyq.b(e(), person.e()) && atyq.b(g(), person.g()) && atyq.b(d(), person.d()) && atyq.b(f(), person.f()) && atyq.b(c(), person.c()) && atyq.b(b(), person.b());
     }
 
     @Override // com.google.android.gms.people.protomodel.Person
@@ -140,15 +140,15 @@ public class PersonEntity extends AbstractSafeParcelable implements Person {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.y(parcel, 4, e(), false);
-        arxc.y(parcel, 5, g(), false);
-        arxc.y(parcel, 9, c(), false);
-        arxc.y(parcel, 11, d(), false);
-        arxc.y(parcel, 13, f(), false);
-        arxc.y(parcel, 148, b(), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.y(parcel, 4, e(), false);
+        atzr.y(parcel, 5, g(), false);
+        atzr.y(parcel, 9, c(), false);
+        atzr.y(parcel, 11, d(), false);
+        atzr.y(parcel, 13, f(), false);
+        atzr.y(parcel, 148, b(), false);
+        atzr.c(parcel, a);
     }
 
     public PersonEntity(List list, List list2, List list3, List list4, List list5) {
@@ -207,7 +207,7 @@ public class PersonEntity extends AbstractSafeParcelable implements Person {
         this.g = null;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

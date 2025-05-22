@@ -1,117 +1,119 @@
 package com.google.android.gms.growth.featuredrops.googlesettings.features.cards;
 
 import android.accounts.Account;
-import defpackage.asej;
-import defpackage.asew;
-import defpackage.asoe;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.bkie;
-import defpackage.bkii;
-import defpackage.bkik;
-import defpackage.bkil;
-import defpackage.bqrp;
-import defpackage.bqrq;
-import defpackage.bquj;
-import defpackage.bqul;
-import defpackage.bqun;
-import defpackage.bzau;
-import defpackage.ejhf;
-import defpackage.feay;
-import defpackage.febe;
-import defpackage.febf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.feex;
-import defpackage.fefm;
-import defpackage.fowd;
-import defpackage.fvbo;
+import defpackage.auid;
+import defpackage.auiq;
+import defpackage.aury;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.bmou;
+import defpackage.bmoy;
+import defpackage.bmpa;
+import defpackage.bmpb;
+import defpackage.bszg;
+import defpackage.bszh;
+import defpackage.btca;
+import defpackage.btcc;
+import defpackage.btce;
+import defpackage.cbjl;
+import defpackage.eluo;
+import defpackage.fgpr;
+import defpackage.fgpx;
+import defpackage.fgpy;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.fgtq;
+import defpackage.fguf;
+import defpackage.frpg;
+import defpackage.fxxm;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class FeatureDropsContextualCardIntentOperation extends bqun {
-    public static final asot a = asot.b("FeatureDrops", asej.GROWTH_FEATUREDROPS);
-    public bkik b;
+public final class FeatureDropsContextualCardIntentOperation extends btce {
+    public static final ausn a = ausn.b("FeatureDrops", auid.GROWTH_FEATUREDROPS);
+    public bmpa b;
 
     public FeatureDropsContextualCardIntentOperation() {
-        super(asew.DEFAULT_GROWTH);
+        super(auiq.DEFAULT_GROWTH);
     }
 
-    @Override // defpackage.bqun
-    public final bquj a(bqul bqulVar) {
-        if (!asqh.e() || asoe.i(this)) {
-            return bquj.e;
+    @Override // defpackage.btce
+    public final btca a(btcc btccVar) {
+        if (!auub.e() || aury.i(this)) {
+            return btca.e;
         }
-        Account account = bqulVar.a;
+        Account account = btccVar.a;
         if (account == null) {
-            ((ejhf) a.j()).x("Cannot create contextual card: no active account.");
-            return bquj.e;
+            ((eluo) a.j()).x("Cannot create contextual card: no active account.");
+            return btca.e;
         }
-        bkil.b().a().a(this);
-        bkik bkikVar = this.b;
-        bzau bzauVar = null;
-        if (bkikVar == null) {
-            fvbo.j("cardFetcherFactory");
-            bkikVar = null;
+        bmpb.b().a().a(this);
+        bmpa bmpaVar = this.b;
+        cbjl cbjlVar = null;
+        if (bmpaVar == null) {
+            fxxm.j("cardFetcherFactory");
+            bmpaVar = null;
         }
         String str = account.name;
-        fvbo.e(str, "name");
-        bqrq bqrqVar = bqulVar.b;
-        if (bqrqVar != null) {
-            int i = bqrqVar.b;
-            if (((i == 2 ? (bqrp) bqrqVar.c : bqrp.a).b & 1 & (i == 2 ? 1 : 0)) != 0) {
+        fxxm.e(str, "name");
+        bszh bszhVar = btccVar.b;
+        if (bszhVar != null) {
+            int i = bszhVar.b;
+            if (((i == 2 ? (bszg) bszhVar.c : bszg.a).b & 1 & (i == 2 ? 1 : 0)) != 0) {
                 try {
-                    feay feayVar = (bqrqVar.b == 2 ? (bqrp) bqrqVar.c : bqrp.a).c;
-                    febw febwVar = febw.a;
-                    feep feepVar = feep.a;
-                    febw febwVar2 = febw.a;
-                    bzau bzauVar2 = bzau.a;
-                    febe k = feayVar.k();
-                    fecp x = bzauVar2.x();
+                    fgpr fgprVar = (bszhVar.b == 2 ? (bszg) bszhVar.c : bszg.a).c;
+                    fgqp fgqpVar = fgqp.a;
+                    fgti fgtiVar = fgti.a;
+                    fgqp fgqpVar2 = fgqp.a;
+                    cbjl cbjlVar2 = cbjl.a;
+                    fgpx k = fgprVar.k();
+                    fgri x = cbjlVar2.x();
                     try {
                         try {
-                            feex b = feep.a.b(x);
-                            b.l(x, febf.p(k), febwVar2);
-                            b.g(x);
                             try {
-                                k.z(0);
-                                fecp.M(x);
-                                bzauVar = (bzau) x;
-                            } catch (fedk e) {
-                                throw e;
+                                fgtq b = fgti.a.b(x);
+                                b.l(x, fgpy.p(k), fgqpVar2);
+                                b.g(x);
+                                try {
+                                    k.z(0);
+                                    fgri.M(x);
+                                    cbjlVar = (cbjl) x;
+                                } catch (fgsd e) {
+                                    throw e;
+                                }
+                            } catch (fguf e2) {
+                                throw e2.a();
+                            } catch (RuntimeException e3) {
+                                if (e3.getCause() instanceof fgsd) {
+                                    throw ((fgsd) e3.getCause());
+                                }
+                                throw e3;
                             }
-                        } catch (fefm e2) {
-                            throw e2.a();
-                        } catch (IOException e3) {
-                            if (e3.getCause() instanceof fedk) {
-                                throw ((fedk) e3.getCause());
+                        } catch (fgsd e4) {
+                            if (e4.a) {
+                                throw new fgsd(e4);
                             }
-                            throw new fedk(e3);
+                            throw e4;
                         }
-                    } catch (fedk e4) {
-                        if (e4.a) {
-                            throw new fedk(e4);
+                    } catch (IOException e5) {
+                        if (e5.getCause() instanceof fgsd) {
+                            throw ((fgsd) e5.getCause());
                         }
-                        throw e4;
-                    } catch (RuntimeException e5) {
-                        if (e5.getCause() instanceof fedk) {
-                            throw ((fedk) e5.getCause());
-                        }
-                        throw e5;
+                        throw new fgsd(e5);
                     }
-                } catch (fedk e6) {
-                    ((ejhf) ((ejhf) a.j()).s(e6)).x("Failed to deserialize UTM parameters.");
+                } catch (fgsd e6) {
+                    ((eluo) ((eluo) a.j()).s(e6)).x("Failed to deserialize UTM parameters.");
                 }
             }
         }
-        return new bkii(((bkie) bkikVar.a.a).a(), str, bzauVar);
+        return new bmoy(((bmou) bmpaVar.a.a).a(), str, cbjlVar);
     }
 
-    @Override // defpackage.bqtk
+    @Override // defpackage.btbb
     protected final boolean b() {
-        return !fowd.a.a().k();
+        return !frpg.a.lK().m();
     }
 }

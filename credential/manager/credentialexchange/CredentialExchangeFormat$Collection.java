@@ -1,14 +1,14 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.fipp;
-import defpackage.fuww;
-import defpackage.fvbo;
+import defpackage.flfm;
+import defpackage.fxsu;
+import defpackage.fxxm;
 import java.util.List;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
 public final class CredentialExchangeFormat$Collection {
     public final String a;
     public final Long b;
@@ -20,9 +20,9 @@ public final class CredentialExchangeFormat$Collection {
     public final List h;
 
     public CredentialExchangeFormat$Collection(String str, Long l, Long l2, String str2, String str3, List list, List list2, List list3) {
-        fvbo.f(str, "id");
-        fvbo.f(str2, "title");
-        fvbo.f(list, "items");
+        fxxm.f(str, "id");
+        fxxm.f(str2, "title");
+        fxxm.f(list, "items");
         this.a = str;
         this.b = l;
         this.c = l2;
@@ -41,7 +41,7 @@ public final class CredentialExchangeFormat$Collection {
             return false;
         }
         CredentialExchangeFormat$Collection credentialExchangeFormat$Collection = (CredentialExchangeFormat$Collection) obj;
-        return fvbo.n(this.a, credentialExchangeFormat$Collection.a) && fvbo.n(this.b, credentialExchangeFormat$Collection.b) && fvbo.n(this.c, credentialExchangeFormat$Collection.c) && fvbo.n(this.d, credentialExchangeFormat$Collection.d) && fvbo.n(this.e, credentialExchangeFormat$Collection.e) && fvbo.n(this.f, credentialExchangeFormat$Collection.f) && fvbo.n(this.g, credentialExchangeFormat$Collection.g) && fvbo.n(this.h, credentialExchangeFormat$Collection.h);
+        return fxxm.n(this.a, credentialExchangeFormat$Collection.a) && fxxm.n(this.b, credentialExchangeFormat$Collection.b) && fxxm.n(this.c, credentialExchangeFormat$Collection.c) && fxxm.n(this.d, credentialExchangeFormat$Collection.d) && fxxm.n(this.e, credentialExchangeFormat$Collection.e) && fxxm.n(this.f, credentialExchangeFormat$Collection.f) && fxxm.n(this.g, credentialExchangeFormat$Collection.g) && fxxm.n(this.h, credentialExchangeFormat$Collection.h);
     }
 
     public final int hashCode() {
@@ -63,6 +63,6 @@ public final class CredentialExchangeFormat$Collection {
     }
 
     public /* synthetic */ CredentialExchangeFormat$Collection(String str, Long l, Long l2, String str2, String str3, List list, List list2, List list3, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(str, l, l2, str2, str3, list, (i & 64) != 0 ? fuww.a : list2, (i & 128) != 0 ? fuww.a : list3);
+        this(str, l, l2, str2, str3, list, (i & 64) != 0 ? fxsu.a : list2, (i & 128) != 0 ? fxsu.a : list3);
     }
 }

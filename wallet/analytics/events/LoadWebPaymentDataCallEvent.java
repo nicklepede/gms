@@ -4,31 +4,31 @@ import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
-import defpackage.difr;
-import defpackage.disk;
-import defpackage.divi;
-import defpackage.efdk;
-import defpackage.emec;
-import defpackage.emfa;
-import defpackage.feen;
+import defpackage.dkrc;
+import defpackage.dldv;
+import defpackage.dlgt;
+import defpackage.ehqn;
+import defpackage.eorq;
+import defpackage.eoso;
+import defpackage.fgtg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class LoadWebPaymentDataCallEvent extends AnalyticsSessionStartEndEvent {
-    public static final Parcelable.Creator CREATOR = new difr();
+    public static final Parcelable.Creator CREATOR = new dkrc();
     public final BuyFlowConfig c;
-    public final emec d;
-    public final emfa e;
+    public final eorq d;
+    public final eoso e;
 
     public LoadWebPaymentDataCallEvent(Parcel parcel) {
         super(parcel);
         this.c = (BuyFlowConfig) parcel.readParcelable(LoadWebPaymentDataCallEvent.class.getClassLoader());
-        this.d = (emec) efdk.f(parcel, (feen) emec.a.iB(7, null));
-        this.e = (emfa) efdk.f(parcel, (feen) emfa.a.iB(7, null));
+        this.d = (eorq) ehqn.f(parcel, (fgtg) eorq.a.iQ(7, null));
+        this.e = (eoso) ehqn.f(parcel, (fgtg) eoso.a.iQ(7, null));
     }
 
-    public static void b(Context context, BuyFlowConfig buyFlowConfig, emec emecVar, String str, emfa emfaVar) {
-        divi.a(context, new LoadWebPaymentDataCallEvent(buyFlowConfig, emecVar, str, emfaVar));
+    public static void b(Context context, BuyFlowConfig buyFlowConfig, eorq eorqVar, String str, eoso eosoVar) {
+        dlgt.a(context, new LoadWebPaymentDataCallEvent(buyFlowConfig, eorqVar, str, eosoVar));
     }
 
     @Override // android.os.Parcelable
@@ -40,16 +40,16 @@ public class LoadWebPaymentDataCallEvent extends AnalyticsSessionStartEndEvent {
     public final void writeToParcel(Parcel parcel, int i) {
         super.writeToParcel(parcel, i);
         parcel.writeParcelable(this.c, i);
-        efdk.o(this.d, parcel);
-        efdk.o(this.e, parcel);
+        ehqn.o(this.d, parcel);
+        ehqn.o(this.e, parcel);
     }
 
-    public LoadWebPaymentDataCallEvent(BuyFlowConfig buyFlowConfig, emec emecVar, String str, emfa emfaVar) {
-        this.m = disk.a();
+    public LoadWebPaymentDataCallEvent(BuyFlowConfig buyFlowConfig, eorq eorqVar, String str, eoso eosoVar) {
+        this.m = dldv.a();
         this.c = buyFlowConfig;
-        this.d = emecVar;
+        this.d = eorqVar;
         this.a = str;
-        this.e = emfaVar;
+        this.e = eosoVar;
         this.b = a(buyFlowConfig, str);
     }
 }

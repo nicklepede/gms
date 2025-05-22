@@ -11,12 +11,13 @@ import com.google.android.gms.ads.internal.util.m;
 import com.google.android.gms.ads.internal.util.n;
 import com.google.android.gms.ads.internal.util.o;
 import com.google.android.gms.ads.internal.webview.q;
-import defpackage.asnv;
-import defpackage.asnz;
+import defpackage.aurp;
+import defpackage.aurt;
 import j$.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class c {
     public static final c a = new c();
@@ -33,7 +34,7 @@ public final class c {
     private final com.google.android.gms.ads.internal.util.p l;
     private final com.google.android.gms.ads.internal.appcontent.c m;
     private final e n;
-    private final asnv o;
+    private final aurp o;
     private final com.google.android.gms.ads.internal.csi.c p;
     private final com.google.android.gms.ads.internal.js.function.b q;
     private final ac r;
@@ -46,12 +47,14 @@ public final class c {
         com.google.android.gms.ads.internal.overlay.c cVar = new com.google.android.gms.ads.internal.overlay.c();
         m mVar = new m();
         q qVar = new q();
+        new AtomicBoolean(false);
+        new AtomicBoolean(false);
         int i = Build.VERSION.SDK_INT;
         com.google.android.gms.ads.internal.util.p oVar = i >= 30 ? new o() : i >= 28 ? new n() : i >= 26 ? new n() : i >= 24 ? new n() : new n();
         com.google.android.gms.ads.internal.appcontent.c cVar2 = new com.google.android.gms.ads.internal.appcontent.c();
         e eVar = new e();
         com.google.android.gms.ads.internal.cache.a aVar2 = new com.google.android.gms.ads.internal.cache.a();
-        asnz asnzVar = asnz.a;
+        aurt aurtVar = aurt.a;
         com.google.android.gms.ads.internal.csi.c cVar3 = new com.google.android.gms.ads.internal.csi.c();
         com.google.android.gms.ads.internal.customtabs.c cVar4 = new com.google.android.gms.ads.internal.customtabs.c();
         f fVar = new f();
@@ -74,7 +77,7 @@ public final class c {
         this.m = cVar2;
         this.n = eVar;
         this.e = aVar2;
-        this.o = asnzVar;
+        this.o = aurtVar;
         this.p = cVar3;
         this.f = cVar4;
         this.g = fVar;
@@ -125,7 +128,7 @@ public final class c {
     }
 
     public static void j() {
-        asnv asnvVar = a.o;
+        aurp aurpVar = a.o;
     }
 
     public static void k() {

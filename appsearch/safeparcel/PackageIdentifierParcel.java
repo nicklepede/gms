@@ -3,15 +3,15 @@ package com.google.android.gms.appsearch.safeparcel;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.uge;
+import defpackage.atzr;
+import defpackage.wcd;
 import j$.util.Objects;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class PackageIdentifierParcel extends AbstractSafeParcelable implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new uge();
+    public static final Parcelable.Creator CREATOR = new wcd();
     public final String a;
     public final byte[] b;
 
@@ -38,9 +38,9 @@ public final class PackageIdentifierParcel extends AbstractSafeParcelable implem
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.i(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.i(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

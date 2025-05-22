@@ -3,17 +3,17 @@ package com.google.android.gms.nearby.sharing;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmcf;
-import defpackage.cmcg;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cokn;
+import defpackage.coko;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class WifiCredentialsAttachment extends Attachment {
-    public static final Parcelable.Creator CREATOR = new cmcg();
+    public static final Parcelable.Creator CREATOR = new coko();
     public final String a;
     public final int b;
     public final Bundle c;
@@ -52,19 +52,19 @@ public final class WifiCredentialsAttachment extends Attachment {
 
     @Override // com.google.android.gms.nearby.sharing.Attachment
     /* renamed from: e, reason: merged with bridge method [inline-methods] */
-    public final cmcf f() {
-        cmcf cmcfVar = new cmcf(this.a);
-        cmcfVar.a = this.f;
-        cmcfVar.d = this.e;
-        cmcfVar.c = this.d;
-        cmcfVar.b = this.b;
-        return cmcfVar;
+    public final cokn f() {
+        cokn coknVar = new cokn(this.a);
+        coknVar.a = this.f;
+        coknVar.d = this.e;
+        coknVar.c = this.d;
+        coknVar.b = this.b;
+        return coknVar;
     }
 
     public final boolean equals(Object obj) {
         if (obj instanceof WifiCredentialsAttachment) {
             WifiCredentialsAttachment wifiCredentialsAttachment = (WifiCredentialsAttachment) obj;
-            if (arwb.b(this.a, wifiCredentialsAttachment.a) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(wifiCredentialsAttachment.b)) && arwb.b(Long.valueOf(this.f), Long.valueOf(wifiCredentialsAttachment.f)) && arwb.b(this.d, wifiCredentialsAttachment.d) && arwb.b(Boolean.valueOf(this.e), Boolean.valueOf(wifiCredentialsAttachment.e))) {
+            if (atyq.b(this.a, wifiCredentialsAttachment.a) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(wifiCredentialsAttachment.b)) && atyq.b(Long.valueOf(this.f), Long.valueOf(wifiCredentialsAttachment.f)) && atyq.b(this.d, wifiCredentialsAttachment.d) && atyq.b(Boolean.valueOf(this.e), Boolean.valueOf(wifiCredentialsAttachment.e))) {
                 return true;
             }
         }
@@ -91,13 +91,13 @@ public final class WifiCredentialsAttachment extends Attachment {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.g(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.e(parcel, 5, this.e);
-        arxc.q(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.g(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.e(parcel, 5, this.e);
+        atzr.q(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 }

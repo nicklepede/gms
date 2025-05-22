@@ -3,15 +3,15 @@ package com.google.android.gms.mobilesubscription.serviceconfig;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cese;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.chbm;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class GetAuthResultResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cese();
+    public static final Parcelable.Creator CREATOR = new chbm();
     public final String a;
     public final String b;
     public final long c;
@@ -42,7 +42,7 @@ public class GetAuthResultResponse extends AbstractSafeParcelable {
             return false;
         }
         GetAuthResultResponse getAuthResultResponse = (GetAuthResultResponse) obj;
-        return this.c == getAuthResultResponse.c && this.d == getAuthResultResponse.d && this.e == getAuthResultResponse.e && arwb.b(this.a, getAuthResultResponse.a) && arwb.b(this.b, getAuthResultResponse.b) && arwb.b(this.f, getAuthResultResponse.f) && arwb.b(this.g, getAuthResultResponse.g) && arwb.b(this.h, getAuthResultResponse.h) && arwb.b(this.i, getAuthResultResponse.i);
+        return this.c == getAuthResultResponse.c && this.d == getAuthResultResponse.d && this.e == getAuthResultResponse.e && atyq.b(this.a, getAuthResultResponse.a) && atyq.b(this.b, getAuthResultResponse.b) && atyq.b(this.f, getAuthResultResponse.f) && atyq.b(this.g, getAuthResultResponse.g) && atyq.b(this.h, getAuthResultResponse.h) && atyq.b(this.i, getAuthResultResponse.i);
     }
 
     public final int hashCode() {
@@ -52,16 +52,16 @@ public class GetAuthResultResponse extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.q(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.q(parcel, 5, this.e);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.q(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.q(parcel, 5, this.e);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.c(parcel, a);
     }
 }

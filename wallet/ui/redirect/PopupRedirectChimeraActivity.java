@@ -10,38 +10,38 @@ import com.google.android.gms.R;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
 import com.google.android.wallet.clientlog.LogContext;
 import defpackage.a;
-import defpackage.difg;
-import defpackage.dimk;
-import defpackage.ding;
-import defpackage.djig;
-import defpackage.djip;
-import defpackage.efdk;
-import defpackage.efon;
-import defpackage.efts;
-import defpackage.efzv;
-import defpackage.efzx;
-import defpackage.ehpm;
-import defpackage.ehvz;
-import defpackage.ehwa;
-import defpackage.ehwq;
-import defpackage.feay;
-import defpackage.fecj;
-import defpackage.feen;
+import defpackage.dkqr;
+import defpackage.dkxv;
+import defpackage.dkyr;
+import defpackage.dltz;
+import defpackage.dlui;
+import defpackage.ehqn;
+import defpackage.eibq;
+import defpackage.eigv;
+import defpackage.eimy;
+import defpackage.eina;
+import defpackage.ekcs;
+import defpackage.ekjf;
+import defpackage.ekjg;
+import defpackage.ekjw;
+import defpackage.fgpr;
+import defpackage.fgrc;
+import defpackage.fgtg;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class PopupRedirectChimeraActivity extends efzv implements difg, efts {
+public class PopupRedirectChimeraActivity extends eimy implements dkqr, eigv {
     public static final /* synthetic */ int a = 0;
     private Account c;
     private BuyFlowConfig d;
 
-    public static Intent e(Context context, ehvz ehvzVar, ArrayList arrayList, String str, int i, byte[] bArr, LogContext logContext, BuyFlowConfig buyFlowConfig, Account account) {
+    public static Intent e(Context context, ekjf ekjfVar, ArrayList arrayList, String str, int i, byte[] bArr, LogContext logContext, BuyFlowConfig buyFlowConfig, Account account) {
         Intent intent = new Intent();
-        intent.setClassName(context.getPackageName(), efzv.class.getName());
+        intent.setClassName(context.getPackageName(), eimy.class.getName());
         Bundle bundle = new Bundle();
-        efdk.j(bundle, "formProto", ehvzVar);
-        efdk.l(bundle, "successfullyValidatedApps", arrayList);
+        ehqn.j(bundle, "formProto", ekjfVar);
+        ehqn.l(bundle, "successfullyValidatedApps", arrayList);
         bundle.putParcelable("parentLogContext", logContext);
         intent.putExtra("parcelableBundle", bundle);
         intent.putExtra("title", str);
@@ -56,12 +56,12 @@ public class PopupRedirectChimeraActivity extends efzv implements difg, efts {
         return intent;
     }
 
-    @Override // defpackage.pob
+    @Override // defpackage.rhf
     public final void d(Toolbar toolbar) {
         super.d(toolbar);
-        if (ding.Q(l())) {
-            kJ().o(true);
-            dimk.e(toolbar, this, l());
+        if (dkyr.Q(l())) {
+            kY().o(true);
+            dkxv.e(toolbar, this, l());
         } else {
             if (toolbar == null || toolbar.e() == null) {
                 return;
@@ -76,7 +76,7 @@ public class PopupRedirectChimeraActivity extends efzv implements difg, efts {
         }
     }
 
-    @Override // defpackage.efts
+    @Override // defpackage.eigv
     public final int f() {
         BuyFlowConfig l = l();
         if (l != null) {
@@ -85,40 +85,32 @@ public class PopupRedirectChimeraActivity extends efzv implements difg, efts {
         return 0;
     }
 
-    @Override // defpackage.efzv
+    @Override // defpackage.eimy
     protected final void i() {
-        ding.C(this, l(), ding.k, true);
+        dkyr.C(this, l(), dkyr.k, true);
     }
 
-    @Override // defpackage.efzv
-    protected final efzx k(ehvz ehvzVar, ArrayList arrayList, int i, LogContext logContext) {
+    @Override // defpackage.eimy
+    protected final eina k(ekjf ekjfVar, ArrayList arrayList, int i, LogContext logContext) {
         BuyFlowConfig buyFlowConfig = (BuyFlowConfig) getIntent().getBundleExtra("parcelableBundle").getParcelable("buyFlowConfig");
-        ehwq ehwqVar = (ehwq) efdk.b(getIntent(), "webViewComponent", (feen) ehwq.a.iB(7, null));
-        if (ehwqVar == null) {
-            djig djigVar = new djig();
-            Bundle A = djig.A(ehvzVar, arrayList, i, logContext);
+        ekjw ekjwVar = (ekjw) ehqn.b(getIntent(), "webViewComponent", (fgtg) ekjw.a.iQ(7, null));
+        if (ekjwVar == null) {
+            dltz dltzVar = new dltz();
+            Bundle A = dltz.A(ekjfVar, arrayList, i, logContext);
             A.putParcelable("buyFlowConfig", buyFlowConfig);
-            djigVar.setArguments(A);
-            return djigVar;
+            dltzVar.setArguments(A);
+            return dltzVar;
         }
-        djip djipVar = new djip();
-        ehvz ehvzVar2 = ehwqVar.b;
-        if (ehvzVar2 == null) {
-            ehvzVar2 = ehvz.a;
+        dlui dluiVar = new dlui();
+        ekjf ekjfVar2 = ekjwVar.b;
+        if (ekjfVar2 == null) {
+            ekjfVar2 = ekjf.a;
         }
-        djipVar.setArguments(djip.A(ehvzVar2, null, i, logContext));
-        return djipVar;
+        dluiVar.setArguments(dlui.A(ekjfVar2, null, i, logContext));
+        return dluiVar;
     }
 
-    @Override // defpackage.edmf
-    public final Account kW() {
-        if (this.c == null) {
-            this.c = (Account) getIntent().getParcelableExtra("account");
-        }
-        return this.c;
-    }
-
-    @Override // defpackage.difg
+    @Override // defpackage.dkqr
     public final BuyFlowConfig l() {
         if (this.d == null) {
             this.d = (BuyFlowConfig) getIntent().getBundleExtra("parcelableBundle").getParcelable("buyFlowConfig");
@@ -126,7 +118,15 @@ public class PopupRedirectChimeraActivity extends efzv implements difg, efts {
         return this.d;
     }
 
-    @Override // defpackage.efzv, defpackage.efud
+    @Override // defpackage.efzb
+    public final Account ll() {
+        if (this.c == null) {
+            this.c = (Account) getIntent().getParcelableExtra("account");
+        }
+        return this.c;
+    }
+
+    @Override // defpackage.eimy, defpackage.eihg
     public final void x(int i, Bundle bundle) {
         if (i == 23) {
             Intent intent = new Intent();
@@ -160,92 +160,92 @@ public class PopupRedirectChimeraActivity extends efzv implements difg, efts {
                     if (i != 8) {
                         throw new IllegalArgumentException(a.j(i, "Unsupported formEvent: "));
                     }
-                    if (((efzv) this).b.kb()) {
+                    if (((eimy) this).b.kq()) {
                         Intent intent4 = new Intent();
-                        efzx efzxVar = ((efzv) this).b;
-                        fecj v = ehwa.a.v();
-                        ehpm ehpmVar = ((ehvz) efzxVar.y).c;
-                        if (ehpmVar == null) {
-                            ehpmVar = ehpm.a;
+                        eina einaVar = ((eimy) this).b;
+                        fgrc v = ekjg.a.v();
+                        ekcs ekcsVar = ((ekjf) einaVar.y).c;
+                        if (ekcsVar == null) {
+                            ekcsVar = ekcs.a;
                         }
-                        if ((ehpmVar.b & 1) != 0) {
-                            ehpm ehpmVar2 = ((ehvz) efzxVar.y).c;
-                            if (ehpmVar2 == null) {
-                                ehpmVar2 = ehpm.a;
+                        if ((ekcsVar.b & 1) != 0) {
+                            ekcs ekcsVar2 = ((ekjf) einaVar.y).c;
+                            if (ekcsVar2 == null) {
+                                ekcsVar2 = ekcs.a;
                             }
-                            String str = ehpmVar2.c;
+                            String str = ekcsVar2.c;
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ehwa ehwaVar = (ehwa) v.b;
+                            ekjg ekjgVar = (ekjg) v.b;
                             str.getClass();
-                            ehwaVar.b |= 1;
-                            ehwaVar.e = str;
+                            ekjgVar.b |= 1;
+                            ekjgVar.e = str;
                         }
-                        ehpm ehpmVar3 = ((ehvz) efzxVar.y).c;
-                        if (((ehpmVar3 == null ? ehpm.a : ehpmVar3).b & 4) != 0) {
-                            if (ehpmVar3 == null) {
-                                ehpmVar3 = ehpm.a;
+                        ekcs ekcsVar3 = ((ekjf) einaVar.y).c;
+                        if (((ekcsVar3 == null ? ekcs.a : ekcsVar3).b & 4) != 0) {
+                            if (ekcsVar3 == null) {
+                                ekcsVar3 = ekcs.a;
                             }
-                            feay feayVar = ehpmVar3.e;
+                            fgpr fgprVar = ekcsVar3.e;
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ehwa ehwaVar2 = (ehwa) v.b;
-                            feayVar.getClass();
-                            ehwaVar2.b = 2 | ehwaVar2.b;
-                            ehwaVar2.f = feayVar;
+                            ekjg ekjgVar2 = (ekjg) v.b;
+                            fgprVar.getClass();
+                            ekjgVar2.b = 2 | ekjgVar2.b;
+                            ekjgVar2.f = fgprVar;
                         }
-                        if (efzxVar.K()) {
-                            String str2 = efzxVar.g;
+                        if (einaVar.K()) {
+                            String str2 = einaVar.g;
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ehwa ehwaVar3 = (ehwa) v.b;
+                            ekjg ekjgVar3 = (ekjg) v.b;
                             str2.getClass();
-                            ehwaVar3.c = 3;
-                            ehwaVar3.d = str2;
-                        } else if (efzxVar.T()) {
-                            String str3 = efzxVar.f;
+                            ekjgVar3.c = 3;
+                            ekjgVar3.d = str2;
+                        } else if (einaVar.T()) {
+                            String str3 = einaVar.f;
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ehwa ehwaVar4 = (ehwa) v.b;
+                            ekjg ekjgVar4 = (ekjg) v.b;
                             str3.getClass();
-                            ehwaVar4.c = 4;
-                            ehwaVar4.d = str3;
-                        } else if (efzxVar.J()) {
-                            String str4 = efzxVar.i;
+                            ekjgVar4.c = 4;
+                            ekjgVar4.d = str3;
+                        } else if (einaVar.J()) {
+                            String str4 = einaVar.i;
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ehwa ehwaVar5 = (ehwa) v.b;
+                            ekjg ekjgVar5 = (ekjg) v.b;
                             str4.getClass();
-                            ehwaVar5.b |= 32;
-                            ehwaVar5.j = str4;
+                            ekjgVar5.b |= 32;
+                            ekjgVar5.j = str4;
                         } else {
-                            if (!efzxVar.j) {
+                            if (!einaVar.j) {
                                 throw new IllegalStateException("Unknown RedirectFormValue state.");
                             }
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ehwa ehwaVar6 = (ehwa) v.b;
-                            ehwaVar6.b |= 16;
-                            ehwaVar6.i = true;
+                            ekjg ekjgVar6 = (ekjg) v.b;
+                            ekjgVar6.b |= 16;
+                            ekjgVar6.i = true;
                         }
-                        efon efonVar = efzxVar.h;
-                        if (efonVar != null && efonVar.b()) {
-                            String a2 = efzxVar.h.a();
+                        eibq eibqVar = einaVar.h;
+                        if (eibqVar != null && eibqVar.b()) {
+                            String a2 = einaVar.h.a();
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ehwa ehwaVar7 = (ehwa) v.b;
+                            ekjg ekjgVar7 = (ekjg) v.b;
                             a2.getClass();
-                            ehwaVar7.b = 4 | ehwaVar7.b;
-                            ehwaVar7.g = a2;
+                            ekjgVar7.b = 4 | ekjgVar7.b;
+                            ekjgVar7.g = a2;
                         }
-                        efdk.k(intent4, "formValue", (ehwa) v.Q());
+                        ehqn.k(intent4, "formValue", (ekjg) v.Q());
                         setResult(-1, intent4);
                         finish();
                     }

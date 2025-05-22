@@ -9,10 +9,10 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import com.google.android.gms.nearby.sharing.view.RadioButtonRowWithSubheading;
 import com.google.android.gms.nearby.sharing.view.RadioGroupWithSubheadings;
-import defpackage.croj;
-import defpackage.crok;
+import defpackage.ctxo;
+import defpackage.ctxp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class RadioButtonRowWithSubheading extends LinearLayout {
     public RadioButton a;
@@ -32,7 +32,7 @@ public final class RadioButtonRowWithSubheading extends LinearLayout {
     @Override // android.view.View
     protected final void onFinishInflate() {
         super.onFinishInflate();
-        setOnClickListener(new crok(this));
+        setOnClickListener(new ctxp(this));
         int i = 0;
         while (true) {
             if (i >= getChildCount()) {
@@ -43,7 +43,7 @@ public final class RadioButtonRowWithSubheading extends LinearLayout {
                 RadioButton radioButton = (RadioButton) childAt;
                 this.a = radioButton;
                 radioButton.setImportantForAccessibility(2);
-                this.a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: croi
+                this.a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: ctxn
                     @Override // android.widget.CompoundButton.OnCheckedChangeListener
                     public final void onCheckedChanged(CompoundButton compoundButton, boolean z) {
                         RadioButtonRowWithSubheading radioButtonRowWithSubheading = RadioButtonRowWithSubheading.this;
@@ -57,6 +57,6 @@ public final class RadioButtonRowWithSubheading extends LinearLayout {
             }
             i++;
         }
-        setAccessibilityDelegate(new croj(this));
+        setAccessibilityDelegate(new ctxo(this));
     }
 }

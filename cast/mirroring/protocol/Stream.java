@@ -1,21 +1,21 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.anec;
-import defpackage.anei;
-import defpackage.anej;
-import defpackage.fvbo;
+import defpackage.apfp;
+import defpackage.apfv;
+import defpackage.apfw;
+import defpackage.fxxm;
 import java.util.List;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class Stream {
     private String aesIvMask;
     private String aesKey;
     private Long bitRate;
     private Long channels;
-    private anec codecName;
+    private apfp codecName;
     private String codecParameter;
     private String errorRecoveryMode;
     private long index;
@@ -36,18 +36,18 @@ public final class Stream {
     private long storeTime;
     private long targetDelay;
     private String timeBase;
-    private anei type;
+    private apfv type;
 
-    public Stream(long j, anei aneiVar, anec anecVar, long j2, long j3, String str, List list, boolean z, long j4, long j5, String str2, String str3, Long l, Long l2, Long l3, String str4, String str5, String str6, String str7, Long l4, String str8, String str9, List list2, Boolean bool, String str10, String str11) {
-        fvbo.f(aneiVar, "type");
-        fvbo.f(anecVar, "codecName");
-        fvbo.f(str, "rtpProfile");
-        fvbo.f(list, "rtpExtensions");
-        fvbo.f(str2, "timeBase");
-        fvbo.f(str3, "errorRecoveryMode");
+    public Stream(long j, apfv apfvVar, apfp apfpVar, long j2, long j3, String str, List list, boolean z, long j4, long j5, String str2, String str3, Long l, Long l2, Long l3, String str4, String str5, String str6, String str7, Long l4, String str8, String str9, List list2, Boolean bool, String str10, String str11) {
+        fxxm.f(apfvVar, "type");
+        fxxm.f(apfpVar, "codecName");
+        fxxm.f(str, "rtpProfile");
+        fxxm.f(list, "rtpExtensions");
+        fxxm.f(str2, "timeBase");
+        fxxm.f(str3, "errorRecoveryMode");
         this.index = j;
-        this.type = aneiVar;
-        this.codecName = anecVar;
+        this.type = apfvVar;
+        this.codecName = apfpVar;
         this.ssrc = j2;
         this.rtpPayloadType = j3;
         this.rtpProfile = str;
@@ -73,7 +73,7 @@ public final class Stream {
         this.aesKey = str11;
     }
 
-    public static /* synthetic */ Stream copy$default(Stream stream, long j, anei aneiVar, anec anecVar, long j2, long j3, String str, List list, boolean z, long j4, long j5, String str2, String str3, Long l, Long l2, Long l3, String str4, String str5, String str6, String str7, Long l4, String str8, String str9, List list2, Boolean bool, String str10, String str11, int i, Object obj) {
+    public static /* synthetic */ Stream copy$default(Stream stream, long j, apfv apfvVar, apfp apfpVar, long j2, long j3, String str, List list, boolean z, long j4, long j5, String str2, String str3, Long l, Long l2, Long l3, String str4, String str5, String str6, String str7, Long l4, String str8, String str9, List list2, Boolean bool, String str10, String str11, int i, Object obj) {
         long j6;
         long j7;
         String str12;
@@ -94,8 +94,8 @@ public final class Stream {
         Stream stream2;
         Long l8;
         String str21;
-        anei aneiVar2;
-        anec anecVar2;
+        apfv apfvVar2;
+        apfp apfpVar2;
         long j9;
         long j10;
         String str22;
@@ -103,8 +103,8 @@ public final class Stream {
         boolean z2;
         long j11;
         long j12 = (i & 1) != 0 ? stream.index : j;
-        anei aneiVar3 = (i & 2) != 0 ? stream.type : aneiVar;
-        anec anecVar3 = (i & 4) != 0 ? stream.codecName : anecVar;
+        apfv apfvVar3 = (i & 2) != 0 ? stream.type : apfvVar;
+        apfp apfpVar3 = (i & 4) != 0 ? stream.codecName : apfpVar;
         long j13 = (i & 8) != 0 ? stream.ssrc : j2;
         long j14 = (i & 16) != 0 ? stream.rtpPayloadType : j3;
         String str23 = (i & 32) != 0 ? stream.rtpProfile : str;
@@ -152,8 +152,8 @@ public final class Stream {
             bool2 = bool3;
             l8 = l11;
             str21 = str25;
-            aneiVar2 = aneiVar3;
-            anecVar2 = anecVar3;
+            apfvVar2 = apfvVar3;
+            apfpVar2 = apfpVar3;
             j9 = j13;
             j10 = j14;
             str22 = str23;
@@ -181,8 +181,8 @@ public final class Stream {
             stream2 = stream;
             l8 = l11;
             str21 = str25;
-            aneiVar2 = aneiVar3;
-            anecVar2 = anecVar3;
+            apfvVar2 = apfvVar3;
+            apfpVar2 = apfpVar3;
             j9 = j13;
             j10 = j14;
             str22 = str23;
@@ -190,7 +190,7 @@ public final class Stream {
             z2 = z3;
             j11 = j15;
         }
-        return stream2.copy(j6, aneiVar2, anecVar2, j9, j10, str22, list4, z2, j11, j8, str14, str21, l5, l6, l8, str15, str16, str17, str18, l7, str19, str20, list3, bool2, str13, str12);
+        return stream2.copy(j6, apfvVar2, apfpVar2, j9, j10, str22, list4, z2, j11, j8, str14, str21, l5, l6, l8, str15, str16, str17, str18, l7, str19, str20, list3, bool2, str13, str12);
     }
 
     public final long component1() {
@@ -237,7 +237,7 @@ public final class Stream {
         return this.receiverRtcpDscp;
     }
 
-    public final anei component2() {
+    public final apfv component2() {
         return this.type;
     }
 
@@ -269,7 +269,7 @@ public final class Stream {
         return this.aesKey;
     }
 
-    public final anec component3() {
+    public final apfp component3() {
         return this.codecName;
     }
 
@@ -297,14 +297,14 @@ public final class Stream {
         return this.targetDelay;
     }
 
-    public final Stream copy(long j, anei aneiVar, anec anecVar, long j2, long j3, String str, List list, boolean z, long j4, long j5, String str2, String str3, Long l, Long l2, Long l3, String str4, String str5, String str6, String str7, Long l4, String str8, String str9, List list2, Boolean bool, String str10, String str11) {
-        fvbo.f(aneiVar, "type");
-        fvbo.f(anecVar, "codecName");
-        fvbo.f(str, "rtpProfile");
-        fvbo.f(list, "rtpExtensions");
-        fvbo.f(str2, "timeBase");
-        fvbo.f(str3, "errorRecoveryMode");
-        return new Stream(j, aneiVar, anecVar, j2, j3, str, list, z, j4, j5, str2, str3, l, l2, l3, str4, str5, str6, str7, l4, str8, str9, list2, bool, str10, str11);
+    public final Stream copy(long j, apfv apfvVar, apfp apfpVar, long j2, long j3, String str, List list, boolean z, long j4, long j5, String str2, String str3, Long l, Long l2, Long l3, String str4, String str5, String str6, String str7, Long l4, String str8, String str9, List list2, Boolean bool, String str10, String str11) {
+        fxxm.f(apfvVar, "type");
+        fxxm.f(apfpVar, "codecName");
+        fxxm.f(str, "rtpProfile");
+        fxxm.f(list, "rtpExtensions");
+        fxxm.f(str2, "timeBase");
+        fxxm.f(str3, "errorRecoveryMode");
+        return new Stream(j, apfvVar, apfpVar, j2, j3, str, list, z, j4, j5, str2, str3, l, l2, l3, str4, str5, str6, str7, l4, str8, str9, list2, bool, str10, str11);
     }
 
     public boolean equals(Object obj) {
@@ -315,7 +315,7 @@ public final class Stream {
             return false;
         }
         Stream stream = (Stream) obj;
-        return this.index == stream.index && this.type == stream.type && this.codecName == stream.codecName && this.ssrc == stream.ssrc && this.rtpPayloadType == stream.rtpPayloadType && fvbo.n(this.rtpProfile, stream.rtpProfile) && fvbo.n(this.rtpExtensions, stream.rtpExtensions) && this.receiverRtcpEventLog == stream.receiverRtcpEventLog && this.targetDelay == stream.targetDelay && this.storeTime == stream.storeTime && fvbo.n(this.timeBase, stream.timeBase) && fvbo.n(this.errorRecoveryMode, stream.errorRecoveryMode) && fvbo.n(this.channels, stream.channels) && fvbo.n(this.bitRate, stream.bitRate) && fvbo.n(this.sampleRate, stream.sampleRate) && fvbo.n(this.profile, stream.profile) && fvbo.n(this.level, stream.level) && fvbo.n(this.codecParameter, stream.codecParameter) && fvbo.n(this.receiverRtcpDscp, stream.receiverRtcpDscp) && fvbo.n(this.maxBitRate, stream.maxBitRate) && fvbo.n(this.maxFrameRate, stream.maxFrameRate) && fvbo.n(this.protection, stream.protection) && fvbo.n(this.resolutions, stream.resolutions) && fvbo.n(this.intraRefreshEnable, stream.intraRefreshEnable) && fvbo.n(this.aesIvMask, stream.aesIvMask) && fvbo.n(this.aesKey, stream.aesKey);
+        return this.index == stream.index && this.type == stream.type && this.codecName == stream.codecName && this.ssrc == stream.ssrc && this.rtpPayloadType == stream.rtpPayloadType && fxxm.n(this.rtpProfile, stream.rtpProfile) && fxxm.n(this.rtpExtensions, stream.rtpExtensions) && this.receiverRtcpEventLog == stream.receiverRtcpEventLog && this.targetDelay == stream.targetDelay && this.storeTime == stream.storeTime && fxxm.n(this.timeBase, stream.timeBase) && fxxm.n(this.errorRecoveryMode, stream.errorRecoveryMode) && fxxm.n(this.channels, stream.channels) && fxxm.n(this.bitRate, stream.bitRate) && fxxm.n(this.sampleRate, stream.sampleRate) && fxxm.n(this.profile, stream.profile) && fxxm.n(this.level, stream.level) && fxxm.n(this.codecParameter, stream.codecParameter) && fxxm.n(this.receiverRtcpDscp, stream.receiverRtcpDscp) && fxxm.n(this.maxBitRate, stream.maxBitRate) && fxxm.n(this.maxFrameRate, stream.maxFrameRate) && fxxm.n(this.protection, stream.protection) && fxxm.n(this.resolutions, stream.resolutions) && fxxm.n(this.intraRefreshEnable, stream.intraRefreshEnable) && fxxm.n(this.aesIvMask, stream.aesIvMask) && fxxm.n(this.aesKey, stream.aesKey);
     }
 
     public final String getAesIvMask() {
@@ -334,7 +334,7 @@ public final class Stream {
         return this.channels;
     }
 
-    public final anec getCodecName() {
+    public final apfp getCodecName() {
         return this.codecName;
     }
 
@@ -418,15 +418,15 @@ public final class Stream {
         return this.timeBase;
     }
 
-    public final anei getType() {
+    public final apfv getType() {
         return this.type;
     }
 
     public int hashCode() {
-        int a = (((anej.a(this.index) * 31) + this.type.hashCode()) * 31) + this.codecName.hashCode();
-        int a2 = (((((((a * 31) + anej.a(this.ssrc)) * 31) + anej.a(this.rtpPayloadType)) * 31) + this.rtpProfile.hashCode()) * 31) + this.rtpExtensions.hashCode();
+        int a = (((apfw.a(this.index) * 31) + this.type.hashCode()) * 31) + this.codecName.hashCode();
+        int a2 = (((((((a * 31) + apfw.a(this.ssrc)) * 31) + apfw.a(this.rtpPayloadType)) * 31) + this.rtpProfile.hashCode()) * 31) + this.rtpExtensions.hashCode();
         int i = true != this.receiverRtcpEventLog ? 1237 : 1231;
-        int a3 = (((((((((a2 * 31) + i) * 31) + anej.a(this.targetDelay)) * 31) + anej.a(this.storeTime)) * 31) + this.timeBase.hashCode()) * 31) + this.errorRecoveryMode.hashCode();
+        int a3 = (((((((((a2 * 31) + i) * 31) + apfw.a(this.targetDelay)) * 31) + apfw.a(this.storeTime)) * 31) + this.timeBase.hashCode()) * 31) + this.errorRecoveryMode.hashCode();
         Long l = this.channels;
         int hashCode = ((a3 * 31) + (l == null ? 0 : l.hashCode())) * 31;
         Long l2 = this.bitRate;
@@ -473,9 +473,9 @@ public final class Stream {
         this.channels = l;
     }
 
-    public final void setCodecName(anec anecVar) {
-        fvbo.f(anecVar, "<set-?>");
-        this.codecName = anecVar;
+    public final void setCodecName(apfp apfpVar) {
+        fxxm.f(apfpVar, "<set-?>");
+        this.codecName = apfpVar;
     }
 
     public final void setCodecParameter(String str) {
@@ -483,7 +483,7 @@ public final class Stream {
     }
 
     public final void setErrorRecoveryMode(String str) {
-        fvbo.f(str, "<set-?>");
+        fxxm.f(str, "<set-?>");
         this.errorRecoveryMode = str;
     }
 
@@ -528,7 +528,7 @@ public final class Stream {
     }
 
     public final void setRtpExtensions(List list) {
-        fvbo.f(list, "<set-?>");
+        fxxm.f(list, "<set-?>");
         this.rtpExtensions = list;
     }
 
@@ -537,7 +537,7 @@ public final class Stream {
     }
 
     public final void setRtpProfile(String str) {
-        fvbo.f(str, "<set-?>");
+        fxxm.f(str, "<set-?>");
         this.rtpProfile = str;
     }
 
@@ -558,20 +558,20 @@ public final class Stream {
     }
 
     public final void setTimeBase(String str) {
-        fvbo.f(str, "<set-?>");
+        fxxm.f(str, "<set-?>");
         this.timeBase = str;
     }
 
-    public final void setType(anei aneiVar) {
-        fvbo.f(aneiVar, "<set-?>");
-        this.type = aneiVar;
+    public final void setType(apfv apfvVar) {
+        fxxm.f(apfvVar, "<set-?>");
+        this.type = apfvVar;
     }
 
     public String toString() {
         return "Stream(index=" + this.index + ", type=" + this.type + ", codecName=" + this.codecName + ", ssrc=" + this.ssrc + ", rtpPayloadType=" + this.rtpPayloadType + ", rtpProfile=" + this.rtpProfile + ", rtpExtensions=" + this.rtpExtensions + ", receiverRtcpEventLog=" + this.receiverRtcpEventLog + ", targetDelay=" + this.targetDelay + ", storeTime=" + this.storeTime + ", timeBase=" + this.timeBase + ", errorRecoveryMode=" + this.errorRecoveryMode + ", channels=" + this.channels + ", bitRate=" + this.bitRate + ", sampleRate=" + this.sampleRate + ", profile=" + this.profile + ", level=" + this.level + ", codecParameter=" + this.codecParameter + ", receiverRtcpDscp=" + this.receiverRtcpDscp + ", maxBitRate=" + this.maxBitRate + ", maxFrameRate=" + this.maxFrameRate + ", protection=" + this.protection + ", resolutions=" + this.resolutions + ", intraRefreshEnable=" + this.intraRefreshEnable + ", aesIvMask=" + this.aesIvMask + ", aesKey=" + this.aesKey + ")";
     }
 
-    public /* synthetic */ Stream(long j, anei aneiVar, anec anecVar, long j2, long j3, String str, List list, boolean z, long j4, long j5, String str2, String str3, Long l, Long l2, Long l3, String str4, String str5, String str6, String str7, Long l4, String str8, String str9, List list2, Boolean bool, String str10, String str11, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(j, aneiVar, anecVar, j2, j3, str, list, z, j4, j5, str2, str3, (i & 4096) != 0 ? null : l, (i & 8192) != 0 ? null : l2, (i & AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES) != 0 ? null : l3, (32768 & i) != 0 ? null : str4, (65536 & i) != 0 ? null : str5, (131072 & i) != 0 ? null : str6, (262144 & i) != 0 ? null : str7, (524288 & i) != 0 ? null : l4, (1048576 & i) != 0 ? null : str8, (2097152 & i) != 0 ? null : str9, (4194304 & i) != 0 ? null : list2, (8388608 & i) != 0 ? null : bool, (16777216 & i) != 0 ? null : str10, (i & 33554432) != 0 ? null : str11);
+    public /* synthetic */ Stream(long j, apfv apfvVar, apfp apfpVar, long j2, long j3, String str, List list, boolean z, long j4, long j5, String str2, String str3, Long l, Long l2, Long l3, String str4, String str5, String str6, String str7, Long l4, String str8, String str9, List list2, Boolean bool, String str10, String str11, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this(j, apfvVar, apfpVar, j2, j3, str, list, z, j4, j5, str2, str3, (i & 4096) != 0 ? null : l, (i & 8192) != 0 ? null : l2, (i & AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES) != 0 ? null : l3, (32768 & i) != 0 ? null : str4, (65536 & i) != 0 ? null : str5, (131072 & i) != 0 ? null : str6, (262144 & i) != 0 ? null : str7, (524288 & i) != 0 ? null : l4, (1048576 & i) != 0 ? null : str8, (2097152 & i) != 0 ? null : str9, (4194304 & i) != 0 ? null : list2, (8388608 & i) != 0 ? null : bool, (16777216 & i) != 0 ? null : str10, (i & 33554432) != 0 ? null : str11);
     }
 }

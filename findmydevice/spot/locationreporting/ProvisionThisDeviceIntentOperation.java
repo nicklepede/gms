@@ -4,87 +4,87 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.findmydevice.spot.locationreporting.ProvisionThisDeviceIntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bebo;
-import defpackage.belh;
-import defpackage.bfdp;
-import defpackage.dwup;
-import defpackage.dwwv;
-import defpackage.dwyg;
-import defpackage.dwyl;
-import defpackage.egmx;
-import defpackage.eigb;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.ejhf;
-import defpackage.euhg;
-import defpackage.fecj;
-import defpackage.fecp;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bgda;
+import defpackage.bgmt;
+import defpackage.bhff;
+import defpackage.dzgp;
+import defpackage.dziv;
+import defpackage.dzkg;
+import defpackage.dzkl;
+import defpackage.ejaa;
+import defpackage.ektg;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.eluo;
+import defpackage.ewwz;
+import defpackage.fgrc;
+import defpackage.fgri;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ProvisionThisDeviceIntentOperation extends IntentOperation {
-    public static final asot a = asot.b("SelfReportingSyncIntent", asej.FIND_MY_DEVICE_SPOT);
+    public static final ausn a = ausn.b("SelfReportingSyncIntent", auid.FIND_MY_DEVICE_SPOT);
     public final Context b;
-    private final dwwv c;
+    private final dziv c;
     private final Executor d;
 
     public ProvisionThisDeviceIntentOperation() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        euhg euhgVar;
-        if (bfdp.b(intent, "com.google.android.gms.findmydevice.spot.locationreporting.PROVISION_THIS_DEVICE")) {
+        ewwz ewwzVar;
+        if (bhff.b(intent, "com.google.android.gms.findmydevice.spot.locationreporting.PROVISION_THIS_DEVICE")) {
             int intExtra = intent.getIntExtra("enrollment_method", -1);
             int i = 0;
             if (intExtra < 0) {
-                ((ejhf) ((ejhf) a.i()).ah((char) 4320)).x("EnrollmentMethod unspecified");
+                ((eluo) ((eluo) a.i()).ai((char) 4326)).x("EnrollmentMethod unspecified");
             } else {
-                int b = dwyg.b(intExtra);
-                if (b == 0) {
-                    ((ejhf) ((ejhf) a.i()).ah((char) 4319)).z("Invalid EnrollmentMethod number %d", intExtra);
+                int a2 = dzkg.a(intExtra);
+                if (a2 == 0) {
+                    ((eluo) ((eluo) a.i()).ai((char) 4325)).z("Invalid EnrollmentMethod number %d", intExtra);
                 } else {
-                    i = b;
+                    i = a2;
                 }
             }
             if (i != 0) {
                 int intExtra2 = intent.getIntExtra("fmdn_state", -1);
                 if (intExtra2 < 0) {
-                    ((ejhf) ((ejhf) a.i()).ah((char) 4322)).x("FindMyDeviceNetworkState unspecified");
-                    euhgVar = null;
+                    ((eluo) ((eluo) a.i()).ai((char) 4328)).x("FindMyDeviceNetworkState unspecified");
+                    ewwzVar = null;
                 } else {
-                    euhg b2 = euhg.b(intExtra2);
-                    if (b2 == null) {
-                        ((ejhf) ((ejhf) a.i()).ah((char) 4321)).z("Invalid FindMyDeviceNetworkState number %d", intExtra2);
+                    ewwz b = ewwz.b(intExtra2);
+                    if (b == null) {
+                        ((eluo) ((eluo) a.i()).ai((char) 4327)).z("Invalid FindMyDeviceNetworkState number %d", intExtra2);
                     }
-                    euhgVar = b2;
+                    ewwzVar = b;
                 }
-                if (euhgVar != null) {
-                    dwwv dwwvVar = this.c;
-                    eigb eigbVar = eigb.a;
-                    fecj v = dwyl.a.v();
+                if (ewwzVar != null) {
+                    dziv dzivVar = this.c;
+                    ektg ektgVar = ektg.a;
+                    fgrc v = dzkl.a.v();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    fecp fecpVar = v.b;
-                    dwyl dwylVar = (dwyl) fecpVar;
-                    dwylVar.b |= 1;
-                    dwylVar.e = true;
-                    if (!fecpVar.L()) {
+                    fgri fgriVar = v.b;
+                    dzkl dzklVar = (dzkl) fgriVar;
+                    dzklVar.b |= 1;
+                    dzklVar.e = true;
+                    if (!fgriVar.L()) {
                         v.U();
                     }
-                    dwyl dwylVar2 = (dwyl) v.b;
-                    dwylVar2.d = Integer.valueOf(i - 1);
-                    dwylVar2.c = 2;
-                    dwup.a("Persisting LKL enrollment", egmx.f(dwwvVar.n(eigbVar, eiid.j((dwyl) v.Q()), eiid.i(euhgVar))).h(new eiho() { // from class: benq
-                        @Override // defpackage.eiho
+                    dzkl dzklVar2 = (dzkl) v.b;
+                    dzklVar2.d = Integer.valueOf(i - 1);
+                    dzklVar2.c = 2;
+                    dzgp.a("Persisting LKL enrollment", ejaa.g(dzivVar.n(ektgVar, ekvi.j((dzkl) v.Q()), ekvi.i(ewwzVar))).h(new ekut() { // from class: bgpc
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
-                            ((ejhf) ((ejhf) ProvisionThisDeviceIntentOperation.a.h()).ah((char) 4323)).x("LKL enrollment persisted, but still needs sync to server.");
-                            bfcs.m(byjl.a(ProvisionThisDeviceIntentOperation.this.b), !((dwwu) obj).b());
+                            ((eluo) ((eluo) ProvisionThisDeviceIntentOperation.a.h()).ai((char) 4329)).x("LKL enrollment persisted, but still needs sync to server.");
+                            bhei.m(casd.a(ProvisionThisDeviceIntentOperation.this.b), !((dziu) obj).b());
                             return null;
                         }
                     }, this.d));
@@ -93,12 +93,12 @@ public final class ProvisionThisDeviceIntentOperation extends IntentOperation {
         }
     }
 
-    private ProvisionThisDeviceIntentOperation(belh belhVar) {
-        this(belhVar.F(), belhVar.G(), belhVar.c());
+    private ProvisionThisDeviceIntentOperation(bgmt bgmtVar) {
+        this(bgmtVar.F(), bgmtVar.G(), bgmtVar.c());
     }
 
-    public ProvisionThisDeviceIntentOperation(dwwv dwwvVar, Executor executor, Context context) {
-        this.c = dwwvVar;
+    public ProvisionThisDeviceIntentOperation(dziv dzivVar, Executor executor, Context context) {
+        this.c = dzivVar;
         this.d = executor;
         this.b = context;
     }

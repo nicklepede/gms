@@ -3,21 +3,21 @@ package com.google.android.gms.trustlet.onbody.discovery;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.activity.result.ActivityResult;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.dglq;
-import defpackage.dgtp;
-import defpackage.qfp;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.diwv;
+import defpackage.djeu;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class WebpageOnbodyPromotionChimeraActivity extends qfp implements abt {
-    public static final dglq j = new dgtp();
+public class WebpageOnbodyPromotionChimeraActivity extends ryt implements aby {
+    public static final diwv j = new djeu();
     private int k = 0;
 
-    @Override // defpackage.abt
-    public final /* bridge */ /* synthetic */ void jq(Object obj) {
+    @Override // defpackage.aby
+    public final /* bridge */ /* synthetic */ void jF(Object obj) {
         ActivityResult activityResult = (ActivityResult) obj;
         int i = activityResult.a;
         if (activityResult.b != null && this.k == 1) {
@@ -26,10 +26,10 @@ public class WebpageOnbodyPromotionChimeraActivity extends qfp implements abt {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        abv registerForActivityResult = registerForActivityResult(new acl(), this);
+        aca registerForActivityResult = registerForActivityResult(new acq(), this);
         Intent intent = new Intent();
         intent.setClassName(this, "com.google.android.gms.trustlet.onbody.discovery.PromoteScreenLockAndOnbodyActivity");
         intent.putExtra("extra_from_intent", "com.google.android.gms.trustlet.onbody.discovery.WebpageOnbodyPromotionActivity");

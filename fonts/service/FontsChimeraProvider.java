@@ -1,25 +1,25 @@
 package com.google.android.gms.fonts.service;
 
-import defpackage.bhcx;
-import defpackage.bhdp;
-import defpackage.fofh;
+import defpackage.bjhn;
+import defpackage.bjif;
+import defpackage.fqxr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FontsChimeraProvider extends bhcx {
-    @Override // defpackage.bhcx
+public class FontsChimeraProvider extends bjhn {
+    @Override // defpackage.bjhn
     protected final long a() {
-        return fofh.b();
+        return fqxr.b();
     }
 
-    @Override // defpackage.bhcx
+    @Override // defpackage.bjhn
     protected final boolean b() {
-        return fofh.a.a().g();
+        return fqxr.a.lK().g();
     }
 
     @Override // com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
-        bhdp.a.g(getContext());
+        bjif.a.g(getContext());
         return true;
     }
 }

@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cifv;
-import defpackage.cigo;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ckoa;
+import defpackage.ckot;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class TriggerFastPairByAccountKeyParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cigo();
+    public static final Parcelable.Creator CREATOR = new ckot();
     public byte[] a;
-    public cifv b;
+    public ckoa b;
 
     private TriggerFastPairByAccountKeyParams() {
     }
@@ -31,7 +31,7 @@ public final class TriggerFastPairByAccountKeyParams extends AbstractSafeParcela
         }
         if (obj instanceof TriggerFastPairByAccountKeyParams) {
             TriggerFastPairByAccountKeyParams triggerFastPairByAccountKeyParams = (TriggerFastPairByAccountKeyParams) obj;
-            if (Arrays.equals(this.a, triggerFastPairByAccountKeyParams.a) && arwb.b(this.b, triggerFastPairByAccountKeyParams.b)) {
+            if (Arrays.equals(this.a, triggerFastPairByAccountKeyParams.a) && atyq.b(this.b, triggerFastPairByAccountKeyParams.b)) {
                 return true;
             }
         }
@@ -44,21 +44,21 @@ public final class TriggerFastPairByAccountKeyParams extends AbstractSafeParcela
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, this.a, false);
-        arxc.D(parcel, 2, a());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, this.a, false);
+        atzr.D(parcel, 2, a());
+        atzr.c(parcel, a);
     }
 
     public TriggerFastPairByAccountKeyParams(byte[] bArr, IBinder iBinder) {
-        cifv cifvVar;
+        ckoa ckoaVar;
         if (iBinder == null) {
-            cifvVar = null;
+            ckoaVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.fastpair.internal.IFastPairTriggerFastPairByAccountKeyCallback");
-            cifvVar = queryLocalInterface instanceof cifv ? (cifv) queryLocalInterface : new cifv(iBinder);
+            ckoaVar = queryLocalInterface instanceof ckoa ? (ckoa) queryLocalInterface : new ckoa(iBinder);
         }
         this.a = bArr;
-        this.b = cifvVar;
+        this.b = ckoaVar;
     }
 }

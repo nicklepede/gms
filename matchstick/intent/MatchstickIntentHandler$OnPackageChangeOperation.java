@@ -3,11 +3,11 @@ package com.google.android.gms.matchstick.intent;
 import android.content.Intent;
 import android.net.Uri;
 import com.google.android.chimera.IntentOperation;
-import defpackage.ccgd;
-import defpackage.fqah;
-import defpackage.fqaz;
+import defpackage.ceox;
+import defpackage.fsuf;
+import defpackage.fsux;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MatchstickIntentHandler$OnPackageChangeOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
@@ -16,16 +16,16 @@ public class MatchstickIntentHandler$OnPackageChangeOperation extends IntentOper
         Uri data = intent.getData();
         String schemeSpecificPart = data == null ? "" : data.getSchemeSpecificPart();
         if ("android.intent.action.PACKAGE_REPLACED".equals(action) && getBaseContext().getPackageName().equals(schemeSpecificPart)) {
-            ccgd.e(getBaseContext());
+            ceox.e(getBaseContext());
         }
-        if (("android.intent.action.PACKAGE_ADDED".equals(action) || "android.intent.action.PACKAGE_REMOVED".equals(action) || "android.intent.action.PACKAGE_CHANGED".equals(action)) && fqah.c().contains(schemeSpecificPart)) {
-            ccgd.d(getBaseContext());
+        if (("android.intent.action.PACKAGE_ADDED".equals(action) || "android.intent.action.PACKAGE_REMOVED".equals(action) || "android.intent.action.PACKAGE_CHANGED".equals(action)) && fsuf.c().contains(schemeSpecificPart)) {
+            ceox.d(getBaseContext());
         }
-        if (fqaz.i() && "com.google.android.apps.messaging".equals(schemeSpecificPart) && ("android.intent.action.PACKAGE_ADDED".equals(action) || "android.intent.action.PACKAGE_REMOVED".equals(action) || "android.intent.action.PACKAGE_CHANGED".equals(action))) {
-            ccgd.c(getBaseContext());
+        if (fsux.i() && "com.google.android.apps.messaging".equals(schemeSpecificPart) && ("android.intent.action.PACKAGE_ADDED".equals(action) || "android.intent.action.PACKAGE_REMOVED".equals(action) || "android.intent.action.PACKAGE_CHANGED".equals(action))) {
+            ceox.c(getBaseContext());
         }
-        if (fqaz.g()) {
-            ccgd.g(getBaseContext(), "com.google.android.gms.matchstick.ui.LighterEntryPointActivity", true);
+        if (fsux.g()) {
+            ceox.g(getBaseContext(), "com.google.android.gms.matchstick.ui.LighterEntryPointActivity", true);
         }
     }
 }

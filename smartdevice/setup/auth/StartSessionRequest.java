@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.smartdevice.d2d.AuthenticatingUser;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.defm;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dgqp;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class StartSessionRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new defm();
+    public static final Parcelable.Creator CREATOR = new dgqp();
     public String a;
     public final int b;
     public final String c;
@@ -46,7 +46,7 @@ public class StartSessionRequest extends AbstractSafeParcelable {
         }
         if (obj instanceof StartSessionRequest) {
             StartSessionRequest startSessionRequest = (StartSessionRequest) obj;
-            if (arwb.b(this.a, startSessionRequest.a) && this.b == startSessionRequest.b && arwb.b(this.c, startSessionRequest.c) && this.d == startSessionRequest.d && arwb.b(this.e, startSessionRequest.e) && Arrays.equals(this.f, startSessionRequest.f) && Arrays.equals(this.g, startSessionRequest.g) && Arrays.equals(this.h, startSessionRequest.h) && arwb.b(Integer.valueOf(this.i), Integer.valueOf(startSessionRequest.i)) && arwb.b(this.j, startSessionRequest.j) && arwb.b(this.k, startSessionRequest.k) && this.l == startSessionRequest.l && arwb.b(this.m, startSessionRequest.m)) {
+            if (atyq.b(this.a, startSessionRequest.a) && this.b == startSessionRequest.b && atyq.b(this.c, startSessionRequest.c) && this.d == startSessionRequest.d && atyq.b(this.e, startSessionRequest.e) && Arrays.equals(this.f, startSessionRequest.f) && Arrays.equals(this.g, startSessionRequest.g) && Arrays.equals(this.h, startSessionRequest.h) && atyq.b(Integer.valueOf(this.i), Integer.valueOf(startSessionRequest.i)) && atyq.b(this.j, startSessionRequest.j) && atyq.b(this.k, startSessionRequest.k) && this.l == startSessionRequest.l && atyq.b(this.m, startSessionRequest.m)) {
                 return true;
             }
         }
@@ -59,21 +59,21 @@ public class StartSessionRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, this.a, false);
-        arxc.o(parcel, 3, this.b);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.o(parcel, 5, this.d);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.i(parcel, 7, this.f, false);
-        arxc.i(parcel, 8, this.g, false);
-        arxc.i(parcel, 9, this.h, false);
-        arxc.o(parcel, 10, this.i);
-        arxc.v(parcel, 11, this.j, false);
-        arxc.v(parcel, 12, this.k, false);
-        arxc.e(parcel, 13, this.l);
-        arxc.t(parcel, 14, this.m, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, this.a, false);
+        atzr.o(parcel, 3, this.b);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.o(parcel, 5, this.d);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.i(parcel, 7, this.f, false);
+        atzr.i(parcel, 8, this.g, false);
+        atzr.i(parcel, 9, this.h, false);
+        atzr.o(parcel, 10, this.i);
+        atzr.v(parcel, 11, this.j, false);
+        atzr.v(parcel, 12, this.k, false);
+        atzr.e(parcel, 13, this.l);
+        atzr.t(parcel, 14, this.m, i, false);
+        atzr.c(parcel, a);
     }
 
     public StartSessionRequest(String str, int i, String str2, int i2, String str3, byte[] bArr, byte[] bArr2, byte[] bArr3, int i3, String str4, String str5, boolean z, AuthenticatingUser authenticatingUser) {

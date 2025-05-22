@@ -6,43 +6,43 @@ import com.google.android.gms.thunderbird.state.ActivationInfo;
 import com.google.android.gms.thunderbird.state.DeviceState;
 import com.google.android.gms.thunderbird.state.EmergencyInfo;
 import com.google.android.gms.thunderbird.worker.ConfigWorker;
-import defpackage.aslq;
-import defpackage.asot;
-import defpackage.bry;
-import defpackage.bxbu;
-import defpackage.bzim;
-import defpackage.dfvc;
-import defpackage.dfzr;
-import defpackage.dgao;
-import defpackage.dgbw;
-import defpackage.dgbx;
-import defpackage.dgcl;
-import defpackage.dgcm;
-import defpackage.dgcs;
-import defpackage.eigb;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.eiig;
-import defpackage.eitj;
-import defpackage.eivv;
-import defpackage.ejfh;
-import defpackage.ejhf;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.ensu;
-import defpackage.fsnb;
+import defpackage.aupk;
+import defpackage.ausn;
+import defpackage.bsj;
+import defpackage.bzkk;
+import defpackage.cbrd;
+import defpackage.digh;
+import defpackage.dikw;
+import defpackage.dilt;
+import defpackage.dinb;
+import defpackage.dinc;
+import defpackage.dinq;
+import defpackage.dinr;
+import defpackage.dinx;
+import defpackage.ektg;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.ekvl;
+import defpackage.elgo;
+import defpackage.elja;
+import defpackage.elso;
+import defpackage.eluo;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.eqgn;
+import defpackage.fvik;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$OnAlarmListener, bzim {
-    public final dfvc a;
+public final class ConfigWorker extends dinx implements GmsAlarmManagerCompat$OnAlarmListener, cbrd {
+    public final digh a;
     public final Collection b;
-    public final dgbw c;
+    public final dinb c;
     public EmergencyInfo d;
     public int e;
     public Location f;
@@ -51,44 +51,44 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
     private final Map j;
     private boolean k;
     private boolean l;
-    private enss m;
-    private ensu n;
-    private dgao o;
+    private eqgl m;
+    private eqgn n;
+    private dilt o;
     private boolean p;
     private Location q;
     private boolean r;
-    private eiid s;
+    private ekvi s;
 
-    public ConfigWorker(dgcl dgclVar, dfvc dfvcVar, EmergencyInfo emergencyInfo) {
-        super(dgclVar);
-        eiig.x(dfvcVar);
-        this.a = dfvcVar;
+    public ConfigWorker(dinq dinqVar, digh dighVar, EmergencyInfo emergencyInfo) {
+        super(dinqVar);
+        ekvl.y(dighVar);
+        this.a = dighVar;
         this.d = emergencyInfo;
-        this.j = new bry(2);
+        this.j = new bsj(2);
         this.b = new ArrayList(2);
-        this.c = new dgbw(this);
-        this.s = eigb.a;
+        this.c = new dinb(this);
+        this.s = ektg.a;
         this.e = 0;
-        long j = dfvcVar.l;
-        this.g = Math.min(j == 0 ? fsnb.a.a().g() : j, fsnb.b());
+        long j = dighVar.l;
+        this.g = Math.min(j == 0 ? fvik.a.lK().g() : j, fvik.b());
     }
 
     private final boolean A() {
         int i = this.e;
-        eiig.r(i >= 2, "isTrackingComplete: state must be >= STATE_TRACKING, but is %s", i);
+        ekvl.s(i >= 2, "isTrackingComplete: state must be >= STATE_TRACKING, but is %s", i);
         return this.e > 2 || this.a.x == 0 || q() >= this.g;
     }
 
     private final boolean B(Location location) {
-        return location != null && s(location) == dgbx.VALID;
+        return location != null && s(location) == dinc.VALID;
     }
 
-    private final dgbx s(Location location) {
+    private final dinc s(Location location) {
         if (location == null) {
-            return dgbx.NULL;
+            return dinc.NULL;
         }
-        dfvc dfvcVar = this.a;
-        return (dfvcVar.b || !location.isFromMockProvider() || fsnb.a.a().H()) ? !location.hasAccuracy() ? dgbx.NO_ACCURACY : location.getAccuracy() <= 0.0f ? dgbx.INVALID_ACCURACY : location.getAccuracy() > 20000.0f ? dgbx.TOO_INACCURATE : dfzr.a(location) < -5000 ? dgbx.TOO_RECENT : dfzr.a(location) >= dfvcVar.b() ? dgbx.TOO_STALE : dgbx.VALID : dgbx.MOCK;
+        digh dighVar = this.a;
+        return (dighVar.b || !location.isFromMockProvider() || fvik.a.lK().H()) ? !location.hasAccuracy() ? dinc.NO_ACCURACY : location.getAccuracy() <= 0.0f ? dinc.INVALID_ACCURACY : location.getAccuracy() > 20000.0f ? dinc.TOO_INACCURATE : dikw.a(location) < -5000 ? dinc.TOO_RECENT : dikw.a(location) >= dighVar.b() ? dinc.TOO_STALE : dinc.VALID : dinc.MOCK;
     }
 
     private final void t() {
@@ -96,14 +96,14 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         if (this.e == 2 && A()) {
             z = true;
         }
-        eiig.v(z, "completeTracking: state must be STATE_TRACKING and isTrackingComplete() must be true. State is %s, isTrackingComplete() returned %s.", Integer.toString(this.e), Boolean.valueOf(A()));
+        ekvl.w(z, "completeTracking: state must be STATE_TRACKING and isTrackingComplete() must be true. State is %s, isTrackingComplete() returned %s.", Integer.toString(this.e), Boolean.valueOf(A()));
         k(3);
     }
 
     private final void u() {
-        ensu ensuVar = this.n;
-        if (ensuVar != null) {
-            ensuVar.cancel(true);
+        eqgn eqgnVar = this.n;
+        if (eqgnVar != null) {
+            eqgnVar.cancel(true);
             this.n = null;
         }
     }
@@ -117,12 +117,12 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private final void v(defpackage.dgcm r11, android.location.Location r12) {
+    private final void v(defpackage.dinr r11, android.location.Location r12) {
         /*
             Method dump skipped, instructions count: 438
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.thunderbird.worker.ConfigWorker.v(dgcm, android.location.Location):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.thunderbird.worker.ConfigWorker.v(dinr, android.location.Location):void");
     }
 
     /* JADX WARN: Removed duplicated region for block: B:24:0x00e1  */
@@ -139,12 +139,12 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.thunderbird.worker.ConfigWorker.w():void");
     }
 
-    /* JADX WARN: Type inference failed for: r0v4, types: [enss, java.lang.Object] */
+    /* JADX WARN: Type inference failed for: r0v4, types: [eqgl, java.lang.Object] */
     private final void x() {
         if (this.e != 1) {
             if (this.s.h()) {
                 this.s.c().cancel(false);
-                this.s = eigb.a;
+                this.s = ektg.a;
                 return;
             }
             return;
@@ -153,7 +153,7 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         if (this.s.h() || a <= 0) {
             return;
         }
-        ensu schedule = jK().a.schedule(new Runnable() { // from class: dgbr
+        eqgn schedule = ka().a.schedule(new Runnable() { // from class: dimw
             @Override // java.lang.Runnable
             public final void run() {
                 ConfigWorker configWorker = ConfigWorker.this;
@@ -162,31 +162,31 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
                 }
             }
         }, a, TimeUnit.MILLISECONDS);
-        aslq.c(schedule);
-        this.s = eiid.j(schedule);
+        aupk.c(schedule);
+        this.s = ekvi.j(schedule);
     }
 
     private final void y() {
         if (this.e == 2) {
-            asot asotVar = dfzr.a;
-            jK().d().e("TrackingComplete", jI().f + this.g, jK().a, this);
+            ausn ausnVar = dikw.a;
+            ka().d().e("TrackingComplete", jY().f + this.g, ka().a, this);
             this.r = true;
         } else if (this.r) {
-            jK().d().d(this);
+            ka().d().d(this);
             this.r = false;
         }
     }
 
     private final boolean z() {
         int i = this.e;
-        eiig.r(i >= 3, "isPendingFinishedComplete: state must be >= STATE_PENDING_FINISHED, but is %s", i);
-        eiig.q(this.j.isEmpty(), "isPendingFinishedComplete: scheduledReports must be empty");
+        ekvl.s(i >= 3, "isPendingFinishedComplete: state must be >= STATE_PENDING_FINISHED, but is %s", i);
+        ekvl.r(this.j.isEmpty(), "isPendingFinishedComplete: scheduledReports must be empty");
         if (this.e > 3) {
             return true;
         }
         Iterator it = this.b.iterator();
         while (it.hasNext()) {
-            if (!((enss) it.next()).isDone()) {
+            if (!((eqgl) it.next()).isDone()) {
                 return false;
             }
         }
@@ -194,19 +194,19 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
     }
 
     @Override // com.google.android.gms.libs.platform.GmsAlarmManagerCompat$OnAlarmListener
-    public final void a(bxbu bxbuVar) {
+    public final void a(bzkk bzkkVar) {
         int i = this.e;
-        eiig.r(i == 2, "onAlarm: state must be STATE_TRACKING, but is %s", i);
+        ekvl.s(i == 2, "onAlarm: state must be STATE_TRACKING, but is %s", i);
         if (!A()) {
             y();
         } else {
-            ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11347)).B("%s maximum tracking delta expired", this);
+            ((eluo) ((eluo) dikw.a.h()).ai((char) 11350)).B("%s maximum tracking delta expired", this);
             t();
         }
     }
 
-    public final dgcm c() {
-        return new dgcm(this, q());
+    public final dinr c() {
+        return new dinr(this, q());
     }
 
     public final void e() {
@@ -216,12 +216,12 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         Map map = this.j;
         Iterator it = map.values().iterator();
         while (it.hasNext()) {
-            ((ensu) it.next()).cancel(true);
+            ((eqgn) it.next()).cancel(true);
         }
         map.clear();
         Iterator it2 = this.b.iterator();
         while (it2.hasNext()) {
-            ((enss) it2.next()).cancel(true);
+            ((eqgl) it2.next()).cancel(true);
         }
         k(5);
     }
@@ -235,9 +235,9 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         if (i == 3 && z()) {
             z = true;
         }
-        eiig.v(z, "completePendingFinished: state must be STATE_PENDING_FINISHED and isPendingFinishedComplete() must be true. State is %s, isPendingFinishedComplete() returned %s.", Integer.toString(this.e), Boolean.valueOf(z()));
-        eiig.q(!this.l, "completePendingFinished: locationRequest already set");
-        eiig.q(!this.r, "completePendingFinished: trackingCompleteAlarm already set");
+        ekvl.w(z, "completePendingFinished: state must be STATE_PENDING_FINISHED and isPendingFinishedComplete() must be true. State is %s, isPendingFinishedComplete() returned %s.", Integer.toString(this.e), Boolean.valueOf(z()));
+        ekvl.r(!this.l, "completePendingFinished: locationRequest already set");
+        ekvl.r(!this.r, "completePendingFinished: trackingCompleteAlarm already set");
         k(4);
     }
 
@@ -246,13 +246,13 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         if (this.e == 1 && p()) {
             z2 = true;
         }
-        eiig.v(z2, "completeSampling: state must be STATE_SAMPLING and isSamplingComplete() must be true. State is %s, isSamplingComplete() returned %s.", Integer.toString(this.e), Boolean.valueOf(p()));
+        ekvl.w(z2, "completeSampling: state must be STATE_SAMPLING and isSamplingComplete() must be true. State is %s, isSamplingComplete() returned %s.", Integer.toString(this.e), Boolean.valueOf(p()));
         if (this.b.isEmpty() && this.q == null) {
             if (!this.a.r.b()) {
                 e();
                 return;
             } else if (z) {
-                ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11344)).B("%s unable to derive any location - sending empty report", this);
+                ((eluo) ((eluo) dikw.a.h()).ai((char) 11347)).B("%s unable to derive any location - sending empty report", this);
                 v(c(), null);
             }
         }
@@ -267,35 +267,35 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         m(null);
     }
 
-    public final void i(final dgcm dgcmVar) {
+    public final void i(final dinr dinrVar) {
         int i = this.e;
-        eiig.r(i < 3, "scheduleReport: state must be < STATE_PENDING_FINISHED, but is %s", i);
+        ekvl.s(i < 3, "scheduleReport: state must be < STATE_PENDING_FINISHED, but is %s", i);
         Map map = this.j;
-        eiig.q(!map.containsKey(dgcmVar), "scheduleReport: scheduledReports must not contain key reportWorker");
-        long q = dgcmVar.a - q();
-        ((ejhf) ((ejhf) dfzr.a.h()).ah(11352)).O("%s scheduled work in %dms", dgcmVar, q);
+        ekvl.r(!map.containsKey(dinrVar), "scheduleReport: scheduledReports must not contain key reportWorker");
+        long q = dinrVar.a - q();
+        ((eluo) ((eluo) dikw.a.h()).ai(11355)).O("%s scheduled work in %dms", dinrVar, q);
         if (q <= 0) {
-            l(dgcmVar);
+            l(dinrVar);
             return;
         }
-        ensu schedule = jK().a.schedule(new Runnable() { // from class: dgbo
+        eqgn schedule = ka().a.schedule(new Runnable() { // from class: dimt
             @Override // java.lang.Runnable
             public final void run() {
-                ConfigWorker.this.l(dgcmVar);
+                ConfigWorker.this.l(dinrVar);
             }
         }, q, TimeUnit.MILLISECONDS);
-        aslq.c(schedule);
+        aupk.c(schedule);
         if (schedule.isDone()) {
             return;
         }
-        map.put(dgcmVar, schedule);
+        map.put(dinrVar, schedule);
     }
 
     public final void j(long j) {
         if (j == this.g) {
             return;
         }
-        this.g = Math.min(j, fsnb.b());
+        this.g = Math.min(j, fvik.b());
         if (this.e == 2) {
             if (A()) {
                 t();
@@ -305,15 +305,15 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         }
     }
 
-    @Override // defpackage.dgcs, defpackage.dgcr
-    public final ActivationInfo jI() {
+    @Override // defpackage.dinx, defpackage.dinw
+    public final ActivationInfo jY() {
         return this.d.a;
     }
 
-    @Override // defpackage.dgcs, defpackage.dgcr
-    public final String jJ() {
-        return super.jJ() + ":" + this.a.a + ":" + eivv.j(this.d.b, new eiho() { // from class: dgbu
-            @Override // defpackage.eiho
+    @Override // defpackage.dinx, defpackage.dinw
+    public final String jZ() {
+        return super.jZ() + ":" + this.a.a + ":" + elja.j(this.d.b, new ekut() { // from class: dimz
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 return ((DeviceState) obj).h();
             }
@@ -323,30 +323,30 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
     /* JADX WARN: Multi-variable type inference failed */
     public final void k(int i) {
         int i2 = i;
-        eiig.a(i2 > this.e);
-        eiig.q(this.j.isEmpty(), "setState: scheduledReports must be empty");
+        ekvl.a(i2 > this.e);
+        ekvl.r(this.j.isEmpty(), "setState: scheduledReports must be empty");
         if (i2 == 4) {
             int i3 = this.e;
-            eiig.r(i3 == 3, "setState: state must be STATE_PENDING_FINISHED, but is %s", i3);
+            ekvl.s(i3 == 3, "setState: state must be STATE_PENDING_FINISHED, but is %s", i3);
             i2 = 4;
         }
         this.e = i2;
-        asot asotVar = dfzr.a;
-        ejhf ejhfVar = (ejhf) ((ejhf) asotVar.h()).ah(11356);
+        ausn ausnVar = dikw.a;
+        eluo eluoVar = (eluo) ((eluo) ausnVar.h()).ai(11359);
         int i4 = this.e;
-        ejhfVar.P("%s state switched to %s", this, i4 != 0 ? i4 != 1 ? i4 != 2 ? i4 != 3 ? i4 != 4 ? "CANCELED" : "FINISHED" : "PENDING_FINISHED" : "TRACKING" : "SAMPLING" : "READY");
+        eluoVar.P("%s state switched to %s", this, i4 != 0 ? i4 != 1 ? i4 != 2 ? i4 != 3 ? i4 != 4 ? "CANCELED" : "FINISHED" : "PENDING_FINISHED" : "TRACKING" : "SAMPLING" : "READY");
         int i5 = this.e;
         if (i5 == 1) {
-            eiig.r(true, "scheduleSamplingModeReports: state must be STATE_SAMPLING, but is %s", 1);
-            dfvc dfvcVar = this.a;
-            ejfh it = ((eitj) dfvcVar.w).iterator();
+            ekvl.s(true, "scheduleSamplingModeReports: state must be STATE_SAMPLING, but is %s", 1);
+            digh dighVar = this.a;
+            elso it = ((elgo) dighVar.w).iterator();
             while (it.hasNext()) {
                 Long l = (Long) it.next();
                 long longValue = l.longValue();
-                if (longValue < 0 || longValue > dfvcVar.a()) {
-                    ((ejhf) ((ejhf) dfzr.a.j()).ah(11353)).T("%s delta %dms is not in range [0, %d]ms", this, l, Long.valueOf(dfvcVar.a()));
+                if (longValue < 0 || longValue > dighVar.a()) {
+                    ((eluo) ((eluo) ausnVar.j()).ai(11356)).T("%s delta %dms is not in range [0, %d]ms", this, l, Long.valueOf(dighVar.a()));
                 } else {
-                    i(new dgcm(this, longValue));
+                    i(new dinr(this, longValue));
                 }
             }
             this.k = true;
@@ -360,21 +360,21 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
             }
         }
         if (i5 == 2) {
-            if (fsnb.s()) {
+            if (fvik.s()) {
                 int i6 = this.e;
-                eiig.r(i6 == 2, "scheduleTrackingModeReports: state must be STATE_TRACKING, but is %s", i6);
+                ekvl.s(i6 == 2, "scheduleTrackingModeReports: state must be STATE_TRACKING, but is %s", i6);
                 long j = this.a.x;
                 if (j == 0) {
-                    ((ejhf) ((ejhf) asotVar.h()).ah((char) 11355)).x("scheduleTrackingModeReports: no tracking period configured");
+                    ((eluo) ((eluo) ausnVar.h()).ai((char) 11358)).x("scheduleTrackingModeReports: no tracking period configured");
                 } else if (this.n != null) {
-                    ((ejhf) ((ejhf) asotVar.j()).ah((char) 11354)).x("scheduleTrackingModeReports: tracking future already scheduled");
+                    ((eluo) ((eluo) ausnVar.j()).ai((char) 11357)).x("scheduleTrackingModeReports: tracking future already scheduled");
                 } else {
-                    this.n = jK().a.scheduleWithFixedDelay(new Runnable() { // from class: dgbt
+                    this.n = ka().a.scheduleWithFixedDelay(new Runnable() { // from class: dimy
                         @Override // java.lang.Runnable
                         public final void run() {
                             ConfigWorker configWorker = ConfigWorker.this;
                             if (configWorker.e == 2) {
-                                ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11345)).x("scheduleTrackingModeReports: schedule immediate report");
+                                ((eluo) ((eluo) dikw.a.h()).ai((char) 11348)).x("scheduleTrackingModeReports: schedule immediate report");
                                 configWorker.i(configWorker.c());
                             }
                         }
@@ -392,7 +392,7 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         }
         if (i5 == 3) {
             w();
-            if (fsnb.s()) {
+            if (fvik.s()) {
                 u();
             }
             y();
@@ -401,43 +401,43 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
                 f();
                 return;
             } else {
-                aslq.c(ensj.a(this.b).c(new Runnable() { // from class: dgbs
+                aupk.c(eqgc.a(this.b).c(new Runnable() { // from class: dimx
                     @Override // java.lang.Runnable
                     public final void run() {
                         ConfigWorker.this.f();
                     }
-                }, jK().a));
+                }, ka().a));
                 return;
             }
         }
         if (i5 == 4) {
-            ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11358)).B("%s config complete", this);
+            ((eluo) ((eluo) ausnVar.h()).ai((char) 11361)).B("%s config complete", this);
             this.c.c();
         } else if (i5 == 5) {
             w();
-            if (fsnb.s()) {
+            if (fvik.s()) {
                 u();
             }
             y();
             x();
-            ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11357)).B("%s config canceled", this);
+            ((eluo) ((eluo) ausnVar.h()).ai((char) 11360)).B("%s config canceled", this);
             this.c.c();
         }
     }
 
-    public final void l(dgcm dgcmVar) {
+    public final void l(dinr dinrVar) {
         int i = this.e;
-        eiig.r(i < 3, "startReport: state must be < STATE_PENDING_FINISHED, but is %s", i);
-        this.j.remove(dgcmVar);
+        ekvl.s(i < 3, "startReport: state must be < STATE_PENDING_FINISHED, but is %s", i);
+        this.j.remove(dinrVar);
         Location location = this.q;
         if (m(location)) {
             return;
         }
-        if (!fsnb.a.a().aU() ? !B(location) : !(location != null && dfzr.a(location) < fsnb.h())) {
+        if (!fvik.a.lK().aU() ? !B(location) : !(location != null && dikw.a(location) < fvik.h())) {
             this.p = true;
-            v(dgcmVar, location);
+            v(dinrVar, location);
         } else {
-            ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11359)).B("%s no location to report", dgcmVar);
+            ((eluo) ((eluo) dikw.a.h()).ai((char) 11362)).B("%s no location to report", dinrVar);
         }
         if (this.e == 1 && p()) {
             g(true);
@@ -445,10 +445,10 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
     }
 
     public final boolean m(Location location) {
-        if (this.p || this.a.c(jK(), this.d, location) != null) {
+        if (this.p || this.a.c(ka(), this.d, location) != null) {
             return false;
         }
-        ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11343)).B("%s no longer matched by emergency", this);
+        ((eluo) ((eluo) dikw.a.h()).ai((char) 11346)).B("%s no longer matched by emergency", this);
         e();
         return true;
     }
@@ -462,15 +462,15 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         return i == 4 || i == 5;
     }
 
-    @Override // defpackage.bzim
+    @Override // defpackage.cbrd
     public final void onLocationChanged(Location location) {
         int i = this.e;
         if (i != 1 && i != 2) {
-            ((ejhf) ((ejhf) dfzr.a.j()).ah(11351)).z("rejecting incoming location: state must be STATE_SAMPLING or STATE_TRACKING, but is %s", this.e);
+            ((eluo) ((eluo) dikw.a.j()).ai(11354)).z("rejecting incoming location: state must be STATE_SAMPLING or STATE_TRACKING, but is %s", this.e);
             return;
         }
         if (!B(location)) {
-            ((ejhf) ((ejhf) dfzr.a.h()).ah(11350)).P("%s rejecting incoming location with validity %s", this, s(location));
+            ((eluo) ((eluo) dikw.a.h()).ai(11353)).P("%s rejecting incoming location with validity %s", this, s(location));
             return;
         }
         if (this.f == null) {
@@ -480,15 +480,15 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
         int i2 = this.e;
         if (i2 == 1) {
             if (this.a.v && this.b.isEmpty()) {
-                ((ejhf) ((ejhf) dfzr.a.h()).ah((char) 11349)).B("%s first time location", this);
+                ((eluo) ((eluo) dikw.a.h()).ai((char) 11352)).B("%s first time location", this);
                 i(c());
                 return;
             }
             return;
         }
         if (i2 == 2) {
-            asot asotVar = dfzr.a;
-            if (fsnb.s()) {
+            ausn ausnVar = dikw.a;
+            if (fvik.s()) {
                 return;
             }
             i(c());
@@ -497,11 +497,11 @@ public final class ConfigWorker extends dgcs implements GmsAlarmManagerCompat$On
 
     public final boolean p() {
         int i = this.e;
-        eiig.r(i > 0, "isSamplingComplete: state must be >= STATE_SAMPLING, but is %s", i);
+        ekvl.s(i > 0, "isSamplingComplete: state must be >= STATE_SAMPLING, but is %s", i);
         if (this.e > 1) {
             return true;
         }
-        dfvc dfvcVar = this.a;
-        return !(dfvcVar.v && this.q == null && q() < dfvcVar.a()) && this.k && this.j.isEmpty();
+        digh dighVar = this.a;
+        return !(dighVar.v && this.q == null && q() < dighVar.a()) && this.k && this.j.isEmpty();
     }
 }

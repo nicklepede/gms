@@ -10,47 +10,47 @@ import android.util.Log;
 import com.google.android.gms.auth.BrowserResolutionCookie;
 import com.google.android.gms.auth.firstparty.dataservice.ConsentResult;
 import com.google.android.gms.auth.login.CustomWebView;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.aazm;
-import defpackage.abau;
-import defpackage.adkz;
-import defpackage.adla;
-import defpackage.adlg;
-import defpackage.asnj;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.aczm;
+import defpackage.adau;
+import defpackage.aflg;
+import defpackage.aflh;
+import defpackage.afln;
+import defpackage.aurd;
 import defpackage.bp;
-import defpackage.eskh;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.fkdo;
-import defpackage.ips;
-import defpackage.jti;
+import defpackage.euzu;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fmua;
+import defpackage.iri;
+import defpackage.jzx;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class BrowserConsentChimeraActivity extends adlg implements adkz {
-    public static final aano h = new aano("account");
-    public static final aano i = new aano("url");
-    public static final aano j = new aano("cookies");
-    private adla k;
+public class BrowserConsentChimeraActivity extends afln implements aflg {
+    public static final acno h = new acno("account");
+    public static final acno i = new acno("url");
+    public static final acno j = new acno("cookies");
+    private aflh k;
 
     private final void o() {
-        gD(0, new Intent().putExtra(ConsentResult.a, new ConsentResult(abau.PERMISSION_DENIED, null, null, aazm.REJECTED, null)));
+        gT(0, new Intent().putExtra(ConsentResult.a, new ConsentResult(adau.PERMISSION_DENIED, null, null, aczm.REJECTED, null)));
     }
 
-    @Override // defpackage.adkz
-    public final jti b() {
-        return jti.a(this);
+    @Override // defpackage.aflg
+    public final jzx b() {
+        return jzx.a(this);
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "BrowserConsentActivity";
     }
 
-    @Override // defpackage.adkz
+    @Override // defpackage.aflg
     public final void j(String str) {
         if (str == null) {
             Log.w("Auth", String.format(Locale.US, "[BrowserConsentActivity] ConsentResult was null.", new Object[0]));
@@ -59,33 +59,33 @@ public class BrowserConsentChimeraActivity extends adlg implements adkz {
         }
         Intent intent = new Intent();
         try {
-            byte[] f = asnj.f(str);
-            fecp y = fecp.y(eskh.a, f, 0, f.length, febw.a());
-            fecp.M(y);
-            if (!((eskh) y).b) {
+            byte[] f = aurd.f(str);
+            fgri y = fgri.y(euzu.a, f, 0, f.length, fgqp.a());
+            fgri.M(y);
+            if (!((euzu) y).b) {
                 Log.i("Auth", String.format(Locale.US, "[BrowserConsentActivity] ConsentResult cookie present, but consent was not granted.", new Object[0]));
                 o();
             } else {
-                intent.putExtra(ConsentResult.a, new ConsentResult(abau.SUCCESS, aazm.GRANTED, str));
-                gD(-1, intent);
+                intent.putExtra(ConsentResult.a, new ConsentResult(adau.SUCCESS, aczm.GRANTED, str));
+                gT(-1, intent);
             }
-        } catch (fedk | IllegalArgumentException unused) {
+        } catch (fgsd | IllegalArgumentException unused) {
             Log.w("Auth", String.format(Locale.US, "[BrowserConsentActivity] ConsentResult cookie string present, but was invalid and could not be parsed.", new Object[0]));
             o();
         }
     }
 
-    @Override // defpackage.adkz
+    @Override // defpackage.aflg
     public final void l() {
         o();
     }
 
-    @Override // defpackage.adkz
+    @Override // defpackage.aflg
     public final void n(String str) {
         startActivity(new Intent("android.intent.action.VIEW", Uri.parse(str)));
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         CustomWebView customWebView = this.k.b;
         if (customWebView.canGoBack()) {
@@ -96,12 +96,12 @@ public class BrowserConsentChimeraActivity extends adlg implements adkz {
         }
     }
 
-    @Override // defpackage.adlg, defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afln, defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        adla adlaVar = (adla) gI().h("browser");
-        this.k = adlaVar;
-        if (adlaVar == null) {
+        aflh aflhVar = (aflh) gY().h("browser");
+        this.k = aflhVar;
+        if (aflhVar == null) {
             Parcelable[] parcelableArr = (Parcelable[]) s().a(j);
             BrowserResolutionCookie[] browserResolutionCookieArr = new BrowserResolutionCookie[0];
             if (parcelableArr != null) {
@@ -112,19 +112,19 @@ public class BrowserConsentChimeraActivity extends adlg implements adkz {
             }
             Account account = (Account) s().a(h);
             String str = (String) s().a(i);
-            adla adlaVar2 = new adla();
-            aanp aanpVar = new aanp();
-            aanpVar.d(adla.c, account);
-            aanpVar.d(adla.d, str);
-            aanpVar.d(adla.ag, browserResolutionCookieArr);
-            adlaVar2.setArguments(aanpVar.a);
-            this.k = adlaVar2;
-            bp bpVar = new bp(gI());
+            aflh aflhVar2 = new aflh();
+            acnp acnpVar = new acnp();
+            acnpVar.d(aflh.c, account);
+            acnpVar.d(aflh.d, str);
+            acnpVar.d(aflh.ag, browserResolutionCookieArr);
+            aflhVar2.setArguments(acnpVar.a);
+            this.k = aflhVar2;
+            bp bpVar = new bp(gY());
             bpVar.u(R.id.content, this.k, "browser");
             bpVar.a();
         }
-        if (fkdo.a.a().l()) {
-            int i3 = ips.a;
+        if (fmua.a.lK().m()) {
+            int i3 = iri.a;
         }
     }
 }

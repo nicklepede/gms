@@ -5,17 +5,17 @@ import android.os.Parcelable;
 import com.google.android.gms.chimera.debug.items.ModuleSetItem;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aoja;
-import defpackage.arxc;
-import defpackage.fuyg;
-import defpackage.fvaq;
-import defpackage.fvbo;
+import defpackage.aqkt;
+import defpackage.atzr;
+import defpackage.fxue;
+import defpackage.fxwo;
+import defpackage.fxxm;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class ModuleSetItem extends AbstractSafeParcelable implements ReflectedParcelable, Comparable {
-    public static final Parcelable.Creator CREATOR = new aoja();
+    public static final Parcelable.Creator CREATOR = new aqkt();
     public final int a;
     public final String b;
     public final long c;
@@ -25,9 +25,9 @@ public final class ModuleSetItem extends AbstractSafeParcelable implements Refle
     public final List g;
 
     public ModuleSetItem(int i, String str, long j, String str2, boolean z, boolean z2, List list) {
-        fvbo.f(str, "moduleSetId");
-        fvbo.f(str2, "status");
-        fvbo.f(list, "enabledFeatures");
+        fxxm.f(str, "moduleSetId");
+        fxxm.f(str2, "status");
+        fxxm.f(list, "enabledFeatures");
         this.a = i;
         this.b = str;
         this.c = j;
@@ -40,19 +40,19 @@ public final class ModuleSetItem extends AbstractSafeParcelable implements Refle
     @Override // java.lang.Comparable
     public final /* synthetic */ int compareTo(Object obj) {
         ModuleSetItem moduleSetItem = (ModuleSetItem) obj;
-        fvbo.f(moduleSetItem, "other");
-        return fuyg.b(this, moduleSetItem, new fvaq[]{new fvaq() { // from class: aoiy
-            @Override // defpackage.fvaq
+        fxxm.f(moduleSetItem, "other");
+        return fxue.b(this, moduleSetItem, new fxwo[]{new fxwo() { // from class: aqkr
+            @Override // defpackage.fxwo
             public final Object a(Object obj2) {
                 ModuleSetItem moduleSetItem2 = (ModuleSetItem) obj2;
-                fvbo.f(moduleSetItem2, "it");
+                fxxm.f(moduleSetItem2, "it");
                 return moduleSetItem2.b;
             }
-        }, new fvaq() { // from class: aoiz
-            @Override // defpackage.fvaq
+        }, new fxwo() { // from class: aqks
+            @Override // defpackage.fxwo
             public final Object a(Object obj2) {
                 ModuleSetItem moduleSetItem2 = (ModuleSetItem) obj2;
-                fvbo.f(moduleSetItem2, "it");
+                fxxm.f(moduleSetItem2, "it");
                 return Long.valueOf(moduleSetItem2.c);
             }
         }});
@@ -60,23 +60,23 @@ public final class ModuleSetItem extends AbstractSafeParcelable implements Refle
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "out");
+        fxxm.f(parcel, "out");
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.q(parcel, 3, this.c);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.e(parcel, 5, this.e);
-        arxc.e(parcel, 6, this.f);
-        arxc.x(parcel, 7, this.g, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.q(parcel, 3, this.c);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.e(parcel, 5, this.e);
+        atzr.e(parcel, 6, this.f);
+        atzr.x(parcel, 7, this.g, false);
+        atzr.c(parcel, a);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ModuleSetItem(String str, long j, String str2, boolean z, boolean z2, List list) {
         this(1, str, j, str2, z, z2, list);
-        fvbo.f(str, "moduleSetId");
-        fvbo.f(list, "enabledFeatures");
+        fxxm.f(str, "moduleSetId");
+        fxxm.f(list, "enabledFeatures");
     }
 }

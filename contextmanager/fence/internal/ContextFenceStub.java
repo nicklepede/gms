@@ -4,57 +4,57 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.awareness.fence.AwarenessFence;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.atoz;
-import defpackage.atpa;
-import defpackage.atpc;
-import defpackage.atph;
-import defpackage.atpl;
-import defpackage.atpr;
-import defpackage.atps;
-import defpackage.atpt;
-import defpackage.atpu;
-import defpackage.atpv;
-import defpackage.atpw;
-import defpackage.atpx;
-import defpackage.atpy;
-import defpackage.atqa;
-import defpackage.atqb;
-import defpackage.atqc;
-import defpackage.atqd;
-import defpackage.atqe;
-import defpackage.atqg;
-import defpackage.atqh;
-import defpackage.fdcp;
-import defpackage.fdcs;
-import defpackage.fdcw;
-import defpackage.fdde;
-import defpackage.fddg;
-import defpackage.fddh;
-import defpackage.fddn;
-import defpackage.fdei;
-import defpackage.fden;
-import defpackage.fdeq;
-import defpackage.fdet;
-import defpackage.fdew;
-import defpackage.fdfa;
-import defpackage.fdfb;
-import defpackage.fdfe;
-import defpackage.fdfh;
-import defpackage.fdfi;
-import defpackage.fdfl;
-import defpackage.fdfr;
-import defpackage.fdfu;
-import defpackage.fdfx;
-import defpackage.fdga;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feeq;
-import defpackage.fwac;
-import defpackage.qkv;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.avtc;
+import defpackage.avtd;
+import defpackage.avtf;
+import defpackage.avtk;
+import defpackage.avto;
+import defpackage.avtu;
+import defpackage.avtv;
+import defpackage.avtw;
+import defpackage.avtx;
+import defpackage.avty;
+import defpackage.avtz;
+import defpackage.avua;
+import defpackage.avub;
+import defpackage.avud;
+import defpackage.avue;
+import defpackage.avuf;
+import defpackage.avug;
+import defpackage.avuh;
+import defpackage.avuj;
+import defpackage.avuk;
+import defpackage.ffrg;
+import defpackage.ffrj;
+import defpackage.ffrn;
+import defpackage.ffrv;
+import defpackage.ffrx;
+import defpackage.ffry;
+import defpackage.ffse;
+import defpackage.ffsz;
+import defpackage.ffte;
+import defpackage.ffth;
+import defpackage.fftk;
+import defpackage.fftn;
+import defpackage.fftr;
+import defpackage.ffts;
+import defpackage.fftv;
+import defpackage.ffty;
+import defpackage.fftz;
+import defpackage.ffuc;
+import defpackage.ffui;
+import defpackage.fful;
+import defpackage.ffuo;
+import defpackage.ffur;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgtj;
+import defpackage.fywe;
+import defpackage.sdz;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -62,75 +62,75 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class ContextFenceStub extends AwarenessFence implements atpl {
-    public static final Parcelable.Creator CREATOR = new atph();
-    private fddh a;
+public class ContextFenceStub extends AwarenessFence implements avto {
+    public static final Parcelable.Creator CREATOR = new avtk();
+    private ffry a;
     private byte[] b;
     private ArrayList c;
-    private atqd d;
-    private atqd e;
-    private atps f;
-    private atpw g;
-    private atoz h;
-    private atqa i;
-    private atpx j;
-    private atpv k;
-    private atpa l;
-    private atpc m;
-    private atpt n;
-    private atqe o;
-    private atpu p;
-    private atpy q;
-    private atpr r;
-    private atqc s;
-    private atqg t;
-    private atqb u;
-    private atqh v;
+    private avug d;
+    private avug e;
+    private avtv f;
+    private avtz g;
+    private avtc h;
+    private avud i;
+    private avua j;
+    private avty k;
+    private avtd l;
+    private avtf m;
+    private avtw n;
+    private avuh o;
+    private avtx p;
+    private avub q;
+    private avtu r;
+    private avuf s;
+    private avuj t;
+    private avue u;
+    private avuk v;
 
-    public ContextFenceStub(fddh fddhVar) {
-        arwm.s(fddhVar);
-        this.a = fddhVar;
+    public ContextFenceStub(ffry ffryVar) {
+        atzb.s(ffryVar);
+        this.a = ffryVar;
         this.b = null;
         n();
     }
 
-    public static ContextFenceStub c(atqd atqdVar) {
-        fdde fddeVar;
-        fdfr fdfrVar = atqdVar.b;
-        if (fdfrVar.g) {
-            fddeVar = (fdde) fddh.b.v();
-            fddg fddgVar = fddg.LOCAL_TIME_FENCE;
-            if (!fddeVar.b.L()) {
-                fddeVar.U();
+    public static ContextFenceStub c(avug avugVar) {
+        ffrv ffrvVar;
+        ffui ffuiVar = avugVar.b;
+        if (ffuiVar.g) {
+            ffrvVar = (ffrv) ffry.b.v();
+            ffrx ffrxVar = ffrx.LOCAL_TIME_FENCE;
+            if (!ffrvVar.b.L()) {
+                ffrvVar.U();
             }
-            fddh fddhVar = (fddh) fddeVar.b;
-            fddhVar.d = fddgVar.z;
-            fddhVar.c |= 1;
-            if (!fddeVar.b.L()) {
-                fddeVar.U();
+            ffry ffryVar = (ffry) ffrvVar.b;
+            ffryVar.d = ffrxVar.z;
+            ffryVar.c |= 1;
+            if (!ffrvVar.b.L()) {
+                ffrvVar.U();
             }
-            fddh fddhVar2 = (fddh) fddeVar.b;
-            fddhVar2.u = fdfrVar;
-            fddhVar2.c |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_IME_MULTI_LINE;
+            ffry ffryVar2 = (ffry) ffrvVar.b;
+            ffryVar2.u = ffuiVar;
+            ffryVar2.c |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_IME_MULTI_LINE;
         } else {
-            fddeVar = (fdde) fddh.b.v();
-            fddg fddgVar2 = fddg.TIME_FENCE;
-            if (!fddeVar.b.L()) {
-                fddeVar.U();
+            ffrvVar = (ffrv) ffry.b.v();
+            ffrx ffrxVar2 = ffrx.TIME_FENCE;
+            if (!ffrvVar.b.L()) {
+                ffrvVar.U();
             }
-            fddh fddhVar3 = (fddh) fddeVar.b;
-            fddhVar3.d = fddgVar2.z;
-            fddhVar3.c |= 1;
-            if (!fddeVar.b.L()) {
-                fddeVar.U();
+            ffry ffryVar3 = (ffry) ffrvVar.b;
+            ffryVar3.d = ffrxVar2.z;
+            ffryVar3.c |= 1;
+            if (!ffrvVar.b.L()) {
+                ffrvVar.U();
             }
-            fddh fddhVar4 = (fddh) fddeVar.b;
-            fddhVar4.f = fdfrVar;
-            fddhVar4.c |= 2;
+            ffry ffryVar4 = (ffry) ffrvVar.b;
+            ffryVar4.f = ffuiVar;
+            ffryVar4.c |= 2;
         }
-        return new ContextFenceStub((fddh) fddeVar.Q());
+        return new ContextFenceStub((ffry) ffrvVar.Q());
     }
 
     public static List h(Collection collection) {
@@ -146,13 +146,13 @@ public class ContextFenceStub extends AwarenessFence implements atpl {
         if (this.a == null) {
             try {
                 byte[] bArr = this.b;
-                arwm.s(bArr);
-                fecp y = fecp.y(fddh.b, bArr, 0, bArr.length, febw.a());
-                fecp.M(y);
-                this.a = (fddh) y;
+                atzb.s(bArr);
+                fgri y = fgri.y(ffry.b, bArr, 0, bArr.length, fgqp.a());
+                fgri.M(y);
+                this.a = (ffry) y;
                 this.b = null;
-            } catch (fedk e) {
-                qkv.b("ContextFenceStub", "Could not deserialize context fence bytes.", e);
+            } catch (fgsd e) {
+                sdz.b("ContextFenceStub", "Could not deserialize context fence bytes.", e);
                 throw new IllegalStateException(e);
             }
         }
@@ -160,13 +160,13 @@ public class ContextFenceStub extends AwarenessFence implements atpl {
     }
 
     private final void n() {
-        fddh fddhVar = this.a;
-        if (fddhVar != null || this.b == null) {
-            if (fddhVar == null || this.b != null) {
-                if (fddhVar != null && this.b != null) {
+        ffry ffryVar = this.a;
+        if (ffryVar != null || this.b == null) {
+            if (ffryVar == null || this.b != null) {
+                if (ffryVar != null && this.b != null) {
                     throw new IllegalStateException("Invalid internal representation - full");
                 }
-                if (fddhVar != null || this.b != null) {
+                if (ffryVar != null || this.b != null) {
                     throw new IllegalStateException("Impossible");
                 }
                 throw new IllegalStateException("Invalid internal representation - empty");
@@ -174,9 +174,9 @@ public class ContextFenceStub extends AwarenessFence implements atpl {
         }
     }
 
-    @Override // defpackage.atpl
+    @Override // defpackage.avto
     public final int a() {
-        atpl d = d();
+        avto d = d();
         if (d == null) {
             return -2;
         }
@@ -185,383 +185,383 @@ public class ContextFenceStub extends AwarenessFence implements atpl {
 
     public final int b() {
         m();
-        fddh fddhVar = this.a;
-        arwm.s(fddhVar);
-        if ((fddhVar.c & 1) == 0) {
+        ffry ffryVar = this.a;
+        atzb.s(ffryVar);
+        if ((ffryVar.c & 1) == 0) {
             return 0;
         }
-        fddh fddhVar2 = this.a;
-        arwm.s(fddhVar2);
-        fddg b = fddg.b(fddhVar2.d);
+        ffry ffryVar2 = this.a;
+        atzb.s(ffryVar2);
+        ffrx b = ffrx.b(ffryVar2.d);
         if (b == null) {
-            b = fddg.UNKNOWN_CONTEXT_FENCE_TYPE;
+            b = ffrx.UNKNOWN_CONTEXT_FENCE_TYPE;
         }
         return b.z;
     }
 
-    public final atpl d() {
+    public final avto d() {
         switch (b()) {
             case 4:
                 m();
-                fddh fddhVar = this.a;
-                arwm.s(fddhVar);
-                if ((fddhVar.c & 2) != 0) {
+                ffry ffryVar = this.a;
+                atzb.s(ffryVar);
+                if ((ffryVar.c & 2) != 0) {
                     if (this.d == null) {
-                        fddh fddhVar2 = this.a;
-                        arwm.s(fddhVar2);
-                        fdfr fdfrVar = fddhVar2.f;
-                        if (fdfrVar == null) {
-                            fdfrVar = fdfr.a;
+                        ffry ffryVar2 = this.a;
+                        atzb.s(ffryVar2);
+                        ffui ffuiVar = ffryVar2.f;
+                        if (ffuiVar == null) {
+                            ffuiVar = ffui.a;
                         }
-                        this.d = new atqd(fdfrVar);
+                        this.d = new avug(ffuiVar);
                     }
                     return this.d;
                 }
             case 1:
             case 2:
             case 3:
-            case fwac.v /* 22 */:
+            case fywe.v /* 22 */:
                 return null;
             case 5:
                 m();
-                fddh fddhVar3 = this.a;
-                arwm.s(fddhVar3);
-                if ((fddhVar3.c & 4) == 0) {
+                ffry ffryVar3 = this.a;
+                atzb.s(ffryVar3);
+                if ((ffryVar3.c & 4) == 0) {
                     return null;
                 }
                 if (this.f == null) {
-                    fddh fddhVar4 = this.a;
-                    arwm.s(fddhVar4);
-                    fdei fdeiVar = fddhVar4.g;
-                    if (fdeiVar == null) {
-                        fdeiVar = fdei.a;
+                    ffry ffryVar4 = this.a;
+                    atzb.s(ffryVar4);
+                    ffsz ffszVar = ffryVar4.g;
+                    if (ffszVar == null) {
+                        ffszVar = ffsz.a;
                     }
-                    this.f = new atps(fdeiVar);
+                    this.f = new avtv(ffszVar);
                 }
                 return this.f;
             case 6:
                 return e();
             case 7:
                 m();
-                fddh fddhVar5 = this.a;
-                arwm.s(fddhVar5);
-                if ((fddhVar5.c & 16) == 0) {
+                ffry ffryVar5 = this.a;
+                atzb.s(ffryVar5);
+                if ((ffryVar5.c & 16) == 0) {
                     return null;
                 }
                 if (this.h == null) {
-                    fddh fddhVar6 = this.a;
-                    arwm.s(fddhVar6);
-                    fdcp fdcpVar = fddhVar6.i;
-                    if (fdcpVar == null) {
-                        fdcpVar = fdcp.b;
+                    ffry ffryVar6 = this.a;
+                    atzb.s(ffryVar6);
+                    ffrg ffrgVar = ffryVar6.i;
+                    if (ffrgVar == null) {
+                        ffrgVar = ffrg.b;
                     }
-                    this.h = new atoz(fdcpVar);
+                    this.h = new avtc(ffrgVar);
                 }
                 return this.h;
             case 8:
                 m();
-                fddh fddhVar7 = this.a;
-                arwm.s(fddhVar7);
-                if ((fddhVar7.c & 32) == 0) {
+                ffry ffryVar7 = this.a;
+                atzb.s(ffryVar7);
+                if ((ffryVar7.c & 32) == 0) {
                     return null;
                 }
                 if (this.i == null) {
-                    fddh fddhVar8 = this.a;
-                    arwm.s(fddhVar8);
-                    fdfh fdfhVar = fddhVar8.j;
-                    if (fdfhVar == null) {
-                        fdfhVar = fdfh.a;
+                    ffry ffryVar8 = this.a;
+                    atzb.s(ffryVar8);
+                    ffty fftyVar = ffryVar8.j;
+                    if (fftyVar == null) {
+                        fftyVar = ffty.a;
                     }
-                    this.i = new atqa(fdfhVar);
+                    this.i = new avud(fftyVar);
                 }
                 return this.i;
             case 9:
                 m();
-                fddh fddhVar9 = this.a;
-                arwm.s(fddhVar9);
-                if ((fddhVar9.c & 64) == 0) {
+                ffry ffryVar9 = this.a;
+                atzb.s(ffryVar9);
+                if ((ffryVar9.c & 64) == 0) {
                     return null;
                 }
                 if (this.j == null) {
-                    fddh fddhVar10 = this.a;
-                    arwm.s(fddhVar10);
-                    fdfa fdfaVar = fddhVar10.k;
-                    if (fdfaVar == null) {
-                        fdfaVar = fdfa.b;
+                    ffry ffryVar10 = this.a;
+                    atzb.s(ffryVar10);
+                    fftr fftrVar = ffryVar10.k;
+                    if (fftrVar == null) {
+                        fftrVar = fftr.b;
                     }
-                    this.j = new atpx(fdfaVar);
+                    this.j = new avua(fftrVar);
                 }
                 return this.j;
             case 10:
                 m();
-                fddh fddhVar11 = this.a;
-                arwm.s(fddhVar11);
-                if ((fddhVar11.c & 128) == 0) {
+                ffry ffryVar11 = this.a;
+                atzb.s(ffryVar11);
+                if ((ffryVar11.c & 128) == 0) {
                     return null;
                 }
                 if (this.k == null) {
-                    fddh fddhVar12 = this.a;
-                    arwm.s(fddhVar12);
-                    fdet fdetVar = fddhVar12.l;
-                    if (fdetVar == null) {
-                        fdetVar = fdet.a;
+                    ffry ffryVar12 = this.a;
+                    atzb.s(ffryVar12);
+                    fftk fftkVar = ffryVar12.l;
+                    if (fftkVar == null) {
+                        fftkVar = fftk.a;
                     }
-                    this.k = new atpv(fdetVar);
+                    this.k = new avty(fftkVar);
                 }
                 return this.k;
             case 11:
                 m();
-                fddh fddhVar13 = this.a;
-                arwm.s(fddhVar13);
-                if ((fddhVar13.c & 256) == 0) {
+                ffry ffryVar13 = this.a;
+                atzb.s(ffryVar13);
+                if ((ffryVar13.c & 256) == 0) {
                     return null;
                 }
                 if (this.l == null) {
-                    fddh fddhVar14 = this.a;
-                    arwm.s(fddhVar14);
-                    fdcs fdcsVar = fddhVar14.m;
-                    if (fdcsVar == null) {
-                        fdcsVar = fdcs.a;
+                    ffry ffryVar14 = this.a;
+                    atzb.s(ffryVar14);
+                    ffrj ffrjVar = ffryVar14.m;
+                    if (ffrjVar == null) {
+                        ffrjVar = ffrj.a;
                     }
-                    this.l = new atpa(fdcsVar);
+                    this.l = new avtd(ffrjVar);
                 }
                 return this.l;
             case 12:
                 m();
-                fddh fddhVar15 = this.a;
-                arwm.s(fddhVar15);
-                if ((fddhVar15.c & 512) == 0) {
+                ffry ffryVar15 = this.a;
+                atzb.s(ffryVar15);
+                if ((ffryVar15.c & 512) == 0) {
                     return null;
                 }
                 if (this.m == null) {
-                    fddh fddhVar16 = this.a;
-                    arwm.s(fddhVar16);
-                    fdcw fdcwVar = fddhVar16.n;
-                    if (fdcwVar == null) {
-                        fdcwVar = fdcw.a;
+                    ffry ffryVar16 = this.a;
+                    atzb.s(ffryVar16);
+                    ffrn ffrnVar = ffryVar16.n;
+                    if (ffrnVar == null) {
+                        ffrnVar = ffrn.a;
                     }
-                    this.m = new atpc(fdcwVar);
+                    this.m = new avtf(ffrnVar);
                 }
                 return this.m;
             case 13:
                 m();
-                fddh fddhVar17 = this.a;
-                arwm.s(fddhVar17);
-                if ((fddhVar17.c & 1024) == 0) {
+                ffry ffryVar17 = this.a;
+                atzb.s(ffryVar17);
+                if ((ffryVar17.c & 1024) == 0) {
                     return null;
                 }
                 if (this.n == null) {
-                    fddh fddhVar18 = this.a;
-                    arwm.s(fddhVar18);
-                    fden fdenVar = fddhVar18.o;
-                    if (fdenVar == null) {
-                        fdenVar = fden.c;
+                    ffry ffryVar18 = this.a;
+                    atzb.s(ffryVar18);
+                    ffte ffteVar = ffryVar18.o;
+                    if (ffteVar == null) {
+                        ffteVar = ffte.c;
                     }
-                    this.n = new atpt(fdenVar);
+                    this.n = new avtw(ffteVar);
                 }
                 return this.n;
             case 14:
             default:
-                qkv.d("ContextFenceStub", "Unknown fence stub type=%s", Integer.valueOf(b()));
+                sdz.d("ContextFenceStub", "Unknown fence stub type=%s", Integer.valueOf(b()));
                 return null;
             case 15:
                 m();
-                fddh fddhVar19 = this.a;
-                arwm.s(fddhVar19);
-                if ((fddhVar19.c & 8192) == 0) {
+                ffry ffryVar19 = this.a;
+                atzb.s(ffryVar19);
+                if ((ffryVar19.c & 8192) == 0) {
                     return null;
                 }
                 if (this.o == null) {
-                    fddh fddhVar20 = this.a;
-                    arwm.s(fddhVar20);
-                    fdfu fdfuVar = fddhVar20.p;
-                    if (fdfuVar == null) {
-                        fdfuVar = fdfu.a;
+                    ffry ffryVar20 = this.a;
+                    atzb.s(ffryVar20);
+                    fful ffulVar = ffryVar20.p;
+                    if (ffulVar == null) {
+                        ffulVar = fful.a;
                     }
-                    this.o = new atqe(fdfuVar);
+                    this.o = new avuh(ffulVar);
                 }
                 return this.o;
             case 16:
                 m();
-                fddh fddhVar21 = this.a;
-                arwm.s(fddhVar21);
-                if ((fddhVar21.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES) == 0) {
+                ffry ffryVar21 = this.a;
+                atzb.s(ffryVar21);
+                if ((ffryVar21.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES) == 0) {
                     return null;
                 }
                 if (this.r == null) {
-                    fddh fddhVar22 = this.a;
-                    arwm.s(fddhVar22);
-                    fddn fddnVar = fddhVar22.q;
-                    if (fddnVar == null) {
-                        fddnVar = fddn.a;
+                    ffry ffryVar22 = this.a;
+                    atzb.s(ffryVar22);
+                    ffse ffseVar = ffryVar22.q;
+                    if (ffseVar == null) {
+                        ffseVar = ffse.a;
                     }
-                    this.r = new atpr(fddnVar);
+                    this.r = new avtu(ffseVar);
                 }
                 return this.r;
-            case fwac.q /* 17 */:
+            case fywe.q /* 17 */:
                 m();
-                fddh fddhVar23 = this.a;
-                arwm.s(fddhVar23);
-                if ((fddhVar23.c & 32768) == 0) {
+                ffry ffryVar23 = this.a;
+                atzb.s(ffryVar23);
+                if ((ffryVar23.c & 32768) == 0) {
                     return null;
                 }
                 if (this.p == null) {
-                    fddh fddhVar24 = this.a;
-                    arwm.s(fddhVar24);
-                    fdeq fdeqVar = fddhVar24.r;
-                    if (fdeqVar == null) {
-                        fdeqVar = fdeq.a;
+                    ffry ffryVar24 = this.a;
+                    atzb.s(ffryVar24);
+                    ffth ffthVar = ffryVar24.r;
+                    if (ffthVar == null) {
+                        ffthVar = ffth.a;
                     }
-                    this.p = new atpu(fdeqVar);
+                    this.p = new avtx(ffthVar);
                 }
                 return this.p;
             case 18:
                 m();
-                fddh fddhVar25 = this.a;
-                arwm.s(fddhVar25);
-                if ((fddhVar25.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE) == 0) {
+                ffry ffryVar25 = this.a;
+                atzb.s(ffryVar25);
+                if ((ffryVar25.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE) == 0) {
                     return null;
                 }
                 if (this.q == null) {
-                    fddh fddhVar26 = this.a;
-                    arwm.s(fddhVar26);
-                    fdfe fdfeVar = fddhVar26.s;
-                    if (fdfeVar == null) {
-                        fdfeVar = fdfe.a;
+                    ffry ffryVar26 = this.a;
+                    atzb.s(ffryVar26);
+                    fftv fftvVar = ffryVar26.s;
+                    if (fftvVar == null) {
+                        fftvVar = fftv.a;
                     }
-                    this.q = new atpy(fdfeVar);
+                    this.q = new avub(fftvVar);
                 }
                 return this.q;
             case 19:
                 m();
-                fddh fddhVar27 = this.a;
-                arwm.s(fddhVar27);
-                if ((fddhVar27.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_MULTI_LINE) == 0) {
+                ffry ffryVar27 = this.a;
+                atzb.s(ffryVar27);
+                if ((ffryVar27.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_MULTI_LINE) == 0) {
                     return null;
                 }
                 if (this.s == null) {
-                    fddh fddhVar28 = this.a;
-                    arwm.s(fddhVar28);
-                    fdfl fdflVar = fddhVar28.t;
-                    if (fdflVar == null) {
-                        fdflVar = fdfl.a;
+                    ffry ffryVar28 = this.a;
+                    atzb.s(ffryVar28);
+                    ffuc ffucVar = ffryVar28.t;
+                    if (ffucVar == null) {
+                        ffucVar = ffuc.a;
                     }
-                    this.s = new atqc(fdflVar);
+                    this.s = new avuf(ffucVar);
                 }
                 return this.s;
-            case fwac.t /* 20 */:
+            case fywe.t /* 20 */:
                 m();
-                fddh fddhVar29 = this.a;
-                arwm.s(fddhVar29);
-                if ((fddhVar29.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_IME_MULTI_LINE) == 0) {
+                ffry ffryVar29 = this.a;
+                atzb.s(ffryVar29);
+                if ((ffryVar29.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_IME_MULTI_LINE) == 0) {
                     return null;
                 }
                 if (this.e == null) {
-                    fddh fddhVar30 = this.a;
-                    arwm.s(fddhVar30);
-                    fdfr fdfrVar2 = fddhVar30.u;
-                    if (fdfrVar2 == null) {
-                        fdfrVar2 = fdfr.a;
+                    ffry ffryVar30 = this.a;
+                    atzb.s(ffryVar30);
+                    ffui ffuiVar2 = ffryVar30.u;
+                    if (ffuiVar2 == null) {
+                        ffuiVar2 = ffui.a;
                     }
-                    this.e = new atqd(fdfrVar2);
+                    this.e = new avug(ffuiVar2);
                 }
                 return this.e;
-            case fwac.u /* 21 */:
+            case fywe.u /* 21 */:
                 m();
-                fddh fddhVar31 = this.a;
-                arwm.s(fddhVar31);
-                if ((fddhVar31.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS) == 0) {
+                ffry ffryVar31 = this.a;
+                atzb.s(ffryVar31);
+                if ((ffryVar31.c & AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS) == 0) {
                     return null;
                 }
                 if (this.t == null) {
-                    fddh fddhVar32 = this.a;
-                    arwm.s(fddhVar32);
-                    fdfx fdfxVar = fddhVar32.v;
-                    if (fdfxVar == null) {
-                        fdfxVar = fdfx.a;
+                    ffry ffryVar32 = this.a;
+                    atzb.s(ffryVar32);
+                    ffuo ffuoVar = ffryVar32.v;
+                    if (ffuoVar == null) {
+                        ffuoVar = ffuo.a;
                     }
-                    this.t = new atqg(fdfxVar);
+                    this.t = new avuj(ffuoVar);
                 }
                 return this.t;
-            case fwac.w /* 23 */:
+            case fywe.w /* 23 */:
                 m();
-                fddh fddhVar33 = this.a;
-                arwm.s(fddhVar33);
-                if ((fddhVar33.c & 2097152) == 0) {
+                ffry ffryVar33 = this.a;
+                atzb.s(ffryVar33);
+                if ((ffryVar33.c & 2097152) == 0) {
                     return null;
                 }
                 if (this.u == null) {
-                    fddh fddhVar34 = this.a;
-                    arwm.s(fddhVar34);
-                    fdfi fdfiVar = fddhVar34.y;
-                    if (fdfiVar == null) {
-                        fdfiVar = fdfi.a;
+                    ffry ffryVar34 = this.a;
+                    atzb.s(ffryVar34);
+                    fftz fftzVar = ffryVar34.y;
+                    if (fftzVar == null) {
+                        fftzVar = fftz.a;
                     }
-                    this.u = new atqb(fdfiVar);
+                    this.u = new avue(fftzVar);
                 }
                 return this.u;
-            case fwac.x /* 24 */:
+            case fywe.x /* 24 */:
                 m();
-                fddh fddhVar35 = this.a;
-                arwm.s(fddhVar35);
-                if ((fddhVar35.c & 4194304) == 0) {
+                ffry ffryVar35 = this.a;
+                atzb.s(ffryVar35);
+                if ((ffryVar35.c & 4194304) == 0) {
                     return null;
                 }
                 if (this.v == null) {
-                    fddh fddhVar36 = this.a;
-                    arwm.s(fddhVar36);
-                    fdga fdgaVar = fddhVar36.z;
-                    if (fdgaVar == null) {
-                        fdgaVar = fdga.a;
+                    ffry ffryVar36 = this.a;
+                    atzb.s(ffryVar36);
+                    ffur ffurVar = ffryVar36.z;
+                    if (ffurVar == null) {
+                        ffurVar = ffur.a;
                     }
-                    this.v = new atqh(fdgaVar);
+                    this.v = new avuk(ffurVar);
                 }
                 return this.v;
         }
     }
 
-    public final atpw e() {
+    public final avtz e() {
         m();
-        fddh fddhVar = this.a;
-        arwm.s(fddhVar);
-        if ((fddhVar.c & 8) == 0) {
+        ffry ffryVar = this.a;
+        atzb.s(ffryVar);
+        if ((ffryVar.c & 8) == 0) {
             return null;
         }
         if (this.g == null) {
-            fddh fddhVar2 = this.a;
-            arwm.s(fddhVar2);
-            fdew fdewVar = fddhVar2.h;
-            if (fdewVar == null) {
-                fdewVar = fdew.a;
+            ffry ffryVar2 = this.a;
+            atzb.s(ffryVar2);
+            fftn fftnVar = ffryVar2.h;
+            if (fftnVar == null) {
+                fftnVar = fftn.a;
             }
-            this.g = new atpw(fdewVar);
+            this.g = new avtz(fftnVar);
         }
         return this.g;
     }
 
-    public final fddh f() {
+    public final ffry f() {
         m();
-        fddh fddhVar = this.a;
-        arwm.s(fddhVar);
-        return fddhVar;
+        ffry ffryVar = this.a;
+        atzb.s(ffryVar);
+        return ffryVar;
     }
 
     public final ArrayList g() {
         m();
         if (this.c == null) {
-            fddh fddhVar = this.a;
-            arwm.s(fddhVar);
-            this.c = new ArrayList(fddhVar.e.size());
-            fddh fddhVar2 = this.a;
-            arwm.s(fddhVar2);
-            for (fddh fddhVar3 : fddhVar2.e) {
+            ffry ffryVar = this.a;
+            atzb.s(ffryVar);
+            this.c = new ArrayList(ffryVar.e.size());
+            ffry ffryVar2 = this.a;
+            atzb.s(ffryVar2);
+            for (ffry ffryVar3 : ffryVar2.e) {
                 ArrayList arrayList = this.c;
-                arwm.s(arrayList);
-                arrayList.add(new ContextFenceStub(fddhVar3));
+                atzb.s(arrayList);
+                arrayList.add(new ContextFenceStub(ffryVar3));
             }
         }
         ArrayList arrayList2 = this.c;
-        arwm.s(arrayList2);
+        atzb.s(arrayList2);
         return arrayList2;
     }
 
@@ -582,31 +582,31 @@ public class ContextFenceStub extends AwarenessFence implements atpl {
         int b = b();
         if (b != 1 && b != 2 && b != 3) {
             if (b != 22) {
-                atpl d = d();
+                avto d = d();
                 if (d == null) {
-                    qkv.d("ContextFenceStub", "Expected a primitive fence for type=%s", Integer.valueOf(b()));
+                    sdz.d("ContextFenceStub", "Expected a primitive fence for type=%s", Integer.valueOf(b()));
                 } else {
                     set.add(Integer.valueOf(d.a()));
                 }
-                fddh fddhVar = this.a;
-                arwm.s(fddhVar);
-                if ((fddhVar.c & 1048576) != 0) {
-                    if (d instanceof atps) {
+                ffry ffryVar = this.a;
+                atzb.s(ffryVar);
+                if ((ffryVar.c & 1048576) != 0) {
+                    if (d instanceof avtv) {
                         set.addAll(Collections.singletonList(46));
                         return;
                     } else {
-                        arwm.s(d);
-                        qkv.d("ContextFenceStub", "Predictive fences are not supported for context: %s", Integer.valueOf(d.a()));
+                        atzb.s(d);
+                        sdz.d("ContextFenceStub", "Predictive fences are not supported for context: %s", Integer.valueOf(d.a()));
                         set.add(-3);
                         return;
                     }
                 }
                 return;
             }
-            fddh fddhVar2 = this.a;
-            arwm.s(fddhVar2);
-            if ((fddhVar2.c & 1048576) == 0) {
-                qkv.c("ContextFenceStub", "Predictive fence without predictive parameters.");
+            ffry ffryVar2 = this.a;
+            atzb.s(ffryVar2);
+            if ((ffryVar2.c & 1048576) == 0) {
+                sdz.c("ContextFenceStub", "Predictive fence without predictive parameters.");
                 set.add(-3);
                 return;
             }
@@ -628,66 +628,66 @@ public class ContextFenceStub extends AwarenessFence implements atpl {
         boolean z = false;
         for (int i = 0; i < size; i++) {
             ContextFenceStub contextFenceStub = (ContextFenceStub) g.get(i);
-            fddh fddhVar = this.a;
-            arwm.s(fddhVar);
-            if ((fddhVar.c & 1048576) != 0) {
-                fddh fddhVar2 = this.a;
-                arwm.s(fddhVar2);
-                fdfb fdfbVar = fddhVar2.x;
-                if (fdfbVar == null) {
-                    fdfbVar = fdfb.a;
+            ffry ffryVar = this.a;
+            atzb.s(ffryVar);
+            if ((ffryVar.c & 1048576) != 0) {
+                ffry ffryVar2 = this.a;
+                atzb.s(ffryVar2);
+                ffts fftsVar = ffryVar2.x;
+                if (fftsVar == null) {
+                    fftsVar = ffts.a;
                 }
-                if (fdfbVar == null) {
-                    fddh fddhVar3 = contextFenceStub.a;
-                    arwm.s(fddhVar3);
-                    fecj fecjVar = (fecj) fddhVar3.iB(5, null);
-                    fecjVar.X(fddhVar3);
-                    fdde fddeVar = (fdde) fecjVar;
-                    if (!fddeVar.b.L()) {
-                        fddeVar.U();
+                if (fftsVar == null) {
+                    ffry ffryVar3 = contextFenceStub.a;
+                    atzb.s(ffryVar3);
+                    fgrc fgrcVar = (fgrc) ffryVar3.iQ(5, null);
+                    fgrcVar.X(ffryVar3);
+                    ffrv ffrvVar = (ffrv) fgrcVar;
+                    if (!ffrvVar.b.L()) {
+                        ffrvVar.U();
                     }
-                    fddh fddhVar4 = (fddh) fddeVar.b;
-                    fddhVar4.x = null;
-                    fddhVar4.c &= -1048577;
-                    contextFenceStub.a = (fddh) fddeVar.Q();
+                    ffry ffryVar4 = (ffry) ffrvVar.b;
+                    ffryVar4.x = null;
+                    ffryVar4.c &= -1048577;
+                    contextFenceStub.a = (ffry) ffrvVar.Q();
                 } else {
-                    fddh fddhVar5 = contextFenceStub.a;
-                    arwm.s(fddhVar5);
-                    fecj fecjVar2 = (fecj) fddhVar5.iB(5, null);
-                    fecjVar2.X(fddhVar5);
-                    fdde fddeVar2 = (fdde) fecjVar2;
-                    if (!fddeVar2.b.L()) {
-                        fddeVar2.U();
+                    ffry ffryVar5 = contextFenceStub.a;
+                    atzb.s(ffryVar5);
+                    fgrc fgrcVar2 = (fgrc) ffryVar5.iQ(5, null);
+                    fgrcVar2.X(ffryVar5);
+                    ffrv ffrvVar2 = (ffrv) fgrcVar2;
+                    if (!ffrvVar2.b.L()) {
+                        ffrvVar2.U();
                     }
-                    fddh fddhVar6 = (fddh) fddeVar2.b;
-                    fddhVar6.x = fdfbVar;
-                    fddhVar6.c |= 1048576;
-                    contextFenceStub.a = (fddh) fddeVar2.Q();
+                    ffry ffryVar6 = (ffry) ffrvVar2.b;
+                    ffryVar6.x = fftsVar;
+                    ffryVar6.c |= 1048576;
+                    contextFenceStub.a = (ffry) ffrvVar2.Q();
                 }
                 z = true;
             }
             z |= contextFenceStub.k();
         }
         if (z) {
-            fddh fddhVar7 = this.a;
-            arwm.s(fddhVar7);
-            ArrayList arrayList = new ArrayList(fddhVar7.e.size());
+            ffry ffryVar7 = this.a;
+            atzb.s(ffryVar7);
+            ArrayList arrayList = new ArrayList(ffryVar7.e.size());
             ArrayList g2 = g();
             int size2 = g2.size();
             for (int i2 = 0; i2 < size2; i2++) {
                 arrayList.add(((ContextFenceStub) g2.get(i2)).f());
             }
-            fddh fddhVar8 = this.a;
-            arwm.s(fddhVar8);
-            fecj fecjVar3 = (fecj) fddhVar8.iB(5, null);
-            fecjVar3.X(fddhVar8);
-            fdde fddeVar3 = (fdde) fecjVar3;
-            if (!fddeVar3.b.L()) {
-                fddeVar3.U();
+            ffry ffryVar8 = this.a;
+            atzb.s(ffryVar8);
+            fgrc fgrcVar3 = (fgrc) ffryVar8.iQ(5, null);
+            fgrcVar3.X(ffryVar8);
+            ffrv ffrvVar3 = (ffrv) fgrcVar3;
+            if (!ffrvVar3.b.L()) {
+                ffrvVar3.U();
             }
-            ((fddh) fddeVar3.b).e = feeq.a;
-            fddeVar3.a(arrayList);
-            this.a = (fddh) fddeVar3.Q();
+            ((ffry) ffrvVar3.b).e = fgtj.a;
+            ffrvVar3.a(arrayList);
+            this.a = (ffry) ffrvVar3.Q();
             this.c = null;
         }
         return z;
@@ -698,23 +698,23 @@ public class ContextFenceStub extends AwarenessFence implements atpl {
         if (bArr != null) {
             return bArr;
         }
-        fddh fddhVar = this.a;
-        arwm.s(fddhVar);
-        return fddhVar.r();
+        ffry ffryVar = this.a;
+        atzb.s(ffryVar);
+        return ffryVar.r();
     }
 
     public final String toString() {
         m();
-        fddh fddhVar = this.a;
-        arwm.s(fddhVar);
-        return fddhVar.toString();
+        ffry ffryVar = this.a;
+        atzb.s(ffryVar);
+        return ffryVar.toString();
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 2, l(), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 2, l(), false);
+        atzr.c(parcel, a);
     }
 
     public ContextFenceStub(byte[] bArr) {

@@ -1,17 +1,17 @@
 package com.google.android.gms.ads.appset;
 
 import android.content.Context;
-import defpackage.aqtp;
-import defpackage.uih;
+import defpackage.aswe;
+import defpackage.weg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class a {
     private static a b;
-    public final uih a;
+    public final weg a;
 
     public a(Context context) {
-        this.a = new uih(context, aqtp.d);
+        this.a = new weg(context, aswe.d);
     }
 
     public static synchronized a a(Context context) {

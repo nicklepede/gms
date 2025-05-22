@@ -6,16 +6,16 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arux;
-import defpackage.aruz;
-import defpackage.arwb;
-import defpackage.arwr;
-import defpackage.arxc;
+import defpackage.atxm;
+import defpackage.atxo;
+import defpackage.atyq;
+import defpackage.atzg;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ResolveAccountResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new arwr();
+    public static final Parcelable.Creator CREATOR = new atzg();
     final int a;
     public IBinder b;
     public ConnectionResult c;
@@ -30,13 +30,13 @@ public class ResolveAccountResponse extends AbstractSafeParcelable {
         this.e = z2;
     }
 
-    public final aruz a() {
+    public final atxo a() {
         IBinder iBinder = this.b;
         if (iBinder == null) {
             return null;
         }
         IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.internal.IAccountAccessor");
-        return queryLocalInterface instanceof aruz ? (aruz) queryLocalInterface : new arux(iBinder);
+        return queryLocalInterface instanceof atxo ? (atxo) queryLocalInterface : new atxm(iBinder);
     }
 
     public final boolean equals(Object obj) {
@@ -50,18 +50,18 @@ public class ResolveAccountResponse extends AbstractSafeParcelable {
             return false;
         }
         ResolveAccountResponse resolveAccountResponse = (ResolveAccountResponse) obj;
-        return this.c.equals(resolveAccountResponse.c) && arwb.b(a(), resolveAccountResponse.a());
+        return this.c.equals(resolveAccountResponse.c) && atyq.b(a(), resolveAccountResponse.a());
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.D(parcel, 2, this.b);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.D(parcel, 2, this.b);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.c(parcel, a);
     }
 
     public ResolveAccountResponse(int i) {

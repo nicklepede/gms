@@ -6,30 +6,30 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import com.google.android.gms.R;
 import com.google.android.gms.trustagent.common.receiver.ScreenOnOffReceiver;
-import defpackage.arlb;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asot;
-import defpackage.byhr;
-import defpackage.dgls;
-import defpackage.dgme;
-import defpackage.dgmx;
-import defpackage.dgmy;
-import defpackage.dgnb;
-import defpackage.dgnc;
-import defpackage.dgne;
-import defpackage.dgpz;
-import defpackage.dgqc;
-import defpackage.dgqd;
-import defpackage.dgqe;
-import defpackage.dgqj;
-import defpackage.dgsx;
-import defpackage.dgsy;
-import defpackage.ejhf;
-import defpackage.ekhd;
-import defpackage.ekhf;
-import defpackage.ekhg;
-import defpackage.fecj;
+import defpackage.atnq;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.ausn;
+import defpackage.caqj;
+import defpackage.diwx;
+import defpackage.dixj;
+import defpackage.diyc;
+import defpackage.diyd;
+import defpackage.diyg;
+import defpackage.diyh;
+import defpackage.diyj;
+import defpackage.djbe;
+import defpackage.djbh;
+import defpackage.djbi;
+import defpackage.djbj;
+import defpackage.djbo;
+import defpackage.djec;
+import defpackage.djed;
+import defpackage.eluo;
+import defpackage.emup;
+import defpackage.emur;
+import defpackage.emus;
+import defpackage.fgrc;
 import j$.util.concurrent.ConcurrentHashMap;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,15 +39,15 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentMap;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls {
-    private static final asot g = asot.b("TrustAgent", asej.TRUSTAGENT);
+public class BluetoothTrustletChimeraService extends dixj implements djbe, diwx {
+    private static final ausn g = ausn.b("TrustAgent", auid.TRUSTAGENT);
     private static final Object h = new Object();
     public SharedPreferences d;
-    public dgnb e;
+    public diyg e;
     private volatile boolean i;
-    private dgqc j;
+    private djbh j;
     private ConcurrentMap k;
     private ScreenOnOffReceiver n;
     private SharedPreferences.OnSharedPreferenceChangeListener o;
@@ -56,10 +56,10 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
     public final ConcurrentMap f = new ConcurrentHashMap();
 
     private final void B() {
-        for (dgqj dgqjVar : this.k.values()) {
+        for (djbo djboVar : this.k.values()) {
             synchronized (h) {
-                BluetoothDevice bluetoothDevice = dgqjVar.a;
-                if (dgsx.i(bluetoothDevice)) {
+                BluetoothDevice bluetoothDevice = djboVar.a;
+                if (djec.i(bluetoothDevice)) {
                     this.m.put(bluetoothDevice, true);
                 } else if (bluetoothDevice.isConnected()) {
                     this.m.put(bluetoothDevice, false);
@@ -69,7 +69,7 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
         ArrayList arrayList = new ArrayList(this.l);
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
-            v((dgqj) arrayList.get(i), false);
+            v((djbo) arrayList.get(i), false);
         }
     }
 
@@ -81,64 +81,69 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
             if (!isEmpty && A()) {
                 z2 = true;
             }
-            jT(z, z2);
+            ki(z, z2);
         }
     }
 
     private static final void D() {
-        ekhf ekhfVar = ekhf.BLUETOOTH_TRUSTLET;
-        fecj v = ekhg.a.v();
+        emur emurVar = emur.BLUETOOTH_TRUSTLET;
+        fgrc v = emus.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        ekhg ekhgVar = (ekhg) v.b;
-        ekhgVar.c = ekhfVar.g;
-        ekhgVar.b |= 1;
-        dgmy.a((ekhg) v.Q());
+        emus emusVar = (emus) v.b;
+        emusVar.c = emurVar.g;
+        emusVar.b |= 1;
+        diyd.a((emus) v.Q());
     }
 
     protected final boolean A() {
-        return arlb.a(this) != null && arlb.a(this).isEnabled();
+        return atnq.a(this) != null && atnq.a(this).isEnabled();
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.diwx
+    public final void c() {
+        z();
+    }
+
+    @Override // defpackage.dixj
     public final Bundle d() {
         Bundle bundle = new Bundle();
         bundle.putString("com.google.android.gms.trustagent.api.trustlet.key_trustlet_name", "Bluetooth");
         bundle.putBoolean("com.google.android.gms.trustagent.api.trustlet.key_is_user_initiated", false);
         bundle.putBoolean("com.google.android.gms.trustagent.api.trustlet.key_dismiss_keyguard", false);
-        bundle.putBoolean("key_trustlet_is_suppored", dgsx.k());
+        bundle.putBoolean("key_trustlet_is_suppored", djec.k());
         bundle.putBoolean("key_trustlet_has_required_permissions", true);
         bundle.putBoolean("key_trustlet_is_enabled_by_device_policy", p());
         bundle.putString("key_trustlet_pref_key", "auth_trust_agent_pref_trusted_devices_key");
-        bundle.putString("key_trustlet_pref_title", dgsy.b(this));
-        bundle.putString("key_trustlet_pref_summary", dgsy.a(this));
+        bundle.putString("key_trustlet_pref_title", djed.b(this));
+        bundle.putString("key_trustlet_pref_summary", djed.a(this));
         bundle.putInt("key_trustlet_icon_res_id", R.drawable.quantum_gm_ic_devices_other_vd_theme_24);
         bundle.putString("key_trustlet_settings_activity_class_name", "com.google.android.gms.trustagent.GoogleTrustAgentTrustedDevicesSettings");
         bundle.putString("key_trustlet_settings_activity_package_name", "com.google.android.gms");
         return bundle;
     }
 
-    @Override // defpackage.dgme
-    public final ekhf e() {
-        return ekhf.BLUETOOTH_TRUSTLET;
+    @Override // defpackage.dixj
+    public final emur e() {
+        return emur.BLUETOOTH_TRUSTLET;
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     public final String f() {
         return "Bluetooth";
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     public final void g() {
         this.n.c();
         this.d.unregisterOnSharedPreferenceChangeListener(this.o);
-        dgqc dgqcVar = this.j;
-        if (dgqcVar.d) {
-            dgqcVar.b.unregisterReceiver(dgqcVar.c);
-            dgqcVar.e.f(dgqcVar.g);
-            dgqcVar.f.f(dgqcVar.h);
-            dgqcVar.d = false;
+        djbh djbhVar = this.j;
+        if (djbhVar.d) {
+            djbhVar.b.unregisterReceiver(djbhVar.c);
+            djbhVar.e.f(djbhVar.g);
+            djbhVar.f.f(djbhVar.h);
+            djbhVar.d = false;
         }
         synchronized (h) {
             this.i = false;
@@ -146,7 +151,7 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
         super.g();
     }
 
-    @Override // defpackage.dgpz
+    @Override // defpackage.djbe
     public final void h(boolean z) {
         if (z) {
             if (this.k.isEmpty()) {
@@ -154,7 +159,7 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
             } else {
                 Iterator it = this.k.values().iterator();
                 while (it.hasNext()) {
-                    y((dgqj) it.next());
+                    y((djbo) it.next());
                 }
             }
         }
@@ -163,7 +168,7 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
         z();
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     public final void i() {
         super.i();
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
@@ -171,26 +176,26 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
         synchronized (obj) {
             this.k = concurrentHashMap;
         }
-        this.d = dgnc.a(this);
-        this.e = new dgmx(this.d);
-        dgqd dgqdVar = new dgqd(this);
-        this.o = dgqdVar;
-        this.d.registerOnSharedPreferenceChangeListener(dgqdVar);
+        this.d = diyh.a(this);
+        this.e = new diyc(this.d);
+        djbi djbiVar = new djbi(this);
+        this.o = djbiVar;
+        this.d.registerOnSharedPreferenceChangeListener(djbiVar);
         ScreenOnOffReceiver screenOnOffReceiver = new ScreenOnOffReceiver(this, this);
         this.n = screenOnOffReceiver;
         screenOnOffReceiver.b();
         if (this.j == null) {
-            this.j = new dgqc(this, this);
+            this.j = new djbh(this, this);
         }
-        dgqc dgqcVar = this.j;
+        djbh djbhVar = this.j;
         IntentFilter intentFilter = new IntentFilter("android.bluetooth.adapter.action.STATE_CHANGED");
         intentFilter.addAction("android.bluetooth.device.action.ACL_CONNECTED");
         intentFilter.addAction("android.bluetooth.device.action.ACL_DISCONNECTED");
         intentFilter.addAction("android.bluetooth.device.action.BOND_STATE_CHANGED");
-        dgqcVar.b.registerReceiver(dgqcVar.c, intentFilter);
-        dgqcVar.e.a(dgqcVar.g);
-        dgqcVar.f.a(dgqcVar.h);
-        dgqcVar.d = true;
+        djbhVar.b.registerReceiver(djbhVar.c, intentFilter);
+        djbhVar.e.a(djbhVar.g);
+        djbhVar.f.a(djbhVar.h);
+        djbhVar.d = true;
         synchronized (obj) {
             this.i = true;
         }
@@ -198,96 +203,91 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
         z();
     }
 
-    @Override // defpackage.dgpz
+    @Override // defpackage.djbe
     public final void j(BluetoothDevice bluetoothDevice) {
-        dgqj dgqjVar = (dgqj) this.k.get(bluetoothDevice.getAddress());
-        if (dgqjVar != null) {
-            y(dgqjVar);
+        djbo djboVar = (djbo) this.k.get(bluetoothDevice.getAddress());
+        if (djboVar != null) {
+            y(djboVar);
         } else {
-            this.e.g(dgsx.g(bluetoothDevice.getAddress()));
+            this.e.g(djec.g(bluetoothDevice.getAddress()));
             this.e.c();
         }
         z();
     }
 
-    @Override // defpackage.dgls
-    public final void jM() {
-        z();
-    }
-
-    @Override // defpackage.dgpz
+    @Override // defpackage.djbe
     public final void k(String str) {
         B();
         z();
-        if (arlb.a(this) != null) {
-            BluetoothDevice remoteDevice = arlb.a(this).getRemoteDevice(str);
-            int i = dgsx.a;
+        if (atnq.a(this) != null) {
+            BluetoothDevice remoteDevice = atnq.a(this).getRemoteDevice(str);
+            int i = djec.a;
             if (remoteDevice.isConnected() && this.f.putIfAbsent(remoteDevice, Boolean.TRUE) == null) {
                 System.currentTimeMillis();
-                new byhr().postDelayed(new dgqe(this, remoteDevice), 15000L);
+                new caqj().postDelayed(new djbj(this, remoteDevice), 15000L);
             }
         }
     }
 
-    @Override // defpackage.dgpz
+    @Override // defpackage.djbe
     public final boolean l(BluetoothDevice bluetoothDevice) {
         return this.k.containsKey(bluetoothDevice.getAddress());
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     public final boolean p() {
-        return dgne.a().a;
+        return diyj.a().a;
     }
 
-    @Override // defpackage.dgme
+    @Override // defpackage.dixj
     public final boolean q() {
-        return dgsx.k();
+        return djec.k();
     }
 
-    @Override // defpackage.dgme
-    public final void u(fecj fecjVar) {
-        ekhd ekhdVar = ((ekhg) fecjVar.b).i;
-        if (ekhdVar == null) {
-            ekhdVar = ekhd.a;
+    @Override // defpackage.dixj
+    public final void u(fgrc fgrcVar) {
+        emup emupVar = ((emus) fgrcVar.b).i;
+        if (emupVar == null) {
+            emupVar = emup.a;
         }
-        fecj fecjVar2 = (fecj) ekhdVar.iB(5, null);
-        fecjVar2.X(ekhdVar);
+        fgrc fgrcVar2 = (fgrc) emupVar.iQ(5, null);
+        fgrcVar2.X(emupVar);
         boolean o = o();
-        if (!fecjVar2.b.L()) {
-            fecjVar2.U();
+        if (!fgrcVar2.b.L()) {
+            fgrcVar2.U();
         }
-        ekhd ekhdVar2 = (ekhd) fecjVar2.b;
-        ekhdVar2.b |= 1;
-        ekhdVar2.c = o;
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        emup emupVar2 = (emup) fgrcVar2.b;
+        emupVar2.b |= 1;
+        emupVar2.c = o;
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        ekhg ekhgVar = (ekhg) fecjVar.b;
-        ekhd ekhdVar3 = (ekhd) fecjVar2.Q();
-        ekhdVar3.getClass();
-        ekhgVar.i = ekhdVar3;
-        ekhgVar.b |= 128;
+        emus emusVar = (emus) fgrcVar.b;
+        emup emupVar3 = (emup) fgrcVar2.Q();
+        emupVar3.getClass();
+        emusVar.i = emupVar3;
+        emusVar.b |= 128;
     }
 
-    public final void v(dgqj dgqjVar, boolean z) {
-        if (dgqjVar == null) {
+    public final void v(djbo djboVar, boolean z) {
+        if (djboVar == null) {
             return;
         }
-        BluetoothDevice bluetoothDevice = dgqjVar.a;
-        if (!dgsx.i(bluetoothDevice)) {
-            if (this.d.getBoolean(dgsx.h(bluetoothDevice.getAddress()), true)) {
-                dgqjVar.a.getName();
-                this.l.add(dgqjVar);
+        BluetoothDevice bluetoothDevice = djboVar.a;
+        if (!djec.i(bluetoothDevice)) {
+            if (this.d.getBoolean(djec.h(bluetoothDevice.getAddress()), true)) {
+                djboVar.a.getName();
+                this.l.add(djboVar);
                 return;
             }
         }
         synchronized (h) {
             String address = bluetoothDevice.getAddress();
-            if (dgqjVar.a()) {
+            if (djboVar.a()) {
                 if (this.k.containsKey(address)) {
-                    this.k.replace(address, dgqjVar);
+                    this.k.replace(address, djboVar);
                 } else {
-                    this.k.put(address, dgqjVar);
+                    this.k.put(address, djboVar);
                 }
                 this.e.g("no_notification_for_device_".concat(String.valueOf(address)));
                 this.e.c();
@@ -297,29 +297,29 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
                 }
                 z();
             } else {
-                ((ejhf) ((ejhf) g.i()).ah(11688)).B("Adding a non bonded Bluetooth device %s, ignored.", address);
+                ((eluo) ((eluo) g.i()).ai(11691)).B("Adding a non bonded Bluetooth device %s, ignored.", address);
             }
         }
-        this.l.remove(dgqjVar);
+        this.l.remove(djboVar);
     }
 
     protected final void w() {
         for (String str : this.d.getAll().keySet()) {
-            String a = dgsx.a(str);
+            String a = djec.a(str);
             if (a != null) {
                 BluetoothDevice bluetoothDevice = null;
-                if (arlb.a(this) != null) {
+                if (atnq.a(this) != null) {
                     try {
-                        bluetoothDevice = arlb.a(this).getRemoteDevice(a);
+                        bluetoothDevice = atnq.a(this).getRemoteDevice(a);
                     } catch (IllegalArgumentException unused) {
                     }
                 }
                 if (bluetoothDevice != null && this.d.getBoolean(str, false)) {
-                    dgqj dgqjVar = new dgqj(bluetoothDevice);
-                    if (dgqjVar.a()) {
-                        v(dgqjVar, false);
+                    djbo djboVar = new djbo(bluetoothDevice);
+                    if (djboVar.a()) {
+                        v(djboVar, false);
                     } else {
-                        y(dgqjVar);
+                        y(djboVar);
                     }
                 }
             }
@@ -330,7 +330,7 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
 
     public final void x(String str) {
         synchronized (h) {
-            if (((dgqj) this.k.remove(str)) != null) {
+            if (((djbo) this.k.remove(str)) != null) {
                 D();
                 C();
                 z();
@@ -338,46 +338,46 @@ public class BluetoothTrustletChimeraService extends dgme implements dgpz, dgls 
         }
     }
 
-    protected final void y(dgqj dgqjVar) {
-        if (!A() || dgqjVar.a()) {
+    protected final void y(djbo djboVar) {
+        if (!A() || djboVar.a()) {
             return;
         }
-        x(dgqjVar.a.getAddress());
-        dgnb dgnbVar = this.e;
-        dgqj.b(dgnbVar, dgqjVar.b);
-        dgqj.b(dgnbVar, dgqjVar.c);
-        dgnbVar.c();
+        x(djboVar.a.getAddress());
+        diyg diygVar = this.e;
+        djbo.b(diygVar, djboVar.b);
+        djbo.b(diygVar, djboVar.c);
+        diygVar.c();
     }
 
     public final void z() {
         synchronized (h) {
             if (this.i) {
-                dgqj dgqjVar = null;
-                for (dgqj dgqjVar2 : this.k.values()) {
-                    BluetoothDevice bluetoothDevice = dgqjVar2.a;
-                    if (dgsx.i(bluetoothDevice)) {
+                djbo djboVar = null;
+                for (djbo djboVar2 : this.k.values()) {
+                    BluetoothDevice bluetoothDevice = djboVar2.a;
+                    if (djec.i(bluetoothDevice)) {
                         bluetoothDevice.getName();
-                        dgqjVar = dgqjVar2;
+                        djboVar = djboVar2;
                     }
                 }
-                if (r() && dgqjVar == null) {
-                    jR("No trusted connected device, revoking trust.");
+                if (r() && djboVar == null) {
+                    kg("No trusted connected device, revoking trust.");
                 } else {
-                    if (r() || dgqjVar == null) {
+                    if (r() || djboVar == null) {
                         return;
                     }
-                    String name = dgqjVar.a.getName();
-                    jO(getString(R.string.auth_trust_agent_connected_to_bt_device, name), name, aseu.TRUSTAGENT_TRUSTED_DEVICES_TRUST_GRANTED);
+                    String name = djboVar.a.getName();
+                    kd(getString(R.string.auth_trust_agent_connected_to_bt_device, name), name, auio.TRUSTAGENT_TRUSTED_DEVICES_TRUST_GRANTED);
                 }
             }
         }
     }
 
-    @Override // defpackage.dgls
-    public final void jL() {
+    @Override // defpackage.diwx
+    public final void kb() {
     }
 
-    @Override // defpackage.dgls
-    public final void jS() {
+    @Override // defpackage.diwx
+    public final void kh() {
     }
 }

@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.crpw;
-import defpackage.crpy;
-import defpackage.crqt;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.ctzb;
+import defpackage.ctzd;
+import defpackage.ctzy;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class RemoveControleeParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new crqt();
-    public crpy a;
+    public static final Parcelable.Creator CREATOR = new ctzy();
+    public ctzd a;
     public UwbAddressParams b;
 
     public RemoveControleeParams() {
@@ -28,7 +28,7 @@ public final class RemoveControleeParams extends AbstractSafeParcelable {
         }
         if (obj instanceof RemoveControleeParams) {
             RemoveControleeParams removeControleeParams = (RemoveControleeParams) obj;
-            if (arwb.b(this.a, removeControleeParams.a) && arwb.b(this.b, removeControleeParams.b)) {
+            if (atyq.b(this.a, removeControleeParams.a) && atyq.b(this.b, removeControleeParams.b)) {
                 return true;
             }
         }
@@ -41,22 +41,22 @@ public final class RemoveControleeParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        crpy crpyVar = this.a;
-        arxc.D(parcel, 1, crpyVar == null ? null : crpyVar.asBinder());
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        ctzd ctzdVar = this.a;
+        atzr.D(parcel, 1, ctzdVar == null ? null : ctzdVar.asBinder());
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 
     public RemoveControleeParams(IBinder iBinder, UwbAddressParams uwbAddressParams) {
-        crpy crpwVar;
+        ctzd ctzbVar;
         if (iBinder == null) {
-            crpwVar = null;
+            ctzbVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.uwb.internal.IResultListener");
-            crpwVar = queryLocalInterface instanceof crpy ? (crpy) queryLocalInterface : new crpw(iBinder);
+            ctzbVar = queryLocalInterface instanceof ctzd ? (ctzd) queryLocalInterface : new ctzb(iBinder);
         }
-        this.a = crpwVar;
+        this.a = ctzbVar;
         this.b = uwbAddressParams;
     }
 }

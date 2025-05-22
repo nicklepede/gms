@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxej;
+import defpackage.atyq;
+import defpackage.czof;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ExternalApplicationLinkEntity extends AbstractSafeParcelable implements ExternalApplicationLink {
-    public static final Parcelable.Creator CREATOR = new cxej();
+    public static final Parcelable.Creator CREATOR = new czof();
     public final Integer a;
     public final String b;
 
@@ -24,7 +24,7 @@ public class ExternalApplicationLinkEntity extends AbstractSafeParcelable implem
     }
 
     public static boolean d(ExternalApplicationLink externalApplicationLink, ExternalApplicationLink externalApplicationLink2) {
-        return arwb.b(externalApplicationLink.a(), externalApplicationLink2.a()) && arwb.b(externalApplicationLink.c(), externalApplicationLink2.c());
+        return atyq.b(externalApplicationLink.a(), externalApplicationLink2.a()) && atyq.b(externalApplicationLink.c(), externalApplicationLink2.c());
     }
 
     @Override // com.google.android.gms.reminders.model.ExternalApplicationLink
@@ -53,14 +53,14 @@ public class ExternalApplicationLinkEntity extends AbstractSafeParcelable implem
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxej.a(this, parcel);
+        czof.a(this, parcel);
     }
 
     public ExternalApplicationLinkEntity(ExternalApplicationLink externalApplicationLink) {
         this(externalApplicationLink.a(), externalApplicationLink.c());
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

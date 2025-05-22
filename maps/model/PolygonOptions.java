@@ -3,17 +3,17 @@ package com.google.android.gms.maps.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.ccek;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cene;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class PolygonOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ccek();
+    public static final Parcelable.Creator CREATOR = new cene();
     public final List a;
     public final List b;
     public float c;
@@ -41,7 +41,7 @@ public final class PolygonOptions extends AbstractSafeParcelable {
     }
 
     public final void a(Iterable iterable) {
-        arwm.t(iterable, "points must not be null.");
+        atzb.t(iterable, "points must not be null.");
         Iterator it = iterable.iterator();
         while (it.hasNext()) {
             this.a.add((LatLng) it.next());
@@ -67,19 +67,19 @@ public final class PolygonOptions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 2, list, false);
-        arxc.G(parcel, 3, this.b);
-        arxc.l(parcel, 4, this.c);
-        arxc.o(parcel, 5, this.d);
-        arxc.o(parcel, 6, this.e);
-        arxc.l(parcel, 7, this.f);
-        arxc.e(parcel, 8, this.g);
-        arxc.e(parcel, 9, this.h);
-        arxc.e(parcel, 10, this.i);
-        arxc.o(parcel, 11, this.j);
-        arxc.y(parcel, 12, this.k, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 2, list, false);
+        atzr.G(parcel, 3, this.b);
+        atzr.l(parcel, 4, this.c);
+        atzr.o(parcel, 5, this.d);
+        atzr.o(parcel, 6, this.e);
+        atzr.l(parcel, 7, this.f);
+        atzr.e(parcel, 8, this.g);
+        atzr.e(parcel, 9, this.h);
+        atzr.e(parcel, 10, this.i);
+        atzr.o(parcel, 11, this.j);
+        atzr.y(parcel, 12, this.k, false);
+        atzr.c(parcel, a);
     }
 
     public PolygonOptions() {

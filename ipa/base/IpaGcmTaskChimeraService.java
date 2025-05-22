@@ -7,35 +7,35 @@ import com.google.android.gms.ipa.base.IpaGcmTaskChimeraService;
 import com.google.android.gms.ipa.mediastoreindexer.BatchIndexingIntentOperation;
 import com.google.android.gms.ipa.mediastoreindexer.CorporaMaintenanceIntentOperation;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bont;
-import defpackage.bopm;
-import defpackage.byiv;
-import defpackage.byiw;
-import defpackage.byix;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.byll;
-import defpackage.byln;
-import defpackage.ejhf;
-import defpackage.fnck;
-import defpackage.fnde;
-import defpackage.fpgv;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bqvj;
+import defpackage.bqxc;
+import defpackage.carn;
+import defpackage.caro;
+import defpackage.carp;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.caud;
+import defpackage.cauf;
+import defpackage.eluo;
+import defpackage.fpuj;
+import defpackage.fpvd;
+import defpackage.fsah;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class IpaGcmTaskChimeraService extends GmsTaskChimeraService {
     public static final /* synthetic */ int a = 0;
-    private static final asot b = asot.b("GmscoreIpa", asej.PLATFORM_DATA_INDEXER);
-    private static final byiv c = new byiv(MediaStore.Files.getContentUri("external"), 1);
-    private static final byiv d = new byiv(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, 1);
+    private static final ausn b = ausn.b("GmscoreIpa", auid.PLATFORM_DATA_INDEXER);
+    private static final carn c = new carn(MediaStore.Files.getContentUri("external"), 1);
+    private static final carn d = new carn(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, 1);
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x008e  */
-    /* JADX WARN: Removed duplicated region for block: B:18:0x0114  */
+    /* JADX WARN: Removed duplicated region for block: B:18:0x0112  */
     /* JADX WARN: Removed duplicated region for block: B:23:0x00ac  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -43,68 +43,68 @@ public class IpaGcmTaskChimeraService extends GmsTaskChimeraService {
     */
     public static void d(android.content.Context r14) {
         /*
-            Method dump skipped, instructions count: 618
+            Method dump skipped, instructions count: 612
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.ipa.base.IpaGcmTaskChimeraService.d(android.content.Context):void");
     }
 
-    private static byix e() {
-        byiw byiwVar = new byiw();
-        byiwVar.t("MediaStoreInstantIndexTask");
-        byiwVar.j = "com.google.android.gms.ipa.base.IpaGcmTaskService";
-        byiwVar.v(1);
-        byiwVar.x(0, 0);
-        byiwVar.c(c);
-        if (fpgv.k()) {
-            byiwVar.c(d);
+    private static carp e() {
+        caro caroVar = new caro();
+        caroVar.t("MediaStoreInstantIndexTask");
+        caroVar.j = "com.google.android.gms.ipa.base.IpaGcmTaskService";
+        caroVar.v(1);
+        caroVar.x(0, 0);
+        caroVar.c(c);
+        if (fsah.k()) {
+            caroVar.c(d);
         }
-        return byiwVar.b();
+        return caroVar.b();
     }
 
-    private static byko f(String str, int i) {
-        byko bykoVar = new byko();
-        bykoVar.j = "com.google.android.gms.ipa.base.IpaGcmTaskService";
-        bykoVar.q(str);
-        bykoVar.l(false);
-        bykoVar.m(i);
-        bykoVar.v(2);
-        return bykoVar;
+    private static catg f(String str, int i) {
+        catg catgVar = new catg();
+        catgVar.j = "com.google.android.gms.ipa.base.IpaGcmTaskService";
+        catgVar.q(str);
+        catgVar.l(false);
+        catgVar.m(i);
+        catgVar.v(2);
+        return catgVar;
     }
 
-    private static byll g(boolean z) {
-        if (fnck.j()) {
-            byko f = f("MediaStoreCorporaMaintenance", (int) fpgv.a.a().r());
-            if (!fpgv.q()) {
+    private static caud g(boolean z) {
+        if (fpuj.j()) {
+            catg f = f("MediaStoreCorporaMaintenance", (int) fsah.a.lK().r());
+            if (!fsah.q()) {
                 f.e();
                 f.j();
             }
             return f.b();
         }
-        long seconds = TimeUnit.DAYS.toSeconds(fpgv.f());
-        long seconds2 = TimeUnit.HOURS.toSeconds(fpgv.e());
-        bykm bykmVar = new bykm();
-        bykmVar.t("MediaStoreCorporaMaintenance");
-        bykmVar.i(fpgv.r());
-        bykmVar.y(2, 2);
-        bykmVar.x(!fpgv.q() ? 1 : 0, 1);
-        bykmVar.f(!fpgv.q() ? 1 : 0, 1);
-        bykmVar.j = "com.google.android.gms.ipa.base.IpaGcmTaskService";
-        bykmVar.u(z);
-        if (fnde.f()) {
-            bykmVar.j(byki.a(seconds));
+        long seconds = TimeUnit.DAYS.toSeconds(fsah.f());
+        long seconds2 = TimeUnit.HOURS.toSeconds(fsah.e());
+        cate cateVar = new cate();
+        cateVar.t("MediaStoreCorporaMaintenance");
+        cateVar.i(fsah.r());
+        cateVar.y(2, 2);
+        cateVar.x(!fsah.q() ? 1 : 0, 1);
+        cateVar.f(!fsah.q() ? 1 : 0, 1);
+        cateVar.j = "com.google.android.gms.ipa.base.IpaGcmTaskService";
+        cateVar.u(z);
+        if (fpvd.f()) {
+            cateVar.j(cata.a(seconds));
         } else {
-            bykmVar.a = seconds;
-            bykmVar.b = seconds2;
+            cateVar.a = seconds;
+            cateVar.b = seconds2;
         }
-        return bykmVar.b();
+        return cateVar.b();
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         char c2;
-        String str = bylnVar.a;
+        String str = caufVar.a;
         switch (str.hashCode()) {
             case -1102736980:
                 if (str.equals("AppUsageReportGeneration")) {
@@ -158,32 +158,32 @@ public class IpaGcmTaskChimeraService extends GmsTaskChimeraService {
             startService(IntentOperation.getStartIntent(this, BatchIndexingIntentOperation.class, "com.google.android.gms.ipa.mediastoreindexer.BATCH_INDEX"));
         } else if (c2 == 2) {
             try {
-                bopm bopmVar = bopm.b;
-                synchronized (bopm.class) {
-                    if (bopm.b == null) {
-                        bopm.b = new bopm(this);
+                bqxc bqxcVar = bqxc.b;
+                synchronized (bqxc.class) {
+                    if (bqxc.b == null) {
+                        bqxc.b = new bqxc(this);
                     }
-                    bopm.b.onChange(false);
+                    bqxc.b.onChange(false);
                 }
             } finally {
-                byjl a2 = byjl.a(this);
-                if (fpgv.m() && fpgv.o()) {
+                casd a2 = casd.a(this);
+                if (fsah.m() && fsah.o()) {
                     a2.f(e());
                 }
             }
         } else if (c2 == 3) {
-            bont.a().b(new Runnable() { // from class: bonj
+            bqvj.a().b(new Runnable() { // from class: bquz
                 @Override // java.lang.Runnable
                 public final void run() {
                     int i = IpaGcmTaskChimeraService.a;
-                    bonb c3 = bonb.c();
+                    bqur c3 = bqur.c();
                     if (c3 != null) {
                         c3.a();
                     }
                 }
             });
         } else if (c2 == 4) {
-            bont.a().b(new Runnable() { // from class: bonk
+            bqvj.a().b(new Runnable() { // from class: bqva
                 /* JADX WARN: Removed duplicated region for block: B:14:0x008e  */
                 /* JADX WARN: Removed duplicated region for block: B:18:0x009c  */
                 @Override // java.lang.Runnable
@@ -196,43 +196,43 @@ public class IpaGcmTaskChimeraService extends GmsTaskChimeraService {
                         Method dump skipped, instructions count: 485
                         To view this dump change 'Code comments level' option to 'DEBUG'
                     */
-                    throw new UnsupportedOperationException("Method not decompiled: defpackage.bonk.run():void");
+                    throw new UnsupportedOperationException("Method not decompiled: defpackage.bqva.run():void");
                 }
             });
         } else if (c2 != 5) {
-            ((ejhf) ((ejhf) b.i()).ah(5351)).B("Unrecognized task tag: %s", bylnVar.a);
+            ((eluo) ((eluo) b.i()).ai(5364)).B("Unrecognized task tag: %s", caufVar.a);
         } else {
-            bont.a().b(new Runnable() { // from class: bonl
+            bqvj.a().b(new Runnable() { // from class: bqvb
                 @Override // java.lang.Runnable
                 public final void run() {
                     int a3;
                     int a4;
-                    asot asotVar = bopf.a;
-                    boqq boqqVar = new boqq(9);
+                    ausn ausnVar = bqwv.a;
+                    bqyg bqygVar = new bqyg(9);
                     IpaGcmTaskChimeraService ipaGcmTaskChimeraService = IpaGcmTaskChimeraService.this;
-                    bory boryVar = new bory(ipaGcmTaskChimeraService.getContentResolver(), null);
-                    borr borrVar = new borr(boryVar);
-                    bors borsVar = new bors(boryVar);
-                    cyjp cyjpVar = new cyjp();
-                    cyjpVar.a = "MediastoreIndexer";
-                    cyjq cyjqVar = new cyjq(cyjpVar);
-                    aqwv aqwvVar = cyjo.a;
-                    cyqo cyqoVar = new cyqo(ipaGcmTaskChimeraService, cyjqVar);
-                    ((ejhf) bopf.a.h()).x("Starting mediastore diff logging operation");
-                    if (fpgv.o() && fpgv.p()) {
-                        boqp boqpVar = new boqp();
-                        boqpVar.b((int) (asny.a(ipaGcmTaskChimeraService, "mediastore-indexer.db") >> 10));
-                        bosc a5 = borrVar.a(0L, null);
+                    bqzo bqzoVar = new bqzo(ipaGcmTaskChimeraService.getContentResolver(), null);
+                    bqzh bqzhVar = new bqzh(bqzoVar);
+                    bqzi bqziVar = new bqzi(bqzoVar);
+                    datn datnVar = new datn();
+                    datnVar.a = "MediastoreIndexer";
+                    dato datoVar = new dato(datnVar);
+                    aszk aszkVar = datm.a;
+                    dbam dbamVar = new dbam(ipaGcmTaskChimeraService, datoVar);
+                    ((eluo) bqwv.a.h()).x("Starting mediastore diff logging operation");
+                    if (fsah.o() && fsah.p()) {
+                        bqyf bqyfVar = new bqyf();
+                        bqyfVar.b((int) (aurs.a(ipaGcmTaskChimeraService, "mediastore-indexer.db") >> 10));
+                        bqzs a5 = bqzhVar.a(0L, null);
                         int a6 = a5 != null ? a5.a() : -1;
                         if (a6 > 0) {
-                            int a7 = bopf.a("internal.3p:MusicRecording", cyqoVar);
+                            int a7 = bqwv.a("internal.3p:MusicRecording", dbamVar);
                             if (a7 != -1) {
-                                boqpVar.f(a6 - a7);
+                                bqyfVar.f(a6 - a7);
                             } else {
-                                boqpVar.f(JGCastService.FLAG_USE_TDLS);
+                                bqyfVar.f(JGCastService.FLAG_USE_TDLS);
                             }
-                            int a8 = bopf.a("internal.3p:MusicAlbum", cyqoVar);
-                            borz a9 = borsVar.a(bort.ALBUM);
+                            int a8 = bqwv.a("internal.3p:MusicAlbum", dbamVar);
+                            bqzp a9 = bqziVar.a(bqzj.ALBUM);
                             if (a9 != null) {
                                 try {
                                     a3 = a9.a();
@@ -243,12 +243,12 @@ public class IpaGcmTaskChimeraService extends GmsTaskChimeraService {
                                 a3 = -1;
                             }
                             if (a8 == -1 || a3 == -1) {
-                                boqpVar.c(JGCastService.FLAG_USE_TDLS);
+                                bqyfVar.c(JGCastService.FLAG_USE_TDLS);
                             } else {
-                                boqpVar.c(a3 - a8);
+                                bqyfVar.c(a3 - a8);
                             }
-                            int a10 = bopf.a("internal.3p:MusicGroup", cyqoVar);
-                            a9 = borsVar.a(bort.ARTIST);
+                            int a10 = bqwv.a("internal.3p:MusicGroup", dbamVar);
+                            a9 = bqziVar.a(bqzj.ARTIST);
                             if (a9 != null) {
                                 try {
                                     a4 = a9.a();
@@ -259,13 +259,13 @@ public class IpaGcmTaskChimeraService extends GmsTaskChimeraService {
                                 a4 = -1;
                             }
                             if (a10 == -1 || a4 == -1) {
-                                boqpVar.d(JGCastService.FLAG_USE_TDLS);
+                                bqyfVar.d(JGCastService.FLAG_USE_TDLS);
                             } else {
-                                boqpVar.d(a4 - a10);
+                                bqyfVar.d(a4 - a10);
                             }
-                            boqpVar.e();
-                            boqqVar.e(boqpVar);
-                            bons.a().d(boqqVar.a());
+                            bqyfVar.e();
+                            bqygVar.e(bqyfVar);
+                            bqvi.a().d(bqygVar.a());
                         }
                     }
                 }

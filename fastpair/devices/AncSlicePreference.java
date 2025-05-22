@@ -1,20 +1,20 @@
 package com.google.android.gms.fastpair.devices;
 
 import androidx.preference.Preference;
-import defpackage.kmm;
-import defpackage.kmp;
-import defpackage.nfx;
+import defpackage.mex;
+import defpackage.mfa;
+import defpackage.oyy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class AncSlicePreference extends Preference implements nfx {
+public class AncSlicePreference extends Preference implements oyy {
     @Override // androidx.preference.Preference
-    public final void C(kmm kmmVar) {
+    public final void C(mex mexVar) {
         throw null;
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
+    public final void a(mfa mfaVar) {
         throw null;
     }
 }

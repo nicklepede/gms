@@ -3,25 +3,25 @@ package com.google.android.gms.auth.api.identity;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zci;
-import defpackage.zcw;
-import defpackage.zdd;
-import defpackage.zde;
-import defpackage.zdf;
+import defpackage.abcc;
+import defpackage.abcr;
+import defpackage.abcy;
+import defpackage.abcz;
+import defpackage.abda;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
 import j$.util.Objects;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public final class BeginSignInRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zci();
+    public static final Parcelable.Creator CREATOR = new abcc();
     public final PasswordRequestOptions a;
     public final GoogleIdTokenRequestOptions b;
     public final String c;
@@ -31,10 +31,10 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
     public final PasskeyJsonRequestOptions g;
     public final boolean h;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     @Deprecated
     public final class GoogleIdTokenRequestOptions extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new zcw();
+        public static final Parcelable.Creator CREATOR = new abcr();
         public final boolean a;
         public final String b;
         public final String c;
@@ -48,10 +48,10 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
             if (z2 && z3) {
                 z4 = false;
             }
-            arwm.c(z4, "filterByAuthorizedAccounts and requestVerifiedPhoneNumber must not both be true; the Verified Phone Number feature only works in sign-ups.");
+            atzb.c(z4, "filterByAuthorizedAccounts and requestVerifiedPhoneNumber must not both be true; the Verified Phone Number feature only works in sign-ups.");
             this.a = z;
             if (z) {
-                arwm.t(str, "serverClientId must be provided if Google ID tokens are requested");
+                atzb.t(str, "serverClientId must be provided if Google ID tokens are requested");
             }
             this.b = str;
             this.c = str2;
@@ -71,7 +71,7 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
                 return false;
             }
             GoogleIdTokenRequestOptions googleIdTokenRequestOptions = (GoogleIdTokenRequestOptions) obj;
-            return this.a == googleIdTokenRequestOptions.a && arwb.b(this.b, googleIdTokenRequestOptions.b) && arwb.b(this.c, googleIdTokenRequestOptions.c) && this.d == googleIdTokenRequestOptions.d && arwb.b(this.e, googleIdTokenRequestOptions.e) && arwb.b(this.f, googleIdTokenRequestOptions.f) && this.g == googleIdTokenRequestOptions.g;
+            return this.a == googleIdTokenRequestOptions.a && atyq.b(this.b, googleIdTokenRequestOptions.b) && atyq.b(this.c, googleIdTokenRequestOptions.c) && this.d == googleIdTokenRequestOptions.d && atyq.b(this.e, googleIdTokenRequestOptions.e) && atyq.b(this.f, googleIdTokenRequestOptions.f) && this.g == googleIdTokenRequestOptions.g;
         }
 
         public final int hashCode() {
@@ -81,28 +81,28 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             boolean z = this.a;
-            int a = arxc.a(parcel);
-            arxc.e(parcel, 1, z);
-            arxc.v(parcel, 2, this.b, false);
-            arxc.v(parcel, 3, this.c, false);
-            arxc.e(parcel, 4, this.d);
-            arxc.v(parcel, 5, this.e, false);
-            arxc.x(parcel, 6, this.f, false);
-            arxc.e(parcel, 7, this.g);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.e(parcel, 1, z);
+            atzr.v(parcel, 2, this.b, false);
+            atzr.v(parcel, 3, this.c, false);
+            atzr.e(parcel, 4, this.d);
+            atzr.v(parcel, 5, this.e, false);
+            atzr.x(parcel, 6, this.f, false);
+            atzr.e(parcel, 7, this.g);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     @Deprecated
     public final class PasskeyJsonRequestOptions extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new zdd();
+        public static final Parcelable.Creator CREATOR = new abcy();
         public final boolean a;
         public final String b;
 
         public PasskeyJsonRequestOptions(boolean z, String str) {
             if (z) {
-                arwm.s(str);
+                atzb.s(str);
             }
             this.a = z;
             this.b = str;
@@ -116,7 +116,7 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
                 return false;
             }
             PasskeyJsonRequestOptions passkeyJsonRequestOptions = (PasskeyJsonRequestOptions) obj;
-            return this.a == passkeyJsonRequestOptions.a && arwb.b(this.b, passkeyJsonRequestOptions.b);
+            return this.a == passkeyJsonRequestOptions.a && atyq.b(this.b, passkeyJsonRequestOptions.b);
         }
 
         public final int hashCode() {
@@ -126,25 +126,25 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             boolean z = this.a;
-            int a = arxc.a(parcel);
-            arxc.e(parcel, 1, z);
-            arxc.v(parcel, 2, this.b, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.e(parcel, 1, z);
+            atzr.v(parcel, 2, this.b, false);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     @Deprecated
     public final class PasskeysRequestOptions extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new zde();
+        public static final Parcelable.Creator CREATOR = new abcz();
         public final boolean a;
         public final byte[] b;
         public final String c;
 
         public PasskeysRequestOptions(boolean z, byte[] bArr, String str) {
             if (z) {
-                arwm.s(bArr);
-                arwm.s(str);
+                atzb.s(bArr);
+                atzb.s(str);
             }
             this.a = z;
             this.b = bArr;
@@ -169,18 +169,18 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             boolean z = this.a;
-            int a = arxc.a(parcel);
-            arxc.e(parcel, 1, z);
-            arxc.i(parcel, 2, this.b, false);
-            arxc.v(parcel, 3, this.c, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.e(parcel, 1, z);
+            atzr.i(parcel, 2, this.b, false);
+            atzr.v(parcel, 3, this.c, false);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     @Deprecated
     public final class PasswordRequestOptions extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new zdf();
+        public static final Parcelable.Creator CREATOR = new abda();
         public final boolean a;
 
         public PasswordRequestOptions(boolean z) {
@@ -198,16 +198,16 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             boolean z = this.a;
-            int a = arxc.a(parcel);
-            arxc.e(parcel, 1, z);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.e(parcel, 1, z);
+            atzr.c(parcel, a);
         }
     }
 
     public BeginSignInRequest(PasswordRequestOptions passwordRequestOptions, GoogleIdTokenRequestOptions googleIdTokenRequestOptions, String str, boolean z, int i, PasskeysRequestOptions passkeysRequestOptions, PasskeyJsonRequestOptions passkeyJsonRequestOptions, boolean z2) {
-        arwm.s(passwordRequestOptions);
+        atzb.s(passwordRequestOptions);
         this.a = passwordRequestOptions;
-        arwm.s(googleIdTokenRequestOptions);
+        atzb.s(googleIdTokenRequestOptions);
         this.b = googleIdTokenRequestOptions;
         this.c = str;
         this.d = z;
@@ -222,7 +222,7 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
             return false;
         }
         BeginSignInRequest beginSignInRequest = (BeginSignInRequest) obj;
-        return arwb.b(this.a, beginSignInRequest.a) && arwb.b(this.b, beginSignInRequest.b) && arwb.b(this.f, beginSignInRequest.f) && arwb.b(this.g, beginSignInRequest.g) && arwb.b(this.c, beginSignInRequest.c) && this.d == beginSignInRequest.d && this.e == beginSignInRequest.e && this.h == beginSignInRequest.h;
+        return atyq.b(this.a, beginSignInRequest.a) && atyq.b(this.b, beginSignInRequest.b) && atyq.b(this.f, beginSignInRequest.f) && atyq.b(this.g, beginSignInRequest.g) && atyq.b(this.c, beginSignInRequest.c) && this.d == beginSignInRequest.d && this.e == beginSignInRequest.e && this.h == beginSignInRequest.h;
     }
 
     public final int hashCode() {
@@ -232,15 +232,15 @@ public final class BeginSignInRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         PasswordRequestOptions passwordRequestOptions = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, passwordRequestOptions, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.e(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.e(parcel, 8, this.h);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, passwordRequestOptions, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.e(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.e(parcel, 8, this.h);
+        atzr.c(parcel, a);
     }
 }

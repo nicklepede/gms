@@ -4,20 +4,20 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cfee;
-import defpackage.cfef;
-import defpackage.cfey;
-import defpackage.cffb;
-import defpackage.eiig;
+import defpackage.atzr;
+import defpackage.chlq;
+import defpackage.chlr;
+import defpackage.chmk;
+import defpackage.chmn;
+import defpackage.ekvl;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class BluetoothConnectivityInfo extends AbstractSafeParcelable implements cfey {
-    public static final Parcelable.Creator CREATOR = new cfee();
+public class BluetoothConnectivityInfo extends AbstractSafeParcelable implements chmk {
+    public static final Parcelable.Creator CREATOR = new chlq();
     private final byte[] a;
     private final byte[] b;
     private final byte[] c;
@@ -28,7 +28,7 @@ public class BluetoothConnectivityInfo extends AbstractSafeParcelable implements
         this.c = bArr3;
     }
 
-    @Override // defpackage.cfey
+    @Override // defpackage.chmk
     public final int a() {
         return 2;
     }
@@ -67,7 +67,7 @@ public class BluetoothConnectivityInfo extends AbstractSafeParcelable implements
         return false;
     }
 
-    @Override // defpackage.cffa
+    @Override // defpackage.chmm
     public final byte[] g() {
         int length;
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -82,17 +82,17 @@ public class BluetoothConnectivityInfo extends AbstractSafeParcelable implements
             byteArrayOutputStream.write(true != z ? 64 : 96);
             byteArrayOutputStream.write(bArr);
             if (z) {
-                eiig.x(bArr2);
+                ekvl.y(bArr2);
                 byteArrayOutputStream.write(bArr2);
             }
             byte[] bArr3 = this.c;
             if (bArr3 != null && (length = bArr3.length) > 0) {
-                Log.i("NearbyConnections", String.format("Writing %d action(s): %s", Integer.valueOf(length), cfef.b(bArr3)));
+                Log.i("NearbyConnections", String.format("Writing %d action(s): %s", Integer.valueOf(length), chlr.b(bArr3)));
                 byteArrayOutputStream.write(bArr3);
             }
             byte[] byteArray = byteArrayOutputStream.toByteArray();
             byteArrayOutputStream.reset();
-            byteArrayOutputStream.write(cffb.g(20, byteArray.length));
+            byteArrayOutputStream.write(chmn.g(20, byteArray.length));
             byteArrayOutputStream.write(byteArray);
             return byteArrayOutputStream.toByteArray();
         } catch (IOException unused) {
@@ -116,10 +116,10 @@ public class BluetoothConnectivityInfo extends AbstractSafeParcelable implements
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, c(), false);
-        arxc.i(parcel, 2, d(), false);
-        arxc.i(parcel, 3, b(), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, c(), false);
+        atzr.i(parcel, 2, d(), false);
+        atzr.i(parcel, 3, b(), false);
+        atzr.c(parcel, a);
     }
 }

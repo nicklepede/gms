@@ -1,39 +1,39 @@
 package com.google.android.gms.httpflags.service;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.blcl;
-import defpackage.blcm;
-import defpackage.blco;
-import defpackage.foyc;
-import defpackage.fvbo;
+import defpackage.apzs;
+import defpackage.bnjd;
+import defpackage.bnje;
+import defpackage.bnjg;
+import defpackage.frri;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class ModuleInitIntentOperation extends anya {
-    @Override // defpackage.anya
+public final class ModuleInitIntentOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
         try {
-            if (foyc.a.a().e()) {
-                int i = blcm.a;
-                blcl.a(this);
+            if (frri.a.lK().e()) {
+                int i = bnje.a;
+                bnjd.a(this);
             }
         } finally {
-            blco.a(this);
+            bnjg.a(this);
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void j(Intent intent) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
         try {
-            if (foyc.a.a().d()) {
-                int i = blcm.a;
-                blcl.a(this);
+            if (frri.a.lK().d()) {
+                int i = bnje.a;
+                bnjd.a(this);
             }
         } finally {
-            blco.a(this);
+            bnjg.a(this);
         }
     }
 }

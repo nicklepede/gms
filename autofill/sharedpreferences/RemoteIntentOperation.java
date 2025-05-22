@@ -4,48 +4,48 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aery;
-import defpackage.aesb;
-import defpackage.agjy;
-import defpackage.agjz;
-import defpackage.asej;
-import defpackage.asot;
+import defpackage.agsl;
+import defpackage.agso;
+import defpackage.aiko;
+import defpackage.aikp;
+import defpackage.auid;
+import defpackage.ausn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class RemoteIntentOperation extends IntentOperation {
     static {
-        asot.b("RemoteIntentOperation", asej.AUTOFILL);
+        ausn.b("RemoteIntentOperation", auid.AUTOFILL);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        SharedPreferences sharedPreferences = (SharedPreferences) ((aesb) aery.a(getBaseContext())).k.a();
+        SharedPreferences sharedPreferences = (SharedPreferences) ((agso) agsl.a(getBaseContext())).k.a();
         Bundle extras = intent.getExtras();
         if (extras == null) {
             return;
         }
         String string = extras.getString("method");
         Change change = (Change) extras.getParcelable("change");
-        if (!(sharedPreferences instanceof agjy)) {
-            if (sharedPreferences instanceof agjz) {
-                agjz agjzVar = (agjz) sharedPreferences;
+        if (!(sharedPreferences instanceof aiko)) {
+            if (sharedPreferences instanceof aikp) {
+                aikp aikpVar = (aikp) sharedPreferences;
                 if (!"sync".equals(string) || change == null) {
                     return;
                 }
-                agjzVar.r(change);
+                aikpVar.r(change);
                 return;
             }
             return;
         }
-        agjy agjyVar = (agjy) sharedPreferences;
+        aiko aikoVar = (aiko) sharedPreferences;
         if ("request_sync".equals(string)) {
-            agjyVar.c();
+            aikoVar.c();
         } else {
             if (!"request_change".equals(string) || change == null) {
                 return;
             }
-            agjyVar.b(change);
+            aikoVar.b(change);
         }
     }
 }

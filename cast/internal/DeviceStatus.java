@@ -5,16 +5,16 @@ import android.os.Parcelable;
 import com.google.android.gms.cast.ApplicationMetadata;
 import com.google.android.gms.cast.EqualizerSettings;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.amxr;
-import defpackage.amxs;
-import defpackage.arxc;
+import defpackage.aozc;
+import defpackage.aozd;
+import defpackage.atzr;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class DeviceStatus extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new amxs();
+    public static final Parcelable.Creator CREATOR = new aozd();
     public double a;
     public boolean b;
     public int c;
@@ -41,9 +41,9 @@ public class DeviceStatus extends AbstractSafeParcelable {
             return false;
         }
         DeviceStatus deviceStatus = (DeviceStatus) obj;
-        if (this.a == deviceStatus.a && this.b == deviceStatus.b && this.c == deviceStatus.c && amxr.u(this.d, deviceStatus.d) && this.e == deviceStatus.e) {
+        if (this.a == deviceStatus.a && this.b == deviceStatus.b && this.c == deviceStatus.c && aozc.u(this.d, deviceStatus.d) && this.e == deviceStatus.e) {
             EqualizerSettings equalizerSettings = this.f;
-            if (amxr.u(equalizerSettings, equalizerSettings) && this.g == deviceStatus.g) {
+            if (aozc.u(equalizerSettings, equalizerSettings) && this.g == deviceStatus.g) {
                 return true;
             }
         }
@@ -60,15 +60,15 @@ public class DeviceStatus extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.j(parcel, 2, this.a);
-        arxc.e(parcel, 3, this.b);
-        arxc.o(parcel, 4, this.c);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.o(parcel, 6, this.e);
-        arxc.t(parcel, 7, this.f, i, false);
-        arxc.j(parcel, 8, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.j(parcel, 2, this.a);
+        atzr.e(parcel, 3, this.b);
+        atzr.o(parcel, 4, this.c);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.o(parcel, 6, this.e);
+        atzr.t(parcel, 7, this.f, i, false);
+        atzr.j(parcel, 8, this.g);
+        atzr.c(parcel, a);
     }
 
     public DeviceStatus() {

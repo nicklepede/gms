@@ -2,39 +2,39 @@ package com.google.android.gms.auth.aang.impl.deviceaccount;
 
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.acbj;
-import defpackage.arwm;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.eiuu;
-import defpackage.ejck;
-import defpackage.fkfi;
-import defpackage.viw;
+import defpackage.aebj;
+import defpackage.atzb;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.elhz;
+import defpackage.elpp;
+import defpackage.fmvu;
+import defpackage.xex;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class DeviceAccountChimeraService extends bxgd {
-    private acbj a;
+public final class DeviceAccountChimeraService extends bzot {
+    private aebj a;
 
     public DeviceAccountChimeraService() {
-        super(316, "com.google.android.gms.auth.account.device.deviceaccount.START", ejck.a, 0, 10, eiuu.G(fkfi.a.a().c().b));
+        super(316, "com.google.android.gms.auth.account.device.deviceaccount.START", elpp.a, 0, 10, elhz.G(fmvu.a.lK().c().b));
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        this.a = new acbj(AppContextProvider.a());
-        bxgo l = l();
-        acbj acbjVar = this.a;
-        arwm.s(acbjVar);
-        bxgjVar.c(new viw(l, acbjVar));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        this.a = new aebj(AppContextProvider.a());
+        bzpe l = l();
+        aebj aebjVar = this.a;
+        atzb.s(aebjVar);
+        bzozVar.c(new xex(l, aebjVar));
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
-        acbj acbjVar = this.a;
-        if (acbjVar != null) {
-            acbjVar.b();
+        aebj aebjVar = this.a;
+        if (aebjVar != null) {
+            aebjVar.b();
         }
         super.onDestroy();
     }

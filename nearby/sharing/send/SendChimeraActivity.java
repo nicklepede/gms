@@ -5,87 +5,87 @@ import android.net.Uri;
 import android.os.Bundle;
 import androidx.compose.ui.platform.ComposeView;
 import defpackage.a;
-import defpackage.cfdj;
-import defpackage.cmdb;
-import defpackage.cmep;
-import defpackage.cohy;
-import defpackage.cohz;
-import defpackage.cqli;
-import defpackage.cqmb;
-import defpackage.cqou;
-import defpackage.cqov;
-import defpackage.cqow;
-import defpackage.cqox;
-import defpackage.cqpz;
-import defpackage.cqtt;
-import defpackage.cqud;
-import defpackage.cqvf;
-import defpackage.cqvm;
-import defpackage.crji;
-import defpackage.crjo;
-import defpackage.fiwo;
-import defpackage.fqmk;
-import defpackage.fqmn;
-import defpackage.fuuq;
-import defpackage.fuuw;
-import defpackage.fuy;
-import defpackage.fvbi;
-import defpackage.fvbo;
-import defpackage.fvcc;
-import defpackage.fvjt;
-import defpackage.fvjy;
-import defpackage.ivf;
-import defpackage.jqx;
-import defpackage.jrh;
+import defpackage.chkv;
+import defpackage.colj;
+import defpackage.comx;
+import defpackage.cqqt;
+import defpackage.cqqu;
+import defpackage.csum;
+import defpackage.csvf;
+import defpackage.csxy;
+import defpackage.csxz;
+import defpackage.csya;
+import defpackage.csyb;
+import defpackage.cszd;
+import defpackage.ctcx;
+import defpackage.ctdh;
+import defpackage.ctej;
+import defpackage.cteq;
+import defpackage.ctsm;
+import defpackage.ctss;
+import defpackage.flml;
+import defpackage.ftgf;
+import defpackage.ftgi;
+import defpackage.fvp;
+import defpackage.fxqo;
+import defpackage.fxqu;
+import defpackage.fxxg;
+import defpackage.fxxm;
+import defpackage.fxya;
+import defpackage.fyfr;
+import defpackage.fyfw;
+import defpackage.iwv;
+import defpackage.jxm;
+import defpackage.jxw;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class SendChimeraActivity extends cqli {
-    public final boolean f = fqmk.a.a().aJ();
-    public cqtt g;
-    public fiwo h;
-    public fuuq i;
-    public cmdb j;
-    private final fuuw k;
+public final class SendChimeraActivity extends csum {
+    public final boolean f = ftgf.a.lK().aF();
+    public ctcx g;
+    public flml h;
+    public fxqo i;
+    public colj j;
+    private final fxqu k;
 
     public SendChimeraActivity() {
-        cqov cqovVar = new cqov(this);
-        int i = fvcc.a;
-        this.k = new jqx(new fvbi(cqvm.class), new cqow(this), cqovVar, new cqox(this));
+        csxz csxzVar = new csxz(this);
+        int i = fxya.a;
+        this.k = new jxm(new fxxg(cteq.class), new csya(this), csxzVar, new csyb(this));
     }
 
-    public final cmdb b() {
-        cmdb cmdbVar = this.j;
-        if (cmdbVar != null) {
-            return cmdbVar;
+    public final colj b() {
+        colj coljVar = this.j;
+        if (coljVar != null) {
+            return coljVar;
         }
-        fvbo.j("analyticsLogger");
+        fxxm.j("analyticsLogger");
         return null;
     }
 
-    public final cqtt c() {
-        cqtt cqttVar = this.g;
-        if (cqttVar != null) {
-            return cqttVar;
+    public final ctcx c() {
+        ctcx ctcxVar = this.g;
+        if (ctcxVar != null) {
+            return ctcxVar;
         }
-        fvbo.j("sendScreenPresenter");
+        fxxm.j("sendScreenPresenter");
         return null;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void dump(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         String str2;
-        fvbo.f(str, "prefix");
-        fvbo.f(printWriter, "writer");
-        int intValue = (fqmn.d() ? ((cqvf) i()).a() : fvbo.n(getIntent().getAction(), "android.intent.action.REMOTE_COPY") ? 1 : 0).intValue();
+        fxxm.f(str, "prefix");
+        fxxm.f(printWriter, "writer");
+        int intValue = (ftgi.d() ? ((ctej) i()).a() : fxxm.n(getIntent().getAction(), "android.intent.action.REMOTE_COPY") ? 1 : 0).intValue();
         super.dump(str, fileDescriptor, printWriter, strArr);
         printWriter.write(str);
         printWriter.write("SendActivity\n");
         printWriter.write(str);
         printWriter.write("  UI State: ");
-        printWriter.write(((cqud) c().e.b()).toString());
+        printWriter.write(((ctdh) c().e.b()).toString());
         printWriter.write("\n");
         printWriter.write(str);
         Uri referrer = getReferrer();
@@ -124,71 +124,71 @@ public final class SendChimeraActivity extends cqli {
         printWriter.flush();
     }
 
-    public final cqvm f() {
-        return (cqvm) this.k.a();
+    public final cteq f() {
+        return (cteq) this.k.a();
     }
 
-    public final fuuq i() {
-        fuuq fuuqVar = this.i;
-        if (fuuqVar != null) {
-            return fuuqVar;
+    public final fxqo i() {
+        fxqo fxqoVar = this.i;
+        if (fxqoVar != null) {
+            return fxqoVar;
         }
-        fvbo.j("sendUseCase");
+        fxxm.j("sendUseCase");
         return null;
     }
 
-    @Override // defpackage.cqli, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.csum, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Intent intent = getIntent();
-        fvbo.e(intent, "getIntent(...)");
-        Intent a = cohz.a(this, intent, cohy.b);
+        fxxm.e(intent, "getIntent(...)");
+        Intent a = cqqu.a(this, intent, cqqt.b);
         if (a != null) {
             startActivity(a);
             finish();
             return;
         }
-        if (fqmk.J()) {
-            fiwo fiwoVar = this.h;
-            if (fiwoVar == null) {
-                fvbo.j("sendHatsMixin");
-                fiwoVar = null;
+        if (ftgf.J()) {
+            flml flmlVar = this.h;
+            if (flmlVar == null) {
+                fxxm.j("sendHatsMixin");
+                flmlVar = null;
             }
-            fiwoVar.a();
+            flmlVar.a();
         }
-        cmep.b(this);
-        ivf.a(getWindow(), false);
-        crji crjiVar = new crji(new crjo(this, cfdj.f()));
-        getOnBackPressedDispatcher().a(new cqmb(this));
-        cmdb f = cmdb.f(this);
-        fvbo.f(f, "<set-?>");
+        comx.b(this);
+        iwv.a(getWindow(), false);
+        ctsm ctsmVar = new ctsm(new ctss(this, chkv.f()));
+        getOnBackPressedDispatcher().a(new csvf(this));
+        colj f = colj.f(this);
+        fxxm.f(f, "<set-?>");
         this.j = f;
-        if (fqmk.H() && bundle == null) {
-            cqvm f2 = f();
+        if (ftgf.H() && bundle == null) {
+            cteq f2 = f();
             Intent intent2 = getIntent();
-            fvbo.e(intent2, "getIntent(...)");
+            fxxm.e(intent2, "getIntent(...)");
             f2.c(intent2);
         }
         ComposeView composeView = new ComposeView(this, null, 0, 6, null);
-        composeView.a(new fuy(-868794470, true, new cqou(this, crjiVar, composeView)));
+        composeView.a(new fvp(-868794470, true, new csxy(this, ctsmVar, composeView)));
         setContentView(composeView);
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
         super.onNewIntent(intent);
         setIntent(intent);
-        if (fqmk.H()) {
+        if (ftgf.H()) {
             f().c(intent);
         }
-        if (fqmk.J()) {
-            jrh jrhVar = new jrh(this);
-            int i = fvcc.a;
-            cqpz cqpzVar = (cqpz) jrhVar.b(new fvbi(cqpz.class));
-            Object andSet = cqpzVar.a.getAndSet(cqpzVar.b());
-            fvbo.e(andSet, "getAndSet(...)");
-            fvjy.e((fvjt) andSet, "new intent", null);
+        if (ftgf.J()) {
+            jxw jxwVar = new jxw(this);
+            int i = fxya.a;
+            cszd cszdVar = (cszd) jxwVar.b(new fxxg(cszd.class));
+            Object andSet = cszdVar.a.getAndSet(cszdVar.b());
+            fxxm.e(andSet, "getAndSet(...)");
+            fyfw.e((fyfr) andSet, "new intent", null);
         }
     }
 }

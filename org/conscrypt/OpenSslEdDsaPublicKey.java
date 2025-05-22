@@ -5,7 +5,7 @@ import java.security.spec.EncodedKeySpec;
 import java.security.spec.InvalidKeySpecException;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class OpenSslEdDsaPublicKey implements PublicKey {
     static final int ED25519_PUBLIC_KEY_SIZE_BYTES = 32;

@@ -4,12 +4,12 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.Parcel;
 import android.os.RemoteException;
-import defpackage.otn;
-import defpackage.oto;
+import defpackage.qmq;
+import defpackage.qmr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class bj extends otn implements bk {
+public final class bj extends qmq implements bk {
     private final Object a;
     private volatile bl b;
 
@@ -17,8 +17,8 @@ public final class bj extends otn implements bk {
         super("com.google.android.gms.ads.internal.client.IVideoController");
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         bl blVar;
         bl blVar2;
         switch (i) {
@@ -27,8 +27,8 @@ public final class bj extends otn implements bk {
             case 2:
                 throw new RemoteException();
             case 3:
-                oto.h(parcel);
-                fq(parcel);
+                qmr.h(parcel);
+                fD(parcel);
                 throw new RemoteException();
             case 4:
                 throw new RemoteException();
@@ -46,7 +46,7 @@ public final class bj extends otn implements bk {
                     IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.ads.internal.client.IVideoLifecycleCallbacks");
                     blVar = queryLocalInterface instanceof bl ? (bl) queryLocalInterface : new bl(readStrongBinder);
                 }
-                fq(parcel);
+                fD(parcel);
                 synchronized (this.a) {
                     this.b = blVar;
                 }
@@ -61,7 +61,7 @@ public final class bj extends otn implements bk {
                     blVar2 = this.b;
                 }
                 parcel2.writeNoException();
-                oto.g(parcel2, blVar2);
+                qmr.g(parcel2, blVar2);
                 return true;
             case 12:
                 throw new RemoteException();

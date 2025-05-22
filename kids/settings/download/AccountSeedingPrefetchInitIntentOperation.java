@@ -2,16 +2,16 @@ package com.google.android.gms.kids.settings.download;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.fvbo;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.fxxm;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public final class AccountSeedingPrefetchInitIntentOperation extends IntentOperation {
     static {
-        asot.b("AccountSeedingPrefetchInitIntentOperation", asej.KIDS);
+        ausn.b("AccountSeedingPrefetchInitIntentOperation", auid.KIDS);
     }
 
     public AccountSeedingPrefetchInitIntentOperation() {
@@ -21,6 +21,6 @@ public final class AccountSeedingPrefetchInitIntentOperation extends IntentOpera
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
     }
 }

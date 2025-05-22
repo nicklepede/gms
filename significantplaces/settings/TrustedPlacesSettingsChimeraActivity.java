@@ -4,48 +4,48 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import com.google.android.gms.R;
 import defpackage.bp;
-import defpackage.dciy;
-import defpackage.dcmh;
-import defpackage.fvbo;
-import defpackage.qgg;
+import defpackage.dete;
+import defpackage.dexk;
+import defpackage.fxxm;
+import defpackage.rzk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class TrustedPlacesSettingsChimeraActivity extends qgg {
-    @Override // defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+public final class TrustedPlacesSettingsChimeraActivity extends rzk {
+    @Override // defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        int i = dciy.a;
-        dciy.c(this);
+        int i = dete.a;
+        dete.c(this);
         if (bundle == null) {
             bp bpVar = new bp(getSupportFragmentManager());
-            bpVar.F(R.id.content_frame, new dcmh());
+            bpVar.F(R.id.content_frame, new dexk());
             bpVar.a();
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
-        fvbo.f(menuItem, "item");
+        fxxm.f(menuItem, "item");
         if (menuItem.getItemId() != 16908332) {
             return super.onOptionsItemSelected(menuItem);
         }
-        int i = dciy.a;
-        dciy.b(this);
+        int i = dete.a;
+        dete.b(this);
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStart() {
         super.onStart();
-        int i = dciy.a;
-        dciy.d(this);
+        int i = dete.a;
+        dete.d(this);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStop() {
-        int i = dciy.a;
-        dciy.e(this);
+        int i = dete.a;
+        dete.e(this);
         super.onStop();
     }
 }

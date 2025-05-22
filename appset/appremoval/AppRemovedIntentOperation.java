@@ -6,21 +6,21 @@ import android.net.Uri;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.ads.identifier.settings.d;
 import com.google.android.gms.chimera.modules.appset.AppContextProvider;
-import defpackage.enqc;
-import defpackage.ensj;
-import defpackage.fkan;
-import defpackage.ugq;
-import defpackage.uhk;
-import defpackage.uhr;
-import defpackage.uhv;
-import defpackage.ujf;
+import defpackage.eqdv;
+import defpackage.eqgc;
+import defpackage.fmqs;
+import defpackage.wcp;
+import defpackage.wdj;
+import defpackage.wdq;
+import defpackage.wdu;
+import defpackage.wfe;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AppRemovedIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
@@ -28,59 +28,59 @@ public class AppRemovedIntentOperation extends IntentOperation {
         Uri data;
         final String schemeSpecificPart;
         AppContextProvider.a();
-        if (fkan.a.a().l() && "android.intent.action.PACKAGE_FULLY_REMOVED".equals(intent.getAction()) && (data = intent.getData()) != null && (schemeSpecificPart = data.getSchemeSpecificPart()) != null) {
+        if (fmqs.a.lK().l() && "android.intent.action.PACKAGE_FULLY_REMOVED".equals(intent.getAction()) && (data = intent.getData()) != null && (schemeSpecificPart = data.getSchemeSpecificPart()) != null) {
             final Context a = AppContextProvider.a();
-            final uhk b = uhk.b(a);
-            final uhr uhrVar = new uhr(new uhv(a, getClass().getName()));
-            ensj.t(b.c.c(new enqc() { // from class: ugx
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    uio uioVar = (uio) obj;
-                    final fecj fecjVar = (fecj) uioVar.iB(5, null);
-                    fecjVar.X(uioVar);
+            final wdj b = wdj.b(a);
+            final wdq wdqVar = new wdq(new wdu(a, getClass().getName()));
+            eqgc.t(b.c.c(new eqdv() { // from class: wcw
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    wen wenVar = (wen) obj;
+                    final fgrc fgrcVar = (fgrc) wenVar.iQ(5, null);
+                    fgrcVar.X(wenVar);
                     String str = schemeSpecificPart;
-                    uij bd = fecjVar.bd(str, uij.a);
+                    wei bd = fgrcVar.bd(str, wei.a);
                     if ((bd.b & 1) == 0) {
-                        return ensj.i(uioVar);
+                        return eqgc.i(wenVar);
                     }
-                    fecjVar.bi(str);
+                    fgrcVar.bi(str);
                     final String str2 = bd.c;
                     final ArrayList arrayList = new ArrayList();
-                    Iterator it = DesugarCollections.unmodifiableMap(DesugarCollections.unmodifiableMap(((uio) fecjVar.b).c)).keySet().iterator();
+                    Iterator it = DesugarCollections.unmodifiableMap(DesugarCollections.unmodifiableMap(((wen) fgrcVar.b).c)).keySet().iterator();
                     while (it.hasNext()) {
-                        arrayList.add(uhrVar.a((String) it.next()));
+                        arrayList.add(wdqVar.a((String) it.next()));
                     }
                     final Context context = a;
-                    final uhk uhkVar = uhk.this;
-                    return ensj.a(arrayList).a(new Callable() { // from class: ugz
+                    final wdj wdjVar = wdj.this;
+                    return eqgc.a(arrayList).a(new Callable() { // from class: wcy
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
-                            fecj fecjVar2;
+                            fgrc fgrcVar2;
                             String str3;
                             Iterator it2 = arrayList.iterator();
                             do {
-                                fecjVar2 = fecjVar;
+                                fgrcVar2 = fgrcVar;
                                 str3 = str2;
                                 if (!it2.hasNext()) {
                                     Context context2 = context;
-                                    uhk.this.a.b(context2, str3);
-                                    fecjVar2.bj(str3);
-                                    if (fkan.h()) {
+                                    wdj.this.a.b(context2, str3);
+                                    fgrcVar2.bj(str3);
+                                    if (fmqs.h()) {
                                         d.d(context2, "PvidReset", "PVID reset because all apps with that PVID were uninstalled from the device.");
                                     }
-                                    for (Map.Entry entry : DesugarCollections.unmodifiableMap(DesugarCollections.unmodifiableMap(((uio) fecjVar2.b).c)).entrySet()) {
-                                        if (str3.equals(((uij) entry.getValue()).c)) {
-                                            fecjVar2.bi((String) entry.getKey());
+                                    for (Map.Entry entry : DesugarCollections.unmodifiableMap(DesugarCollections.unmodifiableMap(((wen) fgrcVar2.b).c)).entrySet()) {
+                                        if (str3.equals(((wei) entry.getValue()).c)) {
+                                            fgrcVar2.bi((String) entry.getKey());
                                         }
                                     }
-                                    return (uio) fecjVar2.Q();
+                                    return (wen) fgrcVar2.Q();
                                 }
-                            } while (!str3.equals(((uhs) ensj.r((enss) it2.next())).a));
-                            return (uio) fecjVar2.Q();
+                            } while (!str3.equals(((wdr) eqgc.r((eqgl) it2.next())).a));
+                            return (wen) fgrcVar2.Q();
                         }
-                    }, uhkVar.b);
+                    }, wdjVar.b);
                 }
-            }, b.b), new ugq(a, uhrVar), ujf.a());
+            }, b.b), new wcp(a, wdqVar), wfe.a());
         }
     }
 }

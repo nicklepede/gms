@@ -4,19 +4,19 @@ import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
-import defpackage.byht;
-import defpackage.byhv;
-import defpackage.byhz;
-import defpackage.byik;
-import defpackage.egkp;
+import defpackage.caql;
+import defpackage.caqn;
+import defpackage.caqr;
+import defpackage.carc;
+import defpackage.eixs;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public abstract class TracingSensorEventListener implements SensorEventListener, byik {
-    final byht f;
+public abstract class TracingSensorEventListener implements SensorEventListener, carc {
+    final caql f;
 
     protected TracingSensorEventListener(Context context) {
-        this.f = byhv.c.a(byhz.c.c(getClass(), 17, context));
+        this.f = caqn.c.a(caqr.c.c(getClass(), 17, context));
     }
 
     public abstract void a(SensorEvent sensorEvent);
@@ -25,7 +25,7 @@ public abstract class TracingSensorEventListener implements SensorEventListener,
 
     @Override // android.hardware.SensorEventListener
     public final void onAccuracyChanged(Sensor sensor, int i) {
-        egkp a = this.f.a();
+        eixs a = this.f.a();
         try {
             b(sensor);
             if (a != null) {
@@ -45,7 +45,7 @@ public abstract class TracingSensorEventListener implements SensorEventListener,
 
     @Override // android.hardware.SensorEventListener
     public final void onSensorChanged(SensorEvent sensorEvent) {
-        egkp a = this.f.a();
+        eixs a = this.f.a();
         try {
             a(sensorEvent);
             if (a != null) {
@@ -64,6 +64,6 @@ public abstract class TracingSensorEventListener implements SensorEventListener,
     }
 
     protected TracingSensorEventListener(String str, String str2) {
-        this.f = byhv.c.a(byhz.c.d(getClass(), 17, str2, str));
+        this.f = caqn.c.a(caqr.c.d(getClass(), 17, str2, str));
     }
 }

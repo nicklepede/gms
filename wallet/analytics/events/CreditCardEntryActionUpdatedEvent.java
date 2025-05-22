@@ -3,12 +3,12 @@ package com.google.android.gms.wallet.analytics.events;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.wallet.analytics.CreditCardEntryAction;
-import defpackage.difi;
+import defpackage.dkqt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class CreditCardEntryActionUpdatedEvent extends WalletAnalyticsEvent {
-    public static final Parcelable.Creator CREATOR = new difi();
+    public static final Parcelable.Creator CREATOR = new dkqt();
     public CreditCardEntryAction a;
 
     public CreditCardEntryActionUpdatedEvent(CreditCardEntryAction creditCardEntryAction, String str) {

@@ -4,19 +4,19 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.presence.PresenceIdentity;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cknq;
-import defpackage.feay;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cmvv;
+import defpackage.fgpr;
 import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public final class BroadcastCredential extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cknq();
+    public static final Parcelable.Creator CREATOR = new cmvv();
     public final byte[] a;
     public final PresenceIdentity b;
     public final IdentityToken c;
@@ -40,7 +40,7 @@ public final class BroadcastCredential extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof BroadcastCredential) {
             BroadcastCredential broadcastCredential = (BroadcastCredential) obj;
-            if (Arrays.equals(this.a, broadcastCredential.a) && arwb.b(this.b, broadcastCredential.b) && this.c.equals(broadcastCredential.c) && this.d == broadcastCredential.d && this.e == broadcastCredential.e) {
+            if (Arrays.equals(this.a, broadcastCredential.a) && atyq.b(this.b, broadcastCredential.b) && this.c.equals(broadcastCredential.c) && this.d == broadcastCredential.d && this.e == broadcastCredential.e) {
                 return true;
             }
         }
@@ -52,18 +52,18 @@ public final class BroadcastCredential extends AbstractSafeParcelable {
     }
 
     public final String toString() {
-        return String.format("BroadcastCredential: keySeed: %s", feay.w(this.a));
+        return String.format("BroadcastCredential: keySeed: %s", fgpr.w(this.a));
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         byte[] bArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, bArr, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.q(parcel, 4, this.d);
-        arxc.q(parcel, 5, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, bArr, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.q(parcel, 4, this.d);
+        atzr.q(parcel, 5, this.e);
+        atzr.c(parcel, a);
     }
 }

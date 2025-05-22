@@ -4,19 +4,19 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.SparseArray;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.amcj;
-import defpackage.amxr;
-import defpackage.amye;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.aspq;
+import defpackage.aodu;
+import defpackage.aozc;
+import defpackage.aozp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.autk;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class MediaStatus extends AbstractSafeParcelable {
     public static final Parcelable.Creator CREATOR;
@@ -46,8 +46,8 @@ public class MediaStatus extends AbstractSafeParcelable {
     private final SparseArray x;
 
     static {
-        new amye("MediaStatus");
-        CREATOR = new amcj();
+        new aozp("MediaStatus");
+        CREATOR = new aodu();
     }
 
     public MediaStatus(MediaInfo mediaInfo, long j, int i, double d, int i2, int i3, long j2, long j3, double d2, boolean z, long[] jArr, int i4, int i5, String str, int i6, List list, boolean z2, AdBreakStatus adBreakStatus, VideoInfo videoInfo, MediaLiveSeekableRange mediaLiveSeekableRange, MediaQueueData mediaQueueData) {
@@ -203,7 +203,7 @@ public class MediaStatus extends AbstractSafeParcelable {
             return false;
         }
         MediaStatus mediaStatus = (MediaStatus) obj;
-        return (this.o == null) == (mediaStatus.o == null) && this.b == mediaStatus.b && this.c == mediaStatus.c && this.d == mediaStatus.d && this.e == mediaStatus.e && this.f == mediaStatus.f && this.g == mediaStatus.g && this.i == mediaStatus.i && this.j == mediaStatus.j && this.l == mediaStatus.l && this.m == mediaStatus.m && this.p == mediaStatus.p && Arrays.equals(this.k, mediaStatus.k) && amxr.u(Long.valueOf(this.h), Long.valueOf(mediaStatus.h)) && amxr.u(this.q, mediaStatus.q) && amxr.u(this.a, mediaStatus.a) && ((jSONObject = this.o) == null || (jSONObject2 = mediaStatus.o) == null || aspq.b(jSONObject, jSONObject2)) && this.r == mediaStatus.r && amxr.u(this.s, mediaStatus.s) && amxr.u(this.t, mediaStatus.t) && amxr.u(this.u, mediaStatus.u) && arwb.b(this.v, mediaStatus.v) && this.w == mediaStatus.w;
+        return (this.o == null) == (mediaStatus.o == null) && this.b == mediaStatus.b && this.c == mediaStatus.c && this.d == mediaStatus.d && this.e == mediaStatus.e && this.f == mediaStatus.f && this.g == mediaStatus.g && this.i == mediaStatus.i && this.j == mediaStatus.j && this.l == mediaStatus.l && this.m == mediaStatus.m && this.p == mediaStatus.p && Arrays.equals(this.k, mediaStatus.k) && aozc.u(Long.valueOf(this.h), Long.valueOf(mediaStatus.h)) && aozc.u(this.q, mediaStatus.q) && aozc.u(this.a, mediaStatus.a) && ((jSONObject = this.o) == null || (jSONObject2 = mediaStatus.o) == null || autk.b(jSONObject, jSONObject2)) && this.r == mediaStatus.r && aozc.u(this.s, mediaStatus.s) && aozc.u(this.t, mediaStatus.t) && aozc.u(this.u, mediaStatus.u) && atyq.b(this.v, mediaStatus.v) && this.w == mediaStatus.w;
     }
 
     public final int hashCode() {
@@ -214,29 +214,29 @@ public class MediaStatus extends AbstractSafeParcelable {
     public final void writeToParcel(Parcel parcel, int i) {
         JSONObject jSONObject = this.o;
         this.n = jSONObject == null ? null : jSONObject.toString();
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.q(parcel, 3, this.b);
-        arxc.o(parcel, 4, this.c);
-        arxc.j(parcel, 5, this.d);
-        arxc.o(parcel, 6, this.e);
-        arxc.o(parcel, 7, this.f);
-        arxc.q(parcel, 8, this.g);
-        arxc.q(parcel, 9, this.h);
-        arxc.j(parcel, 10, this.i);
-        arxc.e(parcel, 11, this.j);
-        arxc.r(parcel, 12, this.k, false);
-        arxc.o(parcel, 13, this.l);
-        arxc.o(parcel, 14, this.m);
-        arxc.v(parcel, 15, this.n, false);
-        arxc.o(parcel, 16, this.p);
-        arxc.y(parcel, 17, this.q, false);
-        arxc.e(parcel, 18, this.r);
-        arxc.t(parcel, 19, this.s, i, false);
-        arxc.t(parcel, 20, this.t, i, false);
-        arxc.t(parcel, 21, this.u, i, false);
-        arxc.t(parcel, 22, this.v, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.q(parcel, 3, this.b);
+        atzr.o(parcel, 4, this.c);
+        atzr.j(parcel, 5, this.d);
+        atzr.o(parcel, 6, this.e);
+        atzr.o(parcel, 7, this.f);
+        atzr.q(parcel, 8, this.g);
+        atzr.q(parcel, 9, this.h);
+        atzr.j(parcel, 10, this.i);
+        atzr.e(parcel, 11, this.j);
+        atzr.r(parcel, 12, this.k, false);
+        atzr.o(parcel, 13, this.l);
+        atzr.o(parcel, 14, this.m);
+        atzr.v(parcel, 15, this.n, false);
+        atzr.o(parcel, 16, this.p);
+        atzr.y(parcel, 17, this.q, false);
+        atzr.e(parcel, 18, this.r);
+        atzr.t(parcel, 19, this.s, i, false);
+        atzr.t(parcel, 20, this.t, i, false);
+        atzr.t(parcel, 21, this.u, i, false);
+        atzr.t(parcel, 22, this.v, i, false);
+        atzr.c(parcel, a);
     }
 
     public MediaStatus(JSONObject jSONObject) {

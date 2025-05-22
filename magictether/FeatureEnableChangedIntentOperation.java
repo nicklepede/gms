@@ -4,10 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.magictether.wifisync.WifiSyncChimeraService;
-import defpackage.esjn;
-import defpackage.fpzu;
+import defpackage.euzc;
+import defpackage.fstq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class FeatureEnableChangedIntentOperation extends IntentOperation {
     public FeatureEnableChangedIntentOperation() {
@@ -15,10 +15,10 @@ public class FeatureEnableChangedIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (fpzu.g() || !fpzu.e() || intent == null || !"com.google.android.gms.auth.proximity.ACTION_FEATURE_ENABLED_CHANGE".equals(intent.getAction())) {
+        if (fstq.f() || !fstq.d() || intent == null || !"com.google.android.gms.auth.proximity.ACTION_FEATURE_ENABLED_CHANGE".equals(intent.getAction())) {
             return;
         }
-        if (esjn.WIFI_SYNC_HOST.name().equals(intent.getStringExtra("EXTRA_FEATURE_NAME"))) {
+        if (euzc.WIFI_SYNC_HOST.name().equals(intent.getStringExtra("EXTRA_FEATURE_NAME"))) {
             startService(WifiSyncChimeraService.a(this));
         }
     }

@@ -12,18 +12,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import com.google.android.gms.R;
-import defpackage.aspm;
-import defpackage.aspn;
-import defpackage.cuey;
-import defpackage.cufy;
-import defpackage.frft;
-import defpackage.frhu;
-import defpackage.qfp;
+import defpackage.autg;
+import defpackage.auth;
+import defpackage.cwof;
+import defpackage.cwpf;
+import defpackage.ftzo;
+import defpackage.fubp;
+import defpackage.ryt;
 import java.io.OutputStream;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class AvatarPreviewChimeraActivity extends qfp implements View.OnClickListener {
+public class AvatarPreviewChimeraActivity extends ryt implements View.OnClickListener {
     private Uri j;
     private AvatarView k;
 
@@ -43,9 +43,9 @@ public class AvatarPreviewChimeraActivity extends qfp implements View.OnClickLis
             return;
         }
         if (id == R.id.accept_button) {
-            Uri a = cufy.a(this, "cropped-avatar.jpg");
+            Uri a = cwpf.a(this, "cropped-avatar.jpg");
             if (a == null) {
-                cuey.l("People.Avatar", "Failed to get temp file to crop photo");
+                cwof.l("People.Avatar", "Failed to get temp file to crop photo");
                 a();
                 return;
             }
@@ -74,25 +74,25 @@ public class AvatarPreviewChimeraActivity extends qfp implements View.OnClickLis
                     outputStream = null;
                 }
                 try {
-                    createBitmap.compress(Bitmap.CompressFormat.JPEG, (int) frhu.b(), outputStream);
-                    aspm.b(outputStream);
+                    createBitmap.compress(Bitmap.CompressFormat.JPEG, (int) fubp.b(), outputStream);
+                    autg.b(outputStream);
                     Intent intent = new Intent();
                     intent.putExtra("com.google.android.gms.people.profile.EXTRA_URI", a);
                     setResult(-1, intent);
                     finish();
                 } catch (Throwable th2) {
                     th = th2;
-                    aspm.b(outputStream);
+                    autg.b(outputStream);
                     throw th;
                 }
             } catch (Exception e) {
-                cuey.d("People.Avatar", "Failed to write cropped photo", e);
+                cwof.d("People.Avatar", "Failed to write cropped photo", e);
                 a();
             }
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         boolean z;
         super.onCreate(bundle);
@@ -107,8 +107,8 @@ public class AvatarPreviewChimeraActivity extends qfp implements View.OnClickLis
         try {
             Uri uri = this.j;
             avatarView.a();
-            int c = (int) frhu.c();
-            Bitmap b = aspn.b(avatarView.getContext(), uri, c, c, frft.a.a().a());
+            int c = (int) fubp.c();
+            Bitmap b = auth.b(avatarView.getContext(), uri, c, c, ftzo.a.lK().a());
             if (b == null) {
                 throw new IllegalStateException("No bitmap loaded from ".concat(String.valueOf(String.valueOf(uri))));
             }
@@ -146,12 +146,12 @@ public class AvatarPreviewChimeraActivity extends qfp implements View.OnClickLis
             findViewById(R.id.cancel_button).setOnClickListener(this);
             findViewById(R.id.accept_button).setOnClickListener(this);
         } catch (RuntimeException e) {
-            cuey.n("People.Avatar", "Failed to initialize AvatarView: %s", e.getMessage());
+            cwof.n("People.Avatar", "Failed to initialize AvatarView: %s", e.getMessage());
             a();
         }
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putParcelable("photo_uri", this.j);

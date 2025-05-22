@@ -9,25 +9,25 @@ import com.google.android.gms.R;
 import com.google.android.gms.ocr.CreditCardOcrResult;
 import com.google.android.gms.wallet.CreditCardExpirationDate;
 import com.google.android.gms.wallet.PaymentCardRecognitionResult;
-import defpackage.arwm;
-import defpackage.arxd;
-import defpackage.assx;
-import defpackage.csft;
-import defpackage.eiig;
-import defpackage.qet;
+import defpackage.atzb;
+import defpackage.atzs;
+import defpackage.auwr;
+import defpackage.cuoy;
+import defpackage.ekvl;
+import defpackage.rxx;
 import j$.util.Objects;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class CardRecognitionShimChimeraActivity extends qet {
+public class CardRecognitionShimChimeraActivity extends rxx {
     private final void a(int i) {
         Intent intent = new Intent();
         intent.putExtra("com.google.android.gms.wallet.EXTRA_ERROR_CODE", i);
         setResult(1, intent);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         int i3;
         super.onActivityResult(i, i2, intent);
@@ -49,7 +49,7 @@ public class CardRecognitionShimChimeraActivity extends qet {
                 throw new IllegalArgumentException("OcrShimChimeraActivity receives successful callback from CREDIT_CARD_OCR, but data is null or data doesn't have EXTRA_CREDIT_CARD_OCR_RESULT field.");
             }
             CreditCardOcrResult creditCardOcrResult = (CreditCardOcrResult) intent.getParcelableExtra("com.google.android.gms.ocr.CREDIT_CARD_OCR_RESULT");
-            eiig.y(creditCardOcrResult, "CreditCardOcrResult must be non-nul if the resultCode is RESULT_OK.");
+            ekvl.z(creditCardOcrResult, "CreditCardOcrResult must be non-nul if the resultCode is RESULT_OK.");
             PaymentCardRecognitionResult paymentCardRecognitionResult = new PaymentCardRecognitionResult();
             paymentCardRecognitionResult.a = creditCardOcrResult.a;
             int i4 = creditCardOcrResult.b;
@@ -57,18 +57,18 @@ public class CardRecognitionShimChimeraActivity extends qet {
                 if (i4 > 0 && i4 <= 12) {
                     z = true;
                 }
-                arwm.b(z);
+                atzb.b(z);
                 paymentCardRecognitionResult.b = new CreditCardExpirationDate(i4, i3);
             }
-            arwm.q(paymentCardRecognitionResult.a);
+            atzb.q(paymentCardRecognitionResult.a);
             Intent intent2 = new Intent();
-            arxd.l(paymentCardRecognitionResult, intent2, "com.google.android.gms.wallet.PaymentCardRecognitionResult");
+            atzs.l(paymentCardRecognitionResult, intent2, "com.google.android.gms.wallet.PaymentCardRecognitionResult");
             setResult(-1, intent2);
         }
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         setTheme(R.style.Theme_Wallet_Blank);
         super.onCreate(bundle);
@@ -79,29 +79,29 @@ public class CardRecognitionShimChimeraActivity extends qet {
             String str = null;
             if (!TextUtils.isEmpty(callingPackage)) {
                 try {
-                    str = assx.b(this).h(callingPackage).toString();
+                    str = auwr.b(this).h(callingPackage).toString();
                 } catch (PackageManager.NameNotFoundException e) {
                     Log.e("OcrShimChimeraActivity", "Failed to find application name.", e);
                 }
             }
             String stringExtra = getIntent().getStringExtra("callerPackageName");
-            eiig.b(!TextUtils.isEmpty(stringExtra), "The caller package name is absent while creating this PendingIntent.");
-            eiig.x(stringExtra);
+            ekvl.b(!TextUtils.isEmpty(stringExtra), "The caller package name is absent while creating this PendingIntent.");
+            ekvl.y(stringExtra);
             int i2 = !stringExtra.equals(callingPackage) ? 414 : TextUtils.isEmpty(str) ? 415 : 0;
             if (i2 != 0) {
                 a(i2);
                 finish();
                 return;
             }
-            csft csftVar = new csft(this);
-            csftVar.b.addAll(Arrays.asList(Integer.valueOf(i)));
-            eiig.x(callingPackage);
-            csftVar.e(callingPackage);
-            eiig.x(str);
-            arwm.c(!TextUtils.isEmpty(str), "A non-empty appLabel is required.");
-            csftVar.a.putExtra("com.google.android.gms.ocr.INTEGRATOR_APP_LABEL", str);
-            csftVar.g(2);
-            startActivityForResult((Intent) Objects.requireNonNull(csftVar.a()), 1001);
+            cuoy cuoyVar = new cuoy(this);
+            cuoyVar.b.addAll(Arrays.asList(Integer.valueOf(i)));
+            ekvl.y(callingPackage);
+            cuoyVar.e(callingPackage);
+            ekvl.y(str);
+            atzb.c(!TextUtils.isEmpty(str), "A non-empty appLabel is required.");
+            cuoyVar.a.putExtra("com.google.android.gms.ocr.INTEGRATOR_APP_LABEL", str);
+            cuoyVar.g(2);
+            startActivityForResult((Intent) Objects.requireNonNull(cuoyVar.a()), 1001);
         }
     }
 }

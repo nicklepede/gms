@@ -8,54 +8,54 @@ import com.google.android.chimera.FragmentTransaction;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.proximity.phonehub.PhoneHubFeatureSetupChimeraActivity;
-import defpackage.acqe;
-import defpackage.acxt;
-import defpackage.acxw;
-import defpackage.acyv;
-import defpackage.acyw;
-import defpackage.adas;
-import defpackage.arxo;
+import defpackage.aeqe;
+import defpackage.aext;
+import defpackage.aexw;
+import defpackage.aeyv;
+import defpackage.aeyw;
+import defpackage.afas;
+import defpackage.auad;
 import defpackage.bp;
 import defpackage.dg;
 import defpackage.ew;
-import defpackage.flcw;
-import defpackage.qet;
+import defpackage.fnuf;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class PhoneHubFeatureSetupChimeraActivity extends qet {
+public final class PhoneHubFeatureSetupChimeraActivity extends rxx {
     public static final /* synthetic */ int p = 0;
-    private static final arxo q = new arxo("ProximityAuth", "PhoneHubFeatureSetupChimeraActivity");
+    private static final auad q = new auad("ProximityAuth", "PhoneHubFeatureSetupChimeraActivity");
     public String j;
-    public adas k;
-    public adas l;
+    public afas k;
+    public afas l;
     public boolean m;
-    public acyw n;
-    public acqe o;
+    public aeyw n;
+    public aeqe o;
     private String r;
     private boolean s;
     private boolean t;
 
     public PhoneHubFeatureSetupChimeraActivity() {
         super(R.layout.phone_hub_feature_setup_activity);
-        adas adasVar = adas.RESULT_NOT_ATTEMPTED;
-        this.k = adasVar;
-        this.l = adasVar;
+        afas afasVar = afas.RESULT_NOT_ATTEMPTED;
+        this.k = afasVar;
+        this.l = afasVar;
         this.m = false;
     }
 
     private final void l() {
         bp bpVar = new bp(getSupportFragmentManager());
-        bpVar.u(R.id.setup_card, new acxw(), "NotificationSetupFragment");
+        bpVar.u(R.id.setup_card, new aexw(), "NotificationSetupFragment");
         bpVar.j = FragmentTransaction.TRANSIT_FRAGMENT_OPEN;
         bpVar.a();
     }
 
     public final void a(boolean z) {
         if (z) {
-            this.k = adas.RESULT_PERMISSION_GRANTED;
+            this.k = afas.RESULT_PERMISSION_GRANTED;
         } else {
-            this.k = adas.RESULT_ERROR_USER_REJECT;
+            this.k = afas.RESULT_ERROR_USER_REJECT;
         }
         if (!this.t) {
             this.m = true;
@@ -66,11 +66,11 @@ public final class PhoneHubFeatureSetupChimeraActivity extends qet {
         dg h = supportFragmentManager.h("CameraRollSetupFragment");
         if (h != null) {
             bp bpVar = new bp(supportFragmentManager);
-            bpVar.n(h);
+            bpVar.m(h);
             bpVar.j = FragmentTransaction.TRANSIT_FRAGMENT_CLOSE;
             bpVar.a();
         }
-        this.l = adas.RESULT_IN_PROGRESS;
+        this.l = afas.RESULT_IN_PROGRESS;
         l();
     }
 
@@ -80,7 +80,7 @@ public final class PhoneHubFeatureSetupChimeraActivity extends qet {
             this.o.F(2);
             return;
         }
-        Intent b = flcw.P() ? UpdateLocalFeatureStateIntentOperation.b(getApplicationContext(), this.r, true) : UpdateCameraRollAccessStateIntentOperation.a(getApplicationContext(), this.r, true);
+        Intent b = fnuf.P() ? UpdateLocalFeatureStateIntentOperation.b(getApplicationContext(), this.r, true) : UpdateCameraRollAccessStateIntentOperation.a(getApplicationContext(), this.r, true);
         if (b != null) {
             startService(b);
             a(true);
@@ -88,7 +88,7 @@ public final class PhoneHubFeatureSetupChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Intent intent = getIntent();
@@ -102,21 +102,21 @@ public final class PhoneHubFeatureSetupChimeraActivity extends qet {
         this.s = intent.getBooleanExtra("cameraRollSetupRequested", false);
         this.t = intent.getBooleanExtra("notificationSetupRequested", false);
         String stringExtra2 = intent.getStringExtra("deviceId");
-        if (stringExtra2 == null && flcw.w()) {
+        if (stringExtra2 == null && fnuf.w()) {
             q.m("No deviceId was provided in the Intent to PhoneHubFeatureSetupChimeraActivity", new Object[0]);
             finish();
             return;
         }
         this.j = stringExtra2;
-        this.n = acyw.a(this, this, new acyv() { // from class: acxo
-            @Override // defpackage.acyv
+        this.n = aeyw.a(this, this, new aeyv() { // from class: aexo
+            @Override // defpackage.aeyv
             public final void a(boolean z) {
                 PhoneHubFeatureSetupChimeraActivity.this.k(z);
             }
         });
-        this.o = new acqe();
+        this.o = new aeqe();
         findViewById(R.id.setup_card).setOnClickListener(null);
-        findViewById(R.id.background).setOnClickListener(new View.OnClickListener() { // from class: acxp
+        findViewById(R.id.background).setOnClickListener(new View.OnClickListener() { // from class: aexp
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 PhoneHubFeatureSetupChimeraActivity.this.finish();
@@ -126,15 +126,15 @@ public final class PhoneHubFeatureSetupChimeraActivity extends qet {
             return;
         }
         if (this.s) {
-            this.k = adas.RESULT_IN_PROGRESS;
+            this.k = afas.RESULT_IN_PROGRESS;
             bp bpVar = new bp(getSupportFragmentManager());
-            bpVar.u(R.id.setup_card, new acxt(), "CameraRollSetupFragment");
+            bpVar.u(R.id.setup_card, new aext(), "CameraRollSetupFragment");
             bpVar.j = FragmentTransaction.TRANSIT_FRAGMENT_OPEN;
             bpVar.a();
             return;
         }
         if (this.t) {
-            this.l = adas.RESULT_IN_PROGRESS;
+            this.l = afas.RESULT_IN_PROGRESS;
             l();
         } else {
             q.m("No feature was requested to be set up.", new Object[0]);
@@ -142,21 +142,21 @@ public final class PhoneHubFeatureSetupChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
-        if (flcw.w()) {
-            adas adasVar = this.k;
-            adas adasVar2 = adas.RESULT_IN_PROGRESS;
-            if (adasVar == adasVar2) {
-                this.k = adas.RESULT_ERROR_ACTION_CANCELED;
+        if (fnuf.w()) {
+            afas afasVar = this.k;
+            afas afasVar2 = afas.RESULT_IN_PROGRESS;
+            if (afasVar == afasVar2) {
+                this.k = afas.RESULT_ERROR_ACTION_CANCELED;
                 this.m = true;
             }
-            if ((this.t && this.l == adas.RESULT_NOT_ATTEMPTED) || this.l == adasVar2) {
+            if ((this.t && this.l == afas.RESULT_NOT_ATTEMPTED) || this.l == afasVar2) {
                 this.m = true;
-                this.l = adas.RESULT_ERROR_ACTION_CANCELED;
+                this.l = afas.RESULT_ERROR_ACTION_CANCELED;
             }
         }
-        if (flcw.w()) {
+        if (fnuf.w()) {
             Context applicationContext = getApplicationContext();
             String str = this.r;
             int a = this.k.a();

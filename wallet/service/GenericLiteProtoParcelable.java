@@ -3,28 +3,28 @@ package com.google.android.gms.wallet.service;
 import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.efdk;
-import defpackage.feeg;
-import defpackage.feen;
+import defpackage.ehqn;
+import defpackage.fgsz;
+import defpackage.fgtg;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public abstract class GenericLiteProtoParcelable implements Parcelable {
     public final Account a;
-    public feeg b;
+    public fgsz b;
     public List c;
-    private final feen d;
+    private final fgtg d;
     private byte[] e;
 
-    public GenericLiteProtoParcelable(Account account, feen feenVar, feeg feegVar) {
-        this(account, feenVar, feegVar, (List) null);
+    public GenericLiteProtoParcelable(Account account, fgtg fgtgVar, fgsz fgszVar) {
+        this(account, fgtgVar, fgszVar, (List) null);
     }
 
-    public final feeg a() {
+    public final fgsz a() {
         if (this.b == null) {
-            this.b = efdk.c(this.e, this.d);
+            this.b = ehqn.c(this.e, this.d);
         }
         return this.b;
     }
@@ -48,22 +48,22 @@ public abstract class GenericLiteProtoParcelable implements Parcelable {
         parcel.writeStringList(this.c);
     }
 
-    public GenericLiteProtoParcelable(Account account, feen feenVar, feeg feegVar, List list) {
+    public GenericLiteProtoParcelable(Account account, fgtg fgtgVar, fgsz fgszVar, List list) {
         this.a = account;
-        this.d = feenVar;
-        this.b = feegVar;
+        this.d = fgtgVar;
+        this.b = fgszVar;
         if (list != null) {
             this.c = new ArrayList(list);
         }
     }
 
-    public GenericLiteProtoParcelable(Account account, feen feenVar, byte[] bArr) {
-        this(account, feenVar, bArr, (List) null);
+    public GenericLiteProtoParcelable(Account account, fgtg fgtgVar, byte[] bArr) {
+        this(account, fgtgVar, bArr, (List) null);
     }
 
-    public GenericLiteProtoParcelable(Account account, feen feenVar, byte[] bArr, List list) {
+    public GenericLiteProtoParcelable(Account account, fgtg fgtgVar, byte[] bArr, List list) {
         this.a = account;
-        this.d = feenVar;
+        this.d = fgtgVar;
         this.e = (byte[]) bArr.clone();
         if (list != null) {
             this.c = new ArrayList(list);

@@ -2,30 +2,30 @@ package com.google.android.gms.nearby.sharing.main;
 
 import android.content.Intent;
 import android.os.Bundle;
-import defpackage.cncp;
-import defpackage.cncs;
-import defpackage.fqjv;
-import defpackage.fvbo;
-import defpackage.ivf;
-import defpackage.qeq;
+import defpackage.cpkx;
+import defpackage.cpla;
+import defpackage.ftdn;
+import defpackage.fxxm;
+import defpackage.iwv;
+import defpackage.rxu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class MainChimeraActivity extends cncs {
-    @Override // defpackage.cncs, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+public final class MainChimeraActivity extends cpla {
+    @Override // defpackage.cpla, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (!fqjv.c()) {
+        if (!ftdn.c()) {
             finish();
         } else {
-            ivf.a(getWindow(), false);
-            qeq.a(this, cncp.b);
+            iwv.a(getWindow(), false);
+            rxu.a(this, cpkx.b);
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
         setIntent(intent);
         super.onNewIntent(intent);
     }

@@ -8,9 +8,9 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
-import defpackage.rpq;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class RoundedFrameLayout extends FrameLayout {
     private Path a;
@@ -25,7 +25,7 @@ public class RoundedFrameLayout extends FrameLayout {
         if (attributeSet == null) {
             return 0;
         }
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.n);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.n);
         int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(0, 0);
         obtainStyledAttributes.recycle();
         return dimensionPixelSize;

@@ -3,30 +3,30 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bbji;
-import defpackage.bbuj;
-import defpackage.bbuk;
-import defpackage.bbul;
-import defpackage.eihn;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bdnf;
+import defpackage.bdya;
+import defpackage.bdyb;
+import defpackage.bdyc;
+import defpackage.ekus;
 import java.util.Arrays;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class TokenBinding extends AbstractSafeParcelable implements bbji {
-    public static final Parcelable.Creator CREATOR = new bbul();
+public class TokenBinding extends AbstractSafeParcelable implements bdnf {
+    public static final Parcelable.Creator CREATOR = new bdyc();
     public final TokenBindingStatus a;
     public final String b;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public enum TokenBindingStatus implements Parcelable {
         PRESENT("present"),
         SUPPORTED("supported"),
         NOT_SUPPORTED("not-supported");
 
-        public static final Parcelable.Creator CREATOR = new bbuj();
+        public static final Parcelable.Creator CREATOR = new bdya();
         public final String d;
 
         TokenBindingStatus(String str) {
@@ -39,7 +39,7 @@ public class TokenBinding extends AbstractSafeParcelable implements bbji {
                     return tokenBindingStatus;
                 }
             }
-            throw new bbuk(str);
+            throw new bdyb(str);
         }
 
         @Override // android.os.Parcelable
@@ -64,16 +64,16 @@ public class TokenBinding extends AbstractSafeParcelable implements bbji {
     }
 
     public TokenBinding(String str, String str2) {
-        arwm.s(str);
+        atzb.s(str);
         try {
             this.a = TokenBindingStatus.a(str);
             this.b = str2;
-        } catch (bbuk e) {
+        } catch (bdyb e) {
             throw new IllegalArgumentException(e);
         }
     }
 
-    @Override // defpackage.bbji
+    @Override // defpackage.bdnf
     public final JSONObject a() {
         throw null;
     }
@@ -83,7 +83,7 @@ public class TokenBinding extends AbstractSafeParcelable implements bbji {
             return false;
         }
         TokenBinding tokenBinding = (TokenBinding) obj;
-        return eihn.a(this.a, tokenBinding.a) && eihn.a(this.b, tokenBinding.b);
+        return ekus.a(this.a, tokenBinding.a) && ekus.a(this.b, tokenBinding.b);
     }
 
     public final int hashCode() {
@@ -93,9 +93,9 @@ public class TokenBinding extends AbstractSafeParcelable implements bbji {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a.d;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.c(parcel, a);
     }
 }

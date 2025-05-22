@@ -3,15 +3,15 @@ package com.google.android.gms.fitness.data;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgdj;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bihz;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DeletionDataPointChange extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgdj();
+    public static final Parcelable.Creator CREATOR = new bihz();
     public final long a;
     public final DataPoint b;
 
@@ -28,7 +28,7 @@ public class DeletionDataPointChange extends AbstractSafeParcelable {
             return false;
         }
         DeletionDataPointChange deletionDataPointChange = (DeletionDataPointChange) obj;
-        return this.a == deletionDataPointChange.a && arwb.b(this.b, deletionDataPointChange.b);
+        return this.a == deletionDataPointChange.a && atyq.b(this.b, deletionDataPointChange.b);
     }
 
     public final int hashCode() {
@@ -38,9 +38,9 @@ public class DeletionDataPointChange extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.a;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, j);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, j);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 }

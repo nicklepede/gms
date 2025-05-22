@@ -2,314 +2,314 @@ package com.google.android.gms.findmydevice.spot.service;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bebo;
-import defpackage.bebp;
-import defpackage.bfdn;
-import defpackage.bfdo;
-import defpackage.byln;
-import defpackage.dwvc;
-import defpackage.dwwv;
-import defpackage.egnc;
-import defpackage.ejhf;
-import defpackage.enqb;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.ensw;
-import defpackage.fobb;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bgda;
+import defpackage.bgdb;
+import defpackage.bhfd;
+import defpackage.bhfe;
+import defpackage.cauf;
+import defpackage.dzhc;
+import defpackage.dziv;
+import defpackage.ejaf;
+import defpackage.eluo;
+import defpackage.eqdu;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.eqgp;
+import defpackage.fqsv;
 import j$.util.Objects;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class FindMyDeviceModuleSettingsLoggerService extends GmsTaskBoundService {
-    private static final asot a = asot.b("FMDSettingLoggerService", asej.FIND_MY_DEVICE_SPOT);
-    private final bfdo b;
+    private static final ausn a = ausn.b("FMDSettingLoggerService", auid.FIND_MY_DEVICE_SPOT);
+    private final bhfe b;
 
     public FindMyDeviceModuleSettingsLoggerService() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (!fobb.e()) {
+    public final int a(cauf caufVar) {
+        if (!fqsv.e()) {
             return 2;
         }
-        ((ejhf) ((ejhf) a.h()).ah((char) 4473)).x("Starting periodic FMD settings log.");
-        final bfdo bfdoVar = this.b;
-        if (fobb.e()) {
-            final dwwv dwwvVar = bfdoVar.d;
-            Objects.requireNonNull(dwwvVar);
-            enqb enqbVar = new enqb() { // from class: bfdk
-                @Override // defpackage.enqb
-                public final enss a() {
-                    return dwwv.this.f();
+        ((eluo) ((eluo) a.h()).ai((char) 4480)).x("Starting periodic FMD settings log.");
+        final bhfe bhfeVar = this.b;
+        if (fqsv.e()) {
+            final dziv dzivVar = bhfeVar.d;
+            Objects.requireNonNull(dzivVar);
+            eqdu eqduVar = new eqdu() { // from class: bhfa
+                @Override // defpackage.eqdu
+                public final eqgl a() {
+                    return dziv.this.f();
                 }
             };
-            ensw enswVar = bfdoVar.f;
-            final enss i = egnc.i(enqbVar, enswVar);
-            final dwvc dwvcVar = bfdoVar.e;
-            Objects.requireNonNull(dwvcVar);
-            final enss i2 = egnc.i(new enqb() { // from class: bfdl
-                @Override // defpackage.enqb
-                public final enss a() {
-                    return dwvc.this.l();
+            eqgp eqgpVar = bhfeVar.f;
+            final eqgl i = ejaf.i(eqduVar, eqgpVar);
+            final dzhc dzhcVar = bhfeVar.e;
+            Objects.requireNonNull(dzhcVar);
+            final eqgl i2 = ejaf.i(new eqdu() { // from class: bhfb
+                @Override // defpackage.eqdu
+                public final eqgl a() {
+                    return dzhc.this.l();
                 }
-            }, enswVar);
-            ensj.t(egnc.d(i, i2).a(new Callable() { // from class: bfdm
+            }, eqgpVar);
+            eqgc.t(ejaf.d(i, i2).a(new Callable() { // from class: bhfc
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
                     int i3;
-                    dwyw dwywVar = (dwyw) ensj.r(i);
-                    fecj v = ffec.a.v();
-                    boolean z = dwywVar.e;
+                    dzkw dzkwVar = (dzkw) eqgc.r(i);
+                    fgrc v = fhta.a.v();
+                    boolean z = dzkwVar.e;
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ffec ffecVar = (ffec) v.b;
-                    ffecVar.b |= 1;
-                    ffecVar.e = z;
-                    int i4 = dwywVar.c;
+                    fhta fhtaVar = (fhta) v.b;
+                    fhtaVar.b |= 1;
+                    fhtaVar.e = z;
+                    int i4 = dzkwVar.c;
                     if (i4 == 22) {
-                        dwyl dwylVar = (dwyl) dwywVar.d;
-                        if (dwylVar.e) {
-                            if (dwylVar.c != 2 || (i3 = dwyg.b(((Integer) dwylVar.d).intValue())) == 0) {
+                        dzkl dzklVar = (dzkl) dzkwVar.d;
+                        if (dzklVar.e) {
+                            if (dzklVar.c != 2 || (i3 = dzkg.a(((Integer) dzklVar.d).intValue())) == 0) {
                                 i3 = 1;
                             }
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ffec ffecVar2 = (ffec) v.b;
-                            ffecVar2.d = Integer.valueOf(i3 - 1);
-                            ffecVar2.c = 2;
+                            fhta fhtaVar2 = (fhta) v.b;
+                            fhtaVar2.d = Integer.valueOf(i3 - 1);
+                            fhtaVar2.c = 2;
                         }
                     } else {
-                        int a2 = dwyd.a((i4 == 31 ? (dwye) dwywVar.d : dwye.a).c);
+                        int a2 = dzkd.a((i4 == 31 ? (dzke) dzkwVar.d : dzke.a).c);
                         if (a2 == 0) {
                             a2 = 1;
                         }
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ffec ffecVar3 = (ffec) v.b;
-                        ffecVar3.d = Integer.valueOf(a2 - 1);
-                        ffecVar3.c = 3;
+                        fhta fhtaVar3 = (fhta) v.b;
+                        fhtaVar3.d = Integer.valueOf(a2 - 1);
+                        fhtaVar3.c = 3;
                     }
-                    euhg b = euhg.b(dwywVar.g);
+                    ewwz b = ewwz.b(dzkwVar.g);
                     if (b == null) {
-                        b = euhg.FMDN_DISABLED_DEFAULT;
+                        b = ewwz.FMDN_DISABLED_DEFAULT;
                     }
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ffec ffecVar4 = (ffec) v.b;
-                    ffecVar4.g = b.a();
-                    ffecVar4.b |= 4;
-                    if ((dwywVar.b & 16) != 0) {
-                        fefi fefiVar = dwywVar.i;
-                        if (fefiVar == null) {
-                            fefiVar = fefi.a;
+                    fhta fhtaVar4 = (fhta) v.b;
+                    fhtaVar4.g = b.a();
+                    fhtaVar4.b |= 4;
+                    if ((dzkwVar.b & 16) != 0) {
+                        fgub fgubVar = dzkwVar.i;
+                        if (fgubVar == null) {
+                            fgubVar = fgub.a;
                         }
-                        fefi a3 = bfdo.a(fefiVar);
+                        fgub a3 = bhfe.a(fgubVar);
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ffec ffecVar5 = (ffec) v.b;
+                        fhta fhtaVar5 = (fhta) v.b;
                         a3.getClass();
-                        ffecVar5.h = a3;
-                        ffecVar5.b |= 8;
+                        fhtaVar5.h = a3;
+                        fhtaVar5.b |= 8;
                     }
-                    if ((dwywVar.b & 8) != 0) {
-                        fefi fefiVar2 = dwywVar.h;
-                        if (fefiVar2 == null) {
-                            fefiVar2 = fefi.a;
+                    if ((dzkwVar.b & 8) != 0) {
+                        fgub fgubVar2 = dzkwVar.h;
+                        if (fgubVar2 == null) {
+                            fgubVar2 = fgub.a;
                         }
-                        fefi a4 = bfdo.a(fefiVar2);
+                        fgub a4 = bhfe.a(fgubVar2);
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ffec ffecVar6 = (ffec) v.b;
+                        fhta fhtaVar6 = (fhta) v.b;
                         a4.getClass();
-                        ffecVar6.i = a4;
-                        ffecVar6.b |= 16;
+                        fhtaVar6.i = a4;
+                        fhtaVar6.b |= 16;
                     }
-                    boolean z2 = (dwywVar.b & 32) != 0;
+                    boolean z2 = (dzkwVar.b & 32) != 0;
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ffec ffecVar7 = (ffec) v.b;
-                    ffecVar7.b |= 32;
-                    ffecVar7.j = z2;
-                    if ((dwywVar.b & 64) != 0) {
-                        fefi fefiVar3 = dwywVar.k;
-                        if (fefiVar3 == null) {
-                            fefiVar3 = fefi.a;
+                    fhta fhtaVar7 = (fhta) v.b;
+                    fhtaVar7.b |= 32;
+                    fhtaVar7.j = z2;
+                    if ((dzkwVar.b & 64) != 0) {
+                        fgub fgubVar3 = dzkwVar.k;
+                        if (fgubVar3 == null) {
+                            fgubVar3 = fgub.a;
                         }
-                        fefi a5 = bfdo.a(fefiVar3);
+                        fgub a5 = bhfe.a(fgubVar3);
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ffec ffecVar8 = (ffec) v.b;
+                        fhta fhtaVar8 = (fhta) v.b;
                         a5.getClass();
-                        ffecVar8.k = a5;
-                        ffecVar8.b |= 64;
+                        fhtaVar8.k = a5;
+                        fhtaVar8.b |= 64;
                     }
-                    dwxy b2 = dwxy.b(dwywVar.r);
+                    dzjy b2 = dzjy.b(dzkwVar.r);
                     if (b2 == null) {
-                        b2 = dwxy.DEFAULT_FMD_DISABLED;
+                        b2 = dzjy.DEFAULT_FMD_DISABLED;
                     }
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ffec ffecVar9 = (ffec) v.b;
-                    ffecVar9.l = b2.aa;
-                    ffecVar9.b |= 128;
-                    dwxh dwxhVar = dwywVar.t;
-                    if (dwxhVar == null) {
-                        dwxhVar = dwxh.a;
+                    fhta fhtaVar9 = (fhta) v.b;
+                    fhtaVar9.l = b2.aa;
+                    fhtaVar9.b |= 128;
+                    dzjh dzjhVar = dzkwVar.t;
+                    if (dzjhVar == null) {
+                        dzjhVar = dzjh.a;
                     }
-                    if ((dwxhVar.b & 1) != 0) {
-                        fecj v2 = ffeb.a.v();
-                        dwxh dwxhVar2 = dwywVar.t;
-                        if (dwxhVar2 == null) {
-                            dwxhVar2 = dwxh.a;
+                    if ((dzjhVar.b & 1) != 0) {
+                        fgrc v2 = fhsz.a.v();
+                        dzjh dzjhVar2 = dzkwVar.t;
+                        if (dzjhVar2 == null) {
+                            dzjhVar2 = dzjh.a;
                         }
-                        fefi fefiVar4 = dwxhVar2.c;
-                        if (fefiVar4 == null) {
-                            fefiVar4 = fefi.a;
+                        fgub fgubVar4 = dzjhVar2.c;
+                        if (fgubVar4 == null) {
+                            fgubVar4 = fgub.a;
                         }
-                        fefi a6 = bfdo.a(fefiVar4);
+                        fgub a6 = bhfe.a(fgubVar4);
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        fecp fecpVar = v2.b;
-                        ffeb ffebVar = (ffeb) fecpVar;
+                        fgri fgriVar = v2.b;
+                        fhsz fhszVar = (fhsz) fgriVar;
                         a6.getClass();
-                        ffebVar.c = a6;
-                        ffebVar.b |= 1;
-                        dwxh dwxhVar3 = dwywVar.t;
-                        if (dwxhVar3 == null) {
-                            dwxhVar3 = dwxh.a;
+                        fhszVar.c = a6;
+                        fhszVar.b |= 1;
+                        dzjh dzjhVar3 = dzkwVar.t;
+                        if (dzjhVar3 == null) {
+                            dzjhVar3 = dzjh.a;
                         }
-                        boolean z3 = dwxhVar3.d;
-                        if (!fecpVar.L()) {
+                        boolean z3 = dzjhVar3.d;
+                        if (!fgriVar.L()) {
                             v2.U();
                         }
-                        ffeb ffebVar2 = (ffeb) v2.b;
-                        ffebVar2.b |= 2;
-                        ffebVar2.d = z3;
+                        fhsz fhszVar2 = (fhsz) v2.b;
+                        fhszVar2.b |= 2;
+                        fhszVar2.d = z3;
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ffec ffecVar10 = (ffec) v.b;
-                        ffeb ffebVar3 = (ffeb) v2.Q();
-                        ffebVar3.getClass();
-                        ffecVar10.m = ffebVar3;
-                        ffecVar10.b |= 256;
+                        fhta fhtaVar10 = (fhta) v.b;
+                        fhsz fhszVar3 = (fhsz) v2.Q();
+                        fhszVar3.getClass();
+                        fhtaVar10.m = fhszVar3;
+                        fhtaVar10.b |= 256;
                     }
-                    if ((dwywVar.b & 2048) != 0) {
-                        fefi fefiVar5 = dwywVar.s;
-                        if (fefiVar5 == null) {
-                            fefiVar5 = fefi.a;
+                    if ((dzkwVar.b & 2048) != 0) {
+                        fgub fgubVar5 = dzkwVar.s;
+                        if (fgubVar5 == null) {
+                            fgubVar5 = fgub.a;
                         }
-                        fefi a7 = bfdo.a(fefiVar5);
+                        fgub a7 = bhfe.a(fgubVar5);
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ffec ffecVar11 = (ffec) v.b;
+                        fhta fhtaVar11 = (fhta) v.b;
                         a7.getClass();
-                        ffecVar11.n = a7;
-                        ffecVar11.b |= 512;
+                        fhtaVar11.n = a7;
+                        fhtaVar11.b |= 512;
                     }
-                    boolean a8 = bfiy.a(bfdo.this.b);
+                    boolean a8 = bhko.a(bhfe.this.b);
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ffec ffecVar12 = (ffec) v.b;
-                    ffecVar12.b = 2 | ffecVar12.b;
-                    ffecVar12.f = a8;
-                    int size = dwywVar.l.size();
+                    fhta fhtaVar12 = (fhta) v.b;
+                    fhtaVar12.b = 2 | fhtaVar12.b;
+                    fhtaVar12.f = a8;
+                    int size = dzkwVar.l.size();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    enss enssVar = i2;
-                    ffec ffecVar13 = (ffec) v.b;
-                    ffecVar13.b |= 1024;
-                    ffecVar13.o = size;
-                    int intValue = ((Integer) ensj.r(enssVar)).intValue();
+                    eqgl eqglVar = i2;
+                    fhta fhtaVar13 = (fhta) v.b;
+                    fhtaVar13.b |= 1024;
+                    fhtaVar13.o = size;
+                    int intValue = ((Integer) eqgc.r(eqglVar)).intValue();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ffec ffecVar14 = (ffec) v.b;
-                    ffecVar14.b |= 2048;
-                    ffecVar14.p = intValue;
-                    if ((dwywVar.b & 8192) != 0) {
-                        dwyv dwyvVar = dwywVar.u;
-                        if (dwyvVar == null) {
-                            dwyvVar = dwyv.a;
+                    fhta fhtaVar14 = (fhta) v.b;
+                    fhtaVar14.b |= 2048;
+                    fhtaVar14.p = intValue;
+                    if ((dzkwVar.b & 8192) != 0) {
+                        dzkv dzkvVar = dzkwVar.u;
+                        if (dzkvVar == null) {
+                            dzkvVar = dzkv.a;
                         }
-                        int a9 = dwyt.a(dwyvVar.d);
+                        int a9 = dzkt.a(dzkvVar.d);
                         int i5 = a9 != 0 ? a9 : 1;
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ffec ffecVar15 = (ffec) v.b;
-                        ffecVar15.q = i5 - 1;
-                        ffecVar15.b |= 4096;
-                        int size2 = dwyvVar.e.size();
+                        fhta fhtaVar15 = (fhta) v.b;
+                        fhtaVar15.q = i5 - 1;
+                        fhtaVar15.b |= 4096;
+                        int size2 = dzkvVar.e.size();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fecp fecpVar2 = v.b;
-                        ffec ffecVar16 = (ffec) fecpVar2;
-                        ffecVar16.b |= 8192;
-                        ffecVar16.r = size2;
-                        if ((dwyvVar.b & 4) != 0) {
-                            int i6 = dwyvVar.f;
-                            if (!fecpVar2.L()) {
+                        fgri fgriVar2 = v.b;
+                        fhta fhtaVar16 = (fhta) fgriVar2;
+                        fhtaVar16.b |= 8192;
+                        fhtaVar16.r = size2;
+                        if ((dzkvVar.b & 4) != 0) {
+                            int i6 = dzkvVar.f;
+                            if (!fgriVar2.L()) {
                                 v.U();
                             }
-                            ffec ffecVar17 = (ffec) v.b;
-                            ffecVar17.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES;
-                            ffecVar17.s = i6;
+                            fhta fhtaVar17 = (fhta) v.b;
+                            fhtaVar17.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES;
+                            fhtaVar17.s = i6;
                         }
-                        int size3 = dwyvVar.g.size();
+                        int size3 = dzkvVar.g.size();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fecp fecpVar3 = v.b;
-                        ffec ffecVar18 = (ffec) fecpVar3;
-                        ffecVar18.b |= 32768;
-                        ffecVar18.t = size3;
-                        if ((dwyvVar.b & 8) != 0) {
-                            String str = dwyvVar.i;
-                            if (!fecpVar3.L()) {
+                        fgri fgriVar3 = v.b;
+                        fhta fhtaVar18 = (fhta) fgriVar3;
+                        fhtaVar18.b |= 32768;
+                        fhtaVar18.t = size3;
+                        if ((dzkvVar.b & 8) != 0) {
+                            String str = dzkvVar.i;
+                            if (!fgriVar3.L()) {
                                 v.U();
                             }
-                            ffec ffecVar19 = (ffec) v.b;
+                            fhta fhtaVar19 = (fhta) v.b;
                             str.getClass();
-                            ffecVar19.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_MULTI_LINE;
-                            ffecVar19.u = str;
+                            fhtaVar19.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_MULTI_LINE;
+                            fhtaVar19.u = str;
                         }
-                        if ((dwyvVar.b & 16) != 0) {
-                            boolean z4 = dwyvVar.j;
+                        if ((dzkvVar.b & 16) != 0) {
+                            boolean z4 = dzkvVar.j;
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ffec ffecVar20 = (ffec) v.b;
-                            ffecVar20.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_IME_MULTI_LINE;
-                            ffecVar20.v = z4;
+                            fhta fhtaVar20 = (fhta) v.b;
+                            fhtaVar20.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_IME_MULTI_LINE;
+                            fhtaVar20.v = z4;
                         }
                     }
-                    return (ffec) v.Q();
+                    return (fhta) v.Q();
                 }
-            }, enswVar), new bfdn(bfdoVar), enswVar);
+            }, eqgpVar), new bhfd(bhfeVar), eqgpVar);
         }
         return 0;
     }
 
-    public FindMyDeviceModuleSettingsLoggerService(bebp bebpVar) {
-        this.b = bebpVar.y();
+    public FindMyDeviceModuleSettingsLoggerService(bgdb bgdbVar) {
+        this.b = bgdbVar.y();
     }
 }

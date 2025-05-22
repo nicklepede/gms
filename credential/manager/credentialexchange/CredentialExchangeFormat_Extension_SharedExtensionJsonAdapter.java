@@ -1,59 +1,59 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.fipo;
-import defpackage.fipt;
-import defpackage.fipu;
-import defpackage.fipw;
-import defpackage.fiqb;
-import defpackage.fiqq;
-import defpackage.firg;
-import defpackage.firp;
-import defpackage.fuwy;
-import defpackage.fvbo;
+import defpackage.flfl;
+import defpackage.flfq;
+import defpackage.flfr;
+import defpackage.flft;
+import defpackage.flfy;
+import defpackage.flgn;
+import defpackage.flhd;
+import defpackage.flhm;
+import defpackage.fxsw;
+import defpackage.fxxm;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public final class CredentialExchangeFormat_Extension_SharedExtensionJsonAdapter extends fipo {
-    private final fipu a;
-    private final fipo b;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public final class CredentialExchangeFormat_Extension_SharedExtensionJsonAdapter extends flfl {
+    private final flfr a;
+    private final flfl b;
 
-    public CredentialExchangeFormat_Extension_SharedExtensionJsonAdapter(fiqq fiqqVar) {
-        fvbo.f(fiqqVar, "moshi");
-        this.a = fipt.a("accessors");
-        this.b = fiqqVar.d(firg.b(List.class, CredentialExchangeFormat$SharingAccessor.class), fuwy.a, "accessors");
+    public CredentialExchangeFormat_Extension_SharedExtensionJsonAdapter(flgn flgnVar) {
+        fxxm.f(flgnVar, "moshi");
+        this.a = flfq.a("accessors");
+        this.b = flgnVar.d(flhd.b(List.class, CredentialExchangeFormat$SharingAccessor.class), fxsw.a, "accessors");
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ Object a(fipw fipwVar) {
-        fipwVar.i();
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ Object a(flft flftVar) {
+        flftVar.i();
         List list = null;
-        while (fipwVar.o()) {
-            int c = fipwVar.c(this.a);
+        while (flftVar.o()) {
+            int c = flftVar.c(this.a);
             if (c == -1) {
-                fipwVar.m();
-                fipwVar.n();
-            } else if (c == 0 && (list = (List) this.b.a(fipwVar)) == null) {
-                throw firp.c("accessors", "accessors", fipwVar);
+                flftVar.m();
+                flftVar.n();
+            } else if (c == 0 && (list = (List) this.b.a(flftVar)) == null) {
+                throw flhm.c("accessors", "accessors", flftVar);
             }
         }
-        fipwVar.k();
+        flftVar.k();
         if (list != null) {
             return new CredentialExchangeFormat$Extension$SharedExtension(list);
         }
-        throw firp.b("accessors", "accessors", fipwVar);
+        throw flhm.b("accessors", "accessors", flftVar);
     }
 
-    @Override // defpackage.fipo
-    public final /* bridge */ /* synthetic */ void b(fiqb fiqbVar, Object obj) {
+    @Override // defpackage.flfl
+    public final /* bridge */ /* synthetic */ void b(flfy flfyVar, Object obj) {
         CredentialExchangeFormat$Extension$SharedExtension credentialExchangeFormat$Extension$SharedExtension = (CredentialExchangeFormat$Extension$SharedExtension) obj;
         if (credentialExchangeFormat$Extension$SharedExtension == null) {
             throw new NullPointerException("value was null! Wrap in .nullSafe() to write nullable values.");
         }
-        fiqbVar.d();
-        fiqbVar.j("accessors");
-        this.b.b(fiqbVar, credentialExchangeFormat$Extension$SharedExtension.a);
-        fiqbVar.f();
+        flfyVar.d();
+        flfyVar.j("accessors");
+        this.b.b(flfyVar, credentialExchangeFormat$Extension$SharedExtension.a);
+        flfyVar.f();
     }
 
     public final String toString() {

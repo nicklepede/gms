@@ -11,16 +11,16 @@ import android.provider.Settings;
 import android.util.Log;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.wearable.service.EmulatorBroadcastReceiver;
-import defpackage.arwm;
-import defpackage.asng;
-import defpackage.asrb;
-import defpackage.dkbf;
-import defpackage.dlna;
-import defpackage.dmdj;
-import defpackage.iln;
+import defpackage.atzb;
+import defpackage.aura;
+import defpackage.auuv;
+import defpackage.dmmy;
+import defpackage.dnyr;
+import defpackage.doov;
+import defpackage.ind;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class EmulatorBroadcastReceiver extends TracingBroadcastReceiver {
     public ContentObserver a;
@@ -51,7 +51,7 @@ public final class EmulatorBroadcastReceiver extends TracingBroadcastReceiver {
     }
 
     private final boolean g() {
-        return (Objects.equals(Build.TYPE, "user") && !asng.P() && Settings.Global.getInt(this.b.getContentResolver(), "development_settings_enabled", 0) == 0) ? false : true;
+        return (Objects.equals(Build.TYPE, "user") && !aura.P() && Settings.Global.getInt(this.b.getContentResolver(), "development_settings_enabled", 0) == 0) ? false : true;
     }
 
     public final void b() {
@@ -65,16 +65,16 @@ public final class EmulatorBroadcastReceiver extends TracingBroadcastReceiver {
         if (Log.isLoggable("wearable.EmuReceiver", 3)) {
             Log.d("wearable.EmuReceiver", "registerReceiver");
         }
-        arwm.s(this.b);
-        iln.b(this.b, this, new IntentFilter("com.google.android.gms.wearable.EMULATOR"), 2);
+        atzb.s(this.b);
+        ind.b(this.b, this, new IntentFilter("com.google.android.gms.wearable.EMULATOR"), 2);
         this.c = true;
     }
 
     public final /* synthetic */ void c(BroadcastReceiver.PendingResult pendingResult) {
         try {
-            dlna dlnaVar = dmdj.f().s;
-            if (dlnaVar != null) {
-                dlnaVar.a();
+            dnyr dnyrVar = doov.f().s;
+            if (dnyrVar != null) {
+                dnyrVar.a();
             }
             f(1, "Emulator connection refresh succeeded.", null, pendingResult);
         } catch (IllegalStateException | IllegalThreadStateException | SecurityException e) {
@@ -87,14 +87,14 @@ public final class EmulatorBroadcastReceiver extends TracingBroadcastReceiver {
             if (Log.isLoggable("wearable.EmuReceiver", 3)) {
                 Log.d("wearable.EmuReceiver", "unregisterReceiver");
             }
-            arwm.s(this.b);
+            atzb.s(this.b);
             this.b.unregisterReceiver(this);
             this.c = false;
         }
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         char c;
         if (Objects.equals(intent.getAction(), "com.google.android.gms.wearable.EMULATOR")) {
             if (Log.isLoggable("wearable.EmuReceiver", 3)) {
@@ -136,12 +136,12 @@ public final class EmulatorBroadcastReceiver extends TracingBroadcastReceiver {
                 return;
             }
             if (c == 1) {
-                if (dmdj.f() == null) {
+                if (doov.f() == null) {
                     e(5, "WearableService not initialized yet.");
                     return;
                 } else {
                     final BroadcastReceiver.PendingResult goAsync = goAsync();
-                    asrb.a(new Runnable() { // from class: dmav
+                    auuv.a(new Runnable() { // from class: domh
                         @Override // java.lang.Runnable
                         public final void run() {
                             EmulatorBroadcastReceiver.this.c(goAsync);
@@ -154,17 +154,17 @@ public final class EmulatorBroadcastReceiver extends TracingBroadcastReceiver {
                 e(3, "Unrecognized operation ".concat(string));
                 return;
             }
-            if (dmdj.f() == null || dmdj.o() == null) {
+            if (doov.f() == null || doov.o() == null) {
                 e(5, "WearableService not initialized yet.");
                 return;
             }
             try {
-                dkbf[] v = dmdj.f().v("");
+                dmmy[] v = doov.f().v("");
                 StringBuilder sb = new StringBuilder();
-                sb.append(String.format("Local:[%s]\n", dmdj.o().a().a));
-                for (dkbf dkbfVar : v) {
-                    if (dkbfVar.d == 2) {
-                        sb.append(String.format("Peer:[%s,%b,%b]\n", dkbfVar.j, Boolean.valueOf(dkbfVar.g), Boolean.valueOf(dkbfVar.f)));
+                sb.append(String.format("Local:[%s]\n", doov.o().a().a));
+                for (dmmy dmmyVar : v) {
+                    if (dmmyVar.d == 2) {
+                        sb.append(String.format("Peer:[%s,%b,%b]\n", dmmyVar.j, Boolean.valueOf(dmmyVar.g), Boolean.valueOf(dmmyVar.f)));
                     }
                 }
                 e(1, sb.toString());

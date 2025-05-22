@@ -3,7 +3,7 @@ package com.google.android.gms.auth.proximity.exo;
 import android.os.UserHandle;
 import com.google.protobuf.contrib.android.ProtoParsers$ParcelableProto;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* renamed from: com.google.android.gms.auth.proximity.exo.$AutoValue_RecentAppsManager_AppData, reason: invalid class name */
 /* loaded from: classes2.dex */
 abstract class C$AutoValue_RecentAppsManager_AppData extends RecentAppsManager$AppData {

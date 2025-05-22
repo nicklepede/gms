@@ -4,18 +4,18 @@ import android.accounts.Account;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aans;
-import defpackage.aclv;
-import defpackage.aclw;
-import defpackage.aclz;
-import defpackage.arxo;
-import defpackage.asnd;
-import defpackage.flcg;
+import defpackage.acns;
+import defpackage.aelv;
+import defpackage.aelw;
+import defpackage.aelz;
+import defpackage.auad;
+import defpackage.auqx;
+import defpackage.fntp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CryptauthDevicesSyncedIntentOperation extends IntentOperation {
-    private static final arxo a = new arxo("ProximityAuth", "CryptauthDevicesSyncedIntentOperation");
+    private static final auad a = new auad("ProximityAuth", "CryptauthDevicesSyncedIntentOperation");
 
     public CryptauthDevicesSyncedIntentOperation() {
     }
@@ -29,8 +29,8 @@ public class CryptauthDevicesSyncedIntentOperation extends IntentOperation {
                 a.m("No permit ID was found from intent.", new Object[0]);
             } else {
                 String substring = stringExtra.substring(34);
-                for (Account account2 : asnd.h(this, getPackageName())) {
-                    if (true == aans.a(account2.name).equals(substring)) {
+                for (Account account2 : auqx.h(this, getPackageName())) {
+                    if (true == acns.a(account2.name).equals(substring)) {
                         account = account2;
                     }
                 }
@@ -38,14 +38,14 @@ public class CryptauthDevicesSyncedIntentOperation extends IntentOperation {
                     a.m("Invalid account: %s", substring);
                 }
             }
-            if (flcg.h()) {
+            if (fntp.g()) {
                 CryptauthDeviceSyncGcmTaskService.f(getApplicationContext());
                 int intExtra = intent.getIntExtra("invocation_reason", 0);
-                if (!flcg.a.a().l() || intExtra != 4) {
+                if (!fntp.a.lK().k() || intExtra != 4) {
                     try {
-                        aclv.a(this).b(account, intExtra);
+                        aelv.a(this).b(account, intExtra);
                         return;
-                    } catch (aclw unused) {
+                    } catch (aelw unused) {
                         a.m("Failed to sync devices.", new Object[0]);
                         if (account != null) {
                             CryptauthDeviceSyncGcmTaskService.g(getApplicationContext(), account);
@@ -55,8 +55,8 @@ public class CryptauthDevicesSyncedIntentOperation extends IntentOperation {
                     }
                 }
             }
-            int i = aclz.a;
-            aclz.a(this, account);
+            int i = aelz.a;
+            aelz.a(this, account);
         }
     }
 

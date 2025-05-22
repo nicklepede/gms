@@ -8,11 +8,11 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fitness.data.Bucket;
 import com.google.android.gms.fitness.data.DataSource;
 import com.google.android.gms.fitness.data.DataType;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bghi;
-import defpackage.bgkm;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bily;
+import defpackage.bipc;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
@@ -20,10 +20,10 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DataReadRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgkm();
+    public static final Parcelable.Creator CREATOR = new bipc();
     public final List a;
     public final List b;
     public final long c;
@@ -38,10 +38,10 @@ public class DataReadRequest extends AbstractSafeParcelable {
     public final boolean l;
     public final List m;
     public final List n;
-    public final bghi o;
+    public final bily o;
 
     public DataReadRequest(List list, List list2, long j, long j2, List list3, List list4, int i, long j3, DataSource dataSource, int i2, boolean z, boolean z2, IBinder iBinder, List list5, List list6) {
-        bghi bghiVar;
+        bily bilyVar;
         this.a = list;
         this.b = list2;
         this.c = j;
@@ -55,17 +55,17 @@ public class DataReadRequest extends AbstractSafeParcelable {
         this.k = z;
         this.l = z2;
         if (iBinder == null) {
-            bghiVar = null;
+            bilyVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.IDataReadCallback");
-            bghiVar = queryLocalInterface instanceof bghi ? (bghi) queryLocalInterface : new bghi(iBinder);
+            bilyVar = queryLocalInterface instanceof bily ? (bily) queryLocalInterface : new bily(iBinder);
         }
-        this.o = bghiVar;
+        this.o = bilyVar;
         List list7 = list5 == null ? Collections.EMPTY_LIST : list5;
         this.m = list7;
         List list8 = list6 == null ? Collections.EMPTY_LIST : list6;
         this.n = list8;
-        arwm.c(list7.size() == list8.size(), "Unequal number of interval start and end times.");
+        atzb.c(list7.size() == list8.size(), "Unequal number of interval start and end times.");
     }
 
     public final long a(TimeUnit timeUnit) {
@@ -86,7 +86,7 @@ public class DataReadRequest extends AbstractSafeParcelable {
         }
         if (obj instanceof DataReadRequest) {
             DataReadRequest dataReadRequest = (DataReadRequest) obj;
-            if (this.a.equals(dataReadRequest.a) && this.b.equals(dataReadRequest.b) && this.c == dataReadRequest.c && this.d == dataReadRequest.d && this.g == dataReadRequest.g && this.f.equals(dataReadRequest.f) && this.e.equals(dataReadRequest.e) && arwb.b(this.i, dataReadRequest.i) && this.h == dataReadRequest.h && this.l == dataReadRequest.l && this.j == dataReadRequest.j && this.k == dataReadRequest.k && arwb.b(this.o, dataReadRequest.o)) {
+            if (this.a.equals(dataReadRequest.a) && this.b.equals(dataReadRequest.b) && this.c == dataReadRequest.c && this.d == dataReadRequest.d && this.g == dataReadRequest.g && this.f.equals(dataReadRequest.f) && this.e.equals(dataReadRequest.e) && atyq.b(this.i, dataReadRequest.i) && this.h == dataReadRequest.h && this.l == dataReadRequest.l && this.j == dataReadRequest.j && this.k == dataReadRequest.k && atyq.b(this.o, dataReadRequest.o)) {
                 return true;
             }
         }
@@ -163,23 +163,23 @@ public class DataReadRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.q(parcel, 3, this.c);
-        arxc.q(parcel, 4, this.d);
-        arxc.y(parcel, 5, this.e, false);
-        arxc.y(parcel, 6, this.f, false);
-        arxc.o(parcel, 7, this.g);
-        arxc.q(parcel, 8, this.h);
-        arxc.t(parcel, 9, this.i, i, false);
-        arxc.o(parcel, 10, this.j);
-        arxc.e(parcel, 12, this.k);
-        arxc.e(parcel, 13, this.l);
-        bghi bghiVar = this.o;
-        arxc.D(parcel, 14, bghiVar == null ? null : bghiVar.a);
-        arxc.H(parcel, 18, this.m);
-        arxc.H(parcel, 19, this.n);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.q(parcel, 3, this.c);
+        atzr.q(parcel, 4, this.d);
+        atzr.y(parcel, 5, this.e, false);
+        atzr.y(parcel, 6, this.f, false);
+        atzr.o(parcel, 7, this.g);
+        atzr.q(parcel, 8, this.h);
+        atzr.t(parcel, 9, this.i, i, false);
+        atzr.o(parcel, 10, this.j);
+        atzr.e(parcel, 12, this.k);
+        atzr.e(parcel, 13, this.l);
+        bily bilyVar = this.o;
+        atzr.D(parcel, 14, bilyVar == null ? null : bilyVar.a);
+        atzr.H(parcel, 18, this.m);
+        atzr.H(parcel, 19, this.n);
+        atzr.c(parcel, a);
     }
 }

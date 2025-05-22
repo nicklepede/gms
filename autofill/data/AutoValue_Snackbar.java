@@ -3,12 +3,12 @@ package com.google.android.gms.autofill.data;
 import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.adsj;
+import defpackage.afsq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class AutoValue_Snackbar extends C$AutoValue_Snackbar {
-    public static final Parcelable.Creator CREATOR = new adsj();
+    public static final Parcelable.Creator CREATOR = new afsq();
 
     public AutoValue_Snackbar(String str, String str2, Intent intent, int i) {
         super(str, str2, intent, i);

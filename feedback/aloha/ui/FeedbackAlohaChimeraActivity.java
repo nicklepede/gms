@@ -28,133 +28,157 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
+import com.google.android.cast.JGCastService;
 import com.google.android.gms.R;
+import com.google.android.gms.auth.HasCapabilitiesRequest;
 import com.google.android.gms.feedback.ErrorReport;
 import com.google.android.gms.feedback.ThemeSettings;
 import com.google.android.gms.feedback.aloha.ui.FeedbackAlohaChimeraActivity;
 import com.google.android.gms.googlehelp.common.HelpConfig;
 import com.google.android.gms.googlehelp.feedback.Screenshot;
-import defpackage.abv;
-import defpackage.arts;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asiu;
-import defpackage.asot;
-import defpackage.bagv;
-import defpackage.bajp;
-import defpackage.bajq;
-import defpackage.bajx;
-import defpackage.bajz;
-import defpackage.baka;
-import defpackage.bakg;
-import defpackage.bakp;
-import defpackage.bale;
-import defpackage.balk;
-import defpackage.balz;
-import defpackage.bama;
-import defpackage.bamh;
-import defpackage.bamn;
-import defpackage.bamw;
-import defpackage.bamx;
-import defpackage.bamy;
-import defpackage.bamz;
-import defpackage.bana;
-import defpackage.banb;
-import defpackage.banc;
-import defpackage.banf;
-import defpackage.bang;
-import defpackage.banh;
-import defpackage.bani;
-import defpackage.banj;
-import defpackage.banl;
-import defpackage.banm;
-import defpackage.bann;
-import defpackage.bano;
-import defpackage.bans;
-import defpackage.banw;
-import defpackage.banx;
-import defpackage.baoa;
-import defpackage.baod;
-import defpackage.baog;
-import defpackage.baok;
-import defpackage.baoo;
-import defpackage.baox;
-import defpackage.baoy;
-import defpackage.baoz;
-import defpackage.bapf;
-import defpackage.bapg;
-import defpackage.bapk;
-import defpackage.bipr;
-import defpackage.bivj;
-import defpackage.bivo;
-import defpackage.dvyt;
-import defpackage.dvyx;
-import defpackage.eiig;
-import defpackage.eitj;
-import defpackage.ejhf;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensj;
-import defpackage.ensv;
-import defpackage.epmm;
-import defpackage.epnk;
-import defpackage.fjtg;
-import defpackage.fnnl;
-import defpackage.fnps;
-import defpackage.fnro;
-import defpackage.fntb;
-import defpackage.fnte;
-import defpackage.fnth;
-import defpackage.fnux;
-import defpackage.fnvs;
-import defpackage.fwac;
-import defpackage.imw;
-import defpackage.qet;
-import defpackage.rbj;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.atwh;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.aumo;
+import defpackage.aury;
+import defpackage.ausn;
+import defpackage.bckm;
+import defpackage.bcko;
+import defpackage.bckq;
+import defpackage.bckr;
+import defpackage.bcnl;
+import defpackage.bcnm;
+import defpackage.bcnt;
+import defpackage.bcnv;
+import defpackage.bcnw;
+import defpackage.bcoc;
+import defpackage.bcol;
+import defpackage.bcpa;
+import defpackage.bcpg;
+import defpackage.bcpv;
+import defpackage.bcpw;
+import defpackage.bcqd;
+import defpackage.bcqj;
+import defpackage.bcqm;
+import defpackage.bcqp;
+import defpackage.bcqs;
+import defpackage.bcqt;
+import defpackage.bcqu;
+import defpackage.bcqv;
+import defpackage.bcqw;
+import defpackage.bcqx;
+import defpackage.bcqy;
+import defpackage.bcrb;
+import defpackage.bcrc;
+import defpackage.bcrd;
+import defpackage.bcre;
+import defpackage.bcrf;
+import defpackage.bcrg;
+import defpackage.bcrh;
+import defpackage.bcri;
+import defpackage.bcrj;
+import defpackage.bcrk;
+import defpackage.bcro;
+import defpackage.bcrq;
+import defpackage.bcrs;
+import defpackage.bcrt;
+import defpackage.bcrw;
+import defpackage.bcrx;
+import defpackage.bcrz;
+import defpackage.bcsc;
+import defpackage.bcse;
+import defpackage.bcsg;
+import defpackage.bcsk;
+import defpackage.bcst;
+import defpackage.bcsu;
+import defpackage.bcsv;
+import defpackage.bctb;
+import defpackage.bctc;
+import defpackage.bctg;
+import defpackage.bkug;
+import defpackage.bkzy;
+import defpackage.blad;
+import defpackage.blah;
+import defpackage.dyku;
+import defpackage.dyky;
+import defpackage.edxt;
+import defpackage.ekut;
+import defpackage.ekvl;
+import defpackage.elgo;
+import defpackage.eluo;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.eqgo;
+import defpackage.esal;
+import defpackage.esbj;
+import defpackage.fmjd;
+import defpackage.fqfu;
+import defpackage.fqgk;
+import defpackage.fqhm;
+import defpackage.fqhv;
+import defpackage.fqib;
+import defpackage.fqjx;
+import defpackage.fqlk;
+import defpackage.fqln;
+import defpackage.fqlq;
+import defpackage.fqng;
+import defpackage.fqnv;
+import defpackage.fqob;
+import defpackage.fywe;
+import defpackage.ion;
+import defpackage.rxx;
+import defpackage.sun;
 import j$.util.Objects;
+import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bagv, bajq, banc, bamy {
-    public static final asot j = asot.b("gf_FeedbackAlohaActivity", asej.FEEDBACK);
+public class FeedbackAlohaChimeraActivity extends rxx implements bcpv, bcnw, bckr, bcnm, bcqy, bcqu {
+    public static final ausn j = ausn.b("gf_FeedbackAlohaActivity", auid.FEEDBACK);
     public static HelpConfig k;
-    private static rbj m;
-    public bapf l;
+    private static sun m;
+    public bctb l;
     private String n;
     private View o;
     private ServiceConnection p;
-    private banb q;
-    private bano r;
+    private bcqx q;
+    private bcrk r;
     private KeyguardManager s;
-    private abv t;
+    private aca t;
 
     private final int Q() {
-        return imw.f(getColor(R.color.gm3_ref_palette_black), 102);
+        return ion.f(getColor(R.color.gm3_ref_palette_black), 102);
     }
 
     private final int R() {
         return getColor(android.R.color.transparent);
     }
 
-    private final bajp W(Intent intent, ErrorReport errorReport) {
+    private final bcnl W(Intent intent, ErrorReport errorReport) {
         Screenshot screenshot = null;
         Long valueOf = intent.hasExtra("ASYNC_PSD_START_TICK_NANOS") ? Long.valueOf(intent.getLongExtra("ASYNC_PSD_START_TICK_NANOS", -1L)) : null;
-        final bamw ab = ab();
+        final bcqs ab = ab();
         Parcelable parcelableExtra = intent.getParcelableExtra("com.android.feedback.SCREENSHOT_EXTRA");
-        if (bajx.e(errorReport)) {
+        if (bcnt.e(errorReport)) {
             try {
                 errorReport.a.processName = ab.b.getPackageManager().getApplicationInfo(errorReport.a.packageName, 0).processName;
-                bamx bamxVar = ab.c;
-                bivo bivoVar = new bivo() { // from class: bamv
-                    @Override // defpackage.bivo
+                bcqt bcqtVar = ab.c;
+                blad bladVar = new blad() { // from class: bcqr
+                    @Override // defpackage.blad
                     public final void G(Parcelable parcelable) {
-                        bajp bajpVar = bamw.this.d.b;
-                        if (bajpVar == null) {
-                            ((ejhf) ((ejhf) bamw.a.j()).ah((char) 3651)).x("Session is null, not updating screenshot.");
+                        bcnl bcnlVar = bcqs.this.d.b;
+                        if (bcnlVar == null) {
+                            ((eluo) ((eluo) bcqs.a.j()).ai((char) 3657)).x("Session is null, not updating screenshot.");
                         } else {
-                            bajpVar.s((Screenshot) parcelable);
+                            bcnlVar.s((Screenshot) parcelable);
                         }
                     }
                 };
@@ -170,25 +194,25 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
                         screenshot = Screenshot.d(bArr, errorReport.x, errorReport.w);
                     } else if (!TextUtils.isEmpty(str)) {
                         screenshot = new Screenshot();
-                        Screenshot.a(bamxVar.a.getFilesDir(), str, screenshot, false, bivoVar);
+                        Screenshot.a(bcqtVar.a.getFilesDir(), str, screenshot, false, bladVar);
                     } else if (!TextUtils.isEmpty(errorReport.u)) {
                         screenshot = Screenshot.c(errorReport.u, errorReport.x, errorReport.w);
                     }
                 }
             } catch (PackageManager.NameNotFoundException e) {
-                ((ejhf) ((ejhf) ((ejhf) bamw.a.i()).s(e)).ah((char) 3650)).x("Process name couldn't be extracted");
+                ((eluo) ((eluo) ((eluo) bcqs.a.i()).s(e)).ai((char) 3656)).x("Process name couldn't be extracted");
                 return null;
             }
         }
-        bajp bajpVar = new bajp(this, errorReport, screenshot, valueOf);
-        ab.d.b = bajpVar;
-        return bajpVar;
+        bcnl bcnlVar = new bcnl(this, errorReport, screenshot, valueOf);
+        ab.d.b = bcnlVar;
+        return bcnlVar;
     }
 
     private final void Y(int i, int i2, int i3) {
         ValueAnimator ofObject = ValueAnimator.ofObject(new ArgbEvaluator(), Integer.valueOf(i), Integer.valueOf(i2));
         ofObject.setDuration(i3);
-        ofObject.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: bane
+        ofObject.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: bcra
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 FeedbackAlohaChimeraActivity.this.getWindow().getDecorView().setBackgroundColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
@@ -198,10 +222,10 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
     }
 
     private final void Z() {
-        banf banfVar = new banf(this);
+        bcrb bcrbVar = new bcrb(this);
         KeyguardManager keyguardManager = this.s;
         if (keyguardManager != null) {
-            keyguardManager.requestDismissKeyguard(getContainerActivity(), banfVar);
+            keyguardManager.requestDismissKeyguard(getContainerActivity(), bcrbVar);
         }
     }
 
@@ -209,21 +233,21 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
         return getPackageManager().hasSystemFeature("android.software.communal_mode");
     }
 
-    private static final bamw ab() {
-        baoz baozVar = baoy.a().a;
-        if (baozVar.c == null) {
-            baozVar.c = new bamw(baozVar.a, baozVar.a(), baozVar.b());
+    private static final bcqs ab() {
+        bcsv bcsvVar = bcsu.a().a;
+        if (bcsvVar.c == null) {
+            bcsvVar.c = new bcqs(bcsvVar.a, bcsvVar.a(), bcsvVar.b());
         }
-        bamw bamwVar = baozVar.c;
-        eiig.x(bamwVar);
-        return bamwVar;
+        bcqs bcqsVar = bcsvVar.c;
+        ekvl.y(bcqsVar);
+        return bcqsVar;
     }
 
-    private static final bamz ac() {
-        return baoy.a().a.b();
+    private static final bcqv ac() {
+        return bcsu.a().a.b();
     }
 
-    private static final bajp ae() {
+    private static final bcnl ae() {
         return ac().b;
     }
 
@@ -231,58 +255,58 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
         if (ae() == null) {
             return null;
         }
-        bajp ae = ae();
-        eiig.x(ae);
+        bcnl ae = ae();
+        ekvl.y(ae);
         return ae.b();
     }
 
     private final void ag(int i) {
-        baoo.j(this, af(), i, 0, 0);
+        bcsk.j(this, af(), i, 0, 0);
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final String A() {
         return "";
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final String B() {
         return this.n;
     }
 
-    @Override // defpackage.banc
-    public final void C(epnk epnkVar) {
-        O(getIntent(), epnkVar);
+    @Override // defpackage.bcqy
+    public final void C(esbj esbjVar) {
+        O(getIntent(), esbjVar);
     }
 
-    @Override // defpackage.banc
+    @Override // defpackage.bcqy
     public final boolean D() {
         return (isFinishing() || isDestroyed()) ? false : true;
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final void F(Screenshot screenshot, ErrorReport errorReport) {
         Rect rect = new Rect();
         getWindow().getDecorView().getWindowVisibleDisplayFrame(rect);
-        banb banbVar = this.q;
+        bcqx bcqxVar = this.q;
         Display defaultDisplay = getWindowManager().getDefaultDisplay();
         Point point = new Point();
         defaultDisplay.getSize(point);
-        final banw banwVar = new banw(screenshot, errorReport, rect, Pair.create(Integer.valueOf(point.x), Integer.valueOf(point.y)));
-        bann bannVar = (bann) banbVar;
-        final banx banxVar = bannVar.d;
-        baod baodVar = banxVar.c;
-        ensj.t(baodVar.a.submit(new Callable() { // from class: banv
+        final bcrs bcrsVar = new bcrs(screenshot, errorReport, rect, Pair.create(Integer.valueOf(point.x), Integer.valueOf(point.y)));
+        bcrj bcrjVar = (bcrj) bcqxVar;
+        final bcrt bcrtVar = bcrjVar.d;
+        bcrz bcrzVar = bcrtVar.c;
+        eqgc.t(bcrzVar.a.submit(new Callable() { // from class: bcrr
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 int i;
                 int i2;
-                banw banwVar2 = banwVar;
-                Screenshot screenshot2 = banwVar2.a;
+                bcrs bcrsVar2 = bcrsVar;
+                Screenshot screenshot2 = bcrsVar2.a;
                 if (screenshot2 == null || TextUtils.isEmpty(screenshot2.d)) {
                     return null;
                 }
-                ErrorReport errorReport2 = banwVar2.b;
+                ErrorReport errorReport2 = bcrsVar2.b;
                 if (errorReport2.v == null) {
                     i = screenshot2.b;
                     i2 = screenshot2.c;
@@ -290,42 +314,42 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
                     i = errorReport2.x;
                     i2 = errorReport2.w;
                 }
-                banx banxVar2 = banx.this;
-                Pair a = bajx.a(banxVar2.a.getResources(), banwVar2.c, i, i2, true);
-                boolean d = bajx.d(banwVar2.d, screenshot2);
-                bamz bamzVar = banxVar2.b;
-                bamzVar.h = d;
+                bcrt bcrtVar2 = bcrt.this;
+                Pair a = bcnt.a(bcrtVar2.a.getResources(), bcrsVar2.c, i, i2, true);
+                boolean d = bcnt.d(bcrsVar2.d, screenshot2);
+                bcqv bcqvVar = bcrtVar2.b;
+                bcqvVar.h = d;
                 byte[] bArr = errorReport2.v;
                 if (bArr == null) {
                     bArr = Base64.decode(screenshot2.d, 0);
                 }
-                if (!bamx.a(d)) {
-                    bamzVar.c = Screenshot.f(bArr, d);
+                if (!bcqt.a(d)) {
+                    bcqvVar.c = Screenshot.f(bArr, d);
                     return null;
                 }
-                if (bamzVar.c()) {
+                if (bcqvVar.c()) {
                     return null;
                 }
-                bamzVar.c = Bitmap.createScaledBitmap(Screenshot.f(bArr, false), ((Integer) a.first).intValue(), ((Integer) a.second).intValue(), true);
+                bcqvVar.c = Bitmap.createScaledBitmap(Screenshot.f(bArr, false), ((Integer) a.first).intValue(), ((Integer) a.second).intValue(), true);
                 return null;
             }
-        }), new banl(), bannVar.f.b);
+        }), new bcrh(), bcrjVar.f.b);
     }
 
-    @Override // defpackage.banc
+    @Override // defpackage.bcqy
     public final void G(int i) {
-        baoo.j(this, af(), fwac.p, 0, i);
+        bcsk.j(this, af(), fywe.p, 0, i);
     }
 
-    @Override // defpackage.banc
+    @Override // defpackage.bcqy
     public final void H(int i, int i2, int i3) {
-        baog baogVar = new baog();
-        baogVar.a = af();
-        baogVar.b(fwac.p);
-        baogVar.m = i;
-        baogVar.h = Integer.valueOf(i2);
-        baogVar.i = Integer.valueOf(i3);
-        baoo.b(this, baogVar.a());
+        bcsc bcscVar = new bcsc();
+        bcscVar.a = af();
+        bcscVar.b(fywe.p);
+        bcscVar.m = i;
+        bcscVar.h = Integer.valueOf(i2);
+        bcscVar.i = Integer.valueOf(i3);
+        bcsk.b(this, bcscVar.a());
     }
 
     public final FrameLayout I() {
@@ -335,44 +359,44 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
         return frameLayout;
     }
 
-    @Override // defpackage.balz
-    public final void J(bakp bakpVar) {
+    @Override // defpackage.bcpv
+    public final void J(bcol bcolVar) {
         if (ae() != null) {
-            bajp ae = ae();
-            eiig.x(ae);
-            ae.i(bakpVar);
+            bcnl ae = ae();
+            ekvl.y(ae);
+            ae.i(bcolVar);
         }
     }
 
-    @Override // defpackage.baka
-    public final void K(bajz bajzVar, ErrorReport errorReport, balk balkVar) {
-        bano banoVar = this.r;
-        if (banoVar != null) {
-            banoVar.dismiss();
+    @Override // defpackage.bcnw
+    public final void K(bcnv bcnvVar, ErrorReport errorReport, bcpg bcpgVar) {
+        bcrk bcrkVar = this.r;
+        if (bcrkVar != null) {
+            bcrkVar.dismiss();
         }
         if (ae() == null) {
             return;
         }
-        if (bajzVar != null) {
-            bajp ae = ae();
-            eiig.x(ae);
-            ae.a().h(epmm.CLIENT_REFERENCE_IS_JUNK, true != bajzVar.c ? "false" : "true");
+        if (bcnvVar != null) {
+            bcnl ae = ae();
+            ekvl.y(ae);
+            ae.a().h(esal.CLIENT_REFERENCE_IS_JUNK, true != bcnvVar.c ? "false" : "true");
         }
-        bajp ae2 = ae();
-        eiig.x(ae2);
-        ae2.m(epmm.CLIENT_REFERENCE_JUNK_ASYNC);
+        bcnl ae2 = ae();
+        ekvl.y(ae2);
+        ae2.m(esal.CLIENT_REFERENCE_JUNK_ASYNC);
     }
 
     final ErrorReport M(Intent intent) {
         ErrorReport errorReport = new ErrorReport();
         if (intent.hasExtra("android.intent.extra.BUG_REPORT")) {
             ApplicationErrorReport applicationErrorReport = (ApplicationErrorReport) intent.getParcelableExtra("android.intent.extra.BUG_REPORT");
-            eiig.x(applicationErrorReport);
+            ekvl.y(applicationErrorReport);
             errorReport.a = applicationErrorReport;
         }
         if (intent.hasExtra("com.android.feedback.SAFEPARCELABLE_REPORT")) {
             errorReport = (ErrorReport) intent.getParcelableExtra("com.android.feedback.SAFEPARCELABLE_REPORT");
-            eiig.x(errorReport);
+            ekvl.y(errorReport);
             if (!TextUtils.isEmpty(errorReport.B)) {
                 this.n = errorReport.B;
                 if (!errorReport.E) {
@@ -380,15 +404,15 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
                 }
             }
         }
-        bama.i = errorReport.Z;
+        bcpw.i = errorReport.Z;
         if (TextUtils.isEmpty(errorReport.ag)) {
-            errorReport.ag = bapk.c();
+            errorReport.ag = bctg.c();
         }
         return errorReport;
     }
 
-    public final void O(Intent intent, epnk epnkVar) {
-        bajp ae = ae();
+    public final void O(Intent intent, esbj esbjVar) {
+        bcnl ae = ae();
         if (ae == null) {
             return;
         }
@@ -397,253 +421,253 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
             ((ViewGroup) view.getParent()).removeView(view);
         }
         ErrorReport M = M(intent);
-        banb banbVar = this.q;
+        bcqx bcqxVar = this.q;
         String str = M.a.packageName;
         String str2 = M.P;
         String str3 = M.ap;
-        bann bannVar = (bann) banbVar;
-        bamh bamhVar = bannVar.c;
-        arts artsVar = bannVar.h;
-        final fjtg d = bamn.d(str, str2, str3);
-        final bamn bamnVar = (bamn) bamhVar;
-        ensj.t(enps.g(bamnVar.c.a(d, artsVar), new enqc() { // from class: baml
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                eiid eiidVar = (eiid) obj;
-                if (!eiidVar.h()) {
-                    return ensj.i(false);
+        bcrj bcrjVar = (bcrj) bcqxVar;
+        bcqd bcqdVar = bcrjVar.c;
+        atwh atwhVar = bcrjVar.h;
+        final fmjd d = bcqj.d(str, str2, str3);
+        final bcqj bcqjVar = (bcqj) bcqdVar;
+        eqgc.t(eqdl.g(bcqjVar.c.a(d, atwhVar), new eqdv() { // from class: bcqh
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                ekvi ekviVar = (ekvi) obj;
+                if (!ekviVar.h()) {
+                    return eqgc.i(false);
                 }
-                fjtg fjtgVar = d;
-                bamn bamnVar2 = bamn.this;
-                bamnVar2.c(fjtgVar, (fjtc) eiidVar.c());
-                Map map = bamnVar2.e;
-                fjtd fjtdVar = (fjtd) fjte.a.v();
+                fmjd fmjdVar = d;
+                bcqj bcqjVar2 = bcqj.this;
+                bcqjVar2.c(fmjdVar, (fmiz) ekviVar.c());
+                Map map = bcqjVar2.e;
+                fmja fmjaVar = (fmja) fmjb.a.v();
                 for (Map.Entry entry : map.entrySet()) {
-                    if (baow.b((fjth) entry.getValue())) {
-                        if (fnpm.c() && (((fjth) entry.getValue()).b & 2) != 0) {
-                            fjtc fjtcVar = ((fjth) entry.getValue()).d;
-                            if (fjtcVar == null) {
-                                fjtcVar = fjtc.a;
+                    if (bcss.b((fmje) entry.getValue())) {
+                        if (fqhv.c() && (((fmje) entry.getValue()).b & 2) != 0) {
+                            fmiz fmizVar = ((fmje) entry.getValue()).d;
+                            if (fmizVar == null) {
+                                fmizVar = fmiz.a;
                             }
-                            if ((fjtcVar.b & 1) != 0) {
-                                fjtc fjtcVar2 = ((fjth) entry.getValue()).d;
-                                if (fjtcVar2 == null) {
-                                    fjtcVar2 = fjtc.a;
+                            if ((fmizVar.b & 1) != 0) {
+                                fmiz fmizVar2 = ((fmje) entry.getValue()).d;
+                                if (fmizVar2 == null) {
+                                    fmizVar2 = fmiz.a;
                                 }
-                                epnk epnkVar2 = fjtcVar2.c;
-                                if (epnkVar2 == null) {
-                                    epnkVar2 = epnk.a;
+                                esbj esbjVar2 = fmizVar2.c;
+                                if (esbjVar2 == null) {
+                                    esbjVar2 = esbj.a;
                                 }
-                                if ((epnkVar2.b & 8) != 0) {
-                                    fjtc fjtcVar3 = ((fjth) entry.getValue()).d;
-                                    if (fjtcVar3 == null) {
-                                        fjtcVar3 = fjtc.a;
+                                if ((esbjVar2.b & 8) != 0) {
+                                    fmiz fmizVar3 = ((fmje) entry.getValue()).d;
+                                    if (fmizVar3 == null) {
+                                        fmizVar3 = fmiz.a;
                                     }
-                                    epnk epnkVar3 = fjtcVar3.c;
-                                    if (epnkVar3 == null) {
-                                        epnkVar3 = epnk.a;
+                                    esbj esbjVar3 = fmizVar3.c;
+                                    if (esbjVar3 == null) {
+                                        esbjVar3 = esbj.a;
                                     }
-                                    if (epnkVar3.g) {
+                                    if (esbjVar3.g) {
                                     }
                                 }
                             }
                         }
-                        fecj v = fjtf.a.v();
-                        fjtg fjtgVar2 = (fjtg) entry.getKey();
+                        fgrc v = fmjc.a.v();
+                        fmjd fmjdVar2 = (fmjd) entry.getKey();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fjtf fjtfVar = (fjtf) v.b;
-                        fjtgVar2.getClass();
-                        fjtfVar.c = fjtgVar2;
-                        fjtfVar.b |= 1;
-                        fjth fjthVar = (fjth) entry.getValue();
+                        fmjc fmjcVar = (fmjc) v.b;
+                        fmjdVar2.getClass();
+                        fmjcVar.c = fmjdVar2;
+                        fmjcVar.b |= 1;
+                        fmje fmjeVar = (fmje) entry.getValue();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fjtf fjtfVar2 = (fjtf) v.b;
-                        fjthVar.getClass();
-                        fjtfVar2.d = fjthVar;
-                        fjtfVar2.b |= 2;
-                        fjtdVar.a(v);
+                        fmjc fmjcVar2 = (fmjc) v.b;
+                        fmjeVar.getClass();
+                        fmjcVar2.d = fmjeVar;
+                        fmjcVar2.b |= 2;
+                        fmjaVar.a(v);
                     }
                 }
-                bamq bamqVar = bamnVar2.g;
-                enss i = ensj.i((fjte) fjtdVar.Q());
-                final bags bagsVar = bamqVar.a;
-                Objects.requireNonNull(bagsVar);
-                return enps.f(enps.g(i, new enqc() { // from class: bamo
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj2) {
-                        return bags.this.b((fjte) obj2);
+                bcqm bcqmVar = bcqjVar2.g;
+                eqgl i = eqgc.i((fmjb) fmjaVar.Q());
+                final bcko bckoVar = bcqmVar.a;
+                Objects.requireNonNull(bckoVar);
+                return eqdl.f(eqdl.g(i, new eqdv() { // from class: bcqk
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj2) {
+                        return bcko.this.b((fmjb) obj2);
                     }
-                }, bamqVar.b.a), new eiho() { // from class: bami
-                    @Override // defpackage.eiho
+                }, bcqmVar.b.a), new ekut() { // from class: bcqe
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
-                        asot asotVar = bamn.a;
+                        ausn ausnVar = bcqj.a;
                         return true;
                     }
-                }, bamnVar2.d.a);
+                }, bcqjVar2.d.a);
             }
-        }, bamnVar.d.a), new banm(), bannVar.f.b);
-        if (fntb.c()) {
-            eitj i = eitj.i(epnkVar.f);
-            bajp ae2 = ae();
+        }, bcqjVar.d.a), new bcri(), bcrjVar.f.b);
+        if (fqlk.c()) {
+            elgo i = elgo.i(esbjVar.f);
+            bcnl ae2 = ae();
             if (ae2 == null) {
-                ((ejhf) ((ejhf) j.j()).ah((char) 3665)).x("Session is null, not setting allowed PSD List.");
+                ((eluo) ((eluo) j.j()).ai((char) 3671)).x("Session is null, not setting allowed PSD List.");
             } else {
                 ae2.o(i);
             }
         }
-        m = rbj.a(epnkVar, this, ae.a());
-        View c = rbj.c();
+        m = sun.a(esbjVar, this, ae.a());
+        View c = sun.c();
         this.o = c;
         c.setId(R.id.aloha_dynamic_ui);
-        if (fnro.c()) {
+        if (fqjx.c()) {
             c.setElevation(2.0f);
         }
         FrameLayout I = I();
         I.addView(c, new FrameLayout.LayoutParams(-1, -1));
-        fnux.a.a().a();
+        fqng.a.lK().a();
         setContentView(I);
-        baok.a(this, aseu.FEEDBACK_ALOHA_LAUNCHED);
-        if (fnvs.c()) {
-            baok.a(this, aseu.FEEDBACK_ACTIVITY);
+        bcsg.a(this, auio.FEEDBACK_ALOHA_LAUNCHED);
+        if (fqob.c()) {
+            bcsg.a(this, auio.FEEDBACK_ACTIVITY);
         }
     }
 
     public final void P(int i, ErrorReport errorReport) {
-        baoo.g(this, errorReport, i, TextUtils.isEmpty(this.n) ? null : new Account(this.n, "com.google"), null, null);
+        bcsk.g(this, errorReport, i, TextUtils.isEmpty(this.n) ? null : new Account(this.n, "com.google"), null, null);
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean S() {
         return false;
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean T() {
         return false;
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean U() {
         return false;
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean V() {
         return false;
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final boolean X() {
         return true;
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final Activity a() {
         return getContainerActivity();
     }
 
-    @Override // defpackage.baka
-    public final void ad(balk balkVar) {
-        bano banoVar = new bano();
-        this.r = banoVar;
-        banoVar.show(getSupportFragmentManager(), "progress_dialog");
+    @Override // defpackage.bcnw
+    public final void ad(bcpg bcpgVar) {
+        bcrk bcrkVar = new bcrk();
+        this.r = bcrkVar;
+        bcrkVar.show(getSupportFragmentManager(), "progress_dialog");
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void d() {
         getWindow().getDecorView().setBackgroundColor(Q());
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void e() {
-        bajp ae = ae();
+        bcnl ae = ae();
         if (ae == null || ae.l.c) {
             return;
         }
         af();
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void f(final ErrorReport errorReport, boolean z) {
-        final baoa baoaVar = new baoa(this, baoy.a().a.d(), ac());
-        bamz bamzVar = baoaVar.b;
-        baod baodVar = baoaVar.a;
-        final bajp bajpVar = bamzVar.b;
-        baodVar.a.execute(new Runnable() { // from class: banz
+        final bcrw bcrwVar = new bcrw(this, bcsu.a().a.d(), ac());
+        bcqv bcqvVar = bcrwVar.b;
+        bcrz bcrzVar = bcrwVar.a;
+        final bcnl bcnlVar = bcqvVar.b;
+        bcrzVar.a.execute(new Runnable() { // from class: bcrv
             @Override // java.lang.Runnable
             public final void run() {
                 ErrorReport errorReport2;
-                bajp bajpVar2 = bajpVar;
-                if (bajpVar2 != null) {
-                    bajpVar2.r();
-                    errorReport2 = bajpVar2.b();
+                bcnl bcnlVar2 = bcnlVar;
+                if (bcnlVar2 != null) {
+                    bcnlVar2.r();
+                    errorReport2 = bcnlVar2.b();
                 } else {
                     errorReport2 = errorReport;
                 }
-                baoa baoaVar2 = baoa.this;
-                if (bajpVar2 == null || !bajpVar2.u()) {
-                    baoaVar2.a(errorReport2);
+                bcrw bcrwVar2 = bcrw.this;
+                if (bcnlVar2 == null || !bcnlVar2.u()) {
+                    bcrwVar2.a(errorReport2);
                 } else {
-                    baoaVar2.b(bajpVar2);
+                    bcrwVar2.b(bcnlVar2);
                 }
             }
         });
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void g(String str, ErrorReport errorReport) {
-        if (!fnps.c() || !str.equals(fnnl.n())) {
-            bale.c(getContainerActivity(), str, errorReport);
+        if (!fqib.c() || !str.equals(fqfu.n())) {
+            bcpa.c(getContainerActivity(), str, errorReport);
             return;
         }
         try {
-            dvyx.b(this, this.t, errorReport != null ? errorReport.B : "");
-        } catch (dvyt unused) {
-            bale.c(getContainerActivity(), fnnl.n(), errorReport);
+            dyky.b(this, this.t, errorReport != null ? errorReport.B : "");
+        } catch (dyku unused) {
+            bcpa.c(getContainerActivity(), fqfu.n(), errorReport);
         }
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void h(String str) {
-        bapf bapfVar = this.l;
-        if (bapfVar == null) {
+        bctb bctbVar = this.l;
+        if (bctbVar == null) {
             return;
         }
         try {
-            bapg d = bapfVar.d();
+            bctc d = bctbVar.d();
             if (d != null) {
-                Parcel fr = d.fr();
-                fr.writeString(str);
-                d.fu(2, fr);
+                Parcel fE = d.fE();
+                fE.writeString(str);
+                d.fH(2, fE);
             }
         } catch (RemoteException e) {
-            ((ejhf) ((ejhf) ((ejhf) j.i()).s(e)).ah((char) 3661)).x("Unable to notify callback");
+            ((eluo) ((eluo) ((eluo) j.i()).s(e)).ai((char) 3667)).x("Unable to notify callback");
         }
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void i() {
         startActivity(new Intent().setClassName(this, "com.google.android.gms.feedback.PreviewActivity"));
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void j() {
         ErrorReport af = af();
         if (af == null) {
             return;
         }
-        baoy.a().a.a();
-        boolean a = bamx.a(ac().h);
+        bcsu.a().a.a();
+        boolean a = bcqt.a(ac().h);
         Intent intent = new Intent();
         if (a) {
             intent.setClassName(this, "com.google.android.gms.feedback.AnnotateScreenshotActivity");
             ThemeSettings themeSettings = af.Y;
             if (themeSettings != null && themeSettings.b != 0) {
-                intent.putExtra("EXTRA_ACTION_BAR_COLOR_RES_ID", bipr.a(themeSettings));
+                intent.putExtra("EXTRA_ACTION_BAR_COLOR_RES_ID", bkug.a(themeSettings));
             }
         } else {
             intent.setClassName(this, "com.google.android.gms.feedback.PreviewScreenshotActivity");
@@ -651,112 +675,404 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
         startActivity(intent);
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void k() {
-        startActivity(bale.a(this));
+        startActivity(bcpa.a(this));
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void l() {
-        startActivity(bale.b(this));
+        startActivity(bcpa.b(this));
     }
 
-    @Override // defpackage.bagv
-    public final void m(Integer num, Integer num2, eitj eitjVar) {
-        rbj.d(num, num2, eitjVar);
+    @Override // defpackage.bckr
+    public final void m(Integer num, Integer num2, elgo elgoVar) {
+        sun.d(num, num2, elgoVar);
     }
 
-    @Override // defpackage.bagv, defpackage.bajq
+    @Override // defpackage.bckr, defpackage.bcnm
     public final void n(Runnable runnable) {
         runOnUiThread(runnable);
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void o() {
         getWindow().getDecorView().setBackgroundColor(R());
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:80:0x02b8  */
     /* JADX WARN: Type inference failed for: r17v0 */
     /* JADX WARN: Type inference failed for: r17v1, types: [boolean] */
     /* JADX WARN: Type inference failed for: r17v2 */
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct code enable 'Show inconsistent code' option in preferences
-    */
-    protected final void onCreate(android.os.Bundle r19) {
-        /*
-            Method dump skipped, instructions count: 720
-            To view this dump change 'Code comments level' option to 'DEBUG'
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.feedback.aloha.ui.FeedbackAlohaChimeraActivity.onCreate(android.os.Bundle):void");
-    }
-
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
-    protected final void onDestroy() {
-        bapf bapfVar = this.l;
-        if (bapfVar != null) {
-            try {
-                bapg d = bapfVar.d();
-                if (d != null) {
-                    d.fu(3, d.fr());
-                }
-            } catch (RemoteException e) {
-                ((ejhf) ((ejhf) ((ejhf) j.i()).s(e)).ah((char) 3662)).x("Unable to notify callback");
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
+    protected final void onCreate(Bundle bundle) {
+        ?? r17;
+        eqgl a;
+        eqgl submit;
+        Intent intent = getIntent();
+        if (intent.getBooleanExtra("com.android.feedback.DISMISS_SELF_EXTRA", false)) {
+            p();
+            return;
+        }
+        super.onCreate(bundle);
+        bcoc.a();
+        ErrorReport M = M(intent);
+        if (Build.VERSION.SDK_INT >= 26 && aa() && fqlq.d()) {
+            KeyguardManager keyguardManager = (KeyguardManager) getSystemService("keyguard");
+            this.s = keyguardManager;
+            if (keyguardManager != null && keyguardManager.isKeyguardLocked()) {
+                Z();
+                return;
             }
         }
-        bama.d(null);
+        if (fqln.c() && bundle != null && ae() == null) {
+            finish();
+            return;
+        }
+        if (!fqln.c() || ae() == null) {
+            bcnl W = W(intent, M(intent));
+            if (W == null) {
+                finish();
+                return;
+            }
+            W.n();
+        } else {
+            bcnl ae = ae();
+            ekvl.y(ae);
+            ae.h = this;
+            bckq bckqVar = ae.i;
+            if (bckqVar != null) {
+                bckqVar.d = this;
+            }
+        }
+        ac().e = this.n;
+        getWindow().setSoftInputMode(16);
+        getWindow().setFlags(JGCastService.FLAG_USE_TDLS, 0);
+        getWindow().setStatusBarColor(R());
+        fqln fqlnVar = fqln.a;
+        if (!fqlnVar.lK().c() && ((!fqlnVar.lK().d() || !aury.m(this)) && Build.VERSION.SDK_INT != 26)) {
+            setRequestedOrientation(1);
+        }
+        if (fqnv.c()) {
+            blah.b(this, M, R.style.DynamicUI_Theme_Transparent_Light_GM3Expressive, R.style.DynamicUI_Theme_Transparent_Dark_GM3Expressive, R.style.DynamicUI_Theme_Transparent_GM3Expressive);
+        } else {
+            blah.b(this, M, R.style.DynamicUI_Theme_Transparent_Light, R.style.DynamicUI_Theme_Transparent_Dark, R.style.DynamicUI_Theme_Transparent);
+        }
+        if (fqgk.c()) {
+            int i = edxt.a;
+        }
+        bcsk.d(this, M, TextUtils.isEmpty(this.n) ? null : new Account(this.n, "com.google"));
+        if (M.E) {
+            ((eluo) ((eluo) j.i()).ai((char) 3669)).x("Invalid request for feedback invocation. This action is not permitted");
+            finish();
+            return;
+        }
+        if (fqhm.c() && getPackageManager().hasSystemFeature("android.software.communal_mode")) {
+            getWindow().addFlags(524416);
+        }
+        setContentView(I());
+        bcsv bcsvVar = bcsu.a().a;
+        if (bcsvVar.b == null) {
+            bcrx c = bcsvVar.c();
+            Context context = bcsvVar.a;
+            r17 = 0;
+            bcqp bcqpVar = new bcqp(bckm.a(context), bcsvVar.c(), new bcse(context, bcsvVar.b(), bcsvVar.e()), bcsvVar.d());
+            bcqm bcqmVar = new bcqm(new bcko(context), bcsvVar.d());
+            if (bcsvVar.d == null) {
+                bcsvVar.e();
+                bcsvVar.d = new bcrq(bcsvVar.b(), bcsvVar.c(), bcsvVar.d());
+            }
+            bcrq bcrqVar = bcsvVar.d;
+            ekvl.y(bcrqVar);
+            bcsvVar.b = new bcqj(c, bcqpVar, bcqmVar, bcrqVar, bcsvVar.d());
+        } else {
+            r17 = 0;
+        }
+        bcqd bcqdVar = bcsvVar.b;
+        ekvl.y(bcqdVar);
+        Context context2 = bcsvVar.a;
+        bcqv b = bcsvVar.b();
+        bcsvVar.a();
+        bcrj bcrjVar = new bcrj(this, bcqdVar, new bcrt(context2, b, bcsvVar.d()), bcsvVar.d(), bcsvVar.c());
+        this.q = bcrjVar;
+        atwh atwhVar = new atwh();
+        atwhVar.d = getApplicationContext().getPackageName();
+        atwhVar.e = getPackageName();
+        atwhVar.a = getApplicationInfo().uid;
+        bcrjVar.g = M;
+        bcrjVar.h = atwhVar;
+        bcrjVar.b();
+        bcqy a2 = bcrjVar.a();
+        if (a2 != null) {
+            a2.x();
+            a2.w();
+        }
+        bcqd bcqdVar2 = bcrjVar.c;
+        String str = M.a.packageName;
+        String str2 = M.P;
+        String str3 = M.ap;
+        fqhv fqhvVar = fqhv.a;
+        if (fqhvVar.lK().c() && bcoc.f(str, fqhvVar.lK().a()) && !bcoc.d(str, fqhvVar.lK().b())) {
+            final bcqj bcqjVar = (bcqj) bcqdVar2;
+            final eqgl a3 = bcqjVar.a(str, str2, atwhVar, str3);
+            final bcrq bcrqVar2 = bcqjVar.f;
+            String str4 = bcrqVar2.b.e;
+            final Account account = TextUtils.isEmpty(str4) ? null : new Account(str4, "com.google");
+            if (account == null) {
+                submit = eqgc.i(Boolean.valueOf((boolean) r17));
+            } else {
+                submit = bcrqVar2.c.a.submit(new Callable() { // from class: bcrp
+                    @Override // java.util.concurrent.Callable
+                    public final Object call() {
+                        int i2;
+                        long currentTimeMillis = System.currentTimeMillis();
+                        HasCapabilitiesRequest hasCapabilitiesRequest = new HasCapabilitiesRequest(account, new String[]{eupc.a.a});
+                        bcrq bcrqVar3 = bcrq.this;
+                        Context context3 = bcrqVar3.a.a;
+                        try {
+                            String str5 = wjx.a;
+                            i2 = wkg.c(context3, hasCapabilitiesRequest);
+                        } catch (IOException | wjw e) {
+                            ((eluo) ((eluo) ((eluo) bcsm.a.i()).s(e)).ai((char) 3690)).x("HasCapabilities task failed");
+                            i2 = 3;
+                        }
+                        bcrx bcrxVar = bcrqVar3.a;
+                        bcsc bcscVar = new bcsc();
+                        bcscVar.a = bcrqVar3.b.a();
+                        bcscVar.b(fywe.M);
+                        bcscVar.j = Integer.valueOf((int) (System.currentTimeMillis() - currentTimeMillis));
+                        bcsk.b(bcrxVar.a, bcscVar.a());
+                        return Boolean.valueOf(i2 == 2);
+                    }
+                });
+            }
+            ekut ekutVar = new ekut() { // from class: bcqf
+                @Override // defpackage.ekut
+                public final Object apply(Object obj) {
+                    bcqj bcqjVar2 = bcqj.this;
+                    try {
+                        if (!Boolean.TRUE.equals((Boolean) obj)) {
+                            return bcqq.a;
+                        }
+                        bcrx bcrxVar = bcqjVar2.b;
+                        esbj a4 = dowr.a(bcrxVar.a, R.raw.block_feedback_flow_minors_config_binarypb);
+                        fgrc fgrcVar = (fgrc) a4.iQ(5, null);
+                        fgrcVar.X(a4);
+                        esbe esbeVar = ((esbj) fgrcVar.b).e;
+                        if (esbeVar == null) {
+                            esbeVar = esbe.a;
+                        }
+                        fgrc fgrcVar2 = (fgrc) esbeVar.iQ(5, null);
+                        fgrcVar2.X(esbeVar);
+                        esbd esbdVar = (esbd) fgrcVar2;
+                        esbg a5 = esbdVar.a(0);
+                        fgrc fgrcVar3 = (fgrc) a5.iQ(5, null);
+                        fgrcVar3.X(a5);
+                        esbf esbfVar = (esbf) fgrcVar3;
+                        esat a6 = esbfVar.a(0);
+                        fgrc fgrcVar4 = (fgrc) a6.iQ(5, null);
+                        fgrcVar4.X(a6);
+                        esaj esajVar = (esaj) fgrcVar4;
+                        esat a7 = esajVar.a(0);
+                        fgrc fgrcVar5 = (fgrc) a7.iQ(5, null);
+                        fgrcVar5.X(a7);
+                        esaj esajVar2 = (esaj) fgrcVar5;
+                        String b2 = bcrxVar.b(R.string.close_button_label);
+                        if (!esajVar2.b.L()) {
+                            esajVar2.U();
+                        }
+                        esat esatVar = (esat) esajVar2.b;
+                        esat esatVar2 = esat.a;
+                        b2.getClass();
+                        esatVar.b |= 256;
+                        esatVar.m = b2;
+                        esajVar.k(0, esajVar2);
+                        esat a8 = esajVar.a(1);
+                        fgrc fgrcVar6 = (fgrc) a8.iQ(5, null);
+                        fgrcVar6.X(a8);
+                        esaj esajVar3 = (esaj) fgrcVar6;
+                        String b3 = bcrxVar.b(R.string.gf_title_block_feedback_minors);
+                        if (!esajVar3.b.L()) {
+                            esajVar3.U();
+                        }
+                        esat esatVar3 = (esat) esajVar3.b;
+                        b3.getClass();
+                        esatVar3.b |= 4;
+                        esatVar3.f = b3;
+                        esajVar.k(1, esajVar3);
+                        esbfVar.k(0, esajVar);
+                        esbdVar.k(0, esbfVar);
+                        esbg a9 = esbdVar.a(1);
+                        fgrc fgrcVar7 = (fgrc) a9.iQ(5, null);
+                        fgrcVar7.X(a9);
+                        esbf esbfVar2 = (esbf) fgrcVar7;
+                        esat a10 = esbfVar2.a(0);
+                        fgrc fgrcVar8 = (fgrc) a10.iQ(5, null);
+                        fgrcVar8.X(a10);
+                        esaj esajVar4 = (esaj) fgrcVar8;
+                        String b4 = bcrxVar.b(R.string.gf_how_to_proceed);
+                        if (!esajVar4.b.L()) {
+                            esajVar4.U();
+                        }
+                        esat esatVar4 = (esat) esajVar4.b;
+                        b4.getClass();
+                        esatVar4.b |= 4;
+                        esatVar4.f = b4;
+                        esbfVar2.k(0, esajVar4);
+                        esat a11 = esbfVar2.a(1);
+                        fgrc fgrcVar9 = (fgrc) a11.iQ(5, null);
+                        fgrcVar9.X(a11);
+                        esaj esajVar5 = (esaj) fgrcVar9;
+                        esat a12 = esajVar5.a(0);
+                        fgrc fgrcVar10 = (fgrc) a12.iQ(5, null);
+                        fgrcVar10.X(a12);
+                        esaj esajVar6 = (esaj) fgrcVar10;
+                        String b5 = bcrxVar.b(R.string.gf_snippet_heading_block_feedback_minors);
+                        if (!esajVar6.b.L()) {
+                            esajVar6.U();
+                        }
+                        esat esatVar5 = (esat) esajVar6.b;
+                        b5.getClass();
+                        esatVar5.b |= 4;
+                        esatVar5.f = b5;
+                        esajVar5.k(0, esajVar6);
+                        esat a13 = esajVar5.a(1);
+                        fgrc fgrcVar11 = (fgrc) a13.iQ(5, null);
+                        fgrcVar11.X(a13);
+                        esaj esajVar7 = (esaj) fgrcVar11;
+                        String b6 = bcrxVar.b(R.string.gf_snippet_paragraph_block_feedback_minors);
+                        if (!esajVar7.b.L()) {
+                            esajVar7.U();
+                        }
+                        esat esatVar6 = (esat) esajVar7.b;
+                        b6.getClass();
+                        esatVar6.b |= 4;
+                        esatVar6.f = b6;
+                        esajVar5.k(1, esajVar7);
+                        esbfVar2.k(1, esajVar5);
+                        esat a14 = esbfVar2.a(2);
+                        fgrc fgrcVar12 = (fgrc) a14.iQ(5, null);
+                        fgrcVar12.X(a14);
+                        esaj esajVar8 = (esaj) fgrcVar12;
+                        String b7 = bcrxVar.b(R.string.close_button_label);
+                        if (!esajVar8.b.L()) {
+                            esajVar8.U();
+                        }
+                        esat esatVar7 = (esat) esajVar8.b;
+                        b7.getClass();
+                        esatVar7.b |= 4;
+                        esatVar7.f = b7;
+                        esbfVar2.k(2, esajVar8);
+                        esbdVar.k(1, esbfVar2);
+                        esbe esbeVar2 = (esbe) esbdVar.Q();
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
+                        }
+                        esbj esbjVar = (esbj) fgrcVar.b;
+                        esbeVar2.getClass();
+                        esbjVar.e = esbeVar2;
+                        esbjVar.b |= 4;
+                        return new bcqq((esbj) fgrcVar.Q(), 3);
+                    } catch (InterruptedException e) {
+                        ((eluo) ((eluo) ((eluo) bcqj.a.h()).s(e)).ai((char) 3653)).x("Unable to fetch minor tree.");
+                        return bcqq.a;
+                    }
+                }
+            };
+            eqgo eqgoVar = bcqjVar.d.a;
+            final eqgl f = eqdl.f(submit, ekutVar, eqgoVar);
+            eqgl[] eqglVarArr = new eqgl[2];
+            eqglVarArr[r17] = a3;
+            eqglVarArr[1] = f;
+            a = eqgc.b(eqglVarArr).a(new Callable() { // from class: bcqi
+                @Override // java.util.concurrent.Callable
+                public final Object call() {
+                    ausn ausnVar = bcqj.a;
+                    bcqq bcqqVar = (bcqq) eqgc.r(eqgl.this);
+                    return bcqqVar != bcqq.a ? bcqqVar : (bcqq) eqgc.r(a3);
+                }
+            }, eqgoVar);
+        } else {
+            a = ((bcqj) bcqdVar2).a(str, str2, atwhVar, str3);
+        }
+        eqgc.t(a, new bcrg(bcrjVar), bcrjVar.f.b);
+        k = bcnt.b(M, this);
+        bcpw.b(this);
+        List list = ac().f;
+        if (!list.contains(this)) {
+            list.add(this);
+        }
+        this.t = registerForActivityResult(new acq(), new aby() { // from class: bcqz
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
+                ausn ausnVar = FeedbackAlohaChimeraActivity.j;
+            }
+        });
+    }
+
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
+    protected final void onDestroy() {
+        bctb bctbVar = this.l;
+        if (bctbVar != null) {
+            try {
+                bctc d = bctbVar.d();
+                if (d != null) {
+                    d.fH(3, d.fE());
+                }
+            } catch (RemoteException e) {
+                ((eluo) ((eluo) ((eluo) j.i()).s(e)).ai((char) 3668)).x("Unable to notify callback");
+            }
+        }
+        bcpw.d(null);
         ac().f.remove(this);
-        ((bann) this.q).b = null;
-        if (!fnte.c()) {
+        ((bcrj) this.q).b = null;
+        if (!fqln.c()) {
             ac().b();
         } else if (isFinishing()) {
             ac().b();
         }
         if (this.l != null) {
-            asiu.a().b(this, this.p);
+            aumo.a().b(this, this.p);
         }
         super.onDestroy();
     }
 
-    @Override // defpackage.qet, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onKeyDown(int i, KeyEvent keyEvent) {
         if (i != 4) {
             return super.onKeyDown(i, keyEvent);
         }
-        bajp ae = ae();
+        bcnl ae = ae();
         if (ae == null || ae.w() || m == null) {
             p();
             return true;
         }
-        rbj.b();
+        sun.b();
         return true;
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
-        bann bannVar;
-        banc a;
+        bcrj bcrjVar;
+        bcqy a;
         if (intent.getBooleanExtra("com.android.feedback.DISMISS_SELF_EXTRA", false)) {
             p();
             return;
         }
         if (ae() != null && intent != null) {
             ErrorReport M = M(intent);
-            bajp ae = ae();
-            eiig.x(ae);
+            bcnl ae = ae();
+            ekvl.y(ae);
             ErrorReport b = ae.b();
             if (b != null && !TextUtils.isEmpty(M.R) && !TextUtils.isEmpty(b.R) && TextUtils.equals(M.R, b.R)) {
                 return;
             }
         }
         setIntent(intent);
-        bakg.a();
+        bcoc.a();
         ac().b();
         ErrorReport M2 = M(intent);
         super.onNewIntent(intent);
-        if (Build.VERSION.SDK_INT >= 26 && aa() && fnth.d()) {
+        if (Build.VERSION.SDK_INT >= 26 && aa() && fqlq.d()) {
             if (this.s == null) {
                 this.s = (KeyguardManager) getSystemService("keyguard");
             }
@@ -766,84 +1082,84 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
                 return;
             }
         }
-        bajp W = W(intent, M2);
+        bcnl W = W(intent, M2);
         if (W == null) {
             finish();
             return;
         }
         W.n();
         ac().e = this.n;
-        if (M2.E || (a = (bannVar = (bann) this.q).a()) == null) {
+        if (M2.E || (a = (bcrjVar = (bcrj) this.q).a()) == null) {
             return;
         }
-        bamh bamhVar = bannVar.c;
-        String str = bannVar.g.a.packageName;
-        ErrorReport errorReport = bannVar.g;
-        epnk b2 = ((bamn) bamhVar).b(bamn.d(str, errorReport.P, errorReport.ap));
+        bcqd bcqdVar = bcrjVar.c;
+        String str = bcrjVar.g.a.packageName;
+        ErrorReport errorReport = bcrjVar.g;
+        esbj b2 = ((bcqj) bcqdVar).b(bcqj.d(str, errorReport.P, errorReport.ap));
         if (b2 == null) {
             try {
-                b2 = ((bamn) bamhVar).b.a();
+                b2 = ((bcqj) bcqdVar).b.a();
             } catch (InterruptedException e) {
-                ((ejhf) ((ejhf) ((ejhf) bamn.a.h()).s(e)).ah((char) 3645)).x("Unable to fetch app bundled ui tree.");
+                ((eluo) ((eluo) ((eluo) bcqj.a.h()).s(e)).ai((char) 3651)).x("Unable to fetch app bundled ui tree.");
                 b2 = null;
             }
         }
         if (b2 == null) {
             a.r();
         } else {
-            bannVar.b();
+            bcrjVar.b();
             a.C(b2);
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onRestoreInstanceState(Bundle bundle) {
         super.onRestoreInstanceState(bundle);
-        if (fnte.c()) {
+        if (fqln.c()) {
             return;
         }
-        bakg.a();
+        bcoc.a();
         if (ae() != null) {
-            bajp ae = ae();
-            eiig.x(ae);
+            bcnl ae = ae();
+            ekvl.y(ae);
             ae.j(bundle);
             return;
         }
-        bamw ab = ab();
-        bajp bajpVar = new bajp(this, bundle);
-        ab.d.b = bajpVar;
-        ac().b = bajpVar;
-        bajp ae2 = ae();
-        eiig.x(ae2);
+        bcqs ab = ab();
+        bcnl bcnlVar = new bcnl(this, bundle);
+        ab.d.b = bcnlVar;
+        ac().b = bcnlVar;
+        bcnl ae2 = ae();
+        ekvl.y(ae2);
         ae2.n();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        if (fnte.c() || ae() == null) {
+        if (fqln.c() || ae() == null) {
             return;
         }
-        bajp ae = ae();
-        eiig.x(ae);
+        bcnl ae = ae();
+        ekvl.y(ae);
         ae.k(bundle);
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStop() {
         super.onStop();
         if (ae() != null) {
-            bajp ae = ae();
-            eiig.x(ae);
+            bcnl ae = ae();
+            ekvl.y(ae);
             ae.l();
         }
     }
 
-    @Override // defpackage.bagv
+    @Override // defpackage.bckr
     public final void p() {
         if (ae() != null) {
-            bajp ae = ae();
-            eiig.x(ae);
+            bcnl ae = ae();
+            ekvl.y(ae);
             ae.l();
         }
         View view = this.o;
@@ -854,113 +1170,113 @@ public class FeedbackAlohaChimeraActivity extends qet implements balz, baka, bag
         Animation loadAnimation = AnimationUtils.loadAnimation(this, R.anim.dui_slide_down);
         loadAnimation.setInterpolator(this, android.R.interpolator.accelerate_decelerate);
         view.startAnimation(loadAnimation);
-        loadAnimation.setAnimationListener(new banj(this, view));
+        loadAnimation.setAnimationListener(new bcrf(this, view));
         Y(Q(), R(), 500);
     }
 
-    @Override // defpackage.bamy
+    @Override // defpackage.bcqu
     public final void q() {
         if (m != null) {
-            rbj.e();
+            sun.e();
         }
     }
 
-    @Override // defpackage.banc
+    @Override // defpackage.bcqy
     public final void r() {
         finish();
     }
 
-    @Override // defpackage.banc
+    @Override // defpackage.bcqy
     public final void s() {
         ((FrameLayout) findViewById(R.id.feedback_content)).removeAllViews();
     }
 
-    @Override // defpackage.banc
+    @Override // defpackage.bcqy
     public final void t() {
-        ag(fwac.b);
+        ag(fywe.b);
     }
 
-    @Override // defpackage.banc
+    @Override // defpackage.bcqy
     public final void u() {
-        ag(fwac.q);
+        ag(fywe.q);
     }
 
-    @Override // defpackage.banc
+    @Override // defpackage.bcqy
     public final void w() {
-        ag(fwac.o);
+        ag(fywe.o);
     }
 
-    @Override // defpackage.banc
+    @Override // defpackage.bcqy
     public final void x() {
         getWindow().getDecorView().setBackgroundColor(R());
         Y(R(), Q(), 300);
         FrameLayout frameLayout = (FrameLayout) findViewById(R.id.feedback_content);
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -2, 80);
-        bana banaVar = new bana(frameLayout.getContext());
-        banaVar.setLayoutParams(layoutParams);
-        frameLayout.addView(banaVar);
-        banaVar.getViewTreeObserver().addOnPreDrawListener(new bang(banaVar));
+        bcqw bcqwVar = new bcqw(frameLayout.getContext());
+        bcqwVar.setLayoutParams(layoutParams);
+        frameLayout.addView(bcqwVar);
+        bcqwVar.getViewTreeObserver().addOnPreDrawListener(new bcrc(bcqwVar));
     }
 
-    @Override // defpackage.banc
-    public final void y(epnk epnkVar) {
+    @Override // defpackage.bcqy
+    public final void y(esbj esbjVar) {
         String str;
         String b;
         Intent intent = getIntent();
         ErrorReport M = M(intent);
-        if (D() && (b = baox.b((str = M.a.packageName), fnnl.o())) != null) {
+        if (D() && (b = bcst.b((str = M.a.packageName), fqfu.o())) != null) {
             try {
             } catch (PackageManager.NameNotFoundException e) {
-                ((ejhf) ((ejhf) ((ejhf) j.i()).s(e)).ah((char) 3664)).x("Unable to compare versions");
+                ((eluo) ((eluo) ((eluo) j.i()).s(e)).ai((char) 3670)).x("Unable to compare versions");
             }
-            if (baox.a(getPackageManager().getPackageInfo(str, 0).versionName, b) <= 0) {
+            if (bcst.a(getPackageManager().getPackageInfo(str, 0).versionName, b) <= 0) {
                 P(119, M);
-                banh banhVar = new banh(this, M(intent), intent, epnkVar);
-                bans bansVar = new bans();
-                bansVar.ag = banhVar;
-                bansVar.show(getSupportFragmentManager(), "UpgradeDialog");
-                bivj.a(z(), this);
+                bcrd bcrdVar = new bcrd(this, M(intent), intent, esbjVar);
+                bcro bcroVar = new bcro();
+                bcroVar.ag = bcrdVar;
+                bcroVar.show(getSupportFragmentManager(), "UpgradeDialog");
+                bkzy.a(z(), this);
             }
         }
         P(8, M);
         boolean isEmpty = TextUtils.isEmpty(intent.getStringExtra("com.android.feedback.SAFEPARCELABLE_SESSION_ID"));
-        this.p = new bani(this, !isEmpty, intent, epnkVar);
-        asiu.a().d(this, new Intent().setClassName(this, "com.google.android.gms.feedback.FeedbackAsyncService"), this.p, 1);
+        this.p = new bcre(this, !isEmpty, intent, esbjVar);
+        aumo.a().d(this, new Intent().setClassName(this, "com.google.android.gms.feedback.FeedbackAsyncService"), this.p, 1);
         if (isEmpty) {
-            O(intent, epnkVar);
+            O(intent, esbjVar);
         }
-        bivj.a(z(), this);
+        bkzy.a(z(), this);
     }
 
-    @Override // defpackage.baka
-    public final ensv z() {
-        return baoy.a().a.d().a;
+    @Override // defpackage.bcnw
+    public final eqgo z() {
+        return bcsu.a().a.d().a;
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final void E() {
     }
 
-    @Override // defpackage.baka, defpackage.bajq
+    @Override // defpackage.bcnw, defpackage.bcnm
     public final Context b() {
         return this;
     }
 
-    @Override // defpackage.bagv
-    public final baka c() {
+    @Override // defpackage.bckr
+    public final bcnw c() {
         return this;
     }
 
-    @Override // defpackage.bajq
-    public final bagv v() {
+    @Override // defpackage.bcnm
+    public final bckr v() {
         return this;
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final void L(ErrorReport errorReport) {
     }
 
-    @Override // defpackage.bajq
+    @Override // defpackage.bcnm
     public final void N(boolean z) {
     }
 }

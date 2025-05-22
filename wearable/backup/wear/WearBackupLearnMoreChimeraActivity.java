@@ -6,37 +6,37 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.wearable.backup.wear.WearBackupLearnMoreChimeraActivity;
-import defpackage.arxo;
-import defpackage.djlh;
-import defpackage.djli;
-import defpackage.djlj;
-import defpackage.djtb;
-import defpackage.qfp;
+import defpackage.auad;
+import defpackage.dlxa;
+import defpackage.dlxb;
+import defpackage.dlxc;
+import defpackage.dmeu;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class WearBackupLearnMoreChimeraActivity extends qfp {
+public class WearBackupLearnMoreChimeraActivity extends ryt {
     public static final /* synthetic */ int j = 0;
-    private static final arxo k = new djlj("WearBackupLearnMore");
+    private static final auad k = new dlxc("WearBackupLearnMore");
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         k.j("onCreate", new Object[0]);
         setContentView(R.layout.wear_backup_learn_more_activity);
-        djtb.a(this, findViewById(R.id.container));
+        dmeu.a(this, findViewById(R.id.container));
         TextView textView = (TextView) findViewById(R.id.storage_quota_header);
         if (getIntent().getLongExtra("total_quota_bytes", 0L) == 0) {
             textView.setText(getString(R.string.backup_opt_in_default_storage_header));
         } else {
-            textView.setText(getString(R.string.backup_opt_in_storage_header, new Object[]{djlh.b(this, getIntent().getLongExtra("total_quota_bytes", 0L))}));
+            textView.setText(getString(R.string.backup_opt_in_storage_header, new Object[]{dlxa.b(this, getIntent().getLongExtra("total_quota_bytes", 0L))}));
         }
-        ((Button) findViewById(R.id.close_btn)).setOnClickListener(new View.OnClickListener() { // from class: djvu
+        ((Button) findViewById(R.id.close_btn)).setOnClickListener(new View.OnClickListener() { // from class: dmhn
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 WearBackupLearnMoreChimeraActivity.this.finish();
             }
         });
-        djli.a((TextView) findViewById(R.id.storage_quota_body));
+        dlxb.a((TextView) findViewById(R.id.storage_quota_body));
     }
 }

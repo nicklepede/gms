@@ -6,18 +6,18 @@ import android.os.Bundle;
 import com.google.android.chimera.BoundService;
 import com.google.android.gms.common.apiservice.ILifecycleSynchronizerRequired;
 import com.google.android.gms.common.apiservice.LifecycleSynchronizer;
-import defpackage.aoci;
-import defpackage.aoco;
-import defpackage.aocv;
-import defpackage.asng;
-import defpackage.fmqj;
-import defpackage.prq;
-import defpackage.prt;
-import defpackage.pse;
+import defpackage.aqea;
+import defpackage.aqeg;
+import defpackage.aqen;
+import defpackage.aura;
+import defpackage.fpih;
+import defpackage.rku;
+import defpackage.rkx;
+import defpackage.rli;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class GmsBoundBrokerChimeraService extends prq {
+public class GmsBoundBrokerChimeraService extends rku {
     private static final LifecycleSynchronizer d = new LifecycleSynchronizer();
     private LifecycleSynchronizer e;
 
@@ -27,19 +27,20 @@ public class GmsBoundBrokerChimeraService extends prq {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    private final void f(pse pseVar, BoundService boundService) {
+    private final void f(rli rliVar, BoundService boundService) {
         if (boundService instanceof ILifecycleSynchronizerRequired) {
             LifecycleSynchronizer g = g();
-            if (fmqj.a.a().d() || e(boundService)) {
-                g = fmqj.a.a().k() ? new aoci(pseVar, g) : new aoci(boundService, g);
+            fpih fpihVar = fpih.a;
+            if (fpihVar.lK().d() || e(boundService)) {
+                g = fpihVar.lK().k() ? new aqea(rliVar, g) : new aqea(boundService, g);
             }
             ((ILifecycleSynchronizerRequired) boundService).setLifecycleSynchronizer(g);
         }
     }
 
-    @Override // defpackage.prq, defpackage.prp
-    protected final pse a(prt prtVar) {
-        pse a = super.a(prtVar);
+    @Override // defpackage.rku, defpackage.rkt
+    protected final rli a(rkx rkxVar) {
+        rli a = super.a(rkxVar);
         if (a == null) {
             return null;
         }
@@ -50,38 +51,38 @@ public class GmsBoundBrokerChimeraService extends prq {
     @Override // android.content.ContextWrapper
     protected final void attachBaseContext(Context context) {
         super.attachBaseContext(context);
-        ((prq) this).c = new aoco(this);
+        ((rku) this).c = new aqeg(this);
     }
 
-    @Override // defpackage.prq
+    @Override // defpackage.rku
     protected final BoundService c(String str, String str2) {
         int i = GmsBoundServiceRouter.a;
-        aocv aocvVar = new aocv();
+        aqen aqenVar = new aqen();
         Bundle bundle = new Bundle();
-        bundle.putBinder("lifecycleSynchronizer", aocvVar);
-        GmsBoundServiceRouter gmsBoundServiceRouter = new GmsBoundServiceRouter(this, str, str2, bundle, aocvVar);
+        bundle.putBinder("lifecycleSynchronizer", aqenVar);
+        GmsBoundServiceRouter gmsBoundServiceRouter = new GmsBoundServiceRouter(this, str, str2, bundle, aqenVar);
         gmsBoundServiceRouter.setModuleContext(this);
         return gmsBoundServiceRouter;
     }
 
-    @Override // defpackage.prq
-    public final pse d(prt prtVar, pse pseVar) {
-        pse d2 = super.d(prtVar, pseVar);
+    @Override // defpackage.rku
+    public final rli d(rkx rkxVar, rli rliVar) {
+        rli d2 = super.d(rkxVar, rliVar);
         if (d2 == null) {
             return null;
         }
-        f(pseVar, d2.getBoundService());
+        f(rliVar, d2.getBoundService());
         return d2;
     }
 
     public final LifecycleSynchronizer g() {
-        if (this.e == d && !asng.V()) {
+        if (this.e == d && !aura.V()) {
             this.e = new LifecycleSynchronizer(this);
         }
         return this.e;
     }
 
-    @Override // defpackage.prp, com.google.android.chimera.Service
+    @Override // defpackage.rkt, com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
         g().onServiceStart();
         return 2;

@@ -19,7 +19,7 @@ import java.security.spec.ECPrivateKeySpec;
 import java.security.spec.InvalidKeySpecException;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 final class OpenSSLECPrivateKey implements ECPrivateKey, OpenSSLKeyHolder {
     private static final String ALGORITHM = "EC";
@@ -63,7 +63,7 @@ final class OpenSSLECPrivateKey implements ECPrivateKey, OpenSSLKeyHolder {
         if (params != null) {
             return wrapJCAPrivateKeyForTLSStackOnly(privateKey, params);
         }
-        throw new InvalidKeyException(a.G(publicKey, privateKey, "EC parameters not available. Private: ", ", public: "));
+        throw new InvalidKeyException(a.J(publicKey, privateKey, "EC parameters not available. Private: ", ", public: "));
     }
 
     static OpenSSLKey wrapPlatformKey(ECPrivateKey eCPrivateKey) {

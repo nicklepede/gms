@@ -9,19 +9,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import com.google.android.chimera.Activity;
-import defpackage.dilq;
-import defpackage.efwo;
-import defpackage.iuo;
-import defpackage.kzq;
-import defpackage.laj;
+import com.google.android.chimera.android.Activity;
+import defpackage.dkxb;
+import defpackage.eijr;
+import defpackage.iwe;
+import defpackage.msl;
+import defpackage.mte;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class CollapsibleCardContentsView extends LinearLayout implements View.OnClickListener {
     public Activity a;
-    laj b;
-    kzq c;
+    mte b;
+    msl c;
     public boolean d;
     public FrameLayout e;
     public LinearLayout f;
@@ -33,14 +33,14 @@ public class CollapsibleCardContentsView extends LinearLayout implements View.On
         this.h = 1;
     }
 
-    private final laj b() {
+    private final mte b() {
         View findViewById;
         if (this.b == null && (findViewById = this.a.findViewById(R.id.content)) != null) {
-            this.b = new laj();
-            kzq kzqVar = new kzq((ViewGroup) findViewById);
-            this.c = kzqVar;
-            kzqVar.b = new dilq(this);
-            this.b.d(kzqVar, efwo.s());
+            this.b = new mte();
+            msl mslVar = new msl((ViewGroup) findViewById);
+            this.c = mslVar;
+            mslVar.b = new dkxb(this);
+            this.b.d(mslVar, eijr.s());
         }
         return this.b;
     }
@@ -52,7 +52,7 @@ public class CollapsibleCardContentsView extends LinearLayout implements View.On
             cardHeaderView.d(z);
             this.e.setContentDescription(this.g.a());
             CardHeaderView cardHeaderView2 = this.g;
-            int[] iArr = iuo.a;
+            int[] iArr = iwe.a;
             cardHeaderView2.setImportantForAccessibility(2);
         }
         this.f.setVisibility(true != this.d ? 8 : 0);
@@ -65,7 +65,7 @@ public class CollapsibleCardContentsView extends LinearLayout implements View.On
         if (cardHeaderView != null) {
             cardHeaderView.requestFocus();
         }
-        if (!efwo.S(this.a) || b() == null) {
+        if (!eijr.S(this.a) || b() == null) {
             a(false);
         } else {
             b().e(this.c);

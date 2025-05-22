@@ -10,7 +10,7 @@ import java.security.Signature;
 import java.security.SignatureException;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class LogInfo {
     public static final int STATE_PENDING = 1;
@@ -28,7 +28,7 @@ public class LogInfo {
     private final long stateTimestamp;
     private final String url;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Builder {
         private String description;
         private byte[] logId;

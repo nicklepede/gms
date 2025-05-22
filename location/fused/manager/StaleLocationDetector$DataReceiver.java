@@ -8,27 +8,27 @@ import android.net.wifi.WifiManager;
 import android.text.TextUtils;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.location.fused.manager.StaleLocationDetector$DataReceiver;
-import defpackage.asmf;
-import defpackage.bzso;
+import defpackage.aupz;
+import defpackage.ccbf;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class StaleLocationDetector$DataReceiver extends TracingBroadcastReceiver {
-    public final /* synthetic */ bzso a;
+    public final /* synthetic */ ccbf a;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public StaleLocationDetector$DataReceiver(bzso bzsoVar) {
+    public StaleLocationDetector$DataReceiver(ccbf ccbfVar) {
         super("location");
-        this.a = bzsoVar;
+        this.a = ccbfVar;
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, final Intent intent) {
+    public final void jP(Context context, final Intent intent) {
         final String action = intent.getAction();
         if (action == null) {
             return;
         }
-        new asmf(1, 9).execute(new Runnable() { // from class: bzsm
+        new aupz(1, 9).execute(new Runnable() { // from class: ccbd
             /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
             @Override // java.lang.Runnable
             public final void run() {
@@ -101,7 +101,7 @@ public class StaleLocationDetector$DataReceiver extends TracingBroadcastReceiver
                 String str3 = null;
                 if (z2) {
                     WifiManager wifiManager = staleLocationDetector$DataReceiver.a.d;
-                    eiig.x(wifiManager);
+                    ekvl.y(wifiManager);
                     WifiInfo connectionInfo = wifiManager.getConnectionInfo();
                     str = connectionInfo != null ? connectionInfo.getBSSID() : null;
                     if (str != null) {
@@ -111,19 +111,19 @@ public class StaleLocationDetector$DataReceiver extends TracingBroadcastReceiver
                     z = z2;
                     str = null;
                 }
-                bzso bzsoVar = staleLocationDetector$DataReceiver.a;
-                synchronized (bzsoVar) {
-                    if (bzsoVar.g == z) {
-                        if (z && !TextUtils.equals(str, bzsoVar.h)) {
+                ccbf ccbfVar = staleLocationDetector$DataReceiver.a;
+                synchronized (ccbfVar) {
+                    if (ccbfVar.g == z) {
+                        if (z && !TextUtils.equals(str, ccbfVar.h)) {
                             z = true;
                         }
                     }
-                    bzsoVar.g = z;
+                    ccbfVar.g = z;
                     if (true == z) {
                         str3 = str;
                     }
-                    bzsoVar.h = str3;
-                    bzsoVar.a.add(new eiie(Boolean.valueOf(z), bzsoVar.h));
+                    ccbfVar.h = str3;
+                    ccbfVar.a.add(new ekvj(Boolean.valueOf(z), ccbfVar.h));
                 }
             }
         });

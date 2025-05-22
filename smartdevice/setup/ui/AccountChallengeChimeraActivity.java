@@ -4,107 +4,107 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.R;
-import defpackage.arjz;
-import defpackage.arkc;
-import defpackage.arwm;
-import defpackage.arxo;
+import defpackage.atmo;
+import defpackage.atmr;
+import defpackage.atzb;
+import defpackage.auad;
 import defpackage.bp;
-import defpackage.ddpz;
-import defpackage.degi;
-import defpackage.degj;
-import defpackage.degm;
-import defpackage.degn;
-import defpackage.dego;
-import defpackage.degp;
-import defpackage.degq;
-import defpackage.denq;
 import defpackage.dg;
-import defpackage.fkhl;
+import defpackage.dgbe;
+import defpackage.dgrl;
+import defpackage.dgrm;
+import defpackage.dgrp;
+import defpackage.dgrq;
+import defpackage.dgrr;
+import defpackage.dgrs;
+import defpackage.dgrt;
+import defpackage.dgyt;
+import defpackage.fmya;
 import defpackage.ip;
-import defpackage.qex;
-import defpackage.vnp;
-import defpackage.vog;
+import defpackage.ryb;
+import defpackage.xjq;
+import defpackage.xkh;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class AccountChallengeChimeraActivity extends qex implements degp {
-    private static final arxo i = new denq(new String[]{"Setup", "UI", "AccountChallengeChimeraActivity"});
-    vog h;
-    private degq j;
+public class AccountChallengeChimeraActivity extends ryb implements dgrs {
+    private static final auad i = new dgyt(new String[]{"Setup", "UI", "AccountChallengeChimeraActivity"});
+    xkh h;
+    private dgrt j;
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void o(int i2) {
         i.j("onAccountChallengesCompleted(errorCode=%s)", Integer.valueOf(i2));
-        this.h.c("com.google", 2).o(getContainerActivity(), new degj(this, new Intent()));
+        this.h.c("com.google", 2).o(getContainerActivity(), new dgrm(this, new Intent()));
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         boolean z = false;
         i.j("onBackPressed", new Object[0]);
-        degq degqVar = this.j;
-        if (degqVar.c != null) {
+        dgrt dgrtVar = this.j;
+        if (dgrtVar.c != null) {
             return;
         }
-        String str = degqVar.a;
-        if (str != null && str.equals(degqVar.d.l)) {
+        String str = dgrtVar.a;
+        if (str != null && str.equals(dgrtVar.d.l)) {
             z = true;
         }
-        degm degmVar = new degm(degqVar);
-        Context context = degqVar.getContext();
+        dgrp dgrpVar = new dgrp(dgrtVar);
+        Context context = dgrtVar.getContext();
         if (context != null) {
-            ip a = ddpz.a(context);
+            ip a = dgbe.a(context);
             a.c(true);
-            a.j(R.string.smartdevice_d2d_target_skip_primary_account_alert_title);
-            a.setPositiveButton(R.string.common_skip, degmVar);
-            a.setNegativeButton(R.string.common_cancel, degmVar);
-            a.p(new degn(degqVar));
+            a.l(R.string.smartdevice_d2d_target_skip_primary_account_alert_title);
+            a.setPositiveButton(R.string.common_skip, dgrpVar);
+            a.setNegativeButton(R.string.common_cancel, dgrpVar);
+            a.i(new dgrq(dgrtVar));
             if (z) {
-                a.m(R.string.smartdevice_d2d_target_skip_primary_account_alert_message);
+                a.o(R.string.smartdevice_d2d_target_skip_primary_account_alert_message);
             }
-            degqVar.c = a.create();
-            degqVar.c.show();
+            dgrtVar.c = a.create();
+            dgrtVar.c.show();
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (fkhl.c()) {
-            arjz.a(this);
+        if (fmya.c()) {
+            atmo.a(this);
         }
-        arkc.g(this);
+        atmr.g(this);
         setContentView(R.layout.smartdevice_fragment_container);
-        int i2 = vnp.a;
-        this.h = new vog(this, null);
+        int i2 = xjq.a;
+        this.h = new xkh(this, null);
         ArrayList parcelableArrayListExtra = getIntent().getParcelableArrayListExtra("accounts");
         boolean z = false;
         if (parcelableArrayListExtra != null && !parcelableArrayListExtra.isEmpty()) {
             z = true;
         }
-        arwm.b(z);
+        atzb.b(z);
         if (bundle != null) {
-            dg h = gI().h("challengeFragment");
-            arwm.s(h);
-            this.j = (degq) h;
+            dg h = gY().h("challengeFragment");
+            atzb.s(h);
+            this.j = (dgrt) h;
         } else {
-            this.j = dego.b(parcelableArrayListExtra, null, null, null, -1, true, false, false, null);
-            bp bpVar = new bp(gI());
+            this.j = dgrr.b(parcelableArrayListExtra, null, null, null, -1, true, false, false, null);
+            bp bpVar = new bp(gY());
             bpVar.z(R.id.fragment_container, this.j, "challengeFragment");
             bpVar.a();
         }
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void p(ArrayList arrayList) {
         i.j("onAccountChallengesCompleted(accounts.size()=%s)", Integer.valueOf(arrayList != null ? arrayList.size() : 0));
         Intent intent = new Intent();
         intent.putExtra("accounts", arrayList);
-        this.h.c("com.google", 1).o(getContainerActivity(), new degi(this, intent));
+        this.h.c("com.google", 1).o(getContainerActivity(), new dgrl(this, intent));
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void x(String str) {
     }
 }

@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aoix;
-import defpackage.arxc;
-import defpackage.fvbo;
+import defpackage.aqkq;
+import defpackage.atzr;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class ModuleItem extends AbstractSafeParcelable implements ReflectedParcelable, Comparable {
-    public static final Parcelable.Creator CREATOR = new aoix();
+    public static final Parcelable.Creator CREATOR = new aqkq();
     public final int a;
     public final String b;
     public final int c;
@@ -24,10 +24,10 @@ public final class ModuleItem extends AbstractSafeParcelable implements Reflecte
     public final String j;
 
     public ModuleItem(int i, String str, int i2, String str2, int i3, long j, String str3, int i4, boolean z, String str4) {
-        fvbo.f(str, "moduleId");
-        fvbo.f(str2, "apkPath");
-        fvbo.f(str3, "apkVersionName");
-        fvbo.f(str4, "apkPackageName");
+        fxxm.f(str, "moduleId");
+        fxxm.f(str2, "apkPath");
+        fxxm.f(str3, "apkVersionName");
+        fxxm.f(str4, "apkPackageName");
         this.a = i;
         this.b = str;
         this.c = i2;
@@ -43,25 +43,25 @@ public final class ModuleItem extends AbstractSafeParcelable implements Reflecte
     @Override // java.lang.Comparable
     public final /* bridge */ /* synthetic */ int compareTo(Object obj) {
         ModuleItem moduleItem = (ModuleItem) obj;
-        fvbo.f(moduleItem, "other");
+        fxxm.f(moduleItem, "other");
         return this.b.compareTo(moduleItem.b);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "out");
+        fxxm.f(parcel, "out");
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.o(parcel, 5, this.e);
-        arxc.q(parcel, 6, this.f);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.o(parcel, 8, this.h);
-        arxc.e(parcel, 9, this.i);
-        arxc.v(parcel, 10, this.j, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.o(parcel, 5, this.e);
+        atzr.q(parcel, 6, this.f);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.o(parcel, 8, this.h);
+        atzr.e(parcel, 9, this.i);
+        atzr.v(parcel, 10, this.j, false);
+        atzr.c(parcel, a);
     }
 }

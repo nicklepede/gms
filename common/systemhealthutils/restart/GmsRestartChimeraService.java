@@ -1,38 +1,38 @@
 package com.google.android.gms.common.systemhealthutils.restart;
 
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.argg;
-import defpackage.arpo;
-import defpackage.arpu;
-import defpackage.asqj;
-import defpackage.byln;
-import defpackage.emyr;
-import defpackage.fmzj;
+import defpackage.ativ;
+import defpackage.atsd;
+import defpackage.atsj;
+import defpackage.auud;
+import defpackage.cauf;
+import defpackage.epmi;
+import defpackage.fpri;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public abstract class GmsRestartChimeraService extends GmsTaskChimeraService {
-    private final arpu a;
+    private final atsj a;
 
     public GmsRestartChimeraService() {
-        this(new arpu());
+        this(new atsj());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (TimeUnit.MILLISECONDS.toSeconds(asqj.a()) < fmzj.b()) {
-            argg.a(this);
+    public final int a(cauf caufVar) {
+        if (TimeUnit.MILLISECONDS.toSeconds(auud.a()) < fpri.b()) {
+            ativ.a(this);
             return 0;
         }
-        if (fmzj.g() && d()) {
-            arpu arpuVar = this.a;
-            emyr emyrVar = emyr.SCHEDULED_IDLE;
-            if (fmzj.g()) {
-                arpo arpoVar = new arpo();
-                arpoVar.b = this;
-                arpoVar.a = emyrVar;
-                arpuVar.b(arpoVar.a());
+        if (fpri.g() && d()) {
+            atsj atsjVar = this.a;
+            epmi epmiVar = epmi.SCHEDULED_IDLE;
+            if (fpri.g()) {
+                atsd atsdVar = new atsd();
+                atsdVar.b = this;
+                atsdVar.a = epmiVar;
+                atsjVar.b(atsdVar.a());
             }
         }
         return 0;
@@ -40,7 +40,7 @@ public abstract class GmsRestartChimeraService extends GmsTaskChimeraService {
 
     public abstract boolean d();
 
-    public GmsRestartChimeraService(arpu arpuVar) {
-        this.a = arpuVar;
+    public GmsRestartChimeraService(atsj atsjVar) {
+        this.a = atsjVar;
     }
 }

@@ -1,11 +1,11 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eiif;
+import defpackage.ekvk;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DigitalDocument extends Thing {
     public final Conversation a;
@@ -18,11 +18,11 @@ public class DigitalDocument extends Thing {
     public DigitalDocument(String str, String str2, String str3, List list, List list2, Conversation conversation, String str4, Person person, String str5, String str6, String str7, G3AttributionInfo g3AttributionInfo) {
         super(str, str2, str3, list, list2, g3AttributionInfo);
         this.a = conversation;
-        this.b = eiif.b(str4);
+        this.b = ekvk.b(str4);
         this.c = person;
-        this.d = eiif.b(str5);
-        this.e = eiif.b(str6);
-        this.f = eiif.b(str7);
+        this.d = ekvk.b(str5);
+        this.e = ekvk.b(str6);
+        this.f = ekvk.b(str7);
     }
 
     @Override // com.google.android.gms.icing.shim.schemas.Thing

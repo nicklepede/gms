@@ -4,84 +4,84 @@ import android.content.Context;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.federated.FederatedTaskIdentityDataService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byjl;
-import defpackage.byln;
-import defpackage.dasm;
-import defpackage.dasr;
-import defpackage.dxkm;
-import defpackage.eiho;
-import defpackage.ejhf;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.frvo;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.casd;
+import defpackage.cauf;
+import defpackage.ddcu;
+import defpackage.ddcz;
+import defpackage.dzwm;
+import defpackage.ekut;
+import defpackage.eluo;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fuqi;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class FederatedTaskIdentityDataService extends GmsTaskBoundService {
-    private dasm c;
-    private static final asot b = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "FederatedTaskIdentityDataService");
+    private ddcu c;
+    private static final ausn b = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "FederatedTaskIdentityDataService");
     public static final String a = FederatedTaskIdentityDataService.class.getName();
 
     public static void d(Context context) {
-        byjl.a(context).d("FederatedTaskIdentityDataService", a);
+        casd.a(context).d("FederatedTaskIdentityDataService", a);
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
+    public final eqgl iB(cauf caufVar) {
         Context a2 = AppContextProvider.a();
-        if (!frvo.z()) {
-            ((ejhf) ((ejhf) b.h()).ah((char) 10408)).x("Flag to run FederatedTaskIdentityDataService disabled. Not scheduling task");
+        if (!fuqi.z()) {
+            ((eluo) ((eluo) b.h()).ai((char) 10414)).x("Flag to run FederatedTaskIdentityDataService disabled. Not scheduling task");
             d(a2);
-            return ensj.i(2);
+            return eqgc.i(2);
         }
         if (this.c == null) {
-            this.c = new dasr();
+            this.c = new ddcz();
         }
-        dasm dasmVar = this.c;
+        ddcu ddcuVar = this.c;
         final AtomicInteger atomicInteger = new AtomicInteger(0);
-        dxkm dxkmVar = ((dasr) dasmVar).a;
-        eiho eihoVar = new eiho() { // from class: dasp
-            @Override // defpackage.eiho
+        dzwm dzwmVar = ((ddcz) ddcuVar).a;
+        ekut ekutVar = new ekut() { // from class: ddcx
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                dbck dbckVar = (dbck) obj;
-                fecj fecjVar = (fecj) dbckVar.iB(5, null);
-                fecjVar.X(dbckVar);
-                dbcj dbcjVar = (dbcj) fecjVar;
-                int size = dbckVar.b.size();
-                if (!dbcjVar.b.L()) {
-                    dbcjVar.U();
+                ddms ddmsVar = (ddms) obj;
+                fgrc fgrcVar = (fgrc) ddmsVar.iQ(5, null);
+                fgrcVar.X(ddmsVar);
+                ddmr ddmrVar = (ddmr) fgrcVar;
+                int size = ddmsVar.b.size();
+                if (!ddmrVar.b.L()) {
+                    ddmrVar.U();
                 }
-                ((dbck) dbcjVar.b).b = feeq.a;
+                ((ddms) ddmrVar.b).b = fgtj.a;
                 long currentTimeMillis = System.currentTimeMillis();
-                for (dbci dbciVar : dbckVar.b) {
-                    long days = TimeUnit.MILLISECONDS.toDays(currentTimeMillis - dbciVar.f);
-                    if (dbciVar.e || days <= frvo.a.a().g()) {
-                        dbcjVar.a(dbciVar);
+                for (ddmq ddmqVar : ddmsVar.b) {
+                    long days = TimeUnit.MILLISECONDS.toDays(currentTimeMillis - ddmqVar.f);
+                    if (ddmqVar.e || days <= fuqi.a.lK().g()) {
+                        ddmrVar.a(ddmqVar);
                     }
                 }
-                atomicInteger.set(size - ((dbck) dbcjVar.b).b.size());
-                return (dbck) dbcjVar.Q();
+                atomicInteger.set(size - ((ddms) ddmrVar.b).b.size());
+                return (ddms) ddmrVar.Q();
             }
         };
-        enre enreVar = enre.a;
-        return enps.f(enps.f(dxkmVar.b(eihoVar, enreVar), new eiho() { // from class: dasq
-            @Override // defpackage.eiho
+        eqex eqexVar = eqex.a;
+        return eqdl.f(eqdl.f(dzwmVar.b(ekutVar, eqexVar), new ekut() { // from class: ddcy
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                int i = dasr.b;
+                int i = ddcz.b;
                 return Integer.valueOf(atomicInteger.get());
             }
-        }, enreVar), new eiho() { // from class: dasl
-            @Override // defpackage.eiho
+        }, eqexVar), new ekut() { // from class: ddct
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 String str = FederatedTaskIdentityDataService.a;
                 return 0;
             }
-        }, enreVar);
+        }, eqexVar);
     }
 }

@@ -4,13 +4,13 @@ import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.util.client.h;
-import defpackage.asqg;
+import defpackage.auua;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class PhenotypeFlagChangedIntentOperation extends IntentOperation {
-    static final String a = asqg.f("com.google.android.gms.admob");
-    static final String b = asqg.f("com.google.android.gms");
+    static final String a = auua.f("com.google.android.gms.admob");
+    static final String b = auua.f("com.google.android.gms");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {

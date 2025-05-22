@@ -4,17 +4,17 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.uen;
+import defpackage.atzr;
+import defpackage.wam;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class SearchSpec extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new uen();
+    public static final Parcelable.Creator CREATOR = new wam();
     public final int a;
     final Bundle b;
     public final int c;
@@ -60,29 +60,29 @@ public final class SearchSpec extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
         List list = this.q;
-        arxc.x(parcel, 2, list == null ? Collections.EMPTY_LIST : DesugarCollections.unmodifiableList(list), false);
+        atzr.x(parcel, 2, list == null ? Collections.EMPTY_LIST : DesugarCollections.unmodifiableList(list), false);
         List list2 = this.r;
-        arxc.x(parcel, 3, list2 == null ? Collections.EMPTY_LIST : DesugarCollections.unmodifiableList(list2), false);
-        arxc.g(parcel, 4, this.b, false);
+        atzr.x(parcel, 3, list2 == null ? Collections.EMPTY_LIST : DesugarCollections.unmodifiableList(list2), false);
+        atzr.g(parcel, 4, this.b, false);
         List list3 = this.s;
-        arxc.x(parcel, 5, list3 == null ? Collections.EMPTY_LIST : DesugarCollections.unmodifiableList(list3), false);
-        arxc.o(parcel, 6, this.c);
-        arxc.o(parcel, 7, this.d);
-        arxc.o(parcel, 8, this.e);
-        arxc.o(parcel, 9, this.f);
-        arxc.o(parcel, 10, this.g);
-        arxc.o(parcel, 11, this.h);
-        arxc.g(parcel, 12, this.i, false);
-        arxc.o(parcel, 13, this.j);
-        arxc.o(parcel, 14, this.k);
-        arxc.g(parcel, 15, this.l, false);
-        arxc.t(parcel, 16, this.m, i, false);
-        arxc.v(parcel, 17, this.n, false);
-        arxc.x(parcel, 18, this.o, false);
-        arxc.v(parcel, 19, this.p, false);
-        arxc.c(parcel, a);
+        atzr.x(parcel, 5, list3 == null ? Collections.EMPTY_LIST : DesugarCollections.unmodifiableList(list3), false);
+        atzr.o(parcel, 6, this.c);
+        atzr.o(parcel, 7, this.d);
+        atzr.o(parcel, 8, this.e);
+        atzr.o(parcel, 9, this.f);
+        atzr.o(parcel, 10, this.g);
+        atzr.o(parcel, 11, this.h);
+        atzr.g(parcel, 12, this.i, false);
+        atzr.o(parcel, 13, this.j);
+        atzr.o(parcel, 14, this.k);
+        atzr.g(parcel, 15, this.l, false);
+        atzr.t(parcel, 16, this.m, i, false);
+        atzr.v(parcel, 17, this.n, false);
+        atzr.x(parcel, 18, this.o, false);
+        atzr.v(parcel, 19, this.p, false);
+        atzr.c(parcel, a);
     }
 }

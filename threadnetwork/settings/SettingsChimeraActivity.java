@@ -4,44 +4,44 @@ import android.os.Bundle;
 import com.google.android.apps.common.proguard.UsedByReflection;
 import com.google.android.gms.R;
 import com.google.android.gms.threadnetwork.settings.SettingsChimeraActivity;
-import defpackage.asej;
-import defpackage.asot;
+import defpackage.auid;
+import defpackage.ausn;
 import defpackage.bp;
-import defpackage.dfrp;
-import defpackage.dfsc;
-import defpackage.dftg;
-import defpackage.dftj;
-import defpackage.eble;
+import defpackage.dicu;
+import defpackage.didh;
+import defpackage.diel;
+import defpackage.dieo;
+import defpackage.edxt;
 import defpackage.er;
-import defpackage.fiwq;
-import defpackage.fiws;
-import defpackage.fiwu;
-import defpackage.fsmk;
-import defpackage.fvbo;
-import defpackage.fvct;
-import defpackage.qfp;
+import defpackage.flmn;
+import defpackage.flmp;
+import defpackage.flmr;
+import defpackage.fvhs;
+import defpackage.fxxm;
+import defpackage.fxyr;
+import defpackage.ryt;
 import java.util.Collection;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class SettingsChimeraActivity extends qfp implements fiwu {
-    public static final dfrp j = new dfrp();
-    private final fiws k;
-    private final dftg l;
-    private final dftj m;
+public final class SettingsChimeraActivity extends ryt implements flmr {
+    public static final dicu j = new dicu();
+    private final flmp k;
+    private final diel l;
+    private final dieo m;
 
     static {
-        asot.b("SettingsChimeraActivity", asej.THREADNETWORK);
+        ausn.b("SettingsChimeraActivity", auid.THREADNETWORK);
     }
 
-    public SettingsChimeraActivity(fiws fiwsVar, dftg dftgVar, dftj dftjVar) {
-        fvbo.f(fiwsVar, "androidInjector");
-        fvbo.f(dftgVar, "settingsAnalyticsLogger");
-        fvbo.f(dftjVar, "pageLoggingCallbacks");
-        this.k = fiwsVar;
-        this.l = dftgVar;
-        this.m = dftjVar;
+    public SettingsChimeraActivity(flmp flmpVar, diel dielVar, dieo dieoVar) {
+        fxxm.f(flmpVar, "androidInjector");
+        fxxm.f(dielVar, "settingsAnalyticsLogger");
+        fxxm.f(dieoVar, "pageLoggingCallbacks");
+        this.k = flmpVar;
+        this.l = dielVar;
+        this.m = dieoVar;
     }
 
     @UsedByReflection
@@ -49,34 +49,34 @@ public final class SettingsChimeraActivity extends qfp implements fiwu {
         return j.provideInstance();
     }
 
-    @Override // defpackage.fiwu
-    public final /* synthetic */ fiwq a() {
+    @Override // defpackage.flmr
+    public final /* synthetic */ flmn a() {
         return this.k;
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         getContainerActivity();
-        int i = eble.a;
+        int i = edxt.a;
         setContentView(R.layout.activity_settings);
-        if (fsmk.c()) {
-            this.l.e((bundle == null || !bundle.containsKey("session_id")) ? fvct.a.b() : bundle.getLong("session_id"));
+        if (fvhs.c()) {
+            this.l.e((bundle == null || !bundle.containsKey("session_id")) ? fxyr.a.b() : bundle.getLong("session_id"));
         }
         getSupportFragmentManager().W(this.m, true);
         if (bundle == null) {
             bp bpVar = new bp(getSupportFragmentManager());
-            bpVar.t(R.id.child_fragment_container, new dfsc());
+            bpVar.t(R.id.child_fragment_container, new didh());
             bpVar.w(null);
             bpVar.a();
         }
-        getSupportFragmentManager().q(new er() { // from class: dfro
+        getSupportFragmentManager().q(new er() { // from class: dict
             @Override // defpackage.er
             public final void c() {
                 SettingsChimeraActivity settingsChimeraActivity = SettingsChimeraActivity.this;
                 List o = settingsChimeraActivity.getSupportFragmentManager().o();
-                fvbo.e(o, "getFragments(...)");
-                fvbo.f(o, "<this>");
+                fxxm.e(o, "getFragments(...)");
+                fxxm.f(o, "<this>");
                 if (o instanceof Collection) {
                     if (!o.isEmpty()) {
                         return;
@@ -97,11 +97,11 @@ public final class SettingsChimeraActivity extends qfp implements fiwu {
         });
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
-        fvbo.f(bundle, "outState");
+        fxxm.f(bundle, "outState");
         super.onSaveInstanceState(bundle);
-        if (fsmk.c()) {
+        if (fvhs.c()) {
             bundle.putLong("session_id", this.l.a());
         }
     }

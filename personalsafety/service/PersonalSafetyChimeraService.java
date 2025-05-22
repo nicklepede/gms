@@ -6,69 +6,67 @@ import android.os.IBinder;
 import com.google.android.chimera.Service;
 import com.google.android.gms.chimera.modules.personalsafety.AppContextProvider;
 import com.google.android.gms.personalsafety.service.PersonalSafetyChimeraService;
-import defpackage.asmf;
-import defpackage.asnv;
-import defpackage.asot;
-import defpackage.cvpm;
-import defpackage.cvpo;
-import defpackage.cvsy;
-import defpackage.cvtv;
-import defpackage.cvud;
-import defpackage.cvue;
-import defpackage.cvuj;
-import defpackage.ejhf;
-import defpackage.ensj;
-import defpackage.evqy;
-import defpackage.evvg;
-import defpackage.evwu;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fmzp;
+import defpackage.aupz;
+import defpackage.aurp;
+import defpackage.ausn;
+import defpackage.cxzc;
+import defpackage.cxze;
+import defpackage.cycr;
+import defpackage.cyds;
+import defpackage.cyea;
+import defpackage.cyeb;
+import defpackage.cyeg;
+import defpackage.eluo;
+import defpackage.eqgc;
+import defpackage.eygu;
+import defpackage.eylc;
+import defpackage.eymq;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fpro;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class PersonalSafetyChimeraService extends Service implements cvuj {
+public class PersonalSafetyChimeraService extends Service implements cyeg {
     public static final /* synthetic */ int f = 0;
     private static final AtomicBoolean g = new AtomicBoolean(false);
-    public cvsy a;
-    public asnv b;
+    public cycr a;
+    public aurp b;
     public long c;
     public long d;
-    public cvtv e;
-    private cvpm h;
+    public cyds e;
+    private cxzc h;
 
     public PersonalSafetyChimeraService() {
     }
 
     private final void h() {
-        cvsy cvsyVar = this.a;
-        if (cvsyVar != null) {
-            asot asotVar = cvpo.a;
-            cvsyVar.h.clear();
-            cvsyVar.o.clear();
-            cvsy.a = null;
+        cycr cycrVar = this.a;
+        if (cycrVar != null) {
+            ausn ausnVar = cxze.a;
+            cycrVar.r.clear();
+            cycr.a = null;
         }
-        cvtv cvtvVar = this.e;
-        if (cvtvVar != null) {
-            cvtvVar.e();
+        cyds cydsVar = this.e;
+        if (cydsVar != null) {
+            cydsVar.e();
         }
     }
 
     private final void i(final Context context) {
-        asmf asmfVar = new asmf(Integer.MAX_VALUE, 10);
-        ensj.t(asmfVar.submit(new Callable() { // from class: cvuc
+        aupz aupzVar = new aupz(Integer.MAX_VALUE, 10);
+        eqgc.t(aupzVar.submit(new Callable() { // from class: cydz
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                cvtn cvtnVar;
                 Context context2 = context;
-                cvug a = cvug.a(context2);
-                ejhf ejhfVar = (ejhf) ((ejhf) cvpo.a.h()).ah(8652);
+                cyed a = cyed.a(context2);
+                eluo eluoVar = (eluo) ((eluo) cxze.a.h()).ai(8650);
                 boolean z = a.a;
                 boolean z2 = a.b;
-                ejhfVar.U("Create settings: %b %b %b %b", Boolean.valueOf(z), Boolean.valueOf(z2), Boolean.valueOf(a.c), Boolean.valueOf(a.d));
+                eluoVar.U("Create settings: %b %b %b %b", Boolean.valueOf(z), Boolean.valueOf(z2), Boolean.valueOf(a.c), Boolean.valueOf(a.d));
                 PersonalSafetyChimeraService personalSafetyChimeraService = PersonalSafetyChimeraService.this;
                 boolean z3 = false;
                 if (!z && !z2) {
@@ -76,29 +74,26 @@ public class PersonalSafetyChimeraService extends Service implements cvuj {
                 } else if (!z) {
                     personalSafetyChimeraService.e(11);
                 } else if (z2) {
-                    personalSafetyChimeraService.a = cvsy.b(personalSafetyChimeraService.getApplicationContext());
+                    personalSafetyChimeraService.a = cycr.b(personalSafetyChimeraService.getApplicationContext());
                     personalSafetyChimeraService.f(12);
                     Context applicationContext = personalSafetyChimeraService.getApplicationContext();
-                    cvsy cvsyVar = personalSafetyChimeraService.a;
-                    if (cviv.a == null) {
-                        cviv.a = new cviv(new ArrayList(), cvjz.a(AppContextProvider.a()), new cvvp(), new asmf(Integer.MAX_VALUE, 9));
+                    if (cxsl.a == null) {
+                        cxsl.a = new cxsl(new ArrayList(), cxtp.a(AppContextProvider.a()), new cyfm(), new aupz(Integer.MAX_VALUE, 9));
                     }
-                    cviv cvivVar = cviv.a;
-                    if (!fmzp.aj() || (cvtnVar = cvivVar.c) == null) {
-                        cvsyVar.c(cvivVar);
-                    } else {
-                        cvtnVar.e(cvivVar, cvtm.MANUAL_SCAN_DATA_MANAGER);
+                    cxsl cxslVar = cxsl.a;
+                    cydj cydjVar = cxslVar.e;
+                    if (cydjVar != null) {
+                        cydjVar.f(cxslVar, cydi.MANUAL_SCAN_DATA_MANAGER);
                     }
-                    if (fmzp.ah()) {
-                        cvsf cvsfVar = new cvsf(cvsyVar, applicationContext);
-                        if (fmzp.aj()) {
-                            cvtn.b().e(cvsfVar, cvtm.PRE_RINGING_SCAN_DATA_MANAGER);
-                        } else {
-                            cvsfVar.a.c(cvsfVar);
+                    if (fpro.ak()) {
+                        cybv cybvVar = new cybv(applicationContext);
+                        cydj c = cydj.c();
+                        if (c != null) {
+                            c.f(cybvVar, cydi.PRE_RINGING_SCAN_DATA_MANAGER);
                         }
                     }
                     personalSafetyChimeraService.f(10);
-                    personalSafetyChimeraService.e = cvtv.a(context2);
+                    personalSafetyChimeraService.e = cyds.a(context2);
                     personalSafetyChimeraService.f(9);
                     z3 = true;
                 } else {
@@ -106,27 +101,27 @@ public class PersonalSafetyChimeraService extends Service implements cvuj {
                 }
                 return Boolean.valueOf(z3);
             }
-        }), new cvud(this, context), asmfVar);
+        }), new cyea(this, context), aupzVar);
     }
 
     private final void j() {
-        ((ejhf) ((ejhf) cvpo.a.h()).ah((char) 8666)).x("Init");
-        if (!fmzp.ap() || g.compareAndSet(false, true)) {
+        ((eluo) ((eluo) cxze.a.h()).ai((char) 8664)).x("Init");
+        if (!fpro.ar() || g.compareAndSet(false, true)) {
             final Context applicationContext = getApplicationContext();
-            new asmf(Integer.MAX_VALUE, 10).submit(new Runnable() { // from class: cvub
+            new aupz(Integer.MAX_VALUE, 10).submit(new Runnable() { // from class: cydy
                 @Override // java.lang.Runnable
                 public final void run() {
                     PersonalSafetyChimeraService personalSafetyChimeraService = PersonalSafetyChimeraService.this;
-                    personalSafetyChimeraService.b = asnz.a;
+                    personalSafetyChimeraService.b = aurt.a;
                     personalSafetyChimeraService.c = personalSafetyChimeraService.b.a();
-                    personalSafetyChimeraService.d = cvyt.a();
-                    asot asotVar = cvpo.a;
-                    cvpp.b(personalSafetyChimeraService.c);
-                    if (fmzp.ak()) {
-                        if (cvuk.a == null) {
-                            cvuk.a = new cvuk(applicationContext);
+                    personalSafetyChimeraService.d = cyiq.a();
+                    ausn ausnVar = cxze.a;
+                    cxzf.b(personalSafetyChimeraService.c);
+                    if (fpro.am()) {
+                        if (cyeh.a == null) {
+                            cyeh.a = new cyeh(applicationContext);
                         }
-                        cvuk.a.b = personalSafetyChimeraService;
+                        cyeh.a.b = personalSafetyChimeraService;
                     }
                     personalSafetyChimeraService.a();
                     personalSafetyChimeraService.f(3);
@@ -138,29 +133,29 @@ public class PersonalSafetyChimeraService extends Service implements cvuj {
 
     public final void a() {
         if (this.h == null) {
-            cvpm a = cvpm.a(getApplicationContext());
+            cxzc a = cxzc.a(getApplicationContext());
             this.h = a;
             a.a.b();
         }
     }
 
-    @Override // defpackage.cvuj
+    @Override // defpackage.cyeg
     public final void b(boolean z) {
-        asot asotVar = cvpo.a;
+        ausn ausnVar = cxze.a;
         if (this.e == null) {
-            ((ejhf) ((ejhf) cvpo.a.j()).ah((char) 8680)).x("Auto detection is null. Ignoring power-saver updates.");
+            ((eluo) ((eluo) cxze.a.j()).ai((char) 8678)).x("Auto detection is null. Ignoring power-saver updates.");
             return;
         }
-        cvpm cvpmVar = this.h;
+        cxzc cxzcVar = this.h;
         long a = this.b.a();
-        fecj v = evwu.a.v();
+        fgrc v = eymq.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        evwu evwuVar = (evwu) v.b;
-        evwuVar.b |= 4;
-        evwuVar.e = z;
-        cvpmVar.i(a, (evwu) v.Q());
+        eymq eymqVar = (eymq) v.b;
+        eymqVar.b |= 4;
+        eymqVar.e = z;
+        cxzcVar.i(a, (eymq) v.Q());
         if (z) {
             this.e.b();
         } else {
@@ -168,24 +163,24 @@ public class PersonalSafetyChimeraService extends Service implements cvuj {
         }
     }
 
-    @Override // defpackage.cvuj
+    @Override // defpackage.cyeg
     public final void c(int i) {
         if (i - 1 != 1) {
-            ((ejhf) ((ejhf) cvpo.a.h()).ah((char) 8673)).x("Ble setting turned off, destroy scanners");
+            ((eluo) ((eluo) cxze.a.h()).ai((char) 8671)).x("Ble setting turned off, destroy scanners");
             h();
         } else {
-            ((ejhf) ((ejhf) cvpo.a.h()).ah((char) 8672)).x("Ble setting turned on, re-init module");
+            ((eluo) ((eluo) cxze.a.h()).ai((char) 8670)).x("Ble setting turned on, re-init module");
             i(getApplicationContext());
         }
     }
 
-    @Override // defpackage.cvuj
+    @Override // defpackage.cyeg
     public final void d(int i) {
         if (i - 1 != 1) {
-            ((ejhf) ((ejhf) cvpo.a.h()).ah((char) 8676)).x("Location setting turned off, destroy location scanner");
+            ((eluo) ((eluo) cxze.a.h()).ai((char) 8674)).x("Location setting turned off, destroy location scanner");
             h();
         } else {
-            ((ejhf) ((ejhf) cvpo.a.h()).ah((char) 8675)).x("Location setting turned on, re-init module");
+            ((eluo) ((eluo) cxze.a.h()).ai((char) 8673)).x("Location setting turned on, re-init module");
             i(getApplicationContext());
         }
     }
@@ -199,84 +194,84 @@ public class PersonalSafetyChimeraService extends Service implements cvuj {
     */
     public final void dump(java.io.FileDescriptor r32, java.io.PrintWriter r33, java.lang.String[] r34) {
         /*
-            Method dump skipped, instructions count: 2156
+            Method dump skipped, instructions count: 2137
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.personalsafety.service.PersonalSafetyChimeraService.dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]):void");
     }
 
     public final void e(int i) {
-        if (fmzp.K()) {
+        if (fpro.M()) {
             a();
             this.h.o(i);
         }
     }
 
     public final void f(int i) {
-        if (fmzp.K()) {
+        if (fpro.M()) {
             a();
             this.h.n(i, 0L, 2);
         }
     }
 
-    @Override // defpackage.cvuj
+    @Override // defpackage.cyeg
     public final void g(int i) {
-        asot asotVar = cvpo.a;
-        cvpm cvpmVar = this.h;
+        ausn ausnVar = cxze.a;
+        cxzc cxzcVar = this.h;
         long a = this.b.a();
         long j = this.d;
         long b = this.b.b();
-        fecj v = evvg.a.v();
+        fgrc v = eylc.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        evvg evvgVar = (evvg) fecpVar;
-        evvgVar.b |= 1;
-        evvgVar.c = a;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        eylc eylcVar = (eylc) fgriVar;
+        eylcVar.b |= 1;
+        eylcVar.c = a;
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        evvg evvgVar2 = (evvg) fecpVar2;
-        evvgVar2.b |= 2;
-        evvgVar2.d = j;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v.b;
+        eylc eylcVar2 = (eylc) fgriVar2;
+        eylcVar2.b |= 2;
+        eylcVar2.d = j;
+        if (!fgriVar2.L()) {
             v.U();
         }
-        fecp fecpVar3 = v.b;
-        evvg evvgVar3 = (evvg) fecpVar3;
-        evvgVar3.b |= 4;
-        evvgVar3.e = b;
-        if (!fecpVar3.L()) {
+        fgri fgriVar3 = v.b;
+        eylc eylcVar3 = (eylc) fgriVar3;
+        eylcVar3.b |= 4;
+        eylcVar3.e = b;
+        if (!fgriVar3.L()) {
             v.U();
         }
-        fecp fecpVar4 = v.b;
-        evvg evvgVar4 = (evvg) fecpVar4;
-        evvgVar4.g = 2;
-        evvgVar4.b |= 16;
-        if (!fecpVar4.L()) {
+        fgri fgriVar4 = v.b;
+        eylc eylcVar4 = (eylc) fgriVar4;
+        eylcVar4.g = 2;
+        eylcVar4.b |= 16;
+        if (!fgriVar4.L()) {
             v.U();
         }
-        evvg evvgVar5 = (evvg) v.b;
-        evvgVar5.f = i - 1;
-        evvgVar5.b |= 8;
-        evvg evvgVar6 = (evvg) v.Q();
-        fecj v2 = evqy.a.v();
+        eylc eylcVar5 = (eylc) v.b;
+        eylcVar5.f = i - 1;
+        eylcVar5.b |= 8;
+        eylc eylcVar6 = (eylc) v.Q();
+        fgrc v2 = eygu.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        evqy evqyVar = (evqy) v2.b;
-        evvgVar6.getClass();
-        evqyVar.M = evvgVar6;
-        evqyVar.c |= 8;
-        cvpmVar.m((evqy) v2.Q(), 38);
-        cvtv cvtvVar = this.e;
-        if (cvtvVar != null) {
+        eygu eyguVar = (eygu) v2.b;
+        eylcVar6.getClass();
+        eyguVar.M = eylcVar6;
+        eyguVar.c |= 8;
+        cxzcVar.m((eygu) v2.Q(), 38);
+        cyds cydsVar = this.e;
+        if (cydsVar != null) {
             if (i == 3) {
-                cvtvVar.c();
+                cydsVar.c();
             } else if (i == 2) {
-                cvtvVar.b();
+                cydsVar.b();
             }
         }
     }
@@ -288,7 +283,7 @@ public class PersonalSafetyChimeraService extends Service implements cvuj {
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        if (fmzp.ap() && cvue.c(getApplicationContext())) {
+        if (fpro.ar() && cyeb.c(getApplicationContext())) {
             j();
         }
     }
@@ -304,23 +299,23 @@ public class PersonalSafetyChimeraService extends Service implements cvuj {
         /*
             r3 = this;
             android.content.Context r5 = r3.getApplicationContext()
-            boolean r5 = defpackage.cvue.c(r5)
+            boolean r5 = defpackage.cyeb.c(r5)
             r6 = 1
             if (r5 != 0) goto Ld
             goto Lb4
         Ld:
             if (r4 != 0) goto L21
-            asot r4 = defpackage.cvpo.a
-            ejgq r4 = r4.h()
+            ausn r4 = defpackage.cxze.a
+            eltz r4 = r4.h()
             java.lang.String r5 = "Re-initializing the UTA componentson null intent"
-            r0 = 8664(0x21d8, float:1.2141E-41)
+            r0 = 8662(0x21d6, float:1.2138E-41)
             defpackage.a.A(r4, r5, r0)
             r3.j()
             goto Lb4
         L21:
             r3.a()
             java.lang.String r5 = r4.getAction()
-            defpackage.arwm.s(r5)
+            defpackage.atzb.s(r5)
             int r0 = r5.hashCode()
             r1 = -1214620864(0xffffffffb79a5b40, float:-1.8400722E-5)
             r2 = 2
@@ -354,43 +349,43 @@ public class PersonalSafetyChimeraService extends Service implements cvuj {
             if (r5 == 0) goto Laf
             if (r5 == r6) goto L8f
             if (r5 == r2) goto L77
-            asot r5 = defpackage.cvpo.a
-            ejgq r5 = r5.j()
+            ausn r5 = defpackage.cxze.a
+            eltz r5 = r5.j()
             java.lang.String r4 = r4.getAction()
             java.lang.String r0 = "Unexpected action %s"
-            r1 = 8658(0x21d2, float:1.2132E-41)
-            defpackage.a.S(r5, r0, r4, r1)
+            r1 = 8656(0x21d0, float:1.213E-41)
+            defpackage.a.U(r5, r0, r4, r1)
             goto Lb4
         L77:
-            asot r4 = defpackage.cvpo.a
-            cvtv r4 = r3.e
+            ausn r4 = defpackage.cxze.a
+            cyds r4 = r3.e
             if (r4 == 0) goto L81
             r4.e()
             goto Lb4
         L81:
-            asot r4 = defpackage.cvpo.a
-            ejgq r4 = r4.i()
+            ausn r4 = defpackage.cxze.a
+            eltz r4 = r4.i()
             java.lang.String r5 = "AutoDetection is null. Unable to stop."
-            r0 = 8663(0x21d7, float:1.214E-41)
-            defpackage.a.A(r4, r5, r0)
-            goto Lb4
-        L8f:
-            asot r4 = defpackage.cvpo.a
-            cvtv r4 = r3.e
-            if (r4 == 0) goto La1
-            android.content.Context r5 = r3.getApplicationContext()
-            cvug r5 = defpackage.cvug.a(r5)
-            r4.d(r5)
-            goto Lb4
-        La1:
-            asot r4 = defpackage.cvpo.a
-            ejgq r4 = r4.i()
-            java.lang.String r5 = "AutoDetection is null. Unable to start."
             r0 = 8661(0x21d5, float:1.2137E-41)
             defpackage.a.A(r4, r5, r0)
             goto Lb4
+        L8f:
+            ausn r4 = defpackage.cxze.a
+            cyds r4 = r3.e
+            if (r4 == 0) goto La1
+            android.content.Context r5 = r3.getApplicationContext()
+            cyed r5 = defpackage.cyed.a(r5)
+            r4.d(r5)
+            goto Lb4
+        La1:
+            ausn r4 = defpackage.cxze.a
+            eltz r4 = r4.i()
+            java.lang.String r5 = "AutoDetection is null. Unable to start."
+            r0 = 8659(0x21d3, float:1.2134E-41)
+            defpackage.a.A(r4, r5, r0)
+            goto Lb4
         Laf:
-            asot r4 = defpackage.cvpo.a
+            ausn r4 = defpackage.cxze.a
             r3.j()
         Lb4:
             return r6
@@ -398,9 +393,9 @@ public class PersonalSafetyChimeraService extends Service implements cvuj {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.personalsafety.service.PersonalSafetyChimeraService.onStartCommand(android.content.Intent, int, int):int");
     }
 
-    PersonalSafetyChimeraService(asnv asnvVar, cvtv cvtvVar, cvpm cvpmVar) {
-        this.b = asnvVar;
-        this.e = cvtvVar;
-        this.h = cvpmVar;
+    PersonalSafetyChimeraService(aurp aurpVar, cyds cydsVar, cxzc cxzcVar) {
+        this.b = aurpVar;
+        this.e = cydsVar;
+        this.h = cxzcVar;
     }
 }

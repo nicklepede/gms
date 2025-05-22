@@ -3,21 +3,21 @@ package com.google.android.gms.auth.proximity.phonehub;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.acvm;
-import defpackage.acwa;
-import defpackage.acwb;
-import defpackage.arxo;
-import defpackage.eiho;
-import defpackage.enpf;
-import defpackage.enre;
-import defpackage.flcw;
+import defpackage.aevm;
+import defpackage.aewa;
+import defpackage.aewb;
+import defpackage.auad;
+import defpackage.ekut;
+import defpackage.eqcy;
+import defpackage.eqex;
+import defpackage.fnuf;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class UpdateLocalFeatureStateIntentOperation extends IntentOperation {
-    private static final arxo a = new arxo("ProximityAuth", "UpdateLocalFeatureStateIntentOperation");
+    private static final auad a = new auad("ProximityAuth", "UpdateLocalFeatureStateIntentOperation");
 
     public static Intent a(Context context, String str) {
         Intent startIntent = IntentOperation.getStartIntent(context, UpdateLocalFeatureStateIntentOperation.class, "com.google.android.gms.auth.proximity.phonehub.ACTION_UPDATE_LOCAL_FEATURE_STATE");
@@ -55,51 +55,51 @@ public class UpdateLocalFeatureStateIntentOperation extends IntentOperation {
             try {
                 boolean z2 = true;
                 if (intent.hasExtra("isCameraRollAccessEnabled")) {
-                    acvm.a(stringExtra).i(intent.getBooleanExtra("isCameraRollAccessEnabled", false)).get();
+                    aevm.a(stringExtra).i(intent.getBooleanExtra("isCameraRollAccessEnabled", false)).get();
                     z = true;
                 } else {
                     z = false;
                 }
-                if (intent.hasExtra("isNotificationAccessGranted") && flcw.v()) {
-                    ((enpf) acvm.a(stringExtra).j(intent.getBooleanExtra("isNotificationAccessGranted", false))).u();
+                if (intent.hasExtra("isNotificationAccessGranted") && fnuf.v()) {
+                    ((eqcy) aevm.a(stringExtra).j(intent.getBooleanExtra("isNotificationAccessGranted", false))).u();
                 } else {
                     z2 = z;
                 }
-                if (intent.hasExtra("isPersonalProfileSyncEnabled") && flcw.x()) {
+                if (intent.hasExtra("isPersonalProfileSyncEnabled") && fnuf.x()) {
                     final boolean booleanExtra = intent.getBooleanExtra("isPersonalProfileSyncEnabled", false);
-                    ((enpf) acvm.a(stringExtra).b.b(new eiho() { // from class: acvd
-                        @Override // defpackage.eiho
+                    ((eqcy) aevm.a(stringExtra).b.b(new ekut() { // from class: aevd
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
-                            adbc adbcVar = (adbc) obj;
-                            arxo arxoVar = acvm.a;
-                            fecj fecjVar = (fecj) adbcVar.iB(5, null);
-                            fecjVar.X(adbcVar);
-                            fecj v = adbr.a.v();
+                            afbc afbcVar = (afbc) obj;
+                            auad auadVar = aevm.a;
+                            fgrc fgrcVar = (fgrc) afbcVar.iQ(5, null);
+                            fgrcVar.X(afbcVar);
+                            fgrc v = afbr.a.v();
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            ((adbr) v.b).b = booleanExtra;
-                            adbr adbrVar = (adbr) v.Q();
-                            if (!fecjVar.b.L()) {
-                                fecjVar.U();
+                            ((afbr) v.b).b = booleanExtra;
+                            afbr afbrVar = (afbr) v.Q();
+                            if (!fgrcVar.b.L()) {
+                                fgrcVar.U();
                             }
-                            adbc adbcVar2 = (adbc) fecjVar.b;
-                            adbc adbcVar3 = adbc.a;
-                            adbrVar.getClass();
-                            adbcVar2.e = adbrVar;
-                            adbcVar2.b |= 2;
-                            return (adbc) fecjVar.Q();
+                            afbc afbcVar2 = (afbc) fgrcVar.b;
+                            afbc afbcVar3 = afbc.a;
+                            afbrVar.getClass();
+                            afbcVar2.e = afbrVar;
+                            afbcVar2.b |= 2;
+                            return (afbc) fgrcVar.Q();
                         }
-                    }, enre.a)).u();
-                    Map map = acwb.b().a;
+                    }, eqex.a)).u();
+                    Map map = aewb.b().a;
                     synchronized (map) {
-                        for (final acwa acwaVar : map.values()) {
-                            acwaVar.g.execute(new Runnable() { // from class: acvw
+                        for (final aewa aewaVar : map.values()) {
+                            aewaVar.g.execute(new Runnable() { // from class: aevw
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    acwa acwaVar2 = acwa.this;
-                                    acwaVar2.u();
-                                    acwaVar2.k();
+                                    aewa aewaVar2 = aewa.this;
+                                    aewaVar2.u();
+                                    aewaVar2.k();
                                 }
                             });
                         }
@@ -107,7 +107,7 @@ public class UpdateLocalFeatureStateIntentOperation extends IntentOperation {
                 } else if (!z2) {
                     return;
                 }
-                acwb.b().f();
+                aewb.b().f();
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
                 a.m("Thread interrupted while updating LocalFeatureState", new Object[0]);

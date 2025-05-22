@@ -9,71 +9,71 @@ import android.provider.Settings;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.reachability.AppContextProvider;
 import defpackage.a;
-import defpackage.aquo;
-import defpackage.arfc;
-import defpackage.arts;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asnd;
-import defpackage.asot;
-import defpackage.bqna;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.bxdd;
-import defpackage.bxdf;
-import defpackage.bxdg;
-import defpackage.cwzh;
-import defpackage.cwzi;
-import defpackage.eiif;
-import defpackage.eijr;
-import defpackage.ejhf;
-import defpackage.etxt;
-import defpackage.etxu;
-import defpackage.etxv;
-import defpackage.feab;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.frqr;
-import defpackage.ftye;
-import defpackage.unx;
+import defpackage.asxd;
+import defpackage.athr;
+import defpackage.atwh;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.auqx;
+import defpackage.ausn;
+import defpackage.bsup;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.bzlt;
+import defpackage.bzlv;
+import defpackage.bzlw;
+import defpackage.czjf;
+import defpackage.czjg;
+import defpackage.ekvk;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.ewnl;
+import defpackage.ewnm;
+import defpackage.ewnn;
+import defpackage.fgou;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fula;
+import defpackage.fwuc;
+import defpackage.wjw;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ReachabilityDataSyncIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("ReachabilitySyncOp", asej.REACHABILITY);
+    private static final ausn a = ausn.b("ReachabilitySyncOp", auid.REACHABILITY);
     private Context b;
     private PackageManager c;
-    private cwzh d;
-    private cwzi e;
-    private bqqa f;
+    private czjf d;
+    private czjg e;
+    private bsxr f;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
         Context applicationContext = getApplicationContext();
         this.b = applicationContext;
         this.c = applicationContext.getPackageManager();
-        this.d = cwzh.b(this.b);
-        this.e = new cwzi(this.b);
-        eijr eijrVar = bqqe.a;
-        this.f = new bqqa();
+        this.d = czjf.b(this.b);
+        this.e = new czjg(this.b);
+        ekww ekwwVar = bsxv.a;
+        this.f = new bsxr();
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Account[] accountArr;
-        etxv etxvVar;
-        frqr frqrVar = frqr.a;
-        if (frqrVar.a().e()) {
+        ewnn ewnnVar;
+        fula fulaVar = fula.a;
+        if (fulaVar.lK().e()) {
             long a2 = this.d.a();
-            long b = bxdg.b(this.d.a, "scheduled_sync_timestamp", 0L);
+            long b = bzlw.b(this.d.a, "scheduled_sync_timestamp", 0L);
             long currentTimeMillis = b - System.currentTimeMillis();
             if (b == 0 || currentTimeMillis >= TimeUnit.DAYS.toMillis(30L)) {
                 long currentTimeMillis2 = System.currentTimeMillis() - a2;
-                long millis = TimeUnit.HOURS.toMillis(frqrVar.a().a());
+                long millis = TimeUnit.HOURS.toMillis(fulaVar.lK().a());
                 if (currentTimeMillis2 > 0 && currentTimeMillis2 < millis) {
                     TimeUnit.MILLISECONDS.toMinutes(millis);
                     return;
@@ -83,37 +83,37 @@ public class ReachabilityDataSyncIntentOperation extends IntentOperation {
                 return;
             }
             ArrayList arrayList = new ArrayList();
-            int b2 = (int) frqrVar.a().b();
+            int b2 = (int) fulaVar.lK().b();
             for (int i = 1; i <= b2; i++) {
-                String c = bxdg.c(this.d.a, a.j(i, "service_to_package_name_map"), "");
+                String c = bzlw.c(this.d.a, a.j(i, "service_to_package_name_map"), "");
                 if (!c.isEmpty()) {
                     try {
                         this.c.getPackageInfo(c, 1);
-                        fecj v = etxt.a.v();
+                        fgrc v = ewnl.a.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fecp fecpVar = v.b;
+                        fgri fgriVar = v.b;
                         c.getClass();
-                        ((etxt) fecpVar).b = c;
-                        if (!fecpVar.L()) {
+                        ((ewnl) fgriVar).b = c;
+                        if (!fgriVar.L()) {
                             v.U();
                         }
-                        ((etxt) v.b).c = i;
-                        arrayList.add((etxt) v.Q());
+                        ((ewnl) v.b).c = i;
+                        arrayList.add((ewnl) v.Q());
                     } catch (PackageManager.NameNotFoundException unused) {
                     }
                 }
             }
             arrayList.isEmpty();
-            bqqa.a(aseu.REACHABILITY_PACKAGE_STATUS_SYNC);
+            bsxr.a(auio.REACHABILITY_PACKAGE_STATUS_SYNC);
             Context context = this.b;
             LinkedHashSet<String> linkedHashSet = new LinkedHashSet();
-            int i2 = asnd.a;
-            if (aquo.g(context)) {
+            int i2 = auqx.a;
+            if (asxd.g(context)) {
                 accountArr = new Account[0];
             } else {
-                Account[] p = bqna.b(context).p("com.google");
+                Account[] p = bsup.b(context).p("com.google");
                 ArrayList arrayList2 = new ArrayList(p.length);
                 for (Account account : p) {
                     if (!"".equals(account.name)) {
@@ -129,64 +129,64 @@ public class ReachabilityDataSyncIntentOperation extends IntentOperation {
                 Context context2 = this.b;
                 int myUid = Process.myUid();
                 String packageName = context2.getPackageName();
-                arts artsVar = new arts(myUid, str, str, packageName, packageName);
-                artsVar.m("https://www.googleapis.com/auth/myphonenumbers");
+                atwh atwhVar = new atwh(myUid, str, str, packageName, packageName);
+                atwhVar.m("https://www.googleapis.com/auth/myphonenumbers");
                 try {
-                    fecj v2 = etxu.a.v();
-                    if (frqr.a.a().g()) {
+                    fgrc v2 = ewnm.a.v();
+                    if (fula.a.lK().g()) {
                         AppContextProvider appContextProvider = AppContextProvider.c;
-                        String b3 = eiif.b(Settings.Secure.getString((appContextProvider == null ? arfc.a() : appContextProvider.a).getContentResolver(), "android_id"));
+                        String b3 = ekvk.b(Settings.Secure.getString((appContextProvider == null ? athr.a() : appContextProvider.a).getContentResolver(), "android_id"));
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        ((etxu) v2.b).c = b3;
+                        ((ewnm) v2.b).c = b3;
                     }
                     if (this.d.a() == 0) {
-                        etxvVar = this.e.a(artsVar, (etxu) v2.Q());
+                        ewnnVar = this.e.a(atwhVar, (ewnm) v2.Q());
                     } else {
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        etxu etxuVar = (etxu) v2.b;
-                        fedh fedhVar = etxuVar.b;
-                        if (!fedhVar.c()) {
-                            etxuVar.b = fecp.E(fedhVar);
+                        ewnm ewnmVar = (ewnm) v2.b;
+                        fgsa fgsaVar = ewnmVar.b;
+                        if (!fgsaVar.c()) {
+                            ewnmVar.b = fgri.E(fgsaVar);
                         }
-                        feab.E(arrayList, etxuVar.b);
-                        etxvVar = this.e.a(artsVar, (etxu) v2.Q());
+                        fgou.E(arrayList, ewnmVar.b);
+                        ewnnVar = this.e.a(atwhVar, (ewnm) v2.Q());
                     }
-                } catch (ftye | unx e) {
-                    ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah(9005)).B("Grpc sent to WPS failed with error: %s", e);
-                    etxvVar = null;
+                } catch (fwuc | wjw e) {
+                    ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai(9003)).B("Grpc sent to WPS failed with error: %s", e);
+                    ewnnVar = null;
                 }
-                if (etxvVar != null) {
-                    for (etxt etxtVar : etxvVar.b) {
-                        cwzh cwzhVar = this.d;
-                        int i3 = etxtVar.c;
-                        String str2 = etxtVar.b;
-                        bxdd c2 = cwzhVar.a.c();
+                if (ewnnVar != null) {
+                    for (ewnl ewnlVar : ewnnVar.b) {
+                        czjf czjfVar = this.d;
+                        int i3 = ewnlVar.c;
+                        String str2 = ewnlVar.b;
+                        bzlt c2 = czjfVar.a.c();
                         c2.h("service_to_package_name_map" + i3, str2);
-                        bxdg.g(c2);
+                        bzlw.g(c2);
                     }
-                    for (etxt etxtVar2 : etxvVar.c) {
-                        cwzh cwzhVar2 = this.d;
-                        int i4 = etxtVar2.c;
-                        bxdd c3 = cwzhVar2.a.c();
+                    for (ewnl ewnlVar2 : ewnnVar.c) {
+                        czjf czjfVar2 = this.d;
+                        int i4 = ewnlVar2.c;
+                        bzlt c3 = czjfVar2.a.c();
                         c3.j("service_to_package_name_map" + i4);
-                        bxdg.g(c3);
+                        bzlw.g(c3);
                     }
-                    cwzh cwzhVar3 = this.d;
-                    long millis2 = TimeUnit.MICROSECONDS.toMillis(etxvVar.d);
-                    bxdd c4 = cwzhVar3.a.c();
+                    czjf czjfVar3 = this.d;
+                    long millis2 = TimeUnit.MICROSECONDS.toMillis(ewnnVar.d);
+                    bzlt c4 = czjfVar3.a.c();
                     c4.g("scheduled_sync_timestamp", millis2);
-                    bxdg.g(c4);
+                    bzlw.g(c4);
                 }
             }
-            bxdf bxdfVar = this.d.a;
+            bzlv bzlvVar = this.d.a;
             long currentTimeMillis3 = System.currentTimeMillis();
-            bxdd c5 = bxdfVar.c();
+            bzlt c5 = bzlvVar.c();
             c5.g("last_sync_timestamp", currentTimeMillis3);
-            bxdg.g(c5);
+            bzlw.g(c5);
         }
     }
 }

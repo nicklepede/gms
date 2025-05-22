@@ -4,37 +4,34 @@ import android.accounts.Account;
 import android.content.Intent;
 import android.webkit.WebSettings;
 import com.google.android.chimera.IntentOperation;
-import defpackage.arxo;
-import defpackage.cszx;
-import defpackage.fjuo;
-import defpackage.fvbo;
+import defpackage.auad;
+import defpackage.cviz;
+import defpackage.fmkp;
 import java.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class WarmupIntentOperation extends IntentOperation {
-    private final arxo a = new arxo("Octarine", "WarmupIntentOperation");
+    private final auad a = new auad("Octarine", "WarmupIntentOperation");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Objects.toString(intent);
         String valueOf = String.valueOf(intent);
-        arxo arxoVar = this.a;
-        arxoVar.d("Warmup intent handled : ".concat(valueOf), new Object[0]);
+        auad auadVar = this.a;
+        auadVar.d("Warmup intent handled : ".concat(valueOf), new Object[0]);
         if (intent == null) {
             return;
         }
         String stringExtra = intent.getStringExtra("extra.accountName");
         if (stringExtra == null || stringExtra.length() == 0) {
-            arxoVar.m("Starting WarmupIntentOperation with invalid arguments: missing account", new Object[0]);
+            auadVar.m("Starting WarmupIntentOperation with invalid arguments: missing account", new Object[0]);
             return;
         }
-        cszx a = cszx.a.a();
+        cviz a = cviz.a.a();
         Account account = new Account(stringExtra, "com.google");
         if (a.g(account)) {
-            String a2 = fjuo.a.a().a();
-            fvbo.e(a2, "prefetchCookiesUrl(...)");
-            a.b(account, a2);
+            a.b(account, fmkp.a.lK().a());
         }
         WebSettings.getDefaultUserAgent(this);
     }

@@ -2,13 +2,13 @@ package com.google.android.gms.ads.nonagon.util.logging.cui;
 
 import android.os.Bundle;
 import android.text.TextUtils;
-import defpackage.tbv;
+import defpackage.uxv;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class k implements Runnable {
     private final n b;
@@ -55,20 +55,20 @@ public final class k implements Runnable {
             if (future != null) {
                 future.cancel(false);
             }
-            this.d = com.google.android.gms.ads.internal.util.future.e.b.schedule(this, ((Integer) com.google.android.gms.ads.internal.config.p.bm.g()).intValue(), TimeUnit.MILLISECONDS);
+            this.d = com.google.android.gms.ads.internal.util.future.e.b.schedule(this, ((Integer) com.google.android.gms.ads.internal.config.p.bn.g()).intValue(), TimeUnit.MILLISECONDS);
         }
     }
 
     public final synchronized void c(ArrayList arrayList) {
         if (((Boolean) com.google.android.gms.ads.internal.flag.h.c.d()).booleanValue()) {
-            if (!arrayList.contains("banner") && !arrayList.contains(tbv.BANNER.name())) {
-                if (!arrayList.contains("interstitial") && !arrayList.contains(tbv.INTERSTITIAL.name())) {
-                    if (!arrayList.contains("native") && !arrayList.contains(tbv.NATIVE.name())) {
-                        if (!arrayList.contains("rewarded") && !arrayList.contains(tbv.REWARDED.name())) {
+            if (!arrayList.contains("banner") && !arrayList.contains(uxv.BANNER.name())) {
+                if (!arrayList.contains("interstitial") && !arrayList.contains(uxv.INTERSTITIAL.name())) {
+                    if (!arrayList.contains("native") && !arrayList.contains(uxv.NATIVE.name())) {
+                        if (!arrayList.contains("rewarded") && !arrayList.contains(uxv.REWARDED.name())) {
                             if (arrayList.contains("app_open_ad")) {
                                 this.e = 7;
                                 return;
-                            } else if (arrayList.contains("rewarded_interstitial") || arrayList.contains(tbv.REWARDED_INTERSTITIAL.name())) {
+                            } else if (arrayList.contains("rewarded_interstitial") || arrayList.contains(uxv.REWARDED_INTERSTITIAL.name())) {
                                 this.e = 6;
                                 return;
                             }

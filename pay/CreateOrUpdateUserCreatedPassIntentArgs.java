@@ -4,15 +4,15 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctbs;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvkx;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class CreateOrUpdateUserCreatedPassIntentArgs extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctbs();
+    public static final Parcelable.Creator CREATOR = new cvkx();
     public ProtoSafeParcelable a;
     public ProtoSafeParcelable b;
     public ProtoSafeParcelable c;
@@ -24,6 +24,8 @@ public final class CreateOrUpdateUserCreatedPassIntentArgs extends AbstractSafeP
     public UserCreatedPassAttachmentMetadata[] i;
     public boolean j;
     public int k;
+    public boolean l;
+    public UserCreatedPassVerticalMetadata m;
 
     private CreateOrUpdateUserCreatedPassIntentArgs() {
     }
@@ -34,7 +36,7 @@ public final class CreateOrUpdateUserCreatedPassIntentArgs extends AbstractSafeP
         }
         if (obj instanceof CreateOrUpdateUserCreatedPassIntentArgs) {
             CreateOrUpdateUserCreatedPassIntentArgs createOrUpdateUserCreatedPassIntentArgs = (CreateOrUpdateUserCreatedPassIntentArgs) obj;
-            if (arwb.b(this.a, createOrUpdateUserCreatedPassIntentArgs.a) && arwb.b(this.b, createOrUpdateUserCreatedPassIntentArgs.b) && arwb.b(this.c, createOrUpdateUserCreatedPassIntentArgs.c) && arwb.b(Integer.valueOf(this.d), Integer.valueOf(createOrUpdateUserCreatedPassIntentArgs.d)) && Arrays.equals(this.e, createOrUpdateUserCreatedPassIntentArgs.e) && arwb.b(this.f, createOrUpdateUserCreatedPassIntentArgs.f) && arwb.b(this.g, createOrUpdateUserCreatedPassIntentArgs.g) && arwb.b(Boolean.valueOf(this.h), Boolean.valueOf(createOrUpdateUserCreatedPassIntentArgs.h)) && Arrays.equals(this.i, createOrUpdateUserCreatedPassIntentArgs.i) && arwb.b(Boolean.valueOf(this.j), Boolean.valueOf(createOrUpdateUserCreatedPassIntentArgs.j)) && arwb.b(Integer.valueOf(this.k), Integer.valueOf(createOrUpdateUserCreatedPassIntentArgs.k))) {
+            if (atyq.b(this.a, createOrUpdateUserCreatedPassIntentArgs.a) && atyq.b(this.b, createOrUpdateUserCreatedPassIntentArgs.b) && atyq.b(this.c, createOrUpdateUserCreatedPassIntentArgs.c) && atyq.b(Integer.valueOf(this.d), Integer.valueOf(createOrUpdateUserCreatedPassIntentArgs.d)) && Arrays.equals(this.e, createOrUpdateUserCreatedPassIntentArgs.e) && atyq.b(this.f, createOrUpdateUserCreatedPassIntentArgs.f) && atyq.b(this.g, createOrUpdateUserCreatedPassIntentArgs.g) && atyq.b(Boolean.valueOf(this.h), Boolean.valueOf(createOrUpdateUserCreatedPassIntentArgs.h)) && Arrays.equals(this.i, createOrUpdateUserCreatedPassIntentArgs.i) && atyq.b(Boolean.valueOf(this.j), Boolean.valueOf(createOrUpdateUserCreatedPassIntentArgs.j)) && atyq.b(Integer.valueOf(this.k), Integer.valueOf(createOrUpdateUserCreatedPassIntentArgs.k)) && atyq.b(Boolean.valueOf(this.l), Boolean.valueOf(createOrUpdateUserCreatedPassIntentArgs.l)) && atyq.b(this.m, createOrUpdateUserCreatedPassIntentArgs.m)) {
                 return true;
             }
         }
@@ -42,27 +44,29 @@ public final class CreateOrUpdateUserCreatedPassIntentArgs extends AbstractSafeP
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{this.a, this.b, this.c, Integer.valueOf(this.d), Integer.valueOf(Arrays.hashCode(this.e)), this.f, this.g, Boolean.valueOf(this.h), Integer.valueOf(Arrays.hashCode(this.i)), Boolean.valueOf(this.j), Integer.valueOf(this.k)});
+        return Arrays.hashCode(new Object[]{this.a, this.b, this.c, Integer.valueOf(this.d), Integer.valueOf(Arrays.hashCode(this.e)), this.f, this.g, Boolean.valueOf(this.h), Integer.valueOf(Arrays.hashCode(this.i)), Boolean.valueOf(this.j), Integer.valueOf(this.k), Boolean.valueOf(this.l), this.m});
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.o(parcel, 4, this.d);
-        arxc.J(parcel, 5, this.e, i);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.e(parcel, 8, this.h);
-        arxc.J(parcel, 9, this.i, i);
-        arxc.e(parcel, 10, this.j);
-        arxc.o(parcel, 11, this.k);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.o(parcel, 4, this.d);
+        atzr.J(parcel, 5, this.e, i);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.e(parcel, 8, this.h);
+        atzr.J(parcel, 9, this.i, i);
+        atzr.e(parcel, 10, this.j);
+        atzr.o(parcel, 11, this.k);
+        atzr.e(parcel, 12, this.l);
+        atzr.t(parcel, 13, this.m, i, false);
+        atzr.c(parcel, a);
     }
 
-    public CreateOrUpdateUserCreatedPassIntentArgs(ProtoSafeParcelable protoSafeParcelable, ProtoSafeParcelable protoSafeParcelable2, ProtoSafeParcelable protoSafeParcelable3, int i, Uri[] uriArr, ProtoSafeParcelable protoSafeParcelable4, ProtoSafeParcelable protoSafeParcelable5, boolean z, UserCreatedPassAttachmentMetadata[] userCreatedPassAttachmentMetadataArr, boolean z2, int i2) {
+    public CreateOrUpdateUserCreatedPassIntentArgs(ProtoSafeParcelable protoSafeParcelable, ProtoSafeParcelable protoSafeParcelable2, ProtoSafeParcelable protoSafeParcelable3, int i, Uri[] uriArr, ProtoSafeParcelable protoSafeParcelable4, ProtoSafeParcelable protoSafeParcelable5, boolean z, UserCreatedPassAttachmentMetadata[] userCreatedPassAttachmentMetadataArr, boolean z2, int i2, boolean z3, UserCreatedPassVerticalMetadata userCreatedPassVerticalMetadata) {
         this.a = protoSafeParcelable;
         this.b = protoSafeParcelable2;
         this.c = protoSafeParcelable3;
@@ -74,5 +78,7 @@ public final class CreateOrUpdateUserCreatedPassIntentArgs extends AbstractSafeP
         this.i = userCreatedPassAttachmentMetadataArr;
         this.j = z2;
         this.k = i2;
+        this.l = z3;
+        this.m = userCreatedPassVerticalMetadata;
     }
 }

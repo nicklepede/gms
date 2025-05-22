@@ -3,16 +3,16 @@ package com.google.android.gms.nearby.sharing;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cllg;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cnto;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class AppInfo extends AbstractSafeParcelable implements Cloneable {
-    public static final Parcelable.Creator CREATOR = new cllg();
+    public static final Parcelable.Creator CREATOR = new cnto();
     public final String a;
     public final String b;
     public final String c;
@@ -43,13 +43,13 @@ public class AppInfo extends AbstractSafeParcelable implements Cloneable {
     public final boolean equals(Object obj) {
         if (obj instanceof AppInfo) {
             AppInfo appInfo = (AppInfo) obj;
-            if (arwb.b(this.a, appInfo.a) && arwb.b(this.b, appInfo.b) && arwb.b(this.c, appInfo.c)) {
+            if (atyq.b(this.a, appInfo.a) && atyq.b(this.b, appInfo.b) && atyq.b(this.c, appInfo.c)) {
                 int i = this.d;
                 int i2 = appInfo.d;
                 Integer valueOf = Integer.valueOf(i);
                 Integer valueOf2 = Integer.valueOf(i2);
-                if (arwb.b(valueOf, valueOf2)) {
-                    if (arwb.b(Integer.valueOf(this.e), Integer.valueOf(appInfo.e)) && arwb.b(Byte.valueOf(this.f), Byte.valueOf(appInfo.f)) && arwb.b(Boolean.valueOf(this.g), valueOf2)) {
+                if (atyq.b(valueOf, valueOf2)) {
+                    if (atyq.b(Integer.valueOf(this.e), Integer.valueOf(appInfo.e)) && atyq.b(Byte.valueOf(this.f), Byte.valueOf(appInfo.f)) && atyq.b(Boolean.valueOf(this.g), valueOf2)) {
                         return true;
                     }
                 }
@@ -76,14 +76,14 @@ public class AppInfo extends AbstractSafeParcelable implements Cloneable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.o(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.h(parcel, 6, this.f);
-        arxc.e(parcel, 7, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.o(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.h(parcel, 6, this.f);
+        atzr.e(parcel, 7, this.g);
+        atzr.c(parcel, a);
     }
 }

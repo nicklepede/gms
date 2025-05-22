@@ -1,10 +1,10 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
-import defpackage.anek;
-import defpackage.fvbo;
+import defpackage.apfx;
+import defpackage.fxxm;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class Tags {
     private final String encodedVideoFilePath;
@@ -21,12 +21,12 @@ public final class Tags {
     private final String senderVersion;
 
     public Tags(long j, long j2, String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, long j3, String str9) {
-        fvbo.f(str3, "receiverProductName");
-        fvbo.f(str4, "receiverVersion");
-        fvbo.f(str5, "senderPlatform");
-        fvbo.f(str6, "senderBuild");
-        fvbo.f(str7, "senderModel");
-        fvbo.f(str8, "senderVersion");
+        fxxm.f(str3, "receiverProductName");
+        fxxm.f(str4, "receiverVersion");
+        fxxm.f(str5, "senderPlatform");
+        fxxm.f(str6, "senderBuild");
+        fxxm.f(str7, "senderModel");
+        fxxm.f(str8, "senderVersion");
         this.maxBitrate = j;
         this.minLatency = j2;
         this.resolution = str;
@@ -90,12 +90,12 @@ public final class Tags {
     }
 
     public final Tags copy(long j, long j2, String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, long j3, String str9) {
-        fvbo.f(str3, "receiverProductName");
-        fvbo.f(str4, "receiverVersion");
-        fvbo.f(str5, "senderPlatform");
-        fvbo.f(str6, "senderBuild");
-        fvbo.f(str7, "senderModel");
-        fvbo.f(str8, "senderVersion");
+        fxxm.f(str3, "receiverProductName");
+        fxxm.f(str4, "receiverVersion");
+        fxxm.f(str5, "senderPlatform");
+        fxxm.f(str6, "senderBuild");
+        fxxm.f(str7, "senderModel");
+        fxxm.f(str8, "senderVersion");
         return new Tags(j, j2, str, str2, str3, str4, str5, str6, str7, str8, j3, str9);
     }
 
@@ -107,7 +107,7 @@ public final class Tags {
             return false;
         }
         Tags tags = (Tags) obj;
-        return this.maxBitrate == tags.maxBitrate && this.minLatency == tags.minLatency && fvbo.n(this.resolution, tags.resolution) && fvbo.n(this.maxFramerate, tags.maxFramerate) && fvbo.n(this.receiverProductName, tags.receiverProductName) && fvbo.n(this.receiverVersion, tags.receiverVersion) && fvbo.n(this.senderPlatform, tags.senderPlatform) && fvbo.n(this.senderBuild, tags.senderBuild) && fvbo.n(this.senderModel, tags.senderModel) && fvbo.n(this.senderVersion, tags.senderVersion) && this.senderGmsCoreVersion == tags.senderGmsCoreVersion && fvbo.n(this.encodedVideoFilePath, tags.encodedVideoFilePath);
+        return this.maxBitrate == tags.maxBitrate && this.minLatency == tags.minLatency && fxxm.n(this.resolution, tags.resolution) && fxxm.n(this.maxFramerate, tags.maxFramerate) && fxxm.n(this.receiverProductName, tags.receiverProductName) && fxxm.n(this.receiverVersion, tags.receiverVersion) && fxxm.n(this.senderPlatform, tags.senderPlatform) && fxxm.n(this.senderBuild, tags.senderBuild) && fxxm.n(this.senderModel, tags.senderModel) && fxxm.n(this.senderVersion, tags.senderVersion) && this.senderGmsCoreVersion == tags.senderGmsCoreVersion && fxxm.n(this.encodedVideoFilePath, tags.encodedVideoFilePath);
     }
 
     public final String getEncodedVideoFilePath() {
@@ -164,10 +164,10 @@ public final class Tags {
         long j = this.maxBitrate;
         long j2 = this.minLatency;
         String str2 = this.maxFramerate;
-        int a = (((((((((((((((((anek.a(j) * 31) + anek.a(j2)) * 31) + hashCode) * 31) + (str2 == null ? 0 : str2.hashCode())) * 31) + this.receiverProductName.hashCode()) * 31) + this.receiverVersion.hashCode()) * 31) + this.senderPlatform.hashCode()) * 31) + this.senderBuild.hashCode()) * 31) + this.senderModel.hashCode()) * 31) + this.senderVersion.hashCode();
+        int a = (((((((((((((((((apfx.a(j) * 31) + apfx.a(j2)) * 31) + hashCode) * 31) + (str2 == null ? 0 : str2.hashCode())) * 31) + this.receiverProductName.hashCode()) * 31) + this.receiverVersion.hashCode()) * 31) + this.senderPlatform.hashCode()) * 31) + this.senderBuild.hashCode()) * 31) + this.senderModel.hashCode()) * 31) + this.senderVersion.hashCode();
         long j3 = this.senderGmsCoreVersion;
         String str3 = this.encodedVideoFilePath;
-        return (((a * 31) + anek.a(j3)) * 31) + (str3 != null ? str3.hashCode() : 0);
+        return (((a * 31) + apfx.a(j3)) * 31) + (str3 != null ? str3.hashCode() : 0);
     }
 
     public String toString() {

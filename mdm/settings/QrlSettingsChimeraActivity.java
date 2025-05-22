@@ -5,54 +5,54 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.google.android.gms.R;
-import defpackage.aqxo;
-import defpackage.bajh;
+import defpackage.atad;
+import defpackage.bcnd;
 import defpackage.bp;
-import defpackage.ccxq;
-import defpackage.ccze;
-import defpackage.fruc;
-import defpackage.qgg;
+import defpackage.cfgo;
+import defpackage.cfid;
+import defpackage.fuow;
+import defpackage.rzk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class QrlSettingsChimeraActivity extends qgg {
-    @Override // defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+public class QrlSettingsChimeraActivity extends rzk {
+    @Override // defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (!ccxq.f(this)) {
+        if (!cfgo.f(this)) {
             finish();
             return;
         }
         setTitle(getString(R.string.fmd_quick_remote_lock_activity_title));
         if (bundle == null) {
             bp bpVar = new bp(getSupportFragmentManager());
-            bpVar.t(R.id.content_frame, new ccze());
+            bpVar.t(R.id.content_frame, new cfid());
             bpVar.d();
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
-        if (!fruc.h()) {
+        if (!fuow.g()) {
             return super.onCreateOptionsMenu(menu);
         }
         getMenuInflater().inflate(R.menu.feedback_menu, menu);
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != R.id.feedback_item) {
             return super.onOptionsItemSelected(menuItem);
         }
-        aqxo aqxoVar = new aqxo((Context) getContainerActivity(), (int[][]) null);
-        bajh bajhVar = new bajh(this);
-        bajhVar.a = aqxo.Y(getContainerActivity());
-        String e = fruc.e();
+        atad atadVar = new atad((Context) getContainerActivity(), (int[][]) null);
+        bcnd bcndVar = new bcnd(this);
+        bcndVar.a = atad.Y(getContainerActivity());
+        String e = fuow.e();
         if (!e.isEmpty()) {
-            bajhVar.e = e;
+            bcndVar.e = e;
         }
-        aqxoVar.aa(bajhVar.a());
+        atadVar.aa(bcndVar.a());
         return true;
     }
 }

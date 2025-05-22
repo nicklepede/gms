@@ -6,22 +6,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.SystemClock;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asit;
-import defpackage.tnm;
-import defpackage.tnn;
+import defpackage.aumn;
+import defpackage.vjm;
+import defpackage.vjn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ChimeraPlayLogMonitorIntervalService extends IntentOperation {
     public static void a(Context context) {
         Intent intent = new Intent();
         intent.setComponent(new ComponentName(context, "com.google.android.gms.analytics.internal.PlayLogReportingService"));
         PendingIntent service = PendingIntent.getService(context, 0, intent, 0);
-        asit asitVar = new asit(context);
-        asitVar.a(service);
-        long elapsedRealtime = (SystemClock.elapsedRealtime() / ((Long) tnn.x.a()).longValue()) + 1;
-        tnm tnmVar = tnn.x;
-        asitVar.n("PlayLogMonitorIntervalService", 3, elapsedRealtime * ((Long) tnmVar.a()).longValue(), ((Long) tnmVar.a()).longValue(), service);
+        aumn aumnVar = new aumn(context);
+        aumnVar.a(service);
+        long elapsedRealtime = SystemClock.elapsedRealtime();
+        vjm vjmVar = vjn.x;
+        aumnVar.n("PlayLogMonitorIntervalService", 3, ((elapsedRealtime / ((Long) vjmVar.a()).longValue()) + 1) * ((Long) vjmVar.a()).longValue(), ((Long) vjmVar.a()).longValue(), service);
     }
 
     @Override // com.google.android.chimera.IntentOperation

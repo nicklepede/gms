@@ -4,41 +4,41 @@ import android.content.Context;
 import android.provider.Settings;
 import com.google.android.gms.common.internal.GetServiceRequest;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.byiv;
-import defpackage.byiw;
-import defpackage.byjl;
-import defpackage.byln;
-import defpackage.dhqz;
-import defpackage.dhrq;
-import defpackage.dnnr;
-import defpackage.ejhf;
-import defpackage.fssf;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.carn;
+import defpackage.caro;
+import defpackage.casd;
+import defpackage.cauf;
+import defpackage.dkcf;
+import defpackage.dkcw;
+import defpackage.dpya;
+import defpackage.eluo;
+import defpackage.fvnv;
 import java.util.Collections;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class UsageReportingChimeraService extends bxgd {
-    public static final asot a = asot.b("UsageReportingService", asej.USAGE_REPORTING);
+public class UsageReportingChimeraService extends bzot {
+    public static final ausn a = ausn.b("UsageReportingService", auid.USAGE_REPORTING);
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class CheckboxRestoringTaskBoundService extends GmsTaskBoundService {
         static void d(Context context) {
-            byjl a = byjl.a(context);
-            byiw byiwVar = new byiw();
-            byiwVar.t("CheckboxRestoringTask");
-            byiwVar.w(CheckboxRestoringTaskBoundService.class.getName());
-            byiwVar.c(new byiv(Settings.Global.getUriFor("multi_cb"), 0));
-            byiwVar.v(1);
-            byiwVar.g(2);
-            a.f(byiwVar.b());
+            casd a = casd.a(context);
+            caro caroVar = new caro();
+            caroVar.t("CheckboxRestoringTask");
+            caroVar.w(CheckboxRestoringTaskBoundService.class.getName());
+            caroVar.c(new carn(Settings.Global.getUriFor("multi_cb"), 0));
+            caroVar.v(1);
+            caroVar.g(2);
+            a.f(caroVar.b());
         }
 
         @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-        public final int a(byln bylnVar) {
+        public final int a(cauf caufVar) {
             UsageReportingChimeraService.c(this);
             d(this);
             return 0;
@@ -46,24 +46,24 @@ public class UsageReportingChimeraService extends bxgd {
     }
 
     public UsageReportingChimeraService() {
-        super(41, "com.google.android.gms.usagereporting.service.START", Collections.EMPTY_SET, 3, true != fssf.d() ? 10 : 9);
+        super(41, "com.google.android.gms.usagereporting.service.START", Collections.EMPTY_SET, 3, true != fvnv.d() ? 10 : 9);
     }
 
     public static void c(Context context) {
-        if (dnnr.i(context) && Settings.Global.getInt(context.getContentResolver(), "multi_cb", -1) == -1) {
-            ((ejhf) a.h()).x("Device wide opt in was reset, re-populating");
-            dhrq.c(context);
+        if (dpya.i(context) && Settings.Global.getInt(context.getContentResolver(), "multi_cb", -1) == -1) {
+            ((eluo) a.h()).x("Device wide opt in was reset, re-populating");
+            dkcw.c(context);
         }
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new dhqz(getServiceRequest.f, this, l(), getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new dkcf(getServiceRequest.f, this, l(), getServiceRequest.p));
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
-        if (dhrq.f()) {
+        if (dkcw.f()) {
             c(this);
             CheckboxRestoringTaskBoundService.d(this);
         }

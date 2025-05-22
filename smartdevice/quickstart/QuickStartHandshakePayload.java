@@ -7,18 +7,18 @@ import com.google.android.gms.smartdevice.d2d.data.SourceDeviceInfo;
 import com.google.android.gms.smartdevice.d2d.data.TargetDeviceInfo;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.ashs;
-import defpackage.ddwb;
+import defpackage.atzr;
+import defpackage.aulm;
+import defpackage.dghg;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class QuickStartHandshakePayload extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new ddwb();
+    public static final Parcelable.Creator CREATOR = new dghg();
     private static final HashMap g;
     public final Set a;
     public long b;
@@ -46,7 +46,7 @@ public class QuickStartHandshakePayload extends BinarySerializableFastSafeParcel
         this.f = quickStartHandshakeOptionFlags;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 1) {
@@ -67,35 +67,35 @@ public class QuickStartHandshakePayload extends BinarySerializableFastSafeParcel
         throw new IllegalStateException(a.j(i, "Unknown SafeParcelable id="));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final Map b() {
         return g;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
-    public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
+    @Override // defpackage.aulm
+    public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
-            this.c = (TargetDeviceInfo) ashsVar;
+            this.c = (TargetDeviceInfo) aulmVar;
         } else if (i == 3) {
-            this.d = (SourceDeviceInfo) ashsVar;
+            this.d = (SourceDeviceInfo) aulmVar;
         } else if (i == 4) {
-            this.e = (RestoreAnytimeContext) ashsVar;
+            this.e = (RestoreAnytimeContext) aulmVar;
         } else {
             if (i != 5) {
-                throw new IllegalArgumentException(String.format("Field with id=%d is not a known custom type. Found %s", Integer.valueOf(i), ashsVar.getClass().getCanonicalName()));
+                throw new IllegalArgumentException(String.format("Field with id=%d is not a known custom type. Found %s", Integer.valueOf(i), aulmVar.getClass().getCanonicalName()));
             }
-            this.f = (QuickStartHandshakeOptionFlags) ashsVar;
+            this.f = (QuickStartHandshakeOptionFlags) aulmVar;
         }
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void k(FastJsonResponse$Field fastJsonResponse$Field, String str, long j) {
         int i = fastJsonResponse$Field.g;
         if (i != 1) {
@@ -118,23 +118,23 @@ public class QuickStartHandshakePayload extends BinarySerializableFastSafeParcel
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(1)) {
-            arxc.q(parcel, 1, this.b);
+            atzr.q(parcel, 1, this.b);
         }
         if (set.contains(2)) {
-            arxc.t(parcel, 2, this.c, i, true);
+            atzr.t(parcel, 2, this.c, i, true);
         }
         if (set.contains(3)) {
-            arxc.t(parcel, 3, this.d, i, true);
+            atzr.t(parcel, 3, this.d, i, true);
         }
         if (set.contains(4)) {
-            arxc.t(parcel, 4, this.e, i, true);
+            atzr.t(parcel, 4, this.e, i, true);
         }
         if (set.contains(5)) {
-            arxc.t(parcel, 5, this.f, i, true);
+            atzr.t(parcel, 5, this.f, i, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public QuickStartHandshakePayload() {

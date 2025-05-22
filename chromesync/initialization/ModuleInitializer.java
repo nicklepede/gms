@@ -3,78 +3,77 @@ package com.google.android.gms.chromesync.initialization;
 import android.content.Intent;
 import com.google.android.gms.chromesync.tasks.SendDeviceInfoTaskBoundService;
 import com.google.android.gms.chromesync.tasks.UpdateAffiliationsTaskBoundService;
-import defpackage.apew;
-import defpackage.apqw;
-import defpackage.apqz;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.bykx;
-import defpackage.bylf;
-import defpackage.fmgb;
-import defpackage.fmgl;
-import defpackage.fnck;
-import defpackage.fvbo;
+import defpackage.arhn;
+import defpackage.artn;
+import defpackage.artq;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.catp;
+import defpackage.catx;
+import defpackage.foxn;
+import defpackage.foxx;
+import defpackage.fpuj;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class ModuleInitializer extends apew {
-    public apqz a;
-    public apqw b;
+public final class ModuleInitializer extends arhn {
+    public artq a;
+    public artn b;
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        apqw apqwVar;
-        apqz apqzVar = this.a;
-        if (apqzVar == null) {
-            fvbo.j("updateAffiliationsTaskScheduler");
-            apqzVar = null;
+        artn artnVar;
+        artq artqVar = this.a;
+        if (artqVar == null) {
+            fxxm.j("updateAffiliationsTaskScheduler");
+            artqVar = null;
         }
-        if (fnck.a.a().q()) {
-            byko bykoVar = new byko();
-            bykoVar.w(UpdateAffiliationsTaskBoundService.class.getName());
-            bykoVar.q("PasswordManagerPeriodicUpdateAffiliationsTaskTag");
-            bykoVar.a = bykv.k;
-            bykoVar.l(true);
-            bykoVar.v(2);
-            apqzVar.a.f(bykoVar.b());
+        if (fpuj.a.lK().q()) {
+            catg catgVar = new catg();
+            catgVar.w(UpdateAffiliationsTaskBoundService.class.getName());
+            catgVar.q("PasswordManagerPeriodicUpdateAffiliationsTaskTag");
+            catgVar.a = catn.k;
+            catgVar.l(true);
+            catgVar.v(2);
+            artqVar.a.f(catgVar.b());
         } else {
-            fmgl fmglVar = fmgl.a;
-            long d = fmglVar.a().d();
-            fmgl fmglVar2 = fmgl.a;
-            long c = fmglVar2.a().c();
-            int h = (int) fmglVar2.a().h();
-            int f = (int) fmglVar2.a().f();
-            int g = (int) fmglVar2.a().g();
-            int e = (int) fmglVar2.a().e();
-            bykm bykmVar = new bykm();
-            bykmVar.w(UpdateAffiliationsTaskBoundService.class.getName());
-            bykmVar.q("PasswordManagerPeriodicUpdateAffiliationsTaskTag");
-            bykmVar.p = true;
-            bykmVar.e(d, c, bylf.a);
-            bykmVar.y(h, f);
-            bykmVar.x(g, e);
-            bykmVar.f(0, 1);
-            bykmVar.t = bykx.a(0, (int) fmglVar.a().a(), (int) fmglVar2.a().b());
-            bykmVar.v(2);
-            apqzVar.a.f(bykmVar.b());
+            foxx foxxVar = foxx.a;
+            long d = foxxVar.lK().d();
+            long c = foxxVar.lK().c();
+            int h = (int) foxxVar.lK().h();
+            int f = (int) foxxVar.lK().f();
+            int g = (int) foxxVar.lK().g();
+            int e = (int) foxxVar.lK().e();
+            cate cateVar = new cate();
+            cateVar.w(UpdateAffiliationsTaskBoundService.class.getName());
+            cateVar.q("PasswordManagerPeriodicUpdateAffiliationsTaskTag");
+            cateVar.p = true;
+            cateVar.e(d, c, catx.a);
+            cateVar.y(h, f);
+            cateVar.x(g, e);
+            cateVar.f(0, 1);
+            cateVar.t = catp.a(0, (int) foxxVar.lK().a(), (int) foxxVar.lK().b());
+            cateVar.v(2);
+            artqVar.a.f(cateVar.b());
         }
-        apqw apqwVar2 = this.b;
-        if (apqwVar2 == null) {
-            fvbo.j("sendDeviceInfoTaskScheduler");
-            apqwVar = null;
+        artn artnVar2 = this.b;
+        if (artnVar2 == null) {
+            fxxm.j("sendDeviceInfoTaskScheduler");
+            artnVar = null;
         } else {
-            apqwVar = apqwVar2;
+            artnVar = artnVar2;
         }
-        bykv e2 = bykv.e((int) fmgb.b());
-        byko bykoVar2 = new byko();
-        bykoVar2.w(SendDeviceInfoTaskBoundService.class.getName());
-        bykoVar2.q("SendDeviceInfoTaskTag");
-        bykoVar2.a = e2;
-        bykoVar2.l(true);
-        bykoVar2.v(2);
-        fmgb fmgbVar = fmgb.a;
-        bykoVar2.t = bykx.a(0, (int) fmgbVar.a().c(), (int) fmgbVar.a().b());
-        apqwVar.a.f(bykoVar2.b());
+        catn e2 = catn.e((int) foxn.b());
+        catg catgVar2 = new catg();
+        catgVar2.w(SendDeviceInfoTaskBoundService.class.getName());
+        catgVar2.q("SendDeviceInfoTaskTag");
+        catgVar2.a = e2;
+        catgVar2.l(true);
+        catgVar2.v(2);
+        foxn foxnVar = foxn.a;
+        catgVar2.t = catp.a(0, (int) foxnVar.lK().c(), (int) foxnVar.lK().b());
+        artnVar.a.f(catgVar2.b());
     }
 }

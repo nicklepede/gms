@@ -9,86 +9,86 @@ import android.webkit.WebView;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.api.credentials.ulp.ui.UlpUpgradeChimeraActivity;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.asot;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgx;
-import defpackage.doea;
-import defpackage.elfb;
-import defpackage.elfd;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fvbo;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.wit;
-import defpackage.wkg;
-import defpackage.xul;
-import defpackage.yvc;
-import defpackage.yvk;
-import defpackage.yvl;
+import defpackage.aaus;
+import defpackage.aava;
+import defpackage.aavb;
+import defpackage.ausn;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonp;
+import defpackage.dqoj;
+import defpackage.enso;
+import defpackage.ensq;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fxxm;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.yez;
+import defpackage.ygq;
+import defpackage.zsi;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class UlpUpgradeChimeraActivity extends qet {
+public class UlpUpgradeChimeraActivity extends rxx {
     public static final /* synthetic */ int m = 0;
-    private static final asot n = xul.a("UlpUpgradeChimeraActivity");
+    private static final ausn n = zsi.a("UlpUpgradeChimeraActivity");
     public WebView j;
     public View k;
     public String l;
-    private bmgq o;
+    private boni o;
     private Account p;
-    private yvl q;
-    private doea r;
+    private aavb q;
+    private dqoj r;
 
-    public final void a(wit witVar) {
-        witVar.f(n);
-        bmgq bmgqVar = this.o;
+    public final void a(yez yezVar) {
+        yezVar.f(n);
+        boni boniVar = this.o;
         Account account = this.p;
         if (account != null) {
-            bmgqVar = bmgp.a(this, account.name);
+            boniVar = bonh.a(this, account.name);
         }
-        fecj v = elfd.a.v();
-        yvl yvlVar = this.q;
-        String a = yvlVar != null ? yvlVar.d : bmgx.a();
+        fgrc v = ensq.a.v();
+        aavb aavbVar = this.q;
+        String a = aavbVar != null ? aavbVar.d : bonp.a();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elfd elfdVar = (elfd) fecpVar;
+        fgri fgriVar = v.b;
+        ensq ensqVar = (ensq) fgriVar;
         a.getClass();
-        elfdVar.b |= 2;
-        elfdVar.e = a;
-        if (!fecpVar.L()) {
+        ensqVar.b |= 2;
+        ensqVar.e = a;
+        if (!fgriVar.L()) {
             v.U();
         }
-        elfd elfdVar2 = (elfd) v.b;
-        elfdVar2.d = 17;
-        elfdVar2.b |= 1;
-        fecj k = witVar.k();
-        if (!k.b.L()) {
-            k.U();
+        ensq ensqVar2 = (ensq) v.b;
+        ensqVar2.d = 17;
+        ensqVar2.b |= 1;
+        fgrc l = yezVar.l();
+        if (!l.b.L()) {
+            l.U();
         }
-        elfb elfbVar = (elfb) k.b;
-        elfb elfbVar2 = elfb.a;
-        elfbVar.f = 209;
-        elfbVar.b |= 8;
+        enso ensoVar = (enso) l.b;
+        enso ensoVar2 = enso.a;
+        ensoVar.f = 209;
+        ensoVar.b |= 8;
         if (!v.b.L()) {
             v.U();
         }
-        elfd elfdVar3 = (elfd) v.b;
-        elfb elfbVar3 = (elfb) k.Q();
-        elfbVar3.getClass();
-        elfdVar3.s = elfbVar3;
-        elfdVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-        bmgqVar.a((elfd) v.Q());
-        setResult(witVar.a(), witVar.b());
+        ensq ensqVar3 = (ensq) v.b;
+        enso ensoVar3 = (enso) l.Q();
+        ensoVar3.getClass();
+        ensqVar3.s = ensoVar3;
+        ensqVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        boniVar.a((ensq) v.Q());
+        setResult(yezVar.a(), yezVar.b());
         finish();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         WebView webView = this.j;
         if (webView == null || !webView.canGoBack()) {
@@ -98,9 +98,9 @@ public class UlpUpgradeChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        this.o = bmgp.a(this, null);
+        this.o = bonh.a(this, null);
         setTheme(R.style.UlpUpgrade);
         super.onCreate(bundle);
         setContentView(R.layout.credentials_ulp_upgrade);
@@ -108,36 +108,36 @@ public class UlpUpgradeChimeraActivity extends qet {
         this.k = findViewById(R.id.spinner);
         String stringExtra = getIntent().getStringExtra("calling_package");
         if (stringExtra == null) {
-            a((wit) wit.c().c(28453, wkg.a("packageName")));
+            a((yez) yez.c().c(28453, ygq.a("packageName")));
             return;
         }
         this.l = stringExtra;
         Account account = (Account) getIntent().getParcelableExtra("ulp_account");
         if (account == null) {
-            a((wit) wit.c().c(28453, wkg.a("ulpAccount")));
+            a((yez) yez.c().c(28453, ygq.a("ulpAccount")));
             return;
         }
         this.p = account;
-        this.q = (yvl) new jrh(this, new yvk(getApplication(), this.p)).a(yvl.class);
-        this.r = new doea(this.q);
+        this.q = (aavb) new jxw(this, new aava(getApplication(), this.p)).a(aavb.class);
+        this.r = new dqoj(this.q);
         WebView webView = this.j;
         WebSettings settings = webView.getSettings();
-        webView.setWebViewClient(new yvc(this));
+        webView.setWebViewClient(new aaus(this));
         settings.setUseWideViewPort(false);
         settings.setJavaScriptEnabled(true);
         settings.setAllowFileAccess(false);
         settings.setNeedInitialFocus(false);
         settings.setSupportZoom(false);
-        doea doeaVar = this.r;
-        fvbo.f(webView, "webView");
-        webView.addJavascriptInterface(doeaVar, "KidOnboarding");
-        this.q.b.g(this, new jpd() { // from class: yva
-            @Override // defpackage.jpd
+        dqoj dqojVar = this.r;
+        fxxm.f(webView, "webView");
+        webView.addJavascriptInterface(dqojVar, "KidOnboarding");
+        this.q.b.g(this, new jvs() { // from class: aauq
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 int intValue = ((Integer) obj).intValue();
                 UlpUpgradeChimeraActivity ulpUpgradeChimeraActivity = UlpUpgradeChimeraActivity.this;
                 if (intValue == 1) {
-                    ulpUpgradeChimeraActivity.j.loadUrl(bmhp.b(Uri.parse(fkrm.a.a().c()).buildUpon().appendQueryParameter("package", ulpUpgradeChimeraActivity.l).appendQueryParameter("hl", Locale.getDefault().getLanguage()).appendQueryParameter("theme", "gm").build().toString(), ulpUpgradeChimeraActivity.getResources()));
+                    ulpUpgradeChimeraActivity.j.loadUrl(booh.b(Uri.parse(fnil.a.lK().c()).buildUpon().appendQueryParameter("package", ulpUpgradeChimeraActivity.l).appendQueryParameter("hl", Locale.getDefault().getLanguage()).appendQueryParameter("theme", "gm").build().toString(), ulpUpgradeChimeraActivity.getResources()));
                 } else {
                     if (intValue != 2) {
                         throw new IllegalStateException(a.j(intValue, "Unrecognized fragment type: "));
@@ -147,16 +147,16 @@ public class UlpUpgradeChimeraActivity extends qet {
                 }
             }
         });
-        this.q.c.g(this, new jpd() { // from class: yvb
-            @Override // defpackage.jpd
+        this.q.c.g(this, new jvs() { // from class: aaur
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                UlpUpgradeChimeraActivity.this.a((wit) obj);
+                UlpUpgradeChimeraActivity.this.a((yez) obj);
             }
         });
         this.q.h.i();
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
         WebView webView = this.j;
         if (webView != null) {

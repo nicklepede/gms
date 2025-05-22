@@ -7,46 +7,46 @@ import android.os.RemoteException;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.aapt;
-import defpackage.aapw;
-import defpackage.accr;
-import defpackage.acly;
-import defpackage.acns;
-import defpackage.acnt;
-import defpackage.acqc;
-import defpackage.acqe;
-import defpackage.aqum;
-import defpackage.aqun;
-import defpackage.asot;
-import defpackage.bxhd;
-import defpackage.byln;
-import defpackage.dvni;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ejhf;
-import defpackage.esjn;
-import defpackage.flcd;
-import defpackage.vay;
-import defpackage.vbf;
-import defpackage.vbh;
+import defpackage.acpt;
+import defpackage.acpw;
+import defpackage.aecr;
+import defpackage.aely;
+import defpackage.aens;
+import defpackage.aent;
+import defpackage.aeqc;
+import defpackage.aeqe;
+import defpackage.asxb;
+import defpackage.asxc;
+import defpackage.ausn;
+import defpackage.bzpt;
+import defpackage.cauf;
+import defpackage.dxyi;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.eluo;
+import defpackage.euzc;
+import defpackage.fntm;
+import defpackage.wwy;
+import defpackage.wxf;
+import defpackage.wxh;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class BetterTogetherFeatureSupportIntentOperation extends IntentOperation {
-    public static final asot a = acqc.a("BetterTogetherFeatureSupportIntentOperation");
-    private final acqe b = new acqe();
+    public static final ausn a = aeqc.a("BetterTogetherFeatureSupportIntentOperation");
+    private final aeqe b = new aeqe();
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class RetryGmsTaskBoundService extends GmsTaskBoundService {
         public static final /* synthetic */ int a = 0;
 
         @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-        public final int a(byln bylnVar) {
-            if (!flcd.e()) {
+        public final int a(cauf caufVar) {
+            if (!fntm.e()) {
                 return 0;
             }
-            startService(BetterTogetherFeatureSupportIntentOperation.a(this).putExtras(bylnVar.b));
+            startService(BetterTogetherFeatureSupportIntentOperation.a(this).putExtras(caufVar.b));
             return 0;
         }
     }
@@ -58,45 +58,45 @@ public class BetterTogetherFeatureSupportIntentOperation extends IntentOperation
         return IntentOperation.getStartIntent(context, BetterTogetherFeatureSupportIntentOperation.class, "com.google.android.gms.auth.proximity.UPDATE_FEATURE_SUPPORT");
     }
 
-    private static void b(esjn esjnVar, boolean z, accr accrVar, Context context, acly aclyVar) {
+    private static void b(euzc euzcVar, boolean z, aecr aecrVar, Context context, aely aelyVar) {
         Status status;
         try {
-            eijr a2 = eijy.a(new vbf());
-            dvni.f(context);
-            for (Account account : vbh.a(context, new vay(context), a2)) {
-                aapt aaptVar = new aapt(context);
-                asot asotVar = acnt.a;
+            ekww a2 = ekxd.a(new wxf());
+            dxyi.f(context);
+            for (Account account : wxh.a(context, new wwy(context), a2)) {
+                acpt acptVar = new acpt(context);
+                ausn ausnVar = aent.a;
                 AtomicReference atomicReference = new AtomicReference();
                 try {
-                    new acnt(new acns(atomicReference), esjnVar.name(), z, account.name, aaptVar, aclyVar, null).f(context);
+                    new aent(new aens(atomicReference), euzcVar.name(), z, account.name, acptVar, aelyVar, null).f(context);
                     status = (Status) atomicReference.get();
                 } catch (RemoteException e) {
-                    ((ejhf) ((ejhf) acnt.a.j()).s(e)).x("Unable to setFeatureSupported (RemoteException)");
+                    ((eluo) ((eluo) aent.a.j()).s(e)).x("Unable to setFeatureSupported (RemoteException)");
                     status = Status.d;
-                } catch (bxhd e2) {
-                    ((ejhf) ((ejhf) acnt.a.j()).s(e2)).x("Unable to setFeatureSupported (OperationException)");
+                } catch (bzpt e2) {
+                    ((eluo) ((eluo) aent.a.j()).s(e2)).x("Unable to setFeatureSupported (OperationException)");
                     status = e2.a;
                 }
-                String a3 = aapw.a(status.i);
+                String a3 = acpw.a(status.i);
                 if (status.e()) {
-                    ((ejhf) a.h()).T("setFeatureSupported for [%s] to %b finished with status [%s].", esjnVar.name(), Boolean.valueOf(z), a3);
-                    accrVar.a(0);
+                    ((eluo) a.h()).T("setFeatureSupported for [%s] to %b finished with status [%s].", euzcVar.name(), Boolean.valueOf(z), a3);
+                    aecrVar.a(0);
                 } else {
-                    ((ejhf) a.j()).T("Failed to setFeatureSupported for [%s] to %b with status [%s].", esjnVar.name(), Boolean.valueOf(z), a3);
-                    accrVar.a(1);
+                    ((eluo) a.j()).T("Failed to setFeatureSupported for [%s] to %b with status [%s].", euzcVar.name(), Boolean.valueOf(z), a3);
+                    aecrVar.a(1);
                 }
             }
-        } catch (RemoteException | aqum | aqun e3) {
-            ((ejhf) ((ejhf) a.j()).s(e3)).x("Failed to get Accounts.");
+        } catch (RemoteException | asxb | asxc e3) {
+            ((eluo) ((eluo) a.j()).s(e3)).x("Failed to get Accounts.");
         }
     }
 
     /* JADX WARN: Removed duplicated region for block: B:109:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Removed duplicated region for block: B:111:0x01b1  */
-    /* JADX WARN: Removed duplicated region for block: B:60:0x01a0  */
-    /* JADX WARN: Removed duplicated region for block: B:65:0x01cb  */
-    /* JADX WARN: Removed duplicated region for block: B:74:0x01f2  */
-    /* JADX WARN: Removed duplicated region for block: B:89:0x022d  */
+    /* JADX WARN: Removed duplicated region for block: B:111:0x01af  */
+    /* JADX WARN: Removed duplicated region for block: B:60:0x019e  */
+    /* JADX WARN: Removed duplicated region for block: B:65:0x01c9  */
+    /* JADX WARN: Removed duplicated region for block: B:74:0x01ee  */
+    /* JADX WARN: Removed duplicated region for block: B:89:0x0229  */
     @Override // com.google.android.chimera.IntentOperation
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -104,7 +104,7 @@ public class BetterTogetherFeatureSupportIntentOperation extends IntentOperation
     */
     public final void onHandleIntent(android.content.Intent r18) {
         /*
-            Method dump skipped, instructions count: 641
+            Method dump skipped, instructions count: 637
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.proximity.BetterTogetherFeatureSupportIntentOperation.onHandleIntent(android.content.Intent):void");

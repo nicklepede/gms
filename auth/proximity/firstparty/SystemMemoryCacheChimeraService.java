@@ -3,13 +3,13 @@ package com.google.android.gms.auth.proximity.firstparty;
 import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.acod;
-import defpackage.armd;
-import defpackage.arwm;
+import defpackage.aeod;
+import defpackage.atos;
+import defpackage.atzb;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SystemMemoryCacheChimeraService extends Service {
     @Override // com.google.android.chimera.Service
@@ -19,27 +19,27 @@ public class SystemMemoryCacheChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(final Intent intent, int i, int i2) {
-        if (!armd.m(intent)) {
+        if (!atos.m(intent)) {
             return 2;
         }
-        final acod a = acod.a();
-        arwm.b(armd.m(intent));
-        a.b.post(new Runnable() { // from class: acnx
+        final aeod a = aeod.a();
+        atzb.b(atos.m(intent));
+        a.b.post(new Runnable() { // from class: aenx
             @Override // java.lang.Runnable
             public final void run() {
-                acod acodVar = acod.this;
-                if (acodVar.d) {
+                aeod aeodVar = aeod.this;
+                if (aeodVar.d) {
                     return;
                 }
                 Intent intent2 = intent;
-                if (armd.a(intent2) == 0) {
-                    acodVar.a.h(intent2);
-                    acodVar.d = true;
-                    arwm.l(acodVar.d);
-                    List list = acodVar.c;
+                if (atos.a(intent2) == 0) {
+                    aeodVar.a.h(intent2);
+                    aeodVar.d = true;
+                    atzb.l(aeodVar.d);
+                    List list = aeodVar.c;
                     Iterator it = list.iterator();
                     while (it.hasNext()) {
-                        acodVar.b.post((Runnable) it.next());
+                        aeodVar.b.post((Runnable) it.next());
                     }
                     list.clear();
                 }

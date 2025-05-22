@@ -5,16 +5,16 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dexi;
-import defpackage.dext;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dhim;
+import defpackage.dhix;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class SeInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dext();
+    public static final Parcelable.Creator CREATOR = new dhix();
     public int a;
     public String b;
     public String c;
@@ -23,7 +23,7 @@ public final class SeInfo extends AbstractSafeParcelable {
     public String f;
     public String g;
     public String h;
-    private dexi i;
+    private dhim i;
 
     private SeInfo() {
     }
@@ -34,7 +34,7 @@ public final class SeInfo extends AbstractSafeParcelable {
         }
         if (obj instanceof SeInfo) {
             SeInfo seInfo = (SeInfo) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(seInfo.a)) && arwb.b(this.b, seInfo.b) && arwb.b(this.c, seInfo.c) && arwb.b(this.i, seInfo.i) && arwb.b(this.d, seInfo.d) && arwb.b(this.e, seInfo.e) && arwb.b(this.f, seInfo.f) && arwb.b(this.g, seInfo.g) && arwb.b(this.h, seInfo.h)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(seInfo.a)) && atyq.b(this.b, seInfo.b) && atyq.b(this.c, seInfo.c) && atyq.b(this.i, seInfo.i) && atyq.b(this.d, seInfo.d) && atyq.b(this.e, seInfo.e) && atyq.b(this.f, seInfo.f) && atyq.b(this.g, seInfo.g) && atyq.b(this.h, seInfo.h)) {
                 return true;
             }
         }
@@ -47,32 +47,32 @@ public final class SeInfo extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.f, false);
-        arxc.v(parcel, 3, this.g, false);
-        arxc.v(parcel, 4, this.c, false);
-        dexi dexiVar = this.i;
-        arxc.D(parcel, 5, dexiVar == null ? null : dexiVar.a);
-        arxc.t(parcel, 6, this.d, i, false);
-        arxc.v(parcel, 7, this.e, false);
-        arxc.v(parcel, 8, this.b, false);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.f, false);
+        atzr.v(parcel, 3, this.g, false);
+        atzr.v(parcel, 4, this.c, false);
+        dhim dhimVar = this.i;
+        atzr.D(parcel, 5, dhimVar == null ? null : dhimVar.a);
+        atzr.t(parcel, 6, this.d, i, false);
+        atzr.v(parcel, 7, this.e, false);
+        atzr.v(parcel, 8, this.b, false);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.c(parcel, a);
     }
 
     public SeInfo(int i, String str, String str2, IBinder iBinder, RichCardArtAttributesParcelable richCardArtAttributesParcelable, String str3, String str4, String str5, String str6) {
-        dexi dexiVar;
+        dhim dhimVar;
         if (iBinder == null) {
-            dexiVar = null;
+            dhimVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.tapandpay.firstparty.IRenderCallback");
-            dexiVar = queryLocalInterface instanceof dexi ? (dexi) queryLocalInterface : new dexi(iBinder);
+            dhimVar = queryLocalInterface instanceof dhim ? (dhim) queryLocalInterface : new dhim(iBinder);
         }
         this.a = i;
         this.b = str;
         this.c = str2;
-        this.i = dexiVar;
+        this.i = dhimVar;
         this.d = richCardArtAttributesParcelable;
         this.e = str3;
         this.f = str4;

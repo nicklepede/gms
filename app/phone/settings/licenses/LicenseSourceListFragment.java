@@ -11,16 +11,16 @@ import android.widget.ListView;
 import com.google.android.gms.R;
 import com.google.android.gms.app.phone.settings.licenses.LicenseSourceWrapper;
 import defpackage.dg;
-import defpackage.eike;
-import defpackage.jpc;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.kdr;
-import defpackage.kjo;
-import defpackage.tpq;
-import defpackage.tps;
+import defpackage.ekxj;
+import defpackage.jvr;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.lwb;
+import defpackage.mbz;
+import defpackage.vlq;
+import defpackage.vls;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class LicenseSourceListFragment extends dg {
     @Override // defpackage.dg
@@ -30,38 +30,38 @@ public final class LicenseSourceListFragment extends dg {
 
     @Override // defpackage.dg
     public final void onViewCreated(View view, Bundle bundle) {
-        tps tpsVar = (tps) new jrh(this).a(tps.class);
+        vls vlsVar = (vls) new jxw(this).a(vls.class);
         LayoutInflater layoutInflater = (LayoutInflater) requireContext().getSystemService("layout_inflater");
-        eike.e(layoutInflater);
-        final tpq tpqVar = new tpq(requireContext(), layoutInflater);
-        tpsVar.b.g(getViewLifecycleOwner(), new jpd() { // from class: tpn
-            @Override // defpackage.jpd
+        ekxj.e(layoutInflater);
+        final vlq vlqVar = new vlq(requireContext(), layoutInflater);
+        vlsVar.b.g(getViewLifecycleOwner(), new jvs() { // from class: vln
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                ArrayAdapter arrayAdapter = tpqVar;
+                ArrayAdapter arrayAdapter = vlqVar;
                 arrayAdapter.clear();
-                arrayAdapter.addAll((eitj) obj);
+                arrayAdapter.addAll((elgo) obj);
             }
         });
-        jpc jpcVar = tpsVar.c;
-        final kdr a = kjo.a(this);
-        jpcVar.g(getViewLifecycleOwner(), new jpd() { // from class: tpo
-            @Override // defpackage.jpd
+        jvr jvrVar = vlsVar.c;
+        final lwb a = mbz.a(this);
+        jvrVar.g(getViewLifecycleOwner(), new jvs() { // from class: vlo
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 if (((Boolean) obj).booleanValue()) {
-                    kdr.this.q();
+                    lwb.this.q();
                 }
             }
         });
         ListView listView = (ListView) view;
-        listView.setAdapter((ListAdapter) tpqVar);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: tpp
+        listView.setAdapter((ListAdapter) vlqVar);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { // from class: vlp
             @Override // android.widget.AdapterView.OnItemClickListener
             public final void onItemClick(AdapterView adapterView, View view2, int i, long j) {
-                LicenseSourceWrapper licenseSourceWrapper = (LicenseSourceWrapper) tpqVar.getItem(i);
-                eike.e(licenseSourceWrapper);
+                LicenseSourceWrapper licenseSourceWrapper = (LicenseSourceWrapper) vlqVar.getItem(i);
+                ekxj.e(licenseSourceWrapper);
                 Bundle bundle2 = new Bundle();
                 bundle2.putParcelable("source", licenseSourceWrapper);
-                kdr.this.k(R.id.action_listLicenses, bundle2);
+                lwb.this.k(R.id.action_listLicenses, bundle2);
             }
         });
     }

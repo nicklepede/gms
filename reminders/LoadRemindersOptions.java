@@ -3,14 +3,14 @@ package com.google.android.gms.reminders;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cxda;
+import defpackage.atzr;
+import defpackage.czmw;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class LoadRemindersOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cxda();
+    public static final Parcelable.Creator CREATOR = new czmw();
     public final List a;
     public final List b;
     public final Long c;
@@ -52,22 +52,22 @@ public class LoadRemindersOptions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.x(parcel, 3, list, false);
-        arxc.E(parcel, 4, this.b);
-        arxc.I(parcel, 5, this.c);
-        arxc.I(parcel, 6, this.d);
-        arxc.I(parcel, 7, this.e);
-        arxc.I(parcel, 8, this.f);
-        arxc.e(parcel, 9, this.g);
-        arxc.o(parcel, 10, this.h);
-        arxc.e(parcel, 11, this.i);
-        arxc.e(parcel, 12, this.j);
-        arxc.o(parcel, 13, this.k);
-        arxc.o(parcel, 14, this.l);
-        arxc.x(parcel, 15, this.m, false);
-        arxc.I(parcel, 16, this.n);
-        arxc.I(parcel, 17, this.o);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.x(parcel, 3, list, false);
+        atzr.E(parcel, 4, this.b);
+        atzr.I(parcel, 5, this.c);
+        atzr.I(parcel, 6, this.d);
+        atzr.I(parcel, 7, this.e);
+        atzr.I(parcel, 8, this.f);
+        atzr.e(parcel, 9, this.g);
+        atzr.o(parcel, 10, this.h);
+        atzr.e(parcel, 11, this.i);
+        atzr.e(parcel, 12, this.j);
+        atzr.o(parcel, 13, this.k);
+        atzr.o(parcel, 14, this.l);
+        atzr.x(parcel, 15, this.m, false);
+        atzr.I(parcel, 16, this.n);
+        atzr.I(parcel, 17, this.o);
+        atzr.c(parcel, a);
     }
 }

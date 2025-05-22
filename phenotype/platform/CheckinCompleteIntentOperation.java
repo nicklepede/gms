@@ -4,20 +4,20 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.phenotype.AppContextProvider;
-import defpackage.apsr;
-import defpackage.apta;
-import defpackage.apud;
-import defpackage.aqxd;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.cvzk;
-import defpackage.cwal;
-import defpackage.cwas;
-import defpackage.dfbl;
-import defpackage.dmnn;
-import defpackage.ejhf;
-import defpackage.fief;
-import defpackage.frlx;
+import defpackage.arvi;
+import defpackage.arvr;
+import defpackage.arwu;
+import defpackage.aszs;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cyjh;
+import defpackage.cyki;
+import defpackage.cykp;
+import defpackage.dhmr;
+import defpackage.dozb;
+import defpackage.eluo;
+import defpackage.fkuc;
+import defpackage.fufv;
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.List;
@@ -26,38 +26,38 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class CheckinCompleteIntentOperation extends IntentOperation {
     private Context d;
-    private cwal e;
-    private apud f;
-    private static final asot b = asot.e(asej.PHENOTYPE);
+    private cyki e;
+    private arwu f;
+    private static final ausn b = ausn.e(auid.PHENOTYPE);
     static final String[] a = {"DUMMYLOGSOURCE"};
     private static final int[] c = new int[0];
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        aqxd aqxdVar = cvzk.a;
-        cwal cwalVar = new cwal(this);
-        WeakReference weakReference = cwas.a;
-        apta aptaVar = weakReference != null ? (apta) weakReference.get() : null;
-        if (aptaVar == null) {
+        aszs aszsVar = cyjh.a;
+        cyki cykiVar = new cyki(this);
+        WeakReference weakReference = cykp.a;
+        arvr arvrVar = weakReference != null ? (arvr) weakReference.get() : null;
+        if (arvrVar == null) {
             Context a2 = AppContextProvider.a();
-            List list = apta.n;
-            aptaVar = new apsr(a2, "PHENOTYPE").a();
-            aptaVar.h(fief.UNMETERED_OR_DAILY);
-            cwas.a = new WeakReference(aptaVar);
+            List list = arvr.n;
+            arvrVar = new arvi(a2, "PHENOTYPE").a();
+            arvrVar.h(fkuc.UNMETERED_OR_DAILY);
+            cykp.a = new WeakReference(arvrVar);
         }
-        apud apudVar = new apud(aptaVar, "PHENOTYPE_COUNTERS", 1024);
+        arwu arwuVar = new arwu(arvrVar, "PHENOTYPE_COUNTERS", 1024);
         this.d = this;
-        this.e = cwalVar;
-        this.f = apudVar;
+        this.e = cykiVar;
+        this.f = arwuVar;
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onDestroy() {
-        if (frlx.i()) {
+        if (fufv.i()) {
             return;
         }
         this.f.h();
@@ -71,11 +71,11 @@ public class CheckinCompleteIntentOperation extends IntentOperation {
         }
         String action = intent.getAction();
         if (!"com.google.android.checkin.CHECKIN_COMPLETE".equals(action)) {
-            ((ejhf) b.j()).B("Received unknown action: %s", action);
+            ((eluo) b.j()).B("Received unknown action: %s", action);
             return;
         }
         if (intent.getBooleanExtra("success", true)) {
-            Map h = dmnn.h(this.d.getContentResolver(), "checkin_expid_");
+            Map h = dozb.h(this.d.getContentResolver(), "checkin_expid_");
             if (h.isEmpty()) {
                 copyOf = c;
             } else {
@@ -89,14 +89,14 @@ public class CheckinCompleteIntentOperation extends IntentOperation {
                             int parseInt = Integer.parseInt(str.substring(14));
                             iArr[i] = parseInt;
                             i++;
-                            if (!frlx.i()) {
-                                this.f.e("CheckinExpId").a(parseInt, 1L, apud.b);
+                            if (!fufv.i()) {
+                                this.f.e("CheckinExpId").a(parseInt, 1L, arwu.b);
                             }
                         } catch (NumberFormatException unused) {
-                            if (!frlx.i()) {
-                                this.f.d("BadCheckinExpId").a(0L, 1L, apud.b);
+                            if (!fufv.i()) {
+                                this.f.d("BadCheckinExpId").a(0L, 1L, arwu.b);
                             }
-                            ((ejhf) b.j()).B("Received gservices flag with bad format: %s", str);
+                            ((eluo) b.j()).B("Received gservices flag with bad format: %s", str);
                         }
                     }
                 }
@@ -104,16 +104,16 @@ public class CheckinCompleteIntentOperation extends IntentOperation {
             }
             Arrays.toString(copyOf);
             try {
-                dfbl.o(this.e.g("com.google.android.gms.checkin.binary", 1, a, copyOf), frlx.b(), TimeUnit.MILLISECONDS);
-                if (frlx.i()) {
+                dhmr.o(this.e.g("com.google.android.gms.checkin.binary", 1, a, copyOf), fufv.b(), TimeUnit.MILLISECONDS);
+                if (fufv.i()) {
                     return;
                 }
-                this.f.d("CheckinExpIdWeakRegisterSuccess").a(0L, 1L, apud.b);
+                this.f.d("CheckinExpIdWeakRegisterSuccess").a(0L, 1L, arwu.b);
             } catch (InterruptedException | ExecutionException | TimeoutException unused2) {
-                if (frlx.i()) {
+                if (fufv.i()) {
                     return;
                 }
-                this.f.d("CheckinExpIdWeakRegisterFailure").a(0L, 1L, apud.b);
+                this.f.d("CheckinExpIdWeakRegisterFailure").a(0L, 1L, arwu.b);
             }
         }
     }

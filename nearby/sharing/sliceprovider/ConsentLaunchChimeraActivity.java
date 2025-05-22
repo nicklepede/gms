@@ -6,99 +6,100 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 import com.google.android.gms.nearby.sharing.sliceprovider.ConsentLaunchChimeraActivity;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.arwb;
-import defpackage.asvw;
-import defpackage.asvx;
-import defpackage.asvy;
-import defpackage.cmsq;
-import defpackage.dfak;
-import defpackage.ebna;
-import defpackage.eiid;
-import defpackage.fqmf;
-import defpackage.ilq;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.atyq;
+import defpackage.auzv;
+import defpackage.auzw;
+import defpackage.auzx;
+import defpackage.cpay;
+import defpackage.dhlq;
+import defpackage.edzp;
+import defpackage.ekvi;
+import defpackage.ftga;
+import defpackage.ing;
 import defpackage.iq;
-import defpackage.qet;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class ConsentLaunchChimeraActivity extends qet {
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+public class ConsentLaunchChimeraActivity extends rxx {
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        final Account account = (Account) ilq.a(getIntent(), "com.google.android.gms.nearby.sharing.ACCOUNT", Account.class);
+        final Account account = (Account) ing.a(getIntent(), "com.google.android.gms.nearby.sharing.ACCOUNT", Account.class);
         if (account == null) {
             return;
         }
         String action = getIntent().getAction();
-        if (arwb.b(action, "com.google.android.gms.nearby.sharing.ACTION_ENABLE_DEVICE_CONTACT_CONSENT")) {
+        if (atyq.b(action, "com.google.android.gms.nearby.sharing.ACTION_ENABLE_DEVICE_CONTACT_CONSENT")) {
             ProgressBar progressBar = new ProgressBar(this);
             progressBar.setIndeterminate(true);
-            ebna ebnaVar = new ebna(this);
-            ebnaVar.P(progressBar);
-            final iq a = ebnaVar.a();
-            cmsq.a(this).c(account).z(new dfak() { // from class: crir
-                @Override // defpackage.dfak
-                public final void gn(Object obj) {
-                    cmsj cmsjVar = (cmsj) obj;
-                    cmfe.a.b().p("Got consent text", new Object[0]);
+            edzp edzpVar = new edzp(this);
+            edzpVar.P(progressBar);
+            final iq a = edzpVar.a();
+            cpay.a(this).c(account).z(new dhlq() { // from class: ctrv
+                @Override // defpackage.dhlq
+                public final void gC(Object obj) {
+                    cpar cparVar = (cpar) obj;
+                    conm.a.b().p("Got consent text", new Object[0]);
                     final ConsentLaunchChimeraActivity consentLaunchChimeraActivity = ConsentLaunchChimeraActivity.this;
-                    ebna ebnaVar2 = new ebna(consentLaunchChimeraActivity);
-                    ebnaVar2.I(new DialogInterface.OnDismissListener() { // from class: crio
+                    edzp edzpVar2 = new edzp(consentLaunchChimeraActivity);
+                    edzpVar2.I(new DialogInterface.OnDismissListener() { // from class: ctrs
                         @Override // android.content.DialogInterface.OnDismissListener
                         public final void onDismiss(DialogInterface dialogInterface) {
                             ConsentLaunchChimeraActivity.this.finish();
                         }
                     });
-                    ebnaVar2.N(cmsjVar.a);
-                    ebnaVar2.C(cmsjVar.b);
-                    ebnaVar2.F(cmsjVar.f, new DialogInterface.OnClickListener() { // from class: crip
+                    edzpVar2.N(cparVar.a);
+                    edzpVar2.C(cparVar.b);
+                    edzpVar2.F(cparVar.f, new DialogInterface.OnClickListener() { // from class: ctrt
                         @Override // android.content.DialogInterface.OnClickListener
                         public final void onClick(DialogInterface dialogInterface, int i) {
                             ConsentLaunchChimeraActivity.this.finish();
                         }
                     });
                     final Account account2 = account;
-                    ebnaVar2.L(cmsjVar.e, new DialogInterface.OnClickListener() { // from class: criq
+                    edzpVar2.L(cparVar.e, new DialogInterface.OnClickListener() { // from class: ctru
                         @Override // android.content.DialogInterface.OnClickListener
                         public final void onClick(DialogInterface dialogInterface, int i) {
                             final ConsentLaunchChimeraActivity consentLaunchChimeraActivity2 = ConsentLaunchChimeraActivity.this;
-                            dfaq b = cmsq.a(consentLaunchChimeraActivity2).b(account2);
-                            b.x(new dfae() { // from class: crim
-                                @Override // defpackage.dfae
-                                public final void hr(dfaq dfaqVar) {
+                            dhlw b = cpay.a(consentLaunchChimeraActivity2).b(account2);
+                            b.x(new dhlk() { // from class: ctrq
+                                @Override // defpackage.dhlk
+                                public final void hH(dhlw dhlwVar) {
                                     ConsentLaunchChimeraActivity.this.finish();
                                 }
                             });
-                            b.y(new dfah() { // from class: crin
-                                @Override // defpackage.dfah
-                                public final void gm(Exception exc) {
-                                    cmfe.a.e().f(exc).p("Failed to enable Device Contact consent.", new Object[0]);
+                            b.y(new dhln() { // from class: ctrr
+                                @Override // defpackage.dhln
+                                public final void gB(Exception exc) {
+                                    conm.a.e().f(exc).p("Failed to enable Device Contact consent.", new Object[0]);
                                 }
                             });
                         }
                     });
-                    ebnaVar2.a();
+                    edzpVar2.a();
                     a.dismiss();
                 }
             });
         }
-        if (arwb.b(action, "com.google.android.gms.nearby.sharing.ACTION_ENABLE_C11N_CONSENT")) {
-            abv registerForActivityResult = registerForActivityResult(new asvw(), new abt() { // from class: cris
-                @Override // defpackage.abt
-                public final void jq(Object obj) {
+        if (atyq.b(action, "com.google.android.gms.nearby.sharing.ACTION_ENABLE_C11N_CONSENT")) {
+            aca registerForActivityResult = registerForActivityResult(new auzv(), new aby() { // from class: ctrw
+                @Override // defpackage.aby
+                public final void jF(Object obj) {
                     Intent intent = new Intent("com.google.android.gms.nearby.sharing.ACTION_C11N_CONSENT_RESULT");
-                    intent.putExtra("com.google.android.gms.nearby.sharing.C11N_CONSENT_RESULT_CODE", ((aswa) obj).c);
+                    intent.putExtra("com.google.android.gms.nearby.sharing.C11N_CONSENT_RESULT_CODE", ((auzz) obj).c);
                     ConsentLaunchChimeraActivity consentLaunchChimeraActivity = ConsentLaunchChimeraActivity.this;
-                    cfcs.d(consentLaunchChimeraActivity, intent);
+                    chke.d(consentLaunchChimeraActivity, intent);
                     consentLaunchChimeraActivity.finish();
                 }
             });
-            asvx a2 = asvy.a();
-            a2.g(fqmf.a.a().cJ());
-            a2.f(fqmf.a.a().cI());
-            a2.a = eiid.j(account.name);
+            auzw a2 = auzx.a();
+            ftga ftgaVar = ftga.a;
+            a2.b = ftgaVar.lK().cN();
+            a2.c = ftgaVar.lK().cM();
+            a2.a = ekvi.j(account.name);
             a2.d(true);
             a2.b(true);
             registerForActivityResult.b(a2.a());

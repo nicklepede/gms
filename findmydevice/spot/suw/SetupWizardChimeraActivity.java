@@ -19,63 +19,67 @@ import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.ImageView;
 import com.google.android.gms.R;
+import com.google.android.gms.findmydevice.spot.ChangeFindMyDeviceSettingsRequest;
 import com.google.android.gms.findmydevice.spot.FindMyDeviceNetworkSettings;
+import com.google.android.gms.findmydevice.spot.GetFindMyDeviceSettingsRequest;
+import com.google.android.gms.findmydevice.spot.GetFindMyDeviceSettingsResponse;
 import com.google.android.gms.findmydevice.spot.suw.SetupWizardChimeraActivity;
 import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.items.ItemGroup;
 import com.google.android.setupdesign.items.RadioButtonItem;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.bcuu;
-import defpackage.bdak;
-import defpackage.bdal;
-import defpackage.bdan;
-import defpackage.bdao;
-import defpackage.bdbm;
-import defpackage.bedy;
-import defpackage.bezi;
-import defpackage.bzfi;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.dhqq;
-import defpackage.eble;
-import defpackage.edeq;
-import defpackage.edfq;
-import defpackage.edfr;
-import defpackage.edfs;
-import defpackage.edhh;
-import defpackage.edho;
-import defpackage.edhs;
-import defpackage.edhz;
-import defpackage.edja;
-import defpackage.edjs;
-import defpackage.edjt;
-import defpackage.egna;
-import defpackage.eiho;
-import defpackage.eitj;
-import defpackage.ejhf;
-import defpackage.enqb;
-import defpackage.euhg;
-import defpackage.fixd;
-import defpackage.fixq;
-import defpackage.fobb;
-import defpackage.qet;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.bfbw;
+import defpackage.bfbx;
+import defpackage.bfbz;
+import defpackage.bfca;
+import defpackage.bfcy;
+import defpackage.bgfk;
+import defpackage.bhay;
+import defpackage.cbnz;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.dkbw;
+import defpackage.edxt;
+import defpackage.efrl;
+import defpackage.efsl;
+import defpackage.efsm;
+import defpackage.efsn;
+import defpackage.efuc;
+import defpackage.efuj;
+import defpackage.efun;
+import defpackage.efuu;
+import defpackage.efvv;
+import defpackage.efwn;
+import defpackage.efwo;
+import defpackage.ejad;
+import defpackage.ekut;
+import defpackage.elgo;
+import defpackage.eluo;
+import defpackage.eqdu;
+import defpackage.ewwz;
+import defpackage.flna;
+import defpackage.flnn;
+import defpackage.fqsv;
+import defpackage.rxx;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class SetupWizardChimeraActivity extends qet {
-    public static final asot j = asot.b("SetupWizardActivity", asej.FIND_MY_DEVICE_SPOT);
-    public euhg k = euhg.FMDN_DISABLED_DEFAULT;
+public final class SetupWizardChimeraActivity extends rxx {
+    public static final ausn j = ausn.b("SetupWizardActivity", auid.FIND_MY_DEVICE_SPOT);
+    public ewwz k = ewwz.FMDN_DISABLED_DEFAULT;
     public Account l;
-    public edfs m;
+    public efsn m;
+    public RadioButtonItem n;
+    public RadioButtonItem o;
 
     public static Context a(Context context) {
         ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context, R.style.Theme_GoogleMaterial3_DayNight);
-        int i = eble.a;
+        int i = edxt.a;
         return contextThemeWrapper;
     }
 
@@ -102,208 +106,212 @@ public final class SetupWizardChimeraActivity extends qet {
             canvas.drawBitmap(bitmap, new Rect(i2, i3, i2 + min, min + i3), new Rect(0, 0, i, i), paint);
             return createBitmap;
         } catch (OutOfMemoryError e) {
-            ((ejhf) ((ejhf) ((ejhf) j.i()).s(e)).ah((char) 4487)).x("Failed to allocate bitmap");
+            ((eluo) ((eluo) ((eluo) j.i()).s(e)).ai((char) 4497)).x("Failed to allocate bitmap");
             return null;
         }
     }
 
     public final void l() {
-        final eitj m = eitj.m(Integer.valueOf(R.string.high_traffic_radio_title), Integer.valueOf(R.string.all_locations_radio_title));
-        final eitj m2 = eitj.m(Integer.valueOf(R.string.high_traffic_radio_subtitle), Integer.valueOf(R.string.all_locations_radio_subtitle));
+        final elgo m = elgo.m(Integer.valueOf(R.string.high_traffic_radio_title), Integer.valueOf(R.string.all_locations_radio_title));
+        final elgo m2 = elgo.m(Integer.valueOf(R.string.high_traffic_radio_subtitle), Integer.valueOf(R.string.all_locations_radio_subtitle));
         if (this.l != null) {
-            final asmf asmfVar = new asmf(1, 9);
-            asmfVar.execute(new Runnable() { // from class: bezf
+            final aupz aupzVar = new aupz(1, 9);
+            aupzVar.execute(new Runnable() { // from class: bhaj
                 @Override // java.lang.Runnable
                 public final void run() {
                     SetupWizardChimeraActivity setupWizardChimeraActivity = SetupWizardChimeraActivity.this;
-                    dwzr a = dwzq.a(setupWizardChimeraActivity, setupWizardChimeraActivity.l);
-                    dwzp dwzpVar = dwzp.SETUP_WIZARD;
-                    int i = eitj.d;
-                    eitj eitjVar = ejcb.a;
-                    ensj.t(a.a(dwzpVar, m, m2, eitjVar, eitjVar, dwzo.a(setupWizardChimeraActivity.k.a(), true)), new bezg(), asmfVar);
+                    dzlr a = dzlq.a(setupWizardChimeraActivity, setupWizardChimeraActivity.l);
+                    dzlp dzlpVar = dzlp.SETUP_WIZARD;
+                    int i = elgo.d;
+                    elgo elgoVar = elpg.a;
+                    eqgc.t(a.a(dzlpVar, m, m2, elgoVar, elgoVar, dzlo.a(setupWizardChimeraActivity.k.a(), true)), new bhaw(), aupzVar);
                 }
             });
-            final bezi beziVar = new bezi((bdak) fixq.b(new bdal(fixd.c(new bdao(fixd.c(new bdan()))), fixd.c(new bzfi(fixd.c(new dhqq()))), fixd.c(bdbm.a))).a());
-            beziVar.a(this.k == euhg.FMDN_ALL_LOCATIONS ? 27 : 26);
-            bedy bedyVar = new bedy(this);
-            bcuu bcuuVar = new bcuu();
-            bcuuVar.b(true);
-            bcuuVar.d(true);
+            final bhay bhayVar = new bhay((bfbw) flnn.b(new bfbx(flna.c(new bfca(flna.c(new bfbz()))), flna.c(new cbnz(flna.c(new dkbw()))), flna.c(bfcy.a))).a());
+            bhayVar.a(this.k == ewwz.FMDN_ALL_LOCATIONS ? 27 : 26);
+            bgfk bgfkVar = new bgfk(this);
+            ChangeFindMyDeviceSettingsRequest changeFindMyDeviceSettingsRequest = new ChangeFindMyDeviceSettingsRequest();
+            changeFindMyDeviceSettingsRequest.a = true;
+            changeFindMyDeviceSettingsRequest.b = true;
             FindMyDeviceNetworkSettings findMyDeviceNetworkSettings = new FindMyDeviceNetworkSettings();
             findMyDeviceNetworkSettings.a = this.k.a();
-            bcuuVar.c(findMyDeviceNetworkSettings);
-            bcuuVar.a(!fobb.s());
-            dfaq c = bedyVar.c(bcuuVar.a);
-            c.z(new dfak() { // from class: beyp
-                @Override // defpackage.dfak
-                public final void gn(Object obj) {
-                    asot asotVar = SetupWizardChimeraActivity.j;
-                    bezi.this.a(28);
-                    ((ejhf) ((ejhf) SetupWizardChimeraActivity.j.h()).ah((char) 4482)).x("Setup wizard FMDN enrollment succeeded.");
+            changeFindMyDeviceSettingsRequest.c = findMyDeviceNetworkSettings;
+            changeFindMyDeviceSettingsRequest.d = !fqsv.r();
+            dhlw c = bgfkVar.c(changeFindMyDeviceSettingsRequest);
+            c.z(new dhlq() { // from class: bhak
+                @Override // defpackage.dhlq
+                public final void gC(Object obj) {
+                    ausn ausnVar = SetupWizardChimeraActivity.j;
+                    bhay.this.a(28);
+                    ((eluo) ((eluo) SetupWizardChimeraActivity.j.h()).ai((char) 4494)).x("Setup wizard FMDN enrollment succeeded.");
                 }
             });
-            c.y(new dfah() { // from class: beyq
-                @Override // defpackage.dfah
-                public final void gm(Exception exc) {
-                    asot asotVar = SetupWizardChimeraActivity.j;
-                    bezi.this.a(29);
-                    ((ejhf) ((ejhf) ((ejhf) SetupWizardChimeraActivity.j.j()).s(exc)).ah((char) 4483)).x("Setup wizard FMDN enrollment failed.");
+            c.y(new dhln() { // from class: bhal
+                @Override // defpackage.dhln
+                public final void gB(Exception exc) {
+                    ausn ausnVar = SetupWizardChimeraActivity.j;
+                    bhay.this.a(29);
+                    ((eluo) ((eluo) ((eluo) SetupWizardChimeraActivity.j.j()).s(exc)).ai((char) 4495)).x("Setup wizard FMDN enrollment failed.");
                 }
             });
         }
         setResult(-1);
-        ((ejhf) ((ejhf) j.h()).ah((char) 4486)).x("onDone");
+        ((eluo) ((eluo) j.h()).ai((char) 4496)).x("onDone");
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         getContainerActivity();
-        int i = eble.a;
-        int i2 = edjs.a;
-        if (edeq.s(this)) {
-            setTheme(edjs.b(this));
+        int i = edxt.a;
+        int i2 = efwn.a;
+        if (efrl.s(this)) {
+            setTheme(efwn.b(this));
         } else {
             String stringExtra = getIntent().getStringExtra("theme");
-            int i3 = true != edeq.v(this) ? R.style.SudThemeGlifV4_Light : R.style.SudThemeGlifV4_DayNight;
-            edjt d = edjt.d();
+            int i3 = true != efrl.v(this) ? R.style.SudThemeGlifV4_Light : R.style.SudThemeGlifV4_DayNight;
+            efwo d = efwo.d();
             int i4 = d.a;
             String str = d.b;
             boolean z = d.c;
-            setTheme(new edjt(i3, true).c(stringExtra, !edeq.v(this)));
+            setTheme(new efwo(i3, true).c(stringExtra, !efrl.v(this)));
         }
-        edjs.d();
+        efwn.d();
         setContentView(R.layout.fmd_suw_activity);
         final GlifLayout glifLayout = (GlifLayout) findViewById(R.id.glif_layout);
-        if (edeq.s(this)) {
+        if (efrl.s(this)) {
             ((ImageView) glifLayout.findViewById(R.id.main_image)).setImageDrawable(getDrawable(R.drawable.fmd_check_bc25));
         }
-        edfq edfqVar = (edfq) glifLayout.q(edfq.class);
-        edfr edfrVar = new edfr(this);
-        edfrVar.b(R.string.common_next);
-        edfrVar.b = new View.OnClickListener() { // from class: beyo
+        efsl efslVar = (efsl) glifLayout.q(efsl.class);
+        efsm efsmVar = new efsm(this);
+        efsmVar.b(R.string.common_next);
+        efsmVar.b = new View.OnClickListener() { // from class: bhap
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 SetupWizardChimeraActivity.this.l();
             }
         };
-        edfrVar.c = 4;
-        edfrVar.d = R.style.SudGlifButton_Primary;
-        edfs a = edfrVar.a();
+        efsmVar.c = 4;
+        efsmVar.d = R.style.SudGlifButton_Primary;
+        efsn a = efsmVar.a();
         this.m = a;
-        edfqVar.b(a);
-        ((edja) glifLayout.q(edja.class)).d(this, this.m, new View.OnClickListener() { // from class: beyx
+        efslVar.b(a);
+        ((efvv) glifLayout.q(efvv.class)).d(this, this.m, new View.OnClickListener() { // from class: bhaq
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 SetupWizardChimeraActivity.this.l();
             }
         });
-        final RadioButtonItem radioButtonItem = new RadioButtonItem();
-        final RadioButtonItem radioButtonItem2 = new RadioButtonItem();
-        radioButtonItem.F(getString(R.string.all_locations_radio_title));
+        this.n = new RadioButtonItem();
+        this.o = new RadioButtonItem();
+        this.n.F(getString(R.string.all_locations_radio_title));
         String string = getString(R.string.all_locations_radio_subtitle);
         String string2 = getString(R.string.learn_more_about_find_my_in_all_areas);
         SpannableString spannableString = new SpannableString(string + "\n" + string2);
-        spannableString.setSpan(new edhz("all_traffic_span"), spannableString.length() - string2.length(), spannableString.length(), 33);
-        radioButtonItem.E(spannableString);
-        radioButtonItem.j = false;
-        radioButtonItem.a = new edho() { // from class: beys
-            @Override // defpackage.edho
+        spannableString.setSpan(new efuu("all_locations_span"), spannableString.length() - string2.length(), spannableString.length(), 33);
+        this.n.E(spannableString);
+        this.n.j = false;
+        RadioButtonItem radioButtonItem = this.n;
+        radioButtonItem.a = new efuj() { // from class: bhae
+            @Override // defpackage.efuj
             public final void a(boolean z2) {
                 if (z2) {
-                    RadioButtonItem radioButtonItem3 = radioButtonItem2;
                     SetupWizardChimeraActivity setupWizardChimeraActivity = SetupWizardChimeraActivity.this;
-                    radioButtonItem3.g(false);
+                    RadioButtonItem radioButtonItem2 = setupWizardChimeraActivity.o;
+                    ekvl.y(radioButtonItem2);
+                    radioButtonItem2.g(false);
                     setupWizardChimeraActivity.m.c(true);
-                    setupWizardChimeraActivity.k = euhg.FMDN_ALL_LOCATIONS;
+                    setupWizardChimeraActivity.k = ewwz.FMDN_ALL_LOCATIONS;
                 }
             }
         };
-        radioButtonItem.k = new edhh() { // from class: beyt
-            @Override // defpackage.edhh
+        radioButtonItem.k = new efuc() { // from class: bhaf
+            @Override // defpackage.efuc
             public final void a() {
                 final SetupWizardChimeraActivity setupWizardChimeraActivity = SetupWizardChimeraActivity.this;
-                setupWizardChimeraActivity.runOnUiThread(new Runnable() { // from class: bezc
+                setupWizardChimeraActivity.runOnUiThread(new Runnable() { // from class: bham
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ebna ebnaVar = new ebna(SetupWizardChimeraActivity.a(SetupWizardChimeraActivity.this));
-                        ebnaVar.M(R.string.title_find_my_devices_in_all_areas);
-                        ebnaVar.B(R.string.message_find_my_devices_in_all_areas);
-                        ebnaVar.E(R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: beyw
+                        edzp edzpVar = new edzp(SetupWizardChimeraActivity.a(SetupWizardChimeraActivity.this));
+                        edzpVar.M(R.string.title_find_my_devices_in_all_areas);
+                        edzpVar.B(R.string.message_find_my_devices_in_all_areas);
+                        edzpVar.E(R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: bhab
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i5) {
-                                asot asotVar = SetupWizardChimeraActivity.j;
+                                ausn ausnVar = SetupWizardChimeraActivity.j;
                                 dialogInterface.dismiss();
                             }
                         });
-                        ebnaVar.create().show();
+                        edzpVar.create().show();
                     }
                 });
             }
         };
-        radioButtonItem2.F(getString(R.string.high_traffic_radio_title));
+        this.o.F(getString(R.string.high_traffic_radio_title));
         String string3 = getString(R.string.high_traffic_radio_subtitle);
         String string4 = getString(R.string.learn_more_about_find_my_in_high_traffic_areas);
         SpannableString spannableString2 = new SpannableString(string3 + "\n" + string4);
-        spannableString2.setSpan(new edhz("high_traffic_span"), spannableString2.length() - string4.length(), spannableString2.length(), 33);
-        radioButtonItem2.E(spannableString2);
+        spannableString2.setSpan(new efuu("high_traffic_areas_span"), spannableString2.length() - string4.length(), spannableString2.length(), 33);
+        this.o.E(spannableString2);
+        RadioButtonItem radioButtonItem2 = this.o;
         radioButtonItem2.j = false;
-        radioButtonItem2.a = new edho() { // from class: beyu
-            @Override // defpackage.edho
+        radioButtonItem2.a = new efuj() { // from class: bhag
+            @Override // defpackage.efuj
             public final void a(boolean z2) {
                 if (z2) {
-                    RadioButtonItem radioButtonItem3 = radioButtonItem;
                     SetupWizardChimeraActivity setupWizardChimeraActivity = SetupWizardChimeraActivity.this;
+                    RadioButtonItem radioButtonItem3 = setupWizardChimeraActivity.n;
+                    ekvl.y(radioButtonItem3);
                     radioButtonItem3.g(false);
                     setupWizardChimeraActivity.m.c(true);
-                    setupWizardChimeraActivity.k = euhg.FMDN_HIGH_TRAFFIC;
+                    setupWizardChimeraActivity.k = ewwz.FMDN_HIGH_TRAFFIC;
                 }
             }
         };
-        radioButtonItem2.k = new edhh() { // from class: beyv
-            @Override // defpackage.edhh
+        radioButtonItem2.k = new efuc() { // from class: bhah
+            @Override // defpackage.efuc
             public final void a() {
                 final SetupWizardChimeraActivity setupWizardChimeraActivity = SetupWizardChimeraActivity.this;
-                setupWizardChimeraActivity.runOnUiThread(new Runnable() { // from class: beyr
+                setupWizardChimeraActivity.runOnUiThread(new Runnable() { // from class: bhao
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ebna ebnaVar = new ebna(SetupWizardChimeraActivity.a(SetupWizardChimeraActivity.this));
-                        ebnaVar.M(R.string.title_find_my_devices_in_high_traffic_areas);
-                        ebnaVar.B(R.string.message_find_my_devices_in_high_traffic_areas);
-                        ebnaVar.E(R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: bezd
+                        edzp edzpVar = new edzp(SetupWizardChimeraActivity.a(SetupWizardChimeraActivity.this));
+                        edzpVar.M(R.string.title_find_my_devices_in_high_traffic_areas);
+                        edzpVar.B(R.string.message_find_my_devices_in_high_traffic_areas);
+                        edzpVar.E(R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: bhad
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i5) {
-                                asot asotVar = SetupWizardChimeraActivity.j;
+                                ausn ausnVar = SetupWizardChimeraActivity.j;
                                 dialogInterface.dismiss();
                             }
                         });
-                        ebnaVar.create().show();
+                        edzpVar.create().show();
                     }
                 });
             }
         };
         ItemGroup itemGroup = new ItemGroup();
-        itemGroup.d(radioButtonItem);
-        itemGroup.d(radioButtonItem2);
+        itemGroup.d(this.n);
+        itemGroup.d(this.o);
         RecyclerView recyclerView = (RecyclerView) glifLayout.findViewById(R.id.opt_in_area);
         recyclerView.aj(new LinearLayoutManager());
-        recyclerView.ah(new edhs(itemGroup));
-        radioButtonItem2.g(true);
-        asmf asmfVar = new asmf(1, 9);
-        final Callable callable = new Callable() { // from class: beyy
+        recyclerView.ah(new efun(itemGroup));
+        this.o.g(true);
+        aupz aupzVar = new aupz(1, 9);
+        final Callable callable = new Callable() { // from class: bhar
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                return bfdq.a(SetupWizardChimeraActivity.this);
+                return bhfg.a(SetupWizardChimeraActivity.this);
             }
         };
-        egna.e(new enqb() { // from class: egmy
-            @Override // defpackage.enqb
-            public final enss a() {
-                return ensj.i(callable.call());
+        ejad.e(new eqdu() { // from class: ejab
+            @Override // defpackage.eqdu
+            public final eqgl a() {
+                return eqgc.i(callable.call());
             }
-        }, asmfVar).h(new eiho() { // from class: beyz
-            @Override // defpackage.eiho
+        }, aupzVar).h(new ekut() { // from class: bhas
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 Account account = (Account) obj;
                 if (account == null) {
@@ -311,23 +319,23 @@ public final class SetupWizardChimeraActivity extends qet {
                 }
                 SetupWizardChimeraActivity.this.l = account;
                 try {
-                    return (Bitmap) duju.a().g(account.name, 32).get();
+                    return (Bitmap) dwug.a().g(account.name, 32).get();
                 } catch (InterruptedException | ExecutionException e) {
                     throw new RuntimeException(e);
                 }
             }
-        }, asmfVar).d(Throwable.class, new eiho() { // from class: beza
-            @Override // defpackage.eiho
+        }, aupzVar).e(Throwable.class, new ekut() { // from class: bhat
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                ((ejhf) ((ejhf) ((ejhf) SetupWizardChimeraActivity.j.j()).s((Throwable) obj)).ah((char) 4481)).x("Failed to get the avatar");
+                ((eluo) ((eluo) ((eluo) SetupWizardChimeraActivity.j.j()).s((Throwable) obj)).ai((char) 4490)).x("Failed to get the avatar");
                 return null;
             }
-        }, asmfVar).h(new eiho() { // from class: bezb
-            @Override // defpackage.eiho
+        }, aupzVar).h(new ekut() { // from class: bhau
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 Bitmap bitmap = (Bitmap) obj;
-                final edim edimVar = (edim) glifLayout.q(edim.class);
-                if (edimVar == null || bitmap == null) {
+                final efvh efvhVar = (efvh) glifLayout.q(efvh.class);
+                if (efvhVar == null || bitmap == null) {
                     return null;
                 }
                 final SetupWizardChimeraActivity setupWizardChimeraActivity = SetupWizardChimeraActivity.this;
@@ -335,15 +343,57 @@ public final class SetupWizardChimeraActivity extends qet {
                 if (k == null) {
                     return null;
                 }
-                setupWizardChimeraActivity.runOnUiThread(new Runnable() { // from class: beze
+                setupWizardChimeraActivity.runOnUiThread(new Runnable() { // from class: bhai
                     @Override // java.lang.Runnable
                     public final void run() {
                         SetupWizardChimeraActivity setupWizardChimeraActivity2 = SetupWizardChimeraActivity.this;
-                        edimVar.d(setupWizardChimeraActivity2.l.name, new BitmapDrawable(setupWizardChimeraActivity2.getResources(), k));
+                        efvhVar.d(setupWizardChimeraActivity2.l.name, new BitmapDrawable(setupWizardChimeraActivity2.getResources(), k));
                     }
                 });
                 return null;
             }
-        }, asmfVar);
+        }, aupzVar);
+        dhlw d2 = new bgfk(this).d(new GetFindMyDeviceSettingsRequest());
+        d2.z(new dhlq() { // from class: bhav
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
+                FindMyDeviceNetworkSettings findMyDeviceNetworkSettings = ((GetFindMyDeviceSettingsResponse) obj).c;
+                if (findMyDeviceNetworkSettings != null) {
+                    ausn ausnVar = SetupWizardChimeraActivity.j;
+                    ((eluo) ((eluo) ausnVar.h()).ai(4491)).z("Restored chosen FMDN state: %s", findMyDeviceNetworkSettings.a);
+                    final ewwz b = ewwz.b(findMyDeviceNetworkSettings.a);
+                    if (b == null) {
+                        ((eluo) ((eluo) ausnVar.j()).ai(4492)).z("Unknown FMDN state: %s", findMyDeviceNetworkSettings.a);
+                    } else {
+                        final SetupWizardChimeraActivity setupWizardChimeraActivity = SetupWizardChimeraActivity.this;
+                        setupWizardChimeraActivity.runOnUiThread(new Runnable() { // from class: bhan
+                            @Override // java.lang.Runnable
+                            public final void run() {
+                                SetupWizardChimeraActivity setupWizardChimeraActivity2 = SetupWizardChimeraActivity.this;
+                                int ordinal = b.ordinal();
+                                if (ordinal == 2 || ordinal == 4) {
+                                    RadioButtonItem radioButtonItem3 = setupWizardChimeraActivity2.n;
+                                    if (radioButtonItem3 != null) {
+                                        radioButtonItem3.g(true);
+                                        return;
+                                    }
+                                    return;
+                                }
+                                RadioButtonItem radioButtonItem4 = setupWizardChimeraActivity2.o;
+                                if (radioButtonItem4 != null) {
+                                    radioButtonItem4.g(true);
+                                }
+                            }
+                        });
+                    }
+                }
+            }
+        });
+        d2.y(new dhln() { // from class: bhac
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                ((eluo) ((eluo) ((eluo) SetupWizardChimeraActivity.j.j()).s(exc)).ai((char) 4493)).x("Failed to get currently set FMDN state.");
+            }
+        });
     }
 }

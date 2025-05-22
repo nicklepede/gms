@@ -6,15 +6,15 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.ConnectionsDevice;
 import com.google.android.gms.nearby.connection.v3.dct.DctDevice;
 import com.google.android.gms.nearby.presence.PresenceDevice;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cjcb;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.clkg;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class OnConnectionInitiatedParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjcb();
+    public static final Parcelable.Creator CREATOR = new clkg();
     public String a;
     public String b;
     public String c;
@@ -40,7 +40,7 @@ public final class OnConnectionInitiatedParams extends AbstractSafeParcelable {
         }
         if (obj instanceof OnConnectionInitiatedParams) {
             OnConnectionInitiatedParams onConnectionInitiatedParams = (OnConnectionInitiatedParams) obj;
-            if (arwb.b(this.a, onConnectionInitiatedParams.a) && arwb.b(this.b, onConnectionInitiatedParams.b) && arwb.b(this.c, onConnectionInitiatedParams.c) && arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(onConnectionInitiatedParams.d)) && Arrays.equals(this.e, onConnectionInitiatedParams.e) && Arrays.equals(this.f, onConnectionInitiatedParams.f) && Arrays.equals(this.g, onConnectionInitiatedParams.g) && arwb.b(Boolean.valueOf(this.h), Boolean.valueOf(onConnectionInitiatedParams.h)) && arwb.b(Integer.valueOf(this.i), Integer.valueOf(onConnectionInitiatedParams.i)) && arwb.b(this.j, onConnectionInitiatedParams.j) && arwb.b(this.k, onConnectionInitiatedParams.k) && arwb.b(this.l, onConnectionInitiatedParams.l) && arwb.b(Integer.valueOf(this.m), Integer.valueOf(onConnectionInitiatedParams.m))) {
+            if (atyq.b(this.a, onConnectionInitiatedParams.a) && atyq.b(this.b, onConnectionInitiatedParams.b) && atyq.b(this.c, onConnectionInitiatedParams.c) && atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(onConnectionInitiatedParams.d)) && Arrays.equals(this.e, onConnectionInitiatedParams.e) && Arrays.equals(this.f, onConnectionInitiatedParams.f) && Arrays.equals(this.g, onConnectionInitiatedParams.g) && atyq.b(Boolean.valueOf(this.h), Boolean.valueOf(onConnectionInitiatedParams.h)) && atyq.b(Integer.valueOf(this.i), Integer.valueOf(onConnectionInitiatedParams.i)) && atyq.b(this.j, onConnectionInitiatedParams.j) && atyq.b(this.k, onConnectionInitiatedParams.k) && atyq.b(this.l, onConnectionInitiatedParams.l) && atyq.b(Integer.valueOf(this.m), Integer.valueOf(onConnectionInitiatedParams.m))) {
                 return true;
             }
         }
@@ -53,21 +53,21 @@ public final class OnConnectionInitiatedParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.e(parcel, 4, this.d);
-        arxc.i(parcel, 5, this.e, false);
-        arxc.i(parcel, 6, this.f, false);
-        arxc.i(parcel, 7, this.g, false);
-        arxc.e(parcel, 8, this.h);
-        arxc.o(parcel, 9, this.i);
-        arxc.t(parcel, 10, this.j, i, false);
-        arxc.t(parcel, 11, this.k, i, false);
-        arxc.o(parcel, 12, this.m);
-        arxc.t(parcel, 13, this.l, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.e(parcel, 4, this.d);
+        atzr.i(parcel, 5, this.e, false);
+        atzr.i(parcel, 6, this.f, false);
+        atzr.i(parcel, 7, this.g, false);
+        atzr.e(parcel, 8, this.h);
+        atzr.o(parcel, 9, this.i);
+        atzr.t(parcel, 10, this.j, i, false);
+        atzr.t(parcel, 11, this.k, i, false);
+        atzr.o(parcel, 12, this.m);
+        atzr.t(parcel, 13, this.l, i, false);
+        atzr.c(parcel, a);
     }
 
     public OnConnectionInitiatedParams(String str, String str2, String str3, boolean z, byte[] bArr, byte[] bArr2, byte[] bArr3, boolean z2, int i, PresenceDevice presenceDevice, ConnectionsDevice connectionsDevice, DctDevice dctDevice, int i2) {

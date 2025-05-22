@@ -1,11 +1,11 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eiif;
+import defpackage.ekvk;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class LocalBusiness extends Thing {
     public final PostalAddress a;
@@ -16,9 +16,9 @@ public final class LocalBusiness extends Thing {
     public LocalBusiness(String str, String str2, String str3, List list, List list2, PostalAddress postalAddress, String str4, String str5, String str6, G3AttributionInfo g3AttributionInfo) {
         super(str, str2, str3, list, list2, g3AttributionInfo);
         this.a = postalAddress;
-        this.b = eiif.b(str4);
-        this.c = eiif.b(str5);
-        this.d = eiif.b(str6);
+        this.b = ekvk.b(str4);
+        this.c = ekvk.b(str5);
+        this.d = ekvk.b(str6);
     }
 
     @Override // com.google.android.gms.icing.shim.schemas.Thing

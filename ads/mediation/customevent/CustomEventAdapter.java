@@ -9,21 +9,21 @@ import com.google.android.gms.ads.mediation.g;
 import com.google.android.gms.ads.mediation.i;
 import com.google.android.gms.ads.mediation.j;
 import com.google.android.gms.ads.mediation.k;
-import defpackage.eiig;
-import defpackage.tbu;
-import defpackage.tcd;
+import defpackage.ekvl;
+import defpackage.uxu;
+import defpackage.uyd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class CustomEventAdapter implements com.google.android.gms.ads.mediation.d, g, i {
-    static final tbu a = new tbu(0, "Could not instantiate custom event adapter", "com.google.android.gms.ads");
+    static final uxu a = new uxu(0, "Could not instantiate custom event adapter", "com.google.android.gms.ads");
     b b;
     c c;
     d d;
 
     private static Object a(Class cls, String str) {
         try {
-            eiig.x(str);
+            ekvl.y(str);
             return cls.cast(Class.forName(str).getDeclaredConstructor(null).newInstance(null));
         } catch (Throwable th) {
             h.k("Could not instantiate custom event adapter: " + str + ". " + th.getMessage());
@@ -85,7 +85,7 @@ public final class CustomEventAdapter implements com.google.android.gms.ads.medi
     }
 
     @Override // com.google.android.gms.ads.mediation.d
-    public final void requestBannerAd(Context context, e eVar, Bundle bundle, tcd tcdVar, com.google.android.gms.ads.mediation.b bVar, Bundle bundle2) {
+    public final void requestBannerAd(Context context, e eVar, Bundle bundle, uyd uydVar, com.google.android.gms.ads.mediation.b bVar, Bundle bundle2) {
         b bVar2 = (b) a(b.class, bundle.getString("class_name"));
         this.b = bVar2;
         if (bVar2 == null) {
@@ -95,7 +95,7 @@ public final class CustomEventAdapter implements com.google.android.gms.ads.medi
         if (bundle2 != null) {
             bundle2.getBundle(bundle.getString("class_name"));
         }
-        eiig.x(this.b);
+        ekvl.y(this.b);
         b bVar3 = this.b;
         bundle.getString("parameter");
         bVar3.d();
@@ -112,7 +112,7 @@ public final class CustomEventAdapter implements com.google.android.gms.ads.medi
         if (bundle2 != null) {
             bundle2.getBundle(bundle.getString("class_name"));
         }
-        eiig.x(this.c);
+        ekvl.y(this.c);
         c cVar2 = this.c;
         bundle.getString("parameter");
         cVar2.e();
@@ -129,7 +129,7 @@ public final class CustomEventAdapter implements com.google.android.gms.ads.medi
         if (bundle2 != null) {
             bundle2.getBundle(bundle.getString("class_name"));
         }
-        eiig.x(this.d);
+        ekvl.y(this.d);
         d dVar2 = this.d;
         bundle.getString("parameter");
         dVar2.d();

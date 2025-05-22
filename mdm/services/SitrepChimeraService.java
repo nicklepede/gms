@@ -5,83 +5,83 @@ import android.os.Build;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Base64;
-import defpackage.anqj;
-import defpackage.aqum;
-import defpackage.aqun;
-import defpackage.asit;
-import defpackage.asng;
-import defpackage.asoe;
-import defpackage.bzgc;
-import defpackage.cctl;
-import defpackage.ccto;
-import defpackage.ccuc;
-import defpackage.ccuk;
-import defpackage.ccut;
-import defpackage.cdaf;
-import defpackage.cdaj;
-import defpackage.enox;
-import defpackage.enpf;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.ffep;
-import defpackage.ffeq;
-import defpackage.ffes;
-import defpackage.fiht;
-import defpackage.fiif;
-import defpackage.fiig;
-import defpackage.fiih;
-import defpackage.fizz;
-import defpackage.fjaa;
-import defpackage.frte;
-import defpackage.fttm;
-import defpackage.ftxb;
-import defpackage.ftxd;
-import defpackage.ftxe;
-import defpackage.ftya;
-import defpackage.ftyg;
-import defpackage.furn;
-import defpackage.furo;
-import defpackage.fusb;
-import defpackage.rnx;
-import defpackage.rod;
+import defpackage.apsb;
+import defpackage.asxb;
+import defpackage.asxc;
+import defpackage.aumn;
+import defpackage.aura;
+import defpackage.aury;
+import defpackage.cbot;
+import defpackage.cfcf;
+import defpackage.cfci;
+import defpackage.cfcw;
+import defpackage.cfde;
+import defpackage.cfdn;
+import defpackage.cfjf;
+import defpackage.cfjj;
+import defpackage.eqcq;
+import defpackage.eqcy;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fhtn;
+import defpackage.fhto;
+import defpackage.fhtq;
+import defpackage.fkxq;
+import defpackage.fkyc;
+import defpackage.fkyd;
+import defpackage.fkye;
+import defpackage.flpw;
+import defpackage.flpx;
+import defpackage.funx;
+import defpackage.fwpk;
+import defpackage.fwsz;
+import defpackage.fwtb;
+import defpackage.fwtc;
+import defpackage.fwty;
+import defpackage.fwue;
+import defpackage.fxnl;
+import defpackage.fxnm;
+import defpackage.fxnz;
+import defpackage.thb;
+import defpackage.thh;
 import j$.time.Instant;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class SitrepChimeraService extends ccut {
+public class SitrepChimeraService extends cfdn {
     private int a;
     private String b;
     private Boolean c;
     private Boolean d;
-    private fiif e = fiif.UNKNOWN;
+    private fkyc e = fkyc.UNKNOWN;
 
     final void d(Throwable th) {
         if (th == null) {
-            cdaj.a("Permanent error sending sitrep and do not retry.", new Object[0]);
+            cfjj.a("Permanent error sending sitrep and do not retry.", new Object[0]);
             return;
         }
         while ((th instanceof ExecutionException) && th.getCause() != null) {
             th = th.getCause();
         }
-        if ((th instanceof ftyg) && ((ftyg) th).a.t != ftya.UNAVAILABLE) {
-            cdaj.a("Permanent error sending sitrep and do not retry.", new Object[0]);
+        if ((th instanceof fwue) && ((fwue) th).a.t != fwty.UNAVAILABLE) {
+            cfjj.a("Permanent error sending sitrep and do not retry.", new Object[0]);
             return;
         }
-        ccuc.i.d(Integer.valueOf(this.e.o));
-        rod rodVar = ccuc.k;
-        rodVar.d(Integer.valueOf(((Integer) rodVar.c()).intValue() + 1));
-        cdaj.d("Transient error sending sitrep, set up retry.", new Object[0]);
-        ccuk.c(this, Instant.now().plusMillis((long) ((Math.random() * 3600000.0d) + 1000.0d)).toEpochMilli());
+        cfcw.i.d(Integer.valueOf(this.e.o));
+        thh thhVar = cfcw.k;
+        thhVar.d(Integer.valueOf(((Integer) thhVar.c()).intValue() + 1));
+        cfjj.d("Transient error sending sitrep, set up retry.", new Object[0]);
+        cfde.c(this, Instant.now().plusMillis((long) ((Math.random() * 3600000.0d) + 1000.0d)).toEpochMilli());
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (asoe.c(this) || intent == null) {
+        if (aury.c(this) || intent == null) {
             return;
         }
         this.e = SitrepHelperIntentOperation.a(intent, "reason");
@@ -93,223 +93,223 @@ public class SitrepChimeraService extends ccut {
         if (intent.hasExtra("lockscreen_enabled")) {
             this.d = Boolean.valueOf(intent.getBooleanExtra("lockscreen_enabled", false));
         }
-        fiif a = SitrepHelperIntentOperation.a(intent, "retry_reason");
-        long e = asng.e(this);
+        fkyc a = SitrepHelperIntentOperation.a(intent, "retry_reason");
+        long e = aura.e(this);
         String str = null;
         if (e == 0) {
-            cdaj.a("Android ID == 0, not sending sitrep", new Object[0]);
+            cfjj.a("Android ID == 0, not sending sitrep", new Object[0]);
             d(null);
             return;
         }
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService("phone");
         try {
-            str = anqj.b(this);
-        } catch (aqum e2) {
-            cdaj.b(e2, "Error getting device data version info.", new Object[0]);
-        } catch (aqun e3) {
-            cdaj.b(e3, "Error getting device data version info.", new Object[0]);
+            str = apsb.b(this);
+        } catch (asxb e2) {
+            cfjj.b(e2, "Error getting device data version info.", new Object[0]);
+        } catch (asxc e3) {
+            cfjj.b(e3, "Error getting device data version info.", new Object[0]);
         } catch (IOException e4) {
-            cdaj.b(e4, "Error getting device data version info.", new Object[0]);
+            cfjj.b(e4, "Error getting device data version info.", new Object[0]);
         }
         int phoneType = telephonyManager.getPhoneType();
-        ccto a2 = cctl.a();
+        cfci a2 = cfcf.a();
         int i = this.a;
         String str2 = this.b;
         Boolean bool = this.c;
-        fiif fiifVar = this.e;
+        fkyc fkycVar = this.e;
         Boolean bool2 = this.d;
-        cdaj.c("Sending sitrep with xrpc: [%s, %s]", fiifVar, a);
-        fiig fiigVar = fiig.a;
-        fecj v = fiigVar.v();
+        cfjj.c("Sending sitrep with xrpc: [%s, %s]", fkycVar, a);
+        fkyd fkydVar = fkyd.a;
+        fgrc v = fkydVar.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        fiig fiigVar2 = (fiig) fecpVar;
-        fiigVar2.h = fiifVar.o;
-        fiigVar2.b |= 64;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        fkyd fkydVar2 = (fkyd) fgriVar;
+        fkydVar2.h = fkycVar.o;
+        fkydVar2.b |= 64;
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        fiig fiigVar3 = (fiig) fecpVar2;
-        fiigVar3.i = a.o;
-        fiigVar3.b |= 128;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v.b;
+        fkyd fkydVar3 = (fkyd) fgriVar2;
+        fkydVar3.i = a.o;
+        fkydVar3.b |= 128;
+        if (!fgriVar2.L()) {
             v.U();
         }
-        fiig fiigVar4 = (fiig) v.b;
-        fiigVar4.b |= 1;
-        fiigVar4.c = e;
+        fkyd fkydVar4 = (fkyd) v.b;
+        fkydVar4.b |= 1;
+        fkydVar4.c = e;
         int i2 = Build.VERSION.SDK_INT;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar3 = v.b;
-        fiig fiigVar5 = (fiig) fecpVar3;
-        fiigVar5.b |= 4;
-        fiigVar5.e = i2;
-        if (!fecpVar3.L()) {
+        fgri fgriVar3 = v.b;
+        fkyd fkydVar5 = (fkyd) fgriVar3;
+        fkydVar5.b |= 4;
+        fkydVar5.e = i2;
+        if (!fgriVar3.L()) {
             v.U();
         }
-        fecp fecpVar4 = v.b;
-        fiig fiigVar6 = (fiig) fecpVar4;
-        fiigVar6.b |= 256;
-        fiigVar6.j = phoneType;
+        fgri fgriVar4 = v.b;
+        fkyd fkydVar6 = (fkyd) fgriVar4;
+        fkydVar6.b |= 256;
+        fkydVar6.j = phoneType;
         if (i > 0) {
-            if (!fecpVar4.L()) {
+            if (!fgriVar4.L()) {
                 v.U();
             }
-            fiig fiigVar7 = (fiig) v.b;
-            fiigVar7.b |= 2;
-            fiigVar7.d = i;
+            fkyd fkydVar7 = (fkyd) v.b;
+            fkydVar7.b |= 2;
+            fkydVar7.d = i;
         }
         if (!TextUtils.isEmpty(str2)) {
             if (!v.b.L()) {
                 v.U();
             }
-            fiig fiigVar8 = (fiig) v.b;
+            fkyd fkydVar8 = (fkyd) v.b;
             str2.getClass();
-            fiigVar8.b |= 16;
-            fiigVar8.f = str2;
+            fkydVar8.b |= 16;
+            fkydVar8.f = str2;
         }
         if (bool != null) {
-            fecj v2 = fiht.a.v();
+            fgrc v2 = fkxq.a.v();
             boolean booleanValue = bool.booleanValue();
             if (!v2.b.L()) {
                 v2.U();
             }
-            fiht fihtVar = (fiht) v2.b;
-            fihtVar.b |= 1;
-            fihtVar.c = booleanValue;
+            fkxq fkxqVar = (fkxq) v2.b;
+            fkxqVar.b |= 1;
+            fkxqVar.c = booleanValue;
             boolean booleanValue2 = bool.booleanValue();
             if (!v2.b.L()) {
                 v2.U();
             }
-            fiht fihtVar2 = (fiht) v2.b;
-            fihtVar2.b |= 2;
-            fihtVar2.d = booleanValue2;
+            fkxq fkxqVar2 = (fkxq) v2.b;
+            fkxqVar2.b |= 2;
+            fkxqVar2.d = booleanValue2;
             boolean booleanValue3 = bool.booleanValue();
             if (!v2.b.L()) {
                 v2.U();
             }
-            fiht fihtVar3 = (fiht) v2.b;
-            fihtVar3.b |= 4;
-            fihtVar3.e = booleanValue3;
+            fkxq fkxqVar3 = (fkxq) v2.b;
+            fkxqVar3.b |= 4;
+            fkxqVar3.e = booleanValue3;
             if (!v.b.L()) {
                 v.U();
             }
-            fiig fiigVar9 = (fiig) v.b;
-            fiht fihtVar4 = (fiht) v2.Q();
-            fihtVar4.getClass();
-            fiigVar9.g = fihtVar4;
-            fiigVar9.b |= 32;
+            fkyd fkydVar9 = (fkyd) v.b;
+            fkxq fkxqVar4 = (fkxq) v2.Q();
+            fkxqVar4.getClass();
+            fkydVar9.g = fkxqVar4;
+            fkydVar9.b |= 32;
         }
         if (str != null) {
             if (!v.b.L()) {
                 v.U();
             }
-            fiig fiigVar10 = (fiig) v.b;
-            fiigVar10.b |= 512;
-            fiigVar10.k = str;
+            fkyd fkydVar10 = (fkyd) v.b;
+            fkydVar10.b |= 512;
+            fkydVar10.k = str;
         }
         if (bool2 != null) {
             boolean booleanValue4 = bool2.booleanValue();
             if (!v.b.L()) {
                 v.U();
             }
-            fiig fiigVar11 = (fiig) v.b;
-            fiigVar11.b |= 1024;
-            fiigVar11.l = booleanValue4;
+            fkyd fkydVar11 = (fkyd) v.b;
+            fkydVar11.b |= 1024;
+            fkydVar11.l = booleanValue4;
         }
-        if (frte.n()) {
-            cdaj.c("sendSitrepData %s", Base64.encodeToString(((fiig) v.Q()).r(), 2));
+        if (funx.n()) {
+            cfjj.c("sendSitrepData %s", Base64.encodeToString(((fkyd) v.Q()).r(), 2));
         }
-        fecj v3 = ffeq.a.v();
-        ffep ffepVar = ffep.SITREP_REQUEST_ISSUED;
+        fgrc v3 = fhto.a.v();
+        fhtn fhtnVar = fhtn.SITREP_REQUEST_ISSUED;
         if (!v3.b.L()) {
             v3.U();
         }
-        ffeq ffeqVar = (ffeq) v3.b;
-        ffeqVar.c = ffepVar.eK;
-        ffeqVar.b |= 2;
-        fecj v4 = ffes.a.v();
+        fhto fhtoVar = (fhto) v3.b;
+        fhtoVar.c = fhtnVar.eM;
+        fhtoVar.b |= 2;
+        fgrc v4 = fhtq.a.v();
         if (!v4.b.L()) {
             v4.U();
         }
-        ffes ffesVar = (ffes) v4.b;
-        ffesVar.e = 1;
-        ffesVar.b = 1 | ffesVar.b;
+        fhtq fhtqVar = (fhtq) v4.b;
+        fhtqVar.e = 1;
+        fhtqVar.b = 1 | fhtqVar.b;
         String l = Long.toString(e);
         if (!v4.b.L()) {
             v4.U();
         }
-        ffes ffesVar2 = (ffes) v4.b;
+        fhtq fhtqVar2 = (fhtq) v4.b;
         l.getClass();
-        ffesVar2.c = 2;
-        ffesVar2.d = l;
+        fhtqVar2.c = 2;
+        fhtqVar2.d = l;
         if (!v3.b.L()) {
             v3.U();
         }
-        ffeq ffeqVar2 = (ffeq) v3.b;
-        ffes ffesVar3 = (ffes) v4.Q();
-        ffesVar3.getClass();
-        ffeqVar2.g = ffesVar3;
-        ffeqVar2.b |= 32;
-        cdaf.c(v3);
-        fizz fizzVar = (fizz) a2.c.o(bzgc.a, a2.b);
-        fiig fiigVar12 = (fiig) v.Q();
-        fttm fttmVar = fizzVar.a;
-        ftxe ftxeVar = fjaa.a;
-        if (ftxeVar == null) {
-            synchronized (fjaa.class) {
-                ftxeVar = fjaa.a;
-                if (ftxeVar == null) {
-                    ftxb a3 = ftxe.a();
-                    a3.c = ftxd.UNARY;
-                    a3.d = ftxe.c("google.internal.fmd.FmdApiService", "ProcessSitrep");
+        fhto fhtoVar2 = (fhto) v3.b;
+        fhtq fhtqVar3 = (fhtq) v4.Q();
+        fhtqVar3.getClass();
+        fhtoVar2.g = fhtqVar3;
+        fhtoVar2.b |= 32;
+        cfjf.c(v3);
+        flpw flpwVar = (flpw) a2.c.o(cbot.a, a2.b);
+        fkyd fkydVar12 = (fkyd) v.Q();
+        fwpk fwpkVar = flpwVar.a;
+        fwtc fwtcVar = flpx.a;
+        if (fwtcVar == null) {
+            synchronized (flpx.class) {
+                fwtcVar = flpx.a;
+                if (fwtcVar == null) {
+                    fwsz a3 = fwtc.a();
+                    a3.c = fwtb.UNARY;
+                    a3.d = fwtc.c("google.internal.fmd.FmdApiService", "ProcessSitrep");
                     a3.b();
-                    febw febwVar = furo.a;
-                    a3.a = new furn(fiigVar);
-                    a3.b = new furn(fiih.a);
-                    ftxe a4 = a3.a();
-                    fjaa.a = a4;
-                    ftxeVar = a4;
+                    fgqp fgqpVar = fxnm.a;
+                    a3.a = new fxnl(fkydVar);
+                    a3.b = new fxnl(fkye.a);
+                    fwtc a4 = a3.a();
+                    flpx.a = a4;
+                    fwtcVar = a4;
                 }
             }
         }
         try {
-            ((enpf) enox.g(fusb.a(fttmVar.a(ftxeVar, fizzVar.b), fiigVar12), Exception.class, new enqc() { // from class: cctm
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
+            ((eqcy) eqcq.g(fxnz.a(fwpkVar.a(fwtcVar, flpwVar.b), fkydVar12), Exception.class, new eqdv() { // from class: cfcg
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
                     Exception exc = (Exception) obj;
-                    ccto.b("processSitrep", exc);
+                    cfci.b("processSitrep", exc);
                     throw exc;
                 }
-            }, enre.a)).u();
-            cdaj.c("Sitrep successful", new Object[0]);
+            }, eqex.a)).u();
+            cfjj.c("Sitrep successful", new Object[0]);
             String str3 = this.b;
-            int i3 = rnx.a;
+            int i3 = thb.a;
             String valueOf = String.valueOf(str3);
             if (str3 != null && !TextUtils.isEmpty(valueOf)) {
-                rnx.f(valueOf.getBytes());
+                thb.f(valueOf.getBytes());
             }
             if (this.a > 0) {
-                ccuc.b.d(Integer.valueOf(this.a));
+                cfcw.b.d(Integer.valueOf(this.a));
             }
             if (this.b != null) {
-                ccuc.c.d(this.b);
+                cfcw.c.d(this.b);
             }
             if (this.c != null) {
-                ccuc.d.d(this.c);
+                cfcw.d.d(this.c);
             }
             if (this.d != null) {
-                ccuc.e.d(this.d);
+                cfcw.e.d(this.d);
             }
-            ccuk.b(this, new asit(this));
-            ccuc.i.e();
-            ccuc.j.e();
-            ccuc.k.e();
+            cfde.b(this, new aumn(this));
+            cfcw.i.e();
+            cfcw.j.e();
+            cfcw.k.e();
         } catch (InterruptedException e5) {
             Thread.currentThread().interrupt();
             d(e5);

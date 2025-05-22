@@ -4,9 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.iln;
+import defpackage.ind;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class LocalBroadcastReceiver extends TracingBroadcastReceiver {
     public LocalBroadcastReceiver() {
@@ -18,10 +18,10 @@ public class LocalBroadcastReceiver extends TracingBroadcastReceiver {
     }
 
     public final void b(Context context, IntentFilter intentFilter) {
-        iln.c(context, this, intentFilter, "com.google.android.gms.permission.INTERNAL_BROADCAST", null, 4);
+        ind.c(context, this, intentFilter, "com.google.android.gms.permission.INTERNAL_BROADCAST", null, 4);
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public void jz(Context context, Intent intent) {
+    public void jP(Context context, Intent intent) {
     }
 }

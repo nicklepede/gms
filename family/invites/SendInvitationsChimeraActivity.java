@@ -25,34 +25,34 @@ import com.google.android.gms.family.v2.model.ContactPickerOptionsData;
 import com.google.android.gms.family.v2.model.PageData;
 import com.google.android.gms.wallet.firstparty.WalletCustomTheme;
 import defpackage.a;
-import defpackage.anxo;
-import defpackage.arwm;
-import defpackage.asqx;
-import defpackage.azpv;
-import defpackage.azpx;
-import defpackage.azqe;
-import defpackage.azqh;
-import defpackage.azqj;
-import defpackage.azqu;
-import defpackage.azrc;
-import defpackage.azrg;
-import defpackage.azrh;
-import defpackage.azri;
-import defpackage.azrj;
-import defpackage.azrk;
-import defpackage.azrl;
-import defpackage.azrn;
-import defpackage.azrr;
-import defpackage.byhr;
-import defpackage.eprv;
-import defpackage.epte;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.jti;
-import defpackage.pga;
-import defpackage.pgd;
-import defpackage.pgj;
-import defpackage.qet;
+import defpackage.apzg;
+import defpackage.atzb;
+import defpackage.auur;
+import defpackage.bbtr;
+import defpackage.bbtt;
+import defpackage.bbua;
+import defpackage.bbud;
+import defpackage.bbuf;
+import defpackage.bbuq;
+import defpackage.bbuy;
+import defpackage.bbvc;
+import defpackage.bbvd;
+import defpackage.bbve;
+import defpackage.bbvf;
+import defpackage.bbvg;
+import defpackage.bbvh;
+import defpackage.bbvj;
+import defpackage.bbvn;
+import defpackage.caqj;
+import defpackage.esfu;
+import defpackage.eshd;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.jzx;
+import defpackage.qze;
+import defpackage.qzh;
+import defpackage.qzn;
+import defpackage.rxx;
 import j$.util.Objects;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -65,9 +65,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class SendInvitationsChimeraActivity extends qet implements View.OnClickListener, azrg, azqh {
+public class SendInvitationsChimeraActivity extends rxx implements View.OnClickListener, bbvc, bbud {
     private static final int[] r = {1, 2, 3, 4};
     private ViewGroup A;
     private ViewGroup B;
@@ -75,20 +75,20 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
     private boolean H;
     private boolean I;
     private String J;
-    private azrr K;
+    private bbvn K;
     private PageData R;
     private PageData S;
     private PageData T;
     public WalletCustomTheme j;
     public String k;
-    public azrn m;
+    public bbvj m;
     public ResultReceiver n;
-    public azpx o;
-    public azpv p;
+    public bbtt o;
+    public bbtr p;
     private int s;
-    private jti t;
+    private jzx t;
     private SmsSentReceiver u;
-    private azrh v;
+    private bbvd v;
     private ViewGroup z;
     public ArrayList l = new ArrayList();
     private final SparseArray w = new SparseArray();
@@ -104,8 +104,8 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
     private int O = 0;
     private int P = 0;
     private String Q = "2";
-    public epte q = epte.UNKNOWN_FAMILY_ROLE;
-    private ContactPickerOptionsData U = new ContactPickerOptionsData(eprv.a);
+    public eshd q = eshd.UNKNOWN_FAMILY_ROLE;
+    private ContactPickerOptionsData U = new ContactPickerOptionsData(esfu.a);
 
     private final void A() {
         HashMap hashMap;
@@ -124,10 +124,10 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
         if (pageData2 != null && (hashMap3 = pageData2.a) != null && hashMap3.containsKey(3)) {
             TextView textView = (TextView) this.B.findViewById(R.id.fm_invitations_retry_error_title);
             PageData pageData3 = this.S;
-            arwm.s(pageData3);
-            azqu.a(textView, (String) pageData3.a.get(3), new azqj(this.S, this, this.k));
+            atzb.s(pageData3);
+            bbuq.a(textView, (String) pageData3.a.get(3), new bbuf(this.S, this, this.k));
         }
-        recyclerView.ah(new azrc(w, true, this));
+        recyclerView.ah(new bbuy(w, true, this));
         Button button = (Button) this.B.findViewById(R.id.fm_invitations_skip_retry_button);
         PageData pageData4 = this.S;
         if (pageData4 != null && (hashMap2 = pageData4.a) != null && hashMap2.containsKey(5)) {
@@ -207,12 +207,12 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
 
     private final void x(Contact contact, boolean z) {
         String.valueOf(contact);
-        this.t.c(contact.d + 10000, null, new azrj(this, contact, z));
+        this.t.c(contact.d + 10000, null, new bbvf(this, contact, z));
     }
 
     private final void y(ViewGroup viewGroup, String str) {
         Toolbar toolbar = (Toolbar) viewGroup.findViewById(R.id.fm_toolbar);
-        toolbar.B(asqx.c(str));
+        toolbar.B(auur.c(str));
         if (D()) {
             toolbar.D(-16777216);
             toolbar.setBackgroundResource(android.R.color.white);
@@ -228,7 +228,7 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
         }
     }
 
-    @Override // defpackage.azrg
+    @Override // defpackage.bbvc
     public final void a() {
         int i = this.s;
         if (i != 1) {
@@ -257,7 +257,7 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
         } else {
             this.U.a(new int[]{0});
         }
-        Intent putExtra = new Intent().setClassName(this, "com.google.android.gms.family.v2.invites.contactpicker.ContactPickerActivity").putExtra("customTheme", getIntent().getIntExtra("customTheme", 0)).putExtra("predefinedTheme", asqx.c(getIntent().getStringExtra("predefinedTheme"))).putExtra("contactPickerOptions", this.U);
+        Intent putExtra = new Intent().setClassName(this, "com.google.android.gms.family.v2.invites.contactpicker.ContactPickerActivity").putExtra("customTheme", getIntent().getIntExtra("customTheme", 0)).putExtra("predefinedTheme", auur.c(getIntent().getStringExtra("predefinedTheme"))).putExtra("contactPickerOptions", this.U);
         if (C() && Objects.equals(this.J, "agsa")) {
             startActivityForResult(putExtra, 3);
         } else {
@@ -266,9 +266,9 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
     }
 
     final synchronized int k(int i) {
-        azrl azrlVar;
-        azrlVar = (azrl) this.w.get(i, new azrl());
-        return azrlVar.a + azrlVar.b;
+        bbvh bbvhVar;
+        bbvhVar = (bbvh) this.w.get(i, new bbvh());
+        return bbvhVar.a + bbvhVar.b;
     }
 
     final void l(String str, int i) {
@@ -286,8 +286,8 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
             }
         }
         String stringExtra = getIntent().getStringExtra("appId");
-        arwm.s(stringExtra);
-        this.t.c(i, null, new azri(this, stringExtra, str));
+        atzb.s(stringExtra);
+        this.t.c(i, null, new bbve(this, stringExtra, str));
     }
 
     public final void m(int i, int i2) {
@@ -305,90 +305,90 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
         setResult(i, intent);
         ArrayList arrayList = this.l;
         if (arrayList != null && !arrayList.isEmpty()) {
-            azrr azrrVar = this.K;
+            bbvn bbvnVar = this.K;
             boolean z = this.L;
             int i3 = this.M;
             int i4 = this.N;
             int i5 = this.O;
             int i6 = this.P;
-            fecj v = pga.a.v();
+            fgrc v = qze.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            pga pgaVar = (pga) fecpVar;
-            pgaVar.c = 3;
-            pgaVar.b = 1 | pgaVar.b;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v.b;
+            qze qzeVar = (qze) fgriVar;
+            qzeVar.c = 3;
+            qzeVar.b = 1 | qzeVar.b;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            fecp fecpVar2 = v.b;
-            pga pgaVar2 = (pga) fecpVar2;
-            pgaVar2.b |= 2;
-            pgaVar2.d = i3;
-            if (!fecpVar2.L()) {
+            fgri fgriVar2 = v.b;
+            qze qzeVar2 = (qze) fgriVar2;
+            qzeVar2.b |= 2;
+            qzeVar2.d = i3;
+            if (!fgriVar2.L()) {
                 v.U();
             }
-            fecp fecpVar3 = v.b;
-            pga pgaVar3 = (pga) fecpVar3;
-            pgaVar3.b |= 4;
-            pgaVar3.e = i4;
-            if (!fecpVar3.L()) {
+            fgri fgriVar3 = v.b;
+            qze qzeVar3 = (qze) fgriVar3;
+            qzeVar3.b |= 4;
+            qzeVar3.e = i4;
+            if (!fgriVar3.L()) {
                 v.U();
             }
-            fecp fecpVar4 = v.b;
-            pga pgaVar4 = (pga) fecpVar4;
-            pgaVar4.b |= 8;
-            pgaVar4.f = i5;
-            if (!fecpVar4.L()) {
+            fgri fgriVar4 = v.b;
+            qze qzeVar4 = (qze) fgriVar4;
+            qzeVar4.b |= 8;
+            qzeVar4.f = i5;
+            if (!fgriVar4.L()) {
                 v.U();
             }
-            pga pgaVar5 = (pga) v.b;
-            pgaVar5.b |= 16;
-            pgaVar5.g = i6;
-            pga pgaVar6 = (pga) v.Q();
+            qze qzeVar5 = (qze) v.b;
+            qzeVar5.b |= 16;
+            qzeVar5.g = i6;
+            qze qzeVar6 = (qze) v.Q();
             if (z) {
-                fecj v2 = pgj.a.v();
+                fgrc v2 = qzn.a.v();
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                pgj pgjVar = (pgj) v2.b;
-                pgaVar6.getClass();
-                pgjVar.d = pgaVar6;
-                pgjVar.b |= 2;
-                azrrVar.c((pgj) v2.Q());
+                qzn qznVar = (qzn) v2.b;
+                qzeVar6.getClass();
+                qznVar.d = qzeVar6;
+                qznVar.b |= 2;
+                bbvnVar.c((qzn) v2.Q());
             } else {
-                fecj v3 = pgd.a.v();
+                fgrc v3 = qzh.a.v();
                 if (!v3.b.L()) {
                     v3.U();
                 }
-                pgd pgdVar = (pgd) v3.b;
-                pgaVar6.getClass();
-                pgdVar.d = pgaVar6;
-                pgdVar.b |= 2;
-                azrrVar.b((pgd) v3.Q());
+                qzh qzhVar = (qzh) v3.b;
+                qzeVar6.getClass();
+                qzhVar.d = qzeVar6;
+                qzhVar.b |= 2;
+                bbvnVar.b((qzh) v3.Q());
             }
         }
         finish();
     }
 
     final synchronized void n(int i, boolean z) {
-        azrl azrlVar = new azrl();
+        bbvh bbvhVar = new bbvh();
         SparseArray sparseArray = this.w;
-        azrl azrlVar2 = (azrl) sparseArray.get(i, azrlVar);
+        bbvh bbvhVar2 = (bbvh) sparseArray.get(i, bbvhVar);
         if (z) {
-            azrlVar2.a++;
+            bbvhVar2.a++;
         } else {
-            azrlVar2.b++;
+            bbvhVar2.b++;
         }
-        sparseArray.put(i, azrlVar2);
+        sparseArray.put(i, bbvhVar2);
     }
 
     public final void o() {
         p(this.l);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i != 1 && i != 3) {
@@ -406,11 +406,11 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
             return;
         }
         ArrayList<ContactPerson> arrayList = new ArrayList();
-        arwm.s(intent);
+        atzb.s(intent);
         if (intent.getParcelableArrayListExtra("selectedContacts") != null) {
-            arwm.s(intent);
+            atzb.s(intent);
             arrayList = intent.getParcelableArrayListExtra("selectedContacts");
-            arwm.s(arrayList);
+            atzb.s(arrayList);
         }
         ArrayList arrayList2 = new ArrayList();
         int i3 = 0;
@@ -446,11 +446,11 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
         if (i == 1) {
             l(this.k, 2000);
         } else {
-            this.t.c(2000, null, new azrk(this, this.J, this.l));
+            this.t.c(2000, null, new bbvg(this, this.J, this.l));
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         int i = this.s;
         if (i == 1) {
@@ -503,17 +503,17 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         String stringExtra = getIntent().getStringExtra("clientCallingPackage");
         if (stringExtra != null) {
-            azqe.d(this, getIntent(), stringExtra);
+            bbua.d(this, getIntent(), stringExtra);
             this.Q = Integer.toString(ModuleManager.get(this).getCurrentModule().moduleVersion);
         }
         this.t = getSupportLoaderManager();
         setContentView(R.layout.fm_invitations_base);
-        this.o = new azpx();
+        this.o = new bbtt();
         if (getIntent().getStringExtra("consistencyToken") != null) {
             this.o.c(getIntent().getStringExtra("consistencyToken"), getIntent().getLongExtra("tokenExpirationTimeSecs", 0L));
         }
@@ -523,45 +523,45 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
         this.A = (ViewGroup) findViewById(R.id.fm_invitations_sending);
         this.B = (ViewGroup) findViewById(R.id.fm_invitations_retry_error);
         this.C = (ViewGroup) findViewById(R.id.fm_invitations_skip_failures);
-        this.n = new SendInvitationsResultReceiver(new byhr(Looper.getMainLooper()), new WeakReference(this));
+        this.n = new SendInvitationsResultReceiver(new caqj(Looper.getMainLooper()), new WeakReference(this));
         String stringExtra2 = getIntent().getStringExtra("accountName");
-        arwm.s(stringExtra2);
+        atzb.s(stringExtra2);
         this.k = stringExtra2;
         String stringExtra3 = getIntent().getStringExtra("appId");
-        arwm.s(stringExtra3);
+        atzb.s(stringExtra3);
         this.J = stringExtra3;
-        epte b = epte.b(getIntent().getIntExtra("inviteeRole", 3));
-        arwm.s(b);
+        eshd b = eshd.b(getIntent().getIntExtra("inviteeRole", 3));
+        atzb.s(b);
         this.q = b;
-        this.p = new azpv(this.J, this.Q);
+        this.p = new bbtr(this.J, this.Q);
         this.T = (PageData) getIntent().getParcelableExtra("invitesSendingPagedata");
         this.S = (PageData) getIntent().getParcelableExtra("invitesRetryPagedata");
         this.R = (PageData) getIntent().getParcelableExtra("invitesRetryLaterPagedata");
         if (getIntent().getParcelableExtra("contactPickerOptions") != null) {
             ContactPickerOptionsData contactPickerOptionsData = (ContactPickerOptionsData) getIntent().getParcelableExtra("contactPickerOptions");
-            arwm.s(contactPickerOptionsData);
+            atzb.s(contactPickerOptionsData);
             this.U = contactPickerOptionsData;
         }
-        int a = azqe.a(getIntent());
+        int a = bbua.a(getIntent());
         WalletCustomTheme walletCustomTheme = new WalletCustomTheme();
-        walletCustomTheme.g(anxo.a(this, a));
+        walletCustomTheme.g(apzg.a(this, a));
         this.j = walletCustomTheme;
         this.L = D();
-        azrr azrrVar = new azrr(this);
-        this.K = azrrVar;
-        azrrVar.d(this.k, this.Q, this.J);
+        bbvn bbvnVar = new bbvn(this);
+        this.K = bbvnVar;
+        bbvnVar.d(this.k, this.Q, this.J);
         this.K.g(this.L, 2);
         this.u = new SmsSentReceiver(this.n);
         AppContextProvider.a();
         SmsManager smsManager = SmsManager.getDefault();
-        arwm.s(smsManager);
-        this.m = new azrn(this, smsManager);
+        atzb.s(smsManager);
+        this.m = new bbvj(this, smsManager);
         getApplicationContext().registerReceiver(this.u, new IntentFilter("com.google.android.gms.family.invites"));
         if (bundle != null) {
             this.s = bundle.getInt("currentState");
             if (bundle.getParcelableArrayList("selectedContacts") != null) {
                 ArrayList parcelableArrayList = bundle.getParcelableArrayList("selectedContacts");
-                arwm.s(parcelableArrayList);
+                atzb.s(parcelableArrayList);
                 this.l = parcelableArrayList;
             }
             this.H = bundle.getBoolean("selectionActivityLaunched");
@@ -569,7 +569,7 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
             this.x = bundle.getBoolean("creationFailed");
             if (bundle.getParcelableArrayList("failedSendingContacts") != null) {
                 ArrayList parcelableArrayList2 = bundle.getParcelableArrayList("failedSendingContacts");
-                arwm.s(parcelableArrayList2);
+                atzb.s(parcelableArrayList2);
                 this.y = parcelableArrayList2;
             }
             this.D = bundle.getInt("numInvitationsSentSuccessfully");
@@ -580,32 +580,32 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
             this.s = 1;
             this.H = false;
         }
-        azrh azrhVar = new azrh(this);
-        this.v = azrhVar;
+        bbvd bbvdVar = new bbvd(this);
+        this.v = bbvdVar;
         if (this.I) {
             a();
         } else {
-            azrhVar.a();
+            bbvdVar.a();
             this.I = true;
         }
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
-        azrr azrrVar = this.K;
-        if (azrrVar != null) {
-            azrrVar.g(this.L, 3);
+        bbvn bbvnVar = this.K;
+        if (bbvnVar != null) {
+            bbvnVar.g(this.L, 3);
         }
         getApplicationContext().unregisterReceiver(this.u);
         super.onDestroy();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBoolean("selectionActivityLaunched", this.H);
@@ -662,7 +662,7 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
             if (k(contact.d) < contact.h) {
                 return;
             }
-            if (((azrl) this.w.get(contact.d, new azrl())).b != 0) {
+            if (((bbvh) this.w.get(contact.d, new bbvh())).b != 0) {
                 r(contact);
                 return;
             }
@@ -708,10 +708,10 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
         if (pageData2 != null && (hashMap2 = pageData2.a) != null && hashMap2.containsKey(3)) {
             TextView textView = (TextView) this.C.findViewById(R.id.fm_invitations_text_skip_failures_title);
             PageData pageData3 = this.R;
-            arwm.s(pageData3);
-            azqu.a(textView, (String) pageData3.a.get(3), new azqj(this.R, this, this.k));
+            atzb.s(pageData3);
+            bbuq.a(textView, (String) pageData3.a.get(3), new bbuf(this.R, this, this.k));
         }
-        recyclerView.ah(new azrc(w, true, this));
+        recyclerView.ah(new bbuy(w, true, this));
         Button button = (Button) this.C.findViewById(R.id.fm_invitations_skip_failures_button);
         TextView textView2 = (TextView) this.C.findViewById(R.id.fm_invitations_skip_list_header);
         if (C()) {
@@ -748,7 +748,7 @@ public class SendInvitationsChimeraActivity extends qet implements View.OnClickL
         }
     }
 
-    @Override // defpackage.azqh
+    @Override // defpackage.bbud
     public final Context getContext() {
         return this;
     }

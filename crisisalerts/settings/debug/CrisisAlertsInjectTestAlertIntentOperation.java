@@ -4,43 +4,43 @@ import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import com.google.android.gms.crisisalerts.settings.debug.CrisisAlertsInjectTestAlertIntentOperation;
-import defpackage.aqxd;
-import defpackage.asmb;
-import defpackage.asot;
-import defpackage.asqx;
-import defpackage.axdg;
-import defpackage.axeg;
-import defpackage.axgt;
-import defpackage.bziq;
-import defpackage.cabc;
-import defpackage.dfbl;
-import defpackage.ejhf;
-import defpackage.ejls;
-import defpackage.ejmh;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.fefi;
-import defpackage.fegu;
-import defpackage.fegx;
-import defpackage.fezm;
-import defpackage.fezp;
-import defpackage.fezs;
-import defpackage.fezv;
-import defpackage.ffaa;
-import defpackage.ffab;
-import defpackage.ffad;
-import defpackage.ffaf;
+import defpackage.aszs;
+import defpackage.aupv;
+import defpackage.ausn;
+import defpackage.auur;
+import defpackage.azhg;
+import defpackage.azig;
+import defpackage.azkt;
+import defpackage.cbrh;
+import defpackage.ccjt;
+import defpackage.dhmr;
+import defpackage.eluo;
+import defpackage.elzb;
+import defpackage.elzp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fgub;
+import defpackage.fgvn;
+import defpackage.fgvq;
+import defpackage.fhok;
+import defpackage.fhon;
+import defpackage.fhoq;
+import defpackage.fhot;
+import defpackage.fhoy;
+import defpackage.fhoz;
+import defpackage.fhpb;
+import defpackage.fhpd;
 import j$.time.Duration;
 import j$.time.Instant;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class CrisisAlertsInjectTestAlertIntentOperation extends axgt {
-    private static final asot b = axdg.a("InjTst");
-    public axeg a;
+public class CrisisAlertsInjectTestAlertIntentOperation extends azkt {
+    private static final ausn b = azhg.a("InjTst");
+    public azig a;
 
     public static void a(Context context, String str, boolean z, boolean z2, boolean z3) {
         Intent startIntent = getStartIntent(context, CrisisAlertsInjectTestAlertIntentOperation.class, "com.google.android.gms.crisisalerts.settings.debug.CRISIS_ALERTS_INJECT_TEST_ALERT");
@@ -53,140 +53,140 @@ public class CrisisAlertsInjectTestAlertIntentOperation extends axgt {
         }
     }
 
-    public static final ffab b(fezm fezmVar, String str, fecj fecjVar, boolean z, boolean z2) {
-        fecj v = ffab.a.v();
-        fefi l = fegx.l();
+    public static final fhoz b(fhok fhokVar, String str, fgrc fgrcVar, boolean z, boolean z2) {
+        fgrc v = fhoz.a.v();
+        fgub l = fgvq.l();
         if (!v.b.L()) {
             v.U();
         }
-        ffab ffabVar = (ffab) v.b;
+        fhoz fhozVar = (fhoz) v.b;
         l.getClass();
-        ffabVar.c = l;
-        ffabVar.b |= 1;
-        fecj v2 = ffaa.a.v();
+        fhozVar.c = l;
+        fhozVar.b |= 1;
+        fgrc v2 = fhoy.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        ((ffaa) v2.b).e = fezmVar.a();
-        fecj v3 = fezs.a.v();
+        ((fhoy) v2.b).e = fhokVar.a();
+        fgrc v3 = fhoq.a.v();
         String str2 = "test-" + System.currentTimeMillis();
         if (!v3.b.L()) {
             v3.U();
         }
-        ((fezs) v3.b).c = str2;
-        fefi h = fegx.h(System.currentTimeMillis());
+        ((fhoq) v3.b).c = str2;
+        fgub h = fgvq.h(System.currentTimeMillis());
         if (!v3.b.L()) {
             v3.U();
         }
-        fezs fezsVar = (fezs) v3.b;
+        fhoq fhoqVar = (fhoq) v3.b;
         h.getClass();
-        fezsVar.d = h;
-        fezsVar.b |= 1;
+        fhoqVar.d = h;
+        fhoqVar.b |= 1;
         if (!v2.b.L()) {
             v2.U();
         }
-        ffaa ffaaVar = (ffaa) v2.b;
-        fezs fezsVar2 = (fezs) v3.Q();
-        fezsVar2.getClass();
-        ffaaVar.c = fezsVar2;
-        ffaaVar.b |= 1;
+        fhoy fhoyVar = (fhoy) v2.b;
+        fhoq fhoqVar2 = (fhoq) v3.Q();
+        fhoqVar2.getClass();
+        fhoyVar.c = fhoqVar2;
+        fhoyVar.b |= 1;
         if (!v2.b.L()) {
             v2.U();
         }
-        ((ffaa) v2.b).d = 3;
-        fefi b2 = fegu.b(Instant.now().plus(Duration.ofMinutes(5L)));
+        ((fhoy) v2.b).d = 3;
+        fgub b2 = fgvn.b(Instant.now().plus(Duration.ofMinutes(5L)));
         if (!v2.b.L()) {
             v2.U();
         }
-        ffaa ffaaVar2 = (ffaa) v2.b;
+        fhoy fhoyVar2 = (fhoy) v2.b;
         b2.getClass();
-        ffaaVar2.f = b2;
-        ffaaVar2.b |= 2;
-        fecj v4 = fezv.a.v();
-        fecj v5 = ffaf.a.v();
+        fhoyVar2.f = b2;
+        fhoyVar2.b |= 2;
+        fgrc v4 = fhot.a.v();
+        fgrc v5 = fhpd.a.v();
         if (!v5.b.L()) {
             v5.U();
         }
-        ffaf ffafVar = (ffaf) v5.b;
+        fhpd fhpdVar = (fhpd) v5.b;
         str.getClass();
-        fedh fedhVar = ffafVar.b;
-        if (!fedhVar.c()) {
-            ffafVar.b = fecp.E(fedhVar);
+        fgsa fgsaVar = fhpdVar.b;
+        if (!fgsaVar.c()) {
+            fhpdVar.b = fgri.E(fgsaVar);
         }
-        ffafVar.b.add(str);
+        fhpdVar.b.add(str);
         if (!v4.b.L()) {
             v4.U();
         }
-        fezv fezvVar = (fezv) v4.b;
-        ffaf ffafVar2 = (ffaf) v5.Q();
-        ffafVar2.getClass();
-        fezvVar.c = ffafVar2;
-        fezvVar.b |= 1;
+        fhot fhotVar = (fhot) v4.b;
+        fhpd fhpdVar2 = (fhpd) v5.Q();
+        fhpdVar2.getClass();
+        fhotVar.c = fhpdVar2;
+        fhotVar.b |= 1;
         if (!v2.b.L()) {
             v2.U();
         }
-        ffaa ffaaVar3 = (ffaa) v2.b;
-        fezv fezvVar2 = (fezv) v4.Q();
-        fezvVar2.getClass();
-        ffaaVar3.g = fezvVar2;
-        ffaaVar3.b |= 4;
-        fecj v6 = ffad.a.v();
+        fhoy fhoyVar3 = (fhoy) v2.b;
+        fhot fhotVar2 = (fhot) v4.Q();
+        fhotVar2.getClass();
+        fhoyVar3.g = fhotVar2;
+        fhoyVar3.b |= 4;
+        fgrc v6 = fhpb.a.v();
         if (!v6.b.L()) {
             v6.U();
         }
-        fecp fecpVar = v6.b;
-        ((ffad) fecpVar).b = z;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v6.b;
+        ((fhpb) fgriVar).b = z;
+        if (!fgriVar.L()) {
             v6.U();
         }
-        ((ffad) v6.b).c = z2;
-        ffad ffadVar = (ffad) v6.Q();
+        ((fhpb) v6.b).c = z2;
+        fhpb fhpbVar = (fhpb) v6.Q();
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        ffaa ffaaVar4 = (ffaa) fecpVar2;
-        ffadVar.getClass();
-        ffaaVar4.l = ffadVar;
-        ffaaVar4.b |= 16;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v2.b;
+        fhoy fhoyVar4 = (fhoy) fgriVar2;
+        fhpbVar.getClass();
+        fhoyVar4.l = fhpbVar;
+        fhoyVar4.b |= 16;
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        fecp fecpVar3 = v2.b;
-        ((ffaa) fecpVar3).i = "kgmid=/g/11y36p09hj&wbsk=1";
-        if (!fecpVar3.L()) {
+        fgri fgriVar3 = v2.b;
+        ((fhoy) fgriVar3).i = "kgmid=/g/11y36p09hj&wbsk=1";
+        if (!fgriVar3.L()) {
             v2.U();
         }
-        ffaa ffaaVar5 = (ffaa) v2.b;
-        fezp fezpVar = (fezp) fecjVar.Q();
-        fezpVar.getClass();
-        fedh fedhVar2 = ffaaVar5.j;
-        if (!fedhVar2.c()) {
-            ffaaVar5.j = fecp.E(fedhVar2);
+        fhoy fhoyVar5 = (fhoy) v2.b;
+        fhon fhonVar = (fhon) fgrcVar.Q();
+        fhonVar.getClass();
+        fgsa fgsaVar2 = fhoyVar5.j;
+        if (!fgsaVar2.c()) {
+            fhoyVar5.j = fgri.E(fgsaVar2);
         }
-        ffaaVar5.j.add(fezpVar);
+        fhoyVar5.j.add(fhonVar);
         if (!v2.b.L()) {
             v2.U();
         }
-        ((ffaa) v2.b).k = "en-US";
+        ((fhoy) v2.b).k = "en-US";
         if (!v.b.L()) {
             v.U();
         }
-        ffab ffabVar2 = (ffab) v.b;
-        ffaa ffaaVar6 = (ffaa) v2.Q();
-        ffaaVar6.getClass();
-        fedh fedhVar3 = ffabVar2.d;
-        if (!fedhVar3.c()) {
-            ffabVar2.d = fecp.E(fedhVar3);
+        fhoz fhozVar2 = (fhoz) v.b;
+        fhoy fhoyVar6 = (fhoy) v2.Q();
+        fhoyVar6.getClass();
+        fgsa fgsaVar3 = fhozVar2.d;
+        if (!fgsaVar3.c()) {
+            fhozVar2.d = fgri.E(fgsaVar3);
         }
-        ffabVar2.d.add(ffaaVar6);
-        return (ffab) v.Q();
+        fhozVar2.d.add(fhoyVar6);
+        return (fhoz) v.Q();
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Location location;
-        if (intent == null || !asqx.c(intent.getAction()).equals("com.google.android.gms.crisisalerts.settings.debug.CRISIS_ALERTS_INJECT_TEST_ALERT")) {
+        if (intent == null || !auur.c(intent.getAction()).equals("com.google.android.gms.crisisalerts.settings.debug.CRISIS_ALERTS_INJECT_TEST_ALERT")) {
             return;
         }
         final String stringExtra = intent.getStringExtra("type");
@@ -195,17 +195,17 @@ public class CrisisAlertsInjectTestAlertIntentOperation extends axgt {
         boolean booleanExtra3 = intent.getBooleanExtra("delay", false);
         if (stringExtra != null) {
             try {
-                aqxd aqxdVar = bziq.a;
-                location = (Location) dfbl.n(new cabc(this).c());
+                aszs aszsVar = cbrh.a;
+                location = (Location) dhmr.n(new ccjt(this).c());
             } catch (InterruptedException | ExecutionException e) {
-                ((ejhf) ((ejhf) b.j()).s(e)).x("Error getting location");
+                ((eluo) ((eluo) b.j()).s(e)).x("Error getting location");
                 location = null;
             }
             if (location == null) {
                 return;
             }
-            final String E = ejls.v(ejmh.i(location.getLatitude(), location.getLongitude())).y(8).E();
-            new asmb(1, 9).schedule(new Runnable() { // from class: axgr
+            final String E = elzb.v(elzp.i(location.getLatitude(), location.getLongitude())).y(8).E();
+            new aupv(1, 9).schedule(new Runnable() { // from class: azkr
                 @Override // java.lang.Runnable
                 public final void run() {
                     char c;
@@ -230,60 +230,60 @@ public class CrisisAlertsInjectTestAlertIntentOperation extends axgt {
                         if (c != 1) {
                             return;
                         }
-                        axeg axegVar = crisisAlertsInjectTestAlertIntentOperation.a;
-                        fezm fezmVar = fezm.ALERT_FAMILY_SOS;
-                        fecj v = fezp.a.v();
+                        azig azigVar = crisisAlertsInjectTestAlertIntentOperation.a;
+                        fhok fhokVar = fhok.ALERT_FAMILY_SOS;
+                        fgrc v = fhon.a.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ((fezp) v.b).c = "en-US";
-                        fecj v2 = fezr.a.v();
+                        ((fhon) v.b).c = "en-US";
+                        fgrc v2 = fhop.a.v();
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        ((fezr) v2.b).b = "Test Sos Alert";
+                        ((fhop) v2.b).b = "Test Sos Alert";
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fezp fezpVar = (fezp) v.b;
-                        fezr fezrVar = (fezr) v2.Q();
-                        fezrVar.getClass();
-                        fezpVar.e = fezrVar;
-                        fezpVar.b |= 2;
-                        axegVar.b(CrisisAlertsInjectTestAlertIntentOperation.b(fezmVar, str2, v, z, z2));
+                        fhon fhonVar = (fhon) v.b;
+                        fhop fhopVar = (fhop) v2.Q();
+                        fhopVar.getClass();
+                        fhonVar.e = fhopVar;
+                        fhonVar.b |= 2;
+                        azigVar.b(CrisisAlertsInjectTestAlertIntentOperation.b(fhokVar, str2, v, z, z2));
                         return;
                     }
-                    axeg axegVar2 = crisisAlertsInjectTestAlertIntentOperation.a;
-                    fezm fezmVar2 = fezm.ALERT_FAMILY_PUBLIC_ALERT;
-                    fecj v3 = fezp.a.v();
+                    azig azigVar2 = crisisAlertsInjectTestAlertIntentOperation.a;
+                    fhok fhokVar2 = fhok.ALERT_FAMILY_PUBLIC_ALERT;
+                    fgrc v3 = fhon.a.v();
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    ((fezp) v3.b).c = "en-US";
-                    fecj v4 = fezq.a.v();
+                    ((fhon) v3.b).c = "en-US";
+                    fgrc v4 = fhoo.a.v();
                     if (!v4.b.L()) {
                         v4.U();
                     }
-                    fecp fecpVar = v4.b;
-                    ((fezq) fecpVar).c = "Golden Gate Park";
-                    if (!fecpVar.L()) {
+                    fgri fgriVar = v4.b;
+                    ((fhoo) fgriVar).c = "Golden Gate Park";
+                    if (!fgriVar.L()) {
                         v4.U();
                     }
-                    fecp fecpVar2 = v4.b;
-                    ((fezq) fecpVar2).b = "Loose Gaze of Racoons";
-                    if (!fecpVar2.L()) {
+                    fgri fgriVar2 = v4.b;
+                    ((fhoo) fgriVar2).b = "Loose Gaze of Racoons";
+                    if (!fgriVar2.L()) {
                         v4.U();
                     }
-                    ((fezq) v4.b).d = "San Francisco Board of Supervisors";
+                    ((fhoo) v4.b).d = "San Francisco Board of Supervisors";
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    fezp fezpVar2 = (fezp) v3.b;
-                    fezq fezqVar = (fezq) v4.Q();
-                    fezqVar.getClass();
-                    fezpVar2.d = fezqVar;
-                    fezpVar2.b = 1 | fezpVar2.b;
-                    axegVar2.b(CrisisAlertsInjectTestAlertIntentOperation.b(fezmVar2, str2, v3, z, z2));
+                    fhon fhonVar2 = (fhon) v3.b;
+                    fhoo fhooVar = (fhoo) v4.Q();
+                    fhooVar.getClass();
+                    fhonVar2.d = fhooVar;
+                    fhonVar2.b = 1 | fhonVar2.b;
+                    azigVar2.b(CrisisAlertsInjectTestAlertIntentOperation.b(fhokVar2, str2, v3, z, z2));
                 }
             }, true != booleanExtra3 ? 0L : 15L, TimeUnit.SECONDS);
         }

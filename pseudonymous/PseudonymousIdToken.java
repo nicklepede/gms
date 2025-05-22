@@ -3,14 +3,14 @@ package com.google.android.gms.pseudonymous;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cwwn;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.czgl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class PseudonymousIdToken extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cwwn();
+    public static final Parcelable.Creator CREATOR = new czgl();
     public final String a;
 
     public PseudonymousIdToken(String str) {
@@ -19,7 +19,7 @@ public class PseudonymousIdToken extends AbstractSafeParcelable {
 
     public final boolean equals(Object obj) {
         if (obj instanceof PseudonymousIdToken) {
-            return arwb.b(this.a, ((PseudonymousIdToken) obj).a);
+            return atyq.b(this.a, ((PseudonymousIdToken) obj).a);
         }
         return false;
     }
@@ -39,8 +39,8 @@ public class PseudonymousIdToken extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.c(parcel, a);
     }
 }

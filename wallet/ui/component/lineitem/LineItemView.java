@@ -12,20 +12,20 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.wallet.ui.common.FifeNetworkImageView;
 import com.google.android.wallet.ui.common.InfoMessageView;
-import defpackage.asnf;
-import defpackage.asng;
-import defpackage.ding;
-import defpackage.djeo;
-import defpackage.djep;
-import defpackage.ehvo;
-import defpackage.ehvp;
-import defpackage.ehzo;
-import defpackage.ehzr;
-import defpackage.rpq;
+import defpackage.auqz;
+import defpackage.aura;
+import defpackage.dkyr;
+import defpackage.dlqh;
+import defpackage.dlqi;
+import defpackage.ekiu;
+import defpackage.ekiv;
+import defpackage.ekmu;
+import defpackage.ekmx;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class LineItemView extends FrameLayout implements djeo {
+public class LineItemView extends FrameLayout implements dlqh {
     ViewGroup a;
     LinearLayout b;
     LinearLayout c;
@@ -33,7 +33,7 @@ public class LineItemView extends FrameLayout implements djeo {
     TextView e;
     private ViewGroup f;
     private FifeNetworkImageView g;
-    private ehvp h;
+    private ekiv h;
     private boolean i;
 
     public LineItemView(Context context) {
@@ -43,46 +43,46 @@ public class LineItemView extends FrameLayout implements djeo {
 
     private final int d() {
         int a;
-        ehvp ehvpVar = this.h;
-        if (ehvpVar == null || (a = ehvo.a(ehvpVar.g)) == 0) {
+        ekiv ekivVar = this.h;
+        if (ekivVar == null || (a = ekiu.a(ekivVar.g)) == 0) {
             return 1;
         }
         return a;
     }
 
-    @Override // defpackage.djeo
+    @Override // defpackage.dlqh
     public final /* bridge */ /* synthetic */ void a(Object obj) {
-        ehzo ehzoVar;
-        ehvp ehvpVar = (ehvp) obj;
-        this.h = ehvpVar;
+        ekmu ekmuVar;
+        ekiv ekivVar = (ekiv) obj;
+        this.h = ekivVar;
         Context context = getContext();
-        if (ehvpVar.c.isEmpty()) {
+        if (ekivVar.c.isEmpty()) {
             this.d.setVisibility(8);
         } else {
-            this.d.setText(ding.k(ehvpVar.c));
+            this.d.setText(dkyr.k(ekivVar.c));
             this.d.setVisibility(0);
         }
-        this.e.setText(ding.k(ehvpVar.d));
-        djep.a(context, this.b, ehvpVar.e, LineItemSubValueView.class);
+        this.e.setText(dkyr.k(ekivVar.d));
+        dlqi.a(context, this.b, ekivVar.e, LineItemSubValueView.class);
         this.c.removeAllViews();
-        for (ehzr ehzrVar : ehvpVar.f) {
+        for (ekmx ekmxVar : ekivVar.f) {
             InfoMessageView infoMessageView = new InfoMessageView(context);
-            infoMessageView.s(ehzrVar);
+            infoMessageView.s(ekmxVar);
             this.c.addView(infoMessageView);
         }
         LinearLayout linearLayout = this.c;
         linearLayout.setVisibility(linearLayout.getChildCount() == 0 ? 8 : 0);
-        if (!ehvpVar.i) {
+        if (!ekivVar.i) {
             this.a.setVisibility(0);
-        } else if (ehvpVar.d.isEmpty() && ehvpVar.e.size() == 0) {
+        } else if (ekivVar.d.isEmpty() && ekivVar.e.size() == 0) {
             this.a.setVisibility(8);
         } else {
-            asnf asnfVar = asng.a;
+            auqz auqzVar = aura.a;
             this.a.setVisibility(0);
         }
         int d = d() - 1;
         int i = d != 1 ? d != 6 ? d != 8 ? d != 3 ? d != 4 ? R.style.WalletLineItem : R.style.WalletHeroLineItem : R.style.WalletGeneratedLineItem : R.style.WalletSubSectionLineItem : R.style.WalletSidekickLineItem : R.style.WalletHeaderLineItem;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i, rpq.s);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i, tiy.r);
         if (getLayoutParams() instanceof ViewGroup.MarginLayoutParams) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) getLayoutParams();
             marginLayoutParams.topMargin = obtainStyledAttributes.getDimensionPixelSize(1, marginLayoutParams.topMargin);
@@ -90,24 +90,24 @@ public class LineItemView extends FrameLayout implements djeo {
             setLayoutParams(marginLayoutParams);
         }
         obtainStyledAttributes.recycle();
-        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(i, rpq.t);
-        ding.E(context, this.d, obtainStyledAttributes2.getResourceId(6, R.style.WalletLineItemText));
-        ding.E(context, this.e, obtainStyledAttributes2.getResourceId(7, R.style.WalletLineItemValueText));
+        TypedArray obtainStyledAttributes2 = context.obtainStyledAttributes(i, tiy.s);
+        dkyr.E(context, this.d, obtainStyledAttributes2.getResourceId(6, R.style.WalletLineItemText));
+        dkyr.E(context, this.e, obtainStyledAttributes2.getResourceId(7, R.style.WalletLineItemValueText));
         int resourceId = obtainStyledAttributes2.getResourceId(5, R.style.WalletLineItemSubValueText);
         int childCount = this.b.getChildCount();
         for (int i2 = 0; i2 < childCount; i2++) {
             View childAt = this.b.getChildAt(i2);
             if (childAt instanceof TextView) {
-                ding.E(context, (TextView) childAt, resourceId);
+                dkyr.E(context, (TextView) childAt, resourceId);
             }
         }
         int resourceId2 = obtainStyledAttributes2.getResourceId(2, R.style.UicDisplayTypeDetailInfoText);
         int childCount2 = this.c.getChildCount();
         for (int i3 = 0; i3 < childCount2; i3++) {
-            ding.D(context, (InfoMessageView) this.c.getChildAt(i3), resourceId2);
+            dkyr.D(context, (InfoMessageView) this.c.getChildAt(i3), resourceId2);
         }
-        ding.B(context, this.f, obtainStyledAttributes2.getResourceId(3, R.style.WalletLineItemLeftColumn));
-        ding.B(context, this.a, obtainStyledAttributes2.getResourceId(4, R.style.WalletLineItemRightColumn));
+        dkyr.B(context, this.f, obtainStyledAttributes2.getResourceId(3, R.style.WalletLineItemLeftColumn));
+        dkyr.B(context, this.a, obtainStyledAttributes2.getResourceId(4, R.style.WalletLineItemRightColumn));
         if (d() == 7) {
             this.g.getLayoutParams().width = (int) getResources().getDimension(R.dimen.wallet_sidekick_line_item_image_width);
             this.g.getLayoutParams().height = (int) getResources().getDimension(R.dimen.wallet_sidekick_line_item_image_height);
@@ -115,20 +115,20 @@ public class LineItemView extends FrameLayout implements djeo {
         obtainStyledAttributes2.recycle();
         FifeNetworkImageView fifeNetworkImageView = this.g;
         if (this.i) {
-            ehzoVar = null;
+            ekmuVar = null;
         } else {
-            ehzoVar = ehvpVar.h;
-            if (ehzoVar == null) {
-                ehzoVar = ehzo.a;
+            ekmuVar = ekivVar.h;
+            if (ekmuVar == null) {
+                ekmuVar = ekmu.a;
             }
         }
-        ding.y(fifeNetworkImageView, ehzoVar, getContext());
+        dkyr.y(fifeNetworkImageView, ekmuVar, getContext());
     }
 
-    @Override // defpackage.djeo
+    @Override // defpackage.dlqh
     public final /* bridge */ /* synthetic */ boolean b(Object obj) {
-        ehvp ehvpVar = (ehvp) obj;
-        return (ehvpVar == null || (ehvpVar.b & 4) == 0) ? false : true;
+        ekiv ekivVar = (ekiv) obj;
+        return (ekivVar == null || (ekivVar.b & 4) == 0) ? false : true;
     }
 
     protected final void c(Context context, AttributeSet attributeSet) {
@@ -141,7 +141,7 @@ public class LineItemView extends FrameLayout implements djeo {
         this.c = (LinearLayout) inflate.findViewById(R.id.info_messages);
         this.d = (TextView) inflate.findViewById(R.id.line_item_name);
         this.e = (TextView) inflate.findViewById(R.id.line_item_value);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.t);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.s);
         this.i = obtainStyledAttributes.getBoolean(0, false);
         int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(1, -1);
         if (dimensionPixelSize >= 0) {

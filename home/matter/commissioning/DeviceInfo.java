@@ -6,16 +6,16 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.home.matter.common.Discriminator;
 import com.google.android.gms.home.matter.common.NetworkLocation;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.blad;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bngu;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class DeviceInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new blad();
+    public static final Parcelable.Creator CREATOR = new bngu();
     public final int a;
     public final int b;
     public final Discriminator c;
@@ -33,7 +33,7 @@ public final class DeviceInfo extends AbstractSafeParcelable {
     }
 
     public static void a(String str) {
-        arwm.d(str == null || BluetoothAdapter.checkBluetoothAddress(str), "Invalid Bluetooth address %s", String.valueOf(str));
+        atzb.d(str == null || BluetoothAdapter.checkBluetoothAddress(str), "Invalid Bluetooth address %s", String.valueOf(str));
     }
 
     public final boolean equals(Object obj) {
@@ -44,7 +44,7 @@ public final class DeviceInfo extends AbstractSafeParcelable {
             return false;
         }
         DeviceInfo deviceInfo = (DeviceInfo) obj;
-        return this.a == deviceInfo.a && this.b == deviceInfo.b && arwb.b(this.c, deviceInfo.c) && arwb.b(this.d, deviceInfo.d) && arwb.b(this.e, deviceInfo.e) && arwb.b(this.f, deviceInfo.f);
+        return this.a == deviceInfo.a && this.b == deviceInfo.b && atyq.b(this.c, deviceInfo.c) && atyq.b(this.d, deviceInfo.d) && atyq.b(this.e, deviceInfo.e) && atyq.b(this.f, deviceInfo.f);
     }
 
     public final int hashCode() {
@@ -54,13 +54,13 @@ public final class DeviceInfo extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.b);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.b);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.c(parcel, a);
     }
 }

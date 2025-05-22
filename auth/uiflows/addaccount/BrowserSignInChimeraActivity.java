@@ -6,23 +6,23 @@ import android.accounts.AccountAuthenticatorResponse;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import defpackage.aano;
-import defpackage.adee;
-import defpackage.adef;
-import defpackage.adkg;
-import defpackage.adkj;
-import defpackage.adkk;
-import defpackage.adlw;
-import defpackage.adlx;
+import defpackage.acno;
+import defpackage.afeg;
+import defpackage.afeh;
+import defpackage.afkn;
+import defpackage.afkq;
+import defpackage.afkr;
+import defpackage.afmd;
+import defpackage.afme;
 import defpackage.bp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class BrowserSignInChimeraActivity extends adkg implements adkj, adee {
-    private static final aano h = new aano("am_response");
-    private static final aano i = new aano("url");
-    private static final aano j = new aano("account_type");
-    private static final aano k = new aano("account_name");
+public class BrowserSignInChimeraActivity extends afkn implements afkq, afeg {
+    private static final acno h = new acno("am_response");
+    private static final acno i = new acno("url");
+    private static final acno j = new acno("account_type");
+    private static final acno k = new acno("account_name");
     private AccountAuthenticatorResponse l;
 
     private final void p() {
@@ -34,20 +34,20 @@ public class BrowserSignInChimeraActivity extends adkg implements adkj, adee {
         finish();
     }
 
-    @Override // defpackage.adkj
-    public final void b(adlw adlwVar) {
-        String str = adlwVar.a;
+    @Override // defpackage.afkq
+    public final void b(afmd afmdVar) {
+        String str = afmdVar.a;
         if (str != null) {
-            adef.x(this, false, false, (String) s().a(j), str, adlwVar.b, null, false, false, false);
+            afeh.x(this, false, false, (String) s().a(j), str, afmdVar.b, null, false, false, false);
         }
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "BrowserSignInActivity";
     }
 
-    @Override // defpackage.adee
+    @Override // defpackage.afeg
     public final void j(Account account, String str, boolean z, Intent intent, boolean z2, String str2, boolean z3) {
         Bundle bundle = new Bundle();
         bundle.putString("authAccount", account.name);
@@ -60,23 +60,23 @@ public class BrowserSignInChimeraActivity extends adkg implements adkj, adee {
         finish();
     }
 
-    @Override // defpackage.adee
+    @Override // defpackage.afeg
     public final void k() {
         p();
     }
 
-    @Override // defpackage.adee
+    @Override // defpackage.afeg
     public final void l(int i2) {
         p();
     }
 
-    @Override // defpackage.adee
+    @Override // defpackage.afeg
     public final void n() {
         p();
     }
 
-    @Override // defpackage.adkj
-    public final void o(adkk adkkVar) {
+    @Override // defpackage.afkq
+    public final void o(afkr afkrVar) {
         Uri.Builder buildUpon = Uri.parse((String) s().a(i)).buildUpon();
         String str = (String) s().a(k);
         if (str != null) {
@@ -86,11 +86,11 @@ public class BrowserSignInChimeraActivity extends adkg implements adkj, adee {
             buildUpon.appendQueryParameter("tmpl", "new_account");
         }
         String uri = buildUpon.build().toString();
-        adlx.b().d();
-        adkkVar.z(uri);
+        afme.b().d();
+        afkrVar.z(uri);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         AccountAuthenticatorResponse accountAuthenticatorResponse = this.l;
         if (accountAuthenticatorResponse != null) {
@@ -99,13 +99,13 @@ public class BrowserSignInChimeraActivity extends adkg implements adkj, adee {
         super.onBackPressed();
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         this.l = (AccountAuthenticatorResponse) s().a(h);
         if (bundle == null) {
-            bp bpVar = new bp(gI());
-            bpVar.t(R.id.content, new adkk());
+            bp bpVar = new bp(gY());
+            bpVar.t(R.id.content, new afkr());
             bpVar.a();
         }
     }

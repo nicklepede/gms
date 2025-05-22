@@ -9,44 +9,44 @@ import android.os.Process;
 import com.android.volley.NoConnectionError;
 import com.google.android.gms.ads.identifier.settings.o;
 import com.google.android.gms.chimera.modules.ads.AppContextProvider;
-import defpackage.aqup;
-import defpackage.assx;
-import defpackage.bxgo;
-import defpackage.bxhc;
-import defpackage.eiho;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.fkah;
-import defpackage.otn;
-import defpackage.oto;
+import defpackage.asxe;
+import defpackage.auwr;
+import defpackage.bzpe;
+import defpackage.bzps;
+import defpackage.ekut;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.fmqm;
+import defpackage.qmq;
+import defpackage.qmr;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.UUID;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class m extends otn implements n, bxhc {
-    private final bxgo a;
+public final class m extends qmq implements n, bzps {
+    private final bzpe a;
 
     public m() {
         super("com.google.android.gms.ads.eventattestation.internal.IEventAttestationService");
     }
 
     public static int a(int i, Integer num) {
-        return (num == null || i != Process.myUid() || fkah.a.a().i()) ? i : num.intValue();
+        return (num == null || i != Process.myUid() || fmqm.a.lK().i()) ? i : num.intValue();
     }
 
-    public static enss c(Context context, Executor executor) {
+    public static eqgl c(Context context, Executor executor) {
         final com.google.android.gms.ads.identifier.settings.u a = com.google.android.gms.ads.identifier.settings.u.a(context);
         final com.google.android.gms.ads.identifier.settings.o a2 = com.google.android.gms.ads.identifier.settings.o.a(context);
-        if ((fkah.e() ? a2.b() : a.b()) != null) {
-            return ensm.a;
+        if ((fmqm.e() ? a2.b() : a.b()) != null) {
+            return eqgf.a;
         }
         try {
             byte[] e = a.e();
@@ -60,16 +60,16 @@ public final class m extends otn implements n, bxhc {
             } catch (IllegalArgumentException | NullPointerException e2) {
                 com.google.android.gms.ads.identifier.settings.d.c(context, "getPreExistingAdid", e2);
             }
-            return enps.f(enox.g(ensi.h(nVar.a(context, e, bArr)), NoConnectionError.class, new enqc() { // from class: com.google.android.gms.ads.identifier.service.a
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
+            return eqdl.f(eqcq.g(eqgb.h(nVar.a(context, e, bArr)), NoConnectionError.class, new eqdv() { // from class: com.google.android.gms.ads.identifier.service.a
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
                     throw new c((NoConnectionError) obj);
                 }
-            }, executor), new eiho() { // from class: com.google.android.gms.ads.identifier.service.b
-                @Override // defpackage.eiho
+            }, executor), new ekut() { // from class: com.google.android.gms.ads.identifier.service.b
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
                     byte[] bArr2 = (byte[]) obj;
-                    if (fkah.e()) {
+                    if (fmqm.e()) {
                         o.this.d(bArr2);
                         return null;
                     }
@@ -79,12 +79,12 @@ public final class m extends otn implements n, bxhc {
             }, executor);
         } catch (IOException | GeneralSecurityException e3) {
             com.google.android.gms.ads.identifier.settings.d.c(context, "publicKeyError", e3);
-            return ensj.h(new com.google.android.gms.ads.identifier.service.c(e3));
+            return eqgc.h(new com.google.android.gms.ads.identifier.service.c(e3));
         }
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         i iVar = null;
         j jVar = null;
         p pVar = null;
@@ -98,49 +98,49 @@ public final class m extends otn implements n, bxhc {
                     IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.ads.eventattestation.internal.IAdvertisingIdCallback");
                     iVar = queryLocalInterface instanceof i ? (i) queryLocalInterface : new i(readStrongBinder);
                 }
-                fq(parcel);
+                fD(parcel);
                 this.a.c(new com.google.android.gms.ads.identifier.service.e(Binder.getCallingUid(), iVar));
                 return true;
             case 3:
-                AdRequestAttestationTokenRequestParcel adRequestAttestationTokenRequestParcel = (AdRequestAttestationTokenRequestParcel) oto.a(parcel, AdRequestAttestationTokenRequestParcel.CREATOR);
+                AdRequestAttestationTokenRequestParcel adRequestAttestationTokenRequestParcel = (AdRequestAttestationTokenRequestParcel) qmr.a(parcel, AdRequestAttestationTokenRequestParcel.CREATOR);
                 IBinder readStrongBinder2 = parcel.readStrongBinder();
                 if (readStrongBinder2 != null) {
                     IInterface queryLocalInterface2 = readStrongBinder2.queryLocalInterface("com.google.android.gms.ads.eventattestation.internal.IAdRequestAttestationTokenCallback");
                     hVar = queryLocalInterface2 instanceof h ? (h) queryLocalInterface2 : new h(readStrongBinder2);
                 }
-                fq(parcel);
+                fD(parcel);
                 this.a.c(new com.google.android.gms.ads.identifier.service.d(adRequestAttestationTokenRequestParcel, Binder.getCallingUid(), hVar));
                 return true;
             case 4:
-                ImpressionAttestationTokenRequestParcel impressionAttestationTokenRequestParcel = (ImpressionAttestationTokenRequestParcel) oto.a(parcel, ImpressionAttestationTokenRequestParcel.CREATOR);
+                ImpressionAttestationTokenRequestParcel impressionAttestationTokenRequestParcel = (ImpressionAttestationTokenRequestParcel) qmr.a(parcel, ImpressionAttestationTokenRequestParcel.CREATOR);
                 IBinder readStrongBinder3 = parcel.readStrongBinder();
                 if (readStrongBinder3 != null) {
                     IInterface queryLocalInterface3 = readStrongBinder3.queryLocalInterface("com.google.android.gms.ads.eventattestation.internal.IImpressionAttestationTokenCallback");
                     oVar = queryLocalInterface3 instanceof o ? (o) queryLocalInterface3 : new o(readStrongBinder3);
                 }
-                fq(parcel);
+                fD(parcel);
                 this.a.c(new com.google.android.gms.ads.identifier.service.h(impressionAttestationTokenRequestParcel, Binder.getCallingUid(), oVar));
                 return true;
             case 5:
-                ClickAttestationTokenRequestParcel clickAttestationTokenRequestParcel = (ClickAttestationTokenRequestParcel) oto.a(parcel, ClickAttestationTokenRequestParcel.CREATOR);
+                ClickAttestationTokenRequestParcel clickAttestationTokenRequestParcel = (ClickAttestationTokenRequestParcel) qmr.a(parcel, ClickAttestationTokenRequestParcel.CREATOR);
                 IBinder readStrongBinder4 = parcel.readStrongBinder();
                 if (readStrongBinder4 != null) {
                     IInterface queryLocalInterface4 = readStrongBinder4.queryLocalInterface("com.google.android.gms.ads.eventattestation.internal.IClickAttestationTokenCallback");
                     kVar = queryLocalInterface4 instanceof k ? (k) queryLocalInterface4 : new k(readStrongBinder4);
                 }
-                fq(parcel);
+                fD(parcel);
                 this.a.c(new com.google.android.gms.ads.identifier.service.g(clickAttestationTokenRequestParcel, Binder.getCallingUid(), kVar));
                 return true;
             case 6:
-                PlayInstallReferrerAttestationTokenRequestParcel playInstallReferrerAttestationTokenRequestParcel = (PlayInstallReferrerAttestationTokenRequestParcel) oto.a(parcel, PlayInstallReferrerAttestationTokenRequestParcel.CREATOR);
+                PlayInstallReferrerAttestationTokenRequestParcel playInstallReferrerAttestationTokenRequestParcel = (PlayInstallReferrerAttestationTokenRequestParcel) qmr.a(parcel, PlayInstallReferrerAttestationTokenRequestParcel.CREATOR);
                 IBinder readStrongBinder5 = parcel.readStrongBinder();
                 if (readStrongBinder5 != null) {
                     IInterface queryLocalInterface5 = readStrongBinder5.queryLocalInterface("com.google.android.gms.ads.eventattestation.internal.IPlayInstallReferrerAttestationTokenCallback");
                     pVar = queryLocalInterface5 instanceof p ? (p) queryLocalInterface5 : new p(readStrongBinder5);
                 }
-                fq(parcel);
+                fD(parcel);
                 int callingUid = Binder.getCallingUid();
-                String[] n = assx.b(AppContextProvider.a()).n(Binder.getCallingUid());
+                String[] n = auwr.b(AppContextProvider.a()).n(Binder.getCallingUid());
                 if (n != null) {
                     for (String str : n) {
                         if ("com.android.vending".equals(str)) {
@@ -156,10 +156,10 @@ public final class m extends otn implements n, bxhc {
                     IInterface queryLocalInterface6 = readStrongBinder6.queryLocalInterface("com.google.android.gms.ads.eventattestation.internal.IAnningUserDataDeletionAttestationTokenCallback");
                     jVar = queryLocalInterface6 instanceof j ? (j) queryLocalInterface6 : new j(readStrongBinder6);
                 }
-                fq(parcel);
+                fD(parcel);
                 int callingUid2 = Binder.getCallingUid();
-                aqup.d(AppContextProvider.a()).f(callingUid2);
-                if (fkah.a.a().h()) {
+                asxe.d(AppContextProvider.a()).f(callingUid2);
+                if (fmqm.a.lK().h()) {
                     this.a.c(new com.google.android.gms.ads.identifier.service.m(jVar, callingUid2));
                     return true;
                 }
@@ -170,8 +170,8 @@ public final class m extends otn implements n, bxhc {
         }
     }
 
-    public m(bxgo bxgoVar) {
+    public m(bzpe bzpeVar) {
         super("com.google.android.gms.ads.eventattestation.internal.IEventAttestationService");
-        this.a = bxgoVar;
+        this.a = bzpeVar;
     }
 }

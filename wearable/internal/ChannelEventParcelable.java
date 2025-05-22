@@ -5,14 +5,14 @@ import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.djjn;
-import defpackage.dkhh;
+import defpackage.atzr;
+import defpackage.dlvg;
+import defpackage.dmta;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class ChannelEventParcelable extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dkhh();
+    public static final Parcelable.Creator CREATOR = new dmta();
     public final ChannelImpl a;
     final int b;
     final int c;
@@ -25,22 +25,22 @@ public final class ChannelEventParcelable extends AbstractSafeParcelable {
         this.d = i3;
     }
 
-    public final void a(djjn djjnVar) {
+    public final void a(dlvg dlvgVar) {
         int i = this.b;
         if (i == 1) {
-            djjnVar.D(this.a);
+            dlvgVar.D(this.a);
             return;
         }
         if (i == 2) {
-            djjnVar.E(this.a);
+            dlvgVar.E(this.a);
             return;
         }
         if (i == 3) {
-            djjnVar.F(this.a);
+            dlvgVar.F(this.a);
         } else if (i != 4) {
             Log.w("ChannelEventParcelable", a.j(i, "Unknown type: "));
         } else {
-            djjnVar.G(this.a);
+            dlvgVar.G(this.a);
         }
     }
 
@@ -54,11 +54,11 @@ public final class ChannelEventParcelable extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.o(parcel, 3, this.b);
-        arxc.o(parcel, 4, this.c);
-        arxc.o(parcel, 5, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.o(parcel, 3, this.b);
+        atzr.o(parcel, 4, this.c);
+        atzr.o(parcel, 5, this.d);
+        atzr.c(parcel, a);
     }
 }

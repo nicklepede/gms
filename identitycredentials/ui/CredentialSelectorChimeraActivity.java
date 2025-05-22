@@ -8,61 +8,61 @@ import android.util.Log;
 import androidx.activity.result.ActivityResult;
 import androidx.compose.ui.platform.ComposeView;
 import com.google.android.gms.identitycredentials.ui.CredentialSelectorChimeraActivity;
-import defpackage.abb;
 import defpackage.abg;
-import defpackage.acl;
-import defpackage.bmnp;
-import defpackage.bmnq;
-import defpackage.bmnt;
-import defpackage.bmqf;
-import defpackage.bmvp;
-import defpackage.bmvt;
-import defpackage.bmvu;
-import defpackage.bmvw;
-import defpackage.bmvx;
-import defpackage.bmvy;
-import defpackage.bmvz;
-import defpackage.bmwa;
-import defpackage.bmwe;
-import defpackage.bmxj;
-import defpackage.fla;
-import defpackage.flk;
-import defpackage.fmn;
-import defpackage.fog;
-import defpackage.fuuw;
-import defpackage.fuy;
-import defpackage.fuz;
-import defpackage.fvaf;
-import defpackage.fvaq;
-import defpackage.fvau;
-import defpackage.fvbi;
-import defpackage.fvbo;
-import defpackage.fvcc;
-import defpackage.izh;
-import defpackage.jqx;
-import defpackage.qfp;
+import defpackage.abl;
+import defpackage.acq;
+import defpackage.boui;
+import defpackage.bouj;
+import defpackage.boum;
+import defpackage.bowy;
+import defpackage.bpcw;
+import defpackage.bpda;
+import defpackage.bpdb;
+import defpackage.bpdd;
+import defpackage.bpde;
+import defpackage.bpdf;
+import defpackage.bpdg;
+import defpackage.bpdh;
+import defpackage.bpdl;
+import defpackage.bpeq;
+import defpackage.flq;
+import defpackage.fmb;
+import defpackage.fne;
+import defpackage.fox;
+import defpackage.fvp;
+import defpackage.fvq;
+import defpackage.fxqu;
+import defpackage.fxwd;
+import defpackage.fxwo;
+import defpackage.fxws;
+import defpackage.fxxg;
+import defpackage.fxxm;
+import defpackage.fxya;
+import defpackage.jax;
+import defpackage.jxm;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class CredentialSelectorChimeraActivity extends qfp {
+public final class CredentialSelectorChimeraActivity extends ryt {
     public ResultReceiver j;
     public int k;
-    private bmnt l;
-    private final fuuw m;
+    private boum l;
+    private final fxqu m;
 
     public CredentialSelectorChimeraActivity() {
-        bmvy bmvyVar = new bmvy(this);
-        int i = fvcc.a;
-        this.m = new jqx(new fvbi(bmwe.class), new bmvz(this), bmvyVar, new bmwa(this));
+        bpdf bpdfVar = new bpdf(this);
+        int i = fxya.a;
+        this.m = new jxm(new fxxg(bpdl.class), new bpdg(this), bpdfVar, new bpdh(this));
     }
 
     public static /* synthetic */ void g(CredentialSelectorChimeraActivity credentialSelectorChimeraActivity, String str) {
         if (str != null) {
             ResultReceiver resultReceiver = credentialSelectorChimeraActivity.j;
             if (resultReceiver != null) {
-                resultReceiver.send(0, bmvp.a(str, null));
+                resultReceiver.send(0, bpcw.a(str, null));
             }
-            credentialSelectorChimeraActivity.b(0, bmvp.g(credentialSelectorChimeraActivity.k, str, null));
+            credentialSelectorChimeraActivity.b(0, bpcw.g(credentialSelectorChimeraActivity.k, str, null));
             return;
         }
         ResultReceiver resultReceiver2 = credentialSelectorChimeraActivity.j;
@@ -82,8 +82,8 @@ public final class CredentialSelectorChimeraActivity extends qfp {
         c();
     }
 
-    public final bmwe a() {
-        return (bmwe) this.m.a();
+    public final bpdl a() {
+        return (bpdl) this.m.a();
     }
 
     public final void b(int i, Intent intent) {
@@ -94,113 +94,113 @@ public final class CredentialSelectorChimeraActivity extends qfp {
 
     public final void c() {
         int i = this.k;
-        g(this, i != 0 ? i + (-1) != 1 ? "android.credentials.GetCredentialException.TYPE_USER_CANCELED" : new izh((byte[]) null).a : null);
+        g(this, i != 0 ? i + (-1) != 1 ? "android.credentials.GetCredentialException.TYPE_USER_CANCELED" : new jax((byte[]) null).a : null);
     }
 
-    public final void h(flk flkVar, final int i) {
+    public final void h(fmb fmbVar, final int i) {
         int i2;
         int i3 = i & 6;
-        flk ak = flkVar.ak(77749666);
+        fmb al = fmbVar.al(77749666);
         if (i3 == 0) {
-            i2 = (true != ak.V(this) ? 2 : 4) | i;
+            i2 = (true != al.W(this) ? 2 : 4) | i;
         } else {
             i2 = i;
         }
-        if ((i2 & 3) == 2 && ak.Y()) {
-            ak.D();
+        if ((i2 & 3) == 2 && al.Z()) {
+            al.E();
         } else {
-            acl aclVar = new acl();
-            ak.I(5004770);
-            boolean V = ak.V(this);
-            Object i4 = ak.i();
-            if (V || i4 == fla.a) {
-                i4 = new fvaq() { // from class: bmvq
-                    @Override // defpackage.fvaq
+            acq acqVar = new acq();
+            al.J(5004770);
+            boolean W = al.W(this);
+            Object i4 = al.i();
+            if (W || i4 == flq.a) {
+                i4 = new fxwo() { // from class: bpcx
+                    @Override // defpackage.fxwo
                     public final Object a(Object obj) {
                         ActivityResult activityResult = (ActivityResult) obj;
-                        fvbo.f(activityResult, "it");
+                        fxxm.f(activityResult, "it");
                         Intent intent = activityResult.b;
                         int i5 = activityResult.a;
-                        bmwe a = CredentialSelectorChimeraActivity.this.a();
-                        bmqk bmqkVar = new bmqk(i5, intent);
-                        bmwj bmwjVar = a.a().e;
-                        int i6 = bmqkVar.a;
-                        Intent intent2 = bmqkVar.b;
+                        bpdl a = CredentialSelectorChimeraActivity.this.a();
+                        boxd boxdVar = new boxd(i5, intent);
+                        bpdq bpdqVar = a.a().e;
+                        int i6 = boxdVar.a;
+                        Intent intent2 = boxdVar.b;
                         if (i6 == 0) {
-                            a.i(bmwi.a(a.a(), null, null, null, null, bmql.a, null, 79));
-                        } else if (bmwjVar == null) {
+                            a.i(bpdp.a(a.a(), null, null, null, null, boxe.a, null, 79));
+                        } else if (bpdqVar == null) {
                             Log.w("CredentialSelector", "Illegal state: received a provider result but found no matching entry.");
                             a.g();
                         } else if (intent2 == null) {
                             Log.w("CredentialSelector", "The provider activity succeeded with null result.");
                             a.g();
                         } else {
-                            a.i(bmwi.a(a.a(), null, null, null, null, null, new bmqf(bmqg.c, intent2), 63));
+                            a.i(bpdp.a(a.a(), null, null, null, null, null, new bowy(bowz.c, intent2), 63));
                         }
-                        return fuvs.a;
+                        return fxrq.a;
                     }
                 };
-                ak.L(i4);
+                al.M(i4);
             }
-            ak.v();
-            abg a = abb.a(aclVar, (fvaq) i4, ak);
-            bmqf bmqfVar = a().a().g;
-            ak.I(5004770);
-            boolean V2 = ak.V(this);
-            Object i5 = ak.i();
-            if (V2 || i5 == fla.a) {
-                i5 = new bmvt(this, null);
-                ak.L(i5);
+            al.w();
+            abl a = abg.a(acqVar, (fxwo) i4, al);
+            bowy bowyVar = a().a().g;
+            al.J(5004770);
+            boolean W2 = al.W(this);
+            Object i5 = al.i();
+            if (W2 || i5 == flq.a) {
+                i5 = new bpda(this, null);
+                al.M(i5);
             }
-            ak.v();
-            fmn.f(bmqfVar, (fvau) i5, ak);
-            fuy e = fuz.e(904320766, new bmvu(this, a().a().d, a, a().a().c, a().a().b), ak);
-            ak.I(5004770);
-            boolean V3 = ak.V(this);
-            Object i6 = ak.i();
-            if (V3 || i6 == fla.a) {
-                i6 = new fvaf() { // from class: bmvr
-                    @Override // defpackage.fvaf
+            al.w();
+            fne.f(bowyVar, (fxws) i5, al);
+            fvp e = fvq.e(904320766, new bpdb(this, a().a().d, a, a().a().c, a().a().b), al);
+            al.J(5004770);
+            boolean W3 = al.W(this);
+            Object i6 = al.i();
+            if (W3 || i6 == flq.a) {
+                i6 = new fxwd() { // from class: bpcy
+                    @Override // defpackage.fxwd
                     public final Object a() {
                         CredentialSelectorChimeraActivity.this.a().h();
-                        return fuvs.a;
+                        return fxrq.a;
                     }
                 };
-                ak.L(i6);
+                al.M(i6);
             }
-            ak.v();
-            bmxj.a(e, (fvaf) i6, ak, 6);
+            al.w();
+            bpeq.a(e, (fxwd) i6, al, 6);
         }
-        fog ab = ak.ab();
-        if (ab != null) {
-            ab.d = new fvau() { // from class: bmvs
-                @Override // defpackage.fvau
+        fox ac = al.ac();
+        if (ac != null) {
+            ac.d = new fxws() { // from class: bpcz
+                @Override // defpackage.fxws
                 public final Object a(Object obj, Object obj2) {
                     ((Integer) obj2).intValue();
                     int i7 = i;
-                    CredentialSelectorChimeraActivity.this.h((flk) obj, foh.a(i7 | 1));
-                    return fuvs.a;
+                    CredentialSelectorChimeraActivity.this.h((fmb) obj, foy.a(i7 | 1));
+                    return fxrq.a;
                 }
             };
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         Exception exc;
-        bmnt d;
+        boum d;
         int i;
         super.onCreate(bundle);
         overridePendingTransition(0, 0);
         try {
             Intent intent = getIntent();
-            fvbo.e(intent, "getIntent(...)");
-            ResultReceiver c = bmvp.c(intent);
+            fxxm.e(intent, "getIntent(...)");
+            ResultReceiver c = bpcw.c(intent);
             this.j = c;
             Log.w("CredentialSelector", "ResultReceiver: " + c);
             Intent intent2 = getIntent();
-            fvbo.e(intent2, "getIntent(...)");
-            d = bmvp.d(intent2);
+            fxxm.e(intent2, "getIntent(...)");
+            d = bpcw.d(intent2);
         } catch (Exception e) {
             e = e;
         }
@@ -209,38 +209,38 @@ public final class CredentialSelectorChimeraActivity extends qfp {
                 throw new IllegalStateException("Request info cannot be null");
             }
             this.l = d;
-            bmnt bmntVar = null;
+            boum boumVar = null;
             if (d == null) {
                 try {
-                    fvbo.j("request");
+                    fxxm.j("request");
                     d = null;
                 } catch (Exception e2) {
                     exc = e2;
                     k(exc);
                 }
             }
-            if (d instanceof bmnp) {
+            if (d instanceof boui) {
                 i = 2;
             } else {
-                boolean z = d instanceof bmnq;
+                boolean z = d instanceof bouj;
                 i = 1;
             }
             this.k = i;
-            getOnBackPressedDispatcher().b(this, new bmvx(this));
+            getOnBackPressedDispatcher().b(this, new bpde(this));
             if (bundle == null) {
-                bmwe a = a();
-                bmnt bmntVar2 = this.l;
-                if (bmntVar2 == null) {
-                    fvbo.j("request");
+                bpdl a = a();
+                boum boumVar2 = this.l;
+                if (boumVar2 == null) {
+                    fxxm.j("request");
                 } else {
-                    bmntVar = bmntVar2;
+                    boumVar = boumVar2;
                 }
                 Context applicationContext = getApplicationContext();
-                fvbo.e(applicationContext, "getApplicationContext(...)");
-                bmwe.j(a, bmntVar, applicationContext);
+                fxxm.e(applicationContext, "getApplicationContext(...)");
+                bpdl.j(a, boumVar, applicationContext);
             }
             ComposeView composeView = new ComposeView(this, null, 0, 6, null);
-            composeView.a(new fuy(-76635275, true, new bmvw(this)));
+            composeView.a(new fvp(-76635275, true, new bpdd(this)));
             setContentView(composeView);
         } catch (Exception e3) {
             e = e3;
@@ -249,31 +249,31 @@ public final class CredentialSelectorChimeraActivity extends qfp {
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
-        fvbo.f(intent, "intent");
+        fxxm.f(intent, "intent");
         super.onNewIntent(intent);
         try {
-            ResultReceiver c = bmvp.c(intent);
+            ResultReceiver c = bpcw.c(intent);
             if (c == null) {
                 return;
             }
             this.j = c;
             setIntent(intent);
-            bmnt d = bmvp.d(intent);
+            boum d = bpcw.d(intent);
             if (d == null) {
                 throw new IllegalStateException("Request info cannot be null");
             }
             this.l = d;
-            bmwe a = a();
-            bmnt bmntVar = this.l;
-            if (bmntVar == null) {
-                fvbo.j("request");
-                bmntVar = null;
+            bpdl a = a();
+            boum boumVar = this.l;
+            if (boumVar == null) {
+                fxxm.j("request");
+                boumVar = null;
             }
             Context applicationContext = getApplicationContext();
-            fvbo.e(applicationContext, "getApplicationContext(...)");
-            bmwe.j(a, bmntVar, applicationContext);
+            fxxm.e(applicationContext, "getApplicationContext(...)");
+            bpdl.j(a, boumVar, applicationContext);
         } catch (Exception e) {
             k(e);
         }

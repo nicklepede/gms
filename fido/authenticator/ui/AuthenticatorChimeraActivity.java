@@ -15,52 +15,52 @@ import com.google.android.gms.fido.authenticator.ui.AuthenticatorChimeraActivity
 import com.google.android.gms.fido.sourcedevice.SourceDirectTransferResult;
 import com.google.android.gms.fido.sourcedevice.SourceStartDirectTransferOptions;
 import com.google.android.gms.location.LocationSettingsRequest;
-import defpackage.aktr;
-import defpackage.aktt;
-import defpackage.aqyd;
-import defpackage.arwm;
-import defpackage.arxd;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.bbff;
-import defpackage.bbfz;
-import defpackage.bbgm;
-import defpackage.bbhe;
-import defpackage.bbhf;
-import defpackage.bbhg;
-import defpackage.bbhh;
-import defpackage.bbhi;
-import defpackage.bbhl;
-import defpackage.bbhm;
-import defpackage.bbhn;
-import defpackage.bbjr;
-import defpackage.bcni;
+import defpackage.amvc;
+import defpackage.amve;
+import defpackage.atas;
+import defpackage.atzb;
+import defpackage.atzs;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.bdjc;
+import defpackage.bdjw;
+import defpackage.bdkj;
+import defpackage.bdlb;
+import defpackage.bdlc;
+import defpackage.bdld;
+import defpackage.bdle;
+import defpackage.bdlf;
+import defpackage.bdli;
+import defpackage.bdlj;
+import defpackage.bdlk;
+import defpackage.bdno;
+import defpackage.beov;
 import defpackage.bp;
 import defpackage.dg;
-import defpackage.eihn;
-import defpackage.eiig;
-import defpackage.ejhf;
-import defpackage.fnzb;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qex;
-import defpackage.qfn;
+import defpackage.ekus;
+import defpackage.ekvl;
+import defpackage.eluo;
+import defpackage.fqrd;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.ryb;
+import defpackage.ryr;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class AuthenticatorChimeraActivity extends qex {
+public final class AuthenticatorChimeraActivity extends ryb {
     public static final /* synthetic */ int h = 0;
-    private static final asot i = bcni.f("AuthenticatorChimeraActivity");
+    private static final ausn i = beov.f("AuthenticatorChimeraActivity");
     private BroadcastReceiver j;
-    private bbhf k;
+    private bdlc k;
     private ParcelFileDescriptor l;
     private ParcelFileDescriptor m;
 
-    private final bbhe o() {
-        return (bbhe) gI().h("authenticator_controller");
+    private final bdlb o() {
+        return (bdlb) gY().h("authenticator_controller");
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:5:0x001a, code lost:
@@ -84,35 +84,35 @@ public final class AuthenticatorChimeraActivity extends qex {
     private static final ParcelFileDescriptor q(Bundle bundle, String str) {
         IBinder binder = bundle.getBinder(str);
         if (binder == null) {
-            ((ejhf) ((ejhf) i.i()).ah((char) 3785)).x("Failed to extract input/output through binder.");
+            ((eluo) ((eluo) i.i()).ai((char) 3791)).x("Failed to extract input/output through binder.");
             return null;
         }
         try {
             IInterface queryLocalInterface = binder.queryLocalInterface("com.google.android.gms.car.IFdBinder");
-            return (queryLocalInterface instanceof aktt ? (aktt) queryLocalInterface : new aktr(binder)).a();
+            return (queryLocalInterface instanceof amve ? (amve) queryLocalInterface : new amvc(binder)).a();
         } catch (RemoteException e) {
-            ((ejhf) ((ejhf) ((ejhf) i.i()).s(e)).ah((char) 3784)).x("Failed to extract input/output through binder.");
+            ((eluo) ((eluo) ((eluo) i.i()).s(e)).ai((char) 3790)).x("Failed to extract input/output through binder.");
             return null;
         }
     }
 
-    public final bbhe j() {
-        bbhe o = o();
+    public final bdlb j() {
+        bdlb o = o();
         if (o != null) {
             return o;
         }
-        bbhe bbheVar = new bbhe();
-        bp bpVar = new bp(gI());
-        bpVar.v(bbheVar, "authenticator_controller");
+        bdlb bdlbVar = new bdlb();
+        bp bpVar = new bp(gY());
+        bpVar.v(bdlbVar, "authenticator_controller");
         bpVar.d();
-        return bbheVar;
+        return bdlbVar;
     }
 
-    public final /* synthetic */ void k(aqyd aqydVar) {
+    public final /* synthetic */ void k(atas atasVar) {
         try {
-            aqydVar.c(getContainerActivity(), 123);
+            atasVar.c(getContainerActivity(), 123);
         } catch (IntentSender.SendIntentException e) {
-            ((ejhf) ((ejhf) ((ejhf) i.i()).s(e)).ah((char) 3790)).x("Failed to launch the resolution for turning on BT Scanning.");
+            ((eluo) ((eluo) ((eluo) i.i()).s(e)).ai((char) 3796)).x("Failed to launch the resolution for turning on BT Scanning.");
         }
     }
 
@@ -123,8 +123,8 @@ public final class AuthenticatorChimeraActivity extends qex {
 
     public final void m(SourceDirectTransferResult sourceDirectTransferResult) {
         Intent intent = new Intent();
-        arxd.l(sourceDirectTransferResult, intent, "source_direct_transfer_result");
-        if (eihn.a(sourceDirectTransferResult.a, Status.b)) {
+        atzs.l(sourceDirectTransferResult, intent, "source_direct_transfer_result");
+        if (ekus.a(sourceDirectTransferResult.a, Status.b)) {
             setResult(-1, intent);
         } else {
             setResult(0, intent);
@@ -133,7 +133,7 @@ public final class AuthenticatorChimeraActivity extends qex {
     }
 
     public final void n(int i2) {
-        dg g = gI().g(R.id.fido_authenticator_fragment_container);
+        dg g = gY().g(R.id.fido_authenticator_fragment_container);
         dg dgVar = null;
         if (i2 != 1) {
             if (i2 != 2) {
@@ -141,43 +141,43 @@ public final class AuthenticatorChimeraActivity extends qex {
                     if (i2 != 6) {
                         if (i2 == 7) {
                             String stringExtra = getIntent().getStringExtra("account_name");
-                            eiig.x(stringExtra);
-                            int i3 = bbhg.a;
+                            ekvl.y(stringExtra);
+                            int i3 = bdld.a;
                             Bundle bundle = new Bundle();
-                            arwm.q(stringExtra);
+                            atzb.q(stringExtra);
                             bundle.putString("account_name", stringExtra);
-                            dgVar = new bbhg();
+                            dgVar = new bdld();
                             dgVar.setArguments(bundle);
                         }
-                    } else if (!(g instanceof bbhn)) {
+                    } else if (!(g instanceof bdlk)) {
                         String stringExtra2 = getIntent().getStringExtra("account_name");
-                        dgVar = new bbhn();
+                        dgVar = new bdlk();
                         Bundle bundle2 = new Bundle();
                         bundle2.putString("account-name", stringExtra2);
                         dgVar.setArguments(bundle2);
                     }
-                } else if (!(g instanceof bbhm)) {
-                    dgVar = new bbhm();
+                } else if (!(g instanceof bdlj)) {
+                    dgVar = new bdlj();
                 }
-            } else if (bbjr.b(getIntent().getIntArrayExtra("experiment_id_list"))) {
-                if (!(g instanceof bbhl)) {
-                    new bbhl().setArguments(new Bundle());
-                    dgVar = new bbhl();
+            } else if (bdno.b(getIntent().getIntArrayExtra("experiment_id_list"))) {
+                if (!(g instanceof bdli)) {
+                    new bdli().setArguments(new Bundle());
+                    dgVar = new bdli();
                 }
-            } else if (!(g instanceof bbhi)) {
-                dgVar = new bbhi();
+            } else if (!(g instanceof bdlf)) {
+                dgVar = new bdlf();
             }
-        } else if (!(g instanceof bbhh)) {
-            dgVar = new bbhh();
+        } else if (!(g instanceof bdle)) {
+            dgVar = new bdle();
         }
         if (dgVar != null) {
-            bp bpVar = new bp(gI());
+            bp bpVar = new bp(gY());
             bpVar.F(R.id.fido_authenticator_fragment_container, dgVar);
             bpVar.a();
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i2, int i3, Intent intent) {
         super.onActivityResult(i2, i3, intent);
         if (i2 != 123) {
@@ -186,17 +186,17 @@ public final class AuthenticatorChimeraActivity extends qex {
         this.k.b(i3 == -1 ? 1 : 16);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
-        bbhe o = o();
+        bdlb o = o();
         if (o == null) {
             m(new SourceDirectTransferResult(Status.f, 0));
             return;
         }
-        bbgm bbgmVar = (bbgm) o.getChildFragmentManager().h("authentication_fragment");
-        if (bbgmVar != null) {
-            bbgmVar.ak = true;
-            bbgmVar.y();
+        bdkj bdkjVar = (bdkj) o.getChildFragmentManager().h("authentication_fragment");
+        if (bdkjVar != null) {
+            bdkjVar.ak = true;
+            bdkjVar.y();
             return;
         }
         DataInputStream dataInputStream = o.c;
@@ -204,7 +204,7 @@ public final class AuthenticatorChimeraActivity extends qex {
             try {
                 dataInputStream.close();
             } catch (IOException e) {
-                ((ejhf) ((ejhf) ((ejhf) bbhe.a.i()).s(e)).ah((char) 3836)).x("Failed to close the input pipe.");
+                ((eluo) ((eluo) ((eluo) bdlb.a.i()).s(e)).ai((char) 3842)).x("Failed to close the input pipe.");
             }
         }
         DataOutputStream dataOutputStream = o.d;
@@ -212,28 +212,28 @@ public final class AuthenticatorChimeraActivity extends qex {
             try {
                 dataOutputStream.close();
             } catch (IOException e2) {
-                ((ejhf) ((ejhf) ((ejhf) bbhe.a.i()).s(e2)).ah((char) 3835)).x("Failed to close the output pipe.");
+                ((eluo) ((eluo) ((eluo) bdlb.a.i()).s(e2)).ai((char) 3841)).x("Failed to close the output pipe.");
             }
         }
-        ((bbhf) new jrh((qfn) o.requireContext()).a(bbhf.class)).a(new SourceDirectTransferResult(Status.f, 0));
+        ((bdlc) new jxw((ryr) o.requireContext()).a(bdlc.class)).a(new SourceDirectTransferResult(Status.f, 0));
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (bundle != null && fnzb.k() && asqh.g()) {
+        if (bundle != null && fqrd.k() && auub.g()) {
             SourceStartDirectTransferOptions sourceStartDirectTransferOptions = (SourceStartDirectTransferOptions) bundle.getParcelable("source_start_direct_transfer_options");
             int i2 = bundle.getInt("background_service_stage");
             ParcelFileDescriptor parcelFileDescriptor = (ParcelFileDescriptor) bundle.getParcelable("direct_transfer_data_input");
             ParcelFileDescriptor parcelFileDescriptor2 = (ParcelFileDescriptor) bundle.getParcelable("direct_transfer_data_output");
             if (parcelFileDescriptor == null || parcelFileDescriptor2 == null || sourceStartDirectTransferOptions == null) {
-                ((ejhf) ((ejhf) i.j()).ah((char) 3791)).x("Error - Missing parameter from savedInstanceState.");
+                ((eluo) ((eluo) i.j()).ai((char) 3797)).x("Error - Missing parameter from savedInstanceState.");
             } else {
-                bbff bbffVar = new bbff();
-                bbffVar.b = sourceStartDirectTransferOptions;
-                bbffVar.b(parcelFileDescriptor, parcelFileDescriptor2);
-                bbffVar.c(i2);
-                setIntent(bbffVar.a());
+                bdjc bdjcVar = new bdjc();
+                bdjcVar.b = sourceStartDirectTransferOptions;
+                bdjcVar.b(parcelFileDescriptor, parcelFileDescriptor2);
+                bdjcVar.c(i2);
+                setIntent(bdjcVar.a());
             }
         }
         if (getIntent().getIntExtra("background_service_stage", -1) == 6) {
@@ -244,23 +244,23 @@ public final class AuthenticatorChimeraActivity extends qex {
             setTheme(R.style.Theme_Fido_DayNight);
             setContentView(R.layout.fido_authenticator_activity);
         }
-        jrh jrhVar = new jrh(this);
-        bbhf bbhfVar = (bbhf) jrhVar.a(bbhf.class);
-        this.k = bbhfVar;
-        bbhfVar.b.g(this, new jpd() { // from class: bbew
-            @Override // defpackage.jpd
+        jxw jxwVar = new jxw(this);
+        bdlc bdlcVar = (bdlc) jxwVar.a(bdlc.class);
+        this.k = bdlcVar;
+        bdlcVar.b.g(this, new jvs() { // from class: bdit
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 AuthenticatorChimeraActivity.this.n(((Integer) obj).intValue());
             }
         });
-        this.k.a.g(this, new jpd() { // from class: bbex
-            @Override // defpackage.jpd
+        this.k.a.g(this, new jvs() { // from class: bdiu
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 AuthenticatorChimeraActivity.this.m((SourceDirectTransferResult) obj);
             }
         });
-        this.k.c.g(this, new jpd() { // from class: bbey
-            @Override // defpackage.jpd
+        this.k.c.g(this, new jvs() { // from class: bdiv
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 Integer num = (Integer) obj;
                 Intent intent = new Intent("com.google.android.gms.fido.authenticator.service.authenticator_activity_state_update");
@@ -273,8 +273,8 @@ public final class AuthenticatorChimeraActivity extends qex {
                 }
             }
         });
-        this.k.e.g(this, new jpd() { // from class: bbez
-            @Override // defpackage.jpd
+        this.k.e.g(this, new jvs() { // from class: bdiw
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 if (((Boolean) obj).booleanValue()) {
                     AuthenticatorChimeraActivity authenticatorChimeraActivity = AuthenticatorChimeraActivity.this;
@@ -283,8 +283,8 @@ public final class AuthenticatorChimeraActivity extends qex {
                 }
             }
         });
-        this.k.d.g(this, new jpd() { // from class: bbfa
-            @Override // defpackage.jpd
+        this.k.d.g(this, new jvs() { // from class: bdix
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 Integer num = (Integer) obj;
                 Intent intent = new Intent("com.google.android.gms.fido.authenticator.service.authenticator_activity_state_update");
@@ -302,8 +302,8 @@ public final class AuthenticatorChimeraActivity extends qex {
                 }
             }
         });
-        this.k.f.g(this, new jpd() { // from class: bbfb
-            @Override // defpackage.jpd
+        this.k.f.g(this, new jvs() { // from class: bdiy
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 Integer num = (Integer) obj;
                 Intent intent = new Intent("com.google.android.gms.fido.authenticator.service.authenticator_activity_state_update");
@@ -314,30 +314,30 @@ public final class AuthenticatorChimeraActivity extends qex {
                 authenticatorChimeraActivity.l(num.intValue());
             }
         });
-        this.k.g.g(this, new jpd() { // from class: bbfc
-            @Override // defpackage.jpd
+        this.k.g.g(this, new jvs() { // from class: bdiz
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 if (((Boolean) obj).booleanValue()) {
-                    bbhe j = AuthenticatorChimeraActivity.this.j();
-                    bzir bzirVar = new bzir();
-                    bzirVar.c();
-                    LocationSettingsRequest a = bzirVar.a();
+                    bdlb j = AuthenticatorChimeraActivity.this.j();
+                    cbri cbriVar = new cbri();
+                    cbriVar.c();
+                    LocationSettingsRequest a = cbriVar.a();
                     Context requireContext = j.requireContext();
-                    aqxd aqxdVar = bziq.a;
-                    ensj.t(doci.b(new aqxo(requireContext, (float[][]) null).ae(a)), new bbhd(j), new enrf());
+                    aszs aszsVar = cbrh.a;
+                    eqgc.t(dqmr.b(new atad(requireContext, (float[][]) null).ae(a)), new bdla(j), new eqey());
                 }
             }
         });
-        this.k.h.g(this, new jpd() { // from class: bbfd
-            @Override // defpackage.jpd
+        this.k.h.g(this, new jvs() { // from class: bdja
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                AuthenticatorChimeraActivity.this.k((aqyd) obj);
+                AuthenticatorChimeraActivity.this.k((atas) obj);
             }
         });
-        ((bbfz) jrhVar.a(bbfz.class)).d.g(this, new jpd() { // from class: bbfe
-            @Override // defpackage.jpd
+        ((bdjw) jxwVar.a(bdjw.class)).d.g(this, new jvs() { // from class: bdjb
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                bp bpVar = new bp(AuthenticatorChimeraActivity.this.gI());
+                bp bpVar = new bp(AuthenticatorChimeraActivity.this.gY());
                 bpVar.v((dg) obj, "user_verify_challenge");
                 bpVar.d();
             }
@@ -345,7 +345,7 @@ public final class AuthenticatorChimeraActivity extends qex {
         p();
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         sendBroadcast(new Intent("com.google.android.gms.fido.authenticator.service.authenticator_activity_completion").setPackage(getPackageName()));
         BroadcastReceiver broadcastReceiver = this.j;
@@ -356,20 +356,20 @@ public final class AuthenticatorChimeraActivity extends qex {
         super.onDestroy();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         setIntent(intent);
         p();
         super.onNewIntent(intent);
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
-        if (fnzb.k() && asqh.g()) {
+        if (fqrd.k() && auub.g()) {
             if (this.l == null || this.m == null) {
                 Bundle bundleExtra = getIntent().getBundleExtra("direct_transfer_data_pipe");
                 if (bundleExtra == null) {
-                    ((ejhf) ((ejhf) i.h()).ah((char) 3792)).x("Unable to extract bundle from intent.");
+                    ((eluo) ((eluo) i.h()).ai((char) 3798)).x("Unable to extract bundle from intent.");
                     return;
                 } else {
                     this.l = q(bundleExtra, "direct_transfer_data_input");

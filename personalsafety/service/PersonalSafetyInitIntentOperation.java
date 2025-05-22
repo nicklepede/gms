@@ -3,106 +3,106 @@ package com.google.android.gms.personalsafety.service;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.cvpj;
-import defpackage.cvpo;
-import defpackage.cvue;
-import defpackage.ejhf;
-import defpackage.fmzp;
-import defpackage.fmzz;
-import defpackage.fnck;
-import defpackage.frjb;
-import defpackage.frjg;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.cxyz;
+import defpackage.cxze;
+import defpackage.cyeb;
+import defpackage.eluo;
+import defpackage.fpro;
+import defpackage.fpry;
+import defpackage.fpuj;
+import defpackage.fucy;
+import defpackage.fudd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class PersonalSafetyInitIntentOperation extends anya {
-    @Override // defpackage.anya
+public class PersonalSafetyInitIntentOperation extends apzs {
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        asot asotVar = cvpo.a;
+        ausn ausnVar = cxze.a;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        boolean z = cvpj.a(this) && fmzz.x();
-        boolean z2 = fmzz.z();
-        if ((z || z2) && cvue.d(getApplicationContext())) {
+        boolean z = cxyz.a(this) && fpry.v();
+        boolean x = fpry.x();
+        if ((z || x) && cyeb.d(getApplicationContext())) {
             Context applicationContext = getApplicationContext();
             applicationContext.startService(SndService.a(applicationContext, "com.google.android.gms.personalsafety.ACTION_INIT"));
-            asot asotVar = cvpo.a;
+            ausn ausnVar = cxze.a;
         } else {
-            asot asotVar2 = cvpo.a;
+            ausn ausnVar2 = cxze.a;
         }
-        boolean c = cvue.c(getApplicationContext());
-        if (fmzp.af() && c) {
-            asot asotVar3 = cvpo.a;
-            ((ejhf) ((ejhf) asotVar3.h()).ah((char) 8689)).x("onInitRuntimeState");
+        boolean c = cyeb.c(getApplicationContext());
+        if (fpro.ai() && c) {
+            ausn ausnVar3 = cxze.a;
+            ((eluo) ((eluo) ausnVar3.h()).ai((char) 8687)).x("onInitRuntimeState");
             Context applicationContext2 = getApplicationContext();
             int i2 = PersonalSafetyChimeraService.f;
-            ((ejhf) ((ejhf) asotVar3.h()).ah((char) 8678)).x("Attempt to start PersonalSafetyService");
+            ((eluo) ((eluo) ausnVar3.h()).ai((char) 8676)).x("Attempt to start PersonalSafetyService");
             Intent intent2 = new Intent("com.google.android.gms.personalsafety.ACTION_INIT");
             intent2.setComponent(new ComponentName(applicationContext2, "com.google.android.gms.personalsafety.service.PersonalSafetyService"));
             applicationContext2.startService(intent2);
             Context applicationContext3 = getApplicationContext();
             int i3 = PersonalSafetyLoggerService.a;
-            if (fnck.a.a().z()) {
-                byko bykoVar = new byko();
-                bykoVar.w(PersonalSafetyLoggerService.class.getName());
-                bykoVar.q("personal_safety_setting");
-                bykoVar.a = bykv.j;
-                bykoVar.l(false);
-                bykoVar.v(2);
-                byjl.a(applicationContext3).f(bykoVar.b());
+            if (fpuj.a.lK().z()) {
+                catg catgVar = new catg();
+                catgVar.w(PersonalSafetyLoggerService.class.getName());
+                catgVar.q("personal_safety_setting");
+                catgVar.a = catn.j;
+                catgVar.l(false);
+                catgVar.v(2);
+                casd.a(applicationContext3).f(catgVar.b());
             } else {
-                byjl a = byjl.a(applicationContext3);
-                bykm bykmVar = new bykm();
-                bykmVar.w(PersonalSafetyLoggerService.class.getName());
-                bykmVar.t("personal_safety_setting");
-                bykmVar.x(0, 1);
-                bykmVar.f(0, 1);
-                bykmVar.y(2, 0);
-                bykmVar.j(byki.EVERY_DAY);
-                a.f(bykmVar.b());
+                casd a = casd.a(applicationContext3);
+                cate cateVar = new cate();
+                cateVar.w(PersonalSafetyLoggerService.class.getName());
+                cateVar.t("personal_safety_setting");
+                cateVar.x(0, 1);
+                cateVar.f(0, 1);
+                cateVar.y(2, 0);
+                cateVar.j(cata.EVERY_DAY);
+                a.f(cateVar.b());
             }
-            if (fmzp.Q()) {
-                if (fmzp.am()) {
-                    asng.H(this, "com.google.android.personalsafety.settings.BleTagGoogleSettingDebugActivity", true);
+            if (fpro.S()) {
+                if (fpro.ao()) {
+                    aura.H(this, "com.google.android.personalsafety.settings.BleTagGoogleSettingDebugActivity", true);
                 }
-                asng.H(this, "com.google.android.personalsafety.settings.BleTagSettingsActivity", true);
+                aura.H(this, "com.google.android.personalsafety.settings.BleTagSettingsActivity", true);
             } else {
-                ((ejhf) ((ejhf) asotVar3.j()).ah((char) 8690)).B("BleSettingsChimeraActivity enabled in InitIntentOperation ui main flag %b ", Boolean.valueOf(fmzp.Q()));
+                ((eluo) ((eluo) ausnVar3.j()).ai((char) 8688)).B("BleSettingsChimeraActivity enabled in InitIntentOperation ui main flag %b ", Boolean.valueOf(fpro.S()));
             }
         } else if (c) {
-            ((ejhf) ((ejhf) cvpo.a.j()).ah((char) 8688)).x("Failed to initialize PersonalSafetyChimeraService, init off");
+            ((eluo) ((eluo) cxze.a.j()).ai((char) 8686)).x("Failed to initialize PersonalSafetyChimeraService, init off");
         } else {
-            ((ejhf) ((ejhf) cvpo.a.j()).ah((char) 8685)).x("Not initializing service, likely not primary account");
+            ((eluo) ((eluo) cxze.a.j()).ai((char) 8683)).x("Not initializing service, likely not primary account");
         }
-        ((ejhf) ((ejhf) cvpo.a.h()).ah(8686)).T("Entry under S&E status %b, %b, %b ", Boolean.valueOf(fmzp.Q()), Boolean.valueOf(fmzp.af()), Boolean.valueOf(fmzp.P()));
-        boolean c2 = frjg.a.a().c();
-        if (fmzp.Q() && fmzp.af()) {
-            fmzp.P();
+        ((eluo) ((eluo) cxze.a.h()).ai(8684)).T("Entry under S&E status %b, %b, %b ", Boolean.valueOf(fpro.S()), Boolean.valueOf(fpro.ai()), Boolean.valueOf(fpro.R()));
+        boolean d = fudd.a.lK().d();
+        if (fpro.S() && fpro.ai()) {
+            fpro.R();
         }
-        if (c2 && !c) {
-            asng.H(this, "com.google.android.personalsafety.settings.BleTagSettingsActivity", false);
-            asng.H(this, "com.google.android.personalsafety.settings.BleTagGoogleSettingDebugActivity", false);
+        if (d && !c) {
+            aura.H(this, "com.google.android.personalsafety.settings.BleTagSettingsActivity", false);
+            aura.H(this, "com.google.android.personalsafety.settings.BleTagGoogleSettingDebugActivity", false);
         }
-        frjb.a.a();
+        fucy.a.lK();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
-        asot asotVar = cvpo.a;
+        ausn ausnVar = cxze.a;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void d(Intent intent) {
-        asot asotVar = cvpo.a;
+        ausn ausnVar = cxze.a;
     }
 }

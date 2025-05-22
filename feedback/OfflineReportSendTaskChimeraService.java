@@ -5,61 +5,63 @@ import android.content.Context;
 import com.google.android.gms.googlehelp.GoogleHelp;
 import com.google.android.gms.googlehelp.common.HelpConfig;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.arwm;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.bajr;
-import defpackage.bake;
-import defpackage.bakj;
-import defpackage.bapl;
-import defpackage.birh;
-import defpackage.bqux;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.byln;
-import defpackage.ejhf;
-import defpackage.ensv;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.ffkz;
-import defpackage.fflc;
-import defpackage.fflh;
-import defpackage.ffli;
-import defpackage.fflj;
-import defpackage.fflt;
-import defpackage.fmut;
-import defpackage.fnnl;
-import defpackage.fnuc;
+import defpackage.atzb;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.bcnn;
+import defpackage.bcoa;
+import defpackage.bcof;
+import defpackage.bcth;
+import defpackage.bkvw;
+import defpackage.btco;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.cauf;
+import defpackage.eluo;
+import defpackage.eqgo;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fhzx;
+import defpackage.fiaa;
+import defpackage.fiaf;
+import defpackage.fiag;
+import defpackage.fiah;
+import defpackage.fiar;
+import defpackage.fpmr;
+import defpackage.fqfu;
+import defpackage.fqml;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class OfflineReportSendTaskChimeraService extends GmsTaskChimeraService {
-    private static final asot a = asot.b("gF_SendGcmTask", asej.FEEDBACK);
-    private ensv b;
+    private static final ausn a = ausn.b("gF_SendGcmTask", auid.FEEDBACK);
+    private eqgo b;
 
     public static void d(Context context) {
-        bykj bykjVar = new bykj();
-        bykjVar.j = "com.google.android.gms.feedback.OfflineReportSendTaskService";
-        bykjVar.e(0L, TimeUnit.DAYS.toSeconds(fnnl.a.a().l()));
-        bykjVar.p = true;
-        bykjVar.x(fnnl.a.a().J() ? 1 : 0, 1);
-        bykjVar.t("gF_OfflineUpload");
-        bykjVar.g(0);
-        byjl.a(context).f(bykjVar.b());
+        catb catbVar = new catb();
+        catbVar.j = "com.google.android.gms.feedback.OfflineReportSendTaskService";
+        TimeUnit timeUnit = TimeUnit.DAYS;
+        fqfu fqfuVar = fqfu.a;
+        catbVar.e(0L, timeUnit.toSeconds(fqfuVar.lK().l()));
+        catbVar.p = true;
+        catbVar.x(fqfuVar.lK().J() ? 1 : 0, 1);
+        catbVar.t("gF_OfflineUpload");
+        catbVar.g(0);
+        casd.a(context).f(catbVar.b());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        bajr bajrVar;
+    public final int a(cauf caufVar) {
+        bcnn bcnnVar;
         OfflineReportSendTaskChimeraService offlineReportSendTaskChimeraService = this;
-        bapl baplVar = new bapl();
-        baplVar.c();
-        int i = bake.a;
-        File[] listFiles = (fmut.j() ? new File(bqux.a.b(offlineReportSendTaskChimeraService.getFilesDir(), "reports")) : new File(offlineReportSendTaskChimeraService.getFilesDir(), "reports")).listFiles();
+        bcth bcthVar = new bcth();
+        bcthVar.c();
+        int i = bcoa.a;
+        File[] listFiles = (fpmr.j() ? new File(btco.a.b(offlineReportSendTaskChimeraService.getFilesDir(), "reports")) : new File(offlineReportSendTaskChimeraService.getFilesDir(), "reports")).listFiles();
         if (listFiles == null) {
             return 2;
         }
@@ -67,229 +69,229 @@ public class OfflineReportSendTaskChimeraService extends GmsTaskChimeraService {
         while (i2 < listFiles.length) {
             File file = listFiles[i2];
             if (file.getName().endsWith(".proto.gz")) {
-                if (TimeUnit.MILLISECONDS.toSeconds(baplVar.a()) >= fnnl.a.a().n()) {
+                if (TimeUnit.MILLISECONDS.toSeconds(bcthVar.a()) >= fqfu.a.lK().n()) {
                     return 1;
                 }
                 try {
-                    fecj v = fflh.a.v();
-                    fflc fflcVar = fflc.a;
+                    fgrc v = fiaf.a.v();
+                    fiaa fiaaVar = fiaa.a;
                     if (!v.b.L()) {
                         v.U();
                     }
-                    fflh fflhVar = (fflh) v.b;
-                    fflcVar.getClass();
-                    fflhVar.c = fflcVar;
-                    fflhVar.b |= 1;
-                    ffli ffliVar = ffli.a;
-                    fecj v2 = ffliVar.v();
-                    fecj v3 = fflt.a.v();
+                    fiaf fiafVar = (fiaf) v.b;
+                    fiaaVar.getClass();
+                    fiafVar.c = fiaaVar;
+                    fiafVar.b |= 1;
+                    fiag fiagVar = fiag.a;
+                    fgrc v2 = fiagVar.v();
+                    fgrc v3 = fiar.a.v();
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    fflt ffltVar = (fflt) v3.b;
-                    ffltVar.b |= 1;
-                    ffltVar.c = 1L;
+                    fiar fiarVar = (fiar) v3.b;
+                    fiarVar.b |= 1;
+                    fiarVar.c = 1L;
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    ffli ffliVar2 = (ffli) v2.b;
-                    fflt ffltVar2 = (fflt) v3.Q();
-                    ffltVar2.getClass();
-                    ffliVar2.c = ffltVar2;
-                    ffliVar2.b |= 1;
-                    fecj v4 = ffkz.a.v();
+                    fiag fiagVar2 = (fiag) v2.b;
+                    fiar fiarVar2 = (fiar) v3.Q();
+                    fiarVar2.getClass();
+                    fiagVar2.c = fiarVar2;
+                    fiagVar2.b |= 1;
+                    fgrc v4 = fhzx.a.v();
                     if (!v4.b.L()) {
                         v4.U();
                     }
-                    fecp fecpVar = v4.b;
-                    ffkz ffkzVar = (ffkz) fecpVar;
-                    ffkzVar.b |= 1;
-                    ffkzVar.c = "";
-                    if (!fecpVar.L()) {
+                    fgri fgriVar = v4.b;
+                    fhzx fhzxVar = (fhzx) fgriVar;
+                    fhzxVar.b |= 1;
+                    fhzxVar.c = "";
+                    if (!fgriVar.L()) {
                         v4.U();
                     }
-                    fecp fecpVar2 = v4.b;
-                    ffkz ffkzVar2 = (ffkz) fecpVar2;
-                    ffkzVar2.b |= 2;
-                    ffkzVar2.d = "";
-                    if (!fecpVar2.L()) {
+                    fgri fgriVar2 = v4.b;
+                    fhzx fhzxVar2 = (fhzx) fgriVar2;
+                    fhzxVar2.b |= 2;
+                    fhzxVar2.d = "";
+                    if (!fgriVar2.L()) {
                         v4.U();
                     }
-                    fecp fecpVar3 = v4.b;
-                    ffkz ffkzVar3 = (ffkz) fecpVar3;
-                    ffkzVar3.b |= 4;
-                    ffkzVar3.e = "";
-                    if (!fecpVar3.L()) {
+                    fgri fgriVar3 = v4.b;
+                    fhzx fhzxVar3 = (fhzx) fgriVar3;
+                    fhzxVar3.b |= 4;
+                    fhzxVar3.e = "";
+                    if (!fgriVar3.L()) {
                         v4.U();
                     }
-                    fecp fecpVar4 = v4.b;
-                    ffkz ffkzVar4 = (ffkz) fecpVar4;
-                    ffkzVar4.b |= 8;
-                    ffkzVar4.f = "";
-                    if (!fecpVar4.L()) {
+                    fgri fgriVar4 = v4.b;
+                    fhzx fhzxVar4 = (fhzx) fgriVar4;
+                    fhzxVar4.b |= 8;
+                    fhzxVar4.f = "";
+                    if (!fgriVar4.L()) {
                         v4.U();
                     }
-                    ffkz ffkzVar5 = (ffkz) v4.b;
-                    ffkzVar5.b |= 16;
-                    ffkzVar5.g = "";
+                    fhzx fhzxVar5 = (fhzx) v4.b;
+                    fhzxVar5.b |= 16;
+                    fhzxVar5.g = "";
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    ffli ffliVar3 = (ffli) v2.b;
-                    ffkz ffkzVar6 = (ffkz) v4.Q();
-                    ffkzVar6.getClass();
-                    ffliVar3.e = ffkzVar6;
-                    ffliVar3.b |= 4;
-                    fflj ffljVar = fflj.a;
-                    fecj v5 = ffljVar.v();
+                    fiag fiagVar3 = (fiag) v2.b;
+                    fhzx fhzxVar6 = (fhzx) v4.Q();
+                    fhzxVar6.getClass();
+                    fiagVar3.e = fhzxVar6;
+                    fiagVar3.b |= 4;
+                    fiah fiahVar = fiah.a;
+                    fgrc v5 = fiahVar.v();
                     if (!v5.b.L()) {
                         v5.U();
                     }
-                    fecp fecpVar5 = v5.b;
-                    fflj ffljVar2 = (fflj) fecpVar5;
+                    fgri fgriVar5 = v5.b;
+                    fiah fiahVar2 = (fiah) fgriVar5;
                     try {
-                        ffljVar2.b |= 2;
-                        ffljVar2.d = "";
-                        if (!fecpVar5.L()) {
+                        fiahVar2.b |= 2;
+                        fiahVar2.d = "";
+                        if (!fgriVar5.L()) {
                             v5.U();
                         }
-                        fecp fecpVar6 = v5.b;
-                        fflj ffljVar3 = (fflj) fecpVar6;
-                        ffljVar3.b |= 4;
-                        ffljVar3.e = "";
-                        if (!fecpVar6.L()) {
+                        fgri fgriVar6 = v5.b;
+                        fiah fiahVar3 = (fiah) fgriVar6;
+                        fiahVar3.b |= 4;
+                        fiahVar3.e = "";
+                        if (!fgriVar6.L()) {
                             v5.U();
                         }
-                        fecp fecpVar7 = v5.b;
-                        fflj ffljVar4 = (fflj) fecpVar7;
-                        ffljVar4.b |= 64;
-                        ffljVar4.i = "";
-                        if (!fecpVar7.L()) {
+                        fgri fgriVar7 = v5.b;
+                        fiah fiahVar4 = (fiah) fgriVar7;
+                        fiahVar4.b |= 64;
+                        fiahVar4.i = "";
+                        if (!fgriVar7.L()) {
                             v5.U();
                         }
-                        fflj ffljVar5 = (fflj) v5.b;
-                        ffljVar5.b |= 1;
-                        ffljVar5.c = "";
+                        fiah fiahVar5 = (fiah) v5.b;
+                        fiahVar5.b |= 1;
+                        fiahVar5.c = "";
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        ffli ffliVar4 = (ffli) v2.b;
-                        fflj ffljVar6 = (fflj) v5.Q();
-                        ffljVar6.getClass();
-                        ffliVar4.d = ffljVar6;
-                        ffliVar4.b |= 2;
+                        fiag fiagVar4 = (fiag) v2.b;
+                        fiah fiahVar6 = (fiah) v5.Q();
+                        fiahVar6.getClass();
+                        fiagVar4.d = fiahVar6;
+                        fiagVar4.b |= 2;
                         if (!v.b.L()) {
                             v.U();
                         }
-                        fflh fflhVar2 = (fflh) v.b;
-                        ffli ffliVar5 = (ffli) v2.Q();
-                        ffliVar5.getClass();
-                        fflhVar2.d = ffliVar5;
-                        fflhVar2.b |= 2;
-                        fflh fflhVar3 = (fflh) birh.c(file, (fflh) v.Q());
-                        if (fflhVar3 == null) {
-                            ((ejhf) ((ejhf) a.j()).ah((char) 3623)).x("Can't parse the report.");
+                        fiaf fiafVar2 = (fiaf) v.b;
+                        fiag fiagVar5 = (fiag) v2.Q();
+                        fiagVar5.getClass();
+                        fiafVar2.d = fiagVar5;
+                        fiafVar2.b |= 2;
+                        fiaf fiafVar3 = (fiaf) bkvw.c(file, (fiaf) v.Q());
+                        if (fiafVar3 == null) {
+                            ((eluo) ((eluo) a.j()).ai((char) 3629)).x("Can't parse the report.");
                         } else {
-                            bakj bakjVar = new bakj(offlineReportSendTaskChimeraService);
-                            ffli ffliVar6 = fflhVar3.d;
-                            if (ffliVar6 == null) {
-                                ffliVar6 = ffliVar;
+                            bcof bcofVar = new bcof(offlineReportSendTaskChimeraService);
+                            fiag fiagVar6 = fiafVar3.d;
+                            if (fiagVar6 == null) {
+                                fiagVar6 = fiagVar;
                             }
-                            String a2 = bakj.a(ffliVar6);
-                            ffli ffliVar7 = fflhVar3.d;
-                            if (ffliVar7 == null) {
-                                ffliVar7 = ffliVar;
+                            String a2 = bcof.a(fiagVar6);
+                            fiag fiagVar7 = fiafVar3.d;
+                            if (fiagVar7 == null) {
+                                fiagVar7 = fiagVar;
                             }
-                            if (bakjVar.e(a2, bakj.c(ffliVar7))) {
-                                ((ejhf) ((ejhf) a.j()).ah((char) 3622)).x("Dropped report.");
+                            if (bcofVar.e(a2, bcof.c(fiagVar7))) {
+                                ((eluo) ((eluo) a.j()).ai((char) 3628)).x("Dropped report.");
                             } else {
                                 GoogleHelp googleHelp = new GoogleHelp("gms:feedback:suggestions");
-                                fflc fflcVar2 = fflhVar3.c;
-                                if (fflcVar2 == null) {
-                                    fflcVar2 = fflcVar;
+                                fiaa fiaaVar2 = fiafVar3.c;
+                                if (fiaaVar2 == null) {
+                                    fiaaVar2 = fiaaVar;
                                 }
-                                if (!fflcVar2.e.isEmpty()) {
-                                    fflc fflcVar3 = fflhVar3.c;
-                                    if (fflcVar3 == null) {
-                                        fflcVar3 = fflcVar;
+                                if (!fiaaVar2.e.isEmpty()) {
+                                    fiaa fiaaVar3 = fiafVar3.c;
+                                    if (fiaaVar3 == null) {
+                                        fiaaVar3 = fiaaVar;
                                     }
-                                    googleHelp.c = new Account(fflcVar3.e, "com.google");
+                                    googleHelp.c = new Account(fiaaVar3.e, "com.google");
                                 }
-                                fflc fflcVar4 = fflhVar3.c;
-                                if (fflcVar4 == null) {
-                                    fflcVar4 = fflcVar;
+                                fiaa fiaaVar4 = fiafVar3.c;
+                                if (fiaaVar4 == null) {
+                                    fiaaVar4 = fiaaVar;
                                 }
-                                if (!fflcVar4.h.isEmpty()) {
-                                    fflc fflcVar5 = fflhVar3.c;
-                                    if (fflcVar5 != null) {
-                                        fflcVar = fflcVar5;
+                                if (!fiaaVar4.h.isEmpty()) {
+                                    fiaa fiaaVar5 = fiafVar3.c;
+                                    if (fiaaVar5 != null) {
+                                        fiaaVar = fiaaVar5;
                                     }
-                                    googleHelp.D = fflcVar.h;
+                                    googleHelp.D = fiaaVar.h;
                                 }
                                 HelpConfig d = HelpConfig.d(googleHelp, offlineReportSendTaskChimeraService);
-                                ffli ffliVar8 = fflhVar3.d;
-                                if (ffliVar8 == null) {
-                                    ffliVar8 = ffliVar;
+                                fiag fiagVar8 = fiafVar3.d;
+                                if (fiagVar8 == null) {
+                                    fiagVar8 = fiagVar;
                                 }
-                                if ((ffliVar8.b & 2) != 0) {
-                                    fflj ffljVar7 = ffliVar8.d;
-                                    if (ffljVar7 == null) {
-                                        ffljVar7 = ffljVar;
+                                if ((fiagVar8.b & 2) != 0) {
+                                    fiah fiahVar7 = fiagVar8.d;
+                                    if (fiahVar7 == null) {
+                                        fiahVar7 = fiahVar;
                                     }
-                                    if (ffljVar7.i.isEmpty()) {
-                                        ffli ffliVar9 = fflhVar3.d;
-                                        if (ffliVar9 == null) {
-                                            ffliVar9 = ffliVar;
+                                    if (fiahVar7.i.isEmpty()) {
+                                        fiag fiagVar9 = fiafVar3.d;
+                                        if (fiagVar9 == null) {
+                                            fiagVar9 = fiagVar;
                                         }
-                                        fflj ffljVar8 = ffliVar9.d;
-                                        if (ffljVar8 == null) {
-                                            ffljVar8 = ffljVar;
+                                        fiah fiahVar8 = fiagVar9.d;
+                                        if (fiahVar8 == null) {
+                                            fiahVar8 = fiahVar;
                                         }
-                                        if (!ffljVar8.c.isEmpty()) {
-                                            ffli ffliVar10 = fflhVar3.d;
-                                            if (ffliVar10 == null) {
-                                                ffliVar10 = ffliVar;
+                                        if (!fiahVar8.c.isEmpty()) {
+                                            fiag fiagVar10 = fiafVar3.d;
+                                            if (fiagVar10 == null) {
+                                                fiagVar10 = fiagVar;
                                             }
-                                            fflj ffljVar9 = ffliVar10.d;
-                                            if (ffljVar9 != null) {
-                                                ffljVar = ffljVar9;
+                                            fiah fiahVar9 = fiagVar10.d;
+                                            if (fiahVar9 != null) {
+                                                fiahVar = fiahVar9;
                                             }
-                                            d.b = ffljVar.c;
+                                            d.b = fiahVar.c;
                                         }
                                     } else {
-                                        ffli ffliVar11 = fflhVar3.d;
-                                        if (ffliVar11 == null) {
-                                            ffliVar11 = ffliVar;
+                                        fiag fiagVar11 = fiafVar3.d;
+                                        if (fiagVar11 == null) {
+                                            fiagVar11 = fiagVar;
                                         }
-                                        fflj ffljVar10 = ffliVar11.d;
-                                        if (ffljVar10 != null) {
-                                            ffljVar = ffljVar10;
+                                        fiah fiahVar10 = fiagVar11.d;
+                                        if (fiahVar10 != null) {
+                                            fiahVar = fiahVar10;
                                         }
-                                        d.b = ffljVar.i;
+                                        d.b = fiahVar.i;
                                     }
                                 }
                                 if (offlineReportSendTaskChimeraService.b == null) {
-                                    offlineReportSendTaskChimeraService.b = new asmf(Integer.MAX_VALUE, 10);
+                                    offlineReportSendTaskChimeraService.b = new aupz(Integer.MAX_VALUE, 10);
                                 }
-                                ffli ffliVar12 = ffliVar;
-                                ensv ensvVar = offlineReportSendTaskChimeraService.b;
-                                asot asotVar = bajr.k;
-                                arwm.k("Must be called from a worker thread.");
-                                if (fnuc.c()) {
-                                    ffli ffliVar13 = fflhVar3.d;
-                                    if (ffliVar13 != null) {
-                                        ffliVar12 = ffliVar13;
+                                fiag fiagVar12 = fiagVar;
+                                eqgo eqgoVar = offlineReportSendTaskChimeraService.b;
+                                ausn ausnVar = bcnn.k;
+                                atzb.k("Must be called from a worker thread.");
+                                if (fqml.c()) {
+                                    fiag fiagVar13 = fiafVar3.d;
+                                    if (fiagVar13 != null) {
+                                        fiagVar12 = fiagVar13;
                                     }
-                                    bajrVar = new bajr((Context) offlineReportSendTaskChimeraService, d, ensvVar, bakj.f(ffliVar12.k, fflhVar3.e, bakj.a(ffliVar12), bakj.c(ffliVar12)), fflhVar3, false);
+                                    bcnnVar = new bcnn((Context) offlineReportSendTaskChimeraService, d, eqgoVar, bcof.f(fiagVar12.k, fiafVar3.e, bcof.a(fiagVar12), bcof.c(fiagVar12)), fiafVar3, false);
                                 } else {
-                                    byte[] a3 = bake.a(file);
-                                    ffli ffliVar14 = fflhVar3.d;
-                                    if (ffliVar14 == null) {
-                                        ffliVar14 = ffliVar12;
+                                    byte[] a3 = bcoa.a(file);
+                                    fiag fiagVar14 = fiafVar3.d;
+                                    if (fiagVar14 == null) {
+                                        fiagVar14 = fiagVar12;
                                     }
-                                    bajrVar = new bajr((Context) this, d, ensvVar, bakj.b(ffliVar14.k, fflhVar3.e, bakj.a(ffliVar14), bakj.c(ffliVar14)), a3, false);
+                                    bcnnVar = new bcnn((Context) this, d, eqgoVar, bcof.b(fiagVar14.k, fiafVar3.e, bcof.a(fiagVar14), bcof.c(fiagVar14)), a3, false);
                                 }
-                                if (!bajr.q(bajrVar)) {
+                                if (!bcnn.q(bcnnVar)) {
                                 }
                             }
                         }

@@ -5,33 +5,33 @@ import android.database.sqlite.SQLiteException;
 import android.net.Uri;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.dtdi.core.database.appcapabilitiesmatching.AppCapabilitiesMatchingDatabase;
-import defpackage.asot;
-import defpackage.ayay;
-import defpackage.ayez;
-import defpackage.aylw;
-import defpackage.ejhf;
-import defpackage.fuyy;
-import defpackage.fvbo;
-import defpackage.fvgu;
+import defpackage.ausn;
+import defpackage.baey;
+import defpackage.baiy;
+import defpackage.bapu;
+import defpackage.eluo;
+import defpackage.fxuw;
+import defpackage.fxxm;
+import defpackage.fycs;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class AppCapabilitiesInfoDatabaseCleanupIntentOperation extends IntentOperation {
-    private static final asot b = ayay.a("ACIDCleanupIntentOperation");
-    public aylw a;
+    private static final ausn b = baey.a("ACIDCleanupIntentOperation");
+    public bapu a;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        aylw v = AppCapabilitiesMatchingDatabase.l.a().v();
-        fvbo.f(v, "<set-?>");
+        bapu v = AppCapabilitiesMatchingDatabase.m.a().v();
+        fxxm.f(v, "<set-?>");
         this.a = v;
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         Object a;
-        fvbo.f(intent, "intent");
-        if (fvbo.n("android.intent.action.PACKAGE_FULLY_REMOVED", intent.getAction())) {
+        fxxm.f(intent, "intent");
+        if (fxxm.n("android.intent.action.PACKAGE_FULLY_REMOVED", intent.getAction())) {
             intent.getAction();
             Uri data = intent.getData();
             String schemeSpecificPart = data != null ? data.getSchemeSpecificPart() : null;
@@ -39,12 +39,12 @@ public final class AppCapabilitiesInfoDatabaseCleanupIntentOperation extends Int
                 return;
             }
             try {
-                a = fvgu.a(fuyy.a, new ayez(this, schemeSpecificPart, null));
+                a = fycs.a(fxuw.a, new baiy(this, schemeSpecificPart, null));
                 if (((Number) a).intValue() > 0) {
-                    ((ejhf) b.h()).B("onHandleIntent: deleted info for package %s", schemeSpecificPart);
+                    ((eluo) b.h()).B("onHandleIntent: deleted info for package %s", schemeSpecificPart);
                 }
             } catch (SQLiteException e) {
-                ((ejhf) ((ejhf) b.j()).s(e)).B("Failed to delete info for package %s", schemeSpecificPart);
+                ((eluo) ((eluo) b.j()).s(e)).B("Failed to delete info for package %s", schemeSpecificPart);
             }
         }
     }

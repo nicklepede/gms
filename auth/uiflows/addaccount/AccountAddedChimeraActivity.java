@@ -6,36 +6,36 @@ import com.google.android.gms.R;
 import com.google.android.gms.auth.uiflows.addaccount.AccountAddedChimeraActivity;
 import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.SetupWizardLayout;
-import defpackage.adlg;
-import defpackage.arkc;
-import defpackage.arkf;
-import defpackage.edfq;
-import defpackage.edfr;
-import defpackage.edgk;
-import defpackage.edjy;
-import defpackage.fkdk;
+import defpackage.afln;
+import defpackage.atmr;
+import defpackage.atmu;
+import defpackage.efsl;
+import defpackage.efsm;
+import defpackage.eftf;
+import defpackage.efwt;
+import defpackage.fmtw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AccountAddedChimeraActivity extends adlg implements edjy {
+public class AccountAddedChimeraActivity extends afln implements efwt {
     private final void l() {
-        edgk.f(getWindow(), false);
+        eftf.f(getWindow(), false);
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "AccountAddedActivity";
     }
 
-    @Override // defpackage.edjy
-    public final void jw() {
-        gD(-1, null);
+    @Override // defpackage.efwt
+    public final void jM() {
+        gT(-1, null);
     }
 
-    @Override // defpackage.adlg, defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afln, defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        arkf f = arkf.f(this, arkc.i(t().a) ? fkdk.d() ? R.layout.auth_account_added_glif_activity_v2 : R.layout.auth_account_added_glif_activity : R.layout.auth_account_added_activity);
+        atmu f = atmu.f(this, atmr.i(t().a) ? fmtw.d() ? R.layout.auth_account_added_glif_activity_v2 : R.layout.auth_account_added_glif_activity : R.layout.auth_account_added_activity);
         setContentView(f.a());
         f.c(getTitle());
         if (f.a() instanceof SetupWizardLayout) {
@@ -44,39 +44,39 @@ public class AccountAddedChimeraActivity extends adlg implements edjy {
             setupWizardLayout.t().b.setVisibility(4);
             l();
         } else {
-            edfq edfqVar = (edfq) ((GlifLayout) f.a().findViewById(R.id.setup_wizard_layout)).q(edfq.class);
-            edfr edfrVar = new edfr(this);
-            edfrVar.b(R.string.sud_next_button_label);
-            edfrVar.b = new View.OnClickListener() { // from class: addv
+            efsl efslVar = (efsl) ((GlifLayout) f.a().findViewById(R.id.setup_wizard_layout)).q(efsl.class);
+            efsm efsmVar = new efsm(this);
+            efsmVar.b(R.string.sud_next_button_label);
+            efsmVar.b = new View.OnClickListener() { // from class: afdx
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
-                    AccountAddedChimeraActivity.this.jw();
+                    AccountAddedChimeraActivity.this.jM();
                 }
             };
-            edfrVar.c = 5;
-            edfrVar.d = R.style.SudGlifButton_Primary;
-            edfqVar.b(edfrVar.a());
+            efsmVar.c = 5;
+            efsmVar.d = R.style.SudGlifButton_Primary;
+            efslVar.b(efsmVar.a());
         }
-        arkc.e(f.a());
+        atmr.e(f.a());
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
         l();
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj, android.view.Window.Callback
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn, android.view.Window.Callback
     public final void onWindowFocusChanged(boolean z) {
         super.onWindowFocusChanged(z);
         l();
     }
 
-    @Override // defpackage.edjy
-    public final void gs() {
+    @Override // defpackage.efwt
+    public final void gH() {
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
     }
 }

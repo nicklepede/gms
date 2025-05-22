@@ -7,9 +7,9 @@ import android.view.View;
 import android.widget.LinearLayout;
 import com.google.android.cast.JGCastService;
 import com.google.android.gms.R;
-import defpackage.swy;
+import defpackage.usw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ButtonBarLayout extends LinearLayout {
     private final boolean a;
@@ -19,7 +19,7 @@ public class ButtonBarLayout extends LinearLayout {
         super(context, attributeSet);
         this.b = -1;
         int i = context.getResources().getConfiguration().screenHeightDp;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, swy.c);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, usw.c);
         this.a = obtainStyledAttributes.getBoolean(0, i >= 320);
         obtainStyledAttributes.recycle();
     }

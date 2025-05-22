@@ -3,44 +3,37 @@ package com.google.android.gms.appinvite.notification;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Looper;
 import android.os.RemoteException;
 import android.text.TextUtils;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aqxs;
-import defpackage.arat;
-import defpackage.arbr;
-import defpackage.arts;
-import defpackage.arwm;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asot;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.bxhd;
-import defpackage.eijr;
-import defpackage.ejhf;
-import defpackage.ekqw;
-import defpackage.ekrg;
-import defpackage.ekrl;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fgnj;
-import defpackage.twt;
-import defpackage.twv;
-import defpackage.txd;
-import defpackage.txn;
-import defpackage.ubj;
+import defpackage.atwh;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.ausn;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.bzpt;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.enei;
+import defpackage.enes;
+import defpackage.enex;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fjch;
+import defpackage.vst;
+import defpackage.vsu;
+import defpackage.vtc;
+import defpackage.vtm;
+import defpackage.vxi;
 import j$.util.Objects;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Lock;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AppInviteInstallIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("AppInstallOperation", asej.APP_INVITE);
-    private twv b;
-    private bqqa c;
+    private static final ausn a = ausn.b("AppInstallOperation", auid.APP_INVITE);
+    private vsu b;
+    private bsxr c;
 
     public AppInviteInstallIntentOperation() {
         this.b = null;
@@ -49,151 +42,123 @@ public class AppInviteInstallIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
         if (this.b == null) {
-            this.b = new twv(this, null);
+            this.b = new vsu(null);
         }
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         boolean z;
-        aseu aseuVar = aseu.FDL_APPINVITE_INSTALL_INTENT_OPERATION;
+        auio auioVar = auio.FDL_APPINVITE_INSTALL_INTENT_OPERATION;
         if (this.c == null) {
-            eijr eijrVar = bqqe.a;
-            this.c = new bqqa();
+            ekww ekwwVar = bsxv.a;
+            this.c = new bsxr();
         }
-        bqqa.a(aseuVar);
+        bsxr.a(auioVar);
         String action = intent.getAction();
         if (Objects.equals(action, "android.intent.action.PACKAGE_ADDED") || Objects.equals(action, "android.intent.action.PACKAGE_FULLY_REMOVED")) {
             String action2 = intent.getAction();
             Uri data = intent.getData();
             String schemeSpecificPart = data != null ? data.getSchemeSpecificPart() : null;
             if (TextUtils.isEmpty(schemeSpecificPart)) {
-                ((ejhf) a.i()).x("Package name not found in the intent.");
+                ((eluo) a.i()).x("Package name not found in the intent.");
                 return;
             }
-            if (ubj.l(this, schemeSpecificPart)) {
+            if (vxi.l(this, schemeSpecificPart)) {
                 if (action2.equals("android.intent.action.PACKAGE_FULLY_REMOVED")) {
-                    ubj.j(this, schemeSpecificPart);
+                    vxi.j(this, schemeSpecificPart);
                     return;
                 }
-                if (ubj.k("loggerInstallEvent", true, this, schemeSpecificPart)) {
+                if (vxi.k("loggerInstallEvent", true, this, schemeSpecificPart)) {
                     return;
                 }
-                ubj.o("loggerInstallEvent", this, schemeSpecificPart);
-                aqxs aqxsVar = this.b.d;
-                if (!aqxsVar.p() && !aqxsVar.q()) {
-                    TimeUnit timeUnit = TimeUnit.MILLISECONDS;
-                    arwm.m(Looper.myLooper() != Looper.getMainLooper(), "blockingConnect must not be called on the UI thread");
-                    arwm.t(timeUnit, "TimeUnit must not be null");
-                    arat aratVar = (arat) aqxsVar;
-                    Lock lock = aratVar.b;
-                    lock.lock();
-                    try {
-                        Integer num = ((arat) aqxsVar).n;
-                        if (num == null) {
-                            ((arat) aqxsVar).n = Integer.valueOf(arat.s(((arat) aqxsVar).i.values(), false));
-                        } else if (num.intValue() == 2) {
-                            throw new IllegalStateException("Cannot call blockingConnect() when sign-in mode is set to SIGN_IN_MODE_OPTIONAL. Call connect(SIGN_IN_MODE_OPTIONAL) instead.");
-                        }
-                        Integer num2 = ((arat) aqxsVar).n;
-                        arwm.s(num2);
-                        ((arat) aqxsVar).v(num2.intValue());
-                        ((arat) aqxsVar).c.b();
-                        arbr arbrVar = ((arat) aqxsVar).d;
-                        arwm.s(arbrVar);
-                        arbrVar.m(timeUnit);
-                        lock.unlock();
-                    } catch (Throwable th) {
-                        aratVar.b.unlock();
-                        throw th;
-                    }
-                }
-                twv twvVar = this.b;
-                int p = ubj.p(this, schemeSpecificPart);
-                int i = true != ubj.k("isInlineInstall", false, this, schemeSpecificPart) ? 2 : 3;
-                boolean k = ubj.k("launchFromContinueUrl", false, this, schemeSpecificPart);
+                vxi.o("loggerInstallEvent", this, schemeSpecificPart);
+                vsu vsuVar = this.b;
+                int p = vxi.p(this, schemeSpecificPart);
+                int i = true != vxi.k("isInlineInstall", false, this, schemeSpecificPart) ? 2 : 3;
+                boolean k = vxi.k("launchFromContinueUrl", false, this, schemeSpecificPart);
                 boolean booleanExtra = intent.getBooleanExtra("android.intent.extra.REPLACING", false);
-                String f = ubj.f(this, schemeSpecificPart);
-                int a2 = fgnj.a(ubj.a(this, schemeSpecificPart));
-                String d = ubj.d(this, schemeSpecificPart);
-                String e = ubj.e(this, schemeSpecificPart);
-                String h = ubj.h(this, schemeSpecificPart);
-                fecj v = ekqw.a.v();
+                String f = vxi.f(this, schemeSpecificPart);
+                int a2 = fjch.a(vxi.a(this, schemeSpecificPart));
+                String d = vxi.d(this, schemeSpecificPart);
+                String e = vxi.e(this, schemeSpecificPart);
+                String h = vxi.h(this, schemeSpecificPart);
+                fgrc v = enei.a.v();
                 if (TextUtils.isEmpty(schemeSpecificPart)) {
                     z = true;
                 } else {
-                    fecj v2 = ekrl.a.v();
+                    fgrc v2 = enex.a.v();
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    ekrl ekrlVar = (ekrl) v2.b;
+                    enex enexVar = (enex) v2.b;
                     schemeSpecificPart.getClass();
                     z = true;
-                    ekrlVar.b |= 2;
-                    ekrlVar.c = schemeSpecificPart;
+                    enexVar.b |= 2;
+                    enexVar.c = schemeSpecificPart;
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ekqw ekqwVar = (ekqw) v.b;
-                    ekrl ekrlVar2 = (ekrl) v2.Q();
-                    ekrlVar2.getClass();
-                    ekqwVar.c = ekrlVar2;
-                    ekqwVar.b |= 1;
+                    enei eneiVar = (enei) v.b;
+                    enex enexVar2 = (enex) v2.Q();
+                    enexVar2.getClass();
+                    eneiVar.c = enexVar2;
+                    eneiVar.b |= 1;
                 }
                 if (!v.b.L()) {
                     v.U();
                 }
-                fecp fecpVar = v.b;
-                ekqw ekqwVar2 = (ekqw) fecpVar;
-                ekqwVar2.d = p - 1;
-                ekqwVar2.b |= 2;
-                if (!fecpVar.L()) {
+                fgri fgriVar = v.b;
+                enei eneiVar2 = (enei) fgriVar;
+                eneiVar2.d = p - 1;
+                eneiVar2.b |= 2;
+                if (!fgriVar.L()) {
                     v.U();
                 }
-                fecp fecpVar2 = v.b;
-                ekqw ekqwVar3 = (ekqw) fecpVar2;
-                ekqwVar3.e = i - 1;
-                ekqwVar3.b |= 4;
-                if (!fecpVar2.L()) {
+                fgri fgriVar2 = v.b;
+                enei eneiVar3 = (enei) fgriVar2;
+                eneiVar3.e = i - 1;
+                eneiVar3.b |= 4;
+                if (!fgriVar2.L()) {
                     v.U();
                 }
-                ekqw ekqwVar4 = (ekqw) v.b;
-                ekqwVar4.b |= 8;
-                ekqwVar4.f = k;
+                enei eneiVar4 = (enei) v.b;
+                eneiVar4.b |= 8;
+                eneiVar4.f = k;
                 if (!TextUtils.isEmpty(d) || !TextUtils.isEmpty(e)) {
-                    ekrg d2 = twv.d(d, e, f, a2, "");
+                    enes c = vsu.c(d, e, f, a2, "");
                     if (!v.b.L()) {
                         v.U();
                     }
-                    ekqw ekqwVar5 = (ekqw) v.b;
-                    d2.getClass();
-                    ekqwVar5.g = d2;
-                    ekqwVar5.b |= 32;
+                    enei eneiVar5 = (enei) v.b;
+                    c.getClass();
+                    eneiVar5.g = c;
+                    eneiVar5.b |= 32;
                 }
-                int e2 = twv.e(z, booleanExtra);
+                int d2 = vsu.d(z, booleanExtra);
                 if (!v.b.L()) {
                     v.U();
                 }
-                ekqw ekqwVar6 = (ekqw) v.b;
-                ekqwVar6.h = e2 - 1;
-                ekqwVar6.b |= 64;
-                twvVar.g((ekqw) v.Q(), 11, h);
-                arts artsVar = new arts();
-                artsVar.a = getApplicationInfo().uid;
-                artsVar.d = getPackageName();
-                artsVar.e = getPackageName();
+                enei eneiVar6 = (enei) v.b;
+                eneiVar6.h = d2 - 1;
+                eneiVar6.b |= 64;
+                vsuVar.f((enei) v.Q(), 11, h);
+                atwh atwhVar = new atwh();
+                atwhVar.a = getApplicationInfo().uid;
+                atwhVar.d = getPackageName();
+                atwhVar.e = getPackageName();
                 try {
-                    new txn(artsVar, txd.a(this), new twt(this), ubj.i("invitationId", this, schemeSpecificPart), null).f(this);
-                } catch (RemoteException | bxhd e3) {
-                    e3.printStackTrace();
+                    new vtm(atwhVar, vtc.a(this), new vst(this), vxi.i("invitationId", this, schemeSpecificPart), null).f(this);
+                } catch (RemoteException | bzpt e2) {
+                    ((eluo) ((eluo) a.i()).s(e2)).x("Failed to complete invitation.");
                 }
             }
         }
     }
 
-    public AppInviteInstallIntentOperation(Context context, twv twvVar) {
+    public AppInviteInstallIntentOperation(Context context, vsu vsuVar) {
         this.b = null;
         attachBaseContext(context);
-        this.b = twvVar;
+        this.b = vsuVar;
     }
 }

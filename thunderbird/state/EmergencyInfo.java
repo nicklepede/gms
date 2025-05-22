@@ -4,34 +4,34 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.thunderbird.state.DeviceState;
-import defpackage.arxc;
-import defpackage.azlv;
-import defpackage.azlz;
-import defpackage.dfyj;
-import defpackage.dfym;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.eiig;
-import defpackage.eiih;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.eivv;
-import defpackage.fecj;
-import defpackage.fsnb;
-import defpackage.pkg;
+import defpackage.atzr;
+import defpackage.bbpr;
+import defpackage.bbpv;
+import defpackage.dijo;
+import defpackage.dijr;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.ekvl;
+import defpackage.ekvm;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elja;
+import defpackage.fgrc;
+import defpackage.fvik;
+import defpackage.rdk;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class EmergencyInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dfym();
+    public static final Parcelable.Creator CREATOR = new dijr();
     public final ActivationInfo a;
     public final List b;
     public final AeiState c;
 
     public EmergencyInfo(ActivationInfo activationInfo, Iterable iterable, AeiState aeiState) {
         this.a = activationInfo;
-        this.b = eitj.h(iterable);
+        this.b = elgo.h(iterable);
         this.c = aeiState;
     }
 
@@ -52,22 +52,22 @@ public class EmergencyInfo extends AbstractSafeParcelable {
     }
 
     public final DeviceState e() {
-        return (DeviceState) eivv.o(this.b, null);
+        return (DeviceState) elja.o(this.b, null);
     }
 
     public final DeviceState f() {
         List list = this.b;
-        eiig.r(list.size() == 1, "getDeviceState: deviceStates.size() must be 1, but is %s", list.size());
+        ekvl.s(list.size() == 1, "getDeviceState: deviceStates.size() must be 1, but is %s", list.size());
         return (DeviceState) list.get(0);
     }
 
-    public final EmergencyInfo g(eiih eiihVar) {
-        return new EmergencyInfo(this.a, eivv.d(this.b, eiihVar), this.c);
+    public final EmergencyInfo g(ekvm ekvmVar) {
+        return new EmergencyInfo(this.a, elja.d(this.b, ekvmVar), this.c);
     }
 
-    public final EmergencyInfo h(pkg pkgVar) {
+    public final EmergencyInfo h(rdk rdkVar) {
         ActivationInfo activationInfo = this.a;
-        return new EmergencyInfo(new ActivationInfo(activationInfo.a, activationInfo.b, activationInfo.c, activationInfo.d, activationInfo.e, activationInfo.f, activationInfo.g, activationInfo.h, activationInfo.i, activationInfo.j, pkgVar.a(), activationInfo.l), this.b, this.c);
+        return new EmergencyInfo(new ActivationInfo(activationInfo.a, activationInfo.b, activationInfo.c, activationInfo.d, activationInfo.e, activationInfo.f, activationInfo.g, activationInfo.h, activationInfo.i, activationInfo.j, rdkVar.a(), activationInfo.l), this.b, this.c);
     }
 
     public final EmergencyInfo i(String str) {
@@ -81,11 +81,11 @@ public class EmergencyInfo extends AbstractSafeParcelable {
                 String str3 = deviceState.d;
                 String str4 = deviceState.e;
                 boolean z = deviceState.g;
-                DeviceState a = dfyj.a(i, i2, str2, str3, str4, str, false, deviceState.h, deviceState.i, deviceState.j, deviceState.k, deviceState.l, deviceState.m, deviceState.n, deviceState.o, deviceState.p, eiid.i(deviceState.q));
-                if (!fsnb.G()) {
+                DeviceState a = dijo.a(i, i2, str2, str3, str4, str, false, deviceState.h, deviceState.i, deviceState.j, deviceState.k, deviceState.l, deviceState.m, deviceState.n, deviceState.o, deviceState.p, ekvi.i(deviceState.q));
+                if (!fvik.G()) {
                     a = a.a(TelephoneNumber.b(str));
                 }
-                return new EmergencyInfo(this.a, eitj.l(a), this.c);
+                return new EmergencyInfo(this.a, elgo.l(a), this.c);
             }
         }
         return this;
@@ -96,26 +96,26 @@ public class EmergencyInfo extends AbstractSafeParcelable {
         return new EmergencyInfo(activationInfo.a(j, activationInfo.h, j2), this.b, this.c);
     }
 
-    public final EmergencyInfo k(azlv azlvVar) {
-        azlv a = this.c.a();
-        fecj fecjVar = (fecj) a.iB(5, null);
-        fecjVar.X(a);
-        azlz azlzVar = azlvVar.d;
-        if (azlzVar == null) {
-            azlzVar = azlz.a;
+    public final EmergencyInfo k(bbpr bbprVar) {
+        bbpr a = this.c.a();
+        fgrc fgrcVar = (fgrc) a.iQ(5, null);
+        fgrcVar.X(a);
+        bbpv bbpvVar = bbprVar.d;
+        if (bbpvVar == null) {
+            bbpvVar = bbpv.a;
         }
-        if (azlzVar.b.size() > 0) {
-            if (!fecjVar.b.L()) {
-                fecjVar.U();
+        if (bbpvVar.b.size() > 0) {
+            if (!fgrcVar.b.L()) {
+                fgrcVar.U();
             }
-            azlv azlvVar2 = (azlv) fecjVar.b;
-            azlvVar2.d = null;
-            azlvVar2.b &= -3;
+            bbpr bbprVar2 = (bbpr) fgrcVar.b;
+            bbprVar2.d = null;
+            bbprVar2.b &= -3;
         }
         List list = this.b;
         ActivationInfo activationInfo = this.a;
-        fecjVar.X(azlvVar);
-        return new EmergencyInfo(activationInfo, list, new AeiState(((azlv) fecjVar.Q()).r()));
+        fgrcVar.X(bbprVar);
+        return new EmergencyInfo(activationInfo, list, new AeiState(((bbpr) fgrcVar.Q()).r()));
     }
 
     public final EmergencyInfo l(int i, String str) {
@@ -124,7 +124,7 @@ public class EmergencyInfo extends AbstractSafeParcelable {
         }
         TelephoneNumber b = TelephoneNumber.b(str);
         List<DeviceState> list = this.b;
-        eite e = eitj.e(list.size());
+        elgj e = elgo.e(list.size());
         for (DeviceState deviceState : list) {
             if (deviceState.b == i) {
                 e.i(deviceState.a(b));
@@ -160,8 +160,8 @@ public class EmergencyInfo extends AbstractSafeParcelable {
         sb.append(":");
         sb.append(m());
         sb.append(":");
-        sb.append(eivv.j(this.b, new eiho() { // from class: dfyl
-            @Override // defpackage.eiho
+        sb.append(elja.j(this.b, new ekut() { // from class: dijq
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 return ((DeviceState) obj).h();
             }
@@ -172,10 +172,10 @@ public class EmergencyInfo extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         ActivationInfo activationInfo = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 9, activationInfo, i, false);
-        arxc.y(parcel, 10, this.b, false);
-        arxc.t(parcel, 11, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 9, activationInfo, i, false);
+        atzr.y(parcel, 10, this.b, false);
+        atzr.t(parcel, 11, this.c, i, false);
+        atzr.c(parcel, a);
     }
 }

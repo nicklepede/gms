@@ -3,13 +3,13 @@ package com.google.android.gms.instantapps.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bogj;
+import defpackage.atzr;
+import defpackage.bqnz;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class RoutingOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bogj();
+    public static final Parcelable.Creator CREATOR = new bqnz();
     public boolean a;
     public String b;
     public boolean c;
@@ -23,15 +23,15 @@ public class RoutingOptions extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.e(parcel, 6, this.f);
-        arxc.e(parcel, 7, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.e(parcel, 6, this.f);
+        atzr.e(parcel, 7, this.g);
+        atzr.c(parcel, a);
     }
 
     public RoutingOptions(boolean z, String str, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6) {

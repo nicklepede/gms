@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Base64;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.cvyv;
-import defpackage.cwam;
+import defpackage.cyis;
+import defpackage.cykj;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class Configurations extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cvyv();
+    public static final Parcelable.Creator CREATOR = new cyis();
     public final String a;
     public final byte[] b;
     public final String c;
@@ -38,7 +38,7 @@ public class Configurations extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof Configurations) {
             Configurations configurations = (Configurations) obj;
-            if (cwam.a(this.a, configurations.a) && cwam.a(this.c, configurations.c) && this.e.equals(configurations.e) && this.f == configurations.f && Arrays.equals(this.b, configurations.b) && this.g == configurations.g) {
+            if (cykj.a(this.a, configurations.a) && cykj.a(this.c, configurations.c) && this.e.equals(configurations.e) && this.f == configurations.f && Arrays.equals(this.b, configurations.b) && this.g == configurations.g) {
                 return true;
             }
         }
@@ -73,6 +73,6 @@ public class Configurations extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cvyv.a(this, parcel, i);
+        cyis.a(this, parcel, i);
     }
 }

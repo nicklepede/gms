@@ -5,19 +5,19 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmxr;
-import defpackage.cmxt;
-import defpackage.cnba;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpfz;
+import defpackage.cpgb;
+import defpackage.cpji;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ProviderStartAdvertisingParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cnba();
+    public static final Parcelable.Creator CREATOR = new cpji();
     public String a;
-    public cmxt b;
+    public cpgb b;
 
     public ProviderStartAdvertisingParams() {
     }
@@ -28,7 +28,7 @@ public final class ProviderStartAdvertisingParams extends AbstractSafeParcelable
         }
         if (obj instanceof ProviderStartAdvertisingParams) {
             ProviderStartAdvertisingParams providerStartAdvertisingParams = (ProviderStartAdvertisingParams) obj;
-            if (arwb.b(this.a, providerStartAdvertisingParams.a) && arwb.b(this.b, providerStartAdvertisingParams.b)) {
+            if (atyq.b(this.a, providerStartAdvertisingParams.a) && atyq.b(this.b, providerStartAdvertisingParams.b)) {
                 return true;
             }
         }
@@ -41,21 +41,21 @@ public final class ProviderStartAdvertisingParams extends AbstractSafeParcelable
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.c(parcel, a);
     }
 
     public ProviderStartAdvertisingParams(String str, IBinder iBinder) {
-        cmxt cmxrVar;
+        cpgb cpfzVar;
         if (iBinder == null) {
-            cmxrVar = null;
+            cpfzVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.ITransferUpdateCallback");
-            cmxrVar = queryLocalInterface instanceof cmxt ? (cmxt) queryLocalInterface : new cmxr(iBinder);
+            cpfzVar = queryLocalInterface instanceof cpgb ? (cpgb) queryLocalInterface : new cpfz(iBinder);
         }
         this.a = str;
-        this.b = cmxrVar;
+        this.b = cpfzVar;
     }
 }

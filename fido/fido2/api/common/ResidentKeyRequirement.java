@@ -3,16 +3,16 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.fido.fido2.api.common.ResidentKeyRequirement;
-import defpackage.bbuf;
+import defpackage.bdxw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public enum ResidentKeyRequirement implements Parcelable {
     RESIDENT_KEY_DISCOURAGED("discouraged"),
     RESIDENT_KEY_PREFERRED("preferred"),
     RESIDENT_KEY_REQUIRED("required");
 
-    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bbue
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bdxv
         @Override // android.os.Parcelable.Creator
         public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
             String readString = parcel.readString();
@@ -21,7 +21,7 @@ public enum ResidentKeyRequirement implements Parcelable {
             }
             try {
                 return ResidentKeyRequirement.a(readString);
-            } catch (bbuf e2) {
+            } catch (bdxw e2) {
                 throw new RuntimeException(e2);
             }
         }
@@ -43,7 +43,7 @@ public enum ResidentKeyRequirement implements Parcelable {
                 return residentKeyRequirement;
             }
         }
-        throw new bbuf(str);
+        throw new bdxw(str);
     }
 
     @Override // android.os.Parcelable

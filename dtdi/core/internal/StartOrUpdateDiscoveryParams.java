@@ -6,22 +6,22 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.DeviceFilter;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ayww;
-import defpackage.ayxl;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bbaq;
+import defpackage.bbbf;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class StartOrUpdateDiscoveryParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayxl();
+    public static final Parcelable.Creator CREATOR = new bbbf();
     public DeviceFilter[] a;
-    public arbp b;
+    public atee b;
     public int c;
-    public ayww d;
+    public bbaq d;
 
     private StartOrUpdateDiscoveryParams() {
     }
@@ -32,7 +32,7 @@ public final class StartOrUpdateDiscoveryParams extends AbstractSafeParcelable {
         }
         if (obj instanceof StartOrUpdateDiscoveryParams) {
             StartOrUpdateDiscoveryParams startOrUpdateDiscoveryParams = (StartOrUpdateDiscoveryParams) obj;
-            if (Arrays.equals(this.a, startOrUpdateDiscoveryParams.a) && arwb.b(this.d, startOrUpdateDiscoveryParams.d) && arwb.b(this.b, startOrUpdateDiscoveryParams.b) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(startOrUpdateDiscoveryParams.c))) {
+            if (Arrays.equals(this.a, startOrUpdateDiscoveryParams.a) && atyq.b(this.d, startOrUpdateDiscoveryParams.d) && atyq.b(this.b, startOrUpdateDiscoveryParams.b) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(startOrUpdateDiscoveryParams.c))) {
                 return true;
             }
         }
@@ -45,30 +45,30 @@ public final class StartOrUpdateDiscoveryParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.J(parcel, 1, this.a, i);
-        arxc.D(parcel, 2, this.d.a);
-        arxc.D(parcel, 3, this.b.asBinder());
-        arxc.o(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.J(parcel, 1, this.a, i);
+        atzr.D(parcel, 2, this.d.a);
+        atzr.D(parcel, 3, this.b.asBinder());
+        atzr.o(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 
     public StartOrUpdateDiscoveryParams(DeviceFilter[] deviceFilterArr, IBinder iBinder, IBinder iBinder2, int i) {
-        ayww aywwVar;
-        arbp arbpVar = null;
+        bbaq bbaqVar;
+        atee ateeVar = null;
         if (iBinder == null) {
-            aywwVar = null;
+            bbaqVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.dtdi.core.internal.IOnScanResultListener");
-            aywwVar = queryLocalInterface instanceof ayww ? (ayww) queryLocalInterface : new ayww(iBinder);
+            bbaqVar = queryLocalInterface instanceof bbaq ? (bbaq) queryLocalInterface : new bbaq(iBinder);
         }
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbpVar = queryLocalInterface2 instanceof arbp ? (arbp) queryLocalInterface2 : new arbn(iBinder2);
+            ateeVar = queryLocalInterface2 instanceof atee ? (atee) queryLocalInterface2 : new atec(iBinder2);
         }
         this.a = deviceFilterArr;
-        this.d = aywwVar;
-        this.b = arbpVar;
+        this.d = bbaqVar;
+        this.b = ateeVar;
         this.c = i;
     }
 }

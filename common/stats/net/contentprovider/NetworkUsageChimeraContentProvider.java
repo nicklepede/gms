@@ -8,22 +8,22 @@ import android.database.sqlite.SQLiteException;
 import android.net.Uri;
 import com.google.android.chimera.ContentProvider;
 import defpackage.a;
-import defpackage.asej;
-import defpackage.asiw;
-import defpackage.askl;
-import defpackage.askm;
-import defpackage.asot;
-import defpackage.aspb;
-import defpackage.asqh;
-import defpackage.ejhf;
+import defpackage.auid;
+import defpackage.aumq;
+import defpackage.auof;
+import defpackage.auog;
+import defpackage.ausn;
+import defpackage.ausv;
+import defpackage.auub;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class NetworkUsageChimeraContentProvider extends ContentProvider {
-    private static final asot a = asot.b("NetworkUsageCP", asej.CORE);
+    private static final ausn a = ausn.b("NetworkUsageCP", auid.CORE);
     private static final Uri b;
     private static final UriMatcher c;
-    private aspb d;
+    private ausv d;
 
     static {
         Uri parse = Uri.parse("content://com.google.android.gms.common.stats.net.contentprovider");
@@ -76,9 +76,9 @@ public class NetworkUsageChimeraContentProvider extends ContentProvider {
         try {
             if (match != 10) {
                 if (match != 11) {
-                    throw new IllegalArgumentException(String.format(a.L(uri, "Unknown URI: "), new Object[0]));
+                    throw new IllegalArgumentException(String.format(a.N(uri, "Unknown URI: "), new Object[0]));
                 }
-                if (asqh.a() && ((Boolean) asiw.a.b()).booleanValue()) {
+                if (auub.a() && ((Boolean) aumq.a.b()).booleanValue()) {
                     str2 = "network_raw_entry_androidN";
                     writableDatabase = this.d.getWritableDatabase();
                 }
@@ -90,7 +90,7 @@ public class NetworkUsageChimeraContentProvider extends ContentProvider {
             getContext().getContentResolver().notifyChange(uri, null);
             return delete;
         } catch (SQLiteException e) {
-            ((ejhf) ((ejhf) a.i()).s(e)).x("ContentProvider delete exception.");
+            ((eluo) ((eluo) a.i()).s(e)).x("ContentProvider delete exception.");
             return -1;
         }
     }
@@ -102,7 +102,7 @@ public class NetworkUsageChimeraContentProvider extends ContentProvider {
 
     @Override // com.google.android.chimera.ContentProvider
     public final Uri insert(Uri uri, ContentValues contentValues) {
-        if (asqh.a() && ((Boolean) asiw.a.b()).booleanValue()) {
+        if (auub.a() && ((Boolean) aumq.a.b()).booleanValue()) {
             return null;
         }
         if (c.match(uri) != 10) {
@@ -113,18 +113,18 @@ public class NetworkUsageChimeraContentProvider extends ContentProvider {
             getContext().getContentResolver().notifyChange(uri, null);
             return Uri.parse("networkrawreport/" + insert);
         } catch (SQLiteException e) {
-            ((ejhf) ((ejhf) a.i()).s(e)).x("ContentProvider insert exception.");
+            ((eluo) ((eluo) a.i()).s(e)).x("ContentProvider insert exception.");
             return null;
         }
     }
 
     @Override // com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
-        if (asqh.a() && ((Boolean) asiw.a.b()).booleanValue()) {
-            this.d = new askl(getContext());
+        if (auub.a() && ((Boolean) aumq.a.b()).booleanValue()) {
+            this.d = new auof(getContext());
             return true;
         }
-        this.d = new askm(getContext());
+        this.d = new auog(getContext());
         return true;
     }
 
@@ -138,7 +138,7 @@ public class NetworkUsageChimeraContentProvider extends ContentProvider {
                 return query;
             }
             if (match == 11) {
-                if (asqh.a() && ((Boolean) asiw.a.b()).booleanValue()) {
+                if (auub.a() && ((Boolean) aumq.a.b()).booleanValue()) {
                     Cursor query2 = this.d.getWritableDatabase().query("network_raw_entry_androidN", strArr, str, strArr2, null, null, str2);
                     query2.setNotificationUri(getContext().getContentResolver(), uri);
                     return query2;
@@ -156,7 +156,7 @@ public class NetworkUsageChimeraContentProvider extends ContentProvider {
                 return rawQuery2;
             }
             if (match == 31) {
-                if (asqh.a() && ((Boolean) asiw.a.b()).booleanValue()) {
+                if (auub.a() && ((Boolean) aumq.a.b()).booleanValue()) {
                     Cursor rawQuery3 = this.d.getWritableDatabase().rawQuery("SELECT MAX(_id) AS _id, tag_androidN, uid_androidN, device_state_androidN, transport_type_androidN, MAX(datetime_updated_androidN) AS datetime_updated_androidN, from_datetime_updated_androidN, to_datetime_updated_androidN, rxbytes_androidN, txbytes_androidN, rxpackets_androidN, txpackets_androidN, TOTAL(rxbytes_androidN + txbytes_androidN) AS total_bytes_androidN, rxpackets_androidN, txpackets_androidN FROM network_raw_entry_androidN WHERE from_datetime_updated_androidN >= ? AND to_datetime_updated_androidN <= ? GROUP BY tag_androidN, uid_androidN, device_state_androidN, transport_type_androidN ORDER BY total_bytes_androidN DESC , tag_androidN DESC", strArr2);
                     rawQuery3.setNotificationUri(getContext().getContentResolver(), uri);
                     return rawQuery3;
@@ -169,7 +169,7 @@ public class NetworkUsageChimeraContentProvider extends ContentProvider {
                 return rawQuery4;
             }
             if (match == 41) {
-                if (asqh.a() && ((Boolean) asiw.a.b()).booleanValue()) {
+                if (auub.a() && ((Boolean) aumq.a.b()).booleanValue()) {
                     Cursor rawQuery5 = this.d.getWritableDatabase().rawQuery("SELECT MAX(_id) AS _id, transport_type_androidN, tag_androidN, uid_androidN, device_state_androidN, MAX(datetime_updated_androidN) AS datetime_updated_androidN, from_datetime_updated_androidN, to_datetime_updated_androidN, rxbytes_androidN, txbytes_androidN, TOTAL(rxbytes_androidN + txbytes_androidN) AS total_bytes_androidN, rxpackets_androidN, txpackets_androidN FROM network_raw_entry_androidN WHERE from_datetime_updated_androidN >= ? AND to_datetime_updated_androidN <= ? AND transport_type_androidN = ? AND tag_androidN != 0 GROUP BY transport_type_androidN, tag_androidN ORDER BY total_bytes_androidN DESC , tag_androidN DESC", strArr2);
                     rawQuery5.setNotificationUri(getContext().getContentResolver(), uri);
                     return rawQuery5;
@@ -182,23 +182,23 @@ public class NetworkUsageChimeraContentProvider extends ContentProvider {
                 return rawQuery6;
             }
             if (match != 71) {
-                throw new IllegalArgumentException(String.format(a.L(uri, "Unknown URI: "), new Object[0]));
+                throw new IllegalArgumentException(String.format(a.N(uri, "Unknown URI: "), new Object[0]));
             }
-            if (asqh.a() && ((Boolean) asiw.a.b()).booleanValue()) {
+            if (auub.a() && ((Boolean) aumq.a.b()).booleanValue()) {
                 Cursor rawQuery7 = this.d.getWritableDatabase().rawQuery("SELECT MAX(_id) AS _id, tag_androidN, uid_androidN, device_state_androidN, transport_type_androidN, MAX(datetime_updated_androidN) AS datetime_updated_androidN, from_datetime_updated_androidN, to_datetime_updated_androidN, COUNT(*) AS row_group_count_AndroidN, SUM(rxbytes_androidN) AS rxbytes_androidN, SUM(rxpackets_androidN) AS rxpackets_androidN, SUM(txbytes_androidN) AS txbytes_androidN, SUM(txpackets_androidN) AS txpackets_androidN FROM network_raw_entry_androidN WHERE from_datetime_updated_androidN >= ? AND to_datetime_updated_androidN <= ? GROUP BY tag_androidN, uid_androidN, device_state_androidN, transport_type_androidN ORDER BY datetime_updated_androidN DESC ", strArr2);
                 rawQuery7.setNotificationUri(getContext().getContentResolver(), uri);
                 return rawQuery7;
             }
             return null;
         } catch (SQLiteException e) {
-            ((ejhf) ((ejhf) a.i()).s(e)).x("ContentProvider query exception.");
+            ((eluo) ((eluo) a.i()).s(e)).x("ContentProvider query exception.");
             return null;
         }
     }
 
     @Override // com.google.android.chimera.ContentProvider
     public final int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
-        if (asqh.a() && ((Boolean) asiw.a.b()).booleanValue()) {
+        if (auub.a() && ((Boolean) aumq.a.b()).booleanValue()) {
             return -1;
         }
         if (c.match(uri) != 10) {
@@ -209,7 +209,7 @@ public class NetworkUsageChimeraContentProvider extends ContentProvider {
             getContext().getContentResolver().notifyChange(uri, null);
             return update;
         } catch (SQLiteException e) {
-            ((ejhf) ((ejhf) a.i()).s(e)).x("ContentProvider update exception.");
+            ((eluo) ((eluo) a.i()).s(e)).x("ContentProvider update exception.");
             return -1;
         }
     }

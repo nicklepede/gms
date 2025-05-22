@@ -5,9 +5,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.preference.Preference;
 import com.google.android.gms.R;
-import defpackage.kmp;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class TrustedDevicesFragment$DisabledViewPreference extends Preference {
     public boolean a;
@@ -19,13 +19,13 @@ public final class TrustedDevicesFragment$DisabledViewPreference extends Prefere
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
         boolean z = false;
         if (Z() && this.a) {
             z = true;
         }
-        k(kmpVar.a, z);
+        k(mfaVar.a, z);
     }
 
     final void k(View view, boolean z) {

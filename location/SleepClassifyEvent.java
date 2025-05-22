@@ -3,15 +3,15 @@ package com.google.android.gms.location;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bziz;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.cbrq;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class SleepClassifyEvent extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bziz();
+    public static final Parcelable.Creator CREATOR = new cbrq();
     public final int a;
     public final int b;
     public final int c;
@@ -55,18 +55,18 @@ public class SleepClassifyEvent extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        arwm.s(parcel);
+        atzb.s(parcel);
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.o(parcel, 7, this.g);
-        arxc.e(parcel, 8, this.h);
-        arxc.o(parcel, 9, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.o(parcel, 7, this.g);
+        atzr.e(parcel, 8, this.h);
+        atzr.o(parcel, 9, this.i);
+        atzr.c(parcel, a);
     }
 }

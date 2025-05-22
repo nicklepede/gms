@@ -4,56 +4,56 @@ import android.accounts.Account;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.accountsettings.mg.poc.model.repository.RepositoryDatabase;
-import defpackage.arxo;
-import defpackage.asnd;
-import defpackage.fvaq;
-import defpackage.ksa;
-import defpackage.ksi;
-import defpackage.rtk;
-import defpackage.rwx;
-import defpackage.rxg;
-import defpackage.swz;
-import defpackage.szu;
+import defpackage.auad;
+import defpackage.auqx;
+import defpackage.fxwo;
+import defpackage.mkv;
+import defpackage.mld;
+import defpackage.tmt;
+import defpackage.tqh;
+import defpackage.tqq;
+import defpackage.usx;
+import defpackage.uvs;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AccountChangedIntentOperation extends szu {
-    static final arxo a = new arxo("AccountSettings", "AcctChgOp");
+public class AccountChangedIntentOperation extends uvs {
+    static final auad a = new auad("AccountSettings", "AcctChgOp");
     public Context b;
     public RepositoryDatabase c;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        ((swz) rtk.a(swz.class, this.d)).a(this);
+        ((usx) tmt.a(usx.class, this.d)).a(this);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        arxo arxoVar = a;
-        arxoVar.j("Handle intent-operations: %s", intent);
+        auad auadVar = a;
+        auadVar.j("Handle intent-operations: %s", intent);
         if (intent == null || !"com.google.android.gms.auth.GOOGLE_ACCOUNT_CHANGE".equals(intent.getAction())) {
             return;
         }
-        arxoVar.j("Remove data for obsolete accounts", new Object[0]);
+        auadVar.j("Remove data for obsolete accounts", new Object[0]);
         final ArrayList arrayList = new ArrayList();
         Context context = this.b;
-        Iterator it = asnd.h(context, context.getPackageName()).iterator();
+        Iterator it = auqx.h(context, context.getPackageName()).iterator();
         while (it.hasNext()) {
             arrayList.add(((Account) it.next()).name);
         }
         RepositoryDatabase repositoryDatabase = this.c;
-        rwx x = repositoryDatabase.x();
+        tqh x = repositoryDatabase.x();
         StringBuilder sb = new StringBuilder();
         sb.append("DELETE FROM resource_info WHERE accountName NOT IN (");
-        ksi.a(sb, arrayList.size());
+        mld.a(sb, arrayList.size());
         sb.append(")");
         final String sb2 = sb.toString();
-        ksa.a(((rxg) x).a, false, true, new fvaq() { // from class: rxb
-            @Override // defpackage.fvaq
+        mkv.a(((tqq) x).a, false, true, new fxwo() { // from class: tql
+            @Override // defpackage.fxwo
             public final Object a(Object obj) {
-                kri a2 = ((kqz) obj).a(sb2);
+                mjx a2 = ((mjo) obj).a(sb2);
                 try {
                     int i = 1;
                     for (String str : arrayList) {

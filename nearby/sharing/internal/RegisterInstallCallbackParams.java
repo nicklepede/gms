@@ -5,22 +5,22 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmwk;
-import defpackage.cmwm;
-import defpackage.cnbe;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpes;
+import defpackage.cpeu;
+import defpackage.cpjm;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class RegisterInstallCallbackParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cnbe();
-    public cmwm a;
+    public static final Parcelable.Creator CREATOR = new cpjm();
+    public cpeu a;
     public int b;
-    public arbp c;
+    public atee c;
 
     public RegisterInstallCallbackParams() {
     }
@@ -31,7 +31,7 @@ public final class RegisterInstallCallbackParams extends AbstractSafeParcelable 
         }
         if (obj instanceof RegisterInstallCallbackParams) {
             RegisterInstallCallbackParams registerInstallCallbackParams = (RegisterInstallCallbackParams) obj;
-            if (arwb.b(this.a, registerInstallCallbackParams.a) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(registerInstallCallbackParams.b)) && arwb.b(this.c, registerInstallCallbackParams.c)) {
+            if (atyq.b(this.a, registerInstallCallbackParams.a) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(registerInstallCallbackParams.b)) && atyq.b(this.c, registerInstallCallbackParams.c)) {
                 return true;
             }
         }
@@ -44,28 +44,28 @@ public final class RegisterInstallCallbackParams extends AbstractSafeParcelable 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.o(parcel, 2, this.b);
-        arxc.D(parcel, 3, this.c.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.o(parcel, 2, this.b);
+        atzr.D(parcel, 3, this.c.asBinder());
+        atzr.c(parcel, a);
     }
 
     public RegisterInstallCallbackParams(IBinder iBinder, int i, IBinder iBinder2) {
-        cmwm cmwkVar;
-        arbp arbpVar = null;
+        cpeu cpesVar;
+        atee ateeVar = null;
         if (iBinder == null) {
-            cmwkVar = null;
+            cpesVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IInstallUpdateCallback");
-            cmwkVar = queryLocalInterface instanceof cmwm ? (cmwm) queryLocalInterface : new cmwk(iBinder);
+            cpesVar = queryLocalInterface instanceof cpeu ? (cpeu) queryLocalInterface : new cpes(iBinder);
         }
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbpVar = queryLocalInterface2 instanceof arbp ? (arbp) queryLocalInterface2 : new arbn(iBinder2);
+            ateeVar = queryLocalInterface2 instanceof atee ? (atee) queryLocalInterface2 : new atec(iBinder2);
         }
-        this.a = cmwkVar;
+        this.a = cpesVar;
         this.b = i;
-        this.c = arbpVar;
+        this.c = ateeVar;
     }
 }

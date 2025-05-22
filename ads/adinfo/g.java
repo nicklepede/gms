@@ -1,23 +1,23 @@
 package com.google.android.gms.ads.adinfo;
 
 import android.content.Context;
-import defpackage.enss;
-import defpackage.otg;
+import defpackage.eqgl;
+import defpackage.qmj;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class g {
     public final Context a;
-    public otg b;
+    public qmj b;
 
     public g(Context context) {
         this.b = null;
         this.a = context;
-        this.b = new otg(context);
+        this.b = new qmj(context);
     }
 
-    public static final enss a(final Context context, final int i) {
+    public static final eqgl a(final Context context, final int i) {
         return com.google.android.gms.ads.internal.util.future.e.a.submit(new Callable() { // from class: com.google.android.gms.ads.adinfo.c
             @Override // java.util.concurrent.Callable
             public final Object call() {

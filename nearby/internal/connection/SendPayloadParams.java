@@ -8,18 +8,18 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.ConnectionsDevice;
 import com.google.android.gms.nearby.connection.v3.dct.DctDevice;
 import com.google.android.gms.nearby.presence.PresenceDevice;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cjbn;
-import defpackage.cjbp;
-import defpackage.cjds;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cljs;
+import defpackage.clju;
+import defpackage.cllx;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class SendPayloadParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjds();
-    public cjbp a;
+    public static final Parcelable.Creator CREATOR = new cllx();
+    public clju a;
     public String[] b;
     public ParcelablePayload c;
     public boolean d;
@@ -38,7 +38,7 @@ public final class SendPayloadParams extends AbstractSafeParcelable {
         }
         if (obj instanceof SendPayloadParams) {
             SendPayloadParams sendPayloadParams = (SendPayloadParams) obj;
-            if (arwb.b(this.a, sendPayloadParams.a) && Arrays.equals(this.b, sendPayloadParams.b) && arwb.b(this.c, sendPayloadParams.c) && arwb.b(Boolean.valueOf(this.d), Boolean.valueOf(sendPayloadParams.d)) && arwb.b(Integer.valueOf(this.e), Integer.valueOf(sendPayloadParams.e)) && arwb.b(this.f, sendPayloadParams.f) && arwb.b(this.g, sendPayloadParams.g) && arwb.b(this.h, sendPayloadParams.h)) {
+            if (atyq.b(this.a, sendPayloadParams.a) && Arrays.equals(this.b, sendPayloadParams.b) && atyq.b(this.c, sendPayloadParams.c) && atyq.b(Boolean.valueOf(this.d), Boolean.valueOf(sendPayloadParams.d)) && atyq.b(Integer.valueOf(this.e), Integer.valueOf(sendPayloadParams.e)) && atyq.b(this.f, sendPayloadParams.f) && atyq.b(this.g, sendPayloadParams.g) && atyq.b(this.h, sendPayloadParams.h)) {
                 return true;
             }
         }
@@ -51,28 +51,28 @@ public final class SendPayloadParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        cjbp cjbpVar = this.a;
-        arxc.D(parcel, 1, cjbpVar == null ? null : cjbpVar.asBinder());
-        arxc.w(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.e(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.t(parcel, 8, this.h, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        clju cljuVar = this.a;
+        atzr.D(parcel, 1, cljuVar == null ? null : cljuVar.asBinder());
+        atzr.w(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.e(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.t(parcel, 8, this.h, i, false);
+        atzr.c(parcel, a);
     }
 
     public SendPayloadParams(IBinder iBinder, String[] strArr, ParcelablePayload parcelablePayload, boolean z, int i, PresenceDevice presenceDevice, ConnectionsDevice connectionsDevice, DctDevice dctDevice) {
-        cjbp cjbnVar;
+        clju cljsVar;
         if (iBinder == null) {
-            cjbnVar = null;
+            cljsVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IResultListener");
-            cjbnVar = queryLocalInterface instanceof cjbp ? (cjbp) queryLocalInterface : new cjbn(iBinder);
+            cljsVar = queryLocalInterface instanceof clju ? (clju) queryLocalInterface : new cljs(iBinder);
         }
-        this.a = cjbnVar;
+        this.a = cljsVar;
         this.b = strArr;
         this.c = parcelablePayload;
         this.d = z;

@@ -3,27 +3,27 @@ package com.google.android.gms.accountsettings.widget;
 import android.content.Context;
 import android.util.AttributeSet;
 import com.google.android.material.tabs.TabLayout;
-import defpackage.ecaa;
-import defpackage.taj;
-import defpackage.tak;
+import defpackage.eemp;
+import defpackage.uwi;
+import defpackage.uwj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class PagerTabLayout extends TabLayout {
-    public tak a;
-    public taj b;
+    public uwj a;
+    public uwi b;
 
     public PagerTabLayout(Context context) {
         super(context);
     }
 
     @Override // com.google.android.material.tabs.TabLayout
-    public final void a(ecaa ecaaVar, int i, boolean z) {
-        tak takVar = this.a;
-        if (takVar != null) {
-            takVar.a(ecaaVar, i);
+    public final void a(eemp eempVar, int i, boolean z) {
+        uwj uwjVar = this.a;
+        if (uwjVar != null) {
+            uwjVar.a(eempVar, i);
         }
-        super.a(ecaaVar, i, z);
+        super.a(eempVar, i, z);
     }
 
     @Override // android.view.View

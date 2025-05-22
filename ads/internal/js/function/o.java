@@ -3,16 +3,16 @@ package com.google.android.gms.ads.internal.js.function;
 import com.google.android.gms.ads.internal.js.ab;
 import com.google.android.gms.ads.internal.js.ag;
 import com.google.android.gms.ads.internal.js.ah;
-import defpackage.enqc;
-import defpackage.enss;
+import defpackage.eqdv;
+import defpackage.eqgl;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class o implements enqc {
+public final class o implements eqdv {
     public final c a;
     public final d b;
     public final String c;
@@ -25,12 +25,12 @@ public final class o implements enqc {
         this.a = cVar;
     }
 
-    @Override // defpackage.enqc
-    public final enss a(Object obj) {
+    @Override // defpackage.eqdv
+    public final eqgl a(Object obj) {
         return b(obj);
     }
 
-    public final enss b(Object obj) {
+    public final eqgl b(Object obj) {
         ab a;
         com.google.android.gms.ads.internal.util.future.i iVar = new com.google.android.gms.ads.internal.util.future.i();
         final ah ahVar = this.d;

@@ -3,17 +3,17 @@ package com.google.android.gms.tapandpay.firstparty;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dewo;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dhhs;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class BadgeInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dewo();
+    public static final Parcelable.Creator CREATOR = new dhhs();
     final String a;
     final byte[] b;
     final int c;
@@ -33,7 +33,7 @@ public final class BadgeInfo extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof BadgeInfo) {
             BadgeInfo badgeInfo = (BadgeInfo) obj;
-            if (this.c == badgeInfo.c && arwb.b(this.a, badgeInfo.a) && Arrays.equals(this.b, badgeInfo.b) && arwb.b(this.d, badgeInfo.d) && arwb.b(this.e, badgeInfo.e) && arwb.b(this.f, badgeInfo.f)) {
+            if (this.c == badgeInfo.c && atyq.b(this.a, badgeInfo.a) && Arrays.equals(this.b, badgeInfo.b) && atyq.b(this.d, badgeInfo.d) && atyq.b(this.e, badgeInfo.e) && atyq.b(this.f, badgeInfo.f)) {
                 return true;
             }
         }
@@ -46,26 +46,26 @@ public final class BadgeInfo extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("clientTokenId", this.a, arrayList);
+        atyp.b("clientTokenId", this.a, arrayList);
         byte[] bArr = this.b;
-        arwa.b("serverToken", bArr == null ? null : Arrays.toString(bArr), arrayList);
-        arwa.b("cardNetwork", Integer.valueOf(this.c), arrayList);
-        arwa.b("tokenStatus", this.d, arrayList);
-        arwa.b("tokenLastDigits", this.e, arrayList);
-        arwa.b("transactionInfo", this.f, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("serverToken", bArr == null ? null : Arrays.toString(bArr), arrayList);
+        atyp.b("cardNetwork", Integer.valueOf(this.c), arrayList);
+        atyp.b("tokenStatus", this.d, arrayList);
+        atyp.b("tokenLastDigits", this.e, arrayList);
+        atyp.b("transactionInfo", this.f, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.i(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.i(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.c(parcel, a);
     }
 }

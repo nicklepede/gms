@@ -7,10 +7,10 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import com.google.android.gms.dynamic.ObjectWrapper;
 import com.google.android.gms.dynamite.descriptors.com.google.android.gms.ads.dynamite.ModuleDescriptor;
-import defpackage.azhu;
-import defpackage.oto;
+import defpackage.bblq;
+import defpackage.qmr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class r extends t {
     final /* synthetic */ Context a;
@@ -35,7 +35,7 @@ public final class r extends t {
     public final /* bridge */ /* synthetic */ Object b() {
         Context context = this.a;
         com.google.android.gms.ads.internal.config.p.c(context);
-        if (((Boolean) com.google.android.gms.ads.internal.config.p.bt.g()).booleanValue()) {
+        if (((Boolean) com.google.android.gms.ads.internal.config.p.bu.g()).booleanValue()) {
             try {
                 IBinder newAdLoaderBuilder = ((ak) com.google.android.gms.ads.internal.util.client.l.b(context, "com.google.android.gms.ads.ChimeraAdLoaderBuilderCreatorImpl", new com.google.android.gms.ads.internal.util.client.j() { // from class: com.google.android.gms.ads.internal.client.q
                     /* JADX WARN: Multi-variable type inference failed */
@@ -64,7 +64,7 @@ public final class r extends t {
                 }
                 IInterface queryLocalInterface2 = newAdLoaderBuilder2.queryLocalInterface("com.google.android.gms.ads.internal.client.IAdLoaderBuilder");
                 return queryLocalInterface2 instanceof ah ? (ah) queryLocalInterface2 : new af(newAdLoaderBuilder2);
-            } catch (RemoteException | azhu e2) {
+            } catch (RemoteException | bblq e2) {
                 com.google.android.gms.ads.internal.util.client.h.m("Could not create remote builder for AdLoader.", e2);
             }
         }
@@ -75,20 +75,20 @@ public final class r extends t {
     public final /* bridge */ /* synthetic */ Object c(ay ayVar) {
         ah afVar;
         ObjectWrapper objectWrapper = new ObjectWrapper(this.a);
-        Parcel fr = ayVar.fr();
-        oto.g(fr, objectWrapper);
-        fr.writeString(this.b);
-        oto.g(fr, this.c);
-        fr.writeInt(ModuleDescriptor.MODULE_VERSION);
-        Parcel fs = ayVar.fs(3, fr);
-        IBinder readStrongBinder = fs.readStrongBinder();
+        Parcel fE = ayVar.fE();
+        qmr.g(fE, objectWrapper);
+        fE.writeString(this.b);
+        qmr.g(fE, this.c);
+        fE.writeInt(ModuleDescriptor.MODULE_VERSION);
+        Parcel fF = ayVar.fF(3, fE);
+        IBinder readStrongBinder = fF.readStrongBinder();
         if (readStrongBinder == null) {
             afVar = null;
         } else {
             IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.ads.internal.client.IAdLoaderBuilder");
             afVar = queryLocalInterface instanceof ah ? (ah) queryLocalInterface : new af(readStrongBinder);
         }
-        fs.recycle();
+        fF.recycle();
         return afVar;
     }
 }

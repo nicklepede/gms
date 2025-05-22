@@ -4,17 +4,17 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.games.internal.GamesAbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bhpm;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bjub;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class MostRecentGameInfoEntity extends GamesAbstractSafeParcelable implements MostRecentGameInfo {
-    public static final Parcelable.Creator CREATOR = new bhpm();
+    public static final Parcelable.Creator CREATOR = new bjub();
     public final String a;
     public final String b;
     public final long c;
@@ -65,7 +65,7 @@ public final class MostRecentGameInfoEntity extends GamesAbstractSafeParcelable 
             return true;
         }
         MostRecentGameInfo mostRecentGameInfo = (MostRecentGameInfo) obj;
-        return arwb.b(mostRecentGameInfo.e(), this.a) && arwb.b(mostRecentGameInfo.f(), this.b) && arwb.b(Long.valueOf(mostRecentGameInfo.a()), Long.valueOf(this.c)) && arwb.b(mostRecentGameInfo.d(), this.d) && arwb.b(mostRecentGameInfo.c(), this.e) && arwb.b(mostRecentGameInfo.b(), this.f);
+        return atyq.b(mostRecentGameInfo.e(), this.a) && atyq.b(mostRecentGameInfo.f(), this.b) && atyq.b(Long.valueOf(mostRecentGameInfo.a()), Long.valueOf(this.c)) && atyq.b(mostRecentGameInfo.d(), this.d) && atyq.b(mostRecentGameInfo.c(), this.e) && atyq.b(mostRecentGameInfo.b(), this.f);
     }
 
     @Override // com.google.android.gms.games.internal.player.MostRecentGameInfo
@@ -79,26 +79,26 @@ public final class MostRecentGameInfoEntity extends GamesAbstractSafeParcelable 
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("GameId", this.a, arrayList);
-        arwa.b("GameName", this.b, arrayList);
-        arwa.b("ActivityTimestampMillis", Long.valueOf(this.c), arrayList);
-        arwa.b("GameIconUri", this.d, arrayList);
-        arwa.b("GameHiResUri", this.e, arrayList);
-        arwa.b("GameFeaturedUri", this.f, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("GameId", this.a, arrayList);
+        atyp.b("GameName", this.b, arrayList);
+        atyp.b("ActivityTimestampMillis", Long.valueOf(this.c), arrayList);
+        atyp.b("GameIconUri", this.d, arrayList);
+        atyp.b("GameHiResUri", this.e, arrayList);
+        atyp.b("GameFeaturedUri", this.f, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.q(parcel, 3, this.c);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.q(parcel, 3, this.c);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.c(parcel, a);
     }
 
     public MostRecentGameInfoEntity(String str, String str2, long j, Uri uri, Uri uri2, Uri uri3) {
@@ -110,7 +110,7 @@ public final class MostRecentGameInfoEntity extends GamesAbstractSafeParcelable 
         this.f = uri3;
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

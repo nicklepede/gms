@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Set;
 import javax.security.auth.x500.X500Principal;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class NativeCrypto {
     static final String[] DEFAULT_PSK_CIPHER_SUITES;
@@ -49,7 +49,7 @@ public final class NativeCrypto {
     static String[] tlsv12protocols;
     static String[] tlsv13protocols;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class Range {
         public final String max;
         public final String min;
@@ -60,7 +60,7 @@ public final class NativeCrypto {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     interface SSLHandshakeCallbacks {
         void clientCertificateRequested(byte[] bArr, int[] iArr, byte[][] bArr2);
 

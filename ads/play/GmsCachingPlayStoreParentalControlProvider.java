@@ -10,19 +10,19 @@ import com.google.android.gms.ads.internal.util.client.h;
 import com.google.android.gms.ads.internal.util.future.e;
 import com.google.android.gms.ads.internal.util.future.i;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.asiu;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.iln;
+import defpackage.aumo;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.ind;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GmsCachingPlayStoreParentalControlProvider extends TracingBroadcastReceiver {
     private static GmsCachingPlayStoreParentalControlProvider d;
     public final Object a;
-    public enss b;
+    public eqgl b;
     public boolean c;
     private final AtomicBoolean e;
 
@@ -40,11 +40,11 @@ public class GmsCachingPlayStoreParentalControlProvider extends TracingBroadcast
         return d;
     }
 
-    public final enss c(Context context) {
-        enss enssVar;
+    public final eqgl c(Context context) {
+        eqgl eqglVar;
         if (!this.e.getAndSet(true)) {
-            ((Boolean) p.bw.g()).booleanValue();
-            iln.b(context, this, new IntentFilter("com.google.android.finsky.action.CONTENT_FILTERS_CHANGED"), 2);
+            ((Boolean) p.bx.g()).booleanValue();
+            ind.b(context, this, new IntentFilter("com.google.android.finsky.action.CONTENT_FILTERS_CHANGED"), 2);
         }
         synchronized (this.a) {
             if (!this.c) {
@@ -61,12 +61,12 @@ public class GmsCachingPlayStoreParentalControlProvider extends TracingBroadcast
                 bundle.putBoolean("success", false);
                 bundle.putBoolean("is_cacheable", true);
                 bundle.putBoolean("is_service_available", false);
-                enssVar = ensj.i(bundle);
+                eqglVar = eqgc.i(bundle);
             } else {
                 i iVar = new i();
                 c cVar = new c(context, iVar);
-                enssVar = iVar;
-                if (!asiu.a().d(context, intent, cVar, 1)) {
+                eqglVar = iVar;
+                if (!aumo.a().d(context, intent, cVar, 1)) {
                     h.k("Connection to play store is not available for getting parental controls.");
                     Bundle bundle2 = new Bundle();
                     bundle2.putBoolean("success", false);
@@ -74,21 +74,21 @@ public class GmsCachingPlayStoreParentalControlProvider extends TracingBroadcast
                     bundle2.putBoolean("is_service_available", true);
                     iVar.a(bundle2);
                     try {
-                        asiu.a().b(context, cVar);
-                        enssVar = iVar;
+                        aumo.a().b(context, cVar);
+                        eqglVar = iVar;
                     } catch (Exception e) {
                         h.h("Error while unbinding from parental controls connection", e);
-                        enssVar = iVar;
+                        eqglVar = iVar;
                     }
                 }
             }
-            enssVar.hn(new a(this, enssVar), e.a);
-            return enssVar;
+            eqglVar.hD(new a(this, eqglVar), e.a);
+            return eqglVar;
         }
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         synchronized (this.a) {
             int i = com.google.android.gms.ads.internal.util.c.a;
             h.i("Change in parental control settings is detected. Marking the value as stale.");

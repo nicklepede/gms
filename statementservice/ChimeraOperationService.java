@@ -4,40 +4,40 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 import android.os.Message;
-import defpackage.anxh;
-import defpackage.anxi;
-import defpackage.anxk;
-import defpackage.asng;
-import defpackage.byhj;
-import defpackage.byhp;
-import defpackage.fshf;
+import defpackage.apyz;
+import defpackage.apza;
+import defpackage.apzc;
+import defpackage.aura;
+import defpackage.caqb;
+import defpackage.caqh;
+import defpackage.fvcd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class ChimeraOperationService extends anxi {
-    private static final anxk a = new anxk();
+public class ChimeraOperationService extends apza {
+    private static final apzc a = new apzc();
 
     public ChimeraOperationService() {
-        super("StatementServiceOpSvc", a, fshf.a.a().f(), byhj.b.d(byhp.HIGH_SPEED));
+        super("StatementServiceOpSvc", a, fvcd.a.lK().f(), caqb.b.d(caqh.HIGH_SPEED));
     }
 
-    public static void c(Context context, anxh anxhVar) {
-        a.add(anxhVar);
-        context.startService(asng.j("com.google.android.gms.statementservice.EXECUTE"));
+    public static void c(Context context, apyz apyzVar) {
+        a.add(apyzVar);
+        context.startService(aura.j("com.google.android.gms.statementservice.EXECUTE"));
     }
 
-    @Override // defpackage.anxi, defpackage.anxm, android.os.Handler.Callback
+    @Override // defpackage.apza, defpackage.apze, android.os.Handler.Callback
     public final /* bridge */ /* synthetic */ boolean handleMessage(Message message) {
         super.handleMessage(message);
         return true;
     }
 
-    @Override // defpackage.anxi, defpackage.anxm, com.google.android.chimera.Service
+    @Override // defpackage.apza, defpackage.apze, com.google.android.chimera.Service
     public final /* bridge */ /* synthetic */ IBinder onBind(Intent intent) {
         return null;
     }
 
-    @Override // defpackage.anxi, defpackage.anxm, com.google.android.chimera.Service
+    @Override // defpackage.apza, defpackage.apze, com.google.android.chimera.Service
     public final /* bridge */ /* synthetic */ int onStartCommand(Intent intent, int i, int i2) {
         super.onStartCommand(intent, i, i2);
         return 2;

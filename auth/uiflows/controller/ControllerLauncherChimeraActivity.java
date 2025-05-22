@@ -6,22 +6,22 @@ import android.os.Bundle;
 import android.util.Log;
 import com.google.android.gms.auth.uiflows.controller.Controller;
 import com.google.android.gms.auth.uiflows.controller.ControllerLauncherChimeraActivity;
-import defpackage.adlg;
-import defpackage.asmf;
-import defpackage.fkih;
-import defpackage.qfn;
+import defpackage.afln;
+import defpackage.aupz;
+import defpackage.fmyw;
+import defpackage.ryr;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ControllerLauncherChimeraActivity extends qfn {
+public class ControllerLauncherChimeraActivity extends ryr {
     public static Intent a(Context context, Controller controller) {
         Bundle bundle = new Bundle();
         bundle.putParcelable("controller", controller);
         return new Intent().setClassName(context, "com.google.android.gms.auth.uiflows.controller.ControllerLauncherActivity").putExtra("wrapper_bundle", bundle);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Bundle bundleExtra = getIntent().getBundleExtra("wrapper_bundle");
@@ -34,21 +34,21 @@ public class ControllerLauncherChimeraActivity extends qfn {
         if (controller == null) {
             Log.wtf("Auth", String.format(Locale.US, "[Addaccount, ControllerLauncherActivity] Controller is null.", new Object[0]));
             finish();
-        } else if (fkih.g()) {
-            new asmf(1, 9).execute(new Runnable() { // from class: adlh
+        } else if (fmyw.g()) {
+            new aupz(1, 9).execute(new Runnable() { // from class: aflo
                 @Override // java.lang.Runnable
                 public final void run() {
                     ControllerLauncherChimeraActivity controllerLauncherChimeraActivity = ControllerLauncherChimeraActivity.this;
                     Controller controller2 = controller;
-                    adle a = controller2.a(null);
+                    afll a = controller2.a(null);
                     if (controllerLauncherChimeraActivity.isFinishing()) {
                         return;
                     }
-                    adlg.z(controllerLauncherChimeraActivity, controller2, a);
+                    afln.z(controllerLauncherChimeraActivity, controller2, a);
                 }
             });
         } else {
-            adlg.z(this, controller, controller.a(null));
+            afln.z(this, controller, controller.a(null));
         }
     }
 }

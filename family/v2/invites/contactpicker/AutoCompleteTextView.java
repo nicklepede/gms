@@ -13,19 +13,19 @@ import android.widget.AdapterView;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.Toast;
 import com.google.android.gms.family.v2.model.ContactPerson;
-import defpackage.arwm;
-import defpackage.asni;
-import defpackage.azyw;
-import defpackage.azzb;
-import defpackage.azzc;
-import defpackage.azzd;
-import defpackage.pn;
+import defpackage.atzb;
+import defpackage.aurc;
+import defpackage.bccs;
+import defpackage.bccx;
+import defpackage.bccy;
+import defpackage.bccz;
+import defpackage.pp;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class AutoCompleteTextView extends pn implements AdapterView.OnItemClickListener, TextWatcher {
-    public azzd a;
+public final class AutoCompleteTextView extends pp implements AdapterView.OnItemClickListener, TextWatcher {
+    public bccz a;
     public String b;
     private boolean c;
 
@@ -77,15 +77,15 @@ public final class AutoCompleteTextView extends pn implements AdapterView.OnItem
     }
 
     public final void d(ContactPerson.ContactMethod contactMethod) {
-        if (((azyw) getAdapter()) != null) {
+        if (((bccs) getAdapter()) != null) {
             throw null;
         }
-        azzd azzdVar = this.a;
+        bccz bcczVar = this.a;
         int i = contactMethod.a;
-        azzc azzcVar = (azzc) azzdVar;
-        int[] iArr = azzcVar.ah.h;
-        if ((iArr == null || iArr.length == 0 || asni.d(iArr, i)) && !azzcVar.c.contains(contactMethod)) {
-            azzcVar.A(azzc.x(contactMethod), contactMethod);
+        bccy bccyVar = (bccy) bcczVar;
+        int[] iArr = bccyVar.ah.h;
+        if ((iArr == null || iArr.length == 0 || aurc.d(iArr, i)) && !bccyVar.c.contains(contactMethod)) {
+            bccyVar.A(bccy.x(contactMethod), contactMethod);
         }
     }
 
@@ -97,26 +97,26 @@ public final class AutoCompleteTextView extends pn implements AdapterView.OnItem
         if (this.a.D(contactPerson, contactMethod)) {
             return;
         }
-        azzc azzcVar = (azzc) this.a;
-        if (azzcVar.D(contactPerson, contactMethod)) {
-            azzcVar.z(contactPerson, contactMethod);
+        bccy bccyVar = (bccy) this.a;
+        if (bccyVar.D(contactPerson, contactMethod)) {
+            bccyVar.z(contactPerson, contactMethod);
         } else {
-            if (!azzcVar.y(contactPerson).isEmpty()) {
+            if (!bccyVar.y(contactPerson).isEmpty()) {
                 if (contactMethod.a == 1) {
-                    azzcVar.C();
+                    bccyVar.C();
                 }
-                azzb azzbVar = (azzb) azzcVar.b.get(contactPerson);
-                arwm.s(azzbVar);
-                List list = azzbVar.a;
+                bccx bccxVar = (bccx) bccyVar.b.get(contactPerson);
+                atzb.s(bccxVar);
+                List list = bccxVar.a;
                 ContactPerson.ContactMethod contactMethod2 = (ContactPerson.ContactMethod) list.get(0);
-                azzcVar.d.remove(new Pair(contactPerson, contactMethod2));
-                azzcVar.B(contactPerson, contactMethod2);
+                bccyVar.d.remove(new Pair(contactPerson, contactMethod2));
+                bccyVar.B(contactPerson, contactMethod2);
                 list.clear();
                 list.add(contactMethod);
-                azzcVar.E(contactPerson);
+                bccyVar.E(contactPerson);
                 throw null;
             }
-            azzcVar.A(contactPerson, contactMethod);
+            bccyVar.A(contactPerson, contactMethod);
         }
         setText("");
     }

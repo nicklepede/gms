@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cafq;
+import defpackage.atzr;
+import defpackage.ccoh;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -13,10 +13,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class PlaceIdCollection extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cafq();
+    public static final Parcelable.Creator CREATOR = new ccoh();
     final List a;
 
     public PlaceIdCollection(List list) {
@@ -43,8 +43,8 @@ public class PlaceIdCollection extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.x(parcel, 1, list, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.x(parcel, 1, list, false);
+        atzr.c(parcel, a);
     }
 }

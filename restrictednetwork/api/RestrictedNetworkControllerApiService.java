@@ -1,18 +1,18 @@
 package com.google.android.gms.restrictednetwork.api;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.ejck;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.elpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class RestrictedNetworkControllerApiService extends bxgd {
+public class RestrictedNetworkControllerApiService extends bzot {
     public RestrictedNetworkControllerApiService() {
-        super(421, "com.google.android.gms.restrictednetwork.api.RestrictedNetworkControllerApiService.START", ejck.a, 0, 10);
+        super(421, "com.google.android.gms.restrictednetwork.api.RestrictedNetworkControllerApiService.START", elpp.a, 0, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
     }
 }

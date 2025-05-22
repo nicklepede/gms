@@ -1,30 +1,30 @@
 package com.google.android.gms.autofill.service.common;
 
-import defpackage.eiid;
-import defpackage.eitj;
-import defpackage.eixf;
+import defpackage.ekvi;
+import defpackage.elgo;
+import defpackage.elkk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 final class AutoValue_AbstractDetectionHistory_DetectionResult extends AbstractDetectionHistory$DetectionResult {
-    private final eiid b;
-    private final eitj c;
+    private final ekvi b;
+    private final elgo c;
 
-    public AutoValue_AbstractDetectionHistory_DetectionResult(eiid eiidVar, eitj eitjVar) {
-        this.b = eiidVar;
-        if (eitjVar == null) {
+    public AutoValue_AbstractDetectionHistory_DetectionResult(ekvi ekviVar, elgo elgoVar) {
+        this.b = ekviVar;
+        if (elgoVar == null) {
             throw new NullPointerException("Null allFields");
         }
-        this.c = eitjVar;
+        this.c = elgoVar;
     }
 
     @Override // com.google.android.gms.autofill.service.common.AbstractDetectionHistory$DetectionResult
-    public final eiid b() {
+    public final ekvi b() {
         return this.b;
     }
 
     @Override // com.google.android.gms.autofill.service.common.AbstractDetectionHistory$DetectionResult
-    public final eitj c() {
+    public final elgo c() {
         return this.c;
     }
 
@@ -34,7 +34,7 @@ final class AutoValue_AbstractDetectionHistory_DetectionResult extends AbstractD
         }
         if (obj instanceof AbstractDetectionHistory$DetectionResult) {
             AbstractDetectionHistory$DetectionResult abstractDetectionHistory$DetectionResult = (AbstractDetectionHistory$DetectionResult) obj;
-            if (this.b.equals(abstractDetectionHistory$DetectionResult.b()) && eixf.i(this.c, abstractDetectionHistory$DetectionResult.c())) {
+            if (this.b.equals(abstractDetectionHistory$DetectionResult.b()) && elkk.i(this.c, abstractDetectionHistory$DetectionResult.c())) {
                 return true;
             }
         }
@@ -46,7 +46,7 @@ final class AutoValue_AbstractDetectionHistory_DetectionResult extends AbstractD
     }
 
     public final String toString() {
-        eitj eitjVar = this.c;
-        return "DetectionResult{focusedForm=" + this.b.toString() + ", allFields=" + eitjVar.toString() + "}";
+        elgo elgoVar = this.c;
+        return "DetectionResult{focusedForm=" + this.b.toString() + ", allFields=" + elgoVar.toString() + "}";
     }
 }

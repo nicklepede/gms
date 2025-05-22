@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cteg;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvnl;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class SelectPurchasablePassIntentArgs extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cteg();
+    public static final Parcelable.Creator CREATOR = new cvnl();
     public ProtoSafeParcelable a;
     public long b;
     public String c;
@@ -25,7 +25,7 @@ public final class SelectPurchasablePassIntentArgs extends AbstractSafeParcelabl
         }
         if (obj instanceof SelectPurchasablePassIntentArgs) {
             SelectPurchasablePassIntentArgs selectPurchasablePassIntentArgs = (SelectPurchasablePassIntentArgs) obj;
-            if (arwb.b(this.a, selectPurchasablePassIntentArgs.a) && arwb.b(Long.valueOf(this.b), Long.valueOf(selectPurchasablePassIntentArgs.b)) && arwb.b(this.c, selectPurchasablePassIntentArgs.c)) {
+            if (atyq.b(this.a, selectPurchasablePassIntentArgs.a) && atyq.b(Long.valueOf(this.b), Long.valueOf(selectPurchasablePassIntentArgs.b)) && atyq.b(this.c, selectPurchasablePassIntentArgs.c)) {
                 return true;
             }
         }
@@ -38,11 +38,11 @@ public final class SelectPurchasablePassIntentArgs extends AbstractSafeParcelabl
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.q(parcel, 2, this.b);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.q(parcel, 2, this.b);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 
     public SelectPurchasablePassIntentArgs(ProtoSafeParcelable protoSafeParcelable, long j, String str) {

@@ -23,32 +23,32 @@ import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.update.phone.layout.view.SystemUpdateSnackbar;
 import com.google.android.setupdesign.SetupWizardLayout;
 import com.google.android.setupdesign.view.NavigationBar;
-import defpackage.asej;
-import defpackage.asiu;
-import defpackage.asot;
-import defpackage.byhr;
-import defpackage.ctbd;
-import defpackage.dhcf;
-import defpackage.dhcg;
-import defpackage.dhch;
-import defpackage.dhci;
-import defpackage.dhcj;
-import defpackage.dhck;
-import defpackage.dhcl;
-import defpackage.dhcr;
-import defpackage.dhdd;
-import defpackage.dhdz;
-import defpackage.ejhf;
-import defpackage.iln;
-import defpackage.qfp;
+import defpackage.auid;
+import defpackage.aumo;
+import defpackage.ausn;
+import defpackage.caqj;
+import defpackage.cvkh;
+import defpackage.djnl;
+import defpackage.djnm;
+import defpackage.djnn;
+import defpackage.djno;
+import defpackage.djnp;
+import defpackage.djnq;
+import defpackage.djnr;
+import defpackage.djnx;
+import defpackage.djoj;
+import defpackage.djpf;
+import defpackage.eluo;
+import defpackage.ind;
+import defpackage.ryt;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClickListener {
-    public static final asot j = asot.b("CmaUpdateFromSdCardA", asej.OTA);
+public class ChimeraUpdateFromSdCardActivity extends ryt implements View.OnClickListener {
+    public static final ausn j = ausn.b("CmaUpdateFromSdCardA", auid.OTA);
     private static boolean r = false;
     public String l;
     public View m;
@@ -58,10 +58,10 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
     public List q;
     private int s;
     private Handler t;
-    public dhdd k = null;
+    public djoj k = null;
     private final BroadcastReceiver u = new TracingBroadcastReceiver() { // from class: com.google.android.gms.update.ChimeraUpdateFromSdCardActivity.1
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             ChimeraUpdateFromSdCardActivity chimeraUpdateFromSdCardActivity = ChimeraUpdateFromSdCardActivity.this;
             if (chimeraUpdateFromSdCardActivity.p == 0) {
                 chimeraUpdateFromSdCardActivity.f();
@@ -70,8 +70,8 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
     };
     private final BroadcastReceiver v = new TracingBroadcastReceiver() { // from class: com.google.android.gms.update.ChimeraUpdateFromSdCardActivity.2
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
-            asot asotVar = ChimeraUpdateFromSdCardActivity.j;
+        public final void jP(Context context, Intent intent) {
+            ausn ausnVar = ChimeraUpdateFromSdCardActivity.j;
             ChimeraUpdateFromSdCardActivity chimeraUpdateFromSdCardActivity = ChimeraUpdateFromSdCardActivity.this;
             if (chimeraUpdateFromSdCardActivity.o) {
                 return;
@@ -79,7 +79,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
             chimeraUpdateFromSdCardActivity.b();
         }
     };
-    private final ServiceConnection w = new dhcf(this);
+    private final ServiceConnection w = new djnl(this);
 
     private final void l(int i, int i2) {
         View findViewById = findViewById(i);
@@ -108,7 +108,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
     }
 
     private static final boolean o() {
-        return ctbd.b().a() > 0;
+        return cvkh.b().a() > 0;
     }
 
     private final void p(int i, int i2) {
@@ -139,12 +139,12 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
     }
 
     public final void b() {
-        dhdd dhddVar = this.k;
-        if (dhddVar != null) {
+        djoj djojVar = this.k;
+        if (djojVar != null) {
             try {
-                dhddVar.c();
+                djojVar.c();
             } catch (RemoteException unused) {
-                ((ejhf) ((ejhf) j.i()).ah((char) 11935)).x("reconnect to Sd card service on clearVerifiedState() failure.");
+                ((eluo) ((eluo) j.i()).ai((char) 11938)).x("reconnect to Sd card service on clearVerifiedState() failure.");
                 c();
             }
         }
@@ -158,10 +158,10 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
             } else {
                 Intent intent = new Intent(new Intent("com.google.android.gms.update.BIND_SDCARD_SERVICE"));
                 intent.setPackage("com.google.android.gms");
-                boolean d = asiu.a().d(this, intent, this.w, 1);
+                boolean d = aumo.a().d(this, intent, this.w, 1);
                 r = d;
                 if (!d) {
-                    ((ejhf) ((ejhf) j.i()).ah(11936)).x("bindService call to ChimeraUpdateFromSdCardService returned false!");
+                    ((eluo) ((eluo) j.i()).ai(11939)).x("bindService call to ChimeraUpdateFromSdCardService returned false!");
                 }
             }
         }
@@ -172,7 +172,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
         try {
             i = this.k.a();
         } catch (RemoteException unused) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 11942)).x("reconnect to Sd card service on draw getStatus() failure.");
+            ((eluo) ((eluo) j.i()).ai((char) 11945)).x("reconnect to Sd card service on draw getStatus() failure.");
             c();
             i = -1;
         }
@@ -221,22 +221,22 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
                         str = (String) this.q.get(r1.size() - 1);
                     }
                     textView.setText(str);
-                    this.n.findViewById(R.id.file_browser_cur_folder).setOnClickListener(new dhcg(this));
+                    this.n.findViewById(R.id.file_browser_cur_folder).setOnClickListener(new djnm(this));
                 }
                 Button button = (Button) this.n.findViewById(R.id.file_browser_ok_button);
                 Button button2 = (Button) this.n.findViewById(R.id.file_browser_cancel_button);
                 button.setEnabled(false);
-                button.setOnClickListener(new dhch(this));
-                button2.setOnClickListener(new dhci(this));
-                dhcr dhcrVar = new dhcr(getContainerActivity().getLayoutInflater(), b);
+                button.setOnClickListener(new djnn(this));
+                button2.setOnClickListener(new djno(this));
+                djnx djnxVar = new djnx(getContainerActivity().getLayoutInflater(), b);
                 ListView listView = (ListView) this.n.findViewById(R.id.file_browser_list_view);
-                listView.setAdapter((ListAdapter) dhcrVar);
-                listView.setOnItemClickListener(new dhcj(this, dhcrVar));
-                this.n.setOnKeyListener(new dhck(this));
+                listView.setAdapter((ListAdapter) djnxVar);
+                listView.setOnItemClickListener(new djnp(this, djnxVar));
+                this.n.setOnKeyListener(new djnq(this));
                 this.n.show();
                 return;
             } catch (RemoteException unused) {
-                ((ejhf) ((ejhf) j.i()).ah((char) 11946)).x("reconnect to Sd card service on listFilesInDirectory() failure.");
+                ((eluo) ((eluo) j.i()).ai((char) 11949)).x("reconnect to Sd card service on listFilesInDirectory() failure.");
                 c();
                 return;
             }
@@ -300,18 +300,18 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
         if (currentTimeMillis < j4) {
             int i = ((int) ((j4 - currentTimeMillis) / 1000)) + 1;
             q(R.id.description, getResources().getQuantityString(R.plurals.system_update_countdown_message, i, Integer.valueOf(i)));
-            this.t.postDelayed(new dhcl(this, j2), (int) ((this.p - (r2 * ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS)) - currentTimeMillis));
+            this.t.postDelayed(new djnr(this, j2), (int) ((this.p - (r2 * ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS)) - currentTimeMillis));
             return;
         }
         if (this.k == null) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 11965)).x("Lost connection to the service. Cannot install.");
+            ((eluo) ((eluo) j.i()).ai((char) 11968)).x("Lost connection to the service. Cannot install.");
             return;
         }
         n();
         try {
             this.k.d();
         } catch (RemoteException unused) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 11964)).x("reconnect to Sd card service on installUpdate() failure.");
+            ((eluo) ((eluo) j.i()).ai((char) 11967)).x("reconnect to Sd card service on installUpdate() failure.");
             c();
         }
     }
@@ -322,7 +322,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
             try {
                 this.s = this.k.a();
             } catch (RemoteException unused) {
-                ((ejhf) ((ejhf) j.i()).ah((char) 11952)).x("reconnect to Sd card service on click getStatus() failure.");
+                ((eluo) ((eluo) j.i()).ai((char) 11955)).x("reconnect to Sd card service on click getStatus() failure.");
                 c();
             }
         }
@@ -358,7 +358,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
             return;
         }
         this.o = true;
-        asot asotVar = dhdz.a;
+        ausn ausnVar = djpf.a;
         Intent intent = new Intent("android.server.checkin.CHECKIN").setPackage("com.google.android.gms");
         intent.putExtra("force", true);
         intent.putExtra("CheckinService_onStart_checkinReason", 17);
@@ -369,7 +369,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
         k(this.p);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (o()) {
@@ -395,7 +395,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
         }
         this.s = -1;
         c();
-        this.t = new byhr();
+        this.t = new caqj();
         setContentView(R.layout.system_update_activity_common);
         NavigationBar t = ((SetupWizardLayout) findViewById(R.id.setup_wizard_layout)).t();
         if (t != null) {
@@ -408,15 +408,15 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
         intentFilter.addAction("android.intent.action.MEDIA_SHARED");
         intentFilter.addAction("android.intent.action.MEDIA_UNMOUNTED");
         intentFilter.addDataScheme("file");
-        iln.b(this, this.v, intentFilter, 2);
+        ind.b(this, this.v, intentFilter, 2);
         IntentFilter intentFilter2 = new IntentFilter();
         intentFilter2.addAction("com.google.android.gms.update.UpdateFromSdCard.STATUS_CHANGED");
-        iln.b(this, this.u, intentFilter2, 2);
+        ind.b(this, this.u, intentFilter2, 2);
         findViewById(R.id.action_button).setOnClickListener(this);
         findViewById(R.id.action_button_2).setOnClickListener(this);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
         if (o()) {
@@ -424,7 +424,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
         }
         n();
         if (r) {
-            asiu.a().b(this, this.w);
+            aumo.a().b(this, this.w);
             r = false;
             this.k = null;
         }
@@ -434,14 +434,14 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onKeyDown(int i, KeyEvent keyEvent) {
         if (i != 4) {
             return super.onKeyDown(i, keyEvent);
         }
         try {
         } catch (RemoteException unused) {
-            ((ejhf) ((ejhf) j.i()).ah((char) 11956)).x("reconnect to Sd card service on key down getStatus() failure.");
+            ((eluo) ((eluo) j.i()).ai((char) 11959)).x("reconnect to Sd card service on key down getStatus() failure.");
             c();
         }
         if (this.k.a() == 1) {
@@ -457,7 +457,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         if (this.o) {
@@ -466,7 +466,7 @@ public class ChimeraUpdateFromSdCardActivity extends qfp implements View.OnClick
         m();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         if (!this.q.isEmpty()) {

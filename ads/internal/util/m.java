@@ -15,13 +15,13 @@ import android.view.View;
 import android.view.Window;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
-import defpackage.aquo;
-import defpackage.asnp;
-import defpackage.asnx;
-import defpackage.asqv;
-import defpackage.assx;
-import defpackage.byhr;
-import defpackage.eijj;
+import defpackage.asxd;
+import defpackage.aurj;
+import defpackage.aurr;
+import defpackage.auup;
+import defpackage.auwr;
+import defpackage.caqj;
+import defpackage.ekwo;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -42,10 +42,10 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class m {
-    public static final byhr a = new d(Looper.getMainLooper());
+    public static final caqj a = new d(Looper.getMainLooper());
     private String h;
     private volatile String i;
     private final AtomicReference d = new AtomicReference(null);
@@ -60,7 +60,7 @@ public final class m {
         ArrayList arrayList = new ArrayList();
         Iterator it = b.iterator();
         while (it.hasNext()) {
-            Iterator it2 = eijj.e(',').l((String) it.next()).iterator();
+            Iterator it2 = ekwo.e(',').l((String) it.next()).iterator();
             while (it2.hasNext()) {
                 try {
                     arrayList.add(Long.valueOf((String) it2.next()));
@@ -105,26 +105,31 @@ public final class m {
 
     public static final boolean i(Context context, String str) {
         Context a2 = com.google.android.gms.ads.internal.reward.a.a(context);
-        return assx.b(a2).b(str, a2.getPackageName()) == 0;
+        return auwr.b(a2).b(str, a2.getPackageName()) == 0;
     }
 
-    public static final void j(Context context, String str, String str2) {
+    public static final boolean j() {
+        com.google.android.gms.ads.internal.client.u.b();
+        return com.google.android.gms.ads.internal.util.client.f.i();
+    }
+
+    public static final void k(Context context, String str, String str2) {
         new ad(context, str, str2).b();
     }
 
-    public static final void k(Context context, Throwable th) {
+    public static final void l(Context context, Throwable th) {
         if (context == null) {
             return;
         }
         try {
             if (((Boolean) com.google.android.gms.ads.internal.flag.s.b.d()).booleanValue()) {
-                asnx.f(context, th);
+                aurr.f(context, th);
             }
         } catch (IllegalStateException unused) {
         }
     }
 
-    public static final Map m(Uri uri) {
+    public static final Map n(Uri uri) {
         String encodedQuery;
         if (uri == null) {
             return null;
@@ -161,19 +166,19 @@ public final class m {
         return hashMap2;
     }
 
-    public static final String n() {
+    public static final String o() {
         String str = Build.MANUFACTURER;
         String str2 = Build.MODEL;
         return str2.startsWith(str) ? str2 : defpackage.a.p(str2, str, " ");
     }
 
-    public static final int[] o(Activity activity) {
+    public static final int[] p(Activity activity) {
         View findViewById;
         Window window = activity.getWindow();
         return (window == null || (findViewById = window.findViewById(R.id.content)) == null) ? h() : new int[]{findViewById.getWidth(), findViewById.getHeight()};
     }
 
-    public static final WebResourceResponse p(Context context, String str, String str2) {
+    public static final WebResourceResponse q(Context context, String str, String str2) {
         try {
             HashMap hashMap = new HashMap();
             hashMap.put("User-Agent", com.google.android.gms.ads.internal.c.e().a(context, str));
@@ -189,7 +194,7 @@ public final class m {
         return null;
     }
 
-    public static final boolean q(Context context) {
+    public static final boolean r(Context context) {
         try {
             context.getClassLoader().loadClass("com.google.android.gms.ads.internal.ClientApi");
             return false;
@@ -203,13 +208,13 @@ public final class m {
         }
     }
 
-    public static final void r(Context context, Intent intent) {
-        if (!((Boolean) com.google.android.gms.ads.internal.config.p.bx.g()).booleanValue()) {
-            u(context, intent);
+    public static final void s(Context context, Intent intent) {
+        if (!((Boolean) com.google.android.gms.ads.internal.config.p.by.g()).booleanValue()) {
+            v(context, intent);
             return;
         }
         try {
-            u(context, intent);
+            v(context, intent);
         } catch (SecurityException e) {
             int i = c.a;
             com.google.android.gms.ads.internal.util.client.h.l(e);
@@ -217,15 +222,15 @@ public final class m {
         }
     }
 
-    public static final void s(Context context, Intent intent) {
-        if (!((Boolean) com.google.android.gms.ads.internal.config.p.bZ.g()).booleanValue() || !(context instanceof com.google.android.gms.ads.internal.webview.ae)) {
-            r(context, intent);
+    public static final void t(Context context, Intent intent) {
+        if (!((Boolean) com.google.android.gms.ads.internal.config.p.ca.g()).booleanValue() || !(context instanceof com.google.android.gms.ads.internal.webview.ae)) {
+            s(context, intent);
             return;
         }
         try {
             Uri data = intent.getData();
-            if (data == null || data.toString() == null || !data.toString().matches((String) com.google.android.gms.ads.internal.config.p.cb.g())) {
-                r(context, intent);
+            if (data == null || data.toString() == null || !data.toString().matches((String) com.google.android.gms.ads.internal.config.p.cc.g())) {
+                s(context, intent);
                 return;
             }
             com.google.android.gms.ads.internal.webview.ae aeVar = (com.google.android.gms.ads.internal.webview.ae) context;
@@ -236,28 +241,28 @@ public final class m {
                 intent.setFlags(268435456);
                 aeVar.b.startActivity(intent);
             }
-            ((Boolean) com.google.android.gms.ads.internal.config.p.ca.g()).booleanValue();
+            ((Boolean) com.google.android.gms.ads.internal.config.p.cb.g()).booleanValue();
         } catch (ActivityNotFoundException e) {
             e = e;
             int i = c.a;
             com.google.android.gms.ads.internal.util.client.h.h("Error occurred while starting activity for result", e);
             com.google.android.gms.ads.internal.c.d().d(e, "AdUtil.startActivityForResult");
-            r(context, intent);
+            s(context, intent);
         } catch (SecurityException e2) {
             e = e2;
             int i2 = c.a;
             com.google.android.gms.ads.internal.util.client.h.h("Error occurred while starting activity for result", e);
             com.google.android.gms.ads.internal.c.d().d(e, "AdUtil.startActivityForResult");
-            r(context, intent);
+            s(context, intent);
         } catch (Exception e3) {
             int i3 = c.a;
             com.google.android.gms.ads.internal.util.client.h.h("Error occurred while starting activity for result", e3);
             com.google.android.gms.ads.internal.c.d().d(e3, "AdUtil.startActivityForResult");
-            r(context, intent);
+            s(context, intent);
         }
     }
 
-    private static boolean t(String str, AtomicReference atomicReference, String str2) {
+    private static boolean u(String str, AtomicReference atomicReference, String str2) {
         if (TextUtils.isEmpty(str)) {
             return false;
         }
@@ -273,7 +278,7 @@ public final class m {
         }
     }
 
-    private static final void u(Context context, Intent intent) {
+    private static final void v(Context context, Intent intent) {
         try {
             context.startActivity(intent);
         } catch (Throwable unused) {
@@ -282,7 +287,7 @@ public final class m {
         }
     }
 
-    private static final String v(final Context context, String str) {
+    private static final String w(final Context context, String str) {
         String str2;
         String str3;
         if (str == null) {
@@ -291,7 +296,7 @@ public final class m {
         try {
             ai a2 = ai.a();
             if (TextUtils.isEmpty(a2.a)) {
-                if (asnp.d()) {
+                if (aurj.d()) {
                     str3 = (String) af.a(context, new Callable() { // from class: com.google.android.gms.ads.internal.util.ag
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
@@ -302,12 +307,12 @@ public final class m {
                                 return string;
                             }
                             String defaultUserAgent = WebSettings.getDefaultUserAgent(context2);
-                            asqv.a(context2, sharedPreferences.edit().putString("user_agent", defaultUserAgent), "admob_user_agent");
+                            auup.a(context2, sharedPreferences.edit().putString("user_agent", defaultUserAgent), "admob_user_agent");
                             return defaultUserAgent;
                         }
                     });
                 } else {
-                    final Context b = aquo.b(context);
+                    final Context b = asxd.b(context);
                     str3 = (String) af.a(context, new Callable() { // from class: com.google.android.gms.ads.internal.util.ah
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
@@ -347,7 +352,7 @@ public final class m {
         }
         String p = defpackage.a.p(str, str2, " (Mobile; ");
         try {
-            if (assx.b(context).l()) {
+            if (auwr.b(context).l()) {
                 p = defpackage.a.r(p, ";aia");
             }
         } catch (Exception e) {
@@ -357,11 +362,11 @@ public final class m {
     }
 
     public final String a(Context context, String str) {
-        if (((Boolean) com.google.android.gms.ads.internal.config.p.bD.g()).booleanValue()) {
+        if (((Boolean) com.google.android.gms.ads.internal.config.p.bE.g()).booleanValue()) {
             if (this.i != null) {
                 return this.i;
             }
-            this.i = v(context, str);
+            this.i = w(context, str);
             return this.i;
         }
         synchronized (this.g) {
@@ -369,18 +374,18 @@ public final class m {
             if (str2 != null) {
                 return str2;
             }
-            String v = v(context, str);
-            this.h = v;
-            return v;
+            String w = w(context, str);
+            this.h = w;
+            return w;
         }
     }
 
     public final boolean c(String str) {
-        return t(str, this.d, (String) com.google.android.gms.ads.internal.config.p.v.g());
+        return u(str, this.d, (String) com.google.android.gms.ads.internal.config.p.v.g());
     }
 
     public final boolean d(String str) {
-        return t(str, this.e, (String) com.google.android.gms.ads.internal.config.p.w.g());
+        return u(str, this.e, (String) com.google.android.gms.ads.internal.config.p.w.g());
     }
 
     public final void e(Context context, String str, HttpURLConnection httpURLConnection, int i) {
@@ -404,15 +409,15 @@ public final class m {
         httpURLConnection.setUseCaches(false);
     }
 
-    public final void l(final Context context, final String str, String str2, Bundle bundle) {
+    public final void m(final Context context, final String str, String str2, Bundle bundle) {
         com.google.android.gms.ads.internal.c.e();
-        bundle.putString("device", n());
+        bundle.putString("device", o());
         bundle.putString("eids", TextUtils.join(",", com.google.android.gms.ads.internal.config.p.a()));
         if (bundle.isEmpty()) {
             int i = c.a;
             com.google.android.gms.ads.internal.util.client.h.d("Empty or null bundle.");
         } else {
-            final String str3 = (String) com.google.android.gms.ads.internal.config.p.bs.g();
+            final String str3 = (String) com.google.android.gms.ads.internal.config.p.bt.g();
             if (!this.f.getAndSet(true)) {
                 this.b.set(q.a(context, str3, new SharedPreferences.OnSharedPreferenceChangeListener() { // from class: com.google.android.gms.ads.internal.util.j
                     @Override // android.content.SharedPreferences.OnSharedPreferenceChangeListener
@@ -427,9 +432,9 @@ public final class m {
         com.google.android.gms.ads.internal.util.client.f.n(context, str, str2, bundle, new com.google.android.gms.ads.internal.util.client.e() { // from class: com.google.android.gms.ads.internal.util.i
             @Override // com.google.android.gms.ads.internal.util.client.e
             public final void a(String str4) {
-                byhr byhrVar = m.a;
+                caqj caqjVar = m.a;
                 com.google.android.gms.ads.internal.c.e();
-                m.j(context, str, str4);
+                m.k(context, str, str4);
             }
         });
     }

@@ -10,10 +10,10 @@ import com.google.android.gms.ads.internal.client.u;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.flag.s;
 import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
-import defpackage.asqh;
-import defpackage.assx;
-import defpackage.ensj;
-import defpackage.enss;
+import defpackage.auub;
+import defpackage.auwr;
+import defpackage.eqgc;
+import defpackage.eqgl;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class e {
     public final Object a = new Object();
@@ -35,7 +35,7 @@ public final class e {
     public final AtomicBoolean i;
     private boolean j;
     private final Object k;
-    private enss l;
+    private eqgl l;
 
     public e() {
         com.google.android.gms.ads.internal.util.g gVar = new com.google.android.gms.ads.internal.util.g();
@@ -142,7 +142,7 @@ public final class e {
                     com.google.android.gms.ads.internal.util.future.h.a(new c(this).b(), "AppState.registerCsiReporter");
                 }
                 Context context3 = this.d;
-                if (asqh.c() && ((Boolean) p.bh.g()).booleanValue()) {
+                if (auub.c() && ((Boolean) p.bi.g()).booleanValue()) {
                     try {
                         ((ConnectivityManager) context3.getSystemService("connectivity")).registerDefaultNetworkCallback(new d(this));
                     } catch (RuntimeException e) {
@@ -161,7 +161,7 @@ public final class e {
                                     Context a2 = com.google.android.gms.ads.internal.reward.a.a(e.this.d);
                                     ArrayList arrayList = new ArrayList();
                                     try {
-                                        PackageInfo f = assx.b(a2).f(a2.getApplicationInfo().packageName, 4096);
+                                        PackageInfo f = auwr.b(a2).f(a2.getApplicationInfo().packageName, 4096);
                                         if (f.requestedPermissions != null && f.requestedPermissionsFlags != null) {
                                             for (int i2 = 0; i2 < f.requestedPermissions.length; i2++) {
                                                 if ((f.requestedPermissionsFlags[i2] & 2) != 0) {
@@ -177,7 +177,7 @@ public final class e {
                         }
                     }
                 }
-                ensj.i(new ArrayList());
+                eqgc.i(new ArrayList());
             }
         }
         com.google.android.gms.ads.internal.c.e().a(context, versionInfoParcel.a);

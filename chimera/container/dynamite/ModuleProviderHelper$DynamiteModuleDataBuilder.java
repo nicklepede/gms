@@ -3,11 +3,11 @@ package com.google.android.gms.chimera.container.dynamite;
 import com.google.android.gms.dynamite.DynamiteModuleData;
 import com.google.android.gms.dynamite.RequestStats;
 import com.google.android.gms.dynamiteloader.DynamiteFlags;
-import defpackage.arxd;
-import defpackage.azjf;
-import defpackage.pov;
+import defpackage.atzs;
+import defpackage.bbnb;
+import defpackage.rhz;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ModuleProviderHelper$DynamiteModuleDataBuilder extends DynamiteModuleData {
     private static final byte[] h = new byte[0];
@@ -17,11 +17,11 @@ public class ModuleProviderHelper$DynamiteModuleDataBuilder extends DynamiteModu
     public boolean d;
     public int e;
     public long f;
-    public final azjf g;
+    public final bbnb g;
 
     public ModuleProviderHelper$DynamiteModuleDataBuilder() {
         super(0L, null, 0, false, -1, -1L, null, h);
-        this.g = new azjf();
+        this.g = new bbnb();
     }
 
     @Override // com.google.android.gms.dynamite.DynamiteModuleData
@@ -61,6 +61,6 @@ public class ModuleProviderHelper$DynamiteModuleDataBuilder extends DynamiteModu
 
     @Override // com.google.android.gms.dynamite.DynamiteModuleData
     public final byte[] h() {
-        return arxd.n(DynamiteFlags.r(pov.b()));
+        return atzs.n(DynamiteFlags.r(rhz.b()));
     }
 }

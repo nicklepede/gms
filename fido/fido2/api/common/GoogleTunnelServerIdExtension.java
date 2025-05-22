@@ -3,19 +3,19 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bbti;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bdwz;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class GoogleTunnelServerIdExtension extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bbti();
+    public static final Parcelable.Creator CREATOR = new bdwz();
     public final String a;
 
     public GoogleTunnelServerIdExtension(String str) {
-        arwm.s(str);
+        atzb.s(str);
         this.a = str;
     }
 
@@ -33,8 +33,8 @@ public class GoogleTunnelServerIdExtension extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.c(parcel, a);
     }
 }

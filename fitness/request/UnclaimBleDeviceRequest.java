@@ -5,21 +5,21 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bgiu;
-import defpackage.bgiw;
-import defpackage.bglu;
+import defpackage.atzr;
+import defpackage.bink;
+import defpackage.binm;
+import defpackage.biqk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class UnclaimBleDeviceRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bglu();
+    public static final Parcelable.Creator CREATOR = new biqk();
     public final String a;
-    public final bgiw b;
+    public final binm b;
 
-    public UnclaimBleDeviceRequest(String str, bgiw bgiwVar) {
+    public UnclaimBleDeviceRequest(String str, binm binmVar) {
         this.a = str;
-        this.b = bgiwVar;
+        this.b = binmVar;
     }
 
     public final String toString() {
@@ -29,22 +29,22 @@ public class UnclaimBleDeviceRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        bgiw bgiwVar = this.b;
-        arxc.D(parcel, 3, bgiwVar == null ? null : bgiwVar.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        binm binmVar = this.b;
+        atzr.D(parcel, 3, binmVar == null ? null : binmVar.asBinder());
+        atzr.c(parcel, a);
     }
 
     public UnclaimBleDeviceRequest(String str, IBinder iBinder) {
-        bgiw bgiuVar;
+        binm binkVar;
         this.a = str;
         if (iBinder == null) {
-            bgiuVar = null;
+            binkVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.IStatusCallback");
-            bgiuVar = queryLocalInterface instanceof bgiw ? (bgiw) queryLocalInterface : new bgiu(iBinder);
+            binkVar = queryLocalInterface instanceof binm ? (binm) queryLocalInterface : new bink(iBinder);
         }
-        this.b = bgiuVar;
+        this.b = binkVar;
     }
 }

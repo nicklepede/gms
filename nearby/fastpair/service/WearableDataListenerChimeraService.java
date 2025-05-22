@@ -12,65 +12,65 @@ import com.google.android.gms.nearby.fastpair.service.TaskSchedulerChimeraServic
 import com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService;
 import com.google.android.gms.nearby.fastpair.triangle.NodeHolder;
 import com.google.android.gms.wearable.internal.MessageEventParcelable;
-import defpackage.asmf;
-import defpackage.asoj;
-import defpackage.asok;
-import defpackage.bhiz;
-import defpackage.bxdd;
-import defpackage.cexc;
-import defpackage.cfcp;
-import defpackage.cibd;
-import defpackage.cida;
-import defpackage.cidh;
-import defpackage.cidi;
-import defpackage.cidl;
-import defpackage.cidy;
-import defpackage.cien;
-import defpackage.cigw;
-import defpackage.ciqd;
-import defpackage.ciqe;
-import defpackage.cisf;
-import defpackage.cisw;
-import defpackage.citi;
-import defpackage.citj;
-import defpackage.citl;
-import defpackage.citm;
-import defpackage.citr;
-import defpackage.citx;
-import defpackage.citz;
-import defpackage.ciud;
-import defpackage.ciue;
-import defpackage.ciug;
-import defpackage.ciup;
-import defpackage.dfaq;
-import defpackage.dfau;
-import defpackage.dfbl;
-import defpackage.djjm;
-import defpackage.dkbc;
-import defpackage.dncl;
-import defpackage.eiho;
-import defpackage.eitj;
-import defpackage.eits;
-import defpackage.eixf;
-import defpackage.eizo;
-import defpackage.ejcg;
-import defpackage.ejfg;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.enre;
-import defpackage.ensv;
-import defpackage.excc;
-import defpackage.excv;
-import defpackage.exdl;
-import defpackage.exfg;
-import defpackage.exfm;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.fqkx;
-import defpackage.fqld;
-import defpackage.iru;
+import defpackage.aupz;
+import defpackage.ausd;
+import defpackage.ause;
+import defpackage.bjno;
+import defpackage.bzlt;
+import defpackage.chen;
+import defpackage.chkb;
+import defpackage.ckji;
+import defpackage.cklf;
+import defpackage.cklm;
+import defpackage.ckln;
+import defpackage.cklq;
+import defpackage.ckmd;
+import defpackage.ckms;
+import defpackage.ckpb;
+import defpackage.ckyi;
+import defpackage.ckyj;
+import defpackage.clak;
+import defpackage.clbb;
+import defpackage.clbn;
+import defpackage.clbo;
+import defpackage.clbq;
+import defpackage.clbr;
+import defpackage.clbw;
+import defpackage.clcc;
+import defpackage.clce;
+import defpackage.clci;
+import defpackage.clcj;
+import defpackage.clcl;
+import defpackage.clcu;
+import defpackage.dhlw;
+import defpackage.dhma;
+import defpackage.dhmr;
+import defpackage.dlvf;
+import defpackage.dmmv;
+import defpackage.dpmu;
+import defpackage.ekut;
+import defpackage.elgo;
+import defpackage.elgx;
+import defpackage.elkk;
+import defpackage.elmt;
+import defpackage.elpl;
+import defpackage.elsn;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.eqex;
+import defpackage.eqgo;
+import defpackage.ezql;
+import defpackage.ezre;
+import defpackage.ezru;
+import defpackage.eztp;
+import defpackage.eztv;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.ftes;
+import defpackage.ftey;
+import defpackage.itk;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.io.FileDescriptor;
@@ -86,33 +86,33 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class WearableDataListenerChimeraService extends dkbc {
-    private citm B;
-    private cisf C;
-    private cisf D;
-    public ciug c;
-    public exfg d;
-    public ciqd e;
+public class WearableDataListenerChimeraService extends dmmv {
+    private clbr B;
+    private clak C;
+    private clak D;
+    public clcl c;
+    public eztp d;
+    public ckyi e;
     public TelephonyManager f;
-    public citz g;
-    public cidl l;
-    private citj t;
-    private cisw u;
-    private volatile ciup w;
-    private exfm x;
+    public clce g;
+    public cklq l;
+    private clbo t;
+    private clbb u;
+    private volatile clcu w;
+    private eztv x;
     private AudioManager y;
     public final HashMap a = new HashMap();
-    private final ensv v = new asmf(1, 9);
-    public final ensv b = new asmf(1, 9);
-    public final citx h = new citx();
+    private final eqgo v = new aupz(1, 9);
+    public final eqgo b = new aupz(1, 9);
+    public final clcc h = new clcc();
     private boolean z = false;
     public boolean i = false;
     public int j = 0;
     public int k = 0;
     private boolean A = false;
-    public cfcp m = cigw.a;
+    public chkb m = ckpb.a;
 
     /* JADX WARN: Removed duplicated region for block: B:18:0x0075  */
     /* JADX WARN: Removed duplicated region for block: B:21:0x008e  */
@@ -128,20 +128,20 @@ public class WearableDataListenerChimeraService extends dkbc {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private final defpackage.dfaq H(final java.lang.String r12, byte[] r13, final boolean r14) {
+    private final defpackage.dhlw H(final java.lang.String r12, byte[] r13, final boolean r14) {
         /*
             Method dump skipped, instructions count: 521
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService.H(java.lang.String, byte[], boolean):dfaq");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService.H(java.lang.String, byte[], boolean):dhlw");
     }
 
-    private final eits I() {
-        ciug h = h();
-        return h == null ? ejcg.a : eizo.f(h.h, new eiho() { // from class: ciqr
-            @Override // defpackage.eiho
+    private final elgx I() {
+        clcl h = h();
+        return h == null ? elpl.a : elmt.f(h.h, new ekut() { // from class: ckyw
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                return ((citr) obj).c;
+                return ((clbw) obj).c;
             }
         });
     }
@@ -152,7 +152,7 @@ public class WearableDataListenerChimeraService extends dkbc {
             return;
         }
         if (!this.z) {
-            ciqe.c(this, "com.google.android.gms.nearby.fastpair.service.ACTION_START_WEARABLE_SERVICE", null);
+            ckyj.c(this, "com.google.android.gms.nearby.fastpair.service.ACTION_START_WEARABLE_SERVICE", null);
         } else if (y()) {
             l();
         } else {
@@ -166,12 +166,12 @@ public class WearableDataListenerChimeraService extends dkbc {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    private final void K(defpackage.cien r14, java.util.Collection r15, android.bluetooth.BluetoothDevice r16) {
+    private final void K(defpackage.ckms r14, java.util.Collection r15, android.bluetooth.BluetoothDevice r16) {
         /*
             Method dump skipped, instructions count: 453
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService.K(cien, java.util.Collection, android.bluetooth.BluetoothDevice):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService.K(ckms, java.util.Collection, android.bluetooth.BluetoothDevice):void");
     }
 
     private final void L(boolean z) {
@@ -182,7 +182,7 @@ public class WearableDataListenerChimeraService extends dkbc {
     }
 
     private final void M(String str, BluetoothDevice bluetoothDevice) {
-        ((ejhf) cigw.a.d().ah(7485)).P("WDLS onStartCommand: %s: %s", str, bluetoothDevice != null ? dncl.c(bluetoothDevice) : "no active device");
+        ((eluo) ckpb.a.d().ai(7434)).P("WDLS onStartCommand: %s: %s", str, bluetoothDevice != null ? dpmu.c(bluetoothDevice) : "no active device");
         boolean z = true;
         if (!S() && !R()) {
             z = false;
@@ -192,113 +192,113 @@ public class WearableDataListenerChimeraService extends dkbc {
 
     private final void N(BluetoothDevice bluetoothDevice) {
         try {
-            cisf B = B(this);
-            fecj v = citl.a.v();
+            clak B = B(this);
+            fgrc v = clbq.a.v();
             String address = bluetoothDevice.getAddress();
             if (!v.b.L()) {
                 v.U();
             }
-            citl citlVar = (citl) v.b;
+            clbq clbqVar = (clbq) v.b;
             address.getClass();
-            citlVar.b |= 1;
-            citlVar.c = address;
+            clbqVar.b |= 1;
+            clbqVar.c = address;
             long currentTimeMillis = System.currentTimeMillis();
             if (!v.b.L()) {
                 v.U();
             }
-            citl citlVar2 = (citl) v.b;
-            citlVar2.b |= 2;
-            citlVar2.d = currentTimeMillis;
-            final citl citlVar3 = (citl) v.Q();
-            ((enpf) B.a.b(new eiho() { // from class: cisq
-                @Override // defpackage.eiho
+            clbq clbqVar2 = (clbq) v.b;
+            clbqVar2.b |= 2;
+            clbqVar2.d = currentTimeMillis;
+            final clbq clbqVar3 = (clbq) v.Q();
+            ((eqcy) B.a.b(new ekut() { // from class: clav
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    ciub ciubVar = (ciub) obj;
-                    final fecj fecjVar = (fecj) ciubVar.iB(5, null);
-                    fecjVar.X(ciubVar);
-                    Objects.requireNonNull(fecjVar);
-                    cisf.d(new isd() { // from class: cisl
-                        @Override // defpackage.isd
+                    clcg clcgVar = (clcg) obj;
+                    final fgrc fgrcVar = (fgrc) clcgVar.iQ(5, null);
+                    fgrcVar.X(clcgVar);
+                    Objects.requireNonNull(fgrcVar);
+                    clak.d(new itt() { // from class: claq
+                        @Override // defpackage.itt
                         public final Object a() {
-                            return DesugarCollections.unmodifiableList(((ciub) fecj.this.b).c);
+                            return DesugarCollections.unmodifiableList(((clcg) fgrc.this.b).c);
                         }
-                    }, new eiho() { // from class: cism
-                        @Override // defpackage.eiho
+                    }, new ekut() { // from class: clar
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj2) {
-                            return Long.valueOf(((citl) obj2).d);
+                            return Long.valueOf(((clbq) obj2).d);
                         }
-                    }, new iru() { // from class: cisn
-                        @Override // defpackage.iru
+                    }, new itk() { // from class: clas
+                        @Override // defpackage.itk
                         public final void a(Object obj2) {
-                            fecj fecjVar2 = fecj.this;
+                            fgrc fgrcVar2 = fgrc.this;
                             List list = (List) obj2;
-                            if (!fecjVar2.b.L()) {
-                                fecjVar2.U();
+                            if (!fgrcVar2.b.L()) {
+                                fgrcVar2.U();
                             }
-                            ciub ciubVar2 = (ciub) fecjVar2.b;
-                            ciub ciubVar3 = ciub.a;
-                            ciubVar2.c = feeq.a;
-                            if (!fecjVar2.b.L()) {
-                                fecjVar2.U();
+                            clcg clcgVar2 = (clcg) fgrcVar2.b;
+                            clcg clcgVar3 = clcg.a;
+                            clcgVar2.c = fgtj.a;
+                            if (!fgrcVar2.b.L()) {
+                                fgrcVar2.U();
                             }
-                            ciub ciubVar4 = (ciub) fecjVar2.b;
-                            ciubVar4.b();
-                            feab.E(list, ciubVar4.c);
+                            clcg clcgVar4 = (clcg) fgrcVar2.b;
+                            clcgVar4.b();
+                            fgou.E(list, clcgVar4.c);
                         }
                     });
-                    if (!fecjVar.b.L()) {
-                        fecjVar.U();
+                    if (!fgrcVar.b.L()) {
+                        fgrcVar.U();
                     }
-                    citl citlVar4 = citl.this;
-                    ciub ciubVar2 = (ciub) fecjVar.b;
-                    ciub ciubVar3 = ciub.a;
-                    citlVar4.getClass();
-                    ciubVar2.b();
-                    ciubVar2.c.add(citlVar4);
-                    return (ciub) fecjVar.Q();
+                    clbq clbqVar4 = clbq.this;
+                    clcg clcgVar2 = (clcg) fgrcVar.b;
+                    clcg clcgVar3 = clcg.a;
+                    clbqVar4.getClass();
+                    clcgVar2.b();
+                    clcgVar2.c.add(clbqVar4);
+                    return (clcg) fgrcVar.Q();
                 }
-            }, enre.a)).v(fqkx.Z(), TimeUnit.MILLISECONDS);
+            }, eqex.a)).v(ftes.Z(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            ((ejhf) cigw.a.g().ah(7510)).B("WDLS recordA2dpActiveState: %s", e.getMessage());
+            ((eluo) ckpb.a.g().ai(7459)).B("WDLS recordA2dpActiveState: %s", e.getMessage());
         }
     }
 
     private final void O(BluetoothDevice bluetoothDevice) {
-        for (ciug ciugVar : this.a.values()) {
-            if (ciugVar.e.equals(bluetoothDevice.getAddress())) {
+        for (clcl clclVar : this.a.values()) {
+            if (clclVar.e.equals(bluetoothDevice.getAddress())) {
                 try {
-                    cisf C = C(this);
-                    final eitj l = eitj.l(ciugVar.d);
-                    ((enpf) C.a.b(new eiho() { // from class: cita
-                        @Override // defpackage.eiho
+                    clak C = C(this);
+                    final elgo l = elgo.l(clclVar.d);
+                    ((eqcy) C.a.b(new ekut() { // from class: clbf
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
-                            ciuh ciuhVar = (ciuh) obj;
+                            clcm clcmVar = (clcm) obj;
                             ArrayList arrayList = new ArrayList();
-                            for (ciug ciugVar2 : ciuhVar.c) {
+                            for (clcl clclVar2 : clcmVar.c) {
                                 List list = l;
-                                if (!list.contains(ciugVar2.d)) {
-                                    arrayList.add(ciugVar2);
+                                if (!list.contains(clclVar2.d)) {
+                                    arrayList.add(clclVar2);
                                 }
                             }
-                            fecj fecjVar = (fecj) ciuhVar.iB(5, null);
-                            fecjVar.X(ciuhVar);
-                            if (!fecjVar.b.L()) {
-                                fecjVar.U();
+                            fgrc fgrcVar = (fgrc) clcmVar.iQ(5, null);
+                            fgrcVar.X(clcmVar);
+                            if (!fgrcVar.b.L()) {
+                                fgrcVar.U();
                             }
-                            ((ciuh) fecjVar.b).c = feeq.a;
-                            if (!fecjVar.b.L()) {
-                                fecjVar.U();
+                            ((clcm) fgrcVar.b).c = fgtj.a;
+                            if (!fgrcVar.b.L()) {
+                                fgrcVar.U();
                             }
-                            ciuh ciuhVar2 = (ciuh) fecjVar.b;
-                            ciuhVar2.b();
-                            feab.E(arrayList, ciuhVar2.c);
-                            return (ciuh) fecjVar.Q();
+                            clcm clcmVar2 = (clcm) fgrcVar.b;
+                            clcmVar2.b();
+                            fgou.E(arrayList, clcmVar2.c);
+                            return (clcm) fgrcVar.Q();
                         }
-                    }, enre.a)).v(fqkx.Z(), TimeUnit.MILLISECONDS);
+                    }, eqex.a)).v(ftes.Z(), TimeUnit.MILLISECONDS);
                 } catch (InterruptedException | ExecutionException | TimeoutException e) {
-                    ((ejhf) cigw.a.g().ah(7511)).B("WDLS removeWearableDevice: can't remove triangle node from db, %s", e.getMessage());
+                    ((eluo) ckpb.a.g().ai(7460)).B("WDLS removeWearableDevice: can't remove triangle node from db, %s", e.getMessage());
                 }
-                this.a.remove(ciugVar.d);
+                this.a.remove(clclVar.d);
                 return;
             }
         }
@@ -306,59 +306,59 @@ public class WearableDataListenerChimeraService extends dkbc {
 
     private final void P() {
         HashSet hashSet = new HashSet();
-        ejfg listIterator = I().values().listIterator();
+        elsn listIterator = I().values().listIterator();
         while (listIterator.hasNext()) {
-            citr citrVar = (citr) listIterator.next();
-            if (citrVar.f.size() > 0) {
-                hashSet.add(citrVar.c);
+            clbw clbwVar = (clbw) listIterator.next();
+            if (clbwVar.f.size() > 0) {
+                hashSet.add(clbwVar.c);
             }
         }
         C(this);
-        this.A = !cisf.k(this.a.values(), hashSet).isEmpty();
+        this.A = !clak.k(this.a.values(), hashSet).isEmpty();
     }
 
     private final void Q() {
         boolean isEmpty = this.a.isEmpty();
         boolean z = !isEmpty;
         try {
-            boolean isEmpty2 = ((HashSet) ((enpf) C(this).f()).v(fqkx.Z(), TimeUnit.MILLISECONDS)).isEmpty();
-            ((ejhf) cigw.a.d().ah(7530)).S("WDLS updateIsTriangleState: hasNearbyNodes %s, hasBondedHeadset %s", z, !isEmpty2);
-            citj f = f(this);
+            boolean isEmpty2 = ((HashSet) ((eqcy) C(this).f()).v(ftes.Z(), TimeUnit.MILLISECONDS)).isEmpty();
+            ((eluo) ckpb.a.d().ai(7479)).S("WDLS updateIsTriangleState: hasNearbyNodes %s, hasBondedHeadset %s", z, !isEmpty2);
+            clbo f = f(this);
             boolean z2 = false;
             boolean z3 = (isEmpty || isEmpty2) ? false : true;
-            bxdd c = f.a.c();
+            bzlt c = f.a.c();
             c.e("IS_TRIANGLE_STATE", z3);
-            cidy.b(c);
+            ckmd.b(c);
             if (!isEmpty && !isEmpty2) {
                 z2 = true;
             }
             this.i = z2;
         } catch (InterruptedException | ExecutionException | TimeoutException unused) {
-            ((ejhf) cigw.a.d().ah(7531)).x("WDLS updateIsTriangleState: failed to get bonded headset addresses");
+            ((eluo) ckpb.a.d().ai(7480)).x("WDLS updateIsTriangleState: failed to get bonded headset addresses");
         }
     }
 
     private final boolean R() {
-        return cidl.WEARABLE.equals(this.l) && fqkx.bC();
+        return cklq.WEARABLE.equals(this.l);
     }
 
     private final boolean S() {
         TelephonyManager telephonyManager;
-        return cidi.e(this.l) && (telephonyManager = this.f) != null && cidh.k(telephonyManager);
+        return ckln.e(this.l) && (telephonyManager = this.f) != null && cklm.k(telephonyManager);
     }
 
     private final boolean T(BluetoothDevice bluetoothDevice) {
-        for (ciug ciugVar : this.a.values()) {
-            if (ciugVar.e.equals(bluetoothDevice.getAddress())) {
-                ciue ciueVar = ciugVar.g;
-                if (ciueVar == null) {
-                    ciueVar = ciue.a;
+        for (clcl clclVar : this.a.values()) {
+            if (clclVar.e.equals(bluetoothDevice.getAddress())) {
+                clcj clcjVar = clclVar.g;
+                if (clcjVar == null) {
+                    clcjVar = clcj.a;
                 }
-                cidl b = cidl.b(ciueVar.c);
+                cklq b = cklq.b(clcjVar.c);
                 if (b == null) {
-                    b = cidl.UNKNOWN_DEVICE_TYPE;
+                    b = cklq.UNKNOWN_DEVICE_TYPE;
                 }
-                if (b.equals(cidl.WEARABLE)) {
+                if (b.equals(cklq.WEARABLE)) {
                     return true;
                 }
             }
@@ -366,126 +366,127 @@ public class WearableDataListenerChimeraService extends dkbc {
         return false;
     }
 
-    public static void q(ensv ensvVar) {
-        ensvVar.shutdown();
+    public static void q(eqgo eqgoVar) {
+        eqgoVar.shutdown();
         try {
-            if (ensvVar.awaitTermination(fqkx.aw(), TimeUnit.MILLISECONDS)) {
+            if (eqgoVar.awaitTermination(ftes.aw(), TimeUnit.MILLISECONDS)) {
                 return;
             }
-            ((ejhf) cigw.a.g().ah(7427)).x("WDLS destroy timeout");
+            ((eluo) ckpb.a.g().ai(7376)).x("WDLS destroy timeout");
         } catch (InterruptedException e) {
-            ((ejhf) ((ejhf) cigw.a.g().s(e)).ah((char) 7428)).x("WDLS destroy exception");
+            ((eluo) ((eluo) ckpb.a.g().s(e)).ai((char) 7377)).x("WDLS destroy exception");
         }
     }
 
-    public final citz A(MessageEventParcelable messageEventParcelable) {
-        citz citzVar;
+    public final clce A(MessageEventParcelable messageEventParcelable) {
+        clce clceVar;
         String str;
         if (messageEventParcelable == null) {
-            citzVar = this.g;
+            clceVar = this.g;
         } else {
             try {
                 byte[] bArr = messageEventParcelable.c;
-                fecp y = fecp.y(citz.a, bArr, 0, bArr.length, febw.a());
-                fecp.M(y);
-                citzVar = (citz) y;
-            } catch (fedk e) {
-                ((ejhf) ((ejhf) cigw.a.g().s(e)).ah((char) 7566)).x("MessageDataParser_parseSwitchConnectionResponse: failed to parse message data");
-                citzVar = null;
+                fgri y = fgri.y(clce.a, bArr, 0, bArr.length, fgqp.a());
+                fgri.M(y);
+                clceVar = (clce) y;
+            } catch (fgsd e) {
+                ((eluo) ((eluo) ckpb.a.g().s(e)).ai((char) 7515)).x("MessageDataParser_parseSwitchConnectionResponse: failed to parse message data");
+                clceVar = null;
             }
         }
-        if (citzVar == null || citzVar.equals(citz.a) || (citzVar.b & 4) == 0) {
-            ((ejhf) cigw.a.d().ah(7444)).x("WDLS handlePreCallingSwitch: no pre-switch response record");
+        if (clceVar == null || clceVar.equals(clce.a) || (clceVar.b & 4) == 0) {
+            ((eluo) ckpb.a.d().ai(7393)).x("WDLS handlePreCallingSwitch: no pre-switch response record");
             return null;
         }
         this.g = null;
-        bhiz d = cexc.d(this, "WearableDataListenerChimeraService");
-        if (d != null) {
-            citr citrVar = citzVar.e;
-            if (citrVar == null) {
-                citrVar = citr.a;
+        bjno e2 = chen.e(this, "WearableDataListenerChimeraService");
+        if (e2 != null) {
+            clbw clbwVar = clceVar.e;
+            if (clbwVar == null) {
+                clbwVar = clbw.a;
             }
-            if ((citrVar.b & 8) != 0) {
-                citr citrVar2 = citzVar.e;
-                if (citrVar2 == null) {
-                    citrVar2 = citr.a;
+            if ((clbwVar.b & 8) != 0) {
+                clbw clbwVar2 = clceVar.e;
+                if (clbwVar2 == null) {
+                    clbwVar2 = clbw.a;
                 }
-                if (!citi.e(citrVar2.h)) {
-                    ejhf ejhfVar = (ejhf) cigw.a.d().ah(7447);
-                    citr citrVar3 = citzVar.e;
-                    if (citrVar3 == null) {
-                        citrVar3 = citr.a;
+                if (!clbn.e(clbwVar2.h)) {
+                    eluo eluoVar = (eluo) ckpb.a.d().ai(7396);
+                    clbw clbwVar3 = clceVar.e;
+                    if (clbwVar3 == null) {
+                        clbwVar3 = clbw.a;
                     }
-                    String c = dncl.c(citrVar3.c);
-                    citr citrVar4 = citzVar.e;
-                    if (citrVar4 == null) {
-                        citrVar4 = citr.a;
+                    String c = dpmu.c(clbwVar3.c);
+                    clbw clbwVar4 = clceVar.e;
+                    if (clbwVar4 == null) {
+                        clbwVar4 = clbw.a;
                     }
-                    ejhfVar.P("WDLS handlePreCallingSwitch: not disconnect %s (%s)", c, citrVar4.h);
+                    eluoVar.P("WDLS handlePreCallingSwitch: not disconnect %s (%s)", c, clbwVar4.h);
                 }
             }
-            ejhf ejhfVar2 = (ejhf) cigw.a.d().ah(7446);
-            citr citrVar5 = citzVar.e;
-            if (citrVar5 == null) {
-                citrVar5 = citr.a;
+            eluo eluoVar2 = (eluo) ckpb.a.d().ai(7395);
+            clbw clbwVar5 = clceVar.e;
+            if (clbwVar5 == null) {
+                clbwVar5 = clbw.a;
             }
-            String c2 = dncl.c(citrVar5.c);
-            citr citrVar6 = citzVar.e;
-            if (((citrVar6 == null ? citr.a : citrVar6).b & 8) != 0) {
-                if (citrVar6 == null) {
-                    citrVar6 = citr.a;
+            String c2 = dpmu.c(clbwVar5.c);
+            clbw clbwVar6 = clceVar.e;
+            if (((clbwVar6 == null ? clbw.a : clbwVar6).b & 8) != 0) {
+                if (clbwVar6 == null) {
+                    clbwVar6 = clbw.a;
                 }
-                str = citrVar6.h;
+                str = clbwVar6.h;
             } else {
                 str = "na";
             }
-            ejhfVar2.P("WDLS handlePreCallingSwitch: disconnect %s (%s)", c2, str);
-            citr citrVar7 = citzVar.e;
-            if (citrVar7 == null) {
-                citrVar7 = citr.a;
+            eluoVar2.P("WDLS handlePreCallingSwitch: disconnect %s (%s)", c2, str);
+            clbw clbwVar7 = clceVar.e;
+            if (clbwVar7 == null) {
+                clbwVar7 = clbw.a;
             }
-            BluetoothDevice d2 = d.d(citrVar7.c);
-            fqld.bg();
-            excc.r(d, d2);
+            BluetoothDevice d = e2.d(clbwVar7.c);
+            ftey.bg();
+            ezql.r(e2, d);
         } else {
-            ejhf ejhfVar3 = (ejhf) cigw.a.g().ah(7445);
-            citr citrVar8 = citzVar.e;
-            if (citrVar8 == null) {
-                citrVar8 = citr.a;
+            eluo eluoVar3 = (eluo) ckpb.a.g().ai(7394);
+            clbw clbwVar8 = clceVar.e;
+            if (clbwVar8 == null) {
+                clbwVar8 = clbw.a;
             }
-            ejhfVar3.B("WDLS handlePreCallingSwitch: skip because bluetooth adapter is null (device=%s)", dncl.c(citrVar8.c));
+            eluoVar3.B("WDLS handlePreCallingSwitch: skip because bluetooth adapter is null (device=%s)", dpmu.c(clbwVar8.c));
         }
-        return citzVar;
+        return clceVar;
     }
 
-    final synchronized cisf B(Context context) {
+    final synchronized clak B(Context context) {
         if (this.D == null) {
-            this.D = new cisf(context, (byte[]) null);
+            this.D = new clak(context, (byte[]) null);
         }
         return this.D;
     }
 
-    final synchronized cisf C(Context context) {
+    final synchronized clak C(Context context) {
         if (this.C == null) {
-            this.C = new cisf(context, (char[]) null);
+            this.C = new clak(context, (char[]) null);
         }
         return this.C;
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    @Override // defpackage.dkbc, defpackage.djkh
+    @Override // defpackage.dmmv, defpackage.dlwa
     public final void a(final MessageEventParcelable messageEventParcelable) {
         char c;
-        if (!fqld.ar()) {
-            ((ejhf) cigw.a.g().ah(7496)).x("WDLS onMessageReceived: wearable service is not enabled");
+        if (!ftey.as()) {
+            ((eluo) ckpb.a.g().ai(7445)).x("WDLS onMessageReceived: wearable service is not enabled");
         }
-        ejhf ejhfVar = (ejhf) cigw.a.d().ah(7493);
+        chkb chkbVar = ckpb.a;
+        eluo eluoVar = (eluo) chkbVar.d().ai(7442);
         String str = messageEventParcelable.d;
         String str2 = messageEventParcelable.b;
-        ejhfVar.P("WDLS onMessageReceived: %s, %s", str, str2);
-        ensv ensvVar = this.v;
-        if (ensvVar.isShutdown()) {
-            ((ejhf) cigw.a.g().ah(7495)).x("WDLS onMessageReceived: the service thread is shutdown, skip the message");
+        eluoVar.P("WDLS onMessageReceived: %s, %s", str, str2);
+        eqgo eqgoVar = this.v;
+        if (eqgoVar.isShutdown()) {
+            ((eluo) chkbVar.g().ai(7444)).x("WDLS onMessageReceived: the service thread is shutdown, skip the message");
             return;
         }
         switch (str2.hashCode()) {
@@ -565,16 +566,16 @@ public class WearableDataListenerChimeraService extends dkbc {
         }
         switch (c) {
             case 0:
-                ensvVar.execute(new Runnable() { // from class: ciqh
-                    /* JADX WARN: Removed duplicated region for block: B:100:0x02b4  */
-                    /* JADX WARN: Removed duplicated region for block: B:103:0x02f4  */
-                    /* JADX WARN: Removed duplicated region for block: B:112:0x035b  */
-                    /* JADX WARN: Removed duplicated region for block: B:155:0x067f  */
-                    /* JADX WARN: Removed duplicated region for block: B:165:0x06d3  */
-                    /* JADX WARN: Removed duplicated region for block: B:170:0x06e1  */
-                    /* JADX WARN: Removed duplicated region for block: B:176:0x06b2  */
-                    /* JADX WARN: Removed duplicated region for block: B:178:0x06b5  */
-                    /* JADX WARN: Removed duplicated region for block: B:239:0x059e  */
+                eqgoVar.execute(new Runnable() { // from class: ckym
+                    /* JADX WARN: Removed duplicated region for block: B:103:0x02b2  */
+                    /* JADX WARN: Removed duplicated region for block: B:106:0x02f2  */
+                    /* JADX WARN: Removed duplicated region for block: B:115:0x0359  */
+                    /* JADX WARN: Removed duplicated region for block: B:158:0x067d  */
+                    /* JADX WARN: Removed duplicated region for block: B:168:0x06d1  */
+                    /* JADX WARN: Removed duplicated region for block: B:173:0x06df  */
+                    /* JADX WARN: Removed duplicated region for block: B:179:0x06b0  */
+                    /* JADX WARN: Removed duplicated region for block: B:181:0x06b3  */
+                    /* JADX WARN: Removed duplicated region for block: B:242:0x059c  */
                     @Override // java.lang.Runnable
                     /*
                         Code decompiled incorrectly, please refer to instructions dump.
@@ -582,37 +583,37 @@ public class WearableDataListenerChimeraService extends dkbc {
                     */
                     public final void run() {
                         /*
-                            Method dump skipped, instructions count: 1814
+                            Method dump skipped, instructions count: 1812
                             To view this dump change 'Code comments level' option to 'DEBUG'
                         */
-                        throw new UnsupportedOperationException("Method not decompiled: defpackage.ciqh.run():void");
+                        throw new UnsupportedOperationException("Method not decompiled: defpackage.ckym.run():void");
                     }
                 });
                 break;
             case 1:
-                ensvVar.execute(new Runnable() { // from class: ciqs
+                eqgoVar.execute(new Runnable() { // from class: ckyx
                     @Override // java.lang.Runnable
                     public final void run() {
                         WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
-                        if (cidi.e(wearableDataListenerChimeraService.l)) {
-                            ciua a = citm.a(messageEventParcelable.c);
+                        if (ckln.e(wearableDataListenerChimeraService.l)) {
+                            clcf a = clbr.a(messageEventParcelable.c);
                             int i = a.b;
                             if ((i & 1) == 0 || (i & 4) == 0 || (i & 8) == 0) {
-                                ((ejhf) cigw.a.g().ah(7502)).x("WDLS onTriangleAnalyticsMonitorStartReceived: invalid triangle analytics data");
+                                ((eluo) ckpb.a.g().ai(7451)).x("WDLS onTriangleAnalyticsMonitorStartReceived: invalid triangle analytics data");
                             } else {
-                                ciug i2 = wearableDataListenerChimeraService.i(a.e);
-                                if (i2.equals(ciug.b)) {
-                                    ((ejhf) cigw.a.g().ah(7503)).B("WDLS onTriangleAnalyticsMonitorStartReceived: can't get triangle node %s", a.e);
+                                clcl i2 = wearableDataListenerChimeraService.i(a.e);
+                                if (i2.equals(clcl.b)) {
+                                    ((eluo) ckpb.a.g().ai(7452)).B("WDLS onTriangleAnalyticsMonitorStartReceived: can't get triangle node %s", a.e);
                                 } else {
-                                    cien b = cien.b(a.c);
+                                    ckms b = ckms.b(a.c);
                                     if (b == null) {
-                                        b = cien.UNKNOWN_REQUEST_TYPE;
+                                        b = ckms.UNKNOWN_REQUEST_TYPE;
                                     }
                                     wearableDataListenerChimeraService.t(b, i2, a.f);
                                 }
                             }
                         } else {
-                            ((ejhf) cigw.a.f().ah(7504)).B("WDLS onTriangleAnalyticsMonitorStartReceived: skip logging on %s", wearableDataListenerChimeraService.l.name());
+                            ((eluo) ckpb.a.f().ai(7453)).B("WDLS onTriangleAnalyticsMonitorStartReceived: skip logging on %s", wearableDataListenerChimeraService.l.name());
                         }
                         wearableDataListenerChimeraService.k++;
                         wearableDataListenerChimeraService.w(true);
@@ -620,41 +621,41 @@ public class WearableDataListenerChimeraService extends dkbc {
                 });
                 break;
             case 2:
-                ensvVar.execute(new Runnable() { // from class: ciqw
+                eqgoVar.execute(new Runnable() { // from class: ckzb
                     @Override // java.lang.Runnable
                     public final void run() {
                         WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
-                        if (cidi.e(wearableDataListenerChimeraService.l)) {
-                            ciua a = citm.a(messageEventParcelable.c);
+                        if (ckln.e(wearableDataListenerChimeraService.l)) {
+                            clcf a = clbr.a(messageEventParcelable.c);
                             int i = a.b;
                             if ((i & 1) == 0 || (i & 4) == 0 || (i & 8) == 0) {
-                                ((ejhf) cigw.a.g().ah(7505)).x("WDLS onTriangleAnalyticsSwitchLatencyReceived: invalid triangle analytics data");
+                                ((eluo) ckpb.a.g().ai(7454)).x("WDLS onTriangleAnalyticsSwitchLatencyReceived: invalid triangle analytics data");
                             } else {
-                                cien cienVar = cien.PHONE_WATCH_TETHERED;
-                                cien b = cien.b(a.c);
+                                ckms ckmsVar = ckms.PHONE_WATCH_TETHERED;
+                                ckms b = ckms.b(a.c);
                                 if (b == null) {
-                                    b = cien.UNKNOWN_REQUEST_TYPE;
+                                    b = ckms.UNKNOWN_REQUEST_TYPE;
                                 }
-                                if (cienVar.equals(b)) {
+                                if (ckmsVar.equals(b)) {
                                     String o = wearableDataListenerChimeraService.o();
                                     if (o != null) {
-                                        cibd.c(wearableDataListenerChimeraService, o, a.d).g(a.g);
+                                        ckji.c(wearableDataListenerChimeraService, o, a.d).g(a.g);
                                     } else {
-                                        ((ejhf) cigw.a.g().ah(7506)).x("WDLS onTriangleAnalyticsSwitchLatencyReceived: skip logging for phone and watch tether because unknown local device address");
+                                        ((eluo) ckpb.a.g().ai(7455)).x("WDLS onTriangleAnalyticsSwitchLatencyReceived: skip logging for phone and watch tether because unknown local device address");
                                     }
                                 } else {
-                                    cien cienVar2 = cien.WATCH_HEADSET_AUTO_CONNECT;
-                                    cien b2 = cien.b(a.c);
+                                    ckms ckmsVar2 = ckms.WATCH_HEADSET_AUTO_CONNECT;
+                                    ckms b2 = ckms.b(a.c);
                                     if (b2 == null) {
-                                        b2 = cien.UNKNOWN_REQUEST_TYPE;
+                                        b2 = ckms.UNKNOWN_REQUEST_TYPE;
                                     }
-                                    if (cienVar2.equals(b2)) {
-                                        cibd.a(wearableDataListenerChimeraService, a.d, a.f).g(a.g);
+                                    if (ckmsVar2.equals(b2)) {
+                                        ckji.a(wearableDataListenerChimeraService, a.d, a.f).g(a.g);
                                     }
                                 }
                             }
                         } else {
-                            ((ejhf) cigw.a.f().ah(7507)).B("WDLS onTriangleAnalyticsSwitchLatencyReceived: skip logging on %s", wearableDataListenerChimeraService.l.name());
+                            ((eluo) ckpb.a.f().ai(7456)).B("WDLS onTriangleAnalyticsSwitchLatencyReceived: skip logging on %s", wearableDataListenerChimeraService.l.name());
                         }
                         wearableDataListenerChimeraService.k++;
                         wearableDataListenerChimeraService.w(true);
@@ -662,29 +663,29 @@ public class WearableDataListenerChimeraService extends dkbc {
                 });
                 break;
             case 3:
-                ensvVar.execute(new Runnable() { // from class: ciqx
+                eqgoVar.execute(new Runnable() { // from class: ckzc
                     @Override // java.lang.Runnable
                     public final void run() {
                         WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
-                        if (cidi.e(wearableDataListenerChimeraService.l)) {
-                            ciua a = citm.a(messageEventParcelable.c);
+                        if (ckln.e(wearableDataListenerChimeraService.l)) {
+                            clcf a = clbr.a(messageEventParcelable.c);
                             if ((a.b & 32) != 0) {
-                                citz citzVar = a.h;
-                                if (citzVar == null) {
-                                    citzVar = citz.a;
+                                clce clceVar = a.h;
+                                if (clceVar == null) {
+                                    clceVar = clce.a;
                                 }
-                                citz citzVar2 = citz.a;
-                                if (!citzVar.equals(citzVar2)) {
-                                    citz citzVar3 = a.h;
-                                    if (citzVar3 != null) {
-                                        citzVar2 = citzVar3;
+                                clce clceVar2 = clce.a;
+                                if (!clceVar.equals(clceVar2)) {
+                                    clce clceVar3 = a.h;
+                                    if (clceVar3 != null) {
+                                        clceVar2 = clceVar3;
                                     }
-                                    wearableDataListenerChimeraService.u(citzVar2);
+                                    wearableDataListenerChimeraService.u(clceVar2);
                                 }
                             }
-                            ((ejhf) cigw.a.g().ah(7508)).x("WDLS onTriangleAnalyticsSwitchNotTriggerReceived: not found switch connection response");
+                            ((eluo) ckpb.a.g().ai(7457)).x("WDLS onTriangleAnalyticsSwitchNotTriggerReceived: not found switch connection response");
                         } else {
-                            ((ejhf) cigw.a.f().ah(7509)).B("WDLS onTriangleAnalyticsSwitchNotTriggerReceived: skip logging on %s", wearableDataListenerChimeraService.l.name());
+                            ((eluo) ckpb.a.f().ai(7458)).B("WDLS onTriangleAnalyticsSwitchNotTriggerReceived: skip logging on %s", wearableDataListenerChimeraService.l.name());
                         }
                         wearableDataListenerChimeraService.k++;
                         wearableDataListenerChimeraService.w(true);
@@ -692,11 +693,11 @@ public class WearableDataListenerChimeraService extends dkbc {
                 });
                 break;
             case 4:
-                if (cidl.WEARABLE.equals(this.l)) {
-                    ((ejhf) cigw.a.f().ah(7494)).x("WDLS schedule one off sync task for Footprints data.");
+                if (cklq.WEARABLE.equals(this.l)) {
+                    ((eluo) chkbVar.f().ai(7443)).x("WDLS schedule one off sync task for Footprints data.");
                     TaskSchedulerChimeraService.g(this, true);
                 }
-                ensvVar.execute(new Runnable() { // from class: ciqy
+                eqgoVar.execute(new Runnable() { // from class: ckzd
                     @Override // java.lang.Runnable
                     public final void run() {
                         WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
@@ -706,7 +707,7 @@ public class WearableDataListenerChimeraService extends dkbc {
                 });
                 break;
             case 5:
-                ensvVar.execute(new Runnable() { // from class: ciqz
+                eqgoVar.execute(new Runnable() { // from class: ckze
                     @Override // java.lang.Runnable
                     public final void run() {
                         WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
@@ -717,84 +718,84 @@ public class WearableDataListenerChimeraService extends dkbc {
                 });
                 break;
             case 6:
-                ensvVar.execute(new Runnable() { // from class: cira
+                eqgoVar.execute(new Runnable() { // from class: ckzf
                     @Override // java.lang.Runnable
                     public final void run() {
                         WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
-                        ciqe.b(wearableDataListenerChimeraService, "com.google.android.gms.nearby.discovery.fastpair.connectionswitch.ACTION_RECEIVE_TRIANGLE_SWITCH_CONNECTION_END", null);
+                        ckyj.b(wearableDataListenerChimeraService, "com.google.android.gms.nearby.discovery.fastpair.connectionswitch.ACTION_RECEIVE_TRIANGLE_SWITCH_CONNECTION_END", null);
                         wearableDataListenerChimeraService.k++;
                         wearableDataListenerChimeraService.w(true);
                     }
                 });
                 break;
             case 7:
-                ensvVar.execute(new Runnable() { // from class: cirb
+                eqgoVar.execute(new Runnable() { // from class: ckzg
                     @Override // java.lang.Runnable
                     public final void run() {
                         WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
-                        citm g = wearableDataListenerChimeraService.g();
-                        cidl cidlVar = g.a;
-                        if (cidi.e(cidlVar)) {
-                            ciua a = citm.a(messageEventParcelable.c);
+                        clbr g = wearableDataListenerChimeraService.g();
+                        cklq cklqVar = g.a;
+                        if (ckln.e(cklqVar)) {
+                            clcf a = clbr.a(messageEventParcelable.c);
                             if ((a.b & 8) != 0) {
                                 g.b(a.f, 0);
                             } else {
-                                ((ejhf) cigw.a.g().ah(7563)).x("AnalyticsHelper_logPeripheralSwitchBack: no headset address");
+                                ((eluo) ckpb.a.g().ai(7512)).x("AnalyticsHelper_logPeripheralSwitchBack: no headset address");
                             }
                         } else {
-                            ((ejhf) cigw.a.f().ah(7564)).B("AnalyticsHelper_logPeripheralSwitchBack: skip %s", cidlVar.name());
+                            ((eluo) ckpb.a.f().ai(7513)).B("AnalyticsHelper_logPeripheralSwitchBack: skip %s", cklqVar.name());
                         }
                         wearableDataListenerChimeraService.w(true);
                     }
                 });
                 break;
             case '\b':
-                ensvVar.execute(new Runnable() { // from class: circ
+                eqgoVar.execute(new Runnable() { // from class: ckzh
                     @Override // java.lang.Runnable
                     public final void run() {
                         WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
-                        if (wearableDataListenerChimeraService.l.equals(cidl.WEARABLE)) {
+                        if (wearableDataListenerChimeraService.l.equals(cklq.WEARABLE)) {
                             MessageEventParcelable messageEventParcelable2 = messageEventParcelable;
-                            cfcp cfcpVar = cigw.a;
-                            ((ejhf) cfcpVar.d().ah(7468)).x("WDLS: receive message to update media status for wearable node");
+                            chkb chkbVar2 = ckpb.a;
+                            ((eluo) chkbVar2.d().ai(7417)).x("WDLS: receive message to update media status for wearable node");
                             byte[] bArr = messageEventParcelable2.c;
                             if (bArr == null || bArr.length <= 0) {
-                                ((ejhf) cfcpVar.d().ah(7525)).x("WDLS: syncMediaStatus message event without data to parse");
+                                ((eluo) chkbVar2.d().ai(7474)).x("WDLS: syncMediaStatus message event without data to parse");
                             } else {
                                 boolean z = bArr[0] != 0;
-                                ((ejhf) cfcpVar.d().ah(7526)).B("WDLS: syncMediaStatus music is active = %b", Boolean.valueOf(z));
-                                ciug h = wearableDataListenerChimeraService.h();
+                                ((eluo) chkbVar2.d().ai(7475)).B("WDLS: syncMediaStatus music is active = %b", Boolean.valueOf(z));
+                                clcl h = wearableDataListenerChimeraService.h();
                                 if (h == null) {
-                                    ((ejhf) cigw.a.g().ah(7527)).x("WDLS syncMediaStatus: local node is null");
+                                    ((eluo) chkbVar2.g().ai(7476)).x("WDLS syncMediaStatus: local node is null");
                                 } else {
-                                    fecj fecjVar = (fecj) h.iB(5, null);
-                                    fecjVar.X(h);
-                                    ciud ciudVar = (ciud) fecjVar;
-                                    fecj v = ciuf.a.v();
+                                    fgrc fgrcVar = (fgrc) h.iQ(5, null);
+                                    fgrcVar.X(h);
+                                    clci clciVar = (clci) fgrcVar;
+                                    fgrc v = clck.a.v();
                                     if (!v.b.L()) {
                                         v.U();
                                     }
-                                    ciuf ciufVar = (ciuf) v.b;
-                                    ciufVar.b |= 1;
-                                    ciufVar.c = z;
+                                    clck clckVar = (clck) v.b;
+                                    clckVar.b |= 1;
+                                    clckVar.c = z;
                                     long currentTimeMillis = System.currentTimeMillis();
                                     if (!v.b.L()) {
                                         v.U();
                                     }
-                                    ciuf ciufVar2 = (ciuf) v.b;
-                                    ciufVar2.b |= 2;
-                                    ciufVar2.d = currentTimeMillis;
-                                    ciuf ciufVar3 = (ciuf) v.Q();
-                                    if (!ciudVar.b.L()) {
-                                        ciudVar.U();
+                                    clck clckVar2 = (clck) v.b;
+                                    clckVar2.b |= 2;
+                                    clckVar2.d = currentTimeMillis;
+                                    clck clckVar3 = (clck) v.Q();
+                                    if (!clciVar.b.L()) {
+                                        clciVar.U();
                                     }
-                                    ciug ciugVar = (ciug) ciudVar.b;
-                                    ciufVar3.getClass();
-                                    ciugVar.p = ciufVar3;
-                                    ciugVar.c |= 1024;
-                                    ciug ciugVar2 = (ciug) ciudVar.Q();
-                                    wearableDataListenerChimeraService.x(true, ciugVar2);
-                                    wearableDataListenerChimeraService.c = ciugVar2;
+                                    clcl clclVar = (clcl) clciVar.b;
+                                    clckVar3.getClass();
+                                    clclVar.p = clckVar3;
+                                    clclVar.c |= 1024;
+                                    clcl clclVar2 = (clcl) clciVar.Q();
+                                    wearableDataListenerChimeraService.x(true, clclVar2);
+                                    wearableDataListenerChimeraService.c = clclVar2;
                                     wearableDataListenerChimeraService.s(wearableDataListenerChimeraService.a);
                                 }
                             }
@@ -804,16 +805,16 @@ public class WearableDataListenerChimeraService extends dkbc {
                 });
                 break;
             case '\t':
-                ensvVar.execute(new Runnable() { // from class: cird
+                eqgoVar.execute(new Runnable() { // from class: ckzi
                     @Override // java.lang.Runnable
                     public final void run() {
                         WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
-                        if (cidi.e(wearableDataListenerChimeraService.l)) {
+                        if (ckln.e(wearableDataListenerChimeraService.l)) {
                             MessageEventParcelable messageEventParcelable2 = messageEventParcelable;
-                            ((ejhf) cigw.a.d().ah(7469)).x("WDLS phone receive wear message to know watch is active hfp seeker");
+                            ((eluo) ckpb.a.d().ai(7418)).x("WDLS phone receive wear message to know watch is active hfp seeker");
                             Bundle bundle = new Bundle();
                             bundle.putByteArray("com.google.android.gms.nearby.discovery.fastpair.connectionswitch.RESUME_MEDIA_STATE", messageEventParcelable2.c);
-                            ciqe.b(wearableDataListenerChimeraService, "com.google.android.gms.nearby.discovery.fastpair.connectionswitch.ACTION_RECEIVE_WATCH_AS_HFP_SEEKER", bundle);
+                            ckyj.b(wearableDataListenerChimeraService, "com.google.android.gms.nearby.discovery.fastpair.connectionswitch.ACTION_RECEIVE_WATCH_AS_HFP_SEEKER", bundle);
                         }
                     }
                 });
@@ -821,61 +822,60 @@ public class WearableDataListenerChimeraService extends dkbc {
         }
     }
 
-    @Override // defpackage.dkbc, defpackage.djjk
-    public final void b(djjm djjmVar) {
-        if (fqld.ar() && "fast_pair_support".equals(djjmVar.a())) {
+    @Override // defpackage.dmmv, defpackage.dlvd
+    public final void b(dlvf dlvfVar) {
+        if (ftey.as() && "fast_pair_support".equals(dlvfVar.a())) {
             Bundle bundle = new Bundle();
             bundle.putBoolean("com.google.android.gms.nearby.fastpair.service.EXTRA_IS_CAPABILITY_CHANGED", true);
-            bundle.putParcelableArrayList("com.google.android.gms.nearby.fastpair.service.EXTRA_NODE_HOLDER_LIST", eixf.b(NodeHolder.a(djjmVar.b())));
-            ciqe.c(this, "com.google.android.gms.nearby.fastpair.service.ACTION_START_WEARABLE_SERVICE", bundle);
+            bundle.putParcelableArrayList("com.google.android.gms.nearby.fastpair.service.EXTRA_NODE_HOLDER_LIST", elkk.b(NodeHolder.a(dlvfVar.b())));
+            ckyj.c(this, "com.google.android.gms.nearby.fastpair.service.ACTION_START_WEARABLE_SERVICE", bundle);
         }
     }
 
     @Override // com.google.android.chimera.Service
     protected final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        asok.a(printWriter, strArr, new asoj() { // from class: ciql
-            @Override // defpackage.asoj
+        ause.a(printWriter, strArr, new ausd() { // from class: ckyq
+            @Override // defpackage.ausd
             public final void a(PrintWriter printWriter2, String[] strArr2) {
                 printWriter2.println("Flags:");
-                printWriter2.printf("  enableTriangleAudioSwitch=%s\n", Boolean.valueOf(fqld.ah()));
-                printWriter2.printf("  enableTriangleAudioSwitchForCalling=%s\n", Boolean.valueOf(fqld.ai()));
-                printWriter2.printf("  enableWearablePeripheralApi=%s\n", Boolean.valueOf(fqld.aq()));
-                printWriter2.printf("  enableTaskSchedulerService=%s\n", Boolean.valueOf(fqld.af()));
-                printWriter2.printf("  enableTriangleAnalytics=%s\n", Boolean.valueOf(fqld.ag()));
-                printWriter2.printf("  enableWearMessageMonitor=%s\n", Boolean.valueOf(fqld.ao()));
-                printWriter2.printf("  checkPeripheralSupportSwitch=%s\n", Boolean.valueOf(fqld.s()));
-                printWriter2.printf("  supportToggleForTriangleSwitch=%s\n", Boolean.valueOf(fqld.aX()));
-                printWriter2.printf("  triangleProactiveDeliverSwitchCandidate=%s\n", Boolean.valueOf(fqkx.bC()));
-                printWriter2.printf("  enableSassForTriangleCallingCase=%s\n", Boolean.valueOf(fqld.Z()));
-                printWriter2.printf("  serviceDestroyTimeoutMs=%s\n", Long.valueOf(fqkx.aw()));
-                printWriter2.printf("  protostoreOperationTimeoutMs=%s\n", Long.valueOf(fqkx.Z()));
-                printWriter2.printf("  discoveryBindingOperationTimeoutMs=%s\n", Long.valueOf(fqkx.v()));
-                printWriter2.printf("  wearApiOperationTimeoutMillis=%s\n", Long.valueOf(fqkx.aG()));
-                printWriter2.printf("  refreshTriangleNodeMins=%s\n", Long.valueOf(fqkx.aa()));
-                Object[] objArr = {Boolean.valueOf(fqld.h())};
+                printWriter2.printf("  enableTriangleAudioSwitch=%s\n", Boolean.valueOf(ftey.ai()));
+                printWriter2.printf("  enableTriangleAudioSwitchForCalling=%s\n", Boolean.valueOf(ftey.aj()));
+                printWriter2.printf("  enableWearablePeripheralApi=%s\n", Boolean.valueOf(ftey.ar()));
+                printWriter2.printf("  enableTaskSchedulerService=%s\n", Boolean.valueOf(ftey.ag()));
+                printWriter2.printf("  enableTriangleAnalytics=%s\n", Boolean.valueOf(ftey.ah()));
+                printWriter2.printf("  enableWearMessageMonitor=%s\n", Boolean.valueOf(ftey.ap()));
+                printWriter2.printf("  checkPeripheralSupportSwitch=%s\n", Boolean.valueOf(ftey.t()));
+                printWriter2.printf("  supportToggleForTriangleSwitch=%s\n", Boolean.valueOf(ftey.aX()));
+                printWriter2.printf("  enableSassForTriangleCallingCase=%s\n", Boolean.valueOf(ftey.aa()));
+                printWriter2.printf("  serviceDestroyTimeoutMs=%s\n", Long.valueOf(ftes.aw()));
+                printWriter2.printf("  protostoreOperationTimeoutMs=%s\n", Long.valueOf(ftes.Z()));
+                printWriter2.printf("  discoveryBindingOperationTimeoutMs=%s\n", Long.valueOf(ftes.v()));
+                printWriter2.printf("  wearApiOperationTimeoutMillis=%s\n", Long.valueOf(ftes.aG()));
+                printWriter2.printf("  refreshTriangleNodeMins=%s\n", Long.valueOf(ftes.aa()));
+                printWriter2.printf("  AddSassDeviceIntoTriangleCandidate=%s\n", Boolean.valueOf(ftey.h()));
+                Object[] objArr = {Boolean.valueOf(ftey.R())};
                 WearableDataListenerChimeraService wearableDataListenerChimeraService = WearableDataListenerChimeraService.this;
-                printWriter2.printf("  AddSassDeviceIntoTriangleCandidate=%s\n", objArr);
-                printWriter2.printf("  enableIdentityAddressMappingForTriangleCandidate=%s\n", Boolean.valueOf(fqld.Q()));
+                printWriter2.printf("  enableIdentityAddressMappingForTriangleCandidate=%s\n", objArr);
                 printWriter2.println();
                 printWriter2.printf("isTriangleState=%s\n", Boolean.valueOf(wearableDataListenerChimeraService.i));
-                ciug h = wearableDataListenerChimeraService.h();
+                clcl h = wearableDataListenerChimeraService.h();
                 printWriter2.println("selfNode:");
                 if (h != null) {
-                    printWriter2.printf("  %s\n", cisf.j(h));
+                    printWriter2.printf("  %s\n", clak.j(h));
                 }
                 printWriter2.println("nearbyNodes:");
                 Iterator it = wearableDataListenerChimeraService.a.values().iterator();
                 while (it.hasNext()) {
-                    printWriter2.printf("  %s\n", cisf.j((ciug) it.next()));
+                    printWriter2.printf("  %s\n", clak.j((clcl) it.next()));
                 }
                 printWriter2.println();
                 wearableDataListenerChimeraService.m().l(printWriter2);
-                if (fqld.ao()) {
+                if (ftey.ap()) {
                     printWriter2.println();
-                    cisw e = wearableDataListenerChimeraService.e(wearableDataListenerChimeraService);
-                    String format = String.format(Locale.US, "wearMessageMonitorDurationHours=%s", Long.valueOf(fqkx.aI()));
-                    String format2 = String.format(Locale.US, ", wearMessageMonitorSlots=%s", Long.valueOf(fqkx.aJ()));
-                    String format3 = String.format(Locale.US, ", wearMessageMonitorTotalCount=%s", Long.valueOf(fqkx.aK()));
+                    clbb e = wearableDataListenerChimeraService.e(wearableDataListenerChimeraService);
+                    String format = String.format(Locale.US, "wearMessageMonitorDurationHours=%s", Long.valueOf(ftes.aI()));
+                    String format2 = String.format(Locale.US, ", wearMessageMonitorSlots=%s", Long.valueOf(ftes.aJ()));
+                    String format3 = String.format(Locale.US, ", wearMessageMonitorTotalCount=%s", Long.valueOf(ftes.aK()));
                     String format4 = String.format(Locale.US, ", currentHour=%s UTC", Long.valueOf(e.c));
                     Locale locale = Locale.US;
                     Integer valueOf = Integer.valueOf(e.c().cardinality());
@@ -883,33 +883,33 @@ public class WearableDataListenerChimeraService extends dkbc {
                     printWriter2.println("TriangleMessageMonitor{" + format + format2 + format3 + format4 + String.format(locale, ", MessageTimeSlots=%s/%s", valueOf, valueOf2) + String.format(Locale.US, ", SentCount=%s", Integer.valueOf(e.d)) + String.format(Locale.US, ", SentTimeSlots=%s/%s", Integer.valueOf(e.e.cardinality()), valueOf2) + String.format(Locale.US, ", ReceivedCount=%s", Integer.valueOf(e.f)) + String.format(Locale.US, ", ReceivedTimeSlots=%s/%s", Integer.valueOf(e.g.cardinality()), valueOf2) + String.format(Locale.US, ", EventTriggerCount=%s", Integer.valueOf(e.h)) + String.format(Locale.US, ", EventTriggerTimeSlots=%s/%s", Integer.valueOf(e.i.cardinality()), valueOf2) + "}");
                 }
             }
-        }, "WearableDataListenerChimeraService", fqkx.ax());
+        }, "WearableDataListenerChimeraService", ftes.ax());
     }
 
-    public final synchronized cisw e(Context context) {
+    public final synchronized clbb e(Context context) {
         if (this.u == null) {
-            this.u = new cisw(context);
+            this.u = new clbb(context);
         }
         return this.u;
     }
 
-    public final synchronized citj f(Context context) {
+    public final synchronized clbo f(Context context) {
         if (this.t == null) {
-            this.t = new citj(context);
+            this.t = new clbo(context);
         }
         return this.t;
     }
 
-    public final citm g() {
+    public final clbr g() {
         WearableDataListenerChimeraService wearableDataListenerChimeraService;
         if (this.B == null) {
             wearableDataListenerChimeraService = this;
-            wearableDataListenerChimeraService.B = new citm(wearableDataListenerChimeraService, this.l, j(), B(this), new iru() { // from class: ciqk
-                @Override // defpackage.iru
+            wearableDataListenerChimeraService.B = new clbr(wearableDataListenerChimeraService, this.l, j(), B(this), new itk() { // from class: ckyp
+                @Override // defpackage.itk
                 public final void a(Object obj) {
                     long longValue = ((Long) obj).longValue();
                     WearableDataListenerChimeraService wearableDataListenerChimeraService2 = WearableDataListenerChimeraService.this;
-                    TaskSchedulerChimeraService.j(wearableDataListenerChimeraService2, new cibd(wearableDataListenerChimeraService2, 1, longValue, null), false);
+                    TaskSchedulerChimeraService.j(wearableDataListenerChimeraService2, new ckji(wearableDataListenerChimeraService2, 1, longValue, null), false);
                 }
             });
         } else {
@@ -918,49 +918,50 @@ public class WearableDataListenerChimeraService extends dkbc {
         return wearableDataListenerChimeraService.B;
     }
 
-    public final ciug h() {
+    public final clcl h() {
         if (this.c == null) {
             try {
-                this.c = (ciug) ((enpf) C(this).g()).v(fqkx.Z(), TimeUnit.MILLISECONDS);
+                this.c = (clcl) ((eqcy) C(this).g()).v(ftes.Z(), TimeUnit.MILLISECONDS);
             } catch (InterruptedException | ExecutionException | TimeoutException e) {
-                ((ejhf) ((ejhf) cigw.a.g().s(e)).ah((char) 7442)).x("WDLS getLocalTriangleNode: can't get local triangle node from db");
+                ((eluo) ((eluo) ckpb.a.g().s(e)).ai((char) 7391)).x("WDLS getLocalTriangleNode: can't get local triangle node from db");
             }
         }
         return this.c;
     }
 
-    public final ciug i(String str) {
-        ciug ciugVar = (ciug) this.a.get(str);
-        if (ciugVar != null) {
-            return ciugVar;
+    public final clcl i(String str) {
+        clcl clclVar = (clcl) this.a.get(str);
+        if (clclVar != null) {
+            return clclVar;
         }
         try {
-            return (ciug) ((enpf) C(this).h(str)).v(fqkx.Z(), TimeUnit.MILLISECONDS);
+            return (clcl) ((eqcy) C(this).h(str)).v(ftes.Z(), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) cigw.a.g().s(e)).ah((char) 7443)).B("WDLS getTriangleNode: can't get triangle node %s from db", str);
-            return ciug.b;
+            ((eluo) ((eluo) ckpb.a.g().s(e)).ai((char) 7392)).B("WDLS getTriangleNode: can't get triangle node %s from db", str);
+            return clcl.b;
         }
     }
 
-    public final ciup j() {
+    public final clcu j() {
         if (this.w == null) {
             synchronized (this) {
                 if (this.w == null) {
-                    this.w = new ciup(this);
+                    this.w = new clcu(this);
                 }
             }
         }
         return this.w;
     }
 
-    @Override // defpackage.dkbc, defpackage.djkj
-    public final dfaq k(final String str, String str2, final byte[] bArr) {
+    @Override // defpackage.dmmv, defpackage.dlwc
+    public final dhlw k(final String str, String str2, final byte[] bArr) {
         char c;
-        if (!fqld.ar()) {
-            ((ejhf) cigw.a.g().ah(7499)).B("WDLS onRequest: service is disable, path %s", str2);
-            return dfbl.d(new byte[0]);
+        if (!ftey.as()) {
+            ((eluo) ckpb.a.g().ai(7448)).B("WDLS onRequest: service is disable, path %s", str2);
+            return dhmr.d(new byte[0]);
         }
-        ((ejhf) cigw.a.d().ah(7497)).P("WDLS onRequest: nodeId %s, path %s", str, str2);
+        chkb chkbVar = ckpb.a;
+        ((eluo) chkbVar.d().ai(7446)).P("WDLS onRequest: nodeId %s, path %s", str, str2);
         int hashCode = str2.hashCode();
         if (hashCode == 241792328) {
             if (str2.equals("/fastpair/pre_calling_switch_connection")) {
@@ -985,22 +986,22 @@ public class WearableDataListenerChimeraService extends dkbc {
             return H(str, bArr, true);
         }
         if (c != 2) {
-            ((ejhf) cigw.a.g().ah(7498)).B("WDLS onRequest: unsupported path %s", str2);
-            return dfbl.d(new byte[0]);
+            ((eluo) chkbVar.g().ai(7447)).B("WDLS onRequest: unsupported path %s", str2);
+            return dhmr.d(new byte[0]);
         }
-        final dfau dfauVar = new dfau();
-        this.b.execute(new Runnable() { // from class: ciqm
-            /* JADX WARN: Code restructure failed: missing block: B:29:0x00e3, code lost:
+        final dhma dhmaVar = new dhma();
+        this.b.execute(new Runnable() { // from class: ckyr
+            /* JADX WARN: Code restructure failed: missing block: B:29:0x00e0, code lost:
             
-                if (r3.y() != false) goto L42;
+                if (r4.y() != false) goto L44;
              */
-            /* JADX WARN: Code restructure failed: missing block: B:30:0x00e5, code lost:
+            /* JADX WARN: Code restructure failed: missing block: B:30:0x00e2, code lost:
             
-                r3.n().c(r3);
+                r4.n().c(r4);
              */
-            /* JADX WARN: Code restructure failed: missing block: B:34:0x00c2, code lost:
+            /* JADX WARN: Code restructure failed: missing block: B:34:0x00bf, code lost:
             
-                if (r3.y() != false) goto L42;
+                if (r4.y() != false) goto L44;
              */
             @Override // java.lang.Runnable
             /*
@@ -1009,37 +1010,37 @@ public class WearableDataListenerChimeraService extends dkbc {
             */
             public final void run() {
                 /*
-                    Method dump skipped, instructions count: 316
+                    Method dump skipped, instructions count: 313
                     To view this dump change 'Code comments level' option to 'DEBUG'
                 */
-                throw new UnsupportedOperationException("Method not decompiled: defpackage.ciqm.run():void");
+                throw new UnsupportedOperationException("Method not decompiled: defpackage.ckyr.run():void");
             }
         });
-        return dfauVar.a;
+        return dhmaVar.a;
     }
 
-    public final excv l() {
-        return (excv) n().b(this, ciqe.a(this, "com.google.android.gms.nearby.discovery.fastpair.connectionswitch.ACTION_TRIANGLE_SWITCH", "com.google.android.gms.nearby.discovery.service.DiscoveryService", null), fqkx.v());
+    public final ezre l() {
+        return (ezre) n().b(this, ckyj.a(this, "com.google.android.gms.nearby.discovery.fastpair.connectionswitch.ACTION_TRIANGLE_SWITCH", "com.google.android.gms.nearby.discovery.service.DiscoveryService", null), ftes.v());
     }
 
-    public final exfg m() {
+    public final eztp m() {
         if (this.d == null) {
-            this.d = new exfg(this, cexc.d(this, "WearableDataListenerChimeraService"), eitj.m(2, 1), fqkx.a.a().fI());
+            this.d = new eztp(this, chen.e(this, "WearableDataListenerChimeraService"), elgo.m(2, 1), ftes.a.lK().fI());
         }
         return this.d;
     }
 
-    public final exfm n() {
+    public final eztv n() {
         if (this.x == null) {
-            this.x = new exfm(new eiho() { // from class: ciqv
-                @Override // defpackage.eiho
+            this.x = new eztv(new ekut() { // from class: ckza
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
                     IBinder iBinder = (IBinder) obj;
                     if (iBinder == null) {
                         return null;
                     }
                     IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.location.nearby.common.fastpair.IDeviceStatusService");
-                    return queryLocalInterface instanceof excv ? (excv) queryLocalInterface : new exct(iBinder);
+                    return queryLocalInterface instanceof ezre ? (ezre) queryLocalInterface : new ezrc(iBinder);
                 }
             });
         }
@@ -1047,29 +1048,29 @@ public class WearableDataListenerChimeraService extends dkbc {
     }
 
     public final String o() {
-        ciug h = h();
-        return (h == null || (h.c & 2) == 0) ? cida.a(this) : h.e;
+        clcl h = h();
+        return (h == null || (h.c & 2) == 0) ? cklf.a(this) : h.e;
     }
 
-    @Override // defpackage.dkbc, com.google.android.chimera.Service
+    @Override // defpackage.dmmv, com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        this.l = cidi.a(this);
-        this.v.execute(new Runnable() { // from class: ciqu
+        this.l = ckln.a(this);
+        this.v.execute(new Runnable() { // from class: ckyz
             @Override // java.lang.Runnable
             public final void run() {
                 WearableDataListenerChimeraService.this.r();
             }
         });
-        ((ejhf) cigw.a.d().ah(7486)).x("WDLS created");
+        ((eluo) ckpb.a.d().ai(7435)).x("WDLS created");
     }
 
-    @Override // defpackage.dkbc, com.google.android.chimera.Service
+    @Override // defpackage.dmmv, com.google.android.chimera.Service
     public final void onDestroy() {
-        Runnable runnable = new Runnable() { // from class: ciqt
+        Runnable runnable = new Runnable() { // from class: ckyy
             /* JADX WARN: Code restructure failed: missing block: B:6:0x005a, code lost:
             
-                if (defpackage.cidy.b(r2) == false) goto L9;
+                if (defpackage.ckmd.b(r2) == false) goto L9;
              */
             @Override // java.lang.Runnable
             /*
@@ -1080,15 +1081,15 @@ public class WearableDataListenerChimeraService extends dkbc {
                 /*
                     r6 = this;
                     com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService r0 = com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService.this
-                    boolean r1 = defpackage.fqld.ao()
+                    boolean r1 = defpackage.ftey.ap()
                     if (r1 == 0) goto L6f
-                    cisw r1 = r0.e(r0)
-                    boolean r2 = defpackage.fqld.ao()
+                    clbb r1 = r0.e(r0)
+                    boolean r2 = defpackage.ftey.ap()
                     if (r2 != 0) goto L13
                     goto L5c
                 L13:
-                    bxdf r2 = r1.j
-                    bxdd r2 = r2.c()
+                    bzlv r2 = r1.j
+                    bzlt r2 = r2.c()
                     long r3 = r1.c
                     java.lang.String r5 = "MESSAGE_MONITOR_CURRENT_HOUR"
                     r2.g(r5, r3)
@@ -1096,60 +1097,60 @@ public class WearableDataListenerChimeraService extends dkbc {
                     java.lang.String r4 = "MESSAGE_MONITOR_SENT_COUNT"
                     r2.f(r4, r3)
                     java.util.BitSet r3 = r1.e
-                    long r3 = defpackage.cisw.b(r3)
+                    long r3 = defpackage.clbb.b(r3)
                     java.lang.String r5 = "MESSAGE_MONITOR_SENT_BITS"
                     r2.g(r5, r3)
                     int r3 = r1.f
                     java.lang.String r4 = "MESSAGE_MONITOR_RECEIVED_COUNT"
                     r2.f(r4, r3)
                     java.util.BitSet r3 = r1.g
-                    long r3 = defpackage.cisw.b(r3)
+                    long r3 = defpackage.clbb.b(r3)
                     java.lang.String r5 = "MESSAGE_MONITOR_RECEIVED_BITS"
                     r2.g(r5, r3)
                     int r3 = r1.h
                     java.lang.String r4 = "MESSAGE_MONITOR_EVENT_TRIGGER_COUNT"
                     r2.f(r4, r3)
                     java.util.BitSet r1 = r1.i
-                    long r3 = defpackage.cisw.b(r1)
+                    long r3 = defpackage.clbb.b(r1)
                     java.lang.String r1 = "MESSAGE_MONITOR_EVENT_TRIGGER_BITS"
                     r2.g(r1, r3)
-                    boolean r1 = defpackage.cidy.b(r2)
+                    boolean r1 = defpackage.ckmd.b(r2)
                     if (r1 != 0) goto L6f
                 L5c:
-                    cfcp r1 = defpackage.cigw.a
-                    ejhf r1 = r1.g()
-                    r2 = 7434(0x1d0a, float:1.0417E-41)
-                    ejgq r1 = r1.ah(r2)
-                    ejhf r1 = (defpackage.ejhf) r1
+                    chkb r1 = defpackage.ckpb.a
+                    eluo r1 = r1.g()
+                    r2 = 7383(0x1cd7, float:1.0346E-41)
+                    eltz r1 = r1.ai(r2)
+                    eluo r1 = (defpackage.eluo) r1
                     java.lang.String r2 = "WDLS destroy: failed to store the triangle message states."
                     r1.x(r2)
                 L6f:
-                    exfg r1 = r0.d
+                    eztp r1 = r0.d
                     if (r1 == 0) goto L76
                     r1.k()
                 L76:
-                    exfm r1 = r0.n()
+                    eztv r1 = r0.n()
                     r1.c(r0)
-                    ensv r0 = r0.b
+                    eqgo r0 = r0.b
                     com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService.q(r0)
                     return
                 */
-                throw new UnsupportedOperationException("Method not decompiled: defpackage.ciqt.run():void");
+                throw new UnsupportedOperationException("Method not decompiled: defpackage.ckyy.run():void");
             }
         };
-        ensv ensvVar = this.v;
-        ensvVar.execute(runnable);
-        q(ensvVar);
+        eqgo eqgoVar = this.v;
+        eqgoVar.execute(runnable);
+        q(eqgoVar);
         super.onDestroy();
-        ((ejhf) cigw.a.d().ah(7487)).x("WDLS destroyed");
+        ((eluo) ckpb.a.d().ai(7436)).x("WDLS destroyed");
     }
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(final Intent intent, int i, int i2) {
-        if (!fqld.ar()) {
+        if (!ftey.as()) {
             return 2;
         }
-        this.v.execute(new Runnable() { // from class: ciqp
+        this.v.execute(new Runnable() { // from class: ckyu
             @Override // java.lang.Runnable
             public final void run() {
                 WearableDataListenerChimeraService.this.v(intent);
@@ -1159,7 +1160,7 @@ public class WearableDataListenerChimeraService extends dkbc {
     }
 
     final synchronized String p() {
-        ciug h = h();
+        clcl h = h();
         if (h == null) {
             return null;
         }
@@ -1173,161 +1174,161 @@ public class WearableDataListenerChimeraService extends dkbc {
         this.i = f(this).e();
         this.c = h();
         try {
-            for (ciug ciugVar : (List) ((enpf) C(this).e()).v(fqkx.Z(), TimeUnit.MILLISECONDS)) {
-                if (ciugVar.i) {
-                    this.a.put(ciugVar.d, ciugVar);
+            for (clcl clclVar : (List) ((eqcy) C(this).e()).v(ftes.Z(), TimeUnit.MILLISECONDS)) {
+                if (clclVar.i) {
+                    this.a.put(clclVar.d, clclVar);
                 }
             }
         } catch (InterruptedException | ExecutionException | TimeoutException unused) {
-            ((ejhf) cigw.a.d().ah(7465)).x("WDLS initialize: failed to read triangle data store");
+            ((eluo) ckpb.a.d().ai(7414)).x("WDLS initialize: failed to read triangle data store");
         }
         P();
         this.h.b(this.c, this.a.values());
     }
 
     public final void s(Map map) {
-        ciug ciugVar = this.c;
-        if (ciugVar == null) {
-            ((ejhf) cigw.a.g().ah(7467)).x("WDLS introduceConnectedNodes: local node is null.");
+        clcl clclVar = this.c;
+        if (clclVar == null) {
+            ((eluo) ckpb.a.g().ai(7416)).x("WDLS introduceConnectedNodes: local node is null.");
             return;
         }
         HashMap hashMap = new HashMap();
         for (Map.Entry entry : map.entrySet()) {
             String str = (String) entry.getKey();
-            ciug ciugVar2 = (ciug) entry.getValue();
-            ((ejhf) cigw.a.d().ah(7466)).B("WDLS introduceConnectedNodes: send message %s", str);
-            if (j().d(str, "/fastpair/introduction", ciugVar.r())) {
+            clcl clclVar2 = (clcl) entry.getValue();
+            ((eluo) ckpb.a.d().ai(7415)).B("WDLS introduceConnectedNodes: send message %s", str);
+            if (j().d(str, "/fastpair/introduction", clclVar.r())) {
                 this.j++;
-                if (!ciugVar2.j) {
-                    fecj fecjVar = (fecj) ciugVar2.iB(5, null);
-                    fecjVar.X(ciugVar2);
-                    ciud ciudVar = (ciud) fecjVar;
-                    if (!ciudVar.b.L()) {
-                        ciudVar.U();
+                if (!clclVar2.j) {
+                    fgrc fgrcVar = (fgrc) clclVar2.iQ(5, null);
+                    fgrcVar.X(clclVar2);
+                    clci clciVar = (clci) fgrcVar;
+                    if (!clciVar.b.L()) {
+                        clciVar.U();
                     }
-                    ciug ciugVar3 = (ciug) ciudVar.b;
-                    ciugVar3.c |= 32;
-                    ciugVar3.j = true;
-                    ciug ciugVar4 = (ciug) ciudVar.Q();
-                    hashMap.put(str, ciugVar4);
-                    x(false, ciugVar4);
+                    clcl clclVar3 = (clcl) clciVar.b;
+                    clclVar3.c |= 32;
+                    clclVar3.j = true;
+                    clcl clclVar4 = (clcl) clciVar.Q();
+                    hashMap.put(str, clclVar4);
+                    x(false, clclVar4);
                 }
             }
         }
         map.putAll(hashMap);
     }
 
-    public final void t(cien cienVar, ciug ciugVar, String str) {
-        if (!cidi.e(this.l)) {
-            ((ejhf) cigw.a.f().ah(7477)).B("WDLS logTriangleStart: skip logging on %s", this.l.name());
+    public final void t(ckms ckmsVar, clcl clclVar, String str) {
+        if (!ckln.e(this.l)) {
+            ((eluo) ckpb.a.f().ai(7426)).B("WDLS logTriangleStart: skip logging on %s", this.l.name());
             return;
         }
-        if ((ciugVar.c & 2) == 0) {
-            ((ejhf) cigw.a.g().ah(7476)).B("WDLS logTriangleStart: skip logging because unknown wearable address %s", ciugVar.e);
+        if ((clclVar.c & 2) == 0) {
+            ((eluo) ckpb.a.g().ai(7425)).B("WDLS logTriangleStart: skip logging because unknown wearable address %s", clclVar.e);
             return;
         }
-        if (cien.PHONE_WATCH_TETHERED.equals(cienVar)) {
+        if (ckms.PHONE_WATCH_TETHERED.equals(ckmsVar)) {
             String o = o();
             if (o != null) {
-                TaskSchedulerChimeraService.h(this, cibd.c(this, o, ciugVar.e));
+                TaskSchedulerChimeraService.h(this, ckji.c(this, o, clclVar.e));
                 return;
             } else {
-                ((ejhf) cigw.a.g().ah(7475)).x("WDLS logTriangleStart: skip logging for phone and watch tether because unknown local device address");
+                ((eluo) ckpb.a.g().ai(7424)).x("WDLS logTriangleStart: skip logging for phone and watch tether because unknown local device address");
                 return;
             }
         }
-        if (cien.WATCH_HEADSET_AUTO_CONNECT.equals(cienVar)) {
+        if (ckms.WATCH_HEADSET_AUTO_CONNECT.equals(ckmsVar)) {
             if (str != null) {
-                TaskSchedulerChimeraService.h(this, cibd.a(this, ciugVar.e, str));
+                TaskSchedulerChimeraService.h(this, ckji.a(this, clclVar.e, str));
             } else {
-                ((ejhf) cigw.a.f().ah(7474)).x("WDLS logTriangleStart: skip logging for auto connect because headset address is unknown");
+                ((eluo) ckpb.a.f().ai(7423)).x("WDLS logTriangleStart: skip logging for auto connect because headset address is unknown");
             }
         }
     }
 
-    public final void u(citz citzVar) {
-        if (!cidi.e(this.l)) {
-            ((ejhf) cigw.a.f().ah(7484)).B("WDLS logTriangleSwitchResult: skip logging on %s", this.l.name());
+    public final void u(clce clceVar) {
+        if (!ckln.e(this.l)) {
+            ((eluo) ckpb.a.f().ai(7433)).B("WDLS logTriangleSwitchResult: skip logging on %s", this.l.name());
             return;
         }
-        if ((citzVar.b & 8) != 0) {
-            cien cienVar = cien.UNKNOWN_REQUEST_TYPE;
-            cien b = cien.b(citzVar.f);
+        if ((clceVar.b & 8) != 0) {
+            ckms ckmsVar = ckms.UNKNOWN_REQUEST_TYPE;
+            ckms b = ckms.b(clceVar.f);
             if (b == null) {
-                b = cienVar;
+                b = ckmsVar;
             }
-            if (!cienVar.equals(b)) {
-                cien b2 = cien.b(citzVar.f);
+            if (!ckmsVar.equals(b)) {
+                ckms b2 = ckms.b(clceVar.f);
                 if (b2 != null) {
-                    cienVar = b2;
+                    ckmsVar = b2;
                 }
-                if (cien.CALLING_ON_PHONE.equals(cienVar)) {
-                    ((ejhf) cigw.a.g().ah(7483)).x("WDLS logTriangleSwitchResult: skip logging because the calling request should never sent from the watch side.");
+                if (ckms.CALLING_ON_PHONE.equals(ckmsVar)) {
+                    ((eluo) ckpb.a.g().ai(7432)).x("WDLS logTriangleSwitchResult: skip logging because the calling request should never sent from the watch side.");
                     return;
                 }
-                String str = citzVar.c;
-                ciug i = i(str);
-                if (i.equals(ciug.b)) {
-                    ((ejhf) cigw.a.g().ah(7482)).B("WDLS logTriangleSwitchResult: can't get triangle node %s", str);
+                String str = clceVar.c;
+                clcl i = i(str);
+                if (i.equals(clcl.b)) {
+                    ((eluo) ckpb.a.g().ai(7431)).B("WDLS logTriangleSwitchResult: can't get triangle node %s", str);
                     return;
                 }
-                ciug h = h();
+                clcl h = h();
                 if (h == null) {
-                    ((ejhf) cigw.a.g().ah(7481)).x("WDLS logTriangleSwitchResult: can't get local node id");
+                    ((eluo) ckpb.a.g().ai(7430)).x("WDLS logTriangleSwitchResult: can't get local node id");
                     return;
                 }
-                int ordinal = cienVar.ordinal();
+                int ordinal = ckmsVar.ordinal();
                 if (ordinal != 1) {
                     if (ordinal != 2) {
                         return;
                     }
                     String o = o();
                     if (o == null) {
-                        ((ejhf) cigw.a.g().ah(7480)).x("WDLS logTriangleSwitchResult: skip logging for phone and watch tether because unknown local device address");
+                        ((eluo) ckpb.a.g().ai(7429)).x("WDLS logTriangleSwitchResult: skip logging for phone and watch tether because unknown local device address");
                         return;
                     } else {
-                        cibd.c(this, o, i.e).h(citzVar, i, h);
+                        ckji.c(this, o, i.e).h(clceVar, i, h);
                         return;
                     }
                 }
-                if ((citzVar.b & 4) == 0) {
-                    ((ejhf) cigw.a.g().ah(7479)).x("WDLS logTriangleSwitchResult: can't get peripheral address for logging auto connect.");
+                if ((clceVar.b & 4) == 0) {
+                    ((eluo) ckpb.a.g().ai(7428)).x("WDLS logTriangleSwitchResult: can't get peripheral address for logging auto connect.");
                     return;
                 }
                 String str2 = i.e;
-                citr citrVar = citzVar.e;
-                if (citrVar == null) {
-                    citrVar = citr.a;
+                clbw clbwVar = clceVar.e;
+                if (clbwVar == null) {
+                    clbwVar = clbw.a;
                 }
-                cibd.a(this, str2, citrVar.c).h(citzVar, i, h);
+                ckji.a(this, str2, clbwVar.c).h(clceVar, i, h);
                 return;
             }
         }
-        ((ejhf) cigw.a.f().ah(7478)).x("WDLS logTriangleSwitchResult: skip logging because of unknown request type");
+        ((eluo) ckpb.a.f().ai(7427)).x("WDLS logTriangleSwitchResult: skip logging because of unknown request type");
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code restructure failed: missing block: B:143:0x068b, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:143:0x0683, code lost:
     
         if (r0.length <= 0) goto L416;
      */
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
-    /* JADX WARN: Removed duplicated region for block: B:346:0x0b5b  */
-    /* JADX WARN: Removed duplicated region for block: B:349:0x0b7b  */
-    /* JADX WARN: Removed duplicated region for block: B:352:0x0b9b  */
-    /* JADX WARN: Removed duplicated region for block: B:355:0x0bbc  */
-    /* JADX WARN: Removed duplicated region for block: B:359:0x0bde  */
-    /* JADX WARN: Removed duplicated region for block: B:379:0x0c5f A[LOOP:8: B:377:0x0c59->B:379:0x0c5f, LOOP_END] */
-    /* JADX WARN: Removed duplicated region for block: B:382:0x0b9e  */
-    /* JADX WARN: Removed duplicated region for block: B:383:0x0b7e  */
-    /* JADX WARN: Removed duplicated region for block: B:384:0x0b5e  */
+    /* JADX WARN: Removed duplicated region for block: B:346:0x0b4b  */
+    /* JADX WARN: Removed duplicated region for block: B:349:0x0b6b  */
+    /* JADX WARN: Removed duplicated region for block: B:352:0x0b8b  */
+    /* JADX WARN: Removed duplicated region for block: B:355:0x0bac  */
+    /* JADX WARN: Removed duplicated region for block: B:359:0x0bce  */
+    /* JADX WARN: Removed duplicated region for block: B:379:0x0c4f A[LOOP:8: B:377:0x0c49->B:379:0x0c4f, LOOP_END] */
+    /* JADX WARN: Removed duplicated region for block: B:382:0x0b8e  */
+    /* JADX WARN: Removed duplicated region for block: B:383:0x0b6e  */
+    /* JADX WARN: Removed duplicated region for block: B:384:0x0b4e  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     public final void v(android.content.Intent r34) {
         /*
-            Method dump skipped, instructions count: 3314
+            Method dump skipped, instructions count: 3298
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService.v(android.content.Intent):void");
@@ -1341,88 +1342,88 @@ public class WearableDataListenerChimeraService extends dkbc {
         bundle.putInt("com.google.android.gms.nearby.fastpair.service.EXTRA_TRIANGLE_MESSAGE_SENT_COUNT", this.j);
         bundle.putInt("com.google.android.gms.nearby.fastpair.service.EXTRA_TRIANGLE_MESSAGE_RECEIVED_COUNT", this.k);
         bundle.putInt("com.google.android.gms.nearby.fastpair.service.EXTRA_TRIANGLE_MESSAGE_TRIGGER_COUNT", z ? 1 : 0);
-        ciqe.c(this, "com.google.android.gms.nearby.fastpair.service.ACTION_TRIANGLE_MESSAGE_USAGE", bundle);
+        ckyj.c(this, "com.google.android.gms.nearby.fastpair.service.ACTION_TRIANGLE_MESSAGE_USAGE", bundle);
         this.j = 0;
         this.k = 0;
     }
 
-    public final void x(final boolean z, final ciug ciugVar) {
+    public final void x(final boolean z, final clcl clclVar) {
         try {
-            ((enpf) C(this).a.b(new eiho() { // from class: cisz
-                @Override // defpackage.eiho
+            ((eqcy) C(this).a.b(new ekut() { // from class: clbe
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
-                    ciuh ciuhVar = (ciuh) obj;
-                    fecj fecjVar = (fecj) ciuhVar.iB(5, null);
-                    fecjVar.X(ciuhVar);
-                    ciug ciugVar2 = ciugVar;
+                    clcm clcmVar = (clcm) obj;
+                    fgrc fgrcVar = (fgrc) clcmVar.iQ(5, null);
+                    fgrcVar.X(clcmVar);
+                    clcl clclVar2 = clclVar;
                     if (z) {
-                        if (!fecjVar.b.L()) {
-                            fecjVar.U();
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
                         }
-                        ciuh ciuhVar2 = (ciuh) fecjVar.b;
-                        ciuh ciuhVar3 = ciuh.a;
-                        ciugVar2.getClass();
-                        ciuhVar2.d = ciugVar2;
-                        ciuhVar2.b |= 1;
-                        return (ciuh) fecjVar.Q();
+                        clcm clcmVar2 = (clcm) fgrcVar.b;
+                        clcm clcmVar3 = clcm.a;
+                        clclVar2.getClass();
+                        clcmVar2.d = clclVar2;
+                        clcmVar2.b |= 1;
+                        return (clcm) fgrcVar.Q();
                     }
                     int i = 0;
                     while (true) {
-                        if (i >= ((ciuh) fecjVar.b).c.size()) {
+                        if (i >= ((clcm) fgrcVar.b).c.size()) {
                             break;
                         }
-                        if (ciugVar2.d.equals(((ciug) ((ciuh) fecjVar.b).c.get(i)).d)) {
-                            if (!fecjVar.b.L()) {
-                                fecjVar.U();
+                        if (clclVar2.d.equals(((clcl) ((clcm) fgrcVar.b).c.get(i)).d)) {
+                            if (!fgrcVar.b.L()) {
+                                fgrcVar.U();
                             }
-                            ciuh ciuhVar4 = (ciuh) fecjVar.b;
-                            ciuhVar4.b();
-                            ciuhVar4.c.remove(i);
+                            clcm clcmVar4 = (clcm) fgrcVar.b;
+                            clcmVar4.b();
+                            clcmVar4.c.remove(i);
                         } else {
                             i++;
                         }
                     }
-                    if (!fecjVar.b.L()) {
-                        fecjVar.U();
+                    if (!fgrcVar.b.L()) {
+                        fgrcVar.U();
                     }
-                    ciuh ciuhVar5 = (ciuh) fecjVar.b;
-                    ciugVar2.getClass();
-                    ciuhVar5.b();
-                    ciuhVar5.c.add(ciugVar2);
-                    return (ciuh) fecjVar.Q();
+                    clcm clcmVar5 = (clcm) fgrcVar.b;
+                    clclVar2.getClass();
+                    clcmVar5.b();
+                    clcmVar5.c.add(clclVar2);
+                    return (clcm) fgrcVar.Q();
                 }
-            }, enre.a)).v(fqkx.Z(), TimeUnit.MILLISECONDS);
-            if (fqld.aX() && cidi.e(this.l)) {
-                exdl.c(this, "links");
+            }, eqex.a)).v(ftes.Z(), TimeUnit.MILLISECONDS);
+            if (ftey.aX() && ckln.e(this.l)) {
+                ezru.c(this, "links");
             }
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            ((ejhf) cigw.a.g().ah(7542)).B("WDLS writeTriangleNode: can't write triangle node into db, %s", e.getMessage());
+            ((eluo) ckpb.a.g().ai(7491)).B("WDLS writeTriangleNode: can't write triangle node into db, %s", e.getMessage());
         }
     }
 
     public final boolean y() {
-        if (fqkx.a.a().gh() && this.i) {
-            return !cidl.WEARABLE.equals(this.l) || this.A;
+        if (ftes.a.lK().gg() && this.i) {
+            return !cklq.WEARABLE.equals(this.l) || this.A;
         }
         return false;
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:107:0x0719  */
-    /* JADX WARN: Removed duplicated region for block: B:113:0x0737  */
-    /* JADX WARN: Removed duplicated region for block: B:116:0x074a  */
-    /* JADX WARN: Removed duplicated region for block: B:122:0x0764  */
-    /* JADX WARN: Removed duplicated region for block: B:125:0x0781  */
-    /* JADX WARN: Removed duplicated region for block: B:127:0x0758  */
-    /* JADX WARN: Removed duplicated region for block: B:128:0x0726  */
-    /* JADX WARN: Removed duplicated region for block: B:159:0x02be  */
-    /* JADX WARN: Removed duplicated region for block: B:160:0x02d6  */
+    /* JADX WARN: Removed duplicated region for block: B:105:0x070f  */
+    /* JADX WARN: Removed duplicated region for block: B:111:0x072d  */
+    /* JADX WARN: Removed duplicated region for block: B:114:0x0740  */
+    /* JADX WARN: Removed duplicated region for block: B:120:0x075a  */
+    /* JADX WARN: Removed duplicated region for block: B:123:0x0777  */
+    /* JADX WARN: Removed duplicated region for block: B:125:0x074e  */
+    /* JADX WARN: Removed duplicated region for block: B:126:0x071c  */
+    /* JADX WARN: Removed duplicated region for block: B:157:0x02b6  */
+    /* JADX WARN: Removed duplicated region for block: B:158:0x02ce  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     final boolean z(boolean r28) {
         /*
-            Method dump skipped, instructions count: 2061
+            Method dump skipped, instructions count: 2051
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.fastpair.service.WearableDataListenerChimeraService.z(boolean):boolean");

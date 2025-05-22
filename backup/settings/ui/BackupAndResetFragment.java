@@ -3,19 +3,19 @@ package com.google.android.gms.backup.settings.ui;
 import android.os.Bundle;
 import androidx.preference.PreferenceScreen;
 import com.google.android.gms.R;
-import defpackage.ahwd;
-import defpackage.ajxv;
-import defpackage.arxo;
-import defpackage.eklh;
+import defpackage.ajwt;
+import defpackage.alyt;
+import defpackage.auad;
+import defpackage.emyt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class BackupAndResetFragment extends ajxv {
-    private static final arxo ag = ahwd.a("BackupAndResetFragment");
+public class BackupAndResetFragment extends alyt {
+    private static final auad ag = ajwt.a("BackupAndResetFragment");
     private PreferenceScreen ah;
     public PreferenceScreen d;
 
-    @Override // defpackage.kmb
+    @Override // defpackage.mem
     public final void C(Bundle bundle, String str) {
         A(R.xml.backup_and_reset);
         PreferenceScreen z = z();
@@ -23,17 +23,17 @@ public class BackupAndResetFragment extends ajxv {
         this.ah = (PreferenceScreen) z.l("factory_reset");
     }
 
-    @Override // defpackage.ajyv
-    public final eklh J() {
-        return eklh.BACKUP_AND_RESET;
+    @Override // defpackage.alzt
+    public final emyt J() {
+        return emyt.BACKUP_AND_RESET;
     }
 
-    @Override // defpackage.ajyv
+    @Override // defpackage.alzt
     public final String K() {
         return "https://support.google.com/mobile/?p=pixel_backup";
     }
 
-    @Override // defpackage.ajyv
+    @Override // defpackage.alzt
     public final String L() {
         return "pixel_backup_reset";
     }
@@ -53,13 +53,13 @@ public class BackupAndResetFragment extends ajxv {
             super.onResume()
             boolean r0 = r6.ab()
             if (r0 == 0) goto L12
-            ajxa r0 = new ajxa
+            alxy r0 = new alxy
             r0.<init>()
             r6.Y(r0)
             goto L1a
         L12:
             androidx.preference.PreferenceScreen r0 = r6.d
-            r1 = 2132084767(0x7f15081f, float:1.9809714E38)
+            r1 = 2132084768(0x7f150820, float:1.9809716E38)
             r0.P(r1)
         L1a:
             android.content.Context r0 = r6.getContext()
@@ -93,7 +93,7 @@ public class BackupAndResetFragment extends ajxv {
             if (r0 == 0) goto L34
             goto L5f
         L56:
-            arxo r0 = com.google.android.gms.backup.settings.ui.BackupAndResetFragment.ag
+            auad r0 = com.google.android.gms.backup.settings.ui.BackupAndResetFragment.ag
             java.lang.Object[] r1 = new java.lang.Object[r5]
             java.lang.String r2 = "Executed in pre-N OS"
             r0.d(r2, r1)
@@ -103,7 +103,7 @@ public class BackupAndResetFragment extends ajxv {
             r0.H(r1)
             if (r4 == 0) goto L71
             androidx.preference.PreferenceScreen r0 = r6.ah
-            r1 = 2132085949(0x7f150cbd, float:1.9812111E38)
+            r1 = 2132085959(0x7f150cc7, float:1.9812132E38)
             r0.P(r1)
             return
         L71:

@@ -4,10 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.dhfj;
-import defpackage.iln;
+import defpackage.djqp;
+import defpackage.ind;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public abstract class ActiveStateTrackingBroadcastReceiver extends TracingBroadcastReceiver {
     public final Object a;
@@ -25,7 +25,7 @@ public abstract class ActiveStateTrackingBroadcastReceiver extends TracingBroadc
         synchronized (this.a) {
             if (!this.b) {
                 this.b = true;
-                iln.b(context, this, intentFilter, 2);
+                ind.b(context, this, intentFilter, 2);
             }
         }
     }
@@ -40,7 +40,7 @@ public abstract class ActiveStateTrackingBroadcastReceiver extends TracingBroadc
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
-        new dhfj(this, context, intent).start();
+    public final void jP(Context context, Intent intent) {
+        new djqp(this, context, intent).start();
     }
 }

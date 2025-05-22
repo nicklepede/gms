@@ -2,33 +2,29 @@ package com.google.android.gms.update.reminder;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.arxo;
-import defpackage.dher;
-import defpackage.dhez;
-import defpackage.dhfb;
-import defpackage.dhfe;
-import defpackage.dhgn;
-import defpackage.dhik;
-import defpackage.dhjt;
-import defpackage.dhop;
-import defpackage.eiif;
-import defpackage.fibo;
-import defpackage.fqrw;
+import defpackage.auad;
+import defpackage.djpx;
+import defpackage.djqf;
+import defpackage.djqh;
+import defpackage.djqk;
+import defpackage.djrt;
+import defpackage.djtq;
+import defpackage.djuz;
+import defpackage.djzv;
+import defpackage.ekvk;
+import defpackage.fkrl;
+import defpackage.ftlv;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class UpdateReminderDialogIntentOperation extends IntentOperation {
-    private static final arxo a = dhjt.d("UpdateReminderDialogControl");
-    private static final dhop b = new dhop("control.popupdialog.last_aggresive_dialog_displayed_at", 0L);
+    private static final auad a = djuz.d("UpdateReminderDialogControl");
+    private static final djzv b = new djzv("control.popupdialog.last_aggresive_dialog_displayed_at", 0L);
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue
-    java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because the return value of "jadx.core.dex.visitors.regions.SwitchOverStringVisitor$SwitchData.getNewCases()" is null
-    	at jadx.core.dex.visitors.regions.SwitchOverStringVisitor.restoreSwitchOverString(SwitchOverStringVisitor.java:109)
-    	at jadx.core.dex.visitors.regions.SwitchOverStringVisitor.visitRegion(SwitchOverStringVisitor.java:66)
-    	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverseIterativeStepInternal(DepthRegionTraversal.java:77)
-    	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverseIterativeStepInternal(DepthRegionTraversal.java:82)
+    java.lang.NullPointerException
      */
     /* JADX WARN: Removed duplicated region for block: B:107:0x032b  */
     /* JADX WARN: Removed duplicated region for block: B:109:? A[RETURN, SYNTHETIC] */
@@ -86,39 +82,39 @@ public class UpdateReminderDialogIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (!dhfe.b(this)) {
+        if (!djqk.b(this)) {
             a.h("System update management not enabled in this context. Ignoring intent: %s", intent);
             return;
         }
-        String b2 = eiif.b(intent.getAction());
-        arxo arxoVar = a;
-        arxoVar.j("Received action: %s", b2);
+        String b2 = ekvk.b(intent.getAction());
+        auad auadVar = a;
+        auadVar.j("Received action: %s", b2);
         if ("android.intent.action.ACTION_POWER_CONNECTED".equals(b2)) {
-            if (((Boolean) dhez.a(fqrw.e, Boolean.class)).booleanValue()) {
+            if (((Boolean) djqf.a(ftlv.e, Boolean.class)).booleanValue()) {
                 a();
                 return;
             }
             return;
         }
         if ("android.intent.action.USER_PRESENT".equals(b2)) {
-            if (eiif.c(dher.d())) {
+            if (ekvk.c(djpx.d())) {
                 return;
             }
             a();
             return;
         }
         if ("com.google.android.gms.update.SCREEN_ON".equals(b2)) {
-            if (dhgn.c()) {
-                arxoVar.h("Received action: %s", b2);
+            if (djrt.c()) {
+                auadVar.h("Received action: %s", b2);
             }
             b();
         } else if (Objects.equals(b2, "android.intent.action.BOOT_COMPLETED")) {
-            if (dhgn.c()) {
-                arxoVar.h("Received action: %s", b2);
+            if (djrt.c()) {
+                auadVar.h("Received action: %s", b2);
             }
-            if (dhgn.c()) {
-                fibo c = dhik.c();
-                if (c.equals(fibo.a) || !dhfb.h(c)) {
+            if (djrt.c()) {
+                fkrl c = djtq.c();
+                if (c.equals(fkrl.a) || !djqh.h(c)) {
                     b();
                 }
             }

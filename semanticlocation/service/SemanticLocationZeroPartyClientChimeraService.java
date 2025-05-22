@@ -1,20 +1,20 @@
 package com.google.android.gms.semanticlocation.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.dabt;
-import defpackage.ejck;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.dcmb;
+import defpackage.elpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class SemanticLocationZeroPartyClientChimeraService extends bxgd {
+public class SemanticLocationZeroPartyClientChimeraService extends bzot {
     public SemanticLocationZeroPartyClientChimeraService() {
-        super(173, "com.google.android.gms.semanticlocation.zeroparty.service.START", ejck.a, 0, 10);
+        super(173, "com.google.android.gms.semanticlocation.zeroparty.service.START", elpp.a, 0, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new dabt(l(), getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new dcmb(l(), getServiceRequest.f, getServiceRequest.p));
     }
 }

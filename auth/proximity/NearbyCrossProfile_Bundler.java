@@ -7,13 +7,13 @@ import android.os.Parcelable;
 import com.google.android.enterprise.connectedapps.internal.Bundler;
 import com.google.android.enterprise.connectedapps.internal.BundlerType;
 import defpackage.a;
-import defpackage.acft;
-import defpackage.feay;
+import defpackage.aeft;
+import defpackage.fgpr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class NearbyCrossProfile_Bundler implements Bundler {
-    public static final Parcelable.Creator CREATOR = new acft();
+    public static final Parcelable.Creator CREATOR = new aeft();
 
     @Override // com.google.android.enterprise.connectedapps.internal.Bundler
     public final Object a(Bundle bundle, String str, BundlerType bundlerType) {
@@ -26,7 +26,7 @@ public final class NearbyCrossProfile_Bundler implements Bundler {
             return bundle.getString(str);
         }
         if ("com.google.protobuf.ByteString".equals(str2)) {
-            return (feay) bundle.getSerializable(str);
+            return (fgpr) bundle.getSerializable(str);
         }
         if ("boolean".equals(str2)) {
             return Boolean.valueOf(bundle.getBoolean(str));
@@ -50,7 +50,7 @@ public final class NearbyCrossProfile_Bundler implements Bundler {
             return parcel.readString();
         }
         if ("com.google.protobuf.ByteString".equals(str)) {
-            return (feay) parcel.readSerializable();
+            return (fgpr) parcel.readSerializable();
         }
         if ("boolean".equals(str)) {
             return Boolean.valueOf(parcel.readInt() == 1);
@@ -73,7 +73,7 @@ public final class NearbyCrossProfile_Bundler implements Bundler {
         if ("java.lang.String".equals(str2)) {
             bundle.putString(str, (String) obj);
         } else if ("com.google.protobuf.ByteString".equals(str2)) {
-            bundle.putSerializable(str, (feay) obj);
+            bundle.putSerializable(str, (fgpr) obj);
         } else {
             if (!"android.os.ParcelFileDescriptor".equals(str2)) {
                 throw new IllegalArgumentException(a.a(str2, "Type ", " cannot be written to Bundle"));
@@ -91,7 +91,7 @@ public final class NearbyCrossProfile_Bundler implements Bundler {
         if ("java.lang.String".equals(str)) {
             parcel.writeString((String) obj);
         } else if ("com.google.protobuf.ByteString".equals(str)) {
-            parcel.writeSerializable((feay) obj);
+            parcel.writeSerializable((fgpr) obj);
         } else {
             if (!"android.os.ParcelFileDescriptor".equals(str)) {
                 throw new IllegalArgumentException(a.a(str, "Type ", " cannot be written to Parcel"));
@@ -115,7 +115,7 @@ public final class NearbyCrossProfile_Bundler implements Bundler {
             return new String[i];
         }
         if ("com.google.protobuf.ByteString".equals(str)) {
-            return new feay[i];
+            return new fgpr[i];
         }
         if ("android.os.ParcelFileDescriptor".equals(str)) {
             return new ParcelFileDescriptor[i];

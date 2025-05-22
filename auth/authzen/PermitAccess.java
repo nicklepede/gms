@@ -6,17 +6,17 @@ import android.text.TextUtils;
 import com.google.android.gms.auth.authzen.gencode.server.api.BeaconSeedEntity;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zsp;
+import defpackage.absp;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class PermitAccess extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new zsp();
+    public static final Parcelable.Creator CREATOR = new absp();
     final int a;
     public final String b;
     final String c;
@@ -34,11 +34,11 @@ public class PermitAccess extends AbstractSafeParcelable implements ReflectedPar
 
     public PermitAccess(int i, String str, String str2, byte[] bArr, String str3, boolean z, boolean z2, boolean z3, String str4, String str5, List list, long j, boolean z4, boolean z5) {
         this.a = i;
-        arwm.q(str);
+        atzb.q(str);
         this.b = str;
-        arwm.q(str2);
+        atzb.q(str2);
         this.c = str2;
-        arwm.s(bArr);
+        atzb.s(bArr);
         this.d = bArr;
         this.e = str3 == null ? "" : str3;
         this.f = z;
@@ -96,21 +96,21 @@ public class PermitAccess extends AbstractSafeParcelable implements ReflectedPar
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.i(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.e(parcel, 6, this.f);
-        arxc.e(parcel, 7, this.g);
-        arxc.e(parcel, 8, this.h);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.v(parcel, 10, this.j, false);
-        arxc.y(parcel, 11, this.k, false);
-        arxc.q(parcel, 12, this.l);
-        arxc.e(parcel, 13, this.m);
-        arxc.e(parcel, 14, this.n);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.i(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.e(parcel, 6, this.f);
+        atzr.e(parcel, 7, this.g);
+        atzr.e(parcel, 8, this.h);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.v(parcel, 10, this.j, false);
+        atzr.y(parcel, 11, this.k, false);
+        atzr.q(parcel, 12, this.l);
+        atzr.e(parcel, 13, this.m);
+        atzr.e(parcel, 14, this.n);
+        atzr.c(parcel, a);
     }
 }

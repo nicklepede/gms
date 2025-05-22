@@ -3,28 +3,28 @@ package com.google.android.gms.api.compatibility;
 import android.content.Context;
 import android.os.IBinder;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.anzs;
-import defpackage.azht;
-import defpackage.azit;
-import defpackage.azix;
-import defpackage.ton;
+import defpackage.aqbk;
+import defpackage.bblp;
+import defpackage.bbmp;
+import defpackage.bbmt;
+import defpackage.vkn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class DynamiteModuleLoadProxy extends ton {
+public final class DynamiteModuleLoadProxy extends vkn {
     static {
-        int i = anzs.a;
+        int i = aqbk.a;
     }
 
-    @Override // defpackage.too
-    public IBinder load(azht azhtVar, String str) {
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+    @Override // defpackage.vko
+    public IBinder load(bblp bblpVar, String str) {
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         if (context == null) {
             return null;
         }
         try {
-            return azix.f(context, azix.a, str).e("com.google.android.gms.api.compatibility.DynamiteModuleLoadImpl");
-        } catch (azit e) {
+            return bbmt.f(context, bbmt.a, str).e("com.google.android.gms.api.compatibility.DynamiteModuleLoadImpl");
+        } catch (bbmp e) {
             throw new IllegalStateException(e);
         }
     }

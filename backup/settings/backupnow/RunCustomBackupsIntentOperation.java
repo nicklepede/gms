@@ -5,37 +5,37 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.backup.settings.backupnow.RunCustomBackupsIntentOperation;
-import defpackage.ahsw;
-import defpackage.ahwd;
-import defpackage.ajix;
-import defpackage.ajiy;
-import defpackage.ajiz;
-import defpackage.ajje;
-import defpackage.ajjf;
-import defpackage.ajkb;
-import defpackage.arxo;
-import defpackage.asmf;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.fllt;
-import defpackage.flnr;
+import defpackage.ajtm;
+import defpackage.ajwt;
+import defpackage.aljp;
+import defpackage.aljq;
+import defpackage.aljr;
+import defpackage.aljw;
+import defpackage.aljx;
+import defpackage.alkt;
+import defpackage.auad;
+import defpackage.aupz;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.fodd;
+import defpackage.fofb;
 import j$.util.Objects;
 import j$.util.concurrent.ConcurrentHashMap;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class RunCustomBackupsIntentOperation extends IntentOperation {
-    private static final arxo a = ahwd.a("RunCustomBackupsIO");
-    private final eijr b = eijy.a(new eijr() { // from class: ajkf
-        @Override // defpackage.eijr
-        public final Object a() {
-            return new ajiy(RunCustomBackupsIntentOperation.this, false);
+    private static final auad a = ajwt.a("RunCustomBackupsIO");
+    private final ekww b = ekxd.a(new ekww() { // from class: alkx
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return new aljq(RunCustomBackupsIntentOperation.this, false);
         }
     });
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (!flnr.a.a().d()) {
+        if (!fofb.a.lK().d()) {
             a.j("Disabled by flag", new Object[0]);
             return;
         }
@@ -43,30 +43,30 @@ public class RunCustomBackupsIntentOperation extends IntentOperation {
             a.m("Unsupported action", new Object[0]);
             return;
         }
-        arxo arxoVar = a;
-        arxoVar.j("Running", new Object[0]);
+        auad auadVar = a;
+        auadVar.j("Running", new Object[0]);
         boolean booleanExtra = intent.getBooleanExtra("require_unmetered_network", true);
-        arxoVar.j("Creating CustomBackupsManager with requiredUnmetered=%b", Boolean.valueOf(booleanExtra));
-        ajix ajixVar = new ajix(this, new eijr() { // from class: ajjy
-            @Override // defpackage.eijr
-            public final Object a() {
+        auadVar.j("Creating CustomBackupsManager with requiredUnmetered=%b", Boolean.valueOf(booleanExtra));
+        aljp aljpVar = new aljp(this, new ekww() { // from class: alkq
+            @Override // defpackage.ekww
+            public final Object lK() {
                 return new ConcurrentHashMap();
             }
-        }, new eijr() { // from class: ajjy
-            @Override // defpackage.eijr
-            public final Object a() {
+        }, new ekww() { // from class: alkq
+            @Override // defpackage.ekww
+            public final Object lK() {
                 return new ConcurrentHashMap();
             }
         });
-        asmf asmfVar = new asmf(1, 9);
-        arxo arxoVar2 = ahsw.a;
-        new ajkb(this, booleanExtra, false, ajixVar, ahsw.f(this, asmfVar, true), new ajiz() { // from class: ajjz
-            @Override // defpackage.ajiz
+        aupz aupzVar = new aupz(1, 9);
+        auad auadVar2 = ajtm.a;
+        new alkt(this, booleanExtra, false, aljpVar, ajtm.f(this, aupzVar, true), new aljr() { // from class: alkr
+            @Override // defpackage.aljr
             public final ConnectivityManager a(Context context) {
-                int i = ajkb.d;
+                int i = alkt.d;
                 return (ConnectivityManager) context.getSystemService(ConnectivityManager.class);
             }
-        }, fllt.a.a().w().b).a((ajiy) this.b.a(), new ajje(), new ajjf());
-        arxoVar.j("Finished running", new Object[0]);
+        }, fodd.a.lK().w().b).a((aljq) this.b.lK(), new aljw(), new aljx());
+        auadVar.j("Finished running", new Object[0]);
     }
 }

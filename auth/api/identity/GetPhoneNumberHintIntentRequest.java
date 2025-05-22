@@ -3,15 +3,15 @@ package com.google.android.gms.auth.api.identity;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.zcu;
+import defpackage.abcp;
+import defpackage.atyq;
+import defpackage.atzr;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GetPhoneNumberHintIntentRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zcu();
+    public static final Parcelable.Creator CREATOR = new abcp();
     public final int a;
 
     public GetPhoneNumberHintIntentRequest(int i) {
@@ -20,7 +20,7 @@ public class GetPhoneNumberHintIntentRequest extends AbstractSafeParcelable {
 
     public final boolean equals(Object obj) {
         if (obj instanceof GetPhoneNumberHintIntentRequest) {
-            return arwb.b(Integer.valueOf(this.a), Integer.valueOf(((GetPhoneNumberHintIntentRequest) obj).a));
+            return atyq.b(Integer.valueOf(this.a), Integer.valueOf(((GetPhoneNumberHintIntentRequest) obj).a));
         }
         return false;
     }
@@ -32,8 +32,8 @@ public class GetPhoneNumberHintIntentRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.c(parcel, a);
     }
 }

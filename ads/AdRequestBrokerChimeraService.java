@@ -14,48 +14,48 @@ import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
 import com.google.android.gms.ads.nonagon.load.service.x;
 import com.google.android.gms.ads.nonagon.util.logging.cui.n;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxhc;
-import defpackage.ejck;
-import defpackage.tdg;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzps;
+import defpackage.elpp;
+import defpackage.uzg;
 import java.util.ArrayDeque;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class AdRequestBrokerChimeraService extends bxgd {
+public final class AdRequestBrokerChimeraService extends bzot {
     public static final /* synthetic */ int a = 0;
 
     public AdRequestBrokerChimeraService() {
-        super(8, "com.google.android.gms.ads.service.START", ejck.a, 3, 10);
+        super(8, "com.google.android.gms.ads.service.START", elpp.a, 3, 10);
     }
 
     private final void c() {
         b.a(this).a();
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         c();
-        final tdg a2 = tdg.a(this);
-        bxgjVar.c(new bxhc() { // from class: tcc
+        final uzg a2 = uzg.a(this);
+        bzozVar.c(new bzps() { // from class: uyc
             @Override // android.os.IInterface
             public final IBinder asBinder() {
                 int i = AdRequestBrokerChimeraService.a;
-                tdg tdgVar = tdg.this;
-                tcq tcqVar = tdgVar.a;
-                Context c = tcw.c(tcqVar);
-                ensv b = com.google.android.gms.ads.nonagon.util.concurrent.b.b();
-                if (tdgVar == null) {
+                uzg uzgVar = uzg.this;
+                uyq uyqVar = uzgVar.a;
+                Context c = uyw.c(uyqVar);
+                eqgo b = com.google.android.gms.ads.nonagon.util.concurrent.b.b();
+                if (uzgVar == null) {
                     throw new NullPointerException("Cannot return null from a non-@Nullable @Provides method");
                 }
-                Context c2 = tcw.c(tcqVar);
-                return new e(c, b, tdgVar, new x(new l(c2, new h(c2, (n) tdgVar.g.a()).a, new VersionInfoParcel(251661004, 251661004))), (ArrayDeque) tdgVar.h.a(), (n) tdgVar.g.a());
+                Context c2 = uyw.c(uyqVar);
+                return new e(c, b, uzgVar, new x(new l(c2, new h(c2, (n) uzgVar.g.a()).a, new VersionInfoParcel(251864004, 251864004))), (ArrayDeque) uzgVar.h.a(), (n) uzgVar.g.a());
             }
         });
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final IBinder onBind(Intent intent) {
         p.c(this);
         c();

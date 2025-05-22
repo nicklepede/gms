@@ -1,14 +1,17 @@
 package com.google.android.gms.org.conscrypt;
 
 import com.google.android.gms.org.conscrypt.OpenSSLCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsMode;
+import com.google.android.gms.org.conscrypt.metrics.MetricsPadding;
 import java.security.NoSuchAlgorithmException;
 import javax.crypto.NoSuchPaddingException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class OpenSSLEvpCipherARC4 extends OpenSSLEvpCipher {
     public OpenSSLEvpCipherARC4() {
-        super(OpenSSLCipher.Mode.ECB, OpenSSLCipher.Padding.NOPADDING);
+        super(OpenSSLCipher.Mode.ECB, OpenSSLCipher.Padding.NOPADDING, MetricsCipher.ARC4.getId(), MetricsMode.ECB.getId(), MetricsPadding.NO_PADDING.getId());
     }
 
     @Override // com.google.android.gms.org.conscrypt.OpenSSLCipher

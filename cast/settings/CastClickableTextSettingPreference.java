@@ -6,10 +6,10 @@ import android.view.View;
 import android.widget.TextView;
 import androidx.preference.Preference;
 import com.google.android.gms.R;
-import defpackage.ankj;
-import defpackage.kmp;
+import defpackage.aplw;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CastClickableTextSettingPreference extends Preference {
     private final Context a;
@@ -24,18 +24,18 @@ public class CastClickableTextSettingPreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
         Context context = this.a;
         int i = this.c;
-        View view = kmpVar.a;
+        View view = mfaVar.a;
         String string = context.getString(this.b, context.getString(i));
         TextView textView = (TextView) view.findViewById(R.id.text);
         if (textView == null) {
             return;
         }
         SpannableString spannableString = new SpannableString(string);
-        spannableString.setSpan(new ankj(), (string.length() - r1.length()) - 1, string.length(), 33);
+        spannableString.setSpan(new aplw(), (string.length() - r1.length()) - 1, string.length(), 33);
         textView.setText(spannableString);
     }
 }

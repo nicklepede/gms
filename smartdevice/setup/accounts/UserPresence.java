@@ -5,18 +5,18 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.dedk;
+import defpackage.atzr;
+import defpackage.dgon;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes7.dex */
 public class UserPresence extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new dedk();
+    public static final Parcelable.Creator CREATOR = new dgon();
     private static final HashMap g;
     final Set a;
     public boolean b;
@@ -44,7 +44,7 @@ public class UserPresence extends BinarySerializableFastSafeParcelableJson {
         this.f = j2;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
@@ -65,18 +65,28 @@ public class UserPresence extends BinarySerializableFastSafeParcelableJson {
         throw new IllegalStateException(a.j(i, "Unknown SafeParcelable id="));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return g;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
-    protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
+        int i2 = fastJsonResponse$Field.g;
+        if (i2 != 4) {
+            throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be an int."));
+        }
+        this.d = i;
+        this.a.add(Integer.valueOf(i2));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
             this.b = z;
@@ -89,17 +99,7 @@ public class UserPresence extends BinarySerializableFastSafeParcelableJson {
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
-        int i2 = fastJsonResponse$Field.g;
-        if (i2 != 4) {
-            throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be an int."));
-        }
-        this.d = i;
-        this.a.add(Integer.valueOf(i2));
-    }
-
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void k(FastJsonResponse$Field fastJsonResponse$Field, String str, long j) {
         int i = fastJsonResponse$Field.g;
         if (i == 5) {
@@ -116,23 +116,23 @@ public class UserPresence extends BinarySerializableFastSafeParcelableJson {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.e(parcel, 2, this.b);
+            atzr.e(parcel, 2, this.b);
         }
         if (set.contains(3)) {
-            arxc.e(parcel, 3, this.c);
+            atzr.e(parcel, 3, this.c);
         }
         if (set.contains(4)) {
-            arxc.o(parcel, 4, this.d);
+            atzr.o(parcel, 4, this.d);
         }
         if (set.contains(5)) {
-            arxc.q(parcel, 5, this.e);
+            atzr.q(parcel, 5, this.e);
         }
         if (set.contains(6)) {
-            arxc.q(parcel, 6, this.f);
+            atzr.q(parcel, 6, this.f);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public UserPresence() {

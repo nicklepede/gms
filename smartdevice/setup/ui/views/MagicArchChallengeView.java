@@ -20,47 +20,47 @@ import com.google.android.gms.smartdevice.d2d.FallbackAccount;
 import com.google.android.gms.smartdevice.directtransfer.UiCustomization;
 import com.google.android.gms.smartdevice.setup.ui.views.MagicArchChallengeView;
 import com.google.android.setupdesign.GlifLayout;
-import defpackage.arjx;
-import defpackage.arkc;
-import defpackage.arwm;
-import defpackage.arxo;
-import defpackage.asmb;
-import defpackage.ddoe;
-import defpackage.delr;
-import defpackage.delt;
-import defpackage.delu;
-import defpackage.delw;
-import defpackage.denq;
-import defpackage.edeq;
-import defpackage.edib;
-import defpackage.edif;
-import defpackage.edjs;
-import defpackage.fsdd;
-import defpackage.fsds;
-import defpackage.fsek;
-import defpackage.ips;
-import defpackage.qfn;
+import defpackage.atmm;
+import defpackage.atmr;
+import defpackage.atzb;
+import defpackage.auad;
+import defpackage.aupv;
+import defpackage.dfzj;
+import defpackage.dgwu;
+import defpackage.dgww;
+import defpackage.dgwx;
+import defpackage.dgwz;
+import defpackage.dgyt;
+import defpackage.efrl;
+import defpackage.efuw;
+import defpackage.efva;
+import defpackage.efwn;
+import defpackage.fuya;
+import defpackage.fuyp;
+import defpackage.fuzh;
+import defpackage.iri;
+import defpackage.ryr;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class MagicArchChallengeView extends LinearLayout {
-    public static final arxo a = new denq(new String[]{"Setup", "UI", "View", "MagicArchChallengeView"});
-    public qfn b;
+    public static final auad a = new dgyt(new String[]{"Setup", "UI", "View", "MagicArchChallengeView"});
+    public ryr b;
     public WebView c;
     public GlifLayout d;
     public View e;
     public View f;
     public boolean g;
-    public delu h;
+    public dgwx h;
     public volatile List i;
     public CountDownLatch j;
     public int k;
-    delw l;
+    dgwz l;
     public final ArrayList m;
     private WebViewClient n;
     private CookieManager o;
@@ -73,29 +73,29 @@ public class MagicArchChallengeView extends LinearLayout {
     }
 
     private final void h() {
-        boolean k = arkc.k(getContext());
+        boolean k = atmr.k(getContext());
         this.p = k;
-        arxo arxoVar = a;
-        arxoVar.d("isNightModeActive = %b", Boolean.valueOf(k));
+        auad auadVar = a;
+        auadVar.d("isNightModeActive = %b", Boolean.valueOf(k));
         Context context = getContext();
-        arwm.s(context);
+        atzb.s(context);
         LayoutInflater cloneInContext = LayoutInflater.from(context).cloneInContext(context);
-        cloneInContext.setFactory2(new arjx());
+        cloneInContext.setFactory2(new atmm());
         View inflate = cloneInContext.inflate(R.layout.smartdevice_magic_arch_webview, this);
         this.c = (WebView) inflate.findViewById(R.id.webview);
-        delw delwVar = new delw(this);
-        this.l = delwVar;
-        this.c.addJavascriptInterface(delwVar, "mm");
+        dgwz dgwzVar = new dgwz(this);
+        this.l = dgwzVar;
+        this.c.addJavascriptInterface(dgwzVar, "mm");
         this.o = CookieManager.getInstance();
         this.d = (GlifLayout) inflate.findViewById(R.id.glif_layout);
         this.e = inflate.findViewById(R.id.sud_layout_header);
         this.f = inflate.findViewById(R.id.sud_layout_content);
-        boolean k2 = arkc.k(getContext());
+        boolean k2 = atmr.k(getContext());
         this.g = k2;
-        arxoVar.d("useDarkTheme = %b", Boolean.valueOf(k2));
-        delr delrVar = new delr(this);
-        this.n = delrVar;
-        this.c.setWebViewClient(delrVar);
+        auadVar.d("useDarkTheme = %b", Boolean.valueOf(k2));
+        dgwu dgwuVar = new dgwu(this);
+        this.n = dgwuVar;
+        this.c.setWebViewClient(dgwuVar);
         this.c.getSettings().setJavaScriptEnabled(true);
     }
 
@@ -105,31 +105,31 @@ public class MagicArchChallengeView extends LinearLayout {
         this.d.z().setVisibility(0);
         this.d.y().setVisibility(0);
         this.d.J(true);
-        if (!fsek.i()) {
+        if (!fuzh.i()) {
             this.d.K(true);
         }
         if (this.k >= this.i.size() && this.h != null) {
-            if (fsek.i()) {
+            if (fuzh.i()) {
                 this.h.b(this.m);
                 return;
             } else {
-                asmb asmbVar = new asmb(1, 9);
-                asmbVar.submit(new Runnable() { // from class: deln
+                aupv aupvVar = new aupv(1, 9);
+                aupvVar.submit(new Runnable() { // from class: dgwq
                     @Override // java.lang.Runnable
                     public final void run() {
                         try {
-                            MagicArchChallengeView.this.j.await(fsek.a.a().h(), TimeUnit.SECONDS);
+                            MagicArchChallengeView.this.j.await(fuzh.a.lK().h(), TimeUnit.SECONDS);
                         } catch (InterruptedException e) {
                             MagicArchChallengeView.a.l(e);
                         }
                     }
-                }).hn(new Runnable() { // from class: delo
+                }).hD(new Runnable() { // from class: dgwr
                     @Override // java.lang.Runnable
                     public final void run() {
                         MagicArchChallengeView magicArchChallengeView = MagicArchChallengeView.this;
                         magicArchChallengeView.h.b(magicArchChallengeView.m);
                     }
-                }, asmbVar);
+                }, aupvVar);
                 return;
             }
         }
@@ -142,60 +142,60 @@ public class MagicArchChallengeView extends LinearLayout {
         }
         Uri.Builder buildUpon = Uri.parse(str).buildUpon().appendQueryParameter("hl", Locale.getDefault().getLanguage()).build().buildUpon();
         buildUpon.appendQueryParameter("hide_status_bar", "1");
-        int i = ips.a;
-        if (fsek.a.a().o()) {
-            qfn qfnVar = this.b;
-            int i2 = edjs.a;
-            if (edeq.z(qfnVar)) {
+        int i = iri.a;
+        if (fuzh.a.lK().p()) {
+            ryr ryrVar = this.b;
+            int i2 = efwn.a;
+            if (efrl.z(ryrVar)) {
                 buildUpon.appendQueryParameter("theme", "mn");
             }
         }
         if (this.g) {
             buildUpon.appendQueryParameter("color_scheme", "dark");
         }
-        this.o.removeAllCookies(new delt(this, buildUpon.toString()));
+        this.o.removeAllCookies(new dgww(this, buildUpon.toString()));
     }
 
     public final void b() {
-        if (!fsdd.e()) {
+        if (!fuya.e()) {
             this.m.add((FallbackAccount) this.i.get(this.k));
         }
         this.k++;
         a();
     }
 
-    public final void c(qfn qfnVar, delu deluVar, String str, String str2, int i, UiCustomization uiCustomization) {
-        arxo arxoVar = a;
-        arxoVar.d("initializeView()", new Object[0]);
+    public final void c(ryr ryrVar, dgwx dgwxVar, String str, String str2, int i, UiCustomization uiCustomization) {
+        auad auadVar = a;
+        auadVar.d("initializeView()", new Object[0]);
         this.d.b(str);
         this.d.G(str2);
-        ddoe.b(getContext(), this.d, i);
+        dfzj.b(getContext(), this.d, i);
         this.c.setVisibility(8);
         this.d.setImportantForAccessibility(0);
-        boolean k = arkc.k(getContext());
-        arxoVar.d("isNightModeActive: %b, currentNightMode: %b", Boolean.valueOf(this.p), Boolean.valueOf(k));
+        boolean k = atmr.k(getContext());
+        auadVar.d("isNightModeActive: %b, currentNightMode: %b", Boolean.valueOf(this.p), Boolean.valueOf(k));
         boolean z = this.p;
         if (z != k) {
-            arxoVar.d("fixHeaderTextColor(isNightModeActive = %b)", Boolean.valueOf(z));
+            auadVar.d("fixHeaderTextColor(isNightModeActive = %b)", Boolean.valueOf(z));
             Resources resources = this.d.getResources();
             Configuration configuration = resources.getConfiguration();
             configuration.uiMode = true != z ? 16 : 32;
             resources.updateConfiguration(configuration, resources.getDisplayMetrics());
             ColorStateList valueOf = ColorStateList.valueOf(resources.getColor(R.color.sud_system_primary_text));
-            ((edif) this.d.q(edif.class)).e(valueOf);
-            ((edib) this.d.q(edib.class)).c(valueOf);
+            ((efva) this.d.q(efva.class)).e(valueOf);
+            ((efuw) this.d.q(efuw.class)).c(valueOf);
         }
         this.d.z().setVisibility(0);
         this.d.y().setVisibility(0);
         this.e.setVisibility(0);
-        if (!fsek.i()) {
+        if (!fuzh.i()) {
             this.d.K(true);
         }
-        if (fsds.f() && uiCustomization != null) {
-            ddoe.a(uiCustomization, this.d);
+        if (fuyp.f() && uiCustomization != null) {
+            dfzj.a(uiCustomization, this.d);
         }
-        this.h = deluVar;
-        this.b = qfnVar;
+        this.h = dgwxVar;
+        this.b = ryrVar;
     }
 
     public final void d() {
@@ -204,21 +204,21 @@ public class MagicArchChallengeView extends LinearLayout {
         }
     }
 
-    public final void e(qfn qfnVar, delu deluVar, String str, String str2, int i, List list, UiCustomization uiCustomization) {
+    public final void e(ryr ryrVar, dgwx dgwxVar, String str, String str2, int i, List list, UiCustomization uiCustomization) {
         if (str != null) {
             this.d.b(str);
         } else {
             this.d.b(getResources().getQuantityString(R.plurals.smartdevice_d2d_copying_accounts, list == null ? 0 : list.size()));
         }
         this.d.G(str2);
-        ddoe.b(getContext(), this.d, i);
-        if (fsds.f() && uiCustomization != null) {
-            ddoe.a(uiCustomization, this.d);
+        dfzj.b(getContext(), this.d, i);
+        if (fuyp.f() && uiCustomization != null) {
+            dfzj.a(uiCustomization, this.d);
         }
-        this.h = deluVar;
+        this.h = dgwxVar;
         this.i = list;
         this.j = new CountDownLatch(list.size());
-        this.b = qfnVar;
+        this.b = ryrVar;
         a();
     }
 
@@ -229,7 +229,7 @@ public class MagicArchChallengeView extends LinearLayout {
     }
 
     public final boolean g() {
-        return this.d.gK();
+        return this.d.ha();
     }
 
     @Override // android.view.View

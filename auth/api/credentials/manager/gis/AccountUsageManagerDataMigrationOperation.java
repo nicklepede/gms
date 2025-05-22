@@ -2,17 +2,17 @@ package com.google.android.gms.auth.api.credentials.manager.gis;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.fkpd;
-import defpackage.xvf;
+import defpackage.fnfw;
+import defpackage.ztc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AccountUsageManagerDataMigrationOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        xvf xvfVar = (xvf) xvf.a.b();
-        if (fkpd.c()) {
-            xvfVar.f(3);
+        ztc ztcVar = (ztc) ztc.a.b();
+        if (fnfw.c()) {
+            ztcVar.f(3);
         }
     }
 }

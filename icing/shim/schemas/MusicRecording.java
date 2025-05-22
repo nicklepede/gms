@@ -1,11 +1,11 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eiif;
+import defpackage.ekvk;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class MusicRecording extends Thing {
     public final MusicAlbum a;
@@ -19,8 +19,8 @@ public final class MusicRecording extends Thing {
         this.a = musicAlbum;
         this.b = musicGroup;
         this.c = musicPlaylist;
-        this.d = eiif.b(str4);
-        this.e = eiif.b(str5);
+        this.d = ekvk.b(str4);
+        this.e = ekvk.b(str5);
     }
 
     @Override // com.google.android.gms.icing.shim.schemas.Thing

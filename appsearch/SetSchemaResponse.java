@@ -3,11 +3,11 @@ package com.google.android.gms.appsearch;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bsa;
-import defpackage.uct;
-import defpackage.uds;
-import defpackage.ues;
+import defpackage.atzr;
+import defpackage.bsl;
+import defpackage.vys;
+import defpackage.vzr;
+import defpackage.war;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.Collection;
@@ -15,10 +15,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class SetSchemaResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ues();
+    public static final Parcelable.Creator CREATOR = new war();
     final List a;
     final List b;
     final List c;
@@ -27,9 +27,9 @@ public final class SetSchemaResponse extends AbstractSafeParcelable {
     private Set f;
     private Set g;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class MigrationFailure extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new uds();
+        public static final Parcelable.Creator CREATOR = new vzr();
         public final String a;
         public final String b;
         public final String c;
@@ -44,8 +44,8 @@ public final class SetSchemaResponse extends AbstractSafeParcelable {
             this.e = i;
         }
 
-        public final uct a() {
-            return new uct(this.e, null, this.d);
+        public final vys a() {
+            return new vys(this.e, null, this.d);
         }
 
         public final String toString() {
@@ -55,13 +55,13 @@ public final class SetSchemaResponse extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             String str = this.a;
-            int a = arxc.a(parcel);
-            arxc.v(parcel, 1, str, false);
-            arxc.v(parcel, 2, this.b, false);
-            arxc.v(parcel, 3, this.c, false);
-            arxc.v(parcel, 4, this.d, false);
-            arxc.o(parcel, 5, this.e);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.v(parcel, 1, str, false);
+            atzr.v(parcel, 2, this.b, false);
+            atzr.v(parcel, 3, this.c, false);
+            atzr.v(parcel, 4, this.d, false);
+            atzr.o(parcel, 5, this.e);
+            atzr.c(parcel, a);
         }
     }
 
@@ -78,21 +78,21 @@ public final class SetSchemaResponse extends AbstractSafeParcelable {
 
     public final Set b() {
         if (this.e == null) {
-            this.e = new bsa((Collection) Objects.requireNonNull(this.a));
+            this.e = new bsl((Collection) Objects.requireNonNull(this.a));
         }
         return DesugarCollections.unmodifiableSet(this.e);
     }
 
     public final Set c() {
         if (this.g == null) {
-            this.g = new bsa((Collection) Objects.requireNonNull(this.b));
+            this.g = new bsl((Collection) Objects.requireNonNull(this.b));
         }
         return DesugarCollections.unmodifiableSet(this.g);
     }
 
     public final Set d() {
         if (this.f == null) {
-            this.f = new bsa((Collection) Objects.requireNonNull(this.c));
+            this.f = new bsl((Collection) Objects.requireNonNull(this.c));
         }
         return DesugarCollections.unmodifiableSet(this.f);
     }
@@ -100,11 +100,11 @@ public final class SetSchemaResponse extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.x(parcel, 1, list, false);
-        arxc.x(parcel, 2, this.b, false);
-        arxc.x(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.x(parcel, 1, list, false);
+        atzr.x(parcel, 2, this.b, false);
+        atzr.x(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 
     public SetSchemaResponse(List list, List list2, List list3, List list4) {

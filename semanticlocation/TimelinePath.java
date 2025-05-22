@@ -3,26 +3,26 @@ package com.google.android.gms.semanticlocation;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.czgt;
-import defpackage.czhf;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.atzr;
+import defpackage.dbqr;
+import defpackage.dbrd;
+import defpackage.elgo;
+import defpackage.elpg;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class TimelinePath extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new czhf();
+    public static final Parcelable.Creator CREATOR = new dbrd();
     public static final List a;
 
     @Deprecated
     public final List b;
     public final Path c;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class SegmentPath extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new czgt();
+        public static final Parcelable.Creator CREATOR = new dbqr();
         public final String a;
         public final Path b;
 
@@ -34,16 +34,16 @@ public class TimelinePath extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             String str = this.a;
-            int a = arxc.a(parcel);
-            arxc.v(parcel, 1, str, false);
-            arxc.t(parcel, 2, this.b, i, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.v(parcel, 1, str, false);
+            atzr.t(parcel, 2, this.b, i, false);
+            atzr.c(parcel, a);
         }
     }
 
     static {
-        int i = eitj.d;
-        a = ejcb.a;
+        int i = elgo.d;
+        a = elpg.a;
         Parcelable.Creator creator = Path.CREATOR;
     }
 
@@ -55,9 +55,9 @@ public class TimelinePath extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.b;
-        int a2 = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.t(parcel, 2, this.c, i, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.t(parcel, 2, this.c, i, false);
+        atzr.c(parcel, a2);
     }
 }

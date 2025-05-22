@@ -8,15 +8,17 @@ import androidx.preference.Preference;
 import com.google.android.gms.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import defpackage.ccxu;
-import defpackage.cczj;
-import defpackage.kmp;
+import defpackage.cfgs;
+import defpackage.cfii;
+import defpackage.cfij;
+import defpackage.mfa;
+import defpackage.oka;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class SecurityAnswerPreference extends Preference {
     public String a;
-    public ccxu b;
+    public cfgs b;
 
     public SecurityAnswerPreference(Context context) {
         super(context);
@@ -24,15 +26,15 @@ public class SecurityAnswerPreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        View view = kmpVar.a;
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        View view = mfaVar.a;
         TextInputEditText textInputEditText = (TextInputEditText) view.findViewById(R.id.secret_answer_text);
         Editable text = textInputEditText.getText();
         String obj = text == null ? "" : text.toString();
         textInputEditText.setText(this.a);
         TextInputLayout textInputLayout = (TextInputLayout) view.findViewById(R.id.secret_answer_layout);
-        textInputEditText.addTextChangedListener(new cczj(this, textInputLayout));
+        textInputEditText.addTextChangedListener(new cfij(this, textInputLayout));
         if (this.a.equals(obj)) {
             return;
         }
@@ -41,18 +43,20 @@ public class SecurityAnswerPreference extends Preference {
 
     public final void k(TextInputLayout textInputLayout) {
         if (l()) {
-            textInputLayout.A(this.j.getString(R.string.fmd_quick_remote_lock_security_answer_error_long));
-        } else {
+            textInputLayout.A(oka.a(this.j.getString(R.string.fmd_quick_remote_lock_security_answer_error_long), "count", 100));
+        } else if (this.a.isEmpty() || !cfii.a(this.a)) {
             textInputLayout.A(null);
+        } else {
+            textInputLayout.A(this.j.getString(R.string.fmd_quick_remote_lock_security_answer_error_blank));
         }
-        ccxu ccxuVar = this.b;
-        if (ccxuVar != null) {
-            ccxuVar.a.K();
+        cfgs cfgsVar = this.b;
+        if (cfgsVar != null) {
+            cfgsVar.a.K();
         }
     }
 
     public final boolean l() {
-        return this.a.length() > 100;
+        return this.a.length() > 99;
     }
 
     public SecurityAnswerPreference(Context context, AttributeSet attributeSet) {

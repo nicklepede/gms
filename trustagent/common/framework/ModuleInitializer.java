@@ -3,28 +3,28 @@ package com.google.android.gms.trustagent.common.framework;
 import android.content.Intent;
 import com.google.android.gms.trustagent.common.service.PreferenceChimeraService;
 import com.google.android.gms.trustagent.common.ui.ConfirmUserCredentialAndStartChimeraActivity;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.dglq;
-import defpackage.dglr;
-import defpackage.enre;
-import defpackage.ensj;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.diwv;
+import defpackage.diww;
+import defpackage.eqex;
+import defpackage.eqgc;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class ModuleInitializer extends anya {
-    public static final asot a = asot.b("TrustAgent", asej.TRUSTAGENT);
+public class ModuleInitializer extends apzs {
+    public static final ausn a = ausn.b("TrustAgent", auid.TRUSTAGENT);
     private final List b = Arrays.asList(ConfirmUserCredentialAndStartChimeraActivity.j, PreferenceChimeraService.b);
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        for (dglq dglqVar : this.b) {
-            String b = dglqVar.b();
-            if (dglqVar.c()) {
-                ensj.t(dglqVar.a(), new dglr(this, b), enre.a);
+        for (diwv diwvVar : this.b) {
+            String b = diwvVar.b();
+            if (diwvVar.c()) {
+                eqgc.t(diwvVar.a(), new diww(this, b), eqex.a);
             }
         }
     }

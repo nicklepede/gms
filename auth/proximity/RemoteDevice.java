@@ -5,18 +5,18 @@ import android.os.Parcelable;
 import android.util.Base64;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.acek;
-import defpackage.achm;
-import defpackage.arwb;
-import defpackage.arxc;
+import defpackage.aeek;
+import defpackage.aehm;
+import defpackage.atyq;
+import defpackage.atzr;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class RemoteDevice extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new achm();
+    public static final Parcelable.Creator CREATOR = new aehm();
     public final int a;
     public final String b;
     public final String c;
@@ -46,14 +46,14 @@ public class RemoteDevice extends AbstractSafeParcelable {
     }
 
     public final String b() {
-        return acek.a(this.b);
+        return aeek.a(this.b);
     }
 
     public final boolean equals(Object obj) {
         if (obj != null) {
             if (obj.getClass().equals(getClass())) {
                 RemoteDevice remoteDevice = (RemoteDevice) obj;
-                if (remoteDevice.a == this.a && remoteDevice.b.equals(this.b) && remoteDevice.c.equals(this.c) && remoteDevice.d.equals(this.d) && Arrays.equals(remoteDevice.e, this.e) && remoteDevice.f.equals(this.f) && arwb.b(this.i, remoteDevice.i)) {
+                if (remoteDevice.a == this.a && remoteDevice.b.equals(this.b) && remoteDevice.c.equals(this.c) && remoteDevice.d.equals(this.d) && Arrays.equals(remoteDevice.e, this.e) && remoteDevice.f.equals(this.f) && atyq.b(this.i, remoteDevice.i)) {
                     return true;
                 }
             }
@@ -72,16 +72,16 @@ public class RemoteDevice extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.b;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.c, false);
-        arxc.v(parcel, 3, this.d, false);
-        arxc.i(parcel, 4, this.e, false);
-        arxc.v(parcel, 5, this.f, false);
-        arxc.y(parcel, 6, this.g, false);
-        arxc.v(parcel, 7, this.h, false);
-        arxc.t(parcel, 8, this.i, i, false);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.c, false);
+        atzr.v(parcel, 3, this.d, false);
+        atzr.i(parcel, 4, this.e, false);
+        atzr.v(parcel, 5, this.f, false);
+        atzr.y(parcel, 6, this.g, false);
+        atzr.v(parcel, 7, this.h, false);
+        atzr.t(parcel, 8, this.i, i, false);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
+        atzr.c(parcel, a);
     }
 }

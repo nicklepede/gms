@@ -1,12 +1,12 @@
 package com.google.android.gms.chimera.modules.nearby.nofp;
 
 import android.content.Context;
-import defpackage.anye;
-import defpackage.eike;
+import defpackage.apzw;
+import defpackage.ekxj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class AppContextProvider extends anye {
+public class AppContextProvider extends apzw {
     private static AppContextProvider c;
 
     private AppContextProvider(Context context, String str) {
@@ -14,7 +14,7 @@ public class AppContextProvider extends anye {
     }
 
     private static void setApplicationContextV0(Context context) {
-        eike.a(c == null);
+        ekxj.a(c == null);
         c = new AppContextProvider(context, "com.google.android.gms.chimera.modules.nearby.nofp.ModuleApplication");
     }
 }

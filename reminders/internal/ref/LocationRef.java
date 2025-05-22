@@ -6,12 +6,12 @@ import com.google.android.gms.reminders.model.Address;
 import com.google.android.gms.reminders.model.FeatureIdProto;
 import com.google.android.gms.reminders.model.Location;
 import com.google.android.gms.reminders.model.LocationEntity;
-import defpackage.cxeb;
-import defpackage.cxel;
+import defpackage.cznx;
+import defpackage.czoh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class LocationRef extends cxeb implements Location {
+public class LocationRef extends cznx implements Location {
     private boolean f;
     private FeatureIdProtoRef g;
     private boolean h;
@@ -72,7 +72,7 @@ public class LocationRef extends cxeb implements Location {
         return m(p("lng"));
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof Location)) {
             return false;
@@ -98,7 +98,7 @@ public class LocationRef extends cxeb implements Location {
         return r(p("display_address"));
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return LocationEntity.b(this);
     }
@@ -113,13 +113,13 @@ public class LocationRef extends cxeb implements Location {
         return r(p("name"));
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new LocationEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxel.a(new LocationEntity(this), parcel, i);
+        czoh.a(new LocationEntity(this), parcel, i);
     }
 }

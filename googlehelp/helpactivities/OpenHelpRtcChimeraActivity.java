@@ -15,44 +15,44 @@ import com.google.android.gms.R;
 import com.google.android.gms.googlehelp.common.HelpConfig;
 import com.google.android.gms.googlehelp.metrics.MetricsIntentOperation;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.anxo;
-import defpackage.asbo;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.bish;
-import defpackage.bivk;
-import defpackage.bjaw;
-import defpackage.bjay;
-import defpackage.bjbk;
-import defpackage.bjec;
-import defpackage.bjed;
-import defpackage.dfee;
-import defpackage.eihn;
-import defpackage.ejhf;
-import defpackage.ensv;
-import defpackage.folg;
-import defpackage.folt;
-import defpackage.fouf;
-import defpackage.ikd;
-import defpackage.qfp;
+import defpackage.apzg;
+import defpackage.aued;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.bkww;
+import defpackage.bkzz;
+import defpackage.blfl;
+import defpackage.blfn;
+import defpackage.blfz;
+import defpackage.blir;
+import defpackage.blis;
+import defpackage.dhpk;
+import defpackage.ekus;
+import defpackage.eluo;
+import defpackage.eqgo;
+import defpackage.frdz;
+import defpackage.frem;
+import defpackage.frmy;
+import defpackage.ilt;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class OpenHelpRtcChimeraActivity extends qfp {
-    private static final asot j = asot.b("gH_OpenHelpRtcActivity", asej.GOOGLE_HELP);
-    private ensv k;
-    private bjay l;
+public class OpenHelpRtcChimeraActivity extends ryt {
+    private static final ausn j = ausn.b("gH_OpenHelpRtcActivity", auid.GOOGLE_HELP);
+    private eqgo k;
+    private blfn l;
     private boolean m = false;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class OnPackageChangeOperation extends IntentOperation {
         @Override // com.google.android.chimera.IntentOperation
         public final void onHandleIntent(Intent intent) {
-            if (bivk.a(fouf.a.a().a())) {
+            if (bkzz.a(frmy.a.lK().a())) {
                 return;
             }
-            if (eihn.a(intent.getAction(), "com.google.android.gms.ENTIRE_PACKAGE_CHANGED")) {
+            if (ekus.a(intent.getAction(), "com.google.android.gms.ENTIRE_PACKAGE_CHANGED")) {
                 intent.setAction("android.intent.action.PACKAGE_CHANGED");
             }
             String action = intent.getAction();
@@ -85,14 +85,14 @@ public class OpenHelpRtcChimeraActivity extends qfp {
         } catch (ActivityNotFoundException e) {
             c(str, 157, 63);
             String string = getString(R.string.gh_play_store_activity_or_browser_not_found);
-            ((ejhf) ((ejhf) j.i()).s(e)).B("%s", string);
+            ((eluo) ((eluo) j.i()).s(e)).B("%s", string);
             Toast.makeText(this, string, 1).show();
             finishAndRemoveTask();
         }
     }
 
     private final void g() {
-        if (b() && bish.a(this) > folg.j()) {
+        if (b() && bkww.a(this) > frdz.j()) {
             Intent addFlags = new Intent().setComponent(new ComponentName("com.google.android.apps.helprtc", "com.google.android.apps.helprtc.ui.ScreenshareActivity")).addFlags(805306368);
             Bundle extras = getIntent().getExtras();
             if (extras != null) {
@@ -107,7 +107,7 @@ public class OpenHelpRtcChimeraActivity extends qfp {
                 try {
                     startActivity(addFlags);
                 } catch (Exception e) {
-                    ((ejhf) ((ejhf) j.i()).s(e)).x("Unable to start the screenshare activity.");
+                    ((eluo) ((eluo) j.i()).s(e)).x("Unable to start the screenshare activity.");
                 }
                 return;
             } finally {
@@ -121,22 +121,22 @@ public class OpenHelpRtcChimeraActivity extends qfp {
         className.putExtra("invitationId", a);
         PendingIntent activity = PendingIntent.getActivity(getApplicationContext(), 10104, className, 134217728);
         Context applicationContext = getApplicationContext();
-        asbo f = asbo.f(applicationContext);
-        ikd ikdVar = new ikd(applicationContext, "open_helprtc_channel_id");
-        ikdVar.m(getString(R.string.gh_notify_install_google_support_services_title));
-        ikdVar.l = 1;
-        ikdVar.n(3);
-        ikdVar.g(anxo.a(this, 2131233225));
-        ikdVar.l(getString(R.string.gh_notify_install_google_support_services_content));
-        ikdVar.g = activity;
-        ikdVar.k(true);
+        aued f = aued.f(applicationContext);
+        ilt iltVar = new ilt(applicationContext, "open_helprtc_channel_id");
+        iltVar.r(getString(R.string.gh_notify_install_google_support_services_title));
+        iltVar.l = 1;
+        iltVar.s(3);
+        iltVar.n(apzg.a(this, 2131233291));
+        iltVar.j(getString(R.string.gh_notify_install_google_support_services_content));
+        iltVar.g = activity;
+        iltVar.i(true);
         if (Build.VERSION.SDK_INT >= 26 && f.c("open_helprtc_channel_id") == null) {
             f.p(new NotificationChannel("open_helprtc_channel_id", getString(R.string.gh_top_appbar_support_label), 4));
         }
-        if (folt.d()) {
-            f.u(4104, dfee.GOOGLEHELP_INSTALL_HELPRTC_NOTIFICATION, ikdVar.b());
+        if (frem.d()) {
+            f.u(4104, dhpk.GOOGLEHELP_INSTALL_HELPRTC_NOTIFICATION, iltVar.b());
         } else {
-            f.s(4104, ikdVar.b());
+            f.s(4104, iltVar.b());
         }
         moveTaskToBack(true);
     }
@@ -146,47 +146,47 @@ public class OpenHelpRtcChimeraActivity extends qfp {
     }
 
     final boolean b() {
-        return bish.a(this) > 0;
+        return bkww.a(this) > 0;
     }
 
     final void c(String str, int i, int i2) {
-        MetricsIntentOperation.b(getApplicationContext(), bjbk.a(str), "com.google.android.apps.helprtc", 108, i, true);
-        bjaw.A(this, bjbk.a(str), "com.google.android.apps.helprtc", 67, i2);
+        MetricsIntentOperation.b(getApplicationContext(), blfz.a(str), "com.google.android.apps.helprtc", 108, i, true);
+        blfl.A(this, blfz.a(str), "com.google.android.apps.helprtc", 67, i2);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i != 100) {
             return;
         }
-        int a = bish.a(this);
+        int a = bkww.a(this);
         boolean z = a > 0;
         long j2 = a;
-        long j3 = folg.j();
+        long j3 = frdz.j();
         if (!z || j2 <= j3) {
             String a2 = a(getIntent() != null ? getIntent().getExtras() : null);
             HelpConfig helpConfig = new HelpConfig();
             helpConfig.b = "com.google.android.apps.helprtc";
-            helpConfig.e = bjbk.a(a2);
+            helpConfig.e = blfz.a(a2);
             Context applicationContext = getApplicationContext();
             if (this.k == null) {
-                this.k = new asmf(Integer.MAX_VALUE, 9);
+                this.k = new aupz(Integer.MAX_VALUE, 9);
             }
-            ensv ensvVar = this.k;
-            bjay bjayVar = this.l;
-            asot asotVar = bjed.a;
-            ensvVar.execute(new bjec(applicationContext, helpConfig, a2, ensvVar, bjayVar));
+            eqgo eqgoVar = this.k;
+            blfn blfnVar = this.l;
+            ausn ausnVar = blis.a;
+            eqgoVar.execute(new blir(applicationContext, helpConfig, a2, eqgoVar, blfnVar));
             c(a2, true != z ? AndroidInputTypeSignal.TYPE_TEXT_VARIATION_WEB_EDIT_TEXT : 161, true != z ? 66 : 67);
             Toast.makeText(this, getString(R.string.gh_google_support_services_not_installed), 1).show();
             finishAndRemoveTask();
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.l = new bjay(this);
+        this.l = new blfn(this);
         requestWindowFeature(1);
         if (h(getIntent())) {
             g();
@@ -195,16 +195,16 @@ public class OpenHelpRtcChimeraActivity extends qfp {
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
-        bjay bjayVar = this.l;
-        if (bjayVar != null) {
-            bjayVar.close();
+        blfn blfnVar = this.l;
+        if (blfnVar != null) {
+            blfnVar.close();
         }
         super.onDestroy();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         if (h(intent) && this.m) {

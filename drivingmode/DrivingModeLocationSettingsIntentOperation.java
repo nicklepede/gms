@@ -4,29 +4,29 @@ import android.content.Intent;
 import android.util.Log;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
-import defpackage.aojj;
-import defpackage.asew;
-import defpackage.axmp;
-import defpackage.axqc;
-import defpackage.fltb;
-import defpackage.fltk;
-import defpackage.fltn;
+import defpackage.aqlc;
+import defpackage.auiq;
+import defpackage.azqp;
+import defpackage.azuc;
+import defpackage.fokk;
+import defpackage.fokt;
+import defpackage.fokw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class DrivingModeLocationSettingsIntentOperation extends axqc {
-    @Override // defpackage.anxy
+public class DrivingModeLocationSettingsIntentOperation extends azuc {
+    @Override // defpackage.apzq
     public final GoogleSettingsItem b() {
-        if (!fltk.c()) {
+        if (!fokt.c()) {
             return null;
         }
         Log.i("CAR.DRIVINGMODE", "DrivingMode Settings Indexed from the location module");
-        if (!fltb.e() || !fltn.a.a().a() || !g()) {
+        if (!fokk.e() || !fokw.a.lK().a() || !g()) {
             return null;
         }
-        Intent className = new Intent().setClassName(this, axmp.d());
+        Intent className = new Intent().setClassName(this, azqp.d());
         className.setAction("com.google.android.gms.drivingmode.Invoked_from_search");
-        GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(className, 6, getApplicationContext().getString(R.string.driving_mode_settings_search_title), aojj.DRIVING_MODE_ITEM, asew.DRIVING_MODE);
+        GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(className, 6, getApplicationContext().getString(R.string.driving_mode_settings_search_title), aqlc.DRIVING_MODE_ITEM, auiq.DRIVING_MODE);
         googleSettingsItem.g = true;
         googleSettingsItem.i = true;
         googleSettingsItem.j = true;

@@ -2,30 +2,30 @@ package com.google.android.gms.autofill.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.adtj;
-import defpackage.adtp;
-import defpackage.adts;
-import defpackage.eihn;
+import defpackage.aftq;
+import defpackage.aftw;
+import defpackage.aftz;
+import defpackage.ekus;
 import j$.time.YearMonth;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class PaymentCard implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new adtj();
-    public final adts a;
-    public final adts b;
+    public static final Parcelable.Creator CREATOR = new aftq();
+    public final aftz a;
+    public final aftz b;
     public final String c;
     public final YearMonth d;
-    public final adtp e;
+    public final aftw e;
     public final int f;
 
-    public PaymentCard(adts adtsVar, adts adtsVar2, String str, YearMonth yearMonth, adtp adtpVar, int i) {
-        this.a = adtsVar;
-        this.b = adtsVar2;
+    public PaymentCard(aftz aftzVar, aftz aftzVar2, String str, YearMonth yearMonth, aftw aftwVar, int i) {
+        this.a = aftzVar;
+        this.b = aftzVar2;
         this.c = str;
         this.d = yearMonth;
-        this.e = adtpVar;
+        this.e = aftwVar;
         this.f = i;
     }
 
@@ -42,7 +42,7 @@ public final class PaymentCard implements Parcelable {
             return false;
         }
         PaymentCard paymentCard = (PaymentCard) obj;
-        return this.a.equals(paymentCard.a) && eihn.a(this.b, paymentCard.b) && eihn.a(this.c, paymentCard.c) && eihn.a(this.d, paymentCard.d) && eihn.a(this.e, paymentCard.e) && this.f == paymentCard.f;
+        return this.a.equals(paymentCard.a) && ekus.a(this.b, paymentCard.b) && ekus.a(this.c, paymentCard.c) && ekus.a(this.d, paymentCard.d) && ekus.a(this.e, paymentCard.e) && this.f == paymentCard.f;
     }
 
     public final int hashCode() {
@@ -52,8 +52,8 @@ public final class PaymentCard implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         parcel.writeString(this.a.a);
-        adts adtsVar = this.b;
-        parcel.writeString(adtsVar != null ? adtsVar.a : null);
+        aftz aftzVar = this.b;
+        parcel.writeString(aftzVar != null ? aftzVar.a : null);
         parcel.writeString(this.c);
         YearMonth yearMonth = this.d;
         if (yearMonth != null) {
@@ -63,10 +63,10 @@ public final class PaymentCard implements Parcelable {
         } else {
             parcel.writeInt(0);
         }
-        adtp adtpVar = this.e;
-        if (adtpVar != null) {
+        aftw aftwVar = this.e;
+        if (aftwVar != null) {
             parcel.writeInt(1);
-            parcel.writeByteArray(adtpVar.r());
+            parcel.writeByteArray(aftwVar.r());
         } else {
             parcel.writeInt(0);
         }

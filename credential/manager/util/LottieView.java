@@ -7,26 +7,26 @@ import android.os.PowerManager;
 import android.util.AttributeSet;
 import com.google.android.gms.chimera.modules.credential.manager.AppContextProvider;
 import com.google.android.gms.credential.manager.util.LottieView;
-import defpackage.asmb;
-import defpackage.asmf;
-import defpackage.aurd;
-import defpackage.aurf;
-import defpackage.aurn;
-import defpackage.awyn;
-import defpackage.dfak;
-import defpackage.rpq;
+import defpackage.aupv;
+import defpackage.aupz;
+import defpackage.awvd;
+import defpackage.awvf;
+import defpackage.awvn;
+import defpackage.azcn;
+import defpackage.dhlq;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public class LottieView extends awyn {
-    public aurn h;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public class LottieView extends azcn {
+    public awvn h;
 
     public LottieView(Context context) {
         super(context);
     }
 
     private final void y(AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, rpq.j);
+        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, tiy.j);
         String string = obtainStyledAttributes.hasValue(0) ? obtainStyledAttributes.getString(0) : obtainStyledAttributes.getString(1);
         boolean isPowerSaveMode = ((PowerManager) AppContextProvider.b().getSystemService("power")).isPowerSaveMode();
         int i = AppContextProvider.b().getResources().getConfiguration().uiMode & 48;
@@ -34,15 +34,15 @@ public class LottieView extends awyn {
             string = obtainStyledAttributes.getString(1);
         }
         if (string != null) {
-            this.h.a.a(new asmb(1, 9), new asmf(Integer.MAX_VALUE, 10), aurf.a(string), new aurd() { // from class: aurm
-                @Override // defpackage.aurd
+            this.h.a.a(new aupv(1, 9), new aupz(Integer.MAX_VALUE, 10), awvf.a(string), new awvd() { // from class: awvm
+                @Override // defpackage.awvd
                 public final Object a(byte[] bArr, int i2) {
                     return new String(bArr);
                 }
-            }).z(new dfak() { // from class: awyh
-                @Override // defpackage.dfak
-                public final void gn(Object obj) {
-                    LottieView.this.v((String) ((aure) obj).a);
+            }).z(new dhlq() { // from class: azch
+                @Override // defpackage.dhlq
+                public final void gC(Object obj) {
+                    LottieView.this.v((String) ((awve) obj).a);
                 }
             });
         }

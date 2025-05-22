@@ -8,21 +8,21 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.ConnectionsDevice;
 import com.google.android.gms.nearby.connection.v3.dct.DctDevice;
 import com.google.android.gms.nearby.presence.PresenceDevice;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cjal;
-import defpackage.cjan;
-import defpackage.cjbn;
-import defpackage.cjbp;
-import defpackage.cjdr;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cliq;
+import defpackage.clis;
+import defpackage.cljs;
+import defpackage.clju;
+import defpackage.cllw;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class SendConnectionRequestParamsV3 extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cjdr();
-    public cjbp a;
-    public cjan b;
+    public static final Parcelable.Creator CREATOR = new cllw();
+    public clju a;
+    public clis b;
     public com.google.android.gms.nearby.connection.v3.ConnectionOptions c;
     public ConnectionsDevice d;
     public final int e;
@@ -41,7 +41,7 @@ public final class SendConnectionRequestParamsV3 extends AbstractSafeParcelable 
         }
         if (obj instanceof SendConnectionRequestParamsV3) {
             SendConnectionRequestParamsV3 sendConnectionRequestParamsV3 = (SendConnectionRequestParamsV3) obj;
-            if (arwb.b(this.a, sendConnectionRequestParamsV3.a) && arwb.b(this.b, sendConnectionRequestParamsV3.b) && arwb.b(this.c, sendConnectionRequestParamsV3.c) && arwb.b(this.d, sendConnectionRequestParamsV3.d) && arwb.b(Integer.valueOf(this.e), Integer.valueOf(sendConnectionRequestParamsV3.e)) && arwb.b(this.f, sendConnectionRequestParamsV3.f) && arwb.b(this.g, sendConnectionRequestParamsV3.g) && arwb.b(this.h, sendConnectionRequestParamsV3.h) && arwb.b(this.i, sendConnectionRequestParamsV3.i)) {
+            if (atyq.b(this.a, sendConnectionRequestParamsV3.a) && atyq.b(this.b, sendConnectionRequestParamsV3.b) && atyq.b(this.c, sendConnectionRequestParamsV3.c) && atyq.b(this.d, sendConnectionRequestParamsV3.d) && atyq.b(Integer.valueOf(this.e), Integer.valueOf(sendConnectionRequestParamsV3.e)) && atyq.b(this.f, sendConnectionRequestParamsV3.f) && atyq.b(this.g, sendConnectionRequestParamsV3.g) && atyq.b(this.h, sendConnectionRequestParamsV3.h) && atyq.b(this.i, sendConnectionRequestParamsV3.i)) {
                 return true;
             }
         }
@@ -54,36 +54,36 @@ public final class SendConnectionRequestParamsV3 extends AbstractSafeParcelable 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        cjbp cjbpVar = this.a;
-        arxc.D(parcel, 1, cjbpVar == null ? null : cjbpVar.asBinder());
-        cjan cjanVar = this.b;
-        arxc.D(parcel, 2, cjanVar != null ? cjanVar.asBinder() : null);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.o(parcel, 5, this.e);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.v(parcel, 8, this.i, false);
-        arxc.t(parcel, 9, this.h, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        clju cljuVar = this.a;
+        atzr.D(parcel, 1, cljuVar == null ? null : cljuVar.asBinder());
+        clis clisVar = this.b;
+        atzr.D(parcel, 2, clisVar != null ? clisVar.asBinder() : null);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.o(parcel, 5, this.e);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.v(parcel, 8, this.i, false);
+        atzr.t(parcel, 9, this.h, i, false);
+        atzr.c(parcel, a);
     }
 
     public SendConnectionRequestParamsV3(IBinder iBinder, IBinder iBinder2, com.google.android.gms.nearby.connection.v3.ConnectionOptions connectionOptions, ConnectionsDevice connectionsDevice, int i, PresenceDevice presenceDevice, ConnectionsDevice connectionsDevice2, DctDevice dctDevice, String str) {
-        cjbp cjbnVar;
-        cjan cjanVar = null;
+        clju cljsVar;
+        clis clisVar = null;
         if (iBinder == null) {
-            cjbnVar = null;
+            cljsVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IResultListener");
-            cjbnVar = queryLocalInterface instanceof cjbp ? (cjbp) queryLocalInterface : new cjbn(iBinder);
+            cljsVar = queryLocalInterface instanceof clju ? (clju) queryLocalInterface : new cljs(iBinder);
         }
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IConnectionLifecycleListener");
-            cjanVar = queryLocalInterface2 instanceof cjan ? (cjan) queryLocalInterface2 : new cjal(iBinder2);
+            clisVar = queryLocalInterface2 instanceof clis ? (clis) queryLocalInterface2 : new cliq(iBinder2);
         }
-        this.a = cjbnVar;
-        this.b = cjanVar;
+        this.a = cljsVar;
+        this.b = clisVar;
         this.c = connectionOptions;
         this.d = connectionsDevice;
         this.e = i;

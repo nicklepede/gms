@@ -12,26 +12,26 @@ import android.os.Bundle;
 import android.util.Log;
 import com.google.android.chimera.ContentProvider;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
-import defpackage.aqup;
-import defpackage.aseu;
-import defpackage.assw;
-import defpackage.assx;
-import defpackage.bqna;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.eijr;
-import defpackage.ejhf;
-import defpackage.fkih;
-import defpackage.uqw;
-import defpackage.uqz;
-import defpackage.vah;
+import defpackage.asxe;
+import defpackage.auio;
+import defpackage.auwq;
+import defpackage.auwr;
+import defpackage.bsup;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.fmyw;
+import defpackage.wmv;
+import defpackage.wmy;
+import defpackage.wwh;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AccountChimeraContentProvider extends ContentProvider {
-    private bqna a;
-    private aqup b;
+    private bsup a;
+    private asxe b;
 
     @Override // com.google.android.chimera.ContentProvider
     public final Bundle call(String str, String str2, Bundle bundle) {
@@ -51,23 +51,23 @@ public class AccountChimeraContentProvider extends ContentProvider {
                 }
                 Account account = (Account) bundle.getParcelable("clear_password");
                 Log.i("Auth", String.format(Locale.US, "[AccountChimeraContentProvider] Calling clearPassword on account by uid: %d", Integer.valueOf(callingUid)));
-                if (fkih.d()) {
-                    uqw uqwVar = (uqw) uqw.a.b();
-                    if (fkih.g() && !uqwVar.r(account, null) && fkih.f()) {
-                        ((ejhf) uqwVar.b.i()).x("Failed to clear LST in app data. Clearing password in AccountManager anyway.");
-                        uqwVar.c.g(account);
+                if (fmyw.d()) {
+                    wmv wmvVar = (wmv) wmv.a.b();
+                    if (fmyw.g() && !wmvVar.r(account, null) && fmyw.f()) {
+                        ((eluo) wmvVar.b.i()).x("Failed to clear LST in app data. Clearing password in AccountManager anyway.");
+                        wmvVar.c.g(account);
                     }
-                    if (!fkih.f()) {
-                        uqwVar.c.g(account);
+                    if (!fmyw.f()) {
+                        wmvVar.c.g(account);
                     }
-                    obj = uqwVar.d.get();
-                    ((uqz) obj).a(account);
+                    obj = wmvVar.d.get();
+                    ((wmy) obj).a(account);
                 } else {
                     this.a.g(account);
                 }
                 return null;
             }
-            assw b = assx.b(getContext());
+            auwq b = auwr.b(getContext());
             String[] n = b.n(callingUid);
             if (n != null && (length = n.length) != 0) {
                 str3 = n[0];
@@ -86,10 +86,10 @@ public class AccountChimeraContentProvider extends ContentProvider {
                     }
                 }
             }
-            bundle2.putParcelableArray("accounts", ((vah) vah.a.b()).f(callingUid) ? this.a.p(str2) : this.a.q(str2, str3));
+            bundle2.putParcelableArray("accounts", ((wwh) wwh.a.b()).f(callingUid) ? this.a.p(str2) : this.a.q(str2, str3));
             AppContextProvider.a();
-            eijr eijrVar = bqqe.a;
-            bqqa.a(aseu.AUTH_ACCOUNT_BASE_GET_ACCOUNTS);
+            ekww ekwwVar = bsxv.a;
+            bsxr.a(auio.AUTH_ACCOUNT_BASE_GET_ACCOUNTS);
             return bundle2;
         } finally {
             Binder.restoreCallingIdentity(clearCallingIdentity);
@@ -114,8 +114,8 @@ public class AccountChimeraContentProvider extends ContentProvider {
     @Override // com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
         Context context = getContext();
-        aqup d = aqup.d(context);
-        this.a = bqna.b(context);
+        asxe d = asxe.d(context);
+        this.a = bsup.b(context);
         this.b = d;
         return true;
     }

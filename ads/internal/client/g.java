@@ -4,16 +4,16 @@ import android.location.Location;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arxb;
-import defpackage.fwac;
+import defpackage.atzq;
+import defpackage.fywe;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class g implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int h = arxb.h(parcel);
+        int h = atzq.h(parcel);
         long j = 0;
         long j2 = 0;
         int i = 0;
@@ -42,91 +42,91 @@ public final class g implements Parcelable.Creator {
         String str6 = null;
         while (parcel.dataPosition() < h) {
             int readInt = parcel.readInt();
-            switch (arxb.d(readInt)) {
+            switch (atzq.d(readInt)) {
                 case 1:
-                    i = arxb.f(parcel, readInt);
+                    i = atzq.f(parcel, readInt);
                     break;
                 case 2:
-                    j = arxb.i(parcel, readInt);
+                    j = atzq.i(parcel, readInt);
                     break;
                 case 3:
-                    bundle = arxb.j(parcel, readInt);
+                    bundle = atzq.j(parcel, readInt);
                     break;
                 case 4:
-                    i2 = arxb.f(parcel, readInt);
+                    i2 = atzq.f(parcel, readInt);
                     break;
                 case 5:
-                    arrayList = arxb.x(parcel, readInt);
+                    arrayList = atzq.x(parcel, readInt);
                     break;
                 case 6:
-                    z = arxb.D(parcel, readInt);
+                    z = atzq.D(parcel, readInt);
                     break;
                 case 7:
-                    i3 = arxb.f(parcel, readInt);
+                    i3 = atzq.f(parcel, readInt);
                     break;
                 case 8:
-                    z2 = arxb.D(parcel, readInt);
+                    z2 = atzq.D(parcel, readInt);
                     break;
                 case 9:
-                    str = arxb.s(parcel, readInt);
+                    str = atzq.s(parcel, readInt);
                     break;
                 case 10:
-                    searchAdRequestParcel = (SearchAdRequestParcel) arxb.m(parcel, readInt, SearchAdRequestParcel.CREATOR);
+                    searchAdRequestParcel = (SearchAdRequestParcel) atzq.m(parcel, readInt, SearchAdRequestParcel.CREATOR);
                     break;
                 case 11:
-                    location = (Location) arxb.m(parcel, readInt, Location.CREATOR);
+                    location = (Location) atzq.m(parcel, readInt, Location.CREATOR);
                     break;
                 case 12:
-                    str2 = arxb.s(parcel, readInt);
+                    str2 = atzq.s(parcel, readInt);
                     break;
                 case 13:
-                    bundle2 = arxb.j(parcel, readInt);
+                    bundle2 = atzq.j(parcel, readInt);
                     break;
                 case 14:
-                    bundle3 = arxb.j(parcel, readInt);
+                    bundle3 = atzq.j(parcel, readInt);
                     break;
                 case 15:
-                    arrayList2 = arxb.x(parcel, readInt);
+                    arrayList2 = atzq.x(parcel, readInt);
                     break;
                 case 16:
-                    str3 = arxb.s(parcel, readInt);
+                    str3 = atzq.s(parcel, readInt);
                     break;
-                case fwac.q /* 17 */:
-                    str4 = arxb.s(parcel, readInt);
+                case fywe.q /* 17 */:
+                    str4 = atzq.s(parcel, readInt);
                     break;
                 case 18:
-                    z3 = arxb.D(parcel, readInt);
+                    z3 = atzq.D(parcel, readInt);
                     break;
                 case 19:
-                    adDataParcel = (AdDataParcel) arxb.m(parcel, readInt, AdDataParcel.CREATOR);
+                    adDataParcel = (AdDataParcel) atzq.m(parcel, readInt, AdDataParcel.CREATOR);
                     break;
-                case fwac.t /* 20 */:
-                    i4 = arxb.f(parcel, readInt);
+                case fywe.t /* 20 */:
+                    i4 = atzq.f(parcel, readInt);
                     break;
-                case fwac.u /* 21 */:
-                    str5 = arxb.s(parcel, readInt);
+                case fywe.u /* 21 */:
+                    str5 = atzq.s(parcel, readInt);
                     break;
-                case fwac.v /* 22 */:
-                    arrayList3 = arxb.x(parcel, readInt);
+                case fywe.v /* 22 */:
+                    arrayList3 = atzq.x(parcel, readInt);
                     break;
-                case fwac.w /* 23 */:
-                    i5 = arxb.f(parcel, readInt);
+                case fywe.w /* 23 */:
+                    i5 = atzq.f(parcel, readInt);
                     break;
-                case fwac.x /* 24 */:
-                    str6 = arxb.s(parcel, readInt);
+                case fywe.x /* 24 */:
+                    str6 = atzq.s(parcel, readInt);
                     break;
-                case fwac.y /* 25 */:
-                    i6 = arxb.f(parcel, readInt);
+                case fywe.y /* 25 */:
+                    i6 = atzq.f(parcel, readInt);
                     break;
                 case 26:
-                    j2 = arxb.i(parcel, readInt);
+                    j2 = atzq.i(parcel, readInt);
                     break;
                 default:
-                    arxb.C(parcel, readInt);
+                    atzq.C(parcel, readInt);
                     break;
             }
         }
-        arxb.A(parcel, h);
+        atzq.A(parcel, h);
         return new AdRequestParcel(i, j, bundle, i2, arrayList, z, i3, z2, str, searchAdRequestParcel, location, str2, bundle2, bundle3, arrayList2, str3, str4, z3, adDataParcel, i4, str5, arrayList3, i5, str6, i6, j2);
     }
 

@@ -6,25 +6,25 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bgdu;
-import defpackage.bgdw;
-import defpackage.bgiu;
-import defpackage.bgiw;
-import defpackage.bglj;
+import defpackage.atzr;
+import defpackage.biik;
+import defpackage.biim;
+import defpackage.bink;
+import defpackage.binm;
+import defpackage.bipz;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SensorUnregistrationRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bglj();
-    public final bgdw a;
+    public static final Parcelable.Creator CREATOR = new bipz();
+    public final biim a;
     public final PendingIntent b;
-    public final bgiw c;
+    public final binm c;
 
-    public SensorUnregistrationRequest(bgdw bgdwVar, PendingIntent pendingIntent, bgiw bgiwVar) {
-        this.a = bgdwVar;
+    public SensorUnregistrationRequest(biim biimVar, PendingIntent pendingIntent, binm binmVar) {
+        this.a = biimVar;
         this.b = pendingIntent;
-        this.c = bgiwVar;
+        this.c = binmVar;
     }
 
     public final String toString() {
@@ -33,30 +33,30 @@ public class SensorUnregistrationRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        bgdw bgdwVar = this.a;
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, bgdwVar == null ? null : bgdwVar.asBinder());
-        arxc.t(parcel, 2, this.b, i, false);
-        bgiw bgiwVar = this.c;
-        arxc.D(parcel, 3, bgiwVar != null ? bgiwVar.asBinder() : null);
-        arxc.c(parcel, a);
+        biim biimVar = this.a;
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, biimVar == null ? null : biimVar.asBinder());
+        atzr.t(parcel, 2, this.b, i, false);
+        binm binmVar = this.c;
+        atzr.D(parcel, 3, binmVar != null ? binmVar.asBinder() : null);
+        atzr.c(parcel, a);
     }
 
     public SensorUnregistrationRequest(IBinder iBinder, PendingIntent pendingIntent, IBinder iBinder2) {
-        bgdw bgduVar;
-        bgiw bgiwVar = null;
+        biim biikVar;
+        binm binmVar = null;
         if (iBinder == null) {
-            bgduVar = null;
+            biikVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.data.IDataSourceListener");
-            bgduVar = queryLocalInterface instanceof bgdw ? (bgdw) queryLocalInterface : new bgdu(iBinder);
+            biikVar = queryLocalInterface instanceof biim ? (biim) queryLocalInterface : new biik(iBinder);
         }
-        this.a = bgduVar;
+        this.a = biikVar;
         this.b = pendingIntent;
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.fitness.internal.IStatusCallback");
-            bgiwVar = queryLocalInterface2 instanceof bgiw ? (bgiw) queryLocalInterface2 : new bgiu(iBinder2);
+            binmVar = queryLocalInterface2 instanceof binm ? (binm) queryLocalInterface2 : new bink(iBinder2);
         }
-        this.c = bgiwVar;
+        this.c = binmVar;
     }
 }

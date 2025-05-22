@@ -2,26 +2,26 @@ package com.google.android.gms.autofill.service.common;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.afwe;
-import defpackage.afwi;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.eitj;
+import defpackage.ahwt;
+import defpackage.ahwx;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.elgo;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class ImmutableDetectionHistory extends afwe implements Parcelable {
-    private final eitj c;
-    public static final asot b = asot.b("ImmutableDetectionHistory", asej.AUTOFILL);
-    public static final Parcelable.Creator CREATOR = new afwi();
+public final class ImmutableDetectionHistory extends ahwt implements Parcelable {
+    private final elgo c;
+    public static final ausn b = ausn.b("ImmutableDetectionHistory", auid.AUTOFILL);
+    public static final Parcelable.Creator CREATOR = new ahwx();
 
     public ImmutableDetectionHistory(List list) {
-        this.c = eitj.i(list);
+        this.c = elgo.i(list);
     }
 
-    public static final ImmutableDetectionHistory k(afwe afweVar) {
-        return new ImmutableDetectionHistory(eitj.i(((DetectionHistory) afweVar).h()));
+    public static final ImmutableDetectionHistory k(ahwt ahwtVar) {
+        return new ImmutableDetectionHistory(elgo.i(((DetectionHistory) ahwtVar).h()));
     }
 
     @Override // android.os.Parcelable
@@ -29,7 +29,7 @@ public final class ImmutableDetectionHistory extends afwe implements Parcelable 
         return 0;
     }
 
-    @Override // defpackage.afwe
+    @Override // defpackage.ahwt
     public final /* synthetic */ List h() {
         return this.c;
     }

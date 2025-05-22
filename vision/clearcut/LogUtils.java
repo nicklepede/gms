@@ -4,211 +4,211 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import com.google.android.gms.vision.internal.client.FrameMetadataParcel;
 import com.google.mlkit.vision.common.aidls.ImageMetadataParcel;
-import defpackage.assx;
-import defpackage.dibc;
-import defpackage.evaa;
-import defpackage.evac;
-import defpackage.evad;
-import defpackage.evae;
-import defpackage.evaf;
-import defpackage.evah;
-import defpackage.feab;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
+import defpackage.auwr;
+import defpackage.dkmn;
+import defpackage.expt;
+import defpackage.expv;
+import defpackage.expw;
+import defpackage.expx;
+import defpackage.expy;
+import defpackage.exqa;
+import defpackage.fgou;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class LogUtils {
     private static List createEngineAnalysis(long j, int i, String str, String str2, List list) {
-        fecj v = evac.a.v();
+        fgrc v = expv.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        evac evacVar = (evac) fecpVar;
+        fgri fgriVar = v.b;
+        expv expvVar = (expv) fgriVar;
         str2.getClass();
-        evacVar.b |= 1;
-        evacVar.c = str2;
-        if (!fecpVar.L()) {
+        expvVar.b |= 1;
+        expvVar.c = str2;
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        evac evacVar2 = (evac) fecpVar2;
-        evacVar2.b |= 16;
-        evacVar2.e = j;
+        fgri fgriVar2 = v.b;
+        expv expvVar2 = (expv) fgriVar2;
+        expvVar2.b |= 16;
+        expvVar2.e = j;
         long j2 = i;
-        if (!fecpVar2.L()) {
+        if (!fgriVar2.L()) {
             v.U();
         }
-        fecp fecpVar3 = v.b;
-        evac evacVar3 = (evac) fecpVar3;
-        evacVar3.b |= 32;
-        evacVar3.f = j2;
+        fgri fgriVar3 = v.b;
+        expv expvVar3 = (expv) fgriVar3;
+        expvVar3.b |= 32;
+        expvVar3.f = j2;
         if (list != null) {
-            if (!fecpVar3.L()) {
+            if (!fgriVar3.L()) {
                 v.U();
             }
-            evac evacVar4 = (evac) v.b;
-            fedh fedhVar = evacVar4.g;
-            if (!fedhVar.c()) {
-                evacVar4.g = fecp.E(fedhVar);
+            expv expvVar4 = (expv) v.b;
+            fgsa fgsaVar = expvVar4.g;
+            if (!fgsaVar.c()) {
+                expvVar4.g = fgri.E(fgsaVar);
             }
-            feab.E(list, evacVar4.g);
+            fgou.E(list, expvVar4.g);
         }
         if (str != null) {
             if (!v.b.L()) {
                 v.U();
             }
-            evac evacVar5 = (evac) v.b;
-            evacVar5.b |= 8;
-            evacVar5.d = str;
+            expv expvVar5 = (expv) v.b;
+            expvVar5.b |= 8;
+            expvVar5.d = str;
         }
         ArrayList arrayList = new ArrayList();
-        arrayList.add((evac) v.Q());
+        arrayList.add((expv) v.Q());
         return arrayList;
     }
 
-    private static evaf createImageData(FrameMetadataParcel frameMetadataParcel) {
-        fecj v = evaf.a.v();
+    private static expy createImageData(FrameMetadataParcel frameMetadataParcel) {
+        fgrc v = expy.a.v();
         long j = frameMetadataParcel.b;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        evaf evafVar = (evaf) fecpVar;
-        evafVar.b |= 4;
-        evafVar.d = j;
+        fgri fgriVar = v.b;
+        expy expyVar = (expy) fgriVar;
+        expyVar.b |= 4;
+        expyVar.d = j;
         long j2 = frameMetadataParcel.a;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        evaf evafVar2 = (evaf) fecpVar2;
-        evafVar2.b |= 2;
-        evafVar2.c = j2;
+        fgri fgriVar2 = v.b;
+        expy expyVar2 = (expy) fgriVar2;
+        expyVar2.b |= 2;
+        expyVar2.c = j2;
         long j3 = frameMetadataParcel.c;
-        if (!fecpVar2.L()) {
+        if (!fgriVar2.L()) {
             v.U();
         }
-        fecp fecpVar3 = v.b;
-        evaf evafVar3 = (evaf) fecpVar3;
-        evafVar3.b |= 8;
-        evafVar3.e = j3;
+        fgri fgriVar3 = v.b;
+        expy expyVar3 = (expy) fgriVar3;
+        expyVar3.b |= 8;
+        expyVar3.e = j3;
         long j4 = frameMetadataParcel.d;
-        if (!fecpVar3.L()) {
+        if (!fgriVar3.L()) {
             v.U();
         }
-        evaf evafVar4 = (evaf) v.b;
-        evafVar4.b |= 16;
-        evafVar4.f = j4;
-        return (evaf) v.Q();
+        expy expyVar4 = (expy) v.b;
+        expyVar4.b |= 16;
+        expyVar4.f = j4;
+        return (expy) v.Q();
     }
 
-    public static evah createVisionExtension(long j, int i, String str, String str2, List list, FrameMetadataParcel frameMetadataParcel) {
-        evad evadVar = (evad) evae.a.v();
-        evadVar.a(createEngineAnalysis(j, i, str, str2, list));
-        evaf createImageData = createImageData(frameMetadataParcel);
-        if (!evadVar.b.L()) {
-            evadVar.U();
+    public static exqa createVisionExtension(long j, int i, String str, String str2, List list, FrameMetadataParcel frameMetadataParcel) {
+        expw expwVar = (expw) expx.a.v();
+        expwVar.a(createEngineAnalysis(j, i, str, str2, list));
+        expy createImageData = createImageData(frameMetadataParcel);
+        if (!expwVar.b.L()) {
+            expwVar.U();
         }
-        evae evaeVar = (evae) evadVar.b;
+        expx expxVar = (expx) expwVar.b;
         createImageData.getClass();
-        evaeVar.c = createImageData;
-        evaeVar.b |= 1;
-        evae evaeVar2 = (evae) evadVar.Q();
-        fecj v = evah.a.v();
+        expxVar.c = createImageData;
+        expxVar.b |= 1;
+        expx expxVar2 = (expx) expwVar.Q();
+        fgrc v = exqa.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        evah evahVar = (evah) v.b;
-        evaeVar2.getClass();
-        evahVar.d = evaeVar2;
-        evahVar.b |= 4;
-        return (evah) v.Q();
+        exqa exqaVar = (exqa) v.b;
+        expxVar2.getClass();
+        exqaVar.d = expxVar2;
+        exqaVar.b |= 4;
+        return (exqa) v.Q();
     }
 
     private static String getApplicationId(Context context) {
         return context.getPackageName();
     }
 
-    public static evaa getApplicationInfo(Context context) {
-        fecj v = evaa.a.v();
+    public static expt getApplicationInfo(Context context) {
+        fgrc v = expt.a.v();
         String applicationId = getApplicationId(context);
         if (!v.b.L()) {
             v.U();
         }
-        evaa evaaVar = (evaa) v.b;
+        expt exptVar = (expt) v.b;
         applicationId.getClass();
-        evaaVar.b |= 1;
-        evaaVar.c = applicationId;
+        exptVar.b |= 1;
+        exptVar.c = applicationId;
         String applicationVersion = getApplicationVersion(context);
         if (applicationVersion != null) {
             if (!v.b.L()) {
                 v.U();
             }
-            evaa evaaVar2 = (evaa) v.b;
-            evaaVar2.b |= 2;
-            evaaVar2.d = applicationVersion;
+            expt exptVar2 = (expt) v.b;
+            exptVar2.b |= 2;
+            exptVar2.d = applicationVersion;
         }
-        return (evaa) v.Q();
+        return (expt) v.Q();
     }
 
     private static String getApplicationVersion(Context context) {
         try {
-            return assx.b(context).f(context.getPackageName(), 0).versionName;
+            return auwr.b(context).f(context.getPackageName(), 0).versionName;
         } catch (PackageManager.NameNotFoundException e) {
-            dibc.b(e, "Unable to find calling package info for %s", context.getPackageName());
+            dkmn.b(e, "Unable to find calling package info for %s", context.getPackageName());
             return null;
         }
     }
 
-    public static evah createVisionExtension(long j, int i, String str, String str2, List list, ImageMetadataParcel imageMetadataParcel) {
-        fecj v = evaf.a.v();
+    public static exqa createVisionExtension(long j, int i, String str, String str2, List list, ImageMetadataParcel imageMetadataParcel) {
+        fgrc v = expy.a.v();
         long j2 = imageMetadataParcel.c;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        evaf evafVar = (evaf) fecpVar;
-        evafVar.b |= 4;
-        evafVar.d = j2;
+        fgri fgriVar = v.b;
+        expy expyVar = (expy) fgriVar;
+        expyVar.b |= 4;
+        expyVar.d = j2;
         long j3 = imageMetadataParcel.b;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        evaf evafVar2 = (evaf) fecpVar2;
-        evafVar2.b |= 2;
-        evafVar2.c = j3;
+        fgri fgriVar2 = v.b;
+        expy expyVar2 = (expy) fgriVar2;
+        expyVar2.b |= 2;
+        expyVar2.c = j3;
         long j4 = imageMetadataParcel.e;
-        if (!fecpVar2.L()) {
+        if (!fgriVar2.L()) {
             v.U();
         }
-        evaf evafVar3 = (evaf) v.b;
-        evafVar3.b |= 16;
-        evafVar3.f = j4;
-        evaf evafVar4 = (evaf) v.Q();
-        evad evadVar = (evad) evae.a.v();
-        evadVar.a(createEngineAnalysis(j, i, str, str2, list));
-        if (!evadVar.b.L()) {
-            evadVar.U();
+        expy expyVar3 = (expy) v.b;
+        expyVar3.b |= 16;
+        expyVar3.f = j4;
+        expy expyVar4 = (expy) v.Q();
+        expw expwVar = (expw) expx.a.v();
+        expwVar.a(createEngineAnalysis(j, i, str, str2, list));
+        if (!expwVar.b.L()) {
+            expwVar.U();
         }
-        evae evaeVar = (evae) evadVar.b;
-        evafVar4.getClass();
-        evaeVar.c = evafVar4;
-        evaeVar.b |= 1;
-        evae evaeVar2 = (evae) evadVar.Q();
-        fecj v2 = evah.a.v();
+        expx expxVar = (expx) expwVar.b;
+        expyVar4.getClass();
+        expxVar.c = expyVar4;
+        expxVar.b |= 1;
+        expx expxVar2 = (expx) expwVar.Q();
+        fgrc v2 = exqa.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        evah evahVar = (evah) v2.b;
-        evaeVar2.getClass();
-        evahVar.d = evaeVar2;
-        evahVar.b |= 4;
-        return (evah) v2.Q();
+        exqa exqaVar = (exqa) v2.b;
+        expxVar2.getClass();
+        exqaVar.d = expxVar2;
+        exqaVar.b |= 4;
+        return (exqa) v2.Q();
     }
 }

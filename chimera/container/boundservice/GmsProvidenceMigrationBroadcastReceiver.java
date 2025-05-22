@@ -7,78 +7,78 @@ import android.content.IntentFilter;
 import android.os.Process;
 import android.util.Log;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.aoct;
-import defpackage.bqon;
-import defpackage.eike;
-import defpackage.eito;
-import defpackage.eits;
-import defpackage.fmqj;
-import defpackage.iln;
+import defpackage.aqel;
+import defpackage.bswd;
+import defpackage.ekxj;
+import defpackage.elgt;
+import defpackage.elgx;
+import defpackage.fpih;
+import defpackage.ind;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class GmsProvidenceMigrationBroadcastReceiver extends TracingBroadcastReceiver {
-    public static final eits a;
+    public static final elgx a;
     static GmsProvidenceMigrationBroadcastReceiver b;
     private final Map c;
 
     static {
-        eito eitoVar = new eito();
-        eitoVar.i("com.google.android.gms.ads.AdRequestBrokerChimeraService", "com.google.android.gms.ads.AdRequestBrokerService");
-        eitoVar.i("com.google.android.gms.ads.cache.CacheBrokerChimeraService", "com.google.android.gms.ads.cache.CacheBrokerService");
-        eitoVar.i("com.google.android.gms.ads.measurement.GmpConversionTrackingBrokerChimeraService", "com.google.android.gms.ads.measurement.GmpConversionTrackingBrokerService");
-        eitoVar.i("com.google.android.gms.appinvite.service.AppInviteChimeraService", "com.google.android.gms.appinvite.service.AppInviteService");
-        eitoVar.i("com.google.android.gms.appstate.service.AppStateAndroidChimeraService", "com.google.android.gms.appstate.service.AppStateAndroidService");
-        eitoVar.i("com.google.android.gms.auth.api.proxy.AuthChimeraService", "com.google.android.gms.auth.api.proxy.AuthService");
-        eitoVar.i("com.google.android.gms.checkin.CheckinApiChimeraService", "com.google.android.gms.checkin.CheckinApiService");
-        eitoVar.i("com.google.android.gms.fido.u2f.service.U2fChimeraService", "com.google.android.gms.fido.u2f.U2fService");
-        eitoVar.i("com.google.android.gms.nearby.connection.service.NearbyConnectionsChimeraService", "com.google.android.gms.nearby.connection.service.NearbyConnectionsAndroidService");
-        eitoVar.i("com.google.android.gms.googlehelp.service.GoogleHelpChimeraService", "com.google.android.gms.googlehelp.service.GoogleHelpService");
-        eitoVar.i("com.google.android.gms.instantapps.service.InstantAppsChimeraService", "com.google.android.gms.instantapps.service.InstantAppsService");
-        eitoVar.i("com.google.android.gms.measurement.service.ChimeraMeasurementApiService", "com.google.android.gms.measurement.service.MeasurementBrokerService");
-        eitoVar.i("com.google.android.gms.wallet.service.PaymentChimeraService", "com.google.android.gms.wallet.service.PaymentService");
-        eitoVar.i("com.google.firebase.auth.api.gms.service.FirebaseAuthChimeraService", "com.google.firebase.auth.api.gms.service.FirebaseAuthService");
-        a = eitoVar.b();
+        elgt elgtVar = new elgt();
+        elgtVar.i("com.google.android.gms.ads.AdRequestBrokerChimeraService", "com.google.android.gms.ads.AdRequestBrokerService");
+        elgtVar.i("com.google.android.gms.ads.cache.CacheBrokerChimeraService", "com.google.android.gms.ads.cache.CacheBrokerService");
+        elgtVar.i("com.google.android.gms.ads.measurement.GmpConversionTrackingBrokerChimeraService", "com.google.android.gms.ads.measurement.GmpConversionTrackingBrokerService");
+        elgtVar.i("com.google.android.gms.appinvite.service.AppInviteChimeraService", "com.google.android.gms.appinvite.service.AppInviteService");
+        elgtVar.i("com.google.android.gms.appstate.service.AppStateAndroidChimeraService", "com.google.android.gms.appstate.service.AppStateAndroidService");
+        elgtVar.i("com.google.android.gms.auth.api.proxy.AuthChimeraService", "com.google.android.gms.auth.api.proxy.AuthService");
+        elgtVar.i("com.google.android.gms.checkin.CheckinApiChimeraService", "com.google.android.gms.checkin.CheckinApiService");
+        elgtVar.i("com.google.android.gms.fido.u2f.service.U2fChimeraService", "com.google.android.gms.fido.u2f.U2fService");
+        elgtVar.i("com.google.android.gms.nearby.connection.service.NearbyConnectionsChimeraService", "com.google.android.gms.nearby.connection.service.NearbyConnectionsAndroidService");
+        elgtVar.i("com.google.android.gms.googlehelp.service.GoogleHelpChimeraService", "com.google.android.gms.googlehelp.service.GoogleHelpService");
+        elgtVar.i("com.google.android.gms.instantapps.service.InstantAppsChimeraService", "com.google.android.gms.instantapps.service.InstantAppsService");
+        elgtVar.i("com.google.android.gms.measurement.service.ChimeraMeasurementApiService", "com.google.android.gms.measurement.service.MeasurementBrokerService");
+        elgtVar.i("com.google.android.gms.wallet.service.PaymentChimeraService", "com.google.android.gms.wallet.service.PaymentService");
+        elgtVar.i("com.google.firebase.auth.api.gms.service.FirebaseAuthChimeraService", "com.google.firebase.auth.api.gms.service.FirebaseAuthService");
+        a = elgtVar.b();
         b = null;
     }
 
     private GmsProvidenceMigrationBroadcastReceiver() {
         super("container");
-        this.c = bqon.a();
+        this.c = bswd.a();
     }
 
-    public static boolean b(Context context, String str, aoct aoctVar) {
-        aoct aoctVar2;
-        if (!fmqj.e()) {
+    public static boolean b(Context context, String str, aqel aqelVar) {
+        aqel aqelVar2;
+        if (!fpih.e()) {
             return true;
         }
         Context applicationContext = context.getApplicationContext();
         if (b == null) {
             GmsProvidenceMigrationBroadcastReceiver gmsProvidenceMigrationBroadcastReceiver = new GmsProvidenceMigrationBroadcastReceiver();
             b = gmsProvidenceMigrationBroadcastReceiver;
-            iln.c(applicationContext, gmsProvidenceMigrationBroadcastReceiver, new IntentFilter("com.google.android.gms.core.PROVIDENCE_MIGRATION_UPDATE"), "com.google.android.gms.permission.INTERNAL_BROADCAST", null, 2);
+            ind.c(applicationContext, gmsProvidenceMigrationBroadcastReceiver, new IntentFilter("com.google.android.gms.core.PROVIDENCE_MIGRATION_UPDATE"), "com.google.android.gms.permission.INTERNAL_BROADCAST", null, 2);
         }
-        if (!c(applicationContext, str, aoctVar) || ((aoctVar2 = (aoct) b.c.get(str)) != null && aoctVar2 != aoctVar)) {
+        if (!c(applicationContext, str, aqelVar) || ((aqelVar2 = (aqel) b.c.get(str)) != null && aqelVar2 != aqelVar)) {
             Log.i("ProvidenceMigrationBR", "Incorrect BoundService config state for ".concat(String.valueOf(str)));
             return false;
         }
-        aoct aoctVar3 = (aoct) b.c.put(str, aoctVar);
-        eike.a(aoctVar3 == null || aoctVar3 == aoctVar);
+        aqel aqelVar3 = (aqel) b.c.put(str, aqelVar);
+        ekxj.a(aqelVar3 == null || aqelVar3 == aqelVar);
         return true;
     }
 
-    private static boolean c(Context context, String str, aoct aoctVar) {
+    private static boolean c(Context context, String str, aqel aqelVar) {
         String str2 = (String) a.get(str);
-        eike.e(str2);
+        ekxj.e(str2);
         try {
             int componentEnabledSetting = context.getPackageManager().getComponentEnabledSetting(new ComponentName(context, str2));
             if (componentEnabledSetting != 0) {
                 if (componentEnabledSetting == 2) {
-                    if (aoctVar != aoct.SHARED_BROKER) {
+                    if (aqelVar != aqel.SHARED_BROKER) {
                         return false;
                     }
-                } else if (componentEnabledSetting != 1 || aoctVar != aoct.DEDICATED_BROKER) {
+                } else if (componentEnabledSetting != 1 || aqelVar != aqel.DEDICATED_BROKER) {
                     return false;
                 }
             }
@@ -90,13 +90,13 @@ public final class GmsProvidenceMigrationBroadcastReceiver extends TracingBroadc
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
-        if (!"com.google.android.gms.core.PROVIDENCE_MIGRATION_UPDATE".equals(intent.getAction()) || !fmqj.e()) {
+    public final void jP(Context context, Intent intent) {
+        if (!"com.google.android.gms.core.PROVIDENCE_MIGRATION_UPDATE".equals(intent.getAction()) || !fpih.e()) {
             Log.w("ProvidenceMigrationBR", "Skipping checking BoundService state");
             return;
         }
         for (Map.Entry entry : this.c.entrySet()) {
-            if (!c(context, (String) entry.getKey(), (aoct) entry.getValue())) {
+            if (!c(context, (String) entry.getKey(), (aqel) entry.getValue())) {
                 Log.i("ProvidenceMigrationBR", "Killing process after changed BoundService config ".concat(String.valueOf((String) entry.getKey())));
                 Process.killProcess(Process.myPid());
             }

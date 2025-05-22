@@ -5,51 +5,51 @@ import android.content.Context;
 import android.util.Pair;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.aju$$ExternalSyntheticApiModelOutline0;
-import defpackage.asbo;
-import defpackage.asot;
-import defpackage.axmz;
-import defpackage.brbv;
-import defpackage.bsds;
-import defpackage.byln;
-import defpackage.ebdn;
-import defpackage.ejhf;
-import defpackage.evqy;
-import defpackage.evsz;
-import defpackage.evta;
-import defpackage.evtd;
-import defpackage.evtf;
-import defpackage.fecj;
-import defpackage.fpsg;
+import defpackage.akd$$ExternalSyntheticApiModelOutline0;
+import defpackage.aued;
+import defpackage.ausn;
+import defpackage.azqz;
+import defpackage.btjm;
+import defpackage.bulq;
+import defpackage.cauf;
+import defpackage.edqa;
+import defpackage.eluo;
+import defpackage.eygu;
+import defpackage.eyiv;
+import defpackage.eyiw;
+import defpackage.eyiz;
+import defpackage.eyjb;
+import defpackage.fgrc;
+import defpackage.fsly;
 import j$.util.Objects;
 import java.util.Iterator;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class DrivingModeLoggerService extends GmsTaskBoundService {
     private final Context a;
-    private final axmz b;
+    private final azqz b;
 
-    public DrivingModeLoggerService(axmz axmzVar, Context context) {
-        this.b = axmzVar;
+    public DrivingModeLoggerService(azqz azqzVar, Context context) {
+        this.b = azqzVar;
         this.a = context;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         boolean isEnabled;
         ComponentName owner;
-        if (!Objects.equals(bylnVar.a, "driving_mode_setting")) {
+        if (!Objects.equals(caufVar.a, "driving_mode_setting")) {
             return 2;
         }
         Context context = this.a;
-        asot asotVar = ebdn.a;
-        asbo f = asbo.f(context);
+        ausn ausnVar = edqa.a;
+        aued f = aued.f(context);
         ComponentName componentName = new ComponentName(context.getPackageName(), "com.google.android.location.settings.DrivingConditionProvider");
         Pair pair = null;
         if (f == null || !f.z()) {
-            ((ejhf) ebdn.a.h()).x("Null notificationManager or no permission getting existing driving rule");
+            ((eluo) edqa.a.h()).x("Null notificationManager or no permission getting existing driving rule");
         } else {
             Map j = f.j();
             if (j != null) {
@@ -60,9 +60,9 @@ public class DrivingModeLoggerService extends GmsTaskBoundService {
                     }
                     Map.Entry entry = (Map.Entry) it.next();
                     if (entry.getValue() != null) {
-                        owner = aju$$ExternalSyntheticApiModelOutline0.m(entry.getValue()).getOwner();
+                        owner = akd$$ExternalSyntheticApiModelOutline0.m(entry.getValue()).getOwner();
                         if (componentName.equals(owner)) {
-                            pair = new Pair((String) entry.getKey(), aju$$ExternalSyntheticApiModelOutline0.m(entry.getValue()));
+                            pair = new Pair((String) entry.getKey(), akd$$ExternalSyntheticApiModelOutline0.m(entry.getValue()));
                             break;
                         }
                     }
@@ -73,58 +73,58 @@ public class DrivingModeLoggerService extends GmsTaskBoundService {
             d(4);
             return 0;
         }
-        isEnabled = aju$$ExternalSyntheticApiModelOutline0.m(pair.second).isEnabled();
+        isEnabled = akd$$ExternalSyntheticApiModelOutline0.m(pair.second).isEnabled();
         d(true != isEnabled ? 3 : 2);
         return 0;
     }
 
     final void d(int i) {
-        if (fpsg.a.a().w()) {
-            axmz axmzVar = this.b;
-            fecj v = evta.a.v();
-            evtf evtfVar = evtf.DRIVING_MODE_LOCATION;
+        if (fsly.a.lK().w()) {
+            azqz azqzVar = this.b;
+            fgrc v = eyiw.a.v();
+            eyjb eyjbVar = eyjb.DRIVING_MODE_LOCATION;
             if (!v.b.L()) {
                 v.U();
             }
-            evta evtaVar = (evta) v.b;
-            evtaVar.c = evtfVar.e;
-            evtaVar.b |= 1;
-            fecj v2 = evsz.a.v();
+            eyiw eyiwVar = (eyiw) v.b;
+            eyiwVar.c = eyjbVar.e;
+            eyiwVar.b |= 1;
+            fgrc v2 = eyiv.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            evsz evszVar = (evsz) v2.b;
-            evszVar.c = i - 1;
-            evszVar.b |= 1;
+            eyiv eyivVar = (eyiv) v2.b;
+            eyivVar.c = i - 1;
+            eyivVar.b |= 1;
             if (!v.b.L()) {
                 v.U();
             }
-            evta evtaVar2 = (evta) v.b;
-            evsz evszVar2 = (evsz) v2.Q();
-            evszVar2.getClass();
-            evtaVar2.e = evszVar2;
-            evtaVar2.b |= 16;
-            evtd evtdVar = evtd.DRIVING_MODE_DAILY_STATUS_LOG;
+            eyiw eyiwVar2 = (eyiw) v.b;
+            eyiv eyivVar2 = (eyiv) v2.Q();
+            eyivVar2.getClass();
+            eyiwVar2.e = eyivVar2;
+            eyiwVar2.b |= 16;
+            eyiz eyizVar = eyiz.DRIVING_MODE_DAILY_STATUS_LOG;
             if (!v.b.L()) {
                 v.U();
             }
-            evta evtaVar3 = (evta) v.b;
-            evtaVar3.d = evtdVar.Y;
-            evtaVar3.b |= 2;
-            fecj v3 = evqy.a.v();
-            evta evtaVar4 = (evta) v.Q();
+            eyiw eyiwVar3 = (eyiw) v.b;
+            eyiwVar3.d = eyizVar.Y;
+            eyiwVar3.b |= 2;
+            fgrc v3 = eygu.a.v();
+            eyiw eyiwVar4 = (eyiw) v.Q();
             if (!v3.b.L()) {
                 v3.U();
             }
-            evqy evqyVar = (evqy) v3.b;
-            evtaVar4.getClass();
-            evqyVar.t = evtaVar4;
-            evqyVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-            if (!fpsg.j()) {
-                axmzVar.e((evqy) v3.Q(), 19);
+            eygu eyguVar = (eygu) v3.b;
+            eyiwVar4.getClass();
+            eyguVar.t = eyiwVar4;
+            eyguVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+            if (!fsly.j()) {
+                azqzVar.e((eygu) v3.Q(), 19);
                 return;
             }
-            brbv l = bsds.v().l((evqy) v3.Q());
+            btjm l = bulq.v().l((eygu) v3.Q());
             l.c = 18;
             l.a();
         }

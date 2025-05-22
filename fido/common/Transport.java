@@ -5,13 +5,13 @@ import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.fido.common.Transport;
-import defpackage.bbjf;
+import defpackage.bdnc;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import org.json.JSONArray;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public enum Transport implements ReflectedParcelable {
     BLUETOOTH_CLASSIC("bt"),
@@ -22,12 +22,12 @@ public enum Transport implements ReflectedParcelable {
     HYBRID("cable"),
     HYBRID_V2("hybrid");
 
-    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bbje
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bdnb
         @Override // android.os.Parcelable.Creator
         public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
             try {
                 return Transport.a(parcel.readString());
-            } catch (bbjf e) {
+            } catch (bdnc e) {
                 throw new RuntimeException(e);
             }
         }
@@ -49,7 +49,7 @@ public enum Transport implements ReflectedParcelable {
                 return transport;
             }
         }
-        throw new bbjf(String.format("Transport %s not supported", str));
+        throw new bdnc(String.format("Transport %s not supported", str));
     }
 
     public static List b(JSONArray jSONArray) {
@@ -62,7 +62,7 @@ public enum Transport implements ReflectedParcelable {
             if (string != null && !string.isEmpty()) {
                 try {
                     hashSet.add(a(string));
-                } catch (bbjf unused) {
+                } catch (bdnc unused) {
                     Log.w("Transport", "Ignoring unrecognized transport ".concat(string));
                 }
             }

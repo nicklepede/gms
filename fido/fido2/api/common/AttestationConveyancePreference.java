@@ -3,21 +3,21 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.fido.fido2.api.common.AttestationConveyancePreference;
-import defpackage.bbrx;
+import defpackage.bdvo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public enum AttestationConveyancePreference implements Parcelable {
     NONE("none"),
     INDIRECT("indirect"),
     DIRECT("direct");
 
-    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bbrw
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bdvn
         @Override // android.os.Parcelable.Creator
         public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
             try {
                 return AttestationConveyancePreference.a(parcel.readString());
-            } catch (bbrx e2) {
+            } catch (bdvo e2) {
                 throw new RuntimeException(e2);
             }
         }
@@ -39,7 +39,7 @@ public enum AttestationConveyancePreference implements Parcelable {
                 return attestationConveyancePreference;
             }
         }
-        throw new bbrx(str);
+        throw new bdvo(str);
     }
 
     @Override // android.os.Parcelable

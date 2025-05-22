@@ -34,78 +34,78 @@ import com.google.android.gms.wallet.shared.BuyFlowConfig;
 import com.google.android.gms.wallet.ui.common.WalletExitResult;
 import com.google.android.wallet.bender3.framework.client.WidgetConfig;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.arfc;
-import defpackage.arwm;
-import defpackage.asqx;
-import defpackage.didm;
-import defpackage.didw;
-import defpackage.diez;
-import defpackage.dijf;
-import defpackage.dijq;
-import defpackage.dikj;
-import defpackage.dikz;
-import defpackage.dils;
-import defpackage.dimd;
-import defpackage.dimf;
-import defpackage.dimg;
-import defpackage.ding;
-import defpackage.dioc;
-import defpackage.diqx;
-import defpackage.ditw;
-import defpackage.diud;
-import defpackage.diuu;
-import defpackage.divi;
-import defpackage.dixi;
-import defpackage.diyf;
-import defpackage.djdf;
-import defpackage.djdh;
-import defpackage.djdj;
-import defpackage.djdo;
-import defpackage.djdr;
-import defpackage.djds;
-import defpackage.djdu;
-import defpackage.djfd;
-import defpackage.ednp;
-import defpackage.edoa;
-import defpackage.edos;
-import defpackage.edup;
-import defpackage.eduq;
-import defpackage.efat;
-import defpackage.efdk;
-import defpackage.efph;
-import defpackage.ehle;
-import defpackage.ehlf;
-import defpackage.ehlq;
-import defpackage.emdu;
-import defpackage.emeb;
-import defpackage.emec;
-import defpackage.emee;
-import defpackage.emef;
-import defpackage.emen;
-import defpackage.fanr;
-import defpackage.fans;
-import defpackage.fanu;
-import defpackage.fanv;
-import defpackage.fapk;
-import defpackage.farm;
-import defpackage.feay;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.feen;
-import defpackage.fszj;
-import defpackage.ftan;
-import defpackage.ftaq;
+import defpackage.athr;
+import defpackage.atzb;
+import defpackage.auur;
+import defpackage.dkox;
+import defpackage.dkph;
+import defpackage.dkqk;
+import defpackage.dkup;
+import defpackage.dkva;
+import defpackage.dkvu;
+import defpackage.dkwk;
+import defpackage.dkxd;
+import defpackage.dkxo;
+import defpackage.dkxq;
+import defpackage.dkxr;
+import defpackage.dkyr;
+import defpackage.dkzn;
+import defpackage.dlci;
+import defpackage.dlfh;
+import defpackage.dlfo;
+import defpackage.dlgf;
+import defpackage.dlgt;
+import defpackage.dljb;
+import defpackage.dljy;
+import defpackage.dloy;
+import defpackage.dlpa;
+import defpackage.dlpc;
+import defpackage.dlph;
+import defpackage.dlpk;
+import defpackage.dlpl;
+import defpackage.dlpn;
+import defpackage.dlqw;
+import defpackage.egal;
+import defpackage.egaw;
+import defpackage.egbp;
+import defpackage.eghq;
+import defpackage.eghr;
+import defpackage.ehnw;
+import defpackage.ehqn;
+import defpackage.eick;
+import defpackage.ejyk;
+import defpackage.ejyl;
+import defpackage.ejyw;
+import defpackage.eori;
+import defpackage.eorp;
+import defpackage.eorq;
+import defpackage.eors;
+import defpackage.eort;
+import defpackage.eosb;
+import defpackage.fdcg;
+import defpackage.fdch;
+import defpackage.fdcj;
+import defpackage.fdck;
+import defpackage.fddz;
+import defpackage.fdgb;
+import defpackage.fgpr;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgtg;
+import defpackage.fvva;
+import defpackage.fvwe;
+import defpackage.fvwh;
 import java.util.Locale;
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class IbChimeraActivity extends diez implements dimd, dils {
-    private static final String z = dimg.b("ibActivity");
-    private dimg A;
+public class IbChimeraActivity extends dkqk implements dkxo, dkxd {
+    private static final String z = dkxr.b("ibActivity");
+    private dkxr A;
     public BuyFlowConfig h;
     public IbBuyFlowInput i;
     WidgetConfig j;
@@ -116,18 +116,18 @@ public class IbChimeraActivity extends diez implements dimd, dils {
     boolean p;
     boolean q;
     int r;
-    public djdu s;
+    public dlpn s;
     public long t;
     PopoverView v;
-    public edoa w;
-    public dijq x;
-    diud l = new diqx(this);
+    public egaw w;
+    public dkva x;
+    dlfo l = new dlci(this);
     boolean u = false;
     int y = 1;
 
     public static Intent Z(BuyFlowConfig buyFlowConfig, byte[] bArr, byte[] bArr2, IbBuyFlowInput ibBuyFlowInput, IbMerchantParameters ibMerchantParameters, String str) {
-        arwm.t(buyFlowConfig, "buyFlowConfig is required");
-        arwm.t(ibBuyFlowInput, "buyFlowInput is required");
+        atzb.t(buyFlowConfig, "buyFlowConfig is required");
+        atzb.t(ibBuyFlowInput, "buyFlowInput is required");
         Bundle bundle = new Bundle();
         bundle.putParcelable("com.google.android.gms.wallet.buyFlowConfig", buyFlowConfig);
         if (bArr != null && bArr.length > 0) {
@@ -136,9 +136,9 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         bundle.putByteArray("com.google.android.gms.wallet.firstparty.EXTRA_BUY_FLOW_STATE_TOKEN", bArr2);
         bundle.putParcelable("com.google.android.gms.wallet.firstparty.EXTRA_ACTIVITY_PARAMETERS", aa(ibBuyFlowInput, ibMerchantParameters, str, null));
         Intent intent = new Intent("com.google.android.gms.wallet.ib.INSTANT_BUY");
-        intent.setClassName(arfc.a(), "com.google.android.gms.wallet.ib.IbActivity");
-        if (ftan.a.a().a()) {
-            intent.putExtra("com.google.android.gms.wallet.ib.IbActivity.transformedExtras", diyf.c(bundle));
+        intent.setClassName(athr.a(), "com.google.android.gms.wallet.ib.IbActivity");
+        if (fvwe.a.lK().a()) {
+            intent.putExtra("com.google.android.gms.wallet.ib.IbActivity.transformedExtras", dljy.c(bundle));
         } else {
             intent.putExtras(bundle);
         }
@@ -201,8 +201,8 @@ public class IbChimeraActivity extends diez implements dimd, dils {
             i7 = i3;
             ReportErrorChimeraIntentOperation.a(buyFlowConfig, str, i6, i5, i7, ibChimeraActivity);
         }
-        efat.r(this.b, dikz.a(i), i2);
-        AnalyticsIntentOperation.b(this, new OrchestrationClosedEvent(i, i2, i4, kW().name, this.a));
+        ehnw.r(this.b, dkwk.a(i), i2);
+        AnalyticsIntentOperation.b(this, new OrchestrationClosedEvent(i, i2, i4, ll().name, this.a));
         int N2 = this.i.N() - 1;
         if (N2 == 4) {
             String str2 = this.h.b.b.name;
@@ -236,109 +236,109 @@ public class IbChimeraActivity extends diez implements dimd, dils {
             }
             int i15 = i - 1;
             BuyFlowConfig buyFlowConfig4 = this.h;
-            fecj v = emeb.a.v();
+            fgrc v = eorp.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            emeb emebVar = (emeb) fecpVar;
-            emebVar.c = i15;
-            emebVar.b |= 1;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v.b;
+            eorp eorpVar = (eorp) fgriVar;
+            eorpVar.c = i15;
+            eorpVar.b |= 1;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            fecp fecpVar2 = v.b;
-            emeb emebVar2 = (emeb) fecpVar2;
-            emebVar2.b = 2 | emebVar2.b;
-            emebVar2.d = i2;
-            if (!fecpVar2.L()) {
+            fgri fgriVar2 = v.b;
+            eorp eorpVar2 = (eorp) fgriVar2;
+            eorpVar2.b = 2 | eorpVar2.b;
+            eorpVar2.d = i2;
+            if (!fgriVar2.L()) {
                 v.U();
             }
-            emeb emebVar3 = (emeb) v.b;
-            emebVar3.b |= 4;
-            emebVar3.e = i3;
+            eorp eorpVar3 = (eorp) v.b;
+            eorpVar3.b |= 4;
+            eorpVar3.e = i3;
             if (this.i.m() != null) {
                 String m2 = this.i.m();
                 if (!v.b.L()) {
                     v.U();
                 }
-                emeb emebVar4 = (emeb) v.b;
+                eorp eorpVar4 = (eorp) v.b;
                 m2.getClass();
-                emebVar4.b |= 8;
-                emebVar4.f = m2;
+                eorpVar4.b |= 8;
+                eorpVar4.f = m2;
             }
-            fapk v2 = dixi.v(this.i);
+            fddz v2 = dljb.v(this.i);
             if (!v.b.L()) {
                 v.U();
             }
-            emeb emebVar5 = (emeb) v.b;
+            eorp eorpVar5 = (eorp) v.b;
             v2.getClass();
-            emebVar5.g = v2;
-            emebVar5.b |= 16;
-            LoadPaymentDataCallEvent.b(this, buyFlowConfig4, (emeb) v.Q(), this.k.d);
+            eorpVar5.g = v2;
+            eorpVar5.b |= 16;
+            LoadPaymentDataCallEvent.b(this, buyFlowConfig4, (eorp) v.Q(), this.k.d);
             return;
         }
         int i16 = i - 1;
         BuyFlowConfig buyFlowConfig5 = this.h;
-        fecj v3 = emec.a.v();
+        fgrc v3 = eorq.a.v();
         if (!v3.b.L()) {
             v3.U();
         }
-        fecp fecpVar3 = v3.b;
-        emec emecVar = (emec) fecpVar3;
-        emecVar.c = i16;
-        emecVar.b |= 1;
-        if (!fecpVar3.L()) {
+        fgri fgriVar3 = v3.b;
+        eorq eorqVar = (eorq) fgriVar3;
+        eorqVar.c = i16;
+        eorqVar.b |= 1;
+        if (!fgriVar3.L()) {
             v3.U();
         }
-        fecp fecpVar4 = v3.b;
-        emec emecVar2 = (emec) fecpVar4;
-        emecVar2.b = 2 | emecVar2.b;
-        emecVar2.d = i2;
-        if (!fecpVar4.L()) {
+        fgri fgriVar4 = v3.b;
+        eorq eorqVar2 = (eorq) fgriVar4;
+        eorqVar2.b = 2 | eorqVar2.b;
+        eorqVar2.d = i2;
+        if (!fgriVar4.L()) {
             v3.U();
         }
-        emec emecVar3 = (emec) v3.b;
-        emecVar3.b |= 4;
-        emecVar3.e = i3;
+        eorq eorqVar3 = (eorq) v3.b;
+        eorqVar3.b |= 4;
+        eorqVar3.e = i3;
         if (this.i.m() != null) {
             String m3 = this.i.m();
             if (!v3.b.L()) {
                 v3.U();
             }
-            emec emecVar4 = (emec) v3.b;
+            eorq eorqVar4 = (eorq) v3.b;
             m3.getClass();
-            emecVar4.b |= 8;
-            emecVar4.f = m3;
+            eorqVar4.b |= 8;
+            eorqVar4.f = m3;
         }
         int i17 = this.y;
         if (!v3.b.L()) {
             v3.U();
         }
-        emec emecVar5 = (emec) v3.b;
+        eorq eorqVar5 = (eorq) v3.b;
         int i18 = i17 - 1;
         if (i17 == 0) {
             throw null;
         }
-        emecVar5.g = i18;
-        emecVar5.b |= 16;
-        fapk w = dixi.w(((farm) this.i.e.b).e);
+        eorqVar5.g = i18;
+        eorqVar5.b |= 16;
+        fddz w = dljb.w(((fdgb) this.i.e.b).e);
         if (w != null) {
             if (!v3.b.L()) {
                 v3.U();
             }
-            emec emecVar6 = (emec) v3.b;
-            emecVar6.i = w;
-            emecVar6.b |= 64;
+            eorq eorqVar6 = (eorq) v3.b;
+            eorqVar6.i = w;
+            eorqVar6.b |= 64;
         }
-        String a = dioc.a(this.i.n());
+        String a = dkzn.a(this.i.n());
         if (!v3.b.L()) {
             v3.U();
         }
-        emec emecVar7 = (emec) v3.b;
-        emecVar7.b |= 32;
-        emecVar7.h = a;
-        LoadWebPaymentDataCallEvent.b(this, buyFlowConfig5, (emec) v3.Q(), this.h.b.b.name, this.k.d);
+        eorq eorqVar7 = (eorq) v3.b;
+        eorqVar7.b |= 32;
+        eorqVar7.h = a;
+        LoadWebPaymentDataCallEvent.b(this, buyFlowConfig5, (eorq) v3.Q(), this.h.b.b.name, this.k.d);
     }
 
     private final void aB(int i) {
@@ -347,7 +347,7 @@ public class IbChimeraActivity extends diez implements dimd, dils {
             ao(7);
             return;
         }
-        if (m() == null || !((dijq) m()).ax()) {
+        if (m() == null || !((dkva) m()).aw()) {
             if (i == 9) {
                 aq(8, 1061);
                 return;
@@ -356,11 +356,11 @@ public class IbChimeraActivity extends diez implements dimd, dils {
                 return;
             }
         }
-        byte[] az = ((dijq) m()).az();
-        if (az.length == 0) {
+        byte[] ay = ((dkva) m()).ay();
+        if (ay.length == 0) {
             ao(8);
         } else {
-            aw((ehlf) efdk.c(az, (feen) ehlf.a.iB(7, null)));
+            aw((ejyl) ehqn.c(ay, (fgtg) ejyl.a.iQ(7, null)));
         }
     }
 
@@ -374,21 +374,21 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         ax(walletExitResult.e, i - 1);
     }
 
-    public static Bundle aa(IbBuyFlowInput ibBuyFlowInput, IbMerchantParameters ibMerchantParameters, String str, emdu emduVar) {
+    public static Bundle aa(IbBuyFlowInput ibBuyFlowInput, IbMerchantParameters ibMerchantParameters, String str, eori eoriVar) {
         Bundle bundle = new Bundle();
         bundle.putParcelable("com.google.android.gms.wallet.ib.IbActivity.buyFlowInputFactory", ibBuyFlowInput);
         bundle.putParcelable("com.google.android.gms.wallet.ib.IbActivity.merchantParameters", ibMerchantParameters);
         bundle.putString("apiCallAnalyticsSessionId", str);
-        if (ftaq.i() && emduVar != null) {
-            bundle.putByteArray("com.google.android.gms.wallet.ib.IbActivity.loggingInfo", emduVar.r());
+        if (fvwh.j() && eoriVar != null) {
+            bundle.putByteArray("com.google.android.gms.wallet.ib.IbActivity.loggingInfo", eoriVar.r());
         }
         return bundle;
     }
 
-    public static ehlq ak(BuyFlowResult buyFlowResult) {
-        ehlq ehlqVar = ehlq.a;
+    public static ejyw ak(BuyFlowResult buyFlowResult) {
+        ejyw ejywVar = ejyw.a;
         byte[] bArr = buyFlowResult.d;
-        return bArr != null ? (ehlq) efdk.c(bArr, (feen) ehlq.a.iB(7, null)) : ehlqVar;
+        return bArr != null ? (ejyw) ehqn.c(bArr, (fgtg) ejywVar.iQ(7, null)) : ejywVar;
     }
 
     private final void ar(WalletExitResult walletExitResult) {
@@ -412,7 +412,7 @@ public class IbChimeraActivity extends diez implements dimd, dils {
             return;
         }
         this.p = true;
-        dimf a = dimf.a(kW(), djdj.e(this.h.b));
+        dkxq a = dkxq.a(ll(), dlpc.e(this.h.b));
         a.d(this);
         getSupportFragmentManager().beginTransaction().add(a, "RetrieveAuthTokensFragment").commit();
     }
@@ -421,16 +421,16 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         aD(walletExitResult, 1);
     }
 
-    private final void aw(ehlf ehlfVar) {
-        if (!asqx.d(ehlfVar.d)) {
-            dixi.M(this.i.l(), ehlfVar.d);
+    private final void aw(ejyl ejylVar) {
+        if (!auur.d(ejylVar.d)) {
+            dljb.M(this.i.l(), ejylVar.d);
         }
-        int a = ehle.a(ehlfVar.b);
+        int a = ejyk.a(ejylVar.b);
         if (a == 0) {
             a = 1;
         }
-        ExecutorService executorService = dixi.a;
-        ax(dixi.ad(a), ehlfVar.c);
+        ExecutorService executorService = dljb.a;
+        ax(dljb.af(a), ejylVar.c);
     }
 
     private final void ax(int i, int i2) {
@@ -438,17 +438,17 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         Intent intent = new Intent();
         int N = this.i.N() - 1;
         if (N == 1 || N == 3) {
-            didw a = MaskedWallet.a();
+            dkph a = MaskedWallet.a();
             a.a(this.i.m());
             a.b(this.k.b);
             intent.putExtra("com.google.android.gms.wallet.EXTRA_MASKED_WALLET", a.a);
         } else if (N == 4) {
-            didm a2 = FullWallet.a();
+            dkox a2 = FullWallet.a();
             a2.a(this.i.m());
             a2.b(this.k.b);
             intent.putExtra("com.google.android.gms.wallet.EXTRA_FULL_WALLET", a2.a);
         }
-        dikj.b(this.h, intent, i);
+        dkvu.b(this.h, intent, i);
         setResult(1, intent);
         finish();
     }
@@ -461,13 +461,13 @@ public class IbChimeraActivity extends diez implements dimd, dils {
 
     private final void az() {
         if (ab() == null) {
-            this.A = dimg.a(8, this.h, kW());
+            this.A = dkxr.a(8, this.h, ll());
             getSupportFragmentManager().beginTransaction().add(this.A, z).commit();
             getSupportFragmentManager().executePendingTransactions();
         }
     }
 
-    @Override // defpackage.diez
+    @Override // defpackage.dkqk
     public final void A(WalletExitResult walletExitResult) {
         if (this.q) {
             ar(walletExitResult);
@@ -476,47 +476,47 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         }
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final void X(int i) {
         this.v.p(i);
     }
 
-    final dimg ab() {
+    final dkxr ab() {
         if (this.A == null) {
-            this.A = (dimg) getSupportFragmentManager().findFragmentByTag(z);
+            this.A = (dkxr) getSupportFragmentManager().findFragmentByTag(z);
         }
         return this.A;
     }
 
-    @Override // defpackage.dimd
+    @Override // defpackage.dkxo
     public final void ac() {
         aq(409, 1038);
     }
 
-    @Override // defpackage.dimd
+    @Override // defpackage.dkxo
     public final void ad(int i) {
         aq(409, 1039);
     }
 
-    @Override // defpackage.dimd
+    @Override // defpackage.dkxo
     public final void ae() {
         at();
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void af(WalletExitResult walletExitResult) {
         this.u = true;
         if (walletExitResult.c() == 7) {
             av(walletExitResult);
             return;
         }
-        if (m() != null && ((dijq) m()).ax()) {
-            byte[] az = ((dijq) m()).az();
-            if (az.length == 0) {
+        if (m() != null && ((dkva) m()).aw()) {
+            byte[] ay = ((dkva) m()).ay();
+            if (ay.length == 0) {
                 av(walletExitResult);
                 return;
             } else {
-                aw((ehlf) efdk.c(az, (feen) ehlf.a.iB(7, null)));
+                aw((ejyl) ehqn.c(ay, (fgtg) ejyl.a.iQ(7, null)));
                 return;
             }
         }
@@ -529,16 +529,16 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         finish();
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void ah() {
         if (m() != null) {
-            ((dijq) m()).al();
+            ((dkva) m()).al();
         }
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void ai() {
-        djfd b = WalletExitResult.b();
+        dlqw b = WalletExitResult.b();
         b.c(0);
         b.d(401);
         b.b(3);
@@ -547,35 +547,35 @@ public class IbChimeraActivity extends diez implements dimd, dils {
 
     public final WidgetConfig aj() {
         if (this.j == null) {
-            this.j = dijf.a(this.h, getApplicationContext(), 2, null, Long.valueOf(UUID.randomUUID().getLeastSignificantBits()));
+            this.j = dkup.a(this.h, getApplicationContext(), 2, null, Long.valueOf(UUID.randomUUID().getLeastSignificantBits()));
         }
         return this.j;
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void al(int i) {
         aB(i);
     }
 
-    public final void am(emef emefVar) {
+    public final void am(eort eortVar) {
         Context applicationContext = getApplicationContext();
         BuyFlowConfig buyFlowConfig = this.h;
-        SimpleAnalyticsEvent.b(applicationContext, buyFlowConfig, emefVar, buyFlowConfig.b.b);
+        SimpleAnalyticsEvent.b(applicationContext, buyFlowConfig, eortVar, buyFlowConfig.b.b);
     }
 
-    public final void an(fanv fanvVar) {
+    public final void an(fdck fdckVar) {
         try {
-            fecj v = djdo.a.v();
-            djdr djdrVar = djdr.CALLBACK_TYPE_PAYMENT_DATA_CHANGE;
+            fgrc v = dlph.a.v();
+            dlpk dlpkVar = dlpk.CALLBACK_TYPE_PAYMENT_DATA_CHANGE;
             if (!v.b.L()) {
                 v.U();
             }
-            ((djdo) v.b).b = djdrVar.a();
-            ExecutorService executorService = dixi.a;
+            ((dlph) v.b).b = dlpkVar.a();
+            ExecutorService executorService = dljb.a;
             JSONObject jSONObject = new JSONObject();
-            for (fans fansVar : fanvVar.c) {
-                JSONObject jSONObject2 = new JSONObject(fansVar.d);
-                int a = fanr.a(fansVar.c);
+            for (fdch fdchVar : fdckVar.c) {
+                JSONObject jSONObject2 = new JSONObject(fdchVar.d);
+                int a = fdcg.a(fdchVar.c);
                 if (a == 0) {
                     a = 1;
                 }
@@ -588,38 +588,38 @@ public class IbChimeraActivity extends diez implements dimd, dils {
                     jSONObject.put("paymentMethodData", jSONObject2);
                 }
             }
-            fanu b = fanu.b(fanvVar.d);
+            fdcj b = fdcj.b(fdckVar.d);
             if (b == null) {
-                b = fanu.UNKNOWN_CALLBACK_TRIGGER;
+                b = fdcj.UNKNOWN_CALLBACK_TRIGGER;
             }
             jSONObject.put("callbackTrigger", b.name());
-            fecj v2 = djds.a.v();
+            fgrc v2 = dlpl.a.v();
             String jSONObject3 = jSONObject.toString();
             if (!v2.b.L()) {
                 v2.U();
             }
-            djds djdsVar = (djds) v2.b;
+            dlpl dlplVar = (dlpl) v2.b;
             jSONObject3.getClass();
-            djdsVar.b = jSONObject3;
+            dlplVar.b = jSONObject3;
             Bundle bundle = this.i.a;
             if (bundle != null) {
                 Parcel obtain = Parcel.obtain();
                 obtain.writeBundle(bundle);
                 byte[] marshall = obtain.marshall();
                 obtain.recycle();
-                feay w = feay.w(marshall);
+                fgpr w = fgpr.w(marshall);
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                ((djds) v2.b).c = w;
+                ((dlpl) v2.b).c = w;
             }
-            feay ng = ((djds) v2.Q()).ng();
+            fgpr nD = ((dlpl) v2.Q()).nD();
             if (!v.b.L()) {
                 v.U();
             }
-            ((djdo) v.b).c = ng;
+            ((dlph) v.b).c = nD;
             this.t = SystemClock.elapsedRealtime();
-            this.w.b(edos.a((djdo) v.Q(), this.h.c, aj()));
+            this.w.b(egbp.b((dlph) v.Q(), this.h.c, aj()));
         } catch (JSONException e) {
             throw new IllegalStateException(String.format(Locale.getDefault(), "Callback failed while creating JSONObject for IntermediatePaymentData object for callback request: %s", e.getMessage()));
         }
@@ -634,7 +634,7 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         MaskedWallet maskedWallet;
         ProcessBuyFlowResultResponse processBuyFlowResultResponse = this.n;
         if (processBuyFlowResultResponse.b == 1) {
-            int a = dikj.a(this.h, processBuyFlowResultResponse.c);
+            int a = dkvu.a(this.h, processBuyFlowResultResponse.c);
             int i = this.n.e;
             int i2 = i - 1;
             if (i == 0) {
@@ -660,25 +660,25 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         ax(i, i2 - 1);
     }
 
-    @Override // defpackage.diez, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void finish() {
         super.finish();
-        if (fszj.a.a().a() && this.u) {
+        if (fvva.a.lK().a() && this.u) {
             overridePendingTransition(0, R.anim.fade_out);
         }
     }
 
-    @Override // defpackage.diez, defpackage.edmf
-    public final Account kW() {
-        return this.h.b.b;
-    }
-
-    @Override // defpackage.diez, defpackage.difg
+    @Override // defpackage.dkqk, defpackage.dkqr
     public final BuyFlowConfig l() {
         return this.h;
     }
 
-    @Override // defpackage.diez, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.efzb
+    public final Account ll() {
+        return this.h.b.b;
+    }
+
+    @Override // defpackage.dkqk, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         if (i != 501) {
             super.onActivityResult(i, i2, intent);
@@ -696,38 +696,38 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         }
     }
 
-    @Override // defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         if (bundle != null) {
             this.m = (Bundle) bundle.getParcelable("extras");
         } else {
             Intent intent = getIntent();
             if (intent.hasExtra("com.google.android.gms.wallet.ib.IbActivity.transformedExtras")) {
-                this.m = (Bundle) diyf.b(Bundle.CREATOR, getIntent().getStringExtra("com.google.android.gms.wallet.ib.IbActivity.transformedExtras"));
+                this.m = (Bundle) dljy.b(Bundle.CREATOR, getIntent().getStringExtra("com.google.android.gms.wallet.ib.IbActivity.transformedExtras"));
             } else {
                 this.m = intent.getExtras();
             }
         }
         this.m.setClassLoader(IbChimeraActivity.class.getClassLoader());
         Bundle bundle2 = (Bundle) this.m.getParcelable("com.google.android.gms.wallet.firstparty.EXTRA_ACTIVITY_PARAMETERS");
-        arwm.t(bundle2, "activityParams is required");
+        atzb.t(bundle2, "activityParams is required");
         if (bundle != null) {
-            this.h = (BuyFlowConfig) efph.c(bundle, "buyFlowConfig");
-            this.i = (IbBuyFlowInput) efph.c(bundle, "buyFlowInput");
-            this.y = emee.a(bundle.getInt("lockscreenStatus"));
+            this.h = (BuyFlowConfig) eick.c(bundle, "buyFlowConfig");
+            this.i = (IbBuyFlowInput) eick.c(bundle, "buyFlowInput");
+            this.y = eors.a(bundle.getInt("lockscreenStatus"));
             this.j = (WidgetConfig) bundle.getParcelable("widgetConfig");
         } else {
-            this.h = (BuyFlowConfig) efph.c(this.m, "com.google.android.gms.wallet.buyFlowConfig");
-            this.i = (IbBuyFlowInput) efph.c(bundle2, "com.google.android.gms.wallet.ib.IbActivity.buyFlowInputFactory");
+            this.h = (BuyFlowConfig) eick.c(this.m, "com.google.android.gms.wallet.buyFlowConfig");
+            this.i = (IbBuyFlowInput) eick.c(bundle2, "com.google.android.gms.wallet.ib.IbActivity.buyFlowInputFactory");
             this.y = 2;
         }
         this.k = (IbMerchantParameters) bundle2.getParcelable("com.google.android.gms.wallet.ib.IbActivity.merchantParameters");
         this.o = bundle2.getString("apiCallAnalyticsSessionId");
-        q(bundle, true, 4, emen.FLOW_TYPE_BUYFLOW);
-        ding.C(this, this.h, ding.d, true);
+        q(bundle, true, 4, eosb.FLOW_TYPE_BUYFLOW);
+        dkyr.C(this, this.h, dkyr.d, true);
         super.onCreate(bundle);
         setContentView(com.google.android.gms.R.layout.wallet_activity_checkout);
-        kJ().o(true);
+        kY().o(true);
         PopoverView popoverView = (PopoverView) findViewById(com.google.android.gms.R.id.popover);
         this.v = popoverView;
         if (popoverView != null) {
@@ -737,14 +737,14 @@ public class IbChimeraActivity extends diez implements dimd, dils {
             ApplicationParameters applicationParameters = this.h.b;
             popoverView2.j(applicationParameters.h, applicationParameters.i);
         }
-        ding.A(findViewById(com.google.android.gms.R.id.wallet_root));
+        dkyr.A(findViewById(com.google.android.gms.R.id.wallet_root));
         if (bundle != null) {
             this.n = (ProcessBuyFlowResultResponse) bundle.getParcelable("processBuyFlowResultResponse");
             this.r = bundle.getInt("serviceConnectionSavePoint");
             this.p = bundle.getBoolean("hasAuthTokens");
             this.q = bundle.getBoolean("processingBuyflowResult");
             this.u = bundle.getBoolean("shouldOverrideExitAnimation");
-            this.x = (dijq) m();
+            this.x = (dkva) m();
         } else {
             this.n = null;
             this.r = -1;
@@ -752,60 +752,60 @@ public class IbChimeraActivity extends diez implements dimd, dils {
             this.q = false;
             byte[] byteArray = this.m.getByteArray("com.google.android.gms.wallet.firstparty.EXTRA_BUY_FLOW_STATE_TOKEN");
             if (this.m.containsKey("com.google.android.gms.wallet.firstparty.EXTRA_INITIALIZE_TOKEN")) {
-                this.x = dijq.aA(this.m.getByteArray("com.google.android.gms.wallet.firstparty.EXTRA_INITIALIZE_TOKEN"), this.i.H(), this.i.I(), null, this.h, this.a, byteArray, this.b);
+                this.x = dkva.az(this.m.getByteArray("com.google.android.gms.wallet.firstparty.EXTRA_INITIALIZE_TOKEN"), this.i.H(), this.i.I(), null, this.h, this.a, byteArray, this.b);
             } else {
-                this.x = dijq.aB(this.i.H(), this.i.I(), null, this.h, this.a, byteArray, this.b);
+                this.x = dkva.aA(this.i.H(), this.i.I(), null, this.h, this.a, byteArray, this.b);
             }
             au();
             B(this.x, com.google.android.gms.R.id.popover_content_holder);
         }
         az();
-        dijq dijqVar = this.x;
-        dijqVar.t = this;
-        dijqVar.u = this;
-        int i = diuu.b;
-        ednp d = ednp.d(this);
+        dkva dkvaVar = this.x;
+        dkvaVar.t = this;
+        dkvaVar.u = this;
+        int i = dlgf.b;
+        egal d = egal.d(this);
         if (d == null) {
-            diuu diuuVar = new diuu();
-            ednp.c.put(this, diuuVar);
-            getSupportFragmentManager().beginTransaction().add(diuuVar, "ActionExecutorFragment").commit();
-        } else if (!diuu.class.equals(d.getClass())) {
+            dlgf dlgfVar = new dlgf();
+            egal.c.put(this, dlgfVar);
+            getSupportFragmentManager().beginTransaction().add(dlgfVar, "ActionExecutorFragment").commit();
+        } else if (!dlgf.class.equals(d.getClass())) {
             throw new IllegalStateException("Trying to install multiple distinct subclasses of ActionExecutorFragment!");
         }
-        ednp d2 = ednp.d(this);
-        edup.b(d2, "BE_AEFT_01", null, eduq.a, "Activity has no ActionExecutorFragment!");
-        this.w = new edoa(d2, this, bundle);
+        egal d2 = egal.d(this);
+        eghq.b(d2, "BE_AEFT_01", null, eghr.a, "Activity has no ActionExecutorFragment!");
+        this.w = new egaw(d2, this, bundle);
     }
 
-    @Override // defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
         this.w.aX();
     }
 
-    @Override // defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         ay();
         this.w.aY();
     }
 
-    @Override // defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        dimf dimfVar = (dimf) getSupportFragmentManager().findFragmentByTag("RetrieveAuthTokensFragment");
-        if (dimfVar != null) {
-            dimfVar.d(this);
+        dkxq dkxqVar = (dkxq) getSupportFragmentManager().findFragmentByTag("RetrieveAuthTokensFragment");
+        if (dkxqVar != null) {
+            dkxqVar.d(this);
         }
         as();
         this.w.ba();
     }
 
-    @Override // defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         ay();
-        this.w.kA(bundle);
+        this.w.kP(bundle);
         bundle.putParcelable("extras", this.m);
         bundle.putParcelable("processBuyFlowResultResponse", this.n);
         bundle.putBoolean("processingBuyflowResult", this.q);
@@ -821,7 +821,7 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         bundle.putBoolean("shouldOverrideExitAnimation", this.u);
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final void t(Account account) {
         ay();
         if (ab() != null) {
@@ -831,50 +831,50 @@ public class IbChimeraActivity extends diez implements dimd, dils {
         }
         at();
         this.r = -1;
-        this.l = new diqx(this);
-        djdf b = ApplicationParameters.b(this.h.b);
+        this.l = new dlci(this);
+        dloy b = ApplicationParameters.b(this.h.b);
         b.d(account);
         ApplicationParameters applicationParameters = b.a;
-        djdh b2 = BuyFlowConfig.b(this.h);
+        dlpa b2 = BuyFlowConfig.b(this.h);
         b2.b(applicationParameters);
         this.h = b2.a();
-        divi.a(this, new OwMwAccountChangedEvent(this.o, account.name));
+        dlgt.a(this, new OwMwAccountChangedEvent(this.o, account.name));
         this.p = false;
         au();
         az();
         as();
-        ditw ditwVar = ab().b;
-        Message.obtain(ditwVar.u, 38, this.i).sendToTarget();
+        dlfh dlfhVar = ab().b;
+        Message.obtain(dlfhVar.u, 38, this.i).sendToTarget();
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final void v(WalletExitResult walletExitResult) {
         ar(walletExitResult);
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final void x(WalletExitResult walletExitResult) {
         aB(9);
     }
 
-    @Override // defpackage.diez, defpackage.djew
+    @Override // defpackage.dkqk, defpackage.dlqp
     public final /* bridge */ /* synthetic */ void z(Parcelable parcelable, boolean z2) {
         BuyFlowResult buyFlowResult = (BuyFlowResult) parcelable;
-        ehlq ak = ak(buyFlowResult);
+        ejyw ak = ak(buyFlowResult);
         if ((ak.b & 1) != 0) {
-            ehlf ehlfVar = ak.c;
-            if (ehlfVar == null) {
-                ehlfVar = ehlf.a;
+            ejyl ejylVar = ak.c;
+            if (ejylVar == null) {
+                ejylVar = ejyl.a;
             }
-            aw(ehlfVar);
+            aw(ejylVar);
             return;
         }
         this.q = true;
-        ditw ditwVar = ab().b;
-        Message.obtain(ditwVar.u, 35, new ProcessBuyFlowResultRequest(this.i, this.k, buyFlowResult.e, buyFlowResult.d, buyFlowResult.f)).sendToTarget();
+        dlfh dlfhVar = ab().b;
+        Message.obtain(dlfhVar.u, 35, new ProcessBuyFlowResultRequest(this.i, this.k, buyFlowResult.e, buyFlowResult.d, buyFlowResult.f)).sendToTarget();
     }
 
-    @Override // defpackage.dils
+    @Override // defpackage.dkxd
     public final void ag() {
     }
 }

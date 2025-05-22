@@ -5,16 +5,16 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.SparseArray;
 import defpackage.a;
-import defpackage.arwm;
-import defpackage.arxa;
-import defpackage.arxb;
-import defpackage.arxc;
-import defpackage.ashs;
-import defpackage.asij;
-import defpackage.asni;
-import defpackage.asnj;
-import defpackage.aspq;
-import defpackage.asps;
+import defpackage.atzb;
+import defpackage.atzp;
+import defpackage.atzq;
+import defpackage.atzr;
+import defpackage.aulm;
+import defpackage.aumd;
+import defpackage.aurc;
+import defpackage.aurd;
+import defpackage.autk;
+import defpackage.autm;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -22,10 +22,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
-    public static final Parcelable.Creator CREATOR = new asij();
+    public static final Parcelable.Creator CREATOR = new aumd();
     public final int a;
     private final Parcel b;
     private final int c;
@@ -36,7 +36,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
 
     public SafeParcelResponse(int i, Parcel parcel, FieldMappingDictionary fieldMappingDictionary) {
         this.a = i;
-        arwm.s(parcel);
+        atzb.s(parcel);
         this.b = parcel;
         this.c = 2;
         this.d = fieldMappingDictionary;
@@ -58,7 +58,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                 throw new IllegalStateException("Attempted to parse JSON with a SafeParcelResponse object that is already filled with data.");
             }
         } else {
-            this.g = arxc.a(parcel);
+            this.g = atzr.a(parcel);
             this.f = 1;
         }
     }
@@ -72,11 +72,11 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
             sparseArray.put(((FastJsonResponse$Field) entry.getValue()).g, entry);
         }
         sb.append('{');
-        int h = arxb.h(parcel);
+        int h = atzq.h(parcel);
         boolean z = false;
         while (parcel.dataPosition() < h) {
             int readInt = parcel.readInt();
-            Map.Entry entry2 = (Map.Entry) sparseArray.get(arxb.d(readInt));
+            Map.Entry entry2 = (Map.Entry) sparseArray.get(atzq.d(readInt));
             if (entry2 != null) {
                 if (z) {
                     sb.append(",");
@@ -90,39 +90,39 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                     int i = fastJsonResponse$Field.d;
                     switch (i) {
                         case 0:
-                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Integer.valueOf(arxb.f(parcel, readInt))));
+                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Integer.valueOf(atzq.f(parcel, readInt))));
                             break;
                         case 1:
-                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, arxb.u(parcel, readInt)));
+                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, atzq.u(parcel, readInt)));
                             break;
                         case 2:
-                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Long.valueOf(arxb.i(parcel, readInt))));
+                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Long.valueOf(atzq.i(parcel, readInt))));
                             break;
                         case 3:
-                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Float.valueOf(arxb.c(parcel, readInt))));
+                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Float.valueOf(atzq.c(parcel, readInt))));
                             break;
                         case 4:
-                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Double.valueOf(arxb.b(parcel, readInt))));
+                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Double.valueOf(atzq.b(parcel, readInt))));
                             break;
                         case 5:
-                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, arxb.t(parcel, readInt)));
+                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, atzq.t(parcel, readInt)));
                             break;
                         case 6:
-                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Boolean.valueOf(arxb.D(parcel, readInt))));
+                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, Boolean.valueOf(atzq.D(parcel, readInt))));
                             break;
                         case 7:
-                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, arxb.s(parcel, readInt)));
+                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, atzq.s(parcel, readInt)));
                             break;
                         case 8:
                         case 9:
-                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, arxb.E(parcel, readInt)));
+                            t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, atzq.E(parcel, readInt)));
                             break;
                         case 10:
-                            Bundle j = arxb.j(parcel, readInt);
+                            Bundle j = atzq.j(parcel, readInt);
                             HashMap hashMap = new HashMap();
                             for (String str2 : j.keySet()) {
                                 String string = j.getString(str2);
-                                arwm.s(string);
+                                atzb.s(string);
                                 hashMap.put(str2, string);
                             }
                             t(sb, fastJsonResponse$Field, ah(fastJsonResponse$Field, hashMap));
@@ -136,7 +136,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                     sb.append("[");
                     switch (fastJsonResponse$Field.d) {
                         case 0:
-                            int[] H = arxb.H(parcel, readInt);
+                            int[] H = atzq.H(parcel, readInt);
                             int length = H.length;
                             for (int i2 = 0; i2 < length; i2++) {
                                 if (i2 != 0) {
@@ -146,7 +146,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                             }
                             break;
                         case 1:
-                            int g = arxb.g(parcel, readInt);
+                            int g = atzq.g(parcel, readInt);
                             int dataPosition = parcel.dataPosition();
                             if (g == 0) {
                                 bigIntegerArr = null;
@@ -158,10 +158,10 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                                 }
                                 parcel.setDataPosition(dataPosition + g);
                             }
-                            asni.c(sb, bigIntegerArr);
+                            aurc.c(sb, bigIntegerArr);
                             break;
                         case 2:
-                            long[] I = arxb.I(parcel, readInt);
+                            long[] I = atzq.I(parcel, readInt);
                             int length2 = I.length;
                             for (int i4 = 0; i4 < length2; i4++) {
                                 if (i4 != 0) {
@@ -171,7 +171,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                             }
                             break;
                         case 3:
-                            float[] G = arxb.G(parcel, readInt);
+                            float[] G = atzq.G(parcel, readInt);
                             int length3 = G.length;
                             for (int i5 = 0; i5 < length3; i5++) {
                                 if (i5 != 0) {
@@ -181,7 +181,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                             }
                             break;
                         case 4:
-                            double[] F = arxb.F(parcel, readInt);
+                            double[] F = atzq.F(parcel, readInt);
                             int length4 = F.length;
                             for (int i6 = 0; i6 < length4; i6++) {
                                 if (i6 != 0) {
@@ -191,7 +191,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                             }
                             break;
                         case 5:
-                            int g2 = arxb.g(parcel, readInt);
+                            int g2 = atzq.g(parcel, readInt);
                             int dataPosition2 = parcel.dataPosition();
                             if (g2 == 0) {
                                 bigDecimalArr = null;
@@ -203,10 +203,10 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                                 }
                                 parcel.setDataPosition(dataPosition2 + g2);
                             }
-                            asni.c(sb, bigDecimalArr);
+                            aurc.c(sb, bigDecimalArr);
                             break;
                         case 6:
-                            boolean[] L = arxb.L(parcel, readInt);
+                            boolean[] L = atzq.L(parcel, readInt);
                             int length5 = L.length;
                             for (int i8 = 0; i8 < length5; i8++) {
                                 if (i8 != 0) {
@@ -216,7 +216,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                             }
                             break;
                         case 7:
-                            String[] K = arxb.K(parcel, readInt);
+                            String[] K = atzq.K(parcel, readInt);
                             int length6 = K.length;
                             for (int i9 = 0; i9 < length6; i9++) {
                                 if (i9 != 0) {
@@ -232,7 +232,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                         case 10:
                             throw new UnsupportedOperationException("List of type BASE64, BASE64_URL_SAFE, or STRING_MAP is not supported");
                         case 11:
-                            int g3 = arxb.g(parcel, readInt);
+                            int g3 = atzq.g(parcel, readInt);
                             int dataPosition3 = parcel.dataPosition();
                             if (g3 == 0) {
                                 parcelArr = null;
@@ -270,46 +270,46 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                 } else {
                     switch (fastJsonResponse$Field.d) {
                         case 0:
-                            sb.append(arxb.f(parcel, readInt));
+                            sb.append(atzq.f(parcel, readInt));
                             break;
                         case 1:
-                            sb.append(arxb.u(parcel, readInt));
+                            sb.append(atzq.u(parcel, readInt));
                             break;
                         case 2:
-                            sb.append(arxb.i(parcel, readInt));
+                            sb.append(atzq.i(parcel, readInt));
                             break;
                         case 3:
-                            sb.append(arxb.c(parcel, readInt));
+                            sb.append(atzq.c(parcel, readInt));
                             break;
                         case 4:
-                            sb.append(arxb.b(parcel, readInt));
+                            sb.append(atzq.b(parcel, readInt));
                             break;
                         case 5:
-                            sb.append(arxb.t(parcel, readInt));
+                            sb.append(atzq.t(parcel, readInt));
                             break;
                         case 6:
-                            sb.append(arxb.D(parcel, readInt));
+                            sb.append(atzq.D(parcel, readInt));
                             break;
                         case 7:
-                            String s = arxb.s(parcel, readInt);
+                            String s = atzq.s(parcel, readInt);
                             sb.append("\"");
-                            sb.append(aspq.a(s));
+                            sb.append(autk.a(s));
                             sb.append("\"");
                             break;
                         case 8:
-                            byte[] E = arxb.E(parcel, readInt);
+                            byte[] E = atzq.E(parcel, readInt);
                             sb.append("\"");
-                            sb.append(asnj.a(E));
+                            sb.append(aurd.a(E));
                             sb.append("\"");
                             break;
                         case 9:
-                            byte[] E2 = arxb.E(parcel, readInt);
+                            byte[] E2 = atzq.E(parcel, readInt);
                             sb.append("\"");
-                            sb.append(asnj.b(E2));
+                            sb.append(aurd.b(E2));
                             sb.append("\"");
                             break;
                         case 10:
-                            Bundle j2 = arxb.j(parcel, readInt);
+                            Bundle j2 = atzq.j(parcel, readInt);
                             Set<String> keySet = j2.keySet();
                             sb.append("{");
                             boolean z2 = true;
@@ -320,14 +320,14 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                                 sb.append("\"");
                                 sb.append(str3);
                                 sb.append("\":\"");
-                                sb.append(aspq.a(j2.getString(str3)));
+                                sb.append(autk.a(j2.getString(str3)));
                                 sb.append("\"");
                                 z2 = false;
                             }
                             sb.append("}");
                             break;
                         case 11:
-                            Parcel l = arxb.l(parcel, readInt);
+                            Parcel l = atzq.l(parcel, readInt);
                             l.setDataPosition(0);
                             r(sb, fastJsonResponse$Field.c(), l);
                             break;
@@ -339,7 +339,7 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
             }
         }
         if (parcel.dataPosition() != h) {
-            throw new arxa(a.j(h, "Overread allowed size end="), parcel);
+            throw new atzp(a.j(h, "Overread allowed size end="), parcel);
         }
         sb.append('}');
     }
@@ -357,23 +357,23 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                 return;
             case 7:
                 sb.append("\"");
-                arwm.s(obj);
-                sb.append(aspq.a(obj.toString()));
+                atzb.s(obj);
+                sb.append(autk.a(obj.toString()));
                 sb.append("\"");
                 return;
             case 8:
                 sb.append("\"");
-                sb.append(asnj.a((byte[]) obj));
+                sb.append(aurd.a((byte[]) obj));
                 sb.append("\"");
                 return;
             case 9:
                 sb.append("\"");
-                sb.append(asnj.b((byte[]) obj));
+                sb.append(aurd.b((byte[]) obj));
                 sb.append("\"");
                 return;
             case 10:
-                arwm.s(obj);
-                asps.a(sb, (HashMap) obj);
+                atzb.s(obj);
+                autm.a(sb, (HashMap) obj);
                 return;
             case 11:
                 throw new IllegalArgumentException("Method does not accept concrete type.");
@@ -399,192 +399,180 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
         sb.append("]");
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void B(FastJsonResponse$Field fastJsonResponse$Field, String str, BigDecimal bigDecimal) {
         q(fastJsonResponse$Field);
-        arxc.d(this.b, fastJsonResponse$Field.g, bigDecimal, true);
+        atzr.d(this.b, fastJsonResponse$Field.g, bigDecimal, true);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void D(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         q(fastJsonResponse$Field);
-        arwm.s(arrayList);
+        atzb.s(arrayList);
         int size = arrayList.size();
         BigDecimal[] bigDecimalArr = new BigDecimal[size];
         for (int i = 0; i < size; i++) {
             bigDecimalArr[i] = (BigDecimal) arrayList.get(i);
         }
         Parcel parcel = this.b;
-        int b = arxc.b(parcel, fastJsonResponse$Field.g);
+        int b = atzr.b(parcel, fastJsonResponse$Field.g);
         parcel.writeInt(size);
         for (int i2 = 0; i2 < size; i2++) {
             parcel.writeByteArray(bigDecimalArr[i2].unscaledValue().toByteArray());
             parcel.writeInt(bigDecimalArr[i2].scale());
         }
-        arxc.c(parcel, b);
+        atzr.c(parcel, b);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void F(FastJsonResponse$Field fastJsonResponse$Field, String str, BigInteger bigInteger) {
         q(fastJsonResponse$Field);
         Parcel parcel = this.b;
         int i = fastJsonResponse$Field.g;
         if (bigInteger == null) {
-            arxc.n(parcel, i, 0);
+            atzr.n(parcel, i, 0);
             return;
         }
-        int b = arxc.b(parcel, i);
+        int b = atzr.b(parcel, i);
         parcel.writeByteArray(bigInteger.toByteArray());
-        arxc.c(parcel, b);
+        atzr.c(parcel, b);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void H(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         q(fastJsonResponse$Field);
-        arwm.s(arrayList);
+        atzb.s(arrayList);
         int size = arrayList.size();
         BigInteger[] bigIntegerArr = new BigInteger[size];
         for (int i = 0; i < size; i++) {
             bigIntegerArr[i] = (BigInteger) arrayList.get(i);
         }
         Parcel parcel = this.b;
-        int b = arxc.b(parcel, fastJsonResponse$Field.g);
+        int b = atzr.b(parcel, fastJsonResponse$Field.g);
         parcel.writeInt(size);
         for (int i2 = 0; i2 < size; i2++) {
             parcel.writeByteArray(bigIntegerArr[i2].toByteArray());
         }
-        arxc.c(parcel, b);
+        atzr.c(parcel, b);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void K(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         q(fastJsonResponse$Field);
-        arwm.s(arrayList);
+        atzb.s(arrayList);
         int size = arrayList.size();
         boolean[] zArr = new boolean[size];
         for (int i = 0; i < size; i++) {
             zArr[i] = ((Boolean) arrayList.get(i)).booleanValue();
         }
-        arxc.f(this.b, fastJsonResponse$Field.g, zArr, true);
+        atzr.f(this.b, fastJsonResponse$Field.g, zArr, true);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void P(FastJsonResponse$Field fastJsonResponse$Field, String str, double d) {
         q(fastJsonResponse$Field);
-        arxc.j(this.b, fastJsonResponse$Field.g, d);
+        atzr.j(this.b, fastJsonResponse$Field.g, d);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void R(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         q(fastJsonResponse$Field);
-        arwm.s(arrayList);
+        atzb.s(arrayList);
         int size = arrayList.size();
         double[] dArr = new double[size];
         for (int i = 0; i < size; i++) {
             dArr[i] = ((Double) arrayList.get(i)).doubleValue();
         }
-        arxc.k(this.b, fastJsonResponse$Field.g, dArr, true);
+        atzr.k(this.b, fastJsonResponse$Field.g, dArr, true);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void T(FastJsonResponse$Field fastJsonResponse$Field, String str, float f) {
         q(fastJsonResponse$Field);
-        arxc.l(this.b, fastJsonResponse$Field.g, f);
+        atzr.l(this.b, fastJsonResponse$Field.g, f);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void V(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         q(fastJsonResponse$Field);
-        arwm.s(arrayList);
+        atzb.s(arrayList);
         int size = arrayList.size();
         float[] fArr = new float[size];
         for (int i = 0; i < size; i++) {
             fArr[i] = ((Float) arrayList.get(i)).floatValue();
         }
-        arxc.m(this.b, fastJsonResponse$Field.g, fArr, true);
+        atzr.m(this.b, fastJsonResponse$Field.g, fArr, true);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void Y(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         q(fastJsonResponse$Field);
-        arwm.s(arrayList);
+        atzb.s(arrayList);
         int size = arrayList.size();
         int[] iArr = new int[size];
         for (int i = 0; i < size; i++) {
             iArr[i] = ((Integer) arrayList.get(i)).intValue();
         }
-        arxc.p(this.b, fastJsonResponse$Field.g, iArr, true);
+        atzr.p(this.b, fastJsonResponse$Field.g, iArr, true);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void ab(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         q(fastJsonResponse$Field);
-        arwm.s(arrayList);
+        atzb.s(arrayList);
         int size = arrayList.size();
         long[] jArr = new long[size];
         for (int i = 0; i < size; i++) {
             jArr[i] = ((Long) arrayList.get(i)).longValue();
         }
-        arxc.r(this.b, fastJsonResponse$Field.g, jArr, true);
+        atzr.r(this.b, fastJsonResponse$Field.g, jArr, true);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void ae(FastJsonResponse$Field fastJsonResponse$Field, String str, Map map) {
         q(fastJsonResponse$Field);
         Bundle bundle = new Bundle();
-        arwm.s(map);
+        atzb.s(map);
         for (String str2 : map.keySet()) {
             bundle.putString(str2, (String) map.get(str2));
         }
-        arxc.g(this.b, fastJsonResponse$Field.g, bundle, true);
+        atzr.g(this.b, fastJsonResponse$Field.g, bundle, true);
     }
 
-    @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse, defpackage.ashs
+    @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse, defpackage.aulm
     public final boolean ag(String str) {
         throw new UnsupportedOperationException("Converting to JSON does not require this method.");
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final Map b() {
         FieldMappingDictionary fieldMappingDictionary = this.d;
         if (fieldMappingDictionary == null) {
             return null;
         }
         String str = this.e;
-        arwm.s(str);
+        atzb.s(str);
         return fieldMappingDictionary.a(str);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         q(fastJsonResponse$Field);
-        arxc.v(this.b, fastJsonResponse$Field.g, str2, true);
+        atzr.v(this.b, fastJsonResponse$Field.g, str2, true);
     }
 
-    @Override // defpackage.ashs
-    protected final void gf(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
-        q(fastJsonResponse$Field);
-        arxc.i(this.b, fastJsonResponse$Field.g, bArr, true);
-    }
-
-    @Override // defpackage.ashs
-    protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
-        q(fastJsonResponse$Field);
-        arxc.e(this.b, fastJsonResponse$Field.g, z);
-    }
-
-    @Override // defpackage.ashs
-    public final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+    @Override // defpackage.aulm
+    public final void gK(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         q(fastJsonResponse$Field);
         ArrayList arrayList2 = new ArrayList();
-        arwm.s(arrayList);
+        atzb.s(arrayList);
         arrayList.size();
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
-            arrayList2.add(((SafeParcelResponse) ((ashs) arrayList.get(i))).p());
+            arrayList2.add(((SafeParcelResponse) ((aulm) arrayList.get(i))).p());
         }
         Parcel parcel = this.b;
-        int b = arxc.b(parcel, fastJsonResponse$Field.g);
+        int b = atzr.b(parcel, fastJsonResponse$Field.g);
         int size2 = arrayList2.size();
         parcel.writeInt(size2);
         for (int i2 = 0; i2 < size2; i2++) {
@@ -596,65 +584,77 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
                 parcel.writeInt(0);
             }
         }
-        arxc.c(parcel, b);
+        atzr.c(parcel, b);
     }
 
-    @Override // defpackage.ashs
-    public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
+    @Override // defpackage.aulm
+    public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
         q(fastJsonResponse$Field);
-        arxc.s(this.b, fastJsonResponse$Field.g, ((SafeParcelResponse) ashsVar).p(), true);
+        atzr.s(this.b, fastJsonResponse$Field.g, ((SafeParcelResponse) aulmVar).p(), true);
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
         q(fastJsonResponse$Field);
-        arxc.o(this.b, fastJsonResponse$Field.g, i);
+        atzr.o(this.b, fastJsonResponse$Field.g, i);
     }
 
-    @Override // defpackage.ashs
-    protected final void gy(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
+    @Override // defpackage.aulm
+    protected final void gN(FastJsonResponse$Field fastJsonResponse$Field, String str, ArrayList arrayList) {
         q(fastJsonResponse$Field);
-        arwm.s(arrayList);
+        atzb.s(arrayList);
         int size = arrayList.size();
         String[] strArr = new String[size];
         for (int i = 0; i < size; i++) {
             strArr[i] = (String) arrayList.get(i);
         }
-        arxc.w(this.b, fastJsonResponse$Field.g, strArr, true);
+        atzr.w(this.b, fastJsonResponse$Field.g, strArr, true);
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
+    protected final void gu(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
+        q(fastJsonResponse$Field);
+        atzr.i(this.b, fastJsonResponse$Field.g, bArr, true);
+    }
+
+    @Override // defpackage.aulm
+    protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+        q(fastJsonResponse$Field);
+        atzr.e(this.b, fastJsonResponse$Field.g, z);
+    }
+
+    @Override // defpackage.aulm
     protected final void k(FastJsonResponse$Field fastJsonResponse$Field, String str, long j) {
         q(fastJsonResponse$Field);
-        arxc.q(this.b, fastJsonResponse$Field.g, j);
+        atzr.q(this.b, fastJsonResponse$Field.g, j);
     }
 
     public final Parcel p() {
         int i = this.f;
         if (i == 0) {
             Parcel parcel = this.b;
-            int a = arxc.a(parcel);
+            int a = atzr.a(parcel);
             this.g = a;
-            arxc.c(parcel, a);
+            atzr.c(parcel, a);
             this.f = 2;
         } else if (i == 1) {
-            arxc.c(this.b, this.g);
+            atzr.c(this.b, this.g);
             this.f = 2;
         }
         return this.b;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final String toString() {
         FieldMappingDictionary fieldMappingDictionary = this.d;
-        arwm.t(fieldMappingDictionary, "Cannot convert to JSON on client side.");
+        atzb.t(fieldMappingDictionary, "Cannot convert to JSON on client side.");
         Parcel p = p();
         p.setDataPosition(0);
         StringBuilder sb = new StringBuilder(100);
         String str = this.e;
-        arwm.s(str);
+        atzb.s(str);
         Map a = fieldMappingDictionary.a(str);
-        arwm.s(a);
+        atzb.s(a);
         r(sb, a, p);
         return sb.toString();
     }
@@ -662,15 +662,15 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.s(parcel, 2, p(), false);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.s(parcel, 2, p(), false);
         int i3 = this.c;
-        arxc.t(parcel, 3, i3 != 0 ? i3 != 1 ? this.d : this.d : null, i, false);
-        arxc.c(parcel, a);
+        atzr.t(parcel, 3, i3 != 0 ? i3 != 1 ? this.d : this.d : null, i, false);
+        atzr.c(parcel, a);
     }
 
-    @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse, defpackage.ashs
+    @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse, defpackage.aulm
     public final Object z(String str) {
         throw new UnsupportedOperationException("Converting to JSON does not require this method.");
     }
@@ -679,9 +679,9 @@ public class SafeParcelResponse extends FastSafeParcelableJsonResponse {
         this.a = 1;
         this.b = Parcel.obtain();
         this.c = 0;
-        arwm.s(fieldMappingDictionary);
+        atzb.s(fieldMappingDictionary);
         this.d = fieldMappingDictionary;
-        arwm.s(str);
+        atzb.s(str);
         this.e = str;
         this.f = 0;
     }

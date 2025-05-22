@@ -35,102 +35,102 @@ import com.google.android.gms.dynamic.ObjectWrapper;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
 import defpackage.a;
-import defpackage.akrt;
-import defpackage.aktr;
-import defpackage.aktt;
-import defpackage.akue;
-import defpackage.akye;
-import defpackage.akyf;
-import defpackage.akyg;
-import defpackage.akyp;
-import defpackage.akyr;
-import defpackage.akzm;
-import defpackage.akzn;
-import defpackage.akzy;
-import defpackage.akzz;
-import defpackage.albn;
-import defpackage.alcd;
-import defpackage.alci;
-import defpackage.alcl;
-import defpackage.alcu;
-import defpackage.alem;
-import defpackage.alen;
-import defpackage.alet;
-import defpackage.alfo;
-import defpackage.alfu;
-import defpackage.alga;
-import defpackage.algc;
-import defpackage.alhz;
-import defpackage.alia;
-import defpackage.alic;
-import defpackage.alkr;
-import defpackage.alng;
-import defpackage.aloy;
-import defpackage.alpa;
-import defpackage.alpd;
-import defpackage.alpn;
-import defpackage.alpw;
-import defpackage.alpx;
-import defpackage.alpy;
-import defpackage.alqb;
-import defpackage.alqc;
-import defpackage.alqt;
-import defpackage.alqu;
-import defpackage.alra;
-import defpackage.alrc;
-import defpackage.alrd;
-import defpackage.alrf;
-import defpackage.alrh;
-import defpackage.alrn;
-import defpackage.alrt;
-import defpackage.alsg;
-import defpackage.alsi;
-import defpackage.alsl;
-import defpackage.alsm;
-import defpackage.alsn;
-import defpackage.alsp;
-import defpackage.alss;
-import defpackage.alwj;
-import defpackage.alxh;
-import defpackage.alxu;
-import defpackage.alxx;
-import defpackage.alxy;
-import defpackage.alyb;
-import defpackage.alyy;
-import defpackage.alzt;
-import defpackage.alzx;
-import defpackage.arxd;
-import defpackage.asqh;
-import defpackage.byhr;
-import defpackage.deqr;
-import defpackage.ecyr;
-import defpackage.eiho;
-import defpackage.eiig;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.eito;
-import defpackage.eiuu;
-import defpackage.eivv;
-import defpackage.ejcb;
-import defpackage.ejfg;
-import defpackage.ejhh;
-import defpackage.elwm;
-import defpackage.elwn;
-import defpackage.elwq;
-import defpackage.elxk;
-import defpackage.elxl;
-import defpackage.elxz;
-import defpackage.fecj;
-import defpackage.flsh;
-import defpackage.flsl;
-import defpackage.flsr;
-import defpackage.fluc;
-import defpackage.fluf;
-import defpackage.flvo;
-import defpackage.flwu;
-import defpackage.ilv;
+import defpackage.amte;
+import defpackage.amvc;
+import defpackage.amve;
+import defpackage.amvp;
+import defpackage.amzp;
+import defpackage.amzq;
+import defpackage.amzr;
+import defpackage.anaa;
+import defpackage.anac;
+import defpackage.anax;
+import defpackage.anay;
+import defpackage.anbj;
+import defpackage.anbk;
+import defpackage.ancy;
+import defpackage.ando;
+import defpackage.andt;
+import defpackage.andw;
+import defpackage.anef;
+import defpackage.anfx;
+import defpackage.anfy;
+import defpackage.ange;
+import defpackage.angz;
+import defpackage.anhf;
+import defpackage.anhl;
+import defpackage.anhn;
+import defpackage.anjk;
+import defpackage.anjl;
+import defpackage.anjn;
+import defpackage.anmc;
+import defpackage.anor;
+import defpackage.anqj;
+import defpackage.anql;
+import defpackage.anqo;
+import defpackage.anqy;
+import defpackage.anrh;
+import defpackage.anri;
+import defpackage.anrj;
+import defpackage.anrm;
+import defpackage.anrn;
+import defpackage.anse;
+import defpackage.ansf;
+import defpackage.ansl;
+import defpackage.ansn;
+import defpackage.anso;
+import defpackage.ansq;
+import defpackage.anss;
+import defpackage.ansy;
+import defpackage.ante;
+import defpackage.antr;
+import defpackage.antt;
+import defpackage.antw;
+import defpackage.antx;
+import defpackage.anty;
+import defpackage.anua;
+import defpackage.anud;
+import defpackage.anxu;
+import defpackage.anys;
+import defpackage.anzf;
+import defpackage.anzi;
+import defpackage.anzj;
+import defpackage.anzm;
+import defpackage.aoaj;
+import defpackage.aobe;
+import defpackage.aobi;
+import defpackage.atzs;
+import defpackage.auub;
+import defpackage.caqj;
+import defpackage.dhbu;
+import defpackage.eflm;
+import defpackage.ekut;
+import defpackage.ekvl;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elgt;
+import defpackage.elhz;
+import defpackage.elja;
+import defpackage.elpg;
+import defpackage.elsn;
+import defpackage.eluq;
+import defpackage.eoka;
+import defpackage.eokb;
+import defpackage.eoke;
+import defpackage.eoky;
+import defpackage.eokz;
+import defpackage.eoln;
+import defpackage.fgrc;
+import defpackage.fojt;
+import defpackage.fojx;
+import defpackage.fokd;
+import defpackage.foll;
+import defpackage.folo;
+import defpackage.fomx;
+import defpackage.food;
+import defpackage.inl;
 import java.io.Closeable;
 import java.io.FileDescriptor;
 import java.io.FileInputStream;
@@ -148,130 +148,131 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class CarSetupServiceImpl extends Service implements alqu {
-    public volatile alpw A;
+public class CarSetupServiceImpl extends Service implements ansf {
+    public volatile anrh A;
     public HandlerThread B;
     Handler C;
     public Handler D;
-    public alhz F;
-    private alxx I;
-    private alwj J;
-    private alkr K;
+    public anjk F;
+    private anzi I;
+    private anxu J;
+    private anmc K;
     private long L;
-    private alxu O;
-    public alxh d;
-    public alga e;
+    private anzf O;
+    public anys d;
+    public anhl e;
     public boolean g;
-    public aloy h;
+    public anqj h;
     public int i;
-    public alra j;
+    public ansl j;
     public CarInfoInternal k;
     public ConnectionTransfer l;
-    public alet m;
+    public ange m;
     public boolean n;
     public boolean o;
-    public alqt p;
+    public anse p;
     public boolean t;
     public Boolean w;
-    public akrt x;
-    public volatile alcu y;
-    public alsm z;
-    public static final ejhh a = albn.a("CAR.SETUP.SERVICE");
+    public amte x;
+    public volatile anef y;
+    public antx z;
+    public static final eluq a = ancy.a("CAR.SETUP.SERVICE");
     private static final Random H = new SecureRandom();
-    static final AtomicBoolean b = alxx.b;
-    public final alqc c = new alqc(this);
+    static final AtomicBoolean b = anzi.b;
+    public final anrn c = new anrn(this);
     public int f = -1;
     public final int q = -1;
     public final int r = -1;
     public int s = 0;
     private int M = 0;
-    public final eijr u = eijy.a(new eijr() { // from class: alpe
-        @Override // defpackage.eijr
-        public final Object a() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+    public final ekww u = ekxd.a(new ekww() { // from class: anqp
+        @Override // defpackage.ekww
+        public final Object lK() {
+            eluq eluqVar = CarSetupServiceImpl.a;
+            fojt fojtVar = fojt.a;
             boolean z = false;
-            if (flsh.a.a().h() && !flsh.a.a().e()) {
+            if (fojtVar.lK().h() && !fojtVar.lK().e()) {
                 z = true;
             }
             return Boolean.valueOf(z);
         }
     });
-    public final eijr v = eijy.a(new eijr() { // from class: alpf
-        @Override // defpackage.eijr
-        public final Object a() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+    public final ekww v = ekxd.a(new ekww() { // from class: anqq
+        @Override // defpackage.ekww
+        public final Object lK() {
+            eluq eluqVar = CarSetupServiceImpl.a;
             return false;
         }
     });
-    public final alpy E = new alpy(this);
-    private final alxy N = new alyb();
-    public final alic G = new alic(null);
+    public final anrj E = new anrj(this);
+    private final anzj N = new anzm();
+    public final anjn G = new anjn(null);
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-    public class ConnectionTransfer extends alrd {
-        public alrf a;
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+    public class ConnectionTransfer extends anso {
+        public ansq a;
         private final CarSetupServiceImpl b;
 
         public ConnectionTransfer(CarSetupServiceImpl carSetupServiceImpl) {
             this.b = carSetupServiceImpl;
         }
 
-        @Override // defpackage.alre
+        @Override // defpackage.ansp
         public final int a() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+            eluq eluqVar = CarSetupServiceImpl.a;
             return this.b.h.a;
         }
 
-        @Override // defpackage.alre
+        @Override // defpackage.ansp
         public final int c() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+            eluq eluqVar = CarSetupServiceImpl.a;
             return this.b.f;
         }
 
-        @Override // defpackage.alre
+        @Override // defpackage.ansp
         public final int d() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+            eluq eluqVar = CarSetupServiceImpl.a;
             return this.b.i;
         }
 
-        @Override // defpackage.alre
-        public final alia e() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+        @Override // defpackage.ansp
+        public final anjl e() {
+            eluq eluqVar = CarSetupServiceImpl.a;
             return this.b.F;
         }
 
-        @Override // defpackage.alre
+        @Override // defpackage.ansp
         public final CarInfoInternal f() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+            eluq eluqVar = CarSetupServiceImpl.a;
             return this.b.k;
         }
 
-        @Override // defpackage.alre
+        @Override // defpackage.ansp
         public final boolean g() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+            eluq eluqVar = CarSetupServiceImpl.a;
             return this.b.j.j();
         }
 
-        @Override // defpackage.alre
+        @Override // defpackage.ansp
         public final boolean h() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+            eluq eluqVar = CarSetupServiceImpl.a;
             return this.b.j.i;
         }
 
-        @Override // defpackage.alre
+        @Override // defpackage.ansp
         public final boolean i() {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+            eluq eluqVar = CarSetupServiceImpl.a;
             return this.b.g;
         }
 
-        @Override // defpackage.alre
-        public final void j(alrf alrfVar) {
-            ejhh ejhhVar = CarSetupServiceImpl.a;
+        @Override // defpackage.ansp
+        public final void j(ansq ansqVar) {
+            eluq eluqVar = CarSetupServiceImpl.a;
             if (this.b.j == null) {
                 try {
-                    alrfVar.a();
+                    ansqVar.a();
                     return;
                 } catch (RemoteException unused) {
                     return;
@@ -279,14 +280,14 @@ public class CarSetupServiceImpl extends Service implements alqu {
             }
             CarSetupServiceImpl carSetupServiceImpl = this.b;
             if (carSetupServiceImpl.j.m) {
-                this.a = alrfVar;
+                this.a = ansqVar;
                 this.b.j.f();
                 return;
             }
             try {
                 Bundle bundle = new Bundle();
                 carSetupServiceImpl.e.j(bundle);
-                alrfVar.b(bundle);
+                ansqVar.b(bundle);
             } catch (RemoteException unused2) {
             }
             CarSetupServiceImpl carSetupServiceImpl2 = this.b;
@@ -296,30 +297,30 @@ public class CarSetupServiceImpl extends Service implements alqu {
     }
 
     public static void n(Intent intent) {
-        intent.putExtra("service_handshake", new BinderParcel(new alrn()));
+        intent.putExtra("service_handshake", new BinderParcel(new ansy()));
     }
 
-    private static ecyr p(boolean z, boolean z2) {
-        return (z || !z2) ? ecyr.USER_SELECTION : ecyr.NOT_CURRENTLY_SUPPORTED;
+    private static eflm p(boolean z, boolean z2) {
+        return (z || !z2) ? eflm.USER_SELECTION : eflm.NOT_CURRENTLY_SUPPORTED;
     }
 
     private final void q() {
-        Notification.Builder color = new Notification.Builder(this).setContentTitle(getString(R.string.car_app_name)).setContentText(getString(R.string.car_notification_message)).setSmallIcon(akye.a(this)).setColor(getResources().getColor(R.color.car_light_blue_500));
+        Notification.Builder color = new Notification.Builder(this).setContentTitle(getString(R.string.car_app_name)).setContentText(getString(R.string.car_notification_message)).setSmallIcon(amzp.a(this)).setColor(getResources().getColor(R.color.car_light_blue_500));
         String string = getString(R.string.car_app_name);
-        if (flsl.c() && asqh.a()) {
+        if (fojx.c() && auub.a()) {
             Bundle bundle = new Bundle();
             bundle.putString("android.substName", string);
             color.addExtras(bundle);
         }
-        if (asqh.c()) {
-            akyg b2 = akyg.b(this);
+        if (auub.c()) {
+            amzr b2 = amzr.b(this);
             if (b2.a("car.default_notification_channel") == null) {
                 b2.c(new NotificationChannel("car.default_notification_channel", getString(R.string.car_app_name), 3));
             }
             color.setChannelId("car.default_notification_channel");
         }
         startForeground(1, color.build());
-        a.h().ah(2654).x("started foreground service");
+        a.h().ai(2658).x("started foreground service");
     }
 
     private final void r(Closeable closeable, Bundle bundle, Runnable runnable) {
@@ -328,11 +329,11 @@ public class CarSetupServiceImpl extends Service implements alqu {
         long a2;
         try {
             Context applicationContext = getApplicationContext();
-            int i = alzx.a;
-            int i2 = eitj.d;
-            eite eiteVar = new eite();
-            eito eitoVar = new eito();
-            Iterator it = flsh.a.a().b().b.iterator();
+            int i = aobi.a;
+            int i2 = elgo.d;
+            elgj elgjVar = new elgj();
+            elgt elgtVar = new elgt();
+            Iterator it = fojt.a.lK().b().b.iterator();
             while (it.hasNext()) {
                 try {
                     String[] split = ((String) it.next()).split(":", 2);
@@ -345,27 +346,27 @@ public class CarSetupServiceImpl extends Service implements alqu {
                     if (split.length > 1 && !split[1].isEmpty()) {
                         j = Long.parseLong(split[1]);
                     }
-                    eitoVar.i(unflattenFromString, Long.valueOf(j));
+                    elgtVar.i(unflattenFromString, Long.valueOf(j));
                 } catch (NumberFormatException | InvalidPropertiesFormatException e) {
                     th = e;
                     runnable2 = runnable;
-                    a.i().s(th).ah(2666).x("Aborting car connection handoff due to configuration error.");
+                    a.i().s(th).ai(2670).x("Aborting car connection handoff due to configuration error.");
                     runnable2.run();
                     return;
                 }
             }
-            ejfg listIterator = eitoVar.b().entrySet().listIterator();
+            elsn listIterator = elgtVar.b().entrySet().listIterator();
             while (listIterator.hasNext()) {
                 Map.Entry entry = (Map.Entry) listIterator.next();
                 ComponentName componentName = (ComponentName) entry.getKey();
                 Long l = (Long) entry.getValue();
                 long longValue = l.longValue();
                 try {
-                    a2 = ilv.a(applicationContext.getPackageManager().getPackageInfo(componentName.getPackageName(), 0));
+                    a2 = inl.a(applicationContext.getPackageManager().getPackageInfo(componentName.getPackageName(), 0));
                 } catch (PackageManager.NameNotFoundException unused) {
                 }
                 if ("com.google.android.projection.gearhead".equals(componentName.getPackageName())) {
-                    if (alng.a.compare(Long.valueOf(a2), l) < 0) {
+                    if (anor.a.compare(Long.valueOf(a2), l) < 0) {
                         entry.getKey();
                         entry.getValue();
                     }
@@ -373,42 +374,42 @@ public class CarSetupServiceImpl extends Service implements alqu {
                     entry.getKey();
                     entry.getValue();
                 }
-                eiteVar.i((ComponentName) entry.getKey());
+                elgjVar.i((ComponentName) entry.getKey());
             }
-            eitj g = eiteVar.g();
+            elgo g = elgjVar.g();
             this.L = H.nextLong();
-            this.A = new alpw(this.C, this, this, this.h, this.N);
-            final alzt alztVar = new alzt(getApplicationContext(), this.L, this.A, this.C, g, this.s);
-            alpw alpwVar = this.A;
+            this.A = new anrh(this.C, this, this, this.h, this.N);
+            final aobe aobeVar = new aobe(getApplicationContext(), this.L, this.A, this.C, g, this.s);
+            anrh anrhVar = this.A;
             long j2 = this.L;
             int i3 = this.f;
             int i4 = this.i;
-            alpwVar.k = j2;
-            alpwVar.m = i4;
-            alpwVar.l = i3;
-            alpwVar.h = closeable;
-            alpwVar.i = bundle;
-            alpwVar.j = runnable;
-            alpwVar.n = alztVar;
-            if (alztVar.d) {
-                alzt.a.h().ah(2985).x("Starting handoff interest checks");
-                alztVar.e.post(new Runnable() { // from class: alzc
+            anrhVar.k = j2;
+            anrhVar.m = i4;
+            anrhVar.l = i3;
+            anrhVar.h = closeable;
+            anrhVar.i = bundle;
+            anrhVar.j = runnable;
+            anrhVar.n = aobeVar;
+            if (aobeVar.d) {
+                aobe.a.h().ai(2989).x("Starting handoff interest checks");
+                aobeVar.e.post(new Runnable() { // from class: aoan
                     @Override // java.lang.Runnable
                     public final void run() {
-                        alzt alztVar2 = alzt.this;
-                        alzs alzsVar = alztVar2.i;
-                        alzsVar.a();
-                        alzsVar.b.addAll(alztVar2.f);
-                        alztVar2.f();
+                        aobe aobeVar2 = aobe.this;
+                        aobd aobdVar = aobeVar2.i;
+                        aobdVar.a();
+                        aobdVar.b.addAll(aobeVar2.f);
+                        aobeVar2.f();
                     }
                 });
             } else {
-                alzt.a.h().ah(2986).x("Skipping handoff interest checks - feature is not enabled");
-                alztVar.e.post(new Runnable() { // from class: alzb
+                aobe.a.h().ai(2990).x("Skipping handoff interest checks - feature is not enabled");
+                aobeVar.e.post(new Runnable() { // from class: aoam
                     @Override // java.lang.Runnable
                     public final void run() {
-                        alzt alztVar2 = alzt.this;
-                        alztVar2.j.c(null, alztVar2.d);
+                        aobe aobeVar2 = aobe.this;
+                        aobeVar2.j.c(null, aobeVar2.d);
                     }
                 });
             }
@@ -420,8 +421,8 @@ public class CarSetupServiceImpl extends Service implements alqu {
 
     protected final void a() {
         stopForeground(true);
-        a.h().ah(2640).z("stopped foreground service id %d", this.M);
-        if (flsh.a.a().i()) {
+        a.h().ai(2644).z("stopped foreground service id %d", this.M);
+        if (fojt.a.lK().i()) {
             stopSelf(this.M);
         } else {
             stopSelf();
@@ -430,12 +431,12 @@ public class CarSetupServiceImpl extends Service implements alqu {
 
     public final void b() {
         if (!l()) {
-            alga algaVar = this.e;
-            if (algaVar == null) {
-                a.j().ah(2642).x("Protocol manager is unexpectedly null, ignoring");
-                alcl.h(this, elwq.CAR_SETUP_SERVICE_NULL_PROTOCOL_MANAGER_DURING_FINISH_TRANSFER);
+            anhl anhlVar = this.e;
+            if (anhlVar == null) {
+                a.j().ai(2646).x("Protocol manager is unexpectedly null, ignoring");
+                andw.h(this, eoke.CAR_SETUP_SERVICE_NULL_PROTOCOL_MANAGER_DURING_FINISH_TRANSFER);
             } else {
-                algaVar.e.t.c();
+                anhlVar.e.t.c();
                 this.e = null;
             }
         }
@@ -443,67 +444,67 @@ public class CarSetupServiceImpl extends Service implements alqu {
     }
 
     public final void c(CarInfoInternal carInfoInternal, boolean z) {
-        alcl.i(this, alci.STARTED, 0);
+        andw.i(this, andt.STARTED, 0);
         this.k = carInfoInternal;
-        alsm alsmVar = new alsm(this, this.x, new alpd(this, z));
-        this.z = alsmVar;
-        alsn alsnVar = alsmVar.e;
-        int a2 = alsnVar.a();
+        antx antxVar = new antx(this, this.x, new anqo(this, z));
+        this.z = antxVar;
+        anty antyVar = antxVar.e;
+        int a2 = antyVar.a();
         if (a2 != 0) {
-            alsmVar.a(a2);
+            antxVar.a(a2);
         } else {
-            akrt akrtVar = alsmVar.d;
-            if (Integer.toString(Build.VERSION.SDK_INT).equals(akrtVar.b())) {
-                alsmVar.a(alsnVar.c() ? 1 : 0);
+            amte amteVar = antxVar.d;
+            if (Integer.toString(Build.VERSION.SDK_INT).equals(amteVar.b())) {
+                antxVar.a(antyVar.c() ? 1 : 0);
             } else {
-                akrtVar.b();
-                alsl alslVar = new alsl(alsmVar);
-                alsmVar.b.set(alslVar);
-                alslVar.start();
+                amteVar.b();
+                antw antwVar = new antw(antxVar);
+                antxVar.b.set(antwVar);
+                antwVar.start();
             }
         }
-        if (flwu.d()) {
-            alsp alspVar = this.f == 2 ? alsp.WIFI : alsp.USB;
-            if (flwu.c()) {
-                alss alssVar = new alss(this);
+        if (food.d()) {
+            anua anuaVar = this.f == 2 ? anua.WIFI : anua.USB;
+            if (food.c()) {
+                anud anudVar = new anud(this);
                 String str = this.k.f;
-                alssVar.c();
-                if (!BluetoothAdapter.checkBluetoothAddress(str) || alspVar == null) {
+                anudVar.c();
+                if (!BluetoothAdapter.checkBluetoothAddress(str) || anuaVar == null) {
                     return;
                 }
-                EnumSet a3 = alssVar.a(str);
-                if (a3.contains(alspVar)) {
+                EnumSet a3 = anudVar.a(str);
+                if (a3.contains(anuaVar)) {
                     return;
                 }
-                a3.add(alspVar);
-                alssVar.a.edit().putStringSet(alss.b(str), eiuu.F(eivv.j(a3, new eiho() { // from class: alsr
-                    @Override // defpackage.eiho
+                a3.add(anuaVar);
+                anudVar.a.edit().putStringSet(anud.b(str), elhz.F(elja.j(a3, new ekut() { // from class: anuc
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        return ((alsp) obj).name();
+                        return ((anua) obj).name();
                     }
                 }))).apply();
             }
         }
     }
 
-    @Override // defpackage.alqu
-    public final void d(elxk elxkVar, elxl elxlVar, String str) {
-        this.J.a(elxkVar, elxlVar, str);
+    @Override // defpackage.ansf
+    public final void d(eoky eokyVar, eokz eokzVar, String str) {
+        this.J.a(eokyVar, eokzVar, str);
     }
 
     @Override // com.google.android.chimera.Service
     public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         printWriter.println("Connection type: " + this.f);
         printWriter.println("Connected state: " + this.c.a());
-        aloy aloyVar = this.h;
-        if (aloyVar != null) {
-            printWriter.println("Analytics session id: " + aloyVar.a);
+        anqj anqjVar = this.h;
+        if (anqjVar != null) {
+            printWriter.println("Analytics session id: " + anqjVar.a);
         }
-        alxh alxhVar = this.d;
+        anys anysVar = this.d;
         int i = 0;
-        if (alxhVar != null) {
-            deqr deqrVar = alxhVar.a;
-            printWriter.println(a.Z(deqrVar != null ? deqrVar.l() : false, "Wake lock held: "));
+        if (anysVar != null) {
+            dhbu dhbuVar = anysVar.a;
+            printWriter.println(a.aa(dhbuVar != null ? dhbuVar.l() : false, "Wake lock held: "));
         } else {
             printWriter.println("Wake lock is null");
         }
@@ -512,26 +513,26 @@ public class CarSetupServiceImpl extends Service implements alqu {
         printWriter.println("suppressRestart: " + this.n);
         printWriter.println("readerThreadStuck: " + this.o);
         printWriter.println("carServiceSessionId: " + this.L);
-        alra alraVar = this.j;
-        if (alraVar != null) {
+        ansl anslVar = this.j;
+        if (anslVar != null) {
             printWriter.println("FrxState");
-            printWriter.println("setupOngoing: " + alraVar.m);
-            printWriter.println("carConnectionAlreadyAllowed: " + alraVar.n);
-            printWriter.println("shouldShowTutorial: " + alraVar.i);
-            printWriter.println("transferStarted: " + alraVar.o);
-            printWriter.println("carServiceStarted: " + alraVar.p);
+            printWriter.println("setupOngoing: " + anslVar.m);
+            printWriter.println("carConnectionAlreadyAllowed: " + anslVar.n);
+            printWriter.println("shouldShowTutorial: " + anslVar.i);
+            printWriter.println("transferStarted: " + anslVar.o);
+            printWriter.println("carServiceStarted: " + anslVar.p);
         }
         CarInfoInternal carInfoInternal = this.k;
         if (carInfoInternal != null) {
             printWriter.println("car info: ".concat(carInfoInternal.toString()));
         }
         if (this.y != null) {
-            alcu alcuVar = this.y;
+            anef anefVar = this.y;
             printWriter.print("CarGalMonitor{messageListeners=[");
-            synchronized (alcuVar.a) {
+            synchronized (anefVar.a) {
                 int i2 = 0;
                 while (true) {
-                    SparseArray sparseArray = alcuVar.b;
+                    SparseArray sparseArray = anefVar.b;
                     if (i2 >= sparseArray.size()) {
                         break;
                     }
@@ -543,7 +544,7 @@ public class CarSetupServiceImpl extends Service implements alqu {
                 }
                 printWriter.print("], frameListeners=[");
                 while (true) {
-                    SparseArray sparseArray2 = alcuVar.c;
+                    SparseArray sparseArray2 = anefVar.c;
                     if (i >= sparseArray2.size()) {
                         break;
                     }
@@ -556,20 +557,20 @@ public class CarSetupServiceImpl extends Service implements alqu {
             }
             printWriter.println("]}");
         }
-        akyf.a(this, printWriter);
+        amzq.a(this, printWriter);
         this.K.b(printWriter);
     }
 
-    public final void e(alcd alcdVar) {
-        alcl.e(this, "com.google.android.gms.car.CAR_SETUP_SERVICE", alcdVar);
+    public final void e(ando andoVar) {
+        andw.e(this, "com.google.android.gms.car.CAR_SETUP_SERVICE", andoVar);
     }
 
     public final void f(final Closeable closeable, final ParcelFileDescriptor parcelFileDescriptor, final boolean z) {
         if (parcelFileDescriptor == null) {
-            a.i().ah(2664).x("Null connection file descriptor. Not starting car connection.");
+            a.i().ai(2668).x("Null connection file descriptor. Not starting car connection.");
             k();
         } else {
-            Runnable runnable = new Runnable() { // from class: alpg
+            Runnable runnable = new Runnable() { // from class: anqr
                 @Override // java.lang.Runnable
                 public final void run() {
                     CarSetupServiceImpl carSetupServiceImpl = CarSetupServiceImpl.this;
@@ -579,7 +580,7 @@ public class CarSetupServiceImpl extends Service implements alqu {
                     boolean z2 = z;
                     ParcelFileDescriptor parcelFileDescriptor2 = parcelFileDescriptor;
                     Closeable closeable2 = closeable;
-                    eiig.q(((Boolean) carSetupServiceImpl.u.a()).booleanValue(), "Unable to handoff car connection and not configured to fall back to GMS Core.");
+                    ekvl.r(((Boolean) carSetupServiceImpl.u.lK()).booleanValue(), "Unable to handoff car connection and not configured to fall back to GMS Core.");
                     carSetupServiceImpl.h(closeable2, parcelFileDescriptor2, parcelFileDescriptor2, z2);
                 }
             };
@@ -590,87 +591,87 @@ public class CarSetupServiceImpl extends Service implements alqu {
     }
 
     public final void g() {
-        a.h().ah(2665).x("Start FRX setup");
-        if (flsr.f()) {
-            alcl.e(this, "com.google.android.gms.car.FRX", alci.STARTED);
+        a.h().ai(2669).x("Start FRX setup");
+        if (fokd.f()) {
+            andw.e(this, "com.google.android.gms.car.FRX", andt.STARTED);
         }
-        alra alraVar = this.j;
-        alra.a.h().ah(2746).x("Starting setup");
-        if (flvo.a.a().a()) {
-            ((UiModeManager) alraVar.b.getSystemService("uimode")).disableCarMode(0);
+        ansl anslVar = this.j;
+        ansl.a.h().ai(2750).x("Starting setup");
+        if (fomx.a.lK().a()) {
+            ((UiModeManager) anslVar.b.getSystemService("uimode")).disableCarMode(0);
         }
-        Context context = alraVar.b;
+        Context context = anslVar.b;
         ((KeyguardManager) context.getSystemService("keyguard")).isKeyguardLocked();
-        alraVar.m = true;
-        ((alic) alraVar.e).a.add(alraVar);
+        anslVar.m = true;
+        ((anjn) anslVar.e).a.add(anslVar);
         Intent intent = new Intent();
-        intent.setComponent(akyp.d);
+        intent.setComponent(anaa.d);
         intent.addFlags(268435456);
         intent.addFlags(32768);
         intent.addFlags(AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE);
-        intent.putExtra("frx_state", new BinderParcel(new alrh(new ObjectWrapper(alraVar))));
+        intent.putExtra("frx_state", new BinderParcel(new anss(new ObjectWrapper(anslVar))));
         context.startActivity(intent);
     }
 
     public final void h(Closeable closeable, ParcelFileDescriptor parcelFileDescriptor, ParcelFileDescriptor parcelFileDescriptor2, boolean z) {
         int i;
-        eiig.p(this.f != -1);
+        ekvl.q(this.f != -1);
         this.g = z;
-        alpn alpnVar = new alpn(this);
-        this.m = alpnVar;
+        anqy anqyVar = new anqy(this);
+        this.m = anqyVar;
         FileInputStream fileInputStream = new FileInputStream(parcelFileDescriptor.getFileDescriptor());
         FileOutputStream fileOutputStream = new FileOutputStream(parcelFileDescriptor2.getFileDescriptor());
-        alpx alpxVar = new alpx(closeable, b, this.f);
-        ejhh ejhhVar = alga.a;
-        alfu alfuVar = new alfu();
-        alfuVar.c = this;
-        alfuVar.k = new alfo(false);
-        alfuVar.l = "GmsCore_OpenSSL";
-        eiig.a(true);
-        alfuVar.m = R.raw.car_android_32;
-        eiig.a(true);
-        alfuVar.i = R.raw.car_android_64;
-        eiig.a(true);
-        alfuVar.h = R.raw.car_android_128;
-        eiig.a(true);
-        alfuVar.n = R.string.car_hu_label;
+        anri anriVar = new anri(closeable, b, this.f);
+        eluq eluqVar = anhl.a;
+        anhf anhfVar = new anhf();
+        anhfVar.c = this;
+        anhfVar.k = new angz(false);
+        anhfVar.l = "GmsCore_OpenSSL";
+        ekvl.a(true);
+        anhfVar.m = R.raw.car_android_32;
+        ekvl.a(true);
+        anhfVar.i = R.raw.car_android_64;
+        ekvl.a(true);
+        anhfVar.h = R.raw.car_android_128;
+        ekvl.a(true);
+        anhfVar.n = R.string.car_hu_label;
         int i2 = this.f;
         if (i2 == 1) {
-            alem a2 = alen.a();
-            a2.e(fluf.a.a().f());
-            a2.f(fluf.f());
+            anfx a2 = anfy.a();
+            a2.e(folo.a.lK().f());
+            a2.f(folo.f());
             a2.g(true);
             a2.c(1);
-            alfuVar.o = a2.a();
+            anhfVar.o = a2.a();
         } else if (i2 == 2) {
-            alem a3 = alen.a();
-            a3.e(fluf.a.a().g());
-            a3.f(fluf.f());
+            anfx a3 = anfy.a();
+            a3.e(folo.a.lK().g());
+            a3.f(folo.f());
             a3.g(true);
-            if (fluf.b() > 0) {
-                a3.d((int) fluf.b());
+            if (folo.b() > 0) {
+                a3.d((int) folo.b());
                 a3.c(2);
             }
-            if (fluf.c() > 0) {
-                a3.b((int) fluf.c());
+            if (folo.c() > 0) {
+                a3.b((int) folo.c());
             }
-            alfuVar.o = a3.a();
+            anhfVar.o = a3.a();
         }
-        alfuVar.e = alpnVar;
-        alfuVar.b = alpxVar;
-        alfuVar.g = fileInputStream;
-        alfuVar.j = fileOutputStream;
-        akrt akrtVar = this.x;
-        akzy a4 = akzz.a();
-        a4.d(!fluf.e() ? false : akrtVar.c.getBoolean("car_gal_snoop_log_video_ack", false));
-        a4.c(!fluf.e() ? false : akrtVar.c.getBoolean("car_gal_snoop_log_media_ack", false));
-        a4.b(!fluf.e() ? false : akrtVar.c.getBoolean("car_gal_snoop_log_guidance_ack", false));
-        akzz a5 = a4.a();
-        akzm a6 = akzn.a();
-        a6.c(fluf.e() ? akrtVar.c.getBoolean("car_enable_gal_snoop", false) : false);
-        if (fluf.e()) {
+        anhfVar.e = anqyVar;
+        anhfVar.b = anriVar;
+        anhfVar.g = fileInputStream;
+        anhfVar.j = fileOutputStream;
+        amte amteVar = this.x;
+        anbj a4 = anbk.a();
+        a4.d(!folo.e() ? false : amteVar.c.getBoolean("car_gal_snoop_log_video_ack", false));
+        a4.c(!folo.e() ? false : amteVar.c.getBoolean("car_gal_snoop_log_media_ack", false));
+        a4.b(!folo.e() ? false : amteVar.c.getBoolean("car_gal_snoop_log_guidance_ack", false));
+        anbk a5 = a4.a();
+        anax a6 = anay.a();
+        a6.c(folo.e() ? amteVar.c.getBoolean("car_enable_gal_snoop", false) : false);
+        if (folo.e()) {
             try {
-                i = Integer.parseInt(akrtVar.c.getString("car_gal_snoop_buffer_size", "100"));
+                i = Integer.parseInt(amteVar.c.getString("car_gal_snoop_buffer_size", "100"));
             } catch (NumberFormatException unused) {
                 i = 100;
             }
@@ -681,17 +682,17 @@ public class CarSetupServiceImpl extends Service implements alqu {
         }
         a6.b(r2);
         a6.a = a5;
-        alfuVar.f = a6.a();
-        this.e = new alga(alfuVar);
+        anhfVar.f = a6.a();
+        this.e = new anhl(anhfVar);
         if (this.y != null) {
             this.e.h(this.y);
         }
         if (this.w == null) {
             this.c.b(2);
-            e(alcd.SET_STATE_WAITING_FOR_PATCHER);
+            e(ando.SET_STATE_WAITING_FOR_PATCHER);
         } else {
             this.c.b(3);
-            e(alcd.SET_STATE_DISCOVERED);
+            e(ando.SET_STATE_DISCOVERED);
             this.e.i();
         }
     }
@@ -700,183 +701,183 @@ public class CarSetupServiceImpl extends Service implements alqu {
         if (!l()) {
             this.l = new ConnectionTransfer(this);
             Intent intent = new Intent("com.google.android.gms.car.TRANSFER");
-            intent.setComponent((ComponentName) akyp.a.a());
+            intent.setComponent((ComponentName) anaa.a.lK());
             intent.putExtra("connection", new BinderParcel(this.l));
             n(intent);
-            alcl.e(this, "com.google.android.gms.car.CONNECTION_TRANSFER", alci.STARTED);
+            andw.e(this, "com.google.android.gms.car.CONNECTION_TRANSFER", andt.STARTED);
             startService(intent);
             return;
         }
         this.A.q = z;
         this.A.r = z2;
-        alpw alpwVar = this.A;
-        a.h().ah(2633).x("Starting transfer for handoff.");
-        alpwVar.p = true;
-        alpwVar.n.a(alpwVar.k, alpwVar.a(!alpwVar.o));
-        Context context = alpwVar.e;
-        alpx alpxVar = new alpx(new Closeable() { // from class: alpu
+        anrh anrhVar = this.A;
+        a.h().ai(2637).x("Starting transfer for handoff.");
+        anrhVar.p = true;
+        anrhVar.n.a(anrhVar.k, anrhVar.a(!anrhVar.o));
+        Context context = anrhVar.e;
+        anri anriVar = new anri(new Closeable() { // from class: anrf
             @Override // java.io.Closeable, java.lang.AutoCloseable
             public final void close() {
             }
-        }, b, alpwVar.l);
-        if (!alpwVar.s) {
+        }, b, anrhVar.l);
+        if (!anrhVar.s) {
             throw new IllegalStateException("No component accepted the handoff.");
         }
-        Intent putExtra = new Intent("com.google.android.gms.car.HANDOFF").setComponent((ComponentName) akyp.a.a()).putExtra("car_handoff_session_id", alpwVar.k).putExtra("car_handoff_component", alpwVar.v.flattenToString()).putExtra("car_handoff_start_activities", true).putExtra("car_handoff_user_authorized_projection", !alpwVar.o).putExtra("car_handoff_connection_type", alpwVar.l).putExtra("connection_tag", alpwVar.m);
-        alxy alxyVar = alpwVar.g;
+        Intent putExtra = new Intent("com.google.android.gms.car.HANDOFF").setComponent((ComponentName) anaa.a.lK()).putExtra("car_handoff_session_id", anrhVar.k).putExtra("car_handoff_component", anrhVar.v.flattenToString()).putExtra("car_handoff_start_activities", true).putExtra("car_handoff_user_authorized_projection", !anrhVar.o).putExtra("car_handoff_connection_type", anrhVar.l).putExtra("connection_tag", anrhVar.m);
+        anzj anzjVar = anrhVar.g;
         n(putExtra);
-        if (alpwVar.i != null && Build.VERSION.SDK_INT >= 30) {
-            putExtra.putExtra("car_handoff_starting_bluetooth_device", alpwVar.i.getParcelable("WIFI_STARTING_BLUETOOTH_DEVICE"));
+        if (anrhVar.i != null && Build.VERSION.SDK_INT >= 30) {
+            putExtra.putExtra("car_handoff_starting_bluetooth_device", anrhVar.i.getParcelable("WIFI_STARTING_BLUETOOTH_DEVICE"));
         }
-        putExtra.putExtra("car_handoff_analytics_session_id", (int) alpwVar.k);
-        if (alpwVar.f()) {
+        putExtra.putExtra("car_handoff_analytics_session_id", (int) anrhVar.k);
+        if (anrhVar.f()) {
             putExtra.putExtra("car_handoff_is_car_audio_service_migration_enabled", true);
         }
-        putExtra.putExtra("connection_tear_down_helper", new BinderParcel(new alrt(alpxVar)));
-        CarInfoInternal carInfoInternal = alpwVar.d.k;
+        putExtra.putExtra("connection_tear_down_helper", new BinderParcel(new ante(anriVar)));
+        CarInfoInternal carInfoInternal = anrhVar.d.k;
         if (carInfoInternal != null) {
-            arxd.l(carInfoInternal, putExtra, "car_handoff_car_info");
+            atzs.l(carInfoInternal, putExtra, "car_handoff_car_info");
         }
-        putExtra.putExtra("car_handoff_is_first_connection", alpwVar.q);
+        putExtra.putExtra("car_handoff_is_first_connection", anrhVar.q);
         context.startService(putExtra);
-        if (alpwVar.o) {
+        if (anrhVar.o) {
             return;
         }
-        alpwVar.c.postDelayed(alpwVar.b, 5000L);
+        anrhVar.c.postDelayed(anrhVar.b, 5000L);
     }
 
-    @Override // defpackage.alqu
+    @Override // defpackage.ansf
     public final void j(final Socket socket) {
-        akue.e(new Runnable() { // from class: alpb
+        amvp.e(new Runnable() { // from class: anqm
             @Override // java.lang.Runnable
             public final void run() {
                 Socket socket2 = socket;
                 ParcelFileDescriptor fromSocket = ParcelFileDescriptor.fromSocket(socket2);
-                CarSetupServiceImpl.this.h(new alpo(socket2, fromSocket, fromSocket), fromSocket, fromSocket, true);
+                CarSetupServiceImpl.this.h(new anqz(socket2, fromSocket, fromSocket), fromSocket, fromSocket, true);
             }
         });
     }
 
     public final void k() {
-        a.h().ah(2670).x("tearDown");
+        a.h().ai(2674).x("tearDown");
         FirstActivityImpl.k = false;
         this.t = false;
-        alic alicVar = this.G;
-        synchronized (alicVar.b) {
-            if (alicVar.e) {
-                alia aliaVar = alicVar.f;
-                if (aliaVar != null) {
+        anjn anjnVar = this.G;
+        synchronized (anjnVar.b) {
+            if (anjnVar.e) {
+                anjl anjlVar = anjnVar.f;
+                if (anjlVar != null) {
                     try {
-                        aliaVar.b(alicVar);
+                        anjlVar.b(anjnVar);
                     } catch (RemoteException unused) {
                     }
                 }
-                alicVar.e = false;
+                anjnVar.e = false;
             }
         }
         this.K.d(this);
         if (this.c.a() == 0) {
-            e(alcd.STATE_ALREADY_NOT_CONNECTED_IN_TEARDOWN);
+            e(ando.STATE_ALREADY_NOT_CONNECTED_IN_TEARDOWN);
             return;
         }
         if (this.A != null) {
-            alpw alpwVar = this.A;
-            a.h().ah(2635).x("Tearing down car connection");
-            if (!alpwVar.p) {
-                alyy alyyVar = alpwVar.n;
-                alzt.a.h().ah(2987).x("Tearing down car connection");
-                final alzt alztVar = (alzt) alyyVar;
-                alztVar.d().execute(new Runnable() { // from class: alzi
+            anrh anrhVar = this.A;
+            a.h().ai(2639).x("Tearing down car connection");
+            if (!anrhVar.p) {
+                aoaj aoajVar = anrhVar.n;
+                aobe.a.h().ai(2991).x("Tearing down car connection");
+                final aobe aobeVar = (aobe) aoajVar;
+                aobeVar.d().execute(new Runnable() { // from class: aoat
                     @Override // java.lang.Runnable
                     public final void run() {
-                        alzt alztVar2 = alzt.this;
-                        alzs alzsVar = alztVar2.i;
-                        if (alzsVar.a) {
-                            alie alieVar = alzsVar.g;
-                            if (alieVar != null) {
+                        aobe aobeVar2 = aobe.this;
+                        aobd aobdVar = aobeVar2.i;
+                        if (aobdVar.a) {
+                            anjp anjpVar = aobdVar.g;
+                            if (anjpVar != null) {
                                 try {
-                                    alieVar.b(alztVar2.c);
+                                    anjpVar.b(aobeVar2.c);
                                 } catch (RemoteException e) {
-                                    alzt.a.h().s(e).ah(2977).B("Couldn't stop %s, but it could be fine.", alztVar2.i.e);
+                                    aobe.a.h().s(e).ai(2981).B("Couldn't stop %s, but it could be fine.", aobeVar2.i.e);
                                 }
                             }
-                            alztVar2.b.unbindService(alztVar2.h);
-                            alztVar2.i.a = false;
+                            aobeVar2.b.unbindService(aobeVar2.h);
+                            aobeVar2.i.a = false;
                         }
                     }
                 });
             }
         }
-        alga algaVar = this.e;
-        if (algaVar != null) {
-            algaVar.f();
+        anhl anhlVar = this.e;
+        if (anhlVar != null) {
+            anhlVar.f();
             this.e.e();
         }
-        alxh alxhVar = this.d;
-        if (alxhVar != null) {
-            alxhVar.a();
+        anys anysVar = this.d;
+        if (anysVar != null) {
+            anysVar.a();
         }
-        alxx alxxVar = this.I;
-        synchronized (alxxVar.d) {
-            TracingBroadcastReceiver tracingBroadcastReceiver = alxxVar.e;
+        anzi anziVar = this.I;
+        synchronized (anziVar.d) {
+            TracingBroadcastReceiver tracingBroadcastReceiver = anziVar.e;
             if (tracingBroadcastReceiver != null) {
                 try {
                     unregisterReceiver(tracingBroadcastReceiver);
                 } catch (IllegalArgumentException e) {
-                    alxx.a.j().s(e).ah(2929).x("Unable to unregister USB disconnect receiver.");
+                    anzi.a.j().s(e).ai(2933).x("Unable to unregister USB disconnect receiver.");
                 }
-                alxxVar.e = null;
+                anziVar.e = null;
             }
         }
-        alra alraVar = this.j;
-        if (alraVar != null) {
-            alsg alsgVar = alraVar.h;
-            if (alsgVar != null) {
-                alsgVar.a();
+        ansl anslVar = this.j;
+        if (anslVar != null) {
+            antr antrVar = anslVar.h;
+            if (antrVar != null) {
+                antrVar.a();
             }
-            alraVar.c(null, true);
+            anslVar.c(null, true);
             this.j = null;
         }
-        alsm alsmVar = this.z;
-        if (alsmVar != null) {
-            alsl alslVar = (alsl) alsmVar.b.getAndSet(null);
-            if (alslVar != null && alslVar.isAlive()) {
-                alslVar.interrupt();
+        antx antxVar = this.z;
+        if (antxVar != null) {
+            antw antwVar = (antw) antxVar.b.getAndSet(null);
+            if (antwVar != null && antwVar.isAlive()) {
+                antwVar.interrupt();
                 try {
-                    alslVar.join(1000L);
+                    antwVar.join(1000L);
                 } catch (InterruptedException unused2) {
                 }
             }
             this.z = null;
         }
         this.C.removeCallbacksAndMessages(null);
-        final alqt alqtVar = this.p;
-        if (alqtVar.h) {
-            alqtVar.h = false;
-            alqtVar.b.unregisterReceiver(alqtVar.l);
-            alqtVar.d();
-            alqtVar.f.execute(new Runnable() { // from class: alql
+        final anse anseVar = this.p;
+        if (anseVar.h) {
+            anseVar.h = false;
+            anseVar.b.unregisterReceiver(anseVar.l);
+            anseVar.d();
+            anseVar.f.execute(new Runnable() { // from class: anrw
                 @Override // java.lang.Runnable
                 public final void run() {
-                    alqt alqtVar2 = alqt.this;
-                    ScheduledFuture scheduledFuture = alqtVar2.g;
+                    anse anseVar2 = anse.this;
+                    ScheduledFuture scheduledFuture = anseVar2.g;
                     if (scheduledFuture != null) {
                         scheduledFuture.cancel(true);
                     }
-                    alqtVar2.e.removeCallbacksAndMessages(null);
-                    alqtVar2.f.shutdownNow();
+                    anseVar2.e.removeCallbacksAndMessages(null);
+                    anseVar2.f.shutdownNow();
                 }
             });
         }
-        aloy aloyVar = this.h;
-        if (aloyVar != null) {
-            aloyVar.a();
+        anqj anqjVar = this.h;
+        if (anqjVar != null) {
+            anqjVar.a();
         }
         a();
         this.c.b(0);
-        e(alcd.SET_STATE_NOT_CONNECTED);
+        e(ando.SET_STATE_NOT_CONNECTED);
         if (this.f == 1 && this.o) {
-            a.h().ah(2671).x("Reader thread stuck after cable removal. Will kill process.");
+            a.h().ai(2675).x("Reader thread stuck after cable removal. Will kill process.");
             Process.killProcess(Process.myPid());
         }
     }
@@ -886,17 +887,17 @@ public class CarSetupServiceImpl extends Service implements alqu {
     }
 
     public final boolean m() {
-        if (Build.VERSION.SDK_INT < 30 || ((Boolean) this.u.a()).booleanValue()) {
+        if (Build.VERSION.SDK_INT < 30 || ((Boolean) this.u.lK()).booleanValue()) {
             return false;
         }
-        a.i().ah(2663).x("Unable to handoff car connection (no components interested), tearing down");
+        a.i().ai(2667).x("Unable to handoff car connection (no components interested), tearing down");
         k();
         return true;
     }
 
     public final void o(boolean z, int i) {
-        alrf alrfVar;
-        alcl.i(this, alci.FAILED, i);
+        ansq ansqVar;
+        andw.i(this, andt.FAILED, i);
         if (l()) {
             CarInfo carInfo = this.k.a;
             int i2 = carInfo.e;
@@ -907,15 +908,15 @@ public class CarSetupServiceImpl extends Service implements alqu {
             this.A.d(p(z, z2));
         } else {
             ConnectionTransfer connectionTransfer = this.l;
-            if (connectionTransfer != null && (alrfVar = connectionTransfer.a) != null) {
+            if (connectionTransfer != null && (ansqVar = connectionTransfer.a) != null) {
                 try {
-                    alrfVar.a();
+                    ansqVar.a();
                 } catch (RemoteException unused) {
                 }
             }
-            alga algaVar = this.e;
-            if (algaVar != null) {
-                this.e.g(p(z, algaVar.k()));
+            anhl anhlVar = this.e;
+            if (anhlVar != null) {
+                this.e.g(p(z, anhlVar.k()));
             }
         }
         this.l = null;
@@ -926,18 +927,18 @@ public class CarSetupServiceImpl extends Service implements alqu {
     @Override // com.google.android.chimera.Service
     public final IBinder onBind(Intent intent) {
         if ("com.google.android.gms.carsetup.ACTION_BIND_CAR_SETUP_SERVICE".equals(intent.getAction())) {
-            return new alrc(this);
+            return new ansn(this);
         }
         return null;
     }
 
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
-        alxu alxuVar;
-        a.h().ah(2655).x("onCreate");
+        anzf anzfVar;
+        a.h().ai(2659).x("onCreate");
         super.onCreate();
-        e(alcd.CREATE);
-        if (Build.VERSION.SDK_INT >= 30 && flsh.a.a().d()) {
+        e(ando.CREATE);
+        if (Build.VERSION.SDK_INT >= 30 && fojt.a.lK().d()) {
             q();
         }
         if (Build.VERSION.SDK_INT >= 30) {
@@ -948,82 +949,83 @@ public class CarSetupServiceImpl extends Service implements alqu {
                 if (UsbConnectionHelper$TrackedParcelFileDescriptor.f == null) {
                     UsbConnectionHelper$TrackedParcelFileDescriptor.f = new HandlerThread("DisconnectMonitor");
                     UsbConnectionHelper$TrackedParcelFileDescriptor.f.start();
-                    UsbConnectionHelper$TrackedParcelFileDescriptor.g = new byhr(UsbConnectionHelper$TrackedParcelFileDescriptor.f.getLooper());
+                    UsbConnectionHelper$TrackedParcelFileDescriptor.g = new caqj(UsbConnectionHelper$TrackedParcelFileDescriptor.f.getLooper());
                 }
                 final Context applicationContext = getApplicationContext();
                 if (UsbConnectionHelper$TrackedParcelFileDescriptor.b.getAndIncrement() == 0) {
                     UsbConnectionHelper$TrackedParcelFileDescriptor.e = new UsbConnectionHelper$TrackedParcelFileDescriptor.DisconnectWatcher(this);
                     final UsbConnectionHelper$TrackedParcelFileDescriptor.DisconnectWatcher disconnectWatcher = UsbConnectionHelper$TrackedParcelFileDescriptor.e;
-                    eiig.y(disconnectWatcher, "Disconnect watcher should not be null");
-                    eiig.y(UsbConnectionHelper$TrackedParcelFileDescriptor.g, "Background handler should not be null");
-                    UsbConnectionHelper$TrackedParcelFileDescriptor.g.post(new Runnable() { // from class: alxt
+                    ekvl.z(disconnectWatcher, "Disconnect watcher should not be null");
+                    ekvl.z(UsbConnectionHelper$TrackedParcelFileDescriptor.g, "Background handler should not be null");
+                    UsbConnectionHelper$TrackedParcelFileDescriptor.g.post(new Runnable() { // from class: anze
                         @Override // java.lang.Runnable
                         public final void run() {
                             List list = UsbConnectionHelper$TrackedParcelFileDescriptor.a;
-                            iln.c(applicationContext, disconnectWatcher, new IntentFilter("android.hardware.usb.action.USB_STATE"), null, UsbConnectionHelper$TrackedParcelFileDescriptor.g, 2);
+                            ind.c(applicationContext, disconnectWatcher, new IntentFilter("android.hardware.usb.action.USB_STATE"), null, UsbConnectionHelper$TrackedParcelFileDescriptor.g, 2);
                         }
                     });
                 }
-                alxuVar = new alxu(new AtomicBoolean(false), applicationContext);
+                anzfVar = new anzf(new AtomicBoolean(false), applicationContext);
             }
-            this.O = alxuVar;
+            this.O = anzfVar;
         }
         HandlerThread handlerThread = new HandlerThread("CarSetupServiceImpl", 9);
         this.B = handlerThread;
         handlerThread.start();
-        this.D = new byhr(Looper.getMainLooper());
-        this.C = new byhr(this.B.getLooper());
-        this.x = akrt.a(this);
-        Boolean b2 = algc.a().b();
+        this.D = new caqj(Looper.getMainLooper());
+        this.C = new caqj(this.B.getLooper());
+        this.x = amte.a(this);
+        Boolean b2 = anhn.a().b();
         if (b2 == null) {
-            ExecutorService b3 = akyr.b(1);
-            b3.execute(new alqb(this));
+            ExecutorService b3 = anac.b(1);
+            b3.execute(new anrm(this));
             b3.shutdown();
         } else {
             this.w = b2;
         }
-        aloy aloyVar = new aloy(this);
-        this.h = aloyVar;
-        eiig.x(aloyVar);
-        this.p = new alqt(getApplicationContext(), new alsi(this.h));
-        this.K = alkr.a(this);
-        this.J = new alwj(this);
-        this.I = new alxx(this.J);
+        anqj anqjVar = new anqj(this);
+        this.h = anqjVar;
+        ekvl.y(anqjVar);
+        this.p = new anse(getApplicationContext(), new antt(this.h));
+        this.K = anmc.a(this);
+        this.J = new anxu(this);
+        this.I = new anzi(this.J);
         this.K.c(this, 100);
     }
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        a.h().ah(2656).x("onDestroy");
+        a.h().ai(2660).x("onDestroy");
         super.onDestroy();
         k();
-        e(alcd.DESTROY);
-        if (flsh.a.a().f()) {
-            this.C.postDelayed(new Runnable() { // from class: alpc
+        e(ando.DESTROY);
+        fojt fojtVar = fojt.a;
+        if (fojtVar.lK().f()) {
+            this.C.postDelayed(new Runnable() { // from class: anqn
                 @Override // java.lang.Runnable
                 public final void run() {
-                    CarSetupServiceImpl.a.h().ah(2653).x("quit handler thread");
+                    CarSetupServiceImpl.a.h().ai(2657).x("quit handler thread");
                     CarSetupServiceImpl carSetupServiceImpl = CarSetupServiceImpl.this;
                     carSetupServiceImpl.B.quitSafely();
                     carSetupServiceImpl.B = null;
                 }
-            }, flsh.a.a().a());
+            }, fojtVar.lK().a());
         } else {
             this.B.quitSafely();
             this.B = null;
         }
-        alxu alxuVar = this.O;
-        if (alxuVar != null) {
-            final Context context = alxuVar.b;
-            AtomicBoolean atomicBoolean = alxuVar.a;
+        anzf anzfVar = this.O;
+        if (anzfVar != null) {
+            final Context context = anzfVar.b;
+            AtomicBoolean atomicBoolean = anzfVar.a;
             synchronized (UsbConnectionHelper$TrackedParcelFileDescriptor.d) {
                 if (atomicBoolean.compareAndSet(false, true) && UsbConnectionHelper$TrackedParcelFileDescriptor.b.decrementAndGet() == 0) {
                     final UsbConnectionHelper$TrackedParcelFileDescriptor.DisconnectWatcher disconnectWatcher = UsbConnectionHelper$TrackedParcelFileDescriptor.e;
-                    eiig.y(disconnectWatcher, "Disconnect watcher should not be null");
+                    ekvl.z(disconnectWatcher, "Disconnect watcher should not be null");
                     UsbConnectionHelper$TrackedParcelFileDescriptor.e = null;
                     UsbConnectionHelper$TrackedParcelFileDescriptor.c.incrementAndGet();
-                    eiig.y(UsbConnectionHelper$TrackedParcelFileDescriptor.g, "Background handler should not be null");
-                    UsbConnectionHelper$TrackedParcelFileDescriptor.g.postDelayed(new Runnable() { // from class: alxv
+                    ekvl.z(UsbConnectionHelper$TrackedParcelFileDescriptor.g, "Background handler should not be null");
+                    UsbConnectionHelper$TrackedParcelFileDescriptor.g.postDelayed(new Runnable() { // from class: anzg
                         @Override // java.lang.Runnable
                         public final void run() {
                             Context context2 = context;
@@ -1049,28 +1051,28 @@ public class CarSetupServiceImpl extends Service implements alqu {
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
         CarSetupServiceImpl carSetupServiceImpl;
-        aktt aktrVar;
-        alxh c;
+        amve amvcVar;
+        anys c;
         this.M = i2;
         boolean z = intent != null && intent.getBooleanExtra("start_foreground_immediately", false);
         if (z) {
             q();
         }
-        ejhh ejhhVar = a;
-        ejhhVar.h().ah(2657).G("onStartCommand (id=%d): %s", i2, intent);
+        eluq eluqVar = a;
+        eluqVar.h().ai(2661).G("onStartCommand (id=%d): %s", i2, intent);
         if (intent == null) {
-            ejhhVar.h().ah(2662).x("Restarting with null intent");
+            eluqVar.h().ai(2666).x("Restarting with null intent");
             a();
             return 2;
         }
         SetupBinder setupBinder = (SetupBinder) intent.getParcelableExtra("EXTRA_LOCAL_BINDER");
         this.t = intent.getBooleanExtra("PreSetup.PRE_SETUP_WELCOME_SCREEN_SHOWN", false);
         if (!Boolean.FALSE.equals(this.w)) {
-            alqc alqcVar = this.c;
+            anrn anrnVar = this.c;
             ParcelFileDescriptor parcelFileDescriptor = null;
-            if (alqcVar.c()) {
-                ejhhVar.h().ah(2660).x("Already connected; ignoring connection request");
-                e(alcd.ALREADY_STARTED);
+            if (anrnVar.c()) {
+                eluqVar.h().ai(2664).x("Already connected; ignoring connection request");
+                e(ando.ALREADY_STARTED);
                 if (setupBinder == null) {
                     setupBinder = null;
                 } else if (setupBinder.b() && (c = setupBinder.c()) != null) {
@@ -1081,73 +1083,73 @@ public class CarSetupServiceImpl extends Service implements alqu {
                     setupBinder = null;
                 } else {
                     if (!setupBinder.b()) {
-                        ejhhVar.h().ah(2659).x("Restarted with invalid binder");
+                        eluqVar.h().ai(2663).x("Restarted with invalid binder");
                         a();
                         return 2;
                     }
                     this.d = setupBinder.c();
                     intent = setupBinder.a;
-                    eiig.x(intent);
+                    ekvl.y(intent);
                 }
-                alqcVar.b(1);
-                e(alcd.SET_STATE_CONNECTING);
+                anrnVar.b(1);
+                e(ando.SET_STATE_CONNECTING);
                 this.i = 0;
                 intent.setExtrasClassLoader(getClassLoader());
                 this.n = intent.getBooleanExtra("suppress_restart", false);
-                elwn elwnVar = elwn.a;
-                elwm elwmVar = (elwm) elwnVar.v();
-                if (!elwmVar.b.L()) {
-                    elwmVar.U();
+                eokb eokbVar = eokb.a;
+                eoka eokaVar = (eoka) eokbVar.v();
+                if (!eokaVar.b.L()) {
+                    eokaVar.U();
                 }
-                elwn elwnVar2 = (elwn) elwmVar.b;
-                elwnVar2.c |= 33554432;
-                elwnVar2.C = 1;
-                this.h.e((elwn) elwmVar.Q(), 63);
+                eokb eokbVar2 = (eokb) eokaVar.b;
+                eokbVar2.c |= 33554432;
+                eokbVar2.C = 1;
+                this.h.e((eokb) eokaVar.Q(), 63);
                 if ("android.hardware.usb.action.USB_ACCESSORY_ATTACHED".equals(intent.getAction()) || "com.google.android.gms.car.usb.USB_ACCESSORY_FORCE_START".equals(intent.getAction())) {
                     UsbAccessory usbAccessory = (UsbAccessory) intent.getParcelableExtra("accessory");
                     if (usbAccessory != null) {
                         this.f = 1;
                         carSetupServiceImpl = this;
-                        this.I.a(carSetupServiceImpl, usbAccessory, true, intent.getBooleanExtra("show_permission_errors", true), new alpa(this));
+                        this.I.a(carSetupServiceImpl, usbAccessory, true, intent.getBooleanExtra("show_permission_errors", true), new anql(this));
                         if (!z && carSetupServiceImpl.c.a() != 0) {
                             q();
                         }
                     }
                 } else if ("com.google.android.gms.car.WIFI_ACTION_BRIDGE".equals(intent.getAction())) {
                     if (intent.getStringExtra("PARAM_HOST_ADDRESS") == null || intent.getIntExtra("PARAM_SERVICE_PORT", -1) == -1) {
-                        ejhhVar.i().ah(2651).x("Failure to start wifi with invalid IP / Port");
+                        eluqVar.i().ai(2655).x("Failure to start wifi with invalid IP / Port");
                         k();
                     } else {
-                        aloy aloyVar = this.h;
-                        elwm elwmVar2 = (elwm) elwnVar.v();
-                        fecj v = elxz.a.v();
+                        anqj anqjVar = this.h;
+                        eoka eokaVar2 = (eoka) eokbVar.v();
+                        fgrc v = eoln.a.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        elxz elxzVar = (elxz) v.b;
-                        elxzVar.b |= 1;
-                        elxzVar.c = 2;
-                        if (!elwmVar2.b.L()) {
-                            elwmVar2.U();
+                        eoln eolnVar = (eoln) v.b;
+                        eolnVar.b |= 1;
+                        eolnVar.c = 2;
+                        if (!eokaVar2.b.L()) {
+                            eokaVar2.U();
                         }
-                        elwn elwnVar3 = (elwn) elwmVar2.b;
-                        elxz elxzVar2 = (elxz) v.Q();
-                        elxzVar2.getClass();
-                        elwnVar3.u = elxzVar2;
-                        elwnVar3.c |= 16;
-                        int i3 = eitj.d;
-                        aloyVar.f(elwmVar2, 46, ejcb.a);
+                        eokb eokbVar3 = (eokb) eokaVar2.b;
+                        eoln eolnVar2 = (eoln) v.Q();
+                        eolnVar2.getClass();
+                        eokbVar3.u = eolnVar2;
+                        eokbVar3.c |= 16;
+                        int i3 = elgo.d;
+                        anqjVar.f(eokaVar2, 46, elpg.a);
                         WifiInfo wifiInfo = (WifiInfo) intent.getParcelableExtra("wifi_info");
                         this.f = 2;
                         this.s = wifiInfo != null ? Math.max(wifiInfo.getFrequency(), 0) : 0;
                         final Bundle extras = intent.getExtras();
-                        ejhhVar.h().ah(2667).B("Start handoff wifi setup %s", extras);
-                        r(new Closeable() { // from class: alpi
+                        eluqVar.h().ai(2671).B("Start handoff wifi setup %s", extras);
+                        r(new Closeable() { // from class: anqt
                             @Override // java.io.Closeable, java.lang.AutoCloseable
                             public final void close() {
-                                ejhh ejhhVar2 = CarSetupServiceImpl.a;
+                                eluq eluqVar2 = CarSetupServiceImpl.a;
                             }
-                        }, extras, new Runnable() { // from class: alph
+                        }, extras, new Runnable() { // from class: anqs
                             @Override // java.lang.Runnable
                             public final void run() {
                                 final CarSetupServiceImpl carSetupServiceImpl2 = CarSetupServiceImpl.this;
@@ -1155,8 +1157,8 @@ public class CarSetupServiceImpl extends Service implements alqu {
                                     return;
                                 }
                                 final Bundle bundle = extras;
-                                eiig.q(((Boolean) carSetupServiceImpl2.u.a()).booleanValue(), "Unable to handoff car connection and not configured to fall back to GMS Core.");
-                                carSetupServiceImpl2.D.post(new Runnable() { // from class: aloz
+                                ekvl.r(((Boolean) carSetupServiceImpl2.u.lK()).booleanValue(), "Unable to handoff car connection and not configured to fall back to GMS Core.");
+                                carSetupServiceImpl2.D.post(new Runnable() { // from class: anqk
                                     @Override // java.lang.Runnable
                                     public final void run() {
                                         Bundle bundle2 = bundle;
@@ -1165,19 +1167,19 @@ public class CarSetupServiceImpl extends Service implements alqu {
                                         WifiInfo wifiInfo2 = (WifiInfo) bundle2.getParcelable("wifi_info");
                                         Network network = (Network) bundle2.getParcelable("PARAM_SERVICE_WIFI_NETWORK");
                                         boolean z2 = bundle2.getBoolean("WIFI_Q_ENABLED");
-                                        CarSetupServiceImpl.a.h().ah(2669).U("Start wifi setup %s:%s isUsingQNetworkStack=%b wifiInfo=(%s)", string, Integer.valueOf(i4), Boolean.valueOf(z2), wifiInfo2);
+                                        CarSetupServiceImpl.a.h().ai(2673).U("Start wifi setup %s:%s isUsingQNetworkStack=%b wifiInfo=(%s)", string, Integer.valueOf(i4), Boolean.valueOf(z2), wifiInfo2);
                                         CarSetupServiceImpl carSetupServiceImpl3 = CarSetupServiceImpl.this;
-                                        alqt alqtVar = carSetupServiceImpl3.p;
-                                        if (alqtVar.h) {
-                                            alqt.a.i().ah(2704).x("Already initialized");
+                                        anse anseVar = carSetupServiceImpl3.p;
+                                        if (anseVar.h) {
+                                            anse.a.i().ai(2708).x("Already initialized");
                                         } else {
-                                            alqtVar.d = carSetupServiceImpl3;
-                                            alqtVar.f = new asmb(1, akyr.a(1));
+                                            anseVar.d = carSetupServiceImpl3;
+                                            anseVar.f = new aupv(1, anac.a(1));
                                             IntentFilter intentFilter = new IntentFilter();
                                             intentFilter.addAction("android.net.wifi.STATE_CHANGE");
-                                            iln.b(alqtVar.b, alqtVar.l, intentFilter, 2);
-                                            alqtVar.j = 0;
-                                            alqtVar.h = true;
+                                            ind.b(anseVar.b, anseVar.l, intentFilter, 2);
+                                            anseVar.j = 0;
+                                            anseVar.h = true;
                                         }
                                         carSetupServiceImpl3.p.b(string, i4, wifiInfo2, network, z2);
                                     }
@@ -1191,24 +1193,24 @@ public class CarSetupServiceImpl extends Service implements alqu {
                     if (binderParcel != null) {
                         IBinder iBinder = binderParcel.a;
                         if (iBinder == null) {
-                            aktrVar = null;
+                            amvcVar = null;
                         } else {
                             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.car.IFdBinder");
-                            aktrVar = queryLocalInterface instanceof aktt ? (aktt) queryLocalInterface : new aktr(iBinder);
+                            amvcVar = queryLocalInterface instanceof amve ? (amve) queryLocalInterface : new amvc(iBinder);
                         }
                         try {
-                            parcelFileDescriptor = aktrVar.a();
+                            parcelFileDescriptor = amvcVar.a();
                         } catch (RemoteException unused) {
                         }
                     }
                     if (parcelFileDescriptor == null) {
-                        a.i().ah(2650).x("Failure starting");
+                        a.i().ai(2654).x("Failure starting");
                     } else {
                         this.i = intent.getIntExtra("connection_tag", -1);
                         f(parcelFileDescriptor, parcelFileDescriptor, intent.getBooleanExtra("start_activities", true));
                     }
                 } else {
-                    ejhhVar.i().ah(2649).B("Unknown intent %s", intent);
+                    eluqVar.i().ai(2653).B("Unknown intent %s", intent);
                     k();
                 }
                 carSetupServiceImpl = this;
@@ -1216,12 +1218,12 @@ public class CarSetupServiceImpl extends Service implements alqu {
                     q();
                 }
             }
-            if (setupBinder != null && (!fluc.a.a().c() || setupBinder.b())) {
+            if (setupBinder != null && (!foll.a.lK().c() || setupBinder.b())) {
                 setupBinder.a();
             }
             return 1;
         }
-        ejhhVar.h().ah(2661).x("Failed security update, aborting");
+        eluqVar.h().ai(2665).x("Failed security update, aborting");
         a();
         if (setupBinder != null) {
             setupBinder.a();

@@ -14,97 +14,97 @@ import com.google.android.gms.backup.settings.devicedata.intropreference.IntroPr
 import com.google.android.gms.backup.settings.devicedata.mainswitchpreference2.MainSwitchPreference2;
 import com.google.android.gms.backup.settings.devicedata.profilepreference.ProfilePreference;
 import com.google.android.gms.backup.settings.devicedata.storagemeter.StorageMeterPreference;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.ahsp;
-import defpackage.ahwa;
-import defpackage.ahwc;
-import defpackage.ajhp;
-import defpackage.ajnn;
-import defpackage.ajno;
-import defpackage.ajnp;
-import defpackage.ajnq;
-import defpackage.ajnr;
-import defpackage.ajns;
-import defpackage.ajob;
-import defpackage.ajod;
-import defpackage.ajog;
-import defpackage.ajqa;
-import defpackage.ajqs;
-import defpackage.fuuw;
-import defpackage.fuux;
-import defpackage.fuuy;
-import defpackage.fvaf;
-import defpackage.fvbi;
-import defpackage.fvbo;
-import defpackage.fvcc;
-import defpackage.jqx;
-import defpackage.klo;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.ajtf;
+import defpackage.ajwq;
+import defpackage.ajws;
+import defpackage.alih;
+import defpackage.alog;
+import defpackage.aloh;
+import defpackage.aloi;
+import defpackage.aloj;
+import defpackage.alok;
+import defpackage.alol;
+import defpackage.alou;
+import defpackage.alow;
+import defpackage.aloz;
+import defpackage.alqt;
+import defpackage.alrl;
+import defpackage.fxqu;
+import defpackage.fxqv;
+import defpackage.fxqw;
+import defpackage.fxwd;
+import defpackage.fxxg;
+import defpackage.fxxm;
+import defpackage.fxya;
+import defpackage.jxm;
+import defpackage.mdz;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class BackupSettingsDeviceDataFragment extends ajog {
-    public ahsp ag;
-    public ajhp ah;
-    public final abv ai;
-    private final fuuw aj;
-    private final fuuw ak;
-    private final fuuw al;
-    private final fuuw am;
-    private final fuuw an;
-    private final fuuw ao;
-    public ajod d;
+public final class BackupSettingsDeviceDataFragment extends aloz {
+    public ajtf ag;
+    public alih ah;
+    public final aca ai;
+    private final fxqu aj;
+    private final fxqu ak;
+    private final fxqu al;
+    private final fxqu am;
+    private final fxqu an;
+    private final fxqu ao;
+    public alow d;
 
     public BackupSettingsDeviceDataFragment() {
-        fuuw a = fuux.a(fuuy.c, new ajnp(new ajno(this)));
-        int i = fvcc.a;
-        this.aj = new jqx(new fvbi(ajob.class), new ajnq(a), new ajns(this, a), new ajnr(a));
-        this.ai = registerForActivityResult(new acl(), new abt() { // from class: ajnc
-            @Override // defpackage.abt
-            public final void jq(Object obj) {
+        fxqu a = fxqv.a(fxqw.c, new aloi(new aloh(this)));
+        int i = fxya.a;
+        this.aj = new jxm(new fxxg(alou.class), new aloj(a), new alol(this, a), new alok(a));
+        this.ai = registerForActivityResult(new acq(), new aby() { // from class: alnv
+            @Override // defpackage.aby
+            public final void jF(Object obj) {
                 ActivityResult activityResult = (ActivityResult) obj;
-                fvbo.f(activityResult, "result");
+                fxxm.f(activityResult, "result");
                 Intent intent = activityResult.b;
-                Account account = intent != null ? (Account) ilq.a(intent, "account", Account.class) : null;
-                ajob L = BackupSettingsDeviceDataFragment.this.L();
-                fvgt.b(L.d, null, null, new ajnv(account, L, null), 3);
+                Account account = intent != null ? (Account) ing.a(intent, "account", Account.class) : null;
+                alou L = BackupSettingsDeviceDataFragment.this.L();
+                fycr.b(L.d, null, null, new aloo(account, L, null), 3);
             }
         });
-        this.ak = ajqs.a(this, R.string.backup_settings_device_data_preference_key_intro);
-        this.al = ajqs.a(this, R.string.backup_settings_device_data_preference_key_toggle_main);
-        this.am = ajqs.a(this, R.string.backup_settings_device_data_preference_key_profile);
-        this.an = ajqs.a(this, R.string.backup_settings_device_data_preference_key_storage_meter);
-        this.ao = ajqs.a(this, R.string.backup_settings_device_data_preference_key_toggle_metered_network);
+        this.ak = alrl.a(this, R.string.backup_settings_device_data_preference_key_intro);
+        this.al = alrl.a(this, R.string.backup_settings_device_data_preference_key_toggle_main);
+        this.am = alrl.a(this, R.string.backup_settings_device_data_preference_key_profile);
+        this.an = alrl.a(this, R.string.backup_settings_device_data_preference_key_storage_meter);
+        this.ao = alrl.a(this, R.string.backup_settings_device_data_preference_key_toggle_metered_network);
     }
 
     private final IntroPreference T() {
         return (IntroPreference) this.ak.a();
     }
 
-    @Override // defpackage.kmb
+    @Override // defpackage.mem
     public final void C(Bundle bundle, String str) {
         A(R.xml.backup_settings_device_data_fragment);
         T().n(getString(R.string.backup_settings_devicedata_description));
         IntroPreference T = T();
         String string = getString(R.string.backup_settings_devicedata_data_protection_link_title);
-        fvbo.e(string, "getString(...)");
-        fvbo.f(string, "text");
+        fxxm.e(string, "getString(...)");
+        fxxm.f(string, "text");
         if (!TextUtils.equals(T.d, string)) {
             T.d = string;
             T.d();
         }
         IntroPreference T2 = T();
-        View.OnClickListener onClickListener = new View.OnClickListener() { // from class: ajmy
+        View.OnClickListener onClickListener = new View.OnClickListener() { // from class: alnq
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 ew childFragmentManager = BackupSettingsDeviceDataFragment.this.getChildFragmentManager();
-                fvbo.e(childFragmentManager, "getChildFragmentManager(...)");
-                fvbo.f(childFragmentManager, "fragmentManager");
-                new ajof().showNow(childFragmentManager, "how_data_is_protected_dialog");
+                fxxm.e(childFragmentManager, "getChildFragmentManager(...)");
+                fxxm.f(childFragmentManager, "fragmentManager");
+                new aloy().showNow(childFragmentManager, "how_data_is_protected_dialog");
             }
         };
-        if (!fvbo.n(T2.c, onClickListener)) {
+        if (!fxxm.n(T2.c, onClickListener)) {
             T2.c = onClickListener;
             T2.d();
         }
@@ -115,38 +115,46 @@ public final class BackupSettingsDeviceDataFragment extends ajog {
         T3.d();
         M().n("Summary not yet implemented");
         ProfilePreference N = N();
-        ajhp ajhpVar = this.ah;
-        if (ajhpVar == null) {
-            fvbo.j("accountParticleDiscInitializer");
-            ajhpVar = null;
+        alih alihVar = this.ah;
+        if (alihVar == null) {
+            fxxm.j("accountParticleDiscInitializer");
+            alihVar = null;
         }
-        fvbo.f(ajhpVar, "accountParticleDiscInitializer");
-        N.b = ajhpVar;
-        ahsp K = K();
-        K.b.put("turn_off_backup_dialog", new fvaf() { // from class: ajmz
-            @Override // defpackage.fvaf
+        fxxm.f(alihVar, "accountParticleDiscInitializer");
+        N.b = alihVar;
+        ajtf K = K();
+        K.b.put("turn_off_backup_dialog", new fxwd() { // from class: alnr
+            @Override // defpackage.fxwd
             public final Object a() {
-                ajob L = BackupSettingsDeviceDataFragment.this.L();
-                fvgt.b(L.d, null, null, new ajnz(L, null), 3);
-                return fuvs.a;
+                alou L = BackupSettingsDeviceDataFragment.this.L();
+                fycr.b(L.d, null, null, new alos(L, null), 3);
+                return fxrq.a;
             }
         });
-        ahsp K2 = K();
-        K2.c.put("turn_off_backup_dialog", new fvaf() { // from class: ajna
-            @Override // defpackage.fvaf
+        ajtf K2 = K();
+        K2.c.put("turn_off_backup_dialog", new fxwd() { // from class: alns
+            @Override // defpackage.fxwd
             public final Object a() {
                 BackupSettingsDeviceDataFragment backupSettingsDeviceDataFragment = BackupSettingsDeviceDataFragment.this;
-                backupSettingsDeviceDataFragment.Q((ahwc) backupSettingsDeviceDataFragment.L().e.b());
-                return fuvs.a;
+                backupSettingsDeviceDataFragment.Q((ajws) backupSettingsDeviceDataFragment.L().e.b());
+                return fxrq.a;
             }
         });
-        J().n = new klo() { // from class: ajnb
-            @Override // defpackage.klo
+        ajtf K3 = K();
+        K3.d.put("turn_off_backup_dialog", new fxwd() { // from class: alnt
+            @Override // defpackage.fxwd
+            public final Object a() {
+                BackupSettingsDeviceDataFragment backupSettingsDeviceDataFragment = BackupSettingsDeviceDataFragment.this;
+                backupSettingsDeviceDataFragment.Q((ajws) backupSettingsDeviceDataFragment.L().e.b());
+                return fxrq.a;
+            }
+        });
+        J().n = new mdz() { // from class: alnu
+            @Override // defpackage.mdz
             public final boolean a(Preference preference, Object obj) {
-                fvbo.f(preference, "<unused var>");
-                ajob L = BackupSettingsDeviceDataFragment.this.L();
-                fvbo.d(obj, "null cannot be cast to non-null type kotlin.Boolean");
-                fvgt.b(L.d, null, null, new ajnw(((Boolean) obj).booleanValue(), L, null), 3);
+                alou L = BackupSettingsDeviceDataFragment.this.L();
+                fxxm.d(obj, "null cannot be cast to non-null type kotlin.Boolean");
+                fycr.b(L.d, null, null, new alop(((Boolean) obj).booleanValue(), L, null), 3);
                 return true;
             }
         };
@@ -157,17 +165,17 @@ public final class BackupSettingsDeviceDataFragment extends ajog {
         return (SwitchPreferenceCompat) this.ao.a();
     }
 
-    public final ahsp K() {
-        ahsp ahspVar = this.ag;
-        if (ahspVar != null) {
-            return ahspVar;
+    public final ajtf K() {
+        ajtf ajtfVar = this.ag;
+        if (ajtfVar != null) {
+            return ajtfVar;
         }
-        fvbo.j("backupAlertDialogs");
+        fxxm.j("backupAlertDialogs");
         return null;
     }
 
-    public final ajob L() {
-        return (ajob) this.aj.a();
+    public final alou L() {
+        return (alou) this.aj.a();
     }
 
     public final MainSwitchPreference2 M() {
@@ -187,35 +195,33 @@ public final class BackupSettingsDeviceDataFragment extends ajog {
         O().T(z);
     }
 
-    public final void Q(ahwc ahwcVar) {
+    public final void Q(ajws ajwsVar) {
         M().n = null;
-        if (ahwcVar instanceof ahwa) {
-            if (((ajqa) ((ahwa) ahwcVar).a).a) {
+        if (ajwsVar instanceof ajwq) {
+            if (((alqt) ((ajwq) ajwsVar).a).a) {
                 M().k(true);
-                M().n = new klo() { // from class: ajnd
-                    @Override // defpackage.klo
+                M().n = new mdz() { // from class: alnw
+                    @Override // defpackage.mdz
                     public final boolean a(Preference preference, Object obj) {
-                        fvbo.f(preference, "<unused var>");
                         ew childFragmentManager = BackupSettingsDeviceDataFragment.this.getChildFragmentManager();
-                        fvbo.e(childFragmentManager, "getChildFragmentManager(...)");
-                        fvbo.f(childFragmentManager, "fragmentManager");
-                        new ajoj().showNow(childFragmentManager, "turn_off_backup_dialog");
+                        fxxm.e(childFragmentManager, "getChildFragmentManager(...)");
+                        fxxm.f(childFragmentManager, "fragmentManager");
+                        new alpc().showNow(childFragmentManager, "turn_off_backup_dialog");
                         return true;
                     }
                 };
             } else {
                 M().k(false);
-                M().n = new klo() { // from class: ajne
-                    @Override // defpackage.klo
+                M().n = new mdz() { // from class: alnx
+                    @Override // defpackage.mdz
                     public final boolean a(Preference preference, Object obj) {
-                        fvbo.f(preference, "<unused var>");
-                        ajob L = BackupSettingsDeviceDataFragment.this.L();
-                        ajho ajhoVar = (ajho) ((ahwc) L.g.b()).b();
-                        if (ajhoVar instanceof ajhn) {
-                            fvgt.b(L.d, null, null, new ajoa(L, ajhoVar, null), 3);
+                        alou L = BackupSettingsDeviceDataFragment.this.L();
+                        alig aligVar = (alig) ((ajws) L.g.b()).b();
+                        if (aligVar instanceof alif) {
+                            fycr.b(L.d, null, null, new alot(L, aligVar, null), 3);
                             return true;
                         }
-                        ((ejhf) ajob.a.i()).x("Tried to enable device data backup without an account.");
+                        ((eluo) alou.a.i()).x("Tried to enable device data backup without an account.");
                         return true;
                     }
                 };
@@ -223,10 +229,10 @@ public final class BackupSettingsDeviceDataFragment extends ajog {
         }
     }
 
-    @Override // defpackage.ngn, defpackage.kmb, defpackage.dg
+    @Override // defpackage.ozo, defpackage.mem, defpackage.dg
     public final void onViewCreated(View view, Bundle bundle) {
-        fvbo.f(view, "view");
+        fxxm.f(view, "view");
         super.onViewCreated(view, bundle);
-        ajqs.b(this, new ajnn(this, null));
+        alrl.b(this, new alog(this, null));
     }
 }

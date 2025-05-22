@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bofs;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bqni;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class InstantAppPreLaunchInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bofs();
+    public static final Parcelable.Creator CREATOR = new bqni();
     public final int a;
     public final String b;
     public final boolean c;
@@ -48,29 +48,29 @@ public class InstantAppPreLaunchInfo extends AbstractSafeParcelable {
     }
 
     public static InstantAppPreLaunchInfo a(Intent intent, boolean z, byte[] bArr) {
-        arwm.s(intent);
+        atzb.s(intent);
         return new InstantAppPreLaunchInfo(0, null, z, null, intent, null, null, false, bArr, null, 0, 0, null, null, null);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, i2);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.e(parcel, 4, this.c);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.t(parcel, 8, this.f, i, false);
-        arxc.t(parcel, 9, this.g, i, false);
-        arxc.e(parcel, 10, this.h);
-        arxc.i(parcel, 11, this.i, false);
-        arxc.v(parcel, 12, this.j, false);
-        arxc.o(parcel, 13, this.k);
-        arxc.v(parcel, 14, this.m, false);
-        arxc.g(parcel, 15, this.o, false);
-        arxc.o(parcel, 16, this.l);
-        arxc.i(parcel, 17, this.n, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, i2);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.e(parcel, 4, this.c);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.t(parcel, 8, this.f, i, false);
+        atzr.t(parcel, 9, this.g, i, false);
+        atzr.e(parcel, 10, this.h);
+        atzr.i(parcel, 11, this.i, false);
+        atzr.v(parcel, 12, this.j, false);
+        atzr.o(parcel, 13, this.k);
+        atzr.v(parcel, 14, this.m, false);
+        atzr.g(parcel, 15, this.o, false);
+        atzr.o(parcel, 16, this.l);
+        atzr.i(parcel, 17, this.n, false);
+        atzr.c(parcel, a);
     }
 }

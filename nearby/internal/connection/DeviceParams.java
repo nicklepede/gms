@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.presence.PresenceDevice;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cizp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.clhu;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class DeviceParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cizp();
+    public static final Parcelable.Creator CREATOR = new clhu();
     public int a;
     public PresenceDevice b;
 
@@ -26,7 +26,7 @@ public final class DeviceParams extends AbstractSafeParcelable {
         }
         if (obj instanceof DeviceParams) {
             DeviceParams deviceParams = (DeviceParams) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(deviceParams.a)) && arwb.b(this.b, deviceParams.b)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(deviceParams.a)) && atyq.b(this.b, deviceParams.b)) {
                 return true;
             }
         }
@@ -39,10 +39,10 @@ public final class DeviceParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 
     public DeviceParams(int i, PresenceDevice presenceDevice) {

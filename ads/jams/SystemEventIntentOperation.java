@@ -5,19 +5,19 @@ import android.content.SharedPreferences;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.ads.internal.util.client.h;
 import com.google.android.gms.chimera.modules.ads.AppContextProvider;
-import defpackage.anya;
-import defpackage.byjl;
-import defpackage.dmnn;
-import defpackage.fkak;
+import defpackage.apzs;
+import defpackage.casd;
+import defpackage.dozb;
+import defpackage.fmqp;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class SystemEventIntentOperation extends IntentOperation {
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-    public class OnBootIntentOperation extends anya {
-        @Override // defpackage.anya
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+    public class OnBootIntentOperation extends apzs {
+        @Override // defpackage.apzs
         protected final void b(Intent intent, int i) {
             int i2 = com.google.android.gms.ads.internal.util.c.a;
             h.d("[JAMS] Boot completed");
@@ -43,14 +43,13 @@ public final class SystemEventIntentOperation extends IntentOperation {
             int i2 = com.google.android.gms.ads.internal.util.c.a;
             h.d("[JAMS] Gservices updated");
             boolean g = eVar.g();
-            boolean k = dmnn.k(AppContextProvider.a().getContentResolver(), "ads:jams:is_enabled", fkak.f());
-            boolean l = fkak.a.a().l();
+            boolean k = dozb.k(AppContextProvider.a().getContentResolver(), "ads:jams:is_enabled", fmqp.f());
             SharedPreferences sharedPreferences = eVar.a;
             sharedPreferences.edit().putBoolean("negotiation_enabled", k).apply();
-            sharedPreferences.edit().putBoolean("non_default_account_enabled", l).apply();
+            sharedPreferences.edit().putBoolean("non_default_account_enabled", true).apply();
             if (g && !k) {
                 h.d("[JAMS] Negotiation disabled");
-                byjl.a(AppContextProvider.a()).d("jams-negotiation-task", "com.google.android.gms.ads.jams.NegotiationService");
+                casd.a(AppContextProvider.a()).d("jams-negotiation-task", "com.google.android.gms.ads.jams.NegotiationService");
             } else {
                 if (g || !k) {
                     return;

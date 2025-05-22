@@ -5,13 +5,13 @@ import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.djdh;
-import defpackage.djdi;
+import defpackage.dlpa;
+import defpackage.dlpb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class BuyFlowConfig extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new djdi();
+    public static final Parcelable.Creator CREATOR = new dlpb();
     public String a;
     public ApplicationParameters b;
     public String c;
@@ -23,12 +23,12 @@ public final class BuyFlowConfig extends AbstractSafeParcelable implements Refle
     public BuyFlowConfig() {
     }
 
-    public static djdh a() {
-        return new djdh(new BuyFlowConfig());
+    public static dlpa a() {
+        return new dlpa(new BuyFlowConfig());
     }
 
-    public static djdh b(BuyFlowConfig buyFlowConfig) {
-        djdh a = a();
+    public static dlpa b(BuyFlowConfig buyFlowConfig) {
+        dlpa a = a();
         a.b(buyFlowConfig.b);
         a.c(buyFlowConfig.c());
         a.d(buyFlowConfig.c);
@@ -46,7 +46,7 @@ public final class BuyFlowConfig extends AbstractSafeParcelable implements Refle
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        djdi.a(this, parcel, i);
+        dlpb.a(this, parcel, i);
     }
 
     public BuyFlowConfig(String str, ApplicationParameters applicationParameters, String str2, String str3, String str4, String str5, int i) {

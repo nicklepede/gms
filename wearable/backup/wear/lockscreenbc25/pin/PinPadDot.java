@@ -17,9 +17,9 @@ import android.view.animation.PathInterpolator;
 import android.widget.ImageView;
 import com.google.android.gms.R;
 import com.google.android.gms.wearable.backup.wear.lockscreenbc25.pin.PinPadDot;
-import defpackage.djxz;
+import defpackage.dmjs;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PinPadDot extends ImageView {
     private final int a;
@@ -40,7 +40,7 @@ public class PinPadDot extends ImageView {
 
     private final Animator a(int i, int i2, int i3, PathInterpolator pathInterpolator) {
         ValueAnimator ofArgb = ValueAnimator.ofArgb(i, i2);
-        ofArgb.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: djxt
+        ofArgb.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: dmjm
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 PinPadDot.this.setColorFilter(((Integer) valueAnimator.getAnimatedValue()).intValue(), PorterDuff.Mode.SRC_IN);
@@ -77,7 +77,7 @@ public class PinPadDot extends ImageView {
 
     public PinPadDot(Context context, AttributeSet attributeSet, int i, int i2) {
         super(context, attributeSet, i, i2);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, djxz.a, R.attr.wearableLockPinDotStyle, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, dmjs.a, R.attr.wearableLockPinDotStyle, 0);
         int color = obtainStyledAttributes.getColor(1, 0);
         this.a = color;
         int color2 = obtainStyledAttributes.getColor(2, color);
@@ -115,7 +115,7 @@ public class PinPadDot extends ImageView {
         AnimatorSet animatorSet3 = new AnimatorSet();
         ValueAnimator ofArgb = ValueAnimator.ofArgb(color, color3);
         ofArgb.setInterpolator(pathInterpolator);
-        ofArgb.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: djxs
+        ofArgb.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: dmjl
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 PinPadDot.this.setColorFilter(((Integer) valueAnimator.getAnimatedValue()).intValue(), PorterDuff.Mode.SRC_IN);
@@ -128,7 +128,7 @@ public class PinPadDot extends ImageView {
         AnimatorSet animatorSet4 = new AnimatorSet();
         ValueAnimator ofArgb2 = ValueAnimator.ofArgb(color3, color);
         ofArgb2.setInterpolator(pathInterpolator);
-        ofArgb2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: djxr
+        ofArgb2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: dmjk
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 PinPadDot.this.setColorFilter(((Integer) valueAnimator.getAnimatedValue()).intValue(), PorterDuff.Mode.SRC_IN);

@@ -4,23 +4,23 @@ import android.accounts.Account;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.people.service.wipeout.PeopleAndroidUriWipeoutTask;
-import defpackage.ctku;
-import defpackage.cveq;
-import defpackage.cvet;
-import defpackage.cveu;
-import defpackage.frhb;
-import defpackage.vks;
+import defpackage.cvua;
+import defpackage.cxnz;
+import defpackage.cxoc;
+import defpackage.cxod;
+import defpackage.fuaw;
+import defpackage.xgt;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class AccountChangeIntentOperation extends IntentOperation {
-    private final cvet a;
+    private final cxoc a;
     private final Runnable b;
 
     public AccountChangeIntentOperation() {
-        this(cveu.a, new Runnable() { // from class: ctla
+        this(cxod.a, new Runnable() { // from class: cvug
             @Override // java.lang.Runnable
             public final void run() {
                 PeopleAndroidUriWipeoutTask.d();
@@ -33,26 +33,26 @@ public class AccountChangeIntentOperation extends IntentOperation {
         intent.getAction();
         this.a.a();
         if (intent.hasCategory("com.google.android.gms.auth.category.ACCOUNT_ADDED")) {
-            List a = vks.a(intent);
-            if (frhb.c()) {
-                ctku.d(a);
+            List a = xgt.a(intent);
+            if (fuaw.c()) {
+                cvua.d(a);
             }
         }
         if (intent.hasCategory("com.google.android.gms.auth.category.ACCOUNT_REMOVED")) {
-            List c = vks.c(intent);
+            List c = xgt.c(intent);
             Iterator it = c.iterator();
             while (it.hasNext()) {
-                cveq.a(this).d(((Account) it.next()).name, null);
+                cxnz.a(this).d(((Account) it.next()).name, null);
             }
-            if (frhb.c()) {
-                ctku.b(c);
+            if (fuaw.c()) {
+                cvua.b(c);
             }
             this.b.run();
         }
     }
 
-    public AccountChangeIntentOperation(cvet cvetVar, Runnable runnable) {
-        this.a = cvetVar;
+    public AccountChangeIntentOperation(cxoc cxocVar, Runnable runnable) {
+        this.a = cxocVar;
         this.b = runnable;
     }
 }

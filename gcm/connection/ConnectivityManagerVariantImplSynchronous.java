@@ -6,28 +6,28 @@ import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkInfo;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.bibi;
-import defpackage.bicm;
-import defpackage.bicn;
-import defpackage.eigb;
-import defpackage.eiid;
+import defpackage.bkfx;
+import defpackage.bkhb;
+import defpackage.bkhc;
+import defpackage.ektg;
+import defpackage.ekvi;
 import j$.util.Objects;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collection;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class ConnectivityManagerVariantImplSynchronous extends TracingBroadcastReceiver implements bibi {
+public class ConnectivityManagerVariantImplSynchronous extends TracingBroadcastReceiver implements bkfx {
     public final Context a;
     final ConnectivityManager b;
-    final bicn c;
+    final bkhc c;
 
-    public ConnectivityManagerVariantImplSynchronous(Context context, ConnectivityManager connectivityManager, bicn bicnVar) {
+    public ConnectivityManagerVariantImplSynchronous(Context context, ConnectivityManager connectivityManager, bkhc bkhcVar) {
         super("ConnectivityManagerVariantImplM");
         this.a = context;
         this.b = connectivityManager;
-        this.c = bicnVar;
+        this.c = bkhcVar;
     }
 
     static int e(NetworkInfo networkInfo) {
@@ -61,35 +61,35 @@ public class ConnectivityManagerVariantImplSynchronous extends TracingBroadcastR
         return networkInfo != null && networkInfo.getType() == 0 && Objects.equals(networkInfo.getExtraInfo(), "ims");
     }
 
-    @Override // defpackage.bibi
-    public final eiid b() {
+    @Override // defpackage.bkfx
+    public final ekvi b() {
         NetworkInfo networkInfo;
         ConnectivityManager connectivityManager = this.b;
         Network activeNetwork = connectivityManager.getActiveNetwork();
-        return (activeNetwork == null || (networkInfo = connectivityManager.getNetworkInfo(activeNetwork)) == null || f(networkInfo)) ? eigb.a : eiid.j(bicm.a(activeNetwork, e(networkInfo), networkInfo.isConnected()));
+        return (activeNetwork == null || (networkInfo = connectivityManager.getNetworkInfo(activeNetwork)) == null || f(networkInfo)) ? ektg.a : ekvi.j(bkhb.a(activeNetwork, e(networkInfo), networkInfo.isConnected()));
     }
 
-    @Override // defpackage.bibi
+    @Override // defpackage.bkfx
     public final Collection c() {
         ArrayList arrayList = new ArrayList();
         ConnectivityManager connectivityManager = this.b;
         for (Network network : connectivityManager.getAllNetworks()) {
             NetworkInfo networkInfo = connectivityManager.getNetworkInfo(network);
             if (networkInfo != null && !f(networkInfo)) {
-                arrayList.add(bicm.a(network, e(networkInfo), networkInfo.isConnected()));
+                arrayList.add(bkhb.a(network, e(networkInfo), networkInfo.isConnected()));
             }
         }
         return arrayList;
     }
 
-    @Override // defpackage.bibi
+    @Override // defpackage.bkfx
     public final void d(PrintWriter printWriter) {
         printWriter.println("ConnectivityManagerVariantImplSynchronous: nothing to dump");
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
-        eiid eiidVar;
+    public final void jP(Context context, Intent intent) {
+        ekvi ekviVar;
         NetworkInfo networkInfo = (NetworkInfo) intent.getParcelableExtra("networkInfo");
         if (networkInfo == null || f(networkInfo)) {
             return;
@@ -101,21 +101,21 @@ public class ConnectivityManagerVariantImplSynchronous extends TracingBroadcastR
         int i = 0;
         while (true) {
             if (i >= length) {
-                eiidVar = eigb.a;
+                ekviVar = ektg.a;
                 break;
             }
             Network network = allNetworks[i];
             NetworkInfo networkInfo2 = connectivityManager.getNetworkInfo(network);
             if (!f(networkInfo2) && networkInfo2 != null && networkInfo2.getType() == type) {
-                eiidVar = eiid.j(bicm.a(network, e(networkInfo2), networkInfo2.isConnected()));
+                ekviVar = ekvi.j(bkhb.a(network, e(networkInfo2), networkInfo2.isConnected()));
                 break;
             }
             i++;
         }
-        if (eiidVar.h()) {
-            this.c.b((bicm) eiidVar.c(), false);
+        if (ekviVar.h()) {
+            this.c.b((bkhb) ekviVar.c(), false);
             return;
         }
-        this.c.b(new bicm(eigb.a, networkInfo.getType(), -1, true, false), true);
+        this.c.b(new bkhb(ektg.a, networkInfo.getType(), -1, true, false), true);
     }
 }

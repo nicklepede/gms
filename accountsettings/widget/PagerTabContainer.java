@@ -10,14 +10,14 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import com.google.android.gms.R;
-import defpackage.bqnj;
-import defpackage.ecaa;
-import defpackage.fjul;
-import defpackage.rsv;
-import defpackage.sii;
-import defpackage.taj;
+import defpackage.bsuy;
+import defpackage.eemp;
+import defpackage.fmkm;
+import defpackage.tme;
+import defpackage.ucp;
+import defpackage.uwi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class PagerTabContainer extends FrameLayout {
     public final PagerTabLayout a;
@@ -42,7 +42,7 @@ public class PagerTabContainer extends FrameLayout {
         float f2 = this.c;
         float f3 = this.d;
         float f4 = f2 + f3;
-        if (sii.s(getContext())) {
+        if (ucp.s(getContext())) {
             float f5 = measuredWidth;
             if (f >= f5 - f2) {
                 this.b.setAlpha(1.0f);
@@ -67,12 +67,12 @@ public class PagerTabContainer extends FrameLayout {
         } else {
             this.b.setAlpha((f4 - f) / f3);
         }
-        this.b.setVisibility(true != (sii.s(getContext()) ? pagerTabLayout.canScrollHorizontally(-1) : pagerTabLayout.canScrollHorizontally(1)) ? 8 : 0);
+        this.b.setVisibility(true != (ucp.s(getContext()) ? pagerTabLayout.canScrollHorizontally(-1) : pagerTabLayout.canScrollHorizontally(1)) ? 8 : 0);
     }
 
     public final void b(int i) {
         this.a.setBackgroundColor(i);
-        GradientDrawable gradientDrawable = new GradientDrawable(sii.s(getContext()) ? GradientDrawable.Orientation.RIGHT_LEFT : GradientDrawable.Orientation.LEFT_RIGHT, new int[]{bqnj.b(i, 0.0f), bqnj.b(i, 0.6f), bqnj.b(i, 0.9f)});
+        GradientDrawable gradientDrawable = new GradientDrawable(ucp.s(getContext()) ? GradientDrawable.Orientation.RIGHT_LEFT : GradientDrawable.Orientation.LEFT_RIGHT, new int[]{bsuy.b(i, 0.0f), bsuy.b(i, 0.6f), bsuy.b(i, 0.9f)});
         gradientDrawable.setGradientType(0);
         this.b.setImageDrawable(gradientDrawable);
     }
@@ -93,7 +93,7 @@ public class PagerTabContainer extends FrameLayout {
             }
             int paddingLeft = ((i3 - i) - getPaddingLeft()) - getLeftPaddingOffset();
             int measuredWidth = pagerTabLayout.getChildAt(0).getMeasuredWidth();
-            if (rsv.d) {
+            if (tme.a) {
                 ViewGroup.LayoutParams layoutParams = pagerTabLayout.getLayoutParams();
                 pagerTabLayout.p(0);
                 if (measuredWidth < paddingLeft) {
@@ -119,7 +119,7 @@ public class PagerTabContainer extends FrameLayout {
             }
             ImageView imageView = this.b;
             ViewGroup.LayoutParams layoutParams4 = imageView.getLayoutParams();
-            if (rsv.d) {
+            if (tme.a) {
                 layoutParams4.width = paddingLeft / pagerTabLayout.c();
             } else {
                 layoutParams4.width = paddingLeft / 6;
@@ -141,8 +141,8 @@ public class PagerTabContainer extends FrameLayout {
         LayoutInflater.from(context).inflate(R.layout.as_pager_tab_container, this);
         PagerTabLayout pagerTabLayout = (PagerTabLayout) findViewById(R.id.tab_layout);
         this.a = pagerTabLayout;
-        pagerTabLayout.b = new taj(this);
-        if (fjul.q()) {
+        pagerTabLayout.b = new uwi(this);
+        if (fmkm.p()) {
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(new int[]{R.attr.colorOnSurfaceVariant, R.attr.colorPrimary});
             int color = obtainStyledAttributes.getColor(0, 0);
             int color2 = obtainStyledAttributes.getColor(1, 0);
@@ -152,7 +152,7 @@ public class PagerTabContainer extends FrameLayout {
                 pagerTabLayout.n = colorStateList;
                 int size = pagerTabLayout.d.size();
                 for (int i2 = 0; i2 < size; i2++) {
-                    ((ecaa) pagerTabLayout.d.get(i2)).b();
+                    ((eemp) pagerTabLayout.d.get(i2)).b();
                 }
             }
         }

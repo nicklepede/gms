@@ -4,140 +4,140 @@ import android.accounts.Account;
 import android.content.Context;
 import android.util.Log;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.asng;
-import defpackage.bqna;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.byln;
-import defpackage.dikh;
-import defpackage.diuk;
-import defpackage.diul;
-import defpackage.diyk;
-import defpackage.diyo;
-import defpackage.djbu;
-import defpackage.edna;
-import defpackage.eitj;
-import defpackage.ejcb;
-import defpackage.fecj;
-import defpackage.fehj;
-import defpackage.fehm;
-import defpackage.fnck;
-import defpackage.fnde;
-import defpackage.fter;
+import defpackage.aura;
+import defpackage.bsup;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.cauf;
+import defpackage.dkvs;
+import defpackage.dlfv;
+import defpackage.dlfw;
+import defpackage.dlkd;
+import defpackage.dlkh;
+import defpackage.dlnn;
+import defpackage.efzw;
+import defpackage.elgo;
+import defpackage.elpg;
+import defpackage.fgrc;
+import defpackage.fgwc;
+import defpackage.fgwf;
+import defpackage.fpuj;
+import defpackage.fpvd;
+import defpackage.fwaf;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class WalletGcmTaskChimeraService extends GmsTaskChimeraService {
-    private edna a;
+    private efzw a;
 
     public static void d(Context context) {
-        asng.H(context, "com.google.android.gms.wallet.service.WalletGcmTaskService", true);
-        eitj eitjVar = diyo.a;
-        djbu djbuVar = new djbu(context);
-        byjl a = byjl.a(context);
-        if (!diyo.c()) {
-            eitj eitjVar2 = diyo.a;
-            int i = ((ejcb) eitjVar2).c;
+        aura.H(context, "com.google.android.gms.wallet.service.WalletGcmTaskService", true);
+        elgo elgoVar = dlkh.a;
+        dlnn dlnnVar = new dlnn(context);
+        casd a = casd.a(context);
+        if (!dlkh.c()) {
+            elgo elgoVar2 = dlkh.a;
+            int i = ((elpg) elgoVar2).c;
             for (int i2 = 0; i2 < i; i2++) {
-                a.d((String) eitjVar2.get(i2), "com.google.android.gms.wallet.service.WalletGcmTaskService");
+                a.d((String) elgoVar2.get(i2), "com.google.android.gms.wallet.service.WalletGcmTaskService");
             }
-            for (Account account : bqna.b(context).p("com.google")) {
-                fehm c = djbuVar.c(1, account);
+            for (Account account : bsup.b(context).p("com.google")) {
+                fgwf c = dlnnVar.c(1, account);
                 if (c != null) {
-                    fecj fecjVar = (fecj) c.iB(5, null);
-                    fecjVar.X(c);
-                    fehj fehjVar = (fehj) fecjVar;
-                    if (!fehjVar.b.L()) {
-                        fehjVar.U();
+                    fgrc fgrcVar = (fgrc) c.iQ(5, null);
+                    fgrcVar.X(c);
+                    fgwc fgwcVar = (fgwc) fgrcVar;
+                    if (!fgwcVar.b.L()) {
+                        fgwcVar.U();
                     }
-                    fehm fehmVar = (fehm) fehjVar.b;
-                    fehmVar.e = null;
-                    fehmVar.b &= -9;
-                    djbuVar.f(1, account, (fehm) fehjVar.Q());
+                    fgwf fgwfVar = (fgwf) fgwcVar.b;
+                    fgwfVar.e = null;
+                    fgwfVar.b &= -9;
+                    dlnnVar.f(1, account, (fgwf) fgwcVar.Q());
                 }
             }
-        } else if (fnck.m()) {
-            byko bykoVar = new byko();
-            bykoVar.j = "com.google.android.gms.wallet.service.WalletGcmTaskService";
-            bykoVar.q("INSTANTBUY_SYNC_GCM_TASK_STEP_1");
-            bykoVar.v(2);
-            bykoVar.l(true);
-            bykoVar.a = bykv.j;
-            bykoVar.e();
-            a.f(bykoVar.b());
+        } else if (fpuj.m()) {
+            catg catgVar = new catg();
+            catgVar.j = "com.google.android.gms.wallet.service.WalletGcmTaskService";
+            catgVar.q("INSTANTBUY_SYNC_GCM_TASK_STEP_1");
+            catgVar.v(2);
+            catgVar.l(true);
+            catgVar.a = catn.j;
+            catgVar.e();
+            a.f(catgVar.b());
         } else {
-            bykm bykmVar = new bykm();
-            bykmVar.j = "com.google.android.gms.wallet.service.WalletGcmTaskService";
-            bykmVar.y(0, 1);
-            bykmVar.x(1, 1);
-            bykmVar.q("INSTANTBUY_SYNC_GCM_TASK_STEP_1");
-            bykmVar.a = TimeUnit.HOURS.toSeconds(24L);
-            bykmVar.b = TimeUnit.HOURS.toSeconds(1L);
-            bykmVar.v(0);
-            if (fnde.k()) {
-                bykmVar.j(byki.EVERY_DAY);
+            cate cateVar = new cate();
+            cateVar.j = "com.google.android.gms.wallet.service.WalletGcmTaskService";
+            cateVar.y(0, 1);
+            cateVar.x(1, 1);
+            cateVar.q("INSTANTBUY_SYNC_GCM_TASK_STEP_1");
+            cateVar.a = TimeUnit.HOURS.toSeconds(24L);
+            cateVar.b = TimeUnit.HOURS.toSeconds(1L);
+            cateVar.v(0);
+            if (fpvd.k()) {
+                cateVar.j(cata.EVERY_DAY);
             } else {
-                bykmVar.a = TimeUnit.HOURS.toSeconds(24L);
-                bykmVar.b = TimeUnit.HOURS.toSeconds(1L);
+                cateVar.a = TimeUnit.HOURS.toSeconds(24L);
+                cateVar.b = TimeUnit.HOURS.toSeconds(1L);
             }
-            a.f(bykmVar.b());
+            a.f(cateVar.b());
         }
-        byjl a2 = byjl.a(context);
-        if (!fter.a.a().a()) {
+        casd a2 = casd.a(context);
+        if (!fwaf.a.lK().a()) {
             a2.d("WALLET_STORAGE_CLEAN_UP", "com.google.android.gms.wallet.service.WalletGcmTaskService");
             return;
         }
-        if (fnck.m()) {
-            byko bykoVar2 = new byko();
-            bykoVar2.j = "com.google.android.gms.wallet.service.WalletGcmTaskService";
-            bykoVar2.q("WALLET_STORAGE_CLEAN_UP");
-            bykoVar2.v(2);
-            bykoVar2.l(false);
-            bykoVar2.a = bykv.j;
-            bykoVar2.e();
-            a2.f(bykoVar2.b());
+        if (fpuj.m()) {
+            catg catgVar2 = new catg();
+            catgVar2.j = "com.google.android.gms.wallet.service.WalletGcmTaskService";
+            catgVar2.q("WALLET_STORAGE_CLEAN_UP");
+            catgVar2.v(2);
+            catgVar2.l(false);
+            catgVar2.a = catn.j;
+            catgVar2.e();
+            a2.f(catgVar2.b());
             return;
         }
-        bykm bykmVar2 = new bykm();
-        bykmVar2.j = "com.google.android.gms.wallet.service.WalletGcmTaskService";
-        bykmVar2.y(2, 2);
-        bykmVar2.x(1, 1);
-        bykmVar2.q("WALLET_STORAGE_CLEAN_UP");
-        bykmVar2.v(0);
-        if (fnde.k()) {
-            bykmVar2.j(byki.EVERY_DAY);
+        cate cateVar2 = new cate();
+        cateVar2.j = "com.google.android.gms.wallet.service.WalletGcmTaskService";
+        cateVar2.y(2, 2);
+        cateVar2.x(1, 1);
+        cateVar2.q("WALLET_STORAGE_CLEAN_UP");
+        cateVar2.v(0);
+        if (fpvd.k()) {
+            cateVar2.j(cata.EVERY_DAY);
         } else {
-            bykmVar2.a = TimeUnit.HOURS.toSeconds(24L);
-            bykmVar2.b = TimeUnit.HOURS.toSeconds(1L);
+            cateVar2.a = TimeUnit.HOURS.toSeconds(24L);
+            cateVar2.b = TimeUnit.HOURS.toSeconds(1L);
         }
-        a2.f(bykmVar2.b());
+        a2.f(cateVar2.b());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        diul diulVar;
+    public final int a(cauf caufVar) {
+        dlfw dlfwVar;
         try {
             if (Log.isLoggable("WalletGcmTaskService", 4)) {
-                Log.i("WalletGcmTaskService", String.format(Locale.US, "Running GcmTask w/ tag %s", bylnVar.a));
+                Log.i("WalletGcmTaskService", String.format(Locale.US, "Running GcmTask w/ tag %s", caufVar.a));
             }
-            String str = bylnVar.a;
+            String str = caufVar.a;
             if (str.equals("INSTANTBUY_REFRESH_INSTRUMENT_AVAILABILITY")) {
-                diulVar = new diyk(this, this.a);
-            } else if (diyo.a.contains(str)) {
-                diulVar = new diyo(this, this.a);
+                dlfwVar = new dlkd(this, this.a);
+            } else if (dlkh.a.contains(str)) {
+                dlfwVar = new dlkh(this, this.a);
             } else if (str.equals("WALLET_STORAGE_CLEAN_UP")) {
-                diulVar = new diuk(this);
+                dlfwVar = new dlfv(this);
             } else {
                 Log.w("WalletGcmTaskService", String.format(Locale.US, "No GcmTask corresponding to tag %s", str));
-                diulVar = null;
+                dlfwVar = null;
             }
-            if (diulVar != null) {
-                return diulVar.a(bylnVar);
+            if (dlfwVar != null) {
+                return dlfwVar.a(caufVar);
             }
         } catch (Throwable unused) {
         }
@@ -145,13 +145,13 @@ public class WalletGcmTaskChimeraService extends GmsTaskChimeraService {
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final void fR() {
+    public final void gf() {
         d(this);
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        this.a = dikh.a(getApplicationContext());
+        this.a = dkvs.a(getApplicationContext());
     }
 }

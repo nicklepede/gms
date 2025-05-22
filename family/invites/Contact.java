@@ -5,13 +5,13 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.people.model.AvatarReference;
-import defpackage.asqx;
-import defpackage.azqz;
+import defpackage.auur;
+import defpackage.bbuv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class Contact implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new azqz();
+    public static final Parcelable.Creator CREATOR = new bbuv();
     public String a;
     public String b;
     public String c;
@@ -49,7 +49,7 @@ public final class Contact implements ReflectedParcelable {
     }
 
     public final int hashCode() {
-        return asqx.c(this.a).hashCode() + asqx.c(this.c).hashCode() + asqx.c(this.b).hashCode();
+        return auur.c(this.a).hashCode() + auur.c(this.c).hashCode() + auur.c(this.b).hashCode();
     }
 
     public final String toString() {

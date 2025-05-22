@@ -5,25 +5,25 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmxc;
-import defpackage.cmxe;
-import defpackage.cmxr;
-import defpackage.cmxt;
-import defpackage.cnbg;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpfk;
+import defpackage.cpfm;
+import defpackage.cpfz;
+import defpackage.cpgb;
+import defpackage.cpjo;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class RegisterSendSurfaceParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cnbg();
-    public cmxt a;
-    public cmxe b;
+    public static final Parcelable.Creator CREATOR = new cpjo();
+    public cpgb a;
+    public cpfm b;
     public int c;
-    public arbp d;
+    public atee d;
     public String e;
     public int f;
 
@@ -37,7 +37,7 @@ public final class RegisterSendSurfaceParams extends AbstractSafeParcelable {
         }
         if (obj instanceof RegisterSendSurfaceParams) {
             RegisterSendSurfaceParams registerSendSurfaceParams = (RegisterSendSurfaceParams) obj;
-            if (arwb.b(this.a, registerSendSurfaceParams.a) && arwb.b(this.b, registerSendSurfaceParams.b) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(registerSendSurfaceParams.c)) && arwb.b(this.d, registerSendSurfaceParams.d) && arwb.b(this.e, registerSendSurfaceParams.e) && arwb.b(Integer.valueOf(this.f), Integer.valueOf(registerSendSurfaceParams.f))) {
+            if (atyq.b(this.a, registerSendSurfaceParams.a) && atyq.b(this.b, registerSendSurfaceParams.b) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(registerSendSurfaceParams.c)) && atyq.b(this.d, registerSendSurfaceParams.d) && atyq.b(this.e, registerSendSurfaceParams.e) && atyq.b(Integer.valueOf(this.f), Integer.valueOf(registerSendSurfaceParams.f))) {
                 return true;
             }
         }
@@ -50,40 +50,40 @@ public final class RegisterSendSurfaceParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.o(parcel, 3, this.c);
-        arxc.D(parcel, 4, this.d.asBinder());
-        arxc.v(parcel, 5, this.e, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.o(parcel, 3, this.c);
+        atzr.D(parcel, 4, this.d.asBinder());
+        atzr.v(parcel, 5, this.e, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 
     public RegisterSendSurfaceParams(IBinder iBinder, IBinder iBinder2, int i, IBinder iBinder3, String str, int i2) {
-        cmxt cmxrVar;
-        cmxe cmxcVar;
-        arbp arbpVar = null;
+        cpgb cpfzVar;
+        cpfm cpfkVar;
+        atee ateeVar = null;
         if (iBinder == null) {
-            cmxrVar = null;
+            cpfzVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.ITransferUpdateCallback");
-            cmxrVar = queryLocalInterface instanceof cmxt ? (cmxt) queryLocalInterface : new cmxr(iBinder);
+            cpfzVar = queryLocalInterface instanceof cpgb ? (cpgb) queryLocalInterface : new cpfz(iBinder);
         }
         if (iBinder2 == null) {
-            cmxcVar = null;
+            cpfkVar = null;
         } else {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IShareTargetDiscoveredCallback");
-            cmxcVar = queryLocalInterface2 instanceof cmxe ? (cmxe) queryLocalInterface2 : new cmxc(iBinder2);
+            cpfkVar = queryLocalInterface2 instanceof cpfm ? (cpfm) queryLocalInterface2 : new cpfk(iBinder2);
         }
         if (iBinder3 != null) {
             IInterface queryLocalInterface3 = iBinder3.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbpVar = queryLocalInterface3 instanceof arbp ? (arbp) queryLocalInterface3 : new arbn(iBinder3);
+            ateeVar = queryLocalInterface3 instanceof atee ? (atee) queryLocalInterface3 : new atec(iBinder3);
         }
-        this.a = cmxrVar;
-        this.b = cmxcVar;
+        this.a = cpfzVar;
+        this.b = cpfkVar;
         this.c = i;
-        this.d = arbpVar;
+        this.d = ateeVar;
         this.e = str;
         this.f = i2;
     }

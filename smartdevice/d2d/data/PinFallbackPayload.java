@@ -5,17 +5,17 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.ddga;
+import defpackage.atzr;
+import defpackage.dfrf;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class PinFallbackPayload extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new ddga();
+    public static final Parcelable.Creator CREATOR = new dfrf();
     private static final HashMap d;
     public final Set a;
     public boolean b;
@@ -34,7 +34,7 @@ public class PinFallbackPayload extends BinarySerializableFastSafeParcelableJson
         this.c = z2;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 1) {
@@ -46,18 +46,18 @@ public class PinFallbackPayload extends BinarySerializableFastSafeParcelableJson
         throw new IllegalStateException(a.j(i, "Unknown SafeParcelable id="));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final Map b() {
         return d;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
-    protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+    @Override // defpackage.aulm
+    protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
         int i = fastJsonResponse$Field.g;
         if (i == 1) {
             this.b = z;
@@ -73,14 +73,14 @@ public class PinFallbackPayload extends BinarySerializableFastSafeParcelableJson
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(1)) {
-            arxc.e(parcel, 1, this.b);
+            atzr.e(parcel, 1, this.b);
         }
         if (set.contains(2)) {
-            arxc.e(parcel, 2, this.c);
+            atzr.e(parcel, 2, this.c);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public PinFallbackPayload() {

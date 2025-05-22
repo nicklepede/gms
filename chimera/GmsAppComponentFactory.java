@@ -5,23 +5,23 @@ import android.app.AppComponentFactory;
 import android.app.Service;
 import android.content.Intent;
 import com.google.android.chimera.config.InvalidConfigException;
-import defpackage.eqwk;
-import defpackage.fmps;
-import defpackage.pov;
-import defpackage.pph;
-import defpackage.qdd;
-import defpackage.qdt;
+import defpackage.etlg;
+import defpackage.fphq;
+import defpackage.rhz;
+import defpackage.ril;
+import defpackage.rwh;
+import defpackage.rwx;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class GmsAppComponentFactory extends AppComponentFactory {
     static List a;
 
-    private static qdt a(String str) {
+    private static rwx a(String str) {
         try {
-            eqwk s = pph.f().j().s();
-            return s.W(qdd.c(s.X(), str));
+            etlg s = ril.f().j().s();
+            return s.W(rwh.c(s.X(), str));
         } catch (IndexOutOfBoundsException e) {
             throw new InvalidConfigException("IndexOutOfBounds trying to retrieve ".concat(String.valueOf(str)), e);
         }
@@ -29,7 +29,7 @@ public class GmsAppComponentFactory extends AppComponentFactory {
 
     private static final Object b(Class cls, String str) {
         Class b;
-        if (fmps.e() && (b = pov.e().b(str)) != null) {
+        if (fphq.e() && (b = rhz.e().b(str)) != null) {
             return b.asSubclass(cls).newInstance();
         }
         return null;
@@ -51,9 +51,9 @@ public class GmsAppComponentFactory extends AppComponentFactory {
     public final android.content.ContentProvider instantiateProvider(java.lang.ClassLoader r11, java.lang.String r12) {
         /*
             r10 = this;
-            boolean r0 = defpackage.arfc.b()
+            boolean r0 = defpackage.athr.b()
             if (r0 == 0) goto Lc1
-            arfc r0 = defpackage.arfc.a()
+            athr r0 = defpackage.athr.a()
             java.lang.String r1 = "GmsAppComponentFactory"
             r2 = 0
             if (r0 != 0) goto L1c
@@ -63,15 +63,15 @@ public class GmsAppComponentFactory extends AppComponentFactory {
             android.util.Log.e(r1, r0)
             goto Lbe
         L1c:
-            fmsr r3 = defpackage.fmsr.a
-            fmss r3 = r3.a()
+            fpkp r3 = defpackage.fpkp.a
+            fpkq r3 = r3.lK()
             boolean r3 = r3.b()
             r4 = 0
             if (r3 == 0) goto L79
             java.util.List r3 = com.google.android.gms.chimera.GmsAppComponentFactory.a
             if (r3 != 0) goto L72
             android.os.SystemClock.uptimeMillis()
-            eite r3 = new eite
+            elgj r3 = new elgj
             r3.<init>()
             android.content.pm.PackageManager r5 = r0.getPackageManager()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L63
             java.lang.String r0 = r0.getPackageName()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L63
@@ -100,7 +100,7 @@ public class GmsAppComponentFactory extends AppComponentFactory {
             java.lang.String r5 = "Cannot get package info"
             android.util.Log.e(r1, r5, r0)
         L69:
-            eitj r3 = r3.g()
+            elgo r3 = r3.g()
             com.google.android.gms.chimera.GmsAppComponentFactory.a = r3
             android.os.SystemClock.uptimeMillis()
         L72:
@@ -110,12 +110,12 @@ public class GmsAppComponentFactory extends AppComponentFactory {
         L79:
             r0 = r4
         L7a:
-            qdt r1 = a(r12)     // Catch: com.google.android.chimera.config.InvalidConfigException -> L7f
+            rwx r1 = a(r12)     // Catch: com.google.android.chimera.config.InvalidConfigException -> L7f
             goto L95
         L7f:
             r3 = 1
-            defpackage.aoah.h(r3)
-            qdt r1 = a(r12)     // Catch: com.google.android.chimera.config.InvalidConfigException -> L88
+            defpackage.aqbz.h(r3)
+            rwx r1 = a(r12)     // Catch: com.google.android.chimera.config.InvalidConfigException -> L88
             goto L95
         L88:
             r3 = move-exception
@@ -136,17 +136,17 @@ public class GmsAppComponentFactory extends AppComponentFactory {
             int r4 = r4 + 1
             goto L9f
         Laa:
-            anxx r0 = new anxx
+            apzp r0 = new apzp
             r0.<init>(r12, r2)
             r2 = r0
             goto Lbe
         Lb1:
-            anxx r2 = new anxx
+            apzp r2 = new apzp
             r2.<init>(r12)
             goto Lbe
         Lb7:
             if (r0 == 0) goto Lbe
-            anxx r2 = new anxx
+            apzp r2 = new apzp
             r2.<init>(r12)
         Lbe:
             if (r2 == 0) goto Lc1

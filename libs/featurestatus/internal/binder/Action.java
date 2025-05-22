@@ -5,19 +5,19 @@ import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bqqg;
-import defpackage.bqqh;
-import defpackage.bqqi;
-import defpackage.bqqj;
-import defpackage.bqtq;
-import defpackage.bzan;
-import defpackage.fvbo;
+import defpackage.atzr;
+import defpackage.bsxx;
+import defpackage.bsxy;
+import defpackage.bsxz;
+import defpackage.bsya;
+import defpackage.btbh;
+import defpackage.cbje;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class Action extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bqtq();
+    public static final Parcelable.Creator CREATOR = new btbh();
     public final Intent a;
     public final PendingIntent b;
     public final int c;
@@ -30,22 +30,22 @@ public final class Action extends AbstractSafeParcelable {
         this.d = num;
     }
 
-    public final bqqj a() {
+    public final bsya a() {
         Integer num;
-        bzan b = bzan.b(this.c);
+        cbje b = cbje.b(this.c);
         if (b == null) {
-            b = bzan.ACTION_UNKNOWN;
+            b = cbje.ACTION_UNKNOWN;
         }
         Intent intent = this.a;
         if (intent != null && (num = this.d) != null) {
-            return new bqqi(intent, b, num.intValue());
+            return new bsxz(intent, b, num.intValue());
         }
         if (intent != null) {
-            return new bqqh(intent, b);
+            return new bsxy(intent, b);
         }
         PendingIntent pendingIntent = this.b;
         if (pendingIntent != null) {
-            return new bqqg(pendingIntent, b);
+            return new bsxx(pendingIntent, b);
         }
         throw new IllegalStateException("Action must have an Intent.");
     }
@@ -58,7 +58,7 @@ public final class Action extends AbstractSafeParcelable {
             return false;
         }
         Action action = (Action) obj;
-        if (this.c != action.c || !fvbo.n(this.d, action.d)) {
+        if (this.c != action.c || !fxxm.n(this.d, action.d)) {
             return false;
         }
         Intent intent = this.a;
@@ -67,7 +67,7 @@ public final class Action extends AbstractSafeParcelable {
         }
         PendingIntent pendingIntent = this.b;
         if (pendingIntent != null) {
-            return fvbo.n(pendingIntent, action.b);
+            return fxxm.n(pendingIntent, action.b);
         }
         throw new IllegalStateException("Action must have an Intent.");
     }
@@ -92,13 +92,13 @@ public final class Action extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "dest");
+        fxxm.f(parcel, "dest");
         Intent intent = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, intent, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.F(parcel, 4, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, intent, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.F(parcel, 4, this.d);
+        atzr.c(parcel, a);
     }
 }

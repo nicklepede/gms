@@ -4,13 +4,13 @@ import android.os.Parcel;
 import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.MonthlyPattern;
 import com.google.android.gms.reminders.model.MonthlyPatternEntity;
-import defpackage.cxeb;
-import defpackage.cxen;
+import defpackage.cznx;
+import defpackage.czoj;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class MonthlyPatternRef extends cxeb implements MonthlyPattern {
+public class MonthlyPatternRef extends cznx implements MonthlyPattern {
     public MonthlyPatternRef(DataHolder dataHolder, int i, String str) {
         super(dataHolder, i, str);
     }
@@ -39,7 +39,7 @@ public class MonthlyPatternRef extends cxeb implements MonthlyPattern {
         return 0;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof MonthlyPattern)) {
             return false;
@@ -50,18 +50,18 @@ public class MonthlyPatternRef extends cxeb implements MonthlyPattern {
         return MonthlyPatternEntity.e(this, (MonthlyPattern) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return MonthlyPatternEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new MonthlyPatternEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxen.a(new MonthlyPatternEntity(this), parcel);
+        czoj.a(new MonthlyPatternEntity(this), parcel);
     }
 }

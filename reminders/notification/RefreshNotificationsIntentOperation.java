@@ -4,28 +4,28 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asit;
-import defpackage.asot;
-import defpackage.cxhd;
-import defpackage.cxhg;
-import defpackage.frrk;
+import defpackage.auid;
+import defpackage.aumn;
+import defpackage.ausn;
+import defpackage.czqz;
+import defpackage.czrc;
+import defpackage.fulw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RefreshNotificationsIntentOperation extends IntentOperation {
     public static final /* synthetic */ int b = 0;
-    asit a;
+    aumn a;
     private Context c;
 
     static {
-        asot.b("RemindersNS", asej.REMINDERS);
+        ausn.b("RemindersNS", auid.REMINDERS);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
         this.c = getApplicationContext();
-        this.a = new asit(getApplicationContext());
+        this.a = new aumn(getApplicationContext());
     }
 
     @Override // com.google.android.chimera.IntentOperation
@@ -50,10 +50,10 @@ public class RefreshNotificationsIntentOperation extends IntentOperation {
             c = 65535;
         }
         if (c == 0 || c == 1 || c == 2) {
-            cxhg.a();
+            czrc.a();
             long currentTimeMillis = System.currentTimeMillis();
-            long timeInMillis = "com.google.android.gms.reminders.notification.ACTION_REFRESH_TIME_REMINDERS".equals(intent.getAction()) ? cxhd.e(currentTimeMillis).getTimeInMillis() : currentTimeMillis - frrk.f();
-            long b2 = cxhd.b(currentTimeMillis);
+            long timeInMillis = "com.google.android.gms.reminders.notification.ACTION_REFRESH_TIME_REMINDERS".equals(intent.getAction()) ? czqz.e(currentTimeMillis).getTimeInMillis() : currentTimeMillis - fulw.f();
+            long b2 = czqz.b(currentTimeMillis);
             Context context = this.c;
             Intent startIntent = IntentOperation.getStartIntent(context, ScheduleTimeRemindersIntentOperation.class, "com.google.android.gms.reminders.notification.ACTION_TIME_REMINDERS_SCHEDULE_IN_RANGE");
             startIntent.putExtra("SCHEDULE_TIME_REMINDERS_EXTRA_RANGE_START", timeInMillis);

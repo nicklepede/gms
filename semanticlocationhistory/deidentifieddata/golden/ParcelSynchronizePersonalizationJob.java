@@ -5,24 +5,24 @@ import android.content.Context;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.deidentifieddata.golden.ParcelSynchronizePersonalizationJob;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.czix;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.czlp;
-import defpackage.dade;
-import defpackage.daky;
-import defpackage.dbhz;
-import defpackage.eiho;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.frve;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.dbsv;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dbvl;
+import defpackage.dcnm;
+import defpackage.dcvg;
+import defpackage.ddsf;
+import defpackage.ekut;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fupy;
 import j$.time.Duration;
 import j$.time.Instant;
 import j$.util.Collection;
@@ -40,48 +40,48 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ParcelSynchronizePersonalizationJob extends GmsTaskBoundService {
     public static final String a = "com.google.android.gms.semanticlocationhistory.deidentifieddata.golden.ParcelSynchronizePersonalizationJob";
-    public dbhz b;
-    public dade c;
-    private final daky d = new daky();
-    private czlk e;
-    private czje f;
+    public ddsf b;
+    public dcnm c;
+    private final dcvg d = new dcvg();
+    private dbvg e;
+    private dbtc f;
 
     static {
-        asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "ParcelSynchronizePersonalizationJob");
+        ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "ParcelSynchronizePersonalizationJob");
     }
 
-    private final czlk e() {
+    private final dbvg e() {
         if (this.e == null) {
-            this.e = new czlk(d());
+            this.e = new dbvg(d());
         }
         return this.e;
     }
 
-    public final czje d() {
+    public final dbtc d() {
         if (this.f == null) {
-            this.f = new czje();
+            this.f = new dbtc();
         }
         return this.f;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        if (!frve.d()) {
-            return ensj.i(0);
+    public final eqgl iB(cauf caufVar) {
+        if (!fupy.d()) {
+            return eqgc.i(0);
         }
         ArrayList arrayList = new ArrayList();
-        for (final Account account : czix.d(AppContextProvider.a())) {
+        for (final Account account : dbsv.d(AppContextProvider.a())) {
             if (e().R(account)) {
                 final Instant ofEpochMilli = Instant.ofEpochMilli(System.currentTimeMillis());
-                enre enreVar = enre.a;
+                eqex eqexVar = eqex.a;
                 String str = account.name;
                 d().k("DeidentifiedGoldenData", 18);
-                enss f = enps.f(ensi.h(czlp.h(e(), account, enreVar)), new eiho() { // from class: dajv
-                    @Override // defpackage.eiho
+                eqgl f = eqdl.f(eqgb.h(dbvl.h(e(), account, eqexVar)), new ekut() { // from class: dcud
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
                         String str2 = (String) obj;
                         if (str2.isEmpty()) {
@@ -92,34 +92,34 @@ public class ParcelSynchronizePersonalizationJob extends GmsTaskBoundService {
                         }
                         return str2;
                     }
-                }, enreVar);
-                final daky dakyVar = this.d;
-                Objects.requireNonNull(dakyVar);
-                arrayList.add(enps.f(enps.f(enps.g(f, new enqc() { // from class: dajw
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj) {
-                        return daky.this.a((String) obj);
+                }, eqexVar);
+                final dcvg dcvgVar = this.d;
+                Objects.requireNonNull(dcvgVar);
+                arrayList.add(eqdl.f(eqdl.f(eqdl.g(f, new eqdv() { // from class: dcue
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj) {
+                        return dcvg.this.a((String) obj);
                     }
-                }, enreVar), new eiho() { // from class: dajx
-                    @Override // defpackage.eiho
+                }, eqexVar), new ekut() { // from class: dcuf
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        eitj eitjVar = (eitj) obj;
+                        elgo elgoVar = (elgo) obj;
                         AppContextProvider.a();
                         ParcelSynchronizePersonalizationJob parcelSynchronizePersonalizationJob = ParcelSynchronizePersonalizationJob.this;
                         Context a2 = AppContextProvider.a();
                         if (parcelSynchronizePersonalizationJob.c == null) {
-                            parcelSynchronizePersonalizationJob.c = dadh.w(a2);
+                            parcelSynchronizePersonalizationJob.c = dcnp.w(a2);
                         }
                         Instant instant = ofEpochMilli;
                         Account account2 = account;
-                        Stream filter = Collection.EL.stream(parcelSynchronizePersonalizationJob.c.r(account2, fegx.d(fegu.b(instant.minus(Duration.ofDays(365L)))), fegx.d(fegu.b(instant)))).filter(new Predicate() { // from class: dald
+                        Stream filter = Collection.EL.stream(parcelSynchronizePersonalizationJob.c.r(account2, fgvq.d(fgvn.b(instant.minus(Duration.ofDays(365L)))), fgvq.d(fgvn.b(instant)))).filter(new Predicate() { // from class: dcvl
                             public final /* synthetic */ Predicate and(Predicate predicate) {
                                 return Predicate$CC.$default$and(this, predicate);
                             }
 
                             @Override // java.util.function.Predicate
                             /* renamed from: negate */
-                            public final /* synthetic */ Predicate mo463negate() {
+                            public final /* synthetic */ Predicate mo478negate() {
                                 return Predicate$CC.$default$negate(this);
                             }
 
@@ -130,289 +130,289 @@ public class ParcelSynchronizePersonalizationJob extends GmsTaskBoundService {
 
                             @Override // java.util.function.Predicate
                             public final boolean test(Object obj2) {
-                                eyul eyulVar = (eyul) obj2;
-                                eyui eyuiVar = eyulVar.g;
-                                if (eyuiVar == null) {
-                                    eyuiVar = eyui.a;
+                                fbiz fbizVar = (fbiz) obj2;
+                                fbiw fbiwVar = fbizVar.g;
+                                if (fbiwVar == null) {
+                                    fbiwVar = fbiw.a;
                                 }
-                                if (((eyuiVar.b == 1 ? (ffbb) eyuiVar.c : ffbb.a).b & 4) == 0) {
+                                if (((fbiwVar.b == 1 ? (fhpz) fbiwVar.c : fhpz.a).b & 4) == 0) {
                                     return false;
                                 }
-                                eyui eyuiVar2 = eyulVar.g;
-                                if (eyuiVar2 == null) {
-                                    eyuiVar2 = eyui.a;
+                                fbiw fbiwVar2 = fbizVar.g;
+                                if (fbiwVar2 == null) {
+                                    fbiwVar2 = fbiw.a;
                                 }
-                                ffas ffasVar = (eyuiVar2.b == 1 ? (ffbb) eyuiVar2.c : ffbb.a).e;
-                                if (ffasVar == null) {
-                                    ffasVar = ffas.a;
+                                fhpq fhpqVar = (fbiwVar2.b == 1 ? (fhpz) fbiwVar2.c : fhpz.a).e;
+                                if (fhpqVar == null) {
+                                    fhpqVar = fhpq.a;
                                 }
-                                return (ffasVar.b & 1) != 0;
+                                return (fhpqVar.b & 1) != 0;
                             }
                         });
-                        Function function = new Function() { // from class: dale
+                        Function function = new Function() { // from class: dcvm
                             @Override // java.util.function.Function
                             /* renamed from: andThen */
-                            public final /* synthetic */ Function mo464andThen(Function function2) {
+                            public final /* synthetic */ Function mo479andThen(Function function2) {
                                 return Function$CC.$default$andThen(this, function2);
                             }
 
                             @Override // java.util.function.Function
                             public final Object apply(Object obj2) {
-                                eyul eyulVar = (eyul) obj2;
-                                eyui eyuiVar = eyulVar.g;
-                                if (eyuiVar == null) {
-                                    eyuiVar = eyui.a;
+                                fbiz fbizVar = (fbiz) obj2;
+                                fbiw fbiwVar = fbizVar.g;
+                                if (fbiwVar == null) {
+                                    fbiwVar = fbiw.a;
                                 }
-                                ffas ffasVar = (eyuiVar.b == 1 ? (ffbb) eyuiVar.c : ffbb.a).e;
-                                if (ffasVar == null) {
-                                    ffasVar = ffas.a;
+                                fhpq fhpqVar = (fbiwVar.b == 1 ? (fhpz) fbiwVar.c : fhpz.a).e;
+                                if (fhpqVar == null) {
+                                    fhpqVar = fhpq.a;
                                 }
-                                ffal ffalVar = ffasVar.c;
-                                if (ffalVar == null) {
-                                    ffalVar = ffal.a;
+                                fhpj fhpjVar = fhpqVar.c;
+                                if (fhpjVar == null) {
+                                    fhpjVar = fhpj.a;
                                 }
-                                Long valueOf = Long.valueOf(ffalVar.c);
-                                eyui eyuiVar2 = eyulVar.g;
-                                if (eyuiVar2 == null) {
-                                    eyuiVar2 = eyui.a;
+                                Long valueOf = Long.valueOf(fhpjVar.c);
+                                fbiw fbiwVar2 = fbizVar.g;
+                                if (fbiwVar2 == null) {
+                                    fbiwVar2 = fbiw.a;
                                 }
-                                ffas ffasVar2 = (eyuiVar2.b == 1 ? (ffbb) eyuiVar2.c : ffbb.a).e;
-                                if (ffasVar2 == null) {
-                                    ffasVar2 = ffas.a;
+                                fhpq fhpqVar2 = (fbiwVar2.b == 1 ? (fhpz) fbiwVar2.c : fhpz.a).e;
+                                if (fhpqVar2 == null) {
+                                    fhpqVar2 = fhpq.a;
                                 }
-                                ffal ffalVar2 = ffasVar2.c;
-                                if (ffalVar2 == null) {
-                                    ffalVar2 = ffal.a;
+                                fhpj fhpjVar2 = fhpqVar2.c;
+                                if (fhpjVar2 == null) {
+                                    fhpjVar2 = fhpj.a;
                                 }
-                                return new eiie(valueOf, Long.valueOf(ffalVar2.d));
+                                return new ekvj(valueOf, Long.valueOf(fhpjVar2.d));
                             }
 
                             public final /* synthetic */ Function compose(Function function2) {
                                 return Function$CC.$default$compose(this, function2);
                             }
                         };
-                        int i = eitj.d;
-                        Collector collector = eipl.a;
-                        eitj eitjVar2 = (eitj) Collection.EL.stream((eitj) Collection.EL.stream(((Map) filter.collect(Collectors.groupingBy(function, collector))).entrySet()).map(new Function() { // from class: dalf
+                        int i = elgo.d;
+                        Collector collector = elcq.a;
+                        elgo elgoVar2 = (elgo) Collection.EL.stream((elgo) Collection.EL.stream(((Map) filter.collect(Collectors.groupingBy(function, collector))).entrySet()).map(new Function() { // from class: dcvn
                             @Override // java.util.function.Function
                             /* renamed from: andThen */
-                            public final /* synthetic */ Function mo464andThen(Function function2) {
+                            public final /* synthetic */ Function mo479andThen(Function function2) {
                                 return Function$CC.$default$andThen(this, function2);
                             }
 
                             @Override // java.util.function.Function
                             public final Object apply(Object obj2) {
                                 Map.Entry entry = (Map.Entry) obj2;
-                                long longValue = ((Long) ((eiie) entry.getKey()).a).longValue();
-                                long longValue2 = ((Long) ((eiie) entry.getKey()).b).longValue();
+                                long longValue = ((Long) ((ekvj) entry.getKey()).a).longValue();
+                                long longValue2 = ((Long) ((ekvj) entry.getKey()).b).longValue();
                                 List list = (List) entry.getValue();
-                                fecj v = etop.a.v();
+                                fgrc v = eweh.a.v();
                                 if (!v.b.L()) {
                                     v.U();
                                 }
-                                fecp fecpVar = v.b;
-                                etop etopVar = (etop) fecpVar;
-                                etopVar.b |= 2;
-                                etopVar.d = longValue;
-                                if (!fecpVar.L()) {
+                                fgri fgriVar = v.b;
+                                eweh ewehVar = (eweh) fgriVar;
+                                ewehVar.b |= 2;
+                                ewehVar.d = longValue;
+                                if (!fgriVar.L()) {
                                     v.U();
                                 }
-                                fecp fecpVar2 = v.b;
-                                etop etopVar2 = (etop) fecpVar2;
-                                etopVar2.b |= 4;
-                                etopVar2.e = longValue2;
-                                if (!fecpVar2.L()) {
+                                fgri fgriVar2 = v.b;
+                                eweh ewehVar2 = (eweh) fgriVar2;
+                                ewehVar2.b |= 4;
+                                ewehVar2.e = longValue2;
+                                if (!fgriVar2.L()) {
                                     v.U();
                                 }
-                                etop etopVar3 = (etop) v.b;
-                                etopVar3.c = 196;
-                                etopVar3.b |= 1;
-                                eyui eyuiVar = ((eyul) list.get(0)).g;
-                                if (eyuiVar == null) {
-                                    eyuiVar = eyui.a;
+                                eweh ewehVar3 = (eweh) v.b;
+                                ewehVar3.c = 196;
+                                ewehVar3.b |= 1;
+                                fbiw fbiwVar = ((fbiz) list.get(0)).g;
+                                if (fbiwVar == null) {
+                                    fbiwVar = fbiw.a;
                                 }
-                                ffas ffasVar = (eyuiVar.b == 1 ? (ffbb) eyuiVar.c : ffbb.a).e;
-                                if (ffasVar == null) {
-                                    ffasVar = ffas.a;
+                                fhpq fhpqVar = (fbiwVar.b == 1 ? (fhpz) fbiwVar.c : fhpz.a).e;
+                                if (fhpqVar == null) {
+                                    fhpqVar = fhpq.a;
                                 }
-                                ffat ffatVar = ffasVar.g;
-                                if (ffatVar == null) {
-                                    ffatVar = ffat.a;
+                                fhpr fhprVar = fhpqVar.g;
+                                if (fhprVar == null) {
+                                    fhprVar = fhpr.a;
                                 }
-                                int i2 = ffatVar.c;
+                                int i2 = fhprVar.c;
                                 if (!v.b.L()) {
                                     v.U();
                                 }
-                                etop etopVar4 = (etop) v.b;
-                                etopVar4.b |= 8;
-                                etopVar4.f = i2;
-                                eyui eyuiVar2 = ((eyul) list.get(0)).g;
-                                if (eyuiVar2 == null) {
-                                    eyuiVar2 = eyui.a;
+                                eweh ewehVar4 = (eweh) v.b;
+                                ewehVar4.b |= 8;
+                                ewehVar4.f = i2;
+                                fbiw fbiwVar2 = ((fbiz) list.get(0)).g;
+                                if (fbiwVar2 == null) {
+                                    fbiwVar2 = fbiw.a;
                                 }
-                                ffas ffasVar2 = (eyuiVar2.b == 1 ? (ffbb) eyuiVar2.c : ffbb.a).e;
-                                if (ffasVar2 == null) {
-                                    ffasVar2 = ffas.a;
+                                fhpq fhpqVar2 = (fbiwVar2.b == 1 ? (fhpz) fbiwVar2.c : fhpz.a).e;
+                                if (fhpqVar2 == null) {
+                                    fhpqVar2 = fhpq.a;
                                 }
-                                ffat ffatVar2 = ffasVar2.g;
-                                if (ffatVar2 == null) {
-                                    ffatVar2 = ffat.a;
+                                fhpr fhprVar2 = fhpqVar2.g;
+                                if (fhprVar2 == null) {
+                                    fhprVar2 = fhpr.a;
                                 }
-                                int i3 = ffatVar2.d;
+                                int i3 = fhprVar2.d;
                                 if (!v.b.L()) {
                                     v.U();
                                 }
-                                etop etopVar5 = (etop) v.b;
-                                etopVar5.b |= 16;
-                                etopVar5.g = i3;
+                                eweh ewehVar5 = (eweh) v.b;
+                                ewehVar5.b |= 16;
+                                ewehVar5.g = i3;
                                 int size = list.size();
                                 if (!v.b.L()) {
                                     v.U();
                                 }
-                                etop etopVar6 = (etop) v.b;
-                                etopVar6.b |= 64;
-                                etopVar6.h = size;
-                                Stream map = Collection.EL.stream(list).map(new Function() { // from class: dalg
+                                eweh ewehVar6 = (eweh) v.b;
+                                ewehVar6.b |= 64;
+                                ewehVar6.h = size;
+                                Stream map = Collection.EL.stream(list).map(new Function() { // from class: dcvo
                                     @Override // java.util.function.Function
                                     /* renamed from: andThen */
-                                    public final /* synthetic */ Function mo464andThen(Function function2) {
+                                    public final /* synthetic */ Function mo479andThen(Function function2) {
                                         return Function$CC.$default$andThen(this, function2);
                                     }
 
                                     @Override // java.util.function.Function
                                     public final Object apply(Object obj3) {
-                                        fefi fefiVar = ((eyul) obj3).d;
-                                        return fefiVar == null ? fefi.a : fefiVar;
+                                        fgub fgubVar = ((fbiz) obj3).d;
+                                        return fgubVar == null ? fgub.a : fgubVar;
                                     }
 
                                     public final /* synthetic */ Function compose(Function function2) {
                                         return Function$CC.$default$compose(this, function2);
                                     }
                                 });
-                                fefi fefiVar = fegx.a;
-                                Stream sorted = map.sorted(Comparator.EL.reversed(fegw.a));
-                                int i4 = eitj.d;
-                                Iterable iterable = (Iterable) sorted.collect(eipl.a);
+                                fgub fgubVar = fgvq.a;
+                                Stream sorted = map.sorted(Comparator.EL.reversed(fgvp.a));
+                                int i4 = elgo.d;
+                                Iterable iterable = (Iterable) sorted.collect(elcq.a);
                                 if (!v.b.L()) {
                                     v.U();
                                 }
-                                etop etopVar7 = (etop) v.b;
-                                fedh fedhVar = etopVar7.i;
-                                if (!fedhVar.c()) {
-                                    etopVar7.i = fecp.E(fedhVar);
+                                eweh ewehVar7 = (eweh) v.b;
+                                fgsa fgsaVar = ewehVar7.i;
+                                if (!fgsaVar.c()) {
+                                    ewehVar7.i = fgri.E(fgsaVar);
                                 }
-                                feab.E(iterable, etopVar7.i);
-                                return (etop) v.Q();
+                                fgou.E(iterable, ewehVar7.i);
+                                return (eweh) v.Q();
                             }
 
                             public final /* synthetic */ Function compose(Function function2) {
                                 return Function$CC.$default$compose(this, function2);
                             }
                         }).collect(collector)).collect(collector);
-                        fecj v = etpc.a.v();
+                        fgrc v = eweu.a.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        etpc etpcVar = (etpc) v.b;
-                        fedh fedhVar = etpcVar.b;
-                        if (!fedhVar.c()) {
-                            etpcVar.b = fecp.E(fedhVar);
+                        eweu eweuVar = (eweu) v.b;
+                        fgsa fgsaVar = eweuVar.b;
+                        if (!fgsaVar.c()) {
+                            eweuVar.b = fgri.E(fgsaVar);
                         }
-                        feab.E(eitjVar2, etpcVar.b);
-                        return new dakw(eitjVar, (etpc) v.Q());
+                        fgou.E(elgoVar2, eweuVar.b);
+                        return new dcve(elgoVar, (eweu) v.Q());
                     }
-                }, enreVar), new eiho() { // from class: dajy
-                    @Override // defpackage.eiho
+                }, eqexVar), new ekut() { // from class: dcug
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        eitj eitjVar;
-                        dakw dakwVar = (dakw) obj;
-                        eitj eitjVar2 = dakwVar.a;
-                        boolean isEmpty = eitjVar2.isEmpty();
+                        elgo elgoVar;
+                        dcve dcveVar = (dcve) obj;
+                        elgo elgoVar2 = dcveVar.a;
+                        boolean isEmpty = elgoVar2.isEmpty();
                         Account account2 = account;
                         if (isEmpty) {
                             String str2 = account2.name;
-                            ejck ejckVar = ejck.a;
-                            return new dajz(ejckVar, ejckVar);
+                            elpp elppVar = elpp.a;
+                            return new dcuh(elppVar, elppVar);
                         }
                         ParcelSynchronizePersonalizationJob parcelSynchronizePersonalizationJob = ParcelSynchronizePersonalizationJob.this;
-                        eitjVar2.size();
+                        elgoVar2.size();
                         String str3 = account2.name;
                         if (parcelSynchronizePersonalizationJob.b == null) {
-                            parcelSynchronizePersonalizationJob.b = new dbhz();
+                            parcelSynchronizePersonalizationJob.b = new ddsf();
                         }
-                        dbhz dbhzVar = parcelSynchronizePersonalizationJob.b;
-                        etqq etqqVar = etqq.a;
-                        fecj v = etqqVar.v();
+                        ddsf ddsfVar = parcelSynchronizePersonalizationJob.b;
+                        ewgi ewgiVar = ewgi.a;
+                        fgrc v = ewgiVar.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        etqq etqqVar2 = (etqq) v.b;
-                        fedh fedhVar = etqqVar2.c;
-                        if (!fedhVar.c()) {
-                            etqqVar2.c = fecp.E(fedhVar);
+                        ewgi ewgiVar2 = (ewgi) v.b;
+                        fgsa fgsaVar = ewgiVar2.c;
+                        if (!fgsaVar.c()) {
+                            ewgiVar2.c = fgri.E(fgsaVar);
                         }
-                        feab.E(eitjVar2, etqqVar2.c);
-                        etpc etpcVar = dakwVar.b;
+                        fgou.E(elgoVar2, ewgiVar2.c);
+                        eweu eweuVar = dcveVar.b;
                         if (!v.b.L()) {
                             v.U();
                         }
-                        etqq etqqVar3 = (etqq) v.b;
-                        etqqVar3.d = etpcVar;
-                        etqqVar3.b |= 1;
-                        etqq etqqVar4 = (etqq) v.Q();
+                        ewgi ewgiVar3 = (ewgi) v.b;
+                        ewgiVar3.d = eweuVar;
+                        ewgiVar3.b |= 1;
+                        ewgi ewgiVar4 = (ewgi) v.Q();
                         try {
-                            if (frve.d()) {
+                            if (fupy.d()) {
                                 try {
-                                    dbia dbiaVar = new dbia(dbhzVar.d(), bzgc.a, bxyf.b);
-                                    arts a2 = dbhzVar.a(account2);
-                                    long j = dbia.a;
-                                    if (dbia.i == null) {
-                                        ftxd ftxdVar = ftxd.UNARY;
-                                        febw febwVar = furo.a;
-                                        dbia.i = new ftxe(ftxdVar, "google.internal.locationhistory.v1.LocationHistoryService/SynchronizePersonalization", new furn(etqqVar), new furn(etqr.a), false);
+                                    ddsg ddsgVar = new ddsg(ddsfVar.d(), cbot.a, cagx.b);
+                                    atwh a2 = ddsfVar.a(account2);
+                                    long j = ddsg.a;
+                                    if (ddsg.i == null) {
+                                        fwtb fwtbVar = fwtb.UNARY;
+                                        fgqp fgqpVar = fxnm.a;
+                                        ddsg.i = new fwtc(fwtbVar, "google.internal.locationhistory.v1.LocationHistoryService/SynchronizePersonalization", new fxnl(ewgiVar), new fxnl(ewgj.a), false);
                                     }
-                                    etqr etqrVar = (etqr) dbiaVar.j.f(dbia.i, a2, etqqVar4, j, TimeUnit.MILLISECONDS, dbiaVar.k);
-                                    dbhzVar.g("LHServerSynchronizePersonalization");
-                                    eitjVar = eitj.i(etqrVar.b);
-                                } catch (ftye | ftyg | unx e) {
-                                    dbhzVar.f(e, "SynchronizePersonalization");
-                                    dbhzVar.h(e, "LHServerSynchronizePersonalization");
-                                    eitjVar = ejcb.a;
+                                    ewgj ewgjVar = (ewgj) ddsgVar.j.f(ddsg.i, a2, ewgiVar4, j, TimeUnit.MILLISECONDS, ddsgVar.k);
+                                    ddsfVar.g("LHServerSynchronizePersonalization");
+                                    elgoVar = elgo.i(ewgjVar.b);
+                                } catch (fwuc | fwue | wjw e) {
+                                    ddsfVar.f(e, "SynchronizePersonalization");
+                                    ddsfVar.h(e, "LHServerSynchronizePersonalization");
+                                    elgoVar = elpg.a;
                                 }
                             } else {
-                                eitjVar = ejcb.a;
+                                elgoVar = elpg.a;
                             }
-                            return new dajz(eiuu.G(eitjVar2), eiuu.G(eitjVar));
+                            return new dcuh(elhz.G(elgoVar2), elhz.G(elgoVar));
                         } finally {
-                            dbhzVar.i();
+                            ddsfVar.i();
                         }
                     }
-                }, enreVar));
+                }, eqexVar));
             }
         }
-        return enps.f(ensj.e(arrayList), new eiho() { // from class: daju
-            @Override // defpackage.eiho
+        return eqdl.f(eqgc.e(arrayList), new ekut() { // from class: dcuc
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 int i = 0;
-                for (dajz dajzVar : (List) obj) {
+                for (dcuh dcuhVar : (List) obj) {
                     ParcelSynchronizePersonalizationJob parcelSynchronizePersonalizationJob = ParcelSynchronizePersonalizationJob.this;
-                    eiuu eiuuVar = dajzVar.a;
-                    eiuu eiuuVar2 = dajzVar.b;
-                    if (!eiuuVar.equals(eiuuVar2)) {
-                        eiuuVar.size();
-                        eiuuVar2.size();
+                    elhz elhzVar = dcuhVar.a;
+                    elhz elhzVar2 = dcuhVar.b;
+                    if (!elhzVar.equals(elhzVar2)) {
+                        elhzVar.size();
+                        elhzVar2.size();
                         parcelSynchronizePersonalizationJob.d().k("DeidentifiedGoldenData", 23);
                         i = 2;
-                    } else if (eiuuVar.isEmpty()) {
+                    } else if (elhzVar.isEmpty()) {
                         parcelSynchronizePersonalizationJob.d().k("DeidentifiedGoldenData", 20);
                     } else {
-                        eiuuVar.size();
+                        elhzVar.size();
                         parcelSynchronizePersonalizationJob.d().k("DeidentifiedGoldenData", 21);
-                        parcelSynchronizePersonalizationJob.d().l("DeidentifiedGoldenData", 22, eiuuVar.size());
+                        parcelSynchronizePersonalizationJob.d().l("DeidentifiedGoldenData", 22, elhzVar.size());
                     }
                 }
                 return Integer.valueOf(i);
             }
-        }, enre.a);
+        }, eqex.a);
     }
 }

@@ -3,19 +3,19 @@ package com.google.android.gms.backup.settings.ui;
 import android.content.Context;
 import android.util.AttributeSet;
 import androidx.preference.Preference;
-import defpackage.ajwx;
+import defpackage.alxv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class BackupOrRestoreBackupPreference extends Preference {
     public BackupOrRestoreBackupPreference(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         L("backup");
-        ajwx ajwxVar = ajwx.h;
+        alxv alxvVar = alxv.h;
         Context context2 = this.j;
         if (context2 == null) {
             return;
         }
-        n(ajwxVar.a(context2));
+        n(alxvVar.a(context2));
     }
 }

@@ -1,37 +1,37 @@
 package com.google.android.gms.vision.clearcut;
 
 import android.content.Context;
-import defpackage.byhj;
-import defpackage.byhp;
-import defpackage.diby;
-import defpackage.dibz;
-import defpackage.evah;
+import defpackage.caqb;
+import defpackage.caqh;
+import defpackage.dknj;
+import defpackage.dknk;
+import defpackage.exqa;
 import java.util.concurrent.ExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class DynamiteClearcutLogger {
-    private static final ExecutorService executor = byhj.b.e(2, byhp.LOW_POWER);
-    private dibz logLimiter = new dibz();
+    private static final ExecutorService executor = caqb.b.e(2, caqh.LOW_POWER);
+    private dknk logLimiter = new dknk();
     private VisionClearcutLogger logger;
 
     public DynamiteClearcutLogger(Context context) {
         this.logger = new VisionClearcutLogger(context);
     }
 
-    public void logEvent(int i, evah evahVar) {
+    public void logEvent(int i, exqa exqaVar) {
         if (i == 3) {
-            dibz dibzVar = this.logLimiter;
-            synchronized (dibzVar.b) {
+            dknk dknkVar = this.logLimiter;
+            synchronized (dknkVar.b) {
                 long currentTimeMillis = System.currentTimeMillis();
-                if (dibzVar.c + dibzVar.a > currentTimeMillis) {
+                if (dknkVar.c + dknkVar.a > currentTimeMillis) {
                     return;
                 }
-                dibzVar.c = currentTimeMillis;
+                dknkVar.c = currentTimeMillis;
                 i = 3;
             }
         }
-        executor.execute(new diby(this, i, evahVar));
+        executor.execute(new dknj(this, i, exqaVar));
     }
 
     DynamiteClearcutLogger(VisionClearcutLogger visionClearcutLogger) {

@@ -21,39 +21,39 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.nearby.messages.settings.NearbyMessagesAppOptInChimeraActivity;
-import defpackage.bxdd;
-import defpackage.bxdg;
-import defpackage.cexg;
-import defpackage.ckif;
-import defpackage.ckig;
-import defpackage.eiif;
-import defpackage.ejhf;
-import defpackage.exfs;
-import defpackage.fqjs;
-import defpackage.fqlp;
+import defpackage.bzlt;
+import defpackage.bzlw;
+import defpackage.cher;
+import defpackage.cmqk;
+import defpackage.cmql;
+import defpackage.ekvk;
+import defpackage.eluo;
+import defpackage.ezub;
+import defpackage.ftdk;
+import defpackage.ftfk;
 import defpackage.ip;
 import defpackage.iq;
-import defpackage.qfp;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class NearbyMessagesAppOptInChimeraActivity extends qfp {
+public class NearbyMessagesAppOptInChimeraActivity extends ryt {
     public Button j;
     private String k;
-    private ckif l;
+    private cmqk l;
     private CheckBox m;
     private TextView n;
     private iq o;
     private boolean p;
 
     public static PendingIntent a(Context context, String str) {
-        ckif ckifVar = new ckif(context);
+        cmqk cmqkVar = new cmqk(context);
         Intent intent = new Intent();
         intent.setComponent(new ComponentName(context, "com.google.android.gms.nearby.messages.settings.NearbyMessagesAppOptInActivity"));
         intent.putExtra("FAIL_IMMEDIATELY", false);
         intent.putExtra("OPT_IN_PACKAGE", str);
-        ckifVar.c();
-        intent.putExtra("EXTRA_PACKAGE_DENIED", bxdg.i(ckifVar.b(), str, false));
+        cmqkVar.c();
+        intent.putExtra("EXTRA_PACKAGE_DENIED", bzlw.i(cmqkVar.b(), str, false));
         return PendingIntent.getActivity(context, 0, intent, 134217728);
     }
 
@@ -61,23 +61,23 @@ public class NearbyMessagesAppOptInChimeraActivity extends qfp {
         try {
             return getPackageManager().getApplicationLabel(getPackageManager().getApplicationInfo(this.k, 128)).toString();
         } catch (PackageManager.NameNotFoundException e) {
-            ((ejhf) ((ejhf) cexg.a.j()).s(e)).B("Package name no longer exists: %s", this.k);
+            ((eluo) ((eluo) cher.a.j()).s(e)).B("Package name no longer exists: %s", this.k);
             b();
             return null;
         }
     }
 
     private static String h() {
-        return exfs.c(fqlp.a.a().y());
+        return ezub.c(ftfk.a.lK().y());
     }
 
     private final void k(View view) {
         this.m = (CheckBox) view.findViewById(R.id.never_ask_again);
         this.n = (TextView) view.findViewById(R.id.learn_more);
         this.j = (Button) view.findViewById(R.id.opt_in_allow);
-        if (!fqlp.a.a().K() || fqlp.j()) {
+        if (!ftfk.a.lK().K() || ftfk.j()) {
             this.n.setMovementMethod(LinkMovementMethod.getInstance());
-            Spannable spannable = fqlp.j() ? (Spannable) Html.fromHtml("<a href=\"" + h() + "\">" + getString(R.string.common_learn_more) + "</a>") : (Spannable) Html.fromHtml(getString(R.string.messages_opt_in_text, new Object[]{getResources().getString(R.string.messages_setting_path_v23), h()}));
+            Spannable spannable = ftfk.j() ? (Spannable) Html.fromHtml("<a href=\"" + h() + "\">" + getString(R.string.common_learn_more) + "</a>") : (Spannable) Html.fromHtml(getString(R.string.messages_opt_in_text, new Object[]{getResources().getString(R.string.messages_setting_path_v23), h()}));
             for (URLSpan uRLSpan : (URLSpan[]) spannable.getSpans(0, spannable.length(), URLSpan.class)) {
                 spannable.setSpan(new UnderlineSpan() { // from class: com.google.android.gms.nearby.messages.settings.NearbyMessagesAppOptInChimeraActivity.1
                     @Override // android.text.style.UnderlineSpan, android.text.style.CharacterStyle
@@ -94,7 +94,7 @@ public class NearbyMessagesAppOptInChimeraActivity extends qfp {
         Button button = this.j;
         if (button != null) {
             button.requestFocus();
-            this.m.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: ckib
+            this.m.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: cmqg
                 @Override // android.widget.CompoundButton.OnCheckedChangeListener
                 public final void onCheckedChanged(CompoundButton compoundButton, boolean z) {
                     Button button2 = NearbyMessagesAppOptInChimeraActivity.this.j;
@@ -126,21 +126,21 @@ public class NearbyMessagesAppOptInChimeraActivity extends qfp {
 
     public final void f() {
         if (this.m.isChecked()) {
-            ckif ckifVar = this.l;
+            cmqk cmqkVar = this.l;
             String str = this.k;
-            bxdd a = ckifVar.a();
+            bzlt a = cmqkVar.a();
             a.e(str, false);
-            bxdg.g(a);
+            bzlw.g(a);
         }
-        ckif ckifVar2 = this.l;
+        cmqk cmqkVar2 = this.l;
         String str2 = this.k;
-        bxdd c = ckifVar2.b().c();
+        bzlt c = cmqkVar2.b().c();
         c.e(str2, true);
-        bxdg.g(c);
+        bzlw.g(c);
         b();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         b();
     }
@@ -149,10 +149,10 @@ public class NearbyMessagesAppOptInChimeraActivity extends qfp {
         c();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.l = new ckif(this);
+        this.l = new cmqk(this);
         Bundle extras = getIntent().getExtras();
         if (extras == null || extras.getBoolean("FAIL_IMMEDIATELY") || extras.getString("OPT_IN_PACKAGE") == null) {
             setResult(0, new Intent());
@@ -161,15 +161,15 @@ public class NearbyMessagesAppOptInChimeraActivity extends qfp {
         }
         this.k = extras.getString("OPT_IN_PACKAGE");
         this.p = extras.getBoolean("EXTRA_PACKAGE_DENIED", false);
-        if (!fqlp.j()) {
-            ((ejhf) cexg.a.h()).x("Using v1 opt in UX");
+        if (!ftfk.j()) {
+            ((eluo) cher.a.h()).x("Using v1 opt in UX");
             View inflate = getLayoutInflater().inflate(R.layout.messages_opt_in_popup, (ViewGroup) null);
             k(inflate);
             inflate.requestFocus();
             ip ipVar = new ip(this);
             ipVar.setView(inflate);
-            ipVar.d(new ckig(this, eiif.b(g())));
-            ipVar.h(new DialogInterface.OnCancelListener() { // from class: ckia
+            ipVar.d(new cmql(this, ekvk.b(g())));
+            ipVar.h(new DialogInterface.OnCancelListener() { // from class: cmqf
                 @Override // android.content.DialogInterface.OnCancelListener
                 public final void onCancel(DialogInterface dialogInterface) {
                     NearbyMessagesAppOptInChimeraActivity.this.b();
@@ -182,33 +182,33 @@ public class NearbyMessagesAppOptInChimeraActivity extends qfp {
             l(this.p);
             return;
         }
-        ((ejhf) cexg.a.h()).x("Using v2 opt in UX");
+        ((eluo) cher.a.h()).x("Using v2 opt in UX");
         View inflate2 = getLayoutInflater().inflate(R.layout.messages_opt_in_popup_v2, (ViewGroup) null);
         k(inflate2);
         ip ipVar2 = new ip(this);
-        ipVar2.l(2131233423);
-        ipVar2.j(R.string.messages_opt_in_dialog_with_legal_title);
-        ipVar2.n(getString(R.string.messages_opt_in_dialog_with_legal_summary, new Object[]{g(), getString(true != fqjs.a.a().b() ? R.string.messages_permissions_required_no_microphone : R.string.messages_permissions_required)}));
+        ipVar2.n(2131233489);
+        ipVar2.l(R.string.messages_opt_in_dialog_with_legal_title);
+        ipVar2.p(getString(R.string.messages_opt_in_dialog_with_legal_summary, new Object[]{g(), getString(true != ftdk.a.lK().b() ? R.string.messages_permissions_required_no_microphone : R.string.messages_permissions_required)}));
         ipVar2.setView(inflate2);
-        ip positiveButton = ipVar2.setPositiveButton(R.string.common_allow, new DialogInterface.OnClickListener() { // from class: ckic
+        ipVar2.setPositiveButton(R.string.common_allow, new DialogInterface.OnClickListener() { // from class: cmqh
             @Override // android.content.DialogInterface.OnClickListener
             public final void onClick(DialogInterface dialogInterface, int i) {
                 NearbyMessagesAppOptInChimeraActivity.this.c();
             }
         });
-        positiveButton.setNegativeButton(R.string.common_deny, new DialogInterface.OnClickListener() { // from class: ckid
+        ipVar2.setNegativeButton(R.string.common_deny, new DialogInterface.OnClickListener() { // from class: cmqi
             @Override // android.content.DialogInterface.OnClickListener
             public final void onClick(DialogInterface dialogInterface, int i) {
                 NearbyMessagesAppOptInChimeraActivity.this.f();
             }
         });
-        positiveButton.h(new DialogInterface.OnCancelListener() { // from class: ckie
+        ipVar2.h(new DialogInterface.OnCancelListener() { // from class: cmqj
             @Override // android.content.DialogInterface.OnCancelListener
             public final void onCancel(DialogInterface dialogInterface) {
                 NearbyMessagesAppOptInChimeraActivity.this.b();
             }
         });
-        iq create2 = positiveButton.create();
+        iq create2 = ipVar2.create();
         this.o = create2;
         create2.setCanceledOnTouchOutside(false);
         this.o.show();
@@ -219,7 +219,7 @@ public class NearbyMessagesAppOptInChimeraActivity extends qfp {
         f();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         iq iqVar = this.o;
         if (iqVar != null) {
@@ -228,7 +228,7 @@ public class NearbyMessagesAppOptInChimeraActivity extends qfp {
         super.onDestroy();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         l(this.p);

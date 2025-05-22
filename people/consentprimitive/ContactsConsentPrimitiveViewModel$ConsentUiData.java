@@ -2,44 +2,44 @@ package com.google.android.gms.people.consentprimitive;
 
 import android.accounts.Account;
 import android.os.Parcelable;
-import defpackage.ctsw;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.elkn;
-import defpackage.fqzf;
+import defpackage.cwcc;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.enya;
+import defpackage.ftta;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class ContactsConsentPrimitiveViewModel$ConsentUiData implements Parcelable {
-    public static ctsw o() {
-        ctsw ctswVar = new ctsw();
-        ctswVar.e(elkn.UNKNOWN_PAGE);
-        ctswVar.h(0);
-        ctswVar.j(false);
-        ctswVar.k(false);
-        ctswVar.b(0);
-        ctswVar.l(0);
-        ctswVar.f(0);
-        ctswVar.m(0);
-        ctswVar.g(elkn.CHOICES_PAGE);
-        ctswVar.i(eitj.l(elkn.CUSTOM_FLOW_FINISH_PAGE));
-        return ctswVar;
+    public static cwcc o() {
+        cwcc cwccVar = new cwcc();
+        cwccVar.e(enya.UNKNOWN_PAGE);
+        cwccVar.h(0);
+        cwccVar.j(false);
+        cwccVar.k(false);
+        cwccVar.b(0);
+        cwccVar.l(0);
+        cwccVar.f(0);
+        cwccVar.m(0);
+        cwccVar.g(enya.CHOICES_PAGE);
+        cwccVar.i(elgo.l(enya.CUSTOM_FLOW_FINISH_PAGE));
+        return cwccVar;
     }
 
-    public static eitj p(ContactsConsentData contactsConsentData, ContactsConsentsConfig contactsConsentsConfig, Account account) {
-        int i = eitj.d;
-        eite eiteVar = new eite();
-        if (fqzf.c()) {
-            eiteVar.i(elkn.CUSTOM_FLOW_DC_PAGE);
+    public static elgo p(ContactsConsentData contactsConsentData, ContactsConsentsConfig contactsConsentsConfig, Account account) {
+        int i = elgo.d;
+        elgj elgjVar = new elgj();
+        if (ftta.c()) {
+            elgjVar.i(enya.CUSTOM_FLOW_DC_PAGE);
         }
-        if (fqzf.e()) {
-            eiteVar.i(elkn.CUSTOM_FLOW_SHEEPDOG_PAGE);
+        if (ftta.e()) {
+            elgjVar.i(enya.CUSTOM_FLOW_SHEEPDOG_PAGE);
         }
-        if (fqzf.f() && contactsConsentsConfig.c && contactsConsentData.l(account)) {
-            eiteVar.i(elkn.CUSTOM_FLOW_SIM_IMPORT_PAGE);
+        if (ftta.f() && contactsConsentsConfig.c && contactsConsentData.l(account)) {
+            elgjVar.i(enya.CUSTOM_FLOW_SIM_IMPORT_PAGE);
         }
-        eiteVar.i(elkn.CUSTOM_FLOW_FINISH_PAGE);
-        return eiteVar.g();
+        elgjVar.i(enya.CUSTOM_FLOW_FINISH_PAGE);
+        return elgjVar.g();
     }
 
     public abstract int a();
@@ -56,15 +56,15 @@ public abstract class ContactsConsentPrimitiveViewModel$ConsentUiData implements
 
     public abstract ContactsConsentData g();
 
-    public abstract ctsw h();
+    public abstract cwcc h();
 
     public abstract ContactsConsentsConfig i();
 
-    public abstract eitj j();
+    public abstract elgo j();
 
-    public abstract elkn k();
+    public abstract enya k();
 
-    public abstract elkn l();
+    public abstract enya l();
 
     public abstract boolean m();
 

@@ -1,8 +1,8 @@
 package com.google.android.gms.ads.cache.policy;
 
-import defpackage.arwb;
+import defpackage.atyq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class m {
     public static final com.google.android.gms.ads.internal.js.function.c a = new l();
@@ -14,7 +14,7 @@ public final class m {
 
     public final boolean equals(Object obj) {
         if (obj instanceof m) {
-            return arwb.b(this.b, ((m) obj).b);
+            return atyq.b(this.b, ((m) obj).b);
         }
         return false;
     }

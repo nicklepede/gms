@@ -3,96 +3,96 @@ package com.google.android.gms.backup.extension.download.ui;
 import android.content.res.Resources;
 import android.os.Bundle;
 import com.google.android.gms.R;
-import defpackage.ahwd;
-import defpackage.aiym;
-import defpackage.aiyn;
-import defpackage.aizb;
-import defpackage.aizd;
-import defpackage.aizf;
-import defpackage.aizg;
-import defpackage.aizi;
-import defpackage.aizj;
-import defpackage.aizk;
-import defpackage.aizm;
-import defpackage.aizr;
-import defpackage.aizu;
-import defpackage.aizy;
-import defpackage.aizz;
-import defpackage.ajaa;
-import defpackage.ajac;
-import defpackage.ajah;
-import defpackage.asmf;
+import defpackage.ajwt;
+import defpackage.akzc;
+import defpackage.akzd;
+import defpackage.akzr;
+import defpackage.akzt;
+import defpackage.akzv;
+import defpackage.akzw;
+import defpackage.akzy;
+import defpackage.akzz;
+import defpackage.alaa;
+import defpackage.alac;
+import defpackage.alah;
+import defpackage.alak;
+import defpackage.alao;
+import defpackage.alap;
+import defpackage.alaq;
+import defpackage.alas;
+import defpackage.alax;
+import defpackage.aupz;
 import defpackage.bp;
 import defpackage.dg;
-import defpackage.edeq;
-import defpackage.edjs;
-import defpackage.edjt;
-import defpackage.eiig;
-import defpackage.eitj;
-import defpackage.ensj;
-import defpackage.ensv;
-import defpackage.iln;
-import defpackage.qfp;
+import defpackage.efrl;
+import defpackage.efwn;
+import defpackage.efwo;
+import defpackage.ekvl;
+import defpackage.elgo;
+import defpackage.eqgc;
+import defpackage.eqgo;
+import defpackage.ind;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class CustomBackupDownloadChimeraActivity extends qfp implements aizz, ajaa, aizd, aizr {
-    public static final ahwd j = new ahwd("CustomDownloadProgressActivity");
-    public aiyn k;
-    public aizm l;
+public class CustomBackupDownloadChimeraActivity extends ryt implements alap, alaq, akzt, alah {
+    public static final ajwt j = new ajwt("CustomDownloadProgressActivity");
+    public akzd k;
+    public alac l;
     public boolean m;
     public dg n;
-    public aizb o;
-    private final ensv p = new asmf(1, 9);
-    private aizk q;
+    public akzr o;
+    private final eqgo p = new aupz(1, 9);
+    private alaa q;
 
-    @Override // defpackage.aizd
+    @Override // defpackage.akzt
     public final void a(int i) {
         j.d("onDontRestoreConfirmed from activity's listener", new Object[0]);
-        ajac ajacVar = (ajac) getSupportFragmentManager().h(ajac.class.getName());
-        if (ajacVar != null) {
-            aizu aizuVar = (aizu) ajacVar.b.getItem(i);
-            ajacVar.a.d("stopRestore for package %s ", aizuVar.getClass().getName());
-            aizy aizyVar = ajacVar.b;
-            ahwd ahwdVar = aizyVar.b.a;
-            String str = aizuVar.a;
-            ahwdVar.d("Updating view to cancelled for %s", str);
-            ajac.y(aizuVar);
-            aizyVar.notifyDataSetChanged();
-            ajacVar.b.a.b(str);
+        alas alasVar = (alas) getSupportFragmentManager().h(alas.class.getName());
+        if (alasVar != null) {
+            alak alakVar = (alak) alasVar.b.getItem(i);
+            alasVar.a.d("stopRestore for package %s ", alakVar.getClass().getName());
+            alao alaoVar = alasVar.b;
+            ajwt ajwtVar = alaoVar.b.a;
+            String str = alakVar.a;
+            ajwtVar.d("Updating view to cancelled for %s", str);
+            alas.y(alakVar);
+            alaoVar.notifyDataSetChanged();
+            alasVar.b.a.b(str);
         }
     }
 
-    @Override // defpackage.aizz
+    @Override // defpackage.alap
     public final void b(String str) {
-        aizk aizkVar = this.q;
-        if (aizkVar != null) {
-            aizk.a.d("Scheduling cancellation for package: %s", str);
-            aizkVar.c.submit(new aizj(aizkVar, str));
+        alaa alaaVar = this.q;
+        if (alaaVar != null) {
+            alaa.a.d("Scheduling cancellation for package: %s", str);
+            alaaVar.c.submit(new akzz(alaaVar, str));
         }
     }
 
-    @Override // defpackage.ajaa
-    public final void c(aiym aiymVar) {
+    @Override // defpackage.alaq
+    public final void c(akzc akzcVar) {
         if (this.o.b(this)) {
             return;
         }
-        this.k.a(aiymVar);
+        this.k.a(akzcVar);
     }
 
-    @Override // defpackage.aizr
-    public final void f(eitj eitjVar) {
-        j.d("User additionally selected packages: %s for download", eitjVar);
-        this.l.f = eitjVar;
-        aizk aizkVar = this.q;
-        if (aizkVar != null) {
-            aizk.a.d("Scheduling download for packages: %s", eitjVar);
-            aizkVar.c.submit(new aizi(aizkVar, eitjVar));
+    @Override // defpackage.alah
+    public final void f(elgo elgoVar) {
+        j.d("User additionally selected packages: %s for download", elgoVar);
+        this.l.f = elgoVar;
+        alaa alaaVar = this.q;
+        if (alaaVar != null) {
+            alaa.a.d("Scheduling download for packages: %s", elgoVar);
+            alaaVar.c.submit(new akzy(alaaVar, elgoVar));
         }
         if (!this.o.b(this)) {
-            this.k.a(aiym.IN_PROGRESS);
+            this.k.a(akzc.IN_PROGRESS);
         }
-        this.n = new ajac();
+        this.n = new alas();
         bp bpVar = new bp(getSupportFragmentManager());
         bpVar.G(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
         dg dgVar = this.n;
@@ -102,8 +102,8 @@ public class CustomBackupDownloadChimeraActivity extends qfp implements aizz, aj
 
     @Override // com.google.android.chimera.ContextThemeWrapper
     protected final void onApplyThemeResource(Resources.Theme theme, int i, boolean z) {
-        int i2 = edjs.a;
-        if (edeq.z(this) && edeq.v(this)) {
+        int i2 = efwn.a;
+        if (efrl.z(this) && efrl.v(this)) {
             j.d("Setting sucUsePartnerResource theme attribute to true.", new Object[0]);
             theme.applyStyle(R.style.BcStyleThemeOverlay, true);
         } else {
@@ -113,56 +113,56 @@ public class CustomBackupDownloadChimeraActivity extends qfp implements aizz, aj
         super.onApplyThemeResource(theme, i, z);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         j.j("onCreate", new Object[0]);
-        edjt d = edjt.d();
+        efwo d = efwo.d();
         int i = d.a;
         String str = d.b;
         boolean z = d.c;
-        edjt edjtVar = new edjt(R.style.SudThemeGlifV3_DayNight, true);
-        int i2 = edjs.a;
-        setTheme(edjtVar.b(getIntent(), !edeq.v(this)));
-        edjs.d();
+        efwo efwoVar = new efwo(R.style.SudThemeGlifV3_DayNight, true);
+        int i2 = efwn.a;
+        setTheme(efwoVar.b(getIntent(), !efrl.v(this)));
+        efwn.d();
         super.onCreate(bundle);
         setContentView(R.layout.activity_main);
-        this.q = new aizk(this, this.p);
-        this.k = new aiyn(this);
-        this.l = aizm.a();
-        this.o = new aizb();
+        this.q = new alaa(this, this.p);
+        this.k = new akzd(this);
+        this.l = alac.a();
+        this.o = new akzr();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         j.j("onDestroy", new Object[0]);
         this.m = true;
-        aizk aizkVar = this.q;
-        if (aizkVar != null) {
-            aizkVar.b();
+        alaa alaaVar = this.q;
+        if (alaaVar != null) {
+            alaaVar.b();
             this.q = null;
         }
-        aizm.a = null;
+        alac.a = null;
         super.onDestroy();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         j.j("onResume", new Object[0]);
         super.onResume();
-        ajah ajahVar = new ajah(this.l);
-        aizk aizkVar = this.q;
-        eiig.x(aizkVar);
-        aizk.a.d("Scheduling connection to manager service", new Object[0]);
-        ensj.t(aizkVar.c.submit(new aizg(aizkVar, ajahVar)), new aizf(this), iln.g(this));
+        alax alaxVar = new alax(this.l);
+        alaa alaaVar = this.q;
+        ekvl.y(alaaVar);
+        alaa.a.d("Scheduling connection to manager service", new Object[0]);
+        eqgc.t(alaaVar.c.submit(new akzw(alaaVar, alaxVar)), new akzv(this), ind.g(this));
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStop() {
         j.j("onStop", new Object[0]);
         if (this.n != null) {
             bp bpVar = new bp(getSupportFragmentManager());
             bpVar.G(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
-            bpVar.n(this.n);
+            bpVar.m(this.n);
             bpVar.e();
         }
         super.onStop();

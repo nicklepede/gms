@@ -4,125 +4,125 @@ import android.content.Context;
 import com.google.android.gms.chimera.modules.scheduler.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asnv;
-import defpackage.asnz;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.bymm;
-import defpackage.cybn;
-import defpackage.cyby;
-import defpackage.cyhe;
-import defpackage.cyhs;
-import defpackage.cyhu;
-import defpackage.cyhz;
-import defpackage.dfbl;
-import defpackage.eijr;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.fncn;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.aurp;
+import defpackage.aurt;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.cave;
+import defpackage.dall;
+import defpackage.dalw;
+import defpackage.darc;
+import defpackage.darq;
+import defpackage.dars;
+import defpackage.darx;
+import defpackage.dhmr;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.fpum;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class HousekeepingTrainTaskService extends GmsTaskBoundService {
     private static final long c = 300000;
-    public final cyhe b;
-    private final asnv e;
-    public static final asot a = asot.b("HKTTrainService", asej.SCHEDULER);
-    private static final bymm d = new bymm(new eijr() { // from class: cyhl
-        @Override // defpackage.eijr
-        public final Object a() {
-            return fnbr.j();
+    public final darc b;
+    private final aurp e;
+    public static final ausn a = ausn.b("HKTTrainService", auid.SCHEDULER);
+    private static final cave d = new cave(new ekww() { // from class: darj
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return fptq.j();
         }
     });
 
     public HousekeepingTrainTaskService() {
-        asot asotVar = cyhe.a;
-        this.b = cybn.b().c;
-        this.e = asnz.a;
+        ausn ausnVar = darc.a;
+        this.b = dall.b().c;
+        this.e = aurt.a;
     }
 
     private static final int e(Context context) {
-        return ((Boolean) cyhz.a(context).a.e(false)).booleanValue() ? 1 : 0;
+        return ((Boolean) darx.a(context).a.e(false)).booleanValue() ? 1 : 0;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(final byln bylnVar) {
-        cyhe cyheVar = this.b;
-        if (cyheVar == null) {
-            ((ejhf) ((ejhf) a.j()).ah((char) 9464)).x("HousekeepingScheduler is null. Not running any tasks");
+    public final int a(final cauf caufVar) {
+        darc darcVar = this.b;
+        if (darcVar == null) {
+            ((eluo) ((eluo) a.j()).ai((char) 9466)).x("HousekeepingScheduler is null. Not running any tasks");
             return 2;
         }
-        cyhu b = cyhu.b(bylnVar);
-        fncn fncnVar = fncn.a;
-        if (fncnVar.a().x()) {
+        dars b = dars.b(caufVar);
+        fpum fpumVar = fpum.a;
+        if (fpumVar.lK().x()) {
             if (b.c) {
                 if (this.e.a() >= b.h) {
-                    cyheVar.h(bylnVar);
+                    darcVar.h(caufVar);
                     return 0;
                 }
             }
         } else if (!b.c) {
             if (this.e.a() >= b.h) {
-                cyheVar.h(bylnVar);
+                darcVar.h(caufVar);
                 return 0;
             }
         }
         boolean z = true;
-        if (fncn.a.a().q()) {
+        if (fpumVar.lK().q()) {
             try {
-                asmf asmfVar = new asmf(Math.min((int) (e(AppContextProvider.a()) == 1 ? fncnVar.a().f() : fncnVar.a().e()), 8), 10);
-                List<cyby> c2 = cyheVar.c(bylnVar);
+                aupz aupzVar = new aupz(Math.min((int) (e(AppContextProvider.a()) == 1 ? fpumVar.lK().f() : fpumVar.lK().e()), 8), 10);
+                List<dalw> c2 = darcVar.c(caufVar);
                 final ArrayList arrayList = new ArrayList();
-                final cyhs a2 = cyheVar.d.a(bylnVar.a);
-                for (final cyby cybyVar : c2) {
-                    arrayList.add(asmfVar.submit(new Callable() { // from class: cyhj
+                final darq a2 = darcVar.d.a(caufVar.a);
+                for (final dalw dalwVar : c2) {
+                    arrayList.add(aupzVar.submit(new Callable() { // from class: darh
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
-                            return Long.valueOf(HousekeepingTrainTaskService.this.d(bylnVar, cybyVar, a2));
+                            return Long.valueOf(HousekeepingTrainTaskService.this.d(caufVar, dalwVar, a2));
                         }
                     }));
                 }
-                return ((Integer) ((enpf) ensj.a(arrayList).a(new Callable() { // from class: cyhk
+                return ((Integer) ((eqcy) eqgc.a(arrayList).a(new Callable() { // from class: dari
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
                         HousekeepingTrainTaskService housekeepingTrainTaskService = HousekeepingTrainTaskService.this;
                         if (housekeepingTrainTaskService.b == null) {
-                            ((ejhf) ((ejhf) HousekeepingTrainTaskService.a.j()).ah((char) 9461)).x("HousekeepingScheduler is null. Not reporting any results");
+                            ((eluo) ((eluo) HousekeepingTrainTaskService.a.j()).ai((char) 9463)).x("HousekeepingScheduler is null. Not reporting any results");
                             return 2;
                         }
                         Iterator it = arrayList.iterator();
                         long j = Long.MAX_VALUE;
                         while (it.hasNext()) {
                             try {
-                                j = Math.min(j, ((Long) ensj.r((enss) it.next())).longValue());
+                                j = Math.min(j, ((Long) eqgc.r((eqgl) it.next())).longValue());
                             } catch (ExecutionException e) {
-                                ((ejhf) ((ejhf) ((ejhf) HousekeepingTrainTaskService.a.j()).s(e)).ah((char) 9460)).x("Failed to fetch execution results");
+                                ((eluo) ((eluo) ((eluo) HousekeepingTrainTaskService.a.j()).s(e)).ai((char) 9462)).x("Failed to fetch execution results");
                             }
                         }
-                        byln bylnVar2 = bylnVar;
+                        cauf caufVar2 = caufVar;
                         if (j != Long.MAX_VALUE) {
-                            housekeepingTrainTaskService.b.i(bylnVar2, j);
+                            housekeepingTrainTaskService.b.i(caufVar2, j);
                         } else {
-                            housekeepingTrainTaskService.b.j(bylnVar2);
+                            housekeepingTrainTaskService.b.j(caufVar2);
                         }
                         return 0;
                     }
-                }, enre.a)).u()).intValue();
+                }, eqex.a)).u()).intValue();
             } catch (InterruptedException | ExecutionException unused) {
                 return 0;
             }
         }
-        cyhe cyheVar2 = this.b;
-        Iterator it = cyheVar2.c(bylnVar).iterator();
+        darc darcVar2 = this.b;
+        Iterator it = darcVar2.c(caufVar).iterator();
         long j = Long.MAX_VALUE;
         int i = 0;
         boolean z2 = false;
@@ -131,35 +131,35 @@ public class HousekeepingTrainTaskService extends GmsTaskBoundService {
                 z = z2;
                 break;
             }
-            cyby cybyVar2 = (cyby) it.next();
-            fncn fncnVar2 = fncn.a;
-            if (fncnVar2.a().A() && i >= fncnVar2.a().h()) {
+            dalw dalwVar2 = (dalw) it.next();
+            fpum fpumVar2 = fpum.a;
+            if (fpumVar2.lK().A() && i >= fpumVar2.lK().h()) {
                 j = Math.min(j, this.e.b());
                 break;
             }
-            long j2 = cybyVar2.d;
+            long j2 = dalwVar2.d;
             if (j2 > this.e.b()) {
                 j = Math.min(j, j2);
                 z2 = true;
             } else {
                 try {
-                    dfbl.n(cyheVar2.b(bylnVar, cybyVar2));
+                    dhmr.n(darcVar2.b(caufVar, dalwVar2));
                     i++;
                 } catch (InterruptedException unused2) {
-                    ((ejhf) ((ejhf) a.h()).ah((char) 9462)).B("Unable to get a result for %s due to InterruptedException. Probably due to timeout", cybyVar2);
-                    this.b.h(bylnVar);
+                    ((eluo) ((eluo) a.h()).ai((char) 9464)).B("Unable to get a result for %s due to InterruptedException. Probably due to timeout", dalwVar2);
+                    this.b.h(caufVar);
                     return 0;
                 } catch (ExecutionException e) {
-                    ((ejhf) ((ejhf) a.j()).ah(9463)).P("Unable to get a result for %s due to %s", cybyVar2, e.getMessage());
-                    this.b.i(bylnVar, c);
+                    ((eluo) ((eluo) a.j()).ai(9465)).P("Unable to get a result for %s due to %s", dalwVar2, e.getMessage());
+                    this.b.i(caufVar, c);
                     return 2;
                 }
             }
         }
         if (z) {
-            this.b.i(bylnVar, j - this.e.b());
+            this.b.i(caufVar, j - this.e.b());
         } else {
-            this.b.j(bylnVar);
+            this.b.j(caufVar);
         }
         return 0;
     }
@@ -180,16 +180,16 @@ public class HousekeepingTrainTaskService extends GmsTaskBoundService {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final long d(defpackage.byln r9, defpackage.cyby r10, defpackage.cyhs r11) {
+    public final long d(defpackage.cauf r9, defpackage.dalw r10, defpackage.darq r11) {
         /*
             Method dump skipped, instructions count: 277
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService.d(byln, cyby, cyhs):long");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.scheduler.standalone.housekeeping.HousekeepingTrainTaskService.d(cauf, dalw, darq):long");
     }
 
-    HousekeepingTrainTaskService(cyhe cyheVar, asnv asnvVar) {
-        this.b = cyheVar;
-        this.e = asnvVar;
+    HousekeepingTrainTaskService(darc darcVar, aurp aurpVar) {
+        this.b = darcVar;
+        this.e = aurpVar;
     }
 }

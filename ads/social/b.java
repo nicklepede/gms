@@ -4,11 +4,11 @@ import android.accounts.Account;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
-import defpackage.fjwt;
+import defpackage.fmmx;
 import java.net.HttpCookie;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class b {
     public final SharedPreferences a;
@@ -45,7 +45,7 @@ final class b {
         for (Account account : accountArr) {
             String str = account.name;
             if (!TextUtils.isEmpty(str)) {
-                if (fjwt.j()) {
+                if (fmmx.j()) {
                     boolean m = com.google.android.gms.ads.identifier.settings.b.c(this.c).m();
                     String a = a(str, a.DORITOS_WITH_GAIA);
                     String a2 = a(str, a.GAIALESS_DORITOS);

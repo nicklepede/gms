@@ -1,36 +1,36 @@
 package com.google.android.gms.notifications.capping.api;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgj;
-import defpackage.bxgk;
-import defpackage.bxhh;
-import defpackage.csaa;
-import defpackage.csae;
-import defpackage.csap;
-import defpackage.ejck;
-import defpackage.fvbo;
+import defpackage.bzoz;
+import defpackage.bzpa;
+import defpackage.bzpx;
+import defpackage.cujf;
+import defpackage.cujj;
+import defpackage.cuju;
+import defpackage.elpp;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class NotificationsCappingApiService extends csaa {
-    public csae a;
+public final class NotificationsCappingApiService extends cujf {
+    public cujj a;
 
     public NotificationsCappingApiService() {
-        super(387, "com.google.android.gms.notifications.capping.api.NotificationsCappingApiService.START", ejck.a, 1, 10);
+        super(387, "com.google.android.gms.notifications.capping.api.NotificationsCappingApiService.START", elpp.a, 1, 10);
     }
 
-    @Override // defpackage.bxgd
-    public final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        fvbo.f(getServiceRequest, "request");
-        bxgk a = bxhh.a(this);
+    @Override // defpackage.bzot
+    public final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        fxxm.f(getServiceRequest, "request");
+        bzpa a = bzpx.a(this);
         String str = getServiceRequest.f;
-        fvbo.e(str, "getCallingPackage(...)");
+        fxxm.e(str, "getCallingPackage(...)");
         String str2 = getServiceRequest.p;
-        csae csaeVar = this.a;
-        if (csaeVar == null) {
-            fvbo.j("notificationImpressionStorage");
-            csaeVar = null;
+        cujj cujjVar = this.a;
+        if (cujjVar == null) {
+            fxxm.j("notificationImpressionStorage");
+            cujjVar = null;
         }
-        bxgjVar.c(new csap(a, str, str2, csaeVar));
+        bzozVar.c(new cuju(a, str, str2, cujjVar));
     }
 }

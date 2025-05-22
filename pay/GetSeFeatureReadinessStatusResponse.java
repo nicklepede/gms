@@ -4,15 +4,15 @@ import android.app.PendingIntent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctcl;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvlq;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class GetSeFeatureReadinessStatusResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctcl();
+    public static final Parcelable.Creator CREATOR = new cvlq();
     public int a;
     public PendingIntent b;
     public byte[][] c;
@@ -26,7 +26,7 @@ public final class GetSeFeatureReadinessStatusResponse extends AbstractSafeParce
         }
         if (obj instanceof GetSeFeatureReadinessStatusResponse) {
             GetSeFeatureReadinessStatusResponse getSeFeatureReadinessStatusResponse = (GetSeFeatureReadinessStatusResponse) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(getSeFeatureReadinessStatusResponse.a)) && arwb.b(this.b, getSeFeatureReadinessStatusResponse.b) && Arrays.equals(this.c, getSeFeatureReadinessStatusResponse.c)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(getSeFeatureReadinessStatusResponse.a)) && atyq.b(this.b, getSeFeatureReadinessStatusResponse.b) && Arrays.equals(this.c, getSeFeatureReadinessStatusResponse.c)) {
                 return true;
             }
         }
@@ -39,11 +39,11 @@ public final class GetSeFeatureReadinessStatusResponse extends AbstractSafeParce
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.A(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.A(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 
     public GetSeFeatureReadinessStatusResponse(int i, PendingIntent pendingIntent, byte[][] bArr) {

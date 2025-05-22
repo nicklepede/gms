@@ -4,15 +4,15 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cesg;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.chbo;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class GetEsimConfigResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cesg();
+    public static final Parcelable.Creator CREATOR = new chbo();
     public String a;
     public String b;
     public Long c;
@@ -30,7 +30,7 @@ public final class GetEsimConfigResponse extends AbstractSafeParcelable {
         }
         if (obj instanceof GetEsimConfigResponse) {
             GetEsimConfigResponse getEsimConfigResponse = (GetEsimConfigResponse) obj;
-            if (arwb.b(this.a, getEsimConfigResponse.a) && arwb.b(this.b, getEsimConfigResponse.b) && arwb.b(this.c, getEsimConfigResponse.c) && arwb.b(this.d, getEsimConfigResponse.d) && arwb.b(this.e, getEsimConfigResponse.e) && arwb.b(this.f, getEsimConfigResponse.f) && arwb.b(this.g, getEsimConfigResponse.g)) {
+            if (atyq.b(this.a, getEsimConfigResponse.a) && atyq.b(this.b, getEsimConfigResponse.b) && atyq.b(this.c, getEsimConfigResponse.c) && atyq.b(this.d, getEsimConfigResponse.d) && atyq.b(this.e, getEsimConfigResponse.e) && atyq.b(this.f, getEsimConfigResponse.f) && atyq.b(this.g, getEsimConfigResponse.g)) {
                 return true;
             }
         }
@@ -43,15 +43,15 @@ public final class GetEsimConfigResponse extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.I(parcel, 3, this.c);
-        arxc.I(parcel, 4, this.d);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.g(parcel, 63, this.g, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.I(parcel, 3, this.c);
+        atzr.I(parcel, 4, this.d);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.g(parcel, 63, this.g, false);
+        atzr.c(parcel, a);
     }
 
     public GetEsimConfigResponse(String str, String str2, Long l, Long l2, String str3, String str4, Bundle bundle) {

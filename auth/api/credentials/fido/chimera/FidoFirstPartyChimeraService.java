@@ -2,24 +2,24 @@ package com.google.android.gms.auth.api.credentials.fido.chimera;
 
 import android.os.Bundle;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.ejck;
-import defpackage.ejdg;
-import defpackage.zaz;
+import defpackage.abaq;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.elpp;
+import defpackage.elqn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class FidoFirstPartyChimeraService extends bxgd {
+public class FidoFirstPartyChimeraService extends bzot {
     public FidoFirstPartyChimeraService() {
-        super(427, "com.google.android.gms.auth.api.fido.service.fido_first_party.START", ejck.a, 1, 9, new ejdg("com.google.android.gms.auth.api.identity.onetaptestapp"));
+        super(427, "com.google.android.gms.auth.api.fido.service.fido_first_party.START", elpp.a, 1, 9, new elqn("com.google.android.gms.auth.api.identity.onetaptestapp"));
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgo l = l();
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzpe l = l();
         Bundle bundle = getServiceRequest.i;
-        bxgjVar.c(new zaz(l, getServiceRequest.f, getServiceRequest.p));
+        bzozVar.c(new abaq(l, getServiceRequest.f, getServiceRequest.p));
     }
 }

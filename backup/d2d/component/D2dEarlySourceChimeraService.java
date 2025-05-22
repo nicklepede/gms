@@ -7,46 +7,46 @@ import android.util.Base64;
 import com.google.android.chimera.Service;
 import com.google.android.gms.backup.d2d.component.D2dEarlySourceChimeraService;
 import com.google.android.gms.backup.d2d.migrate.service.protocol.p2p.PlayP2pRestoreServiceResultReceiver;
-import defpackage.ahwd;
-import defpackage.ahwz;
-import defpackage.aias;
-import defpackage.aihh;
-import defpackage.aihi;
-import defpackage.aihj;
-import defpackage.aihl;
-import defpackage.aihm;
-import defpackage.aihn;
-import defpackage.aiho;
-import defpackage.aijh;
-import defpackage.aiju;
-import defpackage.aijx;
-import defpackage.aikv;
-import defpackage.aiou;
-import defpackage.aioz;
-import defpackage.aiph;
-import defpackage.aipk;
-import defpackage.aivk;
-import defpackage.ajfo;
-import defpackage.ajfw;
-import defpackage.aslk;
-import defpackage.asmb;
-import defpackage.asmf;
-import defpackage.bxfy;
-import defpackage.dxbn;
-import defpackage.dxbo;
-import defpackage.dxhi;
-import defpackage.dxhj;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensa;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.ensv;
-import defpackage.entj;
-import defpackage.fllb;
+import defpackage.ajwt;
+import defpackage.ajxp;
+import defpackage.akbi;
+import defpackage.akhx;
+import defpackage.akhy;
+import defpackage.akhz;
+import defpackage.akib;
+import defpackage.akic;
+import defpackage.akid;
+import defpackage.akie;
+import defpackage.akjx;
+import defpackage.akkk;
+import defpackage.akkn;
+import defpackage.akll;
+import defpackage.akpk;
+import defpackage.akpp;
+import defpackage.akpx;
+import defpackage.akqa;
+import defpackage.akwa;
+import defpackage.algg;
+import defpackage.algo;
+import defpackage.aupe;
+import defpackage.aupv;
+import defpackage.aupz;
+import defpackage.bzoo;
+import defpackage.dznn;
+import defpackage.dzno;
+import defpackage.dzti;
+import defpackage.dztj;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqft;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.eqgo;
+import defpackage.eqhc;
+import defpackage.focl;
 import j$.util.Objects;
 import j$.util.function.Function$CC;
 import java.util.Arrays;
@@ -59,32 +59,32 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Function;
 import java.util.regex.Pattern;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class D2dEarlySourceChimeraService extends Service {
-    public static final ahwd a = (ahwd) ahwd.a("D2dEarlySourceChimeraService");
-    public aiph d;
-    public aivk e;
-    public aijh f;
-    private aipk m;
-    private aias n;
-    private aiju o;
-    private aslk p;
-    private ensv q;
-    private ensv r;
-    private final IBinder k = new aiho(this);
+    public static final ajwt a = (ajwt) ajwt.a("D2dEarlySourceChimeraService");
+    public akpx d;
+    public akwa e;
+    public akjx f;
+    private akqa m;
+    private akbi n;
+    private akkk o;
+    private aupe p;
+    private eqgo q;
+    private eqgo r;
+    private final IBinder k = new akie(this);
     public final AtomicLong b = new AtomicLong(0);
     public final AtomicBoolean c = new AtomicBoolean(false);
     private final AtomicInteger l = new AtomicInteger(0);
-    public enss g = ensj.i(false);
-    public enss h = ensj.i(ajfo.a);
-    public entj i = a();
-    public enss j = ensm.a;
+    public eqgl g = eqgc.i(false);
+    public eqgl h = eqgc.i(algg.a);
+    public eqhc i = a();
+    public eqgl j = eqgf.a;
 
-    public static entj a() {
-        entj entjVar = new entj();
-        entjVar.q(null);
-        return entjVar;
+    public static eqhc a() {
+        eqhc eqhcVar = new eqhc();
+        eqhcVar.q(null);
+        return eqhcVar;
     }
 
     public static final long g(Intent intent) {
@@ -95,42 +95,42 @@ public class D2dEarlySourceChimeraService extends Service {
         return Long.parseLong(stringExtra);
     }
 
-    public static final void h(enss enssVar) {
+    public static final void h(eqgl eqglVar) {
         try {
-            ensj.r(enssVar);
+            eqgc.r(eqglVar);
         } catch (CancellationException unused) {
         } catch (IllegalStateException | ExecutionException e) {
             a.n("Future failed with error", e, new Object[0]);
         }
     }
 
-    public final void b(final aioz aiozVar, final byte[] bArr) {
+    public final void b(final akpp akppVar, final byte[] bArr) {
         boolean e = this.d.e();
         if (this.c.get()) {
             this.i.cancel(false);
             return;
         }
         if (!e) {
-            if (!aiozVar.b()) {
+            if (!akppVar.b()) {
                 this.i.q(null);
                 return;
-            } else if (aiozVar.b()) {
-                aiozVar.a(new Runnable() { // from class: aihb
+            } else if (akppVar.b()) {
+                akppVar.a(new Runnable() { // from class: akhr
                     @Override // java.lang.Runnable
                     public final void run() {
-                        D2dEarlySourceChimeraService.this.b(aiozVar, bArr);
+                        D2dEarlySourceChimeraService.this.b(akppVar, bArr);
                     }
                 });
                 return;
             }
         }
-        aihl aihlVar = new aihl(this, aiozVar, bArr);
-        this.d.b(bArr, new PlayP2pRestoreServiceResultReceiver(this.m, aihlVar, this.q), aihlVar);
+        akib akibVar = new akib(this, akppVar, bArr);
+        this.d.b(bArr, new PlayP2pRestoreServiceResultReceiver(this.m, akibVar, this.q), akibVar);
     }
 
     public final void c() {
         d(0L);
-        ensj.t(this.n.b(), new aihn(), enre.a);
+        eqgc.t(this.n.b(), new akid(), eqex.a);
         this.o.b(this);
         this.n.e();
         f();
@@ -145,158 +145,158 @@ public class D2dEarlySourceChimeraService extends Service {
     }
 
     public final void e(Intent intent) {
-        enss a2;
-        ahwd ahwdVar = a;
-        ahwdVar.h("Starting processing for session ID: %d", Long.valueOf(this.b.get()));
-        ensj.t(this.n.a(), new aihm(), enre.a);
+        eqgl a2;
+        ajwt ajwtVar = a;
+        ajwtVar.h("Starting processing for session ID: %d", Long.valueOf(this.b.get()));
+        eqgc.t(this.n.a(), new akic(), eqex.a);
         this.o.a(this);
         if (this.c.get()) {
-            a2 = ensj.g();
+            a2 = eqgc.g();
         } else {
-            this.h = ensj.m(new Callable() { // from class: aihc
+            this.h = eqgc.m(new Callable() { // from class: akhs
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
-                    ahwd ahwdVar2 = aijp.a;
+                    ajwt ajwtVar2 = akkf.a;
                     D2dEarlySourceChimeraService d2dEarlySourceChimeraService = D2dEarlySourceChimeraService.this;
-                    aivk aivkVar = d2dEarlySourceChimeraService.e;
-                    eijr a3 = eijy.a(new aijo());
-                    fecy fecyVar = fllb.a.a().L().b;
-                    fecj v = ajfl.a.v();
-                    for (ahji ahjiVar : d2dEarlySourceChimeraService.e.c()) {
-                        if (ahjiVar != ahji.APK && !fecyVar.contains(Integer.valueOf(ahjiVar.q))) {
-                            v.cO(ahkt.b(ahjiVar));
+                    akwa akwaVar = d2dEarlySourceChimeraService.e;
+                    ekww a3 = ekxd.a(new akke());
+                    fgrr fgrrVar = focl.a.lK().L().b;
+                    fgrc v = algd.a.v();
+                    for (ajjy ajjyVar : d2dEarlySourceChimeraService.e.c()) {
+                        if (ajjyVar != ajjy.APK && !fgrrVar.contains(Integer.valueOf(ajjyVar.q))) {
+                            v.cO(ajlj.b(ajjyVar));
                         }
                     }
-                    return aijp.b((ajfl) v.Q(), 1, a3, d2dEarlySourceChimeraService, aivkVar);
+                    return akkf.b((algd) v.Q(), 1, a3, d2dEarlySourceChimeraService, akwaVar);
                 }
             }, this.r);
-            if (fllb.w()) {
+            if (focl.w()) {
                 String stringExtra = intent.getStringExtra("p2p_device_token");
                 if (stringExtra == null) {
-                    ahwdVar.d("Got a null p2p device token from source", new Object[0]);
+                    ajwtVar.d("Got a null p2p device token from source", new Object[0]);
                 } else {
                     try {
                         byte[] decode = Base64.decode(stringExtra, 2);
-                        ahwdVar.d("Device Token: %s", Arrays.toString(decode));
-                        this.i = new entj();
-                        b(new aioz(this.p), decode);
+                        ajwtVar.d("Device Token: %s", Arrays.toString(decode));
+                        this.i = new eqhc();
+                        b(new akpp(this.p), decode);
                     } catch (IllegalArgumentException e) {
                         a.g("Failed to decode device token", e, new Object[0]);
                     }
                 }
-                a2 = ensj.d(this.h, this.i).a(new Callable() { // from class: aihd
+                a2 = eqgc.d(this.h, this.i).a(new Callable() { // from class: akht
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
                         D2dEarlySourceChimeraService d2dEarlySourceChimeraService = D2dEarlySourceChimeraService.this;
-                        ajfo ajfoVar = (ajfo) ensj.r(d2dEarlySourceChimeraService.h);
-                        ajfk ajfkVar = (ajfk) ahkt.b(ahji.APK).Q();
-                        aivf a3 = d2dEarlySourceChimeraService.e.a(ajfkVar);
-                        fecj v = ajfn.a.v();
+                        algg alggVar = (algg) eqgc.r(d2dEarlySourceChimeraService.h);
+                        algc algcVar = (algc) ajlj.b(ajjy.APK).Q();
+                        akvv a3 = d2dEarlySourceChimeraService.e.a(algcVar);
+                        fgrc v = algf.a.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        ajfn ajfnVar = (ajfn) v.b;
-                        ajfkVar.getClass();
-                        ajfnVar.c = ajfkVar;
-                        ajfnVar.b |= 1;
+                        algf algfVar = (algf) v.b;
+                        algcVar.getClass();
+                        algfVar.c = algcVar;
+                        algfVar.b |= 1;
                         v.cP(a3.c());
-                        ajfn ajfnVar2 = (ajfn) v.Q();
-                        D2dEarlySourceChimeraService.a.j("Adding flavor summary apk with %d items", Integer.valueOf(ajfnVar2.d.size()));
-                        fecj w = ajfo.a.w(ajfoVar);
+                        algf algfVar2 = (algf) v.Q();
+                        D2dEarlySourceChimeraService.a.j("Adding flavor summary apk with %d items", Integer.valueOf(algfVar2.d.size()));
+                        fgrc w = algg.a.w(alggVar);
                         if (!w.b.L()) {
                             w.U();
                         }
-                        ajfo ajfoVar2 = (ajfo) w.b;
-                        ajfnVar2.getClass();
-                        ajfoVar2.b();
-                        ajfoVar2.c.add(ajfnVar2);
-                        return (ajfo) w.Q();
+                        algg alggVar2 = (algg) w.b;
+                        algfVar2.getClass();
+                        alggVar2.b();
+                        alggVar2.c.add(algfVar2);
+                        return (algg) w.Q();
                     }
                 }, this.r);
             } else {
-                ahwdVar.h("Experiment flag for apk transfer disabled", new Object[0]);
+                ajwtVar.h("Experiment flag for apk transfer disabled", new Object[0]);
                 a2 = this.h;
             }
         }
-        enss g = enps.g(ensi.h(a2), new enqc() { // from class: aihg
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+        eqgl g = eqdl.g(eqgb.h(a2), new eqdv() { // from class: akhw
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 D2dEarlySourceChimeraService d2dEarlySourceChimeraService = D2dEarlySourceChimeraService.this;
                 AtomicLong atomicLong = d2dEarlySourceChimeraService.b;
-                final ajfo ajfoVar = (ajfo) obj;
-                final aijh aijhVar = d2dEarlySourceChimeraService.f;
+                final algg alggVar = (algg) obj;
+                final akjx akjxVar = d2dEarlySourceChimeraService.f;
                 final long j = atomicLong.get();
-                final Function function = new Function() { // from class: aijb
+                final Function function = new Function() { // from class: akjr
                     @Override // java.util.function.Function
                     /* renamed from: andThen */
-                    public final /* synthetic */ Function mo464andThen(Function function2) {
+                    public final /* synthetic */ Function mo479andThen(Function function2) {
                         return Function$CC.$default$andThen(this, function2);
                     }
 
                     @Override // java.util.function.Function
                     public final Object apply(Object obj2) {
-                        ajfw ajfwVar = (ajfw) obj2;
-                        fecj fecjVar = (fecj) ajfwVar.iB(5, null);
-                        fecjVar.X(ajfwVar);
-                        if (!fecjVar.b.L()) {
-                            fecjVar.U();
+                        algo algoVar = (algo) obj2;
+                        fgrc fgrcVar = (fgrc) algoVar.iQ(5, null);
+                        fgrcVar.X(algoVar);
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
                         }
                         long j2 = j;
-                        ajfw ajfwVar2 = (ajfw) fecjVar.b;
-                        ajfw ajfwVar3 = ajfw.a;
-                        ajfwVar2.b |= 1;
-                        ajfwVar2.c = j2;
-                        if (!fecjVar.b.L()) {
-                            fecjVar.U();
+                        algo algoVar2 = (algo) fgrcVar.b;
+                        algo algoVar3 = algo.a;
+                        algoVar2.b |= 1;
+                        algoVar2.c = j2;
+                        if (!fgrcVar.b.L()) {
+                            fgrcVar.U();
                         }
-                        ajfo ajfoVar2 = ajfoVar;
-                        ajfw ajfwVar4 = (ajfw) fecjVar.b;
-                        ajfoVar2.getClass();
-                        ajfwVar4.d = ajfoVar2;
-                        ajfwVar4.b |= 4;
-                        return (ajfw) fecjVar.Q();
+                        algg alggVar2 = alggVar;
+                        algo algoVar4 = (algo) fgrcVar.b;
+                        alggVar2.getClass();
+                        algoVar4.d = alggVar2;
+                        algoVar4.b |= 4;
+                        return (algo) fgrcVar.Q();
                     }
 
                     public final /* synthetic */ Function compose(Function function2) {
                         return Function$CC.$default$compose(this, function2);
                     }
                 };
-                return enps.g(ensi.h(aijhVar.a()), new enqc() { // from class: aijd
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj2) {
+                return eqdl.g(eqgb.h(akjxVar.a()), new eqdv() { // from class: akjt
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj2) {
                         long j2 = j;
                         Long l = (Long) obj2;
                         if (j2 == 0) {
-                            return ensm.a;
+                            return eqgf.a;
                         }
                         final Function function2 = function;
-                        aijh aijhVar2 = aijh.this;
+                        akjx akjxVar2 = akjx.this;
                         if (l.longValue() != j2) {
-                            return aijhVar2.a.b(new eiho() { // from class: aijf
-                                @Override // defpackage.eiho
+                            return akjxVar2.a.b(new ekut() { // from class: akjv
+                                @Override // defpackage.ekut
                                 public final Object apply(Object obj3) {
                                     Object apply;
-                                    apply = Function.this.apply(ajfw.a);
-                                    return (ajfw) apply;
+                                    apply = Function.this.apply(algo.a);
+                                    return (algo) apply;
                                 }
-                            }, enre.a);
+                            }, eqex.a);
                         }
-                        dxkm dxkmVar = aijhVar2.a;
+                        dzwm dzwmVar = akjxVar2.a;
                         Objects.requireNonNull(function2);
-                        return dxkmVar.b(new eiho() { // from class: aije
-                            @Override // defpackage.eiho
+                        return dzwmVar.b(new ekut() { // from class: akju
+                            @Override // defpackage.ekut
                             public final Object apply(Object obj3) {
                                 Object apply;
-                                apply = Function.this.apply((ajfw) obj3);
-                                return (ajfw) apply;
+                                apply = Function.this.apply((algo) obj3);
+                                return (algo) apply;
                             }
-                        }, enre.a);
+                        }, eqex.a);
                     }
-                }, enre.a);
+                }, eqex.a);
             }
         }, this.r);
         this.j = g;
-        ensj.t(g, new aihj(this), this.r);
+        eqgc.t(g, new akhz(this), this.r);
     }
 
     public final void f() {
@@ -317,24 +317,24 @@ public class D2dEarlySourceChimeraService extends Service {
     public final void onCreate() {
         a.j("#onCreate", new Object[0]);
         super.onCreate();
-        this.p = new asmb(1, 9);
-        this.r = new asmf(1, 9);
-        this.q = new asmf(1, 9);
-        Pattern pattern = dxbo.a;
-        dxbn dxbnVar = new dxbn(this);
-        dxbnVar.e("backup");
-        dxbnVar.f("D2dIndexingProtoDataStore.pb");
-        Uri a2 = dxbnVar.a();
-        dxhi a3 = dxhj.a();
+        this.p = new aupv(1, 9);
+        this.r = new aupz(1, 9);
+        this.q = new aupz(1, 9);
+        Pattern pattern = dzno.a;
+        dznn dznnVar = new dznn(this);
+        dznnVar.e("backup");
+        dznnVar.f("D2dIndexingProtoDataStore.pb");
+        Uri a2 = dznnVar.a();
+        dzti a3 = dztj.a();
         a3.f(a2);
-        a3.e(ajfw.a);
-        this.f = new aijh(bxfy.a.a(a3.a()));
-        this.d = new aiph(this, this.q, this.p);
-        this.m = new aipk();
-        this.n = new aias(this, this.p, "com.google.android.gms.backup.component.D2dEarlySourceService");
-        this.o = new aiju();
-        aijx aijxVar = new aijx(this);
-        this.e = aivk.b(this, aikv.a(this, aijxVar), aijxVar, new ahwz(this), this.m, new aiou(this), this.r);
+        a3.e(algo.a);
+        this.f = new akjx(bzoo.a.a(a3.a()));
+        this.d = new akpx(this, this.q, this.p);
+        this.m = new akqa();
+        this.n = new akbi(this, this.p, "com.google.android.gms.backup.component.D2dEarlySourceService");
+        this.o = new akkk();
+        akkn akknVar = new akkn(this);
+        this.e = akwa.b(this, akll.a(this, akknVar), akknVar, new ajxp(this), this.m, new akpk(this), this.r);
     }
 
     @Override // com.google.android.chimera.Service
@@ -349,34 +349,34 @@ public class D2dEarlySourceChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        ahwd ahwdVar = a;
-        ahwdVar.j("#onStartCommand", new Object[0]);
+        ajwt ajwtVar = a;
+        ajwtVar.j("#onStartCommand", new Object[0]);
         if (intent == null) {
-            ahwdVar.m("OnStartCommand called with null intent, not doing any work as there are no pending starts to this service.", new Object[0]);
+            ajwtVar.m("OnStartCommand called with null intent, not doing any work as there are no pending starts to this service.", new Object[0]);
             f();
-        } else if (fllb.x()) {
+        } else if (focl.x()) {
             long g = g(intent);
             if (g == 0) {
-                ahwdVar.h("Did not receive SUW session ID from source", new Object[0]);
+                ajwtVar.h("Did not receive SUW session ID from source", new Object[0]);
                 f();
             } else {
                 AtomicLong atomicLong = this.b;
                 if (atomicLong.get() == g) {
-                    ahwdVar.h("Processing already in progress for session ID: %d", Long.valueOf(g));
+                    ajwtVar.h("Processing already in progress for session ID: %d", Long.valueOf(g));
                 } else if (atomicLong.get() == 0) {
                     long g2 = g(intent);
                     d(g2);
-                    enss b = this.f.b(g2);
+                    eqgl b = this.f.b(g2);
                     this.g = b;
-                    ensj.t(b, new aihh(this, g2, intent), enre.a);
+                    eqgc.t(b, new akhx(this, g2, intent), eqex.a);
                 } else {
-                    ahwdVar.h("Processing in progress for a different session ID", new Object[0]);
-                    ahwdVar.d("Cancelling processing for session ID: %d", Long.valueOf(atomicLong.get()));
+                    ajwtVar.h("Processing in progress for a different session ID", new Object[0]);
+                    ajwtVar.d("Cancelling processing for session ID: %d", Long.valueOf(atomicLong.get()));
                     this.c.set(true);
                     this.g.cancel(false);
                     this.h.cancel(false);
-                    ensa b2 = ensj.b(this.g, this.h, this.i, this.j);
-                    Callable callable = new Callable() { // from class: aihf
+                    eqft b2 = eqgc.b(this.g, this.h, this.i, this.j);
+                    Callable callable = new Callable() { // from class: akhv
                         @Override // java.util.concurrent.Callable
                         public final Object call() {
                             D2dEarlySourceChimeraService d2dEarlySourceChimeraService = D2dEarlySourceChimeraService.this;
@@ -385,21 +385,21 @@ public class D2dEarlySourceChimeraService extends Service {
                             D2dEarlySourceChimeraService.h(d2dEarlySourceChimeraService.j);
                             D2dEarlySourceChimeraService.h(d2dEarlySourceChimeraService.i);
                             D2dEarlySourceChimeraService.a.h("Processing cancelled for session ID: %d", Long.valueOf(d2dEarlySourceChimeraService.b.get()));
-                            d2dEarlySourceChimeraService.g = ensj.i(false);
-                            d2dEarlySourceChimeraService.h = ensj.i(ajfo.a);
-                            d2dEarlySourceChimeraService.j = ensm.a;
+                            d2dEarlySourceChimeraService.g = eqgc.i(false);
+                            d2dEarlySourceChimeraService.h = eqgc.i(algg.a);
+                            d2dEarlySourceChimeraService.j = eqgf.a;
                             d2dEarlySourceChimeraService.i = D2dEarlySourceChimeraService.a();
                             d2dEarlySourceChimeraService.d(0L);
                             d2dEarlySourceChimeraService.c.set(false);
                             return null;
                         }
                     };
-                    enre enreVar = enre.a;
-                    ensj.t(b2.a(callable, enreVar), new aihi(this, intent), enreVar);
+                    eqex eqexVar = eqex.a;
+                    eqgc.t(b2.a(callable, eqexVar), new akhy(this, intent), eqexVar);
                 }
             }
         } else {
-            ahwdVar.h("Early indexing is disabled", new Object[0]);
+            ajwtVar.h("Early indexing is disabled", new Object[0]);
             f();
         }
         return 2;

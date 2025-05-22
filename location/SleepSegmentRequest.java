@@ -4,18 +4,18 @@ import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.arxd;
-import defpackage.bzjb;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.atzs;
+import defpackage.cbrs;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class SleepSegmentRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bzjb();
+    public static final Parcelable.Creator CREATOR = new cbrs();
     public final List a;
     public final int b;
 
@@ -26,7 +26,7 @@ public class SleepSegmentRequest extends AbstractSafeParcelable {
 
     public static SleepSegmentRequest a(Intent intent) {
         if (intent.hasExtra("com.google.android.location.internal.EXTRA_SLEEP_SEGMENT_REQUEST")) {
-            return (SleepSegmentRequest) arxd.b(intent, "com.google.android.location.internal.EXTRA_SLEEP_SEGMENT_REQUEST", CREATOR);
+            return (SleepSegmentRequest) atzs.b(intent, "com.google.android.location.internal.EXTRA_SLEEP_SEGMENT_REQUEST", CREATOR);
         }
         return null;
     }
@@ -49,7 +49,7 @@ public class SleepSegmentRequest extends AbstractSafeParcelable {
             return false;
         }
         SleepSegmentRequest sleepSegmentRequest = (SleepSegmentRequest) obj;
-        return arwb.b(this.a, sleepSegmentRequest.a) && this.b == sleepSegmentRequest.b;
+        return atyq.b(this.a, sleepSegmentRequest.a) && this.b == sleepSegmentRequest.b;
     }
 
     public final int hashCode() {
@@ -58,11 +58,11 @@ public class SleepSegmentRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        arwm.s(parcel);
+        atzb.s(parcel);
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 }

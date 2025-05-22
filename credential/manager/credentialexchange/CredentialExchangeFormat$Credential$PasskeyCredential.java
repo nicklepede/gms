@@ -1,15 +1,15 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.audf;
-import defpackage.audg;
-import defpackage.fipp;
-import defpackage.fvbo;
+import defpackage.awhk;
+import defpackage.awhl;
+import defpackage.flfm;
+import defpackage.fxxm;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
-public final class CredentialExchangeFormat$Credential$PasskeyCredential extends audf {
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
+public final class CredentialExchangeFormat$Credential$PasskeyCredential extends awhk {
     public final String a;
     public final String b;
     public final String c;
@@ -19,13 +19,13 @@ public final class CredentialExchangeFormat$Credential$PasskeyCredential extends
     public final CredentialExchangeFormat$Fido2Extensions g;
 
     public CredentialExchangeFormat$Credential$PasskeyCredential(String str, String str2, String str3, String str4, String str5, String str6, CredentialExchangeFormat$Fido2Extensions credentialExchangeFormat$Fido2Extensions) {
-        fvbo.f(str, "credentialId");
-        fvbo.f(str2, "rpId");
-        fvbo.f(str3, "userName");
-        fvbo.f(str4, "userDisplayName");
-        fvbo.f(str5, "userHandle");
-        fvbo.f(str6, "key");
-        audg audgVar = audg.a;
+        fxxm.f(str, "credentialId");
+        fxxm.f(str2, "rpId");
+        fxxm.f(str3, "userName");
+        fxxm.f(str4, "userDisplayName");
+        fxxm.f(str5, "userHandle");
+        fxxm.f(str6, "key");
+        awhl awhlVar = awhl.a;
         this.a = str;
         this.b = str2;
         this.c = str3;
@@ -43,7 +43,7 @@ public final class CredentialExchangeFormat$Credential$PasskeyCredential extends
             return false;
         }
         CredentialExchangeFormat$Credential$PasskeyCredential credentialExchangeFormat$Credential$PasskeyCredential = (CredentialExchangeFormat$Credential$PasskeyCredential) obj;
-        return fvbo.n(this.a, credentialExchangeFormat$Credential$PasskeyCredential.a) && fvbo.n(this.b, credentialExchangeFormat$Credential$PasskeyCredential.b) && fvbo.n(this.c, credentialExchangeFormat$Credential$PasskeyCredential.c) && fvbo.n(this.d, credentialExchangeFormat$Credential$PasskeyCredential.d) && fvbo.n(this.e, credentialExchangeFormat$Credential$PasskeyCredential.e) && fvbo.n(this.f, credentialExchangeFormat$Credential$PasskeyCredential.f) && fvbo.n(this.g, credentialExchangeFormat$Credential$PasskeyCredential.g);
+        return fxxm.n(this.a, credentialExchangeFormat$Credential$PasskeyCredential.a) && fxxm.n(this.b, credentialExchangeFormat$Credential$PasskeyCredential.b) && fxxm.n(this.c, credentialExchangeFormat$Credential$PasskeyCredential.c) && fxxm.n(this.d, credentialExchangeFormat$Credential$PasskeyCredential.d) && fxxm.n(this.e, credentialExchangeFormat$Credential$PasskeyCredential.e) && fxxm.n(this.f, credentialExchangeFormat$Credential$PasskeyCredential.f) && fxxm.n(this.g, credentialExchangeFormat$Credential$PasskeyCredential.g);
     }
 
     public final int hashCode() {

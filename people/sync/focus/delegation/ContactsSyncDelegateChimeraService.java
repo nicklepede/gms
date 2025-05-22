@@ -2,9 +2,9 @@ package com.google.android.gms.people.sync.focus.delegation;
 
 import android.content.Intent;
 import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
-import defpackage.cuey;
+import defpackage.cwof;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ContactsSyncDelegateChimeraService extends TracingIntentService {
     public ContactsSyncDelegateChimeraService() {
@@ -13,7 +13,7 @@ public final class ContactsSyncDelegateChimeraService extends TracingIntentServi
 
     @Override // com.google.android.gms.framework.tracing.wrapper.TracingIntentService
     protected final void a(Intent intent) {
-        cuey.f("FSA2_ContactsSyncDelegateService", "Sync coordinator disabled. Bailing out");
+        cwof.f("FSA2_ContactsSyncDelegateService", "Sync coordinator disabled. Bailing out");
     }
 
     @Override // com.google.android.chimera.IntentService, com.google.android.chimera.Service

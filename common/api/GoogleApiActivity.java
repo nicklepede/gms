@@ -12,11 +12,11 @@ import android.os.Bundle;
 import android.util.Log;
 import com.google.android.gms.common.ConnectionResult;
 import defpackage.a;
-import defpackage.aqto;
-import defpackage.arbj;
-import defpackage.arwm;
+import defpackage.aswd;
+import defpackage.atdy;
+import defpackage.atzb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class GoogleApiActivity extends Activity implements DialogInterface.OnCancelListener {
     protected int a = 0;
@@ -45,8 +45,8 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
             return;
         }
         if (pendingIntent == null) {
-            arwm.s(num);
-            aqto.a.j(this, num.intValue(), 2, this);
+            atzb.s(num);
+            aswd.a.j(this, num.intValue(), 2, this);
             this.a = 1;
             return;
         }
@@ -64,7 +64,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
         } catch (ActivityNotFoundException e3) {
             e = e3;
             if (extras.getBoolean("notify_manager", true)) {
-                arbj.d(this).g(new ConnectionResult(22, null), getIntent().getIntExtra("failing_client_id", -1));
+                atdy.d(this).g(new ConnectionResult(22, null), getIntent().getIntExtra("failing_client_id", -1));
             } else {
                 String b = a.b(pendingIntent, "Activity not found while launching ", ".");
                 if (Build.FINGERPRINT.contains("generic")) {
@@ -89,7 +89,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
             this.a = 0;
             setResult(i2, intent);
             if (booleanExtra) {
-                arbj d = arbj.d(this);
+                atdy d = atdy.d(this);
                 if (i2 == -1) {
                     d.h();
                 } else if (i2 == 0) {

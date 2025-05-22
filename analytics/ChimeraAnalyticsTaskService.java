@@ -2,42 +2,42 @@ package com.google.android.gms.analytics;
 
 import android.content.Intent;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.byln;
-import defpackage.tlb;
-import defpackage.tlw;
-import defpackage.tny;
-import defpackage.toh;
-import defpackage.toi;
+import defpackage.cauf;
+import defpackage.vhb;
+import defpackage.vhw;
+import defpackage.vjy;
+import defpackage.vkh;
+import defpackage.vki;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ChimeraAnalyticsTaskService extends GmsTaskChimeraService implements toh {
-    private toi a;
+public class ChimeraAnalyticsTaskService extends GmsTaskChimeraService implements vkh {
+    private vki a;
 
-    private final toi d() {
+    private final vki d() {
         if (this.a == null) {
-            this.a = new toi(this);
+            this.a = new vki(this);
         }
         return this.a;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        String str = bylnVar.a;
+    public final int a(cauf caufVar) {
+        String str = caufVar.a;
         if (str.hashCode() != 563533826 || !str.equals("Analytics.AnalyticsTaskService.UPLOAD_TASK_TAG")) {
             return 2;
         }
-        tlb e = tlb.e(this);
-        final tny h = e.h();
-        tlw tlwVar = e.d;
+        vhb e = vhb.e(this);
+        final vjy h = e.h();
+        vhw vhwVar = e.d;
         h.y("Device ChimeraAnalyticsTaskService called.");
         final AtomicBoolean atomicBoolean = new AtomicBoolean(false);
         synchronized (atomicBoolean) {
-            d().c(new Runnable() { // from class: tjg
+            d().c(new Runnable() { // from class: vfg
                 @Override // java.lang.Runnable
                 public final void run() {
-                    tny.this.y("ChimeraAnalyticsTaskService processed last upload request.");
+                    vjy.this.y("ChimeraAnalyticsTaskService processed last upload request.");
                     AtomicBoolean atomicBoolean2 = atomicBoolean;
                     synchronized (atomicBoolean2) {
                         atomicBoolean2.set(true);
@@ -60,8 +60,8 @@ public class ChimeraAnalyticsTaskService extends GmsTaskChimeraService implement
         return 0;
     }
 
-    @Override // defpackage.toh
-    public final boolean fY(int i) {
+    @Override // defpackage.vkh
+    public final boolean gn(int i) {
         throw new UnsupportedOperationException();
     }
 

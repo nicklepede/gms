@@ -1,23 +1,23 @@
 package com.google.android.gms.credential.manager.database;
 
-import defpackage.aupe;
-import defpackage.aupk;
-import defpackage.aupm;
-import defpackage.aupq;
-import defpackage.aups;
-import defpackage.auqa;
-import defpackage.auqe;
-import defpackage.auqf;
-import defpackage.auqg;
-import defpackage.auqh;
-import defpackage.auqi;
-import defpackage.auqj;
-import defpackage.auqk;
-import defpackage.auql;
-import defpackage.auqm;
-import defpackage.auqu;
-import defpackage.kol;
-import defpackage.kpp;
+import defpackage.awte;
+import defpackage.awtk;
+import defpackage.awtm;
+import defpackage.awtq;
+import defpackage.awts;
+import defpackage.awua;
+import defpackage.awue;
+import defpackage.awuf;
+import defpackage.awug;
+import defpackage.awuh;
+import defpackage.awui;
+import defpackage.awuj;
+import defpackage.awuk;
+import defpackage.awul;
+import defpackage.awum;
+import defpackage.awuu;
+import defpackage.mgw;
+import defpackage.mie;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -26,114 +26,114 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
 public final class PwmDatabase_Impl extends PwmDatabase {
-    private volatile aupm l;
-    private volatile aupe m;
-    private volatile aups n;
-    private volatile auqm o;
+    private volatile awtm m;
+    private volatile awte n;
+    private volatile awts o;
+    private volatile awum p;
 
-    @Override // defpackage.kpm
-    protected final kol a() {
-        return new kol(this, new HashMap(0), new HashMap(0), "device_settings_table", "checkup_reencryption_table", "leak_check_reencryption", "weak_check_result");
+    @Override // defpackage.mhx
+    protected final mgw a() {
+        return new mgw(this, new HashMap(0), new HashMap(0), "device_settings_table", "checkup_reencryption_table", "leak_check_reencryption", "weak_check_result");
     }
 
-    @Override // defpackage.kpm
-    protected final /* synthetic */ kpp c() {
-        return new auql(this);
+    @Override // defpackage.mhx
+    protected final /* synthetic */ mie c() {
+        return new awul(this);
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     protected final Map e() {
         HashMap hashMap = new HashMap();
-        hashMap.put(aupm.class, Collections.EMPTY_LIST);
-        hashMap.put(aupe.class, Collections.EMPTY_LIST);
-        hashMap.put(aups.class, Collections.EMPTY_LIST);
-        hashMap.put(auqm.class, Collections.EMPTY_LIST);
+        hashMap.put(awtm.class, Collections.EMPTY_LIST);
+        hashMap.put(awte.class, Collections.EMPTY_LIST);
+        hashMap.put(awts.class, Collections.EMPTY_LIST);
+        hashMap.put(awum.class, Collections.EMPTY_LIST);
         return hashMap;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final Set f() {
         return new HashSet();
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final void k() {
         throw null;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final List s() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(new auqe());
-        arrayList.add(new auqf());
-        arrayList.add(new auqg());
-        arrayList.add(new auqh());
-        arrayList.add(new auqi());
-        arrayList.add(new auqj());
-        arrayList.add(new auqk());
+        arrayList.add(new awue());
+        arrayList.add(new awuf());
+        arrayList.add(new awug());
+        arrayList.add(new awuh());
+        arrayList.add(new awui());
+        arrayList.add(new awuj());
+        arrayList.add(new awuk());
         return arrayList;
     }
 
     @Override // com.google.android.gms.credential.manager.database.PwmDatabase
-    public final aupe v() {
-        aupe aupeVar;
-        if (this.m != null) {
-            return this.m;
-        }
-        synchronized (this) {
-            if (this.m == null) {
-                this.m = new aupk(this);
-            }
-            aupeVar = this.m;
-        }
-        return aupeVar;
-    }
-
-    @Override // com.google.android.gms.credential.manager.database.PwmDatabase
-    public final aupm w() {
-        aupm aupmVar;
-        if (this.l != null) {
-            return this.l;
-        }
-        synchronized (this) {
-            if (this.l == null) {
-                this.l = new aupq(this);
-            }
-            aupmVar = this.l;
-        }
-        return aupmVar;
-    }
-
-    @Override // com.google.android.gms.credential.manager.database.PwmDatabase
-    public final aups x() {
-        aups aupsVar;
+    public final awte v() {
+        awte awteVar;
         if (this.n != null) {
             return this.n;
         }
         synchronized (this) {
             if (this.n == null) {
-                this.n = new auqa(this);
+                this.n = new awtk(this);
             }
-            aupsVar = this.n;
+            awteVar = this.n;
         }
-        return aupsVar;
+        return awteVar;
     }
 
     @Override // com.google.android.gms.credential.manager.database.PwmDatabase
-    public final auqm z() {
-        auqm auqmVar;
+    public final awtm w() {
+        awtm awtmVar;
+        if (this.m != null) {
+            return this.m;
+        }
+        synchronized (this) {
+            if (this.m == null) {
+                this.m = new awtq(this);
+            }
+            awtmVar = this.m;
+        }
+        return awtmVar;
+    }
+
+    @Override // com.google.android.gms.credential.manager.database.PwmDatabase
+    public final awts x() {
+        awts awtsVar;
         if (this.o != null) {
             return this.o;
         }
         synchronized (this) {
             if (this.o == null) {
-                this.o = new auqu(this);
+                this.o = new awua(this);
             }
-            auqmVar = this.o;
+            awtsVar = this.o;
         }
-        return auqmVar;
+        return awtsVar;
+    }
+
+    @Override // com.google.android.gms.credential.manager.database.PwmDatabase
+    public final awum z() {
+        awum awumVar;
+        if (this.p != null) {
+            return this.p;
+        }
+        synchronized (this) {
+            if (this.p == null) {
+                this.p = new awuu(this);
+            }
+            awumVar = this.p;
+        }
+        return awumVar;
     }
 }

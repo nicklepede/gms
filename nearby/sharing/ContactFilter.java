@@ -3,15 +3,15 @@ package com.google.android.gms.nearby.sharing;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.clnx;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cnwf;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ContactFilter extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new clnx();
+    public static final Parcelable.Creator CREATOR = new cnwf();
     public Boolean a;
     public Boolean b;
     public Boolean c;
@@ -26,7 +26,7 @@ public final class ContactFilter extends AbstractSafeParcelable {
         }
         if (obj instanceof ContactFilter) {
             ContactFilter contactFilter = (ContactFilter) obj;
-            if (arwb.b(this.a, contactFilter.a) && arwb.b(this.b, contactFilter.b) && arwb.b(this.c, contactFilter.c) && arwb.b(this.d, contactFilter.d)) {
+            if (atyq.b(this.a, contactFilter.a) && atyq.b(this.b, contactFilter.b) && atyq.b(this.c, contactFilter.c) && atyq.b(this.d, contactFilter.d)) {
                 return true;
             }
         }
@@ -39,12 +39,12 @@ public final class ContactFilter extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.z(parcel, 1, this.a);
-        arxc.z(parcel, 2, this.b);
-        arxc.z(parcel, 3, this.c);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.z(parcel, 1, this.a);
+        atzr.z(parcel, 2, this.b);
+        atzr.z(parcel, 3, this.c);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.c(parcel, a);
     }
 
     public ContactFilter(Boolean bool, Boolean bool2, Boolean bool3, String str) {

@@ -4,24 +4,24 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import com.google.android.material.button.MaterialButton;
-import defpackage.cmub;
-import defpackage.crno;
+import defpackage.cpcj;
+import defpackage.ctwt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class LoadingButton extends MaterialButton {
-    private cmub b;
+    private cpcj b;
 
     public LoadingButton(Context context) {
         super(context);
-        c(context);
+        e(context);
     }
 
-    private final void c(Context context) {
+    private final void e(Context context) {
         getCurrentTextColor();
-        cmub cmubVar = new cmub(context, crno.l(context));
-        this.b = cmubVar;
-        cmubVar.setCallback(this);
+        cpcj cpcjVar = new cpcj(context, ctwt.l(context));
+        this.b = cpcjVar;
+        cpcjVar.setCallback(this);
     }
 
     @Override // android.widget.TextView, android.view.View, android.graphics.drawable.Drawable.Callback
@@ -47,11 +47,11 @@ public class LoadingButton extends MaterialButton {
 
     public LoadingButton(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        c(context);
+        e(context);
     }
 
     public LoadingButton(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        c(context);
+        e(context);
     }
 }

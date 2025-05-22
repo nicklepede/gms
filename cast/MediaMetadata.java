@@ -5,11 +5,11 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.amcc;
-import defpackage.amcd;
-import defpackage.amxr;
-import defpackage.amyr;
-import defpackage.arxc;
+import defpackage.aodn;
+import defpackage.aodo;
+import defpackage.aozc;
+import defpackage.apac;
+import defpackage.atzr;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -20,47 +20,47 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class MediaMetadata extends AbstractSafeParcelable {
-    private static final amcc e;
+    private static final aodn e;
     public final List a;
     public final Bundle b;
     public int c;
     private static final String[] d = {"none", "String", "int", "double", "ISO-8601 date String", "Time in milliseconds as long"};
-    public static final Parcelable.Creator CREATOR = new amcd();
+    public static final Parcelable.Creator CREATOR = new aodo();
 
     static {
-        amcc amccVar = new amcc();
-        amccVar.b("com.google.android.gms.cast.metadata.CREATION_DATE", "creationDateTime", 4);
-        amccVar.b("com.google.android.gms.cast.metadata.RELEASE_DATE", "releaseDate", 4);
-        amccVar.b("com.google.android.gms.cast.metadata.BROADCAST_DATE", "originalAirdate", 4);
-        amccVar.b("com.google.android.gms.cast.metadata.TITLE", "title", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.SUBTITLE", "subtitle", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.ARTIST", "artist", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.ALBUM_ARTIST", "albumArtist", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.ALBUM_TITLE", "albumName", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.COMPOSER", "composer", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.DISC_NUMBER", "discNumber", 2);
-        amccVar.b("com.google.android.gms.cast.metadata.TRACK_NUMBER", "trackNumber", 2);
-        amccVar.b("com.google.android.gms.cast.metadata.SEASON_NUMBER", "season", 2);
-        amccVar.b("com.google.android.gms.cast.metadata.EPISODE_NUMBER", "episode", 2);
-        amccVar.b("com.google.android.gms.cast.metadata.SERIES_TITLE", "seriesTitle", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.STUDIO", "studio", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.WIDTH", "width", 2);
-        amccVar.b("com.google.android.gms.cast.metadata.HEIGHT", "height", 2);
-        amccVar.b("com.google.android.gms.cast.metadata.LOCATION_NAME", "location", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.LOCATION_LATITUDE", "latitude", 3);
-        amccVar.b("com.google.android.gms.cast.metadata.LOCATION_LONGITUDE", "longitude", 3);
-        amccVar.b("com.google.android.gms.cast.metadata.SECTION_DURATION", "sectionDuration", 5);
-        amccVar.b("com.google.android.gms.cast.metadata.SECTION_START_TIME_IN_MEDIA", "sectionStartTimeInMedia", 5);
-        amccVar.b("com.google.android.gms.cast.metadata.SECTION_START_ABSOLUTE_TIME", "sectionStartAbsoluteTime", 5);
-        amccVar.b("com.google.android.gms.cast.metadata.SECTION_START_TIME_IN_CONTAINER", "sectionStartTimeInContainer", 5);
-        amccVar.b("com.google.android.gms.cast.metadata.QUEUE_ITEM_ID", "queueItemId", 2);
-        amccVar.b("com.google.android.gms.cast.metadata.BOOK_TITLE", "bookTitle", 1);
-        amccVar.b("com.google.android.gms.cast.metadata.CHAPTER_NUMBER", "chapterNumber", 2);
-        amccVar.b("com.google.android.gms.cast.metadata.CHAPTER_TITLE", "chapterTitle", 1);
-        e = amccVar;
+        aodn aodnVar = new aodn();
+        aodnVar.b("com.google.android.gms.cast.metadata.CREATION_DATE", "creationDateTime", 4);
+        aodnVar.b("com.google.android.gms.cast.metadata.RELEASE_DATE", "releaseDate", 4);
+        aodnVar.b("com.google.android.gms.cast.metadata.BROADCAST_DATE", "originalAirdate", 4);
+        aodnVar.b("com.google.android.gms.cast.metadata.TITLE", "title", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.SUBTITLE", "subtitle", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.ARTIST", "artist", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.ALBUM_ARTIST", "albumArtist", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.ALBUM_TITLE", "albumName", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.COMPOSER", "composer", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.DISC_NUMBER", "discNumber", 2);
+        aodnVar.b("com.google.android.gms.cast.metadata.TRACK_NUMBER", "trackNumber", 2);
+        aodnVar.b("com.google.android.gms.cast.metadata.SEASON_NUMBER", "season", 2);
+        aodnVar.b("com.google.android.gms.cast.metadata.EPISODE_NUMBER", "episode", 2);
+        aodnVar.b("com.google.android.gms.cast.metadata.SERIES_TITLE", "seriesTitle", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.STUDIO", "studio", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.WIDTH", "width", 2);
+        aodnVar.b("com.google.android.gms.cast.metadata.HEIGHT", "height", 2);
+        aodnVar.b("com.google.android.gms.cast.metadata.LOCATION_NAME", "location", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.LOCATION_LATITUDE", "latitude", 3);
+        aodnVar.b("com.google.android.gms.cast.metadata.LOCATION_LONGITUDE", "longitude", 3);
+        aodnVar.b("com.google.android.gms.cast.metadata.SECTION_DURATION", "sectionDuration", 5);
+        aodnVar.b("com.google.android.gms.cast.metadata.SECTION_START_TIME_IN_MEDIA", "sectionStartTimeInMedia", 5);
+        aodnVar.b("com.google.android.gms.cast.metadata.SECTION_START_ABSOLUTE_TIME", "sectionStartAbsoluteTime", 5);
+        aodnVar.b("com.google.android.gms.cast.metadata.SECTION_START_TIME_IN_CONTAINER", "sectionStartTimeInContainer", 5);
+        aodnVar.b("com.google.android.gms.cast.metadata.QUEUE_ITEM_ID", "queueItemId", 2);
+        aodnVar.b("com.google.android.gms.cast.metadata.BOOK_TITLE", "bookTitle", 1);
+        aodnVar.b("com.google.android.gms.cast.metadata.CHAPTER_NUMBER", "chapterNumber", 2);
+        aodnVar.b("com.google.android.gms.cast.metadata.CHAPTER_TITLE", "chapterTitle", 1);
+        e = aodnVar;
     }
 
     public MediaMetadata(List list, Bundle bundle, int i) {
@@ -115,7 +115,7 @@ public class MediaMetadata extends AbstractSafeParcelable {
         h(str, 4);
         String string = this.b.getString(str);
         if (string != null) {
-            return amyr.a(string);
+            return apac.a(string);
         }
         return null;
     }
@@ -126,7 +126,7 @@ public class MediaMetadata extends AbstractSafeParcelable {
             jSONObject.put("metadataType", this.c);
         } catch (JSONException unused) {
         }
-        JSONArray b = amyr.b(this.a);
+        JSONArray b = apac.b(this.a);
         if (b.length() != 0) {
             try {
                 jSONObject.put("images", b);
@@ -154,10 +154,10 @@ public class MediaMetadata extends AbstractSafeParcelable {
                 if (str != null) {
                     Bundle bundle = this.b;
                     if (bundle.containsKey(str)) {
-                        amcc amccVar = e;
-                        String str2 = (String) amccVar.a.get(str);
+                        aodn aodnVar = e;
+                        String str2 = (String) aodnVar.a.get(str);
                         if (str2 != null) {
-                            int a = amccVar.a(str);
+                            int a = aodnVar.a(str);
                             if (a != 1) {
                                 if (a == 2) {
                                     jSONObject.put(str2, bundle.getInt(str));
@@ -165,7 +165,7 @@ public class MediaMetadata extends AbstractSafeParcelable {
                                     jSONObject.put(str2, bundle.getDouble(str));
                                 } else if (a != 4) {
                                     if (a == 5) {
-                                        jSONObject.put(str2, amxr.a(bundle.getLong(str)));
+                                        jSONObject.put(str2, aozc.a(bundle.getLong(str)));
                                     }
                                 }
                             }
@@ -202,7 +202,7 @@ public class MediaMetadata extends AbstractSafeParcelable {
         }
         JSONArray optJSONArray = jSONObject.optJSONArray("images");
         if (optJSONArray != null) {
-            amyr.c(this.a, optJSONArray);
+            apac.c(this.a, optJSONArray);
         }
         ArrayList arrayList = new ArrayList();
         int i = this.c;
@@ -226,8 +226,8 @@ public class MediaMetadata extends AbstractSafeParcelable {
             while (keys.hasNext()) {
                 String next = keys.next();
                 if (next != null && !"metadataType".equals(next)) {
-                    amcc amccVar = e;
-                    String str = (String) amccVar.b.get(next);
+                    aodn aodnVar = e;
+                    String str = (String) aodnVar.b.get(next);
                     if (str == null) {
                         Object obj = jSONObject.get(next);
                         if (obj instanceof String) {
@@ -241,7 +241,7 @@ public class MediaMetadata extends AbstractSafeParcelable {
                         try {
                             Object obj2 = jSONObject.get(next);
                             if (obj2 != null) {
-                                int a = amccVar.a(str);
+                                int a = aodnVar.a(str);
                                 if (a != 1) {
                                     if (a != 2) {
                                         if (a == 3) {
@@ -251,11 +251,11 @@ public class MediaMetadata extends AbstractSafeParcelable {
                                             }
                                         } else if (a != 4) {
                                             if (a == 5) {
-                                                this.b.putLong(str, amxr.d(jSONObject.optLong(next)));
+                                                this.b.putLong(str, aozc.d(jSONObject.optLong(next)));
                                             }
                                         } else if (obj2 instanceof String) {
                                             String str2 = (String) obj2;
-                                            if (amyr.a(str2) != null) {
+                                            if (apac.a(str2) != null) {
                                                 this.b.putString(str, str2);
                                             }
                                         }
@@ -316,11 +316,11 @@ public class MediaMetadata extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 2, list, false);
-        arxc.g(parcel, 3, this.b, false);
-        arxc.o(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 2, list, false);
+        atzr.g(parcel, 3, this.b, false);
+        atzr.o(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 
     public MediaMetadata() {

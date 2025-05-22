@@ -2,21 +2,21 @@ package com.google.android.gms.fido.u2f.api.common;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bcqn;
-import defpackage.eiib;
-import defpackage.eiic;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.besa;
+import defpackage.ekvg;
+import defpackage.ekvh;
 import java.util.Arrays;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public class ErrorResponseData extends ResponseData {
-    public static final Parcelable.Creator CREATOR = new bcqn();
+    public static final Parcelable.Creator CREATOR = new besa();
     public final ErrorCode a;
     public final String b;
 
@@ -25,7 +25,7 @@ public class ErrorResponseData extends ResponseData {
         this.b = str;
     }
 
-    @Override // defpackage.bbji
+    @Override // defpackage.bdnf
     public final JSONObject a() {
         JSONObject jSONObject = new JSONObject();
         try {
@@ -45,7 +45,7 @@ public class ErrorResponseData extends ResponseData {
             return false;
         }
         ErrorResponseData errorResponseData = (ErrorResponseData) obj;
-        return arwb.b(this.a, errorResponseData.a) && arwb.b(this.b, errorResponseData.b);
+        return atyq.b(this.a, errorResponseData.a) && atyq.b(this.b, errorResponseData.b);
     }
 
     public final int hashCode() {
@@ -53,7 +53,7 @@ public class ErrorResponseData extends ResponseData {
     }
 
     public final String toString() {
-        eiib b = eiic.b(this);
+        ekvg b = ekvh.b(this);
         b.f("errorCode", this.a.g);
         String str = this.b;
         if (str != null) {
@@ -64,20 +64,20 @@ public class ErrorResponseData extends ResponseData {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, this.a.g);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, this.a.g);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.c(parcel, a);
     }
 
     public ErrorResponseData(ErrorCode errorCode) {
-        arwm.s(errorCode);
+        atzb.s(errorCode);
         this.a = errorCode;
         this.b = null;
     }
 
     public ErrorResponseData(ErrorCode errorCode, String str) {
-        arwm.s(errorCode);
+        atzb.s(errorCode);
         this.a = errorCode;
         this.b = str;
     }

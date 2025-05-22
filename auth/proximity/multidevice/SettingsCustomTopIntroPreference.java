@@ -5,9 +5,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import com.android.settingslib.widget.TopIntroPreference;
-import defpackage.kmp;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 class SettingsCustomTopIntroPreference extends TopIntroPreference {
     public SettingsCustomTopIntroPreference(Context context) {
@@ -15,9 +15,9 @@ class SettingsCustomTopIntroPreference extends TopIntroPreference {
     }
 
     @Override // com.android.settingslib.widget.TopIntroPreference, androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        View view = (View) kmpVar.D(R.id.title).getParent();
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        View view = (View) mfaVar.D(R.id.title).getParent();
         view.setPadding(view.getPaddingLeft(), 0, view.getPaddingRight(), view.getPaddingBottom());
     }
 

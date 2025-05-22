@@ -2,11 +2,11 @@ package com.google.android.gms.phonesky.recovery;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.cwhj;
+import defpackage.cyrg;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RollbackCommittedIntentOperation extends IntentOperation {
     public static final BlockingQueue a = new LinkedBlockingQueue();
@@ -17,7 +17,7 @@ public class RollbackCommittedIntentOperation extends IntentOperation {
         if ("android.intent.action.ROLLBACK_COMMITTED".equals(intent.getAction())) {
             a.add(intent);
         } else {
-            cwhj.b("Invalid rollback committed intent", new Object[0]);
+            cyrg.b("Invalid rollback committed intent", new Object[0]);
         }
     }
 }

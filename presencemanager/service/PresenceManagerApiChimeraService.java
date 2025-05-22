@@ -1,18 +1,18 @@
 package com.google.android.gms.presencemanager.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.cwsz;
-import defpackage.cwta;
-import defpackage.cwtb;
-import defpackage.cwtr;
-import defpackage.cwvp;
-import defpackage.cwvq;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.czcw;
+import defpackage.czcx;
+import defpackage.czcy;
+import defpackage.czdo;
+import defpackage.czfm;
+import defpackage.czfn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class PresenceManagerApiChimeraService extends bxgd {
+public class PresenceManagerApiChimeraService extends bzot {
     /* JADX WARN: Illegal instructions before constructor call */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -22,22 +22,22 @@ public class PresenceManagerApiChimeraService extends bxgd {
         /*
             r7 = this;
             java.util.Set r3 = java.util.Collections.EMPTY_SET
-            eius r0 = new eius
+            elhx r0 = new elhx
             r0.<init>()
             r1 = 44
-            eijj r2 = defpackage.eijj.e(r1)
-            java.lang.String r4 = defpackage.frpp.e()
+            ekwo r2 = defpackage.ekwo.e(r1)
+            java.lang.String r4 = defpackage.fujv.e()
             java.util.List r2 = r2.n(r4)
             r0.k(r2)
-            eijj r2 = defpackage.eijj.e(r1)
-            java.lang.String r4 = defpackage.frpp.g()
+            ekwo r2 = defpackage.ekwo.e(r1)
+            java.lang.String r4 = defpackage.fujv.g()
             java.util.List r2 = r2.n(r4)
             r0.k(r2)
-            eijj r1 = defpackage.eijj.e(r1)
-            java.lang.String r2 = defpackage.frpp.f()
+            ekwo r1 = defpackage.ekwo.e(r1)
+            java.lang.String r2 = defpackage.fujv.f()
             java.util.List r1 = r1.n(r2)
             r0.k(r1)
-            eiuu r6 = r0.g()
+            elhz r6 = r0.g()
             r4 = 0
             r5 = 10
             r1 = 293(0x125, float:4.1E-43)
@@ -49,11 +49,11 @@ public class PresenceManagerApiChimeraService extends bxgd {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.presencemanager.service.PresenceManagerApiChimeraService.<init>():void");
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        cwsz b = cwtb.a().b();
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        czcw b = czcy.a().b();
         b.b(getServiceRequest.f);
-        cwta a = b.a();
-        bxgjVar.c(new cwtr(l(), a.a(), getServiceRequest.f, getServiceRequest.p, new cwvp((cwvq) a.a.l.a())));
+        czcx a = b.a();
+        bzozVar.c(new czdo(l(), a.a(), getServiceRequest.f, getServiceRequest.p, new czfm((czfn) a.a.l.a())));
     }
 }

@@ -5,35 +5,35 @@ import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.R;
 import com.google.android.gms.autofill.data.DomainUtils$DomainParcel;
 import com.google.android.gms.autofill.operation.RejectSavePromoOperation;
-import defpackage.adsf;
-import defpackage.adtr;
-import defpackage.aery;
-import defpackage.aerz;
-import defpackage.aeyb;
-import defpackage.afjd;
-import defpackage.afqc;
-import defpackage.ageb;
-import defpackage.aggx;
-import defpackage.agkv;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.eiir;
-import defpackage.eijr;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.flfc;
+import defpackage.afsm;
+import defpackage.afty;
+import defpackage.agsl;
+import defpackage.agsm;
+import defpackage.agyo;
+import defpackage.ahjp;
+import defpackage.ahqo;
+import defpackage.aier;
+import defpackage.aihn;
+import defpackage.aill;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.ekvw;
+import defpackage.ekww;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.fnwp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class RejectSavePromoOperation extends IntentOperation {
     public static final /* synthetic */ int a = 0;
-    private static final asot b = asot.b("RejectSavePromoOperation", asej.AUTOFILL);
+    private static final ausn b = ausn.b("RejectSavePromoOperation", auid.AUTOFILL);
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
@@ -41,26 +41,26 @@ public final class RejectSavePromoOperation extends IntentOperation {
         Intent intent2;
         int length;
         Intent intent3;
-        aggx j = aery.a(this).j();
-        if (!adtr.a.equals(j.z())) {
-            ((ejhf) ((ejhf) b.j()).ah((char) 1035)).x("RejectSavePromoOperation called when already setup");
+        aihn j = agsl.a(this).j();
+        if (!afty.a.equals(j.z())) {
+            ((eluo) ((eluo) b.j()).ai((char) 1029)).x("RejectSavePromoOperation called when already setup");
             return;
         }
-        aerz a2 = aery.a(this);
-        aeyb x = a2.x(this);
-        if (flfc.i()) {
-            adsf adsfVar = (adsf) eiid.i((DomainUtils$DomainParcel) intent.getParcelableExtra("save_application_domain")).b(new eiho() { // from class: afkg
-                @Override // defpackage.eiho
+        agsm a2 = agsl.a(this);
+        agyo x = a2.x(this);
+        if (fnwp.i()) {
+            afsm afsmVar = (afsm) ekvi.i((DomainUtils$DomainParcel) intent.getParcelableExtra("save_application_domain")).b(new ekut() { // from class: ahks
+                @Override // defpackage.ekut
                 public final Object apply(Object obj) {
                     int i = RejectSavePromoOperation.a;
-                    return (adsf) ((DomainUtils$DomainParcel) obj).a;
+                    return (afsm) ((DomainUtils$DomainParcel) obj).a;
                 }
             }).f();
-            if (adsfVar != null) {
-                String str = adsfVar.a;
+            if (afsmVar != null) {
+                String str = afsmVar.a;
                 j.W(str);
-                if (flfc.a.a().b() && j.s(str) >= ageb.c) {
-                    intent3 = agkv.A(R.string.autofill_manage_save_preferences, eiid.j(agkv.r()));
+                if (fnwp.a.lK().b() && j.s(str) >= aier.c) {
+                    intent3 = aill.A(R.string.autofill_manage_save_preferences, ekvi.j(aill.r()));
                     intent2 = intent3;
                     z = false;
                 }
@@ -70,9 +70,9 @@ public final class RejectSavePromoOperation extends IntentOperation {
             z = false;
         } else {
             j.ap();
-            if (j.w() >= ageb.c) {
-                ((ejhf) ((ejhf) b.h()).ah((char) 1034)).x("Disabling Autofill with Google");
-                ((afjd) ((eiir) a2.p()).a).d();
+            if (j.w() >= aier.c) {
+                ((eluo) ((eluo) b.h()).ai((char) 1028)).x("Disabling Autofill with Google");
+                ((ahjp) ((ekvw) a2.p()).a).d();
                 a2.a().disableAutofillServices();
                 z = true;
             } else {
@@ -83,28 +83,28 @@ public final class RejectSavePromoOperation extends IntentOperation {
         try {
             byte[] byteArrayExtra = intent.getByteArrayExtra("save_ui_action_event_extra");
             if (byteArrayExtra != null && (length = byteArrayExtra.length) != 0) {
-                afqc afqcVar = afqc.a;
-                febw febwVar = febw.a;
-                feep feepVar = feep.a;
-                fecp y = fecp.y(afqcVar, byteArrayExtra, 0, length, febw.a);
-                fecp.M(y);
-                afqc afqcVar2 = (afqc) y;
-                fecj fecjVar = (fecj) afqcVar2.iB(5, null);
-                fecjVar.X(afqcVar2);
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                ahqo ahqoVar = ahqo.a;
+                fgqp fgqpVar = fgqp.a;
+                fgti fgtiVar = fgti.a;
+                fgri y = fgri.y(ahqoVar, byteArrayExtra, 0, length, fgqp.a);
+                fgri.M(y);
+                ahqo ahqoVar2 = (ahqo) y;
+                fgrc fgrcVar = (fgrc) ahqoVar2.iQ(5, null);
+                fgrcVar.X(ahqoVar2);
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                ((afqc) fecjVar.b).j = z;
-                final afqc afqcVar3 = (afqc) fecjVar.Q();
-                x.b().P(new eijr() { // from class: afkh
-                    @Override // defpackage.eijr
-                    public final Object a() {
+                ((ahqo) fgrcVar.b).j = z;
+                final ahqo ahqoVar3 = (ahqo) fgrcVar.Q();
+                x.b().P(new ekww() { // from class: ahkt
+                    @Override // defpackage.ekww
+                    public final Object lK() {
                         int i = RejectSavePromoOperation.a;
-                        return afqc.this;
+                        return ahqo.this;
                     }
                 });
             }
-        } catch (fedk unused) {
+        } catch (fgsd unused) {
         }
         if (intent2 != null) {
             startActivity(intent2);

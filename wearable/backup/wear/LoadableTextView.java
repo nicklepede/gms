@@ -7,10 +7,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
-import defpackage.eiig;
-import defpackage.rpq;
+import defpackage.ekvl;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class LoadableTextView extends RelativeLayout {
     private final TextView a;
@@ -41,13 +41,13 @@ public final class LoadableTextView extends RelativeLayout {
             if (gravity != 8388627) {
                 return;
             }
-            eiig.x(layoutParams);
+            ekvl.y(layoutParams);
             layoutParams.addRule(15);
             return;
         }
-        eiig.x(layoutParams);
+        ekvl.y(layoutParams);
         layoutParams.addRule(13);
-        eiig.x(layoutParams2);
+        ekvl.y(layoutParams2);
         layoutParams2.addRule(13);
     }
 
@@ -66,7 +66,7 @@ public final class LoadableTextView extends RelativeLayout {
         this.b = linearProgressIndicator;
         int dimensionPixelSize = context.getResources().getDimensionPixelSize(R.dimen.wear_backup_settings_placeholder_bar_width);
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.h, 0, 0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.h, 0, 0);
             dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(0, dimensionPixelSize);
             obtainStyledAttributes.recycle();
         }

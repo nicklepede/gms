@@ -16,123 +16,123 @@ import com.google.android.gms.smartdevice.d2d.VerificationInfo;
 import com.google.android.gms.smartdevice.quickstart.AccountSelectionData;
 import com.google.android.gms.smartdevice.quickstart.SourceQuickStartChimeraService;
 import com.google.android.gms.smartdevice.quickstart.ui.SourceQuickStartChimeraActivity;
-import defpackage.abv;
-import defpackage.aqto;
-import defpackage.aqxo;
-import defpackage.aqyd;
-import defpackage.arkc;
-import defpackage.arwm;
-import defpackage.arxo;
-import defpackage.asiu;
-import defpackage.asoe;
+import defpackage.aca;
+import defpackage.aswd;
+import defpackage.atad;
+import defpackage.atas;
+import defpackage.atmr;
+import defpackage.atzb;
+import defpackage.auad;
+import defpackage.aumo;
+import defpackage.aury;
 import defpackage.bp;
 import defpackage.cq;
-import defpackage.ddne;
-import defpackage.ddnr;
-import defpackage.ddnt;
-import defpackage.ddot;
-import defpackage.ddpk;
-import defpackage.ddtw;
-import defpackage.ddvb;
-import defpackage.ddve;
-import defpackage.ddvy;
-import defpackage.ddwd;
-import defpackage.ddzc;
-import defpackage.ddzd;
-import defpackage.deag;
-import defpackage.deal;
-import defpackage.deam;
-import defpackage.deav;
-import defpackage.debx;
-import defpackage.deby;
-import defpackage.decc;
-import defpackage.degp;
-import defpackage.degq;
-import defpackage.degt;
-import defpackage.degu;
-import defpackage.deiw;
-import defpackage.deix;
-import defpackage.dekl;
-import defpackage.dekm;
-import defpackage.dekq;
-import defpackage.delx;
-import defpackage.demq;
-import defpackage.demz;
-import defpackage.denq;
-import defpackage.denx;
-import defpackage.dfah;
-import defpackage.dfak;
+import defpackage.dfyj;
+import defpackage.dfyw;
+import defpackage.dfyy;
+import defpackage.dfzy;
 import defpackage.dg;
-import defpackage.edjy;
-import defpackage.eiid;
-import defpackage.eixf;
-import defpackage.eloy;
-import defpackage.elpa;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fsdd;
-import defpackage.fsfn;
-import defpackage.qex;
+import defpackage.dgap;
+import defpackage.dgfb;
+import defpackage.dggg;
+import defpackage.dggj;
+import defpackage.dghd;
+import defpackage.dghi;
+import defpackage.dgkg;
+import defpackage.dgkh;
+import defpackage.dglk;
+import defpackage.dglp;
+import defpackage.dglq;
+import defpackage.dglz;
+import defpackage.dgna;
+import defpackage.dgnb;
+import defpackage.dgnf;
+import defpackage.dgrs;
+import defpackage.dgrt;
+import defpackage.dgrw;
+import defpackage.dgrx;
+import defpackage.dgtz;
+import defpackage.dgua;
+import defpackage.dgvo;
+import defpackage.dgvp;
+import defpackage.dgvt;
+import defpackage.dgxa;
+import defpackage.dgxt;
+import defpackage.dgyc;
+import defpackage.dgyt;
+import defpackage.dgza;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.efwt;
+import defpackage.ekvi;
+import defpackage.elkk;
+import defpackage.eocm;
+import defpackage.eoco;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fuya;
+import defpackage.fvak;
+import defpackage.ryb;
 import j$.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, edjy, dekl, debx, dekq, ddpk, degp, degt {
-    public static final denq h = new denq(new String[]{"SourceQuickStartChimeraActivity"});
-    public ddve i;
-    public ddvb j;
-    public ddzc k;
-    public eiid l;
+public class SourceQuickStartChimeraActivity extends ryb implements dfyy, dgtz, efwt, dgvo, dgna, dgvt, dgap, dgrs, dgrw {
+    public static final dgyt h = new dgyt(new String[]{"SourceQuickStartChimeraActivity"});
+    public dggj i;
+    public dggg j;
+    public dgkg k;
+    public ekvi l;
     public int m;
     public PostTransferAction o;
     public VerificationInfo p;
-    dekm s;
+    dgvp s;
     private ServiceConnection u;
-    private abv v;
-    private elpa w;
-    private denx x;
+    private aca v;
+    private eoco w;
+    private dgza x;
     private WifiManager y;
-    private aqxo z;
+    private atad z;
     public String n = null;
     public boolean q = false;
     public int r = 0;
     public int t = 101;
 
     private final dg M(boolean z, boolean z2, boolean z3) {
-        deal dealVar = new deal();
-        dealVar.d = z;
-        dealVar.e = z2;
-        dealVar.f = z3;
-        dealVar.g = this.r;
-        dealVar.d(getString(R.string.common_continue), 6004);
-        dealVar.e(getString(R.string.quick_start_permissions_secondary_button), 6005);
-        return dealVar.f();
+        dglp dglpVar = new dglp();
+        dglpVar.d = z;
+        dglpVar.e = z2;
+        dglpVar.f = z3;
+        dglpVar.g = this.r;
+        dglpVar.d(getString(R.string.common_continue), 6004);
+        dglpVar.e(getString(R.string.quick_start_permissions_secondary_button), 6005);
+        return dglpVar.f();
     }
 
     private final dg N(boolean z) {
         if (!z) {
-            ddot ddotVar = new ddot();
-            ddotVar.b = getString(R.string.smartdevice_quick_start_continue_on_new_device);
-            ddotVar.c = getString(R.string.smartdevice_quick_start_continue_on_new_device_description);
-            ddotVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
-            return ddotVar.a();
+            dfzy dfzyVar = new dfzy();
+            dfzyVar.b = getString(R.string.smartdevice_quick_start_continue_on_new_device);
+            dfzyVar.c = getString(R.string.smartdevice_quick_start_continue_on_new_device_description);
+            dfzyVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
+            return dfzyVar.a();
         }
         if (!J()) {
-            ddnr ddnrVar = new ddnr(null);
-            ddnrVar.b = getString(R.string.common_connecting);
-            ddnrVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
-            ddnrVar.c = getString(R.string.smartdevice_atv_transition_description);
-            return ddnrVar.b();
+            dfyw dfywVar = new dfyw(null);
+            dfywVar.b = getString(R.string.common_connecting);
+            dfywVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
+            dfywVar.c = getString(R.string.smartdevice_atv_transition_description);
+            return dfywVar.b();
         }
-        ddot ddotVar2 = new ddot();
-        ddotVar2.b = getString(R.string.common_connecting);
-        ddotVar2.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
-        ddotVar2.e = true;
-        ddotVar2.c = getString(R.string.smartdevice_atv_transition_description);
-        return ddotVar2.a();
+        dfzy dfzyVar2 = new dfzy();
+        dfzyVar2.b = getString(R.string.common_connecting);
+        dfzyVar2.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
+        dfzyVar2.e = true;
+        dfzyVar2.c = getString(R.string.smartdevice_atv_transition_description);
+        return dfzyVar2.a();
     }
 
     private final void O() {
@@ -167,15 +167,15 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         }
     }
 
-    @Override // defpackage.degt
+    @Override // defpackage.dgrw
     public final void A(List list) {
         try {
-            ddve ddveVar = this.i;
-            ddwd ddwdVar = new ddwd();
-            ddwdVar.a = 10;
-            ddwdVar.b(list);
-            ddveVar.r(ddwdVar.a());
-            if (fsfn.r() && list.isEmpty()) {
+            dggj dggjVar = this.i;
+            dghi dghiVar = new dghi();
+            dghiVar.a = 10;
+            dghiVar.b(list);
+            dggjVar.r(dghiVar.a());
+            if (fvak.q() && list.isEmpty()) {
                 h.d("User skipped fallback challenge, closing activity", new Object[0]);
                 this.k.g(10905, null);
                 finishAndRemoveTask();
@@ -186,13 +186,13 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         }
     }
 
-    @Override // defpackage.dekq
+    @Override // defpackage.dgvt
     public final void B() {
-        this.k.e(eloy.PIN_NOT_MATCH);
+        this.k.e(eocm.PIN_NOT_MATCH);
         v();
     }
 
-    @Override // defpackage.dekq
+    @Override // defpackage.dgvt
     public final void C() {
         try {
             this.i.d();
@@ -201,14 +201,14 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         }
     }
 
-    @Override // defpackage.debx
+    @Override // defpackage.dgna
     public final void D(int i) {
         if (i == 0) {
-            this.k.e(eloy.USER_VERIFIED);
+            this.k.e(eocm.USER_VERIFIED);
         } else if (i == 2) {
-            this.k.e(eloy.USER_VERIFICATION_UNAVAILABLE);
+            this.k.e(eocm.USER_VERIFICATION_UNAVAILABLE);
         } else {
-            this.k.e(eloy.USER_VERIFICATION_SKIPPED);
+            this.k.e(eocm.USER_VERIFICATION_SKIPPED);
         }
         if (this.t == 203) {
             this.t = 202;
@@ -235,9 +235,9 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
     }
 
     public final void F(dg dgVar) {
-        bp bpVar = new bp(gI());
-        if (!demq.b(this)) {
-            if (dgVar instanceof deag) {
+        bp bpVar = new bp(gY());
+        if (!dgxt.b(this)) {
+            if (dgVar instanceof dglk) {
                 bpVar.G(android.R.anim.fade_in, android.R.anim.fade_out);
             } else {
                 bpVar.A(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out, R.anim.sud_slide_back_in, R.anim.sud_slide_back_out);
@@ -248,17 +248,17 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
     }
 
     public final void G() {
-        cq x = deix.x(1, getString(R.string.common_something_went_wrong), getString(R.string.smartdevice_connection_error), getString(R.string.common_ok), null, false);
-        bp bpVar = new bp(gI());
+        cq x = dgua.x(1, getString(R.string.common_something_went_wrong), getString(R.string.smartdevice_connection_error), getString(R.string.common_ok), null, false);
+        bp bpVar = new bp(gY());
         bpVar.v(x, "smartdevice.dialogfragment");
         bpVar.b();
-        if (fsfn.a.a().V()) {
-            this.k.e(eloy.SOMETHING_WENT_WRONG);
+        if (fvak.a.lK().U()) {
+            this.k.e(eocm.SOMETHING_WENT_WRONG);
         }
     }
 
     public final void H() {
-        if (!deby.z(this)) {
+        if (!dgnb.z(this)) {
             D(2);
             return;
         }
@@ -267,16 +267,16 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         } catch (RemoteException e) {
             h.n("Failed to send await user verification message", e, new Object[0]);
         }
-        this.k.e(eloy.SHOW_USER_VERIFICATION_PROMPT);
-        ddnr ddnrVar = new ddnr(null);
-        ddnrVar.b = getString(R.string.smartdevice_user_verification_loading_title);
-        ddnrVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
-        F(ddnrVar.c());
+        this.k.e(eocm.SHOW_USER_VERIFICATION_PROMPT);
+        dfyw dfywVar = new dfyw(null);
+        dfywVar.b = getString(R.string.smartdevice_user_verification_loading_title);
+        dfywVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
+        F(dfywVar.c());
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:18:0x006d, code lost:
     
-        if ((r3 / defpackage.fsfn.f()) >= (r2.f / defpackage.fsfn.f())) goto L18;
+        if ((r3 / defpackage.fvak.f()) >= (r2.f / defpackage.fvak.f())) goto L18;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -285,7 +285,7 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
     public final void I(com.google.android.gms.smartdevice.d2d.BootstrapOptions r10) {
         /*
             r9 = this;
-            denq r0 = com.google.android.gms.smartdevice.quickstart.ui.SourceQuickStartChimeraActivity.h
+            dgyt r0 = com.google.android.gms.smartdevice.quickstart.ui.SourceQuickStartChimeraActivity.h
             r1 = 0
             java.lang.Object[] r2 = new java.lang.Object[r1]
             java.lang.String r3 = "startPostTransferAction()"
@@ -297,7 +297,7 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             boolean r3 = android.text.TextUtils.isEmpty(r3)
             if (r3 != 0) goto Lb6
             java.lang.String r3 = r2.e
-            defpackage.arwm.s(r3)
+            defpackage.atzb.s(r3)
             long r4 = r2.f
             java.lang.Long r4 = java.lang.Long.valueOf(r4)
             r5 = 2
@@ -309,8 +309,8 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             r0.d(r4, r5)
             android.content.pm.PackageManager r4 = r9.getPackageManager()
             java.lang.String r5 = r2.e
-            defpackage.arwm.s(r5)
-            boolean r5 = defpackage.dene.c(r5, r4)
+            defpackage.atzb.s(r5)
+            boolean r5 = defpackage.dgyh.c(r5, r4)
             if (r5 != 0) goto L4f
             long r4 = r2.f
             java.lang.Long r10 = java.lang.Long.valueOf(r4)
@@ -321,15 +321,15 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             goto L70
         L4f:
             java.lang.String r3 = r2.e
-            defpackage.arwm.s(r3)
-            long r3 = defpackage.dene.a(r3, r4)
+            defpackage.atzb.s(r3)
+            long r3 = defpackage.dgyh.a(r3, r4)
             java.lang.Object[] r5 = new java.lang.Object[r1]
             java.lang.String r6 = "%s is installed with version %d, target version is %d"
             r0.d(r6, r5)
-            long r5 = defpackage.fsfn.f()
+            long r5 = defpackage.fvak.f()
             long r3 = r3 / r5
             long r5 = r2.f
-            long r7 = defpackage.fsfn.f()
+            long r7 = defpackage.fvak.f()
             long r5 = r5 / r7
             int r3 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
             if (r3 < 0) goto L70
@@ -338,16 +338,16 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             java.lang.Object[] r10 = new java.lang.Object[r1]
             java.lang.String r3 = "Launching OEM app install activity"
             r0.h(r3, r10)
-            ddzc r10 = r9.k     // Catch: java.lang.IllegalStateException -> La8
+            dgkg r10 = r9.k     // Catch: java.lang.IllegalStateException -> La8
             r0 = 3
             r10.n(r0)     // Catch: java.lang.IllegalStateException -> La8
-            abv r10 = r9.v     // Catch: java.lang.IllegalStateException -> La8
+            aca r10 = r9.v     // Catch: java.lang.IllegalStateException -> La8
             java.lang.String r0 = r2.e     // Catch: java.lang.IllegalStateException -> La8
-            defpackage.arwm.s(r0)     // Catch: java.lang.IllegalStateException -> La8
-            r2 = 2132089858(0x7f151c02, float:1.982004E38)
+            defpackage.atzb.s(r0)     // Catch: java.lang.IllegalStateException -> La8
+            r2 = 2132089983(0x7f151c7f, float:1.9820293E38)
             java.lang.String r2 = r9.getString(r2)     // Catch: java.lang.IllegalStateException -> La8
             java.lang.String r3 = "Package display name cannot be null"
-            defpackage.arwm.t(r2, r3)     // Catch: java.lang.IllegalStateException -> La8
+            defpackage.atzb.t(r2, r3)     // Catch: java.lang.IllegalStateException -> La8
             android.content.Intent r3 = new android.content.Intent     // Catch: java.lang.IllegalStateException -> La8
             r3.<init>()     // Catch: java.lang.IllegalStateException -> La8
             java.lang.String r4 = "com.google.android.gms.quickstart.oem.OemAppInstallActivity"
@@ -360,7 +360,7 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             return
         La8:
             r10 = move-exception
-            denq r0 = com.google.android.gms.smartdevice.quickstart.ui.SourceQuickStartChimeraActivity.h
+            dgyt r0 = com.google.android.gms.smartdevice.quickstart.ui.SourceQuickStartChimeraActivity.h
             java.lang.Object[] r1 = new java.lang.Object[r1]
             java.lang.String r2 = "Failed to launch OEM App Installer."
             r0.n(r2, r10, r1)
@@ -374,7 +374,7 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             java.lang.String r3 = "Post transfer action is null"
             r0.m(r3, r2)
         Lc1:
-            dcyb r10 = r10.p()
+            dfjg r10 = r10.p()
             r2 = 19
             boolean r10 = r10.b(r2)
             if (r10 == 0) goto Ld8
@@ -394,19 +394,19 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
     }
 
     public final boolean J() {
-        return fsdd.g() && asoe.l(this) && arkc.k(this);
+        return fuya.g() && aury.l(this) && atmr.k(this);
     }
 
     public final boolean K() {
         return this.t >= 200;
     }
 
-    @Override // defpackage.dekl
-    public final void L(delx delxVar, int i, int i2) {
+    @Override // defpackage.dgvo
+    public final void L(dgxa dgxaVar, int i, int i2) {
         Bundle bundle = new Bundle();
-        bundle.putString("wifi_ssid", delxVar.a);
-        bundle.putString("wifi_pre_shared_key", delxVar.e);
-        bundle.putString("wifi_security_type", delxVar.c);
+        bundle.putString("wifi_ssid", dgxaVar.a);
+        bundle.putString("wifi_pre_shared_key", dgxaVar.e);
+        bundle.putString("wifi_security_type", dgxaVar.c);
         bundle.putBoolean("wifi_hidden_ssid", false);
         try {
             this.i.m(bundle);
@@ -416,33 +416,33 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         }
     }
 
-    @Override // defpackage.ddnt
+    @Override // defpackage.dfyy
     public final void c(int i, Bundle bundle) {
         switch (i) {
             case 6000:
-                demz.b(this.z, new dfak() { // from class: deat
-                    @Override // defpackage.dfak
-                    public final void gn(Object obj) {
+                dgyc.b(this.z, new dhlq() { // from class: dglx
+                    @Override // defpackage.dhlq
+                    public final void gC(Object obj) {
                         SourceQuickStartChimeraActivity.h.d("location is enabled", new Object[0]);
                     }
-                }, new dfah() { // from class: deau
-                    @Override // defpackage.dfah
-                    public final void gm(Exception exc) {
+                }, new dhln() { // from class: dgly
+                    @Override // defpackage.dhln
+                    public final void gB(Exception exc) {
                         SourceQuickStartChimeraActivity.this.w(exc);
                     }
                 });
                 break;
             case 6001:
-                this.k.e(eloy.LOCATION_PROMPT_DENIED);
+                this.k.e(eocm.LOCATION_PROMPT_DENIED);
                 h.j("Location permission denied on Pre S device, finishing activity", new Object[0]);
                 v();
                 break;
             case 6002:
                 h.d("Update required, user chose to update GmsCore", new Object[0]);
                 this.k.l(2);
-                arxo arxoVar = ddvy.a;
-                Intent k = aqto.a.k(this, 2, null);
-                arwm.s(k);
+                auad auadVar = dghd.a;
+                Intent k = aswd.a.k(this, 2, null);
+                atzb.s(k);
                 startActivity(k);
                 finishAndRemoveTask();
                 break;
@@ -453,12 +453,12 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
                 break;
             case 6004:
                 this.t = 101;
-                this.k.e(eloy.PERMISSIONS_PROMPT_CONFIRMED);
+                this.k.e(eocm.PERMISSIONS_PROMPT_CONFIRMED);
                 F(N(this.l.h()));
                 n();
                 break;
             case 6005:
-                this.k.e(eloy.PERMISSIONS_PROMPT_DENIED);
+                this.k.e(eocm.PERMISSIONS_PROMPT_DENIED);
                 v();
                 break;
             case 6006:
@@ -473,8 +473,8 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         }
     }
 
-    @Override // defpackage.edjy
-    public final void gs() {
+    @Override // defpackage.efwt
+    public final void gH() {
         onBackPressed();
     }
 
@@ -517,10 +517,10 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             r0.<init>(r11)
             throw r0
         L1b:
-            boolean r11 = defpackage.demz.a(r10)
+            boolean r11 = defpackage.dgyc.a(r10)
             r11 = r11 ^ r0
-            denx r1 = r10.x
-            defpackage.arwm.s(r1)
+            dgza r1 = r10.x
+            defpackage.atzb.s(r1)
             boolean r1 = r1.d()
             r1 = r1 ^ r0
             android.net.wifi.WifiManager r2 = r10.y
@@ -529,61 +529,61 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             dg r11 = r10.M(r11, r1, r0)
             return r11
         L36:
-            r11 = 2132091268(0x7f152184, float:1.98229E38)
+            r11 = 2132091406(0x7f15220e, float:1.982318E38)
             java.lang.String r11 = r10.getString(r11)
-            dekm r11 = defpackage.dekm.D(r11, r0)
+            dgvp r11 = defpackage.dgvp.D(r11, r0)
             r10.s = r11
             return r11
         L44:
-            ddnr r11 = new ddnr
+            dfyw r11 = new dfyw
             r0 = 0
             r11.<init>(r0)
-            r0 = 2132091414(0x7f152216, float:1.9823196E38)
+            r0 = 2132091551(0x7f15229f, float:1.9823473E38)
             java.lang.String r0 = r10.getString(r0)
             r11.b = r0
-            r0 = 2131232963(0x7f0808c3, float:1.808205E38)
+            r0 = 2131233027(0x7f080903, float:1.808218E38)
             r11.a = r0
-            deby r11 = r11.c()
+            dgnb r11 = r11.c()
             return r11
         L5d:
             com.google.android.gms.smartdevice.d2d.VerificationInfo r11 = r10.p
             int r0 = r11.b
-            elta r1 = defpackage.elta.b(r0)
+            eogo r1 = defpackage.eogo.b(r0)
             java.lang.String r2 = r11.a
-            r8 = 2132091370(0x7f1521ea, float:1.9823106E38)
-            dcxh r9 = defpackage.dcxh.PHONE
+            r8 = 2132091508(0x7f152274, float:1.9823386E38)
+            dfim r9 = defpackage.dfim.PHONE
             r3 = 1
             r4 = 1
-            r5 = 2132091372(0x7f1521ec, float:1.982311E38)
-            r7 = 2132091371(0x7f1521eb, float:1.9823108E38)
+            r5 = 2132091510(0x7f152276, float:1.982339E38)
+            r7 = 2132091509(0x7f152275, float:1.9823388E38)
             r6 = r5
-            dekr r11 = defpackage.dekr.z(r1, r2, r3, r4, r5, r6, r7, r8, r9)
+            dgvu r11 = defpackage.dgvu.z(r1, r2, r3, r4, r5, r6, r7, r8, r9)
             return r11
         L7a:
-            eiid r11 = r10.l
+            ekvi r11 = r10.l
             boolean r11 = r11.h()
             dg r11 = r10.N(r11)
             return r11
         L85:
-            ddot r11 = new ddot
+            dfzy r11 = new dfzy
             r11.<init>()
-            r0 = 2131231941(0x7f0804c5, float:1.8079977E38)
+            r0 = 2131231968(0x7f0804e0, float:1.8080032E38)
             r11.a = r0
-            r0 = 2132091365(0x7f1521e5, float:1.9823096E38)
+            r0 = 2132091503(0x7f15226f, float:1.9823376E38)
             java.lang.String r0 = r10.getString(r0)
             r11.b = r0
-            r0 = 2132091364(0x7f1521e4, float:1.9823094E38)
+            r0 = 2132091502(0x7f15226e, float:1.9823374E38)
             java.lang.String r0 = r10.getString(r0)
             r11.c = r0
-            r0 = 2132084623(0x7f15078f, float:1.9809422E38)
+            r0 = 2132084624(0x7f150790, float:1.9809424E38)
             java.lang.String r0 = r10.getString(r0)
             r1 = 6000(0x1770, float:8.408E-42)
             r11.e(r0, r1)
-            r0 = 2132089753(0x7f151b99, float:1.9819827E38)
+            r0 = 2132089874(0x7f151c12, float:1.9820072E38)
             java.lang.String r0 = r10.getString(r0)
             r1 = 6001(0x1771, float:8.409E-42)
             r11.f(r0, r1)
-            ddou r11 = r11.a()
+            dfzz r11 = r11.a()
             return r11
         Lbe:
             r11 = 0
@@ -601,7 +601,7 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
                 return stringExtra;
             }
         }
-        return decc.c(this, this.r);
+        return dgnf.c(this, this.r);
     }
 
     protected final void n() {
@@ -609,21 +609,21 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         Intent intent = new Intent();
         intent.setClassName(this, "com.google.android.gms.smartdevice.quickstart.SourceQuickStartService");
         startService(intent);
-        this.u = new deav(this);
-        asiu.a().d(this, intent, this.u, 1);
+        this.u = new dglz(this);
+        aumo.a().d(this, intent, this.u, 1);
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void o(int i) {
         this.k.g(10599, null);
         try {
             try {
-                if (fsfn.w()) {
-                    ddve ddveVar = this.i;
-                    ddwd ddwdVar = new ddwd();
-                    ddwdVar.a = 11;
-                    ddwdVar.d = 10599;
-                    ddveVar.r(ddwdVar.a());
+                if (fvak.v()) {
+                    dggj dggjVar = this.i;
+                    dghi dghiVar = new dghi();
+                    dghiVar.a = 11;
+                    dghiVar.d = 10599;
+                    dggjVar.r(dghiVar.a());
                 } else {
                     Bundle bundle = new Bundle();
                     bundle.putInt("source_error", 10599);
@@ -637,16 +637,16 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
-        denq denqVar = h;
+        dgyt dgytVar = h;
         Integer valueOf = Integer.valueOf(i);
         Integer valueOf2 = Integer.valueOf(i2);
-        denqVar.d("onActivityResult requestCode: %d, resultCode: %d", valueOf, valueOf2);
+        dgytVar.d("onActivityResult requestCode: %d, resultCode: %d", valueOf, valueOf2);
         super.onActivityResult(i, i2, intent);
         if (i == 4) {
-            dg g = gI().g(R.id.fragment_container);
-            if (g instanceof deam) {
+            dg g = gY().g(R.id.fragment_container);
+            if (g instanceof dglq) {
                 g.onActivityResult(i, i2, intent);
                 return;
             }
@@ -657,20 +657,20 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         }
         if (i2 == -1) {
             if (intent == null) {
-                denqVar.f("QR code scanner returned OK but is missing data", new Object[0]);
+                dgytVar.f("QR code scanner returned OK but is missing data", new Object[0]);
                 O();
                 return;
             }
             String stringExtra = intent.getStringExtra("qr-code-contents");
             if (stringExtra == null) {
-                denqVar.f("QR code result is missing key '%s'", "qr-code-contents");
+                dgytVar.f("QR code result is missing key '%s'", "qr-code-contents");
                 O();
                 return;
             }
-            denqVar.d("Scanned QR contents: ".concat(stringExtra), new Object[0]);
+            dgytVar.d("Scanned QR contents: ".concat(stringExtra), new Object[0]);
             String queryParameter = Uri.parse(stringExtra).getQueryParameter("key");
             if (queryParameter == null) {
-                denqVar.f("QR code is missing parameter '%s'", "key");
+                dgytVar.f("QR code is missing parameter '%s'", "key");
                 O();
                 return;
             }
@@ -684,19 +684,19 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             }
         }
         if (i2 == 0) {
-            denqVar.h("QR code scanner was cancelled by system", new Object[0]);
+            dgytVar.h("QR code scanner was cancelled by system", new Object[0]);
             v();
             return;
         }
         if (i2 == 5001) {
-            denqVar.d("User cancelled QR code scanner, exiting...", new Object[0]);
-            this.k.e(eloy.CANCEL_QR_SCANNER);
+            dgytVar.d("User cancelled QR code scanner, exiting...", new Object[0]);
+            this.k.e(eocm.CANCEL_QR_SCANNER);
             v();
             return;
         }
         if (i2 == 5003) {
-            denqVar.d("User triggered pin fallback", new Object[0]);
-            this.k.e(eloy.PIN_FALLBACK_TRIGGERED);
+            dgytVar.d("User triggered pin fallback", new Object[0]);
+            this.k.e(eocm.PIN_FALLBACK_TRIGGERED);
             try {
                 this.i.n();
                 E();
@@ -706,62 +706,62 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
                 return;
             }
         }
-        denqVar.f("QR code scanner errored with code: %d", valueOf2);
-        ddzc ddzcVar = this.k;
-        fecj v = ddne.a.v();
+        dgytVar.f("QR code scanner errored with code: %d", valueOf2);
+        dgkg dgkgVar = this.k;
+        fgrc v = dfyj.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ddne ddneVar = (ddne) fecpVar;
-        ddneVar.c = 4;
-        ddneVar.b = 1 | ddneVar.b;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        dfyj dfyjVar = (dfyj) fgriVar;
+        dfyjVar.c = 4;
+        dfyjVar.b = 1 | dfyjVar.b;
+        if (!fgriVar.L()) {
             v.U();
         }
-        ddne ddneVar2 = (ddne) v.b;
-        ddneVar2.b |= 2;
-        ddneVar2.d = i2;
-        ddzcVar.g(10802, (ddne) v.Q());
+        dfyj dfyjVar2 = (dfyj) v.b;
+        dfyjVar2.b |= 2;
+        dfyjVar2.d = i2;
+        dgkgVar.g(10802, (dfyj) v.Q());
         O();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
-        denq denqVar = h;
-        denqVar.m("onBackPressed", new Object[0]);
+        dgyt dgytVar = h;
+        dgytVar.m("onBackPressed", new Object[0]);
         if (K()) {
-            denqVar.m("Closing activity in state: %s", Integer.valueOf(this.t));
+            dgytVar.m("Closing activity in state: %s", Integer.valueOf(this.t));
             moveTaskToBack(true);
         } else if (this.t == 101) {
             v();
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        denq denqVar = h;
-        denqVar.d("onConfigurationChange()", new Object[0]);
+        dgyt dgytVar = h;
+        dgytVar.d("onConfigurationChange()", new Object[0]);
         int i = this.t;
         if (i != 102 && i != 105 && i != 203 && i != 204 && i != 205) {
             dg l = l(i);
-            bp bpVar = new bp(gI());
+            bp bpVar = new bp(gY());
             bpVar.F(R.id.fragment_container, l);
             bpVar.b();
         }
-        dg g = gI().g(R.id.fragment_container);
-        if (fsfn.w()) {
-            if (g instanceof degu) {
-                denqVar.d("AccountChallengeFragmentV2 is visible - reloading", new Object[0]);
-                ((degu) g).x();
+        dg g = gY().g(R.id.fragment_container);
+        if (fvak.v()) {
+            if (g instanceof dgrx) {
+                dgytVar.d("AccountChallengeFragmentV2 is visible - reloading", new Object[0]);
+                ((dgrx) g).x();
                 return;
             }
             return;
         }
-        if (g instanceof degq) {
-            denqVar.d("AccountChallengeFragment is visible - reloading", new Object[0]);
-            ((degq) g).y();
+        if (g instanceof dgrt) {
+            dgytVar.d("AccountChallengeFragment is visible - reloading", new Object[0]);
+            ((dgrt) g).y();
         }
     }
 
@@ -773,7 +773,7 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
     /* JADX WARN: Removed duplicated region for block: B:64:0x02c6  */
     /* JADX WARN: Removed duplicated region for block: B:70:0x0343  */
     /* JADX WARN: Removed duplicated region for block: B:73:0x034e  */
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -786,7 +786,7 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.smartdevice.quickstart.ui.SourceQuickStartChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         h.d("onDestroy() at state: %d", Integer.valueOf(this.t));
         int i = this.t;
@@ -794,10 +794,10 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
             D(1);
         }
         long hashCode = UUID.randomUUID().hashCode();
-        ddve ddveVar = this.i;
-        if (ddveVar != null) {
+        dggj dggjVar = this.i;
+        if (dggjVar != null) {
             try {
-                ddveVar.s(hashCode);
+                dggjVar.s(hashCode);
             } catch (RemoteException e) {
                 h.l(e);
             }
@@ -809,31 +809,31 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         if (this.u != null) {
             h.d("Unbinding Service", new Object[0]);
             try {
-                asiu.a().b(this, this.u);
+                aumo.a().b(this, this.u);
             } catch (IllegalArgumentException | IllegalStateException e2) {
                 h.l(e2);
             }
         }
         this.k.d(hashCode);
         this.k.c();
-        ddzd.e();
+        dgkh.e();
         super.onDestroy();
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         h.d("onSaveInstanceState state: %d", Integer.valueOf(this.t));
         bundle.putInt("state", this.t);
         super.onSaveInstanceState(bundle);
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void p(ArrayList arrayList) {
         Bundle bundle = new Bundle();
         bundle.putParcelableArrayList("accounts", arrayList);
         try {
             this.i.q(bundle);
-            if (fsfn.r() && arrayList.isEmpty()) {
+            if (fvak.q() && arrayList.isEmpty()) {
                 h.d("User skipped fallback challenge, closing activity", new Object[0]);
                 this.k.g(10905, null);
                 finishAndRemoveTask();
@@ -844,12 +844,12 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         }
     }
 
-    @Override // defpackage.ddpk
+    @Override // defpackage.dgap
     public final void q() {
         P(2, null);
     }
 
-    @Override // defpackage.ddpk
+    @Override // defpackage.dgap
     public final void r(int i, Bundle bundle) {
         if (i != 1) {
             return;
@@ -857,19 +857,19 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         P(3, null);
     }
 
-    @Override // defpackage.ddpk
+    @Override // defpackage.dgap
     public final void s() {
         P(1, null);
     }
 
-    @Override // defpackage.ddpk
+    @Override // defpackage.dgap
     public final void t(ArrayList arrayList) {
         P(0, new AccountSelectionData(arrayList));
     }
 
-    @Override // defpackage.deiw
+    @Override // defpackage.dgtz
     public final void u(int i, int i2) {
-        delx delxVar;
+        dgxa dgxaVar;
         if (i == 1) {
             v();
             return;
@@ -877,16 +877,16 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         if (i != 2) {
             return;
         }
-        dekm dekmVar = this.s;
-        arwm.s(dekmVar);
-        if (!dekmVar.ag || (delxVar = dekmVar.ah) == null) {
+        dgvp dgvpVar = this.s;
+        atzb.s(dgvpVar);
+        if (!dgvpVar.ag || (dgxaVar = dgvpVar.ah) == null) {
             return;
         }
-        dekmVar.b.c(delxVar.a);
-        delx delxVar2 = dekmVar.ah;
-        delxVar2.d = 10;
-        dekmVar.b.b(delxVar2);
-        dekmVar.b.notifyDataSetChanged();
+        dgvpVar.b.c(dgxaVar.a);
+        dgxa dgxaVar2 = dgvpVar.ah;
+        dgxaVar2.d = 10;
+        dgvpVar.b.b(dgxaVar2);
+        dgvpVar.b.notifyDataSetChanged();
     }
 
     public final void v() {
@@ -895,19 +895,19 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
     }
 
     public final void w(Exception exc) {
-        if (!(exc instanceof aqyd)) {
+        if (!(exc instanceof atas)) {
             h.n("Unresolvable exception", exc, new Object[0]);
             return;
         }
         try {
-            ((aqyd) exc).c(getContainerActivity(), 4);
+            ((atas) exc).c(getContainerActivity(), 4);
         } catch (IntentSender.SendIntentException e) {
             h.l(e);
         }
     }
 
     public final void y(PostTransferAction postTransferAction) {
-        Intent a = ddtw.a(this, postTransferAction);
+        Intent a = dgfb.a(this, postTransferAction);
         if (a == null) {
             h.f("Post transfer intent resolved to null", new Object[0]);
             return;
@@ -922,11 +922,11 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
     public final void z() {
         try {
             this.t = 102;
-            ArrayList<String> b = eixf.b(eixf.d(fsfn.l()));
-            boolean z = fsfn.o() && this.p.c;
+            ArrayList<String> b = elkk.b(elkk.d(fvak.l()));
+            boolean z = fvak.o() && this.p.c;
             String string = getString(R.string.smartdevice_quick_start_qr_code_scanner_title, new Object[]{m()});
-            arwm.r(string, "Title cannot be empty or null!");
-            this.k.e(eloy.LAUNCH_QR_SCANNER);
+            atzb.r(string, "Title cannot be empty or null!");
+            this.k.e(eocm.LAUNCH_QR_SCANNER);
             Intent intent = new Intent();
             intent.setClassName(this, "com.google.android.gms.quickstart.qr.QrCodeScannerActivity");
             intent.putStringArrayListExtra("url-prefixes", b);
@@ -941,11 +941,11 @@ public class SourceQuickStartChimeraActivity extends qex implements ddnt, deiw, 
         }
     }
 
-    @Override // defpackage.edjy
-    public final void jw() {
+    @Override // defpackage.efwt
+    public final void jM() {
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void x(String str) {
     }
 }

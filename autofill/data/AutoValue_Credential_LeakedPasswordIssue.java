@@ -2,12 +2,12 @@ package com.google.android.gms.autofill.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.adsh;
+import defpackage.afso;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class AutoValue_Credential_LeakedPasswordIssue extends C$AutoValue_Credential_LeakedPasswordIssue {
-    public static final Parcelable.Creator CREATOR = new adsh();
+    public static final Parcelable.Creator CREATOR = new afso();
 
     public AutoValue_Credential_LeakedPasswordIssue(long j, boolean z) {
         super(j, z);

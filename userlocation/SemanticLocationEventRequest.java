@@ -3,15 +3,15 @@ package com.google.android.gms.userlocation;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.dhsy;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.dkeg;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class SemanticLocationEventRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dhsy();
+    public static final Parcelable.Creator CREATOR = new dkeg();
     public final String a;
     public final int b;
     public final EstimationOptions c;
@@ -26,21 +26,21 @@ public class SemanticLocationEventRequest extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("requestId", this.a, arrayList);
-        arwa.b("priority", Integer.valueOf(this.b), arrayList);
-        arwa.b("eventTypes", Integer.valueOf(this.d), arrayList);
-        arwa.b("options", this.c, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("requestId", this.a, arrayList);
+        atyp.b("priority", Integer.valueOf(this.b), arrayList);
+        atyp.b("eventTypes", Integer.valueOf(this.d), arrayList);
+        atyp.b("options", this.c, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.o(parcel, 4, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.o(parcel, 4, this.d);
+        atzr.c(parcel, a);
     }
 }

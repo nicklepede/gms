@@ -3,13 +3,13 @@ package com.google.android.gms.auth.account.demoaccount;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.vir;
+import defpackage.atzr;
+import defpackage.xes;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SetUpDemoAccountResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new vir();
+    public static final Parcelable.Creator CREATOR = new xes();
     public final int a;
     public final String b;
     public final int c;
@@ -23,10 +23,10 @@ public class SetUpDemoAccountResponse extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 }

@@ -3,15 +3,15 @@ package com.google.android.gms.romanesco.protomodel;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cxpz;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.czzw;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SourceStatsEntity extends AbstractSafeParcelable implements SourceStats {
-    public static final Parcelable.Creator CREATOR = new cxpz();
+    public static final Parcelable.Creator CREATOR = new czzw();
     public final String a;
     public final Integer b;
     public final Integer c;
@@ -45,7 +45,7 @@ public class SourceStatsEntity extends AbstractSafeParcelable implements SourceS
             return true;
         }
         SourceStats sourceStats = (SourceStats) obj;
-        return arwb.b(c(), sourceStats.c()) && arwb.b(a(), sourceStats.a()) && arwb.b(b(), sourceStats.b());
+        return atyq.b(c(), sourceStats.c()) && atyq.b(a(), sourceStats.a()) && atyq.b(b(), sourceStats.b());
     }
 
     public final int hashCode() {
@@ -55,14 +55,14 @@ public class SourceStatsEntity extends AbstractSafeParcelable implements SourceS
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.F(parcel, 3, this.b);
-        arxc.F(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.F(parcel, 3, this.b);
+        atzr.F(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

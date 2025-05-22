@@ -2,26 +2,26 @@ package com.google.android.gms.adid.service;
 
 import android.content.Intent;
 import android.util.Log;
-import defpackage.anya;
-import defpackage.asng;
+import defpackage.apzs;
+import defpackage.aura;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class ModifyAdIdProviderServiceStateIntentOperation extends anya {
+public final class ModifyAdIdProviderServiceStateIntentOperation extends apzs {
     private static final void e() {
         try {
-            asng.M("com.google.android.gms.adid.service.AdIdProviderService", 0);
+            aura.M("com.google.android.gms.adid.service.AdIdProviderService", 0);
         } catch (IllegalArgumentException e) {
             Log.e("AdIdProviderService", "Exception caught when modifying AdIdProviderService state: ".concat(String.valueOf(e.getMessage())));
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
         e();
     }
 
-    @Override // defpackage.anya, com.google.android.chimera.IntentOperation
+    @Override // defpackage.apzs, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         if (intent != null) {
             String action = intent.getAction();

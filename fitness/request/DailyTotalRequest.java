@@ -6,27 +6,27 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fitness.data.DataType;
-import defpackage.arxc;
-import defpackage.bghg;
-import defpackage.bgki;
+import defpackage.atzr;
+import defpackage.bilw;
+import defpackage.bioy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DailyTotalRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgki();
+    public static final Parcelable.Creator CREATOR = new bioy();
     public final DataType a;
     public final boolean b;
-    public final bghg c;
+    public final bilw c;
 
     public DailyTotalRequest(IBinder iBinder, DataType dataType, boolean z) {
-        bghg bghgVar;
+        bilw bilwVar;
         if (iBinder == null) {
-            bghgVar = null;
+            bilwVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.IDailyTotalCallback");
-            bghgVar = queryLocalInterface instanceof bghg ? (bghg) queryLocalInterface : new bghg(iBinder);
+            bilwVar = queryLocalInterface instanceof bilw ? (bilw) queryLocalInterface : new bilw(iBinder);
         }
-        this.c = bghgVar;
+        this.c = bilwVar;
         this.a = dataType;
         this.b = z;
     }
@@ -38,10 +38,10 @@ public class DailyTotalRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.c.a);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.e(parcel, 4, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.c.a);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.e(parcel, 4, this.b);
+        atzr.c(parcel, a);
     }
 }

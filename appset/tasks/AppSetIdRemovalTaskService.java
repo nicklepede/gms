@@ -6,72 +6,72 @@ import com.google.android.gms.ads.internal.c;
 import com.google.android.gms.appset.tasks.AppSetIdRemovalTaskService;
 import com.google.android.gms.chimera.modules.appset.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.byln;
-import defpackage.eiho;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fkan;
-import defpackage.uhk;
-import defpackage.ujf;
+import defpackage.cauf;
+import defpackage.ekut;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fmqs;
+import defpackage.wdj;
+import defpackage.wfe;
 import j$.util.DesugarCollections;
 import java.util.HashMap;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AppSetIdRemovalTaskService extends GmsTaskBoundService {
     public static final /* synthetic */ int a = 0;
-    private uhk b;
+    private wdj b;
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        if (!fkan.g()) {
-            return ensj.i(0);
+    public final eqgl iB(cauf caufVar) {
+        if (!fmqs.g()) {
+            return eqgc.i(0);
         }
         final Context a2 = AppContextProvider.a();
-        final uhk uhkVar = this.b;
-        return enox.f(enps.f(ensi.h(uhkVar.c.c(new enqc() { // from class: uha
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                uio uioVar = (uio) obj;
-                fecj fecjVar = (fecj) uioVar.iB(5, null);
-                fecjVar.X(uioVar);
-                HashMap hashMap = new HashMap(DesugarCollections.unmodifiableMap(DesugarCollections.unmodifiableMap(((uio) fecjVar.b).b)));
+        final wdj wdjVar = this.b;
+        return eqcq.f(eqdl.f(eqgb.h(wdjVar.c.c(new eqdv() { // from class: wcz
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                wen wenVar = (wen) obj;
+                fgrc fgrcVar = (fgrc) wenVar.iQ(5, null);
+                fgrcVar.X(wenVar);
+                HashMap hashMap = new HashMap(DesugarCollections.unmodifiableMap(DesugarCollections.unmodifiableMap(((wen) fgrcVar.b).b)));
                 for (String str : hashMap.keySet()) {
-                    uik uikVar = (uik) hashMap.get(str);
+                    wej wejVar = (wej) hashMap.get(str);
                     c.j();
-                    fefi h = fegx.h(System.currentTimeMillis());
-                    if (!uhk.g(uikVar, h)) {
+                    fgub h = fgvq.h(System.currentTimeMillis());
+                    if (!wdj.g(wejVar, h)) {
                         Context context = a2;
-                        uhk.this.a.b(context, str);
-                        fecjVar.bj(str);
-                        uhk.e(context, uikVar, h);
+                        wdj.this.a.b(context, str);
+                        fgrcVar.bj(str);
+                        wdj.e(context, wejVar, h);
                     }
                 }
-                return ensj.i((uio) fecjVar.Q());
+                return eqgc.i((wen) fgrcVar.Q());
             }
-        }, uhkVar.b)), new eiho() { // from class: uiy
-            @Override // defpackage.eiho
+        }, wdjVar.b)), new ekut() { // from class: wex
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 int i = AppSetIdRemovalTaskService.a;
                 return 0;
             }
-        }, ujf.a()), Throwable.class, new eiho() { // from class: uiz
-            @Override // defpackage.eiho
+        }, wfe.a()), Throwable.class, new ekut() { // from class: wey
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 int i = AppSetIdRemovalTaskService.a;
                 d.d(a2, "PvidRemovalTaskFailure", "PVID removal task failed.");
                 return 2;
             }
-        }, ujf.a());
+        }, wfe.a());
     }
 
-    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         super.onCreate();
-        this.b = uhk.b(AppContextProvider.a());
+        this.b = wdj.b(AppContextProvider.a());
     }
 }

@@ -2,30 +2,30 @@ package com.google.android.gms.crisisalerts.handler.presenters;
 
 import android.content.Intent;
 import android.net.Uri;
-import defpackage.asnv;
-import defpackage.asot;
-import defpackage.asqx;
-import defpackage.axbl;
-import defpackage.axbo;
-import defpackage.axda;
-import defpackage.axdg;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fedk;
-import defpackage.fefi;
-import defpackage.fegf;
-import defpackage.fegx;
-import defpackage.fezs;
-import defpackage.ffaa;
-import defpackage.ffae;
+import defpackage.aurp;
+import defpackage.ausn;
+import defpackage.auur;
+import defpackage.azfl;
+import defpackage.azfo;
+import defpackage.azha;
+import defpackage.azhg;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgsd;
+import defpackage.fgub;
+import defpackage.fguy;
+import defpackage.fgvq;
+import defpackage.fhoq;
+import defpackage.fhoy;
+import defpackage.fhpc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class EventLoggerIntentOperation extends axbl {
-    private static final asot d = axdg.a("ELogIO");
-    public axda a;
-    public axbo b;
-    public asnv c;
+public class EventLoggerIntentOperation extends azfl {
+    private static final ausn d = azhg.a("ELogIO");
+    public azha a;
+    public azfo b;
+    public aurp c;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
@@ -34,9 +34,9 @@ public class EventLoggerIntentOperation extends axbl {
             return;
         }
         try {
-            ffaa ffaaVar = (ffaa) fegf.c(intent, "ex_al", ffaa.a, febw.a());
-            ffae ffaeVar = (ffae) fegf.c(intent, "ex_rd", ffae.a, febw.a());
-            String c2 = asqx.c(intent.getAction());
+            fhoy fhoyVar = (fhoy) fguy.c(intent, "ex_al", fhoy.a, fgqp.a());
+            fhpc fhpcVar = (fhpc) fguy.c(intent, "ex_rd", fhpc.a, fgqp.a());
+            String c2 = auur.c(intent.getAction());
             int hashCode = c2.hashCode();
             boolean z = false;
             if (hashCode != -224443664) {
@@ -51,17 +51,17 @@ public class EventLoggerIntentOperation extends axbl {
                 c = 65535;
             }
             if (c == 0) {
-                axbo axboVar = this.b;
-                fezs fezsVar = ffaaVar.c;
-                if (fezsVar == null) {
-                    fezsVar = fezs.a;
+                azfo azfoVar = this.b;
+                fhoq fhoqVar = fhoyVar.c;
+                if (fhoqVar == null) {
+                    fhoqVar = fhoq.a;
                 }
-                axboVar.g(fezsVar);
-                this.a.b(ffaaVar, ffaeVar, 2);
-                if (asqx.d(ffaeVar.d)) {
+                azfoVar.g(fhoqVar);
+                this.a.b(fhoyVar, fhpcVar, 2);
+                if (auur.d(fhpcVar.d)) {
                     return;
                 }
-                Intent intent2 = new Intent("android.intent.action.VIEW", Uri.parse(ffaeVar.d));
+                Intent intent2 = new Intent("android.intent.action.VIEW", Uri.parse(fhpcVar.d));
                 intent2.setFlags(268435456);
                 startActivity(intent2);
                 return;
@@ -70,25 +70,25 @@ public class EventLoggerIntentOperation extends axbl {
                 intent.getAction();
                 return;
             }
-            fefi fefiVar = ffaaVar.f;
-            if (fefiVar == null) {
-                fefiVar = fefi.a;
+            fgub fgubVar = fhoyVar.f;
+            if (fgubVar == null) {
+                fgubVar = fgub.a;
             }
-            long b = fegx.b(fefiVar);
+            long b = fgvq.b(fgubVar);
             if (b > 0 && b <= this.c.a()) {
                 z = true;
             }
             if (!z) {
-                axbo axboVar2 = this.b;
-                fezs fezsVar2 = ffaaVar.c;
-                if (fezsVar2 == null) {
-                    fezsVar2 = fezs.a;
+                azfo azfoVar2 = this.b;
+                fhoq fhoqVar2 = fhoyVar.c;
+                if (fhoqVar2 == null) {
+                    fhoqVar2 = fhoq.a;
                 }
-                axboVar2.g(fezsVar2);
+                azfoVar2.g(fhoqVar2);
             }
-            this.a.b(ffaaVar, ffaeVar, true != z ? 3 : 4);
-        } catch (fedk e) {
-            ((ejhf) ((ejhf) d.j()).s(e)).x("alert action");
+            this.a.b(fhoyVar, fhpcVar, true != z ? 3 : 4);
+        } catch (fgsd e) {
+            ((eluo) ((eluo) d.j()).s(e)).x("alert action");
         }
     }
 }

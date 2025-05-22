@@ -4,11 +4,11 @@ import android.os.Parcel;
 import android.text.TextUtils;
 import android.util.Log;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import defpackage.arwm;
+import defpackage.atzb;
 import java.util.Collections;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public abstract class Task implements ReflectedParcelable {
@@ -27,7 +27,7 @@ public abstract class Task implements ReflectedParcelable {
         this.e = parcel.readInt() == 1;
         this.f = parcel.readInt() == 1;
         Set set = Collections.EMPTY_SET;
-        arwm.c(readString != null, "Must provide an endpoint for this task by calling setService(ComponentName).");
+        atzb.c(readString != null, "Must provide an endpoint for this task by calling setService(ComponentName).");
         if (TextUtils.isEmpty(readString2)) {
             throw new IllegalArgumentException("Must provide a valid tag.");
         }

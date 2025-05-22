@@ -6,29 +6,29 @@ import com.google.android.gms.ads.cache.s;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.util.client.h;
 import com.google.android.gms.chimera.modules.admob.AppContextProvider;
-import defpackage.asmf;
-import defpackage.bul;
-import defpackage.fecj;
+import defpackage.aupz;
+import defpackage.buy;
+import defpackage.fgrc;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.concurrent.Future;
 import java.util.concurrent.ThreadPoolExecutor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class b {
     public static final b a = new b();
     private final ThreadPoolExecutor b;
-    private final bul c;
-    private final bul d;
-    private final bul e;
+    private final buy c;
+    private final buy d;
+    private final buy e;
 
     public b() {
         p.c(AppContextProvider.a());
-        this.c = new bul();
-        this.d = new bul();
-        this.e = new bul();
-        this.b = new asmf(((Integer) p.ai.g()).intValue(), true != ((Boolean) p.aj.g()).booleanValue() ? 10 : 9);
+        this.c = new buy();
+        this.d = new buy();
+        this.e = new buy();
+        this.b = new aupz(((Integer) p.ai.g()).intValue(), true != ((Boolean) p.aj.g()).booleanValue() ? 10 : 9);
     }
 
     public final synchronized void a(String str, long j) {
@@ -39,12 +39,12 @@ public final class b {
             synchronized (fVar.a) {
                 try {
                     eVar.a();
-                    fecj w = s.a.w(eVar.b);
+                    fgrc w = s.a.w(eVar.b);
                     q qVar = eVar.b.f;
                     if (qVar == null) {
                         qVar = q.a;
                     }
-                    fecj w2 = q.a.w(qVar);
+                    fgrc w2 = q.a.w(qVar);
                     if (!w2.b.L()) {
                         w2.U();
                     }
@@ -85,12 +85,12 @@ public final class b {
                         eVar.b();
                     }
                     eVar.a();
-                    fecj w = s.a.w(eVar.b);
+                    fgrc w = s.a.w(eVar.b);
                     q qVar = eVar.b.f;
                     if (qVar == null) {
                         qVar = q.a;
                     }
-                    fecj w2 = q.a.w(qVar);
+                    fgrc w2 = q.a.w(qVar);
                     if (!w2.b.L()) {
                         w2.U();
                     }
@@ -138,15 +138,15 @@ public final class b {
     }
 
     public final synchronized boolean e(String str, OutputStream outputStream, com.google.android.gms.ads.cache.c cVar, com.google.android.gms.ads.cache.d dVar) {
-        bul bulVar = this.c;
-        if (bulVar.containsKey(str)) {
+        buy buyVar = this.c;
+        if (buyVar.containsKey(str)) {
             return false;
         }
-        bulVar.put(str, cVar);
+        buyVar.put(str, cVar);
         if (dVar != null) {
             this.d.put(str, dVar);
         }
-        this.e.put(str, ((asmf) this.b).submit(new a(this, str, outputStream, Binder.getCallingUid())));
+        this.e.put(str, ((aupz) this.b).submit(new a(this, str, outputStream, Binder.getCallingUid())));
         return true;
     }
 }

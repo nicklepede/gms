@@ -2,7 +2,7 @@ package com.google.android.gms.ads.nonagon.load.service;
 
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 final class o implements com.google.android.gms.ads.internal.js.function.d {
     @Override // com.google.android.gms.ads.internal.js.function.d
@@ -11,7 +11,7 @@ final class o implements com.google.android.gms.ads.internal.js.function.d {
         JSONObject jSONObject = new JSONObject();
         JSONObject jSONObject2 = new JSONObject();
         JSONObject jSONObject3 = new JSONObject();
-        if (((Boolean) com.google.android.gms.ads.internal.config.p.bp.g()).booleanValue()) {
+        if (((Boolean) com.google.android.gms.ads.internal.config.p.bq.g()).booleanValue()) {
             com.google.android.gms.ads.internal.request.service.a aVar = pVar.d;
             jSONObject2.put("ad_request_url", aVar.f);
             jSONObject2.put("ad_request_post_body", aVar.c);

@@ -3,38 +3,38 @@ package com.google.android.gms.fido.u2f.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Base64;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bcqq;
-import defpackage.bcqt;
-import defpackage.eiib;
-import defpackage.eiic;
-import defpackage.ejtk;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.besd;
+import defpackage.besg;
+import defpackage.ekvg;
+import defpackage.ekvh;
+import defpackage.emgt;
 import java.util.Arrays;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public class RegisterResponseData extends ResponseData {
-    public static final Parcelable.Creator CREATOR = new bcqt();
+    public static final Parcelable.Creator CREATOR = new besg();
     public final byte[] a;
     public final ProtocolVersion b;
     public final String c;
 
     public RegisterResponseData(byte[] bArr, ProtocolVersion protocolVersion, String str) {
-        arwm.s(bArr);
+        atzb.s(bArr);
         this.a = bArr;
-        arwm.s(protocolVersion);
+        atzb.s(protocolVersion);
         this.b = protocolVersion;
-        arwm.b(protocolVersion != ProtocolVersion.UNKNOWN);
+        atzb.b(protocolVersion != ProtocolVersion.UNKNOWN);
         if (protocolVersion == ProtocolVersion.V1) {
-            arwm.b(str == null);
+            atzb.b(str == null);
             this.c = null;
         } else {
-            arwm.s(str);
+            atzb.s(str);
             this.c = str;
         }
     }
@@ -43,7 +43,7 @@ public class RegisterResponseData extends ResponseData {
         return Base64.encodeToString(bArr, 11);
     }
 
-    @Override // defpackage.bbji
+    @Override // defpackage.bdnf
     public final JSONObject a() {
         try {
             JSONObject jSONObject = new JSONObject();
@@ -64,7 +64,7 @@ public class RegisterResponseData extends ResponseData {
             return false;
         }
         RegisterResponseData registerResponseData = (RegisterResponseData) obj;
-        return arwb.b(this.b, registerResponseData.b) && Arrays.equals(this.a, registerResponseData.a) && arwb.b(this.c, registerResponseData.c);
+        return atyq.b(this.b, registerResponseData.b) && Arrays.equals(this.a, registerResponseData.a) && atyq.b(this.c, registerResponseData.c);
     }
 
     public final int hashCode() {
@@ -72,9 +72,9 @@ public class RegisterResponseData extends ResponseData {
     }
 
     public final String toString() {
-        eiib b = eiic.b(this);
+        ekvg b = ekvh.b(this);
         b.b("protocolVersion", this.b);
-        b.b("registerData", ejtk.f.n(this.a));
+        b.b("registerData", emgt.f.n(this.a));
         String str = this.c;
         if (str != null) {
             b.b("clientDataString", str);
@@ -85,11 +85,11 @@ public class RegisterResponseData extends ResponseData {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         byte[] bArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 2, bArr, false);
-        arxc.v(parcel, 3, this.b.d, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 2, bArr, false);
+        atzr.v(parcel, 3, this.b.d, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.c(parcel, a);
     }
 
     public RegisterResponseData(byte[] bArr, String str, String str2) {
@@ -97,7 +97,7 @@ public class RegisterResponseData extends ResponseData {
         try {
             this.b = ProtocolVersion.b(str);
             this.c = str2;
-        } catch (bcqq e) {
+        } catch (besd e) {
             throw new IllegalArgumentException(e);
         }
     }

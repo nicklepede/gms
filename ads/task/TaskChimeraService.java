@@ -7,14 +7,14 @@ import com.google.android.gms.ads.jams.b;
 import com.google.android.gms.ads.jams.d;
 import com.google.android.gms.chimera.modules.ads.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.byln;
+import defpackage.cauf;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class TaskChimeraService extends GmsTaskChimeraService {
     private final List a;
@@ -35,11 +35,11 @@ public final class TaskChimeraService extends GmsTaskChimeraService {
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         Map map = this.b;
-        String str = bylnVar.a;
+        String str = caufVar.a;
         if (map.containsKey(str)) {
-            return ((a) map.get(str)).a(bylnVar);
+            return ((a) map.get(str)).a(caufVar);
         }
         String concat = "Unexpected task tag: ".concat(str);
         int i = c.a;
@@ -48,7 +48,7 @@ public final class TaskChimeraService extends GmsTaskChimeraService {
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final void fR() {
+    public final void gf() {
         Iterator it = this.a.iterator();
         while (it.hasNext()) {
             ((a) it.next()).b();

@@ -8,9 +8,9 @@ import android.widget.LinearLayout;
 import com.google.android.gms.R;
 import com.google.android.wallet.ui.common.ImageWithCaptionView;
 import com.google.android.wallet.ui.common.InfoMessageView;
-import defpackage.efwo;
+import defpackage.eijr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class AlertHeaderView extends LinearLayout {
     ImageWithCaptionView a;
@@ -39,7 +39,7 @@ public class AlertHeaderView extends LinearLayout {
     @Override // android.view.View
     public final void setEnabled(boolean z) {
         super.setEnabled(z);
-        efwo.N(this, z);
+        eijr.N(this, z);
     }
 
     public AlertHeaderView(Context context, AttributeSet attributeSet) {

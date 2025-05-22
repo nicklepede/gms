@@ -9,14 +9,14 @@ import com.google.android.enterprise.connectedapps.parcelablewrappers.Parcelable
 import com.google.android.enterprise.connectedapps.parcelablewrappers.ParcelableList;
 import com.google.android.gms.auth.proximity.firstparty.SyncedCryptauthDevice;
 import defpackage.a;
-import defpackage.acst;
-import defpackage.eitj;
+import defpackage.aest;
+import defpackage.elgo;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AccountEligibilityManager_Bundler implements Bundler {
-    public static final Parcelable.Creator CREATOR = new acst();
+    public static final Parcelable.Creator CREATOR = new aest();
 
     @Override // com.google.android.enterprise.connectedapps.internal.Bundler
     public final Object a(Bundle bundle, String str, BundlerType bundlerType) {
@@ -75,7 +75,7 @@ public final class AccountEligibilityManager_Bundler implements Bundler {
             if (!"com.google.common.collect.ImmutableList".equals(str2)) {
                 throw new IllegalArgumentException(a.a(str2, "Type ", " cannot be written to Bundle"));
             }
-            bundle.putParcelable(str, new ParcelableImmutableList(this, bundlerType, (eitj) obj));
+            bundle.putParcelable(str, new ParcelableImmutableList(this, bundlerType, (elgo) obj));
         }
     }
 
@@ -93,7 +93,7 @@ public final class AccountEligibilityManager_Bundler implements Bundler {
             if (!"com.google.common.collect.ImmutableList".equals(str)) {
                 throw new IllegalArgumentException(a.a(str, "Type ", " cannot be written to Parcel"));
             }
-            parcel.writeParcelable(new ParcelableImmutableList(this, bundlerType, (eitj) obj), i);
+            parcel.writeParcelable(new ParcelableImmutableList(this, bundlerType, (elgo) obj), i);
         }
     }
 

@@ -3,16 +3,16 @@ package com.google.android.gms.credential.manager.invocationparams;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.audd;
-import defpackage.auxo;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.awhi;
+import defpackage.axbn;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
 public class CredentialManagerAccount extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new auxo();
+    public static final Parcelable.Creator CREATOR = new axbn();
     public final String a;
 
     public CredentialManagerAccount(String str) {
@@ -20,12 +20,12 @@ public class CredentialManagerAccount extends AbstractSafeParcelable {
     }
 
     public static CredentialManagerAccount a(String str) {
-        arwm.r(str, "accountName must not be empty nor null");
+        atzb.r(str, "accountName must not be empty nor null");
         return new CredentialManagerAccount(str);
     }
 
     public final boolean b() {
-        return audd.a(this.a);
+        return awhi.a(this.a);
     }
 
     public final boolean equals(Object obj) {
@@ -42,8 +42,8 @@ public class CredentialManagerAccount extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.c(parcel, a);
     }
 }

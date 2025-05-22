@@ -2,23 +2,23 @@ package com.google.android.gms.ads.identifier.settings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import defpackage.enyo;
-import defpackage.enys;
-import defpackage.feay;
-import defpackage.febe;
-import defpackage.febf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.feex;
-import defpackage.fefm;
+import defpackage.eqmh;
+import defpackage.eqml;
+import defpackage.fgpr;
+import defpackage.fgpx;
+import defpackage.fgpy;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.fgtq;
+import defpackage.fguf;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class o {
     private static o a;
@@ -45,33 +45,33 @@ public final class o {
         return this.c.getSharedPreferences("device_integrity_token", 0);
     }
 
-    public final synchronized enys b() {
+    public final synchronized eqml b() {
         String string = e().getString("event_attestation_integrity_token", null);
         if (string == null) {
             return null;
         }
         try {
             byte[] bytes = string.getBytes(StandardCharsets.ISO_8859_1);
-            fecp y = fecp.y(enys.a, bytes, 0, bytes.length, febw.a());
-            fecp.M(y);
-            enys enysVar = (enys) y;
-            feay feayVar = enysVar.c;
-            febw a2 = febw.a();
-            enyo enyoVar = enyo.a;
-            febe k = feayVar.k();
-            fecp x = enyoVar.x();
+            fgri y = fgri.y(eqml.a, bytes, 0, bytes.length, fgqp.a());
+            fgri.M(y);
+            eqml eqmlVar = (eqml) y;
+            fgpr fgprVar = eqmlVar.c;
+            fgqp a2 = fgqp.a();
+            eqmh eqmhVar = eqmh.a;
+            fgpx k = fgprVar.k();
+            fgri x = eqmhVar.x();
             try {
-                feex b = feep.a.b(x);
-                b.l(x, febf.p(k), a2);
+                fgtq b = fgti.a.b(x);
+                b.l(x, fgpy.p(k), a2);
                 b.g(x);
                 try {
                     k.z(0);
-                    fecp.M(x);
-                    enyo enyoVar2 = (enyo) x;
+                    fgri.M(x);
+                    eqmh eqmhVar2 = (eqmh) x;
                     try {
                         byte[] e = this.b.e();
-                        if (enyoVar2 != null && e != null && Arrays.equals(enyoVar2.b.M(), e)) {
-                            return enysVar;
+                        if (eqmhVar2 != null && e != null && Arrays.equals(eqmhVar2.b.M(), e)) {
+                            return eqmlVar;
                         }
                         d.b(this.c, "getDeviceIntegrityTokenError", "public key mismatch");
                         c();
@@ -80,28 +80,28 @@ public final class o {
                         d.c(this.c, "publicKeyError", e2);
                         return null;
                     }
-                } catch (fedk e3) {
+                } catch (fgsd e3) {
                     throw e3;
                 }
-            } catch (fedk e4) {
+            } catch (fgsd e4) {
                 if (e4.a) {
-                    throw new fedk(e4);
+                    throw new fgsd(e4);
                 }
                 throw e4;
-            } catch (fefm e5) {
+            } catch (fguf e5) {
                 throw e5.a();
             } catch (IOException e6) {
-                if (e6.getCause() instanceof fedk) {
-                    throw ((fedk) e6.getCause());
+                if (e6.getCause() instanceof fgsd) {
+                    throw ((fgsd) e6.getCause());
                 }
-                throw new fedk(e6);
+                throw new fgsd(e6);
             } catch (RuntimeException e7) {
-                if (e7.getCause() instanceof fedk) {
-                    throw ((fedk) e7.getCause());
+                if (e7.getCause() instanceof fgsd) {
+                    throw ((fgsd) e7.getCause());
                 }
                 throw e7;
             }
-        } catch (fedk e8) {
+        } catch (fgsd e8) {
             d.c(this.c, "deviceIntegrityTokenDecodeError", e8);
             return null;
         }
@@ -122,24 +122,24 @@ public final class o {
             return false;
         }
         try {
-            fecp y = fecp.y(enys.a, bArr, 0, length, febw.a());
-            fecp.M(y);
-            feay feayVar = ((enys) y).c;
-            febw a2 = febw.a();
-            enyo enyoVar = enyo.a;
-            febe k = feayVar.k();
-            fecp x = enyoVar.x();
+            fgri y = fgri.y(eqml.a, bArr, 0, length, fgqp.a());
+            fgri.M(y);
+            fgpr fgprVar = ((eqml) y).c;
+            fgqp a2 = fgqp.a();
+            eqmh eqmhVar = eqmh.a;
+            fgpx k = fgprVar.k();
+            fgri x = eqmhVar.x();
             try {
-                feex b = feep.a.b(x);
-                b.l(x, febf.p(k), a2);
+                fgtq b = fgti.a.b(x);
+                b.l(x, fgpy.p(k), a2);
                 b.g(x);
                 try {
                     k.z(0);
-                    fecp.M(x);
-                    enyo enyoVar2 = (enyo) x;
+                    fgri.M(x);
+                    eqmh eqmhVar2 = (eqmh) x;
                     try {
                         byte[] e = this.b.e();
-                        if (enyoVar2 != null && e != null && Arrays.equals(enyoVar2.b.M(), e)) {
+                        if (eqmhVar2 != null && e != null && Arrays.equals(eqmhVar2.b.M(), e)) {
                             if (!e().edit().putString("event_attestation_integrity_token", new String(bArr, StandardCharsets.ISO_8859_1)).commit()) {
                                 d.b(this.c, "deviceIntegrityTokenError", "Shared Pref write failed.");
                             }
@@ -151,28 +151,28 @@ public final class o {
                         d.c(this.c, "publicKeyError", e2);
                         return false;
                     }
-                } catch (fedk e3) {
+                } catch (fgsd e3) {
                     throw e3;
                 }
-            } catch (fedk e4) {
+            } catch (fgsd e4) {
                 if (e4.a) {
-                    throw new fedk(e4);
+                    throw new fgsd(e4);
                 }
                 throw e4;
-            } catch (fefm e5) {
+            } catch (fguf e5) {
                 throw e5.a();
             } catch (IOException e6) {
-                if (e6.getCause() instanceof fedk) {
-                    throw ((fedk) e6.getCause());
+                if (e6.getCause() instanceof fgsd) {
+                    throw ((fgsd) e6.getCause());
                 }
-                throw new fedk(e6);
+                throw new fgsd(e6);
             } catch (RuntimeException e7) {
-                if (e7.getCause() instanceof fedk) {
-                    throw ((fedk) e7.getCause());
+                if (e7.getCause() instanceof fgsd) {
+                    throw ((fgsd) e7.getCause());
                 }
                 throw e7;
             }
-        } catch (fedk e8) {
+        } catch (fgsd e8) {
             d.c(this.c, "deviceIntegriyTokenDecodeError", e8);
             return false;
         }

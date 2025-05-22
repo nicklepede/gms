@@ -3,17 +3,17 @@ package com.google.android.gms.nearby.sharing;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.clld;
-import defpackage.clle;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cntl;
+import defpackage.cntm;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class AppAttachment extends Attachment {
-    public static final Parcelable.Creator CREATOR = new clle();
+    public static final Parcelable.Creator CREATOR = new cntm();
     public final String a;
     public final long b;
     public final String[] c;
@@ -58,22 +58,22 @@ public final class AppAttachment extends Attachment {
 
     @Override // com.google.android.gms.nearby.sharing.Attachment
     /* renamed from: e, reason: merged with bridge method [inline-methods] */
-    public final clld f() {
-        clld clldVar = new clld(this.a);
-        clldVar.a = this.e;
-        clldVar.b = this.b;
-        clldVar.c = this.c;
-        clldVar.d = this.f;
-        clldVar.e = this.g;
-        clldVar.f = this.h;
-        clldVar.g = this.i;
-        return clldVar;
+    public final cntl f() {
+        cntl cntlVar = new cntl(this.a);
+        cntlVar.a = this.e;
+        cntlVar.b = this.b;
+        cntlVar.c = this.c;
+        cntlVar.d = this.f;
+        cntlVar.e = this.g;
+        cntlVar.f = this.h;
+        cntlVar.g = this.i;
+        return cntlVar;
     }
 
     public final boolean equals(Object obj) {
         if (obj instanceof AppAttachment) {
             AppAttachment appAttachment = (AppAttachment) obj;
-            if (arwb.b(this.a, appAttachment.a) && arwb.b(Long.valueOf(this.b), Long.valueOf(appAttachment.b)) && arwb.b(Long.valueOf(this.e), Long.valueOf(appAttachment.e)) && arwb.b(this.h, appAttachment.h) && Arrays.equals(this.c, appAttachment.c) && Arrays.equals(this.f, appAttachment.f)) {
+            if (atyq.b(this.a, appAttachment.a) && atyq.b(Long.valueOf(this.b), Long.valueOf(appAttachment.b)) && atyq.b(Long.valueOf(this.e), Long.valueOf(appAttachment.e)) && atyq.b(this.h, appAttachment.h) && Arrays.equals(this.c, appAttachment.c) && Arrays.equals(this.f, appAttachment.f)) {
                 return true;
             }
         }
@@ -101,16 +101,16 @@ public final class AppAttachment extends Attachment {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.q(parcel, 2, this.b);
-        arxc.w(parcel, 3, this.c, false);
-        arxc.g(parcel, 4, this.d, false);
-        arxc.q(parcel, 5, this.e);
-        arxc.w(parcel, 6, this.f, false);
-        arxc.r(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.e(parcel, 9, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.q(parcel, 2, this.b);
+        atzr.w(parcel, 3, this.c, false);
+        atzr.g(parcel, 4, this.d, false);
+        atzr.q(parcel, 5, this.e);
+        atzr.w(parcel, 6, this.f, false);
+        atzr.r(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.e(parcel, 9, this.i);
+        atzr.c(parcel, a);
     }
 }

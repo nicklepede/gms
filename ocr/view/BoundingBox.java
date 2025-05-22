@@ -13,9 +13,9 @@ import android.graphics.drawable.PaintDrawable;
 import android.util.AttributeSet;
 import android.view.View;
 import com.google.android.gms.R;
-import defpackage.rpq;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class BoundingBox extends View {
     private final float a;
@@ -117,7 +117,7 @@ public class BoundingBox extends View {
         this.i = new RectF();
         this.j = new RectF();
         this.k = new RectF();
-        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, rpq.a, 0, 0);
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, tiy.a, 0, 0);
         try {
             int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(2, getResources().getDimensionPixelSize(R.dimen.ocr_bounding_box_line_width));
             this.f = dimensionPixelSize;

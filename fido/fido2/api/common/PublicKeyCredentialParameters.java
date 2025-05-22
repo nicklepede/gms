@@ -3,49 +3,49 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bbst;
-import defpackage.bbtu;
-import defpackage.bbtz;
-import defpackage.bbut;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.ffum;
-import defpackage.ffun;
-import defpackage.ffuo;
-import defpackage.ffup;
-import defpackage.ffur;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bdwk;
+import defpackage.bdxl;
+import defpackage.bdxq;
+import defpackage.bdyk;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.fijk;
+import defpackage.fijl;
+import defpackage.fijm;
+import defpackage.fijn;
+import defpackage.fijp;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PublicKeyCredentialParameters extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bbtu();
+    public static final Parcelable.Creator CREATOR = new bdxl();
     public final COSEAlgorithmIdentifier a;
     private final PublicKeyCredentialType b;
 
     public PublicKeyCredentialParameters(String str, int i) {
-        arwm.s(str);
+        atzb.s(str);
         try {
             this.b = PublicKeyCredentialType.a(str);
             try {
                 this.a = COSEAlgorithmIdentifier.b(i);
-            } catch (bbst e) {
+            } catch (bdwk e) {
                 throw new IllegalArgumentException(e);
             }
-        } catch (bbtz e2) {
+        } catch (bdxq e2) {
             throw new IllegalArgumentException(e2);
         }
     }
 
-    public static eiid b(JSONObject jSONObject) {
+    public static ekvi b(JSONObject jSONObject) {
         try {
-            return eiid.j(new PublicKeyCredentialParameters(jSONObject.getString("type"), jSONObject.getInt("alg")));
+            return ekvi.j(new PublicKeyCredentialParameters(jSONObject.getString("type"), jSONObject.getInt("alg")));
         } catch (IllegalArgumentException unused) {
-            return eigb.a;
+            return ektg.a;
         }
     }
 
@@ -53,11 +53,11 @@ public class PublicKeyCredentialParameters extends AbstractSafeParcelable {
         return this.a.a();
     }
 
-    public final ffuo c() {
+    public final fijm c() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(new ffun(bbut.b, new ffup(this.b.b)));
-        arrayList.add(new ffun(bbut.g, new ffum(this.a.a())));
-        return ffur.n(arrayList);
+        arrayList.add(new fijl(bdyk.b, new fijn(this.b.b)));
+        arrayList.add(new fijl(bdyk.g, new fijk(this.a.a())));
+        return fijp.n(arrayList);
     }
 
     public final String d() {
@@ -83,9 +83,9 @@ public class PublicKeyCredentialParameters extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, d(), false);
-        arxc.F(parcel, 3, Integer.valueOf(a()));
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, d(), false);
+        atzr.F(parcel, 3, Integer.valueOf(a()));
+        atzr.c(parcel, a);
     }
 }

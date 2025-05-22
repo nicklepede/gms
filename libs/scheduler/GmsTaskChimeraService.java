@@ -9,66 +9,66 @@ import android.util.Log;
 import com.google.android.chimera.Service;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
 import defpackage.a;
-import defpackage.bhyx;
-import defpackage.bhyz;
-import defpackage.byiz;
-import defpackage.byju;
-import defpackage.byjv;
-import defpackage.bykf;
-import defpackage.bykh;
-import defpackage.byln;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.enss;
+import defpackage.bkdm;
+import defpackage.bkdo;
+import defpackage.carr;
+import defpackage.casm;
+import defpackage.casn;
+import defpackage.casx;
+import defpackage.casz;
+import defpackage.cauf;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.eqgl;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes5.dex */
 public abstract class GmsTaskChimeraService extends Service implements GmsTaskServiceInterface {
-    final eijr g = eijy.a(new eijr() { // from class: byjb
-        @Override // defpackage.eijr
-        public final Object a() {
-            return new byjv(GmsTaskChimeraService.this);
+    final ekww g = ekxd.a(new ekww() { // from class: cart
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return new casn(GmsTaskChimeraService.this);
         }
     });
 
-    public int a(byln bylnVar) {
+    public int a(cauf caufVar) {
         throw null;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final boolean hs(String str) {
+    public final boolean hI(String str) {
         return "com.google.android.gms.gcm.ACTION_TASK_READY".equals(str) || str.endsWith(".ACTION_TASK_READY");
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        return ((byjv) this.g.a()).b(bylnVar);
+    public final eqgl iB(cauf caufVar) {
+        return ((casn) this.g.lK()).b(caufVar);
     }
 
     @Override // com.google.android.chimera.Service
     public IBinder onBind(Intent intent) {
-        return ((byjv) this.g.a()).a(intent);
+        return ((casn) this.g.lK()).a(intent);
     }
 
     @Override // com.google.android.chimera.Service
     public void onCreate() {
         super.onCreate();
-        ((byjv) this.g.a()).f();
+        ((casn) this.g.lK()).f();
     }
 
     @Override // com.google.android.chimera.Service
     public void onDestroy() {
         super.onDestroy();
-        ((byjv) this.g.a()).i();
+        ((casn) this.g.lK()).i();
     }
 
     @Override // com.google.android.chimera.Service
     public int onStartCommand(Intent intent, int i, int i2) {
-        byju byjuVar;
+        casm casmVar;
         String str;
-        byjv byjvVar = (byjv) this.g.a();
+        casn casnVar = (casn) this.g.lK();
         if (intent != null) {
             try {
                 intent.setExtrasClassLoader(PendingCallback.class.getClassLoader());
@@ -80,53 +80,53 @@ public abstract class GmsTaskChimeraService extends Service implements GmsTaskSe
                         Bundle bundleExtra = intent.getBundleExtra("extras");
                         ArrayList parcelableArrayListExtra = intent.getParcelableArrayListExtra("triggered_uris");
                         intent.getLongExtra("max_exec_duration", 180L);
-                        byiz b = byiz.b(intent.getBundleExtra("engine_flags"));
-                        bhyz bhyzVar = null;
-                        bykh bykfVar = null;
+                        carr b = carr.b(intent.getBundleExtra("engine_flags"));
+                        bkdo bkdoVar = null;
+                        casz casxVar = null;
                         if (parcelableExtra instanceof PendingCallback) {
                             IBinder iBinder = ((PendingCallback) parcelableExtra).a;
                             if (iBinder != null) {
                                 IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.libs.scheduler.IGmsTaskCallback");
-                                bykfVar = queryLocalInterface instanceof bykh ? (bykh) queryLocalInterface : new bykf(iBinder);
+                                casxVar = queryLocalInterface instanceof casz ? (casz) queryLocalInterface : new casx(iBinder);
                             }
-                            byjuVar = new byju(byjvVar, stringExtra, bykfVar, bundleExtra, parcelableArrayListExtra, b);
+                            casmVar = new casm(casnVar, stringExtra, casxVar, bundleExtra, parcelableArrayListExtra, b);
                             str = stringExtra;
                         } else if (parcelableExtra instanceof com.google.android.gms.gcm.PendingCallback) {
                             IBinder iBinder2 = ((com.google.android.gms.gcm.PendingCallback) parcelableExtra).a;
                             if (iBinder2 != null) {
                                 IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.gcm.INetworkTaskCallback");
-                                bhyzVar = queryLocalInterface2 instanceof bhyz ? (bhyz) queryLocalInterface2 : new bhyx(iBinder2);
+                                bkdoVar = queryLocalInterface2 instanceof bkdo ? (bkdo) queryLocalInterface2 : new bkdm(iBinder2);
                             }
-                            byjuVar = new byju(byjvVar, stringExtra, bhyzVar, bundleExtra, parcelableArrayListExtra, b);
+                            casmVar = new casm(casnVar, stringExtra, bkdoVar, bundleExtra, parcelableArrayListExtra, b);
                             str = stringExtra;
                         } else {
-                            Log.e("GmsTaskChimeraService", byjvVar.getPackageName() + " " + stringExtra + ": Could not process request, invalid callback.");
+                            Log.e("GmsTaskChimeraService", casnVar.getPackageName() + " " + stringExtra + ": Could not process request, invalid callback.");
                         }
-                        if (!byjvVar.l(str)) {
-                            byjvVar.d(byjuVar);
+                        if (!casnVar.l(str)) {
+                            casnVar.d(casmVar);
                         }
                     }
                 } else if ("com.google.android.gms.gcm.SERVICE_ACTION_INITIALIZE".equals(action)) {
-                    byjvVar.g();
+                    casnVar.g();
                 } else {
                     Log.e("GmsTaskChimeraService", a.a(action, "Unknown action received ", ", terminating"));
                 }
             } catch (Throwable th) {
-                byjvVar.k(i2);
+                casnVar.k(i2);
                 throw th;
             }
         }
-        byjvVar.k(i2);
+        casnVar.k(i2);
         return 2;
     }
 
     @Override // com.google.android.chimera.Service
     public boolean onUnbind(Intent intent) {
-        ((byjv) this.g.a()).h(intent);
+        ((casn) this.g.lK()).h(intent);
         return false;
     }
 
     @Deprecated
-    public void fR() {
+    public void gf() {
     }
 }

@@ -11,71 +11,71 @@ import com.google.android.chimera.android.Activity;
 import com.google.android.gms.R;
 import com.google.android.gms.feedback.ThemeSettings;
 import com.google.android.gms.googlehelp.common.HelpConfig;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.biqn;
-import defpackage.birb;
-import defpackage.birq;
-import defpackage.bivh;
-import defpackage.bivk;
-import defpackage.bjay;
-import defpackage.bjhz;
-import defpackage.bjib;
-import defpackage.bjij;
-import defpackage.eble;
-import defpackage.ejhf;
-import defpackage.forr;
-import defpackage.fosd;
-import defpackage.fosp;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bkvc;
+import defpackage.bkvq;
+import defpackage.bkwf;
+import defpackage.bkzw;
+import defpackage.bkzz;
+import defpackage.blfn;
+import defpackage.blmo;
+import defpackage.blmq;
+import defpackage.blmy;
+import defpackage.edxt;
+import defpackage.eluo;
+import defpackage.frkk;
+import defpackage.frkw;
+import defpackage.frli;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class GoogleHelpWebViewChimeraActivity extends Activity implements biqn {
+public class GoogleHelpWebViewChimeraActivity extends Activity implements bkvc {
     private HelpConfig c;
-    private bjay d;
-    private static final asot b = asot.b("gH_WebViewActivity", asej.GOOGLE_HELP);
+    private blfn d;
+    private static final ausn b = ausn.b("gH_WebViewActivity", auid.GOOGLE_HELP);
     public static final String a = "com.google.android.gms.googlehelp.webview.GoogleHelpWebViewActivity";
 
-    @Override // defpackage.biqn
-    public final birq d() {
+    @Override // defpackage.bkvc
+    public final bkwf d() {
         throw null;
     }
 
-    @Override // defpackage.biqn
-    public final bivh e() {
+    @Override // defpackage.bkvc
+    public final bkzw e() {
         throw null;
     }
 
-    @Override // defpackage.biqn
-    public final HelpConfig hM() {
+    @Override // defpackage.bkvc
+    public final HelpConfig ic() {
         return this.c;
     }
 
-    @Override // defpackage.biqn
-    public final bjay hN() {
+    @Override // defpackage.bkvc
+    public final blfn id() {
         return this.d;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        if (!(bivk.a(fosp.e()) && this.c == null) && this.c.P) {
-            int i = eble.a;
+        if (!(bkzz.a(frli.e()) && this.c == null) && this.c.P) {
+            int i = edxt.a;
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         Intent intent;
         Uri uri;
         String str;
         this.c = HelpConfig.e(this, bundle, getIntent());
-        this.d = new bjay(this);
-        if (bivk.a(fosp.e()) && this.c != null) {
-            if (bivk.a(fosd.c())) {
-                birb.d(this.c.Q);
+        this.d = new blfn(this);
+        if (bkzz.a(frli.e()) && this.c != null) {
+            if (bkzz.a(frkw.c())) {
+                bkvq.d(this.c.Q);
             }
-            if (bivk.a(forr.a.a().b())) {
+            if (bkzz.a(frkk.a.lK().b())) {
                 ThemeSettings themeSettings = this.c.z;
                 if (themeSettings == null || themeSettings.a != 2) {
                     setTheme(R.style.gh_NoActionBarLightActivityStyleMaterial3);
@@ -86,18 +86,18 @@ public class GoogleHelpWebViewChimeraActivity extends Activity implements biqn {
             HelpConfig helpConfig = this.c;
             if (helpConfig.P) {
                 ThemeSettings themeSettings2 = helpConfig.z;
-                int i = eble.a;
+                int i = edxt.a;
             }
         }
         Intent intent2 = getIntent();
-        bjib bjibVar = new bjib(this);
+        blmq blmqVar = new blmq(this);
         if (bundle != null) {
             intent = new Intent();
             String string = bundle.getString("saved_instance_state_key_url");
             if (!TextUtils.isEmpty(string)) {
                 intent.setData(Uri.parse(string));
             }
-            ((ejhf) b.j()).x("URL not whitelisted or Intent not processable.");
+            ((eluo) b.j()).x("URL not whitelisted or Intent not processable.");
             getIntent().setData(null);
             super.onCreate(null);
             setResult(0);
@@ -112,11 +112,11 @@ public class GoogleHelpWebViewChimeraActivity extends Activity implements biqn {
             uri = null;
             str = null;
         }
-        if (!bjib.b(uri) || !bjib.c(uri.toString(), true)) {
+        if (!blmq.b(uri) || !blmq.c(uri.toString(), true)) {
             if (!TextUtils.isEmpty(str)) {
-                bjib.e(this, uri, bjibVar.a);
+                blmq.e(this, uri, blmqVar.a);
             }
-            ((ejhf) b.j()).x("URL not whitelisted or Intent not processable.");
+            ((eluo) b.j()).x("URL not whitelisted or Intent not processable.");
             getIntent().setData(null);
             super.onCreate(null);
             setResult(0);
@@ -130,29 +130,29 @@ public class GoogleHelpWebViewChimeraActivity extends Activity implements biqn {
         if (data != null) {
             webView.loadUrl(data.toString());
         }
-        int i2 = bjij.a;
-        webView.setWebViewClient(new bjhz(this));
+        int i2 = blmy.a;
+        webView.setWebViewClient(new blmo(this));
         setResult(-1);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
-        bjay bjayVar = this.d;
-        if (bjayVar != null) {
-            bjayVar.close();
+        blfn blfnVar = this.d;
+        if (blfnVar != null) {
+            blfnVar.close();
         }
         super.onDestroy();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onRestart() {
         super.onRestart();
-        if (!(bivk.a(fosp.e()) && this.c == null) && bivk.a(fosd.c())) {
-            birb.d(this.c.Q);
+        if (!(bkzz.a(frli.e()) && this.c == null) && bkzz.a(frkw.c())) {
+            bkvq.d(this.c.Q);
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         if (getIntent() != null && getIntent().getData() != null) {
             bundle.putParcelable("EXTRA_HELP_CONFIG", this.c);
@@ -161,7 +161,7 @@ public class GoogleHelpWebViewChimeraActivity extends Activity implements biqn {
         super.onSaveInstanceState(bundle);
     }
 
-    @Override // defpackage.biqn
+    @Override // defpackage.bkvc
     public final Context a() {
         return this;
     }

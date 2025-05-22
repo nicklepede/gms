@@ -2,20 +2,20 @@ package com.google.android.gms.backup.migrate.helper;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.ajgy;
-import defpackage.ajhh;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
+import defpackage.alhq;
+import defpackage.alhz;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ParcelableBrokerResponse implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new ajhh();
-    private final ajgy a;
+    public static final Parcelable.Creator CREATOR = new alhz();
+    private final alhq a;
 
-    public ParcelableBrokerResponse(ajgy ajgyVar) {
-        this.a = ajgyVar;
+    public ParcelableBrokerResponse(alhq alhqVar) {
+        this.a = alhqVar;
     }
 
     @Override // android.os.Parcelable
@@ -29,15 +29,15 @@ public class ParcelableBrokerResponse implements Parcelable {
     }
 
     public ParcelableBrokerResponse(Parcel parcel) {
-        ajgy ajgyVar;
+        alhq alhqVar;
         try {
             byte[] createByteArray = parcel.createByteArray();
-            fecp y = fecp.y(ajgy.a, createByteArray, 0, createByteArray.length, febw.a());
-            fecp.M(y);
-            ajgyVar = (ajgy) y;
-        } catch (fedk unused) {
-            ajgyVar = null;
+            fgri y = fgri.y(alhq.a, createByteArray, 0, createByteArray.length, fgqp.a());
+            fgri.M(y);
+            alhqVar = (alhq) y;
+        } catch (fgsd unused) {
+            alhqVar = null;
         }
-        this.a = ajgyVar;
+        this.a = alhqVar;
     }
 }

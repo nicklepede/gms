@@ -3,16 +3,16 @@ package com.google.android.gms.tapandpay.firstparty;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.dexc;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.dhig;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class GetLastAttestationResultResponse extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dexc();
+    public static final Parcelable.Creator CREATOR = new dhig();
     final int a;
     final long b;
 
@@ -37,16 +37,16 @@ public class GetLastAttestationResultResponse extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("result", Integer.valueOf(this.a), arrayList);
-        arwa.b("timeMillis", Long.valueOf(this.b), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("result", Integer.valueOf(this.a), arrayList);
+        atyp.b("timeMillis", Long.valueOf(this.b), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.q(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.q(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 }

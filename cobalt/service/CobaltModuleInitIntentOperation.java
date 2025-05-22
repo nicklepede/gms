@@ -1,42 +1,42 @@
 package com.google.android.gms.cobalt.service;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.ejhf;
-import defpackage.fmjp;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.eluo;
+import defpackage.fpbe;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class CobaltModuleInitIntentOperation extends anya {
-    private static final asot a = asot.b("CobaltLoggerImpl", asej.COBALT);
+public final class CobaltModuleInitIntentOperation extends apzs {
+    private static final ausn a = ausn.b("CobaltLoggerImpl", auid.COBALT);
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        ((ejhf) ((ejhf) a.h()).ah((char) 3116)).z("CobaltModuleInitIntentOperation: %s", i);
+        ((eluo) ((eluo) a.h()).ai((char) 3120)).z("CobaltModuleInitIntentOperation: %s", i);
         if ((i & 2) == 0 && (i & 4) == 0 && (i & 8) == 0) {
             return;
         }
-        byjl a2 = byjl.a(this);
-        if (!fmjp.a.a().j()) {
-            ((ejhf) ((ejhf) ObservationGenerationTask.a.h()).ah((char) 3117)).x("Cancelling Cobalt Observation Generation task");
+        casd a2 = casd.a(this);
+        if (!fpbe.a.lK().j()) {
+            ((eluo) ((eluo) ObservationGenerationTask.a.h()).ai((char) 3121)).x("Cancelling Cobalt Observation Generation task");
             a2.d("ObservationGenerationTask.Periodic", ".cobalt.service.ObservationGenerationTask");
             return;
         }
-        ((ejhf) ((ejhf) ObservationGenerationTask.a.h()).ah(3118)).A("Scheduling Cobalt Observation Generation task to run every %s hours", fmjp.b());
-        bykm bykmVar = new bykm();
-        bykmVar.w(".cobalt.service.ObservationGenerationTask");
-        bykmVar.t("ObservationGenerationTask.Periodic");
-        bykmVar.v(2);
-        bykmVar.j(byki.a(TimeUnit.HOURS.toSeconds(fmjp.b())));
-        bykmVar.y(2, 2);
-        bykmVar.x(0, 1);
-        bykmVar.f(0, 1);
-        a2.f(bykmVar.b());
+        ((eluo) ((eluo) ObservationGenerationTask.a.h()).ai(3122)).A("Scheduling Cobalt Observation Generation task to run every %s hours", fpbe.b());
+        cate cateVar = new cate();
+        cateVar.w(".cobalt.service.ObservationGenerationTask");
+        cateVar.t("ObservationGenerationTask.Periodic");
+        cateVar.v(2);
+        cateVar.j(cata.a(TimeUnit.HOURS.toSeconds(fpbe.b())));
+        cateVar.y(2, 2);
+        cateVar.x(0, 1);
+        cateVar.f(0, 1);
+        a2.f(cateVar.b());
     }
 }

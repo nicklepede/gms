@@ -3,19 +3,19 @@ package com.google.android.gms.wallet.analytics.events;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.dign;
-import defpackage.divi;
-import defpackage.divs;
-import defpackage.divt;
-import defpackage.emet;
-import defpackage.emeu;
-import defpackage.fecj;
-import defpackage.fecp;
+import defpackage.dkry;
+import defpackage.dlgt;
+import defpackage.dlhd;
+import defpackage.dlhe;
+import defpackage.eosh;
+import defpackage.eosi;
+import defpackage.fgrc;
+import defpackage.fgri;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class PaymentMethodsActionEvent extends WalletAnalyticsEvent implements divs {
-    public static final Parcelable.Creator CREATOR = new dign();
+public class PaymentMethodsActionEvent extends WalletAnalyticsEvent implements dlhd {
+    public static final Parcelable.Creator CREATOR = new dkry();
     final int a;
     final int b;
     final int c;
@@ -28,40 +28,40 @@ public class PaymentMethodsActionEvent extends WalletAnalyticsEvent implements d
     }
 
     public static void a(Context context, String str, int i, int i2) {
-        divi.a(context, new PaymentMethodsActionEvent(str, i, i2, -1));
+        dlgt.a(context, new PaymentMethodsActionEvent(str, i, i2, -1));
     }
 
     public static void c(Context context, String str, int i, int i2) {
-        divi.a(context, new PaymentMethodsActionEvent(str, i, 5, i2));
+        dlgt.a(context, new PaymentMethodsActionEvent(str, i, 5, i2));
     }
 
-    @Override // defpackage.divs
-    public final void b(Context context, divt divtVar, fecj fecjVar) {
-        fecj v = emeu.a.v();
+    @Override // defpackage.dlhd
+    public final void b(Context context, dlhe dlheVar, fgrc fgrcVar) {
+        fgrc v = eosi.a.v();
         if (!v.b.L()) {
             v.U();
         }
         int i = this.a;
-        fecp fecpVar = v.b;
-        emeu emeuVar = (emeu) fecpVar;
-        emeuVar.b |= 1;
-        emeuVar.c = i;
+        fgri fgriVar = v.b;
+        eosi eosiVar = (eosi) fgriVar;
+        eosiVar.b |= 1;
+        eosiVar.c = i;
         int i2 = this.c;
-        if (!fecpVar.L()) {
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        emeu emeuVar2 = (emeu) fecpVar2;
-        emeuVar2.d = i2 - 1;
-        emeuVar2.b |= 2;
+        fgri fgriVar2 = v.b;
+        eosi eosiVar2 = (eosi) fgriVar2;
+        eosiVar2.d = i2 - 1;
+        eosiVar2.b |= 2;
         int i3 = this.b;
-        if (!fecpVar2.L()) {
+        if (!fgriVar2.L()) {
             v.U();
         }
-        emeu emeuVar3 = (emeu) v.b;
-        emeuVar3.b |= 4;
-        emeuVar3.e = i3;
-        divtVar.d.add((emeu) v.Q());
+        eosi eosiVar3 = (eosi) v.b;
+        eosiVar3.b |= 4;
+        eosiVar3.e = i3;
+        dlheVar.d.add((eosi) v.Q());
     }
 
     @Override // android.os.Parcelable
@@ -80,7 +80,7 @@ public class PaymentMethodsActionEvent extends WalletAnalyticsEvent implements d
     public PaymentMethodsActionEvent(Parcel parcel) {
         super(parcel);
         this.a = parcel.readInt();
-        int a = emet.a(parcel.readInt());
+        int a = eosh.a(parcel.readInt());
         this.c = a == 0 ? 1 : a;
         this.b = parcel.readInt();
     }

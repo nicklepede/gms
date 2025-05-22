@@ -11,85 +11,85 @@ import com.google.android.gms.chimera.modules.dtdi.AppContextProvider;
 import com.google.android.gms.dtdi.core.database.appcapabilitiesmatching.AppCapabilitiesMatchingDatabase;
 import com.google.android.gms.dtdi.core.lifecycle.LifecycleChimeraService;
 import com.google.android.gms.nearby.presence.PresenceAction;
-import defpackage.arwm;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.ayay;
-import defpackage.aybq;
-import defpackage.aydk;
-import defpackage.aydt;
-import defpackage.aydu;
-import defpackage.aydv;
-import defpackage.aydz;
-import defpackage.ayef;
-import defpackage.ayeo;
-import defpackage.ayeq;
-import defpackage.ayer;
-import defpackage.ayes;
-import defpackage.ayff;
-import defpackage.ayfk;
-import defpackage.ayfu;
-import defpackage.aygf;
-import defpackage.aykl;
-import defpackage.aykx;
-import defpackage.ayls;
-import defpackage.aylv;
-import defpackage.ayml;
-import defpackage.aynf;
-import defpackage.ayng;
-import defpackage.ayou;
-import defpackage.ayov;
-import defpackage.aypd;
-import defpackage.aypl;
-import defpackage.aypp;
-import defpackage.ayqb;
-import defpackage.ayqe;
-import defpackage.ayqg;
-import defpackage.ayqk;
-import defpackage.ayqm;
-import defpackage.ayqq;
-import defpackage.ayqu;
-import defpackage.ayrj;
-import defpackage.ayrl;
-import defpackage.ayro;
-import defpackage.ayrq;
-import defpackage.ayru;
-import defpackage.ayso;
-import defpackage.aysu;
-import defpackage.aysw;
-import defpackage.aytb;
-import defpackage.aytd;
-import defpackage.ayxs;
-import defpackage.ayxu;
-import defpackage.ayxx;
-import defpackage.ayyl;
-import defpackage.ayzk;
-import defpackage.ayzp;
-import defpackage.ayzs;
-import defpackage.ayzu;
-import defpackage.azap;
-import defpackage.azcz;
-import defpackage.azdb;
-import defpackage.azdk;
-import defpackage.azdp;
-import defpackage.azdq;
-import defpackage.azdr;
-import defpackage.azds;
-import defpackage.azdu;
-import defpackage.azdv;
-import defpackage.azdw;
-import defpackage.azfm;
-import defpackage.azfn;
-import defpackage.azfr;
-import defpackage.bhib;
-import defpackage.brdq;
-import defpackage.ckkm;
-import defpackage.fnjq;
-import defpackage.fuwt;
-import defpackage.fvbo;
-import defpackage.fvjt;
-import defpackage.onm;
+import defpackage.atzb;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.baey;
+import defpackage.bafq;
+import defpackage.bahj;
+import defpackage.bahs;
+import defpackage.baht;
+import defpackage.bahu;
+import defpackage.bahy;
+import defpackage.baie;
+import defpackage.bain;
+import defpackage.baip;
+import defpackage.baiq;
+import defpackage.bair;
+import defpackage.baje;
+import defpackage.bajj;
+import defpackage.bajt;
+import defpackage.bake;
+import defpackage.baok;
+import defpackage.baow;
+import defpackage.bapq;
+import defpackage.bapt;
+import defpackage.baqj;
+import defpackage.bard;
+import defpackage.bare;
+import defpackage.basr;
+import defpackage.bass;
+import defpackage.batc;
+import defpackage.batm;
+import defpackage.batx;
+import defpackage.baua;
+import defpackage.bauc;
+import defpackage.baug;
+import defpackage.baui;
+import defpackage.baul;
+import defpackage.bauo;
+import defpackage.bave;
+import defpackage.bavg;
+import defpackage.bavj;
+import defpackage.bavl;
+import defpackage.bavo;
+import defpackage.bawi;
+import defpackage.bawo;
+import defpackage.bawq;
+import defpackage.bawu;
+import defpackage.baww;
+import defpackage.bbbm;
+import defpackage.bbbo;
+import defpackage.bbbr;
+import defpackage.bbcf;
+import defpackage.bbde;
+import defpackage.bbdh;
+import defpackage.bbdk;
+import defpackage.bbdm;
+import defpackage.bbes;
+import defpackage.bbhb;
+import defpackage.bbhd;
+import defpackage.bbhm;
+import defpackage.bbhr;
+import defpackage.bbhs;
+import defpackage.bbht;
+import defpackage.bbhu;
+import defpackage.bbhw;
+import defpackage.bbhx;
+import defpackage.bbhy;
+import defpackage.bbjn;
+import defpackage.bbjo;
+import defpackage.bbjs;
+import defpackage.bjmq;
+import defpackage.btlh;
+import defpackage.cmsr;
+import defpackage.fhbp;
+import defpackage.fqbu;
+import defpackage.fxsr;
+import defpackage.fxxm;
+import defpackage.fyfr;
+import defpackage.qgp;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -101,16 +101,16 @@ import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class LifecycleChimeraService extends Service {
-    public static final asot a = ayay.a("LifecycleService");
-    public final ayxx b;
-    public final azap c;
-    public ayxx d;
-    public final ayxs e;
+    public static final ausn a = baey.a("LifecycleService");
+    public final bbbr b;
+    public final bbes c;
+    public bbbr d;
+    public final bbbm e;
     public volatile boolean f;
-    public bhib g;
+    public bjmq g;
     private boolean h;
 
     public LifecycleChimeraService() {
@@ -119,380 +119,376 @@ public final class LifecycleChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     protected final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        ayml aymlVar;
-        aygf aygfVar;
-        azdv azdvVar;
-        ayzu ayzuVar;
-        aylv aylvVar;
-        aydu ayduVar;
-        aydv aydvVar;
-        ayov ayovVar;
+        baqj baqjVar;
+        bake bakeVar;
+        bbhx bbhxVar;
+        bbdm bbdmVar;
+        bapt baptVar;
+        baht bahtVar;
+        bahu bahuVar;
+        bass bassVar;
         if (printWriter == null) {
             return;
         }
-        ayxu ayxuVar = !asqh.c() ? new ayxu(1, "Requires platform version O") : new ayxu();
-        printWriter.println("Eligibility status: code=" + ayxuVar.a + " reason=" + ayxuVar.b);
+        bbbo bbboVar = !auub.c() ? new bbbo(1, "Requires platform version O") : new bbbo();
+        printWriter.println("Eligibility status: code=" + bbboVar.a + " reason=" + bbboVar.b);
         boolean z = this.f;
         StringBuilder sb = new StringBuilder("delegatesInitialized: ");
         sb.append(z);
         printWriter.println(sb.toString());
-        if (ayru.d()) {
+        if (bavo.c()) {
             printWriter.println("***** DTDI Flags *****");
             printWriter.println("Analytics Flags: ");
-            printWriter.println("  dtdiUserType: " + ayqe.c());
-            boolean z2 = ayrq.c;
-            ayqe.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  dtdiUserType: " + baua.c());
+            boolean z2 = bavl.c;
+            baua.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("Analytics.gmsCoreLoggerDtdiPseudonymousConfig referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            brdq b = ayqe.b();
+            btlh b = baua.b();
             Objects.toString(b);
             printWriter.println("  gmsCoreLoggerDtdiPseudonymousConfig: ".concat(String.valueOf(b)));
             printWriter.println("AppCapabilitiesMatching Flags: ");
-            printWriter.println("  appCapabilitiesRequestTimeoutMs: " + ayqg.b());
+            printWriter.println("  appCapabilitiesRequestTimeoutMs: " + bauc.b());
             printWriter.println("CallTransfer Flags: ");
-            boolean z3 = ayrq.c;
-            ayqk.B();
-            if (ayru.a() && !ayrq.b) {
+            boolean z3 = bavl.c;
+            baug.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("CallTransfer.telecomMetadataDelegateAvailable referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  telecomMetadataDelegateAvailable: " + ayqk.c());
-            printWriter.println("  outputSwitcherUseDynamicColors: " + ayqk.d());
-            printWriter.println("  overrideTidepool: " + ayqk.e());
-            fnjq.c();
+            printWriter.println("  telecomMetadataDelegateAvailable: " + baug.c());
+            printWriter.println("  outputSwitcherUseDynamicColors: " + baug.d());
+            printWriter.println("  overrideTidepool: " + baug.e());
+            fqbu.c();
             printWriter.println("Cast Flags: ");
-            printWriter.println("  internalPrerelease: " + ayqm.b());
+            printWriter.println("  internalPrerelease: " + baui.b());
             printWriter.println("ContextSync Flags: ");
-            boolean z4 = ayrq.c;
-            ayqq.B();
-            if (ayru.a() && !ayrq.b) {
-                throw new IllegalStateException("ContextSync.telecomAvailable referenced before Initializer.ensureAllFlagsRead() called.");
-            }
-            printWriter.println("  telecomAvailable: " + ayqq.c());
-            boolean z5 = ayrq.c;
-            ayqq.B();
-            if (ayru.a() && !ayrq.b) {
+            boolean z4 = bavl.c;
+            baul.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("ContextSync.checkDeviceConnected referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  checkDeviceConnected: " + ayqq.a());
-            printWriter.println("  restoreSendingMessages: " + ayqq.d());
+            printWriter.println("  checkDeviceConnected: " + baul.a());
+            printWriter.println("  restoreSendingMessages: " + baul.c());
             printWriter.println("DeviceDiscovery Flags: ");
-            boolean z6 = ayrq.c;
-            ayqu.B();
-            if (ayru.a() && !ayrq.b) {
-                throw new IllegalStateException("DeviceDiscovery.trustRelationshipFilterEnabled referenced before Initializer.ensureAllFlagsRead() called.");
-            }
-            printWriter.println("  trustRelationshipFilterEnabled: " + ayqu.c());
-            printWriter.println("  enableDeduplicationHint: " + ayqu.d());
-            boolean z7 = ayrq.c;
-            ayqu.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  enableDeduplicationHint: " + bauo.c());
+            boolean z5 = bavl.c;
+            bauo.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("DeviceDiscovery.outputSwitcherDeviceConnectionTimeoutDuration referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  outputSwitcherDeviceConnectionTimeoutDuration: " + ayqu.b());
+            printWriter.println("  outputSwitcherDeviceConnectionTimeoutDuration: " + bauo.b());
             printWriter.println("DirectDeviceAccess Flags: ");
             printWriter.println("Dtdi Flags: ");
-            printWriter.println("  doNotReleaseSkipFilteringIfNoMetadataPresentInCredential: " + ayrj.r());
-            printWriter.println("  wakeupRequestTimeoutMs: " + ayrj.A());
-            printWriter.println("  initTtcOnBgThreadPhase2: " + ayrj.t());
-            printWriter.println("  ddaApiThrottlingGlobalRatePerMinute: " + ayrj.p());
-            printWriter.println("  devicePickerDismissAfterApprovalMs: " + ayrj.q());
-            printWriter.println("  useCollapsedDockingState: " + ayrj.y());
-            printWriter.println("  unifySharingVisibilityConversion: " + ayrj.w());
-            boolean z8 = ayrq.c;
-            ayrj.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  doNotReleaseSkipFilteringIfNoMetadataPresentInCredential: " + bave.t());
+            printWriter.println("  wakeupRequestTimeoutMs: " + bave.A());
+            printWriter.println("  initTtcOnBgThreadPhase2: " + bave.v());
+            printWriter.println("  ddaApiThrottlingGlobalRatePerMinute: " + bave.q());
+            printWriter.println("  devicePickerDismissAfterApprovalMs: " + bave.r());
+            boolean z6 = bavl.c;
+            bave.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("Dtdi.handleSpotifyStreamExpansion referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  handleSpotifyStreamExpansion: " + ayrj.f());
-            printWriter.println("  requireConnectionCapabilitiesChangeOrDisconnect: " + ayrj.v());
-            printWriter.println("  checkNearbyShareAvailable: " + ayrj.o());
-            printWriter.println("  useBc25Styling: " + ayrj.x());
-            printWriter.println("  useNewAdvertisingManager: " + ayrj.z());
-            printWriter.println("  optimizeTtcDiscovery: " + ayrj.u());
-            printWriter.println("  enableDirectConnectToService: " + ayrj.s());
+            printWriter.println("  handleSpotifyStreamExpansion: " + bave.g());
+            boolean z7 = bavl.c;
+            bave.B();
+            if (bavo.a() && !bavl.b) {
+                throw new IllegalStateException("Dtdi.useRouteListingPreferenceForDestinationRoute referenced before Initializer.ensureAllFlagsRead() called.");
+            }
+            printWriter.println("  useRouteListingPreferenceForDestinationRoute: " + bave.n());
+            printWriter.println("  useBc25Styling: " + bave.x());
+            boolean z8 = bavl.c;
+            bave.B();
+            if (bavo.a() && !bavl.b) {
+                throw new IllegalStateException("Dtdi.useNewAdvertisingManager referenced before Initializer.ensureAllFlagsRead() called.");
+            }
+            printWriter.println("  useNewAdvertisingManager: " + bave.k());
+            printWriter.println("  useNewAdvertisingManagerWithStateflowChanges: " + bave.y());
+            printWriter.println("  optimizeTtcDiscovery: " + bave.w());
+            printWriter.println("  enableDirectConnectToService: " + bave.u());
+            printWriter.println("  useNewDiscoveryManager: " + bave.z());
+            printWriter.println("  disableAutomaticBandwidthUpgrade: " + bave.s());
+            fhbp p = bave.p();
+            Objects.toString(p);
+            printWriter.println("  automaticBandwidthUpgradeAllowlist: ".concat(String.valueOf(p)));
             printWriter.println("FastInit Flags: ");
-            printWriter.println("  prerelease: " + ayrl.b());
+            printWriter.println("  prerelease: " + bavg.b());
             printWriter.println("FoyerConfigFeature Flags: ");
-            boolean z9 = ayrq.c;
-            ayro.B();
-            if (ayru.a() && !ayrq.b) {
+            boolean z9 = bavl.c;
+            bavj.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("FoyerConfigFeature.foyerUrl referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  foyerUrl: ".concat(String.valueOf(ayro.a())));
-            boolean z10 = ayrq.c;
-            ayro.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  foyerUrl: ".concat(String.valueOf(bavj.a())));
+            boolean z10 = bavl.c;
+            bavj.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("FoyerConfigFeature.homeGraphScope referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  homeGraphScope: ".concat(String.valueOf(ayro.b())));
+            printWriter.println("  homeGraphScope: ".concat(String.valueOf(bavj.b())));
             printWriter.println("Lifecycle Flags: ");
-            printWriter.println("  injectDiscoveryDelegate: " + ayru.e());
-            printWriter.println("  debugCrashOnUninitializedFlags: " + ayru.a());
-            printWriter.println("  dumpFlagValues: " + ayru.d());
+            printWriter.println("  debugCrashOnUninitializedFlags: " + bavo.a());
+            printWriter.println("  dumpFlagValues: " + bavo.c());
             printWriter.println("MediaTransfer Flags: ");
-            printWriter.println("  logDebugMessages: " + ayso.v());
-            printWriter.println("  moveCoolDownMillis: " + ayso.x());
-            printWriter.println("  includePerformanceLogs: " + ayso.u());
-            printWriter.println("  optInMaxMediaRoutes: " + ayso.z());
-            printWriter.println("  optInDismissToDisableMin: " + ayso.y());
-            printWriter.println("  receiverModelName: ".concat(String.valueOf(ayso.C())));
-            boolean z11 = ayrq.c;
-            ayso.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  logDebugMessages: " + bawi.v());
+            printWriter.println("  moveCoolDownMillis: " + bawi.x());
+            printWriter.println("  includePerformanceLogs: " + bawi.u());
+            printWriter.println("  optInMaxMediaRoutes: " + bawi.z());
+            printWriter.println("  optInDismissToDisableMin: " + bawi.y());
+            printWriter.println("  receiverModelName: ".concat(String.valueOf(bawi.C())));
+            boolean z11 = bavl.c;
+            bawi.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("MediaTransfer.isTablet referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  isTablet: " + ayso.s());
-            boolean z12 = ayrq.c;
-            ayso.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  isTablet: " + bawi.s());
+            boolean z12 = bavl.c;
+            bawi.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("MediaTransfer.doNotReleaseCrashOnIllegalState referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  doNotReleaseCrashOnIllegalState: " + ayso.a());
-            boolean z13 = ayrq.c;
-            ayso.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  doNotReleaseCrashOnIllegalState: " + bawi.a());
+            boolean z13 = bavl.c;
+            bawi.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("MediaTransfer.routerScanIntervalMillis referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  routerScanIntervalMillis: " + ayso.o());
-            boolean z14 = ayrq.c;
-            ayso.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  routerScanIntervalMillis: " + bawi.o());
+            boolean z14 = bavl.c;
+            bawi.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("MediaTransfer.routerScanDurationMillis referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  routerScanDurationMillis: " + ayso.n());
-            printWriter.println("  doNotReleaseSupportNonPixelPhones: " + ayso.t());
-            boolean z15 = ayrq.c;
-            ayso.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  routerScanDurationMillis: " + bawi.n());
+            printWriter.println("  doNotReleaseSupportNonPixelPhones: " + bawi.t());
+            boolean z15 = bavl.c;
+            bawi.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("MediaTransfer.inactiveMediaStatePropagationDelayMillis referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  inactiveMediaStatePropagationDelayMillis: " + ayso.c());
-            printWriter.println("  retryDelayMillis: " + ayso.D());
-            boolean z16 = ayrq.c;
-            ayso.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  inactiveMediaStatePropagationDelayMillis: " + bawi.c());
+            printWriter.println("  retryDelayMillis: " + bawi.D());
+            boolean z16 = bavl.c;
+            bawi.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("MediaTransfer.undoButtonDelayMillis referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  undoButtonDelayMillis: " + ayso.r());
-            boolean z17 = ayrq.c;
-            ayso.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  undoButtonDelayMillis: " + bawi.r());
+            boolean z17 = bavl.c;
+            bawi.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("MediaTransfer.transferTimeoutDelayMillis referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  transferTimeoutDelayMillis: " + ayso.q());
-            boolean z18 = ayrq.c;
-            ayso.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  transferTimeoutDelayMillis: " + bawi.q());
+            boolean z18 = bavl.c;
+            bawi.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("MediaTransfer.overallInactiveMediaStatePropagationDelayMillis referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  overallInactiveMediaStatePropagationDelayMillis: " + ayso.j());
-            printWriter.println("  maxCachedOnBehalfOfLoggers: " + ayso.w());
-            printWriter.println("  packageNameEligibilityCacheExpirationMillis: " + ayso.A());
-            boolean z19 = ayrq.c;
-            ayso.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  overallInactiveMediaStatePropagationDelayMillis: " + bawi.j());
+            printWriter.println("  maxCachedOnBehalfOfLoggers: " + bawi.w());
+            printWriter.println("  packageNameEligibilityCacheExpirationMillis: " + bawi.A());
+            boolean z19 = bavl.c;
+            bawi.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("MediaTransfer.skipMatchingNotCastingStates referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  skipMatchingNotCastingStates: " + ayso.p());
+            printWriter.println("  skipMatchingNotCastingStates: " + bawi.p());
             printWriter.println("SecureConnections Flags: ");
-            printWriter.println("  payloadTrackerCrashOnCacheEviction: " + aysu.h());
-            printWriter.println("  specifyPayloadUrgency: " + aysu.i());
-            printWriter.println("  enableBandwidthUpgrades: " + aysu.f());
-            printWriter.println("  ncOutgoingConnectionRetryAttempts: " + aysu.g());
-            boolean z20 = ayrq.c;
-            aysu.B();
-            if (ayru.a() && !ayrq.b) {
+            printWriter.println("  payloadTrackerCrashOnCacheEviction: " + bawo.h());
+            printWriter.println("  specifyPayloadUrgency: " + bawo.i());
+            printWriter.println("  enableBandwidthUpgrades: " + bawo.f());
+            printWriter.println("  ncOutgoingConnectionRetryAttempts: " + bawo.g());
+            boolean z20 = bavl.c;
+            bawo.B();
+            if (bavo.a() && !bavl.b) {
                 throw new IllegalStateException("SecureConnections.ncOutgoingConnectionRetryIntervalMillis referenced before Initializer.ensureAllFlagsRead() called.");
             }
-            printWriter.println("  ncOutgoingConnectionRetryIntervalMillis: " + aysu.c());
+            printWriter.println("  ncOutgoingConnectionRetryIntervalMillis: " + bawo.c());
             printWriter.println("Settings Flags: ");
-            printWriter.println("  handleTidepoolSequenceNumber: " + aysw.b());
+            printWriter.println("  handleTidepoolSequenceNumber: " + bawq.b());
             printWriter.println("SpatialOrchestration Flags: ");
-            printWriter.println("  doNotReleaseFwdSpatialEventsToInternalSubscriber: " + aytb.e());
-            printWriter.println("  overrideDockState: " + aytb.h());
-            printWriter.println("  forceStartAdvertising: " + aytb.f());
-            printWriter.println("  forceStartDiscovery: " + aytb.g());
+            printWriter.println("  overrideDockState: " + bawu.f());
+            printWriter.println("  forceStartAdvertising: " + bawu.d());
+            printWriter.println("  forceStartDiscovery: " + bawu.e());
             printWriter.println("Wakeup Flags: ");
-            printWriter.println("  throwOperationExceptionOnFailure: " + aytd.b());
+            printWriter.println("  throwOperationExceptionOnFailure: " + baww.b());
             printWriter.println("***** END DTDI Flags *****");
         }
         printWriter.println("Delegate eligibility:");
-        ayxu a2 = azdb.a();
+        bbbo a2 = bbhd.a();
         Objects.toString(a2);
         printWriter.println("  apiGateway=".concat(a2.toString()));
-        ayxu a3 = azcz.a();
+        bbbo a3 = bbhb.a();
         Objects.toString(a3);
         printWriter.println("  advsettings=".concat(a3.toString()));
-        ayxu a4 = azds.a(this);
+        bbbo a4 = bbhu.a(this);
         Objects.toString(a4);
         printWriter.println("  sync=".concat(a4.toString()));
-        ayxu a5 = azds.a(this);
+        bbbo a5 = bbhu.a(this);
         Objects.toString(a5);
         printWriter.println("  orchestration=".concat(a5.toString()));
-        ayxu a6 = azds.a(this);
+        bbbo a6 = bbhu.a(this);
         Objects.toString(a6);
         printWriter.println("  mt=".concat(a6.toString()));
-        ayxu a7 = azfr.a(this);
+        bbbo a7 = bbjs.a(this);
         Objects.toString(a7);
         printWriter.println("  receiver=".concat(a7.toString()));
-        ayxu a8 = azdu.a();
+        bbbo a8 = bbhw.a();
         Objects.toString(a8);
         printWriter.println("  settings=".concat(a8.toString()));
-        Set set = azfn.f;
-        ayxu a9 = azfm.a();
+        Set set = bbjo.e;
+        bbbo a9 = bbjn.a();
         Objects.toString(a9);
         printWriter.println("  calltransfer=".concat(a9.toString()));
-        ayxu a10 = aypl.a();
+        bbbo a10 = bbhu.a(this);
         Objects.toString(a10);
-        printWriter.println("  discovery=".concat(a10.toString()));
-        ayxu a11 = azds.a(this);
+        printWriter.println("  mediaTransferSettings=".concat(a10.toString()));
+        int i = bare.m;
+        bbbo a11 = bard.a();
         Objects.toString(a11);
-        printWriter.println("  mediaTransferSettings=".concat(a11.toString()));
-        int i = ayng.m;
-        ayxu a12 = aynf.a();
+        printWriter.println("  directDeviceAccess=".concat(a11.toString()));
+        bbbo a12 = batx.a();
         Objects.toString(a12);
-        printWriter.println("  directDeviceAccess=".concat(a12.toString()));
-        ayxu a13 = ayqb.a();
+        printWriter.println("  fastInit=".concat(a12.toString()));
+        qgp qgpVar = bake.i;
+        bbbo a13 = bajt.a();
         Objects.toString(a13);
-        printWriter.println("  fastInit=".concat(a13.toString()));
-        onm onmVar = aygf.i;
-        ayxu a14 = ayfu.a();
-        Objects.toString(a14);
-        printWriter.println("  appCapabilitiesMatching=".concat(a14.toString()));
-        azap azapVar = this.c;
-        if (azapVar != null) {
-            printWriter.println("ready: " + azapVar.c.get());
+        printWriter.println("  appCapabilitiesMatching=".concat(a13.toString()));
+        bbes bbesVar = this.c;
+        if (bbesVar != null) {
+            printWriter.println("ready: " + bbesVar.c.get());
         }
-        ayxx ayxxVar = this.d;
-        if (ayxxVar != null && (ayovVar = ayxxVar.x) != null) {
-            aypp b2 = ayovVar.b();
+        bbbr bbbrVar = this.d;
+        if (bbbrVar != null && (bassVar = bbbrVar.w) != null) {
+            batm b2 = bassVar.b();
             printWriter.println("DiscoveryManager");
-            aypd aypdVar = ((ayou) b2).b;
+            batc batcVar = ((basr) b2).b;
             printWriter.println("  Proxy: NearbyPresence");
-            Integer num = aypdVar.j;
-            printWriter.println("  discoveryStatus=".concat(num == null ? "null" : ckkm.a(num.intValue())));
+            Integer num = batcVar.j;
+            printWriter.println("  discoveryStatus=".concat(num == null ? "null" : cmsr.a(num.intValue())));
         }
-        ayxx ayxxVar2 = this.d;
-        if (ayxxVar2 != null && (aydvVar = ayxxVar2.y) != null) {
-            ayeq a15 = aydvVar.a();
+        bbbr bbbrVar2 = this.d;
+        if (bbbrVar2 != null && (bahuVar = bbbrVar2.x) != null) {
+            baip a14 = bahuVar.a();
             printWriter.println("AdvertisingManager");
-            aydk aydkVar = (aydk) a15;
-            ayef ayefVar = aydkVar.a;
+            bahj bahjVar = (bahj) a14;
+            baie baieVar = bahjVar.a;
             printWriter.println("  NearbyPresenceAdvertiser");
-            Map map = ayefVar.a;
-            for (ayes ayesVar : map.keySet()) {
-                aydz aydzVar = (aydz) map.get(ayesVar);
+            Map map = baieVar.a;
+            for (bair bairVar : map.keySet()) {
+                bahy bahyVar = (bahy) map.get(bairVar);
                 boolean z21 = false;
-                boolean z22 = (aydzVar != null ? aydzVar.a : null) == null;
-                boolean z23 = (aydzVar != null ? aydzVar.b : null) == null;
-                if ((aydzVar != null ? aydzVar.c : null) == null) {
+                boolean z22 = (bahyVar != null ? bahyVar.a : null) == null;
+                boolean z23 = (bahyVar != null ? bahyVar.b : null) == null;
+                if ((bahyVar != null ? bahyVar.c : null) == null) {
                     z21 = true;
                 }
-                printWriter.println("  .   configuration: " + ayesVar + " private=" + z22 + " contacts=" + z23 + " public=" + z21);
+                printWriter.println("  .   configuration: " + bairVar + " private=" + z22 + " contacts=" + z23 + " public=" + z21);
             }
             printWriter.println("Connection");
-            aydkVar.b.a().A(printWriter);
+            bahjVar.b.a().A(printWriter);
         }
-        ayxx ayxxVar3 = this.d;
-        if (ayxxVar3 != null && (ayduVar = ayxxVar3.z) != null) {
-            ayer a16 = ayduVar.a();
+        bbbr bbbrVar3 = this.d;
+        if (bbbrVar3 != null && (bahtVar = bbbrVar3.y) != null) {
+            baiq a15 = bahtVar.a();
             printWriter.println("AdvertisingManager");
-            aydt aydtVar = (aydt) a16;
-            ayeo ayeoVar = aydtVar.b;
+            bahs bahsVar = (bahs) a15;
+            bain bainVar = bahsVar.b;
             printWriter.println("  Proxy: NearbyPresence");
-            AtomicBoolean atomicBoolean = ayeoVar.b;
+            AtomicBoolean atomicBoolean = bainVar.b;
             Objects.toString(atomicBoolean);
             printWriter.println("  isAdvertisingCallTransfer=".concat(String.valueOf(atomicBoolean)));
-            AtomicBoolean atomicBoolean2 = ayeoVar.c;
+            AtomicBoolean atomicBoolean2 = bainVar.c;
             Objects.toString(atomicBoolean2);
             printWriter.println("  isAdvertisingSdk=".concat(String.valueOf(atomicBoolean2)));
-            AtomicBoolean atomicBoolean3 = ayeoVar.d;
+            AtomicBoolean atomicBoolean3 = bainVar.d;
             Objects.toString(atomicBoolean3);
             printWriter.println("  isAdvertisingSdkContacts=".concat(String.valueOf(atomicBoolean3)));
-            AtomicBoolean atomicBoolean4 = ayeoVar.e;
+            AtomicBoolean atomicBoolean4 = bainVar.e;
             Objects.toString(atomicBoolean4);
             printWriter.println("  isAdvertisingMediaTransfer=".concat(String.valueOf(atomicBoolean4)));
-            printWriter.println("  callTransferBroadcastStatus=".concat(ayeo.e(ayeoVar.f)));
-            printWriter.println("  sdkBroadcastStatus=".concat(ayeo.e(ayeoVar.g)));
-            printWriter.println("  sdkContactsBroadcastStatus=".concat(ayeo.e(ayeoVar.h)));
-            printWriter.println("  mediaTransferBroadcastStatus=".concat(ayeo.e(ayeoVar.i)));
+            printWriter.println("  callTransferBroadcastStatus=".concat(bain.e(bainVar.f)));
+            printWriter.println("  sdkBroadcastStatus=".concat(bain.e(bainVar.g)));
+            printWriter.println("  sdkContactsBroadcastStatus=".concat(bain.e(bainVar.h)));
+            printWriter.println("  mediaTransferBroadcastStatus=".concat(bain.e(bainVar.i)));
             printWriter.println("Connection");
-            aydtVar.c.a().A(printWriter);
+            bahsVar.c.a().A(printWriter);
         }
-        ayxx ayxxVar4 = this.d;
-        if (ayxxVar4 != null && (aylvVar = ayxxVar4.c) != null) {
-            aykx b3 = ((ayls) aylvVar).b();
+        bbbr bbbrVar4 = this.d;
+        if (bbbrVar4 != null && (baptVar = bbbrVar4.c) != null) {
+            baow b3 = ((bapq) baptVar).b();
             printWriter.println("Registry");
             Iterator it = b3.d.entrySet().iterator();
             while (it.hasNext()) {
                 printWriter.println("  senderType=" + ((Number) ((Map.Entry) it.next()).getKey()).intValue());
             }
         }
-        ayxx ayxxVar5 = this.d;
-        if (ayxxVar5 != null && (ayzuVar = ayxxVar5.b) != null) {
+        bbbr bbbrVar5 = this.d;
+        if (bbbrVar5 != null && (bbdmVar = bbbrVar5.b) != null) {
             printWriter.println("OrchestrationController");
-            ayzp ayzpVar = (ayzp) ayzuVar;
-            ayzk ayzkVar = ayzpVar.d;
-            printWriter.println("  isListeningForEvents=" + ayzkVar.l);
-            if (ayso.v()) {
-                for (Map.Entry entry : ayzkVar.m.entrySet()) {
+            bbdh bbdhVar = (bbdh) bbdmVar;
+            bbde bbdeVar = bbdhVar.c;
+            printWriter.println("  isListeningForEvents=" + bbdeVar.l);
+            if (bawi.v()) {
+                for (Map.Entry entry : bbdeVar.m.entrySet()) {
                     long longValue = ((Number) entry.getKey()).longValue();
-                    boolean j = ayzk.j(((ayzs) entry.getValue()).a);
-                    List i2 = ((ayzs) entry.getValue()).a.i();
-                    fvbo.e(i2, "getActions(...)");
-                    ArrayList arrayList = new ArrayList(fuwt.o(i2, 10));
-                    Iterator it2 = i2.iterator();
+                    boolean i2 = bbde.i(((bbdk) entry.getValue()).a);
+                    List i3 = ((bbdk) entry.getValue()).a.i();
+                    fxxm.e(i3, "getActions(...)");
+                    ArrayList arrayList = new ArrayList(fxsr.o(i3, 10));
+                    Iterator it2 = i3.iterator();
                     while (it2.hasNext()) {
                         arrayList.add(Integer.valueOf(((PresenceAction) it2.next()).a));
                     }
-                    printWriter.println("  lastEvent [deviceId=" + longValue + " actions=" + arrayList + " hasMediaTransferAction=" + j + "]");
+                    printWriter.println("  lastEvent [deviceId=" + longValue + " actions=" + arrayList + " hasMediaTransferAction=" + i2 + "]");
                 }
             }
-            aykl ayklVar = ayzkVar.f;
-            if (ayklVar != null) {
+            baok baokVar = bbdeVar.e;
+            if (baokVar != null) {
                 printWriter.println("  ContextSyncController");
-                printWriter.println("    isRegisteredForMediaStateLocalUpdates=" + ayklVar.f);
+                printWriter.println("    isRegisteredForMediaStateLocalUpdates=" + baokVar.e);
             }
-            ayyl ayylVar = ayzpVar.c;
+            bbcf bbcfVar = bbdhVar.b;
             printWriter.println("  AdvertisingController");
-            printWriter.println("    isAdvertising: " + ayylVar.l);
-            fvjt fvjtVar = ayylVar.m;
-            Objects.toString(fvjtVar);
-            printWriter.println("    advertisingJob: ".concat(String.valueOf(fvjtVar)));
-            printWriter.println("    isEligibleTablet: " + ayylVar.i.a(ayylVar.b, ayylVar.c));
+            printWriter.println("    isAdvertising: " + bbcfVar.l);
+            fyfr fyfrVar = bbcfVar.m;
+            Objects.toString(fyfrVar);
+            printWriter.println("    advertisingJob: ".concat(String.valueOf(fyfrVar)));
+            printWriter.println("    isEligibleTablet: " + bbcfVar.i.a(bbcfVar.b, bbcfVar.c));
         }
-        ayxx ayxxVar6 = this.d;
-        if (ayxxVar6 != null && (azdvVar = ayxxVar6.h) != null) {
+        bbbr bbbrVar6 = this.d;
+        if (bbbrVar6 != null && (bbhxVar = bbbrVar6.h) != null) {
             printWriter.println("  TidepoolSettingsSubDelegate");
-            aybq aybqVar = azdvVar.a.c;
-            printWriter.println("      CrossDeviceState: ".concat(azdr.a(azdq.a((azdr) aybqVar.b.b()))));
-            azdp azdpVar = (azdp) aybqVar.c.b();
-            printWriter.println("      CallTransferState: ".concat(azdp.a(azdpVar == null ? -1 : azdpVar.a)));
-            azdk azdkVar = azdvVar.b;
+            bafq bafqVar = bbhxVar.a.c;
+            printWriter.println("      CrossDeviceState: ".concat(bbht.a(bbhs.a((bbht) bafqVar.b.b()))));
+            bbhr bbhrVar = (bbhr) bafqVar.c.b();
+            printWriter.println("      CallTransferState: ".concat(bbhr.a(bbhrVar == null ? -1 : bbhrVar.a)));
+            bbhm bbhmVar = bbhxVar.b;
             printWriter.println("  NearbyShareSettingsSubDelegate");
-            printWriter.println("      NearbyShareVisibility: ".concat(azdw.b(((azdw) azdkVar.c.d.b()).a)));
+            printWriter.println("      NearbyShareVisibility: ".concat(bbhy.b(((bbhy) bbhmVar.c.d.b()).a)));
         }
-        ayxx ayxxVar7 = this.d;
-        if (ayxxVar7 != null && ayxxVar7.i != null) {
+        bbbr bbbrVar7 = this.d;
+        if (bbbrVar7 != null && bbbrVar7.i != null) {
             printWriter.println("CallTransferLifecycleDelegateImpl");
         }
-        ayxx ayxxVar8 = this.d;
-        if (ayxxVar8 != null && (aygfVar = ayxxVar8.m) != null) {
+        bbbr bbbrVar8 = this.d;
+        if (bbbrVar8 != null && (bakeVar = bbbrVar8.l) != null) {
             printWriter.println("AppCapabilitiesMatchingLifecycleDelegateImpl");
             printWriter.println("AppCapabilitiesRequestController");
             printWriter.println("  ongoingRequests:");
-            for (Object obj : ((ayff) aygfVar).d.d.keySet()) {
-                fvbo.e(obj, "next(...)");
-                ayfk ayfkVar = (ayfk) obj;
-                printWriter.println("    request [id=" + ayfkVar.a + ", targetDevice=" + ayfkVar.b + "]");
+            for (Object obj : ((baje) bakeVar).d.d.keySet()) {
+                fxxm.e(obj, "next(...)");
+                bajj bajjVar = (bajj) obj;
+                printWriter.println("    request [id=" + bajjVar.a + ", targetDevice=" + bajjVar.b + "]");
             }
         }
-        ayxx ayxxVar9 = this.d;
-        if (ayxxVar9 == null || (aymlVar = ayxxVar9.o) == null) {
+        bbbr bbbrVar9 = this.d;
+        if (bbbrVar9 == null || (baqjVar = bbbrVar9.n) == null) {
             return;
         }
-        aymlVar.l(printWriter);
+        baqjVar.l(printWriter);
     }
 
     @Override // com.google.android.chimera.Service
@@ -500,9 +496,9 @@ public final class LifecycleChimeraService extends Service {
         if (intent != null) {
             intent.getAction();
         }
-        if (asqh.c()) {
-            arwm.h("Threading violation; must be called on main thread");
-            if (fvbo.n(intent != null ? intent.getAction() : null, "com.google.android.gms.dtdi.core.lifecycle.action.BIND_PERSISTENT")) {
+        if (auub.c()) {
+            atzb.h("Threading violation; must be called on main thread");
+            if (fxxm.n(intent != null ? intent.getAction() : null, "com.google.android.gms.dtdi.core.lifecycle.action.BIND_PERSISTENT")) {
                 return this.c.d;
             }
         }
@@ -513,231 +509,228 @@ public final class LifecycleChimeraService extends Service {
     public final void onCreate() {
         Context a2;
         super.onCreate();
-        if (asqh.c() && (a2 = AppContextProvider.a()) != null) {
-            this.g = new bhib(a2, getClass(), 7, "LifecycleChimeraService");
+        if (auub.c() && (a2 = AppContextProvider.a()) != null) {
+            this.g = new bjmq(a2, getClass(), 7, "LifecycleChimeraService");
         }
     }
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        if (!asqh.c()) {
+        if (!auub.c()) {
             stopSelf(i2);
             return 2;
         }
         if (!this.h) {
             this.h = true;
-            new asmf(1, 9).submit(new Runnable() { // from class: ayxt
+            new aupz(1, 9).submit(new Runnable() { // from class: bbbn
                 @Override // java.lang.Runnable
                 public final void run() {
-                    egkp egkpVar;
+                    eixs eixsVar;
                     Throwable th;
-                    ayxs ayxsVar;
-                    egjy d;
-                    fuyx fuyxVar;
-                    fuyx fuyxVar2;
-                    fuyx fuyxVar3;
-                    fuyx fuyxVar4;
-                    fuyx fuyxVar5;
-                    ayjv ayjvVar;
+                    bbbm bbbmVar;
+                    eixb d;
+                    fxuv fxuvVar;
+                    fxuv fxuvVar2;
+                    fxuv fxuvVar3;
+                    fxuv fxuvVar4;
+                    fxuv fxuvVar5;
+                    banu banuVar;
                     LifecycleChimeraService lifecycleChimeraService;
-                    aybq aybqVar;
-                    fuyx fuyxVar6;
-                    ayig ayigVar;
-                    ayov ayovVar;
-                    ayoy ayoyVar;
-                    aydv aydvVar;
-                    aydu ayduVar;
-                    azeh azehVar;
-                    ayov ayovVar2;
-                    ayig ayigVar2;
-                    ayxz ayxzVar;
-                    fuyx fuyxVar7;
+                    bafq bafqVar;
+                    fxuv fxuvVar6;
+                    bamf bamfVar;
+                    bass bassVar;
+                    basw baswVar;
+                    bahu bahuVar;
+                    baht bahtVar;
+                    bbij bbijVar;
+                    baqj baqjVar;
+                    bass bassVar2;
+                    bamf bamfVar2;
+                    bbbt bbbtVar;
                     LifecycleChimeraService lifecycleChimeraService2;
-                    aydu ayduVar2;
                     int i3;
-                    fuyx fuyxVar8;
-                    aybq aybqVar2;
-                    azdc azdcVar;
-                    azda azdaVar;
-                    aylv aylvVar;
-                    ayml aymlVar;
-                    aybq aybqVar3;
-                    azdv azdvVar;
-                    azfs azfsVar;
-                    aypm aypmVar;
-                    egkp egkpVar2;
+                    fxuv fxuvVar7;
+                    bafq bafqVar2;
+                    bbhe bbheVar;
+                    bbhc bbhcVar;
+                    bapt baptVar;
+                    bafq bafqVar3;
+                    fxuv fxuvVar8;
+                    bbhx bbhxVar;
+                    bbjt bbjtVar;
+                    eixs eixsVar2;
                     Throwable th2;
                     Context applicationContext;
-                    ayov ayovVar3;
-                    fvic b;
+                    baqj baqjVar2;
+                    fyea b;
                     PackageManager packageManager;
                     LifecycleChimeraService lifecycleChimeraService3;
-                    aydv aydvVar2;
-                    aydu ayduVar3;
-                    ayov ayovVar4;
-                    ayzp ayzpVar;
-                    aypv aypvVar;
-                    azge azgeVar;
-                    azdt azdtVar;
-                    fuyx fuyxVar9;
-                    aypm aypmVar2;
-                    ayov ayovVar5;
-                    ayjv ayjvVar2;
-                    ayng ayngVar;
-                    azdc azdcVar2;
-                    ayng ayngVar2;
-                    azfn azfnVar;
-                    azda azdaVar2;
-                    ayxv ayxvVar;
-                    ayml aymlVar2;
-                    azdt azdtVar2;
-                    aylv aylvVar2;
-                    aygf aygfVar;
+                    bahu bahuVar2;
+                    baht bahtVar2;
+                    bass bassVar3;
+                    baqj baqjVar3;
+                    basw baswVar2;
+                    bbdh bbdhVar;
+                    bbjt bbjtVar2;
+                    batr batrVar;
+                    bbkf bbkfVar;
+                    bbhv bbhvVar;
+                    bass bassVar4;
+                    banu banuVar2;
+                    fxuv fxuvVar9;
+                    bare bareVar;
+                    bare bareVar2;
+                    bbjo bbjoVar;
+                    bbhe bbheVar2;
+                    bbbp bbbpVar;
+                    baqj baqjVar4;
+                    bbhv bbhvVar2;
+                    bamf bamfVar3;
+                    bbhc bbhcVar2;
+                    bake bakeVar;
                     int i4;
-                    aybh aybhVar;
-                    egjy egjyVar;
-                    aylw v;
+                    bafh bafhVar;
+                    eixb eixbVar;
+                    eixb eixbVar2;
+                    bapu v;
                     PackageManager packageManager2;
-                    ayfq ayfqVar;
-                    ayml aymlVar3;
-                    axzu a2;
-                    axzr axzrVar;
-                    egjy egjyVar2;
-                    azdc azdcVar3;
-                    azeh azehVar2;
+                    bajp bajpVar;
+                    baqj baqjVar5;
+                    badu a2;
+                    badr badrVar;
+                    bbhe bbheVar3;
+                    bbij bbijVar2;
                     LifecycleChimeraService lifecycleChimeraService4;
-                    ((ejhf) LifecycleChimeraService.a.h()).x("Initializing lifecycle service");
+                    ((eluo) LifecycleChimeraService.a.h()).x("Initializing lifecycle service");
                     LifecycleChimeraService lifecycleChimeraService5 = LifecycleChimeraService.this;
-                    bhib bhibVar = lifecycleChimeraService5.g;
-                    egkp k = bhibVar != null ? bhibVar.k("ensureAllFlagsRead") : null;
+                    bjmq bjmqVar = lifecycleChimeraService5.g;
+                    eixs k = bjmqVar != null ? bjmqVar.k("ensureAllFlagsRead") : null;
                     try {
-                        ayrp ayrpVar = ayrq.a;
-                        if (!ayrq.b) {
-                            synchronized (ayrpVar) {
-                                if (!ayrq.b) {
-                                    fnjg.a.a().c();
-                                    ayqe.a();
-                                    ayqe.b();
-                                    fnjk.a.a().b();
-                                    ayqg.a();
-                                    fnjn.a.a().d();
-                                    ayqk.c();
-                                    ayqk.a();
-                                    ayqk.b();
-                                    fnjq.c();
-                                    fnjs.a.a().b();
-                                    ayqm.a();
-                                    fnjv.a.a().d();
-                                    ayqq.c();
-                                    ayqq.a();
-                                    ayqq.b();
-                                    fnjy.a.a().d();
-                                    ayqu.c();
-                                    ayqu.a();
-                                    ayqu.b();
-                                    fnkb.a.a().a();
-                                    fnke.a.a().o();
-                                    ayrj.d();
-                                    ayrj.n();
-                                    ayrj.g();
-                                    ayrj.b();
-                                    ayrj.c();
-                                    ayrj.l();
-                                    ayrj.j();
-                                    ayrj.f();
-                                    ayrj.i();
-                                    ayrj.a();
-                                    ayrj.k();
-                                    ayrj.m();
-                                    ayrj.h();
-                                    ayrj.e();
-                                    fnkh.a.a().b();
-                                    ayrl.a();
-                                    fnkk.a.a().c();
-                                    ayro.a();
-                                    ayro.b();
-                                    fnkn.a.a().d();
-                                    ayru.c();
-                                    ayru.a();
-                                    ayru.b();
-                                    fnkq.a.a().t();
-                                    ayso.e();
-                                    ayso.g();
-                                    ayso.d();
-                                    ayso.i();
-                                    ayso.h();
-                                    ayso.l();
-                                    ayso.s();
-                                    ayso.a();
-                                    ayso.o();
-                                    ayso.n();
-                                    ayso.b();
-                                    ayso.c();
-                                    ayso.m();
-                                    ayso.r();
-                                    ayso.q();
-                                    ayso.j();
-                                    ayso.f();
-                                    ayso.k();
-                                    ayso.p();
-                                    fnkt.a.a().f();
-                                    aysu.d();
-                                    aysu.e();
-                                    aysu.a();
-                                    aysu.b();
-                                    aysu.c();
-                                    fnkw.a.a().b();
-                                    aysw.a();
-                                    fnkz.a.a().e();
-                                    aytb.a();
-                                    aytb.d();
-                                    aytb.b();
-                                    aytb.c();
-                                    fnlc.a.a().b();
-                                    aytd.a();
-                                    ayrq.b = true;
+                        bavk bavkVar = bavl.a;
+                        if (!bavl.b) {
+                            synchronized (bavkVar) {
+                                if (!bavl.b) {
+                                    fqbk.a.lK().c();
+                                    baua.a();
+                                    baua.b();
+                                    fqbo.a.lK().b();
+                                    bauc.a();
+                                    fqbr.a.lK().d();
+                                    baug.c();
+                                    baug.a();
+                                    baug.b();
+                                    fqbu.c();
+                                    fqbw.a.lK().b();
+                                    baui.a();
+                                    fqbz.a.lK().c();
+                                    baul.a();
+                                    baul.b();
+                                    fqcc.a.lK().c();
+                                    bauo.a();
+                                    bauo.b();
+                                    fqcf.a.lK().a();
+                                    fqci.a.lK().p();
+                                    bave.e();
+                                    bave.o();
+                                    bave.h();
+                                    bave.b();
+                                    bave.c();
+                                    bave.g();
+                                    bave.n();
+                                    bave.j();
+                                    bave.k();
+                                    bave.l();
+                                    bave.i();
+                                    bave.f();
+                                    bave.m();
+                                    bave.d();
+                                    bave.a();
+                                    fqcm.a.lK().b();
+                                    bavg.a();
+                                    fqcp.a.lK().c();
+                                    bavj.a();
+                                    bavj.b();
+                                    fqcs.a.lK().c();
+                                    bavo.a();
+                                    bavo.b();
+                                    fqcv.a.lK().t();
+                                    bawi.e();
+                                    bawi.g();
+                                    bawi.d();
+                                    bawi.i();
+                                    bawi.h();
+                                    bawi.l();
+                                    bawi.s();
+                                    bawi.a();
+                                    bawi.o();
+                                    bawi.n();
+                                    bawi.b();
+                                    bawi.c();
+                                    bawi.m();
+                                    bawi.r();
+                                    bawi.q();
+                                    bawi.j();
+                                    bawi.f();
+                                    bawi.k();
+                                    bawi.p();
+                                    fqcy.a.lK().f();
+                                    bawo.d();
+                                    bawo.e();
+                                    bawo.a();
+                                    bawo.b();
+                                    bawo.c();
+                                    fqdb.a.lK().b();
+                                    bawq.a();
+                                    fqde.a.lK().d();
+                                    bawu.c();
+                                    bawu.a();
+                                    bawu.b();
+                                    fqdh.a.lK().b();
+                                    baww.a();
+                                    bavl.b = true;
                                 }
                             }
                         }
-                        fvaa.a(k, null);
-                        ayxx ayxxVar = lifecycleChimeraService5.b;
-                        fvbo.f(ayxxVar, "testOverridesComponentContainer");
-                        bhib bhibVar2 = lifecycleChimeraService5.g;
-                        egkp k2 = bhibVar2 != null ? bhibVar2.k("setupComponentContainerWithSeeds") : null;
+                        fxvy.a(k, null);
+                        bbbr bbbrVar = lifecycleChimeraService5.b;
+                        fxxm.f(bbbrVar, "testOverridesComponentContainer");
+                        bjmq bjmqVar2 = lifecycleChimeraService5.g;
+                        eixs k2 = bjmqVar2 != null ? bjmqVar2.k("setupComponentContainerWithSeeds") : null;
                         try {
-                            ayxsVar = lifecycleChimeraService5.e;
-                            fvbo.f(ayxxVar, "overrideComponentContainer");
-                            fuyx fuyxVar10 = ayxxVar.q;
-                            if (fuyxVar10 == null) {
+                            bbbmVar = lifecycleChimeraService5.e;
+                            fxxm.f(bbbrVar, "overrideComponentContainer");
+                            fxuv fxuvVar10 = bbbrVar.p;
+                            if (fxuvVar10 == null) {
                                 try {
-                                    d = egmm.d("initMainCoroutineContext", egmn.a);
+                                    d = eizp.d("initMainCoroutineContext", eizq.a);
                                     try {
-                                        asot asotVar = ayaw.a;
-                                        fuyx a3 = ayaw.a(5);
-                                        fvaa.a(d, null);
-                                        fuyxVar = a3;
+                                        ausn ausnVar = baew.a;
+                                        fxuv a3 = baew.a(5);
+                                        fxvy.a(d, null);
+                                        fxuvVar = a3;
                                     } finally {
                                     }
                                 } catch (Throwable th3) {
                                     th = th3;
-                                    egkpVar = k2;
+                                    eixsVar = k2;
                                     try {
                                         throw th;
                                     } catch (Throwable th4) {
-                                        fvaa.a(egkpVar, th);
+                                        fxvy.a(eixsVar, th);
                                         throw th4;
                                     }
                                 }
                             } else {
-                                fuyxVar = fuyxVar10;
+                                fxuvVar = fxuvVar10;
                             }
-                            fuyx fuyxVar11 = ayxxVar.q;
-                            if (fuyxVar11 == null) {
-                                d = egmm.d("initMainCoroutineContextWithJob", egmn.a);
+                            fxuv fxuvVar11 = bbbrVar.p;
+                            if (fxuvVar11 == null) {
+                                d = eizp.d("initMainCoroutineContextWithJob", eizq.a);
                                 try {
-                                    fuyx a4 = ayax.a(fuyxVar);
-                                    fvaa.a(d, null);
-                                    fuyxVar11 = a4;
+                                    fxuv a4 = baex.a(fxuvVar);
+                                    fxvy.a(d, null);
+                                    fxuvVar11 = a4;
                                 } finally {
                                     try {
                                         throw th;
@@ -745,30 +738,14 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             }
-                            fuyx fuyxVar12 = ayxxVar.r;
-                            if (fuyxVar12 == null) {
-                                d = egmm.d("initHighSpeedCoroutineContext", egmn.a);
+                            fxuv fxuvVar12 = bbbrVar.q;
+                            if (fxuvVar12 == null) {
+                                d = eizp.d("initHighSpeedCoroutineContext", eizq.a);
                                 try {
-                                    asot asotVar2 = ayaw.a;
-                                    fuyx a5 = ayaw.a(2);
-                                    fvaa.a(d, null);
-                                    fuyxVar2 = a5;
-                                } finally {
-                                    try {
-                                        throw th;
-                                    } finally {
-                                    }
-                                }
-                            } else {
-                                fuyxVar2 = fuyxVar12;
-                            }
-                            fuyx fuyxVar13 = ayxxVar.r;
-                            if (fuyxVar13 == null) {
-                                d = egmm.d("initHighSpeedCoroutineWithJobContext", egmn.a);
-                                try {
-                                    fuyx a6 = ayax.a(fuyxVar2);
-                                    fvaa.a(d, null);
-                                    fuyxVar3 = a6;
+                                    ausn ausnVar2 = baew.a;
+                                    fxuv a5 = baew.a(2);
+                                    fxvy.a(d, null);
+                                    fxuvVar2 = a5;
                                 } finally {
                                     try {
                                         throw th;
@@ -776,16 +753,15 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                fuyxVar3 = fuyxVar13;
+                                fxuvVar2 = fxuvVar12;
                             }
-                            fuyx fuyxVar14 = ayxxVar.t;
-                            if (fuyxVar14 == null) {
-                                d = egmm.d("initIOCoroutineContext", egmn.a);
+                            fxuv fxuvVar13 = bbbrVar.q;
+                            if (fxuvVar13 == null) {
+                                d = eizp.d("initHighSpeedCoroutineWithJobContext", eizq.a);
                                 try {
-                                    asot asotVar3 = ayaw.a;
-                                    fuyx a7 = ayaw.a(3);
-                                    fvaa.a(d, null);
-                                    fuyxVar4 = a7;
+                                    fxuv a6 = baex.a(fxuvVar2);
+                                    fxvy.a(d, null);
+                                    fxuvVar3 = a6;
                                 } finally {
                                     try {
                                         throw th;
@@ -793,15 +769,32 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                fuyxVar4 = fuyxVar14;
+                                fxuvVar3 = fxuvVar13;
                             }
-                            ayml aymlVar4 = ayxxVar.o;
-                            if (aymlVar4 == null) {
-                                d = egmm.d("initDeviceMap", egmn.a);
+                            fxuv fxuvVar14 = bbbrVar.s;
+                            if (fxuvVar14 == null) {
+                                d = eizp.d("initIOCoroutineContext", eizq.a);
                                 try {
-                                    aymg aymgVar = new aymg();
-                                    fvaa.a(d, null);
-                                    aymlVar4 = aymgVar;
+                                    ausn ausnVar3 = baew.a;
+                                    fxuv a7 = baew.a(3);
+                                    fxvy.a(d, null);
+                                    fxuvVar4 = a7;
+                                } finally {
+                                    try {
+                                        throw th;
+                                    } finally {
+                                    }
+                                }
+                            } else {
+                                fxuvVar4 = fxuvVar14;
+                            }
+                            baqj baqjVar6 = bbbrVar.n;
+                            if (baqjVar6 == null) {
+                                d = eizp.d("initDeviceMap", eizq.a);
+                                try {
+                                    baqe baqeVar = new baqe();
+                                    fxvy.a(d, null);
+                                    baqjVar6 = baqeVar;
                                 } finally {
                                     try {
                                         throw th;
@@ -809,13 +802,13 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             }
-                            aybq aybqVar4 = ayxxVar.s;
-                            if (aybqVar4 == null) {
-                                d = egmm.d("initStateManager", egmn.a);
+                            bafq bafqVar4 = bbbrVar.r;
+                            if (bafqVar4 == null) {
+                                d = eizp.d("initStateManager", eizq.a);
                                 try {
-                                    aybq aybqVar5 = new aybq();
-                                    fvaa.a(d, null);
-                                    aybqVar4 = aybqVar5;
+                                    bafq bafqVar5 = new bafq();
+                                    fxvy.a(d, null);
+                                    bafqVar4 = bafqVar5;
                                 } finally {
                                     try {
                                         throw th;
@@ -823,13 +816,13 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             }
-                            ayxz ayxzVar2 = ayxxVar.n;
-                            if (ayxzVar2 == null) {
-                                d = egmm.d("initNPClientProvider", egmn.a);
+                            bbbt bbbtVar2 = bbbrVar.m;
+                            if (bbbtVar2 == null) {
+                                d = eizp.d("initNPClientProvider", eizq.a);
                                 try {
-                                    ayxz ayxzVar3 = new ayxz(lifecycleChimeraService5);
-                                    fvaa.a(d, null);
-                                    ayxzVar2 = ayxzVar3;
+                                    bbbt bbbtVar3 = new bbbt(lifecycleChimeraService5);
+                                    fxvy.a(d, null);
+                                    bbbtVar2 = bbbtVar3;
                                 } finally {
                                     try {
                                         throw th;
@@ -837,18 +830,18 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             }
-                            ayjv ayjvVar3 = ayxxVar.u;
-                            if (ayjvVar3 == null) {
-                                d = egmm.d("initDdaApiThrottler", egmn.a);
+                            banu banuVar3 = bbbrVar.t;
+                            if (banuVar3 == null) {
+                                d = eizp.d("initDdaApiThrottler", eizq.a);
                                 try {
-                                    fvic b2 = ayax.b(fuyxVar4);
+                                    fyea b2 = baex.b(fxuvVar4);
                                     Context applicationContext2 = lifecycleChimeraService5.getApplicationContext();
-                                    fvbo.e(applicationContext2, "getApplicationContext(...)");
-                                    aygi aygiVar = new aygi(omg.THROTTLE_TYPE_GLOBAL_DDA_THROTTLE, new aygz(applicationContext2, b2, 14), b2);
-                                    fuyxVar5 = fuyxVar11;
-                                    ayjv ayjvVar4 = new ayjv(new ayjs(ayrj.p(), new dnlj()), aygiVar);
-                                    fvaa.a(d, null);
-                                    ayjvVar = ayjvVar4;
+                                    fxxm.e(applicationContext2, "getApplicationContext(...)");
+                                    bakh bakhVar = new bakh(qfj.THROTTLE_TYPE_GLOBAL_DDA_THROTTLE, new baky(applicationContext2, b2, 14), b2);
+                                    fxuvVar5 = fxuvVar11;
+                                    banu banuVar4 = new banu(new banr(bave.q(), new dpvs()), bakhVar);
+                                    fxvy.a(d, null);
+                                    banuVar = banuVar4;
                                 } finally {
                                     try {
                                         throw th;
@@ -856,18 +849,18 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                fuyxVar5 = fuyxVar11;
-                                ayjvVar = ayjvVar3;
+                                fxuvVar5 = fxuvVar11;
+                                banuVar = banuVar3;
                             }
-                            azeh azehVar3 = ayxxVar.A;
-                            if (azehVar3 == null) {
-                                d = egmm.d("initWakeupManagerProvider", egmn.a);
+                            bbij bbijVar3 = bbbrVar.z;
+                            if (bbijVar3 == null) {
+                                d = eizp.d("initWakeupManagerProvider", eizq.a);
                                 try {
                                     Context applicationContext3 = lifecycleChimeraService5.getApplicationContext();
-                                    fvbo.e(applicationContext3, "getApplicationContext(...)");
-                                    azeh azehVar4 = new azeh(applicationContext3, aybqVar4, ayax.b(fuyxVar2), applicationContext3.getPackageManager());
-                                    fvaa.a(d, null);
-                                    azehVar3 = azehVar4;
+                                    fxxm.e(applicationContext3, "getApplicationContext(...)");
+                                    bbij bbijVar4 = new bbij(applicationContext3, bafqVar4, baex.b(fxuvVar2), applicationContext3.getPackageManager());
+                                    fxvy.a(d, null);
+                                    bbijVar3 = bbijVar4;
                                 } finally {
                                     try {
                                         throw th;
@@ -875,21 +868,21 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             }
-                            ayig ayigVar3 = ayxxVar.v;
-                            if (ayigVar3 == null) {
-                                d = egmm.d("initConnectionManagerProvider", egmn.a);
+                            bamf bamfVar4 = bbbrVar.u;
+                            if (bamfVar4 == null) {
+                                d = eizp.d("initConnectionManagerProvider", eizq.a);
                                 try {
                                     Context applicationContext4 = lifecycleChimeraService5.getApplicationContext();
-                                    fvbo.e(applicationContext4, "getApplicationContext(...)");
+                                    fxxm.e(applicationContext4, "getApplicationContext(...)");
                                     Context applicationContext5 = lifecycleChimeraService5.getApplicationContext();
-                                    fvbo.e(applicationContext5, "getApplicationContext(...)");
-                                    fvbo.f(applicationContext5, "context");
+                                    fxxm.e(applicationContext5, "getApplicationContext(...)");
+                                    fxxm.f(applicationContext5, "context");
                                     lifecycleChimeraService = lifecycleChimeraService5;
-                                    aybqVar = aybqVar4;
-                                    fuyxVar6 = fuyxVar5;
-                                    ayig ayigVar4 = new ayig(applicationContext4, new ayjp(new aygz(applicationContext5, null, 30), new dnlj()), aymlVar4, azehVar3);
-                                    fvaa.a(d, null);
-                                    ayigVar = ayigVar4;
+                                    bafqVar = bafqVar4;
+                                    fxuvVar6 = fxuvVar5;
+                                    bamf bamfVar5 = new bamf(applicationContext4, new bano(new baky(applicationContext5, null, 30), new dpvs()), baqjVar6, bbijVar3);
+                                    fxvy.a(d, null);
+                                    bamfVar = bamfVar5;
                                 } finally {
                                     try {
                                         throw th;
@@ -898,17 +891,17 @@ public final class LifecycleChimeraService extends Service {
                                 }
                             } else {
                                 lifecycleChimeraService = lifecycleChimeraService5;
-                                aybqVar = aybqVar4;
-                                fuyxVar6 = fuyxVar5;
-                                ayigVar = ayigVar3;
+                                bafqVar = bafqVar4;
+                                fxuvVar6 = fxuvVar5;
+                                bamfVar = bamfVar4;
                             }
-                            ayov ayovVar6 = ayxxVar.x;
-                            if (ayovVar6 == null) {
-                                d = egmm.d("initDiscoveryManagerLegacyProvider", egmn.a);
+                            bass bassVar5 = bbbrVar.w;
+                            if (bassVar5 == null) {
+                                d = eizp.d("initDiscoveryManagerLegacyProvider", eizq.a);
                                 try {
-                                    ayov ayovVar7 = new ayov(aymlVar4, ayxzVar2, fuyxVar, fuyxVar2);
-                                    fvaa.a(d, null);
-                                    ayovVar = ayovVar7;
+                                    bass bassVar6 = new bass(baqjVar6, bbbtVar2, fxuvVar, fxuvVar2);
+                                    fxvy.a(d, null);
+                                    bassVar = bassVar6;
                                 } finally {
                                     try {
                                         throw th;
@@ -916,17 +909,17 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                ayovVar = ayovVar6;
+                                bassVar = bassVar5;
                             }
-                            ayoy ayoyVar2 = ayxxVar.w;
-                            if (ayoyVar2 != null) {
-                                ayoyVar = ayoyVar2;
-                            } else if (ayrl.b()) {
-                                d = egmm.d("initDiscoveryManagerProvider", egmn.a);
+                            basw baswVar3 = bbbrVar.v;
+                            if (baswVar3 != null) {
+                                baswVar = baswVar3;
+                            } else if (bave.z()) {
+                                d = eizp.d("initDiscoveryManagerProvider", eizq.a);
                                 try {
-                                    ayoy ayoyVar3 = new ayoy(aymlVar4, ayxzVar2, ayax.b(fuyxVar2));
-                                    fvaa.a(d, null);
-                                    ayoyVar = ayoyVar3;
+                                    basw baswVar4 = new basw(baqjVar6, bbbtVar2, baex.b(fxuvVar2));
+                                    fxvy.a(d, null);
+                                    baswVar = baswVar4;
                                 } finally {
                                     try {
                                         throw th;
@@ -934,17 +927,17 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                ayoyVar = null;
+                                baswVar = null;
                             }
-                            aydv aydvVar3 = ayxxVar.y;
-                            if (aydvVar3 != null) {
-                                aydvVar = aydvVar3;
-                            } else if (ayrj.z()) {
-                                d = egmm.d("initAdvertisingManagerProvider", egmn.a);
+                            bahu bahuVar3 = bbbrVar.x;
+                            if (bahuVar3 != null) {
+                                bahuVar = bahuVar3;
+                            } else if (bave.y()) {
+                                d = eizp.d("initAdvertisingManagerProvider", eizq.a);
                                 try {
-                                    aydv aydvVar4 = new aydv(ayigVar, ayxzVar2, ayax.b(fuyxVar2));
-                                    fvaa.a(d, null);
-                                    aydvVar = aydvVar4;
+                                    bahu bahuVar4 = new bahu(bamfVar, bbbtVar2, baex.b(fxuvVar2));
+                                    fxvy.a(d, null);
+                                    bahuVar = bahuVar4;
                                 } finally {
                                     try {
                                         throw th;
@@ -952,15 +945,15 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                aydvVar = null;
+                                bahuVar = null;
                             }
-                            aydu ayduVar4 = ayxxVar.z;
-                            if (ayduVar4 == null) {
-                                d = egmm.d("initAdvertisingManagerLegacyProvider", egmn.a);
+                            baht bahtVar3 = bbbrVar.y;
+                            if (bahtVar3 == null) {
+                                d = eizp.d("initAdvertisingManagerLegacyProvider", eizq.a);
                                 try {
-                                    aydu ayduVar5 = new aydu(ayigVar, ayxzVar2, fuyxVar2);
-                                    fvaa.a(d, null);
-                                    ayduVar = ayduVar5;
+                                    baht bahtVar4 = new baht(bamfVar, bbbtVar2, fxuvVar2);
+                                    fxvy.a(d, null);
+                                    bahtVar = bahtVar4;
                                 } finally {
                                     try {
                                         throw th;
@@ -968,33 +961,32 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                ayduVar = ayduVar4;
+                                bahtVar = bahtVar3;
                             }
-                            if (ayxsVar.a(azdb.a())) {
-                                egjy d2 = egmm.d("initPersistentLCDelegate", egmn.a);
+                            if (bbbmVar.a(bbhd.a())) {
+                                eixb d2 = eizp.d("initPersistentLCDelegate", eizq.a);
                                 try {
-                                    azdc azdcVar4 = ayxxVar.d;
-                                    if (azdcVar4 == null) {
+                                    bbhe bbheVar4 = bbbrVar.d;
+                                    if (bbheVar4 == null) {
                                         try {
-                                            ayxzVar = ayxzVar2;
-                                            fuyxVar7 = fuyxVar2;
-                                            ayduVar2 = ayduVar;
+                                            bbbtVar = bbbtVar2;
                                             i3 = 3;
-                                            azehVar2 = azehVar3;
-                                            egjyVar2 = d2;
+                                            bbijVar2 = bbijVar3;
+                                            eixbVar2 = d2;
                                             lifecycleChimeraService4 = lifecycleChimeraService;
-                                            fuyxVar8 = fuyxVar;
-                                            aybqVar2 = aybqVar;
+                                            fxuvVar7 = fxuvVar;
+                                            bafqVar2 = bafqVar;
                                         } catch (Throwable th5) {
                                             th = th5;
-                                            egjyVar2 = d2;
+                                            eixbVar2 = d2;
                                         }
                                         try {
-                                            azdcVar3 = new azan(lifecycleChimeraService4, aymlVar4, ayovVar, ayigVar, azehVar2, ayax.b(fuyxVar6), ayax.b(fuyxVar3));
+                                            bbheVar3 = new bbeq(lifecycleChimeraService4, baqjVar6, bassVar, bamfVar, bbijVar2, baex.b(fxuvVar6), baex.b(fxuvVar3));
                                             lifecycleChimeraService2 = lifecycleChimeraService4;
-                                            ayovVar2 = ayovVar;
-                                            ayigVar2 = ayigVar;
-                                            azehVar = azehVar2;
+                                            baqjVar = baqjVar6;
+                                            bassVar2 = bassVar;
+                                            bamfVar2 = bamfVar;
+                                            bbijVar = bbijVar2;
                                         } catch (Throwable th6) {
                                             th = th6;
                                             try {
@@ -1003,47 +995,45 @@ public final class LifecycleChimeraService extends Service {
                                             }
                                         }
                                     } else {
-                                        azehVar = azehVar3;
-                                        egjyVar2 = d2;
-                                        ayovVar2 = ayovVar;
-                                        ayigVar2 = ayigVar;
-                                        ayxzVar = ayxzVar2;
-                                        fuyxVar7 = fuyxVar2;
+                                        bbijVar = bbijVar3;
+                                        eixbVar2 = d2;
+                                        baqjVar = baqjVar6;
+                                        bassVar2 = bassVar;
+                                        bamfVar2 = bamfVar;
+                                        bbbtVar = bbbtVar2;
                                         lifecycleChimeraService2 = lifecycleChimeraService;
-                                        ayduVar2 = ayduVar;
                                         i3 = 3;
-                                        fuyxVar8 = fuyxVar;
-                                        aybqVar2 = aybqVar;
-                                        azdcVar3 = azdcVar4;
+                                        fxuvVar7 = fxuvVar;
+                                        bafqVar2 = bafqVar;
+                                        bbheVar3 = bbheVar4;
                                     }
-                                    fvaa.a(egjyVar2, null);
-                                    azdcVar = azdcVar3;
+                                    fxvy.a(eixbVar2, null);
+                                    bbheVar = bbheVar3;
                                 } catch (Throwable th7) {
                                     th = th7;
-                                    egjyVar2 = d2;
+                                    eixbVar2 = d2;
                                 }
                             } else {
-                                azehVar = azehVar3;
-                                ayovVar2 = ayovVar;
-                                ayigVar2 = ayigVar;
-                                ayxzVar = ayxzVar2;
-                                fuyxVar7 = fuyxVar2;
+                                bbijVar = bbijVar3;
+                                baqjVar = baqjVar6;
+                                bassVar2 = bassVar;
+                                bamfVar2 = bamfVar;
+                                bbbtVar = bbbtVar2;
                                 lifecycleChimeraService2 = lifecycleChimeraService;
-                                ayduVar2 = ayduVar;
                                 i3 = 3;
-                                fuyxVar8 = fuyxVar;
-                                aybqVar2 = aybqVar;
-                                azdcVar = null;
+                                fxuvVar7 = fxuvVar;
+                                bafqVar2 = bafqVar;
+                                bbheVar = null;
                             }
-                            if (ayxsVar.a(azcz.a())) {
-                                d = egmm.d("initAdvertisingSettingsLCDelegate", egmn.a);
+                            if (bbbmVar.a(bbhb.a())) {
+                                d = eizp.d("initAdvertisingSettingsLCDelegate", eizq.a);
                                 try {
-                                    azda azdaVar3 = ayxxVar.e;
-                                    if (azdaVar3 == null) {
-                                        azdaVar3 = new azaf(aydvVar, ayduVar2, aybqVar2, ayax.b(fuyxVar3));
+                                    bbhc bbhcVar3 = bbbrVar.e;
+                                    if (bbhcVar3 == null) {
+                                        bbhcVar3 = new bbei(bahuVar, bahtVar, bafqVar2, baex.b(fxuvVar3));
                                     }
-                                    fvaa.a(d, null);
-                                    azdaVar = azdaVar3;
+                                    fxvy.a(d, null);
+                                    bbhcVar = bbhcVar3;
                                 } finally {
                                     try {
                                         throw th;
@@ -1051,19 +1041,19 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                azdaVar = null;
+                                bbhcVar = null;
                             }
-                            if (ayxsVar.a(azds.a(lifecycleChimeraService2))) {
-                                d = egmm.d("initContextSyncLCDelegate", egmn.a);
+                            if (bbbmVar.a(bbhu.a(lifecycleChimeraService2))) {
+                                d = eizp.d("initContextSyncLCDelegate", eizq.a);
                                 try {
-                                    aylv aylvVar3 = ayxxVar.c;
-                                    if (aylvVar3 == null) {
+                                    bapt baptVar2 = bbbrVar.c;
+                                    if (baptVar2 == null) {
                                         Context applicationContext6 = lifecycleChimeraService2.getApplicationContext();
-                                        fvbo.e(applicationContext6, "getApplicationContext(...)");
-                                        aylvVar3 = new ayls(applicationContext6, aymlVar4, aybqVar2, (ayla) ayla.a.a());
+                                        fxxm.e(applicationContext6, "getApplicationContext(...)");
+                                        baptVar2 = new bapq(applicationContext6, baqjVar, bafqVar2, (baoz) baoz.a.a());
                                     }
-                                    fvaa.a(d, null);
-                                    aylvVar = aylvVar3;
+                                    fxvy.a(d, null);
+                                    baptVar = baptVar2;
                                 } finally {
                                     try {
                                         throw th;
@@ -1071,27 +1061,26 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                aylvVar = null;
+                                baptVar = null;
                             }
-                            if (ayxsVar.a(azdu.a())) {
-                                d = egmm.d("initSettingsLCDelegate", egmn.a);
+                            if (bbbmVar.a(bbhw.a())) {
+                                d = eizp.d("initSettingsLCDelegate", eizq.a);
                                 try {
-                                    azdv azdvVar2 = ayxxVar.h;
-                                    if (azdvVar2 == null) {
+                                    bbhx bbhxVar2 = bbbrVar.h;
+                                    if (bbhxVar2 == null) {
                                         Context applicationContext7 = lifecycleChimeraService2.getApplicationContext();
-                                        fvbo.e(applicationContext7, "getApplicationContext(...)");
-                                        aymlVar = aymlVar4;
-                                        aybq aybqVar6 = aybqVar2;
-                                        fuyx fuyxVar15 = fuyxVar7;
-                                        azdvVar2 = new azdv(applicationContext7, aybqVar6, fuyxVar15, new azdn(applicationContext7, aybqVar2, azde.a, ayax.b(fuyxVar7)), new azdk(applicationContext7, aybqVar2, ayax.b(fuyxVar7)));
-                                        aybqVar3 = aybqVar6;
-                                        fuyxVar7 = fuyxVar15;
+                                        fxxm.e(applicationContext7, "getApplicationContext(...)");
+                                        bafq bafqVar6 = bafqVar2;
+                                        fxuv fxuvVar15 = fxuvVar2;
+                                        bbhxVar2 = new bbhx(applicationContext7, bafqVar6, fxuvVar15, new bbhp(applicationContext7, bafqVar2, bbhg.a, baex.b(fxuvVar2)), new bbhm(applicationContext7, bafqVar2, baex.b(fxuvVar2)));
+                                        bafqVar3 = bafqVar6;
+                                        fxuvVar8 = fxuvVar15;
                                     } else {
-                                        aymlVar = aymlVar4;
-                                        aybqVar3 = aybqVar2;
+                                        bafqVar3 = bafqVar2;
+                                        fxuvVar8 = fxuvVar2;
                                     }
-                                    fvaa.a(d, null);
-                                    azdvVar = azdvVar2;
+                                    fxvy.a(d, null);
+                                    bbhxVar = bbhxVar2;
                                 } finally {
                                     try {
                                         throw th;
@@ -1099,21 +1088,21 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                aymlVar = aymlVar4;
-                                aybqVar3 = aybqVar2;
-                                azdvVar = null;
+                                bafqVar3 = bafqVar2;
+                                fxuvVar8 = fxuvVar2;
+                                bbhxVar = null;
                             }
-                            if (ayxsVar.a(azfr.a(lifecycleChimeraService2))) {
-                                d = egmm.d("initCastReceiverLCDelegate", egmn.a);
+                            if (bbbmVar.a(bbjs.a(lifecycleChimeraService2))) {
+                                d = eizp.d("initCastReceiverLCDelegate", eizq.a);
                                 try {
-                                    azfs azfsVar2 = ayxxVar.g;
-                                    if (azfsVar2 == null) {
+                                    bbjt bbjtVar3 = bbbrVar.g;
+                                    if (bbjtVar3 == null) {
                                         Context applicationContext8 = lifecycleChimeraService2.getApplicationContext();
-                                        fvbo.e(applicationContext8, "getApplicationContext(...)");
-                                        azfsVar2 = new azfq(applicationContext8);
+                                        fxxm.e(applicationContext8, "getApplicationContext(...)");
+                                        bbjtVar3 = new bbjr(applicationContext8);
                                     }
-                                    fvaa.a(d, null);
-                                    azfsVar = azfsVar2;
+                                    fxvy.a(d, null);
+                                    bbjtVar = bbjtVar3;
                                 } finally {
                                     try {
                                         throw th;
@@ -1121,568 +1110,545 @@ public final class LifecycleChimeraService extends Service {
                                     }
                                 }
                             } else {
-                                azfsVar = null;
+                                bbjtVar = null;
                             }
-                            if (ayru.e() && ayxsVar.a(aypl.a())) {
-                                d = egmm.d("initDiscoveryLCDelegate", egmn.a);
-                                try {
-                                    aypm aypmVar3 = ayxxVar.j;
-                                    if (aypmVar3 == null) {
-                                        aypmVar3 = new aynx(ayovVar2);
-                                    }
-                                    fvaa.a(d, null);
-                                    aypmVar = aypmVar3;
-                                } finally {
-                                    try {
-                                        throw th;
-                                    } finally {
-                                    }
-                                }
-                            } else {
-                                aypmVar = null;
-                            }
-                            try {
-                                if (ayxsVar.a(azds.a(lifecycleChimeraService2))) {
-                                    try {
-                                        egjy d3 = egmm.d("initDockingStateProvider", egmn.a);
-                                        try {
-                                            aypv aypvVar2 = ayxxVar.p;
-                                            if (aypvVar2 == null) {
-                                                try {
-                                                    aypvVar2 = new aypt(lifecycleChimeraService2);
-                                                } catch (Throwable th8) {
-                                                    th2 = th8;
-                                                    egkpVar2 = k2;
-                                                    try {
-                                                        throw th2;
-                                                    } catch (Throwable th9) {
-                                                        fvaa.a(d3, th2);
-                                                        throw th9;
-                                                    }
-                                                }
-                                            }
-                                            aypv aypvVar3 = aypvVar2;
-                                            fvaa.a(d3, null);
-                                            egjy d4 = egmm.d("initOrchestrationLCDelegate", egmn.a);
-                                            try {
-                                                applicationContext = lifecycleChimeraService2.getApplicationContext();
-                                                fvbo.e(applicationContext, "getApplicationContext(...)");
-                                                ayovVar3 = ayovVar2;
-                                                b = ayax.b(fuyxVar8);
-                                                packageManager = applicationContext.getPackageManager();
-                                            } catch (Throwable th10) {
-                                                th = th10;
-                                                egkpVar2 = k2;
-                                            }
-                                            try {
-                                                if (packageManager == null) {
-                                                    throw new IllegalStateException("Required value was null.");
-                                                }
-                                                aydu ayduVar6 = ayduVar2;
-                                                aydv aydvVar5 = aydvVar;
-                                                lifecycleChimeraService3 = lifecycleChimeraService2;
-                                                ayyl ayylVar = new ayyl(applicationContext, aydvVar5, ayduVar6, aypvVar3, new ayyn(packageManager), new ayyy(applicationContext), aspu.a(applicationContext), b);
-                                                aydvVar2 = aydvVar5;
-                                                ayduVar3 = ayduVar6;
-                                                asiu.a();
-                                                asiu.a();
-                                                ayyo ayyoVar = new ayyo(applicationContext, aspu.a(applicationContext));
-                                                aybh aybhVar2 = new aybh(applicationContext);
-                                                String packageName = applicationContext.getPackageName();
-                                                fvbo.e(packageName, "getPackageName(...)");
-                                                ayyr ayyrVar = new ayyr(applicationContext, packageName);
-                                                new ayyq(applicationContext);
-                                                ayyv ayyvVar = new ayyv(applicationContext, ayyoVar, aybhVar2, ayyrVar);
-                                                egkpVar2 = k2;
-                                                ayig ayigVar5 = ayigVar2;
-                                                ayml aymlVar5 = aymlVar;
-                                                ayzk ayzkVar = new ayzk(applicationContext, ayovVar3, ayyvVar, new ayyy(applicationContext), aymlVar5, ayigVar5);
-                                                ayovVar4 = ayovVar3;
-                                                aymlVar = aymlVar5;
-                                                ayigVar2 = ayigVar5;
-                                                ayzp ayzpVar2 = new ayzp(applicationContext, b, ayylVar, ayzkVar);
-                                                fvaa.a(d4, null);
-                                                ayzpVar = ayzpVar2;
-                                                aypvVar = aypvVar3;
-                                            } catch (Throwable th11) {
-                                                th = th11;
-                                                Throwable th12 = th;
-                                                try {
-                                                    throw th12;
-                                                } catch (Throwable th13) {
-                                                    fvaa.a(d4, th12);
-                                                    throw th13;
-                                                }
-                                            }
-                                        } catch (Throwable th14) {
-                                            egkpVar2 = k2;
-                                            th2 = th14;
-                                        }
-                                    } catch (Throwable th15) {
-                                        th = th15;
-                                        egkpVar2 = k2;
-                                        th = th;
-                                        egkpVar = egkpVar2;
-                                        throw th;
-                                    }
-                                } else {
-                                    ayovVar4 = ayovVar2;
-                                    aydvVar2 = aydvVar;
-                                    egkpVar2 = k2;
-                                    ayduVar3 = ayduVar2;
-                                    lifecycleChimeraService3 = lifecycleChimeraService2;
-                                    ayzpVar = null;
-                                    aypvVar = null;
-                                }
-                            } catch (Throwable th16) {
-                                th = th16;
-                                th = th;
-                                egkpVar = egkpVar2;
-                                throw th;
-                            }
-                        } catch (Throwable th17) {
-                            th = th17;
-                            egkpVar = k2;
+                        } catch (Throwable th8) {
+                            th = th8;
+                            eixsVar = k2;
                         }
                         try {
-                            if (ayxsVar.a(azds.a(lifecycleChimeraService3))) {
-                                d = egmm.d("initMediaTransferLCDelegate", egmn.a);
+                            if (bbbmVar.a(bbhu.a(lifecycleChimeraService2))) {
                                 try {
-                                    azge azgeVar2 = ayxxVar.f;
-                                    if (azgeVar2 == null) {
-                                        enop enopVar = enop.a;
-                                        new byhr(Looper.getMainLooper());
-                                        new azfu(lifecycleChimeraService3, null, 30);
-                                        azgeVar2 = new azga(lifecycleChimeraService3, enopVar, new azgc(null));
-                                    }
-                                    fvaa.a(d, null);
-                                    azgeVar = azgeVar2;
-                                } finally {
+                                    eixb d3 = eizp.d("initDockingStateProvider", eizq.a);
                                     try {
-                                        throw th;
-                                    } finally {
-                                    }
-                                }
-                            } else {
-                                azgeVar = null;
-                            }
-                            if (ayxsVar.a(azds.a(lifecycleChimeraService3))) {
-                                d = egmm.d("initMediaTransferSettingLCDelegate", egmn.a);
-                                try {
-                                    azdt azdtVar3 = ayxxVar.k;
-                                    if (azdtVar3 == null) {
-                                        Context applicationContext9 = lifecycleChimeraService3.getApplicationContext();
-                                        fvbo.e(applicationContext9, "getApplicationContext(...)");
-                                        azdtVar3 = new azdt(applicationContext9);
-                                    }
-                                    fvaa.a(d, null);
-                                    azdtVar = azdtVar3;
-                                } finally {
-                                    try {
-                                        throw th;
-                                    } finally {
-                                    }
-                                }
-                            } else {
-                                azdtVar = null;
-                            }
-                            if (azdtVar != null) {
-                                azdtVar.b = new aybh(azdtVar.a);
-                            }
-                            int i5 = ayng.m;
-                            if (ayxsVar.a(aynf.a())) {
-                                d = egmm.d("initDirectDeviceAccessLCDelegate", egmn.a);
-                                try {
-                                    ayng ayngVar3 = ayxxVar.l;
-                                    if (ayngVar3 == null) {
-                                        Context applicationContext10 = lifecycleChimeraService3.getApplicationContext();
-                                        fvbo.e(applicationContext10, "getApplicationContext(...)");
-                                        aypj aypjVar = new aypj(applicationContext10);
-                                        ayml aymlVar6 = aymlVar;
-                                        ayne ayneVar = new ayne(applicationContext10, ayovVar4, ayigVar2, aymlVar6, ayjvVar, fuyxVar8, aypjVar, new ayph(applicationContext10, aypjVar));
-                                        aymlVar = aymlVar6;
-                                        fuyxVar9 = fuyxVar8;
-                                        aypmVar2 = aypmVar;
-                                        ayovVar5 = ayovVar4;
-                                        ayjvVar2 = ayjvVar;
-                                        ayngVar3 = ayneVar;
-                                    } else {
-                                        fuyxVar9 = fuyxVar8;
-                                        aypmVar2 = aypmVar;
-                                        ayovVar5 = ayovVar4;
-                                        ayjvVar2 = ayjvVar;
-                                    }
-                                    fvaa.a(d, null);
-                                    ayngVar = ayngVar3;
-                                } finally {
-                                    try {
-                                        throw th;
-                                    } finally {
-                                    }
-                                }
-                            } else {
-                                fuyxVar9 = fuyxVar8;
-                                aypmVar2 = aypmVar;
-                                ayovVar5 = ayovVar4;
-                                ayjvVar2 = ayjvVar;
-                                ayngVar = null;
-                            }
-                            Set set = azfn.f;
-                            if (ayxsVar.a(azfm.a())) {
-                                d = egmm.d("initCallTransferLCDelegate", egmn.a);
-                                try {
-                                    azfn azfnVar2 = ayxxVar.i;
-                                    if (azfnVar2 == null) {
-                                        Context applicationContext11 = lifecycleChimeraService3.getApplicationContext();
-                                        fvbo.e(applicationContext11, "getApplicationContext(...)");
-                                        asiu.a();
-                                        asot asotVar4 = ayaw.a;
-                                        aybq aybqVar7 = aybqVar3;
-                                        azfnVar2 = new azfl(applicationContext11, ayngVar, aybqVar7, ayax.b(ayax.a(ayaw.a(2))), new ayph(applicationContext11));
-                                        aybqVar3 = aybqVar7;
-                                        azdcVar2 = azdcVar;
-                                        ayngVar2 = ayngVar;
-                                    } else {
-                                        azdcVar2 = azdcVar;
-                                        ayngVar2 = ayngVar;
-                                    }
-                                    fvaa.a(d, null);
-                                    azfnVar = azfnVar2;
-                                } finally {
-                                    try {
-                                        throw th;
-                                    } finally {
-                                    }
-                                }
-                            } else {
-                                azdcVar2 = azdcVar;
-                                ayngVar2 = ayngVar;
-                                azfnVar = null;
-                            }
-                            if (!ayxsVar.a(ayqb.a()) || aydvVar2 == null || ayoyVar == null) {
-                                azdaVar2 = azdaVar;
-                                ayxvVar = null;
-                            } else {
-                                d = egmm.d("initFastInitLCDelegate", egmn.a);
-                                try {
-                                    ayxv ayxvVar2 = ayxxVar.B;
-                                    if (ayxvVar2 == null) {
-                                        ayxvVar2 = new ayqa(ayax.b(fuyxVar7), aydvVar2, ayoyVar);
-                                    }
-                                    fvaa.a(d, null);
-                                    azdaVar2 = azdaVar;
-                                    ayxvVar = ayxvVar2;
-                                } finally {
-                                    try {
-                                        throw th;
-                                    } finally {
-                                    }
-                                }
-                            }
-                            onm onmVar = aygf.i;
-                            if (ayxsVar.a(ayfu.a())) {
-                                egjy d5 = egmm.d("initAppCapabilitiesMatchingLCDelegate", egmn.a);
-                                try {
-                                    aygf aygfVar2 = ayxxVar.m;
-                                    if (aygfVar2 == null) {
-                                        Context applicationContext12 = lifecycleChimeraService3.getApplicationContext();
-                                        fvbo.e(applicationContext12, "getApplicationContext(...)");
-                                        fvic b3 = ayax.b(fuyxVar4);
-                                        try {
-                                            v = AppCapabilitiesMatchingDatabase.l.a().v();
-                                            packageManager2 = applicationContext12.getPackageManager();
-                                            ayig ayigVar6 = ayigVar2;
-                                            aymlVar3 = aymlVar;
-                                            azdtVar2 = azdtVar;
-                                            ayfqVar = new ayfq(applicationContext12, ayigVar6, aymlVar3, b3, v, packageManager2);
-                                            ayigVar2 = ayigVar6;
-                                            a2 = axzt.a(applicationContext12, 1);
-                                            axzrVar = new axzr(applicationContext12);
-                                            asot asotVar5 = ayaw.a;
-                                            egjyVar = d5;
-                                        } catch (Throwable th18) {
-                                            th = th18;
-                                            egjyVar = d5;
-                                        }
-                                        try {
-                                            aymlVar2 = aymlVar3;
-                                            aygfVar2 = new ayff(aymlVar3, applicationContext12, ayjvVar2, ayigVar2, b3, v, packageManager2, ayfqVar, new ayey(applicationContext12, a2, axzrVar, ayax.b(ayaw.a(i3))));
-                                        } catch (Throwable th19) {
-                                            th = th19;
+                                        batr batrVar2 = bbbrVar.o;
+                                        if (batrVar2 == null) {
                                             try {
-                                                throw th;
-                                            } finally {
-                                            }
-                                        }
-                                    } else {
-                                        egjyVar = d5;
-                                        aymlVar2 = aymlVar;
-                                        azdtVar2 = azdtVar;
-                                    }
-                                    fvaa.a(egjyVar, null);
-                                    aylvVar2 = aylvVar;
-                                    aygfVar = aygfVar2;
-                                } catch (Throwable th20) {
-                                    th = th20;
-                                    egjyVar = d5;
-                                }
-                            } else {
-                                aymlVar2 = aymlVar;
-                                azdtVar2 = azdtVar;
-                                aylvVar2 = aylvVar;
-                                aygfVar = null;
-                            }
-                            ayig ayigVar7 = ayigVar2;
-                            azda azdaVar4 = azdaVar2;
-                            ayxx ayxxVar2 = new ayxx(ayzpVar, aylvVar2, azdcVar2, azdaVar4, azgeVar, azfsVar, azdvVar, azfnVar, aypmVar2, azdtVar2, ayngVar2, ayxvVar, aygfVar, ayxzVar, ayigVar7, ayoyVar, ayovVar5, aydvVar2, ayduVar3, azehVar, aymlVar2, aypvVar, fuyxVar9, fuyxVar7, aybqVar3, fuyxVar4, ayjvVar2);
-                            fvaa.a(egkpVar2, null);
-                            d = egmm.d("injectDependency", egmn.a);
-                            try {
-                                ayoy ayoyVar4 = ayxxVar2.w;
-                                aymi aymfVar = (!ayrl.b() || ayoyVar4 == null) ? ayxxVar2.x : new aymf(ayoyVar4);
-                                ayml aymlVar7 = ayxxVar2.o;
-                                if (aymlVar7 != null) {
-                                    aymlVar7.m(aymfVar, ayxxVar2.v);
-                                }
-                                azdc azdcVar5 = ayxxVar2.d;
-                                if (azdcVar5 != null) {
-                                    ((azan) azdcVar5).l = ayxxVar2.i;
-                                }
-                                lifecycleChimeraService3.c.e = (azan) (true != (azdcVar5 instanceof azan) ? null : azdcVar5);
-                                aylv aylvVar4 = ayxxVar2.c;
-                                aylv aylvVar5 = true != (aylvVar4 instanceof ayls) ? null : aylvVar4;
-                                if (aylvVar5 != null) {
-                                    ((ayls) aylvVar5).g = azdcVar5;
-                                }
-                                azge azgeVar3 = ayxxVar2.f;
-                                if (azgeVar3 != null) {
-                                    ((azga) azgeVar3).h = azdcVar5;
-                                    if (azdcVar5 != null) {
-                                        azdcVar5.b("com.google.android.gms.dtdi.MediaTransferChannel", ((azga) azgeVar3).j);
-                                    }
-                                }
-                                if (azgeVar3 != null) {
-                                    ((azga) azgeVar3).g = ayxxVar2.b;
-                                }
-                                ayzu ayzuVar = ayxxVar2.b;
-                                if (ayzuVar != null) {
-                                    ayzk ayzkVar2 = ((ayzp) ayzuVar).d;
-                                    ayyv ayyvVar2 = ayzkVar2.b;
-                                    ((ejhf) ayyv.a.h()).B("MTSettingDebug injectSyncLifecycleDelegate %s, listening for media state events", aylvVar4);
-                                    ayyvVar2.e = aylvVar4;
-                                    if (ayso.v()) {
-                                        ((ejhf) ayzk.a.h()).x("MTDebug OrchestrationController initializing ContextSyncController during dependency injection.");
-                                    }
-                                    if (aylvVar4 != null) {
-                                        ayzkVar2.f = new aykl(aylvVar4, "OrchestrationController", new ayzc(ayzkVar2));
-                                    } else {
-                                        ((ejhf) ayzk.a.j()).x("MTDebug not eligible to connect to Sync due to null delegate");
-                                    }
-                                    ((ayzp) ayzuVar).c.j = aylvVar4;
-                                }
-                                if (ayzuVar != null) {
-                                    azdt azdtVar4 = ayxxVar2.k;
-                                    ayzk ayzkVar3 = ((ayzp) ayzuVar).d;
-                                    ayzkVar3.d = azdtVar4;
-                                    azdt azdtVar5 = ayzkVar3.d;
-                                    if (azdtVar5 != null) {
-                                        azdtVar5.a(ayzkVar3.i);
-                                    }
-                                }
-                                azfs azfsVar3 = ayxxVar2.g;
-                                if (azfsVar3 != null) {
-                                    ((azfq) azfsVar3).c = aylvVar4;
-                                }
-                                if (azfsVar3 != null) {
-                                    ((azfq) azfsVar3).d = azdcVar5;
-                                }
-                                if (ayru.e()) {
-                                    if (azdcVar5 != null) {
-                                        ((azan) azdcVar5).k = ayxxVar2.j;
-                                    }
-                                    if (ayzuVar != null) {
-                                        ((ayzp) ayzuVar).d.e = ayxxVar2.j;
-                                    }
-                                }
-                                if (aytb.e() && azdcVar5 != null) {
-                                    ((azan) azdcVar5).i = ayzuVar;
-                                }
-                                if (azdcVar5 != null) {
-                                    ((azan) azdcVar5).j = ayxxVar2.h;
-                                }
-                                if (azdcVar5 != null) {
-                                    ((azan) azdcVar5).g = ayxxVar2.k;
-                                }
-                                if (azdcVar5 != null) {
-                                    ((azan) azdcVar5).h = ayxxVar2.l;
-                                }
-                                if (azdcVar5 != null) {
-                                    ((azan) azdcVar5).m = ayxxVar2.m;
-                                }
-                                fvaa.a(d, null);
-                                d = egmm.d("startSettingsDelegateBackground", egmn.a);
-                                try {
-                                    azdv azdvVar3 = ayxxVar2.h;
-                                    if (azdvVar3 != null) {
-                                        azdn azdnVar = azdvVar3.a;
-                                        i4 = i3;
-                                        fvgt.b(azdnVar.e, null, null, new azdm(azdnVar, null), i4);
-                                        boolean o = ayrj.o();
-                                        azdk azdkVar = azdvVar3.b;
-                                        if (o) {
-                                            Context context = azdkVar.b;
-                                            fvbo.f(context, "context");
-                                            Intent type = new Intent("com.google.android.gms.SHARE_NEARBY").setPackage("com.google.android.gms").setType("*/*");
-                                            fvbo.e(type, "setType(...)");
-                                            List<ResolveInfo> queryIntentActivities = context.getPackageManager().queryIntentActivities(type, 0);
-                                            fvbo.e(queryIntentActivities, "queryIntentActivities(...)");
-                                            if (queryIntentActivities.isEmpty()) {
-                                                ((ejhf) azdk.a.h()).x("Not registering NS state observer: NS is not available");
-                                            }
-                                        }
-                                        ((ejhf) azdk.a.h()).x("Registering NS state observer");
-                                        azdkVar.a().t(azdkVar.d);
-                                        azdkVar.b();
-                                    } else {
-                                        i4 = i3;
-                                    }
-                                    Throwable th21 = null;
-                                    fvaa.a(d, null);
-                                    egmn egmnVar = egmn.a;
-                                    fvaa.a(egmm.d("startDirectDeviceAccessDelegateBackground", egmnVar), null);
-                                    fvaa.a(egmm.d("startCallTransferDelegateBackground", egmnVar), null);
-                                    fvaa.a(egmm.d("startPersistentDelegateBackground", egmnVar), null);
-                                    d = egmm.d("startAdvertisingSettingsDelegateBackground", egmnVar);
-                                    try {
-                                        azda azdaVar5 = ayxxVar2.e;
-                                        if (azdaVar5 != null) {
-                                            fvgt.b(((azaf) azdaVar5).c, null, null, new azae((azaf) azdaVar5, null), i4);
-                                            ((ejhf) azaf.a.h()).x("DTDI Persistent service started!");
-                                            th21 = null;
-                                        }
-                                        fvaa.a(d, th21);
-                                        d = egmm.d("startAppCapabilitiesMatchingDelegateBackground", egmn.a);
-                                        try {
-                                            aygf aygfVar3 = ayxxVar2.m;
-                                            if (aygfVar3 != null) {
-                                                synchronized (((ayff) aygfVar3).e) {
-                                                    if (!((ayff) aygfVar3).f) {
-                                                        ((ayff) aygfVar3).f = true;
-                                                        ((ayff) aygfVar3).h.a().x("com.google.android.gms.dtdi.AppCapabilitiesChannel", ((ayff) aygfVar3).g);
-                                                    }
-                                                }
-                                            }
-                                            fvaa.a(d, null);
-                                            d = egmm.d("startFastInitDelegateBackground", egmn.a);
-                                            try {
-                                                ayxv ayxvVar3 = ayxxVar2.B;
-                                                if (ayxvVar3 != null) {
-                                                    aypx aypxVar = new aypx((ayqa) ayxvVar3, null);
-                                                    fvic fvicVar = ((ayqa) ayxvVar3).a;
-                                                    fvgt.b(fvicVar, null, null, aypxVar, i4);
-                                                    fvgt.b(fvicVar, null, null, new aypy((ayqa) ayxvVar3, null), i4);
-                                                    fvgt.b(fvicVar, null, null, new aypz((ayqa) ayxvVar3, null), i4);
-                                                }
-                                                fvaa.a(d, null);
-                                                d = egmm.d("startSyncDelegate", egmn.a);
+                                                batrVar2 = new batp(lifecycleChimeraService2);
+                                            } catch (Throwable th9) {
+                                                th2 = th9;
+                                                eixsVar2 = k2;
                                                 try {
-                                                    aylv aylvVar6 = ayxxVar2.c;
-                                                    if (aylvVar6 != null) {
-                                                        if (ayrj.t()) {
-                                                            final ayls aylsVar = (ayls) aylvVar6;
-                                                            aylj.b(new Runnable() { // from class: aylc
-                                                                @Override // java.lang.Runnable
-                                                                public final void run() {
-                                                                    ayls.this.c();
-                                                                }
-                                                            });
-                                                        } else {
-                                                            final ayls aylsVar2 = (ayls) aylvVar6;
-                                                            aylu.a(new Runnable() { // from class: ayld
-                                                                @Override // java.lang.Runnable
-                                                                public final void run() {
-                                                                    ayls.this.c();
-                                                                }
-                                                            });
+                                                    throw th2;
+                                                } catch (Throwable th10) {
+                                                    fxvy.a(d3, th2);
+                                                    throw th10;
+                                                }
+                                            }
+                                        }
+                                        batr batrVar3 = batrVar2;
+                                        fxvy.a(d3, null);
+                                        eixb d4 = eizp.d("initOrchestrationLCDelegate", eizq.a);
+                                        try {
+                                            applicationContext = lifecycleChimeraService2.getApplicationContext();
+                                            fxxm.e(applicationContext, "getApplicationContext(...)");
+                                            baqjVar2 = baqjVar;
+                                            b = baex.b(fxuvVar7);
+                                            packageManager = applicationContext.getPackageManager();
+                                        } catch (Throwable th11) {
+                                            th = th11;
+                                            eixsVar2 = k2;
+                                        }
+                                        try {
+                                            if (packageManager == null) {
+                                                throw new IllegalStateException("Required value was null.");
+                                            }
+                                            bahu bahuVar5 = bahuVar;
+                                            lifecycleChimeraService3 = lifecycleChimeraService2;
+                                            baht bahtVar5 = bahtVar;
+                                            bbcf bbcfVar = new bbcf(applicationContext, bahuVar5, bahtVar5, batrVar3, new bbch(packageManager), new bbcs(applicationContext), auto.a(applicationContext), b);
+                                            bahuVar2 = bahuVar5;
+                                            bbjt bbjtVar4 = bbjtVar;
+                                            bahtVar2 = bahtVar5;
+                                            aumo.a();
+                                            aumo.a();
+                                            bbci bbciVar = new bbci(applicationContext, auto.a(applicationContext));
+                                            bafh bafhVar2 = new bafh(applicationContext);
+                                            String packageName = applicationContext.getPackageName();
+                                            fxxm.e(packageName, "getPackageName(...)");
+                                            bbcl bbclVar = new bbcl(applicationContext, packageName);
+                                            new bbck(applicationContext);
+                                            bbcp bbcpVar = new bbcp(applicationContext, bbciVar, bafhVar2, bbclVar);
+                                            eixsVar2 = k2;
+                                            bamf bamfVar6 = bamfVar2;
+                                            basw baswVar5 = baswVar;
+                                            bassVar3 = bassVar2;
+                                            bbde bbdeVar = new bbde(applicationContext, baswVar5, bassVar3, bbcpVar, new bbcs(applicationContext), baqjVar2, bamfVar6);
+                                            baqjVar3 = baqjVar2;
+                                            bamfVar2 = bamfVar6;
+                                            baswVar2 = baswVar5;
+                                            bbdh bbdhVar2 = new bbdh(applicationContext, b, bbcfVar, bbdeVar);
+                                            fxvy.a(d4, null);
+                                            bbdhVar = bbdhVar2;
+                                            bbjtVar2 = bbjtVar4;
+                                            batrVar = batrVar3;
+                                        } catch (Throwable th12) {
+                                            th = th12;
+                                            Throwable th13 = th;
+                                            try {
+                                                throw th13;
+                                            } catch (Throwable th14) {
+                                                fxvy.a(d4, th13);
+                                                throw th14;
+                                            }
+                                        }
+                                    } catch (Throwable th15) {
+                                        eixsVar2 = k2;
+                                        th2 = th15;
+                                    }
+                                } catch (Throwable th16) {
+                                    th = th16;
+                                    eixsVar2 = k2;
+                                    th = th;
+                                    eixsVar = eixsVar2;
+                                    throw th;
+                                }
+                            } else {
+                                baqjVar3 = baqjVar;
+                                eixsVar2 = k2;
+                                baswVar2 = baswVar;
+                                bassVar3 = bassVar2;
+                                bbjt bbjtVar5 = bbjtVar;
+                                bahtVar2 = bahtVar;
+                                bahuVar2 = bahuVar;
+                                lifecycleChimeraService3 = lifecycleChimeraService2;
+                                bbjtVar2 = bbjtVar5;
+                                bbdhVar = null;
+                                batrVar = null;
+                            }
+                            try {
+                                if (bbbmVar.a(bbhu.a(lifecycleChimeraService3))) {
+                                    d = eizp.d("initMediaTransferLCDelegate", eizq.a);
+                                    try {
+                                        bbkf bbkfVar2 = bbbrVar.f;
+                                        if (bbkfVar2 == null) {
+                                            eqci eqciVar = eqci.a;
+                                            new caqj(Looper.getMainLooper());
+                                            new bbjv(lifecycleChimeraService3, null, 30);
+                                            bbkfVar2 = new bbkb(lifecycleChimeraService3, eqciVar, new bbkd(null));
+                                        }
+                                        fxvy.a(d, null);
+                                        bbkfVar = bbkfVar2;
+                                    } finally {
+                                        try {
+                                            throw th;
+                                        } finally {
+                                        }
+                                    }
+                                } else {
+                                    bbkfVar = null;
+                                }
+                                if (bbbmVar.a(bbhu.a(lifecycleChimeraService3))) {
+                                    d = eizp.d("initMediaTransferSettingLCDelegate", eizq.a);
+                                    try {
+                                        bbhv bbhvVar3 = bbbrVar.j;
+                                        if (bbhvVar3 == null) {
+                                            Context applicationContext9 = lifecycleChimeraService3.getApplicationContext();
+                                            fxxm.e(applicationContext9, "getApplicationContext(...)");
+                                            bbhvVar3 = new bbhv(applicationContext9);
+                                        }
+                                        fxvy.a(d, null);
+                                        bbhvVar = bbhvVar3;
+                                    } finally {
+                                        try {
+                                            throw th;
+                                        } finally {
+                                        }
+                                    }
+                                } else {
+                                    bbhvVar = null;
+                                }
+                                if (bbhvVar != null) {
+                                    bbhvVar.b = new bafh(bbhvVar.a);
+                                }
+                                int i5 = bare.m;
+                                if (bbbmVar.a(bard.a())) {
+                                    d = eizp.d("initDirectDeviceAccessLCDelegate", eizq.a);
+                                    try {
+                                        bare bareVar3 = bbbrVar.k;
+                                        if (bareVar3 == null) {
+                                            Context applicationContext10 = lifecycleChimeraService3.getApplicationContext();
+                                            fxxm.e(applicationContext10, "getApplicationContext(...)");
+                                            bati batiVar = new bati(applicationContext10);
+                                            bass bassVar7 = bassVar3;
+                                            baqj baqjVar7 = baqjVar3;
+                                            barc barcVar = new barc(applicationContext10, bassVar7, bamfVar2, baqjVar7, banuVar, fxuvVar7, batiVar, new batg(applicationContext10, batiVar));
+                                            bassVar4 = bassVar7;
+                                            baqjVar3 = baqjVar7;
+                                            banuVar2 = banuVar;
+                                            fxuvVar9 = fxuvVar7;
+                                            bareVar3 = barcVar;
+                                        } else {
+                                            bassVar4 = bassVar3;
+                                            banuVar2 = banuVar;
+                                            fxuvVar9 = fxuvVar7;
+                                        }
+                                        fxvy.a(d, null);
+                                        bareVar = bareVar3;
+                                    } finally {
+                                        try {
+                                            throw th;
+                                        } finally {
+                                        }
+                                    }
+                                } else {
+                                    bassVar4 = bassVar3;
+                                    banuVar2 = banuVar;
+                                    fxuvVar9 = fxuvVar7;
+                                    bareVar = null;
+                                }
+                                Set set = bbjo.e;
+                                if (bbbmVar.a(bbjn.a())) {
+                                    d = eizp.d("initCallTransferLCDelegate", eizq.a);
+                                    try {
+                                        bbjo bbjoVar2 = bbbrVar.i;
+                                        if (bbjoVar2 == null) {
+                                            Context applicationContext11 = lifecycleChimeraService3.getApplicationContext();
+                                            fxxm.e(applicationContext11, "getApplicationContext(...)");
+                                            ausn ausnVar4 = baew.a;
+                                            bafq bafqVar7 = bafqVar3;
+                                            bbjoVar2 = new bbjm(applicationContext11, bareVar, bafqVar7, baex.b(baex.a(baew.a(2))), new batg(applicationContext11));
+                                            bareVar2 = bareVar;
+                                            bafqVar3 = bafqVar7;
+                                        } else {
+                                            bareVar2 = bareVar;
+                                        }
+                                        fxvy.a(d, null);
+                                        bbjoVar = bbjoVar2;
+                                    } finally {
+                                        try {
+                                            throw th;
+                                        } finally {
+                                        }
+                                    }
+                                } else {
+                                    bareVar2 = bareVar;
+                                    bbjoVar = null;
+                                }
+                                if (!bbbmVar.a(batx.a()) || bahuVar2 == null || baswVar2 == null) {
+                                    bbheVar2 = bbheVar;
+                                    bbbpVar = null;
+                                } else {
+                                    d = eizp.d("initFastInitLCDelegate", eizq.a);
+                                    try {
+                                        bbbp bbbpVar2 = bbbrVar.A;
+                                        if (bbbpVar2 == null) {
+                                            bbbpVar2 = new batw(baex.b(fxuvVar8), bahuVar2, baswVar2);
+                                        }
+                                        fxvy.a(d, null);
+                                        bbheVar2 = bbheVar;
+                                        bbbpVar = bbbpVar2;
+                                    } finally {
+                                        try {
+                                            throw th;
+                                        } finally {
+                                        }
+                                    }
+                                }
+                                qgp qgpVar = bake.i;
+                                if (bbbmVar.a(bajt.a())) {
+                                    eixb d5 = eizp.d("initAppCapabilitiesMatchingLCDelegate", eizq.a);
+                                    try {
+                                        bake bakeVar2 = bbbrVar.l;
+                                        if (bakeVar2 == null) {
+                                            Context applicationContext12 = lifecycleChimeraService3.getApplicationContext();
+                                            fxxm.e(applicationContext12, "getApplicationContext(...)");
+                                            fyea b3 = baex.b(fxuvVar4);
+                                            try {
+                                                v = AppCapabilitiesMatchingDatabase.m.a().v();
+                                                packageManager2 = applicationContext12.getPackageManager();
+                                                bamf bamfVar7 = bamfVar2;
+                                                baqjVar5 = baqjVar3;
+                                                bbhvVar2 = bbhvVar;
+                                                bajpVar = new bajp(applicationContext12, bamfVar7, baqjVar5, b3, v, packageManager2);
+                                                bamfVar2 = bamfVar7;
+                                                a2 = badt.a(applicationContext12, 1);
+                                                badrVar = new badr(applicationContext12);
+                                                ausn ausnVar5 = baew.a;
+                                                eixbVar = d5;
+                                            } catch (Throwable th17) {
+                                                th = th17;
+                                                eixbVar = d5;
+                                            }
+                                            try {
+                                                baje bajeVar = new baje(baqjVar5, applicationContext12, banuVar2, bamfVar2, b3, v, packageManager2, bajpVar, new baix(applicationContext12, a2, badrVar, baex.b(baew.a(i3))));
+                                                baqjVar4 = baqjVar5;
+                                                bakeVar2 = bajeVar;
+                                            } catch (Throwable th18) {
+                                                th = th18;
+                                                try {
+                                                    throw th;
+                                                } finally {
+                                                }
+                                            }
+                                        } else {
+                                            eixbVar = d5;
+                                            baqjVar4 = baqjVar3;
+                                            bbhvVar2 = bbhvVar;
+                                        }
+                                        fxvy.a(eixbVar, null);
+                                        bamfVar3 = bamfVar2;
+                                        bbhcVar2 = bbhcVar;
+                                        bakeVar = bakeVar2;
+                                    } catch (Throwable th19) {
+                                        th = th19;
+                                        eixbVar = d5;
+                                    }
+                                } else {
+                                    baqjVar4 = baqjVar3;
+                                    bbhvVar2 = bbhvVar;
+                                    bamfVar3 = bamfVar2;
+                                    bbhcVar2 = bbhcVar;
+                                    bakeVar = null;
+                                }
+                                bbjo bbjoVar3 = bbjoVar;
+                                banu banuVar5 = banuVar2;
+                                bbbr bbbrVar2 = new bbbr(bbdhVar, baptVar, bbheVar2, bbhcVar2, bbkfVar, bbjtVar2, bbhxVar, bbjoVar3, bbhvVar2, bareVar2, bbbpVar, bakeVar, bbbtVar, bamfVar3, baswVar2, bassVar4, bahuVar2, bahtVar2, bbijVar, baqjVar4, batrVar, fxuvVar9, fxuvVar8, bafqVar3, fxuvVar4, banuVar5);
+                                fxvy.a(eixsVar2, null);
+                                d = eizp.d("injectDependency", eizq.a);
+                                try {
+                                    basw baswVar6 = bbbrVar2.v;
+                                    baqg baqdVar = (!bave.z() || baswVar6 == null) ? bbbrVar2.w : new baqd(baswVar6);
+                                    baqj baqjVar8 = bbbrVar2.n;
+                                    if (baqjVar8 != null) {
+                                        baqjVar8.m(baqdVar, bbbrVar2.u);
+                                    }
+                                    bbhe bbheVar5 = bbbrVar2.d;
+                                    if (bbheVar5 != null) {
+                                        ((bbeq) bbheVar5).j = bbbrVar2.i;
+                                    }
+                                    lifecycleChimeraService3.c.e = (bbeq) (true != (bbheVar5 instanceof bbeq) ? null : bbheVar5);
+                                    bapt baptVar3 = bbbrVar2.c;
+                                    bapt baptVar4 = true != (baptVar3 instanceof bapq) ? null : baptVar3;
+                                    if (baptVar4 != null) {
+                                        ((bapq) baptVar4).g = bbheVar5;
+                                    }
+                                    bbkf bbkfVar3 = bbbrVar2.f;
+                                    if (bbkfVar3 != null) {
+                                        ((bbkb) bbkfVar3).h = bbheVar5;
+                                        if (bbheVar5 != null) {
+                                            bbheVar5.b("com.google.android.gms.dtdi.MediaTransferChannel", ((bbkb) bbkfVar3).j);
+                                        }
+                                    }
+                                    if (bbkfVar3 != null) {
+                                        ((bbkb) bbkfVar3).g = bbbrVar2.b;
+                                    }
+                                    bbdm bbdmVar = bbbrVar2.b;
+                                    if (bbdmVar != null) {
+                                        bbde bbdeVar2 = ((bbdh) bbdmVar).c;
+                                        bbcp bbcpVar2 = bbdeVar2.b;
+                                        ((eluo) bbcp.a.h()).B("MTSettingDebug injectSyncLifecycleDelegate %s, listening for media state events", baptVar3);
+                                        bbcpVar2.e = baptVar3;
+                                        if (bawi.v()) {
+                                            ((eluo) bbde.a.h()).x("MTDebug OrchestrationController initializing ContextSyncController during dependency injection.");
+                                        }
+                                        if (baptVar3 != null) {
+                                            bbdeVar2.e = new baok(baptVar3, "OrchestrationController", new bbcv(bbdeVar2));
+                                        } else {
+                                            ((eluo) bbde.a.j()).x("MTDebug not eligible to connect to Sync due to null delegate");
+                                        }
+                                        ((bbdh) bbdmVar).b.j = baptVar3;
+                                    }
+                                    if (bbdmVar != null) {
+                                        bbhv bbhvVar4 = bbbrVar2.j;
+                                        bbde bbdeVar3 = ((bbdh) bbdmVar).c;
+                                        bbdeVar3.d = bbhvVar4;
+                                        bbhv bbhvVar5 = bbdeVar3.d;
+                                        if (bbhvVar5 != null) {
+                                            bbhvVar5.a(bbdeVar3.i);
+                                        }
+                                    }
+                                    bbjt bbjtVar6 = bbbrVar2.g;
+                                    if (bbjtVar6 != null) {
+                                        ((bbjr) bbjtVar6).c = baptVar3;
+                                    }
+                                    if (bbjtVar6 != null) {
+                                        ((bbjr) bbjtVar6).d = bbheVar5;
+                                    }
+                                    if (bbheVar5 != null) {
+                                        ((bbeq) bbheVar5).i = bbbrVar2.h;
+                                    }
+                                    if (bbheVar5 != null) {
+                                        ((bbeq) bbheVar5).g = bbbrVar2.j;
+                                    }
+                                    if (bbheVar5 != null) {
+                                        ((bbeq) bbheVar5).h = bbbrVar2.k;
+                                    }
+                                    if (bbheVar5 != null) {
+                                        ((bbeq) bbheVar5).k = bbbrVar2.l;
+                                    }
+                                    fxvy.a(d, null);
+                                    d = eizp.d("startSettingsDelegateBackground", eizq.a);
+                                    try {
+                                        bbhx bbhxVar3 = bbbrVar2.h;
+                                        if (bbhxVar3 != null) {
+                                            bbhp bbhpVar = bbhxVar3.a;
+                                            i4 = i3;
+                                            fycr.b(bbhpVar.e, null, null, new bbho(bbhpVar, null), i4);
+                                            bbhm bbhmVar = bbhxVar3.b;
+                                            Context context = bbhmVar.b;
+                                            fxxm.f(context, "context");
+                                            Intent type = new Intent("com.google.android.gms.SHARE_NEARBY").setPackage("com.google.android.gms").setType("*/*");
+                                            fxxm.e(type, "setType(...)");
+                                            List<ResolveInfo> queryIntentActivities = context.getPackageManager().queryIntentActivities(type, 0);
+                                            fxxm.e(queryIntentActivities, "queryIntentActivities(...)");
+                                            if (queryIntentActivities.isEmpty()) {
+                                                ((eluo) bbhm.a.h()).x("Not registering NS state observer: NS is not available");
+                                            } else {
+                                                ((eluo) bbhm.a.h()).x("Registering NS state observer");
+                                                bbhmVar.a().t(bbhmVar.d);
+                                                bbhmVar.b();
+                                            }
+                                        } else {
+                                            i4 = i3;
+                                        }
+                                        fxvy.a(d, null);
+                                        eizq eizqVar = eizq.a;
+                                        fxvy.a(eizp.d("startDirectDeviceAccessDelegateBackground", eizqVar), null);
+                                        fxvy.a(eizp.d("startCallTransferDelegateBackground", eizqVar), null);
+                                        fxvy.a(eizp.d("startPersistentDelegateBackground", eizqVar), null);
+                                        d = eizp.d("startAdvertisingSettingsDelegateBackground", eizqVar);
+                                        try {
+                                            bbhc bbhcVar4 = bbbrVar2.e;
+                                            if (bbhcVar4 != null) {
+                                                if (bave.y()) {
+                                                    fyea fyeaVar = ((bbei) bbhcVar4).c;
+                                                    fycr.b(fyeaVar, null, null, new bbea((bbei) bbhcVar4, null), i4);
+                                                    fycr.b(fyeaVar, null, null, new bbed((bbei) bbhcVar4, null), i4);
+                                                } else {
+                                                    fycr.b(((bbei) bbhcVar4).c, null, null, new bbeh((bbei) bbhcVar4, null), i4);
+                                                }
+                                                ((eluo) bbei.a.h()).x("DTDI Persistent service started!");
+                                            }
+                                            fxvy.a(d, null);
+                                            d = eizp.d("startAppCapabilitiesMatchingDelegateBackground", eizq.a);
+                                            try {
+                                                bake bakeVar3 = bbbrVar2.l;
+                                                if (bakeVar3 != null) {
+                                                    synchronized (((baje) bakeVar3).e) {
+                                                        if (!((baje) bakeVar3).f) {
+                                                            ((baje) bakeVar3).f = true;
+                                                            ((baje) bakeVar3).h.a().x("com.google.android.gms.dtdi.AppCapabilitiesChannel", ((baje) bakeVar3).g);
                                                         }
                                                     }
-                                                    fvaa.a(d, null);
-                                                    d = egmm.d("startOrchestrationDelegate", egmn.a);
+                                                }
+                                                fxvy.a(d, null);
+                                                d = eizp.d("startFastInitDelegateBackground", eizq.a);
+                                                try {
+                                                    bbbp bbbpVar3 = bbbrVar2.A;
+                                                    if (bbbpVar3 != null) {
+                                                        batt battVar = new batt((batw) bbbpVar3, null);
+                                                        fyea fyeaVar2 = ((batw) bbbpVar3).a;
+                                                        fycr.b(fyeaVar2, null, null, battVar, i4);
+                                                        fycr.b(fyeaVar2, null, null, new batu((batw) bbbpVar3, null), i4);
+                                                        fycr.b(fyeaVar2, null, null, new batv((batw) bbbpVar3, null), i4);
+                                                    }
+                                                    fxvy.a(d, null);
+                                                    d = eizp.d("startSyncDelegate", eizq.a);
                                                     try {
-                                                        ayzu ayzuVar2 = ayxxVar2.b;
-                                                        if (ayzuVar2 != null) {
-                                                            ((ejhf) ayzp.a.h()).x("Starting service.");
-                                                            if (ayrj.t()) {
-                                                                ((ayzp) ayzuVar2).a();
-                                                            } else {
-                                                                final ayzp ayzpVar3 = (ayzp) ayzuVar2;
-                                                                aylu.a(new Runnable() { // from class: ayzl
+                                                        bapt baptVar5 = bbbrVar2.c;
+                                                        if (baptVar5 != null) {
+                                                            if (bave.v()) {
+                                                                final bapq bapqVar = (bapq) baptVar5;
+                                                                baph.b(new Runnable() { // from class: bapb
                                                                     @Override // java.lang.Runnable
                                                                     public final void run() {
-                                                                        ayzp.this.a();
+                                                                        bapq.this.c();
+                                                                    }
+                                                                });
+                                                            } else {
+                                                                final bapq bapqVar2 = (bapq) baptVar5;
+                                                                baps.a(new Runnable() { // from class: bapc
+                                                                    @Override // java.lang.Runnable
+                                                                    public final void run() {
+                                                                        bapq.this.c();
                                                                     }
                                                                 });
                                                             }
                                                         }
-                                                        fvaa.a(d, null);
-                                                        d = egmm.d("startMediaTransferDelegate", egmn.a);
+                                                        fxvy.a(d, null);
+                                                        d = eizp.d("startOrchestrationDelegate", eizq.a);
                                                         try {
-                                                            azge azgeVar4 = ayxxVar2.f;
-                                                            if (azgeVar4 != null) {
-                                                                if (((azga) azgeVar4).d == null) {
-                                                                    ((azga) azgeVar4).d = atm$$ExternalSyntheticApiModelOutline0.m(((azga) azgeVar4).b.getSystemService(atm$$ExternalSyntheticApiModelOutline0.m181m$1()));
-                                                                }
-                                                                if (ayrj.t()) {
-                                                                    ayzu ayzuVar3 = ((azga) azgeVar4).g;
-                                                                    if (ayzuVar3 != null) {
-                                                                        ayzuVar3.b(((azga) azgeVar4).m);
-                                                                    }
+                                                            bbdm bbdmVar2 = bbbrVar2.b;
+                                                            if (bbdmVar2 != null) {
+                                                                ((eluo) bbdh.a.h()).x("Starting service.");
+                                                                if (bave.v()) {
+                                                                    ((bbdh) bbdmVar2).a();
                                                                 } else {
-                                                                    final azga azgaVar = (azga) azgeVar4;
-                                                                    aylu.a(new Runnable() { // from class: azfx
+                                                                    final bbdh bbdhVar3 = (bbdh) bbdmVar2;
+                                                                    baps.a(new Runnable() { // from class: bbdf
                                                                         @Override // java.lang.Runnable
                                                                         public final void run() {
-                                                                            azga azgaVar2 = azga.this;
-                                                                            ayzu ayzuVar4 = azgaVar2.g;
-                                                                            if (ayzuVar4 != null) {
-                                                                                ayzuVar4.b(azgaVar2.m);
-                                                                            }
+                                                                            bbdh.this.a();
                                                                         }
                                                                     });
                                                                 }
                                                             }
-                                                            fvaa.a(d, null);
-                                                            d = egmm.d("startCastReceiverDelegate", egmn.a);
+                                                            fxvy.a(d, null);
+                                                            d = eizp.d("startMediaTransferDelegate", eizq.a);
                                                             try {
-                                                                azfs azfsVar4 = ayxxVar2.g;
-                                                                if (azfsVar4 != null) {
-                                                                    if (ayrj.t()) {
-                                                                        ((azfq) azfsVar4).a();
+                                                                bbkf bbkfVar4 = bbbrVar2.f;
+                                                                if (bbkfVar4 != null) {
+                                                                    if (((bbkb) bbkfVar4).d == null) {
+                                                                        ((bbkb) bbkfVar4).d = aia$$ExternalSyntheticApiModelOutline0.m(((bbkb) bbkfVar4).b.getSystemService(aia$$ExternalSyntheticApiModelOutline0.m$1()));
+                                                                    }
+                                                                    if (bave.v()) {
+                                                                        bbdm bbdmVar3 = ((bbkb) bbkfVar4).g;
+                                                                        if (bbdmVar3 != null) {
+                                                                            bbdmVar3.b(((bbkb) bbkfVar4).m);
+                                                                        }
                                                                     } else {
-                                                                        final azfq azfqVar = (azfq) azfsVar4;
-                                                                        aylu.a(new Runnable() { // from class: azfo
+                                                                        final bbkb bbkbVar = (bbkb) bbkfVar4;
+                                                                        baps.a(new Runnable() { // from class: bbjy
                                                                             @Override // java.lang.Runnable
                                                                             public final void run() {
-                                                                                azfq.this.a();
+                                                                                bbkb bbkbVar2 = bbkb.this;
+                                                                                bbdm bbdmVar4 = bbkbVar2.g;
+                                                                                if (bbdmVar4 != null) {
+                                                                                    bbdmVar4.b(bbkbVar2.m);
+                                                                                }
                                                                             }
                                                                         });
                                                                     }
                                                                 }
-                                                                fvaa.a(d, null);
-                                                                d = egmm.d("startMediaTransferSettingsDelegate", egmn.a);
+                                                                fxvy.a(d, null);
+                                                                d = eizp.d("startCastReceiverDelegate", eizq.a);
                                                                 try {
-                                                                    azdt azdtVar6 = ayxxVar2.k;
-                                                                    if (azdtVar6 != null && (aybhVar = azdtVar6.b) != null) {
-                                                                        azdg azdgVar = azdtVar6.d;
-                                                                        fvbo.f(azdgVar, "listener");
-                                                                        aybhVar.c.add(azdgVar);
+                                                                    bbjt bbjtVar7 = bbbrVar2.g;
+                                                                    if (bbjtVar7 != null) {
+                                                                        if (bave.v()) {
+                                                                            ((bbjr) bbjtVar7).a();
+                                                                        } else {
+                                                                            final bbjr bbjrVar = (bbjr) bbjtVar7;
+                                                                            baps.a(new Runnable() { // from class: bbjp
+                                                                                @Override // java.lang.Runnable
+                                                                                public final void run() {
+                                                                                    bbjr.this.a();
+                                                                                }
+                                                                            });
+                                                                        }
                                                                     }
-                                                                    fvaa.a(d, null);
-                                                                    lifecycleChimeraService3.d = ayxxVar2;
-                                                                    lifecycleChimeraService3.f = true;
-                                                                    lifecycleChimeraService3.c.c.set(true);
-                                                                    ((ejhf) LifecycleChimeraService.a.h()).x("Finished delegate init");
+                                                                    fxvy.a(d, null);
+                                                                    d = eizp.d("startMediaTransferSettingsDelegate", eizq.a);
+                                                                    try {
+                                                                        bbhv bbhvVar6 = bbbrVar2.j;
+                                                                        if (bbhvVar6 != null && (bafhVar = bbhvVar6.b) != null) {
+                                                                            bbhi bbhiVar = bbhvVar6.d;
+                                                                            fxxm.f(bbhiVar, "listener");
+                                                                            bafhVar.c.add(bbhiVar);
+                                                                        }
+                                                                        fxvy.a(d, null);
+                                                                        lifecycleChimeraService3.d = bbbrVar2;
+                                                                        lifecycleChimeraService3.f = true;
+                                                                        lifecycleChimeraService3.c.c.set(true);
+                                                                        ((eluo) LifecycleChimeraService.a.h()).x("Finished delegate init");
+                                                                    } finally {
+                                                                    }
                                                                 } finally {
+                                                                    try {
+                                                                        throw th;
+                                                                    } finally {
+                                                                    }
                                                                 }
                                                             } finally {
                                                                 try {
@@ -1732,16 +1698,16 @@ public final class LifecycleChimeraService extends Service {
                                     } finally {
                                     }
                                 }
-                            } finally {
-                                try {
-                                    throw th;
-                                } finally {
-                                }
+                            } catch (Throwable th20) {
+                                th = th20;
+                                eixsVar = eixsVar2;
+                                th = th;
+                                throw th;
                             }
-                        } catch (Throwable th22) {
-                            th = th22;
-                            egkpVar = egkpVar2;
+                        } catch (Throwable th21) {
+                            th = th21;
                             th = th;
+                            eixsVar = eixsVar2;
                             throw th;
                         }
                     } finally {
@@ -1752,14 +1718,14 @@ public final class LifecycleChimeraService extends Service {
         return 1;
     }
 
-    public LifecycleChimeraService(ayxx ayxxVar) {
-        fvbo.f(ayxxVar, "testOverridesComponentContainer");
-        this.b = ayxxVar;
-        this.c = azap.b;
-        this.e = new ayxs();
+    public LifecycleChimeraService(bbbr bbbrVar) {
+        fxxm.f(bbbrVar, "testOverridesComponentContainer");
+        this.b = bbbrVar;
+        this.c = bbes.b;
+        this.e = new bbbm();
     }
 
-    public /* synthetic */ LifecycleChimeraService(ayxx ayxxVar, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this((i & 1) != 0 ? ayxx.a : ayxxVar);
+    public /* synthetic */ LifecycleChimeraService(bbbr bbbrVar, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? bbbr.a : bbbrVar);
     }
 }

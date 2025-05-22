@@ -2,12 +2,12 @@ package com.google.android.gms.car;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.akqf;
+import defpackage.amrq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CarGalMessage implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new akqf();
+    public static final Parcelable.Creator CREATOR = new amrq();
     public long a;
     public int b;
     public int c;

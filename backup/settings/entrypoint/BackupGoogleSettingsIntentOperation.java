@@ -3,30 +3,30 @@ package com.google.android.gms.backup.settings.entrypoint;
 import android.content.Intent;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
-import defpackage.ahwd;
-import defpackage.aieq;
-import defpackage.ajqp;
-import defpackage.anxy;
-import defpackage.aojj;
-import defpackage.arxo;
-import defpackage.asew;
-import defpackage.dwae;
-import defpackage.ekiw;
+import defpackage.ajwt;
+import defpackage.akfg;
+import defpackage.alri;
+import defpackage.apzq;
+import defpackage.aqlc;
+import defpackage.auad;
+import defpackage.auiq;
+import defpackage.dymf;
+import defpackage.emwi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class BackupGoogleSettingsIntentOperation extends anxy {
-    private static final arxo a = ahwd.a("BackupGoogleSettingsIO");
+public class BackupGoogleSettingsIntentOperation extends apzq {
+    private static final auad a = ajwt.a("BackupGoogleSettingsIO");
 
-    @Override // defpackage.anxy
+    @Override // defpackage.apzq
     public final GoogleSettingsItem b() {
-        if (!new ajqp(this).a()) {
+        if (!new alri(this).a()) {
             a.d("Backup settings item not available", new Object[0]);
             return null;
         }
-        Intent f = aieq.f();
-        dwae.c(f, ekiw.GOOGLE_SETTINGS_BACKUP_ITEM);
-        GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(f, 0, R.string.drive_backup_settings_title, aojj.BACKUP_ITEM, asew.DEFAULT_BACKUP_SETTINGS);
+        Intent f = akfg.f();
+        dymf.c(f, emwi.GOOGLE_SETTINGS_BACKUP_ITEM);
+        GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(f, 0, R.string.drive_backup_settings_title, aqlc.BACKUP_ITEM, auiq.DEFAULT_BACKUP_SETTINGS);
         googleSettingsItem.e = false;
         return googleSettingsItem;
     }

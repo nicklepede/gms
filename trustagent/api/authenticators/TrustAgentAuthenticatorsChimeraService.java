@@ -1,26 +1,26 @@
 package com.google.android.gms.trustagent.api.authenticators;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.dgnn;
-import defpackage.ejck;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.diys;
+import defpackage.elpp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TrustAgentAuthenticatorsChimeraService extends bxgd {
+public class TrustAgentAuthenticatorsChimeraService extends bzot {
     static {
-        asot.b("TrustAgent", asej.TRUSTAGENT_AUTHENTICATORS);
+        ausn.b("TrustAgent", auid.TRUSTAGENT_AUTHENTICATORS);
     }
 
     public TrustAgentAuthenticatorsChimeraService() {
-        super(307, "com.google.android.gms.trustagent.AuthenticatorsService.START", ejck.a, 0, 10);
+        super(307, "com.google.android.gms.trustagent.AuthenticatorsService.START", elpp.a, 0, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new dgnn(l(), getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new diys(l(), getServiceRequest.f, getServiceRequest.p));
     }
 }

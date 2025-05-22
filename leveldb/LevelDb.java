@@ -1,27 +1,27 @@
 package com.google.android.gms.leveldb;
 
 import android.util.Log;
-import defpackage.anxj;
-import defpackage.arwm;
-import defpackage.bqmu;
-import defpackage.bqmx;
-import defpackage.bqmz;
-import defpackage.bqux;
-import defpackage.bqvl;
-import defpackage.bqvq;
-import defpackage.bqvv;
-import defpackage.fmut;
+import defpackage.apzb;
+import defpackage.atzb;
+import defpackage.bsuj;
+import defpackage.bsum;
+import defpackage.bsuo;
+import defpackage.btco;
+import defpackage.btdc;
+import defpackage.btdh;
+import defpackage.btdm;
+import defpackage.fpmr;
 import java.io.File;
 import java.util.NoSuchElementException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
-public class LevelDb extends bqmu {
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
+public class LevelDb extends bsuj {
     static boolean a = false;
     final String b;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-    public class Iterator extends bqmu {
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+    public class Iterator extends bsuj {
         public static final int ASCENDING = 0;
         public static final int DESCENDING = 1;
         private final Snapshot b;
@@ -67,12 +67,12 @@ public class LevelDb extends bqmu {
             return nativeBufferedValue == 2;
         }
 
-        @Override // defpackage.bqmu, java.io.Closeable, java.lang.AutoCloseable
+        @Override // defpackage.bsuj, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
             super.close();
         }
 
-        @Override // defpackage.bqmu
+        @Override // defpackage.bsuj
         protected void closeNativeObject() {
             nativeDestroy(this.c);
             Snapshot snapshot = this.b;
@@ -132,7 +132,7 @@ public class LevelDb extends bqmu {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class Options {
         public boolean mCreateIfMissing = true;
         public boolean mErrorIfExists = false;
@@ -146,19 +146,19 @@ public class LevelDb extends bqmu {
         public int mBloomFilterBits = 10;
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-    public class Snapshot extends bqmu {
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+    public class Snapshot extends bsuj {
         public Snapshot(long j) {
             super(j);
             LevelDb.this.ref();
         }
 
-        @Override // defpackage.bqmu, java.io.Closeable, java.lang.AutoCloseable
+        @Override // defpackage.bsuj, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
             super.close();
         }
 
-        @Override // defpackage.bqmu
+        @Override // defpackage.bsuj
         protected void closeNativeObject() {
             LevelDb levelDb = LevelDb.this;
             LevelDb.nativeReleaseSnapshot(levelDb.c, this.c);
@@ -172,7 +172,7 @@ public class LevelDb extends bqmu {
 
     static {
         try {
-            a = !bqmz.a();
+            a = !bsuo.a();
         } catch (UnsatisfiedLinkError unused) {
             a = true;
         }
@@ -218,12 +218,12 @@ public class LevelDb extends bqmu {
         return open(file, new Options());
     }
 
-    @Override // defpackage.bqmu, java.io.Closeable, java.lang.AutoCloseable
+    @Override // defpackage.bsuj, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         super.close();
     }
 
-    @Override // defpackage.bqmu
+    @Override // defpackage.bsuj
     protected void closeNativeObject() {
         nativeClose(this.c);
     }
@@ -276,16 +276,16 @@ public class LevelDb extends bqmu {
             if (Log.isLoggable("LevelDb", 6)) {
                 Log.e("LevelDb", "LevelDb failed to load (1), returning NoOpLevelDb");
             }
-            return new bqmx();
+            return new bsum();
         }
-        bqvv a2 = bqvv.a();
-        if (fmut.a.a().j()) {
-            bqvq bqvqVar = (bqvq) a2.a.peekLast();
-            arwm.t(bqvqVar, "levelDbOptionStack is empty, which should be impossible as it starts with length 1 and all pop calls should have a corresponding push call beforehand");
+        btdm a2 = btdm.a();
+        if (fpmr.a.lK().j()) {
+            btdh btdhVar = (btdh) a2.a.peekLast();
+            atzb.t(btdhVar, "levelDbOptionStack is empty, which should be impossible as it starts with length 1 and all pop calls should have a corresponding push call beforehand");
             try {
-                bqux.a.i(file.getPath(), bqvqVar, 7);
-            } catch (bqvl e) {
-                if (e.a != null && anxj.c() >= 2) {
+                btco.a.i(file.getPath(), btdhVar, 7);
+            } catch (btdc e) {
+                if (e.a != null && apzb.c() >= 2) {
                     throw new LevelDbDataForwardingDisallowedException("Could not open LevelDb with baseDir at path\"" + file.getPath() + "\" because compliance checks disallow data forwarding", e);
                 }
             }
@@ -296,18 +296,18 @@ public class LevelDb extends bqmu {
             if (!options.mDeleteIfCorrupted || !(e2 instanceof LevelDbCorruptionException)) {
                 throw e2;
             }
-            bqmz.b("Failed to open ".concat(String.valueOf(String.valueOf(file))), e2);
+            bsuo.b("Failed to open ".concat(String.valueOf(String.valueOf(file))), e2);
             try {
                 destroy(file);
             } catch (LevelDbException e3) {
-                bqmz.b("Failed to destroy ".concat(String.valueOf(String.valueOf(file))), e3);
+                bsuo.b("Failed to destroy ".concat(String.valueOf(String.valueOf(file))), e3);
             }
             return new LevelDb(nativeOpen(file.getPath(), options.mCreateIfMissing, options.mErrorIfExists, options.mWriteBufferSize, options.mMaxOpenFiles, options.mBlockCacheCapacityBytes, options.mBlockSize, options.mBlockRestartInterval, options.mUseSnappy, options.mBloomFilterBits, false), file.getPath());
         } catch (UnsatisfiedLinkError e4) {
             if (Log.isLoggable("LevelDb", 6)) {
                 Log.e("LevelDb", "LevelDb failed to load (2), returning NoOpLevelDb", e4);
             }
-            return new bqmx();
+            return new bsum();
         }
     }
 

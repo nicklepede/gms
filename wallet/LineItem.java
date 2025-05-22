@@ -3,13 +3,13 @@ package com.google.android.gms.wallet;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.didu;
+import defpackage.atzr;
+import defpackage.dkpf;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class LineItem extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new didu();
+    public static final Parcelable.Creator CREATOR = new dkpf();
     String a;
     String b;
     String c;
@@ -23,14 +23,14 @@ public final class LineItem extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, this.a, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.o(parcel, 6, this.e);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, this.a, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.o(parcel, 6, this.e);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.c(parcel, a);
     }
 
     public LineItem(String str, String str2, String str3, String str4, int i, String str5) {

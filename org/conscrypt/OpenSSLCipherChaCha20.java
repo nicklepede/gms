@@ -1,6 +1,10 @@
 package com.google.android.gms.org.conscrypt;
 
 import com.google.android.gms.org.conscrypt.OpenSSLCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsAlgorithm;
+import com.google.android.gms.org.conscrypt.metrics.MetricsCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsMode;
+import com.google.android.gms.org.conscrypt.metrics.MetricsPadding;
 import defpackage.a;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -12,13 +16,17 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.ShortBufferException;
 import javax.crypto.spec.IvParameterSpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class OpenSSLCipherChaCha20 extends OpenSSLCipher {
     private static final int BLOCK_SIZE_BYTES = 64;
     private static final int NONCE_SIZE_BYTES = 12;
     private int currentBlockConsumedBytes = 0;
     private int blockCounter = 0;
+
+    public OpenSSLCipherChaCha20() {
+        Platform.getStatsLog().countServiceUsage(MetricsAlgorithm.CIPHER.getId(), MetricsCipher.CHACHA20.getId(), MetricsMode.NO_MODE.getId(), MetricsPadding.NO_PADDING.getId());
+    }
 
     private void reset() {
         this.blockCounter = 0;

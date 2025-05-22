@@ -2,37 +2,37 @@ package com.google.android.gms.identitycredentials.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
 import com.google.android.gms.identitycredentials.service.IdentityCredentialApiChimeraService;
-import defpackage.bmua;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgk;
-import defpackage.fuuw;
-import defpackage.fuvg;
-import defpackage.fvaf;
-import defpackage.fvbo;
+import defpackage.bpbh;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpa;
+import defpackage.fxqu;
+import defpackage.fxre;
+import defpackage.fxwd;
+import defpackage.fxxm;
 import java.util.Collections;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class IdentityCredentialApiChimeraService extends bxgd {
-    private final fuuw a;
+public final class IdentityCredentialApiChimeraService extends bzot {
+    private final fxqu a;
 
     public IdentityCredentialApiChimeraService() {
         super(352, "com.google.android.gms.identitycredentials.service.START", Collections.EMPTY_SET, 3, 9);
-        this.a = new fuvg(new fvaf() { // from class: bmtr
-            @Override // defpackage.fvaf
+        this.a = new fxre(new fxwd() { // from class: bpay
+            @Override // defpackage.fxwd
             public final Object a() {
-                return bxhh.a(IdentityCredentialApiChimeraService.this);
+                return bzpx.a(IdentityCredentialApiChimeraService.this);
             }
         });
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        fvbo.f(getServiceRequest, "request");
-        bxgk bxgkVar = (bxgk) this.a.a();
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        fxxm.f(getServiceRequest, "request");
+        bzpa bzpaVar = (bzpa) this.a.a();
         String str = getServiceRequest.f;
-        fvbo.e(str, "getCallingPackage(...)");
-        bxgjVar.c(new bmua(bxgkVar, this, str, getServiceRequest.p));
+        fxxm.e(str, "getCallingPackage(...)");
+        bzozVar.c(new bpbh(bzpaVar, this, str, getServiceRequest.p));
     }
 }

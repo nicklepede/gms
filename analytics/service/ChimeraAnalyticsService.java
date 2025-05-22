@@ -3,23 +3,23 @@ package com.google.android.gms.analytics.service;
 import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.tkw;
-import defpackage.tlb;
-import defpackage.tns;
-import defpackage.tny;
-import defpackage.tod;
+import defpackage.vgw;
+import defpackage.vhb;
+import defpackage.vjs;
+import defpackage.vjy;
+import defpackage.vkd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ChimeraAnalyticsService extends Service {
-    public tlb a;
-    public tod b;
+    public vhb a;
+    public vkd b;
 
-    public final tkw a() {
+    public final vgw a() {
         return this.a.d();
     }
 
-    public final tny b() {
+    public final vjy b() {
         return this.a.h();
     }
 
@@ -32,7 +32,7 @@ public class ChimeraAnalyticsService extends Service {
         String action = intent.getAction();
         b().z("onBind called. action", action);
         if ("com.google.android.gms.analytics.service.START".equals(action)) {
-            return new tns(this);
+            return new vjs(this);
         }
         return null;
     }
@@ -40,8 +40,8 @@ public class ChimeraAnalyticsService extends Service {
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        this.b = tod.a(this);
-        this.a = tlb.e(this);
+        this.b = vkd.a(this);
+        this.a = vhb.e(this);
         b().y("AnalyticsService created");
     }
 

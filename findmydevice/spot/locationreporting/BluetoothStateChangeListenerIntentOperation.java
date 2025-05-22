@@ -2,30 +2,30 @@ package com.google.android.gms.findmydevice.spot.locationreporting;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bebo;
-import defpackage.belh;
-import defpackage.beyh;
-import defpackage.bfdp;
-import defpackage.bfdr;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bgda;
+import defpackage.bgmt;
+import defpackage.bgzu;
+import defpackage.bhff;
+import defpackage.bhfh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class BluetoothStateChangeListenerIntentOperation extends IntentOperation {
-    private final beyh a;
+    private final bgzu a;
 
     static {
-        asot.b("BtStateChangeIntOp", asej.FIND_MY_DEVICE_SPOT);
+        ausn.b("BtStateChangeIntOp", auid.FIND_MY_DEVICE_SPOT);
     }
 
     public BluetoothStateChangeListenerIntentOperation() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (bfdr.b() && bfdp.b(intent, "android.bluetooth.adapter.action.STATE_CHANGED")) {
+        if (bhfh.b() && bhff.b(intent, "android.bluetooth.adapter.action.STATE_CHANGED")) {
             int intExtra = intent.getIntExtra("android.bluetooth.adapter.extra.STATE", -1);
             if (intExtra == 12 || intExtra == 13) {
                 this.a.a();
@@ -33,7 +33,7 @@ public final class BluetoothStateChangeListenerIntentOperation extends IntentOpe
         }
     }
 
-    public BluetoothStateChangeListenerIntentOperation(belh belhVar) {
-        this.a = belhVar.x();
+    public BluetoothStateChangeListenerIntentOperation(bgmt bgmtVar) {
+        this.a = bgmtVar.x();
     }
 }

@@ -5,67 +5,67 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.bhyk;
-import defpackage.dkow;
-import defpackage.dkti;
-import defpackage.dlad;
+import defpackage.bkcz;
+import defpackage.dnap;
+import defpackage.dnfb;
+import defpackage.dnlw;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class GcmMessageReceiver extends TracingBroadcastReceiver {
-    private final dlad a;
-    private final dkti b;
+    private final dnlw a;
+    private final dnfb b;
 
-    public GcmMessageReceiver(dlad dladVar, dkti dktiVar) {
+    public GcmMessageReceiver(dnlw dnlwVar, dnfb dnfbVar) {
         super("wearable");
-        this.a = dladVar;
-        this.b = dktiVar;
+        this.a = dnlwVar;
+        this.b = dnfbVar;
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         try {
-            bhyk.a(context);
-            if (Objects.equals(bhyk.e(intent), "gcm")) {
+            bkcz.a(context);
+            if (Objects.equals(bkcz.e(intent), "gcm")) {
                 String stringExtra = intent.getStringExtra("type");
                 if (Objects.equals(stringExtra, "rpc")) {
-                    final dlad dladVar = this.a;
+                    final dnlw dnlwVar = this.a;
                     final Bundle extras = intent.getExtras();
-                    dkow.i(7, extras.getString("pkgName"));
-                    dladVar.k.post(new Runnable() { // from class: dlab
+                    dnap.i(7, extras.getString("pkgName"));
+                    dnlwVar.k.post(new Runnable() { // from class: dnlu
                         @Override // java.lang.Runnable
                         public final void run() {
                             Bundle bundle = extras;
-                            dkxa b = dlad.b(bundle.getString("path"), Objects.equals(bundle.getString("isChannel"), "1"), bundle.getString("pkgName"));
-                            dlad dladVar2 = dlad.this;
-                            dkxb dkxbVar = dladVar2.f;
-                            dkxbVar.a(b, "chunksRecv", 1);
-                            dlyo a = dladVar2.d.a(bundle);
+                            dnit b = dnlw.b(bundle.getString("path"), Objects.equals(bundle.getString("isChannel"), "1"), bundle.getString("pkgName"));
+                            dnlw dnlwVar2 = dnlw.this;
+                            dniu dniuVar = dnlwVar2.f;
+                            dniuVar.a(b, "chunksRecv", 1);
+                            dokf a = dnlwVar2.d.a(bundle);
                             if (a == null) {
-                                dkpy.b(dkok.INBOUND_DROPPED, b.b);
-                                dladVar2.g.c("INCHUNK", " DROPPED unable to parse");
+                                dnbr.b(dnad.INBOUND_DROPPED, b.b);
+                                dnlwVar2.g.c("INCHUNK", " DROPPED unable to parse");
                                 return;
                             }
-                            dkxbVar.a(b, "msgsRecv", 1);
-                            dkxbVar.a(b, "bytesRecv", a.h.d());
-                            if (!dmdj.b().F()) {
+                            dniuVar.a(b, "msgsRecv", 1);
+                            dniuVar.a(b, "bytesRecv", a.h.d());
+                            if (!doov.b().E()) {
                                 if (Log.isLoggable("rpctransport", 2)) {
                                     Log.v("rpctransport", "Cloud sync isn't started yet. Ignore cloud rpc: ".concat(String.valueOf(String.valueOf(bundle))));
                                 }
-                                dkpy.b(dkok.INBOUND_DROPPED, a.d);
-                                dladVar2.g.f(dktm.a.a, a, "not connected to cloud");
-                                dladVar2.l(a, 8);
+                                dnbr.b(dnad.INBOUND_DROPPED, a.d);
+                                dnlwVar2.g.f(dnff.a.a, a, "not connected to cloud");
+                                dnlwVar2.l(a, 8);
                                 return;
                             }
-                            String str = dladVar2.i;
+                            String str = dnlwVar2.i;
                             if (str != null) {
                                 if (Log.isLoggable("rpctransport", 2)) {
                                     Log.v("rpctransport", String.format("Cloud sync is ignored due to active migrate node:%s, Ignore cloud rpc: %s", str, bundle));
                                 }
-                                dkpy.b(dkok.INBOUND_DROPPED, a.d);
-                                dladVar2.g.f(dktm.a.a, a, "active migration");
-                                dladVar2.l(a, 11);
+                                dnbr.b(dnad.INBOUND_DROPPED, a.d);
+                                dnlwVar2.g.f(dnff.a.a, a, "active migration");
+                                dnlwVar2.l(a, 11);
                                 return;
                             }
                             if (Log.isLoggable("rpctransport", 2)) {
@@ -73,57 +73,57 @@ public class GcmMessageReceiver extends TracingBroadcastReceiver {
                                 Log.v("rpctransport", "handleCloudRpc: ".concat(String.valueOf(String.valueOf(bundle))));
                             }
                             String string = bundle.getString("networkId");
-                            String a2 = dladVar2.c.a();
+                            String a2 = dnlwVar2.c.a();
                             if (a2 == null) {
                                 Log.d("rpctransport", "handleCloudRpc: error, the cloud network isn't configured");
-                                dkpy.b(dkok.INBOUND_DROPPED, a.d);
-                                dladVar2.g.f(dktm.a.a, a, "cloud network not configured");
-                                dladVar2.l(a, 10);
+                                dnbr.b(dnad.INBOUND_DROPPED, a.d);
+                                dnlwVar2.g.f(dnff.a.a, a, "cloud network not configured");
+                                dnlwVar2.l(a, 10);
                                 return;
                             }
                             if (!a2.equals(string)) {
                                 Log.d("rpctransport", a.d(a2, string, "handleCloudRpc: error, the networkId (", " != the configured cloud network (", ")"));
-                                dkpy.b(dkok.INBOUND_DROPPED, a.d);
-                                dladVar2.g.f(dktm.a.a, a, a.i(string, a2, "the networkIds doesn't match, expected ", ", was "));
-                                dladVar2.l(a, 13);
+                                dnbr.b(dnad.INBOUND_DROPPED, a.d);
+                                dnlwVar2.g.f(dnff.a.a, a, a.i(string, a2, "the networkIds doesn't match, expected ", ", was "));
+                                dnlwVar2.l(a, 13);
                                 return;
                             }
                             if (Log.isLoggable("rpctransport", 2)) {
-                                Log.v("rpctransport", "handleCloudRpc: ".concat(dlzw.a(a)));
+                                Log.v("rpctransport", "handleCloudRpc: ".concat(doli.a(a)));
                             }
-                            if (dlad.e(a.f)) {
-                                fecj fecjVar = (fecj) a.iB(5, null);
-                                fecjVar.X(a);
-                                String str2 = dladVar2.j.a().a;
-                                if (!fecjVar.b.L()) {
-                                    fecjVar.U();
+                            if (dnlw.e(a.f)) {
+                                fgrc fgrcVar = (fgrc) a.iQ(5, null);
+                                fgrcVar.X(a);
+                                String str2 = dnlwVar2.j.a().a;
+                                if (!fgrcVar.b.L()) {
+                                    fgrcVar.U();
                                 }
-                                dlyo dlyoVar = (dlyo) fecjVar.b;
+                                dokf dokfVar = (dokf) fgrcVar.b;
                                 str2.getClass();
-                                dlyoVar.b = 8 | dlyoVar.b;
-                                dlyoVar.f = str2;
-                                a = (dlyo) fecjVar.Q();
+                                dokfVar.b = 8 | dokfVar.b;
+                                dokfVar.f = str2;
+                                a = (dokf) fgrcVar.Q();
                             }
-                            dmje dmjeVar = dladVar2.g;
-                            String str3 = dktm.a.a;
-                            dmjeVar.d(str3, a);
-                            if (dladVar2.k(str3, a)) {
-                                dkpy.b(dkok.INBOUND_RECEIVED, a.d);
+                            dous dousVar = dnlwVar2.g;
+                            String str3 = dnff.a.a;
+                            dousVar.d(str3, a);
+                            if (dnlwVar2.k(str3, a)) {
+                                dnbr.b(dnad.INBOUND_RECEIVED, a.d);
                             } else {
-                                dkpy.b(dkok.INBOUND_DROPPED, a.d);
+                                dnbr.b(dnad.INBOUND_DROPPED, a.d);
                             }
                         }
                     });
                 } else if (Objects.equals(stringExtra, "tickle")) {
-                    dkti dktiVar = this.b;
+                    dnfb dnfbVar = this.b;
                     Bundle extras2 = intent.getExtras();
                     if (Log.isLoggable("CloudNode", 2)) {
                         extras2.size();
                         Log.v("CloudNode", "Received message from the cloud, yay, scheduling fetch".concat(String.valueOf(String.valueOf(extras2))));
                     }
-                    dkow.i(2, null);
-                    dktiVar.u = true;
-                    dktiVar.i.e(1);
+                    dnap.i(2, null);
+                    dnfbVar.u = true;
+                    dnfbVar.i.e(1);
                 }
             }
             if (isOrderedBroadcast()) {

@@ -3,10 +3,10 @@ package com.google.android.gms.fido.u2f.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.fido.u2f.api.common.ProtocolVersion;
-import defpackage.bcqq;
+import defpackage.besd;
 import java.io.UnsupportedEncodingException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public enum ProtocolVersion implements Parcelable {
@@ -14,12 +14,12 @@ public enum ProtocolVersion implements Parcelable {
     V1("U2F_V1"),
     V2("U2F_V2");
 
-    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bcqp
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: besc
         @Override // android.os.Parcelable.Creator
         public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
             try {
                 return ProtocolVersion.b(parcel.readString());
-            } catch (bcqq e2) {
+            } catch (besd e2) {
                 throw new RuntimeException(e2);
             }
         }
@@ -52,7 +52,7 @@ public enum ProtocolVersion implements Parcelable {
                 return protocolVersion;
             }
         }
-        throw new bcqq(str);
+        throw new besd(str);
     }
 
     @Override // android.os.Parcelable

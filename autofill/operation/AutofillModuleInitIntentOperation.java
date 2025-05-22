@@ -6,51 +6,51 @@ import android.os.Build;
 import android.os.Looper;
 import android.provider.Settings;
 import com.google.android.gms.autofill.operation.AutofillModuleInitIntentOperation;
-import defpackage.aekv;
-import defpackage.aekw;
-import defpackage.aery;
-import defpackage.aerz;
-import defpackage.aesb;
-import defpackage.aevg;
-import defpackage.affl;
-import defpackage.afjd;
-import defpackage.afjp;
-import defpackage.afjq;
-import defpackage.aggx;
-import defpackage.ahfk;
-import defpackage.ahfw;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asmf;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.byhr;
-import defpackage.byjl;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.dplo;
-import defpackage.dpok;
-import defpackage.eigb;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.eiir;
-import defpackage.ejhf;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensi;
-import defpackage.fldt;
-import defpackage.fleb;
-import defpackage.fleh;
-import defpackage.flgf;
-import defpackage.flhx;
-import defpackage.flix;
-import defpackage.iln;
+import defpackage.aglh;
+import defpackage.agli;
+import defpackage.agsl;
+import defpackage.agsm;
+import defpackage.agso;
+import defpackage.agvt;
+import defpackage.ahfx;
+import defpackage.ahjp;
+import defpackage.ahkb;
+import defpackage.ahkc;
+import defpackage.aihn;
+import defpackage.ajga;
+import defpackage.ajgm;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.aupz;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.caqj;
+import defpackage.casd;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.drvx;
+import defpackage.dryt;
+import defpackage.ektg;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.ekvw;
+import defpackage.eluo;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgb;
+import defpackage.fnvd;
+import defpackage.fnvl;
+import defpackage.fnvr;
+import defpackage.fnxs;
+import defpackage.fnzk;
+import defpackage.foak;
+import defpackage.ind;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class AutofillModuleInitIntentOperation extends anya {
-    public static final asot a = asot.b("AutofillModuleInitIntentOperation", asej.AUTOFILL);
+public class AutofillModuleInitIntentOperation extends apzs {
+    public static final ausn a = ausn.b("AutofillModuleInitIntentOperation", auid.AUTOFILL);
     static final String[] b = {"com.google.android.gms.autofill.service.AutofillService", "com.google.android.gms.autofill.ui.AutofillActivity", "com.google.android.gms.autofill.ui.AutofillDialogActivity", "com.google.android.gms.autofill.ui.AutofillSettingsActivity", "com.google.android.gms.autofill.ui.AutofillManagePasswordsActivity", "com.google.android.gms.autofill.ui.settings.AutofillModernSettingsActivity", "com.google.android.gms.autofill.ui.AutofillTransparentActivity"};
 
     static boolean e() {
@@ -58,13 +58,13 @@ public class AutofillModuleInitIntentOperation extends anya {
     }
 
     private final void f(String str, boolean z) {
-        asng.H(getBaseContext(), str, z);
+        aura.H(getBaseContext(), str, z);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        ((ejhf) ((ejhf) a.h()).ah((char) 1019)).z("AutofillModuleInitIntentOperation onInitRuntimeState(%s)", i);
-        fldt.A();
+        ((eluo) ((eluo) a.h()).ai((char) 1013)).z("AutofillModuleInitIntentOperation onInitRuntimeState(%s)", i);
+        fnvd.A();
         boolean e = e();
         String[] strArr = b;
         int length = strArr.length;
@@ -73,111 +73,110 @@ public class AutofillModuleInitIntentOperation extends anya {
         }
         f("com.google.android.gms.autofill.ui.AutofillSettingsPrivacyHubActivity", e);
         if (e) {
-            aerz a2 = aery.a(this);
-            aesb aesbVar = (aesb) a2;
-            aekw aekwVar = (aekw) aesbVar.ad.a();
-            if (aekwVar.e.compareAndSet(false, true)) {
+            agsm a2 = agsl.a(this);
+            agso agsoVar = (agso) a2;
+            agli agliVar = (agli) agsoVar.ad.a();
+            if (agliVar.e.compareAndSet(false, true)) {
                 IntentFilter intentFilter = new IntentFilter();
                 intentFilter.addAction("android.intent.action.PACKAGE_REPLACED");
                 intentFilter.addAction("android.intent.action.PACKAGE_ADDED");
                 intentFilter.addAction("android.intent.action.PACKAGE_REMOVED");
                 intentFilter.addDataScheme("package");
-                iln.b(aekwVar.a, aekwVar.b, intentFilter, 2);
-                new byhr(Looper.getMainLooper()).post(new aekv(aekwVar.c, aekwVar.d));
+                ind.b(agliVar.a, agliVar.b, intentFilter, 2);
+                new caqj(Looper.getMainLooper()).post(new aglh(agliVar.c, agliVar.d));
             }
-            if (flhx.m() || flgf.e() || flix.c()) {
-                afjq.a(a2);
-                if (flhx.k() && fldt.m()) {
-                    eiid eiidVar = (eiid) aesbVar.at.a();
-                    if (eiidVar.h()) {
-                        ((affl) eiidVar.c()).b(true);
+            if (fnzk.m() || fnxs.e() || foak.c()) {
+                ahkc.a(a2);
+                if (fnzk.k() && fnvd.m()) {
+                    ekvi ekviVar = (ekvi) agsoVar.at.a();
+                    if (ekviVar.h()) {
+                        ((ahfx) ekviVar.c()).b(true);
                     } else {
-                        String i3 = flhx.i();
-                        final eiid eiidVar2 = (eiid) aesbVar.ar.a();
-                        final eiid eiidVar3 = (eiid) aesbVar.as.a();
-                        final asmf asmfVar = new asmf(Integer.MAX_VALUE, 9);
-                        if (eiidVar3.h() && eiidVar2.h()) {
-                            dplo dploVar = (dplo) eiidVar2.c();
-                            dpok dpokVar = new dpok(null);
-                            dpokVar.b(i3);
-                            enps.f(enox.g(ensi.h(dploVar.h(dpokVar.a())), Exception.class, new enqc() { // from class: afjm
-                                @Override // defpackage.enqc
-                                public final enss a(Object obj) {
+                        String i3 = fnzk.i();
+                        final ekvi ekviVar2 = (ekvi) agsoVar.ar.a();
+                        final ekvi ekviVar3 = (ekvi) agsoVar.as.a();
+                        final aupz aupzVar = new aupz(Integer.MAX_VALUE, 9);
+                        if (ekviVar3.h() && ekviVar2.h()) {
+                            drvx drvxVar = (drvx) ekviVar2.c();
+                            ektg ektgVar = ektg.a;
+                            eqdl.f(eqcq.g(eqgb.h(drvxVar.h(new dryt(i3, ektgVar, ektgVar))), Exception.class, new eqdv() { // from class: ahjy
+                                @Override // defpackage.eqdv
+                                public final eqgl a(Object obj) {
                                     Exception exc = (Exception) obj;
-                                    asot asotVar = AutofillModuleInitIntentOperation.a;
-                                    final enss a3 = ((dpja) eiid.this.c()).a((dplo) eiidVar2.c());
-                                    a3.hn(new Runnable() { // from class: afjo
+                                    ausn ausnVar = AutofillModuleInitIntentOperation.a;
+                                    final eqgl a3 = ((drtj) ekvi.this.c()).a((drvx) ekviVar2.c());
+                                    a3.hD(new Runnable() { // from class: ahka
                                         @Override // java.lang.Runnable
                                         public final void run() {
-                                            asot asotVar2 = AutofillModuleInitIntentOperation.a;
+                                            ausn ausnVar2 = AutofillModuleInitIntentOperation.a;
                                             try {
-                                                ensj.r(enss.this);
-                                                ((ejhf) ((ejhf) AutofillModuleInitIntentOperation.a.h()).ah(1016)).x("MDD refresh for AwG Server Predictions has been completed");
+                                                eqgc.r(eqgl.this);
+                                                ((eluo) ((eluo) AutofillModuleInitIntentOperation.a.h()).ai(1010)).x("MDD refresh for AwG Server Predictions has been completed");
                                             } catch (Exception e2) {
-                                                ((ejhf) ((ejhf) ((ejhf) AutofillModuleInitIntentOperation.a.j()).s(e2)).ah((char) 1017)).x("MDD refresh for AwG Server Predictions has failed");
+                                                ((eluo) ((eluo) ((eluo) AutofillModuleInitIntentOperation.a.j()).s(e2)).ai((char) 1011)).x("MDD refresh for AwG Server Predictions has failed");
                                             }
                                         }
-                                    }, asmfVar);
+                                    }, aupzVar);
                                     throw exc;
                                 }
-                            }, asmfVar), new eiho() { // from class: afjn
-                                @Override // defpackage.eiho
+                            }, aupzVar), new ekut() { // from class: ahjz
+                                @Override // defpackage.ekut
                                 public final Object apply(Object obj) {
-                                    asot asotVar = AutofillModuleInitIntentOperation.a;
+                                    ausn ausnVar = AutofillModuleInitIntentOperation.a;
                                     return null;
                                 }
-                            }, asmfVar);
+                            }, aupzVar);
                         }
                     }
                 }
             }
             a2.b().a();
-            eiid p = a2.p();
-            if (fldt.t() && ahfw.a(a2.h())) {
-                ((afjd) ((eiir) p).a).c();
+            ekvi p = a2.p();
+            if (fnvd.s() && ajgm.a(a2.h())) {
+                ((ahjp) ((ekvw) p).a).c();
             } else {
-                ((afjd) ((eiir) p).a).d();
+                ((ahjp) ((ekvw) p).a).d();
             }
         }
         if (Build.VERSION.SDK_INT >= 29) {
-            if (fleb.d()) {
+            if (fnvl.d()) {
                 String string = Settings.Secure.getString(getContentResolver(), "autofill_service");
                 if (string != null && string.equals("com.google.android.gms/com.google.android.gms.autofill.service.AutofillService")) {
-                    ahfk.f();
-                    ahfk.b(this);
-                } else if (ahfk.c(this)) {
-                    ahfk.a(this);
-                    ahfk.e();
+                    ajga.f();
+                    ajga.b(this);
+                } else if (ajga.c(this)) {
+                    ajga.a(this);
+                    ajga.e();
                 }
-                getContentResolver().registerContentObserver(Settings.Secure.getUriFor("autofill_service"), false, new afjp(this, new byhr(getMainLooper()), this));
-            } else if (ahfk.c(this)) {
-                ahfk.e();
-                ahfk.a(this);
+                getContentResolver().registerContentObserver(Settings.Secure.getUriFor("autofill_service"), false, new ahkb(this, new caqj(getMainLooper()), this));
+            } else if (ajga.c(this)) {
+                ajga.e();
+                ajga.a(this);
             }
         }
-        if (fleh.a.a().e()) {
-            byjl c = aevg.c(((aesb) aery.a(this)).a);
-            if (!fleh.c()) {
+        if (fnvr.a.lK().e()) {
+            casd c = agvt.c(((agso) agsl.a(this)).a);
+            if (!fnvr.c()) {
                 c.d("GpmMigrationTaskTag", GpmBiometricsValueMigrationTaskBoundService.class.getName());
                 return;
             }
-            byko bykoVar = new byko();
-            bykoVar.w(GpmBiometricsValueMigrationTaskBoundService.class.getName());
-            bykoVar.q("GpmMigrationTaskTag");
-            bykoVar.a = bykv.j;
-            bykoVar.l(false);
-            c.f(bykoVar.b());
+            catg catgVar = new catg();
+            catgVar.w(GpmBiometricsValueMigrationTaskBoundService.class.getName());
+            catgVar.q("GpmMigrationTaskTag");
+            catgVar.a = catn.j;
+            catgVar.l(false);
+            c.f(catgVar.b());
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void d(Intent intent) {
-        fldt.A();
+        fnvd.A();
         if (e()) {
-            aggx j = aery.a(this).j();
-            eigb eigbVar = eigb.a;
-            j.at(eigbVar);
-            j.as(eigbVar);
+            aihn j = agsl.a(this).j();
+            ektg ektgVar = ektg.a;
+            j.at(ektgVar);
+            j.as(ektgVar);
             j.ac(false);
         }
     }

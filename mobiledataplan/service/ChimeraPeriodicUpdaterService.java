@@ -8,61 +8,62 @@ import com.google.android.gms.chimera.modules.mobiledataplan.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
 import com.google.android.gms.mobiledataplan.MdpCarrierPlanIdResponse;
 import com.google.android.gms.mobiledataplan.carriersupport.CarrierSupportInfo;
-import defpackage.aqxe;
-import defpackage.aqxi;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqx;
-import defpackage.byjl;
-import defpackage.byki;
-import defpackage.bykj;
-import defpackage.bykm;
-import defpackage.bylf;
-import defpackage.byln;
-import defpackage.ceap;
-import defpackage.ceau;
-import defpackage.ceav;
-import defpackage.cebd;
-import defpackage.cebe;
-import defpackage.cecb;
-import defpackage.cecl;
-import defpackage.cecv;
-import defpackage.cecw;
-import defpackage.cecx;
-import defpackage.ceeh;
-import defpackage.ceqf;
-import defpackage.ceqi;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.ejhf;
-import defpackage.elfu;
-import defpackage.elfx;
-import defpackage.elfy;
-import defpackage.elfz;
-import defpackage.elga;
-import defpackage.elgf;
-import defpackage.elgg;
-import defpackage.elgh;
-import defpackage.elgj;
-import defpackage.elgk;
-import defpackage.elgl;
-import defpackage.elgs;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fefi;
-import defpackage.fegt;
-import defpackage.fegx;
-import defpackage.fegz;
-import defpackage.fehe;
-import defpackage.ffgu;
-import defpackage.fnbr;
-import defpackage.fnde;
-import defpackage.fqfv;
-import defpackage.fqgb;
-import defpackage.fqgh;
-import defpackage.fqhb;
-import defpackage.fqhf;
-import defpackage.fqhj;
+import defpackage.aszt;
+import defpackage.aszx;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auur;
+import defpackage.casd;
+import defpackage.cata;
+import defpackage.catb;
+import defpackage.cate;
+import defpackage.catx;
+import defpackage.cauf;
+import defpackage.cgjw;
+import defpackage.cgkb;
+import defpackage.cgkc;
+import defpackage.cgkk;
+import defpackage.cgkl;
+import defpackage.cgli;
+import defpackage.cgls;
+import defpackage.cgmc;
+import defpackage.cgmd;
+import defpackage.cgme;
+import defpackage.cgno;
+import defpackage.cgzm;
+import defpackage.cgzp;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.eluo;
+import defpackage.enth;
+import defpackage.entk;
+import defpackage.entl;
+import defpackage.entm;
+import defpackage.entn;
+import defpackage.ents;
+import defpackage.entt;
+import defpackage.entu;
+import defpackage.entw;
+import defpackage.entx;
+import defpackage.enty;
+import defpackage.enuf;
+import defpackage.fgqi;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgub;
+import defpackage.fgvm;
+import defpackage.fgvq;
+import defpackage.fgvs;
+import defpackage.fgvx;
+import defpackage.fhvs;
+import defpackage.fptq;
+import defpackage.fpvd;
+import defpackage.fszn;
+import defpackage.fszt;
+import defpackage.fszz;
+import defpackage.ftat;
+import defpackage.ftax;
+import defpackage.ftbb;
 import j$.util.DesugarCollections;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -71,35 +72,35 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class ChimeraPeriodicUpdaterService extends GmsTaskChimeraService implements dfak, dfah {
+public class ChimeraPeriodicUpdaterService extends GmsTaskChimeraService implements dhlq, dhln {
     private final LinkedBlockingQueue c;
-    private final cecx d;
+    private final cgme d;
     private final AtomicInteger e;
     private final AtomicInteger f;
     private final Object h;
     private int i;
-    private ceap j;
+    private cgjw j;
     private Context k;
     private final Object l;
     private long m;
-    private final cecw n;
+    private final cgmd n;
     private static final Set b = DesugarCollections.unmodifiableSet(new HashSet(Arrays.asList(27021, 27001, 27005, 27007)));
-    public static final asot a = asot.b("MobileDataPlan", asej.MOBILE_DATA_PLAN);
+    public static final ausn a = ausn.b("MobileDataPlan", auid.MOBILE_DATA_PLAN);
 
     public ChimeraPeriodicUpdaterService() {
         this.e = new AtomicInteger();
         this.f = new AtomicInteger();
         this.h = new Object();
         this.l = new Object();
-        this.n = new cecw();
-        if (fqhf.a.a().Y()) {
+        this.n = new cgmd();
+        if (ftax.a.lK().X()) {
             LinkedBlockingQueue linkedBlockingQueue = new LinkedBlockingQueue();
             this.c = linkedBlockingQueue;
-            cecx cecxVar = new cecx(linkedBlockingQueue);
-            this.d = cecxVar;
-            cecxVar.start();
+            cgme cgmeVar = new cgme(linkedBlockingQueue);
+            this.d = cgmeVar;
+            cgmeVar.start();
         } else {
             this.c = null;
             this.d = null;
@@ -107,468 +108,475 @@ public class ChimeraPeriodicUpdaterService extends GmsTaskChimeraService impleme
         this.i = 0;
     }
 
-    public static void e(Context context, long j, long j2, elgk elgkVar) {
-        f(context, j, j2, elgkVar, elfy.a);
+    public static void e(Context context, long j, long j2, entx entxVar) {
+        f(context, j, j2, entxVar, entl.a);
     }
 
-    public static void f(Context context, long j, long j2, elgk elgkVar, elfy elfyVar) {
+    public static void f(Context context, long j, long j2, entx entxVar, entl entlVar) {
         Long q;
-        fehe d;
-        fecj v;
-        if (fqhf.J()) {
-            if (ceqi.i(context)) {
-                cecl.c().G(37, elgkVar, elfyVar);
+        fgvx d;
+        fgrc v;
+        if (ftax.J()) {
+            if (cgzp.i(context)) {
+                cgls.c().G(37, entxVar, entlVar);
                 return;
             }
             if (u()) {
-                cecl.c().G(21, elgkVar, elfyVar);
+                cgls.c().G(21, entxVar, entlVar);
                 return;
             }
-            if (fqgb.a.a().m()) {
-                String g = ceqf.g(context);
-                if ((elgkVar == elgk.ACTIVE_SIM_SWITCH_EVENT || elgkVar == elgk.SIM_CHANGE_EVENT || elgkVar == elgk.MODULE_INIT_EVENT) && g != null && !"1234567890987654321".equals(g) && (q = ceau.c().q(g)) != null && q.longValue() >= TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()) && q.longValue() - fqgh.a.a().c() >= TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis())) {
-                    cebe c = ceau.c().d.c(g);
+            if (fszt.a.lK().m()) {
+                String g = cgzm.g(context);
+                if ((entxVar == entx.ACTIVE_SIM_SWITCH_EVENT || entxVar == entx.SIM_CHANGE_EVENT || entxVar == entx.MODULE_INIT_EVENT) && g != null && !"1234567890987654321".equals(g) && (q = cgkb.c().q(g)) != null && q.longValue() >= TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()) && q.longValue() - fszz.a.lK().c() >= TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis())) {
+                    cgkl c = cgkb.c().d.c(g);
                     Long valueOf = (c == null || (d = c.d()) == null) ? null : Long.valueOf(d.d);
                     if (valueOf != null && valueOf.longValue() >= TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()) && valueOf.longValue() < q.longValue()) {
-                        if (fqhb.g()) {
-                            fecj fecjVar = (fecj) elfyVar.iB(5, null);
-                            fecjVar.X(elfyVar);
-                            if (!fecjVar.b.L()) {
-                                fecjVar.U();
+                        if (ftat.g()) {
+                            fgrc fgrcVar = (fgrc) entlVar.iQ(5, null);
+                            fgrcVar.X(entlVar);
+                            if (!fgrcVar.b.L()) {
+                                fgrcVar.U();
                             }
-                            elfy elfyVar2 = (elfy) fecjVar.b;
-                            elfy elfyVar3 = elfy.a;
-                            elfyVar2.e = true;
-                            cecl.c().G(10, elgkVar, (elfy) fecjVar.Q());
+                            entl entlVar2 = (entl) fgrcVar.b;
+                            entl entlVar3 = entl.a;
+                            entlVar2.e = true;
+                            cgls.c().G(10, entxVar, (entl) fgrcVar.Q());
                             return;
                         }
                         return;
                     }
                 }
                 if (g != null) {
-                    ceau c2 = ceau.c();
+                    cgkb c2 = cgkb.c();
                     long seconds = TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()) + j;
                     Long valueOf2 = Long.valueOf(seconds);
-                    ceav ceavVar = c2.d;
-                    if (ceavVar.c(g) == null || ceavVar.c(g).d() == null) {
-                        v = fehe.a.v();
+                    cgkc cgkcVar = c2.d;
+                    if (cgkcVar.c(g) == null || cgkcVar.c(g).d() == null) {
+                        v = fgvx.a.v();
                     } else {
-                        fehe d2 = ceavVar.c(g).d();
-                        v = (fecj) d2.iB(5, null);
+                        fgvx d2 = cgkcVar.c(g).d();
+                        v = (fgrc) d2.iQ(5, null);
                         v.X(d2);
                     }
-                    cebd cebdVar = new cebd();
-                    cebdVar.g(g);
+                    cgkk cgkkVar = new cgkk();
+                    cgkkVar.g(g);
                     valueOf2.getClass();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    fehe feheVar = (fehe) v.b;
-                    fehe feheVar2 = fehe.a;
-                    feheVar.d = seconds;
-                    cebdVar.i((fehe) v.Q());
-                    boolean i = ceavVar.i(cebdVar.a());
-                    if (fqhb.h()) {
-                        cecl c3 = cecl.c();
-                        fecj v2 = elga.a.v();
+                    fgvx fgvxVar = (fgvx) v.b;
+                    fgvx fgvxVar2 = fgvx.a;
+                    fgvxVar.d = seconds;
+                    cgkkVar.i((fgvx) v.Q());
+                    boolean i = cgkcVar.i(cgkkVar.a());
+                    if (ftat.h()) {
+                        cgls c3 = cgls.c();
+                        fgrc v2 = entn.a.v();
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        fecp fecpVar = v2.b;
-                        ((elga) fecpVar).b = elfz.a(4);
-                        if (!fecpVar.L()) {
+                        fgri fgriVar = v2.b;
+                        ((entn) fgriVar).b = entm.a(4);
+                        if (!fgriVar.L()) {
                             v2.U();
                         }
-                        ((elga) v2.b).c = i;
-                        c3.j((elga) v2.Q(), "MDP_PeriodicService", 0);
+                        ((entn) v2.b).c = i;
+                        c3.j((entn) v2.Q(), "MDP_PeriodicService", 0);
                     }
                 }
             }
-            if (fqhb.g()) {
-                cecl.c().G(3, elgkVar, elfyVar);
+            if (ftat.g()) {
+                cgls.c().G(3, entxVar, entlVar);
             }
-            o(context, j, j2, elgkVar);
+            o(context, j, j2, entxVar);
         }
     }
 
     public static void g(Context context) {
-        a.f(ceqi.h()).U("%s: BgWorkflow: enabled %s interval %d flex %d.", "PeriodicService", Boolean.valueOf(fqfv.n()), Long.valueOf(fqfv.c()), Long.valueOf(fqfv.b()));
-        if (fqfv.n()) {
+        a.f(cgzp.h()).U("%s: BgWorkflow: enabled %s interval %d flex %d.", "PeriodicService", Boolean.valueOf(fszn.n()), Long.valueOf(fszn.c()), Long.valueOf(fszn.b()));
+        if (fszn.n()) {
             Bundle bundle = new Bundle();
-            if (fqfv.f()) {
-                bundle.putLong("task_interval_key", fqfv.c());
-                bundle.putLong("task_flex_key", fqfv.b());
+            if (fszn.f()) {
+                bundle.putLong("task_interval_key", fszn.c());
+                bundle.putLong("task_flex_key", fszn.b());
             }
-            cecl c = cecl.c();
-            long c2 = fqfv.c();
-            long b2 = fqfv.b();
-            elgs D = c.D(20, "GTAF_Server", "MDP_PeriodicService");
-            fecj fecjVar = (fecj) D.iB(5, null);
-            fecjVar.X(D);
-            fecj v = elfx.a.v();
+            cgls c = cgls.c();
+            long c2 = fszn.c();
+            long b2 = fszn.b();
+            enuf D = c.D(20, "GTAF_Server", "MDP_PeriodicService");
+            fgrc fgrcVar = (fgrc) D.iQ(5, null);
+            fgrcVar.X(D);
+            fgrc v = entk.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            ((elfx) v.b).c = fegz.b(3);
-            fecj v2 = elfu.a.v();
+            ((entk) v.b).c = fgvs.b(3);
+            fgrc v2 = enth.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            fecp fecpVar = v2.b;
-            ((elfu) fecpVar).b = c2;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v2.b;
+            ((enth) fgriVar).b = c2;
+            if (!fgriVar.L()) {
                 v2.U();
             }
-            ((elfu) v2.b).c = b2;
-            elfu elfuVar = (elfu) v2.Q();
+            ((enth) v2.b).c = b2;
+            enth enthVar = (enth) v2.Q();
             if (!v.b.L()) {
                 v.U();
             }
-            elfx elfxVar = (elfx) v.b;
-            elfuVar.getClass();
-            elfxVar.e = elfuVar;
-            elfxVar.b |= 1;
-            elfx elfxVar2 = (elfx) v.Q();
-            if (!fecjVar.b.L()) {
-                fecjVar.U();
+            entk entkVar = (entk) v.b;
+            enthVar.getClass();
+            entkVar.e = enthVar;
+            entkVar.b |= 1;
+            entk entkVar2 = (entk) v.Q();
+            if (!fgrcVar.b.L()) {
+                fgrcVar.U();
             }
-            elgs elgsVar = (elgs) fecjVar.b;
-            elgs elgsVar2 = elgs.a;
-            elfxVar2.getClass();
-            elgsVar.v = elfxVar2;
-            elgsVar.b |= 2048;
-            c.d((elgs) fecjVar.Q(), ffgu.SCHEDULE_PERIODIC_WORKFLOW);
-            bykm bykmVar = new bykm();
-            bykmVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
-            bykmVar.t("mobiledataplan_bg_periodic_checker");
-            bykmVar.y(0, 0);
-            bykmVar.v(1);
-            bykmVar.u = bundle;
-            long c3 = fqfv.c();
-            long b3 = fqfv.b();
-            if (fnde.g()) {
-                bykmVar.j(byki.a(c3));
+            enuf enufVar = (enuf) fgrcVar.b;
+            enuf enufVar2 = enuf.a;
+            entkVar2.getClass();
+            enufVar.v = entkVar2;
+            enufVar.b |= 2048;
+            c.d((enuf) fgrcVar.Q(), fhvs.SCHEDULE_PERIODIC_WORKFLOW);
+            cate cateVar = new cate();
+            cateVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
+            cateVar.t("mobiledataplan_bg_periodic_checker");
+            cateVar.y(0, 0);
+            cateVar.v(1);
+            cateVar.u = bundle;
+            long c3 = fszn.c();
+            long b3 = fszn.b();
+            if (fpvd.g()) {
+                cateVar.j(cata.a(c3));
             } else {
-                bykmVar.a = c3;
-                bykmVar.b = b3;
+                cateVar.a = c3;
+                cateVar.b = b3;
             }
-            byjl.a(context).f(bykmVar.b());
+            casd.a(context).f(cateVar.b());
         }
     }
 
     public static void h(Context context) {
-        asot asotVar = a;
-        asotVar.f(ceqi.h()).Q("%s: ConsentFetch: enabled %s", "PeriodicService", fqgh.f());
-        if (fqgh.f()) {
-            cecw m = m(context);
-            asotVar.f(ceqi.h()).T("%s: ConsentFetch: interval %d flex %d.", "PeriodicService", Long.valueOf(m.a), Long.valueOf(m.b));
-            bykm bykmVar = new bykm();
-            bykmVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
-            bykmVar.t("mobiledataplan_consent_fetch");
-            bykmVar.y(0, 1);
-            bykmVar.v(1);
-            if (fnde.g()) {
-                bykmVar.j(byki.a(m.a));
+        ausn ausnVar = a;
+        ausnVar.f(cgzp.h()).Q("%s: ConsentFetch: enabled %s", "PeriodicService", fszz.f());
+        if (fszz.f()) {
+            cgmd m = m(context);
+            ausnVar.f(cgzp.h()).T("%s: ConsentFetch: interval %d flex %d.", "PeriodicService", Long.valueOf(m.a), Long.valueOf(m.b));
+            cate cateVar = new cate();
+            cateVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
+            cateVar.t("mobiledataplan_consent_fetch");
+            cateVar.y(0, 1);
+            cateVar.v(1);
+            if (fpvd.g()) {
+                cateVar.j(cata.a(m.a));
             } else {
-                bykmVar.e(m.a, m.b, bylf.a);
+                cateVar.e(m.a, m.b, catx.a);
             }
             Bundle bundle = new Bundle();
-            int a2 = cecl.a();
+            int a2 = cgls.a();
             bundle.putInt("event_flow_id", a2);
             bundle.putLong("task_interval_key", m.a);
             bundle.putLong("task_flex_key", m.b);
-            bykmVar.u = bundle;
-            byjl.a(context).f(bykmVar.b());
-            new cecl(context).L(12, ffgu.BACKGROUND_CONSENT_SCHEDULE, Integer.valueOf(a2), null);
+            cateVar.u = bundle;
+            casd.a(context).f(cateVar.b());
+            new cgls(context).L(12, fhvs.BACKGROUND_CONSENT_SCHEDULE, Integer.valueOf(a2), null);
         }
     }
 
     public static void j(Context context) {
         Long o;
-        asot asotVar = a;
-        asotVar.f(ceqi.h()).W("%s: GcoreRegister: interval %d flex %d. schedule:%b update:%b disableLegacy:%b", "PeriodicService", Long.valueOf(fqgb.d()), Long.valueOf(fqgb.c()), Boolean.valueOf(fqgb.j()), Boolean.valueOf(fqgb.h()), Boolean.valueOf(fqfv.o()));
-        if (!fqgb.j() || fqfv.o()) {
-            asotVar.f(ceqi.h()).B("%s: GcoreRegister: not enabled, skip scheduling.", "PeriodicService");
+        ausn ausnVar = a;
+        ausnVar.f(cgzp.h()).W("%s: GcoreRegister: interval %d flex %d. schedule:%b update:%b disableLegacy:%b", "PeriodicService", Long.valueOf(fszt.d()), Long.valueOf(fszt.c()), Boolean.valueOf(fszt.j()), Boolean.valueOf(fszt.h()), Boolean.valueOf(fszn.o()));
+        if (!fszt.j() || fszn.o()) {
+            ausnVar.f(cgzp.h()).B("%s: GcoreRegister: not enabled, skip scheduling.", "PeriodicService");
             return;
         }
-        bykm bykmVar = new bykm();
-        bykmVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
-        bykmVar.t("mobiledataplan_register");
-        bykmVar.y(0, 1);
-        bykmVar.x(0, 1);
-        bykmVar.v(1);
-        long d = fqgb.d();
-        long c = fqgb.c();
-        if (fnde.g()) {
-            bykmVar.j(byki.a(d));
+        cate cateVar = new cate();
+        cateVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
+        cateVar.t("mobiledataplan_register");
+        cateVar.y(0, 1);
+        cateVar.x(0, 1);
+        cateVar.v(1);
+        long d = fszt.d();
+        long c = fszt.c();
+        if (fpvd.g()) {
+            cateVar.j(cata.a(d));
         } else {
-            bykmVar.a = d;
-            bykmVar.b = c;
+            cateVar.a = d;
+            cateVar.b = c;
         }
         Bundle bundle = new Bundle();
-        int a2 = cecl.a();
+        int a2 = cgls.a();
         bundle.putInt("event_flow_id", a2);
         bundle.putLong("task_interval_key", d);
         bundle.putLong("task_flex_key", c);
-        bykmVar.u = bundle;
-        byjl.a(context).f(bykmVar.b());
-        String c2 = cecb.a().c(context);
-        String g = ceqf.g(context);
-        String s = ceau.c().s(g);
+        cateVar.u = bundle;
+        casd.a(context).f(cateVar.b());
+        String c2 = cgli.a().c(context);
+        String g = cgzm.g(context);
+        String s = cgkb.c().s(g);
         if (s == null) {
             s = "dummy_cpid_before_retrieval";
             o = null;
         } else {
-            o = ceau.c().o(s);
-            if (!ceau.c().F(g)) {
+            o = cgkb.c().o(s);
+            if (!cgkb.c().F(g)) {
                 s = "dummy_cpid_before_consent";
             }
         }
         if (o == null) {
-            o = ceeh.b;
+            o = cgno.b;
         }
-        cecl ceclVar = new cecl(context);
-        String u = fqhf.u();
-        int f = (int) fqhf.f();
+        cgls cglsVar = new cgls(context);
+        String u = ftax.u();
+        int f = (int) ftax.f();
         long longValue = o.longValue();
         Integer valueOf = Integer.valueOf(a2);
-        elgf elgfVar = (elgf) elgh.a.v();
-        String k = ceqi.k(asqx.c(c2));
-        if (!elgfVar.b.L()) {
-            elgfVar.U();
+        ents entsVar = (ents) entu.a.v();
+        String k = cgzp.k(auur.c(c2));
+        if (!entsVar.b.L()) {
+            entsVar.U();
         }
-        elgh elghVar = (elgh) elgfVar.b;
+        entu entuVar = (entu) entsVar.b;
         k.getClass();
-        elghVar.b = k;
-        if (!elgfVar.b.L()) {
-            elgfVar.U();
+        entuVar.b = k;
+        if (!entsVar.b.L()) {
+            entsVar.U();
         }
-        elgh elghVar2 = (elgh) elgfVar.b;
+        entu entuVar2 = (entu) entsVar.b;
         u.getClass();
-        elghVar2.c = u;
-        if (!elgfVar.b.L()) {
-            elgfVar.U();
+        entuVar2.c = u;
+        if (!entsVar.b.L()) {
+            entsVar.U();
         }
-        ((elgh) elgfVar.b).d = f;
-        if (!elgfVar.b.L()) {
-            elgfVar.U();
+        ((entu) entsVar.b).d = f;
+        if (!entsVar.b.L()) {
+            entsVar.U();
         }
-        ((elgh) elgfVar.b).e = longValue;
-        if (!elgfVar.b.L()) {
-            elgfVar.U();
+        ((entu) entsVar.b).e = longValue;
+        if (!entsVar.b.L()) {
+            entsVar.U();
         }
-        ((elgh) elgfVar.b).f = s;
-        if (!elgfVar.b.L()) {
-            elgfVar.U();
+        ((entu) entsVar.b).f = s;
+        if (!entsVar.b.L()) {
+            entsVar.U();
         }
-        ((elgh) elgfVar.b).g = elgg.a(5);
-        elgh elghVar3 = (elgh) elgfVar.Q();
-        fecj v = elgl.a.v();
+        ((entu) entsVar.b).g = entt.a(5);
+        entu entuVar3 = (entu) entsVar.Q();
+        fgrc v = enty.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ((elgl) fecpVar).c = elgj.a(9);
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        ((enty) fgriVar).c = entw.a(9);
+        if (!fgriVar.L()) {
             v.U();
         }
-        elgl elglVar = (elgl) v.b;
-        elghVar3.getClass();
-        elglVar.i = elghVar3;
-        elglVar.b |= 4;
-        elgl elglVar2 = (elgl) v.Q();
-        elgs D = ceclVar.D(17, "GTAF_Server", "MDP_PeriodicService");
-        fecj fecjVar = (fecj) D.iB(5, null);
-        fecjVar.X(D);
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        enty entyVar = (enty) v.b;
+        entuVar3.getClass();
+        entyVar.i = entuVar3;
+        entyVar.b |= 4;
+        enty entyVar2 = (enty) v.Q();
+        enuf D = cglsVar.D(17, "GTAF_Server", "MDP_PeriodicService");
+        fgrc fgrcVar = (fgrc) D.iQ(5, null);
+        fgrcVar.X(D);
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        elgs elgsVar = (elgs) fecjVar.b;
-        elgs elgsVar2 = elgs.a;
-        elgsVar.t = 0L;
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        enuf enufVar = (enuf) fgrcVar.b;
+        enuf enufVar2 = enuf.a;
+        enufVar.t = 0L;
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        elgs elgsVar3 = (elgs) fecjVar.b;
-        elglVar2.getClass();
-        elgsVar3.r = elglVar2;
-        elgsVar3.b |= 256;
-        ceclVar.e((elgs) fecjVar.Q(), ffgu.CPID_REGISTER_ACTION, valueOf);
+        enuf enufVar3 = (enuf) fgrcVar.b;
+        entyVar2.getClass();
+        enufVar3.r = entyVar2;
+        enufVar3.b |= 256;
+        cglsVar.e((enuf) fgrcVar.Q(), fhvs.CPID_REGISTER_ACTION, valueOf);
     }
 
     public static void k(Context context) {
-        asot asotVar = a;
-        asotVar.f(ceqi.h()).Q("%s: MeterednessUpdate: enabled %s", "PeriodicService", fqhj.i());
-        if (fqhj.h() && fqhj.i() && Build.VERSION.SDK_INT >= 29) {
-            cecw n = n();
-            asotVar.f(ceqi.h()).T("%s: MeterednessUpdate: interval %d flex %d.", "PeriodicService", Long.valueOf(n.a), Long.valueOf(n.b));
-            bykm bykmVar = new bykm();
-            bykmVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
-            bykmVar.t("mobiledataplan_meteredness_update");
-            bykmVar.y(0, 1);
-            bykmVar.v(1);
-            if (fnde.g()) {
-                bykmVar.j(byki.a(n.a));
+        ausn ausnVar = a;
+        ausnVar.f(cgzp.h()).Q("%s: MeterednessUpdate: enabled %s", "PeriodicService", ftbb.i());
+        if (ftbb.h() && ftbb.i() && Build.VERSION.SDK_INT >= 29) {
+            cgmd n = n();
+            ausnVar.f(cgzp.h()).T("%s: MeterednessUpdate: interval %d flex %d.", "PeriodicService", Long.valueOf(n.a), Long.valueOf(n.b));
+            cate cateVar = new cate();
+            cateVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
+            cateVar.t("mobiledataplan_meteredness_update");
+            cateVar.y(0, 1);
+            cateVar.v(1);
+            if (fpvd.g()) {
+                cateVar.j(cata.a(n.a));
             } else {
-                bykmVar.e(n.a, n.b, bylf.a);
+                cateVar.e(n.a, n.b, catx.a);
             }
             Bundle bundle = new Bundle();
-            int a2 = cecl.a();
+            int a2 = cgls.a();
             bundle.putInt("event_flow_id", a2);
             bundle.putLong("task_interval_key", n.a);
             bundle.putLong("task_flex_key", n.b);
-            bykmVar.u = bundle;
-            byjl.a(context).f(bykmVar.b());
-            new cecl(context).L(22, ffgu.PERIODIC_SCHEDULE_METEREDNESS, Integer.valueOf(a2), null);
+            cateVar.u = bundle;
+            casd.a(context).f(cateVar.b());
+            new cgls(context).L(22, fhvs.PERIODIC_SCHEDULE_METEREDNESS, Integer.valueOf(a2), null);
         }
     }
 
     public static void l(Context context, int i, int i2) {
-        bykj bykjVar = new bykj();
-        bykjVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
-        bykjVar.t("mobiledataplan_meteredness_update");
-        bykjVar.e(fqhj.b(), fqhj.c());
-        bykjVar.y(0, 1);
-        bykjVar.v(1);
+        catb catbVar = new catb();
+        catbVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
+        catbVar.t("mobiledataplan_meteredness_update");
+        catbVar.e(ftbb.b(), ftbb.c());
+        catbVar.y(0, 1);
+        catbVar.v(1);
         Bundle bundle = new Bundle();
         bundle.putInt("event_flow_id", i2);
-        bykjVar.u = bundle;
-        fqhj.b();
-        fqhj.c();
-        new cecl(context).L(i, ffgu.PERIODIC_SCHEDULE_METEREDNESS, Integer.valueOf(i2), null);
-        byjl.a(context).f(bykjVar.b());
+        catbVar.u = bundle;
+        ftbb.b();
+        ftbb.c();
+        new cgls(context).L(i, fhvs.PERIODIC_SCHEDULE_METEREDNESS, Integer.valueOf(i2), null);
+        casd.a(context).f(catbVar.b());
     }
 
-    private static cecw m(Context context) {
+    private static cgmd m(Context context) {
         long b2;
         long d;
-        ceau c = ceau.c();
-        Long p = c.p(ceqf.g(context));
-        fefi i = c.i(p);
-        if (i == null || fegt.b(fegx.e(i, fegx.h(System.currentTimeMillis())), fegt.o(fqgh.a.a().b())) > 0 || c.d(p) == null) {
-            b2 = fqgh.b();
-            d = fqgh.a.a().d();
-        } else {
-            fqgh fqghVar = fqgh.a;
-            b2 = fqghVar.a().g();
-            d = fqghVar.a().f();
+        cgkb c = cgkb.c();
+        Long p = c.p(cgzm.g(context));
+        fgub i = c.i(p);
+        if (i != null) {
+            fgqi e = fgvq.e(i, fgvq.h(System.currentTimeMillis()));
+            fszz fszzVar = fszz.a;
+            if (fgvm.b(e, fgvm.o(fszzVar.lK().b())) <= 0 && c.d(p) != null) {
+                b2 = fszzVar.lK().g();
+                d = fszzVar.lK().f();
+                cgmd cgmdVar = new cgmd();
+                cgmdVar.a = b2;
+                cgmdVar.b = d;
+                return cgmdVar;
+            }
         }
-        cecw cecwVar = new cecw();
-        cecwVar.a = b2;
-        cecwVar.b = d;
-        return cecwVar;
+        b2 = fszz.b();
+        d = fszz.a.lK().d();
+        cgmd cgmdVar2 = new cgmd();
+        cgmdVar2.a = b2;
+        cgmdVar2.b = d;
+        return cgmdVar2;
     }
 
-    private static cecw n() {
-        cecw cecwVar = new cecw();
-        cecwVar.a = fqhj.a.a().e();
-        cecwVar.b = fqhj.a.a().d();
-        return cecwVar;
+    private static cgmd n() {
+        cgmd cgmdVar = new cgmd();
+        ftbb ftbbVar = ftbb.a;
+        cgmdVar.a = ftbbVar.lK().e();
+        cgmdVar.b = ftbbVar.lK().d();
+        return cgmdVar;
     }
 
-    private static void o(Context context, long j, long j2, elgk elgkVar) {
-        new cecv().start();
-        p(context, j, j2, elgkVar, Integer.valueOf(cecl.a()));
+    private static void o(Context context, long j, long j2, entx entxVar) {
+        new cgmc().start();
+        p(context, j, j2, entxVar, Integer.valueOf(cgls.a()));
     }
 
-    private static void p(Context context, long j, long j2, elgk elgkVar, Integer num) {
+    private static void p(Context context, long j, long j2, entx entxVar, Integer num) {
         long j3;
         int intValue = num.intValue();
-        cecl ceclVar = new cecl(context);
-        elgs D = ceclVar.D(17, "GTAF_Server", "MDP_PeriodicService");
-        fecj fecjVar = (fecj) D.iB(5, null);
-        fecjVar.X(D);
-        fecj v = elgl.a.v();
+        cgls cglsVar = new cgls(context);
+        enuf D = cglsVar.D(17, "GTAF_Server", "MDP_PeriodicService");
+        fgrc fgrcVar = (fgrc) D.iQ(5, null);
+        fgrcVar.X(D);
+        fgrc v = enty.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ((elgl) fecpVar).c = elgj.a(3);
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        ((enty) fgriVar).c = entw.a(3);
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        ((elgl) fecpVar2).f = j;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v.b;
+        ((enty) fgriVar2).f = j;
+        if (!fgriVar2.L()) {
             v.U();
         }
-        ((elgl) v.b).d = elgkVar.a();
-        elgl elglVar = (elgl) v.Q();
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        ((enty) v.b).d = entxVar.a();
+        enty entyVar = (enty) v.Q();
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        elgs elgsVar = (elgs) fecjVar.b;
-        elgs elgsVar2 = elgs.a;
-        elglVar.getClass();
-        elgsVar.r = elglVar;
-        elgsVar.b |= 256;
-        ceclVar.e((elgs) fecjVar.Q(), ffgu.BACKGROUND_CPID_SCHEDULE, num);
+        enuf enufVar = (enuf) fgrcVar.b;
+        enuf enufVar2 = enuf.a;
+        entyVar.getClass();
+        enufVar.r = entyVar;
+        enufVar.b |= 256;
+        cglsVar.e((enuf) fgrcVar.Q(), fhvs.BACKGROUND_CPID_SCHEDULE, num);
         Bundle bundle = new Bundle();
-        bundle.putInt("cpid_update_cause", elgkVar.a());
+        bundle.putInt("cpid_update_cause", entxVar.a());
         bundle.putInt("event_flow_id", intValue);
         bundle.putLong("task_interval_key", j);
         bundle.putLong("task_flex_key", j2);
-        bykm bykmVar = new bykm();
-        bykmVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
-        bykmVar.u = bundle;
-        bykmVar.t("mobiledataplan_cpid_refresher");
-        bykmVar.y(0, 0);
-        bykmVar.v(1);
-        if (fnde.g()) {
+        cate cateVar = new cate();
+        cateVar.j = "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService";
+        cateVar.u = bundle;
+        cateVar.t("mobiledataplan_cpid_refresher");
+        cateVar.y(0, 0);
+        cateVar.v(1);
+        if (fpvd.g()) {
             j3 = j;
-            bykmVar.e(j3, (long) (fnbr.b() * j), bylf.a);
+            cateVar.e(j3, (long) (fptq.b() * j), catx.a);
         } else {
             j3 = j;
-            bykmVar.a = j3;
-            bykmVar.b = j2;
+            cateVar.a = j3;
+            cateVar.b = j2;
         }
-        byjl.a(context).f(bykmVar.b());
-        a.f(ceqi.h()).V("%s: CpidFetch: interval %d flex %d. Service %b Update %b.", "PeriodicService", Long.valueOf(j3), Long.valueOf(j2), Boolean.valueOf(fqhf.J()), Boolean.valueOf(fqhf.R()));
+        casd.a(context).f(cateVar.b());
+        a.f(cgzp.h()).V("%s: CpidFetch: interval %d flex %d. Service %b Update %b.", "PeriodicService", Long.valueOf(j3), Long.valueOf(j2), Boolean.valueOf(ftax.J()), Boolean.valueOf(ftax.P()));
     }
 
-    private static boolean q(Context context, byln bylnVar) {
-        cecw m = m(context);
-        return (v(bylnVar, "task_interval_key", m.a) && v(bylnVar, "task_flex_key", m.b)) ? false : true;
+    private static boolean q(Context context, cauf caufVar) {
+        cgmd m = m(context);
+        return (v(caufVar, "task_interval_key", m.a) && v(caufVar, "task_flex_key", m.b)) ? false : true;
     }
 
     private final boolean r(long j, long j2) {
-        cecw cecwVar = this.n;
+        cgmd cgmdVar = this.n;
         boolean z = true;
-        if (cecwVar.a == j && cecwVar.b == j2) {
+        if (cgmdVar.a == j && cgmdVar.b == j2) {
             z = false;
         }
-        long j3 = cecwVar.b;
+        long j3 = cgmdVar.b;
         return z;
     }
 
-    private static boolean s(byln bylnVar) {
+    private static boolean s(cauf caufVar) {
         boolean z = true;
-        if (v(bylnVar, "task_interval_key", fqgb.d()) && v(bylnVar, "task_flex_key", fqgb.c())) {
+        if (v(caufVar, "task_interval_key", fszt.d()) && v(caufVar, "task_flex_key", fszt.c())) {
             z = false;
         }
-        fqgb.d();
-        fqgb.c();
+        fszt.d();
+        fszt.c();
         return z;
     }
 
-    private static boolean t(byln bylnVar) {
-        cecw n = n();
-        return (v(bylnVar, "task_interval_key", n.a) && v(bylnVar, "task_flex_key", n.b)) ? false : true;
+    private static boolean t(cauf caufVar) {
+        cgmd n = n();
+        return (v(caufVar, "task_interval_key", n.a) && v(caufVar, "task_flex_key", n.b)) ? false : true;
     }
 
     private static boolean u() {
-        return fqfv.p() && ceau.c().v();
+        return fszn.p() && cgkb.c().v();
     }
 
-    private static boolean v(byln bylnVar, String str, long j) {
-        Bundle bundle = bylnVar.b;
+    private static boolean v(cauf caufVar, String str, long j) {
+        Bundle bundle = caufVar.b;
         return bundle != null && bundle.containsKey(str) && bundle.getLong(str) == j;
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    private static final void w(String str, elgk elgkVar, elfy elfyVar) {
+    private static final void w(String str, entx entxVar, entl entlVar) {
         char c;
-        byjl.a(AppContextProvider.a()).d(str, "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService");
+        casd.a(AppContextProvider.a()).d(str, "com.google.android.gms.mobiledataplan.service.PeriodicUpdaterService");
         switch (str.hashCode()) {
             case -1959874559:
                 if (str.equals("mobiledataplan_bg_periodic_checker")) {
@@ -610,15 +618,15 @@ public class ChimeraPeriodicUpdaterService extends GmsTaskChimeraService impleme
                 break;
         }
         int i = c != 0 ? c != 1 ? c != 2 ? c != 3 ? c != 4 ? 18 : 17 : 25 : 16 : 15 : 14;
-        if (fqhb.a.a().o()) {
-            cecl.c().G(i, elgkVar, elfyVar);
+        if (ftat.a.lK().n()) {
+            cgls.c().G(i, entxVar, entlVar);
         }
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Code restructure failed: missing block: B:150:0x0345, code lost:
     
-        if (r3 == defpackage.ffgs.NOT_REQUIRED) goto L162;
+        if (r3 == defpackage.fhvq.NOT_REQUIRED) goto L162;
      */
     /* JADX WARN: Removed duplicated region for block: B:160:0x03a6  */
     /* JADX WARN: Removed duplicated region for block: B:163:0x03bf  */
@@ -629,48 +637,48 @@ public class ChimeraPeriodicUpdaterService extends GmsTaskChimeraService impleme
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final int a(defpackage.byln r15) {
+    public final int a(defpackage.cauf r15) {
         /*
             Method dump skipped, instructions count: 1848
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.mobiledataplan.service.ChimeraPeriodicUpdaterService.a(byln):int");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.mobiledataplan.service.ChimeraPeriodicUpdaterService.a(cauf):int");
     }
 
-    /* JADX WARN: Removed duplicated region for block: B:19:0x00b6 A[Catch: all -> 0x0188, TryCatch #3 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
-    /* JADX WARN: Removed duplicated region for block: B:22:0x00c6 A[Catch: all -> 0x0188, TryCatch #3 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
-    /* JADX WARN: Removed duplicated region for block: B:25:0x00d6 A[Catch: all -> 0x0188, TryCatch #3 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
-    /* JADX WARN: Removed duplicated region for block: B:28:0x00e6 A[Catch: all -> 0x0188, TryCatch #3 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
-    /* JADX WARN: Removed duplicated region for block: B:31:0x0103 A[Catch: all -> 0x0188, TryCatch #3 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
-    /* JADX WARN: Removed duplicated region for block: B:34:0x0118 A[Catch: all -> 0x0188, TryCatch #3 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
-    /* JADX WARN: Removed duplicated region for block: B:37:0x0137 A[Catch: all -> 0x0188, TryCatch #3 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
+    /* JADX WARN: Removed duplicated region for block: B:19:0x00b6 A[Catch: all -> 0x0186, TryCatch #2 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x00c6 A[Catch: all -> 0x0186, TryCatch #2 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
+    /* JADX WARN: Removed duplicated region for block: B:25:0x00d6 A[Catch: all -> 0x0186, TryCatch #2 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x00e6 A[Catch: all -> 0x0186, TryCatch #2 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
+    /* JADX WARN: Removed duplicated region for block: B:31:0x0103 A[Catch: all -> 0x0186, TryCatch #2 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
+    /* JADX WARN: Removed duplicated region for block: B:34:0x0118 A[Catch: all -> 0x0186, TryCatch #2 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
+    /* JADX WARN: Removed duplicated region for block: B:37:0x0137 A[Catch: all -> 0x0186, TryCatch #2 {, blocks: (B:4:0x000d, B:9:0x0021, B:44:0x0035, B:17:0x0077, B:19:0x00b6, B:20:0x00b9, B:22:0x00c6, B:23:0x00c9, B:25:0x00d6, B:26:0x00d9, B:28:0x00e6, B:29:0x00e9, B:31:0x0103, B:32:0x0106, B:34:0x0118, B:35:0x011b, B:37:0x0137, B:38:0x013a, B:12:0x004b, B:15:0x0058, B:42:0x006b, B:50:0x0160, B:51:0x0162), top: B:3:0x000d }] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    final void d(com.google.android.gms.mobiledataplan.MdpCarrierPlanIdRequest r13, defpackage.ceap r14) {
+    final void d(com.google.android.gms.mobiledataplan.MdpCarrierPlanIdRequest r13, defpackage.cgjw r14) {
         /*
-            Method dump skipped, instructions count: 395
+            Method dump skipped, instructions count: 393
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.mobiledataplan.service.ChimeraPeriodicUpdaterService.d(com.google.android.gms.mobiledataplan.MdpCarrierPlanIdRequest, ceap):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.mobiledataplan.service.ChimeraPeriodicUpdaterService.d(com.google.android.gms.mobiledataplan.MdpCarrierPlanIdRequest, cgjw):void");
     }
 
-    @Override // defpackage.dfah
-    public final void gm(Exception exc) {
+    @Override // defpackage.dhln
+    public final void gB(Exception exc) {
         long j;
         String str;
         synchronized (this.l) {
             j = this.m;
         }
-        boolean z = exc instanceof aqxe;
-        new cecl(AppContextProvider.a()).E(z ? ((aqxe) exc).a() : 13, j, this.i, 0L, 17);
+        boolean z = exc instanceof aszt;
+        new cgls(AppContextProvider.a()).E(z ? ((aszt) exc).a() : 13, j, this.i, 0L, 17);
         if (z) {
-            aqxe aqxeVar = (aqxe) exc;
-            asot asotVar = a;
-            ejhf f = asotVar.f(ceqi.h());
-            int a2 = aqxeVar.a();
-            int a3 = aqxeVar.a();
+            aszt asztVar = (aszt) exc;
+            ausn ausnVar = a;
+            eluo f = ausnVar.f(cgzp.h());
+            int a2 = asztVar.a();
+            int a3 = asztVar.a();
             if (a3 == 27100) {
                 str = "MDP_NOT_IMPLEMENTED";
             } else if (a3 == 27101) {
@@ -852,7 +860,7 @@ public class ChimeraPeriodicUpdaterService extends GmsTaskChimeraService impleme
                                                 str = "MDP_ESIM_EUICC_MANAGER_UNRESOLVABLE_ERROR";
                                                 break;
                                             default:
-                                                str = aqxi.d(a3);
+                                                str = aszx.d(a3);
                                                 break;
                                         }
                                 }
@@ -862,41 +870,41 @@ public class ChimeraPeriodicUpdaterService extends GmsTaskChimeraService impleme
                 str = "MDP_SDK_INVALID_PARAMETER";
             }
             f.G("Status code %d (%s)", a2, str);
-            if (!b.contains(Integer.valueOf(aqxeVar.a()))) {
+            if (!b.contains(Integer.valueOf(asztVar.a()))) {
                 if (j > 0) {
-                    long max = Math.max(TimeUnit.MILLISECONDS.toSeconds(Math.min(j, fqhf.a.a().f())), fqhf.p());
-                    p(this.k, max, max >> 2, elgk.FAILED_UPDATE, Integer.valueOf(this.i));
-                    ((ejhf) asotVar.f(ceqi.h()).s(exc)).A("Recoverable error, retry scheduled in %d seconds", max);
+                    long max = Math.max(TimeUnit.MILLISECONDS.toSeconds(Math.min(j, ftax.a.lK().f())), ftax.p());
+                    p(this.k, max, max >> 2, entx.FAILED_UPDATE, Integer.valueOf(this.i));
+                    ((eluo) ausnVar.f(cgzp.h()).s(exc)).A("Recoverable error, retry scheduled in %d seconds", max);
                     return;
                 } else {
-                    ((ejhf) asotVar.f(ceqi.h()).s(exc)).x("Error, no (further) retry scheduled");
-                    if (r(fqhf.n(), fqhf.l())) {
-                        e(this.k, fqhf.n(), fqhf.l(), elgk.FAILED_UPDATE);
+                    ((eluo) ausnVar.f(cgzp.h()).s(exc)).x("Error, no (further) retry scheduled");
+                    if (r(ftax.n(), ftax.l())) {
+                        e(this.k, ftax.n(), ftax.l(), entx.FAILED_UPDATE);
                         return;
                     }
                     return;
                 }
             }
         }
-        ((ejhf) a.f(ceqi.h()).s(exc)).x("Terminal error, cancelling further retries");
+        ((eluo) a.f(cgzp.h()).s(exc)).x("Terminal error, cancelling further retries");
         this.f.incrementAndGet();
         LinkedBlockingQueue linkedBlockingQueue = this.c;
         if (linkedBlockingQueue != null) {
             linkedBlockingQueue.offer(new Pair("failure-count", 1L));
         }
-        if (r(fqhf.n(), fqhf.l())) {
-            e(this.k, fqhf.n(), fqhf.l(), elgk.FAILED_UPDATE);
+        if (r(ftax.n(), ftax.l())) {
+            e(this.k, ftax.n(), ftax.l(), entx.FAILED_UPDATE);
         }
     }
 
-    @Override // defpackage.dfak
-    public final /* synthetic */ void gn(Object obj) {
+    @Override // defpackage.dhlq
+    public final /* synthetic */ void gC(Object obj) {
         MdpCarrierPlanIdResponse mdpCarrierPlanIdResponse;
         long j;
         long j2;
         MdpCarrierPlanIdResponse mdpCarrierPlanIdResponse2 = (MdpCarrierPlanIdResponse) obj;
-        asot asotVar = a;
-        ejhf f = asotVar.f(ceqi.h());
+        ausn ausnVar = a;
+        eluo f = ausnVar.f(cgzp.h());
         long j3 = mdpCarrierPlanIdResponse2.b;
         f.O("%s: CpidFetch: success with ttl of %d.", "PeriodicService", j3);
         this.e.incrementAndGet();
@@ -905,12 +913,12 @@ public class ChimeraPeriodicUpdaterService extends GmsTaskChimeraService impleme
             linkedBlockingQueue.offer(new Pair("success-count", 1L));
         }
         long j4 = j3 >> 1;
-        long l = fqhf.l();
-        if (j4 > fqhf.n()) {
-            j4 = fqhf.n();
-        } else if (j4 < fqhf.p()) {
-            j4 = fqhf.p();
-            l = fqhf.a.a().r();
+        long l = ftax.l();
+        if (j4 > ftax.n()) {
+            j4 = ftax.n();
+        } else if (j4 < ftax.p()) {
+            j4 = ftax.p();
+            l = ftax.a.lK().r();
         }
         long j5 = j4;
         long j6 = l;
@@ -932,22 +940,22 @@ public class ChimeraPeriodicUpdaterService extends GmsTaskChimeraService impleme
             int intValue = mdpCarrierPlanIdResponse2.i.intValue();
             int i2 = this.i;
             if (intValue != i2) {
-                ((ejhf) asotVar.j()).G("Received MdpCarrierPlanIdResponse in periodic updater service w/ different cpidRefreshEventFlowId than was sent (request ID: %d, response ID: %d", i2, mdpCarrierPlanIdResponse2.i);
+                ((eluo) ausnVar.j()).G("Received MdpCarrierPlanIdResponse in periodic updater service w/ different cpidRefreshEventFlowId than was sent (request ID: %d, response ID: %d", i2, mdpCarrierPlanIdResponse2.i);
             }
             mdpCarrierPlanIdResponse = mdpCarrierPlanIdResponse2;
             j2 = j5;
             j = j6;
         }
-        new cecl(AppContextProvider.a()).F(mdpCarrierPlanIdResponse, j2, 17);
+        new cgls(AppContextProvider.a()).F(mdpCarrierPlanIdResponse, j2, 17);
         long j8 = j;
         if (r(j2, j8)) {
-            o(this.k, j2, j8, elgk.SUCCESSFUL_UPDATE);
+            o(this.k, j2, j8, entx.SUCCESSFUL_UPDATE);
         }
     }
 
-    public ChimeraPeriodicUpdaterService(ceap ceapVar, Context context) {
+    public ChimeraPeriodicUpdaterService(cgjw cgjwVar, Context context) {
         this();
-        this.j = ceapVar;
+        this.j = cgjwVar;
         this.k = context;
     }
 }

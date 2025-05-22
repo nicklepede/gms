@@ -4,68 +4,68 @@ import android.accounts.Account;
 import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.deidentifieddata.golden.ParcelRefreshTokensJob;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.czix;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.czlp;
-import defpackage.daky;
-import defpackage.dbhz;
-import defpackage.eiho;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.frve;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.dbsv;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dbvl;
+import defpackage.dcvg;
+import defpackage.ddsf;
+import defpackage.ekut;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fupy;
 import j$.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ParcelRefreshTokensJob extends GmsTaskBoundService {
     public static final String a = "com.google.android.gms.semanticlocationhistory.deidentifieddata.golden.ParcelRefreshTokensJob";
-    public dbhz b;
-    private final daky c = new daky();
-    private czlk d;
-    private czje e;
+    public ddsf b;
+    private final dcvg c = new dcvg();
+    private dbvg d;
+    private dbtc e;
 
     static {
-        asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "ParcelRefreshTokenJob");
+        ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "ParcelRefreshTokenJob");
     }
 
-    private final czlk e() {
+    private final dbvg e() {
         if (this.d == null) {
-            this.d = new czlk(d());
+            this.d = new dbvg(d());
         }
         return this.d;
     }
 
-    public final czje d() {
+    public final dbtc d() {
         if (this.e == null) {
-            this.e = new czje();
+            this.e = new dbtc();
         }
         return this.e;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        if (!frve.d()) {
-            return ensj.i(0);
+    public final eqgl iB(cauf caufVar) {
+        if (!fupy.d()) {
+            return eqgc.i(0);
         }
         ArrayList arrayList = new ArrayList();
-        for (final Account account : czix.d(AppContextProvider.a())) {
+        for (final Account account : dbsv.d(AppContextProvider.a())) {
             if (e().R(account)) {
-                enre enreVar = enre.a;
+                eqex eqexVar = eqex.a;
                 String str = account.name;
                 d().k("DeidentifiedGoldenData", 7);
-                enss f = enps.f(ensi.h(czlp.h(e(), account, enreVar)), new eiho() { // from class: dajg
-                    @Override // defpackage.eiho
+                eqgl f = eqdl.f(eqgb.h(dbvl.h(e(), account, eqexVar)), new ekut() { // from class: dcto
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
                         String str2 = (String) obj;
                         if (str2.isEmpty()) {
@@ -76,98 +76,98 @@ public class ParcelRefreshTokensJob extends GmsTaskBoundService {
                         }
                         return str2;
                     }
-                }, enreVar);
-                final daky dakyVar = this.c;
-                Objects.requireNonNull(dakyVar);
-                arrayList.add(enps.f(enps.g(f, new enqc() { // from class: dajh
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj) {
-                        return daky.this.a((String) obj);
+                }, eqexVar);
+                final dcvg dcvgVar = this.c;
+                Objects.requireNonNull(dcvgVar);
+                arrayList.add(eqdl.f(eqdl.g(f, new eqdv() { // from class: dctp
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj) {
+                        return dcvg.this.a((String) obj);
                     }
-                }, enreVar), new eiho() { // from class: daji
-                    @Override // defpackage.eiho
+                }, eqexVar), new ekut() { // from class: dctq
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        eitj eitjVar;
-                        eitj eitjVar2 = (eitj) obj;
-                        boolean isEmpty = eitjVar2.isEmpty();
+                        elgo elgoVar;
+                        elgo elgoVar2 = (elgo) obj;
+                        boolean isEmpty = elgoVar2.isEmpty();
                         Account account2 = account;
                         if (isEmpty) {
                             String str2 = account2.name;
-                            ejck ejckVar = ejck.a;
-                            return new dajk(ejckVar, ejckVar);
+                            elpp elppVar = elpp.a;
+                            return new dcts(elppVar, elppVar);
                         }
                         ParcelRefreshTokensJob parcelRefreshTokensJob = ParcelRefreshTokensJob.this;
-                        eitjVar2.size();
+                        elgoVar2.size();
                         String str3 = account2.name;
                         if (parcelRefreshTokensJob.b == null) {
-                            parcelRefreshTokensJob.b = new dbhz();
+                            parcelRefreshTokensJob.b = new ddsf();
                         }
-                        dbhz dbhzVar = parcelRefreshTokensJob.b;
-                        etpy etpyVar = etpy.a;
-                        fecj v = etpyVar.v();
+                        ddsf ddsfVar = parcelRefreshTokensJob.b;
+                        ewfq ewfqVar = ewfq.a;
+                        fgrc v = ewfqVar.v();
                         if (!v.b.L()) {
                             v.U();
                         }
-                        etpy etpyVar2 = (etpy) v.b;
-                        fedh fedhVar = etpyVar2.b;
-                        if (!fedhVar.c()) {
-                            etpyVar2.b = fecp.E(fedhVar);
+                        ewfq ewfqVar2 = (ewfq) v.b;
+                        fgsa fgsaVar = ewfqVar2.b;
+                        if (!fgsaVar.c()) {
+                            ewfqVar2.b = fgri.E(fgsaVar);
                         }
-                        feab.E(eitjVar2, etpyVar2.b);
-                        etpy etpyVar3 = (etpy) v.Q();
+                        fgou.E(elgoVar2, ewfqVar2.b);
+                        ewfq ewfqVar3 = (ewfq) v.Q();
                         try {
-                            if (frve.d()) {
+                            if (fupy.d()) {
                                 try {
-                                    dbia dbiaVar = new dbia(dbhzVar.d(), bzgc.a, bxye.b);
-                                    arts a2 = dbhzVar.a(account2);
-                                    long j = dbia.a;
-                                    if (dbia.h == null) {
-                                        ftxd ftxdVar = ftxd.UNARY;
-                                        febw febwVar = furo.a;
-                                        dbia.h = new ftxe(ftxdVar, "google.internal.locationhistory.v1.LocationHistoryService/RefreshTokens", new furn(etpyVar), new furn(etpz.a), false);
+                                    ddsg ddsgVar = new ddsg(ddsfVar.d(), cbot.a, cagw.b);
+                                    atwh a2 = ddsfVar.a(account2);
+                                    long j = ddsg.a;
+                                    if (ddsg.h == null) {
+                                        fwtb fwtbVar = fwtb.UNARY;
+                                        fgqp fgqpVar = fxnm.a;
+                                        ddsg.h = new fwtc(fwtbVar, "google.internal.locationhistory.v1.LocationHistoryService/RefreshTokens", new fxnl(ewfqVar), new fxnl(ewfr.a), false);
                                     }
-                                    etpz etpzVar = (etpz) dbiaVar.j.f(dbia.h, a2, etpyVar3, j, TimeUnit.MILLISECONDS, dbiaVar.k);
-                                    dbhzVar.g("LHServerRefreshTokens");
-                                    eitjVar = eitj.i(etpzVar.b);
-                                } catch (ftye | ftyg | unx e) {
-                                    dbhzVar.f(e, "RefreshTokens");
-                                    dbhzVar.h(e, "LHServerRefreshTokens");
-                                    eitjVar = ejcb.a;
+                                    ewfr ewfrVar = (ewfr) ddsgVar.j.f(ddsg.h, a2, ewfqVar3, j, TimeUnit.MILLISECONDS, ddsgVar.k);
+                                    ddsfVar.g("LHServerRefreshTokens");
+                                    elgoVar = elgo.i(ewfrVar.b);
+                                } catch (fwuc | fwue | wjw e) {
+                                    ddsfVar.f(e, "RefreshTokens");
+                                    ddsfVar.h(e, "LHServerRefreshTokens");
+                                    elgoVar = elpg.a;
                                 }
                             } else {
-                                eitjVar = ejcb.a;
+                                elgoVar = elpg.a;
                             }
-                            return new dajk(eiuu.G(eitjVar2), eiuu.G(eitjVar));
+                            return new dcts(elhz.G(elgoVar2), elhz.G(elgoVar));
                         } finally {
-                            dbhzVar.i();
+                            ddsfVar.i();
                         }
                     }
-                }, enreVar));
+                }, eqexVar));
             }
         }
-        return enps.f(ensj.e(arrayList), new eiho() { // from class: dajj
-            @Override // defpackage.eiho
+        return eqdl.f(eqgc.e(arrayList), new ekut() { // from class: dctr
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 int i = 0;
-                for (dajk dajkVar : (List) obj) {
+                for (dcts dctsVar : (List) obj) {
                     ParcelRefreshTokensJob parcelRefreshTokensJob = ParcelRefreshTokensJob.this;
-                    eiuu eiuuVar = dajkVar.a;
-                    eiuu eiuuVar2 = dajkVar.b;
-                    if (!eiuuVar.equals(eiuuVar2)) {
-                        eiuuVar.size();
-                        eiuuVar2.size();
+                    elhz elhzVar = dctsVar.a;
+                    elhz elhzVar2 = dctsVar.b;
+                    if (!elhzVar.equals(elhzVar2)) {
+                        elhzVar.size();
+                        elhzVar2.size();
                         parcelRefreshTokensJob.d().k("DeidentifiedGoldenData", 9);
                         i = 2;
-                    } else if (eiuuVar.isEmpty()) {
+                    } else if (elhzVar.isEmpty()) {
                         parcelRefreshTokensJob.d().k("DeidentifiedGoldenData", 15);
                     } else {
-                        eiuuVar.size();
+                        elhzVar.size();
                         parcelRefreshTokensJob.d().k("DeidentifiedGoldenData", 8);
-                        parcelRefreshTokensJob.d().l("DeidentifiedGoldenData", 17, eiuuVar.size());
+                        parcelRefreshTokensJob.d().l("DeidentifiedGoldenData", 17, elhzVar.size());
                     }
                 }
                 return Integer.valueOf(i);
             }
-        }, enre.a);
+        }, eqex.a);
     }
 }

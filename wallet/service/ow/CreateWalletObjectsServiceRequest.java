@@ -3,20 +3,20 @@ package com.google.android.gms.wallet.service.ow;
 import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.djbz;
-import defpackage.euln;
+import defpackage.dlns;
+import defpackage.exbg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class CreateWalletObjectsServiceRequest implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new djbz();
+    public static final Parcelable.Creator CREATOR = new dlns();
     public final Account a;
-    public euln b;
+    public exbg b;
     public byte[] c;
 
-    public CreateWalletObjectsServiceRequest(Account account, euln eulnVar) {
+    public CreateWalletObjectsServiceRequest(Account account, exbg exbgVar) {
         this.a = account;
-        this.b = eulnVar;
+        this.b = exbgVar;
     }
 
     @Override // android.os.Parcelable

@@ -4,38 +4,39 @@ import android.content.Context;
 import android.os.Build;
 import com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.ahwd;
-import defpackage.ahwj;
-import defpackage.akdr;
-import defpackage.akds;
-import defpackage.akdx;
-import defpackage.arxo;
-import defpackage.byjl;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.eijr;
-import defpackage.eijy;
-import defpackage.ekhk;
-import defpackage.ekhl;
-import defpackage.ekko;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.flnr;
+import defpackage.ajwt;
+import defpackage.ajwv;
+import defpackage.ajwz;
+import defpackage.ameo;
+import defpackage.amep;
+import defpackage.ameu;
+import defpackage.auad;
+import defpackage.casd;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.ekww;
+import defpackage.ekxd;
+import defpackage.emuw;
+import defpackage.emux;
+import defpackage.emya;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fofb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CustomBackupNewScheduleLoggingTask extends GmsTaskBoundService {
-    private static final arxo a = ahwd.a("CustomBackupNewScheduleLog");
-    private final eijr b = eijy.a(new eijr() { // from class: akdt
-        @Override // defpackage.eijr
-        public final Object a() {
-            return new akdx();
+    private static final auad a = ajwt.a("CustomBackupNewScheduleLog");
+    private final ekww b = ekxd.a(new ekww() { // from class: ameq
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return new ameu();
         }
     });
-    private final eijr c = eijy.a(new eijr() { // from class: akdu
-        @Override // defpackage.eijr
-        public final Object a() {
-            return ahxq.a(CustomBackupNewScheduleLoggingTask.this);
+    private final ekww c = ekxd.a(new ekww() { // from class: amer
+        @Override // defpackage.ekww
+        public final Object lK() {
+            return ajyg.a(CustomBackupNewScheduleLoggingTask.this);
         }
     });
 
@@ -44,77 +45,77 @@ public class CustomBackupNewScheduleLoggingTask extends GmsTaskBoundService {
             a.j("Not scheduling, disabled.", new Object[0]);
             return;
         }
-        akdx akdxVar = new akdx();
+        new ameu();
         if (!e()) {
             a.j("Not scheduling, disabled.", new Object[0]);
             return;
         }
-        akdr a2 = akds.a(context);
-        byko bykoVar = new byko();
-        bykoVar.w("com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask");
-        bykoVar.t("custom_backup_schedule_logging");
-        bykoVar.l(true);
-        bykoVar.p = true;
-        bykv bykvVar = bykv.j;
-        flnr flnrVar = flnr.a;
-        int a3 = (int) flnrVar.a().a();
+        ameo a2 = amep.a(context);
+        catg catgVar = new catg();
+        catgVar.w("com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask");
+        catgVar.t("custom_backup_schedule_logging");
+        catgVar.l(true);
+        catgVar.p = true;
+        catn catnVar = catn.j;
+        fofb fofbVar = fofb.a;
+        int a3 = (int) fofbVar.lK().a();
         if (a3 != -1) {
-            bykvVar = bykv.e(a3);
+            catnVar = catn.e(a3);
         }
-        bykoVar.a = bykvVar;
-        if (flnr.a.a().l()) {
-            bykoVar.v(1);
+        catgVar.a = catnVar;
+        if (fofbVar.lK().l()) {
+            catgVar.v(1);
         } else {
-            bykoVar.v(2);
+            catgVar.v(2);
         }
         boolean z = a2.a;
         if (z) {
-            bykoVar.k();
+            catgVar.k();
         }
         boolean z2 = a2.c;
         if (z2) {
-            bykoVar.e();
+            catgVar.e();
         }
-        byjl.a(context).f(bykoVar.b());
+        casd.a(context).f(catgVar.b());
         a.j("Task is scheduled to run", new Object[0]);
-        int i = bykvVar.g;
-        fecj v = ekko.a.v();
+        int i = catnVar.g;
+        fgrc v = emya.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ekko ekkoVar = (ekko) fecpVar;
-        ekkoVar.b = 1 | ekkoVar.b;
-        ekkoVar.c = z;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        emya emyaVar = (emya) fgriVar;
+        emyaVar.b = 1 | emyaVar.b;
+        emyaVar.c = z;
+        if (!fgriVar.L()) {
             v.U();
         }
-        ekko ekkoVar2 = (ekko) v.b;
-        ekkoVar2.b |= 2;
-        ekkoVar2.d = z2;
-        if (flnrVar.a().h()) {
+        emya emyaVar2 = (emya) v.b;
+        emyaVar2.b |= 2;
+        emyaVar2.d = z2;
+        if (fofbVar.lK().h()) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekko ekkoVar3 = (ekko) v.b;
-            ekkoVar3.b |= 4;
-            ekkoVar3.e = i;
+            emya emyaVar3 = (emya) v.b;
+            emyaVar3.b |= 4;
+            emyaVar3.e = i;
         }
-        fecj c = ahwj.c();
-        ekko ekkoVar4 = (ekko) v.Q();
+        fgrc c = ajwz.c();
+        emya emyaVar4 = (emya) v.Q();
         if (!c.b.L()) {
             c.U();
         }
-        ekhl ekhlVar = (ekhl) c.b;
-        ekhl ekhlVar2 = ekhl.a;
-        ekkoVar4.getClass();
-        ekhlVar.aw = ekkoVar4;
-        ekhlVar.d |= 2097152;
-        akdxVar.a((ekhl) c.Q(), ekhk.CUSTOM_BACKUP_NEW_SCHEDULE_LOGGING_SCHEDULED);
+        emux emuxVar = (emux) c.b;
+        emux emuxVar2 = emux.a;
+        emyaVar4.getClass();
+        emuxVar.aw = emyaVar4;
+        emuxVar.d |= 2097152;
+        ajwv.a((emux) c.Q(), emuw.CUSTOM_BACKUP_NEW_SCHEDULE_LOGGING_SCHEDULED);
     }
 
     private static boolean e() {
-        return flnr.a.a().c() && Build.VERSION.SDK_INT >= 26;
+        return fofb.a.lK().c() && Build.VERSION.SDK_INT >= 26;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:44:0x00d0, code lost:
@@ -126,11 +127,11 @@ public class CustomBackupNewScheduleLoggingTask extends GmsTaskBoundService {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final int a(defpackage.byln r12) {
+    public final int a(defpackage.cauf r12) {
         /*
-            Method dump skipped, instructions count: 457
+            Method dump skipped, instructions count: 461
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask.a(byln):int");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.backup.transport.component.CustomBackupNewScheduleLoggingTask.a(cauf):int");
     }
 }

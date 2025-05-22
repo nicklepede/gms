@@ -3,59 +3,62 @@ package com.google.android.gms.auth.api.credentials.manager.providers.chromesync
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.auth.credentials.base.AppContextProvider;
-import defpackage.asot;
-import defpackage.bmat;
-import defpackage.bmeo;
-import defpackage.bmfw;
-import defpackage.bmgx;
-import defpackage.bmkf;
-import defpackage.eitj;
-import defpackage.ejcb;
-import defpackage.ejhf;
-import defpackage.fkqz;
-import defpackage.wic;
-import defpackage.wlr;
-import defpackage.xul;
-import defpackage.yfb;
-import defpackage.yfi;
-import defpackage.yfj;
+import defpackage.aacx;
+import defpackage.aade;
+import defpackage.aadf;
+import defpackage.ausn;
+import defpackage.bohl;
+import defpackage.bolg;
+import defpackage.bomo;
+import defpackage.bonp;
+import defpackage.boqy;
+import defpackage.elgo;
+import defpackage.elpg;
+import defpackage.eluo;
+import defpackage.fnhy;
+import defpackage.yei;
+import defpackage.yib;
+import defpackage.zsi;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ChromeSyncIntentOperation extends IntentOperation {
-    private static final asot a = xul.a("ChromeSyncIntentOperation");
+    private static final ausn a = zsi.a("ChromeSyncIntentOperation");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         if (!"com.google.android.gms.phenotype.COMMITTED".equals(intent.getAction()) || "com.google.android.gms.auth.api.credentials".equals(intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME"))) {
-            ((Boolean) wlr.a.b()).booleanValue();
+            ((Boolean) yib.a.b()).booleanValue();
             AppContextProvider.a();
-            if (fkqz.a.a().o()) {
-                bmkf bmkfVar = (bmkf) yfj.a.a();
-                bmkfVar.aj(xul.a(yfj.b(yfi.WEBAUTHN_CREDENTIAL_DATA)));
-                bmkfVar.am(bmfw.AUTH_API_CREDENTIALS_PRE_SYNC_PASSKEYS, bmgx.a());
-                bmkfVar.U(yfi.WEBAUTHN_CREDENTIAL_DATA).a();
+            fnhy fnhyVar = fnhy.a;
+            if (fnhyVar.lK().o()) {
+                boqy boqyVar = (boqy) aadf.a.lK();
+                aade aadeVar = aade.WEBAUTHN_CREDENTIAL_DATA;
+                boqyVar.am(zsi.a(aadf.b(aadeVar)));
+                boqyVar.ap(bomo.AUTH_API_CREDENTIALS_PRE_SYNC_PASSKEYS, bonp.a());
+                boqyVar.X(aadeVar).a();
             }
-            if (fkqz.a.a().p()) {
-                bmkf bmkfVar2 = (bmkf) yfj.a.a();
-                bmkfVar2.aj(xul.a(yfj.b(yfi.PASSWORD_DATA)));
-                bmkfVar2.am(bmfw.AUTH_API_CREDENTIALS_PRE_SYNC_PASSWORDS, bmgx.a());
-                bmkfVar2.U(yfi.PASSWORD_DATA).a();
+            if (fnhyVar.lK().p()) {
+                boqy boqyVar2 = (boqy) aadf.a.lK();
+                aade aadeVar2 = aade.PASSWORD_DATA;
+                boqyVar2.am(zsi.a(aadf.b(aadeVar2)));
+                boqyVar2.ap(bomo.AUTH_API_CREDENTIALS_PRE_SYNC_PASSWORDS, bonp.a());
+                boqyVar2.X(aadeVar2).a();
             }
-            yfb yfbVar = new yfb(this);
+            aacx aacxVar = new aacx(this);
             try {
-                eitj b = wic.b();
-                int i = ((ejcb) b).c;
+                elgo b = yei.b();
+                int i = ((elpg) b).c;
                 for (int i2 = 0; i2 < i; i2++) {
                     try {
-                        yfbVar.e((bmat) b.get(i2)).get();
+                        aacxVar.e((bohl) b.get(i2)).get();
                     } catch (InterruptedException | ExecutionException e) {
-                        ((ejhf) ((ejhf) a.i()).s(e)).x("Failed to initialize sync.");
+                        ((eluo) ((eluo) a.i()).s(e)).x("Failed to initialize sync.");
                     }
                 }
-            } catch (bmeo e2) {
-                ((ejhf) ((ejhf) a.i()).s(e2)).x("Failed to get the accounts.");
+            } catch (bolg e2) {
+                ((eluo) ((eluo) a.i()).s(e2)).x("Failed to get the accounts.");
             }
         }
     }

@@ -6,22 +6,22 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import defpackage.djgr;
-import defpackage.efdi;
-import defpackage.eflq;
-import defpackage.efwo;
-import defpackage.ehtm;
+import defpackage.dlsk;
+import defpackage.ehql;
+import defpackage.ehyt;
+import defpackage.eijr;
+import defpackage.ekgs;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class CreditCardImagesView extends RelativeLayout {
     public ImageView[] a;
-    public djgr b;
+    public dlsk b;
     public boolean c;
     String d;
     private boolean e;
-    private eflq f;
+    private ehyt f;
     private ArrayList g;
 
     public CreditCardImagesView(Context context) {
@@ -32,9 +32,9 @@ public class CreditCardImagesView extends RelativeLayout {
         this.g = new ArrayList();
     }
 
-    public final eflq a() {
+    public final ehyt a() {
         if (this.f == null) {
-            this.f = eflq.c();
+            this.f = ehyt.c();
         }
         return this.f;
     }
@@ -44,8 +44,8 @@ public class CreditCardImagesView extends RelativeLayout {
         if (this.e) {
             return;
         }
-        djgr djgrVar = this.b;
-        ImageView[] imageViewArr = djgrVar.a;
+        dlsk dlskVar = this.b;
+        ImageView[] imageViewArr = dlskVar.a;
         float left = imageViewArr[0].getLeft();
         int i = 0;
         for (int i2 = 0; i2 < imageViewArr.length; i2++) {
@@ -54,27 +54,27 @@ public class CreditCardImagesView extends RelativeLayout {
             int i3 = 0;
             while (true) {
                 if (i3 >= size) {
-                    djgrVar.a(i2, false);
-                    djgrVar.d[i2] = -1;
+                    dlskVar.a(i2, false);
+                    dlskVar.d[i2] = -1;
                     break;
                 }
-                if (efdi.j((ehtm) arrayList.get(i3), (ehtm) imageView.getTag())) {
-                    djgrVar.a(i2, true);
-                    if (!efwo.S(imageView.getContext()) || Float.compare(imageView.getAlpha(), 0.0f) == 0) {
+                if (ehql.j((ekgs) arrayList.get(i3), (ekgs) imageView.getTag())) {
+                    dlskVar.a(i2, true);
+                    if (!eijr.S(imageView.getContext()) || Float.compare(imageView.getAlpha(), 0.0f) == 0) {
                         imageView.clearAnimation();
                         imageView.setX(left);
-                    } else if (djgrVar.d[i2] != i || djgrVar.c) {
+                    } else if (dlskVar.d[i2] != i || dlskVar.c) {
                         imageView.animate().x(left);
                     }
-                    djgrVar.d[i2] = i;
-                    left = djgrVar.b ? left - imageView.getWidth() : left + imageView.getWidth();
+                    dlskVar.d[i2] = i;
+                    left = dlskVar.b ? left - imageView.getWidth() : left + imageView.getWidth();
                     i++;
                 } else {
                     i3++;
                 }
             }
         }
-        djgrVar.c = false;
+        dlskVar.c = false;
     }
 
     @Override // android.widget.RelativeLayout, android.view.ViewGroup, android.view.View
@@ -95,7 +95,7 @@ public class CreditCardImagesView extends RelativeLayout {
         }
         Bundle bundle = (Bundle) parcelable;
         this.d = bundle.getString("cardNumber");
-        this.f = eflq.e(bundle);
+        this.f = ehyt.e(bundle);
         super.onRestoreInstanceState(bundle.getParcelable("parentState"));
     }
 
@@ -104,9 +104,9 @@ public class CreditCardImagesView extends RelativeLayout {
         Bundle bundle = new Bundle();
         bundle.putParcelable("parentState", super.onSaveInstanceState());
         bundle.putString("cardNumber", this.d);
-        eflq eflqVar = this.f;
-        if (eflqVar != null) {
-            eflqVar.h(bundle);
+        ehyt ehytVar = this.f;
+        if (ehytVar != null) {
+            ehytVar.h(bundle);
         }
         return bundle;
     }
@@ -114,9 +114,9 @@ public class CreditCardImagesView extends RelativeLayout {
     @Override // android.view.View
     protected final void onSizeChanged(int i, int i2, int i3, int i4) {
         super.onSizeChanged(i, i2, i3, i4);
-        djgr djgrVar = this.b;
-        if (djgrVar != null) {
-            djgrVar.c = true;
+        dlsk dlskVar = this.b;
+        if (dlskVar != null) {
+            dlskVar.c = true;
             b(this.g);
         }
     }

@@ -5,12 +5,12 @@ import android.app.Application;
 import android.os.Bundle;
 import com.google.android.gms.ads.internal.util.client.h;
 import com.google.android.gms.ads.internal.util.m;
-import defpackage.byhr;
+import defpackage.caqj;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class b implements Application.ActivityLifecycleCallbacks {
     public Activity a;
@@ -73,10 +73,10 @@ public final class b implements Application.ActivityLifecycleCallbacks {
         if (this.g != null) {
             m.a.removeCallbacks(this.g);
         }
-        byhr byhrVar = m.a;
+        caqj caqjVar = m.a;
         a aVar = new a(this);
         this.g = aVar;
-        byhrVar.postDelayed(aVar, 0L);
+        caqjVar.postDelayed(aVar, 0L);
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks

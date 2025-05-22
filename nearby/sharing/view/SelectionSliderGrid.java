@@ -8,10 +8,10 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import com.google.android.cast.JGCastService;
-import defpackage.asqh;
-import defpackage.crnz;
+import defpackage.auub;
+import defpackage.ctxe;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SelectionSliderGrid extends ViewGroup {
     public float a;
@@ -37,7 +37,7 @@ public class SelectionSliderGrid extends ViewGroup {
     }
 
     public final void a(int i, int i2) {
-        if (crnz.a(getContext())) {
+        if (ctxe.a(getContext())) {
             int i3 = i2 - i;
             int measuredWidth = i + getMeasuredWidth();
             i2 = (i2 + getMeasuredWidth()) - i3;
@@ -64,7 +64,7 @@ public class SelectionSliderGrid extends ViewGroup {
     @Override // android.view.ViewGroup, android.view.View
     protected final void dispatchDraw(Canvas canvas) {
         canvas.save();
-        if (asqh.c()) {
+        if (auub.c()) {
             canvas.clipOutPath(this.e);
         } else {
             canvas.clipRect(this.b);
@@ -90,7 +90,7 @@ public class SelectionSliderGrid extends ViewGroup {
         }
         canvas.restore();
         canvas.save();
-        if (asqh.c()) {
+        if (auub.c()) {
             canvas.clipOutPath(this.e);
         } else {
             canvas.clipRect(this.d);
@@ -127,7 +127,7 @@ public class SelectionSliderGrid extends ViewGroup {
         int i7 = i6;
         int i8 = 0;
         while (i8 < getChildCount()) {
-            View childAt = crnz.a(getContext()) ? getChildAt((getChildCount() - 1) - i8) : getChildAt(i8);
+            View childAt = ctxe.a(getContext()) ? getChildAt((getChildCount() - 1) - i8) : getChildAt(i8);
             int i9 = true != childAt.isSelected() ? i7 : i6;
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) childAt.getLayoutParams();
             if (marginLayoutParams == null) {

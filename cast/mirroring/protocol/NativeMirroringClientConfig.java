@@ -1,9 +1,9 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
-import defpackage.fvbo;
+import defpackage.fxxm;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class NativeMirroringClientConfig {
     private final int appUid;
@@ -13,9 +13,9 @@ public final class NativeMirroringClientConfig {
     private final List sendFormats;
 
     public NativeMirroringClientConfig(List list, String str, long j, int i, Tags tags) {
-        fvbo.f(list, "sendFormats");
-        fvbo.f(str, "remoteFriendlyName");
-        fvbo.f(tags, "extraData");
+        fxxm.f(list, "sendFormats");
+        fxxm.f(str, "remoteFriendlyName");
+        fxxm.f(tags, "extraData");
         this.sendFormats = list;
         this.remoteFriendlyName = str;
         this.maxTargetDelay = j;
@@ -64,9 +64,9 @@ public final class NativeMirroringClientConfig {
     }
 
     public final NativeMirroringClientConfig copy(List list, String str, long j, int i, Tags tags) {
-        fvbo.f(list, "sendFormats");
-        fvbo.f(str, "remoteFriendlyName");
-        fvbo.f(tags, "extraData");
+        fxxm.f(list, "sendFormats");
+        fxxm.f(str, "remoteFriendlyName");
+        fxxm.f(tags, "extraData");
         return new NativeMirroringClientConfig(list, str, j, i, tags);
     }
 
@@ -78,7 +78,7 @@ public final class NativeMirroringClientConfig {
             return false;
         }
         NativeMirroringClientConfig nativeMirroringClientConfig = (NativeMirroringClientConfig) obj;
-        return fvbo.n(this.sendFormats, nativeMirroringClientConfig.sendFormats) && fvbo.n(this.remoteFriendlyName, nativeMirroringClientConfig.remoteFriendlyName) && this.maxTargetDelay == nativeMirroringClientConfig.maxTargetDelay && this.appUid == nativeMirroringClientConfig.appUid && fvbo.n(this.extraData, nativeMirroringClientConfig.extraData);
+        return fxxm.n(this.sendFormats, nativeMirroringClientConfig.sendFormats) && fxxm.n(this.remoteFriendlyName, nativeMirroringClientConfig.remoteFriendlyName) && this.maxTargetDelay == nativeMirroringClientConfig.maxTargetDelay && this.appUid == nativeMirroringClientConfig.appUid && fxxm.n(this.extraData, nativeMirroringClientConfig.extraData);
     }
 
     public final int getAppUid() {

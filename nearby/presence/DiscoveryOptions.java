@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.WorkSource;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ckjp;
+import defpackage.atzr;
+import defpackage.cmru;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class DiscoveryOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckjp();
+    public static final Parcelable.Creator CREATOR = new cmru();
     public final boolean a;
     public final long b;
     public final boolean c;
@@ -73,12 +73,12 @@ public class DiscoveryOptions extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.a;
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, z);
-        arxc.q(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.p(parcel, 4, a(), false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, z);
+        atzr.q(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.p(parcel, 4, a(), false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.c(parcel, a);
     }
 }

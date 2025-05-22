@@ -5,26 +5,26 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bgit;
-import defpackage.bglp;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.binj;
+import defpackage.biqf;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SessionStopRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bglp();
+    public static final Parcelable.Creator CREATOR = new biqf();
     public final String a;
     public final String b;
-    public final bgit c;
+    public final binj c;
 
-    public SessionStopRequest(String str, String str2, bgit bgitVar) {
+    public SessionStopRequest(String str, String str2, binj binjVar) {
         this.a = str;
         this.b = str2;
-        this.c = bgitVar;
+        this.c = binjVar;
     }
 
     public final boolean equals(Object obj) {
@@ -35,7 +35,7 @@ public class SessionStopRequest extends AbstractSafeParcelable {
             return false;
         }
         SessionStopRequest sessionStopRequest = (SessionStopRequest) obj;
-        return arwb.b(this.a, sessionStopRequest.a) && arwb.b(this.b, sessionStopRequest.b);
+        return atyq.b(this.a, sessionStopRequest.a) && atyq.b(this.b, sessionStopRequest.b);
     }
 
     public final int hashCode() {
@@ -44,32 +44,32 @@ public class SessionStopRequest extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("name", this.a, arrayList);
-        arwa.b("identifier", this.b, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("name", this.a, arrayList);
+        atyp.b("identifier", this.b, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.v(parcel, 2, this.b, false);
-        bgit bgitVar = this.c;
-        arxc.D(parcel, 3, bgitVar == null ? null : bgitVar.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.v(parcel, 2, this.b, false);
+        binj binjVar = this.c;
+        atzr.D(parcel, 3, binjVar == null ? null : binjVar.a);
+        atzr.c(parcel, a);
     }
 
     public SessionStopRequest(String str, String str2, IBinder iBinder) {
-        bgit bgitVar;
+        binj binjVar;
         this.a = str;
         this.b = str2;
         if (iBinder == null) {
-            bgitVar = null;
+            binjVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.ISessionStopCallback");
-            bgitVar = queryLocalInterface instanceof bgit ? (bgit) queryLocalInterface : new bgit(iBinder);
+            binjVar = queryLocalInterface instanceof binj ? (binj) queryLocalInterface : new binj(iBinder);
         }
-        this.c = bgitVar;
+        this.c = binjVar;
     }
 }

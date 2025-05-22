@@ -1,36 +1,36 @@
 package com.google.android.gms.auth.api.credentials.manager;
 
 import android.content.Intent;
-import defpackage.anyd;
-import defpackage.bxdd;
-import defpackage.bxdf;
-import defpackage.bxdg;
-import defpackage.fkqe;
-import defpackage.xwt;
+import defpackage.apzv;
+import defpackage.bzlt;
+import defpackage.bzlv;
+import defpackage.bzlw;
+import defpackage.fnhd;
+import defpackage.zuq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class OneTapDialogCooldownToggleSecretCodeIntentOperation extends anyd {
-    private xwt b;
+public class OneTapDialogCooldownToggleSecretCodeIntentOperation extends apzv {
+    private zuq b;
 
     public OneTapDialogCooldownToggleSecretCodeIntentOperation() {
         super("66382723");
     }
 
-    @Override // defpackage.anyd
+    @Override // defpackage.apzv
     public final void a(Intent intent) {
-        if (fkqe.a.a().a()) {
-            xwt xwtVar = this.b;
-            synchronized (xwtVar.a) {
-                bxdf bxdfVar = xwtVar.b;
-                if (bxdg.h(bxdfVar, "cooldown_toggle_key")) {
-                    bxdd c = bxdfVar.c();
+        if (fnhd.a.lK().a()) {
+            zuq zuqVar = this.b;
+            synchronized (zuqVar.a) {
+                bzlv bzlvVar = zuqVar.b;
+                if (bzlw.h(bzlvVar, "cooldown_toggle_key")) {
+                    bzlt c = bzlvVar.c();
                     c.j("cooldown_toggle_key");
-                    bxdg.g(c);
+                    bzlw.g(c);
                 } else {
-                    bxdd c2 = bxdfVar.c();
+                    bzlt c2 = bzlvVar.c();
                     c2.e("cooldown_toggle_key", true);
-                    bxdg.g(c2);
+                    bzlw.g(c2);
                 }
             }
         }
@@ -39,12 +39,12 @@ public class OneTapDialogCooldownToggleSecretCodeIntentOperation extends anyd {
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
         if (this.b == null) {
-            this.b = new xwt(getApplicationContext());
+            this.b = new zuq(getApplicationContext());
         }
     }
 
-    OneTapDialogCooldownToggleSecretCodeIntentOperation(xwt xwtVar) {
+    OneTapDialogCooldownToggleSecretCodeIntentOperation(zuq zuqVar) {
         super("66382723");
-        this.b = xwtVar;
+        this.b = zuqVar;
     }
 }

@@ -17,12 +17,12 @@ import java.util.logging.Logger;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSessionContext;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 abstract class NativeSslSession {
     private static final Logger logger = Logger.getLogger(NativeSslSession.class.getName());
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     final class Impl extends NativeSslSession {
         private final String cipherSuite;
         private final AbstractSessionContext context;

@@ -15,25 +15,25 @@ import com.google.android.gms.wallet.ow.ShowLockScreenChimeraActivity;
 import com.google.android.gms.wallet.service.ib.LoadFullWalletServiceRequest;
 import com.google.android.gms.wallet.service.ib.LoadFullWalletServiceResponse;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
-import defpackage.arwm;
-import defpackage.didm;
-import defpackage.dimg;
-import defpackage.dirc;
-import defpackage.diud;
-import defpackage.emee;
+import defpackage.atzb;
+import defpackage.dkox;
+import defpackage.dkxr;
+import defpackage.dlcn;
+import defpackage.dlfo;
+import defpackage.eors;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class LockScreenForFullWalletChimeraActivity extends FragmentActivity {
     public static final /* synthetic */ int c = 0;
-    private static final String d = dimg.b("lockScreenForFullWallet");
+    private static final String d = dkxr.b("lockScreenForFullWallet");
     LoadFullWalletServiceRequest a;
     private BuyFlowConfig e;
     private boolean f;
     private int g;
-    private dimg h;
+    private dkxr h;
     int b = 1;
-    private final diud i = new dirc(this);
+    private final dlfo i = new dlcn(this);
 
     private final void d() {
         g(4, -1, 1);
@@ -64,9 +64,9 @@ public class LockScreenForFullWalletChimeraActivity extends FragmentActivity {
         OwFullWalletRequestedEvent.b(this, buyFlowConfig, i, i2, i4, 0, 0L, i6, str, this.a.b.a);
     }
 
-    final dimg a() {
+    final dkxr a() {
         if (this.h == null) {
-            this.h = (dimg) getSupportFragmentManager().findFragmentByTag(d);
+            this.h = (dkxr) getSupportFragmentManager().findFragmentByTag(d);
         }
         return this.h;
     }
@@ -74,9 +74,9 @@ public class LockScreenForFullWalletChimeraActivity extends FragmentActivity {
     public final void b(LoadFullWalletServiceResponse loadFullWalletServiceResponse) {
         Bundle bundle = loadFullWalletServiceResponse.a;
         ConnectionResult connectionResult = new ConnectionResult(loadFullWalletServiceResponse.c, bundle != null ? (PendingIntent) bundle.getParcelable("com.google.android.gms.wallet.EXTRA_PENDING_INTENT") : null);
-        if (connectionResult.b()) {
+        if (connectionResult.c()) {
             try {
-                connectionResult.a(getContainerActivity(), 502);
+                connectionResult.b(getContainerActivity(), 502);
                 return;
             } catch (IntentSender.SendIntentException unused) {
                 c(1014);
@@ -104,14 +104,14 @@ public class LockScreenForFullWalletChimeraActivity extends FragmentActivity {
         g(5, 8, i);
         Intent intent = new Intent();
         intent.putExtra("com.google.android.gms.wallet.EXTRA_ERROR_CODE", 8);
-        didm a = FullWallet.a();
+        dkox a = FullWallet.a();
         a.a(this.a.b.a);
         a.b(this.a.b.b);
         intent.putExtra("com.google.android.gms.wallet.EXTRA_FULL_WALLET", a.a);
         e(1, intent);
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         if (i != 501) {
             if (i != 502) {
@@ -134,24 +134,24 @@ public class LockScreenForFullWalletChimeraActivity extends FragmentActivity {
         }
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         d();
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         setTheme(R.style.Theme_Wallet_No_Display);
         super.onCreate(bundle);
         Intent intent = getIntent();
         this.e = (BuyFlowConfig) intent.getParcelableExtra("com.google.android.gms.wallet.buyFlowConfig");
         this.a = (LoadFullWalletServiceRequest) intent.getParcelableExtra("loadFullWalletServiceRequest");
-        arwm.t(this.e, "Buyflow config is required!");
-        arwm.t(this.a, "request is required!");
+        atzb.t(this.e, "Buyflow config is required!");
+        atzb.t(this.a, "request is required!");
         if (bundle != null) {
             this.f = bundle.getBoolean("startedLockscreenActivity");
             this.g = bundle.getInt("serviceConnectionSavePoint");
-            this.b = emee.a(bundle.getInt("lockscreenStatus"));
+            this.b = eors.a(bundle.getInt("lockscreenStatus"));
         } else {
             this.f = false;
             this.g = -1;
@@ -159,19 +159,19 @@ public class LockScreenForFullWalletChimeraActivity extends FragmentActivity {
         }
         if (a() == null) {
             BuyFlowConfig buyFlowConfig = this.e;
-            this.h = dimg.a(8, buyFlowConfig, buyFlowConfig.b.b);
+            this.h = dkxr.a(8, buyFlowConfig, buyFlowConfig.b.b);
             getSupportFragmentManager().beginTransaction().add(this.h, d).commit();
         }
         setFinishOnTouchOutside(false);
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onPause() {
         super.onPause();
         f();
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
         a().b.d(this.i, this.g);
@@ -183,7 +183,7 @@ public class LockScreenForFullWalletChimeraActivity extends FragmentActivity {
         this.f = true;
     }
 
-    @Override // defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         f();

@@ -5,46 +5,46 @@ import android.os.Build;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.backup.g1.notifications.SettingsCollectionSchedulerChimeraService;
 import com.google.android.gms.backup.g1.restore.VerifyAutoRestoreIntentOperation;
-import defpackage.ahwd;
-import defpackage.aieb;
-import defpackage.ajgv;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.asqg;
-import defpackage.byjl;
-import defpackage.fllt;
-import defpackage.flly;
-import defpackage.flmm;
-import defpackage.flon;
+import defpackage.ajwt;
+import defpackage.aker;
+import defpackage.alhn;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.auua;
+import defpackage.casd;
+import defpackage.fodd;
+import defpackage.fodi;
+import defpackage.fodw;
+import defpackage.fofx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class G1ModuleInitIntentOperation extends anya {
-    private static final ahwd a = new ahwd("G1ModuleInitIntentOperation");
-    private static final String b = asqg.f("com.google.android.gms.backup");
+public class G1ModuleInitIntentOperation extends apzs {
+    private static final ajwt a = new ajwt("G1ModuleInitIntentOperation");
+    private static final String b = auua.f("com.google.android.gms.backup");
 
     private final void e() {
-        if (!flly.g()) {
+        if (!fodi.g()) {
             a.j("BbG1 notifications disabled by flag", new Object[0]);
         } else if (Build.VERSION.SDK_INT >= 26) {
-            aieb.e(this, "com.google.android.gms.backup.g1.featureupdates.notification.channel.id");
-            aieb.e(this, "com.google.android.gms.backup.g1.statusalerts.notification.channel.id");
-            aieb.e(this, "com.google.android.gms.backup.g1.storagealerts.notification.channel.id");
+            aker.e(this, "com.google.android.gms.backup.g1.featureupdates.notification.channel.id");
+            aker.e(this, "com.google.android.gms.backup.g1.statusalerts.notification.channel.id");
+            aker.e(this, "com.google.android.gms.backup.g1.storagealerts.notification.channel.id");
         }
     }
 
     private final void f() {
-        if (flmm.Q() && flmm.B()) {
+        if (fodw.Q() && fodw.B()) {
             a.m("Mms restore invoke attempt via legacy interface", new Object[0]);
             return;
         }
-        if (!fllt.a.a().X()) {
+        if (!fodd.a.lK().X()) {
             a.j("Running restore operation is disabled by flag", new Object[0]);
             return;
         }
-        if (flmm.a.a().aD()) {
-            ajgv ajgvVar = ajgv.a;
-            if (ajgv.l(this) || ajgv.m(this) || !ajgv.q(this)) {
+        if (fodw.a.lK().aE()) {
+            alhn alhnVar = alhn.a;
+            if (alhn.l(this) || alhn.m(this) || !alhn.q(this)) {
                 return;
             }
         }
@@ -54,23 +54,23 @@ public class G1ModuleInitIntentOperation extends anya {
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        if (flon.f()) {
-            SettingsCollectionSchedulerChimeraService.d(byjl.a(this));
+        if (fofx.f()) {
+            SettingsCollectionSchedulerChimeraService.d(casd.a(this));
         }
         e();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
-        asng.H(this, "com.google.android.gms.backup.mms.MmsRestoreService", true);
+        aura.H(this, "com.google.android.gms.backup.mms.MmsRestoreService", true);
         f();
     }
 
-    @Override // defpackage.anya, com.google.android.chimera.IntentOperation
+    @Override // defpackage.apzs, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (!fllt.a.a().ak() || !"com.google.android.gms.backup".equals(intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME")) || (!"com.google.android.gms.phenotype.COMMITTED".equals(intent.getAction()) && !b.equals(intent.getAction()))) {
+        if (!fodd.a.lK().ak() || !"com.google.android.gms.backup".equals(intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME")) || (!"com.google.android.gms.phenotype.COMMITTED".equals(intent.getAction()) && !b.equals(intent.getAction()))) {
             super.onHandleIntent(intent);
             return;
         }

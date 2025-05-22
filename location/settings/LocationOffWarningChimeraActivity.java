@@ -5,27 +5,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.R;
 import com.google.android.gms.location.settings.LocationOffWarningChimeraActivity;
-import defpackage.asqh;
-import defpackage.budr;
-import defpackage.bwth;
-import defpackage.bwti;
-import defpackage.canf;
-import defpackage.ebna;
-import defpackage.ejhf;
-import defpackage.elfl;
-import defpackage.elfm;
-import defpackage.emgv;
-import defpackage.emgw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fpva;
+import defpackage.auub;
+import defpackage.bwlt;
+import defpackage.bzbx;
+import defpackage.bzby;
+import defpackage.ccvv;
+import defpackage.edzp;
+import defpackage.eluo;
+import defpackage.ensy;
+import defpackage.ensz;
+import defpackage.eouj;
+import defpackage.eouk;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fsos;
 import defpackage.ip;
 import defpackage.iq;
-import defpackage.qfp;
+import defpackage.ryt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class LocationOffWarningChimeraActivity extends qfp implements DialogInterface.OnClickListener {
+public class LocationOffWarningChimeraActivity extends ryt implements DialogInterface.OnClickListener {
     private iq j;
     private int k;
     private Boolean l;
@@ -36,55 +36,55 @@ public class LocationOffWarningChimeraActivity extends qfp implements DialogInte
         }
         Boolean valueOf = Boolean.valueOf(z);
         this.l = valueOf;
-        ((ejhf) LocationOffWarningIntentOperation.a.h()).B("dialog choice was %b", valueOf);
+        ((eluo) LocationOffWarningIntentOperation.a.h()).B("dialog choice was %b", valueOf);
         if (!isFinishing()) {
             finish();
         }
         if (z) {
-            bwth.d(this, this.k, bwti.a);
-            canf.c().h(0L);
+            bzbx.d(this, this.k, bzby.a);
+            ccvv.c().h(0L);
         }
-        fecj v = emgv.a.v();
+        fgrc v = eouj.a.v();
         int i = true != z ? 4 : 3;
         if (!v.b.L()) {
             v.U();
         }
-        emgv emgvVar = (emgv) v.b;
-        emgvVar.c = i - 1;
-        emgvVar.b |= 1;
-        emgv emgvVar2 = (emgv) v.Q();
-        fecj v2 = elfm.a.v();
-        elfl elflVar = elfl.DIALOGS;
+        eouj eoujVar = (eouj) v.b;
+        eoujVar.c = i - 1;
+        eoujVar.b |= 1;
+        eouj eoujVar2 = (eouj) v.Q();
+        fgrc v2 = ensz.a.v();
+        ensy ensyVar = ensy.DIALOGS;
         if (!v2.b.L()) {
             v2.U();
         }
-        elfm elfmVar = (elfm) v2.b;
-        elfmVar.c = elflVar.F;
-        elfmVar.b |= 1;
-        fecj v3 = emgw.a.v();
+        ensz enszVar = (ensz) v2.b;
+        enszVar.c = ensyVar.F;
+        enszVar.b |= 1;
+        fgrc v3 = eouk.a.v();
         if (!v3.b.L()) {
             v3.U();
         }
-        fecp fecpVar = v3.b;
-        emgw emgwVar = (emgw) fecpVar;
-        emgwVar.c = 1;
-        emgwVar.b = 1 | emgwVar.b;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v3.b;
+        eouk eoukVar = (eouk) fgriVar;
+        eoukVar.c = 1;
+        eoukVar.b = 1 | eoukVar.b;
+        if (!fgriVar.L()) {
             v3.U();
         }
-        emgw emgwVar2 = (emgw) v3.b;
-        emgvVar2.getClass();
-        emgwVar2.d = emgvVar2;
-        emgwVar2.b |= 2;
-        emgw emgwVar3 = (emgw) v3.Q();
+        eouk eoukVar2 = (eouk) v3.b;
+        eoujVar2.getClass();
+        eoukVar2.d = eoujVar2;
+        eoukVar2.b |= 2;
+        eouk eoukVar3 = (eouk) v3.Q();
         if (!v2.b.L()) {
             v2.U();
         }
-        elfm elfmVar2 = (elfm) v2.b;
-        emgwVar3.getClass();
-        elfmVar2.j = emgwVar3;
-        elfmVar2.b |= 128;
-        budr.v().f((elfm) v2.Q());
+        ensz enszVar2 = (ensz) v2.b;
+        eoukVar3.getClass();
+        enszVar2.j = eoukVar3;
+        enszVar2.b |= 128;
+        bwlt.v().f((ensz) v2.Q());
     }
 
     @Override // android.content.DialogInterface.OnClickListener
@@ -92,9 +92,9 @@ public class LocationOffWarningChimeraActivity extends qfp implements DialogInte
         a(i == -1);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        ip ebnaVar;
+        ip edzpVar;
         super.onCreate(bundle);
         int intExtra = getIntent().getIntExtra("previousMode", 0);
         this.k = intExtra;
@@ -107,19 +107,19 @@ public class LocationOffWarningChimeraActivity extends qfp implements DialogInte
         try {
             sendBroadcast(new Intent("android.intent.action.CLOSE_SYSTEM_DIALOGS"));
         } catch (SecurityException e) {
-            ((ejhf) ((ejhf) LocationOffWarningIntentOperation.a.j()).s(e)).x("unable to close system dialogs");
+            ((eluo) ((eluo) LocationOffWarningIntentOperation.a.j()).s(e)).x("unable to close system dialogs");
         }
-        if (asqh.e()) {
+        if (auub.e()) {
             try {
-                ebnaVar = new ebna(this, true != fpva.c() ? 0 : R.style.Material3DialogTheme);
+                edzpVar = new edzp(this, true != fsos.c() ? 0 : R.style.Material3DialogTheme);
             } catch (IllegalArgumentException e2) {
-                ((ejhf) ((ejhf) LocationOffWarningIntentOperation.a.j()).s(e2)).x("Failed to create MaterialAlertDialogBuilder");
+                ((eluo) ((eluo) LocationOffWarningIntentOperation.a.j()).s(e2)).x("Failed to create MaterialAlertDialogBuilder");
             }
-            ebnaVar.j(R.string.location_off_dialog_title);
-            ebnaVar.m(R.string.location_off_dialog_message);
-            ip positiveButton = ebnaVar.setPositiveButton(R.string.location_off_dialog_button_turn_on_location, this);
-            positiveButton.setNegativeButton(R.string.close_button_label, this);
-            positiveButton.h(new DialogInterface.OnCancelListener() { // from class: camd
+            edzpVar.l(R.string.location_off_dialog_title);
+            edzpVar.o(R.string.location_off_dialog_message);
+            edzpVar.setPositiveButton(R.string.location_off_dialog_button_turn_on_location, this);
+            edzpVar.setNegativeButton(R.string.close_button_label, this);
+            edzpVar.h(new DialogInterface.OnCancelListener() { // from class: ccut
                 @Override // android.content.DialogInterface.OnCancelListener
                 public final void onCancel(DialogInterface dialogInterface) {
                     LocationOffWarningChimeraActivity locationOffWarningChimeraActivity = LocationOffWarningChimeraActivity.this;
@@ -129,17 +129,17 @@ public class LocationOffWarningChimeraActivity extends qfp implements DialogInte
                     locationOffWarningChimeraActivity.finish();
                 }
             });
-            iq create = positiveButton.create();
+            iq create = edzpVar.create();
             this.j = create;
             create.setCanceledOnTouchOutside(false);
             this.j.show();
         }
-        ebnaVar = new ip(this);
-        ebnaVar.j(R.string.location_off_dialog_title);
-        ebnaVar.m(R.string.location_off_dialog_message);
-        ip positiveButton2 = ebnaVar.setPositiveButton(R.string.location_off_dialog_button_turn_on_location, this);
-        positiveButton2.setNegativeButton(R.string.close_button_label, this);
-        positiveButton2.h(new DialogInterface.OnCancelListener() { // from class: camd
+        edzpVar = new ip(this);
+        edzpVar.l(R.string.location_off_dialog_title);
+        edzpVar.o(R.string.location_off_dialog_message);
+        edzpVar.setPositiveButton(R.string.location_off_dialog_button_turn_on_location, this);
+        edzpVar.setNegativeButton(R.string.close_button_label, this);
+        edzpVar.h(new DialogInterface.OnCancelListener() { // from class: ccut
             @Override // android.content.DialogInterface.OnCancelListener
             public final void onCancel(DialogInterface dialogInterface) {
                 LocationOffWarningChimeraActivity locationOffWarningChimeraActivity = LocationOffWarningChimeraActivity.this;
@@ -149,15 +149,17 @@ public class LocationOffWarningChimeraActivity extends qfp implements DialogInte
                 locationOffWarningChimeraActivity.finish();
             }
         });
-        iq create2 = positiveButton2.create();
+        iq create2 = edzpVar.create();
         this.j = create2;
         create2.setCanceledOnTouchOutside(false);
         this.j.show();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
-        a(false);
+        if (!isChangingConfigurations()) {
+            a(false);
+        }
         super.onPause();
     }
 }

@@ -3,12 +3,12 @@ package com.google.android.gms.growth.uiflow.ui.widget.media;
 import android.content.Context;
 import android.util.AttributeSet;
 import com.airbnb.lottie.LottieAnimationView;
-import defpackage.bkvb;
+import defpackage.bnbr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class ScaledLottieAnimationView extends LottieAnimationView {
-    public bkvb h;
+    public bnbr h;
 
     public ScaledLottieAnimationView(Context context) {
         super(context);
@@ -16,9 +16,9 @@ public class ScaledLottieAnimationView extends LottieAnimationView {
 
     @Override // android.widget.ImageView
     protected final boolean setFrame(int i, int i2, int i3, int i4) {
-        bkvb bkvbVar;
-        if (getDrawable() != null && (bkvbVar = this.h) != null) {
-            bkvbVar.a();
+        bnbr bnbrVar;
+        if (getDrawable() != null && (bnbrVar = this.h) != null) {
+            bnbrVar.a();
         }
         return super.setFrame(i, i2, i3, i4);
     }

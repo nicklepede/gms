@@ -4,19 +4,19 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.appsearch.safeparcel.PackageIdentifierParcel;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bsa;
-import defpackage.udx;
-import defpackage.ueu;
+import defpackage.atzr;
+import defpackage.bsl;
+import defpackage.vzw;
+import defpackage.wat;
 import j$.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class SchemaVisibilityConfig extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ueu();
+    public static final Parcelable.Creator CREATOR = new wat();
     final List a;
     final List b;
     final PackageIdentifierParcel c;
@@ -30,12 +30,12 @@ public final class SchemaVisibilityConfig extends AbstractSafeParcelable {
         this.c = packageIdentifierParcel;
     }
 
-    public final udx a() {
+    public final vzw a() {
         PackageIdentifierParcel packageIdentifierParcel = this.c;
         if (packageIdentifierParcel == null) {
             return null;
         }
-        return new udx(packageIdentifierParcel);
+        return new vzw(packageIdentifierParcel);
     }
 
     public final List b() {
@@ -43,31 +43,31 @@ public final class SchemaVisibilityConfig extends AbstractSafeParcelable {
             List list = this.a;
             this.e = new ArrayList(list.size());
             for (int i = 0; i < list.size(); i++) {
-                this.e.add(new udx((PackageIdentifierParcel) list.get(i)));
+                this.e.add(new vzw((PackageIdentifierParcel) list.get(i)));
             }
         }
         return this.e;
     }
 
     public final Set c() {
-        bsa bsaVar;
+        bsl bslVar;
         if (this.f == null) {
             List list = this.b;
-            this.f = new bsa(list.size());
+            this.f = new bsl(list.size());
             for (int i = 0; i < list.size(); i++) {
                 int[] iArr = ((VisibilityPermissionConfig) list.get(i)).a;
                 if (iArr == null) {
-                    bsaVar = null;
+                    bslVar = null;
                 } else {
-                    bsa bsaVar2 = new bsa(iArr.length);
+                    bsl bslVar2 = new bsl(iArr.length);
                     for (int i2 : iArr) {
-                        bsaVar2.add(Integer.valueOf(i2));
+                        bslVar2.add(Integer.valueOf(i2));
                     }
-                    bsaVar = bsaVar2;
+                    bslVar = bslVar2;
                 }
                 Set set = this.f;
-                if (set != null && bsaVar != null) {
-                    set.add(bsaVar);
+                if (set != null && bslVar != null) {
+                    set.add(bslVar);
                 }
             }
         }
@@ -95,10 +95,10 @@ public final class SchemaVisibilityConfig extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.t(parcel, 3, this.c, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.t(parcel, 3, this.c, i, false);
+        atzr.c(parcel, a);
     }
 }

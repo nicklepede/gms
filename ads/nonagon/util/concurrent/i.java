@@ -1,12 +1,12 @@
 package com.google.android.gms.ads.nonagon.util.concurrent;
 
-import defpackage.ensa;
-import defpackage.ensj;
-import defpackage.enss;
+import defpackage.eqft;
+import defpackage.eqgc;
+import defpackage.eqgl;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class i {
     final /* synthetic */ n a;
@@ -21,8 +21,8 @@ public final class i {
 
     public final m a(Callable callable) {
         List list = this.c;
-        ensa c = ensj.c(list);
-        enss a = c.a(new Callable() { // from class: com.google.android.gms.ads.nonagon.util.concurrent.h
+        eqft c = eqgc.c(list);
+        eqgl a = c.a(new Callable() { // from class: com.google.android.gms.ads.nonagon.util.concurrent.h
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return null;

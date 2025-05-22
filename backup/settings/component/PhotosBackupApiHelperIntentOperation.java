@@ -2,19 +2,19 @@ package com.google.android.gms.backup.settings.component;
 
 import android.content.Context;
 import android.content.Intent;
-import defpackage.ahre;
-import defpackage.ahxo;
-import defpackage.aiaa;
-import defpackage.aiab;
+import defpackage.ajru;
+import defpackage.ajye;
+import defpackage.akaq;
+import defpackage.akar;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class PhotosBackupApiHelperIntentOperation extends ahre {
-    private final aiab a;
-    private ahxo b;
+public class PhotosBackupApiHelperIntentOperation extends ajru {
+    private final akar a;
+    private ajye b;
 
     public PhotosBackupApiHelperIntentOperation() {
-        aiaa a = aiab.a();
+        akaq a = akar.a();
         a.c(13);
         this.a = a.a();
     }
@@ -25,10 +25,10 @@ public class PhotosBackupApiHelperIntentOperation extends ahre {
         return intent;
     }
 
-    @Override // defpackage.ahre
+    @Override // defpackage.ajru
     public final void a(Intent intent) {
         if (this.b == null) {
-            this.b = ahxo.b(this);
+            this.b = ajye.b(this);
         }
         if (intent.getBooleanExtra("is_enable_photos_backup", false)) {
             this.b.e(intent.getStringExtra("account"), this.a);

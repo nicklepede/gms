@@ -6,18 +6,18 @@ import android.bluetooth.le.ScanResult;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ceyb;
-import defpackage.ceye;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.chfm;
+import defpackage.chfp;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class BleSighting extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ceye();
+    public static final Parcelable.Creator CREATOR = new chfp();
     public final BluetoothDevice a;
-    public final ceyb b;
+    public final chfm b;
     public final byte[] c;
     public final int d;
     public final long e;
@@ -27,7 +27,7 @@ public class BleSighting extends AbstractSafeParcelable {
         this.c = bArr;
         this.d = i;
         this.e = j;
-        this.b = ceyb.a(bArr);
+        this.b = chfm.a(bArr);
     }
 
     public static BleSighting a(ScanResult scanResult) {
@@ -46,7 +46,7 @@ public class BleSighting extends AbstractSafeParcelable {
             return false;
         }
         BleSighting bleSighting = (BleSighting) obj;
-        return arwb.b(this.a, bleSighting.a) && this.d == bleSighting.d && Arrays.equals(this.c, bleSighting.c) && this.e == bleSighting.e;
+        return atyq.b(this.a, bleSighting.a) && this.d == bleSighting.d && Arrays.equals(this.c, bleSighting.c) && this.e == bleSighting.e;
     }
 
     public final int hashCode() {
@@ -59,11 +59,11 @@ public class BleSighting extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.i(parcel, 3, this.c, false);
-        arxc.o(parcel, 4, this.d);
-        arxc.q(parcel, 5, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.i(parcel, 3, this.c, false);
+        atzr.o(parcel, 4, this.d);
+        atzr.q(parcel, 5, this.e);
+        atzr.c(parcel, a);
     }
 }

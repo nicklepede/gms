@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.util.Log;
 import com.google.android.chimera.BroadcastReceiver;
 import com.google.android.chimera.IntentOperation;
-import defpackage.fsdg;
+import defpackage.fuyd;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SetupWizardPreferences$ClearingChimeraReceiver extends BroadcastReceiver {
     @Override // com.google.android.chimera.BroadcastReceiver
@@ -27,7 +27,7 @@ public class SetupWizardPreferences$ClearingChimeraReceiver extends BroadcastRec
         } else {
             Log.e("Auth", String.format(Locale.US, "[SetupWizardPreferences] Unable to create an intent for ConsentedLoggingUploadIntentOperation.", new Object[0]));
         }
-        if (!fsdg.c() || (startIntent = IntentOperation.getStartIntent(context, "com.google.android.gms.smartdevice.logging.SetupWizardFinishedIntentOperation", "com.google.android.gms.smartdevice.logging.SETUP_WIZARD_FINISHED")) == null) {
+        if (!fuyd.c() || (startIntent = IntentOperation.getStartIntent(context, "com.google.android.gms.smartdevice.logging.SetupWizardFinishedIntentOperation", "com.google.android.gms.smartdevice.logging.SETUP_WIZARD_FINISHED")) == null) {
             return;
         }
         context.startService(startIntent);

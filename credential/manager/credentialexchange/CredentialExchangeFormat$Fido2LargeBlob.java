@@ -1,12 +1,12 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.fipp;
-import defpackage.fuvj;
-import defpackage.fvbo;
+import defpackage.flfm;
+import defpackage.fxrh;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
 public final class CredentialExchangeFormat$Fido2LargeBlob {
     public final int a;
     public final String b;
@@ -26,7 +26,7 @@ public final class CredentialExchangeFormat$Fido2LargeBlob {
             return false;
         }
         CredentialExchangeFormat$Fido2LargeBlob credentialExchangeFormat$Fido2LargeBlob = (CredentialExchangeFormat$Fido2LargeBlob) obj;
-        return this.a == credentialExchangeFormat$Fido2LargeBlob.a && fvbo.n(this.b, credentialExchangeFormat$Fido2LargeBlob.b) && fvbo.n(this.c, credentialExchangeFormat$Fido2LargeBlob.c);
+        return this.a == credentialExchangeFormat$Fido2LargeBlob.a && fxxm.n(this.b, credentialExchangeFormat$Fido2LargeBlob.b) && fxxm.n(this.c, credentialExchangeFormat$Fido2LargeBlob.c);
     }
 
     public final int hashCode() {
@@ -34,6 +34,6 @@ public final class CredentialExchangeFormat$Fido2LargeBlob {
     }
 
     public final String toString() {
-        return "Fido2LargeBlob(size=" + fuvj.b(this.a) + ", alg=" + this.b + ", data=" + this.c + ")";
+        return "Fido2LargeBlob(size=" + fxrh.b(this.a) + ", alg=" + this.b + ", data=" + this.c + ")";
     }
 }

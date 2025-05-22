@@ -3,16 +3,16 @@ package com.google.android.gms.smartdevice.d2d;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dcwt;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dfhy;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ConnectionRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dcwt();
+    public static final Parcelable.Creator CREATOR = new dfhy();
     public final D2DDevice a;
     public final String b;
     public final String c;
@@ -58,7 +58,7 @@ public class ConnectionRequest extends AbstractSafeParcelable {
             boolean z2 = connectionRequest.h;
             int i2 = connectionRequest.j;
             int i3 = connectionRequest.k;
-            if (arwb.b(d2DDevice, this.a) && arwb.b(str, this.b) && arwb.b(str2, this.c) && Arrays.equals(bArr, this.d) && arwb.b(str3, this.e) && i == this.f && z == this.g && z2 == this.h && connectionRequest.i == this.i && i2 == this.j && i3 == this.k) {
+            if (atyq.b(d2DDevice, this.a) && atyq.b(str, this.b) && atyq.b(str2, this.c) && Arrays.equals(bArr, this.d) && atyq.b(str3, this.e) && i == this.f && z == this.g && z2 == this.h && connectionRequest.i == this.i && i2 == this.j && i3 == this.k) {
                 return true;
             }
         }
@@ -76,18 +76,18 @@ public class ConnectionRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         D2DDevice d2DDevice = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, d2DDevice, i, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.i(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.e(parcel, 7, this.g);
-        arxc.e(parcel, 8, this.h);
-        arxc.e(parcel, 9, this.i);
-        arxc.o(parcel, 10, this.j);
-        arxc.o(parcel, 11, this.k);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, d2DDevice, i, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.i(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.e(parcel, 7, this.g);
+        atzr.e(parcel, 8, this.h);
+        atzr.e(parcel, 9, this.i);
+        atzr.o(parcel, 10, this.j);
+        atzr.o(parcel, 11, this.k);
+        atzr.c(parcel, a);
     }
 }

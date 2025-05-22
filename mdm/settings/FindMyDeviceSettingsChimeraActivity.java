@@ -6,34 +6,34 @@ import android.view.MenuItem;
 import androidx.preference.Preference;
 import com.google.android.gms.R;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.asqh;
+import defpackage.auub;
 import defpackage.bp;
-import defpackage.ccwi;
-import defpackage.ccxp;
-import defpackage.ccxq;
+import defpackage.cfff;
+import defpackage.cfgn;
+import defpackage.cfgo;
 import defpackage.dg;
 import defpackage.ds;
-import defpackage.frte;
-import defpackage.frty;
-import defpackage.kly;
-import defpackage.kmb;
-import defpackage.qgg;
+import defpackage.funx;
+import defpackage.fuos;
+import defpackage.mej;
+import defpackage.mem;
+import defpackage.rzk;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class FindMyDeviceSettingsChimeraActivity extends qgg implements kly {
+public class FindMyDeviceSettingsChimeraActivity extends rzk implements mej {
     private boolean j;
 
-    @Override // defpackage.kly
-    public final void a(kmb kmbVar, Preference preference) {
+    @Override // defpackage.mej
+    public final void a(mem memVar, Preference preference) {
         Bundle r = preference.r();
         ds l = getSupportFragmentManager().l();
         getClassLoader();
         dg b = l.b((String) Objects.requireNonNull(preference.u));
         b.setArguments(r);
-        b.setTargetFragment(kmbVar, 0);
-        if (frty.g()) {
+        b.setTargetFragment(memVar, 0);
+        if (fuos.g()) {
             bp bpVar = new bp(getSupportFragmentManager());
             bpVar.F(R.id.content_frame, b);
             bpVar.a();
@@ -45,20 +45,20 @@ public class FindMyDeviceSettingsChimeraActivity extends qgg implements kly {
         }
     }
 
-    @Override // defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (asqh.g() && frte.k()) {
+        if (auub.g() && funx.k()) {
             getWindow().addSystemFlags(AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
         }
-        boolean d = new ccxq(this).d();
+        boolean d = new cfgo(this).d();
         this.j = d;
         if (bundle == null && d) {
             Bundle bundle2 = new Bundle();
             bundle2.putBoolean("show_device_admin", getIntent().getBooleanExtra("show_device_admin", false));
             bundle2.putBoolean("show_modal_request", getIntent().getBooleanExtra("show_modal_request", false));
-            Class cls = (frte.o() && getIntent().getBooleanExtra("open_fmdn", false)) ? ccwi.class : ccxp.class;
-            if (frty.g()) {
+            Class cls = (funx.o() && getIntent().getBooleanExtra("open_fmdn", false)) ? cfff.class : cfgn.class;
+            if (fuos.g()) {
                 bp bpVar = new bp(getSupportFragmentManager());
                 bpVar.B();
                 bpVar.C(R.id.content_frame, cls, bundle2);
@@ -77,7 +77,7 @@ public class FindMyDeviceSettingsChimeraActivity extends qgg implements kly {
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != 16908332) {
             return super.onOptionsItemSelected(menuItem);
@@ -86,13 +86,13 @@ public class FindMyDeviceSettingsChimeraActivity extends qgg implements kly {
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj, android.view.Window.Callback
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn, android.view.Window.Callback
     public final void onWindowFocusChanged(boolean z) {
         super.onWindowFocusChanged(z);
         if (this.j) {
             dg g = getSupportFragmentManager().g(R.id.content_frame);
-            if (z && (g instanceof ccxp)) {
-                ((ccxp) g).R();
+            if (z && (g instanceof cfgn)) {
+                ((cfgn) g).R();
             }
         }
     }

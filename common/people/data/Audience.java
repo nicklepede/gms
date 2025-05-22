@@ -5,19 +5,19 @@ import android.os.Parcelable;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.asca;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.auep;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class Audience extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new asca();
+    public static final Parcelable.Creator CREATOR = new auep();
     public final int a;
     public final List b;
     public final int c;
@@ -39,7 +39,7 @@ public final class Audience extends AbstractSafeParcelable implements ReflectedP
             return false;
         }
         Audience audience = (Audience) obj;
-        return this.a == audience.a && arwb.b(this.b, audience.b) && this.c == audience.c && this.e == audience.e;
+        return this.a == audience.a && atyq.b(this.b, audience.b) && this.c == audience.c && this.e == audience.e;
     }
 
     public final int hashCode() {
@@ -49,13 +49,13 @@ public final class Audience extends AbstractSafeParcelable implements ReflectedP
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.b;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.o(parcel, 2, this.c);
-        arxc.e(parcel, 3, this.d);
-        arxc.e(parcel, 4, this.e);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.o(parcel, 2, this.c);
+        atzr.e(parcel, 3, this.d);
+        atzr.e(parcel, 4, this.e);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
+        atzr.c(parcel, a);
     }
 
     public Audience(int i, List list, int i2, boolean z, boolean z2) {

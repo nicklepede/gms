@@ -1,26 +1,26 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.audi;
-import defpackage.fipp;
-import defpackage.fvbo;
+import defpackage.awhn;
+import defpackage.flfm;
+import defpackage.fxxm;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
 public final class CredentialExchangeFormat$EditableField {
     public final String a;
-    public final audi b;
+    public final awhn b;
     public final String c;
     public final String d;
     public final List e;
 
-    public CredentialExchangeFormat$EditableField(String str, audi audiVar, String str2, String str3, List list) {
-        fvbo.f(audiVar, "fieldType");
-        fvbo.f(str2, "value");
-        fvbo.f(list, "extensions");
+    public CredentialExchangeFormat$EditableField(String str, awhn awhnVar, String str2, String str3, List list) {
+        fxxm.f(awhnVar, "fieldType");
+        fxxm.f(str2, "value");
+        fxxm.f(list, "extensions");
         this.a = str;
-        this.b = audiVar;
+        this.b = awhnVar;
         this.c = str2;
         this.d = str3;
         this.e = list;
@@ -34,7 +34,7 @@ public final class CredentialExchangeFormat$EditableField {
             return false;
         }
         CredentialExchangeFormat$EditableField credentialExchangeFormat$EditableField = (CredentialExchangeFormat$EditableField) obj;
-        return fvbo.n(this.a, credentialExchangeFormat$EditableField.a) && this.b == credentialExchangeFormat$EditableField.b && fvbo.n(this.c, credentialExchangeFormat$EditableField.c) && fvbo.n(this.d, credentialExchangeFormat$EditableField.d) && fvbo.n(this.e, credentialExchangeFormat$EditableField.e);
+        return fxxm.n(this.a, credentialExchangeFormat$EditableField.a) && this.b == credentialExchangeFormat$EditableField.b && fxxm.n(this.c, credentialExchangeFormat$EditableField.c) && fxxm.n(this.d, credentialExchangeFormat$EditableField.d) && fxxm.n(this.e, credentialExchangeFormat$EditableField.e);
     }
 
     public final int hashCode() {
@@ -56,12 +56,12 @@ public final class CredentialExchangeFormat$EditableField {
         	at jadx.core.dex.visitors.InitCodeVariables.initCodeVars(InitCodeVariables.java:48)
         	at jadx.core.dex.visitors.InitCodeVariables.visit(InitCodeVariables.java:29)
         */
-    public /* synthetic */ CredentialExchangeFormat$EditableField(java.lang.String r7, defpackage.audi r8, java.lang.String r9, java.lang.String r10, java.util.List r11, int r12, kotlin.jvm.internal.DefaultConstructorMarker r13) {
+    public /* synthetic */ CredentialExchangeFormat$EditableField(java.lang.String r7, defpackage.awhn r8, java.lang.String r9, java.lang.String r10, java.util.List r11, int r12, kotlin.jvm.internal.DefaultConstructorMarker r13) {
         /*
             r6 = this;
             r13 = r12 & 16
             if (r13 == 0) goto L6
-            fuww r11 = defpackage.fuww.a
+            fxsu r11 = defpackage.fxsu.a
         L6:
             r5 = r11
             r11 = r12 & 8
@@ -89,6 +89,6 @@ public final class CredentialExchangeFormat$EditableField {
             r0.<init>(r1, r2, r3, r4, r5)
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.credential.manager.credentialexchange.CredentialExchangeFormat$EditableField.<init>(java.lang.String, audi, java.lang.String, java.lang.String, java.util.List, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.credential.manager.credentialexchange.CredentialExchangeFormat$EditableField.<init>(java.lang.String, awhn, java.lang.String, java.lang.String, java.util.List, int, kotlin.jvm.internal.DefaultConstructorMarker):void");
     }
 }

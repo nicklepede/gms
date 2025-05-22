@@ -2,17 +2,17 @@ package com.google.android.gms.drivingmode;
 
 import android.content.Intent;
 import android.util.Log;
-import defpackage.axqd;
-import defpackage.axqe;
+import defpackage.azud;
+import defpackage.azue;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class DrivingModeLocationSetupNotificationIntentOperation extends axqd {
-    @Override // defpackage.axqd, com.google.android.chimera.IntentOperation
+public class DrivingModeLocationSetupNotificationIntentOperation extends azud {
+    @Override // defpackage.azud, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         char c;
         Log.i("CAR.DRIVINGMODE", "DrivingModeNotificationIntentOperation onHandleIntent from location module");
-        axqe axqeVar = new axqe(getApplicationContext());
+        azue azueVar = new azue(getApplicationContext());
         intent.getAction();
         String action = intent.getAction();
         int hashCode = action.hashCode();
@@ -33,17 +33,17 @@ public class DrivingModeLocationSetupNotificationIntentOperation extends axqd {
             c = 65535;
         }
         if (c == 0) {
-            axqeVar.l();
+            azueVar.l();
             return;
         }
         if (c == 1) {
             Log.i("CAR.DRIVINGMODE", "Setting set up notification to not show again");
-            axqeVar.a.edit().putBoolean("do_not_show_notification_again", true).apply();
-            axqeVar.k();
+            azueVar.a.edit().putBoolean("do_not_show_notification_again", true).apply();
+            azueVar.k();
         } else if (c != 2) {
             Log.i("CAR.DRIVINGMODE", "Unknown action received in DrivingModeSetupNotificationIntentOperation:".concat(String.valueOf(intent.getAction())));
         } else {
-            axqeVar.k();
+            azueVar.k();
         }
     }
 }

@@ -8,38 +8,38 @@ import com.google.android.gms.R;
 import com.google.android.gms.feedback.LogOptions;
 import com.google.android.gms.feedback.ServiceDumpRequest;
 import com.google.android.gms.time.platformfeedback.PlatformFeedbackLaunchChimeraActivity;
-import defpackage.aqxo;
-import defpackage.bajh;
-import defpackage.bakn;
-import defpackage.balp;
-import defpackage.bqna;
-import defpackage.dfae;
-import defpackage.dgdb;
-import defpackage.dgde;
-import defpackage.duut;
-import defpackage.duuw;
-import defpackage.ejhf;
-import defpackage.fsnh;
-import defpackage.qfp;
+import defpackage.atad;
+import defpackage.bcnd;
+import defpackage.bcoj;
+import defpackage.bcpl;
+import defpackage.bsup;
+import defpackage.dhlk;
+import defpackage.diog;
+import defpackage.dioj;
+import defpackage.dxfp;
+import defpackage.dxfs;
+import defpackage.eluo;
+import defpackage.fvir;
+import defpackage.ryt;
 import j$.util.Objects;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.logging.Level;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class PlatformFeedbackLaunchChimeraActivity extends qfp {
-    private static final duut j = new duuw(PlatformFeedbackLaunchChimeraActivity.class);
+public final class PlatformFeedbackLaunchChimeraActivity extends ryt {
+    private static final dxfp j = new dxfs(PlatformFeedbackLaunchChimeraActivity.class);
     private static final String[] k = {"--feedback"};
     private boolean l;
-    private dgdb m;
+    private diog m;
 
     public PlatformFeedbackLaunchChimeraActivity() {
-        this(new dgdb() { // from class: dgdc
-            @Override // defpackage.dgdb
+        this(new diog() { // from class: dioh
+            @Override // defpackage.diog
             public final Object a(Context context) {
-                aqxd aqxdVar = bahh.a;
-                return new aqxo(context, (int[][]) null);
+                aszs aszsVar = bcld.a;
+                return new atad(context, (int[][]) null);
             }
         });
     }
@@ -58,86 +58,86 @@ public final class PlatformFeedbackLaunchChimeraActivity extends qfp {
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (!fsnh.c()) {
-            ((ejhf) ((ejhf) dgde.a.j()).ah(11389)).B("%s Platform Feedback feature is disabled", j);
+        if (!fvir.c()) {
+            ((eluo) ((eluo) dioj.a.j()).ai(11392)).B("%s Platform Feedback feature is disabled", j);
             a();
             return;
         }
         Intent intent = getIntent();
         if (intent == null) {
-            ((ejhf) ((ejhf) dgde.a.j()).ah(11388)).B("%s No intent found", j);
+            ((eluo) ((eluo) dioj.a.j()).ai(11391)).B("%s No intent found", j);
             a();
         } else if (Objects.equals(intent.getAction(), "com.google.android.gms.time.platformfeedback.LAUNCH_USER_FEEDBACK")) {
-            ((ejhf) dgde.a.f(Level.INFO).ah(11386)).x("Activity intent received. onCreate");
+            ((eluo) dioj.a.f(Level.INFO).ai(11389)).x("Activity intent received. onCreate");
         } else {
-            ((ejhf) ((ejhf) dgde.a.j()).ah(11387)).P("%s Unexpected action received %s", j, intent.getAction());
+            ((eluo) ((eluo) dioj.a.j()).ai(11390)).P("%s Unexpected action received %s", j, intent.getAction());
             a();
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        if (!this.l && fsnh.c()) {
-            Account[] p = bqna.b(this).p("com.google");
+        if (!this.l && fvir.c()) {
+            Account[] p = bsup.b(this).p("com.google");
             String str = null;
             if (p != null && p.length != 0) {
                 str = p[0].name;
             }
             String str2 = (String) Objects.requireNonNullElse(str, "anonymous");
             Object a = this.m.a(this);
-            bakn baknVar = new bakn();
-            baknVar.a = "*";
-            baknVar.c = true;
-            baknVar.b = true;
-            baknVar.b();
-            balp balpVar = new balp();
-            balpVar.a = "time_detector";
-            balpVar.b = "time_detector";
+            bcoj bcojVar = new bcoj();
+            bcojVar.a = "*";
+            bcojVar.c = true;
+            bcojVar.b = true;
+            bcojVar.b();
+            bcpl bcplVar = new bcpl();
+            bcplVar.a = "time_detector";
+            bcplVar.b = "time_detector";
             String[] strArr = k;
-            balpVar.c = strArr;
-            balpVar.b();
-            balpVar.c();
-            balp balpVar2 = new balp();
-            balpVar2.a = "time_zone_detector";
-            balpVar2.b = "time_zone_detector";
-            balpVar2.c = strArr;
-            balpVar2.b();
-            balpVar2.c();
-            balp balpVar3 = new balp();
-            balpVar3.a = "com.android.phone/.TelephonyDebugService";
-            balpVar3.b = "activity";
-            balpVar3.c = b("com.android.phone/.TelephonyDebugService");
-            balpVar3.b();
-            balpVar3.c();
-            balp balpVar4 = new balp();
-            balpVar4.a = "GeoTimeZoneService";
-            balpVar4.b = "activity";
-            balpVar4.c = b("GeoTimeZoneService");
-            balpVar4.b();
-            balpVar4.c();
-            baknVar.d = new ServiceDumpRequest[]{balpVar.a(), balpVar2.a(), balpVar3.a(), balpVar4.a()};
-            LogOptions a2 = baknVar.a();
+            bcplVar.c = strArr;
+            bcplVar.b();
+            bcplVar.c();
+            bcpl bcplVar2 = new bcpl();
+            bcplVar2.a = "time_zone_detector";
+            bcplVar2.b = "time_zone_detector";
+            bcplVar2.c = strArr;
+            bcplVar2.b();
+            bcplVar2.c();
+            bcpl bcplVar3 = new bcpl();
+            bcplVar3.a = "com.android.phone/.TelephonyDebugService";
+            bcplVar3.b = "activity";
+            bcplVar3.c = b("com.android.phone/.TelephonyDebugService");
+            bcplVar3.b();
+            bcplVar3.c();
+            bcpl bcplVar4 = new bcpl();
+            bcplVar4.a = "GeoTimeZoneService";
+            bcplVar4.b = "activity";
+            bcplVar4.c = b("GeoTimeZoneService");
+            bcplVar4.b();
+            bcplVar4.c();
+            bcojVar.d = new ServiceDumpRequest[]{bcplVar.a(), bcplVar2.a(), bcplVar3.a(), bcplVar4.a()};
+            LogOptions a2 = bcojVar.a();
             String string = getString(R.string.platform_feedback_description);
-            bajh bajhVar = new bajh(this);
-            bajhVar.g = a2;
-            bajhVar.d = string;
-            bajhVar.e = "com.google.android.gms.time.PLATFORM_FEEDBACK";
-            bajhVar.b = str2;
-            ((aqxo) a).aa(bajhVar.a()).p(this, new dfae() { // from class: dgdd
-                @Override // defpackage.dfae
-                public final void hr(dfaq dfaqVar) {
+            bcnd bcndVar = new bcnd(this);
+            bcndVar.g = a2;
+            bcndVar.d = string;
+            bcndVar.e = "com.google.android.gms.time.PLATFORM_FEEDBACK";
+            bcndVar.b = str2;
+            ((atad) a).aa(bcndVar.a()).p(this, new dhlk() { // from class: dioi
+                @Override // defpackage.dhlk
+                public final void hH(dhlw dhlwVar) {
                     PlatformFeedbackLaunchChimeraActivity.this.a();
                 }
             });
         }
     }
 
-    private PlatformFeedbackLaunchChimeraActivity(dgdb dgdbVar) {
+    private PlatformFeedbackLaunchChimeraActivity(diog diogVar) {
         this.l = false;
-        this.m = (dgdb) Objects.requireNonNull(dgdbVar);
+        this.m = (diog) Objects.requireNonNull(diogVar);
     }
 }

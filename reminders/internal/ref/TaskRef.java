@@ -10,12 +10,12 @@ import com.google.android.gms.reminders.model.RecurrenceInfo;
 import com.google.android.gms.reminders.model.Task;
 import com.google.android.gms.reminders.model.TaskEntity;
 import com.google.android.gms.reminders.model.TaskId;
-import defpackage.cxeb;
-import defpackage.cxev;
+import defpackage.cznx;
+import defpackage.czor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class TaskRef extends cxeb implements Task {
+public class TaskRef extends cznx implements Task {
     private boolean f;
     private TaskIdRef g;
     private boolean h;
@@ -175,7 +175,7 @@ public class TaskRef extends cxeb implements Task {
         return this.m;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof Task)) {
             return false;
@@ -237,7 +237,7 @@ public class TaskRef extends cxeb implements Task {
         return this.g;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return TaskEntity.b(this);
     }
@@ -257,13 +257,13 @@ public class TaskRef extends cxeb implements Task {
         return Boolean.valueOf(t(p("pinned")));
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new TaskEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxev.a(new TaskEntity(this), parcel, i);
+        czor.a(new TaskEntity(this), parcel, i);
     }
 }

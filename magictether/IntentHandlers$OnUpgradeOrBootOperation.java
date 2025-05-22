@@ -2,20 +2,20 @@ package com.google.android.gms.magictether;
 
 import android.content.Context;
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.cbkz;
-import defpackage.cbla;
-import defpackage.cbpu;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.cdtr;
+import defpackage.cdts;
+import defpackage.cdym;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class IntentHandlers$OnUpgradeOrBootOperation extends anya {
+public class IntentHandlers$OnUpgradeOrBootOperation extends apzs {
     private static final String[] a = {"com.google.android.gms.magictether.host.FirstTimeSetupDialogActivity", "com.google.android.gms.magictether.host.ProvisioningFailedDialogActivity", "com.google.android.gms.magictether.host.TetherListenerService", "com.google.android.gms.magictether.logging.DailyMetricsLoggerService", "com.google.android.gms.magictether.wifisync.WifiSyncService"};
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        if (cbpu.a(this)) {
+        if (cdym.a(this)) {
             return;
         }
         String[] strArr = a;
@@ -24,11 +24,11 @@ public class IntentHandlers$OnUpgradeOrBootOperation extends anya {
             if (i2 >= 5) {
                 break;
             }
-            asng.H(this, strArr[i2], true);
+            aura.H(this, strArr[i2], true);
             i2++;
         }
         Context baseContext = getBaseContext();
-        cbkz.a(baseContext, (i & 2) > 0);
-        cbla.a(baseContext, false);
+        cdtr.a(baseContext, (i & 2) > 0);
+        cdts.a(baseContext, false);
     }
 }

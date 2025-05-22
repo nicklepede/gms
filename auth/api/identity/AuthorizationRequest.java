@@ -6,17 +6,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zcg;
+import defpackage.abca;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AuthorizationRequest extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new zcg();
+    public static final Parcelable.Creator CREATOR = new abca();
     public final List a;
     public final String b;
     public final boolean c;
@@ -33,7 +33,7 @@ public class AuthorizationRequest extends AbstractSafeParcelable implements Refl
         if (list != null && !list.isEmpty()) {
             z5 = true;
         }
-        arwm.c(z5, "requestedScopes cannot be null or empty");
+        atzb.c(z5, "requestedScopes cannot be null or empty");
         this.a = list;
         this.b = str;
         this.c = z;
@@ -69,12 +69,12 @@ public class AuthorizationRequest extends AbstractSafeParcelable implements Refl
                         return false;
                     }
                     for (String str : bundle2.keySet()) {
-                        if (!arwb.b(bundle2.getString(str), bundle.getString(str))) {
+                        if (!atyq.b(bundle2.getString(str), bundle.getString(str))) {
                             return false;
                         }
                     }
                 }
-                if (this.c == authorizationRequest.c && this.h == authorizationRequest.h && this.d == authorizationRequest.d && this.j == authorizationRequest.j && arwb.b(this.b, authorizationRequest.b) && arwb.b(this.e, authorizationRequest.e) && arwb.b(this.f, authorizationRequest.f) && arwb.b(this.g, authorizationRequest.g)) {
+                if (this.c == authorizationRequest.c && this.h == authorizationRequest.h && this.d == authorizationRequest.d && this.j == authorizationRequest.j && atyq.b(this.b, authorizationRequest.b) && atyq.b(this.e, authorizationRequest.e) && atyq.b(this.f, authorizationRequest.f) && atyq.b(this.g, authorizationRequest.g)) {
                     return true;
                 }
             }
@@ -90,17 +90,17 @@ public class AuthorizationRequest extends AbstractSafeParcelable implements Refl
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.e(parcel, 8, this.h);
-        arxc.g(parcel, 9, this.i, false);
-        arxc.e(parcel, 10, this.j);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.e(parcel, 8, this.h);
+        atzr.g(parcel, 9, this.i, false);
+        atzr.e(parcel, 10, this.j);
+        atzr.c(parcel, a);
     }
 }

@@ -12,66 +12,66 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import com.google.android.chimera.ContentProvider;
 import defpackage.a;
-import defpackage.arwm;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asnv;
-import defpackage.asom;
-import defpackage.asot;
-import defpackage.boem;
-import defpackage.boeo;
-import defpackage.boet;
-import defpackage.boeu;
-import defpackage.boev;
-import defpackage.boex;
-import defpackage.bofc;
-import defpackage.boff;
-import defpackage.bogm;
-import defpackage.bogn;
-import defpackage.bogo;
-import defpackage.bogz;
-import defpackage.boha;
-import defpackage.bohb;
-import defpackage.bohc;
-import defpackage.bohd;
-import defpackage.bohe;
-import defpackage.bohf;
-import defpackage.bohg;
-import defpackage.bohh;
-import defpackage.bohi;
-import defpackage.bohj;
-import defpackage.bohk;
-import defpackage.bohl;
-import defpackage.bohm;
-import defpackage.bohn;
-import defpackage.boho;
-import defpackage.bohp;
-import defpackage.bohq;
-import defpackage.bohr;
-import defpackage.boht;
-import defpackage.bohu;
-import defpackage.bohv;
-import defpackage.bohw;
-import defpackage.bohx;
-import defpackage.bohz;
-import defpackage.boib;
-import defpackage.boif;
-import defpackage.bois;
-import defpackage.bojn;
-import defpackage.bokc;
-import defpackage.bokd;
-import defpackage.boke;
-import defpackage.bokf;
-import defpackage.bokh;
-import defpackage.bokk;
-import defpackage.bokt;
-import defpackage.bry;
-import defpackage.dmko;
-import defpackage.ejhf;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
+import defpackage.atzb;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.aurp;
+import defpackage.ausg;
+import defpackage.ausn;
+import defpackage.bqmc;
+import defpackage.bqme;
+import defpackage.bqmj;
+import defpackage.bqmk;
+import defpackage.bqml;
+import defpackage.bqmn;
+import defpackage.bqms;
+import defpackage.bqmv;
+import defpackage.bqoc;
+import defpackage.bqod;
+import defpackage.bqoe;
+import defpackage.bqop;
+import defpackage.bqoq;
+import defpackage.bqor;
+import defpackage.bqos;
+import defpackage.bqot;
+import defpackage.bqou;
+import defpackage.bqov;
+import defpackage.bqow;
+import defpackage.bqox;
+import defpackage.bqoy;
+import defpackage.bqoz;
+import defpackage.bqpa;
+import defpackage.bqpb;
+import defpackage.bqpc;
+import defpackage.bqpd;
+import defpackage.bqpe;
+import defpackage.bqpf;
+import defpackage.bqpg;
+import defpackage.bqph;
+import defpackage.bqpj;
+import defpackage.bqpk;
+import defpackage.bqpl;
+import defpackage.bqpm;
+import defpackage.bqpn;
+import defpackage.bqpp;
+import defpackage.bqpr;
+import defpackage.bqpv;
+import defpackage.bqqi;
+import defpackage.bqrd;
+import defpackage.bqrs;
+import defpackage.bqrt;
+import defpackage.bqru;
+import defpackage.bqrv;
+import defpackage.bqrx;
+import defpackage.bqsa;
+import defpackage.bqsj;
+import defpackage.bsj;
+import defpackage.dowc;
+import defpackage.eluo;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
 import j$.util.Objects;
 import java.io.FileDescriptor;
 import java.io.IOException;
@@ -82,19 +82,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class InstantAppsChimeraContentProvider extends ContentProvider {
-    private static final asot e = asot.b("IAContentProvider", asej.INSTANT_APPS);
-    private static final int f = asng.b;
+    private static final ausn e = ausn.b("IAContentProvider", auid.INSTANT_APPS);
+    private static final int f = aura.b;
     Map a;
-    public boeo b;
-    bofc c;
-    public bojn d;
-    private boex g;
-    private bogz h;
+    public bqme b;
+    bqms c;
+    public bqrd d;
+    private bqmn g;
+    private bqop h;
 
-    private final boet b() {
+    private final bqmj b() {
         PackageInfo b;
         int callingUid = Binder.getCallingUid();
         String d = this.h.d(callingUid);
@@ -117,65 +117,65 @@ public class InstantAppsChimeraContentProvider extends ContentProvider {
         } else {
             z = true;
         }
-        return new boet(callingUid, b, z);
+        return new bqmj(callingUid, b, z);
     }
 
     private final void c() {
         if (this.a == null) {
-            boff a = boff.a(getContext());
+            bqmv a = bqmv.a(getContext());
             ArrayList arrayList = new ArrayList();
-            asnv asnvVar = a.b;
-            bokh bokhVar = a.i;
-            bokk bokkVar = a.j;
-            boeo boeoVar = a.k;
-            bokf bokfVar = new bokf(bokhVar, bokkVar, boeoVar, boev.a());
+            aurp aurpVar = a.b;
+            bqrx bqrxVar = a.i;
+            bqsa bqsaVar = a.j;
+            bqme bqmeVar = a.k;
+            bqrv bqrvVar = new bqrv(bqrxVar, bqsaVar, bqmeVar, bqml.a());
             ArrayList arrayList2 = new ArrayList(2);
-            arrayList2.add(new bokd(bokfVar));
-            arrayList2.add(new boke(bokfVar));
+            arrayList2.add(new bqrt(bqrvVar));
+            arrayList2.add(new bqru(bqrvVar));
             arrayList.addAll(arrayList2);
             Context context = getContext();
-            bogz bogzVar = a.h;
-            bois boisVar = a.l;
-            bofc bofcVar = a.o;
-            bohz bohzVar = new bohz(context, bogzVar, boisVar, bofcVar, a.u);
+            bqop bqopVar = a.h;
+            bqqi bqqiVar = a.l;
+            bqms bqmsVar = a.o;
+            bqpp bqppVar = new bqpp(context, bqopVar, bqqiVar, bqmsVar, a.u);
             ArrayList arrayList3 = new ArrayList();
-            arrayList3.add(new bohb(bohzVar));
-            arrayList3.add(new bohc(bohzVar));
-            arrayList3.add(new bohd(bohzVar));
-            arrayList3.add(new bohe(bohzVar));
-            arrayList3.add(new bohl(bohzVar));
-            arrayList3.add(new bohp(bohzVar));
-            arrayList3.add(new bohf(bohzVar));
-            arrayList3.add(new bohh(bohzVar));
-            arrayList3.add(new bohg(bohzVar));
-            arrayList3.add(new bohm(bohzVar));
-            arrayList3.add(new boho(bohzVar));
-            arrayList3.add(new bohq(bohzVar));
-            arrayList3.add(new bohr(bohzVar));
-            arrayList3.add(new bohv(bohzVar));
-            arrayList3.add(new bohw(bohzVar));
-            arrayList3.add(new bohx(bohzVar));
-            arrayList3.add(new bohi(bohzVar));
-            arrayList3.add(new bohn(bohzVar));
-            arrayList3.add(new bohu(bohzVar));
-            arrayList3.add(new bohj(bohzVar));
-            arrayList3.add(new bohk(bohzVar));
-            arrayList3.add(new boht(bohzVar));
+            arrayList3.add(new bqor(bqppVar));
+            arrayList3.add(new bqos(bqppVar));
+            arrayList3.add(new bqot(bqppVar));
+            arrayList3.add(new bqou(bqppVar));
+            arrayList3.add(new bqpb(bqppVar));
+            arrayList3.add(new bqpf(bqppVar));
+            arrayList3.add(new bqov(bqppVar));
+            arrayList3.add(new bqox(bqppVar));
+            arrayList3.add(new bqow(bqppVar));
+            arrayList3.add(new bqpc(bqppVar));
+            arrayList3.add(new bqpe(bqppVar));
+            arrayList3.add(new bqpg(bqppVar));
+            arrayList3.add(new bqph(bqppVar));
+            arrayList3.add(new bqpl(bqppVar));
+            arrayList3.add(new bqpm(bqppVar));
+            arrayList3.add(new bqpn(bqppVar));
+            arrayList3.add(new bqoy(bqppVar));
+            arrayList3.add(new bqpd(bqppVar));
+            arrayList3.add(new bqpk(bqppVar));
+            arrayList3.add(new bqoz(bqppVar));
+            arrayList3.add(new bqpa(bqppVar));
+            arrayList3.add(new bqpj(bqppVar));
             arrayList.addAll(arrayList3);
-            arrayList.add(new bokc(this));
-            bry bryVar = new bry(arrayList.size());
+            arrayList.add(new bqrs(this));
+            bsj bsjVar = new bsj(arrayList.size());
             int size = arrayList.size();
             for (int i = 0; i < size; i++) {
-                boeu boeuVar = (boeu) arrayList.get(i);
-                String str = boeuVar.a;
-                arwm.c(((boeu) bryVar.put(str, boeuVar)) == null, "Multiple provider methods found for ".concat(str));
+                bqmk bqmkVar = (bqmk) arrayList.get(i);
+                String str = bqmkVar.a;
+                atzb.c(((bqmk) bsjVar.put(str, bqmkVar)) == null, "Multiple provider methods found for ".concat(str));
             }
-            this.a = bryVar;
-            this.b = boeoVar;
+            this.a = bsjVar;
+            this.b = bqmeVar;
             this.g = a.p;
-            this.h = bogzVar;
+            this.h = bqopVar;
             this.d = a.g;
-            this.c = bofcVar;
+            this.c = bqmsVar;
         }
     }
 
@@ -186,27 +186,27 @@ public class InstantAppsChimeraContentProvider extends ContentProvider {
     @Override // com.google.android.chimera.ContentProvider
     public final Bundle call(String str, String str2, Bundle bundle) {
         try {
-            if (!boff.a(getContext()).r.a()) {
+            if (!bqmv.a(getContext()).r.a()) {
                 return null;
             }
             c();
-            boeu boeuVar = (boeu) this.a.get(str);
-            if (boeuVar == null) {
-                ((ejhf) ((ejhf) e.i()).ah(5275)).B("Unrecognized method: %s", str);
+            bqmk bqmkVar = (bqmk) this.a.get(str);
+            if (bqmkVar == null) {
+                ((eluo) ((eluo) e.i()).ai(5288)).B("Unrecognized method: %s", str);
                 return null;
             }
-            boet b = b();
+            bqmj b = b();
             PackageInfo packageInfo = b.b;
             this.b.e(packageInfo.packageName, packageInfo.versionCode);
-            boem b2 = this.b.b();
-            Bundle a = boeuVar.a(b, str2, bundle);
+            bqmc b2 = this.b.b();
+            Bundle a = bqmkVar.a(b, str2, bundle);
             b2.b(a.x(str, "IAContentProvider."));
             return a;
         } catch (RuntimeException e2) {
-            ((ejhf) ((ejhf) ((ejhf) e.i()).s(e2)).ah((char) 5276)).x("Exception: ");
-            boeo boeoVar = this.b;
-            if (boeoVar != null) {
-                boeoVar.b().b("IAContentProvider.Failure.".concat(String.valueOf(str)));
+            ((eluo) ((eluo) ((eluo) e.i()).s(e2)).ai((char) 5289)).x("Exception: ");
+            bqme bqmeVar = this.b;
+            if (bqmeVar != null) {
+                bqmeVar.b().b("IAContentProvider.Failure.".concat(String.valueOf(str)));
             }
             if (e2 instanceof SecurityException) {
                 throw e2;
@@ -223,69 +223,69 @@ public class InstantAppsChimeraContentProvider extends ContentProvider {
 
     @Override // com.google.android.chimera.ContentProvider
     public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        bogo bogoVar;
-        bogn c;
-        boff a = boff.a(getContext());
+        bqod c;
+        bqoc b;
+        bqmv a = bqmv.a(getContext());
         if (!a.r.a()) {
             printWriter.println("Disabled by KillSwitch");
             return;
         }
-        printWriter.printf("Instant Apps enabled: %s\n", Boolean.valueOf(dmko.a()));
-        bokt boktVar = a.c;
-        printWriter.printf("Accounts: %s\n", Arrays.toString(boktVar.e()));
-        printWriter.printf("Opt-in account: %s\n", boktVar.a());
+        printWriter.printf("Instant Apps enabled: %s\n", Boolean.valueOf(dowc.a()));
+        bqsj bqsjVar = a.c;
+        printWriter.printf("Accounts: %s\n", Arrays.toString(bqsjVar.e()));
+        printWriter.printf("Opt-in account: %s\n", bqsjVar.a());
         printWriter.printf("Opt-in state: %s\n", Integer.valueOf(a.d.a()));
         printWriter.println("Event Log:");
-        asom asomVar = new asom(this.g);
-        while (asomVar.hasNext()) {
-            printWriter.println(asomVar.next());
+        ausg ausgVar = new ausg(this.g);
+        while (ausgVar.hasNext()) {
+            printWriter.println(ausgVar.next());
         }
         a.g.i(printWriter);
-        bois boisVar = a.l;
+        bqqi bqqiVar = a.l;
         printWriter.println("\n=== AppOverrides dump ===");
         try {
-            boisVar.i();
+            bqqiVar.i();
             try {
-                bogoVar = boisVar.d;
-                c = bogoVar.c();
-            } catch (fedk e2) {
+                bqoe bqoeVar = bqqiVar.d;
+                c = bqoeVar.c();
+                try {
+                    b = bqoeVar.b(c);
+                } finally {
+                }
+            } catch (fgsd e2) {
                 printWriter.println("AppOverrides dump exception: ".concat(e2.toString()));
             }
             try {
-                bogm b = bogoVar.b(c);
-                try {
-                    b.b();
-                    while (b.c()) {
-                        String r = bois.r(b.d());
-                        if (r != null) {
-                            byte[] e3 = b.e();
-                            febw febwVar = febw.a;
-                            feep feepVar = feep.a;
-                            fecp y = fecp.y(boib.a, e3, 0, e3.length, febw.a);
-                            fecp.M(y);
-                            long currentTimeMillis = System.currentTimeMillis();
-                            boif boifVar = ((boib) y).c;
-                            if (boifVar == null) {
-                                boifVar = boif.a;
-                            }
-                            long j = boifVar.b;
-                            long j2 = j - currentTimeMillis;
-                            long minutes = TimeUnit.MILLISECONDS.toMinutes(j2);
-                            long seconds = TimeUnit.MILLISECONDS.toSeconds(j2) % 60;
-                            printWriter.printf("Package: %s\n", r);
-                            printWriter.printf("\tExpiration (millis): %d\n", Long.valueOf(j));
-                            printWriter.printf("\tSnooze remaining: %dm%ds\n", Long.valueOf(minutes), Long.valueOf(seconds));
-                            if (j == Long.MAX_VALUE) {
-                                printWriter.printf("\tThis package is permanently snoozed\n", new Object[0]);
-                            }
+                b.b();
+                while (b.c()) {
+                    String r = bqqi.r(b.d());
+                    if (r != null) {
+                        byte[] e3 = b.e();
+                        fgqp fgqpVar = fgqp.a;
+                        fgti fgtiVar = fgti.a;
+                        fgri y = fgri.y(bqpr.a, e3, 0, e3.length, fgqp.a);
+                        fgri.M(y);
+                        long currentTimeMillis = System.currentTimeMillis();
+                        bqpv bqpvVar = ((bqpr) y).c;
+                        if (bqpvVar == null) {
+                            bqpvVar = bqpv.a;
                         }
-                        b.a();
+                        long j = bqpvVar.b;
+                        long j2 = j - currentTimeMillis;
+                        long minutes = TimeUnit.MILLISECONDS.toMinutes(j2);
+                        long seconds = TimeUnit.MILLISECONDS.toSeconds(j2) % 60;
+                        printWriter.printf("Package: %s\n", r);
+                        printWriter.printf("\tExpiration (millis): %d\n", Long.valueOf(j));
+                        printWriter.printf("\tSnooze remaining: %dm%ds\n", Long.valueOf(minutes), Long.valueOf(seconds));
+                        if (j == Long.MAX_VALUE) {
+                            printWriter.printf("\tThis package is permanently snoozed\n", new Object[0]);
+                        }
                     }
-                    b.close();
-                    c.close();
-                    printWriter.println("=== End of AppOverrides dump ===");
-                } finally {
+                    b.a();
                 }
+                b.close();
+                c.close();
+                printWriter.println("=== End of AppOverrides dump ===");
             } finally {
             }
         } catch (IOException e4) {
@@ -305,7 +305,7 @@ public class InstantAppsChimeraContentProvider extends ContentProvider {
 
     @Override // com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
-        if (!boff.a(getContext()).r.a()) {
+        if (!bqmv.a(getContext()).r.a()) {
             return false;
         }
         c();
@@ -314,48 +314,48 @@ public class InstantAppsChimeraContentProvider extends ContentProvider {
 
     @Override // com.google.android.chimera.ContentProvider
     public final Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
-        bogn c;
-        bogm b;
+        bqod c;
+        bqoc b;
         try {
-            if (!boff.a(getContext()).r.a()) {
+            if (!bqmv.a(getContext()).r.a()) {
                 return null;
             }
             c();
             List<String> pathSegments = uri.getPathSegments();
             if (pathSegments.size() != 1) {
-                ((ejhf) ((ejhf) e.i()).ah(5279)).B("Invalid URI for query: %s", uri);
+                ((eluo) ((eluo) e.i()).ai(5292)).B("Invalid URI for query: %s", uri);
                 return null;
             }
             String str3 = pathSegments.get(0);
             if (!Objects.equals(str3, "snoozedApps")) {
-                ((ejhf) ((ejhf) e.i()).ah(5277)).B("Unrecognized query path: %s", uri);
+                ((eluo) ((eluo) e.i()).ai(5290)).B("Unrecognized query path: %s", uri);
                 return null;
             }
-            boet b2 = b();
+            bqmj b2 = b();
             if (!a(b2.a)) {
                 return null;
             }
             PackageInfo packageInfo = b2.b;
             this.b.e(packageInfo.packageName, packageInfo.versionCode);
-            boem b3 = this.b.b();
-            bogz bogzVar = this.h;
+            bqmc b3 = this.b.b();
+            bqop bqopVar = this.h;
             MatrixCursor matrixCursor = new MatrixCursor(new String[]{"packageName", "appOverrides"});
-            bois boisVar = ((boha) bogzVar).b;
+            bqqi bqqiVar = ((bqoq) bqopVar).b;
             try {
-                boisVar.i();
-                bogo bogoVar = boisVar.d;
-                c = bogoVar.c();
+                bqqiVar.i();
+                bqoe bqoeVar = bqqiVar.d;
+                c = bqoeVar.c();
                 try {
-                    b = bogoVar.b(c);
+                    b = bqoeVar.b(c);
                 } finally {
                 }
             } catch (IOException e2) {
-                ((ejhf) ((ejhf) bois.a.i()).s(e2)).x("QuerySnoozedApps exception while accessing levelDb");
+                ((eluo) ((eluo) bqqi.a.i()).s(e2)).x("QuerySnoozedApps exception while accessing levelDb");
             }
             try {
                 b.b();
                 while (b.c()) {
-                    String r = bois.r(b.d());
+                    String r = bqqi.r(b.d());
                     if (r != null) {
                         matrixCursor.newRow().add("packageName", r).add("appOverrides", b.e());
                     }
@@ -368,10 +368,10 @@ public class InstantAppsChimeraContentProvider extends ContentProvider {
             } finally {
             }
         } catch (RuntimeException e3) {
-            ((ejhf) ((ejhf) ((ejhf) e.i()).s(e3)).ah((char) 5278)).x("Exception: ");
-            boeo boeoVar = this.b;
-            if (boeoVar != null) {
-                boeoVar.b().b("IAContentProvider.Failure.".concat(String.valueOf(String.valueOf(uri))));
+            ((eluo) ((eluo) ((eluo) e.i()).s(e3)).ai((char) 5291)).x("Exception: ");
+            bqme bqmeVar = this.b;
+            if (bqmeVar != null) {
+                bqmeVar.b().b("IAContentProvider.Failure.".concat(String.valueOf(String.valueOf(uri))));
             }
             if (e3 instanceof SecurityException) {
                 throw e3;

@@ -1,73 +1,73 @@
 package com.google.android.gms.time.trustedtime.intentops;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asot;
-import defpackage.dghq;
-import defpackage.dgii;
-import defpackage.dgiy;
-import defpackage.dgja;
-import defpackage.dgjb;
-import defpackage.dgjd;
-import defpackage.dupg;
-import defpackage.duut;
-import defpackage.duuw;
-import defpackage.ejhf;
-import defpackage.fsnk;
+import defpackage.apzs;
+import defpackage.ausn;
+import defpackage.disv;
+import defpackage.ditn;
+import defpackage.diud;
+import defpackage.diuf;
+import defpackage.diug;
+import defpackage.diui;
+import defpackage.dwzt;
+import defpackage.dxfp;
+import defpackage.dxfs;
+import defpackage.eluo;
+import defpackage.fviu;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class PersistentSingleUserModuleInitIntentOperation extends anya {
-    private static final duut a = new duuw("PersistentSingleUserModuleInitIntentOperation");
-    private final dgja b;
-    private final dgja c;
+public final class PersistentSingleUserModuleInitIntentOperation extends apzs {
+    private static final dxfp a = new dxfs("PersistentSingleUserModuleInitIntentOperation");
+    private final diuf b;
+    private final diuf c;
 
     public PersistentSingleUserModuleInitIntentOperation() {
-        this(dgjd.a, dgii.b);
+        this(diui.a, ditn.b);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        asot asotVar = dgiy.a;
+        ausn ausnVar = diud.a;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        if (fsnk.a.a().o()) {
-            ((ejhf) ((ejhf) dgiy.a.h()).ah((char) 11414)).B("Current Configuration %s", dghq.a());
+        if (fviu.a.lK().o()) {
+            ((eluo) ((eluo) diud.a.h()).ai((char) 11417)).B("Current Configuration %s", disv.a());
         }
         if (!((Boolean) this.b.b()).booleanValue()) {
-            asot asotVar = dgiy.a;
+            ausn ausnVar = diud.a;
             return;
         }
-        if (!dgjb.b()) {
-            ((ejhf) ((ejhf) dgiy.a.j()).ah(11412)).B("[%s] TrustedTime is not enabled, ignoring module init.", a);
+        if (!diug.b()) {
+            ((eluo) ((eluo) diud.a.j()).ai(11415)).B("[%s] TrustedTime is not enabled, ignoring module init.", a);
             return;
         }
         boolean z = (i & 2) != 0;
         int i2 = i & 4;
         int i3 = i & 8;
         if (!z && i2 == 0 && i3 == 0) {
-            ((ejhf) ((ejhf) dgiy.a.h()).ah((char) 11411)).x("Skip initializing when nothing is updated.");
+            ((eluo) ((eluo) diud.a.h()).ai((char) 11414)).x("Skip initializing when nothing is updated.");
         } else {
-            ((ejhf) ((ejhf) dgiy.a.h()).ah((char) 11410)).x("Initializing single user components.");
-            ((dgii) this.c.b()).c(new dupg(true != z ? "ModuleOrContainerUpdated" : "BootComplete"));
+            ((eluo) ((eluo) diud.a.h()).ai((char) 11413)).x("Initializing single user components.");
+            ((ditn) this.c.b()).c(new dwzt(true != z ? "ModuleOrContainerUpdated" : "BootComplete"));
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
-        asot asotVar = dgiy.a;
+        ausn ausnVar = diud.a;
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void d(Intent intent) {
-        asot asotVar = dgiy.a;
+        ausn ausnVar = diud.a;
     }
 
-    public PersistentSingleUserModuleInitIntentOperation(dgja dgjaVar, dgja dgjaVar2) {
-        this.b = (dgja) Objects.requireNonNull(dgjaVar);
-        this.c = (dgja) Objects.requireNonNull(dgjaVar2);
+    public PersistentSingleUserModuleInitIntentOperation(diuf diufVar, diuf diufVar2) {
+        this.b = (diuf) Objects.requireNonNull(diufVar);
+        this.c = (diuf) Objects.requireNonNull(diufVar2);
     }
 }

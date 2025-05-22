@@ -17,14 +17,14 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import com.google.android.gms.ads.internal.util.am;
 import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
-import defpackage.lth;
-import defpackage.luc;
+import defpackage.nlp;
+import defpackage.nmk;
 import java.util.HashMap;
 import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class x extends WebView implements DownloadListener, ViewTreeObserver.OnGlobalLayoutListener, i {
     public static final /* synthetic */ int h = 0;
@@ -168,7 +168,7 @@ public final class x extends WebView implements DownloadListener, ViewTreeObserv
         }
         com.google.android.gms.ads.internal.c.h().a();
         this.m = true;
-        if (!((Boolean) com.google.android.gms.ads.internal.config.p.bu.g()).booleanValue()) {
+        if (!((Boolean) com.google.android.gms.ads.internal.config.p.bv.g()).booleanValue()) {
             k();
             return;
         }
@@ -196,7 +196,7 @@ public final class x extends WebView implements DownloadListener, ViewTreeObserv
             }
             return;
         }
-        if (!((Boolean) com.google.android.gms.ads.internal.config.p.bv.g()).booleanValue() || Looper.getMainLooper().getThread() == Thread.currentThread()) {
+        if (!((Boolean) com.google.android.gms.ads.internal.config.p.bw.g()).booleanValue() || Looper.getMainLooper().getThread() == Thread.currentThread()) {
             super.evaluateJavascript(str, valueCallback);
         } else {
             com.google.android.gms.ads.internal.util.future.e.c.submit(new Runnable() { // from class: com.google.android.gms.ads.internal.webview.s
@@ -211,11 +211,6 @@ public final class x extends WebView implements DownloadListener, ViewTreeObserv
     @Override // com.google.android.gms.ads.internal.webview.i
     public final Activity f() {
         return this.i.a;
-    }
-
-    @Override // com.google.android.gms.ads.internal.js.l
-    public final void fW(String str) {
-        throw null;
     }
 
     protected final void finalize() {
@@ -235,6 +230,11 @@ public final class x extends WebView implements DownloadListener, ViewTreeObserv
     @Override // com.google.android.gms.ads.internal.webview.i
     public final Context g() {
         return this.i.c;
+    }
+
+    @Override // com.google.android.gms.ads.internal.js.l
+    public final void gl(String str) {
+        throw null;
     }
 
     @Override // com.google.android.gms.ads.internal.webview.i
@@ -361,11 +361,11 @@ public final class x extends WebView implements DownloadListener, ViewTreeObserv
         try {
             Intent intent = new Intent("android.intent.action.VIEW");
             intent.setDataAndType(Uri.parse(str), str4);
-            if (((Boolean) com.google.android.gms.ads.internal.config.p.by.g()).booleanValue() && getContext() != null) {
+            if (((Boolean) com.google.android.gms.ads.internal.config.p.bz.g()).booleanValue() && getContext() != null) {
                 intent.setPackage(getContext().getPackageName());
             }
             com.google.android.gms.ads.internal.c.e();
-            com.google.android.gms.ads.internal.util.m.r(getContext(), intent);
+            com.google.android.gms.ads.internal.util.m.s(getContext(), intent);
         } catch (ActivityNotFoundException e) {
             String i = defpackage.a.i(str4, str, "Couldn't find an Activity to view url/mimetype: ", " / ");
             int i2 = com.google.android.gms.ads.internal.util.c.a;
@@ -427,11 +427,11 @@ public final class x extends WebView implements DownloadListener, ViewTreeObserv
             i2 = j2;
         } else {
             com.google.android.gms.ads.internal.c.e();
-            int[] o = com.google.android.gms.ads.internal.util.m.o(f);
+            int[] p = com.google.android.gms.ads.internal.util.m.p(f);
             com.google.android.gms.ads.internal.client.u.b();
-            int j3 = com.google.android.gms.ads.internal.util.client.f.j(displayMetrics, o[0]);
+            int j3 = com.google.android.gms.ads.internal.util.client.f.j(displayMetrics, p[0]);
             com.google.android.gms.ads.internal.client.u.b();
-            i2 = com.google.android.gms.ads.internal.util.client.f.j(displayMetrics, o[1]);
+            i2 = com.google.android.gms.ads.internal.util.client.f.j(displayMetrics, p[1]);
             i = j3;
         }
         com.google.android.gms.ads.internal.c.e();
@@ -467,15 +467,15 @@ public final class x extends WebView implements DownloadListener, ViewTreeObserv
         }
         try {
             super.onPause();
-            if (((Boolean) com.google.android.gms.ads.internal.config.p.bU.g()).booleanValue() && luc.a("MUTE_AUDIO")) {
+            if (((Boolean) com.google.android.gms.ads.internal.config.p.bV.g()).booleanValue() && nmk.a("MUTE_AUDIO")) {
                 int i = com.google.android.gms.ads.internal.util.c.a;
                 com.google.android.gms.ads.internal.util.client.h.d("Muting webview");
-                lth.d(this, true);
+                nlp.d(this, true);
             }
         } catch (Exception e) {
             int i2 = com.google.android.gms.ads.internal.util.c.a;
             com.google.android.gms.ads.internal.util.client.h.h("Could not pause webview.", e);
-            if (((Boolean) com.google.android.gms.ads.internal.config.p.bV.g()).booleanValue()) {
+            if (((Boolean) com.google.android.gms.ads.internal.config.p.bW.g()).booleanValue()) {
                 com.google.android.gms.ads.internal.c.d().d(e, "AdWebViewImpl.onPause");
             }
         }
@@ -488,15 +488,15 @@ public final class x extends WebView implements DownloadListener, ViewTreeObserv
         }
         try {
             super.onResume();
-            if (((Boolean) com.google.android.gms.ads.internal.config.p.bU.g()).booleanValue() && luc.a("MUTE_AUDIO")) {
+            if (((Boolean) com.google.android.gms.ads.internal.config.p.bV.g()).booleanValue() && nmk.a("MUTE_AUDIO")) {
                 int i = com.google.android.gms.ads.internal.util.c.a;
                 com.google.android.gms.ads.internal.util.client.h.d("Unmuting webview");
-                lth.d(this, false);
+                nlp.d(this, false);
             }
         } catch (Exception e) {
             int i2 = com.google.android.gms.ads.internal.util.c.a;
             com.google.android.gms.ads.internal.util.client.h.h("Could not resume webview.", e);
-            if (((Boolean) com.google.android.gms.ads.internal.config.p.bV.g()).booleanValue()) {
+            if (((Boolean) com.google.android.gms.ads.internal.config.p.bW.g()).booleanValue()) {
                 com.google.android.gms.ads.internal.c.d().d(e, "AdWebViewImpl.onResume");
             }
         }

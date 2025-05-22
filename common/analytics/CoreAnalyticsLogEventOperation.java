@@ -2,28 +2,28 @@ package com.google.android.gms.common.analytics;
 
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aqwt;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.fmsf;
-import defpackage.fmsu;
+import defpackage.aszi;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.fpkd;
+import defpackage.fpks;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CoreAnalyticsLogEventOperation extends IntentOperation {
     static {
-        asot.b("CoreAnalyticsLogEvent", asej.CORE);
+        ausn.b("CoreAnalyticsLogEvent", auid.CORE);
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         String action = intent.getAction();
-        if ("com.google.gservices.intent.action.GSERVICES_CHANGED".equals(action) && fmsf.c()) {
-            aqwt.c();
-            aqwt.b(this, 12, fmsu.c());
+        if ("com.google.gservices.intent.action.GSERVICES_CHANGED".equals(action) && fpkd.c()) {
+            aszi.c();
+            aszi.b(this, 12, fpks.c());
         } else if ("com.google.android.chimera.MODULE_CONFIGURATION_CHANGED".equals(action)) {
-            aqwt.c();
-            aqwt.b(this, 13, fmsu.c());
+            aszi.c();
+            aszi.b(this, 13, fpks.c());
         }
     }
 }

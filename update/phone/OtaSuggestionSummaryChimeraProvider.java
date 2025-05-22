@@ -10,20 +10,20 @@ import android.text.TextUtils;
 import com.google.android.chimera.ContentProvider;
 import com.google.android.gms.R;
 import com.google.android.gms.update.SystemUpdateStatus;
-import defpackage.anxo;
-import defpackage.arxo;
-import defpackage.dfbl;
-import defpackage.dhdf;
-import defpackage.dhfh;
-import defpackage.dhjt;
-import defpackage.fqwl;
+import defpackage.apzg;
+import defpackage.auad;
+import defpackage.dhmr;
+import defpackage.djol;
+import defpackage.djqn;
+import defpackage.djuz;
+import defpackage.ftqe;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class OtaSuggestionSummaryChimeraProvider extends ContentProvider {
-    private static final arxo a = dhjt.h("OtaSuggestionSummaryChimeraProvider");
+    private static final auad a = djuz.h("OtaSuggestionSummaryChimeraProvider");
 
     @Override // com.google.android.chimera.ContentProvider
     public final Bundle call(String str, String str2, Bundle bundle) {
@@ -31,12 +31,12 @@ public class OtaSuggestionSummaryChimeraProvider extends ContentProvider {
         Bundle bundle2 = new Bundle();
         Context context = getContext();
         try {
-            long currentTimeMillis = System.currentTimeMillis() - ((SystemUpdateStatus) dfbl.n(dhdf.a(context).e())).n;
+            long currentTimeMillis = System.currentTimeMillis() - ((SystemUpdateStatus) dhmr.n(djol.a(context).e())).n;
             int max = (int) Math.max(TimeUnit.MILLISECONDS.toDays(currentTimeMillis), 1L);
-            arxo arxoVar = dhfh.a;
-            int a2 = dhfh.a(fqwl.a.a().a(), currentTimeMillis);
+            auad auadVar = djqn.a;
+            int a2 = djqn.a(ftqe.a.lK().a(), currentTimeMillis);
             if ("getSummary".equals(str)) {
-                Icon createWithResource = Icon.createWithResource(context, anxo.a(context, a2 != 2 ? a2 != 3 ? R.drawable.quantum_gm_ic_system_update_blue_24 : R.drawable.quantum_gm_ic_system_update_red_24 : R.drawable.quantum_gm_ic_system_update_orange_24));
+                Icon createWithResource = Icon.createWithResource(context, apzg.a(context, a2 != 2 ? a2 != 3 ? R.drawable.quantum_gm_ic_system_update_blue_24 : R.drawable.quantum_gm_ic_system_update_red_24 : R.drawable.quantum_gm_ic_system_update_orange_24));
                 bundle2.putString("com.android.settings.title", a2 == 0 ? context.getText(R.string.system_update_overdue_suggestion_title_text).toString() : context.getText(R.string.system_update_overdue_status_text).toString());
                 bundle2.putString("com.android.settings.summary", a2 == 0 ? context.getText(R.string.system_update_update_available_title_text).toString() : TextUtils.expandTemplate(context.getText(R.string.system_update_overdue_warning), context.getResources().getQuantityString(R.plurals.ota_unit_days, max, Integer.valueOf(max))).toString());
                 bundle2.putParcelable("com.android.settings.icon", createWithResource);

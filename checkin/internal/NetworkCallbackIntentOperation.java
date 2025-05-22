@@ -4,14 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.chimera.WakefulBroadcastReceiver;
-import defpackage.anrr;
-import defpackage.antd;
-import defpackage.arxo;
+import defpackage.aptj;
+import defpackage.apuv;
+import defpackage.auad;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class NetworkCallbackIntentOperation extends IntentOperation {
-    private static final arxo a = antd.a("NetworkCallbackIntentOperation");
+    private static final auad a = apuv.a("NetworkCallbackIntentOperation");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
@@ -23,7 +23,7 @@ public final class NetworkCallbackIntentOperation extends IntentOperation {
         bundle.putString("checkin_source_class", getClass().getCanonicalName());
         bundle.putBoolean("checkin_source_force", true);
         try {
-            new anrr(this, bundle).a();
+            new aptj(this, bundle).a();
         } finally {
             WakefulBroadcastReceiver.completeWakefulIntent(intent);
         }

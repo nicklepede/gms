@@ -3,18 +3,17 @@ package com.google.android.gms.auth.folsom.operation;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.abkm;
-import defpackage.abnb;
-import defpackage.abng;
-import defpackage.arxo;
-import defpackage.asqg;
-import defpackage.fkzg;
+import defpackage.adkm;
+import defpackage.adnb;
+import defpackage.adng;
+import defpackage.auad;
+import defpackage.auua;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GserviceChangeIntentOperation extends IntentOperation {
-    static final String a = asqg.f("com.google.android.gms.auth.folsom");
-    private static final arxo b = abng.a("GserviceChangeIntentOperation");
+    static final String a = auua.f("com.google.android.gms.auth.folsom");
+    private static final auad b = adng.a("GserviceChangeIntentOperation");
 
     public GserviceChangeIntentOperation() {
     }
@@ -26,8 +25,8 @@ public class GserviceChangeIntentOperation extends IntentOperation {
         }
         if (("com.google.android.gms.phenotype.COMMITTED".equals(intent.getAction()) || a.equals(intent.getAction())) && "com.google.android.gms.auth.folsom".equals(intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME"))) {
             b.d("Detected Phenotype flag update for auth_folsom", new Object[0]);
-            if (abnb.b && fkzg.k()) {
-                ((abkm) abkm.a.b()).f();
+            if (adnb.b) {
+                ((adkm) adkm.a.b()).f();
             }
         }
     }

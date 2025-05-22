@@ -7,20 +7,20 @@ import android.os.Parcelable;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zou;
+import defpackage.abou;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public class GoogleSignInAccount extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new zou();
+    public static final Parcelable.Creator CREATOR = new abou();
     public final String a;
     public final String b;
     public final String c;
@@ -50,7 +50,7 @@ public class GoogleSignInAccount extends AbstractSafeParcelable implements Refle
 
     public static GoogleSignInAccount b(String str, String str2, String str3, String str4, String str5, String str6, Uri uri, Long l, String str7, Set set) {
         long longValue = (l == null ? Long.valueOf(System.currentTimeMillis() / 1000) : l).longValue();
-        arwm.q(str7);
+        atzb.q(str7);
         return new GoogleSignInAccount(str, str2, str3, str4, uri, null, longValue, str7, new ArrayList(set), str5, str6);
     }
 
@@ -59,8 +59,8 @@ public class GoogleSignInAccount extends AbstractSafeParcelable implements Refle
     }
 
     public static GoogleSignInAccount d(Account account, Scope scope, Scope... scopeArr) {
-        arwm.s(account);
-        arwm.s(scope);
+        atzb.s(account);
+        atzb.s(scope);
         HashSet hashSet = new HashSet();
         hashSet.add(scope);
         hashSet.addAll(Arrays.asList(scopeArr));
@@ -102,18 +102,18 @@ public class GoogleSignInAccount extends AbstractSafeParcelable implements Refle
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.q(parcel, 8, this.g);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.y(parcel, 10, this.i, false);
-        arxc.v(parcel, 11, this.j, false);
-        arxc.v(parcel, 12, this.k, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.q(parcel, 8, this.g);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.y(parcel, 10, this.i, false);
+        atzr.v(parcel, 11, this.j, false);
+        atzr.v(parcel, 12, this.k, false);
+        atzr.c(parcel, a);
     }
 }

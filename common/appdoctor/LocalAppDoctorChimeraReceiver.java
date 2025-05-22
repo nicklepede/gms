@@ -7,32 +7,32 @@ import android.os.Bundle;
 import android.util.Log;
 import com.google.android.chimera.BroadcastReceiver;
 import com.google.android.gms.common.appdoctor.LocalAppDoctorChimeraReceiver;
-import defpackage.arik;
-import defpackage.dmvj;
-import defpackage.dmvk;
-import defpackage.dmvp;
-import defpackage.dmvs;
-import defpackage.dmwj;
-import defpackage.eijr;
-import defpackage.eits;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.ttx;
-import defpackage.tub;
+import defpackage.atkz;
+import defpackage.dpgx;
+import defpackage.dpgy;
+import defpackage.dphd;
+import defpackage.dphg;
+import defpackage.dphx;
+import defpackage.ekww;
+import defpackage.elgx;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.vpx;
+import defpackage.vqb;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class LocalAppDoctorChimeraReceiver extends BroadcastReceiver {
-    public static final eits b = eits.l(tub.EMERGENCY_PLAY_STORE_INSTALL, arik.class);
+    public static final elgx b = elgx.l(vqb.EMERGENCY_PLAY_STORE_INSTALL, atkz.class);
 
-    public static /* synthetic */ void a(enss enssVar, BroadcastReceiver.PendingResult pendingResult) {
+    public static /* synthetic */ void a(eqgl eqglVar, BroadcastReceiver.PendingResult pendingResult) {
         try {
             try {
-                enssVar.get(8L, TimeUnit.SECONDS);
+                eqglVar.get(8L, TimeUnit.SECONDS);
             } catch (InterruptedException | ExecutionException | TimeoutException unused) {
                 Log.w("GmsAppDoctorReceiver", "Failed to complete fix in time for broadcast.");
             }
@@ -54,26 +54,26 @@ public final class LocalAppDoctorChimeraReceiver extends BroadcastReceiver {
             Log.w("GmsAppDoctorReceiver", "No fix found in broadcast.");
             return;
         }
-        dmvj dmvjVar = new dmvj(new dmwj());
-        dmvjVar.b = new eijr() { // from class: arhi
-            @Override // defpackage.eijr
-            public final Object a() {
+        dpgx dpgxVar = new dpgx(new dphx());
+        dpgxVar.b = new ekww() { // from class: atjx
+            @Override // defpackage.ekww
+            public final Object lK() {
                 return LocalAppDoctorChimeraReceiver.b;
             }
         };
-        dmvjVar.d = new eijr() { // from class: arhj
-            @Override // defpackage.eijr
-            public final Object a() {
-                return new arhk();
+        dpgxVar.d = new ekww() { // from class: atjy
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return new atjz();
             }
         };
-        final dmvk a = dmvjVar.a();
-        eijr eijrVar = a.c;
-        final ttx ttxVar = ttx.TELEDOCTOR;
-        final enss i = !((dmvp) eijrVar.a()).b(context) ? ensj.i(false) : dmvs.a(new Callable() { // from class: dmvh
+        final dpgy a = dpgxVar.a();
+        ekww ekwwVar = a.c;
+        final vpx vpxVar = vpx.TELEDOCTOR;
+        final eqgl i = !((dphd) ekwwVar.lK()).b(context) ? eqgc.i(false) : dphg.a(new Callable() { // from class: dpgv
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                return Boolean.valueOf(dmvk.this.g(context, ttxVar));
+                return Boolean.valueOf(dpgy.this.g(context, vpxVar));
             }
         });
         setResultCode(-1);
@@ -81,10 +81,10 @@ public final class LocalAppDoctorChimeraReceiver extends BroadcastReceiver {
             Log.i("GmsAppDoctorReceiver", "Fix has already been completed.");
         } else {
             final BroadcastReceiver.PendingResult goAsync = goAsync();
-            dmvs.a(new Callable() { // from class: arhh
+            dphg.a(new Callable() { // from class: atjw
                 @Override // java.util.concurrent.Callable
                 public final Object call() {
-                    LocalAppDoctorChimeraReceiver.a(enss.this, goAsync);
+                    LocalAppDoctorChimeraReceiver.a(eqgl.this, goAsync);
                     return null;
                 }
             });

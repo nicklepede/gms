@@ -3,15 +3,15 @@ package com.google.android.gms.dtdi.core;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.aycq;
-import defpackage.fvbo;
+import defpackage.atzr;
+import defpackage.bagq;
+import defpackage.fxxm;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class DeviceBrandFilter extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new aycq();
+    public static final Parcelable.Creator CREATOR = new bagq();
     public final List a;
     public final List b;
 
@@ -28,7 +28,7 @@ public final class DeviceBrandFilter extends AbstractSafeParcelable {
             return false;
         }
         DeviceBrandFilter deviceBrandFilter = (DeviceBrandFilter) obj;
-        return fvbo.n(this.a, deviceBrandFilter.a) && fvbo.n(this.b, deviceBrandFilter.b);
+        return fxxm.n(this.a, deviceBrandFilter.a) && fxxm.n(this.b, deviceBrandFilter.b);
     }
 
     public final int hashCode() {
@@ -44,11 +44,11 @@ public final class DeviceBrandFilter extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "dest");
+        fxxm.f(parcel, "dest");
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.x(parcel, 1, list, false);
-        arxc.x(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.x(parcel, 1, list, false);
+        atzr.x(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

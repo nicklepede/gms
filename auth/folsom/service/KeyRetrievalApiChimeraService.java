@@ -3,21 +3,21 @@ package com.google.android.gms.auth.folsom.service;
 import android.os.Bundle;
 import com.google.android.gms.chimera.modules.auth.folsom.AppContextProvider;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.abdt;
-import defpackage.abkr;
-import defpackage.abng;
-import defpackage.arxo;
-import defpackage.asnf;
-import defpackage.asng;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.fkzg;
+import defpackage.addt;
+import defpackage.adkr;
+import defpackage.adng;
+import defpackage.auad;
+import defpackage.auqz;
+import defpackage.aura;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.fnqn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class KeyRetrievalApiChimeraService extends bxgd {
-    private static final arxo a = abng.a("KeyRetrievalApi");
+public class KeyRetrievalApiChimeraService extends bzot {
+    private static final auad a = adng.a("KeyRetrievalApi");
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -27,20 +27,19 @@ public class KeyRetrievalApiChimeraService extends bxgd {
     public KeyRetrievalApiChimeraService() {
         /*
             r7 = this;
-            ejck r3 = defpackage.ejck.a
-            eius r0 = new eius
+            elpp r3 = defpackage.elpp.a
+            elhx r0 = new elhx
             r0.<init>()
-            fkyk r1 = defpackage.fkyk.a
-            fkyl r1 = r1.a()
-            femw r1 = r1.s()
-            fedh r1 = r1.b
+            fnpr r1 = defpackage.fnpr.a
+            fnps r2 = r1.lK()
+            fhbp r2 = r2.s()
+            fgsa r2 = r2.b
+            r0.k(r2)
+            fnps r1 = r1.lK()
+            fhbp r1 = r1.t()
+            fgsa r1 = r1.b
             r0.k(r1)
-            fkyk r1 = defpackage.fkyk.a
-            fkyl r1 = r1.a()
-            femw r1 = r1.t()
-            fedh r1 = r1.b
-            r0.k(r1)
-            eiuu r6 = r0.g()
+            elhz r6 = r0.g()
             r4 = 0
             r5 = 10
             r1 = 172(0xac, float:2.41E-43)
@@ -52,8 +51,8 @@ public class KeyRetrievalApiChimeraService extends bxgd {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.folsom.service.KeyRetrievalApiChimeraService.<init>():void");
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         Bundle bundle = getServiceRequest.i;
         String string = bundle.getString("SECURITY_DOMAIN");
         String string2 = bundle.getString("UTM_SOURCE");
@@ -64,22 +63,22 @@ public class KeyRetrievalApiChimeraService extends bxgd {
         boolean z = bundle.getBoolean("OFFER_RESET");
         if (string == null) {
             a.d("Security domain is not set", new Object[0]);
-            bxgjVar.a(10, new Bundle());
+            bzozVar.a(10, new Bundle());
             return;
         }
-        if (abkr.u(string) && !string.isEmpty() && !abkr.u(string)) {
+        if (adkr.u(string) && !string.isEmpty() && !adkr.u(string)) {
             a.d("KeyRetrievalApi is disabled by a flag.", new Object[0]);
-            bxgjVar.a(16, new Bundle());
+            bzozVar.a(16, new Bundle());
             return;
         }
-        bxgo l = l();
+        bzpe l = l();
         boolean z2 = true;
-        if (fkzg.o()) {
-            asnf asnfVar = asng.a;
+        if (fnqn.n()) {
+            auqz auqzVar = aura.a;
             if (!getServiceRequest.f.equals("com.google.android.gms.auth.diagnostic")) {
-                z2 = asng.X(AppContextProvider.a());
+                z2 = aura.X(AppContextProvider.a());
             }
         }
-        bxgjVar.c(new abdt(l, string, z2, string2, string3, string4, string5, i, z, getServiceRequest.f, getServiceRequest.p));
+        bzozVar.c(new addt(l, string, z2, string2, string3, string4, string5, i, z, getServiceRequest.f, getServiceRequest.p));
     }
 }

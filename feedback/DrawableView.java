@@ -9,10 +9,10 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import com.google.android.gms.R;
-import defpackage.fnnl;
+import defpackage.fqfu;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DrawableView extends View {
     public Paint a;
@@ -46,8 +46,8 @@ public class DrawableView extends View {
         int dimension = (int) getResources().getDimension(R.dimen.gf_paint_stroke_width);
         this.i = dimension;
         this.d.setStrokeWidth(dimension);
-        this.d.setColor((int) fnnl.g());
-        this.d.setAlpha((int) fnnl.f());
+        this.d.setColor((int) fqfu.g());
+        this.d.setAlpha((int) fqfu.f());
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
         ArrayList arrayList3 = new ArrayList();
@@ -100,7 +100,7 @@ public class DrawableView extends View {
         } else if (action == 2) {
             float abs = Math.abs(x - this.k);
             float abs2 = Math.abs(y - this.l);
-            if (abs >= fnnl.k() || abs2 >= fnnl.k()) {
+            if (abs >= fqfu.k() || abs2 >= fqfu.k()) {
                 Path path2 = this.j;
                 float f = this.k;
                 float f2 = this.l;

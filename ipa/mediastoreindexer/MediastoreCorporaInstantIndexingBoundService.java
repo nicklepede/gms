@@ -5,38 +5,38 @@ import android.database.Cursor;
 import android.os.IBinder;
 import android.provider.MediaStore;
 import com.google.android.chimera.BoundService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bopm;
-import defpackage.borw;
-import defpackage.borx;
-import defpackage.bory;
-import defpackage.boso;
-import defpackage.bosp;
-import defpackage.fpgv;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bqxc;
+import defpackage.bqzm;
+import defpackage.bqzn;
+import defpackage.bqzo;
+import defpackage.brae;
+import defpackage.braf;
+import defpackage.fsah;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class MediastoreCorporaInstantIndexingBoundService extends BoundService {
-    public static final asot a = asot.b("GmscoreIpa", asej.PLATFORM_DATA_INDEXER);
+    public static final ausn a = ausn.b("GmscoreIpa", auid.PLATFORM_DATA_INDEXER);
 
     @Override // com.google.android.chimera.BoundService
     public final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        if (!fpgv.o()) {
+        if (!fsah.o()) {
             printWriter.println("Mediastore indexer not enabled.");
             return;
         }
         printWriter.println("Media store indexer:");
         printWriter.format("DB version: %d\n", 3);
-        bory boryVar = new bory(getContentResolver(), null);
-        borw borwVar = new borw();
-        borwVar.f = 1;
-        borwVar.a = 0L;
-        borwVar.c = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
-        borwVar.d = new String[]{"_id"};
-        Cursor a2 = boryVar.a(new borx(borwVar));
+        bqzo bqzoVar = new bqzo(getContentResolver(), null);
+        bqzm bqzmVar = new bqzm();
+        bqzmVar.f = 1;
+        bqzmVar.a = 0L;
+        bqzmVar.c = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+        bqzmVar.d = new String[]{"_id"};
+        Cursor a2 = bqzoVar.a(new bqzn(bqzmVar));
         if (a2 != null) {
             try {
                 printWriter.format("Image media source size: %d\n", Integer.valueOf(a2.getCount()));
@@ -52,7 +52,7 @@ public class MediastoreCorporaInstantIndexingBoundService extends BoundService {
         if (a2 != null) {
             a2.close();
         }
-        Cursor b = new boso(bosp.c(this)).b();
+        Cursor b = new brae(braf.c(this)).b();
         try {
             printWriter.format("Intermediate store size: %d\n", Integer.valueOf(b.getCount()));
             if (b != null) {
@@ -70,21 +70,21 @@ public class MediastoreCorporaInstantIndexingBoundService extends BoundService {
         }
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final IBinder onBind(Intent intent) {
         return null;
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
-        if (!fpgv.o() || fpgv.m()) {
+        if (!fsah.o() || fsah.m()) {
             return;
         }
-        bopm.b(getApplicationContext());
+        bqxc.b(getApplicationContext());
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
-        bopm.c(getApplicationContext());
+        bqxc.c(getApplicationContext());
     }
 }

@@ -3,14 +3,14 @@ package com.google.android.gms.instantapps.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bofh;
+import defpackage.atzr;
+import defpackage.bqmx;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class AtomInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bofh();
+    public static final Parcelable.Creator CREATOR = new bqmx();
     public final String a;
     public final String b;
     public final String[] c;
@@ -53,14 +53,14 @@ public class AtomInfo extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 4, this.b, false);
-        arxc.w(parcel, 5, this.c, false);
-        arxc.o(parcel, 6, this.e);
-        arxc.i(parcel, 7, this.f, false);
-        arxc.p(parcel, 8, this.d, false);
-        arxc.e(parcel, 9, this.g);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 4, this.b, false);
+        atzr.w(parcel, 5, this.c, false);
+        atzr.o(parcel, 6, this.e);
+        atzr.i(parcel, 7, this.f, false);
+        atzr.p(parcel, 8, this.d, false);
+        atzr.e(parcel, 9, this.g);
+        atzr.c(parcel, a);
     }
 }

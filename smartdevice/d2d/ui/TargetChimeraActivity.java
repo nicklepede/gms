@@ -11,37 +11,37 @@ import com.google.android.gms.auth.firstparty.shared.ManagedAuthOptions;
 import com.google.android.gms.smartdevice.d2d.BootstrapCompletionResult;
 import com.google.android.gms.smartdevice.d2d.ui.TargetChimeraActivity;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.arxo;
-import defpackage.asmf;
+import defpackage.auad;
+import defpackage.aupz;
 import defpackage.bp;
-import defpackage.dcxh;
-import defpackage.ddkh;
-import defpackage.ddks;
-import defpackage.ddma;
-import defpackage.ddnt;
-import defpackage.ddof;
-import defpackage.ddog;
-import defpackage.ddoo;
-import defpackage.ddop;
-import defpackage.ddot;
-import defpackage.ddpf;
-import defpackage.ddre;
-import defpackage.degp;
-import defpackage.dekr;
-import defpackage.denq;
+import defpackage.dfim;
+import defpackage.dfvm;
+import defpackage.dfvx;
+import defpackage.dfxf;
+import defpackage.dfyy;
+import defpackage.dfzk;
+import defpackage.dfzl;
+import defpackage.dfzt;
+import defpackage.dfzu;
+import defpackage.dfzy;
 import defpackage.dg;
-import defpackage.edeq;
-import defpackage.edjs;
-import defpackage.ekae;
-import defpackage.ekaf;
-import defpackage.elta;
+import defpackage.dgak;
+import defpackage.dgcj;
+import defpackage.dgrs;
+import defpackage.dgvu;
+import defpackage.dgyt;
+import defpackage.efrl;
+import defpackage.efwn;
+import defpackage.emnp;
+import defpackage.emnq;
+import defpackage.eogo;
 import defpackage.ew;
-import defpackage.fecj;
-import defpackage.fkdk;
-import defpackage.fsfh;
+import defpackage.fgrc;
+import defpackage.fmtw;
+import defpackage.fvae;
 import defpackage.ip;
-import defpackage.irx;
-import defpackage.qex;
+import defpackage.itn;
+import defpackage.ryb;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
@@ -49,45 +49,45 @@ import java.util.Queue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TargetChimeraActivity extends qex implements degp, ddnt {
-    public static final arxo h = new denq(new String[]{"D2D", "UI", "TargetChimeraActivity"});
+public class TargetChimeraActivity extends ryb implements dgrs, dfyy {
+    public static final auad h = new dgyt(new String[]{"D2D", "UI", "TargetChimeraActivity"});
     private String A;
-    private elta B;
+    private eogo B;
     private String C;
     public String i;
     public boolean m;
     public boolean n;
-    public ddkh p;
+    public dfvm p;
     public BootstrapCompletionResult r;
     public ResultReceiver s;
     private Bundle t;
-    private ddpf u;
-    private ddks v;
-    private ddog x;
-    private ddog y;
+    private dgak u;
+    private dfvx v;
+    private dfzl x;
+    private dfzl y;
     private D2dOptions z;
-    final ExecutorService j = new asmf(1, 9);
+    final ExecutorService j = new aupz(1, 9);
     public final Queue k = new ArrayDeque();
     public int l = 1;
     private boolean w = false;
     public volatile Future o = null;
     public boolean q = false;
 
-    private final ddog u() {
-        return new ddof(this, this, gI(), this.A);
+    private final dfzl u() {
+        return new dfzk(this, this, gY(), this.A);
     }
 
     private final void v(final Bundle bundle, final List list) {
         h.d("configureDeviceManagementOrFinish", new Object[0]);
         this.w = true;
-        if (!fsfh.m()) {
+        if (!fvae.l()) {
             l(bundle);
         } else if (list == null) {
             l(bundle);
         } else {
-            this.o = ((asmf) this.j).submit(new Runnable() { // from class: ddon
+            this.o = ((aupz) this.j).submit(new Runnable() { // from class: dfzs
                 /* JADX WARN: Multi-variable type inference failed */
                 /* JADX WARN: Type inference failed for: r5v1 */
                 /* JADX WARN: Type inference failed for: r5v2, types: [int] */
@@ -100,7 +100,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
                     bundle2.putString("theme", targetChimeraActivity.i);
                     for (Account account : list) {
                         if (targetChimeraActivity.p.c(account)) {
-                            ddkh ddkhVar = targetChimeraActivity.p;
+                            dfvm dfvmVar = targetChimeraActivity.p;
                             boolean z = targetChimeraActivity.m;
                             BootstrapCompletionResult bootstrapCompletionResult = targetChimeraActivity.r;
                             int i = bootstrapCompletionResult == null ? 0 : bootstrapCompletionResult.f;
@@ -110,14 +110,14 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
                             } else if (i == 4) {
                                 r5 = 1;
                             }
-                            Intent a = ddkhVar.a(account, bundle2, new ManagedAuthOptions(r5, true != targetChimeraActivity.s() ? 3 : 4));
+                            Intent a = dfvmVar.a(account, bundle2, new ManagedAuthOptions(r5, true != targetChimeraActivity.s() ? 3 : 4));
                             if (a != null) {
                                 targetChimeraActivity.k.add(a);
                             }
                         }
                     }
                     final Bundle bundle3 = bundle;
-                    targetChimeraActivity.runOnUiThread(new Runnable() { // from class: ddom
+                    targetChimeraActivity.runOnUiThread(new Runnable() { // from class: dfzr
                         @Override // java.lang.Runnable
                         public final void run() {
                             TargetChimeraActivity targetChimeraActivity2 = TargetChimeraActivity.this;
@@ -135,19 +135,19 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
     }
 
     private final void w() {
-        ekaf a;
+        emnq a;
         h.d("logD2dEvent()", new Object[0]);
-        ddpf ddpfVar = this.u;
-        if (ddpfVar == null || (a = ddpfVar.aj.a(getApplicationContext(), ddpfVar.an)) == null) {
+        dgak dgakVar = this.u;
+        if (dgakVar == null || (a = dgakVar.aj.a(getApplicationContext(), dgakVar.an)) == null) {
             return;
         }
-        ddpf.a.j("Sent D2DEvent\n%s", a);
+        dgak.a.j("Sent D2DEvent\n%s", a);
     }
 
-    @Override // defpackage.ddnt
+    @Override // defpackage.dfyy
     public final void c(int i, Bundle bundle) {
-        arxo arxoVar = h;
-        arxoVar.d("onAction %d", Integer.valueOf(i));
+        auad auadVar = h;
+        auadVar.d("onAction %d", Integer.valueOf(i));
         if (i == 116) {
             String string = bundle.getString("deviceName");
             if (string != null) {
@@ -155,11 +155,11 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
             }
             i = 116;
         }
-        ddog ddogVar = this.y;
-        if (ddogVar != null && ddogVar.h(i)) {
-            ddogVar.c(i, bundle);
+        dfzl dfzlVar = this.y;
+        if (dfzlVar != null && dfzlVar.h(i)) {
+            dfzlVar.c(i, bundle);
             if (i == 116) {
-                arxoVar.h("Updating primary with device name", new Object[0]);
+                auadVar.h("Updating primary with device name", new Object[0]);
                 this.x.c(116, bundle);
                 return;
             }
@@ -170,7 +170,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
             return;
         }
         Integer valueOf = Integer.valueOf(i);
-        arxoVar.j("Handling action %d", valueOf);
+        auadVar.j("Handling action %d", valueOf);
         switch (i) {
             case 108:
             case 118:
@@ -181,30 +181,30 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
             case 114:
             case 116:
             default:
-                arxoVar.m("Unknown action %d", valueOf);
+                auadVar.m("Unknown action %d", valueOf);
                 return;
             case 111:
                 if (this.l == 8) {
-                    arxoVar.m("Already connected", new Object[0]);
+                    auadVar.m("Already connected", new Object[0]);
                     return;
                 }
-                int a = this.y != null ? ekae.a(3) : ekae.a(this.x.a());
-                fecj fecjVar = this.v.c;
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                int a = this.y != null ? emnp.a(3) : emnp.a(this.x.a());
+                fgrc fgrcVar = this.v.c;
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                ekaf ekafVar = (ekaf) fecjVar.b;
-                ekaf ekafVar2 = ekaf.a;
+                emnq emnqVar = (emnq) fgrcVar.b;
+                emnq emnqVar2 = emnq.a;
                 int i2 = a - 1;
                 if (a == 0) {
                     throw null;
                 }
-                ekafVar.s = i2;
-                ekafVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
-                ddot ddotVar = new ddot();
-                ddotVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
-                ddotVar.b = getString(R.string.smartdevice_d2d_target_continue_description);
-                j(ddotVar.a());
+                emnqVar.s = i2;
+                emnqVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
+                dfzy dfzyVar = new dfzy();
+                dfzyVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
+                dfzyVar.b = getString(R.string.smartdevice_d2d_target_continue_description);
+                j(dfzyVar.a());
                 this.l = 8;
                 return;
             case AndroidInputTypeSignal.TYPE_TEXT_VARIATION_POSTAL_ADDRESS /* 112 */:
@@ -214,9 +214,9 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
                 String string2 = bundle.getString("pin.code");
                 this.C = string2;
                 if (this.l != 7) {
-                    elta b = fsfh.n() ? ddma.b(this) : elta.DEFAULT;
+                    eogo b = fvae.m() ? dfxf.b(this) : eogo.DEFAULT;
                     this.B = b;
-                    j(dekr.x(b, string2, false, false, dcxh.UNKNOWN));
+                    j(dgvu.x(b, string2, false, false, dfim.UNKNOWN));
                     this.l = 7;
                     return;
                 }
@@ -225,7 +225,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
                 k();
                 return;
             case 117:
-                ddog u = u();
+                dfzl u = u();
                 this.y = u;
                 u.i();
                 this.l = 2;
@@ -234,10 +234,10 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
     }
 
     public final void j(dg dgVar) {
-        bp bpVar = new bp(gI());
-        if (fkdk.d()) {
-            int i = edjs.a;
-            if (edeq.z(this)) {
+        bp bpVar = new bp(gY());
+        if (fmtw.d()) {
+            int i = efwn.a;
+            if (efrl.z(this)) {
                 bpVar.A(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out, R.anim.sud_slide_back_in, R.anim.sud_slide_back_out);
                 bpVar.F(R.id.fragment_container, dgVar);
                 bpVar.w(null);
@@ -267,14 +267,14 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         h.d("doneToSuw()", new Object[0]);
         this.v.d();
         if (bundle.containsKey("restoreToken")) {
-            fecj fecjVar = this.v.c;
-            if (!fecjVar.b.L()) {
-                fecjVar.U();
+            fgrc fgrcVar = this.v.c;
+            if (!fgrcVar.b.L()) {
+                fgrcVar.U();
             }
-            ekaf ekafVar = (ekaf) fecjVar.b;
-            ekaf ekafVar2 = ekaf.a;
-            ekafVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES;
-            ekafVar.o = true;
+            emnq emnqVar = (emnq) fgrcVar.b;
+            emnq emnqVar2 = emnq.a;
+            emnqVar.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_CAP_SENTENCES;
+            emnqVar.o = true;
         }
         Intent intent = new Intent();
         BootstrapCompletionResult bootstrapCompletionResult = this.r;
@@ -310,13 +310,13 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         p(bundle.getParcelableArrayList("accounts"));
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void o(int i) {
         this.u.z();
         q();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         h.d("onActivityResult() with requestCode: %d and resultCode: %d", Integer.valueOf(i), Integer.valueOf(i2));
@@ -325,24 +325,24 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         int i = this.l;
         if (i != 1 && i != 2) {
             ip ipVar = new ip(this);
-            ipVar.j(R.string.smartdevice_alert_exit_setup_title);
-            ipVar.setPositiveButton(R.string.smartdevice_alert_quit_button, new ddoo(this));
+            ipVar.l(R.string.smartdevice_alert_exit_setup_title);
+            ipVar.setPositiveButton(R.string.smartdevice_alert_quit_button, new dfzt(this));
             ipVar.setNegativeButton(R.string.common_cancel, null);
             ipVar.a();
             return;
         }
-        ddog ddogVar = this.y;
-        if (ddogVar != null) {
-            if (ddogVar.g()) {
-                ddogVar.e();
+        dfzl dfzlVar = this.y;
+        if (dfzlVar != null) {
+            if (dfzlVar.g()) {
+                dfzlVar.e();
                 return;
             } else {
-                ddogVar.e();
+                dfzlVar.e();
                 this.y = null;
                 return;
             }
@@ -358,7 +358,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
 
     /* JADX WARN: Removed duplicated region for block: B:20:0x012b  */
     /* JADX WARN: Removed duplicated region for block: B:22:? A[RETURN, SYNTHETIC] */
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -374,7 +374,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
     /* JADX WARN: Removed duplicated region for block: B:37:0x0156  */
     /* JADX WARN: Removed duplicated region for block: B:40:0x0163  */
     /* JADX WARN: Removed duplicated region for block: B:49:0x0194  */
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -387,7 +387,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.smartdevice.d2d.ui.TargetChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
         h.d("onDestroy()", new Object[0]);
@@ -396,7 +396,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         h.d("onPause()", new Object[0]);
@@ -406,7 +406,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         this.o.cancel(true);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         h.d("onResume()", new Object[0]);
@@ -419,7 +419,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         v(this.t, null);
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         h.d("onSaveInstanceState()", new Object[0]);
@@ -437,23 +437,23 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         bundle.putParcelableArrayList("smartdevice.managed_intents", arrayList);
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void p(ArrayList arrayList) {
-        arxo arxoVar = h;
-        arxoVar.d("onAccountChallengesCompleted", new Object[0]);
+        auad auadVar = h;
+        auadVar.d("onAccountChallengesCompleted", new Object[0]);
         Bundle bundle = new Bundle();
         bundle.putParcelableArrayList("accountChallengeData", arrayList);
         ResultReceiver resultReceiver = this.s;
         if (resultReceiver != null) {
             resultReceiver.send(2003, bundle);
         }
-        irx irxVar = arrayList == null ? new irx(null, null) : ddre.d(arrayList, this.t.getString("restoreAccount"));
-        Object obj = irxVar.b;
-        Account account = (Account) irxVar.a;
+        itn itnVar = arrayList == null ? new itn(null, null) : dgcj.d(arrayList, this.t.getString("restoreAccount"));
+        Object obj = itnVar.b;
+        Account account = (Account) itnVar.a;
         List list = (List) obj;
         if (account != null && list != null) {
             this.u.aj.c(10, list.size());
-            arxoVar.d("onAccountSuccess()", new Object[0]);
+            auadVar.d("onAccountSuccess()", new Object[0]);
             this.t.putString("authAccount", account.name);
             this.t.putString("accountType", account.type);
             v(this.t, list);
@@ -463,7 +463,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
             r();
             return;
         }
-        arxoVar.d("skipToMinuteMaidForWifiD2d()", new Object[0]);
+        auadVar.d("skipToMinuteMaidForWifiD2d()", new Object[0]);
         this.v.d();
         BootstrapCompletionResult bootstrapCompletionResult = this.r;
         int i = 1;
@@ -482,11 +482,11 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         if (this.q) {
             return;
         }
-        ddop ddopVar = new ddop(this);
+        dfzu dfzuVar = new dfzu(this);
         ip ipVar = new ip(this);
-        ipVar.j(R.string.common_something_went_wrong);
-        ipVar.setPositiveButton(R.string.common_try_again, ddopVar);
-        ipVar.setNegativeButton(R.string.common_skip, ddopVar);
+        ipVar.l(R.string.common_something_went_wrong);
+        ipVar.setPositiveButton(R.string.common_try_again, dfzuVar);
+        ipVar.setNegativeButton(R.string.common_skip, dfzuVar);
         ipVar.c(false);
         ipVar.a();
         this.q = true;
@@ -516,7 +516,7 @@ public class TargetChimeraActivity extends qex implements degp, ddnt {
         return true;
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void x(String str) {
     }
 }

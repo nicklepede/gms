@@ -6,14 +6,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.auth.firstparty.shared.AppDescription;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aazw;
-import defpackage.arwm;
-import defpackage.arxc;
+import defpackage.aczw;
+import defpackage.atzb;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class FinishSessionWorkflowRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new aazw();
+    public static final Parcelable.Creator CREATOR = new aczw();
     public final int a;
     public final AppDescription b;
     public final String c;
@@ -22,11 +22,11 @@ public class FinishSessionWorkflowRequest extends AbstractSafeParcelable {
 
     public FinishSessionWorkflowRequest(int i, Bundle bundle, AppDescription appDescription, String str, AccountAuthenticatorResponse accountAuthenticatorResponse) {
         this.a = i;
-        arwm.t(bundle, "sessionBundle cannot be null");
+        atzb.t(bundle, "sessionBundle cannot be null");
         this.e = bundle;
-        arwm.t(appDescription, "callingAppDescription cannot be null");
+        atzb.t(appDescription, "callingAppDescription cannot be null");
         this.b = appDescription;
-        arwm.r(str, "accountType must be provided");
+        atzb.r(str, "accountType must be provided");
         this.c = str;
         this.d = accountAuthenticatorResponse;
     }
@@ -37,12 +37,12 @@ public class FinishSessionWorkflowRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.g(parcel, 2, a(), false);
-        arxc.t(parcel, 3, this.b, i, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.g(parcel, 2, a(), false);
+        atzr.t(parcel, 3, this.b, i, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.c(parcel, a);
     }
 }

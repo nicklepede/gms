@@ -2,13 +2,13 @@ package com.google.android.gms.games.multiplayer.realtime;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.bhqe;
+import defpackage.bjut;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public final class RealTimeMessage implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new bhqe();
+    public static final Parcelable.Creator CREATOR = new bjut();
 
     @Override // android.os.Parcelable
     public final int describeContents() {

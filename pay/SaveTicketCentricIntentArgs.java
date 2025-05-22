@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctdz;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvne;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class SaveTicketCentricIntentArgs extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctdz();
+    public static final Parcelable.Creator CREATOR = new cvne();
     public ProtoSafeParcelable a;
     public long b;
     public boolean c;
@@ -30,7 +30,7 @@ public final class SaveTicketCentricIntentArgs extends AbstractSafeParcelable {
         }
         if (obj instanceof SaveTicketCentricIntentArgs) {
             SaveTicketCentricIntentArgs saveTicketCentricIntentArgs = (SaveTicketCentricIntentArgs) obj;
-            if (arwb.b(this.a, saveTicketCentricIntentArgs.a) && arwb.b(Long.valueOf(this.b), Long.valueOf(saveTicketCentricIntentArgs.b)) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(saveTicketCentricIntentArgs.c)) && arwb.b(Integer.valueOf(this.d), Integer.valueOf(saveTicketCentricIntentArgs.d)) && arwb.b(this.e, saveTicketCentricIntentArgs.e) && arwb.b(this.f, saveTicketCentricIntentArgs.f) && Arrays.equals(this.g, saveTicketCentricIntentArgs.g) && arwb.b(this.h, saveTicketCentricIntentArgs.h)) {
+            if (atyq.b(this.a, saveTicketCentricIntentArgs.a) && atyq.b(Long.valueOf(this.b), Long.valueOf(saveTicketCentricIntentArgs.b)) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(saveTicketCentricIntentArgs.c)) && atyq.b(Integer.valueOf(this.d), Integer.valueOf(saveTicketCentricIntentArgs.d)) && atyq.b(this.e, saveTicketCentricIntentArgs.e) && atyq.b(this.f, saveTicketCentricIntentArgs.f) && Arrays.equals(this.g, saveTicketCentricIntentArgs.g) && atyq.b(this.h, saveTicketCentricIntentArgs.h)) {
                 return true;
             }
         }
@@ -43,16 +43,16 @@ public final class SaveTicketCentricIntentArgs extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.q(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.i(parcel, 7, this.g, false);
-        arxc.t(parcel, 8, this.h, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.q(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.i(parcel, 7, this.g, false);
+        atzr.t(parcel, 8, this.h, i, false);
+        atzr.c(parcel, a);
     }
 
     public SaveTicketCentricIntentArgs(ProtoSafeParcelable protoSafeParcelable, long j, boolean z, int i, ProtoSafeParcelable protoSafeParcelable2, String str, byte[] bArr, ProtoSafeParcelable protoSafeParcelable3) {

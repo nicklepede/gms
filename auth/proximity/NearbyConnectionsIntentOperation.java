@@ -3,25 +3,25 @@ package com.google.android.gms.auth.proximity;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
-import defpackage.acfo;
-import defpackage.acqf;
-import defpackage.arxo;
-import defpackage.brzd;
-import defpackage.ezaq;
-import defpackage.ezat;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.flcw;
+import defpackage.aefo;
+import defpackage.aeqf;
+import defpackage.auad;
+import defpackage.bugy;
+import defpackage.fbpe;
+import defpackage.fbph;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fnuf;
 import java.util.HashMap;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class NearbyConnectionsIntentOperation extends IntentOperation {
-    private acqf e;
-    private static final arxo c = new arxo("ProximityAuth", "NearbyConnectionsIntentOperation");
+    private aeqf e;
+    private static final auad c = new auad("ProximityAuth", "NearbyConnectionsIntentOperation");
     public static final Map a = new HashMap();
-    private static final acfo d = new acfo();
+    private static final aefo d = new aefo();
     public static boolean b = false;
 
     public static Intent a(Context context) {
@@ -33,67 +33,67 @@ public class NearbyConnectionsIntentOperation extends IntentOperation {
     }
 
     private final void c(int i) {
-        if (!flcw.y() || this.e == null) {
+        if (!fnuf.y() || this.e == null) {
             return;
         }
-        if (!flcw.H()) {
-            acqf acqfVar = this.e;
-            if (flcw.y()) {
+        if (!fnuf.H()) {
+            aeqf aeqfVar = this.e;
+            if (fnuf.y()) {
                 int i2 = i - 1;
-                acqfVar.b();
-                fecj v = ezat.a.v();
-                acqfVar.e(v, "NearbyConnectionAdvertisementEvent");
-                fecj v2 = ezaq.a.v();
+                aeqfVar.b();
+                fgrc v = fbph.a.v();
+                aeqfVar.e(v, "NearbyConnectionAdvertisementEvent");
+                fgrc v2 = fbpe.a.v();
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                ezaq ezaqVar = (ezaq) v2.b;
-                ezaqVar.c = i2;
-                ezaqVar.b |= 1;
-                ezaq ezaqVar2 = (ezaq) v2.Q();
+                fbpe fbpeVar = (fbpe) v2.b;
+                fbpeVar.c = i2;
+                fbpeVar.b |= 1;
+                fbpe fbpeVar2 = (fbpe) v2.Q();
                 if (!v.b.L()) {
                     v.U();
                 }
-                ezat ezatVar = (ezat) v.b;
-                ezaqVar2.getClass();
-                ezatVar.d = ezaqVar2;
-                ezatVar.c = 3;
-                brzd.v().f((ezat) v.Q());
+                fbph fbphVar = (fbph) v.b;
+                fbpeVar2.getClass();
+                fbphVar.d = fbpeVar2;
+                fbphVar.c = 3;
+                bugy.v().f((fbph) v.Q());
                 return;
             }
             return;
         }
-        acqf acqfVar2 = this.e;
+        aeqf aeqfVar2 = this.e;
         boolean z = b;
-        if (flcw.y()) {
+        if (fnuf.y()) {
             int i3 = i - 1;
-            acqfVar2.b();
-            fecj v3 = ezat.a.v();
-            acqfVar2.e(v3, "NearbyConnectionAdvertisementEvent");
-            fecj v4 = ezaq.a.v();
+            aeqfVar2.b();
+            fgrc v3 = fbph.a.v();
+            aeqfVar2.e(v3, "NearbyConnectionAdvertisementEvent");
+            fgrc v4 = fbpe.a.v();
             if (!v4.b.L()) {
                 v4.U();
             }
-            fecp fecpVar = v4.b;
-            ezaq ezaqVar3 = (ezaq) fecpVar;
-            ezaqVar3.c = i3;
-            ezaqVar3.b |= 1;
+            fgri fgriVar = v4.b;
+            fbpe fbpeVar3 = (fbpe) fgriVar;
+            fbpeVar3.c = i3;
+            fbpeVar3.b |= 1;
             int i4 = true != z ? 2 : 3;
-            if (!fecpVar.L()) {
+            if (!fgriVar.L()) {
                 v4.U();
             }
-            ezaq ezaqVar4 = (ezaq) v4.b;
-            ezaqVar4.d = i4 - 1;
-            ezaqVar4.b = 2 | ezaqVar4.b;
-            ezaq ezaqVar5 = (ezaq) v4.Q();
+            fbpe fbpeVar4 = (fbpe) v4.b;
+            fbpeVar4.d = i4 - 1;
+            fbpeVar4.b = 2 | fbpeVar4.b;
+            fbpe fbpeVar5 = (fbpe) v4.Q();
             if (!v3.b.L()) {
                 v3.U();
             }
-            ezat ezatVar2 = (ezat) v3.b;
-            ezaqVar5.getClass();
-            ezatVar2.d = ezaqVar5;
-            ezatVar2.c = 3;
-            brzd.v().f((ezat) v3.Q());
+            fbph fbphVar2 = (fbph) v3.b;
+            fbpeVar5.getClass();
+            fbphVar2.d = fbpeVar5;
+            fbphVar2.c = 3;
+            bugy.v().f((fbph) v3.Q());
         }
     }
 

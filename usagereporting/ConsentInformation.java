@@ -3,28 +3,28 @@ package com.google.android.gms.usagereporting;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.dhoz;
-import defpackage.dhpb;
-import defpackage.fijq;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.dkaf;
+import defpackage.dkah;
+import defpackage.fkzn;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ConsentInformation extends AbstractSafeParcelable {
     public final boolean b;
     public final boolean c;
     private final List d;
     public static final ConsentInformation a = new ConsentInformation(null, false, false);
-    public static final Parcelable.Creator CREATOR = new dhpb();
+    public static final Parcelable.Creator CREATOR = new dkah();
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class AccountConsentInformation extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dhoz();
+        public static final Parcelable.Creator CREATOR = new dkaf();
         public final String a;
         public final byte[] b;
         private final List c;
@@ -35,9 +35,9 @@ public class ConsentInformation extends AbstractSafeParcelable {
             this.c = list == null ? new ArrayList(0) : new ArrayList(list);
         }
 
-        public static AccountConsentInformation a(String str, fijq fijqVar, List list) {
-            arwm.t(fijqVar, "Account Consents proto cannot be null");
-            return new AccountConsentInformation(str, fijqVar.r(), list);
+        public static AccountConsentInformation a(String str, fkzn fkznVar, List list) {
+            atzb.t(fkznVar, "Account Consents proto cannot be null");
+            return new AccountConsentInformation(str, fkznVar.r(), list);
         }
 
         public final List b() {
@@ -52,7 +52,7 @@ public class ConsentInformation extends AbstractSafeParcelable {
                 return false;
             }
             AccountConsentInformation accountConsentInformation = (AccountConsentInformation) obj;
-            return arwb.b(this.a, accountConsentInformation.a) && arwb.b(this.b, accountConsentInformation.b) && arwb.b(this.c, accountConsentInformation.c);
+            return atyq.b(this.a, accountConsentInformation.a) && atyq.b(this.b, accountConsentInformation.b) && atyq.b(this.c, accountConsentInformation.c);
         }
 
         public final int hashCode() {
@@ -62,11 +62,11 @@ public class ConsentInformation extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             String str = this.a;
-            int a = arxc.a(parcel);
-            arxc.v(parcel, 1, str, false);
-            arxc.i(parcel, 2, this.b, false);
-            arxc.E(parcel, 3, b());
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.v(parcel, 1, str, false);
+            atzr.i(parcel, 2, this.b, false);
+            atzr.E(parcel, 3, b());
+            atzr.c(parcel, a);
         }
     }
 
@@ -88,7 +88,7 @@ public class ConsentInformation extends AbstractSafeParcelable {
             return false;
         }
         ConsentInformation consentInformation = (ConsentInformation) obj;
-        return arwb.b(this.d, consentInformation.d) && arwb.b(Boolean.valueOf(this.b), Boolean.valueOf(consentInformation.b));
+        return atyq.b(this.d, consentInformation.d) && atyq.b(Boolean.valueOf(this.b), Boolean.valueOf(consentInformation.b));
     }
 
     public final int hashCode() {
@@ -97,10 +97,10 @@ public class ConsentInformation extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.y(parcel, 1, a(), false);
-        arxc.e(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.y(parcel, 1, a(), false);
+        atzr.e(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.c(parcel, a2);
     }
 }

@@ -6,44 +6,44 @@ import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.droidguard.DroidGuardResultsRequest;
 import com.google.android.gms.findmydevice.spot.locationreporting.LocationReportUploadIntentOperation;
-import defpackage.aptt;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.axqv;
-import defpackage.axqy;
-import defpackage.axre;
-import defpackage.bcyq;
-import defpackage.bcyr;
-import defpackage.bdak;
-import defpackage.bdap;
-import defpackage.bebc;
-import defpackage.bebo;
-import defpackage.bebp;
-import defpackage.bebs;
-import defpackage.belc;
-import defpackage.beup;
-import defpackage.bfdp;
-import defpackage.bqqa;
-import defpackage.bvxr;
-import defpackage.dwep;
-import defpackage.dwer;
-import defpackage.dwup;
-import defpackage.egmx;
-import defpackage.eiho;
-import defpackage.eiig;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.ensv;
-import defpackage.euiq;
-import defpackage.ezcr;
-import defpackage.ezcu;
-import defpackage.ezcw;
-import defpackage.feay;
-import defpackage.fobh;
-import defpackage.ftya;
-import defpackage.unx;
+import defpackage.arwk;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.azuv;
+import defpackage.azuy;
+import defpackage.azve;
+import defpackage.bfac;
+import defpackage.bfad;
+import defpackage.bfbw;
+import defpackage.bfcb;
+import defpackage.bgco;
+import defpackage.bgda;
+import defpackage.bgdb;
+import defpackage.bgde;
+import defpackage.bgmo;
+import defpackage.bgwc;
+import defpackage.bhff;
+import defpackage.bsxr;
+import defpackage.bygd;
+import defpackage.dyqq;
+import defpackage.dyqs;
+import defpackage.dzgp;
+import defpackage.ejaa;
+import defpackage.ekut;
+import defpackage.ekvl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.eqgo;
+import defpackage.ewyj;
+import defpackage.fbrg;
+import defpackage.fbrj;
+import defpackage.fbrl;
+import defpackage.fgpr;
+import defpackage.fqtb;
+import defpackage.fwty;
+import defpackage.wjw;
 import j$.util.Objects;
 import java.util.HashMap;
 import java.util.List;
@@ -51,236 +51,236 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class LocationReportUploadIntentOperation extends IntentOperation {
-    public static final asot a = asot.b("LocationReportUplIntOp", asej.FIND_MY_DEVICE_SPOT);
-    public static final aptt b = new aptt(5);
-    public final bebp c;
-    public final beup d;
-    public final bdak e;
+    public static final ausn a = ausn.b("LocationReportUplIntOp", auid.FIND_MY_DEVICE_SPOT);
+    public static final arwk b = new arwk(5);
+    public final bgdb c;
+    public final bgwc d;
+    public final bfbw e;
     public final Context f;
-    public final ensv g;
-    public final bcyq h;
-    public final bqqa i;
+    public final eqgo g;
+    public final bfac h;
+    public final bsxr i;
     private final Map j;
-    private final belc k;
-    private final bebs l;
+    private final bgmo k;
+    private final bgde l;
 
     public LocationReportUploadIntentOperation() {
-        this(bebo.a());
+        this(bgda.a());
     }
 
-    public static ezcu b(Throwable th) {
-        if (th instanceof bcyr) {
-            bcyr bcyrVar = (bcyr) th;
-            if ((bcyrVar.getCause() instanceof unx) || bcyrVar.c(ftya.UNAUTHENTICATED)) {
-                return ezcu.FAILED_UNAUTHENTICATED;
+    public static fbrj b(Throwable th) {
+        if (th instanceof bfad) {
+            bfad bfadVar = (bfad) th;
+            if ((bfadVar.getCause() instanceof wjw) || bfadVar.c(fwty.UNAUTHENTICATED)) {
+                return fbrj.FAILED_UNAUTHENTICATED;
             }
-            if (bcyrVar.b()) {
-                return ezcu.FAILED_NO_NETWORK;
+            if (bfadVar.b()) {
+                return fbrj.FAILED_NO_NETWORK;
             }
         }
-        return ezcu.FAILED_UNEXPECTED_ERROR;
+        return fbrj.FAILED_UNEXPECTED_ERROR;
     }
 
-    public static final void d(final ezcw ezcwVar, final String str, final ezcu ezcuVar, final int i) {
-        bvxr.v().f(bdap.a(ezcr.SIGHTING_BATCH_UPLOAD, new eiho() { // from class: bekp
-            @Override // defpackage.eiho
+    public static final void d(final fbrl fbrlVar, final String str, final fbrj fbrjVar, final int i) {
+        bygd.v().f(bfcb.a(fbrg.SIGHTING_BATCH_UPLOAD, new ekut() { // from class: bgmb
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                fecj fecjVar = (fecj) obj;
-                asot asotVar = LocationReportUploadIntentOperation.a;
-                fecj v = ezcv.a.v();
+                fgrc fgrcVar = (fgrc) obj;
+                ausn ausnVar = LocationReportUploadIntentOperation.a;
+                fgrc v = fbrk.a.v();
                 if (!v.b.L()) {
                     v.U();
                 }
                 String str2 = str;
-                ezcu ezcuVar2 = ezcu.this;
-                ezcv ezcvVar = (ezcv) v.b;
-                ezcvVar.e = ezcuVar2.a();
-                ezcvVar.b |= 4;
-                ezct ezctVar = str2 == null ? ezct.UNNOWN_SCHEDULING_MECHANISM : str2.equals("BATCH_UPLOAD_TRIGGERED_BY_GMS_TASK") ? ezct.GMS_TASK : str2.equals("BATCH_UPLOAD_TRIGGERED_BY_FAST_EXECUTOR_SERVICE") ? ezct.FAST_EXECUTOR : str2.equals("BATCH_UPLOAD_TRIGGERED_BY_FAST_EXECUTOR_SERVICE_ACTIVE_NETWORK") ? ezct.FAST_EXECUTOR_ACTIVE_NETWORK : ezct.UNNOWN_SCHEDULING_MECHANISM;
+                fbrj fbrjVar2 = fbrj.this;
+                fbrk fbrkVar = (fbrk) v.b;
+                fbrkVar.e = fbrjVar2.a();
+                fbrkVar.b |= 4;
+                fbri fbriVar = str2 == null ? fbri.UNNOWN_SCHEDULING_MECHANISM : str2.equals("BATCH_UPLOAD_TRIGGERED_BY_GMS_TASK") ? fbri.GMS_TASK : str2.equals("BATCH_UPLOAD_TRIGGERED_BY_FAST_EXECUTOR_SERVICE") ? fbri.FAST_EXECUTOR : str2.equals("BATCH_UPLOAD_TRIGGERED_BY_FAST_EXECUTOR_SERVICE_ACTIVE_NETWORK") ? fbri.FAST_EXECUTOR_ACTIVE_NETWORK : fbri.UNNOWN_SCHEDULING_MECHANISM;
                 if (!v.b.L()) {
                     v.U();
                 }
-                ezcv ezcvVar2 = (ezcv) v.b;
-                ezcvVar2.c = ezctVar.a();
-                ezcvVar2.b |= 1;
+                fbrk fbrkVar2 = (fbrk) v.b;
+                fbrkVar2.c = fbriVar.a();
+                fbrkVar2.b |= 1;
                 if (!v.b.L()) {
                     v.U();
                 }
-                ezcw ezcwVar2 = ezcwVar;
-                ezcv ezcvVar3 = (ezcv) v.b;
-                ezcvVar3.d = ezcwVar2.a();
-                ezcvVar3.b |= 2;
+                fbrl fbrlVar2 = fbrlVar;
+                fbrk fbrkVar3 = (fbrk) v.b;
+                fbrkVar3.d = fbrlVar2.a();
+                fbrkVar3.b |= 2;
                 if (!v.b.L()) {
                     v.U();
                 }
                 int i2 = i;
-                ezcv ezcvVar4 = (ezcv) v.b;
-                ezcvVar4.b |= 8;
-                ezcvVar4.f = i2;
-                if (!fecjVar.b.L()) {
-                    fecjVar.U();
+                fbrk fbrkVar4 = (fbrk) v.b;
+                fbrkVar4.b |= 8;
+                fbrkVar4.f = i2;
+                if (!fgrcVar.b.L()) {
+                    fgrcVar.U();
                 }
-                ezcq ezcqVar = (ezcq) fecjVar.b;
-                ezcv ezcvVar5 = (ezcv) v.Q();
-                ezcq ezcqVar2 = ezcq.a;
-                ezcvVar5.getClass();
-                ezcqVar.f = ezcvVar5;
-                ezcqVar.b |= 8;
-                return fecjVar;
+                fbrf fbrfVar = (fbrf) fgrcVar.b;
+                fbrk fbrkVar5 = (fbrk) v.Q();
+                fbrf fbrfVar2 = fbrf.a;
+                fbrkVar5.getClass();
+                fbrfVar.f = fbrkVar5;
+                fbrfVar.b |= 8;
+                return fgrcVar;
             }
         }));
     }
 
-    public final enss a(final euiq euiqVar, final Queue queue) {
+    public final eqgl a(final ewyj ewyjVar, final Queue queue) {
         Account account = (Account) queue.poll();
-        eiig.x(account);
-        bebc c = c(account);
-        dwer dwerVar = new dwer(c.s(), (Executor) c.P.b.a());
-        dwep dwepVar = dwerVar.b;
-        final feay ng = euiqVar.ng();
-        return egmx.f(egmx.f(egmx.f(dwepVar.a(false)).h(new eiho() { // from class: dwej
-            @Override // defpackage.eiho
+        ekvl.y(account);
+        bgco c = c(account);
+        dyqs dyqsVar = new dyqs(c.s(), (Executor) c.P.b.a());
+        dyqq dyqqVar = dyqsVar.b;
+        final fgpr nD = ewyjVar.nD();
+        return ejaa.g(ejaa.g(ejaa.g(dyqqVar.a(false)).h(new ekut() { // from class: dyqk
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                dwzb dwzbVar = ((dwzc) obj).c;
-                if (dwzbVar == null) {
-                    dwzbVar = dwzb.a;
+                dzlb dzlbVar = ((dzlc) obj).c;
+                if (dzlbVar == null) {
+                    dzlbVar = dzlb.a;
                 }
-                return dwzbVar.c;
+                return dzlbVar.c;
             }
-        }, enre.a)).i(new enqc() { // from class: dweq
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                int i = dwer.c;
-                return ensj.i(feay.w(((eoca) eocl.j(((feay) obj).M()).l(eoqk.a, eoca.class)).a(feay.this.M(), null)));
+        }, eqex.a)).i(new eqdv() { // from class: dyqr
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                int i = dyqs.c;
+                return eqgc.i(fgpr.w(((eqpt) eqqe.j(((fgpr) obj).M()).l(ereg.a, eqpt.class)).a(fgpr.this.M(), null)));
             }
-        }, dwerVar.a)).e(Throwable.class, new enqc() { // from class: bekl
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+        }, dyqsVar.a)).f(Throwable.class, new eqdv() { // from class: bglx
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 Throwable th = (Throwable) obj;
-                ((ejhf) ((ejhf) ((ejhf) LocationReportUploadIntentOperation.a.i()).s(th)).ah((char) 4247)).x("Failed encrypting sightings batch.");
+                ((eluo) ((eluo) ((eluo) LocationReportUploadIntentOperation.a.i()).s(th)).ai((char) 4253)).x("Failed encrypting sightings batch.");
                 Queue queue2 = queue;
                 if (queue2.isEmpty()) {
-                    return ensj.h(th);
+                    return eqgc.h(th);
                 }
-                return LocationReportUploadIntentOperation.this.a(euiqVar, queue2);
+                return LocationReportUploadIntentOperation.this.a(ewyjVar, queue2);
             }
         }, this.g);
     }
 
-    public final bebc c(Account account) {
-        bebc bebcVar;
+    public final bgco c(Account account) {
+        bgco bgcoVar;
         Map map = this.j;
         synchronized (map) {
-            bebcVar = (bebc) map.get(account);
-            if (bebcVar == null) {
-                bebcVar = this.c.i().b(account);
-                map.put(account, bebcVar);
+            bgcoVar = (bgco) map.get(account);
+            if (bgcoVar == null) {
+                bgcoVar = this.c.i().b(account);
+                map.put(account, bgcoVar);
             }
         }
-        return bebcVar;
+        return bgcoVar;
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        enss enssVar;
-        if (bfdp.b(intent, "com.google.android.gms.findmydevice.spot.locationreporting.UPLOAD_SIGHTINGS")) {
+        eqgl eqglVar;
+        if (bhff.b(intent, "com.google.android.gms.findmydevice.spot.locationreporting.UPLOAD_SIGHTINGS")) {
             final String stringExtra = intent.getStringExtra("scheduled_by");
-            belc belcVar = this.k;
-            if (belcVar.e(stringExtra)) {
-                final axqy a2 = axqv.a("finder_crowdsourcedReport", new axre(this.l.a), new DroidGuardResultsRequest(), axqy.a, axqy.b);
-                egmx f = egmx.f(this.d.b());
-                enqc enqcVar = new enqc() { // from class: bekq
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj) {
-                        final beun beunVar = (beun) obj;
-                        eits eitsVar = beunVar.a;
-                        if (eitsVar.isEmpty()) {
-                            ((ejhf) ((ejhf) LocationReportUploadIntentOperation.a.j()).ah((char) 4255)).x("No sightings to upload.");
-                            return ensm.a;
+            bgmo bgmoVar = this.k;
+            if (bgmoVar.e(stringExtra)) {
+                final azuy a2 = azuv.a("finder_crowdsourcedReport", new azve(this.l.a), new DroidGuardResultsRequest(), azuy.a, azuy.b);
+                ejaa g = ejaa.g(this.d.b());
+                eqdv eqdvVar = new eqdv() { // from class: bgmc
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj) {
+                        final bgwa bgwaVar = (bgwa) obj;
+                        elgx elgxVar = bgwaVar.a;
+                        if (elgxVar.isEmpty()) {
+                            ((eluo) ((eluo) LocationReportUploadIntentOperation.a.j()).ai((char) 4261)).x("No sightings to upload.");
+                            return eqgf.a;
                         }
-                        ejfg listIterator = eitsVar.values().listIterator();
+                        elsn listIterator = elgxVar.values().listIterator();
                         final int i = 0;
                         while (listIterator.hasNext()) {
-                            i += ((euiq) listIterator.next()).c.size();
+                            i += ((ewyj) listIterator.next()).c.size();
                         }
                         final String str = stringExtra;
                         final LocationReportUploadIntentOperation locationReportUploadIntentOperation = LocationReportUploadIntentOperation.this;
-                        if (!fobk.e()) {
-                            locationReportUploadIntentOperation.e.a(new iru() { // from class: bekk
-                                @Override // defpackage.iru
+                        if (!fqte.e()) {
+                            locationReportUploadIntentOperation.e.a(new itk() { // from class: bglw
+                                @Override // defpackage.itk
                                 public final void a(Object obj2) {
-                                    apud apudVar = (apud) obj2;
-                                    aptz m = apudVar.m("SIGHTINGS_PER_BATCH", LocationReportUploadIntentOperation.b);
-                                    aptt apttVar = m.g;
+                                    arwu arwuVar = (arwu) obj2;
+                                    arwq m = arwuVar.m("SIGHTINGS_PER_BATCH", LocationReportUploadIntentOperation.b);
+                                    arwk arwkVar = m.g;
                                     long j = i;
-                                    aptw aptwVar = apud.b;
-                                    m.a(apttVar.a(j), 1L, aptwVar);
-                                    apudVar.d("COLLECTED_BATCHES").a(0L, 1L, aptwVar);
+                                    arwn arwnVar = arwu.b;
+                                    m.a(arwkVar.a(j), 1L, arwnVar);
+                                    arwuVar.d("COLLECTED_BATCHES").a(0L, 1L, arwnVar);
                                     String str2 = str;
                                     if (str2 != null) {
-                                        apudVar.d(str2).a(0L, 1L, aptwVar);
+                                        arwuVar.d(str2).a(0L, 1L, arwnVar);
                                     }
                                 }
                             });
                         }
                         Context context = locationReportUploadIntentOperation.f;
-                        final List h = asnd.h(context, context.getPackageName());
+                        final List h = auqx.h(context, context.getPackageName());
                         if (h.isEmpty()) {
-                            ((ejhf) ((ejhf) LocationReportUploadIntentOperation.a.j()).ah((char) 4254)).x("No Google accounts available to upload sightings.");
-                            return ensm.a;
+                            ((eluo) ((eluo) LocationReportUploadIntentOperation.a.j()).ai((char) 4260)).x("No Google accounts available to upload sightings.");
+                            return eqgf.a;
                         }
-                        final axqy axqyVar = a2;
-                        return egmx.f(locationReportUploadIntentOperation.c.F().f()).i(new enqc() { // from class: beks
+                        final azuy azuyVar = a2;
+                        return ejaa.g(locationReportUploadIntentOperation.c.F().f()).i(new eqdv() { // from class: bgme
                             /* JADX WARN: Code restructure failed: missing block: B:26:0x0079, code lost:
                             
-                                if (defpackage.bego.c(r4) != false) goto L17;
+                                if (defpackage.bgia.c(r4) != false) goto L17;
                              */
-                            @Override // defpackage.enqc
+                            @Override // defpackage.eqdv
                             /*
                                 Code decompiled incorrectly, please refer to instructions dump.
                                 To view partially-correct code enable 'Show inconsistent code' option in preferences
                             */
-                            public final defpackage.enss a(java.lang.Object r19) {
+                            public final defpackage.eqgl a(java.lang.Object r19) {
                                 /*
                                     Method dump skipped, instructions count: 268
                                     To view this dump change 'Code comments level' option to 'DEBUG'
                                 */
-                                throw new UnsupportedOperationException("Method not decompiled: defpackage.beks.a(java.lang.Object):enss");
+                                throw new UnsupportedOperationException("Method not decompiled: defpackage.bgme.a(java.lang.Object):eqgl");
                             }
                         }, locationReportUploadIntentOperation.g);
                     }
                 };
-                ensv ensvVar = this.g;
-                egmx i = f.i(enqcVar, ensvVar);
+                eqgo eqgoVar = this.g;
+                ejaa i = g.i(eqdvVar, eqgoVar);
                 Objects.requireNonNull(a2);
-                i.hn(new Runnable() { // from class: bekr
+                i.hD(new Runnable() { // from class: bgmd
                     @Override // java.lang.Runnable
                     public final void run() {
-                        axqy.this.close();
+                        azuy.this.close();
                     }
-                }, ensvVar);
-                enssVar = i;
+                }, eqgoVar);
+                eqglVar = i;
             } else {
-                belcVar.d(false, !fobh.j());
-                enssVar = ensm.a;
+                bgmoVar.d(false, !fqtb.j());
+                eqglVar = eqgf.a;
             }
-            dwup.a("Location report upload", enssVar);
+            dzgp.a("Location report upload", eqglVar);
         }
     }
 
-    public LocationReportUploadIntentOperation(bebp bebpVar) {
-        this.c = bebpVar;
+    public LocationReportUploadIntentOperation(bgdb bgdbVar) {
+        this.c = bgdbVar;
         this.j = new HashMap();
-        this.d = bebpVar.v();
-        this.k = bebpVar.n();
-        this.h = bebpVar.Q();
-        this.e = bebpVar.g();
-        this.f = bebpVar.c();
-        this.l = bebpVar.S();
-        this.g = bebpVar.G();
-        this.i = bebpVar.X();
+        this.d = bgdbVar.v();
+        this.k = bgdbVar.n();
+        this.h = bgdbVar.Q();
+        this.e = bgdbVar.g();
+        this.f = bgdbVar.c();
+        this.l = bgdbVar.S();
+        this.g = bgdbVar.G();
+        this.i = bgdbVar.X();
     }
 }

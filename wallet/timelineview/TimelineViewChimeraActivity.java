@@ -7,25 +7,25 @@ import android.support.v7.widget.Toolbar;
 import com.google.android.gms.R;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
 import com.google.android.wallet.clientlog.LogContext;
-import defpackage.arwm;
-import defpackage.diez;
-import defpackage.difa;
-import defpackage.ding;
-import defpackage.djea;
-import defpackage.djiq;
-import defpackage.emen;
-import defpackage.fsye;
-import defpackage.fsyr;
+import defpackage.atzb;
+import defpackage.dkqk;
+import defpackage.dkql;
+import defpackage.dkyr;
+import defpackage.dlpt;
+import defpackage.dluj;
+import defpackage.eosb;
+import defpackage.fvty;
+import defpackage.fvul;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TimelineViewChimeraActivity extends diez {
+public class TimelineViewChimeraActivity extends dkqk {
     private byte[] h;
     private byte[] i;
 
     public static Intent Z(Context context, Intent intent, BuyFlowConfig buyFlowConfig) {
-        if (!fsyr.c()) {
-            return djiq.h(context, intent, buyFlowConfig, 24);
+        if (!fvul.c()) {
+            return dluj.h(context, intent, buyFlowConfig, 24);
         }
         Intent intent2 = new Intent();
         intent2.setClassName(context, "com.google.android.gms.wallet.timelineview.TimeLineViewActivity");
@@ -35,20 +35,20 @@ public class TimelineViewChimeraActivity extends diez {
         return intent2;
     }
 
-    @Override // defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         boolean z = true;
-        ding.C(this, l(), ding.j, true);
-        q(bundle, fsye.a.a().k(), 13, emen.FLOW_TYPE_TIMELINE_VIEW);
+        dkyr.C(this, l(), dkyr.j, true);
+        q(bundle, fvty.a.lK().k(), 13, eosb.FLOW_TYPE_TIMELINE_VIEW);
         super.onCreate(bundle);
-        difa.b(this);
+        dkql.b(this);
         setContentView(R.layout.wallet_activity_common);
         Intent intent = getIntent();
         this.h = intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS");
         this.i = intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_INITIALIZE_TOKEN");
         d((Toolbar) findViewById(R.id.toolbar));
-        kJ().o(true);
-        if (((djea) m()) == null) {
+        kY().o(true);
+        if (((dlpt) m()) == null) {
             byte[] bArr = this.h;
             byte[] bArr2 = this.i;
             BuyFlowConfig l = l();
@@ -59,18 +59,18 @@ public class TimelineViewChimeraActivity extends diez {
             if (!z2 && !z3) {
                 z = false;
             }
-            arwm.c(z, "Parameters or initializeToken is required to launch TimelineView.");
-            djea djeaVar = new djea();
-            Bundle bZ = djea.bZ(l, str, logContext);
+            atzb.c(z, "Parameters or initializeToken is required to launch TimelineView.");
+            dlpt dlptVar = new dlpt();
+            Bundle bY = dlpt.bY(l, str, logContext);
             if (bArr != null) {
-                bZ.putByteArray("parameters", bArr);
+                bY.putByteArray("parameters", bArr);
             }
             if (bArr2 != null) {
-                bZ.putByteArray("initializeToken", bArr2);
+                bY.putByteArray("initializeToken", bArr2);
             }
-            djeaVar.setArguments(bZ);
-            B(djeaVar, R.id.fragment_holder);
+            dlptVar.setArguments(bY);
+            B(dlptVar, R.id.fragment_holder);
         }
-        ding.A(findViewById(R.id.wallet_root));
+        dkyr.A(findViewById(R.id.wallet_root));
     }
 }

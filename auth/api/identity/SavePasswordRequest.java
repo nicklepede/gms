@@ -3,23 +3,23 @@ package com.google.android.gms.auth.api.identity;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.zdj;
+import defpackage.abde;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public class SavePasswordRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new zdj();
+    public static final Parcelable.Creator CREATOR = new abde();
     public final SignInPassword a;
     public final String b;
     public final int c;
 
     public SavePasswordRequest(SignInPassword signInPassword, String str, int i) {
-        arwm.s(signInPassword);
+        atzb.s(signInPassword);
         this.a = signInPassword;
         this.b = str;
         this.c = i;
@@ -30,7 +30,7 @@ public class SavePasswordRequest extends AbstractSafeParcelable {
             return false;
         }
         SavePasswordRequest savePasswordRequest = (SavePasswordRequest) obj;
-        return arwb.b(this.a, savePasswordRequest.a) && arwb.b(this.b, savePasswordRequest.b) && this.c == savePasswordRequest.c;
+        return atyq.b(this.a, savePasswordRequest.a) && atyq.b(this.b, savePasswordRequest.b) && this.c == savePasswordRequest.c;
     }
 
     public final int hashCode() {
@@ -40,10 +40,10 @@ public class SavePasswordRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         SignInPassword signInPassword = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, signInPassword, i, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.o(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, signInPassword, i, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.o(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 }

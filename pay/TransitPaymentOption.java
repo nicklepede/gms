@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctew;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvob;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class TransitPaymentOption extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctew();
+    public static final Parcelable.Creator CREATOR = new cvob();
     public int a;
     public boolean b;
     public String c;
@@ -28,7 +28,7 @@ public final class TransitPaymentOption extends AbstractSafeParcelable {
         }
         if (obj instanceof TransitPaymentOption) {
             TransitPaymentOption transitPaymentOption = (TransitPaymentOption) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(transitPaymentOption.a)) && arwb.b(Boolean.valueOf(this.b), Boolean.valueOf(transitPaymentOption.b)) && arwb.b(this.c, transitPaymentOption.c) && arwb.b(this.d, transitPaymentOption.d) && arwb.b(this.e, transitPaymentOption.e) && arwb.b(this.f, transitPaymentOption.f)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(transitPaymentOption.a)) && atyq.b(Boolean.valueOf(this.b), Boolean.valueOf(transitPaymentOption.b)) && atyq.b(this.c, transitPaymentOption.c) && atyq.b(this.d, transitPaymentOption.d) && atyq.b(this.e, transitPaymentOption.e) && atyq.b(this.f, transitPaymentOption.f)) {
                 return true;
             }
         }
@@ -41,14 +41,14 @@ public final class TransitPaymentOption extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.e(parcel, 2, this.b);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.e(parcel, 2, this.b);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.c(parcel, a);
     }
 
     public TransitPaymentOption(int i, boolean z, String str, String str2, TicketOption ticketOption, OpenLoopMetadata openLoopMetadata) {

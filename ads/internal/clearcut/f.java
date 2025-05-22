@@ -3,7 +3,7 @@ package com.google.android.gms.ads.internal.clearcut;
 import android.os.Parcel;
 import android.os.RemoteException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class f {
     public int a;
@@ -21,24 +21,24 @@ public final class f {
             if (gVar.a) {
                 com.google.android.gms.ads.clearcut.a aVar = gVar.c;
                 byte[] bArr = this.c;
-                Parcel fr = aVar.fr();
-                fr.writeByteArray(bArr);
-                aVar.ft(5, fr);
+                Parcel fE = aVar.fE();
+                fE.writeByteArray(bArr);
+                aVar.fG(5, fE);
                 com.google.android.gms.ads.clearcut.a aVar2 = gVar.c;
-                Parcel fr2 = aVar2.fr();
-                fr2.writeInt(0);
-                aVar2.ft(6, fr2);
+                Parcel fE2 = aVar2.fE();
+                fE2.writeInt(0);
+                aVar2.fG(6, fE2);
                 com.google.android.gms.ads.clearcut.a aVar3 = gVar.c;
                 int i = this.a;
-                Parcel fr3 = aVar3.fr();
-                fr3.writeInt(i);
-                aVar3.ft(7, fr3);
+                Parcel fE3 = aVar3.fE();
+                fE3.writeInt(i);
+                aVar3.fG(7, fE3);
                 com.google.android.gms.ads.clearcut.a aVar4 = gVar.c;
-                Parcel fr4 = aVar4.fr();
-                fr4.writeIntArray(null);
-                aVar4.ft(4, fr4);
+                Parcel fE4 = aVar4.fE();
+                fE4.writeIntArray(null);
+                aVar4.fG(4, fE4);
                 com.google.android.gms.ads.clearcut.a aVar5 = gVar.c;
-                aVar5.ft(3, aVar5.fr());
+                aVar5.fG(3, aVar5.fE());
             }
         } catch (RemoteException e) {
             com.google.android.gms.ads.internal.util.client.h.e("Clearcut log failed", e);

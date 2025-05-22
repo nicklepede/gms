@@ -5,39 +5,39 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.SparseArray;
 import com.google.android.chimera.IntentOperation;
-import defpackage.caou;
-import defpackage.caov;
-import defpackage.ejhf;
-import defpackage.irw;
+import defpackage.ccxk;
+import defpackage.ccxl;
+import defpackage.eluo;
+import defpackage.itm;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class NlpInternalApi$NlpReceiverIntentOperation extends IntentOperation {
     private static final AtomicInteger a = new AtomicInteger();
 
     public static PendingIntent a(Context context, int i) {
         PendingIntent pendingIntent = getPendingIntent(context, NlpInternalApi$NlpReceiverIntentOperation.class, new Intent("com.google.android.gms.location.util.nlp.RESULT").putExtra("NlpInternalApi:id", i), a.getAndIncrement(), 268435456, true);
-        irw.a(pendingIntent);
+        itm.a(pendingIntent);
         return pendingIntent;
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        caou caouVar;
+        ccxk ccxkVar;
         if ("com.google.android.gms.location.util.nlp.RESULT".equals(intent.getAction()) && intent.hasExtra("NlpInternalApi:id")) {
             int intExtra = intent.getIntExtra("NlpInternalApi:id", 0);
-            SparseArray sparseArray = caov.c;
+            SparseArray sparseArray = ccxl.c;
             synchronized (sparseArray) {
-                caouVar = (caou) sparseArray.get(intExtra);
+                ccxkVar = (ccxk) sparseArray.get(intExtra);
             }
-            if (caouVar == null) {
-                ((ejhf) ((ejhf) caov.a.h()).ah((char) 5662)).z("unregistered nlp listener id: %d", intExtra);
+            if (ccxkVar == null) {
+                ((eluo) ((eluo) ccxl.a.h()).ai((char) 5676)).z("unregistered nlp listener id: %d", intExtra);
                 return;
             }
-            Object obj = caouVar.b;
+            Object obj = ccxkVar.b;
             if (obj != null) {
-                caouVar.b(intent, obj);
+                ccxkVar.b(intent, obj);
             }
         }
     }

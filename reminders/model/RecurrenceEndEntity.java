@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxeq;
+import defpackage.atyq;
+import defpackage.czom;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RecurrenceEndEntity extends AbstractSafeParcelable implements RecurrenceEnd {
-    public static final Parcelable.Creator CREATOR = new cxeq();
+    public static final Parcelable.Creator CREATOR = new czom();
     public final DateTimeEntity a;
     public final Integer b;
     public final Boolean c;
@@ -28,7 +28,7 @@ public class RecurrenceEndEntity extends AbstractSafeParcelable implements Recur
     }
 
     public static boolean f(RecurrenceEnd recurrenceEnd, RecurrenceEnd recurrenceEnd2) {
-        return arwb.b(recurrenceEnd.c(), recurrenceEnd2.c()) && arwb.b(recurrenceEnd.e(), recurrenceEnd2.e()) && arwb.b(recurrenceEnd.d(), recurrenceEnd2.d()) && arwb.b(recurrenceEnd.a(), recurrenceEnd2.a());
+        return atyq.b(recurrenceEnd.c(), recurrenceEnd2.c()) && atyq.b(recurrenceEnd.e(), recurrenceEnd2.e()) && atyq.b(recurrenceEnd.d(), recurrenceEnd2.d()) && atyq.b(recurrenceEnd.a(), recurrenceEnd2.a());
     }
 
     @Override // com.google.android.gms.reminders.model.RecurrenceEnd
@@ -67,7 +67,7 @@ public class RecurrenceEndEntity extends AbstractSafeParcelable implements Recur
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxeq.a(this, parcel, i);
+        czom.a(this, parcel, i);
     }
 
     public RecurrenceEndEntity(DateTime dateTime, Integer num, Boolean bool, DateTime dateTime2, boolean z) {
@@ -86,7 +86,7 @@ public class RecurrenceEndEntity extends AbstractSafeParcelable implements Recur
         this(recurrenceEnd.c(), recurrenceEnd.e(), recurrenceEnd.d(), recurrenceEnd.a(), false);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

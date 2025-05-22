@@ -7,13 +7,13 @@ import com.google.android.gms.auth.firstparty.shared.AccountCredentials;
 import com.google.android.gms.auth.firstparty.shared.AppDescription;
 import com.google.android.gms.auth.firstparty.shared.CaptchaSolution;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aayx;
-import defpackage.arxc;
+import defpackage.acyx;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GoogleAccountSetupRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new aayx();
+    public static final Parcelable.Creator CREATOR = new acyx();
     final int a;
     final Bundle b;
     public boolean c;
@@ -56,26 +56,26 @@ public class GoogleAccountSetupRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.g(parcel, 2, this.b, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.e(parcel, 4, this.d);
-        arxc.e(parcel, 5, this.e);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.v(parcel, 9, this.i, false);
-        arxc.e(parcel, 10, this.j);
-        arxc.e(parcel, 11, this.k);
-        arxc.e(parcel, 12, this.l);
-        arxc.v(parcel, 13, this.m, false);
-        arxc.t(parcel, 14, this.n, i, false);
-        arxc.t(parcel, 15, this.o, i, false);
-        arxc.t(parcel, 16, this.p, i, false);
-        arxc.v(parcel, 17, this.q, false);
-        arxc.v(parcel, 18, this.r, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.g(parcel, 2, this.b, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.e(parcel, 4, this.d);
+        atzr.e(parcel, 5, this.e);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.v(parcel, 9, this.i, false);
+        atzr.e(parcel, 10, this.j);
+        atzr.e(parcel, 11, this.k);
+        atzr.e(parcel, 12, this.l);
+        atzr.v(parcel, 13, this.m, false);
+        atzr.t(parcel, 14, this.n, i, false);
+        atzr.t(parcel, 15, this.o, i, false);
+        atzr.t(parcel, 16, this.p, i, false);
+        atzr.v(parcel, 17, this.q, false);
+        atzr.v(parcel, 18, this.r, false);
+        atzr.c(parcel, a);
     }
 
     public GoogleAccountSetupRequest() {

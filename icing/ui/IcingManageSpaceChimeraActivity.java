@@ -10,24 +10,24 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.google.android.gms.R;
-import defpackage.blmk;
-import defpackage.blux;
-import defpackage.blva;
-import defpackage.fpad;
-import defpackage.ijv;
-import defpackage.qet;
+import defpackage.bntc;
+import defpackage.bobp;
+import defpackage.bobs;
+import defpackage.frtk;
+import defpackage.ill;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class IcingManageSpaceChimeraActivity extends qet implements AdapterView.OnItemClickListener {
+public class IcingManageSpaceChimeraActivity extends rxx implements AdapterView.OnItemClickListener {
     public View j;
     public View k;
     public TextView l;
     public ListView m;
     public TextView n;
-    private blux o;
+    private bobp o;
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.icing_manage_space_activity);
@@ -42,7 +42,7 @@ public class IcingManageSpaceChimeraActivity extends qet implements AdapterView.
         this.m.setEmptyView(textView);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.icing_manage_settings_menu, menu);
         return true;
@@ -50,46 +50,46 @@ public class IcingManageSpaceChimeraActivity extends qet implements AdapterView.
 
     @Override // android.widget.AdapterView.OnItemClickListener
     public final void onItemClick(AdapterView adapterView, View view, int i, long j) {
-        blva blvaVar = (blva) this.m.getAdapter();
-        if (blvaVar == null || i < 0 || i >= blvaVar.getCount()) {
+        bobs bobsVar = (bobs) this.m.getAdapter();
+        if (bobsVar == null || i < 0 || i >= bobsVar.getCount()) {
             return;
         }
-        String str = blvaVar.getItem(i).a;
+        String str = bobsVar.getItem(i).a;
         Intent intent = new Intent();
         intent.setAction("android.settings.APPLICATION_DETAILS_SETTINGS");
         intent.setData(Uri.fromParts("package", str, null));
         startActivity(intent);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() == R.id.icing_settings_help) {
-            startActivity(new Intent("android.intent.action.VIEW", Uri.parse(fpad.a.a().B())));
+            startActivity(new Intent("android.intent.action.VIEW", Uri.parse(frtk.a.lK().B())));
             return true;
         }
         if (menuItem.getItemId() != 16908332) {
             return super.onOptionsItemSelected(menuItem);
         }
-        ijv.e(getContainerActivity());
+        ill.e(getContainerActivity());
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
-        blux bluxVar = this.o;
-        if (bluxVar != null) {
-            bluxVar.cancel(true);
+        bobp bobpVar = this.o;
+        if (bobpVar != null) {
+            bobpVar.cancel(true);
             this.o = null;
         }
         super.onPause();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        blux bluxVar = new blux(this);
-        this.o = bluxVar;
-        bluxVar.execute(new Void[0]);
-        new blmk(getApplicationContext()).p(8004);
+        bobp bobpVar = new bobp(this);
+        this.o = bobpVar;
+        bobpVar.execute(new Void[0]);
+        new bntc(getApplicationContext()).p(8004);
     }
 }

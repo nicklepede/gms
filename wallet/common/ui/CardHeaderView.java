@@ -9,14 +9,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.wallet.ui.common.ImageWithCaptionView;
-import defpackage.efwh;
-import defpackage.efwo;
-import defpackage.ehqo;
-import defpackage.eias;
-import defpackage.iuf;
-import defpackage.iuo;
+import defpackage.eijk;
+import defpackage.eijr;
+import defpackage.ekdu;
+import defpackage.ekny;
+import defpackage.ivv;
+import defpackage.iwe;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class CardHeaderView extends LinearLayout implements View.OnClickListener {
     TextView a;
@@ -28,8 +28,8 @@ public class CardHeaderView extends LinearLayout implements View.OnClickListener
     public ImageWithCaptionView g;
     boolean h;
     public boolean i;
-    public ehqo j;
-    public efwh k;
+    public ekdu j;
+    public eijk k;
     public String l;
     public String m;
 
@@ -43,7 +43,7 @@ public class CardHeaderView extends LinearLayout implements View.OnClickListener
     }
 
     public final void b(String str) {
-        efwo.E(this.a, str);
+        eijr.E(this.a, str);
     }
 
     public final void c(boolean z) {
@@ -65,24 +65,24 @@ public class CardHeaderView extends LinearLayout implements View.OnClickListener
         this.d.setVisibility(true != this.h ? 8 : 0);
         this.c.setVisibility(true != this.h ? 0 : 8);
         c(z);
-        ehqo ehqoVar = this.j;
-        if (ehqoVar != null) {
-            b(this.h ? ehqoVar.c == 2 ? (String) ehqoVar.d : "" : ehqoVar.h);
-            efwo.E(this.b, this.h ? this.j.f : this.j.i);
+        ekdu ekduVar = this.j;
+        if (ekduVar != null) {
+            b(this.h ? ekduVar.c == 2 ? (String) ekduVar.d : "" : ekduVar.h);
+            eijr.E(this.b, this.h ? this.j.f : this.j.i);
         }
     }
 
     @Override // android.view.View.OnClickListener
     public void onClick(View view) {
-        efwh efwhVar;
-        if (view != this.g || (efwhVar = this.k) == null) {
+        eijk eijkVar;
+        if (view != this.g || (eijkVar = this.k) == null) {
             return;
         }
-        eias eiasVar = this.j.j;
-        if (eiasVar == null) {
-            eiasVar = eias.a;
+        ekny eknyVar = this.j.j;
+        if (eknyVar == null) {
+            eknyVar = ekny.a;
         }
-        efwhVar.co(eiasVar);
+        eijkVar.cn(eknyVar);
     }
 
     @Override // android.view.View
@@ -90,8 +90,8 @@ public class CardHeaderView extends LinearLayout implements View.OnClickListener
         super.onFinishInflate();
         TextView textView = (TextView) findViewById(R.id.title);
         this.a = textView;
-        int[] iArr = iuo.a;
-        iuf.l(textView, "excludeViewFromChangeBounds");
+        int[] iArr = iwe.a;
+        ivv.l(textView, "excludeViewFromChangeBounds");
         this.a.setTag(R.id.summary_expander_transition_name, "summaryField");
         TextView textView2 = (TextView) findViewById(R.id.subtitle);
         this.b = textView2;
@@ -105,14 +105,14 @@ public class CardHeaderView extends LinearLayout implements View.OnClickListener
         this.e = (ImageView) findViewById(R.id.expand_collapse_icon);
         ImageWithCaptionView imageWithCaptionView = (ImageWithCaptionView) findViewById(R.id.tooltip_view);
         this.g = imageWithCaptionView;
-        imageWithCaptionView.c(efwo.al(getContext(), 105, -1));
+        imageWithCaptionView.c(eijr.al(getContext(), 105, -1));
         this.g.setOnClickListener(this);
     }
 
     @Override // android.view.View
     public final void setEnabled(boolean z) {
         super.setEnabled(z);
-        efwo.N(this, z);
+        eijr.N(this, z);
     }
 
     public CardHeaderView(Context context, AttributeSet attributeSet) {

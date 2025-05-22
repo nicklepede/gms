@@ -7,11 +7,11 @@ import android.os.IInterface;
 import android.os.RemoteException;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
-import defpackage.bhym;
-import defpackage.bhyo;
-import defpackage.bhyq;
+import defpackage.bkdb;
+import defpackage.bkdd;
+import defpackage.bkdf;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class GcmServiceDiagnosticsIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
@@ -22,10 +22,10 @@ public final class GcmServiceDiagnosticsIntentOperation extends IntentOperation 
             return;
         }
         IInterface queryLocalInterface = binder.queryLocalInterface("com.google.android.gms.gcm.IGcmServiceDiagnosticsCallback");
-        bhyq bhyoVar = queryLocalInterface instanceof bhyq ? (bhyq) queryLocalInterface : new bhyo(binder);
-        if (bhyoVar != null) {
+        bkdf bkddVar = queryLocalInterface instanceof bkdf ? (bkdf) queryLocalInterface : new bkdd(binder);
+        if (bkddVar != null) {
             try {
-                bhyoVar.a(new bhym(this));
+                bkddVar.a(new bkdb(this));
             } catch (RemoteException e) {
                 Log.e("GCM", "Failed to return GcmServiceDiagnostics.", e);
             }

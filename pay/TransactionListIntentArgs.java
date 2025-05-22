@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cter;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvnw;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class TransactionListIntentArgs extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cter();
+    public static final Parcelable.Creator CREATOR = new cvnw();
     public GooglePaymentMethodId[] a;
     public int b;
     public int c;
@@ -26,7 +26,7 @@ public final class TransactionListIntentArgs extends AbstractSafeParcelable {
         }
         if (obj instanceof TransactionListIntentArgs) {
             TransactionListIntentArgs transactionListIntentArgs = (TransactionListIntentArgs) obj;
-            if (Arrays.equals(this.a, transactionListIntentArgs.a) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(transactionListIntentArgs.b)) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(transactionListIntentArgs.c)) && arwb.b(this.d, transactionListIntentArgs.d)) {
+            if (Arrays.equals(this.a, transactionListIntentArgs.a) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(transactionListIntentArgs.b)) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(transactionListIntentArgs.c)) && atyq.b(this.d, transactionListIntentArgs.d)) {
                 return true;
             }
         }
@@ -39,12 +39,12 @@ public final class TransactionListIntentArgs extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.J(parcel, 1, this.a, i);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.J(parcel, 1, this.a, i);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.c(parcel, a);
     }
 
     public TransactionListIntentArgs(GooglePaymentMethodId[] googlePaymentMethodIdArr, int i, int i2, Transaction transaction) {

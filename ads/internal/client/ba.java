@@ -2,37 +2,37 @@ package com.google.android.gms.ads.internal.client;
 
 import android.os.IInterface;
 import android.os.Parcel;
-import defpackage.otn;
-import defpackage.oto;
-import defpackage.tco;
+import defpackage.qmq;
+import defpackage.qmr;
+import defpackage.uyo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class ba extends otn implements IInterface {
-    private final tco a;
+public final class ba extends qmq implements IInterface {
+    private final uyo a;
 
-    public ba(tco tcoVar) {
+    public ba(uyo uyoVar) {
         super("com.google.android.gms.ads.internal.client.IFullScreenContentCallback");
-        this.a = tcoVar;
+        this.a = uyoVar;
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         if (i == 1) {
-            AdErrorParcel adErrorParcel = (AdErrorParcel) oto.a(parcel, AdErrorParcel.CREATOR);
-            fq(parcel);
+            AdErrorParcel adErrorParcel = (AdErrorParcel) qmr.a(parcel, AdErrorParcel.CREATOR);
+            fD(parcel);
             if (this.a != null) {
                 adErrorParcel.a();
             }
         } else if (i == 2) {
-            tco tcoVar = this.a;
-            if (tcoVar != null) {
-                tcoVar.a.o();
+            uyo uyoVar = this.a;
+            if (uyoVar != null) {
+                uyoVar.a.o();
             }
         } else if (i == 3) {
-            tco tcoVar2 = this.a;
-            if (tcoVar2 != null) {
-                tcoVar2.a.e();
+            uyo uyoVar2 = this.a;
+            if (uyoVar2 != null) {
+                uyoVar2.a.e();
             }
         } else if (i != 4 && i != 5) {
             return false;

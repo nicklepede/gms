@@ -4,116 +4,128 @@ import android.R;
 import android.accounts.Account;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.AndroidRuntimeException;
 import android.view.View;
 import android.view.Window;
+import android.webkit.CookieManager;
 import com.google.android.gms.octarine.ui.OctarineChimeraActivity;
-import defpackage.asqh;
-import defpackage.bqnc;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.cslz;
-import defpackage.csma;
-import defpackage.csmb;
-import defpackage.cstq;
-import defpackage.csvc;
-import defpackage.csvt;
-import defpackage.cswz;
-import defpackage.cszh;
-import defpackage.eble;
-import defpackage.eijr;
-import defpackage.etke;
-import defpackage.fjul;
-import defpackage.fqrh;
-import defpackage.itj;
-import defpackage.iuf;
-import defpackage.iuo;
-import defpackage.ivf;
-import defpackage.jpd;
-import defpackage.jqu;
-import defpackage.qet;
+import defpackage.auub;
+import defpackage.bsur;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.cuve;
+import defpackage.cuvf;
+import defpackage.cuvg;
+import defpackage.cvcv;
+import defpackage.cveh;
+import defpackage.cvex;
+import defpackage.cvgc;
+import defpackage.cvij;
+import defpackage.edxt;
+import defpackage.ekww;
+import defpackage.evzw;
+import defpackage.fmkm;
+import defpackage.ftlf;
+import defpackage.iuz;
+import defpackage.ivv;
+import defpackage.iwe;
+import defpackage.iwv;
+import defpackage.jvs;
+import defpackage.jxj;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class OctarineChimeraActivity extends qet implements csmb {
-    public cstq j;
+public class OctarineChimeraActivity extends rxx implements cuvg {
+    public cvcv j;
     public Bundle k;
-    private cslz l;
+    private cuve l;
 
-    @Override // defpackage.csmb
-    public final cslz a() {
+    private final void k() {
+        try {
+            CookieManager.getInstance();
+        } catch (AndroidRuntimeException unused) {
+            setResult(0, new Intent().putExtra("extra.errorCode", 3));
+            finish();
+        }
+    }
+
+    @Override // defpackage.cuvg
+    public final cuve a() {
         return this.l;
     }
 
-    @Override // defpackage.csmb
-    public final void b(cslz cslzVar) {
-        this.l = cslzVar;
+    @Override // defpackage.cuvg
+    public final void b(cuve cuveVar) {
+        this.l = cuveVar;
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
-        cswz cswzVar = (cswz) getSupportFragmentManager().g(R.id.content);
-        if (cswzVar == null || !cswz.b.contains(Integer.valueOf(i))) {
+        cvgc cvgcVar = (cvgc) getSupportFragmentManager().g(R.id.content);
+        if (cvgcVar == null || !cvgc.b.contains(Integer.valueOf(i))) {
             super.onActivityResult(i, i2, intent);
         } else {
-            cswzVar.onActivityResult(i, i2, intent);
+            cvgcVar.onActivityResult(i, i2, intent);
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         setTitle("");
-        etke b = etke.b(getIntent().getIntExtra("extra.themeChoice", 0));
+        k();
+        evzw b = evzw.b(getIntent().getIntExtra("extra.themeChoice", 0));
         if (b == null) {
-            b = etke.THEME_CHOICE_UNSPECIFIED;
+            b = evzw.THEME_CHOICE_UNSPECIFIED;
         }
-        new bqnc(this, com.google.android.gms.R.style.ActionBarAppThemeLight, com.google.android.gms.R.style.ActionBarAppThemeDark, b);
-        int i = csvc.a;
-        eijr eijrVar = bqqe.a;
-        if (!csvc.a(getIntent(), new bqqa())) {
+        new bsur(this, com.google.android.gms.R.style.ActionBarAppThemeLight, com.google.android.gms.R.style.ActionBarAppThemeDark, b);
+        int i = cveh.a;
+        ekww ekwwVar = bsxv.a;
+        if (!cveh.a(getIntent(), new bsxr())) {
             super.onCreate(bundle);
             setResult(0, new Intent().putExtra("extra.errorCode", 1));
             finish();
             return;
         }
-        csvt csvtVar = (csvt) csma.a(csvt.class, this, cszh.a(bundle, "activityScope"));
-        this.l = csvtVar;
-        csvtVar.b(this);
+        cvex cvexVar = (cvex) cuvf.a(cvex.class, this, cvij.a(bundle, "activityScope"));
+        this.l = cvexVar;
+        cvexVar.b(this);
         super.onCreate(bundle);
-        if (fjul.g()) {
+        if (fmkm.f()) {
             getContainerActivity();
-            int i2 = eble.a;
+            int i2 = edxt.a;
         }
         getWindow().setStatusBarColor(0);
-        if (fqrh.e() && asqh.f()) {
+        if (ftlf.e() && auub.f()) {
             Window window = getWindow();
-            ivf.a(window, false);
+            iwv.a(window, false);
             window.setNavigationBarColor(0);
             View decorView = window.getDecorView();
-            itj itjVar = new itj() { // from class: csvs
-                @Override // defpackage.itj
-                public final iwd eB(View view, iwd iwdVar) {
-                    view.setPadding(0, iwdVar.f(1).c, 0, iwdVar.f(64).e);
-                    return iwdVar;
+            iuz iuzVar = new iuz() { // from class: cvew
+                @Override // defpackage.iuz
+                public final ixt eB(View view, ixt ixtVar) {
+                    view.setPadding(0, ixtVar.f(1).c, 0, ixtVar.f(64).e);
+                    return ixtVar;
                 }
             };
-            int[] iArr = iuo.a;
-            iuf.k(decorView, itjVar);
+            int[] iArr = iwe.a;
+            ivv.k(decorView, iuzVar);
         }
-        jqu.a(this.j.j()).g(this, new jpd() { // from class: csvr
-            @Override // defpackage.jpd
+        jxj.a(this.j.j()).g(this, new jvs() { // from class: cvev
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 bp bpVar = new bp(OctarineChimeraActivity.this.getSupportFragmentManager());
-                cswz cswzVar = new cswz();
+                cvgc cvgcVar = new cvgc();
                 Bundle bundle2 = new Bundle();
                 bundle2.putParcelable("arg_account", (Account) obj);
-                cswzVar.setArguments(bundle2);
-                bpVar.F(R.id.content, cswzVar);
+                cvgcVar.setArguments(bundle2);
+                bpVar.F(R.id.content, cvgcVar);
                 bpVar.d();
             }
         });
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBundle("activityScope", this.k);

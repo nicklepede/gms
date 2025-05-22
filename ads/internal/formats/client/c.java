@@ -4,13 +4,13 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Parcel;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.azht;
-import defpackage.otn;
-import defpackage.oto;
+import defpackage.bblp;
+import defpackage.qmq;
+import defpackage.qmr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class c extends otn implements d {
+public final class c extends qmq implements d {
     private final Drawable a;
     private final Uri b;
     private final double c;
@@ -47,20 +47,20 @@ public final class c extends otn implements d {
     }
 
     @Override // com.google.android.gms.ads.internal.formats.client.d
-    public final azht e() {
+    public final bblp e() {
         return new ObjectWrapper(this.a);
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         if (i == 1) {
-            azht e = e();
+            bblp e = e();
             parcel2.writeNoException();
-            oto.g(parcel2, e);
+            qmr.g(parcel2, e);
         } else if (i == 2) {
             Uri uri = this.b;
             parcel2.writeNoException();
-            oto.f(parcel2, uri);
+            qmr.f(parcel2, uri);
         } else if (i == 3) {
             double d = this.c;
             parcel2.writeNoException();

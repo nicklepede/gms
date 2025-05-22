@@ -6,7 +6,7 @@ import com.google.android.gms.ads.internal.flag.f;
 import com.google.android.gms.ads.internal.util.client.h;
 import java.util.LinkedList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class d extends Thread {
     public boolean a;
@@ -58,7 +58,7 @@ public final class d extends Thread {
             h.d("ContentFetchTask: sleeping");
             synchronized (this.b) {
                 this.c = true;
-                h.d(defpackage.a.Z(true, "ContentFetchThread: paused, pause = "));
+                h.d(defpackage.a.aa(true, "ContentFetchThread: paused, pause = "));
             }
             Thread.sleep(this.d * ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
             Object obj = this.b;

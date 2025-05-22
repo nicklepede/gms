@@ -37,89 +37,89 @@ import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.card.MaterialCardView;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.asbo;
-import defpackage.asmf;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.bapl;
-import defpackage.bipo;
-import defpackage.bipq;
-import defpackage.bipr;
-import defpackage.biqb;
-import defpackage.biqn;
-import defpackage.biqq;
-import defpackage.bira;
-import defpackage.birb;
-import defpackage.birq;
-import defpackage.birv;
-import defpackage.bisp;
-import defpackage.bisq;
-import defpackage.bisr;
-import defpackage.biss;
-import defpackage.bist;
-import defpackage.bisu;
-import defpackage.bisv;
-import defpackage.bitf;
-import defpackage.bitk;
-import defpackage.bivh;
-import defpackage.bivk;
-import defpackage.bivr;
-import defpackage.bivs;
-import defpackage.bixm;
-import defpackage.bjaw;
-import defpackage.bjay;
-import defpackage.bjbk;
-import defpackage.bjbu;
-import defpackage.bjcf;
-import defpackage.bjcg;
-import defpackage.bjcn;
-import defpackage.bjda;
-import defpackage.bjdb;
-import defpackage.bjij;
-import defpackage.byhr;
-import defpackage.dfee;
-import defpackage.eble;
-import defpackage.eiid;
-import defpackage.ejhf;
-import defpackage.ensv;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fefl;
-import defpackage.fhfd;
-import defpackage.folg;
-import defpackage.folt;
-import defpackage.fonq;
-import defpackage.foof;
-import defpackage.fopj;
-import defpackage.fops;
-import defpackage.foqz;
-import defpackage.forr;
-import defpackage.foru;
-import defpackage.forx;
-import defpackage.fosa;
-import defpackage.fosd;
-import defpackage.ilj;
-import defpackage.iln;
-import defpackage.isb;
-import defpackage.ivf;
-import defpackage.qet;
+import defpackage.aued;
+import defpackage.aupz;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.bcth;
+import defpackage.bkud;
+import defpackage.bkuf;
+import defpackage.bkug;
+import defpackage.bkuq;
+import defpackage.bkvc;
+import defpackage.bkvf;
+import defpackage.bkvp;
+import defpackage.bkvq;
+import defpackage.bkwf;
+import defpackage.bkwk;
+import defpackage.bkxe;
+import defpackage.bkxf;
+import defpackage.bkxg;
+import defpackage.bkxh;
+import defpackage.bkxi;
+import defpackage.bkxj;
+import defpackage.bkxk;
+import defpackage.bkxu;
+import defpackage.bkxz;
+import defpackage.bkzw;
+import defpackage.bkzz;
+import defpackage.blag;
+import defpackage.blah;
+import defpackage.blcb;
+import defpackage.blfl;
+import defpackage.blfn;
+import defpackage.blfz;
+import defpackage.blgj;
+import defpackage.blgu;
+import defpackage.blgv;
+import defpackage.blhc;
+import defpackage.blhp;
+import defpackage.blhq;
+import defpackage.blmy;
+import defpackage.caqj;
+import defpackage.dhpk;
+import defpackage.edxt;
+import defpackage.ekvi;
+import defpackage.eluo;
+import defpackage.eqgo;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgue;
+import defpackage.fjva;
+import defpackage.frdz;
+import defpackage.frem;
+import defpackage.frgj;
+import defpackage.frgy;
+import defpackage.fric;
+import defpackage.fril;
+import defpackage.frjs;
+import defpackage.frkk;
+import defpackage.frkn;
+import defpackage.frkq;
+import defpackage.frkt;
+import defpackage.frkw;
+import defpackage.imz;
+import defpackage.ind;
+import defpackage.itr;
+import defpackage.iwv;
+import defpackage.rxx;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
+public class ChatConversationChimeraActivity extends rxx implements bkud, bkvc {
     public HelpConfig I;
-    public bjay J;
-    public bapl K;
-    public bipq L;
+    public blfn J;
+    public bcth K;
+    public bkuf L;
     BroadcastReceiver M;
     BroadcastReceiver N;
-    public asbo O;
+    public aued O;
     public Handler S;
     public Runnable T;
     private View U;
@@ -135,7 +135,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
     public EditText p;
     public ImageButton q;
     public RecyclerView r;
-    public bitf s;
+    public bkxu s;
     public String t;
     public long u = -1;
     public boolean v = true;
@@ -151,9 +151,9 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
     public String F = "";
     public String G = "";
     public String H = "";
-    private final ensv Y = new asmf(Integer.MAX_VALUE, 9);
-    private biqq Z = new biqq();
-    public bjcn P = bjcn.NO_TEXT_ENTERED;
+    private final eqgo Y = new aupz(Integer.MAX_VALUE, 9);
+    private bkvf Z = new bkvf();
+    public blhc P = blhc.NO_TEXT_ENTERED;
     public long Q = 0;
     public String R = null;
 
@@ -192,10 +192,10 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
     }
 
     public final void A() {
-        bjcn bjcnVar = this.P;
+        blhc blhcVar = this.P;
         HelpConfig helpConfig = this.I;
-        asot asotVar = ChatRequestAndConversationChimeraService.a;
-        startService(new Intent().setClassName(this, ChatRequestAndConversationChimeraService.b).putExtra("EXTRA_REQUEST_TYPE_UPDATE_USER_TYPING_STATUS", true).putExtra("EXTRA_NEW_TYPING_STATUS", bjcnVar.e).putExtra("EXTRA_HELP_CONFIG", helpConfig));
+        ausn ausnVar = ChatRequestAndConversationChimeraService.a;
+        startService(new Intent().setClassName(this, ChatRequestAndConversationChimeraService.b).putExtra("EXTRA_REQUEST_TYPE_UPDATE_USER_TYPING_STATUS", true).putExtra("EXTRA_NEW_TYPING_STATUS", blhcVar.e).putExtra("EXTRA_HELP_CONFIG", helpConfig));
     }
 
     public final void B(int i) {
@@ -206,7 +206,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
 
     public final void C(boolean z) {
         this.q.setEnabled(z);
-        bivr.q(this.q, this, bivs.a(this, true != z ? R.attr.gh_disabledIconColor : R.attr.gh_primaryBlueColor));
+        blag.q(this.q, this, blah.a(this, true != z ? R.attr.gh_disabledIconColor : R.attr.gh_primaryBlueColor));
     }
 
     public final void D() {
@@ -215,7 +215,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         if (view2 == null) {
             View inflate = ((ViewStub) findViewById(R.id.gh_chat_request_error_stub)).inflate();
             this.X = inflate;
-            birv.b(inflate, R.string.gh_chat_request_failed, new View.OnClickListener() { // from class: biso
+            bkwk.b(inflate, R.string.gh_chat_request_failed, new View.OnClickListener() { // from class: bkxd
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view3) {
                     ChatConversationChimeraActivity chatConversationChimeraActivity = ChatConversationChimeraActivity.this;
@@ -227,7 +227,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         } else {
             view2.setVisibility(0);
         }
-        if (bivk.a(fops.a.a().b()) && (view = this.l) != null) {
+        if (bkzz.a(fril.a.lK().b()) && (view = this.l) != null) {
             view.setVisibility(8);
         }
         m(R.string.gh_chat_request_failed);
@@ -237,15 +237,15 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager();
         linearLayoutManager.s(true);
         this.r.aj(linearLayoutManager);
-        bitf bitfVar = new bitf(this);
-        this.s = bitfVar;
-        this.r.ah(bitfVar);
+        bkxu bkxuVar = new bkxu(this);
+        this.s = bkxuVar;
+        this.r.ah(bkxuVar);
         if (this.j != null) {
-            this.r.z(new bisv(this));
+            this.r.z(new bkxk(this));
         }
         View findViewById = findViewById(R.id.gh_chat_send_message_section);
         B(findViewById.getHeight());
-        findViewById.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: bisn
+        findViewById.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: bkxc
             @Override // android.view.View.OnLayoutChangeListener
             public final void onLayoutChange(View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
                 int i9 = i4 - i2;
@@ -254,34 +254,34 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
                 }
             }
         });
-        if (birv.d(this) || bivk.a(forr.d())) {
+        if (bkwk.d(this) || bkzz.a(frkk.d())) {
             MaterialCardView materialCardView = (MaterialCardView) findViewById;
             materialCardView.d(0.0f);
-            if (birv.d(this) || birv.e(this)) {
+            if (bkwk.d(this) || bkwk.e(this)) {
                 return;
             }
-            materialCardView.lk(getResources().getColor(R.color.gh_surfaceColorElevation2_light_m3_8_percent_opacity));
+            materialCardView.lB(getResources().getColor(R.color.gh_surfaceColorElevation2_light_m3_8_percent_opacity));
         }
     }
 
     final void F() {
-        l(new biss(this));
+        l(new bkxh(this));
     }
 
     public final void G(boolean z) {
-        if (bivk.b(fonq.c()) && z) {
+        if (bkzz.b(frgj.c()) && z) {
             this.A = true;
             this.B = System.currentTimeMillis();
-            bitf bitfVar = this.s;
-            bitfVar.p(bitfVar.D() - 1);
-            bitfVar.p(bitfVar.G());
+            bkxu bkxuVar = this.s;
+            bkxuVar.p(bkxuVar.D() - 1);
+            bkxuVar.p(bkxuVar.G());
             m(R.string.gh_user_ended_chat);
         } else {
             this.z = true;
-            bitf bitfVar2 = this.s;
-            bitfVar2.p(bitfVar2.O(bitfVar2.f.size() + (-1)) ? bitfVar2.D() - 1 : bitfVar2.D() - 2);
-            bitfVar2.p(bitfVar2.G());
-            if (bivk.b(fonq.c())) {
+            bkxu bkxuVar2 = this.s;
+            bkxuVar2.p(bkxuVar2.O(bkxuVar2.f.size() + (-1)) ? bkxuVar2.D() - 1 : bkxuVar2.D() - 2);
+            bkxuVar2.p(bkxuVar2.G());
+            if (bkzz.b(frgj.c())) {
                 m(R.string.gh_agent_has_ended_chat);
             }
         }
@@ -293,14 +293,14 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         z();
         this.w = false;
         invalidateOptionsMenu();
-        if (bivk.a(foqz.c())) {
+        if (bkzz.a(frjs.c())) {
             P();
         }
     }
 
     final void H() {
         this.S.removeCallbacks(this.T);
-        this.P = bjcn.NO_TEXT_ENTERED;
+        this.P = blhc.NO_TEXT_ENTERED;
         A();
     }
 
@@ -327,74 +327,74 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
     }
 
     public final void O(int i) {
-        bjbk.l(this, this.I, this.J, i);
+        blfz.l(this, this.I, this.J, i);
     }
 
-    @Override // defpackage.bipo
-    public final void b(bipq bipqVar) {
-        biqq biqqVar = this.Z;
-        if (biqqVar == null) {
+    @Override // defpackage.bkud
+    public final void b(bkuf bkufVar) {
+        bkvf bkvfVar = this.Z;
+        if (bkvfVar == null) {
             return;
         }
-        this.L = bipqVar;
-        biqqVar.b();
+        this.L = bkufVar;
+        bkvfVar.b();
         this.Z = null;
     }
 
-    @Override // defpackage.biqn
-    public final birq d() {
+    @Override // defpackage.bkvc
+    public final bkwf d() {
         throw null;
     }
 
-    @Override // defpackage.biqn
-    public final bivh e() {
+    @Override // defpackage.bkvc
+    public final bkzw e() {
         throw null;
     }
 
-    @Override // defpackage.biqn
-    public final HelpConfig hM() {
+    @Override // defpackage.bkvc
+    public final HelpConfig ic() {
         return this.I;
     }
 
-    @Override // defpackage.biqn
-    public final bjay hN() {
+    @Override // defpackage.bkvc
+    public final blfn id() {
         return this.J;
     }
 
-    final void l(final bipo bipoVar) {
-        bipq bipqVar = this.L;
-        if (bipqVar != null) {
-            bipoVar.b(bipqVar);
+    final void l(final bkud bkudVar) {
+        bkuf bkufVar = this.L;
+        if (bkufVar != null) {
+            bkudVar.b(bkufVar);
             return;
         }
-        biqq biqqVar = this.Z;
-        if (biqqVar != null) {
-            biqqVar.addObserver(new Observer() { // from class: bisl
+        bkvf bkvfVar = this.Z;
+        if (bkvfVar != null) {
+            bkvfVar.addObserver(new Observer() { // from class: bkxa
                 @Override // java.util.Observer
                 public final void update(Observable observable, Object obj) {
-                    bipoVar.b(ChatConversationChimeraActivity.this.L);
+                    bkudVar.b(ChatConversationChimeraActivity.this.L);
                 }
             });
         }
     }
 
     public final void m(int i) {
-        birv.a(this.V, i);
+        bkwk.a(this.V, i);
     }
 
     public final void n(String str) {
         View view = this.V;
-        int i = birv.a;
+        int i = bkwk.a;
         view.announceForAccessibility(str);
     }
 
     public final void o() {
         HelpConfig helpConfig = this.I;
-        asot asotVar = ChatRequestAndConversationChimeraService.a;
+        ausn ausnVar = ChatRequestAndConversationChimeraService.a;
         startService(new Intent().setClassName(this, ChatRequestAndConversationChimeraService.b).putExtra("EXTRA_HELP_CONFIG", helpConfig).putExtra("EXTRA_REQUEST_TYPE_CANCEL_REQUEST_OR_LEAVE_CONVERSATION", true));
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         if (i == 1) {
             if (i2 == 1) {
@@ -407,47 +407,47 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
                 x(false);
                 return;
             }
-            asot asotVar = bjaw.a;
-            if (bivk.b(foof.d())) {
-                fecj v = bjda.a.v();
+            ausn ausnVar = blfl.a;
+            if (bkzz.b(frgy.d())) {
+                fgrc v = blhp.a.v();
                 if (!v.b.L()) {
                     v.U();
                 }
-                fecp fecpVar = v.b;
-                bjda bjdaVar = (bjda) fecpVar;
-                bjdaVar.c = 21;
-                bjdaVar.b |= 1;
-                if (!fecpVar.L()) {
+                fgri fgriVar = v.b;
+                blhp blhpVar = (blhp) fgriVar;
+                blhpVar.c = 21;
+                blhpVar.b |= 1;
+                if (!fgriVar.L()) {
                     v.U();
                 }
-                bjda bjdaVar2 = (bjda) v.b;
-                bjdaVar2.j = 1;
-                bjdaVar2.b |= 256;
-                bjda bjdaVar3 = (bjda) v.Q();
-                HelpConfig hM = hM();
-                fecj v2 = bjdb.a.v();
+                blhp blhpVar2 = (blhp) v.b;
+                blhpVar2.j = 1;
+                blhpVar2.b |= 256;
+                blhp blhpVar3 = (blhp) v.Q();
+                HelpConfig ic = ic();
+                fgrc v2 = blhq.a.v();
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                bjdb bjdbVar = (bjdb) v2.b;
-                bjdaVar3.getClass();
-                bjdbVar.d = bjdaVar3;
-                bjdbVar.c = 3;
-                bjaw.J(this, hM, v2);
+                blhq blhqVar = (blhq) v2.b;
+                blhpVar3.getClass();
+                blhqVar.d = blhpVar3;
+                blhqVar.c = 3;
+                blfl.J(this, ic, v2);
             }
-            bjbk.k(this, 36, fhfd.CHAT);
+            blfz.k(this, 36, fjva.CHAT);
         }
     }
 
-    @Override // defpackage.qet, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         if (this.I.P) {
-            int i = eble.a;
+            int i = edxt.a;
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         HelpConfig e = HelpConfig.e(this, bundle, getIntent());
@@ -455,36 +455,36 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
             throw new IllegalStateException("No HelpConfig provided!");
         }
         this.I = e;
-        this.J = new bjay(this);
-        this.K = new bapl();
-        this.S = new byhr(Looper.getMainLooper());
-        this.T = new bisp(this);
-        if (bivk.a(fosd.c())) {
-            birb.d(e.Q);
+        this.J = new blfn(this);
+        this.K = new bcth();
+        this.S = new caqj(Looper.getMainLooper());
+        this.T = new bkxe(this);
+        if (bkzz.a(frkw.c())) {
+            bkvq.d(e.Q);
         }
-        bivs.c(this, e, R.style.gh_ChatConversationLightActivityStyleMaterial3, R.style.gh_ChatConversationDarkActivityStyleMaterial3, R.style.gh_ChatConversationDayNightActivityStyleMaterial3);
+        blah.c(this, e, R.style.gh_ChatConversationLightActivityStyleMaterial3, R.style.gh_ChatConversationDarkActivityStyleMaterial3, R.style.gh_ChatConversationDayNightActivityStyleMaterial3);
         if (e.P) {
-            int i = eble.a;
+            int i = edxt.a;
         }
         setContentView(R.layout.gh_chat_activity_gm3);
-        ht((Toolbar) findViewById(R.id.gh_chat_toolbar));
-        bipr.b(this, hy(), false);
+        hJ((Toolbar) findViewById(R.id.gh_chat_toolbar));
+        bkug.b(this, hO(), false);
         this.j = (AppBarLayout) findViewById(R.id.gh_chat_app_bar);
         this.U = findViewById(R.id.gh_chat_activity);
         this.V = findViewById(R.id.gh_chat_activity_progress_bar);
         this.W = findViewById(R.id.gh_chat_activity_progress_bar_text);
         this.n = (ViewStub) findViewById(R.id.gh_chat_conversation_stub);
         this.k = (ViewStub) findViewById(R.id.gh_chat_queue_status_stub);
-        if (asqh.g()) {
-            ivf.a(getWindow(), false);
-            this.j.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() { // from class: bisj
+        if (auub.g()) {
+            iwv.a(getWindow(), false);
+            this.j.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() { // from class: bkwy
                 @Override // android.view.View.OnApplyWindowInsetsListener
                 public final WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
                     view.setPadding(windowInsets.getSystemWindowInsetLeft(), windowInsets.getSystemWindowInsetTop(), windowInsets.getSystemWindowInsetRight(), 0);
                     return windowInsets;
                 }
             });
-            this.U.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() { // from class: bisk
+            this.U.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() { // from class: bkwz
                 @Override // android.view.View.OnApplyWindowInsetsListener
                 public final WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
                     view.setPadding(windowInsets.getSystemWindowInsetLeft(), 0, windowInsets.getSystemWindowInsetRight(), windowInsets.getSystemWindowInsetBottom());
@@ -492,9 +492,9 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
                 }
             });
         }
-        bipq.c(this.Y, this, this, this.I);
-        this.O = asbo.f(this);
-        if (bivk.b(fonq.c())) {
+        bkuf.c(this.Y, this, this, this.I);
+        this.O = aued.f(this);
+        if (bkzz.b(frgj.c())) {
             if (bundle == null) {
                 this.F = e.N;
                 this.G = e.h();
@@ -518,7 +518,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
             }
         }
         if (bundle != null) {
-            if (bivk.a(fopj.c())) {
+            if (bkzz.a(fric.c())) {
                 this.t = bundle.getString("INSTANCE_STATE_LAST_SAVED_MESSAGE_INPUT_TEXT");
             }
             if (bundle.getBoolean("INSTANCE_STATE_IS_CHAT_REQUEST_ERROR_VISIBLE", false)) {
@@ -528,29 +528,29 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.gh_chat_activity_menu_gm3, menu);
-        bivr.r(menu.findItem(R.id.gh_chat_activity_menu_share_transcript), this, bivs.a(this, R.attr.ghf_greyIconColor));
-        bivr.r(menu.findItem(R.id.gh_chat_activity_menu_close), this, bivs.a(this, R.attr.ghf_greyIconColor));
+        blag.r(menu.findItem(R.id.gh_chat_activity_menu_share_transcript), this, blah.a(this, R.attr.ghf_greyIconColor));
+        blag.r(menu.findItem(R.id.gh_chat_activity_menu_close), this, blah.a(this, R.attr.ghf_greyIconColor));
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
         if (I()) {
             w();
-        } else if (this.P != bjcn.NO_TEXT_ENTERED) {
+        } else if (this.P != blhc.NO_TEXT_ENTERED) {
             H();
         }
-        bjay bjayVar = this.J;
-        if (bjayVar != null) {
-            bjayVar.close();
+        blfn blfnVar = this.J;
+        if (blfnVar != null) {
+            blfnVar.close();
         }
         super.onDestroy();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         Activity activity;
         boolean z;
@@ -558,15 +558,15 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         int i = 1;
         if (itemId == R.id.gh_chat_activity_menu_close) {
             if (I() || S()) {
-                bjaw.p(this, this.I, 10);
+                blfl.p(this, this.I, 10);
                 O(24);
                 q();
             } else {
-                bixm bixmVar = new bixm();
-                bixmVar.a = R.string.gh_end_chat_confirmation_message;
-                bixmVar.b = R.string.gh_end_chat_action_text;
-                bixmVar.b();
-                bixmVar.a().show(getSupportFragmentManager(), "end_chat_dialog");
+                blcb blcbVar = new blcb();
+                blcbVar.a = R.string.gh_end_chat_confirmation_message;
+                blcbVar.b = R.string.gh_end_chat_action_text;
+                blcbVar.b();
+                blcbVar.a().show(getSupportFragmentManager(), "end_chat_dialog");
             }
             return true;
         }
@@ -582,7 +582,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         String string = TextUtils.isEmpty(q) ? getString(R.string.gh_chat_google_support) : getString(R.string.gh_hangout_product_specific_subtext, new Object[]{q});
         String string2 = getString(R.string.gh_chat_shared_transcript_email_subject, new Object[]{string});
         Context containerActivity = getContainerActivity();
-        isb.h(containerActivity);
+        itr.h(containerActivity);
         Intent action = new Intent().setAction("android.intent.action.SEND");
         action.putExtra("androidx.core.app.EXTRA_CALLING_PACKAGE", containerActivity.getPackageName());
         action.putExtra("android.support.v4.app.EXTRA_CALLING_PACKAGE", containerActivity.getPackageName());
@@ -603,8 +603,8 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
             action.putExtra("androidx.core.app.EXTRA_CALLING_ACTIVITY", componentName);
             action.putExtra("android.support.v4.app.EXTRA_CALLING_ACTIVITY", componentName);
         }
-        ilj.c(action);
-        bitf bitfVar = this.s;
+        imz.c(action);
+        bkxu bkxuVar = this.s;
         long j = this.y;
         ArrayList arrayList = new ArrayList(1);
         StringBuilder sb = new StringBuilder();
@@ -612,33 +612,33 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         String str = "";
         int i2 = 0;
         while (true) {
-            List list = bitfVar.f;
+            List list = bkxuVar.f;
             z = z2;
             if (i2 >= list.size()) {
                 break;
             }
-            bjcf bjcfVar = (bjcf) list.get(i2);
+            blgu blguVar = (blgu) list.get(i2);
             int i3 = i;
-            if (!TextUtils.equals(bitfVar.m, bjcfVar.c) && !arrayList.contains(bjcfVar.c)) {
-                arrayList.add(bjcfVar.c);
-                String str2 = bjcfVar.e;
+            if (!TextUtils.equals(bkxuVar.m, blguVar.c) && !arrayList.contains(blguVar.c)) {
+                arrayList.add(blguVar.c);
+                String str2 = blguVar.e;
                 Object[] objArr = new Object[2];
                 objArr[z ? 1 : 0] = str;
                 objArr[i3] = str2;
                 sb.append(String.format("%s%s", objArr));
                 str = ", ";
             }
-            if (i2 == 0 || ((Boolean) bitfVar.i.get(i2 - 1)).booleanValue()) {
-                String str3 = bjcfVar.e;
-                Object obj = bitfVar.h.get(i2);
-                String str4 = bjcfVar.d;
+            if (i2 == 0 || ((Boolean) bkxuVar.i.get(i2 - 1)).booleanValue()) {
+                String str3 = blguVar.e;
+                Object obj = bkxuVar.h.get(i2);
+                String str4 = blguVar.d;
                 Object[] objArr2 = new Object[3];
                 objArr2[z ? 1 : 0] = str3;
                 objArr2[1] = obj;
                 objArr2[2] = str4;
                 sb2.append(String.format("\n%s [%s]:\n%s\n", objArr2));
             } else {
-                String str5 = bjcfVar.d;
+                String str5 = blguVar.d;
                 Object[] objArr3 = new Object[i3];
                 objArr3[z ? 1 : 0] = str5;
                 sb2.append(String.format("%s\n", objArr3));
@@ -653,7 +653,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         StringBuilder sb3 = new StringBuilder(string);
         sb3.append("\n---\n");
         String string3 = getString(R.string.gh_chat_shared_transcript_header_time_of_chat);
-        long j2 = bitfVar.j + j;
+        long j2 = bkxuVar.j + j;
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(j2);
         String formatDateTime = DateUtils.formatDateTime(this, calendar.getTimeInMillis(), 21);
@@ -661,7 +661,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         objArr4[z ? 1 : 0] = string3;
         objArr4[1] = formatDateTime;
         sb3.append(String.format("%s: %s\n", objArr4));
-        long j3 = bitfVar.k - bitfVar.j;
+        long j3 = bkxuVar.k - bkxuVar.j;
         String string4 = getString(R.string.gh_chat_shared_transcript_header_chat_duration);
         String formatElapsedTime = DateUtils.formatElapsedTime(j3 / 1000);
         Object[] objArr5 = new Object[2];
@@ -676,39 +676,39 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         }
         sb3.append("---\n");
         sb3.append(str7);
-        ilj.b(sb3.toString(), action);
-        ilj.a(string2, action);
-        ilj.d(action);
-        if (asng.ad(this, action)) {
+        imz.b(sb3.toString(), action);
+        imz.a(string2, action);
+        imz.d(action);
+        if (aura.ad(this, action)) {
             startActivity(Intent.createChooser(action, getString(R.string.gh_chat_share_transcript)));
         }
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onPause() {
         BroadcastReceiver broadcastReceiver;
-        bitk.v(bitk.a(this, this.I) + this.K.a(), this, this.I);
+        bkxz.v(bkxz.a(this, this.I) + this.K.a(), this, this.I);
         ChatRequestAndConversationChimeraService.N(false, this, this.I);
         R();
-        if (bivk.b(fonq.c()) && (broadcastReceiver = this.N) != null) {
+        if (bkzz.b(frgj.c()) && (broadcastReceiver = this.N) != null) {
             unregisterReceiver(broadcastReceiver);
             this.N = null;
         }
         super.onPause();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onPrepareOptionsMenu(Menu menu) {
         Activity activity;
-        bitf bitfVar;
-        bitf bitfVar2;
+        bkxu bkxuVar;
+        bkxu bkxuVar2;
         super.onPrepareOptionsMenu(menu);
         boolean z = false;
-        menu.findItem(R.id.gh_chat_activity_menu_close).setVisible(!I() || (bitfVar2 = this.s) == null || bitfVar2.l <= 0);
+        menu.findItem(R.id.gh_chat_activity_menu_close).setVisible(!I() || (bkxuVar2 = this.s) == null || bkxuVar2.l <= 0);
         MenuItem findItem = menu.findItem(R.id.gh_chat_activity_menu_share_transcript);
         Context containerActivity = getContainerActivity();
-        isb.h(containerActivity);
+        itr.h(containerActivity);
         Intent action = new Intent().setAction("android.intent.action.SEND");
         action.putExtra("androidx.core.app.EXTRA_CALLING_PACKAGE", containerActivity.getPackageName());
         action.putExtra("android.support.v4.app.EXTRA_CALLING_PACKAGE", containerActivity.getPackageName());
@@ -729,26 +729,26 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
             action.putExtra("androidx.core.app.EXTRA_CALLING_ACTIVITY", componentName);
             action.putExtra("android.support.v4.app.EXTRA_CALLING_ACTIVITY", componentName);
         }
-        ilj.c(action);
-        ilj.b("", action);
-        ilj.a("", action);
-        ilj.d(action);
-        if (I() && (bitfVar = this.s) != null && bitfVar.l > 0 && asng.ad(this, action)) {
+        imz.c(action);
+        imz.b("", action);
+        imz.a("", action);
+        imz.d(action);
+        if (I() && (bkxuVar = this.s) != null && bkxuVar.l > 0 && aura.ad(this, action)) {
             z = true;
         }
         findItem.setVisible(z);
         return true;
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onRestart() {
         super.onRestart();
-        if (bivk.a(fosd.c())) {
-            birb.d(this.I.Q);
+        if (bkzz.a(frkw.c())) {
+            bkvq.d(this.I.Q);
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
         IntentFilter intentFilter = new IntentFilter();
@@ -761,13 +761,13 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         if (this.M == null) {
             this.M = new TracingBroadcastReceiver() { // from class: com.google.android.gms.googlehelp.contact.chat.ChatConversationChimeraActivity.5
                 @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-                public final void jz(Context context, Intent intent) {
+                public final void jP(Context context, Intent intent) {
                     String str;
-                    bitf bitfVar;
+                    bkxu bkxuVar;
                     if (intent.getAction().equals("com.google.android.gms.googlehelp.contact.chat.ChatConversationChimeraActivity.UPDATE_AGENT_TYPING_STATUS")) {
                         ChatConversationChimeraActivity chatConversationChimeraActivity = ChatConversationChimeraActivity.this;
-                        bjcn bjcnVar = (bjcn) eiid.i(bjcn.b(intent.getIntExtra("EXTRA_NEW_TYPING_STATUS", 0))).e(bjcn.UNKNOWN_TYPING_STATUS);
-                        if (chatConversationChimeraActivity.s.N(bjcnVar, intent.getStringExtra("EXTRA_NEW_TYPING_STATUS_PARTICIPANT_ID"), intent.getLongExtra("EXTRA_NEW_TYPING_STATUS_CLIENT_TIME", -1L)) && bjcnVar == bjcn.TYPING) {
+                        blhc blhcVar = (blhc) ekvi.i(blhc.b(intent.getIntExtra("EXTRA_NEW_TYPING_STATUS", 0))).e(blhc.UNKNOWN_TYPING_STATUS);
+                        if (chatConversationChimeraActivity.s.N(blhcVar, intent.getStringExtra("EXTRA_NEW_TYPING_STATUS_PARTICIPANT_ID"), intent.getLongExtra("EXTRA_NEW_TYPING_STATUS_CLIENT_TIME", -1L)) && blhcVar == blhc.TYPING) {
                             chatConversationChimeraActivity.m(R.string.gh_chat_typing_indicator_active_announcement);
                             return;
                         }
@@ -779,25 +779,25 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
                     }
                     if (intent.getAction().equals("com.google.android.gms.googlehelp.contact.chat.ChatConversationChimeraActivity.MESSAGE_NOT_SENT")) {
                         ChatConversationChimeraActivity chatConversationChimeraActivity2 = ChatConversationChimeraActivity.this;
-                        bitf bitfVar2 = chatConversationChimeraActivity2.s;
+                        bkxu bkxuVar2 = chatConversationChimeraActivity2.s;
                         long longExtra = intent.getLongExtra("EXTRA_MESSAGE_CLIENT_TIME", -1L);
-                        int E = bitfVar2.E(longExtra);
+                        int E = bkxuVar2.E(longExtra);
                         if (E < 0) {
-                            ((ejhf) bitf.a.j()).A("No pending messages found for the given client time %d; this means the list is corrupted.", longExtra);
+                            ((eluo) bkxu.a.j()).A("No pending messages found for the given client time %d; this means the list is corrupted.", longExtra);
                         } else {
-                            List list = bitfVar2.g;
-                            bjcg bjcgVar = (bjcg) list.get(E);
-                            fecj fecjVar = (fecj) bjcgVar.iB(5, null);
-                            fecjVar.X(bjcgVar);
-                            if (!fecjVar.b.L()) {
-                                fecjVar.U();
+                            List list = bkxuVar2.g;
+                            blgv blgvVar = (blgv) list.get(E);
+                            fgrc fgrcVar = (fgrc) blgvVar.iQ(5, null);
+                            fgrcVar.X(blgvVar);
+                            if (!fgrcVar.b.L()) {
+                                fgrcVar.U();
                             }
-                            bjcg bjcgVar2 = (bjcg) fecjVar.b;
-                            bjcg bjcgVar3 = bjcg.a;
-                            bjcgVar2.b |= 4;
-                            bjcgVar2.e = false;
-                            list.set(E, (bjcg) fecjVar.Q());
-                            bitfVar2.p(bitfVar2.F(E));
+                            blgv blgvVar2 = (blgv) fgrcVar.b;
+                            blgv blgvVar3 = blgv.a;
+                            blgvVar2.b |= 4;
+                            blgvVar2.e = false;
+                            list.set(E, (blgv) fgrcVar.Q());
+                            bkxuVar2.p(bkxuVar2.F(E));
                         }
                         chatConversationChimeraActivity2.m(R.string.gh_message_failed_to_send_announcement);
                         return;
@@ -806,28 +806,28 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
                         ChatConversationChimeraActivity chatConversationChimeraActivity3 = ChatConversationChimeraActivity.this;
                         chatConversationChimeraActivity3.y = intent.getLongExtra("EXTRA_DEVICE_SERVER_TIME_DIFFERENCE_ESTIMATE", 0L);
                         chatConversationChimeraActivity3.x = true;
-                        if (!intent.getBooleanExtra("EXTRA_SHOULD_UPDATE_TIMESTAMPS", false) || chatConversationChimeraActivity3.v || (bitfVar = chatConversationChimeraActivity3.s) == null) {
+                        if (!intent.getBooleanExtra("EXTRA_SHOULD_UPDATE_TIMESTAMPS", false) || chatConversationChimeraActivity3.v || (bkxuVar = chatConversationChimeraActivity3.s) == null) {
                             return;
                         }
-                        List j = bitk.j(chatConversationChimeraActivity3.L);
+                        List j = bkxz.j(chatConversationChimeraActivity3.L);
                         long j2 = chatConversationChimeraActivity3.y;
                         int size = j == null ? 0 : j.size();
-                        int size2 = bitfVar.h.size();
+                        int size2 = bkxuVar.h.size();
                         ArrayList arrayList = new ArrayList(size2);
                         int i = 0;
                         for (int i2 = 0; i2 < size; i2++) {
-                            if (((bjbu) j.get(i2)).c == 3) {
-                                fefl feflVar = ((bjbu) j.get(i2)).f;
-                                if (feflVar == null) {
-                                    feflVar = fefl.a;
+                            if (((blgj) j.get(i2)).c == 3) {
+                                fgue fgueVar = ((blgj) j.get(i2)).f;
+                                if (fgueVar == null) {
+                                    fgueVar = fgue.a;
                                 }
-                                arrayList.add(bitfVar.J(feflVar.b, j2));
+                                arrayList.add(bkxuVar.J(fgueVar.b, j2));
                                 i++;
                             }
                         }
                         if (i == size2) {
-                            bitfVar.h = arrayList;
-                            bitfVar.o();
+                            bkxuVar.h = arrayList;
+                            bkxuVar.o();
                             return;
                         }
                         return;
@@ -843,28 +843,28 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
                         View view = chatConversationChimeraActivity4.o;
                         if (view == null) {
                             chatConversationChimeraActivity4.o = chatConversationChimeraActivity4.n.inflate();
-                            chatConversationChimeraActivity4.o.findViewById(R.id.gh_chat_translation_banner_info).setOnClickListener(new View.OnClickListener() { // from class: bism
+                            chatConversationChimeraActivity4.o.findViewById(R.id.gh_chat_translation_banner_info).setOnClickListener(new View.OnClickListener() { // from class: bkxb
                                 @Override // android.view.View.OnClickListener
                                 public final void onClick(View view2) {
                                     ChatConversationChimeraActivity chatConversationChimeraActivity5 = ChatConversationChimeraActivity.this;
-                                    ebna ebnaVar = new ebna(chatConversationChimeraActivity5);
-                                    ebnaVar.N(chatConversationChimeraActivity5.getString(R.string.gh_chat_translation_info_title));
-                                    ebnaVar.C(chatConversationChimeraActivity5.getString(R.string.gh_chat_translation_info_body));
-                                    ebnaVar.L(chatConversationChimeraActivity5.getString(R.string.common_ok), null);
-                                    ebnaVar.a();
+                                    edzp edzpVar = new edzp(chatConversationChimeraActivity5);
+                                    edzpVar.N(chatConversationChimeraActivity5.getString(R.string.gh_chat_translation_info_title));
+                                    edzpVar.C(chatConversationChimeraActivity5.getString(R.string.gh_chat_translation_info_body));
+                                    edzpVar.L(chatConversationChimeraActivity5.getString(R.string.common_ok), null);
+                                    edzpVar.a();
                                 }
                             });
                             chatConversationChimeraActivity4.p = (EditText) chatConversationChimeraActivity4.o.findViewById(R.id.gh_chat_message_input);
-                            chatConversationChimeraActivity4.p.addTextChangedListener(new bisq(chatConversationChimeraActivity4));
-                            if (bivk.a(fopj.c()) && (str = chatConversationChimeraActivity4.t) != null) {
+                            chatConversationChimeraActivity4.p.addTextChangedListener(new bkxf(chatConversationChimeraActivity4));
+                            if (bkzz.a(fric.c()) && (str = chatConversationChimeraActivity4.t) != null) {
                                 chatConversationChimeraActivity4.p.setText(str);
                                 chatConversationChimeraActivity4.p.requestFocus();
                             }
                             chatConversationChimeraActivity4.q = (ImageButton) chatConversationChimeraActivity4.o.findViewById(R.id.gh_chat_send_message_button);
-                            if (bivk.b(foru.a.a().a())) {
-                                chatConversationChimeraActivity4.q.setImageResource(2131233117);
+                            if (bkzz.b(frkn.a.lK().a())) {
+                                chatConversationChimeraActivity4.q.setImageResource(2131233182);
                             }
-                            chatConversationChimeraActivity4.q.setOnClickListener(new bisr(chatConversationChimeraActivity4));
+                            chatConversationChimeraActivity4.q.setOnClickListener(new bkxg(chatConversationChimeraActivity4));
                             chatConversationChimeraActivity4.r = (RecyclerView) chatConversationChimeraActivity4.o.findViewById(R.id.gh_chat_transcript);
                             chatConversationChimeraActivity4.E();
                         } else if (view.getVisibility() != 0) {
@@ -891,7 +891,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
                                     if (chatConversationChimeraActivity5.m == null) {
                                         chatConversationChimeraActivity5.m = (TextView) chatConversationChimeraActivity5.l.findViewById(R.id.gh_chat_queue_position);
                                     }
-                                    bivr.q((ImageView) chatConversationChimeraActivity5.l.findViewById(R.id.gh_chat_queue_icon), chatConversationChimeraActivity5, bivs.a(chatConversationChimeraActivity5, R.attr.gh_primaryBlueColor));
+                                    blag.q((ImageView) chatConversationChimeraActivity5.l.findViewById(R.id.gh_chat_queue_icon), chatConversationChimeraActivity5, blah.a(chatConversationChimeraActivity5, R.attr.gh_primaryBlueColor));
                                 } else if (view2.getVisibility() != 0) {
                                     chatConversationChimeraActivity5.l.setVisibility(0);
                                 }
@@ -908,10 +908,10 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
                             chatConversationChimeraActivity6.u();
                             chatConversationChimeraActivity6.p();
                             HelpConfig helpConfig = chatConversationChimeraActivity6.I;
-                            asot asotVar = ChatRequestAndConversationChimeraService.a;
+                            ausn ausnVar = ChatRequestAndConversationChimeraService.a;
                             chatConversationChimeraActivity6.startService(new Intent().setClassName(chatConversationChimeraActivity6, ChatRequestAndConversationChimeraService.b).putExtra("EXTRA_REQUEST_TYPE_CLEAR_SHOULD_NOTIFY_OF_CHAT_REQUEST_ERROR", true).putExtra("EXTRA_HELP_CONFIG", helpConfig));
-                            if (folt.d()) {
-                                chatConversationChimeraActivity6.O.m(2014, dfee.GOOGLEHELP_CHAT_STATUS_UPDATE_NOTIFICATION);
+                            if (frem.d()) {
+                                chatConversationChimeraActivity6.O.m(2014, dhpk.GOOGLEHELP_CHAT_STATUS_UPDATE_NOTIFICATION);
                             } else {
                                 chatConversationChimeraActivity6.O.k(2014);
                             }
@@ -935,12 +935,12 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
                 }
             };
         }
-        iln.c(this, this.M, intentFilter, "com.google.android.gms.permission.BROADCAST_TO_GOOGLEHELP", null, 2);
-        if (bivk.b(fonq.c())) {
+        ind.c(this, this.M, intentFilter, "com.google.android.gms.permission.BROADCAST_TO_GOOGLEHELP", null, 2);
+        if (bkzz.b(frgj.c())) {
             if (this.N == null) {
                 this.N = new TracingBroadcastReceiver() { // from class: com.google.android.gms.googlehelp.contact.chat.ChatConversationChimeraActivity.6
                     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-                    public final void jz(Context context, Intent intent) {
+                    public final void jP(Context context, Intent intent) {
                         Account account;
                         if (intent.getAction().equals("com.google.android.gms.googlehelp.HelpChimeraActivity.REQUEST_CHAT_TRANSCRIPT_EMAIL")) {
                             ChatConversationChimeraActivity chatConversationChimeraActivity = ChatConversationChimeraActivity.this;
@@ -965,31 +965,33 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
             }
             IntentFilter intentFilter2 = new IntentFilter();
             intentFilter2.addAction("com.google.android.gms.googlehelp.HelpChimeraActivity.REQUEST_CHAT_TRANSCRIPT_EMAIL");
-            iln.c(this, this.N, intentFilter2, "com.google.android.gms.permission.BROADCAST_TO_GOOGLEHELP", null, 2);
+            ind.c(this, this.N, intentFilter2, "com.google.android.gms.permission.BROADCAST_TO_GOOGLEHELP", null, 2);
         }
         HelpConfig helpConfig = this.I;
-        asot asotVar = ChatRequestAndConversationChimeraService.a;
-        startService(new Intent().setClassName(this, ChatRequestAndConversationChimeraService.b).putExtra("EXTRA_HELP_CONFIG", helpConfig).putExtra("EXTRA_REQUEST_TYPE_NOTIFY_IF_UPDATING", true));
+        ausn ausnVar = ChatRequestAndConversationChimeraService.a;
+        Intent intent = new Intent();
+        String str = ChatRequestAndConversationChimeraService.b;
+        startService(intent.setClassName(this, str).putExtra("EXTRA_HELP_CONFIG", helpConfig).putExtra("EXTRA_REQUEST_TYPE_NOTIFY_IF_UPDATING", true));
         ChatRequestAndConversationChimeraService.N(true, this, this.I);
         boolean z = this.x;
-        startService(new Intent().setClassName(this, ChatRequestAndConversationChimeraService.b).putExtra("EXTRA_REQUEST_TYPE_UPDATE_TIMESTAMP_RELATED_OBJECTS", true).putExtra("EXTRA_IS_TIME_DIFFERENCE_ESTIMATE_INITIALIZED", z).putExtra("EXTRA_HELP_CONFIG", this.I));
+        startService(new Intent().setClassName(this, str).putExtra("EXTRA_REQUEST_TYPE_UPDATE_TIMESTAMP_RELATED_OBJECTS", true).putExtra("EXTRA_IS_TIME_DIFFERENCE_ESTIMATE_INITIALIZED", z).putExtra("EXTRA_HELP_CONFIG", this.I));
         if (this.w) {
             ChatRequestAndConversationChimeraService.M(this, this.I);
         }
         this.K.c();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         EditText editText;
         bundle.putParcelable("EXTRA_HELP_CONFIG", this.I);
-        if (bivk.a(fopj.c()) && (editText = this.p) != null) {
+        if (bkzz.a(fric.c()) && (editText = this.p) != null) {
             bundle.putString("INSTANCE_STATE_LAST_SAVED_MESSAGE_INPUT_TEXT", editText.getText().toString());
         }
         if (S()) {
             bundle.putBoolean("INSTANCE_STATE_IS_CHAT_REQUEST_ERROR_VISIBLE", true);
         }
-        if (bivk.b(fonq.c())) {
+        if (bkzz.b(frgj.c())) {
             bundle.putString("INSTANCE_STATE_CHAT_SUPPORT_REQUEST_ID", this.F);
             bundle.putString("INSTANCE_STATE_CHAT_POOL_ID", this.G);
             bundle.putString("INSTANCE_STATE_CASE_ID", this.H);
@@ -997,24 +999,24 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         super.onSaveInstanceState(bundle);
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onStart() {
         super.onStart();
         HelpConfig helpConfig = this.I;
-        int i = bitk.a;
-        if (biqb.d(this, helpConfig, "user_is_requesting_new_chat")) {
+        int i = bkxz.a;
+        if (bkuq.d(this, helpConfig, "user_is_requesting_new_chat")) {
             if (K()) {
                 w();
             } else if (L()) {
                 r(0L);
             }
             y();
-            bitk.p(this, this.I);
+            bkxz.p(this, this.I);
         }
     }
 
     public final void p() {
-        l(new bist());
+        l(new bkxi());
     }
 
     public final void q() {
@@ -1024,15 +1026,15 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
 
     public final void r(long j) {
         HelpConfig helpConfig = this.I;
-        int i = bitk.a;
-        if (biqb.d(this, helpConfig, "has_reported_chat_view_time_while_in_queue")) {
+        int i = bkxz.a;
+        if (bkuq.d(this, helpConfig, "has_reported_chat_view_time_while_in_queue")) {
             return;
         }
-        long a = bitk.a(this, this.I) + j;
-        bjaw.F(this, 11, a);
-        bjbk.p(this, 65, a);
-        bitk.A(this, this.I);
-        bitk.m(this, this.I);
+        long a = bkxz.a(this, this.I) + j;
+        blfl.F(this, 11, a);
+        blfz.p(this, 65, a);
+        bkxz.A(this, this.I);
+        bkxz.m(this, this.I);
         this.K.c();
     }
 
@@ -1041,22 +1043,22 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
             H();
             return;
         }
-        bjcn bjcnVar = this.P;
-        bjcn bjcnVar2 = bjcn.TYPING;
-        if (bjcnVar != bjcnVar2) {
-            this.S.postDelayed(this.T, folg.h());
-            this.P = bjcnVar2;
+        blhc blhcVar = this.P;
+        blhc blhcVar2 = blhc.TYPING;
+        if (blhcVar != blhcVar2) {
+            this.S.postDelayed(this.T, frdz.h());
+            this.P = blhcVar2;
             A();
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj, android.content.ContextWrapper, android.content.Context
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn, android.content.ContextWrapper, android.content.Context
     public final void startActivity(Intent intent) {
         if (intent != null && "android.intent.action.VIEW".equals(intent.getAction()) && intent.getData() != null) {
-            if (bjij.s(this, intent, this.I, 2)) {
+            if (blmy.s(this, intent, this.I, 2)) {
                 return;
             }
-            if (new bira(this).g(intent.getData(), 1)) {
+            if (new bkvp(this).g(intent.getData(), 1)) {
                 return;
             }
         }
@@ -1066,63 +1068,63 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
     public final void t(String str, String str2, String str3) {
         long currentTimeMillis = System.currentTimeMillis();
         ChatRequestAndConversationChimeraService.K(str, currentTimeMillis, str2, str3, this, this.I);
-        bjaw.p(this, this.I, 8);
+        blfl.p(this, this.I, 8);
         O(51);
         this.p.getText().clear();
-        bitf bitfVar = this.s;
-        fecj v = bjcf.a.v();
+        bkxu bkxuVar = this.s;
+        fgrc v = blgu.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        bjcf bjcfVar = (bjcf) v.b;
+        blgu blguVar = (blgu) v.b;
         str.getClass();
-        bjcfVar.b |= 2;
-        bjcfVar.d = str;
-        bjcf bjcfVar2 = (bjcf) v.Q();
-        fecj v2 = bjcg.a.v();
+        blguVar.b |= 2;
+        blguVar.d = str;
+        blgu blguVar2 = (blgu) v.Q();
+        fgrc v2 = blgv.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        bjcg bjcgVar = (bjcg) v2.b;
-        bjcfVar2.getClass();
-        bjcgVar.c = bjcfVar2;
-        bjcgVar.b |= 1;
-        fefl c = fefl.c(currentTimeMillis);
+        blgv blgvVar = (blgv) v2.b;
+        blguVar2.getClass();
+        blgvVar.c = blguVar2;
+        blgvVar.b |= 1;
+        fgue c = fgue.c(currentTimeMillis);
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar = v2.b;
-        bjcg bjcgVar2 = (bjcg) fecpVar;
+        fgri fgriVar = v2.b;
+        blgv blgvVar2 = (blgv) fgriVar;
         c.getClass();
-        bjcgVar2.d = c;
-        bjcgVar2.b |= 2;
-        if (!fecpVar.L()) {
+        blgvVar2.d = c;
+        blgvVar2.b |= 2;
+        if (!fgriVar.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        bjcg bjcgVar3 = (bjcg) fecpVar2;
-        bjcgVar3.b |= 4;
-        bjcgVar3.e = true;
+        fgri fgriVar2 = v2.b;
+        blgv blgvVar3 = (blgv) fgriVar2;
+        blgvVar3.b |= 4;
+        blgvVar3.e = true;
         if (str2 != null) {
-            if (!fecpVar2.L()) {
+            if (!fgriVar2.L()) {
                 v2.U();
             }
-            bjcg bjcgVar4 = (bjcg) v2.b;
-            bjcgVar4.b = 8 | bjcgVar4.b;
-            bjcgVar4.f = str2;
+            blgv blgvVar4 = (blgv) v2.b;
+            blgvVar4.b = 8 | blgvVar4.b;
+            blgvVar4.f = str2;
         }
         if (str3 != null) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            bjcg bjcgVar5 = (bjcg) v2.b;
-            bjcgVar5.b |= 16;
-            bjcgVar5.g = str3;
+            blgv blgvVar5 = (blgv) v2.b;
+            blgvVar5.b |= 16;
+            blgvVar5.g = str3;
         }
-        bitfVar.g.add((bjcg) v2.Q());
-        bitfVar.l++;
-        bitfVar.q((bitfVar.C() + bitfVar.D()) - 1);
-        bitfVar.p(bitfVar.G());
+        bkxuVar.g.add((blgv) v2.Q());
+        bkxuVar.l++;
+        bkxuVar.q((bkxuVar.C() + bkxuVar.D()) - 1);
+        bkxuVar.p(bkxuVar.G());
         z();
         m(R.string.gh_sending_message_announcement);
         this.R = null;
@@ -1137,69 +1139,69 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
     }
 
     public final void v() {
-        l(new bisu());
-        if (bivk.a(foqz.c())) {
+        l(new bkxj());
+        if (bkzz.a(frjs.c())) {
             P();
         }
         R();
-        if (bivk.a(forx.c())) {
-            bitk.r(this, this.I);
+        if (bkzz.a(frkq.c())) {
+            bkxz.r(this, this.I);
         }
-        if (bivk.a(fosa.d())) {
+        if (bkzz.a(frkt.d())) {
             sendBroadcast(new Intent("com.google.android.gms.googlehelp.bestactionmodule.RejoinChatBestActionModule.CHAT_ENDED").setPackage(getPackageName()));
         }
         p();
-        if (folt.d()) {
-            this.O.m(2014, dfee.GOOGLEHELP_CHAT_STATUS_UPDATE_NOTIFICATION);
+        if (frem.d()) {
+            this.O.m(2014, dhpk.GOOGLEHELP_CHAT_STATUS_UPDATE_NOTIFICATION);
         } else {
             this.O.k(2014);
         }
     }
 
     final void w() {
-        long a = bitk.a(this, this.I);
-        bjaw.F(this, 12, a);
-        bjbk.p(this, 66, a);
+        long a = bkxz.a(this, this.I);
+        blfl.F(this, 12, a);
+        blfz.p(this, 66, a);
     }
 
     final void x(boolean z) {
-        asot asotVar = bjaw.a;
-        if (bivk.b(foof.d())) {
-            fecj v = bjda.a.v();
+        ausn ausnVar = blfl.a;
+        if (bkzz.b(frgy.d())) {
+            fgrc v = blhp.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            bjda bjdaVar = (bjda) fecpVar;
-            bjdaVar.c = 20;
-            bjdaVar.b |= 1;
+            fgri fgriVar = v.b;
+            blhp blhpVar = (blhp) fgriVar;
+            blhpVar.c = 20;
+            blhpVar.b |= 1;
             int i = z ? 2 : 3;
-            if (!fecpVar.L()) {
+            if (!fgriVar.L()) {
                 v.U();
             }
-            fecp fecpVar2 = v.b;
-            bjda bjdaVar2 = (bjda) fecpVar2;
-            bjdaVar2.d = i - 1;
-            bjdaVar2.b = 2 | bjdaVar2.b;
-            if (!fecpVar2.L()) {
+            fgri fgriVar2 = v.b;
+            blhp blhpVar2 = (blhp) fgriVar2;
+            blhpVar2.d = i - 1;
+            blhpVar2.b = 2 | blhpVar2.b;
+            if (!fgriVar2.L()) {
                 v.U();
             }
-            bjda bjdaVar3 = (bjda) v.b;
-            bjdaVar3.j = 1;
-            bjdaVar3.b |= 256;
-            bjda bjdaVar4 = (bjda) v.Q();
-            HelpConfig hM = hM();
-            fecj v2 = bjdb.a.v();
+            blhp blhpVar3 = (blhp) v.b;
+            blhpVar3.j = 1;
+            blhpVar3.b |= 256;
+            blhp blhpVar4 = (blhp) v.Q();
+            HelpConfig ic = ic();
+            fgrc v2 = blhq.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            bjdb bjdbVar = (bjdb) v2.b;
-            bjdaVar4.getClass();
-            bjdbVar.d = bjdaVar4;
-            bjdbVar.c = 3;
-            bjaw.J(this, hM, v2);
+            blhq blhqVar = (blhq) v2.b;
+            blhpVar4.getClass();
+            blhqVar.d = blhpVar4;
+            blhqVar.c = 3;
+            blfl.J(this, ic, v2);
         }
-        bjbk.I(this, 35, true != z ? 22 : 21, fhfd.CHAT);
+        blfz.I(this, 35, true != z ? 22 : 21, fjva.CHAT);
     }
 
     public final void y() {
@@ -1215,8 +1217,8 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         this.w = false;
         this.x = false;
         this.u = -1L;
-        bitk.m(this, this.I);
-        bitk.n(this, this.I);
+        bkxz.m(this, this.I);
+        bkxz.n(this, this.I);
         this.K.c();
         invalidateOptionsMenu();
     }
@@ -1225,7 +1227,7 @@ public class ChatConversationChimeraActivity extends qet implements bipo, biqn {
         this.r.af(this.s.l - 1);
     }
 
-    @Override // defpackage.biqn
+    @Override // defpackage.bkvc
     public final Context a() {
         return this;
     }

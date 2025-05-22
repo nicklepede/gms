@@ -21,111 +21,111 @@ import com.google.android.gms.family.v2.model.UpgradeParams;
 import com.google.android.gms.wallet.firstparty.WalletCustomTheme;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
 import defpackage.a;
-import defpackage.anxo;
-import defpackage.aqup;
-import defpackage.asng;
-import defpackage.asqx;
-import defpackage.azpv;
-import defpackage.azpx;
-import defpackage.azqb;
-import defpackage.azqc;
-import defpackage.azqe;
-import defpackage.azqh;
-import defpackage.azqn;
-import defpackage.azqq;
-import defpackage.azrr;
-import defpackage.azup;
-import defpackage.azuq;
-import defpackage.azuw;
-import defpackage.azux;
-import defpackage.azva;
-import defpackage.azvb;
-import defpackage.azvc;
-import defpackage.azvf;
-import defpackage.azvi;
-import defpackage.azvl;
-import defpackage.azvo;
-import defpackage.azvs;
-import defpackage.azvv;
-import defpackage.azvy;
-import defpackage.azwb;
-import defpackage.azwg;
-import defpackage.azwo;
-import defpackage.azwp;
-import defpackage.azwr;
-import defpackage.azws;
-import defpackage.azwz;
-import defpackage.azxa;
-import defpackage.azxx;
-import defpackage.azxy;
-import defpackage.azyf;
-import defpackage.azyg;
-import defpackage.azyi;
-import defpackage.azyj;
-import defpackage.bacs;
-import defpackage.bact;
-import defpackage.bacv;
-import defpackage.bacw;
+import defpackage.apzg;
+import defpackage.asxe;
+import defpackage.aura;
+import defpackage.auur;
+import defpackage.bbtr;
+import defpackage.bbtt;
+import defpackage.bbtx;
+import defpackage.bbty;
+import defpackage.bbua;
+import defpackage.bbud;
+import defpackage.bbuj;
+import defpackage.bbum;
+import defpackage.bbvn;
+import defpackage.bbyl;
+import defpackage.bbym;
+import defpackage.bbys;
+import defpackage.bbyt;
+import defpackage.bbyw;
+import defpackage.bbyx;
+import defpackage.bbyy;
+import defpackage.bbzb;
+import defpackage.bbze;
+import defpackage.bbzh;
+import defpackage.bbzk;
+import defpackage.bbzo;
+import defpackage.bbzr;
+import defpackage.bbzu;
+import defpackage.bbzx;
+import defpackage.bcac;
+import defpackage.bcak;
+import defpackage.bcal;
+import defpackage.bcan;
+import defpackage.bcao;
+import defpackage.bcav;
+import defpackage.bcaw;
+import defpackage.bcbt;
+import defpackage.bcbu;
+import defpackage.bccb;
+import defpackage.bccc;
+import defpackage.bcce;
+import defpackage.bccf;
+import defpackage.bcgo;
+import defpackage.bcgp;
+import defpackage.bcgr;
+import defpackage.bcgs;
 import defpackage.bp;
-import defpackage.bqna;
-import defpackage.bqnc;
+import defpackage.bsup;
+import defpackage.bsur;
 import defpackage.cq;
-import defpackage.cslv;
-import defpackage.csvn;
+import defpackage.cuva;
+import defpackage.cver;
 import defpackage.dg;
-import defpackage.dipr;
-import defpackage.eiig;
-import defpackage.eiuu;
-import defpackage.ejdg;
-import defpackage.eptc;
-import defpackage.epte;
-import defpackage.epvg;
-import defpackage.eslo;
-import defpackage.eslp;
-import defpackage.esls;
-import defpackage.eslt;
-import defpackage.esxb;
-import defpackage.eumb;
-import defpackage.eumd;
-import defpackage.eumf;
-import defpackage.eumg;
+import defpackage.dlbc;
+import defpackage.ekvl;
+import defpackage.elhz;
+import defpackage.elqn;
+import defpackage.eshb;
+import defpackage.eshd;
+import defpackage.esjf;
+import defpackage.evbb;
+import defpackage.evbc;
+import defpackage.evbf;
+import defpackage.evbg;
+import defpackage.evmr;
 import defpackage.ew;
-import defpackage.feay;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.femw;
+import defpackage.exbu;
+import defpackage.exbw;
+import defpackage.exby;
+import defpackage.exbz;
+import defpackage.fgpr;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fhbp;
 import defpackage.fj;
-import defpackage.fnmh;
-import defpackage.fnms;
-import defpackage.fnmw;
-import defpackage.jti;
-import defpackage.qet;
-import defpackage.umc;
+import defpackage.fqep;
+import defpackage.fqfa;
+import defpackage.fqfe;
+import defpackage.jzx;
+import defpackage.rxx;
+import defpackage.wib;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class FamilyCreationChimeraActivity extends qet implements azup, azxx, azyf, bacs, azwr, azuw, azwz, azwo, bacv, azqh, azyi {
-    private static final eiuu D = new ejdg("yt-tandem");
-    public azrr A;
-    public azpv B;
+public final class FamilyCreationChimeraActivity extends rxx implements bbyl, bcbt, bccb, bcgo, bcan, bbys, bcav, bcak, bcgr, bbud, bcce {
+    private static final elhz D = new elqn("yt-tandem");
+    public bbvn A;
+    public bbtr B;
     public int C;
     private SparseIntArray E;
     private boolean F;
     private boolean G;
     private boolean H;
     private boolean I;
-    private azqq J;
-    private azqc K;
+    private bbum J;
+    private bbty K;
     public String j;
-    public azpx k;
+    public bbtt k;
     public byte[] l;
     public String m;
-    public epte n;
-    public epte o;
+    public eshd n;
+    public eshd o;
     public boolean p;
     public boolean q;
     public boolean r;
@@ -139,9 +139,9 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
     public Calendar z;
 
     public FamilyCreationChimeraActivity() {
-        epte epteVar = epte.UNKNOWN_FAMILY_ROLE;
-        this.n = epteVar;
-        this.o = epteVar;
+        eshd eshdVar = eshd.UNKNOWN_FAMILY_ROLE;
+        this.n = eshdVar;
+        this.o = eshdVar;
         this.C = 1;
     }
 
@@ -160,16 +160,16 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         if (pageDataMap != null && pageDataMap.c(4)) {
             bp bpVar = new bp(getSupportFragmentManager());
             String str = this.j;
-            eiig.x(str);
+            ekvl.y(str);
             PageDataMap pageDataMap2 = this.u;
-            eiig.x(pageDataMap2);
+            ekvl.y(pageDataMap2);
             PageData a = pageDataMap2.a(4);
-            azws azwsVar = new azws();
+            bcao bcaoVar = new bcao();
             Bundle bundle = new Bundle(2);
             bundle.putString("accountName", str);
             bundle.putParcelable("pageData", a);
-            azwsVar.setArguments(bundle);
-            bpVar.F(R.id.fm_family_creation_fragment_container, azwsVar);
+            bcaoVar.setArguments(bundle);
+            bpVar.F(R.id.fm_family_creation_fragment_container, bcaoVar);
             bpVar.w(null);
             return bpVar;
         }
@@ -177,16 +177,16 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         if (pageDataMap3 != null && pageDataMap3.c(22)) {
             bp bpVar2 = new bp(getSupportFragmentManager());
             String str2 = this.j;
-            eiig.x(str2);
+            ekvl.y(str2);
             PageDataMap pageDataMap4 = this.u;
-            eiig.x(pageDataMap4);
+            ekvl.y(pageDataMap4);
             PageData a2 = pageDataMap4.a(22);
             PageDataMap pageDataMap5 = this.u;
-            eiig.x(pageDataMap5);
+            ekvl.y(pageDataMap5);
             PageData a3 = pageDataMap5.a(18);
             PageDataMap pageDataMap6 = this.u;
-            eiig.x(pageDataMap6);
-            bpVar2.F(R.id.fm_family_creation_fragment_container, azwp.x(str2, a2, a3, pageDataMap6.a(19)));
+            ekvl.y(pageDataMap6);
+            bpVar2.F(R.id.fm_family_creation_fragment_container, bcal.x(str2, a2, a3, pageDataMap6.a(19)));
             bpVar2.w(null);
             return bpVar2;
         }
@@ -196,23 +196,23 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         }
         bp bpVar3 = new bp(getSupportFragmentManager());
         String str3 = this.j;
-        eiig.x(str3);
+        ekvl.y(str3);
         PageDataMap pageDataMap8 = this.u;
-        eiig.x(pageDataMap8);
+        ekvl.y(pageDataMap8);
         PageData a4 = pageDataMap8.a(16);
         PageDataMap pageDataMap9 = this.u;
-        eiig.x(pageDataMap9);
+        ekvl.y(pageDataMap9);
         PageData a5 = pageDataMap9.a(18);
         PageDataMap pageDataMap10 = this.u;
-        eiig.x(pageDataMap10);
-        bpVar3.F(R.id.fm_family_creation_fragment_container, azxa.x(str3, a4, a5, pageDataMap10.a(19)));
+        ekvl.y(pageDataMap10);
+        bpVar3.F(R.id.fm_family_creation_fragment_container, bcaw.x(str3, a4, a5, pageDataMap10.a(19)));
         bpVar3.w(null);
         return bpVar3;
     }
 
     private final void P() {
         V();
-        jti.a(this).d(0, null, new azvl(this));
+        jzx.a(this).d(0, null, new bbzh(this));
     }
 
     private final void Q() {
@@ -224,31 +224,31 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
     }
 
     private final void R() {
-        epvg[] epvgVarArr;
+        esjf[] esjfVarArr;
         if (I()) {
             q();
         }
         CanCreateFamilyData canCreateFamilyData = this.y;
-        if (canCreateFamilyData != null && (epvgVarArr = canCreateFamilyData.b) != null && epvgVarArr.length > 0 && epvgVarArr[0] == epvg.LACKS_BIRTHDAY) {
+        if (canCreateFamilyData != null && (esjfVarArr = canCreateFamilyData.b) != null && esjfVarArr.length > 0 && esjfVarArr[0] == esjf.LACKS_BIRTHDAY) {
             D();
             return;
         }
-        eiig.x(canCreateFamilyData);
+        ekvl.y(canCreateFamilyData);
         PageData pageData = canCreateFamilyData.c;
         String str = this.j;
-        eiig.x(str);
-        azqb.a(this, pageData, str, new azva(this), null, false).show();
+        ekvl.y(str);
+        bbtx.a(this, pageData, str, new bbyw(this), null, false).show();
     }
 
     private final void S() {
-        jti a = jti.a(this);
+        jzx a = jzx.a(this);
         PageDataMap pageDataMap = this.u;
-        eiig.x(pageDataMap);
+        ekvl.y(pageDataMap);
         if (!pageDataMap.c(35)) {
             q();
             if (this.s) {
                 V();
-                a.d(6, null, new azvs(this));
+                a.d(6, null, new bbzo(this));
                 return;
             }
             return;
@@ -268,7 +268,7 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
     }
 
     private final void T() {
-        azqb.c(this, new azvc(this), new DialogInterface.OnClickListener() { // from class: azuz
+        bbtx.c(this, new bbyy(this), new DialogInterface.OnClickListener() { // from class: bbyv
             @Override // android.content.DialogInterface.OnClickListener
             public final void onClick(DialogInterface dialogInterface, int i) {
                 FamilyCreationChimeraActivity.this.t();
@@ -278,7 +278,7 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
 
     private final void U() {
         V();
-        jti.a(this).d(3, null, new azwg(this));
+        jzx.a(this).d(3, null, new bcac(this));
     }
 
     private final void V() {
@@ -304,59 +304,59 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         this.E.put(i, 1);
     }
 
-    @Override // defpackage.azxx, defpackage.azyf
+    @Override // defpackage.bcbt, defpackage.bccb
     public final void C(boolean z) {
         this.I = z;
     }
 
     public final void D() {
-        azux azuxVar;
+        bbyt bbytVar;
         ProfileData profileData = this.x;
         if (profileData == null || profileData.f == null) {
             String str = this.j;
-            eiig.x(str);
+            ekvl.y(str);
             PageDataMap pageDataMap = this.u;
-            eiig.x(pageDataMap);
+            ekvl.y(pageDataMap);
             PageData a = pageDataMap.a(3);
             PageDataMap pageDataMap2 = this.u;
-            eiig.x(pageDataMap2);
+            ekvl.y(pageDataMap2);
             PageData a2 = pageDataMap2.a(14);
-            azuxVar = new azux();
+            bbytVar = new bbyt();
             Bundle bundle = new Bundle(3);
             bundle.putString("accountName", str);
             bundle.putParcelable("birthdayPageData", a);
             bundle.putParcelable("confirmPageData", a2);
-            azuxVar.setArguments(bundle);
+            bbytVar.setArguments(bundle);
         } else {
             String str2 = this.j;
-            eiig.x(str2);
+            ekvl.y(str2);
             PageDataMap pageDataMap3 = this.u;
-            eiig.x(pageDataMap3);
+            ekvl.y(pageDataMap3);
             PageData a3 = pageDataMap3.a(3);
             PageDataMap pageDataMap4 = this.u;
-            eiig.x(pageDataMap4);
+            ekvl.y(pageDataMap4);
             PageData a4 = pageDataMap4.a(14);
             ProfileData profileData2 = this.x;
-            eiig.x(profileData2);
+            ekvl.y(profileData2);
             BirthdayData birthdayData = profileData2.f;
-            azuxVar = new azux();
+            bbytVar = new bbyt();
             Bundle bundle2 = new Bundle(4);
             bundle2.putString("accountName", str2);
             bundle2.putParcelable("birthdayPageData", a3);
             bundle2.putParcelable("confirmPageData", a4);
             bundle2.putParcelable("birthday", birthdayData);
-            azuxVar.setArguments(bundle2);
+            bbytVar.setArguments(bundle2);
         }
         bp bpVar = new bp(getSupportFragmentManager());
-        bpVar.v(azuxVar, "birthdayDialog");
+        bpVar.v(bbytVar, "birthdayDialog");
         bpVar.b();
     }
 
-    @Override // defpackage.bacv
+    @Override // defpackage.bcgr
     public final void E(PageData pageData) {
         String str = this.j;
-        eiig.x(str);
-        azqb.a(this, pageData, str, new azvb(this), null, false).show();
+        ekvl.y(str);
+        bbtx.a(this, pageData, str, new bbyx(this), null, false).show();
         Q();
     }
 
@@ -386,13 +386,13 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
             java.lang.String r1 = "play"
             boolean r1 = r0.equals(r1)
             if (r1 == 0) goto L20
-            r0 = 2132151452(0x7f160c9c, float:1.9944967E38)
+            r0 = 2132151466(0x7f160caa, float:1.9944995E38)
             goto L35
         L20:
             java.lang.String r1 = "music"
             boolean r1 = r0.equals(r1)
             if (r1 == 0) goto L2c
-            r0 = 2132151456(0x7f160ca0, float:1.9944975E38)
+            r0 = 2132151470(0x7f160cae, float:1.9945004E38)
             goto L35
         L2c:
             java.lang.String r1 = "youtube"
@@ -401,47 +401,47 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
             r0 = r2
         L35:
             if (r0 != 0) goto L3a
-            r0 = 2132151197(0x7f160b9d, float:1.994445E38)
+            r0 = 2132151211(0x7f160bab, float:1.9944478E38)
         L3a:
             if (r0 == r2) goto L49
             com.google.android.gms.wallet.firstparty.WalletCustomTheme r1 = new com.google.android.gms.wallet.firstparty.WalletCustomTheme
             r1.<init>()
-            int r0 = defpackage.anxo.a(r7, r0)
+            int r0 = defpackage.apzg.a(r7, r0)
             r1.g(r0)
             goto L4a
         L49:
             r1 = 0
         L4a:
-            defpackage.eiig.x(r1)
-            boolean r0 = defpackage.fnmh.j()
+            defpackage.ekvl.y(r1)
+            boolean r0 = defpackage.fqep.j()
             r2 = 1
             r0 = r0 ^ r2
-            dipr r4 = new dipr
+            dlbc r4 = new dlbc
             r4.<init>(r7)
             boolean r5 = r7.F
             if (r5 == 0) goto L64
             com.google.android.gms.family.v2.model.UpgradeParams r5 = r7.v
-            defpackage.eiig.x(r5)
+            defpackage.ekvl.y(r5)
             com.google.android.gms.family.v2.model.BillingSignupData r5 = r5.a
             goto L6b
         L64:
             com.google.android.gms.family.v2.model.SetupParams r5 = r7.w
-            defpackage.eiig.x(r5)
+            defpackage.ekvl.y(r5)
             com.google.android.gms.family.v2.model.BillingSignupData r5 = r5.a
         L6b:
             java.lang.String r5 = r5.a
-            defpackage.eiig.x(r5)
+            defpackage.ekvl.y(r5)
             byte[] r3 = android.util.Base64.decode(r5, r3)
             r4.g(r3)
             android.accounts.Account r3 = new android.accounts.Account
             java.lang.String r5 = r7.j
-            defpackage.eiig.x(r5)
+            defpackage.ekvl.y(r5)
             java.lang.String r6 = "com.google"
             r3.<init>(r5, r6)
             r4.c(r3)
             r4.e(r0)
             r4.d(r1)
-            azrr r0 = r7.A
+            bbvn r0 = r7.A
             r1 = 6
             r0.i(r1)
             android.content.Intent r0 = r4.a()
@@ -453,21 +453,21 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
 
     public final void G() {
         V();
-        getSupportLoaderManager().c(8, null, new azvi(this));
+        getSupportLoaderManager().c(8, null, new bbze(this));
     }
 
-    @Override // defpackage.bacv
+    @Override // defpackage.bcgr
     public final void H(boolean z) {
         Q();
         V();
-        getSupportLoaderManager().c(1, null, new azvy(this, z));
+        getSupportLoaderManager().c(1, null, new bbzu(this, z));
     }
 
     public final boolean I() {
         return getSupportFragmentManager().g(R.id.fm_family_creation_fragment_container) != null;
     }
 
-    @Override // defpackage.azwz, defpackage.azwo
+    @Override // defpackage.bcav, defpackage.bcak
     public final boolean J() {
         return this.G;
     }
@@ -489,75 +489,75 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
                         }
                         bp bpVar = new bp(supportFragmentManager);
                         String str = this.j;
-                        eiig.x(str);
+                        ekvl.y(str);
                         PageDataMap pageDataMap6 = this.u;
-                        eiig.x(pageDataMap6);
+                        ekvl.y(pageDataMap6);
                         PageData a = pageDataMap6.a(16);
                         PageDataMap pageDataMap7 = this.u;
-                        eiig.x(pageDataMap7);
+                        ekvl.y(pageDataMap7);
                         PageData a2 = pageDataMap7.a(18);
                         PageDataMap pageDataMap8 = this.u;
-                        eiig.x(pageDataMap8);
-                        bpVar.t(R.id.fm_family_creation_fragment_container, azxa.x(str, a, a2, pageDataMap8.a(19)));
+                        ekvl.y(pageDataMap8);
+                        bpVar.t(R.id.fm_family_creation_fragment_container, bcaw.x(str, a, a2, pageDataMap8.a(19)));
                         bpVar.b();
                     } else {
                         bp bpVar2 = new bp(supportFragmentManager);
                         String str2 = this.j;
-                        eiig.x(str2);
+                        ekvl.y(str2);
                         PageDataMap pageDataMap9 = this.u;
-                        eiig.x(pageDataMap9);
+                        ekvl.y(pageDataMap9);
                         PageData a3 = pageDataMap9.a(22);
                         PageDataMap pageDataMap10 = this.u;
-                        eiig.x(pageDataMap10);
+                        ekvl.y(pageDataMap10);
                         PageData a4 = pageDataMap10.a(18);
                         PageDataMap pageDataMap11 = this.u;
-                        eiig.x(pageDataMap11);
-                        bpVar2.t(R.id.fm_family_creation_fragment_container, azwp.x(str2, a3, a4, pageDataMap11.a(19)));
+                        ekvl.y(pageDataMap11);
+                        bpVar2.t(R.id.fm_family_creation_fragment_container, bcal.x(str2, a3, a4, pageDataMap11.a(19)));
                         bpVar2.b();
                     }
                 } else {
                     bp bpVar3 = new bp(supportFragmentManager);
                     byte[] bArr = this.l;
                     String str3 = this.j;
-                    eiig.x(str3);
+                    ekvl.y(str3);
                     PageDataMap pageDataMap12 = this.u;
-                    eiig.x(pageDataMap12);
+                    ekvl.y(pageDataMap12);
                     PageData a5 = pageDataMap12.a(2);
                     ProfileData profileData = this.x;
-                    eiig.x(profileData);
-                    bpVar3.t(R.id.fm_family_creation_fragment_container, azyg.x(bArr, str3, a5, profileData));
+                    ekvl.y(profileData);
+                    bpVar3.t(R.id.fm_family_creation_fragment_container, bccc.x(bArr, str3, a5, profileData));
                     bpVar3.b();
                 }
             } else {
                 bp bpVar4 = new bp(supportFragmentManager);
                 byte[] bArr2 = this.l;
                 String str4 = this.j;
-                eiig.x(str4);
+                ekvl.y(str4);
                 PageDataMap pageDataMap13 = this.u;
-                eiig.x(pageDataMap13);
+                ekvl.y(pageDataMap13);
                 PageData a6 = pageDataMap13.a(37);
-                azxy azxyVar = new azxy();
+                bcbu bcbuVar = new bcbu();
                 Bundle bundle = new Bundle(4);
                 bundle.putByteArray("auditToken", bArr2);
                 bundle.putString("accountName", str4);
                 bundle.putParcelable("pageData", a6);
-                azxyVar.setArguments(bundle);
-                bpVar4.t(R.id.fm_family_creation_fragment_container, azxyVar);
+                bcbuVar.setArguments(bundle);
+                bpVar4.t(R.id.fm_family_creation_fragment_container, bcbuVar);
                 bpVar4.b();
             }
         } else {
             bp bpVar5 = new bp(supportFragmentManager);
             String str5 = this.j;
-            eiig.x(str5);
+            ekvl.y(str5);
             PageDataMap pageDataMap14 = this.u;
-            eiig.x(pageDataMap14);
+            ekvl.y(pageDataMap14);
             PageData a7 = pageDataMap14.a(1);
-            azuq azuqVar = new azuq();
+            bbym bbymVar = new bbym();
             Bundle bundle2 = new Bundle(2);
             bundle2.putString("accountName", str5);
             bundle2.putParcelable("pageData", a7);
-            azuqVar.setArguments(bundle2);
-            bpVar5.t(R.id.fm_family_creation_fragment_container, azuqVar);
+            bbymVar.setArguments(bundle2);
+            bpVar5.t(R.id.fm_family_creation_fragment_container, bbymVar);
             bpVar5.b();
         }
         return true;
@@ -568,41 +568,41 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         finish();
     }
 
-    @Override // defpackage.azup
+    @Override // defpackage.bbyl
     public final void b() {
         byte[] bArr = this.l;
         String str = this.j;
-        eiig.x(str);
+        ekvl.y(str);
         PageDataMap pageDataMap = this.u;
-        eiig.x(pageDataMap);
+        ekvl.y(pageDataMap);
         PageData a = pageDataMap.a(2);
         ProfileData profileData = this.x;
-        eiig.x(profileData);
-        azyg x = azyg.x(bArr, str, a, profileData);
+        ekvl.y(profileData);
+        bccc x = bccc.x(bArr, str, a, profileData);
         bp bpVar = new bp(getSupportFragmentManager());
         bpVar.F(R.id.fm_family_creation_fragment_container, x);
         bpVar.w(null);
         bpVar.a();
     }
 
-    @Override // defpackage.azuw
+    @Override // defpackage.bbys
     public final void c(Calendar calendar) {
         this.z = calendar;
         U();
     }
 
-    @Override // defpackage.azup, defpackage.azxx, defpackage.azyf, defpackage.azwr, defpackage.azuw, defpackage.azwz, defpackage.azwo, defpackage.bacv, defpackage.azyi
-    public final azrr hA() {
+    @Override // defpackage.bbyl, defpackage.bcbt, defpackage.bccb, defpackage.bcan, defpackage.bbys, defpackage.bcav, defpackage.bcak, defpackage.bcgr, defpackage.bcce
+    public final bbvn hQ() {
         return this.A;
     }
 
-    @Override // defpackage.bacv
-    public final azpv k() {
+    @Override // defpackage.bcgr
+    public final bbtr k() {
         return this.B;
     }
 
-    @Override // defpackage.bacv
-    public final azpx l() {
+    @Override // defpackage.bcgr
+    public final bbtt l() {
         return this.k;
     }
 
@@ -611,10 +611,10 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         if (getIntent().hasExtra("tosContent")) {
             byte[] bArr = this.l;
             String str = this.j;
-            eiig.x(str);
+            ekvl.y(str);
             String stringExtra = getIntent().getStringExtra("tosContent");
-            eiig.x(stringExtra);
-            bact x = bact.x(bArr, str, stringExtra, getIntent().getStringExtra("tosContinueButton"), getIntent().getStringExtra("tosMoreButton"));
+            ekvl.y(stringExtra);
+            bcgp x = bcgp.x(bArr, str, stringExtra, getIntent().getStringExtra("tosContinueButton"), getIntent().getStringExtra("tosMoreButton"));
             bp bpVar = new bp(getSupportFragmentManager());
             bpVar.F(R.id.fm_family_creation_fragment_container, x);
             bpVar.w(null);
@@ -633,13 +633,13 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
     }
 
     public final void n() {
-        epvg[] epvgVarArr;
+        esjf[] esjfVarArr;
         if (this.E.size() == 0) {
-            this.F = this.o == epte.HEAD_OF_HOUSEHOLD && this.p && this.r;
-            jti a = jti.a(this);
+            this.F = this.o == eshd.HEAD_OF_HOUSEHOLD && this.p && this.r;
+            jzx a = jzx.a(this);
             if (!this.F) {
                 CanCreateFamilyData canCreateFamilyData = this.y;
-                if (canCreateFamilyData != null && !canCreateFamilyData.a && (epvgVarArr = canCreateFamilyData.b) != null && epvgVarArr.length > 0 && epvgVarArr[0] != epvg.LACKS_BIRTHDAY && canCreateFamilyData.c == null) {
+                if (canCreateFamilyData != null && !canCreateFamilyData.a && (esjfVarArr = canCreateFamilyData.b) != null && esjfVarArr.length > 0 && esjfVarArr[0] != esjf.LACKS_BIRTHDAY && canCreateFamilyData.c == null) {
                     T();
                     return;
                 }
@@ -650,7 +650,7 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
                         return;
                     } else {
                         if (this.r) {
-                            a.c(2, null, new azvv(this));
+                            a.c(2, null, new bbzr(this));
                             return;
                         }
                         m(true);
@@ -660,11 +660,11 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
                     }
                 }
                 if (canCreateFamilyData != null && canCreateFamilyData.a) {
-                    a.c(2, null, new azvv(this));
+                    a.c(2, null, new bbzr(this));
                     return;
                 }
                 PageDataMap pageDataMap = this.u;
-                eiig.x(pageDataMap);
+                ekvl.y(pageDataMap);
                 if (!pageDataMap.c(2)) {
                     R();
                     return;
@@ -679,13 +679,13 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         }
     }
 
-    @Override // defpackage.bacv
+    @Override // defpackage.bcgr
     public final void o() {
-        azqb.b(this).show();
+        bbtx.b(this).show();
         Q();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         String str;
         int i3 = i2;
@@ -707,11 +707,11 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
                     S();
                     break;
                 } else {
-                    eiig.x(intent);
+                    ekvl.y(intent);
                     if (intent.getStringExtra("consistencyToken") != null) {
                         this.k.c(getIntent().getStringExtra("consistencyToken"), getIntent().getLongExtra("tokenExpirationTimeSecs", 0L));
                     }
-                    eiig.x(intent);
+                    ekvl.y(intent);
                     boolean booleanExtra = intent.getBooleanExtra("familyChanged", this.H);
                     this.H = booleanExtra;
                     if (!booleanExtra) {
@@ -731,109 +731,109 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
                     S();
                     break;
                 } else {
-                    azqq azqqVar = this.J;
-                    eiig.x(intent);
-                    azqqVar.e(intent);
+                    bbum bbumVar = this.J;
+                    ekvl.y(intent);
+                    bbumVar.e(intent);
                     setResult(1, N());
                     finish();
                     break;
                 }
             case 4:
                 if (this.J.f() == 6) {
-                    azqq azqqVar2 = this.J;
-                    eiig.x(intent);
+                    bbum bbumVar2 = this.J;
+                    ekvl.y(intent);
                     String stringExtra = intent.getStringExtra("extra.consistencyToken");
                     if (stringExtra != null) {
                         str = "errorCode";
-                        azqqVar2.d.c(stringExtra, 300L);
+                        bbumVar2.d.c(stringExtra, 300L);
                     } else {
                         str = "errorCode";
                     }
                 } else {
                     str = "errorCode";
-                    azqq azqqVar3 = this.J;
-                    eiig.x(intent);
-                    azqqVar3.e(intent);
+                    bbum bbumVar3 = this.J;
+                    ekvl.y(intent);
+                    bbumVar3.e(intent);
                 }
-                azqc azqcVar = this.K;
+                bbty bbtyVar = this.K;
                 long j = this.J.c;
-                fecj v = eslt.a.v();
+                fgrc v = evbg.a.v();
                 if (!v.b.L()) {
                     v.U();
                 }
-                eslt esltVar = (eslt) v.b;
-                esltVar.c = 6;
-                esltVar.b |= 1;
-                fecj v2 = eslp.a.v();
-                fecj v3 = eslo.a.v();
+                evbg evbgVar = (evbg) v.b;
+                evbgVar.c = 6;
+                evbgVar.b |= 1;
+                fgrc v2 = evbc.a.v();
+                fgrc v3 = evbb.a.v();
                 int i4 = i3 != -1 ? i3 != 0 ? 1 : 3 : 2;
                 if (!v3.b.L()) {
                     v3.U();
                 }
-                eslo esloVar = (eslo) v3.b;
-                esloVar.c = i4 - 1;
-                esloVar.b |= 1;
+                evbb evbbVar = (evbb) v3.b;
+                evbbVar.c = i4 - 1;
+                evbbVar.b |= 1;
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                eslp eslpVar = (eslp) v2.b;
-                eslo esloVar2 = (eslo) v3.Q();
-                esloVar2.getClass();
-                eslpVar.c = esloVar2;
-                eslpVar.b |= 2;
+                evbc evbcVar = (evbc) v2.b;
+                evbb evbbVar2 = (evbb) v3.Q();
+                evbbVar2.getClass();
+                evbcVar.c = evbbVar2;
+                evbcVar.b |= 2;
                 if (!v.b.L()) {
                     v.U();
                 }
-                eslt esltVar2 = (eslt) v.b;
-                eslp eslpVar2 = (eslp) v2.Q();
-                eslpVar2.getClass();
-                esltVar2.d = eslpVar2;
-                esltVar2.b |= 2;
-                azqcVar.a((eslt) v.Q(), j);
+                evbg evbgVar2 = (evbg) v.b;
+                evbc evbcVar2 = (evbc) v2.Q();
+                evbcVar2.getClass();
+                evbgVar2.d = evbcVar2;
+                evbgVar2.b |= 2;
+                bbtyVar.a((evbg) v.Q(), j);
                 String stringExtra2 = intent.getStringExtra("result.familywebviewoutcome");
-                eumg eumgVar = null;
+                exbz exbzVar = null;
                 if (!TextUtils.isEmpty(stringExtra2)) {
                     try {
                         byte[] decode = Base64.decode(stringExtra2, 0);
                         if (decode != null) {
-                            fecp y = fecp.y(eumg.a, decode, 0, decode.length, febw.a());
-                            fecp.M(y);
-                            eumgVar = (eumg) y;
+                            fgri y = fgri.y(exbz.a, decode, 0, decode.length, fgqp.a());
+                            fgri.M(y);
+                            exbzVar = (exbz) y;
                         }
-                    } catch (fedk | IllegalArgumentException e) {
-                        azqq.a.f(a.o(stringExtra2, e, "exception caught in getDeserializedWebviewState: InvalidProtocolBufferException -- Received unexpected protocol buffer '", "'. Details: "), new Object[0]);
+                    } catch (fgsd | IllegalArgumentException e) {
+                        bbum.a.f(a.o(stringExtra2, e, "exception caught in getDeserializedWebviewState: InvalidProtocolBufferException -- Received unexpected protocol buffer '", "'. Details: "), new Object[0]);
                     }
                 }
                 int i5 = i3 != -1 ? 3 : 1;
-                if (eumgVar != null) {
-                    this.H = eumgVar.c;
+                if (exbzVar != null) {
+                    this.H = exbzVar.c;
                     if (i3 == -1) {
-                        int i6 = eumgVar.b;
+                        int i6 = exbzVar.b;
                         if ((i6 & 4) != 0) {
-                            int a = eumf.a(eumgVar.e);
+                            int a = exby.a(exbzVar.e);
                             if (a == 0) {
                                 a = 1;
                             }
                             int i7 = a - 1;
                             if (i7 == 1) {
-                                startActivityForResult(new Intent().setClassName(this, "com.google.android.gms.family.v2.manage.FamilyManagementActivity").putExtra("accountName", this.j).putExtra("appId", this.B.a).putExtra("familyChanged", true).putExtra("consistencyToken", this.k.b()).putExtra("tokenExpirationTimeSecs", this.k.a()).putExtra("customTheme", getIntent().getIntExtra("customTheme", 0)).putExtra("predefinedTheme", asqx.c(getIntent().getStringExtra("predefinedTheme"))).putExtra("clientCallingPackage", asng.q(this)), 5);
+                                startActivityForResult(new Intent().setClassName(this, "com.google.android.gms.family.v2.manage.FamilyManagementActivity").putExtra("accountName", this.j).putExtra("appId", this.B.a).putExtra("familyChanged", true).putExtra("consistencyToken", this.k.b()).putExtra("tokenExpirationTimeSecs", this.k.a()).putExtra("customTheme", getIntent().getIntExtra("customTheme", 0)).putExtra("predefinedTheme", auur.c(getIntent().getStringExtra("predefinedTheme"))).putExtra("clientCallingPackage", aura.q(this)), 5);
                                 break;
                             } else if (i7 == 2) {
-                                int i8 = true != fnmh.j() ? 1 : 3;
-                                dipr diprVar = new dipr(this);
-                                diprVar.g(Base64.decode(eumgVar.f, 0));
+                                int i8 = true != fqep.j() ? 1 : 3;
+                                dlbc dlbcVar = new dlbc(this);
+                                dlbcVar.g(Base64.decode(exbzVar.f, 0));
                                 String str2 = this.j;
-                                eiig.x(str2);
-                                diprVar.c(new Account(str2, "com.google"));
-                                diprVar.e(i8);
+                                ekvl.y(str2);
+                                dlbcVar.c(new Account(str2, "com.google"));
+                                dlbcVar.e(i8);
                                 WalletCustomTheme walletCustomTheme = new WalletCustomTheme();
-                                walletCustomTheme.g(anxo.a(this, R.style.Theme_MyAccount_Wallet));
-                                diprVar.d(walletCustomTheme);
-                                startActivityForResult(diprVar.a(), 6);
+                                walletCustomTheme.g(apzg.a(this, R.style.Theme_MyAccount_Wallet));
+                                dlbcVar.d(walletCustomTheme);
+                                startActivityForResult(dlbcVar.a(), 6);
                                 break;
                             }
                         } else if ((i6 & 2) != 0) {
-                            int a2 = eumd.a(eumgVar.d);
+                            int a2 = exbw.a(exbzVar.d);
                             setResult(4, new Intent().putExtra("accountName", this.j).putExtra(str, (a2 == 0 ? 1 : a2) + (-1) != 2 ? -7 : -6));
                         } else {
                             if (this.J.f() == 6) {
@@ -867,29 +867,29 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
                     this.H = false;
                     setResult(4, N().putExtra("errorCode", -6));
                 }
-                azqc azqcVar2 = this.K;
+                bbty bbtyVar2 = this.K;
                 long j2 = this.J.c;
-                fecj v4 = eslt.a.v();
+                fgrc v4 = evbg.a.v();
                 int i9 = i3 == -1 ? 8 : 9;
                 if (!v4.b.L()) {
                     v4.U();
                 }
-                eslt esltVar3 = (eslt) v4.b;
-                esltVar3.c = i9 - 1;
-                esltVar3.b |= 1;
-                azqcVar2.a((eslt) v4.Q(), j2);
+                evbg evbgVar3 = (evbg) v4.b;
+                evbgVar3.c = i9 - 1;
+                evbgVar3.b |= 1;
+                bbtyVar2.a((evbg) v4.Q(), j2);
                 finish();
                 break;
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         dg g = getSupportFragmentManager().g(R.id.fm_family_creation_fragment_container);
         if (g == null) {
             t();
         } else {
-            if (!(g instanceof azyj)) {
+            if (!(g instanceof bccf)) {
                 super.onBackPressed();
                 return;
             }
@@ -899,13 +899,13 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
-        epte epteVar;
+        eshd eshdVar;
         super.onCreate(bundle);
-        this.A = new azrr(this);
-        String q = asng.q(this);
-        if (!aqup.d(this).h(q)) {
+        this.A = new bbvn(this);
+        String q = aura.q(this);
+        if (!asxe.d(this).h(q)) {
             this.A.e(3, 8);
             M(-3);
             return;
@@ -919,7 +919,7 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         }
         boolean z = false;
         Account account = null;
-        for (Account account2 : bqna.b(this).p("com.google")) {
+        for (Account account2 : bsup.b(this).p("com.google")) {
             if (true == account2.name.equals(this.j)) {
                 account = account2;
             }
@@ -930,10 +930,10 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
             return;
         }
         String stringExtra2 = getIntent().getStringExtra("appId");
-        eiig.x(stringExtra2);
-        this.B = new azpv(stringExtra2, Integer.toString(ModuleManager.get(this).getCurrentModule().moduleVersion));
+        ekvl.y(stringExtra2);
+        this.B = new bbtr(stringExtra2, Integer.toString(ModuleManager.get(this).getCurrentModule().moduleVersion));
         this.m = getIntent().getStringExtra("referencePcid");
-        this.k = new azpx();
+        this.k = new bbtt();
         if (bundle != null && bundle.getString("consistencyToken") != null) {
             this.k.c(bundle.getString("consistencyToken"), bundle.getLong("tokenExpirationTimeSecs", 0L));
         } else if (getIntent().getStringExtra("consistencyToken") != null) {
@@ -941,28 +941,28 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         }
         if (bundle != null && bundle.getByteArray("auditToken") != null) {
             byte[] byteArray = bundle.getByteArray("auditToken");
-            eiig.x(byteArray);
+            ekvl.y(byteArray);
             this.l = byteArray;
         } else if (getIntent().getByteArrayExtra("auditToken") != null) {
             byte[] byteArrayExtra = getIntent().getByteArrayExtra("auditToken");
-            eiig.x(byteArrayExtra);
+            ekvl.y(byteArrayExtra);
             this.l = byteArrayExtra;
         } else {
-            fecj v = esxb.a.v();
-            feay w = feay.w(umc.a());
+            fgrc v = evmr.a.v();
+            fgpr w = fgpr.w(wib.a());
             if (!v.b.L()) {
                 v.U();
             }
-            esxb esxbVar = (esxb) v.b;
-            esxbVar.b |= 1;
-            esxbVar.c = w;
-            this.l = ((esxb) v.Q()).r();
+            evmr evmrVar = (evmr) v.b;
+            evmrVar.b |= 1;
+            evmrVar.c = w;
+            this.l = ((evmr) v.Q()).r();
         }
         this.x = bundle != null ? (ProfileData) bundle.getParcelable("profileData") : null;
         this.y = bundle != null ? (CanCreateFamilyData) bundle.getParcelable("canCreateData") : null;
         this.w = bundle != null ? (SetupParams) bundle.getParcelable("setupParams") : null;
         this.v = bundle != null ? (UpgradeParams) bundle.getParcelable("upgradeParams") : null;
-        int a = bundle != null ? eptc.a(bundle.getInt("pcidType")) : 0;
+        int a = bundle != null ? eshb.a(bundle.getInt("pcidType")) : 0;
         if (a == 0) {
             a = 1;
         }
@@ -978,34 +978,34 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         this.u = bundle != null ? (PageDataMap) bundle.getParcelable("pageDataMap") : null;
         this.z = bundle != null ? (Calendar) bundle.getSerializable("pendingBirthday") : null;
         if (bundle != null) {
-            epteVar = epte.b(bundle.getInt("inviteeRole"));
-            eiig.x(epteVar);
+            eshdVar = eshd.b(bundle.getInt("inviteeRole"));
+            ekvl.y(eshdVar);
         } else {
-            epteVar = epte.UNKNOWN_FAMILY_ROLE;
+            eshdVar = eshd.UNKNOWN_FAMILY_ROLE;
         }
-        this.n = epteVar;
-        if (epteVar == null) {
-            epteVar = epte.UNKNOWN_FAMILY_ROLE;
+        this.n = eshdVar;
+        if (eshdVar == null) {
+            eshdVar = eshd.UNKNOWN_FAMILY_ROLE;
         }
-        this.n = epteVar;
+        this.n = eshdVar;
         if (bundle != null && bundle.getBoolean("familyChanged")) {
             z = true;
         }
         this.H = z;
-        azrr azrrVar = this.A;
+        bbvn bbvnVar = this.A;
         String str = this.j;
-        eiig.x(str);
-        azpv azpvVar = this.B;
-        azrrVar.d(str, azpvVar.b, azpvVar.a);
+        ekvl.y(str);
+        bbtr bbtrVar = this.B;
+        bbvnVar.d(str, bbtrVar.b, bbtrVar.a);
         String str2 = this.j;
-        eiig.x(str2);
-        this.K = new azqc(this, str2);
-        femw a2 = fnms.a.a().a();
+        ekvl.y(str2);
+        this.K = new bbty(this, str2);
+        fhbp a2 = fqfa.a.lK().a();
         String stringExtra3 = getIntent().getStringExtra("appId");
-        eiig.x(stringExtra3);
-        String d = azqq.d(stringExtra3);
-        if (W() || !fnmh.k() || (!a2.b.contains(d) && !D.contains(d))) {
-            azqe.d(this, getIntent(), q);
+        ekvl.y(stringExtra3);
+        String d = bbum.d(stringExtra3);
+        if (W() || !fqep.k() || (!a2.b.contains(d) && !D.contains(d))) {
+            bbua.d(this, getIntent(), q);
             this.A.i(2);
             setContentView(R.layout.fm_activity_family_creation_v2);
             q();
@@ -1018,109 +1018,109 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
             }
             V();
             this.E = new SparseIntArray();
-            jti a3 = jti.a(this);
-            a3.c(5, null, new azwb(this));
+            jzx a3 = jzx.a(this);
+            a3.c(5, null, new bbzx(this));
             B(5);
-            a3.c(7, null, new azvo(this));
+            a3.c(7, null, new bbzk(this));
             B(7);
-            a3.c(6, null, new azvs(this));
+            a3.c(6, null, new bbzo(this));
             B(6);
-            a3.c(4, null, new azvf(this));
+            a3.c(4, null, new bbzb(this));
             B(4);
             return;
         }
         String str3 = this.j;
-        eiig.x(str3);
-        azqq azqqVar = new azqq(str3, d, this.k, q);
-        this.J = azqqVar;
-        azqc azqcVar = this.K;
-        int f = azqqVar.f();
+        ekvl.y(str3);
+        bbum bbumVar = new bbum(str3, d, this.k, q);
+        this.J = bbumVar;
+        bbty bbtyVar = this.K;
+        int f = bbumVar.f();
         int i = ModuleManager.get(this).getCurrentModule().moduleVersion;
         long j = this.J.c;
-        fecj v2 = eslt.a.v();
+        fgrc v2 = evbg.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        eslt esltVar = (eslt) v2.b;
-        esltVar.c = 5;
-        esltVar.b |= 1;
-        fecj v3 = esls.a.v();
+        evbg evbgVar = (evbg) v2.b;
+        evbgVar.c = 5;
+        evbgVar.b |= 1;
+        fgrc v3 = evbf.a.v();
         if (!v3.b.L()) {
             v3.U();
         }
-        fecp fecpVar = v3.b;
-        esls eslsVar = (esls) fecpVar;
-        eslsVar.c = eumb.a(f);
-        eslsVar.b |= 1;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v3.b;
+        evbf evbfVar = (evbf) fgriVar;
+        evbfVar.c = exbu.a(f);
+        evbfVar.b |= 1;
+        if (!fgriVar.L()) {
             v3.U();
         }
-        fecp fecpVar2 = v3.b;
-        esls eslsVar2 = (esls) fecpVar2;
-        eslsVar2.b = 2 | eslsVar2.b;
-        eslsVar2.d = i;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v3.b;
+        evbf evbfVar2 = (evbf) fgriVar2;
+        evbfVar2.b = 2 | evbfVar2.b;
+        evbfVar2.d = i;
+        if (!fgriVar2.L()) {
             v3.U();
         }
-        esls eslsVar3 = (esls) v3.b;
-        eslsVar3.e = 1;
-        eslsVar3.b |= 4;
+        evbf evbfVar3 = (evbf) v3.b;
+        evbfVar3.e = 1;
+        evbfVar3.b |= 4;
         if (!v2.b.L()) {
             v2.U();
         }
-        eslt esltVar2 = (eslt) v2.b;
-        esls eslsVar4 = (esls) v3.Q();
-        eslsVar4.getClass();
-        esltVar2.e = eslsVar4;
-        esltVar2.b |= 4;
-        azqcVar.a((eslt) v2.Q(), j);
-        azqq azqqVar2 = this.J;
-        fecj v4 = csvn.a.v();
-        azqn azqnVar = new azqn();
-        azqnVar.d(fnmh.a.a().o());
-        azqnVar.a = azqqVar2.b();
-        azqnVar.c(azqqVar2.c);
-        azqnVar.b(String.valueOf(eumb.a(azqqVar2.f())));
-        String a4 = azqnVar.a().a();
+        evbg evbgVar2 = (evbg) v2.b;
+        evbf evbfVar4 = (evbf) v3.Q();
+        evbfVar4.getClass();
+        evbgVar2.e = evbfVar4;
+        evbgVar2.b |= 4;
+        bbtyVar.a((evbg) v2.Q(), j);
+        bbum bbumVar2 = this.J;
+        fgrc v4 = cver.a.v();
+        bbuj bbujVar = new bbuj();
+        bbujVar.a = fqep.a.lK().o();
+        bbujVar.b = bbumVar2.b();
+        bbujVar.c(bbumVar2.c);
+        bbujVar.b(String.valueOf(exbu.a(bbumVar2.f())));
+        String a4 = bbujVar.a().a();
         if (!v4.b.L()) {
             v4.U();
         }
-        fecp fecpVar3 = v4.b;
+        fgri fgriVar3 = v4.b;
         a4.getClass();
-        ((csvn) fecpVar3).b = a4;
-        String str4 = azqqVar2.b;
-        if (!fecpVar3.L()) {
+        ((cver) fgriVar3).b = a4;
+        String str4 = bbumVar2.b;
+        if (!fgriVar3.L()) {
             v4.U();
         }
-        fecp fecpVar4 = v4.b;
+        fgri fgriVar4 = v4.b;
         str4.getClass();
-        ((csvn) fecpVar4).c = str4;
-        if (!fecpVar4.L()) {
+        ((cver) fgriVar4).c = str4;
+        if (!fgriVar4.L()) {
             v4.U();
         }
-        fecp fecpVar5 = v4.b;
-        ((csvn) fecpVar5).d = 1;
-        if (!fecpVar5.L()) {
+        fgri fgriVar5 = v4.b;
+        ((cver) fgriVar5).d = 1;
+        if (!fgriVar5.L()) {
             v4.U();
         }
-        ((csvn) v4.b).e = 1;
-        int i2 = bqnc.a().d;
+        ((cver) v4.b).e = 1;
+        int i2 = bsur.a().d;
         if (!v4.b.L()) {
             v4.U();
         }
-        ((csvn) v4.b).f = i2;
-        String c = azqqVar2.c();
+        ((cver) v4.b).f = i2;
+        String c = bbumVar2.c();
         if (!v4.b.L()) {
             v4.U();
         }
-        ((csvn) v4.b).g = c;
-        startActivityForResult(cslv.a((csvn) v4.Q()), 4);
+        ((cver) v4.b).g = c;
+        startActivityForResult(cuva.a((cver) v4.Q()), 4);
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onPause() {
         super.onPause();
-        jti a = jti.a(this);
+        jzx a = jzx.a(this);
         a.e(0);
         a.e(2);
         a.e(5);
@@ -1129,7 +1129,7 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         a.e(4);
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putParcelable("profileData", this.x);
@@ -1165,7 +1165,7 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         bundle.putByteArray("auditToken", this.l);
     }
 
-    @Override // defpackage.bacv
+    @Override // defpackage.bcgr
     public final void p() {
         Q();
     }
@@ -1174,12 +1174,12 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         findViewById(R.id.fm_family_creation_loading_screen).setVisibility(8);
     }
 
-    @Override // defpackage.azwz, defpackage.azwo
+    @Override // defpackage.bcav, defpackage.bcak
     public final void r() {
         t();
     }
 
-    @Override // defpackage.azwr, defpackage.azwz, defpackage.azwo
+    @Override // defpackage.bcan, defpackage.bcav, defpackage.bcak
     public final void s(boolean z) {
         if (this.G) {
             z();
@@ -1195,21 +1195,21 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         }
         getWindow().addFlags(8192);
         String str = this.j;
-        eiig.x(str);
+        ekvl.y(str);
         String str2 = this.m;
         int i = this.C;
         int i2 = i - 1;
         if (i == 0) {
             throw null;
         }
-        bacw bacwVar = new bacw();
+        bcgs bcgsVar = new bcgs();
         Bundle bundle = new Bundle(4);
         bundle.putString("accountName", str);
         bundle.putString("referencePcid", str2);
         bundle.putInt("pcidType", i2);
         bundle.putBoolean("headless", false);
-        bacwVar.setArguments(bundle);
-        bacwVar.show(getSupportFragmentManager(), "upgrade-preconditions");
+        bcgsVar.setArguments(bundle);
+        bcgsVar.show(getSupportFragmentManager(), "upgrade-preconditions");
     }
 
     public final void t() {
@@ -1220,22 +1220,22 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
 
     public final void u() {
         PageDataMap pageDataMap;
-        azyj x;
+        bccf x;
         if (this.I && (pageDataMap = this.u) != null && pageDataMap.c(35)) {
             q();
             this.I = false;
             if (W() && this.B.a.equals("agsa")) {
                 String str = this.j;
-                eiig.x(str);
+                ekvl.y(str);
                 PageDataMap pageDataMap2 = this.u;
-                eiig.x(pageDataMap2);
-                x = azyj.x(str, pageDataMap2.a(35), new ArrayList());
+                ekvl.y(pageDataMap2);
+                x = bccf.x(str, pageDataMap2.a(35), new ArrayList());
             } else {
                 String str2 = this.j;
-                eiig.x(str2);
+                ekvl.y(str2);
                 PageDataMap pageDataMap3 = this.u;
-                eiig.x(pageDataMap3);
-                x = azyj.x(str2, pageDataMap3.a(35), null);
+                ekvl.y(pageDataMap3);
+                x = bccf.x(str2, pageDataMap3.a(35), null);
             }
             bp bpVar = new bp(getSupportFragmentManager());
             bpVar.F(R.id.fm_family_creation_fragment_container, x);
@@ -1249,16 +1249,16 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
             finish();
             return;
         }
-        boolean k = fnmh.k();
+        boolean k = fqep.k();
         if (!k) {
             this.A.a();
         }
-        femw b = fnmw.b();
+        fhbp b = fqfe.b();
         String stringExtra = getIntent().getStringExtra("appId");
-        eiig.x(stringExtra);
-        String d = azqq.d(stringExtra);
+        ekvl.y(stringExtra);
+        String d = bbum.d(stringExtra);
         if (W() || !k || (!b.b.contains(d) && !D.contains(d))) {
-            Intent addFlags = new Intent().setClassName(this, "com.google.android.gms.family.v2.invites.SendInvitationsActivity").putExtra("accountName", this.j).putExtra("consistencyToken", this.k.b()).putExtra("tokenExpirationTimeSecs", this.k.a()).putExtra("appId", this.B.a).putExtra("customTheme", getIntent().getIntExtra("customTheme", 0)).putExtra("predefinedTheme", asqx.c(getIntent().getStringExtra("predefinedTheme"))).putExtra("clientCallingPackage", asng.q(this)).putExtra("fromCreate", true).putExtra("familyChanged", this.H).putExtra("profileData", this.x).putExtra("inviteeRole", this.n.g).addFlags(AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE);
+            Intent addFlags = new Intent().setClassName(this, "com.google.android.gms.family.v2.invites.SendInvitationsActivity").putExtra("accountName", this.j).putExtra("consistencyToken", this.k.b()).putExtra("tokenExpirationTimeSecs", this.k.a()).putExtra("appId", this.B.a).putExtra("customTheme", getIntent().getIntExtra("customTheme", 0)).putExtra("predefinedTheme", auur.c(getIntent().getStringExtra("predefinedTheme"))).putExtra("clientCallingPackage", aura.q(this)).putExtra("fromCreate", true).putExtra("familyChanged", this.H).putExtra("profileData", this.x).putExtra("inviteeRole", this.n.g).addFlags(AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE);
             if (this.B.a.equals("agsa")) {
                 addFlags.putExtra("isDirectAddInvitations", W());
             }
@@ -1266,14 +1266,14 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
             return;
         }
         String str3 = this.j;
-        eiig.x(str3);
-        azqq azqqVar = new azqq(str3, d, this.k, asng.q(this));
-        this.J = azqqVar;
-        this.K.c(azqqVar.f(), ModuleManager.get(this).getCurrentModule().moduleVersion, this.J.c);
+        ekvl.y(str3);
+        bbum bbumVar = new bbum(str3, d, this.k, aura.q(this));
+        this.J = bbumVar;
+        this.K.c(bbumVar.f(), ModuleManager.get(this).getCurrentModule().moduleVersion, this.J.c);
         startActivityForResult(this.J.a("family_module_create_family"), 3);
     }
 
-    @Override // defpackage.azxx
+    @Override // defpackage.bcbt
     public final void v() {
         if (this.I) {
             this.A.i(32);
@@ -1283,7 +1283,7 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         }
         if (!this.F) {
             CanCreateFamilyData canCreateFamilyData = this.y;
-            eiig.x(canCreateFamilyData);
+            ekvl.y(canCreateFamilyData);
             if (!canCreateFamilyData.a) {
                 R();
                 return;
@@ -1292,11 +1292,11 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         m(false);
     }
 
-    @Override // defpackage.azyf
+    @Override // defpackage.bccb
     public final void w() {
         if (!this.F) {
             CanCreateFamilyData canCreateFamilyData = this.y;
-            eiig.x(canCreateFamilyData);
+            ekvl.y(canCreateFamilyData);
             if (!canCreateFamilyData.a) {
                 R();
                 return;
@@ -1305,13 +1305,13 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         m(false);
     }
 
-    @Override // defpackage.azyi
+    @Override // defpackage.bcce
     public final void x() {
         this.t = false;
         u();
     }
 
-    @Override // defpackage.bacs
+    @Override // defpackage.bcgo
     public final void y() {
         fj O = O();
         if (!this.r || O == null) {
@@ -1331,7 +1331,7 @@ public final class FamilyCreationChimeraActivity extends qet implements azup, az
         }
     }
 
-    @Override // defpackage.azqh
+    @Override // defpackage.bbud
     public final Context getContext() {
         return this;
     }

@@ -2,21 +2,21 @@ package com.google.android.gms.app.settings;
 
 import android.content.Intent;
 import android.os.Bundle;
-import defpackage.ascr;
-import defpackage.qfp;
-import defpackage.tqm;
+import defpackage.aufg;
+import defpackage.ryt;
+import defpackage.vmm;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class RecoverPermissionChimeraActivity extends qfp {
+public class RecoverPermissionChimeraActivity extends ryt {
     private Set j;
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
-        if (i == 0 && ascr.b.d(this.j).isEmpty()) {
+        if (i == 0 && aufg.b.d(this.j).isEmpty()) {
             setResult(-1);
         } else {
             setResult(0);
@@ -24,7 +24,7 @@ public class RecoverPermissionChimeraActivity extends qfp {
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         ArrayList<String> stringArrayListExtra = getIntent().getStringArrayListExtra("requiredGroups");
@@ -34,16 +34,16 @@ public class RecoverPermissionChimeraActivity extends qfp {
             return;
         }
         this.j = new HashSet(stringArrayListExtra);
-        Set d = ascr.b.d(this.j);
+        Set d = aufg.b.d(this.j);
         if (d.isEmpty()) {
             setResult(-1);
             finish();
             return;
         }
-        tqm tqmVar = new tqm();
+        vmm vmmVar = new vmm();
         Bundle bundle2 = new Bundle();
         bundle2.putStringArrayList("missingGroups", new ArrayList<>(d));
-        tqmVar.setArguments(bundle2);
-        tqmVar.show(getSupportFragmentManager(), "PermissionsDialog");
+        vmmVar.setArguments(bundle2);
+        vmmVar.show(getSupportFragmentManager(), "PermissionsDialog");
     }
 }

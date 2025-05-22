@@ -10,75 +10,75 @@ import com.google.android.gms.libs.identity.ImmutableWorkSource;
 import com.google.android.gms.libs.location.validation.platform.gnss.GnssBatchedTransportV1;
 import com.google.android.gms.libs.location.validation.platform.gnss.GnssLocationListener;
 import com.google.android.gms.libs.platform.GmsAlarmManagerCompat$OnAlarmListener;
-import defpackage.asmb;
-import defpackage.asot;
-import defpackage.bwvf;
-import defpackage.bwvs;
-import defpackage.bwvt;
-import defpackage.bwwp;
-import defpackage.bwwv;
-import defpackage.bwwy;
-import defpackage.bwxl;
-import defpackage.bwxs;
-import defpackage.bwxt;
-import defpackage.bxbt;
-import defpackage.bxbu;
-import defpackage.bxby;
-import defpackage.byhr;
-import defpackage.ejhf;
-import defpackage.enre;
-import defpackage.fuwt;
-import defpackage.fuww;
-import defpackage.fvaq;
-import defpackage.fvbo;
-import defpackage.fvcb;
-import defpackage.fvfu;
+import defpackage.aupv;
+import defpackage.ausn;
+import defpackage.bzdv;
+import defpackage.bzei;
+import defpackage.bzej;
+import defpackage.bzff;
+import defpackage.bzfl;
+import defpackage.bzfo;
+import defpackage.bzgb;
+import defpackage.bzgi;
+import defpackage.bzgj;
+import defpackage.bzkj;
+import defpackage.bzkk;
+import defpackage.bzko;
+import defpackage.caqj;
+import defpackage.eluo;
+import defpackage.eqex;
+import defpackage.fxsr;
+import defpackage.fxsu;
+import defpackage.fxwo;
+import defpackage.fxxm;
+import defpackage.fxxz;
+import defpackage.fybs;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public final class GnssBatchedTransportV1 extends BatchedLocationCallback implements GmsAlarmManagerCompat$OnAlarmListener, bwxt {
+public final class GnssBatchedTransportV1 extends BatchedLocationCallback implements GmsAlarmManagerCompat$OnAlarmListener, bzgj {
     public static final /* synthetic */ int f = 0;
     public final LocationManager a;
     public final List b;
     public GnssLocationListener c;
     public Executor d;
-    public bwxl e;
+    public bzgb e;
     private final Context g;
     private long h;
     private WorkSource i;
-    private bxbu j;
-    private final bxby k;
+    private bzkk j;
+    private final bzko k;
 
     public GnssBatchedTransportV1(Context context, LocationManager locationManager) {
-        fvbo.f(locationManager, "locationManager");
+        fxxm.f(locationManager, "locationManager");
         this.g = context;
         this.a = locationManager;
-        this.k = bxbt.a(context);
-        new asmb(1, 9);
+        this.k = bzkj.a(context);
+        new aupv(1, 9);
         this.b = new ArrayList();
     }
 
     @Override // com.google.android.gms.libs.platform.GmsAlarmManagerCompat$OnAlarmListener
-    public final void a(bxbu bxbuVar) {
+    public final void a(bzkk bzkkVar) {
         synchronized (this) {
             try {
-                if (this.j != bxbuVar) {
+                if (this.j != bzkkVar) {
                     return;
                 }
-                bxby bxbyVar = this.k;
+                bzko bzkoVar = this.k;
                 long elapsedRealtime = SystemClock.elapsedRealtime() + this.h;
                 WorkSource workSource = this.i;
-                fvbo.c(workSource);
+                fxxm.c(workSource);
                 Executor executor = this.d;
-                fvbo.c(executor);
+                fxxm.c(executor);
                 try {
-                    this.j = bxbyVar.b("GnssBatchedTransportV1:periodic_flush", 2, elapsedRealtime, workSource, executor, this);
-                    asot asotVar = bwwy.a;
+                    this.j = bzkoVar.b("GnssBatchedTransportV1:periodic_flush", 2, elapsedRealtime, workSource, executor, this);
+                    ausn ausnVar = bzfo.a;
                     this.a.flushGnssBatch();
                 } catch (Throwable th) {
                     th = th;
@@ -90,8 +90,8 @@ public final class GnssBatchedTransportV1 extends BatchedLocationCallback implem
         }
     }
 
-    @Override // defpackage.bwxt
-    public final void b(bwvt bwvtVar, long j, Executor executor, GnssLocationListener gnssLocationListener) {
+    @Override // defpackage.bzgj
+    public final void b(bzej bzejVar, long j, Executor executor, GnssLocationListener gnssLocationListener) {
         synchronized (this) {
             try {
                 if (this.c != null) {
@@ -107,29 +107,29 @@ public final class GnssBatchedTransportV1 extends BatchedLocationCallback implem
                 this.d = executor;
                 LocationManager locationManager = this.a;
                 int gnssBatchSize = locationManager.getGnssBatchSize();
-                asot asotVar = bwwy.a;
-                bwvf.c(bwvtVar.a());
-                bwvf.c(bwvtVar.c());
-                if (fvfu.b(fvfu.h(j, bwxs.a), bwvtVar.c()) < 0) {
+                ausn ausnVar = bzfo.a;
+                bzdv.c(bzejVar.a());
+                bzdv.c(bzejVar.c());
+                if (fybs.b(fybs.h(j, bzgi.a), bzejVar.c()) < 0) {
                     Context context = this.g;
-                    bwxl bwxlVar = new bwxl(context, locationManager);
-                    this.e = bwxlVar;
-                    fvbo.c(bwxlVar);
-                    long c = bwvtVar.c();
-                    bwwp g = bwvtVar.g();
-                    long e = bwvtVar.e();
-                    boolean z = bwvtVar.c;
-                    ImmutableWorkSource immutableWorkSource = bwvtVar.e;
-                    fvbo.f(g, "quality");
-                    fvbo.f(immutableWorkSource, "workSource");
-                    bwvt b = bwvs.b(g, 0L, e, c, 1, 0L, z, immutableWorkSource);
-                    enre enreVar = enre.a;
-                    fvbo.e(enreVar, "directExecutor(...)");
-                    bwxlVar.b(b, 0L, enreVar, new GnssLocationListener(context, new fvaq() { // from class: bwwt
-                        @Override // defpackage.fvaq
+                    bzgb bzgbVar = new bzgb(context, locationManager);
+                    this.e = bzgbVar;
+                    fxxm.c(bzgbVar);
+                    long c = bzejVar.c();
+                    bzff g = bzejVar.g();
+                    long e = bzejVar.e();
+                    boolean z = bzejVar.c;
+                    ImmutableWorkSource immutableWorkSource = bzejVar.e;
+                    fxxm.f(g, "quality");
+                    fxxm.f(immutableWorkSource, "workSource");
+                    bzej b = bzei.b(g, 0L, e, c, 1, 0L, z, immutableWorkSource);
+                    eqex eqexVar = eqex.a;
+                    fxxm.e(eqexVar, "directExecutor(...)");
+                    bzgbVar.b(b, 0L, eqexVar, new GnssLocationListener(context, new fxwo() { // from class: bzfj
+                        @Override // defpackage.fxwo
                         public final Object a(Object obj) {
-                            fvbo.f((List) obj, "<unused var>");
-                            asot asotVar2 = bwwy.a;
+                            fxxm.f((List) obj, "<unused var>");
+                            ausn ausnVar2 = bzfo.a;
                             GnssBatchedTransportV1 gnssBatchedTransportV1 = GnssBatchedTransportV1.this;
                             synchronized (gnssBatchedTransportV1) {
                                 gnssBatchedTransportV1.e = null;
@@ -140,105 +140,105 @@ public final class GnssBatchedTransportV1 extends BatchedLocationCallback implem
                                 }
                                 gnssBatchedTransportV1.a.flushGnssBatch();
                             }
-                            return fuvs.a;
+                            return fxrq.a;
                         }
                     }));
                 }
                 try {
                 } catch (IllegalStateException e2) {
-                    ((ejhf) ((ejhf) bwwy.a.i()).s(e2)).x("error registering batched GNSS location request");
+                    ((eluo) ((eluo) bzfo.a.i()).s(e2)).x("error registering batched GNSS location request");
                 }
-                if (locationManager.registerGnssBatchedLocationCallback(fvfu.d(bwvtVar.a()), true, this, new byhr(Looper.getMainLooper()))) {
-                    long d = fvfu.d(bwvtVar.c());
+                if (locationManager.registerGnssBatchedLocationCallback(fybs.d(bzejVar.a()), true, this, new caqj(Looper.getMainLooper()))) {
+                    long d = fybs.d(bzejVar.c());
                     this.h = d;
-                    if (d / fvfu.d(bwvtVar.a()) < gnssBatchSize) {
-                        this.i = bwvtVar.e.b();
-                        bxby bxbyVar = this.k;
+                    if (d / fybs.d(bzejVar.a()) < gnssBatchSize) {
+                        this.i = bzejVar.e.b();
+                        bzko bzkoVar = this.k;
                         long elapsedRealtime = SystemClock.elapsedRealtime() + this.h;
                         WorkSource workSource = this.i;
-                        fvbo.c(workSource);
+                        fxxm.c(workSource);
                         try {
-                            this.j = bxbyVar.b("GnssBatchedTransportV1:periodic_flush", 2, elapsedRealtime, workSource, executor, this);
+                            this.j = bzkoVar.b("GnssBatchedTransportV1:periodic_flush", 2, elapsedRealtime, workSource, executor, this);
                         } catch (Throwable th) {
                             th = th;
                             throw th;
                         }
                     }
-                    if (bwwv.a.getAndSet(true)) {
+                    if (bzfl.a.getAndSet(true)) {
                         throw new IllegalStateException("Check failed.");
                     }
                 }
-                ((ejhf) bwwy.a.i()).x("error registering batched GNSS location request");
+                ((eluo) bzfo.a.i()).x("error registering batched GNSS location request");
             } catch (Throwable th2) {
                 th = th2;
             }
         }
     }
 
-    @Override // defpackage.bwxt
+    @Override // defpackage.bzgj
     public final void c() {
         synchronized (this) {
             if (this.c == null) {
                 throw new IllegalStateException("Check failed.");
             }
-            asot asotVar = bwwy.a;
+            ausn ausnVar = bzfo.a;
             List list = this.b;
             if (!list.isEmpty()) {
-                final List ad = fuwt.ad(list);
+                final List ad = fxsr.ad(list);
                 Executor executor = this.d;
-                fvbo.c(executor);
-                executor.execute(new Runnable() { // from class: bwwu
+                fxxm.c(executor);
+                executor.execute(new Runnable() { // from class: bzfk
                     @Override // java.lang.Runnable
                     public final void run() {
                         int i = GnssBatchedTransportV1.f;
                         Iterator it = ad.iterator();
                         while (it.hasNext()) {
-                            ((fvaf) it.next()).a();
+                            ((fxwd) it.next()).a();
                         }
                     }
                 });
             }
             this.i = null;
-            bwxl bwxlVar = this.e;
-            if (bwxlVar != null) {
-                bwxlVar.c();
+            bzgb bzgbVar = this.e;
+            if (bzgbVar != null) {
+                bzgbVar.c();
                 this.e = null;
             }
-            bxbu bxbuVar = this.j;
-            if (bxbuVar != null) {
-                bxbuVar.a();
+            bzkk bzkkVar = this.j;
+            if (bzkkVar != null) {
+                bzkkVar.a();
                 this.j = null;
             }
             this.c = null;
             this.d = null;
             list.clear();
-            bwwv.a.set(false);
+            bzfl.a.set(false);
         }
     }
 
     public final void onLocationBatch(final List list) {
         Executor executor;
-        fvbo.f(list, "locations");
-        final fvcb fvcbVar = new fvcb();
+        fxxm.f(list, "locations");
+        final fxxz fxxzVar = new fxxz();
         synchronized (this) {
             executor = this.d;
             if (list.isEmpty()) {
                 List list2 = this.b;
-                fvcbVar.a = fuwt.ad(list2);
+                fxxzVar.a = fxsr.ad(list2);
                 list2.clear();
             } else {
-                fvcbVar.a = fuww.a;
+                fxxzVar.a = fxsu.a;
             }
         }
         if (executor == null) {
             return;
         }
-        if (!((Collection) fvcbVar.a).isEmpty()) {
-            asot asotVar = bwwy.a;
+        if (!((Collection) fxxzVar.a).isEmpty()) {
+            ausn ausnVar = bzfo.a;
         } else if (list.isEmpty()) {
             return;
         }
-        executor.execute(new Runnable() { // from class: bwws
+        executor.execute(new Runnable() { // from class: bzfi
             @Override // java.lang.Runnable
             public final void run() {
                 GnssLocationListener gnssLocationListener;
@@ -252,9 +252,9 @@ public final class GnssBatchedTransportV1 extends BatchedLocationCallback implem
                         gnssLocationListener.onLocationChanged(list3);
                     }
                 }
-                Iterator it = ((Iterable) fvcbVar.a).iterator();
+                Iterator it = ((Iterable) fxxzVar.a).iterator();
                 while (it.hasNext()) {
-                    ((fvaf) it.next()).a();
+                    ((fxwd) it.next()).a();
                 }
             }
         });

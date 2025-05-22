@@ -14,27 +14,27 @@ import android.webkit.WebView;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.R;
 import com.google.android.gms.family.webview.FamilyWebViewChimeraActivity;
-import defpackage.arwm;
-import defpackage.bada;
-import defpackage.badd;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.qfp;
+import defpackage.atzb;
+import defpackage.bcgw;
+import defpackage.bcgz;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.ryt;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.concurrent.Callable;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FamilyWebViewChimeraActivity extends qfp {
+public class FamilyWebViewChimeraActivity extends ryt {
     public String j;
     public WebView k;
     private Account l;
-    private badd m;
+    private bcgz m;
     private View n;
 
     public final void a() {
@@ -42,7 +42,7 @@ public class FamilyWebViewChimeraActivity extends qfp {
         finish();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         if (this.k.canGoBack()) {
             this.k.goBack();
@@ -52,7 +52,7 @@ public class FamilyWebViewChimeraActivity extends qfp {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         NetworkInfo activeNetworkInfo;
         int i;
@@ -66,7 +66,7 @@ public class FamilyWebViewChimeraActivity extends qfp {
         setContentView(R.layout.fm_webview);
         this.k = (WebView) findViewById(R.id.webview);
         this.n = findViewById(R.id.no_connection);
-        this.m = badd.a();
+        this.m = bcgz.a();
         String stringExtra = intent.getStringExtra("accountName");
         if (stringExtra == null) {
             a();
@@ -80,7 +80,7 @@ public class FamilyWebViewChimeraActivity extends qfp {
             return;
         }
         this.k.clearCache(true);
-        this.k.setWebViewClient(new bada(getContainerActivity()));
+        this.k.setWebViewClient(new bcgw(getContainerActivity()));
         WebSettings settings = this.k.getSettings();
         String userAgentString = settings.getUserAgentString();
         ModuleManager moduleManager = ModuleManager.get(this);
@@ -108,55 +108,55 @@ public class FamilyWebViewChimeraActivity extends qfp {
         this.n.setVisibility(8);
         final Account account = this.l;
         final String str = this.j;
-        arwm.s(str);
-        final badd baddVar = this.m;
-        dfaq a = dfbl.a(baddVar.b, new Callable() { // from class: badb
+        atzb.s(str);
+        final bcgz bcgzVar = this.m;
+        dhlw a = dhmr.a(bcgzVar.b, new Callable() { // from class: bcgx
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 String[] strArr = {str};
-                badd baddVar2 = badd.this;
-                uou uouVar = baddVar2.a;
+                bcgz bcgzVar2 = bcgz.this;
+                wkt wktVar = bcgzVar2.a;
                 Account account2 = account;
-                eivh S = eivh.S(uouVar.b(account2, strArr));
-                synchronized (baddVar2) {
-                    baddVar2.d = S;
-                    eivh eivhVar = baddVar2.d;
-                    CookieManager cookieManager = baddVar2.c;
-                    int i2 = eitj.d;
-                    eite eiteVar = new eite();
-                    ejfg listIterator = eivhVar.listIterator();
+                elim S = elim.S(wktVar.b(account2, strArr));
+                synchronized (bcgzVar2) {
+                    bcgzVar2.d = S;
+                    elim elimVar = bcgzVar2.d;
+                    CookieManager cookieManager = bcgzVar2.c;
+                    int i2 = elgo.d;
+                    elgj elgjVar = new elgj();
+                    elsn listIterator = elimVar.listIterator();
                     while (listIterator.hasNext()) {
                         String str2 = (String) listIterator.next();
-                        Iterator it = badd.c(str2, cookieManager).iterator();
+                        Iterator it = bcgz.c(str2, cookieManager).iterator();
                         while (it.hasNext()) {
-                            eiteVar.i(badd.b(str2, ((badc) it.next()).a));
+                            elgjVar.i(bcgz.b(str2, ((bcgy) it.next()).a));
                         }
                     }
-                    baddVar2.e = eiteVar.g();
-                    baddVar2.d(account2);
+                    bcgzVar2.e = elgjVar.g();
+                    bcgzVar2.d(account2);
                 }
                 return null;
             }
         });
-        a.y(new dfah() { // from class: bacz
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        a.y(new dhln() { // from class: bcgv
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 Log.e("Family", String.format(Locale.US, "[FamilyWebViewChimeraActivity] Failed to set user auth cookies.", new Object[0]));
             }
         });
-        a.u(getContainerActivity(), new dfak() { // from class: bacx
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        a.u(getContainerActivity(), new dhlq() { // from class: bcgt
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 FamilyWebViewChimeraActivity familyWebViewChimeraActivity = FamilyWebViewChimeraActivity.this;
                 WebView webView = familyWebViewChimeraActivity.k;
                 String str2 = familyWebViewChimeraActivity.j;
-                arwm.s(str2);
+                atzb.s(str2);
                 webView.loadUrl(str2);
             }
         });
-        a.r(getContainerActivity(), new dfah() { // from class: bacy
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        a.r(getContainerActivity(), new dhln() { // from class: bcgu
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 Log.e("Family", String.format(Locale.US, "[FamilyWebViewChimeraActivity] Webview initialization failed:", new Object[0]), exc);
                 FamilyWebViewChimeraActivity.this.a();
             }

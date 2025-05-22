@@ -3,12 +3,12 @@ package com.google.android.gms.ads.internal.webview;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import com.google.android.gms.ads.internal.util.am;
-import defpackage.bqux;
+import defpackage.btco;
 import java.io.File;
 import java.util.Collections;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class ac extends n {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -25,7 +25,7 @@ public class ac extends n {
             return null;
         }
         i iVar = (i) webView;
-        if (!"mraid.js".equalsIgnoreCase(new File(bqux.a.a(str)).getName())) {
+        if (!"mraid.js".equalsIgnoreCase(new File(btco.a.a(str)).getName())) {
             if (map == null) {
                 map = Collections.EMPTY_MAP;
             }
@@ -53,6 +53,6 @@ public class ac extends n {
         iVar.q();
         String str2 = (String) com.google.android.gms.ads.internal.config.p.k.g();
         com.google.android.gms.ads.internal.c.e();
-        return com.google.android.gms.ads.internal.util.m.p(iVar.getContext(), iVar.i().a, str2);
+        return com.google.android.gms.ads.internal.util.m.q(iVar.getContext(), iVar.i().a, str2);
     }
 }

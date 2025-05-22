@@ -4,15 +4,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.jcs;
+import defpackage.yun;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GcpmCredentialProviderEventsChimeraService extends Service {
-    private final jcs a = new jcs();
+    private final yun a = new yun();
 
     @Override // android.content.ContextWrapper
     public final void attachBaseContext(Context context) {
+        super.attachBaseContext(context);
         this.a.attachBaseContext(context);
     }
 

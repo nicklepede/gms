@@ -3,21 +3,21 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.fido.fido2.api.common.UserVerificationRequirement;
-import defpackage.bbup;
+import defpackage.bdyg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public enum UserVerificationRequirement implements Parcelable {
     USER_VERIFICATION_REQUIRED("required"),
     USER_VERIFICATION_PREFERRED("preferred"),
     USER_VERIFICATION_DISCOURAGED("discouraged");
 
-    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bbuo
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bdyf
         @Override // android.os.Parcelable.Creator
         public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
             try {
                 return UserVerificationRequirement.a(parcel.readString());
-            } catch (bbup e2) {
+            } catch (bdyg e2) {
                 throw new RuntimeException(e2);
             }
         }
@@ -39,7 +39,7 @@ public enum UserVerificationRequirement implements Parcelable {
                 return userVerificationRequirement;
             }
         }
-        throw new bbup(str);
+        throw new bdyg(str);
     }
 
     @Override // android.os.Parcelable

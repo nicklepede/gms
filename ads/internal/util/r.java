@@ -8,11 +8,11 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.BaseHttpStack;
 import com.android.volley.toolbox.BasicNetwork;
 import com.android.volley.toolbox.DiskBasedCache;
-import defpackage.bqux;
+import defpackage.btco;
 import java.io.File;
 import java.util.regex.Pattern;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class r extends BasicNetwork {
     private final Context a;
@@ -23,7 +23,7 @@ public final class r extends BasicNetwork {
     }
 
     public static RequestQueue a(Context context, Network network) {
-        RequestQueue requestQueue = new RequestQueue(new DiskBasedCache(new File(bqux.a.b(context.getCacheDir(), "admob_volley")), 20971520), network);
+        RequestQueue requestQueue = new RequestQueue(new DiskBasedCache(new File(btco.a.b(context.getCacheDir(), "admob_volley")), 20971520), network);
         requestQueue.start();
         return requestQueue;
     }

@@ -4,15 +4,15 @@ import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ayda;
-import defpackage.fvbo;
+import defpackage.atzr;
+import defpackage.baha;
+import defpackage.fxxm;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class RemoteDevice extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayda();
+    public static final Parcelable.Creator CREATOR = new baha();
     public final IBinder a;
     public final String b;
     public final String c;
@@ -20,9 +20,9 @@ public final class RemoteDevice extends AbstractSafeParcelable {
     public final List e;
 
     public RemoteDevice(IBinder iBinder, String str, String str2, String str3, List list) {
-        fvbo.f(iBinder, "token");
-        fvbo.f(str, "deviceName");
-        fvbo.f(list, "capabilities");
+        fxxm.f(iBinder, "token");
+        fxxm.f(str, "deviceName");
+        fxxm.f(list, "capabilities");
         this.a = iBinder;
         this.b = str;
         this.c = str2;
@@ -32,14 +32,14 @@ public final class RemoteDevice extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "dest");
+        fxxm.f(parcel, "dest");
         IBinder iBinder = this.a;
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, iBinder);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.E(parcel, 5, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, iBinder);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.E(parcel, 5, this.e);
+        atzr.c(parcel, a);
     }
 }

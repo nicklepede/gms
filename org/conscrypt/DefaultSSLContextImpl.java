@@ -10,20 +10,20 @@ import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class DefaultSSLContextImpl extends OpenSSLContextImpl {
     private static KeyManager[] KEY_MANAGERS;
     private static TrustManager[] TRUST_MANAGERS;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class TLSv12 extends DefaultSSLContextImpl {
         public TLSv12() {
             super(NativeCrypto.tlsv12protocols);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class TLSv13 extends DefaultSSLContextImpl {
         public TLSv13() {
             super(NativeCrypto.tlsv13protocols);

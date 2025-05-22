@@ -8,26 +8,26 @@ import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.libs.identity.ClientIdentity;
 import com.google.android.gms.location.LocationRequest;
-import defpackage.arxc;
-import defpackage.bzhr;
-import defpackage.bzmy;
-import defpackage.bzmz;
-import defpackage.bzsj;
-import defpackage.eiig;
+import defpackage.atzr;
+import defpackage.cbqi;
+import defpackage.cbvp;
+import defpackage.cbvq;
+import defpackage.ccba;
+import defpackage.ekvl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class PendingIntentLocationRequest extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bzsj();
-    public static final Feature[] a = {bzhr.k};
-    public final bzmz b;
+    public static final Parcelable.Creator CREATOR = new ccba();
+    public static final Feature[] a = {cbqi.k};
+    public final cbvq b;
     public final String c;
     public final String d;
     public final int e;
 
-    public PendingIntentLocationRequest(PendingIntent pendingIntent, bzmz bzmzVar, ClientIdentity clientIdentity) {
-        eiig.p(!clientIdentity.n());
-        this.b = bzmzVar;
+    public PendingIntentLocationRequest(PendingIntent pendingIntent, cbvq cbvqVar, ClientIdentity clientIdentity) {
+        ekvl.q(!clientIdentity.n());
+        this.b = cbvqVar;
         this.c = clientIdentity.e.equals(pendingIntent.getCreatorPackage()) ? null : clientIdentity.e;
         this.d = clientIdentity.f;
         int i = 0;
@@ -65,17 +65,17 @@ public final class PendingIntentLocationRequest extends AbstractSafeParcelable i
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        bzmz bzmzVar = this.b;
-        int a2 = arxc.a(parcel);
-        arxc.t(parcel, 1, bzmzVar.a(), i, false);
-        arxc.v(parcel, 2, this.c, false);
-        arxc.v(parcel, 3, this.d, false);
-        arxc.o(parcel, 4, this.e);
-        arxc.c(parcel, a2);
+        cbvq cbvqVar = this.b;
+        int a2 = atzr.a(parcel);
+        atzr.t(parcel, 1, cbvqVar.a(), i, false);
+        atzr.v(parcel, 2, this.c, false);
+        atzr.v(parcel, 3, this.d, false);
+        atzr.o(parcel, 4, this.e);
+        atzr.c(parcel, a2);
     }
 
     public PendingIntentLocationRequest(LocationRequest locationRequest, String str, String str2, int i) {
-        this.b = new bzmy(locationRequest).a();
+        this.b = new cbvp(locationRequest).a();
         this.c = str;
         this.d = str2;
         this.e = i;

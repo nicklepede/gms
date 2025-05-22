@@ -5,14 +5,14 @@ import android.os.Parcelable;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.vqk;
+import defpackage.atzr;
+import defpackage.xml;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public final class CredentialPickerConfig extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new vqk();
+    public static final Parcelable.Creator CREATOR = new xml();
     final int a;
     public final boolean b;
     public final boolean c;
@@ -32,14 +32,14 @@ public final class CredentialPickerConfig extends AbstractSafeParcelable impleme
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.b;
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, z);
-        arxc.e(parcel, 2, this.c);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, z);
+        atzr.e(parcel, 2, this.c);
         int i2 = this.d;
-        arxc.e(parcel, 3, i2 == 3);
-        arxc.o(parcel, 4, i2);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
-        arxc.c(parcel, a);
+        atzr.e(parcel, 3, i2 == 3);
+        atzr.o(parcel, 4, i2);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
+        atzr.c(parcel, a);
     }
 
     public CredentialPickerConfig() {

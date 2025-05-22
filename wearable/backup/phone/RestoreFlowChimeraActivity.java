@@ -6,64 +6,64 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.google.android.gms.R;
 import com.google.android.gms.wearable.AppTheme;
 import com.google.android.gms.wearable.backup.phone.RestoreFlowChimeraActivity;
-import defpackage.aqxn;
-import defpackage.aqxo;
-import defpackage.arxo;
-import defpackage.asmb;
-import defpackage.dfab;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.djks;
-import defpackage.djlj;
-import defpackage.djll;
-import defpackage.djpi;
-import defpackage.djpn;
-import defpackage.djpo;
-import defpackage.djpp;
-import defpackage.djpq;
-import defpackage.djpr;
-import defpackage.djps;
-import defpackage.djqf;
-import defpackage.djqg;
-import defpackage.djqh;
-import defpackage.dkbd;
-import defpackage.dkmy;
-import defpackage.eble;
-import defpackage.eiig;
-import defpackage.ftjy;
-import defpackage.jpc;
-import defpackage.jpd;
-import defpackage.jrc;
-import defpackage.jrh;
-import defpackage.jsp;
-import defpackage.jst;
-import defpackage.kdr;
-import defpackage.qet;
+import defpackage.atac;
+import defpackage.atad;
+import defpackage.auad;
+import defpackage.aupv;
+import defpackage.dhlh;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.dlwl;
+import defpackage.dlxc;
+import defpackage.dlxe;
+import defpackage.dmbb;
+import defpackage.dmbg;
+import defpackage.dmbh;
+import defpackage.dmbi;
+import defpackage.dmbj;
+import defpackage.dmbk;
+import defpackage.dmbl;
+import defpackage.dmby;
+import defpackage.dmbz;
+import defpackage.dmca;
+import defpackage.dmmw;
+import defpackage.dmyr;
+import defpackage.edxt;
+import defpackage.ekvl;
+import defpackage.fwfq;
+import defpackage.jvr;
+import defpackage.jvs;
+import defpackage.jxr;
+import defpackage.jxw;
+import defpackage.jze;
+import defpackage.jzi;
+import defpackage.lwb;
+import defpackage.rxx;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class RestoreFlowChimeraActivity extends qet implements djqf {
-    public static final arxo j = new djlj("RestoreFlowActivity");
-    public static final jsp k = new djpn();
-    public static final jsp l = new djpo();
-    public static final jsp m = new djpp();
-    public static final jsp n = new djpq();
-    public static final jsp o = new djpr();
+public final class RestoreFlowChimeraActivity extends rxx implements dmby {
+    public static final auad j = new dlxc("RestoreFlowActivity");
+    public static final jze k = new dmbg();
+    public static final jze l = new dmbh();
+    public static final jze m = new dmbi();
+    public static final jze n = new dmbj();
+    public static final jze o = new dmbk();
     public AppTheme q;
-    public kdr p = null;
-    private jst r = null;
+    public lwb p = null;
+    private jzi r = null;
 
-    private final jst k() {
+    private final jzi k() {
         if (this.r == null) {
             String l2 = l("nodeId");
             String l3 = l("accountName");
-            jst jstVar = new jst();
-            this.r = jstVar;
-            jstVar.b(k, new djpi(djks.e(this), new asmb(2, 9), l2, l3));
-            this.r.b(l, new dkmy(this, aqxn.a));
-            this.r.b(m, new djll());
+            jzi jziVar = new jzi();
+            this.r = jziVar;
+            jziVar.b(k, new dmbb(dlwl.e(this), new aupv(2, 9), l2, l3));
+            this.r.b(l, new dmyr(this, atac.a));
+            this.r.b(m, new dlxe());
             this.r.b(n, l2);
             this.r.b(o, Boolean.valueOf(getIntent().getBooleanExtra("requireWifi", false)));
         }
@@ -81,9 +81,9 @@ public final class RestoreFlowChimeraActivity extends qet implements djqf {
     public final void a(AppTheme appTheme) {
         String str;
         this.q = appTheme;
-        dkbd.f(appTheme, getIntent(), this);
+        dmmw.f(appTheme, getIntent(), this);
         setContentView(R.layout.companion_restore_flow_activity);
-        if (ftjy.e()) {
+        if (fwfq.e()) {
             str = null;
         } else {
             str = l("deviceName");
@@ -91,43 +91,43 @@ public final class RestoreFlowChimeraActivity extends qet implements djqf {
                 str = getResources().getString(R.string.common_watch_lowercase);
             }
         }
-        final djqh djqhVar = (djqh) new jrh(getViewModelStore(), jrc.b(djqh.b), k()).a(djqh.class);
+        final dmca dmcaVar = (dmca) new jxw(getViewModelStore(), jxr.b(dmca.b), k()).a(dmca.class);
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().g(R.id.nav_host);
         if (navHostFragment == null) {
             throw new IllegalStateException("NavHostFragment not found.");
         }
-        getOnBackPressedDispatcher().b(navHostFragment, new djps());
+        getOnBackPressedDispatcher().b(navHostFragment, new dmbl());
         this.p = navHostFragment.y();
-        jpc jpcVar = djqhVar.h;
-        jpcVar.g(this, new jpd() { // from class: djpm
-            @Override // defpackage.jpd
+        jvr jvrVar = dmcaVar.h;
+        jvrVar.g(this, new jvs() { // from class: dmbf
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                djqg djqgVar = (djqg) obj;
-                RestoreFlowChimeraActivity.j.h("OnStateChange: ".concat(String.valueOf(String.valueOf(djqgVar))), new Object[0]);
+                dmbz dmbzVar = (dmbz) obj;
+                RestoreFlowChimeraActivity.j.h("OnStateChange: ".concat(String.valueOf(String.valueOf(dmbzVar))), new Object[0]);
                 Bundle bundle = new Bundle();
                 RestoreFlowChimeraActivity restoreFlowChimeraActivity = RestoreFlowChimeraActivity.this;
                 bundle.putParcelable("theme", restoreFlowChimeraActivity.q);
-                kdr kdrVar = restoreFlowChimeraActivity.p;
-                eiig.x(kdrVar);
-                int ordinal = djqgVar.ordinal();
+                lwb lwbVar = restoreFlowChimeraActivity.p;
+                ekvl.y(lwbVar);
+                int ordinal = dmbzVar.ordinal();
                 if (ordinal == 0) {
-                    kdrVar.k(R.id.loading_accounts_fragment, bundle);
+                    lwbVar.k(R.id.loading_accounts_fragment, bundle);
                     return;
                 }
                 if (ordinal == 1) {
-                    kdrVar.k(R.id.select_backup_fragment, bundle);
+                    lwbVar.k(R.id.select_backup_fragment, bundle);
                     return;
                 }
                 if (ordinal == 3) {
-                    kdrVar.k(R.id.decrypt_backup_fragment, bundle);
+                    lwbVar.k(R.id.decrypt_backup_fragment, bundle);
                     return;
                 }
                 switch (ordinal) {
                     case 5:
-                        kdrVar.k(R.id.request_charging_fragment, bundle);
+                        lwbVar.k(R.id.request_charging_fragment, bundle);
                         break;
                     case 6:
-                        kdrVar.k(R.id.restore_start_fragment, bundle);
+                        lwbVar.k(R.id.restore_start_fragment, bundle);
                         break;
                     case 7:
                     case 8:
@@ -137,83 +137,83 @@ public final class RestoreFlowChimeraActivity extends qet implements djqf {
                 }
             }
         });
-        djqhVar.k = this;
-        if (!ftjy.e()) {
-            eiig.x(str);
-            djqhVar.j = str;
+        dmcaVar.k = this;
+        if (!fwfq.e()) {
+            ekvl.y(str);
+            dmcaVar.j = str;
         }
-        if (jpcVar.n()) {
+        if (jvrVar.n()) {
             return;
         }
         if (!getIntent().getBooleanExtra("resume", false)) {
-            djqh.a.j("Start restore flow", new Object[0]);
-            djqhVar.b(djqg.FETCH_BACKUPS);
+            dmca.a.j("Start restore flow", new Object[0]);
+            dmcaVar.b(dmbz.FETCH_BACKUPS);
             return;
         }
-        kdr kdrVar = this.p;
-        eiig.x(kdrVar);
-        kdrVar.j(R.id.blank_fragment);
-        djqh.a.j("Resume restore flow", new Object[0]);
-        dfaq c = djqhVar.d.c(djqhVar.e);
-        c.z(new dfak() { // from class: djpt
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
-                djqh djqhVar2 = djqh.this;
+        lwb lwbVar = this.p;
+        ekvl.y(lwbVar);
+        lwbVar.j(R.id.blank_fragment);
+        dmca.a.j("Resume restore flow", new Object[0]);
+        dhlw c = dmcaVar.d.c(dmcaVar.e);
+        c.z(new dhlq() { // from class: dmbm
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
+                dmca dmcaVar2 = dmca.this;
                 Pair pair = (Pair) obj;
                 try {
                     byte[] bArr = (byte[]) pair.second;
-                    fecp y = fecp.y(ahiw.a, bArr, 0, bArr.length, febw.a());
-                    fecp.M(y);
-                    djqhVar2.i.l((ahiw) y);
-                    djqhVar2.b(djqg.values()[((Integer) pair.first).intValue()]);
-                } catch (fedk e) {
-                    djqh.a.g("Failed to deserialize the previous backup data. Fallback to start restore flow", e, new Object[0]);
-                    djqhVar2.b(djqg.FETCH_BACKUPS);
+                    fgri y = fgri.y(ajjm.a, bArr, 0, bArr.length, fgqp.a());
+                    fgri.M(y);
+                    dmcaVar2.i.l((ajjm) y);
+                    dmcaVar2.b(dmbz.values()[((Integer) pair.first).intValue()]);
+                } catch (fgsd e) {
+                    dmca.a.g("Failed to deserialize the previous backup data. Fallback to start restore flow", e, new Object[0]);
+                    dmcaVar2.b(dmbz.FETCH_BACKUPS);
                 }
             }
         });
-        c.y(new dfah() { // from class: djpw
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
-                djqh.a.g("Failed to get restore state. Fallback to start restore flow", exc, new Object[0]);
-                djqh.this.b(djqg.FETCH_BACKUPS);
+        c.y(new dhln() { // from class: dmbp
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
+                dmca.a.g("Failed to get restore state. Fallback to start restore flow", exc, new Object[0]);
+                dmca.this.b(dmbz.FETCH_BACKUPS);
             }
         });
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         j.j("onCreate", new Object[0]);
         setTheme(R.style.CompanionBackupTheme);
-        int i = eble.a;
-        aqxo d = djks.d(this);
+        int i = edxt.a;
+        atad d = dlwl.d(this);
         String callingPackage = getCallingPackage();
-        if (ftjy.a.a().k()) {
-            ((djqh) new jrh(getViewModelStore(), jrc.b(djqh.b), k()).a(djqh.class)).k = this;
+        if (fwfq.a.lK().k()) {
+            ((dmca) new jxw(getViewModelStore(), jxr.b(dmca.b), k()).a(dmca.class)).k = this;
         }
         if (callingPackage == null) {
-            a(dkbd.d());
+            a(dmmw.d());
             return;
         }
-        dfaq bd = d.bd(callingPackage);
-        bd.z(new dfak() { // from class: djpj
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        dhlw bc = d.bc(callingPackage);
+        bc.z(new dhlq() { // from class: dmbc
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 RestoreFlowChimeraActivity.this.a((AppTheme) obj);
             }
         });
-        bd.y(new dfah() { // from class: djpk
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+        bc.y(new dhln() { // from class: dmbd
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 RestoreFlowChimeraActivity.j.g("Did not get app theme result", exc, new Object[0]);
-                RestoreFlowChimeraActivity.this.a(dkbd.d());
+                RestoreFlowChimeraActivity.this.a(dmmw.d());
             }
         });
-        bd.a(new dfab() { // from class: djpl
-            @Override // defpackage.dfab
-            public final void jH() {
-                RestoreFlowChimeraActivity.this.a(dkbd.d());
+        bc.a(new dhlh() { // from class: dmbe
+            @Override // defpackage.dhlh
+            public final void jX() {
+                RestoreFlowChimeraActivity.this.a(dmmw.d());
             }
         });
     }

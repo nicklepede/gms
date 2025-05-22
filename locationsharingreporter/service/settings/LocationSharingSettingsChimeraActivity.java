@@ -2,39 +2,39 @@ package com.google.android.gms.locationsharingreporter.service.settings;
 
 import android.content.Intent;
 import android.os.Bundle;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byov;
-import defpackage.cbfw;
-import defpackage.ejhf;
-import defpackage.fpxh;
-import defpackage.fvbo;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.caxn;
+import defpackage.cdoo;
+import defpackage.eluo;
+import defpackage.fsrb;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public final class LocationSharingSettingsChimeraActivity extends cbfw {
-    private static final asot l = asot.b("LSR", asej.LOCATION_SHARING_REPORTER);
-    public byov j;
+public final class LocationSharingSettingsChimeraActivity extends cdoo {
+    private static final ausn l = ausn.b("LSR", auid.LOCATION_SHARING_REPORTER);
+    public caxn j;
 
-    @Override // defpackage.bysx
-    public final byov a() {
-        byov byovVar = this.j;
-        if (byovVar != null) {
-            return byovVar;
+    @Override // defpackage.cbbp
+    public final caxn a() {
+        caxn caxnVar = this.j;
+        if (caxnVar != null) {
+            return caxnVar;
         }
-        fvbo.j("settingsEnvironmentFactory");
+        fxxm.j("settingsEnvironmentFactory");
         return null;
     }
 
-    @Override // defpackage.cbfw, defpackage.bysx, defpackage.dbpz, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.cdoo, defpackage.cbbp, defpackage.deaf, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (fpxh.w()) {
+        if (fsrb.w()) {
             return;
         }
-        ((ejhf) l.h()).x("Forwarding intent to web view activity intent");
+        ((eluo) l.h()).x("Forwarding intent to web view activity intent");
         Intent className = new Intent().setClassName("com.google.android.gms", "com.google.android.gms.locationsharing.settings.ManageExistingSharesActivity");
-        fvbo.e(className, "setClassName(...)");
+        fxxm.e(className, "setClassName(...)");
         className.addFlags(33554432);
         className.addFlags(getIntent().getFlags());
         className.putExtras(getIntent());

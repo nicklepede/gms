@@ -31,79 +31,79 @@ import com.google.android.gms.appinvite.ui.context.section.ListSectionInfo;
 import com.google.android.gms.appinvite.ui.context.section.SelectionSectionInfo;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.anxo;
-import defpackage.aqsy;
-import defpackage.aqup;
-import defpackage.aqxp;
-import defpackage.aqxq;
-import defpackage.aqxr;
-import defpackage.aqxs;
-import defpackage.asej;
-import defpackage.asnb;
-import defpackage.asnd;
-import defpackage.asng;
-import defpackage.asot;
+import defpackage.apzg;
+import defpackage.asvo;
+import defpackage.asxe;
+import defpackage.atae;
+import defpackage.ataf;
+import defpackage.atag;
+import defpackage.atah;
+import defpackage.auid;
+import defpackage.auqv;
+import defpackage.auqx;
+import defpackage.aura;
+import defpackage.ausn;
 import defpackage.bp;
-import defpackage.ctji;
-import defpackage.ctjj;
-import defpackage.ctjk;
+import defpackage.cvso;
+import defpackage.cvsp;
+import defpackage.cvsq;
 import defpackage.dg;
-import defpackage.ejhf;
-import defpackage.ekqu;
-import defpackage.ekra;
-import defpackage.ekrd;
-import defpackage.ekre;
-import defpackage.ekrm;
-import defpackage.ekro;
-import defpackage.ekrp;
-import defpackage.ekrv;
+import defpackage.eluo;
+import defpackage.eneg;
+import defpackage.enem;
+import defpackage.enep;
+import defpackage.eneq;
+import defpackage.eney;
+import defpackage.enfa;
+import defpackage.enfb;
+import defpackage.enfh;
 import defpackage.ew;
-import defpackage.feab;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.fkbi;
-import defpackage.iln;
-import defpackage.qet;
-import defpackage.twh;
-import defpackage.twi;
-import defpackage.twj;
-import defpackage.twl;
-import defpackage.twm;
-import defpackage.twn;
-import defpackage.two;
-import defpackage.twq;
-import defpackage.tws;
-import defpackage.twv;
-import defpackage.tyh;
-import defpackage.tyj;
-import defpackage.tyo;
-import defpackage.typ;
-import defpackage.tyq;
-import defpackage.tyr;
-import defpackage.uaa;
-import defpackage.uaz;
-import defpackage.ubi;
-import defpackage.un;
+import defpackage.fgou;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fmrr;
+import defpackage.ind;
+import defpackage.rxx;
+import defpackage.us;
+import defpackage.vsh;
+import defpackage.vsi;
+import defpackage.vsj;
+import defpackage.vsl;
+import defpackage.vsm;
+import defpackage.vsn;
+import defpackage.vso;
+import defpackage.vsq;
+import defpackage.vss;
+import defpackage.vsu;
+import defpackage.vug;
+import defpackage.vui;
+import defpackage.vun;
+import defpackage.vuo;
+import defpackage.vup;
+import defpackage.vuq;
+import defpackage.vvz;
+import defpackage.vwy;
+import defpackage.vxh;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
-public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, tyr, tyq, aqxq, aqxr, tyh {
-    public static final asot j = asot.b("AppInvite", asej.APP_INVITE);
+public class AppInviteChimeraActivity extends rxx implements TextWatcher, vuo, vuq, vup, ataf, atag, vug {
+    public static final ausn j = ausn.b("AppInvite", auid.APP_INVITE);
     private Account A;
     private View B;
     private ImageView C;
     private ImageView D;
-    private tyj E;
-    private asnb F;
-    private twn G;
-    private two H;
+    private vui E;
+    private auqv F;
+    private vsn G;
+    private vso H;
     private Uri I;
     private String J;
     private String K;
@@ -121,31 +121,31 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
     private long W;
     private long X;
     private long Y;
-    public aqxs k;
+    public atah k;
     public String l;
-    public uaa m;
+    public vvz m;
     public Toolbar n;
     public TextView o;
     public EditText p;
     public View q;
-    public tyo r;
+    public vun r;
     public Bitmap s;
     public View.OnClickListener t;
-    public twv u;
+    public vsu u;
     public boolean v;
     public boolean w;
     public boolean x;
     private AppInviteResponseReceiver y;
     private List z;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class AppInviteResponseReceiver extends TracingBroadcastReceiver {
         public AppInviteResponseReceiver() {
             super("appinvite");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             AppInviteChimeraActivity.this.u(intent);
         }
     }
@@ -176,7 +176,7 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
             z = true;
         }
         Context applicationContext = getApplicationContext();
-        String q = asng.q(this);
+        String q = aura.q(this);
         String str2 = this.A.name;
         String obj = this.p.getText().toString();
         boolean z2 = this.S;
@@ -192,10 +192,10 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         CharSequence charSequence = this.P;
         String charSequence2 = charSequence != null ? charSequence.toString() : null;
         CharSequence charSequence3 = this.Q;
-        tws twsVar = new tws(applicationContext, q, str2, obj, str3, str4, uri2, hashMap, str5, D, arrayList, str6, str7, uri4, bitmap, charSequence2, charSequence3 != null ? charSequence3.toString() : null, this.R);
-        AppInviteIntentOperation.a.offer(twsVar);
+        vss vssVar = new vss(applicationContext, q, str2, obj, str3, str4, uri2, hashMap, str5, D, arrayList, str6, str7, uri4, bitmap, charSequence2, charSequence3 != null ? charSequence3.toString() : null, this.R);
+        AppInviteIntentOperation.a.offer(vssVar);
         startService(IntentOperation.getStartIntent(this, AppInviteIntentOperation.class, "com.google.android.gms.appinvite.send.INTENT"));
-        this.z.add(Long.valueOf(twsVar.a));
+        this.z.add(Long.valueOf(vssVar.a));
     }
 
     private final void B(Account account, boolean z) {
@@ -207,51 +207,51 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
             return;
         }
         if (this.A != null) {
-            twv twvVar = this.u;
-            fecj v = ekqu.a.v();
+            vsu vsuVar = this.u;
+            fgrc v = eneg.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            ekqu ekquVar = (ekqu) v.b;
-            ekquVar.b |= 1;
-            ekquVar.c = true;
-            twvVar.g((ekqu) v.Q(), 9, twvVar.b);
+            eneg enegVar = (eneg) v.b;
+            enegVar.b |= 1;
+            enegVar.c = true;
+            vsuVar.f((eneg) v.Q(), 9, vsuVar.a);
         }
         if (this.m.a.getParent() != null) {
             ((ViewGroup) this.m.a.getParent()).removeView(this.m.a);
         }
         this.A = account;
-        this.n.u(2131232803);
+        this.n.u(2131232867);
         this.n.s(R.string.common_choose_account);
         boolean z2 = false;
         this.x = false;
         this.q.setVisibility(8);
         ArrayList arrayList5 = null;
         this.D.setImageDrawable(null);
-        ctji ctjiVar = new ctji();
-        ctjiVar.a = 80;
-        ctjj a = ctjiVar.a();
-        aqxs aqxsVar = this.k;
-        if (aqxsVar != null && (aqxsVar.p() || this.k.q())) {
+        cvso cvsoVar = new cvso();
+        cvsoVar.a = 80;
+        cvsp a = cvsoVar.a();
+        atah atahVar = this.k;
+        if (atahVar != null && (atahVar.p() || this.k.q())) {
             this.k.h();
         }
-        aqxp aqxpVar = new aqxp(this);
-        aqxpVar.g(this.A.name);
-        aqxpVar.e(this);
-        aqxpVar.f(this);
-        aqxpVar.d(ctjk.a, a);
-        this.k = aqxpVar.a();
+        atae ataeVar = new atae(this);
+        ataeVar.g(this.A.name);
+        ataeVar.e(this);
+        ataeVar.f(this);
+        ataeVar.d(cvsq.a, a);
+        this.k = ataeVar.a();
         ew supportFragmentManager = getSupportFragmentManager();
-        tyj tyjVar = (tyj) supportFragmentManager.h("selectionFragment");
-        this.E = tyjVar;
-        if (z || tyjVar == null) {
+        vui vuiVar = (vui) supportFragmentManager.h("selectionFragment");
+        this.E = vuiVar;
+        if (z || vuiVar == null) {
             Intent intent = getIntent();
             boolean hasSystemFeature = getPackageManager().hasSystemFeature("android.hardware.telephony");
             int checkSelfPermission = checkSelfPermission("android.permission.SEND_SMS");
             if (hasSystemFeature && checkSelfPermission == 0) {
                 z2 = true;
             }
-            if (aqup.d(this).h(this.l)) {
+            if (asxe.d(this).h(this.l)) {
                 arrayList5 = intent.getParcelableArrayListExtra("com.google.android.gms.appinvite.ADDITIONAL_SUGGESTIONS");
                 arrayList2 = intent.getParcelableArrayListExtra("com.google.android.gms.appinvite.additionalPeople");
                 arrayList3 = E(intent, "com.google.android.gms.appinvite.EXCLUDED_SUGGESTED_PERSON_IDS");
@@ -264,10 +264,10 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
                 arrayList4 = null;
             }
             Resources resources = getResources();
-            String[] split = fkbi.a.a().g().split(";");
-            fkbi fkbiVar = fkbi.a;
-            String[] split2 = fkbiVar.a().e().split(";");
-            String[] split3 = fkbiVar.a().f().split(";");
+            fmrr fmrrVar = fmrr.a;
+            String[] split = fmrrVar.lK().f().split(";");
+            String[] split2 = fmrrVar.lK().d().split(";");
+            String[] split3 = fmrrVar.lK().e().split(";");
             if (!z2) {
                 split = F(split);
                 split2 = F(split2);
@@ -297,31 +297,31 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
             listSectionInfo2.l = arrayList2;
             listSectionInfo2.g = getString(R.string.appinvite_list_header);
             arrayList6.add(listSectionInfo2);
-            this.E = tyj.z(this.A.name, (int) fkbiVar.a().c(), null, true, null, false, strArr, false, resources.getInteger(R.integer.appinivte_num_portrait_grid_columns), resources.getInteger(R.integer.appinivte_num_landscape_grid_columns), arrayList6, this.l, false, null, null, null, null, true);
+            this.E = vui.z(this.A.name, (int) fmrrVar.lK().b(), null, true, null, false, strArr, false, resources.getInteger(R.integer.appinivte_num_portrait_grid_columns), resources.getInteger(R.integer.appinivte_num_landscape_grid_columns), arrayList6, this.l, false, null, null, null, null, true);
             bp bpVar = new bp(supportFragmentManager);
             bpVar.z(R.id.fragment_container, this.E, "selectionFragment");
             bpVar.b();
         }
-        tyj tyjVar2 = this.E;
-        tyjVar2.ag = this;
-        tyjVar2.ah = this;
-        tyjVar2.ai = this;
-        tyjVar2.az = this;
+        vui vuiVar2 = this.E;
+        vuiVar2.ag = this;
+        vuiVar2.ah = this;
+        vuiVar2.ai = this;
+        vuiVar2.az = this;
     }
 
     private final void C() {
-        tyj tyjVar = this.E;
-        boolean z = tyjVar != null && tyjVar.L();
+        vui vuiVar = this.E;
+        boolean z = vuiVar != null && vuiVar.L();
         this.B.setVisibility(true != z ? 8 : 0);
         if (z) {
-            asnb asnbVar = this.F;
-            if (asnbVar != null && asnbVar.isRunning()) {
+            auqv auqvVar = this.F;
+            if (auqvVar != null && auqvVar.isRunning()) {
                 this.F.stop();
             }
             this.C.setVisibility(8);
         } else {
             if (this.F == null) {
-                asnb x = uaz.x(this.C);
+                auqv x = vwy.x(this.C);
                 this.F = x;
                 this.C.setImageDrawable(x);
             }
@@ -337,10 +337,10 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         List list = this.z;
         if (list == null || list.isEmpty()) {
             if (h != null) {
-                bpVar.n(h);
+                bpVar.m(h);
             }
         } else if (h == null) {
-            bpVar.v(uaz.y(), "progressFragment");
+            bpVar.v(vwy.y(), "progressFragment");
         }
         if (bpVar.j()) {
             return;
@@ -382,89 +382,89 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
     }
 
     private final void x() {
-        if (asnd.h(this, this.l).size() > 1) {
-            this.n.w(new twm(this));
+        if (auqx.h(this, this.l).size() > 1) {
+            this.n.w(new vsm(this));
         }
     }
 
     private final void y(boolean z) {
         long uptimeMillis = this.Y != 0 ? SystemClock.uptimeMillis() - this.Y : 0L;
-        twv twvVar = this.u;
-        tyj tyjVar = this.E;
-        List A = tyjVar != null ? tyjVar.A() : null;
+        vsu vsuVar = this.u;
+        vui vuiVar = this.E;
+        List A = vuiVar != null ? vuiVar.A() : null;
         long uptimeMillis2 = SystemClock.uptimeMillis() - this.T;
         boolean z2 = (this.U == 0 || this.V == 0) ? false : true;
         boolean z3 = this.V != 0;
         int[] iArr = new int[4];
-        twv.a(A, iArr);
+        vsu.a(A, iArr);
         int i = iArr[0];
         int i2 = iArr[1];
         int i3 = iArr[2];
         int i4 = iArr[3];
-        fecj v = ekrp.a.v();
+        fgrc v = enfb.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ekrp ekrpVar = (ekrp) fecpVar;
-        ekrpVar.b |= 1;
-        ekrpVar.c = z;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        enfb enfbVar = (enfb) fgriVar;
+        enfbVar.b |= 1;
+        enfbVar.c = z;
+        if (!fgriVar.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        ekrp ekrpVar2 = (ekrp) fecpVar2;
-        ekrpVar2.b |= 2;
-        ekrpVar2.d = i;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v.b;
+        enfb enfbVar2 = (enfb) fgriVar2;
+        enfbVar2.b |= 2;
+        enfbVar2.d = i;
+        if (!fgriVar2.L()) {
             v.U();
         }
-        fecp fecpVar3 = v.b;
-        ekrp ekrpVar3 = (ekrp) fecpVar3;
-        ekrpVar3.b |= 4;
-        ekrpVar3.e = i4;
-        if (!fecpVar3.L()) {
+        fgri fgriVar3 = v.b;
+        enfb enfbVar3 = (enfb) fgriVar3;
+        enfbVar3.b |= 4;
+        enfbVar3.e = i4;
+        if (!fgriVar3.L()) {
             v.U();
         }
-        fecp fecpVar4 = v.b;
-        ekrp ekrpVar4 = (ekrp) fecpVar4;
-        ekrpVar4.b |= 8;
-        ekrpVar4.f = i3;
-        if (!fecpVar4.L()) {
+        fgri fgriVar4 = v.b;
+        enfb enfbVar4 = (enfb) fgriVar4;
+        enfbVar4.b |= 8;
+        enfbVar4.f = i3;
+        if (!fgriVar4.L()) {
             v.U();
         }
-        fecp fecpVar5 = v.b;
-        ekrp ekrpVar5 = (ekrp) fecpVar5;
-        ekrpVar5.b |= 16;
-        ekrpVar5.g = i2;
-        if (!fecpVar5.L()) {
+        fgri fgriVar5 = v.b;
+        enfb enfbVar5 = (enfb) fgriVar5;
+        enfbVar5.b |= 16;
+        enfbVar5.g = i2;
+        if (!fgriVar5.L()) {
             v.U();
         }
-        fecp fecpVar6 = v.b;
-        ekrp ekrpVar6 = (ekrp) fecpVar6;
-        ekrpVar6.b |= 32;
-        ekrpVar6.h = uptimeMillis;
-        if (!fecpVar6.L()) {
+        fgri fgriVar6 = v.b;
+        enfb enfbVar6 = (enfb) fgriVar6;
+        enfbVar6.b |= 32;
+        enfbVar6.h = uptimeMillis;
+        if (!fgriVar6.L()) {
             v.U();
         }
-        fecp fecpVar7 = v.b;
-        ekrp ekrpVar7 = (ekrp) fecpVar7;
-        ekrpVar7.b |= 64;
-        ekrpVar7.i = uptimeMillis2;
-        if (!fecpVar7.L()) {
+        fgri fgriVar7 = v.b;
+        enfb enfbVar7 = (enfb) fgriVar7;
+        enfbVar7.b |= 64;
+        enfbVar7.i = uptimeMillis2;
+        if (!fgriVar7.L()) {
             v.U();
         }
-        fecp fecpVar8 = v.b;
-        ekrp ekrpVar8 = (ekrp) fecpVar8;
-        ekrpVar8.b |= 128;
-        ekrpVar8.j = z2;
-        if (!fecpVar8.L()) {
+        fgri fgriVar8 = v.b;
+        enfb enfbVar8 = (enfb) fgriVar8;
+        enfbVar8.b |= 128;
+        enfbVar8.j = z2;
+        if (!fgriVar8.L()) {
             v.U();
         }
-        ekrp ekrpVar9 = (ekrp) v.b;
-        ekrpVar9.b |= 256;
-        ekrpVar9.k = z3;
-        twvVar.g((ekrp) v.Q(), 8, twvVar.b);
+        enfb enfbVar9 = (enfb) v.b;
+        enfbVar9.b |= 256;
+        enfbVar9.k = z3;
+        vsuVar.f((enfb) v.Q(), 8, vsuVar.a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:24:0x0073  */
@@ -560,10 +560,10 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         La1:
             r7 = move-exception
         La2:
-            asot r0 = com.google.android.gms.appinvite.AppInviteChimeraActivity.j
-            ejgq r0 = r0.i()
+            ausn r0 = com.google.android.gms.appinvite.AppInviteChimeraActivity.j
+            eltz r0 = r0.i()
             java.lang.String r1 = "Error parsing configuration file"
-            defpackage.a.Q(r0, r1, r7)
+            defpackage.a.S(r0, r1, r7)
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.appinvite.AppInviteChimeraActivity.z(android.content.res.XmlResourceParser):void");
@@ -571,7 +571,7 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
 
     public final Bundle a(int i, CharSequence charSequence) {
         Bundle bundle = new Bundle();
-        bundle.putInt("View_id", anxo.a(this, i));
+        bundle.putInt("View_id", apzg.a(this, i));
         bundle.putCharSequence("TextView_text", charSequence);
         return bundle;
     }
@@ -599,56 +599,56 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         this.v = true;
     }
 
-    @Override // defpackage.tyq
+    @Override // defpackage.vup
     public final void k(ContactPerson.ContactMethod contactMethod, boolean z) {
-        twv twvVar = this.u;
-        fecj v = ekro.a.v();
+        vsu vsuVar = this.u;
+        fgrc v = enfa.a.v();
         int i = contactMethod.a;
         if (i == 0) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekro ekroVar = (ekro) v.b;
-            ekroVar.c = 1;
-            ekroVar.b = 1 | ekroVar.b;
+            enfa enfaVar = (enfa) v.b;
+            enfaVar.c = 1;
+            enfaVar.b = 1 | enfaVar.b;
         } else if (i == 1) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekro ekroVar2 = (ekro) v.b;
-            ekroVar2.c = 2;
-            ekroVar2.b = 1 | ekroVar2.b;
+            enfa enfaVar2 = (enfa) v.b;
+            enfaVar2.c = 2;
+            enfaVar2.b = 1 | enfaVar2.b;
         } else if (i != 2) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekro ekroVar3 = (ekro) v.b;
-            ekroVar3.c = 0;
-            ekroVar3.b = 1 | ekroVar3.b;
+            enfa enfaVar3 = (enfa) v.b;
+            enfaVar3.c = 0;
+            enfaVar3.b = 1 | enfaVar3.b;
         } else {
             if (!v.b.L()) {
                 v.U();
             }
-            ekro ekroVar4 = (ekro) v.b;
-            ekroVar4.c = 3;
-            ekroVar4.b = 1 | ekroVar4.b;
+            enfa enfaVar4 = (enfa) v.b;
+            enfaVar4.c = 3;
+            enfaVar4.b = 1 | enfaVar4.b;
         }
         if (!v.b.L()) {
             v.U();
         }
-        ekro ekroVar5 = (ekro) v.b;
-        ekroVar5.b = 2 | ekroVar5.b;
-        ekroVar5.d = z;
-        twvVar.g((ekro) v.Q(), 7, twvVar.b);
+        enfa enfaVar5 = (enfa) v.b;
+        enfaVar5.b = 2 | enfaVar5.b;
+        enfaVar5.d = z;
+        vsuVar.f((enfa) v.Q(), 7, vsuVar.a);
     }
 
-    @Override // defpackage.typ
+    @Override // defpackage.vuo
     public final void l() {
-        ubi.a(this, getString(R.string.appinvite_load_error), false, true);
+        vxh.a(this, getString(R.string.appinvite_load_error), false, true);
         finish();
     }
 
-    @Override // defpackage.typ
+    @Override // defpackage.vuo
     public final synchronized void m(int i, int i2) {
         long uptimeMillis = SystemClock.uptimeMillis() - this.T;
         this.V = uptimeMillis;
@@ -656,46 +656,46 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
             this.U = uptimeMillis;
         }
         C();
-        twv twvVar = this.u;
+        vsu vsuVar = this.u;
         long j2 = this.V;
         long j3 = this.U;
         long j4 = this.W;
         long j5 = this.X;
         ArrayList arrayList = new ArrayList();
-        arrayList.add(twv.f(2, j2));
-        arrayList.add(twv.f(1, j3));
-        arrayList.add(twv.f(3, j4));
-        arrayList.add(twv.f(4, 0L));
-        arrayList.add(twv.f(5, j5));
-        fecj v = ekrv.a.v();
+        arrayList.add(vsu.e(2, j2));
+        arrayList.add(vsu.e(1, j3));
+        arrayList.add(vsu.e(3, j4));
+        arrayList.add(vsu.e(4, 0L));
+        arrayList.add(vsu.e(5, j5));
+        fgrc v = enfh.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        ekrv ekrvVar = (ekrv) fecpVar;
-        ekrvVar.b = 1 | ekrvVar.b;
-        ekrvVar.c = i;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        enfh enfhVar = (enfh) fgriVar;
+        enfhVar.b = 1 | enfhVar.b;
+        enfhVar.c = i;
+        if (!fgriVar.L()) {
             v.U();
         }
-        ekrv ekrvVar2 = (ekrv) v.b;
-        ekrvVar2.b |= 2;
-        ekrvVar2.d = i2;
+        enfh enfhVar2 = (enfh) v.b;
+        enfhVar2.b |= 2;
+        enfhVar2.d = i2;
         if (!arrayList.isEmpty()) {
             if (!v.b.L()) {
                 v.U();
             }
-            ekrv ekrvVar3 = (ekrv) v.b;
-            fedh fedhVar = ekrvVar3.e;
-            if (!fedhVar.c()) {
-                ekrvVar3.e = fecp.E(fedhVar);
+            enfh enfhVar3 = (enfh) v.b;
+            fgsa fgsaVar = enfhVar3.e;
+            if (!fgsaVar.c()) {
+                enfhVar3.e = fgri.E(fgsaVar);
             }
-            feab.E(arrayList, ekrvVar3.e);
+            fgou.E(arrayList, enfhVar3.e);
         }
-        twvVar.g((ekrv) v.Q(), 3, twvVar.b);
+        vsuVar.f((enfh) v.Q(), 3, vsuVar.a);
     }
 
-    @Override // defpackage.typ
+    @Override // defpackage.vuo
     public final synchronized void n(int i, int i2) {
         if (this.U == 0) {
             this.U = SystemClock.uptimeMillis() - this.T;
@@ -703,12 +703,12 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         C();
     }
 
-    @Override // defpackage.tyq
+    @Override // defpackage.vup
     public final synchronized void o() {
         this.X = SystemClock.uptimeMillis() - this.T;
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i != 1) {
@@ -717,7 +717,7 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
                     A();
                     return;
                 }
-                ubi.a(this, getString(R.string.appinvite_send_error), false, true);
+                vxh.a(this, getString(R.string.appinvite_send_error), false, true);
                 setResult(203);
                 finish();
                 return;
@@ -741,7 +741,7 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         x();
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         super.onBackPressed();
         if (isFinishing()) {
@@ -749,26 +749,26 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         }
     }
 
-    @Override // defpackage.aqzv
+    @Override // defpackage.atck
     public final void onConnected(Bundle bundle) {
         AppInviteChimeraActivity appInviteChimeraActivity;
         if (this.x || this.A == null) {
             appInviteChimeraActivity = this;
         } else {
             appInviteChimeraActivity = this;
-            twn twnVar = new twn(appInviteChimeraActivity, this, this.k, this.A.name, this.n);
-            appInviteChimeraActivity.G = twnVar;
-            twnVar.execute(new Void[0]);
+            vsn vsnVar = new vsn(appInviteChimeraActivity, this, this.k, this.A.name, this.n);
+            appInviteChimeraActivity.G = vsnVar;
+            vsnVar.execute(new Void[0]);
         }
         if (appInviteChimeraActivity.S || appInviteChimeraActivity.I == null || appInviteChimeraActivity.D.getDrawable() != null) {
             return;
         }
-        two twoVar = new two(this, this, appInviteChimeraActivity.I, appInviteChimeraActivity.D);
-        appInviteChimeraActivity.H = twoVar;
-        twoVar.execute(new Void[0]);
+        vso vsoVar = new vso(this, this, appInviteChimeraActivity.I, appInviteChimeraActivity.D);
+        appInviteChimeraActivity.H = vsoVar;
+        vsoVar.execute(new Void[0]);
     }
 
-    @Override // defpackage.arcf
+    @Override // defpackage.ateu
     public final void onConnectionFailed(ConnectionResult connectionResult) {
         this.k.g();
     }
@@ -777,7 +777,7 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
     /* JADX WARN: Type inference failed for: r15v0 */
     /* JADX WARN: Type inference failed for: r15v1, types: [boolean, int] */
     /* JADX WARN: Type inference failed for: r15v2 */
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         ?? r15;
         Account account;
@@ -785,17 +785,15 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         Account account3;
         super.onCreate(bundle);
         setContentView(R.layout.appinvite_activity);
-        String q = asng.q(this);
+        String q = aura.q(this);
         this.l = q;
-        String m = asng.m(this, q);
+        String m = aura.m(this, q);
         if (bundle != null) {
             this.K = bundle.getString("sessionId");
         } else {
             this.K = D();
         }
-        twv twvVar = new twv(getApplicationContext(), this.K);
-        this.u = twvVar;
-        twvVar.c();
+        this.u = new vsu(this.K);
         this.T = SystemClock.uptimeMillis();
         Intent intent = getIntent();
         ArrayList parcelableArrayListExtra = intent.getParcelableArrayListExtra("com.google.android.gms.appinvite.ADDITIONAL_SUGGESTIONS");
@@ -809,7 +807,7 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         int length = charSequenceExtra != null ? charSequenceExtra.length() : 0;
         if (TextUtils.isEmpty(this.l)) {
             this.u.b(false, parcelableArrayListExtra, parcelableArrayListExtra2, E, E2, E3, this.l, m, length, uri2);
-            ubi.a(this, getString(R.string.appinvite_start_error), false, true);
+            vxh.a(this, getString(R.string.appinvite_start_error), false, true);
             setResult(true != TextUtils.isEmpty(this.l) ? 200 : 201);
             finish();
             return;
@@ -818,7 +816,7 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         setTitle(intent.getCharSequenceExtra("com.google.android.gms.appinvite.TITLE"));
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         this.n = toolbar;
-        ht(toolbar);
+        hJ(toolbar);
         this.B = findViewById(R.id.fragment_container);
         this.C = (ImageView) findViewById(R.id.progress_bar);
         this.z = new ArrayList();
@@ -842,41 +840,41 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
             this.N = bundle.getBoolean("messageLimitFirstEdit");
             this.O = bundle.getBoolean("messageLimitNearWarning");
         }
-        uaa uaaVar = new uaa(getLayoutInflater().inflate(R.layout.appinvite_edit_message, (ViewGroup) this.B, (boolean) r15));
-        this.m = uaaVar;
-        View view = uaaVar.z;
+        vvz vvzVar = new vvz(getLayoutInflater().inflate(R.layout.appinvite_edit_message, (ViewGroup) this.B, (boolean) r15));
+        this.m = vvzVar;
+        View view = vvzVar.z;
         if (this.S) {
-            view.setOnClickListener(new twh(this));
+            view.setOnClickListener(new vsh(this));
         } else {
             view.setVisibility(8);
         }
         this.I = intent.getData();
-        uaa uaaVar2 = this.m;
-        this.q = uaaVar2.y;
-        ImageView imageView = uaaVar2.x;
+        vvz vvzVar2 = this.m;
+        this.q = vvzVar2.y;
+        ImageView imageView = vvzVar2.x;
         this.D = imageView;
         imageView.setContentDescription(getString(R.string.appinvite_image_preview));
-        this.t = new twi(this);
-        tyo tyoVar = (tyo) getSupportFragmentManager().h("imagePreviewFragment");
-        this.r = tyoVar;
-        if (tyoVar != null) {
-            tyoVar.ag = this.t;
+        this.t = new vsi(this);
+        vun vunVar = (vun) getSupportFragmentManager().h("imagePreviewFragment");
+        this.r = vunVar;
+        if (vunVar != null) {
+            vunVar.ag = this.t;
         }
-        this.D.setOnClickListener(new twj(this));
-        uaa uaaVar3 = this.m;
-        this.o = uaaVar3.w;
-        EditText editText = uaaVar3.u;
+        this.D.setOnClickListener(new vsj(this));
+        vvz vvzVar3 = this.m;
+        this.o = vvzVar3.w;
+        EditText editText = vvzVar3.u;
         this.p = editText;
         editText.setText(charSequenceExtra);
         if (charSequenceExtra != null && charSequenceExtra.length() > 100) {
             afterTextChanged(this.p.getText());
         }
         this.p.addTextChangedListener(this);
-        this.p.setOnFocusChangeListener(new twl(this));
+        this.p.setOnFocusChangeListener(new vsl(this));
         this.J = intent.getStringExtra("com.google.android.gms.appinvite.GOOGLE_ANALYTICS_TRACKING_ID");
         this.L = intent.getStringExtra("com.google.android.gms.appinvite.iosTargetApplication");
         this.M = getIntent().getStringExtra("com.google.android.gms.appinvite.androidTargetApplication");
-        this.P = aqup.d(this).h(this.l) ? intent.getCharSequenceExtra("com.google.android.gms.appinvite.DESCRIPTION") : null;
+        this.P = asxe.d(this).h(this.l) ? intent.getCharSequenceExtra("com.google.android.gms.appinvite.DESCRIPTION") : null;
         this.Q = intent.getCharSequenceExtra("com.google.android.gms.appinvite.BUTTON_TEXT");
         this.R = intent.getIntExtra("com.google.android.gms.appinvite.appMinimumVersionCode", r15);
         try {
@@ -886,7 +884,7 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
                 z(resources.getXml(identifier));
             }
         } catch (PackageManager.NameNotFoundException e) {
-            ((ejhf) ((ejhf) j.i()).s(e)).x("getCallingAppInviteConfiguration failed");
+            ((eluo) ((eluo) j.i()).s(e)).x("getCallingAppInviteConfiguration failed");
         }
         if (account == null) {
             account2 = null;
@@ -897,8 +895,8 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         } else {
             account2 = null;
         }
-        if (account == null || !asnd.o(this, account, this.l)) {
-            List h = asnd.h(this, this.l);
+        if (account == null || !auqx.o(this, account, this.l)) {
+            List h = auqx.h(this, this.l);
             account3 = h.size() == 1 ? (Account) h.get(r15) : account2;
         } else {
             account3 = account;
@@ -911,12 +909,12 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         }
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.appinvite_activity, menu);
         MenuItem item = menu.getItem(0);
-        tyj tyjVar = this.E;
-        if (tyjVar == null || !tyjVar.L() || this.E.at.isEmpty() || this.p.getText().length() == 0 || this.p.getText().length() > 100) {
+        vui vuiVar = this.E;
+        if (vuiVar == null || !vuiVar.L() || this.E.at.isEmpty() || this.p.getText().length() == 0 || this.p.getText().length() > 100) {
             item.getIcon().setColorFilter(getResources().getColor(R.color.appinvite_disabled_send), PorterDuff.Mode.MULTIPLY);
             item.setEnabled(false);
         } else {
@@ -926,7 +924,7 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != R.id.menu_send || this.E.at.isEmpty()) {
             return false;
@@ -937,58 +935,58 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         unregisterReceiver(this.y);
-        twn twnVar = this.G;
-        if (twnVar != null) {
-            twnVar.a.d();
-            twnVar.cancel(true);
+        vsn vsnVar = this.G;
+        if (vsnVar != null) {
+            vsnVar.a.d();
+            vsnVar.cancel(true);
             this.G = null;
         }
-        two twoVar = this.H;
-        if (twoVar != null) {
-            twoVar.cancel(true);
+        vso vsoVar = this.H;
+        if (vsoVar != null) {
+            vsoVar.cancel(true);
             this.H = null;
         }
-        aqxs aqxsVar = this.k;
-        if (aqxsVar != null && (aqxsVar.q() || this.k.p())) {
+        atah atahVar = this.k;
+        if (atahVar != null && (atahVar.q() || this.k.p())) {
             this.k.h();
         }
-        asnb asnbVar = this.F;
-        if (asnbVar != null && asnbVar.isRunning()) {
+        auqv auqvVar = this.F;
+        if (auqvVar != null && auqvVar.isRunning()) {
             this.F.stop();
         }
         super.onPause();
     }
 
-    @Override // defpackage.qfw
+    @Override // defpackage.rza
     protected final void onResumeFragments() {
-        aqxs aqxsVar;
+        atah atahVar;
         super.onResumeFragments();
         IntentFilter intentFilter = new IntentFilter("com.google.android.gms.appinvite.intent.action.INVITE_SENT");
         intentFilter.addCategory("android.intent.category.DEFAULT");
         AppInviteResponseReceiver appInviteResponseReceiver = new AppInviteResponseReceiver();
         this.y = appInviteResponseReceiver;
-        iln.b(this, appInviteResponseReceiver, intentFilter, 4);
+        ind.b(this, appInviteResponseReceiver, intentFilter, 4);
         ArrayList arrayList = new ArrayList(this.z);
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
             Long l = (Long) arrayList.get(i);
             l.longValue();
-            if (AppInviteIntentOperation.b.a(l)) {
+            vsq vsqVar = AppInviteIntentOperation.b;
+            if (vsqVar.a(l)) {
                 l.longValue();
-                twq twqVar = AppInviteIntentOperation.b;
-                u(twqVar.a(l) ? (Intent) twqVar.a.get(l) : null);
+                u(vsqVar.a(l) ? (Intent) vsqVar.a.get(l) : null);
             }
         }
-        if ((!this.x || this.D.getDrawable() == null) && (aqxsVar = this.k) != null) {
-            aqxsVar.g();
+        if ((!this.x || this.D.getDrawable() == null) && (atahVar = this.k) != null) {
+            atahVar.g();
         }
         C();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         int size = this.z.size();
@@ -1006,140 +1004,128 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         bundle.putBoolean("message_edited", this.v);
     }
 
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
-    protected final void onStart() {
-        super.onStart();
-        this.u.c();
-    }
-
-    @Override // defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
-    protected final void onStop() {
-        this.u.d.h();
-        super.onStop();
-    }
-
-    @Override // defpackage.tyq
+    @Override // defpackage.vup
     public final void p(ContactPerson contactPerson, int i, int i2, boolean z) {
         ContactPerson.ContactMethod a;
-        twv twvVar = this.u;
-        ekra ekraVar = null;
+        vsu vsuVar = this.u;
+        enem enemVar = null;
         if (contactPerson != null && (a = contactPerson.a()) != null) {
-            fecj v = ekra.a.v();
+            fgrc v = enem.a.v();
             int i3 = a.a;
             if (i3 == 0) {
                 if (!v.b.L()) {
                     v.U();
                 }
-                ekra ekraVar2 = (ekra) v.b;
-                ekraVar2.c = 1;
-                ekraVar2.b |= 1;
+                enem enemVar2 = (enem) v.b;
+                enemVar2.c = 1;
+                enemVar2.b |= 1;
             } else if (i3 == 1) {
                 if (!v.b.L()) {
                     v.U();
                 }
-                ekra ekraVar3 = (ekra) v.b;
-                ekraVar3.c = 2;
-                ekraVar3.b |= 1;
+                enem enemVar3 = (enem) v.b;
+                enemVar3.c = 2;
+                enemVar3.b |= 1;
             } else if (i3 != 2) {
                 if (!v.b.L()) {
                     v.U();
                 }
-                ekra ekraVar4 = (ekra) v.b;
-                ekraVar4.c = 0;
-                ekraVar4.b |= 1;
+                enem enemVar4 = (enem) v.b;
+                enemVar4.c = 0;
+                enemVar4.b |= 1;
             } else {
                 if (!v.b.L()) {
                     v.U();
                 }
-                ekra ekraVar5 = (ekra) v.b;
-                ekraVar5.c = 3;
-                ekraVar5.b |= 1;
+                enem enemVar5 = (enem) v.b;
+                enemVar5.c = 3;
+                enemVar5.b |= 1;
             }
-            ekraVar = (ekra) v.Q();
+            enemVar = (enem) v.Q();
         }
-        int a2 = ekrd.a(i);
-        fecj v2 = ekre.a.v();
+        int a2 = enep.a(i);
+        fgrc v2 = eneq.a.v();
         if (a2 != 0) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            ekre ekreVar = (ekre) v2.b;
-            ekreVar.c = a2 - 1;
-            ekreVar.b |= 1;
+            eneq eneqVar = (eneq) v2.b;
+            eneqVar.c = a2 - 1;
+            eneqVar.b |= 1;
         }
-        if (ekraVar != null) {
+        if (enemVar != null) {
             if (!v2.b.L()) {
                 v2.U();
             }
-            ekre ekreVar2 = (ekre) v2.b;
-            ekreVar2.d = ekraVar;
-            ekreVar2.b |= 2;
+            eneq eneqVar2 = (eneq) v2.b;
+            eneqVar2.d = enemVar;
+            eneqVar2.b |= 2;
         }
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar = v2.b;
-        ekre ekreVar3 = (ekre) fecpVar;
-        ekreVar3.b |= 4;
-        ekreVar3.e = i2;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v2.b;
+        eneq eneqVar3 = (eneq) fgriVar;
+        eneqVar3.b |= 4;
+        eneqVar3.e = i2;
+        if (!fgriVar.L()) {
             v2.U();
         }
-        ekre ekreVar4 = (ekre) v2.b;
-        ekreVar4.b |= 8;
-        ekreVar4.f = z;
-        twvVar.g((ekre) v2.Q(), 5, twvVar.b);
+        eneq eneqVar4 = (eneq) v2.b;
+        eneqVar4.b |= 8;
+        eneqVar4.f = z;
+        vsuVar.f((eneq) v2.Q(), 5, vsuVar.a);
     }
 
-    @Override // defpackage.tyq
+    @Override // defpackage.vup
     public final void q(boolean z) {
-        twv twvVar = this.u;
-        fecj v = ekrm.a.v();
+        vsu vsuVar = this.u;
+        fgrc v = eney.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        ekrm ekrmVar = (ekrm) v.b;
-        ekrmVar.b |= 1;
-        ekrmVar.c = !z;
-        twvVar.g((ekrm) v.Q(), 6, twvVar.b);
+        eney eneyVar = (eney) v.b;
+        eneyVar.b |= 1;
+        eneyVar.c = !z;
+        vsuVar.f((eney) v.Q(), 6, vsuVar.a);
     }
 
-    @Override // defpackage.tyr
+    @Override // defpackage.vuq
     public final void r(ContactPerson contactPerson, boolean z) {
         if (z != this.E.at.isEmpty()) {
             supportInvalidateOptionsMenu();
         }
     }
 
-    @Override // defpackage.tyq
+    @Override // defpackage.vup
     public final synchronized void s() {
         this.W = SystemClock.uptimeMillis() - this.T;
     }
 
     public final void t() {
-        startActivityForResult(aqsy.b(this.A, new ArrayList(asnd.h(this, this.l)), new String[]{"com.google"}, true, false, 1), 1);
+        startActivityForResult(asvo.b(this.A, new ArrayList(auqx.h(this, this.l)), new String[]{"com.google"}, true, false, 1), 1);
     }
 
     public final void u(Intent intent) {
         long longExtra = intent.getLongExtra("appOperationCode", -1L);
         Long valueOf = Long.valueOf(longExtra);
         if (!this.z.contains(valueOf)) {
-            ubi.a(this, getString(R.string.appinvite_send_error), false, true);
+            vxh.a(this, getString(R.string.appinvite_send_error), false, true);
             C();
             return;
         }
         this.z.remove(valueOf);
         valueOf.getClass();
-        twq twqVar = AppInviteIntentOperation.b;
+        vsq vsqVar = AppInviteIntentOperation.b;
         Long valueOf2 = Long.valueOf(longExtra);
-        HashMap hashMap = twqVar.a;
+        HashMap hashMap = vsqVar.a;
         if (hashMap.containsKey(valueOf2)) {
             hashMap.remove(valueOf2);
-            twqVar.b.remove(valueOf2);
+            vsqVar.b.remove(valueOf2);
         }
         if (!intent.hasExtra("com.google.android.gms.appinvite.errorType")) {
             String[] stringArrayExtra = intent.getStringArrayExtra("appInviteResult");
-            ubi.a(this, getString(R.string.appinvite_invitation_sent), false, false);
+            vxh.a(this, getString(R.string.appinvite_invitation_sent), false, false);
             Intent intent2 = new Intent();
             intent2.putExtra("com.google.android.gms.appinvite.RESULT_INVITATION_IDS", stringArrayExtra);
             setResult(-1, intent2);
@@ -1169,16 +1155,16 @@ public class AppInviteChimeraActivity extends qet implements TextWatcher, typ, t
         if (isFinishing()) {
             y(false);
         } else {
-            ubi.a(this, getString(R.string.appinvite_send_error), false, true);
+            vxh.a(this, getString(R.string.appinvite_send_error), false, true);
         }
     }
 
-    @Override // defpackage.tyh
-    public final un v() {
+    @Override // defpackage.vug
+    public final us v() {
         return this.m;
     }
 
-    @Override // defpackage.aqzv
+    @Override // defpackage.atck
     public final void onConnectionSuspended(int i) {
     }
 

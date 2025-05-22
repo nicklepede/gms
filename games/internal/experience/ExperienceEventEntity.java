@@ -6,17 +6,17 @@ import android.os.Parcelable;
 import com.google.android.gms.games.Game;
 import com.google.android.gms.games.GameEntity;
 import com.google.android.gms.games.internal.GamesAbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bhpi;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bjtx;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class ExperienceEventEntity extends GamesAbstractSafeParcelable implements ExperienceEvent {
-    public static final Parcelable.Creator CREATOR = new bhpi();
+    public static final Parcelable.Creator CREATOR = new bjtx();
     public final String a;
     public final GameEntity b;
     public final String c;
@@ -76,7 +76,7 @@ public final class ExperienceEventEntity extends GamesAbstractSafeParcelable imp
             return true;
         }
         ExperienceEvent experienceEvent = (ExperienceEvent) obj;
-        return arwb.b(experienceEvent.j(), this.a) && arwb.b(experienceEvent.g(), this.b) && arwb.b(experienceEvent.i(), this.c) && arwb.b(experienceEvent.h(), this.d) && arwb.b(experienceEvent.getIconImageUrl(), this.e) && arwb.b(experienceEvent.f(), this.f) && arwb.b(Long.valueOf(experienceEvent.c()), Long.valueOf(this.g)) && arwb.b(Long.valueOf(experienceEvent.e()), Long.valueOf(this.h)) && arwb.b(Long.valueOf(experienceEvent.d()), Long.valueOf(this.i)) && arwb.b(Integer.valueOf(experienceEvent.b()), Integer.valueOf(this.j)) && arwb.b(Integer.valueOf(experienceEvent.a()), Integer.valueOf(this.k));
+        return atyq.b(experienceEvent.j(), this.a) && atyq.b(experienceEvent.g(), this.b) && atyq.b(experienceEvent.i(), this.c) && atyq.b(experienceEvent.h(), this.d) && atyq.b(experienceEvent.getIconImageUrl(), this.e) && atyq.b(experienceEvent.f(), this.f) && atyq.b(Long.valueOf(experienceEvent.c()), Long.valueOf(this.g)) && atyq.b(Long.valueOf(experienceEvent.e()), Long.valueOf(this.h)) && atyq.b(Long.valueOf(experienceEvent.d()), Long.valueOf(this.i)) && atyq.b(Integer.valueOf(experienceEvent.b()), Integer.valueOf(this.j)) && atyq.b(Integer.valueOf(experienceEvent.a()), Integer.valueOf(this.k));
     }
 
     @Override // com.google.android.gms.games.internal.experience.ExperienceEvent
@@ -115,39 +115,39 @@ public final class ExperienceEventEntity extends GamesAbstractSafeParcelable imp
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("ExperienceId", this.a, arrayList);
-        arwa.b("Game", this.b, arrayList);
-        arwa.b("DisplayTitle", this.c, arrayList);
-        arwa.b("DisplayDescription", this.d, arrayList);
-        arwa.b("IconImageUrl", this.e, arrayList);
-        arwa.b("IconImageUri", this.f, arrayList);
-        arwa.b("CreatedTimestamp", Long.valueOf(this.g), arrayList);
-        arwa.b("XpEarned", Long.valueOf(this.h), arrayList);
-        arwa.b("CurrentXp", Long.valueOf(this.i), arrayList);
-        arwa.b("Type", Integer.valueOf(this.j), arrayList);
-        arwa.b("NewLevel", Integer.valueOf(this.k), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("ExperienceId", this.a, arrayList);
+        atyp.b("Game", this.b, arrayList);
+        atyp.b("DisplayTitle", this.c, arrayList);
+        atyp.b("DisplayDescription", this.d, arrayList);
+        atyp.b("IconImageUrl", this.e, arrayList);
+        atyp.b("IconImageUri", this.f, arrayList);
+        atyp.b("CreatedTimestamp", Long.valueOf(this.g), arrayList);
+        atyp.b("XpEarned", Long.valueOf(this.h), arrayList);
+        atyp.b("CurrentXp", Long.valueOf(this.i), arrayList);
+        atyp.b("Type", Integer.valueOf(this.j), arrayList);
+        atyp.b("NewLevel", Integer.valueOf(this.k), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.t(parcel, 6, this.f, i, false);
-        arxc.q(parcel, 7, this.g);
-        arxc.q(parcel, 8, this.h);
-        arxc.q(parcel, 9, this.i);
-        arxc.o(parcel, 10, this.j);
-        arxc.o(parcel, 11, this.k);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.t(parcel, 6, this.f, i, false);
+        atzr.q(parcel, 7, this.g);
+        atzr.q(parcel, 8, this.h);
+        atzr.q(parcel, 9, this.i);
+        atzr.o(parcel, 10, this.j);
+        atzr.o(parcel, 11, this.k);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

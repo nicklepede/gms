@@ -1,23 +1,23 @@
 package com.google.android.gms.asterism.api.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.eijj;
-import defpackage.eiuu;
-import defpackage.ejck;
-import defpackage.fmkc;
-import defpackage.uke;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.ekwo;
+import defpackage.elhz;
+import defpackage.elpp;
+import defpackage.fpbt;
+import defpackage.wgd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class AsterismApiChimeraService extends bxgd {
+public class AsterismApiChimeraService extends bzot {
     public AsterismApiChimeraService() {
-        super(199, "com.google.android.gms.asterism.service.START", ejck.a, 0, 10, eiuu.G(eijj.e(',').n(fmkc.c())));
+        super(199, "com.google.android.gms.asterism.service.START", elpp.a, 0, 10, elhz.G(ekwo.e(',').n(fpbt.c())));
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new uke(this, l(), getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new wgd(this, l(), getServiceRequest.f, getServiceRequest.p));
     }
 }

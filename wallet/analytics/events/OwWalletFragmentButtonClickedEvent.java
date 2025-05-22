@@ -3,14 +3,14 @@ package com.google.android.gms.wallet.analytics.events;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
-import defpackage.digl;
-import defpackage.disk;
-import defpackage.djdi;
+import defpackage.dkrw;
+import defpackage.dldv;
+import defpackage.dlpb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class OwWalletFragmentButtonClickedEvent extends AnalyticsSessionStartEndEvent {
-    public static final Parcelable.Creator CREATOR = new digl();
+    public static final Parcelable.Creator CREATOR = new dkrw();
     public final BuyFlowConfig c;
     public final int d;
 
@@ -29,11 +29,11 @@ public class OwWalletFragmentButtonClickedEvent extends AnalyticsSessionStartEnd
     public final void writeToParcel(Parcel parcel, int i) {
         super.writeToParcel(parcel, i);
         parcel.writeInt(this.d);
-        djdi.a(this.c, parcel, i);
+        dlpb.a(this.c, parcel, i);
     }
 
     public OwWalletFragmentButtonClickedEvent(BuyFlowConfig buyFlowConfig, String str, int i) {
-        this.m = disk.a();
+        this.m = dldv.a();
         this.a = str;
         this.b = a(buyFlowConfig, this.a);
         this.d = i;

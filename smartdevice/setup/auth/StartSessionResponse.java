@@ -5,19 +5,19 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.defn;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dgqq;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class StartSessionResponse extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new defn();
+    public static final Parcelable.Creator CREATOR = new dgqq();
     private static final HashMap i;
     public final Set a;
     public int b;
@@ -51,7 +51,7 @@ public class StartSessionResponse extends BinarySerializableFastSafeParcelableJs
         this.h = str5;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i2 = fastJsonResponse$Field.g;
         switch (i2) {
@@ -74,12 +74,12 @@ public class StartSessionResponse extends BinarySerializableFastSafeParcelableJs
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final Map b() {
         return i;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
@@ -91,14 +91,14 @@ public class StartSessionResponse extends BinarySerializableFastSafeParcelableJs
         }
         if (obj instanceof StartSessionResponse) {
             StartSessionResponse startSessionResponse = (StartSessionResponse) obj;
-            if (arwb.b(Integer.valueOf(this.b), Integer.valueOf(startSessionResponse.b)) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(startSessionResponse.c)) && arwb.b(this.f, startSessionResponse.f) && arwb.b(this.d, startSessionResponse.d) && arwb.b(this.e, startSessionResponse.e) && arwb.b(this.f, startSessionResponse.f) && arwb.b(this.g, startSessionResponse.g) && arwb.b(this.h, startSessionResponse.h)) {
+            if (atyq.b(Integer.valueOf(this.b), Integer.valueOf(startSessionResponse.b)) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(startSessionResponse.c)) && atyq.b(this.f, startSessionResponse.f) && atyq.b(this.d, startSessionResponse.d) && atyq.b(this.e, startSessionResponse.e) && atyq.b(this.f, startSessionResponse.f) && atyq.b(this.g, startSessionResponse.g) && atyq.b(this.h, startSessionResponse.h)) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i2 = fastJsonResponse$Field.g;
         switch (i2) {
@@ -127,8 +127,8 @@ public class StartSessionResponse extends BinarySerializableFastSafeParcelableJs
         this.a.add(Integer.valueOf(i2));
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i2) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i2) {
         int i3 = fastJsonResponse$Field.g;
         if (i3 == 2) {
             this.b = i2;
@@ -159,29 +159,29 @@ public class StartSessionResponse extends BinarySerializableFastSafeParcelableJs
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i2) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.o(parcel, 2, this.b);
+            atzr.o(parcel, 2, this.b);
         }
         if (set.contains(3)) {
-            arxc.o(parcel, 3, this.c);
+            atzr.o(parcel, 3, this.c);
         }
         if (set.contains(4)) {
-            arxc.v(parcel, 4, this.d, true);
+            atzr.v(parcel, 4, this.d, true);
         }
         if (set.contains(5)) {
-            arxc.v(parcel, 5, this.e, true);
+            atzr.v(parcel, 5, this.e, true);
         }
         if (set.contains(6)) {
-            arxc.v(parcel, 6, this.f, true);
+            atzr.v(parcel, 6, this.f, true);
         }
         if (set.contains(7)) {
-            arxc.v(parcel, 7, this.g, true);
+            atzr.v(parcel, 7, this.g, true);
         }
         if (set.contains(8)) {
-            arxc.v(parcel, 8, this.h, true);
+            atzr.v(parcel, 8, this.h, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public StartSessionResponse() {

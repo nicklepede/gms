@@ -1,26 +1,26 @@
 package com.google.android.gms.scheduler;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.cybo;
-import defpackage.dnnr;
-import defpackage.ejck;
-import defpackage.fncb;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.dalm;
+import defpackage.dpya;
+import defpackage.elpp;
+import defpackage.fpua;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class SchedulerPrimaryUserBoundService extends bxgd {
+public class SchedulerPrimaryUserBoundService extends bzot {
     public SchedulerPrimaryUserBoundService() {
-        super(218, "com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE_SINGLE_USER", ejck.a, 0, 10);
+        super(218, "com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE_SINGLE_USER", elpp.a, 0, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        if (fncb.c() || !dnnr.h(this)) {
-            bxgjVar.c(new cybo(l(), getServiceRequest.f, getServiceRequest.p));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        if (fpua.c() || !dpya.h(this)) {
+            bzozVar.c(new dalm(l(), getServiceRequest.f, getServiceRequest.p));
         } else {
-            bxgjVar.a(16, null);
+            bzozVar.a(16, null);
         }
     }
 }

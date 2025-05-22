@@ -21,14 +21,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.net.ssl.SSLSession;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class FileClientSessionCache {
     public static final int MAX_SIZE = 12;
     private static final Logger logger = Logger.getLogger(FileClientSessionCache.class.getName());
     static final Map caches = new HashMap();
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class CacheFile extends File implements FileRetargetInterface {
         long lastModified;
         final String name;
@@ -68,7 +68,7 @@ public final class FileClientSessionCache {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class Impl implements SSLClientSessionCache {
         Map accessOrder = newAccessOrder();
         final File directory;
@@ -89,7 +89,7 @@ public final class FileClientSessionCache {
                 this.size = this.initialFiles.length;
             } else {
                 if (!file.mkdirs()) {
-                    throw new IOException(a.E(file, "Creation of ", " directory failed."));
+                    throw new IOException(a.H(file, "Creation of ", " directory failed."));
                 }
                 this.size = 0;
             }
@@ -98,7 +98,7 @@ public final class FileClientSessionCache {
 
         private void delete(File file) {
             if (!file.delete()) {
-                IOException iOException = new IOException(a.E(file, "FileClientSessionCache: Failed to delete ", "."));
+                IOException iOException = new IOException(a.H(file, "FileClientSessionCache: Failed to delete ", "."));
                 FileClientSessionCache.logger.logp(Level.WARNING, "com.google.android.gms.org.conscrypt.FileClientSessionCache$Impl", "delete", iOException.getMessage(), (Throwable) iOException);
             }
             this.size--;
@@ -106,7 +106,7 @@ public final class FileClientSessionCache {
 
         private static String fileName(String str, int i) {
             if (str != null) {
-                return a.J(i, str, ".");
+                return a.F(i, str, ".");
             }
             throw new NullPointerException("host == null");
         }

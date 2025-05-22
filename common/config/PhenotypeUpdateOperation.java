@@ -3,45 +3,45 @@ package com.google.android.gms.common.config;
 import android.content.Intent;
 import com.google.android.cast.JGCastService;
 import com.google.android.chimera.IntentOperation;
-import defpackage.aqxd;
-import defpackage.arnd;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqg;
-import defpackage.bhfg;
-import defpackage.bhfj;
-import defpackage.brz;
-import defpackage.bsa;
-import defpackage.bxbl;
-import defpackage.cvzk;
-import defpackage.cwal;
-import defpackage.eiuu;
-import defpackage.ejhf;
-import defpackage.fnaf;
+import defpackage.aszs;
+import defpackage.atps;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auua;
+import defpackage.bjjw;
+import defpackage.bjjz;
+import defpackage.bsk;
+import defpackage.bsl;
+import defpackage.bzkb;
+import defpackage.cyjh;
+import defpackage.cyki;
+import defpackage.elhz;
+import defpackage.eluo;
+import defpackage.fpse;
 import j$.util.Objects;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class PhenotypeUpdateOperation extends IntentOperation {
-    private static final asot a = asot.b("PhenotypeUpdateOp", asej.CORE);
-    private arnd b;
+    private static final ausn a = ausn.b("PhenotypeUpdateOp", auid.CORE);
+    private atps b;
 
-    private final void a(bhfj bhfjVar, Set set) {
+    private final void a(bjjz bjjzVar, Set set) {
         int a2;
-        int i = bhfjVar.i;
-        int a3 = bhfg.a(i);
+        int i = bjjzVar.i;
+        int a3 = bjjw.a(i);
         if (a3 == 0 || a3 == 3) {
             return;
         }
-        int a4 = bhfg.a(i);
-        if ((a4 == 0 || a4 != 4) && (((a2 = bhfg.a(i)) == 0 || a2 != 1) && !set.contains(bhfjVar.c))) {
-            Intent intent = new Intent(asqg.f(bhfjVar.c));
-            intent.putExtra("com.google.android.gms.phenotype.PACKAGE_NAME", bhfjVar.c);
+        int a4 = bjjw.a(i);
+        if ((a4 == 0 || a4 != 4) && (((a2 = bjjw.a(i)) == 0 || a2 != 1) && !set.contains(bjjzVar.c))) {
+            Intent intent = new Intent(auua.f(bjjzVar.c));
+            intent.putExtra("com.google.android.gms.phenotype.PACKAGE_NAME", bjjzVar.c);
             IntentOperation.startIntentOperations(this, intent);
             return;
         }
-        String str = bhfjVar.c;
+        String str = bjjzVar.c;
         Intent intent2 = new Intent("com.google.android.gms.phenotype.COMMITTED");
         intent2.setPackage("com.google.android.gms");
         intent2.putExtra("com.google.android.gms.phenotype.PACKAGE_NAME", str);
@@ -52,65 +52,65 @@ public class PhenotypeUpdateOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        aqxd aqxdVar = cvzk.a;
-        this.b = new arnd(this, new cwal(this));
+        aszs aszsVar = cyjh.a;
+        this.b = new atps(this, new cyki(this));
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         if (intent == null || !(Objects.equals(intent.getAction(), "com.google.android.gms.phenotype.UPDATE") || Objects.equals(intent.getAction(), "com.google.android.gms.phenotype.DAILY_CHECKIN"))) {
-            ((ejhf) a.i()).x("Invalid intent");
+            ((eluo) a.i()).x("Invalid intent");
             return;
         }
-        eiuu G = eiuu.G(fnaf.a.a().e().b);
+        elhz G = elhz.G(fpse.a.lK().e().b);
         if (Objects.equals(intent.getAction(), "com.google.android.gms.phenotype.DAILY_CHECKIN")) {
-            if (((Boolean) bxbl.b.a()).booleanValue()) {
-                bxbl.a().k(14);
+            if (((Boolean) bzkb.b.lK()).booleanValue()) {
+                bzkb.a().k(14);
             }
-            brz brzVar = new brz((bsa) this.b.c());
-            while (brzVar.hasNext()) {
-                bhfj bhfjVar = (bhfj) brzVar.next();
-                int a2 = bhfg.a(bhfjVar.i);
+            bsk bskVar = new bsk((bsl) this.b.c());
+            while (bskVar.hasNext()) {
+                bjjz bjjzVar = (bjjz) bskVar.next();
+                int a2 = bjjw.a(bjjzVar.i);
                 if (a2 != 0 && a2 != 3) {
-                    a(bhfjVar, G);
+                    a(bjjzVar, G);
                 }
             }
             return;
         }
         final String stringExtra = intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME");
-        if (((Boolean) bxbl.b.a()).booleanValue()) {
-            final bxbl a3 = bxbl.a();
+        if (((Boolean) bzkb.b.lK()).booleanValue()) {
+            final bzkb a3 = bzkb.a();
             if (stringExtra != null && a3.d.contains(stringExtra)) {
-                a3.h(new Runnable() { // from class: bxaz
+                a3.h(new Runnable() { // from class: bzjp
                     @Override // java.lang.Runnable
                     public final void run() {
-                        fecj m = bxbl.m(13);
+                        fgrc m = bzkb.m(13);
                         if (!m.b.L()) {
                             m.U();
                         }
                         String str = stringExtra;
-                        bxbl bxblVar = bxbl.this;
-                        encv encvVar = (encv) m.b;
-                        encv encvVar2 = encv.a;
-                        encvVar.b |= 2;
-                        encvVar.d = str;
-                        bxblVar.l(m);
+                        bzkb bzkbVar = bzkb.this;
+                        epqm epqmVar = (epqm) m.b;
+                        epqm epqmVar2 = epqm.a;
+                        epqmVar.b |= 2;
+                        epqmVar.d = str;
+                        bzkbVar.l(m);
                     }
                 });
             }
         }
         if (stringExtra == null) {
-            ((ejhf) a.i()).x("Invalid Intent: missing EXTRA_PACKAGE_NAME.");
+            ((eluo) a.i()).x("Invalid Intent: missing EXTRA_PACKAGE_NAME.");
             return;
         }
-        arnd arndVar = this.b;
-        bhfj a4 = arndVar.a(stringExtra);
-        if (a4 == null || !arndVar.f(a4.c)) {
+        atps atpsVar = this.b;
+        bjjz a4 = atpsVar.a(stringExtra);
+        if (a4 == null || !atpsVar.f(a4.c)) {
             return;
         }
-        bhfj a5 = this.b.a(stringExtra);
+        bjjz a5 = this.b.a(stringExtra);
         if (a5 == null) {
-            ((ejhf) a.i()).B("No RegistrationInfo found for package '%s'", stringExtra);
+            ((eluo) a.i()).B("No RegistrationInfo found for package '%s'", stringExtra);
         } else {
             a(a5, G);
         }

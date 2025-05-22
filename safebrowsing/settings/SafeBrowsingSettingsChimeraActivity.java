@@ -3,25 +3,25 @@ package com.google.android.gms.safebrowsing.settings;
 import android.os.Bundle;
 import com.google.android.gms.R;
 import defpackage.bp;
-import defpackage.cxxe;
-import defpackage.cxxq;
+import defpackage.dahb;
+import defpackage.dahn;
 import defpackage.dg;
-import defpackage.fvbo;
-import defpackage.qgg;
+import defpackage.fxxm;
+import defpackage.rzk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class SafeBrowsingSettingsChimeraActivity extends qgg {
-    @Override // defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+public final class SafeBrowsingSettingsChimeraActivity extends rzk {
+    @Override // defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         dg dgVar;
         super.onCreate(bundle);
         if (bundle == null) {
             String action = getIntent().getAction();
             if (action == null) {
-                dgVar = new cxxq();
-            } else if (fvbo.n(action, "com.android.settings.action.SB_APPS")) {
-                dgVar = new cxxe();
+                dgVar = new dahn();
+            } else if (fxxm.n(action, "com.android.settings.action.SB_APPS")) {
+                dgVar = new dahb();
             } else {
                 finish();
                 dgVar = null;

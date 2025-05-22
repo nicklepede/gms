@@ -13,22 +13,22 @@ import com.google.android.gms.googlehelp.common.HelpConfig;
 import com.google.android.gms.googlehelp.helpactivities.HelpChimeraActivity;
 import com.google.android.gms.googlehelp.recommendations.PopularArticlesContainer;
 import com.google.android.material.button.MaterialButton;
-import defpackage.bipv;
-import defpackage.biqu;
-import defpackage.birb;
-import defpackage.bivk;
-import defpackage.bjaw;
-import defpackage.bjbk;
-import defpackage.fonn;
-import defpackage.foof;
+import defpackage.bkuk;
+import defpackage.bkvj;
+import defpackage.bkvq;
+import defpackage.bkzz;
+import defpackage.blfl;
+import defpackage.blfz;
+import defpackage.frgg;
+import defpackage.frgy;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PopularArticlesContainer extends LinearLayout {
     public HelpChimeraActivity a;
     public List b;
-    public biqu c;
+    public bkvj c;
     public boolean d;
     public int e;
 
@@ -37,13 +37,13 @@ public class PopularArticlesContainer extends LinearLayout {
     }
 
     public static final void c(HelpChimeraActivity helpChimeraActivity, int i, String str) {
-        if (bivk.b(foof.d())) {
-            bjaw.s(helpChimeraActivity, i, str, "", 0);
+        if (bkzz.b(frgy.d())) {
+            blfl.s(helpChimeraActivity, i, str, "", 0);
         }
     }
 
     public static final void d(HelpChimeraActivity helpChimeraActivity, int i, String str) {
-        bjbk.s(helpChimeraActivity, i, str, 0, "", null);
+        blfz.s(helpChimeraActivity, i, str, 0, "", null);
     }
 
     final void a(boolean z) {
@@ -53,14 +53,14 @@ public class PopularArticlesContainer extends LinearLayout {
                 materialButton.setVisibility(8);
             } else {
                 materialButton.setVisibility(0);
-                materialButton.setOnClickListener(new View.OnClickListener() { // from class: bjds
+                materialButton.setOnClickListener(new View.OnClickListener() { // from class: blih
                     @Override // android.view.View.OnClickListener
                     public final void onClick(View view) {
                         PopularArticlesContainer popularArticlesContainer = PopularArticlesContainer.this;
                         popularArticlesContainer.a.S();
                         PopularArticlesContainer.c(popularArticlesContainer.a, 15, popularArticlesContainer.c.g);
                         PopularArticlesContainer.d(popularArticlesContainer.a, 30, popularArticlesContainer.c.g);
-                        bjft.k(popularArticlesContainer.a, popularArticlesContainer.c, 30, 0);
+                        blki.k(popularArticlesContainer.a, popularArticlesContainer.c, 30, 0);
                     }
                 });
             }
@@ -73,13 +73,14 @@ public class PopularArticlesContainer extends LinearLayout {
             return;
         }
         HelpConfig helpConfig = helpChimeraActivity.W;
-        String j = helpConfig.j(bipv.d);
+        bkuk bkukVar = bkuk.d;
+        String j = helpConfig.j(bkukVar);
         if (TextUtils.isEmpty(j)) {
             Uri uri = helpConfig.s;
-            j = uri != null ? uri.toString() : bipv.d.y;
+            j = uri != null ? uri.toString() : bkukVar.y;
         }
-        biqu biquVar = this.c;
-        if (biquVar != null && biquVar.g.equals(j)) {
+        bkvj bkvjVar = this.c;
+        if (bkvjVar != null && bkvjVar.g.equals(j)) {
             if (helpConfig.y() || !this.d) {
                 return;
             }
@@ -87,9 +88,9 @@ public class PopularArticlesContainer extends LinearLayout {
             d(this.a, 27, this.c.g);
             return;
         }
-        biqu j2 = TextUtils.isEmpty(j) ? null : biqu.j(j, birb.a(), helpConfig);
+        bkvj j2 = TextUtils.isEmpty(j) ? null : bkvj.j(j, bkvq.a(), helpConfig);
         this.c = j2;
-        if (j2 == null || bivk.b(fonn.c()) || helpConfig.E()) {
+        if (j2 == null || bkzz.b(frgg.c()) || helpConfig.E()) {
             a(false);
             return;
         }

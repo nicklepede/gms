@@ -1,30 +1,30 @@
 package com.google.android.gms.auth.api.credentials.nextgen.database;
 
 import android.content.Context;
-import defpackage.bqvy;
-import defpackage.dvni;
-import defpackage.kpe;
-import defpackage.kpm;
-import defpackage.yrv;
+import defpackage.aapz;
+import defpackage.btdp;
+import defpackage.dxyi;
+import defpackage.mhp;
+import defpackage.mhx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public abstract class VerifiableCredentialDatabase extends kpm {
-    private static VerifiableCredentialDatabase l;
+public abstract class VerifiableCredentialDatabase extends mhx {
+    private static VerifiableCredentialDatabase m;
 
     public static synchronized VerifiableCredentialDatabase v(Context context) {
         VerifiableCredentialDatabase verifiableCredentialDatabase;
         synchronized (VerifiableCredentialDatabase.class) {
-            dvni.f(context);
-            if (l == null) {
-                kpe a = bqvy.a(context.getApplicationContext(), VerifiableCredentialDatabase.class, "verifiable_credential_db");
+            dxyi.f(context);
+            if (m == null) {
+                mhp a = btdp.a(context.getApplicationContext(), VerifiableCredentialDatabase.class, "verifiable_credential_db");
                 a.d();
-                l = (VerifiableCredentialDatabase) a.a();
+                m = (VerifiableCredentialDatabase) a.a();
             }
-            verifiableCredentialDatabase = l;
+            verifiableCredentialDatabase = m;
         }
         return verifiableCredentialDatabase;
     }
 
-    public abstract yrv w();
+    public abstract aapz w();
 }

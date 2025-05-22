@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.UserHandle;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ufu;
+import defpackage.atzr;
+import defpackage.wbt;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class SetSchemaAidlRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ufu();
+    public static final Parcelable.Creator CREATOR = new wbt();
     public final AppSearchAttributionSource a;
     public final String b;
     public final List c;
@@ -38,16 +38,16 @@ public final class SetSchemaAidlRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         AppSearchAttributionSource appSearchAttributionSource = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, appSearchAttributionSource, i, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.y(parcel, 3, this.c, false);
-        arxc.y(parcel, 4, this.d, false);
-        arxc.e(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.q(parcel, 8, this.h);
-        arxc.o(parcel, 9, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, appSearchAttributionSource, i, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.y(parcel, 3, this.c, false);
+        atzr.y(parcel, 4, this.d, false);
+        atzr.e(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.q(parcel, 8, this.h);
+        atzr.o(parcel, 9, this.i);
+        atzr.c(parcel, a);
     }
 }

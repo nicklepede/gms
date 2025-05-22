@@ -8,29 +8,29 @@ import androidx.activity.result.ActivityResult;
 import com.google.android.gms.R;
 import com.google.android.gms.trustagent.trustlet.device.bluetooth.model.TrustableDevice;
 import com.google.android.gms.trustagent.trustlet.device.ui.TrustedDevicesCollapsingToolbarChimeraSettings;
-import defpackage.abt;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.dgms;
-import defpackage.dgoy;
-import defpackage.dgqz;
-import defpackage.dgsk;
-import defpackage.ejhf;
-import defpackage.ngn;
+import defpackage.aby;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.dixx;
+import defpackage.djad;
+import defpackage.djce;
+import defpackage.djdp;
+import defpackage.eluo;
+import defpackage.ozo;
 import j$.util.Objects;
 import j$.util.function.Consumer$CC;
 import java.util.function.Consumer;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TrustedDevicesCollapsingToolbarChimeraSettings extends dgms implements dgoy, abt {
-    private static final asot l = asot.b("TrustAgent", asej.TRUSTAGENT);
-    public dgqz k;
+public class TrustedDevicesCollapsingToolbarChimeraSettings extends dixx implements djad, aby {
+    private static final ausn l = ausn.b("TrustAgent", auid.TRUSTAGENT);
+    public djce k;
     private boolean m = false;
 
-    @Override // defpackage.dgmp
-    protected final ngn a() {
+    @Override // defpackage.dixu
+    protected final ozo a() {
         Bundle bundle = new Bundle();
         Intent intent = getIntent();
         if (intent != null && intent.getExtras() != null) {
@@ -40,30 +40,26 @@ public class TrustedDevicesCollapsingToolbarChimeraSettings extends dgms impleme
                 bundle.putInt("notification_type", i);
             }
         }
-        dgsk dgskVar = new dgsk();
-        dgskVar.setArguments(bundle);
-        return dgskVar;
+        djdp djdpVar = new djdp();
+        djdpVar.setArguments(bundle);
+        return djdpVar;
     }
 
-    @Override // defpackage.dgoy
+    @Override // defpackage.djad
     public final void b() {
-        h().N();
+        k().P();
     }
 
-    @Override // defpackage.dgmp
-    protected final String c() {
+    @Override // defpackage.dixu
+    protected final String f() {
         return "TrustedDevicesFragment";
     }
 
-    public final dgsk h() {
-        return (dgsk) getSupportFragmentManager().h("TrustedDevicesFragment");
-    }
-
-    @Override // defpackage.abt
-    public final /* bridge */ /* synthetic */ void jq(Object obj) {
+    @Override // defpackage.aby
+    public final /* bridge */ /* synthetic */ void jF(Object obj) {
         ActivityResult activityResult = (ActivityResult) obj;
         int i = activityResult.a;
-        if (asqh.f()) {
+        if (auub.f()) {
             j.intValue();
             if (i == -11) {
                 finish();
@@ -77,14 +73,14 @@ public class TrustedDevicesCollapsingToolbarChimeraSettings extends dgms impleme
         int intExtra = intent.getIntExtra("extra_request_code", 0);
         if (i == -1) {
             if (Objects.equals(intent.getAction(), "com.google.android.gms.auth.trustagent.DEVICE_ENROLLED_IN_ACTIVE_UNLOCK")) {
-                h().M((TrustableDevice) TrustableDevice.e(intent).orElseThrow());
+                k().N((TrustableDevice) TrustableDevice.e(intent).orElseThrow());
             } else if (intExtra != 1002) {
-                ((ejhf) l.j()).x("Unknown intent action or request code");
+                ((eluo) l.j()).x("Unknown intent action or request code");
             } else if (Objects.equals(intent.getAction(), "com.google.android.gms.auth.trustagent.ADD_DEVICE")) {
-                TrustableDevice.e(intent).ifPresent(new Consumer() { // from class: dgrr
+                TrustableDevice.e(intent).ifPresent(new Consumer() { // from class: djcw
                     @Override // java.util.function.Consumer
                     /* renamed from: accept */
-                    public final void q(Object obj2) {
+                    public final void u(Object obj2) {
                         TrustedDevicesCollapsingToolbarChimeraSettings.this.k.a((TrustableDevice) obj2);
                     }
 
@@ -96,22 +92,26 @@ public class TrustedDevicesCollapsingToolbarChimeraSettings extends dgms impleme
         }
     }
 
-    @Override // defpackage.dgms, defpackage.dgmp, defpackage.dgmo, defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    public final djdp k() {
+        return (djdp) getSupportFragmentManager().h("TrustedDevicesFragment");
+    }
+
+    @Override // defpackage.dixx, defpackage.dixu, defpackage.dixt, defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.k = new dgqz(this);
+        this.k = new djce(this);
         if (bundle != null) {
             this.m = bundle.getBoolean("TrustedDeviceDialogActionTakenKey", false);
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
     }
 
-    @Override // defpackage.dgmp, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dixu, com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != R.id.trusted_devices_actions_help) {
             return super.onOptionsItemSelected(menuItem);
@@ -120,7 +120,7 @@ public class TrustedDevicesCollapsingToolbarChimeraSettings extends dgms impleme
         return true;
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         bundle.putBoolean("TrustedDeviceDialogActionTakenKey", this.m);
         super.onSaveInstanceState(bundle);

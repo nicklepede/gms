@@ -14,58 +14,58 @@ import com.google.android.gms.auth.proximity.RemoteDevice;
 import com.google.android.gms.auth.proximity.exo.ExoChimeraService;
 import com.google.android.gms.chimera.modules.auth.proximity.AppContextProvider;
 import defpackage.a;
-import defpackage.accd;
-import defpackage.acek;
-import defpackage.acgs;
-import defpackage.achq;
-import defpackage.achr;
-import defpackage.acih;
-import defpackage.aciq;
-import defpackage.acir;
-import defpackage.acis;
-import defpackage.acit;
-import defpackage.aciw;
-import defpackage.aciz;
-import defpackage.acjf;
-import defpackage.acjl;
-import defpackage.acjm;
-import defpackage.acjn;
-import defpackage.acjy;
-import defpackage.ackv;
-import defpackage.ackx;
-import defpackage.aclb;
-import defpackage.aclg;
-import defpackage.aclh;
-import defpackage.aclj;
-import defpackage.acnh;
-import defpackage.acqe;
-import defpackage.acse;
-import defpackage.acsn;
-import defpackage.actz;
-import defpackage.acvm;
-import defpackage.arxo;
-import defpackage.asmf;
-import defpackage.brzd;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.eitj;
-import defpackage.ejcb;
-import defpackage.enre;
-import defpackage.enss;
-import defpackage.ensv;
-import defpackage.fdso;
-import defpackage.feay;
-import defpackage.febe;
-import defpackage.febf;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.feex;
-import defpackage.fefm;
-import defpackage.flcm;
-import defpackage.flcw;
+import defpackage.aecd;
+import defpackage.aeek;
+import defpackage.aegs;
+import defpackage.aehq;
+import defpackage.aehr;
+import defpackage.aeih;
+import defpackage.aeiq;
+import defpackage.aeir;
+import defpackage.aeis;
+import defpackage.aeit;
+import defpackage.aeiw;
+import defpackage.aeiz;
+import defpackage.aejf;
+import defpackage.aejl;
+import defpackage.aejm;
+import defpackage.aejn;
+import defpackage.aejy;
+import defpackage.aekv;
+import defpackage.aekx;
+import defpackage.aelb;
+import defpackage.aelg;
+import defpackage.aelh;
+import defpackage.aelj;
+import defpackage.aenh;
+import defpackage.aeqe;
+import defpackage.aese;
+import defpackage.aesn;
+import defpackage.aetz;
+import defpackage.aevm;
+import defpackage.auad;
+import defpackage.aupz;
+import defpackage.bugy;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.elgo;
+import defpackage.elpg;
+import defpackage.eqex;
+import defpackage.eqgl;
+import defpackage.eqgo;
+import defpackage.fghf;
+import defpackage.fgpr;
+import defpackage.fgpx;
+import defpackage.fgpy;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.fgtq;
+import defpackage.fguf;
+import defpackage.fntv;
+import defpackage.fnuf;
 import j$.util.Objects;
 import java.io.FileDescriptor;
 import java.io.IOException;
@@ -77,144 +77,144 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ExoChimeraService extends Service implements acgs {
-    public static final arxo a = new arxo("ProximityAuth", "ExoService");
-    private static final acjn f = new acjn(new acjl(AppContextProvider.a(), brzd.v()));
-    public final acih b;
-    public final aciw c;
-    public final aciz d;
-    private final ensv e;
+public class ExoChimeraService extends Service implements aegs {
+    public static final auad a = new auad("ProximityAuth", "ExoService");
+    private static final aejn f = new aejn(new aejl(AppContextProvider.a(), bugy.v()));
+    public final aeih b;
+    public final aeiw c;
+    public final aeiz d;
+    private final eqgo e;
 
     public ExoChimeraService() {
-        this(new asmf(1, 10));
+        this(new aupz(1, 10));
     }
 
     private final void b(final String str) {
-        RemoteDevice b = achr.c().b(str);
+        RemoteDevice b = aehr.c().b(str);
         if (b == null) {
             a.f("Can't find RemoteDevice for deviceId=%s", str);
             return;
         }
         final String str2 = b.d;
-        final enss b2 = acvm.a(str2).b();
-        b2.hn(new Runnable() { // from class: acjg
+        final eqgl b2 = aevm.a(str2).b();
+        b2.hD(new Runnable() { // from class: aejg
             @Override // java.lang.Runnable
             public final void run() {
-                enss enssVar = b2;
+                eqgl eqglVar = b2;
                 String str3 = str;
                 try {
-                    ackw ackwVar = (ackw) ensj.r(enssVar);
-                    ackw ackwVar2 = ackw.ACCESS_UNKNOWN;
+                    aekw aekwVar = (aekw) eqgc.r(eqglVar);
+                    aekw aekwVar2 = aekw.ACCESS_UNKNOWN;
                     String str4 = str2;
                     ExoChimeraService exoChimeraService = ExoChimeraService.this;
-                    if (ackwVar == ackwVar2) {
+                    if (aekwVar == aekwVar2) {
                         exoChimeraService.a(str4);
                         return;
                     }
-                    boolean z = ackwVar == ackw.ACCESS_GRANTED;
+                    boolean z = aekwVar == aekw.ACCESS_GRANTED;
                     Boolean valueOf = Boolean.valueOf(z);
                     ExoChimeraService.a.h("Found exo association pref %s", valueOf);
-                    aciw aciwVar = exoChimeraService.c;
+                    aeiw aeiwVar = exoChimeraService.c;
                     valueOf.getClass();
-                    acir acirVar = (acir) aciwVar.b.get(str3);
-                    if (acirVar != null) {
-                        acirVar.a(z, str4);
+                    aeir aeirVar = (aeir) aeiwVar.b.get(str3);
+                    if (aeirVar != null) {
+                        aeirVar.a(z, str4);
                     }
-                    if (flcm.a.a().i()) {
+                    if (fntv.a.lK().i()) {
                         exoChimeraService.a(str4);
                     }
                 } catch (ExecutionException e) {
                     ExoChimeraService.a.n("Failed to load exo association cache", e, new Object[0]);
                 }
             }
-        }, enre.a);
+        }, eqex.a);
     }
 
     public final void a(String str) {
-        aciw aciwVar = this.c;
-        if (!aciwVar.e()) {
-            aciwVar.b();
+        aeiw aeiwVar = this.c;
+        if (!aeiwVar.e()) {
+            aeiwVar.b();
         }
-        acjf acjfVar = aciwVar.c;
-        if (acjfVar.q == null) {
-            acjf.a.h("The signalingService is not ready to check CDM association, queue the CDM request.", new Object[0]);
-            acjfVar.c.add(str);
+        aejf aejfVar = aeiwVar.c;
+        if (aejfVar.q == null) {
+            aejf.a.h("The signalingService is not ready to check CDM association, queue the CDM request.", new Object[0]);
+            aejfVar.c.add(str);
         } else {
             try {
-                acjfVar.q.a(str);
+                aejfVar.q.a(str);
             } catch (RemoteException e) {
-                acjf.a.g("Could not process checkCdmAssociation()", e, new Object[0]);
+                aejf.a.g("Could not process checkCdmAssociation()", e, new Object[0]);
             }
         }
     }
 
-    @Override // defpackage.acgs
+    @Override // defpackage.aegs
     public final void d(String str, int i, int i2, int i3) {
         String str2;
         if (i != 5) {
             return;
         }
-        a.h("Connection status changed from %s to %s for device %s", ConnectionInfo.a(i2), ConnectionInfo.a(i3), acek.a(str));
+        a.h("Connection status changed from %s to %s for device %s", ConnectionInfo.a(i2), ConnectionInfo.a(i3), aeek.a(str));
         if (i3 != 3) {
             if (i3 == 0) {
-                aciw aciwVar = this.c;
-                acjf acjfVar = aciwVar.c;
-                acjfVar.f.remove(str);
-                acjfVar.e.remove(str);
-                acir acirVar = (acir) aciwVar.b.remove(str);
-                if (acirVar != null) {
-                    acir.a.h("close streamStatus=%d", Integer.valueOf(acirVar.f));
-                    int i4 = acirVar.f;
+                aeiw aeiwVar = this.c;
+                aejf aejfVar = aeiwVar.c;
+                aejfVar.f.remove(str);
+                aejfVar.e.remove(str);
+                aeir aeirVar = (aeir) aeiwVar.b.remove(str);
+                if (aeirVar != null) {
+                    aeir.a.h("close streamStatus=%d", Integer.valueOf(aeirVar.f));
+                    int i4 = aeirVar.f;
                     if (i4 == 2 || i4 == 1) {
-                        acirVar.b.c(acirVar.c);
+                        aeirVar.b.c(aeirVar.c);
                     }
-                    acirVar.e();
+                    aeirVar.e();
                 }
-                aciwVar.d();
+                aeiwVar.d();
                 return;
             }
             return;
         }
-        aciw aciwVar2 = this.c;
-        if (aciwVar2.a(str) == null) {
-            acqe acqeVar = new acqe();
-            acqeVar.b("exo_connected_count");
-            acqeVar.c();
-            acjf acjfVar2 = aciwVar2.c;
-            acjfVar2.f.put(str, new acis(aciwVar2, str));
-            acjfVar2.e.put(str, new acit(aciwVar2, str));
+        aeiw aeiwVar2 = this.c;
+        if (aeiwVar2.a(str) == null) {
+            aeqe aeqeVar = new aeqe();
+            aeqeVar.b("exo_connected_count");
+            aeqeVar.c();
+            aejf aejfVar2 = aeiwVar2.c;
+            aejfVar2.f.put(str, new aeis(aeiwVar2, str));
+            aejfVar2.e.put(str, new aeit(aeiwVar2, str));
             str2 = str;
-            acir acirVar2 = new acir(acjfVar2, str2, new acjy(), aciwVar2.d, aciwVar2.e);
-            acjfVar2.h = acirVar2;
-            aciwVar2.b.put(str2, acirVar2);
+            aeir aeirVar2 = new aeir(aejfVar2, str2, new aejy(), aeiwVar2.d, aeiwVar2.e);
+            aejfVar2.h = aeirVar2;
+            aeiwVar2.b.put(str2, aeirVar2);
         } else {
             str2 = str;
         }
-        Map map = aciwVar2.b;
-        if (flcw.q()) {
-            aciz.a.h("Enterprise policy - getAppStreamingPolicy(): %s (1=disabled, 2=enabled)", 0);
+        Map map = aeiwVar2.b;
+        if (fnuf.q()) {
+            aeiz.a.h("Enterprise policy - getAppStreamingPolicy(): %s (1=disabled, 2=enabled)", 0);
         }
-        acir acirVar3 = (acir) map.get(str2);
-        if (acirVar3 != null) {
-            acir.a.h("sendAppPolicyStateMessage", new Object[0]);
-            fecj v = aclb.a.v();
+        aeir aeirVar3 = (aeir) map.get(str2);
+        if (aeirVar3 != null) {
+            aeir.a.h("sendAppPolicyStateMessage", new Object[0]);
+            fgrc v = aelb.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            ((aclb) v.b).b = 2;
-            aclb aclbVar = (aclb) v.Q();
-            fecj v2 = ackx.a.v();
+            ((aelb) v.b).b = 2;
+            aelb aelbVar = (aelb) v.Q();
+            fgrc v2 = aekx.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            String str3 = acirVar3.c;
-            ackx ackxVar = (ackx) v2.b;
-            aclbVar.getClass();
-            ackxVar.c = aclbVar;
-            ackxVar.b = 10;
-            aciq.a(str3, (ackx) v2.Q());
+            String str3 = aeirVar3.c;
+            aekx aekxVar = (aekx) v2.b;
+            aelbVar.getClass();
+            aekxVar.c = aelbVar;
+            aekxVar.b = 10;
+            aeiq.a(str3, (aekx) v2.Q());
         }
         b(str2);
     }
@@ -231,61 +231,61 @@ public class ExoChimeraService extends Service implements acgs {
         }
         sb.append(this.c);
         sb.append("mendel flags: \nisExoAvailable(): false\nisExoHostSupported(): ");
-        acjm.b();
-        sb.append(true != flcm.g() ? "false" : "true");
+        aejm.b();
+        sb.append(true != fntv.g() ? "false" : "true");
         sb.append("\nsetExoHostSupported(): ");
-        sb.append(true != flcm.h() ? "false" : "true");
+        sb.append(true != fntv.h() ? "false" : "true");
         sb.append("\nenforceDeviceProximity(): ");
-        sb.append(true != flcm.f() ? "false" : "true");
+        sb.append(true != fntv.f() ? "false" : "true");
         sb.append("\nisAttestationEnforced(): ");
-        sb.append(true == flcm.a.a().g() ? "true" : "false");
+        sb.append(true == fntv.a.lK().g() ? "true" : "false");
         sb.append("\n");
         printWriter.append((CharSequence) sb.toString());
     }
 
-    @Override // defpackage.acgs
+    @Override // defpackage.aegs
     public final void e(String str, String str2, byte[] bArr) {
         int i;
-        eiid eiidVar;
+        ekvi ekviVar;
         AttestationVerifier attestationVerifier;
         char c = 0;
         try {
-            fecp y = fecp.y(fdso.a, bArr, 0, bArr.length, febw.a());
-            fecp.M(y);
-            fdso fdsoVar = (fdso) y;
-            a.d(a.D(fdsoVar.b, "CDS_GMS_onMessageReceived WebRtcSignal session: "), new Object[0]);
-            f.a(fdsoVar, 14);
-        } catch (fedk e) {
+            fgri y = fgri.y(fghf.a, bArr, 0, bArr.length, fgqp.a());
+            fgri.M(y);
+            fghf fghfVar = (fghf) y;
+            a.d(a.C(fghfVar.b, "CDS_GMS_onMessageReceived WebRtcSignal session: "), new Object[0]);
+            f.a(fghfVar, 14);
+        } catch (fgsd e) {
             a.n("Failed to log incoming signaling message.", e, new Object[0]);
         }
         if (Objects.equals(str2, "eche")) {
-            acir a2 = this.c.a(str);
+            aeir a2 = this.c.a(str);
             int i2 = 1;
             if (a2 == null) {
                 a.m("Received message for device with no registered connections. deviceId=%s", str);
                 return;
             }
-            if (flcm.a.a().m()) {
-                achr c2 = achr.c();
+            if (fntv.a.lK().m()) {
+                aehr c2 = aehr.c();
                 synchronized (c2.c) {
-                    achq achqVar = (achq) c2.b.get(str);
-                    if (achqVar != null && (attestationVerifier = achqVar.b) != null) {
-                        eiidVar = eiid.j(attestationVerifier);
+                    aehq aehqVar = (aehq) c2.b.get(str);
+                    if (aehqVar != null && (attestationVerifier = aehqVar.b) != null) {
+                        ekviVar = ekvi.j(attestationVerifier);
                     }
-                    eiidVar = eigb.a;
+                    ekviVar = ektg.a;
                 }
-                if (!eiidVar.h()) {
+                if (!ekviVar.h()) {
                     a.m("Received message for device with no attestation certificate available. deviceId=%s", str);
                     return;
                 }
-                AttestationVerifier attestationVerifier2 = (AttestationVerifier) eiidVar.c();
+                AttestationVerifier attestationVerifier2 = (AttestationVerifier) ekviVar.c();
                 int i3 = attestationVerifier2.d;
                 if (i3 == 3) {
                     Log.e("AttestationVerifier", "Certificate previously failed to verify");
                 } else {
                     if (i3 != 2 || attestationVerifier2.a()) {
                         int i4 = attestationVerifier2.b;
-                        if (i4 == acsn.a(3)) {
+                        if (i4 == aesn.a(3)) {
                             byte[][] bArr2 = attestationVerifier2.a;
                             int length = bArr2.length;
                             if (length == 0) {
@@ -301,10 +301,10 @@ public class ExoChimeraService extends Service implements acgs {
                                             break;
                                         }
                                         arrayList.add(a3);
-                                        eitj k = eitj.k(a3.getSubjectX500Principal().getName("CANONICAL").split(","));
+                                        elgo k = elgo.k(a3.getSubjectX500Principal().getName("CANONICAL").split(","));
                                         int basicConstraints = a3.getBasicConstraints();
                                         if (i5 == i2) {
-                                            if (((ejcb) k).c != 2 || !k.contains("o=chrome device soft bind") || !k.contains("cn=local authority")) {
+                                            if (((elpg) k).c != 2 || !k.contains("o=chrome device soft bind") || !k.contains("cn=local authority")) {
                                                 break;
                                             }
                                             if (!AttestationVerifier.b(a3.getKeyUsage(), 5)) {
@@ -318,7 +318,7 @@ public class ExoChimeraService extends Service implements acgs {
                                                 i2 = 1;
                                             }
                                         } else if (i5 == 0) {
-                                            if (((ejcb) k).c != 2 || !k.contains("o=chrome device soft bind") || !k.contains("cn=cryptauth user key")) {
+                                            if (((elpg) k).c != 2 || !k.contains("o=chrome device soft bind") || !k.contains("cn=cryptauth user key")) {
                                                 break;
                                             }
                                             if (!AttestationVerifier.b(a3.getKeyUsage(), 0)) {
@@ -342,9 +342,9 @@ public class ExoChimeraService extends Service implements acgs {
                                             i2 = 1;
                                         }
                                     } else {
-                                        accd accdVar = attestationVerifier2.c;
-                                        TrustAnchor trustAnchor = accdVar.b;
-                                        if (trustAnchor == null || !accdVar.b(arrayList, trustAnchor)) {
+                                        aecd aecdVar = attestationVerifier2.c;
+                                        TrustAnchor trustAnchor = aecdVar.b;
+                                        if (trustAnchor == null || !aecdVar.b(arrayList, trustAnchor)) {
                                             Log.e("AttestationVerifier", "Could not validate chain");
                                         } else {
                                             Log.i("AttestationVerifier", "CROS_SOFT_BIND certificate verified");
@@ -366,21 +366,21 @@ public class ExoChimeraService extends Service implements acgs {
                 return;
             }
             try {
-                feay w = feay.w(bArr);
-                febw a4 = febw.a();
-                ackx ackxVar = ackx.a;
-                febe k2 = w.k();
-                fecp x = ackxVar.x();
+                fgpr w = fgpr.w(bArr);
+                fgqp a4 = fgqp.a();
+                aekx aekxVar = aekx.a;
+                fgpx k2 = w.k();
+                fgri x = aekxVar.x();
                 try {
                     try {
-                        feex b = feep.a.b(x);
-                        b.l(x, febf.p(k2), a4);
+                        fgtq b = fgti.a.b(x);
+                        b.l(x, fgpy.p(k2), a4);
                         b.g(x);
                         try {
                             k2.z(0);
-                            fecp.M(x);
-                            ackx ackxVar2 = (ackx) x;
-                            int i6 = ackxVar2.b;
+                            fgri.M(x);
+                            aekx aekxVar2 = (aekx) x;
+                            int i6 = aekxVar2.b;
                             switch (i6) {
                                 case 0:
                                     i = 11;
@@ -424,20 +424,20 @@ public class ExoChimeraService extends Service implements acgs {
                                 throw null;
                             }
                             if (i7 == 0) {
-                                aciw aciwVar = this.c;
-                                if (!aciwVar.e()) {
-                                    aciwVar.b();
+                                aeiw aeiwVar = this.c;
+                                if (!aeiwVar.e()) {
+                                    aeiwVar.b();
                                 }
-                                acir.a.h("Received signaling message: ".concat(String.valueOf(String.valueOf(ackxVar2))), new Object[0]);
-                                new acqe().B("exo_message_received", 0);
-                                acjf acjfVar = a2.b;
+                                aeir.a.h("Received signaling message: ".concat(String.valueOf(String.valueOf(aekxVar2))), new Object[0]);
+                                new aeqe().B("exo_message_received", 0);
+                                aejf aejfVar = a2.b;
                                 String str3 = a2.c;
-                                feay feayVar = (ackxVar2.b == 1 ? (aclh) ackxVar2.c : aclh.a).b;
-                                if (feayVar.K()) {
-                                    acjf.a.f("Could not process received request as it is empty", new Object[0]);
+                                fgpr fgprVar = (aekxVar2.b == 1 ? (aelh) aekxVar2.c : aelh.a).b;
+                                if (fgprVar.K()) {
+                                    aejf.a.f("Could not process received request as it is empty", new Object[0]);
                                 } else {
-                                    acjfVar.b.add(new ackv(str3, feayVar));
-                                    acjfVar.a(acjfVar.k);
+                                    aejfVar.b.add(new aekv(str3, fgprVar));
+                                    aejfVar.a(aejfVar.k);
                                 }
                                 int i8 = a2.f;
                                 if (i8 == 0 || i8 == 3) {
@@ -452,18 +452,18 @@ public class ExoChimeraService extends Service implements acgs {
                                 return;
                             }
                             if (i7 == 8) {
-                                int i9 = (i6 == 9 ? (aclj) ackxVar2.c : aclj.a).b;
+                                int i9 = (i6 == 9 ? (aelj) aekxVar2.c : aelj.a).b;
                                 char c3 = i9 != 0 ? i9 != 1 ? i9 != 2 ? (char) 0 : (char) 4 : (char) 3 : (char) 2;
                                 if (c3 != 0 && c3 == 3) {
-                                    acir.a.h("Received stream start message: ".concat(String.valueOf(String.valueOf(ackxVar2))), new Object[0]);
+                                    aeir.a.h("Received stream start message: ".concat(String.valueOf(String.valueOf(aekxVar2))), new Object[0]);
                                     return;
                                 } else {
-                                    acir.a.h("Received stream stop message: ".concat(String.valueOf(String.valueOf(ackxVar2))), new Object[0]);
+                                    aeir.a.h("Received stream stop message: ".concat(String.valueOf(String.valueOf(aekxVar2))), new Object[0]);
                                     return;
                                 }
                             }
                             if (i7 == 2) {
-                                int i10 = (i6 == 3 ? (aclg) ackxVar2.c : aclg.a).b;
+                                int i10 = (i6 == 3 ? (aelg) aekxVar2.c : aelg.a).b;
                                 if (i10 == 0) {
                                     c = 2;
                                 } else if (i10 == 1) {
@@ -472,25 +472,25 @@ public class ExoChimeraService extends Service implements acgs {
                                 if (c == 0 || c != 3) {
                                     return;
                                 }
-                                aciw aciwVar2 = this.c;
-                                if (!aciwVar2.e() || flcm.f()) {
+                                aeiw aeiwVar2 = this.c;
+                                if (!aeiwVar2.e() || fntv.f()) {
                                     return;
                                 }
-                                aciwVar2.c();
+                                aeiwVar2.c();
                                 return;
                             }
                             if (i7 == 3) {
-                                if (flcm.e()) {
+                                if (fntv.e()) {
                                     a.h("Received proximity ping for device %s", str);
                                 }
-                                if (flcm.f()) {
-                                    acjy acjyVar = a2.d;
-                                    if (acjyVar.c()) {
-                                        int i11 = acjyVar.d;
+                                if (fntv.f()) {
+                                    aejy aejyVar = a2.d;
+                                    if (aejyVar.c()) {
+                                        int i11 = aejyVar.d;
                                         if (i11 == 3 || i11 == 4 || i11 == 5) {
-                                            acjyVar.d = 2;
+                                            aejyVar.d = 2;
                                         }
-                                        acjyVar.c = SystemClock.elapsedRealtime() + 300000;
+                                        aejyVar.c = SystemClock.elapsedRealtime() + 300000;
                                         return;
                                     }
                                     return;
@@ -501,54 +501,54 @@ public class ExoChimeraService extends Service implements acgs {
                                 a.m("Received unsupported message type for deviceId=%s", str);
                                 return;
                             }
-                            arxo arxoVar = a;
-                            arxoVar.h("Received SEND_APPS_SETUP_REQUEST for deviceId=%s", str);
-                            aciw aciwVar3 = this.c;
-                            if (!aciwVar3.e()) {
-                                aciwVar3.b();
+                            auad auadVar = a;
+                            auadVar.h("Received SEND_APPS_SETUP_REQUEST for deviceId=%s", str);
+                            aeiw aeiwVar3 = this.c;
+                            if (!aeiwVar3.e()) {
+                                aeiwVar3.b();
                             }
-                            RemoteDevice b2 = achr.c().b(str);
+                            RemoteDevice b2 = aehr.c().b(str);
                             if (b2 == null) {
-                                arxoVar.m("Cannot get RemoteDevice for deviceId=%s", str);
+                                auadVar.m("Cannot get RemoteDevice for deviceId=%s", str);
                                 return;
                             }
                             String string = getString(R.string.proximity_auth_chromebook);
-                            acjf acjfVar2 = aciwVar3.c;
-                            acnh acnhVar = acjfVar2.q;
+                            aejf aejfVar2 = aeiwVar3.c;
+                            aenh aenhVar = aejfVar2.q;
                             String str4 = b2.d;
-                            if (acnhVar == null) {
-                                acjf.a.h("The signalingService is not ready to start CDM association, queue the CDM request.", new Object[0]);
-                                acjfVar2.d.put(str4, string);
+                            if (aenhVar == null) {
+                                aejf.a.h("The signalingService is not ready to start CDM association, queue the CDM request.", new Object[0]);
+                                aejfVar2.d.put(str4, string);
                             } else {
                                 try {
-                                    acjfVar2.q.b(str4, string);
+                                    aejfVar2.q.b(str4, string);
                                 } catch (RemoteException e2) {
-                                    acjf.a.g("Could not process startCdmAssociation()", e2, new Object[0]);
+                                    aejf.a.g("Could not process startCdmAssociation()", e2, new Object[0]);
                                 }
                             }
-                        } catch (fedk e3) {
+                        } catch (fgsd e3) {
                             throw e3;
                         }
-                    } catch (fedk e4) {
+                    } catch (fgsd e4) {
                         if (!e4.a) {
                             throw e4;
                         }
-                        throw new fedk(e4);
-                    } catch (fefm e5) {
-                        throw e5.a();
+                        throw new fgsd(e4);
+                    } catch (IOException e5) {
+                        if (!(e5.getCause() instanceof fgsd)) {
+                            throw new fgsd(e5);
+                        }
+                        throw ((fgsd) e5.getCause());
                     }
-                } catch (IOException e6) {
-                    if (!(e6.getCause() instanceof fedk)) {
-                        throw new fedk(e6);
-                    }
-                    throw ((fedk) e6.getCause());
+                } catch (fguf e6) {
+                    throw e6.a();
                 } catch (RuntimeException e7) {
-                    if (!(e7.getCause() instanceof fedk)) {
+                    if (!(e7.getCause() instanceof fgsd)) {
                         throw e7;
                     }
-                    throw ((fedk) e7.getCause());
+                    throw ((fgsd) e7.getCause());
                 }
-            } catch (fedk e8) {
+            } catch (fgsd e8) {
                 a.n("Failed to parse incoming message from deviceId=".concat(String.valueOf(str)), e8, new Object[0]);
             }
         }
@@ -561,32 +561,32 @@ public class ExoChimeraService extends Service implements acgs {
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        aciw aciwVar = this.c;
-        aciwVar.c();
-        aciwVar.b.clear();
-        aciwVar.f(true);
+        aeiw aeiwVar = this.c;
+        aeiwVar.c();
+        aeiwVar.b.clear();
+        aeiwVar.f(true);
         this.b.c(this);
-        acse acseVar = this.d.d;
+        aese aeseVar = this.d.d;
         this.e.shutdown();
         super.onDestroy();
     }
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        acjm.b();
-        new acqe().B("start_exo_service_result", 1);
+        aejm.b();
+        new aeqe().B("start_exo_service_result", 1);
         stopSelf();
         return 2;
     }
 
-    public ExoChimeraService(acih acihVar, ensv ensvVar, aciw aciwVar, aciz acizVar) {
-        this.b = acihVar;
-        this.e = ensvVar;
-        this.c = aciwVar;
-        this.d = acizVar;
+    public ExoChimeraService(aeih aeihVar, eqgo eqgoVar, aeiw aeiwVar, aeiz aeizVar) {
+        this.b = aeihVar;
+        this.e = eqgoVar;
+        this.c = aeiwVar;
+        this.d = aeizVar;
     }
 
-    private ExoChimeraService(ensv ensvVar) {
-        this(new acih("eche"), ensvVar, new aciw(new acjf(AppContextProvider.a(), ensvVar, f), flcw.p() ? actz.b(AppContextProvider.a()) : null, ensvVar), new aciz(AppContextProvider.a()));
+    private ExoChimeraService(eqgo eqgoVar) {
+        this(new aeih("eche"), eqgoVar, new aeiw(new aejf(AppContextProvider.a(), eqgoVar, f), fnuf.p() ? aetz.b(AppContextProvider.a()) : null, eqgoVar), new aeiz(AppContextProvider.a()));
     }
 }

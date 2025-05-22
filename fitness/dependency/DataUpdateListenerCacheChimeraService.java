@@ -4,30 +4,30 @@ import android.content.Intent;
 import android.os.BadParcelableException;
 import android.os.Bundle;
 import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
-import defpackage.armd;
-import defpackage.asot;
-import defpackage.bfzx;
-import defpackage.bggg;
-import defpackage.bhaf;
-import defpackage.ejhf;
+import defpackage.atos;
+import defpackage.ausn;
+import defpackage.bien;
+import defpackage.bikw;
+import defpackage.bjev;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DataUpdateListenerCacheChimeraService extends TracingIntentService {
-    private static final asot a = bhaf.a();
+    private static final ausn a = bjev.a();
 
     public DataUpdateListenerCacheChimeraService() {
         super("DataUpdateListenerCacheChimeraService");
     }
 
     private final void b(Intent intent) {
-        if (armd.m(intent) && armd.a(intent) == 2) {
+        if (atos.m(intent) && atos.a(intent) == 2) {
             c().d(intent);
         }
     }
 
-    private final bfzx c() {
-        return bggg.a(this).z();
+    private final bien c() {
+        return bikw.a(this).z();
     }
 
     @Override // com.google.android.gms.framework.tracing.wrapper.TracingIntentService
@@ -41,7 +41,7 @@ public class DataUpdateListenerCacheChimeraService extends TracingIntentService 
             intent.replaceExtras(bundle);
             b(intent);
             c().c();
-            ((ejhf) ((ejhf) ((ejhf) a.i()).s(e)).ah((char) 4666)).x("Found bad intent, had to clear it.");
+            ((eluo) ((eluo) ((eluo) a.i()).s(e)).ai((char) 4676)).x("Found bad intent, had to clear it.");
         }
     }
 }

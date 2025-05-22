@@ -1,44 +1,44 @@
 package com.google.android.gms.nearby.sharing;
 
 import android.accounts.Account;
-import defpackage.asew;
-import defpackage.bquj;
-import defpackage.bqul;
-import defpackage.bqun;
-import defpackage.clwv;
-import defpackage.cmuh;
-import defpackage.cmuk;
-import defpackage.cmus;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.fqlm;
+import defpackage.auiq;
+import defpackage.btca;
+import defpackage.btcc;
+import defpackage.btce;
+import defpackage.cofd;
+import defpackage.cpcp;
+import defpackage.cpcs;
+import defpackage.cpda;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.ftfh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class NearbySharingContextualCardIntentOperation extends bqun {
+public final class NearbySharingContextualCardIntentOperation extends btce {
     public NearbySharingContextualCardIntentOperation() {
-        super(asew.NEARBY_SHARING);
+        super(auiq.NEARBY_SHARING);
     }
 
-    @Override // defpackage.bqun
-    public final bquj a(bqul bqulVar) {
-        Account account = bqulVar.a;
+    @Override // defpackage.btce
+    public final btca a(btcc btccVar) {
+        Account account = btccVar.a;
         if (account == null) {
-            return bquj.e;
+            return btca.e;
         }
-        cmus a = cmuk.a(this, eiid.j(account));
-        return new cmuh(this, new clwv(this), a.a(a.b.i()), enps.f(a.a, new eiho() { // from class: clwu
-            @Override // defpackage.eiho
+        cpda a = cpcs.a(this, ekvi.j(account));
+        return new cpcp(this, new cofd(this), a.a(a.b.i()), eqdl.f(a.a, new ekut() { // from class: cofc
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                return (Account) ((eiid) obj).c();
+                return (Account) ((ekvi) obj).c();
             }
-        }, enre.a));
+        }, eqex.a));
     }
 
-    @Override // defpackage.bqtk
+    @Override // defpackage.btbb
     protected final boolean b() {
-        return fqlm.a.a().a();
+        return ftfh.a.lK().a();
     }
 }

@@ -5,15 +5,15 @@ import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctdh;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvmm;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class PassInstance extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctdh();
+    public static final Parcelable.Creator CREATOR = new cvmm();
     public PassType a;
     public String b;
     public String c;
@@ -35,7 +35,7 @@ public final class PassInstance extends AbstractSafeParcelable {
         }
         if (obj instanceof PassInstance) {
             PassInstance passInstance = (PassInstance) obj;
-            if (arwb.b(this.a, passInstance.a) && arwb.b(this.b, passInstance.b) && arwb.b(this.c, passInstance.c) && arwb.b(this.d, passInstance.d) && arwb.b(this.e, passInstance.e) && arwb.b(this.f, passInstance.f) && arwb.b(this.g, passInstance.g) && arwb.b(this.h, passInstance.h) && arwb.b(this.i, passInstance.i) && arwb.b(Integer.valueOf(this.j), Integer.valueOf(passInstance.j))) {
+            if (atyq.b(this.a, passInstance.a) && atyq.b(this.b, passInstance.b) && atyq.b(this.c, passInstance.c) && atyq.b(this.d, passInstance.d) && atyq.b(this.e, passInstance.e) && atyq.b(this.f, passInstance.f) && atyq.b(this.g, passInstance.g) && atyq.b(this.h, passInstance.h) && atyq.b(this.i, passInstance.i) && atyq.b(Integer.valueOf(this.j), Integer.valueOf(passInstance.j))) {
                 return true;
             }
         }
@@ -48,18 +48,18 @@ public final class PassInstance extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.t(parcel, 9, this.i, i, false);
-        arxc.o(parcel, 10, this.j);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.t(parcel, 9, this.i, i, false);
+        atzr.o(parcel, 10, this.j);
+        atzr.c(parcel, a);
     }
 
     public PassInstance(PassType passType, String str, String str2, String str3, Bitmap bitmap, String str4, PendingIntent pendingIntent, String str5, Bitmap bitmap2, int i) {

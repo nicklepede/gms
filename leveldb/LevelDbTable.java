@@ -1,13 +1,13 @@
 package com.google.android.gms.leveldb;
 
-import defpackage.bqmu;
-import defpackage.bqmz;
+import defpackage.bsuj;
+import defpackage.bsuo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
-public final class LevelDbTable extends bqmu {
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
+public final class LevelDbTable extends bsuj {
     static {
-        bqmz.a();
+        bsuo.a();
     }
 
     private LevelDbTable(long j) {
@@ -27,12 +27,12 @@ public final class LevelDbTable extends bqmu {
         throw new NullPointerException("Parameter \"tablePath\" was not set.");
     }
 
-    @Override // defpackage.bqmu, java.io.Closeable, java.lang.AutoCloseable
+    @Override // defpackage.bsuj, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
         super.close();
     }
 
-    @Override // defpackage.bqmu
+    @Override // defpackage.bsuj
     public void closeNativeObject() {
         nativeClose(this.c);
     }

@@ -7,9 +7,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.CompoundButton;
 import com.google.android.gms.drivingmode.MasterSwitchPreference;
-import defpackage.kmp;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class MasterSwitchPreference extends TwoTargetPreference {
     public SwitchCompat a;
@@ -23,11 +23,11 @@ public class MasterSwitchPreference extends TwoTargetPreference {
     }
 
     @Override // com.google.android.gms.drivingmode.TwoTargetPreference, androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        View D = kmpVar.D(R.id.widget_frame);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        View D = mfaVar.D(R.id.widget_frame);
         if (D != null) {
-            D.setOnClickListener(new View.OnClickListener() { // from class: axqn
+            D.setOnClickListener(new View.OnClickListener() { // from class: azun
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     MasterSwitchPreference masterSwitchPreference = MasterSwitchPreference.this;
@@ -42,7 +42,7 @@ public class MasterSwitchPreference extends TwoTargetPreference {
                 }
             });
         }
-        SwitchCompat switchCompat = (SwitchCompat) kmpVar.D(com.google.android.gms.R.id.switch_widget);
+        SwitchCompat switchCompat = (SwitchCompat) mfaVar.D(com.google.android.gms.R.id.switch_widget);
         this.a = switchCompat;
         switchCompat.setContentDescription(t());
         this.a.setChecked(this.b);

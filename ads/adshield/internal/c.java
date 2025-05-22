@@ -2,14 +2,14 @@ package com.google.android.gms.ads.adshield.internal;
 
 import android.os.IBinder;
 import android.os.IInterface;
-import defpackage.azht;
+import defpackage.bblp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public interface c extends IInterface {
-    IBinder newAdShieldClient(String str, azht azhtVar);
+    IBinder newAdShieldClient(String str, bblp bblpVar);
 
-    IBinder newAdShieldClientWithoutAdvertisingId(String str, azht azhtVar);
+    IBinder newAdShieldClientWithoutAdvertisingId(String str, bblp bblpVar);
 
-    IBinder newUnifiedAdShieldClient(azht azhtVar, azht azhtVar2, byte[] bArr);
+    IBinder newUnifiedAdShieldClient(bblp bblpVar, bblp bblpVar2, byte[] bArr);
 }

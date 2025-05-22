@@ -3,19 +3,19 @@ package com.google.android.gms.mobiledataplan.consent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cebo;
-import defpackage.ffgs;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgkv;
+import defpackage.fhvq;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ConsentStatus extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cebo();
+    public static final Parcelable.Creator CREATOR = new cgkv();
     public int a;
 
     public ConsentStatus() {
@@ -39,9 +39,9 @@ public final class ConsentStatus extends AbstractSafeParcelable {
         }
     }
 
-    public final ffgs a() {
-        ffgs b = ffgs.b(this.a);
-        return b != null ? b : ffgs.CONSENT_UNSPECIFIED;
+    public final fhvq a() {
+        fhvq b = fhvq.b(this.a);
+        return b != null ? b : fhvq.CONSENT_UNSPECIFIED;
     }
 
     public final boolean equals(Object obj) {
@@ -49,7 +49,7 @@ public final class ConsentStatus extends AbstractSafeParcelable {
             return true;
         }
         if (obj instanceof ConsentStatus) {
-            return arwb.b(Integer.valueOf(this.a), Integer.valueOf(((ConsentStatus) obj).a));
+            return atyq.b(Integer.valueOf(this.a), Integer.valueOf(((ConsentStatus) obj).a));
         }
         return false;
     }
@@ -60,15 +60,15 @@ public final class ConsentStatus extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("EnumVal", Integer.valueOf(this.a), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("EnumVal", Integer.valueOf(this.a), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.c(parcel, a);
     }
 
     public ConsentStatus(int i) {

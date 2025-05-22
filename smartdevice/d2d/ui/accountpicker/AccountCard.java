@@ -11,13 +11,13 @@ import androidx.cardview.widget.CardView;
 import com.google.android.gms.R;
 import com.google.android.gms.smartdevice.d2d.owners.ParcelableDeviceOwner;
 import com.google.android.gms.smartdevice.setup.ui.views.CircularImageView;
-import defpackage.edeq;
-import defpackage.edjk;
-import defpackage.edjl;
-import defpackage.edjs;
-import defpackage.eiig;
+import defpackage.efrl;
+import defpackage.efwf;
+import defpackage.efwg;
+import defpackage.efwn;
+import defpackage.ekvl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class AccountCard extends FrameLayout {
     public final CardView a;
@@ -38,12 +38,12 @@ public class AccountCard extends FrameLayout {
         this.d = textView2;
         TextView textView3 = (TextView) inflate.findViewById(R.id.account_error_message);
         this.e = textView3;
-        int i = edjs.a;
-        if (edeq.z(context)) {
-            edjk.b(textView);
+        int i = efwn.a;
+        if (efrl.z(context)) {
+            efwf.b(textView);
             textView2.setTypeface(textView.getTypeface());
             textView3.setTypeface(textView.getTypeface());
-            edjl.a(cardView);
+            efwg.a(cardView);
             LinearLayout linearLayout = (LinearLayout) inflate.findViewById(R.id.account_card_content_layout);
             int dimensionPixelSize = getResources().getDimensionPixelSize(R.dimen.smartdevice_account_card_bluechip_padding);
             linearLayout.setPadding(linearLayout.getPaddingLeft(), dimensionPixelSize, linearLayout.getPaddingRight(), dimensionPixelSize);
@@ -51,12 +51,12 @@ public class AccountCard extends FrameLayout {
     }
 
     public final void a(ParcelableDeviceOwner parcelableDeviceOwner) {
-        eiig.x(parcelableDeviceOwner);
+        ekvl.y(parcelableDeviceOwner);
         Bitmap bitmap = parcelableDeviceOwner.e;
         if (bitmap != null) {
             this.b.setImageBitmap(bitmap);
         } else {
-            this.b.setImageResource(2131232802);
+            this.b.setImageResource(2131232866);
         }
         String str = parcelableDeviceOwner.b;
         if (str == null) {
@@ -78,6 +78,6 @@ public class AccountCard extends FrameLayout {
     }
 
     public final void b() {
-        this.a.lk(getResources().getColor(android.R.color.transparent));
+        this.a.lB(getResources().getColor(android.R.color.transparent));
     }
 }

@@ -13,53 +13,53 @@ import android.view.View;
 import com.google.android.gms.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.aapt;
-import defpackage.adcv;
-import defpackage.adcw;
-import defpackage.adcy;
-import defpackage.adcz;
-import defpackage.adda;
-import defpackage.addb;
-import defpackage.addc;
-import defpackage.addd;
-import defpackage.addg;
-import defpackage.addl;
-import defpackage.addm;
-import defpackage.addn;
-import defpackage.addo;
-import defpackage.aquo;
-import defpackage.aqxr;
-import defpackage.arlb;
-import defpackage.arxo;
-import defpackage.asnd;
-import defpackage.bqna;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.entj;
-import defpackage.feay;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fedk;
-import defpackage.iln;
-import defpackage.qfn;
+import defpackage.acpt;
+import defpackage.afcv;
+import defpackage.afcw;
+import defpackage.afcy;
+import defpackage.afcz;
+import defpackage.afda;
+import defpackage.afdb;
+import defpackage.afdc;
+import defpackage.afdd;
+import defpackage.afdg;
+import defpackage.afdl;
+import defpackage.afdm;
+import defpackage.afdn;
+import defpackage.afdo;
+import defpackage.asxd;
+import defpackage.atag;
+import defpackage.atnq;
+import defpackage.auad;
+import defpackage.auqx;
+import defpackage.bsup;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.eqhc;
+import defpackage.fgpr;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgsd;
+import defpackage.ind;
+import defpackage.ryr;
 import java.io.IOException;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class SourceChimeraActivity extends qfn implements aqxr {
-    public static final arxo h = new arxo("D2D", "SourceActivity");
+public class SourceChimeraActivity extends ryr implements atag {
+    public static final auad h = new auad("D2D", "SourceActivity");
     private static final long z = TimeUnit.MINUTES.toMillis(5);
     public Account[] i;
     public BluetoothAdapter j;
-    public addn r;
+    public afdn r;
     public AlertDialog t;
-    public addm u;
-    public addl v;
-    public aapt w;
+    public afdm u;
+    public afdl v;
+    public acpt w;
     public AsyncTask x;
-    public adcv y;
+    public afcv y;
     public boolean k = false;
     public boolean l = false;
     public boolean m = false;
@@ -67,15 +67,15 @@ public class SourceChimeraActivity extends qfn implements aqxr {
     public boolean o = false;
     public final Object p = new Object();
     public boolean q = false;
-    public final entj s = new entj();
+    public final eqhc s = new eqhc();
 
     public SourceChimeraActivity() {
-        arxo arxoVar = adcw.a;
+        auad auadVar = afcw.a;
     }
 
-    public static Object b(dfaq dfaqVar) {
-        dfbl.o(dfaqVar, z, TimeUnit.MILLISECONDS);
-        return dfaqVar.i();
+    public static Object b(dhlw dhlwVar) {
+        dhmr.o(dhlwVar, z, TimeUnit.MILLISECONDS);
+        return dhlwVar.i();
     }
 
     private final void n(AlertDialog alertDialog) {
@@ -104,20 +104,20 @@ public class SourceChimeraActivity extends qfn implements aqxr {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public final defpackage.erec a(defpackage.ereh r24, defpackage.vky r25, defpackage.vkz r26) {
+    public final defpackage.etsy a(defpackage.ettd r24, defpackage.xgz r25, defpackage.xha r26) {
         /*
             Method dump skipped, instructions count: 1102
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.setup.d2d.SourceChimeraActivity.a(ereh, vky, vkz):erec");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.setup.d2d.SourceChimeraActivity.a(ettd, xgz, xha):etsy");
     }
 
     public final void c() {
         this.k = true;
         if (this.j.enable()) {
-            iln.b(this, new TracingBroadcastReceiver() { // from class: com.google.android.gms.auth.setup.d2d.SourceChimeraActivity.6
+            ind.b(this, new TracingBroadcastReceiver() { // from class: com.google.android.gms.auth.setup.d2d.SourceChimeraActivity.6
                 @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-                public final void jz(Context context, Intent intent) {
+                public final void jP(Context context, Intent intent) {
                     SourceChimeraActivity sourceChimeraActivity = SourceChimeraActivity.this;
                     if (sourceChimeraActivity.j.isEnabled()) {
                         context.unregisterReceiver(this);
@@ -133,25 +133,25 @@ public class SourceChimeraActivity extends qfn implements aqxr {
 
     public final void j(int i) {
         k();
-        runOnUiThread(new adcy(this, i));
+        runOnUiThread(new afcy(this, i));
     }
 
     public final void k() {
         this.n = true;
         if (this.y != null) {
-            fecj v = addo.a.v();
+            fgrc v = afdo.a.v();
             if (!v.b.L()) {
                 v.U();
             }
-            addo.b((addo) v.b);
+            afdo.b((afdo) v.b);
             if (!v.b.L()) {
                 v.U();
             }
-            addo addoVar = (addo) v.b;
-            addoVar.b |= 4;
-            addoVar.d = true;
+            afdo afdoVar = (afdo) v.b;
+            afdoVar.b |= 4;
+            afdoVar.d = true;
             try {
-                this.y.a((addo) v.Q());
+                this.y.a((afdo) v.Q());
             } catch (IOException e) {
                 h.l(e);
             }
@@ -171,16 +171,16 @@ public class SourceChimeraActivity extends qfn implements aqxr {
         if (this.m && !this.j.isEnabled()) {
             c();
         }
-        n(new AlertDialog.Builder(this).setTitle(R.string.auth_d2d_tap_and_go).setMessage(string).setCancelable(false).setPositiveButton(android.R.string.ok, new addb(this)).setNegativeButton(android.R.string.cancel, new adda()).setOnCancelListener(new adcz(this)).create());
+        n(new AlertDialog.Builder(this).setTitle(R.string.auth_d2d_tap_and_go).setMessage(string).setCancelable(false).setPositiveButton(android.R.string.ok, new afdb(this)).setNegativeButton(android.R.string.cancel, new afda()).setOnCancelListener(new afcz(this)).create());
     }
 
     public final void m() {
-        addm addmVar = new addm(this, this.j, UUID.fromString(this.r.c), this.r.d);
-        this.u = addmVar;
-        addmVar.start();
+        afdm afdmVar = new afdm(this, this.j, UUID.fromString(this.r.c), this.r.d);
+        this.u = afdmVar;
+        afdmVar.start();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i == 1) {
@@ -193,39 +193,39 @@ public class SourceChimeraActivity extends qfn implements aqxr {
         }
     }
 
-    @Override // defpackage.arcf
+    @Override // defpackage.ateu
     public final void onConnectionFailed(ConnectionResult connectionResult) {
         if (this.o) {
             return;
         }
         this.o = true;
         int i = connectionResult.c;
-        addg addgVar = new addg();
+        afdg afdgVar = new afdg();
         Bundle bundle = new Bundle();
         bundle.putInt("error_dialog_code", i);
-        addgVar.setArguments(bundle);
-        addgVar.show(getContainerActivity().getFragmentManager(), "error_dialog");
+        afdgVar.setArguments(bundle);
+        afdgVar.show(getContainerActivity().getFragmentManager(), "error_dialog");
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         String str;
         super.onCreate(bundle);
-        int i = asnd.a;
+        int i = auqx.a;
         boolean z2 = false;
-        if (aquo.g(this)) {
+        if (asxd.g(this)) {
             j(R.string.auth_d2d_source_restricted_user_toast);
             h.m("Cannot clone restricted profile", new Object[0]);
             return;
         }
-        Account[] p = bqna.b(this).p("com.google");
+        Account[] p = bsup.b(this).p("com.google");
         this.i = p;
         if (p.length <= 0) {
             j(R.string.auth_d2d_source_no_accounts_toast);
             h.j("No accounts found!", new Object[0]);
             return;
         }
-        BluetoothAdapter a = arlb.a(this);
+        BluetoothAdapter a = atnq.a(this);
         this.j = a;
         if (a == null) {
             j(R.string.auth_d2d_source_no_bluetooth_toast);
@@ -239,13 +239,13 @@ public class SourceChimeraActivity extends qfn implements aqxr {
             this.l = true;
         }
         Intent intent = getIntent();
-        fecj v = addn.a.v();
+        fgrc v = afdn.a.v();
         byte[] byteArrayExtra = intent.getByteArrayExtra("payload");
-        addn addnVar = null;
+        afdn afdnVar = null;
         if (byteArrayExtra != null) {
             try {
-                addnVar = (addn) ((fecj) v.D(byteArrayExtra, febw.a())).Q();
-            } catch (fedk e) {
+                afdnVar = (afdn) ((fgrc) v.D(byteArrayExtra, fgqp.a())).Q();
+            } catch (fgsd e) {
                 h.g("Could not deserialize BootstrapInfo!", e, new Object[0]);
             }
         } else {
@@ -253,28 +253,28 @@ public class SourceChimeraActivity extends qfn implements aqxr {
             if (!v.b.L()) {
                 v.U();
             }
-            addn addnVar2 = (addn) v.b;
+            afdn afdnVar2 = (afdn) v.b;
             stringExtra.getClass();
-            addnVar2.b |= 2;
-            addnVar2.d = stringExtra;
+            afdnVar2.b |= 2;
+            afdnVar2.d = stringExtra;
             byte[] byteArrayExtra2 = intent.getByteArrayExtra("initiatorHello");
             if (byteArrayExtra2 != null) {
-                feay w = feay.w(byteArrayExtra2);
+                fgpr w = fgpr.w(byteArrayExtra2);
                 if (!v.b.L()) {
                     v.U();
                 }
-                addn addnVar3 = (addn) v.b;
-                addnVar3.b |= 4;
-                addnVar3.e = w;
+                afdn afdnVar3 = (afdn) v.b;
+                afdnVar3.b |= 4;
+                afdnVar3.e = w;
             }
-            if (((addn) v.b).d.isEmpty()) {
+            if (((afdn) v.b).d.isEmpty()) {
                 h.f("Bluetooth MAC address information missing.", new Object[0]);
             } else {
-                addnVar = (addn) v.Q();
+                afdnVar = (afdn) v.Q();
             }
         }
-        this.r = addnVar;
-        if (addnVar != null) {
+        this.r = afdnVar;
+        if (afdnVar != null) {
             boolean isEnabled = this.j.isEnabled();
             if (isEnabled) {
                 m();
@@ -286,7 +286,7 @@ public class SourceChimeraActivity extends qfn implements aqxr {
                 } else {
                     str = string + "\n" + getString(R.string.auth_d2d_source_lock_bt_off_notice);
                 }
-                n(new AlertDialog.Builder(this).setTitle(R.string.auth_d2d_tap_and_go).setMessage(str).setPositiveButton(R.string.auth_d2d_source_alert_verify_lock_button, new addd(this)).setOnCancelListener(new addc(this)).setCancelable(true).create());
+                n(new AlertDialog.Builder(this).setTitle(R.string.auth_d2d_tap_and_go).setMessage(str).setPositiveButton(R.string.auth_d2d_source_alert_verify_lock_button, new afdd(this)).setOnCancelListener(new afdc(this)).setCancelable(true).create());
             } else {
                 l();
             }
@@ -297,27 +297,27 @@ public class SourceChimeraActivity extends qfn implements aqxr {
             z2 = true;
         }
         this.o = z2;
-        this.w = new aapt(this);
+        this.w = new acpt(this);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
         AlertDialog alertDialog = this.t;
         if (alertDialog != null && alertDialog.isShowing()) {
             this.t.dismiss();
             this.t = null;
         }
-        adcv adcvVar = this.y;
-        if (adcvVar != null) {
+        afcv afcvVar = this.y;
+        if (afcvVar != null) {
             try {
-                adcvVar.b();
+                afcvVar.b();
             } catch (IOException e) {
                 h.l(e);
             }
         }
-        addm addmVar = this.u;
-        if (addmVar != null) {
-            addmVar.a();
+        afdm afdmVar = this.u;
+        if (afdmVar != null) {
+            afdmVar.a();
         }
         if (this.k) {
             this.j.disable();
@@ -325,7 +325,7 @@ public class SourceChimeraActivity extends qfn implements aqxr {
         super.onDestroy();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         AsyncTask asyncTask = this.x;
@@ -340,7 +340,7 @@ public class SourceChimeraActivity extends qfn implements aqxr {
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         synchronized (this.p) {
@@ -348,7 +348,7 @@ public class SourceChimeraActivity extends qfn implements aqxr {
         }
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBoolean("resolving_error", this.o);

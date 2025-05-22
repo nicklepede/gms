@@ -1,25 +1,25 @@
 package com.google.android.gms.clearcut.sampler;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.aqch;
-import defpackage.asmf;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.eits;
-import defpackage.ejck;
-import defpackage.ensv;
+import defpackage.asey;
+import defpackage.aupz;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.elgx;
+import defpackage.elpp;
+import defpackage.eqgo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class ClearcutLoggerSamplingChimeraService extends bxgd {
-    public static final ensv a = new asmf(1, 10);
+public class ClearcutLoggerSamplingChimeraService extends bzot {
+    public static final eqgo a = new aupz(1, 10);
 
     public ClearcutLoggerSamplingChimeraService() {
-        super(new int[]{414}, new String[]{"com.google.android.gms.clearcut.sampler.service.START"}, ejck.a, 1, a, (eits) null);
+        super(new int[]{414}, new String[]{"com.google.android.gms.clearcut.sampler.service.START"}, elpp.a, 1, a, (elgx) null);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        bxgjVar.c(new aqch(this, l()));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        bzozVar.c(new asey(this, l()));
     }
 }

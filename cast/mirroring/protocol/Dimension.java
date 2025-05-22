@@ -1,10 +1,10 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
-import defpackage.aned;
-import defpackage.fvbo;
+import defpackage.apfq;
+import defpackage.fxxm;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class Dimension {
     private final String frameRate;
@@ -56,7 +56,7 @@ public final class Dimension {
             return false;
         }
         Dimension dimension = (Dimension) obj;
-        return this.height == dimension.height && this.width == dimension.width && fvbo.n(this.frameRate, dimension.frameRate);
+        return this.height == dimension.height && this.width == dimension.width && fxxm.n(this.frameRate, dimension.frameRate);
     }
 
     public final String getFrameRate() {
@@ -73,7 +73,7 @@ public final class Dimension {
 
     public int hashCode() {
         String str = this.frameRate;
-        return (((aned.a(this.height) * 31) + aned.a(this.width)) * 31) + (str == null ? 0 : str.hashCode());
+        return (((apfq.a(this.height) * 31) + apfq.a(this.width)) * 31) + (str == null ? 0 : str.hashCode());
     }
 
     public String toString() {

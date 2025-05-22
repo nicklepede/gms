@@ -4,20 +4,21 @@ import android.accounts.Account;
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Base64;
-import defpackage.eiho;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.enxz;
-import defpackage.enya;
-import defpackage.enyb;
-import defpackage.fecj;
-import defpackage.fjwt;
+import defpackage.ekut;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.eqgo;
+import defpackage.eqls;
+import defpackage.eqlt;
+import defpackage.eqlu;
+import defpackage.fgrc;
+import defpackage.fmmx;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GmsDoritosProvider {
     private static GmsDoritosProvider e;
@@ -49,27 +50,31 @@ public class GmsDoritosProvider {
         return gmsDoritosProvider;
     }
 
-    public enss getDoritosCookieAsynchronously(final String str) {
-        return (fjwt.k() && u.b(this.a, str)) ? ensj.i(null) : enps.g(com.google.android.gms.ads.internal.util.future.e.a.submit(new Callable() { // from class: com.google.android.gms.ads.social.l
+    public eqgl getDoritosCookieAsynchronously(final String str) {
+        if (fmmx.k() && u.b(this.a, str)) {
+            return eqgc.i(null);
+        }
+        eqgo eqgoVar = com.google.android.gms.ads.internal.util.future.e.a;
+        return eqdl.g(eqgoVar.submit(new Callable() { // from class: com.google.android.gms.ads.social.l
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                if (fjwt.j()) {
+                if (fmmx.j()) {
                     if (u.b(GmsDoritosProvider.this.a, str)) {
                         return a.GAIALESS_DORITOS;
                     }
                 }
                 return a.DORITOS_WITH_GAIA;
             }
-        }), new enqc() { // from class: com.google.android.gms.ads.social.m
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+        }), new eqdv() { // from class: com.google.android.gms.ads.social.m
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 return GmsDoritosProvider.this.getDoritosCookieAsynchronouslyWithType(str, (a) obj);
             }
-        }, com.google.android.gms.ads.internal.util.future.e.a);
+        }, eqgoVar);
     }
 
-    public enss getDoritosCookieAsynchronouslyWithType(final String str, final a aVar) {
-        return (fjwt.k() && u.b(this.a, str)) ? ensj.i(null) : com.google.android.gms.ads.internal.util.future.e.a.submit(new Callable() { // from class: com.google.android.gms.ads.social.j
+    public eqgl getDoritosCookieAsynchronouslyWithType(final String str, final a aVar) {
+        return (fmmx.k() && u.b(this.a, str)) ? eqgc.i(null) : com.google.android.gms.ads.internal.util.future.e.a.submit(new Callable() { // from class: com.google.android.gms.ads.social.j
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 GmsDoritosProvider gmsDoritosProvider = GmsDoritosProvider.this;
@@ -102,11 +107,11 @@ public class GmsDoritosProvider {
         });
     }
 
-    public enss getDoritosCookieForActivePresenceManagerAccount(final String str) {
-        return (fjwt.k() && u.b(this.a, str)) ? ensj.i(null) : enps.f(this.b.b(), new eiho() { // from class: com.google.android.gms.ads.social.p
+    public eqgl getDoritosCookieForActivePresenceManagerAccount(final String str) {
+        return (fmmx.k() && u.b(this.a, str)) ? eqgc.i(null) : eqdl.f(this.b.b(), new ekut() { // from class: com.google.android.gms.ads.social.p
             /* JADX WARN: Removed duplicated region for block: B:14:0x0041 A[RETURN] */
             /* JADX WARN: Removed duplicated region for block: B:8:0x0025  */
-            @Override // defpackage.eiho
+            @Override // defpackage.ekut
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
                 To view partially-correct code enable 'Show inconsistent code' option in preferences
@@ -119,7 +124,7 @@ public class GmsDoritosProvider {
                     com.google.android.gms.ads.social.e r1 = r0.c
                     r1.b()
                     com.google.android.gms.ads.social.a r2 = com.google.android.gms.ads.social.a.DORITOS_WITH_GAIA
-                    boolean r3 = defpackage.fjwt.j()
+                    boolean r3 = defpackage.fmmx.j()
                     if (r3 == 0) goto L1e
                     java.lang.String r3 = r2
                     android.content.Context r4 = r0.a
@@ -153,27 +158,31 @@ public class GmsDoritosProvider {
         }, com.google.android.gms.ads.internal.util.future.e.a);
     }
 
-    public enss getDoritosCookiesAsynchronously(final String str) {
-        return (fjwt.k() && u.b(this.a, str)) ? ensj.i("") : enps.g(com.google.android.gms.ads.internal.util.future.e.a.submit(new Callable() { // from class: com.google.android.gms.ads.social.n
+    public eqgl getDoritosCookiesAsynchronously(final String str) {
+        if (fmmx.k() && u.b(this.a, str)) {
+            return eqgc.i("");
+        }
+        eqgo eqgoVar = com.google.android.gms.ads.internal.util.future.e.a;
+        return eqdl.g(eqgoVar.submit(new Callable() { // from class: com.google.android.gms.ads.social.n
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                if (fjwt.j()) {
+                if (fmmx.j()) {
                     if (u.b(GmsDoritosProvider.this.a, str)) {
                         return a.GAIALESS_DORITOS;
                     }
                 }
                 return a.DORITOS_WITH_GAIA;
             }
-        }), new enqc() { // from class: com.google.android.gms.ads.social.o
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+        }), new eqdv() { // from class: com.google.android.gms.ads.social.o
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 return GmsDoritosProvider.this.getDoritosCookiesAsynchronouslyWithType(str, (a) obj);
             }
-        }, com.google.android.gms.ads.internal.util.future.e.a);
+        }, eqgoVar);
     }
 
-    public enss getDoritosCookiesAsynchronouslyWithType(final String str, final a aVar) {
-        return (fjwt.k() && u.b(this.a, str)) ? ensj.i("") : com.google.android.gms.ads.internal.util.future.e.a.submit(new Callable() { // from class: com.google.android.gms.ads.social.q
+    public eqgl getDoritosCookiesAsynchronouslyWithType(final String str, final a aVar) {
+        return (fmmx.k() && u.b(this.a, str)) ? eqgc.i("") : com.google.android.gms.ads.internal.util.future.e.a.submit(new Callable() { // from class: com.google.android.gms.ads.social.q
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 GmsDoritosProvider gmsDoritosProvider = GmsDoritosProvider.this;
@@ -184,102 +193,102 @@ public class GmsDoritosProvider {
                 Account[] d = iVar.d();
                 String c = iVar.c(str2);
                 ArrayList arrayList = new ArrayList();
-                if ((((Boolean) com.google.android.gms.ads.internal.config.p.aM.g()).booleanValue() || fjwt.j()) && gmsDoritosProvider.d.b(d)) {
+                if ((((Boolean) com.google.android.gms.ads.internal.config.p.aN.g()).booleanValue() || fmmx.j()) && gmsDoritosProvider.d.b(d)) {
                     eVar.c();
                 }
                 for (Account account : d) {
                     if (!TextUtils.isEmpty(account.name)) {
                         String a = gmsDoritosProvider.d.a(account.name, aVar);
                         if (!TextUtils.isEmpty(a)) {
-                            fecj v = enya.a.v();
+                            fgrc v = eqlt.a.v();
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            enya enyaVar = (enya) v.b;
+                            eqlt eqltVar = (eqlt) v.b;
                             a.getClass();
-                            enyaVar.b |= 1;
-                            enyaVar.c = a;
+                            eqltVar.b |= 1;
+                            eqltVar.c = a;
                             if (account.name.equals(c)) {
                                 if (!v.b.L()) {
                                     v.U();
                                 }
-                                enya.c((enya) v.b);
+                                eqlt.c((eqlt) v.b);
                             }
-                            arrayList.add((enya) v.Q());
+                            arrayList.add((eqlt) v.Q());
                         }
                     }
                 }
                 if (!arrayList.isEmpty()) {
-                    enya enyaVar2 = (enya) arrayList.get(0);
-                    fecj fecjVar = (fecj) enyaVar2.iB(5, null);
-                    fecjVar.X(enyaVar2);
-                    if (!fecjVar.b.L()) {
-                        fecjVar.U();
+                    eqlt eqltVar2 = (eqlt) arrayList.get(0);
+                    fgrc fgrcVar = (fgrc) eqltVar2.iQ(5, null);
+                    fgrcVar.X(eqltVar2);
+                    if (!fgrcVar.b.L()) {
+                        fgrcVar.U();
                     }
-                    enya.b((enya) fecjVar.b);
-                    arrayList.set(0, (enya) fecjVar.Q());
+                    eqlt.b((eqlt) fgrcVar.b);
+                    arrayList.set(0, (eqlt) fgrcVar.Q());
                 }
-                enxz enxzVar = (enxz) enyb.a.v();
-                enxzVar.a(arrayList);
-                return Base64.encodeToString(((enyb) enxzVar.Q()).r(), 10);
+                eqls eqlsVar = (eqls) eqlu.a.v();
+                eqlsVar.a(arrayList);
+                return Base64.encodeToString(((eqlu) eqlsVar.Q()).r(), 10);
             }
         });
     }
 
-    public enss getDoritosCookiesForActivePresenceManagerAccount(final String str) {
-        return (fjwt.k() && u.b(this.a, str)) ? ensj.i("") : enps.f(this.b.b(), new eiho() { // from class: com.google.android.gms.ads.social.k
-            @Override // defpackage.eiho
+    public eqgl getDoritosCookiesForActivePresenceManagerAccount(final String str) {
+        return (fmmx.k() && u.b(this.a, str)) ? eqgc.i("") : eqdl.f(this.b.b(), new ekut() { // from class: com.google.android.gms.ads.social.k
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 String str2 = (String) obj;
                 GmsDoritosProvider gmsDoritosProvider = GmsDoritosProvider.this;
                 e eVar = gmsDoritosProvider.c;
                 eVar.b();
                 a aVar = a.DORITOS_WITH_GAIA;
-                if (fjwt.j()) {
+                if (fmmx.j()) {
                     if (u.b(gmsDoritosProvider.a, str)) {
                         aVar = a.GAIALESS_DORITOS;
                     }
                 }
                 Account[] d = gmsDoritosProvider.b.d();
                 ArrayList arrayList = new ArrayList();
-                if ((((Boolean) com.google.android.gms.ads.internal.config.p.aM.g()).booleanValue() || fjwt.j()) && gmsDoritosProvider.d.b(d)) {
+                if ((((Boolean) com.google.android.gms.ads.internal.config.p.aN.g()).booleanValue() || fmmx.j()) && gmsDoritosProvider.d.b(d)) {
                     eVar.c();
                 }
                 for (Account account : d) {
                     if (!TextUtils.isEmpty(account.name)) {
                         String a = gmsDoritosProvider.d.a(account.name, aVar);
                         if (!TextUtils.isEmpty(a)) {
-                            fecj v = enya.a.v();
+                            fgrc v = eqlt.a.v();
                             if (!v.b.L()) {
                                 v.U();
                             }
-                            enya enyaVar = (enya) v.b;
+                            eqlt eqltVar = (eqlt) v.b;
                             a.getClass();
-                            enyaVar.b |= 1;
-                            enyaVar.c = a;
+                            eqltVar.b |= 1;
+                            eqltVar.c = a;
                             if (account.name.equals(str2)) {
                                 if (!v.b.L()) {
                                     v.U();
                                 }
-                                enya.c((enya) v.b);
+                                eqlt.c((eqlt) v.b);
                                 if (!v.b.L()) {
                                     v.U();
                                 }
-                                enya.b((enya) v.b);
+                                eqlt.b((eqlt) v.b);
                                 if (!v.b.L()) {
                                     v.U();
                                 }
-                                enya enyaVar2 = (enya) v.b;
-                                enyaVar2.b |= 8;
-                                enyaVar2.d = true;
+                                eqlt eqltVar2 = (eqlt) v.b;
+                                eqltVar2.b |= 8;
+                                eqltVar2.d = true;
                             }
-                            arrayList.add((enya) v.Q());
+                            arrayList.add((eqlt) v.Q());
                         }
                     }
                 }
-                enxz enxzVar = (enxz) enyb.a.v();
-                enxzVar.a(arrayList);
-                return Base64.encodeToString(((enyb) enxzVar.Q()).r(), 10);
+                eqls eqlsVar = (eqls) eqlu.a.v();
+                eqlsVar.a(arrayList);
+                return Base64.encodeToString(((eqlu) eqlsVar.Q()).r(), 10);
             }
         }, com.google.android.gms.ads.internal.util.future.e.a);
     }

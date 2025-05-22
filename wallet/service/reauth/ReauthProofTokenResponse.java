@@ -2,13 +2,13 @@ package com.google.android.gms.wallet.service.reauth;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.djcv;
-import defpackage.djdv;
+import defpackage.dloo;
+import defpackage.dlpo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class ReauthProofTokenResponse implements Parcelable, djdv {
-    public static final Parcelable.Creator CREATOR = new djcv();
+public class ReauthProofTokenResponse implements Parcelable, dlpo {
+    public static final Parcelable.Creator CREATOR = new dloo();
     public final String a;
     public final int b;
     public final long c;
@@ -19,7 +19,7 @@ public class ReauthProofTokenResponse implements Parcelable, djdv {
         this.c = j;
     }
 
-    @Override // defpackage.djdv
+    @Override // defpackage.dlpo
     public final boolean a() {
         return false;
     }

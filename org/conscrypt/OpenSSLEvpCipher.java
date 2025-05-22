@@ -10,15 +10,15 @@ import java.util.Arrays;
 import javax.crypto.ShortBufferException;
 import javax.crypto.spec.IvParameterSpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class OpenSSLEvpCipher extends OpenSSLCipher {
     private boolean calledUpdate;
     private final NativeRef.EVP_CIPHER_CTX cipherCtx;
     private int modeBlockSize;
 
-    public OpenSSLEvpCipher(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding) {
-        super(mode, padding);
+    public OpenSSLEvpCipher(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding, int i, int i2, int i3) {
+        super(mode, padding, i, i2, i3);
         this.cipherCtx = new NativeRef.EVP_CIPHER_CTX(NativeCrypto.EVP_CIPHER_CTX_new());
     }
 

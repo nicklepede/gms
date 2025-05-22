@@ -5,18 +5,18 @@ import android.os.Parcelable;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.cadr;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.ccmi;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes5.dex */
 public class AutocompleteFilter extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new cadr();
+    public static final Parcelable.Creator CREATOR = new ccmi();
     final int a;
     final boolean b;
     final List c;
@@ -56,19 +56,19 @@ public class AutocompleteFilter extends AbstractSafeParcelable implements Reflec
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("includeQueryPredictions", Boolean.valueOf(this.b), arrayList);
-        arwa.b("typeFilter", Integer.valueOf(this.e), arrayList);
-        arwa.b("country", this.d, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("includeQueryPredictions", Boolean.valueOf(this.b), arrayList);
+        atyp.b("typeFilter", Integer.valueOf(this.e), arrayList);
+        atyp.b("country", this.d, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, this.b);
-        arxc.E(parcel, 2, this.c);
-        arxc.v(parcel, 3, this.d, false);
-        arxc.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, this.b);
+        atzr.E(parcel, 2, this.c);
+        atzr.v(parcel, 3, this.d, false);
+        atzr.o(parcel, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, this.a);
+        atzr.c(parcel, a);
     }
 }

@@ -7,13 +7,13 @@ import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.contextmanager.ContextData;
 import com.google.android.gms.location.ActivityRecognitionResult;
-import defpackage.ahgt;
-import defpackage.arxc;
+import defpackage.ajhj;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class Snapshot extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ahgt();
+    public static final Parcelable.Creator CREATOR = new ajhj();
     public final ActivityRecognitionResult a;
     public final BeaconStateImpl b;
     public final HeadphoneStateImpl c;
@@ -43,18 +43,18 @@ public final class Snapshot extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         ActivityRecognitionResult activityRecognitionResult = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, activityRecognitionResult, i, false);
-        arxc.t(parcel, 3, this.b, i, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.t(parcel, 7, this.f, i, false);
-        arxc.t(parcel, 8, this.g, i, false);
-        arxc.t(parcel, 9, this.h, i, false);
-        arxc.t(parcel, 10, this.i, i, false);
-        arxc.t(parcel, 11, this.j, i, false);
-        arxc.t(parcel, 12, this.k, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, activityRecognitionResult, i, false);
+        atzr.t(parcel, 3, this.b, i, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.t(parcel, 7, this.f, i, false);
+        atzr.t(parcel, 8, this.g, i, false);
+        atzr.t(parcel, 9, this.h, i, false);
+        atzr.t(parcel, 10, this.i, i, false);
+        atzr.t(parcel, 11, this.j, i, false);
+        atzr.t(parcel, 12, this.k, i, false);
+        atzr.c(parcel, a);
     }
 }

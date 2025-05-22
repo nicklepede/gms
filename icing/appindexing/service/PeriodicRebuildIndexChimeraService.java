@@ -2,47 +2,47 @@ package com.google.android.gms.icing.appindexing.service;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import defpackage.blfw;
-import defpackage.bljp;
-import defpackage.blkf;
-import defpackage.blmb;
-import defpackage.blmk;
-import defpackage.bltp;
-import defpackage.byjl;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.byln;
-import defpackage.eniv;
-import defpackage.enix;
-import defpackage.fpad;
-import defpackage.fpbg;
+import defpackage.bnmo;
+import defpackage.bnqh;
+import defpackage.bnqx;
+import defpackage.bnst;
+import defpackage.bntc;
+import defpackage.boah;
+import defpackage.casd;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.cauf;
+import defpackage.epwm;
+import defpackage.epwo;
+import defpackage.frtk;
+import defpackage.frun;
 import java.nio.charset.Charset;
 import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PeriodicRebuildIndexChimeraService extends RebuildIndexChimeraService {
     private static final Charset a = Charset.forName("UTF-8");
 
-    public static void e(byjl byjlVar) {
-        if (!fpad.a.a().Y()) {
-            blfw.a("UPDATE_INDEX Periodic Scheduling Disabled.");
+    public static void e(casd casdVar) {
+        if (!frtk.a.lK().X()) {
+            bnmo.a("UPDATE_INDEX Periodic Scheduling Disabled.");
             return;
         }
-        byko bykoVar = new byko();
-        bykoVar.j = "com.google.android.gms.icing.indexapi.PeriodicRebuildIndexService";
-        bykoVar.t("PeriodicIndexRebuild");
-        bykoVar.l(false);
-        bykoVar.a = bykv.j;
-        bykoVar.v(1);
-        bykoVar.e();
-        if (!fpbg.l()) {
-            bykoVar.j();
+        catg catgVar = new catg();
+        catgVar.j = "com.google.android.gms.icing.indexapi.PeriodicRebuildIndexService";
+        catgVar.t("PeriodicIndexRebuild");
+        catgVar.l(false);
+        catgVar.a = catn.j;
+        catgVar.v(1);
+        catgVar.e();
+        if (!frun.l()) {
+            catgVar.j();
         }
-        byjlVar.f(bykoVar.b());
-        blfw.a("Task scheduled.");
+        casdVar.f(catgVar.b());
+        bnmo.a("Task scheduled.");
     }
 
     private static long f(long j, long j2) {
@@ -51,22 +51,22 @@ public class PeriodicRebuildIndexChimeraService extends RebuildIndexChimeraServi
     }
 
     @Override // com.google.android.gms.icing.appindexing.service.RebuildIndexChimeraService
-    public final int d(byln bylnVar, bljp bljpVar) {
-        bljp bljpVar2 = bljpVar;
-        if (!fpad.a.a().Z()) {
-            blfw.a("UPDATE_INDEX Periodic Task Disabled.");
+    public final int d(cauf caufVar, bnqh bnqhVar) {
+        bnqh bnqhVar2 = bnqhVar;
+        if (!frtk.a.lK().Y()) {
+            bnmo.a("UPDATE_INDEX Periodic Task Disabled.");
             return 0;
         }
-        Context context = bljpVar2.a;
-        bltp bltpVar = bljpVar2.b;
-        blmk blmkVar = bljpVar2.c;
-        SharedPreferences sharedPreferences = bltpVar.c;
+        Context context = bnqhVar2.a;
+        boah boahVar = bnqhVar2.b;
+        bntc bntcVar = bnqhVar2.c;
+        SharedPreferences sharedPreferences = boahVar.c;
         long currentTimeMillis = System.currentTimeMillis();
         long j = sharedPreferences.getLong("last-periodic-rebuild", 0L);
-        Set<String> b = bljp.b(context);
+        Set<String> b = bnqh.b(context);
         String string = sharedPreferences.getString("instance-id", null);
         if (string == null) {
-            synchronized (bltpVar.h) {
+            synchronized (boahVar.h) {
                 string = sharedPreferences.getString("instance-id", null);
                 if (string == null) {
                     string = UUID.randomUUID().toString();
@@ -75,34 +75,34 @@ public class PeriodicRebuildIndexChimeraService extends RebuildIndexChimeraServi
             }
         }
         String str = string;
-        blfw.b("Considering %d packages for index rebuild.", Integer.valueOf(b.size()));
+        bnmo.b("Considering %d packages for index rebuild.", Integer.valueOf(b.size()));
         for (String str2 : b) {
-            if (blmb.f(str2)) {
-                blfw.b("Skipping package %s because automatic document deletion is disabled for it.", str2);
+            if (bnst.f(str2)) {
+                bnmo.b("Skipping package %s because automatic document deletion is disabled for it.", str2);
             } else {
                 Charset charset = a;
-                if (f(f(blkf.a(blkf.a(-3750763034362895579L, str2.getBytes(charset)), str.getBytes(charset)), fpad.b()) - f(j, fpad.b()), fpad.b()) + j < currentTimeMillis) {
-                    long d = currentTimeMillis - bltpVar.d(str2);
-                    if (d < fpad.a.a().s()) {
-                        blfw.d("Skipping package %s because we just indexed it %d minutes ago.", str2, Long.valueOf(TimeUnit.MILLISECONDS.toMinutes(d)));
-                        blmkVar.f(str2, enix.PERIODIC, eniv.THROTTLED);
+                if (f(f(bnqx.a(bnqx.a(-3750763034362895579L, str2.getBytes(charset)), str.getBytes(charset)), frtk.b()) - f(j, frtk.b()), frtk.b()) + j < currentTimeMillis) {
+                    long d = currentTimeMillis - boahVar.d(str2);
+                    if (d < frtk.a.lK().s()) {
+                        bnmo.d("Skipping package %s because we just indexed it %d minutes ago.", str2, Long.valueOf(TimeUnit.MILLISECONDS.toMinutes(d)));
+                        bntcVar.f(str2, epwo.PERIODIC, epwm.THROTTLED);
                     } else {
                         long j2 = currentTimeMillis;
-                        if (bljpVar2.e(str2, j2, enix.PERIODIC, false)) {
-                            blfw.b("Sent index request to package %s.", str2);
+                        if (bnqhVar2.e(str2, j2, epwo.PERIODIC, false)) {
+                            bnmo.b("Sent index request to package %s.", str2);
                         } else {
-                            blfw.b("Failed to send index request to package %s.", str2);
+                            bnmo.b("Failed to send index request to package %s.", str2);
                         }
-                        bljpVar2 = bljpVar;
+                        bnqhVar2 = bnqhVar;
                         currentTimeMillis = j2;
                     }
                 } else {
-                    blfw.b("Skipping package %s because it is not scheduled in the current window.", str2);
-                    bljpVar2 = bljpVar;
+                    bnmo.b("Skipping package %s because it is not scheduled in the current window.", str2);
+                    bnqhVar2 = bnqhVar;
                 }
             }
         }
-        bltpVar.c.edit().putLong("last-periodic-rebuild", currentTimeMillis).commit();
+        boahVar.c.edit().putLong("last-periodic-rebuild", currentTimeMillis).commit();
         return 0;
     }
 }

@@ -4,19 +4,19 @@ import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.googlesettings.GoogleSettingsItem;
-import defpackage.anxy;
-import defpackage.aojj;
-import defpackage.asej;
-import defpackage.asew;
-import defpackage.asot;
-import defpackage.czlp;
+import defpackage.apzq;
+import defpackage.aqlc;
+import defpackage.auid;
+import defpackage.auiq;
+import defpackage.ausn;
+import defpackage.dbvl;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class OdlhSettingsIntentOperation extends anxy {
+public class OdlhSettingsIntentOperation extends apzq {
     static {
-        asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "OdlhSIO");
+        ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "OdlhSIO");
     }
 
     @Override // android.content.ContextWrapper
@@ -24,13 +24,13 @@ public class OdlhSettingsIntentOperation extends anxy {
         super.attachBaseContext(context);
     }
 
-    @Override // defpackage.anxy
+    @Override // defpackage.apzq
     public final GoogleSettingsItem b() {
         try {
-            if (!czlp.g(this, czlp.a)) {
+            if (!dbvl.g(this, dbvl.a)) {
                 return null;
             }
-            GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(new Intent().setClassName(this, "com.google.android.gms.semanticlocationhistory.settings.OnDeviceSettingsActivity"), -1, getString(R.string.timeline_settings_title), aojj.ODLH_ITEM, asew.SEMANTIC_LOCATION_HISTORY);
+            GoogleSettingsItem googleSettingsItem = new GoogleSettingsItem(new Intent().setClassName(this, "com.google.android.gms.semanticlocationhistory.settings.OnDeviceSettingsActivity"), -1, getString(R.string.timeline_settings_title), aqlc.ODLH_ITEM, auiq.SEMANTIC_LOCATION_HISTORY);
             googleSettingsItem.j = false;
             return googleSettingsItem;
         } catch (IOException unused) {

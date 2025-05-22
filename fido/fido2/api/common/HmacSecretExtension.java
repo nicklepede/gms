@@ -3,57 +3,57 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.asnj;
-import defpackage.bbtk;
-import defpackage.feay;
-import defpackage.ffum;
-import defpackage.ffur;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.aurd;
+import defpackage.bdxb;
+import defpackage.fgpr;
+import defpackage.fijk;
+import defpackage.fijp;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class HmacSecretExtension extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bbtk();
-    public static final ffur a = new ffum(1);
-    public static final ffur b = new ffum(2);
-    public static final ffur c = new ffum(3);
-    public static final ffur d = new ffum(4);
-    public final feay e;
-    public final feay f;
-    public final feay g;
+    public static final Parcelable.Creator CREATOR = new bdxb();
+    public static final fijp a = new fijk(1);
+    public static final fijp b = new fijk(2);
+    public static final fijp c = new fijk(3);
+    public static final fijp d = new fijk(4);
+    public final fgpr e;
+    public final fgpr f;
+    public final fgpr g;
     public final int h;
 
-    public HmacSecretExtension(feay feayVar, feay feayVar2, feay feayVar3, int i) {
-        this.e = feayVar;
-        this.f = feayVar2;
-        this.g = feayVar3;
+    public HmacSecretExtension(fgpr fgprVar, fgpr fgprVar2, fgpr fgprVar3, int i) {
+        this.e = fgprVar;
+        this.f = fgprVar2;
+        this.g = fgprVar3;
         this.h = i;
     }
 
     public final byte[] a() {
-        feay feayVar = this.e;
-        if (feayVar == null) {
+        fgpr fgprVar = this.e;
+        if (fgprVar == null) {
             return null;
         }
-        return feayVar.M();
+        return fgprVar.M();
     }
 
     public final byte[] b() {
-        feay feayVar = this.g;
-        if (feayVar == null) {
+        fgpr fgprVar = this.g;
+        if (fgprVar == null) {
             return null;
         }
-        return feayVar.M();
+        return fgprVar.M();
     }
 
     public final byte[] c() {
-        feay feayVar = this.f;
-        if (feayVar == null) {
+        fgpr fgprVar = this.f;
+        if (fgprVar == null) {
             return null;
         }
-        return feayVar.M();
+        return fgprVar.M();
     }
 
     public final boolean equals(Object obj) {
@@ -61,7 +61,7 @@ public class HmacSecretExtension extends AbstractSafeParcelable {
             return false;
         }
         HmacSecretExtension hmacSecretExtension = (HmacSecretExtension) obj;
-        return arwb.b(this.e, hmacSecretExtension.e) && arwb.b(this.f, hmacSecretExtension.f) && arwb.b(this.g, hmacSecretExtension.g) && this.h == hmacSecretExtension.h;
+        return atyq.b(this.e, hmacSecretExtension.e) && atyq.b(this.f, hmacSecretExtension.f) && atyq.b(this.g, hmacSecretExtension.g) && this.h == hmacSecretExtension.h;
     }
 
     public final int hashCode() {
@@ -69,16 +69,16 @@ public class HmacSecretExtension extends AbstractSafeParcelable {
     }
 
     public final String toString() {
-        return "HmacSecretExtension{coseKeyAgreement=" + asnj.c(a()) + ", saltEnc=" + asnj.c(c()) + ", saltAuth=" + asnj.c(b()) + ", getPinUvAuthProtocol=" + this.h + "}";
+        return "HmacSecretExtension{coseKeyAgreement=" + aurd.c(a()) + ", saltEnc=" + aurd.c(c()) + ", saltAuth=" + aurd.c(b()) + ", getPinUvAuthProtocol=" + this.h + "}";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a2 = arxc.a(parcel);
-        arxc.i(parcel, 1, a(), false);
-        arxc.i(parcel, 2, c(), false);
-        arxc.i(parcel, 3, b(), false);
-        arxc.o(parcel, 4, this.h);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.i(parcel, 1, a(), false);
+        atzr.i(parcel, 2, c(), false);
+        atzr.i(parcel, 3, b(), false);
+        atzr.o(parcel, 4, this.h);
+        atzr.c(parcel, a2);
     }
 }

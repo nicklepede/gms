@@ -1,26 +1,26 @@
 package com.google.android.gms.fitness.service.wearable;
 
-import defpackage.arnv;
-import defpackage.bhaf;
-import defpackage.djjy;
-import defpackage.djjz;
-import defpackage.dkbc;
+import defpackage.atqk;
+import defpackage.bjev;
+import defpackage.dlvr;
+import defpackage.dlvs;
+import defpackage.dmmv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class WearableSyncConfigChimeraService extends dkbc {
+public class WearableSyncConfigChimeraService extends dmmv {
     static {
-        bhaf.a();
+        bjev.a();
     }
 
-    @Override // defpackage.dkbc, defpackage.djjw
-    public final void gl(djjz djjzVar) {
-        arnv arnvVar = new arnv(djjzVar);
-        while (arnvVar.hasNext()) {
-            djjy djjyVar = (djjy) arnvVar.next();
-            if (djjyVar.a() != 1) {
-                djjyVar.a();
-            } else if (djjyVar.b().a().getPath().equals("/fitness/WearableSync/sync_request")) {
+    @Override // defpackage.dmmv, defpackage.dlvp
+    public final void gA(dlvs dlvsVar) {
+        atqk atqkVar = new atqk(dlvsVar);
+        while (atqkVar.hasNext()) {
+            dlvr dlvrVar = (dlvr) atqkVar.next();
+            if (dlvrVar.a() != 1) {
+                dlvrVar.a();
+            } else if (dlvrVar.b().a().getPath().equals("/fitness/WearableSync/sync_request")) {
                 getApplicationContext();
             }
         }

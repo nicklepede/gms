@@ -15,39 +15,39 @@ import com.google.android.gms.people.consentprimitive.ContactsConsentPrimitiveCh
 import com.google.android.gms.people.consentprimitive.ContactsConsentPrimitiveViewModel$ConsentUiData;
 import com.google.android.gms.people.consentprimitive.ContactsConsentsResults;
 import com.google.android.gms.people.contactssync.model.GetBackupSyncSuggestionRequest;
-import defpackage.arxd;
-import defpackage.asnd;
-import defpackage.ctpt;
-import defpackage.ctrc;
-import defpackage.ctsu;
-import defpackage.ctsw;
-import defpackage.ctsx;
-import defpackage.ctsy;
-import defpackage.ctsz;
-import defpackage.cttf;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.eiuu;
-import defpackage.elkn;
-import defpackage.elkp;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.ensv;
-import defpackage.fqzf;
-import defpackage.jpd;
-import defpackage.jpz;
-import defpackage.jrh;
-import defpackage.qfp;
+import defpackage.atzs;
+import defpackage.auqx;
+import defpackage.cvyz;
+import defpackage.cwai;
+import defpackage.cwca;
+import defpackage.cwcc;
+import defpackage.cwcd;
+import defpackage.cwce;
+import defpackage.cwcf;
+import defpackage.cwcl;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.elhz;
+import defpackage.enya;
+import defpackage.enyc;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.eqgo;
+import defpackage.ftta;
+import defpackage.jvs;
+import defpackage.jwo;
+import defpackage.jxw;
+import defpackage.ryt;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class ContactsConsentPrimitiveChimeraActivity extends qfp {
-    public ctsy j;
+public class ContactsConsentPrimitiveChimeraActivity extends ryt {
+    public cwce j;
 
     public final void a() {
         TypedValue typedValue = new TypedValue();
@@ -55,13 +55,13 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
         findViewById(com.google.android.gms.R.id.root).setBackgroundColor(getColor(typedValue.resourceId));
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        enss i;
-        eiid j;
+        eqgl i;
+        ekvi j;
         GetBackupSyncSuggestionRequest getBackupSyncSuggestionRequest;
         super.onCreate(bundle);
-        if (!fqzf.d()) {
+        if (!ftta.d()) {
             finish();
             return;
         }
@@ -69,38 +69,38 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
         setContentView(com.google.android.gms.R.layout.consent_primitive_activity);
         GetBackupSyncSuggestionRequest getBackupSyncSuggestionRequest2 = new GetBackupSyncSuggestionRequest(8, 3);
         Intent intent = getIntent();
-        if (intent != null && (getBackupSyncSuggestionRequest = (GetBackupSyncSuggestionRequest) arxd.b(intent, "sheepdogRequest", GetBackupSyncSuggestionRequest.CREATOR)) != null) {
+        if (intent != null && (getBackupSyncSuggestionRequest = (GetBackupSyncSuggestionRequest) atzs.b(intent, "sheepdogRequest", GetBackupSyncSuggestionRequest.CREATOR)) != null) {
             getBackupSyncSuggestionRequest2 = getBackupSyncSuggestionRequest;
         }
-        ctsy ctsyVar = (ctsy) new jrh(this, new ctsz(this, this, getBackupSyncSuggestionRequest2)).a(ctsy.class);
-        this.j = ctsyVar;
-        int a = elkp.a(getIntent().getIntExtra("referrer", 0));
-        ctsyVar.i = a;
+        cwce cwceVar = (cwce) new jxw(this, new cwcf(this, this, getBackupSyncSuggestionRequest2)).a(cwce.class);
+        this.j = cwceVar;
+        int a = enyc.a(getIntent().getIntExtra("referrer", 0));
+        cwceVar.i = a;
         if (a == 0) {
-            ctsyVar.i = 1;
+            cwceVar.i = 1;
         }
-        ctsy ctsyVar2 = this.j;
-        ContactsConsentsStatus contactsConsentsStatus = (ContactsConsentsStatus) arxd.b(getIntent(), "status", new cttf());
-        jpz jpzVar = ctsyVar2.b;
-        if (!jpzVar.a.a.containsKey("ui-data")) {
+        cwce cwceVar2 = this.j;
+        ContactsConsentsStatus contactsConsentsStatus = (ContactsConsentsStatus) atzs.b(getIntent(), "status", new cwcl());
+        jwo jwoVar = cwceVar2.b;
+        if (!jwoVar.a.a.containsKey("ui-data")) {
             if (contactsConsentsStatus != null) {
                 ContactsConsentsConfig contactsConsentsConfig = contactsConsentsStatus.c;
                 Account account = contactsConsentsConfig.d;
                 if (account == null) {
-                    j = eigb.a;
+                    j = ektg.a;
                 } else {
                     List<Account> list = contactsConsentsConfig.h;
-                    ctpt i2 = ContactsConsentData.i();
+                    cvyz i2 = ContactsConsentData.i();
                     i2.d(list);
                     ContactsConsentsCoarseStatus contactsConsentsCoarseStatus = contactsConsentsStatus.a;
                     i2.e(contactsConsentsCoarseStatus.a);
                     i2.f(contactsConsentsCoarseStatus.b);
                     i2.c(contactsConsentsCoarseStatus.c);
-                    eiuu G = eiuu.G(contactsConsentsCoarseStatus.a());
+                    elhz G = elhz.G(contactsConsentsCoarseStatus.a());
                     if (i2.c != null) {
                         throw new IllegalStateException("Cannot set dcEligibleAndDisabledAccounts after calling dcEligibleAndDisabledAccountsBuilder()");
                     }
-                    i2.d = eiuu.G(G);
+                    i2.d = elhz.G(G);
                     i2.g(0);
                     ContactsConsentsDetailedStatus contactsConsentsDetailedStatus = contactsConsentsStatus.b;
                     if (contactsConsentsDetailedStatus != null) {
@@ -110,41 +110,41 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         }
                     }
                     ContactsConsentData a2 = i2.a();
-                    ctsw o = ContactsConsentPrimitiveViewModel$ConsentUiData.o();
+                    cwcc o = ContactsConsentPrimitiveViewModel$ConsentUiData.o();
                     o.a = account;
                     o.b(contactsConsentsConfig.i ? 1 : 0);
                     o.c(contactsConsentsConfig);
                     o.d(a2);
-                    o.e(elkn.CHOICES_PAGE);
+                    o.e(enya.CHOICES_PAGE);
                     o.f(true != a2.k(account) ? 0 : 3);
                     o.l(true != ((C$AutoValue_ContactsConsentData) a2).c ? 0 : 3);
                     o.i(ContactsConsentPrimitiveViewModel$ConsentUiData.p(a2, contactsConsentsConfig, account));
-                    j = eiid.j(o.a());
+                    j = ekvi.j(o.a());
                 }
                 if (j.h()) {
-                    jpzVar.a("ui-data").l(j.c());
+                    jwoVar.a("ui-data").l(j.c());
                 } else {
-                    ctsyVar2.f.hS(new ctsx(2, null));
+                    cwceVar2.f.ih(new cwcd(2, null));
                 }
-                i = ensj.i(contactsConsentsStatus.a.b());
+                i = eqgc.i(contactsConsentsStatus.a.b());
             } else {
-                Context context = ctsyVar2.g;
-                i = ensj.i(asnd.h(context, context.getPackageName()));
+                Context context = cwceVar2.g;
+                i = eqgc.i(auqx.h(context, context.getPackageName()));
             }
-            ensi h = ensi.h(i);
-            final ctrc ctrcVar = ctsyVar2.h;
-            Objects.requireNonNull(ctrcVar);
-            enqc enqcVar = new enqc() { // from class: ctsb
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
-                    return ctrc.this.a((List) obj);
+            eqgb h = eqgb.h(i);
+            final cwai cwaiVar = cwceVar2.h;
+            Objects.requireNonNull(cwaiVar);
+            eqdv eqdvVar = new eqdv() { // from class: cwbh
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
+                    return cwai.this.a((List) obj);
                 }
             };
-            ensv ensvVar = ctsyVar2.d;
-            ensj.t(enps.g(h, enqcVar, ensvVar), new ctsu(ctsyVar2, contactsConsentsStatus), ensvVar);
+            eqgo eqgoVar = cwceVar2.d;
+            eqgc.t(eqdl.g(h, eqdvVar, eqgoVar), new cwca(cwceVar2, contactsConsentsStatus), eqgoVar);
         }
-        this.j.a().g(this, new jpd() { // from class: ctpy
-            @Override // defpackage.jpd
+        this.j.a().g(this, new jvs() { // from class: cvze
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 ContactsConsentPrimitiveViewModel$ConsentUiData contactsConsentPrimitiveViewModel$ConsentUiData = (ContactsConsentPrimitiveViewModel$ConsentUiData) obj;
                 int ordinal = contactsConsentPrimitiveViewModel$ConsentUiData.k().ordinal();
@@ -154,7 +154,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         dg g = contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().g(com.google.android.gms.R.id.root);
                         if (g != null) {
                             bp bpVar = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar.n(g);
+                            bpVar.m(g);
                             bpVar.e();
                         }
                         contactsConsentPrimitiveChimeraActivity.setTheme(com.google.android.gms.R.style.ContactsPrimitiveActivityNoUiTheme);
@@ -162,7 +162,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         if (contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("choices-tag") == null) {
                             contactsConsentPrimitiveChimeraActivity.j.g();
                             bp bpVar2 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar2.v(new ctqd(), "choices-tag");
+                            bpVar2.v(new cvzj(), "choices-tag");
                             bpVar2.e();
                             break;
                         }
@@ -171,7 +171,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         dg h2 = contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("choices-tag");
                         if (h2 != null) {
                             bp bpVar3 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar3.n(h2);
+                            bpVar3.m(h2);
                             bpVar3.e();
                         }
                         contactsConsentPrimitiveChimeraActivity.setTheme(com.google.android.gms.R.style.ContactsPrimitiveActivityFullPageTheme);
@@ -179,7 +179,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         if (contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("rec-tag") == null) {
                             contactsConsentPrimitiveChimeraActivity.j.g();
                             bp bpVar4 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar4.z(com.google.android.gms.R.id.root, new ctro(), "rec-tag");
+                            bpVar4.z(com.google.android.gms.R.id.root, new cwau(), "rec-tag");
                             bpVar4.e();
                             break;
                         }
@@ -188,14 +188,14 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         dg h3 = contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("choices-tag");
                         if (h3 != null) {
                             bp bpVar5 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar5.n(h3);
+                            bpVar5.m(h3);
                             bpVar5.e();
                         }
                         contactsConsentPrimitiveChimeraActivity.setTheme(com.google.android.gms.R.style.ContactsPrimitiveActivityFullPageTheme);
                         if (contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("dc-tag") == null) {
                             contactsConsentPrimitiveChimeraActivity.j.g();
                             bp bpVar6 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar6.z(com.google.android.gms.R.id.root, new ctrg(), "dc-tag");
+                            bpVar6.z(com.google.android.gms.R.id.root, new cwam(), "dc-tag");
                             bpVar6.e();
                             contactsConsentPrimitiveChimeraActivity.a();
                             break;
@@ -205,7 +205,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         dg h4 = contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("choices-tag");
                         if (h4 != null) {
                             bp bpVar7 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar7.n(h4);
+                            bpVar7.m(h4);
                             bpVar7.e();
                         }
                         contactsConsentPrimitiveChimeraActivity.setTheme(com.google.android.gms.R.style.ContactsPrimitiveActivityFullPageTheme);
@@ -213,7 +213,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         if (contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("sheep-tag") == null) {
                             contactsConsentPrimitiveChimeraActivity.j.g();
                             bp bpVar8 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar8.z(com.google.android.gms.R.id.root, new ctrs(), "sheep-tag");
+                            bpVar8.z(com.google.android.gms.R.id.root, new cway(), "sheep-tag");
                             bpVar8.e();
                             break;
                         }
@@ -222,7 +222,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         dg h5 = contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("choices-tag");
                         if (h5 != null) {
                             bp bpVar9 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar9.n(h5);
+                            bpVar9.m(h5);
                             bpVar9.e();
                         }
                         contactsConsentPrimitiveChimeraActivity.setTheme(com.google.android.gms.R.style.ContactsPrimitiveActivityFullPageTheme);
@@ -230,7 +230,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         if (contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("sim-tag") == null) {
                             contactsConsentPrimitiveChimeraActivity.j.g();
                             bp bpVar10 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar10.z(com.google.android.gms.R.id.root, new ctrw(), "sim-tag");
+                            bpVar10.z(com.google.android.gms.R.id.root, new cwbc(), "sim-tag");
                             bpVar10.e();
                             break;
                         }
@@ -239,7 +239,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         dg h6 = contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("choices-tag");
                         if (h6 != null) {
                             bp bpVar11 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar11.n(h6);
+                            bpVar11.m(h6);
                             bpVar11.e();
                         }
                         contactsConsentPrimitiveChimeraActivity.setTheme(com.google.android.gms.R.style.ContactsPrimitiveActivityFullPageTheme);
@@ -247,7 +247,7 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         if (contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager().h("finish-tag") == null) {
                             contactsConsentPrimitiveChimeraActivity.j.g();
                             bp bpVar12 = new bp(contactsConsentPrimitiveChimeraActivity.getSupportFragmentManager());
-                            bpVar12.z(com.google.android.gms.R.id.root, new ctqg(), "finish-tag");
+                            bpVar12.z(com.google.android.gms.R.id.root, new cvzm(), "finish-tag");
                             bpVar12.e();
                             break;
                         }
@@ -270,30 +270,30 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         int c = contactsConsentPrimitiveViewModel$ConsentUiData.c();
                         textView2.setText(contactsConsentPrimitiveChimeraActivity.getResources().getQuantityString(com.google.android.gms.R.plurals.sim_leave_off_warning, c, Integer.valueOf(c)));
                         ip ipVar = new ip(contactsConsentPrimitiveChimeraActivity);
-                        ipVar.j(com.google.android.gms.R.string.confirm_dismiss_title);
+                        ipVar.l(com.google.android.gms.R.string.confirm_dismiss_title);
                         ipVar.c(false);
-                        ipVar.setPositiveButton(com.google.android.gms.R.string.confirm_dismiss_accept, new DialogInterface.OnClickListener() { // from class: ctpw
+                        ipVar.setPositiveButton(com.google.android.gms.R.string.confirm_dismiss_accept, new DialogInterface.OnClickListener() { // from class: cvzc
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i3) {
-                                final ctsy ctsyVar3 = ContactsConsentPrimitiveChimeraActivity.this.j;
-                                ctsyVar3.i(10, new asoq() { // from class: ctso
-                                    @Override // defpackage.asoq
+                                final cwce cwceVar3 = ContactsConsentPrimitiveChimeraActivity.this.j;
+                                cwceVar3.i(10, new ausk() { // from class: cwbu
+                                    @Override // defpackage.ausk
                                     public final Object a(Object obj2) {
-                                        ctsy.this.f.l(new ctsx(4, null));
+                                        cwce.this.f.l(new cwcd(4, null));
                                         return ((ContactsConsentPrimitiveViewModel$ConsentUiData) obj2).h();
                                     }
                                 });
                             }
                         });
-                        ipVar.setNegativeButton(com.google.android.gms.R.string.confirm_dismiss_change_settings, new DialogInterface.OnClickListener() { // from class: ctpx
+                        ipVar.setNegativeButton(com.google.android.gms.R.string.confirm_dismiss_change_settings, new DialogInterface.OnClickListener() { // from class: cvzd
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i3) {
-                                ContactsConsentPrimitiveChimeraActivity.this.j.i(18, new asoq() { // from class: ctsa
-                                    @Override // defpackage.asoq
+                                ContactsConsentPrimitiveChimeraActivity.this.j.i(18, new ausk() { // from class: cwbg
+                                    @Override // defpackage.ausk
                                     public final Object a(Object obj2) {
-                                        asot asotVar = ctsy.a;
-                                        ctsw h7 = ((ContactsConsentPrimitiveViewModel$ConsentUiData) obj2).h();
-                                        h7.e(elkn.CHOICES_PAGE);
+                                        ausn ausnVar = cwce.a;
+                                        cwcc h7 = ((ContactsConsentPrimitiveViewModel$ConsentUiData) obj2).h();
+                                        h7.e(enya.CHOICES_PAGE);
                                         return h7;
                                     }
                                 });
@@ -312,8 +312,8 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         ((TextView) inflate2.findViewById(com.google.android.gms.R.id.body_2)).setText(com.google.android.gms.R.string.dc_learn_more_body_2);
                         ((TextView) inflate2.findViewById(com.google.android.gms.R.id.body_3)).setText(com.google.android.gms.R.string.dc_learn_more_body_3);
                         ip ipVar2 = new ip(contactsConsentPrimitiveChimeraActivity);
-                        ipVar2.j(com.google.android.gms.R.string.dc_turn_on_header);
-                        ipVar2.setPositiveButton(com.google.android.gms.R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: ctpu
+                        ipVar2.l(com.google.android.gms.R.string.dc_turn_on_header);
+                        ipVar2.setPositiveButton(com.google.android.gms.R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: cvza
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i3) {
                                 ContactsConsentPrimitiveChimeraActivity.this.j.e();
@@ -332,8 +332,8 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         ((TextView) inflate3.findViewById(com.google.android.gms.R.id.body_2)).setText(com.google.android.gms.R.string.sheepdog_learn_more_body_2);
                         ((TextView) inflate3.findViewById(com.google.android.gms.R.id.body_3)).setText(com.google.android.gms.R.string.sheepdog_learn_more_body_3);
                         ip ipVar3 = new ip(contactsConsentPrimitiveChimeraActivity);
-                        ipVar3.j(com.google.android.gms.R.string.sheepdog_turn_on_header);
-                        ipVar3.setPositiveButton(com.google.android.gms.R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: ctpv
+                        ipVar3.l(com.google.android.gms.R.string.sheepdog_turn_on_header);
+                        ipVar3.setPositiveButton(com.google.android.gms.R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: cvzb
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i3) {
                                 ContactsConsentPrimitiveChimeraActivity.this.j.e();
@@ -352,8 +352,8 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                         ((TextView) inflate4.findViewById(com.google.android.gms.R.id.body_2)).setText(com.google.android.gms.R.string.sim_learn_more_body_2);
                         ((TextView) inflate4.findViewById(com.google.android.gms.R.id.body_3)).setText(com.google.android.gms.R.string.sim_learn_more_body_3);
                         ip ipVar4 = new ip(contactsConsentPrimitiveChimeraActivity);
-                        ipVar4.j(com.google.android.gms.R.string.sim_turn_on_header);
-                        ipVar4.setPositiveButton(com.google.android.gms.R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: ctqa
+                        ipVar4.l(com.google.android.gms.R.string.sim_turn_on_header);
+                        ipVar4.setPositiveButton(com.google.android.gms.R.string.common_got_it, new DialogInterface.OnClickListener() { // from class: cvzg
                             @Override // android.content.DialogInterface.OnClickListener
                             public final void onClick(DialogInterface dialogInterface, int i3) {
                                 ContactsConsentPrimitiveChimeraActivity.this.j.e();
@@ -365,16 +365,16 @@ public class ContactsConsentPrimitiveChimeraActivity extends qfp {
                 }
             }
         });
-        this.j.f.g(this, new jpd() { // from class: ctpz
-            @Override // defpackage.jpd
+        this.j.f.g(this, new jvs() { // from class: cvzf
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                ctsx ctsxVar = (ctsx) obj;
-                int i3 = ctsxVar.a;
-                ContactsConsentsResults contactsConsentsResults = ctsxVar.b;
+                cwcd cwcdVar = (cwcd) obj;
+                int i3 = cwcdVar.a;
+                ContactsConsentsResults contactsConsentsResults = cwcdVar.b;
                 ContactsConsentPrimitiveChimeraActivity contactsConsentPrimitiveChimeraActivity = ContactsConsentPrimitiveChimeraActivity.this;
                 if (contactsConsentsResults != null) {
                     Intent intent2 = new Intent();
-                    arxd.l(contactsConsentsResults, intent2, "consentsResult");
+                    atzs.l(contactsConsentsResults, intent2, "consentsResult");
                     contactsConsentPrimitiveChimeraActivity.setResult(i3, intent2);
                 } else {
                     contactsConsentPrimitiveChimeraActivity.setResult(i3);

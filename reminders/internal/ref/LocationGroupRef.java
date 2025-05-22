@@ -6,12 +6,12 @@ import com.google.android.gms.reminders.model.CategoryInfo;
 import com.google.android.gms.reminders.model.ChainInfo;
 import com.google.android.gms.reminders.model.LocationGroup;
 import com.google.android.gms.reminders.model.LocationGroupEntity;
-import defpackage.cxeb;
-import defpackage.cxem;
+import defpackage.cznx;
+import defpackage.czoi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class LocationGroupRef extends cxeb implements LocationGroup {
+public class LocationGroupRef extends cznx implements LocationGroup {
     private boolean f;
     private ChainInfoRef g;
     private boolean h;
@@ -72,7 +72,7 @@ public class LocationGroupRef extends cxeb implements LocationGroup {
         return r(p("location_query"));
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof LocationGroup)) {
             return false;
@@ -83,18 +83,18 @@ public class LocationGroupRef extends cxeb implements LocationGroup {
         return LocationGroupEntity.f(this, (LocationGroup) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return LocationGroupEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new LocationGroupEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxem.a(new LocationGroupEntity(this), parcel, i);
+        czoi.a(new LocationGroupEntity(this), parcel, i);
     }
 }

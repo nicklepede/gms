@@ -5,15 +5,15 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.dheu;
-import defpackage.ejhf;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.djqa;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class StateWatcher extends TracingBroadcastReceiver {
-    private static final asot c = asot.b("StateWatcher", asej.OTA);
+    private static final ausn c = ausn.b("StateWatcher", auid.OTA);
     public final Context a;
     public int b;
     private final Runnable d;
@@ -33,7 +33,7 @@ public class StateWatcher extends TracingBroadcastReceiver {
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         int i;
         boolean z;
         String action = intent.getAction();
@@ -44,12 +44,12 @@ public class StateWatcher extends TracingBroadcastReceiver {
             this.g = intent.getIntExtra("plugged", 0) != 0;
         }
         if (this.g) {
-            if (this.f < dheu.f().intValue()) {
+            if (this.f < djqa.f().intValue()) {
                 i = 1;
             }
             i = 0;
         } else {
-            if (this.f < dheu.e().intValue()) {
+            if (this.f < djqa.e().intValue()) {
                 i = 2;
             }
             i = 0;
@@ -64,7 +64,7 @@ public class StateWatcher extends TracingBroadcastReceiver {
             boolean z4 = this.e;
             ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService("connectivity");
             if (connectivityManager == null) {
-                ((ejhf) ((ejhf) c.j()).ah((char) 11980)).x("couldn't get connectivity manager");
+                ((eluo) ((eluo) c.j()).ai((char) 11983)).x("couldn't get connectivity manager");
                 z3 = z4;
             } else {
                 NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();

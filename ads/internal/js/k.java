@@ -6,15 +6,15 @@ import android.os.Looper;
 import android.os.StrictMode;
 import android.view.View;
 import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
-import defpackage.asqi;
-import defpackage.eijr;
+import defpackage.auuc;
+import defpackage.ekww;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class k implements c, ai {
     public final com.google.android.gms.ads.internal.webview.i a;
@@ -26,9 +26,9 @@ public final class k implements c, ai {
         final com.google.android.gms.ads.internal.clearcut.b bVar = new com.google.android.gms.ads.internal.clearcut.b();
         com.google.android.gms.ads.internal.config.p.c(context);
         try {
-            eijr eijrVar = new eijr() { // from class: com.google.android.gms.ads.internal.webview.o
-                @Override // defpackage.eijr
-                public final Object a() {
+            ekww ekwwVar = new ekww() { // from class: com.google.android.gms.ads.internal.webview.o
+                @Override // defpackage.ekww
+                public final Object lK() {
                     af afVar2 = afVar;
                     VersionInfoParcel versionInfoParcel2 = versionInfoParcel;
                     Context context2 = context;
@@ -50,9 +50,9 @@ public final class k implements c, ai {
             StrictMode.ThreadPolicy threadPolicy = StrictMode.getThreadPolicy();
             try {
                 StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder(threadPolicy).permitDiskReads().permitDiskWrites().build());
-                ?? a = eijrVar.a();
-                this.a = a;
-                ((View) a).setWillNotDraw(true);
+                ?? lK = ekwwVar.lK();
+                this.a = lK;
+                ((View) lK).setWillNotDraw(true);
             } finally {
                 StrictMode.setThreadPolicy(threadPolicy);
             }
@@ -86,7 +86,7 @@ public final class k implements c, ai {
     public final void d() {
         com.google.android.gms.ads.internal.webview.i iVar = ((com.google.android.gms.ads.internal.webview.r) this.a).a;
         iVar.p();
-        if (((Boolean) com.google.android.gms.ads.internal.config.p.aD.g()).booleanValue()) {
+        if (((Boolean) com.google.android.gms.ads.internal.config.p.aE.g()).booleanValue()) {
             iVar.o();
         }
         iVar.destroy();
@@ -113,20 +113,10 @@ public final class k implements c, ai {
         }
     }
 
-    @Override // com.google.android.gms.ads.internal.js.c, com.google.android.gms.ads.internal.js.l
-    public final void fW(final String str) {
-        h(new Runnable() { // from class: com.google.android.gms.ads.internal.js.g
-            @Override // java.lang.Runnable
-            public final void run() {
-                ((com.google.android.gms.ads.internal.webview.x) ((com.google.android.gms.ads.internal.webview.r) k.this.a).a).u(str);
-            }
-        });
-    }
-
     @Override // com.google.android.gms.ads.internal.js.ai
     public final void g(String str, final com.google.android.gms.ads.internal.gmsg.e eVar) {
-        asqi asqiVar = new asqi() { // from class: com.google.android.gms.ads.internal.js.d
-            @Override // defpackage.asqi
+        auuc auucVar = new auuc() { // from class: com.google.android.gms.ads.internal.js.d
+            @Override // defpackage.auuc
             public final boolean a(Object obj) {
                 com.google.android.gms.ads.internal.gmsg.e eVar2 = (com.google.android.gms.ads.internal.gmsg.e) obj;
                 if (eVar2 instanceof j) {
@@ -144,12 +134,22 @@ public final class k implements c, ai {
                 }
                 ArrayList arrayList = new ArrayList();
                 for (com.google.android.gms.ads.internal.gmsg.e eVar2 : list) {
-                    if (asqiVar.a(eVar2)) {
+                    if (auucVar.a(eVar2)) {
                         arrayList.add(eVar2);
                     }
                 }
                 list.removeAll(arrayList);
             }
         }
+    }
+
+    @Override // com.google.android.gms.ads.internal.js.c, com.google.android.gms.ads.internal.js.l
+    public final void gl(final String str) {
+        h(new Runnable() { // from class: com.google.android.gms.ads.internal.js.g
+            @Override // java.lang.Runnable
+            public final void run() {
+                ((com.google.android.gms.ads.internal.webview.x) ((com.google.android.gms.ads.internal.webview.r) k.this.a).a).u(str);
+            }
+        });
     }
 }

@@ -9,108 +9,108 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.credential.manager.promocards.PromoCardFragment;
-import defpackage.abv;
-import defpackage.acm;
-import defpackage.auxz;
-import defpackage.avil;
-import defpackage.avnd;
-import defpackage.awcr;
-import defpackage.awcu;
-import defpackage.awcv;
-import defpackage.awcw;
-import defpackage.awcx;
-import defpackage.awcy;
-import defpackage.awcz;
-import defpackage.awda;
-import defpackage.awdb;
-import defpackage.awdc;
-import defpackage.awdd;
-import defpackage.awde;
-import defpackage.awdo;
-import defpackage.awfi;
-import defpackage.byzy;
-import defpackage.bzbc;
-import defpackage.bzbd;
-import defpackage.bzbs;
-import defpackage.bzbt;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fuuw;
-import defpackage.fuux;
-import defpackage.fuuy;
-import defpackage.fvbi;
-import defpackage.fvbo;
-import defpackage.fvcc;
-import defpackage.jqx;
+import defpackage.aca;
+import defpackage.acr;
+import defpackage.axby;
+import defpackage.axmk;
+import defpackage.axrd;
+import defpackage.aygr;
+import defpackage.aygu;
+import defpackage.aygv;
+import defpackage.aygw;
+import defpackage.aygx;
+import defpackage.aygy;
+import defpackage.aygz;
+import defpackage.ayha;
+import defpackage.ayhb;
+import defpackage.ayhc;
+import defpackage.ayhd;
+import defpackage.ayhe;
+import defpackage.ayho;
+import defpackage.ayji;
+import defpackage.cbip;
+import defpackage.cbjt;
+import defpackage.cbju;
+import defpackage.cbkj;
+import defpackage.cbkk;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fxqu;
+import defpackage.fxqv;
+import defpackage.fxqw;
+import defpackage.fxxg;
+import defpackage.fxxm;
+import defpackage.fxya;
+import defpackage.jxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public final class PromoCardFragment extends awcr {
-    public auxz a;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public final class PromoCardFragment extends aygr {
+    public axby a;
     public Button ag;
     public AppCompatImageView ah;
-    public abv ai;
-    public byzy aj;
-    public byzy ak;
-    private final fuuw al;
+    public aca ai;
+    public cbip aj;
+    public cbip ak;
+    private final fxqu al;
     private View am;
-    public avnd b;
+    public axrd b;
     public TextView c;
     public Button d;
 
     public PromoCardFragment() {
-        fuuw a = fuux.a(fuuy.c, new awdb(new awda(this)));
-        int i = fvcc.a;
-        this.al = new jqx(new fvbi(awdo.class), new awdc(a), new awde(this, a), new awdd(a));
+        fxqu a = fxqv.a(fxqw.c, new ayhb(new ayha(this)));
+        int i = fxya.a;
+        this.al = new jxm(new fxxg(ayho.class), new ayhc(a), new ayhe(this, a), new ayhd(a));
     }
 
-    public final awdo A() {
-        return (awdo) this.al.a();
+    public final ayho A() {
+        return (ayho) this.al.a();
     }
 
-    public final void B(awfi awfiVar) {
-        bzbt a = bzbs.a(bzbd.a.v());
-        fecj v = bzbc.a.v();
-        fvbo.f(v, "builder");
-        fvbo.f(awfiVar, "value");
+    public final void B(ayji ayjiVar) {
+        cbkk a = cbkj.a(cbju.a.v());
+        fgrc v = cbjt.a.v();
+        fxxm.f(v, "builder");
+        fxxm.f(ayjiVar, "value");
         if (!v.b.L()) {
             v.U();
         }
-        bzbc bzbcVar = (bzbc) v.b;
-        bzbcVar.c = awfiVar.f;
-        bzbcVar.b |= 1;
-        fecp Q = v.Q();
-        fvbo.e(Q, "build(...)");
-        bzbc bzbcVar2 = (bzbc) Q;
-        fvbo.f(bzbcVar2, "value");
-        fecj fecjVar = a.a;
-        if (!fecjVar.b.L()) {
-            fecjVar.U();
+        cbjt cbjtVar = (cbjt) v.b;
+        cbjtVar.c = ayjiVar.f;
+        cbjtVar.b |= 1;
+        fgri Q = v.Q();
+        fxxm.e(Q, "build(...)");
+        cbjt cbjtVar2 = (cbjt) Q;
+        fxxm.f(cbjtVar2, "value");
+        fgrc fgrcVar = a.a;
+        if (!fgrcVar.b.L()) {
+            fgrcVar.U();
         }
-        bzbd bzbdVar = (bzbd) fecjVar.b;
-        bzbcVar2.getClass();
-        bzbdVar.e = bzbcVar2;
-        bzbdVar.b |= 8;
-        bzbd a2 = a.a();
-        auxz z = z();
+        cbju cbjuVar = (cbju) fgrcVar.b;
+        cbjtVar2.getClass();
+        cbjuVar.e = cbjtVar2;
+        cbjuVar.b |= 8;
+        cbju a2 = a.a();
+        axby z = z();
         View view = this.am;
         Button button = null;
         if (view == null) {
-            fvbo.j("rootPromoCardView");
+            fxxm.j("rootPromoCardView");
             view = null;
         }
         z.a(view, 201217, a2);
-        auxz z2 = z();
+        axby z2 = z();
         Button button2 = this.d;
         if (button2 == null) {
-            fvbo.j("primaryButton");
+            fxxm.j("primaryButton");
             button2 = null;
         }
         this.ak = z2.a(button2, 201674, a2);
-        auxz z3 = z();
+        axby z3 = z();
         Button button3 = this.ag;
         if (button3 == null) {
-            fvbo.j("secondaryButton");
+            fxxm.j("secondaryButton");
         } else {
             button = button3;
         }
@@ -121,25 +121,25 @@ public final class PromoCardFragment extends awcr {
         TextView textView = this.c;
         Button button = null;
         if (textView == null) {
-            fvbo.j("descriptionTextView");
+            fxxm.j("descriptionTextView");
             textView = null;
         }
         textView.setText(i2);
         AppCompatImageView appCompatImageView = this.ah;
         if (appCompatImageView == null) {
-            fvbo.j("iconImageView");
+            fxxm.j("iconImageView");
             appCompatImageView = null;
         }
         appCompatImageView.setImageResource(i);
         Button button2 = this.d;
         if (button2 == null) {
-            fvbo.j("primaryButton");
+            fxxm.j("primaryButton");
             button2 = null;
         }
         button2.setText(i3);
         Button button3 = this.ag;
         if (button3 == null) {
-            fvbo.j("secondaryButton");
+            fxxm.j("secondaryButton");
         } else {
             button = button3;
         }
@@ -148,11 +148,11 @@ public final class PromoCardFragment extends awcr {
 
     @Override // defpackage.dg
     public final View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        fvbo.f(layoutInflater, "inflater");
+        fxxm.f(layoutInflater, "inflater");
         View inflate = layoutInflater.inflate(R.layout.pwm_promo_card, viewGroup, false);
         this.am = inflate;
         if (inflate == null) {
-            fvbo.j("rootPromoCardView");
+            fxxm.j("rootPromoCardView");
             inflate = null;
         }
         this.c = (TextView) inflate.findViewById(R.id.promo_card_text_body);
@@ -160,63 +160,63 @@ public final class PromoCardFragment extends awcr {
         Button button = (Button) inflate.findViewById(R.id.promo_card_primary_button);
         this.d = button;
         if (button == null) {
-            fvbo.j("primaryButton");
+            fxxm.j("primaryButton");
             button = null;
         }
-        button.setOnClickListener(new View.OnClickListener() { // from class: awcs
+        button.setOnClickListener(new View.OnClickListener() { // from class: aygs
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 PromoCardFragment promoCardFragment = PromoCardFragment.this;
-                awdo A = promoCardFragment.A();
-                fvgt.b(jqw.a(A), null, null, new awdl(A, null), 3);
-                byzy byzyVar = promoCardFragment.ak;
-                if (byzyVar != null) {
-                    byzyVar.a(enla.TAP);
+                ayho A = promoCardFragment.A();
+                fycr.b(jxl.a(A), null, null, new ayhl(A, null), 3);
+                cbip cbipVar = promoCardFragment.ak;
+                if (cbipVar != null) {
+                    cbipVar.a(epyr.TAP);
                 }
             }
         });
         Button button2 = (Button) inflate.findViewById(R.id.promo_card_secondary_button);
         this.ag = button2;
         if (button2 == null) {
-            fvbo.j("secondaryButton");
+            fxxm.j("secondaryButton");
             button2 = null;
         }
-        button2.setOnClickListener(new View.OnClickListener() { // from class: awct
+        button2.setOnClickListener(new View.OnClickListener() { // from class: aygt
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 PromoCardFragment promoCardFragment = PromoCardFragment.this;
-                awdo A = promoCardFragment.A();
-                fvgt.b(jqw.a(A), null, null, new awdm(A, null), 3);
-                byzy byzyVar = promoCardFragment.aj;
-                if (byzyVar != null) {
-                    byzyVar.a(enla.TAP);
+                ayho A = promoCardFragment.A();
+                fycr.b(jxl.a(A), null, null, new ayhm(A, null), 3);
+                cbip cbipVar = promoCardFragment.aj;
+                if (cbipVar != null) {
+                    cbipVar.a(epyr.TAP);
                 }
             }
         });
         View view = this.am;
         if (view == null) {
-            fvbo.j("rootPromoCardView");
+            fxxm.j("rootPromoCardView");
             view = null;
         }
-        avil.a(A().e).g(getViewLifecycleOwner(), new awcu(new awcv(view)));
-        A().g.g(getViewLifecycleOwner(), new awcu(new awcw(this)));
-        this.ai = registerForActivityResult(new acm(), new awcx(this));
-        A().h.g(getViewLifecycleOwner(), new awcu(new awcy(this)));
-        A().j.g(getViewLifecycleOwner(), new awcu(new awcz(this)));
+        axmk.a(A().e).g(getViewLifecycleOwner(), new aygu(new aygv(view)));
+        A().g.g(getViewLifecycleOwner(), new aygu(new aygw(this)));
+        this.ai = registerForActivityResult(new acr(), new aygx(this));
+        A().h.g(getViewLifecycleOwner(), new aygu(new aygy(this)));
+        A().j.g(getViewLifecycleOwner(), new aygu(new aygz(this)));
         View view2 = this.am;
         if (view2 != null) {
             return view2;
         }
-        fvbo.j("rootPromoCardView");
+        fxxm.j("rootPromoCardView");
         return null;
     }
 
-    public final auxz z() {
-        auxz auxzVar = this.a;
-        if (auxzVar != null) {
-            return auxzVar;
+    public final axby z() {
+        axby axbyVar = this.a;
+        if (axbyVar != null) {
+            return axbyVar;
         }
-        fvbo.j("visualElementViewBinder");
+        fxxm.j("visualElementViewBinder");
         return null;
     }
 }

@@ -5,21 +5,21 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cmxi;
-import defpackage.cmxk;
-import defpackage.cncl;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cpfq;
+import defpackage.cpfs;
+import defpackage.cpkt;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class UnregisterStateObserverParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cncl();
-    public cmxk a;
-    public arbp b;
+    public static final Parcelable.Creator CREATOR = new cpkt();
+    public cpfs a;
+    public atee b;
 
     public UnregisterStateObserverParams() {
     }
@@ -30,7 +30,7 @@ public final class UnregisterStateObserverParams extends AbstractSafeParcelable 
         }
         if (obj instanceof UnregisterStateObserverParams) {
             UnregisterStateObserverParams unregisterStateObserverParams = (UnregisterStateObserverParams) obj;
-            if (arwb.b(this.a, unregisterStateObserverParams.a) && arwb.b(this.b, unregisterStateObserverParams.b)) {
+            if (atyq.b(this.a, unregisterStateObserverParams.a) && atyq.b(this.b, unregisterStateObserverParams.b)) {
                 return true;
             }
         }
@@ -43,26 +43,26 @@ public final class UnregisterStateObserverParams extends AbstractSafeParcelable 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.asBinder());
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.asBinder());
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.c(parcel, a);
     }
 
     public UnregisterStateObserverParams(IBinder iBinder, IBinder iBinder2) {
-        cmxk cmxiVar;
-        arbp arbpVar = null;
+        cpfs cpfqVar;
+        atee ateeVar = null;
         if (iBinder == null) {
-            cmxiVar = null;
+            cpfqVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.sharing.internal.IStateUpdateCallback");
-            cmxiVar = queryLocalInterface instanceof cmxk ? (cmxk) queryLocalInterface : new cmxi(iBinder);
+            cpfqVar = queryLocalInterface instanceof cpfs ? (cpfs) queryLocalInterface : new cpfq(iBinder);
         }
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbpVar = queryLocalInterface2 instanceof arbp ? (arbp) queryLocalInterface2 : new arbn(iBinder2);
+            ateeVar = queryLocalInterface2 instanceof atee ? (atee) queryLocalInterface2 : new atec(iBinder2);
         }
-        this.a = cmxiVar;
-        this.b = arbpVar;
+        this.a = cpfqVar;
+        this.b = ateeVar;
     }
 }

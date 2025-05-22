@@ -13,11 +13,11 @@ import android.widget.FrameLayout;
 import android.widget.Spinner;
 import com.google.android.gms.R;
 import com.google.android.gms.wallet.ow.RootChimeraActivity;
-import defpackage.arwb;
-import defpackage.dilm;
-import defpackage.diln;
+import defpackage.atyq;
+import defpackage.dkwx;
+import defpackage.dkwy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class AccountSelector extends FrameLayout implements AdapterView.OnItemSelectedListener {
     public Account a;
@@ -37,7 +37,7 @@ public class AccountSelector extends FrameLayout implements AdapterView.OnItemSe
     }
 
     public final void a(Account account) {
-        if (arwb.b(this.a, account)) {
+        if (atyq.b(this.a, account)) {
             return;
         }
         this.a = account;
@@ -49,18 +49,18 @@ public class AccountSelector extends FrameLayout implements AdapterView.OnItemSe
     }
 
     public final void b() {
-        diln dilnVar;
+        dkwy dkwyVar;
         if (this.a == null || !c()) {
             return;
         }
         Spinner spinner = this.b;
         Account account = this.a;
         int i = -1;
-        if (c() && (dilnVar = (diln) this.b.getAdapter()) != null) {
+        if (c() && (dkwyVar = (dkwy) this.b.getAdapter()) != null) {
             int i2 = 0;
             while (true) {
-                if (i2 < dilnVar.getCount()) {
-                    if (arwb.b(((dilm) dilnVar.getItem(i2)).a, account)) {
+                if (i2 < dkwyVar.getCount()) {
+                    if (atyq.b(((dkwx) dkwyVar.getItem(i2)).a, account)) {
                         i = i2;
                         break;
                     }
@@ -79,11 +79,11 @@ public class AccountSelector extends FrameLayout implements AdapterView.OnItemSe
 
     @Override // android.widget.AdapterView.OnItemSelectedListener
     public final void onItemSelected(AdapterView adapterView, View view, int i, long j) {
-        dilm dilmVar;
-        if (view == null || (dilmVar = (dilm) view.getTag()) == null) {
+        dkwx dkwxVar;
+        if (view == null || (dkwxVar = (dkwx) view.getTag()) == null) {
             return;
         }
-        a(dilmVar.a);
+        a(dkwxVar.a);
     }
 
     @Override // android.view.View

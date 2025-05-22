@@ -8,24 +8,24 @@ import android.view.ViewGroup;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.uiflows.minutemaid.GlifMinuteMaidLayout;
 import com.google.android.setupdesign.GlifLayout;
-import defpackage.aanf;
-import defpackage.asoe;
-import defpackage.asqy;
-import defpackage.edfq;
-import defpackage.edfr;
-import defpackage.edfs;
-import defpackage.edid;
-import defpackage.fkkk;
+import defpackage.acnf;
+import defpackage.aury;
+import defpackage.auus;
+import defpackage.efsl;
+import defpackage.efsm;
+import defpackage.efsn;
+import defpackage.efuy;
+import defpackage.fnaz;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class GlifMinuteMaidLayout extends GlifLayout {
     public static final /* synthetic */ int f = 0;
     public Context a;
-    public edid b;
-    public edfq c;
-    public edfs d;
-    public edfs e;
+    public efuy b;
+    public efsl c;
+    public efsn d;
+    public efsn e;
 
     public GlifMinuteMaidLayout(Context context) {
         this(context, null);
@@ -38,34 +38,34 @@ public class GlifMinuteMaidLayout extends GlifLayout {
     }
 
     public final void a(boolean z) {
-        edfs edfsVar = this.d;
-        if (edfsVar != null) {
-            edfsVar.c(z);
+        efsn efsnVar = this.d;
+        if (efsnVar != null) {
+            efsnVar.c(z);
         }
     }
 
-    public final void c(String str, int i, final aanf aanfVar) {
+    public final void c(String str, int i, final acnf acnfVar) {
         if (TextUtils.isEmpty(str)) {
-            edfs edfsVar = this.d;
-            if (edfsVar != null) {
-                edfsVar.f(8);
+            efsn efsnVar = this.d;
+            if (efsnVar != null) {
+                efsnVar.f(8);
                 return;
             }
             return;
         }
-        edfr edfrVar = new edfr(this.a);
-        edfrVar.c = i;
-        edfrVar.d = R.style.SudGlifButton_Primary;
-        edfrVar.a = str;
-        edfs a = edfrVar.a();
+        efsm efsmVar = new efsm(this.a);
+        efsmVar.c = i;
+        efsmVar.d = R.style.SudGlifButton_Primary;
+        efsmVar.a = str;
+        efsn a = efsmVar.a();
         this.d = a;
         a.f(0);
         this.c.b(this.d);
-        this.d.f = new View.OnClickListener() { // from class: admn
+        this.d.f = new View.OnClickListener() { // from class: afmu
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 int i2 = GlifMinuteMaidLayout.f;
-                aanf.this.d();
+                acnf.this.d();
             }
         };
     }
@@ -78,19 +78,19 @@ public class GlifMinuteMaidLayout extends GlifLayout {
         super(context, attributeSet, i);
         View o;
         this.a = context;
-        this.b = (edid) q(edid.class);
-        this.c = (edfq) q(edfq.class);
-        if (fkkk.a.a().a() && asqy.a(context)) {
+        this.b = (efuy) q(efuy.class);
+        this.c = (efsl) q(efsl.class);
+        if (fnaz.a.lK().a() && auus.a(context)) {
             this.c.n(false);
         } else {
             this.c.n(true);
         }
         J(false);
-        if (gK() && (asoe.m(this.a) || asoe.j(this.a))) {
+        if (ha() && (aury.m(this.a) || aury.j(this.a))) {
             d(o(R.id.sud_layout_content));
         }
         d(o(R.id.sud_landscape_content_area));
-        if (gK() && (o = o(R.id.sud_layout_content)) != null && (o.getLayoutParams() instanceof ViewGroup.MarginLayoutParams)) {
+        if (ha() && (o = o(R.id.sud_layout_content)) != null && (o.getLayoutParams() instanceof ViewGroup.MarginLayoutParams)) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) o.getLayoutParams();
             marginLayoutParams.setMargins(0, marginLayoutParams.topMargin, 0, marginLayoutParams.bottomMargin);
         }

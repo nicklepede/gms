@@ -2,13 +2,13 @@ package com.google.android.gms.wallet.analytics.events;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.difn;
-import defpackage.diks;
+import defpackage.dkqy;
+import defpackage.dkwd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class DocumentUploadActivityClosedEvent extends AnalyticsSessionStartEndEvent {
-    public static final Parcelable.Creator CREATOR = new difn();
+    public static final Parcelable.Creator CREATOR = new dkqy();
     public final int c;
 
     public DocumentUploadActivityClosedEvent(int i, String str) {
@@ -29,6 +29,6 @@ public class DocumentUploadActivityClosedEvent extends AnalyticsSessionStartEndE
 
     public DocumentUploadActivityClosedEvent(Parcel parcel) {
         super(parcel);
-        this.c = diks.a(parcel.readInt());
+        this.c = dkwd.a(parcel.readInt());
     }
 }

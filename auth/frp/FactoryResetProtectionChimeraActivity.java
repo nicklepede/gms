@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import com.google.android.gms.auth.login.BrowserChimeraActivity;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
-import defpackage.arwm;
-import defpackage.arxo;
-import defpackage.qfn;
+import defpackage.atzb;
+import defpackage.auad;
+import defpackage.ryr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class FactoryResetProtectionChimeraActivity extends qfn {
-    private static final arxo h = new arxo("GLSActivity", "FactoryResetProtectionActivity");
+public class FactoryResetProtectionChimeraActivity extends ryr {
+    private static final auad h = new auad("GLSActivity", "FactoryResetProtectionActivity");
     private static final String i = "url";
     private String j;
 
@@ -36,7 +36,7 @@ public class FactoryResetProtectionChimeraActivity extends qfn {
         startActivityForResult(className, 101);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onActivityResult(int i2, int i3, Intent intent) {
         super.onActivityResult(i2, i3, intent);
         if (i3 == 0) {
@@ -61,7 +61,7 @@ public class FactoryResetProtectionChimeraActivity extends qfn {
             return;
         }
         Bundle extras = intent.getExtras();
-        arwm.s(extras);
+        atzb.s(extras);
         String string = extras.getString("obfuscated_gaia_id");
         String string2 = extras.getString("authorization_code");
         if (string != null) {
@@ -76,7 +76,7 @@ public class FactoryResetProtectionChimeraActivity extends qfn {
         a();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (bundle == null) {
@@ -87,7 +87,7 @@ public class FactoryResetProtectionChimeraActivity extends qfn {
         a();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putString(i, this.j);

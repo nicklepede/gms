@@ -5,9 +5,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.preference.Preference;
-import defpackage.kmp;
+import defpackage.mfa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class RestoreAnytimePreference extends Preference {
     public final boolean a;
@@ -40,12 +40,12 @@ public class RestoreAnytimePreference extends Preference {
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
         boolean z = false;
         if (Z() && this.a) {
             z = true;
         }
-        k(kmpVar.a, z, true);
+        k(mfaVar.a, z, true);
     }
 }

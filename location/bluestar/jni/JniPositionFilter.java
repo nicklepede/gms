@@ -1,24 +1,24 @@
 package com.google.android.gms.location.bluestar.jni;
 
-import defpackage.bzkl;
-import defpackage.eiig;
-import defpackage.ewss;
-import defpackage.ewtu;
-import defpackage.ewua;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
+import defpackage.cbtc;
+import defpackage.ekvl;
+import defpackage.ezhe;
+import defpackage.ezig;
+import defpackage.ezim;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class JniPositionFilter {
     public final long a;
     private final JniBlueStarLogger b;
 
-    public JniPositionFilter(ewss ewssVar, bzkl bzklVar) {
-        JniBlueStarLogger jniBlueStarLogger = new JniBlueStarLogger(bzklVar);
+    public JniPositionFilter(ezhe ezheVar, cbtc cbtcVar) {
+        JniBlueStarLogger jniBlueStarLogger = new JniBlueStarLogger(cbtcVar);
         this.b = jniBlueStarLogger;
-        this.a = newPositionFilterNative(2, ewssVar.r(), jniBlueStarLogger.a);
+        this.a = newPositionFilterNative(2, ezheVar.r(), jniBlueStarLogger.a);
     }
 
     private native void deletePositionFilterNative(long j);
@@ -31,16 +31,16 @@ public final class JniPositionFilter {
 
     private native void predictToNative(long j, long j2);
 
-    public final ewtu a() {
+    public final ezig a() {
         byte[] positionNative = getPositionNative(this.a);
         if (positionNative == null) {
-            return ewtu.a;
+            return ezig.a;
         }
         try {
-            fecp y = fecp.y(ewtu.a, positionNative, 0, positionNative.length, febw.a());
-            fecp.M(y);
-            return (ewtu) y;
-        } catch (fedk e) {
+            fgri y = fgri.y(ezig.a, positionNative, 0, positionNative.length, fgqp.a());
+            fgri.M(y);
+            return (ezig) y;
+        } catch (fgsd e) {
             throw new IllegalStateException("Unable to decode position proto", e);
         }
     }
@@ -53,11 +53,11 @@ public final class JniPositionFilter {
 
     public native void applyGyroNative(long j, long j2, float f, float f2, float f3);
 
-    public final ewua b() {
+    public final ezim b() {
         int sensorRequestNative = getSensorRequestNative(this.a);
-        ewua ewuaVar = sensorRequestNative != 0 ? sensorRequestNative != 1 ? null : ewua.SENSOR_GNSS : ewua.SENSOR_GNSS_AND_INERTIAL;
-        eiig.y(ewuaVar, "Unknown sensor request");
-        return ewuaVar;
+        ezim ezimVar = sensorRequestNative != 0 ? sensorRequestNative != 1 ? null : ezim.SENSOR_GNSS : ezim.SENSOR_GNSS_AND_INERTIAL;
+        ekvl.z(ezimVar, "Unknown sensor request");
+        return ezimVar;
     }
 
     public final void c(long j) {

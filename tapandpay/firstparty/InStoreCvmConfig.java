@@ -3,16 +3,16 @@ package com.google.android.gms.tapandpay.firstparty;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.dexk;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.dhio;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class InStoreCvmConfig extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dexk();
+    public static final Parcelable.Creator CREATOR = new dhio();
     final boolean a;
     final int b;
     final int c;
@@ -43,22 +43,22 @@ public class InStoreCvmConfig extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("requireCdcvmPassing", Boolean.valueOf(this.a), arrayList);
-        arwa.b("cdcvmExpirationInSecs", Integer.valueOf(this.b), arrayList);
-        arwa.b("unlockedTapLimit", Integer.valueOf(this.c), arrayList);
-        arwa.b("cdcvmTapLimit", Integer.valueOf(this.d), arrayList);
-        arwa.b("prioritizeOnlinePinOverCdcvm", Boolean.valueOf(this.e), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("requireCdcvmPassing", Boolean.valueOf(this.a), arrayList);
+        atyp.b("cdcvmExpirationInSecs", Integer.valueOf(this.b), arrayList);
+        atyp.b("unlockedTapLimit", Integer.valueOf(this.c), arrayList);
+        atyp.b("cdcvmTapLimit", Integer.valueOf(this.d), arrayList);
+        atyp.b("prioritizeOnlinePinOverCdcvm", Boolean.valueOf(this.e), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 2, this.a);
-        arxc.o(parcel, 3, this.b);
-        arxc.o(parcel, 4, this.c);
-        arxc.o(parcel, 5, this.d);
-        arxc.e(parcel, 6, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 2, this.a);
+        atzr.o(parcel, 3, this.b);
+        atzr.o(parcel, 4, this.c);
+        atzr.o(parcel, 5, this.d);
+        atzr.e(parcel, 6, this.e);
+        atzr.c(parcel, a);
     }
 }

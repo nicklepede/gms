@@ -2,24 +2,24 @@ package com.google.android.gms.autofill.service.common;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.afwe;
-import defpackage.afwg;
-import defpackage.afwh;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.eitj;
+import defpackage.ahwt;
+import defpackage.ahwv;
+import defpackage.ahww;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.elgo;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class DetectionHistory extends afwe implements Parcelable {
+public final class DetectionHistory extends ahwt implements Parcelable {
     private final List d;
-    public static final asot b = asot.b("DetectionHistory", asej.AUTOFILL);
-    public static final Parcelable.Creator CREATOR = new afwg();
-    public static final Parcelable.Creator c = new afwh();
+    public static final ausn b = ausn.b("DetectionHistory", auid.AUTOFILL);
+    public static final Parcelable.Creator CREATOR = new ahwv();
+    public static final Parcelable.Creator c = new ahww();
 
     public DetectionHistory() {
         this.d = new ArrayList();
@@ -30,16 +30,16 @@ public final class DetectionHistory extends afwe implements Parcelable {
         return 0;
     }
 
-    @Override // defpackage.afwe
+    @Override // defpackage.ahwt
     /* renamed from: k, reason: merged with bridge method [inline-methods] */
-    public final eitj h() {
-        return eitj.i(this.d);
+    public final elgo h() {
+        return elgo.i(this.d);
     }
 
-    @Override // defpackage.afwe
+    @Override // defpackage.ahwt
     /* renamed from: l, reason: merged with bridge method [inline-methods] */
-    public final eitj i(int i) {
-        return eitj.i(super.i(i));
+    public final elgo i(int i) {
+        return elgo.i(super.i(i));
     }
 
     public final void m(Collection collection) {

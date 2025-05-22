@@ -4,21 +4,21 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bzhx;
-import defpackage.bzwa;
-import defpackage.bzwb;
-import defpackage.bzyj;
-import defpackage.bzyk;
-import defpackage.bzyl;
-import defpackage.canl;
-import defpackage.fvbo;
+import defpackage.atzr;
+import defpackage.cbqo;
+import defpackage.ccer;
+import defpackage.cces;
+import defpackage.ccha;
+import defpackage.cchb;
+import defpackage.cchc;
+import defpackage.ccwb;
+import defpackage.fxxm;
 import java.util.EnumSet;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class GeofenceRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bzyl();
+    public static final Parcelable.Creator CREATOR = new cchc();
     public final double a;
     public final double b;
     public final float c;
@@ -30,8 +30,8 @@ public final class GeofenceRequest extends AbstractSafeParcelable {
     public final EnumSet i;
 
     public GeofenceRequest(double d, double d2, float f, long j, long j2, int i, long j3, EnumSet enumSet, EnumSet enumSet2) {
-        fvbo.f(enumSet, "listenerEventsFilter");
-        fvbo.f(enumSet2, "listenerInitialEventsFilter");
+        fxxm.f(enumSet, "listenerEventsFilter");
+        fxxm.f(enumSet2, "listenerInitialEventsFilter");
         this.a = d;
         this.b = d2;
         this.c = f;
@@ -69,14 +69,14 @@ public final class GeofenceRequest extends AbstractSafeParcelable {
             return false;
         }
         GeofenceRequest geofenceRequest = (GeofenceRequest) obj;
-        return Double.compare(this.a, geofenceRequest.a) == 0 && Double.compare(this.b, geofenceRequest.b) == 0 && Float.compare(this.c, geofenceRequest.c) == 0 && this.d == geofenceRequest.d && this.e == geofenceRequest.e && this.f == geofenceRequest.f && this.g == geofenceRequest.g && fvbo.n(this.h, geofenceRequest.h) && fvbo.n(this.i, geofenceRequest.i);
+        return Double.compare(this.a, geofenceRequest.a) == 0 && Double.compare(this.b, geofenceRequest.b) == 0 && Float.compare(this.c, geofenceRequest.c) == 0 && this.d == geofenceRequest.d && this.e == geofenceRequest.e && this.f == geofenceRequest.f && this.g == geofenceRequest.g && fxxm.n(this.h, geofenceRequest.h) && fxxm.n(this.i, geofenceRequest.i);
     }
 
     public final int hashCode() {
-        int a = (((bzyj.a(this.a) * 31) + bzyj.a(this.b)) * 31) + Float.floatToIntBits(this.c);
+        int a = (((ccha.a(this.a) * 31) + ccha.a(this.b)) * 31) + Float.floatToIntBits(this.c);
         EnumSet enumSet = this.h;
         long j = this.g;
-        return (((((((((((a * 31) + bzyk.a(this.d)) * 31) + bzyk.a(this.e)) * 31) + this.f) * 31) + bzyk.a(j)) * 31) + enumSet.hashCode()) * 31) + this.i.hashCode();
+        return (((((((((((a * 31) + cchb.a(this.d)) * 31) + cchb.a(this.e)) * 31) + this.f) * 31) + cchb.a(j)) * 31) + enumSet.hashCode()) * 31) + this.i.hashCode();
     }
 
     public final String toString() {
@@ -102,20 +102,20 @@ public final class GeofenceRequest extends AbstractSafeParcelable {
         int i = this.f;
         if (i != 0) {
             sb.append(", ");
-            sb.append(bzhx.a(i));
+            sb.append(cbqo.a(i));
         }
         long j3 = this.g;
         if (j3 != Long.MAX_VALUE) {
             sb.append(", expiration=");
-            sb.append(canl.b((j3 + System.currentTimeMillis()) - SystemClock.elapsedRealtime()));
+            sb.append(ccwb.b((j3 + System.currentTimeMillis()) - SystemClock.elapsedRealtime()));
         }
         EnumSet enumSet = this.h;
-        if (!fvbo.n(enumSet, EnumSet.allOf(bzwa.class))) {
+        if (!fxxm.n(enumSet, EnumSet.allOf(ccer.class))) {
             sb.append(", eventsFilter=");
             sb.append(enumSet);
         }
         EnumSet enumSet2 = this.i;
-        if (!fvbo.n(enumSet2, EnumSet.allOf(bzwa.class))) {
+        if (!fxxm.n(enumSet2, EnumSet.allOf(ccer.class))) {
             sb.append(", initialEventsFilter=");
             sb.append(enumSet2);
         }
@@ -124,18 +124,18 @@ public final class GeofenceRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "parcel");
+        fxxm.f(parcel, "parcel");
         double d = this.a;
-        int a = arxc.a(parcel);
-        arxc.j(parcel, 1, d);
-        arxc.j(parcel, 2, this.b);
-        arxc.l(parcel, 3, this.c);
-        arxc.q(parcel, 4, this.d);
-        arxc.q(parcel, 5, this.e);
-        arxc.o(parcel, 6, this.f);
-        arxc.q(parcel, 7, this.g);
-        arxc.o(parcel, 8, bzwb.a(this.h));
-        arxc.o(parcel, 9, bzwb.a(this.i));
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.j(parcel, 1, d);
+        atzr.j(parcel, 2, this.b);
+        atzr.l(parcel, 3, this.c);
+        atzr.q(parcel, 4, this.d);
+        atzr.q(parcel, 5, this.e);
+        atzr.o(parcel, 6, this.f);
+        atzr.q(parcel, 7, this.g);
+        atzr.o(parcel, 8, cces.a(this.h));
+        atzr.o(parcel, 9, cces.a(this.i));
+        atzr.c(parcel, a);
     }
 }

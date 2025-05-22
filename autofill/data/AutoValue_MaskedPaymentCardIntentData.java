@@ -2,13 +2,13 @@ package com.google.android.gms.autofill.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.adsi;
-import defpackage.adtg;
+import defpackage.afsp;
+import defpackage.aftn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class AutoValue_MaskedPaymentCardIntentData extends C$AutoValue_MaskedPaymentCardIntentData {
-    public static final Parcelable.Creator CREATOR = new adsi();
+    public static final Parcelable.Creator CREATOR = new afsp();
 
     public AutoValue_MaskedPaymentCardIntentData(long j, int i, String str) {
         super(j, i, str);
@@ -22,7 +22,7 @@ public final class AutoValue_MaskedPaymentCardIntentData extends C$AutoValue_Mas
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         parcel.writeLong(this.a);
-        parcel.writeString(adtg.a(this.c));
+        parcel.writeString(aftn.a(this.c));
         parcel.writeString(this.b);
     }
 }

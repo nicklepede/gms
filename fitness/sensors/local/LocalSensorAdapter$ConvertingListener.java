@@ -2,35 +2,35 @@ package com.google.android.gms.fitness.sensors.local;
 
 import android.hardware.Sensor;
 import com.google.android.gms.libs.punchclock.tracing.TracingSensorEventListener;
-import defpackage.bgmp;
-import defpackage.bgpd;
-import defpackage.bgpi;
-import defpackage.bgpj;
-import defpackage.bgpk;
-import defpackage.bgpo;
-import defpackage.fhrw;
+import defpackage.birf;
+import defpackage.bitt;
+import defpackage.bity;
+import defpackage.bitz;
+import defpackage.biua;
+import defpackage.biue;
+import defpackage.fkht;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class LocalSensorAdapter$ConvertingListener extends TracingSensorEventListener {
-    public final bgmp a;
-    public final fhrw b;
-    public final bgpk c;
-    public final bgpo d;
-    public final /* synthetic */ bgpi e;
-    private final bgpd g;
-    private final bgpj h;
+    public final birf a;
+    public final fkht b;
+    public final biua c;
+    public final biue d;
+    public final /* synthetic */ bity e;
+    private final bitt g;
+    private final bitz h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public LocalSensorAdapter$ConvertingListener(bgpi bgpiVar, bgmp bgmpVar, bgpd bgpdVar, fhrw fhrwVar, bgpj bgpjVar, bgpk bgpkVar, bgpo bgpoVar) {
+    public LocalSensorAdapter$ConvertingListener(bity bityVar, birf birfVar, bitt bittVar, fkht fkhtVar, bitz bitzVar, biua biuaVar, biue biueVar) {
         super("LocalSensorAdapter$ConvertingListener", "fitness");
-        this.e = bgpiVar;
-        this.a = bgmpVar;
-        this.g = bgpdVar;
-        this.b = fhrwVar;
-        this.h = bgpjVar;
-        this.c = bgpkVar;
-        this.d = bgpoVar;
+        this.e = bityVar;
+        this.a = birfVar;
+        this.g = bittVar;
+        this.b = fkhtVar;
+        this.h = bitzVar;
+        this.c = biuaVar;
+        this.d = biueVar;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0045, code lost:

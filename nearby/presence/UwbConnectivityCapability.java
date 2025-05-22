@@ -3,18 +3,18 @@ package com.google.android.gms.nearby.presence;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cklb;
+import defpackage.atzr;
+import defpackage.cmtg;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class UwbConnectivityCapability extends AbstractSafeParcelable {
     public final boolean b;
     public final boolean c;
     public static final UwbConnectivityCapability a = new UwbConnectivityCapability(false, false);
-    public static final Parcelable.Creator CREATOR = new cklb();
+    public static final Parcelable.Creator CREATOR = new cmtg();
 
     public UwbConnectivityCapability(boolean z, boolean z2) {
         this.b = z;
@@ -47,9 +47,9 @@ public class UwbConnectivityCapability extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.b;
-        int a2 = arxc.a(parcel);
-        arxc.e(parcel, 1, z);
-        arxc.e(parcel, 2, this.c);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.e(parcel, 1, z);
+        atzr.e(parcel, 2, this.c);
+        atzr.c(parcel, a2);
     }
 }

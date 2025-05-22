@@ -6,143 +6,143 @@ import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContext
 import com.google.android.gms.leveldb.LevelDbException;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.deidentifieddata.historicalbusyness.TransientHistoricalBusynessProcessingService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.czje;
-import defpackage.czjg;
-import defpackage.czlk;
-import defpackage.dahq;
-import defpackage.dame;
-import defpackage.daow;
-import defpackage.dbmw;
-import defpackage.dbmx;
-import defpackage.enop;
-import defpackage.enoq;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fryp;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.dbtc;
+import defpackage.dbte;
+import defpackage.dbvg;
+import defpackage.dcry;
+import defpackage.dcwm;
+import defpackage.dcze;
+import defpackage.ddxc;
+import defpackage.ddxd;
+import defpackage.eqci;
+import defpackage.eqcj;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.futj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class TransientHistoricalBusynessProcessingService extends GmsTaskBoundService {
-    public static final asot a = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "TransientHistoricalBusyness");
+    public static final ausn a = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "TransientHistoricalBusyness");
     public static final String b = TransientHistoricalBusynessProcessingService.class.getName();
-    public daow c;
-    private czje d;
-    private czlk e;
-    private dbmx f;
-    private dahq g;
-    private enoq h;
+    public dcze c;
+    private dbtc d;
+    private dbvg e;
+    private ddxd f;
+    private dcry g;
+    private eqcj h;
 
-    private final czlk f() {
+    private final dbvg f() {
         if (this.e == null) {
-            this.e = new czlk(d());
+            this.e = new dbvg(d());
         }
         return this.e;
     }
 
-    public final czje d() {
+    public final dbtc d() {
         if (this.d == null) {
-            this.d = new czje();
+            this.d = new dbtc();
         }
         return this.d;
     }
 
-    public final dahq e() {
+    public final dcry e() {
         if (this.g == null) {
-            this.g = new dahq();
+            this.g = new dcry();
         }
         return this.g;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        if (!fryp.j()) {
-            return ensj.i(0);
+    public final eqgl iB(cauf caufVar) {
+        if (!futj.j()) {
+            return eqgc.i(0);
         }
         d().e("TransientHistoricalBusynessJobCount");
         Context a2 = AppContextProvider.a();
-        czlk f = f();
+        dbvg f = f();
         if (this.h == null) {
-            this.h = enop.a;
+            this.h = eqci.a;
         }
-        czlk f2 = f();
+        dbvg f2 = f();
         if (this.f == null) {
-            this.f = new dbmw(f2);
+            this.f = new ddxc(f2);
         }
-        ensi h = ensi.h(new dame(a2, f, this.f, d(), czjg.a()).c());
-        enqc enqcVar = new enqc() { // from class: dami
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
-                final eitl eitlVar = (eitl) obj;
-                if (!fryp.a.a().y()) {
-                    return ensj.i(true);
+        eqgb h = eqgb.h(new dcwm(a2, f, this.f, d(), dbte.a()).c());
+        eqdv eqdvVar = new eqdv() { // from class: dcwq
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
+                final elgq elgqVar = (elgq) obj;
+                if (!futj.a.lK().y()) {
+                    return eqgc.i(true);
                 }
                 final TransientHistoricalBusynessProcessingService transientHistoricalBusynessProcessingService = TransientHistoricalBusynessProcessingService.this;
-                if (!eitlVar.C()) {
-                    return enps.f(ensi.h(transientHistoricalBusynessProcessingService.e().b()), new eiho() { // from class: damf
-                        @Override // defpackage.eiho
+                if (!elgqVar.C()) {
+                    return eqdl.f(eqgb.h(transientHistoricalBusynessProcessingService.e().b()), new ekut() { // from class: dcwn
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj2) {
                             TransientHistoricalBusynessProcessingService transientHistoricalBusynessProcessingService2 = TransientHistoricalBusynessProcessingService.this;
-                            eitl eitlVar2 = eitlVar;
+                            elgq elgqVar2 = elgqVar;
                             String str = (String) obj2;
                             try {
-                                Account account = (Account) eitlVar2.z().v().get(0);
+                                Account account = (Account) elgqVar2.z().v().get(0);
                                 if (!str.isEmpty()) {
                                     Account account2 = new Account(str, "com.google");
-                                    if (eitlVar2.u(account2)) {
+                                    if (elgqVar2.u(account2)) {
                                         account = account2;
                                     }
                                 }
-                                eitk eitkVar = new eitk();
-                                eitkVar.c(account, eitlVar2.a(account));
+                                elgp elgpVar = new elgp();
+                                elgpVar.c(account, elgqVar2.a(account));
                                 if (transientHistoricalBusynessProcessingService2.c == null) {
-                                    transientHistoricalBusynessProcessingService2.c = daow.b();
+                                    transientHistoricalBusynessProcessingService2.c = dcze.b();
                                 }
-                                transientHistoricalBusynessProcessingService2.c.d(eitkVar.a());
+                                transientHistoricalBusynessProcessingService2.c.d(elgpVar.a());
                                 transientHistoricalBusynessProcessingService2.d().e("TransientHistoricalBusynessJobNonEmptyOutput");
                                 return true;
                             } catch (LevelDbException e) {
-                                ((ejhf) ((ejhf) ((ejhf) TransientHistoricalBusynessProcessingService.a.j()).s(e)).ah((char) 10282)).x("Failed to write historical busyness visits to cache");
+                                ((eluo) ((eluo) ((eluo) TransientHistoricalBusynessProcessingService.a.j()).s(e)).ai((char) 10288)).x("Failed to write historical busyness visits to cache");
                                 return false;
                             }
                         }
-                    }, enre.a);
+                    }, eqex.a);
                 }
                 transientHistoricalBusynessProcessingService.d().e("TransientHistoricalBusynessJobEmptyOutput");
-                return ensj.i(true);
+                return eqgc.i(true);
             }
         };
-        enre enreVar = enre.a;
-        return enps.g(enps.g(h, enqcVar, enreVar), new enqc() { // from class: damj
-            @Override // defpackage.enqc
-            public final enss a(Object obj) {
+        eqex eqexVar = eqex.a;
+        return eqdl.g(eqdl.g(h, eqdvVar, eqexVar), new eqdv() { // from class: dcwr
+            @Override // defpackage.eqdv
+            public final eqgl a(Object obj) {
                 boolean booleanValue = ((Boolean) obj).booleanValue();
                 TransientHistoricalBusynessProcessingService transientHistoricalBusynessProcessingService = TransientHistoricalBusynessProcessingService.this;
                 if (booleanValue) {
                     transientHistoricalBusynessProcessingService.d().e("TransientHistoricalBusynessJobSuccess");
-                    return frwe.d() ? enps.f(transientHistoricalBusynessProcessingService.e().e("TransientHistoricalBusyness", false), new eiho() { // from class: damg
-                        @Override // defpackage.eiho
+                    return fuqy.d() ? eqdl.f(transientHistoricalBusynessProcessingService.e().e("TransientHistoricalBusyness", false), new ekut() { // from class: dcwo
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj2) {
-                            asot asotVar = TransientHistoricalBusynessProcessingService.a;
+                            ausn ausnVar = TransientHistoricalBusynessProcessingService.a;
                             return 0;
                         }
-                    }, enre.a) : ensj.i(0);
+                    }, eqex.a) : eqgc.i(0);
                 }
                 transientHistoricalBusynessProcessingService.d().e("TransientHistoricalBusynessJobFail");
-                return frwe.d() ? enps.f(transientHistoricalBusynessProcessingService.e().g("TransientHistoricalBusyness", fegx.h(System.currentTimeMillis())), new eiho() { // from class: damh
-                    @Override // defpackage.eiho
+                return fuqy.d() ? eqdl.f(transientHistoricalBusynessProcessingService.e().g("TransientHistoricalBusyness", fgvq.h(System.currentTimeMillis())), new ekut() { // from class: dcwp
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj2) {
-                        asot asotVar = TransientHistoricalBusynessProcessingService.a;
+                        ausn ausnVar = TransientHistoricalBusynessProcessingService.a;
                         return 2;
                     }
-                }, enre.a) : ensj.i(2);
+                }, eqex.a) : eqgc.i(2);
             }
-        }, enreVar);
+        }, eqexVar);
     }
 }

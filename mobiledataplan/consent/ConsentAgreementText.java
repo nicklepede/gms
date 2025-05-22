@@ -3,17 +3,17 @@ package com.google.android.gms.mobiledataplan.consent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cebm;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgkt;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ConsentAgreementText extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cebm();
+    public static final Parcelable.Creator CREATOR = new cgkt();
     public SafeHtml a;
     public SafeHtml[] b;
     public SafeHtml[] c;
@@ -32,7 +32,7 @@ public final class ConsentAgreementText extends AbstractSafeParcelable {
         }
         if (obj instanceof ConsentAgreementText) {
             ConsentAgreementText consentAgreementText = (ConsentAgreementText) obj;
-            if (arwb.b(this.a, consentAgreementText.a) && Arrays.equals(this.b, consentAgreementText.b) && Arrays.equals(this.c, consentAgreementText.c) && arwb.b(this.d, consentAgreementText.d) && arwb.b(this.e, consentAgreementText.e) && arwb.b(this.f, consentAgreementText.f) && arwb.b(Integer.valueOf(this.g), Integer.valueOf(consentAgreementText.g)) && arwb.b(this.h, consentAgreementText.h)) {
+            if (atyq.b(this.a, consentAgreementText.a) && Arrays.equals(this.b, consentAgreementText.b) && Arrays.equals(this.c, consentAgreementText.c) && atyq.b(this.d, consentAgreementText.d) && atyq.b(this.e, consentAgreementText.e) && atyq.b(this.f, consentAgreementText.f) && atyq.b(Integer.valueOf(this.g), Integer.valueOf(consentAgreementText.g)) && atyq.b(this.h, consentAgreementText.h)) {
                 return true;
             }
         }
@@ -45,29 +45,29 @@ public final class ConsentAgreementText extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("Title", this.a, arrayList);
-        arwa.b("DescriptionParagraphs", Arrays.toString(this.b), arrayList);
-        arwa.b("AdditionalInfoParagraphs", Arrays.toString(this.c), arrayList);
-        arwa.b("PositiveButtonCaption", this.d, arrayList);
-        arwa.b("NegativeButtonCaption", this.e, arrayList);
-        arwa.b("ContinueButtonCaption", this.f, arrayList);
-        arwa.b("Version", Integer.valueOf(this.g), arrayList);
-        arwa.b("TextId", this.h, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("Title", this.a, arrayList);
+        atyp.b("DescriptionParagraphs", Arrays.toString(this.b), arrayList);
+        atyp.b("AdditionalInfoParagraphs", Arrays.toString(this.c), arrayList);
+        atyp.b("PositiveButtonCaption", this.d, arrayList);
+        atyp.b("NegativeButtonCaption", this.e, arrayList);
+        atyp.b("ContinueButtonCaption", this.f, arrayList);
+        atyp.b("Version", Integer.valueOf(this.g), arrayList);
+        atyp.b("TextId", this.h, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.J(parcel, 2, this.b, i);
-        arxc.J(parcel, 3, this.c, i);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.o(parcel, 7, this.g);
-        arxc.v(parcel, 8, this.h, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.J(parcel, 2, this.b, i);
+        atzr.J(parcel, 3, this.c, i);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.o(parcel, 7, this.g);
+        atzr.v(parcel, 8, this.h, false);
+        atzr.c(parcel, a);
     }
 
     public ConsentAgreementText(SafeHtml safeHtml, SafeHtml[] safeHtmlArr, SafeHtml[] safeHtmlArr2, String str, String str2, String str3, int i, String str4) {

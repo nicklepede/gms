@@ -4,6 +4,7 @@ import android.accounts.Account;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.text.TextUtils;
@@ -11,25 +12,25 @@ import android.util.EventLog;
 import android.util.Pair;
 import com.google.android.chimera.Service;
 import com.google.android.gms.subscribedfeeds.FeedsGcmReceiverChimeraService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asrl;
-import defpackage.byhj;
-import defpackage.byhp;
-import defpackage.deuf;
-import defpackage.dxnw;
-import defpackage.fskq;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auvf;
+import defpackage.caqb;
+import defpackage.caqh;
+import defpackage.dhfi;
+import defpackage.dzzw;
+import defpackage.fvfp;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class FeedsGcmReceiverChimeraService extends Service {
-    public static final asot a = asot.b("SubscribedFeeds", asej.SUBSCRIBED_FEEDS);
-    private deuf d;
+    public static final ausn a = ausn.b("SubscribedFeeds", auid.SUBSCRIBED_FEEDS);
+    private dhfi d;
     private int e;
-    private final Executor b = byhj.b.c(new asrl("SubscribedFeeds-messages"), byhp.HIGH_SPEED);
-    private final ScheduledExecutorService c = byhj.b.i(new asrl("SubscribedFeeds-timeout"), byhp.LOW_POWER);
+    private final Executor b = caqb.b.c(new auvf("SubscribedFeeds-messages"), caqh.HIGH_SPEED);
+    private final ScheduledExecutorService c = caqb.b.i(new auvf("SubscribedFeeds-timeout"), caqh.LOW_POWER);
     private int f = 0;
 
     public final synchronized void a() {
@@ -48,9 +49,9 @@ public class FeedsGcmReceiverChimeraService extends Service {
     @Override // com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        this.d = new deuf(this.c, new dxnw(this, "STREAMZ_SUBSCRIBEDFEEDS"));
-        if (fskq.a.a().d()) {
-            this.d.a(fskq.b());
+        this.d = new dhfi(this.c, new dzzw(this, "STREAMZ_SUBSCRIBEDFEEDS"));
+        if (fvfp.a.lK().d()) {
+            this.d.a(fvfp.b());
         }
     }
 
@@ -60,7 +61,7 @@ public class FeedsGcmReceiverChimeraService extends Service {
             this.e = i2;
             this.f++;
         }
-        this.b.execute(new Runnable() { // from class: deug
+        this.b.execute(new Runnable() { // from class: dhfj
             @Override // java.lang.Runnable
             public final void run() {
                 Intent intent2 = intent;
@@ -78,7 +79,9 @@ public class FeedsGcmReceiverChimeraService extends Service {
                         }
                     }
                     if (pair != null) {
-                        Cursor query = feedsGcmReceiverChimeraService.getContentResolver().query(devj.a, null, "_id=?", new String[]{((Integer) pair.second).toString()}, null);
+                        ContentResolver contentResolver = feedsGcmReceiverChimeraService.getContentResolver();
+                        Uri uri = dhgm.a;
+                        Cursor query = contentResolver.query(uri, null, "_id=?", new String[]{((Integer) pair.second).toString()}, null);
                         if (query != null) {
                             while (query.moveToNext()) {
                                 try {
@@ -96,8 +99,8 @@ public class FeedsGcmReceiverChimeraService extends Service {
                                         }
                                         ContentResolver.requestSync(account, string, bundle);
                                     }
-                                    ((ejhf) ((ejhf) FeedsGcmReceiverChimeraService.a.j()).ah(11007)).P("received tickle for a disabled feed, removing feed and forcing a subscribedfeeds sync: account %s, feed %s", string3, string2);
-                                    feedsGcmReceiverChimeraService.getContentResolver().delete(devj.a, "_sync_account=? and _sync_account_type=? and authority=?", new String[]{string3, string4, string});
+                                    ((eluo) ((eluo) FeedsGcmReceiverChimeraService.a.j()).ai(11010)).P("received tickle for a disabled feed, removing feed and forcing a subscribedfeeds sync: account %s, feed %s", string3, string2);
+                                    feedsGcmReceiverChimeraService.getContentResolver().delete(uri, "_sync_account=? and _sync_account_type=? and authority=?", new String[]{string3, string4, string});
                                     Bundle bundle2 = new Bundle();
                                     bundle2.putBoolean("ignore_settings", true);
                                     ContentResolver.requestSync(account, "com.google.android.gms.subscribedfeeds", bundle2);
@@ -106,7 +109,7 @@ public class FeedsGcmReceiverChimeraService extends Service {
                                 }
                             }
                         } else {
-                            ((ejhf) ((ejhf) FeedsGcmReceiverChimeraService.a.j()).ah((char) 11009)).B("received tickle for non-existent feed: %s", stringExtra);
+                            ((eluo) ((eluo) FeedsGcmReceiverChimeraService.a.j()).ai((char) 11012)).B("received tickle for non-existent feed: %s", stringExtra);
                             EventLog.writeEvent(2742, "unknown");
                         }
                     }

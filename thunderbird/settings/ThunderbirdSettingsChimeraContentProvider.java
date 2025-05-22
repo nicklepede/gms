@@ -6,12 +6,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import com.google.android.chimera.ContentProvider;
 import com.google.android.gms.R;
-import defpackage.dfzq;
+import defpackage.dikv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ThunderbirdSettingsChimeraContentProvider extends ContentProvider {
-    private dfzq a;
+    private dikv a;
 
     @Override // com.google.android.chimera.ContentProvider
     public final Bundle call(String str, String str2, Bundle bundle) {
@@ -40,7 +40,7 @@ public class ThunderbirdSettingsChimeraContentProvider extends ContentProvider {
 
     @Override // com.google.android.chimera.ContentProvider
     public final boolean onCreate() {
-        this.a = dfzq.b(getContext());
+        this.a = dikv.b(getContext());
         return true;
     }
 

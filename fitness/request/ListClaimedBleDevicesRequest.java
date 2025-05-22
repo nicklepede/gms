@@ -5,36 +5,36 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bgiy;
-import defpackage.bgld;
+import defpackage.atzr;
+import defpackage.bino;
+import defpackage.bipt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public class ListClaimedBleDevicesRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgld();
-    public final bgiy a;
+    public static final Parcelable.Creator CREATOR = new bipt();
+    public final bino a;
 
-    public ListClaimedBleDevicesRequest(bgiy bgiyVar) {
-        this.a = bgiyVar;
+    public ListClaimedBleDevicesRequest(bino binoVar) {
+        this.a = binoVar;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.a);
+        atzr.c(parcel, a);
     }
 
     public ListClaimedBleDevicesRequest(IBinder iBinder) {
-        bgiy bgiyVar;
+        bino binoVar;
         if (iBinder == null) {
-            bgiyVar = null;
+            binoVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.ble.IBleDevicesCallback");
-            bgiyVar = queryLocalInterface instanceof bgiy ? (bgiy) queryLocalInterface : new bgiy(iBinder);
+            binoVar = queryLocalInterface instanceof bino ? (bino) queryLocalInterface : new bino(iBinder);
         }
-        this.a = bgiyVar;
+        this.a = binoVar;
     }
 }

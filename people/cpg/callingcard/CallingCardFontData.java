@@ -3,14 +3,14 @@ package com.google.android.gms.people.cpg.callingcard;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ctxi;
+import defpackage.atzr;
+import defpackage.cwgo;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class CallingCardFontData extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctxi();
+    public static final Parcelable.Creator CREATOR = new cwgo();
     public final float a;
     public final float b;
     public final float c;
@@ -53,16 +53,16 @@ public final class CallingCardFontData extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         float f = this.a;
-        int a = arxc.a(parcel);
-        arxc.l(parcel, 1, f);
-        arxc.l(parcel, 2, this.b);
-        arxc.l(parcel, 3, this.c);
-        arxc.l(parcel, 4, this.d);
-        arxc.l(parcel, 5, this.e);
-        arxc.l(parcel, 6, this.f);
-        arxc.o(parcel, 7, this.g);
-        arxc.o(parcel, 8, this.h);
-        arxc.l(parcel, 9, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.l(parcel, 1, f);
+        atzr.l(parcel, 2, this.b);
+        atzr.l(parcel, 3, this.c);
+        atzr.l(parcel, 4, this.d);
+        atzr.l(parcel, 5, this.e);
+        atzr.l(parcel, 6, this.f);
+        atzr.o(parcel, 7, this.g);
+        atzr.o(parcel, 8, this.h);
+        atzr.l(parcel, 9, this.i);
+        atzr.c(parcel, a);
     }
 }

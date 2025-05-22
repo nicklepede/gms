@@ -4,10 +4,10 @@ import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
-import defpackage.bqek;
+import defpackage.bsma;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public class BackgroundProcessDetectorContentProvider extends ContentProvider {
     @Override // android.content.ContentProvider
     public final int delete(Uri uri, String str, String[] strArr) {
@@ -26,7 +26,7 @@ public class BackgroundProcessDetectorContentProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public final boolean onCreate() {
-        synchronized (bqek.a) {
+        synchronized (bsma.a) {
         }
         return true;
     }

@@ -4,72 +4,72 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import com.google.android.gms.auth.api.credentials.PasswordSpecification;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.aozv;
-import defpackage.aqup;
-import defpackage.arwm;
-import defpackage.asot;
-import defpackage.bmgp;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.eiid;
-import defpackage.eiif;
-import defpackage.ejck;
-import defpackage.ejhf;
-import defpackage.vnh;
-import defpackage.vni;
-import defpackage.whv;
-import defpackage.whw;
-import defpackage.xug;
-import defpackage.xuk;
-import defpackage.xul;
+import defpackage.arcm;
+import defpackage.asxe;
+import defpackage.atzb;
+import defpackage.ausn;
+import defpackage.bonh;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.ekvi;
+import defpackage.ekvk;
+import defpackage.elpp;
+import defpackage.eluo;
+import defpackage.xji;
+import defpackage.xjj;
+import defpackage.yeb;
+import defpackage.yec;
+import defpackage.zsd;
+import defpackage.zsh;
+import defpackage.zsi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class CredentialsChimeraService extends bxgd {
-    public static final asot a = xul.a("CredentialsChimeraService");
+public final class CredentialsChimeraService extends bzot {
+    public static final ausn a = zsi.a("CredentialsChimeraService");
 
     public CredentialsChimeraService() {
-        super(68, "com.google.android.gms.auth.api.credentials.service.START", ejck.a, 3, 9);
+        super(68, "com.google.android.gms.auth.api.credentials.service.START", elpp.a, 3, 9);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        ((ejhf) whw.b.j()).w(new whv("**************************** WARNING ***************************\nYou are using the deprecated SmartLock for Passwords APIs from\nplay-services-auth SDK. Starting with play-services-auth:21.0.0,\nthese APIs have been removed from the SDK and you will no longer\nbe able to build your app with the above SDK or beyond. Please\nmigrate to the Credential Manager APIs, see https://goo.gle/4aap5k4.\n****************************************************************"));
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        ((eluo) yec.b.j()).w(new yeb("**************************** WARNING ***************************\nYou are using the deprecated SmartLock for Passwords APIs from\nplay-services-auth SDK. Starting with play-services-auth:21.0.0,\nthese APIs have been removed from the SDK and you will no longer\nbe able to build your app with the above SDK or beyond. Please\nmigrate to the Credential Manager APIs, see https://goo.gle/4aap5k4.\n****************************************************************"));
         Bundle bundle = getServiceRequest.i;
-        vni vniVar = vni.a;
-        vnh vnhVar = new vnh();
+        xjj xjjVar = xjj.a;
+        xji xjiVar = new xji();
         ClassLoader classLoader = PasswordSpecification.class.getClassLoader();
-        arwm.s(classLoader);
+        atzb.s(classLoader);
         bundle.setClassLoader(classLoader);
         String string = bundle.getString("consumer_package");
         if (!TextUtils.isEmpty(string)) {
-            arwm.s(string);
-            vnhVar.a = string;
+            atzb.s(string);
+            xjiVar.a = string;
         }
         if (bundle.containsKey("force_save_dialog") && bundle.getBoolean("force_save_dialog", false)) {
-            vnhVar.b = true;
+            xjiVar.b = true;
         }
         String string2 = bundle.getString("log_session_id");
         if (!TextUtils.isEmpty(string2)) {
-            vnhVar.c = string2;
+            xjiVar.c = string2;
         }
-        vni vniVar2 = new vni(vnhVar);
-        String str = vniVar2.b;
-        if (eiif.c(str)) {
+        xjj xjjVar2 = new xjj(xjiVar);
+        String str = xjjVar2.b;
+        if (ekvk.c(str)) {
             str = getServiceRequest.f;
-            vnh vnhVar2 = new vnh(vniVar2);
-            vnhVar2.a = str;
-            vniVar2 = new vni(vnhVar2);
+            xji xjiVar2 = new xji(xjjVar2);
+            xjiVar2.a = str;
+            xjjVar2 = new xjj(xjiVar2);
         }
-        vni vniVar3 = vniVar2;
+        xjj xjjVar3 = xjjVar2;
         if (!str.equals(getServiceRequest.f)) {
-            aqup.d(this).e(getServiceRequest.f);
+            asxe.d(this).e(getServiceRequest.f);
         }
-        eiid a2 = aozv.a(this, str);
+        ekvi a2 = arcm.a(this, str);
         if (!a2.h()) {
-            bxgjVar.a(10, null);
+            bzozVar.a(10, null);
             return;
         }
-        bxgjVar.c(new xug(this, (String) a2.c(), vniVar3, l(), xuk.a(), bmgp.a(this, null), getServiceRequest.f, getServiceRequest.p));
+        bzozVar.c(new zsd(this, (String) a2.c(), xjjVar3, l(), zsh.a(), bonh.a(this, null), getServiceRequest.f, getServiceRequest.p));
     }
 }

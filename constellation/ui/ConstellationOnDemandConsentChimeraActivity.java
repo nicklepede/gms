@@ -4,38 +4,38 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
-import defpackage.arxo;
-import defpackage.aseu;
-import defpackage.asmf;
-import defpackage.aszi;
-import defpackage.aszo;
-import defpackage.aszq;
-import defpackage.atkx;
-import defpackage.atlw;
-import defpackage.atlx;
-import defpackage.atmb;
-import defpackage.atmg;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.eiif;
-import defpackage.eijr;
-import defpackage.enwb;
-import defpackage.enwd;
-import defpackage.fjou;
-import defpackage.fmlr;
-import defpackage.qet;
+import defpackage.auad;
+import defpackage.auio;
+import defpackage.aupz;
+import defpackage.avdl;
+import defpackage.avdr;
+import defpackage.avdt;
+import defpackage.avpa;
+import defpackage.avpz;
+import defpackage.avqa;
+import defpackage.avqe;
+import defpackage.avqj;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.ekvk;
+import defpackage.ekww;
+import defpackage.eqju;
+import defpackage.eqjw;
+import defpackage.fmer;
+import defpackage.fpdm;
+import defpackage.rxx;
 import java.util.Locale;
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class ConstellationOnDemandConsentChimeraActivity extends qet {
-    public static final arxo j = atmg.a("on_demand_consent");
-    private aszq p;
+public final class ConstellationOnDemandConsentChimeraActivity extends rxx {
+    public static final auad j = avqj.a("on_demand_consent");
+    private avdt p;
     private String q;
     private String r;
-    private final ExecutorService m = new asmf(1, 9);
+    private final ExecutorService m = new aupz(1, 9);
     public final UUID k = UUID.randomUUID();
     private boolean n = false;
     private boolean o = false;
@@ -45,67 +45,67 @@ public final class ConstellationOnDemandConsentChimeraActivity extends qet {
         return getIntent().getBooleanExtra(str, false);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void finish() {
-        enwb enwbVar;
-        aszo aszoVar;
+        eqju eqjuVar;
+        avdr avdrVar;
         int i;
         if (this.l == -1 && TextUtils.isEmpty(this.r)) {
             this.l = 7;
         }
         j.d("Finishing with result code: %d", Integer.valueOf(this.l));
         Intent intent = new Intent();
-        atlw a = atlw.a(this);
-        aszo aszoVar2 = aszo.FAILED;
+        avpz a = avpz.a(this);
+        avdr avdrVar2 = avdr.FAILED;
         int i2 = this.l;
         if (i2 == -1) {
             String str = this.q;
             boolean z = str != null && str.equals("CONSENTED");
             intent.putExtra("account_name_key", this.r);
-            intent.putExtra("consent_status_key", (z ? fjou.CONSENTED : fjou.NO_CONSENT).a());
-            a.M(this.k, enwd.OD_CONSENT, getCallingPackage(), true != z ? 16 : 15);
-            aszoVar = z ? aszo.CONSENTED : aszo.SKIPPED;
+            intent.putExtra("consent_status_key", (z ? fmer.CONSENTED : fmer.NO_CONSENT).a());
+            a.M(this.k, eqjw.OD_CONSENT, getCallingPackage(), true != z ? 16 : 15);
+            avdrVar = z ? avdr.CONSENTED : avdr.SKIPPED;
         } else {
             if (i2 == 0) {
-                aszoVar2 = aszo.CANCELED;
+                avdrVar2 = avdr.CANCELED;
             }
             UUID uuid = this.k;
-            enwd enwdVar = enwd.OD_CONSENT;
+            eqjw eqjwVar = eqjw.OD_CONSENT;
             String callingPackage = getCallingPackage();
             switch (this.l) {
                 case 1:
-                    enwbVar = enwb.OD_CONSENT_NOT_ENABLED;
+                    eqjuVar = eqju.OD_CONSENT_NOT_ENABLED;
                     break;
                 case 2:
-                    enwbVar = enwb.OD_CONSENT_NO_NETWORK;
+                    eqjuVar = eqju.OD_CONSENT_NO_NETWORK;
                     break;
                 case 3:
-                    enwbVar = enwb.OD_CONSENT_ALREADY_CONSENTED;
+                    eqjuVar = eqju.OD_CONSENT_ALREADY_CONSENTED;
                     break;
                 case 4:
-                    enwbVar = enwb.OD_CONSENT_NO_DEFAULT_ACCOUNT;
+                    eqjuVar = eqju.OD_CONSENT_NO_DEFAULT_ACCOUNT;
                     break;
                 case 5:
-                    enwbVar = enwb.OD_CONSENT_WILL_ANNOY_USER;
+                    eqjuVar = eqju.OD_CONSENT_WILL_ANNOY_USER;
                     break;
                 case 6:
-                    enwbVar = enwb.UNKNOWN_ERROR;
+                    eqjuVar = eqju.UNKNOWN_ERROR;
                     break;
                 case 7:
-                    enwbVar = enwb.OD_CONSENT_ACCOUNT_NAME_MISSING;
+                    eqjuVar = eqju.OD_CONSENT_ACCOUNT_NAME_MISSING;
                     break;
                 case 8:
-                    enwbVar = enwb.OD_CONSENT_EMPTY;
+                    eqjuVar = eqju.OD_CONSENT_EMPTY;
                     break;
                 case 9:
-                    enwbVar = enwb.OD_CONSENT_CALLING_PACKAGE_NOT_ALLOWED;
+                    eqjuVar = eqju.OD_CONSENT_CALLING_PACKAGE_NOT_ALLOWED;
                     break;
                 default:
-                    enwbVar = enwb.OD_CONSENT_CANCELED;
+                    eqjuVar = eqju.OD_CONSENT_CANCELED;
                     break;
             }
-            a.k(uuid, enwdVar, callingPackage, enwbVar);
-            aszoVar = aszoVar2;
+            a.k(uuid, eqjwVar, callingPackage, eqjuVar);
+            avdrVar = avdrVar2;
         }
         if (this.o && (i = this.l) != 9) {
             switch (i) {
@@ -117,12 +117,12 @@ public final class ConstellationOnDemandConsentChimeraActivity extends qet {
                 case 6:
                     break;
                 default:
-                    aszq aszqVar = this.p;
-                    if (aszqVar != null) {
+                    avdt avdtVar = this.p;
+                    if (avdtVar != null) {
                         try {
-                            aszqVar.e(aszoVar, getCallingPackage());
+                            avdtVar.e(avdrVar, getCallingPackage());
                             break;
-                        } catch (atmb e) {
+                        } catch (avqe e) {
                             j.g("Error storing impression", e, new Object[0]);
                             break;
                         }
@@ -134,12 +134,12 @@ public final class ConstellationOnDemandConsentChimeraActivity extends qet {
         super.finish();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final String getCallingPackage() {
-        return eiif.b(super.getCallingPackage());
+        return ekvk.b(super.getCallingPackage());
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i == 1) {
@@ -149,7 +149,7 @@ public final class ConstellationOnDemandConsentChimeraActivity extends qet {
                     String stringExtra = intent.getStringExtra("result.consent_result_key");
                     this.q = stringExtra;
                     if (!TextUtils.isEmpty(stringExtra)) {
-                        j.d("Webview resulted ok, accountName: %s, status: %s", eiif.b(this.r), eiif.b(this.q));
+                        j.d("Webview resulted ok, accountName: %s, status: %s", ekvk.b(this.r), ekvk.b(this.q));
                         this.l = -1;
                     }
                     finish();
@@ -167,43 +167,44 @@ public final class ConstellationOnDemandConsentChimeraActivity extends qet {
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        aszq aszqVar;
+        avdt avdtVar;
         super.onCreate(bundle);
-        this.n = fmlr.e();
-        fmlr fmlrVar = fmlr.a;
-        this.o = fmlrVar.a().l();
+        this.n = fpdm.e();
+        fpdm fpdmVar = fpdm.a;
+        this.o = fpdmVar.lK().l();
         getApplicationContext();
-        eijr eijrVar = bqqe.a;
-        bqqa.a(aseu.CONSTELLATION_UI_ONDEMAND_CONSENT);
-        if (!fmlr.f()) {
+        ekww ekwwVar = bsxv.a;
+        bsxr.a(auio.CONSTELLATION_UI_ONDEMAND_CONSENT);
+        if (!fpdm.f()) {
             this.l = 1;
-        } else if (fmlrVar.a().f().b.contains(getCallingPackage())) {
-            atkx.a(this);
-            if (atkx.b(this)) {
+        } else if (fpdmVar.lK().f().b.contains(getCallingPackage())) {
+            avpa.a(this);
+            if (avpa.b(this)) {
                 if (this.o) {
                     try {
-                        aszi.b();
-                        this.p = aszi.c(this, 1);
-                        if (this.n && ((!a("bypass_annoyance_check_key") || !fmlr.a.a().e().b.contains(getCallingPackage())) && (aszqVar = this.p) != null)) {
+                        avdl.b();
+                        this.p = avdl.c(this, 1);
+                        if (this.n && ((!a("bypass_annoyance_check_key") || !fpdm.a.lK().e().b.contains(getCallingPackage())) && (avdtVar = this.p) != null)) {
                             try {
-                                if (aszqVar.a(fmlr.b()) >= fmlr.c()) {
+                                if (avdtVar.a(fpdm.b()) >= fpdm.c()) {
                                     this.l = 5;
                                 }
-                            } catch (atmb e) {
+                            } catch (avqe e) {
                                 j.g("Error accessing impressions", e, new Object[0]);
                                 this.l = 6;
                             }
                         }
-                    } catch (atlx unused) {
+                    } catch (avqa unused) {
                         this.l = 1;
                     }
                 }
                 String languageTag = Locale.getDefault().toLanguageTag();
-                final String uri = Uri.parse(fmlr.a.a().g()).buildUpon().appendQueryParameter("continue", Uri.parse(fmlr.a.a().h()).buildUpon().appendQueryParameter("hl", languageTag).build().toString()).appendQueryParameter("hl", languageTag).build().toString();
+                fpdm fpdmVar2 = fpdm.a;
+                final String uri = Uri.parse(fpdmVar2.lK().g()).buildUpon().appendQueryParameter("continue", Uri.parse(fpdmVar2.lK().h()).buildUpon().appendQueryParameter("hl", languageTag).build().toString()).appendQueryParameter("hl", languageTag).build().toString();
                 j.j("Loading URL: %s", uri);
-                this.m.execute(new Runnable() { // from class: atar
+                this.m.execute(new Runnable() { // from class: aveu
                     /* JADX WARN: Removed duplicated region for block: B:45:0x00ea  */
                     /* JADX WARN: Removed duplicated region for block: B:46:0x00ef  */
                     @Override // java.lang.Runnable
@@ -213,10 +214,10 @@ public final class ConstellationOnDemandConsentChimeraActivity extends qet {
                     */
                     public final void run() {
                         /*
-                            Method dump skipped, instructions count: 309
+                            Method dump skipped, instructions count: 307
                             To view this dump change 'Code comments level' option to 'DEBUG'
                         */
-                        throw new UnsupportedOperationException("Method not decompiled: defpackage.atar.run():void");
+                        throw new UnsupportedOperationException("Method not decompiled: defpackage.aveu.run():void");
                     }
                 });
                 return;

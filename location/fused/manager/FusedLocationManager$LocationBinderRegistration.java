@@ -3,57 +3,57 @@ package com.google.android.gms.location.fused.manager;
 import android.os.IBinder;
 import android.os.RemoteException;
 import com.google.android.gms.libs.identity.ClientIdentity;
-import defpackage.asot;
-import defpackage.bzmw;
-import defpackage.bzmz;
-import defpackage.bzpx;
-import defpackage.bzsc;
-import defpackage.bzsp;
-import defpackage.eiig;
-import defpackage.ejhf;
+import defpackage.ausn;
+import defpackage.cbvn;
+import defpackage.cbvq;
+import defpackage.cbyo;
+import defpackage.ccat;
+import defpackage.ccbg;
+import defpackage.ekvl;
+import defpackage.eluo;
 import java.util.NoSuchElementException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class FusedLocationManager$LocationBinderRegistration extends FusedLocationManager$LocationRegistration implements IBinder.DeathRecipient {
-    public FusedLocationManager$LocationBinderRegistration(bzsc bzscVar, bzmz bzmzVar, ClientIdentity clientIdentity, bzsp bzspVar, bzpx bzpxVar) {
-        super(bzscVar, bzmzVar, clientIdentity, bzspVar, bzpxVar);
+    public FusedLocationManager$LocationBinderRegistration(ccat ccatVar, cbvq cbvqVar, ClientIdentity clientIdentity, ccbg ccbgVar, cbyo cbyoVar) {
+        super(ccatVar, cbvqVar, clientIdentity, ccbgVar, cbyoVar);
     }
 
     @Override // android.os.IBinder.DeathRecipient
     public final void binderDied() {
         try {
-            asot asotVar = bzmw.a;
+            ausn ausnVar = cbvn.a;
             l();
         } catch (RuntimeException e) {
             throw new AssertionError(e);
         }
     }
 
-    @Override // defpackage.bwrm
+    @Override // defpackage.bzac
     public final void d(Exception exc) {
         if (!(exc instanceof RemoteException)) {
             super.d(exc);
         } else {
-            ((ejhf) ((ejhf) ((ejhf) bzmw.a.j()).s(exc)).ah(5549)).B("registration %s transport failure", this.l);
+            ((eluo) ((eluo) ((eluo) cbvn.a.j()).s(exc)).ai(5563)).B("registration %s transport failure", this.l);
             l();
         }
     }
 
-    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$LocationRegistration, com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bwrx, defpackage.bwrm
+    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$LocationRegistration, com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bzan, defpackage.bzac
     protected final void f() {
         try {
             ((IBinder) i()).unlinkToDeath(this, 0);
         } catch (NoSuchElementException e) {
-            ((ejhf) ((ejhf) ((ejhf) bzmw.a.j()).s(e)).ah((char) 5550)).x("failed to unregister binder death listener");
+            ((eluo) ((eluo) ((eluo) cbvn.a.j()).s(e)).ai((char) 5564)).x("failed to unregister binder death listener");
         }
         super.f();
     }
 
-    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bwrx
+    @Override // com.google.android.gms.location.fused.manager.FusedLocationManager$Registration, defpackage.bzan
     protected final void j() {
         super.j();
-        eiig.p(i() instanceof IBinder);
+        ekvl.q(i() instanceof IBinder);
         try {
             ((IBinder) i()).linkToDeath(this, 0);
         } catch (RemoteException unused) {

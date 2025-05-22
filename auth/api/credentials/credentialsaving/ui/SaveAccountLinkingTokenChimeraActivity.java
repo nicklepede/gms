@@ -5,132 +5,132 @@ import android.os.Bundle;
 import com.google.android.gms.R;
 import com.google.android.gms.auth.api.credentials.credentialsaving.ui.SaveAccountLinkingTokenChimeraActivity;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgu;
-import defpackage.bmgx;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonm;
+import defpackage.bonp;
 import defpackage.bp;
-import defpackage.eiic;
-import defpackage.eiiw;
-import defpackage.eits;
-import defpackage.elfb;
-import defpackage.elfd;
+import defpackage.ekvh;
+import defpackage.ekwb;
+import defpackage.elgx;
+import defpackage.enso;
+import defpackage.ensq;
 import defpackage.ew;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.qet;
-import defpackage.wit;
-import defpackage.wmu;
-import defpackage.wnu;
-import defpackage.wnv;
-import defpackage.xul;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.rxx;
+import defpackage.yez;
+import defpackage.yje;
+import defpackage.yke;
+import defpackage.ykf;
+import defpackage.zsi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class SaveAccountLinkingTokenChimeraActivity extends qet {
-    private static final asot l = xul.b("SaveAccountLinkingTokenChimeraActivity");
-    public bmgq j;
+public class SaveAccountLinkingTokenChimeraActivity extends rxx {
+    private static final ausn l = zsi.b("SaveAccountLinkingTokenChimeraActivity");
+    public boni j;
     public String k;
-    private wnv m;
+    private ykf m;
     private String n;
 
-    public final void a(wit witVar) {
-        witVar.f(l);
-        wnv wnvVar = this.m;
-        if (wnvVar != null && wnvVar.d.hT() != null) {
-            this.j = bmgp.a(this, ((Account) this.m.d.hT()).name);
+    public final void a(yez yezVar) {
+        yezVar.f(l);
+        ykf ykfVar = this.m;
+        if (ykfVar != null && ykfVar.d.ii() != null) {
+            this.j = bonh.a(this, ((Account) this.m.d.ii()).name);
         }
-        bmgq bmgqVar = this.j;
-        fecj v = elfd.a.v();
+        boni boniVar = this.j;
+        fgrc v = ensq.a.v();
         String str = this.k;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elfd elfdVar = (elfd) fecpVar;
+        fgri fgriVar = v.b;
+        ensq ensqVar = (ensq) fgriVar;
         str.getClass();
-        elfdVar.b |= 2;
-        elfdVar.e = str;
-        if (!fecpVar.L()) {
+        ensqVar.b |= 2;
+        ensqVar.e = str;
+        if (!fgriVar.L()) {
             v.U();
         }
-        elfd elfdVar2 = (elfd) v.b;
-        elfdVar2.d = 17;
-        elfdVar2.b |= 1;
-        fecj k = witVar.k();
-        if (!k.b.L()) {
-            k.U();
+        ensq ensqVar2 = (ensq) v.b;
+        ensqVar2.d = 17;
+        ensqVar2.b |= 1;
+        fgrc l2 = yezVar.l();
+        if (!l2.b.L()) {
+            l2.U();
         }
-        elfb elfbVar = (elfb) k.b;
-        elfb elfbVar2 = elfb.a;
-        elfbVar.f = 205;
-        elfbVar.b |= 8;
+        enso ensoVar = (enso) l2.b;
+        enso ensoVar2 = enso.a;
+        ensoVar.f = 205;
+        ensoVar.b |= 8;
         if (!v.b.L()) {
             v.U();
         }
-        elfd elfdVar3 = (elfd) v.b;
-        elfb elfbVar3 = (elfb) k.Q();
-        elfbVar3.getClass();
-        elfdVar3.s = elfbVar3;
-        elfdVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-        bmgqVar.a((elfd) v.Q());
-        setResult(witVar.a(), witVar.b());
+        ensq ensqVar3 = (ensq) v.b;
+        enso ensoVar3 = (enso) l2.Q();
+        ensoVar3.getClass();
+        ensqVar3.s = ensoVar3;
+        ensqVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        boniVar.a((ensq) v.Q());
+        setResult(yezVar.a(), yezVar.b());
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        hC().q(-1);
+        hS().q(-1);
         setTheme(R.style.ThemeTranslucentDayNight);
         super.onCreate(bundle);
-        this.k = (String) eiic.c(getIntent().getStringExtra("session_id"), bmgx.a());
-        this.j = bmgp.a(this, null);
-        bmgu.a(this, new eiiw() { // from class: wms
-            @Override // defpackage.eiiw
-            public final void lB(Object obj) {
+        this.k = (String) ekvh.c(getIntent().getStringExtra("session_id"), bonp.a());
+        this.j = bonh.a(this, null);
+        bonm.a(this, new ekwb() { // from class: yjc
+            @Override // defpackage.ekwb
+            public final void lY(Object obj) {
                 SaveAccountLinkingTokenChimeraActivity saveAccountLinkingTokenChimeraActivity = SaveAccountLinkingTokenChimeraActivity.this;
-                saveAccountLinkingTokenChimeraActivity.j.a(bmgw.b(206, (bmgv) obj, saveAccountLinkingTokenChimeraActivity.k));
+                saveAccountLinkingTokenChimeraActivity.j.a(bono.b(206, (bonn) obj, saveAccountLinkingTokenChimeraActivity.k));
             }
         });
-        String q = asng.q(this);
+        String q = aura.q(this);
         if (q == null) {
-            a((wit) wit.c().c(28442, "Cannot get calling package name."));
+            a((yez) yez.c().c(28442, "Cannot get calling package name."));
             return;
         }
         this.n = q;
-        if (((wnu) getSupportFragmentManager().h("controller")) == null) {
+        if (((yke) getSupportFragmentManager().h("controller")) == null) {
             String str = this.n;
             String str2 = this.k;
             Bundle bundle2 = new Bundle();
             bundle2.putString("calling_package", str);
             bundle2.putString("session_id", str2);
-            wnu wnuVar = new wnu();
-            wnuVar.setArguments(bundle2);
+            yke ykeVar = new yke();
+            ykeVar.setArguments(bundle2);
             bp bpVar = new bp(getSupportFragmentManager());
-            bpVar.v(wnuVar, "controller");
+            bpVar.v(ykeVar, "controller");
             bpVar.d();
         }
-        wnv wnvVar = (wnv) new jrh(this).a(wnv.class);
-        this.m = wnvVar;
-        wnvVar.c.g(this, new jpd() { // from class: wmr
-            @Override // defpackage.jpd
+        ykf ykfVar = (ykf) new jxw(this).a(ykf.class);
+        this.m = ykfVar;
+        ykfVar.c.g(this, new jvs() { // from class: yjb
+            @Override // defpackage.jvs
             public final void a(Object obj) {
-                SaveAccountLinkingTokenChimeraActivity.this.a((wit) obj);
+                SaveAccountLinkingTokenChimeraActivity.this.a((yez) obj);
             }
         });
         ew supportFragmentManager = getSupportFragmentManager();
         if (supportFragmentManager.h("dialog") == null) {
             String str3 = this.n;
-            eits eitsVar = wmu.ag;
+            elgx elgxVar = yje.ag;
             Bundle bundle3 = new Bundle();
             bundle3.putString("calling_package", str3);
-            wmu wmuVar = new wmu();
-            wmuVar.setArguments(bundle3);
-            wmuVar.show(supportFragmentManager, "dialog");
+            yje yjeVar = new yje();
+            yjeVar.setArguments(bundle3);
+            yjeVar.show(supportFragmentManager, "dialog");
         }
     }
 }

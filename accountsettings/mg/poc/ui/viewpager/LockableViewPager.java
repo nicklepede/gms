@@ -4,10 +4,10 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import androidx.viewpager.widget.ViewPager;
-import defpackage.fvbo;
+import defpackage.fxxm;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class LockableViewPager extends ViewPager {
     public boolean h;
@@ -16,7 +16,7 @@ public final class LockableViewPager extends ViewPager {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public LockableViewPager(Context context) {
         this(context, null, 2, 0 == true ? 1 : 0);
-        fvbo.f(context, "context");
+        fxxm.f(context, "context");
     }
 
     @Override // androidx.viewpager.widget.ViewPager
@@ -41,7 +41,7 @@ public final class LockableViewPager extends ViewPager {
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LockableViewPager(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        fvbo.f(context, "context");
+        fxxm.f(context, "context");
         this.h = true;
     }
 

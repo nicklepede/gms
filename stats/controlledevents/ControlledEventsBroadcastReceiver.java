@@ -3,10 +3,10 @@ package com.google.android.gms.stats.controlledevents;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.derb;
-import defpackage.derc;
+import defpackage.dhce;
+import defpackage.dhcf;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 class ControlledEventsBroadcastReceiver extends TracingBroadcastReceiver {
     final ControlledEventsOperation a;
@@ -17,10 +17,10 @@ class ControlledEventsBroadcastReceiver extends TracingBroadcastReceiver {
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         if ("android.intent.action.SCREEN_ON".equals(intent.getAction())) {
-            derc.a("ControlledEventsReceiverFailureScreenOn");
-            derb.a();
+            dhcf.a("ControlledEventsReceiverFailureScreenOn");
+            dhce.a();
             this.a.a();
         }
     }

@@ -4,16 +4,16 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.appsearch.safeparcel.PropertyConfigParcel;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ucv;
-import defpackage.ucx;
-import defpackage.ucy;
-import defpackage.ucz;
-import defpackage.udb;
-import defpackage.udc;
-import defpackage.udd;
-import defpackage.ude;
-import defpackage.ugl;
+import defpackage.atzr;
+import defpackage.vyu;
+import defpackage.vyw;
+import defpackage.vyx;
+import defpackage.vyy;
+import defpackage.vza;
+import defpackage.vzb;
+import defpackage.vzc;
+import defpackage.vzd;
+import defpackage.wck;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.ArrayList;
@@ -22,10 +22,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class AppSearchSchema extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ude();
+    public static final Parcelable.Creator CREATOR = new vzd();
     public final String a;
     final List b;
     public final String c;
@@ -43,7 +43,7 @@ public final class AppSearchSchema extends AbstractSafeParcelable {
     }
 
     public final List b() {
-        udc uddVar;
+        Object vzcVar;
         List list = this.b;
         if (list.isEmpty()) {
             return Collections.EMPTY_LIST;
@@ -55,27 +55,27 @@ public final class AppSearchSchema extends AbstractSafeParcelable {
             int i2 = propertyConfigParcel.b;
             switch (i2) {
                 case 1:
-                    uddVar = new udd(propertyConfigParcel);
+                    vzcVar = new vzc(propertyConfigParcel);
                     break;
                 case 2:
-                    uddVar = new udb(propertyConfigParcel);
+                    vzcVar = new vza(propertyConfigParcel);
                     break;
                 case 3:
-                    uddVar = new ucz(propertyConfigParcel);
+                    vzcVar = new vyy(propertyConfigParcel);
                     break;
                 case 4:
-                    uddVar = new ucv(propertyConfigParcel);
+                    vzcVar = new vyu(propertyConfigParcel);
                     break;
                 case 5:
-                    uddVar = new ucx(propertyConfigParcel);
+                    vzcVar = new vyw(propertyConfigParcel);
                     break;
                 case 6:
-                    uddVar = new ucy(propertyConfigParcel);
+                    vzcVar = new vyx(propertyConfigParcel);
                     break;
                 default:
                     throw new IllegalArgumentException("Unsupported property bundle of type " + i2 + "; contents: " + String.valueOf(propertyConfigParcel));
             }
-            arrayList.add(uddVar);
+            arrayList.add(vzcVar);
         }
         return arrayList;
     }
@@ -99,41 +99,41 @@ public final class AppSearchSchema extends AbstractSafeParcelable {
     }
 
     public final String toString() {
-        ugl uglVar = new ugl();
-        Objects.requireNonNull(uglVar);
-        uglVar.a("{\n");
-        uglVar.d();
-        uglVar.a("schemaType: \"");
-        uglVar.a(this.a);
-        uglVar.a("\",\n");
-        uglVar.a("description: \"");
-        uglVar.a(this.c);
-        uglVar.a("\",\n");
-        uglVar.a("properties: [\n");
+        wck wckVar = new wck();
+        Objects.requireNonNull(wckVar);
+        wckVar.a("{\n");
+        wckVar.d();
+        wckVar.a("schemaType: \"");
+        wckVar.a(this.a);
+        wckVar.a("\",\n");
+        wckVar.a("description: \"");
+        wckVar.a(this.c);
+        wckVar.a("\",\n");
+        wckVar.a("properties: [\n");
         int i = 0;
-        udc[] udcVarArr = (udc[]) b().toArray(new udc[0]);
-        Arrays.sort(udcVarArr, new Comparator() { // from class: ucu
+        vzb[] vzbVarArr = (vzb[]) b().toArray(new vzb[0]);
+        Arrays.sort(vzbVarArr, new Comparator() { // from class: vyt
             @Override // java.util.Comparator
             public final int compare(Object obj, Object obj2) {
-                return ((udc) obj).e().compareTo(((udc) obj2).e());
+                return ((vzb) obj).e().compareTo(((vzb) obj2).e());
             }
         });
         while (true) {
-            int length = udcVarArr.length;
+            int length = vzbVarArr.length;
             if (i >= length) {
-                uglVar.a("\n");
-                uglVar.a("]\n");
-                uglVar.c();
-                uglVar.a("}");
-                return uglVar.toString();
+                wckVar.a("\n");
+                wckVar.a("]\n");
+                wckVar.c();
+                wckVar.a("}");
+                return wckVar.toString();
             }
-            udc udcVar = udcVarArr[i];
-            uglVar.d();
-            udcVar.f(uglVar);
+            vzb vzbVar = vzbVarArr[i];
+            wckVar.d();
+            vzbVar.f(wckVar);
             if (i != length - 1) {
-                uglVar.a(",\n");
+                wckVar.a(",\n");
             }
-            uglVar.c();
+            wckVar.c();
             i++;
         }
     }
@@ -141,11 +141,11 @@ public final class AppSearchSchema extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.x(parcel, 3, a(), false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.x(parcel, 3, a(), false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.c(parcel, a);
     }
 }

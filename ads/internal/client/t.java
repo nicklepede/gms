@@ -6,10 +6,10 @@ import android.os.IBinder;
 import android.os.IInterface;
 import android.os.RemoteException;
 import com.google.android.gms.dynamite.descriptors.com.google.android.gms.ads.dynamite.ModuleDescriptor;
-import defpackage.azix;
+import defpackage.bbmt;
 
 /* JADX INFO: Access modifiers changed from: package-private */
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public abstract class t {
     private static final ay a;
@@ -74,7 +74,7 @@ public abstract class t {
             com.google.android.gms.ads.internal.util.client.h.d("Google Play Services is not available.");
             z = true;
         }
-        boolean z4 = !(azix.a(context, ModuleDescriptor.MODULE_ID) <= com.google.android.gms.ads.internal.util.client.l.a(context));
+        boolean z4 = !(bbmt.a(context, ModuleDescriptor.MODULE_ID) <= com.google.android.gms.ads.internal.util.client.l.a(context));
         com.google.android.gms.ads.internal.config.p.c(context);
         if (((Boolean) com.google.android.gms.ads.internal.flag.j.a.d()).booleanValue()) {
             z2 = false;

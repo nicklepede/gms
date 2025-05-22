@@ -2,45 +2,45 @@ package com.google.android.gms.common.net;
 
 import android.content.Context;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.anzs;
-import defpackage.asal;
-import defpackage.asam;
-import defpackage.azht;
-import defpackage.azit;
-import defpackage.cyqx;
+import defpackage.aqbk;
+import defpackage.auda;
+import defpackage.audb;
+import defpackage.bblp;
+import defpackage.bbmp;
+import defpackage.dbav;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class SocketFactoryCreatorImpl extends asal {
+public class SocketFactoryCreatorImpl extends auda {
     private final Object a = new Object();
-    private asam b = null;
+    private audb b = null;
 
     static {
-        int i = anzs.a;
+        int i = aqbk.a;
     }
 
-    private final asam a(Context context) {
-        asam asamVar;
+    private final audb a(Context context) {
+        audb audbVar;
         synchronized (this.a) {
             if (this.b == null) {
                 try {
-                    this.b = asal.asInterface(cyqx.a(context).e("com.google.android.gms.providerinstaller.SocketFactoryCreatorImpl"));
-                } catch (azit unused) {
+                    this.b = auda.asInterface(dbav.a(context).e("com.google.android.gms.providerinstaller.SocketFactoryCreatorImpl"));
+                } catch (bbmp unused) {
                     this.b = new com.google.android.gms.providerinstaller.SocketFactoryCreatorImpl();
                 }
             }
-            asamVar = this.b;
+            audbVar = this.b;
         }
-        return asamVar;
+        return audbVar;
     }
 
-    @Override // defpackage.asam
-    public azht newSocketFactory(azht azhtVar, azht azhtVar2, azht azhtVar3, boolean z) {
-        return a((Context) ObjectWrapper.a(azhtVar)).newSocketFactory(azhtVar, azhtVar2, azhtVar3, z);
+    @Override // defpackage.audb
+    public bblp newSocketFactory(bblp bblpVar, bblp bblpVar2, bblp bblpVar3, boolean z) {
+        return a((Context) ObjectWrapper.a(bblpVar)).newSocketFactory(bblpVar, bblpVar2, bblpVar3, z);
     }
 
-    @Override // defpackage.asam
-    public azht newSocketFactoryWithCacheDir(azht azhtVar, azht azhtVar2, azht azhtVar3, String str) {
-        return a((Context) ObjectWrapper.a(azhtVar)).newSocketFactoryWithCacheDir(azhtVar, azhtVar2, azhtVar3, str);
+    @Override // defpackage.audb
+    public bblp newSocketFactoryWithCacheDir(bblp bblpVar, bblp bblpVar2, bblp bblpVar3, String str) {
+        return a((Context) ObjectWrapper.a(bblpVar)).newSocketFactoryWithCacheDir(bblpVar, bblpVar2, bblpVar3, str);
     }
 }

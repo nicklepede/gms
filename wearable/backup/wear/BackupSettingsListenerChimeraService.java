@@ -1,67 +1,67 @@
 package com.google.android.gms.wearable.backup.wear;
 
 import com.google.android.gms.wearable.backup.wear.BackupSettingsListenerChimeraService;
-import defpackage.ahpv;
-import defpackage.aifm;
-import defpackage.arxo;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.djlj;
-import defpackage.djrc;
-import defpackage.djsc;
-import defpackage.djus;
-import defpackage.dkbc;
-import defpackage.dlue;
-import defpackage.dlun;
-import defpackage.dlvs;
-import defpackage.dlvt;
-import defpackage.dlvw;
-import defpackage.dlvx;
-import defpackage.dlvz;
-import defpackage.dlwc;
-import defpackage.dlwe;
-import defpackage.dlwf;
-import defpackage.dlyf;
-import defpackage.docc;
-import defpackage.eiho;
-import defpackage.eklh;
-import defpackage.enox;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensv;
-import defpackage.esiu;
-import defpackage.eswt;
-import defpackage.eswu;
-import defpackage.esyt;
-import defpackage.esyu;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
+import defpackage.ajql;
+import defpackage.akgc;
+import defpackage.auad;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.dlxc;
+import defpackage.dmcv;
+import defpackage.dmdv;
+import defpackage.dmgl;
+import defpackage.dmmv;
+import defpackage.dofv;
+import defpackage.doge;
+import defpackage.dohj;
+import defpackage.dohk;
+import defpackage.dohn;
+import defpackage.doho;
+import defpackage.dohq;
+import defpackage.doht;
+import defpackage.dohv;
+import defpackage.dohw;
+import defpackage.dojw;
+import defpackage.dqml;
+import defpackage.ekut;
+import defpackage.emyt;
+import defpackage.eqcq;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgo;
+import defpackage.euyj;
+import defpackage.evmj;
+import defpackage.evmk;
+import defpackage.evoj;
+import defpackage.evok;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
 import j$.util.Objects;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class BackupSettingsListenerChimeraService extends dkbc {
-    public static final arxo a = new djlj("BackupSettingsWLS");
-    private djrc b;
-    private djus c;
+public class BackupSettingsListenerChimeraService extends dmmv {
+    public static final auad a = new dlxc("BackupSettingsWLS");
+    private dmcv b;
+    private dmgl c;
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    @Override // defpackage.dkbc, defpackage.djkj
-    public final dfaq k(String str, String str2, byte[] bArr) {
+    @Override // defpackage.dmmv, defpackage.dlwc
+    public final dhlw k(String str, String str2, byte[] bArr) {
         char c;
         int length;
         int length2;
         int length3;
-        arxo arxoVar = a;
+        auad auadVar = a;
         final boolean z = false;
-        arxoVar.j("onRequest: nodeId=%s path=%s request=%s", str, str2, bArr);
+        auadVar.j("onRequest: nodeId=%s path=%s request=%s", str, str2, bArr);
         if (this.b == null) {
-            this.b = djsc.f(this);
+            this.b = dmdv.f(this);
         }
         switch (str2.hashCode()) {
             case -958277363:
@@ -126,411 +126,411 @@ public class BackupSettingsListenerChimeraService extends dkbc {
         }
         switch (c) {
             case 0:
-                aifm.a();
-                arxoVar.j("backup_supported response: %b", false);
-                fecj v = dlun.a.v();
+                akgc.a();
+                auadVar.j("backup_supported response: %b", false);
+                fgrc v = doge.a.v();
                 if (!v.b.L()) {
                     v.U();
                 }
-                dlun dlunVar = (dlun) v.b;
-                dlunVar.b |= 1;
-                dlunVar.c = false;
-                return dfbl.d(((dlun) v.Q()).r());
+                doge dogeVar = (doge) v.b;
+                dogeVar.b |= 1;
+                dogeVar.c = false;
+                return dhmr.d(((doge) v.Q()).r());
             case 1:
                 if (bArr != null && (length = bArr.length) != 0) {
                     try {
-                        fecp y = fecp.y(dlue.a, bArr, 0, length, febw.a());
-                        fecp.M(y);
-                        z = ((dlue) y).c;
-                    } catch (fedk unused) {
+                        fgri y = fgri.y(dofv.a, bArr, 0, length, fgqp.a());
+                        fgri.M(y);
+                        z = ((dofv) y).c;
+                    } catch (fgsd unused) {
                     }
                 }
-                djsc djscVar = (djsc) this.b;
-                ensv ensvVar = djscVar.c;
-                final ahpv ahpvVar = djscVar.d;
-                Objects.requireNonNull(ahpvVar);
-                ensi h = ensi.h(ensvVar.submit(new Callable() { // from class: djrs
+                dmdv dmdvVar = (dmdv) this.b;
+                eqgo eqgoVar = dmdvVar.c;
+                final ajql ajqlVar = dmdvVar.d;
+                Objects.requireNonNull(ajqlVar);
+                eqgb h = eqgb.h(eqgoVar.submit(new Callable() { // from class: dmdl
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
-                        return Boolean.valueOf(ahpv.this.k());
+                        return Boolean.valueOf(ajql.this.j());
                     }
                 }));
-                eiho eihoVar = new eiho() { // from class: djsi
-                    @Override // defpackage.eiho
+                ekut ekutVar = new ekut() { // from class: dmeb
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
                         BackupSettingsListenerChimeraService.a.h("isBackupEnabled successfully completed", new Object[0]);
-                        fecj v2 = dluf.a.v();
+                        fgrc v2 = dofw.a.v();
                         boolean booleanValue = ((Boolean) obj).booleanValue();
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        dluf dlufVar = (dluf) v2.b;
-                        dlufVar.b |= 1;
-                        dlufVar.c = booleanValue;
-                        return ((dluf) v2.Q()).r();
+                        dofw dofwVar = (dofw) v2.b;
+                        dofwVar.b |= 1;
+                        dofwVar.c = booleanValue;
+                        return ((dofw) v2.Q()).r();
                     }
                 };
-                enre enreVar = enre.a;
-                return docc.a(enox.g(enps.f(h, eihoVar, enreVar), Throwable.class, new enqc() { // from class: djsj
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj) {
+                eqex eqexVar = eqex.a;
+                return dqml.a(eqcq.g(eqdl.f(h, ekutVar, eqexVar), Throwable.class, new eqdv() { // from class: dmec
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj) {
                         Throwable th = (Throwable) obj;
                         BackupSettingsListenerChimeraService.a.n("Failed to complete task: isBackupEnabled", th, new Object[0]);
                         if (!z) {
-                            return ensj.h(th);
+                            return eqgc.h(th);
                         }
-                        fecj v2 = dluf.a.v();
+                        fgrc v2 = dofw.a.v();
                         if (!v2.b.L()) {
                             v2.U();
                         }
-                        dluf dlufVar = (dluf) v2.b;
-                        dlufVar.d = 1;
-                        dlufVar.b |= 2;
-                        return ensj.i(((dluf) v2.Q()).r());
+                        dofw dofwVar = (dofw) v2.b;
+                        dofwVar.d = 1;
+                        dofwVar.b |= 2;
+                        return eqgc.i(((dofw) v2.Q()).r());
                     }
-                }, enreVar));
+                }, eqexVar));
             case 2:
                 try {
-                    fecp y2 = fecp.y(dlvx.a, bArr, 0, bArr.length, febw.a());
-                    fecp.M(y2);
-                    final dlvx dlvxVar = (dlvx) y2;
-                    dlvw dlvwVar = dlvxVar.d;
-                    if (dlvwVar == null) {
-                        dlvwVar = dlvw.a;
+                    fgri y2 = fgri.y(doho.a, bArr, 0, bArr.length, fgqp.a());
+                    fgri.M(y2);
+                    final doho dohoVar = (doho) y2;
+                    dohn dohnVar = dohoVar.d;
+                    if (dohnVar == null) {
+                        dohnVar = dohn.a;
                     }
-                    djrc djrcVar = this.b;
-                    String str3 = dlvxVar.c;
-                    boolean z2 = dlvxVar.e;
-                    esiu esiuVar = z2 ? esiu.amS : esiu.sl;
-                    fecj v2 = esyt.a.v();
-                    eswt eswtVar = (eswt) eswu.a.v();
-                    eswtVar.a(dlvwVar.c);
+                    dmcv dmcvVar = this.b;
+                    String str3 = dohoVar.c;
+                    boolean z2 = dohoVar.e;
+                    euyj euyjVar = z2 ? euyj.ani : euyj.ang;
+                    fgrc v2 = evoj.a.v();
+                    evmk evmkVar = evmk.a;
+                    evmj evmjVar = (evmj) evmkVar.v();
+                    evmjVar.a(dohnVar.c);
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    esyt esytVar = (esyt) v2.b;
-                    eswu eswuVar = (eswu) eswtVar.Q();
-                    eswuVar.getClass();
-                    esytVar.c = eswuVar;
-                    esytVar.b |= 1;
-                    eswu eswuVar2 = eswu.a;
-                    eswt eswtVar2 = (eswt) eswuVar2.v();
-                    eswtVar2.a(dlvwVar.d);
+                    evoj evojVar = (evoj) v2.b;
+                    evmk evmkVar2 = (evmk) evmjVar.Q();
+                    evmkVar2.getClass();
+                    evojVar.c = evmkVar2;
+                    evojVar.b |= 1;
+                    evmj evmjVar2 = (evmj) evmkVar.v();
+                    evmjVar2.a(dohnVar.d);
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    esyt esytVar2 = (esyt) v2.b;
-                    eswu eswuVar3 = (eswu) eswtVar2.Q();
-                    eswuVar3.getClass();
-                    esytVar2.d = eswuVar3;
-                    esytVar2.b |= 2;
-                    eswt eswtVar3 = (eswt) eswuVar2.v();
-                    eswtVar3.a(dlvwVar.e);
+                    evoj evojVar2 = (evoj) v2.b;
+                    evmk evmkVar3 = (evmk) evmjVar2.Q();
+                    evmkVar3.getClass();
+                    evojVar2.d = evmkVar3;
+                    evojVar2.b |= 2;
+                    evmj evmjVar3 = (evmj) evmkVar.v();
+                    evmjVar3.a(dohnVar.e);
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    esyt esytVar3 = (esyt) v2.b;
-                    eswu eswuVar4 = (eswu) eswtVar3.Q();
-                    eswuVar4.getClass();
-                    esytVar3.e = eswuVar4;
-                    esytVar3.b |= 4;
-                    eswt eswtVar4 = (eswt) eswuVar2.v();
-                    eswtVar4.a(dlvwVar.f);
+                    evoj evojVar3 = (evoj) v2.b;
+                    evmk evmkVar4 = (evmk) evmjVar3.Q();
+                    evmkVar4.getClass();
+                    evojVar3.e = evmkVar4;
+                    evojVar3.b |= 4;
+                    evmj evmjVar4 = (evmj) evmkVar.v();
+                    evmjVar4.a(dohnVar.f);
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    esyt esytVar4 = (esyt) v2.b;
-                    eswu eswuVar5 = (eswu) eswtVar4.Q();
-                    eswuVar5.getClass();
-                    esytVar4.f = eswuVar5;
-                    esytVar4.b |= 8;
-                    eswt eswtVar5 = (eswt) eswuVar2.v();
-                    eswtVar5.a(dlvwVar.g);
+                    evoj evojVar4 = (evoj) v2.b;
+                    evmk evmkVar5 = (evmk) evmjVar4.Q();
+                    evmkVar5.getClass();
+                    evojVar4.f = evmkVar5;
+                    evojVar4.b |= 8;
+                    evmj evmjVar5 = (evmj) evmkVar.v();
+                    evmjVar5.a(dohnVar.g);
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    esyt esytVar5 = (esyt) v2.b;
-                    eswu eswuVar6 = (eswu) eswtVar5.Q();
-                    eswuVar6.getClass();
-                    esytVar5.g = eswuVar6;
-                    esytVar5.b |= 16;
-                    ensi h2 = ensi.h(djrcVar.b(str3, z2, esiuVar, (esyt) v2.Q(), Integer.valueOf(dlvwVar.b)));
-                    eiho eihoVar2 = new eiho() { // from class: djse
-                        @Override // defpackage.eiho
+                    evoj evojVar5 = (evoj) v2.b;
+                    evmk evmkVar6 = (evmk) evmjVar5.Q();
+                    evmkVar6.getClass();
+                    evojVar5.g = evmkVar6;
+                    evojVar5.b |= 16;
+                    eqgb h2 = eqgb.h(dmcvVar.b(str3, z2, euyjVar, (evoj) v2.Q(), Integer.valueOf(dohnVar.b)));
+                    ekut ekutVar2 = new ekut() { // from class: dmdx
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
                             BackupSettingsListenerChimeraService.a.h("enableBackup successfully completed", new Object[0]);
-                            return dlvy.a.r();
+                            return dohp.a.r();
                         }
                     };
-                    enre enreVar2 = enre.a;
-                    return docc.a(enox.g(enps.f(h2, eihoVar2, enreVar2), Throwable.class, new enqc() { // from class: djsh
-                        @Override // defpackage.enqc
-                        public final enss a(Object obj) {
+                    eqex eqexVar2 = eqex.a;
+                    return dqml.a(eqcq.g(eqdl.f(h2, ekutVar2, eqexVar2), Throwable.class, new eqdv() { // from class: dmea
+                        @Override // defpackage.eqdv
+                        public final eqgl a(Object obj) {
                             Throwable th = (Throwable) obj;
                             BackupSettingsListenerChimeraService.a.n("Failed to complete task: enableBackup", th, new Object[0]);
-                            if (!dlvx.this.f) {
-                                return ensj.h(th);
+                            if (!doho.this.f) {
+                                return eqgc.h(th);
                             }
-                            fecj v3 = dlvy.a.v();
+                            fgrc v3 = dohp.a.v();
                             if (!v3.b.L()) {
                                 v3.U();
                             }
-                            dlvy dlvyVar = (dlvy) v3.b;
-                            dlvyVar.c = 1;
-                            dlvyVar.b = 1 | dlvyVar.b;
-                            return ensj.i(((dlvy) v3.Q()).r());
+                            dohp dohpVar = (dohp) v3.b;
+                            dohpVar.c = 1;
+                            dohpVar.b = 1 | dohpVar.b;
+                            return eqgc.i(((dohp) v3.Q()).r());
                         }
-                    }, enreVar2));
-                } catch (fedk e) {
+                    }, eqexVar2));
+                } catch (fgsd e) {
                     a.n("Malformed EnableBackupRequest protocol buffer", e, new Object[0]);
                     return null;
                 }
             case 3:
                 try {
-                    fecp y3 = fecp.y(dlvt.a, bArr, 0, bArr.length, febw.a());
-                    fecp.M(y3);
-                    final dlvt dlvtVar = (dlvt) y3;
-                    dlvs dlvsVar = dlvtVar.c;
-                    if (dlvsVar == null) {
-                        dlvsVar = dlvs.a;
+                    fgri y3 = fgri.y(dohk.a, bArr, 0, bArr.length, fgqp.a());
+                    fgri.M(y3);
+                    final dohk dohkVar = (dohk) y3;
+                    dohj dohjVar = dohkVar.c;
+                    if (dohjVar == null) {
+                        dohjVar = dohj.a;
                     }
-                    fecj v3 = esyu.a.v();
-                    eswt eswtVar6 = (eswt) eswu.a.v();
-                    eswtVar6.a(dlvsVar.d);
+                    fgrc v3 = evok.a.v();
+                    evmk evmkVar7 = evmk.a;
+                    evmj evmjVar6 = (evmj) evmkVar7.v();
+                    evmjVar6.a(dohjVar.d);
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    esyu esyuVar = (esyu) v3.b;
-                    eswu eswuVar7 = (eswu) eswtVar6.Q();
-                    eswuVar7.getClass();
-                    esyuVar.c = eswuVar7;
-                    esyuVar.b |= 1;
-                    eswu eswuVar8 = eswu.a;
-                    eswt eswtVar7 = (eswt) eswuVar8.v();
-                    eswtVar7.a(dlvsVar.e);
+                    evok evokVar = (evok) v3.b;
+                    evmk evmkVar8 = (evmk) evmjVar6.Q();
+                    evmkVar8.getClass();
+                    evokVar.c = evmkVar8;
+                    evokVar.b |= 1;
+                    evmj evmjVar7 = (evmj) evmkVar7.v();
+                    evmjVar7.a(dohjVar.e);
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    esyu esyuVar2 = (esyu) v3.b;
-                    eswu eswuVar9 = (eswu) eswtVar7.Q();
-                    eswuVar9.getClass();
-                    esyuVar2.d = eswuVar9;
-                    esyuVar2.b |= 2;
-                    eswt eswtVar8 = (eswt) eswuVar8.v();
-                    eswtVar8.a(dlvsVar.f);
+                    evok evokVar2 = (evok) v3.b;
+                    evmk evmkVar9 = (evmk) evmjVar7.Q();
+                    evmkVar9.getClass();
+                    evokVar2.d = evmkVar9;
+                    evokVar2.b |= 2;
+                    evmj evmjVar8 = (evmj) evmkVar7.v();
+                    evmjVar8.a(dohjVar.f);
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    esyu esyuVar3 = (esyu) v3.b;
-                    eswu eswuVar10 = (eswu) eswtVar8.Q();
-                    eswuVar10.getClass();
-                    esyuVar3.e = eswuVar10;
-                    esyuVar3.b |= 4;
-                    eswt eswtVar9 = (eswt) eswuVar8.v();
-                    eswtVar9.a(dlvsVar.g);
+                    evok evokVar3 = (evok) v3.b;
+                    evmk evmkVar10 = (evmk) evmjVar8.Q();
+                    evmkVar10.getClass();
+                    evokVar3.e = evmkVar10;
+                    evokVar3.b |= 4;
+                    evmj evmjVar9 = (evmj) evmkVar7.v();
+                    evmjVar9.a(dohjVar.g);
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    esyu esyuVar4 = (esyu) v3.b;
-                    eswu eswuVar11 = (eswu) eswtVar9.Q();
-                    eswuVar11.getClass();
-                    esyuVar4.f = eswuVar11;
-                    esyuVar4.b |= 8;
-                    eswt eswtVar10 = (eswt) eswuVar8.v();
-                    eswtVar10.a(dlvsVar.h);
+                    evok evokVar4 = (evok) v3.b;
+                    evmk evmkVar11 = (evmk) evmjVar9.Q();
+                    evmkVar11.getClass();
+                    evokVar4.f = evmkVar11;
+                    evokVar4.b |= 8;
+                    evmj evmjVar10 = (evmj) evmkVar7.v();
+                    evmjVar10.a(dohjVar.h);
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    esyu esyuVar5 = (esyu) v3.b;
-                    eswu eswuVar12 = (eswu) eswtVar10.Q();
-                    eswuVar12.getClass();
-                    esyuVar5.g = eswuVar12;
-                    esyuVar5.b |= 16;
-                    ensi h3 = ensi.h(this.b.a(esiu.amR, (esyu) v3.Q(), Integer.valueOf(dlvsVar.c)));
-                    eiho eihoVar3 = new eiho() { // from class: djsk
-                        @Override // defpackage.eiho
+                    evok evokVar5 = (evok) v3.b;
+                    evmk evmkVar12 = (evmk) evmjVar10.Q();
+                    evmkVar12.getClass();
+                    evokVar5.g = evmkVar12;
+                    evokVar5.b |= 16;
+                    eqgb h3 = eqgb.h(this.b.a(euyj.anh, (evok) v3.Q(), Integer.valueOf(dohjVar.c)));
+                    ekut ekutVar3 = new ekut() { // from class: dmed
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
                             BackupSettingsListenerChimeraService.a.h("disableBackup successfully completed", new Object[0]);
-                            return dlvu.a.r();
+                            return dohl.a.r();
                         }
                     };
-                    enre enreVar3 = enre.a;
-                    return docc.a(enox.g(enps.f(h3, eihoVar3, enreVar3), Throwable.class, new enqc() { // from class: djsl
-                        @Override // defpackage.enqc
-                        public final enss a(Object obj) {
+                    eqex eqexVar3 = eqex.a;
+                    return dqml.a(eqcq.g(eqdl.f(h3, ekutVar3, eqexVar3), Throwable.class, new eqdv() { // from class: dmee
+                        @Override // defpackage.eqdv
+                        public final eqgl a(Object obj) {
                             Throwable th = (Throwable) obj;
                             BackupSettingsListenerChimeraService.a.n("Failed to complete task: disableBackup", th, new Object[0]);
-                            if (!dlvt.this.d) {
-                                return ensj.h(th);
+                            if (!dohk.this.d) {
+                                return eqgc.h(th);
                             }
-                            fecj v4 = dlvu.a.v();
+                            fgrc v4 = dohl.a.v();
                             if (!v4.b.L()) {
                                 v4.U();
                             }
-                            dlvu dlvuVar = (dlvu) v4.b;
-                            dlvuVar.c = 1;
-                            dlvuVar.b = 1 | dlvuVar.b;
-                            return ensj.i(((dlvu) v4.Q()).r());
+                            dohl dohlVar = (dohl) v4.b;
+                            dohlVar.c = 1;
+                            dohlVar.b = 1 | dohlVar.b;
+                            return eqgc.i(((dohl) v4.Q()).r());
                         }
-                    }, enreVar3));
-                } catch (fedk e2) {
+                    }, eqexVar3));
+                } catch (fgsd e2) {
                     a.n("Malformed DisableBackupRequest protocol buffer", e2, new Object[0]);
                     return null;
                 }
             case 4:
                 if (bArr != null && (length2 = bArr.length) != 0) {
                     try {
-                        fecp y4 = fecp.y(dlyf.a, bArr, 0, length2, febw.a());
-                        fecp.M(y4);
-                        z = ((dlyf) y4).c;
-                    } catch (fedk unused2) {
+                        fgri y4 = fgri.y(dojw.a, bArr, 0, length2, fgqp.a());
+                        fgri.M(y4);
+                        z = ((dojw) y4).c;
+                    } catch (fgsd unused2) {
                     }
                 }
-                ensi h4 = ensi.h(this.b.e());
-                eiho eihoVar4 = new eiho() { // from class: djsf
-                    @Override // defpackage.eiho
+                eqgb h4 = eqgb.h(this.b.e());
+                ekut ekutVar4 = new ekut() { // from class: dmdy
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        dlul dlulVar = (dlul) obj;
+                        dogc dogcVar = (dogc) obj;
                         BackupSettingsListenerChimeraService.a.h("refreshBackupStatus successfully completed", new Object[0]);
-                        fecj v4 = dlyg.a.v();
+                        fgrc v4 = dojx.a.v();
                         if (!v4.b.L()) {
                             v4.U();
                         }
-                        dlyg dlygVar = (dlyg) v4.b;
-                        dlulVar.getClass();
-                        dlygVar.c = dlulVar;
-                        dlygVar.b |= 1;
-                        return ((dlyg) v4.Q()).r();
+                        dojx dojxVar = (dojx) v4.b;
+                        dogcVar.getClass();
+                        dojxVar.c = dogcVar;
+                        dojxVar.b |= 1;
+                        return ((dojx) v4.Q()).r();
                     }
                 };
-                enre enreVar4 = enre.a;
-                return docc.a(enox.g(enps.f(h4, eihoVar4, enreVar4), Throwable.class, new enqc() { // from class: djsg
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj) {
+                eqex eqexVar4 = eqex.a;
+                return dqml.a(eqcq.g(eqdl.f(h4, ekutVar4, eqexVar4), Throwable.class, new eqdv() { // from class: dmdz
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj) {
                         Throwable th = (Throwable) obj;
                         BackupSettingsListenerChimeraService.a.n("Failed to complete task: refreshBackupStatus", th, new Object[0]);
                         if (!z) {
-                            return ensj.h(th);
+                            return eqgc.h(th);
                         }
-                        fecj v4 = dlyg.a.v();
+                        fgrc v4 = dojx.a.v();
                         if (!v4.b.L()) {
                             v4.U();
                         }
-                        dlyg dlygVar = (dlyg) v4.b;
-                        dlygVar.d = 1;
-                        dlygVar.b |= 2;
-                        return ensj.i(((dlyg) v4.Q()).r());
+                        dojx dojxVar = (dojx) v4.b;
+                        dojxVar.d = 1;
+                        dojxVar.b |= 2;
+                        return eqgc.i(((dojx) v4.Q()).r());
                     }
-                }, enreVar4));
+                }, eqexVar4));
             case 5:
                 try {
-                    fecp y5 = fecp.y(dlwe.a, bArr, 0, bArr.length, febw.a());
-                    fecp.M(y5);
-                    final dlwe dlweVar = (dlwe) y5;
-                    ensi h5 = ensi.h(this.b.d(dlweVar.c));
-                    eiho eihoVar5 = new eiho() { // from class: djsm
-                        @Override // defpackage.eiho
+                    fgri y5 = fgri.y(dohv.a, bArr, 0, bArr.length, fgqp.a());
+                    fgri.M(y5);
+                    final dohv dohvVar = (dohv) y5;
+                    eqgb h5 = eqgb.h(this.b.d(dohvVar.c));
+                    ekut ekutVar5 = new ekut() { // from class: dmef
+                        @Override // defpackage.ekut
                         public final Object apply(Object obj) {
-                            dlum dlumVar = (dlum) obj;
+                            dogd dogdVar = (dogd) obj;
                             BackupSettingsListenerChimeraService.a.h("fetchBackupStorageQuota successfully completed", new Object[0]);
-                            fecj v4 = dlwf.a.v();
+                            fgrc v4 = dohw.a.v();
                             if (!v4.b.L()) {
                                 v4.U();
                             }
-                            dlwf dlwfVar = (dlwf) v4.b;
-                            dlumVar.getClass();
-                            dlwfVar.c = dlumVar;
-                            dlwfVar.b |= 1;
-                            return ((dlwf) v4.Q()).r();
+                            dohw dohwVar = (dohw) v4.b;
+                            dogdVar.getClass();
+                            dohwVar.c = dogdVar;
+                            dohwVar.b |= 1;
+                            return ((dohw) v4.Q()).r();
                         }
                     };
-                    enre enreVar5 = enre.a;
-                    return docc.a(enox.g(enps.f(h5, eihoVar5, enreVar5), Throwable.class, new enqc() { // from class: djsn
-                        @Override // defpackage.enqc
-                        public final enss a(Object obj) {
+                    eqex eqexVar5 = eqex.a;
+                    return dqml.a(eqcq.g(eqdl.f(h5, ekutVar5, eqexVar5), Throwable.class, new eqdv() { // from class: dmeg
+                        @Override // defpackage.eqdv
+                        public final eqgl a(Object obj) {
                             Throwable th = (Throwable) obj;
                             BackupSettingsListenerChimeraService.a.n("Failed to complete task: fetchBackupStorageQuota", th, new Object[0]);
-                            if (!dlwe.this.d) {
-                                return ensj.h(th);
+                            if (!dohv.this.d) {
+                                return eqgc.h(th);
                             }
-                            fecj v4 = dlwf.a.v();
+                            fgrc v4 = dohw.a.v();
                             if (!v4.b.L()) {
                                 v4.U();
                             }
-                            dlwf dlwfVar = (dlwf) v4.b;
-                            dlwfVar.d = 1;
-                            dlwfVar.b |= 2;
-                            return ensj.i(((dlwf) v4.Q()).r());
+                            dohw dohwVar = (dohw) v4.b;
+                            dohwVar.d = 1;
+                            dohwVar.b |= 2;
+                            return eqgc.i(((dohw) v4.Q()).r());
                         }
-                    }, enreVar5));
-                } catch (fedk e3) {
+                    }, eqexVar5));
+                } catch (fgsd e3) {
                     a.n("Malformed FetchStorageQuotaRequest protocol buffer", e3, new Object[0]);
                     return null;
                 }
             case 6:
                 if (bArr != null && (length3 = bArr.length) != 0) {
                     try {
-                        fecp y6 = fecp.y(dlwc.a, bArr, 0, length3, febw.a());
-                        fecp.M(y6);
-                        z = ((dlwc) y6).c;
-                    } catch (fedk unused3) {
+                        fgri y6 = fgri.y(doht.a, bArr, 0, length3, fgqp.a());
+                        fgri.M(y6);
+                        z = ((doht) y6).c;
+                    } catch (fgsd unused3) {
                     }
                 }
-                ensi h6 = ensi.h(this.b.c());
-                eiho eihoVar6 = new eiho() { // from class: djso
-                    @Override // defpackage.eiho
+                eqgb h6 = eqgb.h(this.b.c());
+                ekut ekutVar6 = new ekut() { // from class: dmeh
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        dlui dluiVar = (dlui) obj;
+                        dofz dofzVar = (dofz) obj;
                         BackupSettingsListenerChimeraService.a.h("fetchBackupStats successfully completed", new Object[0]);
-                        fecj v4 = dlwd.a.v();
+                        fgrc v4 = dohu.a.v();
                         if (!v4.b.L()) {
                             v4.U();
                         }
-                        dlwd dlwdVar = (dlwd) v4.b;
-                        dluiVar.getClass();
-                        dlwdVar.c = dluiVar;
-                        dlwdVar.b |= 1;
-                        return ((dlwd) v4.Q()).r();
+                        dohu dohuVar = (dohu) v4.b;
+                        dofzVar.getClass();
+                        dohuVar.c = dofzVar;
+                        dohuVar.b |= 1;
+                        return ((dohu) v4.Q()).r();
                     }
                 };
-                enre enreVar6 = enre.a;
-                return docc.a(enox.g(enps.f(h6, eihoVar6, enreVar6), Throwable.class, new enqc() { // from class: djsp
-                    @Override // defpackage.enqc
-                    public final enss a(Object obj) {
+                eqex eqexVar6 = eqex.a;
+                return dqml.a(eqcq.g(eqdl.f(h6, ekutVar6, eqexVar6), Throwable.class, new eqdv() { // from class: dmei
+                    @Override // defpackage.eqdv
+                    public final eqgl a(Object obj) {
                         Throwable th = (Throwable) obj;
                         BackupSettingsListenerChimeraService.a.n("Failed to complete task: fetchBackupStats", th, new Object[0]);
                         if (!z) {
-                            return ensj.h(th);
+                            return eqgc.h(th);
                         }
-                        fecj v4 = dlwd.a.v();
+                        fgrc v4 = dohu.a.v();
                         if (!v4.b.L()) {
                             v4.U();
                         }
-                        dlwd dlwdVar = (dlwd) v4.b;
-                        dlwdVar.d = 1;
-                        dlwdVar.b |= 2;
-                        return ensj.i(((dlwd) v4.Q()).r());
+                        dohu dohuVar = (dohu) v4.b;
+                        dohuVar.d = 1;
+                        dohuVar.b |= 2;
+                        return eqgc.i(((dohu) v4.Q()).r());
                     }
-                }, enreVar6));
+                }, eqexVar6));
             case 7:
                 if (this.c == null) {
-                    this.c = new djus();
+                    this.c = new dmgl();
                 }
                 try {
-                    fecp y7 = fecp.y(dlvz.a, bArr, 0, bArr.length, febw.a());
-                    fecp.M(y7);
-                    eklh b = eklh.b(((dlvz) y7).c);
+                    fgri y7 = fgri.y(dohq.a, bArr, 0, bArr.length, fgqp.a());
+                    fgri.M(y7);
+                    emyt b = emyt.b(((dohq) y7).c);
                     if (b == null) {
-                        b = eklh.UNKNOWN_FRAGMENT_TYPE;
+                        b = emyt.UNKNOWN_FRAGMENT_TYPE;
                     }
                     this.c.a(3, b);
-                    return dfbl.d(dlwf.a.r());
-                } catch (fedk e4) {
+                    return dhmr.d(dohw.a.r());
+                } catch (fgsd e4) {
                     a.n("Malformed EnableBackupSkippedRequest protocol buffer", e4, new Object[0]);
                     return null;
                 }
             default:
-                arxoVar.m("Unsupported request: ".concat(String.valueOf(str2)), new Object[0]);
+                auadVar.m("Unsupported request: ".concat(String.valueOf(str2)), new Object[0]);
                 return null;
         }
     }

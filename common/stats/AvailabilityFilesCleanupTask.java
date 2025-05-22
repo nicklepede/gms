@@ -1,35 +1,35 @@
 package com.google.android.gms.common.stats;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asnv;
-import defpackage.asnz;
-import defpackage.bhfz;
-import defpackage.bqux;
-import defpackage.byln;
-import defpackage.fmut;
-import defpackage.fndk;
+import defpackage.aurp;
+import defpackage.aurt;
+import defpackage.bjkp;
+import defpackage.btco;
+import defpackage.cauf;
+import defpackage.fpmr;
+import defpackage.fpvj;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class AvailabilityFilesCleanupTask extends GmsTaskBoundService {
     public static final /* synthetic */ int a = 0;
-    private final asnv b;
+    private final aurp b;
 
     public AvailabilityFilesCleanupTask() {
-        this.b = asnz.a;
+        this.b = aurt.a;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        long a2 = this.b.a() - TimeUnit.HOURS.toMillis(fndk.a.a().d());
-        File b = bhfz.b();
+    public final int a(cauf caufVar) {
+        long a2 = this.b.a() - TimeUnit.HOURS.toMillis(fpvj.a.lK().d());
+        File b = bjkp.b();
         String[] list = b.list();
         if (list != null) {
             for (String str : list) {
-                File file = fmut.i() ? new File(bqux.a.b(b, str)) : new File(b, str);
-                long a3 = bhfz.a(file);
+                File file = fpmr.i() ? new File(btco.a.b(b, str)) : new File(b, str);
+                long a3 = bjkp.a(file);
                 if (a3 < 0 || a3 < a2) {
                     file.delete();
                 }
@@ -38,7 +38,7 @@ public class AvailabilityFilesCleanupTask extends GmsTaskBoundService {
         return 0;
     }
 
-    AvailabilityFilesCleanupTask(asnv asnvVar) {
-        this.b = asnvVar;
+    AvailabilityFilesCleanupTask(aurp aurpVar) {
+        this.b = aurpVar;
     }
 }

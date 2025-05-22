@@ -1,24 +1,24 @@
 package com.google.android.gms.ads.nonagon.signals.gmscore;
 
 import android.content.Context;
-import defpackage.asmf;
-import defpackage.enss;
-import defpackage.ensv;
+import defpackage.aupz;
+import defpackage.eqgl;
+import defpackage.eqgo;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class q implements com.google.android.gms.ads.nonagon.signals.e {
     final com.google.android.gms.ads.internal.cache.e a;
-    final ensv b;
+    final eqgo b;
     final Context c;
 
-    public q(com.google.android.gms.ads.internal.cache.e eVar, ensv ensvVar, Context context) {
+    public q(com.google.android.gms.ads.internal.cache.e eVar, eqgo eqgoVar, Context context) {
         this.a = eVar;
-        this.b = ensvVar;
+        this.b = eqgoVar;
         this.c = context;
     }
 
@@ -28,13 +28,13 @@ public final class q implements com.google.android.gms.ads.nonagon.signals.e {
     }
 
     @Override // com.google.android.gms.ads.nonagon.signals.e
-    public final enss b() {
+    public final eqgl b() {
         return this.b.submit(new Callable() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.p
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 q qVar = q.this;
                 final Context context = qVar.c;
-                enss submit = ((asmf) ((com.google.android.gms.ads.cache.l) qVar.a).b).submit(new Callable() { // from class: com.google.android.gms.ads.cache.k
+                eqgl submit = ((aupz) ((com.google.android.gms.ads.cache.l) qVar.a).b).submit(new Callable() { // from class: com.google.android.gms.ads.cache.k
                     @Override // java.util.concurrent.Callable
                     public final Object call() {
                         com.google.android.gms.ads.cache.policy.b d;

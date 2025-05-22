@@ -3,18 +3,18 @@ package com.google.android.gms.location.reporting;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cakz;
-import defpackage.cala;
-import defpackage.calf;
-import defpackage.calo;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cctp;
+import defpackage.cctq;
+import defpackage.cctv;
+import defpackage.ccue;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ReportingState extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new calf();
+    public static final Parcelable.Creator CREATOR = new cctv();
     public final boolean a;
     public final boolean b;
     public final Integer c;
@@ -46,19 +46,19 @@ public class ReportingState extends AbstractSafeParcelable {
     }
 
     public final int b() {
-        return cakz.a(this.h);
+        return cctp.a(this.h);
     }
 
     public final int c() {
-        return cala.a(this.g);
+        return cctq.a(this.g);
     }
 
     public final int d() {
-        return cala.a(this.f);
+        return cctq.a(this.f);
     }
 
     public final boolean e() {
-        return cala.b(this.f) && cala.b(this.g);
+        return cctq.b(this.f) && cctq.b(this.g);
     }
 
     public final boolean equals(Object obj) {
@@ -66,7 +66,7 @@ public class ReportingState extends AbstractSafeParcelable {
             return false;
         }
         ReportingState reportingState = (ReportingState) obj;
-        return this.f == reportingState.f && this.g == reportingState.g && this.a == reportingState.a && this.b == reportingState.b && this.h == reportingState.h && this.i == reportingState.i && arwb.b(this.c, reportingState.c) && this.d == reportingState.d && this.e == reportingState.e;
+        return this.f == reportingState.f && this.g == reportingState.g && this.a == reportingState.a && this.b == reportingState.b && this.h == reportingState.h && this.i == reportingState.i && atyq.b(this.c, reportingState.c) && this.d == reportingState.d && this.e == reportingState.e;
     }
 
     public final boolean f() {
@@ -79,22 +79,22 @@ public class ReportingState extends AbstractSafeParcelable {
 
     public final String toString() {
         Integer num = this.c;
-        String d = num != null ? calo.d(num) : "(hidden-from-unauthorized-caller)";
+        String d = num != null ? ccue.d(num) : "(hidden-from-unauthorized-caller)";
         return "ReportingState{reportingEnabled=" + this.f + ", historyEnabled=" + this.g + ", allowed=" + this.a + ", active=" + this.b + ", expectedOptInResult=" + this.h + ", expectedOptInResultAssumingLocationEnabled=" + this.i + ", deviceTag=" + d + ", canAccessSettings=" + this.d + ", hasMigratedToOdlh=" + this.e + "}";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, d());
-        arxc.o(parcel, 3, c());
-        arxc.e(parcel, 4, this.a);
-        arxc.e(parcel, 5, this.b);
-        arxc.o(parcel, 7, b());
-        arxc.F(parcel, 8, this.c);
-        arxc.o(parcel, 9, cakz.a(this.i));
-        arxc.e(parcel, 10, this.d);
-        arxc.e(parcel, 11, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, d());
+        atzr.o(parcel, 3, c());
+        atzr.e(parcel, 4, this.a);
+        atzr.e(parcel, 5, this.b);
+        atzr.o(parcel, 7, b());
+        atzr.F(parcel, 8, this.c);
+        atzr.o(parcel, 9, cctp.a(this.i));
+        atzr.e(parcel, 10, this.d);
+        atzr.e(parcel, 11, this.e);
+        atzr.c(parcel, a);
     }
 }

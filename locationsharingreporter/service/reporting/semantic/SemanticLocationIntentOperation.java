@@ -10,28 +10,28 @@ import com.google.android.gms.semanticlocation.PlaceEnterEvent;
 import com.google.android.gms.semanticlocation.PlaceOngoingEvent;
 import com.google.android.gms.semanticlocation.SemanticLocationEvent;
 import com.google.android.gms.semanticlocation.SemanticLocationState;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.cavm;
-import defpackage.cayn;
-import defpackage.cbbn;
-import defpackage.cbbo;
-import defpackage.cbbp;
-import defpackage.cbel;
-import defpackage.cbem;
-import defpackage.cben;
-import defpackage.ebfg;
-import defpackage.ebfl;
-import defpackage.ebgd;
-import defpackage.eiif;
-import defpackage.ejhf;
-import defpackage.enpf;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.fpws;
-import defpackage.fpxh;
-import defpackage.fpxm;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cdec;
+import defpackage.cdhi;
+import defpackage.cdkf;
+import defpackage.cdkg;
+import defpackage.cdkh;
+import defpackage.cdnd;
+import defpackage.cdne;
+import defpackage.cdnf;
+import defpackage.edrt;
+import defpackage.edry;
+import defpackage.edsq;
+import defpackage.ekvk;
+import defpackage.eluo;
+import defpackage.eqcy;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fsqm;
+import defpackage.fsrb;
+import defpackage.fsrg;
 import j$.util.Collection;
 import j$.util.Comparator;
 import j$.util.Objects;
@@ -46,85 +46,85 @@ import java.util.function.Predicate;
 import java.util.function.ToDoubleFunction;
 import java.util.function.ToIntFunction;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class SemanticLocationIntentOperation extends IntentOperation {
     public static final /* synthetic */ int a = 0;
-    private static final asot b = asot.b("LSR", asej.LOCATION_SHARING_REPORTER);
+    private static final ausn b = ausn.b("LSR", auid.LOCATION_SHARING_REPORTER);
 
-    private static boolean a(Account account, cayn caynVar) {
+    private static boolean a(Account account, cdhi cdhiVar) {
         try {
-            if (((Set) ((enpf) cavm.c().a()).v(fpws.i(), TimeUnit.MILLISECONDS)).contains(account.name)) {
+            if (((Set) ((eqcy) cdec.c().a()).v(fsqm.i(), TimeUnit.MILLISECONDS)).contains(account.name)) {
                 return false;
             }
-            ((ejhf) ((ejhf) b.h()).ah((char) 6008)).x("Account no longer sharing location, so clearing any cached semantic location and unsubscribing from CSL updates");
-            caynVar.d(account);
-            cbel.a(AppContextProvider.a(), account).b(cben.a(account));
+            ((eluo) ((eluo) b.h()).ai((char) 6027)).x("Account no longer sharing location, so clearing any cached semantic location and unsubscribing from CSL updates");
+            cdhiVar.d(account);
+            cdnd.a(AppContextProvider.a(), account).b(cdnf.a(account));
             return true;
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            ((ejhf) ((ejhf) ((ejhf) b.i()).s(e)).ah((char) 6009)).x("Error reading accounts sharing location");
+            ((eluo) ((eluo) ((eluo) b.i()).s(e)).ai((char) 6028)).x("Error reading accounts sharing location");
             return false;
         }
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (fpxm.c()) {
+        if (fsrg.c()) {
             String stringExtra = intent.getStringExtra("com.google.android.gms.locationsharingreporter.service.reporting.semantic.EXTRA_ACCOUNT");
-            if (eiif.c(stringExtra)) {
-                ((ejhf) ((ejhf) b.j()).ah((char) 6007)).x("Semantic location update without account extra");
+            if (ekvk.c(stringExtra)) {
+                ((eluo) ((eluo) b.j()).ai((char) 6026)).x("Semantic location update without account extra");
                 return;
             }
-            int i = cbbn.a;
-            if (fpxh.v()) {
-                fecj v = ebgd.a.v();
-                ebfl b2 = cbbp.b();
+            int i = cdkf.a;
+            if (fsrb.v()) {
+                fgrc v = edsq.a.v();
+                edry b2 = cdkh.b();
                 if (!v.b.L()) {
                     v.U();
                 }
-                ebgd ebgdVar = (ebgd) v.b;
+                edsq edsqVar = (edsq) v.b;
                 b2.getClass();
-                fedh fedhVar = ebgdVar.y;
-                if (!fedhVar.c()) {
-                    ebgdVar.y = fecp.E(fedhVar);
+                fgsa fgsaVar = edsqVar.y;
+                if (!fgsaVar.c()) {
+                    edsqVar.y = fgri.E(fgsaVar);
                 }
-                ebgdVar.y.add(b2);
-                ebgd ebgdVar2 = (ebgd) v.Q();
-                fecj v2 = ebfg.a.v();
+                edsqVar.y.add(b2);
+                edsq edsqVar2 = (edsq) v.Q();
+                fgrc v2 = edrt.a.v();
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                ebfg ebfgVar = (ebfg) v2.b;
-                ebgdVar2.getClass();
-                ebfgVar.c = ebgdVar2;
-                ebfgVar.b = 1;
-                cbbo.b(stringExtra, (ebfg) v2.Q());
+                edrt edrtVar = (edrt) v2.b;
+                edsqVar2.getClass();
+                edrtVar.c = edsqVar2;
+                edrtVar.b = 1;
+                cdkg.b(stringExtra, (edrt) v2.Q());
             }
             Account account = new Account(stringExtra, "com.google");
-            cayn a2 = cayn.a();
+            cdhi a2 = cdhi.a();
             if (a(account, a2)) {
                 return;
             }
             SemanticLocationState a3 = SemanticLocationState.a(intent);
             if (a3 == null) {
-                ((ejhf) ((ejhf) b.j()).ah((char) 6004)).x("Semantic location update without semantic location state");
+                ((eluo) ((eluo) b.j()).ai((char) 6023)).x("Semantic location update without semantic location state");
                 a2.d(account);
                 return;
             }
             List list = a3.b;
             if (list.isEmpty()) {
-                ((ejhf) ((ejhf) b.j()).ah((char) 6003)).x("Semantic location update without semantic location events");
+                ((eluo) ((eluo) b.j()).ai((char) 6022)).x("Semantic location update without semantic location events");
                 a2.d(account);
                 return;
             }
-            Optional max = Collection.EL.stream(list).filter(new Predicate() { // from class: cbeo
+            Optional max = Collection.EL.stream(list).filter(new Predicate() { // from class: cdng
                 public final /* synthetic */ Predicate and(Predicate predicate) {
                     return Predicate$CC.$default$and(this, predicate);
                 }
 
                 @Override // java.util.function.Predicate
                 /* renamed from: negate */
-                public final /* synthetic */ Predicate mo463negate() {
+                public final /* synthetic */ Predicate mo478negate() {
                     return Predicate$CC.$default$negate(this);
                 }
 
@@ -144,12 +144,14 @@ public final class SemanticLocationIntentOperation extends IntentOperation {
                         }
                         i2 = 3;
                     }
-                    if (cbem.a(semanticLocationEvent) >= fpxm.a.a().c()) {
-                        return ((double) (i2 == 1 ? ((PlaceEnterEvent) Objects.requireNonNull(semanticLocationEvent.d)).b : ((PlaceOngoingEvent) Objects.requireNonNull(semanticLocationEvent.f)).b)) >= fpxm.a.a().a();
+                    double a4 = cdne.a(semanticLocationEvent);
+                    fsrg fsrgVar = fsrg.a;
+                    if (a4 >= fsrgVar.lK().c()) {
+                        return ((double) (i2 == 1 ? ((PlaceEnterEvent) Objects.requireNonNull(semanticLocationEvent.d)).b : ((PlaceOngoingEvent) Objects.requireNonNull(semanticLocationEvent.f)).b)) >= fsrgVar.lK().a();
                     }
                     return false;
                 }
-            }).max(Comparator.EL.thenComparingDouble(Comparator.CC.comparingInt(new ToIntFunction() { // from class: cbep
+            }).max(Comparator.EL.thenComparingDouble(Comparator.CC.comparingInt(new ToIntFunction() { // from class: cdnh
                 @Override // java.util.function.ToIntFunction
                 public final int applyAsInt(Object obj) {
                     SemanticLocationEvent semanticLocationEvent = (SemanticLocationEvent) obj;
@@ -162,10 +164,10 @@ public final class SemanticLocationIntentOperation extends IntentOperation {
                     }
                     return -1;
                 }
-            }), new ToDoubleFunction() { // from class: cbeq
+            }), new ToDoubleFunction() { // from class: cdni
                 @Override // java.util.function.ToDoubleFunction
                 public final double applyAsDouble(Object obj) {
-                    return cbem.a((SemanticLocationEvent) obj);
+                    return cdne.a((SemanticLocationEvent) obj);
                 }
             }));
             if (!max.isPresent()) {
@@ -173,9 +175,9 @@ public final class SemanticLocationIntentOperation extends IntentOperation {
                 a2.d(account);
                 return;
             }
-            PlaceCandidate b3 = cbem.b((SemanticLocationEvent) max.get());
+            PlaceCandidate b3 = cdne.b((SemanticLocationEvent) max.get());
             if (b3 == null) {
-                ((ejhf) ((ejhf) b.j()).ah((char) 6001)).x("Semantic location update without place candidate");
+                ((eluo) ((eluo) b.j()).ai((char) 6020)).x("Semantic location update without place candidate");
             } else {
                 a2.c.put(account, b3);
             }

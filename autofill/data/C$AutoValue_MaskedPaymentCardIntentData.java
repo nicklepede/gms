@@ -1,8 +1,8 @@
 package com.google.android.gms.autofill.data;
 
-import defpackage.adtg;
+import defpackage.aftn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* renamed from: com.google.android.gms.autofill.data.$AutoValue_MaskedPaymentCardIntentData, reason: invalid class name */
 /* loaded from: classes3.dex */
 abstract class C$AutoValue_MaskedPaymentCardIntentData extends MaskedPaymentCardIntentData {
@@ -49,12 +49,12 @@ abstract class C$AutoValue_MaskedPaymentCardIntentData extends MaskedPaymentCard
 
     public final int hashCode() {
         int i = this.c;
-        adtg.b(i);
+        aftn.b(i);
         long j = this.a;
         return ((i ^ ((((int) (j ^ (j >>> 32))) ^ 1000003) * 1000003)) * 1000003) ^ this.b.hashCode();
     }
 
     public final String toString() {
-        return "MaskedPaymentCardIntentData{instrumentId=" + this.a + ", cardType=" + adtg.a(this.c) + ", legacyInstrumentId=" + this.b + "}";
+        return "MaskedPaymentCardIntentData{instrumentId=" + this.a + ", cardType=" + aftn.a(this.c) + ", legacyInstrumentId=" + this.b + "}";
     }
 }

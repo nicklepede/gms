@@ -5,31 +5,31 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bgho;
-import defpackage.bgkx;
+import defpackage.atzr;
+import defpackage.bime;
+import defpackage.bipn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class DebugInfoRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgkx();
-    public final bgho a;
+    public static final Parcelable.Creator CREATOR = new bipn();
+    public final bime a;
 
     public DebugInfoRequest(IBinder iBinder) {
-        bgho bghoVar;
+        bime bimeVar;
         if (iBinder == null) {
-            bghoVar = null;
+            bimeVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.fitness.internal.IDebugInfoCallback");
-            bghoVar = queryLocalInterface instanceof bgho ? (bgho) queryLocalInterface : new bgho(iBinder);
+            bimeVar = queryLocalInterface instanceof bime ? (bime) queryLocalInterface : new bime(iBinder);
         }
-        this.a = bghoVar;
+        this.a = bimeVar;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.D(parcel, 1, this.a.a);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.D(parcel, 1, this.a.a);
+        atzr.c(parcel, a);
     }
 }

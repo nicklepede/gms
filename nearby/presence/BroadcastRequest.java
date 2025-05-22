@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.WorkSource;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ckiw;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cmrb;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class BroadcastRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckiw();
+    public static final Parcelable.Creator CREATOR = new cmrb();
     public final PresenceIdentity a;
     public final PresenceAction[] b;
     public final boolean c;
@@ -47,7 +47,7 @@ public class BroadcastRequest extends AbstractSafeParcelable {
             return false;
         }
         BroadcastRequest broadcastRequest = (BroadcastRequest) obj;
-        return arwb.b(this.a, broadcastRequest.a) && Arrays.equals(this.b, broadcastRequest.b) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(broadcastRequest.c)) && Arrays.equals(this.d, broadcastRequest.d) && arwb.b(this.e, broadcastRequest.e) && arwb.b(Boolean.valueOf(this.f), Boolean.valueOf(broadcastRequest.f)) && Arrays.equals(this.g, broadcastRequest.g) && arwb.b(Integer.valueOf(this.h), Integer.valueOf(broadcastRequest.h)) && arwb.b(this.i, broadcastRequest.i);
+        return atyq.b(this.a, broadcastRequest.a) && Arrays.equals(this.b, broadcastRequest.b) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(broadcastRequest.c)) && Arrays.equals(this.d, broadcastRequest.d) && atyq.b(this.e, broadcastRequest.e) && atyq.b(Boolean.valueOf(this.f), Boolean.valueOf(broadcastRequest.f)) && Arrays.equals(this.g, broadcastRequest.g) && atyq.b(Integer.valueOf(this.h), Integer.valueOf(broadcastRequest.h)) && atyq.b(this.i, broadcastRequest.i);
     }
 
     public final int hashCode() {
@@ -66,16 +66,16 @@ public class BroadcastRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         PresenceIdentity presenceIdentity = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, presenceIdentity, i, false);
-        arxc.J(parcel, 2, this.b, i);
-        arxc.e(parcel, 3, this.c);
-        arxc.p(parcel, 4, this.d, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.e(parcel, 6, this.f);
-        arxc.p(parcel, 7, this.g, false);
-        arxc.o(parcel, 8, this.h);
-        arxc.t(parcel, 9, this.i, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, presenceIdentity, i, false);
+        atzr.J(parcel, 2, this.b, i);
+        atzr.e(parcel, 3, this.c);
+        atzr.p(parcel, 4, this.d, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.e(parcel, 6, this.f);
+        atzr.p(parcel, 7, this.g, false);
+        atzr.o(parcel, 8, this.h);
+        atzr.t(parcel, 9, this.i, i, false);
+        atzr.c(parcel, a);
     }
 }

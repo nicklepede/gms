@@ -4,58 +4,58 @@ import android.content.Context;
 import android.database.sqlite.SQLiteException;
 import android.os.Bundle;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.dfby;
-import defpackage.dfbz;
-import defpackage.dfca;
-import defpackage.dfdr;
-import defpackage.ejhf;
-import defpackage.fsld;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.dhne;
+import defpackage.dhnf;
+import defpackage.dhng;
+import defpackage.dhox;
+import defpackage.eluo;
+import defpackage.fvge;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class TelephonySpamChimeraService extends GmsTaskChimeraService {
-    private static final asot a = asot.b("TelephonySpamChimeraService", asej.TELEPHONY_SPAM);
+    private static final ausn a = ausn.b("TelephonySpamChimeraService", auid.TELEPHONY_SPAM);
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        asot asotVar = a;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 11135)).x("Running Telephony Spam Chimera Service");
-        dfca dfcaVar = new dfca(getApplicationContext());
-        Bundle bundle = bylnVar.b;
+    public final int a(cauf caufVar) {
+        ausn ausnVar = a;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 11138)).x("Running Telephony Spam Chimera Service");
+        dhng dhngVar = new dhng(getApplicationContext());
+        Bundle bundle = caufVar.b;
         if (bundle == null) {
             bundle = new Bundle();
         }
         int i = 2;
         if (bundle.getDouble("Action") == 1.0d) {
-            fsld fsldVar = fsld.a;
-            if (fsldVar.a().C()) {
-                ((ejhf) ((ejhf) asotVar.h()).ah((char) 11138)).x("Cleaning SIP Header local table of old entries");
+            fvge fvgeVar = fvge.a;
+            if (fvgeVar.lK().C()) {
+                ((eluo) ((eluo) ausnVar.h()).ai((char) 11141)).x("Cleaning SIP Header local table of old entries");
                 Context applicationContext = getApplicationContext();
-                asot asotVar2 = dfdr.a;
-                if (dfby.f(applicationContext, 1).isEmpty()) {
-                    ((ejhf) ((ejhf) dfdr.a.h()).ah((char) 11117)).x("Call spam module disabled. Skipping cleaning cache sip header table.");
+                ausn ausnVar2 = dhox.a;
+                if (dhne.f(applicationContext, 1).isEmpty()) {
+                    ((eluo) ((eluo) dhox.a.h()).ai((char) 11120)).x("Call spam module disabled. Skipping cleaning cache sip header table.");
                 } else {
-                    dfbz.e(applicationContext);
-                    long currentTimeMillis = System.currentTimeMillis() - TimeUnit.HOURS.toMillis(fsldVar.a().i());
+                    dhnf.e(applicationContext);
+                    long currentTimeMillis = System.currentTimeMillis() - TimeUnit.HOURS.toMillis(fvgeVar.lK().i());
                     try {
-                        dfbz.a.getWritableDatabase().delete("sip_header_table", "timestamp < ?", new String[]{String.valueOf(currentTimeMillis)});
+                        dhnf.a.getWritableDatabase().delete("sip_header_table", "timestamp < ?", new String[]{String.valueOf(currentTimeMillis)});
                     } catch (SQLiteException unused) {
                     }
                 }
-                ((ejhf) ((ejhf) a.h()).ah((char) 11139)).x("Syncing Call Spam List");
-                Bundle bundle2 = bylnVar.b;
+                ((eluo) ((eluo) a.h()).ai((char) 11142)).x("Syncing Call Spam List");
+                Bundle bundle2 = caufVar.b;
                 bundle2.putInt("SpamList Type", 0);
-                i = dfdr.a(new byln(bylnVar.a, bundle2), dfcaVar, getApplicationContext());
+                i = dhox.a(new cauf(caufVar.a, bundle2), dhngVar, getApplicationContext());
             }
-            if (fsld.a.a().D()) {
-                ((ejhf) ((ejhf) a.h()).ah((char) 11137)).x("Syncing Sms Spam List");
-                Bundle bundle3 = bylnVar.b;
+            if (fvge.a.lK().D()) {
+                ((eluo) ((eluo) a.h()).ai((char) 11140)).x("Syncing Sms Spam List");
+                Bundle bundle3 = caufVar.b;
                 bundle3.putInt("SpamList Type", 1);
-                return dfdr.a(new byln(bylnVar.a, bundle3), new dfca(getApplicationContext()), getApplicationContext());
+                return dhox.a(new cauf(caufVar.a, bundle3), new dhng(getApplicationContext()), getApplicationContext());
             }
         }
         return i;

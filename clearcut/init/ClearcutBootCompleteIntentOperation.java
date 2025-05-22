@@ -6,26 +6,26 @@ import android.os.Build;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.clearcut.service.ClearcutLoggerChimeraService;
-import defpackage.apvc;
-import defpackage.dnnr;
-import defpackage.fmhx;
+import defpackage.arxt;
+import defpackage.dpya;
+import defpackage.fozj;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ClearcutBootCompleteIntentOperation extends IntentOperation {
     private static void a() {
-        if (fmhx.f()) {
+        if (fozj.f()) {
             return;
         }
-        ClearcutLoggerChimeraService.a.execute(new Runnable() { // from class: aqaj
+        ClearcutLoggerChimeraService.a.execute(new Runnable() { // from class: asda
             @Override // java.lang.Runnable
             public final void run() {
-                aqev aqevVar = null;
+                ashm ashmVar = null;
                 try {
                     try {
-                        aqevVar = aqev.c();
-                        aqep a = aqevVar.a();
+                        ashmVar = ashm.c();
+                        ashg a = ashmVar.a();
                         if (a != null) {
                             a.B(3);
                         }
@@ -33,7 +33,7 @@ public class ClearcutBootCompleteIntentOperation extends IntentOperation {
                         Log.e("CCTBootComplete", "Could not write internal log event: ", e);
                     }
                 } finally {
-                    aspm.f(aqevVar);
+                    autg.f(ashmVar);
                 }
             }
         });
@@ -65,19 +65,19 @@ public class ClearcutBootCompleteIntentOperation extends IntentOperation {
         if (c != 1) {
             return;
         }
-        int i = apvc.a;
+        int i = arxt.a;
         if (Build.VERSION.SDK_INT < 24) {
-            apvc.a(this);
+            arxt.a(this);
             SharedPreferences sharedPreferences = getSharedPreferences("bootCount", 0);
             int i2 = sharedPreferences.getInt("bootCount", 0);
             SharedPreferences.Editor edit = sharedPreferences.edit();
             int i3 = i2 + 1;
             edit.putInt("bootCount", i3);
             edit.apply();
-            apvc.a = i3;
+            arxt.a = i3;
             Log.i("CCTBootCount", "(BOOT_COMPLETE intent)Device boot count in Clearcut increased.");
         }
-        if (dnnr.j()) {
+        if (dpya.j()) {
             return;
         }
         a();

@@ -3,15 +3,15 @@ package com.google.android.gms.clearcut.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqba;
-import defpackage.arxc;
-import defpackage.asfl;
-import defpackage.asfp;
+import defpackage.asdr;
+import defpackage.atzr;
+import defpackage.aujf;
+import defpackage.aujj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class DataCollectionIdentifierParcelable extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new aqba();
+    public static final Parcelable.Creator CREATOR = new asdr();
     public final int a;
     public final int b;
     public final int c;
@@ -25,16 +25,16 @@ public final class DataCollectionIdentifierParcelable extends AbstractSafeParcel
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 
-    public DataCollectionIdentifierParcelable(asfp asfpVar, int i, asfl asflVar) {
-        this.a = asfpVar.a();
+    public DataCollectionIdentifierParcelable(aujj aujjVar, int i, aujf aujfVar) {
+        this.a = aujjVar.a();
         this.b = i;
-        this.c = asflVar.a();
+        this.c = aujfVar.a();
     }
 }

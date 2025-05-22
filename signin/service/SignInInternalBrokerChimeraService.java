@@ -5,51 +5,51 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.IBinder;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.aquo;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqs;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.dcow;
-import defpackage.dcuc;
-import defpackage.eiig;
-import defpackage.ejck;
-import defpackage.ejhf;
+import defpackage.asxd;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auum;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.dfab;
+import defpackage.dffh;
+import defpackage.ekvl;
+import defpackage.elpp;
+import defpackage.eluo;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class SignInInternalBrokerChimeraService extends bxgd {
-    private static final asot a = asot.b("SignInInternalBrokerSrv", asej.SIGNIN);
+public final class SignInInternalBrokerChimeraService extends bzot {
+    private static final ausn a = ausn.b("SignInInternalBrokerSrv", auid.SIGNIN);
 
     public SignInInternalBrokerChimeraService() {
-        super(44, "com.google.android.gms.signin.service.INTERNAL_START", ejck.a, 1, 9);
+        super(44, "com.google.android.gms.signin.service.INTERNAL_START", elpp.a, 1, 9);
         setWantIntentExtras(true);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         throw new UnsupportedOperationException();
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final IBinder onBind(Intent intent) {
         if (!"com.google.android.gms.signin.service.INTERNAL_START".equals(intent.getAction())) {
-            ((ejhf) ((ejhf) a.i()).ah((char) 10890)).B("request for unknown service %s", intent.getAction());
+            ((eluo) ((eluo) a.i()).ai((char) 10893)).B("request for unknown service %s", intent.getAction());
             return null;
         }
         String stringExtra = intent.getStringExtra("com.google.android.gms.signin.service.SignInInternalBrokerService.PACKAGE_NAME");
-        eiig.x(stringExtra);
+        ekvl.y(stringExtra);
         Bundle bundleExtra = intent.getBundleExtra("com.google.android.gms.signin.service.SignInInternalBrokerService.SIGNIN_OPTIONS");
         if (bundleExtra == null) {
             bundleExtra = new Bundle();
         }
         String[] stringArrayExtra = intent.getStringArrayExtra("com.google.android.gms.signin.service.SignInInternalBrokerService.SCOPES");
-        eiig.x(stringArrayExtra);
-        Set b = asqs.b(stringArrayExtra);
+        ekvl.y(stringArrayExtra);
+        Set b = auum.b(stringArrayExtra);
         int intExtra = intent.getIntExtra("com.google.android.gms.signin.service.SignInInternalBrokerService.CALLING_UID", 0);
-        int i = aquo.c;
-        return new dcuc(this, stringExtra, b, intExtra, (Account) bundleExtra.getParcelable("com.google.android.gms.signin.internal.clientRequestedAccount"), dcow.a(bundleExtra).b(), l());
+        int i = asxd.c;
+        return new dffh(this, stringExtra, b, intExtra, (Account) bundleExtra.getParcelable("com.google.android.gms.signin.internal.clientRequestedAccount"), dfab.a(bundleExtra).b(), l());
     }
 }

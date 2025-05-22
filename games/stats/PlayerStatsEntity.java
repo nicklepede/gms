@@ -4,17 +4,17 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.games.internal.GamesAbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.bhse;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bjwt;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PlayerStatsEntity extends GamesAbstractSafeParcelable implements PlayerStats {
-    public static final Parcelable.Creator CREATOR = new bhse();
+    public static final Parcelable.Creator CREATOR = new bjwt();
     public final float a;
     public final float b;
     public final int c;
@@ -74,7 +74,7 @@ public class PlayerStatsEntity extends GamesAbstractSafeParcelable implements Pl
             return true;
         }
         PlayerStats playerStats = (PlayerStats) obj;
-        return arwb.b(Float.valueOf(playerStats.a()), Float.valueOf(a())) && arwb.b(Float.valueOf(playerStats.b()), Float.valueOf(b())) && arwb.b(Integer.valueOf(playerStats.h()), Integer.valueOf(h())) && arwb.b(Integer.valueOf(playerStats.i()), Integer.valueOf(i())) && arwb.b(Integer.valueOf(playerStats.j()), Integer.valueOf(j())) && arwb.b(Float.valueOf(playerStats.d()), Float.valueOf(d())) && arwb.b(Float.valueOf(playerStats.e()), Float.valueOf(e())) && arwb.b(Float.valueOf(playerStats.f()), Float.valueOf(f())) && arwb.b(Float.valueOf(playerStats.c()), Float.valueOf(c())) && arwb.b(Float.valueOf(playerStats.g()), Float.valueOf(g()));
+        return atyq.b(Float.valueOf(playerStats.a()), Float.valueOf(a())) && atyq.b(Float.valueOf(playerStats.b()), Float.valueOf(b())) && atyq.b(Integer.valueOf(playerStats.h()), Integer.valueOf(h())) && atyq.b(Integer.valueOf(playerStats.i()), Integer.valueOf(i())) && atyq.b(Integer.valueOf(playerStats.j()), Integer.valueOf(j())) && atyq.b(Float.valueOf(playerStats.d()), Float.valueOf(d())) && atyq.b(Float.valueOf(playerStats.e()), Float.valueOf(e())) && atyq.b(Float.valueOf(playerStats.f()), Float.valueOf(f())) && atyq.b(Float.valueOf(playerStats.c()), Float.valueOf(c())) && atyq.b(Float.valueOf(playerStats.g()), Float.valueOf(g()));
     }
 
     @Override // com.google.android.gms.games.stats.PlayerStats
@@ -108,38 +108,38 @@ public class PlayerStatsEntity extends GamesAbstractSafeParcelable implements Pl
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("AverageSessionLength", Float.valueOf(a()), arrayList);
-        arwa.b("ChurnProbability", Float.valueOf(b()), arrayList);
-        arwa.b("DaysSinceLastPlayed", Integer.valueOf(h()), arrayList);
-        arwa.b("NumberOfPurchases", Integer.valueOf(i()), arrayList);
-        arwa.b("NumberOfSessions", Integer.valueOf(j()), arrayList);
-        arwa.b("SessionPercentile", Float.valueOf(d()), arrayList);
-        arwa.b("SpendPercentile", Float.valueOf(e()), arrayList);
-        arwa.b("SpendProbability", Float.valueOf(f()), arrayList);
-        arwa.b("HighSpenderProbability", Float.valueOf(c()), arrayList);
-        arwa.b("TotalSpendNext28Days", Float.valueOf(g()), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("AverageSessionLength", Float.valueOf(a()), arrayList);
+        atyp.b("ChurnProbability", Float.valueOf(b()), arrayList);
+        atyp.b("DaysSinceLastPlayed", Integer.valueOf(h()), arrayList);
+        atyp.b("NumberOfPurchases", Integer.valueOf(i()), arrayList);
+        atyp.b("NumberOfSessions", Integer.valueOf(j()), arrayList);
+        atyp.b("SessionPercentile", Float.valueOf(d()), arrayList);
+        atyp.b("SpendPercentile", Float.valueOf(e()), arrayList);
+        atyp.b("SpendProbability", Float.valueOf(f()), arrayList);
+        atyp.b("HighSpenderProbability", Float.valueOf(c()), arrayList);
+        atyp.b("TotalSpendNext28Days", Float.valueOf(g()), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         float f = this.a;
-        int a = arxc.a(parcel);
-        arxc.l(parcel, 1, f);
-        arxc.l(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.o(parcel, 4, this.d);
-        arxc.o(parcel, 5, this.e);
-        arxc.l(parcel, 6, this.f);
-        arxc.l(parcel, 7, this.g);
-        arxc.g(parcel, 8, this.h, false);
-        arxc.l(parcel, 9, this.i);
-        arxc.l(parcel, 10, this.j);
-        arxc.l(parcel, 11, this.k);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.l(parcel, 1, f);
+        atzr.l(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.o(parcel, 4, this.d);
+        atzr.o(parcel, 5, this.e);
+        atzr.l(parcel, 6, this.f);
+        atzr.l(parcel, 7, this.g);
+        atzr.g(parcel, 8, this.h, false);
+        atzr.l(parcel, 9, this.i);
+        atzr.l(parcel, 10, this.j);
+        atzr.l(parcel, 11, this.k);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

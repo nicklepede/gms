@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.ParcelUuid;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ckbv;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cmka;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class BleFilter extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckbv();
+    public static final Parcelable.Creator CREATOR = new cmka();
     public final int a;
     public final ParcelUuid b;
     public final ParcelUuid c;
@@ -62,7 +62,7 @@ public final class BleFilter extends AbstractSafeParcelable {
         }
         if (obj != null && getClass() == obj.getClass()) {
             BleFilter bleFilter = (BleFilter) obj;
-            if (this.g == bleFilter.g && Arrays.equals(this.h, bleFilter.h) && Arrays.equals(this.i, bleFilter.i) && arwb.b(this.d, bleFilter.d) && Arrays.equals(this.e, bleFilter.e) && Arrays.equals(this.f, bleFilter.f) && arwb.b(this.b, bleFilter.b) && arwb.b(this.c, bleFilter.c)) {
+            if (this.g == bleFilter.g && Arrays.equals(this.h, bleFilter.h) && Arrays.equals(this.i, bleFilter.i) && atyq.b(this.d, bleFilter.d) && Arrays.equals(this.e, bleFilter.e) && Arrays.equals(this.f, bleFilter.f) && atyq.b(this.b, bleFilter.b) && atyq.b(this.c, bleFilter.c)) {
                 return true;
             }
         }
@@ -76,16 +76,16 @@ public final class BleFilter extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.t(parcel, 4, this.b, i, false);
-        arxc.t(parcel, 5, this.c, i, false);
-        arxc.t(parcel, 6, this.d, i, false);
-        arxc.i(parcel, 7, this.e, false);
-        arxc.i(parcel, 8, this.f, false);
-        arxc.o(parcel, 9, this.g);
-        arxc.i(parcel, 10, this.h, false);
-        arxc.i(parcel, 11, this.i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.t(parcel, 4, this.b, i, false);
+        atzr.t(parcel, 5, this.c, i, false);
+        atzr.t(parcel, 6, this.d, i, false);
+        atzr.i(parcel, 7, this.e, false);
+        atzr.i(parcel, 8, this.f, false);
+        atzr.o(parcel, 9, this.g);
+        atzr.i(parcel, 10, this.h, false);
+        atzr.i(parcel, 11, this.i, false);
+        atzr.c(parcel, a);
     }
 }

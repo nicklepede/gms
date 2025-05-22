@@ -5,65 +5,65 @@ import android.content.Intent;
 import android.text.TextUtils;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
 import com.google.android.gms.nearby.fastpair.sass.device.SassDevice$1;
-import defpackage.ciko;
-import defpackage.eigd;
+import defpackage.ckst;
+import defpackage.ekti;
 import java.util.ArrayList;
 import java.util.concurrent.Executor;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class SassDevice$1 extends TracingBroadcastReceiver {
     final /* synthetic */ Executor a;
-    public final /* synthetic */ ciko b;
+    public final /* synthetic */ ckst b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public SassDevice$1(ciko cikoVar, Executor executor) {
+    public SassDevice$1(ckst ckstVar, Executor executor) {
         super("nearby", "ConfigReceiver");
         this.a = executor;
-        this.b = cikoVar;
+        this.b = ckstVar;
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, final Intent intent) {
+    public final void jP(Context context, final Intent intent) {
         final ArrayList<Integer> integerArrayListExtra;
         if (intent == null || !intent.hasExtra("com.google.android.gms.nearby.fastpair.sass.device.EXTRA_ADDRESS")) {
             return;
         }
         String stringExtra = intent.getStringExtra("com.google.android.gms.nearby.fastpair.sass.device.EXTRA_ADDRESS");
-        if (TextUtils.isEmpty(stringExtra) || !eigd.e(this.b.b.a.getAddress(), stringExtra)) {
+        if (TextUtils.isEmpty(stringExtra) || !ekti.e(this.b.b.a.getAddress(), stringExtra)) {
             return;
         }
         if ("com.google.android.gms.nearby.fastpair.sass.device.ACTION_MULTI_POINT_CONFIG_CHANGE_BY_USER".equals(intent.getAction())) {
             if (intent.hasExtra("com.google.android.gms.nearby.fastpair.sass.device.EXTRA_ENABLE_MULTIPOINT")) {
-                this.a.execute(new Runnable() { // from class: cikh
+                this.a.execute(new Runnable() { // from class: cksm
                     @Override // java.lang.Runnable
                     public final void run() {
-                        enss a;
+                        eqgl a;
                         final int i = true != intent.getBooleanExtra("com.google.android.gms.nearby.fastpair.sass.device.EXTRA_ENABLE_MULTIPOINT", false) ? 6 : 5;
-                        final ciko cikoVar = SassDevice$1.this.b;
-                        int b = cihe.b(cikoVar.d().e);
+                        final ckst ckstVar = SassDevice$1.this.b;
+                        int b = ckpj.b(ckstVar.d().e);
                         if (b == 0) {
                             b = 2;
                         }
                         if (b == i) {
-                            ((ejhf) cikoVar.o.d().ah(7154)).B("SassDevice: receiving ACTION_MULTI_POINT_CONFIG_CHANGE_BY_USER to %s, but it's the same as current, ignore", cihe.a(i));
+                            ((eluo) ckstVar.o.d().ai(7103)).B("SassDevice: receiving ACTION_MULTI_POINT_CONFIG_CHANGE_BY_USER to %s, but it's the same as current, ignore", ckpj.a(i));
                             return;
                         }
-                        ((ejhf) cikoVar.o.d().ah(7153)).B("SassDevice: receiving ACTION_MULTI_POINT_CONFIG_CHANGE_BY_USER to %s", cihe.a(i));
-                        dniw dniwVar = dniw.UNKNOWN;
+                        ((eluo) ckstVar.o.d().ai(7102)).B("SassDevice: receiving ACTION_MULTI_POINT_CONFIG_CHANGE_BY_USER to %s", ckpj.a(i));
+                        dptf dptfVar = dptf.UNKNOWN;
                         if (i - 1 != 5) {
-                            ((ejhf) cikoVar.o.d().ah(7199)).x("SassDevice: Update multipoint state to enabled");
-                            a = cikoVar.q.a(dnfa.EVENT_SET_MULTI_POINT_STATE, dniv.e);
+                            ((eluo) ckstVar.o.d().ai(7148)).x("SassDevice: Update multipoint state to enabled");
+                            a = ckstVar.q.a(dppj.EVENT_SET_MULTI_POINT_STATE, dpte.e);
                         } else {
-                            ((ejhf) cikoVar.o.d().ah(7198)).x("SassDevice: Update multipoint state to disabled");
-                            a = cikoVar.q.a(dnfa.EVENT_SET_MULTI_POINT_STATE, dniv.f);
+                            ((eluo) ckstVar.o.d().ai(7147)).x("SassDevice: Update multipoint state to disabled");
+                            a = ckstVar.q.a(dppj.EVENT_SET_MULTI_POINT_STATE, dpte.f);
                         }
-                        cinx.a(a, new iru() { // from class: cijn
-                            @Override // defpackage.iru
+                        ckwc.a(a, new itk() { // from class: ckrs
+                            @Override // defpackage.itk
                             public final void a(Object obj) {
-                                ciko.this.C(((ciny) obj).a(), i);
+                                ckst.this.C(((ckwd) obj).a(), i);
                             }
-                        }, cikoVar.e);
+                        }, ckstVar.e);
                     }
                 });
             }
@@ -71,24 +71,24 @@ public class SassDevice$1 extends TracingBroadcastReceiver {
             if (!"com.google.android.gms.nearby.fastpair.sass.device.ACTION_SWITCH_PREFERENCE_CHANGE_BY_USER".equals(intent.getAction()) || (integerArrayListExtra = intent.getIntegerArrayListExtra("com.google.android.gms.nearby.fastpair.sass.device.EXTRA_SWITCH_PREFERENCE_LIST")) == null) {
                 return;
             }
-            this.a.execute(new Runnable() { // from class: ciki
+            this.a.execute(new Runnable() { // from class: cksn
                 @Override // java.lang.Runnable
                 public final void run() {
-                    dnfa dnfaVar = dnfa.EVENT_SET_SWITCH_PREFERENCE;
-                    dnio dnioVar = new dnio((short[]) null);
+                    dppj dppjVar = dppj.EVENT_SET_SWITCH_PREFERENCE;
+                    dpsx dpsxVar = new dpsx((short[]) null);
                     ArrayList arrayList = integerArrayListExtra;
-                    dnioVar.D(dnix.A2DP_OVER_A2DP, ((Integer) arrayList.get(0)).intValue());
-                    dnioVar.D(dnix.HFP_OVER_HFP, ((Integer) arrayList.get(1)).intValue());
-                    dnioVar.D(dnix.A2DP_OVER_HFP, ((Integer) arrayList.get(2)).intValue());
-                    dnioVar.D(dnix.HFP_OVER_A2DP, ((Integer) arrayList.get(3)).intValue());
-                    byte[] p = dnioVar.p();
-                    final ciko cikoVar = SassDevice$1.this.b;
-                    cinx.a(cikoVar.q.a(dnfaVar, p), new iru() { // from class: cijz
-                        @Override // defpackage.iru
+                    dpsxVar.D(dptg.A2DP_OVER_A2DP, ((Integer) arrayList.get(0)).intValue());
+                    dpsxVar.D(dptg.HFP_OVER_HFP, ((Integer) arrayList.get(1)).intValue());
+                    dpsxVar.D(dptg.A2DP_OVER_HFP, ((Integer) arrayList.get(2)).intValue());
+                    dpsxVar.D(dptg.HFP_OVER_A2DP, ((Integer) arrayList.get(3)).intValue());
+                    byte[] p = dpsxVar.p();
+                    final ckst ckstVar = SassDevice$1.this.b;
+                    ckwc.a(ckstVar.q.a(dppjVar, p), new itk() { // from class: ckse
+                        @Override // defpackage.itk
                         public final void a(Object obj) {
-                            ((ejhf) ciko.this.o.d().ah(7179)).B("SassDevice: setSeekerSwitchPreference result=%s", ((ciny) obj).a);
+                            ((eluo) ckst.this.o.d().ai(7128)).B("SassDevice: setSeekerSwitchPreference result=%s", ((ckwd) obj).a);
                         }
-                    }, cikoVar.e);
+                    }, ckstVar.e);
                 }
             });
         }

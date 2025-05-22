@@ -13,9 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import com.google.android.gms.nearby.sharing.animation.DividerFadeTransition;
-import defpackage.clzc;
+import defpackage.cohk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class DividerFadeTransition extends Transition {
     public static final /* synthetic */ int a = 0;
@@ -71,7 +71,7 @@ public class DividerFadeTransition extends Transition {
             return null;
         }
         ObjectAnimator ofInt = ObjectAnimator.ofInt(dividerDrawable, "alpha", ((Integer) transitionValues.values.get("com.google.android.gms.nearby.sharing.animation:DividerFadeTransition:alpha")).intValue(), ((Integer) transitionValues2.values.get("com.google.android.gms.nearby.sharing.animation:DividerFadeTransition:alpha")).intValue());
-        ofInt.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: cmdm
+        ofInt.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: colu
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
                 int i = DividerFadeTransition.a;
@@ -89,7 +89,7 @@ public class DividerFadeTransition extends Transition {
     public DividerFadeTransition(Context context, AttributeSet attributeSet) {
         this.c = 2;
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, clzc.a, 0, 0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, cohk.a, 0, 0);
             if (obtainStyledAttributes.hasValue(0)) {
                 this.c = new int[]{1, 2}[obtainStyledAttributes.getInt(0, 0)];
             }

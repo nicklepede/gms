@@ -3,14 +3,14 @@ package com.google.android.gms.ads.internal.cache;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arxb;
+import defpackage.atzq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class d implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int h = arxb.h(parcel);
+        int h = atzq.h(parcel);
         boolean z = false;
         int i = 0;
         String str = null;
@@ -23,43 +23,43 @@ public final class d implements Parcelable.Creator {
         long j2 = 0;
         while (parcel.dataPosition() < h) {
             int readInt = parcel.readInt();
-            switch (arxb.d(readInt)) {
+            switch (atzq.d(readInt)) {
                 case 2:
-                    str = arxb.s(parcel, readInt);
+                    str = atzq.s(parcel, readInt);
                     break;
                 case 3:
-                    j = arxb.i(parcel, readInt);
+                    j = atzq.i(parcel, readInt);
                     break;
                 case 4:
-                    str2 = arxb.s(parcel, readInt);
+                    str2 = atzq.s(parcel, readInt);
                     break;
                 case 5:
-                    str3 = arxb.s(parcel, readInt);
+                    str3 = atzq.s(parcel, readInt);
                     break;
                 case 6:
-                    str4 = arxb.s(parcel, readInt);
+                    str4 = atzq.s(parcel, readInt);
                     break;
                 case 7:
-                    bundle = arxb.j(parcel, readInt);
+                    bundle = atzq.j(parcel, readInt);
                     break;
                 case 8:
-                    z = arxb.D(parcel, readInt);
+                    z = atzq.D(parcel, readInt);
                     break;
                 case 9:
-                    j2 = arxb.i(parcel, readInt);
+                    j2 = atzq.i(parcel, readInt);
                     break;
                 case 10:
-                    str5 = arxb.s(parcel, readInt);
+                    str5 = atzq.s(parcel, readInt);
                     break;
                 case 11:
-                    i = arxb.f(parcel, readInt);
+                    i = atzq.f(parcel, readInt);
                     break;
                 default:
-                    arxb.C(parcel, readInt);
+                    atzq.C(parcel, readInt);
                     break;
             }
         }
-        arxb.A(parcel, h);
+        atzq.A(parcel, h);
         return new CacheOffering(str, j, str2, str3, str4, bundle, z, j2, str5, i);
     }
 

@@ -10,12 +10,12 @@ import com.google.android.gms.nearby.connection.ConnectionOptions;
 import com.google.android.gms.nearby.connection.PayloadTransferUpdate;
 import com.google.android.gms.nearby.presence.PresenceDevice;
 import defpackage.a;
-import defpackage.cbmw;
+import defpackage.cdvo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class ClientNearbyCoordinator_Bundler implements Bundler {
-    public static final Parcelable.Creator CREATOR = new cbmw();
+    public static final Parcelable.Creator CREATOR = new cdvo();
 
     @Override // com.google.android.enterprise.connectedapps.internal.Bundler
     public final Object a(Bundle bundle, String str, BundlerType bundlerType) {

@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.fido.u2f.api.common.ErrorCode;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
 public enum ErrorCode implements Parcelable {
@@ -15,7 +15,7 @@ public enum ErrorCode implements Parcelable {
     DEVICE_INELIGIBLE(4),
     TIMEOUT(5);
 
-    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: bcqm
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() { // from class: berz
         @Override // android.os.Parcelable.Creator
         public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
             return ErrorCode.a(parcel.readInt());

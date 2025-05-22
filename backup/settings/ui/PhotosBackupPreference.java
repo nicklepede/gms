@@ -9,56 +9,56 @@ import android.util.AttributeSet;
 import android.widget.Toast;
 import com.google.android.gms.R;
 import com.google.android.gms.backup.settings.ui.PhotosBackupPreference;
-import defpackage.ahtf;
-import defpackage.ahwd;
-import defpackage.ahxo;
-import defpackage.ahyj;
-import defpackage.aiaa;
-import defpackage.aiab;
-import defpackage.ajwx;
-import defpackage.ajza;
-import defpackage.ajzb;
-import defpackage.ajzc;
-import defpackage.ajzd;
-import defpackage.ajzf;
-import defpackage.arxo;
-import defpackage.asmd;
-import defpackage.byhr;
-import defpackage.dvvv;
-import defpackage.qfp;
+import defpackage.ajtv;
+import defpackage.ajwt;
+import defpackage.ajye;
+import defpackage.ajyz;
+import defpackage.akaq;
+import defpackage.akar;
+import defpackage.alxv;
+import defpackage.alzy;
+import defpackage.alzz;
+import defpackage.amaa;
+import defpackage.amab;
+import defpackage.amad;
+import defpackage.auad;
+import defpackage.aupx;
+import defpackage.caqj;
+import defpackage.dyhw;
+import defpackage.ryt;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class PhotosBackupPreference extends PhotosPreference {
     public String G;
     public boolean H;
     public String I;
-    public ahtf J;
-    public final aiab K;
+    public ajtv J;
+    public final akar K;
     private boolean L;
-    public final dvvv b;
-    public final ahxo c;
-    public ahyj d;
+    public final dyhw b;
+    public final ajye c;
+    public ajyz d;
     public final Handler e;
     public boolean f;
     public boolean g;
-    public final qfp h;
+    public final ryt h;
     public String i;
-    public static final arxo a = ahwd.a("PhotosBackupPreference");
+    public static final auad a = ajwt.a("PhotosBackupPreference");
     private static final int M = 2;
 
     public PhotosBackupPreference(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, ahxo.b(context), ahyj.a(context), new ahtf(context));
+        this(context, attributeSet, ajye.b(context), ajyz.a(context), new ajtv(context));
     }
 
     @Override // androidx.preference.Preference
     protected final void E() {
         super.V();
         if (this.H) {
-            new asmd(10, new Runnable() { // from class: ajyx
+            new aupx(10, new Runnable() { // from class: alzv
                 @Override // java.lang.Runnable
                 public final void run() {
                     PhotosBackupPreference photosBackupPreference = PhotosBackupPreference.this;
@@ -84,7 +84,7 @@ public class PhotosBackupPreference extends PhotosPreference {
         }
         String str = this.G;
         if (str == null) {
-            l(ajwx.g);
+            l(alxv.g);
             return;
         }
         if (str.equals(this.i)) {
@@ -115,28 +115,28 @@ public class PhotosBackupPreference extends PhotosPreference {
         String str = account == null ? null : account.name;
         String str2 = this.L ? str : this.i;
         this.L = false;
-        return new ArrayList(Arrays.asList(new ajzb(this, str2, str), new ajzc(this), new ajzd(this), new ajzf(this)));
+        return new ArrayList(Arrays.asList(new alzz(this, str2, str), new amaa(this), new amab(this), new amad(this)));
     }
 
-    public PhotosBackupPreference(Context context, AttributeSet attributeSet, ahxo ahxoVar, ahyj ahyjVar, ahtf ahtfVar) {
+    public PhotosBackupPreference(Context context, AttributeSet attributeSet, ajye ajyeVar, ajyz ajyzVar, ajtv ajtvVar) {
         super(context, attributeSet);
-        this.b = new ajza(this);
+        this.b = new alzy(this);
         this.f = false;
         this.g = false;
         this.L = true;
         this.i = null;
         this.G = null;
         this.H = false;
-        this.c = ahxoVar;
-        this.d = ahyjVar;
+        this.c = ajyeVar;
+        this.d = ajyzVar;
         H(false);
-        this.e = new byhr(context.getMainLooper());
-        this.I = ajwx.h.a(context);
-        this.J = ahtfVar;
-        aiaa a2 = aiab.a();
+        this.e = new caqj(context.getMainLooper());
+        this.I = alxv.h.a(context);
+        this.J = ajtvVar;
+        akaq a2 = akar.a();
         a2.c(M);
         this.K = a2.a();
-        this.h = (qfp) context;
+        this.h = (ryt) context;
     }
 
     @Override // com.google.android.gms.backup.settings.ui.BackupPreference

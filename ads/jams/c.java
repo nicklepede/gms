@@ -3,27 +3,27 @@ package com.google.android.gms.ads.jams;
 import android.content.Context;
 import android.os.Bundle;
 import com.google.android.gms.ads.internal.util.client.h;
-import defpackage.asra;
-import defpackage.bqna;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.fkak;
+import defpackage.auuu;
+import defpackage.bsup;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.fmqp;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class c {
     public final Context a;
-    public final bqna b;
+    public final bsup b;
     public final e c;
-    private final byjl d;
+    private final casd d;
 
     protected c(Context context) {
-        bqna b = bqna.b(context);
+        bsup b = bsup.b(context);
         e eVar = new e(context);
-        byjl a = byjl.a(context);
+        casd a = casd.a(context);
         this.a = context;
         this.b = b;
         this.c = eVar;
@@ -39,7 +39,7 @@ public final class c {
     }
 
     public final HttpURLConnection c(boolean z) {
-        return (HttpURLConnection) asra.b(new URL(b(z)), 256, "ads-jams");
+        return (HttpURLConnection) auuu.b(new URL(b(z)), 256, "ads-jams");
     }
 
     public final boolean d() {
@@ -52,16 +52,16 @@ public final class c {
     }
 
     public final void e(long j, int i) {
-        long c = fkak.c() + j;
+        long c = fmqp.c() + j;
         Bundle bundle = new Bundle();
         bundle.putString("NegotiationTaskType", a.a(i));
-        bykj bykjVar = new bykj();
-        bykjVar.j = "com.google.android.gms.ads.jams.NegotiationService";
-        bykjVar.e(j, c);
-        bykjVar.t("jams-negotiation-task");
-        bykjVar.v(0);
-        bykjVar.u = bundle;
-        this.d.f(bykjVar.b());
+        catb catbVar = new catb();
+        catbVar.j = "com.google.android.gms.ads.jams.NegotiationService";
+        catbVar.e(j, c);
+        catbVar.t("jams-negotiation-task");
+        catbVar.v(0);
+        catbVar.u = bundle;
+        this.d.f(catbVar.b());
         this.c.a.edit().putLong("scheduled_next_negotiation_timestamp", System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(j)).apply();
         String w = defpackage.a.w(j, "[JAMS] Next negotiation to run in ", " seconds");
         int i2 = com.google.android.gms.ads.internal.util.c.a;

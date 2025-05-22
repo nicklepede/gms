@@ -3,15 +3,15 @@ package com.google.android.gms.pay;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctev;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvoa;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class TransitPass extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctev();
+    public static final Parcelable.Creator CREATOR = new cvoa();
     public String a;
     public String b;
     public String c;
@@ -29,7 +29,7 @@ public final class TransitPass extends AbstractSafeParcelable {
         }
         if (obj instanceof TransitPass) {
             TransitPass transitPass = (TransitPass) obj;
-            if (arwb.b(this.a, transitPass.a) && arwb.b(this.b, transitPass.b) && arwb.b(this.c, transitPass.c) && arwb.b(this.d, transitPass.d) && arwb.b(this.e, transitPass.e) && arwb.b(this.f, transitPass.f) && arwb.b(Integer.valueOf(this.g), Integer.valueOf(transitPass.g))) {
+            if (atyq.b(this.a, transitPass.a) && atyq.b(this.b, transitPass.b) && atyq.b(this.c, transitPass.c) && atyq.b(this.d, transitPass.d) && atyq.b(this.e, transitPass.e) && atyq.b(this.f, transitPass.f) && atyq.b(Integer.valueOf(this.g), Integer.valueOf(transitPass.g))) {
                 return true;
             }
         }
@@ -42,15 +42,15 @@ public final class TransitPass extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.v(parcel, 3, this.d, false);
-        arxc.v(parcel, 4, this.e, false);
-        arxc.v(parcel, 5, this.f, false);
-        arxc.o(parcel, 6, this.g);
-        arxc.v(parcel, 7, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.v(parcel, 3, this.d, false);
+        atzr.v(parcel, 4, this.e, false);
+        atzr.v(parcel, 5, this.f, false);
+        atzr.o(parcel, 6, this.g);
+        atzr.v(parcel, 7, this.c, false);
+        atzr.c(parcel, a);
     }
 
     public TransitPass(String str, String str2, String str3, String str4, String str5, String str6, int i) {

@@ -3,14 +3,14 @@ package com.google.android.gms.audiomodem;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.uku;
+import defpackage.atzr;
+import defpackage.wgt;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AdsrParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new uku();
+    public static final Parcelable.Creator CREATOR = new wgt();
     public final long a;
     public final long b;
     public final long c;
@@ -47,12 +47,12 @@ public class AdsrParams extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.a;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 2, j);
-        arxc.q(parcel, 3, this.b);
-        arxc.q(parcel, 4, this.c);
-        arxc.q(parcel, 5, this.d);
-        arxc.l(parcel, 6, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 2, j);
+        atzr.q(parcel, 3, this.b);
+        atzr.q(parcel, 4, this.c);
+        atzr.q(parcel, 5, this.d);
+        atzr.l(parcel, 6, this.e);
+        atzr.c(parcel, a);
     }
 }

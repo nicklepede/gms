@@ -21,7 +21,7 @@ import javax.net.ssl.X509KeyManager;
 import javax.net.ssl.X509TrustManager;
 import javax.security.auth.x500.X500Principal;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class SSLParametersImpl implements Cloneable {
     private static final String[] EMPTY_STRING_ARRAY = new String[0];
@@ -55,14 +55,14 @@ public final class SSLParametersImpl implements Cloneable {
     private final X509KeyManager x509KeyManager;
     private final X509TrustManager x509TrustManager;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     interface AliasChooser {
         String chooseClientAlias(X509KeyManager x509KeyManager, X500Principal[] x500PrincipalArr, String[] strArr);
 
         String chooseServerAlias(X509KeyManager x509KeyManager, String str);
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     interface PSKCallbacks {
         String chooseClientPSKIdentity(PSKKeyManager pSKKeyManager, String str);
 
@@ -436,6 +436,9 @@ public final class SSLParametersImpl implements Cloneable {
         if (strArr == null) {
             throw new IllegalArgumentException("protocols == null");
         }
+        if (isSpake()) {
+            return;
+        }
         String[] filterFromProtocols = filterFromProtocols(strArr, Arrays.asList(!Platform.isTlsV1Filtered() ? new String[0] : new String[]{"SSLv3", "TLSv1", "TLSv1.1"}));
         this.isEnabledProtocolsFiltered = strArr.length != filterFromProtocols.length;
         NativeCrypto.checkEnabledProtocols(filterFromProtocols);
@@ -524,7 +527,9 @@ public final class SSLParametersImpl implements Cloneable {
             }
         }
         if ((this.spake2PlusTrustManager != null) == (this.spake2PlusKeyManager != null)) {
-            if (strArr == null) {
+            if (isSpake()) {
+                this.enabledProtocols = new String[]{"TLSv1.3"};
+            } else if (strArr == null) {
                 this.enabledProtocols = (String[]) NativeCrypto.getDefaultProtocols().clone();
             } else {
                 String[] filterFromProtocols = filterFromProtocols(strArr, Arrays.asList(!Platform.isTlsV1Filtered() ? new String[0] : new String[]{"SSLv3", "TLSv1", "TLSv1.1"}));

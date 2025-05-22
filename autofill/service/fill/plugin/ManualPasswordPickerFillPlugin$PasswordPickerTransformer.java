@@ -4,45 +4,45 @@ import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.autofill.data.DataIntent$ResultTransformer;
-import defpackage.adsp;
-import defpackage.adsv;
-import defpackage.adsy;
-import defpackage.adts;
-import defpackage.agbl;
-import defpackage.agbm;
-import defpackage.eiid;
-import defpackage.eiif;
-import defpackage.ejdg;
-import defpackage.ejhf;
+import defpackage.afsw;
+import defpackage.aftc;
+import defpackage.aftf;
+import defpackage.aftz;
+import defpackage.aica;
+import defpackage.aicb;
+import defpackage.ekvi;
+import defpackage.ekvk;
+import defpackage.elqn;
+import defpackage.eluo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ManualPasswordPickerFillPlugin$PasswordPickerTransformer implements DataIntent$ResultTransformer {
-    public static final Parcelable.Creator CREATOR = new agbl();
-    private final adsv a;
+    public static final Parcelable.Creator CREATOR = new aica();
+    private final aftc a;
 
-    public ManualPasswordPickerFillPlugin$PasswordPickerTransformer(adsv adsvVar) {
-        this.a = adsvVar;
+    public ManualPasswordPickerFillPlugin$PasswordPickerTransformer(aftc aftcVar) {
+        this.a = aftcVar;
     }
 
     @Override // com.google.android.gms.autofill.data.DataIntent$ResultTransformer
-    public final Object a(int i, Intent intent, eiid eiidVar) {
+    public final Object a(int i, Intent intent, ekvi ekviVar) {
         if (i != -1) {
             return null;
         }
-        String b = eiif.b(intent.getStringExtra("pwm.DataFieldNames.pickerUsername"));
-        String b2 = eiif.b(intent.getStringExtra("pwm.DataFieldNames.pickerPassword"));
+        String b = ekvk.b(intent.getStringExtra("pwm.DataFieldNames.pickerUsername"));
+        String b2 = ekvk.b(intent.getStringExtra("pwm.DataFieldNames.pickerPassword"));
         if (b.isEmpty() && b2.isEmpty()) {
-            ((ejhf) ((ejhf) agbm.a.j()).ah((char) 1236)).x("Empty username and password returned when picking password.");
+            ((eluo) ((eluo) aicb.a.j()).ai((char) 1240)).x("Empty username and password returned when picking password.");
             return null;
         }
-        adts adtsVar = new adts(b2);
-        adsv adsvVar = this.a;
-        adsp adspVar = new adsp(b, adtsVar, adsvVar);
-        adspVar.c = new ejdg(adsvVar);
-        adspVar.d = false;
-        adspVar.e = false;
-        return adspVar.a();
+        aftz aftzVar = new aftz(b2);
+        aftc aftcVar = this.a;
+        afsw afswVar = new afsw(b, aftzVar, aftcVar);
+        afswVar.c = new elqn(aftcVar);
+        afswVar.d = false;
+        afswVar.e = false;
+        return afswVar.a();
     }
 
     @Override // android.os.Parcelable
@@ -52,6 +52,6 @@ public class ManualPasswordPickerFillPlugin$PasswordPickerTransformer implements
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        adsy.c(this.a, parcel);
+        aftf.c(this.a, parcel);
     }
 }

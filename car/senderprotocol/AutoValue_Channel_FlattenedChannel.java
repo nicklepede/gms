@@ -1,23 +1,23 @@
 package com.google.android.gms.car.senderprotocol;
 
-import defpackage.alhn;
+import defpackage.aniy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class AutoValue_Channel_FlattenedChannel extends Channel$FlattenedChannel {
     private final int a;
     private final int b;
     private final int c;
-    private final alhn d;
+    private final aniy d;
 
-    public AutoValue_Channel_FlattenedChannel(int i, int i2, int i3, alhn alhnVar) {
+    public AutoValue_Channel_FlattenedChannel(int i, int i2, int i3, aniy aniyVar) {
         this.a = i;
         this.b = i2;
         this.c = i3;
-        if (alhnVar == null) {
+        if (aniyVar == null) {
             throw new NullPointerException("Null qoSPriority");
         }
-        this.d = alhnVar;
+        this.d = aniyVar;
     }
 
     @Override // com.google.android.gms.car.senderprotocol.Channel$FlattenedChannel
@@ -36,7 +36,7 @@ public final class AutoValue_Channel_FlattenedChannel extends Channel$FlattenedC
     }
 
     @Override // com.google.android.gms.car.senderprotocol.Channel$FlattenedChannel
-    public final alhn d() {
+    public final aniy d() {
         return this.d;
     }
 

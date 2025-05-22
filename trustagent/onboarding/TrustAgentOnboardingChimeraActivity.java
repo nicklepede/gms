@@ -17,47 +17,47 @@ import com.google.android.gms.R;
 import com.google.android.gms.chimera.modules.trustagent.AppContextProvider;
 import com.google.android.gms.common.ui.LinkSpan;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.abt;
-import defpackage.abv;
-import defpackage.acl;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.dgmb;
-import defpackage.dgmd;
-import defpackage.dgmn;
-import defpackage.dgpa;
-import defpackage.dgpb;
-import defpackage.dgpc;
-import defpackage.dgpd;
-import defpackage.dgpe;
-import defpackage.dgpf;
-import defpackage.dgpg;
-import defpackage.dgph;
-import defpackage.ejhf;
-import defpackage.jti;
-import defpackage.juc;
-import defpackage.qfp;
+import defpackage.aby;
+import defpackage.aca;
+import defpackage.acq;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.dixg;
+import defpackage.dixi;
+import defpackage.dixs;
+import defpackage.djaf;
+import defpackage.djag;
+import defpackage.djah;
+import defpackage.djai;
+import defpackage.djaj;
+import defpackage.djak;
+import defpackage.djal;
+import defpackage.djam;
+import defpackage.eluo;
+import defpackage.jzx;
+import defpackage.kar;
+import defpackage.ryt;
 import j$.util.Objects;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, abt {
-    public static final asot l = asot.b("TrustAgent", asej.TRUSTAGENT);
+public class TrustAgentOnboardingChimeraActivity extends dixs implements dixg, aby {
+    public static final ausn l = ausn.b("TrustAgent", auid.TRUSTAGENT);
     private static final IntentFilter s = new IntentFilter("com.google.android.setupwizard.LINK_SPAN_CLICKED");
-    private abv A;
+    private aca A;
     public boolean n;
     public Context o;
     public Intent p;
     public boolean q;
     private Intent v;
-    private dgpb w;
+    private djag w;
     private TextView x;
     private Button y;
     private LinearLayout z;
     final BroadcastReceiver m = new TracingBroadcastReceiver() { // from class: com.google.android.gms.trustagent.onboarding.TrustAgentOnboardingChimeraActivity.1
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             TrustAgentOnboardingChimeraActivity trustAgentOnboardingChimeraActivity = TrustAgentOnboardingChimeraActivity.this;
             if (!trustAgentOnboardingChimeraActivity.isFinishing() && Objects.equals(intent.getStringExtra("id"), "trustagent_learn_more")) {
                 Intent intent2 = new Intent("android.intent.action.VIEW", Uri.parse("https://support.google.com/mobile/?p=personal_unlocking"));
@@ -65,22 +65,22 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
                 try {
                     trustAgentOnboardingChimeraActivity.startActivity(intent2);
                 } catch (ActivityNotFoundException e) {
-                    ((ejhf) ((ejhf) ((ejhf) TrustAgentOnboardingChimeraActivity.l.i()).s(e)).ah((char) 11634)).B("Actvity was not found for intent, %s", intent2);
+                    ((eluo) ((eluo) ((eluo) TrustAgentOnboardingChimeraActivity.l.i()).s(e)).ai((char) 11637)).B("Actvity was not found for intent, %s", intent2);
                 }
             }
         }
     };
-    private final dgph t = new dgph(this);
-    private final dgmd u = dgmd.a();
+    private final djam t = new djam(this);
+    private final dixi u = dixi.a();
     public int r = 0;
 
-    public static void o(qfp qfpVar) {
+    public static void o(ryt rytVar) {
         Intent intent = new Intent();
-        intent.setClassName(qfpVar, "com.google.android.gms.trustagent.TrustAgentOnboardingActivity");
+        intent.setClassName(rytVar, "com.google.android.gms.trustagent.TrustAgentOnboardingActivity");
         try {
-            qfpVar.startActivity(intent);
+            rytVar.startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            ((ejhf) ((ejhf) ((ejhf) l.i()).s(e)).ah((char) 11639)).B("Cannot find %s.", intent.getComponent());
+            ((eluo) ((eluo) ((eluo) l.i()).s(e)).ai((char) 11642)).B("Cannot find %s.", intent.getComponent());
         }
     }
 
@@ -88,8 +88,8 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
         this.u.e("trust_agent_onboarding_shown_key", true);
     }
 
-    @Override // defpackage.abt
-    public final /* bridge */ /* synthetic */ void jq(Object obj) {
+    @Override // defpackage.aby
+    public final /* bridge */ /* synthetic */ void jF(Object obj) {
         ActivityResult activityResult = (ActivityResult) obj;
         int i = activityResult.a;
         if (activityResult.b != null && this.r == 1 && i == 1) {
@@ -99,12 +99,12 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
         }
     }
 
-    public final abv k() {
-        abv abvVar = this.A;
-        return abvVar != null ? abvVar : registerForActivityResult(new acl(), this);
+    public final aca k() {
+        aca acaVar = this.A;
+        return acaVar != null ? acaVar : registerForActivityResult(new acq(), this);
     }
 
-    @Override // defpackage.dgmb
+    @Override // defpackage.dixg
     public final void l() {
         q();
     }
@@ -115,7 +115,7 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
             findViewById(R.id.trust_agent_onboarding_divider).setVisibility(8);
             findViewById(R.id.trust_agent_onboarding_divider).setVisibility(8);
             this.y.setText(R.string.trust_agent_button_got_it);
-            this.y.setOnClickListener(new dgpg(this));
+            this.y.setOnClickListener(new djal(this));
             return;
         }
         boolean isDeviceSecure = ((KeyguardManager) getSystemService("keyguard")).isDeviceSecure();
@@ -126,16 +126,16 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
             if (!this.n) {
                 this.x.setText(String.format("%s. %s", getString(R.string.trust_agent_smartlock_disabled_title), getString(R.string.trust_agent_smartlock_disabled_detail)));
                 this.y.setText(R.string.trust_agent_button_got_it);
-                this.y.setOnClickListener(new dgpe(this));
+                this.y.setOnClickListener(new djaj(this));
                 return;
             }
             this.x.setText(this.w.a());
         }
         this.y.setText(this.w.b());
-        this.y.setOnClickListener(new dgpf(this));
+        this.y.setOnClickListener(new djak(this));
     }
 
-    @Override // defpackage.dgmn, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dixs, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (bundle != null) {
@@ -144,16 +144,16 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
             this.v = getIntent();
         }
         this.o = AppContextProvider.a();
-        dgmd dgmdVar = this.u;
-        dgmdVar.h(this);
-        if (dgmdVar.k()) {
+        dixi dixiVar = this.u;
+        dixiVar.h(this);
+        if (dixiVar.k()) {
             q();
         }
-        if (asqh.f()) {
-            getOnBackPressedDispatcher().b(this, new dgpd(this));
+        if (auub.f()) {
+            getOnBackPressedDispatcher().b(this, new djai(this));
         }
-        hy().o(true);
-        hy().t(0.0f);
+        hO().o(true);
+        hO().t(0.0f);
         setContentView(R.layout.trust_agent_onboarding_activity);
         TextView textView = (TextView) findViewById(R.id.trust_agent_onboarding_text_title);
         TextView textView2 = (TextView) findViewById(R.id.trust_agent_onboarding_text_body);
@@ -161,9 +161,9 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
         this.y = (Button) findViewById(R.id.trust_agent_onboarding_got_it_button);
         this.z = (LinearLayout) findViewById(R.id.trust_agent_onboarding_spinner);
         String stringExtra = this.v.getStringExtra("extra_intent_to_start");
-        dgpb dgpcVar = stringExtra != null ? (stringExtra.hashCode() == 1549989476 && stringExtra.equals("OnboardingSmartLockComponent")) ? new dgpc() : new dgpa() : new dgpa();
-        this.w = dgpcVar;
-        textView.setText(dgpcVar.c());
+        djag djahVar = stringExtra != null ? (stringExtra.hashCode() == 1549989476 && stringExtra.equals("OnboardingSmartLockComponent")) ? new djah() : new djaf() : new djaf();
+        this.w = djahVar;
+        textView.setText(djahVar.c());
         this.w.f();
         textView2.setText(R.string.trust_agent_onboarding_smartlock_text_body);
         LinkSpan.a(textView2, "trustagent_learn_more");
@@ -171,13 +171,13 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
         this.A = k();
     }
 
-    @Override // defpackage.dgmn, defpackage.qet, defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dixs, defpackage.rxx, defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onDestroy() {
         super.onDestroy();
         this.u.i(this);
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != 16908332) {
             return false;
@@ -186,26 +186,26 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
-        juc.a(this).d(this.m);
+        kar.a(this).d(this.m);
         super.onPause();
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
-        juc.a(this).c(this.m, s);
+        kar.a(this).c(this.m, s);
         this.q = ((KeyguardManager) getSystemService("keyguard")).isDeviceSecure();
         this.n = false;
         Intent intent = this.p;
         if (intent != null) {
             intent.putExtra("extra_intent_from", String.format("<from>%s</from><target>%s</target>", this.v.getStringExtra("extra_intent_from"), this.v.getStringExtra("extra_intent_to_start")));
             if (this.q) {
-                if (jti.a(this).b(0) == null) {
-                    jti.a(this).c(0, new Bundle(), this.t);
+                if (jzx.a(this).b(0) == null) {
+                    jzx.a(this).c(0, new Bundle(), this.t);
                 } else {
-                    jti.a(this).d(0, new Bundle(), this.t);
+                    jzx.a(this).d(0, new Bundle(), this.t);
                 }
                 p(true);
             }
@@ -213,7 +213,7 @@ public class TrustAgentOnboardingChimeraActivity extends dgmn implements dgmb, a
         n();
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         bundle.putParcelable("intent", this.v);
         super.onSaveInstanceState(bundle);

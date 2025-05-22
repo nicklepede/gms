@@ -6,86 +6,86 @@ import com.google.android.gms.chimera.modules.semanticlocationhistory.AppContext
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.geller.GellerCleanupService;
 import com.google.android.libraries.geller.portable.Geller;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.asow;
-import defpackage.aspx;
-import defpackage.byln;
-import defpackage.czin;
-import defpackage.czix;
-import defpackage.dahq;
-import defpackage.eiho;
-import defpackage.eiig;
-import defpackage.eius;
-import defpackage.eiuu;
-import defpackage.ejfg;
-import defpackage.ejhf;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.fegx;
-import defpackage.frvr;
-import defpackage.frwe;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.ausq;
+import defpackage.autr;
+import defpackage.cauf;
+import defpackage.dbsl;
+import defpackage.dbsv;
+import defpackage.dcry;
+import defpackage.ekut;
+import defpackage.ekvl;
+import defpackage.elhx;
+import defpackage.elhz;
+import defpackage.elsn;
+import defpackage.eluo;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fgvq;
+import defpackage.fuql;
+import defpackage.fuqy;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class GellerCleanupService extends GmsTaskBoundService {
     public static final String a = "com.google.android.gms.semanticlocationhistory.geller.GellerCleanupService";
-    private static final asot b = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "GellerCleanup");
+    private static final ausn b = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "GellerCleanup");
     private Geller c;
-    private dahq d;
+    private dcry d;
 
-    private final dahq d() {
+    private final dcry d() {
         if (this.d == null) {
-            this.d = new dahq();
+            this.d = new dcry();
         }
         return this.d;
     }
 
     private final Geller e(Context context) {
         if (this.c == null) {
-            int i = aspx.a;
-            if (!asow.g(context, "geller_jni_lite_lib")) {
-                ((ejhf) ((ejhf) b.j()).ah((char) 10453)).x("loadLibrary failed");
+            int i = autr.a;
+            if (!ausq.g(context, "geller_jni_lite_lib")) {
+                ((eluo) ((eluo) b.j()).ai((char) 10459)).x("loadLibrary failed");
                 return null;
             }
-            this.c = new Geller(czin.a(context));
+            this.c = new Geller(dbsl.a(context));
         }
         return this.c;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
+    public final eqgl iB(cauf caufVar) {
         Context a2 = AppContextProvider.a();
         if (e(a2) == null) {
-            return ensj.i(2);
+            return eqgc.i(2);
         }
-        eius eiusVar = new eius();
-        for (Account account : czix.d(a2)) {
-            eiusVar.c(account.name);
+        elhx elhxVar = new elhx();
+        for (Account account : dbsv.d(a2)) {
+            elhxVar.c(account.name);
         }
-        eiuu g = eiusVar.g();
-        if (frvr.a.a().d()) {
+        elhz g = elhxVar.g();
+        if (fuql.a.lK().d()) {
             Geller e = e(a2);
-            eiig.x(e);
+            ekvl.y(e);
             e.q(g);
         }
-        ejfg listIterator = g.listIterator();
+        elsn listIterator = g.listIterator();
         boolean z = true;
         while (listIterator.hasNext()) {
             String str = (String) listIterator.next();
             try {
                 Geller e2 = e(a2);
-                eiig.x(e2);
+                ekvl.y(e2);
                 e2.e(str).get();
-                ((ejhf) ((ejhf) b.h()).ah(10455)).x("GellerCleanupService succeeded.");
+                ((eluo) ((eluo) b.h()).ai(10461)).x("GellerCleanupService succeeded.");
             } catch (InterruptedException | ExecutionException e3) {
                 if (e3 instanceof InterruptedException) {
                     Thread.currentThread().interrupt();
                 }
-                ((ejhf) ((ejhf) b.h()).ah((char) 10456)).x("GellerCleanupService failed.");
+                ((eluo) ((eluo) b.h()).ai((char) 10462)).x("GellerCleanupService failed.");
                 z = false;
             }
         }
@@ -94,18 +94,18 @@ public class GellerCleanupService extends GmsTaskBoundService {
             geller.o();
             this.c = null;
         }
-        return frwe.d() ? z ? enps.f(d().e("GellerCleanup", false), new eiho() { // from class: daxv
-            @Override // defpackage.eiho
+        return fuqy.d() ? z ? eqdl.f(d().e("GellerCleanup", false), new ekut() { // from class: ddid
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 String str2 = GellerCleanupService.a;
                 return 0;
             }
-        }, enre.a) : enps.f(d().g("GellerCleanup", fegx.h(System.currentTimeMillis())), new eiho() { // from class: daxw
-            @Override // defpackage.eiho
+        }, eqex.a) : eqdl.f(d().g("GellerCleanup", fgvq.h(System.currentTimeMillis())), new ekut() { // from class: ddie
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 String str2 = GellerCleanupService.a;
                 return 2;
             }
-        }, enre.a) : ensj.i(0);
+        }, eqex.a) : eqgc.i(0);
     }
 }

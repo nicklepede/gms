@@ -1,18 +1,21 @@
 package com.google.android.gms.org.conscrypt;
 
 import com.google.android.gms.org.conscrypt.OpenSSLCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsCipher;
+import com.google.android.gms.org.conscrypt.metrics.MetricsMode;
+import com.google.android.gms.org.conscrypt.metrics.MetricsPadding;
 import defpackage.a;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
 import javax.crypto.NoSuchPaddingException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class OpenSSLEvpCipherAES extends OpenSSLEvpCipher {
     private static final int AES_BLOCK_SIZE = 16;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     /* renamed from: com.google.android.gms.org.conscrypt.OpenSSLEvpCipherAES$1, reason: invalid class name */
     /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$conscrypt$OpenSSLCipher$Mode;
@@ -46,62 +49,62 @@ public abstract class OpenSSLEvpCipherAES extends OpenSSLEvpCipher {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class AES extends OpenSSLEvpCipherAES {
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class CBC extends AES {
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class NoPadding extends CBC {
                 public NoPadding() {
-                    super(OpenSSLCipher.Padding.NOPADDING);
+                    super(OpenSSLCipher.Padding.NOPADDING, MetricsPadding.NO_PADDING.getId());
                 }
             }
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class PKCS5Padding extends CBC {
                 public PKCS5Padding() {
-                    super(OpenSSLCipher.Padding.PKCS5PADDING);
+                    super(OpenSSLCipher.Padding.PKCS5PADDING, MetricsPadding.PKCS5.getId());
                 }
             }
 
-            public CBC(OpenSSLCipher.Padding padding) {
-                super(OpenSSLCipher.Mode.CBC, padding);
+            public CBC(OpenSSLCipher.Padding padding, int i) {
+                super(OpenSSLCipher.Mode.CBC, padding, MetricsMode.CBC.getId(), i);
             }
         }
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class CTR extends AES {
             public CTR() {
-                super(OpenSSLCipher.Mode.CTR, OpenSSLCipher.Padding.NOPADDING);
+                super(OpenSSLCipher.Mode.CTR, OpenSSLCipher.Padding.NOPADDING, MetricsMode.CTR.getId(), MetricsPadding.NO_PADDING.getId());
             }
         }
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class ECB extends AES {
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class NoPadding extends ECB {
                 public NoPadding() {
-                    super(OpenSSLCipher.Padding.NOPADDING);
+                    super(OpenSSLCipher.Padding.NOPADDING, MetricsPadding.NO_PADDING.getId());
                 }
             }
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class PKCS5Padding extends ECB {
                 public PKCS5Padding() {
-                    super(OpenSSLCipher.Padding.PKCS5PADDING);
+                    super(OpenSSLCipher.Padding.PKCS5PADDING, MetricsPadding.PKCS5.getId());
                 }
             }
 
-            public ECB(OpenSSLCipher.Padding padding) {
-                super(OpenSSLCipher.Mode.ECB, padding);
+            public ECB(OpenSSLCipher.Padding padding, int i) {
+                super(OpenSSLCipher.Mode.ECB, padding, MetricsMode.ECB.getId(), i);
             }
         }
 
-        public AES(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding) {
-            super(mode, padding);
+        public AES(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding, int i, int i2) {
+            super(mode, padding, i, i2);
         }
 
         @Override // com.google.android.gms.org.conscrypt.OpenSSLCipher
@@ -112,62 +115,62 @@ public abstract class OpenSSLEvpCipherAES extends OpenSSLEvpCipher {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class AES_128 extends OpenSSLEvpCipherAES {
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class CBC extends AES_128 {
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class NoPadding extends CBC {
                 public NoPadding() {
-                    super(OpenSSLCipher.Padding.NOPADDING);
+                    super(OpenSSLCipher.Padding.NOPADDING, MetricsPadding.NO_PADDING.getId());
                 }
             }
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class PKCS5Padding extends CBC {
                 public PKCS5Padding() {
-                    super(OpenSSLCipher.Padding.PKCS5PADDING);
+                    super(OpenSSLCipher.Padding.PKCS5PADDING, MetricsPadding.PKCS5.getId());
                 }
             }
 
-            public CBC(OpenSSLCipher.Padding padding) {
-                super(OpenSSLCipher.Mode.CBC, padding);
+            public CBC(OpenSSLCipher.Padding padding, int i) {
+                super(OpenSSLCipher.Mode.CBC, padding, MetricsMode.CBC.getId(), i);
             }
         }
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class CTR extends AES_128 {
             public CTR() {
-                super(OpenSSLCipher.Mode.CTR, OpenSSLCipher.Padding.NOPADDING);
+                super(OpenSSLCipher.Mode.CTR, OpenSSLCipher.Padding.NOPADDING, MetricsMode.CTR.getId(), MetricsPadding.NO_PADDING.getId());
             }
         }
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class ECB extends AES_128 {
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class NoPadding extends ECB {
                 public NoPadding() {
-                    super(OpenSSLCipher.Padding.NOPADDING);
+                    super(OpenSSLCipher.Padding.NOPADDING, MetricsPadding.NO_PADDING.getId());
                 }
             }
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class PKCS5Padding extends ECB {
                 public PKCS5Padding() {
-                    super(OpenSSLCipher.Padding.PKCS5PADDING);
+                    super(OpenSSLCipher.Padding.PKCS5PADDING, MetricsPadding.PKCS5.getId());
                 }
             }
 
-            public ECB(OpenSSLCipher.Padding padding) {
-                super(OpenSSLCipher.Mode.ECB, padding);
+            public ECB(OpenSSLCipher.Padding padding, int i) {
+                super(OpenSSLCipher.Mode.ECB, padding, MetricsMode.ECB.getId(), i);
             }
         }
 
-        public AES_128(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding) {
-            super(mode, padding);
+        public AES_128(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding, int i, int i2) {
+            super(mode, padding, i, i2);
         }
 
         @Override // com.google.android.gms.org.conscrypt.OpenSSLCipher
@@ -178,62 +181,62 @@ public abstract class OpenSSLEvpCipherAES extends OpenSSLEvpCipher {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class AES_256 extends OpenSSLEvpCipherAES {
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class CBC extends AES_256 {
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class NoPadding extends CBC {
                 public NoPadding() {
-                    super(OpenSSLCipher.Padding.NOPADDING);
+                    super(OpenSSLCipher.Padding.NOPADDING, MetricsPadding.NO_PADDING.getId());
                 }
             }
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class PKCS5Padding extends CBC {
                 public PKCS5Padding() {
-                    super(OpenSSLCipher.Padding.PKCS5PADDING);
+                    super(OpenSSLCipher.Padding.PKCS5PADDING, MetricsPadding.PKCS5.getId());
                 }
             }
 
-            public CBC(OpenSSLCipher.Padding padding) {
-                super(OpenSSLCipher.Mode.CBC, padding);
+            public CBC(OpenSSLCipher.Padding padding, int i) {
+                super(OpenSSLCipher.Mode.CBC, padding, MetricsMode.CBC.getId(), i);
             }
         }
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class CTR extends AES_256 {
             public CTR() {
-                super(OpenSSLCipher.Mode.CTR, OpenSSLCipher.Padding.NOPADDING);
+                super(OpenSSLCipher.Mode.CTR, OpenSSLCipher.Padding.NOPADDING, MetricsMode.CTR.getId(), MetricsPadding.NO_PADDING.getId());
             }
         }
 
-        /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+        /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
         public class ECB extends AES_256 {
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class NoPadding extends ECB {
                 public NoPadding() {
-                    super(OpenSSLCipher.Padding.NOPADDING);
+                    super(OpenSSLCipher.Padding.NOPADDING, MetricsPadding.NO_PADDING.getId());
                 }
             }
 
-            /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+            /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
             public class PKCS5Padding extends ECB {
                 public PKCS5Padding() {
-                    super(OpenSSLCipher.Padding.PKCS5PADDING);
+                    super(OpenSSLCipher.Padding.PKCS5PADDING, MetricsPadding.PKCS5.getId());
                 }
             }
 
-            public ECB(OpenSSLCipher.Padding padding) {
-                super(OpenSSLCipher.Mode.ECB, padding);
+            public ECB(OpenSSLCipher.Padding padding, int i) {
+                super(OpenSSLCipher.Mode.ECB, padding, MetricsMode.ECB.getId(), i);
             }
         }
 
-        public AES_256(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding) {
-            super(mode, padding);
+        public AES_256(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding, int i, int i2) {
+            super(mode, padding, i, i2);
         }
 
         @Override // com.google.android.gms.org.conscrypt.OpenSSLCipher
@@ -244,8 +247,8 @@ public abstract class OpenSSLEvpCipherAES extends OpenSSLEvpCipher {
         }
     }
 
-    public OpenSSLEvpCipherAES(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding) {
-        super(mode, padding);
+    public OpenSSLEvpCipherAES(OpenSSLCipher.Mode mode, OpenSSLCipher.Padding padding, int i, int i2) {
+        super(mode, padding, MetricsCipher.AES.getId(), i, i2);
     }
 
     @Override // com.google.android.gms.org.conscrypt.OpenSSLCipher

@@ -3,17 +3,17 @@ package com.google.android.gms.languageprofile.service;
 import android.content.Intent;
 import android.util.Base64;
 import com.google.android.gms.framework.tracing.wrapper.TracingIntentService;
-import defpackage.bqed;
-import defpackage.eigb;
-import defpackage.eiid;
-import defpackage.erxo;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
+import defpackage.bslt;
+import defpackage.ektg;
+import defpackage.ekvi;
+import defpackage.eunb;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public final class GcmReceiverChimeraService extends TracingIntentService {
     public GcmReceiverChimeraService() {
         super("GcmReceiverChimeraService");
@@ -27,24 +27,24 @@ public final class GcmReceiverChimeraService extends TracingIntentService {
             if (stringExtra == null) {
                 return;
             }
-            eiid eiidVar = eigb.a;
+            ekvi ekviVar = ektg.a;
             if (stringExtra2 != null) {
                 try {
                     byte[] decode = Base64.decode(stringExtra2, 0);
-                    erxo erxoVar = erxo.a;
+                    eunb eunbVar = eunb.a;
                     int length = decode.length;
-                    febw febwVar = febw.a;
-                    feep feepVar = feep.a;
-                    fecp y = fecp.y(erxoVar, decode, 0, length, febw.a);
-                    fecp.M(y);
-                    eiidVar = eiid.i((erxo) y);
-                } catch (fedk unused) {
+                    fgqp fgqpVar = fgqp.a;
+                    fgti fgtiVar = fgti.a;
+                    fgri y = fgri.y(eunbVar, decode, 0, length, fgqp.a);
+                    fgri.M(y);
+                    ekviVar = ekvi.i((eunb) y);
+                } catch (fgsd unused) {
                 }
             }
-            if (eiidVar.h()) {
-                bqed.a().m(stringExtra, (erxo) eiidVar.c());
+            if (ekviVar.h()) {
+                bslt.a().m(stringExtra, (eunb) ekviVar.c());
             } else {
-                bqed.a().j(stringExtra);
+                bslt.a().j(stringExtra);
             }
         }
     }

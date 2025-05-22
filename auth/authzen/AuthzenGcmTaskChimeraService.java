@@ -6,38 +6,38 @@ import android.util.Base64;
 import com.google.android.gms.auth.authzen.transaction.TransactionReplyIntentOperation;
 import com.google.android.gms.chimera.modules.auth.authzen.phone.AppContextProvider;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.arwm;
-import defpackage.arxo;
-import defpackage.byln;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.feep;
-import defpackage.ffti;
-import defpackage.fftt;
-import defpackage.fftw;
-import defpackage.fftx;
-import defpackage.ffwr;
-import defpackage.ffws;
-import defpackage.zwh;
-import defpackage.zwj;
+import defpackage.abwh;
+import defpackage.abwj;
+import defpackage.atzb;
+import defpackage.auad;
+import defpackage.cauf;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.fgti;
+import defpackage.fiig;
+import defpackage.fiir;
+import defpackage.fiiu;
+import defpackage.fiiv;
+import defpackage.filp;
+import defpackage.filq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AuthzenGcmTaskChimeraService extends GmsTaskChimeraService {
     public static final /* synthetic */ int a = 0;
-    private static final arxo b = new arxo("AuthzenGcmTaskChimeraService");
+    private static final auad b = new auad("AuthzenGcmTaskChimeraService");
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        String str = bylnVar.a;
+    public final int a(cauf caufVar) {
+        String str = caufVar.a;
         if (!str.startsWith("dismiss:")) {
             if (!str.startsWith("expired:")) {
                 b.f("Received unexpected task: ".concat(str), new Object[0]);
                 return 2;
             }
-            Bundle bundle = bylnVar.b;
+            Bundle bundle = caufVar.b;
             if (bundle == null || bundle.getLong("creation_elapsed_time") == 0) {
                 b.f("Missing extras for task: ".concat(str), new Object[0]);
                 return 2;
@@ -50,7 +50,7 @@ public class AuthzenGcmTaskChimeraService extends GmsTaskChimeraService {
             AppContextProvider.a().sendBroadcast(intent);
             return 0;
         }
-        Bundle bundle2 = bylnVar.b;
+        Bundle bundle2 = caufVar.b;
         if (bundle2 == null) {
             b.f("Missing extras for task: ".concat(str), new Object[0]);
             return 2;
@@ -59,58 +59,58 @@ public class AuthzenGcmTaskChimeraService extends GmsTaskChimeraService {
         try {
             byte[] decode = Base64.decode(bundle2.getString("encryption_key_handle"), 2);
             byte[] decode2 = Base64.decode(bundle2.getString("tx_request"), 2);
-            fftw fftwVar = null;
+            fiiu fiiuVar = null;
             if (decode2 != null) {
                 try {
-                    fftw fftwVar2 = fftw.a;
+                    fiiu fiiuVar2 = fiiu.a;
                     int length = decode2.length;
-                    febw febwVar = febw.a;
-                    feep feepVar = feep.a;
-                    fecp y = fecp.y(fftwVar2, decode2, 0, length, febw.a);
-                    fecp.M(y);
-                    fftwVar = (fftw) y;
-                } catch (fedk e) {
+                    fgqp fgqpVar = fgqp.a;
+                    fgti fgtiVar = fgti.a;
+                    fgri y = fgri.y(fiiuVar2, decode2, 0, length, fgqp.a);
+                    fgri.M(y);
+                    fiiuVar = (fiiu) y;
+                } catch (fgsd e) {
                     b.f("Invalid protobuff: ".concat(e.toString()), new Object[0]);
                 }
             }
-            arwm.s(string);
-            arwm.s(decode);
-            arwm.s(fftwVar);
-            zwh.h(fftwVar.c.M(), 11, this);
-            zwj.b(this).e(zwj.d(fftwVar));
-            fecj v = fftx.a.v();
-            ffti fftiVar = ffti.EXPIRED;
+            atzb.s(string);
+            atzb.s(decode);
+            atzb.s(fiiuVar);
+            abwh.h(fiiuVar.c.M(), 11, this);
+            abwj.b(this).e(abwj.d(fiiuVar));
+            fgrc v = fiiv.a.v();
+            fiig fiigVar = fiig.EXPIRED;
             if (!v.b.L()) {
                 v.U();
             }
-            fftx fftxVar = (fftx) v.b;
-            fftxVar.c = fftiVar.j;
-            fftxVar.b |= 1;
+            fiiv fiivVar = (fiiv) v.b;
+            fiivVar.c = fiigVar.j;
+            fiivVar.b |= 1;
             long currentTimeMillis = System.currentTimeMillis();
             if (!v.b.L()) {
                 v.U();
             }
-            fftx fftxVar2 = (fftx) v.b;
-            fftxVar2.b |= 4;
-            fftxVar2.e = currentTimeMillis;
-            fftx fftxVar3 = (fftx) v.Q();
-            fecj v2 = fftt.a.v();
+            fiiv fiivVar2 = (fiiv) v.b;
+            fiivVar2.b |= 4;
+            fiivVar2.e = currentTimeMillis;
+            fiiv fiivVar3 = (fiiv) v.Q();
+            fgrc v2 = fiir.a.v();
             if (!v2.b.L()) {
                 v2.U();
             }
-            fecp fecpVar = v2.b;
-            fftt ffttVar = (fftt) fecpVar;
-            fftwVar.getClass();
-            ffttVar.c = fftwVar;
-            ffttVar.b |= 1;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v2.b;
+            fiir fiirVar = (fiir) fgriVar;
+            fiiuVar.getClass();
+            fiirVar.c = fiiuVar;
+            fiirVar.b |= 1;
+            if (!fgriVar.L()) {
                 v2.U();
             }
-            fftt ffttVar2 = (fftt) v2.b;
-            fftxVar3.getClass();
-            ffttVar2.d = fftxVar3;
-            ffttVar2.b |= 2;
-            startService(TransactionReplyIntentOperation.b(string, decode, fftwVar, new ffwr(ffws.TX_REPLY, ((fftt) v2.Q()).r())));
+            fiir fiirVar2 = (fiir) v2.b;
+            fiivVar3.getClass();
+            fiirVar2.d = fiivVar3;
+            fiirVar2.b |= 2;
+            startService(TransactionReplyIntentOperation.b(string, decode, fiiuVar, new filp(filq.TX_REPLY, ((fiir) v2.Q()).r())));
             return 0;
         } catch (IllegalArgumentException | NullPointerException e2) {
             b.f("Extras parsing error: ".concat(e2.toString()), new Object[0]);

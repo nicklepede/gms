@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.home.matter.commissioning.DeviceInfo;
-import defpackage.arxc;
-import defpackage.bkzy;
+import defpackage.atzr;
+import defpackage.bngp;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class BluetoothBeacon extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bkzy();
+    public static final Parcelable.Creator CREATOR = new bngp();
     public final DeviceInfo a;
 
     public BluetoothBeacon(DeviceInfo deviceInfo) {
@@ -35,8 +35,8 @@ public final class BluetoothBeacon extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         DeviceInfo deviceInfo = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, deviceInfo, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, deviceInfo, i, false);
+        atzr.c(parcel, a);
     }
 }

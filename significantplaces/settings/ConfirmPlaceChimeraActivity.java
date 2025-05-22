@@ -13,24 +13,24 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.significantplaces.settings.ConfirmPlaceChimeraActivity;
-import defpackage.dciw;
-import defpackage.fsao;
-import defpackage.fvbo;
+import defpackage.detc;
+import defpackage.fuvk;
+import defpackage.fxxm;
 import defpackage.ip;
 import defpackage.iq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class ConfirmPlaceChimeraActivity extends dciw {
-    public final double j = fsao.b();
+public final class ConfirmPlaceChimeraActivity extends detc {
+    public final double j = fuvk.b();
     private final int k = R.style.ConfirmMaterialDialogTheme;
 
-    @Override // defpackage.dciw
+    @Override // defpackage.detc
     public final int a() {
         return this.k;
     }
 
-    @Override // defpackage.dciw
+    @Override // defpackage.detc
     public final iq b(ip ipVar) {
         Bundle extras = getIntent().getExtras();
         final String string = extras != null ? extras.getString("place") : null;
@@ -57,28 +57,29 @@ public final class ConfirmPlaceChimeraActivity extends dciw {
                 editText.setText(new SpannableStringBuilder(string3));
                 editText.setEnabled(string4 == null);
                 ((TextView) inflate.findViewById(R.id.subtitle_address)).setText(string2);
-                ipVar.setView(inflate);
-                ipVar.setNegativeButton(R.string.common_cancel, new DialogInterface.OnClickListener() { // from class: dcja
+                ip view = ipVar.setView(inflate);
+                view.setNegativeButton(R.string.common_cancel, new DialogInterface.OnClickListener() { // from class: detg
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i2) {
-                        fvbo.f(dialogInterface, "<unused var>");
-                        int i3 = dciy.a;
-                        dciy.b(ConfirmPlaceChimeraActivity.this);
+                        fxxm.f(dialogInterface, "<unused var>");
+                        int i3 = dete.a;
+                        dete.b(ConfirmPlaceChimeraActivity.this);
                     }
                 });
                 final String str = string4;
                 final String str2 = string5;
                 final int i2 = i;
-                final iq create = ipVar.setPositiveButton(R.string.common_add, new DialogInterface.OnClickListener() { // from class: dcjb
+                view.setPositiveButton(R.string.common_add, new DialogInterface.OnClickListener() { // from class: deth
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i3) {
-                        fvbo.f(dialogInterface, "<unused var>");
+                        fxxm.f(dialogInterface, "<unused var>");
                         ConfirmPlaceChimeraActivity confirmPlaceChimeraActivity = ConfirmPlaceChimeraActivity.this;
-                        fvgt.b(joo.a(confirmPlaceChimeraActivity), null, null, new dcjf(str, confirmPlaceChimeraActivity, i2, string, editText, string2, str2, doubleValue, doubleValue2, null), 3);
+                        fycr.b(jvd.a(confirmPlaceChimeraActivity), null, null, new detl(str, confirmPlaceChimeraActivity, i2, string, editText, string2, str2, doubleValue, doubleValue2, null), 3);
                     }
-                }).create();
-                fvbo.e(create, "create(...)");
-                create.setOnShowListener(new DialogInterface.OnShowListener() { // from class: dcjc
+                });
+                final iq create = view.create();
+                fxxm.e(create, "create(...)");
+                create.setOnShowListener(new DialogInterface.OnShowListener() { // from class: deti
                     @Override // android.content.DialogInterface.OnShowListener
                     public final void onShow(DialogInterface dialogInterface) {
                         View findViewById = iq.this.findViewById(R.id.map);
@@ -91,14 +92,14 @@ public final class ConfirmPlaceChimeraActivity extends dciw {
                         MapView mapView = (MapView) findViewById;
                         mapView.b(null);
                         mapView.f();
-                        mapView.a(new cbzy() { // from class: dciz
-                            @Override // defpackage.cbzy
-                            public final void a(cbzu cbzuVar) {
+                        mapView.a(new ceis() { // from class: detf
+                            @Override // defpackage.ceis
+                            public final void a(ceio ceioVar) {
                                 double d3 = d2;
                                 double d4 = d;
-                                cbzuVar.i(cbzq.b(new LatLng(d3, d4), 16.0f));
+                                ceioVar.i(ceii.b(new LatLng(d3, d4), 16.0f));
                                 try {
-                                    cbzuVar.c().a.c();
+                                    ceioVar.c().a.c();
                                     ConfirmPlaceChimeraActivity confirmPlaceChimeraActivity2 = confirmPlaceChimeraActivity;
                                     CircleOptions circleOptions = new CircleOptions();
                                     circleOptions.a(new LatLng(d3, d4));
@@ -106,19 +107,19 @@ public final class ConfirmPlaceChimeraActivity extends dciw {
                                     circleOptions.c();
                                     circleOptions.b();
                                     circleOptions.d();
-                                    cbzuVar.e(circleOptions);
+                                    ceioVar.e(circleOptions);
                                 } catch (RemoteException e) {
-                                    throw new ccen(e);
+                                    throw new cenh(e);
                                 }
                             }
                         });
                     }
                 });
-                create.setOnCancelListener(new DialogInterface.OnCancelListener() { // from class: dcjd
+                create.setOnCancelListener(new DialogInterface.OnCancelListener() { // from class: detj
                     @Override // android.content.DialogInterface.OnCancelListener
                     public final void onCancel(DialogInterface dialogInterface) {
-                        int i3 = dciy.a;
-                        dciy.b(ConfirmPlaceChimeraActivity.this);
+                        int i3 = dete.a;
+                        dete.b(ConfirmPlaceChimeraActivity.this);
                     }
                 });
                 return create;
@@ -127,7 +128,7 @@ public final class ConfirmPlaceChimeraActivity extends dciw {
         return null;
     }
 
-    @Override // defpackage.dciw
+    @Override // defpackage.detc
     public final boolean c() {
         return false;
     }

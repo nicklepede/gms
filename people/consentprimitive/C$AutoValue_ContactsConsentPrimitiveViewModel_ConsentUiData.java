@@ -1,12 +1,12 @@
 package com.google.android.gms.people.consentprimitive;
 
 import android.accounts.Account;
-import defpackage.ctsw;
-import defpackage.eitj;
-import defpackage.eixf;
-import defpackage.elkn;
+import defpackage.cwcc;
+import defpackage.elgo;
+import defpackage.elkk;
+import defpackage.enya;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* renamed from: com.google.android.gms.people.consentprimitive.$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData, reason: invalid class name */
 /* loaded from: classes6.dex */
 abstract class C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData extends ContactsConsentPrimitiveViewModel$ConsentUiData {
@@ -17,14 +17,14 @@ abstract class C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData exten
     public final int e;
     public final boolean f;
     public final boolean g;
-    public final elkn h;
-    public final elkn i;
+    public final enya h;
+    public final enya i;
     public final int j;
     public final int k;
     public final int l;
-    public final eitj m;
+    public final elgo m;
 
-    public C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData(ContactsConsentData contactsConsentData, ContactsConsentsConfig contactsConsentsConfig, Account account, int i, int i2, boolean z, boolean z2, elkn elknVar, elkn elknVar2, int i3, int i4, int i5, eitj eitjVar) {
+    public C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData(ContactsConsentData contactsConsentData, ContactsConsentsConfig contactsConsentsConfig, Account account, int i, int i2, boolean z, boolean z2, enya enyaVar, enya enyaVar2, int i3, int i4, int i5, elgo elgoVar) {
         if (contactsConsentData == null) {
             throw new NullPointerException("Null consentStateData");
         }
@@ -41,21 +41,21 @@ abstract class C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData exten
         this.e = i2;
         this.f = z;
         this.g = z2;
-        if (elknVar == null) {
+        if (enyaVar == null) {
             throw new NullPointerException("Null currentPage");
         }
-        this.h = elknVar;
-        if (elknVar2 == null) {
+        this.h = enyaVar;
+        if (enyaVar2 == null) {
             throw new NullPointerException("Null learnMoreReturnPage");
         }
-        this.i = elknVar2;
+        this.i = enyaVar2;
         this.j = i3;
         this.k = i4;
         this.l = i5;
-        if (eitjVar == null) {
+        if (elgoVar == null) {
             throw new NullPointerException("Null pagesInCustomizeFlow");
         }
-        this.m = eitjVar;
+        this.m = elgoVar;
     }
 
     @Override // com.google.android.gms.people.consentprimitive.ContactsConsentPrimitiveViewModel$ConsentUiData
@@ -89,7 +89,7 @@ abstract class C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData exten
         }
         if (obj instanceof ContactsConsentPrimitiveViewModel$ConsentUiData) {
             ContactsConsentPrimitiveViewModel$ConsentUiData contactsConsentPrimitiveViewModel$ConsentUiData = (ContactsConsentPrimitiveViewModel$ConsentUiData) obj;
-            if (this.a.equals(contactsConsentPrimitiveViewModel$ConsentUiData.g()) && this.b.equals(contactsConsentPrimitiveViewModel$ConsentUiData.i()) && this.c.equals(contactsConsentPrimitiveViewModel$ConsentUiData.f()) && this.d == contactsConsentPrimitiveViewModel$ConsentUiData.c() && this.e == contactsConsentPrimitiveViewModel$ConsentUiData.a() && this.f == contactsConsentPrimitiveViewModel$ConsentUiData.m() && this.g == contactsConsentPrimitiveViewModel$ConsentUiData.n() && this.h.equals(contactsConsentPrimitiveViewModel$ConsentUiData.k()) && this.i.equals(contactsConsentPrimitiveViewModel$ConsentUiData.l()) && this.j == contactsConsentPrimitiveViewModel$ConsentUiData.d() && this.k == contactsConsentPrimitiveViewModel$ConsentUiData.e() && this.l == contactsConsentPrimitiveViewModel$ConsentUiData.b() && eixf.i(this.m, contactsConsentPrimitiveViewModel$ConsentUiData.j())) {
+            if (this.a.equals(contactsConsentPrimitiveViewModel$ConsentUiData.g()) && this.b.equals(contactsConsentPrimitiveViewModel$ConsentUiData.i()) && this.c.equals(contactsConsentPrimitiveViewModel$ConsentUiData.f()) && this.d == contactsConsentPrimitiveViewModel$ConsentUiData.c() && this.e == contactsConsentPrimitiveViewModel$ConsentUiData.a() && this.f == contactsConsentPrimitiveViewModel$ConsentUiData.m() && this.g == contactsConsentPrimitiveViewModel$ConsentUiData.n() && this.h.equals(contactsConsentPrimitiveViewModel$ConsentUiData.k()) && this.i.equals(contactsConsentPrimitiveViewModel$ConsentUiData.l()) && this.j == contactsConsentPrimitiveViewModel$ConsentUiData.d() && this.k == contactsConsentPrimitiveViewModel$ConsentUiData.e() && this.l == contactsConsentPrimitiveViewModel$ConsentUiData.b() && elkk.i(this.m, contactsConsentPrimitiveViewModel$ConsentUiData.j())) {
                 return true;
             }
         }
@@ -107,8 +107,8 @@ abstract class C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData exten
     }
 
     @Override // com.google.android.gms.people.consentprimitive.ContactsConsentPrimitiveViewModel$ConsentUiData
-    public final ctsw h() {
-        return new ctsw(this);
+    public final cwcc h() {
+        return new cwcc(this);
     }
 
     public final int hashCode() {
@@ -122,17 +122,17 @@ abstract class C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData exten
     }
 
     @Override // com.google.android.gms.people.consentprimitive.ContactsConsentPrimitiveViewModel$ConsentUiData
-    public final eitj j() {
+    public final elgo j() {
         return this.m;
     }
 
     @Override // com.google.android.gms.people.consentprimitive.ContactsConsentPrimitiveViewModel$ConsentUiData
-    public final elkn k() {
+    public final enya k() {
         return this.h;
     }
 
     @Override // com.google.android.gms.people.consentprimitive.ContactsConsentPrimitiveViewModel$ConsentUiData
-    public final elkn l() {
+    public final enya l() {
         return this.i;
     }
 
@@ -147,11 +147,11 @@ abstract class C$AutoValue_ContactsConsentPrimitiveViewModel_ConsentUiData exten
     }
 
     public final String toString() {
-        eitj eitjVar = this.m;
-        elkn elknVar = this.i;
-        elkn elknVar2 = this.h;
+        elgo elgoVar = this.m;
+        enya enyaVar = this.i;
+        enya enyaVar2 = this.h;
         Account account = this.c;
         ContactsConsentsConfig contactsConsentsConfig = this.b;
-        return "ConsentUiData{consentStateData=" + this.a.toString() + ", config=" + contactsConsentsConfig.toString() + ", selectedAccount=" + account.toString() + ", numImportableSimContacts=" + this.d + ", choiceSelected=" + this.e + ", recommendedPageViewed=" + this.f + ", sheepdogCustomizePageViewed=" + this.g + ", currentPage=" + elknVar2.toString() + ", learnMoreReturnPage=" + elknVar.toString() + ", sheepdogCustomizeSelection=" + this.j + ", simCustomizeSelection=" + this.k + ", dcCustomizeSelection=" + this.l + ", pagesInCustomizeFlow=" + eitjVar.toString() + "}";
+        return "ConsentUiData{consentStateData=" + this.a.toString() + ", config=" + contactsConsentsConfig.toString() + ", selectedAccount=" + account.toString() + ", numImportableSimContacts=" + this.d + ", choiceSelected=" + this.e + ", recommendedPageViewed=" + this.f + ", sheepdogCustomizePageViewed=" + this.g + ", currentPage=" + enyaVar2.toString() + ", learnMoreReturnPage=" + enyaVar.toString() + ", sheepdogCustomizeSelection=" + this.j + ", simCustomizeSelection=" + this.k + ", dcCustomizeSelection=" + this.l + ", pagesInCustomizeFlow=" + elgoVar.toString() + "}";
     }
 }

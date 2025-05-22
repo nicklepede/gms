@@ -2,30 +2,30 @@ package com.google.android.gms.fitness.service.wearable;
 
 import android.content.Context;
 import com.google.android.gms.wearable.internal.MessageEventParcelable;
-import defpackage.aqxo;
-import defpackage.bggg;
-import defpackage.bggi;
-import defpackage.bhaz;
-import defpackage.bhbb;
-import defpackage.deqr;
-import defpackage.djki;
-import defpackage.djks;
-import defpackage.dkbc;
-import defpackage.fodd;
+import defpackage.atad;
+import defpackage.bikw;
+import defpackage.biky;
+import defpackage.bjfp;
+import defpackage.bjfr;
+import defpackage.dhbu;
+import defpackage.dlwb;
+import defpackage.dlwl;
+import defpackage.dmmv;
+import defpackage.fqvm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class WearableSyncMessageChimeraService extends dkbc {
-    private djki a;
-    private deqr b;
+public class WearableSyncMessageChimeraService extends dmmv {
+    private dlwb a;
+    private dhbu b;
 
-    @Override // defpackage.dkbc, defpackage.djkh
+    @Override // defpackage.dmmv, defpackage.dlwa
     public final void a(MessageEventParcelable messageEventParcelable) {
-        if (!fodd.a.a().J()) {
+        if (!fqvm.a.lK().J()) {
             this.a.a(messageEventParcelable);
             return;
         }
-        String str = bhaz.d(messageEventParcelable)[0];
+        String str = bjfp.d(messageEventParcelable)[0];
         this.b.d(str);
         try {
             this.a.a(messageEventParcelable);
@@ -34,15 +34,15 @@ public class WearableSyncMessageChimeraService extends dkbc {
         }
     }
 
-    @Override // defpackage.dkbc, com.google.android.chimera.Service
+    @Override // defpackage.dmmv, com.google.android.chimera.Service
     public final void onCreate() {
         super.onCreate();
-        bggi a = bggg.a(this);
+        biky a = bikw.a(this);
         Context applicationContext = getApplicationContext();
-        aqxo e = djks.e(a.C().a);
-        bhbb w = a.w();
+        atad e = dlwl.e(a.C().a);
+        bjfr w = a.w();
         a.a();
-        this.a = new bhaz(applicationContext, a, e, w);
-        this.b = new deqr(this, 1, "WearableSyncMessageChimeraService", null, "com.google.android.gms");
+        this.a = new bjfp(applicationContext, a, e, w);
+        this.b = new dhbu(this, 1, "WearableSyncMessageChimeraService", null, "com.google.android.gms");
     }
 }

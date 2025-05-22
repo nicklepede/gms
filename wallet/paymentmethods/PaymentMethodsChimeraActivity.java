@@ -11,16 +11,16 @@ import com.google.android.gms.wallet.firstparty.bootstrap.PaymentMethodsWidgetOp
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
 import com.google.android.gms.wallet.ui.common.WalletExitResult;
 import com.google.android.wallet.clientlog.LogContext;
-import defpackage.arwm;
-import defpackage.diez;
-import defpackage.difa;
-import defpackage.ding;
-import defpackage.dite;
-import defpackage.emen;
+import defpackage.atzb;
+import defpackage.dkqk;
+import defpackage.dkql;
+import defpackage.dkyr;
+import defpackage.dlep;
+import defpackage.eosb;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class PaymentMethodsChimeraActivity extends diez {
+public class PaymentMethodsChimeraActivity extends dkqk {
     Toolbar h;
 
     public static Intent Z(Context context, Intent intent, BuyFlowConfig buyFlowConfig) {
@@ -32,39 +32,39 @@ public class PaymentMethodsChimeraActivity extends diez {
         return intent2;
     }
 
-    @Override // defpackage.diez
+    @Override // defpackage.dkqk
     public final void A(WalletExitResult walletExitResult) {
-        dite diteVar = (dite) m();
-        if (diteVar != null) {
-            diteVar.by();
+        dlep dlepVar = (dlep) m();
+        if (dlepVar != null) {
+            dlepVar.bx();
         } else {
             z(null, false);
         }
     }
 
-    @Override // defpackage.diez, defpackage.pob, defpackage.qdy, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.dkqk, defpackage.rhf, defpackage.rxc, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         byte[] byteArrayExtra;
         byte[] bArr;
-        dite N;
+        dlep N;
         Intent intent = getIntent();
         BuyFlowConfig l = l();
         byte[] byteArrayExtra2 = intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_AUTH_TOKEN");
-        if (ding.O(l)) {
-            ding.C(this, l, ding.h, false);
+        if (dkyr.O(l)) {
+            dkyr.C(this, l, dkyr.h, false);
         } else {
-            ding.C(this, l, ding.g, false);
+            dkyr.C(this, l, dkyr.g, false);
         }
-        q(bundle, true, 6, emen.FLOW_TYPE_PAYMENT_METHODS);
+        q(bundle, true, 6, eosb.FLOW_TYPE_PAYMENT_METHODS);
         super.onCreate(bundle);
-        difa.b(this);
+        dkql.b(this);
         setContentView(R.layout.wallet_activity_common);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         this.h = toolbar;
         d(toolbar);
-        kJ().o(true);
+        kY().o(true);
         findViewById(R.id.wallet_root);
-        if (((dite) m()) == null) {
+        if (((dlep) m()) == null) {
             Bundle extras = intent.getExtras();
             if (extras.containsKey("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS")) {
                 bArr = intent.getByteArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_PARAMS");
@@ -80,7 +80,7 @@ public class PaymentMethodsChimeraActivity extends diez {
             PendingIntent[] pendingIntentArr = new PendingIntent[0];
             if (extras.containsKey("com.google.android.gms.wallet.firstparty.EXTRA_ACTION_ID") && extras.containsKey("com.google.android.gms.wallet.firstparty.EXTRA_PENDING_INTENT")) {
                 strArr = intent.getStringArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_ACTION_ID");
-                pendingIntentArr = ding.R(intent.getParcelableArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_PENDING_INTENT"));
+                pendingIntentArr = dkyr.R(intent.getParcelableArrayExtra("com.google.android.gms.wallet.firstparty.EXTRA_PENDING_INTENT"));
             }
             String[] strArr2 = strArr;
             PendingIntent[] pendingIntentArr2 = pendingIntentArr;
@@ -98,19 +98,19 @@ public class PaymentMethodsChimeraActivity extends diez {
                     BuyFlowConfig l2 = l();
                     String str = this.a;
                     LogContext logContext = this.b;
-                    arwm.t(byteArrayExtra3, "Initialization token must not be null");
-                    N = dite.N(l2, bArr, null, byteArrayExtra3, byteArrayExtra2, strArr2, pendingIntentArr2, z, str, logContext);
+                    atzb.t(byteArrayExtra3, "Initialization token must not be null");
+                    N = dlep.N(l2, bArr, null, byteArrayExtra3, byteArrayExtra2, strArr2, pendingIntentArr2, z, str, logContext);
                 } else {
                     BuyFlowConfig l3 = l();
                     String str2 = this.a;
                     LogContext logContext2 = this.b;
-                    arwm.t(byteArrayExtra, "Unencrypted params must not be null");
-                    arwm.t(byteArrayExtra3, "Initialization token must not be null");
-                    N = dite.N(l3, null, byteArrayExtra, byteArrayExtra3, byteArrayExtra2, strArr2, pendingIntentArr2, z, str2, logContext2);
+                    atzb.t(byteArrayExtra, "Unencrypted params must not be null");
+                    atzb.t(byteArrayExtra3, "Initialization token must not be null");
+                    N = dlep.N(l3, null, byteArrayExtra, byteArrayExtra3, byteArrayExtra2, strArr2, pendingIntentArr2, z, str2, logContext2);
                 }
             } else {
                 byte[] bArr2 = bArr;
-                N = bArr2 != null ? dite.N(l(), bArr2, null, null, byteArrayExtra2, strArr2, pendingIntentArr2, z, this.a, this.b) : byteArrayExtra != null ? dite.N(l(), null, byteArrayExtra, null, byteArrayExtra2, strArr2, pendingIntentArr2, z, this.a, this.b) : null;
+                N = bArr2 != null ? dlep.N(l(), bArr2, null, null, byteArrayExtra2, strArr2, pendingIntentArr2, z, this.a, this.b) : byteArrayExtra != null ? dlep.N(l(), null, byteArrayExtra, null, byteArrayExtra2, strArr2, pendingIntentArr2, z, this.a, this.b) : null;
             }
             B(N, R.id.fragment_holder);
         }

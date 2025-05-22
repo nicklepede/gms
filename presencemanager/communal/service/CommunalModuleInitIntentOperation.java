@@ -1,22 +1,22 @@
 package com.google.android.gms.presencemanager.communal.service;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asot;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.ausn;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class CommunalModuleInitIntentOperation extends anya {
+public class CommunalModuleInitIntentOperation extends apzs {
     static {
-        asot.b("CommunalModuleInit", asej.COMMUNAL);
+        ausn.b("CommunalModuleInit", auid.COMMUNAL);
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void c(Intent intent, boolean z) {
     }
 }

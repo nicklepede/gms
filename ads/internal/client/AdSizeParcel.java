@@ -4,9 +4,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.DisplayMetrics;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AdSizeParcel extends AbstractSafeParcelable {
     public static final Parcelable.Creator CREATOR = new j();
@@ -55,23 +55,23 @@ public class AdSizeParcel extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.o(parcel, 3, this.b);
-        arxc.o(parcel, 4, this.c);
-        arxc.e(parcel, 5, this.d);
-        arxc.o(parcel, 6, this.e);
-        arxc.o(parcel, 7, this.f);
-        arxc.J(parcel, 8, this.g, i);
-        arxc.e(parcel, 9, this.h);
-        arxc.e(parcel, 10, this.i);
-        arxc.e(parcel, 11, this.j);
-        arxc.e(parcel, 12, this.k);
-        arxc.e(parcel, 13, this.l);
-        arxc.e(parcel, 14, this.m);
-        arxc.e(parcel, 15, this.n);
-        arxc.e(parcel, 16, this.o);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.o(parcel, 3, this.b);
+        atzr.o(parcel, 4, this.c);
+        atzr.e(parcel, 5, this.d);
+        atzr.o(parcel, 6, this.e);
+        atzr.o(parcel, 7, this.f);
+        atzr.J(parcel, 8, this.g, i);
+        atzr.e(parcel, 9, this.h);
+        atzr.e(parcel, 10, this.i);
+        atzr.e(parcel, 11, this.j);
+        atzr.e(parcel, 12, this.k);
+        atzr.e(parcel, 13, this.l);
+        atzr.e(parcel, 14, this.m);
+        atzr.e(parcel, 15, this.n);
+        atzr.e(parcel, 16, this.o);
+        atzr.c(parcel, a);
     }
 
     public AdSizeParcel() {
@@ -83,11 +83,11 @@ public class AdSizeParcel extends AbstractSafeParcelable {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public AdSizeParcel(android.content.Context r13, defpackage.tcd[] r14) {
+    public AdSizeParcel(android.content.Context r13, defpackage.uyd[] r14) {
         /*
             Method dump skipped, instructions count: 343
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.ads.internal.client.AdSizeParcel.<init>(android.content.Context, tcd[]):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.ads.internal.client.AdSizeParcel.<init>(android.content.Context, uyd[]):void");
     }
 }

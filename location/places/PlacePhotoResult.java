@@ -6,17 +6,17 @@ import android.os.Parcelable;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.data.BitmapTeleporter;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqyf;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.cafc;
+import defpackage.atau;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.ccnt;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes5.dex */
-public class PlacePhotoResult extends AbstractSafeParcelable implements aqyf {
-    public static final Parcelable.Creator CREATOR = new cafc();
+public class PlacePhotoResult extends AbstractSafeParcelable implements atau {
+    public static final Parcelable.Creator CREATOR = new ccnt();
     public final Status a;
     final BitmapTeleporter b;
     private final Bitmap c;
@@ -27,24 +27,24 @@ public class PlacePhotoResult extends AbstractSafeParcelable implements aqyf {
         this.c = bitmapTeleporter != null ? bitmapTeleporter.a() : null;
     }
 
-    @Override // defpackage.aqyf
+    @Override // defpackage.atau
     public final Status a() {
         return this.a;
     }
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("status", this.a, arrayList);
-        arwa.b("bitmap", this.c, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("status", this.a, arrayList);
+        atyp.b("bitmap", this.c, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Status status = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, status, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, status, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 }

@@ -2,34 +2,34 @@ package com.google.android.gms.people.consentprimitive;
 
 import android.accounts.Account;
 import android.os.Parcelable;
-import defpackage.ctpt;
-import defpackage.eitj;
-import defpackage.eits;
-import defpackage.eiuu;
-import defpackage.ejcg;
+import defpackage.cvyz;
+import defpackage.elgo;
+import defpackage.elgx;
+import defpackage.elhz;
+import defpackage.elpl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public abstract class ContactsConsentData implements Parcelable {
-    public static ctpt i() {
-        ctpt ctptVar = new ctpt();
-        ctptVar.c("");
-        ctptVar.g(0);
-        eits eitsVar = ejcg.a;
-        if (ctptVar.a != null) {
+    public static cvyz i() {
+        cvyz cvyzVar = new cvyz();
+        cvyzVar.c("");
+        cvyzVar.g(0);
+        elgx elgxVar = elpl.a;
+        if (cvyzVar.a != null) {
             throw new IllegalStateException("Cannot set accountToImportableSimContactsCount after calling accountToImportableSimContactsCountBuilder()");
         }
-        ctptVar.b = eits.k(eitsVar);
-        return ctptVar;
+        cvyzVar.b = elgx.k(elgxVar);
+        return cvyzVar;
     }
 
     public abstract int a();
 
-    public abstract eitj b();
+    public abstract elgo b();
 
-    public abstract eits c();
+    public abstract elgx c();
 
-    public abstract eiuu d();
+    public abstract elhz d();
 
     public abstract String e();
 

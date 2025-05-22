@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.unm;
+import defpackage.atzr;
+import defpackage.wjl;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated(forRemoval = true)
 /* loaded from: classes2.dex */
 public class AuthzenBeginTxData extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new unm();
+    public static final Parcelable.Creator CREATOR = new wjl();
     final int a;
     final int b;
     public final byte[] c;
@@ -37,10 +37,10 @@ public class AuthzenBeginTxData extends AbstractSafeParcelable implements Reflec
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.o(parcel, 2, this.b);
-        arxc.i(parcel, 3, this.c, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.o(parcel, 2, this.b);
+        atzr.i(parcel, 3, this.c, false);
+        atzr.c(parcel, a);
     }
 }

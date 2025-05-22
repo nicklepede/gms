@@ -1,14 +1,14 @@
 package com.google.android.gms.credential.manager.credentialexchange;
 
-import defpackage.audh;
-import defpackage.fipp;
-import defpackage.fvbo;
+import defpackage.awhm;
+import defpackage.flfm;
+import defpackage.fxxm;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@fipp(a = true)
-/* loaded from: classes3.dex */
-public final class CredentialExchangeFormat$Extension$SharedExtension extends audh {
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@flfm(a = true)
+/* loaded from: classes4.dex */
+public final class CredentialExchangeFormat$Extension$SharedExtension extends awhm {
     public final List a;
 
     public CredentialExchangeFormat$Extension$SharedExtension(List list) {
@@ -19,7 +19,7 @@ public final class CredentialExchangeFormat$Extension$SharedExtension extends au
         if (this == obj) {
             return true;
         }
-        return (obj instanceof CredentialExchangeFormat$Extension$SharedExtension) && fvbo.n(this.a, ((CredentialExchangeFormat$Extension$SharedExtension) obj).a);
+        return (obj instanceof CredentialExchangeFormat$Extension$SharedExtension) && fxxm.n(this.a, ((CredentialExchangeFormat$Extension$SharedExtension) obj).a);
     }
 
     public final int hashCode() {

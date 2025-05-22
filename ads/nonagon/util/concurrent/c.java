@@ -1,26 +1,26 @@
 package com.google.android.gms.ads.nonagon.util.concurrent;
 
-import defpackage.byhj;
-import defpackage.byhp;
-import defpackage.fixe;
-import defpackage.fixl;
-import defpackage.fixm;
+import defpackage.caqb;
+import defpackage.caqh;
+import defpackage.flnb;
+import defpackage.flni;
+import defpackage.flnj;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ThreadFactory;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class c implements fixe {
-    private final fixm a;
+public final class c implements flnb {
+    private final flnj a;
 
-    public c(fixm fixmVar) {
-        this.a = fixmVar;
+    public c(flnj flnjVar) {
+        this.a = flnjVar;
     }
 
-    @Override // defpackage.fuuq, defpackage.fuup
+    @Override // defpackage.fxqo, defpackage.fxqn
     public final /* bridge */ /* synthetic */ Object a() {
-        ScheduledExecutorService i = byhj.b.i((ThreadFactory) this.a.a(), byhp.HIGH_SPEED);
-        fixl.e(i);
+        ScheduledExecutorService i = caqb.b.i((ThreadFactory) this.a.a(), caqh.HIGH_SPEED);
+        flni.e(i);
         return i;
     }
 }

@@ -5,194 +5,194 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 import com.google.android.gms.growth.featuredrops.activity.FeatureDropsChimeraActivity;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bkhl;
-import defpackage.bkxr;
-import defpackage.ejhf;
-import defpackage.fecj;
-import defpackage.feur;
-import defpackage.fowd;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bmob;
+import defpackage.bnei;
+import defpackage.eluo;
+import defpackage.fgrc;
+import defpackage.fhjm;
+import defpackage.frpg;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class FeatureDropsChimeraActivity extends bkhl {
-    public static final String p = bkxr.b(FeatureDropsChimeraActivity.class);
-    private static final asot z = asot.b("FeatureDrops", asej.GROWTH_FEATUREDROPS);
+public class FeatureDropsChimeraActivity extends bmob {
+    public static final String p = bnei.b(FeatureDropsChimeraActivity.class);
+    private static final ausn A = ausn.b("FeatureDrops", auid.GROWTH_FEATUREDROPS);
 
     static {
-        fecj v = feur.a.v();
+        fgrc v = fhjm.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        ((feur) v.b).b = 1;
+        ((fhjm) v.b).b = 1;
     }
 
     private final boolean E() {
-        if (!fowd.a.a().f()) {
+        if (!frpg.a.lK().f()) {
             return false;
         }
         Intent intent = getIntent();
         if (intent != null) {
             return intent.getBooleanExtra("should_skip_server_query", false);
         }
-        ((ejhf) ((ejhf) z.j()).ah((char) 5075)).x("Empty intent.");
+        ((eluo) ((eluo) A.j()).ai((char) 5088)).x("Empty intent.");
         return false;
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(final Bundle bundle) {
         if (v()) {
             super.onCreate(bundle);
             if (u(bundle)) {
                 if (!E()) {
-                    this.l.execute(new Runnable() { // from class: bkhn
+                    this.l.execute(new Runnable() { // from class: bmod
                         @Override // java.lang.Runnable
                         public final void run() {
                             final FeatureDropsChimeraActivity featureDropsChimeraActivity = FeatureDropsChimeraActivity.this;
-                            final bkid bkidVar = featureDropsChimeraActivity.k;
+                            final bmot bmotVar = featureDropsChimeraActivity.k;
                             final String o = featureDropsChimeraActivity.o();
                             final String p2 = featureDropsChimeraActivity.p();
                             final String q = featureDropsChimeraActivity.q();
                             final Integer valueOf = Integer.valueOf(featureDropsChimeraActivity.w);
-                            fvbo.f(o, "accountName");
-                            Integer num = (Integer) bkidVar.d("flexagonApiClient.getFeatureDropsFlow", new fvaf() { // from class: bkhy
-                                @Override // defpackage.fvaf
+                            fxxm.f(o, "accountName");
+                            Integer num = (Integer) bmotVar.d("flexagonApiClient.getFeatureDropsFlow", new fxwd() { // from class: bmoo
+                                @Override // defpackage.fxwd
                                 public final Object a() {
-                                    bkib bkibVar = new bkib(o, null, q, p2, valueOf, 2);
-                                    fecj v = fevb.a.v();
-                                    fvbo.f(v, "builder");
-                                    bkid bkidVar2 = bkid.this;
-                                    fevg b = bkidVar2.b();
-                                    fvbo.f(b, "value");
+                                    bmor bmorVar = new bmor(o, null, q, p2, valueOf, 2);
+                                    fhjw fhjwVar = fhjw.a;
+                                    fgrc v = fhjwVar.v();
+                                    fxxm.f(v, "builder");
+                                    bmot bmotVar2 = bmot.this;
+                                    fhkb b = bmotVar2.b();
+                                    fxxm.f(b, "value");
                                     if (!v.b.L()) {
                                         v.U();
                                     }
-                                    ((fevb) v.b).e = b.a();
-                                    List unmodifiableList = DesugarCollections.unmodifiableList(((fevb) v.b).d);
-                                    fvbo.e(unmodifiableList, "getInstalledAppsPackagesList(...)");
-                                    new fegj(unmodifiableList);
-                                    Context context = bkidVar2.b;
+                                    ((fhjw) v.b).e = b.a();
+                                    List unmodifiableList = DesugarCollections.unmodifiableList(((fhjw) v.b).d);
+                                    fxxm.e(unmodifiableList, "getInstalledAppsPackagesList(...)");
+                                    new fgvc(unmodifiableList);
+                                    Context context = bmotVar2.b;
                                     ArrayList arrayList = new ArrayList();
-                                    for (String str : fowd.a.a().c().b) {
-                                        if (asng.U(context, str)) {
+                                    for (String str : frpg.a.lK().c().b) {
+                                        if (aura.U(context, str)) {
                                             arrayList.add(str);
                                         }
                                     }
-                                    eitj i = eitj.i(arrayList);
-                                    fvbo.e(i, "getAllInstalledAppsInDrop(...)");
-                                    fvbo.f(i, "values");
+                                    elgo i = elgo.i(arrayList);
+                                    fxxm.e(i, "getAllInstalledAppsInDrop(...)");
+                                    fxxm.f(i, "values");
                                     if (!v.b.L()) {
                                         v.U();
                                     }
-                                    fevb fevbVar = (fevb) v.b;
-                                    fedh fedhVar = fevbVar.d;
-                                    if (!fedhVar.c()) {
-                                        fevbVar.d = fecp.E(fedhVar);
+                                    fhjw fhjwVar2 = (fhjw) v.b;
+                                    fgsa fgsaVar = fhjwVar2.d;
+                                    if (!fgsaVar.c()) {
+                                        fhjwVar2.d = fgri.E(fgsaVar);
                                     }
-                                    feab.E(i, fevbVar.d);
-                                    String str2 = bkibVar.d;
+                                    fgou.E(i, fhjwVar2.d);
+                                    String str2 = bmorVar.d;
                                     if (str2 != null) {
                                         if (!v.b.L()) {
                                             v.U();
                                         }
-                                        ((fevb) v.b).f = str2;
+                                        ((fhjw) v.b).f = str2;
                                     }
-                                    String str3 = bkibVar.c;
+                                    String str3 = bmorVar.c;
                                     if (str3 != null) {
                                         if (!v.b.L()) {
                                             v.U();
                                         }
-                                        ((fevb) v.b).g = str3;
+                                        ((fhjw) v.b).g = str3;
                                     }
-                                    Integer num2 = bkibVar.e;
+                                    Integer num2 = bmorVar.e;
                                     int i2 = 2;
                                     if (num2 != null) {
                                         int intValue = num2.intValue();
                                         if (!v.b.L()) {
                                             v.U();
                                         }
-                                        fevb fevbVar2 = (fevb) v.b;
-                                        fevbVar2.b |= 2;
-                                        fevbVar2.h = intValue;
+                                        fhjw fhjwVar3 = (fhjw) v.b;
+                                        fhjwVar3.b |= 2;
+                                        fhjwVar3.h = intValue;
                                     }
-                                    feux a = bkidVar2.a();
-                                    fvbo.f(a, "value");
+                                    fhjs a = bmotVar2.a();
+                                    fxxm.f(a, "value");
                                     if (!v.b.L()) {
                                         v.U();
                                     }
-                                    bkju bkjuVar = bkidVar2.c;
-                                    fevb fevbVar3 = (fevb) v.b;
+                                    bmqk bmqkVar = bmotVar2.c;
+                                    fhjw fhjwVar4 = (fhjw) v.b;
                                     a.getClass();
-                                    fevbVar3.c = a;
-                                    fevbVar3.b |= 1;
-                                    fecp Q = v.Q();
-                                    fvbo.e(Q, "build(...)");
-                                    fevb fevbVar4 = (fevb) Q;
-                                    String str4 = bkibVar.a;
-                                    fvbo.f(fevbVar4, "request");
-                                    fvbo.f(str4, "accountName");
-                                    bkjw bkjwVar = new bkjw(bkjuVar.a, bzgc.a, bxtb.b);
-                                    arts a2 = bkju.a(str4);
-                                    if (bkjw.b == null) {
-                                        ftxd ftxdVar = ftxd.UNARY;
-                                        fevb fevbVar5 = fevb.a;
-                                        febw febwVar = furo.a;
-                                        bkjw.b = new ftxe(ftxdVar, "google.internal.googlegrowth.flexagon.v1.FlexagonApi/GetFeatureDropsFlow", new furn(fevbVar5), new furn(fevc.a), false);
+                                    fhjwVar4.c = a;
+                                    fhjwVar4.b |= 1;
+                                    fgri Q = v.Q();
+                                    fxxm.e(Q, "build(...)");
+                                    fhjw fhjwVar5 = (fhjw) Q;
+                                    String str4 = bmorVar.a;
+                                    fxxm.f(fhjwVar5, "request");
+                                    fxxm.f(str4, "accountName");
+                                    bmqm bmqmVar = new bmqm(bmqkVar.a, cbot.a, cabt.b);
+                                    atwh a2 = bmqk.a(str4);
+                                    if (bmqm.b == null) {
+                                        fwtb fwtbVar = fwtb.UNARY;
+                                        fgqp fgqpVar = fxnm.a;
+                                        bmqm.b = new fwtc(fwtbVar, "google.internal.googlegrowth.flexagon.v1.FlexagonApi/GetFeatureDropsFlow", new fxnl(fhjwVar), new fxnl(fhjx.a), false);
                                     }
-                                    final fevc fevcVar = (fevc) bkjwVar.e.f(bkjw.b, a2, fevbVar4, bkjw.a, TimeUnit.MILLISECONDS, bkjwVar.f);
-                                    fvbo.c(fevcVar);
+                                    final fhjx fhjxVar = (fhjx) bmqmVar.e.f(bmqm.b, a2, fhjwVar5, bmqm.a, TimeUnit.MILLISECONDS, bmqmVar.f);
+                                    fxxm.c(fhjxVar);
                                     try {
-                                        dxkm dxkmVar = bkidVar2.f;
-                                        final fvaq fvaqVar = new fvaq() { // from class: bkhz
-                                            @Override // defpackage.fvaq
+                                        dzwm dzwmVar = bmotVar2.f;
+                                        final fxwo fxwoVar = new fxwo() { // from class: bmop
+                                            @Override // defpackage.fxwo
                                             public final Object a(Object obj) {
-                                                fevf fevfVar = (fevf) obj;
-                                                asot asotVar = bkid.a;
-                                                fecj fecjVar = (fecj) fevfVar.iB(5, null);
-                                                fecjVar.X(fevfVar);
-                                                boolean z2 = fevc.this.c;
-                                                if (!fecjVar.b.L()) {
-                                                    fecjVar.U();
+                                                fhka fhkaVar = (fhka) obj;
+                                                ausn ausnVar = bmot.a;
+                                                fgrc fgrcVar = (fgrc) fhkaVar.iQ(5, null);
+                                                fgrcVar.X(fhkaVar);
+                                                boolean z = fhjx.this.c;
+                                                if (!fgrcVar.b.L()) {
+                                                    fgrcVar.U();
                                                 }
-                                                fevf fevfVar2 = (fevf) fecjVar.b;
-                                                fevf fevfVar3 = fevf.a;
-                                                fevfVar2.b = z2;
-                                                return (fevf) fecjVar.Q();
+                                                fhka fhkaVar2 = (fhka) fgrcVar.b;
+                                                fhka fhkaVar3 = fhka.a;
+                                                fhkaVar2.b = z;
+                                                return (fhka) fgrcVar.Q();
                                             }
                                         };
-                                        ((enpf) dxkmVar.b(new eiho() { // from class: bkia
-                                            @Override // defpackage.eiho
+                                        ((eqcy) dzwmVar.b(new ekut() { // from class: bmoq
+                                            @Override // defpackage.ekut
                                             public final Object apply(Object obj) {
-                                                asot asotVar = bkid.a;
-                                                return fvaq.this.a(obj);
+                                                ausn ausnVar = bmot.a;
+                                                return fxwo.this.a(obj);
                                             }
-                                        }, enre.a)).u();
+                                        }, eqex.a)).u();
                                     } catch (InterruptedException e) {
-                                        ((ejhf) ((ejhf) bkid.a.j()).s(e)).x("failed setting is_locale_unsupported in protostore.");
+                                        ((eluo) ((eluo) bmot.a.j()).s(e)).x("failed setting is_locale_unsupported in protostore.");
                                     } catch (ExecutionException e2) {
-                                        ((ejhf) ((ejhf) bkid.a.j()).s(e2)).x("failed setting is_locale_unsupported in protostore.");
+                                        ((eluo) ((eluo) bmot.a.j()).s(e2)).x("failed setting is_locale_unsupported in protostore.");
                                     }
-                                    feva fevaVar = fevcVar.b;
-                                    if (fevaVar == null) {
-                                        fevaVar = feva.a;
+                                    fhjv fhjvVar = fhjxVar.b;
+                                    if (fhjvVar == null) {
+                                        fhjvVar = fhjv.a;
                                     }
-                                    if (fevaVar.b.isEmpty()) {
-                                        ((ejhf) bkid.a.i()).x("Empty backend response");
+                                    if (fhjvVar.b.isEmpty()) {
+                                        ((eluo) bmot.a.i()).x("Empty backend response");
                                     } else {
-                                        feva fevaVar2 = fevcVar.b;
-                                        if (fevaVar2 == null) {
-                                            fevaVar2 = feva.a;
+                                        fhjv fhjvVar2 = fhjxVar.b;
+                                        if (fhjvVar2 == null) {
+                                            fhjvVar2 = fhjv.a;
                                         }
-                                        bkkr bkkrVar = bkidVar2.e;
-                                        fedh fedhVar2 = fevaVar2.b;
-                                        bkkrVar.a(fedhVar2);
-                                        bkidVar2.d.a(fedhVar2);
+                                        bmrh bmrhVar = bmotVar2.e;
+                                        fgsa fgsaVar2 = fhjvVar2.b;
+                                        bmrhVar.a(fgsaVar2);
+                                        bmotVar2.d.a(fgsaVar2);
                                         i2 = 0;
                                     }
                                     return Integer.valueOf(i2);
@@ -200,7 +200,7 @@ public class FeatureDropsChimeraActivity extends bkhl {
                             });
                             final int intValue = num != null ? num.intValue() : 2;
                             final Bundle bundle2 = bundle;
-                            featureDropsChimeraActivity.runOnUiThread(new Runnable() { // from class: bkhm
+                            featureDropsChimeraActivity.runOnUiThread(new Runnable() { // from class: bmoc
                                 @Override // java.lang.Runnable
                                 public final void run() {
                                     FeatureDropsChimeraActivity.this.s(intValue, bundle2);
@@ -216,7 +216,7 @@ public class FeatureDropsChimeraActivity extends bkhl {
         }
     }
 
-    @Override // defpackage.bkpp
+    @Override // defpackage.bmwg
     protected final boolean w() {
         return E();
     }

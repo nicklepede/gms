@@ -7,19 +7,19 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Handler;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.aspz;
-import defpackage.assx;
-import defpackage.eiig;
-import defpackage.eike;
-import defpackage.fmse;
-import defpackage.iln;
+import defpackage.autt;
+import defpackage.auwr;
+import defpackage.ekvl;
+import defpackage.ekxj;
+import defpackage.fpkc;
+import defpackage.ind;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class PackageResetHelper extends TracingBroadcastReceiver {
     private final Context a;
     private final boolean b;
-    private aspz c;
+    private autt c;
 
     public PackageResetHelper(Context context) {
         super("common-base");
@@ -27,19 +27,19 @@ public class PackageResetHelper extends TracingBroadcastReceiver {
         this.b = true;
     }
 
-    public final synchronized void b(aspz aspzVar, Handler handler) {
+    public final synchronized void b(autt auttVar, Handler handler) {
         Throwable th;
         try {
             try {
-                if (fmse.g()) {
+                if (fpkc.h()) {
                     try {
-                        eiig.p(this.c == null);
+                        ekvl.q(this.c == null);
                     } catch (Throwable th2) {
                         th = th2;
                         throw th;
                     }
                 }
-                this.c = aspzVar;
+                this.c = auttVar;
                 IntentFilter intentFilter = new IntentFilter();
                 intentFilter.addAction("android.intent.action.PACKAGE_CHANGED");
                 intentFilter.addAction("android.intent.action.PACKAGE_REMOVED");
@@ -47,12 +47,12 @@ public class PackageResetHelper extends TracingBroadcastReceiver {
                 intentFilter.addAction("android.intent.action.QUERY_PACKAGE_RESTART");
                 intentFilter.addDataScheme("package");
                 Context context = this.a;
-                iln.c(context, this, intentFilter, null, handler, 2);
+                ind.c(context, this, intentFilter, null, handler, 2);
                 if (this.b) {
                     IntentFilter intentFilter2 = new IntentFilter();
                     intentFilter2.addAction("com.google.android.gms.INSTANT_APP_STOPPED");
                     try {
-                        iln.c(context, this, intentFilter2, "com.google.android.gms.permission.INTERNAL_BROADCAST", handler, 4);
+                        ind.c(context, this, intentFilter2, "com.google.android.gms.permission.INTERNAL_BROADCAST", handler, 4);
                     } catch (Throwable th3) {
                         th = th3;
                         th = th;
@@ -68,8 +68,8 @@ public class PackageResetHelper extends TracingBroadcastReceiver {
     }
 
     public final synchronized void c() {
-        if (fmse.g()) {
-            eiig.p(this.c != null);
+        if (fpkc.h()) {
+            ekvl.q(this.c != null);
             this.c = null;
         }
         this.a.unregisterReceiver(this);
@@ -77,20 +77,20 @@ public class PackageResetHelper extends TracingBroadcastReceiver {
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
-        aspz aspzVar;
+    public final void jP(Context context, Intent intent) {
+        autt auttVar;
         char c;
         synchronized (this) {
-            aspzVar = this.c;
+            auttVar = this.c;
         }
-        if (aspzVar == null) {
+        if (auttVar == null) {
             return;
         }
         Uri data = intent.getData();
         String schemeSpecificPart = data != null ? data.getSchemeSpecificPart() : null;
         if (schemeSpecificPart != null) {
             String action = intent.getAction();
-            eike.e(action);
+            ekxj.e(action);
             switch (action.hashCode()) {
                 case -1072806502:
                     if (action.equals("android.intent.action.QUERY_PACKAGE_RESTART")) {
@@ -135,7 +135,7 @@ public class PackageResetHelper extends TracingBroadcastReceiver {
                 String[] stringArrayExtra = intent.getStringArrayExtra("android.intent.extra.PACKAGES");
                 if (stringArrayExtra != null) {
                     for (String str : stringArrayExtra) {
-                        if (aspzVar.id(str)) {
+                        if (auttVar.is(str)) {
                             setResultCode(-1);
                             return;
                         }
@@ -146,11 +146,11 @@ public class PackageResetHelper extends TracingBroadcastReceiver {
             }
             if (c != 1) {
                 if (c == 2 || c == 3) {
-                    aspzVar.lr(schemeSpecificPart);
+                    auttVar.lO(schemeSpecificPart);
                     return;
                 } else {
                     if (c == 4 && this.b) {
-                        aspzVar.lr(schemeSpecificPart);
+                        auttVar.lO(schemeSpecificPart);
                         return;
                     }
                     return;
@@ -161,10 +161,10 @@ public class PackageResetHelper extends TracingBroadcastReceiver {
                 for (String str2 : stringArrayExtra2) {
                     if (schemeSpecificPart.equals(str2)) {
                         try {
-                            if (assx.b(context).e(schemeSpecificPart, 0).enabled) {
+                            if (auwr.b(context).e(schemeSpecificPart, 0).enabled) {
                                 return;
                             }
-                            aspzVar.lr(schemeSpecificPart);
+                            auttVar.lO(schemeSpecificPart);
                             return;
                         } catch (PackageManager.NameNotFoundException unused) {
                             return;

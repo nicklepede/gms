@@ -1,14 +1,14 @@
 package com.google.android.gms.cast.discovery.database.gaia;
 
-import defpackage.amrh;
-import defpackage.amrm;
-import defpackage.amro;
-import defpackage.amrt;
-import defpackage.amrv;
-import defpackage.amrx;
-import defpackage.amsc;
-import defpackage.kol;
-import defpackage.kpp;
+import defpackage.aoss;
+import defpackage.aosx;
+import defpackage.aosz;
+import defpackage.aote;
+import defpackage.aotg;
+import defpackage.aoti;
+import defpackage.aotn;
+import defpackage.mgw;
+import defpackage.mie;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -17,89 +17,89 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class GaiaDiscoveryStorage_Impl extends GaiaDiscoveryStorage {
-    private volatile amrx l;
-    private volatile amro m;
-    private volatile amrh n;
+    private volatile aoti m;
+    private volatile aosz n;
+    private volatile aoss o;
 
-    @Override // defpackage.kpm
-    protected final kol a() {
-        return new kol(this, new HashMap(0), new HashMap(0), "gaia_info", "gaia_device_link", "cloud_device_info");
+    @Override // defpackage.mhx
+    protected final mgw a() {
+        return new mgw(this, new HashMap(0), new HashMap(0), "gaia_info", "gaia_device_link", "cloud_device_info");
     }
 
-    @Override // defpackage.kpm
-    protected final /* synthetic */ kpp c() {
-        return new amrv(this);
+    @Override // defpackage.mhx
+    protected final /* synthetic */ mie c() {
+        return new aotg(this);
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     protected final Map e() {
         HashMap hashMap = new HashMap();
-        hashMap.put(amrx.class, Collections.EMPTY_LIST);
-        hashMap.put(amro.class, Collections.EMPTY_LIST);
-        hashMap.put(amrh.class, Collections.EMPTY_LIST);
+        hashMap.put(aoti.class, Collections.EMPTY_LIST);
+        hashMap.put(aosz.class, Collections.EMPTY_LIST);
+        hashMap.put(aoss.class, Collections.EMPTY_LIST);
         return hashMap;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final Set f() {
         return new HashSet();
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final void k() {
         throw null;
     }
 
-    @Override // defpackage.kpm
+    @Override // defpackage.mhx
     public final List s() {
         return new ArrayList();
     }
 
     @Override // com.google.android.gms.cast.discovery.database.gaia.GaiaDiscoveryStorage
-    public final amrh v() {
-        amrh amrhVar;
+    public final aoss v() {
+        aoss aossVar;
+        if (this.o != null) {
+            return this.o;
+        }
+        synchronized (this) {
+            if (this.o == null) {
+                this.o = new aosx(this);
+            }
+            aossVar = this.o;
+        }
+        return aossVar;
+    }
+
+    @Override // com.google.android.gms.cast.discovery.database.gaia.GaiaDiscoveryStorage
+    public final aosz w() {
+        aosz aoszVar;
         if (this.n != null) {
             return this.n;
         }
         synchronized (this) {
             if (this.n == null) {
-                this.n = new amrm(this);
+                this.n = new aote(this);
             }
-            amrhVar = this.n;
+            aoszVar = this.n;
         }
-        return amrhVar;
+        return aoszVar;
     }
 
     @Override // com.google.android.gms.cast.discovery.database.gaia.GaiaDiscoveryStorage
-    public final amro w() {
-        amro amroVar;
+    public final aoti x() {
+        aoti aotiVar;
         if (this.m != null) {
             return this.m;
         }
         synchronized (this) {
             if (this.m == null) {
-                this.m = new amrt(this);
+                this.m = new aotn(this);
             }
-            amroVar = this.m;
+            aotiVar = this.m;
         }
-        return amroVar;
-    }
-
-    @Override // com.google.android.gms.cast.discovery.database.gaia.GaiaDiscoveryStorage
-    public final amrx x() {
-        amrx amrxVar;
-        if (this.l != null) {
-            return this.l;
-        }
-        synchronized (this) {
-            if (this.l == null) {
-                this.l = new amsc(this);
-            }
-            amrxVar = this.l;
-        }
-        return amrxVar;
+        return aotiVar;
     }
 }

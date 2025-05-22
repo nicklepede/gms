@@ -1,19 +1,19 @@
 package com.google.android.gms.backup.settings.component;
 
 import android.os.Bundle;
-import defpackage.ahwd;
-import defpackage.arxo;
-import defpackage.eble;
-import defpackage.qgg;
+import defpackage.ajwt;
+import defpackage.auad;
+import defpackage.edxt;
+import defpackage.rzk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class BackupOrRestoreSettingsChimeraActivity extends qgg {
-    private static final arxo j = ahwd.a("BackupOrRestoreSettingsChimeraActivity");
+public class BackupOrRestoreSettingsChimeraActivity extends rzk {
+    private static final auad j = ajwt.a("BackupOrRestoreSettingsChimeraActivity");
 
-    @Override // defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
-        int i = eble.a;
+        int i = edxt.a;
         super.onCreate(bundle);
         j.f("Activity launched for platform version below S", new Object[0]);
         finish();

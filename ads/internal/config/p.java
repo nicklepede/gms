@@ -4,12 +4,12 @@ import android.content.Context;
 import android.text.TextUtils;
 import com.android.volley.toolbox.ImageRequest;
 import com.google.android.gms.ads.internal.client.w;
-import defpackage.eijr;
+import defpackage.ekww;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class p {
     public static final g A;
@@ -147,7 +147,8 @@ public final class p {
     public static final g cc;
     public static final g cd;
     public static final g ce;
-    private static final Integer cf;
+    public static final g cf;
+    private static final Integer cg;
     public static final g g;
     public static final g h;
     public static final g i;
@@ -264,7 +265,7 @@ public final class p {
         new b(1, "gads:sai:server_side_npa:enabled", true, true);
         g.l("gads:sai:server_side_npa:ttl", TimeUnit.DAYS.toMillis(90L), TimeUnit.DAYS.toMillis(90L));
         new f("gads:sai:server_side_npa:shared_preference_key_list", "{  \"__default__\": [    \"IABTCF_TCString\"  ],  \"mobileads_consent\": [    \"consent_string\"  ]}", "{  \"__default__\": [    \"IABTCF_TCString\"  ],  \"mobileads_consent\": [    \"consent_string\"  ]}");
-        new b(1, "gads:disables_app_measurement_sdk_init", false, false);
+        new b(1, "gads:disables_app_measurement_sdk_init", true, true);
         new b(1, "gads:idless:internal_state_enabled", true, true);
         new b(1, "gads:idless:idless_disables_offline_ads_signalling", true, true);
         new b(1, "gads:custom_idless:enabled", true, true);
@@ -353,12 +354,13 @@ public final class p {
         N = new b(1, "gads:csi:enable_csi_latency_reporting", false, false);
         O = new b(1, "gads:csi:enable_csi_latency_reporting_v2", false, false);
         P = new b(1, "gads:csi:enable_csi_latency_reporting_v3", false, false);
-        Q = new b(1, "gads:csi:enable_csi_latency_reporting_v4", false, false);
+        Q = new b(1, "gads:csi:enable_csi_latency_reporting_v4", true, true);
         new b(1, "gads:csi:enable_csi_latency_reporting_v5", false, false);
         new b(1, "gads:csi:enable_csi_latency_reporting_for_rendering", true, true);
         new b(1, "gads:csi:enable_is_native_sra_for_rendering_latency", true, true);
         new b(1, "gads:csi:enable_on_ad_response_csi_parsing_for_scar", false, false);
         R = new b(1, "gads:csi:enable_csi_latency_individual_signals", false, false);
+        new b(1, "gads:csi:log_native_assets_latency", false, false);
         new b(1, "gads:csi:enable_memory_info", true, true);
         new b(1, "gads:csi:enable_app_version", false, false);
         S = new b(1, "gads:optional_signal_timeout_exception:enabled", false, false);
@@ -505,6 +507,13 @@ public final class p {
         new b(1, "gads:cct_v2_prewarm_on_signal_generated:enabled", false, false);
         new b(1, "gads:cct_v2_prewarm_on_ad_loaded:enabled", false, false);
         new b(2, "CHROME_CUSTOM_TAB_OPT_OUT", false, false);
+        new b(1, "gads:cct_ad_activity_check_enabled", false, false);
+        new b(1, "gads:cct_back_press_allowed_enabled", false, false);
+        g.k("gads:cct_ad_activity_check_timeout_ms", 3000, 3000);
+        new f("gads:cct_ad_activity_check_manufacturer_regex", ".*", ".*");
+        new f("gads:cct_ad_activity_check_model_regex", ".*", ".*");
+        new b(1, "gads:cct_foreground_state_check_enabled", false, false);
+        aA = new b(1, "gads:cct_skip_launching_on_emulator:enabled", false, false);
         g.l("gads:debug_hold_gesture:time_millis", 2000L, 2000L);
         new f("gads:drx_debug:debug_device_linking_url", "https://www.google.com/dfp/linkDevice", "https://www.google.com/dfp/linkDevice");
         new f("gads:drx_debug:in_app_preview_status_url", "https://www.google.com/dfp/inAppPreview", "https://www.google.com/dfp/inAppPreview");
@@ -518,16 +527,16 @@ public final class p {
         new b(1, "gad:interstitial_multi_window_method", false, false);
         new b(1, "gads:display_cutouts:enabled", false, false);
         g.k("gad:interstitial:close_button_padding_dip", 20, 20);
-        aA = new b(1, "gads:clearcut_logging:enabled", false, false);
-        aB = new b(1, "gads:clearcut_logging:write_to_file", false, false);
+        aB = new b(1, "gads:clearcut_logging:enabled", false, false);
+        aC = new b(1, "gads:clearcut_logging:write_to_file", false, false);
         new b(1, "gad:publisher_testing:force_local_request:enabled", true, true);
         new f("gad:publisher_testing:force_local_request:enabled_list", "", "");
         new f("gad:publisher_testing:force_local_request:disabled_list", "", "");
-        aC = g.k("gad:http_redirect_max_count:times", 8, 8);
+        aD = g.k("gad:http_redirect_max_count:times", 8, 8);
         new b(1, "gads:omid:enabled", true, true);
         g.k("gads:omid:destroy_webview_delay", ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
         new b(1, "gads:omid_html_sessions_measure_webview:enabled", false, false);
-        aD = new b(1, "gads:omid_javascript_session_service:enabled", false, false);
+        aE = new b(1, "gads:omid_javascript_session_service:enabled", false, false);
         new b(1, "gads:omid_javascript_session_service_log_success:enabled", false, false);
         new f("gads:omid_settings_js_session_service_override_key", "javascript_session_service_enabled", "javascript_session_service_enabled");
         new b(1, "gads:omid_use_media_type_for_native:enabled", true, true);
@@ -549,7 +558,7 @@ public final class p {
         new b(1, "gads:nonagon:banner:check_dp_size", true, true);
         new b(1, "gads:nonagon:rewarded:load_multiple_ads", true, true);
         new b(1, "gads:nonagon:return_no_fill_error_code", true, true);
-        aE = new b(1, "gads:nonagon:continue_on_no_fill", true, true);
+        aF = new b(1, "gads:nonagon:continue_on_no_fill", true, true);
         new b(1, "gads:nonagon:replace_no_ad_config_with_no_fill", true, true);
         new b(1, "gads:nonagon:separate_timeout:enabled", true, true);
         g.k("gads:nonagon:parallel_renderer:count", -1, -1);
@@ -557,20 +566,20 @@ public final class p {
         new b(1, "gads:nonagon:banner_recursive_renderer", true, true);
         new b(1, "gads:nonagon:app_stats_lock:enabled", false, false);
         new b(1, "gads:get_app_id_from_manifest_for_app_stats_signal:enabled", false, false);
-        aF = new b(1, "gads:uri_query_to_map_bg_thread:enabled", false, false);
-        aG = new f("gads:uri_query_to_map_bg_thread:types", "/result", "/result");
-        aH = g.k("gads:uri_query_to_map_bg_thread:min_length", ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
+        aG = new b(1, "gads:uri_query_to_map_bg_thread:enabled", false, false);
+        aH = new f("gads:uri_query_to_map_bg_thread:types", "/result", "/result");
+        aI = g.k("gads:uri_query_to_map_bg_thread:min_length", ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
         new b(1, "gads:nonagon:active_view_gmsg_background_thread:enabled", true, true);
         new b(1, "gads:active_view_gmsg_separate_pool:enabled", true, true);
         new b(1, "gads:skip_init_for_app_open_ad_request:enabled", false, false);
         new b(1, "gads:nonagon:ad_load_on_failure_stack_trace:enabled", true, true);
-        aI = new b(1, "gads:signals:ad_id_info:enabled", true, true);
-        aJ = new b(1, "gads:signals:cache:enabled", true, true);
-        aK = new b(1, "gads:signals:doritos:enabled", false, false);
-        aL = new b(1, "gads:signals:doritos:v1:enabled", true, true);
-        aM = new b(1, "gads:signals:doritos:v2:immediate:enabled", false, false);
-        aN = new b(1, "gads:signals:parental_control:enabled", true, true);
-        aO = new b(1, "gads:signals:video_decoder:enabled", true, true);
+        aJ = new b(1, "gads:signals:ad_id_info:enabled", true, true);
+        aK = new b(1, "gads:signals:cache:enabled", true, true);
+        aL = new b(1, "gads:signals:doritos:enabled", false, false);
+        aM = new b(1, "gads:signals:doritos:v1:enabled", true, true);
+        aN = new b(1, "gads:signals:doritos:v2:immediate:enabled", false, false);
+        aO = new b(1, "gads:signals:parental_control:enabled", true, true);
+        aP = new b(1, "gads:signals:video_decoder:enabled", true, true);
         new b(1, "gads:signals:banner_hardware_acceleration:enabled", false, false);
         new b(1, "gads:signals:native_hardware_acceleration:enabled", false, false);
         new b(1, "gads:signals:external_version:enabled", true, true);
@@ -590,7 +599,7 @@ public final class p {
         new b(1, "gads:offline_signaling:enabled", false, false);
         g.k("gads:offline_signaling:log_maximum", 100, 100);
         new b(1, "gads:buffer_click_url_as_ready_to_ping:enabled", true, true);
-        aP = new b(1, "gads:predictive_prefetch_from_cld:enabled", false, false);
+        aQ = new b(1, "gads:predictive_prefetch_from_cld:enabled", false, false);
         new b(1, "gads:cache_layer_from_cld:enabled", false, false);
         new b(1, "gads:cache_layer_wait_for_app_settings:enabled", false, false);
         new b(1, "gads:precache_pool:verbose_logging", false, false);
@@ -613,29 +622,29 @@ public final class p {
         g.k("gads:app_open_precache_pool:size", 1, 1);
         g.k("gads:app_open_precache_pool:ad_time_limit", 14400, 14400);
         new b(1, "gads:memory_leak:b129558083", true, true);
-        aQ = new b(1, "gads:unhandled_event_reporting:enabled", false, false);
+        aR = new b(1, "gads:unhandled_event_reporting:enabled", false, false);
         new b(1, "gads:response_info:enabled", true, true);
         new b(1, "gads:loaded_adapter_response_response_info:enabled", true, true);
         new b(1, "gads:response_info_extras:enabled", true, true);
         new b(1, "gads:csi:interstitial_failed_to_show:enabled", true, true);
         new b(1, "gads:csi:mediation_failure:enabled", true, true);
         new f("gads:csi:error_parsing:regex", "^(\\d+)", "^(\\d+)");
-        aR = new b(1, "gads:csi:eids_from_cld:enabled", true, true);
+        aS = new b(1, "gads:csi:eids_from_cld:enabled", true, true);
         new b(1, "gads:request_id_check:enabled", true, true);
         g.k("gads:maximum_query_json_cache_size", 200, 200);
         g.l("gads:timeout_query_json_cache:millis", 3600000L, 3600000L);
         new b(1, "gads:scar_csi:enabled", true, true);
-        aS = new b(1, "gads:scar_csi_sampling:enabled", false, false);
+        aT = new b(1, "gads:scar_csi_sampling:enabled", false, false);
         new b(1, "gads:query_map_eviction_fullinfo:enabled", false, false);
         new b(1, "gads:query_map_update_bg_thread:enabled", false, false);
         new b(1, "gads:query_map_eviction_ping:enabled", false, false);
         new b(1, "gads:scar_signal_comparison_experiment:enabled", false, false);
         g.l("gads:timeout_signal_collection_in_exp:millis", 1000L, 1000L);
-        aT = new b(1, "gads:disable_token_under_idless:enabled", true, true);
+        aU = new b(1, "gads:disable_token_under_idless:enabled", true, true);
         new b(1, "gads:scar_encryption_key_for_gbid:enabled", true, true);
         new b(1, "gads:scar_decrypt_csi_for_gbid:enabled", false, false);
-        aU = new b(1, "gad:scar_token_allowlist:enabled", false, false);
-        aV = new f("gad:scar_gks:enabled_list", "2", "2");
+        aV = new b(1, "gad:scar_token_allowlist:enabled", false, false);
+        aW = new f("gad:scar_gks:enabled_list", "2", "2");
         new b(1, "gads:gbid_type_two_serving:enabled", false, false);
         new b(1, "gads:gbid_type_two_serving_post:enabled", true, true);
         new f("gads:gbid_type_two_serving_content_type", "", "");
@@ -669,18 +678,18 @@ public final class p {
         new b(1, "gads:detailed_sod_latency_logging:enabled", false, false);
         new b(1, "gads:signal_collection_without_rendering:enabled", true, true);
         g.k("gads:native_ads_signal:timeout", ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
-        aW = new b(2, "DISABLE_CRASH_REPORTING", false, false);
+        aX = new b(2, "DISABLE_CRASH_REPORTING", false, false);
         new b(1, "gads:unsampled_crash_reporting:enabled", false, false);
-        aX = g.k("gads:max_duplicate_crash:amount", 0, 0);
-        aY = new b(1, "gads:simple_promise_exception_reporting:enabled", false, false);
-        aZ = new b(1, "gads:sample_javascript_engine_exceptions:enabled", false, false);
-        ba = new b(1, "gads:sample_webview_initialization_failed_exceptions:enabled", false, false);
-        bb = new b(1, "gads:exception_with_additional_slices:enabled", true, true);
-        bc = new b(1, "gads:exception_with_memory_info:enabled", false, false);
-        bd = new b(1, "gads:exception_with_app_version:enabled", true, true);
-        be = new b(1, "gads:use_uri_to_construct_url:enabled", false, false);
+        aY = g.k("gads:max_duplicate_crash:amount", 0, 0);
+        aZ = new b(1, "gads:simple_promise_exception_reporting:enabled", false, false);
+        ba = new b(1, "gads:sample_javascript_engine_exceptions:enabled", false, false);
+        bb = new b(1, "gads:sample_webview_initialization_failed_exceptions:enabled", false, false);
+        bc = new b(1, "gads:exception_with_additional_slices:enabled", true, true);
+        bd = new b(1, "gads:exception_with_memory_info:enabled", false, false);
+        be = new b(1, "gads:exception_with_app_version:enabled", true, true);
+        bf = new b(1, "gads:use_uri_to_construct_url:enabled", false, false);
         new b(1, "gads:paid_event_listener:enabled", true, true);
-        bf = new b(1, "gads:ad_events_for_scar:enabled", true, true);
+        bg = new b(1, "gads:ad_events_for_scar:enabled", true, true);
         new b(1, "gads:interscroller_ad:enabled", true, true);
         new b(1, "gads:interscroller_ad:refresh:enabled", false, false);
         g.k("gads:interscroller:min_width", 300, 300);
@@ -692,7 +701,7 @@ public final class p {
         new b(1, "gads:policy_validator_for_all_pubs:enabled", true, true);
         new f("gad:publisher_testing:policy_validator:enabled_list", "", "");
         Integer num = 808;
-        cf = num;
+        cg = num;
         num.intValue();
         num.intValue();
         g.k("gads:policy_validator_layoutparam:flags", 808, 808);
@@ -709,12 +718,12 @@ public final class p {
         new b(1, "gads:open_gmsg:set_uri_data_and_type:enabled", true, true);
         g.k("gads:ad_error_api:min_version", 202006000, 202006000);
         new b(1, "gads:forward_bow_error_string:enabled", true, true);
-        bg = new b(1, "gads:continue_on_process_response:enabled", true, true);
+        bh = new b(1, "gads:continue_on_process_response:enabled", true, true);
         g.k("gads:mediation_no_fill_error:min_version", 202510000, 202510000);
         new b(1, "gads:line_item_no_fill_conversion:enabled", true, true);
         g.k("gads:offline_database_version:version", 1, 1);
         new b(1, "gads:offline_ads_notification:enabled", true, true);
-        bh = new b(1, "gads:use_new_network_api:enabled", true, true);
+        bi = new b(1, "gads:use_new_network_api:enabled", true, true);
         new b(1, "gads:request_notifications_permission:enabled", false, false);
         new b(1, "gads:redirect_users_to_notifications_settings:enabled", false, false);
         new b(1, "gads:skip_opt_in_dialog:enabled", true, true);
@@ -726,18 +735,18 @@ public final class p {
         new b(1, "gads:include_ping_attempts:enabled", false, false);
         new b(1, "gads:offline_ads:enabled", false, false);
         new b(1, "gads:handle_click_recorded_event:enabled", true, true);
-        bi = new b(1, "gads:default_network_type_fine_to_unknown:enabled", true, true);
+        bj = new b(1, "gads:default_network_type_fine_to_unknown:enabled", true, true);
         new b(1, "gads:handle_intent_async:enabled", true, true);
         new b(1, "gads:skip_deep_link_validation_native_ads:enabled", true, true);
         new b(1, "gads:try_deep_link_fallback_native_ads:enabled", true, true);
         new b(1, "gads:in_app_link_handling_for_android_11_enabled:enabled", true, true);
-        bj = new f("gads:remote_capture_service_url", "https://pagead2.googlesyndication.com/pagead/ping?e=2&f=1", "https://pagead2.googlesyndication.com/pagead/ping?e=2&f=1");
-        bk = g.k("gads:cui_monitoring_interval_ms", 300000, 300000);
-        bl = g.k("gads:cui_buffer_size", ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
-        bm = g.k("gads:cuj_automatic_flush_delay_ms", 30000, 30000);
+        bk = new f("gads:remote_capture_service_url", "https://pagead2.googlesyndication.com/pagead/ping?e=2&f=1", "https://pagead2.googlesyndication.com/pagead/ping?e=2&f=1");
+        bl = g.k("gads:cui_monitoring_interval_ms", 300000, 300000);
+        bm = g.k("gads:cui_buffer_size", ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS, ImageRequest.DEFAULT_IMAGE_TIMEOUT_MS);
+        bn = g.k("gads:cuj_automatic_flush_delay_ms", 30000, 30000);
         new f("gads:plugin_regex", "^Flutter-GMA-.*|^unity-.*", "^Flutter-GMA-.*|^unity-.*");
-        bn = new b(1, "gads:cui_monitoring_exception_enabled", true, true);
-        bo = new b(1, "gads:include_experiment_ids_in_cui_pings", true, true);
+        bo = new b(1, "gads:cui_monitoring_exception_enabled", true, true);
+        bp = new b(1, "gads:include_experiment_ids_in_cui_pings", true, true);
         g.k("gads:app_event_queue_size", 20, 20);
         new b(1, "gads:hide_grey_title_bar:enabled", false, false);
         new b(1, "gads:interstitial_ad_parameter_handler:enabled", true, true);
@@ -760,14 +769,14 @@ public final class p {
         new b(1, "gads:inspector:server_data_enabled", true, true);
         new b(1, "gads:inspector:bidding_data_enabled", true, true);
         new b(1, "gads:inspector:credentials_enabled", true, true);
-        bp = new b(1, "gads:inspector:export_request_logs_enabled", true, true);
+        bq = new b(1, "gads:inspector:export_request_logs_enabled", true, true);
         new b(1, "gads:inspector:export_response_logs_enabled", true, true);
         g.l("gads:inspector:max_ad_response_logs_bytes", 20971520L, 20971520L);
         new b(1, "gads:inspector:sdk_version_enabled", true, true);
         new b(1, "gads:inspector:adapter_supports_init_enabled", true, true);
         new b(1, "gads:inspector:out_of_context_testing_enabled", true, true);
         new b(1, "gads:inspector:out_of_context_testing_v2_enabled", true, true);
-        bq = new b(1, "gads:inspector:plugin_enabled", true, true);
+        br = new b(1, "gads:inspector:plugin_enabled", true, true);
         new b(1, "gads:inspector:ad_transaction_extras_enabled", true, true);
         new b(1, "gads:inspector:ui_storage_enabled", true, true);
         new f("gads:inspector:user_shared_preference_keys_csv", "IABTCF_AddtlConsent,IABTCF_gdprApplies,IABTCF_TCString", "IABTCF_AddtlConsent,IABTCF_gdprApplies,IABTCF_TCString");
@@ -825,8 +834,8 @@ public final class p {
         g.l("gads:topics_api_consent_in_millis", TimeUnit.DAYS.toMillis(1L), TimeUnit.DAYS.toMillis(1L));
         new b(1, "gads:ppt_check_for_topics_signal", true, true);
         new f("gads:topics_consent:shared_preference_key_list", "{  \"__default__\": [    \"IABTCF_TCString\",    \"gad_has_consent_for_cookies\",    \"gad_rdp\",    \"personalized_ad_status\",    \"IABUSPrivacy_String\",    \"UPTC_UptcString\",  ]}", "{  \"__default__\": [    \"IABTCF_TCString\",    \"gad_has_consent_for_cookies\",    \"gad_rdp\",    \"personalized_ad_status\",    \"IABUSPrivacy_String\",    \"UPTC_UptcString\",  ]}");
-        br = new f("gads:csi_log_consent:shared_preference_key_list", "", "");
-        bs = new f("gads:gen204_log_consent:shared_preference_key_list", "", "");
+        bs = new f("gads:csi_log_consent:shared_preference_key_list", "", "");
+        bt = new f("gads:gen204_log_consent:shared_preference_key_list", "", "");
         new b(1, "gads:leibniz:events:enabled", false, false);
         new b(1, "gads:msa:alphavis_enabled", false, false);
         new b(1, "gads:msa:adutilalphavis_enabled", false, false);
@@ -834,13 +843,13 @@ public final class p {
         g.k("gads:msa:visminalpha", 0, 0);
         new b(1, "gads:msa:vswfl", true, true);
         new b(1, "gads:msa:poslogger", false, false);
-        bt = new b(1, "gads:new_dynamite_module_method:enabled", false, false);
+        bu = new b(1, "gads:new_dynamite_module_method:enabled", false, false);
         g.k("gads:timeout_for_show_call_succeed:ms", 3000, 3000);
         new b(1, "gads:read_pub_callback_param_open_gmsg:enabled", true, true);
         new b(1, "gads:read_pub_callback_param_click_gmsg:enabled", true, true);
         new b(1, "gads:forward_physical_click_to_ad_listener:enabled", true, true);
-        bu = new b(1, "gads:webview_destroy_workaround:enabled", true, true);
-        bv = new b(1, "gads:evaluate_js_on_ui_thread:enabled", false, false);
+        bv = new b(1, "gads:webview_destroy_workaround:enabled", true, true);
+        bw = new b(1, "gads:evaluate_js_on_ui_thread:enabled", false, false);
         new b(1, "gads:mraid_collapse_on_ui_thread:enabled", true, true);
         new b(1, "gads:mraid_collapse_remove_view_before_dismiss:enabled", false, false);
         new b(1, "gads:mraid_collapse_remove_parent:enabled", false, false);
@@ -851,28 +860,28 @@ public final class p {
         new b(1, "gads:csi_ping_for_invalid_dynamite_flags_access:enabled", false, false);
         new b(1, "gads:gestures:paos:enabled", true, true);
         new b(1, "gads:normalized_device_volume:enabled", false, false);
-        bw = new b(1, "gads:register_receiver_options:enabled", true, true);
-        bx = new b(1, "gads:catching_security_exception_on_intent:enabled", true, true);
+        bx = new b(1, "gads:register_receiver_options:enabled", true, true);
+        by = new b(1, "gads:catching_security_exception_on_intent:enabled", true, true);
         new b(1, "gads:drop_is_sidewinder:enabled", true, true);
-        by = new b(1, "gads:explicit_intent_on_download:enabled", true, true);
+        bz = new b(1, "gads:explicit_intent_on_download:enabled", true, true);
         new b(1, "gads:queryInfo_generate_bg:enabled", false, false);
-        bz = new b(1, "gads:bg_banner_resume:enabled", false, false);
-        bA = new b(1, "gads:bg_banner_destroy:enabled", false, false);
-        bB = new b(1, "gads:bg_banner_pause:enabled", false, false);
+        bA = new b(1, "gads:bg_banner_resume:enabled", false, false);
+        bB = new b(1, "gads:bg_banner_destroy:enabled", false, false);
+        bC = new b(1, "gads:bg_banner_pause:enabled", false, false);
         new b(2, "OPTIMIZE_INITIALIZATION", true, true);
-        bC = new b(2, "OPTIMIZE_AD_LOADING", true, true);
+        bD = new b(2, "OPTIMIZE_AD_LOADING", true, true);
         g.k("gads:v46_granular_version", 221080000, 221080000);
         g.k("gads:v48_granular_version", 221909000, 221909000);
         new b(1, "gads:manifest_flag_collection:enabled", false, false);
-        bD = new b(1, "gads:remove_ua_lock:enabled", true, true);
-        bE = new b(1, "gads:fixed_size_bg_thread_pool:enabled", true, true);
-        bF = g.k("gads:core_bg_thread_pool_size", 16, 16);
-        bG = new b(1, "gads:allow_core_thread_timeout:enabled", true, true);
-        bH = new b(1, "gads:bstar_csi:enabled", true, true);
+        bE = new b(1, "gads:remove_ua_lock:enabled", true, true);
+        bF = new b(1, "gads:fixed_size_bg_thread_pool:enabled", true, true);
+        bG = g.k("gads:core_bg_thread_pool_size", 16, 16);
+        bH = new b(1, "gads:allow_core_thread_timeout:enabled", true, true);
+        bI = new b(1, "gads:bstar_csi:enabled", true, true);
         new b(1, "gads:bstar_signals:enabled", true, true);
         new b(1, "gads:bstar_display_count_signal:enabled", false, false);
         new b(1, "gads:bstar_display_count_impression_url_param:enabled", false, false);
-        bI = new b(1, "gads:emulator:ranchu_check_enabled", true, true);
+        bJ = new b(1, "gads:emulator:ranchu_check_enabled", true, true);
         new b(1, "gads:unity_signals:enabled", true, true);
         new b(1, "gads:unity_view_spam_signals:enabled", true, true);
         new b(1, "gads:full_screen_1px_open:enabled", true, true);
@@ -881,29 +890,29 @@ public final class p {
         new b(1, "gads:lmd_overlay_v56_plus:enabled", false, false);
         new b(1, "gads:custom_click_gesture_v2:enabled", true, true);
         new b(1, "gads:iltv_adloader_banner:enabled", true, true);
-        bJ = new b(1, "gads:mixed_content_never_allow:enabled", false, false);
-        bK = new b(1, "gads:webview_sound_effects:disabled", true, true);
+        bK = new b(1, "gads:mixed_content_never_allow:enabled", false, false);
+        bL = new b(1, "gads:webview_sound_effects:disabled", true, true);
         new b(1, "gads:csi_ping_for_paid_event_callback:enabled", false, false);
         new b(1, "gads:adapter_versions_in_every_ad_request:enabled", true, true);
-        bL = new b(1, "gads:app_settings_expiry_check_on_init:enabled", false, false);
-        bM = new b(1, "gads:app_settings_expiry_check_in_getter:enabled", false, false);
-        bN = new b(1, "gads:use_server_defined_cld_ttl:enabled", false, false);
-        bO = g.l("gads:sdk_defined_cld_ttl_secs", -1L, -1L);
-        bP = new f("gads:disabled_signals_list", "", "");
+        bM = new b(1, "gads:app_settings_expiry_check_on_init:enabled", false, false);
+        bN = new b(1, "gads:app_settings_expiry_check_in_getter:enabled", false, false);
+        bO = new b(1, "gads:use_server_defined_cld_ttl:enabled", false, false);
+        bP = g.l("gads:sdk_defined_cld_ttl_secs", -1L, -1L);
+        bQ = new f("gads:disabled_signals_list", "", "");
         new f("gads:cached_signals_list", "", "");
         new b(1, "gads:auto_refresh_cached_signals:enabled", false, false);
         new b(1, "gads:caching_signals_source_refactor:enabled", false, false);
         new b(1, "gads:use_stale_cached_signals:enabled", false, false);
         new b(1, "gads:csi_for_stale_cached_signals:enabled", false, false);
-        bQ = new b(1, "gads:use_app_open_ad_for_cld:enabled", true, true);
+        bR = new b(1, "gads:use_app_open_ad_for_cld:enabled", true, true);
         new b(1, "gads:populate_additional_native_ad_options:enabled", true, true);
-        bR = new b(1, "gads:migrate_call_from_schedule_at_fixed_rate:enabled", false, false);
+        bS = new b(1, "gads:migrate_call_from_schedule_at_fixed_rate:enabled", false, false);
         new b(1, "gads:in_ad_unit:enabled", true, true);
         new b(1, "gads:lock_screen_webviews:enabled", true, true);
         new b(1, "gads:skip_mobius_signal:enabled", true, true);
-        bS = new b(1, "gads:skip_constants_signal:enabled", true, true);
+        bT = new b(1, "gads:skip_constants_signal:enabled", true, true);
         new b(1, "gads:msa:cxyun:enabled", false, false);
-        bT = new b(1, "gads:use_local_ad_shield_utils:enabled", false, false);
+        bU = new b(1, "gads:use_local_ad_shield_utils:enabled", false, false);
         new b(1, "gads:maybe_use_new_api_for_battery_signal:enabled", false, false);
         g.k("gads:telephony_signal_timeout_duration_in_ms", 5000, 5000);
         g.k("gads:static_device_signal_timeout_duration_in_ms", 5000, 5000);
@@ -932,14 +941,14 @@ public final class p {
         g.k("gads:mobius_signal_timeout_duration_in_ms", 5000, 5000);
         g.k("gads:banner_refresh_signal_timeout_duration_in_ms", 5000, 5000);
         g.k("gads:afai_signal_timeout_duration_in_ms", 5000, 5000);
-        bU = new b(1, "gads:mute_webview_audio_when_paused:enabled", true, true);
+        bV = new b(1, "gads:mute_webview_audio_when_paused:enabled", true, true);
         new b(1, "gads:pause_resume_banner_webview_on_visibility_change", false, false);
         new b(1, "gads:log_webview_audio_mute_supported:enabled", false, false);
-        bV = new b(1, "gads:log_webview_pause_resume_exceptions:enabled", false, false);
+        bW = new b(1, "gads:log_webview_pause_resume_exceptions:enabled", false, false);
         new b(1, "gads:csi_for_initialization_latency_metrics:enabled", false, false);
         new b(1, "gads:maybe_invoke_remove_view_call_in_close_overlay", false, false);
         g.k("gads:video_metric_reporting_sample_rate", 5, 5);
-        bW = g.k("gads:exception_reporting_sample_rate", 5, 5);
+        bX = g.k("gads:exception_reporting_sample_rate", 5, 5);
         new b(1, "gads:read_ignore_click_action_param_open_gmsg:enabled", false, false);
         new b(1, "gads:install_source_info_signal:enabled", true, true);
         new b(1, "gads:native_video_get_current_time_fix:enabled", false, false);
@@ -948,26 +957,27 @@ public final class p {
         g.k("gads:sdk_banner_refresh_ad_load_delay_seconds", 30, 30);
         new b(1, "gads:enable_afai_signal", true, true);
         new b(1, "gads:enable_compose_csi_logging", false, false);
-        bX = new b(1, "gads:ad_overlay_info_parcel_memory_leak_fix", false, false);
+        bY = new b(1, "gads:ad_overlay_info_parcel_memory_leak_fix", false, false);
         new b(1, "gads:remote_service_memory_leak_fix", false, false);
-        bY = g.k("gads:ad_overlay_objects_map_retain_duration_seconds", 60, 60);
+        bZ = g.k("gads:ad_overlay_objects_map_retain_duration_seconds", 60, 60);
         new b(1, "gads:immersive_video_ads:enabled", true, true);
         new b(1, "gads:add_exception_to_failed_adapter_init_cui:enabled", false, false);
         new b(1, "gads:enable_log_scion_event_gmsg_for_native_js:enabled", false, false);
         new b(1, "gads:should_sample_fetch_rtb_info_exception:enabled", true, true);
         new b(1, "gads:ping_mobius_linking:enabled", false, false);
         new b(1, "gads:ping_custom_tab_renderer:enabled", false, false);
-        bZ = new b(1, "gads:should_use_start_activity_for_result:enabled", false, false);
-        ca = new b(1, "gads:should_send_csi_pings_for_hsdp:enabled", false, false);
-        cb = new f("gads:hsdp_intent_url_pattern", "(https?:\\/\\/play\\.google\\.com\\/d\\/?).*", "(https?:\\/\\/play\\.google\\.com\\/d\\/?).*");
+        ca = new b(1, "gads:should_use_start_activity_for_result:enabled", false, false);
+        cb = new b(1, "gads:should_send_csi_pings_for_hsdp:enabled", false, false);
+        cc = new f("gads:hsdp_intent_url_pattern", "(https?:\\/\\/play\\.google\\.com\\/d\\/?).*", "(https?:\\/\\/play\\.google\\.com\\/d\\/?).*");
         new b(1, "gads:csi:enable_unsampled_csi_ping", false, false);
-        cc = new b(1, "gads:disable_webview_settings_location", false, false);
-        cd = new b(1, "gads:disable_web_chrome_client_location", false, false);
-        ce = new b(1, "gads:log_webview_location_requested", false, false);
+        cd = new b(1, "gads:disable_webview_settings_location", true, true);
+        ce = new b(1, "gads:disable_web_chrome_client_location", true, true);
+        cf = new b(1, "gads:log_webview_location_requested", false, false);
         new b(1, "gads:new_condition_for_refresh_timers", false, false);
         new b(1, "gads:ping_spherical_video_processor:enabled", false, false);
         new b(1, "gads:new_csi_param_for_banner_refresh", true, true);
         new b(1, "gads:safe_area_margin_signals:enabled", false, false);
+        new b(1, "gads:add_device_language_code", false, false);
         new b(1, "gads:check_serving_config_for_skip_bc:enabled", false, false);
         new b(1, "gads:app_status_logging_for_presentation:enabled", true, true);
         new b(1, "gads:bg_status_for_csi_pings:enabled", false, false);
@@ -975,6 +985,10 @@ public final class p {
         new b(1, "gads:native:send_dimensions_ping_on_one_pixel_visible", false, false);
         g.j("gads:native:send_dimensions_ping_on_percentage_visible", 0.0f, 0.0f);
         new b(1, "gads:native_click_protection:enabled", false, false);
+        new b(1, "gads:system_health:anr_watchdog:enabled", false, false);
+        g.l("gads:system_health:anr_threshold_millis", 5000L, 5000L);
+        g.l("gads:system_health:anr_polling_millis", 1000L, 1000L);
+        new b(1, "gads:system_health:anr_csi", false, false);
     }
 
     public static List a() {
@@ -996,24 +1010,24 @@ public final class p {
     }
 
     public static void c(final Context context) {
-        r.a(new eijr() { // from class: com.google.android.gms.ads.internal.config.o
-            /* JADX WARN: Code restructure failed: missing block: B:68:0x012a, code lost:
+        r.a(new ekww() { // from class: com.google.android.gms.ads.internal.config.o
+            /* JADX WARN: Code restructure failed: missing block: B:68:0x0126, code lost:
             
                 if (new org.json.JSONObject((java.lang.String) com.google.android.gms.ads.internal.config.r.a(new com.google.android.gms.ads.internal.config.j())).optBoolean("local_flags_enabled") != false) goto L60;
              */
-            /* JADX WARN: Removed duplicated region for block: B:52:0x0130 A[Catch: all -> 0x0170, TRY_ENTER, TRY_LEAVE, TryCatch #0 {, blocks: (B:6:0x0012, B:8:0x0016, B:10:0x0019, B:12:0x001e, B:13:0x0020, B:15:0x0032, B:16:0x0036, B:18:0x0038, B:37:0x00aa, B:38:0x00b1, B:46:0x00e5, B:52:0x0130, B:59:0x015e, B:60:0x0165, B:74:0x0168, B:75:0x016f, B:21:0x004f, B:24:0x0059, B:27:0x0062, B:29:0x006d, B:30:0x0077, B:32:0x007d, B:34:0x008d, B:36:0x00a6, B:39:0x00b4, B:41:0x00b8, B:43:0x00c8, B:45:0x00e1, B:47:0x00ed, B:50:0x012c, B:53:0x0139, B:55:0x0150, B:57:0x0154, B:58:0x0157, B:61:0x00fe, B:63:0x010c, B:65:0x0114, B:67:0x011f), top: B:5:0x0012, inners: #2 }] */
-            /* JADX WARN: Removed duplicated region for block: B:53:0x0139 A[Catch: all -> 0x0167, TRY_ENTER, TryCatch #2 {all -> 0x0167, blocks: (B:21:0x004f, B:24:0x0059, B:27:0x0062, B:29:0x006d, B:30:0x0077, B:32:0x007d, B:34:0x008d, B:36:0x00a6, B:39:0x00b4, B:41:0x00b8, B:43:0x00c8, B:45:0x00e1, B:47:0x00ed, B:50:0x012c, B:53:0x0139, B:55:0x0150, B:57:0x0154, B:58:0x0157, B:61:0x00fe, B:63:0x010c, B:65:0x0114, B:67:0x011f), top: B:20:0x004f, outer: #0 }] */
-            @Override // defpackage.eijr
+            /* JADX WARN: Removed duplicated region for block: B:52:0x012c A[Catch: all -> 0x016c, TRY_ENTER, TRY_LEAVE, TryCatch #3 {, blocks: (B:6:0x0012, B:8:0x0016, B:10:0x0019, B:12:0x001e, B:13:0x0020, B:15:0x0032, B:16:0x0036, B:18:0x0038, B:37:0x00a8, B:38:0x00af, B:46:0x00e1, B:52:0x012c, B:59:0x015a, B:60:0x0161, B:74:0x0164, B:75:0x016b, B:21:0x004f, B:24:0x0059, B:27:0x0062, B:29:0x006d, B:30:0x0077, B:32:0x007d, B:34:0x008d, B:36:0x00a4, B:39:0x00b2, B:41:0x00b6, B:43:0x00c6, B:45:0x00dd, B:47:0x00e9, B:50:0x0128, B:53:0x0135, B:55:0x014c, B:57:0x0150, B:58:0x0153, B:61:0x00fa, B:63:0x0108, B:65:0x0110, B:67:0x011b), top: B:5:0x0012, inners: #0 }] */
+            /* JADX WARN: Removed duplicated region for block: B:53:0x0135 A[Catch: all -> 0x0163, TRY_ENTER, TryCatch #0 {all -> 0x0163, blocks: (B:21:0x004f, B:24:0x0059, B:27:0x0062, B:29:0x006d, B:30:0x0077, B:32:0x007d, B:34:0x008d, B:36:0x00a4, B:39:0x00b2, B:41:0x00b6, B:43:0x00c6, B:45:0x00dd, B:47:0x00e9, B:50:0x0128, B:53:0x0135, B:55:0x014c, B:57:0x0150, B:58:0x0153, B:61:0x00fa, B:63:0x0108, B:65:0x0110, B:67:0x011b), top: B:20:0x004f, outer: #3 }] */
+            @Override // defpackage.ekww
             /*
                 Code decompiled incorrectly, please refer to instructions dump.
                 To view partially-correct code enable 'Show inconsistent code' option in preferences
             */
-            public final java.lang.Object a() {
+            public final java.lang.Object lK() {
                 /*
-                    Method dump skipped, instructions count: 371
+                    Method dump skipped, instructions count: 367
                     To view this dump change 'Code comments level' option to 'DEBUG'
                 */
-                throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.ads.internal.config.o.a():java.lang.Object");
+                throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.ads.internal.config.o.lK():java.lang.Object");
             }
         });
     }

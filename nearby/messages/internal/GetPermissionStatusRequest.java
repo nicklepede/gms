@@ -5,18 +5,18 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.ckdx;
-import defpackage.cked;
-import defpackage.ckef;
+import defpackage.atzr;
+import defpackage.cmmc;
+import defpackage.cmmi;
+import defpackage.cmmk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes5.dex */
 public class GetPermissionStatusRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckdx();
+    public static final Parcelable.Creator CREATOR = new cmmc();
     final int a;
-    public final ckef b;
+    public final cmmk b;
 
     @Deprecated
     public final String c;
@@ -25,26 +25,26 @@ public class GetPermissionStatusRequest extends AbstractSafeParcelable {
     public final ClientAppContext d;
 
     public GetPermissionStatusRequest(int i, IBinder iBinder, String str, ClientAppContext clientAppContext) {
-        ckef ckedVar;
+        cmmk cmmiVar;
         this.a = i;
         if (iBinder == null) {
-            ckedVar = null;
+            cmmiVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.messages.internal.INearbyMessagesCallback");
-            ckedVar = queryLocalInterface instanceof ckef ? (ckef) queryLocalInterface : new cked(iBinder);
+            cmmiVar = queryLocalInterface instanceof cmmk ? (cmmk) queryLocalInterface : new cmmi(iBinder);
         }
-        this.b = ckedVar;
+        this.b = cmmiVar;
         this.c = str;
         this.d = ClientAppContext.b(clientAppContext, null, str, false);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.D(parcel, 2, this.b.asBinder());
-        arxc.v(parcel, 3, this.c, false);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.D(parcel, 2, this.b.asBinder());
+        atzr.v(parcel, 3, this.c, false);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.c(parcel, a);
     }
 }

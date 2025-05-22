@@ -3,21 +3,21 @@ package com.google.android.gms.reminders.notification;
 import android.content.Intent;
 import android.database.Cursor;
 import com.google.android.chimera.IntentOperation;
-import defpackage.cxdz;
-import defpackage.cxfa;
-import defpackage.cxfb;
-import defpackage.cxhg;
+import defpackage.cznv;
+import defpackage.czow;
+import defpackage.czox;
+import defpackage.czrc;
 import java.util.HashMap;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ScheduleTimeRemindersIntentOperation extends IntentOperation {
-    cxfb a;
+    czox a;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        this.a = new cxfb(getApplicationContext());
+        this.a = new czox(getApplicationContext());
     }
 
     @Override // com.google.android.chimera.IntentOperation
@@ -66,13 +66,13 @@ public class ScheduleTimeRemindersIntentOperation extends IntentOperation {
         if (longExtra == -1 || longExtra2 == -1) {
             return;
         }
-        cxfb cxfbVar = this.a;
-        cxhg.a();
-        Cursor query = cxfbVar.b.getContentResolver().query(cxdz.a, cxfb.a, "due_date_millis>=? AND due_date_millis<? AND ".concat(String.valueOf(cxfa.a)), new String[]{String.valueOf(longExtra), String.valueOf(longExtra2)}, null);
+        czox czoxVar = this.a;
+        czrc.a();
+        Cursor query = czoxVar.b.getContentResolver().query(cznv.a, czox.a, "due_date_millis>=? AND due_date_millis<? AND ".concat(String.valueOf(czow.a)), new String[]{String.valueOf(longExtra), String.valueOf(longExtra2)}, null);
         if (query != null) {
             while (query.moveToNext()) {
                 try {
-                    cxfbVar.a(query.getLong(0), query.getLong(1));
+                    czoxVar.a(query.getLong(0), query.getLong(1));
                 } finally {
                     query.close();
                 }

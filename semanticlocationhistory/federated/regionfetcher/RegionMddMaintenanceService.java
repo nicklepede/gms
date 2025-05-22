@@ -2,62 +2,62 @@ package com.google.android.gms.semanticlocationhistory.federated.regionfetcher;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
 import com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddMaintenanceService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.czje;
-import defpackage.dawm;
-import defpackage.ejhf;
-import defpackage.enps;
-import defpackage.enqc;
-import defpackage.enre;
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.frxg;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.dbtc;
+import defpackage.ddgu;
+import defpackage.eluo;
+import defpackage.eqdl;
+import defpackage.eqdv;
+import defpackage.eqex;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fusa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class RegionMddMaintenanceService extends GmsTaskBoundService {
-    public final czje b = new czje();
-    private dawm d;
-    private static final asot c = asot.b("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY);
+    public final dbtc b = new dbtc();
+    private ddgu d;
+    private static final ausn c = ausn.b("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY);
     public static final String a = RegionMddMaintenanceService.class.getName();
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        czje czjeVar = this.b;
-        czjeVar.e("RegionMddMaintenanceInvocation");
-        if (!frxg.e()) {
+    public final eqgl iB(cauf caufVar) {
+        dbtc dbtcVar = this.b;
+        dbtcVar.e("RegionMddMaintenanceInvocation");
+        if (!fusa.d()) {
             this.b.e("RegionMddMaintenanceFailureServiceDisabled");
-            return ensj.i(2);
+            return eqgc.i(2);
         }
-        String str = bylnVar.a;
+        String str = caufVar.a;
         if (!str.equals("RegionMddMaintenanceTask")) {
-            ((ejhf) ((ejhf) c.i()).ah((char) 10445)).B("Unexpected tag: %s.", str);
-            czjeVar.e("RegionMddMaintenanceFailureTagInvalid");
-            return ensj.i(2);
+            ((eluo) ((eluo) c.i()).ai((char) 10451)).B("Unexpected tag: %s.", str);
+            dbtcVar.e("RegionMddMaintenanceFailureTagInvalid");
+            return eqgc.i(2);
         }
         if (this.d == null) {
-            this.d = dawm.a(getApplicationContext());
+            this.d = ddgu.a(getApplicationContext());
         }
-        dawm dawmVar = this.d;
+        ddgu ddguVar = this.d;
         try {
-            enss g = enps.g(ensi.h(dawmVar.c.g()), new enqc() { // from class: dawn
-                @Override // defpackage.enqc
-                public final enss a(Object obj) {
+            eqgl g = eqdl.g(eqgb.h(ddguVar.c.g()), new eqdv() { // from class: ddgv
+                @Override // defpackage.eqdv
+                public final eqgl a(Object obj) {
                     RegionMddMaintenanceService.this.b.e("RegionMddMaintenanceSuccess");
-                    return ensj.i(0);
+                    return eqgc.i(0);
                 }
-            }, enre.a);
-            if (dawmVar != null) {
-                dawmVar.close();
+            }, eqex.a);
+            if (ddguVar != null) {
+                ddguVar.close();
             }
             return g;
         } catch (Throwable th) {
-            if (dawmVar != null) {
+            if (ddguVar != null) {
                 try {
-                    dawmVar.close();
+                    ddguVar.close();
                 } catch (Throwable th2) {
                     th.addSuppressed(th2);
                 }
@@ -67,6 +67,6 @@ public class RegionMddMaintenanceService extends GmsTaskBoundService {
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final void fR() {
+    public final void gf() {
     }
 }

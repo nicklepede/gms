@@ -18,8 +18,6 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.widget.Toast;
 import com.google.android.gms.R;
-import com.google.android.gms.common.api.ApiMetadata;
-import com.google.android.gms.common.api.ComplianceOptions;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.smartdevice.d2d.BootstrapConfigurations;
 import com.google.android.gms.smartdevice.d2d.BootstrapOptions;
@@ -31,98 +29,98 @@ import com.google.android.gms.smartdevice.d2d.PostTransferAction;
 import com.google.android.gms.smartdevice.d2d.VerificationInfo;
 import com.google.android.gms.smartdevice.d2d.metrics.SourceLogManager;
 import com.google.android.gms.smartdevice.setup.ui.D2DSetupChimeraActivity;
-import defpackage.Celse;
 import defpackage.a;
-import defpackage.arco;
-import defpackage.arcy;
-import defpackage.arjz;
-import defpackage.arkc;
-import defpackage.arut;
-import defpackage.arwm;
-import defpackage.arxd;
-import defpackage.arxo;
-import defpackage.asmb;
-import defpackage.asmf;
-import defpackage.asqh;
+import defpackage.atfd;
+import defpackage.atfn;
+import defpackage.atmo;
+import defpackage.atmr;
+import defpackage.atxi;
+import defpackage.atzb;
+import defpackage.atzs;
+import defpackage.auad;
+import defpackage.aupv;
+import defpackage.aupz;
+import defpackage.auub;
 import defpackage.bp;
-import defpackage.bqna;
+import defpackage.bsup;
 import defpackage.cq;
-import defpackage.dcvh;
-import defpackage.dcwh;
-import defpackage.dcxh;
-import defpackage.dcyb;
-import defpackage.dcyg;
-import defpackage.dcyl;
-import defpackage.dcyy;
-import defpackage.ddnt;
-import defpackage.ddot;
-import defpackage.ddpy;
-import defpackage.ddqa;
-import defpackage.ddqn;
-import defpackage.ddqq;
-import defpackage.ddtw;
-import defpackage.defb;
-import defpackage.dego;
-import defpackage.degp;
-import defpackage.degv;
-import defpackage.degy;
-import defpackage.degz;
-import defpackage.dehb;
-import defpackage.dehc;
-import defpackage.deho;
-import defpackage.dehz;
-import defpackage.deic;
-import defpackage.deig;
-import defpackage.deih;
-import defpackage.deiw;
-import defpackage.deix;
-import defpackage.deja;
-import defpackage.dejb;
-import defpackage.dejc;
-import defpackage.dejd;
-import defpackage.dejh;
-import defpackage.deji;
-import defpackage.dejj;
-import defpackage.dekb;
-import defpackage.dekc;
-import defpackage.dekd;
-import defpackage.dekl;
-import defpackage.dekm;
-import defpackage.dekq;
-import defpackage.dekr;
-import defpackage.dekv;
-import defpackage.deld;
-import defpackage.dele;
-import defpackage.delx;
-import defpackage.demq;
-import defpackage.demr;
-import defpackage.dems;
-import defpackage.demu;
-import defpackage.demx;
-import defpackage.dene;
-import defpackage.deno;
-import defpackage.denp;
-import defpackage.denq;
-import defpackage.denr;
-import defpackage.denu;
-import defpackage.dfae;
+import defpackage.dfgm;
+import defpackage.dfhm;
+import defpackage.dfim;
+import defpackage.dfjg;
+import defpackage.dfjl;
+import defpackage.dfjq;
+import defpackage.dfkd;
+import defpackage.dfyy;
+import defpackage.dfzy;
 import defpackage.dg;
-import defpackage.eiig;
-import defpackage.elqn;
-import defpackage.elsj;
-import defpackage.elso;
-import defpackage.elsr;
-import defpackage.elta;
-import defpackage.ensj;
+import defpackage.dgbd;
+import defpackage.dgbf;
+import defpackage.dgbs;
+import defpackage.dgbv;
+import defpackage.dgfb;
+import defpackage.dgqe;
+import defpackage.dgrr;
+import defpackage.dgrs;
+import defpackage.dgry;
+import defpackage.dgsb;
+import defpackage.dgsc;
+import defpackage.dgse;
+import defpackage.dgsf;
+import defpackage.dgsr;
+import defpackage.dgtc;
+import defpackage.dgtf;
+import defpackage.dgtj;
+import defpackage.dgtk;
+import defpackage.dgtz;
+import defpackage.dgua;
+import defpackage.dgud;
+import defpackage.dgue;
+import defpackage.dguf;
+import defpackage.dgug;
+import defpackage.dguk;
+import defpackage.dgul;
+import defpackage.dgum;
+import defpackage.dgve;
+import defpackage.dgvf;
+import defpackage.dgvg;
+import defpackage.dgvo;
+import defpackage.dgvp;
+import defpackage.dgvt;
+import defpackage.dgvu;
+import defpackage.dgvy;
+import defpackage.dgwg;
+import defpackage.dgwh;
+import defpackage.dgxa;
+import defpackage.dgxt;
+import defpackage.dgxu;
+import defpackage.dgxv;
+import defpackage.dgxx;
+import defpackage.dgya;
+import defpackage.dgyh;
+import defpackage.dgyr;
+import defpackage.dgys;
+import defpackage.dgyt;
+import defpackage.dgyu;
+import defpackage.dgyx;
+import defpackage.dhlk;
+import defpackage.ekvl;
+import defpackage.eoeb;
+import defpackage.eofs;
+import defpackage.eofx;
+import defpackage.eogc;
+import defpackage.eogf;
+import defpackage.eogo;
+import defpackage.eqgc;
 import defpackage.ew;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fkhl;
-import defpackage.fsct;
-import defpackage.fsek;
-import defpackage.fsfh;
-import defpackage.fsge;
-import defpackage.qex;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fmya;
+import defpackage.fuxq;
+import defpackage.fuzh;
+import defpackage.fvae;
+import defpackage.fvbb;
+import defpackage.ryb;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -130,41 +128,41 @@ import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, deiw, dehb, dekl, dekb, deho, deja, dejh, dekq, degp, deld {
-    public static final arxo h = new denq(new String[]{"Setup", "UI", "D2DSetupChimeraActivity"});
-    private static final ExecutorService n = new asmf(1, 9);
+public class D2DSetupChimeraActivity extends ryb implements dgvy, dfyy, dgsb, dgtz, dgse, dgvo, dgve, dgsr, dgud, dguk, dgvt, dgrs, dgwg {
+    public static final auad h = new dgyt(new String[]{"Setup", "UI", "D2DSetupChimeraActivity"});
+    private static final ExecutorService n = new aupz(1, 9);
     private String A;
-    private degv B;
+    private dgry B;
     private String C;
-    private deih D;
-    private deno E;
+    private dgtk D;
+    private dgyr E;
     private boolean F;
     private boolean G;
     private ConnectionRequest H;
     SourceLogManager i;
     int j;
     public String l;
-    public dehz m;
+    public dgtc m;
     private D2DDevice o;
     private int q;
     private boolean r;
     private ArrayList t;
     private boolean u;
     private boolean v;
-    private bqna x;
+    private bsup x;
     private int y;
     private String z;
-    private dcxh p = dcxh.UNKNOWN;
+    private dfim p = dfim.UNKNOWN;
     private Integer s = -99999;
     ArrayList k = new ArrayList();
     private boolean w = false;
 
     private final int J() {
         BootstrapOptions bootstrapOptions = this.m.ai;
-        boolean z = bootstrapOptions != null && dems.a(bootstrapOptions);
-        boolean z2 = (bootstrapOptions == null || ddtw.b(this, bootstrapOptions.u) == elqn.NONE) ? false : true;
+        boolean z = bootstrapOptions != null && dgxv.a(bootstrapOptions);
+        boolean z2 = (bootstrapOptions == null || dgfb.b(this, bootstrapOptions.u) == eoeb.NONE) ? false : true;
         return z ? z2 ? R.string.copy_confirmation_description_3p : R.string.smartdevice_d2d_copy_3p_account_text : z2 ? R.string.copy_confirmation_description : R.string.smartdevice_d2d_copy_account_text;
     }
 
@@ -173,27 +171,27 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
     }
 
     private final cq M() {
-        return deix.x(9, "", getString(R.string.smartdevice_alert_exit_setup_message), getString(R.string.smartdevice_alert_quit_button), getString(R.string.common_cancel), true);
+        return dgua.x(9, "", getString(R.string.smartdevice_alert_exit_setup_message), getString(R.string.smartdevice_alert_quit_button), getString(R.string.common_cancel), true);
     }
 
     private final dg N() {
-        ddot ddotVar = new ddot();
-        ddotVar.b = getString(R.string.smartdevice_d2d_copy_account_title);
-        ddotVar.c = getString(J());
-        ddotVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
-        ddotVar.e(getString(R.string.smartdevice_action_copy), 1);
-        ddotVar.f(getString(R.string.common_cancel), 4);
-        return ddotVar.a();
+        dfzy dfzyVar = new dfzy();
+        dfzyVar.b = getString(R.string.smartdevice_d2d_copy_account_title);
+        dfzyVar.c = getString(J());
+        dfzyVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
+        dfzyVar.e(getString(R.string.smartdevice_action_copy), 1);
+        dfzyVar.f(getString(R.string.common_cancel), 4);
+        return dfzyVar.a();
     }
 
     private final dg O() {
-        dejj dejjVar = new dejj();
-        dejjVar.e(getString(R.string.smartdevice_d2d_copy_account_title));
-        dejjVar.b(getString(J()));
-        dejjVar.c(getString(R.string.smartdevice_action_copy));
-        dejjVar.d(getString(R.string.common_cancel), 4);
-        dejjVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
-        return dejjVar.a();
+        dgum dgumVar = new dgum();
+        dgumVar.e(getString(R.string.smartdevice_d2d_copy_account_title));
+        dgumVar.b(getString(J()));
+        dgumVar.c(getString(R.string.smartdevice_action_copy));
+        dgumVar.d(getString(R.string.common_cancel), 4);
+        dgumVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
+        return dgumVar.a();
     }
 
     private final BootstrapConfigurations P() {
@@ -201,8 +199,8 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         String str2;
         String str3;
         String str4;
-        dcyb dcybVar = new dcyb();
-        dcybVar.c(2, this.F);
+        dfjg dfjgVar = new dfjg();
+        dfjgVar.c(2, this.F);
         ArrayList arrayList = new ArrayList();
         HashMap hashMap = new HashMap();
         boolean z = this.v;
@@ -230,12 +228,12 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         }
         if (!r().au() || this.k.size() == 1) {
             if (this.k.isEmpty()) {
-                dcwh.a(p, arrayList);
+                dfhm.a(p, arrayList);
             } else {
                 ArrayList arrayList2 = this.k;
-                dcwh.a((Account[]) arrayList2.toArray(new Account[arrayList2.size()]), arrayList);
+                dfhm.a((Account[]) arrayList2.toArray(new Account[arrayList2.size()]), arrayList);
             }
-            return new BootstrapConfigurations(str, str2, str3, z, arrayList, hashMap, dcybVar.a, dcybVar.b);
+            return new BootstrapConfigurations(str, str2, str3, z, arrayList, hashMap, dfjgVar.a, dfjgVar.b);
         }
         if (this.k.isEmpty()) {
             h.f("BootstrapOptions require a single account but for some reason no  was selected.", new Object[0]);
@@ -250,13 +248,13 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         if (isFinishing()) {
             return;
         }
-        cqVar.show(gI(), "smartdevice.dialogfragment");
+        cqVar.show(gY(), "smartdevice.dialogfragment");
     }
 
     private final void R() {
-        dcyy dcyyVar = this.m.c;
-        if (dcyyVar != null) {
-            dcyyVar.e();
+        dfkd dfkdVar = this.m.c;
+        if (dfkdVar != null) {
+            dfkdVar.e();
         }
     }
 
@@ -264,11 +262,11 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         if (dgVar instanceof cq) {
             throw new IllegalArgumentException("DialogFragments cannot be added using this method. Did you mean to call 'addOnly(DialogFragment)'?");
         }
-        demq.a(getContainerActivity(), dgVar.getArguments().getString("smartdevice.title"));
+        dgxt.a(getContainerActivity(), dgVar.getArguments().getString("smartdevice.title"));
         if (isFinishing()) {
             return;
         }
-        bp bpVar = new bp(gI());
+        bp bpVar = new bp(gY());
         if (z) {
             bpVar.A(R.anim.slide_next_in, R.anim.slide_next_out, R.anim.slide_back_in, R.anim.slide_back_out);
         }
@@ -286,13 +284,13 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
     }
 
     private final void T(dg dgVar) {
-        S(dgVar, gI().g(R.id.fragment_container) != null, false);
+        S(dgVar, gY().g(R.id.fragment_container) != null, false);
     }
 
     private final void U() {
-        dg g = gI().g(R.id.fragment_container);
-        if (g instanceof dekd) {
-            H(((dekd) g).x(null));
+        dg g = gY().g(R.id.fragment_container);
+        if (g instanceof dgvg) {
+            H(((dgvg) g).x(null));
         }
         if (this.H != null) {
             V(5, Bundle.EMPTY);
@@ -305,15 +303,15 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         Intent putExtras = new Intent().putExtras(bundle);
         this.i.g(i);
         final SourceLogManager sourceLogManager = this.i;
-        final long a = fsge.a.a().a();
+        final long a = fvbb.a.lK().a();
         if (a > 0) {
-            n.execute(new Runnable() { // from class: deib
+            n.execute(new Runnable() { // from class: dgte
                 @Override // java.lang.Runnable
                 public final void run() {
-                    arxo arxoVar = D2DSetupChimeraActivity.h;
-                    apta aptaVar = SourceLogManager.this.f;
-                    if (aptaVar != null) {
-                        aptaVar.e(a, TimeUnit.MILLISECONDS);
+                    auad auadVar = D2DSetupChimeraActivity.h;
+                    arvr arvrVar = SourceLogManager.this.f;
+                    if (arvrVar != null) {
+                        arvrVar.e(a, TimeUnit.MILLISECONDS);
                     }
                 }
             });
@@ -336,7 +334,7 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             ab(0);
             return;
         }
-        if (dene.c(str2, getPackageManager())) {
+        if (dgyh.c(str2, getPackageManager())) {
             h.h("No need to install companion app, it's already installed", new Object[0]);
             ab(2);
             return;
@@ -345,13 +343,13 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             str = getResources().getString(R.string.smartdevice_install_app_reason, companionApp.b, this.o.c);
         }
         String string = getString(R.string.smartdevice_install_app);
-        arwm.s(str);
-        degz degzVar = new degz();
+        atzb.s(str);
+        dgsc dgscVar = new dgsc();
         Bundle bundle = new Bundle();
         bundle.putString("smartdevice.message", str);
         bundle.putString("smartdevice.title", string);
-        degzVar.setArguments(bundle);
-        T(degzVar);
+        dgscVar.setArguments(bundle);
+        T(dgscVar);
     }
 
     private final void X() {
@@ -365,36 +363,36 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
     }
 
     private final void Z() {
-        if (deji.z(this)) {
+        if (dgul.z(this)) {
             h.j("Source device doesn't have a lock screen or is Fido flow.", new Object[0]);
-            this.w = r().au() && this.p == dcxh.AUTO && fsct.d() && fsct.a.a().d();
+            this.w = r().au() && this.p == dfim.AUTO && fuxq.d() && fuxq.a.lK().d();
             aa(r(), false);
             return;
         }
-        if (!asqh.c() || fsfh.a.a().F()) {
-            arxo arxoVar = dejb.a;
+        if (!auub.c() || fvae.a.lK().F()) {
+            auad auadVar = dgue.a;
             FingerprintManager fingerprintManager = (FingerprintManager) getApplicationContext().getSystemService("fingerprint");
             if (fingerprintManager != null && fingerprintManager.isHardwareDetected() && fingerprintManager.hasEnrolledFingerprints()) {
                 h.j("Creating FingerprintFragment", new Object[0]);
                 String string = getString(R.string.smartdevice_d2d_fingerprint_title);
                 String string2 = getString(R.string.smartdevice_d2d_fingerprint_verification_text, new Object[]{r().g});
-                dejb dejbVar = new dejb();
+                dgue dgueVar = new dgue();
                 Bundle bundle = new Bundle();
                 bundle.putString("smartdevice.title", string);
                 bundle.putString("smartdevice.message", string2);
-                dejbVar.setArguments(bundle);
-                T(dejbVar);
+                dgueVar.setArguments(bundle);
+                T(dgueVar);
                 return;
             }
         }
-        if (this.p != dcxh.AUTO || !fsct.d()) {
+        if (this.p != dfim.AUTO || !fuxq.d()) {
             h.j("Creating copy confirmation/lockscreen page", new Object[0]);
             T(O());
             return;
         }
-        dejd x = dejd.x();
+        dgug x = dgug.x();
         if (!isFinishing()) {
-            bp bpVar = new bp(gI());
+            bp bpVar = new bp(gY());
             bpVar.v(x, "smartdevice.headlessfragment");
             bpVar.a();
         }
@@ -402,7 +400,7 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
     }
 
     private final void aa(BootstrapOptions bootstrapOptions, boolean z) {
-        arwm.t(bootstrapOptions, "bootstrapOptions cannot be null.");
+        atzb.t(bootstrapOptions, "bootstrapOptions cannot be null.");
         if (!bootstrapOptions.as() && K() == 0) {
             h.d("No accounts required and no accounts on device.", new Object[0]);
             ad();
@@ -422,94 +420,94 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             }
         }
         this.k.clear();
-        if (this.p == dcxh.AUTO && K() == 0) {
+        if (this.p == dfim.AUTO && K() == 0) {
             y();
             return;
         }
         boolean z2 = !z;
         String string = getString(R.string.common_choose_account_label);
-        dcxh dcxhVar = this.p;
-        dekd dekdVar = new dekd();
+        dfim dfimVar = this.p;
+        dgvg dgvgVar = new dgvg();
         Bundle bundle = new Bundle();
         bundle.putBoolean("smartdevice.accountRequired", true);
         bundle.putString("smartdevice.title", string);
         bundle.putBoolean("singleAccount", false);
-        bundle.putString("device_type", dcxhVar.name());
-        dekdVar.setArguments(bundle);
-        S(dekdVar, z2, true);
+        bundle.putString("device_type", dfimVar.name());
+        dgvgVar.setArguments(bundle);
+        S(dgvgVar, z2, true);
     }
 
     private final void ab(int i) {
         SourceLogManager sourceLogManager = this.i;
-        fecj v = elsr.a.v();
-        fecj v2 = Celse.a.v();
+        fgrc v = eogf.a.v();
+        fgrc v2 = eofs.a.v();
         if (i != 0) {
             if (i == 1) {
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                Celse celse = (Celse) v2.b;
-                celse.c = 3;
-                celse.b |= 1;
+                eofs eofsVar = (eofs) v2.b;
+                eofsVar.c = 3;
+                eofsVar.b |= 1;
             } else if (i == 2) {
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                Celse celse2 = (Celse) v2.b;
-                celse2.c = 2;
-                celse2.b |= 1;
+                eofs eofsVar2 = (eofs) v2.b;
+                eofsVar2.c = 2;
+                eofsVar2.b |= 1;
             } else if (i != 3) {
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                Celse celse3 = (Celse) v2.b;
-                celse3.c = 5;
-                celse3.b |= 1;
+                eofs eofsVar3 = (eofs) v2.b;
+                eofsVar3.c = 5;
+                eofsVar3.b |= 1;
             } else {
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                Celse celse4 = (Celse) v2.b;
-                celse4.c = 4;
-                celse4.b |= 1;
+                eofs eofsVar4 = (eofs) v2.b;
+                eofsVar4.c = 4;
+                eofsVar4.b |= 1;
             }
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            elsr elsrVar = (elsr) fecpVar;
-            elsrVar.d = 8;
-            elsrVar.b |= 2;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v.b;
+            eogf eogfVar = (eogf) fgriVar;
+            eogfVar.d = 8;
+            eogfVar.b |= 2;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            elsr elsrVar2 = (elsr) v.b;
-            Celse celse5 = (Celse) v2.Q();
-            celse5.getClass();
-            elsrVar2.j = celse5;
-            elsrVar2.b |= 1024;
+            eogf eogfVar2 = (eogf) v.b;
+            eofs eofsVar5 = (eofs) v2.Q();
+            eofsVar5.getClass();
+            eogfVar2.j = eofsVar5;
+            eogfVar2.b |= 1024;
             sourceLogManager.j(v);
         }
-        ddot ddotVar = new ddot();
-        ddotVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
-        ddotVar.d(R.drawable.smartdevice_setup_success, false);
-        ddotVar.b = getString(R.string.smartdevice_d2d_source_setup_success);
+        dfzy dfzyVar = new dfzy();
+        dfzyVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
+        dfzyVar.d(R.drawable.smartdevice_setup_success, false);
+        dfzyVar.b = getString(R.string.smartdevice_d2d_source_setup_success);
         if (i == 1) {
-            ddotVar.e(getString(R.string.smartdevice_action_open_app), 3);
+            dfzyVar.e(getString(R.string.smartdevice_action_open_app), 3);
         } else if (i != 2) {
-            if (this.p == dcxh.AUTO) {
-                ddotVar.b = getString(R.string.smartdevice_d2d_source_setup_success_auto);
-                ddotVar.a = 2131232977;
-                ddotVar.c = getString(R.string.smartdevice_d2d_source_setup_success_description_auto);
+            if (this.p == dfim.AUTO) {
+                dfzyVar.b = getString(R.string.smartdevice_d2d_source_setup_success_auto);
+                dfzyVar.a = 2131233041;
+                dfzyVar.c = getString(R.string.smartdevice_d2d_source_setup_success_description_auto);
             } else {
-                ddotVar.c = getString(R.string.smartdevice_d2d_source_setup_continue_on_target, new Object[]{r().g});
+                dfzyVar.c = getString(R.string.smartdevice_d2d_source_setup_continue_on_target, new Object[]{r().g});
             }
-            ddotVar.e(getString(R.string.close_button_label), 2);
+            dfzyVar.e(getString(R.string.close_button_label), 2);
         } else {
-            ddotVar.e(getString(R.string.smartdevice_action_open_app), 3);
-            ddotVar.c = getString(R.string.smartdevice_companion_app_ready, new Object[]{r().h.b});
+            dfzyVar.e(getString(R.string.smartdevice_action_open_app), 3);
+            dfzyVar.c = getString(R.string.smartdevice_companion_app_ready, new Object[]{r().h.b});
         }
-        T(ddotVar.a());
+        T(dfzyVar.a());
     }
 
     private final void ac() {
@@ -517,25 +515,22 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         if (P == null) {
             return;
         }
-        dehz dehzVar = this.m;
-        final dcyy dcyyVar = dehzVar.c;
-        final D2DDevice d2DDevice = dehzVar.d;
-        final dcyl dcylVar = dehzVar.ak;
-        arcy arcyVar = new arcy();
-        arcyVar.a = new arco() { // from class: ddiz
-            @Override // defpackage.arco
+        dgtc dgtcVar = this.m;
+        final dfkd dfkdVar = dgtcVar.c;
+        final D2DDevice d2DDevice = dgtcVar.d;
+        final dfjq dfjqVar = dgtcVar.ak;
+        atfn atfnVar = new atfn();
+        atfnVar.a = new atfd() { // from class: dfue
+            @Override // defpackage.atfd
             public final void d(Object obj, Object obj2) {
-                ddir ddirVar = (ddir) obj;
-                ddjq ddjqVar = new ddjq((dfau) obj2);
-                ddhc ddhcVar = new ddhc(new ddjo(dcyy.this, dcylVar));
-                ddhm ddhmVar = (ddhm) ddirVar.H();
-                ddih ddihVar = new ddih(ddjqVar);
-                Context context = ddirVar.r;
-                ddhmVar.d(ddihVar, d2DDevice, P, ddhcVar, new ApiMetadata(new ComplianceOptions(-1, -1, 0, true)));
+                dftw dftwVar = (dftw) obj;
+                dfuv dfuvVar = new dfuv((dhma) obj2);
+                dfsh dfshVar = new dfsh(new dfut(dfkd.this, dfjqVar));
+                ((dfsr) dftwVar.H()).d(new dftm(dfuvVar), d2DDevice, P, dfshVar, bsxa.a(dftwVar.r));
             }
         };
-        arcyVar.d = 20713;
-        dcyyVar.iT(arcyVar.a());
+        atfnVar.d = 20713;
+        dfkdVar.ji(atfnVar.a());
         this.j = 2;
     }
 
@@ -550,52 +545,52 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             ac();
         } else {
             h.d("Warning Android At Work profiles will not copy over", new Object[0]);
-            Q(deix.x(10, getString(R.string.smartdevice_alert_work_profile_title), getString(R.string.smartdevice_alert_work_profile_message), getString(R.string.common_ok), null, false));
+            Q(dgua.x(10, getString(R.string.smartdevice_alert_work_profile_title), getString(R.string.smartdevice_alert_work_profile_message), getString(R.string.common_ok), null, false));
         }
     }
 
     private final void ae() {
         if (r().d) {
-            S(dekm.D(getString(R.string.smartdevice_connect_to_wifi), false), gI().g(R.id.fragment_container) != null, true);
+            S(dgvp.D(getString(R.string.smartdevice_connect_to_wifi), false), gY().g(R.id.fragment_container) != null, true);
         } else {
             Z();
         }
     }
 
     private final cq af(String str) {
-        return deix.x(4, TextUtils.isEmpty(null) ? getString(R.string.common_something_went_wrong) : null, str, getString(R.string.common_ok), null, false);
+        return dgua.x(4, TextUtils.isEmpty(null) ? getString(R.string.common_something_went_wrong) : null, str, getString(R.string.common_ok), null, false);
     }
 
-    public static Intent n(ConnectionRequest connectionRequest, int i, SourceLogManager sourceLogManager, dcxh dcxhVar) {
-        arwm.s(dcxhVar);
+    public static Intent n(ConnectionRequest connectionRequest, int i, SourceLogManager sourceLogManager, dfim dfimVar) {
+        atzb.s(dfimVar);
         Bundle bundle = new Bundle();
-        bundle.putString("connectionRequest", arxd.d(connectionRequest));
+        bundle.putString("connectionRequest", atzs.d(connectionRequest));
         bundle.putInt("smartdevice.trigger", i);
         bundle.putParcelable("smartdevice.sourceLogManager", sourceLogManager);
-        bundle.putString("device_type", dcxhVar.name());
+        bundle.putString("device_type", dfimVar.name());
         return new Intent().setClassName("com.google.android.gms", "com.google.android.gms.smartdevice.setup.ui.D2DSetupActivity").putExtras(bundle);
     }
 
     public static Intent q(Context context, D2DDevice d2DDevice, int i, String str, SourceLogManager sourceLogManager) {
         Bundle bundle = new Bundle();
-        bundle.putString("smartdevice.d2dDevice", arxd.d(d2DDevice));
+        bundle.putString("smartdevice.d2dDevice", atzs.d(d2DDevice));
         bundle.putInt("smartdevice.trigger", i);
         bundle.putString("smartdevice.pin", str);
         bundle.putParcelable("smartdevice.sourceLogManager", sourceLogManager);
         return new Intent().setClassName(context, "com.google.android.gms.smartdevice.setup.ui.D2DSetupActivity").putExtras(bundle);
     }
 
-    @Override // defpackage.dejh
+    @Override // defpackage.dguk
     public final void A() {
         h.d("suppressing setup incomplete toast", new Object[0]);
         this.r = true;
     }
 
-    @Override // defpackage.dekq
+    @Override // defpackage.dgvt
     public final void B() {
         this.r = true;
         R();
-        if (this.p == dcxh.AUTO) {
+        if (this.p == dfim.AUTO) {
             V(0, Bundle.EMPTY);
         } else {
             V(3, Bundle.EMPTY);
@@ -603,30 +598,26 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         finish();
     }
 
-    @Override // defpackage.dekq
+    @Override // defpackage.dgvt
     public final void C() {
-        if (fsct.d() && this.j == 1) {
+        if (fuxq.d() && this.j == 1) {
             ae();
             return;
         }
-        dcyy dcyyVar = this.m.c;
-        arcy arcyVar = new arcy();
-        arcyVar.a = new arco() { // from class: ddiy
-            @Override // defpackage.arco
+        dfkd dfkdVar = this.m.c;
+        atfn atfnVar = new atfn();
+        atfnVar.a = new atfd() { // from class: dfud
+            @Override // defpackage.atfd
             public final void d(Object obj, Object obj2) {
-                ddir ddirVar = (ddir) obj;
-                ddjq ddjqVar = new ddjq((dfau) obj2);
-                ddhm ddhmVar = (ddhm) ddirVar.H();
-                ddij ddijVar = new ddij(ddjqVar);
-                Context context = ddirVar.r;
-                ddhmVar.x(ddijVar, new ApiMetadata(new ComplianceOptions(-1, -1, 0, true)));
+                dftw dftwVar = (dftw) obj;
+                ((dfsr) dftwVar.H()).x(new dfto(new dfuv((dhma) obj2)), bsxa.a(dftwVar.r));
             }
         };
-        arcyVar.d = 20715;
-        dcyyVar.iT(arcyVar.a());
+        atfnVar.d = 20715;
+        dfkdVar.ji(atfnVar.a());
     }
 
-    @Override // defpackage.dejh
+    @Override // defpackage.dguk
     public final void D() {
         this.w = true;
         this.i.b();
@@ -635,115 +626,115 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         overridePendingTransition(R.anim.slide_next_in, R.anim.slide_next_out);
     }
 
-    @Override // defpackage.deja
+    @Override // defpackage.dgud
     public final void E() {
         T(O());
     }
 
-    @Override // defpackage.deja
+    @Override // defpackage.dgud
     public final void F() {
         this.w = true;
         this.v = true;
         SourceLogManager sourceLogManager = this.i;
-        fecj v = elsr.a.v();
+        fgrc v = eogf.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        elsr elsrVar = (elsr) v.b;
-        elsrVar.d = 14;
-        elsrVar.b |= 2;
+        eogf eogfVar = (eogf) v.b;
+        eogfVar.d = 14;
+        eogfVar.b |= 2;
         sourceLogManager.j(v);
         aa(r(), false);
     }
 
-    @Override // defpackage.dekb
-    public final void H(dekc dekcVar) {
-        this.i.f(dekcVar);
+    @Override // defpackage.dgve
+    public final void H(dgvf dgvfVar) {
+        this.i.f(dgvfVar);
     }
 
-    @Override // defpackage.deld
+    @Override // defpackage.dgwg
     public final void I(String str, String str2) {
         this.z = str;
         this.A = str2;
         P();
     }
 
-    @Override // defpackage.dekl
-    public final void L(delx delxVar, int i, int i2) {
-        this.z = delxVar.a;
-        this.A = delxVar.e;
+    @Override // defpackage.dgvo
+    public final void L(dgxa dgxaVar, int i, int i2) {
+        this.z = dgxaVar.a;
+        this.A = dgxaVar.e;
         SourceLogManager sourceLogManager = this.i;
-        int i3 = delxVar.d;
-        fecj v = elsr.a.v();
-        fecj v2 = elso.a.v();
+        int i3 = dgxaVar.d;
+        fgrc v = eogf.a.v();
+        fgrc v2 = eogc.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar = v2.b;
-        elso elsoVar = (elso) fecpVar;
-        elsoVar.e = i - 1;
-        elsoVar.b |= 4;
+        fgri fgriVar = v2.b;
+        eogc eogcVar = (eogc) fgriVar;
+        eogcVar.e = i - 1;
+        eogcVar.b |= 4;
         switch (i3) {
             case 10:
-                if (!fecpVar.L()) {
+                if (!fgriVar.L()) {
                     v2.U();
                 }
-                elso elsoVar2 = (elso) v2.b;
-                elsoVar2.d = 3;
-                elsoVar2.b |= 2;
+                eogc eogcVar2 = (eogc) v2.b;
+                eogcVar2.d = 3;
+                eogcVar2.b |= 2;
                 break;
             case 11:
-                if (!fecpVar.L()) {
+                if (!fgriVar.L()) {
                     v2.U();
                 }
-                elso elsoVar3 = (elso) v2.b;
-                elsoVar3.d = 2;
-                elsoVar3.b |= 2;
+                eogc eogcVar3 = (eogc) v2.b;
+                eogcVar3.d = 2;
+                eogcVar3.b |= 2;
                 break;
             case 12:
-                if (!fecpVar.L()) {
+                if (!fgriVar.L()) {
                     v2.U();
                 }
-                elso elsoVar4 = (elso) v2.b;
-                elsoVar4.d = 1;
-                elsoVar4.b |= 2;
+                eogc eogcVar4 = (eogc) v2.b;
+                eogcVar4.d = 1;
+                eogcVar4.b |= 2;
                 break;
             default:
-                if (!fecpVar.L()) {
+                if (!fgriVar.L()) {
                     v2.U();
                 }
-                elso elsoVar5 = (elso) v2.b;
-                elsoVar5.d = 0;
-                elsoVar5.b |= 2;
+                eogc eogcVar5 = (eogc) v2.b;
+                eogcVar5.d = 0;
+                eogcVar5.b |= 2;
                 SourceLogManager.a.f(a.j(i3, "Unknown connection status: "), new Object[0]);
                 break;
         }
         if (!v2.b.L()) {
             v2.U();
         }
-        elso elsoVar6 = (elso) v2.b;
-        elsoVar6.b = 1 | elsoVar6.b;
-        elsoVar6.c = i2;
+        eogc eogcVar6 = (eogc) v2.b;
+        eogcVar6.b = 1 | eogcVar6.b;
+        eogcVar6.c = i2;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar2 = v.b;
-        elsr elsrVar = (elsr) fecpVar2;
-        elsrVar.d = 4;
-        elsrVar.b |= 2;
-        if (!fecpVar2.L()) {
+        fgri fgriVar2 = v.b;
+        eogf eogfVar = (eogf) fgriVar2;
+        eogfVar.d = 4;
+        eogfVar.b |= 2;
+        if (!fgriVar2.L()) {
             v.U();
         }
-        elsr elsrVar2 = (elsr) v.b;
-        elso elsoVar7 = (elso) v2.Q();
-        elsoVar7.getClass();
-        elsrVar2.h = elsoVar7;
-        elsrVar2.b |= 128;
+        eogf eogfVar2 = (eogf) v.b;
+        eogc eogcVar7 = (eogc) v2.Q();
+        eogcVar7.getClass();
+        eogfVar2.h = eogcVar7;
+        eogfVar2.b |= 128;
         sourceLogManager.j(v);
         Z();
     }
 
-    @Override // defpackage.degy
+    @Override // defpackage.dgsb
     public final void a(int i) {
         if (i != 1) {
             h.h("User chose not to install companion app, going to done state.", new Object[0]);
@@ -768,12 +759,12 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             return;
         }
         h.h("Displaying companion app confirmation.", new Object[0]);
-        eiig.a(!TextUtils.isEmpty(str));
-        Bundle z = dejc.z(getResources().getString(R.string.smartdevice_setup_info_installing_app), null);
+        ekvl.a(!TextUtils.isEmpty(str));
+        Bundle z = dguf.z(getResources().getString(R.string.smartdevice_setup_info_installing_app), null);
         z.putString("smartdevice.appPackage", str);
-        dehc dehcVar = new dehc();
-        dehcVar.setArguments(z);
-        T(dehcVar);
+        dgsf dgsfVar = new dgsf();
+        dgsfVar.setArguments(z);
+        T(dgsfVar);
         Intent intent = new Intent("com.android.vending.billing.PURCHASE");
         intent.addCategory("android.intent.category.DEFAULT");
         intent.setPackage("com.android.vending");
@@ -785,7 +776,7 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         intent.putExtra("full_docid", str);
         intent.putExtra("backend_docid", str);
         intent.putExtra("offer_type", 1);
-        if (!arut.f(getPackageManager(), intent)) {
+        if (!atxi.f(getPackageManager(), intent)) {
             intent = new Intent("android.intent.action.VIEW");
             intent.setData(Uri.parse(String.format(Locale.US, "https://play.google.com/store/apps/details?id=%1$s&rdid=%1$s&rdot=%2$d", str, 1)));
             intent.setPackage("com.android.vending");
@@ -794,12 +785,12 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         startActivityForResult(intent, 7);
     }
 
-    @Override // defpackage.dehb
+    @Override // defpackage.dgse
     public final void b() {
         ab(4);
     }
 
-    @Override // defpackage.ddnt
+    @Override // defpackage.dfyy
     public final void c(int i, Bundle bundle) {
         if (i == 1) {
             this.i.b();
@@ -828,12 +819,12 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         }
     }
 
-    @Override // defpackage.dehb
+    @Override // defpackage.dgse
     public final void d() {
         ab(1);
     }
 
-    @Override // defpackage.deho
+    @Override // defpackage.dgsr
     public final void e() {
         this.j = 3;
         V(-1, Bundle.EMPTY);
@@ -842,10 +833,10 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             return;
         }
         PostTransferAction postTransferAction = r.u;
-        if (postTransferAction == null || !fsfh.a.a().N()) {
+        if (postTransferAction == null || !fvae.a.lK().M()) {
             W();
         } else {
-            Intent a = ddtw.a(this, postTransferAction);
+            Intent a = dgfb.a(this, postTransferAction);
             if (a != null) {
                 startActivity(a.addFlags(268435456));
                 finish();
@@ -855,41 +846,41 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         }
         int K = K();
         if ((r.au() || r.at()) && K > 0) {
-            int i = ddqn.a;
-            int c = dcvh.c();
+            int i = dgbs.a;
+            int c = dfgm.c();
             if (c == 0 || c == 1) {
-                ddqn.a(this, K, r.g);
+                dgbs.a(this, K, r.g);
             }
         }
     }
 
-    @Override // defpackage.deho
+    @Override // defpackage.dgsr
     public final void f() {
         this.j = 1;
         BootstrapOptions r = r();
-        if (r.as() && this.p != dcxh.AUTO && this.x.p("com.google").length == 0) {
+        if (r.as() && this.p != dfim.AUTO && this.x.p("com.google").length == 0) {
             l(7);
             return;
         }
         long j = r.l;
         if (j == -1 || j == 0) {
-            j = denp.a();
+            j = dgys.a();
         }
         SourceLogManager sourceLogManager = this.i;
-        fecj v = elsr.a.v();
+        fgrc v = eogf.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elsr elsrVar = (elsr) fecpVar;
-        elsrVar.d = 17;
-        elsrVar.b |= 2;
-        if (!fecpVar.L()) {
+        fgri fgriVar = v.b;
+        eogf eogfVar = (eogf) fgriVar;
+        eogfVar.d = 17;
+        eogfVar.b |= 2;
+        if (!fgriVar.L()) {
             v.U();
         }
-        elsr elsrVar2 = (elsr) v.b;
-        elsrVar2.b |= 4096;
-        elsrVar2.l = j;
+        eogf eogfVar2 = (eogf) v.b;
+        eogfVar2.b |= 4096;
+        eogfVar2.l = j;
         sourceLogManager.j(v);
         SourceLogManager sourceLogManager2 = this.i;
         synchronized (sourceLogManager2.d) {
@@ -898,30 +889,30 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             } else if (j == -1) {
                 SourceLogManager.a.f("Attempted to set invalid sessionId", new Object[0]);
             } else {
-                SourceLogManager.a.j(a.D(j, "Set session ID to : "), new Object[0]);
+                SourceLogManager.a.j(a.C(j, "Set session ID to : "), new Object[0]);
                 sourceLogManager2.b = j;
                 sourceLogManager2.c = true;
                 sourceLogManager2.a();
             }
         }
-        dcyb p = r.p();
+        dfjg p = r.p();
         boolean z = !r.au() || K() == 1;
         byte b = r.f;
         int i = r.y;
         if (i == 0) {
             i = r.s;
         }
-        boolean z2 = p.b(12) || (fsek.k() && b == 3 && ((long) i) >= fsek.c());
+        boolean z2 = p.b(12) || (fuzh.k() && b == 3 && ((long) i) >= fuzh.c());
         this.u = z2;
-        h.d(a.Z(z2, "Is fido flow: "), new Object[0]);
+        h.d(a.aa(z2, "Is fido flow: "), new Object[0]);
         if (z && this.F && !p.b(1)) {
-            Q(demx.a(this, 12));
+            Q(dgya.a(this, 12));
         } else {
             ae();
         }
     }
 
-    @Override // defpackage.deho
+    @Override // defpackage.dgsr
     public final void g() {
         if (this.j == 3) {
             return;
@@ -930,83 +921,85 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         l(4);
     }
 
-    @Override // defpackage.deho
+    @Override // defpackage.dgsr
     public final void h(String str) {
-        if (this.p == dcxh.AUTO && fsct.f() && str.equals(getResources().getQuantityString(R.plurals.smartdevice_d2d_copying_accounts, 1))) {
+        if (this.p == dfim.AUTO && fuxq.f() && str.equals(getResources().getQuantityString(R.plurals.smartdevice_d2d_copying_accounts, 1))) {
             str = getString(R.string.common_login_activity_task_title);
         }
-        T(dejc.A(str, null));
+        T(dguf.A(str, null));
     }
 
-    @Override // defpackage.deho
+    @Override // defpackage.dgsr
     public final void i(String str) {
         if (str == null) {
             h.f("PIN verification is no longer supported.", new Object[0]);
             X();
         } else {
             this.i.c();
-            T(dekr.x(elta.b(this.o.h), str, true, true, this.p));
+            T(dgvu.x(eogo.b(this.o.h), str, true, true, this.p));
         }
     }
 
-    @Override // defpackage.deho
+    @Override // defpackage.dgsr
     public final void j(VerificationInfo verificationInfo) {
         String str = verificationInfo.a;
         this.i.c();
-        T(dekr.x(elta.b(verificationInfo.b), str, true, true, this.p));
+        T(dgvu.x(eogo.b(verificationInfo.b), str, true, true, this.p));
     }
 
-    @Override // defpackage.dejh
-    public final void jD() {
+    @Override // defpackage.dguk
+    public final void jT() {
         aa(r(), false);
     }
 
-    @Override // defpackage.dejh
-    public final void jE() {
+    @Override // defpackage.dguk
+    public final void jU() {
         onBackPressed();
     }
 
-    @Override // defpackage.deho
+    @Override // defpackage.dgsr
     public final void k(BootstrapProgressResult bootstrapProgressResult) {
         int i = bootstrapProgressResult.a;
         if (i != 1) {
             if (i != 6) {
                 return;
             }
-            arxo arxoVar = h;
-            arxoVar.j("WIFI_AUTHENTICATION_FAILED", new Object[0]);
-            arxoVar.f("Wifi Password was incorrect", new Object[0]);
-            dele.x(this.z, true).show(gI(), "dialog");
+            auad auadVar = h;
+            auadVar.j("WIFI_AUTHENTICATION_FAILED", new Object[0]);
+            auadVar.f("Wifi Password was incorrect", new Object[0]);
+            dgwh.x(this.z, true).show(gY(), "dialog");
             return;
         }
         SourceLogManager sourceLogManager = this.i;
-        fecj v = elsr.a.v();
+        fgrc v = eogf.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        elsr elsrVar = (elsr) v.b;
-        elsrVar.d = 20;
-        elsrVar.b |= 2;
+        eogf eogfVar = (eogf) v.b;
+        eogfVar.d = 20;
+        eogfVar.b |= 2;
         sourceLogManager.j(v);
         Bundle bundle = bootstrapProgressResult.b;
         ArrayList parcelableArrayList = bundle.getParcelableArrayList("accounts");
-        boolean z = (this.p == dcxh.AUTO && fsct.a.a().b()) ? false : true;
-        String string = (this.p == dcxh.AUTO && fsct.f()) ? getString(R.string.common_login_activity_task_title) : null;
+        dfim dfimVar = this.p;
+        dfim dfimVar2 = dfim.AUTO;
+        boolean z = (dfimVar == dfimVar2 && fuxq.a.lK().b()) ? false : true;
+        String string = (this.p == dfimVar2 && fuxq.f()) ? getString(R.string.common_login_activity_task_title) : null;
         if (parcelableArrayList == null) {
             h.j("Has pending intent to delegate", new Object[0]);
             this.B.d(null, (PendingIntent) bundle.getParcelable("pendingIntent"));
         } else if (this.u) {
-            T(dego.b(parcelableArrayList, null, string, null, R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24, true, true, false, null));
+            T(dgrr.b(parcelableArrayList, null, string, null, R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24, true, true, false, null));
         } else {
-            T(dego.b(parcelableArrayList, this.l, string, null, R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24, z, false, false, null));
+            T(dgrr.b(parcelableArrayList, this.l, string, null, R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24, z, false, false, null));
         }
     }
 
-    @Override // defpackage.deho
+    @Override // defpackage.dgsr
     public final void l(int i) {
         Bundle bundle = new Bundle();
         SourceLogManager sourceLogManager = this.i;
-        fecj v = elsj.a.v();
+        fgrc v = eofx.a.v();
         int i2 = -1;
         int i3 = i - 1;
         int i4 = 6;
@@ -1014,60 +1007,60 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             if (!v.b.L()) {
                 v.U();
             }
-            elsj elsjVar = (elsj) v.b;
-            elsjVar.c = 8;
-            elsjVar.b |= 1;
+            eofx eofxVar = (eofx) v.b;
+            eofxVar.c = 8;
+            eofxVar.b |= 1;
         } else if (i3 == 2) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsj elsjVar2 = (elsj) v.b;
-            elsjVar2.c = 3;
-            elsjVar2.b |= 1;
+            eofx eofxVar2 = (eofx) v.b;
+            eofxVar2.c = 3;
+            eofxVar2.b |= 1;
         } else if (i3 == 3) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsj elsjVar3 = (elsj) v.b;
-            elsjVar3.c = 6;
-            elsjVar3.b |= 1;
+            eofx eofxVar3 = (eofx) v.b;
+            eofxVar3.c = 6;
+            eofxVar3.b |= 1;
         } else if (i3 == 5) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsj elsjVar4 = (elsj) v.b;
-            elsjVar4.c = 2;
-            elsjVar4.b |= 1;
+            eofx eofxVar4 = (eofx) v.b;
+            eofxVar4.c = 2;
+            eofxVar4.b |= 1;
         } else if (i3 != 6) {
             if (!v.b.L()) {
                 v.U();
             }
-            elsj elsjVar5 = (elsj) v.b;
-            elsjVar5.c = 0;
-            elsjVar5.b |= 1;
+            eofx eofxVar5 = (eofx) v.b;
+            eofxVar5.c = 0;
+            eofxVar5.b |= 1;
         } else {
             if (!v.b.L()) {
                 v.U();
             }
-            elsj elsjVar6 = (elsj) v.b;
-            elsjVar6.c = 7;
-            elsjVar6.b |= 1;
+            eofx eofxVar6 = (eofx) v.b;
+            eofxVar6.c = 7;
+            eofxVar6.b |= 1;
         }
-        fecj v2 = elsr.a.v();
+        fgrc v2 = eogf.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        elsr elsrVar = (elsr) v2.b;
-        elsj elsjVar7 = (elsj) v.Q();
-        elsjVar7.getClass();
-        elsrVar.k = elsjVar7;
-        elsrVar.b |= 2048;
+        eogf eogfVar = (eogf) v2.b;
+        eofx eofxVar7 = (eofx) v.Q();
+        eofxVar7.getClass();
+        eogfVar.k = eofxVar7;
+        eogfVar.b |= 2048;
         if (!v2.b.L()) {
             v2.U();
         }
-        elsr elsrVar2 = (elsr) v2.b;
-        elsrVar2.d = 12;
-        elsrVar2.b |= 2;
+        eogf eogfVar2 = (eogf) v2.b;
+        eogfVar2.d = 12;
+        eogfVar2.b |= 2;
         sourceLogManager.j(v2);
         if (i3 == 1) {
             i2 = 3;
@@ -1078,7 +1071,7 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         } else if (i3 != 3) {
             if (i3 == 6) {
                 String str = r() != null ? r().g : null;
-                Q(deix.x(8, getString(R.string.smartdevice_alert_no_accounts_title), TextUtils.isEmpty(str) ? getString(R.string.smartdevice_alert_no_accounts_generic_text) : String.format(getString(R.string.smartdevice_alert_no_accounts_text), str.trim()), getString(R.string.common_ok), null, false));
+                Q(dgua.x(8, getString(R.string.smartdevice_alert_no_accounts_title), TextUtils.isEmpty(str) ? getString(R.string.smartdevice_alert_no_accounts_generic_text) : String.format(getString(R.string.smartdevice_alert_no_accounts_text), str.trim()), getString(R.string.common_ok), null, false));
                 return;
             } else if (i3 != 7) {
                 X();
@@ -1097,18 +1090,18 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         finish();
     }
 
-    @Override // defpackage.deho
+    @Override // defpackage.dgsr
     public final void m() {
         l(3);
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void o(int i) {
         R();
         X();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i == 3) {
@@ -1116,8 +1109,8 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             return;
         }
         if (i == 4) {
-            dg g = gI().g(R.id.fragment_container);
-            if (g == null || !(g instanceof dekm)) {
+            dg g = gY().g(R.id.fragment_container);
+            if (g == null || !(g instanceof dgvp)) {
                 return;
             }
             g.onActivityResult(i, i2, intent);
@@ -1138,8 +1131,8 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             return;
         }
         this.r = false;
-        arxo arxoVar = h;
-        arxoVar.h(a.j(i2, "RESULT CODE = "), new Object[0]);
+        auad auadVar = h;
+        auadVar.h(a.j(i2, "RESULT CODE = "), new Object[0]);
         if (i2 == 0) {
             if (K() == 0) {
                 finish();
@@ -1149,8 +1142,8 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             Account account = null;
             if (intent != null) {
                 String stringExtra = intent.getStringExtra("authAccount");
-                int i3 = ddpy.a;
-                Account[] p = demr.a(this).p("com.google");
+                int i3 = dgbd.a;
+                Account[] p = dgxu.a(this).p("com.google");
                 int length = p.length;
                 int i4 = 0;
                 while (true) {
@@ -1166,24 +1159,24 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
                 }
             }
             if (account == null) {
-                arxoVar.m("Couldn't find account", new Object[0]);
+                auadVar.m("Couldn't find account", new Object[0]);
                 s(R.string.common_something_went_wrong);
                 return;
             }
-            arxoVar.h("Account successfully added: %s", account.name);
-            ddot ddotVar = new ddot();
-            ddotVar.b = getString(R.string.smartdevice_d2d_adding_account);
-            ddotVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
-            ddotVar.e = true;
-            T(ddotVar.a());
-            defb defbVar = new defb(this);
-            ensj.t(ensj.q(ensj.p(defbVar.a(account, "service_HOSTED"), defbVar.a(account, "service_usm")), fsct.b(), TimeUnit.MILLISECONDS, new asmb(1, 9)), new deig(this, account), new asmf(1, 9));
+            auadVar.h("Account successfully added: %s", account.name);
+            dfzy dfzyVar = new dfzy();
+            dfzyVar.b = getString(R.string.smartdevice_d2d_adding_account);
+            dfzyVar.a = R.drawable.quantum_gm_ic_compare_arrows_vd_theme_24;
+            dfzyVar.e = true;
+            T(dfzyVar.a());
+            dgqe dgqeVar = new dgqe(this);
+            eqgc.t(eqgc.q(eqgc.p(dgqeVar.a(account, "service_HOSTED"), dgqeVar.a(account, "service_usm")), fuxq.b(), TimeUnit.MILLISECONDS, new aupv(1, 9)), new dgtj(this, account), new aupz(1, 9));
             return;
         }
         s(R.string.common_something_went_wrong);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         int i = this.j;
         if (i == 0) {
@@ -1200,144 +1193,144 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
                 return;
             }
             this.s = (Integer) this.t.remove(r0.size() - 1);
-            gI().S(this.s.intValue(), 0);
+            gY().S(this.s.intValue(), 0);
         }
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
-        dcxh dcxhVar;
+        dfim dfimVar;
         Status status;
         super.onCreate(bundle);
-        if (fkhl.c()) {
-            arjz.a(this);
+        if (fmya.c()) {
+            atmo.a(this);
         }
-        arkc.g(this);
+        atmr.g(this);
         setContentView(R.layout.smartdevice_fragment_container);
         getWindow().addFlags(128);
-        this.x = demr.a(this);
+        this.x = dgxu.a(this);
         Intent intent = getIntent();
         this.y = intent.getIntExtra("smartdevice.trigger", 0);
         if (intent.hasExtra("connectionRequest")) {
-            this.H = (ConnectionRequest) arxd.c(intent.getStringExtra("connectionRequest"), ConnectionRequest.CREATOR);
-            this.p = dcxh.a(intent.getStringExtra("device_type"));
+            this.H = (ConnectionRequest) atzs.c(intent.getStringExtra("connectionRequest"), ConnectionRequest.CREATOR);
+            this.p = dfim.a(intent.getStringExtra("device_type"));
         } else {
-            D2DDevice d2DDevice = (D2DDevice) arxd.c(intent.getStringExtra("smartdevice.d2dDevice"), D2DDevice.CREATOR);
-            arwm.t(d2DDevice, "D2D device cannot be null");
+            D2DDevice d2DDevice = (D2DDevice) atzs.c(intent.getStringExtra("smartdevice.d2dDevice"), D2DDevice.CREATOR);
+            atzb.t(d2DDevice, "D2D device cannot be null");
             this.o = d2DDevice;
             byte b = d2DDevice.e;
-            dcxh[] values = dcxh.values();
+            dfim[] values = dfim.values();
             int length = values.length;
             int i = 0;
             while (true) {
                 if (i >= length) {
-                    dcxhVar = dcxh.UNKNOWN;
+                    dfimVar = dfim.UNKNOWN;
                     break;
                 }
-                dcxhVar = values[i];
-                if (dcxhVar.i == b) {
+                dfimVar = values[i];
+                if (dfimVar.i == b) {
                     break;
                 } else {
                     i++;
                 }
             }
-            this.p = dcxhVar;
+            this.p = dfimVar;
             this.C = intent.getStringExtra("smartdevice.pin");
         }
-        deih deihVar = new deih(this);
-        this.D = deihVar;
-        deihVar.execute(new Void[0]);
-        this.E = new deno(getApplicationContext());
-        this.F = ddqq.b(this).b();
-        ew gI = gI();
-        dehz dehzVar = (dehz) gI.h("connectionless_connection_fragment");
-        this.m = dehzVar;
-        if (dehzVar == null) {
-            this.m = new dehz();
-            bp bpVar = new bp(gI);
+        dgtk dgtkVar = new dgtk(this);
+        this.D = dgtkVar;
+        dgtkVar.execute(new Void[0]);
+        this.E = new dgyr(getApplicationContext());
+        this.F = dgbv.b(this).b();
+        ew gY = gY();
+        dgtc dgtcVar = (dgtc) gY.h("connectionless_connection_fragment");
+        this.m = dgtcVar;
+        if (dgtcVar == null) {
+            this.m = new dgtc();
+            bp bpVar = new bp(gY);
             bpVar.v(this.m, "connectionless_connection_fragment");
             bpVar.a();
             if (this.H != null) {
-                final dehz dehzVar2 = this.m;
+                final dgtc dgtcVar2 = this.m;
                 Context applicationContext = getApplicationContext();
                 final ConnectionRequest connectionRequest = this.H;
-                dehzVar2.c = new dcyy(applicationContext);
-                dehzVar2.b.a(this);
-                dehzVar2.c.e().x(new dfae() { // from class: dehg
-                    @Override // defpackage.dfae
-                    public final void hr(dfaq dfaqVar) {
-                        final dehz dehzVar3 = dehz.this;
+                dgtcVar2.c = new dfkd(applicationContext);
+                dgtcVar2.b.a(this);
+                dgtcVar2.c.e().x(new dhlk() { // from class: dgsj
+                    @Override // defpackage.dhlk
+                    public final void hH(dhlw dhlwVar) {
+                        final dgtc dgtcVar3 = dgtc.this;
                         final ConnectionRequest connectionRequest2 = connectionRequest;
-                        if (dfaqVar.m()) {
-                            dehz.a.d("Disconnect from previous connection succeeded, waiting for Bluetooth cleanup", new Object[0]);
-                            new asmb(1, 9).schedule(new Runnable() { // from class: dehh
+                        if (dhlwVar.m()) {
+                            dgtc.a.d("Disconnect from previous connection succeeded, waiting for Bluetooth cleanup", new Object[0]);
+                            new aupv(1, 9).schedule(new Runnable() { // from class: dgsk
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    dehz.a.j("Finished waiting, connecting", new Object[0]);
-                                    final dehz dehzVar4 = dehz.this;
-                                    dehzVar4.c.d(connectionRequest2, dehzVar4.aj).y(new dfah() { // from class: dehk
-                                        @Override // defpackage.dfah
-                                        public final void gm(Exception exc) {
-                                            dehz.this.b.l(3);
+                                    dgtc.a.j("Finished waiting, connecting", new Object[0]);
+                                    final dgtc dgtcVar4 = dgtc.this;
+                                    dgtcVar4.c.d(connectionRequest2, dgtcVar4.aj).y(new dhln() { // from class: dgsn
+                                        @Override // defpackage.dhln
+                                        public final void gB(Exception exc) {
+                                            dgtc.this.b.l(3);
                                         }
                                     });
                                 }
-                            }, fsdd.a.a().d(), TimeUnit.MILLISECONDS).hn(new Runnable() { // from class: dehi
+                            }, fuya.a.lK().d(), TimeUnit.MILLISECONDS).hD(new Runnable() { // from class: dgsl
                                 @Override // java.lang.Runnable
                                 public final void run() {
-                                    dehz.a.j("Called connect", new Object[0]);
+                                    dgtc.a.j("Called connect", new Object[0]);
                                 }
-                            }, enre.a);
+                            }, eqex.a);
                         } else {
-                            dehz.a.j("Disconnect failed, likely no connection in progress", new Object[0]);
-                            dehzVar3.c.d(connectionRequest2, dehzVar3.aj).y(new dfah() { // from class: dehj
-                                @Override // defpackage.dfah
-                                public final void gm(Exception exc) {
-                                    dehz.this.b.l(3);
+                            dgtc.a.j("Disconnect failed, likely no connection in progress", new Object[0]);
+                            dgtcVar3.c.d(connectionRequest2, dgtcVar3.aj).y(new dhln() { // from class: dgsm
+                                @Override // defpackage.dhln
+                                public final void gB(Exception exc) {
+                                    dgtc.this.b.l(3);
                                 }
                             });
                         }
                     }
                 });
             } else {
-                if (ddqq.c() == null) {
+                if (dgbv.c() == null) {
                     h.m("Bluetooth not available", new Object[0]);
                     status = new Status(10570);
-                } else if (denr.a(this)) {
+                } else if (dgyu.a(this)) {
                     h.m("Cannot copy restricted profile", new Object[0]);
                     status = new Status(10569);
                 } else {
                     status = Status.b;
                 }
                 if (status.e()) {
-                    dehz dehzVar3 = this.m;
+                    dgtc dgtcVar3 = this.m;
                     Context applicationContext2 = getApplicationContext();
                     D2DDevice d2DDevice2 = this.o;
                     int i2 = this.y;
                     String str = this.C;
-                    dehzVar3.c = new dcyy(applicationContext2);
-                    dehzVar3.d = d2DDevice2;
-                    dehzVar3.ag = i2;
-                    dehzVar3.ah = str;
-                    dehzVar3.b.a(this);
-                    if (dehzVar3.ag == 1) {
-                        dehzVar3.c.i(dehzVar3.al);
+                    dgtcVar3.c = new dfkd(applicationContext2);
+                    dgtcVar3.d = d2DDevice2;
+                    dgtcVar3.ag = i2;
+                    dgtcVar3.ah = str;
+                    dgtcVar3.b.a(this);
+                    if (dgtcVar3.ag == 1) {
+                        dgtcVar3.c.i(dgtcVar3.al);
                     } else {
-                        dehzVar3.x();
+                        dgtcVar3.x();
                     }
                 } else {
                     int i3 = status.i;
                     if (i3 == 10569) {
                         Q(af(getString(R.string.smartdevice_d2d_source_restricted_user_text)));
                     } else if (i3 != 10570) {
-                        h.f("Source mode is unsupported. Reason: ".concat(dcyg.a(i3)), new Object[0]);
+                        h.f("Source mode is unsupported. Reason: ".concat(dfjl.a(i3)), new Object[0]);
                     } else {
                         Q(af(getString(R.string.smartdevice_d2d_source_bluetooth_unavailable_text)));
                     }
                 }
             }
         }
-        this.B = new degv(this, new deic(this), bundle);
+        this.B = new dgry(this, new dgtf(this), bundle);
         Bundle bundle2 = bundle == null ? Bundle.EMPTY : bundle;
         this.v = bundle2.getBoolean("smartdevice.d2dSetupActivity.lockscreenUnlocked", false);
         this.z = bundle2.getString("smartdevice.d2dSetupActivity.wifiSsid", "");
@@ -1355,7 +1348,7 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         }
         this.k = parcelableArrayList;
         if (bundle == null) {
-            T(dejc.A(getString(R.string.common_connecting), this.p == dcxh.AUTO ? getString(R.string.smartdevice_setup_bluetooth_connecting_text_auto) : null));
+            T(dguf.A(getString(R.string.common_connecting), this.p == dfim.AUTO ? getString(R.string.smartdevice_setup_bluetooth_connecting_text_auto) : null));
             this.i = (SourceLogManager) intent.getParcelableExtra("smartdevice.sourceLogManager");
         } else {
             this.i = (SourceLogManager) bundle2.getParcelable("smartdevice.sourceLogManager");
@@ -1367,10 +1360,10 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         }
         SourceLogManager sourceLogManager2 = new SourceLogManager(this);
         this.i = sourceLogManager2;
-        sourceLogManager2.h(this.y, ddqa.a(this));
+        sourceLogManager2.h(this.y, dgbf.a(this));
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         h.d("onDestroy", new Object[0]);
         this.D.cancel(true);
@@ -1380,7 +1373,7 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         super.onDestroy();
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         h.d("onPause", new Object[0]);
         this.E.a();
@@ -1388,32 +1381,32 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         super.onPause();
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPostResume() {
         super.onPostResume();
         h.d("onPostResume", new Object[0]);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onResume() {
         super.onResume();
         h.d("onResume", new Object[0]);
         this.r = false;
-        deno denoVar = this.E;
-        denu.a();
-        if (!denoVar.d) {
-            denoVar.d = true;
-            ContentResolver contentResolver = denoVar.b;
-            int i = deno.a;
-            denoVar.c = Settings.System.getInt(contentResolver, "screen_off_timeout", i);
-            denoVar.b(i);
-            denoVar.e = new demu(denoVar, Thread.getDefaultUncaughtExceptionHandler());
-            Thread.setDefaultUncaughtExceptionHandler(denoVar.e);
+        dgyr dgyrVar = this.E;
+        dgyx.a();
+        if (!dgyrVar.d) {
+            dgyrVar.d = true;
+            ContentResolver contentResolver = dgyrVar.b;
+            int i = dgyr.a;
+            dgyrVar.c = Settings.System.getInt(contentResolver, "screen_off_timeout", i);
+            dgyrVar.b(i);
+            dgyrVar.e = new dgxx(dgyrVar, Thread.getDefaultUncaughtExceptionHandler());
+            Thread.setDefaultUncaughtExceptionHandler(dgyrVar.e);
         }
         this.B.b();
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         h.d("onSaveInstanceState", new Object[0]);
         super.onSaveInstanceState(bundle);
@@ -1428,23 +1421,23 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         bundle.putParcelableArrayList("smartdevice.d2dSetupActivity.selectedAccounts", this.k);
     }
 
-    @Override // defpackage.qex, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryb, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStop() {
-        arxo arxoVar = h;
-        arxoVar.d("onStop", new Object[0]);
+        auad auadVar = h;
+        auadVar.d("onStop", new Object[0]);
         if (!isChangingConfigurations() && this.j != 3 && !this.r) {
             if (this.q > 0) {
-                arxoVar.d("Displaying error toast", new Object[0]);
+                auadVar.d("Displaying error toast", new Object[0]);
                 Toast.makeText(this, this.q, 1).show();
             } else {
-                arxoVar.d("Displaying setup incomplete toast", new Object[0]);
+                auadVar.d("Displaying setup incomplete toast", new Object[0]);
                 Toast.makeText(this, R.string.smartdevice_alert_setup_incomplete, 1).show();
             }
         }
         super.onStop();
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void p(ArrayList arrayList) {
         Bundle bundle = new Bundle();
         if (this.u) {
@@ -1465,9 +1458,9 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
     }
 
     final BootstrapOptions r() {
-        dehz dehzVar = this.m;
-        if (dehzVar != null) {
-            return dehzVar.ai;
+        dgtc dgtcVar = this.m;
+        if (dgtcVar != null) {
+            return dgtcVar.ai;
         }
         throw new IllegalStateException("No bootstrap options available yet");
     }
@@ -1478,19 +1471,19 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
     }
 
     public final void t(Account account) {
-        dg g = gI().g(R.id.fragment_container);
-        if (!(g instanceof dekd)) {
-            w(new dekc(account, K(), 0, 0, false, true));
+        dg g = gY().g(R.id.fragment_container);
+        if (!(g instanceof dgvg)) {
+            w(new dgvf(account, K(), 0, 0, false, true));
             return;
         }
-        dekd dekdVar = (dekd) g;
-        dekb dekbVar = dekdVar.b;
-        if (dekbVar != null) {
-            dekbVar.w(new dekc(account, dekdVar.c.size(), dekdVar.ag.size(), dekdVar.ah.size(), dekdVar.al, true));
+        dgvg dgvgVar = (dgvg) g;
+        dgve dgveVar = dgvgVar.b;
+        if (dgveVar != null) {
+            dgveVar.w(new dgvf(account, dgvgVar.c.size(), dgvgVar.ag.size(), dgvgVar.ah.size(), dgvgVar.al, true));
         }
     }
 
-    @Override // defpackage.deiw
+    @Override // defpackage.dgtz
     public final void u(int i, int i2) {
         if (i != 4) {
             if (i == 12) {
@@ -1529,9 +1522,9 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         }
     }
 
-    @Override // defpackage.dekb
-    public final void w(dekc dekcVar) {
-        Account account = dekcVar.a;
+    @Override // defpackage.dgve
+    public final void w(dgvf dgvfVar) {
+        Account account = dgvfVar.a;
         if (account == null) {
             throw new IllegalStateException("onAccountSelected was called but account was null!");
         }
@@ -1540,7 +1533,7 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
             this.k.clear();
         }
         this.k.add(account);
-        this.i.f(dekcVar);
+        this.i.f(dgvfVar);
         if (this.w) {
             ad();
         } else {
@@ -1548,9 +1541,9 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         }
     }
 
-    @Override // defpackage.dekb
+    @Override // defpackage.dgve
     public final void y() {
-        this.x.s("com.google", null, null, new AccountManagerCallback() { // from class: deia
+        this.x.s("com.google", null, null, new AccountManagerCallback() { // from class: dgtd
             @Override // android.accounts.AccountManagerCallback
             public final void run(AccountManagerFuture accountManagerFuture) {
                 D2DSetupChimeraActivity.this.v(accountManagerFuture);
@@ -1558,7 +1551,7 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         }, null);
     }
 
-    @Override // defpackage.dejh
+    @Override // defpackage.dguk
     public final void z(int i) {
         if (i == 4) {
             c(4, null);
@@ -1567,11 +1560,11 @@ public class D2DSetupChimeraActivity extends qex implements dekv, ddnt, degy, de
         }
     }
 
-    @Override // defpackage.dekv
+    @Override // defpackage.dgvy
     public final void G(int i) {
     }
 
-    @Override // defpackage.degp
+    @Override // defpackage.dgrs
     public final void x(String str) {
     }
 }

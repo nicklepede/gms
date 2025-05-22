@@ -4,24 +4,24 @@ import android.content.Intent;
 import android.os.Build;
 import android.util.Log;
 import com.google.android.chimera.Service;
-import defpackage.asnv;
-import defpackage.asnz;
-import defpackage.asqj;
-import defpackage.byhj;
-import defpackage.byhp;
-import defpackage.eiif;
-import defpackage.eike;
-import defpackage.eikh;
-import defpackage.eikn;
-import defpackage.eilr;
-import defpackage.fmqn;
+import defpackage.aurp;
+import defpackage.aurt;
+import defpackage.auud;
+import defpackage.caqb;
+import defpackage.caqh;
+import defpackage.ekvk;
+import defpackage.ekxj;
+import defpackage.ekxm;
+import defpackage.ekxs;
+import defpackage.ekyw;
+import defpackage.fpil;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class LifecycleSynchronizer {
     private int a;
@@ -31,20 +31,20 @@ public class LifecycleSynchronizer {
     private final boolean e;
     private final long f;
     private final ScheduledExecutorService g;
-    private final asnv h;
-    private final eikh i;
+    private final aurp h;
+    private final ekxm i;
     private ScheduledFuture j;
     private long k;
     private int l;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public interface Callback {
         void onServiceDestroy();
     }
 
     /* renamed from: $r8$lambda$HsuCSGeR_ASuZdcKXm7d-foRfqU, reason: not valid java name */
-    public static /* synthetic */ void m229$r8$lambda$HsuCSGeR_ASuZdcKXm7dfoRfqU(LifecycleSynchronizer lifecycleSynchronizer) {
-        eike.e(lifecycleSynchronizer.d);
+    public static /* synthetic */ void m225$r8$lambda$HsuCSGeR_ASuZdcKXm7dfoRfqU(LifecycleSynchronizer lifecycleSynchronizer) {
+        ekxj.e(lifecycleSynchronizer.d);
         synchronized (lifecycleSynchronizer.b) {
             lifecycleSynchronizer.j = null;
             if (lifecycleSynchronizer.a == 0) {
@@ -72,11 +72,11 @@ public class LifecycleSynchronizer {
         if (j > 0) {
             if (this.j == null) {
                 ScheduledExecutorService scheduledExecutorService = this.g;
-                eike.e(scheduledExecutorService);
+                ekxj.e(scheduledExecutorService);
                 this.j = scheduledExecutorService.schedule(new Runnable() { // from class: com.google.android.gms.common.apiservice.LifecycleSynchronizer$$ExternalSyntheticLambda0
                     @Override // java.lang.Runnable
                     public final void run() {
-                        LifecycleSynchronizer.m229$r8$lambda$HsuCSGeR_ASuZdcKXm7dfoRfqU(LifecycleSynchronizer.this);
+                        LifecycleSynchronizer.m225$r8$lambda$HsuCSGeR_ASuZdcKXm7dfoRfqU(LifecycleSynchronizer.this);
                     }
                 }, j, TimeUnit.NANOSECONDS);
                 return;
@@ -110,7 +110,7 @@ public class LifecycleSynchronizer {
                 int i2 = i - 1;
                 this.a = i2;
                 if (i2 == 0) {
-                    Iterator it = ((eilr) this.i).a.keySet().iterator();
+                    Iterator it = ((ekyw) this.i).a.keySet().iterator();
                     while (it.hasNext()) {
                         try {
                             ((Callback) it.next()).onServiceDestroy();
@@ -141,9 +141,9 @@ public class LifecycleSynchronizer {
                     service.startService(intent);
                     this.l = true != this.e ? 3 : 2;
                 } catch (IllegalStateException e) {
-                    if (Build.VERSION.SDK_INT >= 26 && ((eiif.c(intent.getPackage()) || this.d.getPackageName().equals(intent.getPackage())) && fmqn.d() && new Random().nextFloat() < fmqn.b())) {
+                    if (Build.VERSION.SDK_INT >= 26 && ((ekvk.c(intent.getPackage()) || this.d.getPackageName().equals(intent.getPackage())) && fpil.d() && new Random().nextFloat() < fpil.b())) {
                         Log.e("LifecycleSync", "Google Play services is unable to start a service. Exiting.", e);
-                        asqj.f();
+                        auud.f();
                     }
                     throw e;
                 }
@@ -176,9 +176,9 @@ public class LifecycleSynchronizer {
     public LifecycleSynchronizer(com.google.android.chimera.Service r13) {
         /*
             r12 = this;
-            long r0 = defpackage.fmvi.b()
+            long r0 = defpackage.fpng.b()
             java.util.concurrent.TimeUnit r2 = java.util.concurrent.TimeUnit.SECONDS
-            long r3 = defpackage.fmvi.b()
+            long r3 = defpackage.fpng.b()
             long r8 = r2.toNanos(r3)
             r2 = 0
             int r0 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
@@ -199,19 +199,19 @@ public class LifecycleSynchronizer {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.common.apiservice.LifecycleSynchronizer.<init>(com.google.android.chimera.Service):void");
     }
 
-    public LifecycleSynchronizer(Service service, boolean z, long j, ScheduledExecutorService scheduledExecutorService, asnv asnvVar) {
+    public LifecycleSynchronizer(Service service, boolean z, long j, ScheduledExecutorService scheduledExecutorService, aurp aurpVar) {
         this.b = new Object();
         this.l = 1;
-        eikn eiknVar = new eikn();
-        eiknVar.e(4);
-        eiknVar.n();
-        this.i = eiknVar.a();
+        ekxs ekxsVar = new ekxs();
+        ekxsVar.e(4);
+        ekxsVar.n();
+        this.i = ekxsVar.a();
         this.j = null;
         this.k = 0L;
         this.d = service;
         this.e = z;
         this.f = j;
-        this.g = scheduledExecutorService == null ? j > 0 ? byhj.b.h(1, byhp.LOW_POWER) : null : scheduledExecutorService;
-        this.h = asnvVar == null ? asnz.a : asnvVar;
+        this.g = scheduledExecutorService == null ? j > 0 ? caqb.b.h(1, caqh.LOW_POWER) : null : scheduledExecutorService;
+        this.h = aurpVar == null ? aurt.a : aurpVar;
     }
 }

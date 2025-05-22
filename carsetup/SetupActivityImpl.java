@@ -7,101 +7,100 @@ import android.os.Bundle;
 import com.google.android.gms.R;
 import com.google.android.gms.carsetup.frx.SetupFsm$EntryState;
 import com.google.android.gms.carsetup.fsm.impl.ActivityResult;
-import defpackage.albn;
-import defpackage.alsb;
-import defpackage.alsh;
-import defpackage.altc;
-import defpackage.alte;
-import defpackage.alth;
-import defpackage.altl;
-import defpackage.altt;
-import defpackage.altw;
-import defpackage.alty;
-import defpackage.aluf;
-import defpackage.aluj;
-import defpackage.aluk;
-import defpackage.alvc;
-import defpackage.alve;
+import defpackage.ancy;
+import defpackage.antm;
+import defpackage.ants;
+import defpackage.anun;
+import defpackage.anup;
+import defpackage.anus;
+import defpackage.anuw;
+import defpackage.anve;
+import defpackage.anvh;
+import defpackage.anvj;
+import defpackage.anvq;
+import defpackage.anvu;
+import defpackage.anvv;
+import defpackage.anwn;
+import defpackage.anwp;
 import defpackage.bp;
-import defpackage.bul;
+import defpackage.buy;
 import defpackage.dg;
-import defpackage.ejgq;
-import defpackage.ejhh;
-import defpackage.elxv;
-import defpackage.elxw;
-import defpackage.elxx;
-import defpackage.fecj;
-import defpackage.flsv;
-import defpackage.flvu;
-import defpackage.qet;
+import defpackage.eltz;
+import defpackage.eluq;
+import defpackage.eolj;
+import defpackage.eolk;
+import defpackage.eoll;
+import defpackage.fgrc;
+import defpackage.fond;
+import defpackage.rxx;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class SetupActivityImpl extends qet implements alve {
-    private static final ejhh k = albn.a("CAR.SETUP");
-    private static final bul l;
+public class SetupActivityImpl extends rxx implements anwp {
+    private static final eluq k = ancy.a("CAR.SETUP");
+    private static final buy l;
     public boolean j;
-    private alvc m;
+    private anwn m;
     private dg n;
     private volatile dg o;
     private ActivityResult p;
     private boolean q;
 
     static {
-        bul bulVar = new bul();
-        l = bulVar;
-        bulVar.put(aluf.class, elxw.FRX_INSTALL_APPS);
-        bulVar.put(altc.class, elxw.FRX_AUTHORIZE_CAR);
-        bulVar.put(alte.class, elxw.FRX_CAR_MOVING);
-        bulVar.put(altl.class, elxw.FRX_ERROR_FRAGMENT);
-        bulVar.put(alth.class, elxw.FRX_DOWNLOAD_RETRY);
-        bulVar.put(aluj.class, elxw.FRX_INTRO_FRAGMENT);
-        bulVar.put(altw.class, elxw.FRX_INCOMPATIBLE);
-        bulVar.put(alty.class, elxw.FRX_INCOMPATIBLE_NO_VANAGON);
-        bulVar.put(altt.class, elxw.FRX_INCOMPATIBLE_ALERT);
-        bulVar.put(aluk.class, elxw.FRX_LOCK_SCREEN);
+        buy buyVar = new buy();
+        l = buyVar;
+        buyVar.put(anvq.class, eolk.FRX_INSTALL_APPS);
+        buyVar.put(anun.class, eolk.FRX_AUTHORIZE_CAR);
+        buyVar.put(anup.class, eolk.FRX_CAR_MOVING);
+        buyVar.put(anuw.class, eolk.FRX_ERROR_FRAGMENT);
+        buyVar.put(anus.class, eolk.FRX_DOWNLOAD_RETRY);
+        buyVar.put(anvu.class, eolk.FRX_INTRO_FRAGMENT);
+        buyVar.put(anvh.class, eolk.FRX_INCOMPATIBLE);
+        buyVar.put(anvj.class, eolk.FRX_INCOMPATIBLE_NO_VANAGON);
+        buyVar.put(anve.class, eolk.FRX_INCOMPATIBLE_ALERT);
+        buyVar.put(anvv.class, eolk.FRX_LOCK_SCREEN);
     }
 
-    @Override // defpackage.alve
+    @Override // defpackage.anwp
     public final dg a() {
         return this.n;
     }
 
-    @Override // defpackage.alve
-    public final alvc k() {
+    @Override // defpackage.anwp
+    public final anwn k() {
         return this.m;
     }
 
-    @Override // defpackage.alve
+    @Override // defpackage.anwp
     public final Class l() {
         return SetupFsm$EntryState.class;
     }
 
-    @Override // defpackage.alve
+    @Override // defpackage.anwp
     public final List m() {
-        return Collections.singletonList(new alsb(this));
+        return Collections.singletonList(new antm(this));
     }
 
-    @Override // defpackage.alve
-    public final void n(alvc alvcVar) {
-        this.m = alvcVar;
+    @Override // defpackage.anwp
+    public final void n(anwn anwnVar) {
+        this.m = anwnVar;
     }
 
-    @Override // defpackage.alve
+    @Override // defpackage.anwp
     public final void o() {
         getWindow().clearFlags(2621568);
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onActivityResult(int i, int i2, Intent intent) {
         if (i == 1) {
             if (this.p != null) {
-                ejgq ah = k.h().ah(2752);
+                eltz ai = k.h().ai(2756);
                 ActivityResult activityResult = this.p;
-                ah.G("Got an activity result when mPendingFsmActivityResult is not null. losing result with resultCode=%d data=%s", activityResult.a, activityResult.b);
+                ai.G("Got an activity result when mPendingFsmActivityResult is not null. losing result with resultCode=%d data=%s", activityResult.a, activityResult.b);
             }
             if (this.q) {
                 this.p = new ActivityResult(i2, intent);
@@ -111,37 +110,37 @@ public class SetupActivityImpl extends qet implements alve {
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
         this.m.d("EVENT_BACKBUTTON_PRESSED");
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setTheme(R.style.CarFrxTheme_Cakewalk_Phone);
-        if (flvu.a.a().b() && flvu.a.a().a().b.contains(Build.MANUFACTURER.toLowerCase(Locale.ROOT))) {
+        fond fondVar = fond.a;
+        if (fondVar.lK().b() && fondVar.lK().a().b.contains(Build.MANUFACTURER.toLowerCase(Locale.ROOT))) {
             getTheme().applyStyle(R.style.ThemeOverlay_CarFrx_DeviceFontFamily, true);
         }
         getWindow().addFlags(2621568);
         setRequestedOrientation(1);
         setContentView(R.layout.car_frx_activity);
-        flsv.a.a().a();
         this.n = getSupportFragmentManager().h("fragment_main");
         if (bundle == null) {
             bp bpVar = new bp(getSupportFragmentManager());
-            bpVar.v(new alsh(), "fragment_fsm_controller");
+            bpVar.v(new ants(), "fragment_fsm_controller");
             bpVar.a();
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         this.q = true;
         super.onPause();
     }
 
-    @Override // defpackage.qfw
+    @Override // defpackage.rza
     protected final void onResumeFragments() {
         super.onResumeFragments();
         this.q = false;
@@ -159,62 +158,62 @@ public class SetupActivityImpl extends qet implements alve {
         }
     }
 
-    public final void p(elxw elxwVar, elxv elxvVar) {
-        alvc alvcVar = this.m;
-        fecj v = elxx.a.v();
+    public final void p(eolk eolkVar, eolj eoljVar) {
+        anwn anwnVar = this.m;
+        fgrc v = eoll.a.v();
         if (!v.b.L()) {
             v.U();
         }
-        int i = elxwVar.gA;
-        elxx elxxVar = (elxx) v.b;
-        elxxVar.b |= 1;
-        elxxVar.d = i;
-        int a = elxvVar.a();
+        int i = eolkVar.gC;
+        eoll eollVar = (eoll) v.b;
+        eollVar.b |= 1;
+        eollVar.d = i;
+        int a = eoljVar.a();
         if (!v.b.L()) {
             v.U();
         }
-        elxx elxxVar2 = (elxx) v.b;
-        elxxVar2.b |= 2;
-        elxxVar2.e = a;
-        alvcVar.f((elxx) v.Q());
+        eoll eollVar2 = (eoll) v.b;
+        eollVar2.b |= 2;
+        eollVar2.e = a;
+        anwnVar.f((eoll) v.Q());
     }
 
-    @Override // defpackage.alve
-    public final void q(Class cls, elxv elxvVar) {
-        elxw elxwVar = (elxw) l.get(cls);
-        if (elxwVar != null) {
-            p(elxwVar, elxvVar);
+    @Override // defpackage.anwp
+    public final void q(Class cls, eolj eoljVar) {
+        eolk eolkVar = (eolk) l.get(cls);
+        if (eolkVar != null) {
+            p(eolkVar, eoljVar);
         } else {
-            k.j().ah(2749).B("Attempting to log unknown FRX screen for class: %s", cls.getName());
+            k.j().ai(2753).B("Attempting to log unknown FRX screen for class: %s", cls.getName());
         }
     }
 
-    @Override // defpackage.alve
+    @Override // defpackage.anwp
     public final void r(Class cls) {
-        elxw elxwVar = (elxw) l.get(cls);
-        if (elxwVar != null) {
-            p(elxwVar, elxv.f);
+        eolk eolkVar = (eolk) l.get(cls);
+        if (eolkVar != null) {
+            p(eolkVar, eolj.f);
         } else {
-            k.j().ah(2750).B("Attempting to log unknown FRX screen for class: %s", cls.getName());
+            k.j().ai(2754).B("Attempting to log unknown FRX screen for class: %s", cls.getName());
         }
     }
 
-    @Override // defpackage.alve
+    @Override // defpackage.anwp
     public final void s(Intent intent) {
         startActivityForResult(intent, 1);
     }
 
-    @Override // defpackage.alve
+    @Override // defpackage.anwp
     public final void t(Class cls, Bundle bundle, boolean z) {
         dg dgVar;
         if (z || (dgVar = this.n) == null || !cls.equals(dgVar.getClass())) {
-            if (!cls.equals(aluj.class) && !cls.equals(aluk.class)) {
+            if (!cls.equals(anvu.class) && !cls.equals(anvv.class)) {
                 o();
             }
             try {
                 dg dgVar2 = (dg) cls.getConstructor(null).newInstance(null);
                 dgVar2.setArguments(bundle);
-                if (this.q && !(dgVar2 instanceof aluj)) {
+                if (this.q && !(dgVar2 instanceof anvu)) {
                     this.o = dgVar2;
                     return;
                 }

@@ -4,11 +4,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.ConditionVariable;
-import defpackage.eijr;
+import defpackage.ekww;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class n implements SharedPreferences.OnSharedPreferenceChangeListener {
     public Context g;
@@ -38,9 +38,9 @@ public final class n implements SharedPreferences.OnSharedPreferenceChangeListen
             }
         }
         if (gVar.a != 2) {
-            return this.j.has(gVar.b) ? gVar.a(this.j) : r.a(new eijr() { // from class: com.google.android.gms.ads.internal.config.l
-                @Override // defpackage.eijr
-                public final Object a() {
+            return this.j.has(gVar.b) ? gVar.a(this.j) : r.a(new ekww() { // from class: com.google.android.gms.ads.internal.config.l
+                @Override // defpackage.ekww
+                public final Object lK() {
                     return gVar.c(n.this.e);
                 }
             });
@@ -52,9 +52,9 @@ public final class n implements SharedPreferences.OnSharedPreferenceChangeListen
     public final void b(final SharedPreferences sharedPreferences) {
         if (sharedPreferences != null) {
             try {
-                this.j = new JSONObject((String) r.a(new eijr() { // from class: com.google.android.gms.ads.internal.config.k
-                    @Override // defpackage.eijr
-                    public final Object a() {
+                this.j = new JSONObject((String) r.a(new ekww() { // from class: com.google.android.gms.ads.internal.config.k
+                    @Override // defpackage.ekww
+                    public final Object lK() {
                         return sharedPreferences.getString("flag_configuration", "{}");
                     }
                 }));

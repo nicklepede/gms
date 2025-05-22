@@ -3,17 +3,17 @@ package com.google.android.gms.nearby.connection.v3;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cgci;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.atzr;
+import defpackage.cikl;
+import defpackage.elgo;
+import defpackage.elpg;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class SafeParcelableDataElements extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cgci();
+    public static final Parcelable.Creator CREATOR = new cikl();
     private final List a;
 
     public SafeParcelableDataElements(List list) {
@@ -25,8 +25,8 @@ public class SafeParcelableDataElements extends AbstractSafeParcelable {
         if (list != null) {
             return list;
         }
-        int i = eitj.d;
-        return ejcb.a;
+        int i = elgo.d;
+        return elpg.a;
     }
 
     public final boolean equals(Object obj) {
@@ -42,8 +42,8 @@ public class SafeParcelableDataElements extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, a(), false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, a(), false);
+        atzr.c(parcel, a);
     }
 }

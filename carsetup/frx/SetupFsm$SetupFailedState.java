@@ -1,31 +1,31 @@
 package com.google.android.gms.carsetup.frx;
 
-import defpackage.aluv;
-import defpackage.alvg;
-import defpackage.alvi;
+import defpackage.anwg;
+import defpackage.anwr;
+import defpackage.anwt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-@alvi(a = {})
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+@anwt(a = {})
 /* loaded from: classes3.dex */
-public class SetupFsm$SetupFailedState extends alvg {
-    @Override // defpackage.alvg
+public class SetupFsm$SetupFailedState extends anwr {
+    @Override // defpackage.anwr
     public final int a() {
         return 11;
     }
 
-    @Override // defpackage.alvg
+    @Override // defpackage.anwr
     public final boolean b(String str, Object obj) {
         return true;
     }
 
-    @Override // defpackage.alvg
+    @Override // defpackage.anwr
     public final void c(String str) {
-        aluv aluvVar = (aluv) this.c.k;
-        int x = aluvVar.x();
+        anwg anwgVar = (anwg) this.c.k;
+        int x = anwgVar.x();
         boolean z = true;
         if (x != 0 && x != 1) {
             z = false;
         }
-        aluvVar.H(z);
+        anwgVar.H(z);
     }
 }

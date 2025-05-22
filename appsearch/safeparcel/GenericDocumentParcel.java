@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.ArrayMap;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.ugb;
+import defpackage.wca;
 import j$.util.Objects;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class GenericDocumentParcel extends AbstractSafeParcelable implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new ugb();
+    public static final Parcelable.Creator CREATOR = new wca();
     public final String a;
     public final String b;
     public final String c;
@@ -62,6 +62,6 @@ public final class GenericDocumentParcel extends AbstractSafeParcelable implemen
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        ugb.a(this, parcel);
+        wca.a(this, parcel);
     }
 }

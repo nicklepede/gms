@@ -5,60 +5,60 @@ import android.database.Cursor;
 import android.util.Log;
 import com.google.android.gms.dynamic.ObjectWrapper;
 import com.google.android.gms.dynamiteloader.DynamiteLoaderV2;
-import defpackage.anzl;
-import defpackage.anzs;
-import defpackage.arfc;
-import defpackage.asnp;
-import defpackage.asnx;
-import defpackage.azht;
-import defpackage.azix;
-import defpackage.azja;
-import defpackage.eike;
+import defpackage.aqbd;
+import defpackage.aqbk;
+import defpackage.athr;
+import defpackage.aurj;
+import defpackage.aurr;
+import defpackage.bblp;
+import defpackage.bbmt;
+import defpackage.bbmw;
+import defpackage.ekxj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class DynamiteLoaderImpl extends azja implements anzl {
-    private final anzl a;
+public class DynamiteLoaderImpl extends bbmw implements aqbd {
+    private final aqbd a;
 
     public DynamiteLoaderImpl() {
-        if (!arfc.b()) {
+        if (!athr.b()) {
             this.a = null;
-            int i = anzs.a;
+            int i = aqbk.a;
         } else {
             ClassLoader classLoader = getClass().getClassLoader();
-            eike.e(classLoader);
-            this.a = (anzl) classLoader.loadClass("com.google.android.gms.chimera.container.dynamite.GmsProcessDynamiteLoaderImpl").asSubclass(anzl.class).getDeclaredConstructor(null).newInstance(null);
+            ekxj.e(classLoader);
+            this.a = (aqbd) classLoader.loadClass("com.google.android.gms.chimera.container.dynamite.GmsProcessDynamiteLoaderImpl").asSubclass(aqbd.class).getDeclaredConstructor(null).newInstance(null);
         }
     }
 
-    private final anzl a() {
-        anzl anzlVar = this.a;
-        return anzlVar != null ? anzlVar : this;
+    private final aqbd a() {
+        aqbd aqbdVar = this.a;
+        return aqbdVar != null ? aqbdVar : this;
     }
 
-    @Override // defpackage.azjb
-    public azht createModuleContext(azht azhtVar, String str, int i) {
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+    @Override // defpackage.bbmx
+    public bblp createModuleContext(bblp bblpVar, String str, int i) {
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         if (context == null) {
             return new ObjectWrapper(null);
         }
         try {
-            return createModuleContextNoCrashUtils(azhtVar, str, i);
+            return createModuleContextNoCrashUtils(bblpVar, str, i);
         } catch (Throwable th) {
-            if (!asnp.d()) {
-                asnx.f(context, th);
+            if (!aurj.d()) {
+                aurr.f(context, th);
             }
             throw th;
         }
     }
 
-    @Override // defpackage.azjb
-    public azht createModuleContext3NoCrashUtils(azht azhtVar, String str, int i, azht azhtVar2) {
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+    @Override // defpackage.bbmx
+    public bblp createModuleContext3NoCrashUtils(bblp bblpVar, String str, int i, bblp bblpVar2) {
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         if (context == null) {
             return new ObjectWrapper(null);
         }
-        Cursor cursor = (Cursor) ObjectWrapper.a(azhtVar2);
+        Cursor cursor = (Cursor) ObjectWrapper.a(bblpVar2);
         if (cursor != null) {
             try {
                 if (cursor.moveToFirst()) {
@@ -77,50 +77,50 @@ public class DynamiteLoaderImpl extends azja implements anzl {
         return new ObjectWrapper(null);
     }
 
-    @Override // defpackage.azjb
-    public azht createModuleContextNoCrashUtils(azht azhtVar, String str, int i) {
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+    @Override // defpackage.bbmx
+    public bblp createModuleContextNoCrashUtils(bblp bblpVar, String str, int i) {
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         if (context == null) {
             return new ObjectWrapper(null);
         }
         try {
-            return createModuleContext3NoCrashUtils(azhtVar, str, i, new ObjectWrapper(a().queryForDynamiteModule(context, str, false)));
+            return createModuleContext3NoCrashUtils(bblpVar, str, i, new ObjectWrapper(a().queryForDynamiteModule(context, str, false)));
         } catch (Throwable th) {
             Log.e("DynamiteLoaderImpl", "Error creating module context: ".concat(th.toString()));
             throw th;
         }
     }
 
-    @Override // defpackage.azjb
+    @Override // defpackage.bbmx
     public int getIDynamiteLoaderVersion() {
         return 3;
     }
 
-    @Override // defpackage.azjb
-    public int getModuleVersion(azht azhtVar, String str) {
-        return getModuleVersion2(azhtVar, str, true);
+    @Override // defpackage.bbmx
+    public int getModuleVersion(bblp bblpVar, String str) {
+        return getModuleVersion2(bblpVar, str, true);
     }
 
-    @Override // defpackage.azjb
-    public int getModuleVersion2(azht azhtVar, String str, boolean z) {
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+    @Override // defpackage.bbmx
+    public int getModuleVersion2(bblp bblpVar, String str, boolean z) {
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         if (context == null) {
             Log.w("DynamiteLoaderImpl", "Invalid client Context.");
             return 0;
         }
         try {
-            return getModuleVersion2NoCrashUtils(azhtVar, str, z);
+            return getModuleVersion2NoCrashUtils(bblpVar, str, z);
         } catch (Exception e) {
-            if (!asnp.d()) {
-                asnx.f(context, e);
+            if (!aurj.d()) {
+                aurr.f(context, e);
             }
             throw e;
         }
     }
 
-    @Override // defpackage.azjb
-    public int getModuleVersion2NoCrashUtils(azht azhtVar, String str, boolean z) {
-        Cursor cursor = (Cursor) ObjectWrapper.a(queryForDynamiteModuleNoCrashUtils(azhtVar, str, z, 0L));
+    @Override // defpackage.bbmx
+    public int getModuleVersion2NoCrashUtils(bblp bblpVar, String str, boolean z) {
+        Cursor cursor = (Cursor) ObjectWrapper.a(queryForDynamiteModuleNoCrashUtils(bblpVar, str, z, 0L));
         if (cursor != null) {
             try {
                 if (cursor.moveToFirst()) {
@@ -135,19 +135,19 @@ public class DynamiteLoaderImpl extends azja implements anzl {
         return 0;
     }
 
-    @Override // defpackage.anzl
+    @Override // defpackage.aqbd
     public Context loadModule(Context context, String str, int i, Cursor cursor) {
         return (Context) ObjectWrapper.a(new DynamiteLoaderV2(3).loadModule2NoCrashUtils(new ObjectWrapper(context), str, i, new ObjectWrapper(cursor)));
     }
 
-    @Override // defpackage.anzl
+    @Override // defpackage.aqbd
     public Cursor queryForDynamiteModule(Context context, String str, boolean z) {
-        return azix.d(context, str, z, 0L);
+        return bbmt.d(context, str, z, 0L);
     }
 
-    @Override // defpackage.azjb
-    public azht queryForDynamiteModuleNoCrashUtils(azht azhtVar, String str, boolean z, long j) {
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+    @Override // defpackage.bbmx
+    public bblp queryForDynamiteModuleNoCrashUtils(bblp bblpVar, String str, boolean z, long j) {
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         if (context == null) {
             Log.w("DynamiteLoaderImpl", "Invalid client Context.");
             return new ObjectWrapper(null);

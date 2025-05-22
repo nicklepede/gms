@@ -9,40 +9,40 @@ import android.os.Bundle;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.R;
 import com.google.android.gms.findmydevice.spot.fastpair.halfsheet.ProvisionParams;
-import defpackage.asbo;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bdxl;
-import defpackage.bdzf;
-import defpackage.bfdp;
-import defpackage.bfiz;
-import defpackage.chmk;
-import defpackage.chnc;
-import defpackage.chyx;
-import defpackage.dfee;
-import defpackage.dnhw;
-import defpackage.doci;
-import defpackage.dwdg;
-import defpackage.dwup;
-import defpackage.egmx;
-import defpackage.ejhf;
-import defpackage.ejtk;
-import defpackage.enqc;
-import defpackage.ensm;
-import defpackage.enss;
-import defpackage.febw;
-import defpackage.fecp;
-import defpackage.fedk;
-import defpackage.fqld;
-import defpackage.ijw;
-import defpackage.ijy;
-import defpackage.ikd;
+import defpackage.aued;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bfyx;
+import defpackage.bgar;
+import defpackage.bhff;
+import defpackage.bhkp;
+import defpackage.cjul;
+import defpackage.cjvd;
+import defpackage.ckhc;
+import defpackage.dhpk;
+import defpackage.dpsf;
+import defpackage.dqmr;
+import defpackage.dyph;
+import defpackage.dzgp;
+import defpackage.ejaa;
+import defpackage.eluo;
+import defpackage.emgt;
+import defpackage.eqdv;
+import defpackage.eqgf;
+import defpackage.eqgl;
+import defpackage.fgqp;
+import defpackage.fgri;
+import defpackage.fgsd;
+import defpackage.ftey;
+import defpackage.ilm;
+import defpackage.ilo;
+import defpackage.ilt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class SpotUpgradeCheckerIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("SpotUpgradeCheckerIntent", asej.FIND_MY_DEVICE_SPOT);
-    private final bdxl b;
+    private static final ausn a = ausn.b("SpotUpgradeCheckerIntent", auid.FIND_MY_DEVICE_SPOT);
+    private final bfyx b;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -52,16 +52,16 @@ public final class SpotUpgradeCheckerIntentOperation extends IntentOperation {
     public SpotUpgradeCheckerIntentOperation() {
         /*
             r5 = this;
-            bebp r0 = defpackage.bebo.a()
-            android.content.Context r1 = defpackage.bebk.b()
-            android.content.Context r2 = defpackage.bebk.b()
-            chyy r2 = defpackage.cewl.b(r2)
-            bebo r0 = (defpackage.bebo) r0
-            fixm r0 = r0.b
+            bgdb r0 = defpackage.bgda.a()
+            android.content.Context r1 = defpackage.bgcw.b()
+            android.content.Context r2 = defpackage.bgcw.b()
+            ckhd r2 = defpackage.chdw.b(r2)
+            bgda r0 = (defpackage.bgda) r0
+            flnj r0 = r0.b
             java.lang.Object r0 = r0.a()
             java.util.concurrent.Executor r0 = (java.util.concurrent.Executor) r0
-            bdxl r3 = new bdxl
-            asbo r4 = defpackage.asbo.f(r1)
+            bfyx r3 = new bfyx
+            aued r4 = defpackage.aued.f(r1)
             r3.<init>(r1, r2, r4, r0)
             r5.<init>(r3)
             return
@@ -71,8 +71,8 @@ public final class SpotUpgradeCheckerIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        enss enssVar;
-        if (bfdp.b(intent, "com.google.android.gms.findmydevice.spot.fastpair.CHECK_UPGRADE_ELIGIBILITY")) {
+        eqgl eqglVar;
+        if (bhff.b(intent, "com.google.android.gms.findmydevice.spot.fastpair.CHECK_UPGRADE_ELIGIBILITY")) {
             final String stringExtra = intent.getStringExtra("bonded_address");
             final Account account = (Account) intent.getParcelableExtra("account");
             final byte[] byteArrayExtra = intent.getByteArrayExtra("account_key");
@@ -82,108 +82,108 @@ public final class SpotUpgradeCheckerIntentOperation extends IntentOperation {
             PendingIntent pendingIntent = (PendingIntent) intent.getParcelableExtra("dismiss_intent");
             final Bundle bundleExtra = intent.getBundleExtra("response_bundle");
             if (stringExtra == null || account == null || byteArrayExtra == null || byteArrayExtra2 == null || pendingIntent == null || bundleExtra == null) {
-                ((ejhf) ((ejhf) a.j()).ah((char) 4110)).x("Missing mandatory parameters");
+                ((eluo) ((eluo) a.j()).ai((char) 4116)).x("Missing mandatory parameters");
                 return;
             }
             try {
-                fecp y = fecp.y(chmk.b, byteArrayExtra2, 0, byteArrayExtra2.length, febw.a());
-                fecp.M(y);
-                final chmk chmkVar = (chmk) y;
-                final bdxl bdxlVar = this.b;
-                if (fqld.q()) {
-                    asot asotVar = bdxl.a;
-                    ((ejhf) ((ejhf) asotVar.h()).ah(4102)).B("Eligibility check: %s", chmkVar.e);
+                fgri y = fgri.y(cjul.b, byteArrayExtra2, 0, byteArrayExtra2.length, fgqp.a());
+                fgri.M(y);
+                final cjul cjulVar = (cjul) y;
+                final bfyx bfyxVar = this.b;
+                if (ftey.r()) {
+                    ausn ausnVar = bfyx.a;
+                    ((eluo) ((eluo) ausnVar.h()).ai(4108)).B("Eligibility check: %s", cjulVar.e);
                     if (booleanExtra) {
-                        enssVar = egmx.f(doci.b(bdxlVar.c.a(new chyx(byteArrayExtra)))).i(new enqc() { // from class: bdxk
-                            @Override // defpackage.enqc
-                            public final enss a(Object obj) {
+                        eqglVar = ejaa.g(dqmr.b(bfyxVar.c.a(new ckhc(byteArrayExtra)))).i(new eqdv() { // from class: bfyw
+                            @Override // defpackage.eqdv
+                            public final eqgl a(Object obj) {
                                 if (booleanExtra2) {
-                                    ((ejhf) ((ejhf) bdxl.a.h()).ah((char) 4104)).x("Device already provisioned to a signed-in user");
-                                    return ensm.a;
+                                    ((eluo) ((eluo) bfyx.a.h()).ai((char) 4110)).x("Device already provisioned to a signed-in user");
+                                    return eqgf.a;
                                 }
-                                bdxl bdxlVar2 = bdxl.this;
-                                Context context = bdxlVar2.b;
-                                asbo asboVar = bdxlVar2.d;
-                                if (!bfiz.b(context, asboVar) || asboVar == null) {
-                                    ((ejhf) ((ejhf) bdxl.a.j()).ah((char) 4105)).x("Failed to create alerts channel");
+                                bfyx bfyxVar2 = bfyx.this;
+                                Context context = bfyxVar2.b;
+                                aued auedVar = bfyxVar2.d;
+                                if (!bhkp.b(context, auedVar) || auedVar == null) {
+                                    ((eluo) ((eluo) bfyx.a.j()).ai((char) 4111)).x("Failed to create alerts channel");
                                 } else {
-                                    chmk chmkVar2 = chmkVar;
-                                    chnc chncVar = chmkVar2.p;
-                                    if (chncVar == null) {
-                                        chncVar = chnc.a;
+                                    cjul cjulVar2 = cjulVar;
+                                    cjvd cjvdVar = cjulVar2.p;
+                                    if (cjvdVar == null) {
+                                        cjvdVar = cjvd.a;
                                     }
-                                    String format = String.format(chncVar.bi, chmkVar2.i);
-                                    chnc chncVar2 = chmkVar2.p;
-                                    if (chncVar2 == null) {
-                                        chncVar2 = chnc.a;
+                                    String format = String.format(cjvdVar.bi, cjulVar2.i);
+                                    cjvd cjvdVar2 = cjulVar2.p;
+                                    if (cjvdVar2 == null) {
+                                        cjvdVar2 = cjvd.a;
                                     }
                                     Bundle bundle = bundleExtra;
                                     String str = stringExtra;
                                     byte[] bArr = byteArrayExtra;
                                     Account account2 = account;
-                                    String str2 = chncVar2.bj;
-                                    PendingIntent a2 = dwdg.a(context, 0, bdzf.a(context, new ProvisionParams(bArr, account2, str, "ACCESSORY_TRACKED_BY_OWNER_NOTIFICATION", dnhw.OWNED_BY_DIFFERENT_ACCOUNT.name()), chmkVar2, bundle), 67108864);
-                                    ikd a3 = bfiz.a(context, "finder-alerts");
+                                    String str2 = cjvdVar2.bj;
+                                    PendingIntent a2 = dyph.a(context, 0, bgar.a(context, new ProvisionParams(bArr, account2, str, "ACCESSORY_TRACKED_BY_OWNER_NOTIFICATION", dpsf.OWNED_BY_DIFFERENT_ACCOUNT.name()), cjulVar2, bundle), 67108864);
+                                    ilt a3 = bhkp.a(context, "finder-alerts");
                                     a3.y = "alarm";
-                                    a3.m(format);
-                                    a3.l(str2);
+                                    a3.r(format);
+                                    a3.j(str2);
                                     a3.g = a2;
-                                    a3.k(true);
+                                    a3.i(true);
                                     Notification b = a3.b();
-                                    ((ejhf) ((ejhf) bdxl.a.h()).ah((char) 4106)).x("Notifying the user the device may be tracked");
-                                    asboVar.u(1, dfee.FINDMYDEVICE_ACCESSORY_TRACKED_BY_SOMEONE_ELSE, b);
+                                    ((eluo) ((eluo) bfyx.a.h()).ai((char) 4112)).x("Notifying the user the device may be tracked");
+                                    auedVar.u(1, dhpk.FINDMYDEVICE_ACCESSORY_TRACKED_BY_SOMEONE_ELSE, b);
                                 }
-                                return ensm.a;
+                                return eqgf.a;
                             }
-                        }, bdxlVar.e);
+                        }, bfyxVar.e);
                     } else {
                         if (booleanExtra2) {
-                            Context context = bdxlVar.b;
-                            asbo asboVar = bdxlVar.d;
-                            if (bfiz.c(context, asboVar) != 1 || asboVar == null) {
-                                ((ejhf) ((ejhf) asotVar.j()).ah((char) 4107)).x("Failed to create configuration channel");
+                            Context context = bfyxVar.b;
+                            aued auedVar = bfyxVar.d;
+                            if (bhkp.c(context, auedVar) != 1 || auedVar == null) {
+                                ((eluo) ((eluo) ausnVar.j()).ai((char) 4113)).x("Failed to create configuration channel");
                             } else {
-                                String n = ejtk.f.n(byteArrayExtra);
-                                chnc chncVar = chmkVar.p;
-                                if (chncVar == null) {
-                                    chncVar = chnc.a;
+                                String n = emgt.f.n(byteArrayExtra);
+                                cjvd cjvdVar = cjulVar.p;
+                                if (cjvdVar == null) {
+                                    cjvdVar = cjvd.a;
                                 }
-                                String format = String.format(chncVar.aK, chmkVar.i);
-                                chnc chncVar2 = chmkVar.p;
-                                if (chncVar2 == null) {
-                                    chncVar2 = chnc.a;
+                                String format = String.format(cjvdVar.aK, cjulVar.i);
+                                cjvd cjvdVar2 = cjulVar.p;
+                                if (cjvdVar2 == null) {
+                                    cjvdVar2 = cjvd.a;
                                 }
-                                String str = chncVar2.aL;
-                                PendingIntent a2 = dwdg.a(context, 0, bdzf.a(context, new ProvisionParams(byteArrayExtra, account, stringExtra, "UPGRADE_NOTIFICATION", dnhw.OWNED_BY_CURRENT_ACCOUNT_AND_UNPROVISIONED.name()), chmkVar, bundleExtra), 67108864);
-                                ijy a3 = ijw.a(null, ikd.d(context.getString(R.string.common_continue)), a2, true, new Bundle(), null, true);
-                                ijy a4 = ijw.a(null, ikd.d(context.getString(R.string.common_dismiss)), pendingIntent, true, new Bundle(), null, false);
-                                ikd a5 = bfiz.a(context, "finder-configuration");
+                                String str = cjvdVar2.aL;
+                                PendingIntent a2 = dyph.a(context, 0, bgar.a(context, new ProvisionParams(byteArrayExtra, account, stringExtra, "UPGRADE_NOTIFICATION", dpsf.OWNED_BY_CURRENT_ACCOUNT_AND_UNPROVISIONED.name()), cjulVar, bundleExtra), 67108864);
+                                ilo a3 = ilm.a(null, ilt.d(context.getString(R.string.common_continue)), a2, true, new Bundle(), null, true);
+                                ilo a4 = ilm.a(null, ilt.d(context.getString(R.string.common_dismiss)), pendingIntent, true, new Bundle(), null, false);
+                                ilt a5 = bhkp.a(context, "finder-configuration");
                                 a5.y = "recommendation";
-                                a5.m(format);
-                                a5.l(str);
+                                a5.r(format);
+                                a5.j(str);
                                 a5.g = a2;
-                                a5.k(true);
-                                a5.i(a4);
-                                a5.i(a3);
+                                a5.i(true);
+                                a5.f(a4);
+                                a5.f(a3);
                                 Notification b = a5.b();
-                                ((ejhf) ((ejhf) asotVar.h()).ah((char) 4108)).x("Recommending the user to upgrade to SPOT");
-                                asboVar.w(n, 2, dfee.FINDMYDEVICE_UPGRADE_TO_FINDER, b);
+                                ((eluo) ((eluo) ausnVar.h()).ai((char) 4114)).x("Recommending the user to upgrade to SPOT");
+                                auedVar.w(n, 2, dhpk.FINDMYDEVICE_UPGRADE_TO_FINDER, b);
                             }
                         }
-                        enssVar = ensm.a;
+                        eqglVar = eqgf.a;
                     }
                 } else {
-                    ((ejhf) ((ejhf) bdxl.a.h()).ah((char) 4103)).x("Upgrade eligibility check disabled.");
-                    enssVar = ensm.a;
+                    ((eluo) ((eluo) bfyx.a.h()).ai((char) 4109)).x("Upgrade eligibility check disabled.");
+                    eqglVar = eqgf.a;
                 }
-                dwup.a("Spot upgrade checker", enssVar);
-            } catch (fedk e) {
-                ((ejhf) ((ejhf) ((ejhf) a.j()).s(e)).ah((char) 4111)).x("Failed to parse scan fast pair store item");
+                dzgp.a("Spot upgrade checker", eqglVar);
+            } catch (fgsd e) {
+                ((eluo) ((eluo) ((eluo) a.j()).s(e)).ai((char) 4117)).x("Failed to parse scan fast pair store item");
             }
         }
     }
 
-    public SpotUpgradeCheckerIntentOperation(bdxl bdxlVar) {
-        this.b = bdxlVar;
+    public SpotUpgradeCheckerIntentOperation(bfyx bfyxVar) {
+        this.b = bfyxVar;
     }
 }

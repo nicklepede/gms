@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.PublicKey;
 import java.security.Signature;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class FlagsChimeraReceiver extends BroadcastReceiver {
     private final String b;
@@ -48,7 +48,7 @@ public class FlagsChimeraReceiver extends BroadcastReceiver {
      */
     /* JADX WARN: Code restructure failed: missing block: B:56:0x013b, code lost:
     
-        r0 = defpackage.asnh.e("MD5");
+        r0 = defpackage.aurb.e("MD5");
         r12 = new byte[2048];
      */
     /* JADX WARN: Code restructure failed: missing block: B:57:0x0145, code lost:

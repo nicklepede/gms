@@ -2,18 +2,18 @@ package com.google.android.gms.fido.fido2.api.view;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arxc;
-import defpackage.bbvt;
-import defpackage.bbwe;
-import defpackage.ejtk;
+import defpackage.atzr;
+import defpackage.bdzl;
+import defpackage.bdzw;
+import defpackage.emgt;
 import java.util.Arrays;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class InternalTransportChallengeCompletedViewOptions extends ViewOptions {
-    public static final Parcelable.Creator CREATOR = new bbvt();
+    public static final Parcelable.Creator CREATOR = new bdzl();
     public final int a;
     public final byte[] b;
 
@@ -22,14 +22,14 @@ public class InternalTransportChallengeCompletedViewOptions extends ViewOptions 
         this.b = bArr;
     }
 
-    @Override // com.google.android.gms.fido.fido2.api.view.ViewOptions, defpackage.bbji
+    @Override // com.google.android.gms.fido.fido2.api.view.ViewOptions, defpackage.bdnf
     public final JSONObject a() {
         JSONObject a = super.a();
         try {
             a.put("statusCode", this.a);
             byte[] bArr = this.b;
             if (bArr != null) {
-                a.put("signedData", ejtk.d.n(bArr));
+                a.put("signedData", emgt.d.n(bArr));
             }
             return a;
         } catch (JSONException e) {
@@ -38,8 +38,8 @@ public class InternalTransportChallengeCompletedViewOptions extends ViewOptions 
     }
 
     @Override // com.google.android.gms.fido.fido2.api.view.ViewOptions
-    public final bbwe b() {
-        return bbwe.INTERNAL_TRANSPORT_CHALLENGE_COMPLETED;
+    public final bdzw b() {
+        return bdzw.INTERNAL_TRANSPORT_CHALLENGE_COMPLETED;
     }
 
     public final boolean equals(Object obj) {
@@ -57,9 +57,9 @@ public class InternalTransportChallengeCompletedViewOptions extends ViewOptions 
     @Override // com.google.android.gms.fido.fido2.api.view.ViewOptions, android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.i(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.i(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

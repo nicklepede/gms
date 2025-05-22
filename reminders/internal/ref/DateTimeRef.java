@@ -5,12 +5,12 @@ import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.DateTime;
 import com.google.android.gms.reminders.model.DateTimeEntity;
 import com.google.android.gms.reminders.model.Time;
-import defpackage.cxeb;
-import defpackage.cxei;
+import defpackage.cznx;
+import defpackage.czoe;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class DateTimeRef extends cxeb implements DateTime {
+public class DateTimeRef extends cznx implements DateTime {
     private boolean f;
     private TimeRef g;
 
@@ -60,7 +60,7 @@ public class DateTimeRef extends cxeb implements DateTime {
         return n(p("date_range"));
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof DateTime)) {
             return false;
@@ -86,7 +86,7 @@ public class DateTimeRef extends cxeb implements DateTime {
         return n(p("period"));
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return DateTimeEntity.b(this);
     }
@@ -101,13 +101,13 @@ public class DateTimeRef extends cxeb implements DateTime {
         return o(p("absolute_time_ms"));
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new DateTimeEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxei.a(new DateTimeEntity(this), parcel, i);
+        czoe.a(new DateTimeEntity(this), parcel, i);
     }
 }

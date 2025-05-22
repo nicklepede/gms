@@ -1,26 +1,26 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
-import defpackage.aneb;
-import defpackage.fvbo;
+import defpackage.apfo;
+import defpackage.fxxm;
 import java.util.List;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class Offer {
-    private aneb castMode;
+    private apfo castMode;
     private List supportedStreams;
     private final long udpPort;
 
-    public Offer(long j, List list, aneb anebVar) {
-        fvbo.f(list, "supportedStreams");
-        fvbo.f(anebVar, "castMode");
+    public Offer(long j, List list, apfo apfoVar) {
+        fxxm.f(list, "supportedStreams");
+        fxxm.f(apfoVar, "castMode");
         this.udpPort = j;
         this.supportedStreams = list;
-        this.castMode = anebVar;
+        this.castMode = apfoVar;
     }
 
-    public static /* synthetic */ Offer copy$default(Offer offer, long j, List list, aneb anebVar, int i, Object obj) {
+    public static /* synthetic */ Offer copy$default(Offer offer, long j, List list, apfo apfoVar, int i, Object obj) {
         if ((i & 1) != 0) {
             j = offer.udpPort;
         }
@@ -28,9 +28,9 @@ public final class Offer {
             list = offer.supportedStreams;
         }
         if ((i & 4) != 0) {
-            anebVar = offer.castMode;
+            apfoVar = offer.castMode;
         }
-        return offer.copy(j, list, anebVar);
+        return offer.copy(j, list, apfoVar);
     }
 
     public final long component1() {
@@ -41,14 +41,14 @@ public final class Offer {
         return this.supportedStreams;
     }
 
-    public final aneb component3() {
+    public final apfo component3() {
         return this.castMode;
     }
 
-    public final Offer copy(long j, List list, aneb anebVar) {
-        fvbo.f(list, "supportedStreams");
-        fvbo.f(anebVar, "castMode");
-        return new Offer(j, list, anebVar);
+    public final Offer copy(long j, List list, apfo apfoVar) {
+        fxxm.f(list, "supportedStreams");
+        fxxm.f(apfoVar, "castMode");
+        return new Offer(j, list, apfoVar);
     }
 
     public boolean equals(Object obj) {
@@ -59,10 +59,10 @@ public final class Offer {
             return false;
         }
         Offer offer = (Offer) obj;
-        return this.udpPort == offer.udpPort && fvbo.n(this.supportedStreams, offer.supportedStreams) && this.castMode == offer.castMode;
+        return this.udpPort == offer.udpPort && fxxm.n(this.supportedStreams, offer.supportedStreams) && this.castMode == offer.castMode;
     }
 
-    public final aneb getCastMode() {
+    public final apfo getCastMode() {
         return this.castMode;
     }
 
@@ -80,13 +80,13 @@ public final class Offer {
         return (((((int) (j ^ (j >>> 32))) * 31) + hashCode) * 31) + this.castMode.hashCode();
     }
 
-    public final void setCastMode(aneb anebVar) {
-        fvbo.f(anebVar, "<set-?>");
-        this.castMode = anebVar;
+    public final void setCastMode(apfo apfoVar) {
+        fxxm.f(apfoVar, "<set-?>");
+        this.castMode = apfoVar;
     }
 
     public final void setSupportedStreams(List list) {
-        fvbo.f(list, "<set-?>");
+        fxxm.f(list, "<set-?>");
         this.supportedStreams = list;
     }
 
@@ -94,7 +94,7 @@ public final class Offer {
         return "Offer(udpPort=" + this.udpPort + ", supportedStreams=" + this.supportedStreams + ", castMode=" + this.castMode + ")";
     }
 
-    public /* synthetic */ Offer(long j, List list, aneb anebVar, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(j, list, (i & 4) != 0 ? aneb.a : anebVar);
+    public /* synthetic */ Offer(long j, List list, apfo apfoVar, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this(j, list, (i & 4) != 0 ? apfo.a : apfoVar);
     }
 }

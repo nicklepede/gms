@@ -21,85 +21,85 @@ import com.google.android.gms.auth.uiflows.addaccount.PreAddAccountChimeraActivi
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
 import com.google.android.gms.common.Feature;
 import com.google.android.gms.common.api.ApiMetadata;
-import com.google.android.gms.common.api.ComplianceOptions;
 import com.google.android.gms.enterprise.internal.ConsentedLoggingRequest;
 import com.google.android.gms.enterprise.internal.LoadModuleResult;
 import com.google.android.gms.enterprise.internal.MpCompleteRequest;
 import com.google.android.gms.enterprise.internal.ZeroTouchFlowResult;
 import com.google.android.setupcompat.logging.SetupMetric;
 import defpackage.a;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.aaxg;
-import defpackage.aaxl;
-import defpackage.aaxp;
-import defpackage.aaxq;
-import defpackage.aboz;
-import defpackage.acbw;
-import defpackage.addu;
-import defpackage.adel;
-import defpackage.adfj;
-import defpackage.adfk;
-import defpackage.adfr;
-import defpackage.adfs;
-import defpackage.adfu;
-import defpackage.adfv;
-import defpackage.adhd;
-import defpackage.adko;
-import defpackage.adlm;
-import defpackage.aqxo;
-import defpackage.aqxt;
-import defpackage.arco;
-import defpackage.arcy;
-import defpackage.arjm;
-import defpackage.arxd;
-import defpackage.asop;
-import defpackage.asqh;
-import defpackage.assw;
-import defpackage.azmp;
-import defpackage.azne;
-import defpackage.aznn;
-import defpackage.azns;
-import defpackage.bqpv;
-import defpackage.cwal;
-import defpackage.dezt;
-import defpackage.dfab;
-import defpackage.dfae;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfap;
-import defpackage.dfaq;
-import defpackage.dvni;
-import defpackage.edgl;
-import defpackage.eijr;
-import defpackage.ejxs;
-import defpackage.ejxz;
-import defpackage.ejya;
-import defpackage.ejyk;
-import defpackage.ejyl;
-import defpackage.ejzh;
-import defpackage.ekcs;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fkdo;
-import defpackage.fkds;
-import defpackage.fkkt;
-import defpackage.fkkz;
-import defpackage.fkli;
-import defpackage.fklx;
-import defpackage.fkns;
-import defpackage.fnlp;
-import defpackage.fuuw;
-import defpackage.fvbo;
-import defpackage.fwcg;
-import defpackage.fwch;
-import defpackage.ips;
-import defpackage.jth;
-import defpackage.jtu;
-import defpackage.nce;
-import defpackage.uyn;
-import defpackage.vcw;
-import defpackage.vfv;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.acxg;
+import defpackage.acxl;
+import defpackage.acxp;
+import defpackage.acxq;
+import defpackage.adoz;
+import defpackage.aebw;
+import defpackage.afdw;
+import defpackage.afen;
+import defpackage.affl;
+import defpackage.affm;
+import defpackage.afft;
+import defpackage.affu;
+import defpackage.affw;
+import defpackage.affx;
+import defpackage.afhi;
+import defpackage.afkv;
+import defpackage.aflt;
+import defpackage.atad;
+import defpackage.atai;
+import defpackage.atfd;
+import defpackage.atfn;
+import defpackage.atmb;
+import defpackage.atzs;
+import defpackage.ausj;
+import defpackage.auub;
+import defpackage.auwq;
+import defpackage.bbql;
+import defpackage.bbra;
+import defpackage.bbrj;
+import defpackage.bbro;
+import defpackage.bsxm;
+import defpackage.cyki;
+import defpackage.dhkz;
+import defpackage.dhlh;
+import defpackage.dhlk;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlv;
+import defpackage.dhlw;
+import defpackage.dxyi;
+import defpackage.eftg;
+import defpackage.ekww;
+import defpackage.emld;
+import defpackage.emlk;
+import defpackage.emll;
+import defpackage.emlv;
+import defpackage.emlw;
+import defpackage.emms;
+import defpackage.emqe;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fmua;
+import defpackage.fmue;
+import defpackage.fmuw;
+import defpackage.fnbi;
+import defpackage.fnbo;
+import defpackage.fnbx;
+import defpackage.fncm;
+import defpackage.fneh;
+import defpackage.fqdw;
+import defpackage.fxqu;
+import defpackage.fxxm;
+import defpackage.fyyi;
+import defpackage.fyyj;
+import defpackage.iri;
+import defpackage.jzw;
+import defpackage.kaj;
+import defpackage.ous;
+import defpackage.wun;
+import defpackage.wyw;
+import defpackage.xbw;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -107,21 +107,21 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
-    public static final aano h = new aano("is_frp_required");
-    static final aano i = new aano("is_setup_wizard");
-    static final aano j = new aano("is_resolve_frp_only");
-    public static cwal k;
-    private aaxq A;
-    nce l;
-    public adfv m;
+public class PreAddAccountChimeraActivity extends afkv implements jzw, acxg {
+    public static final acno h = new acno("is_frp_required");
+    static final acno i = new acno("is_setup_wizard");
+    static final acno j = new acno("is_resolve_frp_only");
+    public static cyki k;
+    private acxq A;
+    ous l;
+    public affx m;
     private Handler x;
     private final List y = new ArrayList();
-    public final adfu n = new adfu(this);
-    private final dezt z = new adfk();
-    final Runnable o = new Runnable() { // from class: adey
+    public final affw n = new affw(this);
+    private final dhkz z = new affm();
+    final Runnable o = new Runnable() { // from class: affa
         @Override // java.lang.Runnable
         public final void run() {
             PreAddAccountChimeraActivity preAddAccountChimeraActivity = PreAddAccountChimeraActivity.this;
@@ -133,67 +133,67 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
         }
     };
 
-    private final aaxq B() {
+    private final acxq B() {
         PreAddAccountChimeraActivity preAddAccountChimeraActivity;
         if (this.A == null) {
             preAddAccountChimeraActivity = this;
-            preAddAccountChimeraActivity.A = new aaxq(new azne(this), new aznn(this), new aaxl(new azne(this), new aznn(this)), new azns(this), preAddAccountChimeraActivity);
+            preAddAccountChimeraActivity.A = new acxq(new bbra(this), new bbrj(this), new acxl(new bbra(this), new bbrj(this)), new bbro(this), preAddAccountChimeraActivity);
         } else {
             preAddAccountChimeraActivity = this;
         }
         return preAddAccountChimeraActivity.A;
     }
 
-    public static final void q(ejyk ejykVar) {
-        adlm adlmVar = new adlm();
-        fecj v = ejya.a.v();
-        ejxz ejxzVar = ejxz.AUTH_DEBUG_EVENT;
+    public static final void q(emlv emlvVar) {
+        aflt afltVar = new aflt();
+        fgrc v = emll.a.v();
+        emlk emlkVar = emlk.AUTH_DEBUG_EVENT;
         if (!v.b.L()) {
             v.U();
         }
-        ejya ejyaVar = (ejya) v.b;
-        ejyaVar.e = ejxzVar.aw;
-        ejyaVar.b |= 1;
-        fecj v2 = ejyl.a.v();
+        emll emllVar = (emll) v.b;
+        emllVar.e = emlkVar.ar;
+        emllVar.b |= 1;
+        fgrc v2 = emlw.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        ejyl ejylVar = (ejyl) v2.b;
-        ejykVar.getClass();
-        ejylVar.e = ejykVar;
-        ejylVar.b |= 4;
+        emlw emlwVar = (emlw) v2.b;
+        emlvVar.getClass();
+        emlwVar.e = emlvVar;
+        emlwVar.b |= 4;
         if (!v.b.L()) {
             v.U();
         }
-        ejya ejyaVar2 = (ejya) v.b;
-        ejyl ejylVar2 = (ejyl) v2.Q();
-        ejylVar2.getClass();
-        ejyaVar2.X = ejylVar2;
-        ejyaVar2.c |= 134217728;
-        adlmVar.a((ejya) v.Q());
+        emll emllVar2 = (emll) v.b;
+        emlw emlwVar2 = (emlw) v2.Q();
+        emlwVar2.getClass();
+        emllVar2.X = emlwVar2;
+        emllVar2.c |= 16777216;
+        afltVar.a((emll) v.Q());
     }
 
-    @Override // defpackage.jth
-    public final jtu a(int i2, Bundle bundle) {
+    @Override // defpackage.jzw
+    public final kaj a(int i2, Bundle bundle) {
         Log.w("Auth", a.j(i2, "[AddAccount, PreAddAccountActivity] Starting loader with loaderId="));
-        jtu acbwVar = i2 != 0 ? i2 != 1 ? i2 != 2 ? i2 != 3 ? i2 != 4 ? i2 != 5 ? null : new acbw(this) : new aboz(this) : new adfj(this, this, fkds.c()) : new adfs(this, this, fkds.c()) : new adfr(this, this, fkds.c()) : new adel(this);
-        if (acbwVar != null) {
-            this.y.add(acbwVar);
+        kaj aebwVar = i2 != 0 ? i2 != 1 ? i2 != 2 ? i2 != 3 ? i2 != 4 ? i2 != 5 ? null : new aebw(this) : new adoz(this) : new affl(this, this, fmue.c()) : new affu(this, this, fmue.c()) : new afft(this, this, fmue.c()) : new afen(this);
+        if (aebwVar != null) {
+            this.y.add(aebwVar);
         }
-        return acbwVar;
+        return aebwVar;
     }
 
-    @Override // defpackage.jth
-    public final /* bridge */ /* synthetic */ void b(jtu jtuVar, Object obj) {
+    @Override // defpackage.jzw
+    public final /* bridge */ /* synthetic */ void b(kaj kajVar, Object obj) {
         Bundle bundle = (Bundle) obj;
-        int id = jtuVar.getId();
+        int id = kajVar.getId();
         Log.w("Auth", a.j(id, "[AddAccount, PreAddAccountActivity] Loader finished with loaderId="));
         if (id == 0) {
             this.m.c(bundle.getBoolean("checkin_loader_result", false));
             return;
         }
         if (id == 1) {
-            o((FrpSnapshot) arxd.a(bundle.getByteArray("loader_result_frp"), FrpSnapshot.CREATOR));
+            o((FrpSnapshot) atzs.a(bundle.getByteArray("loader_result_frp"), FrpSnapshot.CREATOR));
             return;
         }
         if (id == 2) {
@@ -217,32 +217,32 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
         }
     }
 
-    @Override // defpackage.jth
-    public final void c(jtu jtuVar) {
-        Log.w("Auth", "[AddAccount, PreAddAccountActivity] Loader reset with loaderId=" + jtuVar.getId());
+    @Override // defpackage.jzw
+    public final void c(kaj kajVar) {
+        Log.w("Auth", "[AddAccount, PreAddAccountActivity] Loader reset with loaderId=" + kajVar.getId());
     }
 
-    @Override // defpackage.aaxg
+    @Override // defpackage.acxg
     public final void d() {
         Log.w("Auth", "[PreAddAccountChimeraActivity] finishWithoutDelay with result=RESULT_OK");
         setResult(-1);
         finish();
     }
 
-    @Override // defpackage.aaxg
+    @Override // defpackage.acxg
     public final void e(int i2) {
         Log.w("Auth", String.format(Locale.US, "[AddAccount, PreAddAccountActivity] ManagedProvisioning result code: %d", Integer.valueOf(i2)));
         if (i2 == -1) {
             Log.w("Auth", "[PreAddAccountChimeraActivity] Triggering finish(resultCode, data) with result=RESULT_DPM_USER_COMPLETE");
-            gD(111, null);
+            gT(111, null);
             return;
         }
         if (i2 == 0) {
             Log.w("Auth", "[PreAddAccountChimeraActivity] Triggering finish(resultCode, data) with result=RESULT_CANCELED");
             Intent intent = new Intent();
-            aanp aanpVar = new aanp();
-            aanpVar.d(AddAccountController.a, true);
-            gD(0, intent.putExtras(aanpVar.a));
+            acnp acnpVar = new acnp();
+            acnpVar.d(AddAccountController.a, true);
+            gT(0, intent.putExtras(acnpVar.a));
             return;
         }
         switch (i2) {
@@ -252,101 +252,101 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
                 break;
             case 122:
                 Log.w("Auth", "[PreAddAccountChimeraActivity] Triggering finish(resultCode, data) with result=RESULT_WORK_PROFILE_CREATED");
-                gD(122, null);
+                gT(122, null);
                 break;
             case 123:
                 Log.w("Auth", "[PreAddAccountChimeraActivity] Triggering finish(resultCode, data) with result=RESULT_DEVICE_OWNER_SET");
-                gD(123, null);
+                gT(123, null);
                 break;
             default:
                 Log.e("Auth", String.format(Locale.US, "[AddAccount, PreAddAccountActivity] Unexpected ManagedProvisioning result code.", new Object[0]));
                 Log.w("Auth", "[PreAddAccountChimeraActivity] Triggering finish(resultCode, data) with result=RESULT_DPM_USER_COMPLETE");
-                gD(111, null);
+                gT(111, null);
                 break;
         }
     }
 
-    @Override // defpackage.aaxg
+    @Override // defpackage.acxg
     public final void f(Intent intent) {
-        if (fkdo.a.a().d()) {
-            edgl.a(getIntent(), intent);
+        if (fmua.a.lK().d()) {
+            eftg.a(getIntent(), intent);
         }
         startActivityForResult(intent, 4);
     }
 
-    @Override // defpackage.aaxg
+    @Override // defpackage.acxg
     public final void g() {
         Log.w("Auth", "[PreAddAccountChimeraActivity] resuming Add account flow post ZT");
         p(true);
     }
 
-    @Override // defpackage.adlg, defpackage.adkg
-    public final void gD(final int i2, final Intent intent) {
+    @Override // defpackage.afln, defpackage.afkn
+    public final void gT(final int i2, final Intent intent) {
         if (i2 == 0) {
             i2 = 0;
             if (intent != null && intent.getBooleanExtra(AddAccountController.a.a, false)) {
                 this.x.removeCallbacksAndMessages(null);
                 Log.w("Auth", "[PreAddAccountChimeraActivity] finish(resultCode, data) called with result=RESULT_CANCELED");
-                super.gD(0, intent);
+                super.gT(0, intent);
                 return;
             }
         }
-        if (fklx.a.a().c()) {
+        if (fncm.a.lK().c()) {
             this.x.removeCallbacksAndMessages(null);
         }
         long currentTimeMillis = System.currentTimeMillis() - this.m.f.longValue();
-        dvni dvniVar = vfv.a;
-        if (currentTimeMillis < fkkz.f()) {
-            this.x.postDelayed(new Runnable() { // from class: adfg
+        dxyi dxyiVar = xbw.a;
+        if (currentTimeMillis < fnbo.f()) {
+            this.x.postDelayed(new Runnable() { // from class: affi
                 @Override // java.lang.Runnable
                 public final void run() {
                     PreAddAccountChimeraActivity.this.l(i2, intent);
                 }
-            }, fkkz.f() - currentTimeMillis);
+            }, fnbo.f() - currentTimeMillis);
         } else {
             Log.w("Auth", a.j(i2, "[PreAddAccountChimeraActivity] finish(resultCode, data) triggered with resultCode="));
-            super.gD(i2, intent);
+            super.gT(i2, intent);
         }
     }
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "PreAddAccountActivity";
     }
 
-    @Override // defpackage.adkg
-    protected final void gH() {
-        if (vcw.a.a(this)) {
-            vcw.c(this, null);
+    @Override // defpackage.afkn
+    protected final void gX() {
+        if (wyw.a.a(this)) {
+            wyw.c(this, null);
         } else {
-            super.gH();
+            super.gX();
         }
     }
 
-    @Override // defpackage.aaxg
+    @Override // defpackage.acxg
     public final void h() {
         Log.w("Auth", "[PreAddAccountChimeraActivity] finish(resultCode, data) called with result=RESULT_ZERO_TOUCH");
-        gD(3, null);
+        gT(3, null);
     }
 
-    final dfaq j(final String str, String[] strArr, final String str2) {
-        dfaq a = arjm.a(k.bv(str, 251661004, strArr, null).d(this.z), fkkt.a.a().a(), TimeUnit.MILLISECONDS);
-        a.y(new dfah() { // from class: adfb
-            @Override // defpackage.dfah
-            public final void gm(Exception exc) {
+    final dhlw j(final String str, String[] strArr, final String str2) {
+        dhlw a = atmb.a(k.bt(str, 251864004, strArr, null).d(this.z), fnbi.a.lK().a(), TimeUnit.MILLISECONDS);
+        a.y(new dhln() { // from class: affd
+            @Override // defpackage.dhln
+            public final void gB(Exception exc) {
                 Log.w("Auth", String.format(Locale.US, "[AddAccount, PreAddAccountActivity] ".concat(str2), new Object[0]), exc);
             }
         });
-        a.z(new dfak() { // from class: adfc
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
+        a.z(new dhlq() { // from class: affe
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
                 Log.w("Auth", String.format(Locale.US, "[AddAccount, PreAddAccountActivity] Sync successful:".concat(str), new Object[0]));
             }
         });
-        if (asop.c(fkns.c())) {
-            a.z(new dfak() { // from class: adfd
-                @Override // defpackage.dfak
-                public final void gn(Object obj) {
+        if (ausj.c(fneh.c())) {
+            a.z(new dhlq() { // from class: afff
+                @Override // defpackage.dhlq
+                public final void gC(Object obj) {
                     Intent intent = new Intent("com.google.android.gms.auth.PHENOTYPE_SYNC_COMPLETE");
                     PreAddAccountChimeraActivity preAddAccountChimeraActivity = PreAddAccountChimeraActivity.this;
                     preAddAccountChimeraActivity.sendBroadcast(intent.setPackage(preAddAccountChimeraActivity.getPackageName()).putExtra("com.google.android.gms.phenotype.PACKAGE_NAME", str));
@@ -358,7 +358,7 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
 
     public final /* synthetic */ void l(int i2, Intent intent) {
         Log.w("Auth", a.j(i2, "[PreAddAccountChimeraActivity] finish(resultCode, data) called from Handler after delay with resultCode="));
-        super.gD(i2, intent);
+        super.gT(i2, intent);
     }
 
     public final /* synthetic */ void n(AccountManagerFuture accountManagerFuture) {
@@ -366,16 +366,16 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
             Bundle bundle = (Bundle) accountManagerFuture.getResult();
             if (!bundle.containsKey("authAccount") || !bundle.containsKey("accountType")) {
                 Log.w("Auth", "[PreAddAccountChimeraActivity] finish(resultCode, data) called with result=RESULT_CANCELED");
-                gD(0, null);
+                gT(0, null);
             } else {
-                aanp aanpVar = new aanp();
-                aanpVar.d(AddAccountChimeraActivity.h, new Account(bundle.getString("authAccount"), bundle.getString("accountType")));
+                acnp acnpVar = new acnp();
+                acnpVar.d(AddAccountChimeraActivity.h, new Account(bundle.getString("authAccount"), bundle.getString("accountType")));
                 Log.w("Auth", "[PreAddAccountChimeraActivity] finish(resultCode, data) called with result=RESULT_FINISH_SUCCESS");
-                gD(31, new Intent().putExtras(aanpVar.a));
+                gT(31, new Intent().putExtras(acnpVar.a));
             }
         } catch (AuthenticatorException | OperationCanceledException | IOException e) {
             Log.w("Auth", "[PreAddAccountChimeraActivity] Exception calling AccountManager#finishSession. finish(resultCode, data) called with result=RESULT_CANCELED", e);
-            gD(0, null);
+            gT(0, null);
         }
     }
 
@@ -383,8 +383,8 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
         this.m.d(frpSnapshot);
         boolean booleanExtra = getIntent().getBooleanExtra(i.a, false);
         if (!frpSnapshot.b || (booleanExtra && !frpSnapshot.c)) {
-            int i2 = ips.a;
-            if (!uyn.b(this)) {
+            int i2 = iri.a;
+            if (!wun.b(this)) {
                 this.m.b(true);
                 return;
             } else {
@@ -398,7 +398,7 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
         }
         long currentTimeMillis = System.currentTimeMillis() - this.m.f.longValue();
         Handler handler = this.x;
-        Runnable runnable = new Runnable() { // from class: adfh
+        Runnable runnable = new Runnable() { // from class: affj
             @Override // java.lang.Runnable
             public final void run() {
                 Bundle bundle;
@@ -407,25 +407,24 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
                     return;
                 }
                 preAddAccountChimeraActivity.m.j = true;
-                Log.e("Auth", "stack trace for startFrpUnlock", new Exception());
                 FrpSnapshot frpSnapshot2 = preAddAccountChimeraActivity.m.c;
-                int i3 = ips.a;
-                if (bqna.b(preAddAccountChimeraActivity).p("com.google").length <= 0 && frpSnapshot2.d) {
-                    dvni dvniVar = vfv.a;
-                    if (fkkz.o() && asqh.d()) {
+                int i3 = iri.a;
+                if (bsup.b(preAddAccountChimeraActivity).p("com.google").length <= 0 && frpSnapshot2.d) {
+                    dxyi dxyiVar = xbw.a;
+                    if (fnbo.o() && auub.d()) {
                         KeyguardManager keyguardManager = (KeyguardManager) preAddAccountChimeraActivity.getSystemService("keyguard");
                         CharSequence text = preAddAccountChimeraActivity.getResources().getText(R.string.auth_frp_preadd_lkscreen_fwd);
-                        fkgt.c();
-                        Intent a = adft.a(keyguardManager, text);
+                        fmxf.c();
+                        Intent a = affv.a(keyguardManager, text);
                         if (a == null) {
                             preAddAccountChimeraActivity.n.a(2);
                             return;
                         }
-                        edgl.a(preAddAccountChimeraActivity.getIntent(), a);
+                        eftg.a(preAddAccountChimeraActivity.getIntent(), a);
                         preAddAccountChimeraActivity.startActivityForResult(a, 2);
                         AppContextProvider.a();
-                        eijr eijrVar = bqqe.a;
-                        bqqa.a(aseu.AUTH_ACCOUNT_BASE_FACTORY_RESET_PROTECTION_SHOWN);
+                        ekww ekwwVar = bsxv.a;
+                        bsxr.a(auio.AUTH_ACCOUNT_BASE_FACTORY_RESET_PROTECTION_SHOWN);
                         return;
                     }
                 }
@@ -433,20 +432,20 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
                 if (intent.getExtras() != null && (bundle = D2dOptions.b(intent.getExtras()).f) != null && bundle.getBoolean("source_not_transferring_new_account")) {
                     preAddAccountChimeraActivity.m.d(new FrpSnapshot(true, false, false));
                 } else if (((KeyguardManager) preAddAccountChimeraActivity.getSystemService("keyguard")).isKeyguardSecure()) {
-                    fkio.d();
+                    fmzd.d();
                     Intent intent2 = new Intent("android.app.action.CONFIRM_DEVICE_CREDENTIAL");
-                    edgl.a(preAddAccountChimeraActivity.getIntent(), intent2);
+                    eftg.a(preAddAccountChimeraActivity.getIntent(), intent2);
                     preAddAccountChimeraActivity.startActivityForResult(intent2, 1);
                     return;
                 }
                 preAddAccountChimeraActivity.m.b(true);
             }
         };
-        dvni dvniVar = vfv.a;
-        handler.postDelayed(runnable, currentTimeMillis < fkkz.f() ? fkkz.f() - currentTimeMillis : 0L);
+        dxyi dxyiVar = xbw.a;
+        handler.postDelayed(runnable, currentTimeMillis < fnbo.f() ? fnbo.f() - currentTimeMillis : 0L);
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i2, int i3, Intent intent) {
         super.onActivityResult(i2, i3, intent);
         if (i2 == 1) {
@@ -461,17 +460,17 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
         }
         if (i2 == 2) {
             if (i3 == -1) {
-                int i4 = ips.a;
+                int i4 = iri.a;
                 r(5);
                 this.n.a(2);
                 return;
             } else if (i3 != 1) {
                 r(3);
-                int i5 = ips.a;
+                int i5 = iri.a;
                 this.m.b(false);
                 return;
             } else {
-                int i6 = ips.a;
+                int i6 = iri.a;
                 r(4);
                 this.m.b(true);
                 return;
@@ -481,157 +480,160 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
             Log.w("Auth", String.format(Locale.US, a.j(i2, "[AddAccount, PreAddAccountActivity] Unrecognized request code: "), new Object[0]));
             return;
         }
-        aaxq B = B();
-        aaxp aaxpVar = new aaxp(i3, this);
-        aqxt aqxtVar = B.a;
+        acxq B = B();
+        acxp acxpVar = new acxp(i3, this);
+        atai ataiVar = B.a;
         final MpCompleteRequest mpCompleteRequest = new MpCompleteRequest(i3);
-        arcy arcyVar = new arcy();
-        arcyVar.c = new Feature[]{azmp.b};
-        arcyVar.a = new arco() { // from class: azna
-            @Override // defpackage.arco
+        atfn atfnVar = new atfn();
+        atfnVar.c = new Feature[]{bbql.b};
+        final bbra bbraVar = (bbra) ataiVar;
+        atfnVar.a = new atfd() { // from class: bbqw
+            @Override // defpackage.atfd
             public final void d(Object obj, Object obj2) {
-                aznd azndVar = new aznd((dfau) obj2);
-                ComplianceOptions complianceOptions = new ComplianceOptions(-1, -1, 0, true);
-                azmw azmwVar = (azmw) ((azms) obj).H();
-                ApiMetadata apiMetadata = new ApiMetadata(complianceOptions);
-                Parcel fr = azmwVar.fr();
-                oto.e(fr, MpCompleteRequest.this);
-                oto.g(fr, azndVar);
-                oto.e(fr, apiMetadata);
-                azmwVar.ft(2, fr);
+                bbqz bbqzVar = new bbqz((dhma) obj2);
+                bbqs bbqsVar = (bbqs) ((bbqo) obj).H();
+                ApiMetadata a = bsxa.a(bbra.this.a);
+                Parcel fE = bbqsVar.fE();
+                qmr.e(fE, mpCompleteRequest);
+                qmr.g(fE, bbqzVar);
+                qmr.e(fE, a);
+                bbqsVar.fG(2, fE);
             }
         };
-        arcyVar.b = false;
-        arcyVar.d = 12602;
-        dfaq iO = ((aqxo) aqxtVar).iO(arcyVar.a());
-        iO.a(aaxpVar);
-        iO.y(aaxpVar);
-        iO.z(aaxpVar);
+        atfnVar.b = false;
+        atfnVar.d = 12602;
+        dhlw jd = ((atad) ataiVar).jd(atfnVar.a());
+        jd.a(acxpVar);
+        jd.y(acxpVar);
+        jd.z(acxpVar);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:29:0x0170  */
     /* JADX WARN: Removed duplicated region for block: B:32:0x0179  */
     /* JADX WARN: Removed duplicated region for block: B:43:0x01d5  */
-    /* JADX WARN: Removed duplicated region for block: B:49:0x0217  */
-    /* JADX WARN: Removed duplicated region for block: B:55:0x029f  */
-    /* JADX WARN: Removed duplicated region for block: B:71:0x02a5  */
-    /* JADX WARN: Removed duplicated region for block: B:82:0x0248  */
+    /* JADX WARN: Removed duplicated region for block: B:49:0x0215  */
+    /* JADX WARN: Removed duplicated region for block: B:55:0x029d  */
+    /* JADX WARN: Removed duplicated region for block: B:71:0x02a3  */
+    /* JADX WARN: Removed duplicated region for block: B:82:0x0246  */
     /* JADX WARN: Removed duplicated region for block: B:89:0x0206  */
     /* JADX WARN: Removed duplicated region for block: B:90:0x01c2  */
-    @Override // defpackage.adko, defpackage.adlg, defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkv, defpackage.afln, defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
     protected final void onCreate(android.os.Bundle r15) {
         /*
-            Method dump skipped, instructions count: 834
+            Method dump skipped, instructions count: 832
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.auth.uiflows.addaccount.PreAddAccountChimeraActivity.onCreate(android.os.Bundle):void");
     }
 
-    @Override // defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onPause() {
         super.onPause();
         Intent intent = getIntent();
-        int i2 = addu.a;
+        int i2 = afdw.a;
         SetupMetric.a("PreAddAccountLoading");
-        addu.a(intent);
+        afdw.a(intent);
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
         Intent intent = getIntent();
-        int i2 = addu.a;
+        int i2 = afdw.a;
         SetupMetric.b("PreAddAccountLoading");
-        addu.a(intent);
+        afdw.a(intent);
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        adfv adfvVar = this.m;
-        Long l = adfvVar.f;
+        affx affxVar = this.m;
+        Long l = affxVar.f;
         if (l != null) {
             bundle.putLong("state.create_time", l.longValue());
         }
-        Boolean bool = adfvVar.a;
+        Boolean bool = affxVar.a;
         if (bool != null) {
             bundle.putBoolean("state.checkin_result", bool.booleanValue());
         }
-        Boolean bool2 = adfvVar.b;
+        Boolean bool2 = affxVar.b;
         if (bool2 != null) {
             bundle.putBoolean("state.challenge_result", bool2.booleanValue());
         }
-        FrpSnapshot frpSnapshot = adfvVar.c;
+        FrpSnapshot frpSnapshot = affxVar.c;
         if (frpSnapshot != null) {
-            bundle.putByteArray("state.frp_snapshot", arxd.n(frpSnapshot));
+            bundle.putByteArray("state.frp_snapshot", atzs.n(frpSnapshot));
         }
-        bundle.putBoolean("state.phenotype_sync", adfvVar.g);
-        bundle.putBoolean("state.is_challenge_started", adfvVar.j);
-        Bundle bundle2 = adfvVar.h;
+        bundle.putBoolean("state.phenotype_sync", affxVar.g);
+        bundle.putBoolean("state.is_challenge_started", affxVar.j);
+        Bundle bundle2 = affxVar.h;
         if (bundle2 != null && !bundle2.isEmpty()) {
-            bundle.putBundle("state.account_seeding_result", adfvVar.h);
-            bundle.putBoolean("state.finish_session_started", adfvVar.i);
+            bundle.putBundle("state.account_seeding_result", affxVar.h);
+            bundle.putBoolean("state.finish_session_started", affxVar.i);
         }
-        bundle.putBoolean("state.has_launched_zt", adfvVar.k.get());
-        Boolean bool3 = adfvVar.d;
+        bundle.putBoolean("state.has_launched_zt", affxVar.k.get());
+        Boolean bool3 = affxVar.d;
         if (bool3 != null) {
             bundle.putBoolean("state.ps_education_required", bool3.booleanValue());
         }
-        Boolean bool4 = adfvVar.e;
+        Boolean bool4 = affxVar.e;
         if (bool4 != null) {
             bundle.putBoolean("state.key_attestation_check_failed", bool4.booleanValue());
         }
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStop() {
         super.onStop();
         Iterator it = this.y.iterator();
         while (it.hasNext()) {
-            ((jtu) it.next()).cancelLoad();
+            ((kaj) it.next()).cancelLoad();
         }
-        fuuw fuuwVar = adhd.f;
-        if (fuuwVar == null) {
-            fvbo.j("lazyInstanceProvider");
-            fuuwVar = null;
+        if (fmuw.a.lK().a()) {
+            Log.w("Auth", "[PreAddAccountChimeraActivity] onStop called. Cancelling Onboarding tasks.");
+            fxqu fxquVar = afhi.h;
+            if (fxquVar == null) {
+                fxxm.j("lazyInstanceProvider");
+                fxquVar = null;
+            }
+            ((ous) fxquVar.a()).close();
         }
-        ((nce) fuuwVar.a()).close();
     }
 
     public final void p(boolean z) {
-        aanp aanpVar = new aanp();
-        if (fkli.c()) {
-            aano aanoVar = acbw.c;
+        acnp acnpVar = new acnp();
+        if (fnbx.c()) {
+            acno acnoVar = aebw.c;
             Boolean bool = this.m.d;
-            aanpVar.d(aanoVar, Boolean.valueOf(bool != null && bool.booleanValue()));
+            acnpVar.d(acnoVar, Boolean.valueOf(bool != null && bool.booleanValue()));
         }
-        aano aanoVar2 = aboz.c;
+        acno acnoVar2 = adoz.c;
         Boolean bool2 = this.m.e;
-        aanpVar.d(aanoVar2, Boolean.valueOf(bool2 != null && bool2.booleanValue()));
+        acnpVar.d(acnoVar2, Boolean.valueOf(bool2 != null && bool2.booleanValue()));
         if (!this.m.a.booleanValue() || !this.m.b.booleanValue()) {
             if (this.m.b.booleanValue()) {
                 Log.w("Auth", "[PreAddAccountChimeraActivity] finish(resultCode, data) called with result=RESULT_ERROR");
-                gD(2, null);
+                gT(2, null);
                 return;
             } else {
-                aanpVar.d(AddAccountController.a, true);
+                acnpVar.d(AddAccountController.a, true);
                 Log.w("Auth", "[PreAddAccountChimeraActivity] finish(resultCode, data) called with result=RESULT_CANCELED");
-                gD(0, new Intent().putExtras(aanpVar.a));
+                gT(0, new Intent().putExtras(acnpVar.a));
                 return;
             }
         }
         Bundle bundle = this.m.h;
         if (bundle != null && !bundle.isEmpty()) {
-            adfv adfvVar = this.m;
-            if (adfvVar.i) {
+            affx affxVar = this.m;
+            if (affxVar.i) {
                 return;
             }
-            adfvVar.i = true;
-            ((AccountManager) getSystemService(AccountManager.class)).finishSession(this.m.h, getContainerActivity(), new AccountManagerCallback() { // from class: adfa
+            affxVar.i = true;
+            ((AccountManager) getSystemService(AccountManager.class)).finishSession(this.m.h, getContainerActivity(), new AccountManagerCallback() { // from class: affc
                 @Override // android.accounts.AccountManagerCallback
                 public final void run(AccountManagerFuture accountManagerFuture) {
                     PreAddAccountChimeraActivity.this.n(accountManagerFuture);
@@ -639,216 +641,217 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
             }, null);
             return;
         }
-        if (!z && bqpv.a(new eijr() { // from class: adfi
-            @Override // defpackage.eijr
-            public final Object a() {
-                return Boolean.valueOf(fnlp.d());
+        if (!z && bsxm.a(new ekww() { // from class: affk
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return Boolean.valueOf(fqdw.d());
             }
         }, "work:zero_touch_config_present", getContentResolver()) && getIntent().getBooleanExtra(i.a, false)) {
             boolean booleanExtra = getIntent().getBooleanExtra(j.a, false);
-            if (bqpv.a(new eijr() { // from class: adez
-                @Override // defpackage.eijr
-                public final Object a() {
-                    return Boolean.valueOf(fnlp.a.a().g());
+            if (bsxm.a(new ekww() { // from class: affb
+                @Override // defpackage.ekww
+                public final Object lK() {
+                    return Boolean.valueOf(fqdw.a.lK().g());
                 }
             }, "ZeroTouchFeature__skip_zero_touch_frp_extra_present", getContentResolver())) {
                 if (!booleanExtra) {
                     booleanExtra = false;
                 }
             }
-            fnlp fnlpVar = fnlp.a;
-            if (!fnlpVar.a().f() || booleanExtra || !this.m.c.c) {
+            fqdw fqdwVar = fqdw.a;
+            if (!fqdwVar.lK().f() || booleanExtra || !this.m.c.c) {
                 if (this.m.k.compareAndSet(false, true)) {
-                    aaxq B = B();
+                    acxq B = B();
                     Log.i("Auth", "[ZeroTouchManagerImpl] Launching ZT flow.");
-                    eijr eijrVar = new eijr() { // from class: aaxm
-                        @Override // defpackage.eijr
-                        public final Object a() {
-                            return Boolean.valueOf(fnlp.d());
+                    ekww ekwwVar = new ekww() { // from class: acxm
+                        @Override // defpackage.ekww
+                        public final Object lK() {
+                            return Boolean.valueOf(fqdw.d());
                         }
                     };
                     Context context = B.c;
-                    if (!bqpv.a(eijrVar, "work:zero_touch_config_present", context.getContentResolver())) {
+                    if (!bsxm.a(ekwwVar, "work:zero_touch_config_present", context.getContentResolver())) {
                         Log.w("Auth", "[ZeroTouchManagerImpl] ZT config not present.");
                         g();
                         return;
                     }
-                    if (!fnlpVar.a().c()) {
-                        Context context2 = ((azne) B.a).a;
-                        assw asswVar = new assw(context2);
+                    if (!fqdwVar.lK().c()) {
+                        Context context2 = ((bbra) B.a).a;
+                        auwq auwqVar = new auwq(context2);
                         DevicePolicyManager devicePolicyManager = (DevicePolicyManager) context2.getSystemService("device_policy");
-                        if (!asqh.e() || context2.getPackageManager().isSafeMode() || devicePolicyManager.isDeviceProvisioned() || devicePolicyManager.isDeviceProvisioningConfigApplied() || !new azns(context2).a(asswVar)) {
+                        if (!auub.e() || context2.getPackageManager().isSafeMode() || devicePolicyManager.isDeviceProvisioned() || devicePolicyManager.isDeviceProvisioningConfigApplied() || !new bbro(context2).a(auwqVar)) {
                             Log.w("Auth", "[ZeroTouchManagerImpl] Device conditions not met.");
                             DevicePolicyManager devicePolicyManager2 = (DevicePolicyManager) context.getSystemService("device_policy");
-                            if (devicePolicyManager2 == null || !devicePolicyManager2.isDeviceProvisioningConfigApplied() || !bqpv.a(new eijr() { // from class: aaxn
-                                @Override // defpackage.eijr
-                                public final Object a() {
-                                    return Boolean.valueOf(fnlp.a.a().e());
+                            if (devicePolicyManager2 == null || !devicePolicyManager2.isDeviceProvisioningConfigApplied() || !bsxm.a(new ekww() { // from class: acxn
+                                @Override // defpackage.ekww
+                                public final Object lK() {
+                                    return Boolean.valueOf(fqdw.a.lK().e());
                                 }
                             }, "ZeroTouchFeature__read_mp_result_in_auth", context.getContentResolver())) {
                                 g();
                                 return;
                             }
                             Log.i("Auth", "ZT flow triggered in suw again. Will try to skip forward to the rest of suw.");
-                            aqxt aqxtVar = B.b;
-                            arcy arcyVar = new arcy();
-                            arcyVar.c = new Feature[]{azmp.e};
-                            arcyVar.a = new arco() { // from class: azng
-                                @Override // defpackage.arco
+                            atai ataiVar = B.b;
+                            atfn atfnVar = new atfn();
+                            atfnVar.c = new Feature[]{bbql.e};
+                            atfnVar.a = new atfd() { // from class: bbrc
+                                @Override // defpackage.atfd
                                 public final void d(Object obj, Object obj2) {
-                                    int i2 = aznn.a;
-                                    aznm aznmVar = new aznm((dfau) obj2);
-                                    azmu azmuVar = (azmu) ((azmt) obj).H();
-                                    Parcel fr = azmuVar.fr();
-                                    oto.g(fr, aznmVar);
-                                    azmuVar.ft(4, fr);
+                                    int i2 = bbrj.a;
+                                    bbri bbriVar = new bbri((dhma) obj2);
+                                    bbqq bbqqVar = (bbqq) ((bbqp) obj).H();
+                                    Parcel fE = bbqqVar.fE();
+                                    qmr.g(fE, bbriVar);
+                                    bbqqVar.fG(4, fE);
                                 }
                             };
-                            arcyVar.b = false;
-                            arcyVar.d = 12609;
-                            ((aqxo) aqxtVar).iO(arcyVar.a()).x(new dfae() { // from class: aaxo
-                                @Override // defpackage.dfae
-                                public final void hr(dfaq dfaqVar) {
-                                    aaxg aaxgVar = aaxg.this;
-                                    if (dfaqVar.m() && ((Integer) dfaqVar.i()).intValue() != Integer.MIN_VALUE) {
-                                        aaxgVar.e(((Integer) dfaqVar.i()).intValue());
+                            atfnVar.b = false;
+                            atfnVar.d = 12609;
+                            ((atad) ataiVar).jd(atfnVar.a()).x(new dhlk() { // from class: acxo
+                                @Override // defpackage.dhlk
+                                public final void hH(dhlw dhlwVar) {
+                                    acxg acxgVar = acxg.this;
+                                    if (dhlwVar.m() && ((Integer) dhlwVar.i()).intValue() != Integer.MIN_VALUE) {
+                                        acxgVar.e(((Integer) dhlwVar.i()).intValue());
                                     } else {
                                         Log.w("Auth", "Failed to retrieve MP result code.");
-                                        aaxgVar.g();
+                                        acxgVar.g();
                                     }
                                 }
                             });
                             return;
                         }
                     }
-                    fecj v = fwcg.a.v();
+                    fgrc v = fyyi.a.v();
                     if (!v.b.L()) {
                         v.U();
                     }
-                    fecp fecpVar = v.b;
-                    fwcg fwcgVar = (fwcg) fecpVar;
-                    fwcgVar.c = 1;
-                    fwcgVar.b |= 1;
-                    if (!fecpVar.L()) {
+                    fgri fgriVar = v.b;
+                    fyyi fyyiVar = (fyyi) fgriVar;
+                    fyyiVar.c = 1;
+                    fyyiVar.b |= 1;
+                    if (!fgriVar.L()) {
                         v.U();
                     }
-                    fecp fecpVar2 = v.b;
-                    fwcg fwcgVar2 = (fwcg) fecpVar2;
-                    fwcgVar2.d = 1;
-                    fwcgVar2.b |= 2;
-                    if (!fecpVar2.L()) {
+                    fgri fgriVar2 = v.b;
+                    fyyi fyyiVar2 = (fyyi) fgriVar2;
+                    fyyiVar2.d = 1;
+                    fyyiVar2.b |= 2;
+                    if (!fgriVar2.L()) {
                         v.U();
                     }
-                    fwcg fwcgVar3 = (fwcg) v.b;
-                    fwcgVar3.e = 1;
-                    fwcgVar3.b |= 4;
-                    fecj v2 = fwch.a.v();
+                    fyyi fyyiVar3 = (fyyi) v.b;
+                    fyyiVar3.e = 1;
+                    fyyiVar3.b |= 4;
+                    fgrc v2 = fyyj.a.v();
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    fwch fwchVar = (fwch) v2.b;
-                    fwchVar.c = 2;
-                    fwchVar.b |= 1;
+                    fyyj fyyjVar = (fyyj) v2.b;
+                    fyyjVar.c = 2;
+                    fyyjVar.b |= 1;
                     if (!v.b.L()) {
                         v.U();
                     }
-                    fwcg fwcgVar4 = (fwcg) v.b;
-                    fwch fwchVar2 = (fwch) v2.Q();
-                    fwchVar2.getClass();
-                    fwcgVar4.g = fwchVar2;
-                    fwcgVar4.b |= 16;
-                    fwcg fwcgVar5 = (fwcg) v.Q();
-                    aqxt aqxtVar2 = B.b;
-                    final ConsentedLoggingRequest consentedLoggingRequest = new ConsentedLoggingRequest(fwcgVar5);
-                    arcy arcyVar2 = new arcy();
-                    arcyVar2.c = new Feature[]{azmp.d};
-                    arcyVar2.a = new arco() { // from class: aznh
-                        @Override // defpackage.arco
+                    fyyi fyyiVar4 = (fyyi) v.b;
+                    fyyj fyyjVar2 = (fyyj) v2.Q();
+                    fyyjVar2.getClass();
+                    fyyiVar4.g = fyyjVar2;
+                    fyyiVar4.b |= 16;
+                    fyyi fyyiVar5 = (fyyi) v.Q();
+                    atai ataiVar2 = B.b;
+                    final ConsentedLoggingRequest consentedLoggingRequest = new ConsentedLoggingRequest(fyyiVar5);
+                    atfn atfnVar2 = new atfn();
+                    atfnVar2.c = new Feature[]{bbql.d};
+                    atfnVar2.a = new atfd() { // from class: bbrd
+                        @Override // defpackage.atfd
                         public final void d(Object obj, Object obj2) {
-                            int i2 = aznn.a;
-                            aznl aznlVar = new aznl((dfau) obj2);
-                            azmu azmuVar = (azmu) ((azmt) obj).H();
-                            Parcel fr = azmuVar.fr();
-                            oto.e(fr, ConsentedLoggingRequest.this);
-                            oto.g(fr, aznlVar);
-                            azmuVar.ft(2, fr);
+                            int i2 = bbrj.a;
+                            bbrh bbrhVar = new bbrh((dhma) obj2);
+                            bbqq bbqqVar = (bbqq) ((bbqp) obj).H();
+                            Parcel fE = bbqqVar.fE();
+                            qmr.e(fE, ConsentedLoggingRequest.this);
+                            qmr.g(fE, bbrhVar);
+                            bbqqVar.fG(2, fE);
                         }
                     };
-                    arcyVar2.b = false;
-                    arcyVar2.d = 12604;
-                    ((aqxo) aqxtVar2).iT(arcyVar2.a());
-                    final aaxl aaxlVar = B.d;
-                    aqxt aqxtVar3 = aaxlVar.b;
-                    arcy arcyVar3 = new arcy();
-                    arcyVar3.c = new Feature[]{azmp.c};
-                    arcyVar3.a = new arco() { // from class: azni
-                        @Override // defpackage.arco
+                    atfnVar2.b = false;
+                    atfnVar2.d = 12604;
+                    ((atad) ataiVar2).ji(atfnVar2.a());
+                    final acxl acxlVar = B.d;
+                    atai ataiVar3 = acxlVar.b;
+                    atfn atfnVar3 = new atfn();
+                    atfnVar3.c = new Feature[]{bbql.c};
+                    atfnVar3.a = new atfd() { // from class: bbre
+                        @Override // defpackage.atfd
                         public final void d(Object obj, Object obj2) {
-                            int i2 = aznn.a;
-                            aznk aznkVar = new aznk((dfau) obj2);
-                            azmu azmuVar = (azmu) ((azmt) obj).H();
-                            Parcel fr = azmuVar.fr();
-                            oto.e(fr, null);
-                            oto.g(fr, aznkVar);
-                            azmuVar.ft(1, fr);
+                            int i2 = bbrj.a;
+                            bbrg bbrgVar = new bbrg((dhma) obj2);
+                            bbqq bbqqVar = (bbqq) ((bbqp) obj).H();
+                            Parcel fE = bbqqVar.fE();
+                            qmr.e(fE, null);
+                            qmr.g(fE, bbrgVar);
+                            bbqqVar.fG(1, fE);
                         }
                     };
-                    arcyVar3.b = false;
-                    arcyVar3.d = 12603;
-                    dfaq f = ((aqxo) aqxtVar3).iO(arcyVar3.a()).f(new dfap() { // from class: aaxh
-                        @Override // defpackage.dfap
-                        public final dfaq a(Object obj) {
+                    atfnVar3.b = false;
+                    atfnVar3.d = 12603;
+                    dhlw f = ((atad) ataiVar3).jd(atfnVar3.a()).f(new dhlv() { // from class: acxh
+                        @Override // defpackage.dhlv
+                        public final dhlw a(Object obj) {
                             if (((LoadModuleResult) obj).a != 0) {
-                                return dfbl.b();
+                                return dhmr.b();
                             }
-                            aaxl aaxlVar2 = aaxl.this;
-                            arcy arcyVar4 = new arcy();
-                            arcyVar4.c = new Feature[]{azmp.a};
-                            arcyVar4.a = new arco() { // from class: azmz
-                                @Override // defpackage.arco
+                            acxl acxlVar2 = acxl.this;
+                            atfn atfnVar4 = new atfn();
+                            atfnVar4.c = new Feature[]{bbql.a};
+                            atai ataiVar4 = acxlVar2.a;
+                            final bbra bbraVar = (bbra) ataiVar4;
+                            atfnVar4.a = new atfd() { // from class: bbqv
+                                @Override // defpackage.atfd
                                 public final void d(Object obj2, Object obj3) {
-                                    aznc azncVar = new aznc((dfau) obj3);
-                                    ComplianceOptions complianceOptions = new ComplianceOptions(-1, -1, 0, true);
-                                    azmw azmwVar = (azmw) ((azms) obj2).H();
-                                    ApiMetadata apiMetadata = new ApiMetadata(complianceOptions);
-                                    Parcel fr = azmwVar.fr();
-                                    oto.e(fr, null);
-                                    oto.g(fr, azncVar);
-                                    oto.e(fr, apiMetadata);
-                                    azmwVar.ft(1, fr);
+                                    bbqy bbqyVar = new bbqy((dhma) obj3);
+                                    bbqs bbqsVar = (bbqs) ((bbqo) obj2).H();
+                                    ApiMetadata a = bsxa.a(bbra.this.a);
+                                    Parcel fE = bbqsVar.fE();
+                                    qmr.e(fE, null);
+                                    qmr.g(fE, bbqyVar);
+                                    qmr.e(fE, a);
+                                    bbqsVar.fG(1, fE);
                                 }
                             };
-                            arcyVar4.b = false;
-                            arcyVar4.d = 12601;
-                            return ((aqxo) aaxlVar2.a).iO(arcyVar4.a());
+                            atfnVar4.b = false;
+                            atfnVar4.d = 12601;
+                            return ((atad) ataiVar4).jd(atfnVar4.a());
                         }
                     });
-                    f.a(new dfab() { // from class: aaxi
-                        @Override // defpackage.dfab
-                        public final void jH() {
-                            aaxg.this.h();
+                    f.a(new dhlh() { // from class: acxi
+                        @Override // defpackage.dhlh
+                        public final void jX() {
+                            acxg.this.h();
                         }
                     });
-                    f.y(new dfah() { // from class: aaxj
-                        @Override // defpackage.dfah
-                        public final void gm(Exception exc) {
+                    f.y(new dhln() { // from class: acxj
+                        @Override // defpackage.dhln
+                        public final void gB(Exception exc) {
                             Log.e("Auth", "API call failed with exception: ".concat(String.valueOf(Log.getStackTraceString(exc))));
-                            aaxg.this.h();
+                            acxg.this.h();
                         }
                     });
-                    f.z(new dfak() { // from class: aaxk
-                        @Override // defpackage.dfak
-                        public final void gn(Object obj) {
+                    f.z(new dhlq() { // from class: acxk
+                        @Override // defpackage.dhlq
+                        public final void gC(Object obj) {
                             ZeroTouchFlowResult zeroTouchFlowResult = (ZeroTouchFlowResult) obj;
                             int i2 = zeroTouchFlowResult.a;
                             Log.w("Auth", a.j(i2, "[ZeroTouchLauncherImpl] onZeroTouchFlowSuccess with status="));
-                            aaxg aaxgVar = aaxg.this;
+                            acxg acxgVar = acxg.this;
                             if (i2 == 1) {
-                                aaxgVar.f(zeroTouchFlowResult.b);
+                                acxgVar.f(zeroTouchFlowResult.b);
                             } else if (i2 != 2) {
-                                aaxgVar.h();
+                                acxgVar.h();
                             } else {
-                                aaxgVar.g();
+                                acxgVar.g();
                             }
                         }
                     });
@@ -857,75 +860,75 @@ public class PreAddAccountChimeraActivity extends adko implements jth, aaxg {
                 return;
             }
         }
-        aanpVar.d(h, Boolean.valueOf(this.m.c.c));
+        acnpVar.d(h, Boolean.valueOf(this.m.c.c));
         Log.w("Auth", "[PreAddAccountChimeraActivity] finish(resultCode, data) called with result=RESULT_OK");
-        gD(-1, new Intent().putExtras(aanpVar.a));
+        gT(-1, new Intent().putExtras(acnpVar.a));
     }
 
     protected final void r(int i2) {
-        dvni dvniVar = vfv.a;
-        if (fkkz.a.a().M()) {
-            ejzh ejzhVar = ejzh.a;
-            fecj v = ejzhVar.v();
-            if ((((ejya) w().b).b & 32768) != 0) {
-                ejzh ejzhVar2 = ((ejya) w().b).p;
-                if (ejzhVar2 != null) {
-                    ejzhVar = ejzhVar2;
+        dxyi dxyiVar = xbw.a;
+        if (fnbo.a.lK().L()) {
+            emms emmsVar = emms.a;
+            fgrc v = emmsVar.v();
+            if ((((emll) w().b).b & 8192) != 0) {
+                emms emmsVar2 = ((emll) w().b).p;
+                if (emmsVar2 != null) {
+                    emmsVar = emmsVar2;
                 }
-                v = (fecj) ejzhVar.iB(5, null);
-                v.X(ejzhVar);
+                v = (fgrc) emmsVar.iQ(5, null);
+                v.X(emmsVar);
             }
-            ejxs ejxsVar = ejxs.a;
-            fecj v2 = ejxsVar.v();
-            ejzh ejzhVar3 = (ejzh) v.b;
-            if ((ejzhVar3.b & 256) != 0) {
-                ejxs ejxsVar2 = ejzhVar3.k;
-                if (ejxsVar2 != null) {
-                    ejxsVar = ejxsVar2;
+            emld emldVar = emld.a;
+            fgrc v2 = emldVar.v();
+            emms emmsVar3 = (emms) v.b;
+            if ((emmsVar3.b & 256) != 0) {
+                emld emldVar2 = emmsVar3.k;
+                if (emldVar2 != null) {
+                    emldVar = emldVar2;
                 }
-                v2 = (fecj) ejxsVar.iB(5, null);
-                v2.X(ejxsVar);
+                v2 = (fgrc) emldVar.iQ(5, null);
+                v2.X(emldVar);
             }
-            fecj v3 = ekcs.a.v();
+            fgrc v3 = emqe.a.v();
             if (!v3.b.L()) {
                 v3.U();
             }
-            fecp fecpVar = v3.b;
-            ekcs ekcsVar = (ekcs) fecpVar;
-            ekcsVar.d = i2 - 1;
-            ekcsVar.b |= 2;
+            fgri fgriVar = v3.b;
+            emqe emqeVar = (emqe) fgriVar;
+            emqeVar.d = i2 - 1;
+            emqeVar.b |= 2;
             boolean z = i2 == 5;
-            if (!fecpVar.L()) {
+            if (!fgriVar.L()) {
                 v3.U();
             }
-            ekcs ekcsVar2 = (ekcs) v3.b;
-            ekcsVar2.b |= 1;
-            ekcsVar2.c = z;
-            ekcs ekcsVar3 = (ekcs) v3.Q();
+            emqe emqeVar2 = (emqe) v3.b;
+            emqeVar2.b |= 1;
+            emqeVar2.c = z;
+            emqe emqeVar3 = (emqe) v3.Q();
             if (!v2.b.L()) {
                 v2.U();
             }
-            ejxs ejxsVar3 = (ejxs) v2.b;
-            ekcsVar3.getClass();
-            ejxsVar3.c = ekcsVar3;
-            ejxsVar3.b |= 2;
+            emld emldVar3 = (emld) v2.b;
+            emqeVar3.getClass();
+            emldVar3.c = emqeVar3;
+            emldVar3.b |= 2;
             if (!v.b.L()) {
                 v.U();
             }
-            ejzh ejzhVar4 = (ejzh) v.b;
-            ejxs ejxsVar4 = (ejxs) v2.Q();
-            ejxsVar4.getClass();
-            ejzhVar4.k = ejxsVar4;
-            ejzhVar4.b |= 256;
-            fecj w = w();
-            ejzh ejzhVar5 = (ejzh) v.Q();
+            emms emmsVar4 = (emms) v.b;
+            emld emldVar4 = (emld) v2.Q();
+            emldVar4.getClass();
+            emmsVar4.k = emldVar4;
+            emmsVar4.b |= 256;
+            fgrc w = w();
+            emms emmsVar5 = (emms) v.Q();
             if (!w.b.L()) {
                 w.U();
             }
-            ejya ejyaVar = (ejya) w.b;
-            ejzhVar5.getClass();
-            ejyaVar.p = ejzhVar5;
-            ejyaVar.b |= 32768;
+            emll emllVar = (emll) w.b;
+            emmsVar5.getClass();
+            emllVar.p = emmsVar5;
+            emllVar.b |= 8192;
         }
     }
 }

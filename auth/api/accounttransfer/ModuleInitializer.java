@@ -1,22 +1,22 @@
 package com.google.android.gms.auth.api.accounttransfer;
 
 import android.content.Intent;
-import defpackage.anya;
-import defpackage.asng;
-import defpackage.eihv;
-import defpackage.eihy;
+import defpackage.apzs;
+import defpackage.aura;
+import defpackage.ekva;
+import defpackage.ekvd;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ModuleInitializer extends anya {
+public class ModuleInitializer extends apzs {
     protected static final String[] a = {"com.google.android.gms.auth.api.accounttransfer.PurgeAccountTransferDataService"};
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        eihy eihyVar = new eihy("; ");
-        eihv eihvVar = new eihv(eihyVar, eihyVar);
+        ekvd ekvdVar = new ekvd("; ");
+        ekva ekvaVar = new ekva(ekvdVar, ekvdVar);
         String[] strArr = a;
-        eihvVar.f(strArr);
-        asng.H(this, strArr[0], true);
+        ekvaVar.f(strArr);
+        aura.H(this, strArr[0], true);
     }
 }

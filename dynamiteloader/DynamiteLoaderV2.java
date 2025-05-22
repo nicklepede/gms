@@ -5,18 +5,18 @@ import android.database.Cursor;
 import android.os.Parcelable;
 import android.util.Log;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.arxa;
-import defpackage.arxd;
-import defpackage.asnp;
-import defpackage.asnx;
-import defpackage.azht;
-import defpackage.azix;
-import defpackage.azjd;
+import defpackage.atzp;
+import defpackage.atzs;
+import defpackage.aurj;
+import defpackage.aurr;
+import defpackage.bblp;
+import defpackage.bbmt;
+import defpackage.bbmz;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class DynamiteLoaderV2 extends azjd {
+public class DynamiteLoaderV2 extends bbmz {
     private final int a;
     private DynamiteFlags b;
 
@@ -31,8 +31,8 @@ public class DynamiteLoaderV2 extends azjd {
         if (this.b == null && (columnIndex = cursor.getColumnIndex("dynamiteFlags")) >= 0 && (blob = cursor.getBlob(columnIndex)) != null) {
             Parcelable.Creator creator = DynamiteFlags.CREATOR;
             try {
-                dynamiteFlags = (DynamiteFlags) arxd.a(blob, DynamiteFlags.CREATOR);
-            } catch (arxa e) {
+                dynamiteFlags = (DynamiteFlags) atzs.a(blob, DynamiteFlags.CREATOR);
+            } catch (atzp e) {
                 Log.w("DynamiteFlags", "Failed to parse DynamiteFlags", e);
                 dynamiteFlags = null;
             }
@@ -46,19 +46,19 @@ public class DynamiteLoaderV2 extends azjd {
         return this.b;
     }
 
-    @Override // defpackage.azje
-    public azht loadModule(azht azhtVar, String str, byte[] bArr) {
-        azht loadModule2;
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+    @Override // defpackage.bbna
+    public bblp loadModule(bblp bblpVar, String str, byte[] bArr) {
+        bblp loadModule2;
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         if (context == null) {
             return new ObjectWrapper(null);
         }
-        Cursor d = azix.d(context.getApplicationContext(), str, false, 0L);
+        Cursor d = bbmt.d(context.getApplicationContext(), str, false, 0L);
         if (d != null) {
             try {
                 if (d.moveToFirst()) {
                     if (Arrays.equals(bArr, d.getBlob(1))) {
-                        loadModule2 = loadModule2(azhtVar, str, d.getInt(0), new ObjectWrapper(d));
+                        loadModule2 = loadModule2(bblpVar, str, d.getInt(0), new ObjectWrapper(d));
                     } else {
                         Log.e("DynamiteLoaderV2", "Module configuration has changed.");
                         loadModule2 = new ObjectWrapper(null);
@@ -85,17 +85,17 @@ public class DynamiteLoaderV2 extends azjd {
         return objectWrapper;
     }
 
-    @Override // defpackage.azje
-    public azht loadModule2(azht azhtVar, String str, int i, azht azhtVar2) {
-        Context context = (Context) ObjectWrapper.a(azhtVar);
+    @Override // defpackage.bbna
+    public bblp loadModule2(bblp bblpVar, String str, int i, bblp bblpVar2) {
+        Context context = (Context) ObjectWrapper.a(bblpVar);
         if (context == null) {
             return new ObjectWrapper(null);
         }
         try {
-            return loadModule2NoCrashUtils(azhtVar, str, i, azhtVar2);
+            return loadModule2NoCrashUtils(bblpVar, str, i, bblpVar2);
         } catch (Throwable th) {
-            if (!asnp.d()) {
-                asnx.f(context, th);
+            if (!aurj.d()) {
+                aurr.f(context, th);
             }
             throw th;
         }
@@ -112,13 +112,13 @@ public class DynamiteLoaderV2 extends azjd {
      */
     /* JADX WARN: Code restructure failed: missing block: B:110:0x0171, code lost:
     
-        defpackage.pwa.a().a(r4, 101);
+        defpackage.rpe.a().a(r4, 101);
      */
     /* JADX WARN: Code restructure failed: missing block: B:117:0x015e, code lost:
     
         r21 = r7.j(r0);
         r0 = r9.d;
-        r19 = defpackage.anzk.a(r4);
+        r19 = defpackage.aqbc.a(r4);
      */
     /* JADX WARN: Code restructure failed: missing block: B:118:0x0168, code lost:
     
@@ -146,7 +146,7 @@ public class DynamiteLoaderV2 extends azjd {
      */
     /* JADX WARN: Code restructure failed: missing block: B:128:0x0198, code lost:
     
-        defpackage.pwa.a().b(r4, 118, r21.e());
+        defpackage.rpe.a().b(r4, 118, r21.e());
      */
     /* JADX WARN: Code restructure failed: missing block: B:130:0x01ab, code lost:
     
@@ -154,7 +154,7 @@ public class DynamiteLoaderV2 extends azjd {
      */
     /* JADX WARN: Code restructure failed: missing block: B:131:0x01ad, code lost:
     
-        r2 = defpackage.pwa.a();
+        r2 = defpackage.rpe.a();
      */
     /* JADX WARN: Code restructure failed: missing block: B:132:0x01b6, code lost:
     
@@ -175,7 +175,7 @@ public class DynamiteLoaderV2 extends azjd {
     /* JADX WARN: Code restructure failed: missing block: B:136:0x01c4, code lost:
     
         r2 = android.os.SystemClock.uptimeMillis();
-        r7 = defpackage.puz.c().a(r19, r7, r21, null, r0).b;
+        r7 = defpackage.rod.c().a(r19, r7, r21, null, r0).b;
      */
     /* JADX WARN: Code restructure failed: missing block: B:139:0x01de, code lost:
     
@@ -221,17 +221,17 @@ public class DynamiteLoaderV2 extends azjd {
     /* JADX WARN: Removed duplicated region for block: B:158:0x0293  */
     /* JADX WARN: Removed duplicated region for block: B:17:0x0085  */
     /* JADX WARN: Removed duplicated region for block: B:19:0x008b  */
-    @Override // defpackage.azje
+    @Override // defpackage.bbna
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public defpackage.azht loadModule2NoCrashUtils(defpackage.azht r25, java.lang.String r26, int r27, defpackage.azht r28) {
+    public defpackage.bblp loadModule2NoCrashUtils(defpackage.bblp r25, java.lang.String r26, int r27, defpackage.bblp r28) {
         /*
             Method dump skipped, instructions count: 684
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.dynamiteloader.DynamiteLoaderV2.loadModule2NoCrashUtils(azht, java.lang.String, int, azht):azht");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.dynamiteloader.DynamiteLoaderV2.loadModule2NoCrashUtils(bblp, java.lang.String, int, bblp):bblp");
     }
 
     public DynamiteLoaderV2(int i) {

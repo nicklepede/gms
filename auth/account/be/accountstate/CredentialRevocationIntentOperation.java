@@ -8,32 +8,32 @@ import android.content.SharedPreferences;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.dvni;
-import defpackage.eiig;
-import defpackage.fkkz;
-import defpackage.iln;
-import defpackage.vfn;
-import defpackage.vfv;
+import defpackage.dxyi;
+import defpackage.ekvl;
+import defpackage.fnbo;
+import defpackage.ind;
+import defpackage.xbo;
+import defpackage.xbw;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class CredentialRevocationIntentOperation extends IntentOperation {
     private static BroadcastReceiver a;
-    private vfn b;
+    private xbo b;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class ConnectivityActionBroadcastReceiver extends TracingBroadcastReceiver {
         public ConnectivityActionBroadcastReceiver() {
             super("auth_account");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
+        public final void jP(Context context, Intent intent) {
             Intent startIntent;
             String action = intent.getAction();
             if (action == null || !action.equals("android.net.conn.CONNECTIVITY_CHANGE") || (startIntent = IntentOperation.getStartIntent(context, CredentialRevocationIntentOperation.class, "com.google.android.gms.auth.account.be.accountstate.revoke_scheduled_credentials_action")) == null) {
@@ -59,7 +59,7 @@ public class CredentialRevocationIntentOperation extends IntentOperation {
         try {
             Context applicationContext = getApplicationContext();
             BroadcastReceiver broadcastReceiver = a;
-            eiig.x(broadcastReceiver);
+            ekvl.y(broadcastReceiver);
             applicationContext.unregisterReceiver(broadcastReceiver);
         } catch (IllegalArgumentException unused) {
         }
@@ -79,7 +79,7 @@ public class CredentialRevocationIntentOperation extends IntentOperation {
      */
     /* JADX WARN: Code restructure failed: missing block: B:48:0x00df, code lost:
     
-        r4 = defpackage.vix.b(r4);
+        r4 = defpackage.xey.b(r4);
      */
     /* JADX WARN: Code restructure failed: missing block: B:49:0x00ec, code lost:
     
@@ -107,14 +107,14 @@ public class CredentialRevocationIntentOperation extends IntentOperation {
     
         android.util.Log.w("Auth", java.lang.String.format(java.util.Locale.US, "[RevokeCredentialOperation] Device revocation failed.", new java.lang.Object[0]));
         r12.a("FAILED");
-        r0 = defpackage.abau.BAD_REQUEST;
+        r0 = defpackage.adau.BAD_REQUEST;
      */
     /* JADX WARN: Code restructure failed: missing block: B:56:0x0133, code lost:
     
         r12.a("SUCCESS");
         android.util.Log.w("Auth", "[RevokeCredentialOperation] revoked token.");
-        defpackage.vba.r(2401);
-        r0 = defpackage.abau.SUCCESS;
+        defpackage.wxa.r(2401);
+        r0 = defpackage.adau.SUCCESS;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -143,7 +143,7 @@ public class CredentialRevocationIntentOperation extends IntentOperation {
             a = new ConnectivityActionBroadcastReceiver();
             IntentFilter intentFilter = new IntentFilter();
             intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
-            iln.b(getApplicationContext(), a, intentFilter, 2);
+            ind.b(getApplicationContext(), a, intentFilter, 2);
         }
     }
 
@@ -171,8 +171,8 @@ public class CredentialRevocationIntentOperation extends IntentOperation {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         char c;
-        dvni dvniVar = vfv.a;
-        if (fkkz.l()) {
+        dxyi dxyiVar = xbw.a;
+        if (fnbo.l()) {
             String action = intent.getAction();
             if (action == null) {
                 Log.w("Auth", String.format(Locale.US, "[CredentialRevocationIntentOperation] Received null action: %s", null));

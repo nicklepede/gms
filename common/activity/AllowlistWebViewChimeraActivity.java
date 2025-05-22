@@ -5,17 +5,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import com.google.android.chimera.WebView;
 import com.google.android.chimera.android.Activity;
-import defpackage.aqwp;
-import defpackage.aqwq;
+import defpackage.asze;
+import defpackage.aszf;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class AllowlistWebViewChimeraActivity extends Activity {
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         String str;
         super.onCreate(bundle);
-        aqwp aqwpVar = new aqwp();
+        asze aszeVar = new asze();
         Intent intent = getIntent();
         if (intent != null) {
             Uri data = intent.getData();
@@ -23,7 +23,7 @@ public final class AllowlistWebViewChimeraActivity extends Activity {
         } else {
             str = null;
         }
-        if (str != null && !aqwpVar.a(str)) {
+        if (str != null && !aszeVar.a(str)) {
             setResult(0);
             finish();
             return;
@@ -35,7 +35,7 @@ public final class AllowlistWebViewChimeraActivity extends Activity {
         if (data2 != null) {
             webView.loadUrl(data2.toString());
         }
-        webView.setWebViewClient(new aqwq());
+        webView.setWebViewClient(new aszf());
         setResult(-1);
     }
 }

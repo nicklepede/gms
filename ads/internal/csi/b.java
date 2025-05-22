@@ -16,7 +16,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
 public final class b {
@@ -67,7 +67,7 @@ public final class b {
         }
         if (!this.h.get()) {
             com.google.android.gms.ads.internal.c.e();
-            m.j(this.e, this.f, uri);
+            m.k(this.e, this.f, uri);
             return;
         }
         File file = this.i;

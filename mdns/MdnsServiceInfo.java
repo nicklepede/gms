@@ -1,23 +1,24 @@
 package com.google.android.gms.mdns;
 
+import android.net.Network;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.mdns.MdnsServiceInfo;
-import defpackage.arxc;
-import defpackage.cdby;
-import defpackage.cddo;
-import defpackage.eiho;
-import defpackage.eirn;
-import defpackage.eite;
-import defpackage.eitj;
-import defpackage.eits;
-import defpackage.eivv;
-import defpackage.eixf;
-import defpackage.eizo;
-import defpackage.enmp;
-import defpackage.enng;
+import defpackage.atzr;
+import defpackage.cfky;
+import defpackage.cfmn;
+import defpackage.ekut;
+import defpackage.eles;
+import defpackage.elgj;
+import defpackage.elgo;
+import defpackage.elgx;
+import defpackage.elja;
+import defpackage.elkk;
+import defpackage.elmt;
+import defpackage.eqaj;
+import defpackage.eqba;
 import java.net.Inet4Address;
 import java.net.Inet6Address;
 import java.net.UnknownHostException;
@@ -29,7 +30,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MdnsServiceInfo extends AbstractSafeParcelable {
     public final String c;
@@ -42,14 +43,15 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
     public final int j;
     final List k;
     public final List l;
-    public final eits m;
+    public final Network m;
+    public final elgx n;
     public static final Charset a = Charset.forName("us-ascii");
     public static final Charset b = Charset.forName("utf-8");
-    public static final Parcelable.Creator CREATOR = new cdby();
+    public static final Parcelable.Creator CREATOR = new cfky();
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class TextEntry extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new cddo();
+        public static final Parcelable.Creator CREATOR = new cfmn();
         public final String a;
         private final byte[] b;
 
@@ -62,7 +64,7 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
             if (length == 0) {
                 return null;
             }
-            int a = enng.a(bArr, (byte) 61);
+            int a = eqba.a(bArr, (byte) 61);
             if (a < 0) {
                 return new TextEntry(new String(bArr, MdnsServiceInfo.a), "");
             }
@@ -98,10 +100,10 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             String str = this.a;
-            int a = arxc.a(parcel);
-            arxc.v(parcel, 1, str, false);
-            arxc.i(parcel, 2, b(), false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.v(parcel, 1, str, false);
+            atzr.i(parcel, 2, b(), false);
+            atzr.c(parcel, a);
         }
 
         public TextEntry(String str, byte[] bArr) {
@@ -115,36 +117,37 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public MdnsServiceInfo(java.lang.String r15, java.lang.String[] r16, java.util.List r17, java.lang.String[] r18, int r19, java.lang.String r20, java.lang.String r21, java.util.List r22, java.util.List r23, int r24) {
+    public MdnsServiceInfo(java.lang.String r16, java.lang.String[] r17, java.util.List r18, java.lang.String[] r19, int r20, java.lang.String r21, java.lang.String r22, java.util.List r23, java.util.List r24, int r25) {
         /*
-            r14 = this;
-            if (r20 == 0) goto L7
-            eitj r0 = defpackage.eitj.l(r20)
+            r15 = this;
+            if (r21 == 0) goto L7
+            elgo r0 = defpackage.elgo.l(r21)
             goto Lb
         L7:
-            int r0 = defpackage.eitj.d
-            eitj r0 = defpackage.ejcb.a
+            int r0 = defpackage.elgo.d
+            elgo r0 = defpackage.elpg.a
         Lb:
             r12 = r0
-            if (r21 == 0) goto L13
-            eitj r0 = defpackage.eitj.l(r21)
+            if (r22 == 0) goto L13
+            elgo r0 = defpackage.elgo.l(r22)
             goto L15
         L13:
-            eitj r0 = defpackage.ejcb.a
+            elgo r0 = defpackage.elpg.a
         L15:
             r13 = r0
-            r7 = 0
             r8 = 0
-            r1 = r14
-            r2 = r15
-            r3 = r16
-            r4 = r17
-            r5 = r18
-            r6 = r19
-            r9 = r22
-            r10 = r23
-            r11 = r24
-            r1.<init>(r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13)
+            r14 = 0
+            r7 = 0
+            r1 = r15
+            r2 = r16
+            r3 = r17
+            r4 = r18
+            r5 = r19
+            r6 = r20
+            r9 = r23
+            r10 = r24
+            r11 = r25
+            r1.<init>(r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14)
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.mdns.MdnsServiceInfo.<init>(java.lang.String, java.lang.String[], java.util.List, java.lang.String[], int, java.lang.String, java.lang.String, java.util.List, java.util.List, int):void");
@@ -160,17 +163,17 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
 
     @Deprecated
     public final String b() {
-        return (String) eivv.o(this.k, null);
+        return (String) elja.o(this.k, null);
     }
 
     @Deprecated
     public final String c() {
-        return (String) eivv.o(this.l, null);
+        return (String) elja.o(this.l, null);
     }
 
     public final /* synthetic */ Inet6Address d(String str) {
         int i;
-        Inet6Address inet6Address = (Inet6Address) enmp.b(str);
+        Inet6Address inet6Address = (Inet6Address) eqaj.b(str);
         if (!inet6Address.isLinkLocalAddress() || (i = this.j) <= 0) {
             return inet6Address;
         }
@@ -182,11 +185,11 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
     }
 
     public final List e() {
-        return eixf.h(this.k, new eiho() { // from class: cdbx
-            @Override // defpackage.eiho
+        return elkk.h(this.k, new ekut() { // from class: cfkx
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 Charset charset = MdnsServiceInfo.a;
-                return (Inet4Address) enmp.b((String) obj);
+                return (Inet4Address) eqaj.b((String) obj);
             }
         });
     }
@@ -196,33 +199,34 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
     }
 
     public final byte[] g(String str) {
-        return (byte[]) this.m.get(str.toLowerCase(Locale.ENGLISH));
+        return (byte[]) this.n.get(str.toLowerCase(Locale.ENGLISH));
     }
 
     public final String toString() {
-        return String.format(Locale.ROOT, "Name: %s, subtypes: %s, ips: %s, port: %d, texts: %s", this.c, TextUtils.join(",", this.e), TextUtils.join(",", eirn.f(this.k, this.l)), Integer.valueOf(this.g), TextUtils.join(",", this.h));
+        return String.format(Locale.ROOT, "Name: %s, subtypes: %s, ips: %s, port: %d, texts: %s, network: %s", this.c, TextUtils.join(",", this.e), TextUtils.join(",", eles.f(this.k, this.l)), Integer.valueOf(this.g), TextUtils.join(",", this.h), this.m);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.c;
-        int a2 = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.w(parcel, 3, this.d, false);
-        arxc.x(parcel, 4, f(), false);
-        arxc.w(parcel, 5, this.f, false);
-        arxc.o(parcel, 6, this.g);
-        arxc.v(parcel, 7, b(), false);
-        arxc.v(parcel, 8, c(), false);
-        arxc.x(parcel, 9, this.h, false);
-        arxc.y(parcel, 10, this.i, false);
-        arxc.o(parcel, 11, this.j);
-        arxc.x(parcel, 12, this.k, false);
-        arxc.x(parcel, 13, this.l, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.w(parcel, 3, this.d, false);
+        atzr.x(parcel, 4, f(), false);
+        atzr.w(parcel, 5, this.f, false);
+        atzr.o(parcel, 6, this.g);
+        atzr.v(parcel, 7, b(), false);
+        atzr.v(parcel, 8, c(), false);
+        atzr.x(parcel, 9, this.h, false);
+        atzr.y(parcel, 10, this.i, false);
+        atzr.o(parcel, 11, this.j);
+        atzr.x(parcel, 12, this.k, false);
+        atzr.x(parcel, 13, this.l, false);
+        atzr.t(parcel, 14, this.m, i, false);
+        atzr.c(parcel, a2);
     }
 
-    public MdnsServiceInfo(String str, String[] strArr, List list, String[] strArr2, int i, String str2, String str3, List list2, List list3, int i2, List list4, List list5) {
+    public MdnsServiceInfo(String str, String[] strArr, List list, String[] strArr2, int i, String str2, String str3, List list2, List list3, int i2, List list4, List list5, Network network) {
         this.c = str;
         this.d = strArr;
         ArrayList arrayList = new ArrayList();
@@ -233,11 +237,11 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
         this.f = strArr2;
         this.g = i;
         if (str2 != null && list4.isEmpty()) {
-            list4 = eitj.l(str2);
+            list4 = elgo.l(str2);
         }
         this.k = list4;
         if (str3 != null && list5.isEmpty()) {
-            list5 = eitj.l(str3);
+            list5 = elgo.l(str3);
         }
         this.l = list5;
         ArrayList arrayList2 = new ArrayList();
@@ -248,7 +252,7 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
         List<TextEntry> arrayList3 = list3 == null ? null : new ArrayList(list3);
         this.i = arrayList3;
         if (arrayList3 == null) {
-            eite e = eitj.e(arrayList2.size());
+            elgj e = elgo.e(arrayList2.size());
             Iterator it = arrayList2.iterator();
             while (it.hasNext()) {
                 TextEntry a2 = TextEntry.a(((String) it.next()).getBytes(b));
@@ -258,14 +262,15 @@ public class MdnsServiceInfo extends AbstractSafeParcelable {
             }
             arrayList3 = e.g();
         }
-        HashMap k = eizo.k(arrayList3.size());
+        HashMap k = elmt.k(arrayList3.size());
         for (TextEntry textEntry : arrayList3) {
             String lowerCase = textEntry.a.toLowerCase(Locale.ENGLISH);
             if (!k.containsKey(lowerCase)) {
                 k.put(lowerCase, textEntry.b());
             }
         }
-        this.m = eits.k(k);
+        this.n = elgx.k(k);
         this.j = i2;
+        this.m = network;
     }
 }

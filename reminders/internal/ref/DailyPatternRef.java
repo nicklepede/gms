@@ -5,12 +5,12 @@ import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.DailyPattern;
 import com.google.android.gms.reminders.model.DailyPatternEntity;
 import com.google.android.gms.reminders.model.Time;
-import defpackage.cxeb;
-import defpackage.cxeg;
+import defpackage.cznx;
+import defpackage.czoc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class DailyPatternRef extends cxeb implements DailyPattern {
+public class DailyPatternRef extends cznx implements DailyPattern {
     private boolean f;
     private TimeRef g;
 
@@ -55,7 +55,7 @@ public class DailyPatternRef extends cxeb implements DailyPattern {
         return 0;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof DailyPattern)) {
             return false;
@@ -66,18 +66,18 @@ public class DailyPatternRef extends cxeb implements DailyPattern {
         return DailyPatternEntity.e(this, (DailyPattern) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return DailyPatternEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new DailyPatternEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxeg.a(new DailyPatternEntity(this), parcel, i);
+        czoc.a(new DailyPatternEntity(this), parcel, i);
     }
 }

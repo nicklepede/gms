@@ -16,87 +16,87 @@ import com.google.android.gms.R;
 import com.google.android.gms.car.compat.TracingBroadcastReceiver;
 import com.google.android.gms.car.libs.cakewalk.bottomsheets.BottomSheetView;
 import com.google.android.gms.carsetup.setup.PreSetupActivityImpl;
-import defpackage.akrt;
-import defpackage.akyp;
-import defpackage.albn;
-import defpackage.aloy;
-import defpackage.alwq;
-import defpackage.alww;
-import defpackage.alxd;
-import defpackage.alxl;
-import defpackage.alxm;
+import defpackage.amte;
+import defpackage.anaa;
+import defpackage.ancy;
+import defpackage.anqj;
+import defpackage.anyb;
+import defpackage.anyh;
+import defpackage.anyo;
+import defpackage.anyw;
+import defpackage.anyx;
 import defpackage.bp;
-import defpackage.byhr;
+import defpackage.caqj;
 import defpackage.dg;
-import defpackage.eiig;
-import defpackage.ejhh;
-import defpackage.elxv;
-import defpackage.elxw;
-import defpackage.flsb;
-import defpackage.iln;
-import defpackage.qet;
+import defpackage.ekvl;
+import defpackage.eluq;
+import defpackage.eolj;
+import defpackage.eolk;
+import defpackage.fojn;
+import defpackage.ind;
+import defpackage.rxx;
 import j$.util.Optional;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class PreSetupActivityImpl extends qet implements alxl, alxd {
-    public static final ejhh j = albn.a("CAR.SETUP.FRX");
-    public static final Intent k = new Intent("com.google.android.gms.carsetup.setup.PreSetupActivityImpl.ACTION_FORCE_FINISH").setPackage(akyp.e.getPackageName());
+public class PreSetupActivityImpl extends rxx implements anyw, anyo {
+    public static final eluq j = ancy.a("CAR.SETUP.FRX");
+    public static final Intent k = new Intent("com.google.android.gms.carsetup.setup.PreSetupActivityImpl.ACTION_FORCE_FINISH").setPackage(anaa.e.getPackageName());
     static final IntentFilter l = new IntentFilter("com.google.android.gms.carsetup.setup.PreSetupActivityImpl.ACTION_FORCE_FINISH");
     static final IntentFilter m = new IntentFilter("android.hardware.usb.action.USB_ACCESSORY_DETACHED");
-    aloy n;
-    public alxm o;
+    anqj n;
+    public anyx o;
     private Handler p;
     private Intent q = null;
     private TracingBroadcastReceiver r;
     private TracingBroadcastReceiver s;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class ForceFinishRequestReceiver extends TracingBroadcastReceiver {
         public ForceFinishRequestReceiver() {
             super("car_setup");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
-            PreSetupActivityImpl.j.h().ah(2875).x("Request PreSetup force finish");
+        public final void jP(Context context, Intent intent) {
+            PreSetupActivityImpl.j.h().ai(2879).x("Request PreSetup force finish");
             PreSetupActivityImpl preSetupActivityImpl = PreSetupActivityImpl.this;
-            eiig.x(preSetupActivityImpl.o);
-            alxm alxmVar = preSetupActivityImpl.o;
-            if (alxmVar.d) {
+            ekvl.y(preSetupActivityImpl.o);
+            anyx anyxVar = preSetupActivityImpl.o;
+            if (anyxVar.d) {
                 return;
             }
-            alxmVar.c.a(elxw.FRX_PRESETUP_EXIT_CONDITIONS, elxv.bZ);
-            alxmVar.a();
+            anyxVar.c.a(eolk.FRX_PRESETUP_EXIT_CONDITIONS, eolj.bZ);
+            anyxVar.a();
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     class UsbDisconnectReceiver extends TracingBroadcastReceiver {
         public UsbDisconnectReceiver() {
             super("car_setup");
         }
 
         @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-        public final void jz(Context context, Intent intent) {
-            PreSetupActivityImpl.j.h().ah(2876).x("Received USB disconnect");
+        public final void jP(Context context, Intent intent) {
+            PreSetupActivityImpl.j.h().ai(2880).x("Received USB disconnect");
             PreSetupActivityImpl preSetupActivityImpl = PreSetupActivityImpl.this;
-            eiig.x(preSetupActivityImpl.o);
-            alxm alxmVar = preSetupActivityImpl.o;
-            if (alxmVar.d) {
+            ekvl.y(preSetupActivityImpl.o);
+            anyx anyxVar = preSetupActivityImpl.o;
+            if (anyxVar.d) {
                 return;
             }
-            alxmVar.c.a(elxw.FRX_PRESETUP_GENERAL, elxv.po);
+            anyxVar.c.a(eolk.FRX_PRESETUP_GENERAL, eolj.po);
         }
     }
 
-    @Override // defpackage.alxd
-    public final alxm a() {
-        eiig.x(this.o);
+    @Override // defpackage.anyo
+    public final anyx a() {
+        ekvl.y(this.o);
         return this.o;
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final void k() {
         TracingBroadcastReceiver tracingBroadcastReceiver = this.r;
         if (tracingBroadcastReceiver != null) {
@@ -105,7 +105,7 @@ public class PreSetupActivityImpl extends qet implements alxl, alxd {
         }
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final void l() {
         TracingBroadcastReceiver tracingBroadcastReceiver = this.s;
         if (tracingBroadcastReceiver != null) {
@@ -114,7 +114,7 @@ public class PreSetupActivityImpl extends qet implements alxl, alxd {
         }
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final void m() {
         getWindow().clearFlags(2621568);
         Handler handler = this.p;
@@ -124,26 +124,26 @@ public class PreSetupActivityImpl extends qet implements alxl, alxd {
         }
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final void n() {
         getWindow().addFlags(2621568);
         if (this.p != null) {
-            j.j().ah(2883).x("Dismissal already scheduled");
+            j.j().ai(2887).x("Dismissal already scheduled");
         } else {
-            byhr byhrVar = new byhr(Looper.getMainLooper());
-            this.p = byhrVar;
-            byhrVar.postDelayed(new Runnable() { // from class: alwp
+            caqj caqjVar = new caqj(Looper.getMainLooper());
+            this.p = caqjVar;
+            caqjVar.postDelayed(new Runnable() { // from class: anya
                 @Override // java.lang.Runnable
                 public final void run() {
-                    PreSetupActivityImpl.j.i().ah(2878).x("Critical error: user didn't unlock to proceed within 30s.");
+                    PreSetupActivityImpl.j.i().ai(2882).x("Critical error: user didn't unlock to proceed within 30s.");
                     PreSetupActivityImpl preSetupActivityImpl = PreSetupActivityImpl.this;
-                    eiig.x(preSetupActivityImpl.o);
-                    alxm alxmVar = preSetupActivityImpl.o;
-                    if (alxmVar.d) {
+                    ekvl.y(preSetupActivityImpl.o);
+                    anyx anyxVar = preSetupActivityImpl.o;
+                    if (anyxVar.d) {
                         return;
                     }
-                    alxmVar.c.a(elxw.FRX_PRESETUP_EXIT_CONDITIONS, elxv.pn);
-                    alxmVar.a();
+                    anyxVar.c.a(eolk.FRX_PRESETUP_EXIT_CONDITIONS, eolj.pn);
+                    anyxVar.a();
                 }
             }, 30000L);
         }
@@ -153,93 +153,93 @@ public class PreSetupActivityImpl extends qet implements alxl, alxd {
         }
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final void o() {
-        akrt akrtVar = new alwq(this).a;
-        akrtVar.k(akrtVar.g() + 1);
+        amte amteVar = new anyb(this).a;
+        amteVar.k(amteVar.g() + 1);
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onBackPressed() {
-        eiig.x(this.o);
-        alxm alxmVar = this.o;
-        if (alxmVar.d) {
+        ekvl.y(this.o);
+        anyx anyxVar = this.o;
+        if (anyxVar.d) {
             return;
         }
-        alxmVar.c.a(elxw.FRX_PRESETUP_EXIT_CONDITIONS, elxv.g);
-        alxmVar.a();
+        anyxVar.c.a(eolk.FRX_PRESETUP_EXIT_CONDITIONS, eolj.g);
+        anyxVar.a();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        ejhh ejhhVar = j;
-        ejhhVar.h().ah(2879).x("PreSetupActivity:onCreate");
-        if (flsb.d() && new alwq(this).a.e("DONT_SHOW_AGAIN_SETTING", false)) {
-            ejhhVar.h().ah(2880).x("Not showing PreSetupActivity: user has selected 'Don't show again'");
+        eluq eluqVar = j;
+        eluqVar.h().ai(2883).x("PreSetupActivity:onCreate");
+        if (fojn.c() && new anyb(this).a.e("DONT_SHOW_AGAIN_SETTING", false)) {
+            eluqVar.h().ai(2884).x("Not showing PreSetupActivity: user has selected 'Don't show again'");
             finish();
             return;
         }
         overridePendingTransition(0, 0);
-        eiig.b(getIntent().hasExtra("PreSetup.AA_SUPPORT_RESULT"), "Invalid intent: missing AaSupportedResult extra");
+        ekvl.b(getIntent().hasExtra("PreSetup.AA_SUPPORT_RESULT"), "Invalid intent: missing AaSupportedResult extra");
         int intExtra = getIntent().getIntExtra("PreSetup.AA_SUPPORT_RESULT", -1);
-        eiig.b(getIntent().hasExtra("connection_type"), "Invalid intent: missing ConnectionType extra");
+        ekvl.b(getIntent().hasExtra("connection_type"), "Invalid intent: missing ConnectionType extra");
         int intExtra2 = getIntent().getIntExtra("connection_type", -1);
         Intent intent = (Intent) getIntent().getParcelableExtra("PreSetup.CONTINUE_INTENT");
-        eiig.x(intent);
+        ekvl.y(intent);
         this.q = intent;
         setContentView(R.layout.car_bottom_sheet_activity);
         int i = true == getIntent().getBooleanExtra("PreSetup.SKIP_TO_USB_RESET", false) ? 7 : 1;
-        akrt.a(this);
-        this.n = new aloy(this);
-        this.o = new alxm(this, intExtra, new alww(this.n), intExtra2, i, Optional.empty());
+        amte.a(this);
+        this.n = new anqj(this);
+        this.o = new anyx(this, intExtra, new anyh(this.n), intExtra2, i, Optional.empty());
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final void p() {
         if (this.r != null) {
             return;
         }
         ForceFinishRequestReceiver forceFinishRequestReceiver = new ForceFinishRequestReceiver();
         this.r = forceFinishRequestReceiver;
-        iln.b(this, forceFinishRequestReceiver, l, 2);
+        ind.b(this, forceFinishRequestReceiver, l, 2);
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final void q() {
         if (this.s != null) {
             return;
         }
         UsbDisconnectReceiver usbDisconnectReceiver = new UsbDisconnectReceiver();
         this.s = usbDisconnectReceiver;
-        iln.b(this, usbDisconnectReceiver, m, 2);
+        ind.b(this, usbDisconnectReceiver, m, 2);
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final void r(dg dgVar) {
         bp bpVar = new bp(getSupportFragmentManager());
         bpVar.z(R.id.fragment_container, dgVar, "fragment_main");
         bpVar.a();
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final void s(boolean z) {
         if (isFinishing()) {
             return;
         }
-        aloy aloyVar = this.n;
-        if (aloyVar != null) {
-            aloyVar.a();
+        anqj anqjVar = this.n;
+        if (anqjVar != null) {
+            anqjVar.a();
         }
         if (z) {
             PackageManager packageManager = getPackageManager();
             Intent intent = this.q;
             if (intent == null) {
-                j.j().ah(2886).x("continueIntent request to launch was null: skipping");
+                j.j().ai(2890).x("continueIntent request to launch was null: skipping");
             } else if (intent.resolveActivityInfo(packageManager, 0) != null) {
                 startActivity(this.q);
             } else {
-                j.j().ah(2885).x("Unable to launch continueIntent: did not resolve");
+                j.j().ai(2889).x("Unable to launch continueIntent: did not resolve");
             }
         }
         BottomSheetView bottomSheetView = (BottomSheetView) findViewById(R.id.bottom_sheet);
@@ -250,12 +250,12 @@ public class PreSetupActivityImpl extends qet implements alxl, alxd {
         }
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final boolean t() {
         return ((KeyguardManager) getSystemService("keyguard")).isKeyguardLocked();
     }
 
-    @Override // defpackage.alxl
+    @Override // defpackage.anyw
     public final boolean u() {
         NetworkInfo activeNetworkInfo = ((ConnectivityManager) getSystemService("connectivity")).getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting();

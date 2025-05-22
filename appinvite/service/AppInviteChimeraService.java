@@ -5,23 +5,23 @@ import android.os.Process;
 import android.text.TextUtils;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.arts;
-import defpackage.asqs;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.twt;
-import defpackage.txd;
-import defpackage.txi;
-import defpackage.txj;
+import defpackage.atwh;
+import defpackage.auum;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.vst;
+import defpackage.vtc;
+import defpackage.vth;
+import defpackage.vti;
 import java.util.HashSet;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes2.dex */
-public class AppInviteChimeraService extends bxgd {
+public class AppInviteChimeraService extends bzot {
     static final String[] a = {"com.google.android.gms.appinvite.service.START", "com.google.android.gms.appinvite.service.START_INTERNAL"};
-    private txd b;
-    private twt c;
+    private vtc b;
+    private vst c;
 
     public AppInviteChimeraService() {
         super(new int[]{77, 106}, a, new HashSet(), 3, 9);
@@ -33,13 +33,13 @@ public class AppInviteChimeraService extends bxgd {
         }
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         if (this.b == null) {
-            this.b = txd.a(this);
+            this.b = vtc.a(this);
         }
         if (this.c == null) {
-            this.c = new twt(getApplicationContext());
+            this.c = new vst(getApplicationContext());
         }
         int i = getServiceRequest.d;
         if (i == 77) {
@@ -50,32 +50,32 @@ public class AppInviteChimeraService extends bxgd {
             } else if (!str.equals(string)) {
                 throw new SecurityException("invalid authPackage");
             }
-            arts artsVar = new arts();
-            artsVar.a = Binder.getCallingUid();
-            artsVar.d = str;
-            artsVar.e = getPackageName();
-            bxgjVar.c(new txj(l(), artsVar, this.b, this.c));
+            atwh atwhVar = new atwh();
+            atwhVar.a = Binder.getCallingUid();
+            atwhVar.d = str;
+            atwhVar.e = getPackageName();
+            bzozVar.c(new vti(l(), atwhVar, this.b, this.c));
             return;
         }
         if (i != 106) {
-            bxgjVar.a(16, null);
+            bzozVar.a(16, null);
             return;
         }
         b();
-        arts artsVar2 = new arts();
-        artsVar2.e = getPackageName();
-        artsVar2.a = Binder.getCallingUid();
-        artsVar2.c = getServiceRequest.j;
-        artsVar2.b = getServiceRequest.a();
+        atwh atwhVar2 = new atwh();
+        atwhVar2.e = getPackageName();
+        atwhVar2.a = Binder.getCallingUid();
+        atwhVar2.c = getServiceRequest.j;
+        atwhVar2.b = getServiceRequest.a();
         String string2 = getServiceRequest.i.getString("realClientPackage");
         if (TextUtils.isEmpty(string2)) {
             string2 = getServiceRequest.f;
         }
-        artsVar2.d = string2;
+        atwhVar2.d = string2;
         Scope[] scopeArr = getServiceRequest.h;
         if (scopeArr != null) {
-            artsVar2.o(asqs.d(scopeArr));
+            atwhVar2.o(auum.d(scopeArr));
         }
-        bxgjVar.c(new txi(l(), artsVar2, this.b));
+        bzozVar.c(new vth(l(), atwhVar2, this.b));
     }
 }

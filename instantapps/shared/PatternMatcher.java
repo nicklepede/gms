@@ -2,16 +2,16 @@ package com.google.android.gms.instantapps.shared;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.bolh;
+import defpackage.bqsx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class PatternMatcher implements Parcelable {
     private final String b;
     private final int c;
     private final int[] d;
     private static final int[] a = new int[2048];
-    public static final Parcelable.Creator CREATOR = new bolh();
+    public static final Parcelable.Creator CREATOR = new bqsx();
 
     public PatternMatcher(Parcel parcel) {
         this.b = parcel.readString();

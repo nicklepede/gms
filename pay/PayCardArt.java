@@ -4,15 +4,15 @@ import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ctdp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cvmu;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class PayCardArt extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ctdp();
+    public static final Parcelable.Creator CREATOR = new cvmu();
     public PayCardArtInfo a;
     public Bitmap b;
 
@@ -25,7 +25,7 @@ public final class PayCardArt extends AbstractSafeParcelable {
         }
         if (obj instanceof PayCardArt) {
             PayCardArt payCardArt = (PayCardArt) obj;
-            if (arwb.b(this.a, payCardArt.a) && arwb.b(this.b, payCardArt.b)) {
+            if (atyq.b(this.a, payCardArt.a) && atyq.b(this.b, payCardArt.b)) {
                 return true;
             }
         }
@@ -38,10 +38,10 @@ public final class PayCardArt extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.c(parcel, a);
     }
 
     public PayCardArt(PayCardArtInfo payCardArtInfo, Bitmap bitmap) {

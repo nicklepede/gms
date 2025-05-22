@@ -5,14 +5,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.csfu;
-import defpackage.csfv;
+import defpackage.atzr;
+import defpackage.cuoz;
+import defpackage.cupa;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class CreditCardOcrResult extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new csfv();
+    public static final Parcelable.Creator CREATOR = new cupa();
     public String a;
     public int b;
     public int c;
@@ -34,8 +34,8 @@ public final class CreditCardOcrResult extends AbstractSafeParcelable implements
     private CreditCardOcrResult() {
     }
 
-    public static csfu a() {
-        return new csfu(new CreditCardOcrResult());
+    public static cuoz a() {
+        return new cuoz(new CreditCardOcrResult());
     }
 
     public static CreditCardOcrResult b(Intent intent) {
@@ -52,25 +52,25 @@ public final class CreditCardOcrResult extends AbstractSafeParcelable implements
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, this.a, false);
-        arxc.o(parcel, 3, this.b);
-        arxc.o(parcel, 4, this.c);
-        arxc.o(parcel, 5, this.d);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.e(parcel, 8, this.g);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.v(parcel, 10, this.i, false);
-        arxc.v(parcel, 11, this.j, false);
-        arxc.v(parcel, 12, this.k, false);
-        arxc.p(parcel, 13, this.l, false);
-        arxc.p(parcel, 14, this.m, false);
-        arxc.w(parcel, 15, this.n, false);
-        arxc.w(parcel, 16, this.o, false);
-        arxc.o(parcel, 17, this.p);
-        arxc.o(parcel, 18, this.q);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, this.a, false);
+        atzr.o(parcel, 3, this.b);
+        atzr.o(parcel, 4, this.c);
+        atzr.o(parcel, 5, this.d);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.e(parcel, 8, this.g);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.v(parcel, 10, this.i, false);
+        atzr.v(parcel, 11, this.j, false);
+        atzr.v(parcel, 12, this.k, false);
+        atzr.p(parcel, 13, this.l, false);
+        atzr.p(parcel, 14, this.m, false);
+        atzr.w(parcel, 15, this.n, false);
+        atzr.w(parcel, 16, this.o, false);
+        atzr.o(parcel, 17, this.p);
+        atzr.o(parcel, 18, this.q);
+        atzr.c(parcel, a);
     }
 
     public CreditCardOcrResult(String str, int i, int i2, int i3, String str2, String str3, boolean z, String str4, String str5, String str6, String str7, int[] iArr, int[] iArr2, String[] strArr, String[] strArr2, int i4, int i5) {

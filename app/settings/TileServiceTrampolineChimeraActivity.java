@@ -8,9 +8,9 @@ import android.os.Bundle;
 import android.util.Log;
 import com.google.android.chimera.TileService;
 import com.google.android.chimera.android.Activity;
-import defpackage.asqh;
+import defpackage.auub;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class TileServiceTrampolineChimeraActivity extends Activity {
     private final void a() {
@@ -25,7 +25,7 @@ public class TileServiceTrampolineChimeraActivity extends Activity {
         finish();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         Intent intent = getIntent();
@@ -40,7 +40,7 @@ public class TileServiceTrampolineChimeraActivity extends Activity {
             return;
         }
         String str = null;
-        ComponentName componentName = asqh.c() ? (ComponentName) extras.getParcelable("android.intent.extra.COMPONENT_NAME") : null;
+        ComponentName componentName = auub.c() ? (ComponentName) extras.getParcelable("android.intent.extra.COMPONENT_NAME") : null;
         if (componentName == null) {
             Log.w("TileServiceActivity", "Missing component name extra");
             a();

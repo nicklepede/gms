@@ -6,18 +6,18 @@ import android.os.Parcelable;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.locationsharingreporter.AppContextProvider;
 import com.google.android.gms.locationsharingreporter.service.reporting.periodic.PersistentDispatchingIntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.cavm;
-import defpackage.cawo;
-import defpackage.caxd;
-import defpackage.eigb;
-import defpackage.eiho;
-import defpackage.eiid;
-import defpackage.ejhf;
-import defpackage.enss;
-import defpackage.fpws;
-import defpackage.vks;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cdec;
+import defpackage.cdfe;
+import defpackage.cdft;
+import defpackage.ektg;
+import defpackage.ekut;
+import defpackage.ekvi;
+import defpackage.eluo;
+import defpackage.eqgl;
+import defpackage.fsqm;
+import defpackage.xgt;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -26,79 +26,79 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class AccountChangeIntentOperation extends IntentOperation {
-    private static final asot a = asot.b("LSRAccountChange", asej.LOCATION_SHARING_REPORTER);
+    private static final ausn a = ausn.b("LSRAccountChange", auid.LOCATION_SHARING_REPORTER);
 
     private final void a(List list) {
         Iterator it = list.iterator();
         while (it.hasNext()) {
             Account account = (Account) it.next();
             try {
-                final cawo b = cavm.b();
+                final cdfe b = cdec.b();
                 final String str = account.name;
-                enss e = b.e(this, new eiho() { // from class: cawj
-                    @Override // defpackage.eiho
+                eqgl e = b.e(this, new ekut() { // from class: cdez
+                    @Override // defpackage.ekut
                     public final Object apply(Object obj) {
-                        cath cathVar = (cath) obj;
-                        asot asotVar = cawo.a;
-                        fecj fecjVar = (fecj) cathVar.iB(5, null);
-                        fecjVar.X(cathVar);
-                        catg catgVar = (catg) fecjVar;
+                        cdbx cdbxVar = (cdbx) obj;
+                        ausn ausnVar = cdfe.a;
+                        fgrc fgrcVar = (fgrc) cdbxVar.iQ(5, null);
+                        fgrcVar.X(cdbxVar);
+                        cdbw cdbwVar = (cdbw) fgrcVar;
                         String str2 = str;
                         str2.getClass();
-                        if (!catgVar.b.L()) {
-                            catgVar.U();
+                        if (!cdbwVar.b.L()) {
+                            cdbwVar.U();
                         }
-                        cath cathVar2 = (cath) catgVar.b;
-                        cath cathVar3 = cath.a;
-                        cathVar2.b().remove(str2);
-                        return (cath) catgVar.Q();
+                        cdbx cdbxVar2 = (cdbx) cdbwVar.b;
+                        cdbx cdbxVar3 = cdbx.a;
+                        cdbxVar2.b().remove(str2);
+                        return (cdbx) cdbwVar.Q();
                     }
                 });
-                e.hn(new Runnable() { // from class: cawk
+                e.hD(new Runnable() { // from class: cdfa
                     @Override // java.lang.Runnable
                     public final void run() {
-                        cawo.this.g(this, str, eigb.a);
+                        cdfe.this.h(this, str, ektg.a);
                     }
-                }, cawo.b);
-                e.get(fpws.i(), TimeUnit.MILLISECONDS);
+                }, cdfe.b);
+                e.get(fsqm.i(), TimeUnit.MILLISECONDS);
             } catch (InterruptedException | CancellationException | ExecutionException | TimeoutException e2) {
-                ((ejhf) ((ejhf) ((ejhf) a.j()).s(e2)).ah((char) 5687)).x("failed to clear location reporting status map for account");
+                ((eluo) ((eluo) ((eluo) a.j()).s(e2)).ai((char) 5701)).x("failed to clear location reporting status map for account");
             }
         }
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        eiid j;
-        asot asotVar = a;
-        ((ejhf) ((ejhf) asotVar.h()).ah((char) 5684)).x("Received account change broadcast");
-        List c = vks.c(intent);
+        ekvi j;
+        ausn ausnVar = a;
+        ((eluo) ((eluo) ausnVar.h()).ai((char) 5698)).x("Received account change broadcast");
+        List c = xgt.c(intent);
         if (c.isEmpty()) {
-            ((ejhf) ((ejhf) asotVar.h()).ah((char) 5686)).x("Dropping account change broadcast, no accounts removed.");
+            ((eluo) ((eluo) ausnVar.h()).ai((char) 5700)).x("Dropping account change broadcast, no accounts removed.");
             return;
         }
         a(c);
         Iterator it = c.iterator();
         while (it.hasNext()) {
-            caxd.a().e(this, ((Account) it.next()).name);
+            cdft.a().e(this, ((Account) it.next()).name);
         }
         int i = PersistentDispatchingIntentOperation.a;
         Intent startIntent = IntentOperation.getStartIntent(AppContextProvider.a(), PersistentDispatchingIntentOperation.class, "com.google.android.gms.locationsharingreporter.service.reporting.periodic.ACTION_ACCOUNTS_REMOVED");
         if (startIntent == null) {
-            j = eigb.a;
+            j = ektg.a;
         } else {
             ArrayList<? extends Parcelable> arrayList = new ArrayList<>();
             arrayList.addAll(c);
             startIntent.putParcelableArrayListExtra("com.google.android.gms.locationsharingreporter.service.reporting.periodic.EXTRA_REMOVED_ACCOUNT_LIST", arrayList);
-            j = eiid.j(startIntent);
+            j = ekvi.j(startIntent);
         }
         if (j.h()) {
             AppContextProvider.a().startService((Intent) j.c());
         } else {
-            ((ejhf) ((ejhf) asotVar.i()).ah((char) 5685)).x("Failed to forward account change intent");
+            ((eluo) ((eluo) ausnVar.i()).ai((char) 5699)).x("Failed to forward account change intent");
         }
     }
 }

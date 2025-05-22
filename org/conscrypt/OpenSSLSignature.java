@@ -18,7 +18,7 @@ import java.security.spec.InvalidParameterSpecException;
 import java.security.spec.MGF1ParameterSpec;
 import java.security.spec.PSSParameterSpec;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class OpenSSLSignature extends SignatureSpi {
     private NativeRef.EVP_MD_CTX ctx;
@@ -29,20 +29,20 @@ public class OpenSSLSignature extends SignatureSpi {
     private boolean signing;
     private final byte[] singleByte;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     enum EngineType {
         RSA,
         EC
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class MD5RSA extends RSAPKCS1Padding {
         public MD5RSA() {
             super(EvpMdRef.MD5.EVP_MD);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     abstract class RSAPKCS1Padding extends OpenSSLSignature {
         public RSAPKCS1Padding(long j) {
             super(j, EngineType.RSA);
@@ -54,7 +54,7 @@ public class OpenSSLSignature extends SignatureSpi {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     abstract class RSAPSSPadding extends OpenSSLSignature {
         private static final int TRAILER_FIELD_BC_ID = 1;
         private final String contentDigestAlgorithm;
@@ -137,105 +137,105 @@ public class OpenSSLSignature extends SignatureSpi {
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA1ECDSA extends OpenSSLSignature {
         public SHA1ECDSA() {
             super(EvpMdRef.SHA1.EVP_MD, EngineType.EC);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA1RSA extends RSAPKCS1Padding {
         public SHA1RSA() {
             super(EvpMdRef.SHA1.EVP_MD);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA1RSAPSS extends RSAPSSPadding {
         public SHA1RSAPSS() {
             super(EvpMdRef.SHA1.EVP_MD, "SHA-1", EvpMdRef.SHA1.SIZE_BYTES);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA224ECDSA extends OpenSSLSignature {
         public SHA224ECDSA() {
             super(EvpMdRef.SHA224.EVP_MD, EngineType.EC);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA224RSA extends RSAPKCS1Padding {
         public SHA224RSA() {
             super(EvpMdRef.SHA224.EVP_MD);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA224RSAPSS extends RSAPSSPadding {
         public SHA224RSAPSS() {
             super(EvpMdRef.SHA224.EVP_MD, "SHA-224", EvpMdRef.SHA224.SIZE_BYTES);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA256ECDSA extends OpenSSLSignature {
         public SHA256ECDSA() {
             super(EvpMdRef.SHA256.EVP_MD, EngineType.EC);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA256RSA extends RSAPKCS1Padding {
         public SHA256RSA() {
             super(EvpMdRef.SHA256.EVP_MD);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA256RSAPSS extends RSAPSSPadding {
         public SHA256RSAPSS() {
             super(EvpMdRef.SHA256.EVP_MD, "SHA-256", EvpMdRef.SHA256.SIZE_BYTES);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA384ECDSA extends OpenSSLSignature {
         public SHA384ECDSA() {
             super(EvpMdRef.SHA384.EVP_MD, EngineType.EC);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA384RSA extends RSAPKCS1Padding {
         public SHA384RSA() {
             super(EvpMdRef.SHA384.EVP_MD);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA384RSAPSS extends RSAPSSPadding {
         public SHA384RSAPSS() {
             super(EvpMdRef.SHA384.EVP_MD, "SHA-384", EvpMdRef.SHA384.SIZE_BYTES);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA512ECDSA extends OpenSSLSignature {
         public SHA512ECDSA() {
             super(EvpMdRef.SHA512.EVP_MD, EngineType.EC);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA512RSA extends RSAPKCS1Padding {
         public SHA512RSA() {
             super(EvpMdRef.SHA512.EVP_MD);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public final class SHA512RSAPSS extends RSAPSSPadding {
         public SHA512RSAPSS() {
             super(EvpMdRef.SHA512.EVP_MD, "SHA-512", EvpMdRef.SHA512.SIZE_BYTES);

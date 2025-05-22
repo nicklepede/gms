@@ -7,10 +7,10 @@ import android.os.RemoteException;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.util.client.l;
 import com.google.android.gms.dynamic.ObjectWrapper;
-import defpackage.oto;
+import defpackage.qmr;
 import java.util.concurrent.ExecutorService;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class g {
     boolean a;
@@ -27,7 +27,7 @@ public final class g {
         executorService.execute(new Runnable() { // from class: com.google.android.gms.ads.internal.clearcut.c
             @Override // java.lang.Runnable
             public final void run() {
-                boolean booleanValue = ((Boolean) p.aA.g()).booleanValue();
+                boolean booleanValue = ((Boolean) p.aB.g()).booleanValue();
                 g gVar = g.this;
                 Context context2 = context;
                 if (booleanValue) {
@@ -45,10 +45,10 @@ public final class g {
                         });
                         ObjectWrapper objectWrapper = new ObjectWrapper(context2);
                         com.google.android.gms.ads.clearcut.a aVar = gVar.c;
-                        Parcel fr = aVar.fr();
-                        oto.g(fr, objectWrapper);
-                        fr.writeString("GMA_SDK");
-                        aVar.ft(2, fr);
+                        Parcel fE = aVar.fE();
+                        qmr.g(fE, objectWrapper);
+                        fE.writeString("GMA_SDK");
+                        aVar.fG(2, fE);
                         gVar.a = true;
                     } catch (RemoteException | com.google.android.gms.ads.internal.util.client.k | NullPointerException unused) {
                         com.google.android.gms.ads.internal.util.client.h.d("Cannot dynamite load clearcut");

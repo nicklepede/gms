@@ -5,18 +5,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.bdzs;
-import defpackage.dnhw;
-import defpackage.eiif;
-import defpackage.eiig;
+import defpackage.atzr;
+import defpackage.bgbe;
+import defpackage.dpsf;
+import defpackage.ekvk;
+import defpackage.ekvl;
 import j$.util.Objects;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class ProvisionParams extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new bdzs();
+    public static final Parcelable.Creator CREATOR = new bgbe();
     public final byte[] a;
     public final Account b;
     public final String c;
@@ -28,8 +28,8 @@ public class ProvisionParams extends AbstractSafeParcelable implements Reflected
         this(bArr, account, str, str2, str3, 0);
     }
 
-    public final dnhw a() {
-        return dnhw.a(this.e);
+    public final dpsf a() {
+        return dpsf.a(this.e);
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -121,22 +121,22 @@ public class ProvisionParams extends AbstractSafeParcelable implements Reflected
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         byte[] bArr = this.a;
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, bArr, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.v(parcel, 5, this.e, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, bArr, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.v(parcel, 5, this.e, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 
     public ProvisionParams(byte[] bArr, Account account, String str, String str2, String str3, int i) {
-        eiig.x(bArr);
+        ekvl.y(bArr);
         this.a = bArr;
-        eiig.x(account);
+        ekvl.y(account);
         this.b = account;
-        this.c = eiif.b(str);
+        this.c = ekvk.b(str);
         this.d = str2;
         this.e = str3;
         this.f = i;

@@ -4,75 +4,75 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import com.google.android.gms.common.Feature;
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.arug;
-import defpackage.arxo;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.byhr;
-import defpackage.dcuj;
-import defpackage.ddas;
-import defpackage.ddui;
-import defpackage.demy;
-import defpackage.denf;
-import defpackage.denq;
-import defpackage.ejck;
-import defpackage.fsew;
+import defpackage.atwv;
+import defpackage.auad;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.caqj;
+import defpackage.dffo;
+import defpackage.dflx;
+import defpackage.dgfn;
+import defpackage.dgyb;
+import defpackage.dgyi;
+import defpackage.dgyt;
+import defpackage.elpp;
+import defpackage.fuzt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class SourceDeviceApiService extends bxgd {
-    private static final arxo b = new denq(new String[]{"D2D", "SourceDeviceApiService"});
+public class SourceDeviceApiService extends bzot {
+    private static final auad b = new dgyt(new String[]{"D2D", "SourceDeviceApiService"});
     Handler a;
-    private ddas c;
-    private ddui d;
+    private dflx c;
+    private dgfn d;
 
     public SourceDeviceApiService() {
-        super(75, "com.google.android.gms.smartdevice.d2d.SourceDeviceService.START", ejck.a, 3, 10);
+        super(75, "com.google.android.gms.smartdevice.d2d.SourceDeviceService.START", elpp.a, 3, 10);
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         SourceDeviceApiService sourceDeviceApiService;
         b.h("onGetService.", new Object[0]);
         String str = getServiceRequest.f;
-        int i = denf.a;
-        boolean c = denf.c(str, getPackageManager());
-        new arug(str).a();
+        int i = dgyi.a;
+        boolean c = dgyi.c(str, getPackageManager());
+        new atwv(str).a();
         Feature[] featureArr = getServiceRequest.k;
         if (featureArr == null || featureArr.length == 0) {
             if (this.c == null) {
-                this.c = new ddas(this.e, this, this.a, c, str, getServiceRequest.p);
+                this.c = new dflx(this.e, this, this.a, c, str, getServiceRequest.p);
             }
-            bxgjVar.c(this.c);
-        } else if (featureArr[0].equals(dcuj.a)) {
+            bzozVar.c(this.c);
+        } else if (featureArr[0].equals(dffo.a)) {
             if (this.d == null) {
                 sourceDeviceApiService = this;
-                sourceDeviceApiService.d = new ddui(this.e, sourceDeviceApiService, denf.b(str, this), str, getServiceRequest.p);
+                sourceDeviceApiService.d = new dgfn(this.e, sourceDeviceApiService, dgyi.b(str, this), str, getServiceRequest.p);
             } else {
                 sourceDeviceApiService = this;
             }
-            bxgjVar.c(sourceDeviceApiService.d);
+            bzozVar.c(sourceDeviceApiService.d);
         }
     }
 
-    @Override // com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         b.j("onCreate()", new Object[0]);
         HandlerThread handlerThread = new HandlerThread("SourceDeviceBackground", 10);
         handlerThread.start();
         handlerThread.getLooper();
-        this.a = new byhr(handlerThread.getLooper());
+        this.a = new caqj(handlerThread.getLooper());
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
         b.j("onDestroy()", new Object[0]);
-        ddas ddasVar = this.c;
-        if (ddasVar != null) {
-            ddasVar.p();
+        dflx dflxVar = this.c;
+        if (dflxVar != null) {
+            dflxVar.p();
         }
-        fsew.c();
-        demy.a(this.a);
+        fuzt.c();
+        dgyb.a(this.a);
         super.onDestroy();
     }
 }

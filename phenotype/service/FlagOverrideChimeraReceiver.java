@@ -1,72 +1,72 @@
 package com.google.android.gms.phenotype.service;
 
 import com.google.android.chimera.BroadcastReceiver;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.eiuu;
-import defpackage.epqi;
-import defpackage.epqj;
-import defpackage.epqm;
-import defpackage.feab;
-import defpackage.fecj;
-import defpackage.feeq;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.elhz;
+import defpackage.eseh;
+import defpackage.esei;
+import defpackage.esel;
+import defpackage.fgou;
+import defpackage.fgrc;
+import defpackage.fgtj;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class FlagOverrideChimeraReceiver extends BroadcastReceiver {
-    public static final asot b = asot.e(asej.PHENOTYPE);
+    public static final ausn b = ausn.e(auid.PHENOTYPE);
 
-    public static List a(List list, eiuu eiuuVar) {
+    public static List a(List list, elhz elhzVar) {
         ArrayList arrayList = new ArrayList();
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            epqj epqjVar = (epqj) it.next();
-            List b2 = b(epqjVar.f, eiuuVar);
-            List b3 = b(epqjVar.j, eiuuVar);
+            esei eseiVar = (esei) it.next();
+            List b2 = b(eseiVar.f, elhzVar);
+            List b3 = b(eseiVar.j, elhzVar);
             if (!b2.isEmpty() || !b3.isEmpty()) {
-                fecj fecjVar = (fecj) epqjVar.iB(5, null);
-                fecjVar.X(epqjVar);
-                epqi epqiVar = (epqi) fecjVar;
+                fgrc fgrcVar = (fgrc) eseiVar.iQ(5, null);
+                fgrcVar.X(eseiVar);
+                eseh esehVar = (eseh) fgrcVar;
                 if (!b2.isEmpty()) {
-                    if (!epqiVar.b.L()) {
-                        epqiVar.U();
+                    if (!esehVar.b.L()) {
+                        esehVar.U();
                     }
-                    ((epqj) epqiVar.b).f = feeq.a;
-                    if (!epqiVar.b.L()) {
-                        epqiVar.U();
+                    ((esei) esehVar.b).f = fgtj.a;
+                    if (!esehVar.b.L()) {
+                        esehVar.U();
                     }
-                    epqj epqjVar2 = (epqj) epqiVar.b;
-                    epqjVar2.c();
-                    feab.E(b2, epqjVar2.f);
+                    esei eseiVar2 = (esei) esehVar.b;
+                    eseiVar2.c();
+                    fgou.E(b2, eseiVar2.f);
                 }
                 if (!b3.isEmpty()) {
-                    if (!epqiVar.b.L()) {
-                        epqiVar.U();
+                    if (!esehVar.b.L()) {
+                        esehVar.U();
                     }
-                    ((epqj) epqiVar.b).j = feeq.a;
-                    if (!epqiVar.b.L()) {
-                        epqiVar.U();
+                    ((esei) esehVar.b).j = fgtj.a;
+                    if (!esehVar.b.L()) {
+                        esehVar.U();
                     }
-                    epqj epqjVar3 = (epqj) epqiVar.b;
-                    epqjVar3.b();
-                    feab.E(b3, epqjVar3.j);
+                    esei eseiVar3 = (esei) esehVar.b;
+                    eseiVar3.b();
+                    fgou.E(b3, eseiVar3.j);
                 }
-                arrayList.add((epqj) epqiVar.Q());
+                arrayList.add((esei) esehVar.Q());
             }
         }
         return arrayList;
     }
 
-    private static List b(List list, eiuu eiuuVar) {
+    private static List b(List list, elhz elhzVar) {
         ArrayList arrayList = new ArrayList();
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            epqm epqmVar = (epqm) it.next();
-            if (eiuuVar.contains(epqmVar.e) || eiuuVar.contains(epqmVar.f)) {
-                arrayList.add(epqmVar);
+            esel eselVar = (esel) it.next();
+            if (elhzVar.contains(eselVar.e) || elhzVar.contains(eselVar.f)) {
+                arrayList.add(eselVar);
             }
         }
         return arrayList;
@@ -76,7 +76,7 @@ public final class FlagOverrideChimeraReceiver extends BroadcastReceiver {
     /* JADX WARN: Can't wrap try/catch for region: R(11:60|(9:62|(1:(1:(1:(1:(3:32|33|34)(1:31)))(1:48))(1:49))(1:50)|36|37|38|(1:40)(1:44)|41|42|43)|63|(0)(0)|36|37|38|(0)(0)|41|42|43) */
     /* JADX WARN: Code restructure failed: missing block: B:46:0x010f, code lost:
     
-        ((defpackage.ejhf) com.google.android.gms.phenotype.service.FlagOverrideChimeraReceiver.b.j()).P("Invalid flag value for flag type %s: %s", r13[r10], r4);
+        ((defpackage.eluo) com.google.android.gms.phenotype.service.FlagOverrideChimeraReceiver.b.j()).P("Invalid flag value for flag type %s: %s", r13[r10], r4);
      */
     /* JADX WARN: Removed duplicated region for block: B:27:0x00d5  */
     /* JADX WARN: Removed duplicated region for block: B:40:0x0102  */

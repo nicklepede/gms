@@ -5,19 +5,19 @@ import android.os.Parcel;
 import android.os.ParcelUuid;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cexz;
-import defpackage.ceyb;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.chfk;
+import defpackage.chfm;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class BleFilter extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cexz();
+    public static final Parcelable.Creator CREATOR = new chfk();
     public final String a;
     public final String b;
     public final ParcelUuid c;
@@ -223,21 +223,21 @@ public final class BleFilter extends AbstractSafeParcelable {
         if (str != null && ((bluetoothDevice = bleSighting.a) == null || !str.equals(bluetoothDevice.getAddress()))) {
             return false;
         }
-        ceyb ceybVar = bleSighting.b;
+        chfm chfmVar = bleSighting.b;
         String str2 = this.a;
-        if (str2 != null && !str2.equals(ceybVar.d)) {
+        if (str2 != null && !str2.equals(chfmVar.d)) {
             return false;
         }
         ParcelUuid parcelUuid = this.c;
-        if (parcelUuid != null && !d(parcelUuid, this.d, ceybVar.a)) {
+        if (parcelUuid != null && !d(parcelUuid, this.d, chfmVar.a)) {
             return false;
         }
         ParcelUuid parcelUuid2 = this.e;
-        if (parcelUuid2 != null && !c(this.f, this.g, ceybVar.c(parcelUuid2))) {
+        if (parcelUuid2 != null && !c(this.f, this.g, chfmVar.c(parcelUuid2))) {
             return false;
         }
         int i = this.h;
-        return i < 0 || c(this.i, this.j, ceybVar.b(i));
+        return i < 0 || c(this.i, this.j, chfmVar.b(i));
     }
 
     public final boolean equals(Object obj) {
@@ -246,7 +246,7 @@ public final class BleFilter extends AbstractSafeParcelable {
         }
         if (obj != null && getClass() == obj.getClass()) {
             BleFilter bleFilter = (BleFilter) obj;
-            if (arwb.b(this.a, bleFilter.a) && arwb.b(this.b, bleFilter.b) && this.h == bleFilter.h && Arrays.equals(this.i, bleFilter.i) && Arrays.equals(this.j, bleFilter.j) && arwb.b(this.e, bleFilter.e) && Arrays.equals(this.f, bleFilter.f) && Arrays.equals(this.g, bleFilter.g) && arwb.b(this.c, bleFilter.c) && arwb.b(this.d, bleFilter.d)) {
+            if (atyq.b(this.a, bleFilter.a) && atyq.b(this.b, bleFilter.b) && this.h == bleFilter.h && Arrays.equals(this.i, bleFilter.i) && Arrays.equals(this.j, bleFilter.j) && atyq.b(this.e, bleFilter.e) && Arrays.equals(this.f, bleFilter.f) && Arrays.equals(this.g, bleFilter.g) && atyq.b(this.c, bleFilter.c) && atyq.b(this.d, bleFilter.d)) {
                 return true;
             }
         }
@@ -270,17 +270,17 @@ public final class BleFilter extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.t(parcel, 6, this.e, i, false);
-        arxc.i(parcel, 7, this.f, false);
-        arxc.i(parcel, 8, this.g, false);
-        arxc.o(parcel, 9, this.h);
-        arxc.i(parcel, 10, this.i, false);
-        arxc.i(parcel, 11, this.j, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.t(parcel, 6, this.e, i, false);
+        atzr.i(parcel, 7, this.f, false);
+        atzr.i(parcel, 8, this.g, false);
+        atzr.o(parcel, 9, this.h);
+        atzr.i(parcel, 10, this.i, false);
+        atzr.i(parcel, 11, this.j, false);
+        atzr.c(parcel, a);
     }
 }

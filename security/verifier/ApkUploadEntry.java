@@ -2,15 +2,15 @@ package com.google.android.gms.security.verifier;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.czem;
-import defpackage.czfe;
-import defpackage.frtq;
+import defpackage.dbok;
+import defpackage.dbpc;
+import defpackage.fuoj;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ApkUploadEntry implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new czem();
+    public static final Parcelable.Creator CREATOR = new dbok();
     public final long a;
     public final String b;
     public final int c;
@@ -28,7 +28,7 @@ public class ApkUploadEntry implements Parcelable {
         this.c = i;
         this.d = bArr;
         if (bArr2 == null || bArr2.length != 256) {
-            this.e = czfe.c();
+            this.e = dbpc.c();
         } else {
             this.e = bArr2;
         }
@@ -67,7 +67,7 @@ public class ApkUploadEntry implements Parcelable {
         this.c = i;
         this.d = bArr;
         if (bArr2 == null) {
-            this.e = czfe.c();
+            this.e = dbpc.c();
         } else {
             this.e = bArr2;
         }
@@ -75,6 +75,6 @@ public class ApkUploadEntry implements Parcelable {
         this.g = 0;
         this.h = -1L;
         this.i = 0;
-        this.j = true != frtq.v() ? 0 : i2;
+        this.j = true != fuoj.v() ? 0 : i2;
     }
 }

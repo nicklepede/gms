@@ -4,12 +4,12 @@ import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.arxd;
-import defpackage.bzhg;
-import defpackage.bzhh;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.atzs;
+import defpackage.cbpx;
+import defpackage.cbpy;
 import j$.util.DesugarCollections;
 import java.util.Collections;
 import java.util.Comparator;
@@ -17,11 +17,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeSet;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class ActivityTransitionRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bzhh();
-    public static final Comparator a = new bzhg();
+    public static final Parcelable.Creator CREATOR = new cbpy();
+    public static final Comparator a = new cbpx();
     public final List b;
     public final String c;
     public final List d;
@@ -33,7 +33,7 @@ public class ActivityTransitionRequest extends AbstractSafeParcelable {
 
     public static ActivityTransitionRequest a(Intent intent) {
         if (intent.hasExtra("com.google.android.location.internal.EXTRA_ACTIVITY_TRANSITION_REQUEST")) {
-            return (ActivityTransitionRequest) arxd.b(intent, "com.google.android.location.internal.EXTRA_ACTIVITY_TRANSITION_REQUEST", CREATOR);
+            return (ActivityTransitionRequest) atzs.b(intent, "com.google.android.location.internal.EXTRA_ACTIVITY_TRANSITION_REQUEST", CREATOR);
         }
         return null;
     }
@@ -44,7 +44,7 @@ public class ActivityTransitionRequest extends AbstractSafeParcelable {
         }
         if (obj != null && getClass() == obj.getClass()) {
             ActivityTransitionRequest activityTransitionRequest = (ActivityTransitionRequest) obj;
-            if (arwb.b(this.b, activityTransitionRequest.b) && arwb.b(this.c, activityTransitionRequest.c) && arwb.b(this.e, activityTransitionRequest.e) && arwb.b(this.d, activityTransitionRequest.d)) {
+            if (atyq.b(this.b, activityTransitionRequest.b) && atyq.b(this.c, activityTransitionRequest.c) && atyq.b(this.e, activityTransitionRequest.e) && atyq.b(this.d, activityTransitionRequest.d)) {
                 return true;
             }
         }
@@ -68,14 +68,14 @@ public class ActivityTransitionRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        arwm.s(parcel);
+        atzb.s(parcel);
         List list = this.b;
-        int a2 = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.v(parcel, 2, this.c, false);
-        arxc.y(parcel, 3, this.d, false);
-        arxc.v(parcel, 4, this.e, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.v(parcel, 2, this.c, false);
+        atzr.y(parcel, 3, this.d, false);
+        atzr.v(parcel, 4, this.e, false);
+        atzr.c(parcel, a2);
     }
 
     public ActivityTransitionRequest(List list, String str, List list2) {
@@ -84,14 +84,14 @@ public class ActivityTransitionRequest extends AbstractSafeParcelable {
 
     public ActivityTransitionRequest(List list, String str, List list2, String str2) {
         List unmodifiableList;
-        arwm.t(list, "transitions can't be null");
-        arwm.c(!list.isEmpty(), "transitions can't be empty.");
-        arwm.s(list);
+        atzb.t(list, "transitions can't be null");
+        atzb.c(!list.isEmpty(), "transitions can't be empty.");
+        atzb.s(list);
         TreeSet treeSet = new TreeSet(a);
         Iterator it = list.iterator();
         while (it.hasNext()) {
             ActivityTransition activityTransition = (ActivityTransition) it.next();
-            arwm.c(treeSet.add(activityTransition), String.format("Found duplicated transition: %s.", activityTransition));
+            atzb.c(treeSet.add(activityTransition), String.format("Found duplicated transition: %s.", activityTransition));
         }
         this.b = DesugarCollections.unmodifiableList(list);
         this.c = str;

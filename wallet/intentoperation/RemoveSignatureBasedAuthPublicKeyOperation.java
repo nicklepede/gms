@@ -5,59 +5,59 @@ import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.wallet.shared.ApplicationParameters;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
-import defpackage.arxd;
-import defpackage.dikp;
-import defpackage.djbu;
-import defpackage.ehob;
-import defpackage.ehos;
-import defpackage.fecj;
-import defpackage.feeq;
-import defpackage.fehj;
-import defpackage.fehm;
+import defpackage.atzs;
+import defpackage.dkwa;
+import defpackage.dlnn;
+import defpackage.ekbh;
+import defpackage.ekby;
+import defpackage.fgrc;
+import defpackage.fgtj;
+import defpackage.fgwc;
+import defpackage.fgwf;
 import j$.util.DesugarCollections;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class RemoveSignatureBasedAuthPublicKeyOperation extends IntentOperation {
-    private djbu a;
+    private dlnn a;
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        this.a = new djbu(getApplicationContext());
+        this.a = new dlnn(getApplicationContext());
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         try {
-            BuyFlowConfig buyFlowConfig = (BuyFlowConfig) arxd.b(intent, "com.google.android.gms.wallet.buyFlowConfig", BuyFlowConfig.CREATOR);
-            int a = ehob.a(intent.getIntExtra("EXTRA_AUTHENTICATOR", 0));
+            BuyFlowConfig buyFlowConfig = (BuyFlowConfig) atzs.b(intent, "com.google.android.gms.wallet.buyFlowConfig", BuyFlowConfig.CREATOR);
+            int a = ekbh.a(intent.getIntExtra("EXTRA_AUTHENTICATOR", 0));
             ApplicationParameters applicationParameters = buyFlowConfig.b;
             int i = applicationParameters.a;
             Account account = applicationParameters.b;
-            fehm c = this.a.c(i, account);
+            fgwf c = this.a.c(i, account);
             if (c != null) {
-                fecj fecjVar = (fecj) c.iB(5, null);
-                fecjVar.X(c);
-                fehj fehjVar = (fehj) fecjVar;
+                fgrc fgrcVar = (fgrc) c.iQ(5, null);
+                fgrcVar.X(c);
+                fgwc fgwcVar = (fgwc) fgrcVar;
                 ArrayList arrayList = new ArrayList();
-                for (ehos ehosVar : DesugarCollections.unmodifiableList(((fehm) fehjVar.b).g)) {
-                    int a2 = ehob.a(ehosVar.f);
+                for (ekby ekbyVar : DesugarCollections.unmodifiableList(((fgwf) fgwcVar.b).g)) {
+                    int a2 = ekbh.a(ekbyVar.f);
                     if (a2 == 0) {
                         a2 = 1;
                     }
                     if (a2 != a) {
-                        arrayList.add(ehosVar);
+                        arrayList.add(ekbyVar);
                     }
                 }
-                if (!fehjVar.b.L()) {
-                    fehjVar.U();
+                if (!fgwcVar.b.L()) {
+                    fgwcVar.U();
                 }
-                ((fehm) fehjVar.b).g = feeq.a;
-                fehjVar.a(arrayList);
-                this.a.f(i, account, (fehm) fehjVar.Q());
+                ((fgwf) fgwcVar.b).g = fgtj.a;
+                fgwcVar.a(arrayList);
+                this.a.f(i, account, (fgwf) fgwcVar.Q());
             }
-            dikp.a(getApplicationContext(), buyFlowConfig).i(a);
+            dkwa.a(getApplicationContext(), buyFlowConfig).i(a);
         } catch (Exception unused) {
             getApplicationContext();
         }

@@ -3,19 +3,19 @@ package com.google.android.gms.udc;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dgvf;
-import defpackage.dgvu;
+import defpackage.atzr;
+import defpackage.djgl;
+import defpackage.djha;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class UdcWriteLocalSettingsRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dgvu();
+    public static final Parcelable.Creator CREATOR = new djha();
     public final SettingChange[] a;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class SettingChange extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new dgvf();
+        public static final Parcelable.Creator CREATOR = new djgl();
         public final int a;
         public final boolean b;
 
@@ -26,10 +26,10 @@ public class UdcWriteLocalSettingsRequest extends AbstractSafeParcelable {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 2, this.a);
-            arxc.e(parcel, 3, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 2, this.a);
+            atzr.e(parcel, 3, this.b);
+            atzr.c(parcel, a);
         }
     }
 
@@ -39,8 +39,8 @@ public class UdcWriteLocalSettingsRequest extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.J(parcel, 2, this.a, i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.J(parcel, 2, this.a, i);
+        atzr.c(parcel, a);
     }
 }

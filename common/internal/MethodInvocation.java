@@ -3,13 +3,13 @@ package com.google.android.gms.common.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arvz;
-import defpackage.arxc;
+import defpackage.atyo;
+import defpackage.atzr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class MethodInvocation extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new arvz();
+    public static final Parcelable.Creator CREATOR = new atyo();
     public final int a;
     public final int b;
     public final int c;
@@ -35,16 +35,16 @@ public class MethodInvocation extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.b);
-        arxc.o(parcel, 3, this.c);
-        arxc.q(parcel, 4, this.d);
-        arxc.q(parcel, 5, this.e);
-        arxc.v(parcel, 6, this.f, false);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.o(parcel, 8, this.h);
-        arxc.o(parcel, 9, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.b);
+        atzr.o(parcel, 3, this.c);
+        atzr.q(parcel, 4, this.d);
+        atzr.q(parcel, 5, this.e);
+        atzr.v(parcel, 6, this.f, false);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.o(parcel, 8, this.h);
+        atzr.o(parcel, 9, this.i);
+        atzr.c(parcel, a);
     }
 }

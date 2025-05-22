@@ -2,95 +2,95 @@ package com.google.android.gms.mdm;
 
 import android.content.Context;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.byjl;
-import defpackage.byln;
-import defpackage.cctd;
-import defpackage.ccti;
-import defpackage.dfak;
-import defpackage.dhqf;
-import defpackage.frte;
+import defpackage.casd;
+import defpackage.cauf;
+import defpackage.cfbx;
+import defpackage.cfcc;
+import defpackage.dhlq;
+import defpackage.dkbl;
+import defpackage.funx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class LogFmdEnabledBoundService extends GmsTaskBoundService {
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (frte.l()) {
-            ccti.a(byjl.a(this));
+    public final int a(cauf caufVar) {
+        if (funx.l()) {
+            cfcc.a(casd.a(this));
             return 2;
         }
-        if (!frte.j()) {
+        if (!funx.j()) {
             return 2;
         }
-        final cctd cctdVar = new cctd(this, dhqf.a(this));
-        if (!frte.i()) {
+        final cfbx cfbxVar = new cfbx(this, dkbl.a(this));
+        if (!funx.i()) {
             return 0;
         }
-        cctdVar.b.aL().z(new dfak() { // from class: cctc
-            @Override // defpackage.dfak
-            public final void gn(Object obj) {
-                if (((aqye) obj).r()) {
-                    cctd cctdVar2 = cctd.this;
-                    ccua ccuaVar = ccuc.f;
-                    Context context = cctdVar2.a;
-                    boolean booleanValue = ccuaVar.a(context).booleanValue();
-                    int i = true != asnd.h(context, context.getPackageName()).isEmpty() ? 2 : 3;
-                    bswh v = bswh.v();
-                    fecj v2 = ffeq.a.v();
-                    ffep ffepVar = ffep.SAMPLED_SETTINGS_SNAPSHOT;
+        cfbxVar.b.aK().z(new dhlq() { // from class: cfbw
+            @Override // defpackage.dhlq
+            public final void gC(Object obj) {
+                if (((atat) obj).q()) {
+                    cfbx cfbxVar2 = cfbx.this;
+                    cfcu cfcuVar = cfcw.f;
+                    Context context = cfbxVar2.a;
+                    boolean booleanValue = cfcuVar.a(context).booleanValue();
+                    int i = true != auqx.h(context, context.getPackageName()).isEmpty() ? 2 : 3;
+                    bvef v = bvef.v();
+                    fgrc v2 = fhto.a.v();
+                    fhtn fhtnVar = fhtn.SAMPLED_SETTINGS_SNAPSHOT;
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    ffeq ffeqVar = (ffeq) v2.b;
-                    ffeqVar.c = ffepVar.eK;
-                    ffeqVar.b |= 2;
-                    fecj v3 = ffen.a.v();
-                    ffek ffekVar = ffek.GMS_CORE;
+                    fhto fhtoVar = (fhto) v2.b;
+                    fhtoVar.c = fhtnVar.eM;
+                    fhtoVar.b |= 2;
+                    fgrc v3 = fhtl.a.v();
+                    fhti fhtiVar = fhti.GMS_CORE;
                     if (!v3.b.L()) {
                         v3.U();
                     }
-                    ffen ffenVar = (ffen) v3.b;
-                    ffenVar.c = ffekVar.h;
-                    ffenVar.b = 1 | ffenVar.b;
+                    fhtl fhtlVar = (fhtl) v3.b;
+                    fhtlVar.c = fhtiVar.h;
+                    fhtlVar.b = 1 | fhtlVar.b;
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    ffeq ffeqVar2 = (ffeq) v2.b;
-                    ffen ffenVar2 = (ffen) v3.Q();
-                    ffenVar2.getClass();
-                    ffeqVar2.f = ffenVar2;
-                    ffeqVar2.b |= 16;
-                    fecj v4 = ffes.a.v();
+                    fhto fhtoVar2 = (fhto) v2.b;
+                    fhtl fhtlVar2 = (fhtl) v3.Q();
+                    fhtlVar2.getClass();
+                    fhtoVar2.f = fhtlVar2;
+                    fhtoVar2.b |= 16;
+                    fgrc v4 = fhtq.a.v();
                     if (!v4.b.L()) {
                         v4.U();
                     }
-                    fecp fecpVar = v4.b;
-                    ffes ffesVar = (ffes) fecpVar;
-                    ffesVar.b |= 2;
-                    ffesVar.f = booleanValue;
-                    if (!fecpVar.L()) {
+                    fgri fgriVar = v4.b;
+                    fhtq fhtqVar = (fhtq) fgriVar;
+                    fhtqVar.b |= 2;
+                    fhtqVar.f = booleanValue;
+                    if (!fgriVar.L()) {
                         v4.U();
                     }
-                    ffes ffesVar2 = (ffes) v4.b;
-                    ffesVar2.g = i - 1;
-                    ffesVar2.b |= 4;
-                    String l = Long.toString(asng.e(context));
+                    fhtq fhtqVar2 = (fhtq) v4.b;
+                    fhtqVar2.g = i - 1;
+                    fhtqVar2.b |= 4;
+                    String l = Long.toString(aura.e(context));
                     if (!v4.b.L()) {
                         v4.U();
                     }
-                    ffes ffesVar3 = (ffes) v4.b;
+                    fhtq fhtqVar3 = (fhtq) v4.b;
                     l.getClass();
-                    ffesVar3.c = 2;
-                    ffesVar3.d = l;
+                    fhtqVar3.c = 2;
+                    fhtqVar3.d = l;
                     if (!v2.b.L()) {
                         v2.U();
                     }
-                    ffeq ffeqVar3 = (ffeq) v2.b;
-                    ffes ffesVar4 = (ffes) v4.Q();
-                    ffesVar4.getClass();
-                    ffeqVar3.g = ffesVar4;
-                    ffeqVar3.b |= 32;
-                    v.f((ffeq) v2.Q());
+                    fhto fhtoVar3 = (fhto) v2.b;
+                    fhtq fhtqVar4 = (fhtq) v4.Q();
+                    fhtqVar4.getClass();
+                    fhtoVar3.g = fhtqVar4;
+                    fhtoVar3.b |= 32;
+                    v.f((fhto) v2.Q());
                 }
             }
         });

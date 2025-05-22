@@ -3,15 +3,15 @@ package com.google.android.gms.nearby.uwb.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.crqw;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cuab;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class UwbAddressParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new crqw();
+    public static final Parcelable.Creator CREATOR = new cuab();
     public byte[] a;
     public int b;
 
@@ -24,7 +24,7 @@ public final class UwbAddressParams extends AbstractSafeParcelable {
         }
         if (obj instanceof UwbAddressParams) {
             UwbAddressParams uwbAddressParams = (UwbAddressParams) obj;
-            if (Arrays.equals(this.a, uwbAddressParams.a) && arwb.b(Integer.valueOf(this.b), Integer.valueOf(uwbAddressParams.b))) {
+            if (Arrays.equals(this.a, uwbAddressParams.a) && atyq.b(Integer.valueOf(this.b), Integer.valueOf(uwbAddressParams.b))) {
                 return true;
             }
         }
@@ -37,10 +37,10 @@ public final class UwbAddressParams extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, this.a, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, this.a, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 
     public UwbAddressParams(byte[] bArr, int i) {

@@ -5,17 +5,17 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.dedj;
+import defpackage.atzr;
+import defpackage.dgom;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class UserCredential extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new dedj();
+    public static final Parcelable.Creator CREATOR = new dgom();
     private static final HashMap j;
     final Set a;
     public String b;
@@ -52,7 +52,7 @@ public class UserCredential extends BinarySerializableFastSafeParcelableJson {
         this.i = str7;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         switch (i) {
@@ -77,17 +77,17 @@ public class UserCredential extends BinarySerializableFastSafeParcelableJson {
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return j;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         if (str2 == null) {
             return;
@@ -122,8 +122,8 @@ public class UserCredential extends BinarySerializableFastSafeParcelableJson {
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
         int i2 = fastJsonResponse$Field.g;
         if (i2 != 3) {
             throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be an int."));
@@ -135,32 +135,32 @@ public class UserCredential extends BinarySerializableFastSafeParcelableJson {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.v(parcel, 2, this.b, true);
+            atzr.v(parcel, 2, this.b, true);
         }
         if (set.contains(3)) {
-            arxc.o(parcel, 3, this.c);
+            atzr.o(parcel, 3, this.c);
         }
         if (set.contains(4)) {
-            arxc.v(parcel, 4, this.d, true);
+            atzr.v(parcel, 4, this.d, true);
         }
         if (set.contains(5)) {
-            arxc.v(parcel, 5, this.e, true);
+            atzr.v(parcel, 5, this.e, true);
         }
         if (set.contains(6)) {
-            arxc.v(parcel, 6, this.f, true);
+            atzr.v(parcel, 6, this.f, true);
         }
         if (set.contains(7)) {
-            arxc.v(parcel, 7, this.g, true);
+            atzr.v(parcel, 7, this.g, true);
         }
         if (set.contains(8)) {
-            arxc.v(parcel, 8, this.h, true);
+            atzr.v(parcel, 8, this.h, true);
         }
         if (set.contains(9)) {
-            arxc.v(parcel, 9, this.i, true);
+            atzr.v(parcel, 9, this.i, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public UserCredential() {

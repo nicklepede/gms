@@ -3,16 +3,16 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxed;
+import defpackage.atyq;
+import defpackage.cznz;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class CategoryInfoEntity extends AbstractSafeParcelable implements CategoryInfo {
-    public static final Parcelable.Creator CREATOR = new cxed();
+    public static final Parcelable.Creator CREATOR = new cznz();
     public final String a;
     public final String b;
     public final List c;
@@ -26,7 +26,7 @@ public class CategoryInfoEntity extends AbstractSafeParcelable implements Catego
     }
 
     public static boolean e(CategoryInfo categoryInfo, CategoryInfo categoryInfo2) {
-        return arwb.b(categoryInfo.a(), categoryInfo2.a()) && arwb.b(categoryInfo.d(), categoryInfo2.d()) && arwb.b(categoryInfo.c(), categoryInfo2.c());
+        return atyq.b(categoryInfo.a(), categoryInfo2.a()) && atyq.b(categoryInfo.d(), categoryInfo2.d()) && atyq.b(categoryInfo.c(), categoryInfo2.c());
     }
 
     @Override // com.google.android.gms.reminders.model.CategoryInfo
@@ -60,7 +60,7 @@ public class CategoryInfoEntity extends AbstractSafeParcelable implements Catego
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxed.a(this, parcel);
+        cznz.a(this, parcel);
     }
 
     public CategoryInfoEntity(String str, List list, String str2) {
@@ -73,7 +73,7 @@ public class CategoryInfoEntity extends AbstractSafeParcelable implements Catego
         }
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

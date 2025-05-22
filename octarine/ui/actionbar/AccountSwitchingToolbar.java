@@ -2,7 +2,6 @@ package com.google.android.gms.octarine.ui.actionbar;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Parcel;
@@ -17,160 +16,165 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.libraries.material.productlockup.ProductLockupView;
 import com.google.android.material.appbar.MaterialToolbar;
-import defpackage.bqnc;
-import defpackage.bqni;
-import defpackage.bqnj;
-import defpackage.csvm;
-import defpackage.csye;
-import defpackage.csyf;
-import defpackage.eshb;
-import defpackage.eshc;
-import defpackage.fjul;
-import defpackage.ims;
-import defpackage.sqg;
-import defpackage.wp;
+import defpackage.bsur;
+import defpackage.bsux;
+import defpackage.bsuy;
+import defpackage.cvhg;
+import defpackage.cvhh;
+import defpackage.euwq;
+import defpackage.euwr;
+import defpackage.ioj;
+import defpackage.ulh;
+import defpackage.wu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class AccountSwitchingToolbar extends MaterialToolbar {
     public final TextView A;
-    public final ProductLockupView B;
-    public eshc C;
-    public int D;
-    private final View E;
-    private ViewGroup H;
-    private TextView I;
-    private CharSequence J;
-    private CharSequence K;
-    private bqni L;
+    public final TextView B;
+    public final ProductLockupView C;
+    public CharSequence D;
+    public euwr E;
+    public boolean F;
+    public int G;
+    private final View J;
+    private final ViewGroup K;
+    private CharSequence L;
+    private bsux M;
 
     public AccountSwitchingToolbar(Context context) {
         this(context, null);
     }
 
-    public static Typeface N(Context context, int i) {
+    public static Typeface N(Context context, int i, boolean z) {
+        int i2;
+        if (i == 2) {
+            i2 = R.font.youtube_sans;
+        } else {
+            i2 = R.font.google_sans;
+            if (z && Build.VERSION.SDK_INT >= 29) {
+                i2 = R.font.google_sans_flex;
+            }
+        }
         try {
-            return ims.a(context, i == 2 ? R.font.youtube_sans : (!fjul.i() || Build.VERSION.SDK_INT < 29) ? R.font.google_sans : R.font.google_sans_flex);
+            return ioj.a(context, i2);
         } catch (Resources.NotFoundException unused) {
             return null;
         }
     }
 
-    private final void Q(int i) {
-        if (fjul.i()) {
-            return;
-        }
-        View view = this.E;
-        wp wpVar = (wp) view.getLayoutParams();
-        wpVar.a = i;
-        view.setLayoutParams(wpVar);
+    private final void P(int i) {
+        View view = this.J;
+        wu wuVar = (wu) view.getLayoutParams();
+        wuVar.a = i;
+        view.setLayoutParams(wuVar);
     }
 
-    private final void R(int i, boolean z) {
-        ViewGroup viewGroup;
-        if (!fjul.i() && (viewGroup = this.H) != null) {
-            viewGroup.setVisibility(8);
-        }
-        ProductLockupView productLockupView = this.B;
+    private final void Q(int i, boolean z) {
+        ProductLockupView productLockupView = this.C;
         productLockupView.c(productLockupView.getContext().getString(i));
-        if (fjul.i()) {
-            if (!bqnc.d()) {
-                productLockupView.a(1);
+        if (this.F) {
+            if (bsur.d()) {
+                productLockupView.setVisibility(true != z ? 8 : 0);
+                productLockupView.a(2);
                 return;
             } else {
-                productLockupView.setVisibility(true == z ? 0 : 8);
-                productLockupView.a(2);
+                productLockupView.a(1);
+                productLockupView.d(bsuy.a(getContext(), R.attr.colorOnSurface, R.color.google_grey700));
                 return;
             }
         }
+        this.K.setVisibility(8);
         productLockupView.setVisibility(0);
-        if (bqnc.d()) {
+        if (bsur.d()) {
             productLockupView.a(2);
         } else {
-            this.L = new bqni(productLockupView, bqnj.a(getContext(), R.attr.actionBarProductNameColor, R.color.google_grey700), bqnj.a(getContext(), R.attr.colorOnSurface, R.color.google_grey700));
+            this.M = new bsux(productLockupView, bsuy.a(getContext(), R.attr.actionBarProductNameColor, R.color.google_grey700), bsuy.a(getContext(), R.attr.colorOnSurface, R.color.google_grey700));
         }
-        productLockupView.d(bqnj.a(productLockupView.getContext(), R.attr.actionBarProductNameColor, R.color.google_grey700));
+        productLockupView.d(bsuy.a(productLockupView.getContext(), R.attr.actionBarProductNameColor, R.color.google_grey700));
     }
 
     @Override // android.support.v7.widget.Toolbar
     public final void B(CharSequence charSequence) {
-        if (TextUtils.isEmpty(charSequence)) {
+        this.D = charSequence;
+        if (this.F) {
             TextView textView = this.A;
-            if (textView.getVisibility() == 0) {
-                textView.animate().alpha(0.0f).setDuration(300L).setListener(new csye(this));
-            } else {
-                textView.setVisibility(8);
-            }
+            textView.setVisibility(0);
+            textView.setText(charSequence);
         } else {
-            TextView textView2 = this.A;
-            textView2.setText(charSequence);
-            if (textView2.getVisibility() == 8) {
-                textView2.setVisibility(0);
-                textView2.animate().alpha(1.0f).setDuration(300L).setListener(null);
+            if (TextUtils.isEmpty(charSequence)) {
+                TextView textView2 = this.A;
+                if (textView2.getVisibility() == 0) {
+                    textView2.animate().alpha(0.0f).setDuration(300L).setListener(new cvhg(this));
+                    return;
+                } else {
+                    textView2.setVisibility(8);
+                    return;
+                }
+            }
+            TextView textView3 = this.A;
+            textView3.setText(charSequence);
+            if (textView3.getVisibility() != 8) {
+                textView3.setVisibility(0);
             } else {
-                textView2.setVisibility(0);
+                textView3.setVisibility(0);
+                textView3.animate().alpha(1.0f).setDuration(300L).setListener(null);
             }
         }
-        this.J = charSequence;
     }
 
-    public final void K(eshc eshcVar) {
-        L(eshcVar, false);
+    public final void K(euwr euwrVar) {
+        L(euwrVar, false);
     }
 
-    public final void L(eshc eshcVar, boolean z) {
-        ViewGroup viewGroup;
-        this.C = eshcVar;
-        int ordinal = eshcVar.ordinal();
+    public final void L(euwr euwrVar, boolean z) {
+        this.E = euwrVar;
+        int ordinal = euwrVar.ordinal();
         if (ordinal == 1) {
-            this.B.setVisibility(8);
-            if (fjul.i() || (viewGroup = this.H) == null) {
-                return;
-            }
-            viewGroup.setVisibility(0);
-            return;
-        }
-        if (ordinal == 2) {
-            R(R.string.common_google, z);
+            this.C.setVisibility(8);
+            this.K.setVisibility(0);
+        } else if (ordinal == 2) {
+            Q(R.string.common_google, z);
         } else {
             if (ordinal != 3) {
                 return;
             }
-            R(R.string.common_asm_google_account_title, z);
+            Q(R.string.common_asm_google_account_title, z);
         }
     }
 
     public final void M(boolean z) {
-        bqni bqniVar = this.L;
-        if (bqniVar != null) {
-            bqniVar.a(z);
+        bsux bsuxVar = this.M;
+        if (bsuxVar != null) {
+            bsuxVar.a(z, false);
         }
     }
 
     public final void O(int i) {
-        TextView textView;
-        this.D = i;
-        Typeface N = N(getContext(), i);
+        this.G = i;
+        Typeface N = N(getContext(), i, this.F);
         if (N != null) {
-            this.A.setTypeface(N);
-            if (fjul.i() || (textView = this.I) == null) {
-                return;
-            }
+            TextView textView = this.A;
             textView.setTypeface(N);
+            if (this.F) {
+                textView.setTextAppearance(R.style.TextAppearance_Octarine_CollapsedTitle);
+            } else {
+                this.B.setTypeface(N);
+            }
         }
     }
 
     @Override // android.support.v7.widget.Toolbar
     public final CharSequence j() {
-        return this.K;
+        return this.L;
     }
 
     @Override // android.support.v7.widget.Toolbar
     public final CharSequence k() {
-        if (fjul.i()) {
+        if (this.F) {
             return null;
         }
-        return this.J;
+        return this.D;
     }
 
     @Override // android.support.v7.widget.Toolbar, android.view.View
@@ -188,64 +192,54 @@ public class AccountSwitchingToolbar extends MaterialToolbar {
     @Override // android.support.v7.widget.Toolbar, android.view.View
     public final Parcelable onSaveInstanceState() {
         SavedState savedState = new SavedState(super.onSaveInstanceState());
-        savedState.e = this.C;
-        savedState.f = this.D;
+        savedState.e = this.E;
+        savedState.f = this.G;
         return savedState;
     }
 
     @Override // android.support.v7.widget.Toolbar
     public final void z(CharSequence charSequence) {
-        if (fjul.i() || this.I == null) {
+        if (this.F) {
             return;
         }
         if (TextUtils.isEmpty(charSequence)) {
-            this.I.setVisibility(8);
+            this.B.setVisibility(8);
         } else {
-            this.I.setText(charSequence);
-            this.I.setVisibility(0);
+            TextView textView = this.B;
+            textView.setText(charSequence);
+            textView.setVisibility(0);
         }
-        this.K = charSequence;
+        this.L = charSequence;
     }
 
     public AccountSwitchingToolbar(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        LayoutInflater.from(context).inflate(true != fjul.i() ? R.layout.app_bar_custom_view1 : R.layout.app_bar_custom_view, (ViewGroup) this, true);
-        this.E = findViewById(R.id.app_bar_custom_view);
-        TextView textView = (TextView) findViewById(R.id.action_bar_title);
-        this.A = textView;
-        this.B = (ProductLockupView) findViewById(R.id.octarine_lockup);
-        if (!fjul.i()) {
-            textView.setVisibility(8);
-            textView.setTextAppearance(R.style.ActionBarTitleTextAppearance);
-            textView.setTextColor(bqnj.a(context, R.attr.actionBarOnBackground, R.color.google_grey900));
-            TextView textView2 = (TextView) findViewById(R.id.action_bar_subtitle);
-            this.I = textView2;
-            textView2.setTextAppearance(R.style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle);
-            this.I.setTextColor(bqnj.a(context, R.attr.actionBarOnBackground, R.color.google_grey900));
-            this.H = (ViewGroup) findViewById(R.id.app_bar_title_container);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, csvm.a);
-            K(eshc.b(obtainStyledAttributes.getInt(0, 1)));
-            obtainStyledAttributes.recycle();
-        }
+        LayoutInflater.from(context).inflate(R.layout.app_bar_custom_view, (ViewGroup) this, true);
+        this.J = findViewById(R.id.app_bar_custom_view);
+        this.K = (ViewGroup) findViewById(R.id.app_bar_title_container);
+        this.B = (TextView) findViewById(R.id.action_bar_subtitle);
+        this.A = (TextView) findViewById(R.id.action_bar_title);
+        this.C = (ProductLockupView) findViewById(R.id.octarine_lockup);
+        K(euwr.NORMAL);
         Resources resources = context.getResources();
         int dimensionPixelSize = resources.getDimensionPixelSize(R.dimen.action_bar_centered_logo_minimum_screen_width);
-        if (sqg.b(context) || resources.getDisplayMetrics().widthPixels <= dimensionPixelSize) {
-            Q(8388627);
+        if (ulh.b(context) || resources.getDisplayMetrics().widthPixels <= dimensionPixelSize) {
+            P(8388627);
         } else {
-            Q(17);
+            P(17);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class SavedState extends Toolbar.SavedState {
-        public static final Parcelable.Creator CREATOR = new csyf();
-        eshc e;
+        public static final Parcelable.Creator CREATOR = new cvhh();
+        euwr e;
         int f;
 
         public SavedState(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
-            this.e = eshc.b(parcel.readInt());
-            this.f = eshb.a(parcel.readInt());
+            this.e = euwr.b(parcel.readInt());
+            this.f = euwq.a(parcel.readInt());
         }
 
         @Override // android.support.v7.widget.Toolbar.SavedState, androidx.customview.view.AbsSavedState, android.os.Parcelable

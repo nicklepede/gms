@@ -4,18 +4,18 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bgek;
-import defpackage.bry;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bija;
+import defpackage.bsj;
 import java.util.Arrays;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class Value extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bgek();
+    public static final Parcelable.Creator CREATOR = new bija();
     public final int a;
     public boolean b;
     public float c;
@@ -30,7 +30,7 @@ public final class Value extends AbstractSafeParcelable {
     }
 
     public final int a() {
-        arwm.m(this.a == 1, "Value is not in int format");
+        atzb.m(this.a == 1, "Value is not in int format");
         return Float.floatToRawIntBits(this.c);
     }
 
@@ -48,10 +48,10 @@ public final class Value extends AbstractSafeParcelable {
         }
         if (i != 1) {
             if (i == 3) {
-                return arwb.b(this.d, value.d);
+                return atyq.b(this.d, value.d);
             }
             if (i == 4) {
-                return arwb.b(this.e, value.e);
+                return atyq.b(this.e, value.e);
             }
             if (i == 5) {
                 return Arrays.equals(this.f, value.f);
@@ -216,11 +216,11 @@ public final class Value extends AbstractSafeParcelable {
     public final void writeToParcel(Parcel parcel, int i) {
         Bundle bundle;
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.e(parcel, 2, this.b);
-        arxc.l(parcel, 3, this.c);
-        arxc.v(parcel, 4, this.d, false);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.e(parcel, 2, this.b);
+        atzr.l(parcel, 3, this.c);
+        atzr.v(parcel, 4, this.d, false);
         Map map = this.e;
         if (map == null) {
             bundle = null;
@@ -231,33 +231,33 @@ public final class Value extends AbstractSafeParcelable {
             }
             bundle = bundle2;
         }
-        arxc.g(parcel, 5, bundle, false);
-        arxc.p(parcel, 6, this.f, false);
-        arxc.m(parcel, 7, this.g, false);
-        arxc.i(parcel, 8, this.h, false);
-        arxc.c(parcel, a);
+        atzr.g(parcel, 5, bundle, false);
+        atzr.p(parcel, 6, this.f, false);
+        atzr.m(parcel, 7, this.g, false);
+        atzr.i(parcel, 8, this.h, false);
+        atzr.c(parcel, a);
     }
 
     public Value(int i, boolean z, float f, String str, Bundle bundle, int[] iArr, float[] fArr, byte[] bArr) {
-        bry bryVar;
+        bsj bsjVar;
         this.a = i;
         this.b = z;
         this.c = f;
         this.d = str;
         if (bundle == null) {
-            bryVar = null;
+            bsjVar = null;
         } else {
             ClassLoader classLoader = MapValue.class.getClassLoader();
-            arwm.s(classLoader);
+            atzb.s(classLoader);
             bundle.setClassLoader(classLoader);
-            bryVar = new bry(bundle.size());
+            bsjVar = new bsj(bundle.size());
             for (String str2 : bundle.keySet()) {
                 MapValue mapValue = (MapValue) bundle.getParcelable(str2);
-                arwm.s(mapValue);
-                bryVar.put(str2, mapValue);
+                atzb.s(mapValue);
+                bsjVar.put(str2, mapValue);
             }
         }
-        this.e = bryVar;
+        this.e = bsjVar;
         this.f = iArr;
         this.g = fArr;
         this.h = bArr;

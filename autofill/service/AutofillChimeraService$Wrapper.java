@@ -1,16 +1,16 @@
 package com.google.android.gms.autofill.service;
 
 import android.app.Service;
-import defpackage.afuj;
-import defpackage.afvn;
+import defpackage.ahuv;
+import defpackage.ahwc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public final class AutofillChimeraService$Wrapper extends afvn {
-    @Override // defpackage.afvn
+public final class AutofillChimeraService$Wrapper extends ahwc {
+    @Override // defpackage.ahwc
     protected final Service a() {
-        afuj afujVar = new afuj();
-        afujVar.e(this);
-        return afujVar;
+        ahuv ahuvVar = new ahuv();
+        ahuvVar.e(this);
+        return ahuvVar;
     }
 }

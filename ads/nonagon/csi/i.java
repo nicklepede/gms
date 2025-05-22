@@ -14,7 +14,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class i {
     protected final Map a;
@@ -52,7 +52,7 @@ public class i {
             com.google.android.gms.ads.internal.util.client.h.d("Empty or null paramMap.");
         } else {
             if (!this.j.getAndSet(true)) {
-                final String str = (String) p.br.g();
+                final String str = (String) p.bs.g();
                 this.f.set(q.a(this.b, str, new SharedPreferences.OnSharedPreferenceChangeListener() { // from class: com.google.android.gms.ads.nonagon.csi.h
                     @Override // android.content.SharedPreferences.OnSharedPreferenceChangeListener
                     public final void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String str2) {
@@ -95,7 +95,7 @@ public class i {
         this.e = ((Boolean) p.M.g()).booleanValue();
         this.g = cVar;
         this.h = ((Boolean) p.N.g()).booleanValue();
-        this.i = ((Boolean) p.aS.g()).booleanValue();
+        this.i = ((Boolean) p.aT.g()).booleanValue();
         this.b = context;
     }
 }

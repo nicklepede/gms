@@ -2,49 +2,59 @@ package com.google.android.gms.accountsettings.widget;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.ActionMenuView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import com.google.android.cast.JGCastService;
 import com.google.android.gms.R;
+import com.google.android.gms.accountsettings.widget.ProductLockupToolbar;
 import com.google.android.libraries.material.productlockup.ProductLockupView;
 import com.google.android.libraries.onegoogle.account.disc.AccountParticleDisc;
 import com.google.android.libraries.onegoogle.accountmenu.SelectedAccountDisc;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
-import defpackage.acn;
-import defpackage.bqnc;
-import defpackage.bqni;
-import defpackage.bqnj;
-import defpackage.ebhf;
-import defpackage.eiid;
-import defpackage.fjul;
-import defpackage.iuo;
-import defpackage.rrk;
-import defpackage.shy;
-import defpackage.shz;
-import defpackage.spi;
-import defpackage.sqg;
-import defpackage.swy;
-import defpackage.sxe;
-import defpackage.tam;
-import defpackage.tan;
-import defpackage.wp;
+import defpackage.acs;
+import defpackage.bsur;
+import defpackage.bsux;
+import defpackage.bsuy;
+import defpackage.edts;
+import defpackage.ekvi;
+import defpackage.evug;
+import defpackage.evwc;
+import defpackage.evwn;
+import defpackage.fmkm;
+import defpackage.iwe;
+import defpackage.tkt;
+import defpackage.tnw;
+import defpackage.ucf;
+import defpackage.ucg;
+import defpackage.uck;
+import defpackage.ulh;
+import defpackage.usw;
+import defpackage.utc;
+import defpackage.uwl;
+import defpackage.uwm;
+import defpackage.uwn;
+import defpackage.wu;
+import java.util.Iterator;
+import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class ProductLockupToolbar extends MaterialToolbar implements ebhf {
-    public bqni A;
-    public final ActionMenuView B;
-    public View C;
-    public shy D;
-    public spi E;
-    private final ProductLockupView H;
-    private View I;
-    private shz J;
+public class ProductLockupToolbar extends MaterialToolbar implements edts {
+    public final ProductLockupView A;
+    public uwn B;
+    public ucf C;
+    private bsux D;
+    private final ActionMenuView E;
+    private View F;
+    private View G;
+    private ucg J;
     private int K;
     private int L;
 
@@ -52,70 +62,21 @@ public class ProductLockupToolbar extends MaterialToolbar implements ebhf {
         this(context, null, R.attr.toolbarStyle);
     }
 
-    @Override // defpackage.ebha
-    public final void K(AppBarLayout appBarLayout, int i) {
+    private final void T() {
         View view;
-        if (this.L == i) {
+        ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) this.E.getLayoutParams();
+        if (marginLayoutParams == null || (view = this.G) == null) {
             return;
         }
-        this.L = i;
-        int f = appBarLayout.f();
-        float abs = Math.abs(i);
-        float f2 = 1.0f;
-        if (f > 0 && i <= 0) {
-            f2 = abs / f;
-        }
-        ActionMenuView actionMenuView = this.B;
-        ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) actionMenuView.getLayoutParams();
-        if (marginLayoutParams == null || (view = this.C) == null) {
-            return;
-        }
-        marginLayoutParams.setMarginEnd((int) (view.getWidth() * f2));
-        actionMenuView.setLayoutParams(marginLayoutParams);
-        this.C.setPivotX(r3.getWidth() * 0.8f);
-        this.C.setPivotY(r3.getHeight() / 2.0f);
-        this.C.setScaleX(f2);
-        this.C.setScaleY(f2);
-        this.C.setAlpha(f2);
-        this.C.setVisibility(f2 == 0.0f ? 8 : 0);
+        marginLayoutParams.setMarginEnd(view.getVisibility() == 0 ? (int) getResources().getDimension(R.dimen.abc_action_button_min_width_material) : 0);
     }
 
-    public final void L(String str) {
-        View view = this.C;
-        if (view == null) {
-            return;
-        }
-        iuo.q(view, new tam(str));
-    }
-
-    public final void M(eiid eiidVar) {
-        shz shzVar = this.J;
-        if (shzVar == null) {
-            return;
-        }
-        shzVar.a(eiidVar);
-        if (this.C != null) {
-            if (eiidVar.h()) {
-                this.C.setContentDescription(getContext().getString(R.string.common_account_identity_a11y_description, ((sxe) eiidVar.c()).c, ((sxe) eiidVar.c()).b));
-                this.C.setImportantForAccessibility(1);
-            } else {
-                this.C.setContentDescription("");
-                this.C.setImportantForAccessibility(2);
-            }
-        }
-    }
-
-    public final void N(int i) {
-        this.H.setVisibility(i);
-        O();
-    }
-
-    public final void O() {
-        Menu g = this.B.g();
+    private final void U() {
+        Menu g = this.E.g();
         this.K = 0;
         if (g.size() != 0) {
             if (g.size() > 1) {
-                ProductLockupView productLockupView = this.H;
+                ProductLockupView productLockupView = this.A;
                 if (productLockupView.getVisibility() == 0) {
                     Resources resources = getResources();
                     int i = productLockupView.d;
@@ -148,24 +109,156 @@ public class ProductLockupToolbar extends MaterialToolbar implements ebhf {
                 }
             }
         }
-        ProductLockupView productLockupView2 = this.H;
-        wp wpVar = (wp) productLockupView2.getLayoutParams();
+        ProductLockupView productLockupView2 = this.A;
+        wu wuVar = (wu) productLockupView2.getLayoutParams();
         Resources resources2 = getResources();
-        if (sqg.b(getContext())) {
-            wpVar.a = 8388627;
+        if (fmkm.h() || ulh.b(getContext())) {
+            wuVar.a = 8388627;
         } else if (resources2.getDisplayMetrics().widthPixels <= resources2.getDimensionPixelSize(R.dimen.as_centered_logo_minimum_screen_width)) {
-            wpVar.a = 8388627;
+            wuVar.a = 8388627;
         } else {
-            wpVar.a = 17;
+            wuVar.a = 17;
         }
-        productLockupView2.setLayoutParams(wpVar);
+        productLockupView2.setLayoutParams(wuVar);
         requestLayout();
+    }
+
+    public final void K() {
+        View view = this.G;
+        if (view != null) {
+            view.setVisibility(8);
+        }
+        if (fmkm.h()) {
+            T();
+        }
+    }
+
+    public final void L(String str) {
+        View view = this.G;
+        if (view == null) {
+            return;
+        }
+        iwe.q(view, new uwl(str));
+    }
+
+    public final void M(ekvi ekviVar) {
+        ucg ucgVar = this.J;
+        if (ucgVar == null) {
+            return;
+        }
+        ucgVar.a(ekviVar);
+        if (this.G != null) {
+            if (ekviVar.h()) {
+                this.G.setContentDescription(getContext().getString(R.string.common_account_identity_a11y_description, ((utc) ekviVar.c()).c, ((utc) ekviVar.c()).b));
+                this.G.setImportantForAccessibility(1);
+            } else {
+                this.G.setContentDescription("");
+                this.G.setImportantForAccessibility(2);
+            }
+        }
+    }
+
+    public final void N(View.OnClickListener onClickListener) {
+        View view = this.G;
+        if (view == null) {
+            return;
+        }
+        view.setOnClickListener(onClickListener);
+    }
+
+    public final void O(List list) {
+        Menu g = this.E.g();
+        g.clear();
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            final evug evugVar = (evug) it.next();
+            MenuItem add = g.add(evugVar.c);
+            if ((evugVar.b & 4) != 0) {
+                Context context = getContext();
+                evwc evwcVar = evugVar.d;
+                if (evwcVar == null) {
+                    evwcVar = evwc.a;
+                }
+                Drawable c = uck.c(context, evwcVar);
+                if (c != null) {
+                    add.setIcon(c);
+                }
+            }
+            evwn evwnVar = evugVar.e;
+            if (evwnVar == null) {
+                evwnVar = evwn.a;
+            }
+            if (tnw.c(evwnVar)) {
+                add.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() { // from class: uwk
+                    @Override // android.view.MenuItem.OnMenuItemClickListener
+                    public final boolean onMenuItemClick(MenuItem menuItem) {
+                        uwn uwnVar = ProductLockupToolbar.this.B;
+                        if (uwnVar == null) {
+                            return false;
+                        }
+                        uwnVar.a(evugVar);
+                        return true;
+                    }
+                });
+            }
+        }
+        U();
+    }
+
+    public final void P(int i) {
+        this.A.setVisibility(i);
+        U();
+    }
+
+    public final void Q() {
+        View view = this.G;
+        if (view != null) {
+            view.setVisibility(0);
+        }
+        if (fmkm.h()) {
+            T();
+        }
+    }
+
+    public final void R(boolean z, boolean z2) {
+        bsux bsuxVar = this.D;
+        if (bsuxVar != null) {
+            bsuxVar.a(z, z2);
+        }
+    }
+
+    @Override // defpackage.edtn
+    public final void a(AppBarLayout appBarLayout, int i) {
+        View view;
+        if (fmkm.h() || this.L == i) {
+            return;
+        }
+        this.L = i;
+        int f = appBarLayout.f();
+        float abs = Math.abs(i);
+        float f2 = 1.0f;
+        if (f > 0 && i <= 0) {
+            f2 = abs / f;
+        }
+        ActionMenuView actionMenuView = this.E;
+        ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) actionMenuView.getLayoutParams();
+        if (marginLayoutParams == null || (view = this.G) == null) {
+            return;
+        }
+        marginLayoutParams.setMarginEnd((int) (view.getWidth() * f2));
+        actionMenuView.setLayoutParams(marginLayoutParams);
+        this.G.setPivotX(r3.getWidth() * 0.8f);
+        this.G.setPivotY(r3.getHeight() / 2.0f);
+        this.G.setScaleX(f2);
+        this.G.setScaleY(f2);
+        this.G.setAlpha(f2);
+        this.G.setVisibility(f2 == 0.0f ? 8 : 0);
     }
 
     @Override // android.support.v7.widget.Toolbar, android.view.View
     protected final void onMeasure(int i, int i2) {
         super.onMeasure(i, i2);
-        ProductLockupView productLockupView = this.H;
+        ProductLockupView productLockupView = this.A;
         if (productLockupView.getVisibility() != 0) {
             return;
         }
@@ -173,7 +266,7 @@ public class ProductLockupToolbar extends MaterialToolbar implements ebhf {
         int max = Math.max(1, this.K) * resources.getDimensionPixelSize(R.dimen.as_action_menu_item_size);
         int size = ((View.MeasureSpec.getSize(i) - resources.getDimensionPixelSize(R.dimen.as_close_button_size)) - resources.getDimensionPixelSize(R.dimen.as_collapsed_avatar_touch_view_size)) - max;
         productLockupView.measure(View.MeasureSpec.makeMeasureSpec(size, JGCastService.FLAG_USE_TDLS), View.MeasureSpec.makeMeasureSpec(View.MeasureSpec.getSize(i2), JGCastService.FLAG_USE_TDLS));
-        View view = this.I;
+        View view = this.F;
         if (view != null) {
             view.measure(View.MeasureSpec.makeMeasureSpec(size, JGCastService.FLAG_USE_TDLS), View.MeasureSpec.makeMeasureSpec(max + resources.getDimensionPixelSize(R.dimen.abc_action_button_min_width_material), JGCastService.FLAG_USE_TDLS));
         }
@@ -186,33 +279,43 @@ public class ProductLockupToolbar extends MaterialToolbar implements ebhf {
     public ProductLockupToolbar(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         this.L = -1;
-        ((tan) rrk.a(tan.class, context)).f(this);
+        ((uwm) tkt.a(uwm.class, context)).f(this);
         if (this.q != 0) {
             this.q = 0;
             if (e() != null) {
                 requestLayout();
             }
         }
-        context.getTheme().obtainStyledAttributes(attributeSet, swy.d, 0, 0).recycle();
-        LayoutInflater.from(new acn(context, true != bqnc.d() ? R.style.AsThemeLightOverlay : R.style.AsThemeDarkOverlay)).inflate(true != fjul.j() ? R.layout.as_product_lockup_toolbar1 : R.layout.as_product_lockup_toolbar, (ViewGroup) this, true);
+        context.getTheme().obtainStyledAttributes(attributeSet, usw.d, 0, 0).recycle();
+        LayoutInflater.from(new acs(context, true != bsur.d() ? R.style.AsThemeLightOverlay : R.style.AsThemeDarkOverlay)).inflate(true != fmkm.i() ? R.layout.as_product_lockup_toolbar1 : R.layout.as_product_lockup_toolbar, (ViewGroup) this, true);
         ProductLockupView productLockupView = (ProductLockupView) findViewById(R.id.mg_lockup);
-        this.H = productLockupView;
-        this.B = (ActionMenuView) findViewById(R.id.custom_menu);
+        this.A = productLockupView;
+        this.E = (ActionMenuView) findViewById(R.id.custom_menu);
         productLockupView.e(0);
-        productLockupView.d(bqnj.a(context, R.attr.asProductNameColor, R.color.google_grey700));
-        this.C = findViewById(R.id.account_particle_disc_container);
-        this.I = findViewById(R.id.toolbar_menu_container);
-        if (this.D != null) {
-            if (fjul.j()) {
-                this.J = new shz(((SelectedAccountDisc) findViewById(R.id.selected_account_disc)).b, this.D.a, true);
+        productLockupView.d(bsuy.a(context, R.attr.asProductNameColor, R.color.google_grey700));
+        this.G = findViewById(R.id.account_particle_disc_container);
+        this.F = findViewById(R.id.toolbar_menu_container);
+        if (this.C != null) {
+            if (fmkm.i()) {
+                this.J = new ucg(((SelectedAccountDisc) findViewById(R.id.selected_account_disc)).b, this.C.a, true);
             } else {
-                this.J = this.D.a((AccountParticleDisc) findViewById(R.id.account_particle_disc), true);
+                this.J = this.C.a((AccountParticleDisc) findViewById(R.id.account_particle_disc), true);
             }
         }
-        if (bqnc.d()) {
+        if (fmkm.h()) {
+            if (bsur.d()) {
+                productLockupView.a(2);
+                return;
+            } else {
+                productLockupView.a(1);
+                productLockupView.d(bsuy.a(getContext(), R.attr.colorOnSurface, R.color.google_grey700));
+                return;
+            }
+        }
+        if (bsur.d()) {
             productLockupView.a(2);
         } else {
-            this.A = new bqni(productLockupView, bqnj.a(getContext(), R.attr.asProductNameColor, R.color.google_grey700), bqnj.a(getContext(), R.attr.colorOnSurface, R.color.google_grey700));
+            this.D = new bsux(productLockupView, bsuy.a(getContext(), R.attr.asProductNameColor, R.color.google_grey700), bsuy.a(getContext(), R.attr.colorOnSurface, R.color.google_grey700));
         }
     }
 }

@@ -4,11 +4,11 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.Feature;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqxu;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.arzc;
+import defpackage.ataj;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.aubr;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -17,11 +17,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeSet;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ApiFeatureRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new arzc();
-    private static final Comparator e = new Comparator() { // from class: arzb
+    public static final Parcelable.Creator CREATOR = new aubr();
+    private static final Comparator e = new Comparator() { // from class: aubq
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
             Feature feature = (Feature) obj;
@@ -37,7 +37,7 @@ public class ApiFeatureRequest extends AbstractSafeParcelable {
     public final String d;
 
     public ApiFeatureRequest(List list, boolean z, String str, String str2) {
-        arwm.s(list);
+        atzb.s(list);
         this.a = list;
         this.b = z;
         this.c = str;
@@ -48,7 +48,7 @@ public class ApiFeatureRequest extends AbstractSafeParcelable {
         TreeSet treeSet = new TreeSet(e);
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            Collections.addAll(treeSet, ((aqxu) it.next()).gh());
+            Collections.addAll(treeSet, ((ataj) it.next()).gw());
         }
         return new ApiFeatureRequest(new ArrayList(treeSet), z, null, null);
     }
@@ -58,7 +58,7 @@ public class ApiFeatureRequest extends AbstractSafeParcelable {
             return false;
         }
         ApiFeatureRequest apiFeatureRequest = (ApiFeatureRequest) obj;
-        return this.b == apiFeatureRequest.b && arwb.b(this.a, apiFeatureRequest.a) && arwb.b(this.c, apiFeatureRequest.c) && arwb.b(this.d, apiFeatureRequest.d);
+        return this.b == apiFeatureRequest.b && atyq.b(this.a, apiFeatureRequest.a) && atyq.b(this.c, apiFeatureRequest.c) && atyq.b(this.d, apiFeatureRequest.d);
     }
 
     public final int hashCode() {
@@ -68,11 +68,11 @@ public class ApiFeatureRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.e(parcel, 2, this.b);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.e(parcel, 2, this.b);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.c(parcel, a);
     }
 }

@@ -4,54 +4,54 @@ import android.content.Context;
 import android.system.Os;
 import android.util.Log;
 import com.google.android.gms.providerinstaller.FlagRegistrar;
-import defpackage.asrl;
-import defpackage.dvms;
+import defpackage.auvf;
+import defpackage.dxxt;
 import j$.util.Objects;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class FlagRegistrar {
     static final AtomicBoolean a = new AtomicBoolean(false);
     public static final /* synthetic */ int c = 0;
-    public ExecutorService b = Executors.newSingleThreadExecutor(new asrl("FlagRegistrar"));
+    public ExecutorService b = Executors.newSingleThreadExecutor(new auvf("FlagRegistrar"));
 
     final synchronized void a(final Context context) {
         AtomicBoolean atomicBoolean = a;
         if (!atomicBoolean.get() && !Objects.equals(context.getPackageName(), "com.android.vending")) {
-            dvms.e(context);
+            dxxt.e(context);
             ExecutorService executorService = this.b;
             if (executorService == null) {
                 Log.w("FlagRegistrar", "register() failed.");
             } else {
-                executorService.execute(new Runnable() { // from class: cwwc
+                executorService.execute(new Runnable() { // from class: czfz
                     /* JADX WARN: Finally extract failed */
                     @Override // java.lang.Runnable
                     public final void run() {
-                        cwwd cwwdVar;
+                        czga czgaVar;
                         FlagRegistrar flagRegistrar = FlagRegistrar.this;
                         Objects.requireNonNull(flagRegistrar.b);
                         Context context2 = context;
-                        String[] n = assx.b(context2).n(Os.getuid());
+                        String[] n = auwr.b(context2).n(Os.getuid());
                         if (n == null || n.length == 0 || n[0] == null) {
                             Log.w("FlagRegistrar", "Could not find determine package name.");
-                            cwwdVar = null;
+                            czgaVar = null;
                         } else {
-                            cwwdVar = new cwwd(context2, n);
+                            czgaVar = new czga(context2, n);
                         }
-                        if (cwwdVar == null) {
+                        if (czgaVar == null) {
                             Log.w("FlagRegistrar", "Unable to determine config package name");
                             return;
                         }
-                        int i = frpu.a;
-                        String c2 = dvmh.c(cwwdVar, "com.google.android.gms.providerinstaller");
-                        aqxd aqxdVar = cvzk.a;
+                        dydy dydyVar = fuka.a;
+                        String c2 = dxxi.c(czgaVar, "com.google.android.gms.providerinstaller");
+                        aszs aszsVar = cyjh.a;
                         try {
                             try {
-                                ((enpf) new dvnz(new cwal(context2)).e(c2, 1, new String[0])).u();
+                                ((eqcy) new dxyz(new cyki(context2)).e(c2, 1, new String[0])).u();
                                 ExecutorService executorService2 = flagRegistrar.b;
                                 if (executorService2 != null) {
                                     executorService2.shutdown();

@@ -3,9 +3,9 @@ package com.google.android.gms.icing;
 import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
-import defpackage.blfw;
+import defpackage.bnmo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class GcmReceiverChimeraService extends Service {
     @Override // com.google.android.chimera.Service
@@ -15,7 +15,7 @@ public class GcmReceiverChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        blfw.d("Received gcm intent: %s extras: %s", intent, intent != null ? intent.getExtras() : "");
+        bnmo.d("Received gcm intent: %s extras: %s", intent, intent != null ? intent.getExtras() : "");
         if (intent == null) {
             stopSelf(i2);
             return 2;

@@ -9,34 +9,34 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 import com.google.android.gms.R;
-import defpackage.alar;
-import defpackage.albk;
-import defpackage.aloo;
-import defpackage.alop;
-import defpackage.eiig;
-import defpackage.elwx;
-import defpackage.elxv;
-import defpackage.elxw;
+import defpackage.ancc;
+import defpackage.ancv;
+import defpackage.anpz;
+import defpackage.anqa;
+import defpackage.ekvl;
+import defpackage.eokl;
+import defpackage.eolj;
+import defpackage.eolk;
 import defpackage.ig;
-import defpackage.qet;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class AaSettingsActivityImpl extends qet {
+public class AaSettingsActivityImpl extends rxx {
     static final ComponentName j = new ComponentName("com.google.android.gms", "com.google.android.gms.carsetup.DiscoverAaSettingsActivity");
 
     static boolean k(PackageManager packageManager, String str) {
         return new Intent("com.google.android.projection.gearhead.SETTINGS").setPackage(str).resolveActivity(packageManager) != null;
     }
 
-    public final void a(elxv elxvVar) {
-        alar.a(this).c(albk.f(elwx.CAR_SERVICE, elxw.SETTINGS_AA_GOOGLE_SETTINGS, elxvVar).c());
+    public final void a(eolj eoljVar) {
+        ancc.a(this).c(ancv.f(eokl.CAR_SERVICE, eolk.SETTINGS_AA_GOOGLE_SETTINGS, eoljVar).c());
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        a(elxv.ct);
+        a(eolj.ct);
         if (getIntent().hasExtra("gearhead_package")) {
             startActivity(new Intent("com.google.android.projection.gearhead.SETTINGS").setPackage(getIntent().getStringExtra("gearhead_package")));
             finish();
@@ -47,12 +47,12 @@ public class AaSettingsActivityImpl extends qet {
             finish();
             return;
         }
-        a(elxv.cu);
+        a(eolj.cu);
         setContentView(R.layout.discover_aa_settings);
-        ig hy = hy();
-        eiig.x(hy);
-        hy.q(4, 4);
-        hy.o(true);
+        ig hO = hO();
+        ekvl.y(hO);
+        hO.q(4, 4);
+        hO.o(true);
         ((TextView) findViewById(R.id.discover_aa_title)).setText(getString(R.string.car_setup_discover_aa, new Object[]{getString(R.string.car_app_name)}));
         int color = getColor(R.color.material_grey_700);
         int[] iArr = {R.id.car_setup_discover_nav, R.id.car_setup_discover_media, R.id.car_setup_discover_messaging, R.id.car_setup_discover_voice_control};
@@ -62,14 +62,14 @@ public class AaSettingsActivityImpl extends qet {
         Button button = (Button) findViewById(R.id.car_setup_discover_learn_more);
         Intent intent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.android.com/auto"));
         if (intent.resolveActivity(getPackageManager()) != null) {
-            button.setOnClickListener(new aloo(this, intent));
+            button.setOnClickListener(new anpz(this, intent));
         } else {
             button.setVisibility(8);
         }
-        ((Button) findViewById(R.id.car_setup_discover_get_app)).setOnClickListener(new alop(this));
+        ((Button) findViewById(R.id.car_setup_discover_get_app)).setOnClickListener(new anqa(this));
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() != 16908332) {
             return super.onOptionsItemSelected(menuItem);
@@ -78,7 +78,7 @@ public class AaSettingsActivityImpl extends qet {
         return true;
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onResume() {
         super.onResume();
         if (k(getPackageManager(), "com.google.android.projection.gearhead")) {

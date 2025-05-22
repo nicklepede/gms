@@ -9,16 +9,16 @@ import android.widget.TextView;
 import com.google.android.chimera.android.Activity;
 import com.google.android.gms.R;
 import defpackage.dg;
-import defpackage.eike;
-import defpackage.jpc;
-import defpackage.jpd;
-import defpackage.jrh;
-import defpackage.kdr;
-import defpackage.kjo;
-import defpackage.tpz;
-import defpackage.tqa;
+import defpackage.ekxj;
+import defpackage.jvr;
+import defpackage.jvs;
+import defpackage.jxw;
+import defpackage.lwb;
+import defpackage.mbz;
+import defpackage.vlz;
+import defpackage.vma;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class LicenseFragment extends dg {
     @Override // defpackage.dg
@@ -30,22 +30,22 @@ public final class LicenseFragment extends dg {
     public final void onViewCreated(View view, Bundle bundle) {
         Application application = ((Activity) requireContext()).getApplication();
         LicenseWrapper licenseWrapper = (LicenseWrapper) getArguments().getParcelable("license");
-        eike.e(licenseWrapper);
-        tqa tqaVar = (tqa) new jrh(this, new tpz(application, licenseWrapper)).a(tqa.class);
+        ekxj.e(licenseWrapper);
+        vma vmaVar = (vma) new jxw(this, new vlz(application, licenseWrapper)).a(vma.class);
         final TextView textView = (TextView) view.findViewById(android.R.id.text1);
-        tqaVar.a.g(getViewLifecycleOwner(), new jpd() { // from class: tpg
-            @Override // defpackage.jpd
+        vmaVar.a.g(getViewLifecycleOwner(), new jvs() { // from class: vlg
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 textView.setText((String) obj);
             }
         });
-        jpc jpcVar = tqaVar.b;
-        final kdr a = kjo.a(this);
-        jpcVar.g(getViewLifecycleOwner(), new jpd() { // from class: tph
-            @Override // defpackage.jpd
+        jvr jvrVar = vmaVar.b;
+        final lwb a = mbz.a(this);
+        jvrVar.g(getViewLifecycleOwner(), new jvs() { // from class: vlh
+            @Override // defpackage.jvs
             public final void a(Object obj) {
                 if (((Boolean) obj).booleanValue()) {
-                    kdr.this.q();
+                    lwb.this.q();
                 }
             }
         });

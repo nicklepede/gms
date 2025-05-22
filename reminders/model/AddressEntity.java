@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxec;
+import defpackage.atyq;
+import defpackage.czny;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class AddressEntity extends AbstractSafeParcelable implements Address {
-    public static final Parcelable.Creator CREATOR = new cxec();
+    public static final Parcelable.Creator CREATOR = new czny();
     public final String a;
     public final String b;
     public final String c;
@@ -36,7 +36,7 @@ public class AddressEntity extends AbstractSafeParcelable implements Address {
     }
 
     public static boolean j(Address address, Address address2) {
-        return arwb.b(address.a(), address2.a()) && arwb.b(address.c(), address2.c()) && arwb.b(address.f(), address2.f()) && arwb.b(address.g(), address2.g()) && arwb.b(address.i(), address2.i()) && arwb.b(address.h(), address2.h()) && arwb.b(address.e(), address2.e()) && arwb.b(address.d(), address2.d());
+        return atyq.b(address.a(), address2.a()) && atyq.b(address.c(), address2.c()) && atyq.b(address.f(), address2.f()) && atyq.b(address.g(), address2.g()) && atyq.b(address.i(), address2.i()) && atyq.b(address.h(), address2.h()) && atyq.b(address.e(), address2.e()) && atyq.b(address.d(), address2.d());
     }
 
     @Override // com.google.android.gms.reminders.model.Address
@@ -95,14 +95,14 @@ public class AddressEntity extends AbstractSafeParcelable implements Address {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxec.a(this, parcel);
+        czny.a(this, parcel);
     }
 
     public AddressEntity(Address address) {
         this(address.a(), address.c(), address.f(), address.g(), address.i(), address.h(), address.e(), address.d());
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

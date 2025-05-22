@@ -3,13 +3,13 @@ package com.google.android.gms.vision.text.internal.client;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.dicy;
+import defpackage.atzr;
+import defpackage.dkoj;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class LineBoxParcel extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dicy();
+    public static final Parcelable.Creator CREATOR = new dkoj();
     public final WordBoxParcel[] a;
     public final BoundingBoxParcel b;
     public final BoundingBoxParcel c;
@@ -38,18 +38,18 @@ public class LineBoxParcel extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.J(parcel, 2, this.a, i);
-        arxc.t(parcel, 3, this.b, i, false);
-        arxc.t(parcel, 4, this.c, i, false);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.l(parcel, 7, this.f);
-        arxc.v(parcel, 8, this.g, false);
-        arxc.o(parcel, 9, this.h);
-        arxc.e(parcel, 10, this.i);
-        arxc.o(parcel, 11, this.j);
-        arxc.o(parcel, 12, this.k);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.J(parcel, 2, this.a, i);
+        atzr.t(parcel, 3, this.b, i, false);
+        atzr.t(parcel, 4, this.c, i, false);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.l(parcel, 7, this.f);
+        atzr.v(parcel, 8, this.g, false);
+        atzr.o(parcel, 9, this.h);
+        atzr.e(parcel, 10, this.i);
+        atzr.o(parcel, 11, this.j);
+        atzr.o(parcel, 12, this.k);
+        atzr.c(parcel, a);
     }
 }

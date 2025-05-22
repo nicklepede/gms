@@ -1,24 +1,24 @@
 package com.google.android.gms.ads.internal.customtabs;
 
 import android.content.ComponentName;
-import defpackage.ajt;
-import defpackage.ajw;
-import defpackage.ajx;
+import defpackage.akc;
+import defpackage.akf;
+import defpackage.akg;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class c extends ajw {
-    public ajx b;
+public final class c extends akf {
+    public akg b;
 
     public c() {
         new AtomicBoolean(false);
     }
 
-    @Override // defpackage.ajw
-    public final void a(ajt ajtVar) {
-        ajtVar.c();
-        this.b = ajtVar.a(new b());
+    @Override // defpackage.akf
+    public final void a(akc akcVar) {
+        akcVar.c();
+        this.b = akcVar.a(new b());
     }
 
     @Override // android.content.ServiceConnection

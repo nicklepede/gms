@@ -1,11 +1,11 @@
 package com.google.android.gms.wearable.selector;
 
-import defpackage.dmad;
-import defpackage.dmaf;
+import defpackage.dolp;
+import defpackage.dolr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public final class NativeOsCompat extends dmaf {
+public final class NativeOsCompat extends dolr {
     static {
         System.loadLibrary("wearable-selector");
     }
@@ -16,7 +16,7 @@ public final class NativeOsCompat extends dmaf {
 
     public static void a(int i, String str) {
         if (i < 0) {
-            throw new dmad(str, nativeGetErrno());
+            throw new dolp(str, nativeGetErrno());
         }
     }
 

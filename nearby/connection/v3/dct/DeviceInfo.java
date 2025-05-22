@@ -2,7 +2,7 @@ package com.google.android.gms.nearby.connection.v3.dct;
 
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class DeviceInfo extends DctDeviceDataElement {
     /* JADX WARN: Illegal instructions before constructor call */
@@ -20,11 +20,6 @@ public class DeviceInfo extends DctDeviceDataElement {
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.nearby.connection.v3.dct.DeviceInfo.<init>(byte[]):void");
-    }
-
-    public final byte[] b() {
-        byte[] bArr = this.c;
-        return Arrays.copyOf(bArr, bArr.length);
     }
 
     public final boolean equals(Object obj) {

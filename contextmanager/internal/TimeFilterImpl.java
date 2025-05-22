@@ -3,33 +3,33 @@ package com.google.android.gms.contextmanager.internal;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.atrv;
-import defpackage.atrw;
-import defpackage.atrx;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.avvy;
+import defpackage.avvz;
+import defpackage.avwa;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class TimeFilterImpl extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new atrv();
+    public static final Parcelable.Creator CREATOR = new avvy();
     public final ArrayList a;
     public final int[] b;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-    public class Interval extends AbstractSafeParcelable implements atrx {
-        public static final Parcelable.Creator CREATOR = new atrw();
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+    public class Interval extends AbstractSafeParcelable implements avwa {
+        public static final Parcelable.Creator CREATOR = new avvz();
         public final long a;
         public final long b;
 
         public Interval(long j, long j2) {
-            arwm.b(j >= -1);
-            arwm.b(j2 > -1);
+            atzb.b(j >= -1);
+            atzb.b(j2 > -1);
             if (j != -1) {
-                arwm.b(j <= j2);
+                atzb.b(j <= j2);
             }
             this.a = j;
             this.b = j2;
@@ -39,12 +39,12 @@ public class TimeFilterImpl extends AbstractSafeParcelable {
             return this.b != Long.MAX_VALUE;
         }
 
-        @Override // defpackage.atrx
+        @Override // defpackage.avwa
         public final long b() {
             return this.b;
         }
 
-        @Override // defpackage.atrx
+        @Override // defpackage.avwa
         public final long c() {
             return this.a;
         }
@@ -70,10 +70,10 @@ public class TimeFilterImpl extends AbstractSafeParcelable {
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
-            int a = arxc.a(parcel);
-            arxc.q(parcel, 2, this.a);
-            arxc.q(parcel, 3, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.q(parcel, 2, this.a);
+            atzr.q(parcel, 3, this.b);
+            atzr.c(parcel, a);
         }
     }
 
@@ -90,7 +90,7 @@ public class TimeFilterImpl extends AbstractSafeParcelable {
             return false;
         }
         TimeFilterImpl timeFilterImpl = (TimeFilterImpl) obj;
-        return arwb.b(this.a, timeFilterImpl.a) && arwb.b(this.b, timeFilterImpl.b);
+        return atyq.b(this.a, timeFilterImpl.a) && atyq.b(this.b, timeFilterImpl.b);
     }
 
     public final int hashCode() {
@@ -100,9 +100,9 @@ public class TimeFilterImpl extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         ArrayList arrayList = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 2, arrayList, false);
-        arxc.p(parcel, 3, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 2, arrayList, false);
+        atzr.p(parcel, 3, this.b, false);
+        atzr.c(parcel, a);
     }
 }

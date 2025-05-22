@@ -7,40 +7,40 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import com.google.android.chimera.config.ModuleManager;
 import com.google.android.gms.R;
-import defpackage.aqup;
-import defpackage.asng;
-import defpackage.azpv;
-import defpackage.azpx;
-import defpackage.azqe;
-import defpackage.azrr;
-import defpackage.azzy;
-import defpackage.babj;
-import defpackage.babk;
-import defpackage.babn;
-import defpackage.babr;
+import defpackage.asxe;
+import defpackage.aura;
+import defpackage.bbtr;
+import defpackage.bbtt;
+import defpackage.bbua;
+import defpackage.bbvn;
+import defpackage.bcdu;
+import defpackage.bcff;
+import defpackage.bcfg;
+import defpackage.bcfj;
+import defpackage.bcfn;
 import defpackage.bp;
-import defpackage.bqna;
-import defpackage.eiig;
+import defpackage.bsup;
+import defpackage.ekvl;
 import defpackage.ew;
-import defpackage.fnmh;
-import defpackage.qet;
+import defpackage.fqep;
+import defpackage.rxx;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class DeleteMemberChimeraActivity extends qet implements babn, babj {
-    public azpx j;
+public final class DeleteMemberChimeraActivity extends rxx implements bcfj, bcff {
+    public bbtt j;
     public String k;
     public String l;
     public String m;
     public boolean n;
     public boolean o = false;
     public ProgressDialog p = null;
-    public azpv q;
-    public azrr r;
+    public bbtr q;
+    public bbvn r;
     private String s;
 
     private final void s() {
-        ProgressDialog progressDialog = new ProgressDialog(this, azqe.c(getIntent()));
+        ProgressDialog progressDialog = new ProgressDialog(this, bbua.c(getIntent()));
         this.p = progressDialog;
         progressDialog.setIndeterminate(true);
         this.p.setCancelable(false);
@@ -57,47 +57,47 @@ public final class DeleteMemberChimeraActivity extends qet implements babn, babj
         finish();
     }
 
-    @Override // defpackage.babj
+    @Override // defpackage.bcff
     public final int a() {
         return 1;
     }
 
-    @Override // defpackage.babj
-    public final void hB() {
+    @Override // defpackage.bcff
+    public final void hR() {
         this.o = true;
         s();
-        getSupportLoaderManager().c(0, null, new azzy(this));
+        getSupportLoaderManager().c(0, null, new bcdu(this));
     }
 
-    @Override // defpackage.babj
+    @Override // defpackage.bcff
     public final int k() {
         return 2;
     }
 
-    @Override // defpackage.babn
-    public final azpv l() {
+    @Override // defpackage.bcfj
+    public final bbtr l() {
         return this.q;
     }
 
-    @Override // defpackage.babn
-    public final azpx m() {
+    @Override // defpackage.bcfj
+    public final bbtt m() {
         return this.j;
     }
 
-    @Override // defpackage.babn
+    @Override // defpackage.bcfj
     public final void n() {
         this.r.h(17);
         setResult(10);
         finish();
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
-        babr babrVar;
+        bcfn bcfnVar;
         super.onCreate(bundle);
-        this.r = new azrr(this);
-        String q = asng.q(this);
-        if (q != null && !aqup.d(this).h(q)) {
+        this.r = new bbvn(this);
+        String q = aura.q(this);
+        if (q != null && !asxe.d(this).h(q)) {
             this.r.f(2, 8, "deletemember");
             t(-3);
             return;
@@ -105,7 +105,7 @@ public final class DeleteMemberChimeraActivity extends qet implements babn, babj
         if (getIntent().getStringExtra("clientCallingPackage") != null) {
             q = getIntent().getStringExtra("clientCallingPackage");
         }
-        azqe.d(this, getIntent(), q);
+        bbua.d(this, getIntent(), q);
         String stringExtra = getIntent().getStringExtra("accountName");
         this.k = stringExtra;
         if (stringExtra == null) {
@@ -114,7 +114,7 @@ public final class DeleteMemberChimeraActivity extends qet implements babn, babj
             return;
         }
         Account account = null;
-        for (Account account2 : bqna.b(this).p("com.google")) {
+        for (Account account2 : bsup.b(this).p("com.google")) {
             if (true == account2.name.equals(this.k)) {
                 account = account2;
             }
@@ -147,56 +147,56 @@ public final class DeleteMemberChimeraActivity extends qet implements babn, babj
             return;
         }
         String stringExtra5 = getIntent().getStringExtra("appId");
-        eiig.x(stringExtra5);
-        this.q = new azpv(stringExtra5, Integer.toString(ModuleManager.get(this).getCurrentModule().moduleVersion));
-        azrr azrrVar = this.r;
+        ekvl.y(stringExtra5);
+        this.q = new bbtr(stringExtra5, Integer.toString(ModuleManager.get(this).getCurrentModule().moduleVersion));
+        bbvn bbvnVar = this.r;
         String str = this.k;
-        eiig.x(str);
-        azpv azpvVar = this.q;
-        azrrVar.d(str, azpvVar.b, azpvVar.a);
-        this.j = new azpx();
+        ekvl.y(str);
+        bbtr bbtrVar = this.q;
+        bbvnVar.d(str, bbtrVar.b, bbtrVar.a);
+        this.j = new bbtt();
         if (getIntent().getStringExtra("consistencyToken") != null) {
             this.j.c(getIntent().getStringExtra("consistencyToken"), getIntent().getLongExtra("tokenExpirationTimeSecs", 0L));
         }
-        if (fnmh.h()) {
+        if (fqep.h()) {
             getWindow();
-            azqe.e(this);
-            fnmh.l();
+            bbua.e(this);
+            fqep.l();
         }
         setContentView(R.layout.fm_activity_delete_member);
         ew supportFragmentManager = getSupportFragmentManager();
         if (this.n) {
             String str2 = this.k;
-            eiig.x(str2);
-            babrVar = new babr();
+            ekvl.y(str2);
+            bcfnVar = new bcfn();
             Bundle bundle2 = new Bundle(1);
             bundle2.putString("accountName", str2);
-            babrVar.setArguments(bundle2);
+            bcfnVar.setArguments(bundle2);
         } else {
             String str3 = this.k;
-            eiig.x(str3);
+            ekvl.y(str3);
             String str4 = this.l;
-            eiig.x(str4);
-            babr babrVar2 = new babr();
+            ekvl.y(str4);
+            bcfn bcfnVar2 = new bcfn();
             Bundle bundle3 = new Bundle(2);
             bundle3.putString("accountName", str3);
             bundle3.putString("memberId", str4);
-            babrVar2.setArguments(bundle3);
-            babrVar = babrVar2;
+            bcfnVar2.setArguments(bundle3);
+            bcfnVar = bcfnVar2;
         }
         if (supportFragmentManager.g(R.id.fm_delete_member_fragment_container) == null) {
             bp bpVar = new bp(supportFragmentManager);
-            bpVar.t(R.id.fm_delete_member_fragment_container, babrVar);
+            bpVar.t(R.id.fm_delete_member_fragment_container, bcfnVar);
             bpVar.a();
         }
         if (bundle == null || !bundle.getBoolean("DeleteMemberInProgress", false)) {
             return;
         }
         s();
-        getSupportLoaderManager().c(0, null, new azzy(this));
+        getSupportLoaderManager().c(0, null, new bcdu(this));
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putBoolean("DeleteMemberInProgress", this.o);
@@ -206,7 +206,7 @@ public final class DeleteMemberChimeraActivity extends qet implements babn, babj
         }
     }
 
-    @Override // defpackage.babn
+    @Override // defpackage.bcfj
     public final void p() {
         this.r.h(8);
         setResult(7);
@@ -221,12 +221,12 @@ public final class DeleteMemberChimeraActivity extends qet implements babn, babj
         intent.putExtra("consistencyToken", this.j.b()).putExtra("tokenExpirationTimeSecs", this.j.a());
     }
 
-    @Override // defpackage.babn
+    @Override // defpackage.bcfj
     public final void r() {
         String string = this.n ? getString(R.string.fm_reauth_password_title_leave_family, new Object[]{this.s}) : getString(R.string.fm_reauth_password_title_remove_member, new Object[]{this.m});
         String string2 = this.n ? getString(R.string.fm_reauth_pin_title_leave_family, new Object[]{this.s}) : getString(R.string.fm_reauth_pin_title_remove_member, new Object[]{this.m});
         String str = this.k;
-        eiig.x(str);
-        babk.x(str, string, string2).show(getSupportFragmentManager(), (String) null);
+        ekvl.y(str);
+        bcfg.x(str, string, string2).show(getSupportFragmentManager(), (String) null);
     }
 }

@@ -8,23 +8,23 @@ import android.provider.Settings;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.auth.folsom.operation.KeySyncIntentOperation;
 import com.google.android.gms.auth.folsom.service.FolsomGcmTaskChimeraService;
-import defpackage.abkp;
-import defpackage.abkr;
-import defpackage.abks;
-import defpackage.abkt;
-import defpackage.abnb;
-import defpackage.abng;
-import defpackage.arxo;
-import defpackage.asmf;
-import defpackage.asot;
-import defpackage.ejhf;
-import defpackage.fkyh;
+import defpackage.adkp;
+import defpackage.adkr;
+import defpackage.adks;
+import defpackage.adkt;
+import defpackage.adnb;
+import defpackage.adng;
+import defpackage.auad;
+import defpackage.aupz;
+import defpackage.ausn;
+import defpackage.eluo;
+import defpackage.fnpo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class KeySyncIntentOperation extends IntentOperation {
-    public static final arxo a = abng.a("KeySyncIntentOperation");
-    public static final asot b = abng.b("KeySyncIntentOperation");
+    public static final auad a = adng.a("KeySyncIntentOperation");
+    public static final ausn b = adng.b("KeySyncIntentOperation");
 
     public KeySyncIntentOperation() {
     }
@@ -37,19 +37,19 @@ public class KeySyncIntentOperation extends IntentOperation {
         try {
             return new BackupManager(context).isBackupEnabled();
         } catch (SecurityException e) {
-            ((ejhf) ((ejhf) b.j()).s(e)).x("Error getting backup state");
+            ((eluo) ((eluo) b.j()).s(e)).x("Error getting backup state");
             return false;
         }
     }
 
     public static int c(Account account, int i) {
-        abks abksVar = new abks();
-        abksVar.a = account;
-        abksVar.b = i == 18 ? abkt.NEW_SNAPSHOT : abkt.SYNC_PERIODIC;
+        adks adksVar = new adks();
+        adksVar.a = account;
+        adksVar.b = i == 18 ? adkt.NEW_SNAPSHOT : adkt.SYNC_PERIODIC;
         try {
-            new abkr(abksVar.a()).m();
+            new adkr(adksVar.a()).m();
             return 2;
-        } catch (abkp e) {
+        } catch (adkp e) {
             a.g("Failed to sync with FolsomSyncManager", e, new Object[0]);
             return 1;
         }
@@ -57,27 +57,28 @@ public class KeySyncIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (!abnb.b) {
+        if (!adnb.b) {
             a.h("Build is lower than P. No need to handle action=[%s]", intent.getAction());
             return;
         }
-        if (!fkyh.c()) {
+        if (!fnpo.c()) {
             a.m("auth_folsom_is_folsom_enabled is not enabled.", new Object[0]);
             return;
         }
         String action = intent.getAction();
         a.d("onHandleIntent. action: %s", action);
         if ("android.security.action.RECOVERABLE_KEYSTORE_SNAPSHOT".equals(action)) {
-            new asmf(1, 10).execute(new Runnable() { // from class: abfx
+            new aupz(1, 10).execute(new Runnable() { // from class: adfx
                 @Override // java.lang.Runnable
                 public final void run() {
                     KeySyncIntentOperation keySyncIntentOperation = KeySyncIntentOperation.this;
-                    for (Account account : bqna.b(keySyncIntentOperation).p("com.google")) {
+                    for (Account account : bsup.b(keySyncIntentOperation).p("com.google")) {
                         if (KeySyncIntentOperation.c(account, 18) == 1) {
-                            ((ejhf) KeySyncIntentOperation.b.h()).x("Scheduling a retry after failed newSnapshot sync");
+                            ((eluo) KeySyncIntentOperation.b.h()).x("Scheduling a retry after failed newSnapshot sync");
                             String str = account.name;
-                            arxo arxoVar = FolsomGcmTaskChimeraService.a;
-                            FolsomGcmTaskChimeraService.h(keySyncIntentOperation, str, fkyk.a.a().m(), fkyk.a.a().l());
+                            auad auadVar = FolsomGcmTaskChimeraService.a;
+                            fnpr fnprVar = fnpr.a;
+                            FolsomGcmTaskChimeraService.h(keySyncIntentOperation, str, fnprVar.lK().m(), fnprVar.lK().l());
                         }
                     }
                 }

@@ -1,18 +1,18 @@
 package com.google.android.gms.ads.nonagon.signals.gmscore;
 
 import android.os.Build;
-import defpackage.enss;
-import defpackage.ensv;
+import defpackage.eqgl;
+import defpackage.eqgo;
 import java.util.HashMap;
 import java.util.concurrent.Callable;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class ax implements com.google.android.gms.ads.nonagon.signals.e {
-    private final ensv a;
+    private final eqgo a;
 
-    public ax(ensv ensvVar) {
-        this.a = ensvVar;
+    public ax(eqgo eqgoVar) {
+        this.a = eqgoVar;
     }
 
     @Override // com.google.android.gms.ads.nonagon.signals.e
@@ -21,7 +21,7 @@ public final class ax implements com.google.android.gms.ads.nonagon.signals.e {
     }
 
     @Override // com.google.android.gms.ads.nonagon.signals.e
-    public final enss b() {
+    public final eqgl b() {
         return this.a.submit(new Callable() { // from class: com.google.android.gms.ads.nonagon.signals.gmscore.aw
             @Override // java.util.concurrent.Callable
             public final Object call() {

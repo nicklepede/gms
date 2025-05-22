@@ -1,14 +1,14 @@
 package com.google.android.gms.icing.shim.schemas;
 
 import com.google.android.libraries.mdi.search.g3appsearch.app.G3AttributionInfo;
-import defpackage.eiif;
-import defpackage.eitj;
-import defpackage.ejcb;
+import defpackage.ekvk;
+import defpackage.elgo;
+import defpackage.elpg;
 import j$.util.DesugarCollections;
 import j$.util.Objects;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class Message extends Thing {
     public final Person a;
@@ -28,26 +28,26 @@ public final class Message extends Thing {
         List list6;
         this.a = person;
         this.b = person2;
-        this.c = eiif.b(str4);
+        this.c = ekvk.b(str4);
         this.d = conversation;
-        this.e = eiif.b(str5);
+        this.e = ekvk.b(str5);
         if (list3 != null) {
             list5 = DesugarCollections.unmodifiableList(list3);
         } else {
-            int i = eitj.d;
-            list5 = ejcb.a;
+            int i = elgo.d;
+            list5 = elpg.a;
         }
         this.f = list5;
         if (list4 != null) {
             list6 = DesugarCollections.unmodifiableList(list4);
         } else {
-            int i2 = eitj.d;
-            list6 = ejcb.a;
+            int i2 = elgo.d;
+            list6 = elpg.a;
         }
         this.g = list6;
         this.h = j;
-        this.i = eiif.b(str6);
-        this.j = eiif.b(str7);
+        this.i = ekvk.b(str6);
+        this.j = ekvk.b(str7);
     }
 
     @Override // com.google.android.gms.icing.shim.schemas.Thing

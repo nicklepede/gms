@@ -4,36 +4,36 @@ import android.app.PendingIntent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Base64;
-import defpackage.acog;
-import defpackage.arwm;
-import defpackage.arxc;
+import defpackage.aeog;
+import defpackage.atzb;
+import defpackage.atzr;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SyncedDevicesUpdateSubscription extends Subscription {
-    public static final Parcelable.Creator CREATOR = new acog();
+    public static final Parcelable.Creator CREATOR = new aeog();
     public final PendingIntent a;
     public final DeviceFilter b;
     public final String c;
     public final int d;
 
     public SyncedDevicesUpdateSubscription(PendingIntent pendingIntent, DeviceFilter deviceFilter, String str, int i) {
-        arwm.s(pendingIntent);
+        atzb.s(pendingIntent);
         this.a = pendingIntent;
-        arwm.s(deviceFilter);
+        atzb.s(deviceFilter);
         this.b = deviceFilter;
-        arwm.s(str);
+        atzb.s(str);
         this.c = str;
         this.d = i;
     }
 
     public static int c(List list, DeviceFilter deviceFilter) {
-        arwm.s(deviceFilter);
+        atzb.s(deviceFilter);
         if (list.isEmpty()) {
             return -1;
         }
@@ -104,11 +104,11 @@ public class SyncedDevicesUpdateSubscription extends Subscription {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         PendingIntent pendingIntent = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, pendingIntent, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        arxc.v(parcel, 3, this.c, false);
-        arxc.o(parcel, 4, this.d);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, pendingIntent, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        atzr.v(parcel, 3, this.c, false);
+        atzr.o(parcel, 4, this.d);
+        atzr.c(parcel, a);
     }
 }

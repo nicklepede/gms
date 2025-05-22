@@ -8,26 +8,26 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.nearby.connection.ConnectionsDevice;
 import com.google.android.gms.nearby.connection.v3.dct.DctDevice;
 import com.google.android.gms.nearby.presence.PresenceDevice;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ciuu;
-import defpackage.cjai;
-import defpackage.cjak;
-import defpackage.cjbk;
-import defpackage.cjbm;
-import defpackage.cjbn;
-import defpackage.cjbp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.clcz;
+import defpackage.clin;
+import defpackage.clip;
+import defpackage.cljp;
+import defpackage.cljr;
+import defpackage.cljs;
+import defpackage.clju;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class AcceptConnectionRequestParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ciuu();
-    public cjbp a;
-    public cjak b;
+    public static final Parcelable.Creator CREATOR = new clcz();
+    public clju a;
+    public clip b;
     public String c;
     public byte[] d;
-    public cjbm e;
+    public cljr e;
     public int f;
     public PresenceDevice g;
     public ConnectionsDevice h;
@@ -43,7 +43,7 @@ public final class AcceptConnectionRequestParams extends AbstractSafeParcelable 
         }
         if (obj instanceof AcceptConnectionRequestParams) {
             AcceptConnectionRequestParams acceptConnectionRequestParams = (AcceptConnectionRequestParams) obj;
-            if (arwb.b(this.a, acceptConnectionRequestParams.a) && arwb.b(this.b, acceptConnectionRequestParams.b) && arwb.b(this.c, acceptConnectionRequestParams.c) && Arrays.equals(this.d, acceptConnectionRequestParams.d) && arwb.b(this.e, acceptConnectionRequestParams.e) && arwb.b(Integer.valueOf(this.f), Integer.valueOf(acceptConnectionRequestParams.f)) && arwb.b(this.g, acceptConnectionRequestParams.g) && arwb.b(this.h, acceptConnectionRequestParams.h) && arwb.b(this.i, acceptConnectionRequestParams.i)) {
+            if (atyq.b(this.a, acceptConnectionRequestParams.a) && atyq.b(this.b, acceptConnectionRequestParams.b) && atyq.b(this.c, acceptConnectionRequestParams.c) && Arrays.equals(this.d, acceptConnectionRequestParams.d) && atyq.b(this.e, acceptConnectionRequestParams.e) && atyq.b(Integer.valueOf(this.f), Integer.valueOf(acceptConnectionRequestParams.f)) && atyq.b(this.g, acceptConnectionRequestParams.g) && atyq.b(this.h, acceptConnectionRequestParams.h) && atyq.b(this.i, acceptConnectionRequestParams.i)) {
                 return true;
             }
         }
@@ -56,47 +56,47 @@ public final class AcceptConnectionRequestParams extends AbstractSafeParcelable 
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        cjbp cjbpVar = this.a;
-        arxc.D(parcel, 1, cjbpVar == null ? null : cjbpVar.asBinder());
-        cjak cjakVar = this.b;
-        arxc.D(parcel, 2, cjakVar == null ? null : cjakVar.asBinder());
-        arxc.v(parcel, 3, this.c, false);
-        arxc.i(parcel, 4, this.d, false);
-        cjbm cjbmVar = this.e;
-        arxc.D(parcel, 5, cjbmVar != null ? cjbmVar.asBinder() : null);
-        arxc.o(parcel, 6, this.f);
-        arxc.t(parcel, 7, this.g, i, false);
-        arxc.t(parcel, 8, this.h, i, false);
-        arxc.t(parcel, 9, this.i, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        clju cljuVar = this.a;
+        atzr.D(parcel, 1, cljuVar == null ? null : cljuVar.asBinder());
+        clip clipVar = this.b;
+        atzr.D(parcel, 2, clipVar == null ? null : clipVar.asBinder());
+        atzr.v(parcel, 3, this.c, false);
+        atzr.i(parcel, 4, this.d, false);
+        cljr cljrVar = this.e;
+        atzr.D(parcel, 5, cljrVar != null ? cljrVar.asBinder() : null);
+        atzr.o(parcel, 6, this.f);
+        atzr.t(parcel, 7, this.g, i, false);
+        atzr.t(parcel, 8, this.h, i, false);
+        atzr.t(parcel, 9, this.i, i, false);
+        atzr.c(parcel, a);
     }
 
     public AcceptConnectionRequestParams(IBinder iBinder, IBinder iBinder2, String str, byte[] bArr, IBinder iBinder3, int i, PresenceDevice presenceDevice, ConnectionsDevice connectionsDevice, DctDevice dctDevice) {
-        cjbp cjbnVar;
-        cjak cjaiVar;
-        cjbm cjbmVar = null;
+        clju cljsVar;
+        clip clinVar;
+        cljr cljrVar = null;
         if (iBinder == null) {
-            cjbnVar = null;
+            cljsVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IResultListener");
-            cjbnVar = queryLocalInterface instanceof cjbp ? (cjbp) queryLocalInterface : new cjbn(iBinder);
+            cljsVar = queryLocalInterface instanceof clju ? (clju) queryLocalInterface : new cljs(iBinder);
         }
         if (iBinder2 == null) {
-            cjaiVar = null;
+            clinVar = null;
         } else {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IConnectionEventListener");
-            cjaiVar = queryLocalInterface2 instanceof cjak ? (cjak) queryLocalInterface2 : new cjai(iBinder2);
+            clinVar = queryLocalInterface2 instanceof clip ? (clip) queryLocalInterface2 : new clin(iBinder2);
         }
         if (iBinder3 != null) {
             IInterface queryLocalInterface3 = iBinder3.queryLocalInterface("com.google.android.gms.nearby.internal.connection.IPayloadListener");
-            cjbmVar = queryLocalInterface3 instanceof cjbm ? (cjbm) queryLocalInterface3 : new cjbk(iBinder3);
+            cljrVar = queryLocalInterface3 instanceof cljr ? (cljr) queryLocalInterface3 : new cljp(iBinder3);
         }
-        this.a = cjbnVar;
-        this.b = cjaiVar;
+        this.a = cljsVar;
+        this.b = clinVar;
         this.c = str;
         this.d = bArr;
-        this.e = cjbmVar;
+        this.e = cljrVar;
         this.f = i;
         this.g = presenceDevice;
         this.h = connectionsDevice;

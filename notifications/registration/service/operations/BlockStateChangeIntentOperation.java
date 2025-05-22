@@ -3,18 +3,18 @@ package com.google.android.gms.notifications.registration.service.operations;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService;
-import defpackage.asot;
-import defpackage.csdt;
-import defpackage.cseb;
-import defpackage.fcuj;
-import defpackage.feda;
-import defpackage.fqnv;
-import defpackage.fqob;
-import defpackage.fvbo;
+import defpackage.ausn;
+import defpackage.cumy;
+import defpackage.cung;
+import defpackage.ffja;
+import defpackage.fgrt;
+import defpackage.fthr;
+import defpackage.fthx;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public final class BlockStateChangeIntentOperation extends cseb {
+public final class BlockStateChangeIntentOperation extends cung {
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
         String action;
@@ -23,12 +23,12 @@ public final class BlockStateChangeIntentOperation extends cseb {
         }
         int hashCode = action.hashCode();
         if (hashCode == 452039370) {
-            if (action.equals("android.app.action.APP_BLOCK_STATE_CHANGED") && new feda(fqob.b().c, fqnv.a).contains(fcuj.APP_BLOCK_STATE_CHANGED)) {
-                asot asotVar = NotificationsRegistrationTaskBoundService.a;
+            if (action.equals("android.app.action.APP_BLOCK_STATE_CHANGED") && new fgrt(fthx.b().c, fthr.a).contains(ffja.APP_BLOCK_STATE_CHANGED)) {
+                ausn ausnVar = NotificationsRegistrationTaskBoundService.a;
                 Context applicationContext = getApplicationContext();
-                fvbo.e(applicationContext, "getApplicationContext(...)");
-                fvbo.f(applicationContext, "context");
-                csdt.a(applicationContext, "RE_REGISTER_APP_BLOCK_STATE");
+                fxxm.e(applicationContext, "getApplicationContext(...)");
+                fxxm.f(applicationContext, "context");
+                cumy.a(applicationContext, "RE_REGISTER_APP_BLOCK_STATE");
                 return;
             }
             return;
@@ -40,12 +40,12 @@ public final class BlockStateChangeIntentOperation extends cseb {
         } else if (!action.equals("android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED")) {
             return;
         }
-        if (new feda(fqob.b().c, fqnv.a).contains(fcuj.CHANNEL_BLOCK_STATE_CHANGED)) {
-            asot asotVar2 = NotificationsRegistrationTaskBoundService.a;
+        if (new fgrt(fthx.b().c, fthr.a).contains(ffja.CHANNEL_BLOCK_STATE_CHANGED)) {
+            ausn ausnVar2 = NotificationsRegistrationTaskBoundService.a;
             Context applicationContext2 = getApplicationContext();
-            fvbo.e(applicationContext2, "getApplicationContext(...)");
-            fvbo.f(applicationContext2, "context");
-            csdt.a(applicationContext2, "RE_REGISTER_CHANNEL_BLOCK_STATE");
+            fxxm.e(applicationContext2, "getApplicationContext(...)");
+            fxxm.f(applicationContext2, "context");
+            cumy.a(applicationContext2, "RE_REGISTER_CHANNEL_BLOCK_STATE");
         }
     }
 }

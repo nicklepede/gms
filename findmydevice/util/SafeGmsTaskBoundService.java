@@ -2,29 +2,29 @@ package com.google.android.gms.findmydevice.util;
 
 import com.google.android.gms.findmydevice.util.SafeGmsTaskBoundService;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.byln;
-import defpackage.egnc;
-import defpackage.eiho;
-import defpackage.enre;
-import defpackage.enss;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.cauf;
+import defpackage.ejaf;
+import defpackage.ekut;
+import defpackage.eqex;
+import defpackage.eqgl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public abstract class SafeGmsTaskBoundService extends GmsTaskBoundService {
-    public static final asot h = asot.b("DeviceSyncService", asej.FIND_MY_DEVICE_SPOT);
+    public static final ausn h = ausn.b("DeviceSyncService", auid.FIND_MY_DEVICE_SPOT);
 
-    protected abstract enss d(byln bylnVar);
+    protected abstract eqgl d(cauf caufVar);
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final enss im(byln bylnVar) {
-        return egnc.e(d(bylnVar), Throwable.class, new eiho() { // from class: bfjb
-            @Override // defpackage.eiho
+    public final eqgl iB(cauf caufVar) {
+        return ejaf.e(d(caufVar), Throwable.class, new ekut() { // from class: bhkr
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
-                ((ejhf) ((ejhf) ((ejhf) SafeGmsTaskBoundService.h.i()).s((Throwable) obj)).ah((char) 4582)).x("Failed to run task");
+                ((eluo) ((eluo) ((eluo) SafeGmsTaskBoundService.h.i()).s((Throwable) obj)).ai((char) 4592)).x("Failed to run task");
                 return 2;
             }
-        }, enre.a);
+        }, eqex.a);
     }
 }

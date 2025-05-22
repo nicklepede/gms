@@ -3,32 +3,32 @@ package com.google.android.gms.udc.intentoperation;
 import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.udc.intentoperation.GcmRegistrationIntentOperation;
-import defpackage.dgvj;
-import defpackage.dgvt;
-import defpackage.drbj;
-import defpackage.drgx;
-import defpackage.eijr;
-import defpackage.enpf;
-import defpackage.fspw;
+import defpackage.djgp;
+import defpackage.djgz;
+import defpackage.dtlr;
+import defpackage.dtrf;
+import defpackage.ekww;
+import defpackage.eqcy;
+import defpackage.fvll;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class GcmRegistrationIntentOperation extends IntentOperation {
-    private final eijr a;
-    private final eijr b;
+    private final ekww a;
+    private final ekww b;
 
     public GcmRegistrationIntentOperation() {
-        this.a = new eijr() { // from class: dgye
-            @Override // defpackage.eijr
-            public final Object a() {
-                return dhal.d(GcmRegistrationIntentOperation.this);
+        this.a = new ekww() { // from class: djjk
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return djlr.d(GcmRegistrationIntentOperation.this);
             }
         };
-        this.b = new eijr() { // from class: dgyf
-            @Override // defpackage.eijr
-            public final Object a() {
-                return dhal.g(GcmRegistrationIntentOperation.this);
+        this.b = new ekww() { // from class: djjl
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return djlr.g(GcmRegistrationIntentOperation.this);
             }
         };
     }
@@ -38,27 +38,27 @@ public class GcmRegistrationIntentOperation extends IntentOperation {
         if (intent == null || !"com.google.android.gms.gcm.REGISTERED".equals(intent.getAction())) {
             return;
         }
-        if (fspw.w()) {
-            ((drgx) this.a.a()).b().b(dgvj.PUSH_REGISTRATION);
+        if (fvll.w()) {
+            ((dtrf) this.a.lK()).b().b(djgp.PUSH_REGISTRATION);
         }
         try {
-            ((enpf) ((drbj) this.b.a()).e(dgvt.SYNC_ID_CUSTOM_CACHE)).u();
+            ((eqcy) ((dtlr) this.b.lK()).e(djgz.SYNC_ID_CUSTOM_CACHE)).u();
         } catch (InterruptedException | ExecutionException e) {
             throw new RuntimeException(e);
         }
     }
 
-    GcmRegistrationIntentOperation(final drgx drgxVar, final drbj drbjVar) {
-        this.a = new eijr() { // from class: dgyg
-            @Override // defpackage.eijr
-            public final Object a() {
-                return drgx.this;
+    GcmRegistrationIntentOperation(final dtrf dtrfVar, final dtlr dtlrVar) {
+        this.a = new ekww() { // from class: djjm
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return dtrf.this;
             }
         };
-        this.b = new eijr() { // from class: dgyh
-            @Override // defpackage.eijr
-            public final Object a() {
-                return drbj.this;
+        this.b = new ekww() { // from class: djjn
+            @Override // defpackage.ekww
+            public final Object lK() {
+                return dtlr.this;
             }
         };
     }

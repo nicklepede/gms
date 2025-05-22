@@ -3,13 +3,14 @@ package com.google.android.gms.ads.internal.scionintegration;
 import android.content.Context;
 import android.os.Bundle;
 import com.google.android.gms.ads.internal.client.u;
+import com.google.android.gms.ads.internal.config.g;
 import com.google.android.gms.ads.internal.config.p;
 import com.google.android.gms.ads.internal.util.client.f;
 import com.google.android.gms.ads.internal.util.client.h;
-import defpackage.aqtp;
-import defpackage.asnp;
-import defpackage.byhj;
-import defpackage.byhp;
+import defpackage.aswe;
+import defpackage.aurj;
+import defpackage.caqb;
+import defpackage.caqh;
 import j$.util.Objects;
 import j$.util.concurrent.ConcurrentHashMap;
 import java.lang.reflect.Method;
@@ -26,7 +27,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class d {
     private final ConcurrentMap g;
@@ -145,6 +146,7 @@ public final class d {
     }
 
     public final String b(final Context context) {
+        ExecutorService threadPoolExecutor;
         if (!e(context)) {
             return null;
         }
@@ -154,7 +156,13 @@ public final class d {
         }
         AtomicReference atomicReference = this.d;
         if (atomicReference.get() == null) {
-            a.a(atomicReference, asnp.d() ? byhj.b.g(((Integer) p.B.g()).intValue(), new c(), byhp.HIGH_SPEED) : new ThreadPoolExecutor(((Integer) p.B.g()).intValue(), ((Integer) p.B.g()).intValue(), 1L, TimeUnit.MINUTES, new LinkedBlockingQueue(), new c()));
+            if (aurj.d()) {
+                threadPoolExecutor = caqb.b.g(((Integer) p.B.g()).intValue(), new c(), caqh.HIGH_SPEED);
+            } else {
+                g gVar = p.B;
+                threadPoolExecutor = new ThreadPoolExecutor(((Integer) gVar.g()).intValue(), ((Integer) gVar.g()).intValue(), 1L, TimeUnit.MINUTES, new LinkedBlockingQueue(), new c());
+            }
+            a.a(atomicReference, threadPoolExecutor);
         }
         try {
             return (String) ((ExecutorService) atomicReference.get()).submit(new Callable() { // from class: com.google.android.gms.ads.internal.scionintegration.b
@@ -188,7 +196,7 @@ public final class d {
                 u.b();
                 if (!f.m(context)) {
                     u.b();
-                    int m = aqtp.d.m(context);
+                    int m = aswe.d.m(context);
                     if (m == 0 || m == 2) {
                         int i = com.google.android.gms.ads.internal.util.c.a;
                         h.k("Google Play Service is out of date, the Google Mobile Ads SDK will not integrate with Firebase. Admob/Firebase integration requires updated Google Play Service.");

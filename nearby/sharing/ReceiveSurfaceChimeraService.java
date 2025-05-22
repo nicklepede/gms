@@ -17,67 +17,67 @@ import com.google.android.gms.nearby.sharing.ReceiveSurfaceChimeraService;
 import com.google.android.gms.nearby.sharing.ShareTarget;
 import com.google.android.gms.nearby.sharing.internal.InstallParams;
 import com.google.android.gms.smartdevice.wifi.ConnectToWifiNetworkRequest;
-import defpackage.aqxo;
-import defpackage.aqxt;
-import defpackage.arco;
-import defpackage.arcy;
-import defpackage.byhr;
-import defpackage.cewk;
-import defpackage.cewl;
-import defpackage.cfcs;
-import defpackage.clxh;
-import defpackage.clxk;
-import defpackage.clzi;
-import defpackage.clzm;
-import defpackage.cmaz;
-import defpackage.cmbu;
-import defpackage.cmeu;
-import defpackage.cmfe;
-import defpackage.cmfx;
-import defpackage.cmfy;
-import defpackage.cnad;
-import defpackage.cnau;
-import defpackage.coih;
-import defpackage.coik;
-import defpackage.coil;
-import defpackage.coim;
-import defpackage.crmi;
-import defpackage.crno;
-import defpackage.crnv;
-import defpackage.croc;
-import defpackage.deov;
-import defpackage.dfah;
-import defpackage.dfak;
-import defpackage.dfaq;
-import defpackage.dfbl;
-import defpackage.eihn;
-import defpackage.fiwo;
-import defpackage.fqmf;
-import defpackage.fqmn;
-import defpackage.fvnf;
-import defpackage.fvnv;
-import defpackage.fvnw;
-import defpackage.fvqn;
-import defpackage.fvqq;
-import defpackage.iln;
-import defpackage.jnz;
-import defpackage.job;
-import defpackage.jol;
-import defpackage.jon;
-import defpackage.jqn;
+import defpackage.atad;
+import defpackage.atai;
+import defpackage.atfd;
+import defpackage.atfn;
+import defpackage.caqj;
+import defpackage.chdv;
+import defpackage.chdw;
+import defpackage.chke;
+import defpackage.cofp;
+import defpackage.cofs;
+import defpackage.cohq;
+import defpackage.cohu;
+import defpackage.cojh;
+import defpackage.cokc;
+import defpackage.conc;
+import defpackage.conm;
+import defpackage.coof;
+import defpackage.coog;
+import defpackage.cpil;
+import defpackage.cpjc;
+import defpackage.cqrc;
+import defpackage.cqrf;
+import defpackage.cqrg;
+import defpackage.cqrh;
+import defpackage.ctvn;
+import defpackage.ctwt;
+import defpackage.ctxa;
+import defpackage.ctxh;
+import defpackage.dgzy;
+import defpackage.dhln;
+import defpackage.dhlq;
+import defpackage.dhlw;
+import defpackage.dhmr;
+import defpackage.ekus;
+import defpackage.flml;
+import defpackage.ftga;
+import defpackage.ftgi;
+import defpackage.fyjd;
+import defpackage.fyjt;
+import defpackage.fyju;
+import defpackage.fyml;
+import defpackage.fymo;
+import defpackage.ind;
+import defpackage.juo;
+import defpackage.juq;
+import defpackage.jva;
+import defpackage.jvc;
+import defpackage.jxc;
 import java.util.ArrayList;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class ReceiveSurfaceChimeraService extends clxk implements jon {
-    public cmaz a;
+public class ReceiveSurfaceChimeraService extends cofs implements jvc {
+    public cojh a;
     public Context b;
-    public clzm c;
+    public cohu c;
     public boolean d;
     public Intent e;
-    public fiwo g;
-    private clxh h;
+    public flml g;
+    private cofp h;
     private BroadcastReceiver i;
     private BroadcastReceiver j;
     private BroadcastReceiver k;
@@ -86,15 +86,15 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
     private BroadcastReceiver n;
     private BroadcastReceiver o;
     private DisplayManager.DisplayListener p;
-    private cmfx q;
-    final Handler f = new byhr();
-    private final jqn r = new jqn(this);
+    private coof q;
+    final Handler f = new caqj();
+    private final jxc r = new jxc(this);
 
     public final void b(Intent intent) {
         Context applicationContext = getApplicationContext();
         this.h.b.e("nearby_sharing", 5);
         if (intent.getStringExtra("android.intent.extra.TEXT") != null) {
-            crnv.c(applicationContext, intent);
+            ctxa.c(applicationContext, intent);
             return;
         }
         ArrayList<String> stringArrayListExtra = intent.getStringArrayListExtra("com.google.android.gms.nearby.sharing.KEY_COPY_IMAGE_URI");
@@ -106,38 +106,38 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
         for (int i = 0; i < size; i++) {
             arrayList.add(Uri.parse(stringArrayListExtra.get(i)));
         }
-        crmi.m(applicationContext, arrayList, intent.getBooleanExtra("android.content.extra.IS_SENSITIVE", false), intent.getBooleanExtra("copy_paste_extra_need_toast", true), intent.getBooleanExtra("android.content.extra.IS_REMOTE_DEVICE", false), intent.getStringExtra("android.content.extra.REMOTE_DEVICE_NAME"));
+        ctvn.m(applicationContext, arrayList, intent.getBooleanExtra("android.content.extra.IS_SENSITIVE", false), intent.getBooleanExtra("copy_paste_extra_need_toast", true), intent.getBooleanExtra("android.content.extra.IS_REMOTE_DEVICE", false), intent.getStringExtra("android.content.extra.REMOTE_DEVICE_NAME"));
     }
 
     public final void c(Context context) {
-        cmfx a = cmfy.a(context);
-        if (eihn.a(this.q, a)) {
+        coof a = coog.a(context);
+        if (ekus.a(this.q, a)) {
             return;
         }
         this.q = a;
         this.a.M(this.c);
-        if (cmfy.b(this).e()) {
-            cmfx cmfxVar = this.q;
-            if (cmfxVar != null) {
-                cmbu cmbuVar = new cmbu(cmfxVar.b);
-                int i = cewl.a;
-                this.a = new cnad(this, cmbuVar);
+        if (coog.b(this).e()) {
+            coof coofVar = this.q;
+            if (coofVar != null) {
+                cokc cokcVar = new cokc(coofVar.b);
+                int i = chdw.a;
+                this.a = new cpil(this, cokcVar);
             } else {
-                cmbu cmbuVar2 = new cmbu((int) fqmf.q());
-                int i2 = cewl.a;
-                this.a = new cnad(this, cmbuVar2);
+                cokc cokcVar2 = new cokc((int) ftga.q());
+                int i2 = chdw.a;
+                this.a = new cpil(this, cokcVar2);
             }
         } else {
-            cmbu cmbuVar3 = new cmbu(0);
-            int i3 = cewl.a;
-            this.a = new cnad(this, cmbuVar3);
+            cokc cokcVar3 = new cokc(0);
+            int i3 = chdw.a;
+            this.a = new cpil(this, cokcVar3);
         }
         Handler handler = this.f;
-        clxh clxhVar = this.h;
-        cmaz cmazVar = this.a;
-        clzm clzmVar = new clzm(context, handler, clxhVar, cmazVar);
-        this.c = clzmVar;
-        cmazVar.I(clzmVar);
+        cofp cofpVar = this.h;
+        cojh cojhVar = this.a;
+        cohu cohuVar = new cohu(context, handler, cofpVar, cojhVar);
+        this.c = cohuVar;
+        cojhVar.I(cohuVar);
     }
 
     public final void d(boolean z) {
@@ -151,7 +151,7 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
     }
 
     public final void f(final int i, final int i2, final String... strArr) {
-        new byhr(Looper.getMainLooper()).post(new Runnable() { // from class: clzh
+        new caqj(Looper.getMainLooper()).post(new Runnable() { // from class: cohp
             @Override // java.lang.Runnable
             public final void run() {
                 Context context = ReceiveSurfaceChimeraService.this.b;
@@ -160,8 +160,8 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
         });
     }
 
-    @Override // defpackage.jon
-    public final job getLifecycle() {
+    @Override // defpackage.jvc
+    public final juq getLifecycle() {
         return this.r.a;
     }
 
@@ -171,62 +171,62 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
         return null;
     }
 
-    @Override // defpackage.clxk, com.google.android.chimera.Service
+    @Override // defpackage.cofs, com.google.android.chimera.Service
     public final void onCreate() {
-        cmaz cmazVar;
+        cojh cojhVar;
         this.r.b();
         super.onCreate();
-        this.q = cmfy.a(this);
+        this.q = coog.a(this);
         if (this.h == null) {
-            this.h = clxh.d(this.b);
+            this.h = cofp.d(this.b);
         }
-        if (cmfy.b(this).e() && this.a == null) {
-            cmfx cmfxVar = this.q;
-            if (cmfxVar != null) {
-                cmbu cmbuVar = new cmbu(cmfxVar.b);
-                int i = cewl.a;
-                cmazVar = new cnad(this, cmbuVar);
+        if (coog.b(this).e() && this.a == null) {
+            coof coofVar = this.q;
+            if (coofVar != null) {
+                cokc cokcVar = new cokc(coofVar.b);
+                int i = chdw.a;
+                cojhVar = new cpil(this, cokcVar);
             } else {
-                cmbu cmbuVar2 = new cmbu((int) fqmf.q());
-                int i2 = cewl.a;
-                cmazVar = new cnad(this, cmbuVar2);
+                cokc cokcVar2 = new cokc((int) ftga.q());
+                int i2 = chdw.a;
+                cojhVar = new cpil(this, cokcVar2);
             }
         } else {
             if (this.a == null) {
-                this.a = cewl.e(this);
+                this.a = chdw.e(this);
             }
-            cmazVar = this.a;
+            cojhVar = this.a;
         }
-        this.a = cmazVar;
+        this.a = cojhVar;
         Context context = this.b;
         Handler handler = this.f;
-        clxh clxhVar = this.h;
-        cmaz cmazVar2 = this.a;
-        clzm clzmVar = new clzm(context, handler, clxhVar, cmazVar2);
-        this.c = clzmVar;
-        cmazVar2.I(clzmVar);
+        cofp cofpVar = this.h;
+        cojh cojhVar2 = this.a;
+        cohu cohuVar = new cohu(context, handler, cofpVar, cojhVar2);
+        this.c = cohuVar;
+        cojhVar2.I(cohuVar);
         TracingBroadcastReceiver tracingBroadcastReceiver = new TracingBroadcastReceiver() { // from class: com.google.android.gms.nearby.sharing.ReceiveSurfaceChimeraService.3
             @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-            public final void jz(Context context2, Intent intent) {
+            public final void jP(Context context2, Intent intent) {
                 ReceiveSurfaceChimeraService receiveSurfaceChimeraService = ReceiveSurfaceChimeraService.this;
                 if (receiveSurfaceChimeraService.d) {
                     receiveSurfaceChimeraService.b(intent);
                 } else {
                     receiveSurfaceChimeraService.e = intent;
-                    cmfe.a.b().p("Waiting unlock and copy to clipboard, due to screen locked.", new Object[0]);
+                    conm.a.b().p("Waiting unlock and copy to clipboard, due to screen locked.", new Object[0]);
                 }
             }
         };
         this.i = tracingBroadcastReceiver;
-        cfcs.b(this.b, tracingBroadcastReceiver, new IntentFilter("com.google.android.gms.nearby.sharing.COPY_TO_CLIPBOARD"));
-        if (fqmn.a.a().aa()) {
-            coim coimVar = (coim) this.g.a();
-            fvnv.d(fvnw.b(new fvqq(new fvnf(new coik(new fvqn(new coih(fvnw.a(cmeu.a(coimVar.a, "WifiReceiver", new IntentFilter("com.google.android.gms.nearby.sharing.CONNECT_WIFI"))))), null, coimVar)), new coil(coimVar, null)), coimVar.c), jol.a(getLifecycle()));
+        chke.b(this.b, tracingBroadcastReceiver, new IntentFilter("com.google.android.gms.nearby.sharing.COPY_TO_CLIPBOARD"));
+        if (ftgi.a.lK().ad()) {
+            cqrh cqrhVar = (cqrh) this.g.a();
+            fyjt.d(fyju.b(new fymo(new fyjd(new cqrf(new fyml(new cqrc(fyju.a(conc.a(cqrhVar.a, "WifiReceiver", new IntentFilter("com.google.android.gms.nearby.sharing.CONNECT_WIFI"))))), null, cqrhVar)), new cqrg(cqrhVar, null)), cqrhVar.c), jva.a(getLifecycle()));
         } else {
             TracingBroadcastReceiver tracingBroadcastReceiver2 = new TracingBroadcastReceiver() { // from class: com.google.android.gms.nearby.sharing.ReceiveSurfaceChimeraService.4
                 @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-                public final void jz(Context context2, Intent intent) {
-                    dfaq a;
+                public final void jP(Context context2, Intent intent) {
+                    dhlw a;
                     WifiCredentialsAttachment wifiCredentialsAttachment = (WifiCredentialsAttachment) intent.getParcelableExtra("wifi_credentials_attachment");
                     if (wifiCredentialsAttachment == null) {
                         return;
@@ -234,18 +234,18 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
                     final ReceiveSurfaceChimeraService receiveSurfaceChimeraService = ReceiveSurfaceChimeraService.this;
                     final String str = wifiCredentialsAttachment.a;
                     receiveSurfaceChimeraService.f(1, R.string.sharing_toast_wifi_connecting, str);
-                    if (croc.d(receiveSurfaceChimeraService.b, str)) {
-                        cmfe.a.b().h("Already connected to ssid %s.", str);
+                    if (ctxh.d(receiveSurfaceChimeraService.b, str)) {
+                        conm.a.b().h("Already connected to ssid %s.", str);
                         receiveSurfaceChimeraService.f(0, R.string.sharing_toast_wifi_connection_succeeded, str);
                     } else {
                         int i3 = wifiCredentialsAttachment.b;
                         String str2 = wifiCredentialsAttachment.d;
                         Context context3 = receiveSurfaceChimeraService.b;
                         boolean z = wifiCredentialsAttachment.e;
-                        deov deovVar = new deov(context3.getApplicationContext());
+                        dgzy dgzyVar = new dgzy(context3.getApplicationContext());
                         String str3 = i3 != 1 ? i3 != 2 ? i3 != 3 ? i3 != 4 ? null : "SAE" : "WEP" : "PSK" : "Open";
                         if (str3 == null) {
-                            a = dfbl.c(new IllegalArgumentException(String.format(Locale.getDefault(), "connectToWifi failed to connect to ssid %s because an unknown securityType (%s) was given.", str, Integer.valueOf(i3))));
+                            a = dhmr.c(new IllegalArgumentException(String.format(Locale.getDefault(), "connectToWifi failed to connect to ssid %s because an unknown securityType (%s) was given.", str, Integer.valueOf(i3))));
                         } else {
                             ConnectToWifiNetworkRequest connectToWifiNetworkRequest = new ConnectToWifiNetworkRequest();
                             if (str2 != null) {
@@ -254,20 +254,20 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
                             connectToWifiNetworkRequest.a = str;
                             connectToWifiNetworkRequest.b = str3;
                             connectToWifiNetworkRequest.d = z;
-                            a = deovVar.a(connectToWifiNetworkRequest);
+                            a = dgzyVar.a(connectToWifiNetworkRequest);
                         }
-                        a.z(new dfak() { // from class: clzf
-                            @Override // defpackage.dfak
-                            public final void gn(Object obj) {
+                        a.z(new dhlq() { // from class: cohn
+                            @Override // defpackage.dhlq
+                            public final void gC(Object obj) {
                                 ReceiveSurfaceChimeraService.this.f(0, R.string.sharing_toast_wifi_connection_succeeded, str);
                             }
                         });
-                        a.y(new dfah() { // from class: clzg
-                            @Override // defpackage.dfah
-                            public final void gm(Exception exc) {
+                        a.y(new dhln() { // from class: coho
+                            @Override // defpackage.dhln
+                            public final void gB(Exception exc) {
                                 String str4 = str;
                                 ReceiveSurfaceChimeraService.this.f(0, R.string.sharing_toast_wifi_connection_failed, str4);
-                                cmfe.a.e().f(exc).h("WifiUtils#connectToWifi failed to connect to %s", str4);
+                                conm.a.e().f(exc).h("WifiUtils#connectToWifi failed to connect to %s", str4);
                             }
                         });
                     }
@@ -278,73 +278,73 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
                 }
             };
             this.j = tracingBroadcastReceiver2;
-            cfcs.b(this.b, tracingBroadcastReceiver2, new IntentFilter("com.google.android.gms.nearby.sharing.CONNECT_WIFI"));
+            chke.b(this.b, tracingBroadcastReceiver2, new IntentFilter("com.google.android.gms.nearby.sharing.CONNECT_WIFI"));
         }
         TracingBroadcastReceiver tracingBroadcastReceiver3 = new TracingBroadcastReceiver() { // from class: com.google.android.gms.nearby.sharing.ReceiveSurfaceChimeraService.5
             @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-            public final void jz(Context context2, Intent intent) {
+            public final void jP(Context context2, Intent intent) {
                 byte[] byteArrayExtra = intent.getByteArrayExtra("share_target_bytes");
                 final long longExtra = intent.getLongExtra("attachment_id", -1L);
                 if (byteArrayExtra == null) {
-                    cmfe.a.b().p("Failed to get share target from intent.", new Object[0]);
+                    conm.a.b().p("Failed to get share target from intent.", new Object[0]);
                     return;
                 }
-                final ShareTarget shareTarget = (ShareTarget) cnau.b(byteArrayExtra, ShareTarget.CREATOR);
-                aqxt aqxtVar = ReceiveSurfaceChimeraService.this.a;
-                arcy arcyVar = new arcy();
-                arcyVar.a = new arco() { // from class: cmyg
-                    @Override // defpackage.arco
+                final ShareTarget shareTarget = (ShareTarget) cpjc.b(byteArrayExtra, ShareTarget.CREATOR);
+                atai ataiVar = ReceiveSurfaceChimeraService.this.a;
+                atfn atfnVar = new atfn();
+                atfnVar.a = new atfd() { // from class: cpgo
+                    @Override // defpackage.atfd
                     public final void d(Object obj, Object obj2) {
-                        int i3 = cnad.a;
-                        cmwv cmwvVar = (cmwv) ((cnbx) obj).H();
+                        int i3 = cpil.a;
+                        cpfd cpfdVar = (cpfd) ((cpkf) obj).H();
                         InstallParams installParams = new InstallParams();
                         installParams.a = ShareTarget.this;
                         installParams.b = longExtra;
-                        installParams.c = new cmzu((dfau) obj2);
-                        cmwvVar.x(installParams);
+                        installParams.c = new cpic((dhma) obj2);
+                        cpfdVar.x(installParams);
                     }
                 };
-                arcyVar.c = new Feature[]{cewk.e};
-                arcyVar.d = 1282;
-                ((aqxo) aqxtVar).iT(arcyVar.a());
+                atfnVar.c = new Feature[]{chdv.e};
+                atfnVar.d = 1282;
+                ((atad) ataiVar).ji(atfnVar.a());
             }
         };
         this.k = tracingBroadcastReceiver3;
-        cfcs.b(this.b, tracingBroadcastReceiver3, new IntentFilter("com.google.android.gms.nearby.sharing.INSTALL_APP"));
+        chke.b(this.b, tracingBroadcastReceiver3, new IntentFilter("com.google.android.gms.nearby.sharing.INSTALL_APP"));
         TracingBroadcastReceiver tracingBroadcastReceiver4 = new TracingBroadcastReceiver() { // from class: com.google.android.gms.nearby.sharing.ReceiveSurfaceChimeraService.7
             @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-            public final void jz(Context context2, Intent intent) {
-                clzm clzmVar2;
-                if (intent.getIntExtra("register_receive_surface_state", -1) != 1 || (clzmVar2 = ReceiveSurfaceChimeraService.this.c) == null) {
+            public final void jP(Context context2, Intent intent) {
+                cohu cohuVar2;
+                if (intent.getIntExtra("register_receive_surface_state", -1) != 1 || (cohuVar2 = ReceiveSurfaceChimeraService.this.c) == null) {
                     return;
                 }
-                clzmVar2.d = false;
-                clzmVar2.c = null;
-                clzmVar2.b.removeCallbacks(clzmVar2.e);
+                cohuVar2.d = false;
+                cohuVar2.c = null;
+                cohuVar2.b.removeCallbacks(cohuVar2.e);
             }
         };
         this.l = tracingBroadcastReceiver4;
-        cfcs.b(this.b, tracingBroadcastReceiver4, new IntentFilter("com.google.android.gms.nearby.sharing.ACTION_RECEIVE_SURFACE_REGISTER"));
+        chke.b(this.b, tracingBroadcastReceiver4, new IntentFilter("com.google.android.gms.nearby.sharing.ACTION_RECEIVE_SURFACE_REGISTER"));
         this.m = new TracingBroadcastReceiver() { // from class: com.google.android.gms.nearby.sharing.ReceiveSurfaceChimeraService.8
             @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-            public final void jz(Context context2, Intent intent) {
+            public final void jP(Context context2, Intent intent) {
                 ReceiveSurfaceChimeraService receiveSurfaceChimeraService = ReceiveSurfaceChimeraService.this;
-                receiveSurfaceChimeraService.d(crno.j(receiveSurfaceChimeraService.getApplicationContext()));
+                receiveSurfaceChimeraService.d(ctwt.j(receiveSurfaceChimeraService.getApplicationContext()));
             }
         };
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("android.intent.action.SCREEN_ON");
         intentFilter.addAction("android.intent.action.SCREEN_OFF");
         intentFilter.addAction("android.intent.action.USER_PRESENT");
-        iln.b(this, this.m, intentFilter, 2);
+        ind.b(this, this.m, intentFilter, 2);
         DisplayManager displayManager = (DisplayManager) getSystemService(DisplayManager.class);
-        clzi clziVar = new clzi(this);
-        this.p = clziVar;
-        displayManager.registerDisplayListener(clziVar, new byhr(Looper.getMainLooper()));
-        d(crno.j(getApplicationContext()));
+        cohq cohqVar = new cohq(this);
+        this.p = cohqVar;
+        displayManager.registerDisplayListener(cohqVar, new caqj(Looper.getMainLooper()));
+        d(ctwt.j(getApplicationContext()));
         this.n = new TracingBroadcastReceiver() { // from class: com.google.android.gms.nearby.sharing.ReceiveSurfaceChimeraService.1
             @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-            public final void jz(Context context2, Intent intent) {
+            public final void jP(Context context2, Intent intent) {
                 ReceiveSurfaceChimeraService.this.c(context2);
             }
         };
@@ -353,15 +353,15 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
         intentFilter2.addAction("android.intent.action.PACKAGE_REMOVED");
         intentFilter2.addAction("android.intent.action.PACKAGE_REPLACED");
         intentFilter2.addDataScheme("package");
-        iln.b(this, this.n, intentFilter2, 4);
+        ind.b(this, this.n, intentFilter2, 4);
         this.o = new TracingBroadcastReceiver() { // from class: com.google.android.gms.nearby.sharing.ReceiveSurfaceChimeraService.2
             @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-            public final void jz(Context context2, Intent intent) {
+            public final void jP(Context context2, Intent intent) {
                 ReceiveSurfaceChimeraService.this.c(context2);
             }
         };
-        iln.b(this, this.o, new IntentFilter("com.google.android.gms.nearby.sharing.STATE_CHANGED"), 4);
-        cmfe.a.b().h("ReceiveSurfaceService created with vendorMetadata %s", this.q);
+        ind.b(this, this.o, new IntentFilter("com.google.android.gms.nearby.sharing.STATE_CHANGED"), 4);
+        conm.a.b().h("ReceiveSurfaceService created with vendorMetadata %s", this.q);
     }
 
     @Override // com.google.android.chimera.Service
@@ -370,23 +370,23 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
         this.h.e();
         BroadcastReceiver broadcastReceiver = this.i;
         if (broadcastReceiver != null) {
-            cfcs.f(this.b, broadcastReceiver);
+            chke.f(this.b, broadcastReceiver);
         }
         BroadcastReceiver broadcastReceiver2 = this.j;
         if (broadcastReceiver2 != null) {
-            cfcs.f(this.b, broadcastReceiver2);
+            chke.f(this.b, broadcastReceiver2);
         }
         BroadcastReceiver broadcastReceiver3 = this.k;
         if (broadcastReceiver3 != null) {
-            cfcs.f(this.b, broadcastReceiver3);
+            chke.f(this.b, broadcastReceiver3);
         }
         BroadcastReceiver broadcastReceiver4 = this.l;
         if (broadcastReceiver4 != null) {
-            cfcs.f(this.b, broadcastReceiver4);
+            chke.f(this.b, broadcastReceiver4);
         }
         BroadcastReceiver broadcastReceiver5 = this.m;
         if (broadcastReceiver5 != null) {
-            cfcs.f(this.b, broadcastReceiver5);
+            chke.f(this.b, broadcastReceiver5);
         }
         if (this.p != null) {
             ((DisplayManager) getSystemService(DisplayManager.class)).unregisterDisplayListener(this.p);
@@ -394,17 +394,17 @@ public class ReceiveSurfaceChimeraService extends clxk implements jon {
         }
         BroadcastReceiver broadcastReceiver6 = this.n;
         if (broadcastReceiver6 != null) {
-            cfcs.f(this.b, broadcastReceiver6);
+            chke.f(this.b, broadcastReceiver6);
         }
         this.a.M(this.c);
-        cmfe.a.b().p("ReceiveSurfaceService destroyed", new Object[0]);
+        conm.a.b().p("ReceiveSurfaceService destroyed", new Object[0]);
         super.onDestroy();
     }
 
     @Override // com.google.android.chimera.Service
     public final int onStartCommand(Intent intent, int i, int i2) {
-        this.r.d(jnz.ON_START);
-        cmfe.a.b().p("ReceiveSurfaceService started", new Object[0]);
+        this.r.d(juo.ON_START);
+        conm.a.b().p("ReceiveSurfaceService started", new Object[0]);
         return 1;
     }
 }

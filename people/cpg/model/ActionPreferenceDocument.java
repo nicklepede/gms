@@ -1,11 +1,11 @@
 package com.google.android.gms.people.cpg.model;
 
-import defpackage.eihn;
-import defpackage.eiib;
-import defpackage.eiic;
+import defpackage.ekus;
+import defpackage.ekvg;
+import defpackage.ekvh;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ActionPreferenceDocument {
     public final String a;
@@ -35,7 +35,7 @@ public final class ActionPreferenceDocument {
     public final boolean equals(Object obj) {
         if (obj instanceof ActionPreferenceDocument) {
             ActionPreferenceDocument actionPreferenceDocument = (ActionPreferenceDocument) obj;
-            if (eihn.a(this.b, actionPreferenceDocument.b) && eihn.a(this.a, actionPreferenceDocument.a) && eihn.a(this.c, actionPreferenceDocument.c) && this.d == actionPreferenceDocument.d && this.e == actionPreferenceDocument.e && eihn.a(this.f, actionPreferenceDocument.f) && eihn.a(this.g, actionPreferenceDocument.g) && this.h == actionPreferenceDocument.h && eihn.a(this.i, actionPreferenceDocument.i) && this.j == actionPreferenceDocument.j) {
+            if (ekus.a(this.b, actionPreferenceDocument.b) && ekus.a(this.a, actionPreferenceDocument.a) && ekus.a(this.c, actionPreferenceDocument.c) && this.d == actionPreferenceDocument.d && this.e == actionPreferenceDocument.e && ekus.a(this.f, actionPreferenceDocument.f) && ekus.a(this.g, actionPreferenceDocument.g) && this.h == actionPreferenceDocument.h && ekus.a(this.i, actionPreferenceDocument.i) && this.j == actionPreferenceDocument.j) {
                 return true;
             }
         }
@@ -47,7 +47,7 @@ public final class ActionPreferenceDocument {
     }
 
     public final String toString() {
-        eiib b = eiic.b(this);
+        ekvg b = ekvh.b(this);
         b.b("preferenceId", this.b);
         b.b("namespace", this.a);
         b.b("identifier", this.c);

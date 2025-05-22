@@ -4,17 +4,17 @@ import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.cttb;
-import defpackage.cttc;
-import defpackage.eihn;
+import defpackage.atzr;
+import defpackage.cwch;
+import defpackage.cwci;
+import defpackage.ekus;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class ContactsConsentsConfig extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cttc();
+    public static final Parcelable.Creator CREATOR = new cwci();
     public final boolean a;
     public final boolean b;
     public final boolean c;
@@ -37,11 +37,11 @@ public final class ContactsConsentsConfig extends AbstractSafeParcelable {
         this.i = z6;
     }
 
-    public static cttb a() {
-        cttb cttbVar = new cttb();
-        cttbVar.c = true;
-        cttbVar.d = (byte) (cttbVar.d | 32);
-        return cttbVar;
+    public static cwch a() {
+        cwch cwchVar = new cwch();
+        cwchVar.c = true;
+        cwchVar.d = (byte) (cwchVar.d | 32);
+        return cwchVar;
     }
 
     public final boolean equals(Object obj) {
@@ -52,7 +52,7 @@ public final class ContactsConsentsConfig extends AbstractSafeParcelable {
             return false;
         }
         ContactsConsentsConfig contactsConsentsConfig = (ContactsConsentsConfig) obj;
-        return this.a == contactsConsentsConfig.a && this.b == contactsConsentsConfig.b && this.c == contactsConsentsConfig.c && this.e == contactsConsentsConfig.e && this.f == contactsConsentsConfig.f && this.i == contactsConsentsConfig.i && eihn.a(this.d, contactsConsentsConfig.d) && eihn.a(this.g, contactsConsentsConfig.g) && eihn.a(this.h, contactsConsentsConfig.h);
+        return this.a == contactsConsentsConfig.a && this.b == contactsConsentsConfig.b && this.c == contactsConsentsConfig.c && this.e == contactsConsentsConfig.e && this.f == contactsConsentsConfig.f && this.i == contactsConsentsConfig.i && ekus.a(this.d, contactsConsentsConfig.d) && ekus.a(this.g, contactsConsentsConfig.g) && ekus.a(this.h, contactsConsentsConfig.h);
     }
 
     public final int hashCode() {
@@ -62,16 +62,16 @@ public final class ContactsConsentsConfig extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.a;
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, z);
-        arxc.e(parcel, 2, this.b);
-        arxc.e(parcel, 3, this.c);
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.e(parcel, 5, this.e);
-        arxc.e(parcel, 6, this.f);
-        arxc.v(parcel, 7, this.g, false);
-        arxc.y(parcel, 8, this.h, false);
-        arxc.e(parcel, 9, this.i);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, z);
+        atzr.e(parcel, 2, this.b);
+        atzr.e(parcel, 3, this.c);
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.e(parcel, 5, this.e);
+        atzr.e(parcel, 6, this.f);
+        atzr.v(parcel, 7, this.g, false);
+        atzr.y(parcel, 8, this.h, false);
+        atzr.e(parcel, 9, this.i);
+        atzr.c(parcel, a);
     }
 }

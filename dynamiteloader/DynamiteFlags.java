@@ -3,21 +3,21 @@ package com.google.android.gms.dynamiteloader;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.azjj;
-import defpackage.azjk;
-import defpackage.eitj;
-import defpackage.eiuu;
-import defpackage.ejck;
-import defpackage.pou;
+import defpackage.atzr;
+import defpackage.bbnf;
+import defpackage.bbng;
+import defpackage.elgo;
+import defpackage.elhz;
+import defpackage.elpp;
+import defpackage.rhy;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public final class DynamiteFlags extends AbstractSafeParcelable implements pou {
-    public static final Parcelable.Creator CREATOR = new azjk();
-    public static final DynamiteFlags a = r(new azjj());
+public final class DynamiteFlags extends AbstractSafeParcelable implements rhy {
+    public static final Parcelable.Creator CREATOR = new bbng();
+    public static final DynamiteFlags a = r(new bbnf());
     public final boolean b;
     public final boolean c;
     public final boolean d;
@@ -32,39 +32,39 @@ public final class DynamiteFlags extends AbstractSafeParcelable implements pou {
         this.b = z;
         this.c = z2;
         this.d = z3;
-        this.h = eitj.i(list);
+        this.h = elgo.i(list);
         this.e = z4;
-        this.i = eitj.i(list2);
+        this.i = elgo.i(list2);
         this.f = z5;
         this.g = z6;
-        this.j = eitj.i(list3);
+        this.j = elgo.i(list3);
     }
 
-    public static DynamiteFlags r(pou pouVar) {
-        return new DynamiteFlags(pouVar.m(), pouVar.k(), pouVar.i(), pouVar.b(), pouVar.j(), pouVar.a(), pouVar.p(), pouVar.n(), pouVar.c());
+    public static DynamiteFlags r(rhy rhyVar) {
+        return new DynamiteFlags(rhyVar.m(), rhyVar.k(), rhyVar.i(), rhyVar.b(), rhyVar.j(), rhyVar.a(), rhyVar.p(), rhyVar.n(), rhyVar.c());
     }
 
-    @Override // defpackage.pou
-    public final eitj a() {
-        return eitj.i(this.i);
+    @Override // defpackage.rhy
+    public final elgo a() {
+        return elgo.i(this.i);
     }
 
-    @Override // defpackage.pou
-    public final eitj b() {
-        return eitj.i(this.h);
+    @Override // defpackage.rhy
+    public final elgo b() {
+        return elgo.i(this.h);
     }
 
-    @Override // defpackage.pou
-    public final eitj c() {
-        return eitj.i(this.j);
+    @Override // defpackage.rhy
+    public final elgo c() {
+        return elgo.i(this.j);
     }
 
-    @Override // defpackage.pou
-    public final /* synthetic */ eiuu d() {
-        return ejck.a;
+    @Override // defpackage.rhy
+    public final /* synthetic */ elhz d() {
+        return elpp.a;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final /* synthetic */ boolean e() {
         throw null;
     }
@@ -80,17 +80,17 @@ public final class DynamiteFlags extends AbstractSafeParcelable implements pou {
         return this.b == dynamiteFlags.b && this.c == dynamiteFlags.c && this.d == dynamiteFlags.d && this.h.equals(dynamiteFlags.h) && this.e == dynamiteFlags.e && this.i.equals(dynamiteFlags.i) && this.f == dynamiteFlags.f && this.g == dynamiteFlags.g && this.j.equals(dynamiteFlags.j);
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final /* synthetic */ boolean f() {
         return false;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final /* synthetic */ boolean g() {
         throw null;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final /* synthetic */ boolean h() {
         throw null;
     }
@@ -99,47 +99,47 @@ public final class DynamiteFlags extends AbstractSafeParcelable implements pou {
         return Arrays.hashCode(new Object[]{Boolean.valueOf(this.b), Boolean.valueOf(this.c), Boolean.valueOf(this.d), this.h, Boolean.valueOf(this.e), this.i, Boolean.valueOf(this.f), Boolean.valueOf(this.g), this.j});
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final boolean i() {
         return this.d;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final boolean j() {
         return this.e;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final boolean k() {
         return this.c;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final /* synthetic */ boolean l() {
         return false;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final boolean m() {
         return this.b;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final boolean n() {
         return this.g;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final /* synthetic */ boolean o() {
         return false;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final boolean p() {
         return this.f;
     }
 
-    @Override // defpackage.pou
+    @Override // defpackage.rhy
     public final /* synthetic */ boolean q() {
         return false;
     }
@@ -147,16 +147,16 @@ public final class DynamiteFlags extends AbstractSafeParcelable implements pou {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.b;
-        int a2 = arxc.a(parcel);
-        arxc.e(parcel, 4, z);
-        arxc.e(parcel, 7, this.c);
-        arxc.e(parcel, 9, this.d);
-        arxc.x(parcel, 10, b(), false);
-        arxc.e(parcel, 11, this.e);
-        arxc.x(parcel, 12, a(), false);
-        arxc.e(parcel, 15, this.f);
-        arxc.e(parcel, 17, this.g);
-        arxc.x(parcel, 18, c(), false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.e(parcel, 4, z);
+        atzr.e(parcel, 7, this.c);
+        atzr.e(parcel, 9, this.d);
+        atzr.x(parcel, 10, b(), false);
+        atzr.e(parcel, 11, this.e);
+        atzr.x(parcel, 12, a(), false);
+        atzr.e(parcel, 15, this.f);
+        atzr.e(parcel, 17, this.g);
+        atzr.x(parcel, 18, c(), false);
+        atzr.c(parcel, a2);
     }
 }

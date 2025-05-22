@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.aqyf;
-import defpackage.arxc;
-import defpackage.bgmh;
+import defpackage.atau;
+import defpackage.atzr;
+import defpackage.biqx;
 import java.util.Collections;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes4.dex */
-public class GoalsResult extends AbstractSafeParcelable implements aqyf {
-    public static final Parcelable.Creator CREATOR = new bgmh();
+public class GoalsResult extends AbstractSafeParcelable implements atau {
+    public static final Parcelable.Creator CREATOR = new biqx();
     public final Status a;
     public final List b;
 
@@ -27,7 +27,7 @@ public class GoalsResult extends AbstractSafeParcelable implements aqyf {
         return new GoalsResult(status, Collections.EMPTY_LIST);
     }
 
-    @Override // defpackage.aqyf
+    @Override // defpackage.atau
     public final Status a() {
         return this.a;
     }
@@ -35,9 +35,9 @@ public class GoalsResult extends AbstractSafeParcelable implements aqyf {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Status status = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, status, i, false);
-        arxc.y(parcel, 2, this.b, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, status, i, false);
+        atzr.y(parcel, 2, this.b, false);
+        atzr.c(parcel, a);
     }
 }

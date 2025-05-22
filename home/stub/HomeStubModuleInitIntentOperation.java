@@ -3,77 +3,78 @@ package com.google.android.gms.home.stub;
 import android.content.Context;
 import android.content.Intent;
 import com.google.android.gms.home.stub.HomeStubModuleInitIntentOperation;
-import defpackage.anya;
-import defpackage.asot;
-import defpackage.asqg;
-import defpackage.blap;
-import defpackage.blar;
-import defpackage.blav;
-import defpackage.blbe;
-import defpackage.dvlw;
-import defpackage.dvmh;
-import defpackage.ejhf;
-import defpackage.foxt;
-import defpackage.fuuw;
-import defpackage.fuvg;
-import defpackage.fvaf;
-import defpackage.fvbo;
+import defpackage.apzs;
+import defpackage.ausn;
+import defpackage.auua;
+import defpackage.bnhg;
+import defpackage.bnhi;
+import defpackage.bnhm;
+import defpackage.bnhw;
+import defpackage.dxwx;
+import defpackage.dxxi;
+import defpackage.eluo;
+import defpackage.frqx;
+import defpackage.fxqu;
+import defpackage.fxre;
+import defpackage.fxwd;
+import defpackage.fxxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class HomeStubModuleInitIntentOperation extends anya {
-    private final fuuw a = new fuvg(new fvaf() { // from class: blau
-        @Override // defpackage.fvaf
+public class HomeStubModuleInitIntentOperation extends apzs {
+    private final fxqu a = new fxre(new fxwd() { // from class: bnhl
+        @Override // defpackage.fxwd
         public final Object a() {
-            blbe blbeVar = new blbe(HomeStubModuleInitIntentOperation.this);
-            blbeVar.d();
-            return blbeVar;
+            bnhw bnhwVar = new bnhw(HomeStubModuleInitIntentOperation.this);
+            bnhwVar.e();
+            return bnhwVar;
         }
     });
 
     private final void e() {
-        ((blbe) this.a.a()).b();
-        if (foxt.a.a().d()) {
-            asot asotVar = blar.a;
+        ((bnhw) this.a.a()).b();
+        if (frqx.a.lK().f()) {
+            ausn ausnVar = bnhi.a;
             Context baseContext = getBaseContext();
-            fvbo.e(baseContext, "getBaseContext(...)");
-            if (blap.a(baseContext)) {
+            fxxm.e(baseContext, "getBaseContext(...)");
+            if (bnhg.a(baseContext)) {
                 return;
             }
-            ((ejhf) blav.a.h()).x("Monitoring for device provisioning.");
+            ausn ausnVar2 = bnhm.a;
+            ((eluo) ausnVar2.h()).x("Monitoring for device provisioning.");
             int i = HomeStubProvisionMonitorService.c;
             Context baseContext2 = getBaseContext();
-            fvbo.e(baseContext2, "getBaseContext(...)");
-            fvbo.f(baseContext2, "context");
+            fxxm.e(baseContext2, "getBaseContext(...)");
+            fxxm.f(baseContext2, "context");
             Intent intent = new Intent();
             intent.setClassName(baseContext2, "com.google.android.gms.home.stub.ProvisionMonitoringService");
-            ((ejhf) blav.a.h()).B("got serviceIntent: %s", intent.toString());
+            ((eluo) ausnVar2.h()).B("got serviceIntent: %s", intent.toString());
             getBaseContext().startService(intent);
         }
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void a(Intent intent, boolean z) {
-        fvbo.f(intent, "intent");
-        ((ejhf) blav.a.h()).x("Updating Home module request state at home stub update");
+        fxxm.f(intent, "intent");
+        ((eluo) bnhm.a.h()).x("Updating Home module request state at home stub update");
         e();
     }
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
-        fvbo.f(intent, "intent");
-        ((ejhf) blav.a.h()).x("Updating Home module request state at home stub init");
+        fxxm.f(intent, "intent");
+        ((eluo) bnhm.a.h()).x("Updating Home module request state at home stub init");
         e();
     }
 
-    @Override // defpackage.anya, com.google.android.chimera.IntentOperation
+    @Override // defpackage.apzs, com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        fvbo.f(intent, "intent");
-        if (!"com.google.android.gms.phenotype.COMMITTED".equals(intent.getAction()) && !asqg.f("com.google.android.gms.home").equals(intent.getAction())) {
+        fxxm.f(intent, "intent");
+        if (!"com.google.android.gms.phenotype.COMMITTED".equals(intent.getAction()) && !auua.f("com.google.android.gms.home").equals(intent.getAction())) {
             super.onHandleIntent(intent);
         } else if ("com.google.android.gms.home".equals(intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME"))) {
-            ((ejhf) blav.a.h()).x("HomeStub re-evaluating module downloads on phenotype flags update");
-            dvlw.f(dvmh.a("com.google.android.gms.home"));
+            ((eluo) bnhm.a.h()).x("HomeStub re-evaluating module downloads on phenotype flags update");
+            dxwx.f(dxxi.a("com.google.android.gms.home"));
             e();
         }
     }

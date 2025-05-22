@@ -9,34 +9,34 @@ import com.google.android.gms.auth.aang.GetAccountsResponse;
 import com.google.android.gms.auth.aang.GoogleAccount;
 import com.google.android.gms.backup.g1.restore.mms.StartMmsRestoreIntentOperation;
 import com.google.android.gms.backup.g1.restore.photos.StartPhotosRestoreIntentOperation;
-import defpackage.ahhp;
-import defpackage.ahwd;
-import defpackage.ajdp;
-import defpackage.ajgv;
-import defpackage.doci;
-import defpackage.eiho;
-import defpackage.eitj;
-import defpackage.enps;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.enss;
-import defpackage.flmm;
-import defpackage.upc;
-import defpackage.vay;
+import defpackage.ajif;
+import defpackage.ajwt;
+import defpackage.aleh;
+import defpackage.alhn;
+import defpackage.dqmr;
+import defpackage.ekut;
+import defpackage.elgo;
+import defpackage.eqdl;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.eqgl;
+import defpackage.fodw;
+import defpackage.wlb;
+import defpackage.wwy;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes3.dex */
 public class VerifyAutoRestoreIntentOperation extends IntentOperation {
-    public static final ahwd a = new ahwd("VerifyAutoRestoreIntentOperation");
+    public static final ajwt a = new ajwt("VerifyAutoRestoreIntentOperation");
 
     public final void a() {
         Intent startIntent;
-        ajgv ajgvVar = ajgv.a;
-        int j = ajgv.j(this);
-        int k = ajgv.k(this);
+        alhn alhnVar = alhn.a;
+        int j = alhn.j(this);
+        int k = alhn.k(this);
         if (j == 2) {
             if (k == 2) {
                 a.j("User opted out of G1 restores.", new Object[0]);
@@ -47,11 +47,11 @@ public class VerifyAutoRestoreIntentOperation extends IntentOperation {
         if (j == 0) {
             return;
         }
-        if (flmm.r() && k == 0) {
+        if (fodw.r() && k == 0) {
             return;
         }
         if (j == 1) {
-            if (Build.VERSION.SDK_INT < 27 && getPackageManager().queryIntentActivities(new Intent(flmm.n()).setPackage(flmm.o()), 0).isEmpty()) {
+            if (Build.VERSION.SDK_INT < 27 && getPackageManager().queryIntentActivities(new Intent(fodw.n()).setPackage(fodw.o()), 0).isEmpty()) {
                 return;
             }
             Intent startIntent2 = IntentOperation.getStartIntent(this, StartMmsRestoreIntentOperation.class, "com.google.android.gms.backup.g1.START_MMS_RESTORE");
@@ -59,29 +59,29 @@ public class VerifyAutoRestoreIntentOperation extends IntentOperation {
                 startService(startIntent2);
             }
         }
-        if (flmm.r() && k == 1 && (startIntent = IntentOperation.getStartIntent(this, StartPhotosRestoreIntentOperation.class, "com.google.android.gms.backup.g1.START_PHOTOS_RESTORE")) != null) {
+        if (fodw.r() && k == 1 && (startIntent = IntentOperation.getStartIntent(this, StartPhotosRestoreIntentOperation.class, "com.google.android.gms.backup.g1.START_PHOTOS_RESTORE")) != null) {
             startService(startIntent);
         }
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (flmm.a.a().W()) {
+        if (fodw.a.lK().W()) {
             a();
             return;
         }
-        final ahhp ahhpVar = new ahhp(this);
-        vay vayVar = new vay(this);
-        upc a2 = GetAccountsRequest.a();
+        final ajif ajifVar = new ajif(this);
+        wwy wwyVar = new wwy(this);
+        wlb a2 = GetAccountsRequest.a();
         a2.b("com.google");
-        a2.a = eitj.l("googleone");
-        enss b = doci.b(vayVar.b(a2.a()));
-        eiho eihoVar = new eiho() { // from class: ajdn
-            @Override // defpackage.eiho
+        a2.a = elgo.l("googleone");
+        eqgl b = dqmr.b(wwyVar.b(a2.a()));
+        ekut ekutVar = new ekut() { // from class: alef
+            @Override // defpackage.ekut
             public final Object apply(Object obj) {
                 boolean z;
                 List list = ((GetAccountsResponse) obj).a;
-                Account a3 = ahhp.this.a();
+                Account a3 = ajif.this.a();
                 Iterator it = list.iterator();
                 while (true) {
                     if (!it.hasNext()) {
@@ -97,7 +97,7 @@ public class VerifyAutoRestoreIntentOperation extends IntentOperation {
                 return Boolean.valueOf(z);
             }
         };
-        enre enreVar = enre.a;
-        ensj.t(enps.f(b, eihoVar, enreVar), new ajdp(this), enreVar);
+        eqex eqexVar = eqex.a;
+        eqgc.t(eqdl.f(b, ekutVar, eqexVar), new aleh(this), eqexVar);
     }
 }

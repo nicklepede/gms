@@ -2,23 +2,23 @@ package com.google.android.gms.auth;
 
 import android.content.Intent;
 import android.util.Log;
-import defpackage.arwm;
-import defpackage.unx;
-import defpackage.uoq;
+import defpackage.atzb;
+import defpackage.wjw;
+import defpackage.wkp;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class UserRecoverableAuthException extends unx {
+public class UserRecoverableAuthException extends wjw {
     private final Intent a;
-    private final uoq b;
+    private final wkp b;
 
     public UserRecoverableAuthException(String str, Intent intent) {
-        this(str, intent, uoq.LEGACY);
+        this(str, intent, wkp.LEGACY);
     }
 
     public static UserRecoverableAuthException b(String str, Intent intent) {
-        arwm.s(intent);
-        return new UserRecoverableAuthException(str, intent, uoq.AUTH_INSTANTIATION);
+        atzb.s(intent);
+        return new UserRecoverableAuthException(str, intent, wkp.AUTH_INSTANTIATION);
     }
 
     public final Intent a() {
@@ -42,10 +42,10 @@ public class UserRecoverableAuthException extends unx {
         return null;
     }
 
-    private UserRecoverableAuthException(String str, Intent intent, uoq uoqVar) {
+    private UserRecoverableAuthException(String str, Intent intent, wkp wkpVar) {
         super(str);
         this.a = intent;
-        arwm.s(uoqVar);
-        this.b = uoqVar;
+        atzb.s(wkpVar);
+        this.b = wkpVar;
     }
 }

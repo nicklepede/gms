@@ -5,19 +5,19 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ddrk;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dgcp;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class AccountPickerOptions extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new ddrk();
+    public static final Parcelable.Creator CREATOR = new dgcp();
     private static final HashMap i;
     final Set a;
     public String b;
@@ -51,7 +51,7 @@ public class AccountPickerOptions extends BinarySerializableFastSafeParcelableJs
         this.h = z5;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i2 = fastJsonResponse$Field.g;
         switch (i2) {
@@ -74,12 +74,12 @@ public class AccountPickerOptions extends BinarySerializableFastSafeParcelableJs
         }
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final Map b() {
         return i;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
@@ -88,14 +88,14 @@ public class AccountPickerOptions extends BinarySerializableFastSafeParcelableJs
     public final boolean equals(Object obj) {
         if (obj instanceof AccountPickerOptions) {
             AccountPickerOptions accountPickerOptions = (AccountPickerOptions) obj;
-            if (arwb.b(this.b, accountPickerOptions.b) && arwb.b(this.c, accountPickerOptions.c) && this.d == accountPickerOptions.d && this.e == accountPickerOptions.e && this.f == accountPickerOptions.f && this.g == accountPickerOptions.g && this.h == accountPickerOptions.h) {
+            if (atyq.b(this.b, accountPickerOptions.b) && atyq.b(this.c, accountPickerOptions.c) && this.d == accountPickerOptions.d && this.e == accountPickerOptions.e && this.f == accountPickerOptions.f && this.g == accountPickerOptions.g && this.h == accountPickerOptions.h) {
                 return true;
             }
         }
         return false;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         if (str2 == null) {
             return;
@@ -112,8 +112,8 @@ public class AccountPickerOptions extends BinarySerializableFastSafeParcelableJs
         this.a.add(Integer.valueOf(i2));
     }
 
-    @Override // defpackage.ashs
-    protected final void gg(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
+    @Override // defpackage.aulm
+    protected final void gv(FastJsonResponse$Field fastJsonResponse$Field, String str, boolean z) {
         int i2 = fastJsonResponse$Field.g;
         switch (i2) {
             case 4:
@@ -145,29 +145,29 @@ public class AccountPickerOptions extends BinarySerializableFastSafeParcelableJs
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i2) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.v(parcel, 2, this.b, true);
+            atzr.v(parcel, 2, this.b, true);
         }
         if (set.contains(3)) {
-            arxc.v(parcel, 3, this.c, true);
+            atzr.v(parcel, 3, this.c, true);
         }
         if (set.contains(4)) {
-            arxc.e(parcel, 4, this.d);
+            atzr.e(parcel, 4, this.d);
         }
         if (set.contains(5)) {
-            arxc.e(parcel, 5, this.e);
+            atzr.e(parcel, 5, this.e);
         }
         if (set.contains(6)) {
-            arxc.e(parcel, 6, this.f);
+            atzr.e(parcel, 6, this.f);
         }
         if (set.contains(7)) {
-            arxc.e(parcel, 7, this.g);
+            atzr.e(parcel, 7, this.g);
         }
         if (set.contains(8)) {
-            arxc.e(parcel, 8, this.h);
+            atzr.e(parcel, 8, this.h);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public AccountPickerOptions() {

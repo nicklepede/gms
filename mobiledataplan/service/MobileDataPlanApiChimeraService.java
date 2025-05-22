@@ -1,25 +1,25 @@
 package com.google.android.gms.mobiledataplan.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.ceau;
-import defpackage.ceav;
-import defpackage.ceaw;
-import defpackage.cecb;
-import defpackage.ceci;
-import defpackage.ceqi;
-import defpackage.eiuu;
-import defpackage.fqhf;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.cgkb;
+import defpackage.cgkc;
+import defpackage.cgkd;
+import defpackage.cgli;
+import defpackage.cglp;
+import defpackage.cgzp;
+import defpackage.elhz;
+import defpackage.ftax;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class MobileDataPlanApiChimeraService extends bxgd {
-    private static final eiuu b = eiuu.K("android.permission-group.PHONE", "android.permission-group.STORAGE");
-    private static final asot c = asot.b("MobileDataPlan", asej.MOBILE_DATA_PLAN);
-    public static final eiuu a = eiuu.N("com.google.android.youtube", "com.google.android.apps.youtube.unplugged", "com.google.android.apps.subscriptions.red", "com.android.vending", "com.google.android.apps.youtube.music");
+public class MobileDataPlanApiChimeraService extends bzot {
+    private static final elhz b = elhz.K("android.permission-group.PHONE", "android.permission-group.STORAGE");
+    private static final ausn c = ausn.b("MobileDataPlan", auid.MOBILE_DATA_PLAN);
+    public static final elhz a = elhz.N("com.google.android.youtube", "com.google.android.apps.youtube.unplugged", "com.google.android.apps.subscriptions.red", "com.android.vending", "com.google.android.apps.youtube.music");
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -29,21 +29,21 @@ public class MobileDataPlanApiChimeraService extends bxgd {
     public MobileDataPlanApiChimeraService() {
         /*
             r7 = this;
-            eiuu r3 = com.google.android.gms.mobiledataplan.service.MobileDataPlanApiChimeraService.b
-            eiuu r6 = com.google.android.gms.mobiledataplan.service.MobileDataPlanApiChimeraService.a
+            elhz r3 = com.google.android.gms.mobiledataplan.service.MobileDataPlanApiChimeraService.b
+            elhz r6 = com.google.android.gms.mobiledataplan.service.MobileDataPlanApiChimeraService.a
             r4 = 0
             r5 = 10
             r1 = 158(0x9e, float:2.21E-43)
             java.lang.String r2 = "com.google.android.gms.mobiledataplan.service.START"
             r0 = r7
             r0.<init>(r1, r2, r3, r4, r5, r6)
-            asot r0 = com.google.android.gms.mobiledataplan.service.MobileDataPlanApiChimeraService.c
-            java.util.logging.Level r1 = defpackage.ceqi.h()
-            ejhf r1 = r0.f(r1)
+            ausn r0 = com.google.android.gms.mobiledataplan.service.MobileDataPlanApiChimeraService.c
+            java.util.logging.Level r1 = defpackage.cgzp.h()
+            eluo r1 = r0.f(r1)
             java.lang.String r2 = "Service is created."
             r1.x(r2)
-            java.util.logging.Level r1 = defpackage.ceqi.h()
-            ejhf r0 = r0.f(r1)
+            java.util.logging.Level r1 = defpackage.cgzp.h()
+            eluo r0 = r0.f(r1)
             java.lang.String r1 = "Service visibility is: %d, with allowList: %s"
             r2 = 0
             r0.G(r1, r2, r6)
@@ -52,27 +52,27 @@ public class MobileDataPlanApiChimeraService extends bxgd {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.mobiledataplan.service.MobileDataPlanApiChimeraService.<init>():void");
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         String str = getServiceRequest.f;
-        if (fqhf.G()) {
-            cecb.a().c(this);
+        if (ftax.G()) {
+            cgli.a().c(this);
         }
-        bxgjVar.c(new ceci(l(), getServiceRequest.f, getServiceRequest.p));
+        bzozVar.c(new cglp(l(), getServiceRequest.f, getServiceRequest.p));
     }
 
-    @Override // defpackage.bxgd, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // defpackage.bzot, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onDestroy() {
-        c.f(ceqi.h()).x("Service is being destroyed.");
-        ceau c2 = ceau.c();
-        synchronized (ceau.b) {
-            ceav ceavVar = c2.d;
-            synchronized (ceavVar.b) {
-                ceaw ceawVar = ceavVar.a;
-                ceawVar.getDatabaseName();
-                ceawVar.close();
+        c.f(cgzp.h()).x("Service is being destroyed.");
+        cgkb c2 = cgkb.c();
+        synchronized (cgkb.b) {
+            cgkc cgkcVar = c2.d;
+            synchronized (cgkcVar.b) {
+                cgkd cgkdVar = cgkcVar.a;
+                cgkdVar.getDatabaseName();
+                cgkdVar.close();
             }
-            ceau.a = null;
+            cgkb.a = null;
         }
         super.onDestroy();
     }

@@ -5,27 +5,27 @@ import android.content.Intent;
 import android.os.IBinder;
 import com.google.android.chimera.Service;
 import com.google.android.chimera.config.ModuleManager;
-import defpackage.asmf;
-import defpackage.aspo;
-import defpackage.caix;
-import defpackage.caiy;
-import defpackage.cajd;
-import defpackage.caji;
-import defpackage.iru;
+import defpackage.aupz;
+import defpackage.auti;
+import defpackage.ccrn;
+import defpackage.ccro;
+import defpackage.ccrt;
+import defpackage.ccry;
+import defpackage.itk;
 import j$.util.Objects;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class FusedLocationChimeraService extends Service {
-    private caix a;
+    private ccrn a;
 
     @Override // com.google.android.chimera.Service
     protected final void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
-        caix caixVar = this.a;
-        if (caixVar != null) {
-            ((cajd) ((caji) caixVar).b.a).a(new aspo(printWriter, "  "));
+        ccrn ccrnVar = this.a;
+        if (ccrnVar != null) {
+            ((ccrt) ((ccry) ccrnVar).b.a).a(new auti(printWriter, "  "));
         }
     }
 
@@ -34,15 +34,15 @@ public class FusedLocationChimeraService extends Service {
         if (this.a == null) {
             try {
                 Context context = (Context) Objects.requireNonNull(ModuleManager.createSubmoduleContext(this, "fused_location_provider"));
-                int i = caiy.a;
-                final caji cajiVar = new caji(context);
-                this.a = cajiVar;
-                caji cajiVar2 = cajiVar;
-                caji cajiVar3 = cajiVar;
-                cajiVar.b.f(new asmf(1, 9), new iru() { // from class: cajf
-                    @Override // defpackage.iru
+                int i = ccro.a;
+                final ccry ccryVar = new ccry(context);
+                this.a = ccryVar;
+                ccry ccryVar2 = ccryVar;
+                ccry ccryVar3 = ccryVar;
+                ccryVar.b.f(new aupz(1, 9), new itk() { // from class: ccrv
+                    @Override // defpackage.itk
                     public final void a(Object obj) {
-                        ((cajd) obj).b(caji.this);
+                        ((ccrt) obj).b(ccry.this);
                     }
                 });
             } catch (NoClassDefFoundError unused) {
@@ -54,12 +54,12 @@ public class FusedLocationChimeraService extends Service {
 
     @Override // com.google.android.chimera.Service
     public final void onDestroy() {
-        caix caixVar = this.a;
-        if (caixVar != null) {
-            ((caji) caixVar).b.e(new iru() { // from class: caje
-                @Override // defpackage.iru
+        ccrn ccrnVar = this.a;
+        if (ccrnVar != null) {
+            ((ccry) ccrnVar).b.e(new itk() { // from class: ccru
+                @Override // defpackage.itk
                 public final void a(Object obj) {
-                    ((cajd) obj).e();
+                    ((ccrt) obj).e();
                 }
             });
             this.a = null;

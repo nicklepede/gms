@@ -3,15 +3,15 @@ package com.google.android.gms.nearby.presence;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ckjl;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cmrq;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public class DiscoveryDevice extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ckjl();
+    public static final Parcelable.Creator CREATOR = new cmrq();
     public final long a;
     public final PresenceAction[] b;
     public final int c;
@@ -24,7 +24,7 @@ public class DiscoveryDevice extends AbstractSafeParcelable {
 
     public final boolean equals(Object obj) {
         if (obj instanceof DiscoveryDevice) {
-            return arwb.b(Long.valueOf(this.a), Long.valueOf(((DiscoveryDevice) obj).a));
+            return atyq.b(Long.valueOf(this.a), Long.valueOf(((DiscoveryDevice) obj).a));
         }
         return false;
     }
@@ -40,10 +40,10 @@ public class DiscoveryDevice extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.a;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, j);
-        arxc.J(parcel, 2, this.b, i);
-        arxc.o(parcel, 3, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, j);
+        atzr.J(parcel, 2, this.b, i);
+        atzr.o(parcel, 3, this.c);
+        atzr.c(parcel, a);
     }
 }

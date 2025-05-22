@@ -3,15 +3,15 @@ package com.google.android.gms.nearby.presence.log;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cleo;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cnmt;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes5.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes6.dex */
 public final class DtdiAttribution extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cleo();
+    public static final Parcelable.Creator CREATOR = new cnmt();
     public byte[] a;
     public byte[] b;
     public byte[] c;
@@ -27,7 +27,7 @@ public final class DtdiAttribution extends AbstractSafeParcelable {
         }
         if (obj instanceof DtdiAttribution) {
             DtdiAttribution dtdiAttribution = (DtdiAttribution) obj;
-            if (Arrays.equals(this.a, dtdiAttribution.a) && Arrays.equals(this.b, dtdiAttribution.b) && Arrays.equals(this.c, dtdiAttribution.c) && arwb.b(Integer.valueOf(this.d), Integer.valueOf(dtdiAttribution.d)) && arwb.b(Long.valueOf(this.e), Long.valueOf(dtdiAttribution.e))) {
+            if (Arrays.equals(this.a, dtdiAttribution.a) && Arrays.equals(this.b, dtdiAttribution.b) && Arrays.equals(this.c, dtdiAttribution.c) && atyq.b(Integer.valueOf(this.d), Integer.valueOf(dtdiAttribution.d)) && atyq.b(Long.valueOf(this.e), Long.valueOf(dtdiAttribution.e))) {
                 return true;
             }
         }
@@ -40,13 +40,13 @@ public final class DtdiAttribution extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, this.a, false);
-        arxc.i(parcel, 2, this.b, false);
-        arxc.i(parcel, 3, this.c, false);
-        arxc.o(parcel, 4, this.d);
-        arxc.q(parcel, 5, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, this.a, false);
+        atzr.i(parcel, 2, this.b, false);
+        atzr.i(parcel, 3, this.c, false);
+        atzr.o(parcel, 4, this.d);
+        atzr.q(parcel, 5, this.e);
+        atzr.c(parcel, a);
     }
 
     public DtdiAttribution(byte[] bArr, byte[] bArr2, byte[] bArr3, int i, long j) {

@@ -10,61 +10,61 @@ import android.os.Parcelable;
 import com.google.android.gms.auth.uiflows.common.UpdateCredentialsChimeraActivity;
 import com.google.android.gms.auth.uiflows.controller.Controller;
 import com.google.android.gms.chimera.modules.auth.account.base.AppContextProvider;
-import defpackage.aano;
-import defpackage.aanp;
-import defpackage.aant;
-import defpackage.adle;
-import defpackage.adli;
-import defpackage.adpc;
-import defpackage.arke;
+import defpackage.acno;
+import defpackage.acnp;
+import defpackage.acnt;
+import defpackage.afll;
+import defpackage.aflp;
+import defpackage.afpj;
+import defpackage.atmt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class FinishUpdateCredentialsSessionController implements Controller {
     private final Context b;
-    private final aant c;
+    private final acnt c;
     private final AccountAuthenticatorResponse d;
     private final Account e;
     private final String f;
     private final boolean g;
-    private final arke h;
+    private final atmt h;
     private String i;
-    private static final aano a = new aano("token_handle");
-    public static final Parcelable.Creator CREATOR = new adpc();
+    private static final acno a = new acno("token_handle");
+    public static final Parcelable.Creator CREATOR = new afpj();
 
-    public FinishUpdateCredentialsSessionController(AccountAuthenticatorResponse accountAuthenticatorResponse, Account account, boolean z, arke arkeVar, String str, String str2) {
-        aant aantVar = new aant(AppContextProvider.a());
+    public FinishUpdateCredentialsSessionController(AccountAuthenticatorResponse accountAuthenticatorResponse, Account account, boolean z, atmt atmtVar, String str, String str2) {
+        acnt acntVar = new acnt(AppContextProvider.a());
         this.b = AppContextProvider.a();
-        this.c = aantVar;
+        this.c = acntVar;
         this.d = accountAuthenticatorResponse;
         this.e = account;
         this.g = z;
-        this.h = arkeVar;
+        this.h = atmtVar;
         this.f = str;
         this.i = str2;
     }
 
-    private final adle c(int i, String str) {
+    private final afll c(int i, String str) {
         Intent putExtra = new Intent().putExtra("errorCode", i).putExtra("errorMessage", str);
         AccountAuthenticatorResponse accountAuthenticatorResponse = this.d;
         if (accountAuthenticatorResponse != null) {
             accountAuthenticatorResponse.onError(i, str);
         }
-        return new adle(0, null, 0, putExtra, -1, -1);
+        return new afll(0, null, 0, putExtra, -1, -1);
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller
-    public final adle a(adli adliVar) {
-        if (adliVar == null) {
-            return !this.c.a() ? c(3, "no network") : new adle(10, UpdateCredentialsChimeraActivity.j(this.b, this.e, this.f, false, this.h), 0, null, 0, 0);
+    public final afll a(aflp aflpVar) {
+        if (aflpVar == null) {
+            return !this.c.a() ? c(3, "no network") : new afll(10, UpdateCredentialsChimeraActivity.j(this.b, this.e, this.f, false, this.h), 0, null, 0, 0);
         }
-        int i = adliVar.a;
+        int i = aflpVar.a;
         if (i == 10) {
-            int i2 = adliVar.b;
+            int i2 = aflpVar.b;
             if (i2 == -1) {
-                Intent intent = adliVar.c;
+                Intent intent = aflpVar.c;
                 if (intent != null) {
-                    this.i = (String) new aanp(intent.getExtras()).a(a);
+                    this.i = (String) new acnp(intent.getExtras()).a(a);
                 }
                 Bundle bundle = new Bundle();
                 Account account = this.e;
@@ -75,13 +75,13 @@ public class FinishUpdateCredentialsSessionController implements Controller {
                 if (accountAuthenticatorResponse != null) {
                     accountAuthenticatorResponse.onResult(bundle);
                 }
-                return new adle(0, null, -1, new Intent().putExtras(bundle), -1, -1);
+                return new afll(0, null, -1, new Intent().putExtras(bundle), -1, -1);
             }
             if (i2 == 0) {
                 return c(5, "something went wrong");
             }
         }
-        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(adliVar.b)));
+        throw new IllegalStateException(String.format("Result not handled with id %d and resultCode %d.", Integer.valueOf(i), Integer.valueOf(aflpVar.b)));
     }
 
     @Override // com.google.android.gms.auth.uiflows.controller.Controller

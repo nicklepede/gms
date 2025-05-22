@@ -5,20 +5,20 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cifs;
-import defpackage.cifu;
-import defpackage.cigp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cknx;
+import defpackage.cknz;
+import defpackage.ckou;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class TriggerFirmwareUpdateCheckParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cigp();
+    public static final Parcelable.Creator CREATOR = new ckou();
     public byte[] a;
     public String b;
-    public cifu c;
+    public cknz c;
     public String d;
 
     public TriggerFirmwareUpdateCheckParams() {
@@ -34,7 +34,7 @@ public final class TriggerFirmwareUpdateCheckParams extends AbstractSafeParcelab
         }
         if (obj instanceof TriggerFirmwareUpdateCheckParams) {
             TriggerFirmwareUpdateCheckParams triggerFirmwareUpdateCheckParams = (TriggerFirmwareUpdateCheckParams) obj;
-            if (Arrays.equals(this.a, triggerFirmwareUpdateCheckParams.a) && arwb.b(this.b, triggerFirmwareUpdateCheckParams.b) && arwb.b(this.c, triggerFirmwareUpdateCheckParams.c) && arwb.b(this.d, triggerFirmwareUpdateCheckParams.d)) {
+            if (Arrays.equals(this.a, triggerFirmwareUpdateCheckParams.a) && atyq.b(this.b, triggerFirmwareUpdateCheckParams.b) && atyq.b(this.c, triggerFirmwareUpdateCheckParams.c) && atyq.b(this.d, triggerFirmwareUpdateCheckParams.d)) {
                 return true;
             }
         }
@@ -47,25 +47,25 @@ public final class TriggerFirmwareUpdateCheckParams extends AbstractSafeParcelab
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.i(parcel, 1, this.a, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.D(parcel, 3, a());
-        arxc.v(parcel, 4, this.d, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.i(parcel, 1, this.a, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.D(parcel, 3, a());
+        atzr.v(parcel, 4, this.d, false);
+        atzr.c(parcel, a);
     }
 
     public TriggerFirmwareUpdateCheckParams(byte[] bArr, String str, IBinder iBinder, String str2) {
-        cifu cifsVar;
+        cknz cknxVar;
         if (iBinder == null) {
-            cifsVar = null;
+            cknxVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.nearby.fastpair.internal.IFastPairStatusCallback");
-            cifsVar = queryLocalInterface instanceof cifu ? (cifu) queryLocalInterface : new cifs(iBinder);
+            cknxVar = queryLocalInterface instanceof cknz ? (cknz) queryLocalInterface : new cknx(iBinder);
         }
         this.a = bArr;
         this.b = str;
-        this.c = cifsVar;
+        this.c = cknxVar;
         this.d = str2;
     }
 }

@@ -4,15 +4,15 @@ import android.os.ParcelFileDescriptor;
 import android.os.Parcelable;
 import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.cxyj;
+import defpackage.daig;
 import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SafeBrowsingData extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cxyj();
+    public static final Parcelable.Creator CREATOR = new daig();
     public String a;
     public DataHolder b;
     public ParcelFileDescriptor c;
@@ -97,7 +97,7 @@ public class SafeBrowsingData extends AbstractSafeParcelable {
             r2.write(r0)     // Catch: java.lang.Throwable -> L5b java.io.IOException -> L60
             a(r2)
             r6 = r6 | 1
-            defpackage.cxyj.a(r4, r5, r6)
+            defpackage.daig.a(r4, r5, r6)
             goto L66
         L5b:
             r5 = move-exception
@@ -106,7 +106,7 @@ public class SafeBrowsingData extends AbstractSafeParcelable {
         L60:
             a(r2)
         L63:
-            defpackage.cxyj.a(r4, r5, r6)
+            defpackage.daig.a(r4, r5, r6)
         L66:
             r4.c = r1
             return

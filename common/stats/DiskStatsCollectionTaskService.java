@@ -1,32 +1,32 @@
 package com.google.android.gms.common.stats;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.byjl;
-import defpackage.byln;
-import defpackage.dupj;
-import defpackage.fnaw;
+import defpackage.casd;
+import defpackage.cauf;
+import defpackage.dwzw;
+import defpackage.fpsv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class DiskStatsCollectionTaskService extends GmsTaskBoundService {
     public static final /* synthetic */ int a = 0;
-    private final dupj b;
+    private final dwzw b;
 
     public DiskStatsCollectionTaskService() {
-        this.b = dupj.a();
+        this.b = dwzw.a();
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (fnaw.f()) {
-            this.b.e();
+    public final int a(cauf caufVar) {
+        if (fpsv.A()) {
+            this.b.g();
             return 0;
         }
-        byjl.a(this).d("diskstats", DiskStatsCollectionTaskService.class.getName());
+        casd.a(this).d("diskstats", DiskStatsCollectionTaskService.class.getName());
         return 0;
     }
 
-    DiskStatsCollectionTaskService(dupj dupjVar) {
-        this.b = dupjVar;
+    DiskStatsCollectionTaskService(dwzw dwzwVar) {
+        this.b = dwzwVar;
     }
 }

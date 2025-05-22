@@ -3,14 +3,14 @@ package com.google.android.gms.reminders.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.cxee;
+import defpackage.atyq;
+import defpackage.czoa;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class ChainInfoEntity extends AbstractSafeParcelable implements ChainInfo {
-    public static final Parcelable.Creator CREATOR = new cxee();
+    public static final Parcelable.Creator CREATOR = new czoa();
     public final String a;
     public final FeatureIdProtoEntity b;
 
@@ -24,7 +24,7 @@ public class ChainInfoEntity extends AbstractSafeParcelable implements ChainInfo
     }
 
     public static boolean d(ChainInfo chainInfo, ChainInfo chainInfo2) {
-        return arwb.b(chainInfo.c(), chainInfo2.c()) && arwb.b(chainInfo.a(), chainInfo2.a());
+        return atyq.b(chainInfo.c(), chainInfo2.c()) && atyq.b(chainInfo.a(), chainInfo2.a());
     }
 
     @Override // com.google.android.gms.reminders.model.ChainInfo
@@ -53,7 +53,7 @@ public class ChainInfoEntity extends AbstractSafeParcelable implements ChainInfo
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxee.a(this, parcel, i);
+        czoa.a(this, parcel, i);
     }
 
     public ChainInfoEntity(ChainInfo chainInfo) {
@@ -63,7 +63,7 @@ public class ChainInfoEntity extends AbstractSafeParcelable implements ChainInfo
         this.b = a == null ? null : new FeatureIdProtoEntity(a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

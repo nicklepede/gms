@@ -7,22 +7,22 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.ConnectionCapabilities;
 import com.google.android.gms.dtdi.core.TokenWrapper;
-import defpackage.arbn;
-import defpackage.arbp;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.aywu;
-import defpackage.ayxf;
+import defpackage.atec;
+import defpackage.atee;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bbao;
+import defpackage.bbaz;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class RequireConnectionCapabilitiesChangeOrDisconnectParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayxf();
+    public static final Parcelable.Creator CREATOR = new bbaz();
     public TokenWrapper a;
     public ConnectionCapabilities b;
-    public arbp c;
-    public aywu d;
+    public atee c;
+    public bbao d;
 
     private RequireConnectionCapabilitiesChangeOrDisconnectParams() {
     }
@@ -33,7 +33,7 @@ public final class RequireConnectionCapabilitiesChangeOrDisconnectParams extends
         }
         if (obj instanceof RequireConnectionCapabilitiesChangeOrDisconnectParams) {
             RequireConnectionCapabilitiesChangeOrDisconnectParams requireConnectionCapabilitiesChangeOrDisconnectParams = (RequireConnectionCapabilitiesChangeOrDisconnectParams) obj;
-            if (arwb.b(this.a, requireConnectionCapabilitiesChangeOrDisconnectParams.a) && arwb.b(this.b, requireConnectionCapabilitiesChangeOrDisconnectParams.b) && arwb.b(this.d, requireConnectionCapabilitiesChangeOrDisconnectParams.d) && arwb.b(this.c, requireConnectionCapabilitiesChangeOrDisconnectParams.c)) {
+            if (atyq.b(this.a, requireConnectionCapabilitiesChangeOrDisconnectParams.a) && atyq.b(this.b, requireConnectionCapabilitiesChangeOrDisconnectParams.b) && atyq.b(this.d, requireConnectionCapabilitiesChangeOrDisconnectParams.d) && atyq.b(this.c, requireConnectionCapabilitiesChangeOrDisconnectParams.c)) {
                 return true;
             }
         }
@@ -46,32 +46,32 @@ public final class RequireConnectionCapabilitiesChangeOrDisconnectParams extends
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.t(parcel, 2, this.b, i, false);
-        aywu aywuVar = this.d;
-        arxc.D(parcel, 3, aywuVar == null ? null : aywuVar.a);
-        arbp arbpVar = this.c;
-        arxc.D(parcel, 4, arbpVar != null ? arbpVar.asBinder() : null);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.t(parcel, 2, this.b, i, false);
+        bbao bbaoVar = this.d;
+        atzr.D(parcel, 3, bbaoVar == null ? null : bbaoVar.a);
+        atee ateeVar = this.c;
+        atzr.D(parcel, 4, ateeVar != null ? ateeVar.asBinder() : null);
+        atzr.c(parcel, a);
     }
 
     public RequireConnectionCapabilitiesChangeOrDisconnectParams(TokenWrapper tokenWrapper, ConnectionCapabilities connectionCapabilities, IBinder iBinder, IBinder iBinder2) {
-        aywu aywuVar;
-        arbp arbpVar = null;
+        bbao bbaoVar;
+        atee ateeVar = null;
         if (iBinder == null) {
-            aywuVar = null;
+            bbaoVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.dtdi.core.internal.IOnConnectionCapabilitiesChangedListener");
-            aywuVar = queryLocalInterface instanceof aywu ? (aywu) queryLocalInterface : new aywu(iBinder);
+            bbaoVar = queryLocalInterface instanceof bbao ? (bbao) queryLocalInterface : new bbao(iBinder);
         }
         if (iBinder2 != null) {
             IInterface queryLocalInterface2 = iBinder2.queryLocalInterface("com.google.android.gms.common.api.internal.IStatusCallback");
-            arbpVar = queryLocalInterface2 instanceof arbp ? (arbp) queryLocalInterface2 : new arbn(iBinder2);
+            ateeVar = queryLocalInterface2 instanceof atee ? (atee) queryLocalInterface2 : new atec(iBinder2);
         }
         this.a = tokenWrapper;
         this.b = connectionCapabilities;
-        this.d = aywuVar;
-        this.c = arbpVar;
+        this.d = bbaoVar;
+        this.c = ateeVar;
     }
 }

@@ -4,31 +4,31 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.eitj;
-import defpackage.zdo;
+import defpackage.abdj;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.elgo;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class VerifyWithGoogleRequest extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new zdo();
-    public final eitj a;
+    public static final Parcelable.Creator CREATOR = new abdj();
+    public final elgo a;
     public final String b;
     public final boolean c;
     public final String d;
 
     public VerifyWithGoogleRequest(List list, String str, boolean z, String str2) {
-        arwm.c((list == null || list.isEmpty()) ? false : true, "requestedScopes cannot be null or empty");
+        atzb.c((list == null || list.isEmpty()) ? false : true, "requestedScopes cannot be null or empty");
         if (z) {
-            arwm.c(str != null, "If offline access is requested, server client id must be provided.");
+            atzb.c(str != null, "If offline access is requested, server client id must be provided.");
         } else {
-            arwm.c(str == null, "If offline access is not requested, server client id must not be provided.");
+            atzb.c(str == null, "If offline access is not requested, server client id must not be provided.");
         }
-        this.a = eitj.i(list);
+        this.a = elgo.i(list);
         this.b = str;
         this.c = z;
         this.d = str2;
@@ -39,10 +39,10 @@ public class VerifyWithGoogleRequest extends AbstractSafeParcelable implements R
             return false;
         }
         VerifyWithGoogleRequest verifyWithGoogleRequest = (VerifyWithGoogleRequest) obj;
-        eitj eitjVar = this.a;
-        int size = eitjVar.size();
-        eitj eitjVar2 = verifyWithGoogleRequest.a;
-        return size == eitjVar2.size() && eitjVar.containsAll(eitjVar2) && this.c == verifyWithGoogleRequest.c && arwb.b(this.b, verifyWithGoogleRequest.b) && arwb.b(this.d, verifyWithGoogleRequest.d);
+        elgo elgoVar = this.a;
+        int size = elgoVar.size();
+        elgo elgoVar2 = verifyWithGoogleRequest.a;
+        return size == elgoVar2.size() && elgoVar.containsAll(elgoVar2) && this.c == verifyWithGoogleRequest.c && atyq.b(this.b, verifyWithGoogleRequest.b) && atyq.b(this.d, verifyWithGoogleRequest.d);
     }
 
     public final int hashCode() {
@@ -51,12 +51,12 @@ public class VerifyWithGoogleRequest extends AbstractSafeParcelable implements R
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        eitj eitjVar = this.a;
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 1, eitjVar, false);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.v(parcel, 4, this.d, false);
-        arxc.c(parcel, a);
+        elgo elgoVar = this.a;
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 1, elgoVar, false);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.v(parcel, 4, this.d, false);
+        atzr.c(parcel, a);
     }
 }

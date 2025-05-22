@@ -3,50 +3,50 @@ package com.google.android.gms.cast.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.gms.cast.activity.CastPopupChimeraActivity;
-import defpackage.amds;
-import defpackage.amdt;
-import defpackage.qfp;
+import defpackage.aofd;
+import defpackage.aofe;
+import defpackage.ryt;
 import java.util.HashMap;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class CastPopupChimeraActivity extends qfp {
+public class CastPopupChimeraActivity extends ryt {
     static final HashMap j;
-    amdt k;
+    aofe k;
 
     static {
         HashMap hashMap = new HashMap();
         j = hashMap;
-        hashMap.put("consent", new amds() { // from class: amdg
-            @Override // defpackage.amds
-            public final amdt a(CastPopupChimeraActivity castPopupChimeraActivity) {
-                return new amde(castPopupChimeraActivity);
+        hashMap.put("consent", new aofd() { // from class: aoer
+            @Override // defpackage.aofd
+            public final aofe a(CastPopupChimeraActivity castPopupChimeraActivity) {
+                return new aoep(castPopupChimeraActivity);
             }
         });
-        hashMap.put("com.google.android.gms.cast.activity.CAST_CONNECTION_NOTIFY", new amds() { // from class: amdh
-            @Override // defpackage.amds
-            public final amdt a(CastPopupChimeraActivity castPopupChimeraActivity) {
-                return new amcx(castPopupChimeraActivity);
+        hashMap.put("com.google.android.gms.cast.activity.CAST_CONNECTION_NOTIFY", new aofd() { // from class: aoes
+            @Override // defpackage.aofd
+            public final aofe a(CastPopupChimeraActivity castPopupChimeraActivity) {
+                return new aoei(castPopupChimeraActivity);
             }
         });
-        hashMap.put("com.google.android.gms.cast.activity.CAST_TERMS_OF_SERVICE", new amds() { // from class: amdi
-            @Override // defpackage.amds
-            public final amdt a(CastPopupChimeraActivity castPopupChimeraActivity) {
-                return new amdk(castPopupChimeraActivity);
+        hashMap.put("com.google.android.gms.cast.activity.CAST_TERMS_OF_SERVICE", new aofd() { // from class: aoet
+            @Override // defpackage.aofd
+            public final aofe a(CastPopupChimeraActivity castPopupChimeraActivity) {
+                return new aoev(castPopupChimeraActivity);
             }
         });
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
-        amdt amdtVar = this.k;
-        if (amdtVar != null) {
-            amdtVar.q(i, i2, intent);
+        aofe aofeVar = this.k;
+        if (aofeVar != null) {
+            aofeVar.q(i, i2, intent);
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         this.k = null;
@@ -58,46 +58,46 @@ public class CastPopupChimeraActivity extends qfp {
         if (stringExtra != null) {
             HashMap hashMap = j;
             if (hashMap.containsKey(stringExtra)) {
-                amdt a = ((amds) hashMap.get(stringExtra)).a(this);
+                aofe a = ((aofd) hashMap.get(stringExtra)).a(this);
                 this.k = a;
-                a.f(bundle);
+                a.g(bundle);
             }
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onDestroy() {
         super.onDestroy();
-        amdt amdtVar = this.k;
-        if (amdtVar != null) {
-            amdtVar.g();
+        aofe aofeVar = this.k;
+        if (aofeVar != null) {
+            aofeVar.h();
         }
     }
 
-    @Override // defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        amdt amdtVar = this.k;
-        if (amdtVar != null) {
-            amdtVar.h(intent);
+        aofe aofeVar = this.k;
+        if (aofeVar != null) {
+            aofeVar.i(intent);
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStart() {
         super.onStart();
-        amdt amdtVar = this.k;
-        if (amdtVar != null) {
-            amdtVar.i();
+        aofe aofeVar = this.k;
+        if (aofeVar != null) {
+            aofeVar.j();
         }
     }
 
-    @Override // defpackage.qfw, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onStop() {
         super.onStop();
-        amdt amdtVar = this.k;
-        if (amdtVar != null) {
-            amdtVar.j();
+        aofe aofeVar = this.k;
+        if (aofeVar != null) {
+            aofeVar.k();
         }
     }
 }

@@ -9,47 +9,47 @@ import android.text.TextUtils;
 import android.util.Base64;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.feedback.ErrorReport;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bivl;
-import defpackage.bivm;
-import defpackage.bivn;
-import defpackage.bivo;
-import defpackage.bqux;
-import defpackage.ejhf;
-import defpackage.fmut;
-import defpackage.fnnl;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.blaa;
+import defpackage.blab;
+import defpackage.blac;
+import defpackage.blad;
+import defpackage.btco;
+import defpackage.eluo;
+import defpackage.fpmr;
+import defpackage.fqfu;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class Screenshot implements Parcelable, ReflectedParcelable {
     public int b;
     public int c;
     public String d;
-    public static final asot a = asot.b("gH_Screenshot", asej.GOOGLE_HELP);
-    public static final Parcelable.Creator CREATOR = new bivn();
+    public static final ausn a = ausn.b("gH_Screenshot", auid.GOOGLE_HELP);
+    public static final Parcelable.Creator CREATOR = new blac();
 
-    public static AsyncTask a(File file, String str, Screenshot screenshot, boolean z, bivo bivoVar) {
-        File file2 = fmut.j() ? new File(bqux.a.b(file, "reports")) : new File(file, "reports");
-        File file3 = fmut.j() ? new File(bqux.a.b(file2, String.valueOf(str).concat(".bmp"))) : new File(file2, String.valueOf(str).concat(".bmp"));
+    public static AsyncTask a(File file, String str, Screenshot screenshot, boolean z, blad bladVar) {
+        File file2 = fpmr.j() ? new File(btco.a.b(file, "reports")) : new File(file, "reports");
+        File file3 = fpmr.j() ? new File(btco.a.b(file2, String.valueOf(str).concat(".bmp"))) : new File(file2, String.valueOf(str).concat(".bmp"));
         if (file3.exists() && file3.canRead() && file3.canWrite()) {
-            return new bivm(file3, z, file, str, screenshot, bivoVar).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
+            return new blab(file3, z, file, str, screenshot, bladVar).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
         }
         return null;
     }
 
     public static Screenshot b(Bitmap bitmap) {
         if (bitmap == null || bitmap.isRecycled()) {
-            ((ejhf) a.i()).x("Screenshot is either null or recycled");
+            ((eluo) a.i()).x("Screenshot is either null or recycled");
             return null;
         }
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, (int) fnnl.b(), byteArrayOutputStream);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, (int) fqfu.b(), byteArrayOutputStream);
         return d(byteArrayOutputStream.toByteArray(), bitmap.getWidth(), bitmap.getHeight());
     }
 
@@ -99,17 +99,17 @@ public class Screenshot implements Parcelable, ReflectedParcelable {
     }
 
     public static String g(File file, Bitmap bitmap) {
-        File file2 = fmut.j() ? new File(bqux.a.b(file, "reports")) : new File(file, "reports");
+        File file2 = fpmr.j() ? new File(btco.a.b(file, "reports")) : new File(file, "reports");
         if (!file2.exists() && !file2.mkdirs()) {
-            ((ejhf) a.i()).x("failed to create reports directory");
+            ((eluo) a.i()).x("failed to create reports directory");
             return null;
         }
         if (bitmap == null || bitmap.isRecycled()) {
-            ((ejhf) a.i()).x("Cannot save. Bitmap is null or recycled.");
+            ((eluo) a.i()).x("Cannot save. Bitmap is null or recycled.");
             return null;
         }
         String valueOf = String.valueOf(System.currentTimeMillis());
-        File file3 = fmut.j() ? new File(bqux.a.b(file2, String.valueOf(valueOf).concat(".bmp"))) : new File(file2, String.valueOf(valueOf).concat(".bmp"));
+        File file3 = fpmr.j() ? new File(btco.a.b(file2, String.valueOf(valueOf).concat(".bmp"))) : new File(file2, String.valueOf(valueOf).concat(".bmp"));
         for (File file4 : file2.listFiles()) {
             if (file4.getName().endsWith(".bmp") && !file4.getName().equals(file3.getName())) {
                 file4.delete();
@@ -119,7 +119,7 @@ public class Screenshot implements Parcelable, ReflectedParcelable {
             }
         }
         try {
-            new bivl(file3, bitmap).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]).get(fnnl.a.a().o(), TimeUnit.MILLISECONDS);
+            new blaa(file3, bitmap).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]).get(fqfu.a.lK().o(), TimeUnit.MILLISECONDS);
             return valueOf;
         } catch (InterruptedException | ExecutionException | TimeoutException unused) {
             return null;

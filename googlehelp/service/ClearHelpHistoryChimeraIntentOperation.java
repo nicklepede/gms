@@ -4,21 +4,21 @@ import android.content.Intent;
 import android.net.Uri;
 import android.text.TextUtils;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bivh;
-import defpackage.bjay;
-import defpackage.bjez;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bkzw;
+import defpackage.blfn;
+import defpackage.bljo;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class ClearHelpHistoryChimeraIntentOperation extends IntentOperation {
     public static final /* synthetic */ int a = 0;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class PackageActionIntentOperation extends IntentOperation {
         static {
-            asot.b("gH_PackageActionISvc", asej.GOOGLE_HELP);
+            ausn.b("gH_PackageActionISvc", auid.GOOGLE_HELP);
         }
 
         @Override // com.google.android.chimera.IntentOperation
@@ -35,7 +35,7 @@ public class ClearHelpHistoryChimeraIntentOperation extends IntentOperation {
     }
 
     static {
-        asot.b("gH_ClearHelpHistoryISvc", asej.GOOGLE_HELP);
+        ausn.b("gH_ClearHelpHistoryISvc", auid.GOOGLE_HELP);
     }
 
     @Override // com.google.android.chimera.IntentOperation
@@ -47,14 +47,14 @@ public class ClearHelpHistoryChimeraIntentOperation extends IntentOperation {
         if (TextUtils.isEmpty(stringExtra)) {
             return;
         }
-        bjay bjayVar = new bjay(this);
-        bivh bivhVar = new bivh(this);
-        bjez bjezVar = new bjez(this, stringExtra);
-        bjayVar.d(stringExtra);
-        bjayVar.close();
-        bivhVar.i(stringExtra);
-        bivhVar.close();
-        bjezVar.d();
-        bjezVar.close();
+        blfn blfnVar = new blfn(this);
+        bkzw bkzwVar = new bkzw(this);
+        bljo bljoVar = new bljo(this, stringExtra);
+        blfnVar.d(stringExtra);
+        blfnVar.close();
+        bkzwVar.i(stringExtra);
+        bkzwVar.close();
+        bljoVar.d();
+        bljoVar.close();
     }
 }

@@ -5,21 +5,21 @@ import android.os.Parcelable;
 import android.os.WorkSource;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import defpackage.a;
-import defpackage.arwb;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.asqx;
-import defpackage.asrj;
-import defpackage.ceyd;
+import defpackage.atyq;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.auur;
+import defpackage.auvd;
+import defpackage.chfo;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class BleSettings extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ceyd();
+    public static final Parcelable.Creator CREATOR = new chfo();
     public final int a;
     public final int b;
     public final long c;
@@ -61,7 +61,7 @@ public final class BleSettings extends AbstractSafeParcelable {
             return false;
         }
         BleSettings bleSettings = (BleSettings) obj;
-        return this.a == bleSettings.a && this.b == bleSettings.b && this.c == bleSettings.c && arwb.b(this.d, bleSettings.d) && arwb.b(this.e, bleSettings.e) && this.f == bleSettings.f;
+        return this.a == bleSettings.a && this.b == bleSettings.b && this.c == bleSettings.c && atyq.b(this.d, bleSettings.d) && atyq.b(this.e, bleSettings.e) && this.f == bleSettings.f;
     }
 
     public final int hashCode() {
@@ -77,14 +77,14 @@ public final class BleSettings extends AbstractSafeParcelable {
         List list = this.d;
         WorkSource workSource = this.e;
         int size = list.size();
-        Method method = asrj.a;
+        Method method = auvd.a;
         ArrayList arrayList = new ArrayList();
-        int a = workSource == null ? 0 : asrj.a(workSource);
+        int a = workSource == null ? 0 : auvd.a(workSource);
         if (a != 0) {
             for (int i3 = 0; i3 < a; i3++) {
-                String d = asrj.d(workSource, i3);
-                if (!asqx.d(d)) {
-                    arwm.s(d);
+                String d = auvd.d(workSource, i3);
+                if (!auur.d(d)) {
+                    atzb.s(d);
                     arrayList.add(d);
                 }
             }
@@ -95,13 +95,13 @@ public final class BleSettings extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, i2);
-        arxc.o(parcel, 3, this.b);
-        arxc.q(parcel, 4, this.c);
-        arxc.y(parcel, 6, this.d, false);
-        arxc.t(parcel, 7, this.e, i, false);
-        arxc.o(parcel, 8, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, i2);
+        atzr.o(parcel, 3, this.b);
+        atzr.q(parcel, 4, this.c);
+        atzr.y(parcel, 6, this.d, false);
+        atzr.t(parcel, 7, this.e, i, false);
+        atzr.o(parcel, 8, this.f);
+        atzr.c(parcel, a);
     }
 }

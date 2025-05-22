@@ -4,26 +4,26 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.semanticlocation.PlaceCandidate;
-import defpackage.arxc;
-import defpackage.czfr;
-import defpackage.czgd;
-import defpackage.czgf;
-import defpackage.czhg;
+import defpackage.atzr;
+import defpackage.dbpp;
+import defpackage.dbqb;
+import defpackage.dbqd;
+import defpackage.dbre;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class Trip extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new czhg();
+    public static final Parcelable.Creator CREATOR = new dbre();
     public final Origin a;
     public final long b;
     public final List c;
     public final NameComponents d;
     public final boolean e;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Destination extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new czfr();
+        public static final Parcelable.Creator CREATOR = new dbpp();
         public final PlaceCandidate.Identifier a;
 
         public Destination(PlaceCandidate.Identifier identifier) {
@@ -33,15 +33,15 @@ public class Trip extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             PlaceCandidate.Identifier identifier = this.a;
-            int a = arxc.a(parcel);
-            arxc.t(parcel, 1, identifier, i, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.t(parcel, 1, identifier, i, false);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class NameComponents extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new czgd();
+        public static final Parcelable.Creator CREATOR = new dbqb();
         public final List a;
 
         public NameComponents(List list) {
@@ -51,15 +51,15 @@ public class Trip extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             List list = this.a;
-            int a = arxc.a(parcel);
-            arxc.y(parcel, 1, list, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.y(parcel, 1, list, false);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Origin extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new czgf();
+        public static final Parcelable.Creator CREATOR = new dbqd();
         public final PlaceCandidate.Identifier a;
         public final PlaceCandidate.Point b;
 
@@ -71,10 +71,10 @@ public class Trip extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             PlaceCandidate.Identifier identifier = this.a;
-            int a = arxc.a(parcel);
-            arxc.t(parcel, 1, identifier, i, false);
-            arxc.t(parcel, 2, this.b, i, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.t(parcel, 1, identifier, i, false);
+            atzr.t(parcel, 2, this.b, i, false);
+            atzr.c(parcel, a);
         }
     }
 
@@ -89,12 +89,12 @@ public class Trip extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         long j = this.b;
-        int a = arxc.a(parcel);
-        arxc.q(parcel, 1, j);
-        arxc.y(parcel, 2, this.c, false);
-        arxc.t(parcel, 3, this.d, i, false);
-        arxc.t(parcel, 4, this.a, i, false);
-        arxc.e(parcel, 5, this.e);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.q(parcel, 1, j);
+        atzr.y(parcel, 2, this.c, false);
+        atzr.t(parcel, 3, this.d, i, false);
+        atzr.t(parcel, 4, this.a, i, false);
+        atzr.e(parcel, 5, this.e);
+        atzr.c(parcel, a);
     }
 }

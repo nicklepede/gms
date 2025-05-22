@@ -12,16 +12,16 @@ import com.google.android.gms.ads.internal.formats.NativeAdOptionsParcel;
 import com.google.android.gms.ads.internal.instream.InstreamAdConfigurationParcel;
 import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.arxb;
-import defpackage.fwac;
-import defpackage.fwah;
+import defpackage.atzq;
+import defpackage.fywe;
+import defpackage.fywj;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class a implements Parcelable.Creator {
     public static final AdRequestInfoParcel a(Parcel parcel) {
-        int h = arxb.h(parcel);
+        int h = atzq.h(parcel);
         Bundle bundle = null;
         AdRequestParcel adRequestParcel = null;
         AdSizeParcel adSizeParcel = null;
@@ -81,195 +81,195 @@ public final class a implements Parcelable.Creator {
         long j = 0;
         long j2 = 0;
         while (parcel.dataPosition() < h) {
-            int e = arxb.e(parcel);
-            switch (arxb.d(e)) {
+            int e = atzq.e(parcel);
+            switch (atzq.d(e)) {
                 case 1:
-                    i = arxb.f(parcel, e);
+                    i = atzq.f(parcel, e);
                     break;
                 case 2:
-                    bundle = arxb.j(parcel, e);
+                    bundle = atzq.j(parcel, e);
                     break;
                 case 3:
-                    adRequestParcel = (AdRequestParcel) arxb.m(parcel, e, AdRequestParcel.CREATOR);
+                    adRequestParcel = (AdRequestParcel) atzq.m(parcel, e, AdRequestParcel.CREATOR);
                     break;
                 case 4:
-                    adSizeParcel = (AdSizeParcel) arxb.m(parcel, e, AdSizeParcel.CREATOR);
+                    adSizeParcel = (AdSizeParcel) atzq.m(parcel, e, AdSizeParcel.CREATOR);
                     break;
                 case 5:
-                    str = arxb.s(parcel, e);
+                    str = atzq.s(parcel, e);
                     break;
                 case 6:
-                    applicationInfo = (ApplicationInfo) arxb.m(parcel, e, ApplicationInfo.CREATOR);
+                    applicationInfo = (ApplicationInfo) atzq.m(parcel, e, ApplicationInfo.CREATOR);
                     break;
                 case 7:
-                    packageInfo = (PackageInfo) arxb.m(parcel, e, PackageInfo.CREATOR);
+                    packageInfo = (PackageInfo) atzq.m(parcel, e, PackageInfo.CREATOR);
                     break;
                 case 8:
-                    str2 = arxb.s(parcel, e);
+                    str2 = atzq.s(parcel, e);
                     break;
                 case 9:
-                    str3 = arxb.s(parcel, e);
+                    str3 = atzq.s(parcel, e);
                     break;
                 case 10:
-                    str4 = arxb.s(parcel, e);
+                    str4 = atzq.s(parcel, e);
                     break;
                 case 11:
-                    versionInfoParcel = (VersionInfoParcel) arxb.m(parcel, e, VersionInfoParcel.CREATOR);
+                    versionInfoParcel = (VersionInfoParcel) atzq.m(parcel, e, VersionInfoParcel.CREATOR);
                     break;
                 case 12:
-                    bundle2 = arxb.j(parcel, e);
+                    bundle2 = atzq.j(parcel, e);
                     break;
                 case 13:
-                    i2 = arxb.f(parcel, e);
+                    i2 = atzq.f(parcel, e);
                     break;
                 case 14:
-                    arrayList = arxb.x(parcel, e);
+                    arrayList = atzq.x(parcel, e);
                     break;
                 case 15:
-                    bundle3 = arxb.j(parcel, e);
+                    bundle3 = atzq.j(parcel, e);
                     break;
                 case 16:
-                    z = arxb.D(parcel, e);
+                    z = atzq.D(parcel, e);
                     break;
-                case fwac.q /* 17 */:
-                case fwac.v /* 22 */:
-                case fwac.w /* 23 */:
-                case fwac.x /* 24 */:
+                case fywe.q /* 17 */:
+                case fywe.v /* 22 */:
+                case fywe.w /* 23 */:
+                case fywe.x /* 24 */:
                 case 32:
-                case fwac.L /* 38 */:
+                case fywe.L /* 38 */:
                 case 62:
                 default:
-                    arxb.C(parcel, e);
+                    atzq.C(parcel, e);
                     break;
                 case 18:
-                    i3 = arxb.f(parcel, e);
+                    i3 = atzq.f(parcel, e);
                     break;
                 case 19:
-                    i4 = arxb.f(parcel, e);
+                    i4 = atzq.f(parcel, e);
                     break;
-                case fwac.t /* 20 */:
-                    f = arxb.c(parcel, e);
+                case fywe.t /* 20 */:
+                    f = atzq.c(parcel, e);
                     break;
-                case fwac.u /* 21 */:
-                    str5 = arxb.s(parcel, e);
+                case fywe.u /* 21 */:
+                    str5 = atzq.s(parcel, e);
                     break;
-                case fwac.y /* 25 */:
-                    j = arxb.i(parcel, e);
+                case fywe.y /* 25 */:
+                    j = atzq.i(parcel, e);
                     break;
                 case 26:
-                    str6 = arxb.s(parcel, e);
+                    str6 = atzq.s(parcel, e);
                     break;
-                case fwac.A /* 27 */:
-                    arrayList2 = arxb.x(parcel, e);
+                case fywe.A /* 27 */:
+                    arrayList2 = atzq.x(parcel, e);
                     break;
-                case fwac.B /* 28 */:
-                    str7 = arxb.s(parcel, e);
+                case fywe.B /* 28 */:
+                    str7 = atzq.s(parcel, e);
                     break;
-                case fwac.C /* 29 */:
-                    nativeAdOptionsParcel = (NativeAdOptionsParcel) arxb.m(parcel, e, NativeAdOptionsParcel.CREATOR);
+                case fywe.C /* 29 */:
+                    nativeAdOptionsParcel = (NativeAdOptionsParcel) atzq.m(parcel, e, NativeAdOptionsParcel.CREATOR);
                     break;
-                case fwac.D /* 30 */:
-                    arrayList3 = arxb.x(parcel, e);
+                case fywe.D /* 30 */:
+                    arrayList3 = atzq.x(parcel, e);
                     break;
-                case fwac.E /* 31 */:
-                    j2 = arxb.i(parcel, e);
+                case fywe.E /* 31 */:
+                    j2 = atzq.i(parcel, e);
                     break;
-                case fwac.G /* 33 */:
-                    str8 = arxb.s(parcel, e);
+                case fywe.G /* 33 */:
+                    str8 = atzq.s(parcel, e);
                     break;
-                case fwac.H /* 34 */:
-                    f2 = arxb.c(parcel, e);
+                case fywe.H /* 34 */:
+                    f2 = atzq.c(parcel, e);
                     break;
-                case fwac.I /* 35 */:
-                    i5 = arxb.f(parcel, e);
+                case fywe.I /* 35 */:
+                    i5 = atzq.f(parcel, e);
                     break;
-                case fwac.J /* 36 */:
-                    i6 = arxb.f(parcel, e);
+                case fywe.J /* 36 */:
+                    i6 = atzq.f(parcel, e);
                     break;
-                case fwac.K /* 37 */:
-                    z3 = arxb.D(parcel, e);
+                case fywe.K /* 37 */:
+                    z3 = atzq.D(parcel, e);
                     break;
-                case fwac.M /* 39 */:
-                    str9 = arxb.s(parcel, e);
+                case fywe.M /* 39 */:
+                    str9 = atzq.s(parcel, e);
                     break;
                 case 40:
-                    z2 = arxb.D(parcel, e);
+                    z2 = atzq.D(parcel, e);
                     break;
                 case 41:
-                    str10 = arxb.s(parcel, e);
+                    str10 = atzq.s(parcel, e);
                     break;
                 case 42:
-                    z4 = arxb.D(parcel, e);
+                    z4 = atzq.D(parcel, e);
                     break;
                 case 43:
-                    i7 = arxb.f(parcel, e);
+                    i7 = atzq.f(parcel, e);
                     break;
                 case 44:
-                    bundle4 = arxb.j(parcel, e);
+                    bundle4 = atzq.j(parcel, e);
                     break;
                 case 45:
-                    str11 = arxb.s(parcel, e);
+                    str11 = atzq.s(parcel, e);
                     break;
                 case 46:
-                    iconAdOptionsParcel = (IconAdOptionsParcel) arxb.m(parcel, e, IconAdOptionsParcel.CREATOR);
+                    iconAdOptionsParcel = (IconAdOptionsParcel) atzq.m(parcel, e, IconAdOptionsParcel.CREATOR);
                     break;
                 case 47:
-                    z5 = arxb.D(parcel, e);
+                    z5 = atzq.D(parcel, e);
                     break;
                 case AndroidInputTypeSignal.TYPE_TEXT_VARIATION_EMAIL_SUBJECT /* 48 */:
-                    bundle5 = arxb.j(parcel, e);
+                    bundle5 = atzq.j(parcel, e);
                     break;
                 case 49:
-                    str12 = arxb.s(parcel, e);
+                    str12 = atzq.s(parcel, e);
                     break;
                 case 50:
-                    str13 = arxb.s(parcel, e);
+                    str13 = atzq.s(parcel, e);
                     break;
-                case fwah.p /* 51 */:
-                    str14 = arxb.s(parcel, e);
+                case fywj.p /* 51 */:
+                    str14 = atzq.s(parcel, e);
                     break;
                 case 52:
-                    z6 = arxb.D(parcel, e);
+                    z6 = atzq.D(parcel, e);
                     break;
                 case 53:
-                    arrayList4 = arxb.v(parcel, e);
+                    arrayList4 = atzq.v(parcel, e);
                     break;
                 case 54:
-                    str15 = arxb.s(parcel, e);
+                    str15 = atzq.s(parcel, e);
                     break;
                 case 55:
-                    arrayList5 = arxb.x(parcel, e);
+                    arrayList5 = atzq.x(parcel, e);
                     break;
                 case 56:
-                    i8 = arxb.f(parcel, e);
+                    i8 = atzq.f(parcel, e);
                     break;
                 case 57:
-                    z7 = arxb.D(parcel, e);
+                    z7 = atzq.D(parcel, e);
                     break;
                 case 58:
-                    z8 = arxb.D(parcel, e);
+                    z8 = atzq.D(parcel, e);
                     break;
                 case 59:
-                    z9 = arxb.D(parcel, e);
+                    z9 = atzq.D(parcel, e);
                     break;
                 case 60:
-                    arrayList6 = arxb.x(parcel, e);
+                    arrayList6 = atzq.x(parcel, e);
                     break;
                 case 61:
-                    str16 = arxb.s(parcel, e);
+                    str16 = atzq.s(parcel, e);
                     break;
                 case 63:
-                    instreamAdConfigurationParcel = (InstreamAdConfigurationParcel) arxb.m(parcel, e, InstreamAdConfigurationParcel.CREATOR);
+                    instreamAdConfigurationParcel = (InstreamAdConfigurationParcel) atzq.m(parcel, e, InstreamAdConfigurationParcel.CREATOR);
                     break;
                 case 64:
-                    str17 = arxb.s(parcel, e);
+                    str17 = atzq.s(parcel, e);
                     break;
                 case 65:
-                    bundle6 = arxb.j(parcel, e);
+                    bundle6 = atzq.j(parcel, e);
                     break;
             }
         }
-        arxb.A(parcel, h);
+        atzq.A(parcel, h);
         return new AdRequestInfoParcel(i, bundle, adRequestParcel, adSizeParcel, str, applicationInfo, packageInfo, str2, str3, str4, versionInfoParcel, bundle2, i2, arrayList, bundle3, z, i3, i4, f, str5, j, str6, arrayList2, str7, nativeAdOptionsParcel, arrayList3, j2, str8, f2, z2, i5, i6, z3, str9, str10, z4, i7, bundle4, str11, iconAdOptionsParcel, z5, bundle5, str12, str13, str14, z6, arrayList4, str15, arrayList5, i8, z7, z8, z9, arrayList6, str16, instreamAdConfigurationParcel, str17, bundle6);
     }
 

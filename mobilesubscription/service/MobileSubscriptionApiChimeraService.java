@@ -1,29 +1,29 @@
 package com.google.android.gms.mobilesubscription.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.cern;
-import defpackage.eiuu;
-import defpackage.ejhf;
-import defpackage.fqid;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.chav;
+import defpackage.elhz;
+import defpackage.eluo;
+import defpackage.ftbv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
-public class MobileSubscriptionApiChimeraService extends bxgd {
-    private static final eiuu a = eiuu.K("android.permission-group.PHONE", "android.permission-group.STORAGE");
-    private static final asot b = asot.b("MobileSubscription", asej.MOBILE_SUBSCRIPTION);
+public class MobileSubscriptionApiChimeraService extends bzot {
+    private static final elhz a = elhz.K("android.permission-group.PHONE", "android.permission-group.STORAGE");
+    private static final ausn b = ausn.b("MobileSubscription", auid.MOBILE_SUBSCRIPTION);
 
     public MobileSubscriptionApiChimeraService() {
-        super(200, "com.google.android.gms.mobilesubscription.service.START", a, 0, 10, eiuu.G(fqid.a.a().d().b));
-        ((ejhf) b.h()).x("Service is created.");
+        super(200, "com.google.android.gms.mobilesubscription.service.START", a, 0, 10, elhz.G(ftbv.a.lK().d().b));
+        ((eluo) b.h()).x("Service is created.");
     }
 
-    @Override // defpackage.bxgd
-    protected final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
+    @Override // defpackage.bzot
+    protected final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
         String str = getServiceRequest.f;
-        bxgjVar.c(new cern(l(), getServiceRequest.f, getServiceRequest.p));
+        bzozVar.c(new chav(l(), getServiceRequest.f, getServiceRequest.p));
     }
 }

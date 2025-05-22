@@ -4,36 +4,36 @@ import android.content.Intent;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.auth.blockstore.service.cloudsync.CloudSyncBackupTaskService;
 import com.google.android.gms.auth.blockstore.service.metrics.LocalStorageUsageLoggingTaskService;
-import defpackage.aacc;
-import defpackage.asop;
-import defpackage.asot;
-import defpackage.ejhf;
-import defpackage.fkvs;
-import defpackage.fkwa;
-import defpackage.fkwd;
+import defpackage.accc;
+import defpackage.ausj;
+import defpackage.ausn;
+import defpackage.eluo;
+import defpackage.fnmw;
+import defpackage.fnne;
+import defpackage.fnnh;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class PhenotypeIntentOperation extends IntentOperation {
-    private static final asot a = aacc.b("PhenotypeIntentOperation");
+    private static final ausn a = accc.b("PhenotypeIntentOperation");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        if (!asop.c(fkvs.d())) {
-            ((ejhf) a.h()).x("Feature flags are not turned on, skipping operations.");
+        if (!ausj.c(fnmw.d())) {
+            ((eluo) a.h()).x("Feature flags are not turned on, skipping operations.");
             return;
         }
         if (!"com.google.android.gms.phenotype.com.google.android.gms.auth.blockstore.COMMITTED".equals(intent.getAction())) {
-            ((ejhf) a.h()).x("Not a Phenotype event that Blockstore needs to handle. Skipping.");
+            ((eluo) a.h()).x("Not a Phenotype event that Blockstore needs to handle. Skipping.");
             return;
         }
-        asot asotVar = a;
-        ((ejhf) asotVar.h()).x("Blockstore feature flags are updated.");
-        if (fkwa.e()) {
-            ((ejhf) asotVar.h()).x("Scheduling periodic backup task to reflect the config changes from feature flags.");
+        ausn ausnVar = a;
+        ((eluo) ausnVar.h()).x("Blockstore feature flags are updated.");
+        if (fnne.e()) {
+            ((eluo) ausnVar.h()).x("Scheduling periodic backup task to reflect the config changes from feature flags.");
             CloudSyncBackupTaskService.d(this);
         }
-        if (fkwd.i()) {
+        if (fnnh.i()) {
             LocalStorageUsageLoggingTaskService.d(this);
         }
     }

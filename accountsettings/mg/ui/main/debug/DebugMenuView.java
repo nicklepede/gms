@@ -9,110 +9,108 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.gms.R;
 import com.google.android.gms.accountsettings.mg.ui.main.debug.DebugMenuView;
 import com.google.android.material.navigation.NavigationView;
-import defpackage.asqh;
-import defpackage.ebsq;
-import defpackage.eiig;
-import defpackage.etie;
-import defpackage.fjue;
-import defpackage.fuuw;
-import defpackage.fuvg;
-import defpackage.fvaf;
-import defpackage.fvbo;
-import defpackage.jpc;
-import defpackage.qfp;
-import defpackage.rqy;
-import defpackage.rrk;
-import defpackage.ruc;
-import defpackage.rue;
-import defpackage.ruy;
-import defpackage.rwi;
-import defpackage.rwx;
-import defpackage.rxq;
-import defpackage.sqq;
-import defpackage.stq;
-import defpackage.swx;
+import defpackage.auub;
+import defpackage.eeff;
+import defpackage.ekvl;
+import defpackage.evxw;
+import defpackage.fmkf;
+import defpackage.fxqu;
+import defpackage.fxre;
+import defpackage.fxwd;
+import defpackage.fxxm;
+import defpackage.jvr;
+import defpackage.ryt;
+import defpackage.tkh;
+import defpackage.tkt;
+import defpackage.tnl;
+import defpackage.tnn;
+import defpackage.toi;
+import defpackage.tps;
+import defpackage.tqh;
+import defpackage.tra;
+import defpackage.ulr;
+import defpackage.upo;
+import defpackage.usv;
 import j$.util.Objects;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class DebugMenuView extends NavigationView {
-    public static final String a = "DEFAULT : " + fjue.j() + ":" + fjue.c();
-    public rqy b;
-    public sqq c;
-    public ruy d;
-    public final fuuw e;
-    public stq f;
+    public static final String a = "DEFAULT : " + fmkf.k() + ":" + fmkf.d();
+    public tkh b;
+    public ulr c;
+    public toi d;
+    public final fxqu e;
+    public upo f;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DebugMenuView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        fvbo.f(context, "context");
-        this.e = new fuvg(new fvaf() { // from class: swu
-            @Override // defpackage.fvaf
+        fxxm.f(context, "context");
+        this.e = new fxre(new fxwd() { // from class: uss
+            @Override // defpackage.fxwd
             public final Object a() {
                 return (DrawerLayout) DebugMenuView.this.a().findViewById(R.id.drawer_layout);
             }
         });
-        ((swx) rrk.a(swx.class, context)).e(this);
-        if (asqh.e()) {
+        ((usv) tkt.a(usv.class, context)).e(this);
+        if (auub.e()) {
             this.m.j = true;
         }
         this.m.c(0, 1, 0, "clear local cache");
         this.m.c(0, 2, 0, "clear dismissed onboarding flows");
-        if (asqh.c()) {
+        if (auub.c()) {
             this.m.c(1, 3, 0, "force toggle dark mode");
             this.m.c(1, 4, 0, "clear dark mode override");
         }
         this.m.c(2, 5, 0, "select environment");
-        this.o = new ebsq() { // from class: swv
-            @Override // defpackage.ebsq
+        this.o = new eeff() { // from class: ust
+            @Override // defpackage.eeff
             public final void a(MenuItem menuItem) {
                 int i = ((ni) menuItem).a;
                 final DebugMenuView debugMenuView = DebugMenuView.this;
                 if (i == 1) {
                     debugMenuView.d();
                 } else if (i == 2) {
-                    rxq rxqVar = debugMenuView.c().l;
-                    rxqVar.a.b = ejck.a;
-                    final rvm rvmVar = rxqVar.c;
-                    Objects.requireNonNull(rvmVar);
-                    rxqVar.b(new Runnable() { // from class: rxm
+                    tra traVar = debugMenuView.c().l;
+                    traVar.a.b = elpp.a;
+                    final tow towVar = traVar.c;
+                    Objects.requireNonNull(towVar);
+                    traVar.b(new Runnable() { // from class: tqw
                         @Override // java.lang.Runnable
                         public final void run() {
-                            rvm.this.b();
+                            tow.this.b();
                         }
                     });
                 } else if (i == 3) {
-                    qfp a2 = debugMenuView.a();
-                    bqnc.b = Boolean.valueOf(true ^ bqnc.d());
+                    ryt a2 = debugMenuView.a();
+                    bsur.b = Boolean.valueOf(true ^ bsur.d());
                     a2.recreate();
                 } else if (i == 4) {
-                    qfp a3 = debugMenuView.a();
-                    Boolean bool = bqnc.b;
+                    ryt a3 = debugMenuView.a();
+                    Boolean bool = bsur.b;
                     if (bool != null) {
                         boolean booleanValue = bool.booleanValue();
-                        bqnc.b = null;
-                        if (booleanValue != bqnc.d()) {
+                        bsur.b = null;
+                        if (booleanValue != bsur.d()) {
                             a3.recreate();
                         }
                     }
                 } else if (i == 5) {
-                    fjus g = fjue.g();
-                    fvbo.e(g, "debugEnvironmentConfig(...)");
-                    final fedh fedhVar = g.b;
-                    fvbo.e(fedhVar, "getEnvironmentsList(...)");
-                    ArrayList arrayList = new ArrayList(fuwt.o(fedhVar, 10));
-                    Iterator<E> it = fedhVar.iterator();
+                    final fgsa fgsaVar = fmkf.h().b;
+                    fxxm.e(fgsaVar, "getEnvironmentsList(...)");
+                    ArrayList arrayList = new ArrayList(fxsr.o(fgsaVar, 10));
+                    Iterator<E> it = fgsaVar.iterator();
                     while (it.hasNext()) {
-                        arrayList.add(((fjur) it.next()).b);
+                        arrayList.add(((fmks) it.next()).b);
                     }
-                    List X = fuwt.X(fuwt.b(DebugMenuView.a), arrayList);
-                    ebna ebnaVar = new ebna(debugMenuView.a());
-                    ebnaVar.N("Select the environment:");
-                    ebnaVar.A((CharSequence[]) X.toArray(new String[0]), new DialogInterface.OnClickListener() { // from class: sww
+                    List X = fxsr.X(fxsr.b(DebugMenuView.a), arrayList);
+                    edzp edzpVar = new edzp(debugMenuView.a());
+                    edzpVar.N("Select the environment:");
+                    edzpVar.A((CharSequence[]) X.toArray(new String[0]), new DialogInterface.OnClickListener() { // from class: usu
                         @Override // android.content.DialogInterface.OnClickListener
                         public final void onClick(DialogInterface dialogInterface, int i2) {
                             DebugMenuView debugMenuView2 = DebugMenuView.this;
@@ -120,89 +118,89 @@ public final class DebugMenuView extends NavigationView {
                                 debugMenuView2.b().a = null;
                                 debugMenuView2.d();
                             } else {
-                                Object obj = fedhVar.get(i2 - 1);
-                                fvbo.e(obj, "get(...)");
-                                debugMenuView2.b().a = (fjur) obj;
+                                Object obj = fgsaVar.get(i2 - 1);
+                                fxxm.e(obj, "get(...)");
+                                debugMenuView2.b().a = (fmks) obj;
                                 debugMenuView2.d();
                             }
                         }
                     });
-                    ebnaVar.create().show();
+                    edzpVar.create().show();
                 }
                 ((DrawerLayout) debugMenuView.e.a()).g();
             }
         };
     }
 
-    public final qfp a() {
+    public final ryt a() {
         Context context = getContext();
-        while (!(context instanceof qfp)) {
+        while (!(context instanceof ryt)) {
             if (!(context instanceof ContextWrapper)) {
                 throw new IllegalStateException("Could not find activity context.");
             }
             Context context2 = getContext();
-            fvbo.d(context2, "null cannot be cast to non-null type android.content.ContextWrapper");
+            fxxm.d(context2, "null cannot be cast to non-null type android.content.ContextWrapper");
             context = ((ContextWrapper) context2).getBaseContext();
         }
-        return (qfp) context;
+        return (ryt) context;
     }
 
-    public final ruy b() {
-        ruy ruyVar = this.d;
-        if (ruyVar != null) {
-            return ruyVar;
+    public final toi b() {
+        toi toiVar = this.d;
+        if (toiVar != null) {
+            return toiVar;
         }
-        fvbo.j("environmentManager");
+        fxxm.j("environmentManager");
         return null;
     }
 
-    public final sqq c() {
-        sqq sqqVar = this.c;
-        if (sqqVar != null) {
-            return sqqVar;
+    public final ulr c() {
+        ulr ulrVar = this.c;
+        if (ulrVar != null) {
+            return ulrVar;
         }
-        fvbo.j("accountModel");
+        fxxm.j("accountModel");
         return null;
     }
 
     public final void d() {
-        rqy rqyVar = this.b;
-        stq stqVar = null;
-        if (rqyVar == null) {
-            fvbo.j("imageFetcher");
-            rqyVar = null;
+        tkh tkhVar = this.b;
+        upo upoVar = null;
+        if (tkhVar == null) {
+            fxxm.j("imageFetcher");
+            tkhVar = null;
         }
-        rqyVar.a();
-        rxq rxqVar = c().l;
-        rwi rwiVar = rxqVar.a;
-        for (jpc jpcVar : rwiVar.c.values()) {
-            ruc rucVar = (ruc) jpcVar.hT();
-            eiig.y(rucVar, "ResourceInfo should never be null here.");
-            etie etieVar = rucVar.a.e;
-            if (etieVar == null) {
-                etieVar = etie.a;
+        tkhVar.a();
+        tra traVar = c().l;
+        tps tpsVar = traVar.a;
+        for (jvr jvrVar : tpsVar.c.values()) {
+            tnl tnlVar = (tnl) jvrVar.ii();
+            ekvl.z(tnlVar, "ResourceInfo should never be null here.");
+            evxw evxwVar = tnlVar.a.e;
+            if (evxwVar == null) {
+                evxwVar = evxw.a;
             }
-            jpcVar.l(new ruc(etieVar));
+            jvrVar.l(new tnl(evxwVar));
         }
-        Iterator it = rwiVar.a.values().iterator();
+        Iterator it = tpsVar.a.values().iterator();
         while (it.hasNext()) {
-            ((jpc) it.next()).l(new rue(false, false, null));
+            ((jvr) it.next()).l(new tnn(false, false, null));
         }
-        final rwx rwxVar = rxqVar.b;
-        Objects.requireNonNull(rwxVar);
-        rxqVar.b(new Runnable() { // from class: rxo
+        final tqh tqhVar = traVar.b;
+        Objects.requireNonNull(tqhVar);
+        traVar.b(new Runnable() { // from class: tqy
             @Override // java.lang.Runnable
             public final void run() {
-                rwx.this.c();
+                tqh.this.c();
             }
         });
-        sqq c = c();
-        stq stqVar2 = this.f;
-        if (stqVar2 == null) {
-            fvbo.j("navStackModel");
+        ulr c = c();
+        upo upoVar2 = this.f;
+        if (upoVar2 == null) {
+            fxxm.j("navStackModel");
         } else {
-            stqVar = stqVar2;
+            upoVar = upoVar2;
         }
-        c.g(stqVar.b());
+        c.g(upoVar.b());
     }
 }

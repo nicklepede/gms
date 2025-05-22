@@ -9,16 +9,16 @@ import android.widget.TextView;
 import androidx.preference.TwoStatePreference;
 import com.google.android.gms.R;
 import com.google.android.gms.backup.settings.devicedata.mainswitchpreference2.MainSwitchPreference2;
-import defpackage.kmp;
-import defpackage.nfx;
+import defpackage.mfa;
+import defpackage.oyy;
 import j$.util.Objects;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class MainSwitchPreference2 extends TwoStatePreference implements CompoundButton.OnCheckedChangeListener, nfx {
+public class MainSwitchPreference2 extends TwoStatePreference implements CompoundButton.OnCheckedChangeListener, oyy {
     private final List c;
 
     public MainSwitchPreference2(Context context) {
@@ -26,11 +26,11 @@ public class MainSwitchPreference2 extends TwoStatePreference implements Compoun
     }
 
     @Override // androidx.preference.Preference
-    public final void a(kmp kmpVar) {
-        super.a(kmpVar);
-        kmpVar.v = false;
-        kmpVar.w = false;
-        MainSwitchBar2 mainSwitchBar2 = (MainSwitchBar2) kmpVar.a.findViewById(R.id.settingslib_main_switch_bar);
+    public final void a(mfa mfaVar) {
+        super.a(mfaVar);
+        mfaVar.v = false;
+        mfaVar.w = false;
+        MainSwitchBar2 mainSwitchBar2 = (MainSwitchBar2) mfaVar.a.findViewById(R.id.settingslib_main_switch_bar);
         mainSwitchBar2.d(t());
         mainSwitchBar2.c(m());
         boolean z = this.z;
@@ -45,7 +45,7 @@ public class MainSwitchPreference2 extends TwoStatePreference implements Compoun
             layoutParams2.setMarginStart(dimensionPixelSize);
             mainSwitchBar2.b.setLayoutParams(layoutParams);
         }
-        mainSwitchBar2.setOnClickListener(new View.OnClickListener() { // from class: ajon
+        mainSwitchBar2.setOnClickListener(new View.OnClickListener() { // from class: alpg
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 MainSwitchPreference2 mainSwitchPreference2 = MainSwitchPreference2.this;

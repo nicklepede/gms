@@ -13,10 +13,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import defpackage.bhog;
-import defpackage.iln;
+import defpackage.bjsv;
+import defpackage.ind;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class RoundImageView extends AppCompatImageView {
     private Drawable a;
@@ -114,12 +114,12 @@ public final class RoundImageView extends AppCompatImageView {
     public RoundImageView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         int resourceId;
-        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, bhog.a, 0, 0);
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, bjsv.a, 0, 0);
         try {
             int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(1, 0);
             this.g = dimensionPixelSize;
             if (dimensionPixelSize > 0) {
-                ColorStateList colorStateList = (!obtainStyledAttributes.hasValue(0) || (resourceId = obtainStyledAttributes.getResourceId(0, 0)) == 0 || (colorStateList = iln.d(context, resourceId)) == null) ? obtainStyledAttributes.getColorStateList(0) : colorStateList;
+                ColorStateList colorStateList = (!obtainStyledAttributes.hasValue(0) || (resourceId = obtainStyledAttributes.getResourceId(0, 0)) == 0 || (colorStateList = ind.d(context, resourceId)) == null) ? obtainStyledAttributes.getColorStateList(0) : colorStateList;
                 if (colorStateList != null) {
                     Paint paint = new Paint(1);
                     this.f = paint;

@@ -10,55 +10,55 @@ import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.people.service.SettingsChangedBroadcastIntentOperation;
 import com.google.android.gms.people.service.cpg.ActionPreferenceCleanupTask;
 import com.google.android.gms.people.service.cpg.callingcard.CallingCardCleanupTask;
-import defpackage.afk;
-import defpackage.aqxd;
-import defpackage.bqna;
-import defpackage.byjl;
-import defpackage.ctkm;
-import defpackage.ctpn;
-import defpackage.ctww;
-import defpackage.ctxd;
-import defpackage.cuey;
-import defpackage.cuhg;
-import defpackage.cuxf;
-import defpackage.cuxv;
-import defpackage.cuyq;
-import defpackage.cvex;
-import defpackage.cvfc;
-import defpackage.cvzk;
-import defpackage.dvlw;
-import defpackage.dvmh;
-import defpackage.ekxc;
-import defpackage.fecj;
-import defpackage.fqzi;
-import defpackage.fqzp;
-import defpackage.fraf;
-import defpackage.fram;
-import defpackage.frdc;
-import defpackage.frfn;
-import defpackage.frhv;
-import defpackage.frib;
+import defpackage.afp;
+import defpackage.aszs;
+import defpackage.bsup;
+import defpackage.casd;
+import defpackage.cvts;
+import defpackage.cvyt;
+import defpackage.cwgc;
+import defpackage.cwgj;
+import defpackage.cwof;
+import defpackage.cwqn;
+import defpackage.cxgn;
+import defpackage.cxhd;
+import defpackage.cxhy;
+import defpackage.cxog;
+import defpackage.cxol;
+import defpackage.cyjh;
+import defpackage.dxwx;
+import defpackage.dxxi;
+import defpackage.enko;
+import defpackage.fgrc;
+import defpackage.fttd;
+import defpackage.fttk;
+import defpackage.ftua;
+import defpackage.ftuh;
+import defpackage.ftwx;
+import defpackage.ftzi;
+import defpackage.fubq;
+import defpackage.fubw;
 import j$.util.Objects;
 import java.util.concurrent.ExecutionException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SettingsChangedBroadcastIntentOperation extends IntentOperation {
-    bqna a;
+    bsup a;
 
     private final boolean a() {
         return Settings.Global.getInt(getApplicationContext().getContentResolver(), "device_provisioned", 0) == 1;
     }
 
     private static final void b(Context context) {
-        afk afkVar;
+        afp afpVar;
         try {
-            afkVar = (afk) ctww.a(context).get();
+            afpVar = (afp) cwgc.a(context).get();
         } catch (InterruptedException | ExecutionException e) {
-            cuey.d("CpgSchemaBuilder", "Failed to get AppSearchSession", e);
-            afkVar = null;
+            cwof.d("CpgSchemaBuilder", "Failed to get AppSearchSession", e);
+            afpVar = null;
         }
-        ctxd.b(context, afkVar);
+        cwgj.b(context, afpVar);
     }
 
     @Override // com.google.android.chimera.IntentOperation
@@ -66,35 +66,35 @@ public class SettingsChangedBroadcastIntentOperation extends IntentOperation {
         if (Objects.equals(intent.getAction(), "com.google.android.gms.ENTIRE_PACKAGE_CHANGED")) {
             intent.setAction("android.intent.action.PACKAGE_CHANGED");
         }
-        if (fqzi.n() && Objects.equals(intent.getAction(), "android.intent.action.PACKAGE_ADDED") && intent.getData() != null && Objects.equals(intent.getData().getEncodedSchemeSpecificPart(), "com.google.android.contacts")) {
+        if (fttd.n() && Objects.equals(intent.getAction(), "android.intent.action.PACKAGE_ADDED") && intent.getData() != null && Objects.equals(intent.getData().getEncodedSchemeSpecificPart(), "com.google.android.contacts")) {
             b(this);
             return;
         }
         if (("android.intent.action.PACKAGE_ADDED".equals(intent.getAction()) || "android.intent.action.PACKAGE_CHANGED".equals(intent.getAction()) || "android.intent.action.PACKAGE_REMOVED".equals(intent.getAction())) && intent.getData() != null && "com.google.android.syncadapters.contacts".equals(intent.getData().getEncodedSchemeSpecificPart())) {
             PackageManager packageManager = getPackageManager();
-            SharedPreferences sharedPreferences = ctpn.i(this).a;
+            SharedPreferences sharedPreferences = cvyt.i(this).a;
             int i = sharedPreferences.getInt("is_fsa1_package_existing", 0);
-            boolean b = cvfc.b(packageManager);
+            boolean b = cxol.b(packageManager);
             Boolean.valueOf(b).getClass();
             int i2 = true != b ? 1 : 2;
             if (i2 != i) {
-                cuey.f("SettingsChangedOp", "FSA1 package status changed.");
+                cwof.f("SettingsChangedOp", "FSA1 package status changed.");
                 sharedPreferences.edit().putInt("is_fsa1_package_existing", i2).apply();
-                ctkm a = ctkm.a();
-                fecj v = ekxc.a.v();
+                cvts a = cvts.a();
+                fgrc v = enko.a.v();
                 int i3 = i2 == 2 ? 5 : 4;
                 if (!v.b.L()) {
                     v.U();
                 }
-                ekxc ekxcVar = (ekxc) v.b;
-                ekxcVar.c = i3 - 1;
-                ekxcVar.b |= 1;
-                a.g((ekxc) v.Q());
-                if (fraf.g()) {
-                    cuxf.a(this);
+                enko enkoVar = (enko) v.b;
+                enkoVar.c = i3 - 1;
+                enkoVar.b |= 1;
+                a.g((enko) v.Q());
+                if (ftua.g()) {
+                    cxgn.a(this);
                 }
-                if (frfn.g()) {
-                    cuhg.a(this);
+                if (ftzi.g()) {
+                    cwqn.a(this);
                     return;
                 }
                 return;
@@ -102,65 +102,65 @@ public class SettingsChangedBroadcastIntentOperation extends IntentOperation {
             return;
         }
         if ("com.google.android.gms.phenotype.COMMITTED".equals(intent.getAction()) && "com.google.android.gms.people".equals(intent.getStringExtra("com.google.android.gms.phenotype.PACKAGE_NAME"))) {
-            if (frhv.a.a().a()) {
+            if (fubq.a.lK().a()) {
                 ContentResolver contentResolver = getBaseContext().getContentResolver();
-                aqxd aqxdVar = cvzk.a;
-                dvlw a2 = dvlw.a(contentResolver, dvmh.a("com.google.android.gms.people"), new Runnable() { // from class: cugy
+                aszs aszsVar = cyjh.a;
+                dxwx a2 = dxwx.a(contentResolver, dxxi.a("com.google.android.gms.people"), new Runnable() { // from class: cwqf
                     @Override // java.lang.Runnable
                     public final void run() {
-                        dvni.e();
+                        dxyi.e();
                     }
                 });
                 if (a2 != null) {
                     a2.e();
                 } else {
-                    cuey.c("SettingsChangedOp", "Get null phenotype loader");
+                    cwof.c("SettingsChangedOp", "Get null phenotype loader");
                 }
             }
-            if (fraf.g()) {
-                cuxf.a(getApplicationContext());
+            if (ftua.g()) {
+                cxgn.a(getApplicationContext());
             }
-            if (frib.k()) {
+            if (fubw.k()) {
                 DeletedNullContactsCleanupChimeraService.f(this);
             }
-            if (fqzi.i()) {
-                ActionPreferenceCleanupTask.d(byjl.a(this));
+            if (fttd.i()) {
+                ActionPreferenceCleanupTask.d(casd.a(this));
             }
-            if (fqzi.k()) {
-                CallingCardCleanupTask.d(byjl.a(this));
+            if (fttd.k()) {
+                CallingCardCleanupTask.d(casd.a(this));
             }
-            if (fram.j()) {
+            if (ftuh.j()) {
                 BackupAndSyncOptInValidationChimeraService.e(this);
             }
-            if (frfn.g()) {
-                cuhg.a(this);
+            if (ftzi.g()) {
+                cwqn.a(this);
             }
-            if (fqzi.n() && fqzi.a.a().H()) {
+            if (fttd.n() && fttd.a.lK().H()) {
                 b(this);
             }
-            if (fqzp.a.a().t() && !fqzp.j()) {
-                cuxv.a(this).g();
+            if (fttk.a.lK().s() && !fttk.j()) {
+                cxhd.a(this).g();
             }
-            if (frdc.g() && !a()) {
-                cuyq a3 = cuyq.a(getApplicationContext());
-                cuey.f("SettingsChangedOp", "Add the account adding listener for Preliminary sync.");
+            if (ftwx.g() && !a()) {
+                cxhy a3 = cxhy.a(getApplicationContext());
+                cwof.f("SettingsChangedOp", "Add the account adding listener for Preliminary sync.");
                 try {
                     if (this.a == null) {
-                        this.a = bqna.b(getApplicationContext());
+                        this.a = bsup.b(getApplicationContext());
                     }
                     this.a.t(a3, new String[]{"com.google"});
                 } catch (IllegalStateException unused) {
-                    cuey.l("SettingsChangedOp", "Failed to add the account listener for Preliminary sync.");
+                    cwof.l("SettingsChangedOp", "Failed to add the account listener for Preliminary sync.");
                 }
             }
-            if (!frdc.h() || a()) {
+            if (!ftwx.h() || a()) {
                 return;
             }
-            cvex.b(getApplicationContext(), new Runnable() { // from class: cugz
+            cxog.b(getApplicationContext(), new Runnable() { // from class: cwqg
                 @Override // java.lang.Runnable
                 public final void run() {
-                    cuey.f("SettingsChangedOp", "Set Provisioned timestamp");
-                    cuyj.a(SettingsChangedBroadcastIntentOperation.this.getApplicationContext()).b(System.currentTimeMillis());
+                    cwof.f("SettingsChangedOp", "Set Provisioned timestamp");
+                    cxhr.a(SettingsChangedBroadcastIntentOperation.this.getApplicationContext()).b(System.currentTimeMillis());
                 }
             });
         }

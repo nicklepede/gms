@@ -4,29 +4,29 @@ import android.content.Context;
 import android.os.RemoteException;
 import com.google.android.gms.dynamic.ObjectWrapper;
 import com.google.android.gms.vision.face.internal.client.FaceSettingsParcel;
-import defpackage.anzs;
-import defpackage.azht;
-import defpackage.dibc;
-import defpackage.dicf;
-import defpackage.dich;
-import defpackage.dici;
+import defpackage.aqbk;
+import defpackage.bblp;
+import defpackage.dkmn;
+import defpackage.dknq;
+import defpackage.dkns;
+import defpackage.dknt;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes7.dex */
-public class DynamiteNativeFaceDetectorCreator extends dich {
-    @Override // defpackage.dici
-    public dicf newFaceDetector(azht azhtVar, FaceSettingsParcel faceSettingsParcel) {
-        Context a = anzs.a((Context) ObjectWrapper.a(azhtVar), "com.google.android.gms.vision.dynamite");
+public class DynamiteNativeFaceDetectorCreator extends dkns {
+    @Override // defpackage.dknt
+    public dknq newFaceDetector(bblp bblpVar, FaceSettingsParcel faceSettingsParcel) {
+        Context a = aqbk.a((Context) ObjectWrapper.a(bblpVar), "com.google.android.gms.vision.dynamite");
         if (a == null) {
-            dibc.a("%s could not be loaded.", "com.google.android.gms.vision.dynamite");
+            dkmn.a("%s could not be loaded.", "com.google.android.gms.vision.dynamite");
             throw new RemoteException();
         }
-        dici asInterface = dich.asInterface(anzs.b(a.getClassLoader(), "com.google.android.gms.vision.face.ChimeraNativeFaceDetectorCreator"));
+        dknt asInterface = dkns.asInterface(aqbk.b(a.getClassLoader(), "com.google.android.gms.vision.face.ChimeraNativeFaceDetectorCreator"));
         if (asInterface != null) {
-            return asInterface.newFaceDetector(azhtVar, faceSettingsParcel);
+            return asInterface.newFaceDetector(bblpVar, faceSettingsParcel);
         }
-        dibc.a("Could not load Chimera native face detector creator.", new Object[0]);
+        dkmn.a("Could not load Chimera native face detector creator.", new Object[0]);
         throw new RemoteException();
     }
 }

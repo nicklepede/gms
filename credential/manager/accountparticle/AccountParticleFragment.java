@@ -8,42 +8,42 @@ import com.google.android.chimera.android.Activity;
 import com.google.android.gms.R;
 import com.google.android.gms.credential.manager.accountparticle.AccountParticleFragment;
 import com.google.android.libraries.onegoogle.accountmenu.SelectedAccountDisc;
-import defpackage.atuj;
-import defpackage.atuk;
-import defpackage.atul;
-import defpackage.atum;
-import defpackage.atun;
-import defpackage.atup;
-import defpackage.atuq;
-import defpackage.avei;
-import defpackage.awza;
+import defpackage.avym;
+import defpackage.avyn;
+import defpackage.avyo;
+import defpackage.avyp;
+import defpackage.avyq;
+import defpackage.avys;
+import defpackage.avyt;
+import defpackage.axih;
+import defpackage.azda;
 import defpackage.dg;
-import defpackage.dtow;
-import defpackage.dtqv;
-import defpackage.dtrq;
-import defpackage.dtyr;
-import defpackage.fuuw;
-import defpackage.fvaf;
-import defpackage.fvaq;
-import defpackage.fvbi;
-import defpackage.fvbo;
-import defpackage.fvcc;
-import defpackage.job;
-import defpackage.jqx;
+import defpackage.dvzi;
+import defpackage.dwbh;
+import defpackage.dwcc;
+import defpackage.dwjd;
+import defpackage.fxqu;
+import defpackage.fxwd;
+import defpackage.fxwo;
+import defpackage.fxxg;
+import defpackage.fxxm;
+import defpackage.fxya;
+import defpackage.juq;
+import defpackage.jxm;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes3.dex */
-public final class AccountParticleFragment extends atup {
-    public awza a;
-    public atuq ag;
-    private final fuuw ah;
-    public dtyr b;
-    public dtqv c;
-    public dtow d;
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes4.dex */
+public final class AccountParticleFragment extends avys {
+    public azda a;
+    public avyt ag;
+    private final fxqu ah;
+    public dwjd b;
+    public dwbh c;
+    public dvzi d;
 
     public AccountParticleFragment() {
-        int i = fvcc.a;
-        this.ah = new jqx(new fvbi(avei.class), new atul(this), new atun(this), new atum(this));
+        int i = fxya.a;
+        this.ah = new jxm(new fxxg(axih.class), new avyo(this), new avyq(this), new avyp(this));
     }
 
     public static final void z(dg dgVar, Runnable runnable) {
@@ -53,54 +53,54 @@ public final class AccountParticleFragment extends atup {
     @Override // defpackage.dg
     public final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        job lifecycle = getLifecycle();
-        dtyr dtyrVar = this.b;
-        if (dtyrVar == null) {
-            fvbo.j("accountsModelUpdater");
-            dtyrVar = null;
+        juq lifecycle = getLifecycle();
+        dwjd dwjdVar = this.b;
+        if (dwjdVar == null) {
+            fxxm.j("accountsModelUpdater");
+            dwjdVar = null;
         }
-        lifecycle.b(dtyrVar);
+        lifecycle.b(dwjdVar);
     }
 
     @Override // defpackage.dg
     public final View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        fvbo.f(layoutInflater, "layoutInflater");
-        atuq atuqVar = this.ag;
-        dtqv dtqvVar = null;
-        if (atuqVar == null) {
-            fvbo.j("accountMenuManagerFactory");
-            atuqVar = null;
+        fxxm.f(layoutInflater, "layoutInflater");
+        avyt avytVar = this.ag;
+        dwbh dwbhVar = null;
+        if (avytVar == null) {
+            fxxm.j("accountMenuManagerFactory");
+            avytVar = null;
         }
-        this.c = atuqVar.a(new fvaf() { // from class: atuf
-            @Override // defpackage.fvaf
+        this.c = avytVar.a(new fxwd() { // from class: avyi
+            @Override // defpackage.fxwd
             public final Object a() {
                 AccountParticleFragment.this.x().a("pwm.constant.LocalAccount");
-                return fuvs.a;
+                return fxrq.a;
             }
         });
-        this.d = new atuj(this);
+        this.d = new avym(this);
         View inflate = layoutInflater.inflate(R.layout.pwm_selected_account_disc, viewGroup, false);
         SelectedAccountDisc selectedAccountDisc = (SelectedAccountDisc) inflate.findViewById(R.id.pwm_selected_account_disc);
-        dtqv dtqvVar2 = this.c;
-        if (dtqvVar2 == null) {
-            fvbo.j("accountMenuManager");
+        dwbh dwbhVar2 = this.c;
+        if (dwbhVar2 == null) {
+            fxxm.j("accountMenuManager");
         } else {
-            dtqvVar = dtqvVar2;
+            dwbhVar = dwbhVar2;
         }
-        dtrq.a(this, dtqvVar, selectedAccountDisc);
-        fvbo.e(inflate, "apply(...)");
-        x().b.g(getViewLifecycleOwner(), new atuk(new fvaq() { // from class: atug
-            @Override // defpackage.fvaq
+        dwcc.a(this, dwbhVar, selectedAccountDisc);
+        fxxm.e(inflate, "apply(...)");
+        x().b.g(getViewLifecycleOwner(), new avyn(new fxwo() { // from class: avyj
+            @Override // defpackage.fxwo
             public final Object a(Object obj) {
                 String str = (String) obj;
-                fvbo.f(str, "newAccountName");
-                awza awzaVar = AccountParticleFragment.this.a;
-                if (awzaVar == null) {
-                    fvbo.j("accountSwitcher");
-                    awzaVar = null;
+                fxxm.f(str, "newAccountName");
+                azda azdaVar = AccountParticleFragment.this.a;
+                if (azdaVar == null) {
+                    fxxm.j("accountSwitcher");
+                    azdaVar = null;
                 }
-                awzaVar.a(str);
-                return fuvs.a;
+                azdaVar.a(str);
+                return fxrq.a;
             }
         }));
         return inflate;
@@ -109,44 +109,44 @@ public final class AccountParticleFragment extends atup {
     @Override // defpackage.dg
     public final void onPause() {
         super.onPause();
-        dtqv dtqvVar = this.c;
-        if (dtqvVar == null) {
-            fvbo.j("accountMenuManager");
-            dtqvVar = null;
+        dwbh dwbhVar = this.c;
+        if (dwbhVar == null) {
+            fxxm.j("accountMenuManager");
+            dwbhVar = null;
         }
-        dtqvVar.b.d(y());
+        dwbhVar.b.d(y());
     }
 
     @Override // defpackage.dg
     public final void onResume() {
         super.onResume();
-        dtqv dtqvVar = this.c;
-        dtqv dtqvVar2 = null;
-        if (dtqvVar == null) {
-            fvbo.j("accountMenuManager");
-            dtqvVar = null;
+        dwbh dwbhVar = this.c;
+        dwbh dwbhVar2 = null;
+        if (dwbhVar == null) {
+            fxxm.j("accountMenuManager");
+            dwbhVar = null;
         }
-        dtqvVar.b.c(y());
-        dtow y = y();
-        dtqv dtqvVar3 = this.c;
-        if (dtqvVar3 == null) {
-            fvbo.j("accountMenuManager");
+        dwbhVar.b.c(y());
+        dvzi y = y();
+        dwbh dwbhVar3 = this.c;
+        if (dwbhVar3 == null) {
+            fxxm.j("accountMenuManager");
         } else {
-            dtqvVar2 = dtqvVar3;
+            dwbhVar2 = dwbhVar3;
         }
-        y.a(dtqvVar2.b.b());
+        y.a(dwbhVar2.b.b());
     }
 
-    public final avei x() {
-        return (avei) this.ah.a();
+    public final axih x() {
+        return (axih) this.ah.a();
     }
 
-    public final dtow y() {
-        dtow dtowVar = this.d;
-        if (dtowVar != null) {
-            return dtowVar;
+    public final dvzi y() {
+        dvzi dvziVar = this.d;
+        if (dvziVar != null) {
+            return dvziVar;
         }
-        fvbo.j("accountSelectedObserver");
+        fxxm.j("accountSelectedObserver");
         return null;
     }
 }

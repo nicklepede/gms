@@ -3,88 +3,88 @@ package com.google.android.gms.constellation;
 import android.content.Context;
 import android.os.Bundle;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.arxo;
-import defpackage.aslv;
-import defpackage.aslw;
-import defpackage.asvp;
-import defpackage.aswf;
-import defpackage.asyd;
-import defpackage.asym;
-import defpackage.atlw;
-import defpackage.atmg;
-import defpackage.byjl;
-import defpackage.bykj;
-import defpackage.byln;
-import defpackage.fmlf;
-import defpackage.fmml;
+import defpackage.auad;
+import defpackage.aupp;
+import defpackage.aupq;
+import defpackage.auzl;
+import defpackage.avae;
+import defpackage.avcg;
+import defpackage.avcp;
+import defpackage.avpz;
+import defpackage.avqj;
+import defpackage.casd;
+import defpackage.catb;
+import defpackage.cauf;
+import defpackage.fpcw;
+import defpackage.fpeg;
 import java.util.UUID;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class RefreshGcmTaskChimeraService extends GmsTaskChimeraService {
-    public static final arxo a = atmg.a("refresh_gcm_service");
-    public atlw b;
+    public static final auad a = avqj.a("refresh_gcm_service");
+    public avpz b;
 
     public static void d(Context context) {
-        if (!asyd.e()) {
+        if (!avcg.e()) {
             a.j("Cellular network signals disabled.", new Object[0]);
             return;
         }
-        long l = fmlf.a.a().l();
+        long l = fpcw.a.lK().l();
         long j = (long) (l * 0.05d);
         long max = Math.max(0L, l - j);
         long max2 = Math.max(1 + max, j + l);
-        bykj bykjVar = new bykj();
-        bykjVar.j = "com.google.android.gms.constellation.checker.RefreshGcmTaskService";
-        bykjVar.t("CELL_NETWORK");
-        bykjVar.e(max, max2);
-        bykjVar.v(1);
-        byjl.a(context).f(bykjVar.b());
+        catb catbVar = new catb();
+        catbVar.j = "com.google.android.gms.constellation.checker.RefreshGcmTaskService";
+        catbVar.t("CELL_NETWORK");
+        catbVar.e(max, max2);
+        catbVar.v(1);
+        casd.a(context).f(catbVar.b());
         a.j("Network signals listener scheduled with delay %ds.", Long.valueOf(l));
     }
 
     public static void e(Context context, long j, boolean z) {
         long max = Math.max(0L, (j - System.currentTimeMillis()) / 1000);
-        long max2 = Math.max(1 + max, (fmml.d() / 1000) + max);
+        long max2 = Math.max(1 + max, (fpeg.d() / 1000) + max);
         a.j("schedule refresh sync task. The service will be kicked off after %d seconds till %d seconds", Long.valueOf(max), Long.valueOf(max2));
         Bundle bundle = new Bundle();
         bundle.putBoolean("isRetrySync", z);
-        bykj bykjVar = new bykj();
-        bykjVar.j = "com.google.android.gms.constellation.checker.RefreshGcmTaskService";
-        bykjVar.t("com.google.android.gms.constellation.checker.RefreshGcmTaskService.tag");
-        bykjVar.e(max, max2);
-        bykjVar.y(0, 1);
-        bykjVar.v(1);
-        bykjVar.p = true;
-        bykjVar.u = bundle;
-        byjl.a(context).f(bykjVar.b());
+        catb catbVar = new catb();
+        catbVar.j = "com.google.android.gms.constellation.checker.RefreshGcmTaskService";
+        catbVar.t("com.google.android.gms.constellation.checker.RefreshGcmTaskService.tag");
+        catbVar.e(max, max2);
+        catbVar.y(0, 1);
+        catbVar.v(1);
+        catbVar.p = true;
+        catbVar.u = bundle;
+        casd.a(context).f(catbVar.b());
     }
 
     public static void f(Context context) {
-        asym.i(context);
-        if (asym.j(context).isEmpty()) {
+        avcp.i(context);
+        if (avcp.j(context).isEmpty()) {
             a.j("Service state signals disabled for all subIds.", new Object[0]);
             return;
         }
-        long r = fmlf.a.a().r();
+        long r = fpcw.a.lK().r();
         long j = (long) (r * 0.05d);
         long max = Math.max(0L, r - j);
         long max2 = Math.max(1 + max, j + r);
-        bykj bykjVar = new bykj();
-        bykjVar.j = "com.google.android.gms.constellation.checker.RefreshGcmTaskService";
-        bykjVar.t("SERVICE_STATE");
-        bykjVar.e(max, max2);
-        bykjVar.v(1);
-        byjl.a(context).f(bykjVar.b());
+        catb catbVar = new catb();
+        catbVar.j = "com.google.android.gms.constellation.checker.RefreshGcmTaskService";
+        catbVar.t("SERVICE_STATE");
+        catbVar.e(max, max2);
+        catbVar.v(1);
+        casd.a(context).f(catbVar.b());
         a.j("Service state signals listener scheduled with delay %ds.", Long.valueOf(r));
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         char c;
-        String str = bylnVar.a;
-        arxo arxoVar = a;
-        arxoVar.j("On run task %s", str);
+        String str = caufVar.a;
+        auad auadVar = a;
+        auadVar.j("On run task %s", str);
         int hashCode = str.hashCode();
         if (hashCode == -1986036153) {
             if (str.equals("SERVICE_STATE")) {
@@ -103,20 +103,20 @@ public class RefreshGcmTaskChimeraService extends GmsTaskChimeraService {
             c = 65535;
         }
         if (c == 0) {
-            Bundle bundle = bylnVar.b;
+            Bundle bundle = caufVar.b;
             boolean z = bundle != null && bundle.getBoolean("isRetrySync", false);
-            arxoVar.h("Running refresh sync", new Object[0]);
-            this.b = atlw.a(this);
+            auadVar.h("Running refresh sync", new Object[0]);
+            this.b = avpz.a(this);
             UUID randomUUID = UUID.randomUUID();
             this.b.I(randomUUID, z ? 12 : 7);
-            aslw aslwVar = new aslw(10);
-            asvp.h();
-            asvp.g(getApplicationContext(), randomUUID, true == z ? 10 : 2, new aswf(this, new aslv(aslwVar), randomUUID, z));
+            aupq aupqVar = new aupq(10);
+            auzl.h();
+            auzl.g(getApplicationContext(), randomUUID, true == z ? 10 : 2, new avae(this, new aupp(aupqVar), randomUUID, z));
         } else if (c == 1) {
-            asyd.a().b();
+            avcg.a().b();
             d(getApplicationContext());
         } else if (c == 2) {
-            asym.i(getApplicationContext()).e();
+            avcp.i(getApplicationContext()).e();
             f(getApplicationContext());
         }
         return 0;

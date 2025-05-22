@@ -10,12 +10,12 @@ import com.google.android.gms.reminders.model.RecurrenceEntity;
 import com.google.android.gms.reminders.model.RecurrenceStart;
 import com.google.android.gms.reminders.model.WeeklyPattern;
 import com.google.android.gms.reminders.model.YearlyPattern;
-import defpackage.cxeb;
-import defpackage.cxep;
+import defpackage.cznx;
+import defpackage.czol;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class RecurrenceRef extends cxeb implements Recurrence {
+public class RecurrenceRef extends cznx implements Recurrence {
     private boolean f;
     private RecurrenceStartRef g;
     private boolean h;
@@ -116,7 +116,7 @@ public class RecurrenceRef extends cxeb implements Recurrence {
         return this.g;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof Recurrence)) {
             return false;
@@ -166,7 +166,7 @@ public class RecurrenceRef extends cxeb implements Recurrence {
         return n(p("recurrence_every"));
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return RecurrenceEntity.b(this);
     }
@@ -176,13 +176,13 @@ public class RecurrenceRef extends cxeb implements Recurrence {
         return n(p("recurrence_frequency"));
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new RecurrenceEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxep.a(new RecurrenceEntity(this), parcel, i);
+        czol.a(new RecurrenceEntity(this), parcel, i);
     }
 }

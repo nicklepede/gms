@@ -1,11 +1,11 @@
 package com.google.android.gms.stats.service;
 
-import defpackage.bxgd;
+import defpackage.bzot;
 import java.util.Collections;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
-public class AppUsageApiChimeraService extends bxgd {
+public class AppUsageApiChimeraService extends bzot {
     public AppUsageApiChimeraService() {
         super(193, "com.google.android.gms.appusage.service.START", Collections.EMPTY_SET, 1, 10);
     }
@@ -14,17 +14,17 @@ public class AppUsageApiChimeraService extends bxgd {
     
         if (com.google.android.gms.chimera.modules.stats.AppContextProvider.a().getPackageManager().checkPermission("android.permission.PACKAGE_USAGE_STATS", r0) != 0) goto L9;
      */
-    @Override // defpackage.bxgd
+    @Override // defpackage.bzot
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    protected final void a(defpackage.bxgj r5, com.google.android.gms.common.internal.GetServiceRequest r6) {
+    protected final void a(defpackage.bzoz r5, com.google.android.gms.common.internal.GetServiceRequest r6) {
         /*
             r4 = this;
             java.lang.String r0 = r6.f
-            fsiz r1 = defpackage.fsiz.a
-            fsjd r1 = r1.a()
+            fvdx r1 = defpackage.fvdx.a
+            fveb r1 = r1.lK()
             java.lang.String r1 = r1.f()
             android.text.TextUtils$SimpleStringSplitter r2 = new android.text.TextUtils$SimpleStringSplitter
             r3 = 44
@@ -48,14 +48,14 @@ public class AppUsageApiChimeraService extends bxgd {
             r1 = 0
             r5.a(r0, r1)
         L42:
-            ujp r0 = new ujp
-            bxgo r1 = r4.l()
+            wfo r0 = new wfo
+            bzpe r1 = r4.l()
             java.lang.String r2 = r6.f
             java.lang.String r6 = r6.p
             r0.<init>(r1, r2, r6)
             r5.c(r0)
             return
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.stats.service.AppUsageApiChimeraService.a(bxgj, com.google.android.gms.common.internal.GetServiceRequest):void");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.stats.service.AppUsageApiChimeraService.a(bzoz, com.google.android.gms.common.internal.GetServiceRequest):void");
     }
 }

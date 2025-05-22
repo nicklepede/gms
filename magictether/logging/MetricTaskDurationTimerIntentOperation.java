@@ -6,19 +6,17 @@ import android.content.SharedPreferences;
 import android.os.SystemClock;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.auth.magictether.AppContextProvider;
-import defpackage.aptz;
-import defpackage.apud;
-import defpackage.bqzj;
-import defpackage.bqzk;
-import defpackage.brbp;
-import defpackage.brbr;
-import defpackage.cbtb;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fpzd;
-import defpackage.fpzg;
+import defpackage.btha;
+import defpackage.bthb;
+import defpackage.btjg;
+import defpackage.btji;
+import defpackage.cebt;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fssz;
+import defpackage.fstc;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class MetricTaskDurationTimerIntentOperation extends IntentOperation {
     private final SharedPreferences a = AppContextProvider.a().getSharedPreferences("com.google.android.gms.magictether.logging.MetricTaskDurationTimer.PREFERENCE_FILE", 0);
@@ -62,7 +60,7 @@ public class MetricTaskDurationTimerIntentOperation extends IntentOperation {
     public final void onHandleIntent(Intent intent) {
         String stringExtra;
         String str;
-        if (fpzd.e() && (stringExtra = intent.getStringExtra("EXTRA_METRIC_KEY")) != null) {
+        if (fssz.e() && (stringExtra = intent.getStringExtra("EXTRA_METRIC_KEY")) != null) {
             String stringExtra2 = intent.getStringExtra("EXTRA_TASK_ID");
             if ("com.google.android.gms.magictether.logging.CLEAR_TIMER".equals(intent.getAction())) {
                 h(stringExtra, stringExtra2);
@@ -86,50 +84,45 @@ public class MetricTaskDurationTimerIntentOperation extends IntentOperation {
                     long j = this.a.getLong(str, -1L);
                     if (j > 0) {
                         long j2 = longExtra - j;
-                        cbtb cbtbVar = new cbtb();
-                        if (fpzg.f() && cbtb.a.contains(stringExtra)) {
+                        cebt cebtVar = new cebt();
+                        if (fstc.e() && cebt.a.contains(stringExtra)) {
                             String concat = stringExtra.concat("_ms");
-                            if (fpzg.f()) {
-                                if (cbtbVar.b) {
-                                    brbr f = cbtbVar.d.f(concat);
-                                    brbp brbpVar = f.f.f;
-                                    fecj v = bqzk.a.v();
-                                    String str2 = f.a;
-                                    if (!v.b.L()) {
-                                        v.U();
-                                    }
-                                    fecp fecpVar = v.b;
-                                    bqzk bqzkVar = (bqzk) fecpVar;
-                                    str2.getClass();
-                                    bqzkVar.b |= 1;
-                                    bqzkVar.c = str2;
-                                    bqzj bqzjVar = bqzj.COUNTERTYPE_LONG_HISTOGRAM;
-                                    if (!fecpVar.L()) {
-                                        v.U();
-                                    }
-                                    bqzk bqzkVar2 = (bqzk) v.b;
-                                    bqzkVar2.d = bqzjVar.g;
-                                    bqzkVar2.b |= 2;
-                                    long a = f.b.a(j2);
-                                    if (!v.b.L()) {
-                                        v.U();
-                                    }
-                                    fecp fecpVar2 = v.b;
-                                    bqzk bqzkVar3 = (bqzk) fecpVar2;
-                                    bqzkVar3.b |= 16;
-                                    bqzkVar3.g = a;
-                                    if (!fecpVar2.L()) {
-                                        v.U();
-                                    }
-                                    bqzk bqzkVar4 = (bqzk) v.b;
-                                    bqzkVar4.b |= 32;
-                                    bqzkVar4.h = 1L;
-                                    f.a(v, brbpVar);
-                                } else {
-                                    aptz f2 = cbtbVar.c.f(concat);
-                                    f2.a(f2.g.a(j2), 1L, apud.b);
+                            if (fstc.e()) {
+                                btji f = cebtVar.b.f(concat);
+                                btjg btjgVar = f.f.f;
+                                fgrc v = bthb.a.v();
+                                String str2 = f.a;
+                                if (!v.b.L()) {
+                                    v.U();
                                 }
-                                cbtbVar.f();
+                                fgri fgriVar = v.b;
+                                bthb bthbVar = (bthb) fgriVar;
+                                str2.getClass();
+                                bthbVar.b |= 1;
+                                bthbVar.c = str2;
+                                btha bthaVar = btha.COUNTERTYPE_LONG_HISTOGRAM;
+                                if (!fgriVar.L()) {
+                                    v.U();
+                                }
+                                bthb bthbVar2 = (bthb) v.b;
+                                bthbVar2.d = bthaVar.g;
+                                bthbVar2.b |= 2;
+                                long a = f.b.a(j2);
+                                if (!v.b.L()) {
+                                    v.U();
+                                }
+                                fgri fgriVar2 = v.b;
+                                bthb bthbVar3 = (bthb) fgriVar2;
+                                bthbVar3.b |= 16;
+                                bthbVar3.g = a;
+                                if (!fgriVar2.L()) {
+                                    v.U();
+                                }
+                                bthb bthbVar4 = (bthb) v.b;
+                                bthbVar4.b |= 32;
+                                bthbVar4.h = 1L;
+                                f.a(v, btjgVar);
+                                cebtVar.f();
                             }
                         }
                         h(stringExtra, stringExtra2);

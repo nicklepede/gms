@@ -1,11 +1,11 @@
 package com.google.android.gms.people.cpg.model;
 
-import defpackage.eihn;
-import defpackage.eitj;
+import defpackage.ekus;
+import defpackage.elgo;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public final class GroupContactOrder {
     public final String a;
@@ -17,7 +17,7 @@ public final class GroupContactOrder {
     public GroupContactOrder(String str, String str2, List list, String str3, Long l) {
         this.b = str;
         this.a = str2;
-        this.c = eitj.i(list);
+        this.c = elgo.i(list);
         this.d = str3;
         this.e = l;
     }
@@ -26,8 +26,8 @@ public final class GroupContactOrder {
         return this.e.longValue();
     }
 
-    public final eitj b() {
-        return eitj.i(this.c);
+    public final elgo b() {
+        return elgo.i(this.c);
     }
 
     public final boolean c() {
@@ -40,7 +40,7 @@ public final class GroupContactOrder {
         }
         if (obj != null && getClass() == obj.getClass()) {
             GroupContactOrder groupContactOrder = (GroupContactOrder) obj;
-            if (eihn.a(this.b, groupContactOrder.b) && eihn.a(this.c, groupContactOrder.c) && this.d.equals(groupContactOrder.d) && eihn.a(this.e, groupContactOrder.e)) {
+            if (ekus.a(this.b, groupContactOrder.b) && ekus.a(this.c, groupContactOrder.c) && this.d.equals(groupContactOrder.d) && ekus.a(this.e, groupContactOrder.e)) {
                 return true;
             }
         }

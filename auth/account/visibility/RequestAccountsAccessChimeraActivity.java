@@ -12,39 +12,39 @@ import com.google.android.gms.R;
 import com.google.android.gms.auth.account.visibility.RequestAccountsAccessChimeraActivity;
 import com.google.android.gms.auth.account.visibility.WhitelistApplicationForGoogleAccountsIntentOperation;
 import com.google.android.gms.common.Feature;
-import defpackage.aanu;
-import defpackage.adkg;
-import defpackage.adkx;
-import defpackage.asne;
-import defpackage.asng;
-import defpackage.asoe;
-import defpackage.asqh;
+import defpackage.acnu;
+import defpackage.afkn;
+import defpackage.afle;
+import defpackage.auqy;
+import defpackage.aura;
+import defpackage.aury;
+import defpackage.auub;
 import defpackage.bp;
 import defpackage.ew;
-import defpackage.ips;
+import defpackage.iri;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class RequestAccountsAccessChimeraActivity extends adkg {
+public class RequestAccountsAccessChimeraActivity extends afkn {
     public String h;
 
-    @Override // defpackage.adkg
-    protected final String gG() {
+    @Override // defpackage.afkn
+    protected final String gW() {
         return "RequestAccountsAccessActivity";
     }
 
-    @Override // defpackage.adkg, defpackage.qfn, defpackage.qam, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.afkn, defpackage.ryr, defpackage.rtq, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        if (!asqh.c()) {
+        if (!auub.c()) {
             setResult(0);
             finish();
             return;
         }
         setContentView(R.layout.auth_request_accounts_access_activity);
         ((TextView) findViewById(R.id.footnote)).setText(getResources().getString(R.string.auth_app_permission_ok_footnote));
-        String p = asng.p(this);
+        String p = aura.p(this);
         if (p == null) {
             Log.w("Auth", String.format(Locale.US, "[RequestAccountsAccess] componentName of activity is null", new Object[0]));
             setResult(0);
@@ -52,23 +52,23 @@ public class RequestAccountsAccessChimeraActivity extends adkg {
             return;
         }
         this.h = p;
-        CharSequence b = new aanu(this).b(this.h);
+        CharSequence b = new acnu(this).b(this.h);
         if (b == null) {
             setResult(0);
             finish();
             return;
         }
         String charSequence = b.toString();
-        ew gI = gI();
-        if (gI.h("headerFragment") == null) {
-            bp bpVar = new bp(gI);
-            bpVar.u(R.id.header_fragment_layout, adkx.x(charSequence), "headerFragment");
+        ew gY = gY();
+        if (gY.h("headerFragment") == null) {
+            bp bpVar = new bp(gY);
+            bpVar.u(R.id.header_fragment_layout, afle.x(charSequence), "headerFragment");
             bpVar.a();
         }
         TextView textView = new TextView(this);
         textView.setText(getString(R.string.auth_request_accounts_list));
         ((LinearLayout) findViewById(R.id.scopes_layout)).addView(textView);
-        ((Button) findViewById(R.id.cancel_button)).setOnClickListener(new View.OnClickListener() { // from class: vnd
+        ((Button) findViewById(R.id.cancel_button)).setOnClickListener(new View.OnClickListener() { // from class: xje
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 RequestAccountsAccessChimeraActivity requestAccountsAccessChimeraActivity = RequestAccountsAccessChimeraActivity.this;
@@ -76,36 +76,36 @@ public class RequestAccountsAccessChimeraActivity extends adkg {
                 requestAccountsAccessChimeraActivity.finish();
             }
         });
-        ((Button) findViewById(R.id.accept_button)).setOnClickListener(new View.OnClickListener() { // from class: vne
+        ((Button) findViewById(R.id.accept_button)).setOnClickListener(new View.OnClickListener() { // from class: xjf
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                boolean I = fkdo.a.a().I();
+                boolean I = fmua.a.lK().I();
                 final RequestAccountsAccessChimeraActivity requestAccountsAccessChimeraActivity = RequestAccountsAccessChimeraActivity.this;
                 if (I) {
-                    vhj vhjVar = new vhj(requestAccountsAccessChimeraActivity);
+                    xdk xdkVar = new xdk(requestAccountsAccessChimeraActivity);
                     final String str = requestAccountsAccessChimeraActivity.h;
-                    arcy arcyVar = new arcy();
-                    arcyVar.c = new Feature[]{unp.d};
-                    arcyVar.a = new arco() { // from class: vhb
-                        @Override // defpackage.arco
+                    atfn atfnVar = new atfn();
+                    atfnVar.c = new Feature[]{wjo.d};
+                    atfnVar.a = new atfd() { // from class: xdc
+                        @Override // defpackage.atfd
                         public final void d(Object obj, Object obj2) {
-                            int i = vhj.a;
-                            ((vgf) ((vhl) obj).H()).e(new vhg((dfau) obj2), str);
+                            int i = xdk.a;
+                            ((xcg) ((xdm) obj).H()).e(new xdh((dhma) obj2), str);
                         }
                     };
-                    arcyVar.d = 1511;
-                    dfaq iT = vhjVar.iT(arcyVar.a());
-                    iT.z(new dfak() { // from class: vnb
-                        @Override // defpackage.dfak
-                        public final void gn(Object obj) {
+                    atfnVar.d = 1511;
+                    dhlw ji = xdkVar.ji(atfnVar.a());
+                    ji.z(new dhlq() { // from class: xjc
+                        @Override // defpackage.dhlq
+                        public final void gC(Object obj) {
                             RequestAccountsAccessChimeraActivity requestAccountsAccessChimeraActivity2 = RequestAccountsAccessChimeraActivity.this;
                             requestAccountsAccessChimeraActivity2.setResult(-1);
                             requestAccountsAccessChimeraActivity2.finish();
                         }
                     });
-                    iT.y(new dfah() { // from class: vnc
-                        @Override // defpackage.dfah
-                        public final void gm(Exception exc) {
+                    ji.y(new dhln() { // from class: xjd
+                        @Override // defpackage.dhln
+                        public final void gB(Exception exc) {
                             Log.w("Auth", String.format(Locale.US, "[RequestAccountsAccess] Failed to whitelist package", new Object[0]), exc);
                             RequestAccountsAccessChimeraActivity requestAccountsAccessChimeraActivity2 = RequestAccountsAccessChimeraActivity.this;
                             requestAccountsAccessChimeraActivity2.setResult(0);
@@ -128,7 +128,7 @@ public class RequestAccountsAccessChimeraActivity extends adkg {
                 requestAccountsAccessChimeraActivity.finish();
             }
         });
-        asne.b(getContainerActivity(), asoe.n(getResources()) ? r4.getDimension(R.dimen.plus_auth_dialog_tablet_resize_factor) : r4.getDimension(R.dimen.plus_auth_dialog_resize_factor));
-        int i = ips.a;
+        auqy.b(getContainerActivity(), aury.n(getResources()) ? r4.getDimension(R.dimen.plus_auth_dialog_tablet_resize_factor) : r4.getDimension(R.dimen.plus_auth_dialog_resize_factor));
+        int i = iri.a;
     }
 }

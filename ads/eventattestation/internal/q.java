@@ -2,14 +2,14 @@ package com.google.android.gms.ads.eventattestation.internal;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.arxb;
+import defpackage.atzq;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class q implements Parcelable.Creator {
     @Override // android.os.Parcelable.Creator
     public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int h = arxb.h(parcel);
+        int h = atzq.h(parcel);
         int i = 0;
         int i2 = 0;
         String str = null;
@@ -18,24 +18,24 @@ public final class q implements Parcelable.Creator {
         Parcel parcel2 = null;
         while (parcel.dataPosition() < h) {
             int readInt = parcel.readInt();
-            int d = arxb.d(readInt);
+            int d = atzq.d(readInt);
             if (d == 1) {
-                str = arxb.s(parcel, readInt);
+                str = atzq.s(parcel, readInt);
             } else if (d == 3) {
-                num = arxb.q(parcel, readInt);
+                num = atzq.q(parcel, readInt);
             } else if (d == 4) {
-                str2 = arxb.s(parcel, readInt);
+                str2 = atzq.s(parcel, readInt);
             } else if (d == 5) {
-                parcel2 = arxb.l(parcel, readInt);
+                parcel2 = atzq.l(parcel, readInt);
             } else if (d == 6) {
-                i = arxb.f(parcel, readInt);
+                i = atzq.f(parcel, readInt);
             } else if (d != 7) {
-                arxb.C(parcel, readInt);
+                atzq.C(parcel, readInt);
             } else {
-                i2 = arxb.f(parcel, readInt);
+                i2 = atzq.f(parcel, readInt);
             }
         }
-        arxb.A(parcel, h);
+        atzq.A(parcel, h);
         return new ImpressionAttestationTokenRequestParcel(str, num, str2, parcel2, i, i2);
     }
 

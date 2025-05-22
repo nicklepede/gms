@@ -18,10 +18,10 @@ import com.google.android.gms.ads.internal.flag.s;
 import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
 import com.google.android.gms.ads.internal.util.client.h;
 import com.google.android.gms.ads.internal.util.client.m;
-import defpackage.aqtp;
-import defpackage.aquo;
-import defpackage.assx;
-import defpackage.eiif;
+import defpackage.aswe;
+import defpackage.asxd;
+import defpackage.auwr;
+import defpackage.ekvk;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -31,7 +31,7 @@ import java.util.WeakHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class d implements f {
     public static f a;
@@ -70,8 +70,8 @@ public final class d implements f {
             java.util.WeakHashMap r0 = new java.util.WeakHashMap
             r0.<init>()
             r2.g = r0
-            byhh r0 = defpackage.byhj.b
-            byhp r1 = defpackage.byhp.HIGH_SPEED
+            capz r0 = defpackage.caqb.b
+            caqh r1 = defpackage.caqh.HIGH_SPEED
             java.util.concurrent.ExecutorService r0 = r0.d(r1)
             r2.h = r0
             java.util.concurrent.atomic.AtomicBoolean r0 = new java.util.concurrent.atomic.AtomicBoolean
@@ -83,7 +83,7 @@ public final class d implements f {
         L2c:
             r2.f = r3
             r2.i = r4
-            com.google.android.gms.ads.internal.config.g r4 = com.google.android.gms.ads.internal.config.p.bd
+            com.google.android.gms.ads.internal.config.g r4 = com.google.android.gms.ads.internal.config.p.be
             java.lang.Object r4 = r4.g()
             java.lang.Boolean r4 = (java.lang.Boolean) r4
             boolean r4 = r4.booleanValue()
@@ -95,7 +95,7 @@ public final class d implements f {
             if (r4 != 0) goto L4a
             goto L5a
         L4a:
-            assw r4 = defpackage.assx.b(r3)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L5a
+            auwq r4 = defpackage.auwr.b(r3)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L5a
             android.content.pm.ApplicationInfo r3 = r3.getApplicationInfo()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L5a
             java.lang.String r3 = r3.packageName     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L5a
             r1 = 0
@@ -105,7 +105,7 @@ public final class d implements f {
             r3 = r0
         L5b:
             r2.j = r3
-            com.google.android.gms.ads.internal.config.g r3 = com.google.android.gms.ads.internal.config.p.bb
+            com.google.android.gms.ads.internal.config.g r3 = com.google.android.gms.ads.internal.config.p.bc
             java.lang.Object r4 = r3.g()
             java.lang.Boolean r4 = (java.lang.Boolean) r4
             boolean r4 = r4.booleanValue()
@@ -128,7 +128,7 @@ public final class d implements f {
             if (r3 != 0) goto L8e
             goto La5
         L8e:
-            assw r3 = defpackage.assx.b(r3)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
+            auwq r3 = defpackage.auwr.b(r3)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
             java.lang.String r4 = "com.android.vending"
             r1 = 128(0x80, float:1.8E-43)
             android.content.pm.PackageInfo r3 = r3.f(r4, r1)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> La5
@@ -142,7 +142,7 @@ public final class d implements f {
             r0 = r1
         La5:
             r2.l = r0
-            com.google.android.gms.ads.internal.config.g r3 = com.google.android.gms.ads.internal.config.p.aX
+            com.google.android.gms.ads.internal.config.g r3 = com.google.android.gms.ads.internal.config.p.aY
             java.lang.Object r3 = r3.g()
             java.lang.Integer r3 = (java.lang.Integer) r3
             int r3 = r3.intValue()
@@ -160,7 +160,7 @@ public final class d implements f {
         synchronized (d) {
             if (a == null) {
                 if (j(context)) {
-                    a = new d(context, new VersionInfoParcel(251661004, 251661004));
+                    a = new d(context, new VersionInfoParcel(251864004, 251864004));
                 } else {
                     a = new e();
                 }
@@ -173,7 +173,7 @@ public final class d implements f {
         synchronized (d) {
             if (b == null) {
                 boolean z = false;
-                if (((Boolean) g.b.d()).booleanValue() && (!((Boolean) p.aW.g()).booleanValue() || ((Boolean) g.a.d()).booleanValue())) {
+                if (((Boolean) g.b.d()).booleanValue() && (!((Boolean) p.aX.g()).booleanValue() || ((Boolean) g.a.d()).booleanValue())) {
                     z = true;
                 }
                 if (j(context)) {
@@ -201,7 +201,7 @@ public final class d implements f {
     }
 
     public static String d(Throwable th) {
-        return eiif.b(com.google.android.gms.ads.internal.util.client.f.c(c(th), "SHA-256"));
+        return ekvk.b(com.google.android.gms.ads.internal.util.client.f.c(c(th), "SHA-256"));
     }
 
     private final void h() {
@@ -225,10 +225,10 @@ public final class d implements f {
         }
         synchronized (d) {
             if (c == null) {
-                c = Boolean.valueOf(u.d().nextInt(100) < ((Integer) p.bW.g()).intValue());
+                c = Boolean.valueOf(u.d().nextInt(100) < ((Integer) p.bX.g()).intValue());
             }
         }
-        return c.booleanValue() && !((Boolean) p.aW.g()).booleanValue();
+        return c.booleanValue() && !((Boolean) p.aX.g()).booleanValue();
     }
 
     @Override // com.google.android.gms.ads.internal.report.f
@@ -287,14 +287,14 @@ public final class d implements f {
         if (th2 != null) {
             String name = th.getClass().getName();
             String c2 = c(th);
-            String d2 = ((Boolean) p.bn.g()).booleanValue() ? d(th) : "";
+            String d2 = ((Boolean) p.bo.g()).booleanValue() ? d(th) : "";
             double d3 = f;
             double random = Math.random();
             int i = f > 0.0f ? (int) (1.0f / f) : 1;
             if (random < d3) {
                 ArrayList<String> arrayList2 = new ArrayList();
                 try {
-                    z = assx.b(this.f).l();
+                    z = auwr.b(this.f).l();
                 } catch (Throwable th5) {
                     h.h("Error fetching instant app info", th5);
                 }
@@ -312,14 +312,14 @@ public final class d implements f {
                 }
                 Uri.Builder appendQueryParameter2 = appendQueryParameter.appendQueryParameter("device", str4);
                 VersionInfoParcel versionInfoParcel = this.i;
-                Uri.Builder appendQueryParameter3 = appendQueryParameter2.appendQueryParameter("js", versionInfoParcel.a).appendQueryParameter("appid", str2).appendQueryParameter("exceptiontype", name).appendQueryParameter("stacktrace", c2).appendQueryParameter("eids", TextUtils.join(",", p.a())).appendQueryParameter("exceptionkey", str).appendQueryParameter("cl", "752466036").appendQueryParameter("rc", "dev").appendQueryParameter("sampling_rate", Integer.toString(i)).appendQueryParameter("pb_tm", String.valueOf(s.c.d()));
-                int i2 = aqtp.c;
+                Uri.Builder appendQueryParameter3 = appendQueryParameter2.appendQueryParameter("js", versionInfoParcel.a).appendQueryParameter("appid", str2).appendQueryParameter("exceptiontype", name).appendQueryParameter("stacktrace", c2).appendQueryParameter("eids", TextUtils.join(",", p.a())).appendQueryParameter("exceptionkey", str).appendQueryParameter("cl", "758020094").appendQueryParameter("rc", "dev").appendQueryParameter("sampling_rate", Integer.toString(i)).appendQueryParameter("pb_tm", String.valueOf(s.c.d()));
+                int i2 = aswe.c;
                 Context context = this.f;
-                Uri.Builder appendQueryParameter4 = appendQueryParameter3.appendQueryParameter("gmscv", String.valueOf(aquo.a(context))).appendQueryParameter("lite", true != versionInfoParcel.e ? "0" : "1");
+                Uri.Builder appendQueryParameter4 = appendQueryParameter3.appendQueryParameter("gmscv", String.valueOf(asxd.a(context))).appendQueryParameter("lite", true != versionInfoParcel.e ? "0" : "1");
                 if (!TextUtils.isEmpty(d2)) {
                     appendQueryParameter4.appendQueryParameter("hash", d2);
                 }
-                if (((Boolean) p.bc.g()).booleanValue()) {
+                if (((Boolean) p.bd.g()).booleanValue()) {
                     if (context == null || (activityManager = (ActivityManager) context.getSystemService("activity")) == null) {
                         memoryInfo = null;
                     } else {
@@ -336,7 +336,7 @@ public final class d implements f {
                         appendQueryParameter4.appendQueryParameter("is_low_memory", true == memoryInfo.lowMemory ? "1" : "0");
                     }
                 }
-                if (((Boolean) p.bb.g()).booleanValue()) {
+                if (((Boolean) p.bc.g()).booleanValue()) {
                     String str5 = this.k;
                     if (!TextUtils.isEmpty(str5)) {
                         appendQueryParameter4.appendQueryParameter("countrycode", str5);
@@ -351,7 +351,7 @@ public final class d implements f {
                     } else {
                         if (context2 != null) {
                             try {
-                                f2 = assx.b(context2).f("com.android.webview", 128);
+                                f2 = auwr.b(context2).f("com.android.webview", 128);
                             } catch (PackageManager.NameNotFoundException unused3) {
                             }
                         }
@@ -394,7 +394,7 @@ public final class d implements f {
                     z2 |= getClass().getName().equals(stackTraceElement.getClassName());
                 }
             }
-            int intValue = ((Integer) p.aX.g()).intValue();
+            int intValue = ((Integer) p.aY.g()).intValue();
             if (intValue > 0) {
                 if (this.o.size() >= intValue) {
                     return;

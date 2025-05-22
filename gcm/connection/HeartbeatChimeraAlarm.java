@@ -7,31 +7,31 @@ import android.util.Log;
 import com.google.android.cast.JGCastService;
 import com.google.android.gms.gcm.connection.HeartbeatChimeraAlarm;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.asnv;
-import defpackage.biba;
-import defpackage.bibc;
-import defpackage.bibu;
-import defpackage.bicw;
-import defpackage.bidn;
-import defpackage.bied;
-import defpackage.fojc;
-import defpackage.fojf;
-import defpackage.fuuq;
+import defpackage.aurp;
+import defpackage.bkfp;
+import defpackage.bkfr;
+import defpackage.bkgj;
+import defpackage.bkhl;
+import defpackage.bkic;
+import defpackage.bkis;
+import defpackage.frbt;
+import defpackage.frbw;
+import defpackage.fxqo;
 import j$.time.Duration;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
     static final Duration a = Duration.ofSeconds(30);
     public boolean b;
     public long c;
-    public final biba d;
-    public final fuuq e;
-    public final bied f;
+    public final bkfp d;
+    public final fxqo e;
+    public final bkis f;
     public long g;
     public int h;
-    public volatile bibc i;
+    public volatile bkfr i;
     public int j;
     public boolean k;
     public long l;
@@ -39,13 +39,13 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
     public long n;
     long o;
     boolean p;
-    public final asnv q;
+    public final aurp q;
     boolean r;
-    public final bidn s;
+    public final bkic s;
     private final Context t;
     private final Intent u;
 
-    public HeartbeatChimeraAlarm(Context context, bidn bidnVar, biba bibaVar, bied biedVar, asnv asnvVar, fuuq fuuqVar) {
+    public HeartbeatChimeraAlarm(Context context, bkic bkicVar, bkfp bkfpVar, bkis bkisVar, aurp aurpVar, fxqo fxqoVar) {
         super("gcm");
         this.b = false;
         this.c = 0L;
@@ -57,33 +57,33 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
         this.u = intent;
         this.r = false;
         this.t = context;
-        this.s = bidnVar;
-        this.d = bibaVar;
-        this.f = biedVar;
-        this.q = asnvVar;
-        this.e = fuuqVar;
+        this.s = bkicVar;
+        this.d = bkfpVar;
+        this.f = bkisVar;
+        this.q = aurpVar;
+        this.e = fxqoVar;
         intent.setFlags(JGCastService.FLAG_PRIVATE_DISPLAY);
         this.k = false;
-        biedVar.i(new bicw(this));
+        bkisVar.i(new bkhl(this));
     }
 
     public static boolean k(int i) {
-        return !Arrays.asList(fojf.a.a().l().split(";")).contains(Integer.toString(i));
+        return !Arrays.asList(frbw.a.lK().l().split(";")).contains(Integer.toString(i));
     }
 
     private final void n() {
-        bibc bibcVar = this.i;
-        if (bibcVar == null || !j(bibcVar)) {
+        bkfr bkfrVar = this.i;
+        if (bkfrVar == null || !j(bkfrVar)) {
             return;
         }
-        int a2 = bibcVar.a();
-        bibcVar.d(1);
-        this.k = a2 == bibcVar.a();
+        int a2 = bkfrVar.a();
+        bkfrVar.d(1);
+        this.k = a2 == bkfrVar.a();
     }
 
     public final int b() {
-        bibc bibcVar = this.i;
-        int a2 = (bibcVar == null || !j(bibcVar)) ? -1 : bibcVar.a();
+        bkfr bkfrVar = this.i;
+        int a2 = (bkfrVar == null || !j(bkfrVar)) ? -1 : bkfrVar.a();
         if (a2 == -1 || a2 == this.j) {
             return -1;
         }
@@ -91,13 +91,13 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
     }
 
     public final long c() {
-        long f = fojf.f();
-        return (!this.r || f <= 0) ? l() ? d() + fojf.a.a().i() : d() : f;
+        long f = frbw.f();
+        return (!this.r || f <= 0) ? l() ? d() + frbw.a.lK().i() : d() : f;
     }
 
     public final long d() {
-        bibc a2;
-        long d = fojf.d();
+        bkfr a2;
+        long d = frbw.d();
         long j = this.h;
         if (j > 0 && d > j) {
             d = j;
@@ -112,29 +112,29 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
     }
 
     public final void e() {
-        bibu bibuVar = (bibu) this.e.a();
-        if (!fojc.r() || !bibuVar.v()) {
-            bibuVar.p(false);
+        bkgj bkgjVar = (bkgj) this.e.a();
+        if (!frbt.q() || !bkgjVar.v()) {
+            bkgjVar.p(false);
         }
         this.f.h();
     }
 
     public final void f() {
-        fuuq fuuqVar = this.e;
-        bibu bibuVar = (bibu) fuuqVar.a();
-        if (fojc.r() && bibuVar.v() && this.b) {
+        fxqo fxqoVar = this.e;
+        bkgj bkgjVar = (bkgj) fxqoVar.a();
+        if (frbt.q() && bkgjVar.v() && this.b) {
             this.l = SystemClock.elapsedRealtime() - this.m;
             if (this.p) {
                 n();
             }
             this.b = false;
-        } else if (bibuVar.r()) {
+        } else if (bkgjVar.r()) {
             this.l = SystemClock.elapsedRealtime() - this.m;
-            bibuVar.p(false);
+            bkgjVar.p(false);
             if (this.p) {
                 n();
             }
-        } else if (((bibu) fuuqVar.a()).v() && SystemClock.elapsedRealtime() - Math.max(this.n, this.o) > d() - a.toMillis()) {
+        } else if (((bkgj) fxqoVar.a()).v() && SystemClock.elapsedRealtime() - Math.max(this.n, this.o) > d() - a.toMillis()) {
             n();
         }
         this.o = SystemClock.elapsedRealtime();
@@ -142,9 +142,9 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
     }
 
     public final void g() {
-        bibu bibuVar = (bibu) this.e.a();
-        if (bibuVar.s()) {
-            if (fojc.r() && bibuVar.v()) {
+        bkgj bkgjVar = (bkgj) this.e.a();
+        if (bkgjVar.s()) {
+            if (frbt.q() && bkgjVar.v()) {
                 if (this.b) {
                     n();
                     this.b = false;
@@ -152,13 +152,13 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
                 i(true);
                 return;
             }
-            if (!bibuVar.r()) {
+            if (!bkgjVar.r()) {
                 i(true);
                 return;
             }
             long elapsedRealtime = SystemClock.elapsedRealtime();
             long j = elapsedRealtime - this.m;
-            long e = fojf.e();
+            long e = frbw.e();
             if (j < e) {
                 this.f.g(e - j);
                 Log.w("GCM", "Heartbeat alarm fired early: " + j);
@@ -166,7 +166,7 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
             }
             Log.w("GCM", "Heartbeat timeout, GCM connection reset " + (this.f.e() - elapsedRealtime));
             e();
-            bibuVar.y(6, null);
+            bkgjVar.y(6, null);
             this.g = SystemClock.elapsedRealtime();
         }
     }
@@ -176,37 +176,37 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
     }
 
     public final void i(boolean z) {
-        bibu bibuVar = (bibu) this.e.a();
-        if (!fojc.r()) {
-            this.f.a.c(bibuVar.c());
+        bkgj bkgjVar = (bkgj) this.e.a();
+        if (!frbt.q()) {
+            this.f.a.c(bkgjVar.c());
         }
         this.p = SystemClock.elapsedRealtime() >= this.n + d();
-        bibuVar.x();
+        bkgjVar.x();
         this.m = SystemClock.elapsedRealtime();
-        if (fojf.a.a().q() && z) {
+        if (frbw.a.lK().q() && z) {
             this.t.sendBroadcast(this.u);
         }
-        if (fojc.r() && bibuVar.v()) {
+        if (frbt.q() && bkgjVar.v()) {
             this.b = true;
             this.f.g(c());
         } else {
-            bibuVar.p(true);
-            this.f.g(fojf.e());
+            bkgjVar.p(true);
+            this.f.g(frbw.e());
         }
     }
 
-    public final boolean j(bibc bibcVar) {
+    public final boolean j(bkfr bkfrVar) {
         int b = this.s.b();
-        return k(b) && bibcVar.a.c == b;
+        return k(b) && bkfrVar.a.c == b;
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         char c;
-        fuuq fuuqVar = this.e;
+        fxqo fxqoVar = this.e;
         String action = intent.getAction();
-        bibu bibuVar = (bibu) fuuqVar.a();
+        bkgj bkgjVar = (bkgj) fxqoVar.a();
         if (action == null) {
             if (Log.isLoggable("GCM", 4)) {
                 Log.i("GCM", "Action not present in HeartbeatAlarm: null");
@@ -261,7 +261,7 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
                 this.r = false;
                 return;
             } else if (c == 4) {
-                bibuVar.n(new Runnable() { // from class: bicv
+                bkgjVar.n(new Runnable() { // from class: bkhk
                     @Override // java.lang.Runnable
                     public final void run() {
                         HeartbeatChimeraAlarm.this.g();
@@ -276,20 +276,20 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
                 return;
             }
         }
-        bibuVar.n(new Runnable() { // from class: bicu
+        bkgjVar.n(new Runnable() { // from class: bkhj
             @Override // java.lang.Runnable
             public final void run() {
                 long elapsedRealtime = SystemClock.elapsedRealtime();
                 HeartbeatChimeraAlarm heartbeatChimeraAlarm = HeartbeatChimeraAlarm.this;
                 long j = elapsedRealtime - heartbeatChimeraAlarm.c;
-                long f = fojf.f();
-                bibu bibuVar2 = (bibu) heartbeatChimeraAlarm.e.a();
+                long f = frbw.f();
+                bkgj bkgjVar2 = (bkgj) heartbeatChimeraAlarm.e.a();
                 if (f < 0 || heartbeatChimeraAlarm.m()) {
                     return;
                 }
                 if (j >= f || heartbeatChimeraAlarm.c == 0) {
                     heartbeatChimeraAlarm.c = SystemClock.elapsedRealtime();
-                    if (bibuVar2.s()) {
+                    if (bkgjVar2.s()) {
                         heartbeatChimeraAlarm.i(false);
                     } else {
                         heartbeatChimeraAlarm.s.g();
@@ -300,14 +300,14 @@ public class HeartbeatChimeraAlarm extends TracingBroadcastReceiver {
     }
 
     public final boolean l() {
-        if (fojf.h()) {
-            return ((bibu) this.e.a()).v();
+        if (frbw.h()) {
+            return ((bkgj) this.e.a()).v();
         }
         return false;
     }
 
     public final boolean m() {
-        bibu bibuVar = (bibu) this.e.a();
-        return (fojc.r() && bibuVar.v()) ? SystemClock.elapsedRealtime() - this.m < fojc.i() + fojc.a.a().U() : bibuVar.r();
+        bkgj bkgjVar = (bkgj) this.e.a();
+        return (frbt.q() && bkgjVar.v()) ? SystemClock.elapsedRealtime() - this.m < frbt.i() + frbt.a.lK().V() : bkgjVar.r();
     }
 }

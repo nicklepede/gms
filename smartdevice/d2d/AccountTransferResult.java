@@ -5,19 +5,19 @@ import android.os.Parcelable;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import com.google.android.gms.smartdevice.utils.BinarySerializableFastSafeParcelableJson;
 import defpackage.a;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.ashs;
-import defpackage.dcvk;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.aulm;
+import defpackage.dfgp;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class AccountTransferResult extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new dcvk();
+    public static final Parcelable.Creator CREATOR = new dfgp();
     private static final HashMap f;
     public final Set a;
     public BootstrapAccount b;
@@ -42,7 +42,7 @@ public class AccountTransferResult extends BinarySerializableFastSafeParcelableJ
         this.e = supervisedAccountInfo;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
@@ -60,32 +60,32 @@ public class AccountTransferResult extends BinarySerializableFastSafeParcelableJ
         throw new IllegalStateException(a.j(i, "Unknown SafeParcelable id="));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return f;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
-    public final void gw(FastJsonResponse$Field fastJsonResponse$Field, String str, ashs ashsVar) {
+    @Override // defpackage.aulm
+    public final void gL(FastJsonResponse$Field fastJsonResponse$Field, String str, aulm aulmVar) {
         int i = fastJsonResponse$Field.g;
         if (i == 2) {
-            this.b = (BootstrapAccount) ashsVar;
+            this.b = (BootstrapAccount) aulmVar;
         } else {
             if (i != 5) {
                 throw new IllegalArgumentException(String.format("Field with id=%d is not known to be a concrete type.", Integer.valueOf(i)));
             }
-            this.e = (SupervisedAccountInfo) ashsVar;
+            this.e = (SupervisedAccountInfo) aulmVar;
         }
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
         int i2 = fastJsonResponse$Field.g;
         if (i2 == 3) {
             this.c = i;
@@ -101,20 +101,20 @@ public class AccountTransferResult extends BinarySerializableFastSafeParcelableJ
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(2)) {
-            arxc.t(parcel, 2, this.b, i, true);
+            atzr.t(parcel, 2, this.b, i, true);
         }
         if (set.contains(3)) {
-            arxc.o(parcel, 3, this.c);
+            atzr.o(parcel, 3, this.c);
         }
         if (set.contains(4)) {
-            arxc.o(parcel, 4, this.d);
+            atzr.o(parcel, 4, this.d);
         }
         if (set.contains(5)) {
-            arxc.t(parcel, 5, this.e, i, true);
+            atzr.t(parcel, 5, this.e, i, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public AccountTransferResult() {
@@ -124,7 +124,7 @@ public class AccountTransferResult extends BinarySerializableFastSafeParcelableJ
     public AccountTransferResult(BootstrapAccount bootstrapAccount, int i) {
         HashSet hashSet = new HashSet();
         this.a = hashSet;
-        arwm.s(bootstrapAccount);
+        atzb.s(bootstrapAccount);
         this.b = bootstrapAccount;
         this.c = i;
         hashSet.add(3);

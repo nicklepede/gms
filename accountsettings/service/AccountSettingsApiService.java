@@ -1,15 +1,15 @@
 package com.google.android.gms.accountsettings.service;
 
 import com.google.android.gms.common.internal.GetServiceRequest;
-import defpackage.bxgd;
-import defpackage.bxgj;
-import defpackage.bxgo;
-import defpackage.fvbo;
-import defpackage.rtl;
+import defpackage.bzot;
+import defpackage.bzoz;
+import defpackage.bzpe;
+import defpackage.fxxm;
+import defpackage.tmu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class AccountSettingsApiService extends bxgd {
+public final class AccountSettingsApiService extends bzot {
     /* JADX WARN: Illegal instructions before constructor call */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -18,14 +18,14 @@ public final class AccountSettingsApiService extends bxgd {
     public AccountSettingsApiService() {
         /*
             r7 = this;
-            fuwy r3 = defpackage.fuwy.a
-            fjue r0 = defpackage.fjue.a
-            fjuf r0 = r0.a()
-            femw r0 = r0.t()
-            fedh r0 = r0.b
+            fxsw r3 = defpackage.fxsw.a
+            fmkf r0 = defpackage.fmkf.a
+            fmkg r0 = r0.lK()
+            fhbp r0 = r0.t()
+            fgsa r0 = r0.b
             java.lang.String r1 = "getElementList(...)"
-            defpackage.fvbo.e(r0, r1)
-            eiuu r6 = defpackage.eitd.c(r0)
+            defpackage.fxxm.e(r0, r1)
+            elhz r6 = defpackage.elgi.c(r0)
             r4 = 0
             r5 = 9
             r1 = 109(0x6d, float:1.53E-43)
@@ -37,12 +37,12 @@ public final class AccountSettingsApiService extends bxgd {
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.accountsettings.service.AccountSettingsApiService.<init>():void");
     }
 
-    @Override // defpackage.bxgd
-    public final void a(bxgj bxgjVar, GetServiceRequest getServiceRequest) {
-        fvbo.f(getServiceRequest, "request");
-        bxgo l = l();
+    @Override // defpackage.bzot
+    public final void a(bzoz bzozVar, GetServiceRequest getServiceRequest) {
+        fxxm.f(getServiceRequest, "request");
+        bzpe l = l();
         String str = getServiceRequest.f;
-        fvbo.e(str, "getCallingPackage(...)");
-        bxgjVar.c(new rtl(this, l, str, getServiceRequest.p));
+        fxxm.e(str, "getCallingPackage(...)");
+        bzozVar.c(new tmu(this, l, str, getServiceRequest.p));
     }
 }

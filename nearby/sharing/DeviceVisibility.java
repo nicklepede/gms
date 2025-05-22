@@ -3,14 +3,14 @@ package com.google.android.gms.nearby.sharing;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.clof;
-import defpackage.clog;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cnwn;
+import defpackage.cnwo;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class DeviceVisibility extends AbstractSafeParcelable implements Cloneable {
     public static final Parcelable.Creator CREATOR;
@@ -27,22 +27,22 @@ public class DeviceVisibility extends AbstractSafeParcelable implements Cloneabl
     public final String k;
 
     static {
-        clof clofVar = new clof();
-        clofVar.a = 3;
-        a = clofVar.a();
-        clof clofVar2 = new clof();
-        clofVar2.a = 1;
-        b = clofVar2.a();
-        clof clofVar3 = new clof();
-        clofVar3.a = 2;
-        c = clofVar3.a();
-        clof clofVar4 = new clof();
-        clofVar4.a = 4;
-        d = clofVar4.a();
-        clof clofVar5 = new clof();
-        clofVar5.a = 0;
-        e = clofVar5.a();
-        CREATOR = new clog();
+        cnwn cnwnVar = new cnwn();
+        cnwnVar.a = 3;
+        a = cnwnVar.a();
+        cnwn cnwnVar2 = new cnwn();
+        cnwnVar2.a = 1;
+        b = cnwnVar2.a();
+        cnwn cnwnVar3 = new cnwn();
+        cnwnVar3.a = 2;
+        c = cnwnVar3.a();
+        cnwn cnwnVar4 = new cnwn();
+        cnwnVar4.a = 4;
+        d = cnwnVar4.a();
+        cnwn cnwnVar5 = new cnwn();
+        cnwnVar5.a = 0;
+        e = cnwnVar5.a();
+        CREATOR = new cnwo();
     }
 
     public DeviceVisibility(int i, int i2, int i3, long j, boolean z, String str) {
@@ -54,15 +54,15 @@ public class DeviceVisibility extends AbstractSafeParcelable implements Cloneabl
         this.k = str;
     }
 
-    public final clof a() {
-        clof clofVar = new clof();
-        clofVar.a = this.f;
-        clofVar.b = this.g;
-        clofVar.c = this.h;
-        clofVar.d = this.i;
-        clofVar.e = this.j;
-        clofVar.f = this.k;
-        return clofVar;
+    public final cnwn a() {
+        cnwn cnwnVar = new cnwn();
+        cnwnVar.a = this.f;
+        cnwnVar.b = this.g;
+        cnwnVar.c = this.h;
+        cnwnVar.d = this.i;
+        cnwnVar.e = this.j;
+        cnwnVar.f = this.k;
+        return cnwnVar;
     }
 
     /* renamed from: b, reason: merged with bridge method [inline-methods] */
@@ -77,11 +77,11 @@ public class DeviceVisibility extends AbstractSafeParcelable implements Cloneabl
     public final boolean equals(Object obj) {
         if (obj instanceof DeviceVisibility) {
             DeviceVisibility deviceVisibility = (DeviceVisibility) obj;
-            if (arwb.b(Integer.valueOf(this.f), Integer.valueOf(deviceVisibility.f))) {
-                if (arwb.b(Integer.valueOf(this.g), Integer.valueOf(deviceVisibility.g))) {
-                    if (arwb.b(Integer.valueOf(this.h), Integer.valueOf(deviceVisibility.h))) {
-                        if (arwb.b(Long.valueOf(this.i), Long.valueOf(deviceVisibility.i))) {
-                            if (arwb.b(Boolean.valueOf(this.j), Boolean.valueOf(deviceVisibility.j)) && arwb.b(this.k, deviceVisibility.k)) {
+            if (atyq.b(Integer.valueOf(this.f), Integer.valueOf(deviceVisibility.f))) {
+                if (atyq.b(Integer.valueOf(this.g), Integer.valueOf(deviceVisibility.g))) {
+                    if (atyq.b(Integer.valueOf(this.h), Integer.valueOf(deviceVisibility.h))) {
+                        if (atyq.b(Long.valueOf(this.i), Long.valueOf(deviceVisibility.i))) {
+                            if (atyq.b(Boolean.valueOf(this.j), Boolean.valueOf(deviceVisibility.j)) && atyq.b(this.k, deviceVisibility.k)) {
                                 return true;
                             }
                         }
@@ -103,13 +103,13 @@ public class DeviceVisibility extends AbstractSafeParcelable implements Cloneabl
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.f;
-        int a2 = arxc.a(parcel);
-        arxc.o(parcel, 1, i2);
-        arxc.o(parcel, 2, this.g);
-        arxc.o(parcel, 3, this.h);
-        arxc.q(parcel, 4, this.i);
-        arxc.e(parcel, 5, this.j);
-        arxc.v(parcel, 6, this.k, false);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.o(parcel, 1, i2);
+        atzr.o(parcel, 2, this.g);
+        atzr.o(parcel, 3, this.h);
+        atzr.q(parcel, 4, this.i);
+        atzr.e(parcel, 5, this.j);
+        atzr.v(parcel, 6, this.k, false);
+        atzr.c(parcel, a2);
     }
 }

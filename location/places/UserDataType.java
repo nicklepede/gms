@@ -3,12 +3,12 @@ package com.google.android.gms.location.places;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.asnw;
-import defpackage.cafp;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.aurq;
+import defpackage.ccog;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class UserDataType extends AbstractSafeParcelable {
     public static final Parcelable.Creator CREATOR;
@@ -25,12 +25,12 @@ public final class UserDataType extends AbstractSafeParcelable {
         b = userDataType2;
         UserDataType userDataType3 = new UserDataType("here_content", 7);
         c = userDataType3;
-        asnw.j(userDataType, userDataType2, userDataType3);
-        CREATOR = new cafp();
+        aurq.j(userDataType, userDataType2, userDataType3);
+        CREATOR = new ccog();
     }
 
     public UserDataType(String str, int i) {
-        arwm.q(str);
+        atzb.q(str);
         this.d = str;
         this.e = i;
     }
@@ -57,9 +57,9 @@ public final class UserDataType extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.d;
-        int a2 = arxc.a(parcel);
-        arxc.v(parcel, 1, str, false);
-        arxc.o(parcel, 2, this.e);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.v(parcel, 1, str, false);
+        atzr.o(parcel, 2, this.e);
+        atzr.c(parcel, a2);
     }
 }

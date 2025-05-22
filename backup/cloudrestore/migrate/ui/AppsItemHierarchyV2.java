@@ -6,44 +6,44 @@ import android.view.View;
 import android.widget.ImageView;
 import com.google.android.gms.R;
 import com.google.android.setupdesign.items.AbstractItemHierarchy;
-import defpackage.ahoz;
-import defpackage.ahpk;
-import defpackage.ahpp;
-import defpackage.arss;
-import defpackage.bxmw;
-import defpackage.bybl;
-import defpackage.bybm;
-import defpackage.byci;
-import defpackage.bygo;
-import defpackage.edhg;
-import defpackage.edhl;
-import defpackage.flkv;
+import defpackage.ajpp;
+import defpackage.ajqa;
+import defpackage.ajqf;
+import defpackage.atvh;
+import defpackage.bzvm;
+import defpackage.cakd;
+import defpackage.cake;
+import defpackage.cala;
+import defpackage.capg;
+import defpackage.efub;
+import defpackage.efug;
+import defpackage.focf;
 import java.util.ArrayList;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class AppsItemHierarchyV2 extends AbstractItemHierarchy {
-    public ahoz a;
+    public ajpp a;
     public final List b;
-    public final ahpp c;
+    public final ajqf c;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class AppItem extends CompoundButtonItem {
-        public final ahpk a;
-        private final ahpp d;
+        public final ajqa a;
+        private final ajqf d;
 
-        public AppItem(ahpk ahpkVar, boolean z, ahpp ahppVar) {
-            this.d = ahppVar;
+        public AppItem(ajqa ajqaVar, boolean z, ajqf ajqfVar) {
+            this.d = ajqfVar;
             d(z);
             this.e = View.generateViewId();
-            F(ahpkVar.c);
-            if (flkv.a.a().g()) {
-                E(ahpkVar.h.name);
+            F(ajqaVar.c);
+            if (focf.a.lK().g()) {
+                E(ajqaVar.h.name);
             } else {
-                E(ahpkVar.d);
+                E(ajqaVar.d);
             }
-            this.a = ahpkVar;
+            this.a = ajqaVar;
         }
 
         @Override // com.google.android.gms.backup.cloudrestore.migrate.ui.CompoundButtonItem, com.google.android.setupdesign.items.Item
@@ -51,21 +51,21 @@ public class AppsItemHierarchyV2 extends AbstractItemHierarchy {
             return R.layout.apps_item_detailed_v2_glide;
         }
 
-        @Override // com.google.android.gms.backup.cloudrestore.migrate.ui.CompoundButtonItem, com.google.android.setupdesign.items.Item, defpackage.edhg
+        @Override // com.google.android.gms.backup.cloudrestore.migrate.ui.CompoundButtonItem, com.google.android.setupdesign.items.Item, defpackage.efub
         public final void b(View view) {
             super.b(view);
-            if (flkv.a.a().h()) {
+            if (focf.a.lK().h()) {
                 View findViewById = view.findViewById(R.id.sud_items_icon_container);
                 findViewById.setVisibility(0);
-                ahpp ahppVar = this.d;
+                ajqf ajqfVar = this.d;
                 String str = this.a.i;
-                if (str != null && arss.b(str)) {
-                    str = ahppVar.a.a(str);
-                    if (ahppVar.b) {
+                if (str != null && atvh.b(str)) {
+                    str = ajqfVar.a.a(str);
+                    if (ajqfVar.b) {
                         str = String.valueOf(str).concat("-rw");
                     }
                 }
-                bygo.b(findViewById).a().a(byci.e(str, bxmw.b, bybm.a, bybl.a)).c((ImageView) view.findViewById(R.id.sud_items_icon));
+                capg.b(findViewById).a().a(cala.e(str, bzvm.b, cake.a, cakd.a)).c((ImageView) view.findViewById(R.id.sud_items_icon));
             }
         }
     }
@@ -74,24 +74,24 @@ public class AppsItemHierarchyV2 extends AbstractItemHierarchy {
         super(context, attributeSet);
         this.b = new ArrayList();
         int dimensionPixelSize = context.getResources().getDimensionPixelSize(R.dimen.app_icon_size);
-        ahpp ahppVar = new ahpp();
-        this.c = ahppVar;
-        ahppVar.a(dimensionPixelSize);
-        ahppVar.b();
+        ajqf ajqfVar = new ajqf();
+        this.c = ajqfVar;
+        ajqfVar.a(dimensionPixelSize);
+        ajqfVar.b();
     }
 
-    @Override // defpackage.edhl
-    public final int gO() {
+    @Override // defpackage.efug
+    public final int he() {
         return this.b.size();
     }
 
-    @Override // defpackage.edhl
-    public final edhg gR(int i) {
-        return (edhg) this.b.get(i);
+    @Override // defpackage.efug
+    public final efub hh(int i) {
+        return (efub) this.b.get(i);
     }
 
-    @Override // defpackage.edhl
-    public final edhl jy(int i) {
+    @Override // defpackage.efug
+    public final efug jO(int i) {
         if (i == this.e) {
             return this;
         }

@@ -3,33 +3,33 @@ package com.google.android.gms.backup.common.testingflows;
 import android.content.Intent;
 import android.provider.Settings;
 import com.google.android.chimera.IntentOperation;
-import defpackage.ahpw;
-import defpackage.ahwd;
-import defpackage.aibx;
-import defpackage.arxo;
-import defpackage.eike;
-import defpackage.flov;
+import defpackage.ajqm;
+import defpackage.ajwt;
+import defpackage.akcn;
+import defpackage.auad;
+import defpackage.ekxj;
+import defpackage.fogf;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class TestingFlowsSettingsResetterIntentOperation extends IntentOperation {
-    private static final arxo a = ahwd.a("TestingFlowsSettingsResetterIntentOperation");
+    private static final auad a = ajwt.a("TestingFlowsSettingsResetterIntentOperation");
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        flov.e();
-        if (flov.d()) {
+        fogf.e();
+        if (fogf.d()) {
             String action = intent.getAction();
-            eike.e(action);
+            ekxj.e(action);
             if (!action.equals("android.intent.action.BOOT_COMPLETED")) {
                 a.m("Received unexpected intent: %s", action);
                 return;
             }
-            if (ahpw.a.h(this)) {
+            if (ajqm.a.h(this)) {
                 a.h("B&R testing flows are enabled, resetting to disabled", new Object[0]);
                 try {
                     Settings.Secure.putInt(getContentResolver(), "backup_enable_testing_flows", 0);
-                    aibx.i(this);
+                    akcn.k(this);
                 } catch (IllegalArgumentException e) {
                     a.g("Invalid argument for secure setting backup_enable_testing_flows", e, new Object[0]);
                 } catch (SecurityException e2) {

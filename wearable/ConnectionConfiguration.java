@@ -4,16 +4,16 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.djjs;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dlvl;
 import java.util.Arrays;
 import java.util.List;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ConnectionConfiguration extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new djjs();
+    public static final Parcelable.Creator CREATOR = new dlvl();
     public final String a;
     public final String b;
     public final int c;
@@ -61,7 +61,7 @@ public class ConnectionConfiguration extends AbstractSafeParcelable implements R
             return false;
         }
         ConnectionConfiguration connectionConfiguration = (ConnectionConfiguration) obj;
-        return arwb.b(this.a, connectionConfiguration.a) && arwb.b(this.b, connectionConfiguration.b) && arwb.b(Integer.valueOf(this.c), Integer.valueOf(connectionConfiguration.c)) && arwb.b(Integer.valueOf(this.d), Integer.valueOf(connectionConfiguration.d)) && arwb.b(Boolean.valueOf(this.e), Boolean.valueOf(connectionConfiguration.e)) && arwb.b(Boolean.valueOf(this.h), Boolean.valueOf(connectionConfiguration.h)) && arwb.b(Boolean.valueOf(this.m), Boolean.valueOf(connectionConfiguration.m)) && arwb.b(Boolean.valueOf(this.n), Boolean.valueOf(connectionConfiguration.n));
+        return atyq.b(this.a, connectionConfiguration.a) && atyq.b(this.b, connectionConfiguration.b) && atyq.b(Integer.valueOf(this.c), Integer.valueOf(connectionConfiguration.c)) && atyq.b(Integer.valueOf(this.d), Integer.valueOf(connectionConfiguration.d)) && atyq.b(Boolean.valueOf(this.e), Boolean.valueOf(connectionConfiguration.e)) && atyq.b(Boolean.valueOf(this.h), Boolean.valueOf(connectionConfiguration.h)) && atyq.b(Boolean.valueOf(this.m), Boolean.valueOf(connectionConfiguration.m)) && atyq.b(Boolean.valueOf(this.n), Boolean.valueOf(connectionConfiguration.n));
     }
 
     public final int hashCode() {
@@ -75,26 +75,26 @@ public class ConnectionConfiguration extends AbstractSafeParcelable implements R
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.o(parcel, 4, this.c);
-        arxc.o(parcel, 5, this.d);
-        arxc.e(parcel, 6, this.e);
-        arxc.e(parcel, 7, this.f);
-        arxc.v(parcel, 8, this.g, false);
-        arxc.e(parcel, 9, this.h);
-        arxc.v(parcel, 10, this.i, false);
-        arxc.v(parcel, 11, this.j, false);
-        arxc.o(parcel, 12, this.k);
-        arxc.x(parcel, 13, this.l, false);
-        arxc.e(parcel, 14, this.m);
-        arxc.e(parcel, 15, this.n);
-        arxc.t(parcel, 16, this.o, i, false);
-        arxc.e(parcel, 17, this.p);
-        arxc.t(parcel, 18, this.q, i, false);
-        arxc.o(parcel, 19, this.r);
-        arxc.o(parcel, 20, this.s);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.o(parcel, 4, this.c);
+        atzr.o(parcel, 5, this.d);
+        atzr.e(parcel, 6, this.e);
+        atzr.e(parcel, 7, this.f);
+        atzr.v(parcel, 8, this.g, false);
+        atzr.e(parcel, 9, this.h);
+        atzr.v(parcel, 10, this.i, false);
+        atzr.v(parcel, 11, this.j, false);
+        atzr.o(parcel, 12, this.k);
+        atzr.x(parcel, 13, this.l, false);
+        atzr.e(parcel, 14, this.m);
+        atzr.e(parcel, 15, this.n);
+        atzr.t(parcel, 16, this.o, i, false);
+        atzr.e(parcel, 17, this.p);
+        atzr.t(parcel, 18, this.q, i, false);
+        atzr.o(parcel, 19, this.r);
+        atzr.o(parcel, 20, this.s);
+        atzr.c(parcel, a);
     }
 }

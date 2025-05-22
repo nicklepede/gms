@@ -7,12 +7,12 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.trustagent.trustlet.device.ui.TrustedUiDevice;
-import defpackage.arxc;
-import defpackage.asej;
-import defpackage.asot;
-import defpackage.dgra;
-import defpackage.dgsw;
-import defpackage.dgsx;
+import defpackage.atzr;
+import defpackage.auid;
+import defpackage.ausn;
+import defpackage.djcf;
+import defpackage.djeb;
+import defpackage.djec;
 import j$.util.Collection;
 import j$.util.Objects;
 import j$.util.Optional;
@@ -22,19 +22,19 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class TrustedUiDevice extends AbstractSafeParcelable implements ReflectedParcelable {
     public final List b;
     public final String c;
     public final int d;
-    public static final Parcelable.Creator CREATOR = new dgsw();
+    public static final Parcelable.Creator CREATOR = new djeb();
     private static final ClassLoader e = TrustedUiDevice.class.getClassLoader();
-    public static final asot a = asot.b("TrustAgent", asej.TRUSTAGENT);
+    public static final ausn a = ausn.b("TrustAgent", auid.TRUSTAGENT);
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class DeviceReference extends AbstractSafeParcelable implements ReflectedParcelable {
-        public static final Parcelable.Creator CREATOR = new dgra();
+        public static final Parcelable.Creator CREATOR = new djcf();
         public final String a;
         public final BluetoothDevice b;
 
@@ -65,10 +65,10 @@ public class TrustedUiDevice extends AbstractSafeParcelable implements Reflected
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             String str = this.a;
-            int a = arxc.a(parcel);
-            arxc.v(parcel, 1, str, false);
-            arxc.t(parcel, 2, this.b, i, false);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.v(parcel, 1, str, false);
+            atzr.t(parcel, 2, this.b, i, false);
+            atzr.c(parcel, a);
         }
     }
 
@@ -90,18 +90,18 @@ public class TrustedUiDevice extends AbstractSafeParcelable implements Reflected
     }
 
     public final String b() {
-        return dgsx.d(((DeviceReference) Objects.requireNonNull((DeviceReference) this.b.get(0))).a);
+        return djec.d(((DeviceReference) Objects.requireNonNull((DeviceReference) this.b.get(0))).a);
     }
 
     public final boolean c() {
-        return Collection.EL.stream(this.b).allMatch(new Predicate() { // from class: dgsr
+        return Collection.EL.stream(this.b).allMatch(new Predicate() { // from class: djdw
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return Predicate$CC.$default$and(this, predicate);
             }
 
             @Override // java.util.function.Predicate
             /* renamed from: negate */
-            public final /* synthetic */ Predicate mo463negate() {
+            public final /* synthetic */ Predicate mo478negate() {
                 return Predicate$CC.$default$negate(this);
             }
 
@@ -113,16 +113,16 @@ public class TrustedUiDevice extends AbstractSafeParcelable implements Reflected
             @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
                 Parcelable.Creator creator = TrustedUiDevice.CREATOR;
-                return ((Boolean) ((TrustedUiDevice.DeviceReference) obj).a().map(new Function() { // from class: dgsv
+                return ((Boolean) ((TrustedUiDevice.DeviceReference) obj).a().map(new Function() { // from class: djea
                     @Override // java.util.function.Function
                     /* renamed from: andThen */
-                    public final /* synthetic */ Function mo464andThen(Function function) {
+                    public final /* synthetic */ Function mo479andThen(Function function) {
                         return Function$CC.$default$andThen(this, function);
                     }
 
                     @Override // java.util.function.Function
                     public final Object apply(Object obj2) {
-                        int i = dgsx.a;
+                        int i = djec.a;
                         return Boolean.valueOf(((BluetoothDevice) obj2).isConnected());
                     }
 
@@ -135,14 +135,14 @@ public class TrustedUiDevice extends AbstractSafeParcelable implements Reflected
     }
 
     public final boolean d() {
-        return Collection.EL.stream(this.b).allMatch(new Predicate() { // from class: dgsu
+        return Collection.EL.stream(this.b).allMatch(new Predicate() { // from class: djdz
             public final /* synthetic */ Predicate and(Predicate predicate) {
                 return Predicate$CC.$default$and(this, predicate);
             }
 
             @Override // java.util.function.Predicate
             /* renamed from: negate */
-            public final /* synthetic */ Predicate mo463negate() {
+            public final /* synthetic */ Predicate mo478negate() {
                 return Predicate$CC.$default$negate(this);
             }
 
@@ -154,16 +154,16 @@ public class TrustedUiDevice extends AbstractSafeParcelable implements Reflected
             @Override // java.util.function.Predicate
             public final boolean test(Object obj) {
                 Parcelable.Creator creator = TrustedUiDevice.CREATOR;
-                return ((Boolean) ((TrustedUiDevice.DeviceReference) obj).a().map(new Function() { // from class: dgsq
+                return ((Boolean) ((TrustedUiDevice.DeviceReference) obj).a().map(new Function() { // from class: djdv
                     @Override // java.util.function.Function
                     /* renamed from: andThen */
-                    public final /* synthetic */ Function mo464andThen(Function function) {
+                    public final /* synthetic */ Function mo479andThen(Function function) {
                         return Function$CC.$default$andThen(this, function);
                     }
 
                     @Override // java.util.function.Function
                     public final Object apply(Object obj2) {
-                        return Boolean.valueOf(dgsx.i((BluetoothDevice) obj2));
+                        return Boolean.valueOf(djec.i((BluetoothDevice) obj2));
                     }
 
                     public final /* synthetic */ Function compose(Function function) {
@@ -177,10 +177,10 @@ public class TrustedUiDevice extends AbstractSafeParcelable implements Reflected
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         List list = this.b;
-        int a2 = arxc.a(parcel);
-        arxc.y(parcel, 1, list, false);
-        arxc.v(parcel, 2, this.c, false);
-        arxc.o(parcel, 3, this.d);
-        arxc.c(parcel, a2);
+        int a2 = atzr.a(parcel);
+        atzr.y(parcel, 1, list, false);
+        atzr.v(parcel, 2, this.c, false);
+        atzr.o(parcel, 3, this.d);
+        atzr.c(parcel, a2);
     }
 }

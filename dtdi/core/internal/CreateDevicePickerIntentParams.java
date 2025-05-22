@@ -8,20 +8,20 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.dtdi.core.AnalyticsInfo;
 import com.google.android.gms.dtdi.core.WakeUpRequest;
 import com.google.android.gms.dtdi.discovery.DiscoveryParams;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.ayvs;
-import defpackage.aywg;
-import defpackage.aywh;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.bazm;
+import defpackage.bbaa;
+import defpackage.bbab;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class CreateDevicePickerIntentParams extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ayvs();
+    public static final Parcelable.Creator CREATOR = new bazm();
     public DiscoveryParams a;
     public long b;
-    public aywh c;
+    public bbab c;
     public WakeUpRequest d;
     public AnalyticsInfo e;
     public int f;
@@ -35,7 +35,7 @@ public final class CreateDevicePickerIntentParams extends AbstractSafeParcelable
         }
         if (obj instanceof CreateDevicePickerIntentParams) {
             CreateDevicePickerIntentParams createDevicePickerIntentParams = (CreateDevicePickerIntentParams) obj;
-            if (arwb.b(this.a, createDevicePickerIntentParams.a) && arwb.b(Long.valueOf(this.b), Long.valueOf(createDevicePickerIntentParams.b)) && arwb.b(this.c, createDevicePickerIntentParams.c) && arwb.b(this.d, createDevicePickerIntentParams.d) && arwb.b(this.e, createDevicePickerIntentParams.e) && arwb.b(Integer.valueOf(this.f), Integer.valueOf(createDevicePickerIntentParams.f))) {
+            if (atyq.b(this.a, createDevicePickerIntentParams.a) && atyq.b(Long.valueOf(this.b), Long.valueOf(createDevicePickerIntentParams.b)) && atyq.b(this.c, createDevicePickerIntentParams.c) && atyq.b(this.d, createDevicePickerIntentParams.d) && atyq.b(this.e, createDevicePickerIntentParams.e) && atyq.b(Integer.valueOf(this.f), Integer.valueOf(createDevicePickerIntentParams.f))) {
                 return true;
             }
         }
@@ -48,28 +48,28 @@ public final class CreateDevicePickerIntentParams extends AbstractSafeParcelable
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, this.a, i, false);
-        arxc.q(parcel, 2, this.b);
-        aywh aywhVar = this.c;
-        arxc.D(parcel, 3, aywhVar == null ? null : aywhVar.asBinder());
-        arxc.t(parcel, 4, this.d, i, false);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.o(parcel, 6, this.f);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, this.a, i, false);
+        atzr.q(parcel, 2, this.b);
+        bbab bbabVar = this.c;
+        atzr.D(parcel, 3, bbabVar == null ? null : bbabVar.asBinder());
+        atzr.t(parcel, 4, this.d, i, false);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.o(parcel, 6, this.f);
+        atzr.c(parcel, a);
     }
 
     public CreateDevicePickerIntentParams(DiscoveryParams discoveryParams, long j, IBinder iBinder, WakeUpRequest wakeUpRequest, AnalyticsInfo analyticsInfo, int i) {
-        aywh aywgVar;
+        bbab bbaaVar;
         if (iBinder == null) {
-            aywgVar = null;
+            bbaaVar = null;
         } else {
             IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.dtdi.core.internal.ICreateDevicePickerIntentCallback");
-            aywgVar = queryLocalInterface instanceof aywh ? (aywh) queryLocalInterface : new aywg(iBinder);
+            bbaaVar = queryLocalInterface instanceof bbab ? (bbab) queryLocalInterface : new bbaa(iBinder);
         }
         this.a = discoveryParams;
         this.b = j;
-        this.c = aywgVar;
+        this.c = bbaaVar;
         this.d = wakeUpRequest;
         this.e = analyticsInfo;
         this.f = i;

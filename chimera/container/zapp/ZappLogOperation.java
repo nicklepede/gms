@@ -7,14 +7,14 @@ import android.os.IInterface;
 import android.util.Log;
 import com.google.android.chimera.IntentOperation;
 import defpackage.a;
-import defpackage.fnfw;
-import defpackage.rmu;
-import defpackage.rmx;
-import defpackage.rnb;
+import defpackage.fpxv;
+import defpackage.tfy;
+import defpackage.tgb;
+import defpackage.tgf;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class ZappLogOperation extends IntentOperation {
     private static final Intent a = new Intent("com.google.android.finsky.BIND_PLAY_MODULE_SERVICE").setPackage("com.android.vending");
@@ -23,20 +23,20 @@ public class ZappLogOperation extends IntentOperation {
     public final void onHandleIntent(Intent intent) {
         ArrayList parcelableArrayListExtra = intent.getParcelableArrayListExtra("events");
         if (parcelableArrayListExtra != null) {
-            rmu rmuVar = null;
-            rmx rnbVar = fnfw.h() ? new rnb(null) : new rmx();
+            tfy tfyVar = null;
+            tgb tgfVar = fpxv.h() ? new tgf(null) : new tgb();
             try {
-                if (!bindService(a, rnbVar, 1)) {
+                if (!bindService(a, tgfVar, 1)) {
                     Log.e("ZappLogOperation", "Unable to bind to Phonesky");
                     return;
                 }
                 try {
-                    IBinder a2 = rnbVar.a();
+                    IBinder a2 = tgfVar.a();
                     if (a2 != null) {
                         IInterface queryLocalInterface = a2.queryLocalInterface("com.google.android.finsky.zapp.protocol.IPlayModuleService");
-                        rmuVar = queryLocalInterface instanceof rmu ? (rmu) queryLocalInterface : new rmu(a2);
+                        tfyVar = queryLocalInterface instanceof tfy ? (tfy) queryLocalInterface : new tfy(a2);
                     }
-                    if (rmuVar == null) {
+                    if (tfyVar == null) {
                         Log.e("ZappLogOperation", "Unable to connect to Phonesky");
                         try {
                             return;
@@ -47,29 +47,29 @@ public class ZappLogOperation extends IntentOperation {
                     try {
                         Iterator it = parcelableArrayListExtra.iterator();
                         while (it.hasNext()) {
-                            rmuVar.a(getPackageName(), (Bundle) it.next());
+                            tfyVar.a(getPackageName(), (Bundle) it.next());
                         }
                         try {
-                            unbindService(rnbVar);
+                            unbindService(tgfVar);
                         } catch (IllegalStateException unused2) {
                         }
                     } catch (Exception e) {
-                        Log.e("ZappLogOperation", a.aa(e, "onModuleEvent() failed: "));
+                        Log.e("ZappLogOperation", a.ab(e, "onModuleEvent() failed: "));
                         try {
-                            unbindService(rnbVar);
+                            unbindService(tgfVar);
                         } catch (IllegalStateException unused3) {
                         }
                     }
                 } catch (InterruptedException unused4) {
                     Thread.currentThread().interrupt();
                     try {
-                        unbindService(rnbVar);
+                        unbindService(tgfVar);
                     } catch (IllegalStateException unused5) {
                     }
                 }
             } finally {
                 try {
-                    unbindService(rnbVar);
+                    unbindService(tgfVar);
                 } catch (IllegalStateException unused6) {
                 }
             }

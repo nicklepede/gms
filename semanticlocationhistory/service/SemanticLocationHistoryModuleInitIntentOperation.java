@@ -15,262 +15,263 @@ import com.google.android.gms.semanticlocationhistory.settings.LocationHistoryAc
 import com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob;
 import com.google.android.gms.semanticlocationhistory.settings.SettingsSyncOneOffService;
 import com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService;
-import defpackage.anya;
-import defpackage.asej;
-import defpackage.asng;
-import defpackage.asot;
-import defpackage.bwth;
-import defpackage.byki;
-import defpackage.bykm;
-import defpackage.byko;
-import defpackage.bykv;
-import defpackage.bykx;
-import defpackage.cziy;
-import defpackage.czje;
-import defpackage.czlk;
-import defpackage.czlp;
-import defpackage.dahq;
-import defpackage.dbex;
-import defpackage.dbez;
-import defpackage.ejhf;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.fnck;
-import defpackage.frww;
-import defpackage.frxj;
-import defpackage.frxn;
-import defpackage.frxq;
+import defpackage.apzs;
+import defpackage.auid;
+import defpackage.aura;
+import defpackage.ausn;
+import defpackage.bzbx;
+import defpackage.cata;
+import defpackage.cate;
+import defpackage.catg;
+import defpackage.catn;
+import defpackage.catp;
+import defpackage.dbsw;
+import defpackage.dbtc;
+import defpackage.dbvg;
+import defpackage.dbvl;
+import defpackage.dcry;
+import defpackage.ddpf;
+import defpackage.ddph;
+import defpackage.eluo;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.fpuj;
+import defpackage.furq;
+import defpackage.fusd;
+import defpackage.fush;
+import defpackage.fusk;
 import java.io.IOException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class SemanticLocationHistoryModuleInitIntentOperation extends anya {
+public class SemanticLocationHistoryModuleInitIntentOperation extends apzs {
     public static final /* synthetic */ int a = 0;
-    private static final asot b = asot.c("LocationHistory", asej.SEMANTIC_LOCATION_HISTORY, "ModuleInit");
+    private static final ausn b = ausn.c("LocationHistory", auid.SEMANTIC_LOCATION_HISTORY, "ModuleInit");
 
-    @Override // defpackage.anya
+    @Override // defpackage.apzs
     protected final void b(Intent intent, int i) {
         Account a2;
-        if (!frxn.Q()) {
-            ((ejhf) ((ejhf) b.h()).ah((char) 10615)).x("Flag disabled. Module will not be initialized.");
+        if (!fush.Q()) {
+            ((eluo) ((eluo) b.h()).ai((char) 10621)).x("Flag disabled. Module will not be initialized.");
             return;
         }
         Context applicationContext = getApplicationContext();
-        if (frxn.Q() && (a2 = czlp.a(applicationContext, new czlk(new czje()))) != null) {
+        if (fush.Q() && (a2 = dbvl.a(applicationContext, new dbvg(new dbtc()))) != null) {
             String str = a2.name;
-            ensj.t(new dahq().f(str), new dbex(applicationContext, str), enre.a);
+            eqgc.t(new dcry().f(str), new ddpf(applicationContext, str), eqex.a);
         }
         String str2 = GellerCleanupService.a;
-        if (fnck.f()) {
-            byko bykoVar = new byko();
-            bykoVar.w(GellerCleanupService.a);
-            bykoVar.t("GellerCleanup");
-            bykoVar.a = bykv.j;
-            bykoVar.l(false);
-            bykoVar.v(2);
-            bykoVar.e();
-            bykoVar.j();
-            cziy.c(applicationContext, bykoVar.b());
+        if (fpuj.f()) {
+            catg catgVar = new catg();
+            catgVar.w(GellerCleanupService.a);
+            catgVar.t("GellerCleanup");
+            catgVar.a = catn.j;
+            catgVar.l(false);
+            catgVar.v(2);
+            catgVar.e();
+            catgVar.j();
+            dbsw.c(applicationContext, catgVar.b());
         } else {
-            bykm bykmVar = new bykm();
-            bykmVar.w(GellerCleanupService.a);
-            bykmVar.t("GellerCleanup");
-            bykmVar.j(byki.EVERY_DAY);
-            bykmVar.v(0);
-            bykmVar.r(true);
-            bykmVar.g(2);
-            bykmVar.f(1, 1);
-            cziy.b(applicationContext, bykmVar.b());
+            cate cateVar = new cate();
+            cateVar.w(GellerCleanupService.a);
+            cateVar.t("GellerCleanup");
+            cateVar.j(cata.EVERY_DAY);
+            cateVar.v(0);
+            cateVar.r(true);
+            cateVar.g(2);
+            cateVar.f(1, 1);
+            dbsw.b(applicationContext, cateVar.b());
         }
         if (LocationHistoryActiveProcessingService.d()) {
-            if (fnck.f()) {
-                byko bykoVar2 = new byko();
-                bykoVar2.w(LocationHistoryActiveProcessingService.a);
-                bykoVar2.t("LocationHistoryActiveProcessing");
-                bykoVar2.a = bykv.j;
-                bykoVar2.l(true);
-                bykoVar2.v(2);
-                cziy.c(applicationContext, bykoVar2.b());
+            if (fpuj.f()) {
+                catg catgVar2 = new catg();
+                catgVar2.w(LocationHistoryActiveProcessingService.a);
+                catgVar2.t("LocationHistoryActiveProcessing");
+                catgVar2.a = catn.j;
+                catgVar2.l(true);
+                catgVar2.v(2);
+                dbsw.c(applicationContext, catgVar2.b());
             } else {
-                bykm bykmVar2 = new bykm();
-                bykmVar2.w(LocationHistoryActiveProcessingService.a);
-                bykmVar2.t("LocationHistoryActiveProcessing");
-                bykmVar2.j(byki.EVERY_DAY);
-                bykmVar2.v(2);
-                bykmVar2.y(0, 1);
-                bykmVar2.x(0, 1);
-                bykmVar2.f(0, 1);
-                bykmVar2.t = bykx.a(0, (int) frxq.a.a().f(), (int) frxq.a.a().g());
-                cziy.b(applicationContext, bykmVar2.b());
+                cate cateVar2 = new cate();
+                cateVar2.w(LocationHistoryActiveProcessingService.a);
+                cateVar2.t("LocationHistoryActiveProcessing");
+                cateVar2.j(cata.EVERY_DAY);
+                cateVar2.v(2);
+                cateVar2.y(0, 1);
+                cateVar2.x(0, 1);
+                cateVar2.f(0, 1);
+                fusk fuskVar = fusk.a;
+                cateVar2.t = catp.a(0, (int) fuskVar.lK().e(), (int) fuskVar.lK().f());
+                dbsw.b(applicationContext, cateVar2.b());
             }
         }
-        if (fnck.f()) {
-            asot asotVar = SettingsSyncService.a;
-            byko bykoVar3 = new byko();
-            bykoVar3.w(SettingsSyncService.b);
-            bykoVar3.t("OdlhSettingsSyncTask");
-            bykoVar3.m((int) frxq.a.a().j());
-            bykoVar3.l(true);
-            bykoVar3.v(2);
-            cziy.c(applicationContext, bykoVar3.b());
+        if (fpuj.f()) {
+            ausn ausnVar = SettingsSyncService.a;
+            catg catgVar3 = new catg();
+            catgVar3.w(SettingsSyncService.b);
+            catgVar3.t("OdlhSettingsSyncTask");
+            catgVar3.m((int) fusk.a.lK().i());
+            catgVar3.l(true);
+            catgVar3.v(2);
+            dbsw.c(applicationContext, catgVar3.b());
         } else {
-            asot asotVar2 = SettingsSyncService.a;
-            bykm bykmVar3 = new bykm();
-            bykmVar3.w(SettingsSyncService.b);
-            bykmVar3.t("OdlhSettingsSyncTask");
-            bykmVar3.j(byki.a(frxq.a.a().l() * 3600));
-            bykmVar3.v(true != frxq.p() ? 1 : 2);
-            bykmVar3.y(0, 1);
-            bykmVar3.x(0, 1);
-            bykmVar3.f(0, 1);
-            frxq frxqVar = frxq.a;
-            bykmVar3.t = bykx.a(0, (int) frxqVar.a().p(), (int) frxqVar.a().q());
-            cziy.b(applicationContext, bykmVar3.b());
+            ausn ausnVar2 = SettingsSyncService.a;
+            cate cateVar3 = new cate();
+            cateVar3.w(SettingsSyncService.b);
+            cateVar3.t("OdlhSettingsSyncTask");
+            fusk fuskVar2 = fusk.a;
+            cateVar3.j(cata.a(fuskVar2.lK().k() * 3600));
+            cateVar3.v(true != fusk.n() ? 1 : 2);
+            cateVar3.y(0, 1);
+            cateVar3.x(0, 1);
+            cateVar3.f(0, 1);
+            cateVar3.t = catp.a(0, (int) fuskVar2.lK().o(), (int) fuskVar2.lK().p());
+            dbsw.b(applicationContext, cateVar3.b());
         }
-        if (fnck.f()) {
-            asot asotVar3 = OdlhTombstonesCleanupJob.a;
-            byko bykoVar4 = new byko();
-            bykoVar4.w(OdlhTombstonesCleanupJob.b);
-            bykoVar4.t("OdlhTombstonesCleanupJob");
-            bykoVar4.a = bykv.j;
-            bykoVar4.l(false);
-            bykoVar4.v(2);
-            cziy.c(applicationContext, bykoVar4.b());
+        if (fpuj.f()) {
+            ausn ausnVar3 = OdlhTombstonesCleanupJob.a;
+            catg catgVar4 = new catg();
+            catgVar4.w(OdlhTombstonesCleanupJob.b);
+            catgVar4.t("OdlhTombstonesCleanupJob");
+            catgVar4.a = catn.j;
+            catgVar4.l(false);
+            catgVar4.v(2);
+            dbsw.c(applicationContext, catgVar4.b());
         } else {
-            asot asotVar4 = OdlhTombstonesCleanupJob.a;
-            bykm bykmVar4 = new bykm();
-            bykmVar4.w(OdlhTombstonesCleanupJob.b);
-            bykmVar4.t("OdlhTombstonesCleanupJob");
-            bykmVar4.j(byki.EVERY_DAY);
-            bykmVar4.v(true != frxn.X() ? 1 : 2);
-            bykmVar4.y(0, 1);
-            bykmVar4.x(0, 1);
-            bykmVar4.f(0, 1);
-            cziy.b(applicationContext, bykmVar4.b());
+            ausn ausnVar4 = OdlhTombstonesCleanupJob.a;
+            cate cateVar4 = new cate();
+            cateVar4.w(OdlhTombstonesCleanupJob.b);
+            cateVar4.t("OdlhTombstonesCleanupJob");
+            cateVar4.j(cata.EVERY_DAY);
+            cateVar4.v(true != fush.Y() ? 1 : 2);
+            cateVar4.y(0, 1);
+            cateVar4.x(0, 1);
+            cateVar4.f(0, 1);
+            dbsw.b(applicationContext, cateVar4.b());
         }
-        if (fnck.f()) {
-            asot asotVar5 = OdlhDatabaseCleanupJob.a;
-            byko bykoVar5 = new byko();
-            bykoVar5.w(OdlhDatabaseCleanupJob.b);
-            bykoVar5.t("OdlhDatabaseCleanup");
-            bykoVar5.a = bykv.j;
-            bykoVar5.l(false);
-            bykoVar5.v(2);
-            cziy.c(applicationContext, bykoVar5.b());
+        if (fpuj.f()) {
+            ausn ausnVar5 = OdlhDatabaseCleanupJob.a;
+            catg catgVar5 = new catg();
+            catgVar5.w(OdlhDatabaseCleanupJob.b);
+            catgVar5.t("OdlhDatabaseCleanup");
+            catgVar5.a = catn.j;
+            catgVar5.l(false);
+            catgVar5.v(2);
+            dbsw.c(applicationContext, catgVar5.b());
         } else {
-            asot asotVar6 = OdlhDatabaseCleanupJob.a;
-            bykm bykmVar5 = new bykm();
-            bykmVar5.w(OdlhDatabaseCleanupJob.b);
-            bykmVar5.t("OdlhDatabaseCleanup");
-            bykmVar5.j(byki.EVERY_DAY);
-            bykmVar5.v(true != frxn.X() ? 1 : 2);
-            bykmVar5.x(0, 1);
-            cziy.b(applicationContext, bykmVar5.b());
+            ausn ausnVar6 = OdlhDatabaseCleanupJob.a;
+            cate cateVar5 = new cate();
+            cateVar5.w(OdlhDatabaseCleanupJob.b);
+            cateVar5.t("OdlhDatabaseCleanup");
+            cateVar5.j(cata.EVERY_DAY);
+            cateVar5.v(true != fush.Y() ? 1 : 2);
+            cateVar5.x(0, 1);
+            dbsw.b(applicationContext, cateVar5.b());
         }
         String str3 = EditMergeJob.a;
-        if (fnck.f()) {
-            byko bykoVar6 = new byko();
-            bykoVar6.w(EditMergeJob.a);
-            bykoVar6.t("EditMergeJob");
-            bykoVar6.a = bykv.j;
-            bykoVar6.l(false);
-            bykoVar6.v(2);
-            cziy.c(applicationContext, bykoVar6.b());
+        if (fpuj.f()) {
+            catg catgVar6 = new catg();
+            catgVar6.w(EditMergeJob.a);
+            catgVar6.t("EditMergeJob");
+            catgVar6.a = catn.j;
+            catgVar6.l(false);
+            catgVar6.v(2);
+            dbsw.c(applicationContext, catgVar6.b());
         } else {
-            bykm bykmVar6 = new bykm();
-            bykmVar6.w(EditMergeJob.a);
-            bykmVar6.t("EditMergeJob");
-            bykmVar6.j(byki.EVERY_DAY);
-            bykmVar6.v(true != frxn.X() ? 1 : 2);
-            bykmVar6.g(2);
-            bykmVar6.f(0, 1);
-            cziy.b(applicationContext, bykmVar6.b());
+            cate cateVar6 = new cate();
+            cateVar6.w(EditMergeJob.a);
+            cateVar6.t("EditMergeJob");
+            cateVar6.j(cata.EVERY_DAY);
+            cateVar6.v(true != fush.Y() ? 1 : 2);
+            cateVar6.g(2);
+            cateVar6.f(0, 1);
+            dbsw.b(applicationContext, cateVar6.b());
         }
-        asot asotVar7 = OdlhRemovedAccountsCleanupJob.a;
-        if (frxn.M()) {
-            bykm bykmVar7 = new bykm();
-            bykmVar7.w(OdlhRemovedAccountsCleanupJob.b);
-            bykmVar7.t("OdlhRemovedAccountsCleanup");
-            bykmVar7.j(byki.EVERY_14_DAYS);
-            bykmVar7.v(true != frxn.X() ? 1 : 2);
-            bykmVar7.r(true);
-            cziy.b(applicationContext, bykmVar7.b());
+        ausn ausnVar7 = OdlhRemovedAccountsCleanupJob.a;
+        if (fush.M()) {
+            cate cateVar7 = new cate();
+            cateVar7.w(OdlhRemovedAccountsCleanupJob.b);
+            cateVar7.t("OdlhRemovedAccountsCleanup");
+            cateVar7.j(cata.EVERY_14_DAYS);
+            cateVar7.v(true != fush.Y() ? 1 : 2);
+            cateVar7.r(true);
+            dbsw.b(applicationContext, cateVar7.b());
         }
         if (OdlhUserEditSyncJob.d()) {
-            if (fnck.f()) {
-                byko bykoVar7 = new byko();
-                bykoVar7.w(OdlhUserEditSyncJob.a);
-                bykoVar7.t("OdlhUserEditSync");
-                bykoVar7.a = bykv.j;
-                bykoVar7.l(true);
-                bykoVar7.v(2);
-                cziy.c(applicationContext, bykoVar7.b());
+            if (fpuj.f()) {
+                catg catgVar7 = new catg();
+                catgVar7.w(OdlhUserEditSyncJob.a);
+                catgVar7.t("OdlhUserEditSync");
+                catgVar7.a = catn.j;
+                catgVar7.l(true);
+                catgVar7.v(2);
+                dbsw.c(applicationContext, catgVar7.b());
             } else {
-                bykm bykmVar8 = new bykm();
-                bykmVar8.w(OdlhUserEditSyncJob.a);
-                bykmVar8.t("OdlhUserEditSync");
-                bykmVar8.j(byki.EVERY_DAY);
-                bykmVar8.v(true != frxn.X() ? 1 : 2);
-                bykmVar8.x(0, 1);
-                bykmVar8.y(0, 1);
-                cziy.b(applicationContext, bykmVar8.b());
+                cate cateVar8 = new cate();
+                cateVar8.w(OdlhUserEditSyncJob.a);
+                cateVar8.t("OdlhUserEditSync");
+                cateVar8.j(cata.EVERY_DAY);
+                cateVar8.v(true != fush.Y() ? 1 : 2);
+                cateVar8.x(0, 1);
+                cateVar8.y(0, 1);
+                dbsw.b(applicationContext, cateVar8.b());
             }
         }
         String str4 = MonitoringService.a;
-        if (fnck.f()) {
-            byko bykoVar8 = new byko();
-            bykoVar8.t("MonitoringService");
-            bykoVar8.w(MonitoringService.a);
-            bykoVar8.a = bykv.j;
-            bykoVar8.l(true);
-            bykoVar8.v(2);
-            bykoVar8.e();
-            bykoVar8.k();
-            cziy.c(applicationContext, bykoVar8.b());
+        if (fpuj.f()) {
+            catg catgVar8 = new catg();
+            catgVar8.t("MonitoringService");
+            catgVar8.w(MonitoringService.a);
+            catgVar8.a = catn.j;
+            catgVar8.l(true);
+            catgVar8.v(2);
+            catgVar8.e();
+            catgVar8.k();
+            dbsw.c(applicationContext, catgVar8.b());
         } else {
-            bykm bykmVar9 = new bykm();
-            bykmVar9.t("MonitoringService");
-            bykmVar9.w(MonitoringService.a);
-            bykmVar9.j(byki.EVERY_DAY);
-            bykmVar9.v(0);
-            bykmVar9.r(true);
-            bykmVar9.g(1);
-            bykmVar9.f(0, 1);
-            cziy.b(applicationContext, bykmVar9.b());
+            cate cateVar9 = new cate();
+            cateVar9.t("MonitoringService");
+            cateVar9.w(MonitoringService.a);
+            cateVar9.j(cata.EVERY_DAY);
+            cateVar9.v(0);
+            cateVar9.r(true);
+            cateVar9.g(1);
+            cateVar9.f(0, 1);
+            dbsw.b(applicationContext, cateVar9.b());
         }
         String str5 = ReinferenceService.a;
-        if (frxj.c()) {
-            byko bykoVar9 = new byko();
-            bykoVar9.w(ReinferenceService.a);
-            bykoVar9.t("ReinferenceService");
-            bykoVar9.a = bykv.j;
-            bykoVar9.l(true);
-            bykoVar9.v(2);
-            cziy.c(applicationContext, bykoVar9.b());
+        if (fusd.c()) {
+            catg catgVar9 = new catg();
+            catgVar9.w(ReinferenceService.a);
+            catgVar9.t("ReinferenceService");
+            catgVar9.a = catn.j;
+            catgVar9.l(true);
+            catgVar9.v(2);
+            dbsw.c(applicationContext, catgVar9.b());
         }
         String str6 = OdlhPppCleanupJob.a;
-        if (frww.d()) {
-            byko bykoVar10 = new byko();
-            bykoVar10.w(OdlhPppCleanupJob.a);
-            bykoVar10.t("OdlhPppCleanup");
-            bykoVar10.a = bykv.j;
-            bykoVar10.l(true);
-            bykoVar10.v(2);
-            cziy.c(applicationContext, bykoVar10.b());
+        if (furq.d()) {
+            catg catgVar10 = new catg();
+            catgVar10.w(OdlhPppCleanupJob.a);
+            catgVar10.t("OdlhPppCleanup");
+            catgVar10.a = catn.j;
+            catgVar10.l(true);
+            catgVar10.v(2);
+            dbsw.c(applicationContext, catgVar10.b());
         }
-        if (bwth.q(applicationContext)) {
-            dbez.a(applicationContext);
+        if (bzbx.q(applicationContext)) {
+            ddph.a(applicationContext);
         }
         try {
-            int i2 = true == czlp.g(applicationContext, new czlk(new czje())) ? 1 : 2;
+            int i2 = true == dbvl.g(applicationContext, new dbvg(new dbtc())) ? 1 : 2;
             try {
-                asng.M("com.google.android.gms.semanticlocationhistory.settings.OnDeviceSettingsActivity", i2);
+                aura.M("com.google.android.gms.semanticlocationhistory.settings.OnDeviceSettingsActivity", i2);
             } catch (IllegalArgumentException unused) {
             }
-            asng.M("com.google.android.gms.semanticlocationhistory.service.OnDeviceSettingsInjectorService", i2);
+            aura.M("com.google.android.gms.semanticlocationhistory.service.OnDeviceSettingsInjectorService", i2);
         } catch (IOException | IllegalArgumentException unused2) {
         }
-        ((ejhf) ((ejhf) b.h()).ah((char) 10614)).x("Triggering settings sync one off task");
+        ((eluo) ((eluo) b.h()).ai((char) 10620)).x("Triggering settings sync one off task");
         SettingsSyncOneOffService.g(applicationContext);
     }
 }

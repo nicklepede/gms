@@ -1,51 +1,48 @@
 package com.google.android.gms.libs.gmscorelogger;
 
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.asnv;
-import defpackage.asnz;
-import defpackage.brgr;
-import defpackage.brgt;
-import defpackage.brmq;
-import defpackage.bwnz;
-import defpackage.bwoa;
-import defpackage.byln;
-import defpackage.fmvs;
+import defpackage.aurp;
+import defpackage.aurt;
+import defpackage.btoi;
+import defpackage.btok;
+import defpackage.btui;
+import defpackage.bywm;
+import defpackage.bywn;
+import defpackage.cauf;
+import defpackage.fpnq;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public class GmsCoreLoggerFilesCleanupTask extends GmsTaskBoundService {
     public static final /* synthetic */ int a = 0;
-    private final asnv b;
+    private final aurp b;
 
     public GmsCoreLoggerFilesCleanupTask() {
-        this.b = asnz.a;
+        this.b = aurt.a;
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
-        if (!fmvs.X()) {
-            return 2;
-        }
-        long millis = TimeUnit.HOURS.toMillis(fmvs.a.a().m());
+    public final int a(cauf caufVar) {
+        long millis = TimeUnit.HOURS.toMillis(fpnq.a.lK().m());
         long a2 = this.b.a();
-        for (bwnz bwnzVar : bwoa.e(bwoa.b(), true)) {
-            brgt brgtVar = bwnzVar.b;
-            if (brgtVar == brgt.UNKNOWN) {
-                bwnzVar.a.delete();
-            } else if (Math.abs(a2 - bwnzVar.d) > millis) {
-                brmq c = brgr.b().c(brgtVar);
+        for (bywm bywmVar : bywn.e(bywn.b(), true)) {
+            btok btokVar = bywmVar.b;
+            if (btokVar == btok.UNKNOWN) {
+                bywmVar.a.delete();
+            } else if (Math.abs(a2 - bywmVar.d) > millis) {
+                btui c = btoi.b().c(btokVar);
                 if (c != null) {
-                    c.e(bwnzVar.a);
+                    c.e(bywmVar.a);
                 } else {
-                    bwnzVar.a.delete();
+                    bywmVar.a.delete();
                 }
             }
         }
         return 0;
     }
 
-    GmsCoreLoggerFilesCleanupTask(asnv asnvVar) {
-        this.b = asnvVar;
+    GmsCoreLoggerFilesCleanupTask(aurp aurpVar) {
+        this.b = aurpVar;
     }
 }

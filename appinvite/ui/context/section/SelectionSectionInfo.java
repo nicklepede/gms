@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 import com.google.android.gms.R;
-import defpackage.tyj;
-import defpackage.tyv;
-import defpackage.tzj;
-import defpackage.tzx;
+import defpackage.vui;
+import defpackage.vuu;
+import defpackage.vvi;
+import defpackage.vvw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class SelectionSectionInfo extends SectionInfo {
-    public static final Parcelable.Creator CREATOR = new tzx();
+    public static final Parcelable.Creator CREATOR = new vvw();
     public CharSequence a;
     public boolean b;
 
@@ -20,13 +20,13 @@ public class SelectionSectionInfo extends SectionInfo {
     }
 
     @Override // com.google.android.gms.appinvite.ui.context.section.SectionInfo
-    public final tyv a(tyj tyjVar, int i) {
-        return new tzj(tyjVar, i, tyjVar.a.getString(R.string.appinvite_recipients), this.a, this.b, false);
+    public final vuu a(vui vuiVar, int i) {
+        return new vvi(vuiVar, i, vuiVar.a.getString(R.string.appinvite_recipients), this.a, this.b, false);
     }
 
     @Override // com.google.android.gms.appinvite.ui.context.section.SectionInfo
-    public final tyv d(tyj tyjVar, int i) {
-        return new tzj(tyjVar, i, tyjVar.a.getString(R.string.appinvite_recipients), this.a, this.b, true);
+    public final vuu d(vui vuiVar, int i) {
+        return new vvi(vuiVar, i, vuiVar.a.getString(R.string.appinvite_recipients), this.a, this.b, true);
     }
 
     @Override // com.google.android.gms.appinvite.ui.context.section.SectionInfo, android.os.Parcelable

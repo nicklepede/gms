@@ -1,25 +1,25 @@
 package com.google.android.gms.ads.nonagon.util.logging.cui;
 
-import defpackage.ensi;
-import defpackage.ensj;
-import defpackage.enss;
+import defpackage.eqgb;
+import defpackage.eqgc;
+import defpackage.eqgl;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public final class j {
-    public static void a(enss enssVar, k kVar, b bVar) {
-        b(enssVar, kVar, bVar, false);
+    public static void a(eqgl eqglVar, k kVar, b bVar) {
+        b(eqglVar, kVar, bVar, false);
     }
 
-    public static void b(enss enssVar, k kVar, b bVar, boolean z) {
+    public static void b(eqgl eqglVar, k kVar, b bVar, boolean z) {
         if (((Boolean) com.google.android.gms.ads.internal.flag.h.c.d()).booleanValue()) {
-            ensj.t(ensi.h(enssVar), new h(kVar, bVar, z), com.google.android.gms.ads.internal.util.future.e.d);
+            eqgc.t(eqgb.h(eqglVar), new h(kVar, bVar, z), com.google.android.gms.ads.internal.util.future.e.d);
         }
     }
 
-    public static void c(enss enssVar, b bVar) {
+    public static void c(eqgl eqglVar, b bVar) {
         if (((Boolean) com.google.android.gms.ads.internal.flag.h.c.d()).booleanValue()) {
-            ensj.t(ensi.h(enssVar), new g(bVar), com.google.android.gms.ads.internal.util.future.e.d);
+            eqgc.t(eqgb.h(eqglVar), new g(bVar), com.google.android.gms.ads.internal.util.future.e.d);
         }
     }
 }

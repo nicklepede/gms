@@ -4,16 +4,16 @@ import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.smartdevice.d2d.BootstrapAccount;
-import defpackage.ddmz;
-import defpackage.dtyk;
-import defpackage.eihn;
-import defpackage.eiig;
+import defpackage.dfye;
+import defpackage.dwiw;
+import defpackage.ekus;
+import defpackage.ekvl;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class ParcelableDeviceOwner implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new ddmz();
+    public static final Parcelable.Creator CREATOR = new dfye();
     public final String a;
     public final String b;
     public final String c;
@@ -21,12 +21,12 @@ public class ParcelableDeviceOwner implements Parcelable {
     public final Bitmap e;
     public boolean f;
 
-    public ParcelableDeviceOwner(dtyk dtykVar, Bitmap bitmap) {
+    public ParcelableDeviceOwner(dwiw dwiwVar, Bitmap bitmap) {
         this.f = true;
-        this.a = dtykVar.c;
-        this.b = dtykVar.b;
-        this.c = dtykVar.d;
-        this.d = dtykVar.e;
+        this.a = dwiwVar.c;
+        this.b = dwiwVar.b;
+        this.c = dwiwVar.d;
+        this.d = dwiwVar.e;
         this.e = bitmap;
     }
 
@@ -49,7 +49,7 @@ public class ParcelableDeviceOwner implements Parcelable {
             return false;
         }
         ParcelableDeviceOwner parcelableDeviceOwner = (ParcelableDeviceOwner) obj;
-        return (eihn.a(this.a, parcelableDeviceOwner.a) && eihn.a(this.b, parcelableDeviceOwner.b) && eihn.a(this.c, parcelableDeviceOwner.c) && eihn.a(this.d, parcelableDeviceOwner.d) && this.f == parcelableDeviceOwner.f && (bitmap = this.e) != null && (bitmap2 = parcelableDeviceOwner.e) != null) ? bitmap.sameAs(bitmap2) : this.e == parcelableDeviceOwner.e;
+        return (ekus.a(this.a, parcelableDeviceOwner.a) && ekus.a(this.b, parcelableDeviceOwner.b) && ekus.a(this.c, parcelableDeviceOwner.c) && ekus.a(this.d, parcelableDeviceOwner.d) && this.f == parcelableDeviceOwner.f && (bitmap = this.e) != null && (bitmap2 = parcelableDeviceOwner.e) != null) ? bitmap.sameAs(bitmap2) : this.e == parcelableDeviceOwner.e;
     }
 
     public final int hashCode() {
@@ -69,7 +69,7 @@ public class ParcelableDeviceOwner implements Parcelable {
     public ParcelableDeviceOwner(Parcel parcel) {
         this.f = true;
         String readString = parcel.readString();
-        eiig.x(readString);
+        ekvl.y(readString);
         this.a = readString;
         this.b = parcel.readString();
         this.c = parcel.readString();

@@ -4,36 +4,36 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.chimera.BroadcastReceiver;
-import defpackage.bhvo;
-import defpackage.bhwz;
-import defpackage.deqr;
+import defpackage.bkad;
+import defpackage.bkbo;
+import defpackage.dhbu;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class GcmSenderChimeraProxy extends BroadcastReceiver {
-    static deqr b;
+    static dhbu b;
 
     static synchronized void a(Context context) {
         synchronized (GcmSenderChimeraProxy.class) {
             if (b == null) {
-                deqr deqrVar = new deqr(context, 1, "GCMSEND", null, "com.google.android.gms");
-                b = deqrVar;
-                deqrVar.j(false);
+                dhbu dhbuVar = new dhbu(context, 1, "GCMSEND", null, "com.google.android.gms");
+                b = dhbuVar;
+                dhbuVar.j(false);
             }
             b.c(500L);
         }
     }
 
     public static void b() {
-        deqr deqrVar = b;
-        if (deqrVar != null) {
-            deqrVar.g();
+        dhbu dhbuVar = b;
+        if (dhbuVar != null) {
+            dhbuVar.g();
         }
     }
 
     @Override // com.google.android.chimera.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
-        bhvo.i(context);
+        bkad.i(context);
         Bundle extras = intent.getExtras();
         if (extras != null) {
             for (String str : extras.keySet()) {
@@ -42,8 +42,8 @@ public class GcmSenderChimeraProxy extends BroadcastReceiver {
                 }
             }
         }
-        if (bhvo.d() != 0) {
-            intent.putExtra("GOOGLE.UAID", bhwz.b().f().c());
+        if (bkad.d() != 0) {
+            intent.putExtra("GOOGLE.UAID", bkbo.b().f().c());
         }
         GcmProxyIntentOperation.a(context, intent);
     }

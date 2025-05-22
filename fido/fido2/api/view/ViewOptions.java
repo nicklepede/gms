@@ -4,10 +4,10 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.fido.common.Transport;
-import defpackage.arxc;
-import defpackage.bbji;
-import defpackage.bbwe;
-import defpackage.bbwf;
+import defpackage.atzr;
+import defpackage.bdnf;
+import defpackage.bdzw;
+import defpackage.bdzx;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -15,10 +15,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class ViewOptions extends AbstractSafeParcelable implements bbji {
-    public static final Parcelable.Creator CREATOR = new bbwf();
+public class ViewOptions extends AbstractSafeParcelable implements bdnf {
+    public static final Parcelable.Creator CREATOR = new bdzx();
     private final int a;
     public final Set d;
 
@@ -45,11 +45,11 @@ public class ViewOptions extends AbstractSafeParcelable implements bbji {
         }
     }
 
-    public bbwe b() {
+    public bdzw b() {
         throw new UnsupportedOperationException("This method must be overwritten by subclasses");
     }
 
-    public int hG() {
+    public int hW() {
         return this.a;
     }
 
@@ -59,9 +59,9 @@ public class ViewOptions extends AbstractSafeParcelable implements bbji {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, hG());
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, hW());
+        atzr.c(parcel, a);
     }
 
     public ViewOptions(int i) {

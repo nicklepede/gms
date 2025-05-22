@@ -6,32 +6,32 @@ import android.os.IInterface;
 import android.os.RemoteException;
 import com.google.android.gms.dynamic.ObjectWrapper;
 import com.google.android.gms.libs.scheduler.GmsTaskChimeraService;
-import defpackage.bqem;
-import defpackage.bqex;
-import defpackage.bqja;
-import defpackage.bqjf;
-import defpackage.bqjg;
-import defpackage.bqjh;
-import defpackage.bqjk;
-import defpackage.bqkd;
-import defpackage.bqld;
-import defpackage.bqmm;
-import defpackage.byln;
-import defpackage.dtgd;
-import defpackage.dtge;
-import defpackage.dtgj;
+import defpackage.bsmc;
+import defpackage.bsmn;
+import defpackage.bsqp;
+import defpackage.bsqu;
+import defpackage.bsqv;
+import defpackage.bsqw;
+import defpackage.bsqz;
+import defpackage.bsrs;
+import defpackage.bsss;
+import defpackage.bsub;
+import defpackage.cauf;
+import defpackage.dvql;
+import defpackage.dvqm;
+import defpackage.dvqr;
 import java.util.logging.Level;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public class TrainingGcmTaskChimeraService extends GmsTaskChimeraService {
-    private static final dtgj a = dtge.b("brella", "TrainingService");
-    private dtgd b;
-    private bqex c;
-    private volatile bqkd d;
+    private static final dvqr a = dvqm.b("brella", "TrainingService");
+    private dvql b;
+    private bsmn c;
+    private volatile bsrs d;
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         return 0;
     }
 
@@ -42,26 +42,26 @@ public class TrainingGcmTaskChimeraService extends GmsTaskChimeraService {
             return super.onBind(intent);
         }
         try {
-            bqkd bqkdVar = (bqkd) bqjh.a(this, "com.google.android.gms.learning.dynamite.training.InAppTrainingServiceImpl", new bqjg() { // from class: bqmt
-                @Override // defpackage.bqjg
+            bsrs bsrsVar = (bsrs) bsqw.a(this, "com.google.android.gms.learning.dynamite.training.InAppTrainingServiceImpl", new bsqv() { // from class: bsui
+                @Override // defpackage.bsqv
                 public final IInterface a(IBinder iBinder) {
                     IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.learning.internal.training.IInAppTrainingService");
-                    return queryLocalInterface instanceof bqkd ? (bqkd) queryLocalInterface : new bqkc(iBinder);
+                    return queryLocalInterface instanceof bsrs ? (bsrs) queryLocalInterface : new bsrr(iBinder);
                 }
             });
             try {
-                bqkdVar.d(new ObjectWrapper(this));
+                bsrsVar.d(new ObjectWrapper(this));
             } catch (RemoteException e) {
                 a.h(e, "RemoteException during onCreate");
             }
             try {
-                bqkdVar.c("gms", new bqmm());
-                bqkdVar.m(new bqjk(getApplicationContext(), (bqem) this.b.c(bqem.class)));
+                bsrsVar.c("gms", new bsub());
+                bsrsVar.m(new bsqz(getApplicationContext(), (bsmc) this.b.c(bsmc.class)));
             } catch (RemoteException e2) {
                 a.h(e2, "RemoteException during setHttpUrlConnectionFactory");
             }
-            this.d = bqkdVar;
-        } catch (bqjf e3) {
+            this.d = bsrsVar;
+        } catch (bsqu e3) {
             a.h(e3, "LoadingException during onCreate");
         }
         if (this.d != null) {
@@ -71,18 +71,18 @@ public class TrainingGcmTaskChimeraService extends GmsTaskChimeraService {
                 a.h(e4, "RemoteException in IInAppTrainingService.onBind");
             }
         }
-        return new bqja("No IInAppTrainingService implementation found");
+        return new bsqp("No IInAppTrainingService implementation found");
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.chimera.Service
     public final void onCreate() {
-        dtgj dtgjVar = a;
-        dtgjVar.c(Level.INFO, dtgjVar.a, null, "onCreate()", new Object[0]);
+        dvqr dvqrVar = a;
+        dvqrVar.c(Level.INFO, dvqrVar.a, null, "onCreate()", new Object[0]);
         super.onCreate();
-        bqld.a();
-        dtgd b = dtgd.b(getApplicationContext());
+        bsss.a();
+        dvql b = dvql.b(getApplicationContext());
         this.b = b;
-        this.c = (bqex) b.c(bqex.class);
+        this.c = (bsmn) b.c(bsmn.class);
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskChimeraService, com.google.android.chimera.Service

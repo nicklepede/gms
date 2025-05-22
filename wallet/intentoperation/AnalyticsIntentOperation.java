@@ -6,37 +6,37 @@ import android.os.Bundle;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.wallet.analytics.events.WalletAnalyticsEvent;
 import com.google.android.gms.wallet.dynamite.logging.e;
-import defpackage.apta;
-import defpackage.dihl;
-import defpackage.dihs;
-import defpackage.diif;
-import defpackage.divi;
-import defpackage.divj;
-import defpackage.divk;
-import defpackage.edvf;
-import defpackage.edvy;
-import defpackage.edwa;
-import defpackage.edwh;
-import defpackage.edwx;
-import defpackage.eiig;
-import defpackage.emeg;
-import defpackage.empf;
-import defpackage.emqa;
-import defpackage.feab;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fedh;
-import defpackage.fsye;
-import defpackage.fvbo;
+import defpackage.arvr;
+import defpackage.dksw;
+import defpackage.dktd;
+import defpackage.dktp;
+import defpackage.dlgt;
+import defpackage.dlgu;
+import defpackage.dlgv;
+import defpackage.egig;
+import defpackage.egiz;
+import defpackage.egjb;
+import defpackage.egji;
+import defpackage.egjy;
+import defpackage.ekvl;
+import defpackage.eoru;
+import defpackage.epct;
+import defpackage.epdo;
+import defpackage.fgou;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fgsa;
+import defpackage.fvty;
+import defpackage.fxxm;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class AnalyticsIntentOperation extends IntentOperation {
-    private divj a;
-    private divk b;
-    private dihl c;
+    private dlgu a;
+    private dlgv b;
+    private dksw c;
 
     public AnalyticsIntentOperation() {
     }
@@ -45,20 +45,20 @@ public class AnalyticsIntentOperation extends IntentOperation {
         return IntentOperation.getStartIntent(context, AnalyticsIntentOperation.class, "com.google.android.gms.wallet.analytics.LOG");
     }
 
-    public static emeg b(Context context, WalletAnalyticsEvent walletAnalyticsEvent) {
-        fecj v = emeg.a.v();
-        ArrayList c = c(context, new divj(), true, new divk(context), walletAnalyticsEvent);
+    public static eoru b(Context context, WalletAnalyticsEvent walletAnalyticsEvent) {
+        fgrc v = eoru.a.v();
+        ArrayList c = c(context, new dlgu(), true, new dlgv(context), walletAnalyticsEvent);
         if (!v.b.L()) {
             v.U();
         }
-        emeg emegVar = (emeg) v.b;
-        fedh fedhVar = emegVar.b;
-        if (!fedhVar.c()) {
-            emegVar.b = fecp.E(fedhVar);
+        eoru eoruVar = (eoru) v.b;
+        fgsa fgsaVar = eoruVar.b;
+        if (!fgsaVar.c()) {
+            eoruVar.b = fgri.E(fgsaVar);
         }
-        feab.E(c, emegVar.b);
-        divi.a(context, walletAnalyticsEvent);
-        return (emeg) v.Q();
+        fgou.E(c, eoruVar.b);
+        dlgt.a(context, walletAnalyticsEvent);
+        return (eoru) v.Q();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:17:0x0233  */
@@ -66,19 +66,19 @@ public class AnalyticsIntentOperation extends IntentOperation {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    static java.util.ArrayList c(android.content.Context r18, defpackage.divj r19, boolean r20, defpackage.divk r21, com.google.android.gms.wallet.analytics.events.WalletAnalyticsEvent r22) {
+    static java.util.ArrayList c(android.content.Context r18, defpackage.dlgu r19, boolean r20, defpackage.dlgv r21, com.google.android.gms.wallet.analytics.events.WalletAnalyticsEvent r22) {
         /*
             Method dump skipped, instructions count: 883
             To view this dump change 'Code comments level' option to 'DEBUG'
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.wallet.intentoperation.AnalyticsIntentOperation.c(android.content.Context, divj, boolean, divk, com.google.android.gms.wallet.analytics.events.WalletAnalyticsEvent):java.util.ArrayList");
+        throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.wallet.intentoperation.AnalyticsIntentOperation.c(android.content.Context, dlgu, boolean, dlgv, com.google.android.gms.wallet.analytics.events.WalletAnalyticsEvent):java.util.ArrayList");
     }
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onCreate() {
-        this.a = new divj();
-        this.b = new divk(this);
-        this.c = new dihl(getApplicationContext(), dihs.a(getApplicationContext()).c);
+        this.a = new dlgu();
+        this.b = new dlgv(this);
+        this.c = new dksw(getApplicationContext(), dktd.a(getApplicationContext()).c);
     }
 
     @Override // com.google.android.chimera.IntentOperation
@@ -88,23 +88,23 @@ public class AnalyticsIntentOperation extends IntentOperation {
                 c(this, this.a, false, this.b, (WalletAnalyticsEvent) intent.getParcelableExtra("wallet.analytics.event"));
                 return;
             }
-            dihl dihlVar = this.c;
-            Context context = dihlVar.a;
-            edwh.a(context);
-            fvbo.f(intent, "<this>");
+            dksw dkswVar = this.c;
+            Context context = dkswVar.a;
+            egji.a(context);
+            fxxm.f(intent, "<this>");
             Bundle bundleExtra = intent.getBundleExtra("EXTRA_BENDER3_EVENT");
-            eiig.A(bundleExtra, "A non-null %s is required from the Intent.", "EXTRA_BENDER3_EVENT");
-            emqa emqaVar = (emqa) edvf.j(bundleExtra, "KEY_EVENT", emqa.a);
-            diif diifVar = (diif) edvf.j(bundleExtra, "KEY_CONFIG", diif.a);
-            edvy edvyVar = dihlVar.b;
-            apta a = edwa.a(diifVar.d);
-            edwx.a(context, a, emqaVar, diifVar.c).d();
-            long c = fsye.a.a().c();
-            empf b = empf.b(emqaVar.g);
+            ekvl.B(bundleExtra, "A non-null %s is required from the Intent.", "EXTRA_BENDER3_EVENT");
+            epdo epdoVar = (epdo) egig.j(bundleExtra, "KEY_EVENT", epdo.a);
+            dktp dktpVar = (dktp) egig.j(bundleExtra, "KEY_CONFIG", dktp.a);
+            egiz egizVar = dkswVar.b;
+            arvr a = egjb.a(dktpVar.d);
+            egjy.a(context, a, epdoVar, dktpVar.c).d();
+            long c = fvty.a.lK().c();
+            epct b = epct.b(epdoVar.g);
             if (b == null) {
-                b = empf.EVENT_TYPE_UNKNOWN;
+                b = epct.EVENT_TYPE_UNKNOWN;
             }
-            if (b != empf.EVENT_TYPE_UNHANDLED_ERROR || c == 0) {
+            if (b != epct.EVENT_TYPE_UNHANDLED_ERROR || c == 0) {
                 return;
             }
             a.e(c, TimeUnit.MILLISECONDS);
@@ -113,10 +113,10 @@ public class AnalyticsIntentOperation extends IntentOperation {
         }
     }
 
-    AnalyticsIntentOperation(Context context, divj divjVar, divk divkVar, dihl dihlVar) {
-        this.a = divjVar;
-        this.b = divkVar;
-        this.c = dihlVar;
+    AnalyticsIntentOperation(Context context, dlgu dlguVar, dlgv dlgvVar, dksw dkswVar) {
+        this.a = dlguVar;
+        this.b = dlgvVar;
+        this.c = dkswVar;
         attachBaseContext(context);
     }
 }

@@ -5,29 +5,29 @@ import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.wallet.shared.BuyFlowConfig;
-import defpackage.arwm;
-import defpackage.digp;
-import defpackage.disk;
-import defpackage.divi;
-import defpackage.efdk;
-import defpackage.emef;
-import defpackage.feen;
+import defpackage.atzb;
+import defpackage.dksa;
+import defpackage.dldv;
+import defpackage.dlgt;
+import defpackage.ehqn;
+import defpackage.eort;
+import defpackage.fgtg;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class SimpleAnalyticsEvent extends AnalyticsSessionStartEndEvent {
-    public static final Parcelable.Creator CREATOR = new digp();
+    public static final Parcelable.Creator CREATOR = new dksa();
     public final BuyFlowConfig c;
-    public final emef d;
+    public final eort d;
 
     public SimpleAnalyticsEvent(Parcel parcel) {
         super(parcel);
         this.c = (BuyFlowConfig) parcel.readParcelable(IsReadyToPayCallEvent.class.getClassLoader());
-        this.d = (emef) efdk.f(parcel, (feen) emef.a.iB(7, null));
+        this.d = (eort) ehqn.f(parcel, (fgtg) eort.a.iQ(7, null));
     }
 
-    public static void b(Context context, BuyFlowConfig buyFlowConfig, emef emefVar, Account account) {
-        divi.a(context, new SimpleAnalyticsEvent(buyFlowConfig, emefVar, account));
+    public static void b(Context context, BuyFlowConfig buyFlowConfig, eort eortVar, Account account) {
+        dlgt.a(context, new SimpleAnalyticsEvent(buyFlowConfig, eortVar, account));
     }
 
     @Override // android.os.Parcelable
@@ -39,14 +39,14 @@ public class SimpleAnalyticsEvent extends AnalyticsSessionStartEndEvent {
     public final void writeToParcel(Parcel parcel, int i) {
         super.writeToParcel(parcel, i);
         parcel.writeParcelable(this.c, i);
-        efdk.o(this.d, parcel);
+        ehqn.o(this.d, parcel);
     }
 
-    public SimpleAnalyticsEvent(BuyFlowConfig buyFlowConfig, emef emefVar, Account account) {
-        arwm.c(1 == ((emefVar.b & 1) ^ 1), "Request info should not be specified!");
-        this.m = disk.a();
+    public SimpleAnalyticsEvent(BuyFlowConfig buyFlowConfig, eort eortVar, Account account) {
+        atzb.c(1 == ((eortVar.b & 1) ^ 1), "Request info should not be specified!");
+        this.m = dldv.a();
         this.c = buyFlowConfig;
-        this.d = emefVar;
+        this.d = eortVar;
         this.a = account != null ? account.name : null;
         this.b = a(buyFlowConfig, this.a);
     }

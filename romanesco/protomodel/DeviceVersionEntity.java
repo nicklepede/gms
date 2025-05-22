@@ -3,15 +3,15 @@ package com.google.android.gms.romanesco.protomodel;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cxpu;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.czzr;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class DeviceVersionEntity extends AbstractSafeParcelable implements DeviceVersion {
-    public static final Parcelable.Creator CREATOR = new cxpu();
+    public static final Parcelable.Creator CREATOR = new czzr();
     public final Integer a;
 
     public DeviceVersionEntity(Integer num) {
@@ -30,7 +30,7 @@ public class DeviceVersionEntity extends AbstractSafeParcelable implements Devic
         if (this == obj) {
             return true;
         }
-        return arwb.b(a(), ((DeviceVersion) obj).a());
+        return atyq.b(a(), ((DeviceVersion) obj).a());
     }
 
     public final int hashCode() {
@@ -40,12 +40,12 @@ public class DeviceVersionEntity extends AbstractSafeParcelable implements Devic
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Integer num = this.a;
-        int a = arxc.a(parcel);
-        arxc.F(parcel, 2, num);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.F(parcel, 2, num);
+        atzr.c(parcel, a);
     }
 
-    @Override // defpackage.arod
+    @Override // defpackage.atqs
     public final /* bridge */ /* synthetic */ Object l() {
         return this;
     }

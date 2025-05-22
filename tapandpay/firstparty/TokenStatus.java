@@ -4,17 +4,17 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dexx;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dhjb;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public final class TokenStatus extends AbstractSafeParcelable implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new dexx();
+    public static final Parcelable.Creator CREATOR = new dhjb();
     public final TokenReference a;
     public final int b;
     public final boolean c;
@@ -30,7 +30,7 @@ public final class TokenStatus extends AbstractSafeParcelable implements Reflect
     public final boolean equals(Object obj) {
         if (obj instanceof TokenStatus) {
             TokenStatus tokenStatus = (TokenStatus) obj;
-            if (arwb.b(this.a, tokenStatus.a) && this.b == tokenStatus.b && this.c == tokenStatus.c && arwb.b(this.d, tokenStatus.d)) {
+            if (atyq.b(this.a, tokenStatus.a) && this.b == tokenStatus.b && this.c == tokenStatus.c && atyq.b(this.d, tokenStatus.d)) {
                 return true;
             }
         }
@@ -43,20 +43,20 @@ public final class TokenStatus extends AbstractSafeParcelable implements Reflect
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("tokenReference", this.a, arrayList);
-        arwa.b("tokenState", Integer.valueOf(this.b), arrayList);
-        arwa.b("isSelected", Boolean.valueOf(this.c), arrayList);
-        arwa.b("auxiliaryTokenReference", this.d, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("tokenReference", this.a, arrayList);
+        atyp.b("tokenState", Integer.valueOf(this.b), arrayList);
+        atyp.b("isSelected", Boolean.valueOf(this.c), arrayList);
+        atyp.b("auxiliaryTokenReference", this.d, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 2, this.a, i, false);
-        arxc.o(parcel, 3, this.b);
-        arxc.e(parcel, 4, this.c);
-        arxc.t(parcel, 5, this.d, i, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 2, this.a, i, false);
+        atzr.o(parcel, 3, this.b);
+        atzr.e(parcel, 4, this.c);
+        atzr.t(parcel, 5, this.d, i, false);
+        atzr.c(parcel, a);
     }
 }

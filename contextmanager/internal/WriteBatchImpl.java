@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.contextmanager.ContextData;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.atry;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.avwb;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class WriteBatchImpl extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new atry();
+    public static final Parcelable.Creator CREATOR = new avwb();
     public ArrayList a;
 
     public WriteBatchImpl() {
@@ -24,7 +24,7 @@ public class WriteBatchImpl extends AbstractSafeParcelable {
     }
 
     public final void b(ContextData contextData) {
-        arwm.s(contextData);
+        atzb.s(contextData);
         if (this.a == null) {
             this.a = new ArrayList();
         }
@@ -33,9 +33,9 @@ public class WriteBatchImpl extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.y(parcel, 3, this.a, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.y(parcel, 3, this.a, false);
+        atzr.c(parcel, a);
     }
 
     public WriteBatchImpl(ArrayList arrayList) {

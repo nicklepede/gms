@@ -15,38 +15,38 @@ import android.widget.TextView;
 import com.google.android.gms.R;
 import com.google.android.gms.wallet.service.reauth.ReauthProofTokenRequest;
 import com.google.android.gms.wallet.ui.verifypin.KeyPadView;
-import defpackage.djim;
+import defpackage.dluf;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class KeyPadView extends LinearLayout {
-    public djim a;
+    public dluf a;
 
     public KeyPadView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         LayoutInflater.from(context).inflate(R.layout.wallet_view_keypad, (ViewGroup) this, true);
-        View.OnClickListener onClickListener = new View.OnClickListener() { // from class: djii
+        View.OnClickListener onClickListener = new View.OnClickListener() { // from class: dlub
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                djim djimVar = KeyPadView.this.a;
-                if (djimVar == null) {
+                dluf dlufVar = KeyPadView.this.a;
+                if (dlufVar == null) {
                     return;
                 }
                 int charAt = ((TextView) view).getText().charAt(0) - '0';
-                if (djimVar.c.length() < 4) {
-                    djimVar.d.setVisibility(4);
-                    djimVar.c.append(charAt);
-                    djimVar.i.c(djimVar.c.length());
-                    if (djimVar.c.length() == 4) {
-                        djimVar.m(false);
-                        djimVar.i.b(1);
-                        String sb = djimVar.c.toString();
-                        Account j = djimVar.j();
-                        int i = djimVar.f;
-                        djimVar.f = i + 1;
+                if (dlufVar.c.length() < 4) {
+                    dlufVar.d.setVisibility(4);
+                    dlufVar.c.append(charAt);
+                    dlufVar.i.c(dlufVar.c.length());
+                    if (dlufVar.c.length() == 4) {
+                        dlufVar.m(false);
+                        dlufVar.i.b(1);
+                        String sb = dlufVar.c.toString();
+                        Account j = dlufVar.j();
+                        int i = dlufVar.f;
+                        dlufVar.f = i + 1;
                         ReauthProofTokenRequest reauthProofTokenRequest = new ReauthProofTokenRequest(j, sb, 2, i);
-                        djimVar.e = efat.n(djimVar.b, 6);
-                        djimVar.k().b.m(reauthProofTokenRequest);
+                        dlufVar.e = ehnw.n(dlufVar.b, 6);
+                        dlufVar.k().b.m(reauthProofTokenRequest);
                     }
                 }
             }
@@ -61,14 +61,14 @@ public class KeyPadView extends LinearLayout {
         findViewById(R.id.keypad_button_7).setOnClickListener(onClickListener);
         findViewById(R.id.keypad_button_8).setOnClickListener(onClickListener);
         findViewById(R.id.keypad_button_9).setOnClickListener(onClickListener);
-        ((ImageButton) findViewById(R.id.keypad_button_back)).setOnClickListener(new View.OnClickListener() { // from class: djij
+        ((ImageButton) findViewById(R.id.keypad_button_back)).setOnClickListener(new View.OnClickListener() { // from class: dluc
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
-                djim djimVar = KeyPadView.this.a;
-                if (djimVar.c.length() > 0) {
-                    djimVar.d.setVisibility(4);
-                    djimVar.c.deleteCharAt(r0.length() - 1);
-                    djimVar.i.c(djimVar.c.length());
+                dluf dlufVar = KeyPadView.this.a;
+                if (dlufVar.c.length() > 0) {
+                    dlufVar.d.setVisibility(4);
+                    dlufVar.c.deleteCharAt(r0.length() - 1);
+                    dlufVar.i.c(dlufVar.c.length());
                 }
             }
         });

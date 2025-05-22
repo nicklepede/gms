@@ -11,39 +11,39 @@ import com.google.android.gms.auth.api.signin.ui.SignInChimeraActivity;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.common.api.Status;
 import com.google.autofill.detection.ml.AndroidInputTypeSignal;
-import defpackage.apsr;
-import defpackage.apta;
-import defpackage.aptf;
-import defpackage.arxo;
-import defpackage.asng;
-import defpackage.bmda;
-import defpackage.bmgp;
-import defpackage.bmgq;
-import defpackage.bmgu;
-import defpackage.bmgx;
-import defpackage.bmlv;
-import defpackage.brrr;
-import defpackage.eiif;
-import defpackage.eiig;
-import defpackage.eiiw;
-import defpackage.eijj;
-import defpackage.eijr;
-import defpackage.eipl;
-import defpackage.eiuu;
-import defpackage.ejya;
-import defpackage.elfb;
-import defpackage.elfd;
-import defpackage.enre;
-import defpackage.ensj;
-import defpackage.fecj;
-import defpackage.fecp;
-import defpackage.fsbf;
-import defpackage.fsbr;
-import defpackage.fscd;
-import defpackage.qet;
-import defpackage.zox;
-import defpackage.zqn;
-import defpackage.zqp;
+import defpackage.abox;
+import defpackage.abqn;
+import defpackage.abqp;
+import defpackage.arvi;
+import defpackage.arvr;
+import defpackage.arvw;
+import defpackage.auad;
+import defpackage.aura;
+import defpackage.bojs;
+import defpackage.bonh;
+import defpackage.boni;
+import defpackage.bonm;
+import defpackage.bonp;
+import defpackage.boso;
+import defpackage.btzm;
+import defpackage.ekvk;
+import defpackage.ekvl;
+import defpackage.ekwb;
+import defpackage.ekwo;
+import defpackage.ekww;
+import defpackage.elcq;
+import defpackage.elhz;
+import defpackage.emll;
+import defpackage.enso;
+import defpackage.ensq;
+import defpackage.eqex;
+import defpackage.eqgc;
+import defpackage.fgrc;
+import defpackage.fgri;
+import defpackage.fuwb;
+import defpackage.fuwn;
+import defpackage.fuwz;
+import defpackage.rxx;
 import j$.util.Collection;
 import j$.util.Objects;
 import j$.util.function.Function$CC;
@@ -54,17 +54,17 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public class SignInChimeraActivity extends qet {
+public class SignInChimeraActivity extends rxx {
     public GoogleSignInOptions j;
     public String k;
-    public bmgq l;
+    public boni l;
     public Intent m;
     public String n;
-    private final arxo o = new arxo("Auth.Api.SignIn", "Activity", "SignInChimeraActivity");
-    private bmda p;
-    private apta q;
+    private final auad o = new auad("Auth.Api.SignIn", "Activity", "SignInChimeraActivity");
+    private bojs p;
+    private arvr q;
 
     public final void a(int i, Intent intent) {
         if (intent == null) {
@@ -75,7 +75,7 @@ public class SignInChimeraActivity extends qet {
         finish();
     }
 
-    @Override // com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // com.google.android.chimera.android.Activity, defpackage.rtn
     public final void finish() {
         if (this.m == null) {
             Intent intent = new Intent();
@@ -97,93 +97,93 @@ public class SignInChimeraActivity extends qet {
     }
 
     public final void l(int i, Status status, GoogleSignInAccount googleSignInAccount) {
-        bmgq bmgqVar = this.l;
+        boni boniVar = this.l;
         if (googleSignInAccount != null && googleSignInAccount.a() != null) {
             Account a = googleSignInAccount.a();
-            eiig.x(a);
-            bmgqVar = bmgp.b(this, a.name);
+            ekvl.y(a);
+            boniVar = bonh.b(this, a.name);
         }
-        fecj v = elfd.a.v();
+        fgrc v = ensq.a.v();
         String str = this.n;
         if (!v.b.L()) {
             v.U();
         }
-        fecp fecpVar = v.b;
-        elfd elfdVar = (elfd) fecpVar;
+        fgri fgriVar = v.b;
+        ensq ensqVar = (ensq) fgriVar;
         str.getClass();
-        elfdVar.b |= 2;
-        elfdVar.e = str;
-        if (!fecpVar.L()) {
+        ensqVar.b |= 2;
+        ensqVar.e = str;
+        if (!fgriVar.L()) {
             v.U();
         }
-        elfd elfdVar2 = (elfd) v.b;
-        elfdVar2.d = 17;
-        elfdVar2.b |= 1;
-        fecj v2 = elfb.a.v();
+        ensq ensqVar2 = (ensq) v.b;
+        ensqVar2.d = 17;
+        ensqVar2.b |= 1;
+        fgrc v2 = enso.a.v();
         if (!v2.b.L()) {
             v2.U();
         }
-        fecp fecpVar2 = v2.b;
-        elfb elfbVar = (elfb) fecpVar2;
-        elfbVar.b |= 1;
-        elfbVar.c = i;
+        fgri fgriVar2 = v2.b;
+        enso ensoVar = (enso) fgriVar2;
+        ensoVar.b |= 1;
+        ensoVar.c = i;
         int i2 = status.i;
-        if (!fecpVar2.L()) {
+        if (!fgriVar2.L()) {
             v2.U();
         }
-        fecp fecpVar3 = v2.b;
-        elfb elfbVar2 = (elfb) fecpVar3;
-        elfbVar2.b |= 2;
-        elfbVar2.d = i2;
-        if (!fecpVar3.L()) {
+        fgri fgriVar3 = v2.b;
+        enso ensoVar2 = (enso) fgriVar3;
+        ensoVar2.b |= 2;
+        ensoVar2.d = i2;
+        if (!fgriVar3.L()) {
             v2.U();
         }
-        elfb elfbVar3 = (elfb) v2.b;
-        elfbVar3.f = 101;
-        elfbVar3.b |= 8;
+        enso ensoVar3 = (enso) v2.b;
+        ensoVar3.f = 101;
+        ensoVar3.b |= 8;
         if (!v.b.L()) {
             v.U();
         }
-        elfd elfdVar3 = (elfd) v.b;
-        elfb elfbVar4 = (elfb) v2.Q();
-        elfbVar4.getClass();
-        elfdVar3.s = elfbVar4;
-        elfdVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
-        bmgqVar.a((elfd) v.Q());
+        ensq ensqVar3 = (ensq) v.b;
+        enso ensoVar4 = (enso) v2.Q();
+        ensoVar4.getClass();
+        ensqVar3.s = ensoVar4;
+        ensqVar3.b |= AndroidInputTypeSignal.TYPE_TEXT_FLAG_AUTO_COMPLETE;
+        boniVar.a((ensq) v.Q());
     }
 
     public final void m(int i) {
-        if (fsbf.c()) {
-            ejya c = zqp.c(this.k, 3, Integer.valueOf(i), this.j);
-            if (fscd.e()) {
-                brrr.v().f(c);
+        if (fuwb.c()) {
+            emll c = abqp.c(this.k, 3, Integer.valueOf(i), this.j);
+            if (fuwz.e()) {
+                btzm.v().f(c);
             } else {
                 this.q.i(c).d();
             }
         }
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setTheme(R.style.Identity_Theme_NoUIActivity);
-        aptf aptfVar = new aptf() { // from class: zqi
-            @Override // defpackage.aptf
-            public final apth a() {
-                return apth.a((int) fksl.b(), fiek.LOGGER_OVERRIDE_PROVIDER);
+        arvw arvwVar = new arvw() { // from class: abqi
+            @Override // defpackage.arvw
+            public final arvy a() {
+                return arvy.a((int) fnjk.b(), fkuh.LOGGER_OVERRIDE_PROVIDER);
             }
         };
-        List list = apta.n;
-        apsr apsrVar = new apsr(this, "ANDROID_AUTH");
-        apsrVar.g = aptfVar;
-        this.q = apsrVar.a();
-        this.l = bmgp.b(this, null);
+        List list = arvr.n;
+        arvi arviVar = new arvi(this, "ANDROID_AUTH");
+        arviVar.g = arvwVar;
+        this.q = arviVar.a();
+        this.l = bonh.b(this, null);
         if (bundle != null) {
             GoogleSignInOptions googleSignInOptions = (GoogleSignInOptions) bundle.getParcelable("sign_in_options");
-            eiig.x(googleSignInOptions);
+            ekvl.y(googleSignInOptions);
             this.j = googleSignInOptions;
             String string = bundle.getString("consumer_package_name");
-            eiig.x(string);
+            ekvl.y(string);
             this.k = string;
             this.n = this.j.q;
         } else {
@@ -198,9 +198,9 @@ public class SignInChimeraActivity extends qet {
                 a(0, null);
                 return;
             }
-            String q = asng.q(this);
+            String q = aura.q(this);
             if (q == null || !q.equals(signInConfiguration.a)) {
-                this.o.f("Calling package [%s] does not match configuration.", eiif.b(q));
+                this.o.f("Calling package [%s] does not match configuration.", ekvk.b(q));
                 a(0, null);
                 return;
             }
@@ -208,25 +208,25 @@ public class SignInChimeraActivity extends qet {
             GoogleSignInOptions googleSignInOptions2 = signInConfiguration.b;
             String str = googleSignInOptions2.q;
             if (str == null) {
-                this.n = bmgx.a();
-                zox zoxVar = new zox(googleSignInOptions2);
-                zoxVar.b = this.n;
-                GoogleSignInOptions a = zoxVar.a();
+                this.n = bonp.a();
+                abox aboxVar = new abox(googleSignInOptions2);
+                aboxVar.b = this.n;
+                GoogleSignInOptions a = aboxVar.a();
                 this.j = a;
                 Scope[] c = a.c();
                 GoogleSignInOptions googleSignInOptions3 = this.j;
-                this.l.a(bmlv.b(this.k, c, googleSignInOptions3.q, googleSignInOptions3.k, googleSignInOptions3.m, googleSignInOptions3.l));
+                this.l.a(boso.b(this.k, c, googleSignInOptions3.q, googleSignInOptions3.k, googleSignInOptions3.m, googleSignInOptions3.l));
             } else {
                 this.j = googleSignInOptions2;
                 this.n = str;
             }
             this.o.d("Log Session ID: ".concat(String.valueOf(this.n)), new Object[0]);
-            if (fsbr.i()) {
-                final eiuu F = eiuu.F(eijj.e(',').i().d().l(fsbr.c()));
-                Stream map = Collection.EL.stream(eiuu.G(googleSignInOptions2.a())).map(new Function() { // from class: zqj
+            if (fuwn.i()) {
+                final elhz F = elhz.F(ekwo.e(',').i().d().l(fuwn.c()));
+                Stream map = Collection.EL.stream(elhz.G(googleSignInOptions2.a())).map(new Function() { // from class: abqj
                     @Override // java.util.function.Function
                     /* renamed from: andThen */
-                    public final /* synthetic */ Function mo464andThen(Function function) {
+                    public final /* synthetic */ Function mo479andThen(Function function) {
                         return Function$CC.$default$andThen(this, function);
                     }
 
@@ -240,14 +240,14 @@ public class SignInChimeraActivity extends qet {
                     }
                 });
                 Objects.requireNonNull(F);
-                eiuu eiuuVar = (eiuu) map.filter(new Predicate() { // from class: zqk
+                elhz elhzVar = (elhz) map.filter(new Predicate() { // from class: abqk
                     public final /* synthetic */ Predicate and(Predicate predicate) {
                         return Predicate$CC.$default$and(this, predicate);
                     }
 
                     @Override // java.util.function.Predicate
                     /* renamed from: negate */
-                    public final /* synthetic */ Predicate mo463negate() {
+                    public final /* synthetic */ Predicate mo478negate() {
                         return Predicate$CC.$default$negate(this);
                     }
 
@@ -258,12 +258,12 @@ public class SignInChimeraActivity extends qet {
 
                     @Override // java.util.function.Predicate
                     public final boolean test(Object obj) {
-                        return eiuu.this.contains((String) obj);
+                        return elhz.this.contains((String) obj);
                     }
-                }).collect(eipl.b);
-                if (!eiuuVar.isEmpty()) {
+                }).collect(elcq.b);
+                if (!elhzVar.isEmpty()) {
                     StringBuilder sb = new StringBuilder();
-                    Iterator<E> it = eiuuVar.iterator();
+                    Iterator<E> it = elhzVar.iterator();
                     if (it.hasNext()) {
                         while (true) {
                             sb.append((CharSequence) it.next());
@@ -279,25 +279,25 @@ public class SignInChimeraActivity extends qet {
                 }
             }
         }
-        bmgu.a(this, new eiiw() { // from class: zql
-            @Override // defpackage.eiiw
-            public final void lB(Object obj) {
+        bonm.a(this, new ekwb() { // from class: abql
+            @Override // defpackage.ekwb
+            public final void lY(Object obj) {
                 SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
-                signInChimeraActivity.l.a(bmgw.b(102, (bmgv) obj, signInChimeraActivity.n));
+                signInChimeraActivity.l.a(bono.b(102, (bonn) obj, signInChimeraActivity.n));
             }
         });
-        bmda a2 = bmda.a(this);
+        bojs a2 = bojs.a(this);
         this.p = a2;
-        ensj.t(a2.c(1, new eijr() { // from class: zqm
-            @Override // defpackage.eijr
-            public final Object a() {
+        eqgc.t(a2.c(1, new ekww() { // from class: abqm
+            @Override // defpackage.ekww
+            public final Object lK() {
                 SignInChimeraActivity signInChimeraActivity = SignInChimeraActivity.this;
-                return new zqv(signInChimeraActivity.getApplicationContext(), signInChimeraActivity.j, signInChimeraActivity.k, eiid.j(signInChimeraActivity)).a();
+                return new abqv(signInChimeraActivity.getApplicationContext(), signInChimeraActivity.j, signInChimeraActivity.k, ekvi.j(signInChimeraActivity)).a();
             }
-        }), new zqn(this), enre.a);
+        }), new abqn(this), eqex.a);
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
         bundle.putParcelable("sign_in_options", this.j);

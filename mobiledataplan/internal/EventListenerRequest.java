@@ -4,18 +4,18 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.cdzb;
-import defpackage.cecc;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.cgii;
+import defpackage.cglj;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class EventListenerRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new cecc();
+    public static final Parcelable.Creator CREATOR = new cglj();
     public int a;
     public String b;
     public boolean c;
@@ -32,7 +32,7 @@ public final class EventListenerRequest extends AbstractSafeParcelable {
         }
         if (obj instanceof EventListenerRequest) {
             EventListenerRequest eventListenerRequest = (EventListenerRequest) obj;
-            if (arwb.b(Integer.valueOf(this.a), Integer.valueOf(eventListenerRequest.a)) && arwb.b(this.b, eventListenerRequest.b) && arwb.b(Boolean.valueOf(this.c), Boolean.valueOf(eventListenerRequest.c)) && arwb.b(this.d, eventListenerRequest.d) && arwb.b(this.e, eventListenerRequest.e) && cdzb.b(this.f, eventListenerRequest.f)) {
+            if (atyq.b(Integer.valueOf(this.a), Integer.valueOf(eventListenerRequest.a)) && atyq.b(this.b, eventListenerRequest.b) && atyq.b(Boolean.valueOf(this.c), Boolean.valueOf(eventListenerRequest.c)) && atyq.b(this.d, eventListenerRequest.d) && atyq.b(this.e, eventListenerRequest.e) && cgii.b(this.f, eventListenerRequest.f)) {
                 return true;
             }
         }
@@ -40,30 +40,30 @@ public final class EventListenerRequest extends AbstractSafeParcelable {
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(this.a), this.b, Boolean.valueOf(this.c), this.d, this.e, Integer.valueOf(cdzb.a(this.f))});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(this.a), this.b, Boolean.valueOf(this.c), this.d, this.e, Integer.valueOf(cgii.a(this.f))});
     }
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("type", Integer.valueOf(this.a), arrayList);
-        arwa.b("packageName", this.b, arrayList);
-        arwa.b("requestToRegister", Boolean.valueOf(this.c), arrayList);
-        arwa.b("eventFlowId", this.d, arrayList);
-        arwa.b("uniqueRequestId", this.e, arrayList);
-        arwa.b("extraInfo", this.f, arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("type", Integer.valueOf(this.a), arrayList);
+        atyp.b("packageName", this.b, arrayList);
+        atyp.b("requestToRegister", Boolean.valueOf(this.c), arrayList);
+        atyp.b("eventFlowId", this.d, arrayList);
+        atyp.b("uniqueRequestId", this.e, arrayList);
+        atyp.b("extraInfo", this.f, arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
-        arxc.v(parcel, 2, this.b, false);
-        arxc.e(parcel, 3, this.c);
-        arxc.F(parcel, 4, this.d);
-        arxc.I(parcel, 5, this.e);
-        arxc.g(parcel, 6, this.f, false);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
+        atzr.v(parcel, 2, this.b, false);
+        atzr.e(parcel, 3, this.c);
+        atzr.F(parcel, 4, this.d);
+        atzr.I(parcel, 5, this.e);
+        atzr.g(parcel, 6, this.f, false);
+        atzr.c(parcel, a);
     }
 
     public EventListenerRequest(int i, String str, boolean z, Integer num, Long l, Bundle bundle) {

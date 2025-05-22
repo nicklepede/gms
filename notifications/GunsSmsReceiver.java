@@ -6,12 +6,12 @@ import android.provider.Telephony;
 import android.telephony.SmsMessage;
 import android.webkit.WebView;
 import com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver;
-import defpackage.fqnl;
+import defpackage.fthh;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class GunsSmsReceiver extends TracingBroadcastReceiver {
     private final WebView a;
@@ -22,10 +22,10 @@ public class GunsSmsReceiver extends TracingBroadcastReceiver {
     }
 
     @Override // com.google.android.gms.libs.punchclock.tracing.TracingBroadcastReceiver
-    public final void jz(Context context, Intent intent) {
+    public final void jP(Context context, Intent intent) {
         ArrayList arrayList = new ArrayList();
         SmsMessage[] messagesFromIntent = Telephony.Sms.Intents.getMessagesFromIntent(intent);
-        Pattern compile = Pattern.compile(fqnl.a.a().e());
+        Pattern compile = Pattern.compile(fthh.a.lK().e());
         for (SmsMessage smsMessage : messagesFromIntent) {
             Matcher matcher = compile.matcher(smsMessage.getDisplayMessageBody());
             while (matcher.find()) {

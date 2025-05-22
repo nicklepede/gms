@@ -1,12 +1,12 @@
 package com.google.android.gms.ads.internal.client;
 
 import android.os.Parcel;
-import defpackage.otn;
-import defpackage.oto;
+import defpackage.qmq;
+import defpackage.qmr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class ad extends otn implements ae {
+public final class ad extends qmq implements ae {
     final /* synthetic */ ag a;
 
     public ad() {
@@ -23,10 +23,10 @@ public final class ad extends otn implements ae {
         com.google.android.gms.ads.internal.util.client.f.a.post(new bt(this));
     }
 
-    @Override // defpackage.otn
-    public final boolean fm(int i, Parcel parcel, Parcel parcel2) {
+    @Override // defpackage.qmq
+    public final boolean fz(int i, Parcel parcel, Parcel parcel2) {
         if (i == 1) {
-            fq(parcel);
+            fD(parcel);
             c();
             parcel2.writeNoException();
         } else if (i == 2) {
@@ -34,7 +34,7 @@ public final class ad extends otn implements ae {
             parcel2.writeString(null);
         } else if (i == 3) {
             parcel2.writeNoException();
-            int i2 = oto.a;
+            int i2 = qmr.a;
             parcel2.writeInt(0);
         } else if (i == 4) {
             parcel2.writeNoException();
@@ -44,7 +44,7 @@ public final class ad extends otn implements ae {
                 return false;
             }
             parcel.readInt();
-            fq(parcel);
+            fD(parcel);
             c();
             parcel2.writeNoException();
         }

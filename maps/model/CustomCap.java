@@ -1,22 +1,22 @@
 package com.google.android.gms.maps.model;
 
-import defpackage.arwm;
-import defpackage.ccdr;
+import defpackage.atzb;
+import defpackage.ceml;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes5.dex */
 public final class CustomCap extends Cap {
-    public final ccdr c;
+    public final ceml c;
     public final float d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public CustomCap(ccdr ccdrVar, float f) {
-        super(3, ccdrVar, Float.valueOf(f));
-        arwm.t(ccdrVar, "bitmapDescriptor must not be null");
+    public CustomCap(ceml cemlVar, float f) {
+        super(3, cemlVar, Float.valueOf(f));
+        atzb.t(cemlVar, "bitmapDescriptor must not be null");
         if (f <= 0.0f) {
             throw new IllegalArgumentException("refWidth must be positive");
         }
-        this.c = ccdrVar;
+        this.c = cemlVar;
         this.d = f;
     }
 

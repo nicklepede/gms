@@ -3,23 +3,23 @@ package com.google.android.gms.fitness.service.wearable;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import com.google.android.gms.wearable.internal.NodeParcelable;
-import defpackage.bggg;
-import defpackage.bhaf;
-import defpackage.bhbc;
-import defpackage.djks;
-import defpackage.dkbc;
+import defpackage.bikw;
+import defpackage.bjev;
+import defpackage.bjfs;
+import defpackage.dlwl;
+import defpackage.dmmv;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
-public class WearableSyncConnectionChimeraService extends dkbc {
+public class WearableSyncConnectionChimeraService extends dmmv {
     private static boolean a;
 
     static {
-        bhaf.a();
+        bjev.a();
         a = false;
     }
 
-    @Override // defpackage.dkbc
+    @Override // defpackage.dmmv
     public final void c(NodeParcelable nodeParcelable) {
         boolean z;
         getApplicationContext();
@@ -28,7 +28,7 @@ public class WearableSyncConnectionChimeraService extends dkbc {
             return;
         }
         boolean z2 = false;
-        if (bhbc.a(djks.a(bggg.a(applicationContext).C().a), "com.google.android.gms.fitness.service.wearable.RECEIVE_WEAR_DATA_CAPABILITY")) {
+        if (bjfs.a(dlwl.a(bikw.a(applicationContext).C().a), "com.google.android.gms.fitness.service.wearable.RECEIVE_WEAR_DATA_CAPABILITY")) {
             try {
                 z = applicationContext.getPackageManager().getApplicationInfo("com.google.android.apps.fitness", 0).enabled;
             } catch (PackageManager.NameNotFoundException unused) {

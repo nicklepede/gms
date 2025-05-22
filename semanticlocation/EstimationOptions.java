@@ -3,15 +3,15 @@ package com.google.android.gms.semanticlocation;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arxc;
-import defpackage.czfw;
+import defpackage.atyp;
+import defpackage.atzr;
+import defpackage.dbpu;
 import java.util.ArrayList;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class EstimationOptions extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new czfw();
+    public static final Parcelable.Creator CREATOR = new dbpu();
     public final boolean a;
     public final boolean b;
 
@@ -37,17 +37,17 @@ public class EstimationOptions extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("shouldEstimateDetails", Boolean.valueOf(this.a), arrayList);
-        arwa.b("shouldProvidePlaceHierarchy", Boolean.valueOf(this.b), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("shouldEstimateDetails", Boolean.valueOf(this.a), arrayList);
+        atyp.b("shouldProvidePlaceHierarchy", Boolean.valueOf(this.b), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         boolean z = this.a;
-        int a = arxc.a(parcel);
-        arxc.e(parcel, 1, z);
-        arxc.e(parcel, 2, this.b);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.e(parcel, 1, z);
+        atzr.e(parcel, 2, this.b);
+        atzr.c(parcel, a);
     }
 }

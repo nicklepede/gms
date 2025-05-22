@@ -6,9 +6,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ListView;
 import com.google.android.cast.JGCastService;
-import defpackage.rpq;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class MaxHeightListView extends ListView {
     private int a;
@@ -19,7 +19,7 @@ public class MaxHeightListView extends ListView {
     }
 
     private final void a(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.k);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.k);
         this.a = obtainStyledAttributes.getDimensionPixelSize(0, 300);
         obtainStyledAttributes.recycle();
     }

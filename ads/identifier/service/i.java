@@ -8,21 +8,21 @@ import com.google.android.gms.ads.eventattestation.internal.p;
 import com.google.android.gms.ads.identifier.settings.ab;
 import com.google.android.gms.ads.identifier.settings.ac;
 import com.google.android.gms.common.api.Status;
-import defpackage.bxgi;
-import defpackage.enyl;
-import defpackage.enyp;
-import defpackage.enyr;
-import defpackage.feab;
-import defpackage.febw;
-import defpackage.fecj;
-import defpackage.fjzz;
-import defpackage.oto;
+import defpackage.bzoy;
+import defpackage.eqme;
+import defpackage.eqmi;
+import defpackage.eqmk;
+import defpackage.fgou;
+import defpackage.fgqp;
+import defpackage.fgrc;
+import defpackage.fmqe;
+import defpackage.qmr;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class i extends bxgi {
+public final class i extends bzoy {
     private final PlayInstallReferrerAttestationTokenRequestParcel a;
     private final int b;
     private final p c;
@@ -34,7 +34,7 @@ public final class i extends bxgi {
         this.b = i;
     }
 
-    @Override // defpackage.bxgi
+    @Override // defpackage.bzoy
     public final void f(Context context) {
         final ac a = ac.a(context);
         try {
@@ -43,43 +43,43 @@ public final class i extends bxgi {
             final String str2 = playInstallReferrerAttestationTokenRequestParcel.b;
             final byte[] bArr = playInstallReferrerAttestationTokenRequestParcel.c;
             final int i = this.b;
-            byte[] d = !fjzz.a.a().L() ? null : a.d(str, "playInstallReferrerAttestationToken", new ab() { // from class: com.google.android.gms.ads.identifier.settings.w
+            byte[] d = !fmqe.a.lK().L() ? null : a.d(str, "playInstallReferrerAttestationToken", new ab() { // from class: com.google.android.gms.ads.identifier.settings.w
                 @Override // com.google.android.gms.ads.identifier.settings.ab
-                public final void a(fecj fecjVar) {
-                    fecj v = enyr.a.v();
-                    fecj f = ac.this.f(str2, i);
+                public final void a(fgrc fgrcVar) {
+                    fgrc v = eqmk.a.v();
+                    fgrc f = ac.this.f(str2, i);
                     if (!v.b.L()) {
                         v.U();
                     }
                     byte[] bArr2 = bArr;
-                    enyr enyrVar = (enyr) v.b;
-                    enyl enylVar = (enyl) f.Q();
-                    enylVar.getClass();
-                    enyrVar.c = enylVar;
-                    enyrVar.b |= 1;
-                    feab D = v.D(bArr2, febw.a());
-                    if (!fecjVar.b.L()) {
-                        fecjVar.U();
+                    eqmk eqmkVar = (eqmk) v.b;
+                    eqme eqmeVar = (eqme) f.Q();
+                    eqmeVar.getClass();
+                    eqmkVar.c = eqmeVar;
+                    eqmkVar.b |= 1;
+                    fgou D = v.D(bArr2, fgqp.a());
+                    if (!fgrcVar.b.L()) {
+                        fgrcVar.U();
                     }
-                    enyp enypVar = (enyp) fecjVar.b;
-                    enyr enyrVar2 = (enyr) ((fecj) D).Q();
-                    enyp enypVar2 = enyp.a;
-                    enyrVar2.getClass();
-                    enypVar.d = enyrVar2;
-                    enypVar.c = 11;
+                    eqmi eqmiVar = (eqmi) fgrcVar.b;
+                    eqmk eqmkVar2 = (eqmk) ((fgrc) D).Q();
+                    eqmi eqmiVar2 = eqmi.a;
+                    eqmkVar2.getClass();
+                    eqmiVar.d = eqmkVar2;
+                    eqmiVar.c = 11;
                 }
             }, i);
             p pVar = this.c;
             PlayInstallReferrerAttestationTokenResponseParcel playInstallReferrerAttestationTokenResponseParcel = new PlayInstallReferrerAttestationTokenResponseParcel(d);
-            Parcel fr = pVar.fr();
-            oto.e(fr, playInstallReferrerAttestationTokenResponseParcel);
-            pVar.fu(2, fr);
+            Parcel fE = pVar.fE();
+            qmr.e(fE, playInstallReferrerAttestationTokenResponseParcel);
+            pVar.fH(2, fE);
         } catch (IOException | GeneralSecurityException e) {
             this.c.a(e.getMessage());
         }
     }
 
-    @Override // defpackage.bxgi
+    @Override // defpackage.bzoy
     public final void j(Status status) {
         this.c.a(status.j);
     }

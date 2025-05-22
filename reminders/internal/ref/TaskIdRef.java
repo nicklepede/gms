@@ -4,12 +4,12 @@ import android.os.Parcel;
 import com.google.android.gms.common.data.DataHolder;
 import com.google.android.gms.reminders.model.TaskId;
 import com.google.android.gms.reminders.model.TaskIdEntity;
-import defpackage.cxeb;
-import defpackage.cxew;
+import defpackage.cznx;
+import defpackage.czos;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
-public class TaskIdRef extends cxeb implements TaskId {
+public class TaskIdRef extends cznx implements TaskId {
     public TaskIdRef(DataHolder dataHolder, int i, String str) {
         super(dataHolder, i, str);
     }
@@ -29,7 +29,7 @@ public class TaskIdRef extends cxeb implements TaskId {
         return 0;
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final boolean equals(Object obj) {
         if (!(obj instanceof TaskId)) {
             return false;
@@ -40,18 +40,18 @@ public class TaskIdRef extends cxeb implements TaskId {
         return TaskIdEntity.d(this, (TaskId) obj);
     }
 
-    @Override // defpackage.arnw
+    @Override // defpackage.atql
     public final int hashCode() {
         return TaskIdEntity.b(this);
     }
 
-    @Override // defpackage.arnw, defpackage.arod
+    @Override // defpackage.atql, defpackage.atqs
     public final /* synthetic */ Object l() {
         return new TaskIdEntity(this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        cxew.a(new TaskIdEntity(this), parcel);
+        czos.a(new TaskIdEntity(this), parcel);
     }
 }

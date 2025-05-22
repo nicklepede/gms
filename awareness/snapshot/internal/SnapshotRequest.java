@@ -4,15 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.awareness.snapshot.internal.BeaconStateImpl;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.ahgu;
-import defpackage.arxc;
+import defpackage.ajhk;
+import defpackage.atzr;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SnapshotRequest extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new ahgu();
+    public static final Parcelable.Creator CREATOR = new ajhk();
     public final int a;
     public final ArrayList b;
     public final int c;
@@ -76,11 +76,11 @@ public class SnapshotRequest extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         int i2 = this.a;
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 2, i2);
-        arxc.y(parcel, 3, this.b, false);
-        arxc.o(parcel, 4, this.c);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 2, i2);
+        atzr.y(parcel, 3, this.b, false);
+        atzr.o(parcel, 4, this.c);
+        atzr.c(parcel, a);
     }
 
     public SnapshotRequest(int i, ArrayList arrayList, int i2) {

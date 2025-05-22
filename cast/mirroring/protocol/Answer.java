@@ -1,14 +1,14 @@
 package com.google.android.gms.cast.mirroring.protocol;
 
-import defpackage.aneb;
-import defpackage.fvbo;
+import defpackage.apfo;
+import defpackage.fxxm;
 import java.util.List;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public final class Answer {
-    private aneb castMode;
+    private apfo castMode;
     private Display display;
     private List receiverRtcpEventLog;
     private List rtpExtensions;
@@ -16,11 +16,11 @@ public final class Answer {
     private List ssrcs;
     private long udpPort;
 
-    public Answer(aneb anebVar, List list, List list2, long j, List list3, List list4, Display display) {
-        fvbo.f(anebVar, "castMode");
-        fvbo.f(list, "sendIndexes");
-        fvbo.f(list2, "ssrcs");
-        this.castMode = anebVar;
+    public Answer(apfo apfoVar, List list, List list2, long j, List list3, List list4, Display display) {
+        fxxm.f(apfoVar, "castMode");
+        fxxm.f(list, "sendIndexes");
+        fxxm.f(list2, "ssrcs");
+        this.castMode = apfoVar;
         this.sendIndexes = list;
         this.ssrcs = list2;
         this.udpPort = j;
@@ -29,9 +29,9 @@ public final class Answer {
         this.display = display;
     }
 
-    public static /* synthetic */ Answer copy$default(Answer answer, aneb anebVar, List list, List list2, long j, List list3, List list4, Display display, int i, Object obj) {
+    public static /* synthetic */ Answer copy$default(Answer answer, apfo apfoVar, List list, List list2, long j, List list3, List list4, Display display, int i, Object obj) {
         if ((i & 1) != 0) {
-            anebVar = answer.castMode;
+            apfoVar = answer.castMode;
         }
         if ((i & 2) != 0) {
             list = answer.sendIndexes;
@@ -55,10 +55,10 @@ public final class Answer {
         List list5 = list3;
         long j2 = j;
         List list6 = list2;
-        return answer.copy(anebVar, list, list6, j2, list5, list4, display2);
+        return answer.copy(apfoVar, list, list6, j2, list5, list4, display2);
     }
 
-    public final aneb component1() {
+    public final apfo component1() {
         return this.castMode;
     }
 
@@ -86,11 +86,11 @@ public final class Answer {
         return this.display;
     }
 
-    public final Answer copy(aneb anebVar, List list, List list2, long j, List list3, List list4, Display display) {
-        fvbo.f(anebVar, "castMode");
-        fvbo.f(list, "sendIndexes");
-        fvbo.f(list2, "ssrcs");
-        return new Answer(anebVar, list, list2, j, list3, list4, display);
+    public final Answer copy(apfo apfoVar, List list, List list2, long j, List list3, List list4, Display display) {
+        fxxm.f(apfoVar, "castMode");
+        fxxm.f(list, "sendIndexes");
+        fxxm.f(list2, "ssrcs");
+        return new Answer(apfoVar, list, list2, j, list3, list4, display);
     }
 
     public boolean equals(Object obj) {
@@ -101,10 +101,10 @@ public final class Answer {
             return false;
         }
         Answer answer = (Answer) obj;
-        return this.castMode == answer.castMode && fvbo.n(this.sendIndexes, answer.sendIndexes) && fvbo.n(this.ssrcs, answer.ssrcs) && this.udpPort == answer.udpPort && fvbo.n(this.receiverRtcpEventLog, answer.receiverRtcpEventLog) && fvbo.n(this.rtpExtensions, answer.rtpExtensions) && fvbo.n(this.display, answer.display);
+        return this.castMode == answer.castMode && fxxm.n(this.sendIndexes, answer.sendIndexes) && fxxm.n(this.ssrcs, answer.ssrcs) && this.udpPort == answer.udpPort && fxxm.n(this.receiverRtcpEventLog, answer.receiverRtcpEventLog) && fxxm.n(this.rtpExtensions, answer.rtpExtensions) && fxxm.n(this.display, answer.display);
     }
 
-    public final aneb getCastMode() {
+    public final apfo getCastMode() {
         return this.castMode;
     }
 
@@ -144,9 +144,9 @@ public final class Answer {
         return hashCode3 + (display != null ? display.hashCode() : 0);
     }
 
-    public final void setCastMode(aneb anebVar) {
-        fvbo.f(anebVar, "<set-?>");
-        this.castMode = anebVar;
+    public final void setCastMode(apfo apfoVar) {
+        fxxm.f(apfoVar, "<set-?>");
+        this.castMode = apfoVar;
     }
 
     public final void setDisplay(Display display) {
@@ -162,12 +162,12 @@ public final class Answer {
     }
 
     public final void setSendIndexes(List list) {
-        fvbo.f(list, "<set-?>");
+        fxxm.f(list, "<set-?>");
         this.sendIndexes = list;
     }
 
     public final void setSsrcs(List list) {
-        fvbo.f(list, "<set-?>");
+        fxxm.f(list, "<set-?>");
         this.ssrcs = list;
     }
 
@@ -179,7 +179,7 @@ public final class Answer {
         return "Answer(castMode=" + this.castMode + ", sendIndexes=" + this.sendIndexes + ", ssrcs=" + this.ssrcs + ", udpPort=" + this.udpPort + ", receiverRtcpEventLog=" + this.receiverRtcpEventLog + ", rtpExtensions=" + this.rtpExtensions + ", display=" + this.display + ")";
     }
 
-    public /* synthetic */ Answer(aneb anebVar, List list, List list2, long j, List list3, List list4, Display display, int i, DefaultConstructorMarker defaultConstructorMarker) {
-        this(anebVar, list, list2, j, (i & 16) != 0 ? null : list3, (i & 32) != 0 ? null : list4, (i & 64) != 0 ? null : display);
+    public /* synthetic */ Answer(apfo apfoVar, List list, List list2, long j, List list3, List list4, Display display, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this(apfoVar, list, list2, j, (i & 16) != 0 ? null : list3, (i & 32) != 0 ? null : list4, (i & 64) != 0 ? null : display);
     }
 }

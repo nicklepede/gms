@@ -8,17 +8,17 @@ import android.text.TextUtils;
 import android.util.EventLog;
 import com.google.android.gms.R;
 import com.google.android.gms.libs.scheduler.GmsTaskBoundService;
-import defpackage.byjl;
-import defpackage.byln;
-import defpackage.czbu;
-import defpackage.czbw;
-import defpackage.frtq;
+import defpackage.casd;
+import defpackage.cauf;
+import defpackage.dbls;
+import defpackage.dblu;
+import defpackage.fuoj;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class SnetWatchdogTaskService extends GmsTaskBoundService {
     public static final long a = TimeUnit.MINUTES.toMillis(2);
@@ -29,13 +29,13 @@ public class SnetWatchdogTaskService extends GmsTaskBoundService {
     }
 
     public static void d(Context context) {
-        byjl.a(context).d("snet_watchdog_task_tag", SnetWatchdogTaskService.class.getName());
+        casd.a(context).d("snet_watchdog_task_tag", SnetWatchdogTaskService.class.getName());
     }
 
     @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.gms.libs.scheduler.GmsTaskServiceInterface
-    public final int a(byln bylnVar) {
+    public final int a(cauf caufVar) {
         String str = "";
-        Bundle bundle = bylnVar.b;
+        Bundle bundle = caufVar.b;
         if (bundle == null) {
             return 2;
         }
@@ -46,9 +46,9 @@ public class SnetWatchdogTaskService extends GmsTaskBoundService {
         if (string == null || string2 == null) {
             return 2;
         }
-        czbu czbuVar = new czbu(this.c, i);
-        czbuVar.f = string;
-        czbuVar.g = string2;
+        dbls dblsVar = new dbls(this.c, i);
+        dblsVar.f = string;
+        dblsVar.g = string2;
         String packageName = this.c.getApplicationContext().getPackageName();
         String string3 = this.c.getString(R.string.common_snet_process);
         String valueOf = String.valueOf(packageName);
@@ -65,8 +65,8 @@ public class SnetWatchdogTaskService extends GmsTaskBoundService {
             String concat = valueOf.concat(valueOf2);
             ActivityManager.RunningAppProcessInfo next = it.next();
             if (concat.equals(next.processName)) {
-                czbu.b(j);
-                if (frtq.r()) {
+                dbls.b(j);
+                if (fuoj.r()) {
                     ArrayList arrayList = new ArrayList();
                     try {
                         EventLog.readEvents(new int[]{1397638484}, arrayList);
@@ -82,24 +82,24 @@ public class SnetWatchdogTaskService extends GmsTaskBoundService {
                     } catch (IOException | ClassCastException unused) {
                     }
                     if (!TextUtils.isEmpty(str)) {
-                        czbu.e = str;
+                        dbls.e = str;
                         EventLog.writeEvent(1397638484, "do-not-log-execution-checkpoint-tag", -1, "done");
                     }
                 }
-                czbuVar.c(4);
+                dblsVar.c(4);
                 Process.killProcess(next.pid);
             }
         }
         return 0;
     }
 
-    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.qan
+    @Override // com.google.android.gms.libs.scheduler.GmsTaskBoundService, com.google.android.chimera.BoundService, defpackage.rtr
     public final void onCreate() {
         this.c = this;
         super.onCreate();
     }
 
-    SnetWatchdogTaskService(czbw czbwVar, Context context) {
+    SnetWatchdogTaskService(dblu dbluVar, Context context) {
         this.c = context;
     }
 }

@@ -4,19 +4,19 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.Parcel;
 import android.os.Parcelable;
-import defpackage.alxg;
-import defpackage.alxh;
+import defpackage.anyr;
+import defpackage.anys;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class SetupBinder extends Binder implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new alxg();
+    public static final Parcelable.Creator CREATOR = new anyr();
     public Intent a;
     private boolean b = false;
-    private alxh c;
+    private anys c;
 
-    public SetupBinder(Intent intent, alxh alxhVar) {
-        this.c = alxhVar;
+    public SetupBinder(Intent intent, anys anysVar) {
+        this.c = anysVar;
         this.a = intent;
     }
 
@@ -28,10 +28,10 @@ public class SetupBinder extends Binder implements Parcelable {
         return this.b;
     }
 
-    public final alxh c() {
-        alxh alxhVar = this.c;
+    public final anys c() {
+        anys anysVar = this.c;
         this.c = null;
-        return alxhVar;
+        return anysVar;
     }
 
     @Override // android.os.Parcelable

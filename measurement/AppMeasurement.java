@@ -3,27 +3,27 @@ package com.google.android.gms.measurement;
 import android.content.Context;
 import android.os.Bundle;
 import com.google.android.gms.measurement.api.internal.InitializationParams;
-import defpackage.arwm;
-import defpackage.cdfu;
-import defpackage.cdfv;
-import defpackage.cdfw;
-import defpackage.cdhl;
-import defpackage.cdqa;
-import defpackage.cdre;
-import defpackage.cdsn;
+import defpackage.atzb;
+import defpackage.cfot;
+import defpackage.cfou;
+import defpackage.cfov;
+import defpackage.cfqk;
+import defpackage.cfyy;
+import defpackage.cgac;
+import defpackage.cgbl;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 @Deprecated
 /* loaded from: classes5.dex */
 public class AppMeasurement {
     private static volatile AppMeasurement a;
-    private final cdfw b;
+    private final cfov b;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class ConditionalUserProperty {
         public boolean mActive;
         public String mAppId;
@@ -46,47 +46,47 @@ public class AppMeasurement {
         }
 
         public ConditionalUserProperty(Bundle bundle) {
-            arwm.s(bundle);
-            this.mAppId = (String) cdre.a(bundle, "app_id", String.class, null);
-            this.mOrigin = (String) cdre.a(bundle, "origin", String.class, null);
-            this.mName = (String) cdre.a(bundle, "name", String.class, null);
-            this.mValue = cdre.a(bundle, "value", Object.class, null);
-            this.mTriggerEventName = (String) cdre.a(bundle, "trigger_event_name", String.class, null);
-            this.mTriggerTimeout = ((Long) cdre.a(bundle, "trigger_timeout", Long.class, 0L)).longValue();
-            this.mTimedOutEventName = (String) cdre.a(bundle, "timed_out_event_name", String.class, null);
-            this.mTimedOutEventParams = (Bundle) cdre.a(bundle, "timed_out_event_params", Bundle.class, null);
-            this.mTriggeredEventName = (String) cdre.a(bundle, "triggered_event_name", String.class, null);
-            this.mTriggeredEventParams = (Bundle) cdre.a(bundle, "triggered_event_params", Bundle.class, null);
-            this.mTimeToLive = ((Long) cdre.a(bundle, "time_to_live", Long.class, 0L)).longValue();
-            this.mExpiredEventName = (String) cdre.a(bundle, "expired_event_name", String.class, null);
-            this.mExpiredEventParams = (Bundle) cdre.a(bundle, "expired_event_params", Bundle.class, null);
-            this.mActive = ((Boolean) cdre.a(bundle, "active", Boolean.class, false)).booleanValue();
-            this.mCreationTimestamp = ((Long) cdre.a(bundle, "creation_timestamp", Long.class, 0L)).longValue();
-            this.mTriggeredTimestamp = ((Long) cdre.a(bundle, "triggered_timestamp", Long.class, 0L)).longValue();
+            atzb.s(bundle);
+            this.mAppId = (String) cgac.a(bundle, "app_id", String.class, null);
+            this.mOrigin = (String) cgac.a(bundle, "origin", String.class, null);
+            this.mName = (String) cgac.a(bundle, "name", String.class, null);
+            this.mValue = cgac.a(bundle, "value", Object.class, null);
+            this.mTriggerEventName = (String) cgac.a(bundle, "trigger_event_name", String.class, null);
+            this.mTriggerTimeout = ((Long) cgac.a(bundle, "trigger_timeout", Long.class, 0L)).longValue();
+            this.mTimedOutEventName = (String) cgac.a(bundle, "timed_out_event_name", String.class, null);
+            this.mTimedOutEventParams = (Bundle) cgac.a(bundle, "timed_out_event_params", Bundle.class, null);
+            this.mTriggeredEventName = (String) cgac.a(bundle, "triggered_event_name", String.class, null);
+            this.mTriggeredEventParams = (Bundle) cgac.a(bundle, "triggered_event_params", Bundle.class, null);
+            this.mTimeToLive = ((Long) cgac.a(bundle, "time_to_live", Long.class, 0L)).longValue();
+            this.mExpiredEventName = (String) cgac.a(bundle, "expired_event_name", String.class, null);
+            this.mExpiredEventParams = (Bundle) cgac.a(bundle, "expired_event_params", Bundle.class, null);
+            this.mActive = ((Boolean) cgac.a(bundle, "active", Boolean.class, false)).booleanValue();
+            this.mCreationTimestamp = ((Long) cgac.a(bundle, "creation_timestamp", Long.class, 0L)).longValue();
+            this.mTriggeredTimestamp = ((Long) cgac.a(bundle, "triggered_timestamp", Long.class, 0L)).longValue();
         }
     }
 
-    public AppMeasurement(cdsn cdsnVar) {
-        this.b = new cdfv(cdsnVar);
+    public AppMeasurement(cgbl cgblVar) {
+        this.b = new cfou(cgblVar);
     }
 
     @Deprecated
     public static AppMeasurement getInstance(Context context) {
-        cdhl.a(context);
+        cfqk.a(context);
         if (a == null) {
             synchronized (AppMeasurement.class) {
                 if (a == null) {
-                    cdsn cdsnVar = null;
-                    if (!cdhl.a(context)) {
+                    cgbl cgblVar = null;
+                    if (!cfqk.a(context)) {
                         try {
-                            cdsnVar = (cdsn) Class.forName("com.google.firebase.analytics.FirebaseAnalytics").getDeclaredMethod("getScionFrontendApiImplementation", Context.class, Bundle.class).invoke(null, context, null);
+                            cgblVar = (cgbl) Class.forName("com.google.firebase.analytics.FirebaseAnalytics").getDeclaredMethod("getScionFrontendApiImplementation", Context.class, Bundle.class).invoke(null, context, null);
                         } catch (ClassNotFoundException | Exception unused) {
                         }
                     }
-                    if (cdsnVar != null) {
-                        a = new AppMeasurement(cdsnVar);
+                    if (cgblVar != null) {
+                        a = new AppMeasurement(cgblVar);
                     } else {
-                        a = new AppMeasurement(cdqa.B(context, new InitializationParams(0L, 0L, true, null, null, null, null, null)));
+                        a = new AppMeasurement(cfyy.A(context, new InitializationParams(0L, 0L, true, null, null, null, null, null)));
                     }
                 }
             }
@@ -150,7 +150,7 @@ public class AppMeasurement {
     }
 
     public void setConditionalUserProperty(ConditionalUserProperty conditionalUserProperty) {
-        arwm.s(conditionalUserProperty);
+        atzb.s(conditionalUserProperty);
         Bundle bundle = new Bundle();
         String str = conditionalUserProperty.mAppId;
         if (str != null) {
@@ -166,7 +166,7 @@ public class AppMeasurement {
         }
         Object obj = conditionalUserProperty.mValue;
         if (obj != null) {
-            cdre.b(bundle, obj);
+            cgac.b(bundle, obj);
         }
         String str4 = conditionalUserProperty.mTriggerEventName;
         if (str4 != null) {
@@ -198,14 +198,14 @@ public class AppMeasurement {
         if (bundle4 != null) {
             bundle.putBundle("expired_event_params", bundle4);
         }
-        cdfw cdfwVar = this.b;
+        cfov cfovVar = this.b;
         bundle.putLong("creation_timestamp", conditionalUserProperty.mCreationTimestamp);
         bundle.putBoolean("active", conditionalUserProperty.mActive);
         bundle.putLong("triggered_timestamp", conditionalUserProperty.mTriggeredTimestamp);
-        cdfwVar.l(bundle);
+        cfovVar.l(bundle);
     }
 
-    public AppMeasurement(cdqa cdqaVar) {
-        this.b = new cdfu(cdqaVar);
+    public AppMeasurement(cfyy cfyyVar) {
+        this.b = new cfot(cfyyVar);
     }
 }

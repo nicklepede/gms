@@ -3,12 +3,12 @@ package com.google.android.gms.family.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import defpackage.azrv;
+import defpackage.bbvr;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class MemberDataModel implements ReflectedParcelable {
-    public static final Parcelable.Creator CREATOR = new azrv();
+    public static final Parcelable.Creator CREATOR = new bbvr();
     public final String a;
     public final String b;
     public final String c;
@@ -33,7 +33,7 @@ public final class MemberDataModel implements ReflectedParcelable {
             r5 = this;
             r5.<init>()
             java.lang.String r0 = r6.readString()
-            defpackage.eiig.x(r0)
+            defpackage.ekvl.y(r0)
             r5.a = r0
             java.lang.String r0 = r6.readString()
             r5.b = r0
@@ -58,7 +58,7 @@ public final class MemberDataModel implements ReflectedParcelable {
         L3b:
             r5.h = r0
             java.lang.String r0 = r6.readString()
-            defpackage.eiig.x(r0)
+            defpackage.ekvl.y(r0)
             int r3 = r0.hashCode()
             r4 = -1553293955(0xffffffffa36a9d7d, float:-1.2718515E-17)
             if (r3 == r4) goto L5d

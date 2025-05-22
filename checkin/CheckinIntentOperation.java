@@ -4,14 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.chimera.WakefulBroadcastReceiver;
-import defpackage.anrr;
-import defpackage.antd;
-import defpackage.arxo;
+import defpackage.aptj;
+import defpackage.apuv;
+import defpackage.auad;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
 public class CheckinIntentOperation extends IntentOperation {
-    private static final arxo a = antd.a("CheckinIntentOperation");
+    private static final auad a = apuv.a("CheckinIntentOperation");
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x007a  */
     /* JADX WARN: Removed duplicated region for block: B:26:0x009a  */
@@ -42,7 +42,7 @@ public class CheckinIntentOperation extends IntentOperation {
             if (bundleExtra == null) {
                 bundleExtra = new Bundle();
             }
-            new anrr(this, bundleExtra).a();
+            new aptj(this, bundleExtra).a();
         } finally {
             WakefulBroadcastReceiver.completeWakefulIntent(intent);
         }

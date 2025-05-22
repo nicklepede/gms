@@ -4,14 +4,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.ads.afma.proto2api.b;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwm;
-import defpackage.arxc;
-import defpackage.bhtt;
+import defpackage.atzb;
+import defpackage.atzr;
+import defpackage.bjyi;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public final class GassResponseParcel extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new bhtt();
+    public static final Parcelable.Creator CREATOR = new bjyi();
     public final int a;
     private final b b;
     private final byte[] c;
@@ -40,19 +40,19 @@ public final class GassResponseParcel extends AbstractSafeParcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = arxc.a(parcel);
-        arxc.o(parcel, 1, this.a);
+        int a = atzr.a(parcel);
+        atzr.o(parcel, 1, this.a);
         byte[] bArr = this.c;
         if (bArr == null) {
             bArr = this.b.r();
         }
-        arxc.i(parcel, 2, bArr, false);
-        arxc.c(parcel, a);
+        atzr.i(parcel, 2, bArr, false);
+        atzr.c(parcel, a);
     }
 
     public GassResponseParcel(b bVar) {
         this.a = 1;
-        arwm.s(bVar);
+        atzb.s(bVar);
         this.b = bVar;
         this.c = null;
         a();

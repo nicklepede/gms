@@ -3,15 +3,15 @@ package com.google.android.gms.semanticlocation;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arxc;
-import defpackage.czfz;
-import defpackage.czgj;
-import defpackage.czgn;
+import defpackage.atzr;
+import defpackage.dbpx;
+import defpackage.dbqh;
+import defpackage.dbql;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes6.dex */
 public class PlaceCandidate extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new czgj();
+    public static final Parcelable.Creator CREATOR = new dbqh();
     public final Identifier a;
     public final int b;
     public final float c;
@@ -23,9 +23,9 @@ public class PlaceCandidate extends AbstractSafeParcelable {
     public final boolean g;
     public final double h;
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Identifier extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new czfz();
+        public static final Parcelable.Creator CREATOR = new dbpx();
         public final long a;
         public final long b;
 
@@ -41,16 +41,16 @@ public class PlaceCandidate extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             long j = this.a;
-            int a = arxc.a(parcel);
-            arxc.q(parcel, 1, j);
-            arxc.q(parcel, 2, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.q(parcel, 1, j);
+            atzr.q(parcel, 2, this.b);
+            atzr.c(parcel, a);
         }
     }
 
-    /* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+    /* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
     public class Point extends AbstractSafeParcelable {
-        public static final Parcelable.Creator CREATOR = new czgn();
+        public static final Parcelable.Creator CREATOR = new dbql();
         public final int a;
         public final int b;
 
@@ -66,10 +66,10 @@ public class PlaceCandidate extends AbstractSafeParcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel parcel, int i) {
             int i2 = this.a;
-            int a = arxc.a(parcel);
-            arxc.o(parcel, 1, i2);
-            arxc.o(parcel, 2, this.b);
-            arxc.c(parcel, a);
+            int a = atzr.a(parcel);
+            atzr.o(parcel, 1, i2);
+            atzr.o(parcel, 2, this.b);
+            atzr.c(parcel, a);
         }
     }
 
@@ -92,15 +92,15 @@ public class PlaceCandidate extends AbstractSafeParcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Identifier identifier = this.a;
-        int a = arxc.a(parcel);
-        arxc.t(parcel, 1, identifier, i, false);
-        arxc.o(parcel, 2, this.b);
-        arxc.l(parcel, 3, this.c);
-        arxc.l(parcel, 4, this.d);
-        arxc.t(parcel, 5, this.e, i, false);
-        arxc.e(parcel, 6, this.f);
-        arxc.e(parcel, 7, this.g);
-        arxc.j(parcel, 8, this.h);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.t(parcel, 1, identifier, i, false);
+        atzr.o(parcel, 2, this.b);
+        atzr.l(parcel, 3, this.c);
+        atzr.l(parcel, 4, this.d);
+        atzr.t(parcel, 5, this.e, i, false);
+        atzr.e(parcel, 6, this.f);
+        atzr.e(parcel, 7, this.g);
+        atzr.j(parcel, 8, this.h);
+        atzr.c(parcel, a);
     }
 }

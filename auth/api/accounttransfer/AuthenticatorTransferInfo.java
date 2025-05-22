@@ -6,17 +6,17 @@ import android.os.Parcelable;
 import com.google.android.gms.auth.util.BinarySerializableFastSafeParcelableJson;
 import com.google.android.gms.common.server.response.FastJsonResponse$Field;
 import defpackage.a;
-import defpackage.arxc;
-import defpackage.bsa;
-import defpackage.vos;
+import defpackage.atzr;
+import defpackage.bsl;
+import defpackage.xkt;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
 public class AuthenticatorTransferInfo extends BinarySerializableFastSafeParcelableJson {
-    public static final Parcelable.Creator CREATOR = new vos();
+    public static final Parcelable.Creator CREATOR = new xkt();
     private static final HashMap h;
     final Set a;
     final int b;
@@ -44,7 +44,7 @@ public class AuthenticatorTransferInfo extends BinarySerializableFastSafeParcela
         this.g = deviceMetaData;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final Object a(FastJsonResponse$Field fastJsonResponse$Field) {
         int i = fastJsonResponse$Field.g;
         if (i == 1) {
@@ -62,17 +62,17 @@ public class AuthenticatorTransferInfo extends BinarySerializableFastSafeParcela
         throw new IllegalStateException(a.j(i, "Unknown SafeParcelable id="));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     public final /* synthetic */ Map b() {
         return h;
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final boolean e(FastJsonResponse$Field fastJsonResponse$Field) {
         return this.a.contains(Integer.valueOf(fastJsonResponse$Field.g));
     }
 
-    @Override // defpackage.ashs
+    @Override // defpackage.aulm
     protected final void f(FastJsonResponse$Field fastJsonResponse$Field, String str, String str2) {
         int i = fastJsonResponse$Field.g;
         if (i != 2) {
@@ -82,24 +82,24 @@ public class AuthenticatorTransferInfo extends BinarySerializableFastSafeParcela
         this.a.add(Integer.valueOf(i));
     }
 
-    @Override // defpackage.ashs
-    protected final void gf(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
-        int i = fastJsonResponse$Field.g;
-        if (i != 4) {
-            throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be a byte array."));
-        }
-        this.e = bArr;
-        this.a.add(Integer.valueOf(i));
-    }
-
-    @Override // defpackage.ashs
-    protected final void gx(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
+    @Override // defpackage.aulm
+    protected final void gM(FastJsonResponse$Field fastJsonResponse$Field, String str, int i) {
         int i2 = fastJsonResponse$Field.g;
         if (i2 != 3) {
             throw new IllegalArgumentException(a.l(i2, "Field with id=", " is not known to be an int."));
         }
         this.d = i;
         this.a.add(Integer.valueOf(i2));
+    }
+
+    @Override // defpackage.aulm
+    protected final void gu(FastJsonResponse$Field fastJsonResponse$Field, String str, byte[] bArr) {
+        int i = fastJsonResponse$Field.g;
+        if (i != 4) {
+            throw new IllegalArgumentException(a.l(i, "Field with id=", " is not known to be a byte array."));
+        }
+        this.e = bArr;
+        this.a.add(Integer.valueOf(i));
     }
 
     public final void j(PendingIntent pendingIntent) {
@@ -114,30 +114,30 @@ public class AuthenticatorTransferInfo extends BinarySerializableFastSafeParcela
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         Set set = this.a;
-        int a = arxc.a(parcel);
+        int a = atzr.a(parcel);
         if (set.contains(1)) {
-            arxc.o(parcel, 1, this.b);
+            atzr.o(parcel, 1, this.b);
         }
         if (set.contains(2)) {
-            arxc.v(parcel, 2, this.c, true);
+            atzr.v(parcel, 2, this.c, true);
         }
         if (set.contains(3)) {
-            arxc.o(parcel, 3, this.d);
+            atzr.o(parcel, 3, this.d);
         }
         if (set.contains(4)) {
-            arxc.i(parcel, 4, this.e, true);
+            atzr.i(parcel, 4, this.e, true);
         }
         if (set.contains(5)) {
-            arxc.t(parcel, 5, this.f, i, true);
+            atzr.t(parcel, 5, this.f, i, true);
         }
         if (set.contains(6)) {
-            arxc.t(parcel, 6, this.g, i, true);
+            atzr.t(parcel, 6, this.g, i, true);
         }
-        arxc.c(parcel, a);
+        atzr.c(parcel, a);
     }
 
     public AuthenticatorTransferInfo() {
-        this.a = new bsa(3);
+        this.a = new bsl(3);
         this.b = 1;
     }
 }

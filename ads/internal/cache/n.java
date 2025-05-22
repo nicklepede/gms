@@ -1,11 +1,11 @@
 package com.google.android.gms.ads.internal.cache;
 
 import com.google.android.gms.common.ConnectionResult;
-import defpackage.arth;
+import defpackage.atvw;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes2.dex */
-public final class n implements arth {
+public final class n implements atvw {
     final /* synthetic */ com.google.android.gms.ads.internal.util.future.i a;
     final /* synthetic */ o b;
 
@@ -14,8 +14,8 @@ public final class n implements arth {
         this.b = oVar;
     }
 
-    @Override // defpackage.arth
-    public final void hK(ConnectionResult connectionResult) {
+    @Override // defpackage.atvw
+    public final void ia(ConnectionResult connectionResult) {
         synchronized (this.b.d) {
             this.a.c(new RuntimeException("Connection failed."));
         }

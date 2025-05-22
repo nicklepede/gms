@@ -6,33 +6,33 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import com.google.android.chimera.IntentOperation;
 import com.google.android.gms.chimera.modules.trustagent.AppContextProvider;
-import defpackage.asej;
-import defpackage.aseu;
-import defpackage.asot;
-import defpackage.asqh;
-import defpackage.bqqa;
-import defpackage.bqqe;
-import defpackage.dgld;
-import defpackage.dgmw;
-import defpackage.dgmy;
-import defpackage.dgnc;
-import defpackage.dgpq;
-import defpackage.eiig;
-import defpackage.eijr;
-import defpackage.ekhb;
-import defpackage.ekhf;
-import defpackage.ekhg;
-import defpackage.fecj;
-import defpackage.fecp;
+import defpackage.auid;
+import defpackage.auio;
+import defpackage.ausn;
+import defpackage.auub;
+import defpackage.bsxr;
+import defpackage.bsxv;
+import defpackage.diwi;
+import defpackage.diyb;
+import defpackage.diyd;
+import defpackage.diyh;
+import defpackage.djav;
+import defpackage.ekvl;
+import defpackage.ekww;
+import defpackage.emun;
+import defpackage.emur;
+import defpackage.emus;
+import defpackage.fgrc;
+import defpackage.fgri;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class UserPresentIntentOperation extends IntentOperation {
     private SharedPreferences a;
-    private bqqa b;
+    private bsxr b;
 
     static {
-        asot.b("TrustAgent", asej.TRUSTAGENT);
+        ausn.b("TrustAgent", auid.TRUSTAGENT);
     }
 
     private final void a(boolean z, long j, boolean z2) {
@@ -48,107 +48,107 @@ public class UserPresentIntentOperation extends IntentOperation {
 
     @Override // com.google.android.chimera.IntentOperation
     public final void onHandleIntent(Intent intent) {
-        ekhg ekhgVar;
+        emus emusVar;
         Context a = AppContextProvider.a();
-        eijr eijrVar = bqqe.a;
-        this.b = new bqqa();
-        if (asqh.a()) {
-            dgpq e = dgpq.e();
-            fecj v = ekhg.a.v();
-            this.a = dgnc.a(a);
+        ekww ekwwVar = bsxv.a;
+        this.b = new bsxr();
+        if (auub.a()) {
+            djav e = djav.e();
+            fgrc v = emus.a.v();
+            this.a = diyh.a(a);
             long currentTimeMillis = System.currentTimeMillis();
             if (currentTimeMillis - this.a.getLong("coffee_last_log_trustlet_configuration_key", 0L) >= 28800000) {
                 synchronized (e.a) {
-                    ekhgVar = e.c;
+                    emusVar = e.c;
                 }
-                fecj fecjVar = (fecj) ekhgVar.iB(5, null);
-                fecjVar.X(ekhgVar);
+                fgrc fgrcVar = (fgrc) emusVar.iQ(5, null);
+                fgrcVar.X(emusVar);
                 this.a.edit().putLong("coffee_last_log_trustlet_configuration_key", currentTimeMillis).apply();
-                v = fecjVar;
+                v = fgrcVar;
             }
             boolean isKeyguardSecure = ((KeyguardManager) a.getSystemService("keyguard")).isKeyguardSecure();
-            ekhf ekhfVar = ekhf.USER_PRESENT_UNLOCK;
+            emur emurVar = emur.USER_PRESENT_UNLOCK;
             if (!v.b.L()) {
                 v.U();
             }
-            ekhg ekhgVar2 = (ekhg) v.b;
-            ekhgVar2.c = ekhfVar.g;
-            ekhgVar2.b |= 1;
+            emus emusVar2 = (emus) v.b;
+            emusVar2.c = emurVar.g;
+            emusVar2.b |= 1;
             boolean g = e.g();
             if (!v.b.L()) {
                 v.U();
             }
-            fecp fecpVar = v.b;
-            ekhg ekhgVar3 = (ekhg) fecpVar;
-            ekhgVar3.b |= 4;
-            ekhgVar3.e = g;
-            if (!fecpVar.L()) {
+            fgri fgriVar = v.b;
+            emus emusVar3 = (emus) fgriVar;
+            emusVar3.b |= 4;
+            emusVar3.e = g;
+            if (!fgriVar.L()) {
                 v.U();
             }
-            ekhg ekhgVar4 = (ekhg) v.b;
-            ekhgVar4.b |= 8;
-            ekhgVar4.f = isKeyguardSecure;
+            emus emusVar4 = (emus) v.b;
+            emusVar4.b |= 8;
+            emusVar4.f = isKeyguardSecure;
             boolean i = e.i();
             if (!v.b.L()) {
                 v.U();
             }
-            ekhg ekhgVar5 = (ekhg) v.b;
-            ekhgVar5.b |= 16;
-            ekhgVar5.g = i;
+            emus emusVar5 = (emus) v.b;
+            emusVar5.b |= 16;
+            emusVar5.g = i;
             boolean h = e.h();
             if (!v.b.L()) {
                 v.U();
             }
-            ekhg ekhgVar6 = (ekhg) v.b;
-            ekhgVar6.b |= 64;
-            ekhgVar6.h = h;
+            emus emusVar6 = (emus) v.b;
+            emusVar6.b |= 64;
+            emusVar6.h = h;
             if (!this.a.contains("coffee_last_known_is_keyguard_secure")) {
                 a(isKeyguardSecure, System.currentTimeMillis() / 1000, false);
             } else if (isKeyguardSecure != this.a.getBoolean("coffee_last_known_is_keyguard_secure", false)) {
                 long currentTimeMillis2 = (System.currentTimeMillis() / 1000) - this.a.getLong("coffee_last_is_keyguard_secure_set_timestamp_seconds", 0L);
                 boolean z = this.a.getBoolean("coffee_last_is_keyguard_secure_set_timestamp_confirmed", false);
-                fecj v2 = ekhb.a.v();
+                fgrc v2 = emun.a.v();
                 if (!v2.b.L()) {
                     v2.U();
                 }
-                fecp fecpVar2 = v2.b;
-                ekhb ekhbVar = (ekhb) fecpVar2;
-                ekhbVar.b |= 1;
-                ekhbVar.c = isKeyguardSecure;
-                if (!fecpVar2.L()) {
+                fgri fgriVar2 = v2.b;
+                emun emunVar = (emun) fgriVar2;
+                emunVar.b |= 1;
+                emunVar.c = isKeyguardSecure;
+                if (!fgriVar2.L()) {
                     v2.U();
                 }
-                fecp fecpVar3 = v2.b;
-                ekhb ekhbVar2 = (ekhb) fecpVar3;
-                ekhbVar2.b |= 2;
-                ekhbVar2.d = currentTimeMillis2;
-                if (!fecpVar3.L()) {
+                fgri fgriVar3 = v2.b;
+                emun emunVar2 = (emun) fgriVar3;
+                emunVar2.b |= 2;
+                emunVar2.d = currentTimeMillis2;
+                if (!fgriVar3.L()) {
                     v2.U();
                 }
-                ekhb ekhbVar3 = (ekhb) v2.b;
-                ekhbVar3.b |= 4;
-                ekhbVar3.e = z;
+                emun emunVar3 = (emun) v2.b;
+                emunVar3.b |= 4;
+                emunVar3.e = z;
                 if (!v.b.L()) {
                     v.U();
                 }
-                ekhg ekhgVar7 = (ekhg) v.b;
-                ekhb ekhbVar4 = (ekhb) v2.Q();
-                ekhbVar4.getClass();
-                ekhgVar7.j = ekhbVar4;
-                ekhgVar7.b |= 256;
+                emus emusVar7 = (emus) v.b;
+                emun emunVar4 = (emun) v2.Q();
+                emunVar4.getClass();
+                emusVar7.j = emunVar4;
+                emusVar7.b |= 256;
                 a(isKeyguardSecure, System.currentTimeMillis() / 1000, true);
             }
-            dgmy.a((ekhg) v.Q());
+            diyd.a((emus) v.Q());
             boolean i2 = e.i();
             boolean h2 = e.h();
             if (isKeyguardSecure && i2 && h2) {
-                eiig.x(this.b);
-                aseu aseuVar = aseu.TRUSTAGENT_SERVICE_USER_PRESENT_WHILE_TRUSTED;
-                int i3 = dgmw.a;
-                bqqa.a(aseuVar);
+                ekvl.y(this.b);
+                auio auioVar = auio.TRUSTAGENT_SERVICE_USER_PRESENT_WHILE_TRUSTED;
+                int i3 = diyb.a;
+                bsxr.a(auioVar);
             }
         }
-        dgld a2 = dgld.a();
+        diwi a2 = diwi.a();
         synchronized (a2.c) {
             if (a2.b) {
                 a2.b();

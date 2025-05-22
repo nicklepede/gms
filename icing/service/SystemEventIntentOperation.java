@@ -4,32 +4,32 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.chimera.IntentOperation;
-import defpackage.asqg;
-import defpackage.blfw;
-import defpackage.eihn;
-import defpackage.fmwx;
+import defpackage.auua;
+import defpackage.bnmo;
+import defpackage.ekus;
+import defpackage.fpow;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes4.dex */
 public class SystemEventIntentOperation extends IntentOperation {
-    public static final String a = asqg.f("com.google.android.gms.icing");
-    public static final String b = asqg.f("com.google.android.gms.icing.mdh");
+    public static final String a = auua.f("com.google.android.gms.icing");
+    public static final String b = auua.f("com.google.android.gms.icing.mdh");
 
     public static void a(Context context, Intent intent) {
-        blfw.p("SystemEventIntentOperation.run: Got intent %s", intent);
+        bnmo.p("SystemEventIntentOperation.run: Got intent %s", intent);
         if (intent == null) {
             return;
         }
-        if (eihn.a(intent.getAction(), "android.intent.action.PACKAGE_CHANGED") && fmwx.c()) {
+        if (ekus.a(intent.getAction(), "android.intent.action.PACKAGE_CHANGED") && fpow.c()) {
             return;
         }
-        if (eihn.a(intent.getAction(), "com.google.android.gms.ENTIRE_PACKAGE_CHANGED")) {
+        if (ekus.a(intent.getAction(), "com.google.android.gms.ENTIRE_PACKAGE_CHANGED")) {
             intent.setAction("android.intent.action.PACKAGE_CHANGED");
         }
         Bundle extras = intent.getExtras();
         if (extras != null) {
             for (String str : extras.keySet()) {
-                blfw.r("SystemEventIntentOperation.run Intent extra %s: %s", str, extras.get(str));
+                bnmo.r("SystemEventIntentOperation.run Intent extra %s: %s", str, extras.get(str));
             }
         }
         String action = intent.getAction();

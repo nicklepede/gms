@@ -6,29 +6,29 @@ import android.os.Bundle;
 import androidx.preference.Preference;
 import com.google.android.gms.R;
 import com.google.android.material.appbar.AppBarLayout;
-import defpackage.ahwd;
-import defpackage.ajkt;
-import defpackage.ajlk;
-import defpackage.ajll;
-import defpackage.ajyv;
-import defpackage.arxo;
+import defpackage.ajwt;
+import defpackage.alll;
+import defpackage.almc;
+import defpackage.almd;
+import defpackage.alzt;
+import defpackage.auad;
 import defpackage.bp;
-import defpackage.dwae;
-import defpackage.eble;
-import defpackage.ffbn;
-import defpackage.flod;
-import defpackage.kly;
-import defpackage.kmb;
-import defpackage.qgg;
+import defpackage.dymf;
+import defpackage.edxt;
+import defpackage.fhql;
+import defpackage.fofn;
+import defpackage.mej;
+import defpackage.mem;
+import defpackage.rzk;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes3.dex */
-public class BackupSettingsCollapsingChimeraActivity extends qgg implements kly, ajll, ajlk {
-    private static final arxo j = ahwd.a("BackupSettingsCollapsingChimeraActivity");
+public class BackupSettingsCollapsingChimeraActivity extends rzk implements mej, almd, almc {
+    private static final auad j = ajwt.a("BackupSettingsCollapsingChimeraActivity");
     private boolean k;
 
-    @Override // defpackage.kly
-    public final void a(kmb kmbVar, Preference preference) {
+    @Override // defpackage.mej
+    public final void a(mem memVar, Preference preference) {
         String str = preference.u;
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.setClassName(this, "com.google.android.gms.backup.component.BackupSettingsCollapsingActivity");
@@ -39,15 +39,15 @@ public class BackupSettingsCollapsingChimeraActivity extends qgg implements kly,
         startActivity(intent);
     }
 
-    @Override // defpackage.ajlk
-    public final void c() {
-        AppBarLayout gC = gC();
-        if (gC != null) {
-            gC.l(false);
+    @Override // defpackage.almc
+    public final void f() {
+        AppBarLayout gS = gS();
+        if (gS != null) {
+            gS.l(false);
         }
     }
 
-    @Override // defpackage.ajll
+    @Override // defpackage.almd
     public final void k(boolean z, boolean z2) {
         j.j("Showing opt-in with isMissingDollyConsent: %s isFromTurnOffToggle %s ", Boolean.valueOf(z), Boolean.valueOf(z2));
         ActionBar actionBar = getActionBar();
@@ -56,20 +56,20 @@ public class BackupSettingsCollapsingChimeraActivity extends qgg implements kly,
         }
         Intent intent = getIntent();
         if (intent != null && z2) {
-            dwae.d(intent, ffbn.BACKUP_SETTINGS_BACKUP_TURN_OFF);
+            dymf.d(intent, fhql.BACKUP_SETTINGS_BACKUP_TURN_OFF);
         }
         if (this.k) {
             return;
         }
-        startActivityForResult(ajkt.a(getPackageManager(), z, false, intent), 10005);
+        startActivityForResult(alll.a(getPackageManager(), z, false, intent), 10005);
         this.k = true;
     }
 
-    @Override // defpackage.qfw, defpackage.qeo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rza, defpackage.rxs, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
-        arxo arxoVar = j;
-        arxoVar.j("onActivityResult requestCode=%d resultCode=%d launchedFromPromotionalNotification=%b", Integer.valueOf(i), Integer.valueOf(i2), false);
+        auad auadVar = j;
+        auadVar.j("onActivityResult requestCode=%d resultCode=%d launchedFromPromotionalNotification=%b", Integer.valueOf(i), Integer.valueOf(i2), false);
         if (i == 10005) {
             this.k = false;
             if (i2 == 0) {
@@ -81,21 +81,21 @@ public class BackupSettingsCollapsingChimeraActivity extends qgg implements kly,
                 actionBar.show();
             }
             getSupportFragmentManager();
-            ajyv e = ajkt.e(getIntent(), intent);
-            arxoVar.j("Displaying fragment: ".concat(String.valueOf(e.getClass().getSimpleName())), new Object[0]);
+            alzt e = alll.e(getIntent(), intent);
+            auadVar.j("Displaying fragment: ".concat(String.valueOf(e.getClass().getSimpleName())), new Object[0]);
             bp bpVar = new bp(getSupportFragmentManager());
             bpVar.z(R.id.content_frame, e, e.getClass().getName());
             bpVar.a();
         }
     }
 
-    @Override // defpackage.qgg, defpackage.qfw, defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rzk, defpackage.rza, defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     public final void onCreate(Bundle bundle) {
-        int i = eble.a;
+        int i = edxt.a;
         super.onCreate(bundle);
-        if (flod.c()) {
+        if (fofn.c()) {
             j.j("Launching BackupSettingsNavRootActivity", new Object[0]);
-            startActivity(ajkt.b());
+            startActivity(alll.b());
             finish();
         } else {
             j.j("Launching BackupSettingsActivity", new Object[0]);
@@ -106,9 +106,9 @@ public class BackupSettingsCollapsingChimeraActivity extends qgg implements kly,
         }
     }
 
-    @Override // defpackage.qeo, defpackage.qfo, com.google.android.chimera.android.Activity, defpackage.qaj
+    @Override // defpackage.rxs, defpackage.rys, com.google.android.chimera.android.Activity, defpackage.rtn
     protected final void onSaveInstanceState(Bundle bundle) {
-        ajkt.d(this.k, bundle);
+        alll.d(this.k, bundle);
         super.onSaveInstanceState(bundle);
     }
 }

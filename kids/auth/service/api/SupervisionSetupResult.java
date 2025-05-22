@@ -3,13 +3,13 @@ package com.google.android.gms.kids.auth.service.api;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.kids.auth.service.api.SupervisionSetupResult;
-import defpackage.fuzq;
-import defpackage.fvbo;
+import defpackage.fxvo;
+import defpackage.fxxm;
 
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
-/* loaded from: classes4.dex */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
+/* loaded from: classes5.dex */
 public final class SupervisionSetupResult implements Parcelable {
     public static final Parcelable.Creator CREATOR;
     public static final SupervisionSetupResult a;
@@ -26,11 +26,11 @@ public final class SupervisionSetupResult implements Parcelable {
         c = supervisionSetupResult3;
         SupervisionSetupResult[] supervisionSetupResultArr = {supervisionSetupResult, supervisionSetupResult2, supervisionSetupResult3};
         d = supervisionSetupResultArr;
-        fuzq.a(supervisionSetupResultArr);
-        CREATOR = new Parcelable.Creator() { // from class: boxk
+        fxvo.a(supervisionSetupResultArr);
+        CREATOR = new Parcelable.Creator() { // from class: brfa
             @Override // android.os.Parcelable.Creator
             public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
-                fvbo.f(parcel, "parcel");
+                fxxm.f(parcel, "parcel");
                 String readString = parcel.readString();
                 Parcelable.Creator creator = SupervisionSetupResult.CREATOR;
                 return (SupervisionSetupResult) Enum.valueOf(SupervisionSetupResult.class, readString);
@@ -57,7 +57,7 @@ public final class SupervisionSetupResult implements Parcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
-        fvbo.f(parcel, "dest");
+        fxxm.f(parcel, "dest");
         parcel.writeString(name());
     }
 }

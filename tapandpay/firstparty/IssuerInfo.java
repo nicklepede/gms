@@ -3,17 +3,17 @@ package com.google.android.gms.tapandpay.firstparty;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
-import defpackage.arwa;
-import defpackage.arwb;
-import defpackage.arxc;
-import defpackage.dexm;
+import defpackage.atyp;
+import defpackage.atyq;
+import defpackage.atzr;
+import defpackage.dhiq;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class IssuerInfo extends AbstractSafeParcelable {
-    public static final Parcelable.Creator CREATOR = new dexm();
+    public static final Parcelable.Creator CREATOR = new dhiq();
     final String a;
     final String b;
     final String c;
@@ -65,7 +65,7 @@ public class IssuerInfo extends AbstractSafeParcelable {
     public final boolean equals(Object obj) {
         if (obj instanceof IssuerInfo) {
             IssuerInfo issuerInfo = (IssuerInfo) obj;
-            if (arwb.b(this.a, issuerInfo.a) && arwb.b(this.b, issuerInfo.b) && arwb.b(this.c, issuerInfo.c) && arwb.b(this.d, issuerInfo.d) && arwb.b(this.e, issuerInfo.e) && arwb.b(this.f, issuerInfo.f) && arwb.b(this.g, issuerInfo.g) && arwb.b(this.h, issuerInfo.h) && arwb.b(this.i, issuerInfo.i) && arwb.b(this.j, issuerInfo.j) && arwb.b(this.k, issuerInfo.k) && arwb.b(this.l, issuerInfo.l) && arwb.b(this.m, issuerInfo.m) && this.n == issuerInfo.n && arwb.b(this.o, issuerInfo.o) && arwb.b(this.p, issuerInfo.p) && arwb.b(this.q, issuerInfo.q) && arwb.b(this.r, issuerInfo.r) && arwb.b(this.s, issuerInfo.s) && arwb.b(this.t, issuerInfo.t) && arwb.b(this.u, issuerInfo.u) && arwb.b(Integer.valueOf(this.v), Integer.valueOf(issuerInfo.v))) {
+            if (atyq.b(this.a, issuerInfo.a) && atyq.b(this.b, issuerInfo.b) && atyq.b(this.c, issuerInfo.c) && atyq.b(this.d, issuerInfo.d) && atyq.b(this.e, issuerInfo.e) && atyq.b(this.f, issuerInfo.f) && atyq.b(this.g, issuerInfo.g) && atyq.b(this.h, issuerInfo.h) && atyq.b(this.i, issuerInfo.i) && atyq.b(this.j, issuerInfo.j) && atyq.b(this.k, issuerInfo.k) && atyq.b(this.l, issuerInfo.l) && atyq.b(this.m, issuerInfo.m) && this.n == issuerInfo.n && atyq.b(this.o, issuerInfo.o) && atyq.b(this.p, issuerInfo.p) && atyq.b(this.q, issuerInfo.q) && atyq.b(this.r, issuerInfo.r) && atyq.b(this.s, issuerInfo.s) && atyq.b(this.t, issuerInfo.t) && atyq.b(this.u, issuerInfo.u) && atyq.b(Integer.valueOf(this.v), Integer.valueOf(issuerInfo.v))) {
                 return true;
             }
         }
@@ -78,57 +78,57 @@ public class IssuerInfo extends AbstractSafeParcelable {
 
     public final String toString() {
         ArrayList arrayList = new ArrayList();
-        arwa.b("issuerName", this.a, arrayList);
-        arwa.b("issuerPhoneNumber", this.b, arrayList);
-        arwa.b("appLogoUrl", this.c, arrayList);
-        arwa.b("appName", this.d, arrayList);
-        arwa.b("appDeveloperName", this.e, arrayList);
-        arwa.b("appPackageName", this.f, arrayList);
-        arwa.b("privacyNoticeUrl", this.g, arrayList);
-        arwa.b("termsAndConditionsUrl", this.h, arrayList);
-        arwa.b("productShortName", this.i, arrayList);
-        arwa.b("appAction", this.j, arrayList);
-        arwa.b("appIntentExtraMessage", this.k, arrayList);
-        arwa.b("issuerMessageHeadline", this.l, arrayList);
-        arwa.b("issuerMessageBody", this.m, arrayList);
-        arwa.b("issuerMessageExpiryTimestampMillis", Long.valueOf(this.n), arrayList);
-        arwa.b("issuerMessageLinkPackageName", this.o, arrayList);
-        arwa.b("issuerMessageLinkAction", this.p, arrayList);
-        arwa.b("issuerMessageLinkExtraText", this.q, arrayList);
-        arwa.b("issuerMessageLinkUrl", this.r, arrayList);
-        arwa.b("issuerMessageLinkText", this.s, arrayList);
-        arwa.b("issuerWebLinkUrl", this.t, arrayList);
-        arwa.b("issuerWebLinkText", this.u, arrayList);
-        arwa.b("issuerMessageType", Integer.valueOf(this.v), arrayList);
-        return arwa.a(arrayList, this);
+        atyp.b("issuerName", this.a, arrayList);
+        atyp.b("issuerPhoneNumber", this.b, arrayList);
+        atyp.b("appLogoUrl", this.c, arrayList);
+        atyp.b("appName", this.d, arrayList);
+        atyp.b("appDeveloperName", this.e, arrayList);
+        atyp.b("appPackageName", this.f, arrayList);
+        atyp.b("privacyNoticeUrl", this.g, arrayList);
+        atyp.b("termsAndConditionsUrl", this.h, arrayList);
+        atyp.b("productShortName", this.i, arrayList);
+        atyp.b("appAction", this.j, arrayList);
+        atyp.b("appIntentExtraMessage", this.k, arrayList);
+        atyp.b("issuerMessageHeadline", this.l, arrayList);
+        atyp.b("issuerMessageBody", this.m, arrayList);
+        atyp.b("issuerMessageExpiryTimestampMillis", Long.valueOf(this.n), arrayList);
+        atyp.b("issuerMessageLinkPackageName", this.o, arrayList);
+        atyp.b("issuerMessageLinkAction", this.p, arrayList);
+        atyp.b("issuerMessageLinkExtraText", this.q, arrayList);
+        atyp.b("issuerMessageLinkUrl", this.r, arrayList);
+        atyp.b("issuerMessageLinkText", this.s, arrayList);
+        atyp.b("issuerWebLinkUrl", this.t, arrayList);
+        atyp.b("issuerWebLinkText", this.u, arrayList);
+        atyp.b("issuerMessageType", Integer.valueOf(this.v), arrayList);
+        return atyp.a(arrayList, this);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i) {
         String str = this.a;
-        int a = arxc.a(parcel);
-        arxc.v(parcel, 2, str, false);
-        arxc.v(parcel, 3, this.b, false);
-        arxc.v(parcel, 4, this.c, false);
-        arxc.v(parcel, 5, this.d, false);
-        arxc.v(parcel, 6, this.e, false);
-        arxc.v(parcel, 7, this.f, false);
-        arxc.v(parcel, 8, this.g, false);
-        arxc.v(parcel, 9, this.h, false);
-        arxc.v(parcel, 10, this.i, false);
-        arxc.v(parcel, 11, this.j, false);
-        arxc.v(parcel, 12, this.k, false);
-        arxc.v(parcel, 13, this.l, false);
-        arxc.v(parcel, 14, this.m, false);
-        arxc.q(parcel, 15, this.n);
-        arxc.v(parcel, 16, this.o, false);
-        arxc.v(parcel, 17, this.p, false);
-        arxc.v(parcel, 18, this.q, false);
-        arxc.v(parcel, 20, this.r, false);
-        arxc.v(parcel, 21, this.s, false);
-        arxc.v(parcel, 22, this.t, false);
-        arxc.v(parcel, 23, this.u, false);
-        arxc.o(parcel, 24, this.v);
-        arxc.c(parcel, a);
+        int a = atzr.a(parcel);
+        atzr.v(parcel, 2, str, false);
+        atzr.v(parcel, 3, this.b, false);
+        atzr.v(parcel, 4, this.c, false);
+        atzr.v(parcel, 5, this.d, false);
+        atzr.v(parcel, 6, this.e, false);
+        atzr.v(parcel, 7, this.f, false);
+        atzr.v(parcel, 8, this.g, false);
+        atzr.v(parcel, 9, this.h, false);
+        atzr.v(parcel, 10, this.i, false);
+        atzr.v(parcel, 11, this.j, false);
+        atzr.v(parcel, 12, this.k, false);
+        atzr.v(parcel, 13, this.l, false);
+        atzr.v(parcel, 14, this.m, false);
+        atzr.q(parcel, 15, this.n);
+        atzr.v(parcel, 16, this.o, false);
+        atzr.v(parcel, 17, this.p, false);
+        atzr.v(parcel, 18, this.q, false);
+        atzr.v(parcel, 20, this.r, false);
+        atzr.v(parcel, 21, this.s, false);
+        atzr.v(parcel, 22, this.t, false);
+        atzr.v(parcel, 23, this.u, false);
+        atzr.o(parcel, 24, this.v);
+        atzr.c(parcel, a);
     }
 }

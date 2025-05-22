@@ -9,9 +9,9 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import defpackage.rpq;
+import defpackage.tiy;
 
-/* compiled from: :com.google.android.gms@251661004@25.16.61 (040400-752466036) */
+/* compiled from: :com.google.android.gms@251864004@25.18.64 (040400-758020094) */
 /* loaded from: classes7.dex */
 public class RoundedImageViewWithBorder extends AppCompatImageView {
     private int a;
@@ -64,7 +64,7 @@ public class RoundedImageViewWithBorder extends AppCompatImageView {
         this.b = 0;
         this.c = 0;
         if (attributeSet != null) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, rpq.o);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, tiy.o);
             try {
                 this.a = obtainStyledAttributes.getDimensionPixelSize(0, 0);
                 this.b = obtainStyledAttributes.getDimensionPixelSize(2, 0);
